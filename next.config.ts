@@ -118,16 +118,10 @@ const nextConfig: NextConfig = {
       { source: '/edukacja/design/:path*', destination: '/edukacja/grafika/:path*', permanent: true },
     ];
 
-    const canonicalRedirects: Redirect[] = [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'arteonagency.pl' }],
-        destination: 'https://www.arteonagency.pl/:path*',
-        permanent: true,
-      },
-    ];
+    // Canonical host redirect (HTTP→HTTPS, non-www→www, trailing slash)
+    // is handled by middleware.ts at the edge level in a single 301 hop.
 
-    return [...canonicalRedirects, ...staticRedirects, ...patternRedirects];
+    return [...staticRedirects, ...patternRedirects];
   },
 };
 

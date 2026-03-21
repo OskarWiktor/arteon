@@ -323,9 +323,7 @@ const MULTILINGUAL_PAGES = [
 ];
 
 // Locale homepage paths that permanentRedirect — must not appear in sitemap
-const REDIRECT_LOCALE_ROOTS = new Set([
-  '/en', '/de', '/es', '/fr', '/pt', '/it', '/ro', '/nl', '/hu', '/cs', '/sv', '/da', '/no', '/fi', '/el',
-]);
+const REDIRECT_LOCALE_ROOTS = new Set(['/en', '/de', '/es', '/fr', '/pt', '/it', '/ro', '/nl', '/hu', '/cs', '/sv', '/da', '/no', '/fi', '/el']);
 
 /** Return alternateRefs (all locales + x-default) for any sitemap loc, or [] if not multilingual */
 function getAlternateRefs(loc) {
@@ -499,6 +497,9 @@ module.exports = {
   exclude: ['/404', '/500', '/_next/*', '/api/*', '/drafts/*', '/edukacja/*/*'],
 
   transform: async (config, loc) => {
+    // Skip locale root pages that permanentRedirect — they return 301 and must not be in sitemap
+    if (REDIRECT_LOCALE_ROOTS.has(loc)) return null;
+
     const base = {
       loc,
       changefreq: getPageChangefreq(loc),
@@ -519,6 +520,8 @@ module.exports = {
     // Add ALL static routes from ROUTE_LASTMOD so sitemap doesn't depend on
     // next-sitemap auto-discovery (broken with Next.js 15 App Router - no prerender-manifest.json).
     for (const [loc, last] of ROUTE_LASTMOD.entries()) {
+      // Skip locale root pages that permanentRedirect (301)
+      if (REDIRECT_LOCALE_ROOTS.has(loc)) continue;
       // Skip individual article pages - added from ARTICLES data below with cover images
       if (loc.startsWith('/edukacja/') && loc.split('/').length > 3) continue;
       // Skip individual project pages - added from PROJECTS data below with images

@@ -37,16 +37,98 @@ const LOCALE_TOOLS_BASE = {
 };
 
 const LOCALE_TO_HREFLANG = {
-  pl: 'pl', en: 'en', de: 'de', es: 'es', fr: 'fr', pt: 'pt', it: 'it',
-  ro: 'ro', nl: 'nl', hu: 'hu', cs: 'cs', sv: 'sv', da: 'da', no: 'nb', fi: 'fi', el: 'el',
+  pl: 'pl',
+  en: 'en',
+  de: 'de',
+  es: 'es',
+  fr: 'fr',
+  pt: 'pt',
+  it: 'it',
+  ro: 'ro',
+  nl: 'nl',
+  hu: 'hu',
+  cs: 'cs',
+  sv: 'sv',
+  da: 'da',
+  no: 'nb',
+  fi: 'fi',
+  el: 'el',
 };
 
 const MULTILINGUAL_PAGES = [
   { pl: '/', en: '/en', de: '/de', es: '/es', fr: '/fr', pt: '/pt', it: '/it', ro: '/ro', nl: '/nl', hu: '/hu', cs: '/cs', sv: '/sv', da: '/da', no: '/no', fi: '/fi', el: '/el' },
-  { pl: '/o-nas', en: '/en/about', de: '/de/ueber-uns', es: '/es/sobre-nosotros', fr: '/fr/a-propos', pt: '/pt/sobre-nos', it: '/it/chi-siamo', ro: '/ro/despre-noi', nl: '/nl/over-ons', hu: '/hu/rolunk', cs: '/cs/o-nas', sv: '/sv/om-oss', da: '/da/om-os', no: '/no/om-oss', fi: '/fi/tietoa-meista', el: '/el/sxetika-me-emas' },
-  { pl: '/kontakt', en: '/en/contact', de: '/de/kontakt', es: '/es/contacto', fr: '/fr/contact', pt: '/pt/contacto', it: '/it/contatto', ro: '/ro/contact', nl: '/nl/contact', hu: '/hu/kapcsolat', cs: '/cs/kontakt', sv: '/sv/kontakt', da: '/da/kontakt', no: '/no/kontakt', fi: '/fi/yhteystiedot', el: '/el/epikoinonia' },
-  { pl: '/polityka-prywatnosci', en: '/en/privacy-policy', de: '/de/datenschutzrichtlinie', es: '/es/politica-de-privacidad', fr: '/fr/politique-de-confidentialite', pt: '/pt/politica-de-privacidade', it: '/it/informativa-sulla-privacy', ro: '/ro/politica-de-confidentialitate', nl: '/nl/privacybeleid', hu: '/hu/adatvedelmi-iranyelvek', cs: '/cs/zasady-ochrany-soukromi', sv: '/sv/integritetspolicy', da: '/da/privatlivspolitik', no: '/no/personvernpolicy', fi: '/fi/tietosuojakaytanto', el: '/el/politiki-aporritou' },
-  { pl: '/regulamin', en: '/en/terms-of-service', de: '/de/nutzungsbedingungen', es: '/es/terminos-de-servicio', fr: '/fr/conditions-utilisation', pt: '/pt/termos-de-servico', it: '/it/termini-di-servizio', ro: '/ro/termeni-si-conditii', nl: '/nl/gebruiksvoorwaarden', hu: '/hu/felhasznalasi-feltetelek', cs: '/cs/podminky-pouzivani', sv: '/sv/anvandarvillkor', da: '/da/brugsvilkar', no: '/no/bruksvilkar', fi: '/fi/kayttoehdot', el: '/el/oroi-chrisis' },
+  {
+    pl: '/o-nas',
+    en: '/en/about',
+    de: '/de/ueber-uns',
+    es: '/es/sobre-nosotros',
+    fr: '/fr/a-propos',
+    pt: '/pt/sobre-nos',
+    it: '/it/chi-siamo',
+    ro: '/ro/despre-noi',
+    nl: '/nl/over-ons',
+    hu: '/hu/rolunk',
+    cs: '/cs/o-nas',
+    sv: '/sv/om-oss',
+    da: '/da/om-os',
+    no: '/no/om-oss',
+    fi: '/fi/tietoa-meista',
+    el: '/el/sxetika-me-emas',
+  },
+  {
+    pl: '/kontakt',
+    en: '/en/contact',
+    de: '/de/kontakt',
+    es: '/es/contacto',
+    fr: '/fr/contact',
+    pt: '/pt/contacto',
+    it: '/it/contatto',
+    ro: '/ro/contact',
+    nl: '/nl/contact',
+    hu: '/hu/kapcsolat',
+    cs: '/cs/kontakt',
+    sv: '/sv/kontakt',
+    da: '/da/kontakt',
+    no: '/no/kontakt',
+    fi: '/fi/yhteystiedot',
+    el: '/el/epikoinonia',
+  },
+  {
+    pl: '/polityka-prywatnosci',
+    en: '/en/privacy-policy',
+    de: '/de/datenschutzrichtlinie',
+    es: '/es/politica-de-privacidad',
+    fr: '/fr/politique-de-confidentialite',
+    pt: '/pt/politica-de-privacidade',
+    it: '/it/informativa-sulla-privacy',
+    ro: '/ro/politica-de-confidentialitate',
+    nl: '/nl/privacybeleid',
+    hu: '/hu/adatvedelmi-iranyelvek',
+    cs: '/cs/zasady-ochrany-soukromi',
+    sv: '/sv/integritetspolicy',
+    da: '/da/privatlivspolitik',
+    no: '/no/personvernpolicy',
+    fi: '/fi/tietosuojakaytanto',
+    el: '/el/politiki-aporritou',
+  },
+  {
+    pl: '/regulamin',
+    en: '/en/terms-of-service',
+    de: '/de/nutzungsbedingungen',
+    es: '/es/terminos-de-servicio',
+    fr: '/fr/conditions-utilisation',
+    pt: '/pt/termos-de-servico',
+    it: '/it/termini-di-servizio',
+    ro: '/ro/termeni-si-conditii',
+    nl: '/nl/gebruiksvoorwaarden',
+    hu: '/hu/felhasznalasi-feltetelek',
+    cs: '/cs/podminky-pouzivani',
+    sv: '/sv/anvandarvillkor',
+    da: '/da/brugsvilkar',
+    no: '/no/bruksvilkar',
+    fi: '/fi/kayttoehdot',
+    el: '/el/oroi-chrisis',
+  },
 ];
 
 const XML_HEADER =
@@ -68,7 +150,9 @@ function buildToolLocalePathsMap() {
         if (!data.toolKey || !data.metadata?.path) continue;
         if (!byKey.has(data.toolKey)) byKey.set(data.toolKey, {});
         byKey.get(data.toolKey)[locale] = data.metadata.path;
-      } catch { /* skip malformed files */ }
+      } catch {
+        /* skip malformed files */
+      }
     }
   }
   return byKey;
@@ -91,9 +175,7 @@ function buildPathToToolKey(toolLocalePathsMap) {
 function generateHreflangLinks(urlPath, toolLocalePathsMap, pathToToolKey) {
   // Tool index pages
   if (Object.values(LOCALE_TOOLS_BASE).includes(urlPath)) {
-    const links = LOCALES.map((lang) =>
-      `<xhtml:link rel="alternate" hreflang="${LOCALE_TO_HREFLANG[lang]}" href="${SITE_URL}${LOCALE_TOOLS_BASE[lang]}"/>`
-    );
+    const links = LOCALES.map((lang) => `<xhtml:link rel="alternate" hreflang="${LOCALE_TO_HREFLANG[lang]}" href="${SITE_URL}${LOCALE_TOOLS_BASE[lang]}"/>`);
     links.push(`<xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${LOCALE_TOOLS_BASE.en}"/>`);
     return links.join('');
   }
@@ -102,9 +184,7 @@ function generateHreflangLinks(urlPath, toolLocalePathsMap, pathToToolKey) {
   const toolKey = pathToToolKey.get(urlPath);
   if (toolKey) {
     const localePaths = toolLocalePathsMap.get(toolKey);
-    const links = Object.entries(localePaths).map(([lang, href]) =>
-      `<xhtml:link rel="alternate" hreflang="${LOCALE_TO_HREFLANG[lang] || lang}" href="${SITE_URL}${href}"/>`
-    );
+    const links = Object.entries(localePaths).map(([lang, href]) => `<xhtml:link rel="alternate" hreflang="${LOCALE_TO_HREFLANG[lang] || lang}" href="${SITE_URL}${href}"/>`);
     const enPath = localePaths['en'];
     if (enPath) links.push(`<xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${enPath}"/>`);
     return links.join('');
@@ -113,9 +193,7 @@ function generateHreflangLinks(urlPath, toolLocalePathsMap, pathToToolKey) {
   // Non-tool multilingual pages (homepage, about, contact, privacy, terms)
   for (const page of MULTILINGUAL_PAGES) {
     if (Object.values(page).includes(urlPath)) {
-      const links = Object.entries(page).map(([lang, href]) =>
-        `<xhtml:link rel="alternate" hreflang="${LOCALE_TO_HREFLANG[lang] || lang}" href="${SITE_URL}${href}"/>`
-      );
+      const links = Object.entries(page).map(([lang, href]) => `<xhtml:link rel="alternate" hreflang="${LOCALE_TO_HREFLANG[lang] || lang}" href="${SITE_URL}${href}"/>`);
       links.push(`<xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${page.en}"/>`);
       return links.join('');
     }
@@ -193,14 +271,22 @@ function main() {
     console.log(`  ✓ ${file} (${blocks.length} URLs)`);
   }
 
-  // 5. Write sitemap index
+  // 5. Write sitemap index (with <lastmod> per sub-sitemap for efficient Google re-crawling)
   const sitemapFiles = fs
     .readdirSync(PUBLIC_DIR)
     .filter((f) => f.startsWith('sitemap-') && f.endsWith('.xml'))
     .sort();
 
-  const today = new Date().toISOString().split('T')[0];
-  const entries = sitemapFiles.map((f) => `<sitemap><loc>${SITE_URL}/${f}</loc></sitemap>`).join('\n');
+  const entries = sitemapFiles
+    .map((f) => {
+      // Extract the newest <lastmod> from the sub-sitemap to include in the index
+      const content = fs.readFileSync(path.join(PUBLIC_DIR, f), 'utf8');
+      const lastmods = [...content.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((m) => m[1]);
+      const newest = lastmods.sort().pop();
+      const lastmodTag = newest ? `<lastmod>${newest}</lastmod>` : '';
+      return `<sitemap><loc>${SITE_URL}/${f}</loc>${lastmodTag}</sitemap>`;
+    })
+    .join('\n');
 
   const sitemapIndex = ['<?xml version="1.0" encoding="UTF-8"?>', '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', entries, '</sitemapindex>'].join('\n');
 
