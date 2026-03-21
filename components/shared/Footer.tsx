@@ -1,5 +1,3 @@
-'use client';
-
 import Wrapper from '../ui/Wrapper';
 import CookieSettingsButton from './CookieSettingsButton';
 import AppLink from '../ui/Link';
@@ -7,8 +5,8 @@ import Image from 'next/image';
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
-import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { getFooterTools } from '@/lib/i18n/tool-registry';
+import type { Locale, FooterUi, LegalLink } from '@/types/locale';
 
 const ORG = {
   name: 'Arteon',
@@ -86,7 +84,7 @@ const navLinksSecondary = [
   { href: '/kontakt', label: 'Kontakt' },
 ];
 
-const legalLinks = [
+const PL_LEGAL_LINKS = [
   { href: '/polityka-prywatnosci', label: 'Polityka prywatności' },
   { href: '/regulamin', label: 'Regulamin świadczenia usług' },
   { href: '/mapa-strony', label: 'Mapa strony' },
@@ -104,18 +102,23 @@ const toolsLinks = [
   { href: '/narzedzia/darmowy-generator-kodow-qr', label: 'Generator kodów QR' },
 ];
 
-export default function Footer() {
-  const locale = useLocale();
+interface FooterProps {
+  locale: Locale;
+  footerUi: FooterUi;
+  legalLinks: LegalLink[];
+  toolsIndexHref: string;
+}
+
+export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }: FooterProps) {
   const isPl = locale === 'pl';
-  const ft = useDictionary().footer;
-  const localeConfig = useLocaleConfig();
+  const ft = footerUi;
   const midGfx = Math.ceil(offerLinksThree.length / 2);
   const gfxLeft = offerLinksThree.slice(0, midGfx);
   const gfxRight = offerLinksThree.slice(midGfx);
 
   // For PL: use hardcoded toolsLinks; for other locales: generate from registry
   const localeToolsLinks = isPl ? toolsLinks : getFooterTools(locale).map((tool) => ({ href: tool.href, label: tool.title }));
-  const localeLegalLinks = useDictionary().legal;
+  const localeLegalLinks = legalLinks;
 
   const midTools = Math.ceil(localeToolsLinks.length / 2);
   const toolsLeft = localeToolsLinks.slice(0, midTools);
@@ -136,7 +139,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:auto-rows-min lg:grid-cols-6">
             <section aria-label={ft.companyDataLabel} className="lg:col-start-1 lg:row-start-1">
               <div className="mb-4">
-                <AppLink href={localeConfig.toolsIndexHref}>
+                <AppLink href={toolsIndexHref}>
                   <Image src="/assets/arteon-logo.webp" width={140} height={50} alt="Arteon logo" />
                 </AppLink>
               </div>
@@ -357,7 +360,7 @@ export default function Footer() {
             <nav aria-label="Dokumenty i ustawienia" className="lg:col-start-3 lg:row-start-2">
               <h3 className="h6 mb-3">Dokumenty i ustawienia</h3>
               <ul className="flex flex-col gap-2 text-sm">
-                {legalLinks.map(({ href, label }) => (
+                {PL_LEGAL_LINKS.map(({ href, label }) => (
                   <li key={href}>
                     <AppLink href={href} display="inline-block">
                       {label}

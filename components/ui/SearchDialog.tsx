@@ -147,7 +147,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
 
   return createPortal(
     <div
-      className="animate-modal-backdrop fixed inset-0 z-[100] flex items-start justify-center bg-black/30 px-4 pt-[10vh] backdrop-blur-[1px]"
+      className="animate-modal-backdrop fixed inset-0 z-[100] flex items-start justify-center bg-black/40 px-4 pt-[10vh]"
       onClick={handleBackdropClick}
       role="dialog"
       aria-modal="true"

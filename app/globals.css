@@ -538,6 +538,37 @@ textarea {
   color: var(--text-mid);
 }
 
+/* ── Below-fold content sections: skip rendering until near viewport ── */
+/* Improves INP + LCP by reducing initial render work on long pages.    */
+/* Ad containers are NOT included — they need IO visibility for loading. */
+
+[data-section='info'],
+[data-section='basic'],
+[data-section='steps'],
+[data-section='demo'],
+[data-section='tabs'],
+[data-section='timeline'],
+[data-section='feature-comparison'],
+[data-section='feature-list'],
+[data-section='packages'],
+[data-section='metrics'],
+[data-section='bento'],
+[data-section='process'],
+[data-section='quick-links'],
+[data-section='icon-badges'],
+[data-section='image-gallery'],
+[data-section='image-carousel'],
+[data-section='vertical-tabs'] {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+/* ── Ad slot containment: isolate ad reflow from surrounding layout ── */
+
+.ad-slot-wrapper {
+  contain: layout style;
+}
+
 /* ── Ad slot collapse (hide wrapper when Google marks ad unfilled) ── */
 
 .ad-slot-wrapper:has(ins.adsbygoogle[data-ad-status='unfilled']) {

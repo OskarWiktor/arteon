@@ -28,7 +28,7 @@ export default function SectionBasic({ id, title, subtitle, description, imageSr
     <section id={id} aria-labelledby={headingId} className="w-full">
       <div className="flex flex-col md:gap-4 lg:flex-row lg:gap-8">
         <div className={`flex w-full lg:w-1/2 ${variant === 'left' ? 'lg:order-2' : ''}`}>
-          <div className="relative h-full min-h-[420px] w-full">
+          <div className="relative aspect-[4/3] w-full">
             <Image src={imageSrc} alt={imageAlt} fill className="object-cover" sizes="(min-width:1024px) 50vw, 100vw" />
           </div>
         </div>

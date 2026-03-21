@@ -91,17 +91,32 @@ export default function ConsentListener() {
     });
 
     // Fallback: if CMP is not yet configured in AdSense dashboard,
-    // CONSENT_MODE_DATA_READY may not fire. Load scripts after timeout
-    // since consent defaults are granted for non-regulated regions.
-    const fallbackTimer = setTimeout(() => {
+    // CONSENT_MODE_DATA_READY may not fire. Use requestIdleCallback
+    // to load scripts only when the browser is idle (avoids blocking
+    // main thread during critical rendering). Falls back to 5s timeout
+    // for browsers without requestIdleCallback (Safari).
+    let fallbackId: number;
+    const fallbackFn = () => {
       if (!loaded && typeof window.gtag === 'function') {
         loaded = true;
         loadAhrefs();
         loadMetricool();
       }
-    }, 3000);
+    };
 
-    return () => clearTimeout(fallbackTimer);
+    if (typeof requestIdleCallback === 'function') {
+      fallbackId = requestIdleCallback(fallbackFn, { timeout: 5000 });
+    } else {
+      fallbackId = window.setTimeout(fallbackFn, 5000) as unknown as number;
+    }
+
+    return () => {
+      if (typeof cancelIdleCallback === 'function') {
+        cancelIdleCallback(fallbackId);
+      } else {
+        clearTimeout(fallbackId);
+      }
+    };
   }, []);
 
   return null;

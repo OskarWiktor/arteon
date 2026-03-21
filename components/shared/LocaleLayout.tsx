@@ -26,7 +26,7 @@ export default async function LocaleLayout({ locale, children }: LocaleLayoutPro
         {children}
       </main>
 
-      <Footer />
+      <Footer locale={locale} footerUi={clientDict.footer} legalLinks={clientDict.legal} toolsIndexHref={config.toolsIndexHref} />
     </LocaleProvider>
   );
 }

@@ -177,7 +177,7 @@ Dawaj czytelnikowi konkretne kryteria decyzyjne. Pokazuj, jak ocenić sytuację 
 ### Narracja
 
 - **Druga osoba liczby pojedynczej** dla czytelnika: „Twoja firma", „zyskujesz", „widzisz efekt"
-- **Pierwsza osoba liczby mnogiej** dla Arteon: „wyjaśniamy", „pokazujemy", „przygotowujemy" (nigdy „wyjaśnię" - Arteon to zespół)
+- **Forma bezosobowa/dokonana** dla Arteon: „zaprojektowane", „przygotowane", „zrobione" (NIE „zrobiliśmy/zaprojektowaliśmy" — firma jednoosobowa). W treściach edukacyjnych dopuszczalne: „pomagamy", „pokazujemy". **WYJĄTEK: realizacje/case study** — 1 os. l.mn. OK („przygotowaliśmy", „stworzyliśmy") bo case study opisuje wykonaną pracę.
 - **Zaimki dzierżawcze**: „na swojej stronie" zamiast „na Twojej stronie"
 
 ### Prostota i przyjazność
@@ -587,6 +587,24 @@ Nie używaj list elementów oddzielonych przecinkami bez kontekstu. Każdy eleme
 | „Szybkość, bezpieczeństwo, wsparcie"                    | Pełne zdania wyjaśniające każdy punkt          |
 
 **Zasada:** Jeśli wymieniasz cechy/korzyści po przecinku - rozwiń je w listę punktowaną lub pełne zdania. Czytelnik musi wiedzieć, co każdy element oznacza i dlaczego jest ważny.
+
+**Dotyczy również meta descriptions, short descriptions i CTA:**
+
+| ❌ Zakazane (meta description)                             | ✅ Zamiennik                                                                       |
+| ---------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| „Blog firmowy, formularz wyceny, WCAG, szybkie ładowanie.” | „Strona z firmowym blogiem, formularzem wycen i szybkim ładowaniem na telefonach.” |
+
+### Opis firm — działalność zamiast etykiet
+
+Opisuj czym firma się zajmuje, nie nadawaj etykiet przymiotnikowych.
+
+| ❌ Zakazane               | ✅ Zamiennik                                                           |
+| ------------------------- | ---------------------------------------------------------------------- |
+| „firma izolacyjna”        | „firma zajmująca się izolacją budynków”                                |
+| „firma wykończeniowa”     | „firma zajmująca się wykończeniem mieszkań, domów i lokali usługowych” |
+| „kawiarnia rzemieślnicza” | „mała palarnia kawy z własnym procesem palenia”                        |
+
+Ludzki język opisuje CO firma robi. Etykiety przymiotnikowe to skróty myślowe z briefów.
 
 ### Zasady tonu
 

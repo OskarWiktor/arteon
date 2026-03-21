@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { startTransition, useEffect, useRef, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
@@ -174,13 +174,13 @@ export default function DesktopNavigation() {
             <button
               id={toolsButtonId}
               type="button"
-              onClick={() => setIsToolsOpen((p) => !p)}
+              onClick={() => startTransition(() => setIsToolsOpen((p) => !p))}
               onKeyDown={handleToolsButtonKeyDown}
               aria-haspopup="menu"
               aria-expanded={isToolsOpen}
               aria-controls={toolsMenuId}
               ref={toolsBtnRef}
-              className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
             >
               <span className="inline-flex transition-transform duration-200" style={{ transform: isToolsOpen ? 'rotate(180deg)' : undefined }}>
@@ -230,13 +230,13 @@ export default function DesktopNavigation() {
                 <button
                   id={toolsButtonId}
                   type="button"
-                  onClick={() => setIsToolsOpen((p) => !p)}
+                  onClick={() => startTransition(() => setIsToolsOpen((p) => !p))}
                   onKeyDown={handleToolsButtonKeyDown}
                   aria-haspopup="menu"
                   aria-expanded={isToolsOpen}
                   aria-controls={toolsMenuId}
                   ref={toolsBtnRef}
-                  className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                  className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
                 >
                   <span className="inline-flex transition-transform duration-200" style={{ transform: isToolsOpen ? 'rotate(180deg)' : undefined }}>
@@ -258,13 +258,13 @@ export default function DesktopNavigation() {
                 <button
                   id={buttonId}
                   type="button"
-                  onClick={() => setIsOfferOpen((p) => !p)}
+                  onClick={() => startTransition(() => setIsOfferOpen((p) => !p))}
                   onKeyDown={handleOfferButtonKeyDown}
                   aria-haspopup="menu"
                   aria-expanded={isOfferOpen}
                   aria-controls={menuId}
                   ref={offerBtnRef}
-                  className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                  className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   aria-label={isOfferOpen ? plUi.closeServicesList : plUi.openServicesList}
                 >
                   <span className="inline-flex transition-transform duration-200" style={{ transform: isOfferOpen ? 'rotate(180deg)' : undefined }}>
@@ -286,13 +286,13 @@ export default function DesktopNavigation() {
                 <button
                   id={aboutButtonId}
                   type="button"
-                  onClick={() => setIsAboutOpen((p) => !p)}
+                  onClick={() => startTransition(() => setIsAboutOpen((p) => !p))}
                   onKeyDown={handleAboutButtonKeyDown}
                   aria-haspopup="menu"
                   aria-expanded={isAboutOpen}
                   aria-controls={aboutMenuId}
                   ref={aboutBtnRef}
-                  className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                  className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   aria-label={isAboutOpen ? plUi.closeAboutList : plUi.openAboutList}
                 >
                   <span className="inline-flex transition-transform duration-200" style={{ transform: isAboutOpen ? 'rotate(180deg)' : undefined }}>

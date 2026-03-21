@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { startTransition, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { NavMenuLine as RiMenuLine, NavCloseLine as RiCloseLine, NavSearchLine as RiSearchLine, NavMailSettingsLine as RiMailSettingsLine } from '@/components/ui/icons/NavIcons';
 import Image from 'next/image';
@@ -32,7 +32,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen((prev) => !prev);
+  const toggleMenu = () => startTransition(() => setIsOpen((prev) => !prev));
 
   useEscapeKey(() => setIsOpen(false), isOpen);
 
@@ -64,7 +64,7 @@ export default function Navigation() {
       <Wrapper>
         <nav className="flex h-12 items-center justify-between md:h-14 lg:h-16" aria-label={t.mainNavigation}>
           <Link href={isPl ? '/' : localeConfig.toolsIndexHref} prefetch={false}>
-            <Image src="/assets/arteon-logo.webp" width={100} height={30} alt={t.logoAlt} priority sizes="100px" />
+            <Image src="/assets/arteon-logo.webp" width={100} height={30} alt={t.logoAlt} sizes="100px" />
           </Link>
 
           <DesktopNavigation />
@@ -72,8 +72,8 @@ export default function Navigation() {
           <div className="hidden items-center gap-2 md:flex">
             <button
               type="button"
-              onClick={() => setIsSearchOpen(true)}
-              className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-lg transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              onClick={() => startTransition(() => setIsSearchOpen(true))}
+              className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               aria-label={`${dict.search.ariaSearch} (Ctrl+K)`}
             >
               <RiSearchLine className="h-5 w-5" aria-hidden="true" />
@@ -90,8 +90,8 @@ export default function Navigation() {
             <LanguageSwitcher variant="mobile" />
             <button
               type="button"
-              onClick={() => setIsSearchOpen(true)}
-              className="text-primary hover:bg-primary-light hover:text-primary focus-visible:ring-primary flex h-10 w-10 items-center justify-center rounded-lg transition focus:outline-none focus-visible:ring-2"
+              onClick={() => startTransition(() => setIsSearchOpen(true))}
+              className="text-primary hover:bg-primary-light hover:text-primary focus-visible:ring-primary flex h-10 w-10 items-center justify-center rounded-lg transition-colors focus:outline-none focus-visible:ring-2"
               aria-label={dict.search.ariaSearch}
             >
               <RiSearchLine className="h-6 w-6" aria-hidden="true" />

@@ -1,5 +1,5 @@
-{
-  "0": {
+[
+  {
     "slug": "czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac",
     "title": "Czym jest kanibalizacja słów kluczowych i jak jej unikać?",
     "excerpt": "Twoje strony walczą ze sobą w Google zamiast się wspierać? To kanibalizacja słów kluczowych — cichy problem, który potrafi zablokować wzrost widoczności całej witryny. Pokazujemy, jak ją znaleźć i naprawić.",
@@ -13,7 +13,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/seo/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac"
     }
   },
-  "1": {
+  {
     "slug": "czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac",
     "title": "Czym jest strona błędu 404 i dlaczego warto ją zaprojektować?",
     "excerpt": "Błąd 404 pojawia się, gdy strona nie istnieje. Skąd biorą się takie błędy? Jak je znaleźć w Google Search Console? Kiedy wymagają reakcji i co umieścić na stronie błędu, by użytkownicy mogli wrócić do treści?",
@@ -27,7 +27,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/strony/czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac"
     }
   },
-  "2": {
+  {
     "slug": "co-to-jest-newsletter-i-czy-warto-go-prowadzic",
     "title": "Co to jest newsletter i czy warto go prowadzić?",
     "excerpt": "Newsletter to regularna wiadomość e-mail wysyłana do osób, które wyraziły zgodę. Jakie korzyści może przynieść firmie? Na co zwrócić uwagę przy jego prowadzeniu i zbieraniu subskrybentów?",
@@ -41,7 +41,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/marketing/co-to-jest-newsletter-i-czy-warto-go-prowadzic"
     }
   },
-  "3": {
+  {
     "slug": "szybkosc-ladowania-strony-a-pozycja-w-google",
     "title": "Dlaczego szybkość ładowania strony wpływa na pozycję w Google?",
     "excerpt": "Wolna strona traci klientów i pozycje w Google. Core Web Vitals — LCP, INP i CLS — to trzy wskaźniki, przez które Google ocenia szybkość Twojej witryny. Jak je sprawdzić i co poprawić?",
@@ -55,7 +55,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/seo/szybkosc-ladowania-strony-a-pozycja-w-google"
     }
   },
-  "4": {
+  {
     "slug": "regulamin-sklepu-internetowego-co-musi-zawierac",
     "title": "Co to jest regulamin sklepu internetowego i co musi zawierać?",
     "excerpt": "Regulamin sklepu internetowego określa zasady korzystania ze sklepu i zawierania umów. Jakie elementy musi zawierać zgodnie z polskim prawem? Na co zwrócić uwagę przy jego tworzeniu lub aktualizacji?",
@@ -69,7 +69,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/sklepy/regulamin-sklepu-internetowego-co-musi-zawierac"
     }
   },
-  "5": {
+  {
     "slug": "dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa",
     "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?",
     "excerpt": "WordPress napędza ponad 40% stron na świecie, co czyni go częstym celem ataków. Dlaczego aktualizacje są tak ważne? Co się dzieje, gdy strona pozostaje nieaktualna? I na co zwrócić uwagę przy utrzymaniu witryny?",
@@ -83,7 +83,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa"
     }
   },
-  "6": {
+  {
     "slug": "breadcrumbs-sciezka-nawigacji-na-stronie",
     "title": "Czym jest ścieżka nawigacji na stronie i dlaczego warto ją mieć?",
     "excerpt": "Ścieżka nawigacji pokazuje użytkownikowi, gdzie się znajduje w strukturze witryny. Jak działa? Dlaczego ułatwia poruszanie się po stronie? Jak wpływa na widoczność w Google i kiedy warto ją dodać do witryny?",
@@ -97,7 +97,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/ux/breadcrumbs-sciezka-nawigacji-na-stronie"
     }
   },
-  "7": {
+  {
     "slug": "dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc",
     "title": "Dlaczego pusta przestrzeń na stronie zwiększa czytelność?",
     "excerpt": "Strony z odpowiednią ilością pustej przestrzeni są łatwiejsze do czytania. Jak odstępy między elementami wpływają na odbiór treści? Gdzie je stosować i jak ocenić, czy witryna ma właściwe proporcje?",
@@ -111,7 +111,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/ux/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc"
     }
   },
-  "8": {
+  {
     "slug": "czcionki-szeryfowe-vs-bezszeryfowe",
     "title": "Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których?",
     "excerpt": "Czcionki szeryfowe i bezszeryfowe różnią się wyglądem i zastosowaniem. Skąd wzięły się te dwa style? Jak wpływają na czytelność i odbiór tekstu? Kiedy wybrać którą — w druku i na ekranie?",
@@ -125,7 +125,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/grafika/czcionki-szeryfowe-vs-bezszeryfowe"
     }
   },
-  "9": {
+  {
     "slug": "czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz",
     "title": "Czym jest paradoks wyboru i dlaczego mniej opcji może zwiększyć sprzedaż?",
     "excerpt": "Paradoks wyboru to zjawisko, w którym zbyt wiele opcji prowadzi do paraliżu decyzyjnego. Jak działa ten mechanizm? Dlaczego mniej opcji może zwiększyć sprzedaż? I jak projektować ofertę produktową w swoim sklepie?",
@@ -139,7 +139,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz"
     }
   },
-  "10": {
+  {
     "slug": "efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci",
     "title": "Efekt zakotwiczenia: jak pierwsza cena wpływa na postrzeganie wartości?",
     "excerpt": "Efekt zakotwiczenia to mechanizm, w którym pierwsza cena wpływa na ocenę wszystkich kolejnych. Jak działa zakotwiczenie? Dlaczego pierwsza cena ma znaczenie? I jak firmy wykorzystują ten mechanizm w codziennej praktyce?",
@@ -153,7 +153,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/psychologia/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci"
     }
   },
-  "11": {
+  {
     "slug": "darmowa-dostawa-vs-nizsza-cena",
     "title": "Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu?",
     "excerpt": "Darmowa dostawa czy niższa cena produktu? To częsty dylemat w e-commerce. Porównujemy obie strategie cenowe, analizujemy badania i pokazujemy, kiedy która opcja działa lepiej dla różnych typów sklepów internetowych w Polsce.",
@@ -167,7 +167,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena"
     }
   },
-  "12": {
+  {
     "slug": "social-proof-spoleczny-dowod-slusznosci",
     "title": "Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje?",
     "excerpt": "Social proof to mechanizm psychologiczny, przez który ludzie kierują się zachowaniami innych. Jak działa? Jakie są jego rodzaje? I jak wykorzystać go na stronie, by zwiększyć zaufanie klientów i sprzedaż?",
@@ -181,7 +181,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci"
     }
   },
-  "13": {
+  {
     "slug": "mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec",
     "title": "Mapa strony dla użytkowników: dlaczego warto ją mieć i jak powinna wyglądać?",
     "excerpt": "Mapa strony pokazuje strukturę witryny w jednym miejscu. Czym różni się od sitemap.xml? Jakie korzyści daje użytkownikom i SEO? Kto z niej korzysta i jak powinna wyglądać?",
@@ -195,7 +195,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/ux/mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec"
     }
   },
-  "14": {
+  {
     "slug": "czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony",
     "title": "Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony?",
     "excerpt": "Linki wewnętrzne łączą podstrony Twojej witryny i pomagają Google zrozumieć, co jest najważniejsze. Jak budować klastry tematyczne? Jak pisać anchor texty? I jakich błędów unikać, żeby linkowanie naprawdę wspierało SEO?",
@@ -209,7 +209,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony"
     }
   },
-  "15": {
+  {
     "slug": "kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie",
     "title": "Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?",
     "excerpt": "Kontrast kolorów decyduje o czytelności tekstu na stronie. Czym jest kontrast? Co oznaczają poziomy WCAG AA i AAA? Kto korzysta z dobrego kontrastu i jak sprawdzić kolory na swojej stronie?",
@@ -223,7 +223,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie"
     }
   },
-  "16": {
+  {
     "slug": "jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych",
     "title": "Jak przygotować grafikę do postów w mediach społecznościowych?",
     "excerpt": "Grafika w mediach społecznościowych decyduje, czy ktoś zatrzyma się na poście. Dowiesz się, jak przygotować grafiki, które przyciągają uwagę, budują spójny wizerunek marki i jakie wymiary stosować na różnych platformach.",
@@ -237,7 +237,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/grafika/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych"
     }
   },
-  "17": {
+  {
     "slug": "czym-jest-content-marketing",
     "title": "Czym jest content marketing i jak pomaga firmom pozyskiwać klientów?",
     "excerpt": "Content marketing to strategia polegająca na tworzeniu wartościowych treści, które przyciągają potencjalnych klientów. Jak działa? Jakie formy może przyjąć? I jak zacząć stosować go w swojej firmie lub sklepie?",
@@ -251,7 +251,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/marketing/czym-jest-content-marketing"
     }
   },
-  "18": {
+  {
     "slug": "e-mail-marketing-dla-malych-firm",
     "title": "E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę?",
     "excerpt": "E-mail marketing to opłacalny kanał komunikacji z klientami. Dlaczego warto go stosować? Jakie rodzaje e-maili przynoszą najlepsze efekty? Na co zwrócić uwagę przy planowaniu kampanii mailingowej dla małej firmy?",
@@ -265,7 +265,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/marketing/e-mail-marketing-dla-malych-firm"
     }
   },
-  "19": {
+  {
     "slug": "co-sprawdzic-przed-uruchomieniem-strony",
     "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej?",
     "excerpt": "Przed publikacją strony warto upewnić się, że wszystko działa poprawnie. Dowiesz się, co sprawdzić w zakresie treści, funkcjonalności, wydajności, SEO i kwestii prawnych przed uruchomieniem nowej witryny internetowej w sieci.",
@@ -279,7 +279,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony"
     }
   },
-  "20": {
+  {
     "slug": "jak-wybrac-domene-i-hosting-dla-strony-firmowej",
     "title": "Jak wybrać domenę i hosting dla strony firmowej?",
     "excerpt": "Domena to adres strony w internecie, a hosting to miejsce, gdzie strona jest przechowywana. Dowiesz się, jak wybrać obie te usługi, na co zwrócić uwagę przy zakupie i jakich błędów unikać przy ich wyborze dla swojej firmy.",
@@ -293,7 +293,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej"
     }
   },
-  "21": {
+  {
     "slug": "materialy-drukowane-dla-firmy-ktore-zamowic",
     "title": "Materiały drukowane dla firmy: które zamówić na start?",
     "excerpt": "Wizytówki, ulotki, katalogi, teczki - które materiały drukowane przydadzą się firmie? Znajdziesz tu wskazówki, od czego zacząć, jak zaplanować spójny zestaw i jak jakość papieru wpływa na wizerunek Twojej marki w praktyce.",
@@ -307,7 +307,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/grafika/materialy-drukowane-dla-firmy-ktore-zamowic"
     }
   },
-  "22": {
+  {
     "slug": "kody-qr-w-materialach-reklamowych",
     "title": "Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać?",
     "excerpt": "Kody QR łączą materiały drukowane z treściami online. Znajdziesz tu konkretne wskazówki: gdzie kod QR działa najlepiej, czego unikać przy projektowaniu, jak wygenerować kod i jak testować go przed drukiem reklamowych materiałów.",
@@ -321,7 +321,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/grafika/kody-qr-w-materialach-reklamowych"
     }
   },
-  "23": {
+  {
     "slug": "jak-dobrac-kolory-do-strony-internetowej",
     "title": "Jak dobrać kolory do strony internetowej lub sklepu?",
     "excerpt": "Praktyczny przewodnik po doborze kolorów na stronę lub sklep internetowy. Znajdziesz tu konkretne kroki, dane z badań i narzędzia online, które pomogą wybrać odpowiednią paletę kolorów wspierającą cele biznesowe Twojej firmy.",
@@ -335,7 +335,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej"
     }
   },
-  "24": {
+  {
     "slug": "jak-mierzyc-skutecznosc-strony-internetowej",
     "title": "Jak mierzyć skuteczność strony internetowej? Podstawy analityki",
     "excerpt": "Strona działa, ale czy przynosi efekty? Google Analytics i Search Console pokażą Ci, ile osób odwiedza witrynę, skąd przychodzą i co robią. Pokazujemy, na które wskaźniki patrzeć i jak je interpretować.",
@@ -349,7 +349,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej"
     }
   },
-  "25": {
+  {
     "slug": "jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma",
     "title": "Jak założyć i zoptymalizować profil Google Moja Firma?",
     "excerpt": "Google Moja Firma pozwala lokalnym firmom wyświetlać się w Mapach Google i wynikach wyszukiwania. Jak założyć profil, jakie informacje uzupełnić i jak zdobywać opinie, które przyciągają nowych klientów?",
@@ -363,7 +363,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma"
     }
   },
-  "26": {
+  {
     "slug": "meta-title-i-description-jak-je-napisac",
     "title": "Meta title i description: jak je napisać, żeby strona wyświetlała się lepiej w Google?",
     "excerpt": "Meta title i description to krótkie teksty w wynikach wyszukiwania Google. Czym są, dlaczego mają znaczenie dla SEO i jak je napisać, żeby zwiększyć klikalność strony? Przykłady, limity znaków i najczęstsze błędy.",
@@ -377,7 +377,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/seo/meta-title-i-description-jak-je-napisac"
     }
   },
-  "27": {
+  {
     "slug": "czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje",
     "title": "Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?",
     "excerpt": "Certyfikat SSL to podstawa bezpieczeństwa każdej strony internetowej. Dowiesz się, czym jest SSL, jak działa szyfrowanie, jak wpływa na zaufanie użytkowników i SEO oraz jakie są rodzaje certyfikatów dostępnych na rynku w Polsce.",
@@ -391,7 +391,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje"
     }
   },
-  "28": {
+  {
     "slug": "czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie",
     "title": "Czym jest responsywność strony i dlaczego ma znaczenie?",
     "excerpt": "Responsywność strony to jej zdolność do dopasowania się do różnych rozmiarów ekranów. Czym dokładnie jest responsywność? Jak wpływa na użytkowników i SEO? I jak sprawdzić, czy strona jest responsywna?",
@@ -405,7 +405,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie"
     }
   },
-  "29": {
+  {
     "slug": "jak-przygotowac-sklep-internetowy-do-pozycjonowania",
     "title": "Jak przygotować sklep internetowy do pozycjonowania?",
     "excerpt": "Pozycjonowanie sklepu internetowego wymaga innego podejścia niż SEO strony firmowej. Jak przygotować strukturę kategorii, opisy produktów i techniczne podstawy, żeby działania SEO przełożyły się na widoczność w Google?",
@@ -419,7 +419,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania"
     }
   },
-  "30": {
+  {
     "slug": "jak-przygotowac-profesjonalna-stopke-mailowa",
     "title": "Jak przygotować profesjonalną stopkę mailową?",
     "excerpt": "Stopka mailowa to wizytówka w każdym e-mailu. Co powinna zawierać? Jakich błędów unikać? I jak stworzyć podpis za pomocą generatora?",
@@ -433,7 +433,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/marketing/jak-przygotowac-profesjonalna-stopke-mailowa"
     }
   },
-  "31": {
+  {
     "slug": "favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie",
     "title": "Favicon: co to za ikona, jak ją stworzyć i przygotować, aby działała poprawnie?",
     "excerpt": "Favicon to mała ikonka przy nazwie strony w przeglądarce. Jakie pliki są potrzebne i jak przygotować zestaw ikon za pomocą generatora?",
@@ -447,7 +447,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie"
     }
   },
-  "32": {
+  {
     "slug": "faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony",
     "title": "FAQ na stronie: jak pisać pytania, które wspierają pozycję strony?",
     "excerpt": "Dobrze zaplanowane FAQ skraca drogę do decyzji i pomaga przechwytywać ruch z długich zapytań. Skąd brać pytania, jak je grupować, jak pisać odpowiedzi i kiedy stosować FAQ schema i linki wewnętrzne?",
@@ -461,7 +461,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/seo/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony"
     }
   },
-  "33": {
+  {
     "slug": "jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow",
     "title": "Jak kolorystyka wpływa na decyzje zakupowe klientów?",
     "excerpt": "Kolor wpływa na to, czy klient zaufa marce i zdecyduje się na zakup. Mechanizmy psychologiczne percepcji kolorów, wyniki testów A/B i przykłady z różnych branż.",
@@ -475,7 +475,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow"
     }
   },
-  "34": {
+  {
     "slug": "ile-czasu-trwa-pozycjonowanie-strony",
     "title": "Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?",
     "excerpt": "SEO nie działa natychmiast — ale dlaczego? Jak Google indeksuje strony, dlaczego nowe domeny potrzebują więcej czasu i co wpływa na tempo wyników w różnych branżach w Polsce?",
@@ -489,7 +489,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony"
     }
   },
-  "35": {
+  {
     "slug": "czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google",
     "title": "Czy lokalne firmy potrzebują bloga na stronie internetowej, aby rosnąć w Google?",
     "excerpt": "Blog na stronie lokalnej firmy wpływa na to, jak Google ocenia wiarygodność firmy. Dlaczego treści edukacyjne wzmacniają widoczność? Jak blog wpływa na pozycję w Google Maps i kiedy taka inwestycja się opłaca?",
@@ -503,7 +503,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google"
     }
   },
-  "36": {
+  {
     "slug": "jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp",
     "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
     "excerpt": "Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Jak wybrać format (JPEG, PNG, WebP, AVIF), dobrać rozmiar i kompresję, aby strona ładowała się szybko i wyglądała dobrze w wynikach Google?",
@@ -517,7 +517,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp"
     }
   },
-  "37": {
+  {
     "slug": "jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google",
     "title": "Jak pisać treści na stronie internetowej, aby być wyżej w wyszukiwarce Google?",
     "excerpt": "Treści na stronie wpływają na pozycję w Google. Zasady SEO, struktura nagłówków, intencja użytkownika — z przykładami z czterech różnych branż.",
@@ -531,7 +531,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google"
     }
   },
-  "38": {
+  {
     "slug": "jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow",
     "title": "Jak identyfikacja wizualna firmy zwiększa zaufanie wśród klientów?",
     "excerpt": "Identyfikacja wizualna buduje wiarygodność, skraca decyzje zakupowe i wzmacnia rozpoznawalność marki. Zobacz, jak logo, kolorystyka i typografia wpływają na zaufanie klientów oraz co powinien zawierać profesjonalny brandbook.",
@@ -545,7 +545,7 @@
       "canonical": "https://www.arteonagency.pl/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow"
     }
   },
-  "39": {
+  {
     "slug": "dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic",
     "title": "Dlaczego strona internetowa nie wyświetla się w Google i jak to naprawić?",
     "excerpt": "Strona nie wyświetla się w Google? Sprawdź najczęstsze błędy wpływające na indeksację: robots.txt, sitemap.xml, meta tagi noindex, szybkość ładowania i jakość treści. Praktyczny poradnik z rozwiązaniami.",
@@ -559,4 +559,4 @@
       "canonical": "https://www.arteonagency.pl/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic"
     }
   }
-}
+]

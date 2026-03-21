@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Instrument_Sans } from 'next/font/google';
+import Script from 'next/script';
 import { Suspense } from 'react';
 
 import FocusManager from '@/components/systems/FocusManager';
@@ -141,7 +142,7 @@ export default function RootHtml({ lang, children }: RootHtmlProps) {
           }}
         />
 
-        {/* Early connection hints — must precede external scripts for maximum effect */}
+        {/* Early connection hints for AdSense + CMP (highest priority for ad revenue) */}
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fundingchoicesmessages.google.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://tpc.googlesyndication.com" crossOrigin="anonymous" />
@@ -149,24 +150,13 @@ export default function RootHtml({ lang, children }: RootHtmlProps) {
         <link rel="dns-prefetch" href="https://fundingchoicesmessages.google.com" />
         <link rel="dns-prefetch" href="https://fundingchoices.google.com" />
         <link rel="dns-prefetch" href="https://tpc.googlesyndication.com" />
+        {/* Low-priority hints — dns-prefetch only, no preconnect (won't steal connections from ads) */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://formspree.io" />
-        <link rel="dns-prefetch" href="https://vitals.vercel-insights.com" />
 
         <meta name="theme-color" content="#171717" />
 
-        {/* AdSense + Google CMP (consent dialog) — loaded before GA4 for faster consent prompt */}
+        {/* AdSense + Google CMP (consent dialog) — stays in <head> for fastest ad loading */}
         {ADSENSE_CLIENT && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossOrigin="anonymous" />}
-
-        {GA_MEASUREMENT_ID && <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />}
-        {GA_MEASUREMENT_ID && (
-          <script
-            id="ga4-init"
-            dangerouslySetInnerHTML={{
-              __html: `gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}',{send_page_view:true});`,
-            }}
-          />
-        )}
 
         <script id="schema-org-organization" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildOrgJsonLd(lang)) }} />
 
@@ -180,6 +170,19 @@ export default function RootHtml({ lang, children }: RootHtmlProps) {
         </Suspense>
 
         {children}
+
+        {/* GA4 deferred to afterInteractive — frees bandwidth for AdSense + critical resources.
+            Consent defaults (set in <head> inline script) are already active before GA4 loads. */}
+        {GA_MEASUREMENT_ID && <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive" />}
+        {GA_MEASUREMENT_ID && (
+          <Script
+            id="ga4-init"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}',{send_page_view:true});`,
+            }}
+          />
+        )}
 
         <Analytics />
         <SpeedInsights sampleRate={0.02} />

@@ -49,7 +49,7 @@ When given text to humanize:
 ### Arteon Brand Voice Guidelines
 
 **Tone:** Mentorski, przyjazny, prosty - jak przy kawie
-**Narracja:** 2 os. l.poj. dla czytelnika, 1 os. l.mn. dla Arteon
+**Narracja:** 2 os. l.poj. dla czytelnika ("Ty"), forma bezosobowa/dokonana dla Arteon ("Zaprojektowane", "Zrobione", "Przygotowane") — NIE "My/Zrobiliśmy" (firma jednoosobowa). **WYJĄTEK: realizacje/case study** — 1 os. l.mn. OK ("Przygotowaliśmy", "Stworzyliśmy") bo opisuje wykonaną pracę
 **Styl:** Benefit-first, bez korpo-języka, bez AI-owych fraz
 
 #### Przykłady transformacji:
@@ -92,6 +92,9 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 - No first-person perspective when appropriate
 - No humor, no edge, no personality
 - Reads like a Wikipedia article or press release
+- Przepisany tekst brzmi jak INNY AI (wymiana jednego szablonu na drugi)
+- Uproszczenie usunęło ciepło, charakter i detale oryginału
+- Sztywne stosowanie "reguł humanizacji" bez wyczucia kontekstu
 
 ### How to add voice:
 
@@ -180,6 +183,16 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 **After:**
 
 > Alamata Raya Kobo is a town in the Gonder region of Ethiopia, known for its weekly market and 18th-century church.
+
+**UWAGA: Atmosferyczne opisy ≠ promotional language**
+
+Opisy klimatu, estetyki i charakteru (np. "rzemieślnicza palarnia", "estetyka slow coffee", "skandynawski klimat") są LUDZKIE, nie AI. Promotional language to puste słowa bez kontekstu ("ekskluzywna oferta", "najlepsza jakość"). Opisy które tworzą obraz w głowie czytelnika — zostaw.
+
+Rozróżnienie:
+
+- ❌ Promotional (AI): "ekskluzywna, premium oferta najwyższej jakości"
+- ✅ Klimatyczne (ludzkie): "rzemieślnicza palarnia inspirowana estetyką slow coffee"
+- ✅ Klimatyczne (ludzkie): "mała kawiarnia z własnym procesem palenia kawy"
 
 ---
 
@@ -277,7 +290,79 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ---
 
-### 11. Elegant Variation (Synonym Cycling)
+### 11. Formulaic Case Study Structure
+
+**Problem:** AI przepisuje case studies w sztywnej kolejności: ból→rozwiązanie→efekt. Przewidywalna struktura = oczywisty wzorzec AI.
+
+**Before (AI-formulaic):**
+
+> Firma potrzebowała logo, które działa na wizytówce i stronie. Zaprojektowano sygnet łączący dach z literami F i M. Klient wybrał paletę niebieską po analizie psychologii kolorów.
+
+**After (human, mixed order):**
+
+> Logo dla firmy zajmującej się wykończeniem mieszkań — sygnet z dachem i literami F i M. Ikona celowo niedokończona, co nawiązuje do nazwy Finish Masters. Działa równie dobrze na wizytówce jak i na samochodzie firmowym.
+
+**Zasada:** Mieszaj kolejność. Czasem zacznij od opisu wizualnego, czasem od kontekstu, czasem od detalu. Brak stałego wzorca = ludzkie.
+
+---
+
+### 12. Over-Simplification (nadmierne upraszczanie)
+
+**Problem:** AI "humanizujące" tekst często go skraca i upraszcza, usuwając opisy, kontekst i detale. Wynik: suchy, pozbawiony charakteru tekst z mniejszą liczbą fraz kluczowych.
+
+**Before (bogaty, ludzki):**
+
+> Projekt logo dla firmy zajmującej się wykończeniem mieszkań, domów i lokali usługowych. Pełen system logo z wariantami do różnych zastosowań z autorską edycją czcionki i wpisanymi inicjałami firmy w ikonę.
+
+**After (over-simplified, brzmi bardziej AI):**
+
+> Logo dla firmy wykończeniowej — sygnet z dachem i literami F i M, autorska czcionka i kilka wariantów znaku.
+
+**Zasada:** Więcej opisów z kontekstem = bardziej ludzko. Nie skracaj tekstu pod pretekstem humanizacji. Jeśli oryginał ma charakter — zachowaj go. Praktyczne informacje (warianty, zastosowania, formaty) NIGDY nie są zbędne. Atmosferyczne opisy (klimat, estetyka, charakter) NIGDY nie są "promotional".
+
+---
+
+### 13. Etykiety przymiotnikowe zamiast opisu działalności
+
+**Problem:** AI opisuje firmy etykietami ("firma izolacyjna", "firma wykończeniowa") zamiast naturalnych opisów co firma robi. Ludzie mówią "firma zajmująca się X", nie "firma X-owa".
+
+**Before (AI-etykieta):**
+
+> Strona dla firmy izolacyjnej Izoluk.
+
+**After (ludzki opis):**
+
+> Strona dla firmy zajmującej się izolacją budynków.
+
+**Before (AI-etykieta):**
+
+> Logo firmy wykończeniowej Finish Masters.
+
+**After (ludzki opis):**
+
+> Projekt logo dla firmy zajmującej się wykończeniem mieszkań, domów i lokali usługowych.
+
+**Zasada:** Opisuj firmy przez to CO ROBIĄ. "Firma zajmująca się X" brzmi jak naturalny język. "Firma X-owa" brzmi jak skrót z briefu.
+
+---
+
+### 14. Comma-Separated Noun Phrases (równoważniki zdań po przecinkach)
+
+**Problem:** AI generuje listy rzeczowników po przecinkach zamiast pełnych zdań. To jeden z najczęstszych i najbardziej oczywistych wzorców AI.
+
+**Before (AI — lista rzeczownikowa):**
+
+> Blog firmowy, formularz wyceny, kolory zgodne z WCAG i szybkie ładowanie na telefonach.
+
+**After (ludzkie — pełne zdanie z kontekstem):**
+
+> Sprawdź realizację strony z firmowym blogiem, dedykowanym formularzem wycen dla klientów i ekspresowym czasem ładowania na wszystkich urządzeniach.
+
+**Zasada:** Wpleć elementy w naturalny tok zdania. Dodaj przymiotniki i kontekst ("dedykowany formularz wycen DLA KLIENTÓW", nie "formularz wyceny"). Czytelnik musi wiedzieć dlaczego każdy element jest ważny. Dotyczy również meta descriptions, short descriptions i CTA.
+
+---
+
+### 15. Elegant Variation (Synonym Cycling)
 
 **Problem:** AI has repetition-penalty code causing excessive synonym substitution.
 
@@ -291,7 +376,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ---
 
-### 12. False Ranges
+### 16. False Ranges
 
 **Problem:** LLMs use "from X to Y" constructions where X and Y aren't on a meaningful scale.
 
@@ -307,7 +392,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ## STYLE PATTERNS
 
-### 13. Em Dash Overuse
+### 17. Em Dash Overuse
 
 **Problem:** LLMs use em dashes (—) more than humans, mimicking "punchy" sales writing.
 
@@ -321,7 +406,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ---
 
-### 14. Overuse of Boldface
+### 18. Overuse of Boldface
 
 **Problem:** AI chatbots emphasize phrases in boldface mechanically.
 
@@ -335,7 +420,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ---
 
-### 15. Inline-Header Vertical Lists
+### 19. Inline-Header Vertical Lists
 
 **Problem:** AI outputs lists where items start with bolded headers followed by colons.
 
@@ -351,7 +436,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ---
 
-### 16. Title Case in Headings
+### 20. Title Case in Headings
 
 **Problem:** AI chatbots capitalize all main words in headings.
 
@@ -365,7 +450,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ---
 
-### 17. Emojis
+### 21. Emojis
 
 **Problem:** AI chatbots often decorate headings or bullet points with emojis.
 
@@ -381,7 +466,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ---
 
-### 18. Curly Quotation Marks
+### 22. Curly Quotation Marks
 
 **Problem:** ChatGPT uses curly quotes (“...”) instead of straight quotes ("...").
 
@@ -397,7 +482,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ## COMMUNICATION PATTERNS
 
-### 19. Collaborative Communication Artifacts
+### 23. Collaborative Communication Artifacts
 
 **Words to watch:** I hope this helps, Of course!, Certainly!, You're absolutely right!, Would you like..., let me know, here is a...
 
@@ -413,7 +498,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ---
 
-### 20. Knowledge-Cutoff Disclaimers
+### 24. Knowledge-Cutoff Disclaimers
 
 **Words to watch:** as of [date], Up to my last training update, While specific details are limited/scarce..., based on available information...
 
@@ -429,7 +514,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ---
 
-### 21. Sycophantic/Servile Tone
+### 25. Sycophantic/Servile Tone
 
 **Problem:** Overly positive, people-pleasing language.
 
@@ -519,7 +604,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ## FILLER AND HEDGING
 
-### 22. Filler Phrases
+### 26. Filler Phrases
 
 **Before → After:**
 
@@ -530,7 +615,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 - "The system has the ability to process" → "The system can process"
 - "It is important to note that the data shows" → "The data shows"
 
-### 23. Excessive Hedging
+### 27. Excessive Hedging
 
 **Problem:** Over-qualifying statements.
 
@@ -542,7 +627,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > The policy may affect outcomes.
 
-### 24. Generic Positive Conclusions
+### 28. Generic Positive Conclusions
 
 **Problem:** Vague upbeat endings.
 

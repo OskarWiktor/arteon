@@ -90,7 +90,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
     <>
       {/* Mobile */}
       <aside className={`block lg:hidden ${widthClass}`}>
-        <div className="relative rounded-xl border border-black/10 bg-white/95 shadow-sm backdrop-blur">
+        <div className="relative rounded-xl border border-black/10 bg-white shadow-sm">
           <div className="flex items-center justify-between p-2">
             <p className="text-light text-xs font-medium tracking-wider uppercase">
               Spis treści <span className="opacity-60">({items.length})</span>

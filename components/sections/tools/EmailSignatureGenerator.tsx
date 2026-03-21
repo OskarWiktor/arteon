@@ -499,7 +499,7 @@ export default function EmailSignatureGenerator() {
 
           {showSourceModal && (
             <div
-              className="fixed inset-0 z-[100] flex items-center justify-center bg-black/30 px-4 backdrop-blur-[1px]"
+              className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 px-4"
               onClick={(e) => {
                 if (e.target === e.currentTarget) setShowSourceModal(false);
               }}

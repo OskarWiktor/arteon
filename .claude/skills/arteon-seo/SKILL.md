@@ -88,6 +88,35 @@ Kompletny system SEO dla Arteon Agency — od meta tagów po AI search optimizat
 | Natychmiast     | Speed              |
 | Prosty          | Ease of use        |
 
+## Meta dla realizacji / usług (NIE narzędzi)
+
+W meta tagach realizacji i usług:
+
+- Używaj fraz które ludzie FAKTYCZNIE wyszukują (nie metryki techniczne)
+- ❌ "98/100 PageSpeed" — klient nie rozumie co to znaczy
+- ✅ "szybka strona widoczna w Google" — korzyść w języku klienta
+- Opisuj CO DAJE wynik, nie sam wynik
+- Metryki techniczne (PageSpeed, Core Web Vitals, czas ładowania) NIE SĄ keywordami
+  chyba że strona jest o tych metrykach
+
+Przykład:
+
+- ❌ "Strona dla firmy budowlanej — 98/100 PageSpeed, 8 dni"
+- ✅ "Strona dla firmy budowlanej — szybka, widoczna w Google, z formularzem wyceny"
+
+## Meta descriptions — pełne zdania, nie listy (KRYTYCZNE)
+
+Równoważniki zdań po przecinkach w meta = oczywisty wzorzec AI.
+Meta description to pełne zdanie, nie lista cech.
+
+```typescript
+// ❌ AI-pattern: lista rzeczownikowa
+'Blog firmowy, formularz wyceny, kolory WCAG, szybkie ładowanie. Zobacz.';
+
+// ✅ Ludzkie: pełne zdanie z kontekstem
+'Sprawdź realizację strony z firmowym blogiem, dedykowanym formularzem wycen i ekspresowym czasem ładowania na wszystkich urządzeniach.';
+```
+
 ---
 
 # CZĘŚĆ 2: KEYWORD STRATEGY
@@ -110,6 +139,15 @@ Kompletny system SEO dla Arteon Agency — od meta tagów po AI search optimizat
 | Meta checker    | sprawdzanie meta tagów   | SEO checker, meta validator       |
 | WCAG contrast   | sprawdzanie kontrastu    | kontrast WCAG, accessibility      |
 | Image converter | konwerter obrazów        | jpg na webp, zmiana formatu       |
+
+## Dłuższe frazy kluczowe = lepsze
+
+- "Projekt logo" > "Logo" (więcej kontekstu, lepsza fraza)
+- "firma zajmująca się wykończeniem mieszkań" > "firma wykończeniowa"
+  (long-tail, bardziej naturalne, lepsze dopasowanie do intencji)
+
+Nie skracaj fraz kluczowych. Naturalny, rozbudowany opis = więcej
+potencjalnych long-tail keywords.
 
 ## Natural Integration
 

@@ -130,7 +130,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   const containerRef = useRef<HTMLDivElement>(null);
   const pushed = useRef(false);
   const retryCount = useRef(0);
-  const [filled, setFilled] = useState(false);
+  const [, setFilled] = useState(false);
   const pathname = usePathname();
   const pathnameRef = useRef(pathname);
   const preset = PRESETS[variant];
@@ -284,19 +284,19 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   }, [variant, slot, isInArticleVariant, pathname, injectAd]);
 
   if (variant === 'tool-banner') {
-    return <div ref={containerRef} className={`flex items-center justify-center ${filled ? 'min-h-[90px]' : ''} ${className}`} />;
+    return <div ref={containerRef} className={`flex min-h-[90px] items-center justify-center ${className}`} />;
   }
 
   if (variant === 'responsive') {
-    return <div ref={containerRef} className={`w-full ${filled ? 'min-h-[100px]' : ''} ${className}`} />;
+    return <div ref={containerRef} className={`min-h-[100px] w-full ${className}`} />;
   }
 
   if (variant === 'vertical') {
-    return <div ref={containerRef} className={`inline-block w-[160px] ${filled ? 'min-h-[600px]' : ''} ${className}`} />;
+    return <div ref={containerRef} className={`inline-block min-h-[600px] w-[160px] ${className}`} />;
   }
 
   if (isInArticleVariant) {
-    return <div ref={containerRef} className={`w-full ${filled ? 'min-h-[280px]' : ''} ${className}`} />;
+    return <div ref={containerRef} className={`min-h-[280px] w-full ${className}`} />;
   }
 
   return <div ref={containerRef} className={className} />;

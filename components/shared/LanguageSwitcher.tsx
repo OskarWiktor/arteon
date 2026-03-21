@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { startTransition, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
@@ -70,7 +70,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
   const btnRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
 
-  const links = getAlternateLinks(pathname, locale);
+  const links = useMemo(() => getAlternateLinks(pathname, locale), [pathname, locale]);
   const t = useDictionary().languageSwitcher;
   const currentConfig = useLocaleConfig();
 
@@ -100,21 +100,27 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
 
   useScrollLock(variant === 'mobile' && isOpen);
 
+  const { popularCols, otherCols, popularMobileCols, otherMobileCols, popularSorted, otherSorted } = useMemo(() => {
+    const popular = links.filter((l) => POPULAR_LOCALES.includes(l.locale));
+    const other = links.filter((l) => !POPULAR_LOCALES.includes(l.locale));
+    const pSorted = [...popular].sort((a, b) => a.name.localeCompare(b.name));
+    const oSorted = [...other].sort((a, b) => a.name.localeCompare(b.name));
+    return {
+      popularSorted: pSorted,
+      otherSorted: oSorted,
+      popularCols: splitIntoColumns(pSorted, 2),
+      otherCols: splitIntoColumns(oSorted, 3),
+      popularMobileCols: splitIntoColumns(pSorted, 2),
+      otherMobileCols: splitIntoColumns(oSorted, 2),
+    };
+  }, [links]);
+
   if (links.length === 0) return null;
-  const popular = links.filter((l) => POPULAR_LOCALES.includes(l.locale));
-  const other = links.filter((l) => !POPULAR_LOCALES.includes(l.locale));
 
   const close = () => {
     setIsOpen(false);
     btnRef.current?.focus();
   };
-
-  const popularSorted = [...popular].sort((a, b) => a.name.localeCompare(b.name));
-  const otherSorted = [...other].sort((a, b) => a.name.localeCompare(b.name));
-  const popularCols = splitIntoColumns(popularSorted, 2);
-  const otherCols = splitIntoColumns(otherSorted, 3);
-  const popularMobileCols = splitIntoColumns(popularSorted, 2);
-  const otherMobileCols = splitIntoColumns(otherSorted, 2);
 
   const linkItem = (link: AlternateLink) => (
     <Link
@@ -125,7 +131,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
       hrefLang={link.hreflang}
       title={link.title}
       onClick={close}
-      className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
+      className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-white focus:outline-none focus-visible:ring-2"
     >
       <span className="text-primary-mid group-hover/link:text-primary w-6 text-center text-xs font-semibold uppercase transition-colors">{link.label}</span>
       <span className="text-mid group-hover/link:text-primary text-sm font-medium transition-colors">{link.name}</span>
@@ -140,11 +146,11 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
           <button
             ref={btnRef}
             type="button"
-            onClick={() => setIsOpen((p) => !p)}
+            onClick={() => startTransition(() => setIsOpen((p) => !p))}
             aria-haspopup="menu"
             aria-expanded={isOpen}
             aria-label={t.toggleLabel}
-            className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 items-center gap-1.5 rounded-lg px-2 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 items-center gap-1.5 rounded-lg px-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           >
             <RiTranslate2 className="h-5 w-5" aria-hidden="true" />
             <span className="text-xs font-semibold tracking-wide uppercase">{currentConfig.label}</span>
@@ -228,11 +234,11 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
         <button
           ref={btnRef}
           type="button"
-          onClick={() => setIsOpen((p) => !p)}
+          onClick={() => startTransition(() => setIsOpen((p) => !p))}
           aria-haspopup="dialog"
           aria-expanded={isOpen}
           aria-label={t.toggleLabel}
-          className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 items-center gap-1.5 rounded-lg px-2 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+          className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 items-center gap-1.5 rounded-lg px-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
         >
           <RiTranslate2 className="h-5 w-5" aria-hidden="true" />
           <span className="text-xs font-semibold tracking-wide uppercase">{currentConfig.label}</span>
@@ -244,7 +250,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
         createPortal(
           <>
             {/* Backdrop */}
-            <div className="animate-modal-backdrop fixed inset-0 z-[1100] bg-black/40 backdrop-blur-[2px]" onClick={close} aria-hidden="true" />
+            <div className="animate-modal-backdrop fixed inset-0 z-[1100] bg-black/50" onClick={close} aria-hidden="true" />
 
             {/* Modal panel */}
             <div
@@ -260,7 +266,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                 <button
                   type="button"
                   onClick={close}
-                  className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-lg transition focus:outline-none focus-visible:ring-2"
+                  className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-lg transition-colors focus:outline-none focus-visible:ring-2"
                   aria-label={t.closeModalLabel}
                 >
                   <RiCloseLine className="h-5 w-5" aria-hidden="true" />

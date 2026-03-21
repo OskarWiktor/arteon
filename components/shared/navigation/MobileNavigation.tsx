@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, type JSX } from 'react';
+import { startTransition, useEffect, useRef, useState, type JSX } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
@@ -100,14 +100,15 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
   const [openToolSections, setOpenToolSections] = useState<Record<string, boolean>>({});
 
-  const toggleToolSection = (key: string) => {
-    setOpenToolSections((prev) => {
-      const willOpen = !prev[key];
-      const next: Record<string, boolean> = {};
-      if (willOpen) next[key] = true;
-      return next;
+  const toggleToolSection = (key: string) =>
+    startTransition(() => {
+      setOpenToolSections((prev) => {
+        const willOpen = !prev[key];
+        const next: Record<string, boolean> = {};
+        if (willOpen) next[key] = true;
+        return next;
+      });
     });
-  };
 
   const contactNav = isPl ? NAV.find((it) => it.key === 'kontakt') : null;
   const contactHref = contactNav?.href ?? '/kontakt';
@@ -155,32 +156,35 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
   const closedKeys = { witryny: false, marketing: false, grafika: false, tresc: false } as const;
 
-  const toggleKey = (key: Section['key']) => {
-    const willOpen = !openKeys[key];
-    setOpenKeys({ ...closedKeys, [key]: willOpen });
-    if (willOpen) {
-      setIsAboutOpen(false);
-      setIsToolsOpen(false);
-    }
-  };
+  const toggleKey = (key: Section['key']) =>
+    startTransition(() => {
+      const willOpen = !openKeys[key];
+      setOpenKeys({ ...closedKeys, [key]: willOpen });
+      if (willOpen) {
+        setIsAboutOpen(false);
+        setIsToolsOpen(false);
+      }
+    });
 
-  const toggleAbout = () => {
-    const willOpen = !isAboutOpen;
-    setIsAboutOpen(willOpen);
-    if (willOpen) {
-      setOpenKeys(closedKeys);
-      setIsToolsOpen(false);
-    }
-  };
+  const toggleAbout = () =>
+    startTransition(() => {
+      const willOpen = !isAboutOpen;
+      setIsAboutOpen(willOpen);
+      if (willOpen) {
+        setOpenKeys(closedKeys);
+        setIsToolsOpen(false);
+      }
+    });
 
-  const toggleTools = () => {
-    const willOpen = !isToolsOpen;
-    setIsToolsOpen(willOpen);
-    if (willOpen) {
-      setOpenKeys(closedKeys);
-      setIsAboutOpen(false);
-    }
-  };
+  const toggleTools = () =>
+    startTransition(() => {
+      const willOpen = !isToolsOpen;
+      setIsToolsOpen(willOpen);
+      if (willOpen) {
+        setOpenKeys(closedKeys);
+        setIsAboutOpen(false);
+      }
+    });
 
   const onListKeyDown = (container: HTMLElement, e: React.KeyboardEvent) => {
     const items = container.querySelectorAll<HTMLAnchorElement>('a[href]');
@@ -207,12 +211,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
   return (
     <>
       <Portal>
-        <div
-          className="animate-modal-backdrop fixed inset-y-0 left-0 z-[999] bg-black/30 backdrop-blur-[1px]"
-          style={{ right: `${panelWidth}px` }}
-          onClick={() => setIsOpen(false)}
-          aria-hidden="true"
-        />
+        <div className="animate-modal-backdrop fixed inset-y-0 left-0 z-[999] bg-black/40" style={{ right: `${panelWidth}px` }} onClick={() => setIsOpen(false)} aria-hidden="true" />
       </Portal>
 
       <nav
@@ -241,7 +240,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                 const expanded = openKeys[sec.key];
                 return (
                   <div key={sec.key} className="mb-1">
-                    <div className="flex items-center justify-between rounded-xl py-1 transition hover:bg-neutral-100">
+                    <div className="flex items-center justify-between rounded-xl py-1 transition-colors hover:bg-neutral-100">
                       {sec.hubHref ? (
                         <Link
                           href={sec.hubHref}
@@ -260,7 +259,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         aria-expanded={expanded}
                         aria-controls={`sec-${sec.key}`}
                         onClick={() => toggleKey(sec.key)}
-                        className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                        className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
                       >
                         <span className="inline-flex transition-transform duration-200" style={{ transform: expanded ? 'rotate(180deg)' : undefined }}>
                           <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
@@ -284,7 +283,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                   href={it.href}
                                   prefetch={false}
                                   onClick={() => setIsOpen(false)}
-                                  className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
+                                  className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
                                 >
                                   <IconText icon={it.icon ? <span className="text-primary">{it.icon}</span> : undefined} gap="3" className="min-w-0">
                                     <span className="text-dark text-[15px]">{it.title}</span>
@@ -322,7 +321,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               ) : null}
 
               {aboutNav ? (
-                <div className="rounded-xl py-1 transition hover:bg-neutral-100">
+                <div className="rounded-xl py-1 transition-colors hover:bg-neutral-100">
                   <div className="flex items-center justify-between">
                     <Link
                       href={aboutNav.href}
@@ -341,7 +340,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       aria-expanded={isAboutOpen}
                       aria-controls="about-submenu-mobile"
                       onClick={toggleAbout}
-                      className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                      className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
                     >
                       <span className="inline-flex transition-transform duration-200" style={{ transform: isAboutOpen ? 'rotate(180deg)' : undefined }}>
                         <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
@@ -393,7 +392,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               ) : null}
 
               {narzedziaNav && TOOLS_SECTIONS_MOBILE.length > 0 ? (
-                <div className="rounded-xl py-1 transition hover:bg-neutral-100">
+                <div className="rounded-xl py-1 transition-colors hover:bg-neutral-100">
                   <div className="flex items-center justify-between">
                     <Link
                       href={narzedziaNav.href}
@@ -412,7 +411,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       aria-expanded={isToolsOpen}
                       aria-controls="tools-submenu-mobile"
                       onClick={toggleTools}
-                      className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                      className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
                     >
                       <span className="inline-flex transition-transform duration-200" style={{ transform: isToolsOpen ? 'rotate(180deg)' : undefined }}>
                         <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
@@ -483,7 +482,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   const expanded = !!openToolSections[sec.key];
                   return (
                     <div key={sec.key} className="mb-1">
-                      <div className="flex items-center justify-between rounded-xl py-1 transition hover:bg-neutral-100">
+                      <div className="flex items-center justify-between rounded-xl py-1 transition-colors hover:bg-neutral-100">
                         <div className="text-dark px-3 py-1 text-[15px]">{sec.title}</div>
 
                         <button
@@ -491,7 +490,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                           aria-expanded={expanded}
                           aria-controls={`sec-${locale}-${sec.key}`}
                           onClick={() => toggleToolSection(sec.key)}
-                          className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                          className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
                         >
                           <span className="inline-flex transition-transform duration-200" style={{ transform: expanded ? 'rotate(180deg)' : undefined }}>
                             <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
@@ -515,7 +514,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                     href={it.href}
                                     prefetch={false}
                                     onClick={() => setIsOpen(false)}
-                                    className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
+                                    className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
                                   >
                                     <IconText icon={it.icon ? <span className="text-primary">{it.icon}</span> : undefined} gap="3" className="min-w-0">
                                       <span className="text-dark text-[15px]">{it.title}</span>
@@ -587,7 +586,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   href={contactHref}
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  className="bg-primary focus-visible:ring-primary rounded-2xl px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2"
+                  className="bg-primary focus-visible:ring-primary rounded-2xl px-3 py-2 text-sm font-semibold text-white transition-colors outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2"
                 >
                   {mobileNavUi.contact}
                 </Link>

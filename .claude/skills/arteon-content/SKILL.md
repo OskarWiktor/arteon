@@ -21,19 +21,26 @@ Kompletny system tworzenia treści dla Arteon Agency — od brand voice po publi
 - Service pages i sales copy
 - Task management i dokumentacja
 
+## Zasady uniwersalne
+
+Wszystkie zasady w tym skillu dotyczą KAŻDEGO typu treści:
+realizacje, artykuły, strony usług, narzędzia, CTA, meta, FAQ.
+Nie ma oddzielnych reguł per typ strony — te zasady to ogólny
+standard pisania treści dla Arteon.
+
 ---
 
 # CZĘŚĆ 1: BRAND VOICE
 
 ## Ton i styl (PL)
 
-| Element       | Zasada                             |
-| ------------- | ---------------------------------- |
-| **Ton**       | Mentorski — dzielimy się wiedzą    |
-| **Styl**      | Przyjazny — jak rozmowa przy kawie |
-| **Język**     | Prosty — zrozumiały dla każdego    |
-| **Czytelnik** | "Ty" (2 os. l.poj.)                |
-| **Arteon**    | "My" (1 os. l.mn.)                 |
+| Element       | Zasada                                                                                                                                                                                                                                            |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Ton**       | Mentorski — dzielimy się wiedzą                                                                                                                                                                                                                   |
+| **Styl**      | Przyjazny — jak rozmowa przy kawie                                                                                                                                                                                                                |
+| **Język**     | Prosty — zrozumiały dla każdego                                                                                                                                                                                                                   |
+| **Czytelnik** | "Ty" (2 os. l.poj.)                                                                                                                                                                                                                               |
+| **Arteon**    | Forma bezosobowa/dokonana ("Zaprojektowane", "Zrobione", "Przygotowane") — NIE "My/Zrobiliśmy" (firma jednoosobowa). **WYJĄTEK: realizacje/case study** — 1 os. l.mn. OK ("Przygotowaliśmy", "Stworzyliśmy") bo case study opisuje wykonaną pracę |
 
 ## Przykłady tonu
 
@@ -47,6 +54,15 @@ Pokażę Ci, jak to osiągnąć."
 
 ❌ AI-like:
 "W dzisiejszych czasach każda firma potrzebuje strony."
+
+❌ Liczba mnoga na stronach usług/narzędzi (firma jednoosobowa):
+"Zaprojektowaliśmy logo, które buduje zaufanie."
+
+✅ Forma bezosobowa (usługi/narzędzia):
+"Logo zaprojektowane tak, żeby budowało zaufanie od pierwszego kontaktu."
+
+✅ Liczba mnoga w realizacjach/case study:
+"Zaprojektowaliśmy logo z ikoną dachu i literami F i M."
 ```
 
 ---
@@ -101,10 +117,10 @@ Nawet "czysty" tekst może być oczywisto AI jeśli:
 
 **Jak dodać głos:**
 
-- Miej opinię ("Zauważyliśmy, że...")
+- Miej opinię ("Warto zwrócić uwagę, że...")
 - Mieszaj rytm zdań (krótkie. Potem dłuższe, które budują myśl.)
 - Przyznaj złożoność ("To skuteczne, ale wymaga czasu")
-- Używaj "my" gdy pasuje
+- Forma bezosobowa dla Arteon ("Zaprojektowane", "Przygotowane") — w edukacyjnych dopuszczalne "pomagamy"
 
 ## Anglicyzmy
 
@@ -167,6 +183,46 @@ Nawet "czysty" tekst może być oczywisto AI jeśli:
 ✅ "SEO pomaga klientom znaleźć Twoją firmę w Google.
    Dla lokalnych usług to często główne źródło nowych klientów."
 ```
+
+## 6. Opisuj firmy przez działalność, nie etykiety
+
+```
+❌ "firma izolacyjna" / "firma wykończeniowa" / "kawiarnia rzemieślnicza"
+✅ "firma zajmująca się izolacją budynków"
+✅ "firma zajmująca się wykończeniem mieszkań, domów i lokali usługowych"
+✅ "mała palarnia kawy z własnym procesem palenia"
+```
+
+Ludzki język opisuje CO firma robi. Etykiety przymiotnikowe to skróty
+myślowe z briefów — czytelnik ich nie używa.
+
+## 7. Nie upraszczaj nadmiernie (WAŻNE)
+
+Więcej opisów z kontekstem = więcej fraz kluczowych = bardziej naturalnie.
+Bogaty opis z detalami brzmi ludzko. Suchy, skrócony tekst brzmi jak AI.
+
+```
+❌ Over-simplified: "Logo — sygnet z dachem i literami, autorska czcionka."
+✅ Rozbudowane: "Projekt logo dla firmy zajmującej się wykończeniem mieszkań,
+   domów i lokali usługowych. Pełen system logo z wariantami do różnych
+   zastosowań z autorską edycją czcionki i wpisanymi inicjałami firmy w ikonę."
+```
+
+Praktyczne informacje (warianty, zastosowania, formaty) NIGDY nie są zbędne.
+Atmosferyczne opisy (klimat, estetyka, charakter) NIGDY nie są "promotional".
+
+## 8. Równoważniki zdań w meta descriptions i opisach (KRYTYCZNE)
+
+Ta sama reguła co w CONTENT_INSTRUCTIONS §9 dotyczy WSZYSTKICH treści:
+meta descriptions, short descriptions, CTA descriptions, contentBlocks.
+
+```
+❌ "Blog firmowy, formularz wyceny, kolory WCAG, szybkie ładowanie."
+✅ "Sprawdź realizację strony z firmowym blogiem, dedykowanym formularzem
+   wycen dla klientów i ekspresowym czasem ładowania na wszystkich urządzeniach."
+```
+
+Wpleć elementy w naturalny tok zdania z kontekstem i przymiotnikami.
 
 ---
 
@@ -380,7 +436,7 @@ Contacts via form
 // Tool page CTA
 const toolCTA = {
   title: 'Potrzebujesz profesjonalnej strony?',
-  description: 'Stworzymy ją dla Ciebie',
+  description: 'Sprawdź jak możesz przyciągnąć więcej klientów dzięki dobrze zaprojektowanej stronie',
   button: 'Skontaktuj się',
   link: '/kontakt',
 };
@@ -391,6 +447,28 @@ const serviceCTA = {
   description: 'Odpowiemy w 24h',
   button: 'Wyślij zapytanie',
   link: '/kontakt',
+};
+```
+
+## CTA na stronach realizacji (WAŻNE)
+
+- Tytuł: otwarte pytanie ("Potrzebujesz rozbudowy swojej strony?")
+- Opis: korzyść dla CZYTELNIKA + co robimy ogólnie + zaproszenie do kontaktu
+- NIGDY nie referuj do konkretnego projektu innego klienta w CTA
+- NIGDY nie obiecuj "zrobimy to samo" — każdy projekt jest indywidualny
+- Przekaz: "pomagamy" nie "zrobimy za Ciebie"
+
+```typescript
+// ✅ Dobre CTA dla realizacji
+const projectCTA = {
+  title: 'Potrzebujesz rozbudowy swojej strony?',
+  description: 'Pomagamy rozbudować strony na różnych platformach (Wix, WordPress, Shopify). Skontaktuj się i sprawdź jak możesz przyciągnąć więcej klientów z Google dzięki rozbudowie strony.',
+};
+
+// ❌ Złe CTA — referuje do innego klienta, brak indywidualnego podejścia
+const badCTA = {
+  title: 'Twoja strona na Wix nie przyciąga pacjentów?',
+  description: 'Rozbudujemy ją tak jak zrobiliśmy to dla Perły Mocy.',
 };
 ```
 
@@ -421,6 +499,15 @@ const serviceCTA = {
 ---
 
 # CZĘŚĆ 8: FACT VERIFICATION
+
+## Przepisywanie istniejącej treści (KRYTYCZNE)
+
+Przy edycji/przepisywaniu istniejącej treści (np. projects.json, service pages):
+
+- NIGDY nie dodawaj faktów, liczb ani detali których nie ma w danych źródłowych
+- Nie wymyślaj czasu realizacji, nazw technologii, wyników ani kontekstu
+- Jeśli brakuje konkretów — zostaw jak jest lub poproś o dane
+- "Konkretność" oznacza: wydobądź konkrety z ISTNIEJĄCYCH danych, nie wymyślaj nowych
 
 ## All Claims Must Be True
 
