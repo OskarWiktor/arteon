@@ -2,14 +2,14 @@
   "toolKey": "rgbToCmyk",
   "locale": "en",
   "metadata": {
-    "title": "RGB to CMYK converter",
-    "description": "Convert RGB color values to CMYK and vice versa. Essential for preparing web graphics for print production.",
+    "title": "RGB to CMYK converter – free color check before printing",
+    "description": "Convert RGB to CMYK before sending designs to print. Check gamut shift for InDesign, Illustrator, and Pantone workflows. Free, no registration, works in browser.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/rgb-to-cmyk-converter"
   },
   "hero": {
-    "title": "Convert RGB to CMYK",
-    "description": "This converter converts RGB color values to CMYK percentages. Enter values and the result appears instantly.",
+    "title": "RGB to CMYK – check print color values before sending to the press",
+    "description": "Screen colors and printed colors differ. Verify CMYK values early — before InDesign, Illustrator, or your US/UK print shop flags a gamut issue.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -28,8 +28,19 @@
       "alternateName": ["RGB to CMYK color converter", "Screen to print color converter", "Color mode converter"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Convert RGB color values to CMYK and vice versa. Essential for preparing web graphics for print production.",
-      "featureList": ["Real-time color conversion", "Color preview", "Copy CMYK values", "Local calculations in browser"]
+      "description": "Convert RGB to CMYK to verify print color values before production. Check gamut compatibility for Adobe InDesign, Illustrator, and Pantone-based workflows. Browser-only, no registration.",
+      "featureList": [
+        "Bidirectional RGB ↔ CMYK conversion",
+        "Real-time results as you type",
+        "CMYK output in percentage format (C%, M%, Y%, K%)",
+        "Color preview with live swatch",
+        "One-click copy of CMYK values for paste into InDesign or Illustrator",
+        "Reverse button for CMYK to RGB direction",
+        "Reference table of common print colors",
+        "Total ink coverage indicator for press limits",
+        "Rich black vs. pure black reference (K=100 vs. CMYK 60/40/40/100)",
+        "All calculations run locally — no data sent to server"
+      ]
     },
     "howTo": {
       "name": "How to use the RGB to CMYK converter",
@@ -59,7 +70,7 @@
     {
       "type": "sectionBasic",
       "title": "When do you need to convert RGB to CMYK?",
-      "html": "<p class=\"text-mid mb-4\">RGB (Red, Green, Blue) is the additive color model used by screens. CMYK (Cyan, Magenta, Yellow, Key/Black) is the subtractive model used by printers. Colors look different in each model because they work differently.</p><p class=\"text-mid mb-4\">Converting RGB to CMYK is essential when preparing digital designs for print. Without conversion, bright screen colors may appear dull or shifted when printed.</p><p class=\"text-mid mb-4\">Not all RGB colors can be reproduced in CMYK — the CMYK gamut is smaller. Vivid neon greens, bright blues, and saturated oranges are particularly affected.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Every design that starts on screen — Figma mockups, Photoshop comps, Illustrator logos — uses RGB. The moment that design goes to a US or UK commercial printer, magazine publisher, or packaging manufacturer, the file must be in CMYK. RGB and CMYK use fundamentally different physics: RGB adds light, CMYK subtracts ink from white paper. A bright Figma blue like rgb(59, 130, 246) may print noticeably duller without prior gamut checking.</p><p class=\"text-mid mb-4\">Adobe InDesign and Illustrator let you define swatch colors in CMYK directly, but you still need the values to enter. Brand guidelines often provide RGB and Pantone references — this converter lets you derive the CMYK equivalent for spot-to-process matching or magazine ad submissions that specify CMYK-only files.</p><p class=\"text-mid mb-4\">Book covers, retail packaging, and business card print runs in the UK and US typically require files with total ink coverage (TIC) under 300%. Checking your CMYK values here before opening InDesign saves costly reprints.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "RGB to CMYK converter – Arteon"
     },
@@ -100,23 +111,23 @@
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "Print Preparation",
-          "description": "Check CMYK values before sending a design to the printer."
+          "title": "InDesign & Illustrator prep",
+          "description": "Get exact C, M, Y, K percentages to enter into Adobe InDesign swatches or Illustrator color panels before sending files to a US or UK print shop."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Color Verification",
-          "description": "Is the RGB color within the CMYK gamut? Check before printing."
+          "title": "Pantone & brand color matching",
+          "description": "Cross-reference RGB brand colors against CMYK equivalents for consistent reproduction across digital and print brand materials."
         },
         {
           "icon": "RiBookOpenLine",
-          "title": "Branding Materials",
-          "description": "Match brand colors for print: business cards, flyers, catalogs."
+          "title": "Magazine & book publishing",
+          "description": "Magazine ad submissions and book cover files require CMYK with TIC under 300%. Check values here before building the full InDesign document."
         },
         {
           "icon": "RiImageLine",
-          "title": "Photography",
-          "description": "Convert photos from RGB to CMYK before printing photo books."
+          "title": "Packaging & retail design",
+          "description": "Packaging design for US and UK retailers requires CMYK files. Convert your digital mockup colors to check printability before the press run."
         }
       ]
     },
@@ -236,24 +247,32 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Why do CMYK prints look different from the screen?",
-          "answer": "Screens emit light (RGB), printers use ink (CMYK). CMYK has a smaller color gamut, so bright/vivid colors appear duller in print."
+          "question": "Why do screen colors look different when printed?",
+          "answer": "Screens emit light using RGB (additive model) — mixing R+G+B=white. Printers deposit ink on paper using CMYK (subtractive model) — mixing C+M+Y+K=black. The CMYK gamut is roughly 50–70% of the RGB gamut, so vivid screen colors like Figma's electric blue or neon green simply cannot be reproduced with ink. Converting early lets you adjust expectations before the press run."
         },
         {
-          "question": "Can all RGB colors be printed in CMYK?",
-          "answer": "No. Neon colors, vivid blues, and bright oranges cannot be accurately reproduced. The CMYK gamut is about 50–70% of the RGB gamut."
+          "question": "What is rich black and when should I use it?",
+          "answer": "Pure black in CMYK is K=100%, but this often looks slightly grey on large print areas. Rich black (typically C=60%, M=40%, Y=40%, K=100%) produces a deeper, denser black. Use rich black for headlines, large background areas, and covers. For small body text, use pure K=100% to avoid registration issues."
         },
         {
-          "question": "What is rich black?",
-          "answer": "CMYK(60,40,40,100) or similar. Pure K=100 looks gray. Rich black adds CMY for a deeper, darker black in print."
+          "question": "What is total ink coverage (TIC) and why does it matter?",
+          "answer": "TIC is the sum of C+M+Y+K percentages. Most commercial printers in the US and UK set a maximum of 300–320%. Exceeding it causes ink smearing, longer drying times, and paper damage. Check your CMYK values and sum the four channels before submitting print-ready files."
         },
         {
-          "question": "Should I design in RGB or CMYK?",
-          "answer": "Design in CMYK if the final output is print. Design in RGB for web/screen. For both, design in RGB and convert to CMYK for print."
+          "question": "Should I design in RGB or CMYK from the start?",
+          "answer": "Design in RGB if your deliverable is primarily digital (web, app, social). Design in CMYK if print is the primary output. For dual-use projects — a brand identity that spans website and printed brochure — design in RGB and convert to CMYK for print delivery, using ICC profiles in Photoshop or InDesign for accurate conversion."
         },
         {
-          "question": "Are calculations done locally?",
-          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+          "question": "How does this converter differ from Photoshop's CMYK conversion?",
+          "answer": "This converter uses a mathematical formula (no ICC profile). It is ideal for quick checks, developer workflows, and ballpark values. Adobe Photoshop and InDesign use ICC color profiles (e.g., US Web Coated SWOP v2 or Fogra39) which account for specific ink and paper combinations. For production print work, always use ICC profile-based conversion and request a proof print."
+        },
+        {
+          "question": "Can I use CMYK values from this tool directly in InDesign?",
+          "answer": "Yes, as a starting reference. Open the Swatches panel in InDesign, create a CMYK swatch, and enter the C, M, Y, K percentages shown here. For critical color work — packaging, magazine covers, Pantone-matched brand colors — follow up with an ICC profile conversion and a physical proof."
+        },
+        {
+          "question": "Are my color values sent to a server?",
+          "answer": "No. All RGB to CMYK calculations run entirely in your browser. Nothing is transmitted anywhere. The tool works offline once the page has loaded."
         }
       ]
     },

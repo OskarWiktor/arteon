@@ -2,14 +2,14 @@
   "toolKey": "rgbToHsl",
   "locale": "en",
   "metadata": {
-    "title": "RGB to HSL converter",
-    "description": "Convert RGB color values to HSL (Hue, Saturation, Lightness) and vice versa. Essential for CSS color manipulation and design.",
+    "title": "RGB to HSL converter – free, no registration required",
+    "description": "Convert RGB to HSL instantly for CSS variables, Tailwind tokens, and Figma workflows. Free, works in browser, no registration. Bidirectional conversion included.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/rgb-to-hsl-converter"
   },
   "hero": {
-    "title": "Convert RGB to HSL",
-    "description": "This converter converts RGB color values to HSL. Enter values and the result appears instantly.",
+    "title": "RGB to HSL – instantly editable color values for CSS and design systems",
+    "description": "HSL lets you adjust hue, lightness, and saturation independently — the format Tailwind, Material Design, and CSS custom properties use natively.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -28,8 +28,19 @@
       "alternateName": ["RGB to HSL color converter", "Color model converter", "Hue saturation lightness converter"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Convert RGB color values to HSL (Hue, Saturation, Lightness) and vice versa. Essential for CSS color manipulation and design.",
-      "featureList": ["Real-time color conversion", "Color preview", "Copy HSL values", "Local calculations in browser"]
+      "description": "Convert RGB to HSL for CSS custom properties, Tailwind color tokens, and Figma/Sketch design systems. Bidirectional, real-time, browser-only — no server, no registration.",
+      "featureList": [
+        "Bidirectional RGB ↔ HSL conversion",
+        "Real-time results as you type",
+        "HSL output ready for CSS hsl() and custom properties",
+        "Color preview with live swatch",
+        "One-click copy of HSL values",
+        "Reverse button for HSL to RGB direction",
+        "Reference table of common color values",
+        "All calculations run locally — no data sent to server",
+        "Works with Tailwind CSS color token workflows",
+        "WCAG-friendly: adjust L% to hit contrast thresholds"
+      ]
     },
     "howTo": {
       "name": "How to use the RGB to HSL converter",
@@ -58,8 +69,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "When do you need to convert RGB to HSL?",
-      "html": "<p class=\"text-mid mb-4\">HSL (Hue, Saturation, Lightness) is an alternative way to specify colors that is more intuitive for humans. Hue is the color angle (0–360°), Saturation is the color intensity (0–100%), and Lightness is how light/dark (0–100%).</p><p class=\"text-mid mb-4\">HSL makes it easy to create color variations: adjust lightness for tints/shades, adjust saturation for muted/vivid versions, or shift hue for complementary colors.</p><p class=\"text-mid mb-4\">CSS supports hsl() natively: hsl(14, 100%, 60%) is equivalent to rgb(255, 87, 51) and #FF5733.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "title": "When do you need RGB to HSL?",
+      "html": "<p class=\"text-mid mb-4\">HSL (Hue, Saturation, Lightness) is the color format that modern design systems rely on. Tailwind CSS v3/v4 expresses its entire palette in HSL-derived tokens. Material Design 3 uses HSL-based tonal palettes. CSS custom properties like <code>--color-primary: hsl(217, 91%, 60%)</code> are readable, maintainable, and easy to adjust.</p><p class=\"text-mid mb-4\">When you receive brand colors from a client as RGB values — say rgb(59, 130, 246) from a Figma file — converting to HSL lets you generate a full tonal scale. Increase L% for lighter variants, decrease L% for darker ones, adjust S% for muted states. No guesswork.</p><p class=\"text-mid mb-4\">WCAG accessibility audits require specific contrast ratios. HSL makes it straightforward: tweak L% until the foreground/background pair passes AA or AAA threshold without changing the hue at all.</p><p class=\"text-mid\">All calculations run locally in your browser — no data is sent to any server.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "RGB to HSL converter – Arteon"
     },
@@ -100,23 +111,23 @@
       "items": [
         {
           "icon": "RiPaletteLine",
-          "title": "Color Palettes",
-          "description": "Create variants: adjust L (lightness) while keeping H and S constant."
+          "title": "Tailwind & design tokens",
+          "description": "Express brand colors as HSL custom properties — <code>--brand-500: hsl(217, 91%, 60%)</code> — so Tailwind config and CSS tokens stay in sync."
         },
         {
           "icon": "RiCodeSSlashLine",
-          "title": "CSS",
-          "description": "<code>hsl(217, 91%, 60%)</code> — intuitive color notation."
+          "title": "CSS variables & dark mode",
+          "description": "Switch between light and dark themes by adjusting L% only. No hue shift, no saturation change — consistent brand across modes."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Dark Mode",
-          "description": "Change L from 95% to 10% to create a dark theme variant."
+          "title": "WCAG accessibility audits",
+          "description": "Nudge L% until your foreground/background pair passes contrast ratio 4.5:1 (AA) or 7:1 (AAA) without changing the hue."
         },
         {
           "icon": "RiBrushLine",
-          "title": "Design",
-          "description": "HSL makes it easy to build consistent palettes: rotate H by 120° = complementary color."
+          "title": "Figma & Sketch workflows",
+          "description": "Export HSL values directly from converted RGB to populate Figma color styles or Sketch shared swatches for your design system."
         }
       ]
     },
@@ -236,24 +247,32 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "What is HSL?",
-          "answer": "Hue (color angle 0–360°), Saturation (intensity 0–100%), Lightness (brightness 0–100%). A more intuitive way to work with colors."
+          "question": "What is HSL and why use it instead of RGB?",
+          "answer": "HSL stands for Hue (0–360°), Saturation (0–100%), Lightness (0–100%). Unlike RGB, where changing one channel shifts multiple perceived properties, HSL lets you adjust one dimension at a time. It is the preferred format for CSS custom properties, Tailwind color tokens, and Material Design tonal palettes."
+        },
+        {
+          "question": "How do I create a tonal palette from one HSL color?",
+          "answer": "Keep H and S constant, then generate steps at L: 95%, 80%, 65%, 50%, 35%, 20%, 10%. This produces a complete light-to-dark scale — the same approach Tailwind CSS uses for its built-in color shades."
+        },
+        {
+          "question": "How do I use HSL for dark mode in CSS?",
+          "answer": "Define your color as a CSS custom property: --brand: hsl(217, 91%, 60%). In your dark-mode media query, override only the L value: --brand: hsl(217, 91%, 75%). The hue stays identical, the color becomes readable on dark backgrounds."
         },
         {
           "question": "How do I darken a color in HSL?",
-          "answer": "Reduce the L value. hsl(200, 80%, 50%) → hsl(200, 80%, 30%) is a darker version of the same blue."
+          "answer": "Reduce the L value. hsl(200, 80%, 50%) → hsl(200, 80%, 30%) gives a darker version of the same blue. This is more predictable than adjusting RGB channels, which can shift perceived hue."
         },
         {
-          "question": "What is the complementary color?",
-          "answer": "Add 180° to the hue. hsl(200, 80%, 50%) → hsl(20, 80%, 50%) is the complementary color."
+          "question": "Is HSL the same as HSV or HSB?",
+          "answer": "No. In HSL, L=50% is a pure saturated color and L=100% is white. In HSV/HSB, V/B=100% is pure color and V/B=0% is black. Figma uses HSB internally, while CSS uses HSL. They produce different numeric values for the same color."
         },
         {
-          "question": "Is HSL the same as HSV/HSB?",
-          "answer": "No. HSL and HSV/HSB use different formulas. L=50% is pure color, while V/B=100% is pure color. They produce different results."
+          "question": "What is the complementary color in HSL?",
+          "answer": "Add 180° to the hue. hsl(200, 80%, 50%) → hsl(20, 80%, 50%) is the complementary color. Triadic colors are at +120° and +240°. This makes HSL ideal for building color scheme generators."
         },
         {
-          "question": "Are calculations done locally?",
-          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+          "question": "Are my color values sent anywhere?",
+          "answer": "No. All RGB to HSL calculations run entirely in your browser using JavaScript. Nothing is sent to any server. The tool works offline once the page is loaded."
         }
       ]
     },
