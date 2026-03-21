@@ -90,6 +90,18 @@ const nextConfig: NextConfig = {
       },
     ];
 
+    // Development headers - disable caching completely
+    const devHeaders = [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'no-cache, no-store, must-revalidate' },
+          { key: 'Pragma', value: 'no-cache' },
+          { key: 'Expires', value: '0' },
+        ],
+      },
+    ];
+
     return IS_PROD
       ? [
           {
@@ -98,13 +110,7 @@ const nextConfig: NextConfig = {
           },
           ...staticAssetHeaders,
         ]
-      : [
-          {
-            source: '/:path*',
-            headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
-          },
-          ...staticAssetHeaders,
-        ];
+      : [...devHeaders, ...staticAssetHeaders];
   },
   async redirects() {
     const staticRedirects: Redirect[] = Object.entries(ALL_STATIC_REDIRECTS).map(([source, destination]) => ({
