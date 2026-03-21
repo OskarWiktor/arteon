@@ -2,14 +2,14 @@
   "toolKey": "mbpsToMBs",
   "locale": "en",
   "metadata": {
-    "title": "Mbps to MB/s converter",
-    "description": "Convert megabits per second to megabytes per second and vice versa. Essential for understanding internet speeds and download times.",
+    "title": "Mbps to MB/s converter – internet speed calculator",
+    "description": "Convert Mbps to MB/s instantly — free, no registration, works in browser. See your real download speed and compare ISP plans side by side.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/mbps-to-mbs-converter"
   },
   "hero": {
-    "title": "Convert Mbps to MB/s",
-    "description": "This converter converts megabits per second (Mbps) to megabytes per second (MB/s). Enter a value and the result appears instantly.",
+    "title": "Find out what your internet speed actually means",
+    "description": "ISPs advertise in Mbps, downloads show MB/s. A 100 Mbps plan gives you just 12.5 MB/s. See the real number instantly.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert megabits per second to megabytes per second and vice versa. Essential for understanding internet speeds and download times.",
-      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+      "featureList": ["Instant Mbps to MB/s and MB/s to Mbps conversion", "Shows real download speed behind ISP-advertised Mbps figures", "Reference table with common US ISP plan speeds (Comcast, AT&T Fiber)", "Streaming speed requirements: Netflix 4K at 25 Mbps, YouTube 4K at 20 Mbps", "VPN overhead guidance — typically 10–15% speed reduction", "Copy result to clipboard with one click", "All calculations run locally — no server involved", "Works on mobile and desktop without installation"]
     },
     "howTo": {
       "name": "How to use the Mbps to MB/s converter",
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiDownloadLine",
-          "title": "Download Estimation",
-          "description": "100 Mbps = a 1 GB file in about 80 seconds."
-        },
-        {
-          "icon": "RiWifiLine",
-          "title": "Plan Comparison",
-          "description": "Compare ISP offers in real MB/s."
+          "title": "ISP Plan Comparison",
+          "description": "Comcast Xfinity tops at 1,200 Mbps (150 MB/s). AT&T Fiber offers symmetrical 5 Gbps (625 MB/s). Convert any advertised plan to actual MB/s to compare offers fairly."
         },
         {
           "icon": "RiVideoLine",
-          "title": "Streaming",
-          "description": "Netflix 4K requires 25 Mbps = 3.1 MB/s."
+          "title": "Streaming Requirements",
+          "description": "Netflix 4K requires 25 Mbps (3.1 MB/s). YouTube 4K needs 20 Mbps (2.5 MB/s). A household running three 4K streams simultaneously needs at least 75 Mbps (9.4 MB/s) dedicated to streaming."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Remote Work Bandwidth",
+          "description": "Zoom HD video needs 3.8 Mbps upload (0.47 MB/s). AWS S3 uploads at 500 Mbps (62.5 MB/s) theoretical max. FTP upload to a VPS on 100 Mbps uplink maxes out at 12.5 MB/s."
         },
         {
           "icon": "RiServerLine",
-          "title": "Hosting",
-          "description": "Server bandwidth: 1 TB/month = how many Mbps do you need?"
+          "title": "VPN and Transfer Overhead",
+          "description": "VPNs typically add 10–15% overhead due to encryption. A 100 Mbps connection through a VPN delivers roughly 85–90 Mbps effective throughput — about 10.6–11.25 MB/s instead of 12.5 MB/s."
         }
       ]
     },
@@ -237,19 +237,31 @@
       "items": [
         {
           "question": "How many MB/s is 100 Mbps?",
-          "answer": "100 Mbps = 12.5 MB/s. Divide Mbps by 8 to get MB/s."
+          "answer": "100 Mbps = 12.5 MB/s. Divide by 8 because 1 byte = 8 bits. Most US ISP plans (Comcast 100 Mbps tier, AT&T Basic Fiber) give you exactly this theoretical maximum."
         },
         {
           "question": "Why is my download slower than advertised?",
-          "answer": "ISPs advertise in Mbps (bits), but downloads show MB/s (bytes). 100 Mbps = max 12.5 MB/s. Actual speed is typically 70–90% of this."
+          "answer": "ISPs advertise in Mbps (bits), but your download manager shows MB/s (bytes). 100 Mbps = max 12.5 MB/s. Real-world speed is typically 70–90% of that due to protocol overhead, Wi-Fi interference, and server limitations."
         },
         {
           "question": "How long to download 1 GB at 100 Mbps?",
-          "answer": "1 GB = 1,000 MB. At 12.5 MB/s (100 Mbps): 1,000/12.5 = 80 seconds. In practice, about 90–100 seconds."
+          "answer": "1 GB = 1,000 MB. At 12.5 MB/s (100 Mbps): 1,000 ÷ 12.5 = 80 seconds theoretically. Realistically 90–120 seconds with overhead."
         },
         {
           "question": "What speed do I need for 4K streaming?",
-          "answer": "Netflix 4K requires ~25 Mbps (3.125 MB/s). YouTube 4K requires ~20 Mbps."
+          "answer": "Netflix 4K Ultra HD requires 25 Mbps (3.1 MB/s). YouTube 4K needs 20 Mbps (2.5 MB/s). Disney+ 4K requires 25 Mbps. For a household with two 4K streams, plan for at least 50 Mbps."
+        },
+        {
+          "question": "How fast is Comcast Xfinity's top plan?",
+          "answer": "Comcast's top residential plan is 1,200 Mbps (1.2 Gbps) download = 150 MB/s. Upload is typically 35 Mbps (4.4 MB/s) on cable. AT&T Fiber 5 Gbps is symmetrical — 625 MB/s both up and down."
+        },
+        {
+          "question": "How much bandwidth does a VPN use?",
+          "answer": "A VPN adds 10–15% overhead for encryption (WireGuard) or up to 20% for older OpenVPN. On a 100 Mbps connection you can expect 85–90 Mbps effective throughput — about 10.6–11.3 MB/s instead of 12.5 MB/s."
+        },
+        {
+          "question": "What Mbps do I need for uploading to AWS S3?",
+          "answer": "AWS S3 multipart upload with a 100 Mbps uplink achieves roughly 10–12 MB/s in practice. For large dataset transfers (100 GB+), consider AWS Direct Connect or Snowball for speeds above your ISP limit."
         },
         {
           "question": "Are calculations done locally?",
@@ -266,7 +278,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "Mbps na MB/s – Arteon",
+      "imageAlt": "Mbps to MB/s internet speed converter – Arteon",
       "defaultSubject": "Feedback: mbps-to-mbs"
     },
     {

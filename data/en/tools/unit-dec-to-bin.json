@@ -2,14 +2,14 @@
   "toolKey": "decToBin",
   "locale": "en",
   "metadata": {
-    "title": "Decimal to binary converter",
-    "description": "Convert decimal numbers to binary and vice versa. Useful for programming, computer science, and digital electronics.",
+    "title": "Decimal to binary converter – base-10 to base-2",
+    "description": "Convert decimal to binary instantly — free, no registration, works in browser. Essential for CS50, networking subnets, bitwise ops, and chmod permissions.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/decimal-to-binary-converter"
   },
   "hero": {
-    "title": "Convert decimal to binary",
-    "description": "This converter converts decimal numbers to binary representation. Enter a number and the result appears instantly.",
+    "title": "Understand numbers the way computers do",
+    "description": "Instantly convert between decimal and binary — the foundation of every CS course, networking exam, and bitwise operation in code.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert decimal numbers to binary and vice versa. Useful for programming, computer science, and digital electronics.",
-      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+      "featureList": ["Instant decimal to binary and binary to decimal conversion", "Essential for Harvard CS50, Khan Academy CS exercises, and university exams", "Networking use: subnet mask 255.255.255.0 = 11111111.11111111.11111111.00000000 (/24)", "Bitwise operations in JavaScript: 42 & 15 requires binary understanding", "Unix permission flags: chmod 755 = 111 101 101 in binary", "Two's complement explanation for negative integers", "Copy result to clipboard with one click", "All calculations run locally — no server involved", "Works on mobile and desktop without installation"]
     },
     "howTo": {
       "name": "How to use the decimal to binary converter",
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiCodeSSlashLine",
-          "title": "Programming",
-          "description": "Bitwise operations, masks, flags: 0xFF = 11111111."
+          "title": "Bitwise Operations in Code",
+          "description": "JavaScript uses bitwise operators (&, |, ^, ~, <<, >>) directly on binary representations. Python's bin() function converts to binary. Knowing that 42 in binary is 101010 lets you predict bitwise AND, OR, and XOR results without running code first."
         },
         {
           "icon": "RiWifiLine",
-          "title": "IP Networks",
-          "description": "Subnet masks: 255.255.255.0 = /24 (24 ones in binary)."
+          "title": "Networking and Subnets",
+          "description": "Subnet masks are binary patterns. The /24 CIDR notation means 24 consecutive 1s: 11111111.11111111.11111111.00000000 = 255.255.255.0. Understanding binary is required for networking certifications like CompTIA Network+ and CCNA."
         },
         {
           "icon": "RiShieldKeyholeLine",
-          "title": "Unix Permissions",
-          "description": "chmod 755 = 111 101 101 in binary."
+          "title": "Unix Permissions (chmod)",
+          "description": "Linux file permissions are three 3-bit fields. chmod 755 = rwxr-xr-x = 111 101 101 in binary. Each digit (7, 5, 5) is a decimal number that maps directly to a 3-bit binary group for owner, group, and others."
         },
         {
-          "icon": "RiCpuLine",
-          "title": "Electronics",
-          "description": "Registers, I/O ports, communication protocols."
+          "icon": "RiBookOpenLine",
+          "title": "CS Education (CS50, Khan Academy)",
+          "description": "Harvard's CS50 teaches binary in week 0. Khan Academy's Computing course covers it in depth. Binary is also a core topic in CompTIA A+ and every high school AP Computer Science A exam. This converter is useful for homework verification."
         }
       ]
     },
@@ -237,19 +237,31 @@
       "items": [
         {
           "question": "What is 10 in binary?",
-          "answer": "Decimal 10 = binary 1010 (8+2)."
+          "answer": "Decimal 10 = binary 1010 (8+2). The CS50 Week 0 lecture uses exactly this example to introduce binary. In Python: bin(10) returns '0b1010'. In JavaScript: (10).toString(2) returns '1010'."
         },
         {
           "question": "What is 255 in binary?",
-          "answer": "255 = 11111111 (eight 1s). This is the maximum value of one byte (8 bits)."
+          "answer": "255 = 11111111 in binary — eight 1s, which is the maximum value of one byte (8 bits). It appears everywhere: the max RGB color channel value (rgb(255,255,255) = white), the max value of an unsigned char in C, and the broadcast subnet in IP networking."
         },
         {
           "question": "What is 1024 in binary?",
-          "answer": "1024 = 10000000000. It is 2^10, which is why 1 KB = 1,024 bytes."
+          "answer": "1024 = 10000000000 in binary. It is exactly 2^10 — one 1 followed by ten 0s. This is why 1 KiB = 1,024 bytes and why computer memory comes in powers of 2 (512 MB, 1 GB, 2 GB, etc.)."
         },
         {
-          "question": "How do I convert negative numbers?",
-          "answer": "Computers use two's complement. For 8-bit: -1 = 11111111, -42 = 11010110."
+          "question": "How do I convert negative numbers to binary?",
+          "answer": "Computers use two's complement to represent negative integers. For 8-bit: -1 = 11111111, -42 = 11010110. The rule: flip all bits, then add 1. JavaScript's bitwise operators work on 32-bit two's complement integers, so -1 | 0 equals 11111111111111111111111111111111."
+        },
+        {
+          "question": "How are binary flags used in programming?",
+          "answer": "Binary flags store multiple boolean states in a single integer. For example, in a permissions system: READ = 1 (001), WRITE = 2 (010), EXECUTE = 4 (100). Combining them with OR: READ | WRITE = 3 (011). Checking with AND: (perms & WRITE) !== 0 means write access is granted."
+        },
+        {
+          "question": "How does binary relate to networking subnets?",
+          "answer": "IPv4 addresses are 32-bit binary numbers. The subnet mask 255.255.255.0 in binary is 11111111.11111111.11111111.00000000. The /24 CIDR notation counts the leading 1s. Understanding this is required for the CCNA exam and for manually calculating host ranges."
+        },
+        {
+          "question": "Why does chmod 777 give full permissions?",
+          "answer": "chmod 777 = 111 111 111 in binary — three groups of rwx (read, write, execute) for owner, group, and others. 7 in decimal is 111 in binary, meaning all three permission bits are set. chmod 644 = 110 100 100 = rw-r--r-- (owner can read/write, others can only read)."
         },
         {
           "question": "Are calculations done locally?",
@@ -266,7 +278,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "dziesiętny na binarny – Arteon",
+      "imageAlt": "Decimal to binary number converter – Arteon",
       "defaultSubject": "Feedback: dec-to-bin"
     },
     {

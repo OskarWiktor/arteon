@@ -2,14 +2,14 @@
   "toolKey": "dpiToPpi",
   "locale": "en",
   "metadata": {
-    "title": "DPI to PPI converter",
-    "description": "Convert DPI (dots per inch) to PPI (pixels per inch) and understand the difference. Useful for print and screen design.",
+    "title": "DPI to PPI converter – print and screen resolution guide",
+    "description": "Convert DPI to PPI instantly — free, no registration, works in browser. Know if your image is ready for Shutterfly, Walgreens prints, or Retina screens.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/dpi-to-ppi-converter"
   },
   "hero": {
-    "title": "Convert DPI to PPI",
-    "description": "This converter explains and converts between DPI and PPI. Enter a value and the result appears instantly.",
+    "title": "Get print-ready resolution right the first time",
+    "description": "300 DPI for print, 72–96 PPI for screen — know the difference before sending to Shutterfly, Walgreens, or Photoshop.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert DPI (dots per inch) to PPI (pixels per inch) and understand the difference. Useful for print and screen design.",
-      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+      "featureList": ["Instant DPI to PPI and PPI to DPI conversion", "Explains the print vs screen resolution difference clearly", "Reference standards: 300 PPI for professional print, 72 PPI legacy web, 227 PPI MacBook Retina", "Covers Walgreens, Shutterfly, and standard photo print service requirements", "HiDPI and Retina display density reference (iPhone 460 PPI, MacBook 227 PPI)", "Photoshop DPI vs PPI explanation with resampling guidance", "Copy result to clipboard with one click", "All calculations run locally — no server involved", "Works on mobile and desktop without installation"]
     },
     "howTo": {
       "name": "How to use the DPI to PPI converter",
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "Print Preparation",
-          "description": "The printer requires 300 DPI — this means the image must be 300 PPI."
+          "title": "Photo Print Services",
+          "description": "Walgreens and Shutterfly require at least 150 PPI for standard prints; 300 PPI for sharp 4×6 and 8×10 results. A 12 MP phone photo (4032×3024 px) prints perfectly at 8×10 inches at 300 PPI. Use this converter to check before ordering."
         },
         {
           "icon": "RiMonitorLine",
-          "title": "Screens & Displays",
-          "description": "iPhone 15 Pro: 460 PPI. 27″ 4K monitor: 163 PPI."
+          "title": "HiDPI and Retina Displays",
+          "description": "MacBook Pro 14\" has 254 PPI; MacBook Air M3 has 224 PPI. Apple calls any display above ~220 PPI \"Retina.\" The iPhone 15 Pro reaches 460 PPI. A 27\" 4K monitor lands at 163 PPI — not quite Retina, but sharp for desk distance."
         },
         {
           "icon": "RiImageLine",
-          "title": "Graphics Export",
-          "description": "Photoshop \"DPI\" = PPI. 72 DPI for web, 300 DPI for print."
+          "title": "Photoshop Resolution Settings",
+          "description": "In Photoshop, the Image > Image Size dialog shows PPI — even though Adobe labels it \"DPI\" in older documentation. Setting 300 PPI without resampling only changes the print size, not the pixel count. Tick \"Resample\" to actually add or remove pixels."
         },
         {
-          "icon": "RiQuestionLine",
-          "title": "Education",
-          "description": "Understand the difference between DPI (print) and PPI (screen)."
+          "icon": "RiLayoutLine",
+          "title": "Poster and Banner Printing",
+          "description": "Large-format print (posters, banners, trade show displays) typically requires only 100–150 PPI because viewing distance is farther. A 24×36\" poster at 150 PPI needs a 3600×5400 px source file — far less than most assume."
         }
       ]
     },
@@ -237,19 +237,31 @@
       "items": [
         {
           "question": "Is DPI the same as PPI?",
-          "answer": "Not exactly. DPI measures printer dots, PPI measures screen/image pixels. But in practice, they are often used interchangeably for image resolution."
+          "answer": "Not exactly. DPI (dots per inch) measures the physical dots a printer can place per inch. PPI (pixels per inch) measures screen or image pixel density. In everyday use — and in tools like Photoshop — both terms are used interchangeably for image resolution, even though they describe different things."
         },
         {
-          "question": "What PPI do I need for printing?",
-          "answer": "300 PPI for professional print. 150 PPI for large format. 72 PPI is screen resolution only."
+          "question": "What PPI do I need for Walgreens or Shutterfly prints?",
+          "answer": "Walgreens and Shutterfly recommend 300 PPI for sharp 4×6, 5×7, and 8×10 prints. 150 PPI is acceptable for larger sizes (11×14 and above) viewed from a distance. Screen-resolution images at 72–96 PPI will look blurry when printed."
         },
         {
           "question": "Does changing DPI in Photoshop affect quality?",
-          "answer": "Only if you resample. Without resampling, changing DPI/PPI just changes the print size. With resampling, it changes the pixel count."
+          "answer": "Only if you enable resampling. Without resampling, changing PPI in Photoshop only adjusts the print size — no pixels are added or removed and quality is unchanged. With resampling checked, Photoshop adds or removes pixels, which can soften the image if you're upscaling."
         },
         {
           "question": "What PPI is my monitor?",
-          "answer": "Calculate: PPI = √(width² + height²) / diagonal. A 27″ 4K (3840×2160) = 163 PPI."
+          "answer": "Calculate: PPI = √(width² + height²) ÷ diagonal inches. A 27\" 4K monitor (3840×2160) = 163 PPI. A 14\" MacBook Pro (3024×1964) = 254 PPI. Apple counts any display above ~220 PPI as Retina."
+        },
+        {
+          "question": "What is the legacy 72 DPI rule for web images?",
+          "answer": "The 72 PPI standard dates back to the original 1984 Mac display, which had 72 PPI to match 72-point type. Modern screens range from 96 PPI (budget monitors) to 460 PPI (iPhone). For web export, image PPI is irrelevant — only pixel dimensions matter for screen display."
+        },
+        {
+          "question": "How many PPI does a MacBook have?",
+          "answer": "MacBook Air M3 (13\") has 224 PPI. MacBook Pro 14\" has 254 PPI. MacBook Pro 16\" has 254 PPI. All qualify as Retina displays since they exceed Apple's ~220 PPI threshold at typical viewing distance."
+        },
+        {
+          "question": "What resolution do I need for a 24×36 poster?",
+          "answer": "At 150 PPI (standard large-format), a 24×36\" poster needs a 3,600×5,400 px source image. At 100 PPI (billboard or trade show distance), 2,400×3,600 px is sufficient. You do not need 300 PPI for large prints viewed from more than 1 meter away."
         },
         {
           "question": "Are calculations done locally?",
@@ -266,7 +278,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "DPI na PPI – Arteon",
+      "imageAlt": "DPI to PPI print and screen resolution converter – Arteon",
       "defaultSubject": "Feedback: dpi-to-ppi"
     },
     {

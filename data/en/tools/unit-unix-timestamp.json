@@ -2,14 +2,14 @@
   "toolKey": "unixTimestamp",
   "locale": "en",
   "metadata": {
-    "title": "Unix timestamp converter",
-    "description": "Convert Unix timestamps to human-readable dates and vice versa. Essential for developers, debugging, and log analysis.",
+    "title": "Unix timestamp converter – epoch to date and back",
+    "description": "Convert Unix timestamps to readable dates instantly — free, no registration, works in browser. Debug AWS logs, Stripe events, JWT tokens, and GitHub API responses.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/unix-timestamp-converter"
   },
   "hero": {
-    "title": "Convert Unix timestamp",
-    "description": "Convert Unix timestamps to readable dates and vice versa. Enter a timestamp or date and the result appears instantly.",
+    "title": "Turn that cryptic number into a readable date",
+    "description": "Paste any Unix timestamp and see the exact UTC date — or enter a date to get its epoch value for APIs, logs, and database queries.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert Unix timestamps to human-readable dates and vice versa. Essential for developers, debugging, and log analysis.",
-      "featureList": ["Real-time conversion", "Current timestamp display", "Copy result to clipboard", "Local calculations in browser"]
+      "featureList": ["Instant Unix timestamp to human-readable UTC date conversion", "Convert dates back to epoch seconds or milliseconds for API use", "Displays current live timestamp (seconds and milliseconds)", "JavaScript: Date.now(), Python: time.time(), AWS CloudWatch log format support", "JWT token expiration (exp) field lookup", "Stripe and PayPal payment event timestamp decoding", "GDPR data retention period calculation from creation timestamp", "Copy result to clipboard with one click", "All calculations run locally — no server involved"]
     },
     "howTo": {
       "name": "How to use the Unix timestamp converter",
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiDatabase2Line",
-          "title": "Databases",
-          "description": "Fields like created_at and updated_at store timestamps."
+          "title": "Databases and ORMs",
+          "description": "PostgreSQL, MySQL, and MongoDB store created_at and updated_at as Unix timestamps. When you query records and see a raw integer like 1700000000, this converter tells you it means November 14, 2023 at 22:13 UTC — so you can confirm whether your migration ran at the right time."
         },
         {
           "icon": "RiCodeSSlashLine",
-          "title": "API & JWT",
-          "description": "JWT tokens: the exp (expiration) field is a timestamp."
+          "title": "JWT Tokens and OAuth",
+          "description": "JSON Web Tokens include an exp (expiration) field stored as a Unix timestamp. When a user reports being unexpectedly logged out, paste the exp value here to confirm exactly when the token expired. Also useful for iat (issued at) and nbf (not before) claims in OAuth flows."
         },
         {
           "icon": "RiTerminalBoxLine",
-          "title": "Server Logs",
-          "description": "Read timestamps from system and application logs."
+          "title": "AWS CloudWatch and Server Logs",
+          "description": "AWS CloudWatch, nginx access logs, and systemd journals log events with epoch timestamps. Pasting a raw number from a CloudWatch Logs Insights query instantly shows you the human-readable time — critical when correlating a Lambda cold start with a downstream API failure."
         },
         {
-          "icon": "RiTimeLine",
-          "title": "Debugging",
-          "description": "Quickly check when an error occurred based on its timestamp."
+          "icon": "RiMoneyDollarCircleLine",
+          "title": "Stripe, PayPal, and GitHub APIs",
+          "description": "Stripe payment objects include created, current_period_start, and current_period_end as Unix timestamps. GitHub API responses use created_at in ISO 8601, but webhook payloads often include raw epoch values. Converting them lets you verify subscription renewal dates or audit webhook delivery timing."
         }
       ]
     },
@@ -237,19 +237,31 @@
       "items": [
         {
           "question": "What is the current Unix timestamp?",
-          "answer": "It changes every second. In JavaScript: Math.floor(Date.now()/1000). In your browser console: Date.now() for milliseconds."
+          "answer": "It changes every second. In JavaScript: Math.floor(Date.now()/1000) returns the current epoch in seconds. Date.now() returns milliseconds. In Python: import time; int(time.time()) gives seconds. In Bash: date +%s."
         },
         {
           "question": "What is epoch time?",
-          "answer": "The epoch is January 1, 1970, 00:00:00 UTC. Unix timestamps count seconds (or milliseconds) since this date."
-        },
-        {
-          "question": "What is the Year 2038 problem?",
-          "answer": "32-bit signed integers can store timestamps up to 2,147,483,647 (Jan 19, 2038, 03:14:07 UTC). After that, they overflow. 64-bit systems are not affected."
+          "answer": "Epoch (or Unix time) is the number of seconds elapsed since January 1, 1970, 00:00:00 UTC — the reference point chosen when Unix was designed. It is timezone-independent, which makes it ideal for storing dates in databases and APIs."
         },
         {
           "question": "How do I get a timestamp in JavaScript?",
-          "answer": "Seconds: Math.floor(Date.now() / 1000). Milliseconds: Date.now(). From a date: new Date(\"2024-01-01\").getTime() / 1000."
+          "answer": "Seconds: Math.floor(Date.now() / 1000). Milliseconds: Date.now(). From a specific date string: new Date('2024-01-01').getTime() / 1000. To convert a timestamp back: new Date(1700000000 * 1000).toISOString() returns '2023-11-14T22:13:20.000Z'."
+        },
+        {
+          "question": "How does Python handle Unix timestamps?",
+          "answer": "import time; time.time() returns a float with sub-second precision. int(time.time()) is the standard integer seconds form. datetime.fromtimestamp(1700000000) converts to a local datetime object. datetime.utcfromtimestamp() converts to UTC without timezone info."
+        },
+        {
+          "question": "What is the Year 2038 problem?",
+          "answer": "32-bit signed integers can store timestamps up to 2,147,483,647, which corresponds to January 19, 2038, 03:14:07 UTC. After that, they overflow to a negative number. Modern systems and databases use 64-bit integers, which extend the range to the year 292 billion."
+        },
+        {
+          "question": "How are timestamps used in Stripe and PayPal?",
+          "answer": "Stripe stores all dates as Unix timestamps: the created, current_period_start, and current_period_end fields on subscription and invoice objects are epoch seconds. PayPal webhook payloads include create_time in ISO 8601, but event data fields are often Unix. Converting them helps audit payment timing and GDPR retention windows."
+        },
+        {
+          "question": "What is a JWT exp timestamp?",
+          "answer": "The exp (expiration) claim in a JSON Web Token is a Unix timestamp in seconds. When a user reports being logged out unexpectedly, decode the JWT (base64) and convert the exp value here to confirm the exact expiry time. The iat (issued at) and nbf (not before) claims are also Unix timestamps."
         },
         {
           "question": "Are calculations done locally?",
@@ -266,7 +278,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "Unix Timestamp na datę – Arteon",
+      "imageAlt": "Unix timestamp to date converter – Arteon",
       "defaultSubject": "Feedback: unix-timestamp"
     },
     {

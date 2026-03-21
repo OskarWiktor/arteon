@@ -2,14 +2,14 @@
   "toolKey": "bytesConverter",
   "locale": "en",
   "metadata": {
-    "title": "Bytes converter – KB, MB, GB, TB conversion",
-    "description": "Convert between bytes, kilobytes, megabytes, gigabytes, and terabytes. Supports both binary (KiB, MiB) and decimal (KB, MB) units.",
+    "title": "Bytes converter – KB, MB, GB, TB, binary and decimal",
+    "description": "Convert bytes to KB, MB, GB, TB instantly — binary and decimal units. Free, no registration, works in browser. Solve the drive size mystery.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/bytes-converter"
   },
   "hero": {
-    "title": "Convert bytes, KB, MB, GB, TB",
-    "description": "This converter converts between byte units. Enter a value in any unit and see all other units instantly.",
+    "title": "Stop guessing drive sizes — convert bytes instantly",
+    "description": "See any storage value in all units at once: bytes, KB, MB, GB, TB — both binary and decimal. No registration required.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert between bytes, kilobytes, megabytes, gigabytes, and terabytes.",
-      "featureList": ["Real-time bidirectional conversion", "Binary and decimal units", "Copy result to clipboard", "Local calculations in browser"]
+      "featureList": ["Real-time conversion across all byte units simultaneously", "Both binary (KiB, MiB, GiB) and decimal (KB, MB, GB) systems", "Explains the decimal vs binary discrepancy on storage devices", "Covers bytes, KB, MB, GB, TB, and PB", "Copy any result to clipboard with one click", "All calculations run locally — no server involved", "Reference table with real-world file size examples", "Works on mobile and desktop without installation"]
     },
     "howTo": {
       "name": "How to use the bytes converter",
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiHardDriveLine",
-          "title": "Disk Capacity",
-          "description": "A 1 TB drive (manufacturer) = 931 GB in the binary system."
+          "title": "Cloud Storage Plans",
+          "description": "AWS S3 charges per GB stored. Google Drive offers 15 GB free, iCloud starts at 50 GB ($0.99/mo). Convert to understand exactly what you're paying for."
         },
         {
           "icon": "RiUploadCloudLine",
-          "title": "Upload Limits",
-          "description": "Email attachment: 25 MB = 26,214,400 B."
+          "title": "File Attachment Limits",
+          "description": "Slack allows 1 GB per file. Gmail caps at 25 MB. GitHub LFS limit is 1 GB free (5 GB paid). Convert before uploading to avoid rejected transfers."
         },
         {
           "icon": "RiServerLine",
-          "title": "Servers",
-          "description": "Capacity planning: RAM, storage, bandwidth."
+          "title": "Docker and npm Packages",
+          "description": "Docker image sizes are shown in MB. npm packages report bundle size in KB. Knowing the byte equivalents helps you spot bloated dependencies early."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Device Storage",
-          "description": "Phone 128 GB = 137,438,953,472 B."
+          "title": "Drive Size Discrepancy",
+          "description": "A 1 TB drive shows as ~931 GiB in Windows and macOS. Manufacturers use decimal (1 TB = 1,000 GB), operating systems use binary (1 TiB = 1,024 GiB). This tool shows both."
         }
       ]
     },
@@ -237,23 +237,31 @@
       "items": [
         {
           "question": "How many MB is 1 GB?",
-          "answer": "1 GB = 1,000 MB (decimal) or 1 GiB = 1,024 MiB (binary). Most storage devices use the decimal system."
+          "answer": "1 GB = 1,000 MB (decimal) or 1 GiB = 1,024 MiB (binary). Hard drive manufacturers use decimal, while operating systems like Windows and macOS report in binary."
         },
         {
           "question": "Why does my drive show less space than advertised?",
-          "answer": "Manufacturers use decimal units (1 TB = 1,000,000,000,000 bytes) but your OS uses binary units (1 TiB = 1,099,511,627,776 bytes). A \"1 TB\" drive shows as ~931 GiB."
+          "answer": "Manufacturers use decimal units (1 TB = 1,000,000,000,000 bytes) but your OS uses binary units (1 TiB = 1,099,511,627,776 bytes). A \"1 TB\" drive shows as ~931 GiB in Windows. No space is missing — it's a unit mismatch."
         },
         {
           "question": "How many bytes is 1 KB?",
-          "answer": "1 KB = 1,000 bytes (decimal/SI). 1 KiB = 1,024 bytes (binary/IEC). The industry commonly uses the decimal definition."
+          "answer": "1 KB = 1,000 bytes (decimal/SI). 1 KiB = 1,024 bytes (binary/IEC). Networking and storage specs typically use decimal KB; RAM and operating system memory reports use binary KiB."
         },
         {
           "question": "What is the difference between MB and MiB?",
-          "answer": "1 MB = 1,000,000 bytes (decimal). 1 MiB = 1,048,576 bytes (binary). The difference is about 4.86%."
+          "answer": "1 MB = 1,000,000 bytes (decimal). 1 MiB = 1,048,576 bytes (binary). The difference is about 4.86%. For a 100 MB file, that's roughly 5 MB of discrepancy — enough to matter when checking cloud storage limits."
         },
         {
           "question": "How many photos fit in 1 GB?",
-          "answer": "Approximately 200–300 photos at 3–5 MB each (12 MP smartphone camera). RAW photos (25–50 MB each) fit 20–40 per GB."
+          "answer": "Approximately 200–300 JPEG photos at 3–5 MB each (12 MP smartphone). RAW files (25–50 MB each) fit 20–40 per GB. Video at 4K/30fps takes about 375 MB per minute."
+        },
+        {
+          "question": "What is GitHub LFS and how many bytes can I store?",
+          "answer": "GitHub LFS (Large File Storage) gives each free account 1 GB of storage and 1 GB of monthly bandwidth. Paid plans start at 50 GB. 1 GB = 1,073,741,824 bytes in binary."
+        },
+        {
+          "question": "How big can a Docker image be?",
+          "answer": "Docker Hub has no hard image size limit but recommends keeping images under a few hundred MB. Alpine-based images can be under 10 MB; full Ubuntu images are typically 70–100 MB; Node.js images often reach 300–900 MB."
         },
         {
           "question": "Are calculations done locally?",
@@ -270,7 +278,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "bajty na KB/MB/GB – Arteon",
+      "imageAlt": "Bytes converter KB MB GB TB – Arteon",
       "defaultSubject": "Feedback: bytes-converter"
     },
     {

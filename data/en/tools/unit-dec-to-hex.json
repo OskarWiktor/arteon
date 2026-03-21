@@ -2,14 +2,14 @@
   "toolKey": "decToHex",
   "locale": "en",
   "metadata": {
-    "title": "Decimal to hexadecimal converter",
-    "description": "Convert decimal numbers to hexadecimal and vice versa. Essential for web colors, programming, and memory addresses.",
+    "title": "Decimal to hexadecimal converter – CSS colors and code",
+    "description": "Convert decimal to hex instantly — free, no registration, works in browser. Use for CSS color codes, JavaScript hex literals, memory addresses, and Unicode.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/decimal-to-hex-converter"
   },
   "hero": {
-    "title": "Convert decimal to hexadecimal",
-    "description": "This converter converts decimal numbers to hexadecimal. Enter a number and the result appears instantly.",
+    "title": "Decode hex values in CSS, JavaScript, and memory dumps",
+    "description": "255 = FF. 65535 = FFFF. Convert any decimal to hex — or hex back to decimal — instantly for web colors, debugging, and Unicode lookups.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert decimal numbers to hexadecimal and vice versa. Essential for web colors, programming, and memory addresses.",
-      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+      "featureList": ["Instant decimal to hex and hex to decimal conversion", "CSS color codes: #FF5733 breakdown explained", "JavaScript hex literals: 0xFF, 0x1A3B and their decimal equivalents", "Unicode code points: U+0041 = 65 decimal = 41 hex", "Memory address debugging in Chrome DevTools and hex editors", "SHA and MD5 hash output is hexadecimal — understand the format", "Copy result to clipboard with one click", "All calculations run locally — no server involved", "Works on mobile and desktop without installation"]
     },
     "howTo": {
       "name": "How to use the decimal to hex converter",
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPaletteLine",
-          "title": "CSS Colors",
-          "description": "#FF0000 = 255 (red), #00FF00 = 255 (green)."
+          "title": "CSS and HTML Color Codes",
+          "description": "Every CSS hex color is three hex pairs: #RRGGBB. #FF5733 = red 255, green 87, blue 51. Chrome DevTools shows colors in hex by default. Tailwind CSS v4 uses OKLCH, but legacy hex values remain common in codebases and design handoffs from Figma."
         },
         {
           "icon": "RiCodeSSlashLine",
-          "title": "Programming",
-          "description": "Memory addresses, bytes, Unicode character codes."
+          "title": "JavaScript Hex Literals",
+          "description": "JavaScript accepts hex literals with the 0x prefix: 0xFF === 255, 0x1A === 26. The Number.toString(16) method converts to hex; parseInt('FF', 16) converts back. Chrome DevTools memory panel shows all addresses in hexadecimal."
         },
         {
           "icon": "RiWifiLine",
-          "title": "Networking",
-          "description": "MAC addresses, IPv6, network protocols."
+          "title": "Network Packet Inspection",
+          "description": "Wireshark and tcpdump display packet contents as hex dumps. Each hex pair is one byte. MAC addresses use six hex pairs separated by colons: AA:BB:CC:DD:EE:FF. IPv6 addresses are eight groups of four hex digits."
         },
         {
-          "icon": "RiCpuLine",
-          "title": "Debugging",
-          "description": "Memory hex dumps, binary file analysis."
+          "icon": "RiHashtag",
+          "title": "SHA and MD5 Hash Output",
+          "description": "Cryptographic hashes are always displayed in hexadecimal. An MD5 hash is 32 hex characters (128 bits). SHA-256 produces 64 hex characters (256 bits). Each hex character represents 4 bits, so two characters represent one byte."
         }
       ]
     },
@@ -237,19 +237,31 @@
       "items": [
         {
           "question": "What is 255 in hex?",
-          "answer": "255 = FF in hexadecimal. This is the maximum value of one byte."
+          "answer": "255 = FF in hexadecimal. This is the maximum value of one byte (8 bits). It appears in CSS as #FFFFFF (white), in RGB as rgb(255, 255, 255), and as 0xFF in C, JavaScript, and Python source code."
         },
         {
           "question": "What is 0xFF in decimal?",
-          "answer": "0xFF = 255 in decimal. The 0x prefix indicates hexadecimal in programming."
+          "answer": "0xFF = 255 in decimal. The 0x prefix signals hexadecimal in most programming languages. In JavaScript: 0xFF === 255 evaluates to true. In Python: hex(255) returns '0xff'. In C: printf(\"%d\", 0xFF) prints 255."
         },
         {
-          "question": "How do hex colors work?",
-          "answer": "#RRGGBB: each pair is a hex byte (00–FF = 0–255). #FF0000 = red, #00FF00 = green, #0000FF = blue."
+          "question": "How do CSS hex colors work?",
+          "answer": "#RRGGBB format uses two hex digits per channel. Each pair ranges from 00 (0) to FF (255). #FF0000 = red 255, green 0, blue 0. #1A2B3C = red 26, green 43, blue 60. Shorthand: #RGB expands to #RRGGBB — #F0A = #FF00AA."
         },
         {
-          "question": "What does 0x mean?",
-          "answer": "0x is a prefix that indicates a hexadecimal number in most programming languages (C, JavaScript, Python, etc.)."
+          "question": "What does 0x mean in code?",
+          "answer": "0x is a prefix signaling hexadecimal in C, C++, Java, JavaScript, Python, Go, and Rust. Example: 0x1A = 26 decimal. Python also accepts 0o for octal and 0b for binary. In CSS, # serves the same purpose for color values."
+        },
+        {
+          "question": "How do I read a memory address in Chrome DevTools?",
+          "answer": "Chrome DevTools Memory panel shows addresses like 0x7FFF5FBF. Convert: 0x7FFF = 32,767 decimal. Each hex character is 4 bits, so a 6-digit hex address represents a 24-bit value (up to 16,777,215). 64-bit addresses are 16 hex digits long."
+        },
+        {
+          "question": "What is a Unicode code point in hex?",
+          "answer": "Unicode code points are written as U+ followed by hex digits. U+0041 = decimal 65 = letter 'A'. U+00E9 = decimal 233 = 'é'. U+1F600 = decimal 128,512 = the grinning face emoji. JavaScript accesses them via String.fromCodePoint(65) or '\\u0041'."
+        },
+        {
+          "question": "Why are SHA/MD5 hashes displayed in hex?",
+          "answer": "Cryptographic hash functions output raw bytes. Hex is the standard way to display binary data in a readable, copy-pasteable format. An MD5 hash is 16 bytes = 32 hex characters. SHA-256 is 32 bytes = 64 hex characters. Each pair of hex digits represents exactly one byte."
         },
         {
           "question": "Are calculations done locally?",
@@ -266,7 +278,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "dziesiętny na szesnastkowy – Arteon",
+      "imageAlt": "Decimal to hexadecimal converter – Arteon",
       "defaultSubject": "Feedback: dec-to-hex"
     },
     {
