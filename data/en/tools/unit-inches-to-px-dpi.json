@@ -2,14 +2,14 @@
   "toolKey": "inchesToPxDpi",
   "locale": "en",
   "metadata": {
-    "title": "Inches to pixels (DPI) converter",
-    "description": "Convert inches to pixels at any DPI resolution. Essential for print design, image preparation, and display calculations.",
+    "title": "Inches to pixels (DPI) converter — US print and photo sizes to px",
+    "description": "Convert inches to pixels at any DPI. Letter 8.5×11in at 300 DPI = 2550×3300px — free, no registration, works in browser.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/inches-to-px-converter"
   },
   "hero": {
-    "title": "Convert inches to pixels",
-    "description": "Convert inches to pixels at your chosen DPI. Enter dimensions and DPI to get the pixel count instantly.",
+    "title": "Inches to pixels for US print — Letter, photo sizes, and ad specs",
+    "description": "Pixels = inches × DPI. Letter at 300 DPI = 2,550×3,300px. Facebook ads, Amazon printables, photo prints — get the right canvas size instantly.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert inches to pixels at any DPI resolution. Essential for print design, image preparation, and display calculations.",
-      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+      "featureList": ["Real-time bidirectional inches ↔ px conversion", "Configurable DPI input (72, 96, 150, 300, 600)", "US Letter, Legal, Tabloid size reference", "Social media ad specs built in (Facebook 1200×628px)", "Photo print sizes (4×6, 5×7, 8×10, 11×14)", "Amazon and Etsy printable product size reference", "Copy result to clipboard in one click", "Works entirely in browser — no server calls", "Retina display DPI context included"]
     },
     "howTo": {
       "name": "How to use the inches to px converter",
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "US Print",
-          "description": "Letter 8.5 × 11″ at 300 DPI = 2,550 × 3,300 px."
+          "title": "US print standards — Letter, Legal, and Tabloid",
+          "description": "US commercial printing is specified in inches. Letter (8.5 × 11in) at 300 DPI = 2,550 × 3,300px. Legal (8.5 × 14in) = 2,550 × 4,200px. Tabloid (11 × 17in) = 3,300 × 5,100px. When a print shop requests a 300 DPI Letter-size file, this is the canvas size you need to deliver."
         },
         {
           "icon": "RiMonitorLine",
-          "title": "Monitors",
-          "description": "Calculate monitor PPI: 27″ 4K (3840 px) = 163 PPI."
+          "title": "Social media ad specifications",
+          "description": "Social media platforms specify ad sizes in pixels, but ad templates and brand guidelines often use inches. A Facebook Open Graph image spec is 1,200 × 628px — at 72 DPI that is 16.67 × 8.72 inches. Instagram feed ads are 1080 × 1080px = 15 × 15in at 72 DPI. This converter helps verify that your print-originated artwork matches social ad pixel requirements."
         },
         {
           "icon": "RiImageLine",
-          "title": "Photography",
-          "description": "Print a 4 × 6″ photo at 300 DPI = 1,200 × 1,800 px."
+          "title": "Photo prints and Etsy/Amazon printables",
+          "description": "Photo print sizes are specified in inches in the US. A 4 × 6in print at 300 DPI requires a 1,200 × 1,800px image. For Etsy digital download products, common printable sizes include 5 × 7in (1,500 × 2,100px), 8 × 10in (2,400 × 3,000px), and 11 × 14in (3,300 × 4,200px) — all at 300 DPI for quality prints."
         },
         {
           "icon": "RiCodeSSlashLine",
-          "title": "CSS",
-          "description": "In CSS 1 in = 96 px (CSS specification)."
+          "title": "Banner printing and large format",
+          "description": "Trade show banners and retractable banners use inches for sizing. A standard retractable banner (33 × 80in) at 150 DPI = 4,950 × 12,000px. Vinyl banners printed at 72 DPI: a 6 × 2ft banner (72 × 24in) = 5,184 × 1,728px. Large format typically uses 72–150 DPI since they are viewed from a distance."
         }
       ]
     },
@@ -237,15 +237,31 @@
       "items": [
         {
           "question": "How many pixels is 1 inch at 300 DPI?",
-          "answer": "1 inch at 300 DPI = 300 pixels. The formula is simply inches × DPI."
+          "answer": "1 inch at 300 DPI = 300 pixels. The formula is: pixels = inches × DPI. At 72 DPI: 1in = 72px. At 96 DPI: 1in = 96px (this is the CSS standard). At 150 DPI: 1in = 150px. At 300 DPI: 1in = 300px."
         },
         {
           "question": "What size photo do I need for an 8×10 print?",
-          "answer": "8×10″ at 300 DPI = 2,400×3,000 pixels = 7.2 megapixels minimum."
+          "answer": "8 × 10in at 300 DPI = 2,400 × 3,000 pixels = 7.2 megapixels minimum. At 150 DPI (acceptable for casual prints): 1,200 × 1,500px. Most modern smartphones produce 12–50 MP images, which is well above the minimum for 8×10 prints at 300 DPI."
         },
         {
           "question": "What DPI is my screen?",
-          "answer": "Common screen DPI: 96 PPI (Windows default), 72 PPI (Mac default), 110 PPI (24″ 1080p), 163 PPI (27″ 4K), 218 PPI (iPhone 11)."
+          "answer": "Common screen DPI: 96 PPI (Windows default, 24in 1080p monitors), 72–109 PPI (older Macs and monitors), 163 PPI (27in 4K), 218 PPI (iPhone 11), 460 PPI (iPhone 15 Pro). Note: CSS always treats 1in = 96px regardless of the physical screen DPI."
+        },
+        {
+          "question": "What pixel size do I need for a Facebook ad?",
+          "answer": "Facebook feed image ads: 1,200 × 628px (1.91:1 ratio). Facebook square post: 1,080 × 1,080px. Facebook Story: 1,080 × 1,920px. In inches at 72 DPI: 1,200 × 628px = 16.67 × 8.72in. Use this converter to check if your print artwork in inches translates to the required pixel dimensions."
+        },
+        {
+          "question": "What are the standard US photo print sizes in pixels?",
+          "answer": "At 300 DPI: 4×6in = 1,200×1,800px, 5×7in = 1,500×2,100px, 8×10in = 2,400×3,000px, 11×14in = 3,300×4,200px, 16×20in = 4,800×6,000px, 20×30in = 6,000×9,000px."
+        },
+        {
+          "question": "How do I calculate the required image size for a poster?",
+          "answer": "Determine the poster size in inches and multiply by your target DPI. A 24 × 36in poster at 150 DPI = 3,600 × 5,400px. At 300 DPI = 7,200 × 10,800px. For posters viewed from more than 3 feet away, 150 DPI is usually sufficient and produces a much smaller file size."
+        },
+        {
+          "question": "What is 1 inch in CSS pixels?",
+          "answer": "In CSS, 1 inch is always exactly 96 CSS pixels, regardless of the physical screen resolution. This is defined in the CSS specification. So width: 1in in CSS equals width: 96px. This means CSS inch and print inch only align at 96 DPI screens."
         },
         {
           "question": "Are calculations done locally?",
@@ -262,7 +278,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "cale na px – Arteon",
+      "imageAlt": "inches to px converter – Arteon",
       "defaultSubject": "Feedback: inches-to-px-dpi"
     },
     {

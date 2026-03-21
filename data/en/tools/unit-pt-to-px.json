@@ -2,14 +2,14 @@
   "toolKey": "ptToPx",
   "locale": "en",
   "metadata": {
-    "title": "Points to pixels converter",
-    "description": "Convert typographic points (pt) to pixels (px) and vice versa. Essential for web and print typography.",
+    "title": "Points to pixels converter — pt to px, print and web typography",
+    "description": "Convert typographic points (pt) to pixels (px) instantly. 12pt = 16px, Word to CSS font sizes — free, no registration, works in browser.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/pt-to-px-converter"
   },
   "hero": {
-    "title": "Convert points to pixels",
-    "description": "This converter converts typographic points to screen pixels and vice versa. Enter a value and the result appears instantly.",
+    "title": "Bridge print and screen typography — pt to px without the formula",
+    "description": "Word uses pt, CSS uses px. 12pt = 16px at 96dpi — the browser default. Look up any size instantly, from fine print to display headings.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert typographic points (pt) to pixels (px) and vice versa. Essential for web and print typography.",
-      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+      "featureList": ["Real-time bidirectional pt ↔ px conversion", "Standard 96 DPI (Windows/web) and 72 DPI (legacy Mac) modes", "Print font size reference (Word, Google Docs defaults)", "PDF generation size reference (Puppeteer, wkhtmltopdf)", "Copy result to clipboard in one click", "Common font size comparison table (pt vs px vs rem)", "iOS/Android pt unit context", "Works entirely in browser — no server calls", "72pt = 1 inch reference built in"]
     },
     "howTo": {
       "name": "How to use the pt to px converter",
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPaintBrushLine",
-          "title": "UI Design",
-          "description": "Export font sizes from Figma/Sketch to CSS: 12 pt = 16 px."
+          "title": "Word and Google Docs to CSS",
+          "description": "Word documents default to 11pt body text and 12pt headings. Google Docs uses 11pt by default. When converting a brand style guide from a Word document into a CSS design system, you need exact px equivalents. 11pt = 14.67px (rounds to 15px), 12pt = 16px, 14pt = 18.67px — small rounding errors compound across a full type scale."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Documents",
-          "description": "Convert sizes from Word/InDesign to pixel values for the web."
+          "title": "PDF generation with Puppeteer and wkhtmltopdf",
+          "description": "Server-side PDF tools like Puppeteer (headless Chrome) and wkhtmltopdf render HTML at 96dpi by default, so CSS px and pt both apply the standard 1pt = 1.333px ratio. However, some PDF templates specify font sizes in pt directly. This converter confirms that a 10pt body in a PDF spec maps to 13.3px in your CSS template."
         },
         {
           "icon": "RiCodeSSlashLine",
-          "title": "CSS / Frontend",
-          "description": "Convert pt to px when coding font styles in stylesheets."
+          "title": "Email newsletter typography",
+          "description": "HTML email clients like Outlook, Apple Mail, and Gmail often render fonts based on pt values from inline styles or system defaults. Outlook on Windows uses pt units internally, which means a 14px font in CSS may render as a different size in Outlook. Converting pt to px helps debug email rendering inconsistencies across clients."
         },
         {
           "icon": "RiPrinterLine",
-          "title": "Print vs Screen",
-          "description": "Match text sizes between print layouts and on-screen display."
+          "title": "iOS and Android point units",
+          "description": "In iOS development, the pt unit (points) is a logical pixel that maps to device pixels through a scale factor. On an iPhone with a 2× Retina display, 1pt = 2 screen pixels. This is different from CSS pt. When a designer specifies iOS UI at 14pt, knowing the CSS px equivalent (18.67px at 96dpi) helps create consistent web counterparts."
         }
       ]
     },
@@ -236,20 +236,32 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "How many pixels is 12 pt?",
-          "answer": "12 pt = 16 px at 96 PPI. This is the default browser font size."
+          "question": "How many pixels is 12pt?",
+          "answer": "12pt = 16px at 96 DPI (the CSS and Windows default). This is also the default browser font size and equals 1rem. The formula is: px = pt × 96 / 72 = pt × 1.3333."
         },
         {
-          "question": "How many pt is 1 px?",
-          "answer": "1 px = 0.75 pt at 96 PPI (72/96)."
+          "question": "How many pt is 1px?",
+          "answer": "1px = 0.75pt at 96 DPI. Formula: pt = px × 72 / 96. So 16px = 12pt, 14px = 10.5pt, 18px = 13.5pt."
         },
         {
-          "question": "Why are pt and px different?",
-          "answer": "Points (1/72 inch) come from print. CSS pixels (1/96 inch) are a web standard. The ratio is 96/72 = 1.333."
+          "question": "Why are pt and px different units?",
+          "answer": "Points (1pt = 1/72 inch) originated in physical typography and print design. CSS pixels are defined as 1/96 of an inch at 96 DPI. The ratio between them is 96/72 = 1.333. At the old Mac 72 DPI standard, 1pt used to equal exactly 1px — which is why some older design tools still assume this."
         },
         {
           "question": "What is the default font size in browsers?",
-          "answer": "16 px = 12 pt = 1 rem. All browsers use this as the default."
+          "answer": "16px = 12pt = 1rem. All major browsers (Chrome, Firefox, Safari, Edge) use 16px as the default. Users can change this in browser settings, which is why rem and em units that inherit from root are preferred over fixed px for accessibility."
+        },
+        {
+          "question": "What is 72pt in pixels?",
+          "answer": "72pt = 96px at 96 DPI. This is because 72pt = 1 inch, and 1 CSS inch = 96px. This relationship (72pt = 1 inch) is the fundamental rule of typographic points from the Didot and Pica systems."
+        },
+        {
+          "question": "What pt size should I use for body text in print vs web?",
+          "answer": "For print: body text is typically 10–12pt. For web (CSS): body text is typically 16px = 12pt. Email newsletters commonly use 14pt = 18.67px for improved readability on mobile. WCAG recommends minimum 18pt (24px) for large text that qualifies for reduced contrast ratios."
+        },
+        {
+          "question": "Does Puppeteer use pt or px for PDF rendering?",
+          "answer": "Puppeteer renders at 96 DPI by default, so CSS px and pt follow the standard ratio (1pt = 1.333px). You can also set a custom device scale factor. If your PDF template specifies font sizes in pt, convert them to CSS px using this tool to ensure your HTML template matches the design spec."
         },
         {
           "question": "Are calculations done locally?",
@@ -266,7 +278,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "pt na px – Arteon",
+      "imageAlt": "pt to px converter – Arteon",
       "defaultSubject": "Feedback: pt-to-px"
     },
     {

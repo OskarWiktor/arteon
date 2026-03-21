@@ -2,14 +2,14 @@
   "toolKey": "emToPx",
   "locale": "en",
   "metadata": {
-    "title": "EM to pixels converter",
-    "description": "Convert CSS em units to pixels and vice versa. Set your base font size and get instant pixel values for responsive web design.",
+    "title": "EM to pixels converter — CSS em to px with base font size",
+    "description": "Convert CSS em units to pixels instantly. Set any base font size, get exact px values — free, no registration, works in browser.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/em-to-px-converter"
   },
   "hero": {
-    "title": "Convert EM to pixels",
-    "description": "Convert CSS em units to pixels based on your base font size. Enter a value and the result appears instantly.",
+    "title": "Get exact pixel values from em — no root font-size guesswork",
+    "description": "em compounds through the DOM tree — so the rendered px depends on context. Set your base size and see the result instantly.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert CSS em units to pixels and vice versa. Set your base font size and get instant pixel values for responsive web design.",
-      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+      "featureList": ["Real-time bidirectional em ↔ px conversion", "Configurable base font size (default 16px)", "Shows compounding effect explanation", "Copy result to clipboard in one click", "Reverse conversion: px back to em", "Reference table with common em values", "Works entirely in browser — no server calls", "Supports decimal values (e.g. 1.5em, 0.875em)", "Useful for WCAG 1.4.4 font scaling compliance"]
     },
     "howTo": {
       "name": "How to use the em to px converter",
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiTextSpacing",
-          "title": "Typography",
-          "description": "Line-height 1.5 em = 150% of the parent font size."
+          "title": "Typography scaling",
+          "description": "When you set a paragraph to 1.5em inside a div that is already 1.25em, the text renders at 1.875× the root size — this compound effect trips up developers regularly. Use this converter to see the final pixel value at any nesting level."
         },
         {
           "icon": "RiCheckboxCircleLine",
-          "title": "Buttons",
-          "description": "Padding in em scales with the button's text size."
+          "title": "Button and component padding",
+          "description": "Padding defined in em scales automatically with the button's own font size. A button at 0.875em with padding 0.5em gets 7px padding — not 8px. Verify exact pixel sizing before final QA."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Components",
-          "description": "Proportional dimensions relative to text in UI components."
+          "title": "CSS media queries in em",
+          "description": "Bootstrap 5 breakpoints are defined in rem, but many older frameworks and custom setups use em for media queries. A breakpoint at 48em equals 768px only if the root is untouched — this tool confirms the correct threshold."
         },
         {
           "icon": "RiCodeSSlashLine",
-          "title": "CSS media queries",
-          "description": "Breakpoints in em are resilient to base font-size changes."
+          "title": "Accessibility and WCAG 1.4.4",
+          "description": "WCAG Success Criterion 1.4.4 requires text to resize up to 200% without loss of content. em-based font sizes honor the user's browser font preference, while px-based sizes ignore it. Verify your em values translate to accessible minimums."
         }
       ]
     },
@@ -237,19 +237,31 @@
       "items": [
         {
           "question": "How many pixels is 1em?",
-          "answer": "By default, 1em = 16px (browser default font size). But em is relative to the parent element font size, so it changes based on context."
+          "answer": "By default, 1em = 16px (browser default font size). But em is relative to the parent element font size, so it changes based on context. If a parent div has font-size: 20px, then 1em inside it equals 20px, not 16px."
         },
         {
           "question": "What is the difference between em and rem?",
-          "answer": "em is relative to the parent element font size. rem is relative to the root (html) element font size. rem is more predictable because it doesn't compound."
+          "answer": "em is relative to the parent element font size and compounds through DOM nesting. rem is always relative to the root (html) element font size and never compounds. For predictable spacing systems, rem is usually preferred."
         },
         {
-          "question": "When should I use em instead of px?",
-          "answer": "Use em for typography and spacing that should scale with font size. Use px for borders, shadows, and other properties that should stay fixed."
+          "question": "When should I use em instead of rem or px?",
+          "answer": "Use em when you want a component to scale proportionally with its own font size — for example, button padding, icon sizes within text, or line-height. Use rem for global spacing. Use px for borders and box-shadows that should stay fixed."
         },
         {
           "question": "What is the 62.5% trick?",
-          "answer": "Set html { font-size: 62.5% } to make 1rem/1em = 10px. Then 1.6rem = 16px, 2rem = 20px — easier mental math."
+          "answer": "Set html { font-size: 62.5% } to make 1rem/1em = 10px at the root level. Then 1.6rem = 16px, 2rem = 20px — easier mental math. Note: this affects em values too, so nested em calculations change accordingly."
+        },
+        {
+          "question": "Are Bootstrap breakpoints in em or px?",
+          "answer": "Bootstrap 5 media queries use em units internally. sm = 36em (576px), md = 48em (768px), lg = 62em (992px), xl = 75em (1200px), xxl = 96em (1400px) — all at 16px root."
+        },
+        {
+          "question": "How does browser zoom affect em-based layouts?",
+          "answer": "When users zoom in using the browser, em-based font sizes scale correctly because the root font size scales proportionally. px-based layouts can break or overflow, which is why em and rem are recommended for accessible typography."
+        },
+        {
+          "question": "Does Sass support em calculations?",
+          "answer": "Yes. In Sass you can store base font sizes as variables and calculate em values: $base: 16px; font-size: #{14px / $base}em. Some teams also use the em() function in their own Sass utilities to automate the conversion."
         },
         {
           "question": "Are calculations done locally?",
@@ -266,7 +278,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "em na px – Arteon",
+      "imageAlt": "em to px converter – Arteon",
       "defaultSubject": "Feedback: em-to-px"
     },
     {

@@ -2,14 +2,14 @@
   "toolKey": "remToPx",
   "locale": "en",
   "metadata": {
-    "title": "REM to pixels converter",
-    "description": "Convert CSS rem units to pixels and vice versa. Set your root font size and get instant pixel values for responsive design.",
+    "title": "REM to pixels converter — CSS rem to px with :root font size",
+    "description": "Convert CSS rem units to pixels instantly. Adjust root font size, get exact px values for Tailwind, WCAG spacing — free, works in browser.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/rem-to-px-converter"
   },
   "hero": {
-    "title": "Convert REM to pixels",
-    "description": "Convert CSS rem units to pixels based on your root font size. Enter a value and the result appears instantly.",
+    "title": "Pixel values from rem — set any :root font size, get the exact result",
+    "description": "rem always references the root element, not the parent. Change the base size once to see how Tailwind, spacing systems, and WCAG targets shift.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert CSS rem units to pixels and vice versa. Set your root font size and get instant pixel values for responsive design.",
-      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+      "featureList": ["Real-time bidirectional rem ↔ px conversion", "Configurable :root font size (default 16px)", "Never compounds — always references root", "Copy result to clipboard in one click", "Reverse conversion: px back to rem", "Reference table with Tailwind-aligned rem values", "WCAG minimum touch target check (2.75rem = 44px)", "Works entirely in browser — no server calls", "Supports 62.5% root trick (1rem = 10px mode)"]
     },
     "howTo": {
       "name": "How to use the rem to px converter",
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiCodeSSlashLine",
-          "title": "CSS Development",
-          "description": "Convert mockups (px) to rem: padding 24 px = 1.5 rem."
+          "title": "CSS development and design handoff",
+          "description": "Designers deliver Figma mockups in pixels, but production CSS uses rem. When a spec says 24px padding, you need 1.5rem — but only if the root is 16px. If your project uses a 62.5% root trick (10px root), the same padding becomes 2.4rem. This tool removes the guesswork."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Responsiveness",
-          "description": "Rem scales with user preferences — better than fixed pixels."
+          "title": "Responsive typography with Tailwind",
+          "description": "Tailwind CSS uses a rem-based spacing scale: text-sm = 0.875rem (14px), text-base = 1rem (16px), text-lg = 1.125rem (18px). When you configure a custom base font size in tailwind.config.js, every spacing token shifts. Use this converter to verify final pixel values before pushing to production."
         },
         {
           "icon": "RiAccessibilityLine",
-          "title": "Accessibility (WCAG)",
-          "description": "Rem respects the user's text size settings."
+          "title": "WCAG accessibility compliance",
+          "description": "WCAG 2.1 requires minimum touch targets of 44×44px, which equals 2.75rem at 16px root. Font sizes set in rem honor the user's browser text size preference — if a user sets their browser to 20px, 1rem becomes 20px. px-based fonts ignore this, failing WCAG 1.4.4."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Design Systems",
-          "description": "Spacing scales in rem: 0.25 / 0.5 / 1 / 1.5 / 2 / 3 rem."
+          "title": "Design system spacing scales",
+          "description": "Modern design systems like Material Design and Fluent use rem-based spacing tokens. A typical 8-point grid translates to 0.5rem increments. This tool helps map spacing tokens (4px = 0.25rem, 8px = 0.5rem, 16px = 1rem, 24px = 1.5rem) when onboarding a new project."
         }
       ]
     },
@@ -237,19 +237,31 @@
       "items": [
         {
           "question": "How many pixels is 1rem?",
-          "answer": "By default, 1rem = 16px. This can change if you modify the root font size in CSS."
+          "answer": "By default, 1rem = 16px (browser default root font size). If you or Tailwind set html { font-size: 62.5% }, then 1rem = 10px. Always check your :root declaration before assuming 16px."
         },
         {
           "question": "What is the difference between rem and em?",
-          "answer": "rem always references the root element font size. em references the parent element font size and compounds through nesting."
+          "answer": "rem always references the root element (html) font size and never compounds. em references the parent element and compounds through nesting — a 1.5em inside a 1.5em parent renders at 2.25× root. rem is more predictable for spacing systems."
         },
         {
           "question": "Should I use rem or px?",
-          "answer": "Use rem for typography, spacing, and layout. Use px for borders, box-shadows, and properties that should not scale."
+          "answer": "Use rem for typography, spacing, and layout so that values scale with the user's browser font preferences. Use px for borders, box-shadows, outlines, and anything that should stay physically fixed regardless of zoom level."
         },
         {
-          "question": "How does Tailwind use rem?",
-          "answer": "Tailwind spacing uses 0.25rem increments: p-1 = 0.25rem (4px), p-4 = 1rem (16px), p-8 = 2rem (32px)."
+          "question": "How does Tailwind CSS use rem?",
+          "answer": "Tailwind spacing scale uses 0.25rem increments: p-1 = 0.25rem (4px), p-2 = 0.5rem (8px), p-4 = 1rem (16px), p-8 = 2rem (32px). You can change the base font size in tailwind.config.js under theme.fontSize to shift all rem values."
+        },
+        {
+          "question": "How do I set a custom root font size in CSS?",
+          "answer": "Use html { font-size: 18px; } or html { font-size: 112.5%; } in your global stylesheet. Setting a percentage respects user browser preferences — 62.5% makes 1rem = 10px for easier math, but 100% (16px) is the accessible default."
+        },
+        {
+          "question": "What is the System UI font stack and how does rem affect it?",
+          "answer": "System UI fonts (font-family: system-ui) render at the OS default size, which browsers map to 16px by default. Since rem is anchored to that root, your rem-based layout adapts correctly across macOS, Windows, and iOS without any adjustments."
+        },
+        {
+          "question": "Are media queries in rem affected by the root font size?",
+          "answer": "Yes, but only if you use em/rem in media queries (e.g. @media (min-width: 48rem)). Some browsers evaluate media query em/rem against the user's browser base size, not your html font-size declaration — so 48rem may equal 768px regardless of your CSS root."
         },
         {
           "question": "Are calculations done locally?",
@@ -266,7 +278,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "rem na px – Arteon",
+      "imageAlt": "rem to px converter – Arteon",
       "defaultSubject": "Feedback: rem-to-px"
     },
     {

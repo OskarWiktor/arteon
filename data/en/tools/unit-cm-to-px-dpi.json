@@ -2,14 +2,14 @@
   "toolKey": "cmToPxDpi",
   "locale": "en",
   "metadata": {
-    "title": "CM to pixels (DPI) converter",
-    "description": "Convert centimeters to pixels at any DPI resolution. Essential for print design, web graphics, and image preparation.",
+    "title": "CM to pixels (DPI) converter — centimeters to px, 300 DPI print",
+    "description": "Convert centimeters to pixels at any DPI. A4 at 300 DPI = 2480×3508px — free, no registration, works in browser.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/cm-to-px-converter"
   },
   "hero": {
-    "title": "Convert CM to pixels",
-    "description": "Convert centimeters to pixels at your chosen DPI. Enter dimensions and DPI to get the pixel count instantly.",
+    "title": "CM to pixels at any DPI — print dimensions to exact pixel counts",
+    "description": "Pixels = cm × DPI / 2.54. Set your DPI (72, 96, 150, 300) and get the exact pixel count for any centimeter dimension instantly.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert centimeters to pixels at any DPI resolution. Essential for print design, web graphics, and image preparation.",
-      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+      "featureList": ["Real-time bidirectional cm ↔ px conversion", "Configurable DPI input (72, 96, 150, 300, 600)", "A4 and A3 standard size reference built in", "96 DPI screen standard vs 300 DPI print comparison", "CSS @media print context reference", "Copy result to clipboard in one click", "Works entirely in browser — no server calls", "Supports decimal cm values (e.g. 21.5 cm)", "Banner and poster design use cases with DPI notes"]
     },
     "howTo": {
       "name": "How to use the cm to px converter",
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "Print Preparation",
-          "description": "A4 at 300 DPI = 2,480 × 3,508 px. A3 poster = 3,508 × 4,961 px."
+          "title": "Print preparation for brochures and posters",
+          "description": "Professional print requires 300 DPI. An A4 brochure (21 × 29.7 cm) at 300 DPI needs a 2,480 × 3,508px canvas. An A3 poster (29.7 × 42 cm) requires 3,508 × 4,961px. Getting this wrong and delivering a 72 DPI file results in a blurry, unprintable product — this converter confirms the correct canvas size before you start designing."
         },
         {
           "icon": "RiImageLine",
-          "title": "Web Graphics",
-          "description": "Banner 20 × 6 cm at 96 DPI = 756 × 227 px."
+          "title": "Web banner and display advertising",
+          "description": "Web banners are often specified in centimeters by clients but must be delivered in pixels. A standard leaderboard banner at 72.8 × 9 cm at 96 DPI screen resolution equals 756 × 94px. For retina-ready banners, double the DPI to 192 DPI so the banner stays sharp on high-DPI displays."
         },
         {
           "icon": "RiArtboardLine",
-          "title": "Social media",
-          "description": "Calculate pixel dimensions for graphics with a given physical size."
+          "title": "CSS @media print stylesheets",
+          "description": "CSS @media print allows using cm units directly — width: 21cm renders correctly when printed. However, when preparing background images or raster graphics for print stylesheets, you still need to convert cm to px at the appropriate DPI to supply a high-resolution image that prints sharply."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Photo Books",
-          "description": "Convert photo book page dimensions (cm) to printer pixel requirements."
+          "title": "Photo books and large format printing",
+          "description": "Photo book printing services like Shutterfly and Blurb specify page dimensions in centimeters and require images at 300 DPI. A 20 × 20 cm square page requires a 2,362 × 2,362px image. For large-format prints (banners, canvas), 150 DPI is usually sufficient — a 60 × 90 cm banner at 150 DPI = 3,543 × 5,315px."
         }
       ]
     },
@@ -237,19 +237,31 @@
       "items": [
         {
           "question": "How many pixels is 1 cm at 300 DPI?",
-          "answer": "1 cm at 300 DPI = 118.11 pixels. Formula: cm × 300 / 2.54."
+          "answer": "1 cm at 300 DPI = 118.11 pixels. The formula is: pixels = cm × DPI / 2.54. So 1 cm × 300 / 2.54 = 118.11px. At 96 DPI (screen): 1 cm = 37.8px. At 72 DPI (screen legacy): 1 cm = 28.35px."
         },
         {
-          "question": "What DPI should I use for printing?",
-          "answer": "300 DPI for professional print (brochures, photos). 150 DPI for large format (posters, banners). 72 DPI for screen only."
+          "question": "What DPI should I use for different print types?",
+          "answer": "300 DPI: standard for professional print — brochures, business cards, photo prints, magazines. 150 DPI: acceptable for large-format printing — posters, banners, canvas prints viewed from a distance. 72–96 DPI: screen only — web graphics, digital presentations, on-screen PDFs."
         },
         {
-          "question": "How big can I print a 12 MP photo?",
-          "answer": "12 MP = 4,000 × 3,000 px. At 300 DPI: 33.9 × 25.4 cm. At 150 DPI: 67.7 × 50.8 cm."
+          "question": "How big can I print a 12 megapixel photo?",
+          "answer": "A 12 MP camera produces roughly 4,000 × 3,000 pixels. At 300 DPI: 4000/300 × 2.54 = 33.9 × 25.4 cm (about 13×10 inches). At 150 DPI: 67.7 × 50.8 cm. Beyond these sizes, visible pixelation may appear at normal viewing distance."
         },
         {
           "question": "What resolution is A4 at 300 DPI?",
-          "answer": "A4 (21 × 29.7 cm) at 300 DPI = 2,480 × 3,508 pixels."
+          "answer": "A4 paper (21 × 29.7 cm) at 300 DPI = 2,480 × 3,508 pixels. This is the standard canvas size requested by most commercial print shops for full-bleed A4 documents. Add 3mm bleed on each side: 21.6 × 30.3 cm = 2,551 × 3,579px."
+        },
+        {
+          "question": "What is 96 DPI and why is it the screen standard?",
+          "answer": "96 DPI became the Windows screen standard because it gives a comfortable text size on early monitors. CSS defines 1 inch = 96 CSS pixels, so 1 cm = 96/2.54 = 37.795 CSS pixels. This is independent of the physical screen DPI, which on modern Retina displays can be 200+ PPI."
+        },
+        {
+          "question": "How do I set document size correctly in Photoshop for print?",
+          "answer": "In Photoshop: File > New > choose Centimeters as the unit, enter your dimensions (e.g. 21 × 29.7 cm), set resolution to 300 pixels/inch. The pixel dimensions update automatically. For bleed, add 3mm to each side: enter 21.6 × 30.3 cm instead."
+        },
+        {
+          "question": "Does CSS use cm as a valid unit?",
+          "answer": "Yes. CSS accepts cm as a unit — width: 10cm is valid. The browser converts it using the standard: 1cm = 37.795px at 96 DPI. This is only useful for print stylesheets (@media print) because screen pixels do not correspond to physical centimeters on screen."
         },
         {
           "question": "Are calculations done locally?",
@@ -266,7 +278,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "cm na px – Arteon",
+      "imageAlt": "cm to px converter – Arteon",
       "defaultSubject": "Feedback: cm-to-px-dpi"
     },
     {

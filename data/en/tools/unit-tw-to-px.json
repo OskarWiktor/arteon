@@ -2,14 +2,14 @@
   "toolKey": "twToPx",
   "locale": "en",
   "metadata": {
-    "title": "Tailwind spacing to pixels converter",
-    "description": "Convert Tailwind CSS spacing units to pixels and vice versa. Essential for developers using Tailwind CSS framework.",
+    "title": "Tailwind CSS spacing to pixels — p-4 to px converter",
+    "description": "See exact pixel values for any Tailwind spacing class. p-4 = 16px, p-8 = 32px, w-64 = 256px — free, no registration, works in browser.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/tailwind-css-spacing-to-px-converter"
   },
   "hero": {
-    "title": "Convert Tailwind units to pixels",
-    "description": "This converter converts Tailwind CSS spacing values to pixel equivalents. Enter a value and the result appears instantly.",
+    "title": "Tailwind spacing in pixels — see p-4 and every spacing class instantly",
+    "description": "Each Tailwind unit equals 4px at default root. p-6 = 24px, w-48 = 192px, gap-8 = 32px — look up any class without switching tabs.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert Tailwind CSS spacing units to pixels and vice versa. Essential for developers using Tailwind CSS framework.",
-      "featureList": ["Real-time conversion", "Tailwind CSS reference", "Copy result to clipboard", "Local calculations in browser"]
+      "featureList": ["Real-time bidirectional Tailwind ↔ px conversion", "Full default spacing scale (0.5 to 96 units)", "Shows rem and px simultaneously", "Tailwind breakpoints reference (sm/md/lg/xl/2xl)", "Copy result to clipboard in one click", "Works with JIT mode spacing values", "Custom spacing config reference", "Reference table with shadcn/ui component sizes", "Works entirely in browser — no server calls"]
     },
     "howTo": {
       "name": "How to use the Tailwind to px converter",
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiCodeSSlashLine",
-          "title": "CSS Debugging",
-          "description": "How many px is p-6? Answer: 24 px (1.5 rem)."
+          "title": "CSS debugging and class lookup",
+          "description": "During development you often need to confirm: how many pixels is gap-6? Is max-w-md wider than 400px? Instead of opening Tailwind docs and scrolling, type the class number here and get the answer in one second. p-6 = 24px, gap-6 = 24px, max-w-md = 448px."
         },
         {
           "icon": "RiLayout2Line",
-          "title": "Figma Conversion",
-          "description": "Design in px → matching Tailwind classes."
+          "title": "Figma to Tailwind design handoff",
+          "description": "Figma designs are specified in pixels. When converting a design to Tailwind, you need to find the nearest spacing token. A 32px gap in Figma maps to gap-8 in Tailwind (8 × 4px = 32px). This tool lets you verify the reverse — type the class, confirm the pixel value matches the spec."
         },
         {
           "icon": "RiRulerLine",
-          "title": "Pixel-perfect",
-          "description": "Match the layout to the required graphic design."
+          "title": "Component sizing with shadcn/ui",
+          "description": "shadcn/ui components use Tailwind spacing tokens for height, padding, and radius. A standard button uses h-10 (40px), px-4 (16px), py-2 (8px). When you need to override or extend these for a custom design, knowing the exact pixel equivalent prevents layout shifts."
         },
         {
           "icon": "RiTeamLine",
-          "title": "Designer Collaboration",
-          "description": "The designer provides px, the developer needs Tailwind classes."
+          "title": "Custom spacing configuration",
+          "description": "When you extend the Tailwind spacing scale in tailwind.config.js under theme.extend.spacing, you define new tokens like spacing['4.5'] = '18px'. This converter helps verify that your custom values align with the existing 4px grid and do not create rounding inconsistencies across components."
         }
       ]
     },
@@ -237,19 +237,31 @@
       "items": [
         {
           "question": "What is p-4 in pixels?",
-          "answer": "p-4 = 1rem = 16px at default root font size."
+          "answer": "p-4 = 1rem = 16px at the default root font size of 16px. The Tailwind spacing formula is: px = unit × 4. So p-4 = 4 × 4 = 16px, p-8 = 32px, p-12 = 48px."
         },
         {
           "question": "How do Tailwind spacing units work?",
-          "answer": "Each unit = 0.25rem. So multiply by 4 to get pixels: p-6 = 6 × 4 = 24px."
+          "answer": "Each spacing unit = 0.25rem. At 16px root, multiply by 4 to get pixels. p-6 = 6 × 4 = 24px, w-24 = 24 × 4 = 96px, gap-2 = 2 × 4 = 8px. Tailwind also has half-unit values: p-0.5 = 2px, p-1.5 = 6px, p-2.5 = 10px."
         },
         {
           "question": "What are Tailwind breakpoints in pixels?",
-          "answer": "sm = 640px, md = 768px, lg = 1024px, xl = 1280px, 2xl = 1536px."
+          "answer": "Tailwind v3/v4 default breakpoints: sm = 640px, md = 768px, lg = 1024px, xl = 1280px, 2xl = 1536px. These are min-width breakpoints, so md:p-4 applies at 768px and above."
         },
         {
-          "question": "Can I customize the spacing scale?",
-          "answer": "Yes, in tailwind.config.js under theme.spacing. You can override or extend default values."
+          "question": "Can I customize the Tailwind spacing scale?",
+          "answer": "Yes. In tailwind.config.js under theme.spacing (to fully replace the default scale) or theme.extend.spacing (to add new values while keeping defaults). JIT mode in Tailwind v3+ also supports arbitrary values like p-[13px] without config changes."
+        },
+        {
+          "question": "What are the most common Tailwind spacing values I should know?",
+          "answer": "p-1 = 4px, p-2 = 8px, p-3 = 12px, p-4 = 16px, p-5 = 20px, p-6 = 24px, p-8 = 32px, p-10 = 40px, p-12 = 48px, p-16 = 64px, p-20 = 80px, p-24 = 96px, p-32 = 128px, p-48 = 192px, p-64 = 256px."
+        },
+        {
+          "question": "How do I convert Figma spacing values to Tailwind classes?",
+          "answer": "Divide the Figma pixel value by 4 to get the Tailwind unit. 32px / 4 = 8, so use p-8 or gap-8 or m-8. If the value does not divide evenly (e.g. 14px), use the closest token (p-3 = 12px or p-4 = 16px) or an arbitrary value: p-[14px]."
+        },
+        {
+          "question": "Does Tailwind use rem or px internally?",
+          "answer": "Tailwind v3 uses rem for all spacing and font sizes internally. 1 unit = 0.25rem. At 16px root: 1 unit = 4px. If you change the root font size, all Tailwind rem values shift accordingly — which is why this converter accepts a custom base size."
         },
         {
           "question": "Are calculations done locally?",
@@ -266,7 +278,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "Tailwind na px – Arteon",
+      "imageAlt": "Tailwind spacing to pixels converter – Arteon",
       "defaultSubject": "Feedback: tw-to-px"
     },
     {
