@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "RGB to HSL – instantly editable color values for CSS and design systems",
-    "description": "HSL lets you adjust hue, lightness, and saturation independently — the format Tailwind, Material Design, and CSS custom properties use natively.",
+    "description": "HSL lets you adjust hue, lightness, and saturation independently — the format CSS custom properties and design systems rely on.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -285,7 +285,7 @@
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "RGB na HSL – Arteon",
+      "imageAlt": "RGB to HSL – Arteon",
       "defaultSubject": "Feedback: rgb-to-hsl"
     },
     {
