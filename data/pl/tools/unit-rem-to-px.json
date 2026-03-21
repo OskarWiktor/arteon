@@ -2,14 +2,14 @@
   "toolKey": "remToPx",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter rem na px – przelicz jednostki CSS",
-    "description": "Przelicz rem na piksele i odwrotnie z możliwością ustawienia bazowego font-size. Bez rejestracji.",
+    "title": "Przelicznik rem na px – konwerter CSS z ustawianym font-size",
+    "description": "Przelicz rem na piksele i odwrotnie – ustaw bazowy font-size i sprawdz wynik natychmiast. Niezbedny przy pracy z Tailwind CSS i dostepnoscia WCAG. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-rem-na-px"
   },
   "hero": {
-    "title": "Przelicz rem na piksele",
-    "description": "Ten konwerter przelicza jednostki rem na piksele i odwrotnie. Możesz ustawić bazowy font-size, a wynik pojawi się natychmiast.",
+    "title": "Przelicz rem na px – sprawdz rozmiary Tailwind CSS od razu",
+    "description": "Ustaw bazowy font-size i natychmiast zobaczysz, ile pikseli ma 1,5 rem lub 0,875 rem. Koniec z recznym dzieleniem przez 16.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -24,12 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter rem na px – przelicz jednostki CSS",
-      "alternateName": ["Przelicznik rem na px", "Kalkulator rem CSS", "rem to pixels"],
+      "name": "Przelicznik rem na px – konwerter CSS z ustawianym font-size",
+      "alternateName": [
+        "Przelicznik rem na px",
+        "Kalkulator rem CSS",
+        "rem to pixels"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz rem na piksele i odwrotnie z możliwością ustawienia bazowego font-size. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz rem na piksele i odwrotnie – ustaw bazowy font-size i sprawdz wynik natychmiast. Niezbedny przy pracy z Tailwind CSS i dostepnoscia WCAG. Bez rejestracji.",
+      "featureList": [
+        "Regulowany bazowy font-size – obsluga techniki 62,5%",
+        "Obustronna konwersja rem na px i px na rem",
+        "Wynik natychmiast podczas wpisywania – bez klikania",
+        "Kopiowanie wyniku do schowka jednym kliknieciem",
+        "Tabela wartosci Tailwind CSS: p-1 do p-96 w pikselach",
+        "Obliczenia lokalne – dane nie opuszczaja przegladarki",
+        "Wsparcie dla wartosci dziesietnych (0,875 rem, 1,25 rem)",
+        "Dziala na telefonie, tablecie i desktopie bez instalacji",
+        "Przyklady dla font-size, spacing i systemow projektowych"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera rem na px",
@@ -237,27 +251,35 @@
       "items": [
         {
           "question": "Ile pikseli ma 1 rem?",
-          "answer": "Domyślnie 1 rem = 16 px. Zależy to od bazowego font-size ustawionego na elemencie <code>&lt;html&gt;</code>."
+          "answer": "Domyslnie 1 rem = 16 px, bo przegladarki ustawiaja bazowy font-size na 16 px. Jesli ustawisz html { font-size: 62.5% }, podstawa wynosi 10 px i wtedy 1 rem = 10 px – przeliczanie staje sie prostsze."
         },
         {
-          "question": "Jak przeliczyć piksele na rem?",
-          "answer": "Podziel piksele przez bazowy font-size. Przykład: 24 px ÷ 16 = 1,5 rem."
+          "question": "Jak przeliczyc piksele na rem?",
+          "answer": "Podziel piksele przez bazowy font-size. Przy domyslnym 16 px: 24 px / 16 = 1,5 rem. Przy technice 62,5% (baza 10 px): 24 px / 10 = 2,4 rem. Konwerter wykonuje to obliczenie automatycznie dla dowolnej bazy."
         },
         {
-          "question": "Jaka jest różnica między rem a em?",
-          "answer": "Rem odnosi się do font-size elementu <code>&lt;html&gt;</code> (stała wartość na całej stronie). Em odnosi się do font-size elementu nadrzędnego (zmienia się w zależności od kontekstu)."
+          "question": "Jaka jest roznica miedzy rem a em?",
+          "answer": "Rem odnosi sie do font-size elementu html i jest stale na calej stronie – niezaleznie od zagniezdzenia. Em odnosi sie do font-size bezposredniego rodzica i moze kumulowac sie przy zagniezdzoniu. Do font-size zawsze uzywaj rem – unikniesz nieprzewidywalnych rozmiarow."
         },
         {
           "question": "Co to jest technika 62,5%?",
-          "answer": "Ustawienie <code>html { font-size: 62.5% }</code> zmienia bazowy font-size na 10 px. Dzięki temu 1 rem = 10 px i przeliczanie jest prostsze (np. 2,4 rem = 24 px)."
+          "answer": "Ustawienie html { font-size: 62.5% } zmienia bazowy font-size na 10 px (62,5% z 16 px). Dzieki temu 1 rem = 10 px i przeliczanie jest prostsze – np. 2,4 rem = 24 px. Technika popularna wsrod programistow, ale wymaga ustawienia body na 1,6 rem dla czytelnosci tekstu."
         },
         {
-          "question": "Czy Tailwind CSS używa rem?",
-          "answer": "Tak. Tailwind konwertuje spacing na rem: <code>p-4</code> = 1 rem = 16 px, <code>p-8</code> = 2 rem = 32 px."
+          "question": "Czy Tailwind CSS uzywa rem?",
+          "answer": "Tak. Tailwind generuje wszystkie wartosci spacing w rem: p-4 = 1 rem = 16 px, p-8 = 2 rem = 32 px. Zmiana bazowego font-size projektu automatycznie zmienia wszystkie wartosci pikseli w calym projekcie."
         },
         {
-          "question": "Czy powinienem używać rem zamiast px?",
-          "answer": "Rem jest zalecany dla tekstu i spacingów – skaluje się z preferencjami użytkownika. Piksele są odpowiednie dla borderów, cieni i stałych wymiarów."
+          "question": "Czy powinienem uzywac rem zamiast px?",
+          "answer": "Rem jest zalecany dla font-size i spacingow – skaluje sie z preferencjami uzytkownika i poprawia dostepnosc (WCAG 1.4.4). Piksele sa odpowiednie dla borderow, cieni i stalych wymiarow niezaleznych od tekstu. Nowoczesne projekty CSS uzywaja mieszanki obu jednostek."
+        },
+        {
+          "question": "Jak rem poprawia dostepnosc strony?",
+          "answer": "Gdy uzytkownik ustawia wiekszy rozmiar czcionki w przegladarce (np. 20 px zamiast 16 px), caly interfejs oparty na rem automatycznie sie powieksza. Piksele te zmiane ignoruja. WCAG 1.4.4 wymaga, by tekst dal sie powiekszyc do 200% bez utraty tresci – rem to umozliwia."
+        },
+        {
+          "question": "Ile rem to 1 px?",
+          "answer": "Przy domyslnym font-size 16 px: 1 px = 0,0625 rem. W praktyce zapamietaj klucz: 12 px = 0,75 rem, 14 px = 0,875 rem, 16 px = 1 rem, 20 px = 1,25 rem, 24 px = 1,5 rem, 32 px = 2 rem."
         }
       ]
     },

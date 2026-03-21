@@ -2,14 +2,14 @@
   "toolKey": "mmToPxDpi",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter mm na piksele (DPI) – milimetry na px",
-    "description": "Przelicz milimetry na piksele z regulowanym DPI. Konwerter jest przydatny w poligrafii i projektowaniu. Bez rejestracji.",
+    "title": "Przelicznik mm na piksele (DPI) – milimetry na px do druku",
+    "description": "Przelicz milimetry na piksele z regulowanym DPI – wizytowka 85 x 55 mm to 1004 x 650 px przy 300 DPI. Niezbedny w poligrafii i Photoshopie. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-mm-na-px"
   },
   "hero": {
-    "title": "Przelicz milimetry na piksele",
-    "description": "Ten konwerter przelicza milimetry na piksele z uwzględnieniem DPI. Jest szczególnie przydatny w poligrafii i precyzyjnym projektowaniu grafik.",
+    "title": "Przelicz milimetry na piksele – formaty poligraficzne na px",
+    "description": "Wpisz wymiary wizytowki, ulotki lub plakatu w milimetrach, ustaw DPI drukarni i natychmiast sprawdz wymagana liczbe pikseli.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -24,12 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter mm na piksele (DPI) – milimetry na px",
-      "alternateName": ["Przelicznik mm na px", "Kalkulator mm na piksele", "mm to pixels DPI"],
+      "name": "Przelicznik mm na piksele (DPI) – milimetry na px do druku",
+      "alternateName": [
+        "Przelicznik mm na px",
+        "Kalkulator mm na piksele",
+        "mm to pixels DPI"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz milimetry na piksele z regulowanym DPI. Konwerter jest przydatny w poligrafii i projektowaniu. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz milimetry na piksele z regulowanym DPI – wizytowka 85 x 55 mm to 1004 x 650 px przy 300 DPI. Niezbedny w poligrafii i Photoshopie. Bez rejestracji.",
+      "featureList": [
+        "Regulowane DPI – 72, 96, 150, 300 lub dowolna wartosc",
+        "Obustronna konwersja: milimetry na px i px na milimetry",
+        "Wynik natychmiast podczas wpisywania – bez klikania",
+        "Kopiowanie wyniku do schowka jednym kliknieciem",
+        "Tabela formatow: wizytowka, ulotka DL, A5, A4, A3 w pikselach",
+        "Obliczenia lokalne – dane nie opuszczaja przegladarki",
+        "Wzor: px = mm x DPI / 25,4 (przez precyzyjna stala cala)",
+        "Przyklad obliczania pikseli ze spadami 3 mm",
+        "Dziala na telefonie, tablecie i desktopie bez instalacji"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera mm na px",
@@ -237,27 +251,35 @@
       "items": [
         {
           "question": "Ile pikseli ma 1 mm przy 300 DPI?",
-          "answer": "300 ÷ 25,4 = 11,81 pikseli na milimetr."
+          "answer": "300 / 25,4 = 11,811 pikseli na milimetr. Wzor: px = mm x DPI / 25,4. Przy 96 DPI (ekran): 1 mm = 3,78 px. Przy 72 DPI: 1 mm = 2,835 px."
         },
         {
-          "question": "Jakie wymiary pikseli ma wizytówka?",
-          "answer": "Wizytówka 85 × 55 mm przy 300 DPI = 1 004 × 650 px. Ze spadami 3 mm: 91 × 61 mm = 1 075 × 720 px."
+          "question": "Jakie wymiary pikseli ma wizytowka?",
+          "answer": "Wizytowka polska 90 x 50 mm przy 300 DPI = 1063 x 591 px. Europejska 85 x 55 mm = 1004 x 650 px przy 300 DPI. Ze spadami 3 mm z kazdej strony: wizytowka 91 x 61 mm = 1075 x 720 px."
         },
         {
-          "question": "Co to są spady (bleed)?",
-          "answer": "Dodatkowy margines (zwykle 3–5 mm) wokół projektu, który zostanie obcięty po druku. Zapobiega białym krawędziom."
+          "question": "Co to sa spady (bleed) i ile pikseli dodac?",
+          "answer": "Spad to dodatkowy margines (zwykle 3–5 mm) wokol projektu, ktory zostanie obciety po druku. Zapobiega bialym krawedziom przy niekladnym ciciu. Przy 300 DPI: 3 mm spad = 35 px z kazdej strony. Polskie drukarnie standardowo wymagaja 3 mm spadu."
         },
         {
-          "question": "Jakie DPI ustawić do druku ulotek?",
-          "answer": "300 DPI to standard. Dla dużych formatów (plakaty, banery) 150 DPI może wystarczyć."
+          "question": "Jakie DPI ustawic do druku ulotek?",
+          "answer": "300 DPI to standard dla offsetu i druku cyfrowego – wymagany przez drukarnie internetowe. Dla duzych formatow (plakaty A0, banery) 150 DPI moze wystarczyc. Bilbordy: 30–72 DPI (ogladane z odleglosci kilku metrow)."
         },
         {
           "question": "Ile pikseli ma A4 w milimetrach?",
-          "answer": "A4 = 210 × 297 mm. Przy 300 DPI = 2 480 × 3 508 px. Przy 72 DPI = 595 × 842 px."
+          "answer": "A4 = 210 x 297 mm. Przy 300 DPI = 2480 x 3508 px. Przy 150 DPI = 1240 x 1754 px. Przy 96 DPI (ekran) = 794 x 1123 px. Przy 72 DPI = 595 x 842 px (standardowy format PDF do wydruku domowego)."
         },
         {
-          "question": "Jak obliczyć piksele ze spadami?",
-          "answer": "Dodaj spady (np. 3 mm z każdej strony) do wymiarów i przelicz całość. Wizytówka: (85+6) × (55+6) = 91 × 61 mm."
+          "question": "Jak obliczyc piksele ze spadami?",
+          "answer": "Dodaj spady do wymiarow i przelicz calosc. Wzor: (szerokosc + 2 x spad) x DPI / 25,4. Dla wizytowki 85 x 55 mm ze spadem 3 mm: (85 + 6) x (55 + 6) = 91 x 61 mm. Przy 300 DPI: 1075 x 720 px."
+        },
+        {
+          "question": "Ile pikseli ma ulotka DL przy 300 DPI?",
+          "answer": "Ulotka DL = 99 x 210 mm = 1169 x 2480 px przy 300 DPI. Ze spadami 3 mm: 105 x 216 mm = 1240 x 2551 px. DL to popularny format polskich drukarni – miesci sie w standardowej kopercie C5 zlozona na pol."
+        },
+        {
+          "question": "Jak mm przelicza sie na piksele w Photoshopie?",
+          "answer": "Tworzac nowy dokument w Photoshopie, wybierz jednostke milimetry i wpisz DPI. Program automatycznie obliczy wymiary w pikselach. Dla druku ustaw 300 DPI, dla internetu 72 lub 96 DPI. Mozesz tez zmienic DPI przez Image > Image Size."
         }
       ]
     },

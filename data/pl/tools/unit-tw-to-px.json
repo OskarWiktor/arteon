@@ -2,14 +2,14 @@
   "toolKey": "twToPx",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter Tailwind CSS spacing na piksele",
-    "description": "Przelicz wartości spacing Tailwind CSS na piksele i odwrotnie. Domyślna skala: 1 unit = 4 px. Bez rejestracji.",
+    "title": "Tailwind CSS spacing na piksele – przelicznik klas p-4, m-8, gap",
+    "description": "Przelicz wartosci spacing Tailwind CSS na piksele – wpisz 4 i sprawdz, ze to 16 px. Niezbedny przy pracy z Figma i pixel-perfect layoutami. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-tailwind-css-spacing-na-px"
   },
   "hero": {
-    "title": "Przelicz Tailwind CSS spacing na piksele",
-    "description": "Ten konwerter przelicza wartości spacing z Tailwind CSS na piksele (domyślna skala: 1 unit = 4 px). Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "title": "Sprawdz, ile px ma p-4 i kazda inna klasa Tailwind CSS",
+    "description": "Zamien spacing Tailwind na piksele natychmiast – bez liczenia w glowie, ze p-6 to 24 px, a gap-8 to 32 px.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -24,12 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter Tailwind CSS spacing na piksele",
-      "alternateName": ["Przelicznik Tailwind CSS spacing px", "Kalkulator spacing Tailwind CSS", "Tailwind CSS spacing to pixels"],
+      "name": "Tailwind CSS spacing na piksele – przelicznik klas p-4, m-8, gap",
+      "alternateName": [
+        "Przelicznik Tailwind CSS spacing px",
+        "Kalkulator spacing Tailwind CSS",
+        "Tailwind CSS spacing to pixels"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz wartości spacing Tailwind CSS na piksele i odwrotnie. Domyślna skala: 1 unit = 4 px. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz wartosci spacing Tailwind CSS na piksele – wpisz 4 i sprawdz, ze to 16 px. Niezbedny przy pracy z Figma i pixel-perfect layoutami. Bez rejestracji.",
+      "featureList": [
+        "Przeliczanie wartosci Tailwind spacing na piksele (skala 1 = 4 px)",
+        "Obustronna konwersja: spacing Tailwind na px i px na spacing",
+        "Wynik natychmiast podczas wpisywania – bez klikania",
+        "Kopiowanie wyniku do schowka jednym kliknieciem",
+        "Tabela pelnej skali Tailwind: p-1 do p-96 z wartosciami px",
+        "Obliczenia lokalne – dane nie opuszczaja przegladarki",
+        "Wsparcie dla wartosci polowkowych (p-0.5, p-1.5, p-2.5)",
+        "Przyklad przeliczania wymiarow z Figma na klasy Tailwind",
+        "Dziala na telefonie, tablecie i desktopie bez instalacji"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera Tailwind CSS spacing na px",
@@ -237,27 +251,35 @@
       "items": [
         {
           "question": "Ile px ma p-4 w Tailwind?",
-          "answer": "p-4 = 1 rem = 16 px (przy domyślnym font-size 16 px)."
+          "answer": "p-4 = 1 rem = 16 px (przy domyslnym font-size 16 px). System Tailwind: 1 jednostka = 0,25 rem = 4 px. Szybki wzor: wartosc x 4 = piksele. Dziala to samo dla margin (m-4), gap (gap-4) i innych klas spacing."
         },
         {
-          "question": "Jak obliczyć px z wartości Tailwind?",
-          "answer": "Pomnóż wartość przez 4. Przykład: p-6 = 6 × 4 = 24 px."
+          "question": "Jak obliczyc px z wartosci Tailwind?",
+          "answer": "Pomnoz wartosc przez 4. p-6 = 6 x 4 = 24 px. p-12 = 48 px. p-16 = 64 px. Dla wartosci polowkowych: p-0.5 = 2 px, p-1.5 = 6 px. Konwerter robi to automatycznie, pokazujac rowniez wartosci rem."
         },
         {
-          "question": "Jak użyć niestandardowej wartości?",
-          "answer": "Tailwind obsługuje arbitralne wartości: <code>p-[13px]</code>, <code>w-[500px]</code>, <code>text-[17px]</code>."
+          "question": "Jak uzyc niestandardowej wartosci w Tailwind?",
+          "answer": "Tailwind obsluguje arbitralne wartosci: p-[13px], w-[500px], text-[17px]. Jesli potrzebujesz wartosci spoza standardowej skali, uzyj nawiasow kwadratowych. Mozesz tez rozszerzyc skale w tailwind.config.js w sekcji theme.extend.spacing."
         },
         {
           "question": "Ile to text-xl w pikselach?",
-          "answer": "text-xl = 1,25 rem = 20 px. text-2xl = 1,5 rem = 24 px."
+          "answer": "text-xl = 1,25 rem = 20 px. Pelna skala fontow Tailwind: text-xs = 12 px, text-sm = 14 px, text-base = 16 px, text-lg = 18 px, text-xl = 20 px, text-2xl = 24 px, text-3xl = 30 px, text-4xl = 36 px."
         },
         {
-          "question": "Czy można zmienić bazę spacing?",
-          "answer": "Tak, w tailwind.config.js można nadpisać całą skalę spacing lub dodać nowe wartości."
+          "question": "Czy mozna zmienic baze spacing w Tailwind?",
+          "answer": "Tak, w tailwind.config.js mozesz nadpisac cala skale spacing lub dodac nowe wartosci przez theme.extend.spacing. Jesli zmienisz bazowy font-size projektu, wartosci rem (a tym samym piksele) zmienia sie automatycznie w calym projekcie."
         },
         {
-          "question": "Co to jest gap w Tailwind?",
-          "answer": "gap-4 = 16 px odstępu między elementami w Flexbox/Grid. Działa jak spacing."
+          "question": "Co to jest gap w Tailwind i ile to pikseli?",
+          "answer": "gap-4 = 16 px odstep miedzy elementami w Flexbox lub Grid. Ta sama skala co margin i padding. gap-2 = 8 px, gap-6 = 24 px, gap-8 = 32 px. gap-x kontroluje odstepy poziome, gap-y – pionowe."
+        },
+        {
+          "question": "Jak przeliczyc wymiary z Figma na klasy Tailwind?",
+          "answer": "Podziel wartosc pikseli z Figma przez 4, by uzyskac jednostke Tailwind. 32 px / 4 = 8, wiec uzywasz p-8 lub m-8. Jesli wynik nie jest calkowity (np. 14 px / 4 = 3,5), uzyj p-3.5 lub arbitralnej wartosci p-[14px]."
+        },
+        {
+          "question": "Ile pikseli ma w-full i inne szerokosci Tailwind?",
+          "answer": "w-full = 100% szerokosci rodzica, w-screen = 100vw, w-auto = automatyczna. Numeryczne: w-96 = 384 px (maksymalna w domyslnej skali), w-64 = 256 px, w-32 = 128 px. Powyzej w-96 uzywaj arbitralnych wartosci: w-[500px]."
         }
       ]
     },

@@ -2,14 +2,14 @@
   "toolKey": "emToPx",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter em na px – przelicz jednostki CSS",
-    "description": "Przelicz em na piksele i odwrotnie z regulowanym font-size rodzica. Bez rejestracji.",
+    "title": "Przelicznik em na px – konwerter CSS z ustawianym font-size",
+    "description": "Oblicz piksele z em w CSS – ustaw font-size rodzica i sprawdź wynik od razu. Przydatny przy typografii, paddingu i media queries. Bez instalacji, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-em-na-px"
   },
   "hero": {
-    "title": "Przelicz em na piksele",
-    "description": "Ten konwerter przelicza jednostki em na piksele i odwrotnie. Możesz ustawić font-size elementu nadrzędnego, a wynik pojawi się natychmiast.",
+    "title": "Oblicz piksele z em bez zgadywania i błędów w CSS",
+    "description": "Ustaw font-size rodzica i natychmiast sprawdź, ile pikseli ma 1,5 em lub 0,875 em – bez kalkulatora i ręcznych przeliczeń.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -24,12 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter em na px – przelicz jednostki CSS",
-      "alternateName": ["Przelicznik em na px", "Kalkulator em CSS", "em to pixels"],
+      "name": "Przelicznik em na px – konwerter CSS z ustawianym font-size",
+      "alternateName": [
+        "Przelicznik em na px",
+        "Kalkulator em CSS",
+        "em to pixels"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz em na piksele i odwrotnie z regulowanym font-size rodzica. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Oblicz piksele z em w CSS – ustaw font-size rodzica i sprawdź wynik od razu. Przydatny przy typografii, paddingu i media queries. Bez instalacji, bez rejestracji.",
+      "featureList": [
+        "Regulowany font-size rodzica – ustaw dowolną wartość bazową",
+        "Obustronna konwersja em na px i px na em",
+        "Wynik natychmiast podczas wpisywania – bez klikania",
+        "Kopiowanie wyniku do schowka jednym kliknięciem",
+        "Tabela popularnych wartości em z opisami kontekstowymi",
+        "Obliczenia lokalne – dane nie opuszczają przeglądarki",
+        "Wsparcie dla wartości dziesiętnych (0,875 em, 1,25 em)",
+        "Działa na telefonie, tablecie i desktopie bez instalacji",
+        "Przykłady dla paddingu, line-height i media queries"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera em na px",
@@ -236,28 +250,36 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Ile pikseli ma 1 em?",
-          "answer": "Zależy od font-size rodzica. Przy domyślnym 16 px: 1 em = 16 px."
+          "question": "Ile pikseli ma 1 em?",
+          "answer": "Zależy od font-size rodzica. Przy domyślnym 16 px: 1 em = 16 px. Przy rodzicu 20 px: 1 em = 20 px. Dlatego em jest jednostką relatywną – jej wartość w pikselach zmienia się zależnie od kontekstu elementu nadrzędnego."
         },
         {
           "question": "Jaka jest różnica między em a rem?",
-          "answer": "Em odnosi się do font-size rodzica (zmienia się w kontekście). Rem odnosi się do font-size elementu <code>&lt;html&gt;</code> (stała wartość)."
+          "answer": "Em odnosi się do font-size bezpośredniego rodzica i zmienia się w zależności od kontekstu zagnieżdżenia. Rem zawsze odnosi się do font-size elementu <code>&lt;html&gt;</code> – jest stałe na całej stronie. Do font-size używaj rem, do paddingu i line-height możesz używać em lub rem."
         },
         {
           "question": "Kiedy używać em zamiast rem?",
-          "answer": "Em sprawdza się przy padding i margin, które powinny skalować się z rozmiarem tekstu elementu. Rem jest lepszy do font-size."
+          "answer": "Em sprawdza się przy padding i margin, które powinny skalować się proporcjonalnie do rozmiaru tekstu konkretnego elementu – np. padding przycisku powinien rosnąć razem z etykietą. Rem jest lepszy do font-size, bo nie kumuluje się przy zagnieżdżaniu elementów."
         },
         {
           "question": "Co to jest efekt kumulacji em?",
-          "answer": "Jeśli zagnieżdżone elementy używają font-size w em, każdy kolejny mnoży wartość. Np. 3 poziomy × 1,2 em = 1,728-krotność oryginalnego rozmiaru."
+          "answer": "Jeśli zagnieżdżone elementy używają font-size w em, każdy kolejny poziom mnoży wartość przez współczynnik rodzica. Trzy poziomy po 1,2 em dają 1,2 × 1,2 × 1,2 = 1,728-krotność oryginalnego rozmiaru. To główny powód, dla którego należy używać rem do font-size."
         },
         {
           "question": "Czy em jest lepsze od px w CSS?",
-          "answer": "Em jest elastyczniejsze – skaluje się z tekstem. Piksele są przewidywalne. Wybór zależy od kontekstu."
+          "answer": "Em jest elastyczniejsze – padding w em skaluje się automatycznie przy zmianie font-size elementu. Piksele są przewidywalne i niezależne od kontekstu. W praktyce stosuje się mieszankę: rem do font-size, em do paddingów i line-height, px do borderów i cieni."
         },
         {
           "question": "Jaki line-height ustawiać w em?",
-          "answer": "1,4–1,6 em (lub unitless 1.4–1.6) to zalecany zakres dla tekstu ciągłego. WCAG zaleca minimum 1,5."
+          "answer": "1,4–1,6 em (lub bezjednostkowe 1.4–1.6) to zalecany zakres dla tekstu ciągłego. WCAG 1.4.8 zaleca minimum 1,5. Bezjednostkowy line-height (np. 1.5) jest preferowany – dziedziczy się poprawnie w zagnieżdżonych elementach i unika problemów z kumulacją."
+        },
+        {
+          "question": "Jak em działa w media queries?",
+          "answer": "W media queries em odnosi się do bazowego font-size przeglądarki (zwykle 16 px), nie do elementu nadrzędnego. Breakpoint <code>@media (min-width: 48em)</code> to 768 px. Em w media queries respektuje zoom przeglądarki – layout lepiej reaguje na preferencje użytkownika."
+        },
+        {
+          "question": "Ile em ma domyślny tekst strony?",
+          "answer": "Domyślny font-size przeglądarki to 16 px = 1 em = 1 rem. Jeśli użytkownik zmieni rozmiar czcionki w ustawieniach na 20 px, to 1 em = 20 px na całej stronie – interfejsy oparte na em i rem skalują się automatycznie, co poprawia dostępność (WCAG)."
         }
       ]
     },

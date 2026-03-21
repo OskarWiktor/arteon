@@ -2,14 +2,14 @@
   "toolKey": "ptToPx",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter pt na px – punkty typograficzne na piksele",
-    "description": "Przelicz punkty typograficzne (pt) na piksele (px) i odwrotnie. Konwerter jest przydatny przy projektowaniu stron i dokumentów. Bez rejestracji.",
+    "title": "Przelicznik pt na px – punkty typograficzne na piksele CSS",
+    "description": "Przelicz punkty typograficzne (pt) na piksele – sprawdz, ze 12 pt = 16 px i zlap zwiazek miedzy InDesign, Word a CSS. Dziala w przegladarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-pt-na-px"
   },
   "hero": {
-    "title": "Przelicz punkty na piksele",
-    "description": "Ten konwerter przelicza punkty typograficzne (pt) na piksele (px) i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "title": "Przelicz punkty typograficzne na piksele – od InDesign do CSS",
+    "description": "Znajdz odpowiednik pikseli dla rozmiaru czcionki z Worda lub InDesign – natychmiast, bez wzoru i bez kalkulatora.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -24,12 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter pt na px – punkty typograficzne na piksele",
-      "alternateName": ["Przelicznik pt na px", "Kalkulator punktów na piksele", "Points to pixels"],
+      "name": "Przelicznik pt na px – punkty typograficzne na piksele CSS",
+      "alternateName": [
+        "Przelicznik pt na px",
+        "Kalkulator punktów na piksele",
+        "Points to pixels"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz punkty typograficzne (pt) na piksele (px) i odwrotnie. Konwerter jest przydatny przy projektowaniu stron i dokumentów. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz punkty typograficzne (pt) na piksele – sprawdz, ze 12 pt = 16 px i zlap zwiazek miedzy InDesign, Word a CSS. Dziala w przegladarce, bez rejestracji.",
+      "featureList": [
+        "Przeliczanie punktow typograficznych (pt) na piksele CSS",
+        "Obustronna konwersja pt na px i px na pt",
+        "Wynik natychmiast podczas wpisywania – bez klikania",
+        "Kopiowanie wyniku do schowka jednym kliknieciem",
+        "Tabela popularnych rozmiarow: 9, 10, 11, 12, 14, 18, 24, 36 pt",
+        "Obliczenia lokalne – dane nie opuszczaja przegladarki",
+        "Wzor konwersji: px = pt x (96/72) przy standardowym DPI",
+        "Przyklady dla dokumentow Word, InDesign i Illustrator",
+        "Dziala na telefonie, tablecie i desktopie bez instalacji"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera pt na px",
@@ -237,27 +251,35 @@
       "items": [
         {
           "question": "Ile pikseli ma 12 pt?",
-          "answer": "12 pt = 16 px (przy standardowym 96 DPI). To domyślny rozmiar tekstu w przeglądarkach (1 rem)."
+          "answer": "12 pt = 16 px (przy standardowym 96 DPI). To domyslny rozmiar tekstu w przeglarkach (1 rem). Stalo sie to standardem, bo stary Mac mial 72 DPI (1 pt = 1 px), a Windows przyjal 96 DPI. Proporcja 96/72 = 1,333 to staly mnoznik konwersji."
         },
         {
-          "question": "Jaki jest wzór na przeliczenie pt na px?",
-          "answer": "px = pt × (DPI/72). Przy DPI = 96: px = pt × 1,333."
+          "question": "Jaki jest wzor na przeliczenie pt na px?",
+          "answer": "px = pt x (DPI/72). Przy standardowym DPI = 96: px = pt x 1,333. Odwrotnie: pt = px x (72/DPI) = px x 0,75. Przy 96 DPI: 16 px x 0,75 = 12 pt. Konwerter stosuje te wzory automatycznie."
         },
         {
           "question": "Czy pt i px to to samo na Maku?",
-          "answer": "Na starszych Makach (72 DPI) 1 pt = 1 px. Na Retina proporcja jest inna, ale CSS nadal używa 96 DPI."
+          "answer": "Na klasycznych Makach (72 DPI) 1 pt = 1 px – stad tradycja. Nowoczesne Maki Retina maja fizycznie wyzsze PPI, ale CSS nadal uzywa logicznych 96 DPI (tak jak Windows). Dlatego 12 pt = 16 px rowniez na Macu w CSS."
         },
         {
           "question": "Ile pt to 1 rem?",
-          "answer": "1 rem = 16 px = 12 pt (przy domyślnym font-size 16 px i 96 DPI)."
+          "answer": "1 rem = 16 px = 12 pt (przy domyslnym font-size 16 px i 96 DPI). Przydatne przy konwersji dokumentow Word lub InDesign na CSS: tekst 12 pt to font-size: 1rem – domyslna wielkosc przegladarki i zalecany minimum WCAG."
         },
         {
-          "question": "Jaki rozmiar czcionki powinienem użyć na stronie?",
-          "answer": "Minimum 16 px (12 pt) dla tekstu podstawowego. WCAG zaleca przynajmniej ten rozmiar dla czytelności."
+          "question": "Jaki rozmiar czcionki powinienem uzyc na stronie?",
+          "answer": "Minimum 16 px (12 pt) dla tekstu podstawowego – to zalecenie WCAG 1.4.3. Wiele nowoczesnych projektow uzywa 18–20 px (13,5–15 pt) dla lepszej czytelnosci na ekranie. Naglowki H1 to typowo 32–48 px (24–36 pt)."
         },
         {
-          "question": "Czy konwerter uwzględnia różne DPI?",
-          "answer": "Konwerter przelicza przy standardowym 96 DPI. Dla innego DPI użyj wzoru: px = pt × (DPI/72)."
+          "question": "Jak wielkosc czcionki w Word przelicza sie na CSS?",
+          "answer": "Word uzywa punktow: 12 pt = 16 px, 14 pt = 18,67 px, 18 pt = 24 px, 24 pt = 32 px, 36 pt = 48 px. Przy eksporcie dokumentu do HTML lub tworzeniu odpowiadajacej strony internetowej uzywaj wzoru: px = pt x 1,333."
+        },
+        {
+          "question": "Ile pt to 72 pt?",
+          "answer": "72 pt = 96 px przy 96 DPI – to dokladnie 1 cal na ekranie. Stalo sie standardem poligrafii, bo 72 pt = 1 cal jest podstawa systemu typograficznego. W CSS: 1in = 96px, wiec 72pt = 1in = 96px."
+        },
+        {
+          "question": "Czym roznia sie punkty a piksele w druku i na ekranie?",
+          "answer": "Punkt typograficzny (pt) jest jednostka fizyczna – 1 pt = 0,353 mm, niezaleznie od rozdzielczosci urzadzenia. Piksel jest jednostka ekranowa – jego fizyczny rozmiar zalezy od DPI ekranu. Przy druku 300 DPI: 1 px = 0,085 mm. Przy ekranie 96 DPI: 1 px = 0,265 mm."
         }
       ]
     },

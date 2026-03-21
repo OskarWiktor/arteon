@@ -2,14 +2,14 @@
   "toolKey": "cmToPxDpi",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter cm na piksele (DPI) – centymetry na px",
-    "description": "Przelicz centymetry na piksele z regulowanym DPI. Konwerter jest przydatny przy przygotowywaniu grafik do druku. Bez rejestracji.",
+    "title": "Przelicznik cm na piksele (DPI) – centymetry na px do druku",
+    "description": "Przelicz centymetry na piksele z regulowanym DPI – A4 przy 300 DPI to 2480 x 3508 px. Niezbedny przy przygotowaniu grafik do polskich drukarni. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-cm-na-px"
   },
   "hero": {
-    "title": "Przelicz centymetry na piksele",
-    "description": "Ten konwerter przelicza centymetry na piksele z uwzględnieniem DPI. Jest szczególnie przydatny przy przygotowywaniu grafik do druku.",
+    "title": "Przelicz centymetry na piksele z dowolnym DPI – druk i ekran",
+    "description": "Wpisz wymiary w centymetrach, ustaw DPI drukarni i natychmiast sprawdz liczbe pikseli – bez przeliczen przez cal i bez arkusza kalkulacyjnego.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -24,12 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter cm na piksele (DPI) – centymetry na px",
-      "alternateName": ["Przelicznik cm na px", "Kalkulator cm na piksele", "cm to pixels DPI"],
+      "name": "Przelicznik cm na piksele (DPI) – centymetry na px do druku",
+      "alternateName": [
+        "Przelicznik cm na px",
+        "Kalkulator cm na piksele",
+        "cm to pixels DPI"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz centymetry na piksele z regulowanym DPI. Konwerter jest przydatny przy przygotowywaniu grafik do druku. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz centymetry na piksele z regulowanym DPI – A4 przy 300 DPI to 2480 x 3508 px. Niezbedny przy przygotowaniu grafik do polskich drukarni. Bez rejestracji.",
+      "featureList": [
+        "Regulowane DPI – 72, 96, 150, 300 lub dowolna wartosc",
+        "Obustronna konwersja: centymetry na px i px na centymetry",
+        "Wynik natychmiast podczas wpisywania – bez klikania",
+        "Kopiowanie wyniku do schowka jednym kliknieciem",
+        "Tabela formatow A4, A3, A5 i wizytowki w pikselach przy 300 DPI",
+        "Obliczenia lokalne – dane nie opuszczaja przegladarki",
+        "Wzor: px = cm x DPI / 2,54 (przez precyzyjna stala cala)",
+        "Przyklady DPI dla druku, ekranu, plakatu i bilbordu",
+        "Dziala na telefonie, tablecie i desktopie bez instalacji"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera cm na px",
@@ -237,27 +251,35 @@
       "items": [
         {
           "question": "Ile pikseli ma 1 cm przy 300 DPI?",
-          "answer": "300 ÷ 2,54 = 118,11 pikseli na centymetr."
+          "answer": "300 / 2,54 = 118,11 pikseli na centymetr. Wzor: px = cm x DPI / 2,54. Przy 96 DPI (ekran): 1 cm = 37,8 px. Przy 72 DPI (stary standard): 1 cm = 28,35 px."
         },
         {
-          "question": "Jakie DPI ustawić do druku?",
-          "answer": "300 DPI to standard dla druku fotograficznego i offsetowego. 150 DPI wystarczy do plakatów i ulotek."
+          "question": "Jakie DPI ustawic do druku?",
+          "answer": "300 DPI to standard dla druku fotograficznego i offsetowego – wymagany przez wiekszosc polskich drukarni. 150 DPI wystarczy do plakatow i ulotek ogladalnych z odleglosci powyzej 1 m. Bilbordy: 30–72 DPI (ogladane z kilku metrow)."
         },
         {
           "question": "Ile pikseli ma A4 przy 300 DPI?",
-          "answer": "A4 (21 × 29,7 cm) = 2 480 × 3 508 px przy 300 DPI."
+          "answer": "A4 (21 x 29,7 cm) = 2480 x 3508 px przy 300 DPI. Przy 150 DPI: 1240 x 1754 px. Przy 96 DPI (ekran): 794 x 1123 px. Przy 72 DPI (stary standard): 595 x 842 px – popularny format PDF."
         },
         {
-          "question": "Jakie DPI do grafik na stronę internetową?",
-          "answer": "72–96 DPI. Większe DPI to większy plik bez widocznej poprawy jakości na ekranie."
+          "question": "Jakie DPI do grafik na strone internetowa?",
+          "answer": "72–96 DPI. Wieksze DPI to wiekszy plik bez widocznej poprawy jakosci na ekranie – monitor i tak wyswietla okreslona liczbe pikseli fizycznych. Dla ekranow Retina przygotowuj grafiki o podwojonej liczbie pikseli, ale wciaz zapisuj je jako 72 DPI."
         },
         {
-          "question": "Czy DPI wpływa na jakość zdjęcia?",
-          "answer": "DPI określa gęstość pikseli w druku. Jakość zdjęcia zależy od całkowitej liczby pikseli (rozdzielczości)."
+          "question": "Czy DPI wplywa na jakosc zdjecia?",
+          "answer": "DPI okresla gestosc pikseli w druku – ile punktow farby przypada na cal. Jakosc zdjecia zalezy od calkowitej liczby pikseli (rozdzielczosci). Zdjecie 6000 x 4000 px mozna wydrukowac 20 x 13 cm przy 300 DPI lub 50 x 33 cm przy 120 DPI."
         },
         {
           "question": "Co to jest DPI vs PPI?",
-          "answer": "DPI (dots per inch) dotyczy druku, PPI (pixels per inch) dotyczy ekranów. W praktyce często używa się ich zamiennie."
+          "answer": "DPI (dots per inch) to gestosc punktow farby w druku – parametr drukarki. PPI (pixels per inch) to gestosc pikseli na ekranie – parametr monitora. W branzy graficznej czesto uzywamy ich zamiennie, ale DPI jest poprawne dla druku, PPI dla ekranow."
+        },
+        {
+          "question": "Ile pikseli ma wizytowka przy 300 DPI?",
+          "answer": "Wizytowka europejska (85 x 55 mm = 8,5 x 5,5 cm): 1004 x 650 px przy 300 DPI. Wizytowka polska (90 x 50 mm = 9 x 5 cm): 1063 x 591 px. Ze spadami 3 mm z kazdej strony dodaj ok. 35 px do kazdej krawedzi."
+        },
+        {
+          "question": "Jak przeliczyc centymetry na piksele ze spadami?",
+          "answer": "Dodaj spady (zwykle 0,3 cm z kazdej strony) do wymiarow i przelicz calosc. Dla A4 ze spadami: (21 + 0,6) x (29,7 + 0,6) = 21,6 x 30,3 cm. Przy 300 DPI: 2551 x 3579 px. Polskie drukarnie wymagaja zazwyczaj spad 3–5 mm."
         }
       ]
     },

@@ -2,14 +2,14 @@
   "toolKey": "inchesToPxDpi",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter cali na piksele (DPI) – inches to px",
-    "description": "Przelicz cale na piksele z regulowanym DPI. Konwerter jest przydatny dla formatów amerykańskich (Letter, Legal). Bez rejestracji.",
+    "title": "Przelicznik cali na piksele (DPI) – inches na px, Letter, 4x6",
+    "description": "Przelicz cale na piksele z regulowanym DPI – Letter 8,5 x 11 cali to 2550 x 3300 px przy 300 DPI. Niezbedny do druku foto i dokumentow US. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-cale-na-px"
   },
   "hero": {
-    "title": "Przelicz cale na piksele",
-    "description": "Ten konwerter przelicza cale na piksele z uwzględnieniem DPI. Jest szczególnie przydatny przy amerykańskich formatach druku.",
+    "title": "Przelicz cale na piksele – formaty US Letter, 4x6 i inne",
+    "description": "Wpisz wymiary w calach, ustaw DPI i sprawdz wymagana liczbe pikseli – niezbedne przy drukowaniu zdjec 4x6 cali i dokumentow w formacie Letter.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -24,12 +24,26 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter cali na piksele (DPI) – inches to px",
-      "alternateName": ["Przelicznik cali na px", "Kalkulator inches to pixels", "Zamiana cali na piksele"],
+      "name": "Przelicznik cali na piksele (DPI) – inches na px, Letter, 4x6",
+      "alternateName": [
+        "Przelicznik cali na px",
+        "Kalkulator inches to pixels",
+        "Zamiana cali na piksele"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz cale na piksele z regulowanym DPI. Konwerter jest przydatny dla formatów amerykańskich (Letter, Legal). Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz cale na piksele z regulowanym DPI – Letter 8,5 x 11 cali to 2550 x 3300 px przy 300 DPI. Niezbedny do druku foto i dokumentow US. Bez rejestracji.",
+      "featureList": [
+        "Regulowane DPI – 72, 96, 150, 300 lub dowolna wartosc",
+        "Obustronna konwersja: cale na px i px na cale",
+        "Wynik natychmiast podczas wpisywania – bez klikania",
+        "Kopiowanie wyniku do schowka jednym kliknieciem",
+        "Tabela formatow: 4x6, 5x7, 8x10, Letter, Legal w pikselach",
+        "Obliczenia lokalne – dane nie opuszczaja przegladarki",
+        "Wzor: px = cale x DPI (najprostsza konwersja fizyczna)",
+        "Przyklad obliczania PPI monitora z przekatnej w calach",
+        "Dziala na telefonie, tablecie i desktopie bez instalacji"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera cale na px",
@@ -237,27 +251,35 @@
       "items": [
         {
           "question": "Ile pikseli ma 1 cal przy 300 DPI?",
-          "answer": "Dokładnie 300 px. To najprostszy przelicznik: px = cale × DPI."
+          "answer": "Dokladnie 300 px. To najprostszy przelicznik: px = cale x DPI. 1 cal przy 96 DPI (ekran) = 96 px. 1 cal przy 72 DPI = 72 px. Dlatego 1 cal w CSS jest zdefiniowany jako 96 px – odpowiada standardowi ekranowemu Windows."
         },
         {
           "question": "Jakie wymiary pikseli ma format Letter?",
-          "answer": "Letter (8,5 × 11″) przy 300 DPI = 2 550 × 3 300 px."
+          "answer": "Letter (8,5 x 11 cali) przy 300 DPI = 2550 x 3300 px. Przy 96 DPI = 816 x 1056 px. Letter to standard w USA i Kanadzie zamiast A4 (210 x 297 mm). Letter jest nieco szerszy i krotszy od A4."
         },
         {
           "question": "Ile pikseli ma cal w CSS?",
-          "answer": "96 px. W CSS 1 cal jest zdefiniowany jako 96 px, niezależnie od fizycznego DPI ekranu."
+          "answer": "96 px. W CSS 1 cal jest zdefiniowany jako 96 px, niezaleznie od fizycznego DPI ekranu. Mozesz pisac width: 1in w CSS i zawsze uzyskasz 96 px – niezaleznie od tego, czy monitor ma 72, 96 czy 220 PPI."
         },
         {
-          "question": "Jak obliczyć PPI monitora?",
-          "answer": "Oblicz przekątną w pikselach (√(szer²+wys²)) i podziel przez przekątną w calach. Przykład: 27″ 4K = √(3840²+2160²)/27 = 163 PPI."
+          "question": "Jak obliczyc PPI monitora?",
+          "answer": "Oblicz przekatna w pikselach (pierwiastek z szer^2 + wys^2) i podziel przez przekatna w calach. Przyklad: monitor 27 cali 4K (3840 x 2160 px): pierwiastek(3840^2 + 2160^2) = 4405 px. PPI = 4405 / 27 = 163 PPI."
         },
         {
-          "question": "Jaka rozdzielczość wystarczy do druku zdjęć?",
-          "answer": "Minimum 200 DPI, optymalnie 300 DPI. Zdjęcie 4×6″ przy 300 DPI wymaga co najmniej 1 200×1 800 px."
+          "question": "Jaka rozdzielczosc wystarczy do druku zdjec?",
+          "answer": "Minimum 200 DPI, optymalnie 300 DPI dla profesjonalnego druku. Odbitka 4 x 6 cali (10 x 15 cm) przy 300 DPI wymaga co najmniej 1200 x 1800 px. Przy 200 DPI wystarczy 800 x 1200 px – akceptowalne dla druku domowego."
         },
         {
           "question": "Czy DPI i PPI to to samo?",
-          "answer": "DPI dotyczy druku (dots), PPI dotyczy ekranów (pixels). W kontekście grafiki cyfrowej używa się ich zamiennie."
+          "answer": "DPI (dots per inch) dotyczy druku i oznacza gestosc punktow farby drukowanych przez drukarke. PPI (pixels per inch) dotyczy ekranow i oznacza gestosc pikseli na monitorze lub aparacie. W kontekscie przygotowania plikow graficznych uzywamy ich zamiennie."
+        },
+        {
+          "question": "Ile pikseli ma zdjecie 4x6 cali przy 300 DPI?",
+          "answer": "Odbitka 4 x 6 cali przy 300 DPI = 1200 x 1800 px. Przy 200 DPI = 800 x 1200 px. Format 4 x 6 cali (10 x 15 cm) to najpopularniejszy rozmiar odbitek fotograficznych w Polsce i USA."
+        },
+        {
+          "question": "Jak cale maja sie do centrymetrow przy druku?",
+          "answer": "1 cal = 2,54 cm. Przy 300 DPI: 1 cal = 300 px, 1 cm = 118 px, 1 mm = 11,8 px. Format A4 (21 x 29,7 cm) = 8,27 x 11,69 cali = 2480 x 3508 px przy 300 DPI. Europejskie drukarnie uzywaja mm, amerykanskie – cali."
         }
       ]
     },
