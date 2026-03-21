@@ -121,7 +121,7 @@ export default function HomePage() {
       <HomePageSchemas />
       <HeroBanner
         title="Rozwiń swoją markę z nami"
-        description="Arteon to miejsce, które pomoże Ci rozwinąć firmę online i offline"
+        description="Międzynarodowy standard jakości dla małych i średnich przedsiębiorstw"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
         variant="center"
