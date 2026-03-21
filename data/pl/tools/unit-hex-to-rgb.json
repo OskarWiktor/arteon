@@ -2,14 +2,14 @@
   "toolKey": "hexToRgb",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter HEX na RGB – przelicz kolory",
-    "description": "Przelicz kolory HEX na RGB i odwrotnie. Konwerter jest przydatny w CSS i projektowaniu stron internetowych. Bez rejestracji.",
+    "title": "Konwerter HEX na RGB – przelicz kolory CSS w sekundy",
+    "description": "Przelicz kolory HEX na RGB i odwrotnie. Przydatny przy sprawdzaniu kontrastu WCAG, pracy z Figma i budowaniu systemów projektowych. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-hex-na-rgb"
   },
   "hero": {
-    "title": "Przelicz kolory HEX na RGB",
-    "description": "Ten konwerter przelicza kolory z formatu HEX na RGB i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "title": "Kolory HEX i RGB – jeden konwerter do CSS, Figmy i sprawdzania kontrastu",
+    "description": "HEX z Figmy zamieniaj na RGB do obliczeń WCAG i arkuszy CSS. Przelicz w obu kierunkach natychmiast – bez instalacji, bez logowania.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -28,12 +28,12 @@
       "alternateName": ["Przelicznik kolorów HEX RGB", "Kalkulator HEX na RGB", "Konwerter kolorów CSS"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz kolory HEX na RGB i odwrotnie. Konwerter jest przydatny w CSS i projektowaniu stron internetowych. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz kolory HEX na RGB i odwrotnie. Przydatny przy sprawdzaniu kontrastu WCAG, pracy z Figma i budowaniu systemów projektowych. Bez rejestracji.",
+      "featureList": ["Konwersja HEX na RGB w czasie rzeczywistym", "Konwersja RGB na HEX jednym kliknięciem", "Obsługa skróconego zapisu HEX (np. #FFF)", "Obsługa kodu HEX z alfa (8-znakowy, np. #3B82F680)", "Kopiowanie wynikowego kodu RGB lub HEX do schowka", "Obliczenia lokalne – brak wysyłania danych na serwer", "Tabela popularnych kolorów CSS z wartościami HEX i RGB", "Wsparcie dla obliczeń kontrastu WCAG (wymaga wartości RGB)", "Brak instalacji i rejestracji – gotowe do użycia natychmiast"]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera HEX na RGB",
-      "description": "Instrukcja użycia: hex na rgb.",
+      "description": "Jak przeliczyć kod koloru HEX na wartości RGB w przeglądarce: wpisz kod HEX (np. #3B82F6), odczytaj wartości R, G, B i skopiuj do CSS lub kalkulatora kontrastu WCAG.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiCodeSSlashLine",
-          "title": "CSS / HTML",
-          "description": "Konwertuj <code>#3B82F6</code> na <code>rgb(59, 130, 246)</code> w arkuszach stylów."
+          "title": "CSS i arkusze stylów",
+          "description": "Figma i Sketch eksportują kolory w formacie HEX. CSS obsługuje oba zapisy, ale funkcje jak <code>color-mix()</code> i obliczenia kanałów wymagają RGB. Przeliczając <code>#3B82F6</code> na <code>rgb(59, 130, 246)</code>, zyskujesz pełną elastyczność w arkuszach CSS i zmiennych custom properties."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Projektowanie UI",
-          "description": "Eksport kolorów z Figma/Sketch na wartości CSS."
+          "title": "Przepływ pracy Figma – CSS",
+          "description": "Polskie agencje projektowe pracują głównie w Figma, gdzie kolory podawane są jako HEX. Przekazując projekt frontendowcowi, kolor HEX trzeba zamienić na RGB do arkuszy CSS lub na HSL do budowania palet. Ten konwerter przyspiesza ten przepływ pracy bez wychodzenia z przeglądarki."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Dostępność",
-          "description": "Obliczanie kontrastu WCAG wymaga wartości RGB."
+          "title": "Dostępność WCAG i audit kontrastu",
+          "description": "Standardy dostępności WCAG 2.1 wymagają minimalnego kontrastu 4,5:1 dla tekstu. Algorytm liczenia względnej luminancji operuje na wartościach RGB, nie HEX. Przeliczając kolor HEX na RGB, możesz ręcznie zweryfikować kontrast lub wkleić wartości do kalkulatora kontrastu. Ważne w projektach dla instytucji publicznych w Polsce."
         },
         {
           "icon": "RiBrushLine",
-          "title": "Palety kolorów",
-          "description": "Modyfikowanie poszczególnych kanałów (R, G, B) do tworzenia wariantów."
+          "title": "Systemy projektowe i tokeny kolorów",
+          "description": "Budując design tokens dla polskich startupów lub platform e-commerce, kolory brandowe zwykle definiuje się jako HEX. Konwersja na RGB pozwala używać ich w CSS custom properties z przezroczystością: <code>rgba(var(--color-primary), 0.5)</code>. Przeliczenie wszystkich kolorów brandowych zajmuje sekundy."
         }
       ]
     },
@@ -258,6 +258,14 @@
         {
           "question": "Czy RGB i HEX dają ten sam kolor?",
           "answer": "Tak, to dwa różne zapisy tego samego koloru. <code>#FF0000</code> i <code>rgb(255, 0, 0)</code> to identyczna czerwień."
+        },
+        {
+          "question": "Jak używać koloru HEX z przezroczystością w CSS?",
+          "answer": "W nowoczesnym CSS możesz użyć zapisu <code>rgb(59 130 246 / 50%)</code> lub <code>rgba(59, 130, 246, 0.5)</code>. W HEX przezroczystość dodajesz jako 8. i 9. znak: <code>#3B82F680</code> (80 hex = 50%). CSS custom properties z RGB pozwalają też na dynamiczne ustawianie przezroczystości."
+        },
+        {
+          "question": "Dlaczego Figma używa HEX, a CSS pozwala na oba?",
+          "answer": "Figma i narzędzia projektowe preferują HEX, bo jest krótki i powszechnie rozpoznawalny. CSS obsługuje HEX, RGB i HSL zamiennie – wybór formatu to kwestia preferencji. W systemach projektowych polskie agencje często mieszają oba zapisy: HEX w tokenach, RGB do obliczeń i przezroczystości."
         }
       ]
     },

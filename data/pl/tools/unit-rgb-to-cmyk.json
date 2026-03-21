@@ -2,14 +2,14 @@
   "toolKey": "rgbToCmyk",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter RGB na CMYK – kolory ekranowe na druk",
-    "description": "Przelicz kolory RGB na CMYK i odwrotnie. Konwerter jest przydatny przy przygotowywaniu grafik do druku. Bez rejestracji.",
+    "title": "Konwerter RGB na CMYK – kolory ekranowe na druk offsetowy",
+    "description": "Przelicz kolory RGB na CMYK przed wysłaniem projektu do drukarni. Sprawdź wartości tuszów dla wizytówek, ulotek i katalogów. Bez rejestracji, działa w przeglądarce.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-rgb-na-cmyk"
   },
   "hero": {
-    "title": "Przelicz kolory RGB na CMYK",
-    "description": "Ten konwerter przelicza kolory z przestrzeni ekranowej (RGB) na drukarską (CMYK) i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "title": "RGB na CMYK – sprawdź kolory druku zanim trafią do drukarni",
+    "description": "Zanim wyślesz projekt do drukarni, sprawdź wartości CMYK. Unikniesz rozczarowania, gdy ekranowy niebieski wyjdzie matowo na wizytówce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -28,12 +28,12 @@
       "alternateName": ["Przelicznik RGB CMYK", "Kalkulator kolorów do druku", "RGB to CMYK converter"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz kolory RGB na CMYK i odwrotnie. Konwerter jest przydatny przy przygotowywaniu grafik do druku. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz kolory RGB na CMYK przed wysłaniem projektu do drukarni. Sprawdź wartości tuszów dla wizytówek, ulotek i katalogów. Bez rejestracji, działa w przeglądarce.",
+      "featureList": ["Konwersja RGB na CMYK w czasie rzeczywistym", "Konwersja CMYK na RGB jednym kliknięciem", "Wyniki w procentach tuszów C, M, Y, K (0–100%)", "Kopiowanie wartości CMYK do schowka", "Obliczenia lokalne – brak wysyłania danych na serwer", "Informacja o kolorach poza zakresem gamut CMYK", "Tabela referencyjnych kolorów z wartościami RGB i CMYK", "Obsługa wartości całkowitych i dziesiętnych", "Brak instalacji i rejestracji – gotowe do użycia natychmiast"]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera RGB na CMYK",
-      "description": "Instrukcja użycia: rgb na cmyk.",
+      "description": "Jak przeliczyć kolor ekranowy RGB na wartości druku CMYK: wpisz wartości R, G, B (0–255), odczytaj procenty tuszów C, M, Y, K i przekaż do drukarni lub oprogramowania DTP.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "Przygotowanie do druku",
-          "description": "Sprawdź wartości CMYK przed wysłaniem projektu do drukarni."
+          "title": "Przygotowanie materiałów do drukarni",
+          "description": "Polskie drukarnie offsetowe (np. przy zamówieniach wizytówek, ulotek reklamowych czy katalogów produktowych) wymagają plików w przestrzeni CMYK. Zanim zlecisz druk, sprawdź wartości tuszów dla wszystkich kolorów projektu. Czerwień RGB (255, 0, 0) to w CMYK wartości 0%, 100%, 100%, 0% – to ważna informacja przed finalną weryfikacją."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Weryfikacja kolorów",
-          "description": "Czy kolor RGB mieści się w zakresie CMYK? Sprawdź przed drukiem."
+          "title": "Kolory brandowe i identyfikacja wizualna",
+          "description": "Agencje marketingowe w Polsce projektują logo i identyfikację wizualną w RGB (na ekranie), ale kolory muszą być spójne w druku. Konwertując kolory brandowe z RGB na CMYK, możesz sprawdzić, czy Twój odcień niebieskiego lub zielonego w ogóle jest możliwy do odwzorowania na papierze. Jaskrawe kolory poza gamut CMYK wyglądają blado w druku offsetowym."
         },
         {
           "icon": "RiBookOpenLine",
-          "title": "Materiały brandingowe",
-          "description": "Dopasuj kolory firmowe do druku: wizytówki, ulotki, katalogi."
+          "title": "DTP i prepress – weryfikacja przed wysyłką",
+          "description": "Graficy DTP w Polsce pracują w Adobe InDesign i Illustrator, gdzie konwersja do CMYK uwzględnia profil ICC (najczęściej Fogra39 dla druku offsetowego). Ten konwerter daje orientacyjne wartości CMYK bez oprogramowania Adobe – wystarczy do szybkiego sprawdzenia, czy kolor jest w bezpiecznym zakresie przed przekazaniem pliku do prepressu."
         },
         {
           "icon": "RiImageLine",
-          "title": "Fotografia",
-          "description": "Konwersja zdjęć z RGB na CMYK przed drukiem fotoksiążek."
+          "title": "Fotografia i fotoksiążki",
+          "description": "Zdjęcia cyfrowe zapisane są w RGB. Przed drukiem w zakładach fotograficznych lub przy zamówieniu fotoksiążki, warto wiedzieć, jak kolory zdjęcia zmienią się po konwersji na CMYK. Szczególnie dotyczy to nasyconych błękitów nieba i intensywnych zieleni – te kolory leżą na granicy gamutu CMYK i mogą wyjść mniej żywo."
         }
       ]
     },
@@ -258,6 +258,14 @@
         {
           "question": "Jaki format pliku do druku?",
           "answer": "PDF/X-1a lub PDF/X-4 z osadzonymi profilami ICC i kolorami w CMYK."
+        },
+        {
+          "question": "Jakich wartości CMYK używa się dla czystej czerni w druku?",
+          "answer": "Czysty K100 (C0 M0 Y0 K100) daje matową, nieco szarawą czerń. Polskie drukarnie offsetowe często wymagają 'rich black': C60 M40 Y40 K100 – daje głębszą, bardziej nasyconą czerń. Używaj go tylko do dużych powierzchni, nie do małego tekstu (może rozmazać)."
+        },
+        {
+          "question": "Czy wartości CMYK z tego konwertera można podać bezpośrednio drukarni?",
+          "answer": "Wartości orientacyjne – tak. Do profesjonalnego druku offsetowego lepiej użyć konwersji z profilem ICC Fogra39 w Adobe Photoshop lub Illustrator. Ten konwerter daje szybki podgląd wartości tuszów, który wystarczy do wstępnej weryfikacji palety kolorów przed przejściem do programu DTP."
         }
       ]
     },

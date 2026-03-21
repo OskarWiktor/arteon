@@ -2,14 +2,14 @@
   "toolKey": "rgbToHsl",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter RGB na HSL – przelicz kolory",
-    "description": "Przelicz kolory RGB na HSL i odwrotnie. Konwerter jest przydatny w CSS i przy tworzeniu palet kolorów. Bez rejestracji.",
+    "title": "Konwerter RGB na HSL – przelicz kolory CSS natychmiastowo",
+    "description": "Przelicz kolory RGB na HSL i odwrotnie. Niezbędny przy tworzeniu palet CSS, trybu ciemnego i systemów projektowych. Bez rejestracji, działa w przeglądarce.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-rgb-na-hsl"
   },
   "hero": {
-    "title": "Przelicz kolory RGB na HSL",
-    "description": "Ten konwerter przelicza kolory z formatu RGB na HSL i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "title": "Kolory CSS w formacie HSL – twórz palety i tryb ciemny bez wysiłku",
+    "description": "HSL pozwala budować palety kolorów przez zmianę jednego parametru. Przelicz RGB na HSL i projektuj spójne systemy kolorów w CSS.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -28,12 +28,12 @@
       "alternateName": ["Przelicznik RGB na HSL", "Kalkulator kolorów HSL", "RGB to HSL converter"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz kolory RGB na HSL i odwrotnie. Konwerter jest przydatny w CSS i przy tworzeniu palet kolorów. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz kolory RGB na HSL i odwrotnie. Niezbędny przy tworzeniu palet CSS, trybu ciemnego i systemów projektowych. Bez rejestracji, działa w przeglądarce.",
+      "featureList": ["Konwersja RGB na HSL w czasie rzeczywistym", "Konwersja HSL na RGB jednym kliknięciem", "Kopiowanie wynikowego kodu HSL do schowka", "Obliczenia lokalne – brak wysyłania danych na serwer", "Obsługa wartości całkowitych i dziesiętnych", "Tabela referencyjnych kolorów HSL dla Tailwind CSS", "Wsparcie dla trybu ciemnego – szybka zmiana parametru L", "Kompatybilność z wszystkimi nowoczesnymi przeglądarkami", "Brak instalacji i rejestracji – gotowe do użycia natychmiast"]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera RGB na HSL",
-      "description": "Instrukcja użycia: rgb na hsl.",
+      "description": "Jak przeliczyć kolor RGB na HSL w przeglądarce: wpisz wartości R, G, B (0–255), odczytaj wynik HSL i skopiuj do arkusza CSS lub narzędzia projektowego.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPaletteLine",
-          "title": "Palety kolorów",
-          "description": "Tworzenie wariantów: zmieniaj L (jasność) przy stałym H i S."
+          "title": "Palety kolorów CSS",
+          "description": "Tworzenie spójnych wariantów koloru jest w HSL proste: ustaw H (odcień) i S (nasycenie), a potem generuj jasne i ciemne warianty zmieniając tylko L. Wynik: L=20% (bardzo ciemny), L=40%, L=50% (bazowy), L=70%, L=90% (bardzo jasny) – pełna skala kolorów bez ręcznych obliczeń RGB."
         },
         {
           "icon": "RiCodeSSlashLine",
-          "title": "CSS",
-          "description": "<code>hsl(217, 91%, 60%)</code> – intuicyjny zapis kolorów."
+          "title": "Systemy projektowe i Tailwind CSS",
+          "description": "Polskie agencje projektowe i startupy używają Tailwind CSS, który historycznie opierał się na paletach HSL. Przeliczając kolory brandowe z RGB na HSL, możesz łatwo rozszerzyć paletę o odcienie 50–950 i zbudować własny system projektowy kompatybilny z Tailwind lub Bootstrap."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Tryb ciemny",
-          "description": "Zmiana L z 95% na 10% tworzy wariant ciemnego motywu."
+          "title": "Tryb ciemny (dark mode)",
+          "description": "Implementacja trybu ciemnego jest najłatwiejsza w HSL. Zamiast definiować osobny zestaw kolorów RGB, wystarczy zmienić parametr L: jasny motyw L=95%, ciemny motyw L=10%. Polskie aplikacje webowe coraz częściej wymagają dark mode – HSL znacznie skraca czas jego wdrożenia."
         },
         {
           "icon": "RiBrushLine",
-          "title": "Projektowanie",
-          "description": "HSL ułatwia tworzenie spójnych palet: obróć H o 120° = kolor komplementarny."
+          "title": "Kolory komplementarne i harmonia barw",
+          "description": "Projektując identyfikację wizualną dla polskich firm, łatwo wyliczyć kolory komplementarne w HSL: dodaj 180° do H, aby uzyskać kolor dopełniający. Triada to H, H+120°, H+240°. Ta matematyczna regularność jest możliwa tylko w HSL, nie w RGB."
         }
       ]
     },
@@ -258,6 +258,14 @@
         {
           "question": "Co to jest oklch?",
           "answer": "oklch to nowszy format kolorów w CSS (lepiej oddaje percepcję ludzką). Tailwind CSS v4 używa oklch, ale HSL nadal działa wszędzie."
+        },
+        {
+          "question": "Jak używać HSL w Tailwind CSS?",
+          "answer": "Tailwind CSS v3 pozwala definiować kolory jako HSL w konfiguracji: <code>colors: { brand: 'hsl(217, 91%, 60%)' }</code>. Tailwind v4 używa oklch, ale HSL jest w pełni kompatybilne z CSS custom properties we wszystkich wersjach."
+        },
+        {
+          "question": "Jak stworzyć tryb ciemny używając HSL?",
+          "answer": "Zdefiniuj kolory jako HSL custom properties: <code>--bg: hsl(220, 13%, 95%)</code>. W dark mode zmień tylko L: <code>--bg: hsl(220, 13%, 10%)</code>. Dzięki HSL nie musisz redefiniować pełnych wartości RGB dla każdego koloru – zmiana jednego parametru wystarczy."
         }
       ]
     },
