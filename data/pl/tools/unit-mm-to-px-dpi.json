@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Przelicznik mm na piksele (DPI) – milimetry na px do druku",
-    "description": "Przelicz milimetry na piksele z regulowanym DPI – wizytowka 85 x 55 mm to 1004 x 650 px przy 300 DPI. Niezbedny w poligrafii i Photoshopie. Bez rejestracji.",
+    "description": "Przelicz milimetry na piksele z regulowanym DPI – wizytówka 85 x 55 mm to 1004 x 650 px przy 300 DPI. Niezbędny w poligrafii i Photoshopie. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-mm-na-px"
   },
   "hero": {
-    "title": "Przelicz milimetry na piksele – formaty poligraficzne na px",
-    "description": "Wpisz wymiary wizytowki, ulotki lub plakatu w milimetrach, ustaw DPI drukarni i natychmiast sprawdz wymagana liczbe pikseli.",
+    "title": "Milimetry na piksele – formaty A4 i poligraficzne bez ręcznych obliczeń",
+    "description": "Wpisz wymiary wizytówki, ulotki lub plakatu w milimetrach, ustaw DPI drukarni i natychmiast sprawdź wymaganą liczbę pikseli.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -32,17 +32,17 @@
       ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz milimetry na piksele z regulowanym DPI – wizytowka 85 x 55 mm to 1004 x 650 px przy 300 DPI. Niezbedny w poligrafii i Photoshopie. Bez rejestracji.",
+      "description": "Przelicz milimetry na piksele z regulowanym DPI – wizytówka 85 x 55 mm to 1004 x 650 px przy 300 DPI. Niezbędny w poligrafii i Photoshopie. Bez rejestracji.",
       "featureList": [
-        "Regulowane DPI – 72, 96, 150, 300 lub dowolna wartosc",
+        "Regulowane DPI – 72, 96, 150, 300 lub dowolna wartość",
         "Obustronna konwersja: milimetry na px i px na milimetry",
         "Wynik natychmiast podczas wpisywania – bez klikania",
-        "Kopiowanie wyniku do schowka jednym kliknieciem",
-        "Tabela formatow: wizytowka, ulotka DL, A5, A4, A3 w pikselach",
-        "Obliczenia lokalne – dane nie opuszczaja przegladarki",
-        "Wzor: px = mm x DPI / 25,4 (przez precyzyjna stala cala)",
-        "Przyklad obliczania pikseli ze spadami 3 mm",
-        "Dziala na telefonie, tablecie i desktopie bez instalacji"
+        "Kopiowanie wyniku do schowka jednym kliknięciem",
+        "Tabela formatów: wizytówka, ulotka DL, A5, A4, A3 w pikselach",
+        "Obliczenia lokalne – dane nie opuszczają przeglądarki",
+        "Wzór: px = mm x DPI / 25,4 (przez precyzyjną stałą cala)",
+        "Przykład obliczania pikseli ze spadami 3 mm",
+        "Działa na telefonie, tablecie i desktopie bez instalacji"
       ]
     },
     "howTo": {
@@ -73,7 +73,7 @@
     {
       "type": "sectionBasic",
       "title": "Kiedy potrzebne jest przeliczanie milimetrów na piksele?",
-      "html": "<p class=\"text-mid mb-4\">Milimetry to precyzyjna jednostka fizyczna używana w poligrafii, projektowaniu opakowaniach i technice. Przeliczenie na piksele wymaga znajomości DPI.</p><p class=\"text-mid mb-4\">W poligrafii wymiary podaje się w milimetrach – wizytówka (85 × 55 mm), ulotka DL (99 × 210 mm), plakat B2 (500 × 707 mm). Drukarnie wymagają plików w określonej rozdzielczości pikseli.</p><p class=\"text-mid mb-4\">Przy 300 DPI: wizytówka 85 × 55 mm = 1 004 × 650 px. Spady (bleed) 3 mm z każdej strony dodają 35 px.</p><p class=\"text-mid\">Konwerter pozwala ustawić dowolne DPI i precyzyjnie obliczyć wymiary pikseli dla każdego formatu poligraficznego.</p>",
+      "html": "<p class=\"text-mid mb-4\">Milimetry to precyzyjna jednostka fizyczna używana w poligrafii, projektowaniu opakowań i technice. Przeliczenie na piksele wymaga znajomości DPI.</p><p class=\"text-mid mb-4\">W poligrafii wymiary podaje się w milimetrach – wizytówka (85 × 55 mm), ulotka DL (99 × 210 mm), plakat B2 (500 × 707 mm). Drukarnie wymagają plików w określonej rozdzielczości pikseli.</p><p class=\"text-mid mb-4\">Przy 300 DPI: wizytówka 85 × 55 mm = 1 004 × 650 px. Spady (bleed) 3 mm z każdej strony dodają 35 px.</p><p class=\"text-mid\">Konwerter pozwala ustawić dowolne DPI i precyzyjnie obliczyć wymiary pikseli dla każdego formatu poligraficznego.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "mm na px – Arteon"
     },
@@ -115,22 +115,22 @@
         {
           "icon": "RiPrinterLine",
           "title": "Poligrafia",
-          "description": "Wizytówka 85 × 55 mm = 1 004 × 650 px przy 300 DPI."
+          "description": "Wizytówka 85 × 55 mm = 1 004 × 650 px przy 300 DPI."
         },
         {
           "icon": "RiFileTextLine",
           "title": "Ulotki",
-          "description": "Ulotka DL 99 × 210 mm = 1 169 × 2 480 px przy 300 DPI."
+          "description": "Ulotka DL 99 × 210 mm = 1 169 × 2 480 px przy 300 DPI."
         },
         {
           "icon": "RiCropLine",
           "title": "Spady (bleed)",
-          "description": "Oblicz dodatkowe piksele na 3–5 mm spadów wymaganych przez drukarnię."
+          "description": "Oblicz dodatkowe piksele na 3–5 mm spadów wymaganych przez drukarnię."
         },
         {
           "icon": "RiRulerLine",
-          "title": "Projektowanie opakowaniach",
-          "description": "Precyzyjne wymiary etykiet, naklejek i opakowaniach w mm → px."
+          "title": "Projektowanie opakowań",
+          "description": "Precyzyjne wymiary etykiet, naklejek i opakowań w mm → px."
         }
       ]
     },
@@ -181,7 +181,7 @@
     {
       "type": "sectionInfo",
       "title": "Praktyczne wskazówki",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Wizytówka (85 × 55 mm) przy 300 DPI = 1 004 × 650 px (bez spadów).</li><li>Spad 3 mm = 35 px przy 300 DPI. Dodaj z każdej strony.</li><li>A4 (210 × 297 mm) przy 300 DPI = 2 480 × 3 508 px.</li><li>1 mm przy 96 DPI (ekran) = 3,78 px.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Wizytówka (85 × 55 mm) przy 300 DPI = 1 004 × 650 px (bez spadów).</li><li>Spad 3 mm = 35 px przy 300 DPI. Dodaj z każdej strony.</li><li>A4 (210 × 297 mm) przy 300 DPI = 2 480 × 3 508 px.</li><li>1 mm przy 96 DPI (ekran) = 3,78 px.</li></ul>"
     },
     {
       "type": "gap",
@@ -218,24 +218,24 @@
           }
         },
         {
-          "name": "Druk 300 DPI",
+          "name": "Druk 300 DPI",
           "values": {
-            "unit1": "1 mm = 11,81 px",
-            "unit2": "1 px = 0,085 mm"
+            "unit1": "1 mm = 11,81 px",
+            "unit2": "1 px = 0,085 mm"
           }
         },
         {
-          "name": "Ekran 96 DPI",
+          "name": "Ekran 96 DPI",
           "values": {
-            "unit1": "1 mm = 3,78 px",
-            "unit2": "1 px = 0,265 mm"
+            "unit1": "1 mm = 3,78 px",
+            "unit2": "1 px = 0,265 mm"
           }
         },
         {
           "name": "Wizytówka",
           "values": {
-            "unit1": "85 × 55 mm",
-            "unit2": "1 004 × 650 px (300 DPI)"
+            "unit1": "85 × 55 mm",
+            "unit2": "1 004 × 650 px (300 DPI)"
           }
         }
       ]
@@ -251,35 +251,35 @@
       "items": [
         {
           "question": "Ile pikseli ma 1 mm przy 300 DPI?",
-          "answer": "300 / 25,4 = 11,811 pikseli na milimetr. Wzor: px = mm x DPI / 25,4. Przy 96 DPI (ekran): 1 mm = 3,78 px. Przy 72 DPI: 1 mm = 2,835 px."
+          "answer": "300 / 25,4 = 11,811 pikseli na milimetr. Wzór: px = mm x DPI / 25,4. Przy 96 DPI (ekran): 1 mm = 3,78 px. Przy 72 DPI: 1 mm = 2,835 px."
         },
         {
-          "question": "Jakie wymiary pikseli ma wizytowka?",
-          "answer": "Wizytowka polska 90 x 50 mm przy 300 DPI = 1063 x 591 px. Europejska 85 x 55 mm = 1004 x 650 px przy 300 DPI. Ze spadami 3 mm z kazdej strony: wizytowka 91 x 61 mm = 1075 x 720 px."
+          "question": "Jakie wymiary pikseli ma wizytówka?",
+          "answer": "Wizytówka polska 90 x 50 mm przy 300 DPI = 1063 x 591 px. Europejska 85 x 55 mm = 1004 x 650 px przy 300 DPI. Ze spadami 3 mm z każdej strony: wizytówka 91 x 61 mm = 1075 x 720 px."
         },
         {
-          "question": "Co to sa spady (bleed) i ile pikseli dodac?",
-          "answer": "Spad to dodatkowy margines (zwykle 3–5 mm) wokol projektu, ktory zostanie obciety po druku. Zapobiega bialym krawedziom przy niekladnym ciciu. Przy 300 DPI: 3 mm spad = 35 px z kazdej strony. Polskie drukarnie standardowo wymagaja 3 mm spadu."
+          "question": "Co to są spady (bleed) i ile pikseli dodać?",
+          "answer": "Spad to dodatkowy margines (zwykle 3–5 mm) wokół projektu, który zostanie obcięty po druku. Zapobiega białym krawędziom przy niedokładnym cięciu. Przy 300 DPI: 3 mm spad = 35 px z każdej strony. Polskie drukarnie standardowo wymagają 3 mm spadu."
         },
         {
-          "question": "Jakie DPI ustawic do druku ulotek?",
-          "answer": "300 DPI to standard dla offsetu i druku cyfrowego – wymagany przez drukarnie internetowe. Dla duzych formatow (plakaty A0, banery) 150 DPI moze wystarczyc. Bilbordy: 30–72 DPI (ogladane z odleglosci kilku metrow)."
+          "question": "Jakie DPI ustawić do druku ulotek?",
+          "answer": "300 DPI to standard dla offsetu i druku cyfrowego – wymagany przez drukarnie internetowe. Dla dużych formatów (plakaty A0, banery) 150 DPI może wystarczyć. Billboardy: 30–72 DPI (oglądane z odległości kilku metrów)."
         },
         {
           "question": "Ile pikseli ma A4 w milimetrach?",
           "answer": "A4 = 210 x 297 mm. Przy 300 DPI = 2480 x 3508 px. Przy 150 DPI = 1240 x 1754 px. Przy 96 DPI (ekran) = 794 x 1123 px. Przy 72 DPI = 595 x 842 px (standardowy format PDF do wydruku domowego)."
         },
         {
-          "question": "Jak obliczyc piksele ze spadami?",
-          "answer": "Dodaj spady do wymiarow i przelicz calosc. Wzor: (szerokosc + 2 x spad) x DPI / 25,4. Dla wizytowki 85 x 55 mm ze spadem 3 mm: (85 + 6) x (55 + 6) = 91 x 61 mm. Przy 300 DPI: 1075 x 720 px."
+          "question": "Jak obliczyć piksele ze spadami?",
+          "answer": "Dodaj spady do wymiarów i przelicz całość. Wzór: (szerokość + 2 x spad) x DPI / 25,4. Dla wizytówki 85 x 55 mm ze spadem 3 mm: (85 + 6) x (55 + 6) = 91 x 61 mm. Przy 300 DPI: 1075 x 720 px."
         },
         {
           "question": "Ile pikseli ma ulotka DL przy 300 DPI?",
-          "answer": "Ulotka DL = 99 x 210 mm = 1169 x 2480 px przy 300 DPI. Ze spadami 3 mm: 105 x 216 mm = 1240 x 2551 px. DL to popularny format polskich drukarni – miesci sie w standardowej kopercie C5 zlozona na pol."
+          "answer": "Ulotka DL = 99 x 210 mm = 1169 x 2480 px przy 300 DPI. Ze spadami 3 mm: 105 x 216 mm = 1240 x 2551 px. DL to popularny format polskich drukarni – mieści się w standardowej kopercie C5 złożona na pół."
         },
         {
-          "question": "Jak mm przelicza sie na piksele w Photoshopie?",
-          "answer": "Tworzac nowy dokument w Photoshopie, wybierz jednostke milimetry i wpisz DPI. Program automatycznie obliczy wymiary w pikselach. Dla druku ustaw 300 DPI, dla internetu 72 lub 96 DPI. Mozesz tez zmienic DPI przez Image > Image Size."
+          "question": "Jak mm przelicza się na piksele w Photoshopie?",
+          "answer": "Tworząc nowy dokument w Photoshopie, wybierz jednostkę milimetry i wpisz DPI. Program automatycznie obliczy wymiary w pikselach. Dla druku ustaw 300 DPI, dla internetu 72 lub 96 DPI. Możesz też zmienić DPI przez Image > Image Size."
         }
       ]
     },
