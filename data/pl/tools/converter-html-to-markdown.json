@@ -2,14 +2,14 @@
   "toolKey": "htmlToMarkdown",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter HTML na Markdown - darmowy, bez rejestracji",
-    "description": "Zamień kod HTML na czytelny Markdown. Idealny do dokumentacji, blogów i repozytoriów. Bez rejestracji - konwersja lokalna w przeglądarce.",
+    "title": "HTML na Markdown – konwerter dla GitHub, Notion i Obsidian",
+    "description": "Zamień kod HTML na czytelny Markdown dla GitHub Wiki, Notion i generatorów statycznych. Działa w przeglądarce bez rejestracji – dane zostają na komputerze.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-html-na-markdown"
   },
   "hero": {
-    "title": "Zamień kod HTML na czytelny Markdown",
-    "description": "Wklej kod HTML, a narzędzie zamieni go na czytelny tekst w formacie Markdown. Konwersja odbywa się lokalnie w przeglądarce.",
+    "title": "HTML na Markdown – migracja treści z CMS do repozytorium Git",
+    "description": "Przenosisz treści z WordPressa do Notion lub Git? Konwerter usuwa tagi HTML, dając Markdown gotowy do README.md – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter HTML na Markdown online. Zamień dane HTML na Markdown w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja HTML na Markdown", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
+      "featureList": ["Konwersja tagów semantycznych HTML (h1–h6, p, ul, ol, a, img, code, table) na składnię Markdown", "Obsługa tabel HTML jako tabel GFM (GitHub Flavored Markdown)", "Konwersja bloków kodu <pre><code> na ogrodzenia potrójnymi grawisami", "Usuwanie tagów strukturalnych (div, span, section) z zachowaniem treści", "Usuwanie inline CSS i klas – wynik to czysty tekst Markdown", "Zachowanie zagnieżdżonych list numerowanych i nienumerowanych", "Konwersja linków i obrazów HTML na składnię Markdown", "Obsługa cytatów blockquote i wyróżnień (strong, em, del)", "Przetwarzanie lokalne – dane nie opuszczają przeglądarki", "Pobieranie wyniku jako plik .md"]
     },
     "howTo": {
       "name": "Jak zamienić HTML na Markdown online",
@@ -100,22 +100,22 @@
         {
           "icon": "RiGitBranchLine",
           "title": "Dokumentacja GitHub / GitLab",
-          "description": "README.md, wiki i dokumentacja techniczna na GitHubie/GitLabie używają Markdown. Konwersja HTML pozwala szybko przenieść istniejącą dokumentację do repozytorium Git."
+          "description": "Przenosisz dokumentację ze starego WordPressa lub Strapi do repozytorium GitHub lub GitLab? Pliki README.md, strony wiki i dokumentacja techniczna projektu są pisane w Markdown. Konwerter czyści HTML ze znaczników div, span i inline CSS, zostawiając czysty Markdown gotowy do commita – bez konieczności żmudnego ręcznego przepisywania każdego artykułu z osobna."
         },
         {
           "icon": "RiArticleLine",
           "title": "Migracja bloga na SSG",
-          "description": "Przenosisz bloga z WordPressa na Hugo, Jekyll, Gatsby lub Astro? Konwersja HTML artykułów na Markdown to kluczowy krok migracji — SSG używają Markdown jako formatu treści."
+          "description": "Migrujesz bloga z WordPressa na generator statyczny Hugo, Jekyll, Gatsby lub Astro? Wszystkie te frameworki renderują treść stron ze składni Markdown, a nie bezpośrednio z HTML. Konwersja wyeksportowanych artykułów HTML na Markdown to kluczowy i często najbardziej czasochłonny etap migracji CMS na SSG – ten konwerter skraca go do kilku sekund."
         },
         {
           "icon": "RiEditLine",
           "title": "Notion / Obsidian",
-          "description": "Notion i Obsidian przechowują notatki w Markdown. Konwersja skopiowanego HTML ze strony internetowej na Markdown pozwala zachować formatowanie w tych aplikacjach."
+          "description": "Notion i Obsidian przechowują notatki w Markdown, lecz treść skopiowana ze stron internetowych lub CMS-a trafia jako HTML z inline CSS i zagnieżdżonymi tagami div i span. Konwerter usuwa zbędne znaczniki i zamienia semantyczne tagi HTML na składnię Markdown, którą Notion i Obsidian wyświetlają poprawnie bez żadnej dalszej ręcznej obróbki."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Archiwizacja treści",
-          "description": "Markdown to czysty tekst — otworzysz go za 20 lat w każdym edytorze. Konwersja HTML na Markdown to sposób na długoterminowe przechowywanie treści bez zależności od CMS-a."
+          "title": "Przygotowanie treści dla LLM",
+          "description": "Przygotowujesz treść do przetworzenia przez model językowy LLM – GPT-4, Claude lub Gemini? Markdown jest znacznie efektywniejszy od HTML – tagi i atrybuty HTML generują dodatkowe tokeny i szum kontekstowy. Konwersja HTML na Markdown przed wysłaniem do API modelu językowego zmniejsza zużycie tokenów, obniża koszty wywołania i poprawia jakość odpowiedzi."
         }
       ]
     },
@@ -300,6 +300,10 @@
         {
           "question": "Gdzie mogę użyć wynikowego Markdown?",
           "answer": "Wynikowy Markdown możesz użyć w repozytoriach GitHub i GitLab (pliki README.md), dokumentacji technicznej, blogach statycznych (Jekyll, Hugo, Gatsby), notatnikach Jupyter i systemach CMS obsługujących Markdown."
+        },
+        {
+          "question": "Czy Markdown jest lepszy niż HTML dla modeli językowych (LLM)?",
+          "answer": "Tak. Modele językowe takie jak GPT-4 i Claude lepiej przetwarzają Markdown niż HTML – tagi i atrybuty HTML dodają szum do kontekstu. Konwersja HTML na Markdown przed wysłaniem do API modelu językowego zmniejsza zużycie tokenów i poprawia jakość odpowiedzi."
         }
       ]
     },

@@ -2,14 +2,14 @@
   "toolKey": "csvToJson",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter CSV na JSON - darmowy, bez rejestracji",
-    "description": "Zamień plik CSV na poprawny JSON z automatycznym formatowaniem. Bez rejestracji, bez limitu - konwersja lokalna w przeglądarce.",
+    "title": "CSV na JSON – darmowy konwerter działający w przeglądarce",
+    "description": "Zamień plik CSV na poprawny JSON z automatycznym formatowaniem i wykrywaniem separatora. Działa w przeglądarce, bez rejestracji – dane nie opuszczają komputera.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-csv-na-json"
   },
   "hero": {
-    "title": "Zamień dane CSV na format JSON",
-    "description": "Wklej dane CSV lub wgraj plik, a narzędzie zamieni je na poprawnie sformatowany JSON. Konwersja odbywa się lokalnie w przeglądarce.",
+    "title": "CSV na JSON – gotowe dane dla API i aplikacji webowych",
+    "description": "Eksporty z WooCommerce i PrestaShop prosto do JSON. Konwerter tworzy struktury gotowe do REST API – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter CSV na JSON online. Zamień dane CSV na JSON w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja CSV na JSON", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
+      "featureList": ["Konwersja CSV na tablicę obiektów JSON", "Automatyczne wykrywanie separatora (przecinek, średnik, tabulator)", "Rozpoznawanie nagłówków kolumn jako kluczy JSON", "Obsługa wartości w cudzysłowach i znaków nowej linii w komórkach", "Pełna obsługa polskich znaków diakrytycznych (UTF-8)", "Walidacja składni CSV przed konwersją", "Przetwarzanie lokalne – dane nie opuszczają przeglądarki", "Formatowanie wyniku z wcięciami (pretty-print)", "Kopiowanie do schowka jednym kliknięciem", "Pobieranie wyniku jako plik .json"]
     },
     "howTo": {
       "name": "Jak zamienić CSV na JSON online",
@@ -100,22 +100,22 @@
         {
           "icon": "RiCodeLine",
           "title": "Import do REST API",
-          "description": "Eksportujesz dane z Excela lub CRM-a jako CSV, ale Twoje API przyjmuje JSON? Konwerter zamienia płaski CSV w tablicę obiektów JSON gotowną do wysłania jako body zapytania POST."
+          "description": "Sklepy PrestaShop i WooCommerce eksportują katalogi produktów jako pliki CSV z separatorem średnikowym lub przecinkowym. Jeśli Twoje REST API lub webhook przyjmuje dane w JSON, konwerter zamienia każdy wiersz CSV w osobny obiekt, tworząc gotową tablicę do wysłania jako body zapytania POST – bez pisania skryptów i bez instalowania dodatkowych bibliotek konwertujących."
         },
         {
           "icon": "RiDatabaseLine",
           "title": "Import do MongoDB / Firebase",
-          "description": "Bazy NoSQL przechowują dane jako dokumenty JSON. Konwersja CSV na JSON to pierwszy krok przy migracji danych z arkuszy kalkulacyjnych do MongoDB, Firestore czy CouchDB."
+          "description": "Bazy NoSQL – MongoDB, Firestore i CouchDB – przechowują dane jako dokumenty JSON. Konwersja katalogu produktów, bazy kontaktów lub pliku eksportowego z danymi GUS i ZUS z CSV na JSON to pierwszy i najważniejszy krok migracji danych z arkusza Excel lub systemu eksportu do bazy dokumentowej gotowej do uruchomienia na każdym środowisku."
         },
         {
           "icon": "RiJavascriptLine",
           "title": "Przetwarzanie w JavaScript / Python",
-          "description": "JSON jest natywnym formatem danych w JavaScript (JSON.parse) i Python (json.loads). Konwersja CSV na JSON eliminuje konieczność ręcznego parsowania wierszy i kolumn."
+          "description": "JSON jest natywnym formatem danych w JavaScript (JSON.parse) oraz Pythonie z biblioteką pandas (read_csv + to_json). Konwersja pliku CSV na JSON eliminuje konieczność ręcznego parsowania wierszy i kolumn w skrypcie – od razu pracujesz na gotowej strukturze obiektów, co oszczędza czas przy każdym projekcie automatyzacji lub migracji danych do nowego systemu."
         },
         {
           "icon": "RiSettingsLine",
           "title": "Konfiguracje i seed data",
-          "description": "Frameworki (Next.js, Nuxt, Django) i narzędzia CI/CD często wymagają danych w JSON. Konwersja arkusza z danymi testowymi na JSON to szybki sposób na przygotowanie seed data."
+          "description": "Frameworki Next.js, Nuxt i Django oraz narzędzia CI/CD często wymagają danych testowych w JSON do seed data i fixtures. Konwersja arkusza z danymi produktów, użytkowników lub konfiguracji na JSON to najszybszy sposób na przygotowanie danych dla środowiska deweloperskiego. Nie trzeba pisać skryptów – wklejasz CSV, dostajesz gotowy JSON do pliku fixtures w kilka sekund."
         }
       ]
     },
@@ -275,7 +275,7 @@
       "items": [
         {
           "question": "Jak narzędzie rozpoznaje kolumny CSV?",
-          "answer": "Narzędzie traktuje pierwszy wiersz jako nagłówki kolumn. Separatorem jest przecinek (,). Jeśli dane używają innego separatora (np. średnika), zamień go na przecinek przed konwersją."
+          "answer": "Narzędzie traktuje pierwszy wiersz jako nagłówki kolumn, które stają się kluczami obiektów JSON. Separator (przecinek, średnik lub tabulator) jest wykrywany automatycznie – nie musisz go ustawiać ręcznie."
         },
         {
           "question": "Czy dane są wysyłane na serwer?",
@@ -300,6 +300,10 @@
         {
           "question": "Czy wynikowy JSON zachowuje typy danych?",
           "answer": "CSV przechowuje wszystkie wartości jako tekst, dlatego wynikowy JSON również zawiera wartości tekstowe. Jeśli potrzebujesz typów liczbowych, możesz je przekonwertować po stronie aplikacji."
+        },
+        {
+          "question": "Czy konwerter obsługuje eksporty z WooCommerce i PrestaShop?",
+          "answer": "Tak. Eksporty produktów z WooCommerce, PrestaShop i Shopera to pliki CSV z separatorem przecinkowym lub średnikowym. Konwerter automatycznie wykrywa separator i zamienia katalog produktów na JSON gotowy do importu do bazy danych lub API."
         }
       ]
     },

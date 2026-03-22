@@ -2,14 +2,14 @@
   "toolKey": "jsonToXml",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JSON na XML - darmowy, bez rejestracji",
-    "description": "Zamień dane JSON na poprawny, sformatowany XML. Bez rejestracji, bez limitu - konwersja lokalna w przeglądarce.",
+    "title": "JSON na XML – konwerter dla KSeF, SOAP i ERP bez rejestracji",
+    "description": "Zamień dane JSON na poprawny XML z deklaracją i wcięciami. Przydatny przy integracji z KSeF, Comarch, SAP i SOAP API. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-json-na-xml"
   },
   "hero": {
-    "title": "Zamień dane JSON na format XML",
-    "description": "Wklej dane JSON lub wgraj plik, a narzędzie zamieni je na poprawnie sformatowany XML. Konwersja odbywa się lokalnie w przeglądarce.",
+    "title": "JSON na XML – integracja z systemami ERP, KSeF i SOAP API",
+    "description": "Comarch, KSeF lub SOAP API wymaga XML? Konwerter zamienia JSON na XML z deklaracją UTF-8 i wcięciami – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter JSON na XML online. Zamień dane JSON na XML w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja JSON na XML", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
+      "featureList": ["Konwersja obiektów i tablic JSON na elementy XML", "Generowanie deklaracji <?xml version=\"1.0\" encoding=\"UTF-8\"?>", "Owijanie struktury w element główny <root>", "Tablice JSON jako powtarzające się elementy XML", "Automatyczna sanityzacja kluczy JSON do poprawnych nazw XML", "Pełne formatowanie z wcięciami (pretty-print)", "Walidacja składni JSON przed konwersją z komunikatami błędów", "Przetwarzanie lokalne – dane nie opuszczają przeglądarki", "Kopiowanie do schowka jednym kliknięciem", "Pobieranie wyniku jako plik .xml"]
     },
     "howTo": {
       "name": "Jak zamienić JSON na XML online",
@@ -100,22 +100,22 @@
         {
           "icon": "RiServerLine",
           "title": "Integracja z SOAP API",
-          "description": "Systemy korporacyjne (SAP, Oracle, Salesforce SOAP) wymagają danych w formacie XML. Konwersja JSON z REST API na XML to pierwszy krok przy integracji nowoczesnych i legacy systemów."
+          "description": "Systemy korporacyjne SAP, Oracle ERP i Comarch Optima wymagają danych wyłącznie w formacie XML przez interfejsy SOAP lub dedykowane pliki wymiany EDI. Konwersja danych JSON z nowoczesnego REST API na XML to kluczowy krok przy integracji nowych systemów z istniejącą infrastrukturą enterprise, legacy systemami bankowymi i standardami płatniczymi ISO 20022."
         },
         {
           "icon": "RiSettingsLine",
           "title": "Konfiguracje Java / .NET",
-          "description": "Spring Boot (application.xml), .NET (web.config, app.config) i Android (AndroidManifest.xml) używają XML jako formatu konfiguracji. Konwersja JSON na XML przygotowuje dane do tych systemów."
+          "description": "Konfiguracje Spring Boot (applicationContext.xml), projekty Maven (pom.xml), pliki Sitemap.xml i manifesty Android (AndroidManifest.xml) używają XML jako głównego formatu konfiguracyjnego projektu. Konwersja struktury danych JSON na poprawny XML w przeglądarce pozwala szybko przygotować szkielet pliku konfiguracyjnego bez ręcznego przepisywania każdego klucza na otwierający i zamykający element XML z wcięciami i komentarzami."
         },
         {
           "icon": "RiFileTextLine",
           "title": "E-faktura i KSeF",
-          "description": "Krajowy System e-Faktur (KSeF) i standard FA(2) wymagają faktur w formacie XML. Konwersja danych JSON z systemu sprzedażowego na XML to część procesu generowania e-faktur."
+          "description": "Krajowy System e-Faktur KSeF wymaga faktur w formacie XML zgodnym ze schematem FA(2) Ministerstwa Finansów. Konwersja danych faktury z JSON na XML to etap pośredni przy generowaniu e-faktur w systemach sprzedażowych i sklepach internetowych. Wynikowy XML z deklaracją UTF-8 i elementem głównym to punkt startowy do dostosowania pod specyfikację KSeF."
         },
         {
           "icon": "RiExchangeLine",
           "title": "Wymiana danych B2B",
-          "description": "Standardy EDI, UBL, cXML i RosettaNet bazują na XML. Konwersja JSON na XML jest niezbędna przy integracji z partnerami handlowymi, którzy wymagają dokumenty w tych formatach."
+          "description": "Standardy wymiany danych B2B – EDI, UBL, cXML i RosettaNet – bazują na XML i są wymagane przez sieci logistyczne i dużych partnerów handlowych w Polsce i całej Unii Europejskiej. Konwersja danych zamówień lub faktur z JSON na XML jest niezbędna przy wdrożeniu elektronicznej wymiany dokumentów handlowych z partnerami wymagającymi tych standardów."
         }
       ]
     },
@@ -300,6 +300,10 @@
         {
           "question": "Czy XML obsługuje wszystkie typy danych JSON?",
           "answer": "XML nie rozróżnia typów danych tak jak JSON. Liczby, wartości logiczne i null są zapisywane jako tekst w elementach XML. Informacja o oryginalnym typie może wymagać dodatkowych atrybutów."
+        },
+        {
+          "question": "Czy konwerter obsługuje formaty wymagane przez KSeF?",
+          "answer": "Konwerter generuje poprawny XML z deklaracją UTF-8 i elementem głównym, który jest podstawą struktury e-faktury. Schemat FA(2) wymagany przez KSeF ma jednak własną przestrzeń nazw i dodatkowe atrybuty – wynik konwersji stanowi punkt startowy, który wymaga dostosowania do specyfikacji Ministerstwa Finansów."
         }
       ]
     },

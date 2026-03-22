@@ -2,14 +2,14 @@
   "toolKey": "jsonToYaml",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JSON na YAML - darmowy, bez rejestracji",
-    "description": "Zamień dane JSON na czytelny YAML. Idealny do konfiguracji Docker, Kubernetes, CI/CD. Bez rejestracji - konwersja lokalna.",
+    "title": "JSON na YAML – konwerter dla Docker, K8s i GitHub Actions",
+    "description": "Zamień dane JSON na czytelny YAML dla docker-compose.yml, Kubernetes i GitHub Actions. Działa w przeglądarce bez rejestracji – dane zostają na komputerze.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-json-na-yaml"
   },
   "hero": {
-    "title": "Zamień dane JSON na czytelny YAML",
-    "description": "Wklej dane JSON, a narzędzie zamieni je na czytelny format YAML. Konwersja odbywa się lokalnie w przeglądarce.",
+    "title": "JSON na YAML – czytelne konfiguracje DevOps bez nawiasów",
+    "description": "Masz JSON i potrzebujesz YAML do Docker Compose lub K8s? Konwerter generuje YAML z wcięciami 2 spacji – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter JSON na YAML online. Zamień dane JSON na YAML w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja JSON na YAML", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
+      "featureList": ["Konwersja obiektów i tablic JSON na format YAML", "Standardowe wcięcia 2 spacji zgodne z konwencjami DevOps", "Tablice JSON jako listy YAML z prefiksem myślnika", "Automatyczne cytowanie wartości z dwukropkami i znakami specjalnymi", "Zachowanie typów: string, number, boolean i null", "Obsługa zagnieżdżonych obiektów wielopoziomowych", "Walidacja składni JSON przed konwersją z komunikatami błędów", "Przetwarzanie lokalne – dane nie opuszczają przeglądarki", "Kopiowanie do schowka jednym kliknięciem", "Pobieranie wyniku jako plik .yaml"]
     },
     "howTo": {
       "name": "Jak zamienić JSON na YAML online",
@@ -100,22 +100,22 @@
         {
           "icon": "RiSettingsLine",
           "title": "Docker Compose i Kubernetes",
-          "description": "Masz konfigurację w JSON i chcesz ją przekształcić w docker-compose.yml lub manifest Kubernetes? Konwerter zamienia JSON na YAML z poprawnymi wcięciami, gotowy do wklejenia."
+          "description": "Masz konfigurację serwisu lub aplikacji w JSON i chcesz przekształcić ją w plik docker-compose.yml lub manifest Kubernetes (Deployment, Service, ConfigMap)? Konwerter zamienia JSON na YAML z wcięciami 2 spacji, gotowy do wklejenia do repozytorium lub bezpośredniego użycia z poleceniem kubectl apply – bez żadnych ręcznych poprawek wcięć i zmian składni."
         },
         {
           "icon": "RiEyeLine",
           "title": "GitHub Actions / GitLab CI",
-          "description": "Workflowy CI/CD są definiowane w YAML. Konwersja JSON na YAML pomaga szybko prototypować pipeline’y na podstawie danych JSON z API lub konfiguracji."
+          "description": "Pipeline’y CI/CD w GitHub Actions i GitLab CI są definiowane wyłącznie w plikach YAML z ściśle określoną strukturą wcięć i kluczy. Konwersja konfiguracji JSON z zewnętrznego narzędzia lub API na YAML to szybka droga do prototypowania workflowów automatyzacji, testów i deploymentów bez żmudnego ręcznego przepisywania całej struktury na nowy format."
         },
         {
           "icon": "RiEditLine",
           "title": "Czytelna edycja konfiguracji",
-          "description": "YAML nie wymaga nawiasów, cudzysłowów wokół kluczy ani przecinków — mniej błędów składniowych przy ręcznej edycji. Obsługuje też komentarze, których JSON nie posiada."
+          "description": "YAML nie wymaga nawiasów klamrowych, nawiasów kwadratowych ani cudzysłowów wokół kluczy – przecinki między elementami też są zbędne. Pliki Ansible playbook, Helm charts values.yaml i konfiguracje aplikacji config.yaml są dzięki temu znacznie czytelniejsze dla całego zespołu. Mniej błędów składniowych przy ręcznej edycji to mniej czasu straconego na szukanie brakującego przecinka w konfiguracji."
         },
         {
           "icon": "RiTeamLine",
           "title": "Code review i dokumentacja",
-          "description": "YAML jest czytelniejszy w pull requestach i dokumentacji technicznej. Różnice między wersjami są łatwiejsze do zrozumienia niż w JSON dzięki brakowi nawiasów."
+          "description": "Zmiany w plikach YAML są czytelniej widoczne w narzędziach git diff i podczas code review w pull requestach – każda różnica wyświetla się linijka po linijce bez szumu nawiasów i cudzysłowów. Konwersja JSON na YAML przed umieszczeniem konfiguracji w repozytorium ułatwia przegląd zmian i dokumentację techniczną dla całego zespołu devopsowego."
         }
       ]
     },
@@ -300,6 +300,10 @@
         {
           "question": "Czy konwersja jest bezstratna?",
           "answer": "Tak, konwersja JSON na YAML jest w pełni bezstratna — oba formaty obsługują te same typy danych. Wynikowy YAML można przekonwertować z powrotem na identyczny JSON."
+        },
+        {
+          "question": "Czy wynikowy YAML działa z Ansible i Helm charts?",
+          "answer": "Tak. Ansible playbooki i Helm values.yaml używają standardowego formatu YAML z wcięciami 2 spacji. Konwerter generuje YAML zgodny z tymi wymaganiami. Pamiętaj jednak, że specyficzne dyrektywy Ansible (np. !vault) lub bloki wieloliniowe Helm mogą wymagać ręcznej korekty po konwersji."
         }
       ]
     },

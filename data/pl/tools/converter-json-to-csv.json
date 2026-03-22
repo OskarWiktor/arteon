@@ -2,14 +2,14 @@
   "toolKey": "jsonToCsv",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JSON na CSV - darmowy, bez rejestracji",
-    "description": "Zamień dane JSON na plik CSV gotowy do otwarcia w Excelu. Bez rejestracji, bez limitu - konwersja lokalna w przeglądarce.",
+    "title": "JSON na CSV – eksport danych do Excela, bez rejestracji",
+    "description": "Zamień odpowiedź REST API lub dane JSON na plik CSV gotowy do Excela i importu SQL. Działa w przeglądarce bez rejestracji – dane nie trafiają na serwer.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-json-na-csv"
   },
   "hero": {
-    "title": "Zamień dane JSON na format CSV",
-    "description": "Wklej dane JSON lub wgraj plik, a narzędzie zamieni je na tabelaryczny CSV. Konwersja odbywa się lokalnie w przeglądarce.",
+    "title": "JSON na CSV – dane z API prosto do arkusza kalkulacyjnego",
+    "description": "Dane z PayU lub Stripe w JSON, a księgowość chce Excela? Konwerter spłaszcza obiekty do pliku CSV – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter JSON na CSV online. Zamień dane JSON na CSV w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja JSON na CSV", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
+      "featureList": ["Konwersja tablicy obiektów JSON na plik CSV", "Automatyczne wyodrębnianie kluczy JSON jako nagłówków kolumn", "Spłaszczanie zagnieżdżonych obiektów do notacji kropkowej (adres.miasto)", "Obsługa obiektów z różnymi zestawami kluczy (brakujące pola puste)", "Pełna obsługa polskich znaków diakrytycznych w kodowaniu UTF-8", "Walidacja składni JSON przed konwersją z komunikatami błędów", "Przetwarzanie lokalne – dane nie opuszczają przeglądarki", "Wynik gotowy do otwarcia w Excelu, Google Sheets i LibreOffice Calc", "Kopiowanie do schowka jednym kliknięciem", "Pobieranie wyniku jako plik .csv"]
     },
     "howTo": {
       "name": "Jak zamienić JSON na CSV online",
@@ -100,22 +100,22 @@
         {
           "icon": "RiFileExcelLine",
           "title": "Analiza danych z API",
-          "description": "Pobrałeś dane z API Stripe, Shopify lub Google Analytics w formacie JSON? Konwersja na CSV pozwala otworzyć je bezpośrednio w Excelu i Google Sheets do analizy, filtrowania i tworzenia wykresów."
+          "description": "Pobierasz historię transakcji z API Przelewy24, PayU lub Stripe w formacie JSON, a dział finansowy lub księgowość potrzebują raportu w Excelu? Konwerter spłaszcza tablicę obiektów JSON do pliku CSV gotowego do otwarcia bezpośrednio w Microsoft Excel, Google Sheets lub LibreOffice Calc – bez żadnego dodatkowego oprogramowania i bez specjalistycznej wiedzy technicznej."
         },
         {
           "icon": "RiDatabaseLine",
           "title": "Import do bazy SQL",
-          "description": "MySQL, PostgreSQL i SQLite mają wbudowane narzędzia importu CSV (LOAD DATA, COPY, .import). Konwersja JSON na CSV to najszybszy sposób na przeniesienie danych z API do bazy relacyjnej."
+          "description": "MySQL, PostgreSQL i SQLite mają wbudowane polecenia importu CSV: LOAD DATA INFILE, COPY FROM i .import. Konwersja odpowiedzi REST API lub danych z backendu Node.js albo PHP na format CSV to najszybszy i najprostszy sposób na załadowanie rekordów do lokalnej bazy relacyjnej bez pisania skryptów transformacji ani konfigurowania dodatkowego środowiska technicznego."
         },
         {
           "icon": "RiBarChartLine",
           "title": "Raporty i dashboardy",
-          "description": "Narzędzia BI (Power BI, Tableau, Metabase) i arkusze kalkulacyjne preferują CSV jako format wejściowy. Konwersja JSON na CSV przygotowuje dane do wizualizacji i raportowania."
+          "description": "Narzędzia business intelligence – Power BI, Tableau i Metabase – preferują CSV jako format wejściowy dla raportów i dashboardów analitycznych. Konwersja odpowiedzi API na CSV jednym kliknięciem przygotowuje dane sprzedażowe lub finansowe do wizualizacji i interaktywnych raportów gotowych dla klienta lub zarządu – bez dodatkowego przetwarzania i bez instalowania oprogramowania."
         },
         {
           "icon": "RiMailLine",
           "title": "Udostępnianie nietechnicznym odbiorcom",
-          "description": "Każdy otworzy plik CSV w arkuszu kalkulacyjnym bez specjalistycznej wiedzy. Konwersja JSON na CSV to najlepszy sposób na udostępnienie danych klientowi, księgowej lub managerowi."
+          "description": "Pliki CSV może otworzyć każdy bez specjalistycznej wiedzy – Excel na Windows, Numbers na Mac, Google Sheets w przeglądarce internetowej. Konwersja danych JSON z backendu PHP lub Node.js na CSV to najlepszy sposób na udostępnienie raportu sprzedaży, listy zamówień lub zestawienia transakcji klientowi, działowi księgowości albo managerowi nieznającemu formatów danych."
         }
       ]
     },
@@ -300,6 +300,10 @@
         {
           "question": "Jak otworzyć wynikowy CSV w Excelu z polskimi znakami?",
           "answer": "Wynikowy plik CSV jest zapisany w kodowaniu UTF-8. W Excelu użyj opcji Dane → Pobierz dane → Z pliku tekstowego/CSV i wybierz kodowanie UTF-8, aby polskie znaki wyświetlały się poprawnie."
+        },
+        {
+          "question": "Czy konwerter obsługuje dane z płatności Przelewy24 i PayU?",
+          "answer": "Tak. Dane transakcji z Przelewy24, PayU i Stripe zwracane przez API mają format tablicy obiektów JSON. Konwerter zamienia je na CSV z nagłówkami kolumn, który można otworzyć w Excelu lub zaimportować do systemu księgowego."
         }
       ]
     },

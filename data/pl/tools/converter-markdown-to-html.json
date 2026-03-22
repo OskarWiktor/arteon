@@ -2,14 +2,14 @@
   "toolKey": "markdownToHtml",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter Markdown na HTML - darmowy, bez rejestracji",
-    "description": "Zamień Markdown na czysty, semantyczny HTML. Idealny do blogów, dokumentacji i stron internetowych. Bez rejestracji - konwersja lokalna.",
+    "title": "Markdown na HTML – konwerter dla CMS, e-maili i dokumentacji",
+    "description": "Zamień plik Markdown na semantyczny HTML gotowy do WordPressa, Docusaurusa i szablonów e-mail. Działa w przeglądarce bez rejestracji – dane zostają na komputerze.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-markdown-na-html"
   },
   "hero": {
-    "title": "Zamień tekst Markdown na czysty HTML",
-    "description": "Wklej tekst w formacie Markdown, a narzędzie zamieni go na czysty HTML z poprawnymi tagami semantycznymi. Konwersja lokalna w przeglądarce.",
+    "title": "Markdown na HTML – gotowy kod dla CMS, newslettera i Docusaurusa",
+    "description": "Piszesz w Markdown, ale CMS lub e-mail wymaga HTML? Konwerter generuje semantyczny HTML z poprawnymi tagami – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -29,7 +29,7 @@
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter Markdown na HTML online. Zamień dane Markdown na HTML w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja Markdown na HTML", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
+      "featureList": ["Konwersja pełnej składni CommonMark i GitHub Flavored Markdown (GFM)", "Generowanie semantycznych tagów HTML: h1–h6, p, ul, ol, pre, code, blockquote", "Konwersja tabel Markdown (GFM) na tagi <table><thead><tbody>", "Obsługa list zadań GFM jako <input type=\"checkbox\">", "Konwersja bloków kodu z językiem na <code class=\"language-js\">", "Przekreślony tekst (~~tekst~~) jako tag <del>", "Wynik bez inline CSS – styl pochodzi z arkusza strony docelowej", "Obsługa linków i obrazów Markdown z atrybutem alt", "Przetwarzanie lokalne – dane nie opuszczają przeglądarki", "Pobieranie wyniku jako plik .html"]
     },
     "howTo": {
       "name": "Jak zamienić Markdown na HTML online",
@@ -100,22 +100,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Publikacja artykułów na stronie",
-          "description": "Piszesz artykuły w Markdown, ale Twój CMS (WordPress, Shoper, Shopify) wymaga HTML? Konwerter zamienia treść Markdown na gotowy kod HTML z tagami semantycznymi, gotowy do wklejenia."
+          "description": "Piszesz artykuły, opisy produktów lub treści stron w Markdown, ale Twój CMS – WordPress, Shoper lub Shopify – wymaga kodu HTML do zapisania treści? Konwerter zamienia tekst Markdown na semantyczny HTML z nagłówkami h1–h6, akapitami p, listami ul i ol oraz blokami kodu – gotowy do wklejenia bez żadnej dodatkowej obróbki."
         },
         {
           "icon": "RiMailLine",
           "title": "Newslettery i e-mail marketing",
-          "description": "Mailchimp, GetResponse i inne platformy e-mail wymagają kodu HTML. Pisz treść newslettera w Markdown i konwertuj na HTML z poprawnym formatowaniem."
+          "description": "Narzędzia e-mail marketingu Mailchimp i GetResponse wymagają kodu HTML do tworzenia szablonów i newsletterów z poprawnym formatowaniem tekstu i strukturą. Pisz treść mailingu w czytelnym Markdown, a konwerter wygeneruje czysty HTML z nagłówkami, akapitami i listami punktowanymi – gotowy do wklejenia do edytora szablonu lub pola treści w platformie mailingowej."
         },
         {
           "icon": "RiFileTextLine",
           "title": "Dokumentacja do PDF / Word",
-          "description": "Konwersja Markdown na HTML to pośredni krok przy generowaniu dokumentów PDF lub Word. HTML można łatwo wydrukować lub przekonwertować na inne formaty za pomocą Pandoc."
+          "description": "GitBook, Docusaurus i MkDocs renderują Markdown do HTML, ale gdy potrzebujesz surowego kodu HTML do własnego szablonu lub dokumentu PDF przez Pandoc – ten konwerter daje go natychmiast w przeglądarce. Działa bez instalowania Node.js ani Pandoc. Wklejasz Markdown, klikasz Konwertuj i kopiujesz gotowy HTML – cały proces trwa kilka sekund bez konfigurowania środowiska."
         },
         {
           "icon": "RiCodeLine",
           "title": "Fragmenty HTML do szablonów",
-          "description": "Generuj fragmenty HTML z Markdown do wstawienia w szablony React, Vue, EJS lub Handlebars. Idealny do componentów contentowych i fragmentów strony."
+          "description": "Generuj fragmenty HTML z Markdown do wstawienia w szablony React (dangerouslySetInnerHTML), Vue (v-html) lub Handlebars w projekcie Next.js lub Gatsby. To wygodny i sprawdzony wzorzec zarządzania treścią komponentów blogowych i stron dokumentacji technicznej – piszesz czytelny Markdown, a konwerter dostarcza gotowy, semantycznie poprawny HTML bezpośrednio do renderowania w aplikacji webowej."
         }
       ]
     },
@@ -300,6 +300,10 @@
         {
           "question": "Czy mogę użyć wynikowego HTML w WordPressie?",
           "answer": "Tak. Wynikowy HTML można wkleić bezpośrednio do edytora blokowego WordPress (Gutenberg) w trybie HTML lub do klasycznego edytora w zakładce Tekst."
+        },
+        {
+          "question": "Czy konwerter zastępuje Pandoc przy konwersji Markdown na HTML?",
+          "answer": "Dla prostych konwersji w przeglądarce – tak. Konwerter obsługuje CommonMark i GFM, co wystarczy do większości przypadków użycia. Pandoc oferuje więcej opcji (szablony, metadane YAML front matter, konwersja do PDF), ale wymaga instalacji na komputerze. Ten konwerter działa bez instalacji, prosto w przeglądarce."
         }
       ]
     },
