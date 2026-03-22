@@ -2,14 +2,14 @@
   "toolKey": "htmlToMarkdown",
   "locale": "en",
   "metadata": {
-    "title": "HTML to Markdown converter - HTML Markdown",
-    "description": "Convert HTML to Markdown format. Automatic parsing and formatting. Free, no registration.",
+    "title": "HTML to Markdown converter – clean up content for Git and Notion",
+    "description": "Strip HTML tags and get clean Markdown for GitHub READMEs, Obsidian vaults, and LLM prompts. Preserves headings, links, tables, and code blocks. Free, no registration.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/html-to-markdown-converter"
   },
   "hero": {
-    "title": "HTML to Markdown converter",
-    "description": "Convert HTML to Markdown format. Automatic parsing and formatting. Free, no registration.",
+    "title": "Migrate WordPress content to Markdown without losing structure",
+    "description": "Moving from WordPress to Ghost, Gatsby, or Obsidian? Paste your HTML and get clean Markdown that keeps your headings, lists, links, and code intact — no plugins, no server, free.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -28,12 +28,12 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convert HTML to Markdown format. Automatic parsing and formatting. Free, no registration.",
-      "featureList": ["HTML to Markdown conversion", "Batch conversion", "Local browser processing"],
+      "featureList": ["Converts h1–h6 to # through ###### Markdown headings", "Converts <strong>/<b> to **bold** and <em>/<i> to *italic*", "Converts <a href> to [text](url) Markdown links", "Converts <img> to ![alt](src) Markdown images", "Converts <ul>/<ol> to - and 1. list items including nested lists", "Converts <pre><code> to fenced code blocks with language hint", "Converts <table> to pipe-separated Markdown tables", "Strips non-semantic tags (div, span, script, style) cleanly", "Batch multi-file conversion", "Local browser processing – no upload"],
       "alternateName": ["Convert HTML to Markdown", "HTML to Markdown", "Free HTML to Markdown converter"]
     },
     "howTo": {
       "name": "How to convert HTML to Markdown",
-      "description": "Convert HTML to Markdown format. Automatic parsing and formatting. Free, no registration.",
+      "description": "Strip HTML tags and get clean Markdown for GitHub READMEs, Obsidian vaults, and LLM prompts. Preserves headings, links, tables, and code blocks. Free, no registration.",
       "steps": [
         {
           "position": 1,
@@ -77,17 +77,17 @@
       "items": [
         {
           "title": "Paste your data",
-          "description": "Paste or type your HTML data into the input field.",
+          "description": "Paste your HTML — a WordPress post, a Confluence page, or content copied from a web page. You can paste the full page source or just the body content. Upload a .html file if you prefer.",
           "icon": "RiUploadCloud2Line"
         },
         {
           "title": "Convert",
-          "description": "Click Convert to transform your HTML data into Markdown format.",
+          "description": "Click Convert. The converter parses semantic tags (headings, lists, links, images, tables, code) and maps them to Markdown equivalents. Irrelevant tags like div, span, script, and style are stripped, leaving only meaningful content.",
           "icon": "RiSettings3Line"
         },
         {
           "title": "Copy or download",
-          "description": "Copy the Markdown output to clipboard or download as a file.",
+          "description": "Copy the clean Markdown and paste it into your Obsidian vault, GitHub README, Notion page, or LLM prompt. Markdown is significantly more token-efficient than HTML when feeding content to AI models.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -202,7 +202,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for converting HTML to MARKDOWN",
+      "title": "Tips for converting HTML to Markdown",
       "description": "A few tips to help you avoid common issues during conversion:",
       "grid": "two",
       "items": [
@@ -244,7 +244,7 @@
     {
       "type": "faq",
       "title": "Frequently asked questions about HTML to Markdown conversion",
-      "openByDefault": 0,
+      "openByDefault": 1,
       "items": [
         {
           "question": "Is converting HTML to Markdown free?",
@@ -273,6 +273,10 @@
         {
           "question": "Can I use the Markdown output in GitHub or GitLab?",
           "answer": "Yes. The output follows standard Markdown syntax compatible with GitHub, GitLab, Bitbucket, Notion, Obsidian, and any other platform that renders Markdown."
+        },
+        {
+          "question": "Is Markdown better than HTML for feeding content to AI models?",
+          "answer": "Yes. Markdown is significantly more token-efficient than HTML for LLMs. Removing tags like <div class=\"...\">, <span>, and <p> reduces token count while keeping full semantic meaning. Many AI workflows recommend converting HTML to Markdown before passing content to GPT-4 or Claude to reduce cost and improve response quality."
         }
       ]
     },

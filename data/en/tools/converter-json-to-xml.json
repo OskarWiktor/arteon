@@ -2,14 +2,14 @@
   "toolKey": "jsonToXml",
   "locale": "en",
   "metadata": {
-    "title": "JSON to XML converter - JSON XML",
-    "description": "Convert JSON to XML format. Automatic parsing and formatting. Free, no registration.",
+    "title": "JSON to XML converter – bridge modern APIs with legacy systems",
+    "description": "Convert JSON to well-formed XML for SOAP APIs, SAP integrations, and RSS feeds. Generates valid XML declaration and indentation. Free, no registration, works in browser.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/json-to-xml-converter"
   },
   "hero": {
-    "title": "JSON to XML converter",
-    "description": "Convert JSON to XML format. Automatic parsing and formatting. Free, no registration.",
+    "title": "Your JSON doesn't speak SOAP — this converter fixes that",
+    "description": "Enterprise systems, Android manifests, Salesforce data exchange, and RSS feeds all require XML. Paste your JSON and get valid, indented XML output in seconds — no server needed.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -28,12 +28,12 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convert JSON to XML format. Automatic parsing and formatting. Free, no registration.",
-      "featureList": ["JSON to XML conversion", "Batch conversion", "Local browser processing"],
+      "featureList": ["Generates valid XML declaration (<?xml version=\"1.0\" encoding=\"UTF-8\"?>)", "Maps JSON objects to XML child elements", "Converts JSON arrays to repeated sibling elements", "Automatic escaping of <, >, &, quotes in text content", "Wraps top-level JSON arrays in a configurable root element", "2-space indented output for readability", "Batch multi-file conversion", "Local browser processing – no upload", "Compatible with SOAP, SAP, Salesforce, and RSS/Atom feed formats", "Handles null values as empty XML elements"],
       "alternateName": ["Convert JSON to XML", "JSON to XML", "Free JSON to XML converter"]
     },
     "howTo": {
       "name": "How to convert JSON to XML",
-      "description": "Convert JSON to XML format. Automatic parsing and formatting. Free, no registration.",
+      "description": "Convert JSON to well-formed XML for SOAP APIs, SAP integrations, and RSS feeds. Generates valid XML declaration and indentation. Free, no registration, works in browser.",
       "steps": [
         {
           "position": 1,
@@ -77,17 +77,17 @@
       "items": [
         {
           "title": "Paste your data",
-          "description": "Paste or type your JSON data into the input field.",
+          "description": "Paste your JSON object or array. This could be a REST API response you need to forward to a SOAP endpoint, a data payload for Salesforce, or any JSON structure that a legacy system expects in XML.",
           "icon": "RiUploadCloud2Line"
         },
         {
           "title": "Convert",
-          "description": "Click Convert to transform your JSON data into XML format.",
+          "description": "Click Convert. Each JSON key becomes an XML element tag, nested objects produce child elements, and arrays produce repeated sibling elements. Special characters are automatically XML-escaped so the output validates immediately.",
           "icon": "RiSettings3Line"
         },
         {
           "title": "Copy or download",
-          "description": "Copy the XML output to clipboard or download as a file.",
+          "description": "Copy the well-formed, indented XML to clipboard and paste it into your SOAP client, SAP import tool, Android manifest editor, or RSS feed template. Or download as a .xml file for further processing.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -244,7 +244,7 @@
     {
       "type": "faq",
       "title": "Frequently asked questions about JSON to XML conversion",
-      "openByDefault": 0,
+      "openByDefault": 1,
       "items": [
         {
           "question": "Is converting JSON to XML free?",
@@ -273,6 +273,10 @@
         {
           "question": "Can I validate the XML output?",
           "answer": "The converter produces well-formed XML that passes standard XML validation. If you need schema validation (XSD), you can apply your schema to the output separately."
+        },
+        {
+          "question": "Can I use the XML output in Salesforce or SAP integrations?",
+          "answer": "Yes. Both Salesforce and SAP commonly exchange data in XML format. The converter produces well-formed XML with a proper declaration that you can use as a data import payload, SOAP request body, or file attachment in these enterprise systems."
         }
       ]
     },

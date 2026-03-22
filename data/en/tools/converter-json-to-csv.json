@@ -2,14 +2,14 @@
   "toolKey": "jsonToCsv",
   "locale": "en",
   "metadata": {
-    "title": "JSON to CSV converter - JSON CSV",
-    "description": "Convert JSON to CSV format. Automatic parsing and formatting. Free, no registration.",
+    "title": "JSON to CSV converter – get spreadsheet-ready data fast",
+    "description": "Turn JSON API responses into Excel or Google Sheets in seconds. Flattens nested objects, auto-generates headers. Free, no registration, works entirely in browser.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/json-to-csv-converter"
   },
   "hero": {
-    "title": "JSON to CSV converter",
-    "description": "Convert JSON to CSV format. Automatic parsing and formatting. Free, no registration.",
+    "title": "Share API data with your team as a clean CSV spreadsheet",
+    "description": "Got a Stripe export, GitHub Issues JSON, or Postman response? Convert it to CSV and open it straight in Excel or Google Sheets — no code, no server, no wait.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -28,12 +28,12 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convert JSON to CSV format. Automatic parsing and formatting. Free, no registration.",
-      "featureList": ["JSON to CSV conversion", "Batch conversion", "Local browser processing"],
+      "featureList": ["Converts JSON array of objects to CSV rows", "Auto-extracts all unique keys as column headers", "Flattens nested objects with dot notation (e.g. address.city)", "Serializes nested arrays as strings in cells", "Handles null values as empty cells", "Proper CSV quoting for values containing commas or newlines", "Batch multi-file conversion", "Local browser processing – no upload", "Download output as .csv file", "Compatible with Excel, Google Sheets, and LibreOffice Calc"],
       "alternateName": ["Convert JSON to CSV", "JSON to CSV", "Free JSON to CSV converter"]
     },
     "howTo": {
       "name": "How to convert JSON to CSV",
-      "description": "Convert JSON to CSV format. Automatic parsing and formatting. Free, no registration.",
+      "description": "Turn JSON API responses into Excel or Google Sheets in seconds. Flattens nested objects, auto-generates headers. Free, no registration, works entirely in browser.",
       "steps": [
         {
           "position": 1,
@@ -77,17 +77,17 @@
       "items": [
         {
           "title": "Paste your data",
-          "description": "Paste or type your JSON data into the input field.",
+          "description": "Paste your JSON — a REST API response, a Stripe or GitHub export, or any JSON array of objects. You can also upload a .json file directly from your computer.",
           "icon": "RiUploadCloud2Line"
         },
         {
           "title": "Convert",
-          "description": "Click Convert to transform your JSON data into CSV format.",
+          "description": "Click Convert. The tool scans all objects to collect unique keys, builds the header row, and writes one CSV row per JSON object. Nested fields are flattened with dot notation so nothing is lost.",
           "icon": "RiSettings3Line"
         },
         {
           "title": "Copy or download",
-          "description": "Copy the CSV output to clipboard or download as a file.",
+          "description": "Copy the CSV to clipboard and paste straight into Google Sheets, or download the .csv file and open it in Excel. The output uses standard comma-delimited format with RFC 4180 quoting.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -244,7 +244,7 @@
     {
       "type": "faq",
       "title": "Frequently asked questions about JSON to CSV conversion",
-      "openByDefault": 0,
+      "openByDefault": 1,
       "items": [
         {
           "question": "Is converting JSON to CSV free?",
@@ -273,6 +273,10 @@
         {
           "question": "What happens to nested JSON objects?",
           "answer": "Nested objects are flattened for the CSV output. Properties are represented using dot notation (e.g., address.city). Arrays within values are serialized as strings."
+        },
+        {
+          "question": "Can I convert Stripe or Braintree payment export JSON to CSV?",
+          "answer": "Yes. Stripe and Braintree API responses return JSON arrays of payment or transaction objects. Paste the array directly and the converter will build a CSV with columns for amount, currency, status, customer ID, and any other fields present in the response — ready for your finance team in Excel."
         }
       ]
     },

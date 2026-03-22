@@ -2,14 +2,14 @@
   "toolKey": "jsonToYaml",
   "locale": "en",
   "metadata": {
-    "title": "JSON to YAML converter - JSON YAML",
-    "description": "Convert JSON to YAML format. Automatic parsing and formatting. Free, no registration.",
+    "title": "JSON to YAML converter – clean config files for DevOps tools",
+    "description": "Turn JSON into readable YAML for Docker Compose, Kubernetes, GitHub Actions, and Helm charts. Proper 2-space indentation, no braces. Free, no registration, runs in browser.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/json-to-yaml-converter"
   },
   "hero": {
-    "title": "JSON to YAML converter",
-    "description": "Convert JSON to YAML format. Automatic parsing and formatting. Free, no registration.",
+    "title": "JSON configs are unreadable in Kubernetes — YAML fixes that",
+    "description": "Paste your JSON and get deployment-ready YAML for Docker Compose, GitHub Actions workflows, Helm charts, or Ansible playbooks — processed entirely in your browser, no account required.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -28,12 +28,12 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convert JSON to YAML format. Automatic parsing and formatting. Free, no registration.",
-      "featureList": ["JSON to YAML conversion", "Batch conversion", "Local browser processing"],
+      "featureList": ["Converts JSON to indentation-based YAML (2-space)", "Removes curly braces and quotes from keys for clean output", "Handles arrays with dash-space prefix notation", "Wraps strings containing special characters in quotes automatically", "Formats boolean gotchas (yes/no/on/off) correctly as quoted strings", "Preserves number precision and floating-point values", "Batch multi-file conversion", "Local browser processing – no upload", "Output passes yamllint validation", "Compatible with Docker Compose, Kubernetes, GitHub Actions, Ansible, and Helm"],
       "alternateName": ["Convert JSON to YAML", "JSON to YAML", "Free JSON to YAML converter"]
     },
     "howTo": {
       "name": "How to convert JSON to YAML",
-      "description": "Convert JSON to YAML format. Automatic parsing and formatting. Free, no registration.",
+      "description": "Turn JSON into readable YAML for Docker Compose, Kubernetes, GitHub Actions, and Helm charts. Proper 2-space indentation, no braces. Free, no registration, runs in browser.",
       "steps": [
         {
           "position": 1,
@@ -77,17 +77,17 @@
       "items": [
         {
           "title": "Paste your data",
-          "description": "Paste or type your JSON data into the input field.",
+          "description": "Paste your JSON — an AWS CloudFormation template, an OpenAPI spec, a Kubernetes manifest draft, or any structured JSON config. You can also upload a .json file from your machine.",
           "icon": "RiUploadCloud2Line"
         },
         {
           "title": "Convert",
-          "description": "Click Convert to transform your JSON data into YAML format.",
+          "description": "Click Convert. Curly braces are replaced with indentation, arrays get dash notation, and strings with special characters are automatically quoted so the output passes yamllint without errors.",
           "icon": "RiSettings3Line"
         },
         {
           "title": "Copy or download",
-          "description": "Copy the YAML output to clipboard or download as a file.",
+          "description": "Copy the YAML to clipboard and paste directly into your docker-compose.yml, .github/workflows/*.yml, or deployment.yaml file. Download as a .yaml file for version control or Helm chart packaging.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -244,7 +244,7 @@
     {
       "type": "faq",
       "title": "Frequently asked questions about JSON to YAML conversion",
-      "openByDefault": 0,
+      "openByDefault": 1,
       "items": [
         {
           "question": "Is converting JSON to YAML free?",
@@ -273,6 +273,10 @@
         {
           "question": "Is the conversion lossless?",
           "answer": "Yes. All data types (strings, numbers, booleans, null, arrays, objects) are preserved exactly. YAML supports the same data types as JSON, so no information is lost."
+        },
+        {
+          "question": "Can I convert a JSON OpenAPI spec to YAML for use in Swagger or Stoplight?",
+          "answer": "Yes. OpenAPI specifications are commonly distributed in both JSON and YAML formats. Paste your OpenAPI JSON and the converter produces valid YAML that Swagger UI, Stoplight, Redoc, and other API documentation tools accept directly."
         }
       ]
     },

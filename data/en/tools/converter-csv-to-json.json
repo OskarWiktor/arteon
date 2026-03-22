@@ -2,14 +2,14 @@
   "toolKey": "csvToJson",
   "locale": "en",
   "metadata": {
-    "title": "CSV to JSON converter - CSV JSON",
-    "description": "Convert CSV to JSON format. Automatic parsing and formatting. Free, no registration.",
+    "title": "CSV to JSON converter – paste, convert, copy in seconds",
+    "description": "Turn any CSV file into clean, formatted JSON instantly. Auto-detects separators, preserves headers as keys. Works in browser – no registration, no upload, free.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/csv-to-json-converter"
   },
   "hero": {
-    "title": "CSV to JSON converter",
-    "description": "Convert CSV to JSON format. Automatic parsing and formatting. Free, no registration.",
+    "title": "From spreadsheet to REST-ready JSON in one click",
+    "description": "Export your CSV from Google Sheets, Shopify, or PostgreSQL and get structured JSON ready for APIs, MongoDB, or D3.js — entirely in your browser.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -28,12 +28,12 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convert CSV to JSON format. Automatic parsing and formatting. Free, no registration.",
-      "featureList": ["CSV to JSON conversion", "Batch conversion", "Local browser processing"],
+      "featureList": ["Auto-detection of comma, semicolon, and tab delimiters", "First-row header mapping to JSON property names", "Handles quoted values and embedded newlines", "Unicode and special character preservation", "Batch multi-file conversion", "Local browser processing – no upload", "Download output as .json file", "Compatible with Shopify, Google Sheets, and PostgreSQL COPY exports", "Supports Python pandas and D3.js input format", "Empty cell handling with empty string or null"],
       "alternateName": ["Convert CSV to JSON", "CSV to JSON", "Free CSV to JSON converter"]
     },
     "howTo": {
       "name": "How to convert CSV to JSON",
-      "description": "Convert CSV to JSON format. Automatic parsing and formatting. Free, no registration.",
+      "description": "Turn any CSV file into clean, formatted JSON instantly. Auto-detects separators, preserves headers as keys. Works in browser – no registration, no upload, free.",
       "steps": [
         {
           "position": 1,
@@ -82,12 +82,12 @@
         },
         {
           "title": "Convert",
-          "description": "Click Convert to transform your CSV data into JSON format.",
+          "description": "Click Convert. The tool reads your headers as JSON property names and each subsequent row becomes a JSON object in the output array. Conversion happens instantly in your browser.",
           "icon": "RiSettings3Line"
         },
         {
           "title": "Copy or download",
-          "description": "Copy the JSON output to clipboard or download as a file.",
+          "description": "Copy the formatted JSON to clipboard for immediate use in your code editor, API client, or database import script — or download it as a .json file.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -244,7 +244,7 @@
     {
       "type": "faq",
       "title": "Frequently asked questions about CSV to JSON conversion",
-      "openByDefault": 0,
+      "openByDefault": 1,
       "items": [
         {
           "question": "Is converting CSV to JSON free?",
@@ -273,6 +273,10 @@
         {
           "question": "What happens to empty values in CSV?",
           "answer": "Empty cells in CSV are converted to empty strings in JSON. If your CSV has trailing commas or inconsistent column counts, the converter handles them gracefully."
+        },
+        {
+          "question": "Can I use CSV exports from Shopify or Google Sheets directly?",
+          "answer": "Yes. Shopify product exports, Google Sheets CSV downloads, and PostgreSQL COPY command output are all supported. The converter auto-detects whether commas or semicolons are used as the separator, so no manual adjustment is needed."
         }
       ]
     },

@@ -2,14 +2,14 @@
   "toolKey": "markdownToHtml",
   "locale": "en",
   "metadata": {
-    "title": "Markdown to HTML converter - Markdown HTML",
-    "description": "Convert Markdown to HTML format. Automatic parsing and formatting. Free, no registration.",
+    "title": "Markdown to HTML converter – publish content without a build tool",
+    "description": "Turn Markdown drafts into clean, semantic HTML for emails, CMS entry, and Next.js or Docusaurus previews. CommonMark spec. Free, no registration, works in browser.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/markdown-to-html-converter"
   },
   "hero": {
-    "title": "Markdown to HTML converter",
-    "description": "Convert Markdown to HTML format. Automatic parsing and formatting. Free, no registration.",
+    "title": "Write in Markdown, publish anywhere as clean HTML",
+    "description": "Draft your blog post, email, or documentation in readable Markdown and convert it to semantic HTML for Docusaurus, GitBook, a CMS, or an HTML email campaign — instantly, in your browser.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -28,12 +28,12 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convert Markdown to HTML format. Automatic parsing and formatting. Free, no registration.",
-      "featureList": ["Markdown to HTML conversion", "Batch conversion", "Local browser processing"],
+      "featureList": ["Full CommonMark specification support", "Converts # through ###### to <h1>–<h6> heading elements", "Converts **bold** and *italic* to <strong> and <em>", "Converts [text](url) links and ![alt](src) images to HTML", "Converts fenced code blocks (```) to <pre><code> with language class", "Converts pipe tables to semantic <table><thead><tbody>", "Converts blockquotes to <blockquote> elements", "Passes inline HTML through unchanged", "Batch multi-file conversion", "Local browser processing – no upload"],
       "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
     },
     "howTo": {
       "name": "How to convert Markdown to HTML",
-      "description": "Convert Markdown to HTML format. Automatic parsing and formatting. Free, no registration.",
+      "description": "Turn Markdown drafts into clean, semantic HTML for emails, CMS entry, and Next.js or Docusaurus previews. CommonMark spec. Free, no registration, works in browser.",
       "steps": [
         {
           "position": 1,
@@ -77,17 +77,17 @@
       "items": [
         {
           "title": "Paste your data",
-          "description": "Paste or type your Markdown data into the input field.",
+          "description": "Paste your Markdown — a README draft, a blog post written in Obsidian, a Docusaurus page, or any text with standard Markdown formatting. You can also upload a .md file directly from your computer.",
           "icon": "RiUploadCloud2Line"
         },
         {
           "title": "Convert",
-          "description": "Click Convert to transform your Markdown data into HTML format.",
+          "description": "Click Convert. The converter parses the full CommonMark spec: headings, bold, italic, links, images, fenced code blocks with language hints, pipe tables, blockquotes, and horizontal rules. Output is clean semantic HTML without unnecessary wrapper elements.",
           "icon": "RiSettings3Line"
         },
         {
           "title": "Copy or download",
-          "description": "Copy the HTML output to clipboard or download as a file.",
+          "description": "Copy the HTML and paste it into your CMS content field, HTML email template, or Docusaurus/GitBook page. Or download the .html file to use in a Next.js MDX preview or static site build pipeline.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -202,7 +202,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for converting MARKDOWN to HTML",
+      "title": "Tips for converting Markdown to HTML",
       "description": "A few tips to help you avoid common issues during conversion:",
       "grid": "two",
       "items": [
@@ -244,7 +244,7 @@
     {
       "type": "faq",
       "title": "Frequently asked questions about Markdown to HTML conversion",
-      "openByDefault": 0,
+      "openByDefault": 1,
       "items": [
         {
           "question": "Is converting Markdown to HTML free?",
@@ -273,6 +273,10 @@
         {
           "question": "Can I use the HTML output on my website?",
           "answer": "Yes. The output is clean, semantic HTML that you can paste directly into any website, CMS, email template, or web application. You can style it with your own CSS."
+        },
+        {
+          "question": "Can I use the HTML output in an email campaign?",
+          "answer": "Yes. A common workflow is to write email content in Markdown for readability, then convert to HTML before pasting into your email platform (Mailchimp, SendGrid, HubSpot). The converter produces clean HTML without React or framework-specific syntax, so it works with any email builder that accepts raw HTML."
         }
       ]
     },
