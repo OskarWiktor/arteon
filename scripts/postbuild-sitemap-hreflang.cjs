@@ -55,8 +55,10 @@ const LOCALE_TO_HREFLANG = {
   el: 'el',
 };
 
+// Locale root pages (/en, /de, …) are permanentRedirect() stubs — not real pages.
+// They are excluded from this hreflang group to avoid misleading Google.
+// PL homepage (/) has no multilingual equivalent and carries no hreflang.
 const MULTILINGUAL_PAGES = [
-  { pl: '/', en: '/en', de: '/de', es: '/es', fr: '/fr', pt: '/pt', it: '/it', ro: '/ro', nl: '/nl', hu: '/hu', cs: '/cs', sv: '/sv', da: '/da', no: '/no', fi: '/fi', el: '/el' },
   {
     pl: '/o-nas',
     en: '/en/about',

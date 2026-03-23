@@ -54,6 +54,24 @@ Kompletny system SEO dla Arteon Agency — od meta tagów po AI search optimizat
 [Primary Keyword] - [Benefit/Feature]
 ```
 
+### Hero Title dla narzędzi konwerterów (KRYTYCZNE)
+
+Hero title = H1. Dla konwerterów musi odzwierciedlać intencję wyszukiwania — oba formaty muszą być widoczne.
+
+**Formuła PL:** `[Przelicz/Zamień] [FORMAT_A] na [FORMAT_B] – [kontekst, max 5 słów]`
+**Formuła EN:** `Convert [FORMAT_A] to [FORMAT_B] – [context, max 5 words]`
+
+Zasady: oba formaty w tytule, czasownik akcji, brak fillerów, max 70 znaków.
+
+```
+✅ "Przelicz RGB na HSL – konwerter kolorów CSS"
+✅ "Przelicz em na px – konwerter CSS z ustawianym font-size"
+✅ "Convert RGB to HSL – CSS color converter"
+❌ "Kolory CSS w formacie HSL – twórz palety" (brak "RGB")
+❌ "Oblicz piksele z em bez zgadywania" (filler, brak "em na px")
+❌ "HTML na Markdown – migracja treści z CMS" (use-case zamiast intencji)
+```
+
 ## Meta Description (150-160 chars)
 
 ```typescript

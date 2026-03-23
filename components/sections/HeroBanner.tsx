@@ -112,6 +112,7 @@ export default function HeroBanner({
           priority
           fetchPriority="high"
           sizes="100vw"
+          quality={60}
           className="object-cover object-center"
           itemProp={emitImageMicrodata ? 'image' : undefined}
         />

@@ -116,18 +116,37 @@ const nextConfig: NextConfig = {
     const staticRedirects: Redirect[] = Object.entries(ALL_STATIC_REDIRECTS).map(([source, destination]) => ({
       source,
       destination,
-      permanent: true,
+      statusCode: 301,
     }));
 
     const patternRedirects: Redirect[] = [
-      { source: '/projects/:slug', destination: '/realizacje/:slug', permanent: true },
-      { source: '/edukacja/design/:path*', destination: '/edukacja/grafika/:path*', permanent: true },
+      { source: '/projects/:slug', destination: '/realizacje/:slug', statusCode: 301 },
+      { source: '/edukacja/design/:path*', destination: '/edukacja/grafika/:path*', statusCode: 301 },
+    ];
+
+    // Locale root pages — redirect to tools index (replaces permanentRedirect() stubs)
+    const localeRootRedirects: Redirect[] = [
+      { source: '/en', destination: '/en/tools', statusCode: 301 },
+      { source: '/de', destination: '/de/werkzeuge', statusCode: 301 },
+      { source: '/es', destination: '/es/herramientas', statusCode: 301 },
+      { source: '/fr', destination: '/fr/outils', statusCode: 301 },
+      { source: '/pt', destination: '/pt/ferramentas', statusCode: 301 },
+      { source: '/it', destination: '/it/strumenti', statusCode: 301 },
+      { source: '/ro', destination: '/ro/instrumente', statusCode: 301 },
+      { source: '/nl', destination: '/nl/tools', statusCode: 301 },
+      { source: '/hu', destination: '/hu/eszkozok', statusCode: 301 },
+      { source: '/cs', destination: '/cs/nastroje', statusCode: 301 },
+      { source: '/sv', destination: '/sv/verktyg', statusCode: 301 },
+      { source: '/da', destination: '/da/vaerktojer', statusCode: 301 },
+      { source: '/no', destination: '/no/verktoy', statusCode: 301 },
+      { source: '/fi', destination: '/fi/tyokalut', statusCode: 301 },
+      { source: '/el', destination: '/el/ergaleia', statusCode: 301 },
     ];
 
     // Canonical host redirect (HTTP→HTTPS, non-www→www, trailing slash)
     // is handled by middleware.ts at the edge level in a single 301 hop.
 
-    return [...staticRedirects, ...patternRedirects];
+    return [...staticRedirects, ...patternRedirects, ...localeRootRedirects];
   },
 };
 
