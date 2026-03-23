@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter rem na px – jednostki CSS z ustawianym font-size",
-    "description": "Przelicz rem na piksele i odwrotnie – ustaw bazowy font-size i sprawdz wynik natychmiast. Niezbedny przy pracy z Tailwind CSS i dostepnoscia WCAG. Bez rejestracji.",
+    "description": "Przelicz rem na piksele i odwrotnie – ustaw bazowy font-size i sprawdź wynik natychmiast. Niezbędny przy pracy z Tailwind CSS i dostępnością WCAG. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-rem-na-px"
   },
   "hero": {
-    "title": "Przelicz rem na px – sprawdz rozmiary Tailwind CSS od razu",
-    "description": "Ustaw bazowy font-size i natychmiast zobaczysz, ile pikseli ma 1,5 rem lub 0,875 rem. Koniec z recznym dzieleniem przez 16.",
+    "title": "Przelicz rem na px – konwerter CSS z ustawianym font-size",
+    "description": "Ustaw bazowy font-size i natychmiast zobaczysz, ile pikseli ma 1,5 rem lub 0,875 rem. Koniec z ręcznym dzieleniem przez 16.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {

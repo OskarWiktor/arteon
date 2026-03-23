@@ -8,7 +8,7 @@
     "path": "/en/tools/decimal-to-hex-converter"
   },
   "hero": {
-    "title": "Decode hex values in CSS, JavaScript, and memory dumps",
+    "title": "Convert decimal to hex – CSS colors and code values",
     "description": "255 = FF. 65535 = FFFF. Convert any decimal to hex — or hex back to decimal — instantly for web colors, debugging, and Unicode lookups.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },

@@ -8,7 +8,7 @@
     "path": "/en/tools/json-to-xml-converter"
   },
   "hero": {
-    "title": "Your JSON doesn't speak SOAP — this converter fixes that",
+    "title": "Convert JSON to XML – SOAP APIs and legacy systems",
     "description": "Enterprise systems, Android manifests, Salesforce data exchange, and RSS feeds all require XML. Paste your JSON and get valid, indented XML output in seconds — no server needed.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },

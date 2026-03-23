@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter cali na px (DPI) – inches na piksele, Letter, 4x6",
-    "description": "Przelicz cale na piksele z regulowanym DPI – Letter 8,5 x 11 cali to 2550 x 3300 px przy 300 DPI. Niezbedny do druku foto i dokumentow US. Bez rejestracji.",
+    "description": "Przelicz cale na piksele z regulowanym DPI – Letter 8,5 x 11 cali to 2550 x 3300 px przy 300 DPI. Niezbędny do druku foto i dokumentów US. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-cale-na-px"
   },
   "hero": {
     "title": "Przelicz cale na piksele – formaty US Letter, 4x6 i inne",
-    "description": "Wpisz wymiary w calach, ustaw DPI i sprawdz wymagana liczbe pikseli – niezbedne przy drukowaniu zdjec 4x6 cali i dokumentow w formacie Letter.",
+    "description": "Wpisz wymiary w calach, ustaw DPI i sprawdź wymaganą liczbę pikseli – niezbędne przy drukowaniu zdjęć 4x6 cali i dokumentow w formacie Letter.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -32,7 +32,7 @@
       ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz cale na piksele z regulowanym DPI – Letter 8,5 x 11 cali to 2550 x 3300 px przy 300 DPI. Niezbedny do druku foto i dokumentow US. Bez rejestracji.",
+      "description": "Przelicz cale na piksele z regulowanym DPI – Letter 8,5 x 11 cali to 2550 x 3300 px przy 300 DPI. Niezbędny do druku foto i dokumentów US. Bez rejestracji.",
       "featureList": [
         "Regulowane DPI – 72, 96, 150, 300 lub dowolna wartosc",
         "Obustronna konwersja: cale na px i px na cale",

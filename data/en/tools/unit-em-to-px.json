@@ -8,7 +8,7 @@
     "path": "/en/tools/em-to-px-converter"
   },
   "hero": {
-    "title": "Get exact pixel values from em — no root font-size guesswork",
+    "title": "Convert em to px – CSS converter with custom font-size",
     "description": "em compounds through the DOM tree — so the rendered px depends on context. Set your base size and see the result instantly.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },

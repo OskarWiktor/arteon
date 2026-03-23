@@ -8,7 +8,7 @@
     "path": "/en/tools/cm-to-px-converter"
   },
   "hero": {
-    "title": "CM to pixels at any DPI — print dimensions to exact pixel counts",
+    "title": "Convert cm to px – print dimensions at any DPI",
     "description": "Pixels = cm × DPI / 2.54. Set your DPI (72, 96, 150, 300) and get the exact pixel count for any centimeter dimension instantly.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },

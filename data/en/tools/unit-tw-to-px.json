@@ -8,7 +8,7 @@
     "path": "/en/tools/tailwind-css-spacing-to-px-converter"
   },
   "hero": {
-    "title": "Tailwind spacing in pixels — see p-4 and every spacing class instantly",
+    "title": "Convert Tailwind spacing to px – p-4, w-48, gap-8 values",
     "description": "Each Tailwind unit equals 4px at default root. p-6 = 24px, w-48 = 192px, gap-8 = 32px — look up any class without switching tabs.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },

@@ -8,7 +8,7 @@
     "path": "/en/tools/unix-timestamp-converter"
   },
   "hero": {
-    "title": "Turn that cryptic number into a readable date",
+    "title": "Convert Unix timestamp to date – epoch converter",
     "description": "Paste any Unix timestamp and see the exact UTC date — or enter a date to get its epoch value for APIs, logs, and database queries.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },

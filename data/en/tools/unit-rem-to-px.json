@@ -8,7 +8,7 @@
     "path": "/en/tools/rem-to-px-converter"
   },
   "hero": {
-    "title": "Pixel values from rem — set any :root font size, get the exact result",
+    "title": "Convert rem to px – set any :root font size",
     "description": "rem always references the root element, not the parent. Change the base size once to see how Tailwind, spacing systems, and WCAG targets shift.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },

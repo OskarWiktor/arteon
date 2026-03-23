@@ -8,7 +8,7 @@
     "path": "/en/tools/hex-to-rgb-converter"
   },
   "hero": {
-    "title": "HEX to RGB – get exact channel values for JavaScript, React, and CSS-in-JS",
+    "title": "Convert HEX to RGB – CSS and JavaScript color values",
     "description": "JavaScript canvas, styled-components, and React inline styles need RGB numbers — not hex strings. Get the exact R, G, B values in one step.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },

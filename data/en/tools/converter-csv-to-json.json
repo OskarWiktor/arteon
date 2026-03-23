@@ -8,7 +8,7 @@
     "path": "/en/tools/csv-to-json-converter"
   },
   "hero": {
-    "title": "From spreadsheet to REST-ready JSON in one click",
+    "title": "Convert CSV to JSON – auto-detect separator",
     "description": "Export your CSV from Google Sheets, Shopify, or PostgreSQL and get structured JSON ready for APIs, MongoDB, or D3.js — entirely in your browser.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },

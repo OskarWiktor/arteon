@@ -8,7 +8,7 @@
     "path": "/en/tools/json-to-csv-converter"
   },
   "hero": {
-    "title": "Share API data with your team as a clean CSV spreadsheet",
+    "title": "Convert JSON to CSV – API data to spreadsheet",
     "description": "Got a Stripe export, GitHub Issues JSON, or Postman response? Convert it to CSV and open it straight in Excel or Google Sheets — no code, no server, no wait.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },

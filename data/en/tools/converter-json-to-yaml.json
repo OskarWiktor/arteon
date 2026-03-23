@@ -8,7 +8,7 @@
     "path": "/en/tools/json-to-yaml-converter"
   },
   "hero": {
-    "title": "JSON configs are unreadable in Kubernetes — YAML fixes that",
+    "title": "Convert JSON to YAML – Docker, Kubernetes, GitHub Actions",
     "description": "Paste your JSON and get deployment-ready YAML for Docker Compose, GitHub Actions workflows, Helm charts, or Ansible playbooks — processed entirely in your browser, no account required.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },

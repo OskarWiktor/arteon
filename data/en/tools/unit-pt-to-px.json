@@ -8,7 +8,7 @@
     "path": "/en/tools/pt-to-px-converter"
   },
   "hero": {
-    "title": "Bridge print and screen typography — pt to px without the formula",
+    "title": "Convert pt to px – print and screen typography sizes",
     "description": "Word uses pt, CSS uses px. 12pt = 16px at 96dpi — the browser default. Look up any size instantly, from fine print to display headings.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },

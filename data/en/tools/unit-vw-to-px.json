@@ -8,7 +8,7 @@
     "path": "/en/tools/vw-to-px-converter"
   },
   "hero": {
-    "title": "See what vw equals in pixels at any viewport — fluid layout clarity",
+    "title": "Convert vw to px – fluid layout at any viewport width",
     "description": "1vw changes with every screen size. Enter your vw value and viewport width to see the exact pixel output — essential for clamp() fluid typography.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
