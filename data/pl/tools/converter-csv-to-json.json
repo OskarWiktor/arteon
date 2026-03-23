@@ -2,13 +2,13 @@
   "toolKey": "csvToJson",
   "locale": "pl",
   "metadata": {
-    "title": "CSV na JSON – darmowy konwerter działający w przeglądarce",
+    "title": "Konwerter CSV na JSON – automatyczne formatowanie danych",
     "description": "Zamień plik CSV na poprawny JSON z automatycznym formatowaniem i wykrywaniem separatora. Działa w przeglądarce, bez rejestracji – dane nie opuszczają komputera.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-csv-na-json"
   },
   "hero": {
-    "title": "CSV na JSON – gotowe dane dla API i aplikacji webowych",
+    "title": "Zamień CSV na JSON – konwerter z wykrywaniem separatora",
     "description": "Eksporty z WooCommerce i PrestaShop prosto do JSON. Konwerter tworzy struktury gotowe do REST API – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,11 +25,26 @@
   "schemas": {
     "software": {
       "name": "Konwerter CSV na JSON - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana CSV na JSON online", "Konwersja CSV do JSON", "CSV to JSON converter"],
+      "alternateName": [
+        "Zamiana CSV na JSON online",
+        "Konwersja CSV do JSON",
+        "CSV to JSON converter"
+      ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter CSV na JSON online. Zamień dane CSV na JSON w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja CSV na tablicę obiektów JSON", "Automatyczne wykrywanie separatora (przecinek, średnik, tabulator)", "Rozpoznawanie nagłówków kolumn jako kluczy JSON", "Obsługa wartości w cudzysłowach i znaków nowej linii w komórkach", "Pełna obsługa polskich znaków diakrytycznych (UTF-8)", "Walidacja składni CSV przed konwersją", "Przetwarzanie lokalne – dane nie opuszczają przeglądarki", "Formatowanie wyniku z wcięciami (pretty-print)", "Kopiowanie do schowka jednym kliknięciem", "Pobieranie wyniku jako plik .json"]
+      "featureList": [
+        "Konwersja CSV na tablicę obiektów JSON",
+        "Automatyczne wykrywanie separatora (przecinek, średnik, tabulator)",
+        "Rozpoznawanie nagłówków kolumn jako kluczy JSON",
+        "Obsługa wartości w cudzysłowach i znaków nowej linii w komórkach",
+        "Pełna obsługa polskich znaków diakrytycznych (UTF-8)",
+        "Walidacja składni CSV przed konwersją",
+        "Przetwarzanie lokalne – dane nie opuszczają przeglądarki",
+        "Formatowanie wyniku z wcięciami (pretty-print)",
+        "Kopiowanie do schowka jednym kliknięciem",
+        "Pobieranie wyniku jako plik .json"
+      ]
     },
     "howTo": {
       "name": "Jak zamienić CSV na JSON online",

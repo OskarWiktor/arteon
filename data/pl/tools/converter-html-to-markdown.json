@@ -2,13 +2,13 @@
   "toolKey": "htmlToMarkdown",
   "locale": "pl",
   "metadata": {
-    "title": "HTML na Markdown – konwerter dla GitHub, Notion i Obsidian",
+    "title": "Konwerter HTML na Markdown – dla GitHub, Notion i Obsidian",
     "description": "Zamień kod HTML na czytelny Markdown dla GitHub Wiki, Notion i generatorów statycznych. Działa w przeglądarce bez rejestracji – dane zostają na komputerze.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-html-na-markdown"
   },
   "hero": {
-    "title": "HTML na Markdown – migracja treści z CMS do repozytorium Git",
+    "title": "Zamień HTML na Markdown – konwerter dla GitHub i Notion",
     "description": "Przenosisz treści z WordPressa do Notion lub Git? Konwerter usuwa tagi HTML, dając Markdown gotowy do README.md – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,11 +25,26 @@
   "schemas": {
     "software": {
       "name": "Konwerter HTML na Markdown - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana HTML na Markdown online", "Konwersja HTML do Markdown", "HTML to Markdown converter"],
+      "alternateName": [
+        "Zamiana HTML na Markdown online",
+        "Konwersja HTML do Markdown",
+        "HTML to Markdown converter"
+      ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter HTML na Markdown online. Zamień dane HTML na Markdown w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja tagów semantycznych HTML (h1–h6, p, ul, ol, a, img, code, table) na składnię Markdown", "Obsługa tabel HTML jako tabel GFM (GitHub Flavored Markdown)", "Konwersja bloków kodu <pre><code> na ogrodzenia potrójnymi grawisami", "Usuwanie tagów strukturalnych (div, span, section) z zachowaniem treści", "Usuwanie inline CSS i klas – wynik to czysty tekst Markdown", "Zachowanie zagnieżdżonych list numerowanych i nienumerowanych", "Konwersja linków i obrazów HTML na składnię Markdown", "Obsługa cytatów blockquote i wyróżnień (strong, em, del)", "Przetwarzanie lokalne – dane nie opuszczają przeglądarki", "Pobieranie wyniku jako plik .md"]
+      "featureList": [
+        "Konwersja tagów semantycznych HTML (h1–h6, p, ul, ol, a, img, code, table) na składnię Markdown",
+        "Obsługa tabel HTML jako tabel GFM (GitHub Flavored Markdown)",
+        "Konwersja bloków kodu <pre><code> na ogrodzenia potrójnymi grawisami",
+        "Usuwanie tagów strukturalnych (div, span, section) z zachowaniem treści",
+        "Usuwanie inline CSS i klas – wynik to czysty tekst Markdown",
+        "Zachowanie zagnieżdżonych list numerowanych i nienumerowanych",
+        "Konwersja linków i obrazów HTML na składnię Markdown",
+        "Obsługa cytatów blockquote i wyróżnień (strong, em, del)",
+        "Przetwarzanie lokalne – dane nie opuszczają przeglądarki",
+        "Pobieranie wyniku jako plik .md"
+      ]
     },
     "howTo": {
       "name": "Jak zamienić HTML na Markdown online",

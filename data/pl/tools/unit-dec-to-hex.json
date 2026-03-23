@@ -2,13 +2,13 @@
   "toolKey": "decToHex",
   "locale": "pl",
   "metadata": {
-    "title": "Dziesiętny na szesnastkowy – DEC na HEX dla web devów i IT",
+    "title": "Konwerter DEC na HEX – dziesiętne na szesnastkowe CSS",
     "description": "Przelicz liczby dziesiętne na HEX i odwrotnie. Niezbędne przy kolorach CSS, debugowaniu pamięci i adresach MAC. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-dziesietny-na-szesnastkowy"
   },
   "hero": {
-    "title": "Kolory CSS, adresy MAC, kody HEX – przelicz DEC na szesnastkowy",
+    "title": "Przelicz DEC na HEX – liczby dziesiętne na szesnastkowe",
     "description": "Polscy web developerzy używają HEX w CSS codziennie. Przelicz RGB na kod szesnastkowy lub sprawdź adres pamięci – wynik pojawia się natychmiast, bez instalacji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },

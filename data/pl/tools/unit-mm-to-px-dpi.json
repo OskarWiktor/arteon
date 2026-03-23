@@ -2,13 +2,13 @@
   "toolKey": "mmToPxDpi",
   "locale": "pl",
   "metadata": {
-    "title": "Przelicznik mm na piksele (DPI) – milimetry na px do druku",
+    "title": "Konwerter mm na px (DPI) – milimetry na piksele dla druku",
     "description": "Przelicz milimetry na piksele z regulowanym DPI – wizytówka 85 x 55 mm to 1004 x 650 px przy 300 DPI. Niezbędny w poligrafii i Photoshopie. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-mm-na-px"
   },
   "hero": {
-    "title": "Milimetry na piksele – formaty A4 i poligraficzne bez ręcznych obliczeń",
+    "title": "Przelicz mm na px – konwerter milimetrów na piksele (DPI)",
     "description": "Wpisz wymiary wizytówki, ulotki lub plakatu w milimetrach, ustaw DPI drukarni i natychmiast sprawdź wymaganą liczbę pikseli.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },

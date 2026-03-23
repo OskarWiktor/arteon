@@ -2,13 +2,13 @@
   "toolKey": "markdownToHtml",
   "locale": "pl",
   "metadata": {
-    "title": "Markdown na HTML – konwerter dla CMS, e-maili i dokumentacji",
+    "title": "Konwerter Markdown na HTML – dla CMS, e-maili i dokumentacji",
     "description": "Zamień plik Markdown na semantyczny HTML gotowy do WordPressa, Docusaurusa i szablonów e-mail. Działa w przeglądarce bez rejestracji – dane zostają na komputerze.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-markdown-na-html"
   },
   "hero": {
-    "title": "Markdown na HTML – gotowy kod dla CMS, newslettera i Docusaurusa",
+    "title": "Zamień Markdown na HTML – konwerter dla CMS i newsletterów",
     "description": "Piszesz w Markdown, ale CMS lub e-mail wymaga HTML? Konwerter generuje semantyczny HTML z poprawnymi tagami – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,11 +25,26 @@
   "schemas": {
     "software": {
       "name": "Konwerter Markdown na HTML - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana Markdown na HTML online", "Konwersja Markdown do HTML", "Markdown to HTML converter"],
+      "alternateName": [
+        "Zamiana Markdown na HTML online",
+        "Konwersja Markdown do HTML",
+        "Markdown to HTML converter"
+      ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter Markdown na HTML online. Zamień dane Markdown na HTML w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja pełnej składni CommonMark i GitHub Flavored Markdown (GFM)", "Generowanie semantycznych tagów HTML: h1–h6, p, ul, ol, pre, code, blockquote", "Konwersja tabel Markdown (GFM) na tagi <table><thead><tbody>", "Obsługa list zadań GFM jako <input type=\"checkbox\">", "Konwersja bloków kodu z językiem na <code class=\"language-js\">", "Przekreślony tekst (~~tekst~~) jako tag <del>", "Wynik bez inline CSS – styl pochodzi z arkusza strony docelowej", "Obsługa linków i obrazów Markdown z atrybutem alt", "Przetwarzanie lokalne – dane nie opuszczają przeglądarki", "Pobieranie wyniku jako plik .html"]
+      "featureList": [
+        "Konwersja pełnej składni CommonMark i GitHub Flavored Markdown (GFM)",
+        "Generowanie semantycznych tagów HTML: h1–h6, p, ul, ol, pre, code, blockquote",
+        "Konwersja tabel Markdown (GFM) na tagi <table><thead><tbody>",
+        "Obsługa list zadań GFM jako <input type=\"checkbox\">",
+        "Konwersja bloków kodu z językiem na <code class=\"language-js\">",
+        "Przekreślony tekst (~~tekst~~) jako tag <del>",
+        "Wynik bez inline CSS – styl pochodzi z arkusza strony docelowej",
+        "Obsługa linków i obrazów Markdown z atrybutem alt",
+        "Przetwarzanie lokalne – dane nie opuszczają przeglądarki",
+        "Pobieranie wyniku jako plik .html"
+      ]
     },
     "howTo": {
       "name": "Jak zamienić Markdown na HTML online",

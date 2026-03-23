@@ -2,13 +2,13 @@
   "toolKey": "jsonToXml",
   "locale": "pl",
   "metadata": {
-    "title": "JSON na XML – konwerter dla KSeF, SOAP i ERP bez rejestracji",
+    "title": "Konwerter JSON na XML – dla KSeF, SOAP i ERP bez rejestracji",
     "description": "Zamień dane JSON na poprawny XML z deklaracją i wcięciami. Przydatny przy integracji z KSeF, Comarch, SAP i SOAP API. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-json-na-xml"
   },
   "hero": {
-    "title": "JSON na XML – integracja z systemami ERP, KSeF i SOAP API",
+    "title": "Zamień JSON na XML – konwerter dla KSeF, SOAP i ERP",
     "description": "Comarch, KSeF lub SOAP API wymaga XML? Konwerter zamienia JSON na XML z deklaracją UTF-8 i wcięciami – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,11 +25,26 @@
   "schemas": {
     "software": {
       "name": "Konwerter JSON na XML - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana JSON na XML online", "Konwersja JSON do XML", "JSON to XML converter"],
+      "alternateName": [
+        "Zamiana JSON na XML online",
+        "Konwersja JSON do XML",
+        "JSON to XML converter"
+      ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter JSON na XML online. Zamień dane JSON na XML w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja obiektów i tablic JSON na elementy XML", "Generowanie deklaracji <?xml version=\"1.0\" encoding=\"UTF-8\"?>", "Owijanie struktury w element główny <root>", "Tablice JSON jako powtarzające się elementy XML", "Automatyczna sanityzacja kluczy JSON do poprawnych nazw XML", "Pełne formatowanie z wcięciami (pretty-print)", "Walidacja składni JSON przed konwersją z komunikatami błędów", "Przetwarzanie lokalne – dane nie opuszczają przeglądarki", "Kopiowanie do schowka jednym kliknięciem", "Pobieranie wyniku jako plik .xml"]
+      "featureList": [
+        "Konwersja obiektów i tablic JSON na elementy XML",
+        "Generowanie deklaracji <?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "Owijanie struktury w element główny <root>",
+        "Tablice JSON jako powtarzające się elementy XML",
+        "Automatyczna sanityzacja kluczy JSON do poprawnych nazw XML",
+        "Pełne formatowanie z wcięciami (pretty-print)",
+        "Walidacja składni JSON przed konwersją z komunikatami błędów",
+        "Przetwarzanie lokalne – dane nie opuszczają przeglądarki",
+        "Kopiowanie do schowka jednym kliknięciem",
+        "Pobieranie wyniku jako plik .xml"
+      ]
     },
     "howTo": {
       "name": "Jak zamienić JSON na XML online",

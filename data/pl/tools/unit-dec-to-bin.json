@@ -2,13 +2,13 @@
   "toolKey": "decToBin",
   "locale": "pl",
   "metadata": {
-    "title": "Dziesiętny na binarny – DEC na BIN, kurs informatyki IT",
+    "title": "Konwerter DEC na BIN – dziesiętne na binarne, maski IP",
     "description": "Przelicz liczby dziesiętne na binarne i odwrotnie. Niezbędne na kursach informatyki i przy programowaniu niskopoziomowym. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-dziesietny-na-binarny"
   },
   "hero": {
-    "title": "Liczby binarne bez rachowania na papierze – DEC na BIN w jednej chwili",
+    "title": "Przelicz DEC na BIN – liczby dziesiętne na binarne",
     "description": "Na kursach IT, przy maskach IP i operacjach bitowych liczysz ręcznie? Wklej liczbę i masz wynik natychmiast – bez instalacji, bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },

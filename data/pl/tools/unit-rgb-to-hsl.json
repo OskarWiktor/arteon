@@ -8,7 +8,7 @@
     "path": "/narzedzia/konwerter-rgb-na-hsl"
   },
   "hero": {
-    "title": "Kolory CSS w formacie HSL – twórz palety i tryb ciemny bez wysiłku",
+    "title": "Przelicz RGB na HSL – konwerter kolorów CSS",
     "description": "HSL pozwala budować palety kolorów przez zmianę jednego parametru. Przelicz RGB na HSL i projektuj spójne systemy kolorów w CSS.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,11 +25,25 @@
   "schemas": {
     "software": {
       "name": "Konwerter RGB na HSL – przelicz kolory",
-      "alternateName": ["Przelicznik RGB na HSL", "Kalkulator kolorów HSL", "RGB to HSL converter"],
+      "alternateName": [
+        "Przelicznik RGB na HSL",
+        "Kalkulator kolorów HSL",
+        "RGB to HSL converter"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz kolory RGB na HSL i odwrotnie. Niezbędny przy tworzeniu palet CSS, trybu ciemnego i systemów projektowych. Bez rejestracji, działa w przeglądarce.",
-      "featureList": ["Konwersja RGB na HSL w czasie rzeczywistym", "Konwersja HSL na RGB jednym kliknięciem", "Kopiowanie wynikowego kodu HSL do schowka", "Obliczenia lokalne – brak wysyłania danych na serwer", "Obsługa wartości całkowitych i dziesiętnych", "Tabela referencyjnych kolorów HSL dla Tailwind CSS", "Wsparcie dla trybu ciemnego – szybka zmiana parametru L", "Kompatybilność z wszystkimi nowoczesnymi przeglądarkami", "Brak instalacji i rejestracji – gotowe do użycia natychmiast"]
+      "featureList": [
+        "Konwersja RGB na HSL w czasie rzeczywistym",
+        "Konwersja HSL na RGB jednym kliknięciem",
+        "Kopiowanie wynikowego kodu HSL do schowka",
+        "Obliczenia lokalne – brak wysyłania danych na serwer",
+        "Obsługa wartości całkowitych i dziesiętnych",
+        "Tabela referencyjnych kolorów HSL dla Tailwind CSS",
+        "Wsparcie dla trybu ciemnego – szybka zmiana parametru L",
+        "Kompatybilność z wszystkimi nowoczesnymi przeglądarkami",
+        "Brak instalacji i rejestracji – gotowe do użycia natychmiast"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera RGB na HSL",

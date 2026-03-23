@@ -2,13 +2,13 @@
   "toolKey": "twToPx",
   "locale": "pl",
   "metadata": {
-    "title": "Tailwind CSS spacing na piksele – przelicznik klas p-4, m-8, gap",
+    "title": "Konwerter Tailwind CSS na px – klasy spacing p-4, m-8, gap",
     "description": "Przelicz wartości spacing Tailwind CSS na piksele – wpisz 4 i sprawdź, że to 16 px. Niezbędny przy pracy z Figma i pixel-perfect layoutami. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-tailwind-css-spacing-na-px"
   },
   "hero": {
-    "title": "Sprawdź, ile px ma p-4 i każda inna klasa Tailwind CSS",
+    "title": "Przelicz Tailwind spacing na px – klasy p-4, m-8, gap",
     "description": "Zamień spacing Tailwind na piksele natychmiast – bez liczenia w głowie, że p-6 to 24 px, a gap-8 to 32 px.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },

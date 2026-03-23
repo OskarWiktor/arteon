@@ -2,13 +2,13 @@
   "toolKey": "vwToPx",
   "locale": "pl",
   "metadata": {
-    "title": "Przelicznik vw na px – konwerter CSS viewport width do pikseli",
+    "title": "Konwerter vw na px – CSS viewport width do pikseli",
     "description": "Przelicz vw na piksele – podaj szerokosc okna i sprawdz wynik natychmiast. Niezbedny przy fluid typography z clamp() i responsywnych layoutach. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-vw-na-px"
   },
   "hero": {
-    "title": "Oblicz piksele z vw dla dowolnego rozmiaru ekranu w CSS",
+    "title": "Przelicz vw na px – konwerter CSS viewport width",
     "description": "Podaj szerokosc viewport i natychmiast sprawdz, ile pikseli ma 5 vw na telefonie, tablecie lub Full HD – klucz do fluid typography z clamp().",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },

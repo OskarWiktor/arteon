@@ -2,7 +2,7 @@
   "toolKey": "remToPx",
   "locale": "pl",
   "metadata": {
-    "title": "Przelicznik rem na px – konwerter CSS z ustawianym font-size",
+    "title": "Konwerter rem na px – jednostki CSS z ustawianym font-size",
     "description": "Przelicz rem na piksele i odwrotnie – ustaw bazowy font-size i sprawdz wynik natychmiast. Niezbedny przy pracy z Tailwind CSS i dostepnoscia WCAG. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-rem-na-px"

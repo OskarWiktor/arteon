@@ -2,13 +2,13 @@
   "toolKey": "bytesConverter",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter bajtów – B, KB, MB, GB, TB – ile to naprawdę?",
+    "title": "Konwerter bajtów – B, KB, MB, GB, TB w jednym miejscu",
     "description": "Przelicz bajty na KB, MB, GB i TB w systemie binarnym (1024). Sprawdź, dlaczego dysk 500 GB pokazuje tylko 465 GB. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-bajtow"
   },
   "hero": {
-    "title": "Ile GB zajmie projekt? Bajty, KB, MB, GB, TB w jednym miejscu",
+    "title": "Przelicz bajty na KB, MB, GB i TB – konwerter jednostek danych",
     "description": "Sprawdź pojemność dysku, limit załącznika lub rozmiar zdjęć RAW – wynik pojawia się natychmiast, bez instalacji i bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },

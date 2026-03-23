@@ -8,7 +8,7 @@
     "path": "/narzedzia/konwerter-hex-na-rgb"
   },
   "hero": {
-    "title": "Kolory HEX i RGB – jeden konwerter do CSS, Figmy i sprawdzania kontrastu",
+    "title": "Przelicz HEX na RGB – konwerter kolorów CSS i Figma",
     "description": "HEX z Figmy zamieniaj na RGB do obliczeń WCAG i arkuszy CSS. Przelicz w obu kierunkach natychmiast – bez instalacji, bez logowania.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,11 +25,25 @@
   "schemas": {
     "software": {
       "name": "Konwerter HEX na RGB – przelicz kolory",
-      "alternateName": ["Przelicznik kolorów HEX RGB", "Kalkulator HEX na RGB", "Konwerter kolorów CSS"],
+      "alternateName": [
+        "Przelicznik kolorów HEX RGB",
+        "Kalkulator HEX na RGB",
+        "Konwerter kolorów CSS"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz kolory HEX na RGB i odwrotnie. Przydatny przy sprawdzaniu kontrastu WCAG, pracy z Figma i budowaniu systemów projektowych. Bez rejestracji.",
-      "featureList": ["Konwersja HEX na RGB w czasie rzeczywistym", "Konwersja RGB na HEX jednym kliknięciem", "Obsługa skróconego zapisu HEX (np. #FFF)", "Obsługa kodu HEX z alfa (8-znakowy, np. #3B82F680)", "Kopiowanie wynikowego kodu RGB lub HEX do schowka", "Obliczenia lokalne – brak wysyłania danych na serwer", "Tabela popularnych kolorów CSS z wartościami HEX i RGB", "Wsparcie dla obliczeń kontrastu WCAG (wymaga wartości RGB)", "Brak instalacji i rejestracji – gotowe do użycia natychmiast"]
+      "featureList": [
+        "Konwersja HEX na RGB w czasie rzeczywistym",
+        "Konwersja RGB na HEX jednym kliknięciem",
+        "Obsługa skróconego zapisu HEX (np. #FFF)",
+        "Obsługa kodu HEX z alfa (8-znakowy, np. #3B82F680)",
+        "Kopiowanie wynikowego kodu RGB lub HEX do schowka",
+        "Obliczenia lokalne – brak wysyłania danych na serwer",
+        "Tabela popularnych kolorów CSS z wartościami HEX i RGB",
+        "Wsparcie dla obliczeń kontrastu WCAG (wymaga wartości RGB)",
+        "Brak instalacji i rejestracji – gotowe do użycia natychmiast"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera HEX na RGB",

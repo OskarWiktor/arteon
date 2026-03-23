@@ -2,13 +2,13 @@
   "toolKey": "jsonToYaml",
   "locale": "pl",
   "metadata": {
-    "title": "JSON na YAML – konwerter dla Docker, K8s i GitHub Actions",
+    "title": "Konwerter JSON na YAML – dla Docker, K8s i GitHub Actions",
     "description": "Zamień dane JSON na czytelny YAML dla docker-compose.yml, Kubernetes i GitHub Actions. Działa w przeglądarce bez rejestracji – dane zostają na komputerze.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-json-na-yaml"
   },
   "hero": {
-    "title": "JSON na YAML – czytelne konfiguracje DevOps bez nawiasów",
+    "title": "Zamień JSON na YAML – konwerter dla Docker i Kubernetes",
     "description": "Masz JSON i potrzebujesz YAML do Docker Compose lub K8s? Konwerter generuje YAML z wcięciami 2 spacji – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,11 +25,26 @@
   "schemas": {
     "software": {
       "name": "Konwerter JSON na YAML - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana JSON na YAML online", "Konwersja JSON do YAML", "JSON to YAML converter"],
+      "alternateName": [
+        "Zamiana JSON na YAML online",
+        "Konwersja JSON do YAML",
+        "JSON to YAML converter"
+      ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter JSON na YAML online. Zamień dane JSON na YAML w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja obiektów i tablic JSON na format YAML", "Standardowe wcięcia 2 spacji zgodne z konwencjami DevOps", "Tablice JSON jako listy YAML z prefiksem myślnika", "Automatyczne cytowanie wartości z dwukropkami i znakami specjalnymi", "Zachowanie typów: string, number, boolean i null", "Obsługa zagnieżdżonych obiektów wielopoziomowych", "Walidacja składni JSON przed konwersją z komunikatami błędów", "Przetwarzanie lokalne – dane nie opuszczają przeglądarki", "Kopiowanie do schowka jednym kliknięciem", "Pobieranie wyniku jako plik .yaml"]
+      "featureList": [
+        "Konwersja obiektów i tablic JSON na format YAML",
+        "Standardowe wcięcia 2 spacji zgodne z konwencjami DevOps",
+        "Tablice JSON jako listy YAML z prefiksem myślnika",
+        "Automatyczne cytowanie wartości z dwukropkami i znakami specjalnymi",
+        "Zachowanie typów: string, number, boolean i null",
+        "Obsługa zagnieżdżonych obiektów wielopoziomowych",
+        "Walidacja składni JSON przed konwersją z komunikatami błędów",
+        "Przetwarzanie lokalne – dane nie opuszczają przeglądarki",
+        "Kopiowanie do schowka jednym kliknięciem",
+        "Pobieranie wyniku jako plik .yaml"
+      ]
     },
     "howTo": {
       "name": "Jak zamienić JSON na YAML online",

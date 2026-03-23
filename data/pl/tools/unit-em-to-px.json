@@ -2,13 +2,13 @@
   "toolKey": "emToPx",
   "locale": "pl",
   "metadata": {
-    "title": "Przelicznik em na px – konwerter CSS z ustawianym font-size",
+    "title": "Konwerter em na px – jednostki CSS z ustawianym font-size",
     "description": "Oblicz piksele z em w CSS – ustaw font-size rodzica i sprawdź wynik od razu. Przydatny przy typografii, paddingu i media queries. Bez instalacji, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-em-na-px"
   },
   "hero": {
-    "title": "Oblicz piksele z em bez zgadywania i błędów w CSS",
+    "title": "Przelicz em na px – konwerter CSS z ustawianym font-size",
     "description": "Ustaw font-size rodzica i natychmiast sprawdź, ile pikseli ma 1,5 em lub 0,875 em – bez kalkulatora i ręcznych przeliczeń.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },

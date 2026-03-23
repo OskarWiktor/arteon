@@ -2,13 +2,13 @@
   "toolKey": "mbpsToMBs",
   "locale": "pl",
   "metadata": {
-    "title": "Mbps na MB/s – prędkość internetu w realnych megabajtach",
+    "title": "Konwerter Mbps na MB/s – prędkość łącza w bajtach",
     "description": "Przelicz Mbps na MB/s i sprawdź realną prędkość pobierania plików. Porównaj oferty Orange, T-Mobile, Play i UPC. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-mbps-na-mbs"
   },
   "hero": {
-    "title": "Ile naprawdę pobierasz? Prędkość łącza w MB/s – nie Mbps",
+    "title": "Przelicz Mbps na MB/s – prędkość łącza w megabajtach",
     "description": "Operatorzy podają Mbps, menedżer pobierania pokazuje MB/s – ta różnica to nie błąd, lecz 8-krotny przelicznik. Sprawdź swoje łącze w sekundę, bez instalacji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },

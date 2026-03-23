@@ -2,7 +2,7 @@
   "toolKey": "inchesToPxDpi",
   "locale": "pl",
   "metadata": {
-    "title": "Przelicznik cali na piksele (DPI) – inches na px, Letter, 4x6",
+    "title": "Konwerter cali na px (DPI) – inches na piksele, Letter, 4x6",
     "description": "Przelicz cale na piksele z regulowanym DPI – Letter 8,5 x 11 cali to 2550 x 3300 px przy 300 DPI. Niezbedny do druku foto i dokumentow US. Bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-cale-na-px"

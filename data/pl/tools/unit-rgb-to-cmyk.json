@@ -8,7 +8,7 @@
     "path": "/narzedzia/konwerter-rgb-na-cmyk"
   },
   "hero": {
-    "title": "RGB na CMYK – sprawdź kolory druku zanim trafią do drukarni",
+    "title": "Przelicz RGB na CMYK – konwerter kolorów dla druku",
     "description": "Zanim wyślesz projekt do drukarni, sprawdź wartości CMYK. Unikniesz rozczarowania, gdy ekranowy niebieski wyjdzie matowo na wizytówce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,11 +25,25 @@
   "schemas": {
     "software": {
       "name": "Konwerter RGB na CMYK – kolory ekranowe na druk",
-      "alternateName": ["Przelicznik RGB CMYK", "Kalkulator kolorów do druku", "RGB to CMYK converter"],
+      "alternateName": [
+        "Przelicznik RGB CMYK",
+        "Kalkulator kolorów do druku",
+        "RGB to CMYK converter"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz kolory RGB na CMYK przed wysłaniem projektu do drukarni. Sprawdź wartości tuszów dla wizytówek, ulotek i katalogów. Bez rejestracji, działa w przeglądarce.",
-      "featureList": ["Konwersja RGB na CMYK w czasie rzeczywistym", "Konwersja CMYK na RGB jednym kliknięciem", "Wyniki w procentach tuszów C, M, Y, K (0–100%)", "Kopiowanie wartości CMYK do schowka", "Obliczenia lokalne – brak wysyłania danych na serwer", "Informacja o kolorach poza zakresem gamut CMYK", "Tabela referencyjnych kolorów z wartościami RGB i CMYK", "Obsługa wartości całkowitych i dziesiętnych", "Brak instalacji i rejestracji – gotowe do użycia natychmiast"]
+      "featureList": [
+        "Konwersja RGB na CMYK w czasie rzeczywistym",
+        "Konwersja CMYK na RGB jednym kliknięciem",
+        "Wyniki w procentach tuszów C, M, Y, K (0–100%)",
+        "Kopiowanie wartości CMYK do schowka",
+        "Obliczenia lokalne – brak wysyłania danych na serwer",
+        "Informacja o kolorach poza zakresem gamut CMYK",
+        "Tabela referencyjnych kolorów z wartościami RGB i CMYK",
+        "Obsługa wartości całkowitych i dziesiętnych",
+        "Brak instalacji i rejestracji – gotowe do użycia natychmiast"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera RGB na CMYK",

@@ -2,7 +2,7 @@
   "toolKey": "ptToPx",
   "locale": "pl",
   "metadata": {
-    "title": "Przelicznik pt na px – punkty typograficzne na piksele CSS",
+    "title": "Konwerter pt na px – punkty typograficzne na piksele CSS",
     "description": "Przelicz punkty typograficzne (pt) na piksele – sprawdz, ze 12 pt = 16 px i zlap zwiazek miedzy InDesign, Word a CSS. Dziala w przegladarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-pt-na-px"

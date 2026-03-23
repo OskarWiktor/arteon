@@ -2,13 +2,13 @@
   "toolKey": "jsonToCsv",
   "locale": "pl",
   "metadata": {
-    "title": "JSON na CSV – eksport danych do Excela, bez rejestracji",
+    "title": "Konwerter JSON na CSV – eksport danych do Excela i CSV",
     "description": "Zamień odpowiedź REST API lub dane JSON na plik CSV gotowy do Excela i importu SQL. Działa w przeglądarce bez rejestracji – dane nie trafiają na serwer.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-json-na-csv"
   },
   "hero": {
-    "title": "JSON na CSV – dane z API prosto do arkusza kalkulacyjnego",
+    "title": "Zamień JSON na CSV – konwerter danych do arkusza kalkulacyjnego",
     "description": "Dane z PayU lub Stripe w JSON, a księgowość chce Excela? Konwerter spłaszcza obiekty do pliku CSV – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,11 +25,26 @@
   "schemas": {
     "software": {
       "name": "Konwerter JSON na CSV - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana JSON na CSV online", "Konwersja JSON do CSV", "JSON to CSV converter"],
+      "alternateName": [
+        "Zamiana JSON na CSV online",
+        "Konwersja JSON do CSV",
+        "JSON to CSV converter"
+      ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter JSON na CSV online. Zamień dane JSON na CSV w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja tablicy obiektów JSON na plik CSV", "Automatyczne wyodrębnianie kluczy JSON jako nagłówków kolumn", "Spłaszczanie zagnieżdżonych obiektów do notacji kropkowej (adres.miasto)", "Obsługa obiektów z różnymi zestawami kluczy (brakujące pola puste)", "Pełna obsługa polskich znaków diakrytycznych w kodowaniu UTF-8", "Walidacja składni JSON przed konwersją z komunikatami błędów", "Przetwarzanie lokalne – dane nie opuszczają przeglądarki", "Wynik gotowy do otwarcia w Excelu, Google Sheets i LibreOffice Calc", "Kopiowanie do schowka jednym kliknięciem", "Pobieranie wyniku jako plik .csv"]
+      "featureList": [
+        "Konwersja tablicy obiektów JSON na plik CSV",
+        "Automatyczne wyodrębnianie kluczy JSON jako nagłówków kolumn",
+        "Spłaszczanie zagnieżdżonych obiektów do notacji kropkowej (adres.miasto)",
+        "Obsługa obiektów z różnymi zestawami kluczy (brakujące pola puste)",
+        "Pełna obsługa polskich znaków diakrytycznych w kodowaniu UTF-8",
+        "Walidacja składni JSON przed konwersją z komunikatami błędów",
+        "Przetwarzanie lokalne – dane nie opuszczają przeglądarki",
+        "Wynik gotowy do otwarcia w Excelu, Google Sheets i LibreOffice Calc",
+        "Kopiowanie do schowka jednym kliknięciem",
+        "Pobieranie wyniku jako plik .csv"
+      ]
     },
     "howTo": {
       "name": "Jak zamienić JSON na CSV online",
