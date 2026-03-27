@@ -214,7 +214,10 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
           <AdSense variant="tool-banner" className="my-3" />
         </div>
         <div className="block lg:hidden">
-          <AdSense variant="responsive" className="my-3" />
+          {/* Reserve 280px to prevent CLS when responsive ad expands from 100px to ~250px */}
+          <div className="my-3 min-h-[280px]">
+            <AdSense variant="responsive" />
+          </div>
         </div>
         {isDesktopOnly ? (
           <>

@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from 'next/server';
 
-const CANONICAL_HOST = 'www.arteonagency.pl';
+const CANONICAL_HOST = process.env.NODE_ENV === 'production' ? 'www.arteonagency.pl' : 'localhost:3000';
 
 /**
  * Edge middleware — single-hop canonical enforcement:
@@ -15,6 +15,11 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const proto = request.headers.get('x-forwarded-proto') || 'https';
   const host = request.headers.get('host') || '';
+
+  // Skip canonical redirects in development
+  if (process.env.NODE_ENV !== 'production') {
+    return NextResponse.next();
+  }
 
   let needsRedirect = false;
 

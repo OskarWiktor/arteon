@@ -563,6 +563,19 @@ textarea {
   contain-intrinsic-size: auto 500px;
 }
 
+/* Taller sections on mobile — larger placeholder reduces CLS when content renders */
+[data-section='feature-list'],
+[data-section='vertical-tabs'] {
+  contain-intrinsic-size: auto 800px;
+}
+
+[data-section='steps'],
+[data-section='tabs'],
+[data-section='timeline'],
+[data-section='process'] {
+  contain-intrinsic-size: auto 600px;
+}
+
 /* ── Ad slot containment: isolate ad reflow from surrounding layout ── */
 
 .ad-slot-wrapper {

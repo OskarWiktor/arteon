@@ -28,7 +28,7 @@ export const metadata = {
   openGraph: {
     title: 'Strony, sklepy, treści i marketing | Arteon',
     description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',
-    url: 'https://www.arteonagency.pl/',
+    url: 'https://www.arteonagency.pl',
     type: 'website',
     images: [
       {
@@ -121,7 +121,7 @@ export default function HomePage() {
       <HomePageSchemas />
       <HeroBanner
         title="Rozwiń swoją markę z nami"
-        description="Arteon to miejsce, które pomoże Ci rozwinąć firmę online i offline"
+        description="Międzynarodowy standard jakości dla małych i średnich przedsiębiorstw"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
         variant="center"

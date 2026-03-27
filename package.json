@@ -10,6 +10,7 @@
     "build": "next build",
     "postinstall": "node scripts/fix-bom.cjs",
     "postbuild": "next-sitemap --config next-sitemap.config.cjs && node scripts/postbuild-sitemap-hreflang.cjs && node scripts/indexnow-notify.cjs",
+    "clear-cache": "node scripts/clear-vercel-cache.cjs",
     "start": "next start",
     "lint": "eslint app --ext .ts,.tsx",
     "format": "prettier --write .",

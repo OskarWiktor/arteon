@@ -38,7 +38,7 @@ const SITE_URL = 'https://www.arteonagency.pl';
  * @returns Absolute URL
  */
 export function toAbsoluteUrl(path: string): string {
-  if (!path) return SITE_URL;
+  if (!path || path === '/') return SITE_URL;
   if (path.startsWith('http://') || path.startsWith('https://')) {
     return path;
   }
