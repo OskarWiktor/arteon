@@ -146,7 +146,9 @@ const nextConfig: NextConfig = {
     // Canonical host redirect (HTTP→HTTPS, non-www→www, trailing slash)
     // is handled by middleware.ts at the edge level in a single 301 hop.
 
-    return [...staticRedirects, ...patternRedirects, ...localeRootRedirects];
+    const sitemapRedirects: Redirect[] = [{ source: '/sitemap-0.xml', destination: '/sitemap.xml', statusCode: 301 }];
+
+    return [...staticRedirects, ...patternRedirects, ...localeRootRedirects, ...sitemapRedirects];
   },
 };
 
