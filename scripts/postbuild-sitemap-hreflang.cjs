@@ -50,7 +50,7 @@ const LOCALE_TO_HREFLANG = {
   cs: 'cs',
   sv: 'sv',
   da: 'da',
-  no: 'nb',
+  no: 'no',
   fi: 'fi',
   el: 'el',
 };

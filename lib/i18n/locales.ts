@@ -196,8 +196,8 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     termsHref: '/da/brugsvilkar',
   },
   no: {
-    lang: 'nb',
-    hreflang: 'nb',
+    lang: 'no',
+    hreflang: 'no',
     label: 'NO',
     name: 'Norsk',
     toolsBasePath: '/no/verktoy',
