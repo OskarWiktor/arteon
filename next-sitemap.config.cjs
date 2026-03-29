@@ -2,6 +2,14 @@ const fg = require('fast-glob');
 const path = require('node:path');
 const fs = require('node:fs');
 const { execSync } = require('node:child_process');
+const {
+  SITE_URL,
+  LOCALES,
+  LOCALE_TOOLS_BASE,
+  LOCALE_TO_HREFLANG,
+  MULTILINGUAL_PAGES,
+  buildToolLocalePathsMap,
+} = require('./lib/sitemap-locale-config.cjs');
 
 function gitLastCommitISO(filePath) {
   try {
@@ -148,79 +156,12 @@ function articleAssetsLastmod(article) {
 const ROUTE_LASTMOD = buildRouteLastmodMap();
 const PROJECTS = readProjects();
 const ARTICLES = readBlog();
-const SITE_URL = 'https://www.arteonagency.pl';
 const IS_PROD = process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production';
 
 // ---------------------------------------------------------------------------
-// Hreflang data (mirrors lib/i18n/locales.ts)
+// Locale data imported from single source of truth: lib/sitemap-locale-config.cjs
 // ---------------------------------------------------------------------------
-const LOCALE_TOOLS_BASE = {
-  pl: '/narzedzia',
-  en: '/en/tools',
-  de: '/de/werkzeuge',
-  es: '/es/herramientas',
-  fr: '/fr/outils',
-  pt: '/pt/ferramentas',
-  it: '/it/strumenti',
-  ro: '/ro/instrumente',
-  nl: '/nl/tools',
-  hu: '/hu/eszkozok',
-  cs: '/cs/nastroje',
-  sv: '/sv/verktyg',
-  da: '/da/vaerktojer',
-  no: '/no/verktoy',
-  fi: '/fi/tyokalut',
-  el: '/el/ergaleia',
-};
-
-// Maps locale key → BCP 47 hreflang value (no → nb per Fix 5)
-const LOCALE_TO_HREFLANG = {
-  pl: 'pl',
-  en: 'en',
-  de: 'de',
-  es: 'es',
-  fr: 'fr',
-  pt: 'pt',
-  it: 'it',
-  ro: 'ro',
-  nl: 'nl',
-  hu: 'hu',
-  cs: 'cs',
-  sv: 'sv',
-  da: 'da',
-  no: 'nb',
-  fi: 'fi',
-  el: 'el',
-};
-
-/**
- * Build a map of toolKey → { locale: metadata.path } by reading every tool JSON
- * from data/{locale}/tools/*.json. Covers all 92 tools × 16 locales automatically.
- */
-function buildToolLocalePathsMap() {
-  const LOCALES = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
-  const byKey = new Map();
-  for (const locale of LOCALES) {
-    const dir = path.join(process.cwd(), 'data', locale, 'tools');
-    if (!fs.existsSync(dir)) continue;
-    const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'));
-    for (const file of files) {
-      try {
-        const data = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
-        if (!data.toolKey || !data.metadata?.path) continue;
-        if (!byKey.has(data.toolKey)) byKey.set(data.toolKey, {});
-        byKey.get(data.toolKey)[locale] = data.metadata.path;
-      } catch {
-        // skip malformed files
-      }
-    }
-  }
-  return byKey;
-}
-
 const TOOL_LOCALE_PATHS = buildToolLocalePathsMap();
-
-// Reverse map: locale-specific path → toolKey (for O(1) lookup in getAlternateRefs)
 const PATH_TO_TOOL_KEY = new Map();
 for (const [key, localePaths] of TOOL_LOCALE_PATHS.entries()) {
   for (const lpath of Object.values(localePaths)) {
@@ -228,107 +169,11 @@ for (const [key, localePaths] of TOOL_LOCALE_PATHS.entries()) {
   }
 }
 
-// Non-tool multilingual pages (all 16 active locales including PL)
-const MULTILINGUAL_PAGES = [
-  {
-    pl: '/',
-    en: '/en',
-    de: '/de',
-    es: '/es',
-    fr: '/fr',
-    pt: '/pt',
-    it: '/it',
-    ro: '/ro',
-    nl: '/nl',
-    hu: '/hu',
-    cs: '/cs',
-    sv: '/sv',
-    da: '/da',
-    no: '/no',
-    fi: '/fi',
-    el: '/el',
-  },
-  {
-    pl: '/o-nas',
-    en: '/en/about',
-    de: '/de/ueber-uns',
-    es: '/es/sobre-nosotros',
-    fr: '/fr/a-propos',
-    pt: '/pt/sobre-nos',
-    it: '/it/chi-siamo',
-    ro: '/ro/despre-noi',
-    nl: '/nl/over-ons',
-    hu: '/hu/rolunk',
-    cs: '/cs/o-nas',
-    sv: '/sv/om-oss',
-    da: '/da/om-os',
-    no: '/no/om-oss',
-    fi: '/fi/tietoa-meista',
-    el: '/el/sxetika-me-emas',
-  },
-  {
-    pl: '/kontakt',
-    en: '/en/contact',
-    de: '/de/kontakt',
-    es: '/es/contacto',
-    fr: '/fr/contact',
-    pt: '/pt/contacto',
-    it: '/it/contatto',
-    ro: '/ro/contact',
-    nl: '/nl/contact',
-    hu: '/hu/kapcsolat',
-    cs: '/cs/kontakt',
-    sv: '/sv/kontakt',
-    da: '/da/kontakt',
-    no: '/no/kontakt',
-    fi: '/fi/yhteystiedot',
-    el: '/el/epikoinonia',
-  },
-  {
-    pl: '/polityka-prywatnosci',
-    en: '/en/privacy-policy',
-    de: '/de/datenschutzrichtlinie',
-    es: '/es/politica-de-privacidad',
-    fr: '/fr/politique-de-confidentialite',
-    pt: '/pt/politica-de-privacidade',
-    it: '/it/informativa-sulla-privacy',
-    ro: '/ro/politica-de-confidentialitate',
-    nl: '/nl/privacybeleid',
-    hu: '/hu/adatvedelmi-iranyelvek',
-    cs: '/cs/zasady-ochrany-soukromi',
-    sv: '/sv/integritetspolicy',
-    da: '/da/privatlivspolitik',
-    no: '/no/personvernpolicy',
-    fi: '/fi/tietosuojakaytanto',
-    el: '/el/politiki-aporritou',
-  },
-  {
-    pl: '/regulamin',
-    en: '/en/terms-of-service',
-    de: '/de/nutzungsbedingungen',
-    es: '/es/terminos-de-servicio',
-    fr: '/fr/conditions-utilisation',
-    pt: '/pt/termos-de-servico',
-    it: '/it/termini-di-servizio',
-    ro: '/ro/termeni-si-conditii',
-    nl: '/nl/gebruiksvoorwaarden',
-    hu: '/hu/felhasznalasi-feltetelek',
-    cs: '/cs/podminky-pouzivani',
-    sv: '/sv/anvandarvillkor',
-    da: '/da/brugsvilkar',
-    no: '/no/bruksvilkar',
-    fi: '/fi/kayttoehdot',
-    el: '/el/oroi-chrisis',
-  },
-];
-
 // Locale homepage paths that permanentRedirect — must not appear in sitemap
 const REDIRECT_LOCALE_ROOTS = new Set(['/en', '/de', '/es', '/fr', '/pt', '/it', '/ro', '/nl', '/hu', '/cs', '/sv', '/da', '/no', '/fi', '/el']);
 
 /** Return alternateRefs (all locales + x-default) for any sitemap loc, or [] if not multilingual */
 function getAlternateRefs(loc) {
-  const LOCALES = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
-
   // PL homepage — only claim the PL locale; other locales redirect so no true equivalent
   if (loc === '/') {
     return [
