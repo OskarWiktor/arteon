@@ -14,11 +14,11 @@
   },
   "breadcrumbs": {
     "second": {
-      "href": "/nastroje",
+      "href": "/cs/nastroje",
       "label": "Nástroje"
     },
     "third": {
-      "href": "/nastroje/generator-lorem-ipsum",
+      "href": "/cs/nastroje/generator-lorem-ipsum",
       "label": "Generátor Lorem Ipsum"
     }
   },

@@ -14,11 +14,11 @@
   },
   "breadcrumbs": {
     "second": {
-      "href": "/vaerktojer",
+      "href": "/da/vaerktojer",
       "label": "Værktøjer"
     },
     "third": {
-      "href": "/vaerktojer/lorem-ipsum-generator",
+      "href": "/da/vaerktojer/lorem-ipsum-generator",
       "label": "Lorem Ipsum-generator"
     }
   },

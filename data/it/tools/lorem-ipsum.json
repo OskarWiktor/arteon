@@ -14,11 +14,11 @@
   },
   "breadcrumbs": {
     "second": {
-      "href": "/strumenti",
+      "href": "/it/strumenti",
       "label": "Strumenti"
     },
     "third": {
-      "href": "/strumenti/generatore-lorem-ipsum",
+      "href": "/it/strumenti/generatore-lorem-ipsum",
       "label": "Generatore Lorem Ipsum"
     }
   },

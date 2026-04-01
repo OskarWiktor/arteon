@@ -14,11 +14,11 @@
   },
   "breadcrumbs": {
     "second": {
-      "href": "/tyokalut",
+      "href": "/fi/tyokalut",
       "label": "Työkalut"
     },
     "third": {
-      "href": "/tyokalut/lorem-ipsum-generaattori",
+      "href": "/fi/tyokalut/lorem-ipsum-generaattori",
       "label": "Lorem Ipsum -generaattori"
     }
   },

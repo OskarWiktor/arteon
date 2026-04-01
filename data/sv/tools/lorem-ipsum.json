@@ -14,11 +14,11 @@
   },
   "breadcrumbs": {
     "second": {
-      "href": "/verktyg",
+      "href": "/sv/verktyg",
       "label": "Verktyg"
     },
     "third": {
-      "href": "/verktyg/lorem-ipsum-generator",
+      "href": "/sv/verktyg/lorem-ipsum-generator",
       "label": "Lorem Ipsum-generator"
     }
   },

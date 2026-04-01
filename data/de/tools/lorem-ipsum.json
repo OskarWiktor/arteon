@@ -14,11 +14,11 @@
   },
   "breadcrumbs": {
     "second": {
-      "href": "/werkzeuge",
+      "href": "/de/werkzeuge",
       "label": "Werkzeuge"
     },
     "third": {
-      "href": "/werkzeuge/lorem-ipsum-generator",
+      "href": "/de/werkzeuge/lorem-ipsum-generator",
       "label": "Lorem-Ipsum-Generator"
     }
   },

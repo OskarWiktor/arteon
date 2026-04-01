@@ -14,11 +14,11 @@
   },
   "breadcrumbs": {
     "second": {
-      "href": "/eszkozok",
+      "href": "/hu/eszkozok",
       "label": "Eszközök"
     },
     "third": {
-      "href": "/eszkozok/lorem-ipsum-generator",
+      "href": "/hu/eszkozok/lorem-ipsum-generator",
       "label": "Lorem Ipsum generátor"
     }
   },

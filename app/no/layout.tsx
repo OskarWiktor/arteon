@@ -6,7 +6,7 @@ export const metadata = baseMetadata;
 
 export default function NoLayout({ children }: { children: React.ReactNode }) {
   return (
-    <RootHtml lang="nb">
+    <RootHtml lang="no">
       <LocaleLayout locale="no">{children}</LocaleLayout>
     </RootHtml>
   );
