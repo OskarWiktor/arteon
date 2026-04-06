@@ -35,28 +35,47 @@ function isConcatenatedLocaleUrl(pathname: string): boolean {
   return false;
 }
 
+// HSTS header — must be present on EVERY response (including redirects)
+// so that hstspreload.org sees it on arteonagency.pl (non-www) redirect too.
+const HSTS_VALUE = 'max-age=63072000; includeSubDomains; preload';
+
 /**
  * Edge middleware — single-hop canonical enforcement:
- * 0. 410 Gone for concatenated cross-locale URLs (SEO cleanup)
- * 1. HTTP → HTTPS
- * 2. non-www → www
- * 3. trailing slash → no trailing slash
+ * 0. Block Vercel preview/deployment URLs from indexing
+ * 1. 410 Gone for concatenated cross-locale URLs (SEO cleanup)
+ * 2. HTTP → HTTPS
+ * 3. non-www → www
+ * 4. trailing slash → no trailing slash
  *
  * All conditions are checked once and resolved in a single 301 redirect
  * to avoid multi-hop chains that confuse search engine crawlers.
+ * HSTS is attached to every response (redirects + pass-through) for preload eligibility.
  */
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const proto = request.headers.get('x-forwarded-proto') || 'https';
   const host = request.headers.get('host') || '';
 
-  // 0. Return 410 Gone for concatenated cross-locale URLs
+  // 0. Block Vercel preview/deployment URLs from search engine indexing.
+  // If Google discovers *.vercel.app URLs, return noindex instead of redirecting
+  // to canonical — a redirect would signal "this is the same page" to crawlers.
+  if (host.endsWith('.vercel.app')) {
+    const res = NextResponse.next();
+    res.headers.set('X-Robots-Tag', 'noindex, nofollow');
+    res.headers.set('Strict-Transport-Security', HSTS_VALUE);
+    return res;
+  }
+
+  // 1. Return 410 Gone for concatenated cross-locale URLs
   // Pattern: /da/vaerktojer/slug-a/no/verktoy/slug-b (two locale tool paths in one URL)
   // These are ghost URLs from old broken links — 410 tells Google to stop crawling them.
   if (isConcatenatedLocaleUrl(url.pathname)) {
     return new NextResponse(null, {
       status: 410,
-      headers: { 'X-Robots-Tag': 'noindex' },
+      headers: {
+        'X-Robots-Tag': 'noindex',
+        'Strict-Transport-Security': HSTS_VALUE,
+      },
     });
   }
 
@@ -67,17 +86,17 @@ export function middleware(request: NextRequest) {
 
   let needsRedirect = false;
 
-  // 1. Enforce HTTPS
+  // 2. Enforce HTTPS
   if (proto === 'http') {
     needsRedirect = true;
   }
 
-  // 2. Enforce www
+  // 3. Enforce www
   if (host && host !== CANONICAL_HOST && host.replace(/:\d+$/, '') !== CANONICAL_HOST) {
     needsRedirect = true;
   }
 
-  // 3. Remove trailing slash (except root "/")
+  // 4. Remove trailing slash (except root "/")
   if (url.pathname.length > 1 && url.pathname.endsWith('/')) {
     url.pathname = url.pathname.replace(/\/+$/, '');
     needsRedirect = true;
@@ -87,10 +106,17 @@ export function middleware(request: NextRequest) {
     url.protocol = 'https';
     url.host = CANONICAL_HOST;
     url.port = '';
-    return NextResponse.redirect(url, 301);
+    const res = NextResponse.redirect(url, 301);
+    // HSTS on redirect responses — required for hstspreload.org eligibility.
+    // Without this, arteonagency.pl (non-www) redirect lacks HSTS headers.
+    res.headers.set('Strict-Transport-Security', HSTS_VALUE);
+    return res;
   }
 
-  return NextResponse.next();
+  // Pass-through — attach HSTS to normal responses too
+  const res = NextResponse.next();
+  res.headers.set('Strict-Transport-Security', HSTS_VALUE);
+  return res;
 }
 
 export const config = {

@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
-const IS_PROD = process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production';
+// All deployments go directly to production — no preview/staging environments.
+// Treat as production unless explicitly running local dev (NODE_ENV=development).
+const IS_PROD = process.env.NODE_ENV !== 'development';
 const metadataBase = new URL(siteUrl);
 
 export const baseMetadata: Metadata = {

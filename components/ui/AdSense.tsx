@@ -19,6 +19,25 @@ const PRESETS = {
 
 const LEGACY_IN_ARTICLE_SLOT = '9459125335';
 
+const AD_LABEL: Record<string, string> = {
+  pl: 'REKLAMA',
+  en: 'ADVERTISEMENT',
+  de: 'WERBUNG',
+  es: 'PUBLICIDAD',
+  fr: 'PUBLICITÉ',
+  pt: 'PUBLICIDADE',
+  it: 'PUBBLICITÀ',
+  ro: 'PUBLICITATE',
+  nl: 'ADVERTENTIE',
+  hu: 'HIRDETÉS',
+  cs: 'REKLAMA',
+  sv: 'ANNONS',
+  da: 'REKLAME',
+  no: 'ANNONSE',
+  fi: 'MAINOS',
+  el: 'ΔΙΑΦΗΜΙΣΗ',
+};
+
 const SLOT_ALIASES: Record<string, string> = {
   [LEGACY_IN_ARTICLE_SLOT]: PRESETS['in-article'].slot,
 };
@@ -126,7 +145,7 @@ function initConsentBus() {
 /*  5. Collapse wrapper via CSS when data-ad-status="unfilled".       */
 /* ------------------------------------------------------------------ */
 
-export default function AdSense({ variant, adSlot, className = '' }: AdSenseProps) {
+export default function AdSense({ variant, adSlot, className = '', locale }: AdSenseProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const pushed = useRef(false);
   const retryCount = useRef(0);
@@ -283,21 +302,49 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
     };
   }, [variant, slot, isInArticleVariant, pathname, injectAd]);
 
+  const label = locale ? (AD_LABEL[locale] ?? AD_LABEL.en) : null;
+  const labelNode = label ? <span className="block text-center text-[10px] tracking-widest text-neutral-400">{label}</span> : null;
+
   if (variant === 'tool-banner') {
-    return <div ref={containerRef} className={`flex min-h-[90px] items-center justify-center ${className}`} />;
+    return (
+      <div className={`ad-placeholder flex min-h-[90px] flex-col items-center justify-center rounded bg-neutral-50 ${className}`}>
+        {labelNode}
+        <div ref={containerRef} className="flex items-center justify-center" />
+      </div>
+    );
   }
 
   if (variant === 'responsive') {
-    return <div ref={containerRef} className={`min-h-[100px] w-full ${className}`} />;
+    return (
+      <div className={`ad-placeholder min-h-[250px] w-full rounded bg-neutral-50 ${className}`}>
+        {labelNode}
+        <div ref={containerRef} className="w-full" />
+      </div>
+    );
   }
 
   if (variant === 'vertical') {
-    return <div ref={containerRef} className={`inline-block min-h-[600px] w-[160px] ${className}`} />;
+    return (
+      <div className={`ad-placeholder inline-block min-h-[600px] w-[160px] rounded bg-neutral-50 ${className}`}>
+        {labelNode}
+        <div ref={containerRef} className="h-full w-full" />
+      </div>
+    );
   }
 
   if (isInArticleVariant) {
-    return <div ref={containerRef} className={`min-h-[280px] w-full ${className}`} />;
+    return (
+      <div className={`ad-placeholder min-h-[280px] w-full rounded bg-neutral-50 ${className}`}>
+        {labelNode}
+        <div ref={containerRef} className="w-full" />
+      </div>
+    );
   }
 
-  return <div ref={containerRef} className={className} />;
+  return (
+    <div className={`ad-placeholder rounded bg-neutral-50 ${className}`}>
+      {labelNode}
+      <div ref={containerRef} />
+    </div>
+  );
 }

@@ -582,10 +582,10 @@ textarea {
   contain: layout style;
 }
 
-/* ── Ad slot collapse (hide wrapper when Google marks ad unfilled) ── */
+/* ── Ad slot placeholder (keep reserved space even when unfilled) ── */
 
-.ad-slot-wrapper:has(ins.adsbygoogle[data-ad-status='unfilled']) {
-  display: none;
+.ad-slot-wrapper:has(ins.adsbygoogle[data-ad-status='unfilled']) .ad-placeholder {
+  background: transparent;
 }
 
 /* ── Reduced motion ────────────────────────────────────────────── */

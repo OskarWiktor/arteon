@@ -30,7 +30,7 @@ import ToolContactForm from './ToolContactForm';
 import RelatedConverters from './RelatedConverters';
 import RelatedUnitConverters from './RelatedUnitConverters';
 
-const AD_SECTION_INTERVAL = 4;
+const AD_SECTION_INTERVAL = 6;
 const AD_SKIP_AFTER = new Set(['faq', 'toolsCarousel']);
 
 const DESKTOP_ONLY_TOOLS = new Set(['jpgToWebp', 'imageResize', 'favicon', 'emailSignature', 'jpgToWebpSimple', 'pngToWebpSimple']);
@@ -211,13 +211,10 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
 
       <ToolEditorLayout>
         <div className="hidden lg:block">
-          <AdSense variant="tool-banner" className="my-3" />
+          <AdSense variant="tool-banner" className="my-3" locale={data.locale} />
         </div>
-        <div className="block lg:hidden">
-          {/* Reserve 280px to prevent CLS when responsive ad expands from 100px to ~250px */}
-          <div className="my-3 min-h-[280px]">
-            <AdSense variant="responsive" />
-          </div>
+        <div className="my-3 block lg:hidden">
+          <AdSense variant="responsive" locale={data.locale} />
         </div>
         {isDesktopOnly ? (
           <>
@@ -250,10 +247,10 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
 
               const node = renderBlock(block, idx, pageUrl);
               const adNode = adPositions.has(idx) ? (
-                <div key={`ad-after-${idx}`} className="ad-slot-wrapper">
+                <div key={`ad-after-${idx}`} className="ad-slot-wrapper min-h-[280px]">
                   <Gap variant="line" />
                   <div className="not-prose -mx-[3%] flex justify-center py-4">
-                    <AdSense variant="responsive" />
+                    <AdSense variant="responsive" locale={data.locale} />
                   </div>
                 </div>
               ) : null;

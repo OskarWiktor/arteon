@@ -70,6 +70,7 @@ export interface AdSenseProps {
   variant: AdVariant;
   adSlot?: string;
   className?: string;
+  locale?: string;
 }
 
 // ---------------------------------------------------------------------------
