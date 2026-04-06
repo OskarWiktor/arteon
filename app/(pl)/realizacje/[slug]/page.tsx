@@ -468,8 +468,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const description = project.seo?.description || '';
   const image = project.image ? toAbsoluteUrl(project.image) : undefined;
 
-  const canonicalPath = project.seo?.canonical || toAbsoluteUrl(`/realizacje/${slug}`);
-  const ogUrl = toAbsoluteUrl(canonicalPath);
+  const ogUrl = toAbsoluteUrl(project.seo?.canonical || `/realizacje/${slug}`);
   return {
     title,
     description,

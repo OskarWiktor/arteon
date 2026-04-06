@@ -380,6 +380,20 @@ module.exports = {
       add.push(entry);
     }
 
+    // Add ALL tool pages explicitly from TOOL_LOCALE_PATHS — do not rely on
+    // next-sitemap auto-discovery which can silently drop pages (e.g. favicon tool).
+    for (const [, localePaths] of TOOL_LOCALE_PATHS.entries()) {
+      for (const [lang, toolPath] of Object.entries(localePaths)) {
+        const loc = toolPath;
+        // Skip if already added from ROUTE_LASTMOD
+        if (add.some((e) => e.loc === loc)) continue;
+        const entry = { loc, changefreq: 'weekly', priority: 0.9, alternateRefs: getAlternateRefs(loc) };
+        const lastmod = ROUTE_LASTMOD.get(loc);
+        if (lastmod) entry.lastmod = lastmod;
+        add.push(entry);
+      }
+    }
+
     for (const p of PROJECTS) {
       const loc = `/realizacje/${p.slug}`;
       const iso = (p.updatedAt && parseISO(p.updatedAt)) || projectLastmodFromFiles(p.slug) || ROUTE_LASTMOD.get(loc) || null;

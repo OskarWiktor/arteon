@@ -7,7 +7,9 @@ const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 });
 
-const IS_PROD = process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production';
+// All deployments go directly to production — no preview/staging environments.
+// Treat as production unless explicitly running local dev (NODE_ENV=development).
+const IS_PROD = process.env.NODE_ENV !== 'development';
 
 const cspDirectives = [
   "default-src 'self'",
@@ -25,8 +27,8 @@ const cspDirectives = [
   'upgrade-insecure-requests',
 ].join('; ');
 
+// HSTS is set globally via vercel.json (CDN-level) — do not duplicate here.
 const securityHeaders = [
-  { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   { key: 'X-DNS-Prefetch-Control', value: 'on' },

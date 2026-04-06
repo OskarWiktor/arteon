@@ -282,11 +282,10 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   if (!article) return {};
 
   const canonicalCat = getPrimaryCategorySlug(article);
-  const canonicalPath = article.seo?.canonical || toAbsoluteUrl(`/edukacja/${canonicalCat}/${article.slug}`);
+  const ogUrl = toAbsoluteUrl(article.seo?.canonical || `/edukacja/${canonicalCat}/${article.slug}`);
   const title = article.seo?.title || article.title;
   const description = article.seo?.description || article.excerpt || '';
   const image = article.cover ? toAbsoluteUrl(article.cover) : undefined;
-  const ogUrl = toAbsoluteUrl(canonicalPath);
 
   return {
     title,

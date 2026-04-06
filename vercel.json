@@ -1,28 +1,13 @@
 {
-  "redirects": [
-    { "source": "/narzedzia/konwerter-km-na-mile", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-kg-na-funty", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-celsius-na-fahrenheit", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-cm-na-cale", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-metry-na-stopy", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-litry-na-galony", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-metry-kwadratowe-na-stopy", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-kmh-na-mph", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-mm-na-cale", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-gramy-na-uncje", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-tony-na-funty", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-hektary-na-akry", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-ml-na-uncje-plynne", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-bar-na-psi", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-kw-na-km", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-stopnie-na-radiany", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-wh-na-mah", "destination": "/narzedzia", "statusCode": 301 },
-    { "source": "/narzedzia/konwerter-tailwind-na-px", "destination": "/narzedzia/konwerter-tailwind-css-spacing-na-px", "statusCode": 301 }
-  ],
+  "redirects": [],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [{ "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" }]
+    },
+    {
+      "source": "/((?!_next|assets|fonts|favicon|sitemap|robots|ads|llms|\\.well-known).*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800" }]
     },
     {
       "source": "/(en|de|es|fr|pt|it|ro|nl|hu|cs|sv|da|no|fi|el)/:path*",
@@ -31,10 +16,6 @@
     {
       "source": "/narzedzia/:path*",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=604800, stale-while-revalidate=2592000" }]
-    },
-    {
-      "source": "/((?!_next|assets|fonts|favicon|sitemap|robots|ads|llms|\\.well-known).*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800" }]
     },
     {
       "source": "/sitemap.xml",
