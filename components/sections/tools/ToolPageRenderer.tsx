@@ -211,7 +211,10 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
 
       <ToolEditorLayout>
         <div className="hidden lg:block">
-          <AdSense variant="tool-banner" className="my-3" locale={data.locale} />
+          {/* <AdSense variant="tool-banner" className="my-3" locale={data.locale} /> */}
+          <a href="https://zenmine.io/?ref=L1utqZYc">
+            <img src="https://zenmine.io/assets/images/banner/b1.gif" />
+          </a>
         </div>
         <div className="my-3 block lg:hidden">
           <AdSense variant="responsive" locale={data.locale} />
