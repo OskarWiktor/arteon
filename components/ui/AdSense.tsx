@@ -307,9 +307,9 @@ export default function AdSense({ variant, adSlot, className = '', locale }: AdS
 
   if (variant === 'tool-banner') {
     return (
-      <div className={`ad-placeholder flex min-h-[90px] flex-col items-center justify-center rounded bg-neutral-50 ${className}`}>
+      <div className={`ad-placeholder flex min-h-[110px] flex-col items-center rounded bg-neutral-50 ${className}`}>
         {labelNode}
-        <div ref={containerRef} className="flex items-center justify-center" />
+        <div ref={containerRef} className="flex w-full items-center justify-center" />
       </div>
     );
   }

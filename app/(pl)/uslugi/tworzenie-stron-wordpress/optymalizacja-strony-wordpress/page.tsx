@@ -18,6 +18,7 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import { RiSpeedFill, RiToolsLine, RiShieldCheckLine, RiDeviceLine, RiBarChart2Fill, RiFileList2Line } from 'react-icons/ri';
 
 import Script from 'next/script';
+import Image from 'next/image';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import { siteUrl } from '@/utils/absoluteUrl';
 
@@ -112,8 +113,8 @@ export default function OfferOptimizationWordPressPage() {
 
         <SectionBasic
           variant="right"
-          imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-zblizenie-na-raport.webp"
-          imageAlt="Optymalizacja strony WordPress - ekran z raportem szybkości"
+          imageSrc="/assets/projects/finish-masters/finish-masters-optymalizacja-strony-wynik.webp"
+          imageAlt="Wynik optymalizacji strony WordPress - raport PageSpeed Insights firmy Finish Masters"
           subtitle="Dla kogo"
           title="Kiedy optymalizacja WordPress ma największy sens?"
           description="Największe korzyści pojawiają się wtedy, gdy strona już działa, ale jej szybkość lub stabilność ogranicza rozwój. Z takiej usługi najczęściej korzystają:"
@@ -244,8 +245,8 @@ export default function OfferOptimizationWordPressPage() {
 
         <SectionBasic
           variant="left"
-          imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-edycja-strony.webp"
-          imageAlt="Optymalizacja WordPress - widok strony na telefonie"
+          imageSrc="/assets/projects/izoluk/izoluk-optymalizacja-strony-wynik.webp"
+          imageAlt="Wynik optymalizacji strony WordPress - raport PageSpeed Insights firmy Izoluk"
           subtitle="Typowe rezultaty"
           title="Jakie zmiany najczęściej widać po optymalizacji strony WordPress?"
           description="Zakres efektów zależy od punktu wyjścia i hostingu, ale w większości realizacji po optymalizacji widoczne są:"
@@ -259,12 +260,86 @@ export default function OfferOptimizationWordPressPage() {
 
         <Gap variant="line" />
 
+        <SectionInfo title="Realne wyniki optymalizacji - przed i po" subtitle="Porównanie stanu stron klientów">
+          <p className="mb-6">
+            Każda optymalizacja kończy się raportem porównującym stan strony przed wdrożeniem i po zakończeniu prac. Poniżej kilka realnych przykładów z wdrożeń dla naszych klientów.
+          </p>
+
+          <div className="grid gap-8">
+            <div>
+              <h3 className="h5 mb-3">Camper Albania - wypożyczalnia kamperów</h3>
+              <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+                <figure>
+                  <div className="overflow-hidden rounded-2xl border border-black/10">
+                    <Image
+                      src="/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-przed.webp"
+                      alt="Camper Albania - wynik PageSpeed przed optymalizacją"
+                      width={1010}
+                      height={875}
+                      sizes="(min-width:768px) 50vw, 100vw"
+                      className="h-auto w-full object-contain"
+                    />
+                  </div>
+                  <figcaption className="text-light mt-2 text-sm">Przed optymalizacją</figcaption>
+                </figure>
+                <figure>
+                  <div className="overflow-hidden rounded-2xl border border-black/10">
+                    <Image
+                      src="/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-po.webp"
+                      alt="Camper Albania - wynik PageSpeed po optymalizacji"
+                      width={1010}
+                      height={875}
+                      sizes="(min-width:768px) 50vw, 100vw"
+                      className="h-auto w-full object-contain"
+                    />
+                  </div>
+                  <figcaption className="text-light mt-2 text-sm font-semibold">Po optymalizacji</figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="h5 mb-3">MSC Psychotherapy - gabinet psychologiczny</h3>
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <figure>
+                  <div className="overflow-hidden rounded-2xl border border-black/10">
+                    <Image
+                      src="/assets/projects/msc/msc-optymalizacja-strony-wynik-przed.webp"
+                      alt="MSC Psychotherapy - wynik PageSpeed przed optymalizacją"
+                      width={1009}
+                      height={832}
+                      sizes="(min-width:768px) 50vw, 100vw"
+                      className="h-auto w-full object-contain"
+                    />
+                  </div>
+                  <figcaption className="text-light mt-2 text-sm">Przed optymalizacją</figcaption>
+                </figure>
+                <figure>
+                  <div className="overflow-hidden rounded-2xl border border-black/10">
+                    <Image
+                      src="/assets/projects/msc/msc-optymalizacja-strony-wynik-po.webp"
+                      alt="MSC Psychotherapy - wynik PageSpeed po optymalizacji"
+                      width={1009}
+                      height={832}
+                      sizes="(min-width:768px) 50vw, 100vw"
+                      className="h-auto w-full object-contain"
+                    />
+                  </div>
+                  <figcaption className="text-light mt-2 text-sm font-semibold">Po optymalizacji</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
         <SectionPrices
           title="Cennik optymalizacji strony WordPress"
           plans={[
             {
               name: 'Optymalizacja WordPress: strona firmowa',
-              price: 'od 450 do 650 zł',
+              price: 'od 650 do 850 zł',
               description: 'Dla prostych stron firmowych i landing page, gdzie potrzebne jest przyspieszenie ładowania oraz porządki we wtyczkach.',
               features: [
                 'Analiza stanu technicznego WordPressa i hostingu',
@@ -278,7 +353,7 @@ export default function OfferOptimizationWordPressPage() {
             },
             {
               name: 'Optymalizacja WordPress: rozbudowana witryna',
-              price: 'od 650 do 850 zł',
+              price: 'od 850 do 1050 zł',
               description: 'Dla stron z większą liczbą podstron lub rozbudowaną strukturą, gdzie liczy się wydajność, wersja mobilna i dalszy rozwój.',
               features: [
                 'Wszystko z pakietu dla stron firmowych, a dodatkowo:',
@@ -291,7 +366,7 @@ export default function OfferOptimizationWordPressPage() {
               btnOneLink: '#kontakt',
             },
           ]}
-          legalNote="Większość realizacji mieści się w przedziale 450-850 zł. Ostateczna wycena zależy od wielkości strony, hostingu oraz stanu wyjściowego WordPressa. Przed rozpoczęciem prac przedstawiamy jasny zakres działań, szacowany wynik oraz zasady rozliczenia przy braku możliwości osiągnięcia 90+/100."
+          legalNote="Większość realizacji mieści się w przedziale 650-1050 zł. Ostateczna wycena zależy od wielkości strony, hostingu oraz stanu wyjściowego WordPressa. Przed rozpoczęciem prac przedstawiamy jasny zakres działań, szacowany wynik oraz zasady rozliczenia przy braku możliwości osiągnięcia 90+/100."
         />
 
         <Gap variant="line" />

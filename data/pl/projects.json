@@ -783,6 +783,19 @@
         "afterImage": "/assets/projects/arteon-camper-albania-a.webp"
       },
 
+      "contentBlocks": [
+        {
+          "type": "beforeAfter",
+          "title": "Wynik optymalizacji strony",
+          "beforeImage": "/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-przed.webp",
+          "afterImage": "/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-po.webp",
+          "beforeLabel": "Przed optymalizacją",
+          "afterLabel": "Po optymalizacji",
+          "note": "Wynik przed i po optymalizacji strony.",
+          "breakAfter": true
+        }
+      ],
+
       "faq": [
         {
           "question": "Czy można poprawić wynik PageSpeed bez przebudowy całej strony?",
@@ -1130,6 +1143,19 @@
         "afterImage": "/assets/projects/arteon-a-msc2.webp",
         "note": "Przed: różne style i wolne ładowanie. Po: jedna linia wizualna, jasny przekaz i treści pod <strong>pozycjonowanie dla psychologa</strong>."
       },
+
+      "contentBlocks": [
+        {
+          "type": "beforeAfter",
+          "title": "Wynik optymalizacji strony",
+          "beforeImage": "/assets/projects/msc/msc-optymalizacja-strony-wynik-przed.webp",
+          "afterImage": "/assets/projects/msc/msc-optymalizacja-strony-wynik-po.webp",
+          "beforeLabel": "Przed optymalizacją",
+          "afterLabel": "Po optymalizacji",
+          "note": "Wynik przed i po optymalizacji strony.",
+          "breakAfter": true
+        }
+      ],
       "faq": [
         {
           "question": "Ile kosztuje strona dla psychologa?",
