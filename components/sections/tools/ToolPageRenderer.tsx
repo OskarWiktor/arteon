@@ -37,10 +37,10 @@ const DESKTOP_ONLY_TOOLS = new Set(['jpgToWebp', 'imageResize', 'favicon', 'emai
 
 function DesktopOnlyNotice({ t }: { t: DesktopOnlyUi }) {
   return (
-    <section className="mx-auto my-6 max-w-xl rounded-2xl border border-black/10 bg-white/90 p-6 text-sm shadow-sm">
+    <section className="mx-auto my-6 max-w-xl rounded-lg border border-black/10 bg-white/90 p-6 text-sm shadow-sm">
       <h2 className="mb-3 text-lg font-semibold">{t.title}</h2>
       <p className="text-mid mb-3">{t.description}</p>
-      <div className="text-light rounded-xl bg-neutral-50 px-4 py-3 text-xs">
+      <div className="text-light rounded-lg bg-neutral-50 px-4 py-3 text-xs">
         <p className="mb-1 font-medium">{t.tipTitle}</p>
         <p>{t.tipText}</p>
       </div>

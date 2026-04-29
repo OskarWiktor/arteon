@@ -216,13 +216,13 @@ export default function OfferMarketingPage() {
           btnOneLink="#kontakt"
         >
           <ul className="mt-4 grid grid-cols-1 gap-3 pl-0 text-sm md:grid-cols-3">
-            <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">
+            <li className="list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200">
               <strong>Więcej wejść z Google</strong> efekt może być zauważalny już po 2-3 miesiącach.
             </li>
-            <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">
+            <li className="list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200">
               <strong>Szybsze działanie strony</strong> dzięki optymalizacji technicznej witryny.
             </li>
-            <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">
+            <li className="list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200">
               <strong>Więcej zapytań z formularza i telefonów</strong> po dopracowaniu nagłówków, opisów i całej oferty.
             </li>
           </ul>
@@ -397,22 +397,22 @@ export default function OfferMarketingPage() {
               description: 'Stałe działania SEO po audycie',
               size: 'large',
               backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
-              btnLabel: 'Zobacz ofertę',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty online',
               size: 'small',
-              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
+              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },

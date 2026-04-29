@@ -144,7 +144,7 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
             </label>
           </div>
           <textarea
-            className="tool-textarea min-h-[300px] w-full resize-y rounded-xl border border-neutral-200 bg-neutral-50 p-4 font-mono text-sm! transition outline-none focus:border-neutral-300 focus:bg-white"
+            className="tool-textarea min-h-[300px] w-full resize-y rounded-lg border border-neutral-200 bg-neutral-50 p-4 font-mono text-sm! transition outline-none focus:border-neutral-300 focus:bg-white"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder={sourcePlaceholder ?? t.pasteOrTypeData.replace('{{format}}', sourceLabel)}
@@ -164,7 +164,7 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
         <ToolSection className="space-y-3">
           <h2 className="h6">{targetLabel}</h2>
           <textarea
-            className="tool-textarea min-h-[300px] w-full resize-y rounded-xl border border-neutral-200 bg-neutral-50 p-4 font-mono text-sm! transition outline-none focus:border-neutral-300 focus:bg-white"
+            className="tool-textarea min-h-[300px] w-full resize-y rounded-lg border border-neutral-200 bg-neutral-50 p-4 font-mono text-sm! transition outline-none focus:border-neutral-300 focus:bg-white"
             value={output}
             readOnly
             placeholder={t.conversionResult.replace('{{format}}', targetLabel)}

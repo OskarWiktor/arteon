@@ -45,7 +45,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: toAbsoluteUrl('/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp'),
+        url: toAbsoluteUrl('/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp'),
         width: 1200,
         height: 630,
         alt: 'Portfolio realizacji Arteon - teczka ofertowa dla kancelarii',
@@ -61,7 +61,7 @@ export default function ProjectsPage() {
         title="Realizacje"
         description="Strony, sklepy, identyfikacje wizualne, materiały drukowane. Zobacz wybrane projekty."
         variant="center"
-        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
+        backgroundImage="/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp"
         overlay="black"
       />
 
@@ -80,7 +80,7 @@ export default function ProjectsPage() {
         btnOneLink="/kontakt"
         btnTwo="Poznaj usługi"
         btnTwoLink="/uslugi"
-        backgroundImage="/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp"
+        backgroundImage="/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp"
         overlay="black"
       />
 

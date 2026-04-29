@@ -65,7 +65,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Narzędzia do prowadzenia newslettera</h2><p>Do wysyłki newslettera potrzebna jest dedykowana platforma. Wysyłanie masowych wiadomości z osobistej skrzynki jest nieefektywne. Może też prowadzić do problemów z dostarczalnością.</p><br/><h3 class='h5 mb-3 mt-4'>Platformy do e-mail marketingu</h3><p>Na rynku dostępne są platformy o różnych funkcjach i cenach. Do popularnych należą:</p><br/><ul class='list-disc ml-5'><li><a class='underline' href='https://mailchimp.com/' target='_blank' rel='noopener noreferrer'>Mailchimp</a> - darmowy plan dla małych list i intuicyjny interfejs.</li><li><a class='underline' href='https://www.getresponse.pl/' target='_blank' rel='noopener noreferrer'>GetResponse</a> - polska platforma z pełną obsługą w języku polskim i funkcjami automatyzacji.</li><li><a class='underline' href='https://www.brevo.com/' target='_blank' rel='noopener noreferrer'>Brevo</a> (dawniej Sendinblue) - darmowy plan z limitem dziennych wysyłek.</li></ul><br/><p>Wybór zależy od wielkości listy, potrzebnych funkcji i budżetu. Wiele platform ma darmowe plany dla małych list. Pozwala to przetestować newsletter bez kosztów.</p><br/><h3 class='h5 mb-3 mt-4'>Integracja ze stroną internetową</h3><p>Formularz zapisu powinien być widoczny na stronie firmowej. Może znajdować się w stopce, na dedykowanej podstronie, w treści artykułów lub jako wyskakujące okienko. Ważne, żeby był prosty i jasno komunikował, co subskrybent będzie otrzymywał.</p><br/><p>Jeśli chcesz zintegrować newsletter ze swoją stroną, <a class='inline-link' href='/kontakt'>skontaktuj się z nami</a>.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Narzędzia do prowadzenia newslettera</h2><p>Do wysyłki newslettera potrzebna jest dedykowana platforma. Wysyłanie masowych wiadomości z osobistej skrzynki jest nieefektywne. Może też prowadzić do problemów z dostarczalnością.</p><br/><h3 class='h5 mb-3 mt-4'>Platformy do e-mail marketingu</h3><p>Na rynku dostępne są platformy o różnych funkcjach i cenach. Do popularnych należą:</p><br/><ul class='list-disc ml-5'><li><a class='underline' href='https://mailchimp.com/' target='_blank' rel='noopener noreferrer'>Mailchimp</a> - darmowy plan dla małych list i intuicyjny interfejs.</li><li><a class='underline' href='https://www.getresponse.pl/' target='_blank' rel='noopener noreferrer'>GetResponse</a> - polska platforma z pełną obsługą w języku polskim i funkcjami automatyzacji.</li><li><a class='underline' href='https://www.brevo.com/' target='_blank' rel='noopener noreferrer'>Brevo</a> (dawniej Sendinblue) - darmowy plan z limitem dziennych wysyłek.</li></ul><br/><p>Wybór zależy od wielkości listy, potrzebnych funkcji i budżetu. Wiele platform ma darmowe plany dla małych list. Pozwala to przetestować newsletter bez kosztów.</p><br/><h3 class='h5 mb-3 mt-4'>Integracja ze stroną internetową</h3><p>Formularz zapisu powinien być widoczny na stronie firmowej. Może znajdować się w stopce, na dedykowanej podstronie, w treści artykułów lub jako wyskakujące okienko. Ważne, żeby był prosty i jasno komunikował, co subskrybent będzie otrzymywał.</p><br/><p>Jeśli chcesz zintegrować newsletter ze swoją stroną, <a class='inline-link' href='/kontakt'>Skontaktuj się</a>.</p>",
           "breakAfter": true
         },
         {
@@ -85,7 +85,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Newsletter pozwala firmie utrzymywać regularny kontakt z odbiorcami. Daje pełną kontrolę nad listą kontaktów i niezależność od algorytmów platform.</p><br/><p>Prowadzenie newslettera wymaga regularnego tworzenia treści i przestrzegania przepisów o ochronie danych. Przed rozpoczęciem warto ocenić, czy firma ma zasoby na utrzymanie tego kanału.</p><br/><p><strong>Kluczowe kwestie:</strong></p><ul class='list-disc ml-5 mb-4'><li>Newsletter buduje bezpośredni kanał komunikacji, niezależny od algorytmów.</li><li>Skuteczny newsletter dostarcza wartość, nie tylko promocje.</li><li>Wysyłka wymaga wyraźnej zgody odbiorców zgodnie z RODO.</li><li>Jakość treści jest ważniejsza niż częstotliwość wysyłek.</li><li>Wskaźniki open rate i CTR pomagają ocenić skuteczność.</li></ul><br/><p>W Arteon pomagamy firmom w <a class='inline-link' href='/uslugi/tworzenie-tresci'>tworzeniu treści</a>, które angażują odbiorców. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>, jeśli potrzebujesz wsparcia w komunikacji z klientami.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Newsletter pozwala firmie utrzymywać regularny kontakt z odbiorcami. Daje pełną kontrolę nad listą kontaktów i niezależność od algorytmów platform.</p><br/><p>Prowadzenie newslettera wymaga regularnego tworzenia treści i przestrzegania przepisów o ochronie danych. Przed rozpoczęciem warto ocenić, czy firma ma zasoby na utrzymanie tego kanału.</p><br/><p><strong>Kluczowe kwestie:</strong></p><ul class='list-disc ml-5 mb-4'><li>Newsletter buduje bezpośredni kanał komunikacji, niezależny od algorytmów.</li><li>Skuteczny newsletter dostarcza wartość, nie tylko promocje.</li><li>Wysyłka wymaga wyraźnej zgody odbiorców zgodnie z RODO.</li><li>Jakość treści jest ważniejsza niż częstotliwość wysyłek.</li><li>Wskaźniki open rate i CTR pomagają ocenić skuteczność.</li></ul><br/><p>W Arteon pomagamy firmom w <a class='inline-link' href='/uslugi/tworzenie-tresci'>tworzeniu treści</a>, które angażują odbiorców. <a class='inline-link' href='/kontakt'>Skontaktuj się</a>, jeśli potrzebujesz wsparcia w komunikacji z klientami.</p>",
           "breakAfter": true
         }
       ],
@@ -94,7 +94,7 @@
         "description": "Pomagamy firmom w tworzeniu treści, które angażują odbiorców i wspierają cele biznesowe.",
         "btnOne": "Sprawdź ofertę tworzenia treści",
         "btnOneLink": "/uslugi/tworzenie-tresci",
-        "btnTwo": "Skontaktuj się z nami",
+        "btnTwo": "Skontaktuj się",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/co-to-jest-newsletter-i-czy-warto-go-prowadzic/co-to-jest-newsletter-i-czy-warto-go-prowadzic.webp",
         "overlay": "black"
@@ -211,7 +211,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Content marketing to strategia, która pozwala firmom przyciągać klientów poprzez wartościowe treści zamiast tradycyjnej reklamy. Działa, ponieważ odpowiada na realne potrzeby odbiorców, buduje zaufanie i wspiera widoczność w wyszukiwarkach.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Content marketing to inwestycja długoterminowa</strong> - efekty narastają z czasem, ale treści pracują na firmę przez miesiące lub lata</li><li><strong>Treści mogą przyjmować różne formy</strong> - blog, video, poradniki, case studies - wybierz formę dopasowaną do odbiorców i swoich możliwości</li><li><strong>Content marketing i SEO idą w parze</strong> - wartościowe treści zwiększają widoczność w Google i przyciągają ruch organiczny</li><li><strong>Regularność jest ważniejsza niż ilość</strong> - konsekwentne publikowanie raz w tygodniu daje lepsze efekty niż sporadyczne działania</li><li><strong>Mierz efekty</strong> - ruch, pozycje w wyszukiwarce, konwersje - dane pokazują, co działa</li></ul><br/><p>Jeśli chcesz wdrożyć content marketing w swojej firmie, ale nie masz czasu lub zasobów na samodzielne tworzenie treści, możemy pomóc. W Arteon <a class='inline-link' href='/uslugi/tworzenie-tresci'>tworzymy treści</a> dopasowane do odbiorców i zoptymalizowane pod wyszukiwarki. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>, aby omówić potrzeby swojej firmy.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>Content marketing to strategia, która pozwala firmom przyciągać klientów poprzez wartościowe treści zamiast tradycyjnej reklamy. Działa, ponieważ odpowiada na realne potrzeby odbiorców, buduje zaufanie i wspiera widoczność w wyszukiwarkach.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Content marketing to inwestycja długoterminowa</strong> - efekty narastają z czasem, ale treści pracują na firmę przez miesiące lub lata</li><li><strong>Treści mogą przyjmować różne formy</strong> - blog, video, poradniki, case studies - wybierz formę dopasowaną do odbiorców i swoich możliwości</li><li><strong>Content marketing i SEO idą w parze</strong> - wartościowe treści zwiększają widoczność w Google i przyciągają ruch organiczny</li><li><strong>Regularność jest ważniejsza niż ilość</strong> - konsekwentne publikowanie raz w tygodniu daje lepsze efekty niż sporadyczne działania</li><li><strong>Mierz efekty</strong> - ruch, pozycje w wyszukiwarce, konwersje - dane pokazują, co działa</li></ul><br/><p>Jeśli chcesz wdrożyć content marketing w swojej firmie, ale nie masz czasu lub zasobów na samodzielne tworzenie treści, możemy pomóc. W Arteon <a class='inline-link' href='/uslugi/tworzenie-tresci'>tworzymy treści</a> dopasowane do odbiorców i zoptymalizowane pod wyszukiwarki. <a class='inline-link' href='/kontakt'>Skontaktuj się</a>, aby omówić potrzeby swojej firmy.</p>",
           "breakAfter": true
         }
       ],
@@ -220,7 +220,7 @@
         "description": "Pomagamy firmom budować widoczność poprzez wartościowe treści. Od artykułów na blog po pełną strategię content marketingu.",
         "btnOne": "Tworzenie treści",
         "btnOneLink": "/uslugi/tworzenie-tresci",
-        "btnTwo": "Skontaktuj się z nami",
+        "btnTwo": "Skontaktuj się",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp",
         "overlay": "black"
@@ -333,7 +333,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>E-mail marketing pozostaje jednym z najbardziej skutecznych kanałów komunikacji z klientami. Oferuje wysoki zwrot z inwestycji, bezpośredni dostęp do odbiorcy i możliwość precyzyjnej personalizacji.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>E-mail to własność firmy</strong> - w przeciwieństwie do zasięgów w mediach społecznościowych, lista mailingowa należy do Ciebie</li><li><strong>Różne typy e-maili służą różnym celom</strong> - newsletter buduje relację, automatyzacje oszczędzają czas, kampanie promocyjne generują sprzedaż</li><li><strong>Skuteczny mailing wymaga przemyślanej struktury</strong> - od tematu przez treść po wezwanie do działania</li><li><strong>RODO i zgody to podstawa</strong> - wysyłanie bez zgody jest nielegalne i nieskuteczne</li><li><strong>Dane pozwalają optymalizować</strong> - współczynniki otwarć, klikalności i konwersji pokazują, co działa</li></ul><br/><p>E-mail marketing to część szerszej strategii komunikacji firmy. Dobrze zaplanowany i regularnie prowadzony przynosi wymierne efekty. Jeśli potrzebujesz wsparcia w <a class='inline-link' href='/uslugi/tworzenie-tresci'>tworzeniu treści</a> do mailingów lub chcesz omówić strategię komunikacji dla swojej firmy, <a class='inline-link' href='/kontakt'>skontaktuj się z nami</a>.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie</h2><p>E-mail marketing pozostaje jednym z najbardziej skutecznych kanałów komunikacji z klientami. Oferuje wysoki zwrot z inwestycji, bezpośredni dostęp do odbiorcy i możliwość precyzyjnej personalizacji.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>E-mail to własność firmy</strong> - w przeciwieństwie do zasięgów w mediach społecznościowych, lista mailingowa należy do Ciebie</li><li><strong>Różne typy e-maili służą różnym celom</strong> - newsletter buduje relację, automatyzacje oszczędzają czas, kampanie promocyjne generują sprzedaż</li><li><strong>Skuteczny mailing wymaga przemyślanej struktury</strong> - od tematu przez treść po wezwanie do działania</li><li><strong>RODO i zgody to podstawa</strong> - wysyłanie bez zgody jest nielegalne i nieskuteczne</li><li><strong>Dane pozwalają optymalizować</strong> - współczynniki otwarć, klikalności i konwersji pokazują, co działa</li></ul><br/><p>E-mail marketing to część szerszej strategii komunikacji firmy. Dobrze zaplanowany i regularnie prowadzony przynosi wymierne efekty. Jeśli potrzebujesz wsparcia w <a class='inline-link' href='/uslugi/tworzenie-tresci'>tworzeniu treści</a> do mailingów lub chcesz omówić strategię komunikacji dla swojej firmy, <a class='inline-link' href='/kontakt'>Skontaktuj się</a>.</p>",
           "breakAfter": true
         }
       ],
@@ -342,7 +342,7 @@
         "description": "Pomagamy firmom tworzyć treści, które budują relacje z odbiorcami. Od tekstów na stronę po mailingi i materiały marketingowe.",
         "btnOne": "Tworzenie treści",
         "btnOneLink": "/uslugi/tworzenie-tresci",
-        "btnTwo": "Skontaktuj się z nami",
+        "btnTwo": "Skontaktuj się",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp",
         "overlay": "black"
@@ -469,7 +469,7 @@
         "description": "Skorzystaj z naszego darmowego generatora. Wpisz dane, wybierz styl, skopiuj i wklej do Gmail lub Outlook. To naprawdę takie proste.",
         "btnOne": "Otwórz generator stopki",
         "btnOneLink": "/narzedzia/darmowy-generator-stopki-mailowej",
-        "btnTwo": "Zobacz ofertę identyfikacji wizualnej",
+        "btnTwo": "Sprawdź ofertę identyfikacji wizualnej",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
         "backgroundImage": "/assets/blog/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy.webp",
         "overlay": "black"

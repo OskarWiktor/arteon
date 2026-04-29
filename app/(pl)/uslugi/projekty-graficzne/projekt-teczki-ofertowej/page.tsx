@@ -31,7 +31,7 @@ export const metadata = {
     description: 'Elegancka teczka ofertowa dopasowana do identyfikacji marki. Pliki gotowe do druku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -60,7 +60,7 @@ export default function OfferDesignPresentationFolderPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
+        backgroundImage="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
         overlay="black"
       />
 
@@ -257,7 +257,7 @@ export default function OfferDesignPresentationFolderPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji teczki ofertowej"
           description="Napisz jakie informacje chcesz umieścić na teczce, czy posiadasz logo oraz materiały graficzne i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
+          imageSrc="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
           imageAlt="Realizacja teczki ofertowej - kancelaria Luxnova"
           defaultSubject="Projekt teczki ofertowej"
         />
@@ -300,22 +300,22 @@ export default function OfferDesignPresentationFolderPage() {
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
               backgroundImage: '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp',
-              btnLabel: 'Zobacz ofertę',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'medium',
-              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              backgroundImage: '/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
@@ -323,7 +323,7 @@ export default function OfferDesignPresentationFolderPage() {
               title: 'Projekt ulotki',
               description: 'Skuteczna promocja Twojej oferty',
               size: 'small',
-              backgroundImage: '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp',
+              backgroundImage: '/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-ulotki',
             },
@@ -344,7 +344,7 @@ export default function OfferDesignPresentationFolderPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
+        backgroundImage="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
         overlay="black"
       />
 

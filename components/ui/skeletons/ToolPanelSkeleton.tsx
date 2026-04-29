@@ -7,13 +7,13 @@ export type ToolPanelVariant = 'default' | 'word-count' | 'image-editor' | 'colo
 function AdBannerShimmer() {
   return (
     <div className="my-3 flex justify-center">
-      <Shimmer className="h-[90px] w-full max-w-[728px] !rounded-2xl !bg-neutral-50" />
+      <Shimmer className="h-[90px] w-full max-w-[728px] !rounded-lg !bg-neutral-50" />
     </div>
   );
 }
 
 function SectionBox({ children, className = '' }: { children: React.ReactNode; className?: string }) {
-  return <div className={`rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm ${className}`}>{children}</div>;
+  return <div className={`rounded-lg border border-black/10 bg-white/80 p-7 shadow-sm ${className}`}>{children}</div>;
 }
 
 function InputShimmer() {
@@ -26,7 +26,7 @@ function InputShimmer() {
 }
 
 function ButtonShimmer({ width = 'w-28' }: { width?: string }) {
-  return <Shimmer className={`h-9 ${width} !rounded-lg`} />;
+  return <Shimmer className={`h-9 ${width} !rounded-md`} />;
 }
 
 /* ── Variant: default (QR Code - 2:3 grid, inputs + preview) ── */
@@ -48,8 +48,8 @@ function DefaultPanel() {
         <Shimmer className="h-5 w-32 !rounded-md" />
         <Shimmer className="h-48 w-full !bg-neutral-200" />
         <div className="flex gap-2">
-          <Shimmer className="h-8 w-20 !rounded-lg" />
-          <Shimmer className="h-8 w-20 !rounded-lg" />
+          <Shimmer className="h-8 w-20 !rounded-md" />
+          <Shimmer className="h-8 w-20 !rounded-md" />
         </div>
       </SectionBox>
     </div>
@@ -72,7 +72,7 @@ function MetaCounterPanel() {
           <Shimmer className="h-3 w-48 !rounded-md" />
         </div>
       ))}
-      <div className="space-y-2 rounded-xl border border-black/5 bg-neutral-50 p-4">
+      <div className="space-y-2 rounded-lg border border-black/5 bg-neutral-50 p-4">
         <Shimmer className="h-4 w-64 !rounded-md" />
         <Shimmer className="h-3 w-full !rounded-md" />
         <Shimmer className="h-3 w-3/4 !rounded-md" />
@@ -92,20 +92,20 @@ function ContrastCheckerPanel() {
             <div key={i} className="space-y-2">
               <Shimmer className="h-3.5 w-20 !rounded-md" />
               <div className="flex items-center gap-3">
-                <Shimmer className="h-10 w-10 !rounded-lg" />
+                <Shimmer className="h-10 w-10 !rounded-md" />
                 <Shimmer className="h-10 flex-1" />
               </div>
             </div>
           ))}
         </div>
-        <Shimmer className="mx-auto h-20 w-full !rounded-xl !bg-neutral-200" />
+        <Shimmer className="mx-auto h-20 w-full !rounded-lg !bg-neutral-200" />
         <Shimmer className="mx-auto h-8 w-48 !rounded-md" />
       </SectionBox>
 
       <SectionBox className="space-y-3">
         <Shimmer className="h-5 w-40 !rounded-md" />
         {[1, 2, 3].map((i) => (
-          <div key={i} className="flex items-center justify-between rounded-lg border border-black/5 px-4 py-3">
+          <div key={i} className="flex items-center justify-between rounded-md border border-black/5 px-4 py-3">
             <Shimmer className="h-4 w-32 !rounded-md" />
             <div className="flex gap-2">
               <Shimmer className="h-6 w-16 !rounded-full" />
@@ -125,7 +125,7 @@ function UploadToolPanel() {
     <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
       <SectionBox className="space-y-4">
         <Shimmer className="h-5 w-28 !rounded-md" />
-        <Shimmer className="h-32 w-full !rounded-xl border border-dashed !border-neutral-200 !bg-neutral-50" />
+        <Shimmer className="h-32 w-full !rounded-lg border border-dashed !border-neutral-200 !bg-neutral-50" />
         <Shimmer className="h-3 w-48 !rounded-md" />
         <div className="flex gap-3 pt-2">
           <ButtonShimmer />
@@ -137,7 +137,7 @@ function UploadToolPanel() {
         <Shimmer className="h-5 w-32 !rounded-md" />
         <div className="grid gap-3 sm:grid-cols-2">
           {[1, 2, 3, 4].map((i) => (
-            <Shimmer key={i} className="h-20 w-full !rounded-xl !bg-neutral-200" />
+            <Shimmer key={i} className="h-20 w-full !rounded-lg !bg-neutral-200" />
           ))}
         </div>
       </SectionBox>
@@ -192,7 +192,7 @@ function ImageEditorPanel() {
     <div className="grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,2.5fr)]">
       <SectionBox className="space-y-4">
         <Shimmer className="h-5 w-28 !rounded-md" />
-        <Shimmer className="h-32 w-full !rounded-xl border border-dashed !border-neutral-200 !bg-neutral-50" />
+        <Shimmer className="h-32 w-full !rounded-lg border border-dashed !border-neutral-200 !bg-neutral-50" />
         <Shimmer className="h-3 w-48 !rounded-md" />
 
         <Shimmer className="mt-2 h-5 w-36 !rounded-md" />
@@ -203,7 +203,7 @@ function ImageEditorPanel() {
 
         <div className="flex gap-2 pt-2">
           {[1, 2, 3, 4].map((i) => (
-            <Shimmer key={i} className="h-8 w-8 !rounded-lg" />
+            <Shimmer key={i} className="h-8 w-8 !rounded-md" />
           ))}
         </div>
 
@@ -234,7 +234,7 @@ function ColorPalettePanel() {
       <SectionBox className="space-y-4">
         <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex items-center gap-3">
-            <Shimmer className="h-10 w-10 !rounded-lg" />
+            <Shimmer className="h-10 w-10 !rounded-md" />
             <Shimmer className="h-10 w-32" />
           </div>
           <div className="flex items-center gap-2">
@@ -254,12 +254,12 @@ function ColorPalettePanel() {
       <SectionBox className="space-y-4">
         <div className="grid gap-4 md:grid-cols-2">
           {[1, 2, 3, 4].map((i) => (
-            <div key={i} className="space-y-2 rounded-xl border border-black/5 bg-white/90 p-4">
+            <div key={i} className="space-y-2 rounded-lg border border-black/5 bg-white/90 p-4">
               <Shimmer className="h-4 w-28 !rounded-md" />
               <Shimmer className="h-3 w-44 !rounded-md" />
               <div className="mt-2 grid gap-2 sm:grid-cols-2">
                 {[1, 2, 3, 4].map((j) => (
-                  <Shimmer key={j} className="h-14 w-full !rounded-lg" />
+                  <Shimmer key={j} className="h-14 w-full !rounded-md" />
                 ))}
               </div>
             </div>
@@ -289,7 +289,7 @@ function EmailSignaturePanel() {
         <Shimmer className="h-4 w-20 !rounded-md" />
         <div className="flex flex-wrap gap-2">
           {[1, 2, 3, 4, 5, 6, 7].map((i) => (
-            <Shimmer key={i} className="h-8 w-20 !rounded-lg" />
+            <Shimmer key={i} className="h-8 w-20 !rounded-md" />
           ))}
         </div>
       </SectionBox>
@@ -317,11 +317,11 @@ function EmailSignaturePanel() {
           <div className="flex items-center justify-between">
             <Shimmer className="h-5 w-28 !rounded-md" />
             <div className="flex gap-2">
-              <Shimmer className="h-8 w-8 !rounded-lg" />
-              <Shimmer className="h-8 w-8 !rounded-lg" />
+              <Shimmer className="h-8 w-8 !rounded-md" />
+              <Shimmer className="h-8 w-8 !rounded-md" />
             </div>
           </div>
-          <Shimmer className="min-h-[340px] w-full flex-1 !rounded-xl !bg-neutral-200" />
+          <Shimmer className="min-h-[340px] w-full flex-1 !rounded-lg !bg-neutral-200" />
           <div className="flex flex-wrap gap-2">
             <ButtonShimmer width="w-32" />
             <ButtonShimmer width="w-32" />
@@ -342,7 +342,7 @@ interface ToolPanelSkeletonProps {
 function SideAdShimmer() {
   return (
     <div className="sticky top-4">
-      <Shimmer className="h-[600px] w-full !rounded-xl !bg-neutral-50" />
+      <Shimmer className="h-[600px] w-full !rounded-lg !bg-neutral-50" />
     </div>
   );
 }

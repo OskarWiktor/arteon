@@ -20,7 +20,7 @@ export default function SectionPrices({
 
   return (
     <section id={id} aria-labelledby={headingId} aria-describedby={describedBy} className="w-full">
-      <div className="mb-4 md:mb-6 lg:mb-8">
+      <div className="mb-4 lg:mb-6">
         {subtitle && (
           <span id={subtitleId} className="text-light text-sm tracking-wider uppercase">
             {subtitle}
@@ -114,7 +114,7 @@ export default function SectionPrices({
       </div>
 
       {note && (
-        <div className="mt-8 rounded-2xl bg-gradient-to-br from-white to-neutral-50 p-6 shadow-sm ring-1 ring-neutral-200" role="note" aria-label="Informacja">
+        <div className="mt-8 rounded-lg bg-gradient-to-br from-white to-neutral-50 p-6 shadow-sm ring-1 ring-neutral-200" role="note" aria-label="Informacja">
           <div className="text-mid text-[15px] leading-relaxed">{note.text}</div>
           {note.ctaLink && note.ctaLabel && (
             <div className="mt-4">

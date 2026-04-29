@@ -51,7 +51,7 @@ const STATIC_PAGES_PL: SearchItem[] = [
   },
   {
     title: 'Kontakt',
-    description: 'Skontaktuj się z nami - formularz, e-mail, telefon',
+    description: 'Skontaktuj się - formularz, e-mail, telefon',
     href: '/kontakt',
     category: 'inne',
     categoryLabel: 'Strony',

@@ -64,7 +64,7 @@ export function CarouselCard(props: CarouselCardProps) {
             <Link
               href={props.href}
               prefetch={false}
-              className="focus-visible:ring-primary inline-flex w-fit items-center rounded-2xl border border-black/10 bg-white px-3 py-1.5 text-sm font-medium shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus-visible:ring-2 focus-visible:ring-offset-2 md:px-4 md:py-2 md:text-base"
+              className="focus-visible:ring-primary inline-flex w-fit items-center rounded-lg border border-black/10 bg-white px-3 py-1.5 text-sm font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus-visible:ring-2 focus-visible:ring-offset-2 md:px-4 md:py-2 md:text-base"
             >
               <span>{label}</span>
               <span className="ml-1 flex h-5 w-5 items-center justify-center" aria-hidden="true">

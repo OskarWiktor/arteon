@@ -18,7 +18,7 @@ type ErrorTranslations = {
 const ERROR_TRANSLATIONS: Record<string, ErrorTranslations> = {
   pl: {
     title: 'Coś poszło nie tak',
-    description: 'Wystąpił nieoczekiwany błąd. Spróbuj odświeżyć stronę lub skontaktuj się z nami, jeśli problem się powtarza.',
+    description: 'Wystąpił nieoczekiwany błąd. Spróbuj odświeżyć stronę lub Skontaktuj się, jeśli problem się powtarza.',
     tryAgain: 'Spróbuj ponownie',
     backHome: 'Wróć na stronę główną',
     contact: 'Skontaktuj się',

@@ -14,7 +14,7 @@ export default function Badge({ children, text, variant, size, as: Component, cl
     className === '';
 
   if (isLegacyTextBadge) {
-    return <span className="inline-block rounded-2xl bg-white px-3 py-1 text-xs tracking-wide uppercase shadow-sm">{text}</span>;
+    return <span className="inline-block rounded-lg bg-white px-3 py-1 text-xs tracking-wide uppercase shadow-sm">{text}</span>;
   }
 
   const resolvedVariant: BadgeVariant = variant ?? 'default';
@@ -37,7 +37,7 @@ export default function Badge({ children, text, variant, size, as: Component, cl
     dark: 'bg-neutral-900 text-white',
     warning: 'bg-warning-bg text-warning-text',
     info: 'bg-info-bg text-info-mid',
-    tech: 'rounded-lg! border border-primary-light bg-white',
+    tech: 'rounded-md! border border-primary-light bg-white',
   };
 
   const baseClasses = 'inline-flex items-center rounded-full font-medium';

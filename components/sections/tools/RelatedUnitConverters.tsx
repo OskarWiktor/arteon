@@ -188,7 +188,7 @@ function ConverterGrid({ converters, locale }: { converters: { toolKey: string; 
           <a
             key={c.toolKey}
             href={href}
-            className="border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-lg border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors"
+            className="border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors"
           >
             {label}
           </a>

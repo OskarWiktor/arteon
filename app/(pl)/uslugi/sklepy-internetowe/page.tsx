@@ -46,7 +46,7 @@ export const metadata = {
     description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
     url: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-trilllizo.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/trilllizo/moskup-strony-trilllizo.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -79,7 +79,7 @@ export default function OfferWebPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/arteon-baners-trilllizo.webp"
+        backgroundImage="/assets/projects/trilllizo/moskup-strony-trilllizo.webp"
         overlay="black"
       />
 
@@ -338,7 +338,7 @@ export default function OfferWebPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji sklepu internetowego"
           description="Napisz jakie produkty chcesz sprzedawać, czy potrzebujesz pomocy z tworzeniem treści oraz czy posiadasz materiały graficzne (logo oraz zdjęcia) i otrzymaj darmową wycenę realizacji."
-          imageSrc="/assets/projects/arteon-baners-trilllizo.webp"
+          imageSrc="/assets/projects/trilllizo/moskup-strony-trilllizo.webp"
           imageAlt="Realizacja sklepu internetowego - Trilllizo mockup"
           defaultSubject="Sklep internetowy"
         />
@@ -410,23 +410,23 @@ export default function OfferWebPage() {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'medium',
-              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
               title: 'Projekt logo',
               description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-logo',
             },
@@ -434,7 +434,7 @@ export default function OfferWebPage() {
               title: 'Szablony media społecznościowe',
               description: 'Gotowe projekty do Twoich postów',
               size: 'small',
-              backgroundImage: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
+              backgroundImage: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
             },
@@ -453,7 +453,7 @@ export default function OfferWebPage() {
         description="Tworzymy dedykowane rozwiązanie, gotowe do rozwoju - szybkie, stabilne i zgodne z przepisami"
         btnOne="Wyceń projekt"
         btnOneLink="#kontakt"
-        backgroundImage="/assets/projects/arteon-baners-trilllizo.webp"
+        backgroundImage="/assets/projects/trilllizo/moskup-strony-trilllizo.webp"
         overlay="black"
       />
 

@@ -116,7 +116,7 @@ export default function MetaTitleDescriptionTool() {
             <ToolHelper>{t.previewHelper}</ToolHelper>
           </div>
 
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4 text-sm shadow-inner">
+          <div className="rounded-lg border border-neutral-200 bg-white p-4 text-sm shadow-inner">
             <div className="flex gap-3">
               {/* Favicon w kole z ramką - osobna kolumna */}
               <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border border-neutral-300 bg-white p-1">

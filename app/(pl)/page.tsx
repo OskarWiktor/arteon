@@ -122,9 +122,8 @@ export default function HomePage() {
       <HeroBanner
         title="Rozwiń swoją markę z nami"
         description="Międzynarodowy standard jakości dla małych i średnich przedsiębiorstw"
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
+        backgroundImage="/assets/bg/arteon-hero-baner-z-realizacja-strony-jstax.webp"
         overlay="black"
-        variant="center"
       />
 
       <BenefitBelt
@@ -199,7 +198,7 @@ export default function HomePage() {
             },
             {
               topImageAlt: 'Szablony media społecznościowe dla MSC Psychotherapy - mockup',
-              topImageSrc: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
+              topImageSrc: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               imageSrc: '/assets/ogien.webp',
               imageAlt: 'Ogień - symbol marketingu',
               title: 'Marketing',
@@ -220,7 +219,7 @@ export default function HomePage() {
             },
             {
               topImageAlt: 'Treści dla MSC Psychotherapy - baner',
-              topImageSrc: '/assets/projects/arteon-baners-msc.webp',
+              topImageSrc: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
               imageSrc: '/assets/powietrze.webp',
               imageAlt: 'Powietrze - symbol języka',
               title: 'Treści',
@@ -307,11 +306,11 @@ export default function HomePage() {
       <CTABanner
         title="Zacznijmy od rozmowy"
         description="Opisz swoją wizję rozwoju, a przygotujemy propozycję dopasowaną do Twoich celów."
-        btnOne="Skontaktuj się z nami"
+        btnOne="Skontaktuj się"
         btnOneLink="/kontakt"
         btnTwo="Sprawdź pełną ofertę usług"
         btnTwoLink="/uslugi"
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
+        backgroundImage="/assets/bg/arteon-hero-baner-z-realizacja-strony-jstax.webp"
         overlay="black"
       />
     </>

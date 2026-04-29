@@ -248,7 +248,7 @@ export default function QrCodeGenerator() {
         <div className="flex flex-col items-center">
           <p className="tool-label mb-3">{t.preview}</p>
           <div
-            className="flex max-w-full items-center justify-center rounded-lg border border-neutral-200 p-4"
+            className="flex max-w-full items-center justify-center rounded-md border border-neutral-200 p-4"
             style={{ backgroundColor: lightColor, minWidth: Math.min(size, 300) + 32, minHeight: Math.min(size, 300) + 32 }}
           >
             {qrDataUrl ? (

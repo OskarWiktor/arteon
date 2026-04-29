@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import Link from 'next/link';
-import { RiArrowRightLine } from 'react-icons/ri';
+import { RiArrowRightSLine } from 'react-icons/ri';
 
 interface ButtonProps {
   children: ReactNode;
@@ -35,13 +35,13 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
   switch (variant) {
     case 'normal':
       variantClass =
-        'hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-dark ' + 'focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-primary';
+        'hover:-translate-y-0.5 shadow-sm hover:shadow-md border border-black/10 bg-white text-dark ' + 'focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-primary';
       break;
     case 'accent':
-      variantClass = 'hover:-translate-y-0.5 shadow-md hover:shadow-xl bg-primary text-white ' + 'focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white';
+      variantClass = 'hover:-translate-y-0.5 shadow-sm hover:shadow-md bg-primary text-white ' + 'focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white';
       break;
     case 'accent-reverse':
-      variantClass = 'hover:-translate-y-0.5 shadow-md hover:shadow-xl bg-white text-primary ' + 'focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary';
+      variantClass = 'hover:-translate-y-0.5 shadow-sm hover:shadow-md bg-white text-primary ' + 'focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary';
       break;
     case 'outline':
       variantClass =
@@ -51,13 +51,13 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
   }
 
   const baseClass =
-    `transition w-fit inline-flex rounded-xl items-center font-medium text-sm md:text-base ` +
+    `transition w-fit inline-flex rounded-sm items-center font-medium text-sm md:text-base ` +
     `${sizeClass} ${variantClass} ${disabled ? 'cursor-not-allowed pointer-events-none' : 'cursor-pointer'} ` +
     `${className}`;
 
   const Arrow = arrow ? (
     <span className="ml-1 flex h-5 w-5 items-center justify-center" aria-hidden="true">
-      <RiArrowRightLine className="text-current" />
+      <RiArrowRightSLine className="text-current" />
     </span>
   ) : null;
 

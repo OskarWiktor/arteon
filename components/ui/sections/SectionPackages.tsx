@@ -67,7 +67,7 @@ export default function SectionPackages({ title, subtitle, description, packages
         <div className="mt-6 block md:hidden">
           <div className="space-y-4">
             {displayPackages.map((pkg, pIdx) => (
-              <div key={pIdx} className={`rounded-2xl border p-4 ${pIdx === highlightedIndex ? 'border-primary-mid bg-neutral-50' : 'border-black/10 bg-white'}`}>
+              <div key={pIdx} className={`rounded-lg border p-4 ${pIdx === highlightedIndex ? 'border-primary-mid bg-neutral-50' : 'border-black/10 bg-white'}`}>
                 <h3 className="h5 mb-3">{pkg.name}</h3>
                 <ul className="space-y-2">
                   {features

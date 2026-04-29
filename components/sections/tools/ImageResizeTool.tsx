@@ -421,7 +421,7 @@ export default function ImageResizeTool() {
             )}
           </div>
 
-          <div className="text-light mt-4 rounded-2xl border border-black/10 bg-white/90 p-4 text-xs!">
+          <div className="text-light mt-4 rounded-lg border border-black/10 bg-white/90 p-4 text-xs!">
             <h3 className="h6 mb-2">{t.imageParams}</h3>
             {!state.imageUrl && <p>{t.noData}</p>}
             {state.imageUrl && (
@@ -542,12 +542,12 @@ export default function ImageResizeTool() {
               ))}
             </div>
 
-            <div className="relative mt-4 flex aspect-[4/5] max-h-[340px] items-center justify-center overflow-hidden rounded-2xl border border-neutral-300 bg-neutral-100">
+            <div className="relative mt-4 flex aspect-[4/5] max-h-[340px] items-center justify-center overflow-hidden rounded-lg border border-neutral-300 bg-neutral-100">
               <div className="flex flex-col items-center gap-2 text-neutral-400">
                 <RiImageLine className="text-5xl" aria-hidden="true" />
                 <span className="text-sm! font-medium">{t.demoPreset}</span>
               </div>
-              <div className="pointer-events-none absolute inset-4 grid grid-cols-3 grid-rows-3 rounded-lg border border-dashed border-neutral-300">
+              <div className="pointer-events-none absolute inset-4 grid grid-cols-3 grid-rows-3 rounded-md border border-dashed border-neutral-300">
                 {Array.from({ length: 9 }).map((_, i) => (
                   <div key={i} className="border border-dashed border-neutral-300/50" />
                 ))}

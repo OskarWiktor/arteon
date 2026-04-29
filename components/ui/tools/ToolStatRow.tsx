@@ -8,7 +8,7 @@ interface ToolStatRowProps {
 
 export default function ToolStatRow({ label, value, className = '' }: ToolStatRowProps) {
   return (
-    <div className={`flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2 ${className}`}>
+    <div className={`flex items-center justify-between rounded-md border border-neutral-200 bg-white px-3 py-2 ${className}`}>
       <span className="tool-value">{label}</span>
       <strong className="text-dark">{value}</strong>
     </div>

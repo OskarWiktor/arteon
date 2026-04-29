@@ -90,7 +90,7 @@ export const metadata = {
     description: 'Realizujemy projekty graficzne do druku i online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -108,7 +108,7 @@ export default function OfferDesignPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
+        backgroundImage="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
         overlay="black"
       />
 
@@ -491,7 +491,7 @@ export default function OfferDesignPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji projektu graficznego"
           description="Napisz czym zajmuje się Twoja firma, jaki materiał chcesz stworzyć oraz czy posiadasz logo i identyfikację wizualną - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-przod.webp"
+          imageSrc="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
           imageAlt="Realizacja projektu graficznego - teczka ofertowa dla kancelarii"
           defaultSubject="Projekty graficzne"
         />
@@ -559,23 +559,23 @@ export default function OfferDesignPage() {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'small',
-              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
@@ -598,7 +598,7 @@ export default function OfferDesignPage() {
         description="Projektujemy logo, identyfikację i materiały, które zostają w pamięci"
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
+        backgroundImage="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
         overlay="black"
       />
       <ItemListSchema />

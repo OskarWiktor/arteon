@@ -40,7 +40,7 @@ export default function SectionHeader({
         </div>
       )}
       {title && (
-        <TitleTag className={`${headingClassName} h3 mb-4 md:mb-6 lg:mb-8`} id={titleId}>
+        <TitleTag className={`${headingClassName} h3 mb-4 lg:mb-6`} id={titleId}>
           {title}
         </TitleTag>
       )}

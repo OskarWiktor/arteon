@@ -13,8 +13,8 @@ function FeatureGridSkeleton() {
       <Shimmer className="h-7 w-1/3 !rounded-md" />
       <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {Array.from({ length: 6 }).map((_, i) => (
-          <div key={i} className="flex items-start gap-4 rounded-2xl border border-black/5 bg-white p-5 shadow-sm">
-            <Shimmer className="h-8 w-8 shrink-0 !rounded-lg" />
+          <div key={i} className="flex items-start gap-4 rounded-lg border border-black/5 bg-white p-5 shadow-sm">
+            <Shimmer className="h-8 w-8 shrink-0 !rounded-md" />
             <Shimmer className="h-5 w-3/4 !rounded-md" />
           </div>
         ))}
@@ -30,8 +30,8 @@ function WorkStepsSkeleton() {
       <Shimmer className="h-7 w-2/5 !rounded-md" />
       <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {Array.from({ length: 4 }).map((_, i) => (
-          <div key={i} className="rounded-2xl border border-black/5 bg-white p-5 shadow-sm">
-            <Shimmer className="mb-3 h-10 w-10 !rounded-xl" />
+          <div key={i} className="rounded-lg border border-black/5 bg-white p-5 shadow-sm">
+            <Shimmer className="mb-3 h-10 w-10 !rounded-lg" />
             <Shimmer className="h-5 w-3/4 !rounded-md" />
             <Shimmer className="mt-2 h-3.5 w-full !rounded-md" />
             <Shimmer className="mt-1 h-3.5 w-5/6 !rounded-md" />

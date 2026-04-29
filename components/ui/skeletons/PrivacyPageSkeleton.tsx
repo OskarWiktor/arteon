@@ -29,7 +29,7 @@ export default function PrivacyPageSkeleton() {
 
         {/* Table of Contents sidebar */}
         <div className="hidden lg:block">
-          <div className="sticky top-24 space-y-3 rounded-2xl border border-black/5 bg-white p-5 shadow-sm">
+          <div className="sticky top-24 space-y-3 rounded-lg border border-black/5 bg-white p-5 shadow-sm">
             <Shimmer className="h-5 w-2/3 !rounded-md" />
             <Shimmer className="h-3.5 w-4/5 !rounded-md" />
             <Shimmer className="h-3.5 w-full !rounded-md" />

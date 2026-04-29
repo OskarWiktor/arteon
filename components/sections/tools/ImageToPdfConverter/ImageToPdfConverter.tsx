@@ -322,7 +322,7 @@ export default function ImageToPdfConverter({ sourceFormat, acceptMime }: ImageT
           </div>
 
           {files.length === 0 && (
-            <div className="rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-6 text-center">
+            <div className="rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-6 text-center">
               <p className="tool-meta">{t.emptyState?.replace('{{source}}', sourceLabel).replace('{{target}}', 'PDF') ?? `Add ${sourceLabel} files to convert to PDF`}</p>
             </div>
           )}

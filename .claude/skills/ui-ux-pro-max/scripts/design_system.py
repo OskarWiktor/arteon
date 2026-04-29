@@ -627,7 +627,7 @@ def format_master_md(design_system: dict) -> str:
     lines.append("| `--shadow-sm` | `0 1px 2px rgba(0,0,0,0.05)` | Subtle lift |")
     lines.append("| `--shadow-md` | `0 4px 6px rgba(0,0,0,0.1)` | Cards, buttons |")
     lines.append("| `--shadow-lg` | `0 10px 15px rgba(0,0,0,0.1)` | Modals, dropdowns |")
-    lines.append("| `--shadow-xl` | `0 20px 25px rgba(0,0,0,0.15)` | Hero images, featured cards |")
+    lines.append("| `--shadow-lg` | `0 20px 25px rgba(0,0,0,0.15)` | Hero images, featured cards |")
     lines.append("")
     
     # Component Specs section
@@ -723,7 +723,7 @@ def format_master_md(design_system: dict) -> str:
     lines.append("  background: white;")
     lines.append("  border-radius: 16px;")
     lines.append("  padding: 32px;")
-    lines.append("  box-shadow: var(--shadow-xl);")
+    lines.append("  box-shadow: var(--shadow-lg);")
     lines.append("  max-width: 500px;")
     lines.append("  width: 90%;")
     lines.append("}")

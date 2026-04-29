@@ -202,13 +202,13 @@ export default function OfferOptimizationSEO() {
           description="Poniżej kilka typowych rezultatów po 2-8 tygodniach od wdrożeń. Rzeczywiste wyniki zależą od branży i skali zmian."
         >
           <ul className="mt-4 grid grid-cols-1 gap-3 pl-0 text-sm md:grid-cols-3">
-            <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">
+            <li className="list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200">
               <strong>Wyraźnie szybsze ładowanie strony</strong>, szczególnie na telefonach.
             </li>
-            <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">
+            <li className="list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200">
               <strong>Więcej wejść z Google</strong> efekt może być zauważalny już po 2-3 miesiącach.
             </li>
-            <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">
+            <li className="list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200">
               <strong>Wzrost liczby zapytań</strong> po dopracowaniu opisów oferty i nawigacji.
             </li>
           </ul>
@@ -374,22 +374,22 @@ export default function OfferOptimizationSEO() {
               description: 'Stałe działania SEO po optymalizacji',
               size: 'large',
               backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
-              btnLabel: 'Zobacz ofertę',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/autokorfu/mockup-strony-auto-korfu.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty online',
               size: 'small',
-              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
+              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },

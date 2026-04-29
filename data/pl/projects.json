@@ -1,36 +1,69 @@
 {
   "projects": [
     {
-      "slug": "logo-dla-firmy-wykonczeniowej-finish-masters",
-      "title": "Logo dla firmy wykończeniowej - Finish Masters",
-      "short": "Projekt logo dla firmy wykończeniowej Finish Masters. Zaprojektowaliśmy ikonę dachu z literami F i M — niedokończone elementy nawiązują do nazwy firmy. Do tego autorska czcionka i pełny system wariantów znaku.",
-      "description": "<p>Klient potrzebował <strong>logo oraz strony internetowej</strong> dla swojej firmy wykończeniowej Finish Masters sp. z o.o.</p><br /><p>Zaprojektowaliśmy ikonę na bazie <strong>dachu z wpisanymi literami F i M</strong>. Litery mają niedokończone elementy, co nawiązuje do nazwy firmy.</p><br /><p>Przygotowaliśmy propozycje kolorystyczne uwzględniające psychologię kolorów w biznesie. Klient wybrał <strong>paletę niebieską</strong> - budującą zaufanie i profesjonalizm.</p>",
-      "image": "/assets/projects/finish-masters/logo-finish-masters-case-study.webp",
-      "category": ["grafika", "logo"],
-      "client": {
-        "name": "Finish Masters sp. z o.o.",
-        "sector": "Wykończenia wnętrz i instalacje"
-      },
-
+      "slug": "strona-internetowa-dla-biura-rachunkowego-jstax",
+      "title": "Strona internetowa dla kancelarii doradztwa podatkowego - JSTax",
+      "short": "Strona internetowa dla kancelarii doradztwa podatkowego JSTax.",
+      "description": "<p>Realizacja strony ineternetowej dla kancelarii doradztwa podatkowego <strong>JSTax</strong>. Projekt obejmował indywidualny projekt wyglądu strony, nastawiony na wzbudzenie zaufania oraz estetykę usług premium, strukturę strony wzmacniającą widoczność w Google oraz realizację samej strony.</p><br /><p>Projekt strony obejmuję 9 głównych stron usług,, które prowadzą do kolejnych podkategorii usług, co zapewni pokrycie bardzo wielu słów kluczowych związanych z usługami oraz branżą. Prace nad stroną jeszcze trwają. Link do gotowej wersji dodamy po jej publikacji.</p>",
+      "image": "/assets/projects/jstax/moskup-strony-jstax.webp",
+      "category": ["strona"],
       "process_steps": [
-        "Analiza potrzeb i planowanych zastosowań",
-        "Projekt ikony z dachem i literami F i M",
-        "Edycja czcionki z niedokończonymi elementami",
-        "Przygotowanie wariantów kolorystycznych do wyboru",
-        "Przygotowanie wszystkich wersji i formatów"
+        "Przygotowanie struktury strony internetowej z myślą o widoczności w Google,",
+        "Projekt wyglądu strony głównej,",
+        "Konsultacje i poprawki,",
+        "Realizacja strony internetowej (w toku),"
       ],
-
       "contentBlocks": [
         {
           "type": "image",
-          "src": "/assets/projects/finish-masters/logo-finish-masters-case-study.webp",
+          "src": "/assets/projects/jstax/moskup-strony-jstax.webp",
+          "alt": "Strona internetowa JSTax - mockup realizacji Arteon",
+          "ratio": "16/9",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz strony internetowej dla swojej kancelarii?",
+        "description": "Projektujemy i realizujemy strony internetowe dopasowane do specyfiki branży.",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "backgroundImage": "/assets/projects/jstax/moskup-strony-jstax.webp",
+        "overlay": "black"
+      },
+      "faq": [],
+      "seo": {
+        "title": "Realizacja strony internetowej dla kancelarii doradztwa podatkowego - JSTax",
+        "description": "Realizacja strony dla kancelarii doradztwa podatkowego JSTax. Sprawdź szczegóły naszej realizacji i zamów stronę dla swojej kancelarii.",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-biura-rachunkowego-jstax"
+      }
+    },
+
+    {
+      "slug": "logo-dla-firmy-wykonczeniowej-finish-masters",
+      "title": "Logo dla firmy wykończeniowej - Finish Masters",
+      "short": "Logo dla Finish Masters - firmy wykończeniowej z Krakowa. Sygnet z dachem oraz literami F i M, których niedokończone elementy nawiązują do nazwy. Niebieska paleta przeniesiona później na stronę i wizytówki.",
+      "description": "<p>Klient potrzebował kompleksowego projektu - <strong>logo, strony internetowej i wizytówek</strong> - dla swojej firmy wykończeniowej Finish Masters sp. z o.o. z Krakowa.</p><br /><p>Zaprojektowaliśmy ikonę na bazie <strong>dachu z wpisanymi literami F i M</strong>. Litery mają niedokończone elementy, co nawiązuje do nazwy firmy.</p><br /><p>Przygotowaliśmy propozycje kolorystyczne uwzględniające psychologię kolorów w biznesie. Klient wybrał <strong>paletę niebieską</strong> - budującą zaufanie i profesjonalizm. Ta sama kolorystyka została przeniesiona na <a href=\"/realizacje/strona-internetowa-dla-firmy-wykonczeniowej-finish-masters\">stronę internetową</a> i <a href=\"/realizacje/wizytowki-dla-firmy-wykonczeniowej-finish-masters\">wizytówki</a>.</p>",
+      "image": "/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp",
+      "category": ["grafika"],
+      "process_steps": [
+        "Brief - oczekiwania klienta i analiza branży.",
+        "Wstępne kierunki graficzne.",
+        "Wybór kierunku - dach z wpisanymi literami F i M, z niedokończonymi elementami nawiązującymi do nazwy.",
+        "Dopracowanie znaku.",
+        "Propozycje kolorystyczne - klient wybrał paletę niebieską.",
+        "Przygotowanie wariantów do druku i online."
+      ],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp",
           "alt": "Logo Finish Masters - prezentacja wariantów i palety kolorów",
           "ratio": "16/9",
           "breakAfter": true
         },
         {
           "type": "imageText",
-          "src": "/assets/projects/finish-masters/logo-finish-masters-mockup-na-papierze.webp",
+          "src": "/assets/projects/finish-masters/logo/logo-finish-masters-mockup-na-papierze.webp",
           "alt": "Logo Finish Masters - mockup na papierze firmowym",
           "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Warianty znaku</h2><p>Logo zostało przygotowane w kilku wariantach: sama ikona (do mediów społecznościowych i jako favicon), sam logotyp, ikona ze sloganem poniżej oraz wersja kwadratowa z nazwą firmy.</p><br /><p>Dzięki temu znak zachowuje czytelność niezależnie od rozmiaru i może zostać użyty w różnych kontekstach.</p>",
           "imageSide": "left",
@@ -42,274 +75,190 @@
           "title": "Psychologia kolorów w logo",
           "description": "Klient wybrał wersję niebieską — kojarzoną z zaufaniem i profesjonalizmem. Obok prezentujemy warianty zielony (innowacyjność) i czerwony (energia i dynamika).",
           "images": [
-            { "src": "/assets/projects/finish-masters/logo-prezentacja-finish-masters-kolory_1.webp", "alt": "Logo Finish Masters - wersja zielona", "label": "Zielona - innowacyjność, ekologia" },
             {
-              "src": "/assets/projects/finish-masters/logo-prezentacja-finish-masters-kolory_4.webp",
+              "src": "/assets/projects/finish-masters/logo/logo-prezentacja-finish-masters-kolory_1.webp",
+              "alt": "Logo Finish Masters - wersja zielona",
+              "label": "Zielona - innowacyjność, ekologia"
+            },
+            {
+              "src": "/assets/projects/finish-masters/logo/logo-prezentacja-finish-masters-kolory_4.webp",
               "alt": "Logo Finish Masters - wersja niebieska (wybrana)",
               "label": "Niebieska - zaufanie, profesjonalizm (wybrana)"
             },
-            { "src": "/assets/projects/finish-masters/logo-prezentacja-finish-masters-kolory_5.webp", "alt": "Logo Finish Masters - wersja czerwona", "label": "Czerwona - energia, dynamika" }
+            {
+              "src": "/assets/projects/finish-masters/logo/logo-prezentacja-finish-masters-kolory_5.webp",
+              "alt": "Logo Finish Masters - wersja czerwona",
+              "label": "Czerwona - energia, dynamika"
+            }
           ]
         }
       ],
-
       "cta": {
         "title": "Potrzebujesz logo dla swojej firmy?",
         "description": "Projektujemy logo z myślą o różnych zastosowaniach - od strony internetowej po materiały drukowane. Każda realizacja obejmuje sygnet, logotyp, warianty kolorystyczne i pliki w formatach wektorowych.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę projektów graficznych",
         "btnTwoLink": "/uslugi/projekty-graficzne",
-        "backgroundImage": "/assets/projects/finish-masters/logo-finish-masters-case-study.webp",
+        "backgroundImage": "/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp",
         "overlay": "black"
       },
-
-      "faq": [
-        {
-          "question": "Co wchodzi w skład projektu logo?",
-          "answer": "Projekt logo obejmuje: sygnet (ikonę), logotyp (napis), warianty układów (ikona osobno, z tekstem obok, z tekstem poniżej), paletę kolorów oraz pliki w formatach wektorowych (do druku i zgłoszenia znaku towarowego) i rastrowych (do użycia online)."
-        },
-        {
-          "question": "Czy logo będzie działać na różnych tłach?",
-          "answer": "Tak. Przygotowujemy warianty kolorystyczne dla jasnego i ciemnego tła. Dzięki temu logo jest czytelne zarówno na białym papierze firmowym, jak i na ciemnym tle strony internetowej czy grafiki do mediów społecznościowych."
-        },
-        {
-          "question": "Czy mogę zgłosić logo jako znak towarowy?",
-          "answer": "Tak. Przekazujemy pliki wektorowe (AI, SVG, EPS), które są wymagane do zgłoszenia znaku towarowego w Urzędzie Patentowym. Format wektorowy zapewnia najwyższą jakość bez względu na skalowanie."
-        },
-        {
-          "question": "Ile propozycji logo otrzymam do wyboru?",
-          "answer": "Zazwyczaj przygotowujemy 2-3 kierunki koncepcyjne, a po wyborze jednego z nich dopracowujemy szczegóły (warianty kolorystyczne, układy, poprawki). Liczba propozycji zależy od ustaleń na początku projektu."
-        }
-      ],
-
       "seo": {
         "title": "Logo dla firmy wykończeniowej - Finish Masters - Arteon",
         "description": "Logo dla firmy wykończeniowej Finish Masters. Zaprojektowaliśmy znak z ikoną dachu, literami F i M oraz autorską czcionką w kilku wariantach kolorystycznych. Zobacz realizację.",
         "canonical": "https://www.arteonagency.pl/realizacje/logo-dla-firmy-wykonczeniowej-finish-masters"
-      }
+      },
+      "task": "Zaprojektować logo dla firmy wykończeniowej Finish Masters - jako pierwszy element kompleksowego projektu (logo, strona, wizytówki).",
+      "goals": "<p>Założenia projektu:</p><ul><li>Sygnet z dachem oraz literami F i M</li><li>Niedokończone elementy w literach nawiązujące do nazwy firmy</li><li>Paleta kolorystyczna budująca zaufanie i profesjonalizm</li></ul>"
     },
 
     {
-      "slug": "strona-internetowa-dla-firmy-budowlanej-ocieplenia-budynkow-izoluk",
-      "title": "Strona internetowa dla firmy budowlanej - ocieplenia budynków Izoluk",
-      "short": "Rozbudowana strona internetowa dla firmy z branży izolacji budowlanych. Strona zbudowana na WordPress zawiera blog, dedykowany formularz wyceny oraz osobne podstrony ofertowe dla każdej usługi — od piany PUR po posadzki żywiczne.",
-      "description": "<p>Strona internetowa dla <strong>firmy z branży izolacji natryskowych</strong>. Klient potrzebował witryny widocznej w Google z osobnymi podstronami dla każdej usługi (piana PUR, membrany, izolacja wdmuchiwana, posadzki).</p><br /><p>Stronę zbudowaliśmy na <strong>WordPress z Elementorem Pro</strong>. Dostosowaliśmy kolory do wymogów WCAG, dodaliśmy blog z gotowym szablonem wpisów oraz formularz wyceny ułatwiający kontakt.</p>",
-      "image": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp",
-      "category": ["strona", "grafika", "blog", "treść"],
-      "link": "https://izoluk.pl/",
-      "client": {
-        "name": "Izoluk",
-        "sector": "Budownictwo - izolacje natryskowe"
-      },
-
-      "task": "Zaprojektowanie i wdrożenie strony internetowej z myślą o widoczności w Google, z rozbudowaną strukturą ofertową, blogiem i formularzem wyceny.",
-
-      "goals": "<p>Klient potrzebował strony:</p><ul><li><strong>Widocznej w Google</strong> na frazy związane z izolacjami</li><li>Z <strong>osobnymi podstronami</strong> dla każdej usługi</li><li>Z <strong>blogiem</strong> wspierającym pozycjonowanie</li><li><strong>Szybkiej na mobile</strong></li></ul>",
-
+      "slug": "strona-internetowa-dla-firmy-automatyzujacej-bramy-napilota",
+      "title": "Strona internetowa dla firmy automatyzującej bramy - NaPilota",
+      "short": "Indywidualny projekt graficzny strony, ponad 8 podstron ofertowych, treści pod SEO oraz katalog produktów.",
+      "description": "<p>Firma NaPilota wcześniej posiadała stronę-wizytówkę ( jednostronicową ), której pozycja w Google była mocno ograniczona przez jej strukturę. Z tego powodu właściciel zdecydował się rozbudować witrynę. Zakres prac nad tym projektem obejmował indywidualny projekt strony głównej przygotowany w programie Figma, dopracowanie wyglądu do indywidualnych preferencji, <strong>stworzenie 8 podstron ofertowych dla lepszej widoczności</strong>, optymalizację wydajności na urządzeniach mobilnych oraz katalog produktów z formularzem zamówień.</p><br /><p>Firma zajmuje się automatyką bram na terenie województwa kujawsko-pomorskiego i jest <strong>oficjalnym dystrybutorem RogerTechnology</strong>. Prace jeszcze trwają.",
+      "image": "/assets/projects/napilota/mockup-strony-napilota.webp",
+      "category": ["strona", "treść", "sklep"],
+      "link": "https://napilota.com.pl/",
+      "task": "Zastąpić prostą stronę-wizytówkę rozbudowaną witryną z 8 podstronami ofertowymi i katalogiem produktów.",
+      "goals": "<p>Założenia projektu:</p><ul><li>8 podstron ofertowych dla lepszej widoczności w Google</li><li>Optymalizacja wydajności na urządzeniach mobilnych</li><li>Katalog produktów z formularzem zamówień</li></ul>",
       "process_steps": [
-        "Analiza potrzeb i przygotowanie propozycji",
-        "Wdrożenie WordPress z Elementorem Pro",
-        "Stworzenie podstron ofertowych z treściami SEO",
-        "Konfiguracja formularza wyceny i bloga",
-        "Optymalizacja wydajności i przeniesienie domeny"
+        "Projekt wyglądu strony głównej.",
+        "Konsultacje i poprawki.",
+        "Realizacja głównych stron",
+        "Realizacja stron ofertowych.",
+        "Realizacja katalogu produktów z formularzem zamówień.",
+        "Korekty według wytycznych klienta",
+        "Optymalizacja wydajności na urządzeniach mobilnych."
       ],
-
-      "deliverables": [
-        "Strona główna z banerem, ofertą, FAQ i formularzem",
-        "Podstrony ofertowe (piana PUR, membrany, izolacja, posadzki)",
-        "Blog z szablonem i spisem treści",
-        "Formularz wyceny",
-        "Kolory zgodne z WCAG AA",
-        "Konfiguracja wtyczek SEO i zabezpieczeń"
-      ],
-
       "contentBlocks": [
         {
           "type": "image",
-          "src": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp",
-          "alt": "Mockup strony dla firmy budowlanej - Izoluk",
+          "src": "/assets/projects/napilota/mockup-strony-napilota.webp",
+          "alt": "Strona NaPilota - mockup realizacji Arteon",
           "ratio": "16/9",
           "breakAfter": true
-        },
-        {
-          "type": "beforeAfter",
-          "title": "Przed i po",
-          "beforeImage": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-wczesniejszy-wyglad-strony-stworzony-w-wix.webp",
-          "afterImage": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-projekt-realizacji-stworzony-w-figma.webp",
-          "beforeLabel": "Poprzednia strona na Wix",
-          "afterLabel": "Nowy projekt w Figma",
-          "breakAfter": true
-        },
-        {
-          "type": "steps",
-          "title": "Przebieg realizacji",
-          "items": [
-            { "icon": "search", "title": "Analiza", "description": "Propozycja wyglądu z pełną strukturą podstron." },
-            { "icon": "palette", "title": "Projekt", "description": "Akceptacja wyglądu strony głównej." },
-            { "icon": "code", "title": "Wdrożenie", "description": "WordPress z Elementorem, blog i formularz." },
-            { "icon": "globe", "title": "Uruchomienie", "description": "Przeniesienie domeny na izoluk.pl." }
-          ],
-          "breakAfter": true
-        },
-        {
-          "type": "imageText",
-          "src": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-wynik-optymalizacji-witryny-w-pagespeed-dla-urzadzen-mobilnych.webp",
-          "alt": "Wynik PageSpeed Insights - 98/100 dla mobile",
-          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Wydajność 98/100</h2><p>Strona została zoptymalizowana pod kątem wydajności na urządzeniach mobilnych. Wynik w PageSpeed Insights to 98/100.</p><p>Każda usługa ma osobną podstronę z dedykowanymi treściami, co pozwala stronie pojawiać się na więcej fraz w Google.</p>",
-          "imageSide": "left",
-          "ratio": "16/9"
         }
       ],
-
-      "outcomes": [
-        { "label": "Wydajność mobile (PageSpeed)", "value": "98/100", "note": "Zgodnie z wymogami Google" },
-        { "label": "Podstrony ofertowe", "value": "4+", "note": "Każda usługa na osobnej stronie z unikalnymi treściami" },
-        { "label": "Czas realizacji", "value": "8 dni", "note": "Od pierwszego kontaktu do uruchomienia strony" }
-      ],
-
       "cta": {
-        "title": "Potrzebujesz strony dla firmy budowlanej lub usługowej?",
-        "description": "Tworzymy strony dla firm budowlanych i usługowych z naciskiem na widoczność w Google. Każda realizacja obejmuje indywidualny projekt, osobne podstrony ofertowe i pomoc z treściami.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
+        "title": "Potrzebujesz strony internetowej dla swojej firmy?",
+        "description": "Stworzymy stronę dopasowaną do Twojej branży.",
         "btnTwo": "Sprawdź ofertę stron internetowych",
         "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
-        "backgroundImage": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp",
+        "backgroundImage": "/assets/projects/napilota/mockup-strony-napilota.webp",
         "overlay": "black"
       },
-
-      "faq": [
-        {
-          "question": "Ile kosztuje strona internetowa dla firmy budowlanej?",
-          "answer": "Koszt zależy od zakresu: liczby podstron, funkcji (blog, formularz wyceny, galeria realizacji) i poziomu rozbudowy treści. Rozbudowana strona z blogiem i kilkoma podstronami ofertowymi to zazwyczaj 2500-4000 zł."
-        },
-        {
-          "question": "Czy mogę samodzielnie dodawać artykuły i zmieniać treści?",
-          "answer": "Tak. Strony na WordPress z Elementorem dają pełną kontrolę nad treścią. Po zakończeniu realizacji przekazujemy instrukcję obsługi i dostęp do panelu administracyjnego."
-        },
-        {
-          "question": "Jak długo trwa stworzenie takiej strony?",
-          "answer": "Standardowy czas realizacji to 5-10 dni roboczych, w zależności od zakresu oraz dostępności materiałów (teksty, zdjęcia, logo)."
-        },
-        {
-          "question": "Czy pomagacie z tekstami na stronę?",
-          "answer": "Tak. Pomagamy ułożyć strukturę treści i przygotować teksty zoptymalizowane pod kątem widoczności w Google. W przypadku firm usługowych kluczowe jest odpowiednie opisanie oferty i użycie fraz, które wpisują potencjalni klienci."
-        }
-      ],
-
       "seo": {
-        "title": "Strona internetowa dla firmy budowlanej - Izoluk - Arteon",
-        "description": "Strona internetowa dla firmy zajmującej się izolacją budynków. Realizacja na WordPress z blogiem, formularzem wyceny i podstronami ofertowymi pod SEO. Zobacz projekt.",
-        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-firmy-budowlanej-ocieplenia-budynkow-izoluk"
+        "title": "Strona internetowa dla firmy automatyzującej bramy - NaPilota",
+        "description": "Strona dla firmy zajmującej się automatyką bram - NaPilota. Sprawdź naszą realizację i zamów stronę dla swojej firmy.",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-firmy-automatyki-bramowej-napilota"
       }
     },
 
     {
-      "slug": "strona-internetowa-dla-osrodka-psychoterapii-dzieci-i-mlodziezy-perly-mocy",
-      "title": "Strona internetowa dla ośrodka psychoterapii dzieci i młodzieży - Perły Mocy",
-      "short": "Kompleksowa rozbudowa strony na Wix dla ośrodka psychoterapii dzieci i młodzieży ze Skierniewic. W ramach projektu stworzyliśmy 11 podstron dla specjalistów, uruchomiliśmy sklep z produktami cyfrowymi i przygotowaliśmy 40-stronicową instrukcję obsługi.",
-      "description": "<p>Ośrodek psychoterapii <strong>Perły Mocy</strong> ze Skierniewic potrzebował rozbudowy istniejącej strony na Wix. Klientka miała już funkcjonującą witrynę, ale brakowało podstron dla poszczególnych specjalistów, możliwości sprzedaży produktów cyfrowych i spójnej nawigacji.</p><br /><p>Rozbudowaliśmy stronę o <strong>sekcję zespołu z 11 osobnymi podstronami</strong>, przeprojektowaliśmy stronę główną i dodaliśmy zakładkę Ośrodek. Zintegrowaliśmy <strong>płatności BLIK i Przelewy24</strong>, poprawiliśmy kontrast kolorów pod kątem dostępności WCAG i przekierowaliśmy domenę — stara zawierała polską literę Ł, co utrudniało jej wpisywanie.</p>",
-      "image": "/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-mockup-realizacji-arteon.webp",
-      "category": ["strona", "treść", "sklep"],
-      "link": "https://www.perlymocyskierniewice.com/",
-      "client": {
-        "name": "Perły Mocy",
-        "sector": "Psychoterapia dzieci i młodzieży",
-        "location": "Skierniewice"
-      },
-
-      "task": "Rozbudowa strony na Wix o podstrony dla zespołu, sklep z produktami cyfrowymi, integrację płatności i przekierowanie domeny.",
-
-      "goals": "<p>Klientka potrzebowała:</p><ul><li>Miejsca, gdzie każdy specjalista z zespołu ma <strong>własną podstronę</strong> z opisem kwalifikacji</li><li>Możliwości <strong>sprzedaży produktów cyfrowych</strong> (pliki audio, wideo, PDF) bezpośrednio przez stronę</li><li><strong>Płatności online</strong> — pacjenci mieli móc płacić BLIK-iem i przelewem</li><li>Uporządkowanej nawigacji i <strong>nowej strony głównej</strong> odzwierciedlającej rozwój ośrodka</li></ul>",
-
-      "process_steps": [
-        "Analiza strony i określenie zakresu prac",
-        "Uporządkowanie struktury i URL-i",
-        "Stworzenie podstron dla zespołu i sekcji Ośrodek",
-        "Konfiguracja sklepu i płatności",
-        "Poprawki dostępności i przekierowanie domeny"
-      ],
-
-      "deliverables": [
-        "11 podstron dla zespołu z opisem kwalifikacji",
-        "Nowa strona główna i zakładka Ośrodek",
-        "Sklep z produktami cyfrowymi i płatności BLIK",
-        "Poprawki dostępności WCAG 2.1 AA",
-        "Przekierowanie domeny i konfiguracja analityki",
-        "40-stronicowa instrukcja obsługi"
-      ],
-
+      "slug": "strona-internetowa-dla-kateringu-kolorowe-talerze",
+      "title": "Projekt strony internetowej dla firmy cateringowej - Kolorowe Talerze",
+      "short": "Projekt nowego wyglądu strony dla firmy cateringowej Kolorowe Talerze. Ciepłe odcienie i ramki nawiązujące do obrusu - klasyczna polska kuchnia. Prace nad wdrożeniem trwają.",
+      "description": "<p>Projekt nowego wyglądu strony dla firmy cateringowej <strong>Kolorowe Talerze</strong>. Celem było stworzenie bardziej profesjonalnego wizerunku oraz mocniejsze podkreślenie potraw.</p><br /><p>Wykorzystaliśmy <strong>ciepłe odcienie</strong> i delikatne akcenty - ramki z wzorami ala obrus - jako nawiązanie do klasycznej, lekko staromodnej polskiej kuchni.</p><br /><p>Wdrożenie projektu jeszcze trwa. Aktualna strona klienta: <a href=\"https://cateringkolorowetalerze.pl/\" target=\"_blank\" rel=\"noopener noreferrer\">cateringkolorowetalerze.pl</a>.</p>",
+      "image": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
+      "category": ["grafika"],
+      "task": "Zaprojektować nowy wygląd strony cateringowej z naciskiem na profesjonalizm i ekspozycję potraw.",
+      "goals": "<p>Założenia projektu:</p><ul><li>Bardziej profesjonalny wizerunek,</li><li>Delikatne nawiązania do tradycyjnej polskiej kuchni.</li></ul>",
       "contentBlocks": [
         {
           "type": "image",
-          "src": "/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-mockup-realizacji-arteon.webp",
-          "alt": "Mockup strony dla ośrodka psychoterapii - Perły Mocy",
+          "src": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
+          "alt": "Strona Kolorowe Talerze - mockup realizacji Arteon",
           "ratio": "16/9",
           "breakAfter": true
-        },
-        {
-          "type": "steps",
-          "title": "Zakres realizacji",
-          "items": [
-            { "icon": "users", "title": "11 podstron dla zespołu", "description": "Każdy specjalista ma własną podstronę ze zdjęciem, opisem kwalifikacji i informacją o specjalizacji." },
-            { "icon": "layout", "title": "Strona główna + Ośrodek", "description": "Nowa strona główna odzwierciedla rozwój ośrodka. Zakładka Ośrodek prezentuje misję i ofertę." },
-            { "icon": "cart", "title": "Sklep z produktami cyfrowymi", "description": "Sprzedaż plików audio, wideo i PDF z automatyczną wysyłką po płatności." },
-            { "icon": "credit-card", "title": "Płatności BLIK i Przelewy24", "description": "Pacjenci mogą zapłacić za produkty cyfrowe bezpośrednio na stronie." },
-            { "icon": "eye", "title": "Dostępność WCAG", "description": "Poprawiliśmy kontrast kolorów tak, aby strona spełniała wymagania WCAG 2.1 AA." },
-            { "icon": "book-open", "title": "Instrukcja obsługi (40 stron)", "description": "Szczegółowy dokument PDF opisujący jak edytować każdą sekcję strony." }
-          ],
-          "breakAfter": true
-        },
-        {
-          "type": "image",
-          "src": "/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-wyglad-strony-glownej-na-zywo.webp",
-          "alt": "Wygląd strony głównej Perły Mocy",
-          "ratio": "auto"
         }
       ],
-
-      "outcomes": [
-        { "label": "Podstrony dla zespołu", "value": "11", "note": "Dedykowana strona dla każdego specjalisty" },
-        { "label": "Nowe/przeprojektowane strony", "value": "20+", "note": "Zespół, Ośrodek, strona główna, sekcja Rodzice, FAQ i inne" },
-        { "label": "Instrukcja obsługi", "value": "40 stron", "note": "Dokument PDF z dokładnym opisem jak edytować stronę" }
-      ],
-
       "cta": {
-        "title": "Potrzebujesz rozbudowy lub poprawek na swojej stronie?",
-        "description": "Pomagamy z istniejącymi stronami na Wix, WordPress i innych platformach. Uporządkujemy strukturę, dodamy brakujące funkcje i skonfigurujemy analitykę.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
-        "btnTwo": "Zobacz ofertę stron internetowych",
+        "title": "Twoja firma też potrzebuje strony internetowej?",
+        "description": "Zajmujemy się projektowaniem stron oraz ich realizacją. Skontaktuj się z nami - stworzymy stronę dopasowaną do Twoich potrzeb.",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
         "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
-        "backgroundImage": "/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-mockup-realizacji-arteon.webp",
+        "backgroundImage": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
         "overlay": "black"
       },
+      "seo": {
+        "title": "Strona internetowa dla firmy cateringowej - Kolorowe Talerze",
+        "description": "Projekt strony dla firmy cateringowej Kolorowe Talerze. Sprawdź naszą realizację i zamów stronę dla swojego kateringu.",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-kolorowe-talerze"
+      },
+      "link": "https://cateringkolorowetalerze.pl/"
+    },
 
-      "faq": [
+    {
+      "slug": "wizytowki-dla-firmy-wykonczeniowej-finish-masters",
+      "title": "Wizytówki dla firmy wykończeniowej - Finish Masters",
+      "short": "Projekt wizytówki dla firmy zajmującej się wykańczeniem wnętrz Finish Masters spójny z logo oraz stroną internetową. Dane firmy, krótki opis działalności oraz kod QR prowadzący do strony.",
+      "description": "<p>Finalny element kompleksowego projektu obejmującego również realizację <a href=\"/realizacje/logo-dla-firmy-wykonczeniowej-finish-masters\">logo</a> i <a href=\"/realizacje/strona-internetowa-dla-firmy-wykonczeniowej-finish-masters\">strony internetowej</a>.</p><br /><p>Wizytówki zawierają <strong>dane firmy, krótki opis działalności i kod QR prowadzący do strony</strong></p>",
+      "image": "/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp",
+      "category": ["grafika"],
+      "task": "Zaprojektować wizytówki spójne z logo i stroną Finish Masters.",
+      "goals": "<p>Założenia projektu:</p><ul><li>Spójność z logo i stroną - odpowiednia kolorystyka</li><li>Dane firmy i krótki opis działalności</li><li>Kod QR prowadzący do strony</li></ul>",
+      "process_steps": ["Projekt graficzny w nawiązaniu do logo i strony.", "Konsultacja i poprawki.", "Przygotowanie plików do druku."],
+      "contentBlocks": [
         {
-          "question": "Czy pomagacie z istniejącymi stronami na Wix?",
-          "answer": "Tak. Możemy rozbudować istniejącą stronę, dodać nowe funkcje, uporządkować strukturę lub pomóc z konfiguracją domeny i analityki. Nie musisz przenosić strony na inną platformę, jeśli Wix spełnia Twoje potrzeby."
-        },
-        {
-          "question": "Ile kosztuje rozbudowa strony na Wix?",
-          "answer": "Koszt zależy od zakresu prac. Proste poprawki i dodanie kilku podstron to zazwyczaj 500-1500 zł. Bardziej rozbudowane realizacje z integracją płatności i sklepu mogą kosztować więcej."
-        },
-        {
-          "question": "Czy mogę samodzielnie edytować stronę po zakończeniu prac?",
-          "answer": "Tak. Wix pozwala na samodzielne wprowadzanie zmian przez panel administracyjny. Przekazujemy również wskazówki dotyczące obsługi nowych funkcji."
-        },
-        {
-          "question": "Czy pomagacie z przekierowaniem domeny?",
-          "answer": "Tak. Konfigurujemy przekierowania domen, certyfikaty SSL i integrację z usługami zewnętrznymi (Google Analytics, Search Console)."
+          "type": "image",
+          "src": "/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp",
+          "alt": "Wizytówki Finish Masters - mockup realizacji Arteon",
+          "ratio": "16/9",
+          "breakAfter": true
         }
       ],
-
+      "cta": {
+        "title": "Potrzebujesz spójnej identyfikacji wizualnej dla swojej firmy?",
+        "description": "Zajmujemy się projektowaniem stron oraz wszelkich materiałów graficznych.",
+        "btnTwo": "Sprawdź ofertę projektowania wizytówek",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "backgroundImage": "/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp",
+        "overlay": "black"
+      },
       "seo": {
-        "title": "Rozbudowa strony ośrodka psychoterapii Perły Mocy - Arteon",
-        "description": "Rozbudowa strony na Wix dla ośrodka psychoterapii ze Skierniewic. Stworzyliśmy 11 podstron dla zespołu i sklep z produktami cyfrowymi. Zobacz realizację.",
-        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-osrodka-psychoterapii-dzieci-i-mlodziezy-perly-mocy"
+        "title": "Wizytówki dla firmy wykończeniowej - Finish Masters",
+        "description": "Projekt wizytówki dla firmy zajmującej się wykańczeniem wnętrz Finish Masters. Sprawdź naszą realizację i zamów wizytówki dla swojej firmy.",
+        "canonical": "https://www.arteonagency.pl/realizacje/wizytowki-dla-firmy-wykonczeniowej-finish-masters"
       }
+    },
+
+    {
+      "slug": "strona-internetowa-dla-firmy-wykonczeniowej-finish-masters",
+      "title": "Strona internetowa dla firmy wykończeniowej - Finish Masters",
+      "short": "Strona dla Finish Masters - firmy wykończeniowej z Krakowa. Niebieska kolorystyka spójna z logo. Wynik 96/100 w PageSpeed Insights na mobile.",
+      "description": "<p>Realizacja dla <strong>Finish Masters sp. z o.o.</strong> - krakowskiej firmy zajmującej się wykończeniem wnętrz i domów. Klient świadczy też usługi z zakresu <strong>instalacji elektrycznych, wodnych i kanalizacyjnych</strong>.</p><br /><p>Projekt rozpoczął się od logo, następnie powstał wygląd strony, a po jej wdrożeniu zrealizowaliśmy też wizytówki. Kolorystyka strony została utrzymana zgodnie z <a href=\"/realizacje/logo-dla-firmy-wykonczeniowej-finish-masters\">logo</a> - dominuje niebieski. Strona została zoptymalizowana do <strong>96/100 w PageSpeed Insights na urządzeniach mobilnych</strong>.</p><br /><p>Strona dostępna pod <a href=\"https://www.finishmasters.pl/\" target=\"_blank\" rel=\"noopener noreferrer\">finishmasters.pl</a>. Zobacz też <a href=\"/realizacje/wizytowki-dla-firmy-wykonczeniowej-finish-masters\">wizytówki</a> z tej realizacji.</p>",
+      "image": "/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp",
+      "category": ["strona", "blog"],
+      "task": "Zaprojektować i wdrożyć stronę dla firmy wykończeniowej.",
+      "goals": "<p>Założenia projektu:</p><ul><li>Niebieska kolorystyka spójna z logo</li><li>Optymalizacja wydajności na urządzeniach mobilnych</li></ul>",
+      "process_steps": [
+        "Projekt wyglądu strony - kolorystyka spójna z logo.",
+        "Konsultacje i poprawki.",
+        "Wdrożenie strony.",
+        "Optymalizacja wydajności - wynik 96/100 w PageSpeed Insights na mobile."
+      ],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp",
+          "alt": "Strona Finish Masters - mockup realizacji Arteon",
+          "ratio": "16/9",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Twoja firma też potrzebuje strony internetowej?",
+        "description": "Pomożemy zaprojektować i wdrożyć stronę dopasowaną do Twojej branży.",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "backgroundImage": "/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Strona internetowa Finish Masters - Arteon",
+        "description": "Strona dla Finish Masters z Krakowa. Niebieska kolorystyka spójna z logo, 96/100 w PageSpeed mobile. Zobacz realizację.",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-firmy-wykonczeniowej-finish-masters"
+      },
+      "link": "https://www.finishmasters.pl/"
     },
 
     {
@@ -319,11 +268,6 @@
       "description": "<p>Projekt <strong>plakatu sezonowego</strong> dla koncepcyjnej kawiarni <strong>Brewerynka Coffee Roasters</strong> - niewielkiej, rzemieślniczej palarni inspirowanej estetyką slow coffee i klimatem skandynawskich kawiarni. Celem było stworzenie <strong>plakatu</strong> dla limitowanej oferty grudniowej, który będzie spójnie funkcjonował zarówno w przestrzeni lokalu, jak i w komunikacji online.</p><br /><p>Plakat oparto na połączeniu stonowanych beży i chłodnego błękitu oraz na powtarzalnym motywie typograficznym. Centralnym elementem stała się minimalistyczna kompozycja produktowa - napój zimowy w szklance, z miękkim światłem i delikatną siatką błękitu i beżu w tle. Zabieg ten miał podkreślić charakter marki: rzemieślniczy, uporządkowany i świadomy wizualnie.</p><br /><p>Projekt jest <strong>pierwszym elementem rozwijanej kampanii</strong> - przygotowane zostaną również materiały w formatach do Instagrama i Facebooka, a całość będzie stopniowo rozbudowywana o kolejne plakaty sezonowe.</p><br /><p>Plakat został przygotowany w wysokiej rozdzielczości oraz umieszczony na <strong>mockupie witryny kawiarni</strong>, aby zilustrować sposób jego realnego wykorzystania w przestrzeni miejskiej.</p>",
       "image": "/assets/projects/brewerynka/brewerynka-plakat-z-limitowana-oferta-mockup.webp",
       "category": ["grafika"],
-      "client": {
-        "name": "Brewerynka Coffee Roasters",
-        "sector": "Gastronomia"
-      },
-
       "contentBlocks": [
         {
           "type": "image",
@@ -336,10 +280,26 @@
           "type": "steps",
           "title": "Proces realizacji",
           "items": [
-            { "icon": "palette", "title": "Koncept wizualny", "description": "Stworzenie konceptu Brewerynka oraz określenie charakteru wizualnego marki." },
-            { "icon": "layers", "title": "Koncepcja kampanii", "description": "Opracowanie koncepcji kampanii zimowej - motyw typograficzny, paleta kolorów i estetyka produktu." },
-            { "icon": "pen", "title": "Projekt plakatu", "description": "Projekt formatu plakatowego z myślą o witrynach kawiarni oraz materiałach drukowanych." },
-            { "icon": "globe", "title": "Mockup prezentacyjny", "description": "Umieszczenie projektu na realistycznym mockupie witryny w celu prezentacji zastosowania." }
+            {
+              "icon": "palette",
+              "title": "Koncept wizualny",
+              "description": "Stworzenie konceptu Brewerynka oraz określenie charakteru wizualnego marki."
+            },
+            {
+              "icon": "layers",
+              "title": "Koncepcja kampanii",
+              "description": "Opracowanie koncepcji kampanii zimowej - motyw typograficzny, paleta kolorów i estetyka produktu."
+            },
+            {
+              "icon": "pen",
+              "title": "Projekt plakatu",
+              "description": "Projekt formatu plakatowego z myślą o witrynach kawiarni oraz materiałach drukowanych."
+            },
+            {
+              "icon": "globe",
+              "title": "Mockup prezentacyjny",
+              "description": "Umieszczenie projektu na realistycznym mockupie witryny w celu prezentacji zastosowania."
+            }
           ],
           "breakAfter": true
         },
@@ -362,37 +322,14 @@
           "ratio": "auto"
         }
       ],
-
       "cta": {
         "title": "Potrzebujesz plakatu promocyjnego dla swojej firmy?",
         "description": "Zaprojektujemy spójny plakat sezonowy z przygotowaniem do druku i wersją do mediów społecznościowych.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę projektów graficznych",
         "btnTwoLink": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/brewerynka/brewerynka-plakat-z-limitowana-oferta-mockup.webp",
         "overlay": "black"
       },
-
-      "faq": [
-        {
-          "question": "W jakich formatach przygotowujecie plakaty sezonowe?",
-          "answer": "Standardowo projektujemy plakaty w formatach A3 i A2 - to najpopularniejsze rozmiary do ekspozycji w witrynach i na tablicach. Jeśli plakat ma wisieć w konkretnym miejscu, dopasujemy wymiary i marginesy pod tę przestrzeń."
-        },
-        {
-          "question": "Czy pliki są gotowe do druku w drukarni?",
-          "answer": "Tak. Przekazujemy pliki produkcyjne ze spadami (3-5 mm), w odpowiednim profilu kolorów (CMYK) i rozdzielczości (300 DPI). Jeśli drukarnia ma własne wytyczne, dopasujemy eksport pod ich wymagania."
-        },
-        {
-          "question": "Czy możecie przygotować też wersje do mediów społecznościowych?",
-          "answer": "Tak. Na bazie plakatu przygotowujemy warianty w formatach do Instagrama i Facebooka (post kwadratowy, pionowy, stories). Dzięki temu kampania jest spójna offline i online."
-        },
-        {
-          "question": "Jakie materiały są potrzebne do rozpoczęcia projektu?",
-          "answer": "Potrzebujemy: treść do umieszczenia na plakacie (oferta, data, cena), logo w wersji wektorowej oraz informację gdzie plakat będzie eksponowany. Jeśli masz zdjęcia produktów - prześlij je. Jeśli nie masz jeszcze treści, pomożemy ją dopracować."
-        }
-      ],
-
       "seo": {
         "title": "Plakat sezonowy dla kawiarni Brewerynka - Arteon",
         "description": "Projekt plakatu promocyjnego dla kawiarni Brewerynka Coffee Roasters. Minimalistyczna kompozycja produktowa w stonowanej palecie beżów i błękitu. Zobacz realizację.",
@@ -401,20 +338,168 @@
     },
 
     {
+      "slug": "strona-internetowa-dla-producenta-schodow-metalowych-stepard",
+      "title": "Strona internetowa dla producenta schodów metalowych - StepArd",
+      "short": "Strona dla producenta schodów metalowych w Trójmieście. Indywisualny projekt graficzny, 10 podstron ofertowych i pełna optymalizacja witryny wraz z pomocą przy tworzeniu treści. Część kompleksowego projektu obejmującego logo i wizytówki.",
+      "description": "<p>Kompleksowa realizacja dla <strong>StepArd</strong> - producenta schodów metalowych, balustrad stalowych i stopni drewnianych z Trójmiasta (Gdańsk, Gdynia, Sopot). Projekt rozpoczął się od logo, następnie powstał wygląd strony, a po realizacji witryny zrealizowaliśmy również wizytówki wraz z przygotowaniem do druku.</p><br /><>Na stronie wykorzystaliśmy <strong>ciemne kolory, brąż i ciemne odcienie niebieskiego</strong> dla kontrastu i komplementarności palety. Strona zawiera <strong>10 podstron ofertowych</strong> dla lepszej widoczności w Google oraz została w pełni zoptymalizowana.</p>",
+      "image": "/assets/projects/stepard/strona/moskup-strony-stepard.webp",
+      "category": ["strona"],
+      "link": "https://stepard.pl/",
+      "task": "Zaprojektować stronę internetową dla producenta schodów.",
+      "goals": "<p>Założenia projektu:</p><ul><li>Spójność z wcześniej zaprojektowanym <a href=\"/realizacje/logo-dla-stepard\">logo</a></li><li>10 podstron ofertowych dla lepszej widoczności w Google</li><li>Ciemne kolory z brązem i niebieskim dla kontrastu i komplementarności</li></ul>",
+      "process_steps": ["Indywidualny projekt wyglądu strony.", "Konsultacje i poprawki.", "Realizacja strony.", "Optymalizacja, zabezpieczenie witryny oraz poprawki."],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/stepard/strona/moskup-strony-stepard.webp",
+          "alt": "Strona StepArd - mockup realizacji Arteon",
+          "ratio": "16/9",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Twoja firma też potrzebuje strony internetowej?",
+        "description": "Pomożemy zaprojektować i wdrożyć stronę dopasowaną do Twojej branży.",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "backgroundImage": "/assets/projects/stepard/strona/moskup-strony-stepard.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Strona internetowa dla producenta schodów metalowych - StepArd",
+        "description": "Strona dla producenta schodów metalowych w Trójmieście. Sprawdź naszą realizację i zamów stronę dla swojej firmy",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-stepard"
+      }
+    },
+
+    {
+      "slug": "logo-dla-stepard",
+      "title": "Logo dla producenta schodów metalowych - StepArd",
+      "short": "Realizacja logo dla producenta schodów metalowych w Trójmieście. Minimalizm, elegancja i jasne nawiązanie do typu działalności firmy. Pierwszy etap kompleksowego projektu.",
+      "description": "<p>Pierwszy etap kompleksowego projektu dla <strong>StepArd</strong> - producenta schodów metalowych w Trójmieście. Logo stawia na <strong>minimalizm i elegancję</strong> oraz jasne w przekazie nawiązanie do typu działalności firmy.</p>",
+      "image": "/assets/projects/stepard/logo/mockup-logo-stepard.webp",
+      "category": ["grafika"],
+      "task": "Zaprojektować logo, które łączy minimalizm i elegancję z jasnym nawiązaniem do typu działalności firmy.",
+      "goals": "<p>Założenia projektu:</p><ul><li>Minimalizm i elegancja</li><li>Jasne nawiązanie do typu działalności (producent schodów)</li></ul>",
+      "process_steps": ["Analiza potrzeb klienta oraz branży.", "Wstępne kierunki graficzne.", "Wybór i dopracowanie znaku.", "Przygotowanie wariantów kolorystycznych."],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/stepard/logo/mockup-logo-stepard.webp",
+          "alt": "Logo StepArd - mockup realizacji Arteon",
+          "ratio": "16/9",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz spójnej identyfikacji wizualnej?",
+        "description": "Zajmujemy się realizacją wszelkich projektów graficznych oraz stron internetowych jak i sklepów.",
+        "btnTwo": "Sprawdź ofertę projektowania logo",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-logo",
+        "backgroundImage": "/assets/projects/stepard/logo/mockup-logo-stepard.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Logo dla producenta schodów - StepArd.",
+        "description": "Realizacja projektu logo dla producenta schodów - StepArd. Sprawdź naszą realizację i zamów projekt logo dla swojej firmy.",
+        "canonical": "https://www.arteonagency.pl/realizacje/logo-dla-stepard"
+      }
+    },
+
+    {
+      "slug": "wizytowki-dla-stepard",
+      "title": "Wizytówki dla producenta schodów metalowych - StepArd",
+      "short": "Projekt wizytówki dla marki StepArd, spójne z logo oraz stroną internetową, z kodem QR.",
+      "description": "<p>Wizytówki to finalny element kompleksowego projektu obejmującego również <a href=\"/realizacje/logo-dla-stepard\">logo</a> i <a href=\"/realizacje/strona-internetowa-dla-stepard\">stronę</a> StepArd.</p><br /><p>Projekt został stworzony tak aby był spójny z całą identyfikacją - ta sama paleta kolorów oraz typografia. Na rewersie umieściliśmy <strong>kod QR prowadzący do strony stepard.pl</strong>. Na koniec przygotowaliśmy projekt wizytówek do druku.</p>",
+      "image": "/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp",
+      "category": ["grafika"],
+      "task": "Zaprojektować wizytówki spójne z logo i stroną StepArd.",
+      "process_steps": ["Projekt graficzny w nawiązaniu do logo i strony.", "Konsultacja i poprawki.", "Przygotowanie plików do druku."],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp",
+          "alt": "Wizytówki StepArd - mockup realizacji Arteon",
+          "ratio": "16/9",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz projekty wizytówki dla swojej firmy?",
+        "description": "Zajmujemy się kompleksowym wsparciem firm online oraz offline. Realizujemy zarówno projekty graficzne jak i strony www.",
+        "btnTwo": "Sprawdź ofertę projektowania wizytówek",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "backgroundImage": "/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Wizytówki dla producenta schodów - StepArd",
+        "description": "Projekt wizytówki dla producenta schodów w Trójmieście. Sprawdź naszą realizację i zamów projekt wizytówki dla swojej firmy.",
+        "canonical": "https://www.arteonagency.pl/realizacje/wizytowki-dla-stepard"
+      }
+    },
+
+    {
+      "slug": "optymalizacja-strony-internetowej-dla-eliza-wronska",
+      "title": "Optymalizacja strony internetowej - Eliza Wrońska",
+      "short": "Optymalizacja strony Elizy Wrońskiej. Zobacz wynik w Google PageSpeed Insights przed i po.",
+      "description": "<p>Realizacja optymalizacji witryny dla <strong>Elizy Wrońskiej</strong>. Przeprowadziliśmy optymalizację naszym sprawdzonym sposobem, całkowicie bez zmiany wyglądu strony oraz jej funkcjonalności.</p>",
+      "image": "/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp",
+      "category": ["strona"],
+      "link": "https://elizawronska.com/",
+      "task": "Poprawić wydajność strony bez zmiany wyglądu i treści.",
+      "goals": "<p>Cele optymalizacji:</p><ul><li>Lepsza pozycja witryny w Google/li><li>Poprawa wygody korzystania z witryny</li><li>Przygotowanie witryny do jej rozbudowy</li></ul>",
+      "process_steps": ["Audyt strony i identyfikacja elementów spowalniających ładowanie.", "Optymalizacja.", "Pomiar wyników w PageSpeed."],
+      "outcomes": [
+        {
+          "value": "Lepszy wynik PageSpeed",
+          "label": "Wydajność mobile",
+          "note": "Zobacz zrzuty z Google PageSpeed Insights przed i po."
+        },
+        {
+          "value": "Poprawa Core Web Vitals",
+          "label": "LCP, INP, CLS",
+          "note": "Wskaźniki w lepszych przedziałach po wdrożeniu."
+        }
+      ],
+      "contentBlocks": [
+        {
+          "type": "beforeAfter",
+          "title": "Wynik optymalizacji strony",
+          "beforeImage": "/assets/projects/eliza-wronska/eliza-wronska-optymalizacja-strony-wynik-przed.webp",
+          "afterImage": "/assets/projects/eliza-wronska/eliza-wronska-optymalizacja-strony-wynik-po.webp",
+          "beforeLabel": "Przed optymalizacją",
+          "afterLabel": "Po optymalizacji",
+          "note": "Wynik w Google PageSpeed Insights - poprawa Core Web Vitals po wdrożeniu optymalizacji.",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz szybszej strony?",
+        "description": "Prześlij link - sprawdzimy co można poprawić i przygotujemy wycenę.",
+        "btnTwo": "Sprawdź ofertę optymalizacji stron",
+        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress",
+        "backgroundImage": "/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Optymalizacja prędkości strony internetowej - Eliza Wrońska",
+        "description": "Optymalizacja prędkości i wydajności strony internetowej Elizy Wrońskiej. Zobacz wynik PageSpeed przed i po i zamów optymalizację prędkości swojej strony internetowej",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-eliza-wronska"
+      }
+    },
+
+    {
       "slug": "karta-koktajli-dla-baru-nocturna",
       "title": "Karta koktajli dla baru Nocturna",
       "short": "Ekskluzywna karta koktajli dla baru Nocturna - nastrojowego cocktail baru w klimacie speakeasy.",
       "description": "<p>Projekt koncepcyjnej <strong>karty koktajli</strong> dla Nocturna - ekskluzywnego cocktail baru, w którym estetyka, światło i smak tworzą spójną atmosferę. Celem było stworzenie <strong>menu premium</strong>: czytelnego, klimatycznego i budującego charakter miejsca przy pierwszym spojrzeniu.</p><br /><p>Karta opiera się na połączeniu głębokiej czerwieni i <strong>beżowo-złotych akcentów</strong>, inspirowanych światłem świec i klasycznymi barami typu speakeasy. Delikatne <strong>ilustracje drinków</strong> podkreślają rzemieślniczy charakter lokalu.</p><br /><p>W menu znalazły się autorskie koktajle, klasyki w reinterpretacjach oraz sekcja low-alcohol. Projekt przygotowaliśmy w pełnej rozdzielczości i w dwóch wariantach kolorystycznych. Całość prezentujemy na <strong>profesjonalnym mockupie</strong>.</p>",
-      "image": "/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp",
+      "image": "/assets/projects/nocturna/nocturna-menu-mockup.png",
       "category": ["grafika"],
-      "client": {
-        "name": "Nocturna Cocktail Atelier",
-        "sector": "Gastronomia"
-      },
       "contentBlocks": [
         {
           "type": "image",
-          "src": "/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp",
+          "src": "/assets/projects/nocturna/nocturna-menu-mockup.png",
           "alt": "Ekskluzywna karta koktajli Nocturna - mockup projektu graficznego",
           "ratio": "16/9",
           "breakAfter": true
@@ -423,10 +508,26 @@
           "type": "steps",
           "title": "Proces realizacji",
           "items": [
-            { "icon": "palette", "title": "Estetyka lokalu", "description": "Określenie stylu wizualnego: speakeasy, nocturnal, elegancja." },
-            { "icon": "pen", "title": "Ilustracje drinków", "description": "Stworzenie ilustracji w technice szkicu ołówkowego i przygotowanie tła." },
-            { "icon": "layers", "title": "Projekt menu", "description": "Układ menu, typografia oraz tonalna paleta kolorów." },
-            { "icon": "file", "title": "Pliki końcowe", "description": "Wersja do druku oraz mockup do prezentacji." }
+            {
+              "icon": "palette",
+              "title": "Estetyka lokalu",
+              "description": "Określenie stylu wizualnego: speakeasy, nocturnal, elegancja."
+            },
+            {
+              "icon": "pen",
+              "title": "Ilustracje drinków",
+              "description": "Stworzenie ilustracji w technice szkicu ołówkowego i przygotowanie tła."
+            },
+            {
+              "icon": "layers",
+              "title": "Projekt menu",
+              "description": "Układ menu, typografia oraz tonalna paleta kolorów."
+            },
+            {
+              "icon": "file",
+              "title": "Pliki końcowe",
+              "description": "Wersja do druku oraz mockup do prezentacji."
+            }
           ],
           "breakAfter": true
         },
@@ -453,32 +554,11 @@
       "cta": {
         "title": "Potrzebujesz karty koktajli lub menu dla swojego lokalu?",
         "description": "Zaprojektujemy eleganckie menu dopasowane do charakteru lokalu - wraz z ilustracjami i plikami do druku.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę projektów menu",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-menu-restauracji",
-        "backgroundImage": "/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp",
+        "backgroundImage": "/assets/projects/nocturna/nocturna-menu-mockup.png",
         "overlay": "black"
       },
-
-      "faq": [
-        {
-          "question": "W jakich formatach przygotowujecie karty koktajli?",
-          "answer": "Menu możemy przygotować jako pojedynczą kartę, składane menu lub booklet (kilka stron). Format dobieramy do liczby pozycji i sposobu użycia w lokalu - inna forma sprawdzi się przy barze, inna przy stolikach."
-        },
-        {
-          "question": "Czy projekt uwzględnia czytelność w słabym oświetleniu?",
-          "answer": "Tak. Przy projektach dla barów i restauracji z nastrojowym oświetleniem dobieramy odpowiedni kontrast, wielkości fontów i hierarchię typografii. Menu musi być czytelne także w półmroku."
-        },
-        {
-          "question": "Czy możecie przygotować autorskie ilustracje drinków?",
-          "answer": "Tak. Tworzymy ilustracje w różnych technikach - od minimalistycznych ikon po szczegółowe szkice. Ilustracje podkreślają charakter lokalu i pomagają gościom wybrać napój."
-        },
-        {
-          "question": "Jakie pliki otrzymam po zakończeniu projektu?",
-          "answer": "Przekazujemy pliki do druku (ze spadami, w CMYK, 300 DPI) oraz wersję cyfrową PDF do publikacji na stronie lub w mediach społecznościowych. Na życzenie przygotowujemy też mockup do prezentacji."
-        }
-      ],
       "seo": {
         "title": "Karta koktajli dla baru Nocturna - Arteon",
         "description": "Projekt ekskluzywnej karty koktajli dla cocktail baru Nocturna w klimacie speakeasy. Autorskie ilustracje drinków i elegancka typografia. Zobacz realizację.",
@@ -487,512 +567,112 @@
     },
 
     {
-      "slug": "folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group",
-      "title": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group",
-      "short": "Składany folder reklamowy w formacie A3 (składany na A4) dla polskiej firmy wykańczającej wnętrza domów i mieszkań.",
-      "description": "<p>Projekt składanego folderu reklamowego dla firmy <strong>wykańczającej wnętrza domów i mieszkań</strong>. Folder opisuje ofertę firmy, korzyści ze współpracy (projekt, dobór materiałów i realizacja u jednego wykonawcy) oraz zawiera kod QR do wirtualnego spaceru po ostatniej realizacji.</p><br /><p>Kolorystyka oparta na delikatnych odcieniach brązu i beżu, spójnych ze zdjęciami realizacji. Na pierwszej stronie: zdjęcie wykończonej łazienki, zachęta do kontaktu i cena za metr kwadratowy. W środku: jasno przedstawione korzyści z ikonami oraz szczegółowy opis realizacji.</p><br /><p>Projekt przygotowany do druku i jako PDF do wysyłki mailowej. Realizacja obejmowała <strong>3 kierunki wizualne</strong> oraz pomoc przy stworzeniu tekstu.</p>",
-      "image": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp",
-      "category": ["grafika"],
-      "client": {
-        "name": "Simba Group PL",
-        "sector": "Wykończenie wnętrz domów i mieszkań"
-      },
-
-      "contentBlocks": [
-        {
-          "type": "image",
-          "src": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp",
-          "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja pierwszej wersji środek folderu",
-          "ratio": "16/9",
-          "breakAfter": true
-        },
-        {
-          "type": "steps",
-          "title": "Proces realizacji",
-          "items": [
-            { "icon": "file", "title": "Ustalenie formatu i treści", "description": "Klient potrzebował folderu składanego A3 na A4 z ofertą, ceną i kodem QR." },
-            { "icon": "palette", "title": "3 kierunki estetyczne", "description": "Każdy kierunek różnił się układem, akcentami kolorystycznymi i kompozycją zdjęć." },
-            { "icon": "layers", "title": "Kolorystyka i typografia", "description": "Delikatne brązy i beże spójne ze zdjęciami realizacji wnętrz klienta." },
-            { "icon": "check", "title": "Pliki końcowe", "description": "Plik produkcyjny do drukarni oraz lekki PDF do wysyłki mailowej." }
-          ],
-          "breakAfter": true
-        },
-        {
-          "type": "featureList",
-          "title": "Zakres prac",
-          "items": ["Folder składany A3 → A4", "3 kierunki wizualne do wyboru", "Pomoc przy stworzeniu tekstu", "Kod QR do wirtualnego spaceru", "Plik do druku + PDF do wysyłki mailowej"],
-          "breakAfter": true
-        },
-        {
-          "type": "image",
-          "src": "/assets/projects/simba-group/folder-reklamowy-simba-group-tyl.webp",
-          "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja pierwszej wersji tył folderu",
-          "ratio": "16/9"
-        },
-        {
-          "type": "image",
-          "src": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod-druga-wersja.webp",
-          "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja drugiej wersji środek folderu",
-          "ratio": "16/9"
-        },
-        {
-          "type": "image",
-          "src": "/assets/projects/simba-group/folder-reklamowy-simba-group-tyl-druga-wersja.webp",
-          "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja drugiej wersji tył folderu",
-          "ratio": "16/9"
-        }
-      ],
-
-      "testimonial": {
-        "quote": "Bardzo polecam. Porządny folder reklamowy w dobrej cenie.",
-        "author": "Sebastian",
-        "role": "Foldery reklamowe",
-        "link": "https://fixly.pl/profil/d963Jrae"
-      },
-
-      "cta": {
-        "title": "Potrzebujesz folderu reklamowego dla swojej firmy?",
-        "description": "Zaprojektujemy folder z przygotowaniem do druku i wersją PDF do wysyłki mailowej.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę ulotek i folderów",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-ulotki",
-        "backgroundImage": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp",
-        "overlay": "black"
-      },
-
-      "faq": [
-        {
-          "question": "Czy przygotujecie folder zarówno do druku, jak i do wysyłki e-mailem?",
-          "answer": "Tak. Przygotowujemy plik produkcyjny do drukarni (ze spadami, w CMYK, 300 DPI) oraz osobny, zoptymalizowany PDF do wysyłki mailowej - z mniejszą wagą pliku, ale zachowaną czytelnością."
-        },
-        {
-          "question": "Czy możecie pomóc w dopracowaniu tekstów i układu oferty?",
-          "answer": "Tak. Pomagamy uporządkować treści, skrócić i doprecyzować komunikaty oraz ułożyć ofertę w sposób czytelny dla odbiorcy. Jeśli nie masz gotowych tekstów - pomożemy je stworzyć."
-        },
-        {
-          "question": "Czy w folderze można umieścić kod QR?",
-          "answer": "Tak. Kod QR to wygodny sposób, aby przenieść odbiorcę do galerii realizacji, wirtualnego spaceru lub strony kontaktowej. Dobieramy miejsce i rozmiar kodu tak, aby był łatwy do zeskanowania telefonem."
-        },
-        {
-          "question": "Ile kierunków wizualnych otrzymam do wyboru?",
-          "answer": "Standardowo przygotowujemy 2-3 kierunki wizualne. Każdy różni się układem, kolorystyką lub akcentami. Po wyborze jednego kierunku dopracowujemy szczegóły i wprowadzamy poprawki."
-        }
-      ],
-      "seo": {
-        "title": "Folder reklamowy firmy Simba Group - Arteon",
-        "description": "Projekt folderu reklamowego dla firmy wykańczającej wnętrza Simba Group. Składany format A3 z kodem QR do wirtualnego spaceru i trzema kierunkami wizualnymi. Zobacz realizację.",
-        "canonical": "https://www.arteonagency.pl/realizacje/folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group"
-      }
-    },
-
-    {
-      "slug": "szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc",
-      "title": "Szablony postów dla gabinetu psychologicznego - MSC Psychotherapy UK",
-      "short": "Szablony postów i stories na Instagram dla gabinetu psychologicznego MSC Psychotherapy w UK. Stonowana paleta granatu i beżu, warianty pod wpisy blogowe, webinary i przypomnienia o terapii.",
-      "description": "<p>Projekt szablonów postów i stories na Instagram oraz Facebook dla <strong>gabinetu psychologicznego MSC Psychotherapy</strong> w UK. Celem było przygotowanie spójnego wizualnie zestawu grafik, które ułatwią regularną komunikację z pacjentami.</p><p>Stworzyliśmy serię szablonów pod <strong>nowe wpisy na blogu</strong>, przypomnienia o terapii online, webinary oraz tygodniowe podsumowania. Stonowana paleta granatu, beżu i złamanej bieli buduje wrażenie bezpieczeństwa i profesjonalizmu.</p>",
-      "image": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp",
-      "category": ["grafika"],
-      "client": {
-        "name": "Mental Support Centre",
-        "sector": "Psychoterapia",
-        "location": "Camberley, UK"
-      },
-      "contentBlocks": [
-        {
-          "type": "image",
-          "src": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp",
-          "alt": "Szablony postów na Instagram dla gabinetu psychologicznego MSC Psychotherapy UK",
-          "ratio": "16/9",
-          "breakAfter": true
-        },
-        {
-          "type": "steps",
-          "title": "Proces realizacji",
-          "items": [
-            { "icon": "file", "title": "Analiza komunikacji", "description": "Przegląd dotychczasowych postów i ustalenie głównych typów treści." },
-            { "icon": "palette", "title": "Moodboard i paleta", "description": "Przygotowanie palety kolorów spójnej ze stroną gabinetu." },
-            { "icon": "layers", "title": "Projekt szablonów", "description": "Układ pod posty i stories z miejscem na tekst i wezwanie do działania." },
-            { "icon": "check", "title": "Testy i przekazanie", "description": "Weryfikacja czytelności na telefonach i przekazanie plików." }
-          ],
-          "breakAfter": true
-        },
-        {
-          "type": "featureList",
-          "title": "Zakres prac",
-          "items": [
-            "Szablony postów kwadratowych (1080x1080)",
-            "Szablony stories (1080x1920)",
-            "Paleta kolorów spójna ze stroną gabinetu",
-            "Warianty: wpisy blogowe, webinary, przypomnienia, aktualności",
-            "Pliki do samodzielnej edycji"
-          ]
-        }
-      ],
-      "cta": {
-        "title": "Potrzebujesz szablonów postów do mediów społecznościowych?",
-        "description": "Zaprojektujemy spójny zestaw szablonów, który ułatwi regularną publikację i zbuduje profesjonalny wizerunek.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę szablonów",
-        "btnTwoLink": "/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe",
-        "backgroundImage": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp",
-        "overlay": "black"
-      },
-
-      "faq": [
-        {
-          "question": "Jakie formaty obejmują szablony?",
-          "answer": "Przygotowujemy szablony w najpopularniejszych formatach: posty kwadratowe (1080x1080), pionowe (1080x1350) i stories (1080x1920). W razie potrzeby dodajemy warianty pod Facebook, LinkedIn lub inne kanały."
-        },
-        {
-          "question": "Czy mogę samodzielnie edytować teksty i zdjęcia?",
-          "answer": "Tak. Szablony są zaprojektowane tak, aby łatwo podmieniać treści bez psucia kompozycji. Przekazujemy pliki w formacie umożliwiającym edycję (np. Canva, Figma lub PSD) - zależnie od preferencji."
-        },
-        {
-          "question": "Czy projekt uwzględnia czytelność na telefonach?",
-          "answer": "Tak. Dobieramy wielkości fontów (min. 24px dla głównego tekstu), kontrast i odstępy tak, aby treść była czytelna na ekranach smartfonów - tam gdzie większość osób przegląda media społecznościowe."
-        },
-        {
-          "question": "Czy szablony będą spójne z identyfikacją mojej marki?",
-          "answer": "Tak. Dopasowujemy paletę kolorów, typografię i elementy graficzne do strony internetowej lub innych materiałów. Dzięki temu komunikacja w mediach społecznościowych jest spójna z całym wizerunkiem firmy."
-        }
-      ],
-      "seo": {
-        "title": "Szablony postów dla psychologa - MSC Psychotherapy - Arteon",
-        "description": "Szablony postów na media społecznościowe dla gabinetu psychologicznego w UK. Stworzyliśmy spójny zestaw grafik pod Instagram i Facebook z gotowymi wariantami do edycji. Zobacz realizację.",
-        "canonical": "https://www.arteonagency.pl/realizacje/szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc"
-      }
-    },
-
-    {
-      "slug": "bon-walentynkowy-dla-salonu-kosmetycznego-kasia",
-      "title": "Bon walentynkowy dla salonu kosmetycznego Kasia",
-      "short": "Elegancki bon walentynkowy w formacie DL dla gabinetu kosmetycznego w Krakowie. Motyw róż, klasyczna typografia i czytelne pola do wypełnienia na rewersie. Gotowe pliki do druku.",
-      "description": "<p>Projekt bonu walentynkowego w formacie DL dla <strong>salonu kosmetycznego w Krakowie</strong>. Celem było stworzenie eleganckiego vouchera nawiązującego do walentynek.</p><p>Motyw róż połączony z delikatnymi pasami i klasyczną typografią. Na froncie: spokojna kompozycja z tytułem i nazwą salonu. Na rewersie: <strong>czytelne pola do wypełnienia</strong> (dla kogo, na jaki zabieg, ważny do) oraz dane gabinetu.</p>",
-      "image": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp",
-      "category": ["grafika"],
-      "client": {
-        "name": "Gabinet kosmetyczny Kasia",
-        "sector": "Salon kosmetyczny",
-        "location": "Kraków"
-      },
-      "contentBlocks": [
-        {
-          "type": "image",
-          "src": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp",
-          "alt": "Bon walentynkowy dla salonu kosmetycznego",
-          "ratio": "16/9",
-          "breakAfter": true
-        },
-        {
-          "type": "steps",
-          "title": "Proces realizacji",
-          "items": [
-            { "icon": "file", "title": "Ustalenie formatu i treści", "description": "Określenie rozmiaru bonu i informacji do umieszczenia." },
-            { "icon": "palette", "title": "Dobór zdjęcia i układu", "description": "Wybór zdjęcia i zaprojektowanie kompozycji." },
-            { "icon": "layers", "title": "Kolorystyka i typografia", "description": "Dopasowanie palety walentynkowej i krojów pisma." },
-            { "icon": "check", "title": "Plik do druku", "description": "Finalne dopracowanie i przygotowanie do produkcji." }
-          ],
-          "breakAfter": true
-        },
-        {
-          "type": "featureList",
-          "title": "Zakres prac",
-          "items": ["Bon w formacie DL (99x210 mm)", "Front: kompozycja z motywem róż", "Rewers: pola do wypełnienia + dane gabinetu", "Plik do druku (CMYK, spady, 300 DPI)"]
-        }
-      ],
-
-      "cta": {
-        "title": "Potrzebujesz vouchera lub bonu podarunkowego?",
-        "description": "Zaprojektujemy elegancki voucher z plikami gotowymi do druku.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę voucherów",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera",
-        "backgroundImage": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp",
-        "overlay": "black"
-      },
-
-      "faq": [
-        {
-          "question": "Czy voucher może mieć pola do wypełnienia ręcznie?",
-          "answer": "Tak. Projektujemy vouchery z czytelnymi polami do wypełnienia - miejscem na imię obdarowanej osoby, rodzaj usługi, wartość i termin ważności. Pola są zaprojektowane tak, aby wpis długopisem wyglądał estetycznie."
-        },
-        {
-          "question": "Czy przygotujecie plik do druku i wersję cyfrową?",
-          "answer": "Tak. Dostarczamy plik produkcyjny do drukarni (ze spadami, w CMYK, 300 DPI) oraz wersję PDF do wysyłki e-mailem - jeśli chcesz oferować vouchery także online."
-        },
-        {
-          "question": "Czy można zamówić serię voucherów na różne okazje?",
-          "answer": "Tak. Możemy zaprojektować zestaw voucherów na Walentynki, Dzień Kobiet, Dzień Matki i święta - wszystkie w spójnym stylu, aby wyglądały jak jedna kolekcja."
-        },
-        {
-          "question": "Jakie informacje są potrzebne do rozpoczęcia projektu?",
-          "answer": "Potrzebujemy: logo (najlepiej w wersji wektorowej), dane kontaktowe gabinetu, informację o tym jakie pola mają być do wypełnienia oraz ewentualne zdjęcia lub grafiki, które chcesz wykorzystać."
-        }
-      ],
-      "seo": {
-        "title": "Bon walentynkowy dla salonu kosmetycznego Kasia - Arteon",
-        "description": "Projekt bonu walentynkowego dla salonu kosmetycznego Kasia w Krakowie. Zaprojektowaliśmy elegancki voucher w formacie DL z frontem i rewersem gotowym do druku. Zobacz realizację.",
-        "canonical": "https://www.arteonagency.pl/realizacje/bon-walentynkowy-dla-salonu-kosmetycznego-kasia"
-      }
-    },
-
-    {
-      "slug": "strona-internetowa-dla-camper-albania",
-      "title": "Redesign strony wypożyczalni kamperów - Camper Albania",
-      "short": "Redesign i optymalizacja strony internetowej dla wypożyczalni kamperów Camper Albania. Odświeżyliśmy wygląd, poprawiliśmy kontrast kolorów pod kątem dostępności WCAG 2.1 AA i zoptymalizowaliśmy prędkość ładowania na urządzeniach mobilnych.",
-      "description": "<p>Projekt dla wypożyczalni kamperów na terenie Albanii <strong>Camper Albania</strong>. Celem projektu było odświeżenie wyglądu strony, poprawa czytelności oraz optymalizacja prędkości ładowania. Efekt: ulepszony, kontrastowy układ zgodny z założeniami <strong>WCAG 2.1 AA</strong> i skok wyniku wydajności mobilnej w Google PageSpeed Insights z ok. 65 do <strong>95 punktów</strong>.</p>",
-      "image": "/assets/projects/arteon-baners-camper-albania-mockup.webp",
-      "category": ["strona", "grafika"],
-      "client": {
-        "name": "Camper Albania",
-        "sector": "Wynajem kamperów",
-        "location": "Albania"
-      },
-      "link": "https://camper-albania.eu",
-      "stack": ["Redesign wyglądu strony", "WCAG 2.1 AA (kontrast)", "Optymalizacja prędkości strony"],
+      "slug": "strona-internetowa-dla-firmy-budowlanej-ocieplenia-budynkow-izoluk",
+      "title": "Strona internetowa dla firmy budowlanej - ocieplenia budynków Izoluk",
+      "short": "Rozbudowana strona internetowa dla firmy z branży izolacji budowlanych. Strona zbudowana na WordPress zawiera blog, dedykowany formularz wyceny oraz osobne podstrony ofertowe dla każdej usługi — od piany PUR po posadzki żywiczne.",
+      "description": "<p>Strona internetowa dla <strong>firmy z branży izolacji natryskowych</strong>. Klient potrzebował witryny widocznej w Google z osobnymi podstronami dla każdej usługi (piana PUR, membrany, izolacja wdmuchiwana, posadzki).</p><br /><p>Stronę zbudowaliśmy na <strong>WordPress z Elementorem Pro</strong>. Dostosowaliśmy kolory do wymogów WCAG, dodaliśmy blog z gotowym szablonem wpisów oraz formularz wyceny ułatwiający kontakt.</p>",
+      "image": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp",
+      "category": ["strona", "blog", "treść"],
+      "link": "https://izoluk.pl/",
+      "task": "Zaprojektowanie i wdrożenie strony internetowej z myślą o widoczności w Google, z rozbudowaną strukturą ofertową, blogiem i formularzem wyceny.",
+      "goals": "<p>Klient potrzebował strony:</p><ul><li><strong>Widocznej w Google</strong> na frazy związane z izolacjami</li><li>Z <strong>osobnymi podstronami</strong> dla każdej usługi</li><li>Z <strong>blogiem</strong> wspierającym pozycjonowanie</li><li><strong>Szybkiej na mobile</strong></li></ul>",
       "process_steps": [
-        "Audyt istniejącej strony - analiza układu, kontrastu, czytelności i wyniku w Google PageSpeed Insights.",
-        "Ulepszenie wyglądu elementów na stronie z naciskiem na lepszy kontrast.",
-        "Dopasowanie spójnej kolorystyki i typografii.",
-        "Optymalizacja zasobów i testy prędkości na telefonach, aż do uzyskania wyniku 95/100 w Google PageSpeed Insights."
+        "Analiza potrzeb i przygotowanie propozycji",
+        "Wdrożenie WordPress z Elementorem Pro",
+        "Stworzenie podstron ofertowych z treściami SEO",
+        "Konfiguracja formularza wyceny i bloga",
+        "Optymalizacja wydajności i przeniesienie domeny"
       ],
-
-      "outcomes": [
-        {
-          "value": "95/100",
-          "label": "Wydajność mobile",
-          "note": "Wynik w Google PageSpeed Insights na urządzeniach mobilnych (wcześniej ok. 65/100)."
-        },
-        {
-          "value": "Lepsza czytelność",
-          "label": "UX na telefonach",
-          "note": "Wyraźniejsza hierarchia treści, większe nagłówki i przejrzyste sekcje oferty."
-        },
-        {
-          "value": "Wyższy kontrast",
-          "label": "WCAG 2.1",
-          "note": "Kolorystyka dostosowana do standardu AA pod kątem kontrastu tekstu i tła."
-        }
+      "deliverables": [
+        "Strona główna z banerem, ofertą, FAQ i formularzem",
+        "Podstrony ofertowe (piana PUR, membrany, izolacja, posadzki)",
+        "Blog z szablonem i spisem treści",
+        "Formularz wyceny",
+        "Kolory zgodne z WCAG AA",
+        "Konfiguracja wtyczek SEO i zabezpieczeń"
       ],
-
-      "beforeAfter": {
-        "beforeImage": "/assets/projects/arteon-camper-albania-b.webp",
-        "afterImage": "/assets/projects/arteon-camper-albania-a.webp"
-      },
-
       "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp",
+          "alt": "Mockup strony dla firmy budowlanej - Izoluk",
+          "ratio": "16/9",
+          "breakAfter": true
+        },
         {
           "type": "beforeAfter",
-          "title": "Wynik optymalizacji strony",
-          "beforeImage": "/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-przed.webp",
-          "afterImage": "/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-po.webp",
-          "beforeLabel": "Przed optymalizacją",
-          "afterLabel": "Po optymalizacji",
-          "note": "Wynik przed i po optymalizacji strony.",
-          "breakAfter": true
-        }
-      ],
-
-      "faq": [
-        {
-          "question": "Czy można poprawić wynik PageSpeed bez przebudowy całej strony?",
-          "answer": "Tak. Przeprowadzamy audyt i wdrażamy poprawki punktowo - optymalizujemy obrazy, skrypty i zasoby. Jeśli problem leży w układzie lub treści, rekomendujemy redesign tylko wybranych sekcji, nie całej strony."
-        },
-        {
-          "question": "Jakie elementy najczęściej obniżają wydajność strony?",
-          "answer": "Najczęstsze przyczyny to: zbyt duże obrazy (brak kompresji, niewłaściwe formaty), ciężkie skrypty JavaScript ładowane synchronicznie, niezoptymalizowane animacje oraz zbyt wiele zasobów ładowanych od razu po otwarciu strony (render-blocking resources)."
-        },
-        {
-          "question": "Czy po optymalizacji strona zachowa dotychczasowy wygląd?",
-          "answer": "Tak. Celem optymalizacji jest szybsza strona bez utraty estetyki. Zmiany dotyczą głównie warstwy technicznej - kompresji, ładowania zasobów, kodu. Układ i styl pozostają bez zmian, chyba że kontrast wymaga poprawy pod kątem dostępności."
-        },
-        {
-          "question": "Jak mierzycie efekty optymalizacji?",
-          "answer": "Efekty mierzymy w Google PageSpeed Insights - sprawdzamy wynik przed i po optymalizacji, zarówno dla wersji mobilnej, jak i desktopowej. Dodatkowo weryfikujemy Core Web Vitals: LCP, FID/INP i CLS."
-        }
-      ],
-      "cta": {
-        "title": "Potrzebujesz szybszej i czytelniejszej strony?",
-        "description": "Prześlij link do swojej strony - sprawdzimy co można poprawić i przygotujemy wycenę.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę optymalizacji stron",
-        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
-        "backgroundImage": "/assets/projects/arteon-baners-camper-albania-mockup.webp",
-        "overlay": "black"
-      },
-      "seo": {
-        "title": "Redesign strony Camper Albania - Arteon",
-        "description": "Redesign i optymalizacja strony wypożyczalni kamperów Camper Albania. Poprawiliśmy czytelność, kontrast kolorów i prędkość ładowania na telefonach. Zobacz realizację.",
-        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-camper-albania"
-      }
-    },
-
-    {
-      "slug": "papier-firmowy-dla-kancelarii-adwokackiej-lux-nova",
-      "title": "Papier firmowy dla kancelarii - LUX NOVA",
-      "short": "Projekt papieru firmowego dla kancelarii adwokackiej LUX NOVA. Klarowny nagłówek z logotypem, subtelny motyw gryfa w tle i czytelna stopka z kodem QR do strony firmowej.",
-      "description": "<p>Projekt koncepcyjny - dane przykładowe. Papier firmowy dla kancelarii <strong>LUX NOVA</strong> wzmacnia wizerunek marki: klarowny nagłówek z logotypem, subtelny motyw gryfa w tle i czytelny blok kontaktu z <strong>kodem QR</strong>. Całość zachowuje równowagę między <em>elegancją</em> i <em>praktycznością</em> - gotowe do druku i do użycia cyfrowego (PDF).</p>",
-      "image": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
-      "category": ["grafika"],
-      "client": { "name": "LUX NOVA", "sector": "Prawo" },
-      "stack": ["Adobe Illustrator", "Mockup 3D"],
-      "deliverables": ["Projekt papieru firmowego A4 (nagłówek + tło + stopka)", "Motyw gryfa w niskiej intensywności jako wzór tła", "Stopka z danymi: telefon, e-mail, adres + kod QR do strony"],
-      "task": "Zaprojektować papier firmowy kancelarii - czytelny, elegancki, spójny z wizytówką i teczką.",
-      "outcomes": [
-        { "value": "Spójność", "label": "Identyfikacja", "note": "Kolory i typografia zgodne z wizytówką i teczką ofertową kancelarii." },
-        { "value": "Czytelność", "label": "Układ", "note": "Wyraźny nagłówek z logo, stopka z danymi kontaktowymi i kodem QR, dużo miejsca na treść." },
-        { "value": "Rozpoznawalność", "label": "Motyw", "note": "Subtelny gryf w tle nadaje papierowi charakter bez przytłaczania treści." }
-      ],
-      "process_steps": ["Analiza istniejących materiałów (logo, wizytówki, teczka)", "Ustalenie siatki i marginesów pod format A4", "Projekt motywu tła oraz stopki i nagłówka papieru firmowego"],
-      "contentBlocks": [
-        {
-          "type": "image",
-          "src": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
-          "alt": "Papier firmowy LUX NOVA - wizualizacja na biurku",
-          "caption": "Wizualizacja 3D papieru firmowego na biurku",
-          "ratio": "16/9",
+          "title": "Przed i po",
+          "beforeImage": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-wczesniejszy-wyglad-strony-stworzony-w-wix.webp",
+          "afterImage": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-projekt-realizacji-stworzony-w-figma.webp",
+          "beforeLabel": "Poprzednia strona na Wix",
+          "afterLabel": "Nowy projekt w Figma",
           "breakAfter": true
         },
         {
-          "type": "featureList",
-          "title": "Zakres prac",
+          "type": "steps",
+          "title": "Przebieg realizacji",
           "items": [
-            "Projekt papieru firmowego A4 (nagłówek + tło + stopka)",
-            "Motyw gryfa jako subtelny wzór tła",
-            "Stopka z danymi kontaktowymi i kodem QR",
-            "Paleta: bordo i beż",
-            "Plik do druku + wersja cyfrowa PDF"
-          ]
-        }
-      ],
-      "faq": [
-        {
-          "question": "Ile kosztuje projekt papieru firmowego?",
-          "answer": "Projekt papieru firmowego kosztuje od 180 do 280 zł brutto - zależnie od liczby wariantów i złożoności. W cenie: projekt nagłówka, stopki, tła oraz pliki do druku i PDF."
-        },
-        {
-          "question": "Czy papier firmowy może zawierać kod QR?",
-          "answer": "Tak. Kod QR w stopce to wygodny sposób na przekierowanie odbiorcy do strony internetowej lub wizytówki Google. Dobieramy rozmiar i miejsce tak, aby kod był łatwy do zeskanowania."
-        },
-        {
-          "question": "Jakie pliki otrzymam po zakończeniu projektu?",
-          "answer": "Przekazujemy pliki do druku (PDF w CMYK, ze spadami, 300 DPI) oraz wersję cyfrową do użycia jako szablon w programach biurowych (Word, Google Docs) - zależnie od potrzeb."
-        }
-      ],
-      "cta": {
-        "title": "Potrzebujesz papieru firmowego dla swojej firmy?",
-        "description": "Zaprojektujemy elegancki papier firmowy z przygotowaniem do druku i wersją cyfrową.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę projektów graficznych",
-        "btnTwoLink": "/uslugi/projekty-graficzne",
-        "backgroundImage": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
-        "overlay": "black"
-      },
-      "seo": {
-        "title": "Papier firmowy dla kancelarii adwokackiej LUX NOVA - Arteon",
-        "description": "Projekt papieru firmowego dla kancelarii adwokackiej LUX NOVA. Elegancki nagłówek, motyw gryfa, stopka z kodem QR. Zobacz realizację i zamów papier firmowy.",
-        "canonical": "https://www.arteonagency.pl/realizacje/papier-firmowy-dla-kancelarii-adwokackiej-lux-nova"
-      }
-    },
-
-    {
-      "slug": "teczka-ofertowa-dla-kancelarii-adwokackiej-lux-nova",
-      "title": "Teczka ofertowa dla kancelarii - LUX NOVA",
-      "short": "Projekt teczki ofertowej dla kancelarii adwokackiej LUX NOVA. Sygnet gryfa na froncie, paleta bordo i beżu, dane kontaktowe z kodem QR we wnętrzu — spójnie z wizytówką i papierem firmowym.",
-      "description": "<p>Projekt koncepcyjny teczki ofertowej dla kancelarii adwokackiej <strong>LUX NOVA</strong>. Celem było stworzenie spójnego elementu identyfikacji wizualnej, który wzmacnia wizerunek kancelarii jako marki nowoczesnej i godnej zaufania. Teczka jest uzupełnieniem zestawu firmowych materiałów drukowanych - wizytówek i papieru firmowego.</p>",
-      "image": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp",
-      "category": ["grafika"],
-      "client": { "name": "LUX NOVA", "sector": "Prawo" },
-      "stack": ["Adobe Illustrator", "Mockup 3D"],
-      "deliverables": [
-        "Projekt teczki ofertowej w wariancie zewnętrznym i wewnętrznym",
-        "Zastosowanie sygnetu gryfa jako motywu przewodniego",
-        "Paleta kolorów: bordo i beż spójne z pozostałymi materiałami firmowymi",
-        "Układ danych kontaktowych z kodem QR prowadzącym na stronę kancelarii"
-      ],
-      "task": "Zaprojektować elegancką teczkę ofertową dla kancelarii adwokackiej - czytelną, reprezentacyjną i spójną z istniejącym systemem identyfikacji wizualnej.",
-      "outcomes": [
-        { "value": "Spójność", "label": "Identyfikacja", "note": "Teczka utrzymana w tej samej stylistyce co wizytówka i papier firmowy kancelarii." },
-        { "value": "Bordo i beż", "label": "Kolorystyka", "note": "Paleta kolorów zgodna z resztą materiałów identyfikacji wizualnej LUX NOVA." },
-        { "value": "Front + wnętrze", "label": "Układ", "note": "Sygnet gryfa na froncie, dane kontaktowe i kod QR we wnętrzu." }
-      ],
-      "process_steps": [
-        "Analiza istniejącej identyfikacji kancelarii (logo, wizytówka, kolory, typografia)",
-        "Stworzenie moodboardu dla projektu teczki ofertowej",
-        "Opracowanie zewnętrznej i wewnętrznej kompozycji teczki",
-        "Przygotowanie wersji do druku i prezentacji 3D"
-      ],
-      "contentBlocks": [
-        {
-          "type": "richtext",
-          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Paleta i typografia</h2><p>Projekt utrzymany jest w kolorystyce <strong>bordo i beżu</strong> - symbolizujących stabilność, doświadczenie i klasę. Typografia łączy nowoczesność z tradycją: elegancki <em>Beaufort Pro</em> z geometrycznym <em>Neue Haas Grotesk Display Pro</em>. Taki zestaw dobrze wpisuje się w charakter kancelarii adwokackiej.</p>"
+            {
+              "icon": "search",
+              "title": "Analiza",
+              "description": "Propozycja wyglądu z pełną strukturą podstron."
+            },
+            {
+              "icon": "palette",
+              "title": "Projekt",
+              "description": "Akceptacja wyglądu strony głównej."
+            },
+            {
+              "icon": "code",
+              "title": "Wdrożenie",
+              "description": "WordPress z Elementorem, blog i formularz."
+            },
+            {
+              "icon": "globe",
+              "title": "Uruchomienie",
+              "description": "Przeniesienie domeny na izoluk.pl."
+            }
+          ],
+          "breakAfter": true
         },
         {
           "type": "imageText",
-          "src": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp",
-          "alt": "Teczka ofertowa dla kancelarii adwokackiej LUX NOVA - projekt koncepcyjny",
+          "src": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-wynik-optymalizacji-witryny-w-pagespeed-dla-urzadzen-mobilnych.webp",
+          "alt": "Wynik PageSpeed Insights - 98/100 dla mobile",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Wydajność 98/100</h2><p>Strona została zoptymalizowana pod kątem wydajności na urządzeniach mobilnych. Wynik w PageSpeed Insights to 98/100.</p><p>Każda usługa ma osobną podstronę z dedykowanymi treściami, co pozwala stronie pojawiać się na więcej fraz w Google.</p>",
           "imageSide": "left",
-          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Projekt teczki ofertowej dla kancelarii adwokackiej</h2><p>Na froncie teczki umieszczono sygnet gryfa - symbol siły i mądrości - w centralnej kompozycji. Wnętrze utrzymane jest w głębokim odcieniu bordo, z precyzyjnie rozmieszczonymi danymi kontaktowymi i kodem QR. Całość tworzy spójną formę przydatną podczas spotkań z klientami i przekazywania dokumentów.</p>"
-        },
-        {
-          "type": "image",
-          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-przod.webp",
-          "alt": "Teczka ofertowa dla kancelarii - LUX NOVA (front)",
-          "caption": "Front teczki ofertowej - sygnet gryfa i logo kancelarii",
-          "ratio": "auto"
-        },
-        {
-          "type": "image",
-          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-srodek-lewa-strona.webp",
-          "alt": "Teczka ofertowa dla kancelarii - LUX NOVA (wnętrze, lewa strona)",
-          "caption": "Wnętrze teczki - jednolita kolorystyka i spójny układ",
-          "ratio": "auto"
-        },
-        {
-          "type": "image",
-          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-srodek-prawa-strona.webp",
-          "alt": "Teczka ofertowa dla kancelarii - LUX NOVA (wnętrze, prawa strona)",
-          "caption": "Wnętrze teczki z danymi kontaktowymi i kodem QR",
-          "ratio": "auto"
+          "ratio": "16/9"
         }
       ],
-      "faq": [
+      "outcomes": [
         {
-          "question": "Ile kosztuje projekt teczki ofertowej?",
-          "answer": "Projekt teczki ofertowej kosztuje od 250 do 450 zł brutto, w zależności od stopnia personalizacji i przygotowania do druku."
+          "label": "Wydajność mobile (PageSpeed)",
+          "value": "98/100",
+          "note": "Zgodnie z wymogami Google"
         },
         {
-          "question": "Jak długo trwa realizacja projektu?",
-          "answer": "Projekt wraz z wizualizacją i plikami do druku realizujemy w ciągu 2-4 dni roboczych."
+          "label": "Podstrony ofertowe",
+          "value": "4+",
+          "note": "Każda usługa na osobnej stronie z unikalnymi treściami"
         },
         {
-          "question": "Czy przygotowujecie projekty teczek ofertowych dla innych branż?",
-          "answer": "Tak, projektujemy teczki ofertowe dla kancelarii, biur, deweloperów, gabinetów medycznych i innych firm, dopasowując styl do charakteru branży."
-        },
-        {
-          "question": "Czy mogę zamówić zestaw: teczka + wizytówka + papier firmowy?",
-          "answer": "Tak, oferujemy komplet materiałów firmowych w spójnej identyfikacji graficznej. W pakiecie cena jest niższa."
+          "label": "Czas realizacji",
+          "value": "8 dni",
+          "note": "Od pierwszego kontaktu do uruchomienia strony"
         }
       ],
       "cta": {
-        "title": "Potrzebujesz teczki ofertowej dla swojej firmy?",
-        "description": "Zaprojektujemy elegancką teczkę spójną z identyfikacją wizualną - z przygotowaniem do druku.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę projektów graficznych",
-        "btnTwoLink": "/uslugi/projekty-graficzne",
-        "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp",
+        "title": "Potrzebujesz strony dla firmy budowlanej lub usługowej?",
+        "description": "Tworzymy strony dla firm budowlanych i usługowych z naciskiem na widoczność w Google. Każda realizacja obejmuje indywidualny projekt, osobne podstrony ofertowe i pomoc z treściami.",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "backgroundImage": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp",
         "overlay": "black"
       },
       "seo": {
-        "title": "Teczka ofertowa dla kancelarii adwokackiej LUX NOVA - Arteon",
-        "description": "Projekt teczki ofertowej dla kancelarii adwokackiej LUX NOVA. Teczka z sygnetem gryfa w palecie bordo i beżu, spójna z wizytówką i papierem firmowym. Zobacz realizację.",
-        "canonical": "https://www.arteonagency.pl/realizacje/teczka-ofertowa-dla-kancelarii-adwokackiej-lux-nova"
+        "title": "Strona internetowa dla firmy budowlanej - Izoluk - Arteon",
+        "description": "Strona internetowa dla firmy zajmującej się izolacją budynków. Realizacja na WordPress z blogiem, formularzem wyceny i podstronami ofertowymi pod SEO. Zobacz projekt.",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-firmy-budowlanej-ocieplenia-budynkow-izoluk"
       }
     },
 
@@ -1001,10 +681,8 @@
       "title": "Wizytówka dla kancelarii - LUX NOVA",
       "short": "Projekt wizytówki dla kancelarii adwokackiej LUX NOVA w układzie poziomym. Sygnet gryfa, paleta bordo i beżu, czytelny układ danych z kodem QR do strony firmowej.",
       "description": "<p>Projekt koncepcyjny wizytówki dla kancelarii adwokackiej, w którym stawiamy na czytelny układ danych oraz spójną identyfikację opartą o sygnet gryfa i zestaw kolorów podkreślających autorytet marki.</p>",
-      "image": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp",
+      "image": "/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp",
       "category": ["grafika"],
-      "client": { "name": "LUX NOVA", "sector": "Prawo" },
-      "stack": ["Adobe Illustrator", "Mockup 3D"],
       "deliverables": [
         "Wizytówka w układzie poziomym (front i tył)",
         "Logo z gryfem jako element identyfikacji wizualnej",
@@ -1013,8 +691,16 @@
       ],
       "task": "Stworzyć elegancki projekt wizytówki dla kancelarii w układzie poziomym z przejrzystą hierarchią danych i miejscem na kod QR.",
       "outcomes": [
-        { "value": "Spójność", "label": "Identyfikacja", "note": "Sygnet gryfa, paleta bordo i beżu oraz typografia spójne z resztą materiałów firmowych." },
-        { "value": "Czytelność", "label": "Układ danych", "note": "Dane kontaktowe ułożone w logicznej hierarchii z wyraźnymi odstępami." }
+        {
+          "value": "Spójność",
+          "label": "Identyfikacja",
+          "note": "Sygnet gryfa, paleta bordo i beżu oraz typografia spójne z resztą materiałów firmowych."
+        },
+        {
+          "value": "Czytelność",
+          "label": "Układ danych",
+          "note": "Dane kontaktowe ułożone w logicznej hierarchii z wyraźnymi odstępami."
+        }
       ],
       "process_steps": [
         "Stworzenie Moodboardu i ustalenie kierunku stylistycznego",
@@ -1025,7 +711,7 @@
       "contentBlocks": [
         {
           "type": "imageText",
-          "src": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp",
+          "src": "/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp",
           "alt": "Wizytówka dla kancelarii - LUX NOVA (widok ogólny)",
           "imageSide": "left",
           "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Wizytówka dla adwokata - hierarchia i porządek</h2><p>Na froncie zaakcentowaliśmy logo firmy, aby odbiorca szybko zapamiętał znak kancelarii. Na rewersie: logo z kodem QR do strony firmowej oraz uporządkowane dane kontaktowe.</p>",
@@ -1058,35 +744,14 @@
           "ratio": "16/9"
         }
       ],
-      "faq": [
-        {
-          "question": "Ile kosztuje projekt wizytówki?",
-          "answer": "Projekt wizytówki kosztuje od 150 do 250 zł brutto - zależnie od liczby wariantów i złożoności. W cenie: projekt frontu i rewersu, pliki do druku oraz mockup do prezentacji."
-        },
-        {
-          "question": "Ile trwa realizacja projektu wizytówki?",
-          "answer": "Realizacja zajmuje od 1 do 3 dni roboczych po ustaleniu treści i układu. Czas zależy od liczby poprawek i wariantów do przygotowania."
-        },
-        {
-          "question": "Czy przygotowujecie pliki gotowe do druku?",
-          "answer": "Tak. Przekazujemy pliki produkcyjne zgodne z wytycznymi drukarni - ze spadami, w CMYK, 300 DPI. Jeśli drukarnia ma własne wymagania (np. profil kolorów), dopasujemy eksport."
-        },
-        {
-          "question": "Czy warto dodać kod QR na wizytówce?",
-          "answer": "Kod QR ułatwia szybkie przejście do strony, wizytówki Google lub profilu LinkedIn. Odbiorca nie musi przepisywać danych ręcznie - skanuje kod i ma wszystko pod ręką."
-        }
-      ],
       "cta": {
         "title": "Potrzebujesz wizytówki dla swojej firmy?",
         "description": "Zaprojektujemy elegancką wizytówkę z przygotowaniem do druku - spójną z identyfikacją wizualną.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę projektu wizytówki",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
-        "backgroundImage": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp",
+        "backgroundImage": "/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp",
         "overlay": "black"
       },
-
       "seo": {
         "title": "Wizytówka dla kancelarii adwokackiej LUX NOVA - Arteon",
         "description": "Projekt wizytówki dla kancelarii adwokackiej LUX NOVA. Zaprojektowaliśmy układ poziomy z sygnetem gryfa na froncie i kodem QR na rewersie. Zobacz realizację.",
@@ -1095,17 +760,616 @@
     },
 
     {
+      "slug": "folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group",
+      "title": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group",
+      "short": "Składany folder reklamowy w formacie A3 (składany na A4) dla polskiej firmy wykańczającej wnętrza domów i mieszkań.",
+      "description": "<p>Projekt składanego folderu reklamowego dla firmy <strong>wykańczającej wnętrza domów i mieszkań</strong>. Folder opisuje ofertę firmy, korzyści ze współpracy (projekt, dobór materiałów i realizacja u jednego wykonawcy) oraz zawiera kod QR do wirtualnego spaceru po ostatniej realizacji.</p><br /><p>Kolorystyka oparta na delikatnych odcieniach brązu i beżu, spójnych ze zdjęciami realizacji. Na pierwszej stronie: zdjęcie wykończonej łazienki, zachęta do kontaktu i cena za metr kwadratowy. W środku: jasno przedstawione korzyści z ikonami oraz szczegółowy opis realizacji.</p><br /><p>Projekt przygotowany do druku i jako PDF do wysyłki mailowej. Realizacja obejmowała <strong>3 kierunki wizualne</strong> oraz pomoc przy stworzeniu tekstu.</p>",
+      "image": "/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp",
+      "category": ["grafika"],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp",
+          "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja pierwszej wersji środek folderu",
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "steps",
+          "title": "Proces realizacji",
+          "items": [
+            {
+              "icon": "file",
+              "title": "Ustalenie formatu i treści",
+              "description": "Klient potrzebował folderu składanego A3 na A4 z ofertą, ceną i kodem QR."
+            },
+            {
+              "icon": "palette",
+              "title": "3 kierunki estetyczne",
+              "description": "Każdy kierunek różnił się układem, akcentami kolorystycznymi i kompozycją zdjęć."
+            },
+            {
+              "icon": "layers",
+              "title": "Kolorystyka i typografia",
+              "description": "Delikatne brązy i beże spójne ze zdjęciami realizacji wnętrz klienta."
+            },
+            {
+              "icon": "check",
+              "title": "Pliki końcowe",
+              "description": "Plik produkcyjny do drukarni oraz lekki PDF do wysyłki mailowej."
+            }
+          ],
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": ["Folder składany A3 → A4", "3 kierunki wizualne do wyboru", "Pomoc przy stworzeniu tekstu", "Kod QR do wirtualnego spaceru", "Plik do druku + PDF do wysyłki mailowej"],
+          "breakAfter": true
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/simba-group/folder-reklamowy-simba-group-tyl.webp",
+          "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja pierwszej wersji tył folderu",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod-druga-wersja.webp",
+          "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja drugiej wersji środek folderu",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/simba-group/folder-reklamowy-simba-group-tyl-druga-wersja.webp",
+          "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja drugiej wersji tył folderu",
+          "ratio": "16/9"
+        }
+      ],
+      "testimonial": {
+        "quote": "Bardzo polecam. Porządny folder reklamowy w dobrej cenie.",
+        "author": "Sebastian",
+        "role": "Foldery reklamowe",
+        "link": "https://fixly.pl/profil/d963Jrae"
+      },
+      "cta": {
+        "title": "Potrzebujesz folderu reklamowego dla swojej firmy?",
+        "description": "Zaprojektujemy folder z przygotowaniem do druku i wersją PDF do wysyłki mailowej.",
+        "btnTwo": "Sprawdź ofertę ulotek i folderów",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-ulotki",
+        "backgroundImage": "/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Folder reklamowy firmy Simba Group - Arteon",
+        "description": "Projekt folderu reklamowego dla firmy wykańczającej wnętrza Simba Group. Składany format A3 z kodem QR do wirtualnego spaceru i trzema kierunkami wizualnymi. Zobacz realizację.",
+        "canonical": "https://www.arteonagency.pl/realizacje/folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group"
+      }
+    },
+
+    {
+      "slug": "optymalizacja-strony-internetowej-dla-wypozyczalni-samochodow-auto-korfu",
+      "title": "Optymalizacja strony internetowej wypożyczalni samochodów - AutoKorfu",
+      "short": "Optymalizacja strony internetowej wypożyczalni samochodów AutoKorfu. Zobacz wynik w Google PageSpeed Insights przed i po optymalizacji.",
+      "description": "<p>projekt ten obejmował optymalizację prędkości oraz wydajności strony internetowej dla wypożyczalni samochodów <strong>AutoKorfu</strong>. Przeprowadziliśmy optymalizację naszym sprawdzonym sposobem, całkowicie bez zmiany wyglądu strony oraz jej funkcjonalności.</p>",
+      "image": "/assets/projects/autokorfu/mockup-strony-auto-korfu.webp",
+      "category": ["strona"],
+      "link": "https://autonakorfu.pl/",
+      "task": "Poprawić wydajność strony bez zmiany wyglądu i treści.",
+      "goals": "<p>Cele optymalizacji:</p><ul><li>Lepsza pozycja witryny w Google/li><li>Poprawa wygody korzystania z witryny</li></ul>",
+      "process_steps": ["Audyt strony i identyfikacja elementów spowalniających ładowanie.", "Optymalizacja.", "Pomiar w PageSpeed."],
+      "outcomes": [
+        {
+          "value": "Lepszy wynik PageSpeed",
+          "label": "Wydajność mobile",
+          "note": "Zob. zrzuty z Google PageSpeed Insights przed i po."
+        },
+        {
+          "value": "Poprawa Core Web Vitals",
+          "label": "LCP, INP, CLS",
+          "note": "Wskaźniki w lepszych przedziałach po wdrożeniu."
+        }
+      ],
+      "contentBlocks": [
+        {
+          "type": "beforeAfter",
+          "title": "Wynik optymalizacji strony",
+          "beforeImage": "/assets/projects/autokorfu/autokorfu-optymalizacja-strony-wynik-przed.webp",
+          "afterImage": "/assets/projects/autokorfu/autokorfu-optymalizacja-strony-wynik-po.webp",
+          "beforeLabel": "Przed optymalizacją",
+          "afterLabel": "Po optymalizacji",
+          "note": "Wynik w Google PageSpeed Insights - poprawa Core Web Vitals po wdrożeniu optymalizacji.",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz szybszej strony?",
+        "description": "Szybka strona to lepsza pozycja w Google i więcej klientów. Prześlij link do swojej witryny a my powiemy jaki będzie koszt jej optymalizacji",
+        "btnTwo": "Sprawdź ofertę optymalizacji stron",
+        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress",
+        "backgroundImage": "/assets/projects/autokorfu/mockup-strony-auto-korfu.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Optymalizacja prędkości strony internetowej dla wypożyczalni samochodów - AutoKorfu",
+        "description": "Realizacja optymalizacji prędkości strony internetowej dla wypożyczalni samochodów AutoKorfu. Zobacz wynik PageSpeed przed i po i zamów optymalizację prędkości swojej strony internetowej",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-wypozyczalni-samochodow-auto-korfu"
+      }
+    },
+
+    {
+      "slug": "papier-firmowy-dla-kancelarii-adwokackiej-lux-nova",
+      "title": "Papier firmowy dla kancelarii - LUX NOVA",
+      "short": "Projekt papieru firmowego dla kancelarii adwokackiej LUX NOVA. Klarowny nagłówek z logotypem, subtelny motyw gryfa w tle i czytelna stopka z kodem QR do strony firmowej.",
+      "description": "<p>Projekt koncepcyjny - dane przykładowe. Papier firmowy dla kancelarii <strong>LUX NOVA</strong> wzmacnia wizerunek marki: klarowny nagłówek z logotypem, subtelny motyw gryfa w tle i czytelny blok kontaktu z <strong>kodem QR</strong>. Całość zachowuje równowagę między <em>elegancją</em> i <em>praktycznością</em> - gotowe do druku i do użycia cyfrowego (PDF).</p>",
+      "image": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
+      "category": ["grafika"],
+      "deliverables": ["Projekt papieru firmowego A4 (nagłówek + tło + stopka)", "Motyw gryfa w niskiej intensywności jako wzór tła", "Stopka z danymi: telefon, e-mail, adres + kod QR do strony"],
+      "task": "Zaprojektować papier firmowy kancelarii - czytelny, elegancki, spójny z wizytówką i teczką.",
+      "outcomes": [
+        {
+          "value": "Spójność",
+          "label": "Identyfikacja",
+          "note": "Kolory i typografia zgodne z wizytówką i teczką ofertową kancelarii."
+        },
+        {
+          "value": "Czytelność",
+          "label": "Układ",
+          "note": "Wyraźny nagłówek z logo, stopka z danymi kontaktowymi i kodem QR, dużo miejsca na treść."
+        },
+        {
+          "value": "Rozpoznawalność",
+          "label": "Motyw",
+          "note": "Subtelny gryf w tle nadaje papierowi charakter bez przytłaczania treści."
+        }
+      ],
+      "process_steps": ["Analiza istniejących materiałów (logo, wizytówki, teczka)", "Ustalenie siatki i marginesów pod format A4", "Projekt motywu tła oraz stopki i nagłówka papieru firmowego"],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
+          "alt": "Papier firmowy LUX NOVA - wizualizacja na biurku",
+          "caption": "Wizualizacja 3D papieru firmowego na biurku",
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": [
+            "Projekt papieru firmowego A4 (nagłówek + tło + stopka)",
+            "Motyw gryfa jako subtelny wzór tła",
+            "Stopka z danymi kontaktowymi i kodem QR",
+            "Paleta: bordo i beż",
+            "Plik do druku + wersja cyfrowa PDF"
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz papieru firmowego dla swojej firmy?",
+        "description": "Zaprojektujemy elegancki papier firmowy z przygotowaniem do druku i wersją cyfrową.",
+        "btnTwo": "Sprawdź ofertę projektów graficznych",
+        "btnTwoLink": "/uslugi/projekty-graficzne",
+        "backgroundImage": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Papier firmowy dla kancelarii adwokackiej - LUX NOVA",
+        "description": "Projekt papieru firmowego dla kancelarii adwokackiej LUX NOVA. Sprawdź realizację i zamów projekt papieru firmowego dla swojej firmy.",
+        "canonical": "https://www.arteonagency.pl/realizacje/papier-firmowy-dla-kancelarii-adwokackiej-lux-nova"
+      }
+    },
+
+    {
+      "slug": "strona-internetowa-dla-osrodka-psychoterapii-dzieci-i-mlodziezy-perly-mocy",
+      "title": "Strona internetowa dla ośrodka psychoterapii dzieci i młodzieży - Perły Mocy",
+      "short": "Kompleksowa rozbudowa strony na Wix dla ośrodka psychoterapii dzieci i młodzieży ze Skierniewic. W ramach projektu stworzyliśmy 11 podstron dla specjalistów, uruchomiliśmy sklep z produktami cyfrowymi i przygotowaliśmy 40-stronicową instrukcję obsługi.",
+      "description": "<p>Ośrodek psychoterapii <strong>Perły Mocy</strong> ze Skierniewic potrzebował rozbudowy istniejącej strony na Wix. Klientka miała już funkcjonującą witrynę, ale brakowało podstron dla poszczególnych specjalistów, możliwości sprzedaży produktów cyfrowych i spójnej nawigacji.</p><br /><p>Rozbudowaliśmy stronę o <strong>sekcję zespołu z 11 osobnymi podstronami</strong>, przeprojektowaliśmy stronę główną i dodaliśmy zakładkę Ośrodek. Zintegrowaliśmy <strong>płatności BLIK i Przelewy24</strong>, poprawiliśmy kontrast kolorów pod kątem dostępności WCAG i przekierowaliśmy domenę — stara zawierała polską literę Ł, co utrudniało jej wpisywanie.</p>",
+      "image": "/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp",
+      "category": ["strona", "sklep"],
+      "link": "https://www.perlymocyskierniewice.com/",
+      "task": "Rozbudowa strony na Wix o podstrony dla zespołu, sklep z produktami cyfrowymi, integrację płatności i przekierowanie domeny.",
+      "goals": "<p>Klientka potrzebowała:</p><ul><li>Miejsca, gdzie każdy specjalista z zespołu ma <strong>własną podstronę</strong> z opisem kwalifikacji</li><li>Możliwości <strong>sprzedaży produktów cyfrowych</strong> (pliki audio, wideo, PDF) bezpośrednio przez stronę</li><li><strong>Płatności online</strong> — pacjenci mieli móc płacić BLIK-iem i przelewem</li><li>Uporządkowanej nawigacji i <strong>nowej strony głównej</strong> odzwierciedlającej rozwój ośrodka</li></ul>",
+      "process_steps": [
+        "Analiza strony i określenie zakresu prac",
+        "Uporządkowanie struktury i URL-i",
+        "Stworzenie podstron dla zespołu i sekcji Ośrodek",
+        "Konfiguracja sklepu i płatności",
+        "Poprawki dostępności i przekierowanie domeny"
+      ],
+      "deliverables": [
+        "11 podstron dla zespołu z opisem kwalifikacji",
+        "Nowa strona główna i zakładka Ośrodek",
+        "Sklep z produktami cyfrowymi i płatności BLIK",
+        "Poprawki dostępności WCAG 2.1 AA",
+        "Przekierowanie domeny i konfiguracja analityki",
+        "40-stronicowa instrukcja obsługi"
+      ],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp",
+          "alt": "Mockup strony dla ośrodka psychoterapii - Perły Mocy",
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "steps",
+          "title": "Zakres realizacji",
+          "items": [
+            {
+              "icon": "users",
+              "title": "11 podstron dla zespołu",
+              "description": "Każdy specjalista ma własną podstronę ze zdjęciem, opisem kwalifikacji i informacją o specjalizacji."
+            },
+            {
+              "icon": "layout",
+              "title": "Strona główna + Ośrodek",
+              "description": "Nowa strona główna odzwierciedla rozwój ośrodka. Zakładka Ośrodek prezentuje misję i ofertę."
+            },
+            {
+              "icon": "cart",
+              "title": "Sklep z produktami cyfrowymi",
+              "description": "Sprzedaż plików audio, wideo i PDF z automatyczną wysyłką po płatności."
+            },
+            {
+              "icon": "credit-card",
+              "title": "Płatności BLIK i Przelewy24",
+              "description": "Pacjenci mogą zapłacić za produkty cyfrowe bezpośrednio na stronie."
+            },
+            {
+              "icon": "eye",
+              "title": "Dostępność WCAG",
+              "description": "Poprawiliśmy kontrast kolorów tak, aby strona spełniała wymagania WCAG 2.1 AA."
+            },
+            {
+              "icon": "book-open",
+              "title": "Instrukcja obsługi (40 stron)",
+              "description": "Szczegółowy dokument PDF opisujący jak edytować każdą sekcję strony."
+            }
+          ],
+          "breakAfter": true
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-wyglad-strony-glownej-na-zywo.webp",
+          "alt": "Wygląd strony głównej Perły Mocy",
+          "ratio": "auto"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Podstrony dla zespołu",
+          "value": "11",
+          "note": "Dedykowana strona dla każdego specjalisty"
+        },
+        {
+          "label": "Nowe/przeprojektowane strony",
+          "value": "20+",
+          "note": "Zespół, Ośrodek, strona główna, sekcja Rodzice, FAQ i inne"
+        },
+        {
+          "label": "Instrukcja obsługi",
+          "value": "40 stron",
+          "note": "Dokument PDF z dokładnym opisem jak edytować stronę"
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz rozbudowy lub poprawek na swojej stronie?",
+        "description": "Pomagamy z istniejącymi stronami na Wix, WordPress i innych platformach. Uporządkujemy strukturę, dodamy brakujące funkcje i skonfigurujemy analitykę.",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "backgroundImage": "/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Strona internetowa dla ośrodka psychoterapii dzieci i młodzieży - Perły Mocy",
+        "description": "Rozbudowa strony internetowej dla ośrodka psychoterapii ze Skierniewic. Sprawdź naszą realizację strony i zamów stronę dla swojego ośrodka.",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-osrodka-psychoterapii-dzieci-i-mlodziezy-perly-mocy"
+      }
+    },
+
+    {
+      "slug": "logo-dla-km2",
+      "title": "Logo dla firmy zajmującej się aranżacją wnętrz - KM2",
+      "short": "Projekt logo dla firmy zajmującej się aranżacją wnętrz - KM2. Litery K i M wpisane w znak domu z dachem.",
+      "description": "<p>Projekt logo dla firmy zajmującej się aranżacją wnętrz<strong>KM2</strong>./p><br /><p>W znak firmy a dokładnie w dach, zostałty wpisane litery K oraz M</strong>.</p>",
+      "image": "/assets/projects/km2/mockup-logo-km2.webp",
+      "category": ["grafika"],
+      "goals": "<p>Założenia projektu:</p><ul><li>Litery K i M wpisane w znak domu (dach)</li><li>Bezpośrednie nawiązanie do nazwy firmy i branży aranżacji wnętrz</li></ul>",
+      "process_steps": ["Analiza potrzeb oraz branży.", "Wstępne kierunki graficzne.", "Wybór i dopracowanie znaku.", "Przygotowanie wariantów kolorystycznych."],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/km2/mockup-logo-km2.webp",
+          "alt": "Logo KM2 - mockup realizacji Arteon",
+          "ratio": "16/9",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz spójnej identyfikacji wizualnej dla swojej marki?",
+        "description": "Zajmujemy się projektowaniem i realizacją stron internetowych oraz projektami graficznymi online i offline. Z nami masz wszystko w jednym miejscu.",
+        "btnTwo": "Sprawdź ofertę projektowania logo",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-logo",
+        "backgroundImage": "/assets/projects/km2/mockup-logo-km2.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Logo dla firmy zajmującej się aranżacją wnętrz - KM2",
+        "description": "Logo dla firmy zajmującej się aranżacją wnętrz - KM2. Sprawdź naszą realizację i zamów logo dla swojej firmy.",
+        "canonical": "https://www.arteonagency.pl/realizacje/logo-dla-km2"
+      }
+    },
+
+    {
+      "slug": "wizytowka-dla-spa-talia",
+      "title": "Wizytówka dla SPA - TALIA",
+      "short": "Projekt wizytówki dla SPA TALIA inspirowanej naturą. Malarskie tło lasu na froncie, czytelne dane właścicielki na rewersie i paleta zieleni z ciepłym beżem.",
+      "description": "<p>Projekt koncepcyjny <strong>wizytówki dla SPA</strong> inspirowanej naturą. Na froncie umieściliśmy malarskie tło lasu w technice akrylowej, logotyp i typografię <em>Warbler Display</em>. Na rewersie znajdują się czytelne dane właścicielki i adres strony internetowej.</p><p>Paleta kolorów łączy głęboką zieleń (<strong>#182519</strong>) z ciepłym beżem (<strong>#e1d2c2</strong>) i bielą.</p>",
+      "image": "/assets/projects/talia/mockup-wizytówki-talia.webp",
+      "category": ["grafika"],
+      "process_steps": [
+        "Wizytówka w układzie poziomym (front i tył)",
+        "Dobór palety kolorów i typografii (Warbler Display)",
+        "Projekt kompozycji z malarskim tłem lasu na froncie",
+        "Makieta 3D i finalna prezentacja"
+      ],
+      "contentBlocks": [
+        {
+          "type": "imageText",
+          "src": "/assets/projects/talia/mockup-wizytówki-talia.webp",
+          "alt": "Wizytówka dla SPA - TALIA (front i tył)",
+          "imageSide": "left",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Wizytówki dla SPA - spokój i klasa</h2><p>Malarstwo natury na froncie i elegancki układ danych na rewersie. Połączenie zieleni i beżu buduje wrażenie jakości i bliskości natury.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": [
+            "Wizytówka w układzie poziomym (front + rewers)",
+            "Malarskie tło lasu (akryl) na froncie",
+            "Typografia: Warbler Display",
+            "Paleta: zieleń #182519, beż #e1d2c2, biel",
+            "Plik do druku (CMYK, spady, 300 DPI)"
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz wizytówki dla swojego SPA lub gabinetu?",
+        "description": "Zaprojektujemy elegancką wizytówkę z przygotowaniem do druku - dopasowaną do charakteru marki.",
+        "btnTwo": "Sprawdź ofertę projektu wizytówki",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "backgroundImage": "/assets/projects/talia/mockup-wizytówki-talia.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Wizytówka dla SPA - TALIA",
+        "description": "Projekt wizytówki dla SPA TALIA. Sprawdź naszą realizację i zamów projekt wizytówki dla swojej firmy.",
+        "canonical": "https://www.arteonagency.pl/realizacje/wizytowka-dla-spa-talia"
+      }
+    },
+
+    {
+      "slug": "bon-walentynkowy-dla-salonu-kosmetycznego-kasia",
+      "title": "Projekt vouchera walentynkowego dla salonu kosmetycznego Kasia",
+      "short": "Elegancki bon walentynkowy w formacie DL dla gabinetu kosmetycznego w Krakowie. Motyw róż, klasyczna typografia i czytelne pola do wypełnienia na rewersie. Gotowe pliki do druku.",
+      "description": "<p>Projekt bonu walentynkowego w formacie DL dla <strong>salonu kosmetycznego w Krakowie</strong>. Celem było stworzenie eleganckiego vouchera nawiązującego do walentynek.</p><p>Motyw róż połączony z delikatnymi pasami i klasyczną typografią. Na froncie: spokojna kompozycja z tytułem i nazwą salonu. Na rewersie: <strong>czytelne pola do wypełnienia</strong> (dla kogo, na jaki zabieg, ważny do) oraz dane gabinetu.</p>",
+      "image": "/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp",
+      "category": ["grafika"],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp",
+          "alt": "Bon walentynkowy dla salonu kosmetycznego",
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "steps",
+          "title": "Proces realizacji",
+          "items": [
+            {
+              "icon": "file",
+              "title": "Ustalenie formatu i treści",
+              "description": "Określenie rozmiaru bonu i informacji do umieszczenia."
+            },
+            {
+              "icon": "palette",
+              "title": "Dobór zdjęcia i układu",
+              "description": "Wybór zdjęcia i zaprojektowanie kompozycji."
+            },
+            {
+              "icon": "layers",
+              "title": "Kolorystyka i typografia",
+              "description": "Dopasowanie palety walentynkowej i krojów pisma."
+            },
+            {
+              "icon": "check",
+              "title": "Plik do druku",
+              "description": "Finalne dopracowanie i przygotowanie do produkcji."
+            }
+          ],
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": ["Bon w formacie DL (99x210 mm)", "Front: kompozycja z motywem róż", "Rewers: pola do wypełnienia + dane gabinetu", "Plik do druku (CMYK, spady, 300 DPI)"]
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz vouchera lub bonu podarunkowego?",
+        "description": "Zaprojektujemy elegancki voucher z plikami gotowymi do druku.",
+        "btnTwo": "Sprawdź ofertę voucherów",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera",
+        "backgroundImage": "/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Bon walentynkowy dla salonu kosmetycznego Kasia - Arteon",
+        "description": "Projekt vouchera walentynkowego dla salonu kosmetycznego Kasia w Krakowie. Sprawdź naszą realizację i zamów projekt bonu prezentowego dla swojego salonu.",
+        "canonical": "https://www.arteonagency.pl/realizacje/bon-walentynkowy-dla-salonu-kosmetycznego-kasia"
+      }
+    },
+
+    {
+      "slug": "strona-internetowa-dla-camper-albania",
+      "title": "Redesign i optymalizacja prędkości strony wypożyczalni kamperów - Camper Albania",
+      "short": "Redesign i optymalizacja strony internetowej dla wypożyczalni kamperów Camper Albania. Odświeżyliśmy wygląd, poprawiliśmy kontrast kolorów pod kątem dostępności WCAG 2.1 AA i zoptymalizowaliśmy prędkość ładowania na urządzeniach mobilnych.",
+      "description": "<p>Projekt dla wypożyczalni kamperów na terenie Albanii <strong>Camper Albania</strong>. Celem projektu było odświeżenie wyglądu strony, poprawa czytelności oraz optymalizacja prędkości ładowania. Efekt: ulepszony, kontrastowy układ zgodny z założeniami <strong>WCAG 2.1 AA</strong> i skok wyniku wydajności mobilnej w Google PageSpeed Insights z ok. 65 do <strong>95 punktów</strong>.</p>",
+      "image": "/assets/projects/arteon-baners-camper-albania-mockup.webp",
+      "category": ["strona"],
+      "link": "https://camper-albania.eu",
+      "process_steps": [
+        "Audyt istniejącej strony - analiza układu, kontrastu, czytelności i wyniku w Google PageSpeed Insights.",
+        "Ulepszenie wyglądu elementów na stronie z naciskiem na lepszy kontrast.",
+        "Dopasowanie spójnej kolorystyki i typografii.",
+        "Optymalizacja zasobów i testy prędkości na telefonach, aż do uzyskania wyniku 95/100 w Google PageSpeed Insights."
+      ],
+      "outcomes": [
+        {
+          "value": "95/100",
+          "label": "Wydajność mobile",
+          "note": "Wynik w Google PageSpeed Insights na urządzeniach mobilnych (wcześniej ok. 65/100)."
+        },
+        {
+          "value": "Lepsza czytelność",
+          "label": "UX na telefonach",
+          "note": "Wyraźniejsza hierarchia treści, większe nagłówki i przejrzyste sekcje oferty."
+        },
+        {
+          "value": "Wyższy kontrast",
+          "label": "WCAG 2.1",
+          "note": "Kolorystyka dostosowana do standardu AA pod kątem kontrastu tekstu i tła."
+        }
+      ],
+      "beforeAfter": {
+        "beforeImage": "/assets/projects/arteon-camper-albania-b.webp",
+        "afterImage": "/assets/projects/arteon-camper-albania-a.webp"
+      },
+      "contentBlocks": [
+        {
+          "type": "beforeAfter",
+          "title": "Wynik optymalizacji strony",
+          "beforeImage": "/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-przed.webp",
+          "afterImage": "/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-po.webp",
+          "beforeLabel": "Przed optymalizacją",
+          "afterLabel": "Po optymalizacji",
+          "note": "Wynik przed i po optymalizacji strony.",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz szybszej i czytelniejszej strony?",
+        "description": "Prześlij link do swojej strony - sprawdzimy co można poprawić i przygotujemy wycenę.",
+        "btnTwo": "Sprawdź ofertę optymalizacji stron",
+        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "backgroundImage": "/assets/projects/arteon-baners-camper-albania-mockup.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Redesign i optymalizacja prędkości strony - Camper Albania",
+        "description": "Redesign i optymalizacja prędkości strony internetowej wypożyczalni kamperów Camper Albania. Sprawdź naszą realizację i przyśpiesz swoją stronę internetową.",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-camper-albania"
+      }
+    },
+
+    {
+      "slug": "teczka-ofertowa-dla-kancelarii-adwokackiej-lux-nova",
+      "title": "Projekt teczki ofertowej dla kancelarii - LUX NOVA",
+      "short": "Projekt teczki ofertowej dla kancelarii adwokackiej LUX NOVA. Sygnet gryfa na froncie, paleta bordo i beżu, dane kontaktowe z kodem QR we wnętrzu — spójnie z wizytówką i papierem firmowym.",
+      "description": "<p>Projekt koncepcyjny teczki ofertowej dla kancelarii adwokackiej <strong>LUX NOVA</strong>. Celem było stworzenie spójnego elementu identyfikacji wizualnej, który wzmacnia wizerunek kancelarii jako marki nowoczesnej i godnej zaufania. Teczka jest uzupełnieniem zestawu firmowych materiałów drukowanych - wizytówek i papieru firmowego.</p>",
+      "image": "/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp",
+      "category": ["grafika"],
+      "deliverables": [
+        "Projekt teczki ofertowej w wariancie zewnętrznym i wewnętrznym",
+        "Zastosowanie sygnetu gryfa jako motywu przewodniego",
+        "Paleta kolorów: bordo i beż spójne z pozostałymi materiałami firmowymi",
+        "Układ danych kontaktowych z kodem QR prowadzącym na stronę kancelarii"
+      ],
+      "task": "Zaprojektować elegancką teczkę ofertową dla kancelarii adwokackiej - czytelną, reprezentacyjną i spójną z istniejącym systemem identyfikacji wizualnej.",
+      "outcomes": [
+        {
+          "value": "Spójność",
+          "label": "Identyfikacja",
+          "note": "Teczka utrzymana w tej samej stylistyce co wizytówka i papier firmowy kancelarii."
+        },
+        {
+          "value": "Bordo i beż",
+          "label": "Kolorystyka",
+          "note": "Paleta kolorów zgodna z resztą materiałów identyfikacji wizualnej LUX NOVA."
+        },
+        {
+          "value": "Front + wnętrze",
+          "label": "Układ",
+          "note": "Sygnet gryfa na froncie, dane kontaktowe i kod QR we wnętrzu."
+        }
+      ],
+      "process_steps": [
+        "Analiza istniejącej identyfikacji kancelarii (logo, wizytówka, kolory, typografia)",
+        "Stworzenie moodboardu dla projektu teczki ofertowej",
+        "Opracowanie zewnętrznej i wewnętrznej kompozycji teczki",
+        "Przygotowanie wersji do druku i prezentacji 3D"
+      ],
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Paleta i typografia</h2><p>Projekt utrzymany jest w kolorystyce <strong>bordo i beżu</strong> - symbolizujących stabilność, doświadczenie i klasę. Typografia łączy nowoczesność z tradycją: elegancki <em>Beaufort Pro</em> z geometrycznym <em>Neue Haas Grotesk Display Pro</em>. Taki zestaw dobrze wpisuje się w charakter kancelarii adwokackiej.</p>"
+        },
+        {
+          "type": "imageText",
+          "src": "/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp",
+          "alt": "Teczka ofertowa dla kancelarii adwokackiej LUX NOVA - projekt koncepcyjny",
+          "imageSide": "left",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Projekt teczki ofertowej dla kancelarii adwokackiej</h2><p>Na froncie teczki umieszczono sygnet gryfa - symbol siły i mądrości - w centralnej kompozycji. Wnętrze utrzymane jest w głębokim odcieniu bordo, z precyzyjnie rozmieszczonymi danymi kontaktowymi i kodem QR. Całość tworzy spójną formę przydatną podczas spotkań z klientami i przekazywania dokumentów.</p>"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-przod.webp",
+          "alt": "Teczka ofertowa dla kancelarii - LUX NOVA (front)",
+          "caption": "Front teczki ofertowej - sygnet gryfa i logo kancelarii",
+          "ratio": "auto"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-srodek-lewa-strona.webp",
+          "alt": "Teczka ofertowa dla kancelarii - LUX NOVA (wnętrze, lewa strona)",
+          "caption": "Wnętrze teczki - jednolita kolorystyka i spójny układ",
+          "ratio": "auto"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-srodek-prawa-strona.webp",
+          "alt": "Teczka ofertowa dla kancelarii - LUX NOVA (wnętrze, prawa strona)",
+          "caption": "Wnętrze teczki z danymi kontaktowymi i kodem QR",
+          "ratio": "auto"
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz teczki ofertowej dla swojej firmy?",
+        "description": "Zaprojektujemy elegancką teczkę spójną z identyfikacją wizualną - z przygotowaniem do druku.",
+        "btnTwo": "Sprawdź ofertę projektów graficznych",
+        "btnTwoLink": "/uslugi/projekty-graficzne",
+        "backgroundImage": "/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Teczka ofertowa dla kancelarii adwokackiej LUX NOVA - Arteon",
+        "description": "Projekt teczki ofertowej dla kancelarii adwokackiej LUX NOVA. Sprawdź naszą realizację teczki ofertowej i zamów projekt teczki dla swojej firmy",
+        "canonical": "https://www.arteonagency.pl/realizacje/teczka-ofertowa-dla-kancelarii-adwokackiej-lux-nova"
+      }
+    },
+
+    {
       "slug": "strona-dla-psychologa-msc-psychotherapy",
-      "title": "Strona internetowa dla psychologa - MSC Psychotherapy UK",
-      "short": "Strona internetowa dla psychoterapeutki w UK. Zbudowaliśmy spójną witrynę z naciskiem na widoczność w Google, pozycjonowanie lokalne w Camberley i przygotowanie do sprzedaży ebooka książki \"Spokojnie, to tylko nerwica\".",
+      "title": "Strona internetowa dla psychoterapeutki - MSC Psychotherapy UK",
+      "short": "Strona internetowa dla psychoterapeutki w Anglii. Zbudowaliśmy spójną witrynę z naciskiem na widoczność w Google, pozycjonowanie lokalne w Camberley i przygotowanie do sprzedaży ebooka książki \"Spokojnie, to tylko nerwica\".",
       "description": "<p>Mental Support Centre to gabinet prowadzony przez mgr Sylwię Paciuch. Naszym celem było zbudowanie <strong>spójnej, prostej w odbiorze strony dla psychoterapeuty</strong> po polsku oraz wzmocnienie <strong>widoczności w Google</strong> w Camberley oraz okolicach Londynu. Projekt łączy <strong>marketing dla psychologa</strong>, <strong>pozycjonowanie lokalne</strong> i przygotowanie do <strong>promocji książki psychologicznej</strong> \"Spokojnie, to tylko nerwica\".</p>",
-      "image": "/assets/projects/arteon-baners-msc.webp",
+      "image": "/assets/projects/msc/moskup-strony-msc-psychotherapy.webp",
       "link": "https://msc-psychotherapy.co.uk/",
-      "category": ["strona", "sklep", "blog", "treść", "grafika", "marketing"],
-
-      "client": { "name": "Mental Support Centre", "sector": "Psychoterapia", "location": "Camberley, UK" },
-      "stack": ["WordPress", "Yoast SEO", "GA4", "GSC"],
-
+      "category": ["strona", "sklep", "blog", "treść"],
       "deliverables": [
         "Nowy układ i styl - lekki, czytelny, dopasowany do <strong>gabinetu psychologicznego</strong>",
         "Treści prostym językiem - korzyści dla pacjenta, akcent na <strong>lęk i nerwicę</strong>",
@@ -1115,19 +1379,26 @@
         "Przygotowanie sklepu - <strong>ebook</strong> i <strong>audiobook</strong> książki \"Spokojnie, to tylko nerwica\"",
         "Plan <strong>marketingu dla psychologa</strong> - blog + krótkie rolki (TikTok/IG)"
       ],
-
       "goals": "<p>1) Jasny przekaz oferty: terapia indywidualna, par, rodzin, grupowa - z naciskiem na <strong>lęk i nerwicę</strong>, depresję, zaburzenia odżywiania, tematykę seksuologiczną oraz <strong>hipnozę terapeutyczną</strong>.</p><p>2) <strong>Pozycjonowanie dla psychologa</strong> w Camberley i Londynie - frazy: <em>psychoterapia po polsku</em>, <em>polski psychoterapeuta</em> oraz zapytania dotyczące lęku i nerwicy.</p><p>3) <strong>Promocja książki psychologicznej</strong> i przygotowanie do sprzedaży <strong>ebooka</strong> i <strong>audiobooka</strong> na stronie.</p><p>4) Spójność identyfikacji: nowoczesne <strong>logo dla psychologa</strong>, te same kolory i typografia w serwisie i mediach społecznościowych.</p>",
-
       "challenges": "<p>Rozproszony wizerunek (inna estetyka na stronie, FB i IG), edukacyjne treści bez jasnego wskazania na możliwość umówienia się na terapię oraz słaba widoczność lokalna w Google. </p>",
-
       "solutions": "<p><strong>1. Strona internetowa dla psychoterapeuty</strong> - przejrzysta nawigacja, krótkie akapity, specjalistyczne sekcje: dla kogo jest terapia, kiedy pomaga, jak zacząć.</p><p><strong>2. Pozycjonowanie dla psychologa</strong> - nagłówki i opisy pod Camberley/London, podkreślenie tematów: <em>lęk i nerwica</em>, <em>terapia par</em>, <em>hipnoza terapeutyczna</em>.</p><p><strong>3. Spójność identyfikacji</strong> - <em>logo dla psychologa</em> w wariancie nowoczesnym</p><p><strong>4. Promocja książki psychologicznej</strong> - sekcja na stronie + plan publikacji (krótkie rolki z cytatami i poradami), przygotowanie do sprzedaży <em>ebooka/audiobooka</em> w sklepie.</p><p><strong>5. Analityka i rozwój</strong> - <em>GA4 i GSC</em> do analityki widoczności strony w Google; <em>blog gabinetu psychologicznego</em> z tematami pod wyszukiwania (lęk, nerwica, relacje).</p>",
-
       "outcomes": [
-        { "value": "97/100", "label": "Wydajność strony (PageSpeed)", "note": "Po optymalizacji — wcześniej ok. 64/100." },
-        { "value": "W trakcie wzrostu", "label": "Widoczność lokalna w Google", "note": "Kolejny etap to blog i redakcja treści pod frazy związane z psychoterapią." },
-        { "value": "W trakcie realizacji", "label": "Promocja książki", "note": "Kolejny etap to funkcje sklepu i rolki w mediach społecznościowych." }
+        {
+          "value": "97/100",
+          "label": "Wydajność strony (PageSpeed)",
+          "note": "Po optymalizacji — wcześniej ok. 64/100."
+        },
+        {
+          "value": "W trakcie wzrostu",
+          "label": "Widoczność lokalna w Google",
+          "note": "Kolejny etap to blog i redakcja treści pod frazy związane z psychoterapią."
+        },
+        {
+          "value": "W trakcie realizacji",
+          "label": "Promocja książki",
+          "note": "Kolejny etap to funkcje sklepu i rolki w mediach społecznościowych."
+        }
       ],
-
       "process_steps": [
         "Audyt: wizerunek, treści, szybkość, dane - punkt startowy",
         "Projekt: układ pod <strong>stronę dla psychologa</strong> i komfort czytania",
@@ -1137,13 +1408,11 @@
         "Rozwój: <strong>blog gabinetu</strong>, rolki (TikTok/IG), sekcja książki",
         "Sklep: przygotowanie ścieżki dla <strong>ebooka</strong> i <strong>audiobooka</strong>"
       ],
-
       "beforeAfter": {
         "beforeImage": "/assets/projects/arteon-b-msc.webp",
         "afterImage": "/assets/projects/arteon-a-msc2.webp",
         "note": "Przed: różne style i wolne ładowanie. Po: jedna linia wizualna, jasny przekaz i treści pod <strong>pozycjonowanie dla psychologa</strong>."
       },
-
       "contentBlocks": [
         {
           "type": "beforeAfter",
@@ -1156,71 +1425,191 @@
           "breakAfter": true
         }
       ],
-      "faq": [
-        {
-          "question": "Ile kosztuje strona dla psychologa?",
-          "answer": "Cena strony internetowej zależy od tego, co dokładnie ma się na niej znaleźć. Patrzymy na: liczbę podstron, projekt graficzny, treści, zdjęcia oraz dodatkowe funkcje (np. formularze, rezerwacje). Strona internetowa dla psychologa powinna zawierać dobrze opisane strony ofertowe oraz łatwą drogę do kontaktu. Cena zaczyna się od 3500 zł brutto."
-        },
-        {
-          "question": "Jak długo trwa stworzenie strony dla psychoterapeuty?",
-          "answer": "Standardowo stworzenie strony internetowej zajmuje od 5 do 15 dni roboczych, w zależności od liczby podstron oraz potrzebnych funkcjonalności."
-        },
-        {
-          "question": "Czy przygotujecie treści na stronę dla psychologa?",
-          "answer": "Tak. Możemy stworzyć od podstaw treści i grafiki, dopracować Twoje materiały oraz wskazać, jakie treści najlepiej zadziałają w Twojej branży."
-        },
-        {
-          "question": "Czy strona dla psychologa będzie widoczna w Google?",
-          "answer": "Tak, dbamy o optymalizację SEO: szybkość, mobilność, poprawne nagłówki i meta tagi. Pomagamy w całym procesie pozycjonowania witryny."
-        },
-        {
-          "question": "Czy mogę samodzielnie edytować treści na stronie?",
-          "answer": "Tak. Gwarantujemy darmowe szkolenie z edycji w formie PDF po zakończeniu prac. Pokażemy, jak dodać nową usługę, wpis na blog i zaktualizować cennik. Oferujemy też stałą współpracę nad rozwojem witryny."
-        },
-        {
-          "question": "Czy możecie stworzyć stronę dla psychologa z rezerwacją wizyt?",
-          "answer": "Tak, integrujemy formularze kontaktu, kalendarze rezerwacji wizyt, płatności online oraz przypomnienia e-mail/SMS."
-        },
-        {
-          "question": "Jakie zdjęcia i grafiki najlepiej działają na stronie psychologa?",
-          "answer": "Naturalne portrety, stonowana kolorystyka, czytelna typografia. Stawiamy na spokój, zaufanie i jasny układ sekcji."
-        },
-        {
-          "question": "Jak mierzyć skuteczność strony dla psychologa?",
-          "answer": "Podstawą jest GSC (Google Search Console). To narzędzie pozwala śledzić zapytania użytkowników powiązane z Twoją stroną oraz monitorować pozycje i indeksację."
-        },
-        {
-          "question": "Czy oferujecie wsparcie po publikacji strony?",
-          "answer": "Tak, możemy przeanalizować Twoją branżę i przygotować jasny plan rozwoju, który przełoży się na wyższą pozycję w Google oraz większą liczbę klientów."
-        }
-      ],
-
       "cta": {
         "title": "Potrzebujesz strony dla gabinetu psychologicznego?",
         "description": "Zaprojektujemy czytelną stronę z treściami pod SEO, prostą ścieżką do kontaktu i opcją rezerwacji wizyt.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę stron internetowych",
         "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
-        "backgroundImage": "/assets/projects/arteon-baners-msc.webp",
+        "backgroundImage": "/assets/projects/msc/moskup-strony-msc-psychotherapy.webp",
         "overlay": "black"
       },
-
       "seo": {
-        "title": "Strona dla psychologa MSC Psychotherapy UK - Arteon",
-        "description": "Realizacja strony dla gabinetu psychologicznego w UK. Pozycjonowanie lokalne w Camberley, nowy wygląd i przygotowanie do sprzedaży ebooka. Zobacz case study.",
+        "title": "Strona internetowa dla psychoterapeutki - MSC Psychotherapy UK",
+        "description": "Realizacja strony dla psychoterapeutki działającej w Anglii. Sprawdź naszą realizację i zamów stronę dla swojego gabinetu.",
         "canonical": "https://www.arteonagency.pl/realizacje/strona-dla-psychologa-msc-psychotherapy"
       }
     },
 
     {
+      "slug": "wizytowki-dla-gastronomii-restoquality",
+      "title": "Wizytówki dla firmy gastronomicznej - RestoQuality",
+      "short": "Szablon wizytówek dla handlowców firmy RestoQuality z branży gastronomicznej. Powtarzalny układ danych spójny z identyfikacją marki, gotowy do szybkiego wdrożenia dla całego zespołu sprzedaży.",
+      "description": "<p><strong>Wizytówki dla gastronomii</strong> - projekt koncepcyjny przygotowany dla RestoQuality. Cel: ujednolicony szablon dla działu handlowego. Styl <em>techniczny i solidny</em>; kolory i typografia dopasowane do identyfikacji marki.</p><p>Układ obejmuje <strong>imię i nazwisko handlowca</strong>, <strong>stanowisko</strong>, <strong>telefon</strong>, <strong>adres firmy</strong> oraz znak marki. Szablon kompozycji umożliwia szybkie wdrożenie dla całego zespołu.</p>",
+      "image": "/assets/projects/restoquality/mockup-wizytowki-restoquality.webp",
+      "category": ["grafika"],
+      "deliverables": [
+        "Projekt koncepcyjny wizytówek dla handlowców",
+        "Dopasowanie kolorów i typografii do wizerunku marki",
+        "Szablon układu danych: imię i nazwisko + stanowisko + telefon + adres firmy"
+      ],
+      "task": "Stworzyć czytelny, powtarzalny szablon wizytówki dla zespołu sprzedaży - zgodny z identyfikacją marki.",
+      "outcomes": [
+        {
+          "value": "Spójność",
+          "label": "Zespół",
+          "note": "Jeden wzór wizytówki dla wszystkich handlowców w firmie."
+        },
+        {
+          "value": "Czytelność",
+          "label": "Układ",
+          "note": "Imię, stanowisko i telefon widoczne od razu — bez szukania."
+        },
+        {
+          "value": "Szybkość",
+          "label": "Wdrożenie",
+          "note": "Szablon umożliwia łatwe generowanie wizytówek dla nowych osób w zespole."
+        }
+      ],
+      "process_steps": ["Analiza identyfikacji i materiałów marki", "Warianty kompozycji i test czytelności", "Makiety 3D i finalne pliki poglądowe"],
+      "contentBlocks": [
+        {
+          "type": "imageText",
+          "src": "/assets/projects/restoquality/mockup-wizytowki-restoquality.webp",
+          "alt": "Szablon wizytówek dla handlowców w gastronomii - RestoQuality ",
+          "imageSide": "left",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Wizytówki dla restauracji i firm gastro</h2><p>Szablon dla działu sprzedaży. Styl techniczny, czytelny układ, dane w logicznej hierarchii. Kolory i krój spójne z identyfikacją RestoQuality.</p>"
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz wizytówek dla zespołu handlowego?",
+        "description": "Zaprojektujemy spójny szablon i przygotujemy pliki do druku dla całej firmy.",
+        "btnTwo": "Sprawdź ofertę projektu wizytówki",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "backgroundImage": "/assets/projects/restoquality/mockup-wizytowki-restoquality.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Wizytówki dla zespołu handlowego z branży gastronomicznej - RestoQuality",
+        "description": "Szablon wizytówek dla handlowców firmy RestoQuality z branży gastronomicznej. Sprawdź naszą realizację i zamów projekt wizytówek dla swojego zespołu.",
+        "canonical": "https://www.arteonagency.pl/realizacje/wizytowki-dla-gastronomii-restoquality"
+      }
+    },
+
+    {
+      "slug": "szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc",
+      "title": "Szablony postów dla gabinetu psychologicznego - MSC Psychotherapy UK",
+      "short": "Szablony postów i stories na Instagram dla gabinetu psychologicznego MSC Psychotherapy w UK. Stonowana paleta granatu i beżu, warianty pod wpisy blogowe, webinary i przypomnienia o terapii.",
+      "description": "<p>Projekt szablonów postów i stories na Instagram oraz Facebook dla <strong>gabinetu psychologicznego MSC Psychotherapy</strong> w UK. Celem było przygotowanie spójnego wizualnie zestawu grafik, które ułatwią regularną komunikację z pacjentami.</p><p>Stworzyliśmy serię szablonów pod <strong>nowe wpisy na blogu</strong>, przypomnienia o terapii online, webinary oraz tygodniowe podsumowania. Stonowana paleta granatu, beżu i złamanej bieli buduje wrażenie bezpieczeństwa i profesjonalizmu.</p>",
+      "image": "/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp",
+      "category": ["grafika"],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp",
+          "alt": "Szablony postów na Instagram dla gabinetu psychologicznego MSC Psychotherapy UK",
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "steps",
+          "title": "Proces realizacji",
+          "items": [
+            {
+              "icon": "file",
+              "title": "Analiza komunikacji",
+              "description": "Przegląd dotychczasowych postów i ustalenie głównych typów treści."
+            },
+            {
+              "icon": "palette",
+              "title": "Moodboard i paleta",
+              "description": "Przygotowanie palety kolorów spójnej ze stroną gabinetu."
+            },
+            {
+              "icon": "layers",
+              "title": "Projekt szablonów",
+              "description": "Układ pod posty i stories z miejscem na tekst i wezwanie do działania."
+            },
+            {
+              "icon": "check",
+              "title": "Testy i przekazanie",
+              "description": "Weryfikacja czytelności na telefonach i przekazanie plików."
+            }
+          ],
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": [
+            "Szablony postów kwadratowych (1080x1080)",
+            "Szablony stories (1080x1920)",
+            "Paleta kolorów spójna ze stroną gabinetu",
+            "Warianty: wpisy blogowe, webinary, przypomnienia, aktualności",
+            "Pliki do samodzielnej edycji"
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz szablonów postów do mediów społecznościowych?",
+        "description": "Zaprojektujemy spójny zestaw szablonów, który ułatwi regularną publikację i zbuduje profesjonalny wizerunek.",
+        "btnTwo": "Sprawdź ofertę szablonów",
+        "btnTwoLink": "/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe",
+        "backgroundImage": "/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Szablony postów do mediów społecznościowych dla psychologa - MSC Psychotherapy",
+        "description": "Szablony postów do mediów społecznościowych dla gabinetu psychologicznego w Anglii. Sprawdź naszą realizację postów do mediów społecznościowych i zamów posty dla swojej firmy.",
+        "canonical": "https://www.arteonagency.pl/realizacje/szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc"
+      }
+    },
+
+    {
+      "slug": "sklep-dla-firmy-odziezowej-trilllizo",
+      "title": "Sklep internetowy dla firmy z odzieżą dziecięcą - Trilllizo",
+      "short": "Sklep z wysokiej jakości odzieżą dla dzieci w dwóch wersjach językowych",
+      "description": "<p>Marka odzieżowa przyszła z jasną inspiracją. Zadanie: oddać wygląd <strong>1:1</strong> i uruchomić sprzedaż przez własną platformę. Zbudowaliśmy sklep na <strong>WordPress + WooCommerce + Elementor Pro</strong>, skonfigurowaliśmy płatności i <strong>InPost</strong>. Serwis działa w dwóch wersjach: <strong>.pl</strong> i <strong>.com</strong>. Na koniec stworzyliśmy dedykowane szkolenie PDF z obsługi i przekazaliśmy <strong>plan SEO</strong>.</p>",
+      "task": "Zbudowanie sklepu internetowego na WordPress z motywem 1:1 zgodnym z referencją, integracjami płatności i dostaw oraz dwiema wersjami językowymi.",
+      "deliverables": [
+        "Instalacja i konfiguracja środowiska",
+        "Motyw i komponenty pod wygląd 1:1",
+        "WooCommerce + płatności + InPost + newsletter",
+        "Dwie wersje językowe (.pl / .com)",
+        "Szkolenie + plan SEO"
+      ],
+      "goals": "<p>Klientka potrzebowała sklepu, który:</p><ul><li>Wygląda <strong>identycznie jak referencja wizualna</strong> dostarczona na początku projektu</li><li>Umożliwia <strong>prosty zakup</strong> z szybkim checkoutem i płatnościami</li><li>Działa w <strong>dwóch wersjach językowych</strong> (.pl i .com)</li><li>Jest <strong>gotowy na SEO</strong> i przyszłe skalowanie treści</li></ul>",
+      "process_steps": [
+        "Instalacja i konfiguracja środowiska WordPress z WooCommerce",
+        "Projekt motywu zgodnego z referencją wizualną klientki",
+        "Integracja płatności, InPost Paczkomatów i newslettera",
+        "Testy całej ścieżki zakupowej — od koszyka po potwierdzenie e-mail",
+        "Szkolenie z obsługi panelu, przekazanie planu SEO i publikacja sklepu"
+      ],
+      "image": "/assets/projects/trilllizo/moskup-strony-trilllizo.webp",
+      "link": "https://trilllizo.com",
+      "category": ["sklep"],
+      "cta": {
+        "title": "Potrzebujesz sklepu internetowego z płatnościami i dostawami?",
+        "description": "Wdrożymy sklep na WooCommerce z płatnościami, InPost i przygotowaniem pod SEO.",
+        "btnTwo": "Sprawdź ofertę sklepów",
+        "btnTwoLink": "/uslugi/sklepy-internetowe",
+        "backgroundImage": "/assets/projects/trilllizo/moskup-strony-trilllizo.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Sklep internetowy dla firmy z odzieżą dziecięcą  - Trilllizo",
+        "description": "Sklep internetowy dla marki z odzieżą dziecięcą Trilllizo wykonany za pomocą WordPress, Woocommerce i Elementor Pro w dwóch wersjach językowych. Sprawdź szczegóły naszej realizacji i zamów własną stronę.",
+        "canonical": "https://www.arteonagency.pl/realizacje/sklep-dla-firmy-odziezowej-trilllizo"
+      }
+    },
+
+    {
       "slug": "katalog-produktow-restoquality",
-      "title": "Katalog produktów - RestoQuality",
+      "title": "Katalog produktów dla sklepu gastronomicznego- RestoQuality",
       "short": "Projekt katalogu sprzedażowego dla gastronomii w formacie A5 dla firmy RestoQuality. Karty produktów z parametrami technicznymi, cenami i dedykowanymi ikonami pochodzenia.",
       "description": "<p>Projekt koncepcyjny <strong>katalogu sprzedażowego produktów</strong> dla gastronomii, przygotowany dla firmy RestoQuality, spójny z identyfikacją tej marki. Naszym celem było stworzenie katalogu ze sprzętami gastronomicznymi, pozwalającego na szybkie porównanie modeli i parametrów przez właścicieli restauracji oraz szefów kuchni.</p><p>W katalogu znajdują się piece do pizzy, urządzenia kuchenne oraz akcesoria. Każda karta produktu zawiera <em>opis, kluczowe parametry techniczne, cenę i kraj produkcji</em>. Dedykowane <strong>ikony pochodzenia</strong> ułatwiają skanowanie oferty.</p>",
-      "image": "/assets/projects/gazetka-mockup.webp",
+      "image": "/assets/projects/restoquality/mockup-gazetka-restoquality.webp",
       "category": ["grafika"],
-      "stack": ["Adobe InDesign", "Adobe Illustrator", "Mockup 3D"],
       "deliverables": [
         "Projekt koncepcyjny katalogu sprzedażowego (A5, poziom)",
         "Siatka kart produktu: opisy, parametry, cena, kraj produkcji",
@@ -1242,242 +1631,24 @@
         },
         {
           "type": "image",
-          "src": "/assets/projects/gazetka-mockup.webp",
+          "src": "/assets/projects/restoquality/mockup-gazetka-restoquality.webp",
           "alt": "Katalog produktów dla gastronomii - RestoQuality (makieta A5)",
           "caption": "Karta produktu: opis, parametry, cena, kraj produkcji",
           "ratio": "16/9"
         }
       ],
-      "faq": [
-        {
-          "question": "Ile kosztuje projekt katalogu produktów?",
-          "answer": "Cena projektu katalogu sprzedażowego zależy od liczby stron, złożoności grafik oraz potrzebnych do przygotowania materiałów. Przeciętny zakres cenowy to 50-200 zł brutto za stronę."
-        },
-        {
-          "question": "Jakie materiały są potrzebne do katalogu produktów?",
-          "answer": "Lista produktów, parametry techniczne, ceny, zdjęcia i logotyp. Jeśli potrzebujesz dedykowanych materiałów (np. ikon), możemy je dla Ciebie stworzyć."
-        },
-        {
-          "question": "Czy możecie zaprojektować ikony i piktogramy do katalogu sprzedażowego?",
-          "answer": "Tak. Możemy stworzyć autorskie ikony cech produktu oraz inne elementy potrzebne do prawidłowego pokazania produktów."
-        },
-        {
-          "question": "Ile trwa stworzenie projektu katalogu produktów?",
-          "answer": "Przygotowanie katalogu produktów najczęściej trwa 5-15 dni roboczych, zależnie od liczby stron, złożoności grafik oraz potrzebnych do przygotowania materiałów."
-        }
-      ],
       "cta": {
         "title": "Potrzebujesz katalogu produktów dla swojej firmy?",
         "description": "Zaprojektujemy czytelny katalog z kartami produktów, parametrami i cenami - gotowy do druku.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę projektu katalogu",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-katalogu",
-        "backgroundImage": "/assets/projects/gazetka-mockup.webp",
+        "backgroundImage": "/assets/projects/restoquality/mockup-gazetka-restoquality.webp",
         "overlay": "black"
       },
-
       "seo": {
-        "title": "Katalog produktów dla gastronomii RestoQuality - Arteon",
-        "description": "Katalog sprzedażowy produktów gastronomicznych dla firmy RestoQuality. Stworzyliśmy przejrzysty układ kart produktów z parametrami, cenami i ikonami pochodzenia. Zobacz realizację.",
+        "title": "Katalog produktów dla sklepu gastronomicznego - RestoQuality",
+        "description": "projekt katalogu sprzedażowego produktów gastronomicznych dla firmy RestoQuality. Sprawdź naszą realizację i ofertę katalogów i zamów katalog dla swojej firmy.",
         "canonical": "https://www.arteonagency.pl/realizacje/katalog-produktow-restoquality"
-      }
-    },
-
-    {
-      "slug": "wizytowka-dla-spa-talia",
-      "title": "Wizytówka dla SPA - TALIA",
-      "short": "Projekt wizytówki dla SPA TALIA inspirowanej naturą. Malarskie tło lasu na froncie, czytelne dane właścicielki na rewersie i paleta zieleni z ciepłym beżem.",
-      "description": "<p>Projekt koncepcyjny <strong>wizytówki dla SPA</strong> inspirowanej naturą. Na froncie umieściliśmy malarskie tło lasu w technice akrylowej, logotyp i typografię <em>Warbler Display</em>. Na rewersie znajdują się czytelne dane właścicielki i adres strony internetowej.</p><p>Paleta kolorów łączy głęboką zieleń (<strong>#182519</strong>) z ciepłym beżem (<strong>#e1d2c2</strong>) i bielą.</p>",
-      "image": "/assets/projects/wizytowka-talia.webp",
-      "category": ["grafika"],
-      "client": { "name": "TALIA", "sector": "Wellness & SPA" },
-      "stack": ["Adobe Illustrator", "Mockup 3D"],
-
-      "process_steps": [
-        "Wizytówka w układzie poziomym (front i tył)",
-        "Dobór palety kolorów i typografii (Warbler Display)",
-        "Projekt kompozycji z malarskim tłem lasu na froncie",
-        "Makieta 3D i finalna prezentacja"
-      ],
-      "contentBlocks": [
-        {
-          "type": "imageText",
-          "src": "/assets/projects/wizytowka-talia.webp",
-          "alt": "Wizytówka dla SPA - TALIA (front i tył)",
-          "imageSide": "left",
-          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Wizytówki dla SPA - spokój i klasa</h2><p>Malarstwo natury na froncie i elegancki układ danych na rewersie. Połączenie zieleni i beżu buduje wrażenie jakości i bliskości natury.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "featureList",
-          "title": "Zakres prac",
-          "items": [
-            "Wizytówka w układzie poziomym (front + rewers)",
-            "Malarskie tło lasu (akryl) na froncie",
-            "Typografia: Warbler Display",
-            "Paleta: zieleń #182519, beż #e1d2c2, biel",
-            "Plik do druku (CMYK, spady, 300 DPI)"
-          ]
-        }
-      ],
-      "faq": [
-        {
-          "question": "Ile kosztuje projekt wizytówki dla SPA?",
-          "answer": "Projekt wizytówki kosztuje od 150 do 250 zł brutto - zależnie od liczby wariantów i złożoności. W cenie: projekt frontu i rewersu oraz pliki do druku."
-        },
-        {
-          "question": "Jak długo trwa realizacja projektu?",
-          "answer": "Realizacja zajmuje od 1 do 3 dni roboczych po ustaleniu treści i układu. Czas zależy od liczby poprawek i wariantów."
-        },
-        {
-          "question": "Czy przygotowujecie pliki gotowe do druku?",
-          "answer": "Tak. Przekazujemy pliki produkcyjne zgodne z wytycznymi drukarni - ze spadami, w CMYK, 300 DPI. Jeśli drukarnia ma własne wymagania, dopasujemy eksport."
-        },
-        {
-          "question": "Czy wizytówka może mieć nietypowe wykończenie?",
-          "answer": "Tak. Możemy przygotować projekt pod druk na papierze fakturowanym, z lakierem wybiórczym, złoceniem lub tłoczeniem. Dobieramy wykończenie do charakteru marki."
-        }
-      ],
-      "cta": {
-        "title": "Potrzebujesz wizytówki dla swojego SPA lub gabinetu?",
-        "description": "Zaprojektujemy elegancką wizytówkę z przygotowaniem do druku - dopasowaną do charakteru marki.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę projektu wizytówki",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
-        "backgroundImage": "/assets/projects/wizytowka-talia.webp",
-        "overlay": "black"
-      },
-
-      "seo": {
-        "title": "Wizytówka dla SPA TALIA - projekt premium - Arteon",
-        "description": "Projekt wizytówki dla SPA TALIA inspirowanej naturą. Malarskie tło lasu na froncie, typografia Warbler Display i paleta zieleni z beżem. Zobacz realizację.",
-        "canonical": "https://www.arteonagency.pl/realizacje/wizytowka-dla-spa-talia"
-      }
-    },
-
-    {
-      "slug": "sklep-dla-firmy-odziezowej-trilllizo",
-      "title": "Sklep internetowy dla firmy odzieżowej - Trilllizo",
-      "short": "Sklep z wysokiej jakości odzieżą dla dzieci w dwóch wersjach językowych",
-      "description": "<p>Marka odzieżowa przyszła z jasną inspiracją. Zadanie: oddać wygląd <strong>1:1</strong> i uruchomić sprzedaż przez własną platformę. Zbudowaliśmy sklep na <strong>WordPress + WooCommerce + Elementor Pro</strong>, skonfigurowaliśmy płatności i <strong>InPost</strong>. Serwis działa w dwóch wersjach: <strong>.pl</strong> i <strong>.com</strong>. Na koniec stworzyliśmy dedykowane szkolenie PDF z obsługi i przekazaliśmy <strong>plan SEO</strong>.</p>",
-      "task": "Zbudowanie sklepu internetowego na WordPress z motywem 1:1 zgodnym z referencją, integracjami płatności i dostaw oraz dwiema wersjami językowymi.",
-      "deliverables": [
-        "Instalacja i konfiguracja środowiska",
-        "Motyw i komponenty pod wygląd 1:1",
-        "WooCommerce + płatności + InPost + newsletter",
-        "Dwie wersje językowe (.pl / .com)",
-        "Szkolenie + plan SEO"
-      ],
-      "goals": "<p>Klientka potrzebowała sklepu, który:</p><ul><li>Wygląda <strong>identycznie jak referencja wizualna</strong> dostarczona na początku projektu</li><li>Umożliwia <strong>prosty zakup</strong> z szybkim checkoutem i płatnościami</li><li>Działa w <strong>dwóch wersjach językowych</strong> (.pl i .com)</li><li>Jest <strong>gotowy na SEO</strong> i przyszłe skalowanie treści</li></ul>",
-      "process_steps": [
-        "Instalacja i konfiguracja środowiska WordPress z WooCommerce",
-        "Projekt motywu zgodnego z referencją wizualną klientki",
-        "Integracja płatności, InPost Paczkomatów i newslettera",
-        "Testy całej ścieżki zakupowej — od koszyka po potwierdzenie e-mail",
-        "Szkolenie z obsługi panelu, przekazanie planu SEO i publikacja sklepu"
-      ],
-      "image": "/assets/projects/arteon-baners-trilllizo.webp",
-      "link": "https://trilllizo.com",
-      "category": ["sklep"],
-
-      "faq": [
-        {
-          "question": "Czy wdrożycie płatności i dostawy (np. InPost)?",
-          "answer": "Tak. Konfigurujemy płatności (Przelewy24, PayU, Stripe) oraz metody dostawy (InPost Paczkomaty, kurier) i testujemy cały proces zakupowy - od koszyka przez checkout po potwierdzenia e-mail."
-        },
-        {
-          "question": "Czy sklep może działać w dwóch wersjach językowych (.pl i .com)?",
-          "answer": "Tak. Wdrażamy wersje językowe i dopasowujemy treści, walutę oraz podstawowe ustawienia SEO tak, aby sklep był czytelny dla odbiorców z różnych rynków."
-        },
-        {
-          "question": "Czy projekt obejmuje przygotowanie sklepu pod SEO?",
-          "answer": "Tak. Dbamy o fundamenty: struktura kategorii, optymalizacja zdjęć, podstawowe ustawienia techniczne oraz rekomendacje treści. W tym projekcie przekazaliśmy też plan SEO do dalszego rozwoju."
-        },
-        {
-          "question": "Czy po wdrożeniu dostanę instrukcję lub szkolenie z obsługi sklepu?",
-          "answer": "Tak. Przekazujemy instrukcję (np. PDF) i pokazujemy najważniejsze elementy w panelu: produkty, zamówienia, kupony, wysyłki i podstawowe ustawienia sklepu."
-        }
-      ],
-      "cta": {
-        "title": "Potrzebujesz sklepu internetowego z płatnościami i dostawami?",
-        "description": "Wdrożymy sklep na WooCommerce z płatnościami, InPost i przygotowaniem pod SEO.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę sklepów internetowych",
-        "btnTwoLink": "/uslugi/sklepy-internetowe",
-        "backgroundImage": "/assets/projects/arteon-baners-trilllizo.webp",
-        "overlay": "black"
-      },
-      "seo": {
-        "title": "Sklep internetowy dla firmy odzieżowej - Trilllizo - Arteon",
-        "description": "Sklep internetowy dla marki odzieżowej Trilllizo na WordPress i WooCommerce. Zbudowaliśmy motyw 1:1, zintegrowaliśmy płatności i InPost oraz uruchomiliśmy dwie wersje językowe. Zobacz realizację.",
-        "canonical": "https://www.arteonagency.pl/realizacje/sklep-dla-firmy-odziezowej-trilllizo"
-      }
-    },
-    {
-      "slug": "wizytowki-dla-gastronomii-restoquality",
-      "title": "Wizytówki dla gastronomii - RestoQuality",
-      "short": "Szablon wizytówek dla handlowców firmy RestoQuality z branży gastronomicznej. Powtarzalny układ danych spójny z identyfikacją marki, gotowy do szybkiego wdrożenia dla całego zespołu sprzedaży.",
-      "description": "<p><strong>Wizytówki dla gastronomii</strong> - projekt koncepcyjny przygotowany dla RestoQuality. Cel: ujednolicony szablon dla działu handlowego. Styl <em>techniczny i solidny</em>; kolory i typografia dopasowane do identyfikacji marki.</p><p>Układ obejmuje <strong>imię i nazwisko handlowca</strong>, <strong>stanowisko</strong>, <strong>telefon</strong>, <strong>adres firmy</strong> oraz znak marki. Szablon kompozycji umożliwia szybkie wdrożenie dla całego zespołu.</p>",
-      "image": "/assets/projects/resto-wiz.webp",
-      "category": ["grafika"],
-      "stack": ["Adobe Illustrator", "Mockup 3D"],
-      "deliverables": [
-        "Projekt koncepcyjny wizytówek dla handlowców",
-        "Dopasowanie kolorów i typografii do wizerunku marki",
-        "Szablon układu danych: imię i nazwisko + stanowisko + telefon + adres firmy"
-      ],
-      "task": "Stworzyć czytelny, powtarzalny szablon wizytówki dla zespołu sprzedaży - zgodny z identyfikacją marki.",
-      "outcomes": [
-        { "value": "Spójność", "label": "Zespół", "note": "Jeden wzór wizytówki dla wszystkich handlowców w firmie." },
-        { "value": "Czytelność", "label": "Układ", "note": "Imię, stanowisko i telefon widoczne od razu — bez szukania." },
-        { "value": "Szybkość", "label": "Wdrożenie", "note": "Szablon umożliwia łatwe generowanie wizytówek dla nowych osób w zespole." }
-      ],
-      "process_steps": ["Analiza identyfikacji i materiałów marki", "Warianty kompozycji i test czytelności", "Makiety 3D i finalne pliki poglądowe"],
-      "contentBlocks": [
-        {
-          "type": "imageText",
-          "src": "/assets/projects/resto-wiz.webp",
-          "alt": "Szablon wizytówek dla handlowców w gastronomii - RestoQuality ",
-          "imageSide": "left",
-          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Wizytówki dla restauracji i firm gastro</h2><p>Szablon dla działu sprzedaży. Styl techniczny, czytelny układ, dane w logicznej hierarchii. Kolory i krój spójne z identyfikacją RestoQuality.</p>"
-        }
-      ],
-      "faq": [
-        {
-          "question": "Ile kosztuje projekt szablonu wizytówek dla zespołu?",
-          "answer": "Projekt szablonu wizytówki kosztuje od 150 do 250 zł brutto. W cenie: projekt frontu i rewersu, pliki do druku oraz mockup do prezentacji. Kolejne wizytówki na bazie szablonu to koszt od 30 zł za sztukę."
-        },
-        {
-          "question": "Czy mogę samodzielnie generować wizytówki dla nowych pracowników?",
-          "answer": "Tak. Szablon jest przygotowany tak, aby łatwo podmienić imię, stanowisko i dane kontaktowe. Przekazujemy pliki źródłowe lub gotowy szablon w Canva — zależnie od preferencji."
-        },
-        {
-          "question": "Czy przygotowujecie pliki gotowe do druku?",
-          "answer": "Tak. Przekazujemy pliki produkcyjne zgodne z wytycznymi drukarni — ze spadami, w CMYK, 300 DPI."
-        },
-        {
-          "question": "Czy wizytówki będą spójne z katalogiem produktów?",
-          "answer": "Tak. Dopasowujemy kolory, typografię i styl do istniejących materiałów firmy. W przypadku RestoQuality wizytówki są spójne z katalogiem sprzedażowym."
-        }
-      ],
-      "cta": {
-        "title": "Potrzebujesz wizytówek dla zespołu handlowego?",
-        "description": "Zaprojektujemy spójny szablon i przygotujemy pliki do druku dla całej firmy.",
-        "btnOne": "Skontaktuj się z nami",
-        "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę projektu wizytówki",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
-        "backgroundImage": "/assets/projects/resto-wiz.webp",
-        "overlay": "black"
-      },
-
-      "seo": {
-        "title": "Wizytówki dla zespołu handlowego RestoQuality - Arteon",
-        "description": "Szablon wizytówek dla handlowców firmy RestoQuality z branży gastronomicznej. Powtarzalny układ spójny z identyfikacją marki, gotowy do wdrożenia dla całego zespołu. Zobacz realizację.",
-        "canonical": "https://www.arteonagency.pl/realizacje/wizytowki-dla-gastronomii-restoquality"
       }
     }
   ]

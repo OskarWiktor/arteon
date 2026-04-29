@@ -459,10 +459,10 @@ export default function EmailSignatureGenerator() {
           </div>
 
           <div
-            className={`rounded-2xl border border-neutral-200 p-4 ${previewBg === 'dark' ? 'bg-neutral-800' : previewBg === 'checker' ? 'bg-white bg-[image:linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%),linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%)] bg-[length:20px_20px] bg-[position:0_0,10px_10px]' : 'bg-neutral-50'}`}
+            className={`rounded-lg border border-neutral-200 p-4 ${previewBg === 'dark' ? 'bg-neutral-800' : previewBg === 'checker' ? 'bg-white bg-[image:linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%),linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%)] bg-[length:20px_20px] bg-[position:0_0,10px_10px]' : 'bg-neutral-50'}`}
           >
             <div className="mx-auto max-w-full overflow-x-auto">
-              <div className="inline-block rounded-xl border border-neutral-200 bg-white px-4 py-4 text-sm!">
+              <div className="inline-block rounded-lg border border-neutral-200 bg-white px-4 py-4 text-sm!">
                 <div dangerouslySetInnerHTML={{ __html: signatureHtml }} />
               </div>
             </div>
@@ -506,14 +506,14 @@ export default function EmailSignatureGenerator() {
               role="dialog"
               aria-modal="true"
             >
-              <div className="w-full max-w-2xl overflow-hidden rounded-2xl bg-white p-6 shadow-xl ring-1 ring-black/5">
+              <div className="w-full max-w-2xl overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5">
                 <div className="mb-4 flex items-center justify-between">
                   <h3 className="h6">{t.preview.viewSourceTitle}</h3>
                   <button type="button" onClick={() => setShowSourceModal(false)} className="rounded-md p-1.5 hover:bg-neutral-100">
                     <RiCloseLine className="h-5 w-5" />
                   </button>
                 </div>
-                <pre className="max-h-[60vh] overflow-auto rounded-lg bg-neutral-50 p-4 text-xs! leading-relaxed break-all whitespace-pre-wrap">{signatureHtml}</pre>
+                <pre className="max-h-[60vh] overflow-auto rounded-md bg-neutral-50 p-4 text-xs! leading-relaxed break-all whitespace-pre-wrap">{signatureHtml}</pre>
                 <div className="mt-4 flex gap-2">
                   <Button
                     type="button"

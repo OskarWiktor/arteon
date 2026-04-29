@@ -55,7 +55,7 @@ export default function Email() {
           <Container className="mx-auto max-w-xl p-5">
             <Heading className="text-brand mb-4 text-2xl font-bold">Welcome!</Heading>
             <Text className="mb-4 text-base text-gray-700">Your content here.</Text>
-            <Button href="https://example.com" className="bg-brand block rounded-lg px-6 py-3 text-center text-white">
+            <Button href="https://example.com" className="bg-brand block rounded-md px-6 py-3 text-center text-white">
               Get Started
             </Button>
           </Container>

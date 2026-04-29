@@ -44,7 +44,7 @@ export const metadata = {
     description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
     url: 'https://www.arteonagency.pl/uslugi/blogi-internetowe',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-pilkanozna-pl.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/jstax/moskup-strony-jstax.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -73,7 +73,7 @@ export default function OfferBlogPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/arteon-baners-pilkanozna-pl.webp"
+        backgroundImage="/assets/projects/jstax/moskup-strony-jstax.webp"
         overlay="black"
       />
 
@@ -293,8 +293,8 @@ export default function OfferBlogPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji bloga internetowego"
           description="Napisz o czym ma być Twój blog, czy potrzebujesz pomocy z tworzeniem treści oraz czy posiadasz materiały graficzne (logo oraz zdjęcia) i otrzymaj darmową wycenę realizacji."
-          imageSrc="/assets/projects/arteon-baners-pilkanozna-pl.webp"
-          imageAlt="Realizacja bloga internetowego - PilkaNozna.pl mockup"
+          imageSrc="/assets/projects/jstax/moskup-strony-jstax.webp"
+          imageAlt="Realizacja strony z blogiem dla biura rachunkowego JSTax"
           defaultSubject="Blog"
         />
 
@@ -339,16 +339,16 @@ export default function OfferBlogPage() {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'medium',
-              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
@@ -363,7 +363,7 @@ export default function OfferBlogPage() {
               title: 'Projekt logo',
               description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              backgroundImage: '/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-logo',
             },
@@ -382,7 +382,7 @@ export default function OfferBlogPage() {
         description="Wzmacniamy Twój autorytet w branży i wspieramy SEO prostymi narzędziami"
         btnOne="Wyceń projekt"
         btnOneLink="#kontakt"
-        backgroundImage="/assets/projects/arteon-baners-pilkanozna-pl.webp"
+        backgroundImage="/assets/projects/jstax/moskup-strony-jstax.webp"
         overlay="black"
       />
 

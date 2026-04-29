@@ -73,7 +73,7 @@ export default function Navigation() {
             <button
               type="button"
               onClick={() => startTransition(() => setIsSearchOpen(true))}
-              className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-md transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               aria-label={`${dict.search.ariaSearch} (Ctrl+K)`}
             >
               <RiSearchLine className="h-5 w-5" aria-hidden="true" />
@@ -91,7 +91,7 @@ export default function Navigation() {
             <button
               type="button"
               onClick={() => startTransition(() => setIsSearchOpen(true))}
-              className="text-primary hover:bg-primary-light hover:text-primary focus-visible:ring-primary flex h-10 w-10 items-center justify-center rounded-lg transition-colors focus:outline-none focus-visible:ring-2"
+              className="text-primary hover:bg-primary-light hover:text-primary focus-visible:ring-primary flex h-10 w-10 items-center justify-center rounded-md transition-colors focus:outline-none focus-visible:ring-2"
               aria-label={dict.search.ariaSearch}
             >
               <RiSearchLine className="h-6 w-6" aria-hidden="true" />

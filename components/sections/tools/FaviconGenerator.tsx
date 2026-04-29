@@ -392,7 +392,7 @@ export default function FaviconGenerator() {
                     <button
                       type="button"
                       onClick={() => window.open(item.url, '_blank', 'noopener,noreferrer')}
-                      className="hidden h-10 w-10 overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 md:block"
+                      className="hidden h-10 w-10 overflow-hidden rounded-md border border-neutral-200 bg-neutral-50 md:block"
                       title={t.clickToPreview}
                     >
                       {/* eslint-disable-next-line @next/next/no-img-element */}

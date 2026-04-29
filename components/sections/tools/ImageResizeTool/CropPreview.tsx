@@ -57,7 +57,7 @@ export default function CropPreview({
         )}
       </div>
 
-      <div ref={previewRef} className="bg-primary relative w-full overflow-hidden rounded-2xl border border-neutral-300" style={{ paddingBottom: `${previewPadding}%` }}>
+      <div ref={previewRef} className="bg-primary relative w-full overflow-hidden rounded-lg border border-neutral-300" style={{ paddingBottom: `${previewPadding}%` }}>
         <div className="absolute inset-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={imageUrl} alt={fileName || t.previewAlt} className="h-full w-full object-contain" draggable={false} />

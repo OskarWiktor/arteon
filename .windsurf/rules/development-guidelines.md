@@ -126,7 +126,7 @@ export default function Button({
   return (
     <button
       className={cn(
-        'inline-flex items-center justify-center rounded-lg font-medium transition-colors',
+        'inline-flex items-center justify-center rounded-md font-medium transition-colors',
         {
           'bg-blue-600 text-white hover:bg-blue-700': variant === 'primary',
           'bg-gray-600 text-white hover:bg-gray-700': variant === 'secondary',
@@ -675,7 +675,7 @@ export default class ErrorBoundary extends Component<
   render() {
     if (this.state.hasError) {
       return (
-        <div className="p-4 border border-red-200 rounded-lg bg-red-50">
+        <div className="p-4 border border-red-200 rounded-md bg-red-50">
           <h2 className="text-red-800 font-bold">Wystąpił błąd</h2>
           <p className="text-red-600">{this.state.error?.message}</p>
           <button

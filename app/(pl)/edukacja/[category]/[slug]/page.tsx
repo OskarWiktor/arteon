@@ -76,9 +76,9 @@ function jsonLd(article: Article) {
 }
 
 function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1' | 'auto'; children: React.ReactNode }) {
-  if (ratio === 'auto') return <div className="relative overflow-hidden rounded-2xl border border-black/10">{children}</div>;
+  if (ratio === 'auto') return <div className="relative overflow-hidden rounded-lg border border-black/10">{children}</div>;
   const map: Record<string, string> = { '16/9': 'aspect-square md:aspect-[16/9]', '4/3': 'aspect-[4/3]', '1/1': 'aspect-square' };
-  return <div className={`relative overflow-hidden rounded-2xl border border-black/10 ${map[ratio] || ''}`}>{children}</div>;
+  return <div className={`relative overflow-hidden rounded-lg border border-black/10 ${map[ratio] || ''}`}>{children}</div>;
 }
 
 type FlowBlock = Extract<Article['contentBlocks'][number], { type: 'richtext' | 'code' | 'table' | 'quote' | 'colorPalette' }>;
@@ -119,7 +119,7 @@ function FlowGroup({ items }: { items: FlowBlock[] }) {
         if (b.type === 'quote') {
           return (
             <div key={`f-q-${i}`} className="not-prose my-6">
-              <figure className="rounded-2xl bg-white p-6 shadow-md">
+              <figure className="rounded-lg bg-white p-6 shadow-md">
                 <blockquote>
                   <p className="text-lg leading-relaxed">“{b.text}”</p>
                 </blockquote>
@@ -197,7 +197,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
             <div key={`grp-img-${i}`}>
               <figure className={!hasCaption ? 'mb-6 md:mb-12 lg:mb-16' : undefined}>
                 {isAuto ? (
-                  <div className="overflow-hidden rounded-2xl border border-black/10">
+                  <div className="overflow-hidden rounded-lg border border-black/10">
                     <Image src={b.src} alt={b.alt} width={b.width ?? 2000} height={b.height ?? 1200} sizes="100vw" style={{ width: '100%', height: 'auto' }} priority={b.priority ?? false} />
                   </div>
                 ) : (
@@ -214,7 +214,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
         if (b.type === 'imageText') {
           const Img =
             b.ratio === 'auto' ? (
-              <div className="overflow-hidden rounded-2xl border border-black/10">
+              <div className="overflow-hidden rounded-lg border border-black/10">
                 <Image
                   src={b.src}
                   alt={b.alt}

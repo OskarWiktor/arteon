@@ -228,14 +228,14 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
 
           <div
             ref={panelRef}
-            className="fixed inset-x-4 top-1/2 z-50 max-h-[80vh] -translate-y-1/2 overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-2xl md:absolute md:inset-x-auto md:top-full md:left-1/2 md:mt-2 md:max-h-[420px] md:w-[520px] md:-translate-x-1/2 md:-translate-y-0 md:rounded-xl md:shadow-xl"
+            className="fixed inset-x-4 top-1/2 z-50 max-h-[80vh] -translate-y-1/2 overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-2xl md:absolute md:inset-x-auto md:top-full md:left-1/2 md:mt-2 md:max-h-[420px] md:w-[520px] md:-translate-x-1/2 md:-translate-y-0 md:rounded-lg md:shadow-lg"
             role="dialog"
             aria-modal="true"
           >
             {/* Header (mobile) */}
             <div className="flex items-center justify-between border-b border-neutral-100 px-4 py-3 md:hidden">
               <span className="text-sm font-semibold">{PICKER_HEADER[side][locale] ?? PICKER_HEADER[side].en}</span>
-              <button type="button" onClick={() => setOpen(false)} className="rounded-lg p-1 hover:bg-neutral-100">
+              <button type="button" onClick={() => setOpen(false)} className="rounded-md p-1 hover:bg-neutral-100">
                 <RiCloseLine className="h-5 w-5" />
               </button>
             </div>
@@ -248,7 +248,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
                     key={cat.key}
                     type="button"
                     onClick={() => setActiveCategory(cat.key)}
-                    className={`rounded-lg px-3 py-2.5 text-left text-xs font-medium transition-colors ${activeCategory === cat.key ? 'bg-primary/10 text-primary' : 'text-mid hover:bg-neutral-100'}`}
+                    className={`rounded-md px-3 py-2.5 text-left text-xs font-medium transition-colors ${activeCategory === cat.key ? 'bg-primary/10 text-primary' : 'text-mid hover:bg-neutral-100'}`}
                   >
                     {getCategoryLabel(cat.key, locale)}
                   </button>
@@ -262,7 +262,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
                     {getUnitOptions(side, locale, unitToolKey).map((item) => {
                       if (currentUnitId === item.id) {
                         return (
-                          <span key={item.id} className="bg-primary flex items-center justify-center rounded-lg px-2 py-2.5 text-center text-xs font-semibold text-white" aria-current="true">
+                          <span key={item.id} className="bg-primary flex items-center justify-center rounded-md px-2 py-2.5 text-center text-xs font-semibold text-white" aria-current="true">
                             {item.label}
                           </span>
                         );
@@ -271,7 +271,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
                         return (
                           <span
                             key={item.id}
-                            className="flex cursor-not-allowed items-center justify-center rounded-lg border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300"
+                            className="flex cursor-not-allowed items-center justify-center rounded-md border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300"
                             aria-disabled="true"
                           >
                             {item.label}
@@ -284,7 +284,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
                           href={item.href}
                           scroll={false}
                           onClick={(e) => handleLinkClick(e, item.href)}
-                          className="border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-lg border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors"
+                          className="border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors"
                           prefetch={false}
                         >
                           {item.label}
@@ -313,7 +313,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
 
                       if (isCurrent) {
                         return (
-                          <span key={fmt} className="bg-primary flex items-center justify-center rounded-lg px-2 py-2.5 text-center text-xs font-semibold text-white" aria-current="true">
+                          <span key={fmt} className="bg-primary flex items-center justify-center rounded-md px-2 py-2.5 text-center text-xs font-semibold text-white" aria-current="true">
                             {FORMAT_DISPLAY_LABELS[fmt]}
                           </span>
                         );
@@ -323,7 +323,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
                         return (
                           <span
                             key={fmt}
-                            className="flex cursor-not-allowed items-center justify-center rounded-lg border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300"
+                            className="flex cursor-not-allowed items-center justify-center rounded-md border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300"
                             aria-disabled="true"
                           >
                             {FORMAT_DISPLAY_LABELS[fmt]}
@@ -337,7 +337,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
                           href={href!}
                           scroll={false}
                           onClick={(e) => handleLinkClick(e, href)}
-                          className="border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-lg border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors"
+                          className="border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors"
                           prefetch={false}
                         >
                           {FORMAT_DISPLAY_LABELS[fmt]}

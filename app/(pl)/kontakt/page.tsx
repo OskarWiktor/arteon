@@ -20,7 +20,7 @@ export const metadata = {
     // TODO: Add unique OpenGraph image for contact page: /assets/og/kontakt.webp (1200x630px)
     images: [
       {
-        url: toAbsoluteUrl('/assets/bg/abstract-bg10.webp'),
+        url: toAbsoluteUrl('/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp'),
         width: 1200,
         height: 630,
         alt: 'Kontakt - Arteon',
@@ -87,7 +87,7 @@ export default function ContactPage() {
         title="Porozmawiajmy o Twojej firmie"
         variant="center"
         description="Wypełnij formularz i uzyskaj darmową wycenę dla swojej firmy"
-        backgroundImage="/assets/bg/abstract-bg10.webp"
+        backgroundImage="/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp"
         overlay="black"
       />
 

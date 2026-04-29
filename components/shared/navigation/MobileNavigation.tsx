@@ -219,7 +219,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
         role="dialog"
         aria-modal="true"
         aria-label={navUi.mobileMenu}
-        className="z[1000] animate-dropdown-in fixed top-0 right-0 h-[100dvh] w-[88vw] max-w-[300px] bg-white shadow-xl"
+        className="z[1000] animate-dropdown-in fixed top-0 right-0 h-[100dvh] w-[88vw] max-w-[300px] bg-white shadow-lg"
       >
         <div className="flex items-center justify-end px-4 pt-3">
           <button onClick={() => setIsOpen(false)} className="ring-primary rounded px-3 pt-1 ring-offset-2 outline-none focus-visible:ring-2">
@@ -240,7 +240,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                 const expanded = openKeys[sec.key];
                 return (
                   <div key={sec.key} className="mb-1">
-                    <div className="flex items-center justify-between rounded-xl py-1 transition-colors hover:bg-neutral-100">
+                    <div className="flex items-center justify-between rounded-lg py-1 transition-colors hover:bg-neutral-100">
                       {sec.hubHref ? (
                         <Link
                           href={sec.hubHref}
@@ -259,7 +259,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         aria-expanded={expanded}
                         aria-controls={`sec-${sec.key}`}
                         onClick={() => toggleKey(sec.key)}
-                        className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                        className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-md transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
                       >
                         <span className="inline-flex transition-transform duration-200" style={{ transform: expanded ? 'rotate(180deg)' : undefined }}>
                           <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
@@ -283,7 +283,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                   href={it.href}
                                   prefetch={false}
                                   onClick={() => setIsOpen(false)}
-                                  className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
+                                  className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-lg px-2 py-[7px] text-[15px] transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
                                 >
                                   <IconText icon={it.icon ? <span className="text-primary">{it.icon}</span> : undefined} gap="3" className="min-w-0">
                                     <span className="text-dark text-[15px]">{it.title}</span>
@@ -312,7 +312,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname === realizacjeNav.href ? 'page' : pathname.startsWith(realizacjeNav.href) ? 'page' : undefined}
-                  className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                  className={`ring-primary block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
                     pathname.startsWith(realizacjeNav.href) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
                   }`}
                 >
@@ -321,7 +321,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               ) : null}
 
               {aboutNav ? (
-                <div className="rounded-xl py-1 transition-colors hover:bg-neutral-100">
+                <div className="rounded-lg py-1 transition-colors hover:bg-neutral-100">
                   <div className="flex items-center justify-between">
                     <Link
                       href={aboutNav.href}
@@ -340,7 +340,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       aria-expanded={isAboutOpen}
                       aria-controls="about-submenu-mobile"
                       onClick={toggleAbout}
-                      className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                      className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-md transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
                     >
                       <span className="inline-flex transition-transform duration-200" style={{ transform: isAboutOpen ? 'rotate(180deg)' : undefined }}>
                         <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
@@ -360,7 +360,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                 prefetch={false}
                                 onClick={() => setIsOpen(false)}
                                 aria-current={isSubActive ? 'page' : undefined}
-                                className={`ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                                className={`ring-primary flex items-center gap-3 rounded-lg px-2 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
                                   isSubActive ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
                                 }`}
                               >
@@ -383,7 +383,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(edukacjaNav.href) ? 'page' : undefined}
-                  className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                  className={`ring-primary block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
                     pathname.startsWith(edukacjaNav.href) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
                   }`}
                 >
@@ -392,7 +392,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               ) : null}
 
               {narzedziaNav && TOOLS_SECTIONS_MOBILE.length > 0 ? (
-                <div className="rounded-xl py-1 transition-colors hover:bg-neutral-100">
+                <div className="rounded-lg py-1 transition-colors hover:bg-neutral-100">
                   <div className="flex items-center justify-between">
                     <Link
                       href={narzedziaNav.href}
@@ -411,7 +411,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       aria-expanded={isToolsOpen}
                       aria-controls="tools-submenu-mobile"
                       onClick={toggleTools}
-                      className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                      className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-md transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
                     >
                       <span className="inline-flex transition-transform duration-200" style={{ transform: isToolsOpen ? 'rotate(180deg)' : undefined }}>
                         <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
@@ -431,7 +431,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                 prefetch={false}
                                 onClick={() => setIsOpen(false)}
                                 aria-current={isToolActive ? 'page' : undefined}
-                                className={`ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                                className={`ring-primary flex items-center gap-3 rounded-lg px-2 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
                                   isToolActive ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
                                 }`}
                               >
@@ -454,7 +454,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(contactHref) ? 'page' : undefined}
-                  className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                  className={`ring-primary block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
                     pathname.startsWith(contactHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
                   }`}
                 >
@@ -470,7 +470,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                 prefetch={false}
                 onClick={() => setIsOpen(false)}
                 aria-current={pathname === localeConfig.toolsIndexHref ? 'page' : undefined}
-                className={`ring-primary mb-2 block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                className={`ring-primary mb-2 block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
                   pathname === localeConfig.toolsIndexHref ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
                 }`}
               >
@@ -482,7 +482,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   const expanded = !!openToolSections[sec.key];
                   return (
                     <div key={sec.key} className="mb-1">
-                      <div className="flex items-center justify-between rounded-xl py-1 transition-colors hover:bg-neutral-100">
+                      <div className="flex items-center justify-between rounded-lg py-1 transition-colors hover:bg-neutral-100">
                         <div className="text-dark px-3 py-1 text-[15px]">{sec.title}</div>
 
                         <button
@@ -490,7 +490,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                           aria-expanded={expanded}
                           aria-controls={`sec-${locale}-${sec.key}`}
                           onClick={() => toggleToolSection(sec.key)}
-                          className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                          className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-md transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
                         >
                           <span className="inline-flex transition-transform duration-200" style={{ transform: expanded ? 'rotate(180deg)' : undefined }}>
                             <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
@@ -514,7 +514,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                     href={it.href}
                                     prefetch={false}
                                     onClick={() => setIsOpen(false)}
-                                    className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
+                                    className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-lg px-2 py-[7px] text-[15px] transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
                                   >
                                     <IconText icon={it.icon ? <span className="text-primary">{it.icon}</span> : undefined} gap="3" className="min-w-0">
                                       <span className="text-dark text-[15px]">{it.title}</span>
@@ -537,7 +537,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(localeConfig.aboutHref) ? 'page' : undefined}
-                  className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                  className={`ring-primary block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
                     pathname.startsWith(localeConfig.aboutHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
                   }`}
                 >
@@ -551,7 +551,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(localeConfig.contactHref) ? 'page' : undefined}
-                  className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                  className={`ring-primary block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
                     pathname.startsWith(localeConfig.contactHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
                   }`}
                 >
@@ -570,7 +570,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   href={href}
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  className="text-dark focus-visible:ring-primary block rounded-xl px-3 py-[7px] text-[15px] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
+                  className="text-dark focus-visible:ring-primary block rounded-lg px-3 py-[7px] text-[15px] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
                 >
                   {label}
                 </Link>
@@ -586,7 +586,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   href={contactHref}
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  className="bg-primary focus-visible:ring-primary rounded-2xl px-3 py-2 text-sm font-semibold text-white transition-colors outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2"
+                  className="bg-primary focus-visible:ring-primary rounded-lg px-3 py-2 text-sm font-semibold text-white transition-colors outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2"
                 >
                   {mobileNavUi.contact}
                 </Link>

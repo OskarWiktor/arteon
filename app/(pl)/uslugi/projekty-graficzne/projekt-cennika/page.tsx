@@ -31,7 +31,7 @@ export const metadata = {
     description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/cennik-mockup.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -65,7 +65,7 @@ export default function OfferDesignPriceListPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/cennik-mockup.webp"
+        backgroundImage="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp"
         overlay="black"
       />
 
@@ -219,8 +219,8 @@ export default function OfferDesignPriceListPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji cennika"
           description="Napisz jak wygląda oferta, ile pozycji ma zawierać cennik oraz czy posiadasz logo i zdjęcia - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/cennik-mockup.webp"
-          imageAlt="Realizacja projektu cennika firmowego"
+          imageSrc="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp"
+          imageAlt="Papier firmowy dla kancelarii LUX NOVA - przykład materiału drukowanego"
           defaultSubject="Projekt cennika"
         />
 
@@ -263,23 +263,23 @@ export default function OfferDesignPriceListPage() {
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
-              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              backgroundImage: '/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
@@ -287,7 +287,7 @@ export default function OfferDesignPriceListPage() {
               title: 'Projekt katalogu',
               description: 'Rozbudowana prezentacja oferty',
               size: 'small',
-              backgroundImage: '/assets/projects/gazetka-mockup.webp',
+              backgroundImage: '/assets/projects/restoquality/mockup-gazetka-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-katalogu',
             },
@@ -308,7 +308,7 @@ export default function OfferDesignPriceListPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/cennik-mockup.webp"
+        backgroundImage="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp"
         overlay="black"
       />
 

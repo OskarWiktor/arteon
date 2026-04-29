@@ -363,7 +363,7 @@ export default function Newsletter({ articles, unsubscribeUrl }: NewsletterProps
             {/* Featured Article */}
             {articles[0] && (
               <Section className="px-5">
-                <Img src={articles[0].image} alt={articles[0].title} width="600" className="mb-4 w-full rounded-lg" />
+                <Img src={articles[0].image} alt={articles[0].title} width="600" className="mb-4 w-full rounded-md" />
                 <Heading as="h2" className="my-4 text-2xl font-bold text-gray-900">
                   {articles[0].title}
                 </Heading>

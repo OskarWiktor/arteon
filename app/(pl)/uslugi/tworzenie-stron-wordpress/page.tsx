@@ -43,7 +43,7 @@ export const metadata = {
     description: 'Tworzymy strony internetowe WordPress dla firm. Projekt w Figma do akceptacji, Elementor Pro w cenie, gwarancja wydajności 90+/100 dla telefonów. Sprawdź cennik.',
     url: 'https://www.arteonagency.pl/uslugi/tworzenie-stron-wordpress',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/msc/moskup-strony-msc-psychotherapy.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -405,7 +405,7 @@ export default function TworzenieStronWordPressPage() {
 
         <SectionBasic
           variant="right"
-          imageSrc="/assets/projects/arteon-baners-msc.webp"
+          imageSrc="/assets/projects/msc/moskup-strony-msc-psychotherapy.webp"
           imageAlt="Realizacja strony internetowej WordPress - MSC mockup"
           subtitle="Jak wygląda współpraca?"
           title="Faktura po realizacji - bez zaliczek i ukrytych kosztów"
@@ -486,23 +486,23 @@ export default function TworzenieStronWordPressPage() {
               title: 'Sklepy internetowe',
               description: 'Własny sklep online bez pośredników',
               size: 'large',
-              backgroundImage: '/assets/projects/arteon-baners-trilllizo.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google',
               size: 'medium',
-              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
               title: 'Projekt logo',
               description: 'Rozpoznawalny znak firmowy',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              backgroundImage: '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-logo',
             },
@@ -510,7 +510,7 @@ export default function TworzenieStronWordPressPage() {
               title: 'Tworzenie treści',
               description: 'Teksty na stronę i blog',
               size: 'small',
-              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
+              backgroundImage: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-tresci',
             },

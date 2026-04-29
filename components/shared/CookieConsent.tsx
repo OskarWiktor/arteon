@@ -124,7 +124,7 @@ export default function CookieConsent({ translations: t }: { translations: Cooki
 
   return (
     <div ref={dialogRef} role="dialog" aria-modal="true" aria-labelledby={titleId} aria-describedby={descId} className="fixed inset-x-0 bottom-0 z-[70] bg-transparent">
-      <div className="text-dark mx-auto mb-4 w-[min(92vw,1280px)] rounded bg-white p-5 shadow-xl ring-1 ring-black/5">
+      <div className="text-dark mx-auto mb-4 w-[min(92vw,1280px)] rounded bg-white p-5 shadow-lg ring-1 ring-black/5">
         {!panel ? (
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="space-y-1">
@@ -144,7 +144,7 @@ export default function CookieConsent({ translations: t }: { translations: Cooki
               <button
                 ref={firstNativeBtnRef}
                 onClick={() => saveAndClose({ analytics: true, ads: true })}
-                className="bg-primary focus-visible:ring-primary inline-flex w-fit cursor-pointer items-center rounded-xl px-3 py-1.5 text-sm font-medium text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 md:px-4 md:py-2 md:text-base"
+                className="bg-primary focus-visible:ring-primary inline-flex w-fit cursor-pointer items-center rounded-lg px-3 py-1.5 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 md:px-4 md:py-2 md:text-base"
               >
                 {t.accept}
               </button>
@@ -153,7 +153,7 @@ export default function CookieConsent({ translations: t }: { translations: Cooki
                   setPanel(true);
                   focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
                 }}
-                className="text-dark focus-visible:ring-primary inline-flex w-fit items-center rounded-xl border border-neutral-200 bg-white px-3 py-1 text-sm font-medium transition hover:bg-neutral-50 focus:outline-none focus-visible:ring-2"
+                className="text-dark focus-visible:ring-primary inline-flex w-fit items-center rounded-lg border border-neutral-200 bg-white px-3 py-1 text-sm font-medium transition hover:bg-neutral-50 focus:outline-none focus-visible:ring-2"
               >
                 {t.settings}
               </button>
@@ -206,7 +206,7 @@ export default function CookieConsent({ translations: t }: { translations: Cooki
               <div className="flex gap-2">
                 <button
                   onClick={() => saveAndClose({ analytics: false, ads: false })}
-                  className="text-dark border-primary-light focus-visible:ring-primary inline-flex w-fit items-center rounded-2xl border bg-white px-3 py-1 text-sm font-medium shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2"
+                  className="text-dark border-primary-light focus-visible:ring-primary inline-flex w-fit items-center rounded-lg border bg-white px-3 py-1 text-sm font-medium shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2"
                 >
                   {t.reject}
                 </button>

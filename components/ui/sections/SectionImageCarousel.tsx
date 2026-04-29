@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import { RiArrowLeftLine, RiArrowRightLine } from 'react-icons/ri';
+import { RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '../Wrapper';
 
 interface CarouselSlide {
@@ -44,12 +44,12 @@ export default function SectionImageCarousel({ title, slides, overlay = false, v
     <section data-section="image-carousel" aria-labelledby={title ? 'carousel-title' : undefined}>
       <Wrapper>
         {title && (
-          <h2 id="carousel-title" className="h3 mb-4 md:mb-6 lg:mb-8">
+          <h2 id="carousel-title" className="h3 mb-4 lg:mb-6">
             {title}
           </h2>
         )}
 
-        <div className={`relative mx-auto overflow-hidden rounded-2xl ${variant === 'fullWidth' ? 'max-w-full' : 'max-w-4xl'}`}>
+        <div className={`relative mx-auto overflow-hidden rounded-lg ${variant === 'fullWidth' ? 'max-w-full' : 'max-w-4xl'}`}>
           <div className={`relative ${aspectClass}`}>
             {slides.map((slide, index) => (
               <div key={index} className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}>
@@ -82,7 +82,7 @@ export default function SectionImageCarousel({ title, slides, overlay = false, v
                 className="absolute top-1/2 right-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow-lg transition hover:bg-white"
                 aria-label="Następny slajd"
               >
-                <RiArrowRightLine className="text-primary h-5 w-5" />
+                <RiArrowRightSLine className="text-primary h-5 w-5" />
               </button>
 
               <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">

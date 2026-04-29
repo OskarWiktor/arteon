@@ -11,7 +11,7 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
     <Link
       href={`/realizacje/${project.slug}`}
       prefetch={false}
-      className="group focus-visible:ring-primary block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+      className="group focus-visible:ring-primary block h-full rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
     >
       <article className="surface-card-lift flex h-full flex-col overflow-hidden">
         <div className={`relative ${sizeClass} w-full`}>
@@ -24,7 +24,7 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
 
           <div className="mt-auto">
             <div className="mt-4 mb-2 h-px w-full bg-neutral-200" aria-hidden="true" />
-            <span className="focus-visible:ring-primary inline-flex w-fit cursor-pointer items-center rounded-xl border-0 text-sm font-medium shadow-none transition hover:translate-y-0 hover:shadow-none">
+            <span className="focus-visible:ring-primary inline-flex w-fit cursor-pointer items-center rounded-lg border-0 text-sm font-medium shadow-none transition hover:translate-y-0 hover:shadow-none">
               <span>Szczegóły projektu</span>
               <span className="ml-1 flex h-5 w-5 items-center justify-center" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">

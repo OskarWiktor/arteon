@@ -39,7 +39,7 @@ export default function SectionNotificationBanner({ icon, text, highlight, varia
   const styles = variantClasses[variant];
 
   return (
-    <section data-section="notification-banner" className={`rounded-2xl p-4 ${styles.bg}`}>
+    <section data-section="notification-banner" className={`rounded-lg p-4 ${styles.bg}`}>
       <Wrapper>
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">

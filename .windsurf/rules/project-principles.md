@@ -366,7 +366,7 @@ docs: update API documentation
 // Komponent błędu dla sekcji
 export default function ErrorBoundary({ children }: { children: React.ReactNode }) {
   return (
-    <div className="p-4 border border-red-200 rounded-lg bg-red-50">
+    <div className="p-4 border border-red-200 rounded-md bg-red-50">
       <h3>Something went wrong</h3>
       <p>Please try again or contact support.</p>
     </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import { RiCloseLine, RiArrowLeftLine, RiArrowRightLine } from 'react-icons/ri';
+import { RiCloseLine, RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '../Wrapper';
 
 interface GalleryImage {
@@ -34,7 +34,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
     <section data-section="image-gallery" aria-labelledby={title ? 'gallery-title' : undefined}>
       <Wrapper>
         {title && (
-          <h2 id="gallery-title" className="h3 mb-4 md:mb-6 lg:mb-8">
+          <h2 id="gallery-title" className="h3 mb-4 lg:mb-6">
             {title}
           </h2>
         )}
@@ -45,7 +45,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
               key={index}
               type="button"
               onClick={() => openLightbox(index)}
-              className="group focus-visible:ring-primary relative aspect-square overflow-hidden rounded-xl focus:outline-none focus-visible:ring-2"
+              className="group focus-visible:ring-primary relative aspect-square overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2"
             >
               <Image src={image.src} alt={image.alt} fill className="object-cover transition group-hover:scale-105" sizes="(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw" />
               {image.title && (
@@ -90,7 +90,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
             className="absolute right-4 text-white hover:text-neutral-300"
             aria-label="Następne zdjęcie"
           >
-            <RiArrowRightLine className="h-8 w-8" />
+            <RiArrowRightSLine className="h-8 w-8" />
           </button>
 
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-sm text-white">

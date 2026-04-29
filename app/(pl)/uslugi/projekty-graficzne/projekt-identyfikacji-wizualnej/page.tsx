@@ -258,7 +258,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji identyfikacji wizualnej"
           description="Napisz czym zajmuje się Twoja firma, jakich materiałów potrzebujesz oraz czy posiadasz już logo - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/finish-masters/logo-prezentacja-finish-masters-kolory_1.webp"
+          imageSrc="/assets/projects/finish-masters/logo/logo-prezentacja-finish-masters-kolory_1.webp"
           imageAlt="Realizacja identyfikacji wizualnej - Finish Masters"
           defaultSubject="Identyfikacja wizualna"
         />
@@ -320,23 +320,23 @@ export default function OfferDesignBrandIdentityDesignPage() {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              backgroundImage: '/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
@@ -344,7 +344,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
               title: 'Projekt logo',
               description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'small',
-              backgroundImage: '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp',
+              backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-logo',
             },

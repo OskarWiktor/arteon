@@ -255,7 +255,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
           </div>
 
           {pages.length === 0 && (
-            <div className="rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-6 text-center">
+            <div className="rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-6 text-center">
               <p className="tool-meta">{t.emptyState.replace('{{source}}', 'PDF').replace('{{target}}', targetLabel)}</p>
             </div>
           )}

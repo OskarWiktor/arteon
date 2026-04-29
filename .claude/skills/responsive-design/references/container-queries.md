@@ -426,7 +426,7 @@ function Card({ title, image, description }) {
     // @container creates containment context
     <div className="@container">
       <article className="flex flex-col @md:flex-row @md:gap-4">
-        <img src={image} alt="" className="aspect-video w-full rounded-lg object-cover @md:aspect-square @md:w-48 @lg:w-64" />
+        <img src={image} alt="" className="aspect-video w-full rounded-md object-cover @md:aspect-square @md:w-48 @lg:w-64" />
         <div className="p-4 @md:p-0">
           <h2 className="text-lg font-semibold @md:text-xl @lg:text-2xl">{title}</h2>
           <p className="text-muted-foreground mt-2 @lg:text-lg">{description}</p>

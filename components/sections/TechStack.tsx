@@ -135,13 +135,13 @@ export default function TechStack() {
 
   return (
     <section className="relative overflow-hidden" aria-labelledby="techstack-heading">
-      <h2 id="techstack-heading" className="h4 mb-4 md:mb-6 lg:mb-8">
+      <h2 id="techstack-heading" className="h4 mb-4 lg:mb-6">
         Jakiej technologii używamy?
       </h2>
 
       <div
         ref={containerRef}
-        className="focus-visible:ring-primary overflow-hidden rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+        className="focus-visible:ring-primary overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
         role="region"
         aria-label="Przewijana lista technologii. Ustaw fokus, najedź lub dotknij, aby wstrzymać przewijanie."
         tabIndex={0}

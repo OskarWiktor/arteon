@@ -21,13 +21,13 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
   return (
     <section data-section="tabs" aria-labelledby={title ? headingId : undefined}>
       {title && (
-        <h2 id={headingId} className="h3 mb-4 md:mb-6 lg:mb-8">
+        <h2 id={headingId} className="h3 mb-4 lg:mb-6">
           {title}
         </h2>
       )}
 
       <div className="space-y-4">
-        <div className="bg-primary-light flex gap-2 rounded-xl p-1.5" role="tablist">
+        <div className="bg-primary-light flex gap-2 rounded-lg p-1.5" role="tablist">
           {tabs.map((tab, index) => (
             <button
               key={index}
@@ -37,7 +37,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
               aria-controls={`tabpanel-${autoId}-${index}`}
               id={`tab-${autoId}-${index}`}
               onClick={() => setActiveTab(index)}
-              className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition ${
+              className={`flex flex-1 items-center justify-center gap-2 rounded-md px-4 py-3 text-sm font-medium transition ${
                 activeTab === index ? 'text-primary bg-white shadow-sm' : 'text-primary-mid hover:text-primary'
               }`}
             >
@@ -47,7 +47,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
           ))}
         </div>
 
-        <div id={`tabpanel-${autoId}-${activeTab}`} role="tabpanel" aria-labelledby={`tab-${autoId}-${activeTab}`} className="rounded-2xl border border-black/10 bg-white p-6">
+        <div id={`tabpanel-${autoId}-${activeTab}`} role="tabpanel" aria-labelledby={`tab-${autoId}-${activeTab}`} className="rounded-lg border border-black/10 bg-white p-6">
           <h3 className="h5 mb-3 flex items-center gap-2">
             {tabs[activeTab].icon}
             {tabs[activeTab].title}

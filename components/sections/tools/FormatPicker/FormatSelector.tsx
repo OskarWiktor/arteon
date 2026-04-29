@@ -17,7 +17,7 @@ export default function FormatSelector({ currentSource, currentTarget, hasFiles,
 
   return (
     <div className="mb-5 flex justify-center">
-      <div className="inline-flex items-center gap-4 rounded-lg border border-neutral-200 bg-white px-4 py-3">
+      <div className="inline-flex items-center gap-4 rounded-md border border-neutral-200 bg-white px-4 py-3">
         <FormatPickerModal side="source" currentSource={currentSource} currentTarget={currentTarget} hasFiles={hasFiles} confirmMessage={t.formatChangeConfirm} unitToolKey={unitToolKey} />
 
         <span className="text-sm font-medium">{t.formatSelectorTo}</span>

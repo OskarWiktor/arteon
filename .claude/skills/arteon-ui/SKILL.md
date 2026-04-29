@@ -121,7 +121,7 @@ import { cn } from '@/utils/cn';
 
 <button
   className={cn(
-    'px-4 py-2 rounded-lg',
+    'px-4 py-2 rounded-md',
     variant === 'primary' && 'bg-brand text-white',
     disabled && 'opacity-50'
   )}

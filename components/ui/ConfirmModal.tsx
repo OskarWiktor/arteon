@@ -50,7 +50,7 @@ export default function ConfirmModal({ isOpen, onClose, onConfirm, title, descri
       aria-modal="true"
       aria-labelledby="confirm-modal-title"
     >
-      <div className="animate-modal-content w-full max-w-md overflow-hidden rounded-2xl bg-white p-6 shadow-xl ring-1 ring-black/5">
+      <div className="animate-modal-content w-full max-w-md overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5">
         <h3 id="confirm-modal-title" className="h3 mb-2">
           {title}
         </h3>

@@ -246,7 +246,7 @@ export default function OfferDesignLoyaltyCardPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji karty lojalnościowej"
           description="Napisz jak chcesz nagradzać klientów, ile wariantów potrzebujesz oraz czy posiadasz logo - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp"
+          imageSrc="/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp"
           imageAlt="Realizacja projektu karty lojalnościowej"
           defaultSubject="Projekt karty lojalnościowej"
         />
@@ -287,23 +287,23 @@ export default function OfferDesignLoyaltyCardPage() {
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
-              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Kupony i vouchery',
               description: 'Nagradzaj lojalnych klientów dodatkowymi bonusami',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
             },
             {
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              backgroundImage: '/assets/projects/talia/mockup-wizytówki-talia.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
@@ -311,7 +311,7 @@ export default function OfferDesignLoyaltyCardPage() {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              backgroundImage: '/assets/projects/jstax/moskup-strony-jstax.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },

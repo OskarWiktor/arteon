@@ -31,7 +31,7 @@ export const metadata = {
     description: 'Projektujemy menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/nocturna/nocturna-menu-mockup.png', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -62,7 +62,7 @@ export default function OfferDesignMenuPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp"
+        backgroundImage="/assets/projects/nocturna/nocturna-menu-mockup.png"
         overlay="black"
       />
 
@@ -248,7 +248,7 @@ export default function OfferDesignMenuPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji menu restauracji"
           description="Napisz jakie dania są w ofercie, czy posiadasz logo oraz zdjęcia dań i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp"
+          imageSrc="/assets/projects/nocturna/nocturna-menu-mockup.png"
           imageAlt="Realizacja projektu menu - bar Nocturna"
           defaultSubject="Projekt menu restauracji"
         />
@@ -292,23 +292,23 @@ export default function OfferDesignMenuPage() {
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
-              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              backgroundImage: '/assets/projects/restoquality/mockup-wizytowki-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
@@ -316,7 +316,7 @@ export default function OfferDesignMenuPage() {
               title: 'Szablony media społecznościowe',
               description: 'Gotowe projekty do Twoich postów',
               size: 'small',
-              backgroundImage: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
+              backgroundImage: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
             },
@@ -336,7 +336,7 @@ export default function OfferDesignMenuPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp"
+        backgroundImage="/assets/projects/nocturna/nocturna-menu-mockup.png"
         overlay="black"
       />
 

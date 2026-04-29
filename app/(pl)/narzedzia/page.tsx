@@ -1063,7 +1063,7 @@ export default function ToolsIndexPage() {
           <p>
             Jeśli potrzebujesz pomocy z projektem strony lub identyfikacji wizualnej,{' '}
             <Link href="/kontakt" prefetch={false}>
-              skontaktuj się z nami
+              Skontaktuj się
             </Link>
             .
           </p>
@@ -1107,7 +1107,7 @@ export default function ToolsIndexPage() {
 
       <CTABanner
         title="Potrzebujesz pomocy z projektem?"
-        description="Jeśli szukasz wsparcia przy stronie, sklepie lub identyfikacji wizualnej - skontaktuj się z nami. Pomożemy dobrać rozwiązanie dopasowane do potrzeb."
+        description="Jeśli szukasz wsparcia przy stronie, sklepie lub identyfikacji wizualnej - Skontaktuj się. Pomożemy dobrać rozwiązanie dopasowane do potrzeb."
         btnOne="Skontaktuj się"
         btnOneLink="/kontakt"
         btnTwo="Zobacz usługi"

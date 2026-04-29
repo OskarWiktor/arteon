@@ -406,7 +406,7 @@ function ResponsiveDataTable({ data, columns }) {
       {/* Mobile cards */}
       <div className="space-y-4 md:hidden">
         {data.map((row, i) => (
-          <div key={i} className="space-y-2 rounded-lg border p-4">
+          <div key={i} className="space-y-2 rounded-md border p-4">
             {columns.map((col) => (
               <div key={col.key} className="flex justify-between">
                 <span className="text-muted-foreground font-medium">{col.label}</span>

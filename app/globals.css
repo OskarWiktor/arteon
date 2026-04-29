@@ -1,31 +1,26 @@
 @import 'tailwindcss';
 
+@theme {
+  --shadow-sm: 0 1px 2px 0px #130f0d1a;
+  --shadow-md: 0 3px 3px 0px #130f0d1a;
+  --shadow-lg: 0 5px 5px 1px #130f0d1a;
+}
+
 :root {
-  /* ══════════════════════════════════════════════════════════════
-     AKTYWNA PALETA - „Arteon Classic"
-     Granat + złoty/bursztynowy. Profesjonalnie, premium.
-     Aby przełączyć paletę: zakomentuj tę sekcję i odkomentuj
-     jedną z propozycji palet na końcu tego bloku :root.
-     ══════════════════════════════════════════════════════════════ */
+  --primary: #130f0d;
+  --primary-light: #e0d6ce;
+  --primary-mid: #493b30;
 
-  /* --- Brand / Primary (30%) --- */
-  --primary: #1b2632;
-  --primary-light: #d8e0e9;
-  --primary-mid: #2c3b4d;
+  --accent: #e0d6ce;
 
-  /* --- Accent (10%) - komplementarny --- */
-  --accent: #ffb162;
+  --background: #f7f5f3;
+  --foreground: #0f0e0d;
+  --text-light: #7e7c7a;
+  --text-mid: #514b46;
+  --text-on-dark: #f7f5f4;
 
-  /* --- Baza (60%) - tła, teksty --- */
-  --background: #f5f5f5;
-  --foreground: #0a0a0b;
-  --text-light: #696969;
-  --text-mid: #292929;
-  --text-on-dark: #e7e7ea;
-
-  /* --- Stałe --- */
-  --white: #ffffff;
-  --black: #000000;
+  --white: #fcfcfc;
+  --black: #1a120c;
 
   /* --- Neutrals --- */
   --neutral-50: #fafafa;
@@ -67,6 +62,7 @@
 
 @theme inline {
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-heading: var(--font-heading), ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -254,51 +250,46 @@ label {
 
 h1,
 .h1 {
-  font-weight: 600;
-  font-size: clamp(42px, calc(42px + 10 * ((100vw - 360px) / 1080)), 52px);
+  font-weight: 500;
+  font-size: clamp(48px, calc(48px + 14 * ((100vw - 360px) / 1080)), 62px);
   line-height: 1;
-  letter-spacing: -1px;
   text-wrap: balance;
 }
 
 h2,
 .h2 {
-  font-weight: 600;
-  font-size: clamp(35px, calc(35px + 7 * ((100vw - 360px) / 1080)), 42px);
+  font-weight: 500;
+  font-size: clamp(35px, calc(38px + 8 * ((100vw - 360px) / 1080)), 46px);
   line-height: 1.03;
-  letter-spacing: -0.9px;
+  letter-spacing: 1px;
 }
 
 h3,
 .h3 {
-  font-weight: 600;
-  font-size: clamp(29px, calc(29px + 6 * ((100vw - 360px) / 1080)), 35px);
+  font-weight: 500;
+  font-size: clamp(29px, calc(34px + 8 * ((100vw - 360px) / 1080)), 42px);
   line-height: 1.06;
-  letter-spacing: -0.7px;
 }
 
 h4,
 .h4 {
-  font-weight: 600;
-  font-size: clamp(24px, calc(24px + 5 * ((100vw - 360px) / 1080)), 29px);
+  font-weight: 500;
+  font-size: clamp(24px, calc(26px + 6 * ((100vw - 360px) / 1080)), 32px);
   line-height: 1.12;
-  letter-spacing: -0.4px;
 }
 
 h5,
 .h5 {
-  font-weight: 600;
-  font-size: clamp(20px, calc(20px + 3 * ((100vw - 360px) / 1080)), 23px);
+  font-weight: 500;
+  font-size: clamp(20px, calc(20px + 6 * ((100vw - 360px) / 1080)), 26px);
   line-height: 1.2;
-  letter-spacing: -0.2px;
 }
 
 h6,
 .h6 {
-  font-weight: 600;
-  font-size: clamp(17px, calc(17px + 2 * ((100vw - 360px) / 1080)), 19px);
+  font-weight: 500;
+  font-size: clamp(17px, calc(16px + 4 * ((100vw - 360px) / 1080)), 20px);
   line-height: 1.25;
-  letter-spacing: 0;
 }
 
 strong {
@@ -312,12 +303,12 @@ strong {
 input,
 select,
 textarea {
-  @apply w-full rounded-xl border border-neutral-300 bg-white px-4 py-6 text-lg transition focus:outline-none;
+  @apply w-full rounded-md border border-neutral-300 bg-white px-4 py-6 text-lg transition focus:outline-none;
   color: var(--text-mid);
 }
 
 textarea {
-  @apply w-full rounded-xl border border-neutral-300 bg-white px-4 py-3 text-lg transition focus:outline-none;
+  @apply w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-lg transition focus:outline-none;
   color: var(--text-mid);
 }
 
@@ -380,41 +371,41 @@ textarea {
 }
 
 .surface-panel {
-  @apply rounded-2xl border border-black/10 bg-white/70 shadow-sm backdrop-blur-sm;
+  @apply rounded-lg border border-black/10 bg-white/70 shadow-sm backdrop-blur-sm;
 }
 
 .surface-panel-solid {
-  @apply rounded-2xl border border-black/10 bg-white shadow-sm;
+  @apply rounded-lg border border-black/10 bg-white shadow-sm;
 }
 
 .surface-card {
-  @apply overflow-hidden rounded-2xl bg-white shadow-md transition focus-within:shadow-lg hover:shadow-lg;
+  @apply overflow-hidden rounded-lg bg-white shadow-md transition focus-within:shadow-lg hover:shadow-lg;
 }
 
 .surface-card-lift {
-  @apply rounded-2xl bg-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg;
+  @apply rounded-lg bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md;
 }
 
 .surface-card-soft {
-  @apply rounded-2xl bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md;
+  @apply rounded-lg bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md;
 }
 
 .tool-section {
-  @apply rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm;
+  @apply rounded-lg border border-black/10 bg-white/80 p-7 shadow-sm;
 }
 
 .tool-input {
-  @apply focus:border-mid w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:outline-none;
+  @apply focus:border-mid w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:outline-none;
   color: var(--text-mid);
 }
 
 .tool-textarea {
-  @apply focus:border-mid w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:outline-none;
+  @apply focus:border-mid w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:outline-none;
   color: var(--text-mid);
 }
 
 .tool-select {
-  @apply focus:border-mid w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:outline-none;
+  @apply focus:border-mid w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:outline-none;
   color: var(--text-mid);
 }
 
@@ -453,7 +444,7 @@ textarea {
 }
 
 .tool-upload-area {
-  @apply hover:border-light flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center transition hover:bg-neutral-100;
+  @apply hover:border-light flex cursor-pointer flex-col items-center justify-center rounded-lg border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center transition hover:bg-neutral-100;
 }
 
 .tool-checkbox {
@@ -488,7 +479,7 @@ textarea {
 }
 
 .tool-info-box {
-  @apply rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3;
+  @apply rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3;
 }
 
 .tool-value {
@@ -502,15 +493,15 @@ textarea {
 }
 
 .tool-row {
-  @apply flex items-center gap-2 overflow-hidden rounded-xl border border-neutral-200 bg-white px-3 py-2;
+  @apply flex items-center gap-2 overflow-hidden rounded-lg border border-neutral-200 bg-white px-3 py-2;
 }
 
 .tool-color-swatch {
-  @apply rounded-lg border border-black/10;
+  @apply rounded-md border border-black/10;
 }
 
 .calc-option-button {
-  @apply relative flex items-start gap-3 rounded-2xl border p-4 text-left transition hover:cursor-pointer;
+  @apply relative flex items-start gap-3 rounded-lg border p-4 text-left transition hover:cursor-pointer;
 }
 
 .calc-option-button-selected {
@@ -522,7 +513,7 @@ textarea {
 }
 
 .calc-input-container {
-  @apply relative rounded-2xl border py-2 transition;
+  @apply relative rounded-lg border py-2 transition;
 }
 
 .calc-input-container-filled {
@@ -586,6 +577,13 @@ textarea {
 
 .ad-slot-wrapper:has(ins.adsbygoogle[data-ad-status='unfilled']) .ad-placeholder {
   background: transparent;
+}
+
+/* ── Headings use Playfair Display (body stays Inter via font-sans) ── */
+
+h1,
+h2 {
+  font-family: var(--font-heading);
 }
 
 /* ── Reduced motion ────────────────────────────────────────────── */

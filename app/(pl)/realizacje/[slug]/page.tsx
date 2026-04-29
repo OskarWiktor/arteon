@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import {
   RiCheckLine,
-  RiArrowRightLine,
+  RiArrowRightSLine,
   RiFlashlightLine,
   RiFocus3Line,
   RiLineChartLine,
@@ -109,7 +109,7 @@ const defaultCTA = {
 
 function Stat({ label, value, note }: { label: string; value: string; note?: string }) {
   return (
-    <div className="rounded-2xl bg-white p-4 shadow-md">
+    <div className="rounded-lg bg-white p-4 shadow-md">
       <p className="h5">{value}</p>
       <p className="text-light">{label}</p>
       {note && <p className="mt-2">{note}</p>}
@@ -119,7 +119,7 @@ function Stat({ label, value, note }: { label: string; value: string; note?: str
 
 function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1' | 'auto'; children: React.ReactNode }) {
   if (ratio === 'auto') {
-    return <div className="relative overflow-hidden rounded-2xl border border-black/10">{children}</div>;
+    return <div className="relative overflow-hidden rounded-lg border border-black/10">{children}</div>;
   }
 
   const map: Record<string, string> = {
@@ -128,7 +128,7 @@ function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1' |
     '1/1': 'aspect-square',
   };
 
-  return <div className={`relative overflow-hidden rounded-2xl border border-black/10 ${map[ratio] || ''}`}>{children}</div>;
+  return <div className={`relative overflow-hidden rounded-lg border border-black/10 ${map[ratio] || ''}`}>{children}</div>;
 }
 
 const ICON_MAP: Record<string, React.ElementType> = {
@@ -150,7 +150,7 @@ const ICON_MAP: Record<string, React.ElementType> = {
   cart: RiShoppingCartLine,
   pen: RiPencilLine,
   check: RiCheckLine,
-  arrow: RiArrowRightLine,
+  arrow: RiArrowRightSLine,
   search: RiSearchLine,
   layout: RiLayoutLine,
   eye: RiEyeLine,
@@ -190,7 +190,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
               <Gap size="xs" />
               <figure>
                 {isAuto ? (
-                  <div className="overflow-hidden rounded-2xl border border-black/10">
+                  <div className="overflow-hidden rounded-lg border border-black/10">
                     <Image src={b.src} alt={b.alt} width={b.width ?? 2000} height={b.height ?? 2800} sizes="100vw" style={{ width: '100%', height: 'auto' }} priority={b.priority ?? false} />
                   </div>
                 ) : (
@@ -208,7 +208,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
         if (b.type === 'imageText') {
           const Img =
             b.ratio === 'auto' ? (
-              <div className="overflow-hidden rounded-2xl border border-black/10">
+              <div className="overflow-hidden rounded-lg border border-black/10">
                 <Image
                   src={b.src}
                   alt={b.alt}
@@ -248,7 +248,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
         if (b.type === 'quote') {
           return (
             <div key={`quote-${i}`} className={wrapperClass}>
-              <figure className="rounded-2xl bg-white p-6 shadow-md">
+              <figure className="rounded-lg bg-white p-6 shadow-md">
                 <blockquote>
                   <p className="text-lg leading-relaxed">"{b.text}"</p>
                 </blockquote>
@@ -268,7 +268,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
           const calloutIcon = getIcon(b.icon);
           return (
             <div key={`callout-${i}`} className={wrapperClass}>
-              <div className="border-accent flex gap-4 rounded-2xl border-l-4 bg-white p-6 shadow-md">
+              <div className="border-accent flex gap-4 rounded-lg border-l-4 bg-white p-6 shadow-md">
                 {calloutIcon && <div className="text-accent mt-1 shrink-0">{calloutIcon}</div>}
                 <div>
                   {b.title && <h4 className="h5 mb-2">{b.title}</h4>}
@@ -368,7 +368,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
           return (
             <div key={`testimonial-${i}`} className={wrapperClass}>
               <SectionInfo title="Ocena współpracy">
-                <blockquote className="rounded-2xl bg-white p-6 shadow-md">
+                <blockquote className="rounded-lg bg-white p-6 shadow-md">
                   <p className="text-lg leading-relaxed">"{b.quote}"</p>
                   {(b.author || b.role) && (
                     <footer className="mt-2">
@@ -394,7 +394,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
               <SectionInfo title={b.title || 'Jak było - jak jest'}>
                 <div className="grid grid-cols-1 items-start gap-6 md:grid-cols-2">
                   <figure>
-                    <div className="overflow-hidden rounded-2xl border border-black/10">
+                    <div className="overflow-hidden rounded-lg border border-black/10">
                       <Image
                         src={b.beforeImage}
                         alt={b.beforeLabel || 'Widok przed zmianami'}
@@ -407,7 +407,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                     <figcaption className="text-light mt-2 text-sm">{b.beforeLabel || 'Przed'}</figcaption>
                   </figure>
                   <figure>
-                    <div className="overflow-hidden rounded-2xl border border-black/10">
+                    <div className="overflow-hidden rounded-lg border border-black/10">
                       <Image
                         src={b.afterImage}
                         alt={b.afterLabel || 'Widok po wdrożeniu'}
@@ -435,7 +435,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
                 {b.images.map((img, idx) => (
                   <figure key={idx}>
-                    <div className="overflow-hidden rounded-2xl border border-black/10">
+                    <div className="overflow-hidden rounded-lg border border-black/10">
                       <Image src={img.src} alt={img.alt} width={600} height={800} className="h-auto w-full object-cover" sizes="(min-width:640px) 33vw, 100vw" />
                     </div>
                     {img.label && <figcaption className="text-light mt-2 text-center text-sm">{img.label}</figcaption>}
@@ -562,7 +562,7 @@ export default async function ProjectPage({ params }: PageProps) {
               <SectionInfo title="Proces">
                 <ul className="grid gap-3 md:grid-cols-2">
                   {project.process_steps.map((step, i) => (
-                    <li key={i} className="rounded-2xl bg-white p-3 shadow-md">
+                    <li key={i} className="rounded-lg bg-white p-3 shadow-md">
                       <span className="border-light text-light mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border text-xs font-bold">{i + 1}</span>
                       <span dangerouslySetInnerHTML={{ __html: step }} />
                     </li>
@@ -589,14 +589,14 @@ export default async function ProjectPage({ params }: PageProps) {
               <SectionInfo title="Jak było - jak jest">
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                   <figure>
-                    <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
+                    <div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-black/10">
                       <Image src={project.beforeAfter.beforeImage || project.image} alt="Widok przed zmianami" fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
                     </div>
                     <figcaption className="text-light mt-2 text-sm">Przed</figcaption>
                   </figure>
 
                   <figure>
-                    <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
+                    <div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-black/10">
                       <Image src={project.beforeAfter.afterImage || project.image} alt="Widok po wdrożeniu" fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
                     </div>
                     <figcaption className="text-light mt-2 text-sm font-semibold">Po</figcaption>
@@ -648,7 +648,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <>
               <Gap size="sm" variant="line" />
               <SectionInfo title="Ocena współpracy">
-                <blockquote className="rounded-2xl bg-white p-6 shadow-md">
+                <blockquote className="rounded-lg bg-white p-6 shadow-md">
                   <p className="text-lg leading-relaxed">“{project.testimonial.quote}”</p>
                   {(project.testimonial.author || project.testimonial.role) && (
                     <footer className="mt-2">
@@ -692,8 +692,8 @@ export default async function ProjectPage({ params }: PageProps) {
       <CTABanner
         title={ctaProps.title}
         description={ctaProps.description}
-        btnOne={ctaProps.btnOne}
-        btnOneLink={ctaProps.btnOneLink}
+        btnOne="Skontaktuj się"
+        btnOneLink="/kontakt"
         btnTwo={ctaProps.btnTwo}
         btnTwoLink={ctaProps.btnTwoLink}
         backgroundImage={ctaProps.backgroundImage}

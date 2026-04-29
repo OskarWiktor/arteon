@@ -19,7 +19,7 @@ export default function SectionVerticalTabs({ title, tabs }: SectionVerticalTabs
     <section data-section="vertical-tabs" aria-labelledby={title ? 'vtabs-title' : undefined}>
       <Wrapper>
         {title && (
-          <h3 id="vtabs-title" className="h5 mb-4 md:mb-6 lg:mb-8">
+          <h3 id="vtabs-title" className="h5 mb-4 lg:mb-6">
             {title}
           </h3>
         )}
@@ -35,7 +35,7 @@ export default function SectionVerticalTabs({ title, tabs }: SectionVerticalTabs
                 aria-controls={`vtabpanel-${index}`}
                 id={`vtab-${index}`}
                 onClick={() => setActiveTab(index)}
-                className={`flex items-center justify-center gap-2 rounded-lg px-3 py-2.5 text-center text-sm font-medium transition md:justify-start md:text-left ${
+                className={`flex items-center justify-center gap-2 rounded-md px-3 py-2.5 text-center text-sm font-medium transition md:justify-start md:text-left ${
                   activeTab === index ? 'bg-primary text-white' : 'bg-primary-light text-primary hover:bg-primary-light'
                 }`}
               >
@@ -45,7 +45,7 @@ export default function SectionVerticalTabs({ title, tabs }: SectionVerticalTabs
             ))}
           </nav>
 
-          <div id={`vtabpanel-${activeTab}`} role="tabpanel" aria-labelledby={`vtab-${activeTab}`} className="flex-1 rounded-2xl border border-black/10 bg-white p-6">
+          <div id={`vtabpanel-${activeTab}`} role="tabpanel" aria-labelledby={`vtab-${activeTab}`} className="flex-1 rounded-lg border border-black/10 bg-white p-6">
             {tabs[activeTab].content}
           </div>
         </div>

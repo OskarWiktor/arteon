@@ -27,7 +27,7 @@ export default function Filters({ projects, selected, onToggle, onClear }: Props
     <section className="w-full">
       <h2 className="h3 mb-6">Kliknij aby wybrać typ projektu</h2>
 
-      <div role="toolbar" aria-label="Filtry realizacji" className="flex w-full flex-wrap items-center gap-2 overflow-x-auto rounded-2xl pb-6 md:pb-8 lg:pb-10">
+      <div role="toolbar" aria-label="Filtry realizacji" className="flex w-full flex-wrap items-center gap-2 overflow-x-auto rounded-lg pb-6 md:pb-8 lg:pb-10">
         <Button variant={hasSelection ? 'normal' : 'accent'} size="small" onClick={onClear} aria-pressed={!hasSelection}>
           Wszystkie
         </Button>

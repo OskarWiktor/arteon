@@ -17,7 +17,7 @@ export default function ToolAlert({ children, variant = 'info', className = '' }
   };
 
   return (
-    <div className={`rounded-xl border px-3 py-2 text-[11px]! ${variantClasses[variant]} ${className}`} role="alert">
+    <div className={`rounded-lg border px-3 py-2 text-[11px]! ${variantClasses[variant]} ${className}`} role="alert">
       {children}
     </div>
   );

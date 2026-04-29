@@ -73,7 +73,7 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
 
   if (variant === 'large') {
     const navBtnLarge =
-      'group absolute top-1/2 -translate-y-1/2 z-10 cursor-pointer rounded-full border border-primary bg-primary p-2 text-white shadow-xl ' +
+      'group absolute top-1/2 -translate-y-1/2 z-10 cursor-pointer rounded-full border border-primary bg-primary p-2 text-white shadow-lg ' +
       'transition hover:scale-105 hover:bg-white hover:text-primary focus:outline-none ' +
       'focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white';
 

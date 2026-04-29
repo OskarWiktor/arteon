@@ -22,7 +22,7 @@ export default function ProjectDetailSkeleton() {
             </div>
             <Shimmer className="h-4 w-full !rounded-md" />
             <Shimmer className="h-4 w-5/6 !rounded-md" />
-            <Shimmer className="aspect-video w-full !rounded-xl !bg-neutral-300" />
+            <Shimmer className="aspect-video w-full !rounded-lg !bg-neutral-300" />
             <Shimmer className="h-4 w-full !rounded-md" />
             <Shimmer className="h-4 w-full !rounded-md" />
             <Shimmer className="h-4 w-4/5 !rounded-md" />
@@ -31,7 +31,7 @@ export default function ProjectDetailSkeleton() {
             <Shimmer className="h-4 w-5/6 !rounded-md" />
           </div>
           <aside className="hidden lg:block">
-            <div className="sticky top-24 space-y-3 rounded-2xl border border-black/5 bg-white p-5 shadow-sm">
+            <div className="sticky top-24 space-y-3 rounded-lg border border-black/5 bg-white p-5 shadow-sm">
               <Shimmer className="h-5 w-3/4 !rounded-md" />
               {Array.from({ length: 6 }).map((_, i) => (
                 <Shimmer key={i} className="h-3.5 w-full !rounded-md" />

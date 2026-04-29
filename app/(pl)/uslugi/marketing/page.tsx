@@ -26,7 +26,7 @@ export const metadata = {
     description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, media społecznościowe i spójny branding.',
     url: 'https://www.arteonagency.pl/uslugi/marketing',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/msc/moskup-strony-msc-psychotherapy.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -63,7 +63,7 @@ export default function OfferMarketingHubPage() {
         title="Marketing internetowy"
         description={<>Przyciągnij nowych klientów, przemyślanym działaniem marketingowym</>}
         variant="left"
-        backgroundImage="/assets/projects/arteon-baners-msc.webp"
+        backgroundImage="/assets/projects/msc/moskup-strony-msc-psychotherapy.webp"
         overlay="black"
       />
 
@@ -217,23 +217,23 @@ export default function OfferMarketingHubPage() {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
               title: 'Projekty graficzne',
               description: 'Logo, wizytówki, ulotki i więcej',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              backgroundImage: '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne',
             },
@@ -256,7 +256,7 @@ export default function OfferMarketingHubPage() {
         description="Od audytu i wdrożeń po kampanie i treści - planujemy i prowadzimy działania, które zwiększają sprzedaż"
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        backgroundImage="/assets/projects/arteon-baners-msc.webp"
+        backgroundImage="/assets/projects/msc/moskup-strony-msc-psychotherapy.webp"
         overlay="black"
       />
 

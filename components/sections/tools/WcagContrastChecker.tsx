@@ -355,7 +355,7 @@ export default function WcagContrastChecker() {
               </div>
             </div>
             <div
-              className="rounded-xl border border-neutral-200 px-3 py-2"
+              className="rounded-lg border border-neutral-200 px-3 py-2"
               style={{
                 color: foreground,
                 backgroundColor: background,
@@ -374,7 +374,7 @@ export default function WcagContrastChecker() {
               </div>
             </div>
             <div
-              className="rounded-xl border border-neutral-200 px-3 py-2"
+              className="rounded-lg border border-neutral-200 px-3 py-2"
               style={{
                 color: foreground,
                 backgroundColor: background,
@@ -393,7 +393,7 @@ export default function WcagContrastChecker() {
             </div>
             <div className="flex items-center gap-3">
               <div
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-neutral-200"
+                className="flex h-10 w-10 items-center justify-center rounded-md border border-neutral-200"
                 style={{
                   color: foreground,
                   backgroundColor: background,

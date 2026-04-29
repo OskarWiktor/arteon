@@ -21,7 +21,7 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
   return (
     <section data-section="bento" aria-labelledby={title ? 'bento-title' : undefined}>
       {title && (
-        <h2 id="bento-title" className="h3 mb-4 md:mb-6 lg:mb-8">
+        <h2 id="bento-title" className="h3 mb-4 lg:mb-6">
           {title}
         </h2>
       )}
@@ -31,12 +31,12 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
           const sizeClass = item.size === 'large' ? 'col-span-2 row-span-2' : item.size === 'medium' ? 'col-span-2' : '';
 
           return (
-            <div key={index} className={`relative flex flex-col justify-end overflow-hidden rounded-2xl ${sizeClass}`}>
+            <div key={index} className={`relative flex flex-col justify-end overflow-hidden rounded-lg ${sizeClass}`}>
               <Image src={item.backgroundImage} alt={item.title} fill className="object-cover" sizes="(min-width:1024px) 50vw, 100vw" aria-hidden="true" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/10" aria-hidden="true" />
 
               <div className="relative z-10 p-4">
-                {item.icon && <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-white/20 text-white">{item.icon}</div>}
+                {item.icon && <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-md bg-white/20 text-white">{item.icon}</div>}
                 <h3 className={item.size === 'large' ? 'h5 mb-1 text-white' : 'h6 mb-1 text-white'}>{item.title}</h3>
                 <p className="text-sm text-white/80">{item.description}</p>
                 {item.btnLabel && item.btnLink && (

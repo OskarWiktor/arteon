@@ -340,7 +340,7 @@ export default function DesktopNavigation() {
                           prefetch={false}
                           onMouseEnter={() => handleCategoryHover(section.key)}
                           onFocus={() => handleCategoryHover(section.key)}
-                          className={`group/cat focus-visible:ring-primary flex w-full items-center justify-between gap-3 rounded-xl px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 ${
+                          className={`group/cat focus-visible:ring-primary flex w-full items-center justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 ${
                             isActiveCategory ? 'text-primary bg-white' : 'text-primary-mid hover:text-primary hover:bg-white'
                           }`}
                         >
@@ -370,7 +370,7 @@ export default function DesktopNavigation() {
                             key={item.href}
                             href={item.href}
                             prefetch={false}
-                            className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
+                            className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
                           >
                             {ItemIcon ? (
                               <ItemIcon className="text-primary-mid group-hover/link:text-primary h-5 w-5 shrink-0 transition-colors" aria-hidden="true" />
@@ -414,7 +414,7 @@ export default function DesktopNavigation() {
                           type="button"
                           onMouseEnter={() => handleToolsCategoryHover(section.key)}
                           onFocus={() => handleToolsCategoryHover(section.key)}
-                          className={`group/cat focus-visible:ring-primary flex w-full items-center justify-between gap-3 rounded-xl px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 ${
+                          className={`group/cat focus-visible:ring-primary flex w-full items-center justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 ${
                             isActiveCategory ? 'text-primary bg-white' : 'text-primary-mid hover:text-primary hover:bg-white'
                           }`}
                         >
@@ -456,7 +456,7 @@ export default function DesktopNavigation() {
                             key={item.href}
                             href={item.href}
                             prefetch={false}
-                            className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
+                            className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
                           >
                             {ItemIcon ? (
                               <ItemIcon className="text-primary-mid group-hover/link:text-primary h-5 w-5 shrink-0 transition-colors" aria-hidden="true" />
@@ -495,7 +495,7 @@ export default function DesktopNavigation() {
                     key={item.href}
                     href={item.href}
                     prefetch={false}
-                    className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-xl px-4 py-3 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
+                    className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-lg px-4 py-3 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
                   >
                     {item.icon ? <span className="text-primary-mid group-hover/link:text-primary shrink-0 transition-colors">{item.icon}</span> : null}
                     <span className="text-primary group-hover/link:text-primary text-sm font-medium transition-colors">{item.title}</span>

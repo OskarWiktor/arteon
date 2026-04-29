@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Instrument_Sans } from 'next/font/google';
+import { Inter, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
 import { Suspense } from 'react';
 
@@ -10,11 +10,18 @@ import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 import '@/app/globals.css';
 
-const instrumentSans = Instrument_Sans({
+const inter = Inter({
   subsets: ['latin', 'latin-ext'],
-  weight: ['400', '500', '600'],
+  weight: ['400', '500', '600', '700'],
   display: 'swap',
   variable: '--font-sans',
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-heading',
 });
 
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
@@ -104,7 +111,7 @@ interface RootHtmlProps {
 
 export default function RootHtml({ lang, children }: RootHtmlProps) {
   return (
-    <html lang={lang} className={instrumentSans.variable}>
+    <html lang={lang} className={`${inter.variable} ${playfairDisplay.variable}`}>
       <head>
         <script
           id="google-consent-default"

@@ -84,7 +84,7 @@
         "description": "Przeprowadzamy audyty SEO, które identyfikują problemy z kanibalizacją i pomagają uporządkować strukturę treści.",
         "btnOne": "Sprawdź ofertę audytu SEO",
         "btnOneLink": "/uslugi/marketing/audyt-seo",
-        "btnTwo": "Skontaktuj się z nami",
+        "btnTwo": "Skontaktuj się",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac.webp",
         "overlay": "black"
@@ -200,7 +200,7 @@
         "description": "Tworzymy strony internetowe zoptymalizowane pod kątem wydajności.",
         "btnOne": "Sprawdź ofertę stron internetowych",
         "btnOneLink": "/uslugi/tworzenie-stron-wordpress",
-        "btnTwo": "Skontaktuj się z nami",
+        "btnTwo": "Skontaktuj się",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google.webp",
         "overlay": "black"
@@ -316,7 +316,7 @@
         "description": "Analizujemy strukturę witryny, linkowanie wewnętrzne i treści. Pomagamy budować klastry tematyczne, które zwiększają pozycję w wynikach wyszukiwania.",
         "btnOne": "Pozycjonowanie stron",
         "btnOneLink": "/uslugi/marketing/pozycjonowanie-stron",
-        "btnTwo": "Skontaktuj się z nami",
+        "btnTwo": "Skontaktuj się",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony.webp",
         "overlay": "black"
@@ -433,7 +433,7 @@
         "description": "Przeanalizujemy stronę i pokażemy, co działa dobrze, a co wymaga poprawy. Działamy w oparciu o dane, nie domysły.",
         "btnOne": "Audyt SEO",
         "btnOneLink": "/uslugi/marketing/audyt-seo",
-        "btnTwo": "Skontaktuj się z nami",
+        "btnTwo": "Skontaktuj się",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/jak-mierzyc-skutecznosc-strony-internetowej/jak-mierzyc-skutecznosc-strony-internetowej.webp",
         "overlay": "black"
@@ -545,7 +545,7 @@
         "description": "Profil Google Moja Firma to dopiero początek. Zajmujemy się pozycjonowaniem lokalnym i pomagamy firmom docierać do klientów w ich okolicy.",
         "btnOne": "Pozycjonowanie stron",
         "btnOneLink": "/uslugi/marketing/pozycjonowanie-stron",
-        "btnTwo": "Skontaktuj się z nami",
+        "btnTwo": "Skontaktuj się",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma.webp",
         "overlay": "black"
@@ -891,7 +891,7 @@
         "description": "Jeśli nie jesteś pewien jak ułożyć pytania i odpowiedzi lub nie masz czasu tego zrobić - napisz do nas, z chęcią Ci w tym pomożemy.",
         "btnOne": "Przejdź do kontaktu",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Zobacz ofertę audytu SEO",
+        "btnTwo": "Sprawdź ofertę audytu SEO",
         "btnTwoLink": "/uslugi/marketing/audyt-seo",
         "backgroundImage": "/assets/blog/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony.webp",
         "overlay": "black"
@@ -1340,7 +1340,7 @@
         "description": "Strategia treści, struktura H1-H3, linkowanie i E-E-A-T. Napiszemy teksty, które podnoszą pozycje i sprzedaż.",
         "btnOne": "Zamów wycenę",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Zobacz ofertę",
+        "btnTwo": "Sprawdź ofertę",
         "btnTwoLink": "/uslugi/tworzenie-tresci",
         "backgroundImage": "/assets/blog/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google.webp",
         "overlay": "black"
@@ -1628,7 +1628,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Zrób audyt SEO Twojej strony</h2><p>Brak widoczności strony w Google to częsty problem, który skutkuje mniejszą liczbą klientów. Jeśli mimo działań Twoja strona nadal jest mało widoczna w wynikach wyszukiwania, czas na audyt SEO — techniczny i contentowy.</p><p><strong>Analiza obejmuje:</strong></p><ul class='list-disc ml-5 mb-4'><li>Weryfikację indeksacji witryny,</li><li>Sprawdzenie błędów w robots.txt, sitemap.xml i meta tagach,</li><li>Ocenę szybkości (Core Web Vitals),</li><li>Analizę treści i fraz,</li><li>Rekomendacje zmian i plan działań.</li></ul><p><a class='inline-link' href='/kontakt'>Napisz do nas</a> — przeprowadzimy pełny audyt SEO i wskażemy, co blokuje Twoją widoczność wg aktualnych wytycznych Google.</p><div class='mt-6'><a href='/uslugi/marketing/audyt-seo' class='hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-[#080808] focus-visible:ring-[#1b2632] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1b2632] transition w-fit inline-flex rounded-2xl items-center font-medium text-sm md:text-base px-3 py-1.5 md:px-4 md:py-2'>Zobacz ofertę audytu SEO</a></div>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Zrób audyt SEO Twojej strony</h2><p>Brak widoczności strony w Google to częsty problem, który skutkuje mniejszą liczbą klientów. Jeśli mimo działań Twoja strona nadal jest mało widoczna w wynikach wyszukiwania, czas na audyt SEO — techniczny i contentowy.</p><p><strong>Analiza obejmuje:</strong></p><ul class='list-disc ml-5 mb-4'><li>Weryfikację indeksacji witryny,</li><li>Sprawdzenie błędów w robots.txt, sitemap.xml i meta tagach,</li><li>Ocenę szybkości (Core Web Vitals),</li><li>Analizę treści i fraz,</li><li>Rekomendacje zmian i plan działań.</li></ul><p><a class='inline-link' href='/kontakt'>Napisz do nas</a> — przeprowadzimy pełny audyt SEO i wskażemy, co blokuje Twoją widoczność wg aktualnych wytycznych Google.</p><div class='mt-6'><a href='/uslugi/marketing/audyt-seo' class='hover:-translate-y-0.5 shadow-md hover:shadow-lg border border-black/10 bg-white text-[#080808] focus-visible:ring-[#1b2632] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1b2632] transition w-fit inline-flex rounded-lg items-center font-medium text-sm md:text-base px-3 py-1.5 md:px-4 md:py-2'>Sprawdź ofertę audytu SEO</a></div>",
           "breakAfter": true
         }
       ],

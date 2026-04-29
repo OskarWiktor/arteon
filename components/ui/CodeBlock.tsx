@@ -15,9 +15,7 @@ export default function CodeBlock({ code, language, filename, caption, showLineN
   const lines = code.replace(/\n$/, '').split('\n');
 
   return (
-    <figure
-      className={`group rounded-2xl border border-black/10 bg-gradient-to-b from-[color:var(--foreground)] to-[color:var(--neutral-900)] text-[color:var(--text-on-dark)] shadow-sm ${className}`}
-    >
+    <figure className={`group rounded-lg border border-black/10 bg-gradient-to-b from-[color:var(--foreground)] to-[color:var(--neutral-900)] text-[color:var(--text-on-dark)] shadow-sm ${className}`}>
       <div className="flex items-center justify-between gap-3 rounded-t-xl border-b border-white/10 px-4 py-2">
         <div className="flex items-center gap-2">
           {language ? <span className="inline-block rounded bg-white/10 px-2 py-0.5 text-xs text-white/70">{language}</span> : null}

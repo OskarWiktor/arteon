@@ -91,7 +91,7 @@ export default function Tooltip({ children, title, description, placement = 'top
           id={bubbleId}
           role="tooltip"
           className={[
-            'absolute z-[60] max-w-xs rounded-xl bg-black px-3 py-2 text-sm text-white shadow-lg',
+            'absolute z-[60] max-w-xs rounded-lg bg-black px-3 py-2 text-sm text-white shadow-lg',
             placement === 'top' ? 'animate-tooltip top-full left-1/2 mt-2' : 'animate-tooltip-bottom bottom-full left-1/2 mb-2',
           ].join(' ')}
           onMouseEnter={() => setOpen(true)}

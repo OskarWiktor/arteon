@@ -28,7 +28,7 @@ export const metadata = {
     description: 'Estetyczny i czytelny katalog firmowy. Wersje do druku i online.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/gazetka-mockup.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/restoquality/mockup-gazetka-restoquality.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -62,7 +62,7 @@ export default function OfferDesignCatalogPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/gazetka-mockup.webp"
+        backgroundImage="/assets/projects/restoquality/mockup-gazetka-restoquality.webp"
         overlay="black"
       />
 
@@ -239,7 +239,7 @@ export default function OfferDesignCatalogPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji katalogu"
           description="Napisz jaką ofertę chcesz przedstawić, ile stron ma mieć katalog oraz czy posiadasz logo i zdjęcia - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/gazetka-mockup.webp"
+          imageSrc="/assets/projects/restoquality/mockup-gazetka-restoquality.webp"
           imageAlt="Realizacja projektu katalogu firmowego"
           defaultSubject="Projekt katalogu"
         />
@@ -295,23 +295,23 @@ export default function OfferDesignCatalogPage() {
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
-              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/autokorfu/mockup-strony-auto-korfu.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              backgroundImage: '/assets/projects/restoquality/mockup-wizytowki-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
@@ -319,7 +319,7 @@ export default function OfferDesignCatalogPage() {
               title: 'Projekt ulotki',
               description: 'Skuteczna promocja Twojej oferty',
               size: 'small',
-              backgroundImage: '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp',
+              backgroundImage: '/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-ulotki',
             },
@@ -340,7 +340,7 @@ export default function OfferDesignCatalogPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/gazetka-mockup.webp"
+        backgroundImage="/assets/projects/restoquality/mockup-gazetka-restoquality.webp"
         overlay="black"
       />
 

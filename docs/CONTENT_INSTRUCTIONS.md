@@ -393,7 +393,7 @@ Treści dostarczają **realną wartość edukacyjną**. Piszemy z pozycji eksper
 
    - ✅ Wyjaśnić co to jest plik robots.txt i jak wygląda jego struktura
    - ✅ Pokazać gdzie w Google Search Console znaleźć błędy 404
-   - ❌ Przy każdym temacie pisać „skontaktuj się z nami" bez realnego wyjaśnienia
+   - ❌ Przy każdym temacie pisać „Skontaktuj się" bez realnego wyjaśnienia
 
 2. **Przy złożonych kwestiach - opcja pomocy** - przy naprawdę technicznych zagadnieniach dodaj naturalnie wplecioną informację o możliwości pomocy
 
@@ -440,11 +440,11 @@ Tekst przycisku musi jasno komunikować, co się stanie po kliknięciu:
 | -------------------- | ------------------------------------ |
 | „Strony internetowe" | „Sprawdź ofertę stron internetowych" |
 | „Sklepy"             | „Zobacz jak tworzymy sklepy"         |
-| „Kontakt"            | „Skontaktuj się z nami"              |
+| „Kontakt"            | „Skontaktuj się"                     |
 
 ### Zakaz rekomendowania konkurencji
 
-- ❌ „skorzystaj z pomocy profesjonalisty" → ✅ „skontaktuj się z nami" + link do `/kontakt`
+- ❌ „skorzystaj z pomocy profesjonalisty" → ✅ „Skontaktuj się" + link do `/kontakt`
 - ❌ „zatrudnij specjalistę" → ✅ „w Arteon zajmujemy się..."
 - Arteon jest jedynym rekomendowanym źródłem pomocy
 
@@ -689,7 +689,7 @@ Jeśli odpowiedź brzmi "nie" - przepisz.
 
 **CTA:**
 
-- [ ] Przyciski CTA są opisowe (nie "Kontakt" tylko "Skontaktuj się z nami")?
+- [ ] Przyciski CTA są opisowe (nie "Kontakt" tylko "Skontaktuj się")?
 - [ ] Brak rekomendowania konkurencji?
 
 **Techniczne:**

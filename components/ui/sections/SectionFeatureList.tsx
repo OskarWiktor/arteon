@@ -10,7 +10,7 @@ export default function SectionFeatureList({ title, features }: SectionFeatureLi
   return (
     <section data-section="feature-list" aria-labelledby={title ? 'feature-list-title' : undefined}>
       <Wrapper>
-        <div className="mx-auto max-w-2xl rounded-2xl border border-black/10 bg-white p-8">
+        <div className="mx-auto max-w-2xl rounded-lg border border-black/10 bg-white p-8">
           {title && (
             <h2 id="feature-list-title" className="h3 mb-4 text-center md:mb-6 lg:mb-8">
               {title}

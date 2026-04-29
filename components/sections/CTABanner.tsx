@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import Image from 'next/image';
-import { RiArrowRightLine } from 'react-icons/ri';
+import { RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '../ui/Wrapper';
 import SectionHeader from '../ui/typography/SectionHeader';
 import ButtonGroup from '../ui/buttons/ButtonGroup';
@@ -49,27 +49,27 @@ export default function CTABanner({
       <section data-section="cta-split">
         <Wrapper>
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="bg-primary flex flex-col justify-between rounded-2xl p-8 text-white">
+            <div className="bg-primary flex flex-col justify-between rounded-lg p-8 text-white">
               <div>
                 <h2 className="h3 mb-3">{leftColumn?.title}</h2>
                 {leftColumn?.description && <p className="mb-6 text-white/80">{leftColumn.description}</p>}
               </div>
               {leftColumn?.btnLabel && leftColumn?.btnLink && (
-                <AppLink href={leftColumn.btnLink} className="text-primary hover:bg-primary-light inline-flex w-fit items-center gap-2 rounded-xl bg-white px-6 py-3 font-medium transition">
+                <AppLink href={leftColumn.btnLink} className="text-primary hover:bg-primary-light inline-flex w-fit items-center gap-2 rounded-lg bg-white px-6 py-3 font-medium transition">
                   {leftColumn.btnLabel}
-                  <RiArrowRightLine className="h-5 w-5" />
+                  <RiArrowRightSLine className="h-5 w-5" />
                 </AppLink>
               )}
             </div>
-            <div className="flex flex-col justify-between rounded-2xl border border-black/10 bg-white p-8">
+            <div className="flex flex-col justify-between rounded-lg border border-black/10 bg-white p-8">
               <div>
                 <h2 className="h3 mb-3">{rightColumn?.title}</h2>
                 {rightColumn?.description && <p className="text-light mb-6">{rightColumn.description}</p>}
               </div>
               {rightColumn?.btnLabel && rightColumn?.btnLink && (
-                <AppLink href={rightColumn.btnLink} className="border-primary text-primary inline-flex w-fit items-center gap-2 rounded-xl border px-6 py-3 font-medium transition hover:bg-neutral-50">
+                <AppLink href={rightColumn.btnLink} className="border-primary text-primary inline-flex w-fit items-center gap-2 rounded-lg border px-6 py-3 font-medium transition hover:bg-neutral-50">
                   {rightColumn.btnLabel}
-                  <RiArrowRightLine className="h-5 w-5" />
+                  <RiArrowRightSLine className="h-5 w-5" />
                 </AppLink>
               )}
             </div>
@@ -97,7 +97,7 @@ export default function CTABanner({
 
       <Wrapper className="relative flex h-auto justify-center md:items-center">
         <div
-          className={`mt-6 mb-6 max-w-[100vw] rounded-2xl p-2 md:m-0 md:max-w-[65%] md:p-5 md:text-center lg:p-7 ${toneTextClass} ${isGradient || isSolid ? 'bg-transparent' : overlay === 'black' ? 'bg-black/50' : 'bg-white/70'}`}
+          className={`mt-6 mb-6 max-w-[100vw] rounded-lg p-2 md:m-0 md:max-w-[65%] md:p-5 md:text-center lg:p-7 ${toneTextClass} ${isGradient || isSolid ? 'bg-transparent' : overlay === 'black' ? 'bg-black/50' : 'bg-white/70'}`}
         >
           <SectionHeader
             subtitle={subtitle}

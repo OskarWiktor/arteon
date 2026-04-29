@@ -49,7 +49,7 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
             key={index}
             name={groupName}
             open={openByDefault > 0 && index === 0 ? true : undefined}
-            className="faq-details group hover:border-primary-light open:border-primary-light my-2 overflow-hidden rounded-xl border border-neutral-200 bg-white transition-shadow open:shadow-sm hover:shadow-md"
+            className="faq-details group hover:border-primary-light open:border-primary-light my-2 overflow-hidden rounded-lg border border-neutral-200 bg-white transition-shadow open:shadow-sm hover:shadow-md"
           >
             <summary
               className={[
@@ -61,7 +61,7 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
               ].join(' ')}
             >
               {showIcons && item.icon && (
-                <div className="bg-primary-light flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl text-neutral-900 transition group-open:bg-neutral-900 group-open:text-white">
+                <div className="bg-primary-light flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg text-neutral-900 transition group-open:bg-neutral-900 group-open:text-white">
                   {item.icon}
                 </div>
               )}

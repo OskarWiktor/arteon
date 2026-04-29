@@ -72,7 +72,7 @@ export default function SectionFeatureComparison({ title, featureLabel = 'Featur
 
       <div className="space-y-6 md:hidden">
         {plans.map((plan) => (
-          <div key={plan.id} className={`rounded-2xl border p-6 ${plan.highlighted ? 'border-primary bg-neutral-50' : 'border-black/10 bg-white'}`}>
+          <div key={plan.id} className={`rounded-lg border p-6 ${plan.highlighted ? 'border-primary bg-neutral-50' : 'border-black/10 bg-white'}`}>
             <h3 className="h5 mb-4 text-center">{plan.name}</h3>
             <ul className="space-y-3">
               {features.map((feature, i) => {

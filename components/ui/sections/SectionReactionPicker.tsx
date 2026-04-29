@@ -24,7 +24,7 @@ export default function SectionReactionPicker({ reactions, selected: initialSele
 
   return (
     <div className="flex flex-col items-center gap-4">
-      <div className="flex gap-2 rounded-xl bg-white p-2 shadow-lg" role="group" aria-label="Wybierz reakcję">
+      <div className="flex gap-2 rounded-lg bg-white p-2 shadow-lg" role="group" aria-label="Wybierz reakcję">
         {reactions.map((reaction) => {
           const isSelected = selected === reaction.emoji;
 
@@ -33,7 +33,7 @@ export default function SectionReactionPicker({ reactions, selected: initialSele
               key={reaction.emoji}
               type="button"
               onClick={() => handleSelect(reaction.emoji)}
-              className={`hover:bg-primary-light rounded-lg p-2 text-2xl transition hover:scale-110 ${isSelected ? 'bg-primary-light scale-110' : ''}`}
+              className={`hover:bg-primary-light rounded-md p-2 text-2xl transition hover:scale-110 ${isSelected ? 'bg-primary-light scale-110' : ''}`}
               aria-label={reaction.label}
               aria-pressed={isSelected}
             >

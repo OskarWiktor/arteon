@@ -13,8 +13,8 @@ interface SectionBlogCardHorizontalProps {
 
 export default function SectionBlogCardHorizontal({ imageSrc, imageAlt, title, description, href, category, readingTime }: SectionBlogCardHorizontalProps) {
   return (
-    <Link href={href} prefetch={false} className="group flex flex-col gap-4 overflow-hidden rounded-2xl border border-black/10 bg-white p-4 transition hover:shadow-lg sm:flex-row sm:gap-6">
-      <div className="relative aspect-video w-full shrink-0 overflow-hidden rounded-xl sm:w-48">
+    <Link href={href} prefetch={false} className="group flex flex-col gap-4 overflow-hidden rounded-lg border border-black/10 bg-white p-4 transition hover:shadow-lg sm:flex-row sm:gap-6">
+      <div className="relative aspect-video w-full shrink-0 overflow-hidden rounded-lg sm:w-48">
         <Image src={imageSrc} alt={imageAlt} fill className="object-cover transition group-hover:scale-105" sizes="(min-width:640px) 192px, 100vw" />
       </div>
 

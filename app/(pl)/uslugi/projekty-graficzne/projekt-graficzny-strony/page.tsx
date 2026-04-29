@@ -28,7 +28,7 @@ export const metadata = {
     description: 'Layout www dopasowany do Twojej marki i celów biznesowych. Gotowy do wdrożenia.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/msc/moskup-strony-msc-psychotherapy.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -59,7 +59,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/arteon-baners-msc.webp"
+        backgroundImage="/assets/projects/msc/moskup-strony-msc-psychotherapy.webp"
         overlay="black"
       />
 
@@ -300,23 +300,23 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
               title: 'Strony internetowe',
               description: 'Wdrożenie projektu w działającą stronę',
               size: 'large',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              backgroundImage: '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
@@ -324,7 +324,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google',
               size: 'small',
-              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
@@ -345,7 +345,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/arteon-baners-msc.webp"
+        backgroundImage="/assets/projects/msc/moskup-strony-msc-psychotherapy.webp"
         overlay="black"
       />
 

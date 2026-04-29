@@ -30,7 +30,7 @@ export const metadata = {
     description: 'Skuteczna ulotka z jasnym przekazem i mocnym CTA. Pliki gotowe do druku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -59,7 +59,7 @@ export default function OfferDesignFlyerPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp"
+        backgroundImage="/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp"
         overlay="black"
       />
 
@@ -258,7 +258,7 @@ export default function OfferDesignFlyerPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji ulotki"
           description="Napisz co chcesz przedstawić na ulotce, czy posiadasz logo oraz zdjęcia i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp"
+          imageSrc="/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp"
           imageAlt="Realizacja projektu ulotki reklamowej - Simba Group"
           defaultSubject="Projekt ulotki"
         />
@@ -305,23 +305,23 @@ export default function OfferDesignFlyerPage() {
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
-              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'medium',
-              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/restoquality/mockup-wizytowki-restoquality.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              backgroundImage: '/assets/projects/autokorfu/mockup-strony-auto-korfu.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
@@ -329,7 +329,7 @@ export default function OfferDesignFlyerPage() {
               title: 'Projekt katalogu',
               description: 'Rozbudowana prezentacja oferty',
               size: 'small',
-              backgroundImage: '/assets/projects/gazetka-mockup.webp',
+              backgroundImage: '/assets/projects/restoquality/mockup-gazetka-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-katalogu',
             },
@@ -350,7 +350,7 @@ export default function OfferDesignFlyerPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp"
+        backgroundImage="/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp"
         overlay="black"
       />
 

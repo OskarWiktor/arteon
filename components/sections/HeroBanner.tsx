@@ -68,14 +68,14 @@ export default function HeroBanner({
   const isTools = size === 'tools';
   const hasBg = isTools ? false : Boolean(backgroundImage);
 
-  const isDarkOverlay = isTools ? false : overlay === 'black';
+  const isLightText = isTools ? false : overlay !== 'white';
 
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
 
-  const toneTextClass = isDarkOverlay ? 'text-white' : 'text-dark';
-  const toneMutedClass = isDarkOverlay ? 'text-white' : 'text-dark opacity-80';
+  const toneTextClass = isLightText ? 'text-white' : 'text-dark';
+  const toneMutedClass = isLightText ? 'text-white' : 'text-dark opacity-80';
 
-  const baseBg = isTools ? 'bg-transparent' : overlay === 'black' ? 'bg-black' : 'bg-white';
+  const baseBg = isTools ? 'bg-transparent' : overlay === 'white' ? 'bg-white' : 'bg-black';
   const contentBgClass = isTools ? '' : overlay === 'black' ? 'bg-black/60' : overlay === 'white' ? 'bg-white/50' : '';
 
   const textAlign = variant === 'center' ? 'text-left md:text-center' : variant === 'right' ? 'text-right' : 'text-left';
@@ -83,6 +83,8 @@ export default function HeroBanner({
   const justify = variant === 'center' ? 'justify-center' : variant === 'right' ? 'justify-end' : 'justify-start';
 
   const contentAnchor = variant === 'right' ? 'ml-auto' : variant === 'center' ? 'mx-auto' : '';
+
+  const contentWidthClass = isTools ? 'text-center md:w-[100%]' : variant === 'left' ? 'w-full md:max-w-[70%] lg:max-w-[40%]' : 'md:max-w-[65%]';
 
   const topButtons = [
     { text: buttonTopOne, link: buttonTopOneLink },
@@ -119,9 +121,7 @@ export default function HeroBanner({
       )}
       {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
       <Wrapper className="relative flex h-auto items-center">
-        <div
-          className={`max-w-[100vw] ${isTools ? 'text-center md:w-[100%]' : 'md:max-w-[65%]'} ${contentAnchor} ${textAlign} ${toneTextClass} ${isTools ? '' : 'rounded-2xl p-5 pt-4 md:p-7'} ${contentBgClass} hyphens-auto`}
-        >
+        <div className={`max-w-[100vw] ${contentWidthClass} ${contentAnchor} ${textAlign} ${toneTextClass} ${isTools ? '' : 'rounded-lg p-5 pt-4 md:p-7'} ${contentBgClass} hyphens-auto`}>
           {subtitle && (
             <Eyebrow variant="hero" className={` ${toneMutedClass}`}>
               {subtitle}
@@ -146,7 +146,7 @@ export default function HeroBanner({
             </h1>
           )}
           {description && (
-            <p id="hero-description" className={`text-wrap:pretty ${isTools ? 'mt-2 text-center md:mt-3' : 'mt-3 md:mt-5'} text-base leading-relaxed ${isDarkOverlay ? 'text-white' : 'text-mid'}`}>
+            <p id="hero-description" className={`text-wrap:pretty ${isTools ? 'mt-2 text-center md:mt-3' : 'mt-3 md:mt-5'} text-base leading-relaxed ${isLightText ? 'text-white' : 'text-mid'}`}>
               {description}
             </p>
           )}

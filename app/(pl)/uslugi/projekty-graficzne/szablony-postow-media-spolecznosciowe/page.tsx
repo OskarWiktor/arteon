@@ -31,7 +31,7 @@ export const metadata = {
     description: 'Projektujemy spójne szablony postów do mediów społecznościowych. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -65,7 +65,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp"
+        backgroundImage="/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp"
         overlay="black"
       />
 
@@ -248,7 +248,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji szablonów postów"
           description="Napisz na jakich platformach publikujesz treści, ile szablonów potrzebujesz oraz czy posiadasz logo i identyfikację wizualną - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp"
+          imageSrc="/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp"
           imageAlt="Realizacja szablonów postów do mediów społecznościowych"
           defaultSubject="Szablony postów do mediów społecznościowych"
         />
@@ -285,23 +285,23 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
-              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/arteon-baners-camper-albania-mockup.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Projekt logo',
               description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'small',
-              backgroundImage: '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp',
+              backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-logo',
             },
@@ -309,7 +309,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'small',
-              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
@@ -330,7 +330,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp"
+        backgroundImage="/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp"
         overlay="black"
       />
 

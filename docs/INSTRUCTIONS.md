@@ -473,9 +473,9 @@ Przed napisaniem jakiejkolwiek treści (artykuł, strona, opis, FAQ, CTA, metada
 
 - **Zakaz rekomendowania konkurencji i ogólnych profesjonalistów (obowiązkowo)**: Wszystkie treści muszą prowadzić do oferty Arteon, nigdy do ogólnych profesjonalistów. Zakazane sformułowania:
 
-  - ❌ „skorzystaj z pomocy profesjonalisty" → ✅ „skontaktuj się z nami" + link do `/kontakt`
+  - ❌ „skorzystaj z pomocy profesjonalisty" → ✅ „Skontaktuj się" + link do `/kontakt`
   - ❌ „zatrudnij specjalistę" → ✅ „w Arteon zajmujemy się..."
-  - ❌ „skontaktuj się z osobą, która tworzyła stronę" → ✅ „skontaktuj się z nami"
+  - ❌ „skontaktuj się z osobą, która tworzyła stronę" → ✅ „Skontaktuj się"
   - ❌ „zamów u projektanta lub agencji" → ✅ „W Arteon możesz zamówić wszystko w jednym miejscu"
     Arteon jest jedynym rekomendowanym źródłem pomocy we wszystkich artykułach, CTA i FAQ.
 
@@ -544,11 +544,11 @@ Przed napisaniem jakiejkolwiek treści (artykuł, strona, opis, FAQ, CTA, metada
 - **Opisowe teksty przycisków CTA (OBOWIĄZKOWO, aktualizacja 2026-01-16)**: Tekst przycisku w sekcji CTA musi jasno komunikować, co się stanie po kliknięciu. Unikaj ogólnych nazw kategorii - używaj fraz opisujących akcję lub ofertę.
 
   - Źle: "Strony internetowe" (brzmi jak nazwa kategorii, nie akcja)
-  - Dobrze: "Sprawdź ofertę stron internetowych", "Zobacz ofertę tworzenia stron", "Zamów stronę internetową"
+  - Dobrze: "Sprawdź ofertę stron internetowych", "Sprawdź ofertę tworzenia stron", "Zamów stronę internetową"
   - Źle: "Sklepy" (za ogólne)
   - Dobrze: "Sprawdź ofertę sklepów internetowych", "Zobacz jak tworzymy sklepy"
   - Źle: "Kontakt" (poprawne, ale można lepiej)
-  - Dobrze: "Skontaktuj się z nami", "Porozmawiajmy o projekcie", "Napisz do nas"
+  - Dobrze: "Skontaktuj się", "Porozmawiajmy o projekcie", "Napisz do nas"
     Przycisk ma brzmieć naturalnie i zachęcać do działania, nie być suchą etykietą.
 
 - **Maksymalizacja wartości i głębokości treści (OBOWIĄZKOWO)**: Artykuły mają zawierać jak najwięcej konkretnych, praktycznych informacji. Każda sekcja powinna wnosić realną wartość. Unikaj akapitów, które można by usunąć bez straty merytorycznej. Głębokość i szczegółowość treści bezpośrednio wpływa na pozycję strony w wyszukiwarce.

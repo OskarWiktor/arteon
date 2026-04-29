@@ -31,7 +31,7 @@ export const metadata = {
     description: 'Profesjonalny projekt wizytówki: czytelność, elegancja i pliki gotowe do druku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -60,7 +60,7 @@ export default function OfferDesignBusinessCardPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp"
+        backgroundImage="/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp"
         overlay="black"
       />
 
@@ -226,7 +226,7 @@ export default function OfferDesignBusinessCardPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji wizytówki"
           description="Napisz jakie dane mają znaleźć się na wizytówce, czy potrzebujesz jednego czy kilku wariantów oraz czy posiadasz logo - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp"
+          imageSrc="/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp"
           imageAlt="Realizacja projektu wizytówki - kancelaria Luxnova"
           defaultSubject="Projekt wizytówki"
         />
@@ -267,23 +267,23 @@ export default function OfferDesignBusinessCardPage() {
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
-              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Projekt logo',
               description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'medium',
-              backgroundImage: '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-logo',
             },
             {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
@@ -291,7 +291,7 @@ export default function OfferDesignBusinessCardPage() {
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty online',
               size: 'small',
-              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
+              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
@@ -312,7 +312,7 @@ export default function OfferDesignBusinessCardPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp"
+        backgroundImage="/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp"
         overlay="black"
       />
 

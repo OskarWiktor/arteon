@@ -19,7 +19,7 @@ export default function SectionMetrics({ title, metrics }: SectionMetricsProps) 
     <section data-section="metrics" aria-labelledby={title ? 'metrics-title' : undefined}>
       <Wrapper>
         {title && (
-          <h2 id="metrics-title" className="h6 mb-4 md:mb-6 lg:mb-8">
+          <h2 id="metrics-title" className="h6 mb-4 lg:mb-6">
             {title}
           </h2>
         )}

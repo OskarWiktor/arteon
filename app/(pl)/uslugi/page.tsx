@@ -40,7 +40,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: `${siteUrl}/assets/projects/arteon-baners-msc.webp`,
+        url: `${siteUrl}/assets/projects/msc/moskup-strony-msc-psychotherapy.webp`,
         width: 1200,
         height: 630,
       },
@@ -52,7 +52,7 @@ export default function OfferPage() {
   return (
     <>
       <HeroBanner
-        backgroundImage="/assets/projects/arteon-baners-msc.webp"
+        backgroundImage="/assets/projects/msc/moskup-strony-msc-psychotherapy.webp"
         overlay="black"
         title="Usługi dla Twojej firmy"
         description={<>Projektujemy strony internetowe, sklepy, materiały graficzne i prowadzimy działania marketingowe. Wszystko w jednym miejscu, z naciskiem na jakość i wyniki.</>}
@@ -66,7 +66,7 @@ export default function OfferPage() {
           title="Witryny internetowe"
           items={[
             {
-              topImageSrc: '/assets/projects/arteon-baners-msc.webp',
+              topImageSrc: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
               topImageAlt: 'Strona internetowa dla gabinetu psychologicznego MSC Psychotherapy - realizacja Arteon',
               title: 'Strony internetowe',
               description: (
@@ -84,7 +84,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/arteon-baners-trilllizo.webp',
+              topImageSrc: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               topImageAlt: 'Sklep internetowy dla marki odzieżowej Trilllizo - realizacja Arteon',
               title: 'Sklepy internetowe',
               description: (
@@ -99,8 +99,8 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              topImageAlt: 'Redesign bloga sportowego PiłkaNożna.pl na EURO 2024 - realizacja Arteon',
+              topImageSrc: '/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp',
+              topImageAlt: 'Strona z blogiem dla firmy budowlanej Izoluk - realizacja Arteon',
               title: 'Blogi internetowe',
               description: (
                 <div className="flex h-full flex-col">
@@ -127,7 +127,7 @@ export default function OfferPage() {
           grid="two"
           items={[
             {
-              topImageSrc: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              topImageSrc: '/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp',
               topImageAlt: 'Projekt wizytówki dla kancelarii adwokackiej LUX NOVA - realizacja Arteon',
               title: 'Projekt wizytówki',
               description: (
@@ -145,7 +145,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp',
+              topImageSrc: '/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp',
               topImageAlt: 'Folder reklamowy dla firmy wykańczającej wnętrza Simba Group - realizacja Arteon',
               title: 'Projekt ulotki',
               description: (
@@ -163,7 +163,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              topImageSrc: '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
               topImageAlt: 'Teczka ofertowa dla kancelarii adwokackiej LUX NOVA - realizacja Arteon',
               title: 'Teczka ofertowa',
               description: (
@@ -213,7 +213,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/finish-masters/logo-finish-masters-case-study.webp',
+              topImageSrc: '/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp',
               topImageAlt: 'Logo dla firmy wykończeniowej Finish Masters - realizacja Arteon',
               title: 'Projekt logo',
               description: (
@@ -231,7 +231,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/gazetka-mockup.webp',
+              topImageSrc: '/assets/projects/restoquality/mockup-gazetka-restoquality.webp',
               topImageAlt: 'Katalog produktów dla gastronomii RestoQuality - realizacja Arteon',
               title: 'Projekt katalogu',
               description: (
@@ -249,7 +249,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              topImageSrc: '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
               topImageAlt: 'Identyfikacja wizualna dla kancelarii LUX NOVA - teczka, wizytówki, papier firmowy',
               title: 'Identyfikacja wizualna',
               description: (
@@ -266,7 +266,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/arteon-baners-msc.webp',
+              topImageSrc: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
               topImageAlt: 'Projekt graficzny strony internetowej dla gabinetu psychologicznego MSC Psychotherapy',
               title: 'Projekt graficzny strony',
               description: (
@@ -283,7 +283,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
+              topImageSrc: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               topImageAlt: 'Szablony postów na media społecznościowe dla gabinetu psychologicznego MSC Psychotherapy',
               title: 'Szablony postów do mediów społecznościowych',
               description: (
@@ -301,7 +301,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp',
+              topImageSrc: '/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp',
               topImageAlt: 'Bon walentynkowy dla salonu kosmetycznego Kasia - realizacja Arteon',
               title: 'Kupony rabatowe i vouchery',
               description: (
@@ -318,8 +318,8 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/cennik-mockup.webp',
-              topImageAlt: 'Projekt cennika usług - wizualizacja na drukowanym materiale',
+              topImageSrc: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
+              topImageAlt: 'Projekt papieru firmowego dla kancelarii LUX NOVA - przykład materiału drukowanego',
               title: 'Projekt cennika',
               description: (
                 <div className="flex h-full flex-col">
@@ -353,7 +353,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp',
+              topImageSrc: '/assets/projects/nocturna/nocturna-menu-mockup.png',
               topImageAlt: 'Ekskluzywna karta koktajli dla baru Nocturna - realizacja Arteon',
               title: 'Projekt menu restauracji',
               description: (
@@ -436,7 +436,7 @@ export default function OfferPage() {
           title="Tworzenie treści"
           items={[
             {
-              topImageSrc: '/assets/projects/arteon-baners-msc.webp',
+              topImageSrc: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
               topImageAlt: 'Treści na stronę internetową dla gabinetu psychologicznego MSC Psychotherapy',
               title: 'Strony www',
               description: (
@@ -455,8 +455,8 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              topImageAlt: 'Artykuły eksperckie i wpisy blogowe - realizacja dla PiłkaNożna.pl',
+              topImageSrc: '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
+              topImageAlt: 'Artykuły eksperckie - realizacja strony Perły Mocy',
               title: 'Artykuły eksperckie',
               description: (
                 <div className="flex h-full flex-col">
@@ -474,7 +474,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/arteon-baners-trilllizo.webp',
+              topImageSrc: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               topImageAlt: 'Opisy produktów e-commerce dla sklepu odzieżowego Trilllizo',
               title: 'E-commerce: opisy',
               description: (
@@ -493,7 +493,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
+              topImageSrc: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               topImageAlt: 'Treści do mediów społecznościowych dla gabinetu psychologicznego MSC Psychotherapy',
               title: 'Media społecznościowe: treści',
               description: (
@@ -512,7 +512,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp',
+              topImageSrc: '/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp',
               topImageAlt: 'Folder ofertowy dla firmy wykańczającej wnętrza Simba Group',
               title: 'Oferty i case studies',
               description: (
@@ -530,7 +530,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/arteon-baners-msc.webp',
+              topImageSrc: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
               topImageAlt: 'Korekta i redakcja treści na stronę internetową',
               title: 'Korekta i redakcja',
               description: (
@@ -559,7 +559,7 @@ export default function OfferPage() {
         description="Opisz, czego potrzebujesz - przygotujemy darmową wycenę i zaproponujemy rozwiązanie dopasowane do Twoich celów."
         btnOne="Napisz do nas"
         btnOneLink="/kontakt"
-        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
+        backgroundImage="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
         overlay="black"
       />
 

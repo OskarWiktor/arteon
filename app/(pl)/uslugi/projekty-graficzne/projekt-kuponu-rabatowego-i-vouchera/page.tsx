@@ -31,7 +31,7 @@ export const metadata = {
     description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -62,7 +62,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp"
+        backgroundImage="/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp"
         overlay="black"
       />
 
@@ -247,7 +247,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji kuponu lub vouchera"
           description="Napisz co chcesz przedstawić na kuponie, ile wariantów potrzebujesz oraz czy posiadasz logo - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp"
+          imageSrc="/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp"
           imageAlt="Realizacja projektu kuponu rabatowego"
           defaultSubject="Projekt kuponów i voucherów"
         />
@@ -283,8 +283,8 @@ export default function OfferDesignCouponsAndVouchersPage() {
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
-              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
@@ -292,14 +292,14 @@ export default function OfferDesignCouponsAndVouchersPage() {
               description: 'Program lojalności dla stałych klientów',
               size: 'medium',
               backgroundImage: '/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp',
-              btnLabel: 'Zobacz ofertę',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
             },
             {
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              backgroundImage: '/assets/projects/talia/mockup-wizytówki-talia.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
@@ -307,7 +307,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
@@ -328,7 +328,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp"
+        backgroundImage="/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp"
         overlay="black"
       />
 

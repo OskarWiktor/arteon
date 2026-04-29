@@ -60,7 +60,7 @@ export default function SectionCountdown({ title, description, targetDate, btnLa
 
           <div className="mt-6 flex justify-center gap-4">
             {timeUnits.map((unit, index) => (
-              <div key={index} className="rounded-xl bg-white/20 px-4 py-3">
+              <div key={index} className="rounded-lg bg-white/20 px-4 py-3">
                 <p className="text-3xl font-semibold">{String(unit.value).padStart(2, '0')}</p>
                 <p className="text-xs text-white/70">{unit.label}</p>
               </div>
@@ -68,7 +68,7 @@ export default function SectionCountdown({ title, description, targetDate, btnLa
           </div>
 
           {btnLabel && btnLink && (
-            <Link href={btnLink} prefetch={false} className="text-error-icon mt-8 inline-block rounded-xl bg-white px-8 py-3 font-medium transition hover:bg-white/90">
+            <Link href={btnLink} prefetch={false} className="text-error-icon mt-8 inline-block rounded-lg bg-white px-8 py-3 font-medium transition hover:bg-white/90">
               {btnLabel}
             </Link>
           )}

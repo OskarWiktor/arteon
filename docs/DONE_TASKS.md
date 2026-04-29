@@ -206,7 +206,7 @@
   - **Plik**: `data/pl/projects.json`
   - **Zakres**: 22 realizacje (wszystkie oprócz Perly Mocy i Izoluk)
   - **Wykonane zmiany**:
-    - CTA: zmieniono przyciski na opisowe ("Skontaktuj się z nami", "Sprawdź ofertę...")
+    - CTA: zmieniono przyciski na opisowe ("Skontaktuj się", "Sprawdź ofertę...")
     - FAQ: rozbudowano odpowiedzi, dodano szczegóły techniczne (CMYK, 300 DPI, spady)
     - SEO: poprawiono opisy meta (dłuższe, zachęcające, z nazwą realizacji)
     - contentBlocks: dodano nowe komponenty (`steps`, `featureList`) do realizacji: Nocturna, Simba Group, MSC szablony, Kasia, LUX NOVA wizytówka, TALIA
@@ -250,7 +250,7 @@
   - **Wykonane zmiany**:
     - Usunięto wstawkę wyobrażeniową ("Teraz wyobraź sobie" → "Załóżmy")
     - Skrócono oznaczenie przykładu hipotetycznego (bez "(wymyślony, nie oparty o realną kancelarię)")
-    - Zmieniono przyciski CTA: "Audyt SEO" → "Sprawdź ofertę audytu SEO", "Skontaktuj się" → "Skontaktuj się z nami"
+    - Zmieniono przyciski CTA: "Audyt SEO" → "Sprawdź ofertę audytu SEO", "Skontaktuj się" → "Skontaktuj się"
     - Zaktualizowano dateModified na 2026-01-16
   - **Weryfikacja**: nie wymagana (COPY-only)
 
@@ -700,7 +700,7 @@
 
   - **Pliki**: `components/ui/sections/SectionProcess.tsx`, `components/ui/sections/SectionSteps.tsx`
   - **Zmiany**:
-    - Zmieniono style ikon na zgodne z FeatureCard (h-12 w-12 rounded-xl)
+    - Zmieniono style ikon na zgodne z FeatureCard (h-12 w-12 rounded-lg)
     - SectionProcess: ciemne tło ikony (bg-[#1b2632] text-white)
     - SectionSteps: jasne tło ikony (bg-[#d8e0e9] text-[#1b2632])
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
@@ -852,7 +852,7 @@
 - ✅ **[COMPONENT-021] Modal i SearchModal - style już poprawne**
 
   - **Pliki**: `components/ui/ConfirmModal.tsx`, `components/ui/SearchDialog.tsx`
-  - **Status**: Komponenty już mają poprawne style (rounded-2xl, odpowiednie odstępy)
+  - **Status**: Komponenty już mają poprawne style (rounded-lg, odpowiednie odstępy)
 
 - ✅ **[COMPONENT-034] SectionImageCarousel - karuzela zdjęć z fade**
 
@@ -1049,7 +1049,7 @@
   - **Pliki**: `components/sections/FeatureGrid.tsx`, `components/ui/FeatureCard.tsx`
   - **Zmiany**:
     - FeatureGrid: nowy prop `columns?: 2 | 3` (domyślnie 2)
-    - FeatureCard: układ horyzontalny z ikoną w kwadratowym kontenerze (12x12, rounded-xl, bg-[#d8e0e9])
+    - FeatureCard: układ horyzontalny z ikoną w kwadratowym kontenerze (12x12, rounded-lg, bg-[#d8e0e9])
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
 - ✅ **BreadCrumbs - poprawka łamania linii**
@@ -1065,7 +1065,7 @@
 
   - **Plik**: `components/ui/buttons/Button.tsx`
   - **Zmiany**:
-    - Zmiana ikony strzałki z `RiArrowRightUpLine` na `RiArrowRightLine`
+    - Zmiana ikony strzałki z `RiArrowRightUpLine` na `RiArrowRightSLine`
     - Dodanie nowego wariantu `outline` (ramka [#1b2632], hover wypełnienie)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
@@ -1752,7 +1752,7 @@
     - Uproszczono zakładkę Odstępy - usunięto boxy, zmniejszono tekst, użyto prostego layoutu z przyciskami Mały/Standard/Duży.
     - Naprawiono sekcję „Kolory i rozmiary elementów":
       - Zwiększono ikony kolorów z `h-4 w-4` do `h-6 w-6`.
-      - Usunięto ramki przy elementach (`rounded-lg border border-neutral-200 bg-neutral-50`).
+      - Usunięto ramki przy elementach (`rounded-md border border-neutral-200 bg-neutral-50`).
       - Zwiększono przyciski A-/A+ z `px-2 py-1 text-[10px]` do `px-3 py-1.5 text-xs`.
       - Naprawiono color picker - teraz jest `h-6 w-6` kwadratem z border.
     - Usunięto ikonkę RiRefreshLine z przycisku „Resetuj wygląd".
@@ -1796,7 +1796,7 @@
   - **Co zrobiono**:
     - Zmieniono etykietę z „Motyw kolorystyczny" na „Kolory i czcionki" (w zakładce Wygląd nie było przycisków motywów).
     - Ujednolicono checkbox „Pokaż ikony zamiast nazw" - dodano `id` i `htmlFor`, użyto spójnych klas z checkboxem „Pokaż linię oddzielającą".
-    - Zmieniono styl przycisków A-/A+ (rozmiar czcionki elementów) na spójny z innymi przyciskami opcji (rounded-lg border, px-2 py-1).
+    - Zmieniono styl przycisków A-/A+ (rozmiar czcionki elementów) na spójny z innymi przyciskami opcji (rounded-md border, px-2 py-1).
     - Zaktualizowano stronę instrukcji - usunięto wzmianki o „motywach kolorystycznych" (sekcja i schema HowTo).
   - **Pliki zmienione**:
     - `components/sections/tools/EmailSignatureGenerator.tsx`

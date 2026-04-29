@@ -237,7 +237,7 @@ interface FormatPickerProps {
 **ONLY use `react-icons/ri`:**
 
 ```typescript
-import { RiArrowRightLine, RiDownloadLine } from 'react-icons/ri';
+import { RiArrowRightSLine, RiDownloadLine } from 'react-icons/ri';
 ```
 
 **NEVER use `lucide-react`** - forbidden in project.

@@ -119,12 +119,12 @@ export default function SectionSteps({
         {subtitle && <span className={`mb-2 block text-base tracking-wider uppercase md:mb-4 ${hasBg ? 'text-white' : 'text-light'}`}>{subtitle}</span>}
 
         {title && (
-          <SectionHeadingTag id={titleId} className={`${toneTextClass} h3 mb-4 md:mb-6 lg:mb-8`}>
+          <SectionHeadingTag id={titleId} className={`${toneTextClass} h3 mb-4 lg:mb-6`}>
             {title}
           </SectionHeadingTag>
         )}
 
-        {description && <p className={`mb-4 md:mb-6 lg:mb-8 ${toneMutedClass}`}>{description}</p>}
+        {description && <p className={`mb-4 lg:mb-6 ${toneMutedClass}`}>{description}</p>}
 
         <ExpandableStepsList
           items={items}
@@ -188,11 +188,11 @@ function ExpandableStepsList({ items, gridColsSm, gridColsMd, gridColsLg, showIn
         return (
           <li key={index} className="flex flex-col items-stretch">
             <article
-              className={`flex h-full w-full flex-col p-4 md:p-6 ${variant === 'contact' ? 'text-center' : ''} ${highlighted ? 'bg-primary rounded-2xl text-white shadow-lg' : 'surface-card-lift border border-neutral-200'}`}
+              className={`flex h-full w-full flex-col p-4 md:p-6 ${variant === 'contact' ? 'text-center' : ''} ${highlighted ? 'bg-primary rounded-lg text-white shadow-lg' : 'surface-card-lift border border-neutral-200'}`}
             >
               {topImageSrc && (
                 <div className="mb-4 md:mb-6">
-                  <div className="relative h-52 w-full overflow-hidden rounded-xl md:h-68">
+                  <div className="relative h-52 w-full overflow-hidden rounded-lg md:h-68">
                     <Image
                       src={topImageSrc}
                       alt={topImageAlt ?? ''}
@@ -207,7 +207,7 @@ function ExpandableStepsList({ items, gridColsSm, gridColsMd, gridColsLg, showIn
 
               {hasVisual && (
                 <div className={`mb-4 flex ${variant === 'contact' ? 'justify-center' : 'justify-start'}`}>
-                  <div className={`flex h-12 w-12 items-center justify-center rounded-xl ${highlighted ? 'bg-white/20 text-white' : 'bg-primary-light text-primary'}`}>
+                  <div className={`flex h-12 w-12 items-center justify-center rounded-lg ${highlighted ? 'bg-white/20 text-white' : 'bg-primary-light text-primary'}`}>
                     {showIndex ? (
                       <span className="text-base font-semibold">{index + 1}</span>
                     ) : imageSrc ? (

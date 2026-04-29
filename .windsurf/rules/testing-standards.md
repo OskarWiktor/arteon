@@ -695,7 +695,7 @@ import ErrorBoundary from '@/components/ErrorBoundary';
 describe('Error Boundary', () => {
   test('catches render errors and shows fallback', async ({ page }) => {
       const ErrorBoundary = () => (
-        <div className="p-4 border border-red-200 rounded-lg bg-red-50">
+        <div className="p-4 border border-red-200 rounded-md bg-red-50">
           <h2>Wystąpił błąd</h2>
           <p>Coś spróbuj ponownie.</p>
           <button onClick={() => window.location.reload()}>

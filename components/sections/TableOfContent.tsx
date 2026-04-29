@@ -77,7 +77,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
         const isActive = activeId === i.id;
         return (
           <li key={i.id} className={i.level === 3 ? 'border-l border-black/10' : ''}>
-            <a href={`#${i.id}`} aria-current={isActive ? 'location' : undefined} className={`text-mid flex items-center gap-1 rounded-2xl px-2 py-1 hover:underline ${isActive ? 'bg-black/5' : ''}`}>
+            <a href={`#${i.id}`} aria-current={isActive ? 'location' : undefined} className={`text-mid flex items-center gap-1 rounded-lg px-2 py-1 hover:underline ${isActive ? 'bg-black/5' : ''}`}>
               <span className="line-clamp-1 text-[14px]">{i.text}</span>
             </a>
           </li>
@@ -90,7 +90,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
     <>
       {/* Mobile */}
       <aside className={`block lg:hidden ${widthClass}`}>
-        <div className="relative rounded-xl border border-black/10 bg-white shadow-sm">
+        <div className="relative rounded-lg border border-black/10 bg-white shadow-sm">
           <div className="flex items-center justify-between p-2">
             <p className="text-light text-xs font-medium tracking-wider uppercase">
               Spis treści <span className="opacity-60">({items.length})</span>

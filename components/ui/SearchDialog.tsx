@@ -3,7 +3,7 @@
 import { useEffect, useRef, useCallback, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { RiSearchLine, RiCloseLine, RiArrowRightLine } from 'react-icons/ri';
+import { RiSearchLine, RiCloseLine, RiArrowRightSLine } from 'react-icons/ri';
 import { createPortal } from 'react-dom';
 import { useSearch } from '@/hooks/useSearch';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
@@ -153,7 +153,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
       aria-modal="true"
       aria-label={t.ariaLabel}
     >
-      <div className="animate-modal-content w-full max-w-xl overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5">
+      <div className="animate-modal-content w-full max-w-xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black/5">
         <div className="flex items-center gap-2 border-b border-neutral-200 px-4 py-1">
           <RiSearchLine className="text-primary h-4 w-4 shrink-0" aria-hidden="true" />
           <input
@@ -197,7 +197,7 @@ function SearchResultItem({ item, isActive, dataIndex, onClick }: SearchResultIt
         <div className="text-dark truncate text-sm font-medium">{item.title}</div>
         {item.description && <div className="text-light truncate text-xs">{item.description}</div>}
       </div>
-      <RiArrowRightLine className={`text-primary h-4 w-4 shrink-0 transition ${isActive ? 'translate-x-0.5 opacity-100' : 'opacity-0 group-hover:opacity-50'}`} aria-hidden="true" />
+      <RiArrowRightSLine className={`text-primary h-4 w-4 shrink-0 transition ${isActive ? 'translate-x-0.5 opacity-100' : 'opacity-0 group-hover:opacity-50'}`} aria-hidden="true" />
     </button>
   );
 }

@@ -20,13 +20,13 @@ export default function SectionBeforeAfter({ title, beforeImage, afterImage, bef
     <section data-section="before-after" aria-labelledby={title ? 'before-after-title' : undefined}>
       <Wrapper>
         {title && (
-          <h2 id="before-after-title" className="h3 mb-4 md:mb-6 lg:mb-8">
+          <h2 id="before-after-title" className="h3 mb-4 lg:mb-6">
             {title}
           </h2>
         )}
 
         <div className="mx-auto max-w-2xl">
-          <div className="relative aspect-video overflow-hidden rounded-2xl shadow-lg">
+          <div className="relative aspect-video overflow-hidden rounded-lg shadow-lg">
             <div className="absolute inset-0">
               <Image src={afterImage} alt={afterLabel} fill className="object-cover" sizes="(min-width:1024px) 672px, 100vw" />
             </div>

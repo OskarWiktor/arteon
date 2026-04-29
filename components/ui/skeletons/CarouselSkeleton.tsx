@@ -10,13 +10,13 @@ interface CarouselSkeletonProps {
 function ProjectCardSkeleton() {
   return (
     <div className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]">
-      <div className="overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm">
+      <div className="overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm">
         <Shimmer className="aspect-[2/1] w-full !rounded-none !bg-neutral-300" />
         <div className="space-y-3 px-6 py-4 md:px-7 md:py-5">
           <Shimmer className="h-5 w-3/4 !rounded-md" />
           <Shimmer className="h-3.5 w-full !rounded-md" />
           <div className="mt-2 h-px w-full bg-neutral-200" />
-          <Shimmer className="h-8 w-36 !rounded-2xl" />
+          <Shimmer className="h-8 w-36 !rounded-lg" />
         </div>
       </div>
     </div>
@@ -26,13 +26,13 @@ function ProjectCardSkeleton() {
 function ToolCardSkeleton() {
   return (
     <div className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]">
-      <div className="overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm">
+      <div className="overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm">
         <Shimmer className="!bg-neutral-250 aspect-[16/9] w-full !rounded-none !bg-neutral-300" />
         <div className="space-y-3 p-4 md:p-5">
           <Shimmer className="h-5 w-3/5 !rounded-md" />
           <Shimmer className="h-3.5 w-full !rounded-md" />
           <Shimmer className="h-3.5 w-4/5 !rounded-md" />
-          <Shimmer className="mt-2 h-9 w-36 !rounded-2xl" />
+          <Shimmer className="mt-2 h-9 w-36 !rounded-lg" />
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@ function ToolCardSkeleton() {
 function ArticleCardSkeleton() {
   return (
     <div className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]">
-      <div className="overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm">
+      <div className="overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm">
         <Shimmer className="aspect-[16/9] w-full !rounded-none !bg-neutral-300" />
         <div className="space-y-2 p-4">
           <Shimmer className="h-5 w-4/5 !rounded-md" />
@@ -61,7 +61,7 @@ function ArticleCardSkeleton() {
 function TestimonialCardSkeleton() {
   return (
     <div className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]">
-      <div className="flex flex-col items-center rounded-2xl border border-black/5 bg-white p-5 shadow-sm md:px-6 md:py-8">
+      <div className="flex flex-col items-center rounded-lg border border-black/5 bg-white p-5 shadow-sm md:px-6 md:py-8">
         <Shimmer className="h-6 w-40 !rounded-md" />
         <Shimmer className="mt-2 h-4 w-28 !rounded-md" />
         <div className="mt-2 flex gap-1">

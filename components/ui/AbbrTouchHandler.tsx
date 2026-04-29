@@ -22,7 +22,7 @@ export default function AbbrTouchHandler() {
       hideTooltip();
 
       tooltip = document.createElement('div');
-      tooltip.className = 'fixed z-[9999] max-w-xs rounded-xl bg-black px-4 py-3 text-sm text-white shadow-lg pointer-events-none';
+      tooltip.className = 'fixed z-[9999] max-w-xs rounded-lg bg-black px-4 py-3 text-sm text-white shadow-lg pointer-events-none';
       tooltip.style.transform = 'translateX(-50%)';
       tooltip.textContent = text;
       document.body.appendChild(tooltip);

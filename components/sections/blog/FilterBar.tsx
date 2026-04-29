@@ -71,7 +71,7 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
         <button
           type="button"
           onClick={openModal}
-          className="inline-flex items-center gap-2 rounded-2xl border border-black/10 bg-white px-3 py-2 text-sm font-medium shadow-md transition hover:-translate-y-0.5 hover:shadow-lg"
+          className="inline-flex items-center gap-2 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
           aria-haspopup="dialog"
           aria-expanded={isModalOpen}
         >
@@ -109,7 +109,7 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
             <button
               type="button"
               onClick={toggleExpand}
-              className="inline-flex shrink-0 items-center gap-1 rounded-2xl border border-black/10 bg-white px-3 py-1.5 text-sm font-medium shadow-md transition hover:-translate-y-0.5 hover:shadow-lg"
+              className="inline-flex shrink-0 items-center gap-1 rounded-lg border border-black/10 bg-white px-3 py-1.5 text-sm font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
               aria-expanded={isExpanded}
             >
               <span>{isExpanded ? 'Mniej filtrów' : 'Więcej filtrów'}</span>
@@ -187,7 +187,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
       aria-modal="true"
       aria-label="Wybierz kategorię"
     >
-      <div className="animate-modal-content w-full max-w-lg overflow-hidden rounded-2xl bg-white shadow-xl" onKeyDown={handleKeyDown}>
+      <div className="animate-modal-content w-full max-w-lg overflow-hidden rounded-lg bg-white shadow-lg" onKeyDown={handleKeyDown}>
         {/* Header */}
         <div className="flex items-center justify-between border-b border-neutral-200 px-4 py-3">
           <h3 className="text-base font-semibold">Wybierz kategorię</h3>

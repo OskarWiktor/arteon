@@ -192,7 +192,7 @@
         {
           "title": "HTML",
           "icon": "RiHtml5Line",
-          "html": "<p class=\"text-mid mb-3\">Placez les fichiers générés dans le répertoire racine de votre site (là où se trouve index.html). Ajoutez ensuite les balises correspondantes dans la section &lt;head&gt; :</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Le code ci-dessus est un exemple : adaptez les chemins à la structure de votre site.</p>"
+          "html": "<p class=\"text-mid mb-3\">Placez les fichiers générés dans le répertoire racine de votre site (là où se trouve index.html). Ajoutez ensuite les balises correspondantes dans la section &lt;head&gt; :</p><pre class=\"bg-primary-light mb-3 overflow-x-auto rounded-md p-4 text-sm\"><code>&lt;link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"&gt;\n&lt;link rel=\"icon\" href=\"/icon-32x32.png\" type=\"image/png\" sizes=\"32x32\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"&gt;</code></pre><p class=\"text-light\">Le code ci-dessus est un exemple : adaptez les chemins à la structure de votre site.</p>"
         },
         {
           "title": "Next.js / React",

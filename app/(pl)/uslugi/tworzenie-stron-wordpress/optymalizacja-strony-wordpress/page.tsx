@@ -113,7 +113,7 @@ export default function OfferOptimizationWordPressPage() {
 
         <SectionBasic
           variant="right"
-          imageSrc="/assets/projects/finish-masters/finish-masters-optymalizacja-strony-wynik.webp"
+          imageSrc="/assets/projects/finish-masters/strona/finish-masters-optymalizacja-strony-wynik.webp"
           imageAlt="Wynik optymalizacji strony WordPress - raport PageSpeed Insights firmy Finish Masters"
           subtitle="Dla kogo"
           title="Kiedy optymalizacja WordPress ma największy sens?"
@@ -252,9 +252,9 @@ export default function OfferOptimizationWordPressPage() {
           description="Zakres efektów zależy od punktu wyjścia i hostingu, ale w większości realizacji po optymalizacji widoczne są:"
         >
           <ul className="mt-4 grid grid-cols-1 gap-3 pl-0 text-sm md:grid-cols-3">
-            <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">Wyraźnie szybsze ładowanie strony - szczególnie na urządzeniach mobilnych.</li>
-            <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">Stabilniejsza praca WordPressa dzięki mniejszej liczbie konfliktów między wtyczkami i motywami.</li>
-            <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">Czytelniejsza wersja mobilna i prostsza ścieżka do kontaktu, rezerwacji lub zakupu.</li>
+            <li className="list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200">Wyraźnie szybsze ładowanie strony - szczególnie na urządzeniach mobilnych.</li>
+            <li className="list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200">Stabilniejsza praca WordPressa dzięki mniejszej liczbie konfliktów między wtyczkami i motywami.</li>
+            <li className="list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200">Czytelniejsza wersja mobilna i prostsza ścieżka do kontaktu, rezerwacji lub zakupu.</li>
           </ul>
         </SectionBasic>
 
@@ -270,7 +270,7 @@ export default function OfferOptimizationWordPressPage() {
               <h3 className="h5 mb-3">Camper Albania - wypożyczalnia kamperów</h3>
               <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
                 <figure>
-                  <div className="overflow-hidden rounded-2xl border border-black/10">
+                  <div className="overflow-hidden rounded-lg border border-black/10">
                     <Image
                       src="/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-przed.webp"
                       alt="Camper Albania - wynik PageSpeed przed optymalizacją"
@@ -283,7 +283,7 @@ export default function OfferOptimizationWordPressPage() {
                   <figcaption className="text-light mt-2 text-sm">Przed optymalizacją</figcaption>
                 </figure>
                 <figure>
-                  <div className="overflow-hidden rounded-2xl border border-black/10">
+                  <div className="overflow-hidden rounded-lg border border-black/10">
                     <Image
                       src="/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-po.webp"
                       alt="Camper Albania - wynik PageSpeed po optymalizacji"
@@ -302,7 +302,7 @@ export default function OfferOptimizationWordPressPage() {
               <h3 className="h5 mb-3">MSC Psychotherapy - gabinet psychologiczny</h3>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <figure>
-                  <div className="overflow-hidden rounded-2xl border border-black/10">
+                  <div className="overflow-hidden rounded-lg border border-black/10">
                     <Image
                       src="/assets/projects/msc/msc-optymalizacja-strony-wynik-przed.webp"
                       alt="MSC Psychotherapy - wynik PageSpeed przed optymalizacją"
@@ -315,7 +315,7 @@ export default function OfferOptimizationWordPressPage() {
                   <figcaption className="text-light mt-2 text-sm">Przed optymalizacją</figcaption>
                 </figure>
                 <figure>
-                  <div className="overflow-hidden rounded-2xl border border-black/10">
+                  <div className="overflow-hidden rounded-lg border border-black/10">
                     <Image
                       src="/assets/projects/msc/msc-optymalizacja-strony-wynik-po.webp"
                       alt="MSC Psychotherapy - wynik PageSpeed po optymalizacji"
@@ -472,8 +472,8 @@ export default function OfferOptimizationWordPressPage() {
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'large',
-              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
-              btnLabel: 'Zobacz ofertę',
+              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
@@ -481,14 +481,14 @@ export default function OfferOptimizationWordPressPage() {
               description: 'Strona firmowa z gwarancją wydajności 90+/100',
               size: 'medium',
               backgroundImage: '/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp',
-              btnLabel: 'Zobacz ofertę',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Audyt SEO',
               description: 'Diagnoza stanu optymalizacji witryny',
               size: 'small',
-              backgroundImage: '/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp',
+              backgroundImage: '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/audyt-seo',
             },

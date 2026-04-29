@@ -15,14 +15,14 @@ export default function SectionStepsSkeleton({ cols = 3 }: SectionStepsSkeletonP
       <Shimmer className="h-4 w-3/5 !rounded-md" />
       <div className={`mt-4 grid gap-4 ${gridClass}`}>
         {Array.from({ length: cols }).map((_, i) => (
-          <div key={i} className="overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm">
+          <div key={i} className="overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm">
             {hasImages && <Shimmer className="aspect-[16/9] w-full !rounded-none !bg-neutral-300" />}
             <div className="space-y-3 p-6">
-              {!hasImages && <Shimmer className="h-10 w-10 !rounded-xl" />}
+              {!hasImages && <Shimmer className="h-10 w-10 !rounded-lg" />}
               <Shimmer className="h-5 w-3/4 !rounded-md" />
               <Shimmer className="h-3.5 w-full !rounded-md" />
               <Shimmer className="h-3.5 w-5/6 !rounded-md" />
-              {hasImages && <Shimmer className="mt-2 h-9 w-40 !rounded-2xl" />}
+              {hasImages && <Shimmer className="mt-2 h-9 w-40 !rounded-lg" />}
             </div>
           </div>
         ))}

@@ -164,7 +164,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
           <ToolSection className="space-y-3">
             <h2 className="h6">Base64</h2>
             <textarea
-              className="tool-textarea min-h-[300px] w-full resize-y rounded-xl border border-neutral-200 bg-neutral-50 p-4 font-mono text-xs! transition outline-none focus:border-neutral-300 focus:bg-white"
+              className="tool-textarea min-h-[300px] w-full resize-y rounded-lg border border-neutral-200 bg-neutral-50 p-4 font-mono text-xs! transition outline-none focus:border-neutral-300 focus:bg-white"
               value={base64}
               readOnly
               placeholder={t.base64Placeholder}
@@ -189,7 +189,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
         <ToolSection className="space-y-3">
           <h2 className="h6">Base64</h2>
           <textarea
-            className="tool-textarea min-h-[300px] w-full resize-y rounded-xl border border-neutral-200 bg-neutral-50 p-4 font-mono text-xs! transition outline-none focus:border-neutral-300 focus:bg-white"
+            className="tool-textarea min-h-[300px] w-full resize-y rounded-lg border border-neutral-200 bg-neutral-50 p-4 font-mono text-xs! transition outline-none focus:border-neutral-300 focus:bg-white"
             value={base64}
             onChange={(e) => setBase64(e.target.value)}
             placeholder={t.base64PastePlaceholder}
@@ -210,7 +210,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
           <h2 className="h6">{t.imagePreview}</h2>
           {previewUrl ? (
             <div className="space-y-3">
-              <div className="flex items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+              <div className="flex items-center justify-center rounded-lg border border-neutral-200 bg-neutral-50 p-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={previewUrl} alt={t.decodedImageAlt} className="max-h-[400px] max-w-full object-contain" />
               </div>
@@ -219,7 +219,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
               </Button>
             </div>
           ) : (
-            <div className="flex min-h-[300px] items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+            <div className="flex min-h-[300px] items-center justify-center rounded-lg border border-neutral-200 bg-neutral-50 p-4">
               <p className="tool-meta">{t.base64DecodeHint}</p>
             </div>
           )}
