@@ -25,11 +25,7 @@
   "schemas": {
     "software": {
       "name": "Dziesiętny na binarny – DEC na BIN, kurs informatyki IT",
-      "alternateName": [
-        "Przelicznik dziesiętny binarny",
-        "Kalkulator DEC BIN",
-        "Decimal to binary"
-      ],
+      "alternateName": ["Przelicznik dziesiętny binarny", "Kalkulator DEC BIN", "Decimal to binary"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz liczby dziesiętne na binarne i odwrotnie. Niezbędne na kursach informatyki i przy programowaniu niskopoziomowym. Działa w przeglądarce, bez rejestracji.",

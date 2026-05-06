@@ -25,11 +25,7 @@
   "schemas": {
     "software": {
       "name": "Przelicznik em na px – konwerter CSS z ustawianym font-size",
-      "alternateName": [
-        "Przelicznik em na px",
-        "Kalkulator em CSS",
-        "em to pixels"
-      ],
+      "alternateName": ["Przelicznik em na px", "Kalkulator em CSS", "em to pixels"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Oblicz piksele z em w CSS – ustaw font-size rodzica i sprawdź wynik od razu. Przydatny przy typografii, paddingu i media queries. Bez instalacji, bez rejestracji.",

@@ -2,10 +2,8 @@ import {
   RiSpeedFill,
   RiArticleLine,
   RiPencilRuler2Line,
-  RiMoneyDollarCircleLine,
   RiCheckboxCircleLine,
   RiLayoutLine,
-  RiCalendarCheckLine,
   RiKey2Line,
   RiShieldCheckLine,
   RiCustomerService2Line,
@@ -136,14 +134,7 @@ export default function TworzenieStronWordPressPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiCalendarCheckLine />, label: 'Faktura po realizacji' },
-          { icon: <RiSpeedFill />, label: 'Wydajność 90+/100' },
-          { icon: <RiMoneyDollarCircleLine />, label: 'Zero ukrytych kosztów' },
-          { icon: <RiLayoutLine />, label: 'Licencja Elementor Pro w cenie' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: '/uslugi/tworzenie-stron-wordpress', label: 'Strony internetowe WordPress' }} includeJsonLd />
 
@@ -484,7 +475,6 @@ export default function TworzenieStronWordPressPage() {
           items={[
             {
               title: 'Sklepy internetowe',
-              description: 'Własny sklep online bez pośredników',
               size: 'large',
               backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -492,7 +482,6 @@ export default function TworzenieStronWordPressPage() {
             },
             {
               title: 'Pozycjonowanie stron',
-              description: 'Zwiększ widoczność w Google',
               size: 'medium',
               backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -500,7 +489,6 @@ export default function TworzenieStronWordPressPage() {
             },
             {
               title: 'Projekt logo',
-              description: 'Rozpoznawalny znak firmowy',
               size: 'small',
               backgroundImage: '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -508,7 +496,6 @@ export default function TworzenieStronWordPressPage() {
             },
             {
               title: 'Tworzenie treści',
-              description: 'Teksty na stronę i blog',
               size: 'small',
               backgroundImage: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
               btnLabel: 'Sprawdź ofertę',

@@ -28,7 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convert HTML to Markdown format. Automatic parsing and formatting. Free, no registration.",
-      "featureList": ["Converts h1–h6 to # through ###### Markdown headings", "Converts <strong>/<b> to **bold** and <em>/<i> to *italic*", "Converts <a href> to [text](url) Markdown links", "Converts <img> to ![alt](src) Markdown images", "Converts <ul>/<ol> to - and 1. list items including nested lists", "Converts <pre><code> to fenced code blocks with language hint", "Converts <table> to pipe-separated Markdown tables", "Strips non-semantic tags (div, span, script, style) cleanly", "Batch multi-file conversion", "Local browser processing – no upload"],
+      "featureList": [
+        "Converts h1–h6 to # through ###### Markdown headings",
+        "Converts <strong>/<b> to **bold** and <em>/<i> to *italic*",
+        "Converts <a href> to [text](url) Markdown links",
+        "Converts <img> to ![alt](src) Markdown images",
+        "Converts <ul>/<ol> to - and 1. list items including nested lists",
+        "Converts <pre><code> to fenced code blocks with language hint",
+        "Converts <table> to pipe-separated Markdown tables",
+        "Strips non-semantic tags (div, span, script, style) cleanly",
+        "Batch multi-file conversion",
+        "Local browser processing – no upload"
+      ],
       "alternateName": ["Convert HTML to Markdown", "HTML to Markdown", "Free HTML to Markdown converter"]
     },
     "howTo": {

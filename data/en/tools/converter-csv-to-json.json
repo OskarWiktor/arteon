@@ -28,7 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convert CSV to JSON format. Automatic parsing and formatting. Free, no registration.",
-      "featureList": ["Auto-detection of comma, semicolon, and tab delimiters", "First-row header mapping to JSON property names", "Handles quoted values and embedded newlines", "Unicode and special character preservation", "Batch multi-file conversion", "Local browser processing – no upload", "Download output as .json file", "Compatible with Shopify, Google Sheets, and PostgreSQL COPY exports", "Supports Python pandas and D3.js input format", "Empty cell handling with empty string or null"],
+      "featureList": [
+        "Auto-detection of comma, semicolon, and tab delimiters",
+        "First-row header mapping to JSON property names",
+        "Handles quoted values and embedded newlines",
+        "Unicode and special character preservation",
+        "Batch multi-file conversion",
+        "Local browser processing – no upload",
+        "Download output as .json file",
+        "Compatible with Shopify, Google Sheets, and PostgreSQL COPY exports",
+        "Supports Python pandas and D3.js input format",
+        "Empty cell handling with empty string or null"
+      ],
       "alternateName": ["Convert CSV to JSON", "CSV to JSON", "Free CSV to JSON converter"]
     },
     "howTo": {

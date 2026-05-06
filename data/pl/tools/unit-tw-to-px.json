@@ -25,11 +25,7 @@
   "schemas": {
     "software": {
       "name": "Tailwind CSS spacing na piksele – przelicznik klas p-4, m-8, gap",
-      "alternateName": [
-        "Przelicznik Tailwind CSS spacing px",
-        "Kalkulator spacing Tailwind CSS",
-        "Tailwind CSS spacing to pixels"
-      ],
+      "alternateName": ["Przelicznik Tailwind CSS spacing px", "Kalkulator spacing Tailwind CSS", "Tailwind CSS spacing to pixels"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz wartości spacing Tailwind CSS na piksele – wpisz 4 i sprawdź, że to 16 px. Niezbędny przy pracy z Figma i pixel-perfect layoutami. Bez rejestracji.",

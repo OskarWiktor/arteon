@@ -25,11 +25,7 @@
   "schemas": {
     "software": {
       "name": "Przelicznik pt na px – punkty typograficzne na piksele CSS",
-      "alternateName": [
-        "Przelicznik pt na px",
-        "Kalkulator punktów na piksele",
-        "Points to pixels"
-      ],
+      "alternateName": ["Przelicznik pt na px", "Kalkulator punktów na piksele", "Points to pixels"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz punkty typograficzne (pt) na piksele – sprawdz, ze 12 pt = 16 px i zlap zwiazek miedzy InDesign, Word a CSS. Dziala w przegladarce, bez rejestracji.",

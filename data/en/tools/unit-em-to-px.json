@@ -29,7 +29,17 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert CSS em units to pixels and vice versa. Set your base font size and get instant pixel values for responsive web design.",
-      "featureList": ["Real-time bidirectional em ↔ px conversion", "Configurable base font size (default 16px)", "Shows compounding effect explanation", "Copy result to clipboard in one click", "Reverse conversion: px back to em", "Reference table with common em values", "Works entirely in browser — no server calls", "Supports decimal values (e.g. 1.5em, 0.875em)", "Useful for WCAG 1.4.4 font scaling compliance"]
+      "featureList": [
+        "Real-time bidirectional em ↔ px conversion",
+        "Configurable base font size (default 16px)",
+        "Shows compounding effect explanation",
+        "Copy result to clipboard in one click",
+        "Reverse conversion: px back to em",
+        "Reference table with common em values",
+        "Works entirely in browser — no server calls",
+        "Supports decimal values (e.g. 1.5em, 0.875em)",
+        "Useful for WCAG 1.4.4 font scaling compliance"
+      ]
     },
     "howTo": {
       "name": "How to use the em to px converter",

@@ -192,7 +192,7 @@ Struktura repo (w uproszczeniu):
   - **[responsive UI]** wariant mobilny (zwijany) i desktop.
   - **[a11y]** poprawne atrybuty i nawigacja.
 
-### `TechStack` (`components/sections/TechStack.tsx`)
+### `LogoCarousel` (`components/sections/LogoCarousel.tsx`)
 
 - **Co robi**: Przewijana (marquee) lista technologii z ikonami.
 - **Odpowiedzialności**:

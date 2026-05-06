@@ -25,11 +25,7 @@
   "schemas": {
     "software": {
       "name": "Konwerter dziesiętny na szesnastkowy – DEC ↔ HEX",
-      "alternateName": [
-        "Przelicznik DEC HEX",
-        "Kalkulator szesnastkowy",
-        "Decimal to hexadecimal"
-      ],
+      "alternateName": ["Przelicznik DEC HEX", "Kalkulator szesnastkowy", "Decimal to hexadecimal"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz liczby dziesiętne na HEX i odwrotnie. Niezbędne przy kolorach CSS, debugowaniu pamięci i adresach MAC. Działa w przeglądarce, bez rejestracji.",

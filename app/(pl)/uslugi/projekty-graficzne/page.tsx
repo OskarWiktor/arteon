@@ -4,7 +4,6 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
-import SectionBento from '@/components/ui/sections/SectionBento';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -16,10 +15,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import {
-  RiPencilRuler2Line,
   RiBrushLine,
-  RiBarChart2Fill,
-  RiLightbulbFlashLine,
   RiImageLine,
   RiIdCardLine,
   RiFileList2Line,
@@ -112,21 +108,14 @@ export default function OfferDesignPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
-          { icon: <RiBrushLine />, label: 'Perfekcja detalu' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="xs" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title="Realizacje projektów graficznych" category="grafika" />
 
         <Gap variant="line" />
 
@@ -546,46 +535,6 @@ export default function OfferDesignPage() {
               question: 'Czy po zakończeniu projektu mam pełne prawa do plików?',
               answer:
                 'Tak, po opłaceniu projektu otrzymujesz pełne prawa autorskie oraz wszystkie pliki źródłowe. Możesz z nich korzystać dowolnie, także w przyszłych realizacjach lub w innych agencjach.',
-            },
-          ]}
-        />
-
-        <Gap variant="line" />
-
-        <SectionBento
-          title="Poznaj inne usługi"
-          items={[
-            {
-              title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
-              size: 'large',
-              backgroundImage: '/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp',
-              btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-stron-wordpress',
-            },
-            {
-              title: 'Sklepy internetowe',
-              description: 'Sprzedawaj produkty we własnym sklepie online',
-              size: 'medium',
-              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
-              btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/sklepy-internetowe',
-            },
-            {
-              title: 'Pozycjonowanie stron',
-              description: 'Zwiększ widoczność w Google i nie tylko',
-              size: 'small',
-              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
-              btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/marketing/pozycjonowanie-stron',
-            },
-            {
-              title: 'Tworzenie treści',
-              description: 'Teksty, które przyciągają klientów',
-              size: 'small',
-              backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
-              btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/tworzenie-tresci',
             },
           ]}
         />

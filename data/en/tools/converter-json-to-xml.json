@@ -28,7 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convert JSON to XML format. Automatic parsing and formatting. Free, no registration.",
-      "featureList": ["Generates valid XML declaration (<?xml version=\"1.0\" encoding=\"UTF-8\"?>)", "Maps JSON objects to XML child elements", "Converts JSON arrays to repeated sibling elements", "Automatic escaping of <, >, &, quotes in text content", "Wraps top-level JSON arrays in a configurable root element", "2-space indented output for readability", "Batch multi-file conversion", "Local browser processing – no upload", "Compatible with SOAP, SAP, Salesforce, and RSS/Atom feed formats", "Handles null values as empty XML elements"],
+      "featureList": [
+        "Generates valid XML declaration (<?xml version=\"1.0\" encoding=\"UTF-8\"?>)",
+        "Maps JSON objects to XML child elements",
+        "Converts JSON arrays to repeated sibling elements",
+        "Automatic escaping of <, >, &, quotes in text content",
+        "Wraps top-level JSON arrays in a configurable root element",
+        "2-space indented output for readability",
+        "Batch multi-file conversion",
+        "Local browser processing – no upload",
+        "Compatible with SOAP, SAP, Salesforce, and RSS/Atom feed formats",
+        "Handles null values as empty XML elements"
+      ],
       "alternateName": ["Convert JSON to XML", "JSON to XML", "Free JSON to XML converter"]
     },
     "howTo": {

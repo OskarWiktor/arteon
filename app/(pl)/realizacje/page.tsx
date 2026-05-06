@@ -74,11 +74,11 @@ export default function ProjectsPage() {
       </Wrapper>
 
       <CTABanner
-        title="Twój projekt może być następny"
-        description="Napisz czego potrzebujesz - przygotujemy dla Ciebie darmową wycenę"
-        btnOne="Napisz do nas"
+        title="Zrealizuj swój pomysł"
+        description="Skontaktuj się z nami i opowiedz o tym co chcesz stworzyć w ramach swojej działalności. Powiemy co możemy dla Ciebie zrobić i doradzimy najlepsze rozwiązanie dla Twoich potrzeb i Twojego biznesu."
+        btnOne="Kontakt"
         btnOneLink="/kontakt"
-        btnTwo="Poznaj usługi"
+        btnTwo="Poznaj wszystkie usługi"
         btnTwoLink="/uslugi"
         backgroundImage="/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp"
         overlay="black"

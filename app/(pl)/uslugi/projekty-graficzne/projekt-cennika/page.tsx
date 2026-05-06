@@ -4,7 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBarChart2Fill, RiFileTextLine, RiTableLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import { RiFileTextLine, RiTableLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -69,14 +69,7 @@ export default function OfferDesignPriceListPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiPencilRuler2Line />, label: 'Spójny wizerunek marki' },
-          { icon: <RiTableLine />, label: 'Czytelna prezentacja cen' },
-          { icon: <RiFileTextLine />, label: 'Pliki gotowe do druku i online' },
-          { icon: <RiBarChart2Fill />, label: 'Projekt wspierający sprzedaż' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -261,7 +254,6 @@ export default function OfferDesignPriceListPage() {
           items={[
             {
               title: 'Identyfikacja wizualna',
-              description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
               backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -269,7 +261,6 @@ export default function OfferDesignPriceListPage() {
             },
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
               backgroundImage: '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -277,7 +268,6 @@ export default function OfferDesignPriceListPage() {
             },
             {
               title: 'Projekt wizytówki',
-              description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
               backgroundImage: '/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -285,7 +275,6 @@ export default function OfferDesignPriceListPage() {
             },
             {
               title: 'Projekt katalogu',
-              description: 'Rozbudowana prezentacja oferty',
               size: 'small',
               backgroundImage: '/assets/projects/restoquality/mockup-gazetka-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',

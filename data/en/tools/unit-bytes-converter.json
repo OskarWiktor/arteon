@@ -29,7 +29,16 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert between bytes, kilobytes, megabytes, gigabytes, and terabytes.",
-      "featureList": ["Real-time conversion across all byte units simultaneously", "Both binary (KiB, MiB, GiB) and decimal (KB, MB, GB) systems", "Explains the decimal vs binary discrepancy on storage devices", "Covers bytes, KB, MB, GB, TB, and PB", "Copy any result to clipboard with one click", "All calculations run locally — no server involved", "Reference table with real-world file size examples", "Works on mobile and desktop without installation"]
+      "featureList": [
+        "Real-time conversion across all byte units simultaneously",
+        "Both binary (KiB, MiB, GiB) and decimal (KB, MB, GB) systems",
+        "Explains the decimal vs binary discrepancy on storage devices",
+        "Covers bytes, KB, MB, GB, TB, and PB",
+        "Copy any result to clipboard with one click",
+        "All calculations run locally — no server involved",
+        "Reference table with real-world file size examples",
+        "Works on mobile and desktop without installation"
+      ]
     },
     "howTo": {
       "name": "How to use the bytes converter",

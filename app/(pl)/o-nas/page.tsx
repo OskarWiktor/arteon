@@ -5,16 +5,15 @@ import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
-import TechStack from '@/components/sections/TechStack';
 import Gap from '@/components/ui/Gap';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import Link from 'next/link';
-import { RiCodeSSlashFill, RiLightbulbFlashLine, RiMegaphoneLine, RiPaletteLine } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getAboutAlternates } from '@/lib/i18n/pages/about';
+import LogoCarousel from '@/components/sections/LogoCarousel';
 
 const profilePageJsonLd = {
   '@context': 'https://schema.org',
@@ -63,14 +62,9 @@ export default function AboutPage() {
         overlay="black"
         variant="center"
       />
-      <BenefitBelt
-        items={[
-          { icon: <RiLightbulbFlashLine className="text-primary h-6 w-6" />, label: 'Strategia i plan działania' },
-          { icon: <RiPaletteLine className="text-primary h-6 w-6" />, label: 'Branding i design' },
-          { icon: <RiCodeSSlashFill className="text-primary h-6 w-6" />, label: 'Technologia (strony i sklepy)' },
-          { icon: <RiMegaphoneLine className="text-primary h-6 w-6" />, label: 'Widoczność i marketing' },
-        ]}
-      />
+
+      <BenefitBelt variant="carousel" />
+
       <Wrapper as="article" itemScope itemType="https://schema.org/AboutPage">
         <Gap size="sm" />
 
@@ -151,7 +145,7 @@ export default function AboutPage() {
 
         <Gap variant="line" />
 
-        <TechStack />
+        <LogoCarousel />
 
         <Gap variant="line" />
 

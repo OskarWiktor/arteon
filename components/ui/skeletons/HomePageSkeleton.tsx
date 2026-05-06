@@ -42,7 +42,7 @@ function WorkStepsSkeleton() {
   );
 }
 
-function TechStackSkeleton() {
+function LogoCarouselSkeleton() {
   return (
     <div className="space-y-4">
       <Shimmer className="h-7 w-2/5 !rounded-md" />
@@ -77,7 +77,7 @@ export default function HomePageSkeleton() {
         <GapSkeleton variant="line" />
         <WorkStepsSkeleton />
         <GapSkeleton variant="line" />
-        <TechStackSkeleton />
+        <LogoCarouselSkeleton />
         <GapSkeleton variant="line" />
         <SectionStepsSkeleton cols={4} />
         <GapSkeleton variant="line" />

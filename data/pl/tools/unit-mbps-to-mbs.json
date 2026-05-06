@@ -25,11 +25,7 @@
   "schemas": {
     "software": {
       "name": "Konwerter Mbps na MB/s – prędkość internetu",
-      "alternateName": [
-        "Przelicznik Mbps MB/s",
-        "Kalkulator prędkości internetu",
-        "Megabity na megabajty"
-      ],
+      "alternateName": ["Przelicznik Mbps MB/s", "Kalkulator prędkości internetu", "Megabity na megabajty"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz Mbps na MB/s i sprawdź realną prędkość pobierania plików. Porównaj oferty Orange, T-Mobile, Play i UPC. Działa w przeglądarce, bez rejestracji.",

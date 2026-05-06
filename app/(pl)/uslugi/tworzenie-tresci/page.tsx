@@ -1,10 +1,7 @@
 import Script from 'next/script';
 import { IoSparkles } from 'react-icons/io5';
 import {
-  RiBarChart2Fill,
   RiBookOpenLine,
-  RiCustomerService2Line,
-  RiBrushLine,
   RiTeamLine,
   RiArticleLine,
   RiChatQuoteLine,
@@ -79,14 +76,7 @@ export default function OfferContentPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiBarChart2Fill />, label: 'Treści pod sprzedaż' },
-          { icon: <RiBookOpenLine />, label: 'Spójny język marki' },
-          { icon: <RiBrushLine />, label: 'Perfekcja detalu' },
-          { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/tworzenie-tresci`, label: 'Tworzenie treści' }} includeJsonLd />
 
@@ -316,7 +306,6 @@ export default function OfferContentPage() {
           items={[
             {
               title: 'Pozycjonowanie stron',
-              description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'large',
               backgroundImage: '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -324,7 +313,6 @@ export default function OfferContentPage() {
             },
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
               backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -332,7 +320,6 @@ export default function OfferContentPage() {
             },
             {
               title: 'Blogi internetowe',
-              description: 'Buduj autorytet i pozycję w Google',
               size: 'small',
               backgroundImage: '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -340,7 +327,6 @@ export default function OfferContentPage() {
             },
             {
               title: 'Szablony media społecznościowe',
-              description: 'Gotowe projekty do Twoich postów',
               size: 'small',
               backgroundImage: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               btnLabel: 'Sprawdź ofertę',

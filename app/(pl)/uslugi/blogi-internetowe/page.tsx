@@ -6,21 +6,7 @@ import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import {
-  RiArticleLine,
-  RiSearchLine,
-  RiShieldCheckLine,
-  RiCustomerService2Line,
-  RiBarChart2Line,
-  RiBookOpenLine,
-  RiDeviceLine,
-  RiPencilRuler2Line,
-  RiMoneyDollarCircleLine,
-  RiBrushLine,
-  RiKey2Line,
-  RiLifebuoyLine,
-  RiMessage2Line,
-} from 'react-icons/ri';
+import { RiBarChart2Line, RiBookOpenLine, RiDeviceLine, RiPencilRuler2Line, RiMoneyDollarCircleLine, RiBrushLine, RiKey2Line, RiLifebuoyLine, RiMessage2Line } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -77,20 +63,14 @@ export default function OfferBlogPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiArticleLine />, label: 'Proste zarządzanie' },
-          { icon: <RiSearchLine />, label: 'Optymalizacja' },
-          { icon: <RiShieldCheckLine />, label: 'Dostępność' },
-          { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
+
       <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/blogi-internetowe`, label: 'Blogi internetowe' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="xs" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje stron internetowych i blogów" category="strona" />
+        <ProjectsCarousel title="Realizacje stron internetowych i blogów" category="strona" />
 
         <Gap variant="line" />
 
@@ -337,7 +317,6 @@ export default function OfferBlogPage() {
           items={[
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
               backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -345,7 +324,6 @@ export default function OfferBlogPage() {
             },
             {
               title: 'Pozycjonowanie stron',
-              description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'medium',
               backgroundImage: '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -353,7 +331,6 @@ export default function OfferBlogPage() {
             },
             {
               title: 'Tworzenie treści',
-              description: 'Teksty, które przyciągają klientów',
               size: 'small',
               backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -361,7 +338,6 @@ export default function OfferBlogPage() {
             },
             {
               title: 'Projekt logo',
-              description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'small',
               backgroundImage: '/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',

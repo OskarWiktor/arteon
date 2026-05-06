@@ -10,6 +10,7 @@ This skill provides personalized feedback on your recent coding work by analyzin
 ## When to Use This Skill
 
 Use this skill when you want to:
+
 - Understand your development patterns and habits from recent work
 - Identify specific technical gaps or recurring challenges
 - Discover which topics would benefit from deeper study
@@ -50,6 +51,7 @@ Analyze my work from today and suggest areas for improvement
 ```
 
 The skill will generate a formatted report with:
+
 - Overview of your recent work
 - Key improvement areas identified
 - Specific recommendations for each area
@@ -63,6 +65,7 @@ When a user requests analysis of their developer growth or coding patterns from 
 1. **Access Chat History**
 
    Read the chat history from `~/.claude/history.jsonl`. This file is a JSONL format where each line contains:
+
    - `display`: The user's message/request
    - `project`: The project being worked on
    - `timestamp`: Unix timestamp (in milliseconds)
@@ -73,6 +76,7 @@ When a user requests analysis of their developer growth or coding patterns from 
 2. **Analyze Work Patterns**
 
    Extract and analyze the following from the filtered chats:
+
    - **Projects and Domains**: What types of projects was the user working on? (e.g., backend, frontend, DevOps, data, etc.)
    - **Technologies Used**: What languages, frameworks, and tools appear in the conversations?
    - **Problem Types**: What categories of problems are being solved? (e.g., performance optimization, debugging, feature implementation, refactoring, setup/configuration)
@@ -86,12 +90,14 @@ When a user requests analysis of their developer growth or coding patterns from 
 3. **Identify Improvement Areas**
 
    Based on the analysis, identify 3-5 specific areas where the user could improve. These should be:
+
    - **Specific** (not vague like "improve coding skills")
    - **Evidence-based** (grounded in actual chat history)
    - **Actionable** (practical improvements that can be made)
    - **Prioritized** (most impactful first)
 
    Examples of good improvement areas:
+
    - "Advanced TypeScript patterns (generics, utility types, type guards) - you struggled with type safety in [specific project]"
    - "Error handling and validation - I noticed you patched several bugs related to missing null checks"
    - "Async/await patterns - your recent work shows some race conditions and timing issues"
@@ -137,6 +143,7 @@ When a user requests analysis of their developer growth or coding patterns from 
    ## Action Items
 
    Priority order:
+
    1. [Action item derived from highest priority improvement area]
    2. [Action item from next area]
    3. [Action item from next area]
@@ -183,6 +190,7 @@ When a user requests analysis of their developer growth or coding patterns from 
 6. **Present the Complete Report**
 
    Deliver the report in a clean, readable format that the user can:
+
    - Quickly scan for key takeaways
    - Use for focused learning planning
    - Reference over the next week as they work on improvements
@@ -265,6 +273,7 @@ Over the past two days, you focused on backend infrastructure and API developmen
 ## Action Items
 
 Priority order:
+
 1. Spend 1-2 hours learning TypeScript utility types and discriminated unions; apply to your connection data structures
 2. Document security patterns for your project (what data is safe to display, filtering/masking functions)
 3. Study one article on advanced React patterns and apply one pattern to your current UI work
@@ -314,6 +323,7 @@ Priority order:
 ## How Accuracy and Quality Are Maintained
 
 This skill:
+
 - Analyzes your actual work patterns from timestamped chat history
 - Generates evidence-based recommendations grounded in real projects
 - Curates learning resources that directly address your identified gaps

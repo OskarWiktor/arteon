@@ -29,7 +29,17 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert decimal numbers to binary and vice versa. Useful for programming, computer science, and digital electronics.",
-      "featureList": ["Instant decimal to binary and binary to decimal conversion", "Essential for Harvard CS50, Khan Academy CS exercises, and university exams", "Networking use: subnet mask 255.255.255.0 = 11111111.11111111.11111111.00000000 (/24)", "Bitwise operations in JavaScript: 42 & 15 requires binary understanding", "Unix permission flags: chmod 755 = 111 101 101 in binary", "Two's complement explanation for negative integers", "Copy result to clipboard with one click", "All calculations run locally — no server involved", "Works on mobile and desktop without installation"]
+      "featureList": [
+        "Instant decimal to binary and binary to decimal conversion",
+        "Essential for Harvard CS50, Khan Academy CS exercises, and university exams",
+        "Networking use: subnet mask 255.255.255.0 = 11111111.11111111.11111111.00000000 (/24)",
+        "Bitwise operations in JavaScript: 42 & 15 requires binary understanding",
+        "Unix permission flags: chmod 755 = 111 101 101 in binary",
+        "Two's complement explanation for negative integers",
+        "Copy result to clipboard with one click",
+        "All calculations run locally — no server involved",
+        "Works on mobile and desktop without installation"
+      ]
     },
     "howTo": {
       "name": "How to use the decimal to binary converter",

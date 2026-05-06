@@ -4,7 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiKey2Line, RiPantoneLine, RiQuillPenLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import { RiBookOpenLine, RiKey2Line, RiPantoneLine, RiQuillPenLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -66,14 +66,7 @@ export default function OfferDesignLogoPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiPencilRuler2Line />, label: 'Logo dopasowane do marki' },
-          { icon: <RiBrushLine />, label: 'Perfekcja detalu i proporcji' },
-          { icon: <RiBarChart2Fill />, label: 'Znak, który wspiera sprzedaż' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia odbioru w praktyce' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -85,7 +78,7 @@ export default function OfferDesignLogoPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        <ProjectsCarousel title="Wybrane realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title="Wybrane realizacje projektów logo dla firm" category="logo" />
 
         <Gap variant="line" />
 
@@ -315,7 +308,6 @@ export default function OfferDesignLogoPage() {
           items={[
             {
               title: 'Identyfikacja wizualna',
-              description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
               backgroundImage: '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -323,7 +315,6 @@ export default function OfferDesignLogoPage() {
             },
             {
               title: 'Projekt wizytówki',
-              description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'medium',
               backgroundImage: '/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -331,7 +322,6 @@ export default function OfferDesignLogoPage() {
             },
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -339,7 +329,6 @@ export default function OfferDesignLogoPage() {
             },
             {
               title: 'Sklepy internetowe',
-              description: 'Sprzedawaj produkty online',
               size: 'small',
               backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',

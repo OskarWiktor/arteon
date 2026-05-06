@@ -82,7 +82,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - `SectionSteps`
   - `ProjectsCarousel`
   - `TestimonialsCarousel`
-  - `WorkSteps`, `TechStack`, `FeesSteps`
+  - `WorkSteps`, `LogoCarousel`, `FeesSteps`
   - `ArticlesCarousel`
   - `CTABanner`
 - **[Dane / źródła]** `data/pl/testimonials.json`.
@@ -96,7 +96,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 
 - **[Plik]** `app/(pl)/o-nas/page.tsx`
 - **[Cel / content]** Misja, wyróżniki, proces, tech stack, CTA.
-- **[Kluczowe komponenty]** `HeroBanner`, `BenefitBelt`, `SectionBasic`, `SectionInfo`, `SectionSteps`, `WorkSteps`, `TechStack`, `ServicesSteps`, `CTABanner`.
+- **[Kluczowe komponenty]** `HeroBanner`, `BenefitBelt`, `SectionBasic`, `SectionInfo`, `SectionSteps`, `WorkSteps`, `LogoCarousel`, `ServicesSteps`, `CTABanner`.
 - **[SEO]**
   - **[metadata]** canonical: `https://www.arteonagency.pl/o-nas`.
   - **[schema]** microdata na wrapperze: `https://schema.org/AboutPage`.

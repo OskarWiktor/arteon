@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import Image from 'next/image';
 import { RiCloseLine, RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
@@ -12,9 +13,11 @@ interface GalleryImage {
 interface SectionImageGalleryProps {
   title?: string;
   images: GalleryImage[];
+  grid?: 'two' | 'four' | 'six';
+  noWrapper?: boolean;
 }
 
-export default function SectionImageGallery({ title, images }: SectionImageGalleryProps) {
+export default function SectionImageGallery({ title, images, grid = 'four', noWrapper = false }: SectionImageGalleryProps) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const openLightbox = (index: number) => setLightboxIndex(index);
@@ -30,33 +33,39 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
     setLightboxIndex(lightboxIndex === images.length - 1 ? 0 : lightboxIndex + 1);
   };
 
+  const galleryContent = (
+    <>
+      {title && (
+        <h2 id="gallery-title" className="h3 mb-4 lg:mb-6">
+          {title}
+        </h2>
+      )}
+
+      <div
+        className={`grid ${grid === 'two' ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-2' : grid === 'four' ? 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4' : 'grid-cols-2 md:grid-cols-4 lg:grid-cols-6'} gap-4`}
+      >
+        {images.map((image, index) => (
+          <button
+            key={index}
+            type="button"
+            onClick={() => openLightbox(index)}
+            className="group focus-visible:ring-primary relative aspect-square overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2"
+          >
+            <Image src={image.src} alt={image.alt} fill className="object-cover transition group-hover:scale-105" sizes="(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw" />
+            {image.title && (
+              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+                <span className="text-sm font-medium text-white">{image.title}</span>
+              </div>
+            )}
+          </button>
+        ))}
+      </div>
+    </>
+  );
+
   return (
     <section data-section="image-gallery" aria-labelledby={title ? 'gallery-title' : undefined}>
-      <Wrapper>
-        {title && (
-          <h2 id="gallery-title" className="h3 mb-4 lg:mb-6">
-            {title}
-          </h2>
-        )}
-
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-          {images.map((image, index) => (
-            <button
-              key={index}
-              type="button"
-              onClick={() => openLightbox(index)}
-              className="group focus-visible:ring-primary relative aspect-square overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2"
-            >
-              <Image src={image.src} alt={image.alt} fill className="object-cover transition group-hover:scale-105" sizes="(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw" />
-              {image.title && (
-                <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
-                  <span className="text-sm font-medium text-white">{image.title}</span>
-                </div>
-              )}
-            </button>
-          ))}
-        </div>
-      </Wrapper>
+      {noWrapper ? galleryContent : <Wrapper>{galleryContent}</Wrapper>}
 
       {lightboxIndex !== null && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4" onClick={closeLightbox} role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">

@@ -28,7 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convert JSON to YAML format. Automatic parsing and formatting. Free, no registration.",
-      "featureList": ["Converts JSON to indentation-based YAML (2-space)", "Removes curly braces and quotes from keys for clean output", "Handles arrays with dash-space prefix notation", "Wraps strings containing special characters in quotes automatically", "Formats boolean gotchas (yes/no/on/off) correctly as quoted strings", "Preserves number precision and floating-point values", "Batch multi-file conversion", "Local browser processing – no upload", "Output passes yamllint validation", "Compatible with Docker Compose, Kubernetes, GitHub Actions, Ansible, and Helm"],
+      "featureList": [
+        "Converts JSON to indentation-based YAML (2-space)",
+        "Removes curly braces and quotes from keys for clean output",
+        "Handles arrays with dash-space prefix notation",
+        "Wraps strings containing special characters in quotes automatically",
+        "Formats boolean gotchas (yes/no/on/off) correctly as quoted strings",
+        "Preserves number precision and floating-point values",
+        "Batch multi-file conversion",
+        "Local browser processing – no upload",
+        "Output passes yamllint validation",
+        "Compatible with Docker Compose, Kubernetes, GitHub Actions, Ansible, and Helm"
+      ],
       "alternateName": ["Convert JSON to YAML", "JSON to YAML", "Free JSON to YAML converter"]
     },
     "howTo": {

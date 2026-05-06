@@ -29,7 +29,17 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert CSS viewport width (vw) units to pixels based on screen width. Essential for responsive web design and layout calculations.",
-      "featureList": ["Real-time vw to px calculation at any viewport width", "Configurable viewport width input", "Shows result for both desktop and mobile breakpoints", "clamp() fluid typography helper", "Supports 100vw, 50vw, and fractional values", "Copy result to clipboard in one click", "Common viewport presets (375px, 768px, 1280px, 1920px)", "Works entirely in browser — no server calls", "Reverse conversion: px back to vw"]
+      "featureList": [
+        "Real-time vw to px calculation at any viewport width",
+        "Configurable viewport width input",
+        "Shows result for both desktop and mobile breakpoints",
+        "clamp() fluid typography helper",
+        "Supports 100vw, 50vw, and fractional values",
+        "Copy result to clipboard in one click",
+        "Common viewport presets (375px, 768px, 1280px, 1920px)",
+        "Works entirely in browser — no server calls",
+        "Reverse conversion: px back to vw"
+      ]
     },
     "howTo": {
       "name": "How to use the vw to px converter",

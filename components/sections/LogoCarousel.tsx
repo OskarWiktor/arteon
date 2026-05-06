@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { IconType } from 'react-icons';
 import IconText from '@/components/ui/IconText';
@@ -24,12 +25,25 @@ import {
   SiGoogleads,
 } from 'react-icons/si';
 
-interface TechStackItem {
+interface LogoCarouselDefaultItem {
   label: string;
   icon: IconType;
 }
 
-const techStackItems: TechStackItem[] = [
+interface LogoCarouselLogoImage {
+  alt: string;
+  src: string;
+  width: number;
+  height: number;
+  filter?: string;
+  heightClass?: string;
+}
+
+interface LogoCarouselProps {
+  variant?: 'default' | 'logo';
+}
+
+const LogoCarouselDefaultItems: LogoCarouselDefaultItem[] = [
   { label: 'Next', icon: SiNextdotjs },
   { label: 'React', icon: SiReact },
   { label: 'Google Search Console', icon: SiGooglesearchconsole },
@@ -48,7 +62,18 @@ const techStackItems: TechStackItem[] = [
   { label: 'Wix', icon: SiWix },
 ];
 
-export default function TechStack() {
+const LogoCarouselLogoItems: LogoCarouselLogoImage[] = [
+  { alt: 'Autokorfu', src: '/assets/projects/loga-firm/logo-autokorfu.webp', width: 320, height: 96, heightClass: 'h-8 md:h-10', filter: 'brightness(0)' },
+  { alt: 'StepArd', src: '/assets/projects/loga-firm/StepArd-logo-czarne.png', width: 320, height: 80, heightClass: 'h-7 md:h-9', filter: 'brightness(0)' },
+  { alt: 'Finish Masters', src: '/assets/projects/loga-firm/finish-masters-logo-kolor.png', width: 320, height: 96, heightClass: 'h-7 md:h-9', filter: 'brightness(0)' },
+  { alt: 'Izoluk', src: '/assets/projects/loga-firm/izoluk-logo-firmy.png', width: 320, height: 96, heightClass: 'h-11 md:h-13', filter: 'brightness(0)' },
+  { alt: 'KM2', src: '/assets/projects/loga-firm/logo-km2-czarne-pelne.png', width: 320, height: 96, heightClass: 'h-6 md:h-8', filter: 'brightness(0)' },
+  { alt: 'LuxNova', src: '/assets/projects/loga-firm/luxnova-logo.png', width: 320, height: 96, heightClass: 'h-12 md:h-14', filter: 'brightness(0)' },
+  { alt: 'Eliza Wrońska', src: '/assets/projects/loga-firm/eliza-wronska-logo.webp', width: 320, height: 96, heightClass: 'h-12 md:h-14', filter: 'brightness(0)' },
+  { alt: 'NaPilota', src: '/assets/projects/loga-firm/logo-napilota.webp', width: 320, height: 96, heightClass: 'h-10 md:h-12', filter: 'brightness(0)' },
+];
+
+export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps) {
   const baseVelocity = 30;
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLUListElement>(null);
@@ -133,9 +158,46 @@ export default function TechStack() {
     return () => cancelAnimationFrame(rafRef.current);
   }, [reduceMotion, isInView]);
 
+  if (variant === 'logo') {
+    return (
+      <section className="relative overflow-hidden">
+        <div
+          ref={containerRef}
+          className="focus-visible:ring-primary overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+          role="region"
+          aria-label="Przewijana lista logo firm."
+          tabIndex={0}
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+          onFocus={() => setIsPaused(true)}
+          onBlur={() => setIsPaused(false)}
+          onTouchStart={() => setIsPaused(true)}
+          onTouchEnd={() => setIsPaused(false)}
+        >
+          <ul ref={trackRef} style={{ willChange: 'transform' }} className="flex items-center gap-10 whitespace-nowrap md:gap-14 lg:gap-20">
+            {[...LogoCarouselLogoItems, ...LogoCarouselLogoItems].map(({ alt, src, width, height, filter, heightClass }, index) => (
+              <li key={`${alt}-${index}`} className="shrink-0">
+                <Image
+                  src={src}
+                  alt={alt}
+                  width={width}
+                  height={height}
+                  className={`${heightClass ?? 'h-12 md:h-14'} w-auto object-contain opacity-60 transition-opacity hover:opacity-100`}
+                  style={filter ? { filter } : undefined}
+                  onLoad={measure}
+                  unoptimized
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    );
+  }
+
   return (
-    <section className="relative overflow-hidden" aria-labelledby="techstack-heading">
-      <h2 id="techstack-heading" className="h4 mb-4 lg:mb-6">
+    <section className="relative overflow-hidden" aria-labelledby="LogoCarousel-heading">
+      <h2 id="LogoCarousel-heading" className="h4 mb-4 lg:mb-6">
         Jakiej technologii używamy?
       </h2>
 
@@ -143,7 +205,7 @@ export default function TechStack() {
         ref={containerRef}
         className="focus-visible:ring-primary overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
         role="region"
-        aria-label="Przewijana lista technologii. Ustaw fokus, najedź lub dotknij, aby wstrzymać przewijanie."
+        aria-label="Przewijana lista technologii."
         tabIndex={0}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
@@ -153,7 +215,7 @@ export default function TechStack() {
         onTouchEnd={() => setIsPaused(false)}
       >
         <ul ref={trackRef} style={{ willChange: 'transform' }} className="flex gap-6 whitespace-nowrap md:gap-10 lg:gap-14">
-          {[...techStackItems, ...techStackItems].map(({ label, icon: Icon }, index) => (
+          {[...LogoCarouselDefaultItems, ...LogoCarouselDefaultItems].map(({ label, icon: Icon }, index) => (
             <li key={`${label}-${index}`} className="shrink-0">
               <IconText icon={<Icon className="text-primary h-auto w-6" aria-hidden="true" />} gap="2">
                 <span className="text-primary text-2xl">{label}</span>

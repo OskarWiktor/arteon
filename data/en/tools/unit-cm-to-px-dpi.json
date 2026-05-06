@@ -29,7 +29,17 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert centimeters to pixels at any DPI resolution. Essential for print design, web graphics, and image preparation.",
-      "featureList": ["Real-time bidirectional cm ↔ px conversion", "Configurable DPI input (72, 96, 150, 300, 600)", "A4 and A3 standard size reference built in", "96 DPI screen standard vs 300 DPI print comparison", "CSS @media print context reference", "Copy result to clipboard in one click", "Works entirely in browser — no server calls", "Supports decimal cm values (e.g. 21.5 cm)", "Banner and poster design use cases with DPI notes"]
+      "featureList": [
+        "Real-time bidirectional cm ↔ px conversion",
+        "Configurable DPI input (72, 96, 150, 300, 600)",
+        "A4 and A3 standard size reference built in",
+        "96 DPI screen standard vs 300 DPI print comparison",
+        "CSS @media print context reference",
+        "Copy result to clipboard in one click",
+        "Works entirely in browser — no server calls",
+        "Supports decimal cm values (e.g. 21.5 cm)",
+        "Banner and poster design use cases with DPI notes"
+      ]
     },
     "howTo": {
       "name": "How to use the cm to px converter",

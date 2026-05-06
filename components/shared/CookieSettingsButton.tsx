@@ -14,7 +14,7 @@ export default function CookieSettingsButton({ label }: CookieSettingsButtonProp
           fc.showRevocationMessage();
         }
       }}
-      className="hover-underline cursor-pointer text-base"
+      className="hover-underline cursor-pointer text-sm"
       aria-haspopup="dialog"
     >
       {label}

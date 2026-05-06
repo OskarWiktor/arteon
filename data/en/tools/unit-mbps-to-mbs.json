@@ -29,7 +29,16 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert megabits per second to megabytes per second and vice versa. Essential for understanding internet speeds and download times.",
-      "featureList": ["Instant Mbps to MB/s and MB/s to Mbps conversion", "Shows real download speed behind ISP-advertised Mbps figures", "Reference table with common US ISP plan speeds (Comcast, AT&T Fiber)", "Streaming speed requirements: Netflix 4K at 25 Mbps, YouTube 4K at 20 Mbps", "VPN overhead guidance — typically 10–15% speed reduction", "Copy result to clipboard with one click", "All calculations run locally — no server involved", "Works on mobile and desktop without installation"]
+      "featureList": [
+        "Instant Mbps to MB/s and MB/s to Mbps conversion",
+        "Shows real download speed behind ISP-advertised Mbps figures",
+        "Reference table with common US ISP plan speeds (Comcast, AT&T Fiber)",
+        "Streaming speed requirements: Netflix 4K at 25 Mbps, YouTube 4K at 20 Mbps",
+        "VPN overhead guidance — typically 10–15% speed reduction",
+        "Copy result to clipboard with one click",
+        "All calculations run locally — no server involved",
+        "Works on mobile and desktop without installation"
+      ]
     },
     "howTo": {
       "name": "How to use the Mbps to MB/s converter",

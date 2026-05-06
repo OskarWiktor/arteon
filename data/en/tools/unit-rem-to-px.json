@@ -29,7 +29,17 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert CSS rem units to pixels and vice versa. Set your root font size and get instant pixel values for responsive design.",
-      "featureList": ["Real-time bidirectional rem ↔ px conversion", "Configurable :root font size (default 16px)", "Never compounds — always references root", "Copy result to clipboard in one click", "Reverse conversion: px back to rem", "Reference table with Tailwind-aligned rem values", "WCAG minimum touch target check (2.75rem = 44px)", "Works entirely in browser — no server calls", "Supports 62.5% root trick (1rem = 10px mode)"]
+      "featureList": [
+        "Real-time bidirectional rem ↔ px conversion",
+        "Configurable :root font size (default 16px)",
+        "Never compounds — always references root",
+        "Copy result to clipboard in one click",
+        "Reverse conversion: px back to rem",
+        "Reference table with Tailwind-aligned rem values",
+        "WCAG minimum touch target check (2.75rem = 44px)",
+        "Works entirely in browser — no server calls",
+        "Supports 62.5% root trick (1rem = 10px mode)"
+      ]
     },
     "howTo": {
       "name": "How to use the rem to px converter",

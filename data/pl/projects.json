@@ -2,16 +2,19 @@
   "projects": [
     {
       "slug": "strona-internetowa-dla-biura-rachunkowego-jstax",
-      "title": "Strona internetowa dla kancelarii doradztwa podatkowego - JSTax",
-      "short": "Strona internetowa dla kancelarii doradztwa podatkowego JSTax.",
-      "description": "<p>Realizacja strony ineternetowej dla kancelarii doradztwa podatkowego <strong>JSTax</strong>. Projekt obejmował indywidualny projekt wyglądu strony, nastawiony na wzbudzenie zaufania oraz estetykę usług premium, strukturę strony wzmacniającą widoczność w Google oraz realizację samej strony.</p><br /><p>Projekt strony obejmuję 9 głównych stron usług,, które prowadzą do kolejnych podkategorii usług, co zapewni pokrycie bardzo wielu słów kluczowych związanych z usługami oraz branżą. Prace nad stroną jeszcze trwają. Link do gotowej wersji dodamy po jej publikacji.</p>",
+      "title": "Realizacja strony internetowa dla kancelarii doradztwa podatkowego - JSTax",
+      "short": "Projekt i realizacja strony internetowej dla kancelarii doradztwa podatkowego JSTax",
+      "description": "<p>Realizacja strony internetowej dla kancelarii doradztwa podatkowego <strong>JSTax</strong> działającego w trzech miastach: <strong>Krakowie, Warszawie oraz Białymstoku</strong>. Projekt obejmował delikatną zmianę logo firmy, indywidualny projekt wyglądu strony ( stworzony w programie Figma ) bazujący na potrzebach klienta, nastawiony na wzbudzenie zaufania oraz estetykę usług premium a także samą realizację witryny wraz z strukturą strony wzmacniającą widoczność w Google i startowym pakietem pozycjonowania.</p><br /><p>Projekt strony obejmuję <strong>9 głównych stron usług</strong>, które prowadzą do kolejnych podkategorii usług, co zapewni pokrycie bardzo wielu słów kluczowych związanych z doradztwem podatkowym i pozwoli klientowi łatwo odnaleźć, zarówno na stronie jak i w Google, dokładnej usługi, której szuka.</p></br></p> Na stronie znajdzie się również <strong>kalendarz z opcją rezerwacji spotkań</strong>, zarówno online jak i stacjonarnie, oraz płatnościami za samą rezerwację. Strona zostanie stworzona w Wordpress z użyciem Elementora Pro do którego dajemy dożywotnią licencję zawsze gdy realizujemy stronę od zera. Prace nad stroną jeszcze trwają. Link do gotowej wersji dodamy po jej pełnej publikacji.</p>",
       "image": "/assets/projects/jstax/moskup-strony-jstax.webp",
       "category": ["strona"],
       "process_steps": [
-        "Przygotowanie struktury strony internetowej z myślą o widoczności w Google,",
-        "Projekt wyglądu strony głównej,",
-        "Konsultacje i poprawki,",
-        "Realizacja strony internetowej (w toku),"
+        "Wstępna rozmowa o potrzebach i celach klienta,",
+        "Edycja logo firmy - zmiana JS na JStax,",
+        "Projekt wyglądu strony głównej przygotowany w Figma,",
+        "Konsultacje oraz poprawki wyglądu strony,",
+        "Realizacja strony internetowej (w toku),",
+        "Integracja kalendarza rezerwacji wraz z płatnościami (w toku),",
+        "Optymalizacja witryny oraz jej zabezpieczenie (w toku)."
       ],
       "contentBlocks": [
         {
@@ -24,8 +27,8 @@
       ],
       "cta": {
         "title": "Potrzebujesz strony internetowej dla swojej kancelarii?",
-        "description": "Projektujemy i realizujemy strony internetowe dopasowane do specyfiki branży.",
-        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "description": "Projektujemy i realizujemy strony internetowe dopasowane do specyfiki każdej branży.",
+        "btnTwo": "Sprawdź ofertę realizacji",
         "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
         "backgroundImage": "/assets/projects/jstax/moskup-strony-jstax.webp",
         "overlay": "black"
@@ -33,31 +36,33 @@
       "faq": [],
       "seo": {
         "title": "Realizacja strony internetowej dla kancelarii doradztwa podatkowego - JSTax",
-        "description": "Realizacja strony dla kancelarii doradztwa podatkowego JSTax. Sprawdź szczegóły naszej realizacji i zamów stronę dla swojej kancelarii.",
+        "description": "Realizacja strony internetowej dla kancelarii doradztwa podatkowego JSTax. Sprawdź szczegóły naszej realizacji i zamów stronę dla swojej kancelarii.",
         "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-biura-rachunkowego-jstax"
       }
     },
 
     {
       "slug": "logo-dla-firmy-wykonczeniowej-finish-masters",
-      "title": "Logo dla firmy wykończeniowej - Finish Masters",
-      "short": "Logo dla Finish Masters - firmy wykończeniowej z Krakowa. Sygnet z dachem oraz literami F i M, których niedokończone elementy nawiązują do nazwy. Niebieska paleta przeniesiona później na stronę i wizytówki.",
-      "description": "<p>Klient potrzebował kompleksowego projektu - <strong>logo, strony internetowej i wizytówek</strong> - dla swojej firmy wykończeniowej Finish Masters sp. z o.o. z Krakowa.</p><br /><p>Zaprojektowaliśmy ikonę na bazie <strong>dachu z wpisanymi literami F i M</strong>. Litery mają niedokończone elementy, co nawiązuje do nazwy firmy.</p><br /><p>Przygotowaliśmy propozycje kolorystyczne uwzględniające psychologię kolorów w biznesie. Klient wybrał <strong>paletę niebieską</strong> - budującą zaufanie i profesjonalizm. Ta sama kolorystyka została przeniesiona na <a href=\"/realizacje/strona-internetowa-dla-firmy-wykonczeniowej-finish-masters\">stronę internetową</a> i <a href=\"/realizacje/wizytowki-dla-firmy-wykonczeniowej-finish-masters\">wizytówki</a>.</p>",
+      "title": "Projekt logo dla firmy wykończeniowej - Finish Masters",
+      "short": "Realizacja logo dla firmy zajmującej się wykończeniem mieszkań, domów i lokali oraz instalacjami elektrycznymi i wodno-kanalizacyjnymi Finish Masters.",
+      "description": "<p>Realizacja logo dla firmy zajmującej się kompleksowym wykańczaniem pod klucz mieszkań, domów oraz lokali usługowych i przestrzeni komercyjnych a także instalacjami elektrycznymi, wodnymi i kanalizacyjnymi na terenie Krakowa oraz okolic. Realizacja jest częścią większego projektu, który obejmował również <strong>realizację strony internetowej oraz projekt wizytówek</strong> wraz z przygotowaniem do druku. Logo stanowiło pierwszy etap całej pracy.</p></br><p> W ramach usługi tworzenia projektu logo zostało wykonane kilka propozycji znaku w różnych stylach, następnie na podstawie informacji zwrotnej od klienta oraz wszelkich ustaleń i poprawek, klient zdecydował się na tą wersję znaku. W znaku znajduję się ikona nawiązująca bezpośrednio do dachu, co automatycznie kojarzy się w firmą budowlaną. Znak ten zawiera również wpisane w ikonę dachu, litery F oraz M, które są bezpośrednim nawiązaniem do samej nazwy firmy - Finish Masters. Aby dodatkowo nawiązać do nazwy oraz typu działalności, litery zostały przycięte w wybranych miejscach.</p><br /><p>Po zaakceptowaniu znaku przygotowaliśmy kilka wersji kolorystycznych, uwzględniając psychologię kolorów w taki sposób aby logo wzbudzało zaufanie. Przygotowaliśmy propozycje kolorystyczne, uwzględniające psychologię kolorów w biznesie. Klient wybrał paletę niebieską. Następnie ta sama kolorystyka została użyta na <a class='inline-link' href=\"/realizacje/strona-internetowa-dla-firmy-wykonczeniowej-finish-masters\">stronie internetowej</a> firmy oraz w <a class='inline-link' href=\"/realizacje/wizytowki-dla-firmy-wykonczeniowej-finish-masters\">projekcie wizytówki</a>.</p>",
       "image": "/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp",
-      "category": ["grafika"],
+      "category": ["grafika", "logo"],
       "process_steps": [
-        "Brief - oczekiwania klienta i analiza branży.",
-        "Wstępne kierunki graficzne.",
-        "Wybór kierunku - dach z wpisanymi literami F i M, z niedokończonymi elementami nawiązującymi do nazwy.",
-        "Dopracowanie znaku.",
-        "Propozycje kolorystyczne - klient wybrał paletę niebieską.",
-        "Przygotowanie wariantów do druku i online."
+        "Rozmowa o potrzebach oraz celach klienta,",
+        "Ustalenie planu kompleksowej realizacji,",
+        "Przygotowanie koncepcji logo w różnych stylach graficznych,",
+        "Wybór kierunku graficznego dla znaku,",
+        "Dopracowanie logo,",
+        "Propozycje kolorystyczne,",
+        "Przygotowanie wariantów logo,",
+        "Przekazanie otwartych plików logo oraz wariantów w różnych formatach."
       ],
       "contentBlocks": [
         {
           "type": "image",
           "src": "/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp",
-          "alt": "Logo Finish Masters - prezentacja wariantów i palety kolorów",
+          "alt": "Prezentacja wariantów projektu logo dla firmy Finish Masters",
           "ratio": "16/9",
           "breakAfter": true
         },
@@ -65,7 +70,7 @@
           "type": "imageText",
           "src": "/assets/projects/finish-masters/logo/logo-finish-masters-mockup-na-papierze.webp",
           "alt": "Logo Finish Masters - mockup na papierze firmowym",
-          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Warianty znaku</h2><p>Logo zostało przygotowane w kilku wariantach: sama ikona (do mediów społecznościowych i jako favicon), sam logotyp, ikona ze sloganem poniżej oraz wersja kwadratowa z nazwą firmy.</p><br /><p>Dzięki temu znak zachowuje czytelność niezależnie od rozmiaru i może zostać użyty w różnych kontekstach.</p>",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Warianty znaku</h2><p>Logo zostało przygotowane w kilku wariantach: sama ikona dachu z wpisanymi literami (do miejsc gdzie widoczność jest ograniczona - np. w zdjęciach profilowych na mediach społecznościowych i w karcie z ikoną strony internetowej), sam logotyp, pełny znak ze sloganem poniżej oraz w wersji kwadratowej.</p><br /><p>Dzięki temu znak zachowuje czytelność niezależnie od rozmiaru i może zostać użyty w różnych kontekstach, na różnych platformach i w różnych miejscach zachowując przy tym spójność i ułatwiając zapamiętanie samego znaku jak i marki.</p>",
           "imageSide": "left",
           "ratio": "4/3",
           "breakAfter": true
@@ -73,61 +78,52 @@
         {
           "type": "imageGrid3",
           "title": "Psychologia kolorów w logo",
-          "description": "Klient wybrał wersję niebieską — kojarzoną z zaufaniem i profesjonalizmem. Obok prezentujemy warianty zielony (innowacyjność) i czerwony (energia i dynamika).",
+          "description": "Klient wybrał wersję niebieską, która najmocniej jest kojarzona z zaufaniem. Pojawiły się również inne warianty w tym wariant zielony (innowacyjność) oraz czerwony (energia i dynamika).",
           "images": [
             {
               "src": "/assets/projects/finish-masters/logo/logo-prezentacja-finish-masters-kolory_1.webp",
-              "alt": "Logo Finish Masters - wersja zielona",
-              "label": "Zielona - innowacyjność, ekologia"
+              "alt": "Zielona wersja kolorystyczna realizacji logo dla Finish Masters"
             },
             {
               "src": "/assets/projects/finish-masters/logo/logo-prezentacja-finish-masters-kolory_4.webp",
-              "alt": "Logo Finish Masters - wersja niebieska (wybrana)",
-              "label": "Niebieska - zaufanie, profesjonalizm (wybrana)"
+              "alt": "Wybrana, niebieska wersja kolorystyczna realizacji logo dla Finish MastersLogo Finish Masters"
             },
             {
               "src": "/assets/projects/finish-masters/logo/logo-prezentacja-finish-masters-kolory_5.webp",
-              "alt": "Logo Finish Masters - wersja czerwona",
-              "label": "Czerwona - energia, dynamika"
+              "alt": "Czerwona wersja kolorystyczna realizacji logo dla Finish Masters"
             }
           ]
         }
       ],
       "cta": {
         "title": "Potrzebujesz logo dla swojej firmy?",
-        "description": "Projektujemy logo z myślą o różnych zastosowaniach - od strony internetowej po materiały drukowane. Każda realizacja obejmuje sygnet, logotyp, warianty kolorystyczne i pliki w formatach wektorowych.",
+        "description": "Projektujemy logo z myślą o różnych zastosowaniach: od strony internetowej po materiały drukowane. Sprawdź naszą ofertę lub skontaktuj się i zobacz co możemy dla Ciebie zrobić.",
         "btnTwo": "Sprawdź ofertę projektów graficznych",
         "btnTwoLink": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp",
         "overlay": "black"
       },
       "seo": {
-        "title": "Logo dla firmy wykończeniowej - Finish Masters - Arteon",
-        "description": "Logo dla firmy wykończeniowej Finish Masters. Zaprojektowaliśmy znak z ikoną dachu, literami F i M oraz autorską czcionką w kilku wariantach kolorystycznych. Zobacz realizację.",
+        "title": "Projekt logo dla firmy wykańczającej wnętrza - Finish Masters",
+        "description": "Realizacja logo dla firmy zajmującej się wykończeniem mieszkań, domów i lokali pod klucz na terenie Krakowa - Finish Masters. Sprawdź naszą realizację logo i zamów projekt dla swojej firmy.",
         "canonical": "https://www.arteonagency.pl/realizacje/logo-dla-firmy-wykonczeniowej-finish-masters"
-      },
-      "task": "Zaprojektować logo dla firmy wykończeniowej Finish Masters - jako pierwszy element kompleksowego projektu (logo, strona, wizytówki).",
-      "goals": "<p>Założenia projektu:</p><ul><li>Sygnet z dachem oraz literami F i M</li><li>Niedokończone elementy w literach nawiązujące do nazwy firmy</li><li>Paleta kolorystyczna budująca zaufanie i profesjonalizm</li></ul>"
+      }
     },
 
     {
       "slug": "strona-internetowa-dla-firmy-automatyzujacej-bramy-napilota",
-      "title": "Strona internetowa dla firmy automatyzującej bramy - NaPilota",
+      "title": "Realizacja strony internetowej dla firmy automatyzującej bramy - NaPilota",
       "short": "Indywidualny projekt graficzny strony, ponad 8 podstron ofertowych, treści pod SEO oraz katalog produktów.",
-      "description": "<p>Firma NaPilota wcześniej posiadała stronę-wizytówkę ( jednostronicową ), której pozycja w Google była mocno ograniczona przez jej strukturę. Z tego powodu właściciel zdecydował się rozbudować witrynę. Zakres prac nad tym projektem obejmował indywidualny projekt strony głównej przygotowany w programie Figma, dopracowanie wyglądu do indywidualnych preferencji, <strong>stworzenie 8 podstron ofertowych dla lepszej widoczności</strong>, optymalizację wydajności na urządzeniach mobilnych oraz katalog produktów z formularzem zamówień.</p><br /><p>Firma zajmuje się automatyką bram na terenie województwa kujawsko-pomorskiego i jest <strong>oficjalnym dystrybutorem RogerTechnology</strong>. Prace jeszcze trwają.",
+      "description": "<p>Projekty graficzny nowej wersji strony internetowej oraz realizacja dla firmy NaPilota, będącą dystrybutorem RogerTechnology, zajmującej się automatyką bram na terenie Chełmna, okolic oraz całego województwa kujawsko-pomorskiego. Firma NaPilota wcześniej posiadała stronę-wizytówkę ( jednostronicową ), której pozycja w Google była mocno ograniczona przez jej strukturę. Z tego powodu właściciel zdecydował się rozbudować witrynę o konkretne strony usług, katalog z produktami z nastawieniem na widoczność witryny w Google.</p></br><p> Projekt rozpoczął się od rozmowy na temat tego jaki cel strona ma osiągnąć oraz co ma zawierać. Po rozmowie został przygotowany wygląd strony głównej w programie Figma, do którego został udostępniony link w celu umożliwienia naniesienia wszelkich uwag w formie komentarzy w każdym miejscu. Po ustaleniu struktury strony oraz jej końcowego wyglądu rozpoczeła się realizacja. W celu zapewnienia większej widoczności strona została zbudowana na domenie wcześniejszej strony, na Wordpress przy użyciu Elementora Pro do którego dajemy dożywotnią licencję w ramach każdej realizacji. Strona zawiera 8 podstron z szczegółową ofertą firmy, formularz serwisowy oraz katalog z 25 produktami, które posiadają dwa typu formularza z zapytaniem o cenę oraz montaż, dopasowane do typu samego produktu. Strona zawiera również treści pisane przez nas na bazie wszelkich informacji o działalności firmy i jej ofercie. Po realizacji strona została zoptymalizowana naszym sprawdzonym sposobem, zapewniając ponad 98 punktów wydajności dla urządzeń mobilnych według PageSpeed.</p>",
       "image": "/assets/projects/napilota/mockup-strony-napilota.webp",
       "category": ["strona", "treść", "sklep"],
       "link": "https://napilota.com.pl/",
-      "task": "Zastąpić prostą stronę-wizytówkę rozbudowaną witryną z 8 podstronami ofertowymi i katalogiem produktów.",
-      "goals": "<p>Założenia projektu:</p><ul><li>8 podstron ofertowych dla lepszej widoczności w Google</li><li>Optymalizacja wydajności na urządzeniach mobilnych</li><li>Katalog produktów z formularzem zamówień</li></ul>",
       "process_steps": [
-        "Projekt wyglądu strony głównej.",
-        "Konsultacje i poprawki.",
-        "Realizacja głównych stron",
-        "Realizacja stron ofertowych.",
-        "Realizacja katalogu produktów z formularzem zamówień.",
-        "Korekty według wytycznych klienta",
-        "Optymalizacja wydajności na urządzeniach mobilnych."
+        "Rozmowa o potrzebach oraz celach klienta,",
+        "Projekt wyglądu strony głównej przygotowany w Figma,",
+        "Konsultacje oraz poprawki wyglądu strony,",
+        "Realizacja strony internetowej,",
+        "Optymalizacja witryny oraz jej zabezpieczenie."
       ],
       "contentBlocks": [
         {
@@ -155,18 +151,18 @@
 
     {
       "slug": "strona-internetowa-dla-kateringu-kolorowe-talerze",
-      "title": "Projekt strony internetowej dla firmy cateringowej - Kolorowe Talerze",
-      "short": "Projekt nowego wyglądu strony dla firmy cateringowej Kolorowe Talerze. Ciepłe odcienie i ramki nawiązujące do obrusu - klasyczna polska kuchnia. Prace nad wdrożeniem trwają.",
-      "description": "<p>Projekt nowego wyglądu strony dla firmy cateringowej <strong>Kolorowe Talerze</strong>. Celem było stworzenie bardziej profesjonalnego wizerunku oraz mocniejsze podkreślenie potraw.</p><br /><p>Wykorzystaliśmy <strong>ciepłe odcienie</strong> i delikatne akcenty - ramki z wzorami ala obrus - jako nawiązanie do klasycznej, lekko staromodnej polskiej kuchni.</p><br /><p>Wdrożenie projektu jeszcze trwa. Aktualna strona klienta: <a href=\"https://cateringkolorowetalerze.pl/\" target=\"_blank\" rel=\"noopener noreferrer\">cateringkolorowetalerze.pl</a>.</p>",
+      "title": "Projekt wyglądu strony internetowej dla firmy cateringowej - KoloroweTalerze",
+      "short": "Projekt nowego wyglądu strony dla firmy cateringowej KoloroweTalerze. Ciepłe odcienie i ramki nawiązujące do obrusu - klasyczna polska kuchnia. Prace nad wdrożeniem trwają.",
+      "description": "<p>Projekt nowego wyglądu strony dla firmy cateringowej <strong>KoloroweTalerze</strong>. Celem było stworzenie bardziej profesjonalnego wizerunku oraz mocniejsze podkreślenie potraw.</p><br /><p>Wykorzystaliśmy <strong>ciepłe odcienie</strong> i delikatne akcenty - ramki z wzorami ala obrus - jako nawiązanie do klasycznej, lekko staromodnej polskiej kuchni.</p><br /><p>Wdrożenie projektu jeszcze trwa. Aktualna strona klienta: <a href=\"https://cateringkolorowetalerze.pl/\" target=\"_blank\" rel=\"noopener noreferrer\">cateringkolorowetalerze.pl</a>.</p>",
       "image": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
-      "category": ["grafika"],
+      "category": ["strona"],
       "task": "Zaprojektować nowy wygląd strony cateringowej z naciskiem na profesjonalizm i ekspozycję potraw.",
       "goals": "<p>Założenia projektu:</p><ul><li>Bardziej profesjonalny wizerunek,</li><li>Delikatne nawiązania do tradycyjnej polskiej kuchni.</li></ul>",
       "contentBlocks": [
         {
           "type": "image",
           "src": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
-          "alt": "Strona Kolorowe Talerze - mockup realizacji Arteon",
+          "alt": "Strona KoloroweTalerze - mockup realizacji Arteon",
           "ratio": "16/9",
           "breakAfter": true
         }
@@ -180,8 +176,8 @@
         "overlay": "black"
       },
       "seo": {
-        "title": "Strona internetowa dla firmy cateringowej - Kolorowe Talerze",
-        "description": "Projekt strony dla firmy cateringowej Kolorowe Talerze. Sprawdź naszą realizację i zamów stronę dla swojego kateringu.",
+        "title": "Strona internetowa dla firmy cateringowej - KoloroweTalerze",
+        "description": "Projekt wyglądu strony internetowej dla firmy cateringowej KoloroweTalerze. Sprawdź naszą realizację i zamów stronę dla swojego kateringu.",
         "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-kolorowe-talerze"
       },
       "link": "https://cateringkolorowetalerze.pl/"
@@ -190,10 +186,10 @@
     {
       "slug": "wizytowki-dla-firmy-wykonczeniowej-finish-masters",
       "title": "Wizytówki dla firmy wykończeniowej - Finish Masters",
-      "short": "Projekt wizytówki dla firmy zajmującej się wykańczeniem wnętrz Finish Masters spójny z logo oraz stroną internetową. Dane firmy, krótki opis działalności oraz kod QR prowadzący do strony.",
+      "short": "Projekt wizytówki dla firmy zajmującej się wykańczaniem wnętrz Finish Masters spójny z logo oraz stroną internetową. Dane firmy, krótki opis działalności oraz kod QR prowadzący do strony.",
       "description": "<p>Finalny element kompleksowego projektu obejmującego również realizację <a href=\"/realizacje/logo-dla-firmy-wykonczeniowej-finish-masters\">logo</a> i <a href=\"/realizacje/strona-internetowa-dla-firmy-wykonczeniowej-finish-masters\">strony internetowej</a>.</p><br /><p>Wizytówki zawierają <strong>dane firmy, krótki opis działalności i kod QR prowadzący do strony</strong></p>",
       "image": "/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp",
-      "category": ["grafika"],
+      "category": ["grafika", "wizytówka"],
       "task": "Zaprojektować wizytówki spójne z logo i stroną Finish Masters.",
       "goals": "<p>Założenia projektu:</p><ul><li>Spójność z logo i stroną - odpowiednia kolorystyka</li><li>Dane firmy i krótki opis działalności</li><li>Kod QR prowadzący do strony</li></ul>",
       "process_steps": ["Projekt graficzny w nawiązaniu do logo i strony.", "Konsultacja i poprawki.", "Przygotowanie plików do druku."],
@@ -216,7 +212,7 @@
       },
       "seo": {
         "title": "Wizytówki dla firmy wykończeniowej - Finish Masters",
-        "description": "Projekt wizytówki dla firmy zajmującej się wykańczeniem wnętrz Finish Masters. Sprawdź naszą realizację i zamów wizytówki dla swojej firmy.",
+        "description": "Projekt wizytówki dla firmy zajmującej się wykańczaniem wnętrz Finish Masters. Sprawdź naszą realizację i zamów wizytówki dla swojej firmy.",
         "canonical": "https://www.arteonagency.pl/realizacje/wizytowki-dla-firmy-wykonczeniowej-finish-masters"
       }
     },
@@ -341,7 +337,7 @@
       "slug": "strona-internetowa-dla-producenta-schodow-metalowych-stepard",
       "title": "Strona internetowa dla producenta schodów metalowych - StepArd",
       "short": "Strona dla producenta schodów metalowych w Trójmieście. Indywisualny projekt graficzny, 10 podstron ofertowych i pełna optymalizacja witryny wraz z pomocą przy tworzeniu treści. Część kompleksowego projektu obejmującego logo i wizytówki.",
-      "description": "<p>Kompleksowa realizacja dla <strong>StepArd</strong> - producenta schodów metalowych, balustrad stalowych i stopni drewnianych z Trójmiasta (Gdańsk, Gdynia, Sopot). Projekt rozpoczął się od logo, następnie powstał wygląd strony, a po realizacji witryny zrealizowaliśmy również wizytówki wraz z przygotowaniem do druku.</p><br /><>Na stronie wykorzystaliśmy <strong>ciemne kolory, brąż i ciemne odcienie niebieskiego</strong> dla kontrastu i komplementarności palety. Strona zawiera <strong>10 podstron ofertowych</strong> dla lepszej widoczności w Google oraz została w pełni zoptymalizowana.</p>",
+      "description": "<p>Kompleksowa realizacja dla <strong>StepArd</strong> - producenta schodów metalowych, balustrad stalowych i stopni drewnianych z Trójmiasta (Gdańsk, Gdynia, Sopot). Projekt rozpoczął się od logo, następnie powstał wygląd strony, a po realizacji witryny zrealizowaliśmy również wizytówki wraz z przygotowaniem do druku.</p><br /><p>Na stronie wykorzystaliśmy <strong>ciemne kolory, brąz i ciemne odcienie niebieskiego</strong> dla kontrastu i komplementarności palety. Strona zawiera <strong>10 podstron ofertowych</strong> dla lepszej widoczności w Google oraz została w pełni zoptymalizowana.</p>",
       "image": "/assets/projects/stepard/strona/moskup-strony-stepard.webp",
       "category": ["strona"],
       "link": "https://stepard.pl/",
@@ -378,7 +374,7 @@
       "short": "Realizacja logo dla producenta schodów metalowych w Trójmieście. Minimalizm, elegancja i jasne nawiązanie do typu działalności firmy. Pierwszy etap kompleksowego projektu.",
       "description": "<p>Pierwszy etap kompleksowego projektu dla <strong>StepArd</strong> - producenta schodów metalowych w Trójmieście. Logo stawia na <strong>minimalizm i elegancję</strong> oraz jasne w przekazie nawiązanie do typu działalności firmy.</p>",
       "image": "/assets/projects/stepard/logo/mockup-logo-stepard.webp",
-      "category": ["grafika"],
+      "category": ["grafika", "logo"],
       "task": "Zaprojektować logo, które łączy minimalizm i elegancję z jasnym nawiązaniem do typu działalności firmy.",
       "goals": "<p>Założenia projektu:</p><ul><li>Minimalizm i elegancja</li><li>Jasne nawiązanie do typu działalności (producent schodów)</li></ul>",
       "process_steps": ["Analiza potrzeb klienta oraz branży.", "Wstępne kierunki graficzne.", "Wybór i dopracowanie znaku.", "Przygotowanie wariantów kolorystycznych."],
@@ -412,7 +408,7 @@
       "short": "Projekt wizytówki dla marki StepArd, spójne z logo oraz stroną internetową, z kodem QR.",
       "description": "<p>Wizytówki to finalny element kompleksowego projektu obejmującego również <a href=\"/realizacje/logo-dla-stepard\">logo</a> i <a href=\"/realizacje/strona-internetowa-dla-stepard\">stronę</a> StepArd.</p><br /><p>Projekt został stworzony tak aby był spójny z całą identyfikacją - ta sama paleta kolorów oraz typografia. Na rewersie umieściliśmy <strong>kod QR prowadzący do strony stepard.pl</strong>. Na koniec przygotowaliśmy projekt wizytówek do druku.</p>",
       "image": "/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp",
-      "category": ["grafika"],
+      "category": ["grafika", "wizytówka"],
       "task": "Zaprojektować wizytówki spójne z logo i stroną StepArd.",
       "process_steps": ["Projekt graficzny w nawiązaniu do logo i strony.", "Konsultacja i poprawki.", "Przygotowanie plików do druku."],
       "contentBlocks": [
@@ -682,7 +678,7 @@
       "short": "Projekt wizytówki dla kancelarii adwokackiej LUX NOVA w układzie poziomym. Sygnet gryfa, paleta bordo i beżu, czytelny układ danych z kodem QR do strony firmowej.",
       "description": "<p>Projekt koncepcyjny wizytówki dla kancelarii adwokackiej, w którym stawiamy na czytelny układ danych oraz spójną identyfikację opartą o sygnet gryfa i zestaw kolorów podkreślających autorytet marki.</p>",
       "image": "/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp",
-      "category": ["grafika"],
+      "category": ["grafika", "wizytówka"],
       "deliverables": [
         "Wizytówka w układzie poziomym (front i tył)",
         "Logo z gryfem jako element identyfikacji wizualnej",
@@ -1075,7 +1071,7 @@
       "short": "Projekt logo dla firmy zajmującej się aranżacją wnętrz - KM2. Litery K i M wpisane w znak domu z dachem.",
       "description": "<p>Projekt logo dla firmy zajmującej się aranżacją wnętrz<strong>KM2</strong>./p><br /><p>W znak firmy a dokładnie w dach, zostałty wpisane litery K oraz M</strong>.</p>",
       "image": "/assets/projects/km2/mockup-logo-km2.webp",
-      "category": ["grafika"],
+      "category": ["grafika", "logo"],
       "goals": "<p>Założenia projektu:</p><ul><li>Litery K i M wpisane w znak domu (dach)</li><li>Bezpośrednie nawiązanie do nazwy firmy i branży aranżacji wnętrz</li></ul>",
       "process_steps": ["Analiza potrzeb oraz branży.", "Wstępne kierunki graficzne.", "Wybór i dopracowanie znaku.", "Przygotowanie wariantów kolorystycznych."],
       "contentBlocks": [
@@ -1108,7 +1104,7 @@
       "short": "Projekt wizytówki dla SPA TALIA inspirowanej naturą. Malarskie tło lasu na froncie, czytelne dane właścicielki na rewersie i paleta zieleni z ciepłym beżem.",
       "description": "<p>Projekt koncepcyjny <strong>wizytówki dla SPA</strong> inspirowanej naturą. Na froncie umieściliśmy malarskie tło lasu w technice akrylowej, logotyp i typografię <em>Warbler Display</em>. Na rewersie znajdują się czytelne dane właścicielki i adres strony internetowej.</p><p>Paleta kolorów łączy głęboką zieleń (<strong>#182519</strong>) z ciepłym beżem (<strong>#e1d2c2</strong>) i bielą.</p>",
       "image": "/assets/projects/talia/mockup-wizytówki-talia.webp",
-      "category": ["grafika"],
+      "category": ["grafika", "wizytówka"],
       "process_steps": [
         "Wizytówka w układzie poziomym (front i tył)",
         "Dobór palety kolorów i typografii (Warbler Display)",
@@ -1446,7 +1442,7 @@
       "short": "Szablon wizytówek dla handlowców firmy RestoQuality z branży gastronomicznej. Powtarzalny układ danych spójny z identyfikacją marki, gotowy do szybkiego wdrożenia dla całego zespołu sprzedaży.",
       "description": "<p><strong>Wizytówki dla gastronomii</strong> - projekt koncepcyjny przygotowany dla RestoQuality. Cel: ujednolicony szablon dla działu handlowego. Styl <em>techniczny i solidny</em>; kolory i typografia dopasowane do identyfikacji marki.</p><p>Układ obejmuje <strong>imię i nazwisko handlowca</strong>, <strong>stanowisko</strong>, <strong>telefon</strong>, <strong>adres firmy</strong> oraz znak marki. Szablon kompozycji umożliwia szybkie wdrożenie dla całego zespołu.</p>",
       "image": "/assets/projects/restoquality/mockup-wizytowki-restoquality.webp",
-      "category": ["grafika"],
+      "category": ["grafika", "wizytówka"],
       "deliverables": [
         "Projekt koncepcyjny wizytówek dla handlowców",
         "Dopasowanie kolorów i typografii do wizerunku marki",

@@ -17,10 +17,10 @@ interface ButtonGroupProps {
 export default function ButtonGroup({
   btnOne,
   btnOneLink,
-  btnOneVariant = 'accent',
+  btnOneVariant = 'normal',
   btnTwo,
   btnTwoLink,
-  btnTwoVariant = 'normal',
+  btnTwoVariant = 'accent',
   className = '',
   spacing = 'default',
   align = 'left',

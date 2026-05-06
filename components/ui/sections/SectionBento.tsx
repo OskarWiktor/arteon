@@ -4,7 +4,7 @@ import Button from '../buttons/Button';
 
 interface BentoItem {
   title: string;
-  description: string;
+  description?: string;
   icon?: ReactNode;
   size: 'small' | 'medium' | 'large';
   backgroundImage: string;

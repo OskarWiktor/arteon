@@ -4,7 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiMessage2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBookOpenLine, RiFileTextLine, RiMessage2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -63,14 +63,7 @@ export default function OfferDesignLetterheadPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiPencilRuler2Line />, label: 'Spójny system dokumentów' },
-          { icon: <RiBrushLine />, label: 'Profesjonalna oprawa wizualna' },
-          { icon: <RiBarChart2Fill />, label: 'Lepsza percepcja marki' },
-          { icon: <RiLightbulbFlashLine />, label: 'Praktyczne szablony na co dzień' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -85,7 +78,7 @@ export default function OfferDesignLetterheadPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title="Realizacje projektów graficznych" category="grafika" />
 
         <Gap variant="line" />
 
@@ -294,7 +287,6 @@ export default function OfferDesignLetterheadPage() {
           items={[
             {
               title: 'Identyfikacja wizualna',
-              description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
               backgroundImage: '/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -302,7 +294,6 @@ export default function OfferDesignLetterheadPage() {
             },
             {
               title: 'Projekt wizytówki',
-              description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'medium',
               backgroundImage: '/assets/projects/talia/mockup-wizytówki-talia.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -310,7 +301,6 @@ export default function OfferDesignLetterheadPage() {
             },
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -318,7 +308,6 @@ export default function OfferDesignLetterheadPage() {
             },
             {
               title: 'Projekt teczki ofertowej',
-              description: 'Elegancka oprawa dla dokumentów',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
               btnLabel: 'Sprawdź ofertę',

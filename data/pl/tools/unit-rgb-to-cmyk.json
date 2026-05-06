@@ -25,11 +25,7 @@
   "schemas": {
     "software": {
       "name": "Konwerter RGB na CMYK – kolory ekranowe na druk",
-      "alternateName": [
-        "Przelicznik RGB CMYK",
-        "Kalkulator kolorów do druku",
-        "RGB to CMYK converter"
-      ],
+      "alternateName": ["Przelicznik RGB CMYK", "Kalkulator kolorów do druku", "RGB to CMYK converter"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz kolory RGB na CMYK przed wysłaniem projektu do drukarni. Sprawdź wartości tuszów dla wizytówek, ulotek i katalogów. Bez rejestracji, działa w przeglądarce.",

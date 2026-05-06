@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import Wrapper from '../ui/Wrapper';
-import IconText from '../ui/IconText';
+import LogoCarousel from './LogoCarousel';
 
 type BenefitItem = {
   icon: ReactNode;
@@ -8,28 +8,20 @@ type BenefitItem = {
 };
 
 interface BenefitBeltProps {
-  items: BenefitItem[];
+  items?: BenefitItem[];
   ariaLabel?: string;
   className?: string;
-  variant?: 'default' | 'legacy';
+  variant?: 'default' | 'carousel';
 }
 
 export default function BenefitBelt({ items, ariaLabel = 'Kluczowe benefity', className = '', variant = 'default' }: BenefitBeltProps) {
   const data = (items ?? []).slice(0, 6);
 
-  if (variant === 'legacy') {
+  if (variant === 'carousel') {
     return (
       <section className={`relative bg-white ${className}`} aria-label={ariaLabel}>
         <Wrapper className="py-2 md:py-3">
-          <ul className="text-dark md:divide-primary-light grid grid-cols-2 gap-x-4 gap-y-2 md:flex md:flex-nowrap md:items-center md:gap-0 md:divide-x">
-            {data.map((item, i) => (
-              <li key={i} className="m-auto flex py-2 md:flex-1 md:justify-center md:px-4 md:first:pl-0 md:last:pr-0">
-                <IconText icon={item.icon} iconClassName="[&_svg]:h-6 [&_svg]:w-6">
-                  {item.label}
-                </IconText>
-              </li>
-            ))}
-          </ul>
+          <LogoCarousel variant="logo" />
         </Wrapper>
       </section>
     );

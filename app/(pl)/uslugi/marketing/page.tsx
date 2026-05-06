@@ -67,14 +67,7 @@ export default function OfferMarketingHubPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
-          { icon: <RiBarChart2Fill />, label: 'Raporty i kontrola wyników' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
-          { icon: <RiShieldCheckLine />, label: 'Bezpieczeństwo i stabilność' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/marketing`, label: 'Marketing' }} includeJsonLd />
 
@@ -215,7 +208,6 @@ export default function OfferMarketingHubPage() {
           items={[
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
               backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -223,7 +215,6 @@ export default function OfferMarketingHubPage() {
             },
             {
               title: 'Sklepy internetowe',
-              description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
               backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -231,7 +222,6 @@ export default function OfferMarketingHubPage() {
             },
             {
               title: 'Projekty graficzne',
-              description: 'Logo, wizytówki, ulotki i więcej',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -239,7 +229,6 @@ export default function OfferMarketingHubPage() {
             },
             {
               title: 'Tworzenie treści',
-              description: 'Teksty, które przyciągają klientów',
               size: 'small',
               backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
               btnLabel: 'Sprawdź ofertę',

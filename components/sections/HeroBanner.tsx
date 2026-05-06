@@ -84,7 +84,7 @@ export default function HeroBanner({
 
   const contentAnchor = variant === 'right' ? 'ml-auto' : variant === 'center' ? 'mx-auto' : '';
 
-  const contentWidthClass = isTools ? 'text-center md:w-[100%]' : variant === 'left' ? 'w-full md:max-w-[70%] lg:max-w-[40%]' : 'md:max-w-[65%]';
+  const contentWidthClass = isTools ? 'text-center md:w-[100%]' : variant === 'left' ? 'w-full md:max-w-[75%] lg:max-w-[55%]' : 'md:max-w-[75%]';
 
   const topButtons = [
     { text: buttonTopOne, link: buttonTopOneLink },
@@ -103,7 +103,7 @@ export default function HeroBanner({
       className={
         isTools
           ? `relative ${baseBg} flex h-auto items-center overflow-hidden pt-4 pb-2 md:pt-7`
-          : `relative ${baseBg} flex h-auto min-h-[400px] items-center overflow-hidden py-10 md:min-h-[440px] md:py-0 lg:min-h-[460px]`
+          : `relative ${baseBg} flex h-auto min-h-[400px] items-center overflow-hidden py-10 md:min-h-[460px] md:py-0 lg:min-h-[480px]`
       }
     >
       {hasBg && backgroundImage && (
@@ -114,7 +114,7 @@ export default function HeroBanner({
           priority
           fetchPriority="high"
           sizes="100vw"
-          quality={60}
+          quality={70}
           className="object-cover object-center"
           itemProp={emitImageMicrodata ? 'image' : undefined}
         />
@@ -154,7 +154,7 @@ export default function HeroBanner({
             <ButtonGroup
               btnOne={buttonAccent}
               btnOneLink={buttonAccentLink}
-              btnOneVariant="accent"
+              btnOneVariant="normal"
               btnTwo={buttonSecond}
               btnTwoLink={buttonSecondLink}
               btnTwoVariant="accent"

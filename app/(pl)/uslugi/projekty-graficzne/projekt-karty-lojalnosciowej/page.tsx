@@ -4,7 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiVipCrownLine, RiCoupon2Line, RiPencilRuler2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import { RiFileTextLine, RiVipCrownLine, RiCoupon2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -68,14 +68,7 @@ export default function OfferDesignLoyaltyCardPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiVipCrownLine />, label: 'Programy dopasowane do branży' },
-          { icon: <RiPencilRuler2Line />, label: 'Spójny wizerunek marki' },
-          { icon: <RiBarChart2Fill />, label: 'Wsparcie powtarzalnych zakupów' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia nagród w praktyce' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -285,7 +278,6 @@ export default function OfferDesignLoyaltyCardPage() {
           items={[
             {
               title: 'Identyfikacja wizualna',
-              description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
               backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -293,7 +285,6 @@ export default function OfferDesignLoyaltyCardPage() {
             },
             {
               title: 'Kupony i vouchery',
-              description: 'Nagradzaj lojalnych klientów dodatkowymi bonusami',
               size: 'medium',
               backgroundImage: '/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -301,7 +292,6 @@ export default function OfferDesignLoyaltyCardPage() {
             },
             {
               title: 'Projekt wizytówki',
-              description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
               backgroundImage: '/assets/projects/talia/mockup-wizytówki-talia.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -309,7 +299,6 @@ export default function OfferDesignLoyaltyCardPage() {
             },
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/jstax/moskup-strony-jstax.webp',
               btnLabel: 'Sprawdź ofertę',

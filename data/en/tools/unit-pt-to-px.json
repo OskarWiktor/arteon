@@ -29,7 +29,17 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert typographic points (pt) to pixels (px) and vice versa. Essential for web and print typography.",
-      "featureList": ["Real-time bidirectional pt ↔ px conversion", "Standard 96 DPI (Windows/web) and 72 DPI (legacy Mac) modes", "Print font size reference (Word, Google Docs defaults)", "PDF generation size reference (Puppeteer, wkhtmltopdf)", "Copy result to clipboard in one click", "Common font size comparison table (pt vs px vs rem)", "iOS/Android pt unit context", "Works entirely in browser — no server calls", "72pt = 1 inch reference built in"]
+      "featureList": [
+        "Real-time bidirectional pt ↔ px conversion",
+        "Standard 96 DPI (Windows/web) and 72 DPI (legacy Mac) modes",
+        "Print font size reference (Word, Google Docs defaults)",
+        "PDF generation size reference (Puppeteer, wkhtmltopdf)",
+        "Copy result to clipboard in one click",
+        "Common font size comparison table (pt vs px vs rem)",
+        "iOS/Android pt unit context",
+        "Works entirely in browser — no server calls",
+        "72pt = 1 inch reference built in"
+      ]
     },
     "howTo": {
       "name": "How to use the pt to px converter",

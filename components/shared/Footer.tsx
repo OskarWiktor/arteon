@@ -2,8 +2,6 @@ import Wrapper from '../ui/Wrapper';
 import CookieSettingsButton from './CookieSettingsButton';
 import AppLink from '../ui/Link';
 import Image from 'next/image';
-// NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
-// import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { getFooterTools } from '@/lib/i18n/tool-registry';
 import type { Locale, FooterUi, LegalLink } from '@/types/locale';
@@ -151,7 +149,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className="flex flex-col gap-2 text-sm">
                 {toolsCol1.map(({ href, label }) => (
                   <li key={href}>
-                    <AppLink href={href} className="text-left">
+                    <AppLink href={href} className="text-left text-sm">
                       {label}
                     </AppLink>
                   </li>
@@ -164,7 +162,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className="flex flex-col gap-2 text-sm lg:mt-9">
                 {toolsCol2.map(({ href, label }) => (
                   <li key={href}>
-                    <AppLink href={href} className="text-left">
+                    <AppLink href={href} className="text-left text-sm">
                       {label}
                     </AppLink>
                   </li>
@@ -177,7 +175,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className="flex flex-col gap-2 text-sm lg:mt-9">
                 {toolsCol3.map(({ href, label }) => (
                   <li key={href}>
-                    <AppLink href={href} className="text-left">
+                    <AppLink href={href} className="text-left text-sm">
                       {label}
                     </AppLink>
                   </li>
@@ -190,27 +188,11 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className="flex flex-col gap-2 text-sm lg:mt-9">
                 {toolsCol4.map(({ href, label }) => (
                   <li key={href}>
-                    <AppLink href={href} className="text-left">
+                    <AppLink href={href} className="text-left text-sm">
                       {label}
                     </AppLink>
                   </li>
                 ))}
-              </ul>
-            </nav>
-
-            <nav aria-label={ft.legalLabel} className="lg:col-start-6 lg:row-start-1">
-              <h3 className="h6 mb-3">{ft.legalLabel}</h3>
-              <ul className="flex flex-col gap-2 text-sm">
-                {localeLegalLinks.map((link) => (
-                  <li key={link.key}>
-                    <AppLink href={link.href} display="inline-block">
-                      {link.label}
-                    </AppLink>
-                  </li>
-                ))}
-                <li>
-                  <CookieSettingsButton label={ft.cookieSettingsLabel} />
-                </li>
               </ul>
             </nav>
           </div>
@@ -220,7 +202,15 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <small className="text-center text-sm md:text-left">
                 &copy; <time dateTime="2025">2025</time> Arteon. {ft.copyright}
               </small>
-              <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-3 cursor-pointer text-sm font-normal">
+              {localeLegalLinks.map((link) => (
+                <p key={link.key}>
+                  <AppLink href={link.href} display="inline-block" className="text-sm">
+                    {link.label}
+                  </AppLink>
+                </p>
+              ))}
+              <CookieSettingsButton label={ft.cookieSettingsLabel} />
+              <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-3 cursor-pointer text-xs font-normal">
                 #MadeWithNext.js
               </a>
             </div>
@@ -280,37 +270,38 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               */}
             </section>
 
-            {/* 1.2 Witryny */}
             <nav aria-label="Usługi - Witryny, Treści i Marketing" className="lg:col-start-2 lg:row-start-1">
               <h3 className="h6 mb-3">Witryny</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksOne.map(({ href, title }) => (
                   <li key={href}>
-                    <AppLink href={href}>{title}</AppLink>
+                    <AppLink className="text-left text-sm" href={href}>
+                      {title}
+                    </AppLink>
                   </li>
                 ))}
               </ul>
             </nav>
 
-            {/* 1.3 Treści + Marketing */}
             <nav aria-label="Treści i Marketing" className="lg:col-start-3 lg:row-start-1">
               <h3 className="h6 mb-3">Treści + Marketing</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksTwo.map(({ href, title }) => (
                   <li key={href}>
-                    <AppLink href={href}>{title}</AppLink>
+                    <AppLink className="text-left text-sm" href={href}>
+                      {title}
+                    </AppLink>
                   </li>
                 ))}
               </ul>
             </nav>
 
-            {/* 1.4 Projekty graficzne (1) */}
             <nav aria-label="Usługi - Projekty graficzne (1)" className="lg:col-start-4 lg:row-start-1">
               <h3 className="h6 mb-3">Projekty graficzne</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {gfxLeft.map(({ href, title }) => (
                   <li key={href}>
-                    <AppLink href={href} display="inline-block">
+                    <AppLink className="text-left text-sm" href={href} display="inline-block">
                       {title}
                     </AppLink>
                   </li>
@@ -318,13 +309,12 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </ul>
             </nav>
 
-            {/* 1.5 Projekty graficzne (2) */}
             <nav aria-label="Usługi - Projekty graficzne (2)" className="lg:col-start-5 lg:row-start-1">
               <h3 className="sr-only">Projekty graficzne</h3>
               <ul className="flex flex-col gap-2 text-sm lg:mt-9">
                 {gfxRight.map(({ href, title }) => (
                   <li key={href}>
-                    <AppLink href={href} display="inline-block">
+                    <AppLink className="text-left text-sm" href={href} display="inline-block">
                       {title}
                     </AppLink>
                   </li>
@@ -332,54 +322,38 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </ul>
             </nav>
 
-            {/* 2.1 Główne strony */}
             <nav aria-label="Główne sekcje" className="lg:col-start-1 lg:row-start-2">
               <h3 className="h6 mb-3">Główne strony</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {navLinksPrimary.map(({ href, label }) => (
                   <li key={href}>
-                    <AppLink href={href}>{label}</AppLink>
+                    <AppLink className="text-left text-sm" href={href}>
+                      {label}
+                    </AppLink>
                   </li>
                 ))}
               </ul>
             </nav>
 
-            {/* 2.2 Inne */}
             <nav aria-label="Nawigacja (cd.)" className="lg:col-start-2 lg:row-start-2">
               <h3 className="h6 mb-3">Inne</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {navLinksSecondary.map(({ href, label }) => (
                   <li key={href}>
-                    <AppLink href={href}>{label}</AppLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
-            {/* 2.3 Dokumenty i ustawienia */}
-            <nav aria-label="Dokumenty i ustawienia" className="lg:col-start-3 lg:row-start-2">
-              <h3 className="h6 mb-3">Dokumenty i ustawienia</h3>
-              <ul className="flex flex-col gap-2 text-sm">
-                {PL_LEGAL_LINKS.map(({ href, label }) => (
-                  <li key={href}>
-                    <AppLink href={href} display="inline-block">
+                    <AppLink className="text-left text-sm" href={href}>
                       {label}
                     </AppLink>
                   </li>
                 ))}
-                <li>
-                  <CookieSettingsButton label="Ustawienia plików cookie" />
-                </li>
               </ul>
             </nav>
 
-            {/* 2.4 Narzędzia (1) */}
             <nav aria-label="Narzędzia online (1)" className="lg:col-start-4 lg:row-start-2">
               <h3 className="h6 mb-3">Narzędzia</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {toolsLeft.map(({ href, label }) => (
                   <li key={href}>
-                    <AppLink href={href} className="text-left">
+                    <AppLink href={href} className="text-left text-sm">
                       {label}
                     </AppLink>
                   </li>
@@ -387,13 +361,12 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </ul>
             </nav>
 
-            {/* 2.5 Narzędzia (2) */}
             <nav aria-label="Narzędzia online (2)" className="lg:col-start-5 lg:row-start-2">
               <h3 className="sr-only">Narzędzia</h3>
               <ul className="flex flex-col gap-2 text-sm lg:mt-9">
                 {toolsRight.map(({ href, label }) => (
                   <li key={href}>
-                    <AppLink href={href} className="text-left">
+                    <AppLink href={href} className="text-left text-sm">
                       {label}
                     </AppLink>
                   </li>
@@ -407,6 +380,14 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <small className="text-center text-sm md:text-left">
                 &copy; <time dateTime="2025">2025</time> Arteon. Wszelkie prawa zastrzeżone.
               </small>
+              {PL_LEGAL_LINKS.map(({ href, label }) => (
+                <p key={href}>
+                  <AppLink href={href} display="inline-block" className="text-light text-sm">
+                    {label}
+                  </AppLink>
+                </p>
+              ))}
+              <CookieSettingsButton label="Ustawienia plików cookie" />
               <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-3 cursor-pointer text-sm font-normal">
                 #MadeWithNext.js
               </a>

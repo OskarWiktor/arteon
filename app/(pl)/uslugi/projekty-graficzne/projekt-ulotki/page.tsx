@@ -4,7 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiArticleLine, RiFileTextLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiArticleLine, RiFileTextLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -63,14 +63,7 @@ export default function OfferDesignFlyerPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
-          { icon: <RiBrushLine />, label: 'Perfekcja detalu' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -88,7 +81,7 @@ export default function OfferDesignFlyerPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title="Realizacje projektów graficznych" category="grafika" />
 
         <Gap variant="line" />
 
@@ -303,7 +296,6 @@ export default function OfferDesignFlyerPage() {
           items={[
             {
               title: 'Identyfikacja wizualna',
-              description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
               backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -311,7 +303,6 @@ export default function OfferDesignFlyerPage() {
             },
             {
               title: 'Projekt wizytówki',
-              description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'medium',
               backgroundImage: '/assets/projects/restoquality/mockup-wizytowki-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -319,7 +310,6 @@ export default function OfferDesignFlyerPage() {
             },
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/autokorfu/mockup-strony-auto-korfu.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -327,7 +317,6 @@ export default function OfferDesignFlyerPage() {
             },
             {
               title: 'Projekt katalogu',
-              description: 'Rozbudowana prezentacja oferty',
               size: 'small',
               backgroundImage: '/assets/projects/restoquality/mockup-gazetka-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',

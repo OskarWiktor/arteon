@@ -1,8 +1,6 @@
 import type { ReactNode } from 'react';
 
-export type ProjectCategory = 'aplikacja' | 'strona' | 'blog' | 'sklep' | 'grafika' | 'treść' | 'marketing';
-export type PrimaryCategory = Extract<ProjectCategory, 'aplikacja' | 'strona' | 'blog' | 'sklep'>;
-export type SecondaryCategory = Extract<ProjectCategory, 'grafika' | 'treść' | 'marketing'>;
+export type ProjectCategory = 'strona' | 'blog' | 'sklep' | 'grafika' | 'treść' | 'wizytówka' | 'logo' | 'aplikacja' | 'marketing';
 
 export type Stat = { label: string; value: string; note?: string };
 export type FaqItem = { question: string; answer: string };
@@ -118,6 +116,14 @@ export type ContentBlock =
       images: { src: string; alt: string; label?: string }[];
       breakBefore?: boolean;
       breakAfter?: boolean;
+    }
+  | {
+      type: 'imageGallery';
+      title?: string;
+      grid?: 'two' | 'four' | 'six';
+      images: { src: string; alt: string; title?: string }[];
+      breakBefore?: boolean;
+      breakAfter?: boolean;
     };
 
 export type ProjectCTA = {
@@ -168,4 +174,5 @@ export type ProjectPreview = {
   short: string;
   image: string;
   category: ProjectCategory[];
+  link?: string;
 };

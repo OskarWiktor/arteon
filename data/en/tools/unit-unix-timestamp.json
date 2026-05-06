@@ -29,7 +29,17 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert Unix timestamps to human-readable dates and vice versa. Essential for developers, debugging, and log analysis.",
-      "featureList": ["Instant Unix timestamp to human-readable UTC date conversion", "Convert dates back to epoch seconds or milliseconds for API use", "Displays current live timestamp (seconds and milliseconds)", "JavaScript: Date.now(), Python: time.time(), AWS CloudWatch log format support", "JWT token expiration (exp) field lookup", "Stripe and PayPal payment event timestamp decoding", "GDPR data retention period calculation from creation timestamp", "Copy result to clipboard with one click", "All calculations run locally — no server involved"]
+      "featureList": [
+        "Instant Unix timestamp to human-readable UTC date conversion",
+        "Convert dates back to epoch seconds or milliseconds for API use",
+        "Displays current live timestamp (seconds and milliseconds)",
+        "JavaScript: Date.now(), Python: time.time(), AWS CloudWatch log format support",
+        "JWT token expiration (exp) field lookup",
+        "Stripe and PayPal payment event timestamp decoding",
+        "GDPR data retention period calculation from creation timestamp",
+        "Copy result to clipboard with one click",
+        "All calculations run locally — no server involved"
+      ]
     },
     "howTo": {
       "name": "How to use the Unix timestamp converter",

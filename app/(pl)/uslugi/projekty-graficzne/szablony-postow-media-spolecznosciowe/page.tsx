@@ -13,7 +13,7 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import { IoColorPalette } from 'react-icons/io5';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import { RiFileTextLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
@@ -69,14 +69,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
-          { icon: <RiBrushLine />, label: 'Perfekcja detalu' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -91,7 +84,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title="Realizacje projektów graficznych" category="grafika" />
 
         <Gap variant="line" />
 
@@ -283,7 +276,6 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
           items={[
             {
               title: 'Identyfikacja wizualna',
-              description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
               backgroundImage: '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -291,7 +283,6 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             },
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
               backgroundImage: '/assets/projects/arteon-baners-camper-albania-mockup.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -299,7 +290,6 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             },
             {
               title: 'Projekt logo',
-              description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'small',
               backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -307,7 +297,6 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             },
             {
               title: 'Pozycjonowanie stron',
-              description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'small',
               backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',

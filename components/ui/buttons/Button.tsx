@@ -4,7 +4,7 @@ import { RiArrowRightSLine } from 'react-icons/ri';
 
 interface ButtonProps {
   children: ReactNode;
-  variant?: 'normal' | 'accent' | 'accent-reverse' | 'outline';
+  variant?: 'normal' | 'accent' | 'accent-reverse' | 'outline' | 'circle';
   size?: 'small' | 'medium';
   onClick?: () => void;
   disabled?: boolean;
@@ -70,6 +70,15 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
         {Arrow}
       </button>
     );
+  }
+
+  if (variant === 'circle') {
+    <button
+      type="button"
+      className="group border-primary bg-primary hover:text-mid focus-visible:ring-primary absolute bottom-[-31px] z-10 max-h-13 max-w-13 cursor-pointer rounded-full border p-1 text-white shadow-lg transition-colors hover:scale-105 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block md:p-2"
+    >
+      <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
+    </button>;
   }
 
   if (link) {

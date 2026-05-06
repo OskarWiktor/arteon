@@ -28,7 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convert JSON to CSV format. Automatic parsing and formatting. Free, no registration.",
-      "featureList": ["Converts JSON array of objects to CSV rows", "Auto-extracts all unique keys as column headers", "Flattens nested objects with dot notation (e.g. address.city)", "Serializes nested arrays as strings in cells", "Handles null values as empty cells", "Proper CSV quoting for values containing commas or newlines", "Batch multi-file conversion", "Local browser processing – no upload", "Download output as .csv file", "Compatible with Excel, Google Sheets, and LibreOffice Calc"],
+      "featureList": [
+        "Converts JSON array of objects to CSV rows",
+        "Auto-extracts all unique keys as column headers",
+        "Flattens nested objects with dot notation (e.g. address.city)",
+        "Serializes nested arrays as strings in cells",
+        "Handles null values as empty cells",
+        "Proper CSV quoting for values containing commas or newlines",
+        "Batch multi-file conversion",
+        "Local browser processing – no upload",
+        "Download output as .csv file",
+        "Compatible with Excel, Google Sheets, and LibreOffice Calc"
+      ],
       "alternateName": ["Convert JSON to CSV", "JSON to CSV", "Free JSON to CSV converter"]
     },
     "howTo": {

@@ -2,7 +2,7 @@
 
 import { startTransition, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
-import { NavMenuLine as RiMenuLine, NavCloseLine as RiCloseLine, NavSearchLine as RiSearchLine, NavMailSettingsLine as RiMailSettingsLine } from '@/components/ui/icons/NavIcons';
+import { NavMenuLine as RiMenuLine, NavCloseLine as RiCloseLine, NavSearchLine as RiSearchLine } from '@/components/ui/icons/NavIcons';
 import Image from 'next/image';
 
 import { DesktopNavSkeleton } from '@/components/ui/skeletons/NavSkeleton';
@@ -16,10 +16,8 @@ import Wrapper from '@/components/ui/Wrapper';
 import IconButton from '@/components/ui/buttons/IconButton';
 import Link from 'next/link';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
-import SectionInfoBanner from '../ui/sections/SectionInfoBanner';
 import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import { getToolHref } from '@/lib/i18n/tool-registry';
 
 const SearchDialog = dynamic(() => import('@/components/ui/SearchDialog'), { ssr: false });
 
@@ -50,6 +48,7 @@ export default function Navigation() {
 
   return (
     <header id="navigation" className="sticky top-0 z-50 w-full bg-white shadow-md">
+      {/*
       <SectionInfoBanner
         items={[
           {
@@ -60,6 +59,7 @@ export default function Navigation() {
           },
         ]}
       />
+      */}
 
       <Wrapper>
         <nav className="flex h-12 items-center justify-between md:h-14 lg:h-16" aria-label={t.mainNavigation}>

@@ -25,11 +25,7 @@
   "schemas": {
     "software": {
       "name": "Przelicznik vw na px – konwerter CSS viewport width do pikseli",
-      "alternateName": [
-        "Przelicznik vw px",
-        "Kalkulator viewport",
-        "CSS vw to pixels"
-      ],
+      "alternateName": ["Przelicznik vw px", "Kalkulator viewport", "CSS vw to pixels"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz vw na piksele – podaj szerokosc okna i sprawdz wynik natychmiast. Niezbedny przy fluid typography z clamp() i responsywnych layoutach. Bez rejestracji.",

@@ -4,7 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiLayoutLine, RiBookOpenLine } from 'react-icons/ri';
+import { RiFileTextLine, RiLayoutLine, RiBookOpenLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -66,14 +66,7 @@ export default function OfferDesignMenuPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiPencilRuler2Line />, label: 'Menu dopasowane do klimatu lokalu' },
-          { icon: <RiBrushLine />, label: 'Estetyka, która podnosi apetyt' },
-          { icon: <RiBarChart2Fill />, label: 'Układ, który wspiera sprzedaż' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia wyboru dań' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -88,7 +81,7 @@ export default function OfferDesignMenuPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title="Realizacje projektów graficznych" category="grafika" />
 
         <Gap variant="line" />
 
@@ -290,7 +283,6 @@ export default function OfferDesignMenuPage() {
           items={[
             {
               title: 'Identyfikacja wizualna',
-              description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
               backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -298,7 +290,6 @@ export default function OfferDesignMenuPage() {
             },
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
               backgroundImage: '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -306,7 +297,6 @@ export default function OfferDesignMenuPage() {
             },
             {
               title: 'Projekt wizytówki',
-              description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
               backgroundImage: '/assets/projects/restoquality/mockup-wizytowki-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -314,7 +304,6 @@ export default function OfferDesignMenuPage() {
             },
             {
               title: 'Szablony media społecznościowe',
-              description: 'Gotowe projekty do Twoich postów',
               size: 'small',
               backgroundImage: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               btnLabel: 'Sprawdź ofertę',

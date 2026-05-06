@@ -29,7 +29,17 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert Tailwind CSS spacing units to pixels and vice versa. Essential for developers using Tailwind CSS framework.",
-      "featureList": ["Real-time bidirectional Tailwind ↔ px conversion", "Full default spacing scale (0.5 to 96 units)", "Shows rem and px simultaneously", "Tailwind breakpoints reference (sm/md/lg/xl/2xl)", "Copy result to clipboard in one click", "Works with JIT mode spacing values", "Custom spacing config reference", "Reference table with shadcn/ui component sizes", "Works entirely in browser — no server calls"]
+      "featureList": [
+        "Real-time bidirectional Tailwind ↔ px conversion",
+        "Full default spacing scale (0.5 to 96 units)",
+        "Shows rem and px simultaneously",
+        "Tailwind breakpoints reference (sm/md/lg/xl/2xl)",
+        "Copy result to clipboard in one click",
+        "Works with JIT mode spacing values",
+        "Custom spacing config reference",
+        "Reference table with shadcn/ui component sizes",
+        "Works entirely in browser — no server calls"
+      ]
     },
     "howTo": {
       "name": "How to use the Tailwind to px converter",

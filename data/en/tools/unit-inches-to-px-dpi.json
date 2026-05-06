@@ -29,7 +29,17 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert inches to pixels at any DPI resolution. Essential for print design, image preparation, and display calculations.",
-      "featureList": ["Real-time bidirectional inches ↔ px conversion", "Configurable DPI input (72, 96, 150, 300, 600)", "US Letter, Legal, Tabloid size reference", "Social media ad specs built in (Facebook 1200×628px)", "Photo print sizes (4×6, 5×7, 8×10, 11×14)", "Amazon and Etsy printable product size reference", "Copy result to clipboard in one click", "Works entirely in browser — no server calls", "Retina display DPI context included"]
+      "featureList": [
+        "Real-time bidirectional inches ↔ px conversion",
+        "Configurable DPI input (72, 96, 150, 300, 600)",
+        "US Letter, Legal, Tabloid size reference",
+        "Social media ad specs built in (Facebook 1200×628px)",
+        "Photo print sizes (4×6, 5×7, 8×10, 11×14)",
+        "Amazon and Etsy printable product size reference",
+        "Copy result to clipboard in one click",
+        "Works entirely in browser — no server calls",
+        "Retina display DPI context included"
+      ]
     },
     "howTo": {
       "name": "How to use the inches to px converter",

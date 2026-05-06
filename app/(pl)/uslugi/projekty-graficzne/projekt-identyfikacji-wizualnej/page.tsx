@@ -4,7 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiIdCardLine, RiPantoneLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import { RiBookOpenLine, RiFileTextLine, RiIdCardLine, RiPantoneLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -68,14 +68,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiPantoneLine />, label: 'Spójny obraz marki w każdym kanale' },
-          { icon: <RiBrushLine />, label: 'Projekt dopasowany do charakteru firmy' },
-          { icon: <RiBarChart2Fill />, label: 'System, który wspiera sprzedaż' },
-          { icon: <RiLightbulbFlashLine />, label: 'Identyfikacja oparta na strategii' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -90,7 +83,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title="Realizacje projektów graficznych" category="grafika" />
 
         <Gap variant="line" />
 
@@ -318,7 +311,6 @@ export default function OfferDesignBrandIdentityDesignPage() {
           items={[
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
               backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -326,7 +318,6 @@ export default function OfferDesignBrandIdentityDesignPage() {
             },
             {
               title: 'Sklepy internetowe',
-              description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
               backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -334,7 +325,6 @@ export default function OfferDesignBrandIdentityDesignPage() {
             },
             {
               title: 'Projekt wizytówki',
-              description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
               backgroundImage: '/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -342,7 +332,6 @@ export default function OfferDesignBrandIdentityDesignPage() {
             },
             {
               title: 'Projekt logo',
-              description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'small',
               backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',

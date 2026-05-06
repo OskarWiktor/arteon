@@ -4,7 +4,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiBarChart2Fill, RiCustomerService2Line, RiLightbulbFlashLine, RiShieldCheckLine, RiSearchLine, RiFileList2Line, RiCheckLine } from 'react-icons/ri';
+import { RiLightbulbFlashLine, RiSearchLine, RiFileList2Line, RiCheckLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -73,14 +73,7 @@ export default function OfferMarketingPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiCustomerService2Line />, label: 'Stabilny rozwój' },
-          { icon: <RiLightbulbFlashLine />, label: 'Lepsza widoczność' },
-          { icon: <RiBarChart2Fill />, label: 'Raport i priorytety' },
-          { icon: <RiShieldCheckLine />, label: 'Bezpieczne wdrożenia' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -394,7 +387,6 @@ export default function OfferMarketingPage() {
           items={[
             {
               title: 'Pozycjonowanie stron',
-              description: 'Stałe działania SEO po audycie',
               size: 'large',
               backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -402,7 +394,6 @@ export default function OfferMarketingPage() {
             },
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
               backgroundImage: '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -410,7 +401,6 @@ export default function OfferMarketingPage() {
             },
             {
               title: 'Sklepy internetowe',
-              description: 'Sprzedawaj produkty online',
               size: 'small',
               backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -418,7 +408,6 @@ export default function OfferMarketingPage() {
             },
             {
               title: 'Tworzenie treści',
-              description: 'Teksty, które przyciągają klientów',
               size: 'small',
               backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
               btnLabel: 'Sprawdź ofertę',

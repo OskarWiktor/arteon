@@ -25,11 +25,7 @@
   "schemas": {
     "software": {
       "name": "Konwerter JSON na XML - darmowy, bez rejestracji",
-      "alternateName": [
-        "Zamiana JSON na XML online",
-        "Konwersja JSON do XML",
-        "JSON to XML converter"
-      ],
+      "alternateName": ["Zamiana JSON na XML online", "Konwersja JSON do XML", "JSON to XML converter"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter JSON na XML online. Zamień dane JSON na XML w przeglądarce - dane nie są wysyłane na serwer.",

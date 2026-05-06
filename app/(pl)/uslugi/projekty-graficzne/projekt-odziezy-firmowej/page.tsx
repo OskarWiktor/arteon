@@ -4,7 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiImageLine, RiQuillPenLine, RiTShirt2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import { RiFileTextLine, RiImageLine, RiQuillPenLine, RiTShirt2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -70,14 +70,7 @@ export default function OfferDesignCorporateApparelPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiPencilRuler2Line />, label: 'Spójny wygląd zespołu' },
-          { icon: <RiBrushLine />, label: 'Projekt dopasowany do marki' },
-          { icon: <RiBarChart2Fill />, label: 'Większa rozpoznawalność w terenie' },
-          { icon: <RiLightbulbFlashLine />, label: 'Praktyczne podejście do produkcji' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -92,7 +85,7 @@ export default function OfferDesignCorporateApparelPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title="Realizacje projektów graficznych" category="grafika" />
 
         <Gap variant="line" />
 
@@ -278,7 +271,6 @@ export default function OfferDesignCorporateApparelPage() {
           items={[
             {
               title: 'Identyfikacja wizualna',
-              description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
               backgroundImage: '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -286,7 +278,6 @@ export default function OfferDesignCorporateApparelPage() {
             },
             {
               title: 'Projekt wizytówki',
-              description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'medium',
               backgroundImage: '/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -294,7 +285,6 @@ export default function OfferDesignCorporateApparelPage() {
             },
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -302,7 +292,6 @@ export default function OfferDesignCorporateApparelPage() {
             },
             {
               title: 'Projekt papieru firmowego',
-              description: 'Profesjonalny wygląd dokumentów',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
               btnLabel: 'Sprawdź ofertę',

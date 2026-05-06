@@ -4,7 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookletLine, RiFileTextLine, RiImageLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBookletLine, RiFileTextLine, RiImageLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -66,14 +66,7 @@ export default function OfferDesignCatalogPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiPencilRuler2Line />, label: 'Oferta poukładana jak dobry landing' },
-          { icon: <RiBrushLine />, label: 'Projekt, który podnosi postrzeganą wartość' },
-          { icon: <RiBarChart2Fill />, label: 'Materiały, które wspierają sprzedaż handlowców' },
-          { icon: <RiLightbulbFlashLine />, label: 'Układ oparty na psychologii decyzji' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -85,7 +78,7 @@ export default function OfferDesignCatalogPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title="Realizacje projektów graficznych" category="grafika" />
 
         <Gap variant="line" />
 
@@ -293,7 +286,6 @@ export default function OfferDesignCatalogPage() {
           items={[
             {
               title: 'Identyfikacja wizualna',
-              description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
               backgroundImage: '/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -301,7 +293,6 @@ export default function OfferDesignCatalogPage() {
             },
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
               backgroundImage: '/assets/projects/autokorfu/mockup-strony-auto-korfu.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -309,7 +300,6 @@ export default function OfferDesignCatalogPage() {
             },
             {
               title: 'Projekt wizytówki',
-              description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
               backgroundImage: '/assets/projects/restoquality/mockup-wizytowki-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -317,7 +307,6 @@ export default function OfferDesignCatalogPage() {
             },
             {
               title: 'Projekt ulotki',
-              description: 'Skuteczna promocja Twojej oferty',
               size: 'small',
               backgroundImage: '/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp',
               btnLabel: 'Sprawdź ofertę',

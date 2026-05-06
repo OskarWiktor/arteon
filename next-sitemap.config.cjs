@@ -2,14 +2,7 @@ const fg = require('fast-glob');
 const path = require('node:path');
 const fs = require('node:fs');
 const { execSync } = require('node:child_process');
-const {
-  SITE_URL,
-  LOCALES,
-  LOCALE_TOOLS_BASE,
-  LOCALE_TO_HREFLANG,
-  MULTILINGUAL_PAGES,
-  buildToolLocalePathsMap,
-} = require('./lib/sitemap-locale-config.cjs');
+const { SITE_URL, LOCALES, LOCALE_TOOLS_BASE, LOCALE_TO_HREFLANG, MULTILINGUAL_PAGES, buildToolLocalePathsMap } = require('./lib/sitemap-locale-config.cjs');
 
 function gitLastCommitISO(filePath) {
   try {

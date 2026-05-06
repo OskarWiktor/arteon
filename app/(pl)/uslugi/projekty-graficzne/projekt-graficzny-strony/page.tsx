@@ -4,7 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBarChart2Fill, RiCodeSSlashFill, RiDeviceLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiCodeSSlashFill, RiDeviceLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -63,14 +63,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiLayoutLine />, label: 'Czytelny układ strony' },
-          { icon: <RiDeviceLine />, label: 'Desktop i mobile w standardzie' },
-          { icon: <RiCodeSSlashFill />, label: 'Projekt gotowy do wdrożenia' },
-          { icon: <RiBarChart2Fill />, label: 'Layout pod konwersję' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -85,7 +78,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title="Realizacje projektów graficznych stron internetowych" category="strona" />
 
         <Gap variant="line" />
 
@@ -298,7 +291,6 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
           items={[
             {
               title: 'Strony internetowe',
-              description: 'Wdrożenie projektu w działającą stronę',
               size: 'large',
               backgroundImage: '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -306,7 +298,6 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             },
             {
               title: 'Sklepy internetowe',
-              description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
               backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -314,7 +305,6 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             },
             {
               title: 'Identyfikacja wizualna',
-              description: 'Spójna tożsamość marki od A do Z',
               size: 'small',
               backgroundImage: '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -322,7 +312,6 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             },
             {
               title: 'Pozycjonowanie stron',
-              description: 'Zwiększ widoczność w Google',
               size: 'small',
               backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',

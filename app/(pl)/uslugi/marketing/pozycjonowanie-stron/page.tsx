@@ -4,7 +4,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiBarChart2Fill, RiLightbulbFlashLine, RiShieldCheckLine, RiLineChartLine, RiSearchLine, RiFileList2Line, RiLinksFill } from 'react-icons/ri';
+import { RiBarChart2Fill, RiLightbulbFlashLine, RiSearchLine, RiFileList2Line, RiLinksFill } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -63,14 +63,7 @@ export default function OfferSeoSubscription() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiLineChartLine />, label: 'Stały wzrost widoczności' },
-          { icon: <RiLightbulbFlashLine />, label: 'Strategia treści' },
-          { icon: <RiBarChart2Fill />, label: 'Raport co miesiąc' },
-          { icon: <RiShieldCheckLine />, label: 'Bezpieczne działania' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -368,7 +361,6 @@ export default function OfferSeoSubscription() {
           items={[
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
               backgroundImage: '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -376,7 +368,6 @@ export default function OfferSeoSubscription() {
             },
             {
               title: 'Sklepy internetowe',
-              description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
               backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -384,7 +375,6 @@ export default function OfferSeoSubscription() {
             },
             {
               title: 'Tworzenie treści',
-              description: 'Teksty, które przyciągają klientów',
               size: 'small',
               backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -392,7 +382,6 @@ export default function OfferSeoSubscription() {
             },
             {
               title: 'Blogi internetowe',
-              description: 'Buduj autorytet i pozycję w Google',
               size: 'small',
               backgroundImage: '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
               btnLabel: 'Sprawdź ofertę',

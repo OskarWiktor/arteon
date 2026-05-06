@@ -25,11 +25,7 @@
   "schemas": {
     "software": {
       "name": "Konwerter HEX na RGB – przelicz kolory",
-      "alternateName": [
-        "Przelicznik kolorów HEX RGB",
-        "Kalkulator HEX na RGB",
-        "Konwerter kolorów CSS"
-      ],
+      "alternateName": ["Przelicznik kolorów HEX RGB", "Kalkulator HEX na RGB", "Konwerter kolorów CSS"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz kolory HEX na RGB i odwrotnie. Przydatny przy sprawdzaniu kontrastu WCAG, pracy z Figma i budowaniu systemów projektowych. Bez rejestracji.",

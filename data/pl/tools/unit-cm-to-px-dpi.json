@@ -25,11 +25,7 @@
   "schemas": {
     "software": {
       "name": "Przelicznik cm na piksele (DPI) – centymetry na px do druku",
-      "alternateName": [
-        "Przelicznik cm na px",
-        "Kalkulator cm na piksele",
-        "cm to pixels DPI"
-      ],
+      "alternateName": ["Przelicznik cm na px", "Kalkulator cm na piksele", "cm to pixels DPI"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz centymetry na piksele z regulowanym DPI – A4 przy 300 DPI to 2480 x 3508 px. Niezbedny przy przygotowaniu grafik do polskich drukarni. Bez rejestracji.",

@@ -7,10 +7,6 @@ import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import SectionBento from '@/components/ui/sections/SectionBento';
 import {
-  RiShieldCheckLine,
-  RiBarChart2Fill,
-  RiCustomerService2Line,
-  RiSpeedFill,
   RiArticleLine,
   RiBookOpenLine,
   RiDeviceLine,
@@ -83,21 +79,14 @@ export default function OfferWebPage() {
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiSpeedFill />, label: 'Szybkość i stabilność' },
-          { icon: <RiShieldCheckLine />, label: 'Bezpieczeństwo' },
-          { icon: <RiBarChart2Fill />, label: 'Stała kontrola wyników' },
-          { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/sklepy-internetowe`, label: 'Sklepy internetowe' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="xs" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje sklepów internetowych" category="sklep" />
+        <ProjectsCarousel title="Realizacje sklepów internetowych" category="sklep" />
 
         <Gap variant="line" />
 
@@ -408,7 +397,6 @@ export default function OfferWebPage() {
           items={[
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
               backgroundImage: '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -416,7 +404,6 @@ export default function OfferWebPage() {
             },
             {
               title: 'Pozycjonowanie stron',
-              description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'medium',
               backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -424,7 +411,6 @@ export default function OfferWebPage() {
             },
             {
               title: 'Projekt logo',
-              description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'small',
               backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -432,7 +418,6 @@ export default function OfferWebPage() {
             },
             {
               title: 'Szablony media społecznościowe',
-              description: 'Gotowe projekty do Twoich postów',
               size: 'small',
               backgroundImage: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               btnLabel: 'Sprawdź ofertę',

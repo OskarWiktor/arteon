@@ -6,7 +6,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
-import TechStack from '@/components/sections/TechStack';
 import LazyTestimonialsCarousel from '@/components/sections/LazyTestimonialsCarousel';
 import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
@@ -14,25 +13,28 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import { GoLaw } from 'react-icons/go';
 import { MdSupportAgent } from 'react-icons/md';
-import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine, RiBarChart2Line, RiBookOpenLine, RiBrushLine } from 'react-icons/ri';
+import { RiArticleLine, RiBarChart2Line, RiBookOpenLine, RiBrushLine } from 'react-icons/ri';
 import { getHomepageAlternates } from '@/lib/i18n/pages/tool-meta';
 import testimonialsPl from '@/data/pl/testimonials.json';
 import type { Testimonial } from '@/types/testimonial';
 import { getAllArticlePreviews } from '@/lib/blogDataService';
 import LazyToolsCarousel from '@/components/sections/tools/LazyToolsCarousel';
+import LogoCarousel from '@/components/sections/LogoCarousel';
 
 export const metadata = {
-  title: 'Strony, sklepy, treści i marketing | Arteon',
-  description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',
+  title: 'Strony internetowe, sklepy, treści i projekty graficzne - Arteon',
+  description:
+    'Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepu, treści oraz wszelkie projekty graficzne. Sprawdź ofertę i dostań bezpłatną wycenę realizacji.',
   alternates: getHomepageAlternates(),
   openGraph: {
-    title: 'Strony, sklepy, treści i marketing | Arteon',
-    description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',
+    title: 'Strony internetowe, sklepy, treści i projekty graficzne - Arteon',
+    description:
+      'Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepu, treści oraz wszelkie projekty graficzne. Sprawdź ofertę i dostań bezpłatną wycenę realizacji.',
     url: 'https://www.arteonagency.pl',
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: 'https://www.arteonagency.pl/assets/bg/arteon-hero-baner-z-realizacja-strony-jstax.webp',
       },
     ],
   },
@@ -75,32 +77,32 @@ function HomePageSchemas() {
   const howTo = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'Jak pracujemy - proces współpracy z Arteon',
-    description: 'Czteroetapowy proces współpracy: rozmowa, plan, realizacja, publikacja i wsparcie.',
+    name: 'Jak pracujemy',
+    description: 'Posiadamy jasny proces współpracy, który maksymalizuje indywidualne podejście i końcowy efekt',
     step: [
       {
         '@type': 'HowToStep',
         position: 1,
         name: 'Rozmowa',
-        text: 'Ustalamy cele, odbiorców i priorytety. Zbieramy wszelkie informację, żeby stworzyć efekt, na którym Ci zależy.',
+        text: 'Pierwszy etap to zawsze rozmowa na której opowiadasz o tym czym się zajmujesz i co chcesz zrealizować.',
       },
       {
         '@type': 'HowToStep',
         position: 2,
         name: 'Plan',
-        text: 'Tworzymy dokładny plan: ustalamy zakres, termin i tworzymy dedykowaną wycenę.',
+        text: 'Po wstępnej rozmowie zawsze dostajesz plan, który jest nastawiony na Twoje potrzeby oraz na Twoich obiorców wraz z etapami realizacji oraz wyceną, której zawsze się trzymamy. Każdy plan dopracowujemy abyś dostał dokładnie to czego potrzebujesz.',
       },
       {
         '@type': 'HowToStep',
         position: 3,
         name: 'Realizacja',
-        text: 'Tworzymy to, czego potrzebujesz: stronę, grafiki, treści lub kampanie. Dbamy o widoczność w Google i dostępność (WCAG).',
+        text: 'Po akceptacji planu przechodzimy do realizacji: tworzymy projekt graficzny strony, sklepu czy wybranego projektu do druku. Zawsze dostajesz kilka koncepcji wraz z możliwością naniesienia poprawek i wszelkich uwag. Wszystko dopracowujemy abyś był w pełni zadowolony z projektu.',
       },
       {
         '@type': 'HowToStep',
         position: 4,
         name: 'Publikacja i wsparcie',
-        text: 'Uruchamiamy i dostarczamy pliki. Tworzymy darmową listę kroków „co dalej”, by Twoja firma rosła szybciej.',
+        text: 'Gdy efekt jest dla Ciebie w 100% zadowalający publikujemy stronę lub dostarczamy gotowe pliki do druku. Dostajesz pełen dostęp do wszystkiego. Po przekazaniu wystawiamy fakturę za realizację z płatnością do 7 dni roboczych.',
       },
     ],
   };
@@ -120,26 +122,22 @@ export default function HomePage() {
     <>
       <HomePageSchemas />
       <HeroBanner
-        title="Rozwiń swoją markę z nami"
-        description="Międzynarodowy standard jakości dla małych i średnich przedsiębiorstw"
+        title="Strony internetowe, sklepy, treści i projekty graficzne"
+        description="Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepu, treści oraz wszelkie projekty graficzne. Zajmuje się również pozycjonowaniem witryn jak i budową aplikacji webowych. Wszystko zrealizujesz w jednym miejscu."
         backgroundImage="/assets/bg/arteon-hero-baner-z-realizacja-strony-jstax.webp"
+        buttonAccent="Sprawdź ofertę"
+        buttonAccentLink="/uslugi"
+        buttonSecond="Skontaktuj się"
+        buttonSecondLink="/kontakt"
         overlay="black"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiCodeSSlashFill />, label: 'Strony' },
-          { icon: <RiShoppingCartLine />, label: 'Sklepy' },
-          { icon: <RiArticleLine />, label: 'Blogi' },
-          { icon: <RiPaletteLine />, label: 'Projekty graficzne' },
-          { icon: <RiFileTextLine />, label: 'Treści' },
-          { icon: <RiMegaphoneLine />, label: 'Marketing' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
+
       <Wrapper>
         <Gap size="sm" />
 
-        <ProjectsCarousel title="Najnowsze realizacje" />
+        <ProjectsCarousel title="Najnowsze realizacje stron internetowych i projektów graficznych" />
 
         <Gap variant="line" />
 
@@ -218,7 +216,7 @@ export default function HomePage() {
               ),
             },
             {
-              topImageAlt: 'Treści dla MSC Psychotherapy - baner',
+              topImageAlt: 'Treści dla MSC Psychotherapy - baner ',
               topImageSrc: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
               imageSrc: '/assets/powietrze.webp',
               imageAlt: 'Powietrze - symbol języka',
@@ -290,7 +288,7 @@ export default function HomePage() {
 
         <Gap variant="line" />
 
-        <TechStack />
+        <LogoCarousel />
 
         <Gap variant="line" />
 

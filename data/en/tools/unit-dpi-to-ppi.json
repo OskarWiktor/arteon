@@ -29,7 +29,17 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert DPI (dots per inch) to PPI (pixels per inch) and understand the difference. Useful for print and screen design.",
-      "featureList": ["Instant DPI to PPI and PPI to DPI conversion", "Explains the print vs screen resolution difference clearly", "Reference standards: 300 PPI for professional print, 72 PPI legacy web, 227 PPI MacBook Retina", "Covers Walgreens, Shutterfly, and standard photo print service requirements", "HiDPI and Retina display density reference (iPhone 460 PPI, MacBook 227 PPI)", "Photoshop DPI vs PPI explanation with resampling guidance", "Copy result to clipboard with one click", "All calculations run locally — no server involved", "Works on mobile and desktop without installation"]
+      "featureList": [
+        "Instant DPI to PPI and PPI to DPI conversion",
+        "Explains the print vs screen resolution difference clearly",
+        "Reference standards: 300 PPI for professional print, 72 PPI legacy web, 227 PPI MacBook Retina",
+        "Covers Walgreens, Shutterfly, and standard photo print service requirements",
+        "HiDPI and Retina display density reference (iPhone 460 PPI, MacBook 227 PPI)",
+        "Photoshop DPI vs PPI explanation with resampling guidance",
+        "Copy result to clipboard with one click",
+        "All calculations run locally — no server involved",
+        "Works on mobile and desktop without installation"
+      ]
     },
     "howTo": {
       "name": "How to use the DPI to PPI converter",

@@ -28,7 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convert Markdown to HTML format. Automatic parsing and formatting. Free, no registration.",
-      "featureList": ["Full CommonMark specification support", "Converts # through ###### to <h1>–<h6> heading elements", "Converts **bold** and *italic* to <strong> and <em>", "Converts [text](url) links and ![alt](src) images to HTML", "Converts fenced code blocks (```) to <pre><code> with language class", "Converts pipe tables to semantic <table><thead><tbody>", "Converts blockquotes to <blockquote> elements", "Passes inline HTML through unchanged", "Batch multi-file conversion", "Local browser processing – no upload"],
+      "featureList": [
+        "Full CommonMark specification support",
+        "Converts # through ###### to <h1>–<h6> heading elements",
+        "Converts **bold** and *italic* to <strong> and <em>",
+        "Converts [text](url) links and ![alt](src) images to HTML",
+        "Converts fenced code blocks (```) to <pre><code> with language class",
+        "Converts pipe tables to semantic <table><thead><tbody>",
+        "Converts blockquotes to <blockquote> elements",
+        "Passes inline HTML through unchanged",
+        "Batch multi-file conversion",
+        "Local browser processing – no upload"
+      ],
       "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
     },
     "howTo": {

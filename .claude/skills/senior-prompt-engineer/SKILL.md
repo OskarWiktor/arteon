@@ -15,7 +15,7 @@ World-class senior prompt engineer skill for production-grade AI/ML/Data systems
 # Core Tool 1
 python scripts/prompt_optimizer.py --input data/ --output results/
 
-# Core Tool 2  
+# Core Tool 2
 python scripts/rag_evaluator.py --target project/ --analyze
 
 # Core Tool 3
@@ -141,15 +141,18 @@ High-throughput inference system:
 ## Performance Targets
 
 **Latency:**
+
 - P50: < 50ms
 - P95: < 100ms
 - P99: < 200ms
 
 **Throughput:**
+
 - Requests/second: > 1000
 - Concurrent users: > 10,000
 
 **Availability:**
+
 - Uptime: 99.9%
 - Error rate: < 0.1%
 
@@ -196,24 +199,28 @@ python scripts/health_check.py
 As a world-class senior professional:
 
 1. **Technical Leadership**
+
    - Drive architectural decisions
    - Mentor team members
    - Establish best practices
    - Ensure code quality
 
 2. **Strategic Thinking**
+
    - Align with business goals
    - Evaluate trade-offs
    - Plan for scale
    - Manage technical debt
 
 3. **Collaboration**
+
    - Work across teams
    - Communicate effectively
    - Build consensus
    - Share knowledge
 
 4. **Innovation**
+
    - Stay current with research
    - Experiment with new approaches
    - Contribute to community

@@ -29,7 +29,17 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert millimeters to pixels at any DPI resolution. Essential for print design, packaging, and precise graphic work.",
-      "featureList": ["Real-time bidirectional mm ↔ px conversion", "Configurable DPI input (72, 96, 150, 300, 600)", "A4 / US Letter / business card size reference", "Bleed area calculation (adds 3mm per edge)", "Receipt paper width reference (80mm thermal)", "Label and sticker dimensions in mm and px", "Copy result to clipboard in one click", "Works entirely in browser — no server calls", "InDesign document setup use cases"]
+      "featureList": [
+        "Real-time bidirectional mm ↔ px conversion",
+        "Configurable DPI input (72, 96, 150, 300, 600)",
+        "A4 / US Letter / business card size reference",
+        "Bleed area calculation (adds 3mm per edge)",
+        "Receipt paper width reference (80mm thermal)",
+        "Label and sticker dimensions in mm and px",
+        "Copy result to clipboard in one click",
+        "Works entirely in browser — no server calls",
+        "InDesign document setup use cases"
+      ]
     },
     "howTo": {
       "name": "How to use the mm to px converter",

@@ -25,11 +25,7 @@
   "schemas": {
     "software": {
       "name": "Konwerter HTML na Markdown - darmowy, bez rejestracji",
-      "alternateName": [
-        "Zamiana HTML na Markdown online",
-        "Konwersja HTML do Markdown",
-        "HTML to Markdown converter"
-      ],
+      "alternateName": ["Zamiana HTML na Markdown online", "Konwersja HTML do Markdown", "HTML to Markdown converter"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter HTML na Markdown online. Zamień dane HTML na Markdown w przeglądarce - dane nie są wysyłane na serwer.",

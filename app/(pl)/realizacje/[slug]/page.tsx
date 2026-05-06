@@ -50,6 +50,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import SectionMetrics from '@/components/ui/sections/SectionMetrics';
 import SectionFeatureList from '@/components/ui/sections/SectionFeatureList';
 import SectionProcess from '@/components/ui/sections/SectionProcess';
+import SectionImageGallery from '@/components/ui/sections/SectionImageGallery';
 
 interface ProjectsData {
   projects: Project[];
@@ -227,7 +228,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
 
           return (
             <div key={`imgt-${i}`} className={wrapperClass}>
-              <div className="grid items-start gap-6 md:grid-cols-2">
+              <div className="grid items-center gap-6 md:grid-cols-2">
                 {b.imageSide === 'right' ? (
                   <>
                     <div dangerouslySetInnerHTML={{ __html: b.html }} />
@@ -422,6 +423,15 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                 </div>
                 {b.note && <div className="mt-3 text-sm" dangerouslySetInnerHTML={{ __html: b.note }} />}
               </SectionInfo>
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
+        if (b.type === 'imageGallery') {
+          return (
+            <div key={`gallery-${i}`} className={wrapperClass}>
+              <SectionImageGallery title={b.title} images={b.images} grid={b.grid} noWrapper />
               {b.breakAfter && <Gap size="sm" variant="line" />}
             </div>
           );

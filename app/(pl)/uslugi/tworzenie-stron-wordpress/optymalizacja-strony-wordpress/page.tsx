@@ -73,14 +73,7 @@ export default function OfferOptimizationWordPressPage() {
         subtitle="Oferta specjalna: optymalizacja WordPress"
       />
 
-      <BenefitBelt
-        items={[
-          { icon: <RiSpeedFill />, label: 'Wynik 90+/100 w PageSpeed*' },
-          { icon: <RiShieldCheckLine />, label: 'Faktura po realizacji' },
-          { icon: <RiDeviceLine />, label: 'Lepsza wersja mobilna' },
-          { icon: <RiBarChart2Fill />, label: 'Raport „przed i po"' },
-        ]}
-      />
+      <BenefitBelt variant="carousel" />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -470,7 +463,6 @@ export default function OfferOptimizationWordPressPage() {
           items={[
             {
               title: 'Pozycjonowanie stron',
-              description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'large',
               backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -478,7 +470,6 @@ export default function OfferOptimizationWordPressPage() {
             },
             {
               title: 'Strony WordPress',
-              description: 'Strona firmowa z gwarancją wydajności 90+/100',
               size: 'medium',
               backgroundImage: '/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -486,7 +477,6 @@ export default function OfferOptimizationWordPressPage() {
             },
             {
               title: 'Audyt SEO',
-              description: 'Diagnoza stanu optymalizacji witryny',
               size: 'small',
               backgroundImage: '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
               btnLabel: 'Sprawdź ofertę',
@@ -494,7 +484,6 @@ export default function OfferOptimizationWordPressPage() {
             },
             {
               title: 'Optymalizacja SEO',
-              description: 'Wdrożenia po audycie dla lepszych wyników',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-camper-albania-mockup.webp',
               btnLabel: 'Sprawdź ofertę',
