@@ -101,8 +101,8 @@ export default function OfferDesignPage() {
             komunikacji.
           </>
         }
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
         overlay="black"

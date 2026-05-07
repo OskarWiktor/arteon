@@ -66,8 +66,8 @@ export default function OfferMarketingPage() {
       <HeroBanner
         title="Audyt SEO"
         description={<>Przeprowadź audyt SEO swojej witryny i sprawdź, co możesz zrobić, aby wyświetlać się wyżej w wynikach wyszukiwarki Google.</>}
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp"
         overlay="black"

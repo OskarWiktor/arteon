@@ -205,7 +205,7 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
     <>
       <Script id={`ld-json-${data.toolKey}-${data.locale}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchemas) }} />
 
-      <HeroBanner title={data.hero.title} description={data.hero.description} overlay="black" backgroundImage={data.hero.backgroundImage} size="tools" />
+      <HeroBanner title={data.hero.title} description={data.hero.description} overlay="black" backgroundImage={data.hero.backgroundImage} size="compact" />
 
       <Breadcrumbs second={data.breadcrumbs.second} third={data.breadcrumbs.third} includeJsonLd size="compact" locale={data.locale} />
 

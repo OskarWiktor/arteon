@@ -49,7 +49,7 @@ export default function EdukacjaPage() {
 
   return (
     <>
-      <HeroBanner title="Edukacja" variant="center" backgroundImage="/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp" overlay="black" />
+      <HeroBanner title="Edukacja" backgroundImage="/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp" overlay="black" />
       <Wrapper>
         <Gap size="sm" />
         <FilterBar cats={cats} />

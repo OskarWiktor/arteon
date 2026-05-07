@@ -176,7 +176,6 @@ export default function AboutFaqPage() {
         description="Najczęstsze pytania dotyczące współpracy. Odpowiedzi, które pomogą Ci podjąć właściwą decyzję i rozpocząć współpracę bez stresu."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
-        variant="center"
       />
 
       <Breadcrumbs second={{ href: '/o-nas', label: 'O nas' }} third={{ href: '/o-nas/faq', label: 'FAQ' }} includeJsonLd />

@@ -1,6 +1,7 @@
 'use client';
 
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
+import Button from '@/components/ui/buttons/Button';
 
 type CarouselNavButtonsProps = {
   isScrollable: boolean;
@@ -13,20 +14,16 @@ type CarouselNavButtonsProps = {
 export function CarouselNavButtons({ isScrollable, onPrev, onNext, prevLabel, nextLabel }: CarouselNavButtonsProps) {
   if (!isScrollable) return null;
 
-  const navBtn =
-    'group absolute bottom-[-31px] z-10 cursor-pointer rounded-full border border-primary bg-primary p-1 md:p-2 text-white shadow-lg ' +
-    'transition-colors hover:scale-105 hover:bg-white hover:text-mid focus:outline-none ' +
-    'focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block';
+  const positionClass = 'absolute bottom-[-31px] z-10 max-h-13 max-w-13';
 
   return (
     <>
-      <button type="button" onClick={onPrev} className={`${navBtn} left-2 max-h-13 max-w-13`} aria-label={prevLabel}>
+      <Button variant="circle" onClick={onPrev} ariaLabel={prevLabel} className={`${positionClass} left-2`}>
         <RiArrowLeftSLine className="h-8 w-8" aria-hidden="true" />
-      </button>
-
-      <button type="button" onClick={onNext} className={`${navBtn} right-2 max-h-13 max-w-13`} aria-label={nextLabel}>
+      </Button>
+      <Button variant="circle" onClick={onNext} ariaLabel={nextLabel} className={`${positionClass} right-2`}>
         <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
-      </button>
+      </Button>
     </>
   );
 }

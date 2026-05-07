@@ -24,5 +24,6 @@ export function getAllProjectPreviews(): ProjectPreview[] {
     short: typeof p.short === 'string' ? p.short : '',
     image: p.image,
     category: p.category,
+    link: p.link,
   }));
 }

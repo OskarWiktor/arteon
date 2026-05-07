@@ -56,8 +56,8 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
         description={
           <>Wygląd, struktura i komfort użytkownika pracują na sprzedaż. Zaprojektujemy layout Twojej strony tak, aby prowadził wzrok od pierwszego wrażenia, przez ofertę, aż po kontakt lub zakup.</>
         }
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/msc/moskup-strony-msc-psychotherapy.webp"
         overlay="black"

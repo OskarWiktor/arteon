@@ -4,7 +4,7 @@ import { RiArrowRightSLine } from 'react-icons/ri';
 
 interface ButtonProps {
   children: ReactNode;
-  variant?: 'normal' | 'accent' | 'accent-reverse' | 'outline' | 'circle';
+  variant?: 'normal' | 'accent' | 'circle';
   size?: 'small' | 'medium';
   onClick?: () => void;
   disabled?: boolean;
@@ -12,6 +12,7 @@ interface ButtonProps {
   link?: string;
   className?: string;
   type?: 'button' | 'submit' | 'reset';
+  ariaLabel?: string;
 }
 
 const isExternal = (href: string) => {
@@ -19,7 +20,22 @@ const isExternal = (href: string) => {
   return /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(href);
 };
 
-export default function Button({ children, variant = 'normal', size = 'medium', onClick, disabled = false, arrow = false, link, className = '', type }: ButtonProps) {
+export default function Button({ children, variant = 'normal', size = 'medium', onClick, disabled = false, arrow = false, link, className = '', type, ariaLabel }: ButtonProps) {
+  const buttonType: 'button' | 'submit' | 'reset' = type ?? 'button';
+
+  if (variant === 'circle') {
+    const circleClass =
+      `inline-flex items-center justify-center rounded-full border border-primary bg-primary p-1 md:p-2 text-white shadow-lg ` +
+      `transition-colors hover:scale-105 hover:bg-white hover:text-mid focus:outline-none ` +
+      `focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white ` +
+      `${disabled ? 'cursor-not-allowed pointer-events-none' : 'cursor-pointer'} ${className}`;
+    return (
+      <button type={buttonType} onClick={onClick} className={circleClass} aria-label={ariaLabel} disabled={disabled} aria-disabled={disabled || undefined}>
+        {children}
+      </button>
+    );
+  }
+
   let sizeClass = '';
   let variantClass = '';
 
@@ -35,18 +51,10 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
   switch (variant) {
     case 'normal':
       variantClass =
-        'hover:-translate-y-0.5 shadow-sm hover:shadow-md border border-black/10 bg-white text-dark ' + 'focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-primary';
+        'hover:-translate-y-0.5 shadow-sm hover:shadow-md border border-black/10 bg-white text-dark focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-primary';
       break;
     case 'accent':
-      variantClass = 'hover:-translate-y-0.5 shadow-sm hover:shadow-md bg-primary text-white ' + 'focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white';
-      break;
-    case 'accent-reverse':
-      variantClass = 'hover:-translate-y-0.5 shadow-sm hover:shadow-md bg-white text-primary ' + 'focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary';
-      break;
-    case 'outline':
-      variantClass =
-        'hover:-translate-y-0.5 border border-primary bg-transparent text-primary hover:bg-primary hover:text-white ' +
-        'focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white';
+      variantClass = 'hover:-translate-y-0.5 shadow-sm hover:shadow-md bg-primary text-white focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white';
       break;
   }
 
@@ -61,37 +69,26 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
     </span>
   ) : null;
 
-  const buttonType: 'button' | 'submit' | 'reset' = type ?? 'button';
-
   if (disabled) {
     return (
-      <button type={buttonType} disabled aria-disabled="true" className={baseClass}>
+      <button type={buttonType} disabled aria-disabled="true" className={baseClass} aria-label={ariaLabel}>
         <span className="flex">{children}</span>
         {Arrow}
       </button>
     );
   }
 
-  if (variant === 'circle') {
-    <button
-      type="button"
-      className="group border-primary bg-primary hover:text-mid focus-visible:ring-primary absolute bottom-[-31px] z-10 max-h-13 max-w-13 cursor-pointer rounded-full border p-1 text-white shadow-lg transition-colors hover:scale-105 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block md:p-2"
-    >
-      <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
-    </button>;
-  }
-
   if (link) {
     if (isExternal(link)) {
       return (
-        <a href={link} target="_blank" rel="noopener noreferrer" className={baseClass} onClick={onClick}>
+        <a href={link} target="_blank" rel="noopener noreferrer" className={baseClass} onClick={onClick} aria-label={ariaLabel}>
           <span>{children}</span>
           {Arrow}
         </a>
       );
     }
     return (
-      <Link href={link} prefetch={false} className={baseClass} onClick={onClick}>
+      <Link href={link} prefetch={false} className={baseClass} onClick={onClick} aria-label={ariaLabel}>
         <span>{children}</span>
         {Arrow}
       </Link>
@@ -99,7 +96,7 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
   }
 
   return (
-    <button type={buttonType} onClick={onClick} className={baseClass}>
+    <button type={buttonType} onClick={onClick} className={baseClass} aria-label={ariaLabel}>
       <span>{children}</span>
       {Arrow}
     </button>

@@ -61,8 +61,8 @@ export default function OfferDesignLoyaltyCardPage() {
       <HeroBanner
         title="Projekt karty lojalnościowej"
         description={<>Projektujemy czytelne karty lojalnościowe dla firm usługowych i handlowych. Karty wspierają sprzedaż i porządkują zasady programu lojalnościowego.</>}
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp"
         overlay="black"

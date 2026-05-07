@@ -20,7 +20,7 @@ export default function TableBlock({ caption, note, columns, rows, striped = tru
   const t = tableBlockUi.pl;
   return (
     <figure className="not-prose">
-      <div className={`surface-panel-solid overflow-x-auto ${className}`} role="region" aria-label={caption || t.defaultTableLabel}>
+      <div className={`overflow-x-auto rounded-lg border border-black/10 bg-white shadow-sm ${className}`} role="region" aria-label={caption || t.defaultTableLabel}>
         {caption && (
           <div className="border-b border-black/10 px-4 py-3">
             <div className="text-dark text-sm font-medium">{caption}</div>

@@ -22,14 +22,12 @@
   --white: #fcfcfc;
   --black: #1a120c;
 
-  /* --- Neutrals --- */
   --neutral-50: #fafafa;
   --neutral-100: #f5f5f5;
   --neutral-200: #e5e5e5;
   --neutral-300: #d4d4d4;
   --neutral-900: #151517;
 
-  /* --- Statusy --- */
   --success-bg: #d1fae5;
   --success-border: #a7f3d0;
   --success-icon: #059669;
@@ -51,11 +49,9 @@
   --info-mid: #1d4ed8;
   --info-text: #1e40af;
 
-  /* --- Marki zewnętrzne --- */
   --brand-facebook: #1877f2;
   --brand-linkedin: #0a66c2;
 
-  /* --- Pomocnicze (rzadko używane) --- */
   --accent-orange: #f97316;
   --crop-green: #10b981;
 }
@@ -111,8 +107,6 @@
   --color-accent-orange: var(--accent-orange);
   --color-crop-green: var(--crop-green);
 }
-
-/* ── Animations replacing framer-motion ────────────────────────── */
 
 @keyframes dropdown-in {
   from {
@@ -240,38 +234,39 @@ li,
 .p,
 label {
   @apply leading-relaxed font-normal;
-  font-size: clamp(15px, calc(15px + 2 * ((100vw - 360px) / 1080)), 17px);
-  text-wrap: pretty;
+  font-size: clamp(14px, calc(14px + 2 * ((100vw - 360px) / 1080)), 16px);
 }
 
 .text-small {
   @apply leading-relaxed font-normal;
-  font-size: clamp(14px, calc(14px + 2 * ((100vw - 360px) / 1080)), 16px);
+  font-size: clamp(12px, calc(12px + 2 * ((100vw - 360px) / 1080)), 14px);
 }
 
 h1,
 .h1 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(38px, calc(38px + 10 * ((100vw - 360px) / 1080)), 48px);
-  line-height: 1;
+  line-height: 1.1;
   text-wrap: balance;
+  letter-spacing: -1.5px;
 }
 
 h2,
 .h2 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(32px, calc(32px + 8 * ((100vw - 360px) / 1080)), 40px);
   line-height: 1.03;
-  letter-spacing: 1px;
   text-wrap: balance;
+  letter-spacing: -1.5px;
 }
 
 h3,
 .h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(28px, calc(28px + 8 * ((100vw - 360px) / 1080)), 36px);
   line-height: 1.06;
   text-wrap: balance;
+  letter-spacing: -1px;
 }
 
 h4,
@@ -374,14 +369,6 @@ textarea {
 
 .arteon-cropper .reactEasyCrop_GridLine {
   background-color: var(--crop-grid-color, var(--crop-green));
-}
-
-.surface-panel {
-  @apply rounded-lg border border-black/10 bg-white/70 shadow-sm backdrop-blur-sm;
-}
-
-.surface-panel-solid {
-  @apply rounded-lg border border-black/10 bg-white shadow-sm;
 }
 
 .surface-card {
@@ -586,7 +573,7 @@ textarea {
 }
 
 /* ── Headings use Playfair Display (body stays Inter via font-sans) ── */
-
+/*
 h1,
 h2 {
   font-family: var(--font-heading);

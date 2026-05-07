@@ -56,8 +56,8 @@ export default function OfferDesignFlyerPage() {
       <HeroBanner
         title="Projekt ulotki"
         description={<>Tworzymy ulotki reklamowe z jasnym przekazem i czytelnym układem. Pliki do druku (CMYK) oraz wersja cyfrowa.</>}
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp"
         overlay="black"

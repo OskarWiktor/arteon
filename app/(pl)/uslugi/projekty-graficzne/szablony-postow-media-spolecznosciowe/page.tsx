@@ -62,8 +62,8 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             regularnej publikacji.
           </>
         }
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp"
         overlay="black"

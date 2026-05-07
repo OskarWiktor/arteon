@@ -3,7 +3,7 @@
 import { type KeyboardEvent } from 'react';
 import { CALC_ICONS } from '@/components/ui/icons/CalcIcons';
 
-interface OptionButtonProps {
+interface CalcOptionCardProps {
   optValue: string;
   label: string;
   tooltip?: string;
@@ -12,7 +12,7 @@ interface OptionButtonProps {
   icon?: string;
 }
 
-export default function OptionButton({ optValue, label, tooltip, selected, onClick, icon }: OptionButtonProps) {
+export default function CalcOptionCard({ optValue, label, tooltip, selected, onClick, icon }: CalcOptionCardProps) {
   const handleKey = (e: KeyboardEvent<HTMLButtonElement>) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();

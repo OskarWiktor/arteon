@@ -1,7 +1,7 @@
 'use client';
 
 import ProgressBar from './ProgressBar';
-import OptionButton from '../buttons/OptionButton';
+import CalcOptionCard from './CalcOptionCard';
 import OptionInput from './OptionInput';
 import Button from '../buttons/Button';
 import type { Step } from '@/types/calculator';
@@ -43,7 +43,7 @@ export default function CalculatorSteps({ step, currentStep, activeSteps, select
       <div className="mt-8 grid gap-2 md:grid-cols-2">
         {step.options.map((opt) => {
           const isSelected = sel.includes(opt.value);
-          return <OptionButton key={opt.value} optValue={opt.value} label={opt.label} tooltip={opt.tooltip} selected={isSelected} onClick={() => onOptionClick(opt.value)} icon={opt.icon} />;
+          return <CalcOptionCard key={opt.value} optValue={opt.value} label={opt.label} tooltip={opt.tooltip} selected={isSelected} onClick={() => onOptionClick(opt.value)} icon={opt.icon} />;
         })}
 
         {step.input && <OptionInput input={step.input} value={rawVal} onChangeValue={onInputChange} />}

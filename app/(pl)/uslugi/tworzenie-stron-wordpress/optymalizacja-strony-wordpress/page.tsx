@@ -65,8 +65,8 @@ export default function OfferOptimizationWordPressPage() {
             <strong>90+/100 w PageSpeed</strong> albo nie ponosisz kosztu optymalizacji. Faktura wystawiana jest dopiero po realizacji prac.
           </>
         }
-        buttonAccent="Sprawdź swoją stronę"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Sprawdź swoją stronę"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/arteon-baners-camper-albania-mockup.webp"
         overlay="black"

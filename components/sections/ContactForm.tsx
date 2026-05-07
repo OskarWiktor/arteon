@@ -45,8 +45,7 @@ export default function ContactForm({ title, description, defaultSubject, action
   };
 
   const fieldClass =
-    'h-11 w-full rounded-lg border border-neutral-300 bg-transparent px-3 py-2 text-dark transition ' +
-    'focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white';
+    'h-11 w-full rounded-lg border border-neutral-300 bg-transparent px-3 py-2 text-dark transition focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white';
 
   const content = (
     <>

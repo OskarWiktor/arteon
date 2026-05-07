@@ -55,13 +55,7 @@ export default function AboutPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }} />
-      <HeroBanner
-        title="O nas"
-        description="Arteon - strategia, kreacja i widoczność, które przynoszą rezultaty"
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
-        overlay="black"
-        variant="center"
-      />
+      <HeroBanner title="O nas" description="Arteon - strategia, kreacja i widoczność, które przynoszą rezultaty" backgroundImage="/assets/arteon-logo-on-mockup.webp" overlay="black" />
 
       <BenefitBelt variant="carousel" />
 

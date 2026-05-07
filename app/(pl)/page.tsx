@@ -1,5 +1,5 @@
 import BenefitBelt from '@/components/sections/BenefitBelt';
-import LazyArticlesCarousel from '@/components/sections/blog/LazyArticlesCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import CTABanner from '@/components/sections/CTABanner';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import HeroBanner from '@/components/sections/HeroBanner';
@@ -124,11 +124,11 @@ export default function HomePage() {
       <HeroBanner
         title="Strony internetowe, sklepy, treści i projekty graficzne"
         description="Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepu, treści oraz wszelkie projekty graficzne. Zajmuje się również pozycjonowaniem witryn jak i budową aplikacji webowych. Wszystko zrealizujesz w jednym miejscu."
-        backgroundImage="/assets/bg/arteon-hero-baner-z-realizacja-strony-jstax.webp"
-        buttonAccent="Sprawdź ofertę"
-        buttonAccentLink="/uslugi"
-        buttonSecond="Skontaktuj się"
-        buttonSecondLink="/kontakt"
+        backgroundImage="/assets/bg/arteon-zbior-realizacji.webp"
+        secondaryCtaLabel="Sprawdź ofertę"
+        secondaryCtaLink="/uslugi"
+        primaryCtaLabel="Skontaktuj się"
+        primaryCtaLink="/kontakt"
         overlay="black"
       />
 
@@ -149,8 +149,6 @@ export default function HomePage() {
             {
               topImageAlt: 'Papier firmowy dla kancelarii Lux Nova - mockup',
               topImageSrc: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
-              imageSrc: '/assets/woda.webp',
-              imageAlt: 'Woda - symbol grafiki i designu',
               title: 'Projekty graficzne',
               description: (
                 <div className="flex h-full flex-col">
@@ -168,10 +166,8 @@ export default function HomePage() {
               ),
             },
             {
-              topImageAlt: 'Strona internetowa Camper Albania - mockup',
-              topImageSrc: '/assets/projects/arteon-baners-camper-albania-mockup.webp',
-              imageSrc: '/assets/ziemia.webp',
-              imageAlt: 'Ziemia - symbol witryn internetowych',
+              topImageAlt: 'Wizualizacja realizacji strony internetowej dla ',
+              topImageSrc: '/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp',
               title: 'Strony',
               description: (
                 <div className="flex h-full flex-col">
@@ -195,10 +191,8 @@ export default function HomePage() {
               ),
             },
             {
-              topImageAlt: 'Szablony media społecznościowe dla MSC Psychotherapy - mockup',
+              topImageAlt: 'Mockup szablonów postów do medi społecznościowych dla MSC Psychotherapy',
               topImageSrc: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
-              imageSrc: '/assets/ogien.webp',
-              imageAlt: 'Ogień - symbol marketingu',
               title: 'Marketing',
               description: (
                 <div className="flex h-full flex-col">
@@ -216,10 +210,8 @@ export default function HomePage() {
               ),
             },
             {
-              topImageAlt: 'Treści dla MSC Psychotherapy - baner ',
-              topImageSrc: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
-              imageSrc: '/assets/powietrze.webp',
-              imageAlt: 'Powietrze - symbol języka',
+              topImageAlt: 'Mockup realizacji strony internetowej NaPilota ',
+              topImageSrc: '/assets/projects/napilota/mockup-strony-napilota.webp',
               title: 'Treści',
               description: (
                 <div className="flex h-full flex-col">
@@ -296,7 +288,7 @@ export default function HomePage() {
 
         <Gap variant="line" />
 
-        <LazyArticlesCarousel title="Nasze artykuły i poradniki" articles={articlePreviews} />
+        <ArticlesCarousel title="Nasze artykuły i poradniki" articles={articlePreviews} />
 
         <Gap size="sm" />
       </Wrapper>

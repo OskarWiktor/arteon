@@ -57,8 +57,8 @@ export default function OfferDesignPresentationFolderPage() {
       <HeroBanner
         title="Projekt teczki ofertowej"
         description={<>Spotkania sprzedażowe wymagają porządku i klasy. Projektujemy teczki ofertowe spójne z identyfikacją - trwałe, eleganckie i funkcjonalne na prezentacje, dokumenty i umowy.</>}
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
         overlay="black"

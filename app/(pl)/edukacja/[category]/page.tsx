@@ -174,7 +174,7 @@ export default async function EdukacjaCategoryPage({ params }: { params: Promise
 
   return (
     <>
-      <HeroBanner title={label} description={heroDescription} variant="center" backgroundImage={heroImage} overlay="black" />
+      <HeroBanner title={label} description={heroDescription} backgroundImage={heroImage} overlay="black" />
       <Wrapper>
         <Gap size="sm" />
         <FilterBar cats={cats} active={category} />

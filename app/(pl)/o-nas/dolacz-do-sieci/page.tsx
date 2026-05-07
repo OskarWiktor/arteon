@@ -30,7 +30,6 @@ export default function JoinNetworkPage() {
         description="Stale rozwijamy sieć partnerów, mając na celu stworzenie przestrzeni, w której można zrealizować wszystko. Sprawdź, kogo szukamy teraz."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
-        variant="center"
       />
 
       <Breadcrumbs second={{ href: '/o-nas', label: 'O nas' }} third={{ href: '/o-nas/dolacz-do-sieci', label: 'Dołącz do sieci' }} includeJsonLd />

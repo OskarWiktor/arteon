@@ -59,8 +59,8 @@ export default function OfferDesignMenuPage() {
         description={
           <>Stworzymy dla Ciebie estetyczne i czytelne menu restauracji, kawiarni lub baru - spójne z klimatem lokalu i Twoją marką. Karta, która pomaga gościom wybrać, a Tobie sprzedawać.</>
         }
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/nocturna/nocturna-menu-mockup.png"
         overlay="black"

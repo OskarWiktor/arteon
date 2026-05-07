@@ -20,7 +20,7 @@ export default function ContactPageContent({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <HeroBanner title={data.hero.title} description={data.hero.description} backgroundImage="/assets/bg/abstract-bg10.webp" overlay="black" variant="center" />
+      <HeroBanner title={data.hero.title} description={data.hero.description} backgroundImage="/assets/bg/abstract-bg10.webp" overlay="black" />
 
       <Wrapper>
         <Gap size="sm" />

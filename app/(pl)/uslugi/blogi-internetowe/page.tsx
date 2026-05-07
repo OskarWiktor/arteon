@@ -56,8 +56,8 @@ export default function OfferBlogPage() {
       <HeroBanner
         title="Blogi internetowe"
         description={<>Zwiększ swoją widoczność, tworząc własny blog internetowy</>}
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/jstax/moskup-strony-jstax.webp"
         overlay="black"

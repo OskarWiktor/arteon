@@ -3,7 +3,7 @@
 import { useRef, useMemo } from 'react';
 import { CarouselDots } from '@/components/ui/carousel/CarouselDots';
 import { CarouselNavButtons } from '@/components/ui/carousel/CarouselNavButtons';
-import { CarouselCard } from '@/components/ui/carousel/CarouselCard';
+import CarouselCard from '@/components/ui/carousel/CarouselCard';
 import SectionHeaderWithAction from '../../ui/sections/SectionHeaderWithAction';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 
@@ -27,23 +27,20 @@ export default function ArticlesCarousel({ articles, max = 10, title = 'Edukacja
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
 
-  const sourceArticles = useMemo<ArticlePreview[]>(() => {
-    return articles ?? [];
-  }, [articles]);
-
   const finalArticles = useMemo(() => {
+    const source = articles ?? [];
     const slugsArray = typeof slugs === 'string' ? [slugs] : slugs;
     let list: ArticlePreview[];
 
     if (slugsArray && slugsArray.length) {
-      const map = new Map(sourceArticles.map((a) => [a.slug, a] as const));
+      const map = new Map(source.map((a) => [a.slug, a] as const));
       list = slugsArray.map((s) => map.get(s)).filter(Boolean) as ArticlePreview[];
     } else if (categorySlug) {
-      list = sourceArticles.filter((a) => {
+      list = source.filter((a) => {
         return a.primaryCategory && slugify(a.primaryCategory) === categorySlug;
       });
     } else {
-      list = sourceArticles;
+      list = source;
     }
 
     if (excludeSlug) {
@@ -51,7 +48,7 @@ export default function ArticlesCarousel({ articles, max = 10, title = 'Edukacja
     }
 
     return list.slice(0, max);
-  }, [sourceArticles, slugs, categorySlug, excludeSlug, max]);
+  }, [articles, slugs, categorySlug, excludeSlug, max]);
 
   const { currentSlide, maxSlides, isScrollable, scrollByCards, goToSlide, onKeyDown } = useCarouselScroller({
     itemCount: finalArticles.length,

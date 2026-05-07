@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { RiArrowUpLine } from 'react-icons/ri';
 import { useEventListener } from '@/hooks/useEventListener';
+import Button from './Button';
 
 const PASSIVE_SCROLL: AddEventListenerOptions = { passive: true };
 
@@ -24,15 +25,8 @@ export default function ButtonToTop({ targetId = 'article-root', showAfter = 400
   if (!visible) return null;
 
   return (
-    <button
-      type="button"
-      onClick={scrollToTarget}
-      className={
-        'fixed right-5 bottom-5 z-50 inline-flex w-fit cursor-pointer items-center rounded-full border border-black/10 bg-black px-3 py-3 text-sm font-medium text-white shadow-lg transition hover:bg-black/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white'
-      }
-    >
-      <span className="sr-only">{label}</span>
+    <Button variant="circle" onClick={scrollToTarget} ariaLabel={label} className="fixed right-5 bottom-5 z-50">
       <RiArrowUpLine aria-hidden className="h-5 w-5" />
-    </button>
+    </Button>
   );
 }

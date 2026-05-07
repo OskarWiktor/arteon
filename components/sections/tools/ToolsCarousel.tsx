@@ -6,7 +6,7 @@ import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { getToolsSections } from '@/lib/i18n/tool-registry';
 import { CarouselDots } from '@/components/ui/carousel/CarouselDots';
 import { CarouselNavButtons } from '@/components/ui/carousel/CarouselNavButtons';
-import { CarouselCard } from '@/components/ui/carousel/CarouselCard';
+import CarouselCard from '@/components/ui/carousel/CarouselCard';
 import SectionHeaderWithAction from '@/components/ui/sections/SectionHeaderWithAction';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 

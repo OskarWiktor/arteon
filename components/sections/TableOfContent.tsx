@@ -88,7 +88,6 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
 
   return (
     <>
-      {/* Mobile */}
       <aside className={`block lg:hidden ${widthClass}`}>
         <div className="relative rounded-lg border border-black/10 bg-white shadow-sm">
           <div className="flex items-center justify-between p-2">
@@ -111,9 +110,8 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
         </div>
       </aside>
 
-      {/* Desktop */}
       <aside className={`sticky top-24 hidden ${widthClass} self-start lg:block`}>
-        <div className="surface-panel-solid p-4">
+        <div className="rounded-lg border border-black/10 bg-white p-4 shadow-sm">
           <p className="text-light mb-2 text-xs tracking-wider uppercase">Spis treści</p>
           <nav aria-label="Spis treści">
             <LinkList />

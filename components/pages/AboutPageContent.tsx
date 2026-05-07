@@ -21,7 +21,7 @@ export default function AboutPageContent({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <HeroBanner title={data.hero.title} description={data.hero.description} backgroundImage="/assets/arteon-logo-on-mockup.webp" overlay="black" variant="center" />
+      <HeroBanner title={data.hero.title} description={data.hero.description} backgroundImage="/assets/arteon-logo-on-mockup.webp" overlay="black" />
 
       <Wrapper as="article" itemScope itemType="https://schema.org/AboutPage">
         <Gap size="sm" />

@@ -56,8 +56,8 @@ export default function OfferOptimizationSEO() {
       <HeroBanner
         title="Optymalizacja SEO"
         description={<>Wprowadzimy zmiany, które poprawią pozycję Twojej strony w Google: przyspieszymy stronę, uporządkujemy treści i ułatwimy Google ich zrozumienie.</>}
-        buttonAccent="Bezpłatna konsultacja"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna konsultacja"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/arteon-baners-camper-albania-mockup.webp"
         overlay="black"

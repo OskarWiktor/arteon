@@ -122,7 +122,6 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
     };
   }, [measure, startFontMeasure, clearFontMeasure]);
 
-  // Only run rAF loop when section is visible in viewport
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
@@ -133,7 +132,6 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
 
   useEffect(() => {
     if (reduceMotion || !isInView) return;
-    // Reset timestamp so first frame after re-entering viewport doesn't cause a jump
     prevTimeRef.current = 0;
 
     const animate = (time: number) => {

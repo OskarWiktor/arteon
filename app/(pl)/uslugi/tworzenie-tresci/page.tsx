@@ -69,8 +69,8 @@ export default function OfferContentPage() {
       <HeroBanner
         title="Tworzenie treści"
         description={<>Tworzymy artykuły, opisy produktów i treści na strony. Redakcja pod SEO i spójny język marki.</>}
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp"
         overlay="black"

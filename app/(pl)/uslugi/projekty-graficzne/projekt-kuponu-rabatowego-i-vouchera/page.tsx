@@ -59,8 +59,8 @@ export default function OfferDesignCouponsAndVouchersPage() {
         description={
           <>Zachęć klientów do powrotu i zbuduj lojalność dzięki estetycznym voucherom i kuponom. Projektujemy materiały promocyjne gotowe do druku i wersji online - spójne z Twoją marką.</>
         }
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp"
         overlay="black"

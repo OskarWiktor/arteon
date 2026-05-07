@@ -56,8 +56,8 @@ export default function OfferSeoSubscription() {
       <HeroBanner
         title="Pozycjonowanie stron"
         description={<>Budujemy długofalową widoczność Twojej strony w Google. Co miesiąc rozwijamy treści, optymalizujemy serwis i dbamy o jak najwyższą pozycję w wynikach wyszukiwania Google</>}
-        buttonAccent="Bezpłatna konsultacja"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna konsultacja"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp"
         overlay="black"

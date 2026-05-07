@@ -56,7 +56,6 @@ export default function OfferPage() {
         overlay="black"
         title="Usługi dla Twojej firmy"
         description={<>Projektujemy strony internetowe, sklepy, materiały graficzne i prowadzimy działania marketingowe. Wszystko w jednym miejscu, z naciskiem na jakość i wyniki.</>}
-        variant="center"
       />
 
       <Wrapper>

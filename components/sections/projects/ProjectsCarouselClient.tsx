@@ -3,7 +3,7 @@
 import { useRef, useMemo } from 'react';
 import { CarouselDots } from '@/components/ui/carousel/CarouselDots';
 import { CarouselNavButtons } from '@/components/ui/carousel/CarouselNavButtons';
-import { CarouselCard } from '@/components/ui/carousel/CarouselCard';
+import CarouselCard from '@/components/ui/carousel/CarouselCard';
 
 import SectionHeaderWithAction from '../../ui/sections/SectionHeaderWithAction';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
@@ -25,21 +25,17 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = 'Na
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
 
-  const sourceProjects = useMemo<ProjectPreview[]>(() => {
-    return projects;
-  }, [projects]);
-
   const finalProjects = useMemo(() => {
     const slugsArray = typeof slugs === 'string' ? [slugs] : slugs;
     let list: ProjectPreview[];
 
     if (slugsArray && slugsArray.length) {
-      const map = new Map(sourceProjects.map((p) => [p.slug, p] as const));
+      const map = new Map(projects.map((p) => [p.slug, p] as const));
       list = slugsArray.map((s) => map.get(s)).filter(Boolean) as ProjectPreview[];
     } else if (category) {
-      list = sourceProjects.filter((p) => (p.category || []).includes(category));
+      list = projects.filter((p) => (p.category || []).includes(category));
     } else {
-      list = sourceProjects;
+      list = projects;
     }
 
     if (excludeSlug) {
@@ -47,7 +43,7 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = 'Na
     }
 
     return list.slice(0, max);
-  }, [sourceProjects, slugs, category, excludeSlug, max]);
+  }, [projects, slugs, category, excludeSlug, max]);
 
   const { currentSlide, maxSlides, isScrollable, scrollByCards, goToSlide, onKeyDown } = useCarouselScroller({
     itemCount: finalProjects.length,
@@ -97,7 +93,7 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = 'Na
               role="group"
               aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}
             >
-              <CarouselCard variant="project" project={project} />
+              <CarouselCard variant="project" project={project} size="small" />
             </div>
           ))}
         </div>

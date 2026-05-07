@@ -1,11 +1,11 @@
 import Shimmer from './Shimmer';
 
 interface HeroBannerSkeletonProps {
-  size?: 'default' | 'tools';
+  size?: 'default' | 'compact';
 }
 
 export default function HeroBannerSkeleton({ size = 'default' }: HeroBannerSkeletonProps) {
-  if (size === 'tools') {
+  if (size === 'compact') {
     return (
       <div className="relative flex items-center overflow-hidden pt-4 pb-2 md:pt-7">
         <div className="m-auto w-[94%] max-w-[1420px] 2xl:max-w-none">

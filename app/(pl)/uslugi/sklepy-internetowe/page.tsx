@@ -72,8 +72,8 @@ export default function OfferWebPage() {
             Zwiększ swoją skuteczność, sprzedając produkty we własnym <strong>sklepie internetowym</strong>, bez zbędnych pośredników
           </>
         }
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/trilllizo/moskup-strony-trilllizo.webp"
         overlay="black"

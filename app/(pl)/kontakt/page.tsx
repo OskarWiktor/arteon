@@ -85,7 +85,6 @@ export default function ContactPage() {
     <>
       <HeroBanner
         title="Porozmawiajmy o Twojej firmie"
-        variant="center"
         description="Wypełnij formularz i uzyskaj darmową wycenę dla swojej firmy"
         backgroundImage="/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp"
         overlay="black"

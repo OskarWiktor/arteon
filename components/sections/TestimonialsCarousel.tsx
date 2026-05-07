@@ -5,7 +5,8 @@ import { RiStarFill, RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri'
 import { CarouselDots } from '@/components/ui/carousel/CarouselDots';
 import { CarouselNavButtons } from '@/components/ui/carousel/CarouselNavButtons';
 import type { Testimonial } from '@/types/testimonial';
-import { CarouselCard } from '@/components/ui/carousel/CarouselCard';
+import TestimonialCard from '@/components/ui/TestimonialCard';
+import Button from '@/components/ui/buttons/Button';
 import SectionHeader from '../ui/typography/SectionHeader';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 
@@ -72,10 +73,7 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
   };
 
   if (variant === 'large') {
-    const navBtnLarge =
-      'group absolute top-1/2 -translate-y-1/2 z-10 cursor-pointer rounded-full border border-primary bg-primary p-2 text-white shadow-lg ' +
-      'transition hover:scale-105 hover:bg-white hover:text-primary focus:outline-none ' +
-      'focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white';
+    const largePosition = 'absolute top-1/2 -translate-y-1/2 z-10';
 
     return (
       <section className="w-full" aria-labelledby="testimonials-heading">
@@ -95,12 +93,12 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
 
           {items.length > 1 && (
             <>
-              <button type="button" onClick={handlePrevLarge} className={`${navBtnLarge} left-0`} aria-label="Przewiń w lewo">
+              <Button variant="circle" onClick={handlePrevLarge} ariaLabel="Przewiń w lewo" className={`${largePosition} left-0`}>
                 <RiArrowLeftSLine className="h-6 w-6" aria-hidden="true" />
-              </button>
-              <button type="button" onClick={handleNextLarge} className={`${navBtnLarge} right-0`} aria-label="Przewiń w prawo">
+              </Button>
+              <Button variant="circle" onClick={handleNextLarge} ariaLabel="Przewiń w prawo" className={`${largePosition} right-0`}>
                 <RiArrowRightSLine className="h-6 w-6" aria-hidden="true" />
-              </button>
+              </Button>
             </>
           )}
         </div>
@@ -148,7 +146,7 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
               role="group"
               aria-label={`Opinia ${i + 1} z ${items.length}`}
             >
-              <CarouselCard variant="testimonial" item={item} />
+              <TestimonialCard item={item} />
             </div>
           ))}
         </div>

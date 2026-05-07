@@ -56,8 +56,8 @@ export default function OfferDesignLetterheadPage() {
       <HeroBanner
         title="Projekt papieru firmowego"
         description={<>Projektujemy papier firmowy z szablonami Word/PDF i plikami do druku - czytelny i spójny z identyfikacją wizualną.</>}
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp"
         overlay="black"

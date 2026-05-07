@@ -35,12 +35,12 @@ const schema = {
 };
 
 export const metadata = {
-  title: 'Realizacje - strony internetowe, sklepy i projekty graficzne - Arteon',
-  description: 'Zobacz nasze realizacje: strony WWW, sklepy internetowe, identyfikacje wizualne i materiały reklamowe. Każdy projekt to konkretne rozwiązanie dopasowane do potrzeb klienta.',
+  title: 'Realizacje stron internetowych, sklepów oraz projektów graficznych - Arteon',
+  description: 'Specjalizujemy się na projektowaniu graficznym projektów do druku oraz stron internetowych wraz z realizacją. Sprawdź opisy realizacji i zobacz jakie dajemy efekty',
   alternates: { canonical: toAbsoluteUrl('/realizacje') },
   openGraph: {
-    title: 'Realizacje Arteon - strony, sklepy i projekty graficzne',
-    description: 'Przejrzyj nasze portfolio: strony internetowe, sklepy online, identyfikacje wizualne i materiały drukowane. Sprawdź, jak pomagamy firmom budować obecność w sieci.',
+    title: 'Realizacje stron internetowych, sklepów oraz projektów graficznych - Arteon',
+    description: 'Specjalizujemy się na projektowaniu graficznym projektów do druku oraz stron internetowych wraz z realizacją. Sprawdź opisy realizacji i zobacz jakie dajemy efekty',
     url: toAbsoluteUrl('/realizacje'),
     type: 'website',
     images: [
@@ -58,10 +58,9 @@ export default function ProjectsPage() {
   return (
     <>
       <HeroBanner
-        title="Realizacje"
-        description="Strony, sklepy, identyfikacje wizualne, materiały drukowane. Zobacz wybrane projekty."
-        variant="center"
-        backgroundImage="/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp"
+        title="Realizacje stron internetowych, sklepów oraz projektów graficznych"
+        description="Specjalizujemy się na projektowaniu graficznym projektów do druku oraz stron internetowych wraz z realizacją. Sprawdź opisy realizacji i zobacz jakie dajemy efekty"
+        backgroundImage="/assets/bg/arteon-zbior-realizacji.webp"
         overlay="black"
       />
 

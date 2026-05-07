@@ -59,8 +59,8 @@ export default function OfferDesignLogoPage() {
             wykorzystasz przez lata.
           </>
         }
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp"
         overlay="black"

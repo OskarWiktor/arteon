@@ -57,8 +57,8 @@ export default function OfferDesignBusinessCardPage() {
       <HeroBanner
         title="Projekt wizytówki"
         description={<>Projektujemy wizytówki dopasowane do Twojej marki - czytelne, eleganckie, gotowe do druku. Pliki źródłowe i wersje do druku.</>}
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp"
         overlay="black"

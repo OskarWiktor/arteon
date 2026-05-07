@@ -20,7 +20,7 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
   const mailHref = `mailto:?subject=${encodedTitle}&body=${encodedUrl}`;
 
   return (
-    <aside className={`surface-panel w-fit p-4 ${className}`} aria-label="Udostępnij ten materiał">
+    <aside className={`w-fit rounded-lg border border-black/10 bg-white/70 p-4 shadow-sm backdrop-blur-sm ${className}`} aria-label="Udostępnij ten materiał">
       <div className="flex flex-wrap items-center gap-2">
         <a
           href={facebookHref}

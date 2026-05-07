@@ -59,8 +59,8 @@ export default function OfferDesignCatalogPage() {
             ofertę i wiedział, jak zamówić.
           </>
         }
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
+        secondaryCtaLabel="Bezpłatna wycena"
+        secondaryCtaLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/restoquality/mockup-gazetka-restoquality.webp"
         overlay="black"
