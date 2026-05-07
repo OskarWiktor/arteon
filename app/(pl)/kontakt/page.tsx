@@ -6,6 +6,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import { RiPhoneLine, RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { getContactAlternates } from '@/lib/i18n/pages/contact';
+import BenefitBelt from '@/components/sections/BenefitBelt';
 
 export const metadata = {
   title: 'Kontakt - wycena Twojego planu - Arteon',
@@ -17,7 +18,6 @@ export const metadata = {
     url: toAbsoluteUrl('/kontakt'),
     siteName: 'Arteon',
     type: 'website',
-    // TODO: Add unique OpenGraph image for contact page: /assets/og/kontakt.webp (1200x630px)
     images: [
       {
         url: toAbsoluteUrl('/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp'),
@@ -84,20 +84,25 @@ export default function ContactPage() {
   return (
     <>
       <HeroBanner
-        title="Porozmawiajmy o Twojej firmie"
-        description="Wypełnij formularz i uzyskaj darmową wycenę dla swojej firmy"
+        title="Kontakt - realizacja stron internetowych, sklepów i projektów graficznych"
+        description="Opowiedz nam o tym czym się zajmujesz i co chciałbyś zrealizować, pomożemy doradzić najlepsze rozwiązanie, które przyciągnie Twoich wymarzonych klientów"
         backgroundImage="/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp"
         overlay="black"
       />
+      <BenefitBelt variant="carousel" />
 
       <Wrapper>
+        <Gap size="sm" />
+
+        <ContactForm title="Rozwiń swoją firmę" description="Opisz co chcesz zrealizować - przygotujemy jasny plan realizacji i powiemy co sprawdzi się najlepiej" />
+
         <Gap size="sm" />
 
         <SectionSteps
           items={[
             {
-              title: <>Wypełniasz formularz</>,
-              description: <>Opisujesz swoją firmę, pomysł na rozwój oraz swoje potrzeby</>,
+              title: <>Kontaktujesz się</>,
+              description: <>Opisujesz co chciałbym zrealizować poprzez formularz, email lub telefonicznie</>,
             },
             {
               title: <>Analizujemy potrzeby</>,
@@ -105,20 +110,15 @@ export default function ContactPage() {
             },
             {
               title: <>Otrzymujesz ofertę</>,
-              description: <>Wysyłamy ofertę wraz z wyceną i przewidywanym terminem realizacji</>,
+              description: <>Wysyłamy ofertę z wyceną i wszelkimi etapami realizacji</>,
             },
             {
-              title: <>Startujemy z projektem</>,
-              description: <>Decydujesz, kiedy ruszamy z realizacją</>,
+              title: <>Dopracowujemy szczegóły</>,
+              description: <>Wspólnie dopracowujemy idealny plan i ruszamy z realizacją</>,
             },
           ]}
-          subtitle="Rozmowa"
           title="Jak wygląda pierwszy kontakt?"
         />
-
-        <Gap size="sm" />
-
-        <ContactForm title="Rozwiń swoją firmę" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę swojego projektu" />
 
         <Gap variant="line" />
 
@@ -130,7 +130,7 @@ export default function ContactPage() {
               icon: <RiPhoneLine className="h-6 w-6" />,
               description: (
                 <p>
-                  <a href="tel:+48516466255">516 466 255</a>
+                  <a href="tel:+48516466255">+48 516 466 255</a>
                 </p>
               ),
             },
@@ -138,15 +138,24 @@ export default function ContactPage() {
               title: 'Email',
               icon: <RiMailLine className="h-6 w-6" />,
               description: (
-                <p>
-                  <a href="mailto:kontakt@arteonagency.pl">kontakt@arteonagency.pl</a>
-                </p>
+                <>
+                  <p>
+                    Dla polskojęzycznych:
+                    <a href="mailto:kontakt@arteonagency.pl">kontakt@arteonagency.pl</a>
+                  </p>
+                  <p>
+                    For english speaker:
+                    <strong>
+                      <a href="mailto:contact@arteonagency.com">contact@arteonagency.com</a>
+                    </strong>
+                  </p>
+                </>
               ),
             },
             {
               title: 'Godziny otwarcia',
               icon: <RiMapPinTimeLine className="h-6 w-6" />,
-              description: <p>Jesteśmy do Twojej dyspozycji od poniedziałku do piątku: 8-16</p>,
+              description: <p>Jesteśmy do Twojej dyspozycji od poniedziałku do piątku od 9 do 20</p>,
             },
           ]}
           title="Dane kontaktowe"

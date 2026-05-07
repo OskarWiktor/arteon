@@ -108,7 +108,7 @@ export default function SectionSteps({
 
   return (
     <section
-      className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${bgPadY}`}
+      className={`relative pb-2 ${hasBg ? 'bg-cover bg-center' : ''} ${bgPadY}`}
       style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
       data-section="steps"
       aria-labelledby={title ? titleId : undefined}

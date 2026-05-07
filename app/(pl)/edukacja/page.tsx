@@ -8,12 +8,12 @@ import { getAllArticlePreviews, getCategoriesWithCount, getPrimaryCategorySlug }
 import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata: Metadata = {
-  title: 'Edukacja - poradniki i wiedza | Arteon',
-  description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
+  title: 'Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym - Arteon',
+  description: 'Lubimy pomagać i dzielić się wiedzą ze wszystkimi. Znajdziesz tutaj poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych',
   alternates: { canonical: 'https://www.arteonagency.pl/edukacja' },
   openGraph: {
-    title: 'Edukacja - poradniki i wiedza | Arteon',
-    description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
+    title: 'Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym - Arteon',
+    description: 'Lubimy pomagać i dzielić się wiedzą ze wszystkimi. Znajdziesz tutaj poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych',
     url: `${siteUrl}/edukacja`,
     type: 'website',
     images: [
@@ -28,8 +28,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   '@id': `${siteUrl}/edukacja#collection`,
-  name: 'Edukacja - poradniki i wiedza | Arteon',
-  description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
+  name: 'Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym - Arteon',
+  description: 'Lubimy pomagać i dzielić się wiedzą ze wszystkimi. Znajdziesz tutaj poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych',
   url: `${siteUrl}/edukacja`,
   mainEntity: {
     '@type': 'ItemList',
@@ -50,8 +50,8 @@ export default function EdukacjaPage() {
   return (
     <>
       <HeroBanner
-        title="Edukacja"
-        description="Kompedium wiedzy na temat stron internetowych, projektów graficznych oraz marketingu, psychologi w biznesie i UX"
+        title="Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym"
+        description="Lubimy pomagać i dzielić się wiedzą ze wszystkimi. Poniżej znajdziesz artykuły na tematy związane z programowaniem, projektowaniem, psychologią w biznesie, pozycjonowaniem stron a nawet psychologią kolorów"
         backgroundImage="/assets/blog/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty.webp"
         overlay="black"
       />

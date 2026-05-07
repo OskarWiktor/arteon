@@ -5,6 +5,7 @@ import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import { siteUrl } from '@/utils/absoluteUrl';
+import BenefitBelt from '@/components/sections/BenefitBelt';
 const SERVICES = [
   { name: 'Strony WordPress', path: '/uslugi/tworzenie-stron-wordpress' },
   { name: 'Sklepy internetowe', path: '/uslugi/sklepy-internetowe' },
@@ -57,6 +58,7 @@ export default function OfferPage() {
         title="Usługi dla Twojej firmy"
         description={<>Projektujemy strony internetowe, sklepy, materiały graficzne i prowadzimy działania marketingowe. Wszystko w jednym miejscu, z naciskiem na jakość i wyniki.</>}
       />
+      <BenefitBelt variant="carousel" />
 
       <Wrapper>
         <Gap size="sm" />

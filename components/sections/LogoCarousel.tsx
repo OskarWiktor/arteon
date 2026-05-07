@@ -44,7 +44,7 @@ interface LogoCarouselProps {
 }
 
 const LogoCarouselDefaultItems: LogoCarouselDefaultItem[] = [
-  { label: 'Next', icon: SiNextdotjs },
+  { label: 'Next.js', icon: SiNextdotjs },
   { label: 'React', icon: SiReact },
   { label: 'Google Search Console', icon: SiGooglesearchconsole },
   { label: 'Figma', icon: SiFigma },
@@ -195,7 +195,7 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
 
   return (
     <section className="relative overflow-hidden" aria-labelledby="LogoCarousel-heading">
-      <h2 id="LogoCarousel-heading" className="h4 mb-4 lg:mb-6">
+      <h2 id="LogoCarousel-heading" className="h3 mb-8 lg:mb-10">
         Jakiej technologii używamy?
       </h2>
 
@@ -212,12 +212,13 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
         onTouchStart={() => setIsPaused(true)}
         onTouchEnd={() => setIsPaused(false)}
       >
-        <ul ref={trackRef} style={{ willChange: 'transform' }} className="flex gap-6 whitespace-nowrap md:gap-10 lg:gap-14">
+        <ul ref={trackRef} style={{ willChange: 'transform' }} className="flex gap-12 whitespace-nowrap md:gap-16 lg:gap-20">
           {[...LogoCarouselDefaultItems, ...LogoCarouselDefaultItems].map(({ label, icon: Icon }, index) => (
             <li key={`${label}-${index}`} className="shrink-0">
-              <IconText icon={<Icon className="text-primary h-auto w-6" aria-hidden="true" />} gap="2">
-                <span className="text-primary text-2xl">{label}</span>
-              </IconText>
+              <div className="flex min-w-[120px] flex-col items-center justify-center opacity-65">
+                <IconText icon={<Icon className="text-primary h-auto w-12" aria-hidden="true" />} children={undefined} />
+                <span className="text-primary mt-1 text-2xl">{label}</span>
+              </div>
             </li>
           ))}
         </ul>

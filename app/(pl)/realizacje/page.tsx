@@ -48,7 +48,7 @@ export const metadata = {
         url: toAbsoluteUrl('/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp'),
         width: 1200,
         height: 630,
-        alt: 'Portfolio realizacji Arteon - teczka ofertowa dla kancelarii',
+        alt: 'Realizacje realizacji Arteon - teczka ofertowa dla kancelarii',
       },
     ],
   },

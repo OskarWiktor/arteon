@@ -129,14 +129,14 @@ export default function TermsPage() {
 
           <Gap variant="line" size="sm" />
 
-          <SectionInfo id="prawa-autorskie" title="8. Prawa autorskie i portfolio">
+          <SectionInfo id="prawa-autorskie" title="8. Prawa autorskie i Realizacje">
             <p>
               8.1. Przeniesienie autorskich praw majątkowych/praw do korzystania następuje po pełnej zapłacie, na polach: utrwalanie, zwielokrotnianie, publiczne udostępnianie w Internecie,
               wprowadzanie zmian dla utrzymania/rozwoju, wykorzystanie w działalności klienta.
             </p>
             <p>
-              8.2. Portfolio i case study: Usługodawca może publikować miniatury, logo, zrzuty i opis przebiegu współpracy oraz efektów (bez wrażliwych danych). Klient może zgłosić sprzeciw e-mailem -
-              wówczas publikacja nie nastąpi.
+              8.2. Realizacje i case study: Usługodawca może publikować miniatury, logo, zrzuty i opis przebiegu współpracy oraz efektów (bez wrażliwych danych). Klient może zgłosić sprzeciw e-mailem
+              - wówczas publikacja nie nastąpi.
             </p>
             <p>8.3. Klient oświadcza, że posiada prawa/licencje do materiałów przekazanych do projektu.</p>
             <p>8.4. Licencje osób trzecich (fonty, zdjęcia, wtyczki) zapewnia i finansuje Klient; Usługodawca może pośredniczyć w znalezieniu i zakupie.</p>
