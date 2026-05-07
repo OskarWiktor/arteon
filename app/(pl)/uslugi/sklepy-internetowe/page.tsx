@@ -3,7 +3,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import SectionBento from '@/components/ui/sections/SectionBento';
 import {
@@ -315,10 +314,6 @@ export default function OfferWebPage() {
         />
 
         <Gap />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
 
         <WorkSteps variant="web" />
 

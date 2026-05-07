@@ -2,7 +2,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
 import { RiLightbulbFlashLine, RiShieldCheckLine, RiSearchLine, RiFileList2Line } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
@@ -258,10 +257,6 @@ export default function OfferOptimizationSEO() {
         <Gap variant="line" />
 
         <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
 
         <Gap variant="line" />
 

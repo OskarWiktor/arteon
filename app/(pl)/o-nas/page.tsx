@@ -3,7 +3,6 @@ import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import Gap from '@/components/ui/Gap';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
@@ -131,7 +130,7 @@ export default function AboutPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wybrane realizacje" />
+        <ProjectsCarousel title="Wybrane realizacje" projects={[]} />
 
         <Gap variant="line" />
 
@@ -140,10 +139,6 @@ export default function AboutPage() {
         <Gap variant="line" />
 
         <LogoCarousel />
-
-        <Gap variant="line" />
-
-        <ServicesSteps />
 
         <Gap size="sm" />
       </Wrapper>

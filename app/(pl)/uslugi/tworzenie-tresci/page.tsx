@@ -20,7 +20,6 @@ import SectionContactForm from '@/components/sections/SectionContactForm';
 import CTABanner from '@/components/sections/CTABanner';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import HeroBanner from '@/components/sections/HeroBanner';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
@@ -246,10 +245,6 @@ export default function OfferContentPage() {
         <Gap variant="line" />
 
         <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
 
         <Gap variant="line" />
 

@@ -2,7 +2,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
 import { RiBarChart2Fill, RiLightbulbFlashLine, RiSearchLine, RiFileList2Line, RiLinksFill } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
@@ -269,10 +268,6 @@ export default function OfferSeoSubscription() {
         <Gap variant="line" />
 
         <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
 
         <Gap variant="line" />
 

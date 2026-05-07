@@ -4,9 +4,8 @@ import CTABanner from '@/components/sections/CTABanner';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import HeroBanner from '@/components/sections/HeroBanner';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
-import LazyTestimonialsCarousel from '@/components/sections/LazyTestimonialsCarousel';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -272,7 +271,7 @@ export default function HomePage() {
 
         <Gap variant="line" />
 
-        <LazyTestimonialsCarousel />
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 
@@ -281,10 +280,6 @@ export default function HomePage() {
         <Gap variant="line" />
 
         <LogoCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
 
         <Gap variant="line" />
 

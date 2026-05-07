@@ -28,14 +28,14 @@ import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
-  title: 'Darmowe narzędzia online | Konwertery obrazów, SEO, kolory, favicon',
+  title: 'Darmowe narzędzia online bez rejestracji, limity użycia z pełnym zabezpieczeniem Twoich danych - Arteon',
   description:
-    'Darmowe narzędzia online: Konwertery obrazów (JPG, PNG, WebP, SVG, BMP, GIF, HEIC, TIFF, AVIF), generator favicon, edytor zdjęć, licznik tekstu, palety kolorów i kody QR. Bez rejestracji.',
+    'Tworzymy i stale rozwijamy kompletny zestaw narzędzi online nastawionych na prostotę, minimalizm i pełne bezpieczeństwo danych. Sprawdź nasze darmowe narzędzia online, bez limitu i bez rejestracji.',
   alternates: getToolsIndexAlternates('pl'),
   openGraph: {
-    title: 'Darmowe narzędzia online | Konwertery obrazów, SEO, kolory, favicon',
+    title: 'Darmowe narzędzia online bez rejestracji, limity użycia z pełnym zabezpieczeniem Twoich danych - Arteon',
     description:
-      'Darmowe narzędzia online: Konwertery obrazów (JPG, PNG, WebP, SVG, BMP, GIF, HEIC, TIFF, AVIF), generator favicon, edytor zdjęć, licznik tekstu, palety kolorów i kody QR. Bez rejestracji.',
+      'Tworzymy i stale rozwijamy kompletny zestaw narzędzi online nastawionych na prostotę, minimalizm i pełne bezpieczeństwo danych. Sprawdź nasze darmowe narzędzia online, bez limitu i bez rejestracji.',
     url: toAbsoluteUrl('/narzedzia'),
     type: 'website',
     images: [
@@ -51,9 +51,9 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Darmowe narzędzia online - konwertery obrazów, SEO, kolory, favicon',
+  name: 'Darmowe narzędzia online bez rejestracji, limity użycia z pełnym zabezpieczeniem Twoich danych',
   description:
-    'Darmowe narzędzia online: Konwertery obrazów (JPG, PNG, WebP, SVG, BMP, GIF, HEIC, TIFF, AVIF), generator favicon, edytor zdjęć, licznik tekstu, palety kolorów i kody QR. Bez rejestracji, bez limitu.',
+    'Tworzymy i stale rozwijamy kompletny zestaw narzędzi online nastawionych na prostotę, minimalizm i pełne bezpieczeństwo danych. Sprawdź nasze dedykowane narzędzia, które usprawnią edycję plików, poprawią seo, stworzą idealną paletę kolorystyczną i ulepszą Twoją komunikację e-mail',
   url: toAbsoluteUrl('/narzedzia'),
   inLanguage: 'pl-PL',
   isPartOf: {
@@ -612,8 +612,8 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Darmowe narzędzia online"
-        description="Konwertery obrazów (JPG, PNG, WebP, SVG, BMP, GIF, AVIF, HEIC, TIFF), edytor zdjęć, generator favicon, licznik tekstu, narzędzia do kolorów i kody QR. Bez rejestracji, bez limitu."
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
+        description="Tworzymy i stale rozwijamy kompletny zestaw narzędzi online nastawionych na prostotę, minimalizm i pełne bezpieczeństwo danych. Sprawdź nasze dedykowane narzędzia, które usprawnią edycję plików, poprawią seo, stworzą idealną paletę kolorystyczną i ulepszą Twoją komunikację e-mail"
+        backgroundImage="/assets/tools/free-html-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp"
         overlay="black"
       />
 

@@ -3,8 +3,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
-import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import SectionBento from '@/components/ui/sections/SectionBento';
 import { RiBarChart2Line, RiBookOpenLine, RiDeviceLine, RiPencilRuler2Line, RiMoneyDollarCircleLine, RiBrushLine, RiKey2Line, RiLifebuoyLine, RiMessage2Line } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
@@ -20,6 +18,7 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',
@@ -261,10 +260,6 @@ export default function OfferBlogPage() {
         />
 
         <Gap />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
 
         <WorkSteps variant="web" />
 

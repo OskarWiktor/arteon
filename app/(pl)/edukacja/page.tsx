@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: `${siteUrl}/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp`,
+        url: `${siteUrl}/assets/blog/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty.webp`,
       },
     ],
   },
@@ -49,7 +49,12 @@ export default function EdukacjaPage() {
 
   return (
     <>
-      <HeroBanner title="Edukacja" backgroundImage="/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp" overlay="black" />
+      <HeroBanner
+        title="Edukacja"
+        description="Kompedium wiedzy na temat stron internetowych, projektów graficznych oraz marketingu, psychologi w biznesie i UX"
+        backgroundImage="/assets/blog/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty.webp"
+        overlay="black"
+      />
       <Wrapper>
         <Gap size="sm" />
         <FilterBar cats={cats} />

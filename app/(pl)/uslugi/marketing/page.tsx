@@ -3,7 +3,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
 import { RiBarChart2Fill, RiCustomerService2Line, RiFileList2Line, RiLightbulbFlashLine, RiLineChartLine, RiSearchEyeLine, RiSearchLine, RiShieldCheckLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
@@ -182,10 +181,6 @@ export default function OfferMarketingHubPage() {
         <Gap variant="line" />
 
         <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
 
         <Gap variant="line" />
 
