@@ -1,6 +1,6 @@
 'use client';
 
-import { useId, useState, type ElementType, type JSX, type ReactNode } from 'react';
+import { useId, useState, type ElementType, type ReactNode } from 'react';
 import Image from 'next/image';
 import { RiArrowDownSLine } from 'react-icons/ri';
 import Wrapper from '../Wrapper';
@@ -19,8 +19,6 @@ interface SectionStepItem {
   expandableContent?: ReactNode;
 }
 
-type HeadingLevel = 'h2' | 'h3';
-
 interface SectionStepsProps {
   title?: ReactNode;
   subtitle?: ReactNode;
@@ -35,7 +33,6 @@ interface SectionStepsProps {
   backgroundImage?: string;
   overlay?: 'none' | 'black' | 'white';
   disclaimer?: ReactNode;
-  headingLevel?: HeadingLevel;
   showIndex?: boolean;
   variant?: 'default' | 'contact';
 }
@@ -54,7 +51,6 @@ export default function SectionSteps({
   backgroundImage,
   overlay = 'none',
   disclaimer,
-  headingLevel = 'h2',
   showIndex = false,
   variant = 'default',
 }: SectionStepsProps) {
@@ -102,8 +98,6 @@ export default function SectionSteps({
     gridColsLg = 'lg:grid-cols-4';
   }
 
-  const SectionHeadingTag = (headingLevel || 'h2') as keyof JSX.IntrinsicElements;
-  const ArticleHeadingTag = (headingLevel === 'h2' ? 'h3' : 'h4') as keyof JSX.IntrinsicElements;
   const Tag: ElementType = hasBg ? Wrapper : 'div';
 
   return (
@@ -119,9 +113,9 @@ export default function SectionSteps({
         {subtitle && <span className={`mb-2 block text-base tracking-wider uppercase md:mb-4 ${hasBg ? 'text-white' : 'text-light'}`}>{subtitle}</span>}
 
         {title && (
-          <SectionHeadingTag id={titleId} className={`${toneTextClass} h3 mb-4 lg:mb-6`}>
+          <h2 id={titleId} className={`${toneTextClass} h3 mb-4 lg:mb-6`}>
             {title}
-          </SectionHeadingTag>
+          </h2>
         )}
 
         {description && <p className={`mb-4 lg:mb-6 ${toneMutedClass}`}>{description}</p>}
@@ -134,7 +128,6 @@ export default function SectionSteps({
           showIndex={showIndex}
           variant={variant}
           isHighlighted={(item) => item.highlight === true}
-          ArticleHeadingTag={ArticleHeadingTag}
         />
 
         <ButtonGroup
@@ -166,10 +159,9 @@ interface ExpandableStepsListProps {
   showIndex: boolean;
   variant: 'default' | 'contact';
   isHighlighted: (item: SectionStepItem) => boolean;
-  ArticleHeadingTag: keyof JSX.IntrinsicElements;
 }
 
-function ExpandableStepsList({ items, gridColsSm, gridColsMd, gridColsLg, showIndex, variant, isHighlighted, ArticleHeadingTag }: ExpandableStepsListProps) {
+function ExpandableStepsList({ items, gridColsSm, gridColsMd, gridColsLg, showIndex, variant, isHighlighted }: ExpandableStepsListProps) {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const toggleExpand = (index: number) => {
@@ -188,7 +180,7 @@ function ExpandableStepsList({ items, gridColsSm, gridColsMd, gridColsLg, showIn
         return (
           <li key={index} className="flex flex-col items-stretch">
             <article
-              className={`flex h-full w-full flex-col p-4 md:p-6 ${variant === 'contact' ? 'text-center' : ''} ${highlighted ? 'bg-primary rounded-lg text-white shadow-lg' : 'surface-card-lift border border-neutral-200'}`}
+              className={`flex h-full w-full flex-col rounded-lg p-4 transition md:p-6 ${variant === 'contact' ? 'text-center' : ''} ${highlighted ? 'bg-primary text-white shadow-lg' : 'border border-neutral-200 bg-white shadow-sm hover:-translate-y-0.5 hover:shadow-md'}`}
             >
               {topImageSrc && (
                 <div className="mb-4 md:mb-6">
@@ -226,11 +218,11 @@ function ExpandableStepsList({ items, gridColsSm, gridColsMd, gridColsLg, showIn
                   className={`flex w-full items-center justify-between text-left ${highlighted ? 'text-white' : 'text-dark'}`}
                   aria-expanded={isExpanded}
                 >
-                  <ArticleHeadingTag className="h5 mb-1">{itemTitle}</ArticleHeadingTag>
+                  <h3 className="h5 mb-1">{itemTitle}</h3>
                   <RiArrowDownSLine className={`h-5 w-5 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
                 </button>
               ) : (
-                <ArticleHeadingTag className={`h5 mb-1 ${highlighted ? 'text-white' : 'text-dark'}`}>{itemTitle}</ArticleHeadingTag>
+                <h3 className={`h5 mb-1 ${highlighted ? 'text-white' : 'text-dark'}`}>{itemTitle}</h3>
               )}
 
               {itemSubtitle && <span className={`text-base ${highlighted ? 'text-white/80' : 'text-light'}`}>{itemSubtitle}</span>}

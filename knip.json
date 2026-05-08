@@ -1,7 +1,0 @@
-{
-  "$schema": "https://unpkg.com/knip@5/schema.json",
-  "entry": ["app/**/page.tsx", "app/**/layout.tsx", "app/**/error.tsx", "app/**/not-found.tsx", "middleware.ts", "scripts/*.cjs", "next-sitemap.config.cjs"],
-  "project": ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "lib/**/*.{ts,tsx}", "hooks/**/*.{ts,tsx}", "utils/**/*.{ts,tsx}", "types/**/*.{ts,tsx}"],
-  "ignore": ["**/*.d.ts", ".next/**", "data/**"],
-  "ignoreDependencies": ["@tailwindcss/postcss", "@tailwindcss/forms", "@tailwindcss/typography", "@tailwindcss/aspect-ratio", "tailwindcss-children", "tailwind-scrollbar", "sharp"]
-}

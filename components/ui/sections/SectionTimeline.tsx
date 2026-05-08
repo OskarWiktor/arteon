@@ -1,6 +1,7 @@
 import { useId, type ReactNode } from 'react';
 import SectionHeader from '../typography/SectionHeader';
 import ButtonGroup from '../buttons/ButtonGroup';
+import Card from '../Card';
 
 interface TimelineItem {
   icon: ReactNode;
@@ -25,7 +26,7 @@ export default function SectionTimeline({ title, subtitle, description, items, b
 
   return (
     <section data-section="timeline" aria-labelledby={title ? headingId : undefined}>
-      <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" titleId={headingId} headingClassName="" descriptionClassName="" />
+      <SectionHeader subtitle={subtitle} title={title} description={description} titleId={headingId} />
 
       <div className="relative">
         <div className="bg-primary-light absolute top-0 left-6 hidden h-full w-0.5 md:left-1/2 md:block md:-translate-x-1/2" aria-hidden="true" />
@@ -39,11 +40,11 @@ export default function SectionTimeline({ title, subtitle, description, items, b
               </div>
 
               <div className={`flex-1 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
-                <div className="surface-card-soft ml-16 p-6 md:ml-0">
+                <Card padding="lg" className="ml-16 md:ml-0">
                   <div className="bg-primary absolute top-6 left-0 flex h-12 w-12 items-center justify-center rounded-full text-white shadow-lg md:hidden">{step.icon}</div>
                   <h3 className="h5 mb-2">{step.title}</h3>
                   <p className="text-light">{step.description}</p>
-                </div>
+                </Card>
               </div>
 
               <div className="hidden flex-1 md:block" />

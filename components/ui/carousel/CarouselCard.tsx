@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import type { ArticlePreview } from '@/types/article';
 import type { ProjectPreview } from '@/types/project';
+import Card from '../Card';
 
 const IMAGE_SIZES = '(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw';
 
@@ -39,7 +40,7 @@ export default function CarouselCard(props: CarouselCardProps) {
   if (props.variant === 'tool') {
     const { title, href, description, image, buttonLabel = 'Otwórz narzędzie' } = props;
     return (
-      <article className="surface-card flex h-full flex-col overflow-hidden">
+      <Card as="article" variant="default" className="flex h-full flex-col">
         <Link href={href} prefetch={false} className="block focus:outline-none">
           <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-black/10">
             <Image src={image} alt={title} fill className="object-cover" sizes={IMAGE_SIZES} />
@@ -59,14 +60,14 @@ export default function CarouselCard(props: CarouselCardProps) {
             </Link>
           </div>
         </div>
-      </article>
+      </Card>
     );
   }
 
   if (props.variant === 'article') {
     const { article, href, readingTimeLabel } = props;
     return (
-      <article className="surface-card h-full">
+      <Card as="article" variant="default" className="h-full">
         <Link href={href} prefetch={false} className="block focus:outline-none">
           {article.cover ? (
             <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-black/10">
@@ -91,7 +92,7 @@ export default function CarouselCard(props: CarouselCardProps) {
             </div>
           </div>
         </Link>
-      </article>
+      </Card>
     );
   }
 
@@ -101,7 +102,7 @@ export default function CarouselCard(props: CarouselCardProps) {
   const externalLink = project.link;
 
   return (
-    <article className="surface-card-lift group relative flex h-full flex-col overflow-hidden rounded-lg">
+    <Card as="article" className="group relative flex h-full flex-col overflow-hidden">
       <div className={`relative ${aspectClass} w-full`}>
         <Image src={project.image} alt={`Zrzut ekranu projektu ${project.title}`} fill className="object-cover" sizes={IMAGE_SIZES} />
       </div>
@@ -137,6 +138,6 @@ export default function CarouselCard(props: CarouselCardProps) {
           </div>
         </div>
       </div>
-    </article>
+    </Card>
   );
 }

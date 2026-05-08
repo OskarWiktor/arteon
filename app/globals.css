@@ -374,22 +374,6 @@ textarea {
   background-color: var(--crop-grid-color, var(--crop-green));
 }
 
-.surface-card {
-  @apply overflow-hidden rounded-lg bg-white shadow-md transition focus-within:shadow-lg hover:shadow-lg;
-}
-
-.surface-card-lift {
-  @apply rounded-lg bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md;
-}
-
-.surface-card-soft {
-  @apply rounded-lg bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md;
-}
-
-.tool-section {
-  @apply rounded-lg border border-black/10 bg-white/80 p-7 shadow-sm;
-}
-
 .tool-input {
   @apply focus:border-mid w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:outline-none;
   color: var(--text-mid);

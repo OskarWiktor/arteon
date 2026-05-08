@@ -20,7 +20,7 @@ export default function SectionInfo({ title, subtitle, description, btnOne, btnO
 
   return (
     <section id={id} aria-labelledby={headingId}>
-      <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" headingClassName=" scroll-mt-26" titleId={headingId} />
+      <SectionHeader subtitle={subtitle} title={title} description={description} headingClassName=" scroll-mt-26" titleId={headingId} />
 
       {children}
 

@@ -1,6 +1,7 @@
 'use client';
 
 import { RiFacebookFill, RiLinkedinBoxFill, RiMailLine, RiTwitterXFill } from 'react-icons/ri';
+import Card from '../ui/Card';
 import CopyButton from '../ui/buttons/CopyButton';
 
 type ShareBlockProps = {
@@ -20,7 +21,7 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
   const mailHref = `mailto:?subject=${encodedTitle}&body=${encodedUrl}`;
 
   return (
-    <aside className={`w-fit rounded-lg border border-black/10 bg-white/70 p-4 shadow-sm backdrop-blur-sm ${className}`} aria-label="Udostępnij ten materiał">
+    <Card as="aside" variant="section" padding="sm" className={`w-fit backdrop-blur-sm ${className}`} aria-label="Udostępnij ten materiał">
       <div className="flex flex-wrap items-center gap-2">
         <a
           href={facebookHref}
@@ -67,6 +68,6 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
           className="text-primary flex items-center gap-2 rounded-lg border border-black/10 bg-white px-4 py-2 text-sm font-medium transition hover:bg-neutral-50 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
         />
       </div>
-    </aside>
+    </Card>
   );
 }

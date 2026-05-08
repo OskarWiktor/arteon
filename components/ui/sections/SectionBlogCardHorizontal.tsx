@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Card from '../Card';
 
 interface SectionBlogCardHorizontalProps {
   imageSrc: string;
@@ -13,7 +14,7 @@ interface SectionBlogCardHorizontalProps {
 
 export default function SectionBlogCardHorizontal({ imageSrc, imageAlt, title, description, href, category, readingTime }: SectionBlogCardHorizontalProps) {
   return (
-    <Link href={href} prefetch={false} className="group flex flex-col gap-4 overflow-hidden rounded-lg border border-black/10 bg-white p-4 transition hover:shadow-lg sm:flex-row sm:gap-6">
+    <Card as={Link} variant="outlined" padding="sm" href={href} prefetch={false} className="group flex flex-col gap-4 hover:shadow-lg sm:flex-row sm:gap-6">
       <div className="relative aspect-video w-full shrink-0 overflow-hidden rounded-lg sm:w-48">
         <Image src={imageSrc} alt={imageAlt} fill className="object-cover transition group-hover:scale-105" sizes="(min-width:640px) 192px, 100vw" />
       </div>
@@ -31,6 +32,6 @@ export default function SectionBlogCardHorizontal({ imageSrc, imageAlt, title, d
           </div>
         )}
       </div>
-    </Link>
+    </Card>
   );
 }

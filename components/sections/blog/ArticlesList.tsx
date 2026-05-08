@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getAllArticlePreviews, getPrimaryCategorySlug } from '@/lib/blogDataService';
 import { slugify } from '@/utils/slugify';
+import Card from '@/components/ui/Card';
 
 const articles = getAllArticlePreviews();
 
@@ -18,7 +19,7 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
         const catSlug = getPrimaryCategorySlug(a);
         const href = `/edukacja/${catSlug}/${a.slug}`;
         return (
-          <article key={a.slug} className="surface-card">
+          <Card key={a.slug} as="article" variant="default">
             <Link href={href} prefetch={false} className="block focus:outline-none">
               {a.cover ? (
                 <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-black/10">
@@ -39,7 +40,7 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
                 </div>
               </div>
             </Link>
-          </article>
+          </Card>
         );
       })}
     </section>

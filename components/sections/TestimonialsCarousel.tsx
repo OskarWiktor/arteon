@@ -77,7 +77,7 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
 
     return (
       <section className="w-full" aria-labelledby="testimonials-heading">
-        <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName="" titleId="testimonials-heading" />
+        <SectionHeader subtitle={subtitle} title={title} titleId="testimonials-heading" />
 
         <div className="relative px-12 py-8 md:px-16">
           <div className="mx-auto max-w-3xl text-center" role="region" aria-roledescription="carousel" aria-label="Karuzela opinii" aria-live="polite">
@@ -119,7 +119,7 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
 
   return (
     <section className="w-full" aria-labelledby="testimonials-heading">
-      <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName="" titleId="testimonials-heading" />
+      <SectionHeader subtitle={subtitle} title={title} titleId="testimonials-heading" />
 
       <div className="relative">
         <div

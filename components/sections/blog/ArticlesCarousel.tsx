@@ -67,8 +67,6 @@ export default function ArticlesCarousel({ articles, max = 10, title = 'Edukacja
       <SectionHeaderWithAction
         subtitle={subtitle}
         title={title}
-        headingLevel="h2"
-        headingClassName=""
         titleId="articles-heading"
         actionLabel="Zobacz wszystkie artykuły"
         actionLink={allArticlesHref}

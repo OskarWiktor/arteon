@@ -1,5 +1,0 @@
-Contact: mailto:kontakt@arteonagency.pl
-Contact: https://www.arteonagency.pl/kontakt
-Expires: 2027-03-05T00:00:00.000Z
-Preferred-Languages: pl, en, de, es, fr
-Canonical: https://www.arteonagency.pl/.well-known/security.txt

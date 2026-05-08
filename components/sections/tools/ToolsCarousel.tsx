@@ -47,8 +47,6 @@ export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
       <SectionHeaderWithAction
         subtitle={subtitle}
         title={displayTitle}
-        headingLevel="h2"
-        headingClassName=""
         titleId="tools-heading"
         actionLabel={t.seeAllTools}
         actionLink={toolsHref}

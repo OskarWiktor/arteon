@@ -9,7 +9,6 @@ interface HeroBannerProps {
   title?: ReactNode;
   subtitle?: ReactNode;
   description?: ReactNode;
-  headingLevel?: 'h1' | 'h2';
   backgroundImage?: string;
   backgroundImageAlt?: string;
   primaryCtaLabel?: string;
@@ -26,7 +25,6 @@ export default function HeroBanner({
   title,
   subtitle,
   description,
-  headingLevel = 'h1',
   backgroundImage,
   backgroundImageAlt,
   primaryCtaLabel,
@@ -51,7 +49,6 @@ export default function HeroBanner({
 
   const titleId = title ? `${id}-title` : undefined;
   const descId = description ? `${id}-description` : undefined;
-  const HeadingTag = headingLevel;
 
   const sectionClass = isCompact
     ? `relative ${baseBg} flex h-auto items-center overflow-hidden pt-4 pb-2 md:pt-7`
@@ -71,9 +68,9 @@ export default function HeroBanner({
             </Eyebrow>
           )}
           {title && (
-            <HeadingTag id={titleId} className={`text-pretty ${isCompact ? 'h4 text-center' : ''}`}>
+            <h1 id={titleId} className={`text-pretty ${isCompact ? 'h4 text-center' : ''}`}>
               {title}
-            </HeadingTag>
+            </h1>
           )}
           {description && (
             <p id={descId} className={`text-pretty ${isCompact ? 'mt-2 text-center md:mt-3' : 'mt-3 md:mt-5'} text-base leading-relaxed ${isLightText ? 'text-white' : 'text-mid'}`}>

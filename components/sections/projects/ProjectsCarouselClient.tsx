@@ -60,8 +60,6 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = 'Na
       <SectionHeaderWithAction
         subtitle={subtitle}
         title={title}
-        headingLevel="h2"
-        headingClassName=""
         titleId="projects-heading"
         actionLabel="Sprawdź wszystkie realizacje"
         actionLink="/realizacje"

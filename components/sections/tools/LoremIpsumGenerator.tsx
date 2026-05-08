@@ -72,8 +72,7 @@ export default function LoremIpsumGenerator() {
 
   return (
     <div className="space-y-4 overflow-hidden">
-      {/* Style bar above the generator (like email signature layout bar) */}
-      <section className="tool-section flex flex-wrap items-center gap-3 p-4!">
+      <ToolSection padding="sm" className="flex flex-wrap items-center gap-3">
         <div className="flex flex-wrap items-center gap-2">
           <RiPaletteLine className="text-primary text-base" />
           <span className="tool-value">{t.styleBarTitle}</span>
@@ -83,7 +82,7 @@ export default function LoremIpsumGenerator() {
             ))}
           </div>
         </div>
-      </section>
+      </ToolSection>
 
       <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
         {/* Settings panel */}

@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import Card from './Card';
 
 type FeatureCardProps = {
   idx?: number;
@@ -20,10 +21,12 @@ export default function FeatureCard({ idx = 0, title, description, points, icon,
 
   if (variant === 'centered') {
     return (
-      <section
+      <Card
+        as="section"
+        padding="sm"
         aria-labelledby={headingId}
         aria-describedby={descId}
-        className="surface-card-soft flex h-full flex-col items-center p-4 text-center"
+        className="flex h-full flex-col items-center text-center"
         {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
       >
         <div className="bg-primary-light text-primary mb-3 flex h-12 w-12 items-center justify-center rounded-lg">{displayIcon}</div>
@@ -46,12 +49,12 @@ export default function FeatureCard({ idx = 0, title, description, points, icon,
             ))}
           </ul>
         )}
-      </section>
+      </Card>
     );
   }
 
   return (
-    <section aria-labelledby={headingId} aria-describedby={descId} className="surface-card-soft flex h-full gap-4 p-4" {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}>
+    <Card as="section" padding="sm" aria-labelledby={headingId} aria-describedby={descId} className="flex h-full gap-4" {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}>
       <div className="bg-primary-light text-primary flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg">{displayIcon}</div>
       <div className="flex flex-col">
         <h3 id={headingId} className="h6 text-dark mb-1" itemProp="name">
@@ -74,6 +77,6 @@ export default function FeatureCard({ idx = 0, title, description, points, icon,
           </ul>
         )}
       </div>
-    </section>
+    </Card>
   );
 }

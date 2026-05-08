@@ -4,6 +4,7 @@ import { RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '../ui/Wrapper';
 import SectionHeader from '../ui/typography/SectionHeader';
 import ButtonGroup from '../ui/buttons/ButtonGroup';
+import Card from '../ui/Card';
 import AppLink from '../ui/Link';
 
 interface CTASplitColumn {
@@ -61,7 +62,7 @@ export default function CTABanner({
                 </AppLink>
               )}
             </div>
-            <div className="flex flex-col justify-between rounded-lg border border-black/10 bg-white p-8">
+            <Card variant="outlined" className="flex flex-col justify-between p-8">
               <div>
                 <h2 className="h3 mb-3">{rightColumn?.title}</h2>
                 {rightColumn?.description && <p className="text-light mb-6">{rightColumn.description}</p>}
@@ -72,7 +73,7 @@ export default function CTABanner({
                   <RiArrowRightSLine className="h-5 w-5" />
                 </AppLink>
               )}
-            </div>
+            </Card>
           </div>
         </Wrapper>
       </section>
@@ -103,10 +104,8 @@ export default function CTABanner({
             subtitle={subtitle}
             title={title}
             description={description}
-            headingLevel="h2"
             eyebrowVariant="dynamic"
             eyebrowClassName={`text-base tracking-wider uppercase ${overlay === 'black' ? 'text-white' : 'text-dark'}`}
-            headingClassName=""
             descriptionClassName={` mx-auto text-base leading-relaxed md:text-lg ${toneMutedClass}`}
           />
 

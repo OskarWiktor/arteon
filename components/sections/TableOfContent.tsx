@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
+import Card from '../ui/Card';
 
 type Entry = { id: string; text: string; level: 2 | 3 };
 
@@ -89,7 +90,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
   return (
     <>
       <aside className={`block lg:hidden ${widthClass}`}>
-        <div className="relative rounded-lg border border-black/10 bg-white shadow-sm">
+        <Card variant="outlined" className="relative shadow-sm">
           <div className="flex items-center justify-between p-2">
             <p className="text-light text-xs font-medium tracking-wider uppercase">
               Spis treści <span className="opacity-60">({items.length})</span>
@@ -107,16 +108,16 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
               {!expanded && <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-white/95 to-transparent" />}
             </div>
           </nav>
-        </div>
+        </Card>
       </aside>
 
       <aside className={`sticky top-24 hidden ${widthClass} self-start lg:block`}>
-        <div className="rounded-lg border border-black/10 bg-white p-4 shadow-sm">
+        <Card variant="outlined" padding="sm" className="shadow-sm">
           <p className="text-light mb-2 text-xs tracking-wider uppercase">Spis treści</p>
           <nav aria-label="Spis treści">
             <LinkList />
           </nav>
-        </div>
+        </Card>
       </aside>
     </>
   );

@@ -1,4 +1,5 @@
 import Wrapper from '../Wrapper';
+import Card from '../Card';
 
 interface Metric {
   label: string;
@@ -29,7 +30,7 @@ export default function SectionMetrics({ title, metrics }: SectionMetricsProps) 
             const percentage = metric.inverse ? ((metric.max - metric.value) / metric.max) * 100 : (metric.value / metric.max) * 100;
 
             return (
-              <div key={index} className="surface-card-soft p-5">
+              <Card key={index} className="p-5">
                 <p className="text-light mb-2 text-sm">{metric.label}</p>
                 <div className="mb-3 flex items-baseline gap-1">
                   <span className="h3">{metric.value}</span>
@@ -46,7 +47,7 @@ export default function SectionMetrics({ title, metrics }: SectionMetricsProps) 
                     aria-label={`${metric.label}: ${metric.value}${metric.unit}`}
                   />
                 </div>
-              </div>
+              </Card>
             );
           })}
         </div>

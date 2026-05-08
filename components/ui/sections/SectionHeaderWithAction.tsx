@@ -6,7 +6,6 @@ interface SectionHeaderWithActionProps {
   subtitle?: ReactNode;
   title?: ReactNode;
   description?: ReactNode;
-  headingLevel?: 'h1' | 'h2' | 'h3' | 'h4';
   eyebrowVariant?: 'default' | 'dynamic';
   eyebrowClassName?: string;
   headingClassName?: string;
@@ -24,7 +23,6 @@ export default function SectionHeaderWithAction({
   subtitle,
   title,
   description,
-  headingLevel = 'h2',
   eyebrowVariant = 'default',
   eyebrowClassName = '',
   headingClassName = '',
@@ -52,7 +50,6 @@ export default function SectionHeaderWithAction({
           subtitle={subtitle}
           title={title}
           description={description}
-          headingLevel={headingLevel}
           eyebrowVariant={eyebrowVariant}
           eyebrowClassName={eyebrowClassName}
           headingClassName={headingClassName}

@@ -2,6 +2,7 @@ import { RiCheckFill } from 'react-icons/ri';
 import Button from '../buttons/Button';
 import ButtonGroup from '../buttons/ButtonGroup';
 import Badge from '../Badge';
+import Card from '../Card';
 import IconText from '../IconText';
 import type { SectionPricesProps } from '@/types/ui';
 export type { SectionPricesPlan, Note, SectionPricesProps } from '@/types/ui';
@@ -43,13 +44,13 @@ export default function SectionPrices({
           const itemDescribedBy = [itemPlatformId, itemPriceId, itemDescId].filter(Boolean).join(' ') || undefined;
 
           return (
-            <article
+            <Card
+              as="article"
               key={itemId}
+              padding="lg"
               aria-labelledby={itemHeadingId}
               aria-describedby={itemDescribedBy}
-              className={['group surface-card-lift relative flex h-full flex-col justify-between p-6', 'ring-1 ring-neutral-200 duration-200', plan.lastPlan ? 'ring-2 ring-neutral-900' : ''].join(
-                ' ',
-              )}
+              className={['group relative flex h-full flex-col justify-between', 'ring-1 ring-neutral-200 duration-200', plan.lastPlan ? 'ring-2 ring-neutral-900' : ''].join(' ')}
             >
               {plan.badgeLabel && (
                 <Badge variant="warning" size="sm" className="absolute -top-3 left-4 font-semibold tracking-wider shadow-sm" aria-label="Wyróżniony plan">
@@ -108,7 +109,7 @@ export default function SectionPrices({
                   className="mt-6"
                 />
               ) : null}
-            </article>
+            </Card>
           );
         })}
       </div>

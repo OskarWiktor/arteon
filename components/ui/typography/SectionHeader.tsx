@@ -1,13 +1,10 @@
 import type { ReactNode } from 'react';
 import Eyebrow from './Eyebrow';
 
-type HeadingLevel = 'h1' | 'h2' | 'h3' | 'h4';
-
 interface SectionHeaderProps {
   subtitle?: ReactNode;
   title?: ReactNode;
   description?: ReactNode;
-  headingLevel?: HeadingLevel;
   eyebrowVariant?: 'default' | 'dynamic';
   eyebrowClassName?: string;
   headingClassName?: string;
@@ -20,7 +17,6 @@ export default function SectionHeader({
   subtitle,
   title,
   description,
-  headingLevel = 'h2',
   eyebrowVariant = 'default',
   eyebrowClassName = '',
   headingClassName = '',
@@ -28,8 +24,6 @@ export default function SectionHeader({
   subtitleId,
   titleId,
 }: SectionHeaderProps) {
-  const TitleTag = headingLevel;
-
   return (
     <>
       {subtitle && (
@@ -40,9 +34,9 @@ export default function SectionHeader({
         </div>
       )}
       {title && (
-        <TitleTag className={`${headingClassName} h3 mb-4 lg:mb-6`} id={titleId}>
+        <h2 className={`${headingClassName} h3 mb-4 lg:mb-6`} id={titleId}>
           {title}
-        </TitleTag>
+        </h2>
       )}
       {description && <p className={descriptionClassName}>{description}</p>}
     </>

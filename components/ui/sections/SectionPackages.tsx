@@ -32,7 +32,7 @@ export default function SectionPackages({ title, subtitle, description, packages
   return (
     <section data-section="packages" aria-labelledby={title ? 'packages-title' : undefined}>
       <Wrapper>
-        <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" titleId="packages-title" headingClassName="" descriptionClassName="" />
+        <SectionHeader subtitle={subtitle} title={title} description={description} titleId="packages-title" />
 
         <div className="overflow-x-auto">
           <table className="w-full min-w-[600px] border-collapse">

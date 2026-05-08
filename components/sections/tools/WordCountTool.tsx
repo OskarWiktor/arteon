@@ -113,7 +113,7 @@ export default function WordCountTool() {
         </ToolSection>
       </div>
 
-      <section className="tool-section flex flex-wrap items-center gap-3 p-4!">
+      <ToolSection padding="sm" className="flex flex-wrap items-center gap-3">
         <span className="tool-value">{t.toolbarTitle}</span>
         <div className="flex flex-wrap gap-2">
           {toolbarActions.map((action) => (
@@ -128,7 +128,7 @@ export default function WordCountTool() {
             </button>
           ))}
         </div>
-      </section>
+      </ToolSection>
     </div>
   );
 }

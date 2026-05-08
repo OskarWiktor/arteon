@@ -35,12 +35,8 @@ export default function FeatureGrid({ title, subtitle, description, items, colum
         subtitle={subtitle}
         title={title}
         description={description}
-        headingLevel="h2"
-        eyebrowClassName=""
         subtitleId={`${sectionId}-sub`}
-        headingClassName=""
         titleId={`${sectionId}-h`}
-        descriptionClassName=""
       />
 
       <ul className={`grid gap-4 ${gridClasses}`}>

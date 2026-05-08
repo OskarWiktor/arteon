@@ -41,7 +41,7 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
 
   return (
     <section aria-labelledby={headingId}>
-      <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName=" h4" titleId={headingId} />
+      <SectionHeader subtitle={subtitle} title={title} headingClassName=" h4" titleId={headingId} />
 
       <div className={containerClass}>
         {items.map((item, index) => (

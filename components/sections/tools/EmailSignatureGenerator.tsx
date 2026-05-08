@@ -1,6 +1,7 @@
 'use client';
 
 import Button from '@/components/ui/buttons/Button';
+import ToolSection from '@/components/ui/tools/ToolSection';
 import PillButton from '@/components/ui/tools/PillButton';
 import { downloadBlob } from '@/utils/download';
 import { buildSignatureHtml } from '@/lib/tools/email/buildSignatureHtml';
@@ -235,7 +236,7 @@ export default function EmailSignatureGenerator() {
 
   return (
     <div className="space-y-4">
-      <section className="tool-section flex flex-wrap items-center justify-between gap-3 p-4!">
+      <ToolSection padding="sm" className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-wrap items-center gap-3">
           <div className="flex flex-wrap items-center gap-2">
             <RiLayout3Line className="text-primary text-base" />
@@ -253,9 +254,9 @@ export default function EmailSignatureGenerator() {
           </div>
         </div>
         <p className="tool-meta">{t.moreLayoutsSoon}</p>
-      </section>
+      </ToolSection>
 
-      <section className="tool-section flex flex-wrap items-center gap-3 p-4!">
+      <ToolSection padding="sm" className="flex flex-wrap items-center gap-3">
         <div className="flex items-center gap-2">
           <span className="tool-value">{t.editorTitle}</span>
         </div>
@@ -268,10 +269,10 @@ export default function EmailSignatureGenerator() {
           <ToolButton id="spacing" active={activePanel} onClick={(id) => setActivePanel(id as ActivePanel)} icon={<RiSpace className="text-base" />} label={t.panels.spacing} />
           <ToolButton id="legal" active={activePanel} onClick={(id) => setActivePanel(id as ActivePanel)} icon={<RiFileTextLine className="text-base" />} label={t.panels.legal} />
         </div>
-      </section>
+      </ToolSection>
 
       <div className="grid items-stretch gap-4 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]">
-        <section className="tool-section flex min-h-[620px] flex-col space-y-4">
+        <ToolSection className="flex min-h-[620px] flex-col space-y-4">
           <div className="space-y-4 text-sm!">
             {activePanel === 'identity' && <IdentityPanel config={config} styleConfig={styleConfig} onTextChange={handleTextChange} onStyleChange={handleStyleChange} t={t} />}
 
@@ -422,9 +423,9 @@ export default function EmailSignatureGenerator() {
 
             {activePanel === 'legal' && <LegalPanel config={config} styleConfig={styleConfig} onTextChange={handleTextChange} onStyleChange={handleStyleChange} t={t} />}
           </div>
-        </section>
+        </ToolSection>
 
-        <section className="tool-section flex min-h-[620px] flex-col space-y-4 lg:sticky lg:top-24 lg:self-start">
+        <ToolSection className="flex min-h-[620px] flex-col space-y-4 lg:sticky lg:top-24 lg:self-start">
           <div className="flex items-center justify-between gap-2">
             <div>
               <h2 className="h6">{t.preview.title}</h2>
@@ -544,7 +545,7 @@ export default function EmailSignatureGenerator() {
           />
 
           {!hasRequired && <p className="text-light text-xs!">{t.preview.requiredFields}</p>}
-        </section>
+        </ToolSection>
       </div>
     </div>
   );

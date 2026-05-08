@@ -1,15 +1,17 @@
 import type { ReactNode } from 'react';
+import Card from '../Card';
 
 interface ToolSectionProps {
   children: ReactNode;
   className?: string;
+  padding?: 'sm' | 'md' | 'lg' | 'xl';
   'aria-label'?: string;
 }
 
-export default function ToolSection({ children, className = '', 'aria-label': ariaLabel }: ToolSectionProps) {
+export default function ToolSection({ children, className = '', padding = 'xl', 'aria-label': ariaLabel }: ToolSectionProps) {
   return (
-    <section className={`tool-section ${className}`} aria-label={ariaLabel}>
+    <Card as="section" variant="section" padding={padding} className={className} aria-label={ariaLabel}>
       {children}
-    </section>
+    </Card>
   );
 }
