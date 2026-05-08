@@ -5,6 +5,7 @@ import Gap from '@/components/ui/Gap';
 import FaqPanels from '@/components/ui/FaqPanels';
 import Wrapper from '@/components/ui/Wrapper';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import { JsonLd } from '@/components/seo/JsonLd';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
@@ -185,7 +186,7 @@ export default function AboutFaqPage() {
 
         <FaqPanels title="Najczęstsze pytania dotyczące współpracy" items={FAQ_ITEMS} openByDefault={1} generateSchema={false} pageUrl={toAbsoluteUrl('/o-nas/faq')} />
 
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_JSON_LD) }} />
+        <JsonLd schema={FAQ_JSON_LD} id="schema-about-faq" />
 
         <Gap size="sm" />
       </Wrapper>

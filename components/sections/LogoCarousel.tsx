@@ -63,14 +63,14 @@ const LogoCarouselDefaultItems: LogoCarouselDefaultItem[] = [
 ];
 
 const LogoCarouselLogoItems: LogoCarouselLogoImage[] = [
-  { alt: 'Autokorfu', src: '/assets/projects/loga-firm/logo-autokorfu.webp', width: 320, height: 96, heightClass: 'h-8 md:h-10', filter: 'brightness(0)' },
-  { alt: 'StepArd', src: '/assets/projects/loga-firm/StepArd-logo-czarne.png', width: 320, height: 80, heightClass: 'h-7 md:h-9', filter: 'brightness(0)' },
-  { alt: 'Finish Masters', src: '/assets/projects/loga-firm/finish-masters-logo-kolor.png', width: 320, height: 96, heightClass: 'h-7 md:h-9', filter: 'brightness(0)' },
-  { alt: 'Izoluk', src: '/assets/projects/loga-firm/izoluk-logo-firmy.png', width: 320, height: 96, heightClass: 'h-11 md:h-13', filter: 'brightness(0)' },
-  { alt: 'KM2', src: '/assets/projects/loga-firm/logo-km2-czarne-pelne.png', width: 320, height: 96, heightClass: 'h-6 md:h-8', filter: 'brightness(0)' },
-  { alt: 'LuxNova', src: '/assets/projects/loga-firm/luxnova-logo.png', width: 320, height: 96, heightClass: 'h-12 md:h-14', filter: 'brightness(0)' },
-  { alt: 'Eliza Wrońska', src: '/assets/projects/loga-firm/eliza-wronska-logo.webp', width: 320, height: 96, heightClass: 'h-12 md:h-14', filter: 'brightness(0)' },
-  { alt: 'NaPilota', src: '/assets/projects/loga-firm/logo-napilota.webp', width: 320, height: 96, heightClass: 'h-10 md:h-12', filter: 'brightness(0)' },
+  { alt: 'Autokorfu', src: '/assets/projects/loga-firm/logo-autokorfu.webp', width: 335, height: 80, heightClass: 'h-8 md:h-10', filter: 'brightness(0)' },
+  { alt: 'StepArd', src: '/assets/projects/loga-firm/StepArd-logo-czarne.webp', width: 271, height: 72, heightClass: 'h-7 md:h-9', filter: 'brightness(0)' },
+  { alt: 'Finish Masters', src: '/assets/projects/loga-firm/finish-masters-logo-kolor.webp', width: 210, height: 72, heightClass: 'h-7 md:h-9', filter: 'brightness(0)' },
+  { alt: 'Izoluk', src: '/assets/projects/loga-firm/izoluk-logo-firmy.webp', width: 348, height: 104, heightClass: 'h-11 md:h-13', filter: 'brightness(0)' },
+  { alt: 'KM2', src: '/assets/projects/loga-firm/logo-km2-czarne-pelne.webp', width: 89, height: 64, heightClass: 'h-6 md:h-8', filter: 'brightness(0)' },
+  { alt: 'LuxNova', src: '/assets/projects/loga-firm/luxnova-logo.webp', width: 256, height: 112, heightClass: 'h-12 md:h-14', filter: 'brightness(0)' },
+  { alt: 'Eliza Wrońska', src: '/assets/projects/loga-firm/eliza-wronska-logo.webp', width: 213, height: 112, heightClass: 'h-12 md:h-14', filter: 'brightness(0)' },
+  { alt: 'NaPilota', src: '/assets/projects/loga-firm/logo-napilota.webp', width: 203, height: 96, heightClass: 'h-10 md:h-12', filter: 'brightness(0)' },
 ];
 
 export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps) {

@@ -1,10 +1,6 @@
 import type { ReactNode } from 'react';
 import type { Locale } from '@/types/locale';
 
-// ---------------------------------------------------------------------------
-// Badge
-// ---------------------------------------------------------------------------
-
 export type BadgeVariant = 'default' | 'selected' | 'success' | 'error' | 'neutral' | 'dark' | 'warning' | 'info' | 'tech';
 export type BadgeSize = 'sm' | 'md' | 'lg';
 export type BadgeElement = 'span' | 'button' | 'label' | 'a';
@@ -26,10 +22,6 @@ export interface BadgeProps {
   rel?: string;
   disabled?: boolean;
 }
-
-// ---------------------------------------------------------------------------
-// SectionPrices
-// ---------------------------------------------------------------------------
 
 export type SectionPricesPlan = {
   name: string;
@@ -60,10 +52,6 @@ export type SectionPricesProps = {
   legalNote?: string;
 };
 
-// ---------------------------------------------------------------------------
-// AdSense
-// ---------------------------------------------------------------------------
-
 export type AdVariant = 'tool-banner' | 'responsive' | 'in-article' | 'in-article-new' | 'autorelaxed' | 'vertical';
 
 export interface AdSenseProps {
@@ -72,10 +60,6 @@ export interface AdSenseProps {
   className?: string;
   locale?: string;
 }
-
-// ---------------------------------------------------------------------------
-// Breadcrumbs
-// ---------------------------------------------------------------------------
 
 export type Crumb = { href: string; label: string };
 
@@ -90,10 +74,6 @@ export type BreadcrumbsProps = {
   locale?: Locale;
 };
 
-// ---------------------------------------------------------------------------
-// FeatureGrid
-// ---------------------------------------------------------------------------
-
 export type FeatureItem = {
   title: string;
   description?: ReactNode;
@@ -101,14 +81,6 @@ export type FeatureItem = {
   icon?: ReactNode;
 };
 
-// ---------------------------------------------------------------------------
-// Gap
-// ---------------------------------------------------------------------------
-
 export type GapSize = 'xs' | 'sm' | 'md' | 'xl';
-
-// ---------------------------------------------------------------------------
-// Calculator
-// ---------------------------------------------------------------------------
 
 export type Selections = Record<number, string[]>;

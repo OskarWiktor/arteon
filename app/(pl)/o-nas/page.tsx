@@ -13,6 +13,7 @@ import Link from 'next/link';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getAboutAlternates } from '@/lib/i18n/pages/about';
 import LogoCarousel from '@/components/sections/LogoCarousel';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 const profilePageJsonLd = {
   '@context': 'https://schema.org',
@@ -53,7 +54,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }} />
+      <JsonLd schema={profilePageJsonLd} id="schema-about-profilepage" />
       <HeroBanner title="O nas" description="Arteon - strategia, kreacja i widoczność, które przynoszą rezultaty" backgroundImage="/assets/arteon-logo-on-mockup.webp" overlay="black" />
 
       <BenefitBelt variant="carousel" />

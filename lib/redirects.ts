@@ -1,18 +1,3 @@
-/**
- * Centralna konfiguracja wszystkich redirectów 301
- *
- * Ten plik zawiera wszystkie redirecty używane w projekcie:
- * - Legacy URL-e (angielskie ścieżki, stare slugi)
- * - Zmiany URL-i edukacji (przeniesienia kategorii)
- * - Zmiany URL-i realizacji (nowe slugi)
- *
- * Redirecty są obsługiwane przez middleware.ts (edge, przed renderowaniem).
- * Format: { staryUrl: nowyUrl }
- */
-
-/**
- * Redirecty dla legacy URL-i (angielskie ścieżki, stare struktury)
- */
 export const LEGACY_REDIRECTS: Record<string, string> = {
   // Angielskie URL-e usług
   '/services': '/uslugi',

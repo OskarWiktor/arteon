@@ -47,6 +47,7 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import ShareBlock from '@/components/sections/ShareBlock';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
+import { JsonLd } from '@/components/seo/JsonLd';
 import SectionMetrics from '@/components/ui/sections/SectionMetrics';
 import SectionFeatureList from '@/components/ui/sections/SectionFeatureList';
 import SectionProcess from '@/components/ui/sections/SectionProcess';
@@ -683,7 +684,7 @@ export default async function ProjectPage({ params }: PageProps) {
             </>
           ) : null}
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(project)) }} />
+          <JsonLd schema={jsonLd(project)} id={`schema-realizacja-${project.slug}`} />
         </div>
 
         <div>

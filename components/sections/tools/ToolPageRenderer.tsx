@@ -1,6 +1,5 @@
 import { Fragment, type ReactNode } from 'react';
 import type { Metadata } from 'next';
-import Script from 'next/script';
 import type { ToolPageData, ToolContentBlock } from '@/types/tool-page';
 import type { Locale, DesktopOnlyUi } from '@/types/locale';
 import type { ToolItemKey } from '@/types/tools/common';
@@ -29,6 +28,7 @@ import { DESKTOP_ONLY_UI } from '@/lib/i18n/locales';
 import ToolContactForm from './ToolContactForm';
 import RelatedConverters from './RelatedConverters';
 import RelatedUnitConverters from './RelatedUnitConverters';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 const AD_SECTION_INTERVAL = 6;
 const AD_SKIP_AFTER = new Set(['faq', 'toolsCarousel']);
@@ -203,7 +203,7 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
 
   return (
     <>
-      <Script id={`ld-json-${data.toolKey}-${data.locale}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchemas) }} />
+      <JsonLd schema={combinedSchemas} id={`ld-json-${data.toolKey}-${data.locale}`} />
 
       <HeroBanner title={data.hero.title} description={data.hero.description} overlay="black" backgroundImage={data.hero.backgroundImage} size="compact" />
 

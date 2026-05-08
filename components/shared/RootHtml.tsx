@@ -6,6 +6,7 @@ import { Suspense } from 'react';
 
 import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 import '@/app/globals.css';
@@ -165,9 +166,9 @@ export default function RootHtml({ lang, children }: RootHtmlProps) {
         {/* AdSense + Google CMP (consent dialog) — stays in <head> for fastest ad loading */}
         {ADSENSE_CLIENT && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossOrigin="anonymous" />}
 
-        <script id="schema-org-organization" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildOrgJsonLd(lang)) }} />
+        <JsonLd schema={buildOrgJsonLd(lang)} id="schema-org-organization" />
 
-        <script id="schema-org-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+        <JsonLd schema={websiteJsonLd} id="schema-org-website" />
       </head>
 
       <body className="font-sans antialiased">

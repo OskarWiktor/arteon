@@ -1,4 +1,4 @@
-export type TestimonialSource = 'google' | 'oferteo' | 'clutch' | 'linkedin' | 'mail' | 'other';
+export type TestimonialSource = 'google' | 'oferteo' | 'fixly' | 'linkedin' | 'mail' | 'other';
 
 export interface Testimonial {
   id: string;

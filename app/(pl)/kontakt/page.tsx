@@ -7,6 +7,7 @@ import { RiPhoneLine, RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { getContactAlternates } from '@/lib/i18n/pages/contact';
 import BenefitBelt from '@/components/sections/BenefitBelt';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 export const metadata = {
   title: 'Kontakt - wycena Twojego planu - Arteon',
@@ -74,8 +75,8 @@ function ContactSchemas() {
 
   return (
     <>
-      <script id="schema-breadcrumbs" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
-      <script id="schema-howto-contact" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToContact) }} />
+      <JsonLd schema={breadcrumbs} id="schema-breadcrumbs" />
+      <JsonLd schema={howToContact} id="schema-howto-contact" />
     </>
   );
 }

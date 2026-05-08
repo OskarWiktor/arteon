@@ -19,6 +19,7 @@ import type { Testimonial } from '@/types/testimonial';
 import { getAllArticlePreviews } from '@/lib/blogDataService';
 import LazyToolsCarousel from '@/components/sections/tools/LazyToolsCarousel';
 import LogoCarousel from '@/components/sections/LogoCarousel';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 export const metadata = {
   title: 'Strony internetowe, sklepy, treści i projekty graficzne - Arteon',
@@ -108,8 +109,8 @@ function HomePageSchemas() {
 
   return (
     <>
-      <script id="schema-aggregate-rating" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRating) }} />
-      <script id="schema-howto-process" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howTo) }} />
+      <JsonLd schema={aggregateRating} id="schema-aggregate-rating" />
+      <JsonLd schema={howTo} id="schema-howto-process" />
     </>
   );
 }

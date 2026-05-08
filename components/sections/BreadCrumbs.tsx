@@ -2,6 +2,7 @@ import Wrapper from '../ui/Wrapper';
 import AppLink from '../ui/Link';
 import { RiHomeLine } from 'react-icons/ri';
 import { BREADCRUMBS_UI } from '@/lib/i18n/locales';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 import type { Crumb, BreadcrumbsProps } from '@/types/ui';
 export type { Crumb, BreadcrumbsProps } from '@/types/ui';
@@ -57,7 +58,7 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
           })}
         </ol>
 
-        {includeJsonLd && jsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />}
+        {includeJsonLd && jsonLd && <JsonLd schema={jsonLd} />}
       </nav>
     </Wrapper>
   );

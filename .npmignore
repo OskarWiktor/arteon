@@ -1,3 +1,0 @@
-# Prevent publishing internal docs if package is ever published
-**/*.md
-*.md

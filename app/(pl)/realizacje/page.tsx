@@ -7,6 +7,7 @@ import Wrapper from '@/components/ui/Wrapper';
 import projectsData from '@/data/pl/projects.json';
 import type { ProjectPreview } from '@/types/project';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 type ProjectsData = {
   projects: ProjectPreview[];
@@ -83,7 +84,7 @@ export default function ProjectsPage() {
         overlay="black"
       />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <JsonLd schema={schema} id="schema-realizacje-collection" />
     </>
   );
 }

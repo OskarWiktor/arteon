@@ -4,6 +4,7 @@ import AppLink from '../ui/Link';
 import Image from 'next/image';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { getFooterTools } from '@/lib/i18n/tool-registry';
+import { JsonLd } from '@/components/seo/JsonLd';
 import type { Locale, FooterUi, LegalLink } from '@/types/locale';
 
 const ORG = {
@@ -34,7 +35,7 @@ function FooterSchemas() {
     ],
   };
 
-  return <script id="schema-professional-service-footer" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalService) }} />;
+  return <JsonLd schema={professionalService} id="schema-professional-service-footer" />;
 }
 
 const offerLinksOne = [

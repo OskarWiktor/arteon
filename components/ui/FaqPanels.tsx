@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import SectionHeader from './typography/SectionHeader';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 interface FaqPanelsItem {
   question: string;
@@ -81,7 +82,7 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
         ))}
       </div>
 
-      {faqJsonLd && <script id="faq-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
+      {faqJsonLd && <JsonLd schema={faqJsonLd} id="faq-jsonld" />}
     </section>
   );
 }

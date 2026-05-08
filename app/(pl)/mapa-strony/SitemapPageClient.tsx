@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from '@/components/ui/Wrapper';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 import type { NavItem } from '@/types/sitemap';
 
@@ -44,7 +45,7 @@ function SitemapSection({ title, items }: { title: string; items: NavItem[] }) {
 export default function SitemapPageClient({ services, portfolioIndex, portfolioItems, blogArticleItems, tools, infoPages, jsonLd }: SitemapPageClientProps) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd schema={jsonLd} id="schema-sitemap-client" />
       <Wrapper className="py-12">
         <nav aria-label="okruszki" className="mb-6">
           <ol className="flex gap-2 text-sm">

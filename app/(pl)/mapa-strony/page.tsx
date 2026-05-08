@@ -10,6 +10,7 @@ import { slugify } from '@/utils/slugify';
 import { siteUrl } from '@/utils/absoluteUrl';
 import type { ArticlePreview } from '@/types/article';
 import projectsData from '@/data/pl/projects.json';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
   title: 'Mapa strony | Arteon',
@@ -200,7 +201,7 @@ export default function SitemapPage() {
 
         <Gap size="sm" />
 
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <JsonLd schema={jsonLd} id="schema-sitemap-itemlist" />
       </Wrapper>
     </>
   );

@@ -42,8 +42,12 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   trailingSlash: false,
   poweredByHeader: false,
+  reactStrictMode: true,
   // Cache Components (Next.js 16.1.6 - top-level)
   cacheComponents: true,
+  // React Compiler — auto-memoization, removes need for most useMemo/useCallback/memo.
+  // Promoted out of experimental in Next 16; top-level option.
+  reactCompiler: true,
   experimental: {
     // Build performance optimizations (Next.js 16.1.6)
     optimizePackageImports: [

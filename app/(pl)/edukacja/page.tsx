@@ -6,6 +6,7 @@ import ArticlesList from '@/components/sections/blog/ArticlesList';
 import FilterBar from '@/components/sections/blog/FilterBar';
 import { getAllArticlePreviews, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blogDataService';
 import { siteUrl } from '@/utils/absoluteUrl';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
   title: 'Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym - Arteon',
@@ -62,7 +63,7 @@ export default function EdukacjaPage() {
         <Gap size="sm" />
       </Wrapper>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <JsonLd schema={schema} id="schema-edukacja-collection" />
     </>
   );
 }

@@ -21,6 +21,7 @@ import ShareBlock from '@/components/sections/ShareBlock';
 import ColorPalette from '@/components/ui/ColorPalette';
 import AbbrTouchHandler from '@/components/ui/AbbrTouchHandler';
 import AdSense from '@/components/ui/AdSense';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 const GAP: 'sm' | 'xs' | 'md' = 'sm';
 
@@ -368,7 +369,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ catego
             </>
           ) : null}
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(article)) }} />
+          <JsonLd schema={jsonLd(article)} id={`schema-article-${article.slug}`} />
         </div>
         <div>
           <ShareBlock url={url} title={shareTitle} className="mb-12" /> <TableOfContents rootSelector="#article-root" size="large" levels="h2" />

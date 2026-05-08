@@ -1,9 +1,5 @@
 import type { IconType } from 'react-icons';
 
-// ---------------------------------------------------------------------------
-// PL Header navigation
-// ---------------------------------------------------------------------------
-
 export type HeaderNavItemKey = 'realizacje' | 'uslugi' | 'oNas' | 'edukacja' | 'narzedzia' | 'kontakt';
 
 export type HeaderNavItem = {
@@ -13,10 +9,6 @@ export type HeaderNavItem = {
   exact?: boolean;
 };
 
-// ---------------------------------------------------------------------------
-// About submenu
-// ---------------------------------------------------------------------------
-
 export type AboutItemKey = 'faq' | 'joinNetwork';
 
 export type AboutNavItem = {
@@ -25,10 +17,6 @@ export type AboutNavItem = {
   title: string;
   icon?: IconType;
 };
-
-// ---------------------------------------------------------------------------
-// Offer (usługi) navigation
-// ---------------------------------------------------------------------------
 
 export type OfferSectionKey = 'witryny' | 'marketing' | 'grafika' | 'tresc';
 
@@ -71,10 +59,6 @@ export type OfferSection = {
   items: OfferSectionItem[];
 };
 
-// ---------------------------------------------------------------------------
-// Legal links
-// ---------------------------------------------------------------------------
-
 export type LegalLinkKey = 'regulamin' | 'privacy';
 
 export type LegalLink = {
@@ -85,10 +69,6 @@ export type LegalLink = {
 
 export type LegalLinkPL = LegalLink;
 export type LegalLinkEN = LegalLink;
-
-// ---------------------------------------------------------------------------
-// EN Header navigation
-// ---------------------------------------------------------------------------
 
 export type HeaderNavItemKeyEN = 'tools';
 

@@ -1,14 +1,5 @@
 import type { ProjectCTA } from './project';
 
-/**
- * Typ artykułu blogowego
- *
- * ZASADY ZERO DOPISAŃ (docs/INSTRUCTIONS.md):
- * - Każda liczba/statystyka → źródło (nazwa, rok, URL)
- * - Zgodność z Omnibus (ceny), RODO (prywatność), WCAG (dostępność)
- * - Przykłady hipotetyczne muszą być oznaczone
- * - dateModified aktualizowane przy każdej zmianie treści
- */
 export type Article = {
   slug: string;
   title: string;
