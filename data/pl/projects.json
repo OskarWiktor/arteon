@@ -490,12 +490,12 @@
       "title": "Karta koktajli dla baru Nocturna",
       "short": "Ekskluzywna karta koktajli dla baru Nocturna - nastrojowego cocktail baru w klimacie speakeasy.",
       "description": "<p>Projekt koncepcyjnej <strong>karty koktajli</strong> dla Nocturna - ekskluzywnego cocktail baru, w którym estetyka, światło i smak tworzą spójną atmosferę. Celem było stworzenie <strong>menu premium</strong>: czytelnego, klimatycznego i budującego charakter miejsca przy pierwszym spojrzeniu.</p><br /><p>Karta opiera się na połączeniu głębokiej czerwieni i <strong>beżowo-złotych akcentów</strong>, inspirowanych światłem świec i klasycznymi barami typu speakeasy. Delikatne <strong>ilustracje drinków</strong> podkreślają rzemieślniczy charakter lokalu.</p><br /><p>W menu znalazły się autorskie koktajle, klasyki w reinterpretacjach oraz sekcja low-alcohol. Projekt przygotowaliśmy w pełnej rozdzielczości i w dwóch wariantach kolorystycznych. Całość prezentujemy na <strong>profesjonalnym mockupie</strong>.</p>",
-      "image": "/assets/projects/nocturna/nocturna-menu-mockup.png",
+      "image": "/assets/projects/nocturna/nocturna-menu-mockup.webp",
       "category": ["grafika"],
       "contentBlocks": [
         {
           "type": "image",
-          "src": "/assets/projects/nocturna/nocturna-menu-mockup.png",
+          "src": "/assets/projects/nocturna/nocturna-menu-mockup.webp",
           "alt": "Ekskluzywna karta koktajli Nocturna - mockup projektu graficznego",
           "ratio": "16/9",
           "breakAfter": true
@@ -552,7 +552,7 @@
         "description": "Zaprojektujemy eleganckie menu dopasowane do charakteru lokalu - wraz z ilustracjami i plikami do druku.",
         "btnTwo": "Sprawdź ofertę projektów menu",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-menu-restauracji",
-        "backgroundImage": "/assets/projects/nocturna/nocturna-menu-mockup.png",
+        "backgroundImage": "/assets/projects/nocturna/nocturna-menu-mockup.webp",
         "overlay": "black"
       },
       "seo": {

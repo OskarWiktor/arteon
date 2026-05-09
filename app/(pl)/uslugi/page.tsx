@@ -354,7 +354,7 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/nocturna/nocturna-menu-mockup.png',
+              topImageSrc: '/assets/projects/nocturna/nocturna-menu-mockup.webp',
               topImageAlt: 'Ekskluzywna karta koktajli dla baru Nocturna - realizacja Arteon',
               title: 'Projekt menu restauracji',
               description: (

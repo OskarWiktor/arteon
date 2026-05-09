@@ -31,7 +31,7 @@ export const metadata = {
     description: 'Projektujemy menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/nocturna/nocturna-menu-mockup.png', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/nocturna/nocturna-menu-mockup.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -62,7 +62,7 @@ export default function OfferDesignMenuPage() {
         secondaryCtaLabel="Bezpłatna wycena"
         secondaryCtaLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/projects/nocturna/nocturna-menu-mockup.png"
+        backgroundImage="/assets/projects/nocturna/nocturna-menu-mockup.webp"
         overlay="black"
       />
 
@@ -241,7 +241,7 @@ export default function OfferDesignMenuPage() {
         <SectionContactForm
           title="Sprawdź koszt realizacji menu restauracji"
           description="Napisz jakie dania są w ofercie, czy posiadasz logo oraz zdjęcia dań i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/nocturna/nocturna-menu-mockup.png"
+          imageSrc="/assets/projects/nocturna/nocturna-menu-mockup.webp"
           imageAlt="Realizacja projektu menu - bar Nocturna"
           defaultSubject="Projekt menu restauracji"
         />
@@ -325,7 +325,7 @@ export default function OfferDesignMenuPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/nocturna/nocturna-menu-mockup.png"
+        backgroundImage="/assets/projects/nocturna/nocturna-menu-mockup.webp"
         overlay="black"
       />
 

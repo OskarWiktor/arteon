@@ -161,7 +161,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
               <label className="text-mid text-sm font-medium whitespace-nowrap">{extraLabel}:</label>
               <input
                 type="number"
-                className="w-24 rounded-md border border-neutral-200 bg-neutral-50 px-3 py-1.5 text-center font-mono text-sm transition outline-none focus:border-neutral-300 focus:bg-white"
+                className="!w-24 !h-7 rounded-md border border-neutral-200 bg-neutral-50 !px-3 !py-1.5 text-center font-mono text-sm transition outline-none focus:border-neutral-300 focus:bg-white"
                 value={extraValue}
                 onChange={(e) => setExtraValue(parseFloat(e.target.value) || 0)}
                 min={config.extraField.min}
