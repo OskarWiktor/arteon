@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useRef, useState, type FormEvent } from 'react';
+import { useRef, useState, type FormEvent } from 'react';
 
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/buttons/Button';
@@ -93,146 +93,135 @@ export default function ImageToPdfConverter({ sourceFormat, acceptMime }: ImageT
 
   const sourceLabel = FORMAT_LABELS[sourceFormat];
 
-  const handleAddFiles = useCallback(
-    (fileList: FileList | null) => {
-      if (!fileList || fileList.length === 0) return;
-      setGlobalError(null);
-      const all = Array.from(fileList);
-      const mimeList = acceptMime.split(',').map((m) => m.trim());
-      const extMap: Record<string, string[]> = {
-        'image/jpeg': ['.jpg', '.jpeg'],
-        'image/png': ['.png'],
-        'image/webp': ['.webp'],
-        'image/bmp': ['.bmp'],
-        'image/x-ms-bmp': ['.bmp'],
-        'image/x-bmp': ['.bmp'],
-        'image/svg+xml': ['.svg'],
-        'image/heic': ['.heic'],
-        'image/heif': ['.heif'],
-        'image/tiff': ['.tiff', '.tif'],
-      };
-      const directExts = mimeList.filter((m) => m.startsWith('.')).map((m) => m.toLowerCase());
-      const allowedExts = [...directExts, ...mimeList.filter((m) => !m.startsWith('.')).flatMap((m) => extMap[m] ?? [])];
-      const mimeTypes = mimeList.filter((m) => !m.startsWith('.'));
-      const valid = all.filter((f) => {
-        if (f.type && mimeTypes.some((m) => f.type === m)) return true;
-        return allowedExts.some((ext) => f.name.toLowerCase().endsWith(ext));
-      });
-      if (valid.length < all.length) {
-        setGlobalError(t.errorWrongFormat.replace('{{format}}', sourceLabel));
-      }
-      if (valid.length > 0) {
-        const entries: PdfQueueFile[] = valid.map((f) => ({
-          id: `pdf-${++fileIdCounter}`,
-          file: f,
-          status: 'idle' as const,
-          previewUrl: null,
-          errorMessage: null,
-        }));
-        setFiles((prev) => [...prev, ...entries]);
-      }
-    },
-    [acceptMime, sourceLabel, t],
-  );
+  const handleAddFiles = (fileList: FileList | null) => {
+    if (!fileList || fileList.length === 0) return;
+    setGlobalError(null);
+    const all = Array.from(fileList);
+    const mimeList = acceptMime.split(',').map((m) => m.trim());
+    const extMap: Record<string, string[]> = {
+      'image/jpeg': ['.jpg', '.jpeg'],
+      'image/png': ['.png'],
+      'image/webp': ['.webp'],
+      'image/bmp': ['.bmp'],
+      'image/x-ms-bmp': ['.bmp'],
+      'image/x-bmp': ['.bmp'],
+      'image/svg+xml': ['.svg'],
+      'image/heic': ['.heic'],
+      'image/heif': ['.heif'],
+      'image/tiff': ['.tiff', '.tif'],
+    };
+    const directExts = mimeList.filter((m) => m.startsWith('.')).map((m) => m.toLowerCase());
+    const allowedExts = [...directExts, ...mimeList.filter((m) => !m.startsWith('.')).flatMap((m) => extMap[m] ?? [])];
+    const mimeTypes = mimeList.filter((m) => !m.startsWith('.'));
+    const valid = all.filter((f) => {
+      if (f.type && mimeTypes.some((m) => f.type === m)) return true;
+      return allowedExts.some((ext) => f.name.toLowerCase().endsWith(ext));
+    });
+    if (valid.length < all.length) {
+      setGlobalError(t.errorWrongFormat.replace('{{format}}', sourceLabel));
+    }
+    if (valid.length > 0) {
+      const entries: PdfQueueFile[] = valid.map((f) => ({
+        id: `pdf-${++fileIdCounter}`,
+        file: f,
+        status: 'idle' as const,
+        previewUrl: null,
+        errorMessage: null,
+      }));
+      setFiles((prev) => [...prev, ...entries]);
+    }
+  };
 
-  const removeFile = useCallback((id: string) => {
+  const removeFile = (id: string) => {
     setFiles((prev) => {
       const file = prev.find((f) => f.id === id);
       if (file?.previewUrl) URL.revokeObjectURL(file.previewUrl);
       return prev.filter((f) => f.id !== id);
     });
-  }, []);
+  };
 
-  const clearAll = useCallback(() => {
+  const clearAll = () => {
     setFiles((prev) => {
       prev.forEach((f) => {
         if (f.previewUrl) URL.revokeObjectURL(f.previewUrl);
       });
       return [];
     });
-  }, []);
+  };
 
-  const handleConvert = useCallback(
-    async (e: FormEvent) => {
-      e.preventDefault();
-      if (!files.length) {
-        setGlobalError(t.errorNoFiles.replace('{{format}}', sourceLabel));
-        return;
-      }
-      setGlobalError(null);
-      setIsConverting(true);
+  const handleConvert = async (e: FormEvent) => {
+    e.preventDefault();
+    if (!files.length) {
+      setGlobalError(t.errorNoFiles.replace('{{format}}', sourceLabel));
+      return;
+    }
+    setGlobalError(null);
+    setIsConverting(true);
 
-      try {
-        const { default: jsPDF } = await import('jspdf');
+    try {
+      const { default: jsPDF } = await import('jspdf');
 
-        const pending = filesRef.current.filter((f) => f.status === 'idle' || f.status === 'error');
+      const pending = filesRef.current.filter((f) => f.status === 'idle' || f.status === 'error');
 
-        for (const entry of pending) {
-          if (!filesRef.current.some((f) => f.id === entry.id)) continue;
+      for (const entry of pending) {
+        if (!filesRef.current.some((f) => f.id === entry.id)) continue;
 
-          setFiles((prev) => prev.map((f) => (f.id === entry.id ? { ...f, status: 'processing' as const, errorMessage: null } : f)));
+        setFiles((prev) => prev.map((f) => (f.id === entry.id ? { ...f, status: 'processing' as const, errorMessage: null } : f)));
 
-          try {
-            const canvas = await decodeToCanvas(entry.file, sourceFormat);
-            const imgW = canvas.width;
-            const imgH = canvas.height;
+        try {
+          const canvas = await decodeToCanvas(entry.file, sourceFormat);
+          const imgW = canvas.width;
+          const imgH = canvas.height;
 
-            const orientation = imgW > imgH ? 'landscape' : 'portrait';
-            const pdf = new jsPDF({ orientation, unit: 'pt', format: 'a4' });
-            const pageW = pdf.internal.pageSize.getWidth();
-            const pageH = pdf.internal.pageSize.getHeight();
+          const orientation = imgW > imgH ? 'landscape' : 'portrait';
+          const pdf = new jsPDF({ orientation, unit: 'pt', format: 'a4' });
+          const pageW = pdf.internal.pageSize.getWidth();
+          const pageH = pdf.internal.pageSize.getHeight();
 
-            const margin = 20;
-            const maxW = pageW - margin * 2;
-            const maxH = pageH - margin * 2;
-            const scale = Math.min(maxW / imgW, maxH / imgH, 1);
-            const drawW = imgW * scale;
-            const drawH = imgH * scale;
-            const offsetX = (pageW - drawW) / 2;
-            const offsetY = (pageH - drawH) / 2;
+          const margin = 20;
+          const maxW = pageW - margin * 2;
+          const maxH = pageH - margin * 2;
+          const scale = Math.min(maxW / imgW, maxH / imgH, 1);
+          const drawW = imgW * scale;
+          const drawH = imgH * scale;
+          const offsetX = (pageW - drawW) / 2;
+          const offsetY = (pageH - drawH) / 2;
 
-            const dataUrl = canvas.toDataURL('image/jpeg', 0.92);
-            pdf.addImage(dataUrl, 'JPEG', offsetX, offsetY, drawW, drawH);
+          const dataUrl = canvas.toDataURL('image/jpeg', 0.92);
+          pdf.addImage(dataUrl, 'JPEG', offsetX, offsetY, drawW, drawH);
 
-            const pdfBlob = pdf.output('blob');
+          const pdfBlob = pdf.output('blob');
 
-            setFiles((prev) => prev.map((f) => (f.id === entry.id ? { ...f, status: 'done' as const, previewUrl: URL.createObjectURL(pdfBlob) } : f)));
-          } catch (err) {
-            setFiles((prev) => prev.map((f) => (f.id === entry.id ? { ...f, status: 'error' as const, errorMessage: err instanceof Error ? err.message : t.conversionFailed } : f)));
-          }
+          setFiles((prev) => prev.map((f) => (f.id === entry.id ? { ...f, status: 'done' as const, previewUrl: URL.createObjectURL(pdfBlob) } : f)));
+        } catch (err) {
+          setFiles((prev) => prev.map((f) => (f.id === entry.id ? { ...f, status: 'error' as const, errorMessage: err instanceof Error ? err.message : t.conversionFailed } : f)));
         }
-      } catch (err) {
-        setGlobalError(err instanceof Error ? err.message : t.failedToLoadLibrary);
       }
+    } catch (err) {
+      setGlobalError(err instanceof Error ? err.message : t.failedToLoadLibrary);
+    }
 
-      setIsConverting(false);
-    },
-    [files, sourceFormat, sourceLabel, t],
-  );
+    setIsConverting(false);
+  };
 
-  const handleDownloadSingle = useCallback(
-    (id: string) => {
-      const file = files.find((f) => f.id === id);
-      if (!file?.previewUrl) return;
-      // Convert blob URL back to blob and download
-      fetch(file.previewUrl)
-        .then((r) => r.blob())
-        .then((blob) => {
-          const baseName = file.file.name.replace(/\.[^.]+$/, '');
-          downloadBlob(blob, `${baseName}.pdf`);
-        })
-        .catch((err) => {
-          console.error('Download failed:', err);
-          // Fallback: try direct download using the blob URL
-          if (file.previewUrl) {
-            downloadFromUrl(file.previewUrl, `${file.file.name.replace(/\.[^.]+$/, '')}.pdf`);
-          }
-        });
-    },
-    [files],
-  );
+  const handleDownloadSingle = (id: string) => {
+    const file = files.find((f) => f.id === id);
+    if (!file?.previewUrl) return;
+    fetch(file.previewUrl)
+      .then((r) => r.blob())
+      .then((blob) => {
+        const baseName = file.file.name.replace(/\.[^.]+$/, '');
+        downloadBlob(blob, `${baseName}.pdf`);
+      })
+      .catch((err) => {
+        console.error('Download failed:', err);
+        if (file.previewUrl) {
+          downloadFromUrl(file.previewUrl, `${file.file.name.replace(/\.[^.]+$/, '')}.pdf`);
+        }
+      });
+  };
 
-  const handleDownloadAll = useCallback(() => {
+  const handleDownloadAll = () => {
     const done = files.filter((f) => f.status === 'done' && f.previewUrl);
     for (const file of done) {
       fetch(file.previewUrl!)
@@ -243,13 +232,12 @@ export default function ImageToPdfConverter({ sourceFormat, acceptMime }: ImageT
         })
         .catch((err) => {
           console.error('Download failed:', err);
-          // Fallback: try direct download using the blob URL
           if (file.previewUrl) {
             downloadFromUrl(file.previewUrl, `${file.file.name.replace(/\.[^.]+$/, '')}.pdf`);
           }
         });
     }
-  }, [files]);
+  };
 
   const total = files.length;
   const completed = files.filter((f) => f.status === 'done' || f.status === 'error').length;

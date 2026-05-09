@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useState, type Dispatch, type SetStateAction } from 'react';
+import { useState, type Dispatch, type SetStateAction } from 'react';
 import { getWebpFileName } from '@/lib/tools/image/webp';
 import { buildWebpConversionReportCsv } from '@/lib/tools/image/webpReport';
 import type { WebpQueueItem } from '@/lib/tools/image/webpQueue';
@@ -19,7 +19,7 @@ export function useWebpDownloads(options: UseWebpDownloadsOptions) {
   const [isZipping, setIsZipping] = useState(false);
   const [zipError, setZipError] = useState<string | null>(null);
 
-  const handleDownloadAll = useCallback(async () => {
+  const handleDownloadAll = async () => {
     const ready = options.files.filter((f) => f.status === 'done' && f.downloadUrl);
     if (!ready.length) return;
 
@@ -42,10 +42,9 @@ export function useWebpDownloads(options: UseWebpDownloadsOptions) {
 
       await sleep(150);
     }
-  }, [options]);
+  };
 
-  const handleDownloadZip = useCallback(
-    async ({ includeCsvReport }: { includeCsvReport: boolean }) => {
+  const handleDownloadZip = async ({ includeCsvReport }: { includeCsvReport: boolean }) => {
       const ready = options.files.filter((f) => f.status === 'done' && f.downloadUrl);
       if (!ready.length) return;
 
@@ -100,12 +99,9 @@ export function useWebpDownloads(options: UseWebpDownloadsOptions) {
       } finally {
         setIsZipping(false);
       }
-    },
-    [options],
-  );
+    };
 
-  const handleDownloadSingle = useCallback(
-    (id: string) => {
+  const handleDownloadSingle = (id: string) => {
       const item = options.files.find((f) => f.id === id);
       if (!item || !item.downloadUrl) return;
 
@@ -122,9 +118,7 @@ export function useWebpDownloads(options: UseWebpDownloadsOptions) {
             : f,
         ),
       );
-    },
-    [options],
-  );
+    };
 
   return { handleDownloadAll, handleDownloadZip, handleDownloadSingle, isZipping, zipError, setZipError };
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useRef, useState, type Dispatch, type PointerEvent as ReactPointerEvent, type RefObject, type SetStateAction } from 'react';
+import { useRef, useState, type Dispatch, type PointerEvent as ReactPointerEvent, type RefObject, type SetStateAction } from 'react';
 import { getCropRect } from '@/lib/tools/image/cropMath';
 import type { ActiveTool, Dims } from '@/types/tools/image';
 
@@ -54,13 +54,12 @@ export function useCropDrag<State extends CropStateLike>(options: UseCropDragOpt
     corner: null,
   });
 
-  const endDrag = useCallback(() => {
+  const endDrag = () => {
     dragRef.current.mode = 'none';
     setIsDragging(false);
-  }, []);
+  };
 
-  const startMoveDrag = useCallback(
-    (e: ReactPointerEvent<HTMLDivElement>) => {
+  const startMoveDrag = (e: ReactPointerEvent<HTMLDivElement>) => {
       if (!imageUrl || !previewRef.current) return;
 
       e.currentTarget.setPointerCapture(e.pointerId);
@@ -75,12 +74,9 @@ export function useCropDrag<State extends CropStateLike>(options: UseCropDragOpt
 
       setIsDragging(true);
       setActiveTool('position');
-    },
-    [cropX, cropY, cropZoom, imageUrl, previewRef, setActiveTool],
-  );
+    };
 
-  const startResizeDrag = useCallback(
-    (e: ReactPointerEvent<HTMLDivElement>, corner: 'tl' | 'tr' | 'bl' | 'br') => {
+  const startResizeDrag = (e: ReactPointerEvent<HTMLDivElement>, corner: 'tl' | 'tr' | 'bl' | 'br') => {
       if (!imageUrl || !previewRef.current || !originalWidth || !originalHeight) {
         return;
       }
@@ -126,12 +122,9 @@ export function useCropDrag<State extends CropStateLike>(options: UseCropDragOpt
 
       setIsDragging(true);
       setActiveTool('zoom');
-    },
-    [cropX, cropY, cropZoom, effectiveDims, imageUrl, originalHeight, originalWidth, previewRef, setActiveTool],
-  );
+    };
 
-  const handlePointerMove = useCallback(
-    (e: ReactPointerEvent<HTMLDivElement>) => {
+  const handlePointerMove = (e: ReactPointerEvent<HTMLDivElement>) => {
       if (dragRef.current.mode === 'none' || !previewRef.current) return;
 
       if (!originalWidth || !originalHeight) return;
@@ -266,25 +259,20 @@ export function useCropDrag<State extends CropStateLike>(options: UseCropDragOpt
           cropZoom: zoom,
         }));
       }
-    },
-    [cropZoom, effectiveDims, originalHeight, originalWidth, previewRef, setState],
-  );
+    };
 
-  const handlePointerUp = useCallback(
-    (e: ReactPointerEvent<HTMLDivElement>) => {
+  const handlePointerUp = (e: ReactPointerEvent<HTMLDivElement>) => {
       endDrag();
       try {
         e.currentTarget.releasePointerCapture(e.pointerId);
       } catch {
         // ignore
       }
-    },
-    [endDrag],
-  );
+    };
 
-  const handlePointerLeave = useCallback(() => {
+  const handlePointerLeave = () => {
     endDrag();
-  }, [endDrag]);
+  };
 
   return {
     isDragging,

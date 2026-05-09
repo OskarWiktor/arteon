@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import Button from '@/components/ui/buttons/Button';
@@ -24,19 +24,16 @@ export default function ConfirmModal({ isOpen, onClose, onConfirm, title, descri
     setMounted(true);
   }, []);
 
-  const handleBackdropClick = useCallback(
-    (e: React.MouseEvent) => {
+  const handleBackdropClick = (e: React.MouseEvent) => {
       if (e.target === e.currentTarget) {
         onClose();
       }
-    },
-    [onClose],
-  );
+    };
 
-  const handleConfirm = useCallback(() => {
+  const handleConfirm = () => {
     onConfirm();
     onClose();
-  }, [onConfirm, onClose]);
+  };
 
   if (!mounted) return null;
 

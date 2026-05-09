@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useRef, useEffect, useCallback, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { RiStarFill, RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
 import { CarouselDots } from '@/components/ui/carousel/CarouselDots';
 import { CarouselNavButtons } from '@/components/ui/carousel/CarouselNavButtons';
@@ -27,16 +27,14 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
 
-  const source: Testimonial[] = useMemo(() => (testimonials?.length ? testimonials : (testimonialsPl as Testimonial[])), [testimonials]);
+  const source: Testimonial[] = (testimonials?.length ? testimonials : (testimonialsPl as Testimonial[]));
 
-  const items: Testimonial[] = useMemo(() => {
-    let list = source;
+  const items: Testimonial[] = (() => { let list = source;
     if (ids?.length) {
       const map = new Map(list.map((t) => [t.id, t] as const));
       list = ids.map((id) => map.get(id)).filter(Boolean) as Testimonial[];
     }
-    return list.slice(0, max);
-  }, [source, ids, max]);
+    return list.slice(0, max); })();
 
   const [largeSlide, setLargeSlide] = useState(0);
 
@@ -48,9 +46,9 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
     autoPlayIntervalMs: AUTO_PLAY_INTERVAL_MS,
   });
 
-  const handleAutoScrollLarge = useCallback(() => {
+  const handleAutoScrollLarge = () => {
     setLargeSlide((prev) => (prev >= items.length - 1 ? 0 : prev + 1));
-  }, [items.length]);
+  };
 
   useEffect(() => {
     if (variant !== 'large' || items.length <= 1) return;

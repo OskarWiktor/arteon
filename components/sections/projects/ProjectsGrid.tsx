@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
 import CarouselCard from '../../ui/carousel/CarouselCard';
 
@@ -10,13 +10,11 @@ type Props = {
 };
 
 export default function ProjectsGrid({ projects, selectedCategories }: Props) {
-  const filteredProjects = useMemo(() => {
-    if (!selectedCategories.length) return projects;
+  const filteredProjects = (() => { if (!selectedCategories.length) return projects;
     return projects.filter((p) => {
       const cats = new Set(p.category ?? []);
       return selectedCategories.every((c) => cats.has(c));
-    });
-  }, [projects, selectedCategories]);
+    }); })();
 
   if (!filteredProjects.length) {
     return <p className="text-light mt-6 text-base">Brak projektów dla wybranych filtrów.</p>;

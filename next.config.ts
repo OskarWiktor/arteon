@@ -43,6 +43,9 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   poweredByHeader: false,
   reactStrictMode: true,
+  compiler: {
+    removeConsole: IS_PROD ? { exclude: ['error', 'warn'] } : false,
+  },
   // Cache Components (Next.js 16.1.6 - top-level)
   cacheComponents: true,
   // React Compiler — auto-memoization, removes need for most useMemo/useCallback/memo.

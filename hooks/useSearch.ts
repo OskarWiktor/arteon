@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { searchItems, groupSearchResults, type SearchItem, type SearchCategory } from '@/lib/search/searchIndex';
 import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
 
@@ -47,19 +47,17 @@ export function useSearch(options: UseSearchOptions): UseSearchReturn {
     { enabled: Boolean(query.trim()) },
   );
 
-  const results = useMemo(() => {
-    if (!debouncedQuery.trim()) return [];
-    return searchItems(debouncedQuery, locale, limit);
-  }, [debouncedQuery, locale, limit]);
+  const results = (() => { if (!debouncedQuery.trim()) return [];
+    return searchItems(debouncedQuery, locale, limit); })();
 
-  const groupedResults = useMemo(() => groupSearchResults(results), [results]);
+  const groupedResults = groupSearchResults(results);
 
   const hasResults = results.length > 0;
 
-  const clearSearch = useCallback(() => {
+  const clearSearch = () => {
     setQuery('');
     setDebouncedQuery('');
-  }, []);
+  };
 
   return {
     query,

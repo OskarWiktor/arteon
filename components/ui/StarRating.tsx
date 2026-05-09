@@ -1,10 +1,8 @@
-import { memo } from 'react';
-
 function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
 }
 
-export const StarRating = memo(function StarRating({ value, size = 20, className = '' }: { value: number; size?: number; className?: string }) {
+export function StarRating({ value, size = 20, className = '' }: { value: number; size?: number; className?: string }) {
   const v = clamp(Math.round(value * 2) / 2, 0, 5);
   const full = Math.floor(v);
   const half = v - full === 0.5;
@@ -47,4 +45,4 @@ export const StarRating = memo(function StarRating({ value, size = 20, className
       ))}
     </span>
   );
-});
+}

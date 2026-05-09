@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useMemo, useState } from 'react';
+import { useState } from 'react';
 import Button from '@/components/ui/buttons/Button';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
@@ -59,8 +59,7 @@ export default function QrCodeGenerator() {
   const [qrSvg, setQrSvg] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
 
-  const qrData = useMemo(() => {
-    switch (dataType) {
+  const qrData = (() => { switch (dataType) {
       case 'url':
         return urlValue.trim();
       case 'text':
@@ -79,13 +78,12 @@ export default function QrCodeGenerator() {
         return buildEmailString(emailData);
       default:
         return '';
-    }
-  }, [dataType, urlValue, textValue, phoneValue, vcardData, emailData]);
+    } })();
 
-  const contrastOk = useMemo(() => isContrastSufficient(darkColor, lightColor), [darkColor, lightColor]);
-  const contrastValue = useMemo(() => calculateContrast(darkColor, lightColor).toFixed(2), [darkColor, lightColor]);
+  const contrastOk = isContrastSufficient(darkColor, lightColor);
+  const contrastValue = calculateContrast(darkColor, lightColor).toFixed(2);
 
-  const generateQr = useCallback(async () => {
+  const generateQr = async () => {
     if (!qrData) {
       setQrDataUrl(null);
       setQrSvg(null);
@@ -113,7 +111,7 @@ export default function QrCodeGenerator() {
     } finally {
       setIsGenerating(false);
     }
-  }, [qrData, size, margin, darkColor, lightColor, errorLevel]);
+  };
 
   useDebouncedEffect(
     () => {

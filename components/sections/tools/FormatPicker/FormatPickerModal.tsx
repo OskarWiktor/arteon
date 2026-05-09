@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useCallback, useEffect, useMemo, useRef, useState, cache } from 'react';
+import { useEffect, useRef, useState, cache } from 'react';
 import { RiArrowDownSLine, RiCloseLine } from 'react-icons/ri';
 
 import { useLocale } from '@/lib/LocaleContext';
@@ -128,13 +128,11 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
 
   const currentFormat = side === 'source' ? currentSource : currentTarget;
 
-  const { currentUnitId, unitTriggerLabel } = useMemo(() => {
-    if (!unitToolKey) return { currentUnitId: null, unitTriggerLabel: null };
+  const { currentUnitId, unitTriggerLabel } = (() => { if (!unitToolKey) return { currentUnitId: null, unitTriggerLabel: null };
     const conv = UNIT_CONVERSIONS.find((c) => c.toolKey === unitToolKey);
     if (!conv) return { currentUnitId: null, unitTriggerLabel: null };
     const field = side === 'source' ? conv.sourceField : conv.targetField;
-    return { currentUnitId: unitId(field), unitTriggerLabel: unitDisplayLabel(field, locale) };
-  }, [unitToolKey, side, locale]);
+    return { currentUnitId: unitId(field), unitTriggerLabel: unitDisplayLabel(field, locale) }; })();
 
   // Close on Escape
   useEffect(() => {
@@ -174,7 +172,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
     };
   }, [open]);
 
-  const handleToggle = useCallback(() => {
+  const handleToggle = () => {
     setOpen((v) => !v);
     if (unitToolKey) {
       setActiveCategory('units');
@@ -182,10 +180,9 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
       const cat = FORMAT_CATEGORIES.find((c) => c.formats.includes(currentFormat));
       if (cat) setActiveCategory(cat.key);
     }
-  }, [currentFormat, unitToolKey]);
+  };
 
-  const handleLinkClick = useCallback(
-    (e: React.MouseEvent<HTMLAnchorElement>, href: string | null) => {
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string | null) => {
       if (!href) {
         e.preventDefault();
         return;
@@ -197,9 +194,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
         }
       }
       setOpen(false);
-    },
-    [hasFiles, confirmMessage],
-  );
+    };
 
   // Build the formats grid for the active category
   const activeCategoryDef = FORMAT_CATEGORIES.find((c) => c.key === activeCategory);

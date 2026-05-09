@@ -1,7 +1,7 @@
 'use client';
 
 import Button from '@/components/ui/buttons/Button';
-import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
+import { useEffect, useRef, useState, type FormEvent } from 'react';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import Badge from '@/components/ui/Badge';
@@ -112,8 +112,8 @@ export default function JpgPngToWebp() {
 
   const progress = total ? Math.round((completed / total) * 100) : 0;
 
-  const totalInput = useMemo(() => files.reduce((sum, f) => sum + f.inputSize, 0), [files]);
-  const totalOutput = useMemo(() => files.reduce((sum, f) => sum + (f.outputSize ?? 0), 0), [files]);
+  const totalInput = files.reduce((sum, f) => sum + f.inputSize, 0);
+  const totalOutput = files.reduce((sum, f) => sum + (f.outputSize ?? 0), 0);
   const totalSaved = totalInput - totalOutput;
 
   const anyDone = files.some((f) => f.status === 'done');

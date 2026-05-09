@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+
 import Button from '@/components/ui/buttons/Button';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
 
@@ -14,11 +14,9 @@ type Props = {
 const ORDER: readonly ProjectCategory[] = ['strona', 'sklep', 'blog', 'aplikacja', 'grafika', 'treść', 'marketing'] as const;
 
 export default function Filters({ projects, selected, onToggle, onClear }: Props) {
-  const available = useMemo(() => {
-    const present = new Set<ProjectCategory>();
+  const available = (() => { const present = new Set<ProjectCategory>();
     for (const p of projects) for (const c of p.category ?? []) present.add(c);
-    return ORDER.filter((c) => present.has(c));
-  }, [projects]);
+    return ORDER.filter((c) => present.has(c)); })();
 
   const isSelected = (c: ProjectCategory) => selected.includes(c);
   const hasSelection = selected.length > 0;

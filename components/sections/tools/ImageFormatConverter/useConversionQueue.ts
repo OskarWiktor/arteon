@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { convertImage } from '@/lib/tools/image/convert';
 import { revokeObjectUrl } from '@/utils/objectUrl';
@@ -36,7 +36,7 @@ export function useConversionQueue(options: ConversionQueueOptions) {
     };
   }, []);
 
-  const addFiles = useCallback((newFiles: File[]) => {
+  const addFiles = (newFiles: File[]) => {
     const entries: ConversionFile[] = newFiles.map((f) => ({
       id: `cf-${++fileIdCounter}`,
       file: f,
@@ -48,30 +48,30 @@ export function useConversionQueue(options: ConversionQueueOptions) {
       errorMessage: null,
     }));
     setFiles((prev) => [...prev, ...entries]);
-  }, []);
+  };
 
-  const clearAll = useCallback(() => {
+  const clearAll = () => {
     setFiles((prev) => {
       prev.forEach((f) => {
         if (f.outputUrl) revokeObjectUrl(f.outputUrl);
       });
       return [];
     });
-  }, []);
+  };
 
-  const removeFile = useCallback((id: string) => {
+  const removeFile = (id: string) => {
     setFiles((prev) => {
       const file = prev.find((f) => f.id === id);
       if (file?.outputUrl) revokeObjectUrl(file.outputUrl);
       return prev.filter((f) => f.id !== id);
     });
-  }, []);
+  };
 
-  const setQuality = useCallback((q: number) => {
+  const setQuality = (q: number) => {
     qualityRef.current = q;
-  }, []);
+  };
 
-  const convertAll = useCallback(async () => {
+  const convertAll = async () => {
     setIsConverting(true);
     const targetMime = FORMAT_MIME[targetFormat];
 
@@ -121,7 +121,7 @@ export function useConversionQueue(options: ConversionQueueOptions) {
     }
 
     setIsConverting(false);
-  }, [targetFormat, errorMessages]);
+  };
 
   const totalInputSize = files.reduce((sum, f) => sum + f.inputSize, 0);
   const doneFiles = files.filter((f) => f.status === 'done');

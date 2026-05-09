@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { RiFileCopyLine, RiCheckLine, RiDeleteBinLine } from 'react-icons/ri';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
@@ -33,9 +33,9 @@ export default function WordCountTool() {
 
   const { copy, copied } = useCopyToClipboard();
 
-  const metrics = useMemo(() => analyzeText(text, locale), [text, locale]);
-  const readabilityLabel = useMemo(() => getReadabilityLabel(metrics.fleschScore, locale), [metrics.fleschScore, locale]);
-  const readabilityColor = useMemo(() => getReadabilityColor(metrics.fleschScore, locale), [metrics.fleschScore, locale]);
+  const metrics = analyzeText(text, locale);
+  const readabilityLabel = getReadabilityLabel(metrics.fleschScore, locale);
+  const readabilityColor = getReadabilityColor(metrics.fleschScore, locale);
 
   const toolbarActions: { key: string; label: string; fn: (t: string) => string }[] = [
     { key: 'uppercase', label: t.uppercase, fn: toUpperCase },

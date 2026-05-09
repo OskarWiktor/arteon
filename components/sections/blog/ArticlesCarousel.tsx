@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useMemo } from 'react';
+import { useRef } from 'react';
 import { CarouselDots } from '@/components/ui/carousel/CarouselDots';
 import { CarouselNavButtons } from '@/components/ui/carousel/CarouselNavButtons';
 import CarouselCard from '@/components/ui/carousel/CarouselCard';
@@ -27,8 +27,7 @@ export default function ArticlesCarousel({ articles, max = 10, title = 'Edukacja
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
 
-  const finalArticles = useMemo(() => {
-    const source = articles ?? [];
+  const finalArticles = (() => { const source = articles ?? [];
     const slugsArray = typeof slugs === 'string' ? [slugs] : slugs;
     let list: ArticlePreview[];
 
@@ -47,8 +46,7 @@ export default function ArticlesCarousel({ articles, max = 10, title = 'Edukacja
       list = list.filter((a) => a.slug !== excludeSlug);
     }
 
-    return list.slice(0, max);
-  }, [articles, slugs, categorySlug, excludeSlug, max]);
+    return list.slice(0, max); })();
 
   const { currentSlide, maxSlides, isScrollable, scrollByCards, goToSlide, onKeyDown } = useCarouselScroller({
     itemCount: finalArticles.length,

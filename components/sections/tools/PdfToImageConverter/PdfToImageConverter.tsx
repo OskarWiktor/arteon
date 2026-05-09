@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useRef, useState, type FormEvent } from 'react';
+import { useRef, useState, type FormEvent } from 'react';
 
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/buttons/Button';
@@ -34,152 +34,142 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
   const ext = FORMAT_EXT[targetFormat];
   const showQuality = targetFormat === 'jpg' || targetFormat === 'webp';
 
-  const handleQualityChange = useCallback((v: number) => {
+  const handleQualityChange = (v: number) => {
     setQuality(v);
     qualityRef.current = v / 100;
-  }, []);
+  };
 
-  const handleAddFiles = useCallback(
-    (fileList: FileList | null) => {
-      if (!fileList || fileList.length === 0) return;
-      setGlobalError(null);
+  const handleAddFiles = (fileList: FileList | null) => {
+    if (!fileList || fileList.length === 0) return;
+    setGlobalError(null);
 
-      const pdfFiles = Array.from(fileList).filter((f) => {
-        if (f.type === 'application/pdf') return true;
-        return f.name.toLowerCase().endsWith('.pdf');
-      });
+    const pdfFiles = Array.from(fileList).filter((f) => {
+      if (f.type === 'application/pdf') return true;
+      return f.name.toLowerCase().endsWith('.pdf');
+    });
 
-      if (pdfFiles.length === 0) {
-        setGlobalError(t.errorWrongFormat.replace('{{format}}', 'PDF'));
-        return;
-      }
+    if (pdfFiles.length === 0) {
+      setGlobalError(t.errorWrongFormat.replace('{{format}}', 'PDF'));
+      return;
+    }
 
-      // Load PDF pages asynchronously
-      void (async () => {
-        try {
-          const pdfjsLib = await import('pdfjs-dist');
-          pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
+    void (async () => {
+      try {
+        const pdfjsLib = await import('pdfjs-dist');
+        pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
-          for (const pdfFile of pdfFiles) {
-            const buffer = await pdfFile.arrayBuffer();
-            const pdf = await pdfjsLib.getDocument({ data: buffer }).promise;
-            const numPages = pdf.numPages;
-            const baseName = pdfFile.name.replace(/\.pdf$/i, '');
+        for (const pdfFile of pdfFiles) {
+          const buffer = await pdfFile.arrayBuffer();
+          const pdf = await pdfjsLib.getDocument({ data: buffer }).promise;
+          const numPages = pdf.numPages;
+          const baseName = pdfFile.name.replace(/\.pdf$/i, '');
 
-            const newPages: PdfPageFile[] = [];
-            for (let i = 1; i <= numPages; i++) {
-              newPages.push({
-                id: `pdi-${++fileIdCounter}`,
-                file: pdfFile,
-                pageIndex: i,
-                pageLabel: `${baseName} - ${t.pageLabel} ${i}/${numPages}`,
-                status: 'idle',
-                outputBlob: null,
-                outputUrl: null,
-                errorMessage: null,
-              });
-            }
-            setPages((prev) => [...prev, ...newPages]);
+          const newPages: PdfPageFile[] = [];
+          for (let i = 1; i <= numPages; i++) {
+            newPages.push({
+              id: `pdi-${++fileIdCounter}`,
+              file: pdfFile,
+              pageIndex: i,
+              pageLabel: `${baseName} - ${t.pageLabel} ${i}/${numPages}`,
+              status: 'idle',
+              outputBlob: null,
+              outputUrl: null,
+              errorMessage: null,
+            });
           }
-        } catch (err) {
-          setGlobalError(err instanceof Error ? err.message : t.failedToLoadPdf);
+          setPages((prev) => [...prev, ...newPages]);
         }
-      })();
-    },
-    [t],
-  );
+      } catch (err) {
+        setGlobalError(err instanceof Error ? err.message : t.failedToLoadPdf);
+      }
+    })();
+  };
 
-  const removeFile = useCallback((id: string) => {
+  const removeFile = (id: string) => {
     setPages((prev) => {
       const page = prev.find((p) => p.id === id);
       if (page?.outputUrl) URL.revokeObjectURL(page.outputUrl);
       return prev.filter((p) => p.id !== id);
     });
-  }, []);
+  };
 
-  const clearAll = useCallback(() => {
+  const clearAll = () => {
     setPages((prev) => {
       prev.forEach((p) => {
         if (p.outputUrl) URL.revokeObjectURL(p.outputUrl);
       });
       return [];
     });
-  }, []);
+  };
 
-  const handleConvert = useCallback(
-    async (e: FormEvent) => {
-      e.preventDefault();
-      if (!pages.length) {
-        setGlobalError(t.errorNoFiles.replace('{{format}}', 'PDF'));
-        return;
-      }
-      setGlobalError(null);
-      setIsConverting(true);
+  const handleConvert = async (e: FormEvent) => {
+    e.preventDefault();
+    if (!pages.length) {
+      setGlobalError(t.errorNoFiles.replace('{{format}}', 'PDF'));
+      return;
+    }
+    setGlobalError(null);
+    setIsConverting(true);
 
-      try {
-        const pdfjsLib = await import('pdfjs-dist');
-        pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
+    try {
+      const pdfjsLib = await import('pdfjs-dist');
+      pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
-        const mime = FORMAT_MIME[targetFormat];
-        const pending = pagesRef.current.filter((p) => p.status === 'idle' || p.status === 'error');
+      const mime = FORMAT_MIME[targetFormat];
+      const pending = pagesRef.current.filter((p) => p.status === 'idle' || p.status === 'error');
 
-        for (const entry of pending) {
-          if (!pagesRef.current.some((p) => p.id === entry.id)) continue;
+      for (const entry of pending) {
+        if (!pagesRef.current.some((p) => p.id === entry.id)) continue;
 
-          setPages((prev) => prev.map((p) => (p.id === entry.id ? { ...p, status: 'processing' as const, errorMessage: null } : p)));
+        setPages((prev) => prev.map((p) => (p.id === entry.id ? { ...p, status: 'processing' as const, errorMessage: null } : p)));
 
-          try {
-            const buffer = await entry.file.arrayBuffer();
-            const pdf = await pdfjsLib.getDocument({ data: buffer }).promise;
-            const page = await pdf.getPage(entry.pageIndex);
+        try {
+          const buffer = await entry.file.arrayBuffer();
+          const pdf = await pdfjsLib.getDocument({ data: buffer }).promise;
+          const page = await pdf.getPage(entry.pageIndex);
 
-            const scale = 2; // 2x for good quality
-            const viewport = page.getViewport({ scale });
-            const canvas = document.createElement('canvas');
-            canvas.width = viewport.width;
-            canvas.height = viewport.height;
-            const ctx = canvas.getContext('2d');
-            if (!ctx) throw new Error(t.canvasNotSupported);
+          const scale = 2;
+          const viewport = page.getViewport({ scale });
+          const canvas = document.createElement('canvas');
+          canvas.width = viewport.width;
+          canvas.height = viewport.height;
+          const ctx = canvas.getContext('2d');
+          if (!ctx) throw new Error(t.canvasNotSupported);
 
-            await page.render({ canvasContext: ctx, viewport, canvas } as never).promise;
+          await page.render({ canvasContext: ctx, viewport, canvas } as never).promise;
 
-            const blob = await new Promise<Blob>((resolve, reject) => {
-              canvas.toBlob((b) => (b ? resolve(b) : reject(new Error(t.canvasExportFailed))), mime, targetFormat === 'png' ? undefined : qualityRef.current);
-            });
+          const blob = await new Promise<Blob>((resolve, reject) => {
+            canvas.toBlob((b) => (b ? resolve(b) : reject(new Error(t.canvasExportFailed))), mime, targetFormat === 'png' ? undefined : qualityRef.current);
+          });
 
-            const url = URL.createObjectURL(blob);
+          const url = URL.createObjectURL(blob);
 
-            setPages((prev) => prev.map((p) => (p.id === entry.id ? { ...p, status: 'done' as const, outputBlob: blob, outputUrl: url } : p)));
-          } catch (err) {
-            setPages((prev) => prev.map((p) => (p.id === entry.id ? { ...p, status: 'error' as const, errorMessage: err instanceof Error ? err.message : t.conversionFailed } : p)));
-          }
+          setPages((prev) => prev.map((p) => (p.id === entry.id ? { ...p, status: 'done' as const, outputBlob: blob, outputUrl: url } : p)));
+        } catch (err) {
+          setPages((prev) => prev.map((p) => (p.id === entry.id ? { ...p, status: 'error' as const, errorMessage: err instanceof Error ? err.message : t.conversionFailed } : p)));
         }
-      } catch (err) {
-        setGlobalError(err instanceof Error ? err.message : t.failedToLoadLibrary);
       }
+    } catch (err) {
+      setGlobalError(err instanceof Error ? err.message : t.failedToLoadLibrary);
+    }
 
-      setIsConverting(false);
-    },
-    [pages, targetFormat, t],
-  );
+    setIsConverting(false);
+  };
 
-  const handleDownloadSingle = useCallback(
-    (id: string) => {
-      const page = pages.find((p) => p.id === id);
-      if (!page?.outputBlob) return;
-      const baseName = page.file.name.replace(/\.pdf$/i, '');
-      downloadBlob(page.outputBlob, `${baseName}-page${page.pageIndex}${ext}`);
-    },
-    [pages, ext],
-  );
+  const handleDownloadSingle = (id: string) => {
+    const page = pages.find((p) => p.id === id);
+    if (!page?.outputBlob) return;
+    const baseName = page.file.name.replace(/\.pdf$/i, '');
+    downloadBlob(page.outputBlob, `${baseName}-page${page.pageIndex}${ext}`);
+  };
 
-  const handleDownloadAll = useCallback(() => {
+  const handleDownloadAll = () => {
     const done = pages.filter((p) => p.status === 'done' && p.outputBlob);
     for (const page of done) {
       const baseName = page.file.name.replace(/\.pdf$/i, '');
       downloadBlob(page.outputBlob!, `${baseName}-page${page.pageIndex}${ext}`);
     }
-  }, [pages, ext]);
+  };
 
   const total = pages.length;
   const completed = pages.filter((p) => p.status === 'done' || p.status === 'error').length;

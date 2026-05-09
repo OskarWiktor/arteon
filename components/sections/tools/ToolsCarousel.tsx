@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useRef } from 'react';
+import { useRef } from 'react';
 
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { getToolsSections } from '@/lib/i18n/tool-registry';
@@ -27,10 +27,8 @@ export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
   const cardRef = useRef<HTMLElement>(null);
 
   const toolsSections = getToolsSections(locale);
-  const items = useMemo(() => {
-    const all = toolsSections.flatMap((section) => section.items);
-    return all.sort((a, b) => (a.carouselOrder ?? 999) - (b.carouselOrder ?? 999)).slice(0, max);
-  }, [max, toolsSections]);
+  const items = (() => { const all = toolsSections.flatMap((section) => section.items);
+    return all.sort((a, b) => (a.carouselOrder ?? 999) - (b.carouselOrder ?? 999)).slice(0, max); })();
 
   const { currentSlide, maxSlides, isScrollable, scrollByCards, goToSlide, onKeyDown } = useCarouselScroller({
     itemCount: items.length,

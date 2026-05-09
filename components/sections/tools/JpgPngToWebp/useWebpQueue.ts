@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { createWebpQueueItems, type WebpQueueItem } from '@/lib/tools/image/webpQueue';
 import { revokeObjectUrl, revokeObjectUrls } from '@/utils/objectUrl';
 
@@ -24,8 +24,7 @@ export function useWebpQueue(options: UseWebpQueueOptions) {
     };
   }, []);
 
-  const addFiles = useCallback(
-    (list: FileList | null) => {
+  const addFiles = (list: FileList | null) => {
       if (!list?.length) return;
 
       setGlobalError(null);
@@ -40,19 +39,17 @@ export function useWebpQueue(options: UseWebpQueueOptions) {
 
         return [...prev, ...newItems];
       });
-    },
-    [options.addJpgPngOnlyError],
-  );
+    };
 
-  const removeFile = useCallback((id: string) => {
+  const removeFile = (id: string) => {
     setFiles((prev) => {
       const item = prev.find((f) => f.id === id);
       revokeObjectUrls([item?.downloadUrl, item?.previewUrl]);
       return prev.filter((f) => f.id !== id);
     });
-  }, []);
+  };
 
-  const reconvertFile = useCallback((id: string) => {
+  const reconvertFile = (id: string) => {
     setFiles((prev) =>
       prev.map((f) => {
         if (f.id !== id) return f;
@@ -71,24 +68,21 @@ export function useWebpQueue(options: UseWebpQueueOptions) {
         };
       }),
     );
-  }, []);
+  };
 
-  const clearAll = useCallback(() => {
+  const clearAll = () => {
     setFiles((prev) => {
       revokeObjectUrls(prev.flatMap((f) => [f.downloadUrl, f.previewUrl]));
       return [];
     });
     setGlobalError(null);
-  }, []);
+  };
 
-  const previewFile = useCallback(
-    (id: string) => {
+  const previewFile = (id: string) => {
       const item = files.find((f) => f.id === id);
       if (!item?.previewUrl) return;
       window.open(item.previewUrl, '_blank', 'noopener,noreferrer');
-    },
-    [files],
-  );
+    };
 
   return {
     files,

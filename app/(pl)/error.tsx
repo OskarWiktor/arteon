@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo } from 'react';
+import { useEffect } from 'react';
 import Button from '@/components/ui/buttons/Button';
 import Wrapper from '@/components/ui/Wrapper';
 
@@ -29,7 +29,7 @@ const ERROR_TRANSLATIONS: Record<string, ErrorTranslations> = {
 };
 
 export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
-  const t = useMemo(() => ERROR_TRANSLATIONS.pl, []);
+  const t = ERROR_TRANSLATIONS.pl;
 
   useEffect(() => {
     if (process.env.NODE_ENV === 'development') {

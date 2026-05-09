@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
@@ -30,9 +30,9 @@ export default function PaletteExtractor() {
 
   const isProcessing = status === 'processing';
 
-  const inputFormat = useMemo(() => getFileFormatLabel(file), [file]);
+  const inputFormat = getFileFormatLabel(file);
 
-  const fileSize = useMemo(() => (file ? formatBytes(file.size) : null), [file]);
+  const fileSize = (file ? formatBytes(file.size) : null);
 
   function handleFileSelected(next: File) {
     if (!isSupportedImageUploadType(next)) {

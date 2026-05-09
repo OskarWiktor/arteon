@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { RiFileCopyLine, RiCheckLine, RiDownloadLine, RiCodeSSlashLine, RiPaletteLine } from 'react-icons/ri';
 import PillButton from '@/components/ui/tools/PillButton';
 import ToolSection from '@/components/ui/tools/ToolSection';
@@ -32,32 +32,29 @@ export default function LoremIpsumGenerator() {
   const { copy, copied } = useCopyToClipboard();
   const { copy: copyHtml, copied: copiedHtml } = useCopyToClipboard();
 
-  const modeLabels: Record<LoremMode, string> = useMemo(
-    () => ({
-      paragraphs: t.paragraphs,
-      sentences: t.sentences,
-      words: t.words,
-      lists: t.lists,
-      headings: t.headings,
-      links: t.links,
-      table: t.table,
-      blockquotes: t.blockquotes,
-      definitions: t.definitions,
-    }),
-    [t],
-  );
-  const lengthLabels: Record<LoremLength, string> = useMemo(() => ({ short: t.short, medium: t.medium, long: t.long }), [t]);
-  const formatLabels: Record<LoremFormat, string> = useMemo(() => ({ plain: t.plainText, html: t.htmlFormat }), [t]);
+  const modeLabels: Record<LoremMode, string> = {
+    paragraphs: t.paragraphs,
+    sentences: t.sentences,
+    words: t.words,
+    lists: t.lists,
+    headings: t.headings,
+    links: t.links,
+    table: t.table,
+    blockquotes: t.blockquotes,
+    definitions: t.definitions,
+  };
+  const lengthLabels: Record<LoremLength, string> = { short: t.short, medium: t.medium, long: t.long };
+  const formatLabels: Record<LoremFormat, string> = { plain: t.plainText, html: t.htmlFormat };
 
-  const stats = useMemo(() => getLoremStats(output), [output]);
+  const stats = getLoremStats(output);
 
-  const generate = useCallback(() => {
+  const generate = () => {
     seedRef.current = Date.now();
     const options: LoremOptions = { mode, count, paragraphLength, startWithLorem: style === 'classic', outputFormat, style, locale };
     setOutput(generateLoremIpsum(options, seedRef.current));
-  }, [mode, count, paragraphLength, outputFormat, style, locale]);
+  };
 
-  const handleDownload = useCallback(() => {
+  const handleDownload = () => {
     if (!output) return;
     const blob = new Blob([output], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
@@ -66,9 +63,9 @@ export default function LoremIpsumGenerator() {
     a.download = 'lorem-ipsum.txt';
     a.click();
     URL.revokeObjectURL(url);
-  }, [output]);
+  };
 
-  const plainOutput = useMemo(() => output.replace(/<[^>]+>/g, ''), [output]);
+  const plainOutput = output.replace(/<[^>]+>/g, '');
 
   return (
     <div className="space-y-4 overflow-hidden">

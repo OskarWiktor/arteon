@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useMemo, type ReactNode } from 'react';
+import { createContext, useContext, type ReactNode } from 'react';
 
 import type { Locale, LocaleConfig, NavigationUi, FooterUi, DesktopOnlyUi, LegalLink } from '@/types/locale';
 export type { Locale } from '@/types/locale';
@@ -153,7 +153,7 @@ interface LocaleProviderProps {
 }
 
 export function LocaleProvider({ value, config, dict, children }: LocaleProviderProps) {
-  const ctx = useMemo(() => ({ locale: value, config, dict }), [value, config, dict]);
+  const ctx = ({ locale: value, config, dict });
   return <LocaleContext.Provider value={ctx}>{children}</LocaleContext.Provider>;
 }
 

@@ -26,7 +26,7 @@ import {
   getThemePresets,
 } from '@/components/sections/tools/EmailSignatureGenerator/constants';
 import ToolButton from '@/components/ui/tools/ToolButton';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ConfirmModal from '@/components/ui/ConfirmModal';
 import {
   RiUser3Line,
@@ -54,7 +54,7 @@ export default function EmailSignatureGenerator() {
   const locale = useLocale();
   const t = ui[locale];
 
-  const defaultSignature = useMemo(() => getDefaultSignature(locale), [locale]);
+  const defaultSignature = getDefaultSignature(locale);
   const [config, setConfig] = useState<SignatureConfig>(defaultSignature);
   const [styleConfig, setStyleConfig] = useState<StyleConfig>(DEFAULT_STYLE);
   const [spacingConfig, setSpacingConfig] = useState<SpacingConfig>(DEFAULT_SPACING);
@@ -103,13 +103,10 @@ export default function EmailSignatureGenerator() {
 
   const hasRequired = config.fullName.trim().length > 0 && config.email.trim().length > 0;
 
-  const signatureLabels = useMemo(() => getSignatureLabels(locale), [locale]);
-  const themePresets = useMemo(() => getThemePresets(locale), [locale]);
+  const signatureLabels = getSignatureLabels(locale);
+  const themePresets = getThemePresets(locale);
 
-  const signatureHtml = useMemo(
-    () => buildSignatureHtml(config, styleConfig, spacingConfig, layout, signatureLabels, textStyleConfig),
-    [config, styleConfig, spacingConfig, layout, signatureLabels, textStyleConfig],
-  );
+  const signatureHtml = buildSignatureHtml(config, styleConfig, spacingConfig, layout, signatureLabels, textStyleConfig);
 
   function handleTextChange<K extends keyof SignatureConfig>(key: K, value: SignatureConfig[K]) {
     setConfig((prev) => ({

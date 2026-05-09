@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import type { AdSenseProps } from '@/types/ui';
 export type { AdVariant, AdSenseProps } from '@/types/ui';
@@ -157,15 +157,14 @@ export default function AdSense({ variant, adSlot, className = '', locale }: AdS
   const slot = SLOT_ALIASES[rawSlot] ?? rawSlot;
   const isInArticleVariant = variant === 'in-article' || variant === 'in-article-new';
 
-  const resetAd = useCallback(() => {
+  const resetAd = () => {
     pushed.current = false;
     retryCount.current = 0;
     setFilled(false);
     if (containerRef.current) containerRef.current.replaceChildren();
-  }, []);
+  };
 
-  const injectAd = useCallback(
-    (container: HTMLDivElement) => {
+  const injectAd = (container: HTMLDivElement) => {
       if (pushed.current) return true;
       if (container.getBoundingClientRect().width === 0) return false;
 
@@ -211,9 +210,7 @@ export default function AdSense({ variant, adSlot, className = '', locale }: AdS
       }
 
       return pushed.current;
-    },
-    [slot, variant, isInArticleVariant],
-  );
+    };
 
   // Reset ad state on SPA navigation
   useEffect(() => {

@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import Button from '@/components/ui/buttons/Button';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
@@ -31,7 +31,7 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
   const [fileName, setFileName] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const handleConvert = useCallback(async () => {
+  const handleConvert = async () => {
     if (!input.trim()) {
       setError(t.pasteOrTypeData.replace('{{format}}', sourceLabel));
       return;
@@ -46,10 +46,9 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
       setOutput('');
     }
     setIsConverting(false);
-  }, [input, conversionType, sourceLabel, t]);
+  };
 
-  const handleFileUpload = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
       const file = e.target.files?.[0];
       if (!file) return;
       setFileName(file.name);
@@ -66,11 +65,9 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
       };
       reader.readAsText(file);
       if (fileInputRef.current) fileInputRef.current.value = '';
-    },
-    [t],
-  );
+    };
 
-  const handleCopy = useCallback(async () => {
+  const handleCopy = async () => {
     if (!output) return;
     try {
       await navigator.clipboard.writeText(output);
@@ -86,9 +83,9 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     }
-  }, [output]);
+  };
 
-  const handleDownload = useCallback(() => {
+  const handleDownload = () => {
     if (!output) return;
     const extMap: Record<string, string> = {
       csvToJson: '.json',
@@ -108,15 +105,15 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
     a.download = `converted${ext}`;
     a.click();
     URL.revokeObjectURL(url);
-  }, [output, conversionType]);
+  };
 
-  const handleClear = useCallback(() => {
+  const handleClear = () => {
     setInput('');
     setOutput('');
     setError(null);
     setCopied(false);
     setFileName(null);
-  }, []);
+  };
 
   const acceptMap: Record<string, string> = {
     csvToJson: '.csv',

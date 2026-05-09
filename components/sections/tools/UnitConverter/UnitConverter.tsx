@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Button from '@/components/ui/buttons/Button';
 import ToolSection from '@/components/ui/tools/ToolSection';
@@ -16,7 +16,7 @@ import type { UnitConverterProps } from './types';
 export default function UnitConverter({ toolKey }: UnitConverterProps) {
   const { imageConverter: t } = useDictionary();
   const locale = useLocale();
-  const config = useMemo(() => getUnitConversion(toolKey), [toolKey]);
+  const config = getUnitConversion(toolKey);
 
   // Helper to resolve label from labelKey or fallback to label
   const resolveLabel = (field: { label?: string; labelKey?: string }) => (field.labelKey ? getUnitLabel(field.labelKey, locale) : (field.label ?? ''));
@@ -27,82 +27,73 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
   const [isReversed, setIsReversed] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const isSpecial = useMemo(() => ['hexToRgb', 'rgbToHsl', 'rgbToCmyk', 'unixTimestamp', 'decToBin', 'decToHex'].includes(toolKey), [toolKey]);
+  const isSpecial = ['hexToRgb', 'rgbToHsl', 'rgbToCmyk', 'unixTimestamp', 'decToBin', 'decToHex'].includes(toolKey);
 
-  const doConvert = useCallback(
-    (input: string, reverse: boolean) => {
-      if (!config || !input.trim()) return '';
+  const doConvert = (input: string, reverse: boolean) => {
+    if (!config || !input.trim()) return '';
 
-      if (isSpecial) {
-        try {
-          switch (toolKey) {
-            case 'hexToRgb':
-              return reverse ? rgbToHex(input) : hexToRgb(input);
-            case 'rgbToHsl':
-              return reverse ? hslToRgb(input) : rgbToHsl(input);
-            case 'rgbToCmyk':
-              return reverse ? cmykToRgb(input) : rgbToCmyk(input);
-            case 'unixTimestamp':
-              return reverse ? dateToUnix(input) : unixToDate(input);
-            case 'decToBin':
-              return reverse ? binToDec(input) : decToBin(input);
-            case 'decToHex':
-              return reverse ? hexToDec(input) : decToHexStr(input);
-            default:
-              return '';
-          }
-        } catch {
-          return '';
+    if (isSpecial) {
+      try {
+        switch (toolKey) {
+          case 'hexToRgb':
+            return reverse ? rgbToHex(input) : hexToRgb(input);
+          case 'rgbToHsl':
+            return reverse ? hslToRgb(input) : rgbToHsl(input);
+          case 'rgbToCmyk':
+            return reverse ? cmykToRgb(input) : rgbToCmyk(input);
+          case 'unixTimestamp':
+            return reverse ? dateToUnix(input) : unixToDate(input);
+          case 'decToBin':
+            return reverse ? binToDec(input) : decToBin(input);
+          case 'decToHex':
+            return reverse ? hexToDec(input) : decToHexStr(input);
+          default:
+            return '';
         }
+      } catch {
+        return '';
       }
+    }
 
-      const num = parseFloat(input.replace(',', '.'));
-      if (isNaN(num)) return '';
+    const num = parseFloat(input.replace(',', '.'));
+    if (isNaN(num)) return '';
 
-      const result = reverse ? config.reverseConvert(num, extraValue ?? undefined) : config.convert(num, extraValue ?? undefined);
+    const result = reverse ? config.reverseConvert(num, extraValue ?? undefined) : config.convert(num, extraValue ?? undefined);
 
-      if (isNaN(result) || !isFinite(result)) return '';
-      return config.precision === 0 ? Math.round(result).toString() : result.toFixed(config.precision);
-    },
-    [config, isSpecial, toolKey, extraValue],
-  );
+    if (isNaN(result) || !isFinite(result)) return '';
+    return config.precision === 0 ? Math.round(result).toString() : result.toFixed(config.precision);
+  };
 
-  // Auto-convert on source change
   useEffect(() => {
     if (!sourceValue.trim()) {
       setTargetValue('');
       return;
     }
-    const result = doConvert(sourceValue, isReversed);
-    setTargetValue(result);
+    setTargetValue(doConvert(sourceValue, isReversed));
   }, [sourceValue, doConvert, isReversed]);
 
-  const handleSourceChange = useCallback((val: string) => {
+  const handleSourceChange = (val: string) => {
     setSourceValue(val);
-  }, []);
+  };
 
-  const handleTargetChange = useCallback(
-    (val: string) => {
-      setTargetValue(val);
-      if (!val.trim()) {
-        setSourceValue('');
-        return;
-      }
-      const result = doConvert(val, !isReversed);
-      setSourceValue(result);
-    },
-    [doConvert, isReversed],
-  );
+  const handleTargetChange = (val: string) => {
+    setTargetValue(val);
+    if (!val.trim()) {
+      setSourceValue('');
+      return;
+    }
+    setSourceValue(doConvert(val, !isReversed));
+  };
 
-  const handleSwap = useCallback(() => {
+  const handleSwap = () => {
     if (!config?.swappable) return;
     setIsReversed((prev) => !prev);
     const temp = sourceValue;
     setSourceValue(targetValue);
     setTargetValue(temp);
-  }, [config, sourceValue, targetValue]);
+  };
 
-  const handleCopy = useCallback(async () => {
+  const handleCopy = async () => {
     const valueToCopy = targetValue;
     if (!valueToCopy) return;
     try {
@@ -119,13 +110,13 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     }
-  }, [targetValue]);
+  };
 
-  const handleClear = useCallback(() => {
+  const handleClear = () => {
     setSourceValue('');
     setTargetValue('');
     setCopied(false);
-  }, []);
+  };
 
   if (!config) return null;
 

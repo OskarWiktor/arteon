@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import Wrapper from '../ui/Wrapper';
 import CalculatorSteps, { type Selections } from '../ui/calculator/CalculatorSteps';
 import CalculatorResult from '../ui/calculator/CalculatorResult';
@@ -61,13 +61,13 @@ export default function Calculator() {
     });
   }, [selections, currentStep, step]);
 
-  const parseInputValue = useCallback((val: string, key: string): number | null => {
+  const parseInputValue = (val: string, key: string): number | null => {
     if (!val.startsWith(`${key}:`)) return null;
     const num = parseInt(val.split(':')[1], 10);
     return isNaN(num) ? 0 : num;
-  }, []);
+  };
 
-  const calculateEstimate = useCallback(() => {
+  const calculateEstimate = () => {
     let nonProductTotal = 0,
       nonProductMultiplier = 1,
       productTotal = 0,
@@ -96,7 +96,7 @@ export default function Calculator() {
 
     setTotalPrice(nonProductTotal * nonProductMultiplier + productTotal * variantMultiplier);
     setShowResult(true);
-  }, [activeSteps, selections, parseInputValue]);
+  };
 
   const handleOptionClick = (optValue: string) => {
     setError(null);

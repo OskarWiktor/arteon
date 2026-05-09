@@ -1,6 +1,6 @@
 'use client';
 
-import { startTransition, useEffect, useRef, useState, useCallback } from 'react';
+import { startTransition, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
@@ -105,13 +105,13 @@ export default function DesktopNavigation() {
     return () => ro.disconnect();
   }, []);
 
-  const handleCategoryHover = useCallback((key: OfferSectionKey) => {
+  const handleCategoryHover = (key: OfferSectionKey) => {
     setActiveOfferCategory(key);
-  }, []);
+  };
 
-  const handleToolsCategoryHover = useCallback((key: ToolsSectionKey) => {
+  const handleToolsCategoryHover = (key: ToolsSectionKey) => {
     setActiveToolsCategory(key);
-  }, []);
+  };
 
   const navigationItems = isPl ? DESKTOP_NAV_ITEMS_PL : [];
 

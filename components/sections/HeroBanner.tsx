@@ -45,7 +45,7 @@ export default function HeroBanner({
 
   const textAlign = variant === 'center' ? 'text-left md:text-center' : variant === 'right' ? 'text-right' : 'text-left';
   const contentAnchor = variant === 'right' ? 'ml-auto' : variant === 'center' ? 'mx-auto' : '';
-  const contentWidthClass = isCompact ? 'text-center md:w-[100%]' : variant === 'left' ? 'w-full md:max-w-[75%] lg:max-w-[55%]' : 'md:max-w-[75%]';
+  const contentWidthClass = isCompact ? 'text-center md:w-[100%]' : variant === 'left' ? 'w-full md:max-w-[75%] lg:max-w-[65%]' : 'md:max-w-[75%]';
 
   const titleId = title ? `${id}-title` : undefined;
   const descId = description ? `${id}-description` : undefined;

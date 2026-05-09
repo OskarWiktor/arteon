@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState, type FormEvent } from 'react';
+import { useEffect, useState, type FormEvent } from 'react';
 import Button from '@/components/ui/buttons/Button';
 import CopyButton from '@/components/ui/buttons/CopyButton';
 import { RiContrast2Line } from 'react-icons/ri';
@@ -137,12 +137,10 @@ export default function WcagContrastChecker() {
   const [matchedForeground, setMatchedForeground] = useState<string | null>(null);
   const [matchError, setMatchError] = useState<string | null>(null);
 
-  const result = useMemo(() => getWcagResult(foreground, background), [foreground, background]);
+  const result = getWcagResult(foreground, background);
 
-  const suggestedRatio = useMemo(() => {
-    if (!matchedForeground) return null;
-    return getContrastRatio(matchedForeground, background);
-  }, [matchedForeground, background]);
+  const suggestedRatio = (() => { if (!matchedForeground) return null;
+    return getContrastRatio(matchedForeground, background); })();
 
   useEffect(() => {
     const parsed = parseColor(foreground);

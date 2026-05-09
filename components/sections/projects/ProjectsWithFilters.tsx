@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useCallback } from 'react';
+import { useState } from 'react';
 import Filters from './Filters';
 import ProjectsGrid from './ProjectsGrid';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
@@ -8,18 +8,18 @@ import type { ProjectCategory, ProjectPreview } from '@/types/project';
 export default function ProjectsWithFilters({ projects }: { projects: ProjectPreview[] }) {
   const [selectedSet, setSelectedSet] = useState<Set<ProjectCategory>>(new Set());
 
-  const selected = useMemo(() => Array.from(selectedSet), [selectedSet]);
+  const selected = Array.from(selectedSet);
 
-  const onToggle = useCallback((cat: ProjectCategory) => {
+  const onToggle = (cat: ProjectCategory) => {
     setSelectedSet((prev) => {
       const next = new Set(prev);
       if (next.has(cat)) next.delete(cat);
       else next.add(cat);
       return next;
     });
-  }, []);
+  };
 
-  const onClear = useCallback(() => setSelectedSet(new Set()), []);
+  const onClear = () => setSelectedSet(new Set());
 
   return (
     <>

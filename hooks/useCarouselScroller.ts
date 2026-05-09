@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState, type KeyboardEvent, type RefObject } from 'react';
+import { useEffect, useRef, useState, type KeyboardEvent, type RefObject } from 'react';
 
 type Params = {
   itemCount: number;
@@ -24,9 +24,9 @@ export function useCarouselScroller({ itemCount, scrollRef, cardRef, autoPlay = 
     currentSlideRef.current = currentSlide;
   }, [currentSlide]);
 
-  const stopAutoPlay = useCallback(() => {
+  const stopAutoPlay = () => {
     setAutoPlayActive(false);
-  }, []);
+  };
 
   useEffect(() => {
     const container = scrollRef.current;

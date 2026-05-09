@@ -13,7 +13,7 @@ import ToolButton from '@/components/ui/tools/ToolButton';
 import { formatBytes } from '@/utils/formatBytes';
 import { getFileFormatLabel } from '@/utils/fileFormat';
 import { revokeObjectUrl } from '@/utils/objectUrl';
-import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine, RiImageLine } from 'react-icons/ri';
 import { useLocale } from '@/lib/LocaleContext';
@@ -100,10 +100,10 @@ function getToolbarItems(t: UiLocale): { id: ActiveTool; label: string; icon: Re
 export default function ImageResizeTool() {
   const locale = useLocale();
   const t = ui[locale];
-  const IMAGE_PRESETS = useMemo(() => getImagePresets(t), [t]);
-  const GRID_COLOR_OPTIONS = useMemo(() => getGridColorOptions(t), [t]);
-  const SHAPE_OPTIONS = useMemo(() => getShapeOptions(t), [t]);
-  const TOOLBAR_ITEMS = useMemo(() => getToolbarItems(t), [t]);
+  const IMAGE_PRESETS = getImagePresets(t);
+  const GRID_COLOR_OPTIONS = getGridColorOptions(t);
+  const SHAPE_OPTIONS = getShapeOptions(t);
+  const TOOLBAR_ITEMS = getToolbarItems(t);
   const [state, setState] = useState<ResizeToolState>({
     file: null,
     imageUrl: null,
@@ -141,36 +141,20 @@ export default function ImageResizeTool() {
     };
   }, [state.imageUrl]);
 
-  const dims = useMemo(() => {
-    if (!originalWidth || !originalHeight || !targetWidth || !targetHeight) return null;
-    return { width: targetWidth, height: targetHeight };
-  }, [originalWidth, originalHeight, targetWidth, targetHeight]);
+  const dims = !originalWidth || !originalHeight || !targetWidth || !targetHeight ? null : { width: targetWidth, height: targetHeight };
 
-  const effectiveDims = useMemo(() => {
-    if (dims) return dims;
-    if (state.originalWidth && state.originalHeight) {
-      return { width: state.originalWidth, height: state.originalHeight };
-    }
-    return null;
-  }, [dims, state.originalWidth, state.originalHeight]);
+  const effectiveDims = dims ?? (state.originalWidth && state.originalHeight ? { width: state.originalWidth, height: state.originalHeight } : null);
 
-  const aspectRatioText = useMemo(() => (state.originalWidth && state.originalHeight ? (state.originalWidth / state.originalHeight).toFixed(2) : null), [state.originalWidth, state.originalHeight]);
+  const aspectRatioText = state.originalWidth && state.originalHeight ? (state.originalWidth / state.originalHeight).toFixed(2) : null;
 
-  const inputFormat = useMemo(() => getFileFormatLabel(state.file), [state.file]);
+  const inputFormat = getFileFormatLabel(state.file);
 
   const cropEnabled = !!state.imageUrl && !!state.originalWidth && !!state.originalHeight;
 
-  const previewPadding = useMemo(() => {
-    if (state.originalWidth && state.originalHeight) {
-      return (state.originalHeight / state.originalWidth) * 100;
-    }
-    return 56.25;
-  }, [state.originalWidth, state.originalHeight]);
+  const previewPadding = state.originalWidth && state.originalHeight ? (state.originalHeight / state.originalWidth) * 100 : 56.25;
 
-  const cropRectPreview = useMemo(() => {
-    if (!cropEnabled || !state.originalWidth || !state.originalHeight || !effectiveDims) {
-      return null;
-    }
+  const cropRectPreview = (() => {
+    if (!cropEnabled || !state.originalWidth || !state.originalHeight || !effectiveDims) return null;
     const targetAspect = effectiveDims.width / effectiveDims.height;
     const rect = getCropRect(state.originalWidth, state.originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
     return {
@@ -179,7 +163,7 @@ export default function ImageResizeTool() {
       width: `${(rect.cropW / state.originalWidth) * 100}%`,
       height: `${(rect.cropH / state.originalHeight) * 100}%`,
     };
-  }, [cropEnabled, effectiveDims, state.originalHeight, state.originalWidth, state.cropX, state.cropY, state.cropZoom]);
+  })();
 
   const gridStroke = getGridStroke(state.gridColor);
   const presetList = IMAGE_PRESETS[state.selectedCategory];

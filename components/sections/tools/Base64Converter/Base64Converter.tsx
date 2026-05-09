@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 
 import Button from '@/components/ui/buttons/Button';
 import FormatSelector from '@/components/sections/tools/FormatPicker/FormatSelector';
@@ -22,8 +22,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
   const [copied, setCopied] = useState(false);
 
   // ENCODE: image file → Base64 string
-  const handleAddFiles = useCallback(
-    (fileList: FileList | null) => {
+  const handleAddFiles = (fileList: FileList | null) => {
       if (!fileList || fileList.length === 0) return;
       setError(null);
       const file = fileList[0];
@@ -42,12 +41,10 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
       };
       reader.onerror = () => setError(t.fileReadError);
       reader.readAsDataURL(file);
-    },
-    [t],
-  );
+    };
 
   // DECODE: Base64 string → image preview
-  const handleDecode = useCallback(() => {
+  const handleDecode = () => {
     if (!base64.trim()) {
       setError(t.base64PasteEmpty);
       return;
@@ -86,9 +83,9 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
       setPreviewUrl(null);
     };
     img.src = dataUrl;
-  }, [base64, t]);
+  };
 
-  const handleCopy = useCallback(async () => {
+  const handleCopy = async () => {
     if (!base64) return;
     try {
       await navigator.clipboard.writeText(base64);
@@ -104,9 +101,9 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     }
-  }, [base64]);
+  };
 
-  const handleDownload = useCallback(() => {
+  const handleDownload = () => {
     if (!previewUrl) return;
     // Extract mime from data URL
     const match = previewUrl.match(/^data:([^;]+);/);
@@ -130,15 +127,15 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     for (let i = 0; i < byteString.length; i++) ia[i] = byteString.charCodeAt(i);
     const blob = new Blob([ab], { type: mime });
     downloadBlob(blob, `${t.decodedImageFilename}${ext}`);
-  }, [previewUrl]);
+  };
 
-  const handleClear = useCallback(() => {
+  const handleClear = () => {
     setBase64('');
     setPreviewUrl(null);
     setFileName(null);
     setError(null);
     setCopied(false);
-  }, []);
+  };
 
   if (mode === 'encode') {
     return (

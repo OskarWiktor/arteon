@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { IconType } from 'react-icons';
 import IconText from '@/components/ui/IconText';
 import { useEventListener } from '@/hooks/useEventListener';
@@ -101,11 +101,11 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
     isPausedRef.current = isPaused;
   }, [isPaused]);
 
-  const measure = useCallback(() => {
+  const measure = () => {
     if (!trackRef.current) return;
     const total = trackRef.current.scrollWidth;
     loopWidthRef.current = total / 2;
-  }, []);
+  };
 
   useEventListener(typeof window !== 'undefined' ? window : null, 'resize', measure);
 

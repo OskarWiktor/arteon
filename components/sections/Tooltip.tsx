@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useEventListener } from '@/hooks/useEventListener';
@@ -49,10 +49,10 @@ export default function Tooltip({ children, title, description, placement = 'top
   const show = () => {
     start(() => setOpen(true), delay);
   };
-  const hideImmediately = useCallback(() => {
+  const hideImmediately = () => {
     clear();
     setOpen(false);
-  }, [clear]);
+  };
   const toggleTouch = (e: React.TouchEvent) => {
     e.preventDefault();
     clear();

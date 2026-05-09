@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 import { buildWebpConversionReportText } from '@/lib/tools/image/webpReport';
 import type { WebpQueueItem } from '@/lib/tools/image/webpQueue';
 
@@ -28,7 +28,7 @@ type UseWebpReportCopyOptions = {
 export function useWebpReportCopy(options: UseWebpReportCopyOptions) {
   const [copyInfo, setCopyInfo] = useState<string | null>(null);
 
-  const handleCopySummary = useCallback(async () => {
+  const handleCopySummary = async () => {
     if (!navigator.clipboard) {
       setCopyInfo(options.labels.clipboardNotSupported);
       return;
@@ -56,7 +56,7 @@ export function useWebpReportCopy(options: UseWebpReportCopyOptions) {
 
     const ok = await options.copy(text);
     setCopyInfo(ok ? options.labels.reportCopied : options.labels.reportCopyError);
-  }, [options]);
+  };
 
   return { copyInfo, setCopyInfo, handleCopySummary };
 }

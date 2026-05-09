@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
@@ -40,9 +40,9 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
     return () => window.removeEventListener('resize', checkOverflow);
   }, [cats]);
 
-  const openModal = useCallback(() => setIsModalOpen(true), []);
-  const closeModal = useCallback(() => setIsModalOpen(false), []);
-  const toggleExpand = useCallback(() => setIsExpanded((prev) => !prev), []);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+  const toggleExpand = () => setIsExpanded((prev) => !prev);
 
   useEscapeKey(closeModal, isModalOpen);
 
@@ -150,8 +150,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
 
   const allItems = [{ label: 'Wszystkie', slug: '', count: 0, isAll: true }, ...cats.map((c) => ({ ...c, isAll: false }))];
 
-  const handleKeyDown = useCallback(
-    (e: React.KeyboardEvent) => {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
       if (e.key === 'ArrowDown') {
         e.preventDefault();
         setActiveIndex((prev) => (prev < allItems.length - 1 ? prev + 1 : 0));
@@ -159,9 +158,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
         e.preventDefault();
         setActiveIndex((prev) => (prev > 0 ? prev - 1 : allItems.length - 1));
       }
-    },
-    [allItems.length],
-  );
+    };
 
   useEffect(() => {
     if (activeIndex >= 0 && listRef.current) {
@@ -170,12 +167,9 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
     }
   }, [activeIndex]);
 
-  const handleBackdropClick = useCallback(
-    (e: React.MouseEvent) => {
+  const handleBackdropClick = (e: React.MouseEvent) => {
       if (e.target === e.currentTarget) onClose();
-    },
-    [onClose],
-  );
+    };
 
   if (!isOpen) return null;
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useRef, useState, type FormEvent } from 'react';
+import { useRef, useState, type FormEvent } from 'react';
 
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/buttons/Button';
@@ -61,14 +61,11 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
     errorMessages,
   });
 
-  const handleQualityChange = useCallback(
-    (v: number) => {
+  const handleQualityChange = (v: number) => {
       setQuality(v);
       setQueueQuality(v / 100);
       qualitySetRef.current = true;
-    },
-    [setQueueQuality],
-  );
+    };
 
   // Set initial quality on mount
   if (!qualitySetRef.current) {
@@ -76,8 +73,7 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
     qualitySetRef.current = true;
   }
 
-  const handleAddFiles = useCallback(
-    (fileList: FileList | null) => {
+  const handleAddFiles = (fileList: FileList | null) => {
       if (!fileList || fileList.length === 0) return;
       setGlobalError(null);
       const all = Array.from(fileList);
@@ -108,12 +104,9 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
         setGlobalError(tpl(t.errorWrongFormat, { format: sourceLabel }));
       }
       if (valid.length > 0) addFiles(valid);
-    },
-    [acceptMime, addFiles, sourceLabel, t],
-  );
+    };
 
-  const handleSubmit = useCallback(
-    (e: FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
       e.preventDefault();
       if (!files.length) {
         setGlobalError(tpl(t.errorNoFiles, { format: sourceLabel }));
@@ -121,27 +114,22 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
       }
       setGlobalError(null);
       void convertAll();
-    },
-    [files.length, convertAll, sourceLabel, t],
-  );
+    };
 
-  const handleDownloadSingle = useCallback(
-    (id: string) => {
+  const handleDownloadSingle = (id: string) => {
       const file = files.find((f) => f.id === id);
       if (!file?.outputBlob) return;
       const baseName = file.file.name.replace(/\.[^.]+$/, '');
       downloadBlob(file.outputBlob, `${baseName}${ext}`);
-    },
-    [files, ext],
-  );
+    };
 
-  const handleDownloadAll = useCallback(() => {
+  const handleDownloadAll = () => {
     const done = files.filter((f) => f.status === 'done' && f.outputBlob);
     for (const file of done) {
       const baseName = file.file.name.replace(/\.[^.]+$/, '');
       downloadBlob(file.outputBlob!, `${baseName}${ext}`);
     }
-  }, [files, ext]);
+  };
 
   const total = files.length;
   const completed = files.filter((f) => f.status === 'done' || f.status === 'error').length;

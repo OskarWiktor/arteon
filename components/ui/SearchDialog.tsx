@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useCallback, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { RiSearchLine, RiCloseLine, RiArrowRightSLine } from 'react-icons/ri';
@@ -59,16 +59,12 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
     setActiveIndex(-1);
   }, [query]);
 
-  const handleNavigate = useCallback(
-    (href: string) => {
+  const handleNavigate = (href: string) => {
       router.push(href);
       onClose();
-    },
-    [router, onClose],
-  );
+    };
 
-  const handleKeyDown = useCallback(
-    (e: React.KeyboardEvent) => {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
       if (!hasResults) return;
 
       if (e.key === 'ArrowDown') {
@@ -81,9 +77,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
         e.preventDefault();
         handleNavigate(flatResults[activeIndex].href);
       }
-    },
-    [hasResults, flatResults, activeIndex, handleNavigate],
-  );
+    };
 
   useEffect(() => {
     if (activeIndex >= 0 && listRef.current) {
@@ -92,14 +86,11 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
     }
   }, [activeIndex]);
 
-  const handleBackdropClick = useCallback(
-    (e: React.MouseEvent) => {
+  const handleBackdropClick = (e: React.MouseEvent) => {
       if (e.target === e.currentTarget) {
         onClose();
       }
-    },
-    [onClose],
-  );
+    };
 
   const renderResults = () => {
     if (!query.trim()) {

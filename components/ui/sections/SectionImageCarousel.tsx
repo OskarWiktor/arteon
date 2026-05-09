@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '../Wrapper';
@@ -24,13 +24,13 @@ interface SectionImageCarouselProps {
 export default function SectionImageCarousel({ title, slides, overlay = false, variant = 'default', autoPlay = false, autoPlayInterval = 5000 }: SectionImageCarouselProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const goToPrev = useCallback(() => {
+  const goToPrev = () => {
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  }, [slides.length]);
+  };
 
-  const goToNext = useCallback(() => {
+  const goToNext = () => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  }, [slides.length]);
+  };
 
   useEffect(() => {
     if (!autoPlay || slides.length <= 1) return;

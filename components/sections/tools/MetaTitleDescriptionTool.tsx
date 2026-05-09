@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
@@ -59,11 +59,11 @@ export default function MetaTitleDescriptionTool() {
   const [description, setDescription] = useState('');
   const [url, setUrl] = useState('arteonagency.pl/podstrona');
 
-  const titleAnalysis = useMemo(() => analyzeTitle(title, t), [title, t]);
-  const descriptionAnalysis = useMemo(() => analyzeDescription(description, t), [description, t]);
+  const titleAnalysis = analyzeTitle(title, t);
+  const descriptionAnalysis = analyzeDescription(description, t);
 
-  const previewTitle = useMemo(() => truncateForPreview(title || t.exampleTitle, 65), [title, t.exampleTitle]);
-  const previewDescription = useMemo(() => truncateForPreview(description || t.exampleDescription, 165), [description, t.exampleDescription]);
+  const previewTitle = truncateForPreview(title || t.exampleTitle, 65);
+  const previewDescription = truncateForPreview(description || t.exampleDescription, 165);
 
   return (
     <>

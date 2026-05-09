@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useState, type Dispatch, type FormEvent, type SetStateAction } from 'react';
+import { useState, type Dispatch, type FormEvent, type SetStateAction } from 'react';
 import { convertImageFileToWebpSmart, getWebpFileName } from '@/lib/tools/image/webp';
 import type { WebpQueueItem } from '@/lib/tools/image/webpQueue';
 
@@ -31,8 +31,7 @@ type UseWebpConversionOptions = {
 export function useWebpConversion(options: UseWebpConversionOptions) {
   const [isConverting, setIsConverting] = useState(false);
 
-  const handleSubmit = useCallback(
-    async (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
       e.preventDefault();
       options.setGlobalError(null);
       options.setCopyInfo(null);
@@ -116,9 +115,7 @@ export function useWebpConversion(options: UseWebpConversionOptions) {
       } finally {
         setIsConverting(false);
       }
-    },
-    [options],
-  );
+    };
 
   return { isConverting, handleSubmit };
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { startTransition, useEffect, useMemo, useRef, useState } from 'react';
+import { startTransition, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
@@ -70,7 +70,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
   const btnRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
 
-  const links = useMemo(() => getAlternateLinks(pathname, locale), [pathname, locale]);
+  const links = getAlternateLinks(pathname, locale);
   const t = useDictionary().languageSwitcher;
   const currentConfig = useLocaleConfig();
 
@@ -100,8 +100,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
 
   useScrollLock(variant === 'mobile' && isOpen);
 
-  const { popularCols, otherCols, popularMobileCols, otherMobileCols, popularSorted, otherSorted } = useMemo(() => {
-    const popular = links.filter((l) => POPULAR_LOCALES.includes(l.locale));
+  const { popularCols, otherCols, popularMobileCols, otherMobileCols, popularSorted, otherSorted } = (() => { const popular = links.filter((l) => POPULAR_LOCALES.includes(l.locale));
     const other = links.filter((l) => !POPULAR_LOCALES.includes(l.locale));
     const pSorted = [...popular].sort((a, b) => a.name.localeCompare(b.name));
     const oSorted = [...other].sort((a, b) => a.name.localeCompare(b.name));
@@ -112,8 +111,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
       otherCols: splitIntoColumns(oSorted, 3),
       popularMobileCols: splitIntoColumns(pSorted, 2),
       otherMobileCols: splitIntoColumns(oSorted, 2),
-    };
-  }, [links]);
+    }; })();
 
   if (links.length === 0) return null;
 

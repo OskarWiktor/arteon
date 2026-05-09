@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState, type FormEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 import Button from '@/components/ui/buttons/Button';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
@@ -45,18 +45,14 @@ export default function ColorPaletteGenerator() {
   const [inputColor, setInputColor] = useState(DEFAULT_BASE_COLOR);
   const { start: startCopiedReset } = useTimeout();
 
-  const normalizedBase = useMemo(() => normalizeHex(baseColor), [baseColor]);
-  const paletteMeta = useMemo(() => getPaletteMeta(t), [t]);
-  const palettes = useMemo(
-    () =>
-      normalizedBase
+  const normalizedBase = normalizeHex(baseColor);
+  const paletteMeta = getPaletteMeta(t);
+  const palettes = normalizedBase
         ? createPaletteFromHex(normalizedBase).map((group) => ({
             ...group,
             ...paletteMeta[group.id],
           }))
-        : [],
-    [normalizedBase, paletteMeta],
-  );
+        : [];
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();

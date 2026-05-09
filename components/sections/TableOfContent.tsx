@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Card from '../ui/Card';
 
 type Entry = { id: string; text: string; level: 2 | 3 };
@@ -67,7 +67,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
     return () => obs.disconnect();
   }, [rootSelector, levels]);
 
-  const hasItems = useMemo(() => items.length > 0, [items]);
+  const hasItems = items.length > 0;
   if (!hasItems) return null;
 
   const widthClass = size === 'small' ? 'lg:w-[208px]' : 'lg:w-[300px]';

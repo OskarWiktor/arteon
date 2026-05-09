@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState, type FormEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 import Button from '@/components/ui/buttons/Button';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
@@ -211,7 +211,7 @@ export default function FaviconGenerator() {
     setSourceFile(null);
   }
 
-  const totalSize = useMemo(() => outputs.reduce((sum, file) => sum + file.sizeBytes, 0), [outputs]);
+  const totalSize = outputs.reduce((sum, file) => sum + file.sizeBytes, 0);
 
   const hasSource = !!sourceFile;
   const isProcessing = status === 'processing';

@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useMemo } from 'react';
+import { useRef } from 'react';
 import { CarouselDots } from '@/components/ui/carousel/CarouselDots';
 import { CarouselNavButtons } from '@/components/ui/carousel/CarouselNavButtons';
 import CarouselCard from '@/components/ui/carousel/CarouselCard';
@@ -25,8 +25,7 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = 'Na
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
 
-  const finalProjects = useMemo(() => {
-    const slugsArray = typeof slugs === 'string' ? [slugs] : slugs;
+  const finalProjects = (() => { const slugsArray = typeof slugs === 'string' ? [slugs] : slugs;
     let list: ProjectPreview[];
 
     if (slugsArray && slugsArray.length) {
@@ -42,8 +41,7 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = 'Na
       list = list.filter((p) => p.slug !== excludeSlug);
     }
 
-    return list.slice(0, max);
-  }, [projects, slugs, category, excludeSlug, max]);
+    return list.slice(0, max); })();
 
   const { currentSlide, maxSlides, isScrollable, scrollByCards, goToSlide, onKeyDown } = useCarouselScroller({
     itemCount: finalProjects.length,
