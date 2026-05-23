@@ -141,8 +141,8 @@ export default function AppearancePanel({
             <label key={side} className='flex cursor-pointer items-center gap-1.5'>
               <Checkbox
                 checked={styleConfig.border[side]}
-                onChange={e => {
-                  const newBorder = { ...styleConfig.border, [side]: e.target.checked };
+                onChange={checked => {
+                  const newBorder = { ...styleConfig.border, [side]: checked };
                   const allSelected =
                     newBorder.left && newBorder.right && newBorder.top && newBorder.bottom;
                   if (allSelected) {

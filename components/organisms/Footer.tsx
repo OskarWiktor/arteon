@@ -225,7 +225,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </small>
               {localeLegalLinks.map(link => (
                 <p key={link.key}>
-                  <InlineLink href={link.href} display='inline-block' className='text-sm'>
+                  <InlineLink href={link.href} className='text-sm'>
                     {link.label}
                   </InlineLink>
                 </p>
@@ -339,7 +339,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm'>
                 {gfxLeft.map(({ href, title }) => (
                   <li key={href}>
-                    <InlineLink className='text-left text-sm' href={href} display='inline-block'>
+                    <InlineLink className='text-left text-sm' href={href}>
                       {title}
                     </InlineLink>
                   </li>
@@ -355,7 +355,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
                 {gfxRight.map(({ href, title }) => (
                   <li key={href}>
-                    <InlineLink className='text-left text-sm' href={href} display='inline-block'>
+                    <InlineLink className='text-left text-sm' href={href}>
                       {title}
                     </InlineLink>
                   </li>
@@ -423,7 +423,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </small>
               {PL_LEGAL_LINKS.map(({ href, label }) => (
                 <p key={href}>
-                  <InlineLink href={href} display='inline-block' className='text-light text-sm'>
+                  <InlineLink href={href} className='text-light text-sm'>
                     {label}
                   </InlineLink>
                 </p>

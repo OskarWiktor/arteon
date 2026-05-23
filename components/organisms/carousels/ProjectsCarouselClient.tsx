@@ -72,7 +72,7 @@ export default function ProjectsCarouselClient({
         title={title}
         titleId='projects-heading'
         buttonText='Sprawdź wszystkie realizacje'
-        buttonhref='/realizacje'
+        buttonLink='/realizacje'
       />
 
       <div className='relative'>

@@ -176,7 +176,6 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
           <ToolSection className='space-y-3'>
             <h2 className='h6'>Base64</h2>
             <Textarea
-              variant='tool'
               className='min-h-[300px] resize-y'
               value={base64}
               readOnly
@@ -206,7 +205,6 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
         <ToolSection className='space-y-3'>
           <h2 className='h6'>Base64</h2>
           <Textarea
-            variant='tool'
             className='min-h-[300px] w-full resize-y'
             value={base64}
             onChange={e => setBase64(e.target.value)}

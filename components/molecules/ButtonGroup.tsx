@@ -6,10 +6,10 @@ type AlignClasses = 'left' | 'center' | 'right';
 
 interface ButtonGroupProps {
   btnOne?: string;
-  btnOneHref: string;
+  btnOneHref?: string;
   btnOneVariant?: 'accent' | 'normal';
   btnTwo?: string;
-  btnTwoHref: string;
+  btnTwoHref?: string;
   btnTwoVariant?: 'accent' | 'normal';
   className?: string;
   spacing?: SpacingClasses;
@@ -55,12 +55,12 @@ export default function ButtonGroup({
       role={role}
       aria-label={ariaLabel}
     >
-      {btnOne && (
+      {btnOne && btnOneHref && (
         <ButtonLink arrow variant={btnOneVariant} href={btnOneHref}>
           {btnOne}
         </ButtonLink>
       )}
-      {btnTwo && (
+      {btnTwo && btnTwoHref && (
         <ButtonLink arrow variant={btnTwoVariant} href={btnTwoHref}>
           {btnTwo}
         </ButtonLink>

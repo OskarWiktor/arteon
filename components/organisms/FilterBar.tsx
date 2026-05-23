@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
 import { RiCloseLine, RiCheckLine, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
-import Button from '@/components/atoms/buttons/Button';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import ButtonLink from '../atoms/buttons/ButtonLink';

@@ -10,7 +10,7 @@ import SectionHeader from '../molecules/SectionHeader';
 
 type ContactFormProps = {
   title: string;
-  description: React.ReactNode;
+  description?: React.ReactNode;
   defaultSubject?: string;
   action?: string;
   messagePlaceholder?: string;

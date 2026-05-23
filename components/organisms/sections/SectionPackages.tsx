@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
 import { RiCheckLine, RiCloseLine } from 'react-icons/ri';
-import Wrapper from '../Wrapper';
-import SectionHeader from '../typography/SectionHeader';
-import ButtonGroup from '../buttons/ButtonGroup';
+import Wrapper from '@/components/atoms/Wrapper';
+import SectionHeader from '@/components/molecules/SectionHeader';
+import ButtonGroup from '@/components/molecules/ButtonGroup';
 
 interface PackageFeature {
   name: string;
@@ -121,9 +121,9 @@ export default function SectionPackages({
 
         <ButtonGroup
           btnOne={btnOne}
-          btnOneLink={btnOneLink}
+          btnOneHref={btnOneLink}
           btnTwo={btnTwo}
-          btnTwoLink={btnTwoLink}
+          btnTwoHref={btnTwoLink}
           spacing='loose'
           ariaLabel='Działania sekcji'
           role='group'

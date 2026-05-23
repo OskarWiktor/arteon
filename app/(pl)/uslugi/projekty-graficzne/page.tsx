@@ -11,7 +11,6 @@ import FaqPanels from '@/components/molecules/FaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import { IoAccessibilityOutline, IoColorPalette } from 'react-icons/io5';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import Button from '@/components/atoms/buttons/Button';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import {
