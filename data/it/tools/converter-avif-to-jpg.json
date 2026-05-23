@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converti file AVIF in JPG universale. Compatibile con ogni programma e piattaforma. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
-      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convertire AVIF in JPG", "Conversione AVIF in JPG", "Convertitore AVIF in JPG gratuito"]
+      "featureList": [
+        "AVIF to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convertire AVIF in JPG",
+        "Conversione AVIF in JPG",
+        "Convertitore AVIF in JPG gratuito"
+      ]
     },
     "howTo": {
       "name": "AVIF to JPG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs JPG – confronto dei formati",
-      "plans": [
+      "labelHeader": "Funzionalità",
+      "cols": ["AVIF", "JPG"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Compressione con perdita",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Compressione senza perdita",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Trasparenza (canale alfa)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Supporto animazione",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Supporto browser",
+          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Tutti i browser"]
+        },
+        {
+          "label": "Profondità colore",
+          "values": ["8/10/12-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Dimensione file compatta",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadati (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressione con perdita",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Compressione senza perdita",
-          "values": {
-            "avif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Trasparenza (canale alfa)",
-          "values": {
-            "avif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Supporto animazione",
-          "values": {
-            "avif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Supporto browser",
-          "values": {
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
-            "jpg": "Tutti i browser"
-          }
-        },
-        {
-          "name": "Profondità colore",
-          "values": {
-            "avif": "8/10/12-bit, HDR",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Dimensione file compatta",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadati (EXIF)",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funzionalità"
+      ]
     },
     {
       "type": "gap",

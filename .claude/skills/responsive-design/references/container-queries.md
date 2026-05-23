@@ -424,12 +424,16 @@ module.exports = {
 function Card({ title, image, description }) {
   return (
     // @container creates containment context
-    <div className="@container">
-      <article className="flex flex-col @md:flex-row @md:gap-4">
-        <img src={image} alt="" className="aspect-video w-full rounded-md object-cover @md:aspect-square @md:w-48 @lg:w-64" />
-        <div className="p-4 @md:p-0">
-          <h2 className="text-lg font-semibold @md:text-xl @lg:text-2xl">{title}</h2>
-          <p className="text-muted-foreground mt-2 @lg:text-lg">{description}</p>
+    <div className='@container'>
+      <article className='flex flex-col @md:flex-row @md:gap-4'>
+        <img
+          src={image}
+          alt=''
+          className='aspect-video w-full rounded-md object-cover @md:aspect-square @md:w-48 @lg:w-64'
+        />
+        <div className='p-4 @md:p-0'>
+          <h2 className='text-lg font-semibold @md:text-xl @lg:text-2xl'>{title}</h2>
+          <p className='text-muted-foreground mt-2 @lg:text-lg'>{description}</p>
         </div>
       </article>
     </div>
@@ -439,11 +443,11 @@ function Card({ title, image, description }) {
 // Named containers
 function Dashboard() {
   return (
-    <div className="@container/main">
-      <aside className="@container/sidebar">
-        <nav className="flex flex-col @lg/sidebar:flex-row">{/* ... */}</nav>
+    <div className='@container/main'>
+      <aside className='@container/sidebar'>
+        <nav className='flex flex-col @lg/sidebar:flex-row'>{/* ... */}</nav>
       </aside>
-      <main className="@lg/main:grid @lg/main:grid-cols-2">{/* ... */}</main>
+      <main className='@lg/main:grid @lg/main:grid-cols-2'>{/* ... */}</main>
     </div>
   );
 }
@@ -539,7 +543,7 @@ function Dashboard() {
 const supportsContainerQueries = CSS.supports('container-type', 'inline-size');
 
 // Resize observer for testing
-const observer = new ResizeObserver((entries) => {
+const observer = new ResizeObserver(entries => {
   for (const entry of entries) {
     console.log('Container width:', entry.contentRect.width);
   }

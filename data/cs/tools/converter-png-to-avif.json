@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Prevedte grafiku PNG na AVIF s podporou pruhlednosti. Vyrazne mensi soubory. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
-      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
-      "alternateName": ["Převést PNG na AVIF", "Konverze PNG do AVIF", "Převodník PNG na AVIF zdarma"]
+      "featureList": [
+        "Konverze do AVIF",
+        "Nastavení kvality (60-95%)",
+        "Dávková konverze",
+        "Lokální zpracování v prohlížeči"
+      ],
+      "alternateName": [
+        "Převést PNG na AVIF",
+        "Konverze PNG do AVIF",
+        "Převodník PNG na AVIF zdarma"
+      ]
     },
     "howTo": {
       "name": "Jak převést PNG na AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs AVIF – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["PNG", "AVIF"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Ztrátová komprese",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Všechny prohlížeče", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["8/16-bit", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "png": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "png": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "png": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "png": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "png": "Všechny prohlížeče",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "png": "8/16-bit",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "png": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "png": false,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

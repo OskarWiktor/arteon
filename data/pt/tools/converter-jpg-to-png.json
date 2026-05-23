@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Conversor JPG para PNG",
-      "alternateName": ["Converter JPG para PNG", "Conversão de JPG para PNG", "Conversor JPG para PNG grátis"],
+      "alternateName": [
+        "Converter JPG para PNG",
+        "Conversão de JPG para PNG",
+        "Conversor JPG para PNG grátis"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta imagens JPG para PNG sem perdas. Conversão local no navegador. Ferramenta gratuita no navegador - sem registo, sem limites, privacidade total.",
-      "featureList": ["Conversão de JPG para PNG", "Saída PNG sem perdas", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
+      "featureList": [
+        "Conversão de JPG para PNG",
+        "Saída PNG sem perdas",
+        "Conversão em lote",
+        "Processamento local no navegador",
+        "Sem envio de ficheiros"
+      ]
     },
     "howTo": {
       "name": "Como converter JPG para PNG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs PNG – comparação de formatos",
-      "plans": [
+      "labelHeader": "Funcionalidade",
+      "cols": ["JPG", "PNG"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Compressão com perda",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Compressão sem perda",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparência (canal alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suporte a animação",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Suporte em navegadores",
+          "values": ["Todos os navegadores", "Todos os navegadores"]
+        },
+        {
+          "label": "Profundidade de cor",
+          "values": ["8-bit (16.7M)", "8/16-bit"]
+        },
+        {
+          "label": "Tamanho de ficheiro compacto",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadados (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressão com perda",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Compressão sem perda",
-          "values": {
-            "jpg": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparência (canal alfa)",
-          "values": {
-            "jpg": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Suporte a animação",
-          "values": {
-            "jpg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Suporte em navegadores",
-          "values": {
-            "jpg": "Todos os navegadores",
-            "png": "Todos os navegadores"
-          }
-        },
-        {
-          "name": "Profundidade de cor",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Tamanho de ficheiro compacto",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadados (EXIF)",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funcionalidade"
+      ]
     },
     {
       "type": "gap",

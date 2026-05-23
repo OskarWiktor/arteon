@@ -1,13 +1,17 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import HeroBanner from '@/components/sections/HeroBanner';
-import Gap from '@/components/ui/Gap';
-import Wrapper from '@/components/ui/Wrapper';
-import ArticlesList from '@/components/sections/blog/ArticlesList';
-import FilterBar from '@/components/sections/blog/FilterBar';
-import { getAllArticlePreviews, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blogDataService';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import Wrapper from '@/components/atoms/Wrapper';
+import ArticlesList from '@/components/organisms/ArticlesList';
+import FilterBar from '@/components/organisms/FilterBar';
+import {
+  getAllArticlePreviews,
+  getCategoriesWithCount,
+  getPrimaryCategorySlug,
+} from '@/lib/blogDataService';
 import { slugify } from '@/utils/slugify';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import Divider from '@/components/atoms/Divider';
 
 const DEFAULT_META_DESCRIPTION = (label: string) => `Artykuły i poradniki: ${label}.`;
 
@@ -26,64 +30,90 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
 > = {
   seo: {
     heroDescription: 'Artykuły o pozycjonowaniu i widoczności w Google.',
-    metaDescription: 'Dowiedz się, jak poprawić widoczność strony w Google. Sprawdź dostępne praktyczne artykuły o SEO, pozycjonowaniu i optymalizacji .',
-    openGraphDescription: 'Praktyczne artykuły o SEO, pozycjonowaniu i optymalizacji stron w Google.',
-    heroImage: '/assets/blog/meta-title-i-description-jak-je-napisac/meta-title-i-description-jak-je-napisac.webp',
+    metaDescription:
+      'Dowiedz się, jak poprawić widoczność strony w Google. Sprawdź dostępne praktyczne artykuły o SEO, pozycjonowaniu i optymalizacji .',
+    openGraphDescription:
+      'Praktyczne artykuły o SEO, pozycjonowaniu i optymalizacji stron w Google.',
+    heroImage:
+      '/assets/blog/meta-title-i-description-jak-je-napisac/meta-title-i-description-jak-je-napisac.webp',
   },
   tresci: {
     heroDescription: 'Artykuły o tworzeniu treści i copywritingu.',
-    metaDescription: 'Zobacz, jak pisać treści, które przyciągają klientów i wspierają SEO. Sprawdź dostępne poradniki o copywritingu, nagłówkach i strukturze tekstów na stronę.',
-    openGraphDescription: 'Poradniki o copywritingu, nagłówkach i strukturze tekstów na stronę internetową.',
-    heroImage: '/assets/blog/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony.webp',
+    metaDescription:
+      'Zobacz, jak pisać treści, które przyciągają klientów i wspierają SEO. Sprawdź dostępne poradniki o copywritingu, nagłówkach i strukturze tekstów na stronę.',
+    openGraphDescription:
+      'Poradniki o copywritingu, nagłówkach i strukturze tekstów na stronę internetową.',
+    heroImage:
+      '/assets/blog/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony.webp',
   },
   grafika: {
     heroDescription: 'Poradniki o grafice i projektach wizualnych.',
-    metaDescription: 'Dowiedz się, jak dobierać kolory, tworzyć spójne projekty i przygotowywać grafiki dla firmy. Sprawdź dostępne praktyczne poradniki o grafice i designie.',
-    openGraphDescription: 'Praktyczne poradniki o grafice, kolorach i projektach wizualnych dla firm.',
-    heroImage: '/assets/blog/jak-dobrac-kolory-do-strony-internetowej/jak-dobrac-kolory-do-strony-internetowej.webp',
+    metaDescription:
+      'Dowiedz się, jak dobierać kolory, tworzyć spójne projekty i przygotowywać grafiki dla firmy. Sprawdź dostępne praktyczne poradniki o grafice i designie.',
+    openGraphDescription:
+      'Praktyczne poradniki o grafice, kolorach i projektach wizualnych dla firm.',
+    heroImage:
+      '/assets/blog/jak-dobrac-kolory-do-strony-internetowej/jak-dobrac-kolory-do-strony-internetowej.webp',
   },
   psychologia: {
     heroDescription: 'Artykuły o psychologii decyzji i zachowaniach klientów.',
-    metaDescription: 'Dowiedz się, jak kolory, układ strony i treści wpływają na decyzje klientów. Sprawdź dostępne artykuły o psychologii sprzedaży i zachowaniach użytkowników.',
-    openGraphDescription: 'Artykuły o psychologii sprzedaży, decyzjach zakupowych i zachowaniach użytkowników.',
-    heroImage: '/assets/blog/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow.webp',
+    metaDescription:
+      'Dowiedz się, jak kolory, układ strony i treści wpływają na decyzje klientów. Sprawdź dostępne artykuły o psychologii sprzedaży i zachowaniach użytkowników.',
+    openGraphDescription:
+      'Artykuły o psychologii sprzedaży, decyzjach zakupowych i zachowaniach użytkowników.',
+    heroImage:
+      '/assets/blog/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow.webp',
   },
   strony: {
     heroDescription: 'Artykuły o stronach internetowych, ich tworzeniu i optymalizacji.',
-    metaDescription: 'Sprawdź, co powinna zawierać dobra strona internetowa. Sprawdź dostępne artykuły o tworzeniu, optymalizacji i utrzymaniu stron .',
+    metaDescription:
+      'Sprawdź, co powinna zawierać dobra strona internetowa. Sprawdź dostępne artykuły o tworzeniu, optymalizacji i utrzymaniu stron .',
     openGraphDescription: 'Artykuły o tworzeniu, optymalizacji i utrzymaniu stron internetowych.',
-    heroImage: '/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp',
+    heroImage:
+      '/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp',
   },
   sklepy: {
     heroDescription: 'Artykuły o sklepach internetowych i e-commerce.',
-    metaDescription: 'Dowiedz się, jak prowadzić skuteczny sklep internetowy. Sprawdź dostępne artykuły o e-commerce, płatnościach, dostawach i optymalizacji sprzedaży online.',
-    openGraphDescription: 'Artykuły o e-commerce, płatnościach i optymalizacji sklepów internetowych.',
-    heroImage: '/assets/blog/jak-przygotowac-sklep-internetowy-do-pozycjonowania/jak-przygotowac-sklep-internetowy-do-pozycjonowania.webp',
+    metaDescription:
+      'Dowiedz się, jak prowadzić skuteczny sklep internetowy. Sprawdź dostępne artykuły o e-commerce, płatnościach, dostawach i optymalizacji sprzedaży online.',
+    openGraphDescription:
+      'Artykuły o e-commerce, płatnościach i optymalizacji sklepów internetowych.',
+    heroImage:
+      '/assets/blog/jak-przygotowac-sklep-internetowy-do-pozycjonowania/jak-przygotowac-sklep-internetowy-do-pozycjonowania.webp',
   },
   marketing: {
     heroDescription: 'Artykuły o marketingu i promocji firmy.',
-    metaDescription: 'Dowiedz się, jak skutecznie promować firmę w internecie. Sprawdź dostępne artykuły o marketingu, reklamie i strategiach pozyskiwania klientów online.',
-    openGraphDescription: 'Artykuły o marketingu, reklamie i strategiach pozyskiwania klientów online.',
+    metaDescription:
+      'Dowiedz się, jak skutecznie promować firmę w internecie. Sprawdź dostępne artykuły o marketingu, reklamie i strategiach pozyskiwania klientów online.',
+    openGraphDescription:
+      'Artykuły o marketingu, reklamie i strategiach pozyskiwania klientów online.',
     heroImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
   },
 };
 
 export async function generateStaticParams() {
   const cats = getCategoriesWithCount();
-  return cats.map((c) => ({ category: c.slug }));
+  return cats.map(c => ({ category: c.slug }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ category: string }>;
+}): Promise<Metadata> {
   const { category } = await params;
   const cats = getCategoriesWithCount();
-  const current = cats.find((c) => c.slug === category);
+  const current = cats.find(c => c.slug === category);
   const label = current?.label || category.replace(/-/g, ' ');
   const url = `${siteUrl}/edukacja/${category}`;
 
   const content = CATEGORY_CONTENT_BY_SLUG[category];
   const description = content?.metaDescription ?? DEFAULT_META_DESCRIPTION(label);
-  const openGraphDescription = content?.openGraphDescription ?? DEFAULT_OPEN_GRAPH_DESCRIPTION(label);
-  const ogImage = content?.heroImage ? toAbsoluteUrl(content.heroImage) : toAbsoluteUrl('/assets/ogien.webp');
+  const openGraphDescription =
+    content?.openGraphDescription ?? DEFAULT_OPEN_GRAPH_DESCRIPTION(label);
+  const ogImage = content?.heroImage
+    ? toAbsoluteUrl(content.heroImage)
+    : toAbsoluteUrl('/assets/ogien.webp');
 
   const expandedTitles: Record<string, string> = {
     seo: 'Artykuły o SEO i pozycjonowaniu stron - Arteon',
@@ -113,10 +143,14 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   };
 }
 
-export default async function EdukacjaCategoryPage({ params }: { params: Promise<{ category: string }> }) {
+export default async function EdukacjaCategoryPage({
+  params,
+}: {
+  params: Promise<{ category: string }>;
+}) {
   const { category } = await params;
   const cats = getCategoriesWithCount();
-  const hasAny = getAllArticlePreviews().some((a) => {
+  const hasAny = getAllArticlePreviews().some(a => {
     return a.primaryCategory && slugify(a.primaryCategory) === category;
   });
 
@@ -124,7 +158,7 @@ export default async function EdukacjaCategoryPage({ params }: { params: Promise
     notFound();
   }
 
-  const label = cats.find((c) => c.slug === category)?.label ?? category.replace(/-/g, ' ');
+  const label = cats.find(c => c.slug === category)?.label ?? category.replace(/-/g, ' ');
 
   const content = CATEGORY_CONTENT_BY_SLUG[category];
   const heroDescription = content?.heroDescription ?? DEFAULT_HERO_DESCRIPTION(label);
@@ -132,16 +166,21 @@ export default async function EdukacjaCategoryPage({ params }: { params: Promise
 
   return (
     <>
-      <HeroBanner title={label} description={heroDescription} backgroundImage={heroImage} overlay="black" />
+      <HeroBanner
+        title={label}
+        description={heroDescription}
+        backgroundImage={heroImage}
+        overlay='black'
+      />
       <Wrapper>
-        <Gap size="sm" />
+        <Divider size='sm' />
         <FilterBar cats={cats} active={category} />
         <ArticlesList filterCategorySlug={category} />
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
       <script
-        type="application/ld+json"
+        type='application/ld+json'
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
@@ -150,7 +189,7 @@ export default async function EdukacjaCategoryPage({ params }: { params: Promise
             mainEntity: {
               '@type': 'ItemList',
               itemListElement: getAllArticlePreviews()
-                .filter((a) => {
+                .filter(a => {
                   return a.primaryCategory && slugify(a.primaryCategory) === category;
                 })
                 .map((a, i) => ({

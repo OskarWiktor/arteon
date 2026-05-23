@@ -83,9 +83,9 @@
         "title": "Chcesz poprawić widoczność swojej strony?",
         "description": "Przeprowadzamy audyty SEO, które identyfikują problemy z kanibalizacją i pomagają uporządkować strukturę treści.",
         "btnOne": "Sprawdź ofertę audytu SEO",
-        "btnOneLink": "/uslugi/marketing/audyt-seo",
+        "btnOneHref": "/uslugi/marketing/audyt-seo",
         "btnTwo": "Skontaktuj się",
-        "btnTwoLink": "/kontakt",
+        "btnTwoHref": "/kontakt",
         "backgroundImage": "/assets/blog/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac.webp",
         "overlay": "black"
       },
@@ -199,9 +199,9 @@
         "title": "Chcesz mieć szybką stronę z dobrymi wynikami Core Web Vitals?",
         "description": "Tworzymy strony internetowe zoptymalizowane pod kątem wydajności.",
         "btnOne": "Sprawdź ofertę stron internetowych",
-        "btnOneLink": "/uslugi/tworzenie-stron-wordpress",
+        "btnOneHref": "/uslugi/tworzenie-stron-wordpress",
         "btnTwo": "Skontaktuj się",
-        "btnTwoLink": "/kontakt",
+        "btnTwoHref": "/kontakt",
         "backgroundImage": "/assets/blog/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google.webp",
         "overlay": "black"
       },
@@ -315,9 +315,9 @@
         "title": "Chcesz poprawić widoczność strony w Google?",
         "description": "Analizujemy strukturę witryny, linkowanie wewnętrzne i treści. Pomagamy budować klastry tematyczne, które zwiększają pozycję w wynikach wyszukiwania.",
         "btnOne": "Pozycjonowanie stron",
-        "btnOneLink": "/uslugi/marketing/pozycjonowanie-stron",
+        "btnOneHref": "/uslugi/marketing/pozycjonowanie-stron",
         "btnTwo": "Skontaktuj się",
-        "btnTwoLink": "/kontakt",
+        "btnTwoHref": "/kontakt",
         "backgroundImage": "/assets/blog/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony.webp",
         "overlay": "black"
       },
@@ -432,9 +432,9 @@
         "title": "Chcesz wiedzieć, czy strona działa prawidłowo?",
         "description": "Przeanalizujemy stronę i pokażemy, co działa dobrze, a co wymaga poprawy. Działamy w oparciu o dane, nie domysły.",
         "btnOne": "Audyt SEO",
-        "btnOneLink": "/uslugi/marketing/audyt-seo",
+        "btnOneHref": "/uslugi/marketing/audyt-seo",
         "btnTwo": "Skontaktuj się",
-        "btnTwoLink": "/kontakt",
+        "btnTwoHref": "/kontakt",
         "backgroundImage": "/assets/blog/jak-mierzyc-skutecznosc-strony-internetowej/jak-mierzyc-skutecznosc-strony-internetowej.webp",
         "overlay": "black"
       },
@@ -544,9 +544,9 @@
         "title": "Chcesz być lepiej widoczny w Google?",
         "description": "Profil Google Moja Firma to dopiero początek. Zajmujemy się pozycjonowaniem lokalnym i pomagamy firmom docierać do klientów w ich okolicy.",
         "btnOne": "Pozycjonowanie stron",
-        "btnOneLink": "/uslugi/marketing/pozycjonowanie-stron",
+        "btnOneHref": "/uslugi/marketing/pozycjonowanie-stron",
         "btnTwo": "Skontaktuj się",
-        "btnTwoLink": "/kontakt",
+        "btnTwoHref": "/kontakt",
         "backgroundImage": "/assets/blog/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma.webp",
         "overlay": "black"
       },
@@ -651,9 +651,9 @@
         "title": "Chcesz poprawić widoczność strony w Google?",
         "description": "Sprawdź długość meta tagów w darmowym narzędziu lub zapytaj o optymalizację SEO - pomożemy zadbać o tytuły, opisy i całą widoczność strony.",
         "btnOne": "Licznik meta tagów",
-        "btnOneLink": "/narzedzia/licznik-dlugosci-meta-title-i-description",
+        "btnOneHref": "/narzedzia/licznik-dlugosci-meta-title-i-description",
         "btnTwo": "Optymalizacja SEO",
-        "btnTwoLink": "/uslugi/marketing/optymalizacja-seo",
+        "btnTwoHref": "/uslugi/marketing/optymalizacja-seo",
         "backgroundImage": "/assets/blog/meta-title-i-description-jak-je-napisac/meta-title-i-description-jak-je-napisac.webp",
         "overlay": "black"
       },
@@ -773,9 +773,9 @@
         "title": "Przygotuj sklep do pozycjonowania",
         "description": "Sprawdź, czy sklep ma solidne fundamenty pod SEO. Pomagamy uporządkować strukturę, treści i technikalia, aby pozycjonowanie miało realny sens.",
         "btnOne": "Sklepy internetowe",
-        "btnOneLink": "/uslugi/sklepy-internetowe",
+        "btnOneHref": "/uslugi/sklepy-internetowe",
         "btnTwo": "Pozycjonowanie stron",
-        "btnTwoLink": "/uslugi/marketing/pozycjonowanie-stron",
+        "btnTwoHref": "/uslugi/marketing/pozycjonowanie-stron",
         "backgroundImage": "/assets/blog/jak-przygotowac-sklep-internetowy-do-pozycjonowania/jak-przygotowac-sklep-internetowy-do-pozycjonowania.webp",
         "overlay": "black"
       },
@@ -890,9 +890,9 @@
         "title": "Potrzebujesz wsparcia w ułożeniu treści na stronie?",
         "description": "Jeśli nie jesteś pewien jak ułożyć pytania i odpowiedzi lub nie masz czasu tego zrobić - napisz do nas, z chęcią Ci w tym pomożemy.",
         "btnOne": "Przejdź do kontaktu",
-        "btnOneLink": "/kontakt",
+        "btnOneHref": "/kontakt",
         "btnTwo": "Sprawdź ofertę audytu SEO",
-        "btnTwoLink": "/uslugi/marketing/audyt-seo",
+        "btnTwoHref": "/uslugi/marketing/audyt-seo",
         "backgroundImage": "/assets/blog/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony.webp",
         "overlay": "black"
       },
@@ -1037,7 +1037,7 @@
         "title": "Zacznij proces pozycjonowania swojej strony",
         "description": "Sprawdź naszą ofertę pozycjonowania stron i skontaktuj się, aby zobaczyć, jaki plan działań SEO będzie dla Ciebie najlepszy.",
         "btnOne": "Pozycjonowanie stron",
-        "btnOneLink": "/uslugi/marketing/pozycjonowanie-stron",
+        "btnOneHref": "/uslugi/marketing/pozycjonowanie-stron",
         "backgroundImage": "/assets/blog/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty.webp",
         "overlay": "black"
       }
@@ -1147,7 +1147,7 @@
         "title": "Zwiększ widoczność swojej strony",
         "description": "Przejdź do oferty pozycjonowania stron i zobacz, jak strategiczny blog na stronie internetowej może zwiększyć widoczność Twojej firmy w Google.",
         "btnOne": "Pozycjonowanie stron",
-        "btnOneLink": "/uslugi/marketing/pozycjonowanie-stron",
+        "btnOneHref": "/uslugi/marketing/pozycjonowanie-stron",
         "backgroundImage": "/assets/blog/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google.webp",
         "overlay": "black"
       }
@@ -1339,9 +1339,9 @@
         "title": "Zamień treści w realny ruch z Google",
         "description": "Strategia treści, struktura H1-H3, linkowanie i E-E-A-T. Napiszemy teksty, które podnoszą pozycje i sprzedaż.",
         "btnOne": "Zamów wycenę",
-        "btnOneLink": "/kontakt",
+        "btnOneHref": "/kontakt",
         "btnTwo": "Sprawdź ofertę",
-        "btnTwoLink": "/uslugi/tworzenie-tresci",
+        "btnTwoHref": "/uslugi/tworzenie-tresci",
         "backgroundImage": "/assets/blog/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google.webp",
         "overlay": "black"
       },
@@ -1589,7 +1589,11 @@
             }
           ],
           "rows": [
-            ["Indeksacja", "Czy strona jest w indeksie (site:twojadomena.pl)?", "Wyszukiwarka Google"],
+            [
+              "Indeksacja",
+              "Czy strona jest w indeksie (site:twojadomena.pl)?",
+              "Wyszukiwarka Google"
+            ],
             ["Plik robots.txt", "Brak blokady Disallow: /", "twojadomena.pl/robots.txt"],
             ["Mapa witryny (sitemap.xml)", "Aktualna, zgłoszona do GSC", "Google Search Console"],
             ["Błędy 404 / 500", "Napraw przekierowania 301", "GSC → Stan"],
@@ -1636,7 +1640,7 @@
         "title": "Zróbmy audyt SEO Twojej strony",
         "description": "Strona nie pojawia się w Google? Wyjaśniamy przyczyny i co można poprawić. Oferujemy audyt techniczny, SEO i contentowy.",
         "btnOne": "Skontaktuj się",
-        "btnOneLink": "/kontakt",
+        "btnOneHref": "/kontakt",
         "backgroundImage": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic.webp",
         "overlay": "black"
       },

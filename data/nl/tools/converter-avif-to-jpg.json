@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer AVIF-bestanden naar universeel JPG. Compatibel met elk programma en platform. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
-      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["AVIF naar JPG omzetten", "AVIF naar JPG conversie", "Gratis AVIF naar JPG converter"]
+      "featureList": [
+        "AVIF to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "AVIF naar JPG omzetten",
+        "AVIF naar JPG conversie",
+        "Gratis AVIF naar JPG converter"
+      ]
     },
     "howTo": {
       "name": "AVIF to JPG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs JPG – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["AVIF", "JPG"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Lossy-compressie",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["8/10/12-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "avif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "avif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "avif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
-            "jpg": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "avif": "8/10/12-bit, HDR",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

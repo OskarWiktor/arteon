@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Reken cm om naar pixels met DPI-ondersteuning.",
-      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+      "featureList": [
+        "Bidirectionele realtime-conversie",
+        "Alle converters op één plek",
+        "Resultaat naar klembord kopiëren",
+        "Lokale berekening in de browser"
+      ]
     },
     "howTo": {
       "name": "Hoe de converter te gebruiken",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI-resoluties vergeleken",
-      "featureLabel": "Eigenschap",
-      "plans": [
+      "labelHeader": "Eigenschap",
+      "cols": ["300 DPI (druk)", "72 DPI (scherm)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "300 DPI (druk)"
+          "label": "10 cm",
+          "values": ["1.181 px", "283 px"]
         },
         {
-          "id": "unit2",
-          "name": "72 DPI (scherm)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "10 cm",
-          "values": {
-            "unit1": "1.181 px",
-            "unit2": "283 px"
-          }
+          "label": "A4 breedte",
+          "values": ["2.480 px", "595 px"]
         },
         {
-          "name": "A4 breedte",
-          "values": {
-            "unit1": "2.480 px",
-            "unit2": "595 px"
-          }
+          "label": "A4 hoogte",
+          "values": ["3.508 px", "842 px"]
         },
         {
-          "name": "A4 hoogte",
-          "values": {
-            "unit1": "3.508 px",
-            "unit2": "842 px"
-          }
+          "label": "Toepassing",
+          "values": ["Professioneel drukwerk", "Webgrafiek"]
         },
         {
-          "name": "Toepassing",
-          "values": {
-            "unit1": "Professioneel drukwerk",
-            "unit2": "Webgrafiek"
-          }
-        },
-        {
-          "name": "Kwaliteit",
-          "values": {
-            "unit1": "Scherp op elk formaat",
-            "unit2": "Alleen voor scherm"
-          }
+          "label": "Kwaliteit",
+          "values": ["Scherp op elk formaat", "Alleen voor scherm"]
         }
       ]
     },

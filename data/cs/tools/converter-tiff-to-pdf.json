@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PDF – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["TIFF", "PDF"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Ztrátová komprese",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Pouze Safari", "Vestavěný prohlížeč PDF"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "tiff": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "tiff": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "tiff": "Pouze Safari",
-            "pdf": "Vestavěný prohlížeč PDF"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "tiff": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

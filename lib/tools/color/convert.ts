@@ -14,7 +14,7 @@ export function hexToRgb(hex: string): RGB | null {
     value = value
       .slice(0, 3)
       .split('')
-      .map((c) => c + c)
+      .map(c => c + c)
       .join('');
   } else if (value.length === 8) {
     // #RRGGBBAA — strip alpha channel
@@ -27,7 +27,7 @@ export function hexToRgb(hex: string): RGB | null {
   const g = parseInt(value.slice(2, 4), 16);
   const b = parseInt(value.slice(4, 6), 16);
 
-  if ([r, g, b].some((v) => Number.isNaN(v))) return null;
+  if ([r, g, b].some(v => Number.isNaN(v))) return null;
 
   return { r, g, b };
 }
@@ -149,9 +149,13 @@ export function parseHsl(color: string): HSLA | null {
 
   const inner = wrapperMatch[1].trim();
 
-  const commaMatch = inner.match(/^([+-]?\d*\.?\d+)(?:deg)?\s*,\s*([+-]?\d*\.?\d+)%\s*,\s*([+-]?\d*\.?\d+)%\s*(?:,\s*([+-]?\d*\.?\d+%?)\s*)?$/i);
+  const commaMatch = inner.match(
+    /^([+-]?\d*\.?\d+)(?:deg)?\s*,\s*([+-]?\d*\.?\d+)%\s*,\s*([+-]?\d*\.?\d+)%\s*(?:,\s*([+-]?\d*\.?\d+%?)\s*)?$/i,
+  );
 
-  const spaceMatch = inner.match(/^([+-]?\d*\.?\d+)(?:deg)?\s+([+-]?\d*\.?\d+)%\s+([+-]?\d*\.?\d+)%\s*(?:\/\s*([+-]?\d*\.?\d+%?)\s*)?$/i);
+  const spaceMatch = inner.match(
+    /^([+-]?\d*\.?\d+)(?:deg)?\s+([+-]?\d*\.?\d+)%\s+([+-]?\d*\.?\d+)%\s*(?:\/\s*([+-]?\d*\.?\d+%?)\s*)?$/i,
+  );
 
   const match = commaMatch ?? spaceMatch;
   if (!match) return null;
@@ -160,7 +164,7 @@ export function parseHsl(color: string): HSLA | null {
   const s = Number(match[2]);
   const l = Number(match[3]);
 
-  if ([h, s, l].some((v) => Number.isNaN(v))) return null;
+  if ([h, s, l].some(v => Number.isNaN(v))) return null;
   if (s < 0 || s > 100 || l < 0 || l > 100) return null;
 
   let a = 1;

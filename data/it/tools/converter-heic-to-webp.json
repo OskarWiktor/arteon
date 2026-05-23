@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converti foto HEIC da iPhone in WebP leggero. Dimensioni ridotte, caricamento rapido. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
-      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convertire HEIC in WEBP", "Conversione HEIC in WEBP", "Convertitore HEIC in WEBP gratuito"]
+      "featureList": [
+        "HEIC to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convertire HEIC in WEBP",
+        "Conversione HEIC in WEBP",
+        "Convertitore HEIC in WEBP gratuito"
+      ]
     },
     "howTo": {
       "name": "HEIC to WebP",
@@ -58,7 +67,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire HEIC in WebP?",
-      "html": "<p class=\"text-mid mb-4\">L'High Efficiency Image Container (HEIC) è il formato predefinito per le foto sui dispositivi Apple da iOS 11. HEIC offre file più leggeri del JPEG a qualità comparabile, ma non è supportato nativamente al di fuori dell'ecosistema Apple – né su Windows, né su Android, né su molte piattaforme web.</p><p class=\"text-mid mb-4\">Il WebP riduce la dimensione del file del 30–35% rispetto ai formati precedenti, senza perdita di qualità visibile. Tutti i browser moderni (Chrome, Firefox, Safari 14+, Edge) supportano pienamente il WebP. Per i siti web, ciò significa tempi di caricamento più rapidi, migliori Core Web Vitals e un miglior posizionamento su Google.</p><p class=\"text-mid mb-4\">Il WebP offre un eccellente equilibrio tra dimensione del file e qualità. La conversione da HEIC a WebP produce file compatti supportati da tutti i browser moderni – ideale per siti web e piattaforme online.</p><p class=\"text-mid\">Questo convertitore funziona interamente in locale nel vostro browser – i file non lasciano mai il vostro dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Pienamente conforme al GDPR e gratuito senza alcuna limitazione.</p>",
+      "html": "<p class=\"text-mid mb-4\">L'High Efficiency Image Container (HEIC) è il formato predefinito per le foto sui dispositivi Apple da iOS 11. HEIC offre file più leggeri del JPEG a qualità comparabile, ma non è supportato nativamente al di fuori dell'ecosistema Apple – né su Windows, né su Android, né su molte piattaforme web.</p><p class=\"text-mid mb-4\">Il WebP riduce la dimensione del file del 30–35% rispetto ai formati precedenti, senza perdita di qualità visibile. Tutti i browser moderni (Chrome, Firefox, Safari 14+, Edge) supportano pienamente il WebP. Per i siti web, ciò significa tempi di caricamento più rapidi, migliori Core Web Vitals e un miglior posizionamento su Google.</p><p class=\"text-mid mb-4\">Il WebP offre un eccellente equilibrio tra dimensione del file e qualità. La conversione da HEIC a WebP produce file compatti supportati da tutti i browser moderni – ideale per siti web e piattaforme.</p><p class=\"text-mid\">Questo convertitore funziona interamente in locale nel vostro browser – i file non lasciano mai il vostro dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Pienamente conforme al GDPR e gratuito senza alcuna limitazione.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Conversione HEIC in WEBP",
       "variant": "right"
@@ -158,85 +167,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da HEIC a WebP nella pratica",
-      "html": "<p class=\"text-mid mb-4\">Usare le foto iPhone HEIC direttamente sui siti web? WebP è il ponte ideale: combina la compressione efficiente di HEIC con la compatibilità universale dei browser (Chrome, Firefox, Safari 14+, Edge).</p><p class=\"text-mid mb-4\">La conversione da HEIC a WebP è particolarmente efficiente, poiché entrambi i formati usano algoritmi di compressione moderni. La dimensione resta compatta, la qualità alta. Per blog, negozi online e portfolio, è il modo più rapido per pubblicare foto iPhone ottimizzate.</p><p class=\"text-mid\">Blogger e e-commerce in Italia possono convertire le foto iPhone localmente e in conformità al GDPR – senza servizi cloud né strumenti esterni.</p>"
+      "html": "<p class=\"text-mid mb-4\">Usare le foto iPhone HEIC direttamente sui siti web? WebP è il ponte ideale: combina la compressione efficiente di HEIC con la compatibilità universale dei browser (Chrome, Firefox, Safari 14+, Edge).</p><p class=\"text-mid mb-4\">La conversione da HEIC a WebP è particolarmente efficiente, poiché entrambi i formati usano algoritmi di compressione moderni. La dimensione resta compatta, la qualità alta. Per blog, negozi e portfolio, è il modo più rapido per pubblicare foto iPhone ottimizzate.</p><p class=\"text-mid\">Blogger e e-commerce in Italia possono convertire le foto iPhone localmente e in conformità al GDPR – senza servizi cloud né strumenti esterni.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs WebP – confronto dei formati",
-      "plans": [
+      "labelHeader": "Funzionalità",
+      "cols": ["HEIC", "WebP"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Compressione con perdita",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compressione senza perdita",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Trasparenza (canale alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Supporto animazione",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Supporto browser",
+          "values": ["Safari 13+ (macOS / iOS)", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Profondità colore",
+          "values": ["8/10-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Dimensione file compatta",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadati (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressione con perdita",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compressione senza perdita",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Trasparenza (canale alfa)",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Supporto animazione",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Supporto browser",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Profondità colore",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Dimensione file compatta",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadati (EXIF)",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funzionalità"
+      ]
     },
     {
       "type": "gap",

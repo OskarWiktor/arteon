@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Muunna RGB CMYK:ksi ja päinvastoin. Painovalmisteluun.",
-      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+      "featureList": [
+        "Kaksisuuntainen reaaliaikainen muunnos",
+        "Kaikki muuntimet yhdessä paikassa",
+        "Kopioi tulos leikepöydälle",
+        "Paikallinen laskenta selaimessa"
+      ]
     },
     "howTo": {
       "name": "Näin käytät muunninta",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "RGB vs CMYK – vertailu",
-      "featureLabel": "Ominaisuus",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["RGB", "CMYK"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "RGB"
+          "label": "Malli",
+          "values": ["Additiivinen (valo)", "Subtraktiivinen (muste)"]
         },
         {
-          "id": "unit2",
-          "name": "CMYK",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Malli",
-          "values": {
-            "unit1": "Additiivinen (valo)",
-            "unit2": "Subtraktiivinen (muste)"
-          }
+          "label": "Käyttö",
+          "values": ["Näytöt, web", "Tulostus, pakkaus"]
         },
         {
-          "name": "Käyttö",
-          "values": {
-            "unit1": "Näytöt, web",
-            "unit2": "Tulostus, pakkaus"
-          }
+          "label": "Väriavaruus",
+          "values": ["Laajempi (enemmän värejä)", "Kapeampi"]
         },
         {
-          "name": "Väriavaruus",
-          "values": {
-            "unit1": "Laajempi (enemmän värejä)",
-            "unit2": "Kapeampi"
-          }
+          "label": "Musta",
+          "values": ["R=0, G=0, B=0", "K=100%"]
         },
         {
-          "name": "Musta",
-          "values": {
-            "unit1": "R=0, G=0, B=0",
-            "unit2": "K=100%"
-          }
-        },
-        {
-          "name": "Valkoinen",
-          "values": {
-            "unit1": "R=255, G=255, B=255",
-            "unit2": "Ei mustetta (paperi)"
-          }
+          "label": "Valkoinen",
+          "values": ["R=255, G=255, B=255", "Ei mustetta (paperi)"]
         }
       ]
     },

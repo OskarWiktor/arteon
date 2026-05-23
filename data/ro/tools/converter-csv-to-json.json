@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți CSV în JSON?",
-      "html": "<p class=\"text-mid mb-4\">CSV este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in JSON poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele CSV in format JSON direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">CSV este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in JSON poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor gratuit transforma fisierele CSV in format JSON direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "CSV to JSON conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "CSV vs JSON – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["CSV", "JSON"],
+      "rows": [
         {
-          "id": "csv",
-          "name": "CSV"
+          "label": "Date ierarhice",
+          "values": ["—", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Date tabulare",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Validare schemă",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Lizibil pentru oameni",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Sintaxă compactă",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Date ierarhice",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Date tabulare",
-          "values": {
-            "csv": true,
-            "json": false
-          }
-        },
-        {
-          "name": "Validare schemă",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Lizibil pentru oameni",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Sintaxă compactă",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

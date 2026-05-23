@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "iPhone HEIC-Fotos in professionelles TIFF-Format umwandeln. Kostenloses Browser-Tool - ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
-      "featureList": ["Konvertierung zu TIFF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
-      "alternateName": ["HEIC in TIFF umwandeln", "HEIC zu TIFF konvertieren", "Kostenloser HEIC-zu-TIFF-Konverter"]
+      "featureList": [
+        "Konvertierung zu TIFF",
+        "Qualitätsanpassung (60-95%)",
+        "Stapelkonvertierung",
+        "Lokale Verarbeitung im Browser"
+      ],
+      "alternateName": [
+        "HEIC in TIFF umwandeln",
+        "HEIC zu TIFF konvertieren",
+        "Kostenloser HEIC-zu-TIFF-Konverter"
+      ]
     },
     "howTo": {
       "name": "HEIC zu TIFF konvertieren",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs TIFF – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["HEIC", "TIFF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Verlustbehaftete Komprimierung",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Verlustfreie Komprimierung",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparenz (Alphakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunterstützung",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowser-Unterstützung",
+          "values": ["Safari 13+ (macOS / iOS)", "Nur Safari"]
+        },
+        {
+          "label": "Farbtiefe",
+          "values": ["8/10-bit, HDR", "8/16/32-bit"]
+        },
+        {
+          "label": "Kompakte Dateigröße",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadaten (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verlustbehaftete Komprimierung",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Verlustfreie Komprimierung",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Transparenz (Alphakanal)",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Animationsunterstützung",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Webbrowser-Unterstützung",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "tiff": "Nur Safari"
-          }
-        },
-        {
-          "name": "Farbtiefe",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Kompakte Dateigröße",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadaten (EXIF)",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

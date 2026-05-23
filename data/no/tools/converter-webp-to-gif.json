@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter WebP-bilder til GIF-format for maksimal kompatibilitet. All behandling skjer lokalt i nettleseren - filene forlater aldri enheten din.",
-      "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
-      "alternateName": ["Konverter WEBP til GIF", "WEBP til GIF konvertering", "Gratis WEBP til GIF konverterer"]
+      "featureList": [
+        "Konvertering til GIF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal behandling i nettleseren"
+      ],
+      "alternateName": [
+        "Konverter WEBP til GIF",
+        "WEBP til GIF konvertering",
+        "Gratis WEBP til GIF konverterer"
+      ]
     },
     "howTo": {
       "name": "Hvordan konvertere WebP til GIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs GIF – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funksjon",
+      "cols": ["WebP", "GIF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Komprimering med tap",
+          "values": ["✓", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animasjonsstøtte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Nettleserstøtte",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Alle nettlesere"]
+        },
+        {
+          "label": "Fargedybde",
+          "values": ["8-bit (16.7M)", "8-bit (256)"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Komprimering uten tap",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Nettleserstøtte",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "gif": "Alle nettlesere"
-          }
-        },
-        {
-          "name": "Fargedybde",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",

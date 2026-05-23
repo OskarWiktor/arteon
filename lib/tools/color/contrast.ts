@@ -15,14 +15,16 @@ export function parseColor(color: string): RGBA | null {
     return { ...rgb, a: hsl.a };
   }
 
-  const rgbMatch = trimmed.match(/^rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*([0-9.]+%?))?\s*\)$/i);
+  const rgbMatch = trimmed.match(
+    /^rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*([0-9.]+%?))?\s*\)$/i,
+  );
 
   if (rgbMatch) {
     const r = Number(rgbMatch[1]);
     const g = Number(rgbMatch[2]);
     const b = Number(rgbMatch[3]);
 
-    if ([r, g, b].some((v) => v < 0 || v > 255 || Number.isNaN(v))) {
+    if ([r, g, b].some(v => v < 0 || v > 255 || Number.isNaN(v))) {
       return null;
     }
 

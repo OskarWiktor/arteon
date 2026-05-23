@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Unix időbélyeg átváltása dátumra és időre.",
-      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+      "featureList": [
+        "Kétirányú valós idejű átváltás",
+        "Minden átváltó egy helyen",
+        "Eredmény másolása a vágólapra",
+        "Helyi számítás a böngészőben"
+      ]
     },
     "howTo": {
       "name": "Hogyan használja az átváltót",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Timestamp formats",
-      "featureLabel": "Tulajdonság",
-      "plans": [
+      "labelHeader": "Tulajdonság",
+      "cols": ["Unix (seconds)", "Unix (milliseconds)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Unix (seconds)"
+          "label": "Számjegyek",
+          "values": ["10 digits", "13 digits"]
         },
         {
-          "id": "unit2",
-          "name": "Unix (milliseconds)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Számjegyek",
-          "values": {
-            "unit1": "10 digits",
-            "unit2": "13 digits"
-          }
+          "label": "Példa",
+          "values": ["1700000000", "1700000000000"]
         },
         {
-          "name": "Példa",
-          "values": {
-            "unit1": "1700000000",
-            "unit2": "1700000000000"
-          }
+          "label": "Használja",
+          "values": ["PHP, Python, MySQL", "JavaScript, Java"]
         },
         {
-          "name": "Használja",
-          "values": {
-            "unit1": "PHP, Python, MySQL",
-            "unit2": "JavaScript, Java"
-          }
+          "label": "Pontosság",
+          "values": ["1 second", "1 millisecond"]
         },
         {
-          "name": "Pontosság",
-          "values": {
-            "unit1": "1 second",
-            "unit2": "1 millisecond"
-          }
-        },
-        {
-          "name": "Max (32-bit)",
-          "values": {
-            "unit1": "Jan 19, 2038",
-            "unit2": "N/A (uses 64-bit)"
-          }
+          "label": "Max (32-bit)",
+          "values": ["Jan 19, 2038", "N/A (uses 64-bit)"]
         }
       ]
     },

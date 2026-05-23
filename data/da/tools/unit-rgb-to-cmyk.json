@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Konverter RGB til CMYK og omvendt. Nyttig til forberedelse af grafik til tryk. Ingen registrering krævet.",
-      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+      "featureList": [
+        "Tovejs-konvertering i realtid",
+        "Alle konvertere samlet ét sted",
+        "Kopier resultat til udklipsholder",
+        "Lokal beregning i browseren"
+      ]
     },
     "howTo": {
       "name": "Sådan bruger du konverteren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "RGB vs CMYK",
-      "featureLabel": "Egenskab",
-      "plans": [
+      "labelHeader": "Egenskab",
+      "cols": ["RGB", "CMYK"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "RGB"
+          "label": "Model",
+          "values": ["Additiv (lys)", "Subtraktiv (blæk)"]
         },
         {
-          "id": "unit2",
-          "name": "CMYK",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Model",
-          "values": {
-            "unit1": "Additiv (lys)",
-            "unit2": "Subtraktiv (blæk)"
-          }
+          "label": "Bruges til",
+          "values": ["Skærme, web", "Tryk, emballage"]
         },
         {
-          "name": "Bruges til",
-          "values": {
-            "unit1": "Skærme, web",
-            "unit2": "Tryk, emballage"
-          }
+          "label": "Gamut",
+          "values": ["Større", "Mindre"]
         },
         {
-          "name": "Gamut",
-          "values": {
-            "unit1": "Større",
-            "unit2": "Mindre"
-          }
+          "label": "Sort",
+          "values": ["R=0, G=0, B=0", "K=100%"]
         },
         {
-          "name": "Sort",
-          "values": {
-            "unit1": "R=0, G=0, B=0",
-            "unit2": "K=100%"
-          }
-        },
-        {
-          "name": "Hvid",
-          "values": {
-            "unit1": "R=255, G=255, B=255",
-            "unit2": "Ingen blæk"
-          }
+          "label": "Hvid",
+          "values": ["R=255, G=255, B=255", "Ingen blæk"]
         }
       ]
     },

@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "PNG JPG -muunnin",
-      "alternateName": ["Muunna PNG JPG-muotoon", "PNG:n muunto JPG-muotoon", "Ilmainen PNG–JPG-muunnin"],
+      "alternateName": [
+        "Muunna PNG JPG-muotoon",
+        "PNG:n muunto JPG-muotoon",
+        "Ilmainen PNG–JPG-muunnin"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna PNG-tiedostot JPG-muotoon selaimessa. Rajaton, ilman rekisteröitymistä. Ilmainen selaintyökalu - ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
-      "featureList": ["PNG – JPG -muunnos", "JPG-laadun säätö", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
+      "featureList": [
+        "PNG – JPG -muunnos",
+        "JPG-laadun säätö",
+        "Erämuunnos",
+        "Paikallinen selainprosessointi",
+        "Ei tiedostojen latausta palvelimelle"
+      ]
     },
     "howTo": {
       "name": "PNG muuntaminen JPG-muotoon",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs JPG – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["PNG", "JPG"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Häviöllinen pakkaus",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Häviötön pakkaus",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Läpinäkyvyys (alfakanava)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animaatiotuki",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Selaintuki",
+          "values": ["Kaikki selaimet", "Kaikki selaimet"]
+        },
+        {
+          "label": "Värisyvyys",
+          "values": ["8/16-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Pieni tiedostokoko",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metatiedot (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Häviöllinen pakkaus",
-          "values": {
-            "png": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Häviötön pakkaus",
-          "values": {
-            "png": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Läpinäkyvyys (alfakanava)",
-          "values": {
-            "png": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animaatiotuki",
-          "values": {
-            "png": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Selaintuki",
-          "values": {
-            "png": "Kaikki selaimet",
-            "jpg": "Kaikki selaimet"
-          }
-        },
-        {
-          "name": "Värisyvyys",
-          "values": {
-            "png": "8/16-bit",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Pieni tiedostokoko",
-          "values": {
-            "png": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metatiedot (EXIF)",
-          "values": {
-            "png": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

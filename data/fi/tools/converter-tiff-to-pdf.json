@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PDF – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["TIFF", "PDF"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Häviöllinen pakkaus",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Häviötön pakkaus",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Läpinäkyvyys (alfakanava)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animaatiotuki",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Selaintuki",
+          "values": ["Vain Safari", "Sisäänrakennettu PDF-katselin"]
+        },
+        {
+          "label": "Pieni tiedostokoko",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metatiedot (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Häviöllinen pakkaus",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Häviötön pakkaus",
-          "values": {
-            "tiff": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Läpinäkyvyys (alfakanava)",
-          "values": {
-            "tiff": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Animaatiotuki",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Selaintuki",
-          "values": {
-            "tiff": "Vain Safari",
-            "pdf": "Sisäänrakennettu PDF-katselin"
-          }
-        },
-        {
-          "name": "Pieni tiedostokoko",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metatiedot (EXIF)",
-          "values": {
-            "tiff": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",
@@ -255,7 +224,7 @@
     {
       "type": "sectionInfo",
       "title": "How image conversion impacts page speed and SEO",
-      "html": "<p class=\"text-mid mb-4\">TIFF to PDF conversion is commonly used for document archival and sharing. TIFF files cannot be viewed in web browsers or opened easily on most devices, while PDF is universally readable.</p><p class=\"text-mid mb-4\">When sharing PDFs online, file size matters. TIFF files are large (10–50 MB each), but the converter compresses images within the PDF to produce more manageable file sizes. A 10-page PDF from TIFF scans will typically be 10–30 MB.</p><p class=\"text-mid\">For web display, consider converting TIFF directly to JPG, WebP, or AVIF instead. These formats produce much smaller files optimized for browser display.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF to PDF conversion is commonly used for document archival and sharing. TIFF files cannot be viewed in web browsers or opened easily on most devices, while PDF is universally readable.</p><p class=\"text-mid mb-4\">When sharing PDFs, file size matters. TIFF files are large (10–50 MB each), but the converter compresses images within the PDF to produce more manageable file sizes. A 10-page PDF from TIFF scans will typically be 10–30 MB.</p><p class=\"text-mid\">For web display, consider converting TIFF directly to JPG, WebP, or AVIF instead. These formats produce much smaller files optimized for browser display.</p>"
     },
     {
       "type": "faq",

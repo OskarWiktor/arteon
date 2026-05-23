@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "BMP til JPG-konverterer",
-      "alternateName": ["Konverter BMP til JPG", "BMP til JPG konvertering", "Gratis BMP til JPG konverterer"],
+      "alternateName": [
+        "Konverter BMP til JPG",
+        "BMP til JPG konvertering",
+        "Gratis BMP til JPG konverterer"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter BMP-filer til lett JPG. Drastisk størrelsesreduksjon. All behandling skjer lokalt i nettleseren — filene forlater aldri enheten din.",
-      "featureList": ["BMP til JPG-konvertering", "JPG-kvalitetskontroll", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
+      "featureList": [
+        "BMP til JPG-konvertering",
+        "JPG-kvalitetskontroll",
+        "Batchkonvertering",
+        "Lokal nettleserbehandling",
+        "Ingen filopplasting kreves"
+      ]
     },
     "howTo": {
       "name": "Slik konverterer du BMP til JPG",
@@ -174,68 +184,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs JPG – formatsammenligning",
-      "plans": [
+      "cols": ["BMP", "JPG"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Komprimering med tap",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "bmp": true,
-            "jpg": false
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["—", "—"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "bmp": false,
-            "jpg": false
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["—", "—"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "bmp": false,
-            "jpg": false
-          }
+          "label": "Nettleserstøtte",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "bmp": true,
-            "jpg": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
       ]
     },

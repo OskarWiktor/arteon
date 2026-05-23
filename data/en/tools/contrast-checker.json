@@ -181,82 +181,45 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "What do AA and AAA levels mean in the WCAG standard?",
-      "plans": [
+      "cols": ["Level AA (minimum)", "Level AAA (enhanced)"],
+      "rows": [
         {
-          "id": "aa",
-          "name": "Level AA (minimum)",
-          "highlighted": true
+          "label": "Normal text - min. 4.5:1",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "aaa",
-          "name": "Level AAA (enhanced)"
-        }
-      ],
-      "features": [
-        {
-          "name": "Normal text - min. 4.5:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Normal text - min. 7:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Normal text - min. 7:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Large / bold text - min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Large / bold text - min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Large / bold text - min. 4.5:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Large / bold text - min. 4.5:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Icons and UI elements - min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Icons and UI elements - min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Required by EU Web Accessibility Directive",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Required by EU Web Accessibility Directive",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Required by US ADA / Section 508",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Required by US ADA / Section 508",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Required by UK Equality Act 2010",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Required by UK Equality Act 2010",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
-        },
-        {
-          "name": "Recommended for key content",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Recommended for key content",
+          "values": ["✓", "✓"]
         }
       ]
     },

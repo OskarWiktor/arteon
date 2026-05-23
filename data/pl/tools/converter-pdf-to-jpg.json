@@ -2,13 +2,13 @@
   "toolKey": "pdfToJpg",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter PDF na JPG - zapisz strony jako obrazy",
-    "description": "Zamień każdą stronę PDF na osobny obraz JPG. Bez rejestracji, bez limitu stron - konwersja lokalna w przeglądarce.",
+    "title": "Darmowy konwerter formatu PDF na JPG bez limitu plików i rejestracji",
+    "description": "Zamień każdą stronę PDF na osobny obraz JPG. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-pdf-na-jpg"
   },
   "hero": {
-    "title": "Zamień strony PDF na obrazy JPG",
+    "title": "Darmowy konwerter dokumentów PDF na obrazy JPG",
     "description": "Wgraj plik PDF, a narzędzie zamieni każdą stronę na osobny obraz JPG. Wybierz jakość i pobierz wyniki. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter PDF na JPG - darmowy, bez limitu stron",
-      "alternateName": ["Zamiana PDF na JPG online", "Konwersja PDF do JPG", "PDF to JPG converter"],
+      "alternateName": ["Zamiana PDF na JPG", "Konwersja PDF do JPG", "PDF to JPG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
-      "description": "Darmowy konwerter PDF na JPG online. Zamień strony PDF na obrazy JPG w przeglądarce - pliki nie są wysyłane na serwer.",
-      "featureList": ["Konwersja stron PDF na JPG", "Przetwarzanie wszystkich stron dokumentu", "Renderowanie lokalne w przeglądarce", "Pobieranie pojedynczo lub wszystkich naraz"]
+      "description": "Darmowy konwerter PDF na JPG. Zamień strony PDF na obrazy JPG w przeglądarce - pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja stron PDF na JPG",
+        "Przetwarzanie wszystkich stron dokumentu",
+        "Renderowanie lokalne w przeglądarce",
+        "Pobieranie pojedynczo lub wszystkich naraz"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić PDF na JPG online",
+      "name": "Jak zamienić PDF na JPG",
       "description": "Instrukcja konwersji stron PDF na format JPG.",
       "steps": [
         {
@@ -164,71 +169,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PDF vs JPG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["PDF", "JPG"],
+      "rows": [
         {
-          "id": "pdf",
-          "name": "PDF"
+          "label": "Kompresja stratna",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wbudowana przeglądarka PDF", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "pdf": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "pdf": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "pdf": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "pdf": "Wbudowana przeglądarka PDF",
-            "jpg": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

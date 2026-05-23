@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere AVIF în WebP. Compatibilitate larga la dimensiuni mici. Procesarea are loc în browser - fișierele nu părăsesc dispozitivul.",
-      "featureList": ["Conversie AVIF în WebP", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie AVIF în WEBP", "Convertor AVIF în WEBP", "Convertor gratuit AVIF în WEBP"]
+      "featureList": [
+        "Conversie AVIF în WebP",
+        "Calitate reglabilă (60–95%)",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie AVIF în WEBP",
+        "Convertor AVIF în WEBP",
+        "Convertor gratuit AVIF în WEBP"
+      ]
     },
     "howTo": {
       "name": "AVIF to WebP",
@@ -165,78 +174,47 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs WebP – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["AVIF", "WebP"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Compresie cu pierderi",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": [
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          ]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8/10/12-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "avif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "avif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "avif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "avif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "avif": "8/10/12-bit, HDR",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "avif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "avif": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

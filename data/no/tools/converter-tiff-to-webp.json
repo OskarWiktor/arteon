@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter TIFF-filer til lett WebP. Massiv storrelsesreduksjon med bevart kvalitet. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
-      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Konverter TIFF til WEBP", "TIFF til WEBP konvertering", "Gratis TIFF til WEBP konverterer"]
+      "featureList": [
+        "TIFF to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Konverter TIFF til WEBP",
+        "TIFF til WEBP konvertering",
+        "Gratis TIFF til WEBP konverterer"
+      ]
     },
     "howTo": {
       "name": "TIFF to WebP",
@@ -174,68 +183,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs WebP – formatsammenligning",
-      "plans": [
+      "cols": ["TIFF", "WebP"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Komprimering med tap",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
+          "label": "Nettleserstøtte",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
       ]
     },

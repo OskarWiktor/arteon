@@ -2,13 +2,13 @@
   "toolKey": "pngToGif",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter PNG na GIF - PNG GIF",
-    "description": "Zamień grafiki PNG na GIF. Idealne do prostych ikon i grafik z ograniczoną paletą kolorów. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
+    "title": "Darmowy konwerter formatu PNG na GIF bez limitu plików i rejestracji",
+    "description": "Zamień grafiki PNG na GIF. Idealne do prostych ikon i grafik z ograniczoną paletą kolorów. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-png-na-gif"
   },
   "hero": {
-    "title": "Konwerter PNG na GIF",
+    "title": "Darmowy konwerter formatu PNG na GIF",
     "description": "Zamień grafiki PNG na GIF. Idealne do prostych ikon i grafik z ograniczoną paletą kolorów. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień grafiki PNG na GIF. Idealne do prostych ikon i grafik z ograniczoną paletą kolorów. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
-      "featureList": ["Konwersja do GIF", "Kwantyzacja do 256 kolorow", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
-      "alternateName": ["Zamiana PNG na GIF", "Konwersja PNG do GIF", "Darmowy konwerter PNG na GIF"]
+      "featureList": [
+        "Konwersja do GIF",
+        "Kwantyzacja do 256 kolorow",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne w przeglądarce"
+      ],
+      "alternateName": [
+        "Zamiana PNG na GIF",
+        "Konwersja PNG do GIF",
+        "Darmowy konwerter PNG na GIF"
+      ]
     },
     "howTo": {
       "name": "PNG to GIF",
@@ -168,78 +177,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs GIF – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["PNG", "GIF"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Kompresja stratna",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8/16-bit", "8-bit (256)"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "png": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "png": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "png": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "png": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "png": "Wszystkie przeglądarki",
-            "gif": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "png": "8/16-bit",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "png": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "png": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

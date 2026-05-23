@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertiți bytes în KB, MB, GB și invers.",
-      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+      "featureList": [
+        "Conversie bidirecțională în timp real",
+        "Toate convertoarele într-un singur loc",
+        "Copierea rezultatului în clipboard",
+        "Calcul local în browser"
+      ]
     },
     "howTo": {
       "name": "Cum să utilizați convertorul",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimal vs Binary units – comparație",
-      "featureLabel": "Proprietate",
-      "plans": [
+      "labelHeader": "Proprietate",
+      "cols": ["Decimal (SI)", "Binary (IEC)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimal (SI)"
+          "label": "Multiplicator",
+          "values": ["1,000", "1,024"]
         },
         {
-          "id": "unit2",
-          "name": "Binary (IEC)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Multiplicator",
-          "values": {
-            "unit1": "1,000",
-            "unit2": "1,024"
-          }
+          "label": "Unități",
+          "values": ["KB, MB, GB, TB", "KiB, MiB, GiB, TiB"]
         },
         {
-          "name": "Unități",
-          "values": {
-            "unit1": "KB, MB, GB, TB",
-            "unit2": "KiB, MiB, GiB, TiB"
-          }
+          "label": "Utilizat de",
+          "values": ["Producători de stocare", "Sisteme de operare, RAM"]
         },
         {
-          "name": "Utilizat de",
-          "values": {
-            "unit1": "Producători de stocare",
-            "unit2": "Sisteme de operare, RAM"
-          }
+          "label": "1 TB echivalent",
+          "values": ["1,000,000,000,000 bytes", "1,099,511,627,776 bytes"]
         },
         {
-          "name": "1 TB echivalent",
-          "values": {
-            "unit1": "1,000,000,000,000 bytes",
-            "unit2": "1,099,511,627,776 bytes"
-          }
-        },
-        {
-          "name": "Diferență la 1 TB",
-          "values": {
-            "unit1": "1 TB",
-            "unit2": "0.909 TiB"
-          }
+          "label": "Diferență la 1 TB",
+          "values": ["1 TB", "0.909 TiB"]
         }
       ]
     },

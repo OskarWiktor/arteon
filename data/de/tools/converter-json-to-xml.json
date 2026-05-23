@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs XML – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["JSON", "XML"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Verschachtelte Daten",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "xml",
-          "name": "XML",
-          "highlighted": true
+          "label": "Tabellarische Daten",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Schema-Validierung",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Menschenlesbar",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-Standard",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Kompakte Syntax",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verschachtelte Daten",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Tabellarische Daten",
-          "values": {
-            "json": false,
-            "xml": false
-          }
-        },
-        {
-          "name": "Schema-Validierung",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Menschenlesbar",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "API-Standard",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Kompakte Syntax",
-          "values": {
-            "json": true,
-            "xml": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

@@ -254,122 +254,61 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Vergleich der Textstile",
-      "featureLabel": "Merkmal",
-      "plans": [
-        {
-          "id": "classic",
-          "name": "Lorem Ipsum",
-          "highlighted": true
-        },
-        {
-          "id": "hipster",
-          "name": "Hipster"
-        },
-        {
-          "id": "business",
-          "name": "Business"
-        },
-        {
-          "id": "polish",
-          "name": "Lokal"
-        },
-        {
-          "id": "bacon",
-          "name": "Bacon"
-        },
-        {
-          "id": "cupcake",
-          "name": "Cupcake"
-        },
-        {
-          "id": "pirate",
-          "name": "Pirate"
-        },
-        {
-          "id": "legal",
-          "name": "Legal"
-        }
+      "labelHeader": "Merkmal",
+      "cols": [
+        "Lorem Ipsum",
+        "Hipster",
+        "Business",
+        "Lokal",
+        "Bacon",
+        "Cupcake",
+        "Pirate",
+        "Legal"
       ],
-      "features": [
+      "rows": [
         {
-          "name": "Sprache",
-          "values": {
-            "classic": "Latein",
-            "hipster": "Englisch",
-            "business": "Englisch",
-            "polish": "Lokal",
-            "bacon": "Englisch",
-            "cupcake": "Englisch",
-            "pirate": "Englisch",
-            "legal": "Englisch"
-          }
+          "label": "Sprache",
+          "values": [
+            "Latein",
+            "Englisch",
+            "Englisch",
+            "Lokal",
+            "Englisch",
+            "Englisch",
+            "Englisch",
+            "Englisch"
+          ]
         },
         {
-          "name": "Thema",
-          "values": {
-            "classic": "Philosophie",
-            "hipster": "Lifestyle",
-            "business": "Unternehmen",
-            "polish": "Allgemein",
-            "bacon": "Gastronomie",
-            "cupcake": "Bäckerei",
-            "pirate": "Abenteuer",
-            "legal": "Recht"
-          }
+          "label": "Thema",
+          "values": [
+            "Philosophie",
+            "Lifestyle",
+            "Unternehmen",
+            "Allgemein",
+            "Gastronomie",
+            "Bäckerei",
+            "Abenteuer",
+            "Recht"
+          ]
         },
         {
-          "name": "Visuelle Neutralität",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Visuelle Neutralität",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Natürlicher Rhythmus",
-          "values": {
-            "classic": true,
-            "hipster": true,
-            "business": true,
-            "polish": true,
-            "bacon": true,
-            "cupcake": true,
-            "pirate": true,
-            "legal": true
-          }
+          "label": "Natürlicher Rhythmus",
+          "values": ["✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"]
         },
         {
-          "name": "Branchenstandard",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Branchenstandard",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Humor / Charakter",
-          "values": {
-            "classic": "Neutral",
-            "hipster": "Mittel",
-            "business": "Niedrig",
-            "polish": "Niedrig",
-            "bacon": "Hoch",
-            "cupcake": "Hoch",
-            "pirate": "Hoch",
-            "legal": "Niedrig"
-          }
+          "label": "Humor / Charakter",
+          "values": ["Neutral", "Mittel", "Niedrig", "Niedrig", "Hoch", "Hoch", "Hoch", "Niedrig"]
         }
       ]
     },

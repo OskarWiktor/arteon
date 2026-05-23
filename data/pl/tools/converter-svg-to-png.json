@@ -2,13 +2,13 @@
   "toolKey": "svgToPng",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter SVG na PNG – rasteryzacja wektorów za darmo",
-    "description": "Zamień grafikę wektorową SVG na rastrowy PNG w przeglądarce. Idealne do dokumentów i mediów społecznościowych. Bez limitu i rejestracji.",
+    "title": "Darmowy konwerter formatu SVG na PNG bez limitu plików i rejestracji",
+    "description": "Zamień grafikę wektorową SVG na rastrowy PNG w przeglądarce. Idealne do dokumentów i mediów społecznościowych. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-svg-na-png"
   },
   "hero": {
-    "title": "Konwerter SVG na PNG – zamień wektor na obraz rastrowy",
+    "title": "Darmowy konwerter formatu SVG na PNG – zamień wektor na obraz rastrowy",
     "description": "Zamień pliki SVG na PNG. Zachowaj przezroczystość i ostre krawędzie. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter SVG na PNG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana SVG na PNG online", "Rasteryzacja SVG do PNG"],
+      "alternateName": ["Zamiana SVG na PNG", "Rasteryzacja SVG do PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter SVG na PNG online. Zamień grafikę wektorową na rastrowy PNG w przeglądarce. Bez limitu i rejestracji.",
-      "featureList": ["Konwersja SVG do PNG", "Zachowanie przezroczystości", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter SVG na PNG. Zamień grafikę wektorową na rastrowy PNG w przeglądarce. Bez limitu i rejestracji.",
+      "featureList": [
+        "Konwersja SVG do PNG",
+        "Zachowanie przezroczystości",
+        "Konwersja wielu plików jednocześnie",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić SVG na PNG online",
+      "name": "Jak zamienić SVG na PNG",
       "description": "Instrukcja konwersji plików SVG na format PNG.",
       "steps": [
         {
@@ -155,78 +160,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PNG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["SVG", "PNG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Kompresja stratna",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["N/A (wektor)", "8/16-bit"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "svg": "Wszystkie przeglądarki",
-            "png": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "svg": "N/A (wektor)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",
@@ -301,7 +272,7 @@
         },
         {
           "question": "Czy mogę zmienić rozmiar wynikowego PNG?",
-          "answer": "Narzędzie konwertuje SVG na PNG w oryginalnych wymiarach. Jeśli potrzebujesz zmienić rozmiar, skorzystaj z <a href=\"/narzedzia/edytor-zdjec-online\">edytora zdjęć online</a>."
+          "answer": "Narzędzie konwertuje SVG na PNG w oryginalnych wymiarach. Jeśli potrzebujesz zmienić rozmiar, skorzystaj z <a href=\"/narzedzia/edytor-zdjec-online\">edytora zdjęć</a>."
         },
         {
           "question": "Czy mogę konwertować wiele plików naraz?",

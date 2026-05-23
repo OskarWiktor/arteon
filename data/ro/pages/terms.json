@@ -1,19 +1,19 @@
 {
   "slug": "termeni-si-conditii",
   "metadata": {
-    "title": "Termeni si Conditii – Instrumente Online Gratuite Arteon",
-    "description": "Termeni si conditii pentru instrumentele online gratuite Arteon. Afla despre conditiile de utilizare, proprietatea intelectuala, declinari si raspundere."
+    "title": "Termeni si Conditii – Instrumenteon",
+    "description": "Termeni si conditii pentru instrumenteleon. Afla despre conditiile de utilizare, proprietatea intelectuala, declinari si raspundere."
   },
   "hero": {
     "title": "Termeni si Conditii",
-    "description": "Conditii de utilizare a instrumentelor online gratuite Arteon"
+    "description": "Conditii de utilizare a instrumenteloron"
   },
   "version": "24.02.2026",
   "sections": [
     {
       "id": "introduction",
       "title": "1. Introducere",
-      "content": "Acesti Termeni si Conditii reglementeaza utilizarea instrumentelor online gratuite furnizate de Arteon pe arteonagency.pl. Prin utilizarea instrumentelor noastre, acceptati acesti termeni."
+      "content": "Acesti Termeni si Conditii reglementeaza utilizarea instrumentelorizate de Arteon pe arteonagency.pl. Prin utilizarea instrumentelor noastre, acceptati acesti termeni."
     },
     {
       "id": "provider",
@@ -73,7 +73,7 @@
   ],
   "cta": {
     "title": "Inapoi la instrumente",
-    "description": "Instrumente online gratuite pentru lucrul cu imagini, text si culori",
+    "description": "Instrumenteru lucrul cu imagini, text si culori",
     "btnOne": "Instrumente"
   }
 }

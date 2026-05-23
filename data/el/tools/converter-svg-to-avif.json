@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε συμπαγη μορφη raster AVIF. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης - χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
-      "featureList": ["Μετατροπή σε AVIF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
-      "alternateName": ["Μετατροπή SVG σε AVIF", "Μετατροπέας SVG σε AVIF", "Δωρεάν μετατροπέας SVG σε AVIF"]
+      "featureList": [
+        "Μετατροπή σε AVIF",
+        "Ρύθμιση ποιότητας (60-95%)",
+        "Ομαδική μετατροπή",
+        "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"
+      ],
+      "alternateName": [
+        "Μετατροπή SVG σε AVIF",
+        "Μετατροπέας SVG σε AVIF",
+        "Δωρεάν μετατροπέας SVG σε AVIF"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε SVG σε AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs AVIF – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["SVG", "AVIF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": ["Όλοι οι περιηγητές", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Βάθος χρώματος",
+          "values": ["N/A (διάνυσμα)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "svg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "svg": "Όλοι οι περιηγητές",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Βάθος χρώματος",
-          "values": {
-            "svg": "N/A (διάνυσμα)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "svg": false,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",

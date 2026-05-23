@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter BMP-filer til professionelt TIFF-format til udskrivning. Al behandling sker lokalt i browseren - filer forlader aldrig din enhed.",
-      "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
-      "alternateName": ["Konvertér BMP til TIFF", "BMP til TIFF konvertering", "Gratis BMP til TIFF konverter"]
+      "featureList": [
+        "Konvertering til TIFF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal behandling i browseren"
+      ],
+      "alternateName": [
+        "Konvertér BMP til TIFF",
+        "BMP til TIFF konvertering",
+        "Gratis BMP til TIFF konverter"
+      ]
     },
     "howTo": {
       "name": "Hvordan konverterer man BMP til TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs TIFF – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["BMP", "TIFF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Tabsgivende komprimering",
+          "values": ["—", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Alle browsere", "Kun Safari"]
+        },
+        {
+          "label": "Farvedybde",
+          "values": ["1/4/8/24/32-bit", "8/16/32-bit"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "bmp": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "bmp": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "bmp": "Alle browsere",
-            "tiff": "Kun Safari"
-          }
-        },
-        {
-          "name": "Farvedybde",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "bmp": false,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

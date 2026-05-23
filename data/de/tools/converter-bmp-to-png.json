@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "BMP zu PNG Konverter",
-      "alternateName": ["BMP in PNG umwandeln", "BMP zu PNG konvertieren", "Kostenloser BMP-zu-PNG-Konverter"],
+      "alternateName": [
+        "BMP in PNG umwandeln",
+        "BMP zu PNG konvertieren",
+        "Kostenloser BMP-zu-PNG-Konverter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "BMP-Bilder verlustfrei in PNG umwandeln. Qualität erhalten, Dateigröße reduzieren. Verarbeitung direkt im Browser - Dateien verlassen Ihr Gerät nicht.",
-      "featureList": ["BMP-zu-PNG-Konvertierung", "Verlustfreie PNG-Ausgabe", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
+      "featureList": [
+        "BMP-zu-PNG-Konvertierung",
+        "Verlustfreie PNG-Ausgabe",
+        "Stapelkonvertierung",
+        "Lokale Browserverarbeitung",
+        "Kein Datei-Upload erforderlich"
+      ]
     },
     "howTo": {
       "name": "BMP in PNG umwandeln",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs PNG – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["BMP", "PNG"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Verlustbehaftete Komprimierung",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Verlustfreie Komprimierung",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparenz (Alphakanal)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animationsunterstützung",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowser-Unterstützung",
+          "values": ["Alle Browser", "Alle Browser"]
+        },
+        {
+          "label": "Farbtiefe",
+          "values": ["1/4/8/24/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Kompakte Dateigröße",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadaten (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verlustbehaftete Komprimierung",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Verlustfreie Komprimierung",
-          "values": {
-            "bmp": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparenz (Alphakanal)",
-          "values": {
-            "bmp": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Animationsunterstützung",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbrowser-Unterstützung",
-          "values": {
-            "bmp": "Alle Browser",
-            "png": "Alle Browser"
-          }
-        },
-        {
-          "name": "Farbtiefe",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Kompakte Dateigröße",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadaten (EXIF)",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

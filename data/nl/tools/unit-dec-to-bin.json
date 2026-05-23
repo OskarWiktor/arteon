@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Reken decimale getallen om naar binair en andersom.",
-      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+      "featureList": [
+        "Bidirectionele realtime-conversie",
+        "Alle converters op één plek",
+        "Resultaat naar klembord kopiëren",
+        "Lokale berekening in de browser"
+      ]
     },
     "howTo": {
       "name": "Hoe de converter te gebruiken",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimaal vs Binair",
-      "featureLabel": "Eigenschap",
-      "plans": [
+      "labelHeader": "Eigenschap",
+      "cols": ["Decimaal (basis-10)", "Binair (basis-2)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimaal (basis-10)"
+          "label": "Cijfers",
+          "values": ["0–9", "0–1"]
         },
         {
-          "id": "unit2",
-          "name": "Binair (basis-2)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Cijfers",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–1"
-          }
+          "label": "Gebruikt door",
+          "values": ["Mensen", "Computers"]
         },
         {
-          "name": "Gebruikt door",
-          "values": {
-            "unit1": "Mensen",
-            "unit2": "Computers"
-          }
+          "label": "Voorbeeld: 42",
+          "values": ["42", "101010"]
         },
         {
-          "name": "Voorbeeld: 42",
-          "values": {
-            "unit1": "42",
-            "unit2": "101010"
-          }
+          "label": "Voorbeeld: 255",
+          "values": ["255", "11111111"]
         },
         {
-          "name": "Voorbeeld: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "11111111"
-          }
-        },
-        {
-          "name": "Leesbaarheid",
-          "values": {
-            "unit1": "Gemakkelijk",
-            "unit2": "Lang maar natief"
-          }
+          "label": "Leesbaarheid",
+          "values": ["Gemakkelijk", "Lang maar natief"]
         }
       ]
     },

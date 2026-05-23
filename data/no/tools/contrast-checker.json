@@ -177,82 +177,45 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Hva betyr nivåene AA og AAA i WCAG-standarden?",
-      "plans": [
+      "cols": ["Nivå AA (minimum)", "Nivå AAA (forbedret)"],
+      "rows": [
         {
-          "id": "aa",
-          "name": "Nivå AA (minimum)",
-          "highlighted": true
+          "label": "Normal tekst – min. 4.5:1",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "aaa",
-          "name": "Nivå AAA (forbedret)"
-        }
-      ],
-      "features": [
-        {
-          "name": "Normal tekst – min. 4.5:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Normal tekst – min. 7:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Normal tekst – min. 7:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Stor tekst / fet – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Stor tekst / fet – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Stor tekst / fet – min. 4.5:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Stor tekst / fet – min. 4.5:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Ikoner og UI-elementer – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Ikoner og UI-elementer – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Lovkrav (EU-direktiv)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Lovkrav (EU-direktiv)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Krevd av US ADA / Section 508",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Krevd av US ADA / Section 508",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Krevd av UK Equality Act 2010",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Krevd av UK Equality Act 2010",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
-        },
-        {
-          "name": "Anbefales for hovedinnhold",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Anbefales for hovedinnhold",
+          "values": ["✓", "✓"]
         }
       ]
     },

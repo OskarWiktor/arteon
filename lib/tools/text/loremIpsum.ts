@@ -2,9 +2,26 @@
 // Lorem Ipsum generator – pure functions, no React dependency
 // ---------------------------------------------------------------------------
 
-export type LoremMode = 'paragraphs' | 'sentences' | 'words' | 'lists' | 'headings' | 'links' | 'table' | 'blockquotes' | 'definitions';
+export type LoremMode =
+  | 'paragraphs'
+  | 'sentences'
+  | 'words'
+  | 'lists'
+  | 'headings'
+  | 'links'
+  | 'table'
+  | 'blockquotes'
+  | 'definitions';
 export type LoremLength = 'short' | 'medium' | 'long';
-export type LoremStyle = 'classic' | 'hipster' | 'business' | 'polish' | 'bacon' | 'cupcake' | 'pirate' | 'legal';
+export type LoremStyle =
+  | 'classic'
+  | 'hipster'
+  | 'business'
+  | 'polish'
+  | 'bacon'
+  | 'cupcake'
+  | 'pirate'
+  | 'legal';
 export type LoremFormat = 'plain' | 'html';
 
 export interface LoremOptions {
@@ -2211,7 +2228,12 @@ function randBetween(min: number, max: number, rng: () => number): number {
 // Sentence / paragraph builders
 // ---------------------------------------------------------------------------
 
-function buildSentence(bank: string[], rng: () => number, minWords: number, maxWords: number): string {
+function buildSentence(
+  bank: string[],
+  rng: () => number,
+  minWords: number,
+  maxWords: number,
+): string {
   const len = randBetween(minWords, maxWords, rng);
   const words: string[] = [];
   for (let i = 0; i < len; i++) {
@@ -2252,7 +2274,10 @@ function buildParagraph(bank: string[], rng: () => number, length: LoremLength):
 
 export function generateLoremIpsum(options: LoremOptions, seed?: number): string {
   const rng = seededRandom(seed ?? Date.now());
-  const bank = options.style === 'polish' && options.locale && LOCALE_FILLERS[options.locale] ? LOCALE_FILLERS[options.locale] : WORD_BANKS[options.style];
+  const bank =
+    options.style === 'polish' && options.locale && LOCALE_FILLERS[options.locale]
+      ? LOCALE_FILLERS[options.locale]
+      : WORD_BANKS[options.style];
   const { mode, count, paragraphLength, startWithLorem, outputFormat } = options;
   const isHtml = outputFormat === 'html';
 
@@ -2310,7 +2335,7 @@ export function generateLoremIpsum(options: LoremOptions, seed?: number): string
         items[0] = LOREM_OPENER;
       }
       if (isHtml) {
-        result = '<ul>\n' + items.map((item) => `  <li>${item}</li>`).join('\n') + '\n</ul>';
+        result = '<ul>\n' + items.map(item => `  <li>${item}</li>`).join('\n') + '\n</ul>';
       } else {
         result = items.map((item, i) => `${i + 1}. ${item}`).join('\n');
       }
@@ -2357,7 +2382,7 @@ export function generateLoremIpsum(options: LoremOptions, seed?: number): string
       for (let c = 0; c < cols; c++) headerWords.push(capitalize(pick(bank, rng)));
 
       if (isHtml) {
-        const thRow = headerWords.map((h) => `    <th>${h}</th>`).join('\n');
+        const thRow = headerWords.map(h => `    <th>${h}</th>`).join('\n');
         const bodyRows: string[] = [];
         for (let r = 0; r < clampedCount; r++) {
           const cells = [];
@@ -2445,7 +2470,15 @@ export function getLoremStats(text: string): LoremStats {
   const clean = text.replace(/<[^>]+>/g, '');
   const trimmed = clean.trim();
   if (!trimmed) {
-    return { words: 0, charsWithSpaces: 0, charsWithoutSpaces: 0, sentences: 0, paragraphs: 0, readingTime: '0 s', bytes: 0 };
+    return {
+      words: 0,
+      charsWithSpaces: 0,
+      charsWithoutSpaces: 0,
+      sentences: 0,
+      paragraphs: 0,
+      readingTime: '0 s',
+      bytes: 0,
+    };
   }
 
   const words = trimmed.split(/\s+/).length;

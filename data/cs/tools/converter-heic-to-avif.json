@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte fotky HEIC z iPhonu na moderni format AVIF. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
-      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
-      "alternateName": ["Převést HEIC na AVIF", "Konverze HEIC do AVIF", "Převodník HEIC na AVIF zdarma"]
+      "featureList": [
+        "Konverze do AVIF",
+        "Nastavení kvality (60-95%)",
+        "Dávková konverze",
+        "Lokální zpracování v prohlížeči"
+      ],
+      "alternateName": [
+        "Převést HEIC na AVIF",
+        "Konverze HEIC do AVIF",
+        "Převodník HEIC na AVIF zdarma"
+      ]
     },
     "howTo": {
       "name": "Jak převést HEIC na AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs AVIF – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["HEIC", "AVIF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Ztrátová komprese",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Safari 13+ (macOS / iOS)", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["8/10-bit, HDR", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

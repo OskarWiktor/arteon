@@ -153,7 +153,7 @@
     "helper": "Τεχνική προεπισκόπηση - συμβατή με Gmail, Outlook και τους περισσότερους email clients.",
     "copySuccess": "Αντιγράφηκε - επικολλήστε στο Gmail",
     "copyError": "Σφάλμα αντιγραφής",
-    "copyButton": "Αντιγραφή υπογραφής (Gmail / Outlook)",
+    "ButtonCopy": "Αντιγραφή υπογραφής (Gmail / Outlook)",
     "copyRawButton": "Αντιγραφή κώδικα HTML",
     "copyRawSuccess": "Ο κώδικας HTML αντιγράφηκε",
     "downloadButton": "Λήψη ως HTML",

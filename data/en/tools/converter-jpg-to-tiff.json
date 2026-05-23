@@ -28,8 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert JPG photos to lossless TIFF. For printing and archiving. Free browser-based tool - no signup, no file limits, complete privacy.",
-      "featureList": ["Conversion to TIFF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert JPG to TIFF", "JPG to TIFF conversion", "Free JPG to TIFF converter", "Change JPG to TIFF"]
+      "featureList": [
+        "Conversion to TIFF",
+        "Quality adjustment (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert JPG to TIFF",
+        "JPG to TIFF conversion",
+        "Free JPG to TIFF converter",
+        "Change JPG to TIFF"
+      ]
     },
     "howTo": {
       "name": "How to convert JPG to TIFF",
@@ -182,78 +192,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs TIFF – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["JPG", "TIFF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Lossy compression",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["All browsers", "Safari only"]
+        },
+        {
+          "label": "Color depth",
+          "values": ["8-bit (16.7M)", "8/16/32-bit"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "jpg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "jpg": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "jpg": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "jpg": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "jpg": "All browsers",
-            "tiff": "Safari only"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "jpg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "jpg": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

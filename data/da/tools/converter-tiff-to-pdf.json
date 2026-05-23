@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PDF – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["TIFF", "PDF"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Tabsgivende komprimering",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Kun Safari", "Indbygget PDF-fremviser"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "tiff": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "tiff": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "tiff": "Kun Safari",
-            "pdf": "Indbygget PDF-fremviser"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "tiff": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

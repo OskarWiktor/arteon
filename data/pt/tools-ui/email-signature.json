@@ -160,7 +160,7 @@
     "helper": "Pré-visualização técnica, compatível com Gmail, Outlook e a maioria dos clientes de e-mail.",
     "copySuccess": "Copiado  cole no Gmail",
     "copyError": "Erro ao copiar",
-    "copyButton": "Copiar assinatura (Gmail / Outlook)",
+    "ButtonCopy": "Copiar assinatura (Gmail / Outlook)",
     "copyRawButton": "Copiar código HTML",
     "copyRawSuccess": "Código HTML copiado",
     "downloadButton": "Transferir em HTML",

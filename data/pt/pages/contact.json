@@ -1,7 +1,7 @@
 {
   "slug": "contacto",
   "metadata": {
-    "title": "Contacto – Arteon ferramentas online gratuitas | Suporte e",
+    "title": "Contacto – Arteon ferramentas gratuitas | Suporte e",
     "description": "Contacte a equipa Arteon. Reporte um erro, sugira uma nova ferramenta ou faça uma pergunta sobre as nossas ferramentas gratuitas para imagens, SEO, cores e."
   },
   "hero": {
@@ -22,7 +22,7 @@
   },
   "cta": {
     "title": "Voltar às ferramentas",
-    "description": "Ferramentas online gratuitas para trabalhar com imagens, texto e cores",
+    "description": "Ferramentas gratuitas para trabalhar com imagens, texto e cores",
     "btnOne": "Ferramentas"
   }
 }

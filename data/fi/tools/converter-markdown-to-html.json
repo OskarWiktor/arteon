@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Muunna Markdown HTML-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
-      "featureList": ["Markdown to HTML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
+      "featureList": [
+        "Markdown to HTML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Markdown to HTML",
+        "Markdown to HTML",
+        "Free Markdown to HTML converter"
+      ]
     },
     "howTo": {
       "name": "Kuinka muuntaa Markdown HTML-muotoon",
@@ -128,64 +136,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Markdown vs HTML – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["Markdown", "HTML"],
+      "rows": [
         {
-          "id": "markdown",
-          "name": "Markdown"
+          "label": "Sisäkkäinen data",
+          "values": ["—", "✓"]
         },
         {
-          "id": "html",
-          "name": "HTML",
-          "highlighted": true
+          "label": "Taulukkodata",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Skeemavalidointi",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Ihmisen luettavissa",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "API-standardi",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Kompakti syntaksi",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Sisäkkäinen data",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Taulukkodata",
-          "values": {
-            "markdown": true,
-            "html": true
-          }
-        },
-        {
-          "name": "Skeemavalidointi",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Ihmisen luettavissa",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        },
-        {
-          "name": "API-standardi",
-          "values": {
-            "markdown": false,
-            "html": false
-          }
-        },
-        {
-          "name": "Kompakti syntaksi",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

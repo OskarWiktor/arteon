@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert PDF to WebP?",
-      "html": "<p class=\"text-mid mb-4\">PDF is the standard for documents, but web pages load faster with optimized image formats. WebP offers 25–35% better compression than JPG at equivalent quality, making it ideal for embedding PDF page images on websites, blogs, and online documentation.</p><p class=\"text-mid mb-4\">Each PDF page becomes a separate WebP file. WebP supports both lossy and lossless compression. It is supported by all modern browsers (Chrome, Firefox, Safari 14+, Edge). For maximum compatibility with older browsers, consider converting to JPG or PNG instead.</p><p class=\"text-mid\">This converter processes files locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
+      "html": "<p class=\"text-mid mb-4\">PDF is the standard for documents, but web pages load faster with optimized image formats. WebP offers 25–35% better compression than JPG at equivalent quality, making it ideal for embedding PDF page images on websites, blogs, and documentation.</p><p class=\"text-mid mb-4\">Each PDF page becomes a separate WebP file. WebP supports both lossy and lossless compression. It is supported by all modern browsers (Chrome, Firefox, Safari 14+, Edge). For maximum compatibility with older browsers, consider converting to JPG or PNG instead.</p><p class=\"text-mid\">This converter processes files locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PDF to WebP conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PDF vs WebP – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["PDF", "WebP"],
+      "rows": [
         {
-          "id": "pdf",
-          "name": "PDF"
+          "label": "Lossy compression",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["Built-in PDF viewer", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "pdf": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "pdf": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "pdf": "Built-in PDF viewer",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "PNG til WebP-konverterer",
-      "alternateName": ["Konverter PNG til WEBP", "PNG til WEBP konvertering", "Gratis PNG til WEBP konverterer"],
+      "alternateName": [
+        "Konverter PNG til WEBP",
+        "PNG til WEBP konvertering",
+        "Gratis PNG til WEBP konverterer"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter PNG-grafikk til WebP. Mindre filer med bevart gjennomsiktighet. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
-      "featureList": ["PNG til WEBP-konvertering", "WEBP-kvalitetskontroll", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
+      "featureList": [
+        "PNG til WEBP-konvertering",
+        "WEBP-kvalitetskontroll",
+        "Batchkonvertering",
+        "Lokal nettleserbehandling",
+        "Ingen filopplasting kreves"
+      ]
     },
     "howTo": {
       "name": "Slik konverterer du PNG til WEBP",
@@ -174,68 +184,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs WebP – formatsammenligning",
-      "plans": [
+      "cols": ["PNG", "WebP"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Komprimering med tap",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "png": false,
-            "webp": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "png": true,
-            "webp": true
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "png": true,
-            "webp": true
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "png": false,
-            "webp": true
-          }
+          "label": "Nettleserstøtte",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "png": true,
-            "webp": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "png": false,
-            "webp": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
       ]
     },

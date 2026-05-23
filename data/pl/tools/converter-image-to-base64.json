@@ -2,7 +2,7 @@
   "toolKey": "imageToBase64",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter obraz na Base64 - zakoduj obraz do CSS i HTML",
+    "title": "Darmowy konwerter obrazu na Base64 bez limitu plików i rejestracji",
     "description": "Zakoduj obraz (JPG, PNG, WebP, SVG, GIF) do formatu Base64. Gotowy ciąg do CSS, HTML lub JSON. Bez rejestracji - konwersja lokalna.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-obraz-na-base64"
@@ -25,11 +25,20 @@
   "schemas": {
     "software": {
       "name": "Konwerter obraz na Base64 - darmowy, bez rejestracji",
-      "alternateName": ["Kodowanie obrazu do Base64", "Image to Base64 encoder", "Obraz na data URI"],
+      "alternateName": [
+        "Kodowanie obrazu do Base64",
+        "Image to Base64 encoder",
+        "Obraz na data URI"
+      ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
-      "description": "Darmowy konwerter obrazu na Base64 online. Zakoduj JPG, PNG, WebP lub SVG do Base64 w przeglądarce - pliki nie są wysyłane na serwer.",
-      "featureList": ["Kodowanie obrazu do Base64", "Generowanie data URI z typem MIME", "Obsługa JPG, PNG, WebP, SVG, GIF", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter obrazu na Base64. Zakoduj JPG, PNG, WebP lub SVG do Base64 w przeglądarce - pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Kodowanie obrazu do Base64",
+        "Generowanie data URI z typem MIME",
+        "Obsługa JPG, PNG, WebP, SVG, GIF",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
       "name": "Jak zakodować obraz do Base64",

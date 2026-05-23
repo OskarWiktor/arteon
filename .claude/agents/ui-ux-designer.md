@@ -153,7 +153,10 @@ You focus on:
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&family=JetBrains+Mono&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 ### Color & Theme: Commit Fully
@@ -260,10 +263,18 @@ You focus on:
 
 ```css
 /* Layered gradients */
-background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%), linear-gradient(45deg, #1a1a2e 0%, #16213e 100%);
+background:
+  linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%),
+  linear-gradient(45deg, #1a1a2e 0%, #16213e 100%);
 
 /* Geometric patterns */
-background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.05) 10px, rgba(255, 255, 255, 0.05) 20px);
+background-image: repeating-linear-gradient(
+  45deg,
+  transparent,
+  transparent 10px,
+  rgba(255, 255, 255, 0.05) 10px,
+  rgba(255, 255, 255, 0.05) 20px
+);
 
 /* Noise texture */
 background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=');

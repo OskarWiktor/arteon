@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "SVG til PNG-konverterer",
-      "alternateName": ["Konverter SVG til PNG", "SVG til PNG konvertering", "Gratis SVG til PNG konverterer"],
+      "alternateName": [
+        "Konverter SVG til PNG",
+        "SVG til PNG konvertering",
+        "Gratis SVG til PNG konverterer"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter SVG-vektorgrafikk til PNG. Ideell for dokumenter og sosiale medier. Ingen installasjon nødvendig, fungerer på alle enheter. Gratis, privat og ubegrenset.",
-      "featureList": ["SVG til PNG-konvertering", "Tapsfri PNG-utdata", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
+      "featureList": [
+        "SVG til PNG-konvertering",
+        "Tapsfri PNG-utdata",
+        "Batchkonvertering",
+        "Lokal nettleserbehandling",
+        "Ingen filopplasting kreves"
+      ]
     },
     "howTo": {
       "name": "Slik konverterer du SVG til PNG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PNG – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funksjon",
+      "cols": ["SVG", "PNG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Komprimering med tap",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animasjonsstøtte",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Nettleserstøtte",
+          "values": ["Alle nettlesere", "Alle nettlesere"]
+        },
+        {
+          "label": "Fargedybde",
+          "values": ["N/A (vektor)", "8/16-bit"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Komprimering uten tap",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Nettleserstøtte",
-          "values": {
-            "svg": "Alle nettlesere",
-            "png": "Alle nettlesere"
-          }
-        },
-        {
-          "name": "Fargedybde",
-          "values": {
-            "svg": "N/A (vektor)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",

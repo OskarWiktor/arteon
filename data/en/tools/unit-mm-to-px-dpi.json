@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "MM to pixels (DPI) converter",
-      "alternateName": ["MM to pixel calculator", "Millimeter to pixel converter", "Print resolution calculator"],
+      "alternateName": [
+        "MM to pixel calculator",
+        "Millimeter to pixel converter",
+        "Print resolution calculator"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert millimeters to pixels at any DPI resolution. Essential for print design, packaging, and precise graphic work.",
@@ -184,55 +188,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "MM to pixels at various DPI",
-      "featureLabel": "Feature",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["300 DPI", "600 DPI"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "300 DPI"
+          "label": "1 mm",
+          "values": ["11.81 px", "23.62 px"]
         },
         {
-          "id": "unit2",
-          "name": "600 DPI",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "1 mm",
-          "values": {
-            "unit1": "11.81 px",
-            "unit2": "23.62 px"
-          }
+          "label": "10 mm",
+          "values": ["118 px", "236 px"]
         },
         {
-          "name": "10 mm",
-          "values": {
-            "unit1": "118 px",
-            "unit2": "236 px"
-          }
+          "label": "85 mm (card)",
+          "values": ["1,004 px", "2,008 px"]
         },
         {
-          "name": "85 mm (card)",
-          "values": {
-            "unit1": "1,004 px",
-            "unit2": "2,008 px"
-          }
+          "label": "Use case",
+          "values": ["Standard print", "Fine art / medical"]
         },
         {
-          "name": "Use case",
-          "values": {
-            "unit1": "Standard print",
-            "unit2": "Fine art / medical"
-          }
-        },
-        {
-          "name": "File size",
-          "values": {
-            "unit1": "Standard",
-            "unit2": "4× larger"
-          }
+          "label": "File size",
+          "values": ["Standard", "4× larger"]
         }
       ]
     },

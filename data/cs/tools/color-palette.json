@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "Generátor barevných palet – 17 barevných schémat",
-      "alternateName": ["Generátor barevných schémat", "Generátor barev", "Nástroj pro ladění barev", "Generátor barevné harmonie"],
+      "alternateName": [
+        "Generátor barevných schémat",
+        "Generátor barev",
+        "Nástroj pro ladění barev",
+        "Generátor barevné harmonie"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
       "description": "Bezplatný generátor barevných palet. Zadejte jednu barvu HEX a nástroj vygeneruje 17 schémat: monochromatické, sousedící, komplementární, triádické, dělené komplementární, pastelové, tmavé, tónové a minimalistické. Každou barvu lze zkopírovat s kódem HEX a hodnotou HSL.",

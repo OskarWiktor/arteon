@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs PDF – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["HEIC", "PDF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Häviöllinen pakkaus",
+          "values": ["✓", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Häviötön pakkaus",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Läpinäkyvyys (alfakanava)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animaatiotuki",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Selaintuki",
+          "values": ["Safari 13+ (macOS / iOS)", "Sisäänrakennettu PDF-katselin"]
+        },
+        {
+          "label": "Pieni tiedostokoko",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metatiedot (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Häviöllinen pakkaus",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Häviötön pakkaus",
-          "values": {
-            "heic": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Läpinäkyvyys (alfakanava)",
-          "values": {
-            "heic": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Animaatiotuki",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Selaintuki",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "pdf": "Sisäänrakennettu PDF-katselin"
-          }
-        },
-        {
-          "name": "Pieni tiedostokoko",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metatiedot (EXIF)",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",
@@ -255,7 +224,7 @@
     {
       "type": "sectionInfo",
       "title": "How image conversion impacts page speed and SEO",
-      "html": "<p class=\"text-mid mb-4\">HEIC to PDF conversion creates document files. When sharing PDFs containing photos online, file size matters — large PDFs slow down downloads and may exceed email attachment limits (typically 10–25 MB).</p><p class=\"text-mid mb-4\">The converter optimizes the PDF output to balance quality and file size. A typical 12 MP iPhone photo produces a PDF page of about 1–2 MB, meaning a 10-photo PDF will be approximately 15–20 MB.</p><p class=\"text-mid\">For smaller PDFs, consider reducing quality settings. For web sharing, you may want to convert HEIC to JPG or WebP instead and display images directly on a web page.</p>"
+      "html": "<p class=\"text-mid mb-4\">HEIC to PDF conversion creates document files. When sharing PDFs containing photos, file size matters — large PDFs slow down downloads and may exceed email attachment limits (typically 10–25 MB).</p><p class=\"text-mid mb-4\">The converter optimizes the PDF output to balance quality and file size. A typical 12 MP iPhone photo produces a PDF page of about 1–2 MB, meaning a 10-photo PDF will be approximately 15–20 MB.</p><p class=\"text-mid\">For smaller PDFs, consider reducing quality settings. For web sharing, you may want to convert HEIC to JPG or WebP instead and display images directly on a web page.</p>"
     },
     {
       "type": "faq",

@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les photos HEIC iPhone en PNG sans perte. Qualite et transparence completes. Outil gratuit dans le navigateur - sans inscription, sans limite, confidentialité totale.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convertir HEIC en PNG", "Conversion HEIC vers PNG", "Convertisseur HEIC en PNG gratuit"]
+      "featureList": [
+        "HEIC to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convertir HEIC en PNG",
+        "Conversion HEIC vers PNG",
+        "Convertisseur HEIC en PNG gratuit"
+      ]
     },
     "howTo": {
       "name": "HEIC to PNG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs PNG – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["HEIC", "PNG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Compression avec perte",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Safari 13+ (macOS / iOS)", "Tous les navigateurs"]
+        },
+        {
+          "label": "Profondeur de couleur",
+          "values": ["8/10-bit, HDR", "8/16-bit"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "heic": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "heic": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "png": "Tous les navigateurs"
-          }
-        },
-        {
-          "name": "Profondeur de couleur",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

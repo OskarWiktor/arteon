@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir PDF a JPG?",
-      "html": "<p class=\"text-mid mb-4\">PDF es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a JPG puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor online gratuito transforma tus archivos PDF al formato JPG directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
+      "html": "<p class=\"text-mid mb-4\">PDF es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a JPG puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor gratuito transforma tus archivos PDF al formato JPG directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "PDF to JPG conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PDF vs JPG – comparación de formatos",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["PDF", "JPG"],
+      "rows": [
         {
-          "id": "pdf",
-          "name": "PDF"
+          "label": "Compresión con pérdida",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Compresión sin pérdida",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparencia (canal alfa)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Soporte de animación",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Compatibilidad con navegadores",
+          "values": ["Visor PDF integrado", "Todos los navegadores"]
+        },
+        {
+          "label": "Tamaño de archivo compacto",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadatos (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresión con pérdida",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Compresión sin pérdida",
-          "values": {
-            "pdf": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparencia (canal alfa)",
-          "values": {
-            "pdf": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Soporte de animación",
-          "values": {
-            "pdf": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Compatibilidad con navegadores",
-          "values": {
-            "pdf": "Visor PDF integrado",
-            "jpg": "Todos los navegadores"
-          }
-        },
-        {
-          "name": "Tamaño de archivo compacto",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadatos (EXIF)",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Característica"
+      ]
     },
     {
       "type": "gap",

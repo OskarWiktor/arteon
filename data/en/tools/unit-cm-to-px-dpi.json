@@ -2,14 +2,14 @@
   "toolKey": "cmToPxDpi",
   "locale": "en",
   "metadata": {
-    "title": "CM to pixels (DPI) converter — centimeters to px, 300 DPI print",
-    "description": "Convert centimeters to pixels at any DPI. A4 at 300 DPI = 2480×3508px — free, no registration, works in browser.",
+    "title": "cm to px calculator (DPI) – convert centimeters to pixels",
+    "description": "Convert centimeters to pixels with adjustable DPI. The right tool for designers, photographers, and creators preparing files for print or for the screen.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/cm-to-px-converter"
   },
   "hero": {
-    "title": "Convert cm to px – print dimensions at any DPI",
-    "description": "Pixels = cm × DPI / 2.54. Set your DPI (72, 96, 150, 300) and get the exact pixel count for any centimeter dimension instantly.",
+    "title": "Convert centimeters to pixels at any DPI",
+    "description": "Enter a value in centimeters, set the DPI resolution, and read the result in pixels. Check how many pixels match a given value in centimeters. The converter helps you pick the right dimensions whenever you design graphics for print, for the screen, or for social media.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -24,39 +24,56 @@
   },
   "schemas": {
     "software": {
-      "name": "CM to pixels (DPI) converter",
-      "alternateName": ["CM to pixel calculator", "Print resolution converter", "DPI pixel calculator"],
+      "name": "Centimeters to pixels converter with adjustable DPI – cm to px",
+      "alternateName": [
+        "cm to px converter",
+        "cm to pixels calculator",
+        "centimeters to pixels",
+        "convert cm to px",
+        "cm to px 300 dpi",
+        "cm to pixels DPI",
+        "centimeter to pixel converter",
+        "cm to px online",
+        "how many pixels in 1 cm",
+        "cm to px calculator",
+        "cm to pixel converter",
+        "print size calculator",
+        "centimeter to pixel",
+        "image dimension converter",
+        "cm to px image size"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Convert centimeters to pixels at any DPI resolution. Essential for print design, web graphics, and image preparation.",
+      "description": "Centimeters to pixels converter with an adjustable DPI value. As soon as you type a dimension you can see exactly how many pixels match a given value in centimeters. The converter is great for preparing print files among other tasks, and runs entirely in your browser without registration.",
       "featureList": [
-        "Real-time bidirectional cm ↔ px conversion",
-        "Configurable DPI input (72, 96, 150, 300, 600)",
-        "A4 and A3 standard size reference built in",
-        "96 DPI screen standard vs 300 DPI print comparison",
-        "CSS @media print context reference",
-        "Copy result to clipboard in one click",
-        "Works entirely in browser — no server calls",
-        "Supports decimal cm values (e.g. 21.5 cm)",
-        "Banner and poster design use cases with DPI notes"
+        "Adjustable DPI resolution",
+        "Conversion runs in both directions, so you can switch from centimeters to pixels and back to centimeters with one click",
+        "The result appears instantly as you type, without the need to press any button",
+        "You can copy the final value to the clipboard with a single click",
+        "Ready-made format tables cover A0–A7 paper, 9×13, 10×15 and 13×18 photo prints, and business cards at 300 DPI",
+        "The reverse table shows how many centimeters match 100, 500, 1,500 or 2,480 pixels",
+        "A separate section explains how to switch cm to px in Photoshop, Illustrator, Figma, Canva, and Procreate",
+        "All calculations happen locally in your browser, your data never leaves the device and is not stored anywhere",
+        "The exact formula is px = cm × DPI ÷ 2.54 and it uses the fixed inch length of 2.54 cm",
+        "The tool works on phone, tablet, and desktop without installation"
       ]
     },
     "howTo": {
-      "name": "How to use the cm to px converter",
-      "description": "Instructions: cm to pixels at DPI.",
+      "name": "How to convert centimeters to pixels?",
+      "description": "A short guide to the cm to px converter with adjustable DPI.",
       "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Enter dimensions",
-          "text": "Type a value in centimeters."
+          "name": "Type the value in centimeters",
+          "text": "Type the number of centimeters you want to convert into the left input field."
         },
         {
-          "name": "Set DPI",
-          "text": "Choose your target DPI resolution."
+          "name": "Set the DPI resolution",
+          "text": "Choose the DPI value. Screens usually run at 96 DPI, while print typically uses 300 DPI."
         },
         {
-          "name": "Read pixels",
-          "text": "The pixel count appears instantly."
+          "name": "Read the result or reverse the direction",
+          "text": "The result in pixels appears right next to your input. You can copy it or press the Swap button to convert pixels into centimeters."
         }
       ]
     }
@@ -68,34 +85,234 @@
     },
     {
       "type": "sectionBasic",
-      "title": "When do you need to convert cm to pixels?",
-      "html": "<p class=\"text-mid mb-4\">In print design, dimensions are specified in centimeters or inches, but digital images are measured in pixels. The conversion depends on the DPI (dots per inch) resolution: pixels = cm × DPI / 2.54.</p><p class=\"text-mid mb-4\">Standard print resolution is 300 DPI: 10 cm = 1,181 pixels, 21 cm (A4 width) = 2,480 pixels. Web resolution is typically 72 DPI: 10 cm = 283 pixels.</p><p class=\"text-mid mb-4\">This converter is essential for preparing images for print, setting up document templates, and calculating the required image resolution for a specific print size.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "title": "Why convert centimeters to pixels?",
+      "html": "<p class=\"text-mid mb-4\">A centimeter is a physical unit that rules the world of print. A pixel, in turn, describes a single point on a phone, tablet, or laptop screen. To translate one into the other you have to know the DPI resolution, which tells you how many pixels fit on one inch of the screen.</p><p class=\"text-mid mb-4\">This kind of conversion is most often done by designers preparing files for a print shop, photographers checking whether a photo is large enough for a specific print size, or designers working on banners, social media graphics, or elements of a website. The converter saves you from doing the maths by hand and from memorising the formula.</p><p class=\"text-mid\">Further down the page you will find conversion tables in both directions, ready-made dimensions for popular formats (from an A4 sheet through 10×15 cm photos to a passport photo), and short walkthroughs that show how to convert centimeters to pixels in Photoshop, Figma, Canva, and other design tools.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "CM to pixels (DPI) converter – Arteon"
+      "imageAlt": "Free centimeters to pixels converter – Arteon"
     },
     {
       "type": "gap",
       "size": "xs"
     },
     {
+      "type": "sectionInfo",
+      "title": "How does cm to px conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">The whole conversion comes down to one formula built on the fixed relationship between an inch and a centimeter: one inch equals exactly 2.54 cm. You simply multiply the number of centimeters by the chosen DPI resolution and divide the result by 2.54.</p><p class=\"text-mid mb-4\">The complete formula looks like this: <strong>number of pixels = number of centimeters × DPI ÷ 2.54</strong>. The converter performs this calculation exactly and instantly.</p><p class=\"text-mid mb-4\">Example: you want to check how many pixels make up 7.5 cm at the print resolution of 300 DPI. You plug the values into the formula and get 7.5 × 300 ÷ 2.54, which equals about 886 pixels. At 96 DPI the same length gives only 284 pixels.</p><p class=\"text-mid\">The reverse direction works the same way: number of centimeters = number of pixels × 2.54 ÷ DPI. Thanks to this you can check how large a 1,500 px wide file will be on paper, or whether a photo from your camera is large enough for a specific print size.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "How many pixels do different centimeter values produce at different DPI values?",
+      "description": "The table below shows how the same dimensions in centimeters translate into pixels at the five most commonly used resolutions. The values have been rounded to the nearest whole number, so they may differ slightly from the result our converter gives, which shows the exact pixel count with decimals.",
+      "labelHeader": "Dimension",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
+      "rows": [
+        { "label": "0.5 cm", "values": ["14 px", "19 px", "30 px", "59 px", "118 px"] },
+        {
+          "label": "1 cm",
+          "values": ["28 px", "38 px", "59 px", "118 px", "236 px"],
+          "emphasis": true
+        },
+        { "label": "1.5 cm", "values": ["43 px", "57 px", "89 px", "177 px", "354 px"] },
+        { "label": "2 cm", "values": ["57 px", "76 px", "118 px", "236 px", "472 px"] },
+        { "label": "2.5 cm", "values": ["71 px", "94 px", "148 px", "295 px", "591 px"] },
+        { "label": "3 cm", "values": ["85 px", "113 px", "177 px", "354 px", "709 px"] },
+        { "label": "3.5 cm", "values": ["99 px", "132 px", "207 px", "413 px", "827 px"] },
+        { "label": "4 cm", "values": ["113 px", "151 px", "236 px", "472 px", "945 px"] },
+        { "label": "4.5 cm", "values": ["128 px", "170 px", "266 px", "531 px", "1,063 px"] },
+        {
+          "label": "5 cm",
+          "values": ["142 px", "189 px", "295 px", "591 px", "1,181 px"],
+          "emphasis": true
+        },
+        { "label": "6 cm", "values": ["170 px", "227 px", "354 px", "709 px", "1,417 px"] },
+        { "label": "7 cm", "values": ["198 px", "264 px", "413 px", "827 px", "1,654 px"] },
+        { "label": "8 cm", "values": ["227 px", "302 px", "472 px", "945 px", "1,890 px"] },
+        { "label": "9 cm", "values": ["255 px", "340 px", "531 px", "1,063 px", "2,126 px"] },
+        {
+          "label": "10 cm",
+          "values": ["283 px", "378 px", "591 px", "1,181 px", "2,362 px"],
+          "emphasis": true
+        },
+        { "label": "12 cm", "values": ["340 px", "454 px", "709 px", "1,417 px", "2,835 px"] },
+        { "label": "15 cm", "values": ["425 px", "567 px", "886 px", "1,772 px", "3,543 px"] },
+        {
+          "label": "20 cm",
+          "values": ["567 px", "756 px", "1,181 px", "2,362 px", "4,724 px"],
+          "emphasis": true
+        },
+        { "label": "25 cm", "values": ["709 px", "945 px", "1,476 px", "2,953 px", "5,906 px"] },
+        { "label": "30 cm", "values": ["850 px", "1,134 px", "1,772 px", "3,543 px", "7,087 px"] },
+        {
+          "label": "50 cm",
+          "values": ["1,417 px", "1,890 px", "2,953 px", "5,906 px", "11,811 px"]
+        },
+        {
+          "label": "100 cm",
+          "values": ["2,835 px", "3,780 px", "5,906 px", "11,811 px", "23,622 px"]
+        }
+      ],
+      "caption": "All values have been rounded to the nearest whole number according to the formula px = cm × DPI ÷ 2.54."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "How many centimeters do different pixel values produce at different DPI values?",
+      "description": "Sometimes we start with a pixel count and need to check how many centimeters it is. The table below shows that conversion for the four most commonly used resolutions.",
+      "labelHeader": "Pixels",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
+      "rows": [
+        { "label": "100 px", "values": ["3.53 cm", "2.65 cm", "1.69 cm", "0.85 cm"] },
+        { "label": "200 px", "values": ["7.06 cm", "5.29 cm", "3.39 cm", "1.69 cm"] },
+        {
+          "label": "300 px",
+          "values": ["10.58 cm", "7.94 cm", "5.08 cm", "2.54 cm"],
+          "emphasis": true
+        },
+        { "label": "500 px", "values": ["17.64 cm", "13.23 cm", "8.47 cm", "4.23 cm"] },
+        { "label": "600 px", "values": ["21.17 cm", "15.88 cm", "10.16 cm", "5.08 cm"] },
+        { "label": "800 px", "values": ["28.22 cm", "21.17 cm", "13.55 cm", "6.77 cm"] },
+        {
+          "label": "1,000 px",
+          "values": ["35.28 cm", "26.46 cm", "16.93 cm", "8.47 cm"],
+          "emphasis": true
+        },
+        { "label": "1,200 px", "values": ["42.33 cm", "31.75 cm", "20.32 cm", "10.16 cm"] },
+        { "label": "1,500 px", "values": ["52.92 cm", "39.69 cm", "25.40 cm", "12.70 cm"] },
+        { "label": "1,920 px", "values": ["67.73 cm", "50.80 cm", "32.51 cm", "16.26 cm"] },
+        {
+          "label": "2,480 px",
+          "values": ["87.47 cm", "65.62 cm", "42.00 cm", "21.00 cm (A4)"],
+          "emphasis": true
+        },
+        { "label": "3,508 px", "values": ["123.73 cm", "92.82 cm", "59.40 cm", "29.70 cm (A4)"] }
+      ],
+      "caption": "The last two values – 2,480 and 3,508 pixels – match the exact width and height of an A4 sheet at the resolution of 300 DPI."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "The most popular physical formats and their dimensions in pixels",
+      "description": "If you need the dimensions of a finished format rather than a single centimeter (for example an A4 sheet, a 10×15 cm photo, or a passport photo), the table below lists the values at the two most commonly used resolutions. Dimensions are always given as width × height in portrait orientation.",
+      "labelHeader": "Format",
+      "cols": ["W × H (cm)", "W × H (150 DPI)", "W × H (300 DPI)"],
+      "rows": [
+        { "groupLabel": "ISO A-series paper" },
+        { "label": "A0", "values": ["84.1 × 118.9", "4,967 × 7,022", "9,933 × 14,043"] },
+        { "label": "A1", "values": ["59.4 × 84.1", "3,508 × 4,967", "7,016 × 9,933"] },
+        { "label": "A2", "values": ["42.0 × 59.4", "2,480 × 3,508", "4,961 × 7,016"] },
+        { "label": "A3", "values": ["29.7 × 42.0", "1,754 × 2,480", "3,508 × 4,961"] },
+        {
+          "label": "A4",
+          "values": ["21.0 × 29.7", "1,240 × 1,754", "2,480 × 3,508"],
+          "emphasis": true
+        },
+        { "label": "A5", "values": ["14.8 × 21.0", "874 × 1,240", "1,748 × 2,480"] },
+        { "label": "A6", "values": ["10.5 × 14.8", "620 × 874", "1,240 × 1,748"] },
+        { "label": "A7", "values": ["7.4 × 10.5", "437 × 620", "874 × 1,240"] },
+        { "groupLabel": "US paper sizes" },
+        {
+          "label": "Letter (8.5 × 11 in)",
+          "values": ["21.59 × 27.94", "1,275 × 1,650", "2,550 × 3,300"],
+          "emphasis": true
+        },
+        {
+          "label": "Legal (8.5 × 14 in)",
+          "values": ["21.59 × 35.56", "1,275 × 2,100", "2,550 × 4,200"]
+        },
+        {
+          "label": "Tabloid / Ledger (11 × 17 in)",
+          "values": ["27.94 × 43.18", "1,650 × 2,550", "3,300 × 5,100"]
+        },
+        { "groupLabel": "Photo prints" },
+        {
+          "label": "4 × 6 in",
+          "values": ["10.16 × 15.24", "600 × 900", "1,200 × 1,800"],
+          "emphasis": true
+        },
+        { "label": "5 × 7 in", "values": ["12.70 × 17.78", "750 × 1,050", "1,500 × 2,100"] },
+        { "label": "8 × 10 in", "values": ["20.32 × 25.40", "1,200 × 1,500", "2,400 × 3,000"] },
+        { "label": "11 × 14 in", "values": ["27.94 × 35.56", "1,650 × 2,100", "3,300 × 4,200"] },
+        { "label": "16 × 20 in", "values": ["40.64 × 50.80", "2,400 × 3,000", "4,800 × 6,000"] },
+        { "label": "Photo 10 × 15 cm", "values": ["10 × 15", "591 × 886", "1,181 × 1,772"] },
+        { "label": "Photo 13 × 18 cm", "values": ["13 × 18", "768 × 1,063", "1,535 × 2,126"] },
+        { "label": "Photo 20 × 30 cm", "values": ["20 × 30", "1,181 × 1,772", "2,362 × 3,543"] },
+        { "groupLabel": "ID and passport photos" },
+        { "label": "US passport (2 × 2 in)", "values": ["5.08 × 5.08", "300 × 300", "600 × 600"] },
+        {
+          "label": "ICAO / EU passport (35 × 45 mm)",
+          "values": ["3.5 × 4.5", "207 × 266", "413 × 531"],
+          "emphasis": true
+        },
+        { "groupLabel": "Business cards" },
+        { "label": "US (3.5 × 2 in)", "values": ["8.89 × 5.08", "525 × 300", "1,050 × 600"] },
+        {
+          "label": "European ISO (85 × 55 mm)",
+          "values": ["8.5 × 5.5", "502 × 325", "1,004 × 650"],
+          "emphasis": true
+        },
+        { "label": "Japanese (91 × 55 mm)", "values": ["9.1 × 5.5", "538 × 325", "1,075 × 650"] },
+        { "groupLabel": "Large-format advertising" },
+        {
+          "label": "Roll-up banner (85 × 200 cm)",
+          "values": ["85 × 200", "5,020 × 11,811", "10,039 × 23,622"]
+        }
+      ],
+      "caption": "For billboards and other large-format graphics 30–72 DPI is usually enough in practice, because the viewer stands several meters away."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
-      "title": "How to use the converter?",
-      "grid": "three",
+      "title": "How to convert centimeters to pixels in popular programs?",
+      "inlineIcon": true,
+      "grid": "one",
       "items": [
         {
-          "title": "1. Enter a value",
-          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
-          "icon": "RiInputMethodLine"
+          "title": "Photoshop",
+          "icon": "RiImageEditLine",
+          "description": "In Adobe Photoshop you set the canvas dimensions in <strong>Image &rsaquo; Image Size</strong>. Pick Centimeters from the units dropdown, type the physical dimension and the target DPI in the Resolution field, and Photoshop will convert the value into pixels automatically. If you want the unit change to keep the pixel count of the file intact, uncheck the Resample option – you then change only the physical dimension while the pixels stay untouched."
         },
         {
-          "title": "2. Read the result",
-          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
-          "icon": "RiLoopLeftLine"
+          "title": "Illustrator",
+          "icon": "RiPencilLine",
+          "description": "Adobe Illustrator works in the unit you chose when you created the document. You can change it under <strong>Edit &rsaquo; Preferences &rsaquo; Units</strong> – pick Pixels for screen projects or Centimeters for print materials. The resulting pixel count depends on the artboard resolution set at the start of the project. If you are working on a flyer in cm but the client asks for the file in px, the easiest approach is to copy the dimension from our converter and paste it into the Transform panel."
         },
         {
-          "title": "3. Copy or reverse",
-          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
-          "icon": "RiClipboardLine"
+          "title": "Figma",
+          "icon": "RiLayoutGridLine",
+          "description": "Figma works only in pixels and assumes a fixed 96 DPI. That means whenever you design something in Figma that will later be printed in centimeters, you first have to translate the physical dimension into pixels at the target resolution. For example, a 10 × 15 cm flyer at 300 DPI becomes a 1,181 × 1,772 px frame – type that value when you create a new frame, then export at 1× scale so the dimensions stay true to the original."
+        },
+        {
+          "title": "Canva",
+          "icon": "RiPaletteLine",
+          "description": "In Canva you click <strong>Create a design &rsaquo; Custom size</strong> and pick cm or mm as the unit before typing the physical dimension. Canva converts the value into pixels automatically on export. If the file is going to a print shop, check the PDF Print option in the download dialog and turn on bleed and crop marks. Canva exports such files at 300 DPI by default, so the format table on this page matches what you receive at the output."
+        },
+        {
+          "title": "Procreate",
+          "icon": "RiBrushLine",
+          "description": "When you create a new Procreate canvas you can pick pixels, millimeters, centimeters, or inches as the unit. In the Custom Canvas tab set the dimension in cm and type 300 DPI if the illustration is going to print. Keep in mind that the higher the DPI and the larger the format, the fewer layers the app gives you – on an iPad Pro with 8 GB RAM the safe limit is A3 at 300 DPI, while larger formats are better split into sections or rendered at 150 DPI."
+        },
+        {
+          "title": "Word, Excel, PowerPoint",
+          "icon": "RiFileTextLine",
+          "description": "Microsoft 365 (Word, Excel, and PowerPoint) works in centimeters, and image dimensions live in the <strong>Size and Position</strong> panel. PDF files exported from these apps keep their high quality by default, so 1 cm matches 118 px at 300 DPI. If you save a slide as a PNG or JPG, PowerPoint uses the standard 96 DPI, which means 1 cm equals about 38 px – that is when our converter helps you check whether the file is actually large enough for print."
+        },
+        {
+          "title": "CSS and HTML",
+          "icon": "RiHtml5Line",
+          "description": "In CSS the <code>cm</code> unit is translated by the fixed formula <code>1cm = 96px ÷ 2.54 ≈ 37.8px</code>. The value does not change with the screen – you always get the same result regardless of the device. In practice you use <code>px</code>, <code>rem</code>, or <code>em</code> for web interfaces and reserve <code>cm</code> for print stylesheets (<code>@media print</code>). Only then does the page layout actually mirror the physical dimensions of a sheet of paper."
         }
       ]
     },
@@ -105,28 +322,28 @@
     },
     {
       "type": "sectionSteps",
-      "title": "When is this converter useful?",
+      "title": "When is it worth reaching for this converter?",
       "grid": "two",
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "Print preparation for brochures and posters",
-          "description": "Professional print requires 300 DPI. An A4 brochure (21 × 29.7 cm) at 300 DPI needs a 2,480 × 3,508px canvas. An A3 poster (29.7 × 42 cm) requires 3,508 × 4,961px. Getting this wrong and delivering a 72 DPI file results in a blurry, unprintable product — this converter confirms the correct canvas size before you start designing."
+          "title": "Preparing files for a print shop",
+          "description": "You can check that an A4 print sheet measures 2,480 × 3,508 px at 300 DPI, and that an A3 poster takes 3,508 × 4,961 px. The converter helps you avoid the situation where a print shop rejects your file because the resolution is too low."
         },
         {
           "icon": "RiImageLine",
-          "title": "Web banner and display advertising",
-          "description": "Web banners are often specified in centimeters by clients but must be delivered in pixels. A standard leaderboard banner at 72.8 × 9 cm at 96 DPI screen resolution equals 756 × 94px. For retina-ready banners, double the DPI to 192 DPI so the banner stays sharp on high-DPI displays."
+          "title": "Graphics for a website",
+          "description": "If you designed a banner that measures 20 × 6 cm, you will see that at 96 DPI it matches exactly 756 × 227 px. That is precisely the size to drop into your website code or a CMS template."
         },
         {
-          "icon": "RiArtboardLine",
-          "title": "CSS @media print stylesheets",
-          "description": "CSS @media print allows using cm units directly — width: 21cm renders correctly when printed. However, when preparing background images or raster graphics for print stylesheets, you still need to convert cm to px at the appropriate DPI to supply a high-resolution image that prints sharply."
+          "icon": "RiCameraLine",
+          "title": "ID and passport photos",
+          "description": "The ICAO biometric photo standard for passports and ID cards used across the EU and many other countries (3.5 × 4.5 cm) matches exactly 413 × 531 px at 300 DPI. Type those values in your camera or photo editor and the file will match the official requirements."
         },
         {
-          "icon": "RiLayoutLine",
-          "title": "Photo books and large format printing",
-          "description": "Photo book printing services like Shutterfly and Blurb specify page dimensions in centimeters and require images at 300 DPI. A 20 × 20 cm square page requires a 2,362 × 2,362px image. For large-format prints (banners, canvas), 150 DPI is usually sufficient — a 60 × 90 cm banner at 150 DPI = 3,543 × 5,315px."
+          "icon": "RiContactsBookLine",
+          "title": "Business cards and brand assets",
+          "description": "A European business card (8.5 × 5.5 cm) becomes 1,004 × 650 px at 300 DPI, while a US one (3.5 × 2 in) matches 1,050 × 600 px. Add a 3 mm bleed on every side and design the file roughly 35 px larger along each edge."
         }
       ]
     },
@@ -135,105 +352,22 @@
       "variant": "line"
     },
     {
-      "type": "sectionSteps",
-      "title": "What makes this converter different?",
-      "grid": "two",
-      "items": [
+      "type": "sectionTable",
+      "title": "Comparison of centimeter and pixel units",
+      "labelHeader": "Property",
+      "cols": ["Centimeter (cm)", "Pixel (px)"],
+      "rows": [
         {
-          "icon": "RiShieldCheckLine",
-          "title": "Complete privacy",
-          "description": "All calculations run locally in your browser. No data is sent to any server."
+          "label": "Type of unit",
+          "values": ["Physical and tangible", "Digital and screen-based"]
         },
         {
-          "icon": "RiTimeLine",
-          "title": "Real-time results",
-          "description": "The result updates instantly as you type – no need to click any button."
+          "label": "Dependence on the device",
+          "values": ["Always the same", "Depends on DPI or PPI"]
         },
-        {
-          "icon": "RiArrowLeftRightLine",
-          "title": "Bidirectional conversion",
-          "description": "The Reverse button lets you convert in both directions with one click."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Reference table",
-          "description": "A ready-made table with commonly converted values and contextual descriptions."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "How does cm to pixel conversion work?",
-      "html": "<p class=\"text-mid mb-4\">The formula is: pixels = cm × DPI / 2.54. DPI means dots per inch, and 1 inch = 2.54 cm.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 cm = 118.11 pixels. At 72 DPI: 1 cm = 28.35 pixels.</p><p class=\"text-mid\">Higher DPI = more pixels per centimeter = sharper print. 300 DPI is the standard for professional print quality.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Practical tips",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>300 DPI (print quality): A4 = 2,480 × 3,508 px, A3 = 3,508 × 4,961 px.</li><li>150 DPI (large format): A2 poster = 2,480 × 3,508 px.</li><li>72 DPI (screen): 10 cm = 283 px, 20 cm = 567 px.</li><li>12 MP camera (4,000 × 3,000 px) prints up to 33.9 × 25.4 cm at 300 DPI.</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionFeatureComparison",
-      "title": "Common DPI resolutions",
-      "featureLabel": "Feature",
-      "plans": [
-        {
-          "id": "unit1",
-          "name": "300 DPI (print)"
-        },
-        {
-          "id": "unit2",
-          "name": "72 DPI (screen)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "10 cm",
-          "values": {
-            "unit1": "1,181 px",
-            "unit2": "283 px"
-          }
-        },
-        {
-          "name": "A4 width (21 cm)",
-          "values": {
-            "unit1": "2,480 px",
-            "unit2": "595 px"
-          }
-        },
-        {
-          "name": "A4 height (29.7 cm)",
-          "values": {
-            "unit1": "3,508 px",
-            "unit2": "842 px"
-          }
-        },
-        {
-          "name": "Use case",
-          "values": {
-            "unit1": "Professional print",
-            "unit2": "Web graphics"
-          }
-        },
-        {
-          "name": "Quality",
-          "values": {
-            "unit1": "Sharp at any size",
-            "unit2": "Screen-only"
-          }
-        }
+        { "label": "Print at 300 DPI", "values": ["1 cm equals 118 px", "1 px equals 0.0085 cm"] },
+        { "label": "Screen at 96 DPI", "values": ["1 cm equals 37.8 px", "1 px equals 0.0265 cm"] },
+        { "label": "A4 format", "values": ["21 × 29.7 cm", "2,480 × 3,508 px (300 DPI)"] }
       ]
     },
     {
@@ -242,40 +376,56 @@
     },
     {
       "type": "faq",
-      "title": "Frequently asked questions",
+      "title": "Frequently asked questions about cm to px conversion",
       "openByDefault": 1,
       "items": [
         {
-          "question": "How many pixels is 1 cm at 300 DPI?",
-          "answer": "1 cm at 300 DPI = 118.11 pixels. The formula is: pixels = cm × DPI / 2.54. So 1 cm × 300 / 2.54 = 118.11px. At 96 DPI (screen): 1 cm = 37.8px. At 72 DPI (screen legacy): 1 cm = 28.35px."
+          "question": "How many pixels does 1 cm contain?",
+          "answer": "Everything depends on the resolution you choose. At the standard screen value of 96 DPI one centimeter equals about 38 pixels, while at the older 72 DPI used in earlier screen graphics it is only 28 pixels. In print, where 300 DPI is the typical baseline, the same centimeter already covers about 118 pixels."
         },
         {
-          "question": "What DPI should I use for different print types?",
-          "answer": "300 DPI: standard for professional print — brochures, business cards, photo prints, magazines. 150 DPI: acceptable for large-format printing — posters, banners, canvas prints viewed from a distance. 72–96 DPI: screen only — web graphics, digital presentations, on-screen PDFs."
+          "question": "How do you convert centimeters to pixels?",
+          "answer": "The easiest way is to type the number of centimeters into the converter field and pick the DPI you need – the result appears right away. If you would rather calculate by hand, use the formula: number of pixels = number of centimeters × DPI ÷ 2.54. For 5 cm at 300 DPI you get 5 × 300 ÷ 2.54, which equals about 591 pixels."
         },
         {
-          "question": "How big can I print a 12 megapixel photo?",
-          "answer": "A 12 MP camera produces roughly 4,000 × 3,000 pixels. At 300 DPI: 4000/300 × 2.54 = 33.9 × 25.4 cm (about 13×10 inches). At 150 DPI: 67.7 × 50.8 cm. Beyond these sizes, visible pixelation may appear at normal viewing distance."
+          "question": "How much is 1 pixel in centimeters?",
+          "answer": "A single pixel on a standard 96 DPI screen measures about 0.0265 cm, and at the 300 DPI used for print only 0.0085 cm. To convert any pixel count into centimeters, divide it by the DPI value and multiply by 2.54."
         },
         {
-          "question": "What resolution is A4 at 300 DPI?",
-          "answer": "A4 paper (21 × 29.7 cm) at 300 DPI = 2,480 × 3,508 pixels. This is the standard canvas size requested by most commercial print shops for full-bleed A4 documents. Add 3mm bleed on each side: 21.6 × 30.3 cm = 2,551 × 3,579px."
+          "question": "How many pixels does 5 cm contain?",
+          "answer": "At the standard screen resolution of 96 DPI five centimeters equal about 189 pixels. If you are preparing a graphic for 300 DPI print, the same length grows to 591 pixels, and at 600 DPI it reaches 1,181 pixels."
         },
         {
-          "question": "What is 96 DPI and why is it the screen standard?",
-          "answer": "96 DPI became the Windows screen standard because it gives a comfortable text size on early monitors. CSS defines 1 inch = 96 CSS pixels, so 1 cm = 96/2.54 = 37.795 CSS pixels. This is independent of the physical screen DPI, which on modern Retina displays can be 200+ PPI."
+          "question": "How many pixels does 10 cm contain?",
+          "answer": "Ten centimeters match about 378 pixels at 96 DPI. In 300 DPI print the same 10 cm equal exactly 1,181 pixels – a number worth remembering because it appears in photography as the short side of a classic 10 × 15 cm print."
         },
         {
-          "question": "How do I set document size correctly in Photoshop for print?",
-          "answer": "In Photoshop: File > New > choose Centimeters as the unit, enter your dimensions (e.g. 21 × 29.7 cm), set resolution to 300 pixels/inch. The pixel dimensions update automatically. For bleed, add 3mm to each side: enter 21.6 × 30.3 cm instead."
+          "question": "How many pixels does 20 cm contain?",
+          "answer": "Twenty centimeters equal 756 pixels on a 96 DPI screen and 2,362 pixels in 300 DPI print. If you design for a billboard where 30–72 DPI is enough, the same width drops to between 236 and 567 pixels."
         },
         {
-          "question": "Does CSS use cm as a valid unit?",
-          "answer": "Yes. CSS accepts cm as a unit — width: 10cm is valid. The browser converts it using the standard: 1cm = 37.795px at 96 DPI. This is only useful for print stylesheets (@media print) because screen pixels do not correspond to physical centimeters on screen."
+          "question": "How many pixels does A4 contain at 300 DPI?",
+          "answer": "An A4 sheet measures 21 × 29.7 cm, which at 300 DPI gives exactly 2,480 × 3,508 pixels. At 150 DPI the same dimensions become 1,240 × 1,754 pixels, while at the screen value of 96 DPI they are only 794 × 1,123 pixels."
         },
         {
-          "question": "Are calculations done locally?",
-          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+          "question": "How many pixels does a 10×15 cm photo contain?",
+          "answer": "A standard 10 × 15 cm photo print matches 1,181 × 1,772 pixels at 300 DPI. If your camera file is at least that large, you can order the print with confidence – the quality will be excellent."
+        },
+        {
+          "question": "How many pixels does a passport photo (35 × 45 mm) contain?",
+          "answer": "The ICAO biometric photo standard for passports and ID cards used across the EU, UK, and many other countries measures 35 × 45 mm, which at 300 DPI gives 413 × 531 pixels. Government agencies often also accept a slightly larger digital file, so 492 × 633 px is a safe choice that meets the most common official requirements."
+        },
+        {
+          "question": "How do you set centimeters to pixels in Photoshop or Canva?",
+          "answer": "In Photoshop open Image &rsaquo; Image Size, change the unit to centimeters, and type the dimensions together with the target DPI. In Canva pick Create a design &rsaquo; Custom size, switch the unit to cm, and enter the required dimension – the app will convert the file into pixels automatically on export. Detailed walkthroughs for Photoshop, Illustrator, Figma, Canva, and Procreate are in the section above."
+        },
+        {
+          "question": "What is the difference between DPI and PPI?",
+          "answer": "DPI (dots per inch) is the number of ink dots per inch of material and describes a printer. PPI (pixels per inch) is the number of pixels per inch of a screen and describes a monitor or display. In everyday work designers use both abbreviations interchangeably, but technically DPI is for print and PPI is for screens."
+        },
+        {
+          "question": "How many pixels does a centimeter contain on a Retina screen?",
+          "answer": "Apple Retina displays pack pixels twice as densely as a regular monitor, but the operating system still interprets dimensions as if the panel was 96 DPI. That is why you prepare graphics at twice the resolution (1 cm equals 76 px instead of 38 px), save them as 96 DPI, and export them with the @2x suffix."
         }
       ]
     },
@@ -285,11 +435,11 @@
     },
     {
       "type": "contactForm",
-      "title": "Help us improve our tools",
-      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "title": "Help us improve this converter",
+      "description": "Missing a format in the tables, spotted a calculation error, or want to suggest a new feature? Drop us a message – we read every email personally and respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "cm to px converter – Arteon",
-      "defaultSubject": "Feedback: cm-to-px-dpi"
+      "defaultSubject": "Feedback: cm to px converter"
     },
     {
       "type": "gap",
@@ -297,7 +447,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Explore more free tools"
+      "title": "Other tools that may come in handy"
     },
     {
       "type": "gap",

@@ -28,8 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert AVIF files to WebP. Wide compatibility at a small file size. All processing happens locally in your browser - files never leave your device.",
-      "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert AVIF to WEBP", "AVIF to WEBP conversion", "Free AVIF to WEBP converter", "Change AVIF to WEBP"]
+      "featureList": [
+        "AVIF to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert AVIF to WEBP",
+        "AVIF to WEBP conversion",
+        "Free AVIF to WEBP converter",
+        "Change AVIF to WEBP"
+      ]
     },
     "howTo": {
       "name": "AVIF to WebP",
@@ -174,78 +184,47 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs WebP – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["AVIF", "WebP"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Lossy compression",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Web browser support",
+          "values": [
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          ]
+        },
+        {
+          "label": "Color depth",
+          "values": ["8/10/12-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "avif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "avif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "avif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "avif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "avif": "8/10/12-bit, HDR",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "avif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "avif": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

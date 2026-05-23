@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "BMP naar PNG converter",
-      "alternateName": ["BMP naar PNG omzetten", "BMP naar PNG conversie", "Gratis BMP naar PNG converter"],
+      "alternateName": [
+        "BMP naar PNG omzetten",
+        "BMP naar PNG conversie",
+        "Gratis BMP naar PNG converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer BMP-afbeeldingen naar verliesvrij PNG. Kwaliteit behouden, kleiner bestand. Alle verwerking gebeurt lokaal in je browser - bestanden verlaten je apparaat niet.",
-      "featureList": ["BMP naar PNG conversie", "Verliesvrije PNG-uitvoer", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
+      "featureList": [
+        "BMP naar PNG conversie",
+        "Verliesvrije PNG-uitvoer",
+        "Batchconversie",
+        "Lokale browserverwerking",
+        "Geen bestandsupload vereist"
+      ]
     },
     "howTo": {
       "name": "BMP naar PNG converteren",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs PNG – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["BMP", "PNG"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Lossy-compressie",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alle browsers", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["1/4/8/24/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "bmp": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "bmp": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "bmp": "Alle browsers",
-            "png": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

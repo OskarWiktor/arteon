@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Convertisseur WebP en JPG",
-      "alternateName": ["Convertir WEBP en JPG", "Conversion WEBP vers JPG", "Convertisseur WEBP en JPG gratuit"],
+      "alternateName": [
+        "Convertir WEBP en JPG",
+        "Conversion WEBP vers JPG",
+        "Convertisseur WEBP en JPG gratuit"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez vos fichiers WebP en JPG universel. Sans limites, sans inscription. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
-      "featureList": ["Conversion WEBP en JPG", "Contrôle de qualité JPG", "Conversion par lot", "Traitement local dans le navigateur", "Aucun envoi de fichier"]
+      "featureList": [
+        "Conversion WEBP en JPG",
+        "Contrôle de qualité JPG",
+        "Conversion par lot",
+        "Traitement local dans le navigateur",
+        "Aucun envoi de fichier"
+      ]
     },
     "howTo": {
       "name": "Comment convertir WEBP en JPG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs JPG – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["WebP", "JPG"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Compression avec perte",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Tous les navigateurs"]
+        },
+        {
+          "label": "Profondeur de couleur",
+          "values": ["8-bit (16.7M)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "webp": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "webp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "webp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "webp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "jpg": "Tous les navigateurs"
-          }
-        },
-        {
-          "name": "Profondeur de couleur",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "webp": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "webp": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

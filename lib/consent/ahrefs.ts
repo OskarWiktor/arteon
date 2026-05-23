@@ -6,7 +6,7 @@ export function loadAhrefs() {
 
   const ahrefsSrc = 'https://analytics.ahrefs.com/analytics.js';
 
-  const alreadyLoaded = Array.from(document.scripts).some((s) => s.src === ahrefsSrc);
+  const alreadyLoaded = Array.from(document.scripts).some(s => s.src === ahrefsSrc);
   if (alreadyLoaded) return;
   if (document.getElementById('ahrefs-analytics')) return;
 

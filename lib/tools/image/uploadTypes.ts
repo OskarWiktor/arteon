@@ -1,4 +1,9 @@
-export const SUPPORTED_IMAGE_UPLOAD_TYPES = ['image/png', 'image/jpeg', 'image/jpg', 'image/svg+xml'] as const;
+export const SUPPORTED_IMAGE_UPLOAD_TYPES = [
+  'image/png',
+  'image/jpeg',
+  'image/jpg',
+  'image/svg+xml',
+] as const;
 
 type SupportedImageUploadType = (typeof SUPPORTED_IMAGE_UPLOAD_TYPES)[number];
 

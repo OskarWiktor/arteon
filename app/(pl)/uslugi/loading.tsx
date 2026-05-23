@@ -1,4 +1,4 @@
-import ServiceHubSkeleton from '@/components/ui/skeletons/ServiceHubSkeleton';
+import ServiceHubSkeleton from '@/components/organisms/skeletons/ServiceHubSkeleton';
 
 export default function Loading() {
   return <ServiceHubSkeleton />;

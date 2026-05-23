@@ -164,9 +164,42 @@ import { useFormState } from 'react-dom';
 
 ```typescript
 // types/locale.ts
-export type Locale = 'pl' | 'en' | 'de' | 'es' | 'fr' | 'pt' | 'it' | 'ro' | 'nl' | 'hu' | 'cs' | 'sv' | 'da' | 'no' | 'fi' | 'el';
+export type Locale =
+  | 'pl'
+  | 'en'
+  | 'de'
+  | 'es'
+  | 'fr'
+  | 'pt'
+  | 'it'
+  | 'ro'
+  | 'nl'
+  | 'hu'
+  | 'cs'
+  | 'sv'
+  | 'da'
+  | 'no'
+  | 'fi'
+  | 'el';
 
-export const locales: readonly Locale[] = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'] as const;
+export const locales: readonly Locale[] = [
+  'pl',
+  'en',
+  'de',
+  'es',
+  'fr',
+  'pt',
+  'it',
+  'ro',
+  'nl',
+  'hu',
+  'cs',
+  'sv',
+  'da',
+  'no',
+  'fi',
+  'el',
+] as const;
 ```
 
 ## Tool Data Type
@@ -199,7 +232,14 @@ export interface ToolPageData {
   cta?: CTABlock;
 }
 
-export type ToolContentBlock = SectionInfoBlock | SectionBasicBlock | SectionStepsBlock | SectionDemoBlock | FaqBlock | GapBlock | ToolsCarouselBlock;
+export type ToolContentBlock =
+  | SectionInfoBlock
+  | SectionBasicBlock
+  | SectionStepsBlock
+  | SectionDemoBlock
+  | FaqBlock
+  | GapBlock
+  | ToolsCarouselBlock;
 ```
 
 ## Key Type Files
@@ -524,8 +564,8 @@ export function useDictionary() {
 import { cache } from 'react';
 
 const dictionaries: Record<Locale, () => Promise<ClientDictionary>> = {
-  pl: () => import('@/data/pl/dictionary.json').then((m) => m.default),
-  en: () => import('@/data/en/dictionary.json').then((m) => m.default),
+  pl: () => import('@/data/pl/dictionary.json').then(m => m.default),
+  en: () => import('@/data/en/dictionary.json').then(m => m.default),
   // ... all 16 locales
 };
 
@@ -605,9 +645,26 @@ main();
 
 ```javascript
 // Process all locales
-const LOCALES = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
+const LOCALES = [
+  'pl',
+  'en',
+  'de',
+  'es',
+  'fr',
+  'pt',
+  'it',
+  'ro',
+  'nl',
+  'hu',
+  'cs',
+  'sv',
+  'da',
+  'no',
+  'fi',
+  'el',
+];
 
-LOCALES.forEach((locale) => {
+LOCALES.forEach(locale => {
   const dataDir = path.join(__dirname, `../data/${locale}/tools`);
   // Process locale
 });

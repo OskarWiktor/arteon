@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "DPI és PPI összehasonlítása — nyomtatási vs képernyőfelbontás.",
-      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+      "featureList": [
+        "Kétirányú valós idejű átváltás",
+        "Minden átváltó egy helyen",
+        "Eredmény másolása a vágólapra",
+        "Helyi számítás a böngészőben"
+      ]
     },
     "howTo": {
       "name": "Hogyan használja az átváltót",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI vs PPI – összehasonlítás",
-      "featureLabel": "Tulajdonság",
-      "plans": [
+      "labelHeader": "Tulajdonság",
+      "cols": ["DPI (dots per inch)", "PPI (pixels per inch)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "DPI (dots per inch)"
+          "label": "Alkalmazás",
+          "values": ["Nyomtatók", "Képernyők és képek"]
         },
         {
-          "id": "unit2",
-          "name": "PPI (pixels per inch)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Alkalmazás",
-          "values": {
-            "unit1": "Nyomtatók",
-            "unit2": "Képernyők és képek"
-          }
+          "label": "Méri",
+          "values": ["Fizikai tintapontok", "Digitális pixelek"]
         },
         {
-          "name": "Méri",
-          "values": {
-            "unit1": "Fizikai tintapontok",
-            "unit2": "Digitális pixelek"
-          }
+          "label": "Tipikus értékek",
+          "values": ["600–4800 DPI", "72–460 PPI"]
         },
         {
-          "name": "Tipikus értékek",
-          "values": {
-            "unit1": "600–4800 DPI",
-            "unit2": "72–460 PPI"
-          }
+          "label": "Nyomtatási minőség",
+          "values": ["Magasabb = finomabb részletek", "300 PPI szabvány"]
         },
         {
-          "name": "Nyomtatási minőség",
-          "values": {
-            "unit1": "Magasabb = finomabb részletek",
-            "unit2": "300 PPI szabvány"
-          }
-        },
-        {
-          "name": "Gyakori tévhit",
-          "values": {
-            "unit1": "Képekhez használják (helytelenül)",
-            "unit2": "Helyes kifejezés képekre"
-          }
+          "label": "Gyakori tévhit",
+          "values": ["Képekhez használják (helytelenül)", "Helyes kifejezés képekre"]
         }
       ]
     },

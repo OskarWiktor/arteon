@@ -2,13 +2,13 @@
   "toolKey": "tiffToPng",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter TIFF na PNG – bezstratna konwersja skanów i grafik",
-    "description": "Zamień pliki TIFF na bezstratny PNG w przeglądarce. Zachowaj pełną jakość skanów i grafik. Bez rejestracji, bez wysyłania na serwer.",
+    "title": "Darmowy konwerter formatu TIFF na PNG bez limitu plików i rejestracji",
+    "description": "Zamień pliki TIFF na bezstratny PNG w przeglądarce. Zachowaj pełną jakość skanów i grafik. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-tiff-na-png"
   },
   "hero": {
-    "title": "Konwerter TIFF na PNG – bezstratna jakość w uniwersalnym formacie",
+    "title": "Darmowy konwerter formatu TIFF na PNG – bezstratna jakość w uniwersalnym formacie",
     "description": "Zamień pliki TIFF na bezstratny PNG. Zachowaj pełną jakość obrazu w formacie obsługiwanym przez każdą przeglądarkę. Konwersja lokalna.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter TIFF na PNG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana TIFF na PNG online", "Konwersja TIFF do PNG"],
+      "alternateName": ["Zamiana TIFF na PNG", "Konwersja TIFF do PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter TIFF na PNG online. Zamień pliki TIFF na bezstratny PNG - pliki nie są wysyłane na serwer.",
-      "featureList": ["Konwersja TIFF do PNG", "Bezstratna jakość", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter TIFF na PNG. Zamień pliki TIFF na bezstratny PNG - pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja TIFF do PNG",
+        "Bezstratna jakość",
+        "Konwersja wielu plików jednocześnie",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić TIFF na PNG online",
+      "name": "Jak zamienić TIFF na PNG",
       "description": "Instrukcja konwersji plików TIFF na format PNG.",
       "steps": [
         {
@@ -165,78 +170,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PNG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["TIFF", "PNG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Kompresja stratna",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Tylko Safari", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8/16/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "tiff": "Tylko Safari",
-            "png": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "tiff": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

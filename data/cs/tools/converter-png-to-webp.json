@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Převodník PNG na WebP",
-      "alternateName": ["Převést PNG na WEBP", "Konverze PNG do WEBP", "Převodník PNG na WEBP zdarma"],
+      "alternateName": [
+        "Převést PNG na WEBP",
+        "Konverze PNG do WEBP",
+        "Převodník PNG na WEBP zdarma"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
-      "featureList": ["Převod PNG na WEBP", "Ovládání kvality WEBP", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
+      "featureList": [
+        "Převod PNG na WEBP",
+        "Ovládání kvality WEBP",
+        "Hromadný převod",
+        "Lokální zpracování v prohlížeči",
+        "Bez nahrávání souborů"
+      ]
     },
     "howTo": {
       "name": "Jak převést PNG na WEBP",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs WebP – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["PNG", "WebP"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Ztrátová komprese",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Všechny prohlížeče", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["8/16-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "png": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "png": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "png": "Všechny prohlížeče",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "png": "8/16-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PDF – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["SVG", "PDF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Verlustbehaftete Komprimierung",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Verlustfreie Komprimierung",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparenz (Alphakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunterstützung",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowser-Unterstützung",
+          "values": ["Alle Browser", "Integrierter PDF-Viewer"]
+        },
+        {
+          "label": "Kompakte Dateigröße",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadaten (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verlustbehaftete Komprimierung",
-          "values": {
-            "svg": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Verlustfreie Komprimierung",
-          "values": {
-            "svg": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Transparenz (Alphakanal)",
-          "values": {
-            "svg": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Animationsunterstützung",
-          "values": {
-            "svg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Webbrowser-Unterstützung",
-          "values": {
-            "svg": "Alle Browser",
-            "pdf": "Integrierter PDF-Viewer"
-          }
-        },
-        {
-          "name": "Kompakte Dateigröße",
-          "values": {
-            "svg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadaten (EXIF)",
-          "values": {
-            "svg": false,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

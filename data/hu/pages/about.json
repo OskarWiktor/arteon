@@ -1,16 +1,16 @@
 {
   "slug": "rolunk",
   "metadata": {
-    "title": "Az Arteonról – Ingyenes online eszköz webhez, SEO-hoz",
+    "title": "Az Arteonról – Ingyenes eszköz webhez, SEO-hoz",
     "description": "Az Arteon egy kreatív ügynökség, amely ingyenes böngészőalapú eszközöket fejleszt: WebP konverter, favicon generátor, színkontraszt ellenőrző, QR-kód."
   },
   "hero": {
-    "title": "Ingyenes online eszközök egy kreatív ügynökségtől",
+    "title": "Ingyenes eszközök egy kreatív ügynökségtől",
     "description": "10 böngészőalapú eszköz képekhez, SEO-hoz, színekhez, e-mail aláírásokhoz és QR-kódokhoz - regisztráció, fájlfeltöltés és korlátozás nélkül"
   },
   "whoWeAre": {
     "title": "Kik vagyunk",
-    "p1": "Az Arteon egy lengyel kreatív ügynökség. Kereskedelmi munkánk mellett egy bővülő gyűjteményt fejlesztünk és tartunk karban ingyenes online eszközökből, amelyeket vállalkozástulajdonosoknak, weboldal-készítőknek, designereknek, marketingeseknek és mindenkinek terveztünk, aki digitális tartalommal dolgozik.",
+    "p1": "Az Arteon egy lengyel kreatív ügynökség. Kereskedelmi munkánk mellett egy bővülő gyűjteményt fejlesztünk és tartunk karban ingyenes eszközökből, amelyeket vállalkozástulajdonosoknak, weboldal-készítőknek, designereknek, marketingeseknek és mindenkinek terveztünk, aki digitális tartalommal dolgozik.",
     "p2": "Minden általunk létrehozott eszköz egy konkrét, mindennapi problémát old meg: képek konvertálása, színkontraszt ellenőrzése, faviconok generálása, QR-kódok létrehozása és sok más. Célunk egy átfogó eszköztár építése, ahol mindent megtalál egy helyen - anélkül, hogy tucatnyi különböző webhely között kellene váltogatnia."
   },
   "whyFree": {
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Próbálja ki eszközeinket",
-    "description": "Ingyenes online eszköz - regisztráció, korlátozás és szerverre feltöltés nélkül",
+    "description": "Ingyenes eszköz - regisztráció, korlátozás és szerverre feltöltés nélkül",
     "btnOne": "Eszközök megtekintése",
     "btnTwo": "Kapcsolat"
   }

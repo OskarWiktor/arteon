@@ -5,9 +5,27 @@ export const shopSteps: Step[] = [
     title: 'Czy posiadasz projekt graficzny witryny?',
     required: true,
     options: [
-      { label: 'Tak', value: 'ready', price: 0, tooltip: 'Pracujemy na dostarczonym przez Ciebie projekcie', icon: 'FiCheckCircle' },
-      { label: 'Mam inspiracje / pomysł', value: 'idea', multiplier: 1.2, tooltip: 'Na bazie Twoich inspiracji tworzymy dopasowany projekt sklepu', icon: 'FiLightbulb' },
-      { label: 'Nie', value: 'from-scratch', multiplier: 1.6, tooltip: 'Tworzymy projekt sklepu od zera - zgodny z Twoją marką i klientami', icon: 'FiEdit3' },
+      {
+        label: 'Tak',
+        value: 'ready',
+        price: 0,
+        tooltip: 'Pracujemy na dostarczonym przez Ciebie projekcie',
+        icon: 'FiCheckCircle',
+      },
+      {
+        label: 'Mam inspiracje / pomysł',
+        value: 'idea',
+        multiplier: 1.2,
+        tooltip: 'Na bazie Twoich inspiracji tworzymy dopasowany projekt sklepu',
+        icon: 'FiLightbulb',
+      },
+      {
+        label: 'Nie',
+        value: 'from-scratch',
+        multiplier: 1.6,
+        tooltip: 'Tworzymy projekt sklepu od zera - zgodny z Twoją marką i klientami',
+        icon: 'FiEdit3',
+      },
     ],
   },
   {
@@ -32,7 +50,13 @@ export const shopSteps: Step[] = [
     required: true,
     type: 'single',
     options: [
-      { label: '0', value: '0-products', price: 0, tooltip: 'Wprowadzasz je samodzielnie - my budujemy system', icon: 'FiMinusCircle' },
+      {
+        label: '0',
+        value: '0-products',
+        price: 0,
+        tooltip: 'Wprowadzasz je samodzielnie - my budujemy system',
+        icon: 'FiMinusCircle',
+      },
       { label: '1-10', value: 'few-products', price: 200, icon: 'FiBox' },
       { label: '11-30', value: 'mid-products', price: 800, icon: 'FiGrid' },
       { label: '31-60', value: 'more-products', price: 1600, icon: 'FiLayers' },
@@ -49,9 +73,27 @@ export const shopSteps: Step[] = [
     required: true,
     type: 'single',
     options: [
-      { label: 'Brak wariantów', value: 'no-variants', price: 0, tooltip: 'Każdy produkt ma jedną wersję', icon: 'FiXCircle' },
-      { label: 'Proste warianty', value: 'simple-variants', multiplier: 1.1, tooltip: 'Produkty mają kilka opcji, np. kolory lub rozmiary', icon: 'FiToggleLeft' },
-      { label: 'Zaawansowane warianty', value: 'complex-variants', multiplier: 1.2, tooltip: 'Produkty mają wiele opcji, np. rozmiar, kolor i materiał', icon: 'FiSliders' },
+      {
+        label: 'Brak wariantów',
+        value: 'no-variants',
+        price: 0,
+        tooltip: 'Każdy produkt ma jedną wersję',
+        icon: 'FiXCircle',
+      },
+      {
+        label: 'Proste warianty',
+        value: 'simple-variants',
+        multiplier: 1.1,
+        tooltip: 'Produkty mają kilka opcji, np. kolory lub rozmiary',
+        icon: 'FiToggleLeft',
+      },
+      {
+        label: 'Zaawansowane warianty',
+        value: 'complex-variants',
+        multiplier: 1.2,
+        tooltip: 'Produkty mają wiele opcji, np. rozmiar, kolor i materiał',
+        icon: 'FiSliders',
+      },
     ],
   },
   {
@@ -86,9 +128,27 @@ export const shopSteps: Step[] = [
     title: 'Czy posiadasz tekst dla swojego sklepu?',
     required: true,
     options: [
-      { label: 'Tak', value: 'own-copy', price: 0, tooltip: 'Dostarczasz tekst - my go dodajemy', icon: 'FiFile' },
-      { label: 'Potrzebuję korekty', value: 'copy-help', multiplier: 1.1, tooltip: 'Poprawiamy tekst pod kątem widoczności i stylu', icon: 'FiEdit' },
-      { label: 'Nie', value: 'copy-new', multiplier: 1.4, tooltip: 'Tworzymy tekst od zera, na podstawie Twojej oferty', icon: 'FiPenTool' },
+      {
+        label: 'Tak',
+        value: 'own-copy',
+        price: 0,
+        tooltip: 'Dostarczasz tekst - my go dodajemy',
+        icon: 'FiFile',
+      },
+      {
+        label: 'Potrzebuję korekty',
+        value: 'copy-help',
+        multiplier: 1.1,
+        tooltip: 'Poprawiamy tekst pod kątem widoczności i stylu',
+        icon: 'FiEdit',
+      },
+      {
+        label: 'Nie',
+        value: 'copy-new',
+        multiplier: 1.4,
+        tooltip: 'Tworzymy tekst od zera, na podstawie Twojej oferty',
+        icon: 'FiPenTool',
+      },
     ],
   },
   {
@@ -97,7 +157,12 @@ export const shopSteps: Step[] = [
     options: [
       { label: 'Polski', value: 'lang-pl', price: 0, icon: 'FiFlag' },
       { label: 'Wielojęzyczna', value: 'lang-multi', multiplier: 1.4, icon: 'FiGlobe' },
-      { label: 'Inny język (np. angielski)', value: 'lang-other', multiplier: 1.2, icon: 'FiMessageSquare' },
+      {
+        label: 'Inny język (np. angielski)',
+        value: 'lang-other',
+        multiplier: 1.2,
+        icon: 'FiMessageSquare',
+      },
     ],
   },
   {

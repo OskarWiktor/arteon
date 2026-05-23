@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Comparați DPI și PPI — rezoluție de tipărire vs ecran.",
-      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+      "featureList": [
+        "Conversie bidirecțională în timp real",
+        "Toate convertoarele într-un singur loc",
+        "Copierea rezultatului în clipboard",
+        "Calcul local în browser"
+      ]
     },
     "howTo": {
       "name": "Cum să utilizați convertorul",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI vs PPI – comparație",
-      "featureLabel": "Proprietate",
-      "plans": [
+      "labelHeader": "Proprietate",
+      "cols": ["DPI (dots per inch)", "PPI (pixels per inch)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "DPI (dots per inch)"
+          "label": "Se aplică la",
+          "values": ["Imprimante", "Ecrane și imagini"]
         },
         {
-          "id": "unit2",
-          "name": "PPI (pixels per inch)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Se aplică la",
-          "values": {
-            "unit1": "Imprimante",
-            "unit2": "Ecrane și imagini"
-          }
+          "label": "Măsoară",
+          "values": ["Puncte fizice de cerneală", "Pixeli digitali"]
         },
         {
-          "name": "Măsoară",
-          "values": {
-            "unit1": "Puncte fizice de cerneală",
-            "unit2": "Pixeli digitali"
-          }
+          "label": "Valori tipice",
+          "values": ["600–4800 DPI", "72–460 PPI"]
         },
         {
-          "name": "Valori tipice",
-          "values": {
-            "unit1": "600–4800 DPI",
-            "unit2": "72–460 PPI"
-          }
+          "label": "Calitate tipărire",
+          "values": ["Mai mare = detalii mai fine", "300 PPI standard"]
         },
         {
-          "name": "Calitate tipărire",
-          "values": {
-            "unit1": "Mai mare = detalii mai fine",
-            "unit2": "300 PPI standard"
-          }
-        },
-        {
-          "name": "Confuzie frecventă",
-          "values": {
-            "unit1": "Folosit pentru imagini (incorect)",
-            "unit2": "Termen corect pentru imagini"
-          }
+          "label": "Confuzie frecventă",
+          "values": ["Folosit pentru imagini (incorect)", "Termen corect pentru imagini"]
         }
       ]
     },

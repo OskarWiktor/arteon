@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Erstes GIF-Bild als leichtes WebP exportieren. Kleinere Datei, schnelleres Laden. Verarbeitung direkt im Browser - Dateien verlassen Ihr Gerät nicht.",
-      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["GIF in WEBP umwandeln", "GIF zu WEBP konvertieren", "Kostenloser GIF-zu-WEBP-Konverter"]
+      "featureList": [
+        "GIF to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "GIF in WEBP umwandeln",
+        "GIF zu WEBP konvertieren",
+        "Kostenloser GIF-zu-WEBP-Konverter"
+      ]
     },
     "howTo": {
       "name": "GIF to WebP",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs WebP – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["GIF", "WebP"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Verlustbehaftete Komprimierung",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Verlustfreie Komprimierung",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparenz (Alphakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunterstützung",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Webbrowser-Unterstützung",
+          "values": ["Alle Browser", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Farbtiefe",
+          "values": ["8-bit (256)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kompakte Dateigröße",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadaten (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verlustbehaftete Komprimierung",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Verlustfreie Komprimierung",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparenz (Alphakanal)",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animationsunterstützung",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Webbrowser-Unterstützung",
-          "values": {
-            "gif": "Alle Browser",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Farbtiefe",
-          "values": {
-            "gif": "8-bit (256)",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kompakte Dateigröße",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadaten (EXIF)",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

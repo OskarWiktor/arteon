@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertiți inci în pixeli cu suport DPI.",
-      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+      "featureList": [
+        "Conversie bidirecțională în timp real",
+        "Toate convertoarele într-un singur loc",
+        "Copierea rezultatului în clipboard",
+        "Calcul local în browser"
+      ]
     },
     "howTo": {
       "name": "Cum să utilizați convertorul",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Dimensiuni comune de tipărire la 300 DPI",
-      "featureLabel": "Dimensiune tipărire",
-      "plans": [
+      "labelHeader": "Dimensiune tipărire",
+      "cols": ["Inches", "Pixels (300 DPI)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Inches"
+          "label": "Portofel",
+          "values": ["2.5 × 3.5″", "750 × 1,050"]
         },
         {
-          "id": "unit2",
-          "name": "Pixels (300 DPI)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Portofel",
-          "values": {
-            "unit1": "2.5 × 3.5″",
-            "unit2": "750 × 1,050"
-          }
+          "label": "Foto 4×6",
+          "values": ["4 × 6″", "1,200 × 1,800"]
         },
         {
-          "name": "Foto 4×6",
-          "values": {
-            "unit1": "4 × 6″",
-            "unit2": "1,200 × 1,800"
-          }
+          "label": "Foto 8×10",
+          "values": ["8 × 10″", "2,400 × 3,000"]
         },
         {
-          "name": "Foto 8×10",
-          "values": {
-            "unit1": "8 × 10″",
-            "unit2": "2,400 × 3,000"
-          }
+          "label": "US Letter",
+          "values": ["8.5 × 11″", "2,550 × 3,300"]
         },
         {
-          "name": "US Letter",
-          "values": {
-            "unit1": "8.5 × 11″",
-            "unit2": "2,550 × 3,300"
-          }
-        },
-        {
-          "name": "Poster (24×36)",
-          "values": {
-            "unit1": "24 × 36″",
-            "unit2": "7,200 × 10,800"
-          }
+          "label": "Poster (24×36)",
+          "values": ["24 × 36″", "7,200 × 10,800"]
         }
       ]
     },

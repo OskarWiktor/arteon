@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom XML naar JSON converteren?",
-      "html": "<p class=\"text-mid mb-4\">XML is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar JSON aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw XML-bestanden direct in de browser om naar het JSON-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">XML is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar JSON aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis converter zet uw XML-bestanden direct in de browser om naar het JSON-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "XML to JSON conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "XML vs JSON – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["XML", "JSON"],
+      "rows": [
         {
-          "id": "xml",
-          "name": "XML"
+          "label": "Geneste gegevens",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabelgegevens",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Schemavalidatie",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Menselijk leesbaar",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standaard",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Compacte syntaxis",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Geneste gegevens",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabelgegevens",
-          "values": {
-            "xml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Schemavalidatie",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Menselijk leesbaar",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-standaard",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Compacte syntaxis",
-          "values": {
-            "xml": false,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Hoe werkt de conversie van XML naar JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML gebruikt een op tags gebaseerde hi\u00ebrarchie met openings- en sluitingselementen, terwijl JSON lichtgewicht accolades en key-value paren gebruikt. De converter analyseert de XML-documentboom en koppelt elk element aan een overeenkomstige JSON-structuur.</p><p class=\"text-mid mb-4\">XML-elementen worden JSON-objecten, herhaalde elementen met dezelfde tagnaam worden JSON-arrays, en tekstinhoud wordt stringwaarden. XML-attributen worden weergegeven als speciale eigenschappen (met @-prefix) in het JSON-object.</p><p class=\"text-mid\">JSON is het voorkeursformaat voor moderne web-API's, JavaScript-applicaties en NoSQL-databases. De conversie vindt volledig plaats in je browser.</p>"
+      "html": "<p class=\"text-mid mb-4\">XML gebruikt een op tags gebaseerde hiërarchie met openings- en sluitingselementen, terwijl JSON lichtgewicht accolades en key-value paren gebruikt. De converter analyseert de XML-documentboom en koppelt elk element aan een overeenkomstige JSON-structuur.</p><p class=\"text-mid mb-4\">XML-elementen worden JSON-objecten, herhaalde elementen met dezelfde tagnaam worden JSON-arrays, en tekstinhoud wordt stringwaarden. XML-attributen worden weergegeven als speciale eigenschappen (met @-prefix) in het JSON-object.</p><p class=\"text-mid\">JSON is het voorkeursformaat voor moderne web-API's, JavaScript-applicaties en NoSQL-databases. De conversie vindt volledig plaats in je browser.</p>"
     },
     {
       "type": "gap",

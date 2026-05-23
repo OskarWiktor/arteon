@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Μετατρέψτε κωδικούς χρωμάτων HEX σε RGB και αντίστροφα.",
-      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+      "featureList": [
+        "Αμφίδρομη μετατροπή σε πραγματικό χρόνο",
+        "Όλοι οι μετατροπείς σε ένα μέρος",
+        "Αντιγραφή αποτελέσματος στο πρόχειρο",
+        "Τοπικός υπολογισμός στον browser"
+      ]
     },
     "howTo": {
       "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEX vs RGB – σύγκριση",
-      "featureLabel": "Ιδιότητα",
-      "plans": [
+      "labelHeader": "Ιδιότητα",
+      "cols": ["HEX", "RGB"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "HEX"
+          "label": "Μορφή",
+          "values": ["#RRGGBB", "rgb(R, G, B)"]
         },
         {
-          "id": "unit2",
-          "name": "RGB",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Μορφή",
-          "values": {
-            "unit1": "#RRGGBB",
-            "unit2": "rgb(R, G, B)"
-          }
+          "label": "Τιμές",
+          "values": ["00–FF (δεκαεξαδικό)", "0–255 (δεκαδικό)"]
         },
         {
-          "name": "Τιμές",
-          "values": {
-            "unit1": "00–FF (δεκαεξαδικό)",
-            "unit2": "0–255 (δεκαδικό)"
-          }
+          "label": "Αδιαφάνεια",
+          "values": ["8ψήφιο (#RRGGBBAA)", "rgba(R, G, B, A)"]
         },
         {
-          "name": "Αδιαφάνεια",
-          "values": {
-            "unit1": "8ψήφιο (#RRGGBBAA)",
-            "unit2": "rgba(R, G, B, A)"
-          }
+          "label": "Συντομογραφία",
+          "values": ["#RGB (3 ψηφία)", "Δεν υπάρχει"]
         },
         {
-          "name": "Συντομογραφία",
-          "values": {
-            "unit1": "#RGB (3 ψηφία)",
-            "unit2": "Δεν υπάρχει"
-          }
-        },
-        {
-          "name": "Χρήση σε",
-          "values": {
-            "unit1": "CSS, εργαλεία σχεδίασης",
-            "unit2": "CSS, προγραμματισμός"
-          }
+          "label": "Χρήση σε",
+          "values": ["CSS, εργαλεία σχεδίασης", "CSS, προγραμματισμός"]
         }
       ]
     },

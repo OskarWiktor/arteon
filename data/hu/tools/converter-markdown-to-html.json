@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Markdown konvertálása HTML formátumba. Automatikus elemzés és formázás. Ingyenes.",
-      "featureList": ["Markdown to HTML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
+      "featureList": [
+        "Markdown to HTML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Markdown to HTML",
+        "Markdown to HTML",
+        "Free Markdown to HTML converter"
+      ]
     },
     "howTo": {
       "name": "Hogyan konvertáljuk Markdown-t HTML-vé",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes Markdown-t HTML-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A MARKDOWN szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a HTML formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a MARKDOWN fajlokat HTML formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A MARKDOWN szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a HTML formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes konvertalo kozvetlenul a bongeszoben alakitja at a MARKDOWN fajlokat HTML formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "Markdown to HTML conversion",
       "variant": "right"
@@ -128,64 +136,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Markdown vs HTML – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["Markdown", "HTML"],
+      "rows": [
         {
-          "id": "markdown",
-          "name": "Markdown"
+          "label": "Beágyazott adatok",
+          "values": ["—", "✓"]
         },
         {
-          "id": "html",
-          "name": "HTML",
-          "highlighted": true
+          "label": "Táblázatos adatok",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Sémavalidáció",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Ember által olvasható",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "API-szabvány",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Kompakt szintaxis",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Beágyazott adatok",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Táblázatos adatok",
-          "values": {
-            "markdown": true,
-            "html": true
-          }
-        },
-        {
-          "name": "Sémavalidáció",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Ember által olvasható",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        },
-        {
-          "name": "API-szabvány",
-          "values": {
-            "markdown": false,
-            "html": false
-          }
-        },
-        {
-          "name": "Kompakt szintaxis",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

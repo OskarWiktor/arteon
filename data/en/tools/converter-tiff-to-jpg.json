@@ -28,8 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives. Free browser-based tool - no signup, no file limits, complete privacy.",
-      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert TIFF to JPG", "TIFF to JPG conversion", "Free TIFF to JPG converter", "Change TIFF to JPG"]
+      "featureList": [
+        "TIFF to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert TIFF to JPG",
+        "TIFF to JPG conversion",
+        "Free TIFF to JPG converter",
+        "Change TIFF to JPG"
+      ]
     },
     "howTo": {
       "name": "TIFF to JPG",
@@ -58,7 +68,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert TIFF to JPG?",
-      "html": "<p class=\"text-mid mb-4\">TIFF is used in professional print, medical imaging, and archival workflows, but TIFF files are very large and cannot be opened in web browsers. JPG is the most universally compatible image format — supported by every device, browser, email client, and social media platform.</p><p class=\"text-mid mb-4\">Converting TIFF to JPG is essential when sharing professional images online, uploading to e-commerce platforms, or sending photos via email. JPG uses lossy compression, producing files that are 10–50× smaller than the original TIFF with minimal visible quality loss at quality 85–90.</p><p class=\"text-mid mb-4\">JPG does not support transparency or CMYK color space — TIFF images with these features will be flattened and converted to RGB. For lossless conversion, use PNG instead. For web-optimized files, consider WebP or AVIF.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
+      "html": "<p class=\"text-mid mb-4\">TIFF is used in professional print, medical imaging, and archival workflows, but TIFF files are very large and cannot be opened in web browsers. JPG is the most universally compatible image format — supported by every device, browser, email client, and social media platform.</p><p class=\"text-mid mb-4\">Converting TIFF to JPG is essential when sharing professional images, uploading to e-commerce platforms, or sending photos via email. JPG uses lossy compression, producing files that are 10–50× smaller than the original TIFF with minimal visible quality loss at quality 85–90.</p><p class=\"text-mid mb-4\">JPG does not support transparency or CMYK color space — TIFF images with these features will be flattened and converted to RGB. For lossless conversion, use PNG instead. For web-optimized files, consider WebP or AVIF.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "TIFF to JPG conversion",
       "variant": "right"
@@ -174,78 +184,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs JPG – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["TIFF", "JPG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Lossy compression",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["Safari only", "All browsers"]
+        },
+        {
+          "label": "Color depth",
+          "values": ["8/16/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "tiff": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "tiff": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "tiff": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "tiff": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "tiff": "Safari only",
-            "jpg": "All browsers"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "tiff": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "tiff": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

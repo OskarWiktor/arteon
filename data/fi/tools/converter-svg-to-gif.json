@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna vektori-SVG-grafiikat GIF-rasterimuotoon. Ilmainen selaintyökalu - ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
-      "featureList": ["Muunnos GIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
-      "alternateName": ["Muunna SVG GIF-muotoon", "SVG:n muunto GIF-muotoon", "Ilmainen SVG–GIF-muunnin"]
+      "featureList": [
+        "Muunnos GIF-muotoon",
+        "Laadun säätö (60-95%)",
+        "Erämuunnos",
+        "Paikallinen käsittely selaimessa"
+      ],
+      "alternateName": [
+        "Muunna SVG GIF-muotoon",
+        "SVG:n muunto GIF-muotoon",
+        "Ilmainen SVG–GIF-muunnin"
+      ]
     },
     "howTo": {
       "name": "Kuinka muuntaa SVG GIF-muotoon",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs GIF – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["SVG", "GIF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Häviöllinen pakkaus",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Häviötön pakkaus",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Läpinäkyvyys (alfakanava)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animaatiotuki",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Selaintuki",
+          "values": ["Kaikki selaimet", "Kaikki selaimet"]
+        },
+        {
+          "label": "Värisyvyys",
+          "values": ["N/A (vektori)", "8-bit (256)"]
+        },
+        {
+          "label": "Pieni tiedostokoko",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metatiedot (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Häviöllinen pakkaus",
-          "values": {
-            "svg": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Häviötön pakkaus",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Läpinäkyvyys (alfakanava)",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animaatiotuki",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Selaintuki",
-          "values": {
-            "svg": "Kaikki selaimet",
-            "gif": "Kaikki selaimet"
-          }
-        },
-        {
-          "name": "Värisyvyys",
-          "values": {
-            "svg": "N/A (vektori)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Pieni tiedostokoko",
-          "values": {
-            "svg": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metatiedot (EXIF)",
-          "values": {
-            "svg": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

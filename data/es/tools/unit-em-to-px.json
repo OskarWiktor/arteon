@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convierte unidades CSS em a píxeles. Para diseño web responsivo.",
-      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+      "featureList": [
+        "Conversión bidireccional en tiempo real",
+        "Todos los convertidores en un solo lugar",
+        "Copiar resultado al portapapeles",
+        "Cálculo local en el navegador"
+      ]
     },
     "howTo": {
       "name": "Cómo usar el convertidor",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "em vs px vs rem",
-      "featureLabel": "Característica",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["em", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "em"
+          "label": "Referencia",
+          "values": ["Fuente del padre", "Píxel fijo"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Referencia",
-          "values": {
-            "unit1": "Fuente del padre",
-            "unit2": "Píxel fijo"
-          }
+          "label": "Se acumula",
+          "values": ["Sí (anidado)", "No"]
         },
         {
-          "name": "Se acumula",
-          "values": {
-            "unit1": "Sí (anidado)",
-            "unit2": "No"
-          }
+          "label": "Responsivo",
+          "values": ["Sí", "No"]
         },
         {
-          "name": "Responsivo",
-          "values": {
-            "unit1": "Sí",
-            "unit2": "No"
-          }
+          "label": "Accesibilidad",
+          "values": ["Respeta configuración", "Tamaño fijo"]
         },
         {
-          "name": "Accesibilidad",
-          "values": {
-            "unit1": "Respeta configuración",
-            "unit2": "Tamaño fijo"
-          }
-        },
-        {
-          "name": "Predecibilidad",
-          "values": {
-            "unit1": "Depende del contexto",
-            "unit2": "Siempre consistente"
-          }
+          "label": "Predecibilidad",
+          "values": ["Depende del contexto", "Siempre consistente"]
         }
       ]
     },

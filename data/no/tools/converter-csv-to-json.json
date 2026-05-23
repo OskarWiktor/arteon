@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "CSV vs JSON – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funksjon",
+      "cols": ["CSV", "JSON"],
+      "rows": [
         {
-          "id": "csv",
-          "name": "CSV"
+          "label": "Nestede data",
+          "values": ["—", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabelldata",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Skjemavalidering",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Lesbart for mennesker",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standard",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Kompakt syntaks",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Nestede data",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabelldata",
-          "values": {
-            "csv": true,
-            "json": false
-          }
-        },
-        {
-          "name": "Skjemavalidering",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Lesbart for mennesker",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-standard",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompakt syntaks",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",

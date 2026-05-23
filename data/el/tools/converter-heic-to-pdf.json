@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε HEIC σε PDF;",
-      "html": "<p class=\"text-mid mb-4\">Το HEIC είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε PDF μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν online μετατροπέας μετατρέπει τα αρχεία HEIC σε format PDF απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το HEIC είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε PDF μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν μετατροπέας μετατρέπει τα αρχεία HEIC σε format PDF απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "HEIC to PDF conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs PDF – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["HEIC", "PDF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["✓", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": ["Safari 13+ (macOS / iOS)", "Ενσωματωμένη προβολή PDF"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "heic": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "heic": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "pdf": "Ενσωματωμένη προβολή PDF"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",
@@ -255,7 +224,7 @@
     {
       "type": "sectionInfo",
       "title": "How image conversion impacts page speed and SEO",
-      "html": "<p class=\"text-mid mb-4\">HEIC to PDF conversion creates document files. When sharing PDFs containing photos online, file size matters — large PDFs slow down downloads and may exceed email attachment limits (typically 10–25 MB).</p><p class=\"text-mid mb-4\">The converter optimizes the PDF output to balance quality and file size. A typical 12 MP iPhone photo produces a PDF page of about 1–2 MB, meaning a 10-photo PDF will be approximately 15–20 MB.</p><p class=\"text-mid\">For smaller PDFs, consider reducing quality settings. For web sharing, you may want to convert HEIC to JPG or WebP instead and display images directly on a web page.</p>"
+      "html": "<p class=\"text-mid mb-4\">HEIC to PDF conversion creates document files. When sharing PDFs containing photos, file size matters — large PDFs slow down downloads and may exceed email attachment limits (typically 10–25 MB).</p><p class=\"text-mid mb-4\">The converter optimizes the PDF output to balance quality and file size. A typical 12 MP iPhone photo produces a PDF page of about 1–2 MB, meaning a 10-photo PDF will be approximately 15–20 MB.</p><p class=\"text-mid\">For smaller PDFs, consider reducing quality settings. For web sharing, you may want to convert HEIC to JPG or WebP instead and display images directly on a web page.</p>"
     },
     {
       "type": "faq",

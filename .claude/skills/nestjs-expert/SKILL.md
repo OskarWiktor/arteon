@@ -372,7 +372,8 @@ export class FeatureModule {}
 
 ```typescript
 // Combine multiple decorators
-export const Auth = (...roles: Role[]) => applyDecorators(UseGuards(JwtAuthGuard, RolesGuard), Roles(...roles));
+export const Auth = (...roles: Role[]) =>
+  applyDecorators(UseGuards(JwtAuthGuard, RolesGuard), Roles(...roles));
 ```
 
 ### Testing Pattern

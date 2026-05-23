@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere AVIF în PNG fara pierderi. Calitate si transparenta pastrate. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
-      "featureList": ["Conversie AVIF în PNG", "Lossless PNG output", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie AVIF în PNG", "Convertor AVIF în PNG", "Convertor gratuit AVIF în PNG"]
+      "featureList": [
+        "Conversie AVIF în PNG",
+        "Lossless PNG output",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie AVIF în PNG",
+        "Convertor AVIF în PNG",
+        "Convertor gratuit AVIF în PNG"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți AVIF în PNG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs PNG – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["AVIF", "PNG"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Compresie cu pierderi",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Toate browserele"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8/10/12-bit, HDR", "8/16-bit"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "avif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "avif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "avif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "avif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
-            "png": "Toate browserele"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "avif": "8/10/12-bit, HDR",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "avif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "avif": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

@@ -5,17 +5,47 @@ export const websiteSteps: Step[] = [
     title: 'Czy posiadasz projekt graficzny witryny?',
     required: true,
     options: [
-      { label: 'Tak', value: 'ready', price: 0, tooltip: 'Pracujemy na dostarczonym przez Ciebie projekcie', icon: 'FiCheckCircle' },
-      { label: 'Mam inspiracje / pomysł', value: 'idea', multiplier: 1.2, tooltip: 'Na bazie Twoich pomysłów i inspiracji tworzymy Twoją witrynę', icon: 'FiLightbulb' },
-      { label: 'Nie', value: 'from-scratch', multiplier: 1.6, tooltip: 'Tworzymy projekt witryny dopasowany do Twojej marki i klientów', icon: 'FiEdit3' },
+      {
+        label: 'Tak',
+        value: 'ready',
+        price: 0,
+        tooltip: 'Pracujemy na dostarczonym przez Ciebie projekcie',
+        icon: 'FiCheckCircle',
+      },
+      {
+        label: 'Mam inspiracje / pomysł',
+        value: 'idea',
+        multiplier: 1.2,
+        tooltip: 'Na bazie Twoich pomysłów i inspiracji tworzymy Twoją witrynę',
+        icon: 'FiLightbulb',
+      },
+      {
+        label: 'Nie',
+        value: 'from-scratch',
+        multiplier: 1.6,
+        tooltip: 'Tworzymy projekt witryny dopasowany do Twojej marki i klientów',
+        icon: 'FiEdit3',
+      },
     ],
   },
   {
     title: 'Czy witryna ma posiadać jedną czy wiele stron?',
     required: true,
     options: [
-      { label: 'Jedna strona (onepage)', value: 'onepage', price: 0, tooltip: 'Wszystkie informacje zawarte na jednej, dłuższej stronie', icon: 'FiAlignJustify' },
-      { label: 'Strona z podstronami', value: 'multipage', price: 0, tooltip: 'Struktura z wieloma zakładkami (np. O nas, Kontakt, usługi)', icon: 'FiLayers' },
+      {
+        label: 'Jedna strona (onepage)',
+        value: 'onepage',
+        price: 0,
+        tooltip: 'Wszystkie informacje zawarte na jednej, dłuższej stronie',
+        icon: 'FiAlignJustify',
+      },
+      {
+        label: 'Strona z podstronami',
+        value: 'multipage',
+        price: 0,
+        tooltip: 'Struktura z wieloma zakładkami (np. O nas, Kontakt, usługi)',
+        icon: 'FiLayers',
+      },
     ],
     branches: {
       multipage: [
@@ -71,9 +101,27 @@ export const websiteSteps: Step[] = [
     title: 'Czy posiadasz tekst dla swojej witryny?',
     required: true,
     options: [
-      { label: 'Tak', value: 'own-copy', price: 0, tooltip: 'Dostarczasz tekst - my go dodajemy', icon: 'FiFile' },
-      { label: 'Potrzebuję korekty', value: 'copy-help', multiplier: 1.1, tooltip: 'Poprawiamy tekst pod kątem treści i widoczności', icon: 'FiEdit' },
-      { label: 'Nie', value: 'copy-new', multiplier: 1.4, tooltip: 'Tworzymy tekst od zera na podstawie Twojej branży i oferty', icon: 'FiPenTool' },
+      {
+        label: 'Tak',
+        value: 'own-copy',
+        price: 0,
+        tooltip: 'Dostarczasz tekst - my go dodajemy',
+        icon: 'FiFile',
+      },
+      {
+        label: 'Potrzebuję korekty',
+        value: 'copy-help',
+        multiplier: 1.1,
+        tooltip: 'Poprawiamy tekst pod kątem treści i widoczności',
+        icon: 'FiEdit',
+      },
+      {
+        label: 'Nie',
+        value: 'copy-new',
+        multiplier: 1.4,
+        tooltip: 'Tworzymy tekst od zera na podstawie Twojej branży i oferty',
+        icon: 'FiPenTool',
+      },
     ],
   },
   {
@@ -82,7 +130,12 @@ export const websiteSteps: Step[] = [
     options: [
       { label: 'Polski', value: 'lang-pl', price: 0, icon: 'FiFlag' },
       { label: 'Wielojęzyczna', value: 'lang-multi', multiplier: 1.4, icon: 'FiGlobe' },
-      { label: 'Inny język (np. angielski)', value: 'lang-other', multiplier: 1.2, icon: 'FiMessageSquare' },
+      {
+        label: 'Inny język (np. angielski)',
+        value: 'lang-other',
+        multiplier: 1.2,
+        icon: 'FiMessageSquare',
+      },
     ],
   },
   {

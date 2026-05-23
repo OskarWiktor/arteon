@@ -2,13 +2,13 @@
   "toolKey": "jpgToAvif",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JPG na AVIF - JPG AVIF",
-    "description": "Zamień zdjęcia JPG na nowoczesny AVIF. Kompresja nawet 50% lepsza niż JPG przy zachowaniu jakości. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
+    "title": "Darmowy konwerter formatu JPG na AVIF bez limitu plików i rejestracji",
+    "description": "Zamień zdjęcia JPG na nowoczesny AVIF. Kompresja nawet 50% lepsza niż JPG przy zachowaniu jakości. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-jpg-na-avif"
   },
   "hero": {
-    "title": "Konwerter JPG na AVIF",
+    "title": "Darmowy konwerter formatu JPG na AVIF",
     "description": "Zamień zdjęcia JPG na nowoczesny AVIF. Kompresja nawet 50% lepsza niż JPG przy zachowaniu jakości. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień zdjęcia JPG na nowoczesny AVIF. Kompresja nawet 50% lepsza niż JPG przy zachowaniu jakości. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
-      "featureList": ["Konwersja do AVIF", "Regulacja jakości (60-95%)", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
-      "alternateName": ["Zamiana JPG na AVIF", "Konwersja JPG do AVIF", "Darmowy konwerter JPG na AVIF"]
+      "featureList": [
+        "Konwersja do AVIF",
+        "Regulacja jakości (60-95%)",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne w przeglądarce"
+      ],
+      "alternateName": [
+        "Zamiana JPG na AVIF",
+        "Konwersja JPG do AVIF",
+        "Darmowy konwerter JPG na AVIF"
+      ]
     },
     "howTo": {
       "name": "JPG to AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs AVIF – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["JPG", "AVIF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Kompresja stratna",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8-bit (16.7M)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "jpg": "Wszystkie przeglądarki",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

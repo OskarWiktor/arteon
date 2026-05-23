@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom JSON naar CSV converteren?",
-      "html": "<p class=\"text-mid mb-4\">JSON is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar CSV aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw JSON-bestanden direct in de browser om naar het CSV-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar CSV aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis converter zet uw JSON-bestanden direct in de browser om naar het CSV-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "JSON to CSV conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs CSV – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["JSON", "CSV"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Geneste gegevens",
+          "values": ["✓", "—"]
         },
         {
-          "id": "csv",
-          "name": "CSV",
-          "highlighted": true
+          "label": "Tabelgegevens",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Schemavalidatie",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Menselijk leesbaar",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standaard",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Compacte syntaxis",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Geneste gegevens",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Tabelgegevens",
-          "values": {
-            "json": false,
-            "csv": true
-          }
-        },
-        {
-          "name": "Schemavalidatie",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Menselijk leesbaar",
-          "values": {
-            "json": true,
-            "csv": true
-          }
-        },
-        {
-          "name": "API-standaard",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Compacte syntaxis",
-          "values": {
-            "json": true,
-            "csv": true
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

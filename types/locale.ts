@@ -1,4 +1,20 @@
-export type Locale = 'pl' | 'en' | 'de' | 'es' | 'fr' | 'pt' | 'it' | 'ro' | 'nl' | 'hu' | 'cs' | 'sv' | 'da' | 'no' | 'fi' | 'el';
+export type Locale =
+  | 'pl'
+  | 'en'
+  | 'de'
+  | 'es'
+  | 'fr'
+  | 'pt'
+  | 'it'
+  | 'ro'
+  | 'nl'
+  | 'hu'
+  | 'cs'
+  | 'sv'
+  | 'da'
+  | 'no'
+  | 'fi'
+  | 'el';
 
 export type LocaleConfig = {
   lang: string;

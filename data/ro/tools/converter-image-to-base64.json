@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Codifică imagini în format Base64. Copiază codul gata pentru CSS sau HTML. Gratuit.",
-      "featureList": ["imagine to Base64 conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert imagine to Base64", "imagine to Base64", "Free imagine to Base64 converter"]
+      "featureList": [
+        "imagine to Base64 conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert imagine to Base64",
+        "imagine to Base64",
+        "Free imagine to Base64 converter"
+      ]
     },
     "howTo": {
       "name": "Cum convertiți imagine în Base64",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți imagine în Base64?",
-      "html": "<p class=\"text-mid mb-4\">IMAGE este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in BASE64 poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele IMAGE in format BASE64 direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">IMAGE este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in BASE64 poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertort transforma fisierele IMAGE in format BASE64 direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "imagine to Base64 conversion",
       "variant": "right"

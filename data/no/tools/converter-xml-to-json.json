@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "XML vs JSON – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funksjon",
+      "cols": ["XML", "JSON"],
+      "rows": [
         {
-          "id": "xml",
-          "name": "XML"
+          "label": "Nestede data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabelldata",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Skjemavalidering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Lesbart for mennesker",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standard",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Kompakt syntaks",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Nestede data",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabelldata",
-          "values": {
-            "xml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Skjemavalidering",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Lesbart for mennesker",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-standard",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompakt syntaks",
-          "values": {
-            "xml": false,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Hvordan fungerer XML til JSON-konvertering?",
-      "html": "<p class=\"text-mid mb-4\">XML bruker et tagbasert hierarki med \u00e5pnings- og lukkeelementer, mens JSON bruker lettvekts kr\u00f8llparenteser og n\u00f8kkel-verdi-par. Konverteren parser XML-dokumenttreet og mapper hvert element til den tilsvarende JSON-strukturen.</p><p class=\"text-mid mb-4\">XML-elementer blir til JSON-objekter, gjentatte elementer med samme navn blir til JSON-arrayer, og tekstinnhold blir til strengverdier. XML-attributter vises som spesielle egenskaper (med @-prefiks) i JSON-objektet.</p><p class=\"text-mid\">JSON er det foretrukne formatet for moderne web-API-er, JavaScript-applikasjoner og NoSQL-databaser. All konvertering skjer lokalt i nettleseren din.</p>"
+      "html": "<p class=\"text-mid mb-4\">XML bruker et tagbasert hierarki med åpnings- og lukkeelementer, mens JSON bruker lettvekts krøllparenteser og nøkkel-verdi-par. Konverteren parser XML-dokumenttreet og mapper hvert element til den tilsvarende JSON-strukturen.</p><p class=\"text-mid mb-4\">XML-elementer blir til JSON-objekter, gjentatte elementer med samme navn blir til JSON-arrayer, og tekstinnhold blir til strengverdier. XML-attributter vises som spesielle egenskaper (med @-prefiks) i JSON-objektet.</p><p class=\"text-mid\">JSON er det foretrukne formatet for moderne web-API-er, JavaScript-applikasjoner og NoSQL-databaser. All konvertering skjer lokalt i nettleseren din.</p>"
     },
     {
       "type": "gap",
@@ -203,7 +175,7 @@
     {
       "type": "sectionSteps",
       "title": "Tips for XML til JSON-konvertering",
-      "description": "Noen tips for \u00e5 unng\u00e5 vanlige problemer:",
+      "description": "Noen tips for å unngå vanlige problemer:",
       "grid": "two",
       "items": [
         {
@@ -219,7 +191,7 @@
         {
           "icon": "RiFileTextLine",
           "title": "Blandet innhold",
-          "description": "XML-elementer som inneholder b\u00e5de tekst og underelementer h\u00e5ndteres ved \u00e5 plassere teksten i en spesiell #text-egenskap i JSON."
+          "description": "XML-elementer som inneholder både tekst og underelementer håndteres ved å plassere teksten i en spesiell #text-egenskap i JSON."
         },
         {
           "icon": "RiFileCodeLine",
@@ -258,12 +230,12 @@
           "answer": "Ja. All konvertering skjer lokalt i nettleseren din. Ingen data sendes til noen server."
         },
         {
-          "question": "G\u00e5r XML-attributter tapt ved konvertering?",
+          "question": "Går XML-attributter tapt ved konvertering?",
           "answer": "Nei. XML-attributter bevares i JSON-outputtet som egenskaper med @-prefiks. F.eks. id='123' blir til: \"@id\": \"123\" i JSON-objektet."
         },
         {
           "question": "Kan jeg bruke JSON-outputtet i JavaScript?",
-          "answer": "Ja. Outputtet er standard JSON som kan brukes med JSON.parse() i JavaScript, eller direkte i ethvert programmeringsspr\u00e5k, API eller database."
+          "answer": "Ja. Outputtet er standard JSON som kan brukes med JSON.parse() i JavaScript, eller direkte i ethvert programmeringsspråk, API eller database."
         }
       ]
     },

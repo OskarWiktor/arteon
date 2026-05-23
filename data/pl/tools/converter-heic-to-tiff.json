@@ -2,13 +2,13 @@
   "toolKey": "heicToTiff",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter HEIC na TIFF - HEIC TIFF",
-    "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
+    "title": "Darmowy konwerter formatu HEIC na TIFF bez limitu plików i rejestracji",
+    "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-heic-na-tiff"
   },
   "hero": {
-    "title": "Konwerter HEIC na TIFF",
+    "title": "Darmowy konwerter formatu HEIC na TIFF",
     "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
-      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
-      "alternateName": ["Zamiana HEIC na TIFF", "Konwersja HEIC do TIFF", "Darmowy konwerter HEIC na TIFF"]
+      "featureList": [
+        "Konwersja do TIFF",
+        "Format bezstratny",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne w przeglądarce"
+      ],
+      "alternateName": [
+        "Zamiana HEIC na TIFF",
+        "Konwersja HEIC do TIFF",
+        "Darmowy konwerter HEIC na TIFF"
+      ]
     },
     "howTo": {
       "name": "HEIC to TIFF",
@@ -168,78 +177,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs TIFF – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["HEIC", "TIFF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Kompresja stratna",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Safari 13+ (macOS / iOS)", "Tylko Safari"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8/10-bit, HDR", "8/16/32-bit"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "tiff": "Tylko Safari"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

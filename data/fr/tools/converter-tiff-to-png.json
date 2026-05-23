@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les fichiers TIFF en PNG sans perte. Qualite des scans preservee. Outil gratuit dans le navigateur - sans inscription, sans limite, confidentialité totale.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convertir TIFF en PNG", "Conversion TIFF vers PNG", "Convertisseur TIFF en PNG gratuit"]
+      "featureList": [
+        "TIFF to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convertir TIFF en PNG",
+        "Conversion TIFF vers PNG",
+        "Convertisseur TIFF en PNG gratuit"
+      ]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PNG – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["TIFF", "PNG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Compression avec perte",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Safari uniquement", "Tous les navigateurs"]
+        },
+        {
+          "label": "Profondeur de couleur",
+          "values": ["8/16/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "tiff": "Safari uniquement",
-            "png": "Tous les navigateurs"
-          }
-        },
-        {
-          "name": "Profondeur de couleur",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "tiff": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

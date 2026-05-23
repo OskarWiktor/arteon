@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna SVG-grafiikat kevyeen WebP-muotoon. Ihanteellinen verkkosivuille ja sosiaaliseen mediaan. Ilmainen selaintyökalu - ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
-      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Muunna SVG WEBP-muotoon", "SVG:n muunto WEBP-muotoon", "Ilmainen SVG–WEBP-muunnin"]
+      "featureList": [
+        "SVG to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Muunna SVG WEBP-muotoon",
+        "SVG:n muunto WEBP-muotoon",
+        "Ilmainen SVG–WEBP-muunnin"
+      ]
     },
     "howTo": {
       "name": "SVG to WebP",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs WebP – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["SVG", "WebP"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Häviöllinen pakkaus",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Häviötön pakkaus",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Läpinäkyvyys (alfakanava)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animaatiotuki",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Selaintuki",
+          "values": ["Kaikki selaimet", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Värisyvyys",
+          "values": ["N/A (vektori)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Pieni tiedostokoko",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metatiedot (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Häviöllinen pakkaus",
-          "values": {
-            "svg": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Häviötön pakkaus",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Läpinäkyvyys (alfakanava)",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animaatiotuki",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Selaintuki",
-          "values": {
-            "svg": "Kaikki selaimet",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Värisyvyys",
-          "values": {
-            "svg": "N/A (vektori)",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Pieni tiedostokoko",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metatiedot (EXIF)",
-          "values": {
-            "svg": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

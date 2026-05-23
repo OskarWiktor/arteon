@@ -2,7 +2,8 @@ import type { FieldMetrics } from '@/types/tools/text';
 export type { LengthStatus, FieldMetrics } from '@/types/tools/text';
 
 const TITLE_FONT = '400 20px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
-const DESCRIPTION_FONT = '300 15px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+const DESCRIPTION_FONT =
+  '300 15px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
 
 let measureCanvas: HTMLCanvasElement | null = null;
 
@@ -31,7 +32,15 @@ function measureTextWidth(text: string, font: string, fallbackAvgPx: number): nu
   return Math.round(metrics.width);
 }
 
-function analyzeField(text: string, font: string, fallbackAvgPx: number, thresholds: { tooShort: { chars: number; pixels: number }; tooLong: { chars: number; pixels: number } }): FieldMetrics {
+function analyzeField(
+  text: string,
+  font: string,
+  fallbackAvgPx: number,
+  thresholds: {
+    tooShort: { chars: number; pixels: number };
+    tooLong: { chars: number; pixels: number };
+  },
+): FieldMetrics {
   const trimmed = text.trim();
   const chars = trimmed.length;
   const words = countWords(trimmed);

@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les fichiers BMP en WebP leger. Reduction de taille pouvant atteindre 95%. Sans installation, fonctionne sur tout appareil. Gratuit, privé et illimité.",
-      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convertir BMP en WEBP", "Conversion BMP vers WEBP", "Convertisseur BMP en WEBP gratuit"]
+      "featureList": [
+        "BMP to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convertir BMP en WEBP",
+        "Conversion BMP vers WEBP",
+        "Convertisseur BMP en WEBP gratuit"
+      ]
     },
     "howTo": {
       "name": "BMP to WebP",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs WebP – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["BMP", "WebP"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Compression avec perte",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Tous les navigateurs", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Profondeur de couleur",
+          "values": ["1/4/8/24/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "bmp": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "bmp": "Tous les navigateurs",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Profondeur de couleur",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

@@ -2,13 +2,13 @@
   "toolKey": "heicToPdf",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter HEIC na PDF - zdjęcia z iPhone do PDF",
-    "description": "Zamień pliki HEIC z iPhone na PDF w przeglądarce. Połącz wiele zdjęć w jeden dokument. Bez rejestracji - konwersja lokalna.",
+    "title": "Darmowy konwerter formatu HEIC na PDF bez limitu plików i rejestracji",
+    "description": "Zamień pliki HEIC z iPhone na PDF w przeglądarce. Połącz wiele zdjęć w jeden dokument. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-heic-na-pdf"
   },
   "hero": {
-    "title": "Zamień zdjęcia HEIC z iPhone na PDF",
+    "title": "Darmowy konwerter formatu HEIC z iPhone na PDF",
     "description": "Wgraj pliki HEIC, a narzędzie zamieni je na dokument PDF. Idealne do archiwizacji zdjęć z iPhone. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter HEIC na PDF - darmowy, bez limitu",
-      "alternateName": ["Zamiana HEIC na PDF online", "Konwersja HEIC do PDF", "HEIC to PDF converter"],
+      "alternateName": ["Zamiana HEIC na PDF", "Konwersja HEIC do PDF", "HEIC to PDF converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
-      "description": "Darmowy konwerter HEIC na PDF online. Zamień pliki HEIC na dokument PDF w przeglądarce - pliki nie są wysyłane na serwer.",
-      "featureList": ["Konwersja HEIC do PDF", "Łączenie wielu plików w jeden PDF", "Automatyczna orientacja strony A4", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter HEIC na PDF. Zamień pliki HEIC na dokument PDF w przeglądarce - pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja HEIC do PDF",
+        "Łączenie wielu plików w jeden PDF",
+        "Automatyczna orientacja strony A4",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić HEIC na PDF online",
+      "name": "Jak zamienić HEIC na PDF",
       "description": "Instrukcja konwersji plików HEIC na format PDF.",
       "steps": [
         {
@@ -164,71 +169,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs PDF – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["HEIC", "PDF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Kompresja stratna",
+          "values": ["✓", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Safari 13+ (macOS / iOS)", "Wbudowana przeglądarka PDF"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "heic": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "heic": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "pdf": "Wbudowana przeglądarka PDF"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

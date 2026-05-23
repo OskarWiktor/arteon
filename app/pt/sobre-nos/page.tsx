@@ -15,7 +15,9 @@ export const metadata = {
     description: data.metadata.description,
     url: toAbsoluteUrl('/pt/sobre-nos'),
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
+    images: [
+      { url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 },
+    ],
   },
 };
 

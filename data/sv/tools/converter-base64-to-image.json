@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera Base64 till bild?",
-      "html": "<p class=\"text-mid mb-4\">BASE64 ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till IMAGE erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina BASE64-filer till IMAGE-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">BASE64 ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till IMAGE erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratiskonverterare omvandlar dina BASE64-filer till IMAGE-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "Base64 to bild conversion",
       "variant": "right"

@@ -1,28 +1,29 @@
-import WorkSteps from '@/components/sections/steps/WorkSteps';
-import HeroBanner from '@/components/sections/HeroBanner';
-import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABanner from '@/components/sections/CTABanner';
-import Gap from '@/components/ui/Gap';
-import SectionBento from '@/components/ui/sections/SectionBento';
+import WorkSteps from '@/components/organisms/WorkSteps';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import CTABanner from '@/components/organisms/CTABanner';
+import Divider from '@/components/atoms/Divider';
+import SectionBento from '@/components/organisms/sections/SectionBento';
 import { RiFileTextLine, RiIdCardLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
-import SectionContactForm from '@/components/sections/SectionContactForm';
-import Wrapper from '@/components/ui/Wrapper';
-import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
-import Breadcrumbs from '@/components/sections/BreadCrumbs';
-import FaqPanels from '@/components/ui/FaqPanels';
-import FeatureGrid from '@/components/sections/FeatureGrid';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import SectionPrices from '@/components/ui/sections/SectionPrices';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Wrapper from '@/components/atoms/Wrapper';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import FaqPanels from '@/components/molecules/FaqPanels';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import { IoColorPalette } from 'react-icons/io5';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt wizytówki | Arteon',
-  description: 'Projekt wizytówki firmowej z danymi kontaktowymi i ofertą. Pliki źródłowe (AI/PDF) oraz wersje gotowe do druku.',
+  description:
+    'Projekt wizytówki firmowej z danymi kontaktowymi i ofertą. Pliki źródłowe (AI/PDF) oraz wersje gotowe do druku.',
   alternates: {
     canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
   },
@@ -31,7 +32,13 @@ export const metadata = {
     description: 'Profesjonalny projekt wizytówki: czytelność, elegancja i pliki gotowe do druku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp', width: 1200, height: 630 }],
+    images: [
+      {
+        url: 'https://www.arteonagency.pl/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 } as const;
 
@@ -39,13 +46,14 @@ function ServiceSchema() {
   const json = buildServiceSchema({
     path: '/uslugi/projekty-graficzne/projekt-wizytowki',
     serviceName: 'Projekt wizytówki',
-    description: 'Czytelne, eleganckie wizytówki spójne z identyfikacją marki. Pliki do druku + wersje do użycia w sieci.',
+    description:
+      'Czytelne, eleganckie wizytówki spójne z identyfikacją marki. Pliki do druku + wersje do użycia w sieci.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
 
   return (
-    <Script id="schema-service-projekt-wizytowki" type="application/ld+json">
+    <Script id='schema-service-projekt-wizytowki' type='application/ld+json'>
       {JSON.stringify(json)}
     </Script>
   );
@@ -55,16 +63,21 @@ export default function OfferDesignBusinessCardPage() {
   return (
     <>
       <HeroBanner
-        title="Projekt wizytówki"
-        description={<>Projektujemy wizytówki dopasowane do Twojej marki - czytelne, eleganckie, gotowe do druku. Pliki źródłowe i wersje do druku.</>}
-        secondaryCtaLabel="Bezpłatna wycena"
-        secondaryCtaLink="#kontakt"
-        variant="left"
-        backgroundImage="/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp"
-        overlay="black"
+        title='Projekt wizytówki'
+        description={
+          <>
+            Projektujemy wizytówki dopasowane do Twojej marki - czytelne, eleganckie, gotowe do
+            druku. Pliki źródłowe i wersje do druku.
+          </>
+        }
+        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaHref='#kontakt'
+        variant='left'
+        backgroundImage='/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp'
+        overlay='black'
       />
 
-      <BenefitBelt variant="carousel" />
+      <BenefitBelt variant='carousel' />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -77,22 +90,25 @@ export default function OfferDesignBusinessCardPage() {
       />
 
       <Wrapper>
-        <Gap size="xs" />
+        <Divider size='xs' />
 
-        <ProjectsCarousel title="Realizacje projektów wizytówek" category="wizytówka" />
+        <ProjectsCarousel title='Realizacje projektów wizytówek' category='wizytówka' />
 
-        <Gap variant="line" />
-        <SectionInfo title="Co zyskujesz zamawiając projekt wizytówki?">
+        <Divider line />
+        <SectionInfo title='Co zyskujesz zamawiając projekt wizytówki?'>
           <p>
-            <strong>Profesjonalnie zaprojektowana wizytówka</strong> łączy schludny układ, czytelne dane i spójny styl, co ułatwia zapamiętanie firmy oraz szybki powrót do kontaktu po spotkaniu.
-            Wizytówka staje się fizycznym śladem rozmowy, który może zamienić się w telefon lub wiadomość po kilku dniach czy tygodniach.
+            <strong>Profesjonalnie zaprojektowana wizytówka</strong> łączy schludny układ, czytelne
+            dane i spójny styl, co ułatwia zapamiętanie firmy oraz szybki powrót do kontaktu po
+            spotkaniu. Wizytówka staje się fizycznym śladem rozmowy, który może zamienić się w
+            telefon lub wiadomość po kilku dniach czy tygodniach.
           </p>
 
           <br />
 
           <p>
-            <strong>Estetyka materiałów realnie wpływa na ocenę wiarygodności marki.</strong> Jakość oprawy wizualnej - także na małym formacie - podnosi zaufanie do firmy i ułatwia decyzję o
-            współpracy.
+            <strong>Estetyka materiałów realnie wpływa na ocenę wiarygodności marki.</strong> Jakość
+            oprawy wizualnej - także na małym formacie - podnosi zaufanie do firmy i ułatwia decyzję
+            o współpracy.
           </p>
 
           <br />
@@ -100,74 +116,88 @@ export default function OfferDesignBusinessCardPage() {
           <p>
             <strong>Dobra wizytówka robi trzy rzeczy naraz:</strong>
           </p>
-          <ul className="ml-5 list-disc">
+          <ul className='ml-5 list-disc'>
             <li>Ułatwia zapamiętanie Twojej marki i osoby,</li>
             <li>Ułatwia późniejszy kontakt,</li>
             <li>Podnosi zaufanie i buduje profesjonalny wizerunek.</li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FeatureGrid
-          title="Co zyskujesz zamawiając wizytówkę?"
-          subtitle="Nasz standard pracy"
+          title='Co zyskujesz zamawiając wizytówkę?'
+          subtitle='Nasz standard pracy'
           items={[
             {
               title: 'Czytelny układ i profesjonalny wygląd',
-              description: <>Projektujemy wizytówki, które w kilka sekund wyjaśniają, czym się zajmujesz.</>,
-              icon: <RiIdCardLine className="text-primary h-6 w-6" />,
+              description: (
+                <>Projektujemy wizytówki, które w kilka sekund wyjaśniają, czym się zajmujesz.</>
+              ),
+              icon: <RiIdCardLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Pliki gotowe do druku',
-              description: <>Otrzymujesz pliki przygotowane do druku w standardzie CMYK ze spadami.</>,
-              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
+              description: (
+                <>Otrzymujesz pliki przygotowane do druku w standardzie CMYK ze spadami.</>
+              ),
+              icon: <RiFileTextLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Spójność z identyfikacją marki',
-              description: <>Dopasowujemy kolory, typografię i styl do Twojej marki, aby zachować spójność wizerunku.</>,
-              icon: <IoColorPalette className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Dopasowujemy kolory, typografię i styl do Twojej marki, aby zachować spójność
+                  wizerunku.
+                </>
+              ),
+              icon: <IoColorPalette className='text-primary h-6 w-6' />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
+              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Dla kogo projekt wizytówki ma największy sens?" subtitle="Dla kogo">
-          <ul className="ml-5 list-disc space-y-2">
+        <SectionInfo title='Dla kogo projekt wizytówki ma największy sens?' subtitle='Dla kogo'>
+          <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Dla specjalistów</strong> - prawników, terapeutów, doradców, trenerów - którzy często spotykają się z klientami i chcą ułatwić im ponowny kontakt.
+              <strong>Dla specjalistów</strong> - prawników, terapeutów, doradców, trenerów - którzy
+              często spotykają się z klientami i chcą ułatwić im ponowny kontakt.
             </li>
             <li>
-              <strong>Dla właścicieli firm lokalnych</strong> - salonów, gabinetów, restauracji, serwisów - gdzie wizytówka jest często pierwszym kontaktem z marką.
+              <strong>Dla właścicieli firm lokalnych</strong> - salonów, gabinetów, restauracji,
+              serwisów - gdzie wizytówka jest często pierwszym kontaktem z marką.
             </li>
             <li>
-              <strong>Dla osób budujących markę osobistą,</strong> które występują na wydarzeniach, konferencjach i szkoleniach, a po prezentacji rozdają swoje dane kontaktowe.
+              <strong>Dla osób budujących markę osobistą,</strong> które występują na wydarzeniach,
+              konferencjach i szkoleniach, a po prezentacji rozdają swoje dane kontaktowe.
             </li>
             <li>
-              <strong>Dla firm z zespołem,</strong> które chcą zadbać o spójne wizytówki dla kilku lub kilkunastu osób w organizacji.
+              <strong>Dla firm z zespołem,</strong> które chcą zadbać o spójne wizytówki dla kilku
+              lub kilkunastu osób w organizacji.
             </li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <TestimonialsCarousel />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionPrices
-          title="Projekt wizytówki - przykładowe pakiety"
+          title='Projekt wizytówki - przykładowe pakiety'
           plans={[
             {
               name: 'Pakiet Start - jedna wizytówka',
               price: 'wycena indywidualna',
-              description: 'Dla jednoosobowych działalności i specjalistów, którzy potrzebują jednej, dopracowanej wizytówki w spójnym stylu.',
+              description:
+                'Dla jednoosobowych działalności i specjalistów, którzy potrzebują jednej, dopracowanej wizytówki w spójnym stylu.',
               features: [
                 'Krótki brief o marce i ofercie',
                 'Projekt wizytówki (przód + tył) w jednym wariancie',
@@ -176,12 +206,13 @@ export default function OfferDesignBusinessCardPage() {
                 'Jedna runda poprawek w cenie',
               ],
               btnOne: 'Zamów wycenę pakietu Start',
-              btnOneLink: '#kontakt',
+              btnOneHref: '#kontakt',
             },
             {
               name: 'Pakiet Standard - kilka wersji i stanowisk',
               price: 'wycena indywidualna',
-              description: 'Dla firm, które potrzebują spójnych wizytówek dla kilku osób lub w dwóch wariantach (np. językowych lub funkcji).',
+              description:
+                'Dla firm, które potrzebują spójnych wizytówek dla kilku osób lub w dwóch wariantach (np. językowych lub funkcji).',
               features: [
                 'Wszystko z pakietu Start, a dodatkowo:',
                 'Warianty wizytówek dla kilku stanowisk lub języków',
@@ -190,12 +221,13 @@ export default function OfferDesignBusinessCardPage() {
                 'Dwie rundy poprawek w cenie',
               ],
               btnOne: 'Zamów wycenę pakietu Standard',
-              btnOneLink: '#kontakt',
+              btnOneHref: '#kontakt',
             },
             {
               name: 'Pakiet Pro - zestaw dla zespołu i marki',
               price: 'wycena indywidualna',
-              description: 'Dla firm, które chcą oprzeć wszystkie materiały drukowane na jednym, spójnym systemie i przygotować wizytówki dla większego zespołu.',
+              description:
+                'Dla firm, które chcą oprzeć wszystkie materiały drukowane na jednym, spójnym systemie i przygotować wizytówki dla większego zespołu.',
               features: [
                 'Wszystko z pakietu Standard, a dodatkowo:',
                 'Projekt siatki pod wizytówki dla większej liczby osób',
@@ -204,32 +236,32 @@ export default function OfferDesignBusinessCardPage() {
                 'Wsparcie przy przygotowaniu plików zbiorczych dla drukarni',
               ],
               btnOne: 'Porozmawiajmy o pakiecie Pro',
-              btnOneLink: '#kontakt',
+              btnOneHref: '#kontakt',
             },
           ]}
-          legalNote="Zakres i liczbę wariantów dopasowujemy indywidualnie - po briefie otrzymasz konkretną wycenę i harmonogram prac."
+          legalNote='Zakres i liczbę wariantów dopasowujemy indywidualnie - po briefie otrzymasz konkretną wycenę i harmonogram prac.'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <WorkSteps variant="design" />
+        <WorkSteps variant='design' />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionContactForm
-          title="Sprawdź koszt realizacji wizytówki"
-          description="Napisz jakie dane mają znaleźć się na wizytówce, czy potrzebujesz jednego czy kilku wariantów oraz czy posiadasz logo - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp"
-          imageAlt="Realizacja projektu wizytówki - kancelaria Luxnova"
-          defaultSubject="Projekt wizytówki"
+          title='Sprawdź koszt realizacji wizytówki'
+          description='Napisz jakie dane mają znaleźć się na wizytówce, czy potrzebujesz jednego czy kilku wariantów oraz czy posiadasz logo - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp'
+          imageAlt='Realizacja projektu wizytówki - kancelaria Luxnova'
+          defaultSubject='Projekt wizytówki'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki"
-          title="Najczęstsze pytania dotyczące projektów wizytówek"
+          defaultOpenIndex={1}
+          pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki'
+          title='Najczęstsze pytania dotyczące projektów wizytówek'
           items={[
             {
               question: 'Ile trwa realizacja projektu wizytówki?',
@@ -238,28 +270,32 @@ export default function OfferDesignBusinessCardPage() {
             },
             {
               question: 'W jakich formatach dostanę wizytówkę?',
-              answer: 'Otrzymasz plik PDF do druku ze spadami, wersje PNG/JPG do wykorzystania w sieci oraz pliki źródłowe.',
+              answer:
+                'Otrzymasz plik PDF do druku ze spadami, wersje PNG/JPG do wykorzystania w sieci oraz pliki źródłowe.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu wizytówki?',
-              answer: 'Tak, w cenie każdego projektu przewidujemy rundy poprawek - dopracowujemy układ, kolory i teksty tak długo, aż projekt będzie spójny z Twoją marką i wygodny w użyciu.',
+              answer:
+                'Tak, w cenie każdego projektu przewidujemy rundy poprawek - dopracowujemy układ, kolory i teksty tak długo, aż projekt będzie spójny z Twoją marką i wygodny w użyciu.',
             },
             {
               question: 'Czy mogę zamówić ekspresowy projekt wizytówki?',
-              answer: 'Tak, realizujemy projekty w trybie przyspieszonym za dodatkową opłatą. Termin i koszt trybu ekspresowego ustalamy przed rozpoczęciem prac.',
+              answer:
+                'Tak, realizujemy projekty w trybie przyspieszonym za dodatkową opłatą. Termin i koszt trybu ekspresowego ustalamy przed rozpoczęciem prac.',
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionBento
-          title="Poznaj inne usługi"
+          title='Poznaj inne usługi'
           items={[
             {
               title: 'Identyfikacja wizualna',
               size: 'large',
-              backgroundImage: '/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp',
+              backgroundImage:
+                '/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
@@ -287,22 +323,26 @@ export default function OfferDesignBusinessCardPage() {
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getArticlePreviewsByCategory('grafika', 6)} />
+        <ArticlesCarousel
+          title='Przydatne artykuły dotyczące projektów graficznych'
+          categorySlug='grafika'
+          articles={getArticlePreviewsByCategory('grafika', 6)}
+        />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
       <CTABanner
-        title="Zachęć klientów do ponownego kontaktu"
-        description="Stworzymy wizytówkę, która wzmocni Twój wizerunek i ułatwi kontakt."
-        btnOne="Skontaktuj się"
-        btnOneLink="#kontakt"
-        btnTwo="Poznaj inne usługi graficzne"
-        btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp"
-        overlay="black"
+        title='Zachęć klientów do ponownego kontaktu'
+        description='Stworzymy wizytówkę, która wzmocni Twój wizerunek i ułatwi kontakt.'
+        btnOne='Skontaktuj się'
+        btnOneHref='#kontakt'
+        btnTwo='Poznaj inne usługi graficzne'
+        btnTwoHref='/uslugi/projekty-graficzne'
+        backgroundImage='/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp'
+        overlay='black'
       />
 
       <ServiceSchema />

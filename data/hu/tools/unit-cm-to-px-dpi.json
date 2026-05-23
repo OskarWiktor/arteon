@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Centiméter átváltása pixelre DPI támogatással.",
-      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+      "featureList": [
+        "Kétirányú valós idejű átváltás",
+        "Minden átváltó egy helyen",
+        "Eredmény másolása a vágólapra",
+        "Helyi számítás a böngészőben"
+      ]
     },
     "howTo": {
       "name": "Hogyan használja az átváltót",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Gyakori DPI-felbontások",
-      "featureLabel": "Tulajdonság",
-      "plans": [
+      "labelHeader": "Tulajdonság",
+      "cols": ["300 DPI (print)", "72 DPI (screen)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "300 DPI (print)"
+          "label": "10 cm",
+          "values": ["1,181 px", "283 px"]
         },
         {
-          "id": "unit2",
-          "name": "72 DPI (screen)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "10 cm",
-          "values": {
-            "unit1": "1,181 px",
-            "unit2": "283 px"
-          }
+          "label": "A4 szélesség (21 cm)",
+          "values": ["2,480 px", "595 px"]
         },
         {
-          "name": "A4 szélesség (21 cm)",
-          "values": {
-            "unit1": "2,480 px",
-            "unit2": "595 px"
-          }
+          "label": "A4 magasság (29,7 cm)",
+          "values": ["3,508 px", "842 px"]
         },
         {
-          "name": "A4 magasság (29,7 cm)",
-          "values": {
-            "unit1": "3,508 px",
-            "unit2": "842 px"
-          }
+          "label": "Felhasználás",
+          "values": ["Professzionális nyomtatás", "Webes grafika"]
         },
         {
-          "name": "Felhasználás",
-          "values": {
-            "unit1": "Professzionális nyomtatás",
-            "unit2": "Webes grafika"
-          }
-        },
-        {
-          "name": "Minőség",
-          "values": {
-            "unit1": "Éles minden méretben",
-            "unit2": "Csak képernyőre"
-          }
+          "label": "Minőség",
+          "values": ["Éles minden méretben", "Csak képernyőre"]
         }
       ]
     },

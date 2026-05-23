@@ -2,14 +2,14 @@
   "toolKey": "metaCounter",
   "locale": "pl",
   "metadata": {
-    "title": "Darmowy licznik długości meta title i description w pikselach",
-    "description": "Sprawdź czy meta title i description ma dobrą długość według wytycznych Google. Licznik z podglądem wyniku na żywo i podpowiedziami",
+    "title": "Darmowy licznik długości meta title i description w pikselach z podglądem w Google",
+    "description": "Sprawdź czy Twój meta title i description ma dobrą długość według wytycznych Google. Darmowy licznik długości tekstu według pikseli, bez rejestracji i limitów, z podglądem wyniku na żywo i oceną długości.",
     "ogImage": "/assets/tools/free-meta-title-and-description-checker-pixel-width/licznik-dlugosci-meta-title-i-description-pl.webp",
     "path": "/narzedzia/licznik-dlugosci-meta-title-i-description"
   },
   "hero": {
-    "title": "Sprawdź długość meta title i description – podgląd w Google",
-    "description": "Wpisz tytuł i opis strony, a narzędzie obliczy liczbę znaków, słów, szerokość w pikselach i pokaże, czy długość jest zgodna z zasadami SEO",
+    "title": "Sprawdź długość meta title i description w pikselach i zobacz jak będzie wyglądał Twój opis w Google",
+    "description": "Wpisz tytuł i opis strony, a narzędzie obliczy liczbę znaków i szerokość w pikselach i pokaże, czy długość jest zgodna z wytycznymi Google. Zobacz jak tytuł i opis będą wyglądały w wynikach wyszukiwania.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
   },
   "breadcrumbs": {
@@ -30,7 +30,7 @@
         "Podgląd wyniku w Google po polsku",
         "Sprawdź długość tytułu SEO w pikselach",
         "Narzędzie do sprawdzania długości meta tagów",
-        "Podgląd snippet Google online",
+        "Podgląd snippet Google",
         "Ile znaków meta description",
         "Optymalna długość title i description",
         "Narzędzie SEO do sprawdzania meta tagów"
@@ -284,7 +284,7 @@
     {
       "type": "sectionInfo",
       "title": "Optymalizacja meta tagów dla lokalnego SEO w Polsce",
-      "html": "<p class=\"text-mid mb-4\">Lokalne firmy usługowe powinny umieszczać nazwę miasta w meta title. Struktura sprawdzona w praktyce: &quot;[Usługa] [Miasto] - [Nazwa firmy]&quot;. Przykład: &quot;Dentysta Kraków - Gabinet Stomatologiczny NowyUśmiech&quot;. Taki tytuł zawiera frazę kluczową z miastem na początku, co zwiększa szanse na wyświetlenie w lokalnych wynikach wyszukiwania.</p><p class=\"text-mid mb-4\">Meta description dla strony lokalnej firmy powinien zawierać adres lub dzielnicę, godziny otwarcia i główną korzyść. Przykład: &quot;Gabinet stomatologiczny w centrum Krakowa, ul. Floriańska. Zapisy online, bez kolejek. Poniedziałek–piątek 8:00–18:00&quot;. Google często wyświetla te informacje w rozszerzonych wynikach, więc warto je mieć zarówno w meta description, jak i na stronie.</p><p class=\"text-mid\">Spójność między meta tagami strony a wizytówką Google Business Profile jest ważna. Jeśli w tytule strony masz &quot;Dentysta Kraków&quot;, a w wizytówce Google widnieje &quot;Stomatolog Kraków-Podgórze&quot;, Google może mieć problem z powiązaniem obu źródeł. Użyj tej samej nazwy firmy i tego samego formatu adresu w obu miejscach.</p>"
+      "html": "<p class=\"text-mid mb-4\">Lokalne firmy usługowe powinny umieszczać nazwę miasta w meta title. Struktura sprawdzona w praktyce: &quot;[Usługa] [Miasto] - [Nazwa firmy]&quot;. Przykład: &quot;Dentysta Kraków - Gabinet Stomatologiczny NowyUśmiech&quot;. Taki tytuł zawiera frazę kluczową z miastem na początku, co zwiększa szanse na wyświetlenie w lokalnych wynikach wyszukiwania.</p><p class=\"text-mid mb-4\">Meta description dla strony lokalnej firmy powinien zawierać adres lub dzielnicę, godziny otwarcia i główną korzyść. Przykład: &quot;Gabinet stomatologiczny w centrum Krakowa, ul. Floriańska. Zapisy, bez kolejek. Poniedziałek–piątek 8:00–18:00&quot;. Google często wyświetla te informacje w rozszerzonych wynikach, więc warto je mieć zarówno w meta description, jak i na stronie.</p><p class=\"text-mid\">Spójność między meta tagami strony a wizytówką Google Business Profile jest ważna. Jeśli w tytule strony masz &quot;Dentysta Kraków&quot;, a w wizytówce Google widnieje &quot;Stomatolog Kraków-Podgórze&quot;, Google może mieć problem z powiązaniem obu źródeł. Użyj tej samej nazwy firmy i tego samego formatu adresu w obu miejscach.</p>"
     },
     {
       "type": "gap",

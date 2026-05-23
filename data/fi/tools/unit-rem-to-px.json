@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Muunna CSS rem pikseleiksi ja päinvastoin.",
-      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+      "featureList": [
+        "Kaksisuuntainen reaaliaikainen muunnos",
+        "Kaikki muuntimet yhdessä paikassa",
+        "Kopioi tulos leikepöydälle",
+        "Paikallinen laskenta selaimessa"
+      ]
     },
     "howTo": {
       "name": "Näin käytät muunninta",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "rem vs em vs px",
-      "featureLabel": "Ominaisuus",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["rem", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "rem"
+          "label": "Viite",
+          "values": ["Juurikirjasin", "Kiinteä pikseli"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Viite",
-          "values": {
-            "unit1": "Juurikirjasin",
-            "unit2": "Kiinteä pikseli"
-          }
+          "label": "Kaskadoi",
+          "values": ["Ei", "Ei"]
         },
         {
-          "name": "Kaskadoi",
-          "values": {
-            "unit1": "Ei",
-            "unit2": "Ei"
-          }
+          "label": "Responsiivinen",
+          "values": ["Kyllä", "Ei"]
         },
         {
-          "name": "Responsiivinen",
-          "values": {
-            "unit1": "Kyllä",
-            "unit2": "Ei"
-          }
+          "label": "Saavutettavuus",
+          "values": ["Kunnioittaa asetuksia", "Kiinteä koko"]
         },
         {
-          "name": "Saavutettavuus",
-          "values": {
-            "unit1": "Kunnioittaa asetuksia",
-            "unit2": "Kiinteä koko"
-          }
-        },
-        {
-          "name": "Ennakoitavuus",
-          "values": {
-            "unit1": "Aina johdonmukainen",
-            "unit2": "Aina vakio"
-          }
+          "label": "Ennakoitavuus",
+          "values": ["Aina johdonmukainen", "Aina vakio"]
         }
       ]
     },

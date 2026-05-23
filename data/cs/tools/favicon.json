@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "Generátor favicon.ico pro webové stránky",
-      "alternateName": ["Generátor favicon.ico", "Generátor ikon pro web", "Nástroj na favicon", "Generátor favicon z obrázku"],
+      "alternateName": [
+        "Generátor favicon.ico",
+        "Generátor ikon pro web",
+        "Nástroj na favicon",
+        "Generátor favicon z obrázku"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
       "description": "Bezplatný generátor favicon. Vytvořte favicon.ico a PNG ikony 16x16, 32x32, 180x180, 192x192 a 512x512 bez limitů a bez odesílání souborů na server. Zpracování probíhá lokálně v prohlížeči.",

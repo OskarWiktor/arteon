@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Extrator de cores de imagem – paleta de cores a partir de foto",
-      "alternateName": ["Paleta de cores a partir de uma imagem", "Extrator de cores dominantes", "Gerador de paleta a partir de uma foto"],
+      "alternateName": [
+        "Paleta de cores a partir de uma imagem",
+        "Extrator de cores dominantes",
+        "Gerador de paleta a partir de uma foto"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
       "description": "Extrator gratuito de cores de imagem. Carregue uma foto, logótipo ou gráfico e obtenha uma paleta de até 12 cores dominantes com códigos HEX e RGB. O processamento ocorre no navegador – os ficheiros não são enviados para um servidor.",
@@ -279,7 +283,7 @@
     {
       "type": "sectionInfo",
       "title": "Extração de cores para e-commerce e fotografia de produto no mercado lusófono",
-      "html": "<p class=\"text-mid mb-4\">A coerência visual de uma loja online reforça a confiança do comprador. O extrator analisa uma foto de produto e devolve as cores dominantes como códigos HEX e RGB. Estes valores aplicam-se diretamente a fundos de fichas de produto, banners promocionais e grafismos para redes sociais - todo o catálogo mantém assim uma identidade cromática unificada.</p><p class=\"text-mid mb-4\">As marcas lusófonas de alimentação e bebidas têm identidades cromáticas fortes. Os rótulos de Vinho do Porto usam bordô profundo, dourado e preto. Os produtores de azeite alentejano escolhem verde folha, dourado e creme. As marcas brasileiras de café apostam em castanho torrado, bege e verde-escuro. Carregue uma foto do rótulo ou do produto - os códigos extraídos tornam-se a paleta base de toda a loja.</p><p class=\"text-mid\">As fotos sobre fundo branco dão os resultados mais precisos porque o extrator capta apenas as cores do produto. Em fotos ambientadas com decoração e fundos coloridos, essas tonalidades também são incluídas na análise. Recorte a imagem na zona de interesse antes de carregar ou utilize um ficheiro PNG com fundo transparente para concentrar a extração nas cores relevantes.</p>"
+      "html": "<p class=\"text-mid mb-4\">A coerência visual de uma lojaa a confiança do comprador. O extrator analisa uma foto de produto e devolve as cores dominantes como códigos HEX e RGB. Estes valores aplicam-se diretamente a fundos de fichas de produto, banners promocionais e grafismos para redes sociais - todo o catálogo mantém assim uma identidade cromática unificada.</p><p class=\"text-mid mb-4\">As marcas lusófonas de alimentação e bebidas têm identidades cromáticas fortes. Os rótulos de Vinho do Porto usam bordô profundo, dourado e preto. Os produtores de azeite alentejano escolhem verde folha, dourado e creme. As marcas brasileiras de café apostam em castanho torrado, bege e verde-escuro. Carregue uma foto do rótulo ou do produto - os códigos extraídos tornam-se a paleta base de toda a loja.</p><p class=\"text-mid\">As fotos sobre fundo branco dão os resultados mais precisos porque o extrator capta apenas as cores do produto. Em fotos ambientadas com decoração e fundos coloridos, essas tonalidades também são incluídas na análise. Recorte a imagem na zona de interesse antes de carregar ou utilize um ficheiro PNG com fundo transparente para concentrar a extração nas cores relevantes.</p>"
     },
     {
       "type": "gap",

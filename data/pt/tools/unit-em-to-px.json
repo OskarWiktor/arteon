@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Converta unidades CSS em para pixels. Para design web responsivo.",
-      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+      "featureList": [
+        "Conversão bidirecional em tempo real",
+        "Todos os conversores num só lugar",
+        "Copiar resultado para a área de transferência",
+        "Cálculo local no navegador"
+      ]
     },
     "howTo": {
       "name": "Como usar o conversor",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "em vs px vs rem",
-      "featureLabel": "Característica",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["em", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "em"
+          "label": "Referência",
+          "values": ["Fonte do pai", "Pixel fixo"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Referência",
-          "values": {
-            "unit1": "Fonte do pai",
-            "unit2": "Pixel fixo"
-          }
+          "label": "Se acumula",
+          "values": ["Sim (aninhado)", "Não"]
         },
         {
-          "name": "Se acumula",
-          "values": {
-            "unit1": "Sim (aninhado)",
-            "unit2": "Não"
-          }
+          "label": "Responsivo",
+          "values": ["Sim", "Não"]
         },
         {
-          "name": "Responsivo",
-          "values": {
-            "unit1": "Sim",
-            "unit2": "Não"
-          }
+          "label": "Acessibilidade",
+          "values": ["Respeita configurações", "Tamanho fixo"]
         },
         {
-          "name": "Acessibilidade",
-          "values": {
-            "unit1": "Respeita configurações",
-            "unit2": "Tamanho fixo"
-          }
-        },
-        {
-          "name": "Previsibilidade",
-          "values": {
-            "unit1": "Depende do contexto",
-            "unit2": "Sempre constante"
-          }
+          "label": "Previsibilidade",
+          "values": ["Depende do contexto", "Sempre constante"]
         }
       ]
     },

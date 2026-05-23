@@ -2,13 +2,13 @@
   "toolKey": "jpgToPng",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JPG na PNG – bezstratna konwersja za darmo",
-    "description": "Zamień pliki JPG na bezstratny PNG w przeglądarce. Bez limitu plików, bez rejestracji. Pliki nie są wysyłane na serwer. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
+    "title": "Darmowy konwerter formatu JPG na PNG bez limitu plików i rejestracji",
+    "description": "Zamień pliki JPG na bezstratny PNG w przeglądarce. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-jpg-na-png"
   },
   "hero": {
-    "title": "Konwerter JPG na PNG – zachowaj pełną jakość obrazu",
+    "title": "Darmowy konwerter formatu JPG na PNG – zachowaj pełną jakość obrazu",
     "description": "Zamień pliki JPG na bezstratny format PNG. Dodaj pliki i pobierz obrazy w formacie PNG. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,15 +25,20 @@
   "schemas": {
     "software": {
       "name": "Konwerter JPG na PNG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana JPG na PNG online", "Konwersja JPG do PNG", "Zmiana formatu JPG na PNG"],
+      "alternateName": ["Zamiana JPG na PNG", "Konwersja JPG do PNG", "Zmiana formatu JPG na PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter JPG na PNG online. Zamień pliki JPG na bezstratny PNG w przeglądarce. Bez limitu plików i rejestracji.",
-      "featureList": ["Konwersja JPG do PNG", "Konwersja wielu plików jednocześnie", "Podgląd rozmiaru przed i po konwersji", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter JPG na PNG. Zamień pliki JPG na bezstratny PNG w przeglądarce. Bez limitu plików i rejestracji.",
+      "featureList": [
+        "Konwersja JPG do PNG",
+        "Konwersja wielu plików jednocześnie",
+        "Podgląd rozmiaru przed i po konwersji",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić JPG na PNG online",
-      "description": "Instrukcja konwersji plików JPG na format PNG za pomocą darmowego narzędzia online.",
+      "name": "Jak zamienić JPG na PNG",
+      "description": "Instrukcja konwersji plików JPG na format PNG za pomocą darmowego narzędzia.",
       "steps": [
         {
           "name": "Dodaj pliki JPG",
@@ -157,78 +162,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs PNG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["JPG", "PNG"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Kompresja stratna",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8-bit (16.7M)", "8/16-bit"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "jpg": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "jpg": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "jpg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "jpg": "Wszystkie przeglądarki",
-            "png": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

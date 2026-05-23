@@ -13,7 +13,13 @@ Catches errors in a route segment and its children:
 ```tsx
 'use client';
 
-export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
+export default function Error({
+  error,
+  reset,
+}: {
+  error: Error & { digest?: string };
+  reset: () => void;
+}) {
   return (
     <div>
       <h2>Something went wrong!</h2>
@@ -32,7 +38,13 @@ Catches errors in root layout:
 ```tsx
 'use client';
 
-export default function GlobalError({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
+export default function GlobalError({
+  error,
+  reset,
+}: {
+  error: Error & { digest?: string };
+  reset: () => void;
+}) {
   return (
     <html>
       <body>

@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Konvertera TIFF till PNG", "TIFF till PNG konvertering", "Gratis TIFF till PNG konverterare"]
+      "featureList": [
+        "TIFF to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Konvertera TIFF till PNG",
+        "TIFF till PNG konvertering",
+        "Gratis TIFF till PNG konverterare"
+      ]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PNG – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["TIFF", "PNG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Förlustrik komprimering",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Endast Safari", "Alla webbläsare"]
+        },
+        {
+          "label": "Färgdjup",
+          "values": ["8/16/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "tiff": "Endast Safari",
-            "png": "Alla webbläsare"
-          }
-        },
-        {
-          "name": "Färgdjup",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "tiff": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

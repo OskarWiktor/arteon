@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "Generátor QR kódů bez přihlášení a registrace",
-      "alternateName": ["Tvůrce QR kódů", "Generátor QR kódu vCard", "Bezplatný generátor QR", "Nástroj na QR kódy"],
+      "alternateName": [
+        "Tvůrce QR kódů",
+        "Generátor QR kódu vCard",
+        "Bezplatný generátor QR",
+        "Nástroj na QR kódy"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
       "description": "Vytvořte QR kód pro web, vizitku, menu nebo leták. Vyberte typ dat, upravte barvy a velikost, poté stáhněte hotový soubor PNG nebo SVG.",
@@ -221,68 +226,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG – jaký formát zvolit pro tisk?",
-      "plans": [
+      "cols": ["PNG (rastr)", "SVG (vektor)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (rastr)"
+          "label": "Web a sociální sítě",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (vektor)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Web a sociální sítě",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Letáky a vizitky",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Letáky a vizitky",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Plakáty a bannery (velký formát)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Plakáty a bannery (velký formát)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Škálování bez ztráty kvality",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Škálování bez ztráty kvality",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Úpravy v grafické aplikaci",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Úpravy v grafické aplikaci",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Menší velikost souboru",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Menší velikost souboru",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Prezentace",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Prezentace",
+          "values": ["✓", "✓"]
         }
       ]
     },

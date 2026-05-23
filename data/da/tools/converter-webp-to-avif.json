@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter WebP-filer til AVIF. Endnu bedre komprimering i et moderne format. Al behandling sker lokalt i browseren - filer forlader aldrig din enhed.",
-      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
-      "alternateName": ["Konvertér WEBP til AVIF", "WEBP til AVIF konvertering", "Gratis WEBP til AVIF konverter"]
+      "featureList": [
+        "Konvertering til AVIF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal behandling i browseren"
+      ],
+      "alternateName": [
+        "Konvertér WEBP til AVIF",
+        "WEBP til AVIF konvertering",
+        "Gratis WEBP til AVIF konverter"
+      ]
     },
     "howTo": {
       "name": "Hvordan konverterer man WebP til AVIF",
@@ -173,78 +182,47 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs AVIF – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["WebP", "AVIF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Tabsgivende komprimering",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          ]
+        },
+        {
+          "label": "Farvedybde",
+          "values": ["8-bit (16.7M)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Farvedybde",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε αρχεια WebP σε AVIF. Ακομη καλυτερη συμπιεση σε συγχρονη μορφη. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης - τα αρχεία δεν φεύγουν από τη συσκευή σας.",
-      "featureList": ["Μετατροπή σε AVIF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
-      "alternateName": ["Μετατροπή WEBP σε AVIF", "Μετατροπέας WEBP σε AVIF", "Δωρεάν μετατροπέας WEBP σε AVIF"]
+      "featureList": [
+        "Μετατροπή σε AVIF",
+        "Ρύθμιση ποιότητας (60-95%)",
+        "Ομαδική μετατροπή",
+        "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"
+      ],
+      "alternateName": [
+        "Μετατροπή WEBP σε AVIF",
+        "Μετατροπέας WEBP σε AVIF",
+        "Δωρεάν μετατροπέας WEBP σε AVIF"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε WebP σε AVIF",
@@ -173,78 +182,47 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs AVIF – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["WebP", "AVIF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          ]
+        },
+        {
+          "label": "Βάθος χρώματος",
+          "values": ["8-bit (16.7M)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Βάθος χρώματος",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",

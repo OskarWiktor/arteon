@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Reken Unix-tijdstempel om naar datum en tijd.",
-      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+      "featureList": [
+        "Bidirectionele realtime-conversie",
+        "Alle converters op één plek",
+        "Resultaat naar klembord kopiëren",
+        "Lokale berekening in de browser"
+      ]
     },
     "howTo": {
       "name": "Hoe de converter te gebruiken",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Unix-tijdstempel vs ISO-datum",
-      "featureLabel": "Eigenschap",
-      "plans": [
+      "labelHeader": "Eigenschap",
+      "cols": ["Unix-tijdstempel", "ISO 8601"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Unix-tijdstempel"
+          "label": "Formaat",
+          "values": ["1709251200", "2024-03-01T00:00:00Z"]
         },
         {
-          "id": "unit2",
-          "name": "ISO 8601",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Formaat",
-          "values": {
-            "unit1": "1709251200",
-            "unit2": "2024-03-01T00:00:00Z"
-          }
+          "label": "Leesbaarheid",
+          "values": ["Alleen voor machines", "Leesbaar voor mensen"]
         },
         {
-          "name": "Leesbaarheid",
-          "values": {
-            "unit1": "Alleen voor machines",
-            "unit2": "Leesbaar voor mensen"
-          }
+          "label": "Tijdzone",
+          "values": ["Altijd UTC", "Bevat tijdzone"]
         },
         {
-          "name": "Tijdzone",
-          "values": {
-            "unit1": "Altijd UTC",
-            "unit2": "Bevat tijdzone"
-          }
+          "label": "Vergelijking",
+          "values": ["Simpel (groter = later)", "Vereist parsing"]
         },
         {
-          "name": "Vergelijking",
-          "values": {
-            "unit1": "Simpel (groter = later)",
-            "unit2": "Vereist parsing"
-          }
-        },
-        {
-          "name": "Opslag",
-          "values": {
-            "unit1": "4–8 bytes",
-            "unit2": "20+ bytes"
-          }
+          "label": "Opslag",
+          "values": ["4–8 bytes", "20+ bytes"]
         }
       ]
     },

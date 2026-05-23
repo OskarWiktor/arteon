@@ -1,6 +1,12 @@
 import type { IconType } from 'react-icons';
 
-export type HeaderNavItemKey = 'realizacje' | 'uslugi' | 'oNas' | 'edukacja' | 'narzedzia' | 'kontakt';
+export type HeaderNavItemKey =
+  | 'realizacje'
+  | 'uslugi'
+  | 'oNas'
+  | 'edukacja'
+  | 'narzedzia'
+  | 'kontakt';
 
 export type HeaderNavItem = {
   key: HeaderNavItemKey;

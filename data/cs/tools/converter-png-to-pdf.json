@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět PNG na PDF?",
-      "html": "<p class=\"text-mid mb-4\">PNG je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na PDF prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase PNG soubory do formatu PDF primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na PDF prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny konvertor prevadi vase PNG soubory do formatu PDF primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "PNG to PDF conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs PDF – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["PNG", "PDF"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Ztrátová komprese",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Všechny prohlížeče", "Vestavěný prohlížeč PDF"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "png": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "png": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "png": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "png": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "png": "Všechny prohlížeče",
-            "pdf": "Vestavěný prohlížeč PDF"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "png": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "png": false,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

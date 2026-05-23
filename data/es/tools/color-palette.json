@@ -25,7 +25,13 @@
   "schemas": {
     "software": {
       "name": "Generador de paletas de colores – 17 esquemas de color",
-      "alternateName": ["Generador de esquemas de colores", "Generador de colores HEX", "Creador de paletas de colores", "Herramienta de combinación de colores", "Generador de armonía de colores"],
+      "alternateName": [
+        "Generador de esquemas de colores",
+        "Generador de colores HEX",
+        "Creador de paletas de colores",
+        "Herramienta de combinación de colores",
+        "Generador de armonía de colores"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
       "description": "Generador gratuito de paletas de colores. Introduzca un color HEX y la herramienta generará 17 esquemas: monocromático, análogo, complementario, triádico, complementario dividido, pastel, oscuro, tonal y minimalista. Cada color se puede copiar con su código HEX y valor HSL.",

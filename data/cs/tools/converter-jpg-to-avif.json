@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
-      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
-      "alternateName": ["Převést JPG na AVIF", "Konverze JPG do AVIF", "Převodník JPG na AVIF zdarma"]
+      "featureList": [
+        "Konverze do AVIF",
+        "Nastavení kvality (60-95%)",
+        "Dávková konverze",
+        "Lokální zpracování v prohlížeči"
+      ],
+      "alternateName": [
+        "Převést JPG na AVIF",
+        "Konverze JPG do AVIF",
+        "Převodník JPG na AVIF zdarma"
+      ]
     },
     "howTo": {
       "name": "Jak převést JPG na AVIF",
@@ -166,85 +175,51 @@
     {
       "type": "sectionInfo",
       "title": "Převod JPG na AVIF v praxi",
-      "html": "<p class=\"text-mid mb-4\">AVIF dosahuje až o 50 % lepší komprese než JPEG při srovnatelné vizuální kvalitě. Pro weby s mnoha fotografiemi – realitní portály, online magazíny, cestovatelské weby – to znamená výrazně kratší načítání.</p><p class=\"text-mid mb-4\">Platformy jako Sreality.cz, Booking.com nebo Bazos.cz stále častěji přecházejí na AVIF pro lepší mobilní zážitek. Chrome, Firefox a Safari 16+ podporují AVIF nativně.</p><p class=\"text-mid\">Lokální převod v prohlížeči chrání vaše obrázky: realitní fotografie, produktové snímky nebo portréty – nic se nenahrává na server. Plně v souladu s GDPR.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF dosahuje až o 50 % lepší komprese než JPEG při srovnatelné vizuální kvalitě. Pro weby s mnoha fotografiemi – realitní portály, magazíny, cestovatelské weby – to znamená výrazně kratší načítání.</p><p class=\"text-mid mb-4\">Platformy jako Sreality.cz, Booking.com nebo Bazos.cz stále častěji přecházejí na AVIF pro lepší mobilní zážitek. Chrome, Firefox a Safari 16+ podporují AVIF nativně.</p><p class=\"text-mid\">Lokální převod v prohlížeči chrání vaše obrázky: realitní fotografie, produktové snímky nebo portréty – nic se nenahrává na server. Plně v souladu s GDPR.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs AVIF – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["JPG", "AVIF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Ztrátová komprese",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Všechny prohlížeče", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["8-bit (16.7M)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "jpg": "Všechny prohlížeče",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

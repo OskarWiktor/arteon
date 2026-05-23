@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "BMP til JPG-konverter",
-      "alternateName": ["Konvertér BMP til JPG", "BMP til JPG konvertering", "Gratis BMP til JPG konverter"],
+      "alternateName": [
+        "Konvertér BMP til JPG",
+        "BMP til JPG konvertering",
+        "Gratis BMP til JPG konverter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion. Al behandling sker lokalt i browseren - filer forlader aldrig din enhed.",
-      "featureList": ["BMP til JPG-konvertering", "JPG-kvalitetskontrol", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
+      "featureList": [
+        "BMP til JPG-konvertering",
+        "JPG-kvalitetskontrol",
+        "Batchkonvertering",
+        "Lokal browserbehandling",
+        "Ingen filupload påkrævet"
+      ]
     },
     "howTo": {
       "name": "Sådan konverterer du BMP til JPG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs JPG – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["BMP", "JPG"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Tabsgivende komprimering",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Alle browsere", "Alle browsere"]
+        },
+        {
+          "label": "Farvedybde",
+          "values": ["1/4/8/24/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "bmp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "bmp": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "bmp": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "bmp": "Alle browsere",
-            "jpg": "Alle browsere"
-          }
-        },
-        {
-          "name": "Farvedybde",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

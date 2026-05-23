@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les fichiers TIFF en AVIF moderne. Reduction massive de la taille. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
-      "featureList": ["Conversion en AVIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
-      "alternateName": ["Convertir TIFF en AVIF", "Conversion TIFF vers AVIF", "Convertisseur TIFF en AVIF gratuit"]
+      "featureList": [
+        "Conversion en AVIF",
+        "Réglage de la qualité (60-95%)",
+        "Conversion par lots",
+        "Traitement local dans le navigateur"
+      ],
+      "alternateName": [
+        "Convertir TIFF en AVIF",
+        "Conversion TIFF vers AVIF",
+        "Convertisseur TIFF en AVIF gratuit"
+      ]
     },
     "howTo": {
       "name": "Comment convertir TIFF en AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs AVIF – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["TIFF", "AVIF"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Compression avec perte",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Safari uniquement", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Profondeur de couleur",
+          "values": ["8/16/32-bit", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "tiff": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "tiff": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "tiff": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "tiff": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "tiff": "Safari uniquement",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Profondeur de couleur",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "tiff": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "tiff": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter vektor-SVG-grafik til GIF-rasterformat. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
-      "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
-      "alternateName": ["Konvertér SVG til GIF", "SVG til GIF konvertering", "Gratis SVG til GIF konverter"]
+      "featureList": [
+        "Konvertering til GIF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal behandling i browseren"
+      ],
+      "alternateName": [
+        "Konvertér SVG til GIF",
+        "SVG til GIF konvertering",
+        "Gratis SVG til GIF konverter"
+      ]
     },
     "howTo": {
       "name": "Hvordan konverterer man SVG til GIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs GIF – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["SVG", "GIF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Tabsgivende komprimering",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Alle browsere", "Alle browsere"]
+        },
+        {
+          "label": "Farvedybde",
+          "values": ["N/A (vektor)", "8-bit (256)"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "svg": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "svg": "Alle browsere",
-            "gif": "Alle browsere"
-          }
-        },
-        {
-          "name": "Farvedybde",
-          "values": {
-            "svg": "N/A (vektor)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "svg": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

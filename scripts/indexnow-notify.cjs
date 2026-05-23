@@ -30,7 +30,9 @@ function parseSitemapUrls(xmlContent) {
  */
 function getAllSitemapUrls() {
   const publicDir = path.join(process.cwd(), 'public');
-  const sitemapFiles = fs.readdirSync(publicDir).filter((f) => f.startsWith('sitemap') && f.endsWith('.xml'));
+  const sitemapFiles = fs
+    .readdirSync(publicDir)
+    .filter(f => f.startsWith('sitemap') && f.endsWith('.xml'));
 
   const allUrls = [];
   for (const file of sitemapFiles) {
@@ -81,9 +83,9 @@ function sendToIndexNow(urls) {
       },
     };
 
-    const req = https.request(options, (res) => {
+    const req = https.request(options, res => {
       let data = '';
-      res.on('data', (chunk) => (data += chunk));
+      res.on('data', chunk => (data += chunk));
       res.on('end', () => {
         if (res.statusCode >= 200 && res.statusCode < 300) {
           console.log(`✓ IndexNow: Submitted ${batch.length} URLs (status: ${res.statusCode})`);
@@ -96,7 +98,7 @@ function sendToIndexNow(urls) {
       });
     });
 
-    req.on('error', (err) => {
+    req.on('error', err => {
       console.log(`⚠ IndexNow error: ${err.message}`);
       // Don't fail build on IndexNow errors
       resolve();

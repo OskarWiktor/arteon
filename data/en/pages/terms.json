@@ -1,19 +1,19 @@
 {
   "slug": "terms-of-service",
   "metadata": {
-    "title": "Terms of Service – Arteon Free Online Tools",
-    "description": "Terms of service for Arteon free online tools. Learn about usage conditions, intellectual property, disclaimers, and liability for our browser-based tools."
+    "title": "Terms of Service – Arteon Free Tools",
+    "description": "Terms of service for Arteon free tools. Learn about usage conditions, intellectual property, disclaimers, and liability for our browser-based tools."
   },
   "hero": {
     "title": "Terms of Service",
-    "description": "Usage conditions for Arteon free online tools"
+    "description": "Usage conditions for Arteon free tools"
   },
   "version": "24.02.2026",
   "sections": [
     {
       "id": "introduction",
       "title": "1. Introduction",
-      "content": "These Terms of Service govern your use of the free online tools provided by Arteon at arteonagency.pl. By using our tools, you agree to these terms."
+      "content": "These Terms of Service govern your use of the free tools provided by Arteon at arteonagency.pl. By using our tools, you agree to these terms."
     },
     {
       "id": "provider",
@@ -73,7 +73,7 @@
   ],
   "cta": {
     "title": "Back to tools",
-    "description": "Free online tools for working with images, text, and colors",
+    "description": "Free tools for working with images, text, and colors",
     "btnOne": "Tools"
   }
 }

@@ -127,7 +127,7 @@
         {
           "icon": "RiGlobalLine",
           "title": "URL / Site",
-          "description": "Redirecione os utilizadores para o seu site, landing page ou loja online."
+          "description": "Redirecione os utilizadores para o seu site, landing page ou loja"
         },
         {
           "icon": "RiContactsLine",
@@ -249,68 +249,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG: que formato escolher para impressão?",
-      "plans": [
+      "cols": ["PNG (raster)", "SVG (vetorial)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (raster)"
+          "label": "Sites e redes sociais",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (vetorial)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Sites e redes sociais",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Flyers e cartões de visita",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Flyers e cartões de visita",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Cartazes e faixas (grande formato)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Cartazes e faixas (grande formato)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Escalável sem perda de qualidade",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Escalável sem perda de qualidade",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Edição em software gráfico",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Edição em software gráfico",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Tamanho de ficheiro reduzido",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Tamanho de ficheiro reduzido",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Apresentações",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Apresentações",
+          "values": ["✓", "✓"]
         }
       ]
     },
@@ -399,7 +368,7 @@
     {
       "type": "sectionInfo",
       "title": "Codigos QR nos pagamentos e faturacao em Portugal e no Brasil",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal, o MB WAY tornou-se o principal sistema de pagamentos moveis. Embora o MB WAY funcione principalmente com numeros de telefone, os codigos QR complementam o ecossistema financeiro portugues. O padrao EPC QR (European Payments Council) permite codificar o IBAN do beneficiario, o montante e a referencia de pagamento num codigo bidimensional. Bancos como a Caixa Geral de Depositos, o Millennium BCP e o Novo Banco suportam a leitura de codigos EPC QR nas suas aplicacoes moveis.</p><p class=\"text-mid mb-4\">A fatura eletronica em Portugal, obrigatoria para transacoes com a Administracao Publica e progressivamente alargada ao setor privado, pode incluir codigos QR com os dados de pagamento. O cliente digitaliza o codigo com a aplicacao bancaria e confirma a transferencia pre-preenchida, eliminando erros na transcricao de numeros de conta.</p><p class=\"text-mid\">No Brasil, o Pix revolucionou os pagamentos instantaneos desde 2020. O sistema do Banco Central utiliza codigos QR como metodo principal de pagamento em comercios fisicos e online. O comerciante exibe um codigo QR estatico (valor fixo) ou dinamico (valor variavel), e o cliente digitaliza-o com a aplicacao bancaria para concluir a transacao em segundos.</p>"
+      "html": "<p class=\"text-mid mb-4\">Em Portugal, o MB WAY tornou-se o principal sistema de pagamentos moveis. Embora o MB WAY funcione principalmente com numeros de telefone, os codigos QR complementam o ecossistema financeiro portugues. O padrao EPC QR (European Payments Council) permite codificar o IBAN do beneficiario, o montante e a referencia de pagamento num codigo bidimensional. Bancos como a Caixa Geral de Depositos, o Millennium BCP e o Novo Banco suportam a leitura de codigos EPC QR nas suas aplicacoes moveis.</p><p class=\"text-mid mb-4\">A fatura eletronica em Portugal, obrigatoria para transacoes com a Administracao Publica e progressivamente alargada ao setor privado, pode incluir codigos QR com os dados de pagamento. O cliente digitaliza o codigo com a aplicacao bancaria e confirma a transferencia pre-preenchida, eliminando erros na transcricao de numeros de conta.</p><p class=\"text-mid\">No Brasil, o Pix revolucionou os pagamentos instantaneos desde 2020. O sistema do Banco Central utiliza codigos QR como metodo principal de pagamento em comercios fisicos e um codigo QR estatico (valor fixo) ou dinamico (valor variavel), e o cliente digitaliza-o com a aplicacao bancaria para concluir a transacao em segundos.</p>"
     },
     {
       "type": "gap",

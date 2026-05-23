@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera iPhone HEIC-foton till professionellt TIFF-format. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
-      "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
-      "alternateName": ["Konvertera HEIC till TIFF", "HEIC till TIFF konvertering", "Gratis HEIC till TIFF konverterare"]
+      "featureList": [
+        "Konvertering till TIFF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal bearbetning i webbläsaren"
+      ],
+      "alternateName": [
+        "Konvertera HEIC till TIFF",
+        "HEIC till TIFF konvertering",
+        "Gratis HEIC till TIFF konverterare"
+      ]
     },
     "howTo": {
       "name": "Hur konverterar man HEIC till TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs TIFF – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["HEIC", "TIFF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Förlustrik komprimering",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Safari 13+ (macOS / iOS)", "Endast Safari"]
+        },
+        {
+          "label": "Färgdjup",
+          "values": ["8/10-bit, HDR", "8/16/32-bit"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "tiff": "Endast Safari"
-          }
-        },
-        {
-          "name": "Färgdjup",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

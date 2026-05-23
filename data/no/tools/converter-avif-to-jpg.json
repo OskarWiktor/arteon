@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter AVIF-filer til universell JPG. Kompatibel med alle programmer og plattformer. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
-      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Konverter AVIF til JPG", "AVIF til JPG konvertering", "Gratis AVIF til JPG konverterer"]
+      "featureList": [
+        "AVIF to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Konverter AVIF til JPG",
+        "AVIF til JPG konvertering",
+        "Gratis AVIF til JPG konverterer"
+      ]
     },
     "howTo": {
       "name": "AVIF to JPG",
@@ -174,68 +183,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs JPG – formatsammenligning",
-      "plans": [
+      "cols": ["AVIF", "JPG"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Komprimering med tap",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "avif": true,
-            "jpg": false
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "avif": true,
-            "jpg": false
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "avif": true,
-            "jpg": false
-          }
+          "label": "Nettleserstøtte",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
       ]
     },

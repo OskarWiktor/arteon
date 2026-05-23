@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "GIF till JPG-konverterare",
-      "alternateName": ["Konvertera GIF till JPG", "GIF till JPG konvertering", "Gratis GIF till JPG konverterare"],
+      "alternateName": [
+        "Konvertera GIF till JPG",
+        "GIF till JPG konvertering",
+        "Gratis GIF till JPG konverterare"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
-      "featureList": ["GIF till JPG-konvertering", "JPG-kvalitetskontroll", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
+      "featureList": [
+        "GIF till JPG-konvertering",
+        "JPG-kvalitetskontroll",
+        "Batchkonvertering",
+        "Lokal webbläsarbearbetning",
+        "Ingen filuppladdning krävs"
+      ]
     },
     "howTo": {
       "name": "Hur man konverterar GIF till JPG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs JPG – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["GIF", "JPG"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Förlustrik komprimering",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Alla webbläsare", "Alla webbläsare"]
+        },
+        {
+          "label": "Färgdjup",
+          "values": ["8-bit (256)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "gif": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "gif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "gif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "gif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "gif": "Alla webbläsare",
-            "jpg": "Alla webbläsare"
-          }
-        },
-        {
-          "name": "Färgdjup",
-          "values": {
-            "gif": "8-bit (256)",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "gif": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "gif": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

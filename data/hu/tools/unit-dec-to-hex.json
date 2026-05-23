@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Decimális számok átváltása hexadecimálisra és fordítva.",
-      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+      "featureList": [
+        "Kétirányú valós idejű átváltás",
+        "Minden átváltó egy helyen",
+        "Eredmény másolása a vágólapra",
+        "Helyi számítás a böngészőben"
+      ]
     },
     "howTo": {
       "name": "Hogyan használja az átváltót",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimal vs Hexadecimal",
-      "featureLabel": "Tulajdonság",
-      "plans": [
+      "labelHeader": "Tulajdonság",
+      "cols": ["Decimal (base-10)", "Hexadecimal (base-16)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimal (base-10)"
+          "label": "Számjegyek",
+          "values": ["0–9", "0–9, A–F"]
         },
         {
-          "id": "unit2",
-          "name": "Hexadecimal (base-16)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Számjegyek",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–9, A–F"
-          }
+          "label": "Példa: 255",
+          "values": ["255", "FF"]
         },
         {
-          "name": "Példa: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "FF"
-          }
+          "label": "Példa: 1000",
+          "values": ["1000", "3E8"]
         },
         {
-          "name": "Példa: 1000",
-          "values": {
-            "unit1": "1000",
-            "unit2": "3E8"
-          }
+          "label": "Felhasználás",
+          "values": ["Mindennapi matematika", "Színek, címek, adatok"]
         },
         {
-          "name": "Felhasználás",
-          "values": {
-            "unit1": "Mindennapi matematika",
-            "unit2": "Színek, címek, adatok"
-          }
-        },
-        {
-          "name": "Tömörség",
-          "values": {
-            "unit1": "Szabványos",
-            "unit2": "Tömörebb a binárisnál"
-          }
+          "label": "Tömörség",
+          "values": ["Szabványos", "Tömörebb a binárisnál"]
         }
       ]
     },

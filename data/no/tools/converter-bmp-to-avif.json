@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter ukomprimerte BMP-filer til ultrakompakt AVIF. Ingen installasjon nødvendig, fungerer på alle enheter. Gratis, privat og ubegrenset.",
-      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
-      "alternateName": ["Konverter BMP til AVIF", "BMP til AVIF konvertering", "Gratis BMP til AVIF konverterer"]
+      "featureList": [
+        "Konvertering til AVIF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal behandling i nettleseren"
+      ],
+      "alternateName": [
+        "Konverter BMP til AVIF",
+        "BMP til AVIF konvertering",
+        "Gratis BMP til AVIF konverterer"
+      ]
     },
     "howTo": {
       "name": "Hvordan konvertere BMP til AVIF",
@@ -182,68 +191,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs AVIF – formatsammenligning",
-      "plans": [
+      "cols": ["BMP", "AVIF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Komprimering med tap",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "bmp": true,
-            "avif": true
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
+          "label": "Nettleserstøtte",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "bmp": true,
-            "avif": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
       ]
     },

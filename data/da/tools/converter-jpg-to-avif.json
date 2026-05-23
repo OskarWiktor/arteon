@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter JPG-fotos til moderne AVIF. Op til 50% bedre komprimering end JPG. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
-      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
-      "alternateName": ["Konvertér JPG til AVIF", "JPG til AVIF konvertering", "Gratis JPG til AVIF konverter"]
+      "featureList": [
+        "Konvertering til AVIF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal behandling i browseren"
+      ],
+      "alternateName": [
+        "Konvertér JPG til AVIF",
+        "JPG til AVIF konvertering",
+        "Gratis JPG til AVIF konverter"
+      ]
     },
     "howTo": {
       "name": "Hvordan konverterer man JPG til AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs AVIF – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["JPG", "AVIF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Tabsgivende komprimering",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Alle browsere", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Farvedybde",
+          "values": ["8-bit (16.7M)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "jpg": "Alle browsere",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Farvedybde",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertissez les unités CSS em en pixels. Pour le design web responsive.",
-      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+      "featureList": [
+        "Conversion bidirectionnelle en temps réel",
+        "Tous les convertisseurs au même endroit",
+        "Copier le résultat dans le presse-papiers",
+        "Calcul local dans le navigateur"
+      ]
     },
     "howTo": {
       "name": "Comment utiliser le convertisseur",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "em vs px vs rem",
-      "featureLabel": "Caractéristique",
-      "plans": [
+      "labelHeader": "Caractéristique",
+      "cols": ["em", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "em"
+          "label": "Référence",
+          "values": ["Police du parent", "Pixel fixe"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Référence",
-          "values": {
-            "unit1": "Police du parent",
-            "unit2": "Pixel fixe"
-          }
+          "label": "S’accumule",
+          "values": ["Oui (imbriqué)", "Non"]
         },
         {
-          "name": "S’accumule",
-          "values": {
-            "unit1": "Oui (imbriqué)",
-            "unit2": "Non"
-          }
+          "label": "Responsive",
+          "values": ["Oui", "Non"]
         },
         {
-          "name": "Responsive",
-          "values": {
-            "unit1": "Oui",
-            "unit2": "Non"
-          }
+          "label": "Accessibilité",
+          "values": ["Respecte les paramètres", "Taille fixe"]
         },
         {
-          "name": "Accessibilité",
-          "values": {
-            "unit1": "Respecte les paramètres",
-            "unit2": "Taille fixe"
-          }
-        },
-        {
-          "name": "Prévisibilité",
-          "values": {
-            "unit1": "Dépend du contexte",
-            "unit2": "Toujours constant"
-          }
+          "label": "Prévisibilité",
+          "values": ["Dépend du contexte", "Toujours constant"]
         }
       ]
     },

@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Kontroll av metatitel och beskrivningslängd i pixlar",
-      "alternateName": ["Meta-titel och beskrivningskontroll med Google-förhandsgranskning", "Google SERP-förhandsgranskning", "SEO-titelbreddskontroll i pixlar"],
+      "alternateName": [
+        "Meta-titel och beskrivningskontroll med Google-förhandsgranskning",
+        "Google SERP-förhandsgranskning",
+        "SEO-titelbreddskontroll i pixlar"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
       "description": "Gratis kontroll av metatitel- och beskrivningslängd. Kontrollerar antal tecken, ord och bredd i pixlar. Visar en förhandsgranskning av hur titeln och beskrivningen visas i Googles sökresultat.",
@@ -275,7 +279,7 @@
     {
       "type": "sectionInfo",
       "title": "Lokal SEO i Sverige - optimering för städer och regioner",
-      "html": "<p class=\"text-mid mb-4\">Lokala tjänsteföretag bör inkludera stadens namn i meta-titeln. Rekommenderad struktur: &quot;[Tjänst] [Stad] - [Företagsnamn]&quot;. Exempel: &quot;Tandläkare Stockholm Södermalm - Kliniken Leende&quot;. Titeln innehåller den lokala sökfrasen i början, där den har störst SEO-värde. För företag med flera kontor lönar det sig att skapa en separat sida per stad med unik titel och beskrivning.</p><p class=\"text-mid mb-4\">Meta-beskrivningen för ett lokalt företag bör innehålla adress eller stadsdel, öppettider och en konkret fördel. Exempel: &quot;Tandläkarklinik på Södermalm i Stockholm. Boka online, korta väntetider. Måndag–fredag 8–18&quot;. Google visar ofta denna information i utökade sökresultat, vilket hjälper den sökande att fatta beslut utan att besöka webbplatsen.</p><p class=\"text-mid\">Branscher med stark lokal SEO i Sverige inkluderar restaurang, hälso- och sjukvård, fastigheter, juridiska tjänster och hantverkare. Se till att Google Företagsprofilen och webbplatsen använder samma företagsnamn och adressformat. Inkonsekvenser mellan dessa källor kan göra det svårare för Google att koppla ihop dem.</p>"
+      "html": "<p class=\"text-mid mb-4\">Lokala tjänsteföretag bör inkludera stadens namn i meta-titeln. Rekommenderad struktur: &quot;[Tjänst] [Stad] - [Företagsnamn]&quot;. Exempel: &quot;Tandläkare Stockholm Södermalm - Kliniken Leende&quot;. Titeln innehåller den lokala sökfrasen i början, där den har störst SEO-värde. För företag med flera kontor lönar det sig att skapa en separat sida per stad med unik titel och beskrivning.</p><p class=\"text-mid mb-4\">Meta-beskrivningen för ett lokalt företag bör innehålla adress eller stadsdel, öppettider och en konkret fördel. Exempel: &quot;Tandläkarklinik på Södermalm i Stockholm. Boka, korta väntetider. Måndag–fredag 8–18&quot;. Google visar ofta denna information i utökade sökresultat, vilket hjälper den sökande att fatta beslut utan att besöka webbplatsen.</p><p class=\"text-mid\">Branscher med stark lokal SEO i Sverige inkluderar restaurang, hälso- och sjukvård, fastigheter, juridiska tjänster och hantverkare. Se till att Google Företagsprofilen och webbplatsen använder samma företagsnamn och adressformat. Inkonsekvenser mellan dessa källor kan göra det svårare för Google att koppla ihop dem.</p>"
     },
     {
       "type": "gap",

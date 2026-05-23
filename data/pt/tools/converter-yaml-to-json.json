@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter YAML para JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML e um formato amplamente utilizado com grande compatibilidade. Dependendo do uso, a conversao para JSON pode oferecer vantagens significativas - arquivos menores, melhor qualidade ou suporte mais amplo de plataformas.</p><p class=\"text-mid mb-4\">Este conversor online gratuito transforma seus arquivos YAML para o formato JSON diretamente no navegador. Nenhum arquivo e enviado a servidores - todo o processo acontece localmente no seu dispositivo.</p><p class=\"text-mid\">Converta quantos arquivos precisar sem limites diarios, sem registro e sem marcas d'agua. Arraste e solte seus arquivos, ajuste a qualidade e baixe os resultados.</p>",
+      "html": "<p class=\"text-mid mb-4\">YAML e um formato amplamente utilizado com grande compatibilidade. Dependendo do uso, a conversao para JSON pode oferecer vantagens significativas - arquivos menores, melhor qualidade ou suporte mais amplo de plataformas.</p><p class=\"text-mid mb-4\">Este conversorto transforma seus arquivos YAML para o formato JSON diretamente no navegador. Nenhum arquivo e enviado a servidores - todo o processo acontece localmente no seu dispositivo.</p><p class=\"text-mid\">Converta quantos arquivos precisar sem limites diarios, sem registro e sem marcas d'agua. Arraste e solte seus arquivos, ajuste a qualidade e baixe os resultados.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "YAML vs JSON – comparação de formatos",
-      "plans": [
+      "labelHeader": "Funcionalidade",
+      "cols": ["YAML", "JSON"],
+      "rows": [
         {
-          "id": "yaml",
-          "name": "YAML"
+          "label": "Dados hierárquicos",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Dados tabulares",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Validação de schema",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Legível por humanos",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Padrão API",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Sintaxe compacta",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Dados hierárquicos",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Dados tabulares",
-          "values": {
-            "yaml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Validação de schema",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Legível por humanos",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Padrão API",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Sintaxe compacta",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funcionalidade"
+      ]
     },
     {
       "type": "gap",
@@ -193,8 +165,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Como funciona a convers\u00e3o de YAML para JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML usa indenta\u00e7\u00e3o e sintaxe m\u00ednima para representar dados estruturados, enquanto JSON usa chaves, colchetes e aspas expl\u00edcitas. O conversor analisa a estrutura YAML e produz JSON equivalente com formata\u00e7\u00e3o correta.</p><p class=\"text-mid mb-4\">A indenta\u00e7\u00e3o YAML torna-se aninhamento JSON, os elementos com h\u00edfen tornam-se elementos de array JSON, e os pares chave-valor YAML tornam-se propriedades de objetos JSON. Os tipos de dados s\u00e3o preservados: strings, n\u00fameros, booleanos, null, arrays e objetos s\u00e3o transferidos diretamente.</p><p class=\"text-mid\">A convers\u00e3o de YAML para JSON \u00e9 \u00fatil quando dados de configura\u00e7\u00e3o precisam ser integrados em aplica\u00e7\u00f5es web, APIs REST ou sistemas que esperam entrada JSON. A convers\u00e3o \u00e9 realizada completamente no seu navegador.</p>"
+      "title": "Como funciona a conversão de YAML para JSON?",
+      "html": "<p class=\"text-mid mb-4\">YAML usa indentação e sintaxe mínima para representar dados estruturados, enquanto JSON usa chaves, colchetes e aspas explícitas. O conversor analisa a estrutura YAML e produz JSON equivalente com formatação correta.</p><p class=\"text-mid mb-4\">A indentação YAML torna-se aninhamento JSON, os elementos com hífen tornam-se elementos de array JSON, e os pares chave-valor YAML tornam-se propriedades de objetos JSON. Os tipos de dados são preservados: strings, números, booleanos, null, arrays e objetos são transferidos diretamente.</p><p class=\"text-mid\">A conversão de YAML para JSON é útil quando dados de configuração precisam ser integrados em aplicações web, APIs REST ou sistemas que esperam entrada JSON. A conversão é realizada completamente no seu navegador.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +174,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Dicas para a convers\u00e3o de YAML para JSON",
+      "title": "Dicas para a conversão de YAML para JSON",
       "description": "Algumas dicas para evitar problemas comuns:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileTextLine",
-          "title": "Consist\u00eancia de indenta\u00e7\u00e3o",
-          "description": "YAML \u00e9 sens\u00edvel \u00e0 indenta\u00e7\u00e3o. Se o seu arquivo mistura tabula\u00e7\u00f5es e espa\u00e7os, a an\u00e1lise pode falhar. O conversor reporta erros de indenta\u00e7\u00e3o detetados."
+          "title": "Consistência de indentação",
+          "description": "YAML é sensível à indentação. Se o seu arquivo mistura tabulações e espaços, a análise pode falhar. O conversor reporta erros de indentação detetados."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Os coment\u00e1rios s\u00e3o removidos",
-          "description": "JSON n\u00e3o suporta coment\u00e1rios. Todos os coment\u00e1rios # do seu arquivo YAML n\u00e3o aparecer\u00e3o na sa\u00edda JSON. Conserve o seu arquivo YAML original."
+          "title": "Os comentários são removidos",
+          "description": "JSON não suporta comentários. Todos os comentários # do seu arquivo YAML não aparecerão na saída JSON. Conserve o seu arquivo YAML original."
         },
         {
           "icon": "RiCodeLine",
           "title": "YAML multi-documento",
-          "description": "Os arquivos YAML podem conter m\u00faltiplos documentos separados por ---. O conversor processa por padr\u00e3o o primeiro documento."
+          "description": "Os arquivos YAML podem conter múltiplos documentos separados por ---. O conversor processa por padrão o primeiro documento."
         },
         {
           "icon": "RiFileCodeLine",
-          "title": "\u00c2ncoras e aliases",
-          "description": "As \u00e2ncoras YAML (&) e os aliases (*) s\u00e3o resolvidos durante a convers\u00e3o. A sa\u00edda JSON cont\u00e9m os valores expandidos, n\u00e3o as refer\u00eancias YAML."
+          "title": "Âncoras e aliases",
+          "description": "As âncoras YAML (&) e os aliases (*) são resolvidos durante a conversão. A saída JSON contém os valores expandidos, não as referências YAML."
         }
       ]
     },
@@ -254,16 +226,16 @@
           "answer": "Sim, funciona em qualquer dispositivo com um navegador web moderno."
         },
         {
-          "question": "\u00c9 segura a convers\u00e3o de YAML para JSON?",
-          "answer": "Sim. Toda a convers\u00e3o \u00e9 realizada localmente no seu navegador. Nenhum dado \u00e9 enviado a um servidor."
+          "question": "É segura a conversão de YAML para JSON?",
+          "answer": "Sim. Toda a conversão é realizada localmente no seu navegador. Nenhum dado é enviado a um servidor."
         },
         {
-          "question": "Os coment\u00e1rios YAML s\u00e3o conservados?",
-          "answer": "N\u00e3o. JSON n\u00e3o suporta coment\u00e1rios, portanto todos os coment\u00e1rios # do seu arquivo YAML s\u00e3o descartados durante a convers\u00e3o. Conserve o seu arquivo YAML original."
+          "question": "Os comentários YAML são conservados?",
+          "answer": "Não. JSON não suporta comentários, portanto todos os comentários # do seu arquivo YAML são descartados durante a conversão. Conserve o seu arquivo YAML original."
         },
         {
-          "question": "A convers\u00e3o \u00e9 sem perdas?",
-          "answer": "Sim, para os valores dos dados. Todas as strings, n\u00fameros, booleanos, valores null, arrays e objetos s\u00e3o preservados exatamente. Apenas as funcionalidades espec\u00edficas do YAML como coment\u00e1rios e \u00e2ncoras n\u00e3o s\u00e3o transferidas para JSON."
+          "question": "A conversão é sem perdas?",
+          "answer": "Sim, para os valores dos dados. Todas as strings, números, booleanos, valores null, arrays e objetos são preservados exatamente. Apenas as funcionalidades específicas do YAML como comentários e âncoras não são transferidas para JSON."
         }
       ]
     },

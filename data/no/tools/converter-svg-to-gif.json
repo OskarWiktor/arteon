@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter vektor-SVG-grafikk til GIF-rasterformat. Gratis nettleserverktøy - uten registrering, uten filbegrensning, full personvern.",
-      "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
-      "alternateName": ["Konverter SVG til GIF", "SVG til GIF konvertering", "Gratis SVG til GIF konverterer"]
+      "featureList": [
+        "Konvertering til GIF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal behandling i nettleseren"
+      ],
+      "alternateName": [
+        "Konverter SVG til GIF",
+        "SVG til GIF konvertering",
+        "Gratis SVG til GIF konverterer"
+      ]
     },
     "howTo": {
       "name": "Hvordan konvertere SVG til GIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs GIF – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funksjon",
+      "cols": ["SVG", "GIF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Komprimering med tap",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animasjonsstøtte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Nettleserstøtte",
+          "values": ["Alle nettlesere", "Alle nettlesere"]
+        },
+        {
+          "label": "Fargedybde",
+          "values": ["N/A (vektor)", "8-bit (256)"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "svg": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Komprimering uten tap",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Nettleserstøtte",
-          "values": {
-            "svg": "Alle nettlesere",
-            "gif": "Alle nettlesere"
-          }
-        },
-        {
-          "name": "Fargedybde",
-          "values": {
-            "svg": "N/A (vektor)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "svg": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",

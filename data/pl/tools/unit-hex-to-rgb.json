@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter HEX na RGB – przelicz kolory",
-      "alternateName": ["Przelicznik kolorów HEX RGB", "Kalkulator HEX na RGB", "Konwerter kolorów CSS"],
+      "alternateName": [
+        "Przelicznik kolorów HEX RGB",
+        "Kalkulator HEX na RGB",
+        "Konwerter kolorów CSS"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz kolory HEX na RGB i odwrotnie. Przydatny przy sprawdzaniu kontrastu WCAG, pracy z Figma i budowaniu systemów projektowych. Bez rejestracji.",
@@ -184,55 +188,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEX vs RGB – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
+      "labelHeader": "Cecha",
+      "cols": ["HEX", "RGB"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "HEX"
+          "label": "Zapis",
+          "values": ["#RRGGBB", "rgb(R, G, B)"]
         },
         {
-          "id": "unit2",
-          "name": "RGB",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Zapis",
-          "values": {
-            "unit1": "#RRGGBB",
-            "unit2": "rgb(R, G, B)"
-          }
+          "label": "Zakres",
+          "values": ["00–FF na kanał", "0–255 na kanał"]
         },
         {
-          "name": "Zakres",
-          "values": {
-            "unit1": "00–FF na kanał",
-            "unit2": "0–255 na kanał"
-          }
+          "label": "Alfa (przezroczystość)",
+          "values": ["#RRGGBBAA", "rgba(R, G, B, A)"]
         },
         {
-          "name": "Alfa (przezroczystość)",
-          "values": {
-            "unit1": "#RRGGBBAA",
-            "unit2": "rgba(R, G, B, A)"
-          }
+          "label": "Skrót",
+          "values": ["#RGB (3 znaki)", "Brak"]
         },
         {
-          "name": "Skrót",
-          "values": {
-            "unit1": "#RGB (3 znaki)",
-            "unit2": "Brak"
-          }
-        },
-        {
-          "name": "Użycie",
-          "values": {
-            "unit1": "CSS, HTML, Figma",
-            "unit2": "CSS, obliczenia, WCAG"
-          }
+          "label": "Użycie",
+          "values": ["CSS, HTML, Figma", "CSS, obliczenia, WCAG"]
         }
       ]
     },

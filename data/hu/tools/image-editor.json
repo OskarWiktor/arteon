@@ -8,7 +8,7 @@
     "path": "/hu/eszkozok/kepszerkeszto"
   },
   "hero": {
-    "title": "Méretezze át, vágja ki és konvertálja a képet online – ingyen",
+    "title": "Méretezze át, vágja ki és konvertálja a képet – ingyen",
     "description": "Méretezze át, vágja ki és konvertálja a képeket Instagramhoz, Facebookhoz és LinkedInhez. Kész formátumok, kör alakú avatarok, export JPG, PNG és WebP formátumba. Helyi feldolgozás a böngészőben.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -25,10 +25,18 @@
   "schemas": {
     "software": {
       "name": "Képszerkesztő – vágás, átméretezés és konvertálás",
-      "alternateName": ["Kép átméretező", "Kép vágó", "Instagram képméret eszköz", "Facebook képméret eszköz", "JPG WebP konverter", "Kör alakú profilkép eszköz", "Képtömörítés"],
+      "alternateName": [
+        "Kép átméretező",
+        "Kép vágó",
+        "Instagram képméret eszköz",
+        "Facebook képméret eszköz",
+        "JPG WebP konverter",
+        "Kör alakú profilkép eszköz",
+        "Képtömörítés"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Ingyenes online képszerkesztő átméretezéshez, vágáshoz és formátumkonverzióhoz. Kész presetek az Instagram, Facebook és LinkedIn számára. Kör alakú avatarok készítése. Export JPG, PNG és WebP formátumba minőségszabályozással. Helyi feldolgozás a böngészőben.",
+      "description": "Ingyenes képszerkesztő átméretezéshez, vágáshoz és formátumkonverzióhoz. Kész presetek az Instagram, Facebook és LinkedIn számára. Kör alakú avatarok készítése. Export JPG, PNG és WebP formátumba minőségszabályozással. Helyi feldolgozás a böngészőben.",
       "featureList": [
         "Képek átméretezése bármilyen méretre",
         "Vágás interaktív terület kijelöléssel",
@@ -381,7 +389,7 @@
       "description": "Van ötlete egy új funkcióhoz, hibát talált, vagy szeretne javasolni egy másik eszközt, amely megkönnyítené a munkáját? Írjon nekünk – 24 órán belül válaszolunk.",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/kepszerkeszto-hu.webp",
       "imageAlt": "Online képszerkesztő – Arteon",
-      "defaultSubject": "Feedback: Online képszerkesztő"
+      "defaultSubject": "Feedback: képszerkesztő"
     },
     {
       "type": "gap",

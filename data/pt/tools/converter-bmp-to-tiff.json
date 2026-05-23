@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta ficheiros BMP para formato TIFF profissional para impressao. Todo o processamento ocorre no navegador - os ficheiros não saem do dispositivo.",
-      "featureList": ["Conversão para TIFF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
-      "alternateName": ["Converter BMP para TIFF", "Conversão de BMP para TIFF", "Conversor BMP para TIFF grátis"]
+      "featureList": [
+        "Conversão para TIFF",
+        "Ajuste de qualidade (60-95%)",
+        "Conversão em lote",
+        "Processamento local no navegador"
+      ],
+      "alternateName": [
+        "Converter BMP para TIFF",
+        "Conversão de BMP para TIFF",
+        "Conversor BMP para TIFF grátis"
+      ]
     },
     "howTo": {
       "name": "Como converter BMP para TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs TIFF – comparação de formatos",
-      "plans": [
+      "labelHeader": "Funcionalidade",
+      "cols": ["BMP", "TIFF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Compressão com perda",
+          "values": ["—", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Compressão sem perda",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparência (canal alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suporte a animação",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Suporte em navegadores",
+          "values": ["Todos os navegadores", "Apenas Safari"]
+        },
+        {
+          "label": "Profundidade de cor",
+          "values": ["1/4/8/24/32-bit", "8/16/32-bit"]
+        },
+        {
+          "label": "Tamanho de ficheiro compacto",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadados (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressão com perda",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Compressão sem perda",
-          "values": {
-            "bmp": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Transparência (canal alfa)",
-          "values": {
-            "bmp": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Suporte a animação",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Suporte em navegadores",
-          "values": {
-            "bmp": "Todos os navegadores",
-            "tiff": "Apenas Safari"
-          }
-        },
-        {
-          "name": "Profundidade de cor",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Tamanho de ficheiro compacto",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadados (EXIF)",
-          "values": {
-            "bmp": false,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funcionalidade"
+      ]
     },
     {
       "type": "gap",

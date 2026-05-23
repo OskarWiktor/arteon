@@ -28,8 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert PNG graphics to AVIF with transparency support. Significantly smaller files. Runs entirely in your browser. No server uploads, no registration required.",
-      "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PNG to AVIF", "PNG to AVIF conversion", "Free PNG to AVIF converter", "Change PNG to AVIF"]
+      "featureList": [
+        "Conversion to AVIF",
+        "Quality adjustment (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PNG to AVIF",
+        "PNG to AVIF conversion",
+        "Free PNG to AVIF converter",
+        "Change PNG to AVIF"
+      ]
     },
     "howTo": {
       "name": "How to convert PNG to AVIF",
@@ -182,78 +192,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs AVIF – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["PNG", "AVIF"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Lossy compression",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["All browsers", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Color depth",
+          "values": ["8/16-bit", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "png": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "png": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "png": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "png": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "png": "All browsers",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "png": "8/16-bit",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "png": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "png": false,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

@@ -33,11 +33,11 @@ async function UsersPage() {
   const users = await db.user.findMany();
 
   // Or fetch from external API
-  const posts = await fetch('https://api.example.com/posts').then((r) => r.json());
+  const posts = await fetch('https://api.example.com/posts').then(r => r.json());
 
   return (
     <ul>
-      {users.map((user) => (
+      {users.map(user => (
         <li key={user.id}>{user.name}</li>
       ))}
     </ul>
@@ -84,8 +84,8 @@ import { createPost } from '@/app/actions';
 export default function NewPost() {
   return (
     <form action={createPost}>
-      <input name="title" required />
-      <button type="submit">Create</button>
+      <input name='title' required />
+      <button type='submit'>Create</button>
     </form>
   );
 }
@@ -259,7 +259,7 @@ function ClientComponent() {
 
   useEffect(() => {
     fetch('/api/data')
-      .then((r) => r.json())
+      .then(r => r.json())
       .then(setData);
   }, []);
 

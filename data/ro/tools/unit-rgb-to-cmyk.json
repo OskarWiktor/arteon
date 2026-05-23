@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertiți RGB în CMYK și invers. Pentru pregătirea tipăririi.",
-      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+      "featureList": [
+        "Conversie bidirecțională în timp real",
+        "Toate convertoarele într-un singur loc",
+        "Copierea rezultatului în clipboard",
+        "Calcul local în browser"
+      ]
     },
     "howTo": {
       "name": "Cum să utilizați convertorul",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "RGB vs CMYK – comparație",
-      "featureLabel": "Proprietate",
-      "plans": [
+      "labelHeader": "Proprietate",
+      "cols": ["RGB", "CMYK"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "RGB"
+          "label": "Model",
+          "values": ["Aditiv (lumină)", "Substractiv (cerneală)"]
         },
         {
-          "id": "unit2",
-          "name": "CMYK",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Model",
-          "values": {
-            "unit1": "Aditiv (lumină)",
-            "unit2": "Substractiv (cerneală)"
-          }
+          "label": "Utilizare",
+          "values": ["Ecrane, web", "Tipărire, ambalare"]
         },
         {
-          "name": "Utilizare",
-          "values": {
-            "unit1": "Ecrane, web",
-            "unit2": "Tipărire, ambalare"
-          }
+          "label": "Gamut",
+          "values": ["Mai larg (mai multe culori)", "Mai îngust"]
         },
         {
-          "name": "Gamut",
-          "values": {
-            "unit1": "Mai larg (mai multe culori)",
-            "unit2": "Mai îngust"
-          }
+          "label": "Negru",
+          "values": ["R=0, G=0, B=0", "K=100%"]
         },
         {
-          "name": "Negru",
-          "values": {
-            "unit1": "R=0, G=0, B=0",
-            "unit2": "K=100%"
-          }
-        },
-        {
-          "name": "Alb",
-          "values": {
-            "unit1": "R=255, G=255, B=255",
-            "unit2": "Fără cerneală (hârtie)"
-          }
+          "label": "Alb",
+          "values": ["R=255, G=255, B=255", "Fără cerneală (hârtie)"]
         }
       ]
     },

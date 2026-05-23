@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "Farvepaletgenerator – 17 farveskemaer",
-      "alternateName": ["Farveskemagenerator", "Farvegenerator", "Farvematchingsværktøj", "Farveharmonigenerator"],
+      "alternateName": [
+        "Farveskemagenerator",
+        "Farvegenerator",
+        "Farvematchingsværktøj",
+        "Farveharmonigenerator"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
       "description": "Gratis farvepaletgenerator. Indtast én HEX-farve, og værktøjet genererer 17 skemaer: monokromatisk, tilstødende, komplementær, triadisk, splittet komplementær, pastel, mørk, tonal og minimalistisk. Hver farve kan kopieres med sin HEX-kode og HSL-værdi.",

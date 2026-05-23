@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Vertaa DPI:tä ja PPI:tä — tulostustarkkuus vs näyttötarkkuus.",
-      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+      "featureList": [
+        "Kaksisuuntainen reaaliaikainen muunnos",
+        "Kaikki muuntimet yhdessä paikassa",
+        "Kopioi tulos leikepöydälle",
+        "Paikallinen laskenta selaimessa"
+      ]
     },
     "howTo": {
       "name": "Näin käytät muunninta",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI vs PPI – vertailu",
-      "featureLabel": "Ominaisuus",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["DPI (dots per inch)", "PPI (pixels per inch)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "DPI (dots per inch)"
+          "label": "Koskee",
+          "values": ["Tulostimet", "Näytöt ja kuvat"]
         },
         {
-          "id": "unit2",
-          "name": "PPI (pixels per inch)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Koskee",
-          "values": {
-            "unit1": "Tulostimet",
-            "unit2": "Näytöt ja kuvat"
-          }
+          "label": "Mittaa",
+          "values": ["Fyysiset mustepisteet", "Digitaaliset pikselit"]
         },
         {
-          "name": "Mittaa",
-          "values": {
-            "unit1": "Fyysiset mustepisteet",
-            "unit2": "Digitaaliset pikselit"
-          }
+          "label": "Tyypilliset arvot",
+          "values": ["600–4800 DPI", "72–460 PPI"]
         },
         {
-          "name": "Tyypilliset arvot",
-          "values": {
-            "unit1": "600–4800 DPI",
-            "unit2": "72–460 PPI"
-          }
+          "label": "Tulostuslaatu",
+          "values": ["Korkeampi = tarkempi yksityiskohta", "300 PPI standardi"]
         },
         {
-          "name": "Tulostuslaatu",
-          "values": {
-            "unit1": "Korkeampi = tarkempi yksityiskohta",
-            "unit2": "300 PPI standardi"
-          }
-        },
-        {
-          "name": "Yleinen sekaannus",
-          "values": {
-            "unit1": "Käytetään kuvista (virheellisesti)",
-            "unit2": "Oikea termi kuville"
-          }
+          "label": "Yleinen sekaannus",
+          "values": ["Käytetään kuvista (virheellisesti)", "Oikea termi kuville"]
         }
       ]
     },

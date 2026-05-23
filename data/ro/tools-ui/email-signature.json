@@ -160,7 +160,7 @@
     "helper": "Previzualizare tehnică, compatibilă cu Gmail, Outlook și majoritatea clienților de e-mail.",
     "copySuccess": "Copiat – lipiți în Gmail",
     "copyError": "Eroare la copiere",
-    "copyButton": "Copiază semnătura (Gmail / Outlook)",
+    "ButtonCopy": "Copiază semnătura (Gmail / Outlook)",
     "copyRawButton": "Copiază codul HTML",
     "copyRawSuccess": "Cod HTML copiat",
     "downloadButton": "Descarcă în HTML",

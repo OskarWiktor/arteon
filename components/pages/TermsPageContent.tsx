@@ -1,12 +1,12 @@
-import HeroBanner from '@/components/sections/HeroBanner';
-import CTABanner from '@/components/sections/CTABanner';
-import Gap from '@/components/ui/Gap';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import Wrapper from '@/components/ui/Wrapper';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import CTABanner from '@/components/organisms/CTABanner';
+import Wrapper from '@/components/atoms/Wrapper';
 
 import type { Locale } from '@/types/locale';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { getTermsPageData } from '@/lib/i18n/pages/terms';
+import Divider from '../atoms/Divider';
+import SectionInfo from '../organisms/sections/SectionInfo';
 
 export default function TermsPageContent({ locale }: { locale: Locale }) {
   const data = getTermsPageData(locale);
@@ -16,12 +16,17 @@ export default function TermsPageContent({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <HeroBanner title={data.hero.title} description={data.hero.description} backgroundImage="/assets/arteon-logo-on-mockup.webp" overlay="black" />
+      <HeroBanner
+        title={data.hero.title}
+        description={data.hero.description}
+        backgroundImage='/assets/arteon-logo-on-mockup.webp'
+        overlay='black'
+      />
 
-      <Wrapper as="article" itemScope itemType="https://schema.org/WebPage">
-        <Gap size="sm" />
+      <Wrapper as='article' itemScope itemType='https://schema.org/WebPage'>
+        <Divider size='sm' />
 
-        <p className="mb-6 text-sm opacity-70">
+        <p className='mb-6 text-sm opacity-70'>
           Version: <strong>{data.version}</strong>
         </p>
 
@@ -30,20 +35,20 @@ export default function TermsPageContent({ locale }: { locale: Locale }) {
             <SectionInfo id={section.id} title={section.title}>
               <p>{section.content}</p>
             </SectionInfo>
-            {index < data.sections.length - 1 && <Gap variant="line" size="sm" />}
+            {index < data.sections.length - 1 && <Divider line size='sm' />}
           </div>
         ))}
 
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
       <CTABanner
         title={data.cta.title}
         description={data.cta.description}
         btnOne={data.cta.btnOne}
-        btnOneLink={config.toolsIndexHref}
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
-        overlay="black"
+        btnOneHref={config.toolsIndexHref}
+        backgroundImage='/assets/arteon-logo-on-mockup.webp'
+        overlay='black'
       />
     </>
   );

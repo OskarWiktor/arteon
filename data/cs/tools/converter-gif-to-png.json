@@ -29,7 +29,13 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
-      "featureList": ["Převod GIF na PNG", "Bezeztrátový výstup PNG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
+      "featureList": [
+        "Převod GIF na PNG",
+        "Bezeztrátový výstup PNG",
+        "Hromadný převod",
+        "Lokální zpracování v prohlížeči",
+        "Bez nahrávání souborů"
+      ]
     },
     "howTo": {
       "name": "Jak převést GIF na PNG",
@@ -165,78 +171,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs PNG – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["GIF", "PNG"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Ztrátová komprese",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Všechny prohlížeče", "Všechny prohlížeče"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["8-bit (256)", "8/16-bit"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "gif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "gif": "Všechny prohlížeče",
-            "png": "Všechny prohlížeče"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "gif": "8-bit (256)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkien ohjelmien kanssa. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
-      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Muunna AVIF JPG-muotoon", "AVIF:n muunto JPG-muotoon", "Ilmainen AVIF–JPG-muunnin"]
+      "featureList": [
+        "AVIF to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Muunna AVIF JPG-muotoon",
+        "AVIF:n muunto JPG-muotoon",
+        "Ilmainen AVIF–JPG-muunnin"
+      ]
     },
     "howTo": {
       "name": "AVIF to JPG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs JPG – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["AVIF", "JPG"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Häviöllinen pakkaus",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Häviötön pakkaus",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Läpinäkyvyys (alfakanava)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animaatiotuki",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Selaintuki",
+          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Kaikki selaimet"]
+        },
+        {
+          "label": "Värisyvyys",
+          "values": ["8/10/12-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Pieni tiedostokoko",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metatiedot (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Häviöllinen pakkaus",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Häviötön pakkaus",
-          "values": {
-            "avif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Läpinäkyvyys (alfakanava)",
-          "values": {
-            "avif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animaatiotuki",
-          "values": {
-            "avif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Selaintuki",
-          "values": {
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
-            "jpg": "Kaikki selaimet"
-          }
-        },
-        {
-          "name": "Värisyvyys",
-          "values": {
-            "avif": "8/10/12-bit, HDR",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Pieni tiedostokoko",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metatiedot (EXIF)",
-          "values": {
-            "avif": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

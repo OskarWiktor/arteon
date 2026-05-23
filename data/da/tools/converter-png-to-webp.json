@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "PNG til WebP-konverter",
-      "alternateName": ["Konvertér PNG til WEBP", "PNG til WEBP konvertering", "Gratis PNG til WEBP konverter"],
+      "alternateName": [
+        "Konvertér PNG til WEBP",
+        "PNG til WEBP konvertering",
+        "Gratis PNG til WEBP konverter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
-      "featureList": ["PNG til WEBP-konvertering", "WEBP-kvalitetskontrol", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
+      "featureList": [
+        "PNG til WEBP-konvertering",
+        "WEBP-kvalitetskontrol",
+        "Batchkonvertering",
+        "Lokal browserbehandling",
+        "Ingen filupload påkrævet"
+      ]
     },
     "howTo": {
       "name": "Sådan konverterer du PNG til WEBP",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs WebP – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["PNG", "WebP"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Tabsgivende komprimering",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Alle browsere", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Farvedybde",
+          "values": ["8/16-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "png": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "png": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "png": "Alle browsere",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Farvedybde",
-          "values": {
-            "png": "8/16-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

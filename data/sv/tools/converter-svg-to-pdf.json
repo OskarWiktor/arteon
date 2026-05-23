@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PDF – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["SVG", "PDF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Förlustrik komprimering",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Alla webbläsare", "Inbyggd PDF-visare"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "svg": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "svg": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "svg": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "svg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "svg": "Alla webbläsare",
-            "pdf": "Inbyggd PDF-visare"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "svg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

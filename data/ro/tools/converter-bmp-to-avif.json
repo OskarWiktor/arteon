@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere BMP necomprimate în AVIF ultracompact. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
-      "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie BMP în AVIF", "Convertor BMP în AVIF", "Convertor gratuit BMP în AVIF"]
+      "featureList": [
+        "Conversie în AVIF",
+        "Ajustare calitate (60-95%)",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie BMP în AVIF",
+        "Convertor BMP în AVIF",
+        "Convertor gratuit BMP în AVIF"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți BMP în AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs AVIF – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["BMP", "AVIF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Compresie cu pierderi",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Toate browserele", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["1/4/8/24/32-bit", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "bmp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "bmp": "Toate browserele",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

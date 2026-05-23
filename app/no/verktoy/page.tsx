@@ -1,10 +1,10 @@
-import HeroBanner from '@/components/sections/HeroBanner';
-import Button from '@/components/ui/buttons/Button';
-import Gap from '@/components/ui/Gap';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import FaqPanels from '@/components/ui/FaqPanels';
-import Wrapper from '@/components/ui/Wrapper';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import Divider from '@/components/atoms/Divider';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import FaqPanels from '@/components/molecules/FaqPanels';
+import Wrapper from '@/components/atoms/Wrapper';
 import Script from 'next/script';
 import {
   RiCropLine,
@@ -36,7 +36,9 @@ export const metadata = {
       'Gratis nettverktøy: 24 bildekonverterere (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
     url: toAbsoluteUrl('/no/verktoy'),
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
+    images: [
+      { url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 },
+    ],
   },
 };
 
@@ -67,7 +69,14 @@ const schema = {
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
-      { '@type': 'WebApplication', position: 2, name: 'Bilderedigerer', url: toAbsoluteUrl('/no/verktoy/bilderedigerer'), applicationCategory: 'MultimediaApplication', operatingSystem: 'Any' },
+      {
+        '@type': 'WebApplication',
+        position: 2,
+        name: 'Bilderedigerer',
+        url: toAbsoluteUrl('/no/verktoy/bilderedigerer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
       {
         '@type': 'WebApplication',
         position: 3,
@@ -145,7 +154,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 12,
         name: 'PNG til JPG-konverterer',
-        description: 'Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering.',
+        description:
+          'Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering.',
         url: toAbsoluteUrl('/no/verktoy/png-til-jpg-konverterer'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -190,7 +200,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 17,
         name: 'SVG til PNG-konverterer',
-        description: 'Konverter SVG-vektorgrafikk til PNG. Ideell for dokumenter og sosiale medier.',
+        description:
+          'Konverter SVG-vektorgrafikk til PNG. Ideell for dokumenter og sosiale medier.',
         url: toAbsoluteUrl('/no/verktoy/svg-til-png-konverterer'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -352,7 +363,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 35,
         name: 'JPG til AVIF-konverterer',
-        description: 'Konverter JPG-bilder til moderne AVIF. Opptil 50% bedre komprimering enn JPG.',
+        description:
+          'Konverter JPG-bilder til moderne AVIF. Opptil 50% bedre komprimering enn JPG.',
         url: toAbsoluteUrl('/no/verktoy/jpg-til-avif-konverterer'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -361,7 +373,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 36,
         name: 'PNG til AVIF-konverterer',
-        description: 'Konverter PNG-grafikk til AVIF med transparensstotte. Betydelig mindre filer.',
+        description:
+          'Konverter PNG-grafikk til AVIF med transparensstotte. Betydelig mindre filer.',
         url: toAbsoluteUrl('/no/verktoy/png-til-avif-konverterer'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -524,439 +537,507 @@ const schema = {
 };
 
 const faqItems = [
-  { question: 'Hva koster verktoyene?', answer: 'Ingenting. Alle verktoy er gratis, uten abonnement og uten skjulte gebyrer.' },
-  { question: 'Sendes filene mine til en server?', answer: 'Nei. Alle verktoy kjorer helt i nettleseren. Filene forlater aldri datamaskinen og lagres ikke noe sted.' },
-  { question: 'Trenger jeg en konto?', answer: 'Nei. Du kan bruke dem umiddelbart uten aa logge inn eller opprette en konto.' },
-  { question: 'Er det noen bruksgrense?', answer: 'Nei. Bruk uten begrensninger -- ingen daglig grense, ingen filgrense, ingen konverteringsgrense.' },
+  {
+    question: 'Hva koster verktoyene?',
+    answer: 'Ingenting. Alle verktoy er gratis, uten abonnement og uten skjulte gebyrer.',
+  },
+  {
+    question: 'Sendes filene mine til en server?',
+    answer:
+      'Nei. Alle verktoy kjorer helt i nettleseren. Filene forlater aldri datamaskinen og lagres ikke noe sted.',
+  },
+  {
+    question: 'Trenger jeg en konto?',
+    answer: 'Nei. Du kan bruke dem umiddelbart uten aa logge inn eller opprette en konto.',
+  },
+  {
+    question: 'Er det noen bruksgrense?',
+    answer:
+      'Nei. Bruk uten begrensninger -- ingen daglig grense, ingen filgrense, ingen konverteringsgrense.',
+  },
   {
     question: 'Hva er verktoyene til?',
     answer:
       'De hjelper med aa forberede materialer for nettsider, sosiale medier og trykk: optimalisere bilder, lage faviconer, sjekke tekstlengde, lage QR-koder, velge farger og sjekke lesbarheten.',
   },
-  { question: 'Fungerer verktoyene paa mobil?', answer: 'Ja, men noen verktoy (WebP-konverterer, favicon-generator) fungerer bedre paa desktop, da de behandler storre filer.' },
+  {
+    question: 'Fungerer verktoyene paa mobil?',
+    answer:
+      'Ja, men noen verktoy (WebP-konverterer, favicon-generator) fungerer bedre paa desktop, da de behandler storre filer.',
+  },
 ];
 
 export default function ToolsIndexPage() {
   return (
     <>
       <HeroBanner
-        title="Gratis verktoy"
-        description="24 bildformat-konverterere, bildeeditor, favicon-generator, tekstteller, fargeverktøy og QR-koder. Uten registrering, uten begrensninger."
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
-        overlay="black"
+        title='Gratis verktoy'
+        description='24 bildformat-konverterere, bildeeditor, favicon-generator, tekstteller, fargeverktøy og QR-koder. Uten registrering, uten begrensninger.'
+        backgroundImage='/assets/arteon-logo-on-mockup.webp'
+        overlay='black'
       />
       <Wrapper>
-        <Gap size="sm" />
+        <Divider size='sm' />
         <SectionSteps
-          title="Bilder og favicon"
-          description="Verktoy for forberedelse av bilder, grafikk og ikoner for nettsider og sosiale medier."
-          grid="three"
+          title='Bilder og favicon'
+          description='Verktoy for forberedelse av bilder, grafikk og ikoner for nettsider og sosiale medier.'
+          grid='three'
           items={[
             {
-              icon: <RiCropLine className="h-8 w-8" />,
-              title: 'Bildeeditor online',
-              topImageAlt: 'Bildeeditor online Arteon',
-              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/bilderedigerer-no.webp',
+              icon: <RiCropLine className='h-8 w-8' />,
+              title: 'Bildeeditor',
+              topImageAlt: 'Bildeeditor Arteon',
+              topImageSrc:
+                '/assets/tools/free-image-editor-crop-resize-and-convert/bilderedigerer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Forbered det perfekte bildet for sosiale medier eller nettstedet ditt. Velg et ferdig format eller angi egne pikselmål og last ned bildet som PNG, JPG eller WebP.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/bilderedigerer">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Forbered det perfekte bildet for sosiale medier eller nettstedet ditt. Velg et
+                    ferdig format eller angi egne pikselmål og last ned bildet som PNG, JPG eller
+                    WebP.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/bilderedigerer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiAppsLine className="h-8 w-8" />,
+              icon: <RiAppsLine className='h-8 w-8' />,
               title: 'Favicon- og ikongenerator',
               topImageAlt: 'Favicon-generator Arteon',
               topImageSrc: '/assets/tools/favicon-generator/gratis-favicon-generator-no.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Lag <strong>favicon.ico</strong> og PNG-ikoner 180x180, 192x192 og 512x512 fra ett enkelt bilde -- i samsvar med nettleser- og Lighthouse-krav.
+                    Lag <strong>favicon.ico</strong> og PNG-ikoner 180x180, 192x192 og 512x512 fra
+                    ett enkelt bilde -- i samsvar med nettleser- og Lighthouse-krav.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/gratis-favicon-generator">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/gratis-favicon-generator'>
                       Aapne verktoyet
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Tekst og SEO"
-          description="Verktoy for kontroll av tekstlengde, meta-tagger og forhaandsvisning av siden i sokeresultater."
-          grid="three"
+          title='Tekst og SEO'
+          description='Verktoy for kontroll av tekstlengde, meta-tagger og forhaandsvisning av siden i sokeresultater.'
+          grid='three'
           items={[
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
+              icon: <RiFileTextLine className='h-8 w-8' />,
               title: 'Meta-tittel- og beskrivelsessjekker',
               topImageAlt: 'Meta-tittel- og beskrivelsessjekker Arteon',
-              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-tittel-og-beskrivelse-sjekker-no.webp',
+              topImageSrc:
+                '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-tittel-og-beskrivelse-sjekker-no.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Sjekk antall tegn, antall ord og pikselbredde -- med Google-forhaandsvisning. Unngaa avkortede titler og beskrivelser i sokeresultatene.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/meta-tittel-og-beskrivelse-sjekker">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Sjekk antall tegn, antall ord og pikselbredde -- med Google-forhaandsvisning.
+                    Unngaa avkortede titler og beskrivelser i sokeresultatene.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/meta-tittel-og-beskrivelse-sjekker'>
                       Aapne verktoyet
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiArticleLine className="h-8 w-8" />,
+              icon: <RiArticleLine className='h-8 w-8' />,
               title: 'Ord- og tegnteller',
               topImageAlt: 'Ord- og tegnteller Arteon',
-              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp',
+              topImageSrc:
+                '/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Sjekk tekstlengden og vurder om den passer for en forside, tjenesteside, blogginnlegg eller produktbeskrivelse. Verktoyet teller ord, tegn, avsnitt og lesetid.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/ord-og-tegnteller">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Sjekk tekstlengden og vurder om den passer for en forside, tjenesteside,
+                    blogginnlegg eller produktbeskrivelse. Verktoyet teller ord, tegn, avsnitt og
+                    lesetid.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/ord-og-tegnteller'>
                       Aapne verktoyet
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
 
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
+              icon: <RiFileTextLine className='h-8 w-8' />,
               title: 'Lorem Ipsum-generator',
               topImageAlt: 'Lorem Ipsum-generator Arteon',
               topImageSrc: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-no.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Generer utfyllingstekst i 8 stiler og 9 modi. Lorem Ipsum, Hipster, Business, Bacon og mer. Kopier som tekst eller HTML.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/lorem-ipsum-generator">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Generer utfyllingstekst i 8 stiler og 9 modi. Lorem Ipsum, Hipster, Business,
+                    Bacon og mer. Kopier som tekst eller HTML.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/lorem-ipsum-generator'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
         <SectionSteps
-          title="E-post og kommunikasjon"
-          description="Verktoy for profesjonell e-postkommunikasjon og konsekvent merkevarebilde."
-          grid="three"
+          title='E-post og kommunikasjon'
+          description='Verktoy for profesjonell e-postkommunikasjon og konsekvent merkevarebilde.'
+          grid='three'
           items={[
             {
-              icon: <RiMailLine className="h-8 w-8" />,
+              icon: <RiMailLine className='h-8 w-8' />,
               title: 'Gratis HTML e-postsignatur-generator',
               topImageAlt: 'Gratis e-postsignatur-generator Arteon',
-              topImageSrc: '/assets/tools/free-html-email-signature-generator/gratis-e-postsignatur-generator-no.webp',
+              topImageSrc:
+                '/assets/tools/free-html-email-signature-generator/gratis-e-postsignatur-generator-no.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Lag en profesjonell e-postsignatur paa faa minutter. Skriv inn informasjonen din, velg farger og kopier den ferdige HTML-koden til Gmail, Outlook eller en annen e-postklient.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/gratis-e-postsignatur-generator">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Lag en profesjonell e-postsignatur paa faa minutter. Skriv inn informasjonen
+                    din, velg farger og kopier den ferdige HTML-koden til Gmail, Outlook eller en
+                    annen e-postklient.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/gratis-e-postsignatur-generator'>
                       Aapne verktoyet
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
         <SectionSteps
-          title="QR-kode"
-          description="QR-kode-generator for nettsider, visittkort, menyer og trykkmateriell."
-          grid="three"
+          title='QR-kode'
+          description='QR-kode-generator for nettsider, visittkort, menyer og trykkmateriell.'
+          grid='three'
           items={[
             {
-              icon: <RiQrCodeLine className="h-8 w-8" />,
+              icon: <RiQrCodeLine className='h-8 w-8' />,
               title: 'Gratis QR-kode-generator',
               topImageAlt: 'Gratis QR-kode-generator Arteon',
               topImageSrc: '/assets/tools/qr-code-generator/gratis-qr-kode-generator-no.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Lag en QR-kode for en nettside, vCard, restaurantmeny eller flygeblad. Eksporter til PNG og SVG -- uten innlogging, uten begrensninger.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/gratis-qr-kode-generator">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Lag en QR-kode for en nettside, vCard, restaurantmeny eller flygeblad. Eksporter
+                    til PNG og SVG -- uten innlogging, uten begrensninger.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/gratis-qr-kode-generator'>
                       Aapne verktoyet
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
         <SectionSteps
-          title="Farger og tilgjengelighet"
-          description="Verktoy for aa jobbe med farger, kontrast og WCAG-tilgjengelighet."
-          grid="three"
+          title='Farger og tilgjengelighet'
+          description='Verktoy for aa jobbe med farger, kontrast og WCAG-tilgjengelighet.'
+          grid='three'
           items={[
             {
-              icon: <RiContrast2Line className="h-8 w-8" />,
+              icon: <RiContrast2Line className='h-8 w-8' />,
               title: 'Fargekontrastsjekker',
               topImageAlt: 'Fargekontrastsjekker Arteon',
-              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/fargekontrastsjekker-no.webp',
+              topImageSrc:
+                '/assets/tools/color-contrast-and-readability-checker/fargekontrastsjekker-no.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Sjekk om tekst- og bakgrunnsfargene er lesbare. Skriv inn fargekoder, se kontrastforholdet i henhold til <strong>WCAG</strong> og bruk <strong>Match</strong>-funksjonen for
-                    automatisk korrigering.
+                    Sjekk om tekst- og bakgrunnsfargene er lesbare. Skriv inn fargekoder, se
+                    kontrastforholdet i henhold til <strong>WCAG</strong> og bruk{' '}
+                    <strong>Match</strong>-funksjonen for automatisk korrigering.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/fargekontrastsjekker">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/fargekontrastsjekker'>
                       Aapne verktoyet
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiPantoneLine className="h-8 w-8" />,
+              icon: <RiPantoneLine className='h-8 w-8' />,
               title: 'Fargeutrekker fra bilde',
               topImageAlt: 'Fargeutrekker fra bilde Arteon',
               topImageSrc: '/assets/tools/image-color-extractor/fargeutrekker-fra-bilde-no.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Last opp et foto eller en logo -- verktoyet trekker ut de dominerende fargene. Kopier HEX-koder med ett klikk og bruk dem hvor som helst.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/fargeutrekker-fra-bilde">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Last opp et foto eller en logo -- verktoyet trekker ut de dominerende fargene.
+                    Kopier HEX-koder med ett klikk og bruk dem hvor som helst.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/fargeutrekker-fra-bilde'>
                       Aapne verktoyet
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiPaletteLine className="h-8 w-8" />,
+              icon: <RiPaletteLine className='h-8 w-8' />,
               title: 'Fargepalettgenerator',
               topImageAlt: 'Fargepalettgenerator Arteon',
               topImageSrc: '/assets/tools/color-palette-generator/fargepalettgenerator-no.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Velg en basisfarge og lag 9 fargepaletter: monokromatisk, komplementaer, triadisk, pastell, mork og flere. Kopier HEX-koder med ett klikk.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/fargepalettgenerator">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Velg en basisfarge og lag 9 fargepaletter: monokromatisk, komplementaer,
+                    triadisk, pastell, mork og flere. Kopier HEX-koder med ett klikk.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/fargepalettgenerator'>
                       Aapne verktoyet
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Bildformat-konverterere"
-          description="12 online bildekonverterere - konverter mellom JPG, PNG, WebP, SVG, BMP og GIF. Konvertering i nettleseren, ingen filer sendes."
-          grid="three"
+          title='Bildformat-konverterere'
+          description='12 bildekonverterere - konverter mellom JPG, PNG, WebP, SVG, BMP og GIF. Konvertering i nettleseren, ingen filer sendes.'
+          grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JPG til WebP-konverterer',
               topImageAlt: 'JPG til WebP-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/jpg-til-webp-konverterer">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/jpg-til-webp-konverterer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'PNG til JPG-konverterer',
               topImageAlt: 'PNG til JPG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/png-til-jpg-konverterer">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/png-til-jpg-konverterer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'WebP til JPG-konverterer',
               topImageAlt: 'WebP til JPG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Konverter WebP-filer til universelt kompatibelt JPG.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/webp-til-jpg-konverterer">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/webp-til-jpg-konverterer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'PNG til WebP-konverterer',
               topImageAlt: 'PNG til WebP-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Konverter PNG-grafikk til WebP. Mindre filer med bevart gjennomsiktighet.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/png-til-webp-konverterer">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/png-til-webp-konverterer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JPG til PNG-konverterer',
               topImageAlt: 'JPG til PNG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/jpg-til-png-konverterer">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/jpg-til-png-konverterer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'WebP til PNG-konverterer',
               topImageAlt: 'WebP til PNG-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Konverter WebP-bilder til tapsfritt PNG. Lokal konvertering.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/webp-til-png-konverterer">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/webp-til-png-konverterer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Datakonverterere"
-          description="Online dataformatkonverterere — konverter mellom CSV, JSON, XML, YAML, Markdown og HTML. Behandling i nettleseren."
-          grid="three"
+          title='Datakonverterere'
+          description='Online dataformatkonverterere — konverter mellom CSV, JSON, XML, YAML, Markdown og HTML. Behandling i nettleseren.'
+          grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'CSV til JSON',
               topImageAlt: 'CSV til JSON Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Konverter CSV til JSON-format. Automatisk separatordeteksjon og formatering.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/csv-til-json-konverterer">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Konverter CSV til JSON-format. Automatisk separatordeteksjon og formatering.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/csv-til-json-konverterer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JSON til CSV',
               topImageAlt: 'JSON til CSV Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Konverter JSON-data til CSV-format. Behandling i nettleseren.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/json-til-csv-konverterer">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/json-til-csv-konverterer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'XML til JSON',
               topImageAlt: 'XML til JSON Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Konverter XML-data til JSON. Nettleserbasert konvertering med validering.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/xml-til-json-konverterer">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/xml-til-json-konverterer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JSON til XML',
               topImageAlt: 'JSON til XML Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Konverter JSON-data til gyldig XML. Konvertering med formatering.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/json-til-xml-konverterer">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/json-til-xml-konverterer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'YAML til JSON',
               topImageAlt: 'YAML til JSON Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Konverter YAML-konfigurasjon til JSON. Validering og formatering.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/yaml-til-json-konverterer">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/yaml-til-json-konverterer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JSON til YAML',
               topImageAlt: 'JSON til YAML Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Konverter JSON-data til lesbar YAML. Behandling i nettleseren.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/no/verktoy/json-til-yaml-konverterer">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/no/verktoy/json-til-yaml-konverterer'>
                       Åpne verktøy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -964,40 +1045,56 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
-        <Gap variant="line" />
-        <SectionInfo title="Hva er Arteons verktoy?">
-          <p className="mb-4">
-            10 gratis verktoy for forberedelse av materialer for nettsider, sosiale medier og trykk -- WebP-konverterer, favicon-generator, tekstteller, fargeutrekker, palettgenerator og QR-kode.
+        <Divider line />
+        <SectionInfo title='Hva er Arteons verktoy?'>
+          <p className='mb-4'>
+            10 gratis verktoy for forberedelse av materialer for nettsider, sosiale medier og trykk
+            -- WebP-konverterer, favicon-generator, tekstteller, fargeutrekker, palettgenerator og
+            QR-kode.
           </p>
-          <p>Alle verktoy kjorer i nettleseren -- filer sendes aldri til en server. Bruk uten registrering og uten begrensninger.</p>
+          <p>
+            Alle verktoy kjorer i nettleseren -- filer sendes aldri til en server. Bruk uten
+            registrering og uten begrensninger.
+          </p>
         </SectionInfo>
-        <Gap variant="line" />
+        <Divider line />
         <SectionSteps
-          title="Hvorfor bruke Arteons verktoy?"
-          grid="two"
+          title='Hvorfor bruke Arteons verktoy?'
+          grid='two'
           items={[
             {
-              icon: <RiShieldCheckLine className="h-6 w-6" />,
+              icon: <RiShieldCheckLine className='h-6 w-6' />,
               title: 'Fullt personvern',
-              description: 'Alle verktoy behandler filer lokalt i nettleseren. Ingenting sendes til en server -- data forsvinner naar du lukker fanen.',
+              description:
+                'Alle verktoy behandler filer lokalt i nettleseren. Ingenting sendes til en server -- data forsvinner naar du lukker fanen.',
             },
             {
-              icon: <RiInfinityFill className="h-6 w-6" />,
+              icon: <RiInfinityFill className='h-6 w-6' />,
               title: 'Uten bruksgrense',
-              description: 'Bruk uten begrensninger -- ingen daglig grense, ingen filgrense, ingen konverteringsgrense. Saa mange ganger du trenger.',
+              description:
+                'Bruk uten begrensninger -- ingen daglig grense, ingen filgrense, ingen konverteringsgrense. Saa mange ganger du trenger.',
             },
-            { icon: <RiLockLine className="h-6 w-6" />, title: 'Uten registrering', description: 'Ingen konto nodvendig. Aapne verktoyet, bruk det, ferdig.' },
-            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Tilgjengelig paa norsk', description: 'Alle verktoy er tilgjengelige paa norsk -- grensesnitt, veiledninger og meldinger.' },
+            {
+              icon: <RiLockLine className='h-6 w-6' />,
+              title: 'Uten registrering',
+              description: 'Ingen konto nodvendig. Aapne verktoyet, bruk det, ferdig.',
+            },
+            {
+              icon: <RiGlobalLine className='h-6 w-6' />,
+              title: 'Tilgjengelig paa norsk',
+              description:
+                'Alle verktoy er tilgjengelige paa norsk -- grensesnitt, veiledninger og meldinger.',
+            },
           ]}
         />
 
-        <Gap variant="line" />
-        <FaqPanels items={faqItems} title="Ofte stilte sporsmaal om vaare verktoy" />
-        <Gap size="sm" />
+        <Divider line />
+        <FaqPanels items={faqItems} title='Ofte stilte sporsmaal om vaare verktoy' />
+        <Divider size='sm' />
       </Wrapper>
-      <Script id="ld-json-tools-no" type="application/ld+json" strategy="afterInteractive">
+      <Script id='ld-json-tools-no' type='application/ld+json' strategy='afterInteractive'>
         {JSON.stringify(schema)}
       </Script>
     </>

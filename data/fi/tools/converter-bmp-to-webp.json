@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna BMP-tiedostot kevyeen WebP-muotoon. Jopa 95% pienempi tiedostokoko. Ei asennusta, toimii kaikilla laitteilla. Ilmainen, yksityinen ja rajoittamaton.",
-      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Muunna BMP WEBP-muotoon", "BMP:n muunto WEBP-muotoon", "Ilmainen BMP–WEBP-muunnin"]
+      "featureList": [
+        "BMP to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Muunna BMP WEBP-muotoon",
+        "BMP:n muunto WEBP-muotoon",
+        "Ilmainen BMP–WEBP-muunnin"
+      ]
     },
     "howTo": {
       "name": "BMP to WebP",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs WebP – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["BMP", "WebP"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Häviöllinen pakkaus",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Häviötön pakkaus",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Läpinäkyvyys (alfakanava)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animaatiotuki",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Selaintuki",
+          "values": ["Kaikki selaimet", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Värisyvyys",
+          "values": ["1/4/8/24/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Pieni tiedostokoko",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metatiedot (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Häviöllinen pakkaus",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Häviötön pakkaus",
-          "values": {
-            "bmp": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Läpinäkyvyys (alfakanava)",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animaatiotuki",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Selaintuki",
-          "values": {
-            "bmp": "Kaikki selaimet",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Värisyvyys",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Pieni tiedostokoko",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metatiedot (EXIF)",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

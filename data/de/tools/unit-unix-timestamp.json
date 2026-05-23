@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Rechnen Sie Unix-Zeitstempel in lesbare Daten um und umgekehrt. Unverzichtbar für Entwickler und Log-Analyse.",
-      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+      "featureList": [
+        "Bidirektionale Echtzeit-Konvertierung",
+        "Alle Konverter an einem Ort",
+        "Ergebnis in die Zwischenablage kopieren",
+        "Lokale Berechnung im Browser"
+      ]
     },
     "howTo": {
       "name": "So verwenden Sie den Konverter Unix Timestamp na datę",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Unix-Zeitstempel vs ISO-Datum",
-      "featureLabel": "Eigenschaft",
-      "plans": [
+      "labelHeader": "Eigenschaft",
+      "cols": ["Unix-Zeitstempel", "ISO 8601 Datum"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Unix-Zeitstempel"
+          "label": "Format",
+          "values": ["1709251200", "2024-03-01T00:00:00Z"]
         },
         {
-          "id": "unit2",
-          "name": "ISO 8601 Datum",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Format",
-          "values": {
-            "unit1": "1709251200",
-            "unit2": "2024-03-01T00:00:00Z"
-          }
+          "label": "Lesbarkeit",
+          "values": ["Nur für Maschinen", "Für Menschen lesbar"]
         },
         {
-          "name": "Lesbarkeit",
-          "values": {
-            "unit1": "Nur für Maschinen",
-            "unit2": "Für Menschen lesbar"
-          }
+          "label": "Zeitzone",
+          "values": ["Immer UTC", "Enthält Zeitzone (Z, +02:00)"]
         },
         {
-          "name": "Zeitzone",
-          "values": {
-            "unit1": "Immer UTC",
-            "unit2": "Enthält Zeitzone (Z, +02:00)"
-          }
+          "label": "Vergleich",
+          "values": ["Einfach (größer = später)", "Erfordert Parsing"]
         },
         {
-          "name": "Vergleich",
-          "values": {
-            "unit1": "Einfach (größer = später)",
-            "unit2": "Erfordert Parsing"
-          }
-        },
-        {
-          "name": "Speicher",
-          "values": {
-            "unit1": "4–8 Bytes",
-            "unit2": "20+ Bytes"
-          }
+          "label": "Speicher",
+          "values": ["4–8 Bytes", "20+ Bytes"]
         }
       ]
     },

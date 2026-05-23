@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "EM to pixels converter",
-      "alternateName": ["CSS em to pixel calculator", "em unit converter", "Responsive design calculator"],
+      "alternateName": [
+        "CSS em to pixel calculator",
+        "em unit converter",
+        "Responsive design calculator"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert CSS em units to pixels and vice versa. Set your base font size and get instant pixel values for responsive web design.",
@@ -184,55 +188,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "em vs px vs rem",
-      "featureLabel": "Feature",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["em", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "em"
+          "label": "Reference",
+          "values": ["Parent font size", "Fixed pixel"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Reference",
-          "values": {
-            "unit1": "Parent font size",
-            "unit2": "Fixed pixel"
-          }
+          "label": "Compounds",
+          "values": ["Yes (nests)", "No"]
         },
         {
-          "name": "Compounds",
-          "values": {
-            "unit1": "Yes (nests)",
-            "unit2": "No"
-          }
+          "label": "Responsive",
+          "values": ["Yes", "No"]
         },
         {
-          "name": "Responsive",
-          "values": {
-            "unit1": "Yes",
-            "unit2": "No"
-          }
+          "label": "Accessibility",
+          "values": ["Respects user settings", "Fixed size"]
         },
         {
-          "name": "Accessibility",
-          "values": {
-            "unit1": "Respects user settings",
-            "unit2": "Fixed size"
-          }
-        },
-        {
-          "name": "Predictability",
-          "values": {
-            "unit1": "Context-dependent",
-            "unit2": "Always consistent"
-          }
+          "label": "Predictability",
+          "values": ["Context-dependent", "Always consistent"]
         }
       ]
     },

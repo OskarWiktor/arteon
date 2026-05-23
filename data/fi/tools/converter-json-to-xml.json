@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs XML – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["JSON", "XML"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Sisäkkäinen data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "xml",
-          "name": "XML",
-          "highlighted": true
+          "label": "Taulukkodata",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Skeemavalidointi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Ihmisen luettavissa",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standardi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Kompakti syntaksi",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Sisäkkäinen data",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Taulukkodata",
-          "values": {
-            "json": false,
-            "xml": false
-          }
-        },
-        {
-          "name": "Skeemavalidointi",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Ihmisen luettavissa",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "API-standardi",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Kompakti syntaksi",
-          "values": {
-            "json": true,
-            "xml": false
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

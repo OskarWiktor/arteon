@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Konverter mm til pixels (DPI) og omvendt. Nyttig til emballage og grafik. Ingen registrering krævet.",
-      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+      "featureList": [
+        "Tovejs-konvertering i realtid",
+        "Alle konvertere samlet ét sted",
+        "Kopier resultat til udklipsholder",
+        "Lokal beregning i browseren"
+      ]
     },
     "howTo": {
       "name": "Sådan bruger du konverteren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "mm til px ved forskellige DPI",
-      "featureLabel": "Egenskab",
-      "plans": [
+      "labelHeader": "Egenskab",
+      "cols": ["300 DPI", "600 DPI"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "300 DPI"
+          "label": "1 mm",
+          "values": ["11,81 px", "23,62 px"]
         },
         {
-          "id": "unit2",
-          "name": "600 DPI",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "1 mm",
-          "values": {
-            "unit1": "11,81 px",
-            "unit2": "23,62 px"
-          }
+          "label": "10 mm",
+          "values": ["118 px", "236 px"]
         },
         {
-          "name": "10 mm",
-          "values": {
-            "unit1": "118 px",
-            "unit2": "236 px"
-          }
+          "label": "85 mm",
+          "values": ["1.004 px", "2.008 px"]
         },
         {
-          "name": "85 mm",
-          "values": {
-            "unit1": "1.004 px",
-            "unit2": "2.008 px"
-          }
+          "label": "Anvendelse",
+          "values": ["Standardtryk", "Kunst / medicin"]
         },
         {
-          "name": "Anvendelse",
-          "values": {
-            "unit1": "Standardtryk",
-            "unit2": "Kunst / medicin"
-          }
-        },
-        {
-          "name": "Filstørrelse",
-          "values": {
-            "unit1": "Standard",
-            "unit2": "4× større"
-          }
+          "label": "Filstørrelse",
+          "values": ["Standard", "4× større"]
         }
       ]
     },

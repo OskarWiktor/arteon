@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire WebP in PDF?",
-      "html": "<p class=\"text-mid mb-4\">WebP e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in PDF puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file WebP nel formato PDF direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in PDF puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore gratuito trasforma i tuoi file WebP nel formato PDF direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "WebP to PDF conversion",
       "variant": "right"
@@ -128,71 +128,43 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs PDF – confronto dei formati",
-      "plans": [
+      "labelHeader": "Funzionalità",
+      "cols": ["WebP", "PDF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Compressione con perdita",
+          "values": ["✓", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Compressione senza perdita",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Trasparenza (canale alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Supporto animazione",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Supporto browser",
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Visualizzatore PDF integrato"
+          ]
+        },
+        {
+          "label": "Dimensione file compatta",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadati (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressione con perdita",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Compressione senza perdita",
-          "values": {
-            "webp": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Trasparenza (canale alfa)",
-          "values": {
-            "webp": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Supporto animazione",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Supporto browser",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "pdf": "Visualizzatore PDF integrato"
-          }
-        },
-        {
-          "name": "Dimensione file compatta",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadati (EXIF)",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funzionalità"
+      ]
     },
     {
       "type": "gap",

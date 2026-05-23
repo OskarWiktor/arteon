@@ -28,8 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert iPhone HEIC photos to lossless PNG. Full quality and transparency. Free browser-based tool - no signup, no file limits, complete privacy.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert HEIC to PNG", "HEIC to PNG conversion", "Free HEIC to PNG converter", "Change HEIC to PNG"]
+      "featureList": [
+        "HEIC to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert HEIC to PNG",
+        "HEIC to PNG conversion",
+        "Free HEIC to PNG converter",
+        "Change HEIC to PNG"
+      ]
     },
     "howTo": {
       "name": "HEIC to PNG",
@@ -174,78 +184,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs PNG – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["HEIC", "PNG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Lossy compression",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["Safari 13+ (macOS / iOS)", "All browsers"]
+        },
+        {
+          "label": "Color depth",
+          "values": ["8/10-bit, HDR", "8/16-bit"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "heic": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "heic": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "png": "All browsers"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

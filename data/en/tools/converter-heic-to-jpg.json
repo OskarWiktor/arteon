@@ -28,8 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert iPhone HEIC photos to universal JPG. No signup, no server uploads. Free browser-based tool - no signup, no file limits, complete privacy.",
-      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert HEIC to JPG", "HEIC to JPG conversion", "Free HEIC to JPG converter", "Change HEIC to JPG"]
+      "featureList": [
+        "HEIC to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert HEIC to JPG",
+        "HEIC to JPG conversion",
+        "Free HEIC to JPG converter",
+        "Change HEIC to JPG"
+      ]
     },
     "howTo": {
       "name": "HEIC to JPG",
@@ -174,78 +184,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs JPG – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["HEIC", "JPG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Lossy compression",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["Safari 13+ (macOS / iOS)", "All browsers"]
+        },
+        {
+          "label": "Color depth",
+          "values": ["8/10-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "jpg": "All browsers"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

@@ -1,10 +1,10 @@
-import HeroBanner from '@/components/sections/HeroBanner';
-import Button from '@/components/ui/buttons/Button';
-import Gap from '@/components/ui/Gap';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import FaqPanels from '@/components/ui/FaqPanels';
-import Wrapper from '@/components/ui/Wrapper';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import Divider from '@/components/atoms/Divider';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import FaqPanels from '@/components/molecules/FaqPanels';
+import Wrapper from '@/components/atoms/Wrapper';
 import Script from 'next/script';
 import {
   RiCropLine,
@@ -26,26 +26,28 @@ import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
-  title: 'Ingyenes online eszközök | Konverterek, SEO, színek, favicon',
+  title: 'Ingyenes eszközök | Konverterek, SEO, színek, favicon',
   description:
-    'Ingyenes online eszközök: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
+    'Ingyenes eszközök: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
   alternates: getToolsIndexAlternates('hu'),
   openGraph: {
-    title: 'Ingyenes online eszközök | Konverterek, SEO, színek, favicon',
+    title: 'Ingyenes eszközök | Konverterek, SEO, színek, favicon',
     description:
-      'Ingyenes online eszközök: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
+      'Ingyenes eszközök: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
     url: toAbsoluteUrl('/hu/eszkozok'),
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
+    images: [
+      { url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 },
+    ],
   },
 };
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Ingyenes online eszközök - képkonverterek, SEO, színek, favicon',
+  name: 'Ingyenes eszközök - képkonverterek, SEO, színek, favicon',
   description:
-    'Ingyenes online eszközök: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
+    'Ingyenes eszközök: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
   url: toAbsoluteUrl('/hu/eszkozok'),
   inLanguage: 'hu',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -62,8 +64,9 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 1,
-        name: 'JPG és PNG WebP konverter online',
-        description: 'Ingyenes online JPG és PNG WebP konverter. Csökkentse a fájlméretet akár 35%-kal látható minőségromlás nélkül. Regisztráció nélkül - a fájlok a böngészőben maradnak.',
+        name: 'JPG és PNG WebP konverter',
+        description:
+          'Ingyenes JPG és PNG WebP konverter. Csökkentse a fájlméretet akár 35%-kal látható minőségromlás nélkül. Regisztráció nélkül - a fájlok a böngészőben maradnak.',
         url: toAbsoluteUrl('/hu/eszkozok/jpg-webp-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -72,7 +75,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 2,
         name: 'Online képszerkesztő',
-        description: 'Képek vágása és átméretezése közösségi médiához és weboldalakhoz. Előre beállított formátumok, egyéni pixelméretek és kerek avatar támogatás.',
+        description:
+          'Képek vágása és átméretezése közösségi médiához és weboldalakhoz. Előre beállított formátumok, egyéni pixelméretek és kerek avatar támogatás.',
         url: toAbsoluteUrl('/hu/eszkozok/kepszerkeszto'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -81,7 +85,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 3,
         name: 'Online favicon generátor',
-        description: 'Ingyenes online favicon generátor. Készítsen favicon.ico-t és PNG ikonokat (16×16-tól 512×512-ig) egyetlen képből - a böngészők és a Lighthouse követelményeinek megfelelően.',
+        description:
+          'Ingyenes favicon generátor. Készítsen favicon.ico-t és PNG ikonokat (16×16-tól 512×512-ig) egyetlen képből - a böngészők és a Lighthouse követelményeinek megfelelően.',
         url: toAbsoluteUrl('/hu/eszkozok/ingyenes-favicon-generator'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -90,7 +95,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 4,
         name: 'Meta cím és leírás ellenőrző',
-        description: 'Meta cím és leírás hossz-ellenőrző Google előnézettel. Megmutatja a karakterszámot és a pixelszélességet, hogy elkerülje a csonkolt címeket és leírásokat.',
+        description:
+          'Meta cím és leírás hossz-ellenőrző Google előnézettel. Megmutatja a karakterszámot és a pixelszélességet, hogy elkerülje a csonkolt címeket és leírásokat.',
         url: toAbsoluteUrl('/hu/eszkozok/meta-cim-es-leiras-ellenorzo'),
         applicationCategory: 'DeveloperApplication',
         operatingSystem: 'Any',
@@ -99,7 +105,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 5,
         name: 'HTML e-mail aláírás generátor',
-        description: 'Ingyenes HTML e-mail aláírás generátor. Adja meg az elérhetőségeket, a CTA linket és a közösségi média profilokat, majd másolja a kész HTML kódot a Gmailbe vagy az Outlookba.',
+        description:
+          'Ingyenes HTML e-mail aláírás generátor. Adja meg az elérhetőségeket, a CTA linket és a közösségi média profilokat, majd másolja a kész HTML kódot a Gmailbe vagy az Outlookba.',
         url: toAbsoluteUrl('/hu/eszkozok/ingyenes-email-alairas-generator'),
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Any',
@@ -108,7 +115,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 6,
         name: 'Színkontraszt ellenőrző',
-        description: 'Ellenőrizze a szöveg és a háttérszínek kontrasztját és olvashatóságát a WCAG szerint. Kiszámítja a kontrasztarányt és segít az automatikus színbeállításban.',
+        description:
+          'Ellenőrizze a szöveg és a háttérszínek kontrasztját és olvashatóságát a WCAG szerint. Kiszámítja a kontrasztarányt és segít az automatikus színbeállításban.',
         url: toAbsoluteUrl('/hu/eszkozok/szinkontraszt-ellenorzo'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -116,8 +124,9 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 7,
-        name: 'Színkinyerő képből online',
-        description: 'Ingyenes online színkinyerő. Töltsön fel egy fényképet vagy logót, és kapjon egy palettát legfeljebb 12 domináns színnel (HEX és RGB).',
+        name: 'Színkinyerő képből',
+        description:
+          'Ingyenes színkinyerő. Töltsön fel egy fényképet vagy logót, és kapjon egy palettát legfeljebb 12 domináns színnel (HEX és RGB).',
         url: toAbsoluteUrl('/hu/eszkozok/szinkinyero-kepbol'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -125,8 +134,9 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 8,
-        name: 'Színpaletta generátor online',
-        description: 'Generáljon színpalettákat egyetlen alapszínből. Monokromatikus, triádikus, analóg, komplementer sémák, valamint pasztell, sötét és minimalista variánsok.',
+        name: 'Színpaletta generátor',
+        description:
+          'Generáljon színpalettákat egyetlen alapszínből. Monokromatikus, triádikus, analóg, komplementer sémák, valamint pasztell, sötét és minimalista variánsok.',
         url: toAbsoluteUrl('/hu/eszkozok/szinpaletta-generator'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -134,8 +144,9 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 9,
-        name: 'Szó- és karakterszámláló online',
-        description: 'Ingyenes szó- és karakterszámláló szöveghossz-értékeléssel. Ellenőrizze, hogy a szöveg hossza megfelel-e a kezdőlap, szolgáltatásoldal, blogbejegyzés vagy termékleírás számára.',
+        name: 'Szó- és karakterszámláló',
+        description:
+          'Ingyenes szó- és karakterszámláló szöveghossz-értékeléssel. Ellenőrizze, hogy a szöveg hossza megfelel-e a kezdőlap, szolgáltatásoldal, blogbejegyzés vagy termékleírás számára.',
         url: toAbsoluteUrl('/hu/eszkozok/szo-es-karakterszamlalo'),
         applicationCategory: 'DeveloperApplication',
         operatingSystem: 'Any',
@@ -143,9 +154,9 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 10,
-        name: 'QR-kód generátor online',
+        name: 'QR-kód generátor',
         description:
-          'Ingyenes online QR-kód generátor. Hozzon létre QR-kódokat weboldalakhoz, vCard-okhoz, étlapokhoz vagy szórólapokhoz. Export PNG és SVG formátumban, regisztráció és korlátozás nélkül.',
+          'Ingyenes QR-kód generátor. Hozzon létre QR-kódokat weboldalakhoz, vCard-okhoz, étlapokhoz vagy szórólapokhoz. Export PNG és SVG formátumban, regisztráció és korlátozás nélkül.',
         url: toAbsoluteUrl('/hu/eszkozok/ingyenes-qr-kod-generator'),
         applicationCategory: 'UtilityApplication',
         operatingSystem: 'Any',
@@ -163,7 +174,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 12,
         name: 'PNG JPG konverter',
-        description: 'PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül.',
+        description:
+          'PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül.',
         url: toAbsoluteUrl('/hu/eszkozok/prevodnik-png-na-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -181,7 +193,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 14,
         name: 'PNG WebP konverter',
-        description: 'PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.',
+        description:
+          'PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.',
         url: toAbsoluteUrl('/hu/eszkozok/png-webp-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -190,7 +203,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 15,
         name: 'JPG PNG konverter',
-        description: 'JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.',
+        description:
+          'JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.',
         url: toAbsoluteUrl('/hu/eszkozok/jpg-png-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -208,7 +222,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 17,
         name: 'SVG PNG konverter',
-        description: 'SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.',
+        description:
+          'SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.',
         url: toAbsoluteUrl('/hu/eszkozok/svg-png-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -217,7 +232,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 18,
         name: 'SVG JPG konverter',
-        description: 'SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás.',
+        description:
+          'SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás.',
         url: toAbsoluteUrl('/hu/eszkozok/svg-jpg-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -235,7 +251,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 20,
         name: 'BMP PNG konverter',
-        description: 'BMP képek konvertálása veszteségmentes PNG-re. Minőség megőrzése, méret csökkentése.',
+        description:
+          'BMP képek konvertálása veszteségmentes PNG-re. Minőség megőrzése, méret csökkentése.',
         url: toAbsoluteUrl('/hu/eszkozok/bmp-png-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -244,7 +261,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 21,
         name: 'GIF PNG konverter',
-        description: 'Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.',
+        description:
+          'Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.',
         url: toAbsoluteUrl('/hu/eszkozok/gif-png-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -370,7 +388,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 35,
         name: 'JPG AVIF konverter',
-        description: 'JPG fotok konvertalasa modern AVIF formatumra. Akar 50%-kal jobb tomoritest mint JPG.',
+        description:
+          'JPG fotok konvertalasa modern AVIF formatumra. Akar 50%-kal jobb tomoritest mint JPG.',
         url: toAbsoluteUrl('/hu/eszkozok/jpg-avif-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -379,7 +398,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 36,
         name: 'PNG AVIF konverter',
-        description: 'PNG grafika konvertalasa AVIF-re atlatszosag megtartasaval. Jelentosen kisebb fajlok.',
+        description:
+          'PNG grafika konvertalasa AVIF-re atlatszosag megtartasaval. Jelentosen kisebb fajlok.',
         url: toAbsoluteUrl('/hu/eszkozok/png-avif-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -442,7 +462,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 43,
         name: 'JPG GIF konverter',
-        description: 'JPG fotok konvertalasa GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.',
+        description:
+          'JPG fotok konvertalasa GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.',
         url: toAbsoluteUrl('/hu/eszkozok/jpg-gif-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -487,7 +508,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 48,
         name: 'JPG TIFF konverter',
-        description: 'JPG fotok konvertalasa veszteségmentes TIFF-re. Nyomtatashoz es archivalashoz.',
+        description:
+          'JPG fotok konvertalasa veszteségmentes TIFF-re. Nyomtatashoz es archivalashoz.',
         url: toAbsoluteUrl('/hu/eszkozok/jpg-tiff-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -505,7 +527,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 50,
         name: 'WebP TIFF konverter',
-        description: 'WebP kepek konvertalasa professzionalis TIFF-re nyomtatashoz es archivalashoz.',
+        description:
+          'WebP kepek konvertalasa professzionalis TIFF-re nyomtatashoz es archivalashoz.',
         url: toAbsoluteUrl('/hu/eszkozok/webp-tiff-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -542,133 +565,162 @@ const schema = {
 };
 
 const faqItems = [
-  { question: 'Mennyibe kerülnek az eszközök?', answer: 'Semmibe. Minden eszköz ingyenes, előfizetés és rejtett díjak nélkül.' },
+  {
+    question: 'Mennyibe kerülnek az eszközök?',
+    answer: 'Semmibe. Minden eszköz ingyenes, előfizetés és rejtett díjak nélkül.',
+  },
   {
     question: 'A fájljaim elküldésre kerülnek egy szerverre?',
-    answer: 'Nem. Minden eszköz teljes egészében a böngészőjében fut. A fájlok soha nem hagyják el a számítógépét, és sehol sem kerülnek tárolásra.',
+    answer:
+      'Nem. Minden eszköz teljes egészében a böngészőjében fut. A fájlok soha nem hagyják el a számítógépét, és sehol sem kerülnek tárolásra.',
   },
-  { question: 'Szükségem van fiókra?', answer: 'Nem. Azonnal használhatja az eszközöket bejelentkezés vagy fiók létrehozása nélkül.' },
-  { question: 'Van használati korlát?', answer: 'Nincs. Használja korlátozás nélkül - nincs napi limit, nincs fájllimit, nincs konverziós limit.' },
+  {
+    question: 'Szükségem van fiókra?',
+    answer: 'Nem. Azonnal használhatja az eszközöket bejelentkezés vagy fiók létrehozása nélkül.',
+  },
+  {
+    question: 'Van használati korlát?',
+    answer:
+      'Nincs. Használja korlátozás nélkül - nincs napi limit, nincs fájllimit, nincs konverziós limit.',
+  },
   {
     question: 'Mire valók ezek az eszközök?',
     answer:
       'Segítenek anyagok előkészítésében weboldalakhoz, közösségi médiához és nyomtatáshoz: képek optimalizálása, faviconok készítése, szöveghossz ellenőrzése, QR-kódok generálása, színek kiválasztása és olvashatóságuk ellenőrzése.',
   },
-  { question: 'Működnek az eszközök mobilon?', answer: 'Igen, de néhány eszköz (WebP konverter, favicon generátor) jobban működik asztali gépen a nagyobb fájlok feldolgozása miatt.' },
+  {
+    question: 'Működnek az eszközök mobilon?',
+    answer:
+      'Igen, de néhány eszköz (WebP konverter, favicon generátor) jobban működik asztali gépen a nagyobb fájlok feldolgozása miatt.',
+  },
 ];
 
 export default function ToolsIndexPage() {
   return (
     <>
       <HeroBanner
-        title="Ingyenes online eszközök"
-        description="12 képformátum konverter, képszerkesztő, favicon-generátor, szövegszámláló, színeszközök és QR-kódok. Regisztráció nélkül, korlátok nélkül."
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
-        overlay="black"
+        title='Ingyenes eszközök'
+        description='12 képformátum konverter, képszerkesztő, favicon-generátor, szövegszámláló, színeszközök és QR-kódok. Regisztráció nélkül, korlátok nélkül.'
+        backgroundImage='/assets/arteon-logo-on-mockup.webp'
+        overlay='black'
       />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Képek és faviconok"
-          description="Eszközök fényképek, grafikák és ikonok előkészítéséhez weboldalakhoz és közösségi médiához."
-          grid="three"
+          title='Képek és faviconok'
+          description='Eszközök fényképek, grafikák és ikonok előkészítéséhez weboldalakhoz és közösségi médiához.'
+          grid='three'
           items={[
             {
-              icon: <RiCropLine className="h-8 w-8" />,
+              icon: <RiCropLine className='h-8 w-8' />,
               title: 'Online képszerkesztő',
               topImageAlt: 'Online képszerkesztő Arteon',
-              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/kepszerkeszto-hu.webp',
+              topImageSrc:
+                '/assets/tools/free-image-editor-crop-resize-and-convert/kepszerkeszto-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Készítse el a tökéletes vágást közösségi médiához vagy weboldalához. Válasszon kész formátumot vagy adjon meg egyéni pixelméreteket, és töltse le a képet PNG, JPG vagy WebP
-                    formátumban.
+                    Készítse el a tökéletes vágást közösségi médiához vagy weboldalához. Válasszon
+                    kész formátumot vagy adjon meg egyéni pixelméreteket, és töltse le a képet PNG,
+                    JPG vagy WebP formátumban.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/kepszerkeszto">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/kepszerkeszto'>
                       Megnyitás
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiAppsLine className="h-8 w-8" />,
+              icon: <RiAppsLine className='h-8 w-8' />,
               title: 'Favicon és ikon generátor',
               topImageAlt: 'Favicon generátor Arteon',
               topImageSrc: '/assets/tools/favicon-generator/ingyenes-favicon-generator-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Generáljon <strong>favicon.ico</strong>-t és PNG ikonokat 180x180, 192x192 és 512x512 méretben egyetlen képből - a böngészők és a Lighthouse követelményeinek megfelelően.
+                    Generáljon <strong>favicon.ico</strong>-t és PNG ikonokat 180x180, 192x192 és
+                    512x512 méretben egyetlen képből - a böngészők és a Lighthouse követelményeinek
+                    megfelelően.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/ingyenes-favicon-generator">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/ingyenes-favicon-generator'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Szöveg és SEO"
-          description="Eszközök a szöveghossz, a meta-címkék ellenőrzéséhez és az oldal keresési eredményekben való előnézetéhez."
-          grid="three"
+          title='Szöveg és SEO'
+          description='Eszközök a szöveghossz, a meta-címkék ellenőrzéséhez és az oldal keresési eredményekben való előnézetéhez.'
+          grid='three'
           items={[
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
+              icon: <RiFileTextLine className='h-8 w-8' />,
               title: 'Meta cím és leírás ellenőrző',
               topImageAlt: 'Meta cím és leírás ellenőrző Arteon',
-              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-cim-es-leiras-ellenorzo-hu.webp',
+              topImageSrc:
+                '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-cim-es-leiras-ellenorzo-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Ellenőrizze a karakterszámot, szószámot és pixelszélességet - Google előnézettel. Kerülje el a csonkolt címeket és leírásokat a keresési eredményekben.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/meta-cim-es-leiras-ellenorzo">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Ellenőrizze a karakterszámot, szószámot és pixelszélességet - Google
+                    előnézettel. Kerülje el a csonkolt címeket és leírásokat a keresési
+                    eredményekben.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/meta-cim-es-leiras-ellenorzo'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiArticleLine className="h-8 w-8" />,
+              icon: <RiArticleLine className='h-8 w-8' />,
               title: 'Szó- és karakterszámláló',
               topImageAlt: 'Szó- és karakterszámláló Arteon',
-              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp',
+              topImageSrc:
+                '/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Ellenőrizze a szöveghosszt és értékelje, hogy megfelel-e egy kezdőlap, szolgáltatásoldal, blogbejegyzés vagy termékleírás számára. Az eszköz szavakat, karaktereket, bekezdéseket és
-                    olvasási időt számol.
+                    Ellenőrizze a szöveghosszt és értékelje, hogy megfelel-e egy kezdőlap,
+                    szolgáltatásoldal, blogbejegyzés vagy termékleírás számára. Az eszköz szavakat,
+                    karaktereket, bekezdéseket és olvasási időt számol.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/szo-es-karakterszamlalo">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/szo-es-karakterszamlalo'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
 
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
+              icon: <RiFileTextLine className='h-8 w-8' />,
               title: 'Lorem Ipsum generátor',
               topImageAlt: 'Lorem Ipsum generátor Arteon',
               topImageSrc: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Generáljon helykitöltő szöveget 8 stílusban és 9 módban. Lorem Ipsum, Hipster, Business, Bacon és még sok más. Másolás szövegként vagy HTML-ként.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/lorem-ipsum-generator">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Generáljon helykitöltő szöveget 8 stílusban és 9 módban. Lorem Ipsum, Hipster,
+                    Business, Bacon és még sok más. Másolás szövegként vagy HTML-ként.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/lorem-ipsum-generator'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -676,25 +728,30 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="E-mail és kommunikáció"
-          description="Eszközök a professzionális e-mail kommunikációhoz és az egységes márkaarculathoz."
-          grid="three"
+          title='E-mail és kommunikáció'
+          description='Eszközök a professzionális e-mail kommunikációhoz és az egységes márkaarculathoz.'
+          grid='three'
           items={[
             {
-              icon: <RiMailLine className="h-8 w-8" />,
+              icon: <RiMailLine className='h-8 w-8' />,
               title: 'Ingyenes HTML e-mail aláírás generátor',
               topImageAlt: 'Ingyenes HTML e-mail aláírás generátor Arteon',
-              topImageSrc: '/assets/tools/free-html-email-signature-generator/ingyenes-email-alairas-generator-hu.webp',
+              topImageSrc:
+                '/assets/tools/free-html-email-signature-generator/ingyenes-email-alairas-generator-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Készítsen professzionális e-mail aláírást percek alatt. Adja meg adatait, válasszon színeket, és másolja a kész HTML kódot a Gmailbe, Outlookba vagy más e-mail kliensbe.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/ingyenes-email-alairas-generator">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Készítsen professzionális e-mail aláírást percek alatt. Adja meg adatait,
+                    válasszon színeket, és másolja a kész HTML kódot a Gmailbe, Outlookba vagy más
+                    e-mail kliensbe.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/ingyenes-email-alairas-generator'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -702,25 +759,28 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="QR-kódok"
-          description="QR-kód generátor weboldalakhoz, névjegykártyákhoz, étlapokhoz és nyomtatott anyagokhoz."
-          grid="three"
+          title='QR-kódok'
+          description='QR-kód generátor weboldalakhoz, névjegykártyákhoz, étlapokhoz és nyomtatott anyagokhoz.'
+          grid='three'
           items={[
             {
-              icon: <RiQrCodeLine className="h-8 w-8" />,
+              icon: <RiQrCodeLine className='h-8 w-8' />,
               title: 'Ingyenes QR-kód generátor',
               topImageAlt: 'Ingyenes QR-kód generátor Arteon',
               topImageSrc: '/assets/tools/qr-code-generator/ingyenes-qr-kod-generator-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Hozzon létre QR-kódot weboldalhoz, vCard-hoz, étterem étlapjához vagy szórólaphoz. Export PNG és SVG formátumban - regisztráció és korlátozás nélkül.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/ingyenes-qr-kod-generator">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Hozzon létre QR-kódot weboldalhoz, vCard-hoz, étterem étlapjához vagy
+                    szórólaphoz. Export PNG és SVG formátumban - regisztráció és korlátozás nélkül.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/ingyenes-qr-kod-generator'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -728,60 +788,69 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Színek és akadálymentesítés"
-          description="Eszközök a színekkel, kontraszttal és WCAG akadálymentesítéssel való munkához."
-          grid="three"
+          title='Színek és akadálymentesítés'
+          description='Eszközök a színekkel, kontraszttal és WCAG akadálymentesítéssel való munkához.'
+          grid='three'
           items={[
             {
-              icon: <RiContrast2Line className="h-8 w-8" />,
+              icon: <RiContrast2Line className='h-8 w-8' />,
               title: 'Színkontraszt ellenőrző',
               topImageAlt: 'Színkontraszt ellenőrző Arteon',
-              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/szinkontraszt-ellenorzo-hu.webp',
+              topImageSrc:
+                '/assets/tools/color-contrast-and-readability-checker/szinkontraszt-ellenorzo-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Ellenőrizze, hogy a szöveg és a háttérszínek olvashatóak-e. Adja meg a színkódokat, tekintse meg a kontrasztarányt a <strong>WCAG</strong> szerint, és használja a{' '}
-                    <strong>Match</strong> funkciót az automatikus korrekcióhoz.
+                    Ellenőrizze, hogy a szöveg és a háttérszínek olvashatóak-e. Adja meg a
+                    színkódokat, tekintse meg a kontrasztarányt a <strong>WCAG</strong> szerint, és
+                    használja a <strong>Match</strong> funkciót az automatikus korrekcióhoz.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/szinkontraszt-ellenorzo">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/szinkontraszt-ellenorzo'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiPantoneLine className="h-8 w-8" />,
+              icon: <RiPantoneLine className='h-8 w-8' />,
               title: 'Színkinyerő képből',
               topImageAlt: 'Színkinyerő képből Arteon',
               topImageSrc: '/assets/tools/image-color-extractor/szinkinyero-kepbol-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Töltsön fel egy fényképet vagy logót - az eszköz kinyeri a domináns színeket. Másolja a HEX kódokat egyetlen kattintással és használja őket bárhol.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/szinkinyero-kepbol">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Töltsön fel egy fényképet vagy logót - az eszköz kinyeri a domináns színeket.
+                    Másolja a HEX kódokat egyetlen kattintással és használja őket bárhol.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/szinkinyero-kepbol'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiPaletteLine className="h-8 w-8" />,
+              icon: <RiPaletteLine className='h-8 w-8' />,
               title: 'Színpaletta generátor',
               topImageAlt: 'Színpaletta generátor Arteon',
               topImageSrc: '/assets/tools/color-palette-generator/szinpaletta-generator-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Válasszon egy alapszínt és generáljon 9 színpalettát: monokromatikus, komplementer, triádikus, pasztell, sötét és több. Másolja a HEX kódokat egyetlen kattintással.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/szinpaletta-generator">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Válasszon egy alapszínt és generáljon 9 színpalettát: monokromatikus,
+                    komplementer, triádikus, pasztell, sötét és több. Másolja a HEX kódokat egyetlen
+                    kattintással.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/szinpaletta-generator'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -789,210 +858,222 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Képformátum konverterek"
-          description="12 online képkonverter - váltson formátumot JPG, PNG, WebP, SVG, BMP és GIF között. Konverzió a böngészőben, fájlok feltöltése nélkül."
-          grid="three"
+          title='Képformátum konverterek'
+          description='12 képkonverter - váltson formátumot JPG, PNG, WebP, SVG, BMP és GIF között. Konverzió a böngészőben, fájlok feltöltése nélkül.'
+          grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JPG WebP konverter',
               topImageAlt: 'JPG WebP konverter Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>JPG fotók konvertálása könnyű WebP-re. Képméret csökkentése akár 35%-kal.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/jpg-webp-konverter">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/jpg-webp-konverter'>
                       Megnyitás
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'PNG JPG konverter',
               topImageAlt: 'PNG JPG konverter Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/png-jpg-konverter">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/png-jpg-konverter'>
                       Megnyitás
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'WebP JPG konverter',
               topImageAlt: 'WebP JPG konverter Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>WebP fájlok konvertálása univerzálisan kompatibilis JPG-re.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/webp-jpg-konverter">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/webp-jpg-konverter'>
                       Megnyitás
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'PNG WebP konverter',
               topImageAlt: 'PNG WebP konverter Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/png-webp-konverter">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/png-webp-konverter'>
                       Megnyitás
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JPG PNG konverter',
               topImageAlt: 'JPG PNG konverter Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/jpg-png-konverter">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/jpg-png-konverter'>
                       Megnyitás
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'WebP PNG konverter',
               topImageAlt: 'WebP PNG konverter Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/webp-png-konverter">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/webp-png-konverter'>
                       Megnyitás
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Adatkonverterek"
-          description="Online adatformátum-konverterek — konvertáljon CSV, JSON, XML, YAML, Markdown és HTML között. Feldolgozás a böngészőben."
-          grid="three"
+          title='Adatkonverterek'
+          description='Online adatformátum-konverterek — konvertáljon CSV, JSON, XML, YAML, Markdown és HTML között. Feldolgozás a böngészőben.'
+          grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'CSV JSON',
               topImageAlt: 'CSV JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>CSV konvertálása JSON formátumba. Automatikus elválasztó-felismerés és formázás.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/csv-json-konverter">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    CSV konvertálása JSON formátumba. Automatikus elválasztó-felismerés és formázás.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/csv-json-konverter'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JSON CSV',
               topImageAlt: 'JSON CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>JSON adatok konvertálása CSV formátumba. Feldolgozás a böngészőben.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/json-csv-konverter">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/json-csv-konverter'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'XML JSON',
               topImageAlt: 'XML JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>XML adatok konvertálása JSON formátumba. Böngészőalapú konverzió validálással.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/xml-json-konverter">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    XML adatok konvertálása JSON formátumba. Böngészőalapú konverzió validálással.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/xml-json-konverter'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JSON XML',
               topImageAlt: 'JSON XML Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>JSON adatok konvertálása érvényes XML formátumba. Formázás a böngészőben.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/json-xml-konverter">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/json-xml-konverter'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'YAML JSON',
               topImageAlt: 'YAML JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>YAML konfiguráció konvertálása JSON formátumba. Validálás és formázás.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/yaml-json-konverter">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/yaml-json-konverter'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JSON YAML',
               topImageAlt: 'JSON YAML Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>JSON adatok konvertálása olvasható YAML formátumba. Feldolgozás a böngészőben.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/json-yaml-konverter">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    JSON adatok konvertálása olvasható YAML formátumba. Feldolgozás a böngészőben.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/hu/eszkozok/json-yaml-konverter'>
                       Eszköz megnyitása
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -1000,55 +1081,62 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Mik azok az Arteon eszközök?">
-          <p className="mb-4">
-            Ingyenes online eszközök anyagok előkészítéséhez weboldalakhoz, közösségi médiához és nyomtatáshoz - WebP konverter, favicon generátor, szövegszámláló, színkinyerő, paletta generátor és
-            QR-kódok.
+        <SectionInfo title='Mik azok az Arteon eszközök?'>
+          <p className='mb-4'>
+            Ingyenes eszközök anyagok előkészítéséhez weboldalakhoz, közösségi médiához és
+            nyomtatáshoz - WebP konverter, favicon generátor, szövegszámláló, színkinyerő, paletta
+            generátor és QR-kódok.
           </p>
-          <p>Minden eszköz a böngészőjében fut - a fájlok soha nem kerülnek szerverre küldésre. Használja regisztráció és korlátozás nélkül.</p>
+          <p>
+            Minden eszköz a böngészőjében fut - a fájlok soha nem kerülnek szerverre küldésre.
+            Használja regisztráció és korlátozás nélkül.
+          </p>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionSteps
-          title="Miért használja az Arteon eszközöket?"
-          grid="two"
+          title='Miért használja az Arteon eszközöket?'
+          grid='two'
           items={[
             {
-              icon: <RiShieldCheckLine className="h-6 w-6" />,
+              icon: <RiShieldCheckLine className='h-6 w-6' />,
               title: 'Teljes adatvédelem',
-              description: 'Minden eszköz lokálisan dolgozza fel a fájlokat a böngészőjében. Semmi sem kerül szerverre - az adatok eltűnnek, amikor bezárja a lapot.',
+              description:
+                'Minden eszköz lokálisan dolgozza fel a fájlokat a böngészőjében. Semmi sem kerül szerverre - az adatok eltűnnek, amikor bezárja a lapot.',
             },
             {
-              icon: <RiInfinityFill className="h-6 w-6" />,
+              icon: <RiInfinityFill className='h-6 w-6' />,
               title: 'Nincs használati korlát',
-              description: 'Használja korlátozás nélkül - nincs napi limit, nincs fájllimit, nincs konverziós limit. Annyiszor, ahányszor szükséges.',
+              description:
+                'Használja korlátozás nélkül - nincs napi limit, nincs fájllimit, nincs konverziós limit. Annyiszor, ahányszor szükséges.',
             },
             {
-              icon: <RiLockLine className="h-6 w-6" />,
+              icon: <RiLockLine className='h-6 w-6' />,
               title: 'Regisztráció nélkül',
               description: 'Nincs szükség fiókra. Nyissa meg az eszközt, használja, és kész.',
             },
             {
-              icon: <RiGlobalLine className="h-6 w-6" />,
+              icon: <RiGlobalLine className='h-6 w-6' />,
               title: 'Magyarul elérhető',
-              description: 'Minden eszköz elérhető magyar nyelven - felület, útmutatók és üzenetek.',
+              description:
+                'Minden eszköz elérhető magyar nyelven - felület, útmutatók és üzenetek.',
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <FaqPanels items={faqItems} title="Gyakran ismételt kérdések eszközeinkről" />
+        <FaqPanels items={faqItems} title='Gyakran ismételt kérdések eszközeinkről' />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
-      <Script id="ld-json-tools-hu" type="application/ld+json" strategy="afterInteractive">
+      <Script id='ld-json-tools-hu' type='application/ld+json' strategy='afterInteractive'>
         {JSON.stringify(schema)}
       </Script>
     </>

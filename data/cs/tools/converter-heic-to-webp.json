@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
-      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Převést HEIC na WEBP", "Konverze HEIC do WEBP", "Převodník HEIC na WEBP zdarma"]
+      "featureList": [
+        "HEIC to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Převést HEIC na WEBP",
+        "Konverze HEIC do WEBP",
+        "Převodník HEIC na WEBP zdarma"
+      ]
     },
     "howTo": {
       "name": "HEIC to WebP",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs WebP – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["HEIC", "WebP"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Ztrátová komprese",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Safari 13+ (macOS / iOS)", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["8/10-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

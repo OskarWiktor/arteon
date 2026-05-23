@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta graficos vetoriais SVG para formato raster GIF. Ferramenta gratuita no navegador - sem registo, sem limites, privacidade total.",
-      "featureList": ["Conversão para GIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
-      "alternateName": ["Converter SVG para GIF", "Conversão de SVG para GIF", "Conversor SVG para GIF grátis"]
+      "featureList": [
+        "Conversão para GIF",
+        "Ajuste de qualidade (60-95%)",
+        "Conversão em lote",
+        "Processamento local no navegador"
+      ],
+      "alternateName": [
+        "Converter SVG para GIF",
+        "Conversão de SVG para GIF",
+        "Conversor SVG para GIF grátis"
+      ]
     },
     "howTo": {
       "name": "Como converter SVG para GIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs GIF – comparação de formatos",
-      "plans": [
+      "labelHeader": "Funcionalidade",
+      "cols": ["SVG", "GIF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Compressão com perda",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Compressão sem perda",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparência (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suporte a animação",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suporte em navegadores",
+          "values": ["Todos os navegadores", "Todos os navegadores"]
+        },
+        {
+          "label": "Profundidade de cor",
+          "values": ["N/A (vetor)", "8-bit (256)"]
+        },
+        {
+          "label": "Tamanho de ficheiro compacto",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadados (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressão com perda",
-          "values": {
-            "svg": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Compressão sem perda",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Transparência (canal alfa)",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Suporte a animação",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Suporte em navegadores",
-          "values": {
-            "svg": "Todos os navegadores",
-            "gif": "Todos os navegadores"
-          }
-        },
-        {
-          "name": "Profundidade de cor",
-          "values": {
-            "svg": "N/A (vetor)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Tamanho de ficheiro compacto",
-          "values": {
-            "svg": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadados (EXIF)",
-          "values": {
-            "svg": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funcionalidade"
+      ]
     },
     {
       "type": "gap",

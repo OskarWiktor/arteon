@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter TIFF-filer til tapsfri PNG. Bevar full kvalitet pa skanninger. Gratis nettleserverktøy - uten registrering, uten filbegrensning, full personvern.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Konverter TIFF til PNG", "TIFF til PNG konvertering", "Gratis TIFF til PNG konverterer"]
+      "featureList": [
+        "TIFF to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Konverter TIFF til PNG",
+        "TIFF til PNG konvertering",
+        "Gratis TIFF til PNG konverterer"
+      ]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PNG – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funksjon",
+      "cols": ["TIFF", "PNG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Komprimering med tap",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animasjonsstøtte",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Nettleserstøtte",
+          "values": ["Kun Safari", "Alle nettlesere"]
+        },
+        {
+          "label": "Fargedybde",
+          "values": ["8/16/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Komprimering uten tap",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Nettleserstøtte",
-          "values": {
-            "tiff": "Kun Safari",
-            "png": "Alle nettlesere"
-          }
-        },
-        {
-          "name": "Fargedybde",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "tiff": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",

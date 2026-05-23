@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter WebP-filer til AVIF. Enda bedre komprimering i et moderne format. All behandling skjer lokalt i nettleseren — filene forlater aldri enheten din.",
-      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
-      "alternateName": ["Konverter WEBP til AVIF", "WEBP til AVIF konvertering", "Gratis WEBP til AVIF konverterer"]
+      "featureList": [
+        "Konvertering til AVIF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal behandling i nettleseren"
+      ],
+      "alternateName": [
+        "Konverter WEBP til AVIF",
+        "WEBP til AVIF konvertering",
+        "Gratis WEBP til AVIF konverterer"
+      ]
     },
     "howTo": {
       "name": "Hvordan konvertere WebP til AVIF",
@@ -182,68 +191,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs AVIF – formatsammenligning",
-      "plans": [
+      "cols": ["WebP", "AVIF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Komprimering med tap",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
+          "label": "Nettleserstøtte",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
       ]
     },

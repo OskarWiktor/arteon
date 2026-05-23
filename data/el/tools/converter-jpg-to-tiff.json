@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε φωτογραφιες JPG σε TIFF χωρις απωλειες. Για εκτυπωση και αρχειοθετηση. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης - χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
-      "featureList": ["Μετατροπή σε TIFF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
-      "alternateName": ["Μετατροπή JPG σε TIFF", "Μετατροπέας JPG σε TIFF", "Δωρεάν μετατροπέας JPG σε TIFF"]
+      "featureList": [
+        "Μετατροπή σε TIFF",
+        "Ρύθμιση ποιότητας (60-95%)",
+        "Ομαδική μετατροπή",
+        "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"
+      ],
+      "alternateName": [
+        "Μετατροπή JPG σε TIFF",
+        "Μετατροπέας JPG σε TIFF",
+        "Δωρεάν μετατροπέας JPG σε TIFF"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε JPG σε TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs TIFF – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["JPG", "TIFF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": ["Όλοι οι περιηγητές", "Μόνο Safari"]
+        },
+        {
+          "label": "Βάθος χρώματος",
+          "values": ["8-bit (16.7M)", "8/16/32-bit"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "jpg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "jpg": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "jpg": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "jpg": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "jpg": "Όλοι οι περιηγητές",
-            "tiff": "Μόνο Safari"
-          }
-        },
-        {
-          "name": "Βάθος χρώματος",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "jpg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "jpg": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",

@@ -2,13 +2,13 @@
   "toolKey": "jsonToXml",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JSON na XML – dla KSeF, SOAP i ERP bez rejestracji",
+    "title": "Darmowy konwerter formatu JSON na XML bez limitu plików i rejestracji",
     "description": "Zamień dane JSON na poprawny XML z deklaracją i wcięciami. Przydatny przy integracji z KSeF, Comarch, SAP i SOAP API. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-json-na-xml"
   },
   "hero": {
-    "title": "Zamień JSON na XML – konwerter dla KSeF, SOAP i ERP",
+    "title": "Darmowy konwerter formatu JSON na XML – konwerter dla KSeF, SOAP i ERP",
     "description": "Comarch, KSeF lub SOAP API wymaga XML? Konwerter zamienia JSON na XML z deklaracją UTF-8 i wcięciami – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,10 +25,10 @@
   "schemas": {
     "software": {
       "name": "Konwerter JSON na XML - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana JSON na XML online", "Konwersja JSON do XML", "JSON to XML converter"],
+      "alternateName": ["Zamiana JSON na XML", "Konwersja JSON do XML", "JSON to XML converter"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
-      "description": "Darmowy konwerter JSON na XML online. Zamień dane JSON na XML w przeglądarce - dane nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter JSON na XML. Zamień dane JSON na XML w przeglądarce - dane nie są wysyłane na serwer.",
       "featureList": [
         "Konwersja obiektów i tablic JSON na elementy XML",
         "Generowanie deklaracji <?xml version=\"1.0\" encoding=\"UTF-8\"?>",
@@ -43,7 +43,7 @@
       ]
     },
     "howTo": {
-      "name": "Jak zamienić JSON na XML online",
+      "name": "Jak zamienić JSON na XML",
       "description": "Instrukcja konwersji danych JSON na format XML.",
       "steps": [
         {
@@ -175,64 +175,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs XML – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["JSON", "XML"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Dane zagnieżdżone",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "xml",
-          "name": "XML",
-          "highlighted": true
+          "label": "Dane tabelaryczne",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Walidacja schematu",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Czytelność dla człowieka",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Zwięzła składnia",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Dane zagnieżdżone",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Dane tabelaryczne",
-          "values": {
-            "json": false,
-            "xml": false
-          }
-        },
-        {
-          "name": "Walidacja schematu",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Czytelność dla człowieka",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Zwięzła składnia",
-          "values": {
-            "json": true,
-            "xml": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

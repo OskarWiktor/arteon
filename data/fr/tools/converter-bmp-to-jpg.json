@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Convertisseur BMP en JPG",
-      "alternateName": ["Convertir BMP en JPG", "Conversion BMP vers JPG", "Convertisseur BMP en JPG gratuit"],
+      "alternateName": [
+        "Convertir BMP en JPG",
+        "Conversion BMP vers JPG",
+        "Convertisseur BMP en JPG gratuit"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez vos fichiers BMP non compressés en JPG léger. Réduction massive de taille. Tout le traitement se fait dans votre navigateur - vos fichiers restent sur votre appareil.",
-      "featureList": ["Conversion BMP en JPG", "Contrôle de qualité JPG", "Conversion par lot", "Traitement local dans le navigateur", "Aucun envoi de fichier"]
+      "featureList": [
+        "Conversion BMP en JPG",
+        "Contrôle de qualité JPG",
+        "Conversion par lot",
+        "Traitement local dans le navigateur",
+        "Aucun envoi de fichier"
+      ]
     },
     "howTo": {
       "name": "Comment convertir BMP en JPG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs JPG – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["BMP", "JPG"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Compression avec perte",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Tous les navigateurs", "Tous les navigateurs"]
+        },
+        {
+          "label": "Profondeur de couleur",
+          "values": ["1/4/8/24/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "bmp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "bmp": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "bmp": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "bmp": "Tous les navigateurs",
-            "jpg": "Tous les navigateurs"
-          }
-        },
-        {
-          "name": "Profondeur de couleur",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

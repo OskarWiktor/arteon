@@ -25,7 +25,13 @@
   "schemas": {
     "software": {
       "name": "Générateur de favicon.ico pour sites web",
-      "alternateName": ["Créer un favicon gratuitement", "Générateur favicon.ico", "Générateur Apple Touch Icon", "Créer des icônes PWA", "Favicon à partir d'une image"],
+      "alternateName": [
+        "Créer un favicon gratuitement",
+        "Générateur favicon.ico",
+        "Générateur Apple Touch Icon",
+        "Créer des icônes PWA",
+        "Favicon à partir d'une image"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
       "description": "Générateur gratuit de favicon. Créez favicon.ico et des icônes PNG 16x16, 32x32, 180x180, 192x192 et 512x512 sans limites et sans envoyer de fichiers à un serveur. Le traitement se fait localement dans le navigateur.",

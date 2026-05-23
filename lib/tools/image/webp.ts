@@ -2,8 +2,16 @@ import { canvasToBlob } from '@/utils/canvasToBlob';
 import { loadImage } from '@/utils/loadImage';
 import { readFileAsDataUrl } from '@/utils/readFileAsDataUrl';
 
-import type { ConvertImageFileToWebpErrorMessages, ConvertImageFileToWebpSmartOptions, ConvertImageFileToWebpSmartResult } from '@/types/tools/image';
-export type { ConvertImageFileToWebpErrorMessages, ConvertImageFileToWebpSmartOptions, ConvertImageFileToWebpSmartResult } from '@/types/tools/image';
+import type {
+  ConvertImageFileToWebpErrorMessages,
+  ConvertImageFileToWebpSmartOptions,
+  ConvertImageFileToWebpSmartResult,
+} from '@/types/tools/image';
+export type {
+  ConvertImageFileToWebpErrorMessages,
+  ConvertImageFileToWebpSmartOptions,
+  ConvertImageFileToWebpSmartResult,
+} from '@/types/tools/image';
 
 export function getWebpFileName(originalFileName: string): string {
   return originalFileName.replace(/\.[^.]+$/, '.webp');
@@ -12,7 +20,11 @@ export function getWebpFileName(originalFileName: string): string {
 const MAX_CANVAS_DIM = 16384;
 const MAX_CANVAS_PIXELS = 268_435_456;
 
-export async function convertImageFileToWebp(file: File, quality: number, messages: ConvertImageFileToWebpErrorMessages): Promise<Blob> {
+export async function convertImageFileToWebp(
+  file: File,
+  quality: number,
+  messages: ConvertImageFileToWebpErrorMessages,
+): Promise<Blob> {
   const dataUrl = await readFileAsDataUrl(file, { errorMessage: messages.fileLoadErrorMessage });
   const img = await loadImage(dataUrl, { errorMessage: messages.imageLoadErrorMessage });
 
@@ -25,7 +37,11 @@ export async function convertImageFileToWebp(file: File, quality: number, messag
 
   // Guard: canvas dimension limits to prevent silent failures on very large images
   if (w > MAX_CANVAS_DIM || h > MAX_CANVAS_DIM || w * h > MAX_CANVAS_PIXELS) {
-    const scale = Math.min(MAX_CANVAS_DIM / w, MAX_CANVAS_DIM / h, Math.sqrt(MAX_CANVAS_PIXELS / (w * h)));
+    const scale = Math.min(
+      MAX_CANVAS_DIM / w,
+      MAX_CANVAS_DIM / h,
+      Math.sqrt(MAX_CANVAS_PIXELS / (w * h)),
+    );
     w = Math.round(w * scale);
     h = Math.round(h * scale);
   }
@@ -44,7 +60,11 @@ export async function convertImageFileToWebp(file: File, quality: number, messag
   return canvasToBlob(canvas, 'image/webp', quality / 100, messages.webpGenerationErrorMessage);
 }
 
-export async function convertImageFileToWebpSmart(file: File, originalSize: number, options: ConvertImageFileToWebpSmartOptions): Promise<ConvertImageFileToWebpSmartResult> {
+export async function convertImageFileToWebpSmart(
+  file: File,
+  originalSize: number,
+  options: ConvertImageFileToWebpSmartOptions,
+): Promise<ConvertImageFileToWebpSmartResult> {
   const minQuality = options.minQuality ?? 60;
   const step = options.step ?? 5;
 

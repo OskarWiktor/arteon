@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte el primer fotograma GIF a WebP ligero. Archivo mas pequeno, carga rapida. Todo el procesamiento ocurre en tu navegador - los archivos no salen de tu dispositivo.",
-      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convertir GIF a WEBP", "Conversión de GIF a WEBP", "Convertidor GIF a WEBP gratis"]
+      "featureList": [
+        "GIF to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convertir GIF a WEBP",
+        "Conversión de GIF a WEBP",
+        "Convertidor GIF a WEBP gratis"
+      ]
     },
     "howTo": {
       "name": "GIF to WebP",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs WebP – comparación de formatos",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["GIF", "WebP"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Compresión con pérdida",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compresión sin pérdida",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparencia (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Soporte de animación",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Compatibilidad con navegadores",
+          "values": ["Todos los navegadores", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Profundidad de color",
+          "values": ["8-bit (256)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Tamaño de archivo compacto",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadatos (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresión con pérdida",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compresión sin pérdida",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparencia (canal alfa)",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Soporte de animación",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compatibilidad con navegadores",
-          "values": {
-            "gif": "Todos los navegadores",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Profundidad de color",
-          "values": {
-            "gif": "8-bit (256)",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Tamaño de archivo compacto",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadatos (EXIF)",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Característica"
+      ]
     },
     {
       "type": "gap",

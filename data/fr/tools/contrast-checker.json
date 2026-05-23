@@ -176,82 +176,45 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Que signifient les niveaux AA et AAA dans le standard WCAG ?",
-      "plans": [
+      "cols": ["Niveau AA (minimum)", "Niveau AAA (amélioré)"],
+      "rows": [
         {
-          "id": "aa",
-          "name": "Niveau AA (minimum)",
-          "highlighted": true
+          "label": "Texte normal – min. 4,5:1",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "aaa",
-          "name": "Niveau AAA (amélioré)"
-        }
-      ],
-      "features": [
-        {
-          "name": "Texte normal – min. 4,5:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Texte normal – min. 7:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Texte normal – min. 7:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Texte grand / gras – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Texte grand / gras – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Texte grand / gras – min. 4,5:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Texte grand / gras – min. 4,5:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Icônes et éléments d'interface – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Icônes et éléments d'interface – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Obligatoire par le RGAA 4.1 (secteur public + grandes entreprises)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Obligatoire par le RGAA 4.1 (secteur public + grandes entreprises)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Obligatoire par l'Acte européen d'accessibilité (secteur privé dès VI 2025)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Obligatoire par l'Acte européen d'accessibilité (secteur privé dès VI 2025)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Obligatoire par la directive UE 2016/2102 (secteur public)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Obligatoire par la directive UE 2016/2102 (secteur public)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
-        },
-        {
-          "name": "Recommandé pour le contenu essentiel",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Recommandé pour le contenu essentiel",
+          "values": ["✓", "✓"]
         }
       ]
     },

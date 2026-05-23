@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Estrattore di colori da immagine – palette colori da foto",
-      "alternateName": ["Palette di colori da un'immagine", "Estrattore di colori dominanti", "Generatore di palette da una foto"],
+      "alternateName": [
+        "Palette di colori da un'immagine",
+        "Estrattore di colori dominanti",
+        "Generatore di palette da una foto"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
       "description": "Estrattore gratuito di colori da immagine. Carica una foto, un logo o un'immagine e ottieni una palette di fino a 12 colori dominanti con codici HEX e RGB. L'elaborazione avviene nel browser – i file non vengono inviati a un server.",
@@ -279,7 +283,7 @@
     {
       "type": "sectionInfo",
       "title": "Estrazione colori per e-commerce e fotografia di prodotto in Italia",
-      "html": "<p class=\"text-mid mb-4\">La coerenza cromatica di un negozio online costruisce fiducia e professionalità. L'estrattore analizza una foto di prodotto e restituisce i colori dominanti come codici HEX e RGB. Questi valori si usano direttamente per sfondi delle schede prodotto, banner promozionali e grafiche per i social media - così l'intero catalogo mantiene un'identità visiva uniforme.</p><p class=\"text-mid mb-4\">I marchi italiani del food e del vino hanno identità cromatiche forti. Le etichette di Barolo e Brunello usano bordeaux profondo, oro e nero. I produttori di olio d'oliva toscano scelgono verde foglia, oro e crema. I marchi di pasta fresca puntano su giallo grano, bianco farina e rosso pomodoro. Caricate una foto della confezione o del prodotto - i codici estratti diventano la base cromatica dell'intero shop.</p><p class=\"text-mid\">Le foto su sfondo bianco danno i risultati più precisi perché l'estrattore cattura solo i colori del prodotto. Nelle foto ambientate con decorazioni e sfondi colorati, anche quei toni vengono inclusi nell'analisi. Ritagliate l'immagine sulla zona di interesse prima di caricarla, oppure usate un file PNG con sfondo trasparente per concentrare l'estrazione sui colori che contano.</p>"
+      "html": "<p class=\"text-mid mb-4\">La coerenza cromatica di un negozio costruisce fiducia e professionalità. L'estrattore analizza una foto di prodotto e restituisce i colori dominanti come codici HEX e RGB. Questi valori si usano direttamente per sfondi delle schede prodotto, banner promozionali e grafiche per i social media - così l'intero catalogo mantiene un'identità visiva uniforme.</p><p class=\"text-mid mb-4\">I marchi italiani del food e del vino hanno identità cromatiche forti. Le etichette di Barolo e Brunello usano bordeaux profondo, oro e nero. I produttori di olio d'oliva toscano scelgono verde foglia, oro e crema. I marchi di pasta fresca puntano su giallo grano, bianco farina e rosso pomodoro. Caricate una foto della confezione o del prodotto - i codici estratti diventano la base cromatica dell'intero shop.</p><p class=\"text-mid\">Le foto su sfondo bianco danno i risultati più precisi perché l'estrattore cattura solo i colori del prodotto. Nelle foto ambientate con decorazioni e sfondi colorati, anche quei toni vengono inclusi nell'analisi. Ritagliate l'immagine sulla zona di interesse prima di caricarla, oppure usate un file PNG con sfondo trasparente per concentrare l'estrazione sui colori che contano.</p>"
     },
     {
       "type": "gap",

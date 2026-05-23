@@ -2,14 +2,14 @@
   "toolKey": "cmToPxDpi",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter cm na px (DPI) – centymetry na piksele dla druku",
-    "description": "Przelicz centymetry na piksele z regulowanym DPI – A4 przy 300 DPI to 2480 x 3508 px. Niezbedny przy przygotowaniu grafik do polskich drukarni. Bez rejestracji.",
+    "title": "Kalkulator cm na px (DPI) – zamień centymetry na piksele",
+    "description": "Przelicz centymetry na piksele z regulowanym DPI. Idealne narzędzie dla grafików, fotografów i projektantów przygotowujących materiały do druku lub na ekrany.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-cm-na-px"
   },
   "hero": {
-    "title": "Przelicz centymetry na piksele z dowolnym DPI – druk i ekran",
-    "description": "Wpisz wymiary w centymetrach, ustaw DPI drukarni i natychmiast sprawdz liczbe pikseli – bez przeliczen przez cal i bez arkusza kalkulacyjnego.",
+    "title": "Przelicz centymetry na piksele z dowolnym DPI",
+    "description": "Wpisz wartość w centymetrach, ustaw rozdzielczość DPI i odczytaj wynik w pikselach. Sprawdź ile pikseli odpowiada danej wartości w centymetrach. Konwerter pomoże Ci dobrać właściwe wymiary, gdy projektujesz grafikę do druku, na ekran albo do mediów społecznościowych.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -24,39 +24,56 @@
   },
   "schemas": {
     "software": {
-      "name": "Przelicznik cm na piksele (DPI) – centymetry na px do druku",
-      "alternateName": ["Przelicznik cm na px", "Kalkulator cm na piksele", "cm to pixels DPI"],
+      "name": "Przelicznik centymetrów na piksele z regulowanym DPI – konwerter cm na px",
+      "alternateName": [
+        "Konwerter cm na px",
+        "Kalkulator cm na piksele",
+        "Przelicznik centymetrów na piksele",
+        "Centymetry na piksele",
+        "cm na piksele",
+        "Przelicz cm na px",
+        "Konwerter centymetrów na piksele",
+        "Kalkulator centymetrów na piksele",
+        "Zamiana cm na px",
+        "Przelicznik cm na px",
+        "cm na px 300 dpi",
+        "Konwerter cm na piksele",
+        "Piksele z centymetrów",
+        "Kalkulator dpi do druku",
+        "Przeliczanie centymetrów na piksele"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz centymetry na piksele z regulowanym DPI – A4 przy 300 DPI to 2480 x 3508 px. Niezbedny przy przygotowaniu grafik do polskich drukarni. Bez rejestracji.",
+      "description": "Przelicznik centymetrów na piksele z regulowaną wartością DPI. Po wpisaniu wymiaru od razu zobaczysz dokładnie ile pikseli odpowiada danej wartości w centymetrach. Konwerter sprawdza się przy przygotowywaniu między innymi plików do druku i działa w przeglądarce bez rejestracji.",
       "featureList": [
-        "Regulowane DPI – 72, 96, 150, 300 lub dowolna wartosc",
-        "Obustronna konwersja: centymetry na px i px na centymetry",
-        "Wynik natychmiast podczas wpisywania – bez klikania",
-        "Kopiowanie wyniku do schowka jednym kliknieciem",
-        "Tabela formatow A4, A3, A5 i wizytowki w pikselach przy 300 DPI",
-        "Obliczenia lokalne – dane nie opuszczaja przegladarki",
-        "Wzor: px = cm x DPI / 2,54 (przez precyzyjna stala cala)",
-        "Przyklady DPI dla druku, ekranu, plakatu i bilbordu",
-        "Dziala na telefonie, tablecie i desktopie bez instalacji"
+        "Regulowana rozdzielczość DPI",
+        "Konwersja działa w obie strony, więc przeliczysz zarówno centymetry na piksele, jak i piksele na centymetry",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez potrzeby klikania jakiegokolwiek przycisku",
+        "Gotowy wynik można skopiować do schowka jednym kliknięciem",
+        "Gotowe tabele formatów obejmują papiery A0–A7, zdjęcia 9×13, 10×15, 13×18 oraz wizytówki przy 300 DPI",
+        "Tabela odwrotna pokazuje, ile centymetrów odpowiada 100, 500, 1 500 czy 2 480 pikselom",
+        "Sekcja z poradnikami wyjaśnia, jak ustawić cm na px w Photoshopie, Illustratorze, Figmie, Canvie oraz Procreate",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia i nie są nigdzie przechowywane",
+        "Dokładny wzór konwersji to px = cm × DPI ÷ 2,54 i wykorzystuje stałą długość cala równą 2,54 cm",
+        "Narzędzie działa na telefonie, tablecie i komputerze bez konieczności instalacji"
       ]
     },
     "howTo": {
-      "name": "Jak korzystać z konwertera cm na px",
-      "description": "Instrukcja użycia: cm na px.",
+      "name": "Jak przeliczyć centymetry na piksele?",
+      "description": "Krótka instrukcja użycia konwertera cm na px z regulowanym DPI.",
       "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Wpisz wartość",
-          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+          "name": "Wpisz wartość w centymetrach",
+          "text": "W lewym polu wpisz liczbę centymetrów, którą chcesz przeliczyć na piksele."
         },
         {
-          "name": "Odczytaj wynik",
-          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+          "name": "Ustaw rozdzielczość DPI",
+          "text": "Wybierz wartości DPIą. Dla ekranów najczęściej ustawia się 96 DPI, a do druku 300 DPI."
         },
         {
-          "name": "Skopiuj lub zmień kierunek",
-          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+          "name": "Odczytaj wynik lub odwróć kierunek",
+          "text": "Wynik w pikselach pojawi się od razu w polu obok. Możesz go skopiować albo użyć przycisku Zmień kolejność, aby przeliczać piksele na centymetry."
         }
       ]
     }
@@ -68,36 +85,303 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Kiedy potrzebne jest przeliczanie centymetrów na piksele?",
-      "html": "<p class=\"text-mid mb-4\">Centymetry to jednostka fizyczna, piksele to jednostka ekranowa. Przeliczenie między nimi wymaga znajomości DPI (dots per inch) – rozdzielczości docelowej.</p><p class=\"text-mid mb-4\">Przy przygotowywaniu grafik do druku trzeba przeliczyć wymiary fizyczne (np. A4 = 21 × 29,7 cm) na piksele. Przy 300 DPI (standard druku): A4 = 2 480 × 3 508 px.</p><p class=\"text-mid mb-4\">Dla grafik ekranowych (web, social media) standardowe DPI to 72 lub 96. Grafika 10 × 15 cm przy 72 DPI = 283 × 425 px.</p><p class=\"text-mid\">Wyższe DPI oznacza więcej pikseli na centymetr, czyli lepszą jakość i większy plik. Druk fotograficzny wymaga 300 DPI, plakaty wielkoformatowe – 150 DPI, a bilbordy – nawet 30–72 DPI.</p>",
+      "title": "Po co przeliczać centymetry na piksele?",
+      "html": "<p class=\"text-mid mb-4\">Centymetr to jednostka fizyczna, która rządzi w świecie druku. Piksel z kolei opisuje pojedynczy punkt na ekranie telefonu, tabletu czy laptopa. Aby przeliczyć jedno na drugie, musisz znać rozdzielczość DPI, czyli liczbę pikseli, jaka mieści się na jednym calu ekranu.</p><p class=\"text-mid mb-4\"Przy rodzielczości 96 DPI, który jest używany przez większość monitorów, 1 centymetr to około 38 pikseli, a przy rozdzielczości 300 DPI stosowanej w druku 1 centymetr to około 118 pikseli.</p><p class=\"text-mid mb-4\">Takich przeliczeń najczęściej dokonują graficy przygotowujący pliki dla drukarni, fotografowie sprawdzający, czy zdjęcie wystarczy na konkretny format odbitki, czy projektanci pracujący nad banerami, grafikami do mediów społecznościowych albo elementami strony internetowej. Konwerter zwalnia Cię z ręcznego liczenia i pamiętania wzoru.</p><p class=\"text-mid\">W dalszej części strony znajdziesz tabele konwersji w obu kierunkach, gotowe wymiary popularnych formatów (od arkusza A4 przez zdjęcia 10×15 cm aż po foto do paszportu) oraz krótkie poradniki, jak przełączyć centymetry na piksele w Photoshopie, Figmie, Canvie i innych narzędziach graficznych.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "cm na px – Arteon"
+      "imageAlt": "Darmowy konwerter centymetrów na piksele – Arteon"
     },
     {
       "type": "gap",
       "size": "xs"
     },
     {
-      "type": "sectionSteps",
-      "title": "Jak korzystać z konwertera?",
-      "grid": "three",
-      "items": [
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja cm na px? Wzór obliczenia i przykład",
+      "html": "<p class=\"text-mid mb-4\">Cała konwersja sprowadza się do jednego wzoru, który opiera się na stałej zależności pomiędzy calem a centymetrem: jeden cal to dokładnie 2,54 cm. Wystarczy więc liczbę centymetrów pomnożyć przez wybraną rozdzielczość DPI i podzielić przez 2,54.</p><p class=\"text-mid mb-4\">Pełny wzór wygląda następująco: <strong>liczba pikseli = liczba centymetrów × DPI ÷ 2,54</strong>. Konwerter wykonuje to działanie dokładnie natychmiastowo.</p><p class=\"text-mid mb-4\">Przykład: chcesz sprawdzić, ile pikseli ma 7,5 cm przy rozdzielczości druku 300 DPI. Podstawiasz wartości do wzoru i otrzymujesz 7,5 × 300 ÷ 2,54, co daje około 886 pikseli. Przy 96 DPI ta sama długość daje już tylko 284 piksele.</p><p class=\"text-mid\">W drugą stronę działa to analogicznie: liczba centymetrów = liczba pikseli × 2,54 ÷ DPI. Dzięki temu możesz sprawdzić, jak duży będzie na papierze plik o szerokości 1 500 px albo czy zdjęcie z aparatu wystarczy na konkretny format odbitki.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Ile pikseli mają różne wartości w centymetrach przy różnych wartościach DPI?",
+      "description": "Poniższa tabela pokazuje, jak te same wymiary w centymetrach przekładają się na piksele przy pięciu najczęściej używanych rozdzielczościach. Wartości zostały zaokrąglone do najbliższej liczby całkowitej, więc mogą się nieznacznie różnić od wyniku otrzymanego z naszego konwertera, który pokazuje dokładną liczbę pikseli z przecinkiem.",
+      "labelHeader": "Wymiar",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
+      "rows": [
         {
-          "title": "1. Wpisz wartość",
-          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
-          "icon": "RiInputMethodLine"
+          "label": "0,5 cm",
+          "values": ["14 px", "19 px", "30 px", "59 px", "118 px"]
         },
         {
-          "title": "2. Odczytaj wynik",
-          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
-          "icon": "RiLoopLeftLine"
+          "label": "1 cm",
+          "values": ["28 px", "38 px", "59 px", "118 px", "236 px"],
+          "emphasis": true
         },
         {
-          "title": "3. Skopiuj lub zmień kierunek",
-          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
-          "icon": "RiClipboardLine"
+          "label": "1,5 cm",
+          "values": ["43 px", "57 px", "89 px", "177 px", "354 px"]
+        },
+        {
+          "label": "2 cm",
+          "values": ["57 px", "76 px", "118 px", "236 px", "472 px"]
+        },
+        {
+          "label": "2,5 cm",
+          "values": ["71 px", "94 px", "148 px", "295 px", "591 px"]
+        },
+        {
+          "label": "3 cm",
+          "values": ["85 px", "113 px", "177 px", "354 px", "709 px"]
+        },
+        {
+          "label": "3,5 cm",
+          "values": ["99 px", "132 px", "207 px", "413 px", "827 px"]
+        },
+        {
+          "label": "4 cm",
+          "values": ["113 px", "151 px", "236 px", "472 px", "945 px"]
+        },
+        {
+          "label": "4,5 cm",
+          "values": ["128 px", "170 px", "266 px", "531 px", "1063 px"]
+        },
+        {
+          "label": "5 cm",
+          "values": ["142 px", "189 px", "295 px", "591 px", "1181 px"],
+          "emphasis": true
+        },
+        {
+          "label": "6 cm",
+          "values": ["170 px", "227 px", "354 px", "709 px", "1417 px"]
+        },
+        {
+          "label": "7 cm",
+          "values": ["198 px", "264 px", "413 px", "827 px", "1654 px"]
+        },
+        {
+          "label": "8 cm",
+          "values": ["227 px", "302 px", "472 px", "945 px", "1890 px"]
+        },
+        {
+          "label": "9 cm",
+          "values": ["255 px", "340 px", "531 px", "1063 px", "2126 px"]
+        },
+        {
+          "label": "10 cm",
+          "values": ["283 px", "378 px", "591 px", "1181 px", "2362 px"],
+          "emphasis": true
+        },
+        {
+          "label": "12 cm",
+          "values": ["340 px", "454 px", "709 px", "1417 px", "2835 px"]
+        },
+        {
+          "label": "15 cm",
+          "values": ["425 px", "567 px", "886 px", "1772 px", "3543 px"]
+        },
+        {
+          "label": "20 cm",
+          "values": ["567 px", "756 px", "1181 px", "2362 px", "4724 px"],
+          "emphasis": true
+        },
+        {
+          "label": "25 cm",
+          "values": ["709 px", "945 px", "1476 px", "2953 px", "5906 px"]
+        },
+        {
+          "label": "30 cm",
+          "values": ["850 px", "1134 px", "1772 px", "3543 px", "7087 px"]
+        },
+        {
+          "label": "50 cm",
+          "values": ["1417 px", "1890 px", "2953 px", "5906 px", "11811 px"]
+        },
+        {
+          "label": "100 cm",
+          "values": ["2835 px", "3780 px", "5906 px", "11811 px", "23622 px"]
         }
-      ]
+      ],
+      "caption": "Wszystkie wartości zostały zaokrąglone do najbliższej liczby całkowitej zgodnie ze wzorem px = cm × DPI ÷ 2,54."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Ile centymetrów mają różne wartości w pikselach przy różnych wartościach DPI?",
+      "description": "Czasem zaczynamy od liczby pikseli i potrzebujemy sprawdzić ile to centymetrów. Poniższa tabela pokazuje to przeliczenie dla czterech najczęściej spotykanych rozdzielczości.",
+      "labelHeader": "Piksele",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
+      "rows": [
+        {
+          "label": "100 px",
+          "values": ["3,53 cm", "2,65 cm", "1,69 cm", "0,85 cm"]
+        },
+        {
+          "label": "200 px",
+          "values": ["7,06 cm", "5,29 cm", "3,39 cm", "1,69 cm"]
+        },
+        {
+          "label": "300 px",
+          "values": ["10,58 cm", "7,94 cm", "5,08 cm", "2,54 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "500 px",
+          "values": ["17,64 cm", "13,23 cm", "8,47 cm", "4,23 cm"]
+        },
+        {
+          "label": "600 px",
+          "values": ["21,17 cm", "15,88 cm", "10,16 cm", "5,08 cm"]
+        },
+        {
+          "label": "800 px",
+          "values": ["28,22 cm", "21,17 cm", "13,55 cm", "6,77 cm"]
+        },
+        {
+          "label": "1 000 px",
+          "values": ["35,28 cm", "26,46 cm", "16,93 cm", "8,47 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1 200 px",
+          "values": ["42,33 cm", "31,75 cm", "20,32 cm", "10,16 cm"]
+        },
+        {
+          "label": "1 500 px",
+          "values": ["52,92 cm", "39,69 cm", "25,40 cm", "12,70 cm"]
+        },
+        {
+          "label": "1 920 px",
+          "values": ["67,73 cm", "50,80 cm", "32,51 cm", "16,26 cm"]
+        },
+        {
+          "label": "2 480 px",
+          "values": ["87,47 cm", "65,62 cm", "42,00 cm", "21,00 cm (A4)"],
+          "emphasis": true
+        },
+        {
+          "label": "3 508 px",
+          "values": ["123,73 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)"]
+        }
+      ],
+      "caption": "Dwie ostatnie wartości: 2 480 i 3 508 pikseli, odpowiadają dokładnej szerokości i wysokości arkusza A4 przy rozdzielczości 300 DPI."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Najpopularniejsze formaty fizyczne i ich wymiary w pikselach",
+      "description": "Jeżeli zamiast pojedynczych centymetrów potrzebujesz wymiarów gotowego formatu (na przykład arkusza A4, zdjęcia 10×15 cm albo fotografii do paszportu), poniższa tabela podaje wartości przy dwóch najczęściej używanych rozdzielczościach. Wymiary zapisujemy konsekwentnie w formacie szerokość × wysokość, przyjmując orientację pionową.",
+      "labelHeader": "Format",
+      "cols": ["Szer. × wys. (cm)", "Szer. × wys. (150 DPI)", "Szer. × wys. (300 DPI)"],
+      "rows": [
+        {
+          "groupLabel": "Papier z serii A"
+        },
+        {
+          "label": "A0",
+          "values": ["84,1 cm × 118,9 cm", "4 967 px × 7 022 px", "9 933 px × 14 043 px"]
+        },
+        {
+          "label": "A1",
+          "values": ["59,4 cm × 84,1 cm", "3 508 px × 4 967 px", "7 016 px × 9 933 px"]
+        },
+        {
+          "label": "A2",
+          "values": ["42,0 cm × 59,4 cm", "2 480 px × 3 508 px", "4 961 px × 7 016 px"]
+        },
+        {
+          "label": "A3",
+          "values": ["29,7 cm × 42,0 cm", "1 754 px × 2 480 px", "3 508 px × 4 961 px"]
+        },
+        {
+          "label": "A4",
+          "values": ["21,0 cm × 29,7 cm", "1 240 px × 1 754 px", "2 480 px × 3 508 px"],
+          "emphasis": true
+        },
+        {
+          "label": "A5",
+          "values": ["14,8 cm × 21,0 cm", "874 px × 1 240 px", "1 748 px × 2 480 px"]
+        },
+        {
+          "label": "A6",
+          "values": ["10,5 cm × 14,8 cm", "620 px × 874 px", "1 240 px × 1 748 px"]
+        },
+        {
+          "label": "A7",
+          "values": ["7,4 cm × 10,5 cm", "437 px × 620 px", "874 px × 1 240 px"]
+        },
+        {
+          "groupLabel": "Zdjęcia i odbitki"
+        },
+        {
+          "label": "Foto 9×13",
+          "values": ["9 cm × 13 cm", "531 px × 768 px", "1 063 px × 1 535 px"]
+        },
+        {
+          "label": "Foto 10×15",
+          "values": ["10 cm × 15 cm", "591 px × 886 px", "1 181 px × 1 772 px"],
+          "emphasis": true
+        },
+        {
+          "label": "Foto 13×18",
+          "values": ["13 cm × 18 cm", "768 px × 1 063 px", "1 535 px × 2 126 px"]
+        },
+        {
+          "label": "Foto 15×21",
+          "values": ["15 cm × 21 cm", "886 px × 1 240 px", "1 772 px × 2 480 px"]
+        },
+        {
+          "label": "Foto 20×30",
+          "values": ["20 cm × 30 cm", "1 181 px × 1 772 px", "2 362 px × 3 543 px"]
+        },
+        {
+          "label": "Foto 30×40",
+          "values": ["30 cm × 40 cm", "1 772 px × 2 362 px", "3 543 px × 4 724 px"]
+        },
+        {
+          "label": "Foto 50×70",
+          "values": ["50 cm × 70 cm", "2 953 px × 4 134 px", "5 906 px × 8 268 px"]
+        },
+        {
+          "label": "Foto 70×100",
+          "values": ["70 cm × 100 cm", "4 134 px × 5 906 px", "8 268 px × 11 811 px"]
+        },
+        {
+          "groupLabel": "Dokumenty i wizytówki"
+        },
+        {
+          "label": "Foto do paszportu / dowodu (PL)",
+          "values": ["3,5 cm × 4,5 cm", "207 px × 266 px", "413 px × 531 px"],
+          "emphasis": true
+        },
+        {
+          "label": "Wizytówka polska",
+          "values": ["9,0 cm × 5,0 cm", "531 px × 295 px", "1 063 px × 591 px"]
+        },
+        {
+          "label": "Wizytówka europejska (ISO ID-1)",
+          "values": ["8,5 cm × 5,5 cm", "502 px × 325 px", "1 004 px × 650 px"]
+        },
+        {
+          "label": "Wizytówka amerykańska",
+          "values": ["8,89 cm × 5,08 cm", "525 px × 300 px", "1 050 px × 600 px"]
+        },
+        {
+          "groupLabel": "Reklama wielkoformatowa"
+        },
+        {
+          "label": "Roll-up baner",
+          "values": ["85 cm × 200 cm", "5 020 px × 11 811 px", "10 039 px × 23 622 px"]
+        }
+      ],
+      "caption": "Przy bilbordach i innych grafikach wielkoformatowych w praktyce wystarczy 30–72 DPI, ponieważ patrzy się na nie z dużej odległości."
     },
     {
       "type": "gap",
@@ -105,28 +389,75 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Kiedy przydaje się ten konwerter?",
+      "title": "Jak zamienić centymetry na piksele w popularnych programach?",
+      "grid": "one",
+      "items": [
+        {
+          "icon": "RiImageEditLine",
+          "title": "Photoshop",
+          "description": "W Adobe Photoshopie wymiary płótna ustawisz w oknie <strong>Obraz &rsaquo; Rozmiar obrazu</strong> (Image &rsaquo; Image Size). Z rozwijanej listy jednostek wybierz Centymetry, wpisz wymiar fizyczny oraz docelowe DPI w polu Rozdzielczość, a Photoshop sam przeliczy wartość na piksele. Jeżeli chcesz, żeby zmiana jednostki nie wpływała na samą liczbę pikseli pliku, odznacz opcję Próbkowanie (Resample). Wtedy zmieniasz wyłącznie wymiar fizyczny, a piksele zostają nietknięte."
+        },
+        {
+          "icon": "RiPencilLine",
+          "title": "Illustrator",
+          "description": "Adobe Illustrator domyślnie pracuje w jednostce, którą ustawiłeś przy tworzeniu dokumentu. Możesz ją zmienić w <strong>Edycja &rsaquo; Preferencje &rsaquo; Jednostki</strong> – wybierz Piksele dla projektów ekranowych albo Centymetry dla materiałów do druku. Sam wynik w pikselach zależy od rozdzielczości artboardu ustawionej na starcie projektu. Jeżeli pracujesz nad ulotką w cm, ale klient prosi o plik w px, najprościej skopiować wymiar z naszego konwertera i wpisać go w panelu Transform."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Figma",
+          "description": "Figma operuje wyłącznie na pikselach i przyjmuje sztywne 96 DPI. Oznacza to, że jeżeli chcesz zaprojektować w niej coś, co potem trafi do druku w centymetrach, musisz wymiar fizyczny najpierw zamienić na piksele przy docelowej rozdzielczości. Przykładowo: ulotka 10 × 15 cm przy 300 DPI to artboard 1 181 × 1 772 px. Wpisz tę wartość przy tworzeniu nowego framu, a przy eksporcie ustaw skalę 1× – dzięki temu wymiary pozostaną wierne pierwowzorowi."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Canva",
+          "description": "W Canvie po kliknięciu w <strong>Utwórz projekt &rsaquo; Niestandardowy rozmiar</strong> możesz wybrać jednostkę cm albo mm i wpisać wymiar fizyczny. Canva sama przeliczy to na piksele przy eksporcie. Jeżeli plik ma trafić do drukarni, w opcjach pobierania zaznacz format PDF do druku oraz spady i znaczniki cięcia. Canva domyślnie eksportuje takie pliki w 300 DPI, więc tabela formatów z tej strony będzie zgodna z tym, co otrzymasz na wyjściu."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Procreate",
+          "description": "Procreate przy tworzeniu nowego płótna pozwala wybrać jednostkę pomiędzy pikselami, milimetrami, centymetrami i calami. W zakładce <strong>Własne płótno</strong> ustaw wymiar w cm i wpisz 300 DPI, jeżeli ilustracja ma być drukowana. Pamiętaj, że im wyższe DPI i większy format, tym mniej warstw zaoferuje aplikacja. Dla iPada Pro z 8 GB RAM bezpieczna granica to A3 przy 300 DPI – większe formaty lepiej rozbić na sekcje albo zmniejszyć rozdzielczość do 150 DPI."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Word, Excel, PowerPoint",
+          "description": "Pakiet Microsoft 365 (Word, Excel oraz PowerPoint) operuje na centymetrach, a wymiary obrazów ustawiasz w panelu <strong>Rozmiar i położenie</strong>. Pliki PDF eksportowane z tych programów domyślnie zachowują wysoką jakość, więc 1 cm odpowiada 118 px przy 300 DPI. Jeżeli zapisujesz prezentację jako obraz PNG lub JPG, PowerPoint korzysta ze standardowego 96 DPI, czyli 1 cm to około 38 px. Wtedy nasz konwerter pomaga sprawdzić, czy plik na pewno wystarczy do druku."
+        },
+        {
+          "icon": "RiHtml5Line",
+          "title": "CSS i HTML",
+          "description": "W arkuszach CSS jednostka <code>cm</code> jest przeliczana sztywnym wzorem <code>1cm = 96px ÷ 2,54 ≈ 37,8px</code>. Ta wartość nie zmienia się w zależności od ekranu – zawsze otrzymasz ten sam wynik niezależnie od urządzenia. W praktyce do interfejsów internetowych używa się jednostek <code>px</code>, <code>rem</code> albo <code>em</code>, a <code>cm</code> rezerwuje się dla arkuszy stylów przeznaczonych do druku (<code>@media print</code>). Wtedy układ strony rzeczywiście odwzorowuje wymiary fizyczne kartki."
+        }
+      ],
+      "inlineIcon": true
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto sięgnąć po ten konwerter?",
       "grid": "two",
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "Przygotowanie do druku",
-          "description": "A4 przy 300 DPI = 2 480 × 3 508 px. Plakat A3 = 3 508 × 4 961 px."
+          "title": "Przygotowanie plików do drukarni",
+          "description": "Sprawdzisz w nim, że arkusz A4 do druku ma 2 480 × 3 508 px przy 300 DPI, a plakat A3 zajmuje 3 508 × 4 961 px. Konwerter pomoże Ci uniknąć sytuacji, w której drukarnia odrzuca plik z powodu zbyt małej rozdzielczości."
         },
         {
           "icon": "RiImageLine",
-          "title": "Grafika na stronę",
-          "description": "Baner 20 × 6 cm przy 96 DPI = 756 × 227 px."
+          "title": "Grafiki na stronę internetową",
+          "description": "Jeżeli zaprojektowałeś baner o wymiarach 20 × 6 cm, dowiesz się, że przy 96 DPI odpowiada to 756 × 227 px. To dokładnie taki rozmiar, jaki warto wstawić do kodu strony albo szablonu w CMS-ie."
         },
         {
-          "icon": "RiArtboardLine",
-          "title": "Social media",
-          "description": "Oblicz wymiary pikseli dla grafik o zadanym rozmiarze fizycznym."
+          "icon": "RiCameraLine",
+          "title": "Foto do dokumentów",
+          "description": "Polski format zdjęcia do paszportu lub dowodu osobistego (3,5 × 4,5 cm) odpowiada dokładnie 413 × 531 px przy 300 DPI. Wystarczy te wartości wpisać w aparacie albo edytorze, żeby plik spełnił wymogi urzędu."
         },
         {
-          "icon": "RiLayoutLine",
-          "title": "Fotoksiążki",
-          "description": "Przelicz wymiary stron fotoksiążki (cm) na wymogi pikseli drukarni."
+          "icon": "RiContactsBookLine",
+          "title": "Wizytówki i materiały firmowe",
+          "description": "Polska wizytówka 9 × 5 cm odpowiada 1 063 × 591 px przy 300 DPI, a europejska 8,5 × 5,5 cm to 1 004 × 650 px. Po dodaniu spadu 3 mm warto zaprojektować plik większy o około 35 px z każdej strony."
         }
       ]
     },
@@ -135,104 +466,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionSteps",
-      "title": "Co wyróżnia nasz konwerter?",
-      "grid": "two",
-      "items": [
+      "type": "sectionTable",
+      "title": "Porównanie jednostek centymetrów i pikseli",
+      "labelHeader": "Cecha",
+      "cols": ["Centymetr (cm)", "Piksel (px)"],
+      "rows": [
         {
-          "icon": "RiShieldCheckLine",
-          "title": "Pełna prywatność",
-          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+          "label": "Rodzaj jednostki",
+          "values": ["Fizyczna i dotykalna", "Cyfrowa i ekranowa"]
         },
         {
-          "icon": "RiTimeLine",
-          "title": "Wynik w czasie rzeczywistym",
-          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+          "label": "Zależność od urządzenia",
+          "values": ["Zawsze taka sama", "Wynika z DPI lub PPI"]
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "Obustronna konwersja",
-          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+          "label": "Druk 300 DPI",
+          "values": ["1 cm to 118 px", "1 px to 0,0085 cm"]
         },
         {
-          "icon": "RiTableLine",
-          "title": "Tabela popularnych wartości",
-          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Jak działa konwersja cm na px?",
-      "html": "<p class=\"text-mid mb-4\">Konwersja centymetrów na piksele zależy od rozdzielczości (DPI — dots per inch). Ponieważ jeden cal to dokładnie 2,54 cm, narzędzie najpierw przelicza centymetry na cale (dzieląc przez 2,54), a następnie mnoży przez DPI, aby uzyskać liczbę pikseli.</p><p class=\"text-mid mb-4\">Na przykład przy 300 DPI (standard druku) jeden centymetr to około 118 pikseli, a arkusz A4 (21 × 29,7 cm) ma wymiary 2 480 × 3 508 px. Przy 96 DPI (standardowa rozdzielczość ekranu Windows) ten sam centymetr to zaledwie około 38 pikseli.</p><p class=\"text-mid\">Konwerter pozwala ustawić dowolną wartość DPI, dzięki czemu można precyzyjnie przeliczyć wymiary fizyczne na piksele zarówno dla druku, jak i dla ekranów o różnych rozdzielczościach.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Praktyczne wskazówki",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Druk standardowy: 300 DPI. Druk ekonomiczny: 150 DPI. Ekran: 72–96 DPI.</li><li>A4 (21 × 29,7 cm) przy 300 DPI = 2 480 × 3 508 px.</li><li>Bilbordy: 30–72 DPI wystarczy – patrzy się na nie z daleka.</li><li>Retina (Apple): 2× pikseli standardowych. Grafika na Retina potrzebuje podwójnych wymiarów px.</li></ul>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionFeatureComparison",
-      "title": "Centymetr (cm) vs Piksel (px) – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
-        {
-          "id": "unit1",
-          "name": "Centymetr (cm)"
+          "label": "Ekran 96 DPI",
+          "values": ["1 cm to 37,8 px", "1 px to 0,0265 cm"]
         },
         {
-          "id": "unit2",
-          "name": "Piksel (px)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Typ",
-          "values": {
-            "unit1": "Fizyczna",
-            "unit2": "Ekranowa"
-          }
-        },
-        {
-          "name": "Zależność",
-          "values": {
-            "unit1": "Stała",
-            "unit2": "Zależy od DPI"
-          }
-        },
-        {
-          "name": "Druk 300 DPI",
-          "values": {
-            "unit1": "1 cm = 118 px",
-            "unit2": "1 px = 0,0085 cm"
-          }
-        },
-        {
-          "name": "Ekran 96 DPI",
-          "values": {
-            "unit1": "1 cm = 37,8 px",
-            "unit2": "1 px = 0,0265 cm"
-          }
-        },
-        {
-          "name": "A4",
-          "values": {
-            "unit1": "21 × 29,7 cm",
-            "unit2": "2 480 × 3 508 px (300 DPI)"
-          }
+          "label": "Format A4",
+          "values": ["21 × 29,7 cm", "2 480 × 3 508 px (300 DPI)"]
         }
       ]
     },
@@ -242,40 +499,56 @@
     },
     {
       "type": "faq",
-      "title": "Najczęściej zadawane pytania",
+      "title": "Najczęściej zadawane pytania o konwersję cm na px",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Ile pikseli ma 1 cm przy 300 DPI?",
-          "answer": "300 / 2,54 = 118,11 pikseli na centymetr. Wzor: px = cm x DPI / 2,54. Przy 96 DPI (ekran): 1 cm = 37,8 px. Przy 72 DPI (stary standard): 1 cm = 28,35 px."
+          "question": "Ile pikseli ma 1 cm?",
+          "answer": "Wszystko zależy od rozdzielczości, którą ustawisz. Przy standardzie ekranu 96 DPI jeden centymetr to około 38 pikseli, a przy 72 DPI używanym dawniej w grafice ekranowej zaledwie 28 pikseli. W druku, gdzie najczęściej obowiązuje 300 DPI, ten sam centymetr odpowiada już około 118 pikselom."
         },
         {
-          "question": "Jakie DPI ustawic do druku?",
-          "answer": "300 DPI to standard dla druku fotograficznego i offsetowego – wymagany przez wiekszosc polskich drukarni. 150 DPI wystarczy do plakatow i ulotek ogladalnych z odleglosci powyzej 1 m. Bilbordy: 30–72 DPI (ogladane z kilku metrow)."
+          "question": "Jak przeliczyć centymetry na piksele?",
+          "answer": "Najprościej wpisać liczbę centymetrów w pole konwertera i wybrać interesujące Cię DPI – wynik pojawi się od razu. Jeżeli wolisz policzyć ręcznie, użyj wzoru: liczba pikseli = liczba centymetrów × DPI ÷ 2,54. Dla 5 cm przy 300 DPI otrzymasz 5 × 300 ÷ 2,54, czyli około 591 pikseli."
+        },
+        {
+          "question": "Ile wynosi 1 piksel w centymetrach?",
+          "answer": "Jeden piksel przy standardowym ekranie 96 DPI ma około 0,0265 cm, a przy 300 DPI używanym w druku zaledwie 0,0085 cm. Aby przeliczyć dowolną liczbę pikseli na centymetry, podziel ją przez DPI i pomnóż przez 2,54."
+        },
+        {
+          "question": "Ile pikseli ma 5 cm?",
+          "answer": "Przy standardowej rozdzielczości ekranu 96 DPI pięć centymetrów to około 189 pikseli. Jeżeli przygotowujesz grafikę do druku w 300 DPI, ta sama długość rośnie do 591 pikseli, a przy 600 DPI sięga już 1 181 pikseli."
+        },
+        {
+          "question": "Ile pikseli ma 10 cm?",
+          "answer": "Dziesięć centymetrów przy 96 DPI odpowiada około 378 pikselom. W druku przy 300 DPI te same 10 cm to dokładnie 1 181 pikseli – wartość warto zapamiętać, ponieważ pojawia się w fotografii jako krótszy bok klasycznej odbitki 10 × 15 cm."
+        },
+        {
+          "question": "Ile pikseli ma 20 cm?",
+          "answer": "Dwadzieścia centymetrów to 756 pikseli przy ekranie 96 DPI oraz 2 362 piksele przy druku 300 DPI. Jeżeli projektujesz na bilbord, gdzie wystarczy 30–72 DPI, ta sama szerokość spada do 236–567 pikseli."
         },
         {
           "question": "Ile pikseli ma A4 przy 300 DPI?",
-          "answer": "A4 (21 x 29,7 cm) = 2480 x 3508 px przy 300 DPI. Przy 150 DPI: 1240 x 1754 px. Przy 96 DPI (ekran): 794 x 1123 px. Przy 72 DPI (stary standard): 595 x 842 px – popularny format PDF."
+          "answer": "Arkusz A4 ma wymiary 21 × 29,7 cm, co przy 300 DPI daje dokładnie 2 480 × 3 508 pikseli. Przy 150 DPI te same wymiary to 1 240 × 1 754 pikseli, a przy ekranowych 96 DPI zaledwie 794 × 1 123 piksele."
         },
         {
-          "question": "Jakie DPI do grafik na strone internetowa?",
-          "answer": "72–96 DPI. Wieksze DPI to wiekszy plik bez widocznej poprawy jakosci na ekranie – monitor i tak wyswietla okreslona liczbe pikseli fizycznych. Dla ekranow Retina przygotowuj grafiki o podwojonej liczbie pikseli, ale wciaz zapisuj je jako 72 DPI."
+          "question": "Ile pikseli ma zdjęcie 10×15 cm?",
+          "answer": "Standardowa odbitka fotograficzna 10 × 15 cm odpowiada 1 181 × 1 772 pikselom przy 300 DPI. Jeżeli plik z aparatu ma co najmniej taką rozdzielczość, możesz spokojnie zamawiać wydruk – jakość będzie wzorcowa."
         },
         {
-          "question": "Czy DPI wplywa na jakosc zdjecia?",
-          "answer": "DPI okresla gestosc pikseli w druku – ile punktow farby przypada na cal. Jakosc zdjecia zalezy od calkowitej liczby pikseli (rozdzielczosci). Zdjecie 6000 x 4000 px mozna wydrukowac 20 x 13 cm przy 300 DPI lub 50 x 33 cm przy 120 DPI."
+          "question": "Ile pikseli ma fotografia do paszportu (3,5 × 4,5 cm)?",
+          "answer": "Polskie zdjęcie biometryczne do paszportu albo dowodu osobistego ma 3,5 × 4,5 cm, co przy 300 DPI daje 413 × 531 pikseli. Urzędy akceptują również wersję cyfrową o nieco wyższej rozdzielczości, dlatego dobrym wyborem jest plik 492 × 633 px zalecany przez Ministerstwo Spraw Wewnętrznych."
         },
         {
-          "question": "Co to jest DPI vs PPI?",
-          "answer": "DPI (dots per inch) to gestosc punktow farby w druku – parametr drukarki. PPI (pixels per inch) to gestosc pikseli na ekranie – parametr monitora. W branzy graficznej czesto uzywamy ich zamiennie, ale DPI jest poprawne dla druku, PPI dla ekranow."
+          "question": "Jak ustawić centymetry na piksele w Photoshopie albo Canvie?",
+          "answer": "W Photoshopie otwórz okno Obraz &rsaquo; Rozmiar obrazu, zmień jednostkę na centymetry i wpisz wymiary razem z docelowym DPI. W Canvie wybierz Utwórz projekt &rsaquo; Niestandardowy rozmiar, przełącz jednostki na cm i wpisz wymagany wymiar – program sam przeliczy plik na piksele przy eksporcie. Szczegółowe poradniki dla Photoshopa, Illustratora, Figmy, Canvy oraz Procreate znajdziesz w sekcji wyżej."
         },
         {
-          "question": "Ile pikseli ma wizytowka przy 300 DPI?",
-          "answer": "Wizytowka europejska (85 x 55 mm = 8,5 x 5,5 cm): 1004 x 650 px przy 300 DPI. Wizytowka polska (90 x 50 mm = 9 x 5 cm): 1063 x 591 px. Ze spadami 3 mm z kazdej strony dodaj ok. 35 px do kazdej krawedzi."
+          "question": "Czym różni się DPI od PPI?",
+          "answer": "DPI (dots per inch) to liczba punktów farby przypadająca na cal materiału i jest to parametr drukarki. PPI (pixels per inch) określa liczbę pikseli na cal ekranu i opisuje monitor lub wyświetlacz. W codziennej pracy graficy używają obu skrótów zamiennie, jednak technicznie DPI dotyczy druku, a PPI – ekranów."
         },
         {
-          "question": "Jak przeliczyc centymetry na piksele ze spadami?",
-          "answer": "Dodaj spady (zwykle 0,3 cm z kazdej strony) do wymiarow i przelicz calosc. Dla A4 ze spadami: (21 + 0,6) x (29,7 + 0,6) = 21,6 x 30,3 cm. Przy 300 DPI: 2551 x 3579 px. Polskie drukarnie wymagaja zazwyczaj spad 3–5 mm."
+          "question": "Ile pikseli ma centymetr na ekranie Retina?",
+          "answer": "Ekrany Retina firmy Apple mają dwa razy gęstsze upakowanie pikseli niż klasyczny monitor, ale system operacyjny nadal interpretuje wymiary tak, jakby panel miał 96 DPI. Dlatego grafikę przygotowuje się w podwójnej rozdzielczości (1 cm to 76 px zamiast 38 px), zapisuje jako 96 DPI i eksportuje z sufiksem @2x."
         }
       ]
     },
@@ -285,11 +558,11 @@
     },
     {
       "type": "contactForm",
-      "title": "Pomóż nam ulepszyć narzędzia",
-      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "title": "Pomóż nam ulepszyć ten konwerter",
+      "description": "Brakuje Ci jakiegoś formatu w tabelach, znalazłeś błąd w przeliczeniu albo chcesz zaproponować nową funkcję? Napisz do nas – wszystkie wiadomości czytamy osobiście i odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "cm na px – Arteon",
-      "defaultSubject": "Feedback: cm na px"
+      "imageAlt": "Konwerter cm na px – Arteon",
+      "defaultSubject": "Feedback: konwerter cm na px"
     },
     {
       "type": "gap",
@@ -297,7 +570,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Sprawdź inne narzędzia"
+      "title": "Inne narzędzia, które mogą Ci się przydać"
     },
     {
       "type": "gap",

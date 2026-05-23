@@ -474,7 +474,7 @@ export async function updateProfile(formData: FormData) {
 
 ```tsx
 // ✅ Secure external links
-<a href={externalUrl} target="_blank" rel="noopener noreferrer">
+<a href={externalUrl} target='_blank' rel='noopener noreferrer'>
   External Link
 </a>
 ```

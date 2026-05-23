@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna iPhone HEIC-valokuvat häviöttömään PNG-muotoon. Täysi laatu ja läpinäkyvyys. Ilmainen selaintyökalu - ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Muunna HEIC PNG-muotoon", "HEIC:n muunto PNG-muotoon", "Ilmainen HEIC–PNG-muunnin"]
+      "featureList": [
+        "HEIC to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Muunna HEIC PNG-muotoon",
+        "HEIC:n muunto PNG-muotoon",
+        "Ilmainen HEIC–PNG-muunnin"
+      ]
     },
     "howTo": {
       "name": "HEIC to PNG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs PNG – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["HEIC", "PNG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Häviöllinen pakkaus",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Häviötön pakkaus",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Läpinäkyvyys (alfakanava)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animaatiotuki",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Selaintuki",
+          "values": ["Safari 13+ (macOS / iOS)", "Kaikki selaimet"]
+        },
+        {
+          "label": "Värisyvyys",
+          "values": ["8/10-bit, HDR", "8/16-bit"]
+        },
+        {
+          "label": "Pieni tiedostokoko",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metatiedot (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Häviöllinen pakkaus",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Häviötön pakkaus",
-          "values": {
-            "heic": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Läpinäkyvyys (alfakanava)",
-          "values": {
-            "heic": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animaatiotuki",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Selaintuki",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "png": "Kaikki selaimet"
-          }
-        },
-        {
-          "name": "Värisyvyys",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Pieni tiedostokoko",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metatiedot (EXIF)",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

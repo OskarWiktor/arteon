@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez la premiere image GIF en image AVIF statique avec excellente compression. Tout le traitement se fait dans votre navigateur - vos fichiers restent sur votre appareil.",
-      "featureList": ["Conversion en AVIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
-      "alternateName": ["Convertir GIF en AVIF", "Conversion GIF vers AVIF", "Convertisseur GIF en AVIF gratuit"]
+      "featureList": [
+        "Conversion en AVIF",
+        "Réglage de la qualité (60-95%)",
+        "Conversion par lots",
+        "Traitement local dans le navigateur"
+      ],
+      "alternateName": [
+        "Convertir GIF en AVIF",
+        "Conversion GIF vers AVIF",
+        "Convertisseur GIF en AVIF gratuit"
+      ]
     },
     "howTo": {
       "name": "Comment convertir GIF en AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs AVIF – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["GIF", "AVIF"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Compression avec perte",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Tous les navigateurs", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Profondeur de couleur",
+          "values": ["8-bit (256)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "gif": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "gif": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "gif": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "gif": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "gif": "Tous les navigateurs",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Profondeur de couleur",
-          "values": {
-            "gif": "8-bit (256)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "gif": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "gif": false,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

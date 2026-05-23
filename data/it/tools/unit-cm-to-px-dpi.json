@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Converti centimetri in pixel a qualsiasi risoluzione DPI. Per design di stampa e preparazione immagini.",
-      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+      "featureList": [
+        "Conversione bidirezionale in tempo reale",
+        "Tutti i convertitori in un unico posto",
+        "Copia il risultato negli appunti",
+        "Calcolo locale nel browser"
+      ]
     },
     "howTo": {
       "name": "Come usare il convertitore",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Risoluzioni DPI a confronto",
-      "featureLabel": "Caratteristica",
-      "plans": [
+      "labelHeader": "Caratteristica",
+      "cols": ["300 DPI (stampa)", "72 DPI (schermo)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "300 DPI (stampa)"
+          "label": "10 cm",
+          "values": ["1.181 px", "283 px"]
         },
         {
-          "id": "unit2",
-          "name": "72 DPI (schermo)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "10 cm",
-          "values": {
-            "unit1": "1.181 px",
-            "unit2": "283 px"
-          }
+          "label": "A4 larghezza (21 cm)",
+          "values": ["2.480 px", "595 px"]
         },
         {
-          "name": "A4 larghezza (21 cm)",
-          "values": {
-            "unit1": "2.480 px",
-            "unit2": "595 px"
-          }
+          "label": "A4 altezza (29,7 cm)",
+          "values": ["3.508 px", "842 px"]
         },
         {
-          "name": "A4 altezza (29,7 cm)",
-          "values": {
-            "unit1": "3.508 px",
-            "unit2": "842 px"
-          }
+          "label": "Applicazione",
+          "values": ["Stampa professionale", "Grafica web"]
         },
         {
-          "name": "Applicazione",
-          "values": {
-            "unit1": "Stampa professionale",
-            "unit2": "Grafica web"
-          }
-        },
-        {
-          "name": "Qualità",
-          "values": {
-            "unit1": "Nitida a qualsiasi dimensione",
-            "unit2": "Solo per schermo"
-          }
+          "label": "Qualità",
+          "values": ["Nitida a qualsiasi dimensione", "Solo per schermo"]
         }
       ]
     },

@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "SVG till PNG-konverterare",
-      "alternateName": ["Konvertera SVG till PNG", "SVG till PNG konvertering", "Gratis SVG till PNG konverterare"],
+      "alternateName": [
+        "Konvertera SVG till PNG",
+        "SVG till PNG konvertering",
+        "Gratis SVG till PNG konverterare"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera SVG-vektorgrafik till PNG. Perfekt för dokument och sociala medier. Ingen installation behövs, fungerar på alla enheter. Gratis, privat och obegränsat.",
-      "featureList": ["SVG till PNG-konvertering", "Förlustfri PNG-utdata", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
+      "featureList": [
+        "SVG till PNG-konvertering",
+        "Förlustfri PNG-utdata",
+        "Batchkonvertering",
+        "Lokal webbläsarbearbetning",
+        "Ingen filuppladdning krävs"
+      ]
     },
     "howTo": {
       "name": "Hur man konverterar SVG till PNG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PNG – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["SVG", "PNG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Förlustrik komprimering",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Alla webbläsare", "Alla webbläsare"]
+        },
+        {
+          "label": "Färgdjup",
+          "values": ["N/A (vektor)", "8/16-bit"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "svg": "Alla webbläsare",
-            "png": "Alla webbläsare"
-          }
-        },
-        {
-          "name": "Färgdjup",
-          "values": {
-            "svg": "N/A (vektor)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

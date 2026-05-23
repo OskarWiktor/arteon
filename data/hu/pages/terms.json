@@ -1,19 +1,19 @@
 {
   "slug": "felhasznalasi-feltetelek",
   "metadata": {
-    "title": "Felhasznalasi Feltetelek – Arteon Ingyenes Online Eszkozok",
-    "description": "Felhasznalasi feltetelek az Arteon ingyenes online eszkozeihez. Ismerje meg a hasznalati felteteleket, szellemi tulajdont, felelossegkorlatozast."
+    "title": "Felhasznalasi Feltetelek – Arteon Ingyenes Eszkozok",
+    "description": "Felhasznalasi feltetelek az Arteon ingyenes eszkozeihez. Ismerje meg a hasznalati felteteleket, szellemi tulajdont, felelossegkorlatozast."
   },
   "hero": {
     "title": "Felhasznalasi Feltetelek",
-    "description": "Az Arteon ingyenes online eszkozeinek hasznalati feltetelei"
+    "description": "Az Arteon ingyenes eszkozeinek hasznalati feltetelei"
   },
   "version": "24.02.2026",
   "sections": [
     {
       "id": "introduction",
       "title": "1. Bevezetes",
-      "content": "Ezek a Felhasznalasi Feltetelek szabalyozzak az Arteon altal az arteonagency.pl oldalon biztositott ingyenes online eszkozok hasznalatat. Eszkozeink hasznalataval elfogadja ezeket a felteteleket."
+      "content": "Ezek a Felhasznalasi Feltetelek szabalyozzak az Arteon altal az arteonagency.pl oldalon biztositott ingyenes eszkozok hasznalatat. Eszkozeink hasznalataval elfogadja ezeket a felteteleket."
     },
     {
       "id": "provider",
@@ -73,7 +73,7 @@
   ],
   "cta": {
     "title": "Vissza az eszkozokhöz",
-    "description": "Ingyenes online eszkoz kepekkel, szoveggel es szinekkel valo munkához",
+    "description": "Ingyenes eszkoz kepekkel, szoveggel es szinekkel valo munkához",
     "btnOne": "Eszkozok"
   }
 }

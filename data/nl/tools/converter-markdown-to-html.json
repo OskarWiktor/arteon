@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Converteer Markdown naar HTML-formaat. Automatisch parsen en formatteren. Gratis.",
-      "featureList": ["Markdown to HTML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
+      "featureList": [
+        "Markdown to HTML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Markdown to HTML",
+        "Markdown to HTML",
+        "Free Markdown to HTML converter"
+      ]
     },
     "howTo": {
       "name": "Hoe Markdown naar HTML converteren",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom Markdown naar HTML converteren?",
-      "html": "<p class=\"text-mid mb-4\">MARKDOWN is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar HTML aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw MARKDOWN-bestanden direct in de browser om naar het HTML-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">MARKDOWN is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar HTML aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis converter zet uw MARKDOWN-bestanden direct in de browser om naar het HTML-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "Markdown to HTML conversion",
       "variant": "right"
@@ -128,64 +136,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Markdown vs HTML – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["Markdown", "HTML"],
+      "rows": [
         {
-          "id": "markdown",
-          "name": "Markdown"
+          "label": "Geneste gegevens",
+          "values": ["—", "✓"]
         },
         {
-          "id": "html",
-          "name": "HTML",
-          "highlighted": true
+          "label": "Tabelgegevens",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Schemavalidatie",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Menselijk leesbaar",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "API-standaard",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Compacte syntaxis",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Geneste gegevens",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Tabelgegevens",
-          "values": {
-            "markdown": true,
-            "html": true
-          }
-        },
-        {
-          "name": "Schemavalidatie",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Menselijk leesbaar",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        },
-        {
-          "name": "API-standaard",
-          "values": {
-            "markdown": false,
-            "html": false
-          }
-        },
-        {
-          "name": "Compacte syntaxis",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

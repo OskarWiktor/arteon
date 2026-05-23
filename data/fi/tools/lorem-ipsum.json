@@ -33,7 +33,7 @@
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
         "Business Ipsum generator",
-        "Dummy text generator online"
+        "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Ilmainen Lorem Ipsum -generaattori — 8 tyyliä: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business ja lisää. 9 luontitilaa. Kopioi tekstinä tai HTML:nä.",
@@ -254,122 +254,70 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Tekstityylien vertailu",
-      "featureLabel": "Ominaisuus",
-      "plans": [
-        {
-          "id": "classic",
-          "name": "Lorem Ipsum",
-          "highlighted": true
-        },
-        {
-          "id": "hipster",
-          "name": "Hipster"
-        },
-        {
-          "id": "business",
-          "name": "Business"
-        },
-        {
-          "id": "polish",
-          "name": "Paikallinen"
-        },
-        {
-          "id": "bacon",
-          "name": "Bacon"
-        },
-        {
-          "id": "cupcake",
-          "name": "Cupcake"
-        },
-        {
-          "id": "pirate",
-          "name": "Pirate"
-        },
-        {
-          "id": "legal",
-          "name": "Legal"
-        }
+      "labelHeader": "Ominaisuus",
+      "cols": [
+        "Lorem Ipsum",
+        "Hipster",
+        "Business",
+        "Paikallinen",
+        "Bacon",
+        "Cupcake",
+        "Pirate",
+        "Legal"
       ],
-      "features": [
+      "rows": [
         {
-          "name": "Kieli",
-          "values": {
-            "classic": "Latina",
-            "hipster": "Englanti",
-            "business": "Englanti",
-            "polish": "Paikallinen",
-            "bacon": "Englanti",
-            "cupcake": "Englanti",
-            "pirate": "Englanti",
-            "legal": "Englanti"
-          }
+          "label": "Kieli",
+          "values": [
+            "Latina",
+            "Englanti",
+            "Englanti",
+            "Paikallinen",
+            "Englanti",
+            "Englanti",
+            "Englanti",
+            "Englanti"
+          ]
         },
         {
-          "name": "Teema",
-          "values": {
-            "classic": "Filosofia",
-            "hipster": "Elämäntyyli",
-            "business": "Yritys",
-            "polish": "Yleinen",
-            "bacon": "Gastronomia",
-            "cupcake": "Leipomo",
-            "pirate": "Seikkailu",
-            "legal": "Oikeus"
-          }
+          "label": "Teema",
+          "values": [
+            "Filosofia",
+            "Elämäntyyli",
+            "Yritys",
+            "Yleinen",
+            "Gastronomia",
+            "Leipomo",
+            "Seikkailu",
+            "Oikeus"
+          ]
         },
         {
-          "name": "Visuaalinen neutraalius",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Visuaalinen neutraalius",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Luonnollinen rytmi",
-          "values": {
-            "classic": true,
-            "hipster": true,
-            "business": true,
-            "polish": true,
-            "bacon": true,
-            "cupcake": true,
-            "pirate": true,
-            "legal": true
-          }
+          "label": "Luonnollinen rytmi",
+          "values": ["✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"]
         },
         {
-          "name": "Alan standardi",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Alan standardi",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Huumori / luonne",
-          "values": {
-            "classic": "Neutraali",
-            "hipster": "Keskitaso",
-            "business": "Matala",
-            "polish": "Matala",
-            "bacon": "Korkea",
-            "cupcake": "Korkea",
-            "pirate": "Korkea",
-            "legal": "Matala"
-          }
+          "label": "Huumori / luonne",
+          "values": [
+            "Neutraali",
+            "Keskitaso",
+            "Matala",
+            "Matala",
+            "Korkea",
+            "Korkea",
+            "Korkea",
+            "Matala"
+          ]
         }
       ]
     },

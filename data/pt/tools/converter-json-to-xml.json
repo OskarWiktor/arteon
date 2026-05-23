@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter JSON para XML?",
-      "html": "<p class=\"text-mid mb-4\">JSON e um formato amplamente utilizado com grande compatibilidade. Dependendo do uso, a conversao para XML pode oferecer vantagens significativas - arquivos menores, melhor qualidade ou suporte mais amplo de plataformas.</p><p class=\"text-mid mb-4\">Este conversor online gratuito transforma seus arquivos JSON para o formato XML diretamente no navegador. Nenhum arquivo e enviado a servidores - todo o processo acontece localmente no seu dispositivo.</p><p class=\"text-mid\">Converta quantos arquivos precisar sem limites diarios, sem registro e sem marcas d'agua. Arraste e solte seus arquivos, ajuste a qualidade e baixe os resultados.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON e um formato amplamente utilizado com grande compatibilidade. Dependendo do uso, a conversao para XML pode oferecer vantagens significativas - arquivos menores, melhor qualidade ou suporte mais amplo de plataformas.</p><p class=\"text-mid mb-4\">Este conversorsforma seus arquivos JSON para o formato XML diretamente no navegador. Nenhum arquivo e enviado a servidores - todo o processo acontece localmente no seu dispositivo.</p><p class=\"text-mid\">Converta quantos arquivos precisar sem limites diarios, sem registro e sem marcas d'agua. Arraste e solte seus arquivos, ajuste a qualidade e baixe os resultados.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "JSON to XML conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs XML – comparação de formatos",
-      "plans": [
+      "labelHeader": "Funcionalidade",
+      "cols": ["JSON", "XML"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Dados hierárquicos",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "xml",
-          "name": "XML",
-          "highlighted": true
+          "label": "Dados tabulares",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Validação de schema",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Legível por humanos",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Padrão API",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Sintaxe compacta",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Dados hierárquicos",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Dados tabulares",
-          "values": {
-            "json": false,
-            "xml": false
-          }
-        },
-        {
-          "name": "Validação de schema",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Legível por humanos",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Padrão API",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Sintaxe compacta",
-          "values": {
-            "json": true,
-            "xml": false
-          }
-        }
-      ],
-      "featureLabel": "Funcionalidade"
+      ]
     },
     {
       "type": "gap",

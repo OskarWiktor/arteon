@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PDF vs WebP – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["PDF", "WebP"],
+      "rows": [
         {
-          "id": "pdf",
-          "name": "PDF"
+          "label": "Compression avec perte",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Visionneuse PDF intégrée", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "pdf": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "pdf": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "pdf": "Visionneuse PDF intégrée",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

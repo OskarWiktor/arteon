@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Μετατροπέας BMP σε PNG",
-      "alternateName": ["Μετατροπή BMP σε PNG", "Μετατροπέας BMP σε PNG", "Δωρεάν μετατροπέας BMP σε PNG"],
+      "alternateName": [
+        "Μετατροπή BMP σε PNG",
+        "Μετατροπέας BMP σε PNG",
+        "Δωρεάν μετατροπέας BMP σε PNG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης - τα αρχεία δεν φεύγουν από τη συσκευή σας.",
-      "featureList": ["Μετατροπή BMP σε PNG", "Έξοδος PNG χωρίς απώλειες", "Ομαδική μετατροπή", "Τοπική επεξεργασία στον browser", "Χωρίς μεταφόρτωση αρχείων"]
+      "featureList": [
+        "Μετατροπή BMP σε PNG",
+        "Έξοδος PNG χωρίς απώλειες",
+        "Ομαδική μετατροπή",
+        "Τοπική επεξεργασία στον browser",
+        "Χωρίς μεταφόρτωση αρχείων"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε BMP σε PNG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs PNG – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["BMP", "PNG"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": ["Όλοι οι περιηγητές", "Όλοι οι περιηγητές"]
+        },
+        {
+          "label": "Βάθος χρώματος",
+          "values": ["1/4/8/24/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "bmp": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "bmp": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "bmp": "Όλοι οι περιηγητές",
-            "png": "Όλοι οι περιηγητές"
-          }
-        },
-        {
-          "name": "Βάθος χρώματος",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",

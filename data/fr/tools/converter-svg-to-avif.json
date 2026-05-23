@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les graphiques vectoriels SVG en format raster AVIF compact. Outil gratuit dans le navigateur - sans inscription, sans limite, confidentialité totale.",
-      "featureList": ["Conversion en AVIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
-      "alternateName": ["Convertir SVG en AVIF", "Conversion SVG vers AVIF", "Convertisseur SVG en AVIF gratuit"]
+      "featureList": [
+        "Conversion en AVIF",
+        "Réglage de la qualité (60-95%)",
+        "Conversion par lots",
+        "Traitement local dans le navigateur"
+      ],
+      "alternateName": [
+        "Convertir SVG en AVIF",
+        "Conversion SVG vers AVIF",
+        "Convertisseur SVG en AVIF gratuit"
+      ]
     },
     "howTo": {
       "name": "Comment convertir SVG en AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs AVIF – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["SVG", "AVIF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Compression avec perte",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Tous les navigateurs", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Profondeur de couleur",
+          "values": ["N/A (vecteur)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "svg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "svg": "Tous les navigateurs",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Profondeur de couleur",
-          "values": {
-            "svg": "N/A (vecteur)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "svg": false,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

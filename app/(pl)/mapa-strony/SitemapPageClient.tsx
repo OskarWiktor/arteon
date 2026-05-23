@@ -1,9 +1,10 @@
-import Link from 'next/link';
-import Wrapper from '@/components/ui/Wrapper';
-import { JsonLd } from '@/components/seo/JsonLd';
+import Wrapper from '@/components/atoms/Wrapper';
+import { JsonLd } from '@/components/atoms/JsonLd';
 
 import type { NavItem } from '@/types/sitemap';
+import SectionHeader from '@/components/molecules/SectionHeader';
 
+import InlineLink from '@/components/atoms/InlineLink';
 type SitemapPageClientProps = {
   services: NavItem[];
   portfolioIndex: NavItem;
@@ -16,21 +17,21 @@ type SitemapPageClientProps = {
 
 function SitemapSection({ title, items }: { title: string; items: NavItem[] }) {
   return (
-    <section className="mb-8">
-      <h2 className="h3 mb-4">{title}</h2>
-      <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((item) => (
+    <section className='mb-8'>
+      <SectionHeader title={title} />
+      <ul className='grid gap-2 sm:grid-cols-2 lg:grid-cols-3'>
+        {items.map(item => (
           <li key={item.href}>
-            <Link href={item.href} prefetch={false} className="text-primary hover:text-primary text-sm hover:underline">
+            <InlineLink href={item.href} prefetch={false}>
               {item.title}
-            </Link>
+            </InlineLink>
             {item.children && item.children.length > 0 && (
-              <ul className="mt-1 ml-4 space-y-1">
-                {item.children.map((child) => (
+              <ul className='mt-1 ml-4 space-y-1'>
+                {item.children.map(child => (
                   <li key={child.href}>
-                    <Link href={child.href} prefetch={false} className="text-primary hover:text-primary text-sm hover:underline">
+                    <InlineLink href={child.href} prefetch={false}>
                       {child.title}
-                    </Link>
+                    </InlineLink>
                   </li>
                 ))}
               </ul>
@@ -42,34 +43,42 @@ function SitemapSection({ title, items }: { title: string; items: NavItem[] }) {
   );
 }
 
-export default function SitemapPageClient({ services, portfolioIndex, portfolioItems, blogArticleItems, tools, infoPages, jsonLd }: SitemapPageClientProps) {
+export default function SitemapPageClient({
+  services,
+  portfolioIndex,
+  portfolioItems,
+  blogArticleItems,
+  tools,
+  infoPages,
+  jsonLd,
+}: SitemapPageClientProps) {
   return (
     <>
-      <JsonLd schema={jsonLd} id="schema-sitemap-client" />
-      <Wrapper className="py-12">
-        <nav aria-label="okruszki" className="mb-6">
-          <ol className="flex gap-2 text-sm">
+      <JsonLd schema={jsonLd} id='schema-sitemap-client' />
+      <Wrapper className='py-12'>
+        <nav aria-label='okruszki' className='mb-6'>
+          <ol className='flex gap-2 text-sm'>
             <li>
-              <Link href="/" prefetch={false} className="text-primary hover:underline">
+              <InlineLink href='/' prefetch={false}>
                 Strona główna
-              </Link>
-              <span className="text-primary-mid ml-2">/</span>
+              </InlineLink>
+              <span className='text-primary-mid ml-2'>/</span>
             </li>
             <li>
-              <span className="text-primary" aria-current="page">
+              <span className='text-primary' aria-current='page'>
                 Mapa strony
               </span>
             </li>
           </ol>
         </nav>
 
-        <h1 className="h2 mb-8">Mapa strony</h1>
+        <h1 className='h2 mb-8'>Mapa strony</h1>
 
-        <SitemapSection title="Usługi" items={services} />
-        <SitemapSection title="Realizacje" items={[portfolioIndex, ...portfolioItems]} />
-        <SitemapSection title="Edukacja" items={blogArticleItems} />
-        <SitemapSection title="Narzędzia" items={tools} />
-        <SitemapSection title="Informacje" items={infoPages} />
+        <SitemapSection title='Usługi' items={services} />
+        <SitemapSection title='Realizacje' items={[portfolioIndex, ...portfolioItems]} />
+        <SitemapSection title='Edukacja' items={blogArticleItems} />
+        <SitemapSection title='Narzędzia' items={tools} />
+        <SitemapSection title='Informacje' items={infoPages} />
       </Wrapper>
     </>
   );

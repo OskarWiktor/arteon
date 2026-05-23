@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fotografii JPG în TIFF fara pierderi. Pentru tiparire si arhivare. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
-      "featureList": ["Conversie în TIFF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie JPG în TIFF", "Convertor JPG în TIFF", "Convertor gratuit JPG în TIFF"]
+      "featureList": [
+        "Conversie în TIFF",
+        "Ajustare calitate (60-95%)",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie JPG în TIFF",
+        "Convertor JPG în TIFF",
+        "Convertor gratuit JPG în TIFF"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți JPG în TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs TIFF – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["JPG", "TIFF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Compresie cu pierderi",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Toate browserele", "Doar Safari"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8-bit (16.7M)", "8/16/32-bit"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "jpg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "jpg": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "jpg": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "jpg": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "jpg": "Toate browserele",
-            "tiff": "Doar Safari"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "jpg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "jpg": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

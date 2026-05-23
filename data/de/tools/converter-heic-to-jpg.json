@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "iPhone HEIC-Fotos in universelles JPG umwandeln. Ohne Registrierung, ohne Server-Upload. Kostenloses Browser-Tool - ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
-      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["HEIC in JPG umwandeln", "HEIC zu JPG konvertieren", "Kostenloser HEIC-zu-JPG-Konverter"]
+      "featureList": [
+        "HEIC to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "HEIC in JPG umwandeln",
+        "HEIC zu JPG konvertieren",
+        "Kostenloser HEIC-zu-JPG-Konverter"
+      ]
     },
     "howTo": {
       "name": "HEIC to JPG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs JPG – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["HEIC", "JPG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Verlustbehaftete Komprimierung",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Verlustfreie Komprimierung",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparenz (Alphakanal)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animationsunterstützung",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowser-Unterstützung",
+          "values": ["Safari 13+ (macOS / iOS)", "Alle Browser"]
+        },
+        {
+          "label": "Farbtiefe",
+          "values": ["8/10-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kompakte Dateigröße",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadaten (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verlustbehaftete Komprimierung",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Verlustfreie Komprimierung",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparenz (Alphakanal)",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animationsunterstützung",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbrowser-Unterstützung",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "jpg": "Alle Browser"
-          }
-        },
-        {
-          "name": "Farbtiefe",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kompakte Dateigröße",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadaten (EXIF)",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

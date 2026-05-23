@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "RGB átváltása CMYK-ra és fordítva. Nyomdai előkészítéshez.",
-      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+      "featureList": [
+        "Kétirányú valós idejű átváltás",
+        "Minden átváltó egy helyen",
+        "Eredmény másolása a vágólapra",
+        "Helyi számítás a böngészőben"
+      ]
     },
     "howTo": {
       "name": "Hogyan használja az átváltót",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "RGB vs CMYK – összehasonlítás",
-      "featureLabel": "Tulajdonság",
-      "plans": [
+      "labelHeader": "Tulajdonság",
+      "cols": ["RGB", "CMYK"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "RGB"
+          "label": "Modell",
+          "values": ["Additív (fény)", "Szubtraktív (tinta)"]
         },
         {
-          "id": "unit2",
-          "name": "CMYK",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Modell",
-          "values": {
-            "unit1": "Additív (fény)",
-            "unit2": "Szubtraktív (tinta)"
-          }
+          "label": "Felhasználás",
+          "values": ["Képernyők, web", "Nyomtatás, csomagolás"]
         },
         {
-          "name": "Felhasználás",
-          "values": {
-            "unit1": "Képernyők, web",
-            "unit2": "Nyomtatás, csomagolás"
-          }
+          "label": "Színtér",
+          "values": ["Szélesebb (több szín)", "Szűkebb"]
         },
         {
-          "name": "Színtér",
-          "values": {
-            "unit1": "Szélesebb (több szín)",
-            "unit2": "Szűkebb"
-          }
+          "label": "Fekete",
+          "values": ["R=0, G=0, B=0", "K=100%"]
         },
         {
-          "name": "Fekete",
-          "values": {
-            "unit1": "R=0, G=0, B=0",
-            "unit2": "K=100%"
-          }
-        },
-        {
-          "name": "Fehér",
-          "values": {
-            "unit1": "R=255, G=255, B=255",
-            "unit2": "Nincs tinta (papír)"
-          }
+          "label": "Fehér",
+          "values": ["R=255, G=255, B=255", "Nincs tinta (papír)"]
         }
       ]
     },

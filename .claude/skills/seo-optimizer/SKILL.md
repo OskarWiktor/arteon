@@ -73,7 +73,10 @@ Use this skill when:
 
 ```html
 <!-- Good: Compelling, includes keywords, call-to-action, 150-160 chars -->
-<meta name="description" content="Master React Hooks with our comprehensive guide. Learn useState, useEffect, and custom hooks with practical examples. Start building better React apps today." />
+<meta
+  name="description"
+  content="Master React Hooks with our comprehensive guide. Learn useState, useEffect, and custom hooks with practical examples. Start building better React apps today."
+/>
 
 <!-- Bad: Too short, no value proposition -->
 <meta name="description" content="React Hooks guide and tutorial" />
@@ -109,7 +112,13 @@ Use this skill when:
 
 ```html
 <!-- Optimized image -->
-<img src="/images/react-hooks-diagram-800w.webp" alt="React Hooks lifecycle diagram showing useState and useEffect" width="800" height="600" loading="lazy" />
+<img
+  src="/images/react-hooks-diagram-800w.webp"
+  alt="React Hooks lifecycle diagram showing useState and useEffect"
+  width="800"
+  height="600"
+  loading="lazy"
+/>
 ```
 
 **Best Practices:**
@@ -280,7 +289,12 @@ Sitemap: https://example.com/sitemap.xml
 <link rel="preload" href="/fonts/main.woff2" as="font" crossorigin />
 
 <!-- Defer non-critical CSS -->
-<link rel="preload" href="/styles/non-critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<link
+  rel="preload"
+  href="/styles/non-critical.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+/>
 
 <!-- Async/defer JavaScript -->
 <script src="/js/analytics.js" async></script>

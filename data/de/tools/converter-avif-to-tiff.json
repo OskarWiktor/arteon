@@ -128,78 +128,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs TIFF – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["AVIF", "TIFF"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Verlustbehaftete Komprimierung",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Verlustfreie Komprimierung",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparenz (Alphakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunterstützung",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowser-Unterstützung",
+          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Nur Safari"]
+        },
+        {
+          "label": "Farbtiefe",
+          "values": ["8/10/12-bit, HDR", "8/16/32-bit"]
+        },
+        {
+          "label": "Kompakte Dateigröße",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadaten (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verlustbehaftete Komprimierung",
-          "values": {
-            "avif": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Verlustfreie Komprimierung",
-          "values": {
-            "avif": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Transparenz (Alphakanal)",
-          "values": {
-            "avif": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Animationsunterstützung",
-          "values": {
-            "avif": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Webbrowser-Unterstützung",
-          "values": {
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
-            "tiff": "Nur Safari"
-          }
-        },
-        {
-          "name": "Farbtiefe",
-          "values": {
-            "avif": "8/10/12-bit, HDR",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Kompakte Dateigröße",
-          "values": {
-            "avif": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadaten (EXIF)",
-          "values": {
-            "avif": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

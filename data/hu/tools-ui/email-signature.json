@@ -160,7 +160,7 @@
     "helper": "Technikai előnézet, kompatibilis a Gmail, Outlook és a legtöbb e-mail klienssel.",
     "copySuccess": "Másolva – illessze be a Gmailbe",
     "copyError": "Hiba a másolás során",
-    "copyButton": "Aláírás másolása (Gmail / Outlook)",
+    "ButtonCopy": "Aláírás másolása (Gmail / Outlook)",
     "copyRawButton": "HTML-kód másolása",
     "copyRawSuccess": "HTML-kód másolva",
     "downloadButton": "Letöltés HTML-ben",

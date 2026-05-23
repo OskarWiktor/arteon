@@ -2,7 +2,19 @@
 // Social icons (used in email signature rendering)
 // ---------------------------------------------------------------------------
 
-export type SocialPlatform = 'linkedin' | 'instagram' | 'facebook' | 'twitter' | 'youtube' | 'tiktok' | 'github' | 'dribbble' | 'behance' | 'whatsapp' | 'telegram' | 'pinterest';
+export type SocialPlatform =
+  | 'linkedin'
+  | 'instagram'
+  | 'facebook'
+  | 'twitter'
+  | 'youtube'
+  | 'tiktok'
+  | 'github'
+  | 'dribbble'
+  | 'behance'
+  | 'whatsapp'
+  | 'telegram'
+  | 'pinterest';
 
 export type IconSize = 'small' | 'medium' | 'large';
 
@@ -18,7 +30,19 @@ export type AvatarShape = 'circle' | 'rounded' | 'square';
 export type AvatarSize = 'small' | 'medium' | 'large';
 export type DividerStyle = 'solid' | 'dashed' | 'dotted';
 export type DividerWidth = 1 | 2 | 3;
-export type SocialKey = 'linkedin' | 'instagram' | 'facebook' | 'tiktok' | 'youtube' | 'x' | 'github' | 'dribbble' | 'behance' | 'whatsapp' | 'telegram' | 'pinterest';
+export type SocialKey =
+  | 'linkedin'
+  | 'instagram'
+  | 'facebook'
+  | 'tiktok'
+  | 'youtube'
+  | 'x'
+  | 'github'
+  | 'dribbble'
+  | 'behance'
+  | 'whatsapp'
+  | 'telegram'
+  | 'pinterest';
 export type SocialIconSize = 'small' | 'medium' | 'large';
 export type SocialIconColorMode = 'platform' | 'accent' | 'text';
 
@@ -28,7 +52,14 @@ export interface SocialIconSettings {
   colorMode: SocialIconColorMode;
 }
 
-export type ActivePanel = 'identity' | 'buttons' | 'social' | 'appearance' | 'textStyle' | 'spacing' | 'legal';
+export type ActivePanel =
+  | 'identity'
+  | 'buttons'
+  | 'social'
+  | 'appearance'
+  | 'textStyle'
+  | 'spacing'
+  | 'legal';
 
 export type TextElementKey = 'name' | 'jobTitle' | 'company' | 'contact' | 'socials' | 'legal';
 
@@ -47,7 +78,15 @@ export interface TextStyleConfig {
   customColors: string[];
 }
 
-export type LayoutType = 'standard' | 'top-banner' | 'label-column' | 'centered' | 'compact' | 'two-column' | 'minimal' | 'bottom-bar';
+export type LayoutType =
+  | 'standard'
+  | 'top-banner'
+  | 'label-column'
+  | 'centered'
+  | 'compact'
+  | 'two-column'
+  | 'minimal'
+  | 'bottom-bar';
 
 export interface BorderSides {
   left: boolean;
@@ -102,7 +141,14 @@ export interface ThemePreset {
   textColor: string;
 }
 
-export type SpacingKey = 'afterName' | 'afterTitle' | 'afterExtra' | 'afterContact' | 'afterSocials' | 'afterCta' | 'beforeLegal';
+export type SpacingKey =
+  | 'afterName'
+  | 'afterTitle'
+  | 'afterExtra'
+  | 'afterContact'
+  | 'afterSocials'
+  | 'afterCta'
+  | 'beforeLegal';
 
 export interface SpacingConfig {
   afterName: number;

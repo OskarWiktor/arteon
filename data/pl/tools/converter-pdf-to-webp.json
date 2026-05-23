@@ -2,13 +2,13 @@
   "toolKey": "pdfToWebp",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter PDF na WebP - lekkie obrazy ze stron PDF",
-    "description": "Zamień każdą stronę PDF na lekki obraz WebP. Idealny do stron internetowych. Bez rejestracji, bez limitu - konwersja w przeglądarce.",
+    "title": "Darmowy konwerter formatu PDF na WebP bez limitu plików i rejestracji",
+    "description": "Zamień każdą stronę PDF na lekki obraz WebP. Idealny do stron internetowych. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-pdf-na-webp"
   },
   "hero": {
-    "title": "Zamień strony PDF na lekkie obrazy WebP",
+    "title": "Darmowy konwerter formatu PDF na lekkie obrazy WebP",
     "description": "Wgraj plik PDF, a narzędzie zamieni każdą stronę na lekki obraz WebP - idealny do publikacji na stronie internetowej. Konwersja odbywa się lokalnie.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter PDF na WebP - darmowy, bez limitu stron",
-      "alternateName": ["Zamiana PDF na WebP online", "Konwersja PDF do WebP", "PDF to WebP converter"],
+      "alternateName": ["Zamiana PDF na WebP", "Konwersja PDF do WebP", "PDF to WebP converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
-      "description": "Darmowy konwerter PDF na WebP online. Zamień strony PDF na obrazy WebP w przeglądarce - pliki nie są wysyłane na serwer.",
-      "featureList": ["Konwersja stron PDF na WebP", "Przetwarzanie wszystkich stron dokumentu", "Renderowanie lokalne w przeglądarce", "Pobieranie pojedynczo lub wszystkich naraz"]
+      "description": "Darmowy konwerter PDF na WebP. Zamień strony PDF na obrazy WebP w przeglądarce - pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja stron PDF na WebP",
+        "Przetwarzanie wszystkich stron dokumentu",
+        "Renderowanie lokalne w przeglądarce",
+        "Pobieranie pojedynczo lub wszystkich naraz"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić PDF na WebP online",
+      "name": "Jak zamienić PDF na WebP",
       "description": "Instrukcja konwersji stron PDF na format WebP.",
       "steps": [
         {
@@ -164,71 +169,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PDF vs WebP – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["PDF", "WebP"],
+      "rows": [
         {
-          "id": "pdf",
-          "name": "PDF"
+          "label": "Kompresja stratna",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wbudowana przeglądarka PDF", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "pdf": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "pdf": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "pdf": "Wbudowana przeglądarka PDF",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

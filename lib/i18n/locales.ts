@@ -1,6 +1,26 @@
-import type { Locale, LocaleConfig, LegalLink, NavigationUi, FooterUi, DesktopOnlyUi } from '@/types/locale';
-export type { LocaleConfig, LegalLink, NavigationUi, FooterUi, DesktopOnlyUi } from '@/types/locale';
-import type { BreadcrumbsDictionary, ContactFormDictionary, ToolsCarouselDictionary, LanguageSwitcherDictionary, MobileNavDictionary, InfoBannerDictionary } from '@/lib/i18n/get-dictionary';
+import type {
+  Locale,
+  LocaleConfig,
+  LegalLink,
+  NavigationUi,
+  FooterUi,
+  DesktopOnlyUi,
+} from '@/types/locale';
+export type {
+  LocaleConfig,
+  LegalLink,
+  NavigationUi,
+  FooterUi,
+  DesktopOnlyUi,
+} from '@/types/locale';
+import type {
+  BreadcrumbsDictionary,
+  ContactFormDictionary,
+  ToolsCarouselDictionary,
+  LanguageSwitcherDictionary,
+  MobileNavDictionary,
+  InfoBannerDictionary,
+} from '@/lib/i18n/get-dictionary';
 
 import plDict from '@/data/pl/dictionary.json';
 import enDict from '@/data/en/dictionary.json';
@@ -243,29 +263,46 @@ export function getLocaleConfig(locale: Locale): LocaleConfig {
 // Re-exports from centralized dictionaries (data/{locale}/dictionary.json)
 // ---------------------------------------------------------------------------
 
-export const LEGAL_LINKS: Record<Locale, LegalLink[]> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.legal])) as Record<Locale, LegalLink[]>;
+export const LEGAL_LINKS: Record<Locale, LegalLink[]> = Object.fromEntries(
+  Object.entries(dicts).map(([k, d]) => [k, d.legal]),
+) as Record<Locale, LegalLink[]>;
 
 export function getLegalLinks(locale: Locale): LegalLink[] {
   return LEGAL_LINKS[locale];
 }
 
-export const NAVIGATION_UI: Record<Locale, NavigationUi> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.nav])) as Record<Locale, NavigationUi>;
+export const NAVIGATION_UI: Record<Locale, NavigationUi> = Object.fromEntries(
+  Object.entries(dicts).map(([k, d]) => [k, d.nav]),
+) as Record<Locale, NavigationUi>;
 
-export const FOOTER_UI: Record<Locale, FooterUi> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.footer])) as Record<Locale, FooterUi>;
+export const FOOTER_UI: Record<Locale, FooterUi> = Object.fromEntries(
+  Object.entries(dicts).map(([k, d]) => [k, d.footer]),
+) as Record<Locale, FooterUi>;
 
-export const DESKTOP_ONLY_UI: Record<Locale, DesktopOnlyUi> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.desktopOnly])) as Record<Locale, DesktopOnlyUi>;
+export const DESKTOP_ONLY_UI: Record<Locale, DesktopOnlyUi> = Object.fromEntries(
+  Object.entries(dicts).map(([k, d]) => [k, d.desktopOnly]),
+) as Record<Locale, DesktopOnlyUi>;
 
-export const BREADCRUMBS_UI: Record<Locale, BreadcrumbsDictionary> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.breadcrumbs])) as Record<Locale, BreadcrumbsDictionary>;
+export const BREADCRUMBS_UI: Record<Locale, BreadcrumbsDictionary> = Object.fromEntries(
+  Object.entries(dicts).map(([k, d]) => [k, d.breadcrumbs]),
+) as Record<Locale, BreadcrumbsDictionary>;
 
-export const CONTACT_FORM_UI: Record<Locale, ContactFormDictionary> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.contactForm])) as Record<Locale, ContactFormDictionary>;
+export const CONTACT_FORM_UI: Record<Locale, ContactFormDictionary> = Object.fromEntries(
+  Object.entries(dicts).map(([k, d]) => [k, d.contactForm]),
+) as Record<Locale, ContactFormDictionary>;
 
-export const TOOLS_CAROUSEL_UI: Record<Locale, ToolsCarouselDictionary> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.toolsCarousel])) as Record<Locale, ToolsCarouselDictionary>;
+export const TOOLS_CAROUSEL_UI: Record<Locale, ToolsCarouselDictionary> = Object.fromEntries(
+  Object.entries(dicts).map(([k, d]) => [k, d.toolsCarousel]),
+) as Record<Locale, ToolsCarouselDictionary>;
 
-export const LANGUAGE_SWITCHER_UI: Record<Locale, LanguageSwitcherDictionary> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.languageSwitcher])) as Record<
-  Locale,
-  LanguageSwitcherDictionary
->;
+export const LANGUAGE_SWITCHER_UI: Record<Locale, LanguageSwitcherDictionary> = Object.fromEntries(
+  Object.entries(dicts).map(([k, d]) => [k, d.languageSwitcher]),
+) as Record<Locale, LanguageSwitcherDictionary>;
 
-export const MOBILE_NAV_UI: Record<Locale, MobileNavDictionary> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.mobileNav])) as Record<Locale, MobileNavDictionary>;
+export const MOBILE_NAV_UI: Record<Locale, MobileNavDictionary> = Object.fromEntries(
+  Object.entries(dicts).map(([k, d]) => [k, d.mobileNav]),
+) as Record<Locale, MobileNavDictionary>;
 
-export const INFO_BANNER_UI: Record<Locale, InfoBannerDictionary> = Object.fromEntries(Object.entries(dicts).map(([k, d]) => [k, d.infoBanner])) as Record<Locale, InfoBannerDictionary>;
+export const INFO_BANNER_UI: Record<Locale, InfoBannerDictionary> = Object.fromEntries(
+  Object.entries(dicts).map(([k, d]) => [k, d.infoBanner]),
+) as Record<Locale, InfoBannerDictionary>;

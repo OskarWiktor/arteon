@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes WebP-t PDF-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A WebP szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a PDF formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a WebP fajlokat PDF formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A WebP szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a PDF formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes konvertalo kozvetlenul a bongeszoben alakitja at a WebP fajlokat PDF formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "WebP to PDF conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs PDF – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["WebP", "PDF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Veszteséges tömörítés",
+          "values": ["✓", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Veszteségmentes tömörítés",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Átlátszóság (alfa csatorna)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animáció támogatás",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Böngészőtámogatás",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Beépített PDF-megjelenítő"]
+        },
+        {
+          "label": "Kis fájlméret",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metaadatok (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Veszteséges tömörítés",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Veszteségmentes tömörítés",
-          "values": {
-            "webp": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Átlátszóság (alfa csatorna)",
-          "values": {
-            "webp": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Animáció támogatás",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Böngészőtámogatás",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "pdf": "Beépített PDF-megjelenítő"
-          }
-        },
-        {
-          "name": "Kis fájlméret",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metaadatok (EXIF)",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

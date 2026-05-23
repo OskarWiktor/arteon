@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter PNG-grafik til professionelt TIFF-format. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
-      "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
-      "alternateName": ["Konvertér PNG til TIFF", "PNG til TIFF konvertering", "Gratis PNG til TIFF konverter"]
+      "featureList": [
+        "Konvertering til TIFF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal behandling i browseren"
+      ],
+      "alternateName": [
+        "Konvertér PNG til TIFF",
+        "PNG til TIFF konvertering",
+        "Gratis PNG til TIFF konverter"
+      ]
     },
     "howTo": {
       "name": "Hvordan konverterer man PNG til TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs TIFF – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["PNG", "TIFF"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Tabsgivende komprimering",
+          "values": ["—", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Alle browsere", "Kun Safari"]
+        },
+        {
+          "label": "Farvedybde",
+          "values": ["8/16-bit", "8/16/32-bit"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "png": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "png": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "png": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "png": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "png": "Alle browsere",
-            "tiff": "Kun Safari"
-          }
-        },
-        {
-          "name": "Farvedybde",
-          "values": {
-            "png": "8/16-bit",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "png": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "png": false,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

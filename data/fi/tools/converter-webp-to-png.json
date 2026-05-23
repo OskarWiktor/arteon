@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "WebP PNG -muunnin",
-      "alternateName": ["Muunna WEBP PNG-muotoon", "WEBP:n muunto PNG-muotoon", "Ilmainen WEBP–PNG-muunnin"],
+      "alternateName": [
+        "Muunna WEBP PNG-muotoon",
+        "WEBP:n muunto PNG-muotoon",
+        "Ilmainen WEBP–PNG-muunnin"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
-      "featureList": ["WEBP – PNG -muunnos", "Häviötön PNG-tulos", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
+      "featureList": [
+        "WEBP – PNG -muunnos",
+        "Häviötön PNG-tulos",
+        "Erämuunnos",
+        "Paikallinen selainprosessointi",
+        "Ei tiedostojen latausta palvelimelle"
+      ]
     },
     "howTo": {
       "name": "WEBP muuntaminen PNG-muotoon",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs PNG – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["WebP", "PNG"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Häviöllinen pakkaus",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Häviötön pakkaus",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Läpinäkyvyys (alfakanava)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animaatiotuki",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Selaintuki",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Kaikki selaimet"]
+        },
+        {
+          "label": "Värisyvyys",
+          "values": ["8-bit (16.7M)", "8/16-bit"]
+        },
+        {
+          "label": "Pieni tiedostokoko",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metatiedot (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Häviöllinen pakkaus",
-          "values": {
-            "webp": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Häviötön pakkaus",
-          "values": {
-            "webp": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Läpinäkyvyys (alfakanava)",
-          "values": {
-            "webp": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animaatiotuki",
-          "values": {
-            "webp": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Selaintuki",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "png": "Kaikki selaimet"
-          }
-        },
-        {
-          "name": "Värisyvyys",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Pieni tiedostokoko",
-          "values": {
-            "webp": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metatiedot (EXIF)",
-          "values": {
-            "webp": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

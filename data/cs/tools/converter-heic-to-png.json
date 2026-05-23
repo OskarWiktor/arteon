@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte fotky HEIC z iPhonu na bezztratove PNG. Plna kvalita a pruhlednost. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Převést HEIC na PNG", "Konverze HEIC do PNG", "Převodník HEIC na PNG zdarma"]
+      "featureList": [
+        "HEIC to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Převést HEIC na PNG",
+        "Konverze HEIC do PNG",
+        "Převodník HEIC na PNG zdarma"
+      ]
     },
     "howTo": {
       "name": "HEIC to PNG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs PNG – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["HEIC", "PNG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Ztrátová komprese",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Safari 13+ (macOS / iOS)", "Všechny prohlížeče"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["8/10-bit, HDR", "8/16-bit"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "heic": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "heic": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "png": "Všechny prohlížeče"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

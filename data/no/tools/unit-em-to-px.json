@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Regn om CSS em til piksler og omvendt.",
-      "featureList": ["Toveis-konvertering i sanntid", "Alle kalkulatorer samlet på ett sted", "Kopier resultat til utklippstavle", "Lokal beregning i nettleseren"]
+      "featureList": [
+        "Toveis-konvertering i sanntid",
+        "Alle kalkulatorer samlet på ett sted",
+        "Kopier resultat til utklippstavle",
+        "Lokal beregning i nettleseren"
+      ]
     },
     "howTo": {
       "name": "Slik bruker du kalkulatoren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "em vs px vs rem",
-      "featureLabel": "Egenskap",
-      "plans": [
+      "labelHeader": "Egenskap",
+      "cols": ["em", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "em"
+          "label": "Referanse",
+          "values": ["Foreldrens skrift", "Fast piksel"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Referanse",
-          "values": {
-            "unit1": "Foreldrens skrift",
-            "unit2": "Fast piksel"
-          }
+          "label": "Kaskaderer",
+          "values": ["Ja", "Nei"]
         },
         {
-          "name": "Kaskaderer",
-          "values": {
-            "unit1": "Ja",
-            "unit2": "Nei"
-          }
+          "label": "Responsiv",
+          "values": ["Ja", "Nei"]
         },
         {
-          "name": "Responsiv",
-          "values": {
-            "unit1": "Ja",
-            "unit2": "Nei"
-          }
+          "label": "Tilgjengelighet",
+          "values": ["Respekterer innstillinger", "Fast størrelse"]
         },
         {
-          "name": "Tilgjengelighet",
-          "values": {
-            "unit1": "Respekterer innstillinger",
-            "unit2": "Fast størrelse"
-          }
-        },
-        {
-          "name": "Forutsigbarhet",
-          "values": {
-            "unit1": "Kontekstavhengig",
-            "unit2": "Alltid konstant"
-          }
+          "label": "Forutsigbarhet",
+          "values": ["Kontekstavhengig", "Alltid konstant"]
         }
       ]
     },

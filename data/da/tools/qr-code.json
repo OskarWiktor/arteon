@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "QR-kode-generator uden login og registrering",
-      "alternateName": ["QR-kodeskaber", "vCard QR-kodegenerator", "Gratis QR-generator", "QR-kodeværktøj"],
+      "alternateName": [
+        "QR-kodeskaber",
+        "vCard QR-kodegenerator",
+        "Gratis QR-generator",
+        "QR-kodeværktøj"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
       "description": "Opret en QR-kode til hjemmeside, visitkort, menu eller flyer. Vælg datatype, tilpas farver og størrelse, og download derefter PNG- eller SVG-fil.",
@@ -221,68 +226,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG – hvilket format skal man vælge til tryk?",
-      "plans": [
+      "cols": ["PNG (raster)", "SVG (vektor)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (raster)"
+          "label": "Web og sociale medier",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (vektor)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Web og sociale medier",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Flyers og visitkort",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Flyers og visitkort",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Plakater og bannere (stort format)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Plakater og bannere (stort format)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Skalering uden kvalitetstab",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Skalering uden kvalitetstab",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Redigering i grafisk applikation",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Redigering i grafisk applikation",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Mindre filstørrelse",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Mindre filstørrelse",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Præsentationer",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Præsentationer",
+          "values": ["✓", "✓"]
         }
       ]
     },

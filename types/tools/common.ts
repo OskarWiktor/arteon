@@ -94,21 +94,26 @@ export type ToolItemKey =
   | 'inchesToPxDpi'
   | 'dpiToPpi'
   | 'hexToRgb'
-  | 'rgbToHsl'
   | 'rgbToCmyk'
   // Unit converters - programming/technical
   | 'bytesConverter'
   | 'unixTimestamp'
   | 'decToBin'
   | 'decToHex'
-  | 'mbpsToMBs'
-  | 'vwToPx'
-  | 'twToPx';
+  | 'mbpsToMBs';
 
 // ---------------------------------------------------------------------------
 // Tool section key - groups tools in navigation / index page
 // ---------------------------------------------------------------------------
-export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory' | 'druk' | 'konwertery' | 'dokumenty' | 'jednostki';
+export type ToolsSectionKey =
+  | 'obrazy'
+  | 'seo'
+  | 'email'
+  | 'kolory'
+  | 'druk'
+  | 'konwertery'
+  | 'dokumenty'
+  | 'jednostki';
 
 // ---------------------------------------------------------------------------
 // Per-locale text for a single tool (used in nav, carousel, index page)

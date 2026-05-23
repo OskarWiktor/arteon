@@ -13,7 +13,7 @@
   },
   "footer": {
     "copyright": "Tutti i diritti riservati.",
-    "description": "Strumenti online gratuiti per sviluppatori web, designer e specialisti di marketing.",
+    "description": "Strumenti gratuiti per sviluppatori web, designer e specialisti di marketing.",
     "companyDataLabel": "Dati aziendali",
     "toolsLabel": "Strumenti",
     "legalLabel": "Documenti legali",
@@ -80,7 +80,7 @@
     "success": "Messaggio inviato! Risponderemo il prima possibile."
   },
   "toolsCarousel": {
-    "defaultTitle": "Strumenti online gratuiti",
+    "defaultTitle": "Strumenti gratuiti",
     "seeAllTools": "Vedi tutti gli strumenti",
     "carouselLabel": "Carosello degli strumenti",
     "scrollLeft": "Scorri a sinistra",

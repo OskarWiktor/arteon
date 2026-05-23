@@ -128,68 +128,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PDF – formatsammenligning",
-      "plans": [
+      "cols": ["SVG", "PDF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Komprimering med tap",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "svg": false,
-            "pdf": false
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "svg": true,
-            "pdf": true
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "svg": true,
-            "pdf": true
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "svg": true,
-            "pdf": false
-          }
+          "label": "Nettleserstøtte",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "svg": true,
-            "pdf": false
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "svg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "pdf": false
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
       ]
     },

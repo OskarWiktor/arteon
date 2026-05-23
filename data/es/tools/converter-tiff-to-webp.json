@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte archivos TIFF a WebP ligero. Enorme reduccion de tamano con calidad preservada. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
-      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convertir TIFF a WEBP", "Conversión de TIFF a WEBP", "Convertidor TIFF a WEBP gratis"]
+      "featureList": [
+        "TIFF to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convertir TIFF a WEBP",
+        "Conversión de TIFF a WEBP",
+        "Convertidor TIFF a WEBP gratis"
+      ]
     },
     "howTo": {
       "name": "TIFF to WebP",
@@ -158,85 +167,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de TIFF a WebP en la práctica",
-      "html": "<p class=\"text-mid mb-4\">TIFF a WebP ofrece la mayor reducción: archivos de 20–100 MB pasan a 200 KB – 2 MB. Para publicar fotos profesionales en la web, es lo más eficiente.</p><p class=\"text-mid mb-4\">A calidad 80–85%, WebP mantiene excelente calidad visual. Para galerías, portfolios y revistas online: calidad profesional a una fracción del tamaño original.</p><p class=\"text-mid\">Fotógrafos y agencias en España pueden convertir resultados de sesiones de alta resolución en formatos web-optimizados localmente – sin cloud, conforme al RGPD.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF a WebP ofrece la mayor reducción: archivos de 20–100 MB pasan a 200 KB – 2 MB. Para publicar fotos profesionales en la web, es lo más eficiente.</p><p class=\"text-mid mb-4\">A calidad 80–85%, WebP mantiene excelente calidad visual. Para galerías, portfolios y revistas: calidad profesional a una fracción del tamaño original.</p><p class=\"text-mid\">Fotógrafos y agencias en España pueden convertir resultados de sesiones de alta resolución en formatos web-optimizados localmente – sin cloud, conforme al RGPD.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs WebP – comparación de formatos",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["TIFF", "WebP"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Compresión con pérdida",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compresión sin pérdida",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparencia (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Soporte de animación",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Compatibilidad con navegadores",
+          "values": ["Solo Safari", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Profundidad de color",
+          "values": ["8/16/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Tamaño de archivo compacto",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadatos (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresión con pérdida",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compresión sin pérdida",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparencia (canal alfa)",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Soporte de animación",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compatibilidad con navegadores",
-          "values": {
-            "tiff": "Solo Safari",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Profundidad de color",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Tamaño de archivo compacto",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadatos (EXIF)",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Característica"
+      ]
     },
     {
       "type": "gap",

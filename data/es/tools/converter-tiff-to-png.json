@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte archivos TIFF a PNG sin perdidas. Conserva la calidad de escaneos y graficos. Herramienta gratuita en el navegador - sin registro, sin límites, privacidad total.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convertir TIFF a PNG", "Conversión de TIFF a PNG", "Convertidor TIFF a PNG gratis"]
+      "featureList": [
+        "TIFF to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convertir TIFF a PNG",
+        "Conversión de TIFF a PNG",
+        "Convertidor TIFF a PNG gratis"
+      ]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -158,85 +167,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de TIFF a PNG en la práctica",
-      "html": "<p class=\"text-mid mb-4\">Cuando los TIFF se necesitan para edición en programas gráficos o sitios con transparencia, PNG es el formato adecuado – sin pérdida y universalmente compatible.</p><p class=\"text-mid mb-4\">PNG preserva la calidad completa y transparencia del TIFF. Los archivos son más pequeños que TIFF pero más grandes que JPEG/WebP. Para Figma, Canva o Photoshop, PNG es ideal.</p><p class=\"text-mid\">Para preparar salidas de escáner e imágenes de archivo para uso online, la conversión local ofrece un flujo seguro y rápido.</p>"
+      "html": "<p class=\"text-mid mb-4\">Cuando los TIFF se necesitan para edición en programas gráficos o sitios con transparencia, PNG es el formato adecuado – sin pérdida y universalmente compatible.</p><p class=\"text-mid mb-4\">PNG preserva la calidad completa y transparencia del TIFF. Los archivos son más pequeños que TIFF pero más grandes que JPEG/WebP. Para Figma, Canva o Photoshop, PNG es ideal.</p><p class=\"text-mid\">Para preparar salidas de escáner e imágenes de archivo para uso, la conversión local ofrece un flujo seguro y rápido.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PNG – comparación de formatos",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["TIFF", "PNG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Compresión con pérdida",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Compresión sin pérdida",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparencia (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Soporte de animación",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Compatibilidad con navegadores",
+          "values": ["Solo Safari", "Todos los navegadores"]
+        },
+        {
+          "label": "Profundidad de color",
+          "values": ["8/16/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Tamaño de archivo compacto",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadatos (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresión con pérdida",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Compresión sin pérdida",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparencia (canal alfa)",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Soporte de animación",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Compatibilidad con navegadores",
-          "values": {
-            "tiff": "Solo Safari",
-            "png": "Todos los navegadores"
-          }
-        },
-        {
-          "name": "Profundidad de color",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Tamaño de archivo compacto",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadatos (EXIF)",
-          "values": {
-            "tiff": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Característica"
+      ]
     },
     {
       "type": "gap",

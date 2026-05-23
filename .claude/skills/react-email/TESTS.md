@@ -253,7 +253,7 @@ Create an email with a prominent call-to-action button.
 **Pass Criteria:**
 
 ```tsx
-<Button className="box-border ... ...">Click Here</Button>
+<Button className='box-border ... ...'>Click Here</Button>
 ```
 
 ---
@@ -767,7 +767,16 @@ Create a simple text-only welcome email with just a heading and paragraph.
 
 ```tsx
 // CORRECT - only imports what's used
-import { Html, Head, Body, Container, Heading, Text, Tailwind, pixelBasedPreset } from '@react-email/components';
+import {
+  Html,
+  Head,
+  Body,
+  Container,
+  Heading,
+  Text,
+  Tailwind,
+  pixelBasedPreset,
+} from '@react-email/components';
 
 // WRONG - imports unused components
 import {

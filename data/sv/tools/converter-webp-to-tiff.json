@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera WebP-bilder till professionellt TIFF for utskrift och arkivering. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
-      "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
-      "alternateName": ["Konvertera WEBP till TIFF", "WEBP till TIFF konvertering", "Gratis WEBP till TIFF konverterare"]
+      "featureList": [
+        "Konvertering till TIFF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal bearbetning i webbläsaren"
+      ],
+      "alternateName": [
+        "Konvertera WEBP till TIFF",
+        "WEBP till TIFF konvertering",
+        "Gratis WEBP till TIFF konverterare"
+      ]
     },
     "howTo": {
       "name": "Hur konverterar man WebP till TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs TIFF – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["WebP", "TIFF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Förlustrik komprimering",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Endast Safari"]
+        },
+        {
+          "label": "Färgdjup",
+          "values": ["8-bit (16.7M)", "8/16/32-bit"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "webp": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "webp": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "webp": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "webp": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "tiff": "Endast Safari"
-          }
-        },
-        {
-          "name": "Färgdjup",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "webp": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "webp": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

@@ -246,68 +246,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG - ce format să alegeți pentru tipărire?",
-      "plans": [
+      "cols": ["PNG (raster)", "SVG (vector)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (raster)"
+          "label": "Site-uri web și social media",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (vector)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Site-uri web și social media",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Pliante și cărți de vizită",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Pliante și cărți de vizită",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Postere și bannere (format mare)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Postere și bannere (format mare)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Scalare fără pierdere de calitate",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Scalare fără pierdere de calitate",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Editare în program grafic",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Editare în program grafic",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Dimensiune fișier mai mică",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Dimensiune fișier mai mică",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Prezentări",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Prezentări",
+          "values": ["✓", "✓"]
         }
       ]
     },

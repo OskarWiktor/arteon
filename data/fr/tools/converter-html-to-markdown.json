@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convertissez HTML en format Markdown. Analyse et formatage automatiques. Gratuit.",
-      "featureList": ["HTML to Markdown conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert HTML to Markdown", "HTML to Markdown", "Free HTML to Markdown converter"]
+      "featureList": [
+        "HTML to Markdown conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert HTML to Markdown",
+        "HTML to Markdown",
+        "Free HTML to Markdown converter"
+      ]
     },
     "howTo": {
       "name": "Comment convertir HTML en Markdown",
@@ -128,64 +136,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HTML vs Markdown – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["HTML", "Markdown"],
+      "rows": [
         {
-          "id": "html",
-          "name": "HTML"
+          "label": "Données hiérarchiques",
+          "values": ["✓", "—"]
         },
         {
-          "id": "markdown",
-          "name": "Markdown",
-          "highlighted": true
+          "label": "Données tabulaires",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Validation de schéma",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Lisible par un humain",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Syntaxe compacte",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Données hiérarchiques",
-          "values": {
-            "html": true,
-            "markdown": false
-          }
-        },
-        {
-          "name": "Données tabulaires",
-          "values": {
-            "html": true,
-            "markdown": true
-          }
-        },
-        {
-          "name": "Validation de schéma",
-          "values": {
-            "html": true,
-            "markdown": false
-          }
-        },
-        {
-          "name": "Lisible par un humain",
-          "values": {
-            "html": false,
-            "markdown": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "html": false,
-            "markdown": false
-          }
-        },
-        {
-          "name": "Syntaxe compacte",
-          "values": {
-            "html": false,
-            "markdown": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

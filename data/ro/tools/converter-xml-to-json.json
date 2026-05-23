@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți XML în JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in JSON poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele XML in format JSON direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">XML este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in JSON poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertore XML in format JSON direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "XML to JSON conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "XML vs JSON – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["XML", "JSON"],
+      "rows": [
         {
-          "id": "xml",
-          "name": "XML"
+          "label": "Date ierarhice",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Date tabulare",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Validare schemă",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Lizibil pentru oameni",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Sintaxă compactă",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Date ierarhice",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Date tabulare",
-          "values": {
-            "xml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Validare schemă",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Lizibil pentru oameni",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Sintaxă compactă",
-          "values": {
-            "xml": false,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",
@@ -193,8 +165,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Cum func\u021bioneaz\u0103 conversia din XML \u00een JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML folose\u0219te o ierarhie bazat\u0103 pe tag-uri cu elemente de deschidere \u0219i \u00eenchidere, \u00een timp ce JSON folose\u0219te acolade u\u0219oare \u0219i perechi cheie-valoare. Convertorul analizeaz\u0103 arborele documentului XML \u0219i asociaz\u0103 fiecare element unei structuri JSON corespunz\u0103toare.</p><p class=\"text-mid mb-4\">Elementele XML devin obiecte JSON, elementele repetate cu acela\u0219i nume de tag devin array-uri JSON, iar con\u021binutul text devine valori de tip \u0219ir. Atributele XML sunt reprezentate ca propriet\u0103\u021bi speciale (cu prefix @) \u00een obiectul JSON.</p><p class=\"text-mid\">JSON este formatul preferat pentru API-uri web moderne, aplica\u021bii JavaScript \u0219i baze de date NoSQL. Conversia se face complet \u00een browserul t\u0103u.</p>"
+      "title": "Cum funcționează conversia din XML în JSON?",
+      "html": "<p class=\"text-mid mb-4\">XML folosește o ierarhie bazată pe tag-uri cu elemente de deschidere și închidere, în timp ce JSON folosește acolade ușoare și perechi cheie-valoare. Convertorul analizează arborele documentului XML și asociază fiecare element unei structuri JSON corespunzătoare.</p><p class=\"text-mid mb-4\">Elementele XML devin obiecte JSON, elementele repetate cu același nume de tag devin array-uri JSON, iar conținutul text devine valori de tip șir. Atributele XML sunt reprezentate ca proprietăți speciale (cu prefix @) în obiectul JSON.</p><p class=\"text-mid\">JSON este formatul preferat pentru API-uri web moderne, aplicații JavaScript și baze de date NoSQL. Conversia se face complet în browserul tău.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +174,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Sfaturi pentru conversia din XML \u00een JSON",
-      "description": "C\u00e2teva sfaturi pentru a evita problemele comune:",
+      "title": "Sfaturi pentru conversia din XML în JSON",
+      "description": "Câteva sfaturi pentru a evita problemele comune:",
       "grid": "two",
       "items": [
         {
           "icon": "RiCodeLine",
           "title": "Atribute XML",
-          "description": "Atributele XML sunt convertite \u00een propriet\u0103\u021bi JSON cu prefix @. De ex. &lt;item id='1'&gt; devine {\"@id\": \"1\"}."
+          "description": "Atributele XML sunt convertite în proprietăți JSON cu prefix @. De ex. &lt;item id='1'&gt; devine {\"@id\": \"1\"}."
         },
         {
           "icon": "RiNodeTree",
-          "title": "Spa\u021bii de nume",
-          "description": "Spa\u021biile de nume XML sunt p\u0103strate \u00een rezultatul JSON ca parte a numelor elementelor. Declara\u021biile complexe de spa\u021bii de nume pot necesita cur\u0103\u021bare manual\u0103."
+          "title": "Spații de nume",
+          "description": "Spațiile de nume XML sunt păstrate în rezultatul JSON ca parte a numelor elementelor. Declarațiile complexe de spații de nume pot necesita curățare manuală."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Con\u021binut mixt",
-          "description": "Elementele XML care con\u021bin at\u00e2t text c\u00e2t \u0219i elemente copil sunt gestionate prin plasarea textului \u00eentr-o proprietate special\u0103 #text \u00een JSON."
+          "title": "Conținut mixt",
+          "description": "Elementele XML care conțin atât text cât și elemente copil sunt gestionate prin plasarea textului într-o proprietate specială #text în JSON."
         },
         {
           "icon": "RiFileCodeLine",
-          "title": "Sec\u021biuni CDATA",
-          "description": "Sec\u021biunile CDATA din XML sunt convertite \u00een valori de tip \u0219ir obi\u0219nuite \u00een JSON. \u00cenvelitura CDATA este eliminat\u0103 \u0219i con\u021binutul este p\u0103strat intact."
+          "title": "Secțiuni CDATA",
+          "description": "Secțiunile CDATA din XML sunt convertite în valori de tip șir obișnuite în JSON. Învelitura CDATA este eliminată și conținutul este păstrat intact."
         }
       ]
     },
@@ -254,16 +226,16 @@
           "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         },
         {
-          "question": "Este conversia din XML \u00een JSON sigur\u0103?",
-          "answer": "Da. Toat\u0103 conversia se face local \u00een browserul t\u0103u. Nicio dat\u0103 nu este trimis\u0103 la vreun server."
+          "question": "Este conversia din XML în JSON sigură?",
+          "answer": "Da. Toată conversia se face local în browserul tău. Nicio dată nu este trimisă la vreun server."
         },
         {
           "question": "Se pierd atributele XML la conversie?",
-          "answer": "Nu. Atributele XML sunt p\u0103strate \u00een rezultatul JSON ca propriet\u0103\u021bi cu prefix @. De ex. id='123' devine \"@id\": \"123\" \u00een obiectul JSON."
+          "answer": "Nu. Atributele XML sunt păstrate în rezultatul JSON ca proprietăți cu prefix @. De ex. id='123' devine \"@id\": \"123\" în obiectul JSON."
         },
         {
-          "question": "Pot folosi rezultatul JSON \u00een JavaScript?",
-          "answer": "Da. Rezultatul este JSON standard care poate fi folosit cu JSON.parse() \u00een JavaScript sau direct \u00een orice limbaj de programare, API sau baz\u0103 de date."
+          "question": "Pot folosi rezultatul JSON în JavaScript?",
+          "answer": "Da. Rezultatul este JSON standard care poate fi folosit cu JSON.parse() în JavaScript sau direct în orice limbaj de programare, API sau bază de date."
         }
       ]
     },

@@ -103,9 +103,9 @@
         "title": "Planujesz uruchomić sklep internetowy?",
         "description": "Tworzymy sklepy internetowe zgodne z obowiązującymi przepisami prawa i najlepszymi praktykami e-commerce.",
         "btnOne": "Sprawdź ofertę sklepów internetowych",
-        "btnOneLink": "/uslugi/sklepy-internetowe",
+        "btnOneHref": "/uslugi/sklepy-internetowe",
         "btnTwo": "Skontaktuj się",
-        "btnTwoLink": "/kontakt",
+        "btnTwoHref": "/kontakt",
         "backgroundImage": "/assets/blog/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac.webp",
         "overlay": "black"
       },
@@ -214,9 +214,9 @@
         "title": "Chcesz zwiększyć sprzedaż w swoim sklepie?",
         "description": "Tworzymy sklepy internetowe zaprojektowane z myślą o konwersji. Pomagamy też optymalizować istniejące sklepy - od UX po strategię cenową.",
         "btnOne": "Sklepy internetowe",
-        "btnOneLink": "/uslugi/sklepy-internetowe",
+        "btnOneHref": "/uslugi/sklepy-internetowe",
         "btnTwo": "Skontaktuj się",
-        "btnTwoLink": "/kontakt",
+        "btnTwoHref": "/kontakt",
         "backgroundImage": "/assets/blog/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu.webp",
         "overlay": "black"
       },

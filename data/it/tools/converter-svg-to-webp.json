@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converti grafiche SVG in WebP leggero. Ideale per siti web e social media. Strumento gratuito nel browser - senza registrazione, senza limiti, privacy totale.",
-      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convertire SVG in WEBP", "Conversione SVG in WEBP", "Convertitore SVG in WEBP gratuito"]
+      "featureList": [
+        "SVG to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convertire SVG in WEBP",
+        "Conversione SVG in WEBP",
+        "Convertitore SVG in WEBP gratuito"
+      ]
     },
     "howTo": {
       "name": "SVG to WebP",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs WebP – confronto dei formati",
-      "plans": [
+      "labelHeader": "Funzionalità",
+      "cols": ["SVG", "WebP"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Compressione con perdita",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compressione senza perdita",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Trasparenza (canale alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Supporto animazione",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Supporto browser",
+          "values": ["Tutti i browser", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Profondità colore",
+          "values": ["N/A (vettore)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Dimensione file compatta",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadati (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressione con perdita",
-          "values": {
-            "svg": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compressione senza perdita",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Trasparenza (canale alfa)",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Supporto animazione",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Supporto browser",
-          "values": {
-            "svg": "Tutti i browser",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Profondità colore",
-          "values": {
-            "svg": "N/A (vettore)",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Dimensione file compatta",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadati (EXIF)",
-          "values": {
-            "svg": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funzionalità"
+      ]
     },
     {
       "type": "gap",

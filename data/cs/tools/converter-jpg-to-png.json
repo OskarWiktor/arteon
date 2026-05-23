@@ -29,7 +29,13 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
-      "featureList": ["Převod JPG na PNG", "Bezeztrátový výstup PNG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
+      "featureList": [
+        "Převod JPG na PNG",
+        "Bezeztrátový výstup PNG",
+        "Hromadný převod",
+        "Lokální zpracování v prohlížeči",
+        "Bez nahrávání souborů"
+      ]
     },
     "howTo": {
       "name": "Jak převést JPG na PNG",
@@ -165,78 +171,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs PNG – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["JPG", "PNG"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Ztrátová komprese",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Všechny prohlížeče", "Všechny prohlížeče"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["8-bit (16.7M)", "8/16-bit"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "jpg": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "jpg": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "jpg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "jpg": "Všechny prohlížeče",
-            "png": "Všechny prohlížeče"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

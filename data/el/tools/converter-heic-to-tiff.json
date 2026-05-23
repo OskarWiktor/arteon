@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε φωτογραφιες HEIC του iPhone σε επαγγελματικη μορφη TIFF. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης - χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
-      "featureList": ["Μετατροπή σε TIFF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
-      "alternateName": ["Μετατροπή HEIC σε TIFF", "Μετατροπέας HEIC σε TIFF", "Δωρεάν μετατροπέας HEIC σε TIFF"]
+      "featureList": [
+        "Μετατροπή σε TIFF",
+        "Ρύθμιση ποιότητας (60-95%)",
+        "Ομαδική μετατροπή",
+        "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"
+      ],
+      "alternateName": [
+        "Μετατροπή HEIC σε TIFF",
+        "Μετατροπέας HEIC σε TIFF",
+        "Δωρεάν μετατροπέας HEIC σε TIFF"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε HEIC σε TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs TIFF – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["HEIC", "TIFF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": ["Safari 13+ (macOS / iOS)", "Μόνο Safari"]
+        },
+        {
+          "label": "Βάθος χρώματος",
+          "values": ["8/10-bit, HDR", "8/16/32-bit"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "tiff": "Μόνο Safari"
-          }
-        },
-        {
-          "name": "Βάθος χρώματος",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",

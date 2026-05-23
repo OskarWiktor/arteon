@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Convertitore WebP in PNG",
-      "alternateName": ["Convertire WEBP in PNG", "Conversione WEBP in PNG", "Convertitore WEBP in PNG gratuito"],
+      "alternateName": [
+        "Convertire WEBP in PNG",
+        "Conversione WEBP in PNG",
+        "Convertitore WEBP in PNG gratuito"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converti immagini WebP in PNG senza perdita. Conversione locale, niente server. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
-      "featureList": ["Conversione da WEBP a PNG", "Uscita PNG senza perdita", "Conversione in blocco", "Elaborazione locale nel browser", "Nessun caricamento file"]
+      "featureList": [
+        "Conversione da WEBP a PNG",
+        "Uscita PNG senza perdita",
+        "Conversione in blocco",
+        "Elaborazione locale nel browser",
+        "Nessun caricamento file"
+      ]
     },
     "howTo": {
       "name": "Come convertire WEBP in PNG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs PNG – confronto dei formati",
-      "plans": [
+      "labelHeader": "Funzionalità",
+      "cols": ["WebP", "PNG"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Compressione con perdita",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Compressione senza perdita",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Trasparenza (canale alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Supporto animazione",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Supporto browser",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Tutti i browser"]
+        },
+        {
+          "label": "Profondità colore",
+          "values": ["8-bit (16.7M)", "8/16-bit"]
+        },
+        {
+          "label": "Dimensione file compatta",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadati (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressione con perdita",
-          "values": {
-            "webp": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Compressione senza perdita",
-          "values": {
-            "webp": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Trasparenza (canale alfa)",
-          "values": {
-            "webp": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Supporto animazione",
-          "values": {
-            "webp": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Supporto browser",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "png": "Tutti i browser"
-          }
-        },
-        {
-          "name": "Profondità colore",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Dimensione file compatta",
-          "values": {
-            "webp": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadati (EXIF)",
-          "values": {
-            "webp": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funzionalità"
+      ]
     },
     {
       "type": "gap",

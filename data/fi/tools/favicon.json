@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "Favicon.ico-generaattori verkkosivuille",
-      "alternateName": ["Favicon.ico-generaattori", "Verkkokuvakegeneraattori", "Favicon-työkalu", "Favicon-generaattori kuvasta"],
+      "alternateName": [
+        "Favicon.ico-generaattori",
+        "Verkkokuvakegeneraattori",
+        "Favicon-työkalu",
+        "Favicon-generaattori kuvasta"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
       "description": "Ilmainen favicon-generaattori. Luo favicon.ico ja PNG-kuvakkeet 16x16, 32x32, 180x180, 192x192 ja 512x512 ilman rajoituksia ja lähettämättä tiedostoja palvelimelle. Käsittely tapahtuu paikallisesti selaimessa.",

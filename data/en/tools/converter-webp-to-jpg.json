@@ -25,14 +25,26 @@
   "schemas": {
     "software": {
       "name": "WebP to JPG converter – free, unlimited files",
-      "alternateName": ["WebP to JPEG converter", "Convert WebP to JPG online", "Change WebP to JPG", "Free WebP to JPG tool"],
+      "alternateName": [
+        "WebP to JPEG converter",
+        "Convert WebP to JPG",
+        "Change WebP to JPG",
+        "Free WebP to JPG tool"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Free online WebP to JPG converter. Transform WebP images to universally compatible JPG in your browser. No uploads, no limits, no registration.",
-      "featureList": ["WebP to JPG conversion", "Adjustable quality slider (60–95%)", "Batch conversion", "File size comparison", "Individual or bulk download", "100% local browser processing"]
+      "description": "Free WebP to JPG converter. Transform WebP images to universally compatible JPG in your browser. No uploads, no limits, no registration.",
+      "featureList": [
+        "WebP to JPG conversion",
+        "Adjustable quality slider (60–95%)",
+        "Batch conversion",
+        "File size comparison",
+        "Individual or bulk download",
+        "100% local browser processing"
+      ]
     },
     "howTo": {
-      "name": "How to convert WebP to JPG online",
+      "name": "How to convert WebP to JPG",
       "description": "Step-by-step guide to converting WebP files to JPG format.",
       "steps": [
         {
@@ -157,78 +169,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs JPG – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["WebP", "JPG"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Lossy compression",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "All browsers"]
+        },
+        {
+          "label": "Color depth",
+          "values": ["8-bit (16.7M)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "webp": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "webp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "webp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "webp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "jpg": "All browsers"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "webp": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "webp": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

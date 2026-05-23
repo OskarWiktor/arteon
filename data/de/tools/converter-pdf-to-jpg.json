@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PDF vs JPG – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["PDF", "JPG"],
+      "rows": [
         {
-          "id": "pdf",
-          "name": "PDF"
+          "label": "Verlustbehaftete Komprimierung",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Verlustfreie Komprimierung",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparenz (Alphakanal)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animationsunterstützung",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowser-Unterstützung",
+          "values": ["Integrierter PDF-Viewer", "Alle Browser"]
+        },
+        {
+          "label": "Kompakte Dateigröße",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadaten (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verlustbehaftete Komprimierung",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Verlustfreie Komprimierung",
-          "values": {
-            "pdf": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparenz (Alphakanal)",
-          "values": {
-            "pdf": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animationsunterstützung",
-          "values": {
-            "pdf": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbrowser-Unterstützung",
-          "values": {
-            "pdf": "Integrierter PDF-Viewer",
-            "jpg": "Alle Browser"
-          }
-        },
-        {
-          "name": "Kompakte Dateigröße",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadaten (EXIF)",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

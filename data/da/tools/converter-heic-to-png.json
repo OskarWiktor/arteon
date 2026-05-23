@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter iPhone HEIC-fotos til tabsfri PNG. Fuld kvalitet og gennemsigtighed. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Konvertér HEIC til PNG", "HEIC til PNG konvertering", "Gratis HEIC til PNG konverter"]
+      "featureList": [
+        "HEIC to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Konvertér HEIC til PNG",
+        "HEIC til PNG konvertering",
+        "Gratis HEIC til PNG konverter"
+      ]
     },
     "howTo": {
       "name": "HEIC to PNG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs PNG – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["HEIC", "PNG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Tabsgivende komprimering",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Safari 13+ (macOS / iOS)", "Alle browsere"]
+        },
+        {
+          "label": "Farvedybde",
+          "values": ["8/10-bit, HDR", "8/16-bit"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "heic": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "heic": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "png": "Alle browsere"
-          }
-        },
-        {
-          "name": "Farvedybde",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

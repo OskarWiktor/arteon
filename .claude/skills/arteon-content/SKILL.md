@@ -456,7 +456,8 @@ Contacts via form
 // Tool page CTA
 const toolCTA = {
   title: 'Potrzebujesz profesjonalnej strony?',
-  description: 'Sprawdź jak możesz przyciągnąć więcej klientów dzięki dobrze zaprojektowanej stronie',
+  description:
+    'Sprawdź jak możesz przyciągnąć więcej klientów dzięki dobrze zaprojektowanej stronie',
   button: 'Skontaktuj się',
   link: '/kontakt',
 };
@@ -482,7 +483,8 @@ const serviceCTA = {
 // ✅ Dobre CTA dla realizacji
 const projectCTA = {
   title: 'Potrzebujesz rozbudowy swojej strony?',
-  description: 'Pomagamy rozbudować strony na różnych platformach (Wix, WordPress, Shopify). Skontaktuj się i sprawdź jak możesz przyciągnąć więcej klientów z Google dzięki rozbudowie strony.',
+  description:
+    'Pomagamy rozbudować strony na różnych platformach (Wix, WordPress, Shopify). Skontaktuj się i sprawdź jak możesz przyciągnąć więcej klientów z Google dzięki rozbudowie strony.',
 };
 
 // ❌ Złe CTA — referuje do innego klienta, brak indywidualnego podejścia

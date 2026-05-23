@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "XML vs JSON – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["XML", "JSON"],
+      "rows": [
         {
-          "id": "xml",
-          "name": "XML"
+          "label": "Indlejrede data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabeldata",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Skemavalidering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Menneskelæsbart",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standard",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Kompakt syntaks",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Indlejrede data",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabeldata",
-          "values": {
-            "xml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Skemavalidering",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Menneskelæsbart",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-standard",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompakt syntaks",
-          "values": {
-            "xml": false,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Hvordan fungerer XML til JSON-konvertering?",
-      "html": "<p class=\"text-mid mb-4\">XML bruger en tagbaseret hierarki med \u00e5bnings- og lukningselementer, mens JSON bruger letvægts kr\u00f8llede parenteser og n\u00f8gle-v\u00e6rdi-par. Konverteren parser XML-dokumenttr\u00e6et og mapper hvert element til den tilsvarende JSON-struktur.</p><p class=\"text-mid mb-4\">XML-elementer bliver til JSON-objekter, gentagne elementer med samme navn bliver til JSON-arrays, og tekstindhold bliver til strengv\u00e6rdier. XML-attributter vises som specielle egenskaber (med @-pr\u00e6fiks) i JSON-objektet.</p><p class=\"text-mid\">JSON er det foretrukne format til moderne web-API'er, JavaScript-applikationer og NoSQL-databaser. Al konvertering sker lokalt i din browser.</p>"
+      "html": "<p class=\"text-mid mb-4\">XML bruger en tagbaseret hierarki med åbnings- og lukningselementer, mens JSON bruger letvægts krøllede parenteser og nøgle-værdi-par. Konverteren parser XML-dokumenttræet og mapper hvert element til den tilsvarende JSON-struktur.</p><p class=\"text-mid mb-4\">XML-elementer bliver til JSON-objekter, gentagne elementer med samme navn bliver til JSON-arrays, og tekstindhold bliver til strengværdier. XML-attributter vises som specielle egenskaber (med @-præfiks) i JSON-objektet.</p><p class=\"text-mid\">JSON er det foretrukne format til moderne web-API'er, JavaScript-applikationer og NoSQL-databaser. Al konvertering sker lokalt i din browser.</p>"
     },
     {
       "type": "gap",
@@ -258,8 +230,8 @@
           "answer": "Ja. Al konvertering sker lokalt i din browser. Ingen data sendes til nogen server."
         },
         {
-          "question": "G\u00e5r XML-attributter tabt ved konvertering?",
-          "answer": "Nej. XML-attributter bevares i JSON-outputtet som egenskaber med @-pr\u00e6fiks. F.eks. id='123' bliver til: \"@id\": \"123\" i JSON-objektet."
+          "question": "Går XML-attributter tabt ved konvertering?",
+          "answer": "Nej. XML-attributter bevares i JSON-outputtet som egenskaber med @-præfiks. F.eks. id='123' bliver til: \"@id\": \"123\" i JSON-objektet."
         },
         {
           "question": "Kan jeg bruge JSON-outputtet i JavaScript?",

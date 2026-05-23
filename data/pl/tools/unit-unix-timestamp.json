@@ -2,14 +2,14 @@
   "toolKey": "unixTimestamp",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter Unix Timestamp – epoch na datę i czas dla devów",
-    "description": "Przelicz Unix timestamp na datę i czas w strefie Europe/Warsaw. Niezbędne przy API, tokenach JWT i logach serwerów. Działa w przeglądarce, bez rejestracji.",
+    "title": "Konwerter Unix Timestamp na datę i godzinę– przelicz epoch na datę i czas",
+    "description": "Zamień Unix timestamp na datę i godzinę – Przydatne przy sprawdzaniu  JWT, logów serwera i JavaScript Date.now(). Znacznik czasu epoch przeliczany natychmiast, lokalnie w przeglądarce.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-unix-timestamp"
   },
   "hero": {
-    "title": "Przelicz timestamp Unix na datę – konwerter czasu epoch",
-    "description": "Debugujesz API, przeglądasz logi serwera lub sprawdzasz token JWT? Wklej timestamp i odczytaj datę w strefie Europe/Warsaw – wynik natychmiast, bez instalacji.",
+    "title": "Unix Timestamp na datę i godzinę – konwerter znacznika czasu epoch",
+    "description": "Wklej dowolny Unix timestamp i odczytaj czytelną datę w czasie rzeczywistym. Przydatne przy sprawdzaniu tokenów JWT, analizie logów serwera i wartościach z JavaScript Date.now().",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Unix Timestamp – epoch na datę i czas dla programistów PL",
+      "name": "Unix Timestamp – epoch na datę i godzinę",
       "alternateName": ["Przelicznik Unix timestamp", "Epoch converter", "Kalkulator czasu Unix"],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz Unix timestamp na datę i czas w strefie Europe/Warsaw. Niezbędne przy API, tokenach JWT i logach serwerów. Działa w przeglądarce, bez rejestracji.",
+      "description": "Przelicz Unix timestamp na datę i godzinę w strefie Europe/Warsaw. Niezbędne przy API, tokenach JWT i logach serwerów. Działa w przeglądarce, bez rejestracji.",
       "featureList": [
         "Przeliczanie Unix timestamp (epoch) na czytelną datę i czas",
         "Obustronna konwersja – wpisz timestamp lub datę i czas",
@@ -185,55 +185,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Unix Timestamp vs Data i czas – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
+      "labelHeader": "Cecha",
+      "cols": ["Unix Timestamp", "Data i czas"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Unix Timestamp"
+          "label": "Format",
+          "values": ["Liczba całkowita", "YYYY-MM-DD HH:MM:SS"]
         },
         {
-          "id": "unit2",
-          "name": "Data i czas",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Format",
-          "values": {
-            "unit1": "Liczba całkowita",
-            "unit2": "YYYY-MM-DD HH:MM:SS"
-          }
+          "label": "Strefa czasowa",
+          "values": ["Zawsze UTC", "Zależy od lokalizacji"]
         },
         {
-          "name": "Strefa czasowa",
-          "values": {
-            "unit1": "Zawsze UTC",
-            "unit2": "Zależy od lokalizacji"
-          }
+          "label": "Zakres (32-bit)",
+          "values": ["0 – 2 147 483 647", "1970–2038"]
         },
         {
-          "name": "Zakres (32-bit)",
-          "values": {
-            "unit1": "0 – 2 147 483 647",
-            "unit2": "1970–2038"
-          }
+          "label": "Zakres (64-bit)",
+          "values": ["Praktycznie nieograniczony", "Miliardy lat"]
         },
         {
-          "name": "Zakres (64-bit)",
-          "values": {
-            "unit1": "Praktycznie nieograniczony",
-            "unit2": "Miliardy lat"
-          }
-        },
-        {
-          "name": "Sortowanie",
-          "values": {
-            "unit1": "Naturalne (liczby)",
-            "unit2": "Wymaga parsowania"
-          }
+          "label": "Sortowanie",
+          "values": ["Naturalne (liczby)", "Wymaga parsowania"]
         }
       ]
     },

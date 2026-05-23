@@ -153,7 +153,7 @@
     "helper": "Teknisk forhåndsvisning – kompatibel med Gmail, Outlook og de fleste e-postklienter.",
     "copySuccess": "Kopiert – lim inn i Gmail",
     "copyError": "Kopieringsfeil",
-    "copyButton": "Kopier signatur (Gmail / Outlook)",
+    "ButtonCopy": "Kopier signatur (Gmail / Outlook)",
     "copyRawButton": "Kopier HTML-kode",
     "copyRawSuccess": "HTML-kode kopiert",
     "downloadButton": "Last ned som HTML",

@@ -98,9 +98,9 @@
         "title": "Potrzebujesz spójnej identyfikacji wizualnej?",
         "description": "Projektujemy identyfikacje wizualne, w których typografia, kolory i inne elementy tworzą spójny wizerunek marki. Dobieramy czcionki dopasowane do charakteru firmy i jej odbiorców.",
         "btnOne": "Identyfikacja wizualna",
-        "btnOneLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
+        "btnOneHref": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
         "btnTwo": "Skontaktuj się",
-        "btnTwoLink": "/kontakt",
+        "btnTwoHref": "/kontakt",
         "backgroundImage": "/assets/blog/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych.webp",
         "overlay": "black"
       },
@@ -210,9 +210,9 @@
         "title": "Potrzebujesz szablonów do mediów społecznościowych?",
         "description": "Przygotujemy dla Ciebie zestaw profesjonalnych szablonów dopasowanych do charakteru firmy. Spójna komunikacja wizualna bez konieczności projektowania każdego posta od zera.",
         "btnOne": "Szablony postów",
-        "btnOneLink": "/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe",
+        "btnOneHref": "/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe",
         "btnTwo": "Skontaktuj się",
-        "btnTwoLink": "/kontakt",
+        "btnTwoHref": "/kontakt",
         "backgroundImage": "/assets/blog/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych.webp",
         "overlay": "black"
       },
@@ -327,9 +327,9 @@
         "title": "Potrzebujesz materiałów drukowanych dla firmy?",
         "description": "Projektujemy wizytówki, ulotki, katalogi, teczki ofertowe i inne materiały drukowane. Możemy też opracować identyfikację wizualną, żeby wszystko było spójne.",
         "btnOne": "Projekty graficzne",
-        "btnOneLink": "/uslugi/projekty-graficzne",
+        "btnOneHref": "/uslugi/projekty-graficzne",
         "btnTwo": "Identyfikacja wizualna",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
         "backgroundImage": "/assets/blog/materialy-drukowane-dla-firmy-ktore-zamowic/materialy-drukowane-dla-firmy-ktore-zamowic.webp",
         "overlay": "black"
       },
@@ -509,9 +509,9 @@
         "title": "Potrzebujesz materiałów reklamowych z kodem QR?",
         "description": "Skorzystaj z naszego darmowego generatora kodów QR lub zamów profesjonalny projekt ulotki, wizytówki czy katalogu z kodem QR w odpowiednim miejscu",
         "btnOne": "Darmowy generator kodów QR",
-        "btnOneLink": "/narzedzia/darmowy-generator-kodow-qr",
+        "btnOneHref": "/narzedzia/darmowy-generator-kodow-qr",
         "btnTwo": "Projekty graficzne",
-        "btnTwoLink": "/uslugi/projekty-graficzne",
+        "btnTwoHref": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/blog/kody-qr-w-materialach-reklamowych/kody-qr-w-materialach-reklamowych.webp",
         "overlay": "black"
       },
@@ -671,9 +671,9 @@
         "title": "Potrzebujesz profesjonalnej palety kolorów?",
         "description": "Skorzystaj z naszych darmowych narzędzi do generowania palet lub skontaktuj się - pomożemy Ci stworzyć spójną identyfikację wizualną.",
         "btnOne": "Generator palet kolorów",
-        "btnOneLink": "/narzedzia/generator-palet-kolorow",
+        "btnOneHref": "/narzedzia/generator-palet-kolorow",
         "btnTwo": "Identyfikacja wizualna",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
         "backgroundImage": "/assets/blog/jak-dobrac-kolory-do-strony-internetowej/jak-dobrac-kolory-do-strony-internetowej.webp",
         "overlay": "black"
       },
@@ -790,9 +790,9 @@
         "title": "Stwórz kolorystykę, która wspiera sprzedaż",
         "description": "Skorzystaj z naszego darmowego generatora palet kolorystycznych lub skontaktuj się - pomożemy Ci zbudować pełną identyfikację wizualną, która wzmocni Twoją sprzedaż",
         "btnOne": "Generator palet kolorystycznych",
-        "btnOneLink": "/narzedzia/generator-palet-kolorow",
+        "btnOneHref": "/narzedzia/generator-palet-kolorow",
         "btnTwo": "Oferta identyfikacji wizualnej",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
         "backgroundImage": "/assets/blog/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow.webp",
         "overlay": "black"
       }
@@ -921,9 +921,9 @@
         "title": "Zaprojektujmy spójny system identyfikacji wizualnej",
         "description": "Logo, paleta kolorów, typografia i brandbook, które budują zaufanie i rozpoznawalność Twojej marki.",
         "btnOne": "Zamów wycenę",
-        "btnOneLink": "/kontakt",
+        "btnOneHref": "/kontakt",
         "btnTwo": "Sprawdź ofertę",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
         "backgroundImage": "/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp",
         "overlay": "black"
       }

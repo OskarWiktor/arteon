@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter iPhone HEIC-fotos til let WebP. Mindre storrelse, hurtigere indlasning. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
-      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Konvertér HEIC til WEBP", "HEIC til WEBP konvertering", "Gratis HEIC til WEBP konverter"]
+      "featureList": [
+        "HEIC to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Konvertér HEIC til WEBP",
+        "HEIC til WEBP konvertering",
+        "Gratis HEIC til WEBP konverter"
+      ]
     },
     "howTo": {
       "name": "HEIC to WebP",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs WebP – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["HEIC", "WebP"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Tabsgivende komprimering",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Safari 13+ (macOS / iOS)", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Farvedybde",
+          "values": ["8/10-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Farvedybde",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

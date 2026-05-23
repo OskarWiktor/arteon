@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter iPhone HEIC-fotos til universel JPG. Ingen registrering, ingen upload. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
-      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Konvertér HEIC til JPG", "HEIC til JPG konvertering", "Gratis HEIC til JPG konverter"]
+      "featureList": [
+        "HEIC to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Konvertér HEIC til JPG",
+        "HEIC til JPG konvertering",
+        "Gratis HEIC til JPG konverter"
+      ]
     },
     "howTo": {
       "name": "HEIC to JPG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs JPG – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["HEIC", "JPG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Tabsgivende komprimering",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Safari 13+ (macOS / iOS)", "Alle browsere"]
+        },
+        {
+          "label": "Farvedybde",
+          "values": ["8/10-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "jpg": "Alle browsere"
-          }
-        },
-        {
-          "name": "Farvedybde",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

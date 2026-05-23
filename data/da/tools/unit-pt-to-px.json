@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Konverter pt til pixels og omvendt. Nyttig til web- og tryktypografi. Ingen registrering krævet.",
-      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+      "featureList": [
+        "Tovejs-konvertering i realtid",
+        "Alle konvertere samlet ét sted",
+        "Kopier resultat til udklipsholder",
+        "Lokal beregning i browseren"
+      ]
     },
     "howTo": {
       "name": "Sådan bruger du konverteren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Point (pt) vs Pixels (px)",
-      "featureLabel": "Egenskab",
-      "plans": [
+      "labelHeader": "Egenskab",
+      "cols": ["Point (pt)", "Pixels (px)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Point (pt)"
+          "label": "Definition",
+          "values": ["1/72 tomme", "1/96 tomme (CSS)"]
         },
         {
-          "id": "unit2",
-          "name": "Pixels (px)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Definition",
-          "values": {
-            "unit1": "1/72 tomme",
-            "unit2": "1/96 tomme (CSS)"
-          }
+          "label": "Bruges i",
+          "values": ["Tryk, Word, PDF", "Web, CSS, skærme"]
         },
         {
-          "name": "Bruges i",
-          "values": {
-            "unit1": "Tryk, Word, PDF",
-            "unit2": "Web, CSS, skærme"
-          }
+          "label": "12 pt =",
+          "values": ["12 pt", "16 px"]
         },
         {
-          "name": "12 pt =",
-          "values": {
-            "unit1": "12 pt",
-            "unit2": "16 px"
-          }
+          "label": "Brødtekst",
+          "values": ["10–12 pt", "14–18 px"]
         },
         {
-          "name": "Brødtekst",
-          "values": {
-            "unit1": "10–12 pt",
-            "unit2": "14–18 px"
-          }
-        },
-        {
-          "name": "Overskrift",
-          "values": {
-            "unit1": "18–24 pt",
-            "unit2": "24–32 px"
-          }
+          "label": "Overskrift",
+          "values": ["18–24 pt", "24–32 px"]
         }
       ]
     },

@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Decimal to hexadecimal converter",
-      "alternateName": ["Decimal to hex calculator", "Number base converter", "Hexadecimal converter"],
+      "alternateName": [
+        "Decimal to hex calculator",
+        "Number base converter",
+        "Hexadecimal converter"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert decimal numbers to hexadecimal and vice versa. Essential for web colors, programming, and memory addresses.",
@@ -184,55 +188,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimal vs Hexadecimal",
-      "featureLabel": "Feature",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["Decimal (base-10)", "Hexadecimal (base-16)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimal (base-10)"
+          "label": "Digits",
+          "values": ["0–9", "0–9, A–F"]
         },
         {
-          "id": "unit2",
-          "name": "Hexadecimal (base-16)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Digits",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–9, A–F"
-          }
+          "label": "Example: 255",
+          "values": ["255", "FF"]
         },
         {
-          "name": "Example: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "FF"
-          }
+          "label": "Example: 1000",
+          "values": ["1000", "3E8"]
         },
         {
-          "name": "Example: 1000",
-          "values": {
-            "unit1": "1000",
-            "unit2": "3E8"
-          }
+          "label": "Used for",
+          "values": ["Everyday math", "Colors, addresses, data"]
         },
         {
-          "name": "Used for",
-          "values": {
-            "unit1": "Everyday math",
-            "unit2": "Colors, addresses, data"
-          }
-        },
-        {
-          "name": "Compactness",
-          "values": {
-            "unit1": "Standard",
-            "unit2": "More compact than binary"
-          }
+          "label": "Compactness",
+          "values": ["Standard", "More compact than binary"]
         }
       ]
     },

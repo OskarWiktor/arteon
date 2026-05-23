@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "PNG zu JPG Konverter",
-      "alternateName": ["PNG in JPG umwandeln", "PNG zu JPG konvertieren", "Kostenloser PNG-zu-JPG-Konverter"],
+      "alternateName": [
+        "PNG in JPG umwandeln",
+        "PNG zu JPG konvertieren",
+        "Kostenloser PNG-zu-JPG-Konverter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "PNG-Dateien im Browser in JPG umwandeln. Ohne Dateilimit, ohne Registrierung. Lokale Verarbeitung, kein Server-Upload. Kostenloses Browser-Tool - ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
-      "featureList": ["PNG-zu-JPG-Konvertierung", "JPG-Qualitätssteuerung", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
+      "featureList": [
+        "PNG-zu-JPG-Konvertierung",
+        "JPG-Qualitätssteuerung",
+        "Stapelkonvertierung",
+        "Lokale Browserverarbeitung",
+        "Kein Datei-Upload erforderlich"
+      ]
     },
     "howTo": {
       "name": "PNG in JPG umwandeln",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs JPG – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["PNG", "JPG"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Verlustbehaftete Komprimierung",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Verlustfreie Komprimierung",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparenz (Alphakanal)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animationsunterstützung",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowser-Unterstützung",
+          "values": ["Alle Browser", "Alle Browser"]
+        },
+        {
+          "label": "Farbtiefe",
+          "values": ["8/16-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kompakte Dateigröße",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadaten (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verlustbehaftete Komprimierung",
-          "values": {
-            "png": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Verlustfreie Komprimierung",
-          "values": {
-            "png": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparenz (Alphakanal)",
-          "values": {
-            "png": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animationsunterstützung",
-          "values": {
-            "png": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbrowser-Unterstützung",
-          "values": {
-            "png": "Alle Browser",
-            "jpg": "Alle Browser"
-          }
-        },
-        {
-          "name": "Farbtiefe",
-          "values": {
-            "png": "8/16-bit",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kompakte Dateigröße",
-          "values": {
-            "png": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadaten (EXIF)",
-          "values": {
-            "png": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "QR-kodgenerator utan inloggning och registrering",
-      "alternateName": ["QR-kodskapare", "vCard QR-kodgenerator", "Gratis QR-generator", "QR-kodverktyg"],
+      "alternateName": [
+        "QR-kodskapare",
+        "vCard QR-kodgenerator",
+        "Gratis QR-generator",
+        "QR-kodverktyg"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
       "description": "Skapa en QR-kod för webbplats, visitkort, meny eller flygblad. Välj datatyp, anpassa färger och storlek, ladda sedan ner PNG- eller SVG-fil.",
@@ -221,68 +226,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG – vilket format ska man välja för tryck?",
-      "plans": [
+      "cols": ["PNG (raster)", "SVG (vektor)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (raster)"
+          "label": "Webb och sociala medier",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (vektor)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Webb och sociala medier",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Flygblad och visitkort",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Flygblad och visitkort",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Affischer och banderoller (stort format)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Affischer och banderoller (stort format)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Skalning utan kvalitetsförlust",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Skalning utan kvalitetsförlust",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Redigering i grafisk applikation",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Redigering i grafisk applikation",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Mindre filstorlek",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Mindre filstorlek",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Presentationer",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Presentationer",
+          "values": ["✓", "✓"]
         }
       ]
     },

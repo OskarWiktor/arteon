@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer ongecomprimeerde BMP-bestanden naar lichtgewicht GIF. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
-      "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
-      "alternateName": ["BMP naar GIF omzetten", "BMP naar GIF conversie", "Gratis BMP naar GIF converter"]
+      "featureList": [
+        "Conversie naar GIF",
+        "Kwaliteitsaanpassing (60-95%)",
+        "Batchconversie",
+        "Lokale verwerking in de browser"
+      ],
+      "alternateName": [
+        "BMP naar GIF omzetten",
+        "BMP naar GIF conversie",
+        "Gratis BMP naar GIF converter"
+      ]
     },
     "howTo": {
       "name": "BMP naar GIF converteren",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs GIF – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["BMP", "GIF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Lossy-compressie",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alle browsers", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["1/4/8/24/32-bit", "8-bit (256)"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "bmp": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "bmp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "bmp": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "bmp": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "bmp": "Alle browsers",
-            "gif": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "bmp": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "bmp": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

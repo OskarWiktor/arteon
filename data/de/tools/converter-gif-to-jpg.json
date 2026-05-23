@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "GIF zu JPG Konverter",
-      "alternateName": ["GIF in JPG umwandeln", "GIF zu JPG konvertieren", "Kostenloser GIF-zu-JPG-Konverter"],
+      "alternateName": [
+        "GIF in JPG umwandeln",
+        "GIF zu JPG konvertieren",
+        "Kostenloser GIF-zu-JPG-Konverter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Erstes Bild eines GIFs als kompaktes JPG exportieren. Kleinere Datei, schnelleres Laden. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
-      "featureList": ["GIF-zu-JPG-Konvertierung", "JPG-Qualitätssteuerung", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
+      "featureList": [
+        "GIF-zu-JPG-Konvertierung",
+        "JPG-Qualitätssteuerung",
+        "Stapelkonvertierung",
+        "Lokale Browserverarbeitung",
+        "Kein Datei-Upload erforderlich"
+      ]
     },
     "howTo": {
       "name": "GIF in JPG umwandeln",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs JPG – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["GIF", "JPG"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Verlustbehaftete Komprimierung",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Verlustfreie Komprimierung",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparenz (Alphakanal)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animationsunterstützung",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowser-Unterstützung",
+          "values": ["Alle Browser", "Alle Browser"]
+        },
+        {
+          "label": "Farbtiefe",
+          "values": ["8-bit (256)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kompakte Dateigröße",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadaten (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verlustbehaftete Komprimierung",
-          "values": {
-            "gif": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Verlustfreie Komprimierung",
-          "values": {
-            "gif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparenz (Alphakanal)",
-          "values": {
-            "gif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animationsunterstützung",
-          "values": {
-            "gif": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbrowser-Unterstützung",
-          "values": {
-            "gif": "Alle Browser",
-            "jpg": "Alle Browser"
-          }
-        },
-        {
-          "name": "Farbtiefe",
-          "values": {
-            "gif": "8-bit (256)",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kompakte Dateigröße",
-          "values": {
-            "gif": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadaten (EXIF)",
-          "values": {
-            "gif": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

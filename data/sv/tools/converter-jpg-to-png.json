@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "JPG till PNG-konverterare",
-      "alternateName": ["Konvertera JPG till PNG", "JPG till PNG konvertering", "Gratis JPG till PNG konverterare"],
+      "alternateName": [
+        "Konvertera JPG till PNG",
+        "JPG till PNG konvertering",
+        "Gratis JPG till PNG konverterare"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
-      "featureList": ["JPG till PNG-konvertering", "Förlustfri PNG-utdata", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
+      "featureList": [
+        "JPG till PNG-konvertering",
+        "Förlustfri PNG-utdata",
+        "Batchkonvertering",
+        "Lokal webbläsarbearbetning",
+        "Ingen filuppladdning krävs"
+      ]
     },
     "howTo": {
       "name": "Hur man konverterar JPG till PNG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs PNG – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["JPG", "PNG"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Förlustrik komprimering",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Alla webbläsare", "Alla webbläsare"]
+        },
+        {
+          "label": "Färgdjup",
+          "values": ["8-bit (16.7M)", "8/16-bit"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "jpg": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "jpg": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "jpg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "jpg": "Alla webbläsare",
-            "png": "Alla webbläsare"
-          }
-        },
-        {
-          "name": "Färgdjup",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

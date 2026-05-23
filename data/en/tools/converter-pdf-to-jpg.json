@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert PDF to JPG?",
-      "html": "<p class=\"text-mid mb-4\">PDF is the standard for documents, but many platforms, social media, and messaging apps only accept image formats. Converting PDF pages to JPG creates individual images that can be shared on Instagram, WhatsApp, Slack, uploaded to e-commerce listings, or embedded in presentations.</p><p class=\"text-mid mb-4\">Each PDF page becomes a separate JPG file. The output resolution depends on the PDF page dimensions and rendering quality settings. JPG uses lossy compression, producing small files ideal for sharing online. For documents with text and sharp edges, consider converting to PNG instead.</p><p class=\"text-mid\">This converter processes files locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
+      "html": "<p class=\"text-mid mb-4\">PDF is the standard for documents, but many platforms, social media, and messaging apps only accept image formats. Converting PDF pages to JPG creates individual images that can be shared on Instagram, WhatsApp, Slack, uploaded to e-commerce listings, or embedded in presentations.</p><p class=\"text-mid mb-4\">Each PDF page becomes a separate JPG file. The output resolution depends on the PDF page dimensions and rendering quality settings. JPG uses lossy compression, producing small files ideal for sharing. For documents with text and sharp edges, consider converting to PNG instead.</p><p class=\"text-mid\">This converter processes files locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PDF to JPG conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PDF vs JPG – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["PDF", "JPG"],
+      "rows": [
         {
-          "id": "pdf",
-          "name": "PDF"
+          "label": "Lossy compression",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["Built-in PDF viewer", "All browsers"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "pdf": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "pdf": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "pdf": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "pdf": "Built-in PDF viewer",
-            "jpg": "All browsers"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

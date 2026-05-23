@@ -1,19 +1,19 @@
 {
   "slug": "anvandarvillkor",
   "metadata": {
-    "title": "Anvandarvillkor – Arteon Gratis Onlineverktyg",
-    "description": "Anvandarvillkor for Arteons gratis onlineverktyg. Las om anvandningsvillkor, immateriella rattigheter, ansvarsfriskrivningar och ansvar."
+    "title": "Anvandarvillkor – Arteon Gratisverktyg",
+    "description": "Anvandarvillkor for Arteons gratisverktyg. Las om anvandningsvillkor, immateriella rattigheter, ansvarsfriskrivningar och ansvar."
   },
   "hero": {
     "title": "Anvandarvillkor",
-    "description": "Anvandningsvillkor for Arteons gratis onlineverktyg"
+    "description": "Anvandningsvillkor for Arteons gratisverktyg"
   },
   "version": "24.02.2026",
   "sections": [
     {
       "id": "introduction",
       "title": "1. Inledning",
-      "content": "Dessa Anvandarvillkor reglerar din anvandning av de gratis onlineverktyg som tillhandahalls av Arteon pa arteonagency.pl. Genom att anvanda vara verktyg godkanner du dessa villkor."
+      "content": "Dessa Anvandarvillkor reglerar din anvandning av de gratisverktyg som tillhandahalls av Arteon pa arteonagency.pl. Genom att anvanda vara verktyg godkanner du dessa villkor."
     },
     {
       "id": "provider",
@@ -73,7 +73,7 @@
   ],
   "cta": {
     "title": "Tillbaka till verktygen",
-    "description": "Gratis onlineverktyg for att arbeta med bilder, text och farger",
+    "description": "Gratisverktyg for att arbeta med bilder, text och farger",
     "btnOne": "Verktyg"
   }
 }

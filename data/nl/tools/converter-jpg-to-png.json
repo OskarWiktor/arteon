@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "JPG naar PNG converter",
-      "alternateName": ["JPG naar PNG omzetten", "JPG naar PNG conversie", "Gratis JPG naar PNG converter"],
+      "alternateName": [
+        "JPG naar PNG omzetten",
+        "JPG naar PNG conversie",
+        "Gratis JPG naar PNG converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer JPG-afbeeldingen naar verliesvrij PNG. Lokale verwerking in de browser. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
-      "featureList": ["JPG naar PNG conversie", "Verliesvrije PNG-uitvoer", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
+      "featureList": [
+        "JPG naar PNG conversie",
+        "Verliesvrije PNG-uitvoer",
+        "Batchconversie",
+        "Lokale browserverwerking",
+        "Geen bestandsupload vereist"
+      ]
     },
     "howTo": {
       "name": "JPG naar PNG converteren",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs PNG – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["JPG", "PNG"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Lossy-compressie",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alle browsers", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["8-bit (16.7M)", "8/16-bit"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "jpg": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "jpg": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "jpg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "jpg": "Alle browsers",
-            "png": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

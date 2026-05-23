@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer JPG-foto\\'s naar lossless TIFF. Voor afdrukken en archivering. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
-      "featureList": ["Conversie naar TIFF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
-      "alternateName": ["JPG naar TIFF omzetten", "JPG naar TIFF conversie", "Gratis JPG naar TIFF converter"]
+      "featureList": [
+        "Conversie naar TIFF",
+        "Kwaliteitsaanpassing (60-95%)",
+        "Batchconversie",
+        "Lokale verwerking in de browser"
+      ],
+      "alternateName": [
+        "JPG naar TIFF omzetten",
+        "JPG naar TIFF conversie",
+        "Gratis JPG naar TIFF converter"
+      ]
     },
     "howTo": {
       "name": "JPG naar TIFF converteren",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs TIFF – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["JPG", "TIFF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Lossy-compressie",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alle browsers", "Alleen Safari"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["8-bit (16.7M)", "8/16/32-bit"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "jpg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "jpg": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "jpg": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "jpg": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "jpg": "Alle browsers",
-            "tiff": "Alleen Safari"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "jpg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "jpg": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Decodifique strings Base64 em imagens. Pré-visualize e descarregue no navegador. Gratuito.",
-      "featureList": ["Base64 to imagem conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Base64 to imagem", "Base64 to imagem", "Free Base64 to imagem converter"]
+      "featureList": [
+        "Base64 to imagem conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Base64 to imagem",
+        "Base64 to imagem",
+        "Free Base64 to imagem converter"
+      ]
     },
     "howTo": {
       "name": "Como converter Base64 para imagem",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter Base64 para imagem?",
-      "html": "<p class=\"text-mid mb-4\">BASE64 e um formato amplamente utilizado com grande compatibilidade. Dependendo do uso, a conversao para IMAGE pode oferecer vantagens significativas - arquivos menores, melhor qualidade ou suporte mais amplo de plataformas.</p><p class=\"text-mid mb-4\">Este conversor online gratuito transforma seus arquivos BASE64 para o formato IMAGE diretamente no navegador. Nenhum arquivo e enviado a servidores - todo o processo acontece localmente no seu dispositivo.</p><p class=\"text-mid\">Converta quantos arquivos precisar sem limites diarios, sem registro e sem marcas d'agua. Arraste e solte seus arquivos, ajuste a qualidade e baixe os resultados.</p>",
+      "html": "<p class=\"text-mid mb-4\">BASE64 e um formato amplamente utilizado com grande compatibilidade. Dependendo do uso, a conversao para IMAGE pode oferecer vantagens significativas - arquivos menores, melhor qualidade ou suporte mais amplo de plataformas.</p><p class=\"text-mid mb-4\">Este conversor gratuito transforma seus arquivos BASE64 para o formato IMAGE diretamente no navegador. Nenhum arquivo e enviado a servidores - todo o processo acontece localmente no seu dispositivo.</p><p class=\"text-mid\">Converta quantos arquivos precisar sem limites diarios, sem registro e sem marcas d'agua. Arraste e solte seus arquivos, ajuste a qualidade e baixe os resultados.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Base64 to imagem conversion",
       "variant": "right"

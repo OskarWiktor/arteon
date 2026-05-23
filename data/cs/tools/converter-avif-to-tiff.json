@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět AVIF na TIFF?",
-      "html": "<p class=\"text-mid mb-4\">AVIF je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na TIFF prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase AVIF soubory do formatu TIFF primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">AVIF je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na TIFF prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny konvertor prevadi vase AVIF soubory do formatu TIFF primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "AVIF to TIFF conversion",
       "variant": "right"
@@ -128,78 +128,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs TIFF – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["AVIF", "TIFF"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Ztrátová komprese",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Pouze Safari"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["8/10/12-bit, HDR", "8/16/32-bit"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "avif": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "avif": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "avif": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "avif": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
-            "tiff": "Pouze Safari"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "avif": "8/10/12-bit, HDR",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "avif": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "avif": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "Färgpalettgenerator – 17 färgscheman",
-      "alternateName": ["Färgschemagenerator", "Färggenerator", "Färgmatchningsverktyg", "Färgharmonigenerator"],
+      "alternateName": [
+        "Färgschemagenerator",
+        "Färggenerator",
+        "Färgmatchningsverktyg",
+        "Färgharmonigenerator"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
       "description": "Gratis färgpalettgenerator. Ange en HEX-färg och verktyget genererar 17 scheman: monokromatiskt, angränsande, komplementärt, triadiskt, delat komplementärt, pastell, mörkt, tonalt och minimalistiskt. Varje färg kan kopieras med sin HEX-kod och HSL-värde.",

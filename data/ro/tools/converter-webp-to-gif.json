@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește imagini WebP în format GIF pentru compatibilitate maxima. Procesarea are loc în browser - fișierele nu părăsesc dispozitivul.",
-      "featureList": ["Conversie în GIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie WEBP în GIF", "Convertor WEBP în GIF", "Convertor gratuit WEBP în GIF"]
+      "featureList": [
+        "Conversie în GIF",
+        "Ajustare calitate (60-95%)",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie WEBP în GIF",
+        "Convertor WEBP în GIF",
+        "Convertor gratuit WEBP în GIF"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți WebP în GIF",
@@ -166,85 +175,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversia WebP în GIF în practică",
-      "html": "<p class=\"text-mid mb-4\">Formatul GIF este uneori necesar – sisteme vechi, instrumente de newsletter sau platforme care accepta doar GIF.</p><p class=\"text-mid mb-4\">GIF suporta maximum 256 de culori. Imaginile fotorealiste pierd calitate. Conversia este mai potrivita pentru grafica simpla, pictograme sau logo-uri.</p><p class=\"text-mid\">Procesarea locala ofera o alternativa rapida si sigura la serviciile de conversie online.</p>"
+      "html": "<p class=\"text-mid mb-4\">Formatul GIF este uneori necesar – sisteme vechi, instrumente de newsletter sau platforme care accepta doar GIF.</p><p class=\"text-mid mb-4\">GIF suporta maximum 256 de culori. Imaginile fotorealiste pierd calitate. Conversia este mai potrivita pentru grafica simpla, pictograme sau logo-uri.</p><p class=\"text-mid\">Procesarea locala ofera o alternativa rapida si sigura la serviciile de conversie</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs GIF – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["WebP", "GIF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Compresie cu pierderi",
+          "values": ["✓", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Toate browserele"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8-bit (16.7M)", "8-bit (256)"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "gif": "Toate browserele"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

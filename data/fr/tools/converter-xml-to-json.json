@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "XML vs JSON – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["XML", "JSON"],
+      "rows": [
         {
-          "id": "xml",
-          "name": "XML"
+          "label": "Données hiérarchiques",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Données tabulaires",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Validation de schéma",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Lisible par un humain",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Syntaxe compacte",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Données hiérarchiques",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Données tabulaires",
-          "values": {
-            "xml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Validation de schéma",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Lisible par un humain",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Syntaxe compacte",
-          "values": {
-            "xml": false,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Comment fonctionne la conversion XML en JSON ?",
-      "html": "<p class=\"text-mid mb-4\">XML utilise une hi\u00e9rarchie bas\u00e9e sur des balises avec des \u00e9l\u00e9ments ouvrants et fermants, tandis que JSON utilise des accolades l\u00e9g\u00e8res et des paires cl\u00e9-valeur. Le convertisseur analyse l\u2019arborescence du document XML et associe chaque \u00e9l\u00e9ment \u00e0 une structure JSON correspondante.</p><p class=\"text-mid mb-4\">Les \u00e9l\u00e9ments XML deviennent des objets JSON, les \u00e9l\u00e9ments r\u00e9p\u00e9t\u00e9s avec le m\u00eame nom de balise des tableaux JSON, et les contenus texte des valeurs cha\u00eene. Les attributs XML sont repr\u00e9sent\u00e9s comme propri\u00e9t\u00e9s sp\u00e9ciales (avec pr\u00e9fixe @) dans l\u2019objet JSON.</p><p class=\"text-mid\">JSON est le format privil\u00e9gi\u00e9 pour les API web modernes, les applications JavaScript et les bases de donn\u00e9es NoSQL. La conversion s\u2019effectue enti\u00e8rement dans votre navigateur.</p>"
+      "html": "<p class=\"text-mid mb-4\">XML utilise une hiérarchie basée sur des balises avec des éléments ouvrants et fermants, tandis que JSON utilise des accolades légères et des paires clé-valeur. Le convertisseur analyse l’arborescence du document XML et associe chaque élément à une structure JSON correspondante.</p><p class=\"text-mid mb-4\">Les éléments XML deviennent des objets JSON, les éléments répétés avec le même nom de balise des tableaux JSON, et les contenus texte des valeurs chaîne. Les attributs XML sont représentés comme propriétés spéciales (avec préfixe @) dans l’objet JSON.</p><p class=\"text-mid\">JSON est le format privilégié pour les API web modernes, les applications JavaScript et les bases de données NoSQL. La conversion s’effectue entièrement dans votre navigateur.</p>"
     },
     {
       "type": "gap",
@@ -203,28 +175,28 @@
     {
       "type": "sectionSteps",
       "title": "Conseils pour la conversion XML en JSON",
-      "description": "Quelques conseils pour \u00e9viter les probl\u00e8mes courants :",
+      "description": "Quelques conseils pour éviter les problèmes courants :",
       "grid": "two",
       "items": [
         {
           "icon": "RiCodeLine",
           "title": "Attributs XML",
-          "description": "Les attributs XML sont convertis en propri\u00e9t\u00e9s JSON avec pr\u00e9fixe @. Par exemple, &lt;item id='1'&gt; devient {\"@id\": \"1\"}."
+          "description": "Les attributs XML sont convertis en propriétés JSON avec préfixe @. Par exemple, &lt;item id='1'&gt; devient {\"@id\": \"1\"}."
         },
         {
           "icon": "RiNodeTree",
           "title": "Espaces de noms",
-          "description": "Les espaces de noms XML sont conserv\u00e9s dans la sortie JSON comme partie des noms d\u2019\u00e9l\u00e9ments. Les d\u00e9clarations complexes de namespaces peuvent n\u00e9cessiter un nettoyage manuel."
+          "description": "Les espaces de noms XML sont conservés dans la sortie JSON comme partie des noms d’éléments. Les déclarations complexes de namespaces peuvent nécessiter un nettoyage manuel."
         },
         {
           "icon": "RiFileTextLine",
           "title": "Contenu mixte",
-          "description": "Les \u00e9l\u00e9ments XML contenant \u00e0 la fois du texte et des \u00e9l\u00e9ments enfants sont trait\u00e9s en pla\u00e7ant le texte dans une propri\u00e9t\u00e9 sp\u00e9ciale #text."
+          "description": "Les éléments XML contenant à la fois du texte et des éléments enfants sont traités en plaçant le texte dans une propriété spéciale #text."
         },
         {
           "icon": "RiFileCodeLine",
           "title": "Sections CDATA",
-          "description": "Les sections CDATA en XML sont converties en valeurs cha\u00eenes simples en JSON. L\u2019enveloppe CDATA est retir\u00e9e et le contenu est conserv\u00e9 intact."
+          "description": "Les sections CDATA en XML sont converties en valeurs chaînes simples en JSON. L’enveloppe CDATA est retirée et le contenu est conservé intact."
         }
       ]
     },
@@ -254,16 +226,16 @@
           "answer": "Oui, il fonctionne sur tout appareil disposant d'un navigateur web moderne."
         },
         {
-          "question": "La conversion XML en JSON est-elle s\u00e9curis\u00e9e ?",
-          "answer": "Oui. Toute la conversion s\u2019effectue localement dans votre navigateur. Aucune donn\u00e9e n\u2019est envoy\u00e9e \u00e0 un serveur."
+          "question": "La conversion XML en JSON est-elle sécurisée ?",
+          "answer": "Oui. Toute la conversion s’effectue localement dans votre navigateur. Aucune donnée n’est envoyée à un serveur."
         },
         {
           "question": "Les attributs XML sont-ils perdus lors de la conversion ?",
-          "answer": "Non. Les attributs XML sont conserv\u00e9s dans la sortie JSON comme propri\u00e9t\u00e9s avec pr\u00e9fixe @. Par exemple, id='123' devient \"@id\": \"123\" dans l\u2019objet JSON."
+          "answer": "Non. Les attributs XML sont conservés dans la sortie JSON comme propriétés avec préfixe @. Par exemple, id='123' devient \"@id\": \"123\" dans l’objet JSON."
         },
         {
           "question": "Puis-je utiliser la sortie JSON en JavaScript ?",
-          "answer": "Oui. La sortie est du JSON standard utilisable avec JSON.parse() en JavaScript ou directement dans tout langage de programmation, API ou base de donn\u00e9es."
+          "answer": "Oui. La sortie est du JSON standard utilisable avec JSON.parse() en JavaScript ou directement dans tout langage de programmation, API ou base de données."
         }
       ]
     },

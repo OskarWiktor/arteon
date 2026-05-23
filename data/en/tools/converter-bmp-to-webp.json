@@ -28,8 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert uncompressed BMP to lightweight WebP. Up to 95% size reduction. No installation needed, works on any device. Free, private, and unlimited.",
-      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert BMP to WEBP", "BMP to WEBP conversion", "Free BMP to WEBP converter", "Change BMP to WEBP"]
+      "featureList": [
+        "BMP to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert BMP to WEBP",
+        "BMP to WEBP conversion",
+        "Free BMP to WEBP converter",
+        "Change BMP to WEBP"
+      ]
     },
     "howTo": {
       "name": "BMP to WebP",
@@ -174,78 +184,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs WebP – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["BMP", "WebP"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Lossy compression",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["All browsers", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Color depth",
+          "values": ["1/4/8/24/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "bmp": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "bmp": "All browsers",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

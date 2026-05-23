@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere BMP necomprimate în GIF usor. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
-      "featureList": ["Conversie în GIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie BMP în GIF", "Convertor BMP în GIF", "Convertor gratuit BMP în GIF"]
+      "featureList": [
+        "Conversie în GIF",
+        "Ajustare calitate (60-95%)",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie BMP în GIF",
+        "Convertor BMP în GIF",
+        "Convertor gratuit BMP în GIF"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți BMP în GIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs GIF – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["BMP", "GIF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Compresie cu pierderi",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Toate browserele", "Toate browserele"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["1/4/8/24/32-bit", "8-bit (256)"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "bmp": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "bmp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "bmp": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "bmp": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "bmp": "Toate browserele",
-            "gif": "Toate browserele"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "bmp": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "bmp": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

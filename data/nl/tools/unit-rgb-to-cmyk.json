@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Reken RGB om naar CMYK en andersom. Voor drukvoorbereiding.",
-      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+      "featureList": [
+        "Bidirectionele realtime-conversie",
+        "Alle converters op één plek",
+        "Resultaat naar klembord kopiëren",
+        "Lokale berekening in de browser"
+      ]
     },
     "howTo": {
       "name": "Hoe de converter te gebruiken",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "RGB vs CMYK",
-      "featureLabel": "Eigenschap",
-      "plans": [
+      "labelHeader": "Eigenschap",
+      "cols": ["RGB", "CMYK"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "RGB"
+          "label": "Model",
+          "values": ["Additief (licht)", "Subtractief (inkt)"]
         },
         {
-          "id": "unit2",
-          "name": "CMYK",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Model",
-          "values": {
-            "unit1": "Additief (licht)",
-            "unit2": "Subtractief (inkt)"
-          }
+          "label": "Gebruikt voor",
+          "values": ["Schermen, web", "Druk, verpakking"]
         },
         {
-          "name": "Gebruikt voor",
-          "values": {
-            "unit1": "Schermen, web",
-            "unit2": "Druk, verpakking"
-          }
+          "label": "Gamut",
+          "values": ["Groter", "Kleiner"]
         },
         {
-          "name": "Gamut",
-          "values": {
-            "unit1": "Groter",
-            "unit2": "Kleiner"
-          }
+          "label": "Zwart",
+          "values": ["R=0, G=0, B=0", "K=100%"]
         },
         {
-          "name": "Zwart",
-          "values": {
-            "unit1": "R=0, G=0, B=0",
-            "unit2": "K=100%"
-          }
-        },
-        {
-          "name": "Wit",
-          "values": {
-            "unit1": "R=255, G=255, B=255",
-            "unit2": "Geen inkt"
-          }
+          "label": "Wit",
+          "values": ["R=255, G=255, B=255", "Geen inkt"]
         }
       ]
     },

@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera vektor-SVG-grafik till hogkvalitativt TIFF-raster. Ingen installation behövs, fungerar på alla enheter. Gratis, privat och obegränsat.",
-      "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
-      "alternateName": ["Konvertera SVG till TIFF", "SVG till TIFF konvertering", "Gratis SVG till TIFF konverterare"]
+      "featureList": [
+        "Konvertering till TIFF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal bearbetning i webbläsaren"
+      ],
+      "alternateName": [
+        "Konvertera SVG till TIFF",
+        "SVG till TIFF konvertering",
+        "Gratis SVG till TIFF konverterare"
+      ]
     },
     "howTo": {
       "name": "Hur konverterar man SVG till TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs TIFF – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["SVG", "TIFF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Förlustrik komprimering",
+          "values": ["—", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Alla webbläsare", "Endast Safari"]
+        },
+        {
+          "label": "Färgdjup",
+          "values": ["N/A (vektor)", "8/16/32-bit"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "svg": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "svg": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "svg": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "svg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "svg": "Alla webbläsare",
-            "tiff": "Endast Safari"
-          }
-        },
-        {
-          "name": "Färgdjup",
-          "values": {
-            "svg": "N/A (vektor)",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "svg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

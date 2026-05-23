@@ -33,7 +33,7 @@
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
         "Business Ipsum generator",
-        "Dummy text generator online"
+        "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Generador Lorem Ipsum gratuito — 8 estilos: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business y más. 9 modos de generación. Copie como texto o HTML.",
@@ -254,122 +254,52 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Comparación de estilos de texto",
-      "featureLabel": "Característica",
-      "plans": [
-        {
-          "id": "classic",
-          "name": "Lorem Ipsum",
-          "highlighted": true
-        },
-        {
-          "id": "hipster",
-          "name": "Hipster"
-        },
-        {
-          "id": "business",
-          "name": "Business"
-        },
-        {
-          "id": "polish",
-          "name": "Local"
-        },
-        {
-          "id": "bacon",
-          "name": "Bacon"
-        },
-        {
-          "id": "cupcake",
-          "name": "Cupcake"
-        },
-        {
-          "id": "pirate",
-          "name": "Pirate"
-        },
-        {
-          "id": "legal",
-          "name": "Legal"
-        }
+      "labelHeader": "Característica",
+      "cols": [
+        "Lorem Ipsum",
+        "Hipster",
+        "Business",
+        "Local",
+        "Bacon",
+        "Cupcake",
+        "Pirate",
+        "Legal"
       ],
-      "features": [
+      "rows": [
         {
-          "name": "Idioma",
-          "values": {
-            "classic": "Latín",
-            "hipster": "Inglés",
-            "business": "Inglés",
-            "polish": "Local",
-            "bacon": "Inglés",
-            "cupcake": "Inglés",
-            "pirate": "Inglés",
-            "legal": "Inglés"
-          }
+          "label": "Idioma",
+          "values": ["Latín", "Inglés", "Inglés", "Local", "Inglés", "Inglés", "Inglés", "Inglés"]
         },
         {
-          "name": "Tema",
-          "values": {
-            "classic": "Filosofía",
-            "hipster": "Estilo de vida",
-            "business": "Corporativo",
-            "polish": "General",
-            "bacon": "Gastronomía",
-            "cupcake": "Repostería",
-            "pirate": "Aventura",
-            "legal": "Derecho"
-          }
+          "label": "Tema",
+          "values": [
+            "Filosofía",
+            "Estilo de vida",
+            "Corporativo",
+            "General",
+            "Gastronomía",
+            "Repostería",
+            "Aventura",
+            "Derecho"
+          ]
         },
         {
-          "name": "Neutralidad visual",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Neutralidad visual",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Ritmo natural",
-          "values": {
-            "classic": true,
-            "hipster": true,
-            "business": true,
-            "polish": true,
-            "bacon": true,
-            "cupcake": true,
-            "pirate": true,
-            "legal": true
-          }
+          "label": "Ritmo natural",
+          "values": ["✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"]
         },
         {
-          "name": "Estándar de la industria",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Estándar de la industria",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Humor / carácter",
-          "values": {
-            "classic": "Neutral",
-            "hipster": "Medio",
-            "business": "Bajo",
-            "polish": "Bajo",
-            "bacon": "Alto",
-            "cupcake": "Alto",
-            "pirate": "Alto",
-            "legal": "Bajo"
-          }
+          "label": "Humor / carácter",
+          "values": ["Neutral", "Medio", "Bajo", "Bajo", "Alto", "Alto", "Alto", "Bajo"]
         }
       ]
     },

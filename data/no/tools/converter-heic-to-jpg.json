@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter iPhone HEIC-bilder til universell JPG. Ingen registrering, ingen opplasting. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
-      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Konverter HEIC til JPG", "HEIC til JPG konvertering", "Gratis HEIC til JPG konverterer"]
+      "featureList": [
+        "HEIC to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Konverter HEIC til JPG",
+        "HEIC til JPG konvertering",
+        "Gratis HEIC til JPG konverterer"
+      ]
     },
     "howTo": {
       "name": "HEIC to JPG",
@@ -174,68 +183,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs JPG – formatsammenligning",
-      "plans": [
+      "cols": ["HEIC", "JPG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Komprimering med tap",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
+          "label": "Nettleserstøtte",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "heic": false,
-            "jpg": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
       ]
     },

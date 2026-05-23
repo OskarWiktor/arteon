@@ -2,13 +2,13 @@
   "toolKey": "heicToJpg",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter HEIC na JPG – zamień zdjęcia z iPhone za darmo",
-    "description": "Zamień zdjęcia HEIC z iPhone i iPad na uniwersalny JPG w przeglądarce. Bez limitu plików, bez rejestracji. Pliki nie są wysyłane na serwer.",
+    "title": "Darmowy konwerter formatu HEIC na JPG bez limitu plików i rejestracji",
+    "description": "Zamień zdjęcia HEIC z iPhone i iPad na uniwersalny JPG w przeglądarce. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-heic-na-jpg"
   },
   "hero": {
-    "title": "Konwerter HEIC na JPG – zdjęcia z iPhone w uniwersalnym formacie",
+    "title": "Darmowy konwerter formatu HEIC na JPG – zdjęcia z iPhone w uniwersalnym formacie",
     "description": "Zamień pliki HEIC z iPhone i iPad na JPG kompatybilny z każdym programem. Ustaw jakość i pobierz wynik. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,10 +25,15 @@
   "schemas": {
     "software": {
       "name": "Konwerter HEIC na JPG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana HEIC na JPG online", "Konwersja HEIC do JPG", "HEIC to JPG converter", "Konwerter zdjęć iPhone"],
+      "alternateName": [
+        "Zamiana HEIC na JPG",
+        "Konwersja HEIC do JPG",
+        "HEIC to JPG converter",
+        "Konwerter zdjęć iPhone"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter HEIC na JPG online. Zamień zdjęcia HEIC z iPhone na uniwersalny JPG w przeglądarce - pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter HEIC na JPG. Zamień zdjęcia HEIC z iPhone na uniwersalny JPG w przeglądarce - pliki nie są wysyłane na serwer.",
       "featureList": [
         "Konwersja HEIC/HEIF do JPG",
         "Regulacja poziomu jakości (60–95%)",
@@ -38,8 +43,8 @@
       ]
     },
     "howTo": {
-      "name": "Jak zamienić HEIC na JPG online",
-      "description": "Instrukcja konwersji plików HEIC na format JPG za pomocą darmowego narzędzia online.",
+      "name": "Jak zamienić HEIC na JPG",
+      "description": "Instrukcja konwersji plików HEIC na format JPG za pomocą darmowego narzędzia.",
       "steps": [
         {
           "name": "Dodaj pliki HEIC",
@@ -163,78 +168,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs JPG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["HEIC", "JPG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Kompresja stratna",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Safari 13+ (macOS / iOS)", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8/10-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "jpg": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

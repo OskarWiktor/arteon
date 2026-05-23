@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Reken Mbps om naar MB/s en andersom.",
-      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+      "featureList": [
+        "Bidirectionele realtime-conversie",
+        "Alle converters op één plek",
+        "Resultaat naar klembord kopiëren",
+        "Lokale berekening in de browser"
+      ]
     },
     "howTo": {
       "name": "Hoe de converter te gebruiken",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Mbps vs MB/s",
-      "featureLabel": "Eigenschap",
-      "plans": [
+      "labelHeader": "Eigenschap",
+      "cols": ["Mbps", "MB/s"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Mbps"
+          "label": "Eenheid",
+          "values": ["Bits", "Bytes"]
         },
         {
-          "id": "unit2",
-          "name": "MB/s",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Eenheid",
-          "values": {
-            "unit1": "Bits",
-            "unit2": "Bytes"
-          }
+          "label": "Verhouding",
+          "values": ["8 Mbps", "= 1 MB/s"]
         },
         {
-          "name": "Verhouding",
-          "values": {
-            "unit1": "8 Mbps",
-            "unit2": "= 1 MB/s"
-          }
+          "label": "Gebruik",
+          "values": ["ISP-snelheden", "Downloads"]
         },
         {
-          "name": "Gebruik",
-          "values": {
-            "unit1": "ISP-snelheden",
-            "unit2": "Downloads"
-          }
+          "label": "100 Mbps",
+          "values": ["100 Mbps", "12,5 MB/s"]
         },
         {
-          "name": "100 Mbps",
-          "values": {
-            "unit1": "100 Mbps",
-            "unit2": "12,5 MB/s"
-          }
-        },
-        {
-          "name": "1 Gbps",
-          "values": {
-            "unit1": "1.000 Mbps",
-            "unit2": "125 MB/s"
-          }
+          "label": "1 Gbps",
+          "values": ["1.000 Mbps", "125 MB/s"]
         }
       ]
     },

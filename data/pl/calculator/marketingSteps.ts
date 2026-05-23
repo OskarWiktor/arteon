@@ -6,11 +6,41 @@ export const marketingSteps: Step[] = [
     required: true,
     type: 'multi',
     options: [
-      { label: 'Pozycjonowanie strony (SEO)', value: 'seo', price: 0, tooltip: 'Poprawa widoczności strony w wynikach wyszukiwania Google.', icon: 'FiTrendingUp' },
-      { label: 'Reklamy płatne (PPC)', value: 'ppc', price: 0, icon: 'FiCreditCard', tooltip: 'Płatne kampanie, np. Google Ads, gdzie płacisz za kliknięcie.' },
-      { label: 'Marketing treści (Content)', value: 'content', price: 0, icon: 'FiFileText', tooltip: 'Tworzenie tekstów, które przyciągają klientów i poprawiają SEO.' },
-      { label: 'Media Społecznościowe', value: 'social', price: 0, icon: 'FiShare2', tooltip: 'Obecność i aktywność Twojej marki w mediach społecznościowych.' },
-      { label: 'Analityka / Optymalizacja', value: 'analytics', price: 0, icon: 'FiBarChart2', tooltip: 'Analiza danych oraz poprawa skuteczności działań marketingowych.' },
+      {
+        label: 'Pozycjonowanie strony (SEO)',
+        value: 'seo',
+        price: 0,
+        tooltip: 'Poprawa widoczności strony w wynikach wyszukiwania Google.',
+        icon: 'FiTrendingUp',
+      },
+      {
+        label: 'Reklamy płatne (PPC)',
+        value: 'ppc',
+        price: 0,
+        icon: 'FiCreditCard',
+        tooltip: 'Płatne kampanie, np. Google Ads, gdzie płacisz za kliknięcie.',
+      },
+      {
+        label: 'Marketing treści (Content)',
+        value: 'content',
+        price: 0,
+        icon: 'FiFileText',
+        tooltip: 'Tworzenie tekstów, które przyciągają klientów i poprawiają SEO.',
+      },
+      {
+        label: 'Media Społecznościowe',
+        value: 'social',
+        price: 0,
+        icon: 'FiShare2',
+        tooltip: 'Obecność i aktywność Twojej marki w mediach społecznościowych.',
+      },
+      {
+        label: 'Analityka / Optymalizacja',
+        value: 'analytics',
+        price: 0,
+        icon: 'FiBarChart2',
+        tooltip: 'Analiza danych oraz poprawa skuteczności działań marketingowych.',
+      },
     ],
     branches: {
       seo: [
@@ -46,10 +76,25 @@ export const marketingSteps: Step[] = [
           required: true,
           type: 'multi',
           options: [
-            { label: 'Google Ads - wyszukiwarka', value: 'ppc-search', price: 500, icon: 'FiSearch' },
-            { label: 'Google Ads - banery (Display)', value: 'ppc-display', price: 400, icon: 'FiImage' },
+            {
+              label: 'Google Ads - wyszukiwarka',
+              value: 'ppc-search',
+              price: 500,
+              icon: 'FiSearch',
+            },
+            {
+              label: 'Google Ads - banery (Display)',
+              value: 'ppc-display',
+              price: 400,
+              icon: 'FiImage',
+            },
             { label: 'Remarketing', value: 'ppc-remarketing', price: 400, icon: 'FiRepeat' },
-            { label: 'Meta Ads (Facebook / Instagram)', value: 'ppc-meta', price: 500, icon: 'FiFacebook' },
+            {
+              label: 'Meta Ads (Facebook / Instagram)',
+              value: 'ppc-meta',
+              price: 500,
+              icon: 'FiFacebook',
+            },
           ],
         },
       ],
@@ -59,9 +104,19 @@ export const marketingSteps: Step[] = [
           required: true,
           type: 'multi',
           options: [
-            { label: 'Artykuły blogowe / eksperckie', value: 'content-articles', price: 0, icon: 'FiFileText' },
+            {
+              label: 'Artykuły blogowe / eksperckie',
+              value: 'content-articles',
+              price: 0,
+              icon: 'FiFileText',
+            },
             { label: 'Treści na stronę www', value: 'content-website', price: 0, icon: 'FiGlobe' },
-            { label: 'Treści dla postów do mediów społecznościowych', value: 'content-social', price: 0, icon: 'FiMessageSquare' },
+            {
+              label: 'Treści dla postów do mediów społecznościowych',
+              value: 'content-social',
+              price: 0,
+              icon: 'FiMessageSquare',
+            },
             { label: 'Opisy produktów', value: 'content-products', price: 0, icon: 'FiTag' },
           ],
           branches: {
@@ -143,7 +198,12 @@ export const marketingSteps: Step[] = [
           required: true,
           type: 'multi',
           options: [
-            { label: 'Facebook / Instagram', value: 'social-fb-ig', price: 600, icon: 'FiInstagram' },
+            {
+              label: 'Facebook / Instagram',
+              value: 'social-fb-ig',
+              price: 600,
+              icon: 'FiInstagram',
+            },
             { label: 'LinkedIn', value: 'social-linkedin', price: 500, icon: 'FiLinkedin' },
           ],
         },
@@ -152,9 +212,24 @@ export const marketingSteps: Step[] = [
           required: true,
           type: 'multi',
           options: [
-            { label: 'Strategia / plan publikacji', value: 'social-strategy', price: 400, icon: 'FiBookOpen' },
-            { label: 'Tworzenie grafik / postów', value: 'social-design', price: 500, icon: 'FiImage' },
-            { label: 'Moderacja komentarzy', value: 'social-comments', price: 300, icon: 'FiMessageCircle' },
+            {
+              label: 'Strategia / plan publikacji',
+              value: 'social-strategy',
+              price: 400,
+              icon: 'FiBookOpen',
+            },
+            {
+              label: 'Tworzenie grafik / postów',
+              value: 'social-design',
+              price: 500,
+              icon: 'FiImage',
+            },
+            {
+              label: 'Moderacja komentarzy',
+              value: 'social-comments',
+              price: 300,
+              icon: 'FiMessageCircle',
+            },
           ],
         },
       ],
@@ -164,9 +239,24 @@ export const marketingSteps: Step[] = [
           required: true,
           type: 'multi',
           options: [
-            { label: 'Instalacja Google Analytics / Pixel', value: 'analytics-install', price: 120, icon: 'FiSettings' },
-            { label: 'Miesięczny raport + wnioski', value: 'analytics-report', price: 400, icon: 'FiFile' },
-            { label: 'Audyt UX / konwersji', value: 'analytics-ux-audit', price: 600, icon: 'FiActivity' },
+            {
+              label: 'Instalacja Google Analytics / Pixel',
+              value: 'analytics-install',
+              price: 120,
+              icon: 'FiSettings',
+            },
+            {
+              label: 'Miesięczny raport + wnioski',
+              value: 'analytics-report',
+              price: 400,
+              icon: 'FiFile',
+            },
+            {
+              label: 'Audyt UX / konwersji',
+              value: 'analytics-ux-audit',
+              price: 600,
+              icon: 'FiActivity',
+            },
           ],
         },
       ],
@@ -179,7 +269,12 @@ export const marketingSteps: Step[] = [
       { label: 'Jednorazowa kampania', value: 'one-time', price: 0, icon: 'FiZap' },
       { label: '1-3 miesiące', value: 'short-term', multiplier: 1.2, icon: 'FiClock' },
       { label: '4-6 miesięcy', value: 'mid-term', multiplier: 1.4, icon: 'FiCalendar' },
-      { label: '6+ miesięcy (ciągła współpraca)', value: 'long-term', multiplier: 1.6, icon: 'FiRepeat' },
+      {
+        label: '6+ miesięcy (ciągła współpraca)',
+        value: 'long-term',
+        multiplier: 1.6,
+        icon: 'FiRepeat',
+      },
     ],
   },
   {
@@ -187,7 +282,12 @@ export const marketingSteps: Step[] = [
     required: true,
     options: [
       { label: 'Tak - udostępnię', value: 'has-data', price: 0, icon: 'FiDatabase' },
-      { label: 'Nie - zaczynamy od zera', value: 'no-data', multiplier: 1.1, icon: 'FiAlertCircle' },
+      {
+        label: 'Nie - zaczynamy od zera',
+        value: 'no-data',
+        multiplier: 1.1,
+        icon: 'FiAlertCircle',
+      },
     ],
   },
 ];

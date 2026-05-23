@@ -346,7 +346,7 @@ async function Notifications() {
 ```tsx
 import { unstable_cache } from 'next/cache';
 
-const getCachedUser = unstable_cache(async (id) => getUser(id), ['my-app-user'], {
+const getCachedUser = unstable_cache(async id => getUser(id), ['my-app-user'], {
   tags: ['users'],
   revalidate: 60,
 });

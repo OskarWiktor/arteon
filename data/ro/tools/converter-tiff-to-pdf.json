@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți TIFF în PDF?",
-      "html": "<p class=\"text-mid mb-4\">TIFF este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in PDF poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele TIFF in format PDF direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">TIFF este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in PDF poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertorforma fisierele TIFF in format PDF direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "TIFF to PDF conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PDF – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["TIFF", "PDF"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Compresie cu pierderi",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Doar Safari", "Vizualizator PDF integrat"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "tiff": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "tiff": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "tiff": "Doar Safari",
-            "pdf": "Vizualizator PDF integrat"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "tiff": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",
@@ -255,7 +224,7 @@
     {
       "type": "sectionInfo",
       "title": "How image conversion impacts page speed and SEO",
-      "html": "<p class=\"text-mid mb-4\">TIFF to PDF conversion is commonly used for document archival and sharing. TIFF files cannot be viewed in web browsers or opened easily on most devices, while PDF is universally readable.</p><p class=\"text-mid mb-4\">When sharing PDFs online, file size matters. TIFF files are large (10–50 MB each), but the converter compresses images within the PDF to produce more manageable file sizes. A 10-page PDF from TIFF scans will typically be 10–30 MB.</p><p class=\"text-mid\">For web display, consider converting TIFF directly to JPG, WebP, or AVIF instead. These formats produce much smaller files optimized for browser display.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF to PDF conversion is commonly used for document archival and sharing. TIFF files cannot be viewed in web browsers or opened easily on most devices, while PDF is universally readable.</p><p class=\"text-mid mb-4\">When sharing PDFstters. TIFF files are large (10–50 MB each), but the converter compresses images within the PDF to produce more manageable file sizes. A 10-page PDF from TIFF scans will typically be 10–30 MB.</p><p class=\"text-mid\">For web display, consider converting TIFF directly to JPG, WebP, or AVIF instead. These formats produce much smaller files optimized for browser display.</p>"
     },
     {
       "type": "faq",

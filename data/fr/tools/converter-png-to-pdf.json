@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs PDF – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["PNG", "PDF"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Compression avec perte",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Tous les navigateurs", "Visionneuse PDF intégrée"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "png": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "png": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "png": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "png": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "png": "Tous les navigateurs",
-            "pdf": "Visionneuse PDF intégrée"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "png": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "png": false,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

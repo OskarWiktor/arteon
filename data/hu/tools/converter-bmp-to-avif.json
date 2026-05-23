@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Tömörítetlen BMP fájlok konvertálása ultrakompakt AVIF-re. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
-      "featureList": ["Konvertálás AVIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
-      "alternateName": ["BMP konvertálása AVIF formátumba", "BMP–AVIF átalakítás", "Ingyenes BMP–AVIF konverter"]
+      "featureList": [
+        "Konvertálás AVIF-re",
+        "Minőség beállítása (60-95%)",
+        "Kötegelt konvertálás",
+        "Helyi feldolgozás a böngészőben"
+      ],
+      "alternateName": [
+        "BMP konvertálása AVIF formátumba",
+        "BMP–AVIF átalakítás",
+        "Ingyenes BMP–AVIF konverter"
+      ]
     },
     "howTo": {
       "name": "BMP konvertálása AVIF-ra",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs AVIF – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["BMP", "AVIF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Veszteséges tömörítés",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Veszteségmentes tömörítés",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Átlátszóság (alfa csatorna)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animáció támogatás",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Böngészőtámogatás",
+          "values": ["Minden böngésző", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Színmélység",
+          "values": ["1/4/8/24/32-bit", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Kis fájlméret",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metaadatok (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Veszteséges tömörítés",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Veszteségmentes tömörítés",
-          "values": {
-            "bmp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Átlátszóság (alfa csatorna)",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Animáció támogatás",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Böngészőtámogatás",
-          "values": {
-            "bmp": "Minden böngésző",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Színmélység",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Kis fájlméret",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metaadatok (EXIF)",
-          "values": {
-            "bmp": false,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

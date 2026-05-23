@@ -88,11 +88,18 @@ function processOrder(orderId: OrderId, userId: UserId) {}
 
 ```typescript
 // Recursive type manipulation
-type DeepReadonly<T> = T extends (...args: any[]) => any ? T : T extends object ? { readonly [K in keyof T]: DeepReadonly<T[K]> } : T;
+type DeepReadonly<T> = T extends (...args: any[]) => any
+  ? T
+  : T extends object
+    ? { readonly [K in keyof T]: DeepReadonly<T[K]> }
+    : T;
 
 // Template literal type magic
 type PropEventSource<Type> = {
-  on<Key extends string & keyof Type>(eventName: `${Key}Changed`, callback: (newValue: Type[Key]) => void): void;
+  on<Key extends string & keyof Type>(
+    eventName: `${Key}Changed`,
+    callback: (newValue: Type[Key]) => void,
+  ): void;
 };
 ```
 
@@ -177,7 +184,9 @@ declare module 'some-untyped-package' {
 type InfiniteArray<T> = T | InfiniteArray<T>[];
 
 // Good: Limited recursion
-type NestedArray<T, D extends number = 5> = D extends 0 ? T : T | NestedArray<T, [-1, 0, 1, 2, 3, 4][D]>[];
+type NestedArray<T, D extends number = 5> = D extends 0
+  ? T
+  : T | NestedArray<T, [-1, 0, 1, 2, 3, 4][D]>[];
 ```
 
 **Module Resolution Mysteries**
@@ -242,7 +251,11 @@ command -v typesync >/dev/null 2>&1 && npx typesync  # Install missing @types pa
 ```json
 // Root tsconfig.json
 {
-  "references": [{ "path": "./packages/core" }, { "path": "./packages/ui" }, { "path": "./apps/web" }],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/ui" },
+    { "path": "./apps/web" }
+  ],
   "compilerOptions": {
     "composite": true,
     "declaration": true,

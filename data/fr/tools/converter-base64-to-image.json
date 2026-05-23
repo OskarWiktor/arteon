@@ -29,7 +29,11 @@
       "applicationSubCategory": "DataConverter",
       "description": "Décodez les chaînes Base64 en images. Aperçu et téléchargement dans votre navigateur. Gratuit.",
       "featureList": ["Base64 to image conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Base64 to image", "Base64 to image", "Free Base64 to image converter"]
+      "alternateName": [
+        "Convert Base64 to image",
+        "Base64 to image",
+        "Free Base64 to image converter"
+      ]
     },
     "howTo": {
       "name": "Comment convertir Base64 en image",

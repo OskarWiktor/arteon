@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "JPG fotok konvertálása veszteségmentes TIFF-re. Nyomtatashoz es archivalashoz. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
-      "featureList": ["Konvertálás TIFF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
-      "alternateName": ["JPG konvertálása TIFF formátumba", "JPG–TIFF átalakítás", "Ingyenes JPG–TIFF konverter"]
+      "featureList": [
+        "Konvertálás TIFF-re",
+        "Minőség beállítása (60-95%)",
+        "Kötegelt konvertálás",
+        "Helyi feldolgozás a böngészőben"
+      ],
+      "alternateName": [
+        "JPG konvertálása TIFF formátumba",
+        "JPG–TIFF átalakítás",
+        "Ingyenes JPG–TIFF konverter"
+      ]
     },
     "howTo": {
       "name": "JPG konvertálása TIFF-ra",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs TIFF – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["JPG", "TIFF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Veszteséges tömörítés",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Veszteségmentes tömörítés",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Átlátszóság (alfa csatorna)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animáció támogatás",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Böngészőtámogatás",
+          "values": ["Minden böngésző", "Csak Safari"]
+        },
+        {
+          "label": "Színmélység",
+          "values": ["8-bit (16.7M)", "8/16/32-bit"]
+        },
+        {
+          "label": "Kis fájlméret",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metaadatok (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Veszteséges tömörítés",
-          "values": {
-            "jpg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Veszteségmentes tömörítés",
-          "values": {
-            "jpg": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Átlátszóság (alfa csatorna)",
-          "values": {
-            "jpg": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Animáció támogatás",
-          "values": {
-            "jpg": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Böngészőtámogatás",
-          "values": {
-            "jpg": "Minden böngésző",
-            "tiff": "Csak Safari"
-          }
-        },
-        {
-          "name": "Színmélység",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Kis fájlméret",
-          "values": {
-            "jpg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metaadatok (EXIF)",
-          "values": {
-            "jpg": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

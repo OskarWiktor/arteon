@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire BMP in PDF?",
-      "html": "<p class=\"text-mid mb-4\">BMP e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in PDF puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file BMP nel formato PDF direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "html": "<p class=\"text-mid mb-4\">BMP e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in PDF puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore gratuito trasforma i tuoi file BMP nel formato PDF direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "BMP to PDF conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs PDF – confronto dei formati",
-      "plans": [
+      "labelHeader": "Funzionalità",
+      "cols": ["BMP", "PDF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Compressione con perdita",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Compressione senza perdita",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Trasparenza (canale alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Supporto animazione",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Supporto browser",
+          "values": ["Tutti i browser", "Visualizzatore PDF integrato"]
+        },
+        {
+          "label": "Dimensione file compatta",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadati (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressione con perdita",
-          "values": {
-            "bmp": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Compressione senza perdita",
-          "values": {
-            "bmp": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Trasparenza (canale alfa)",
-          "values": {
-            "bmp": false,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Supporto animazione",
-          "values": {
-            "bmp": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Supporto browser",
-          "values": {
-            "bmp": "Tutti i browser",
-            "pdf": "Visualizzatore PDF integrato"
-          }
-        },
-        {
-          "name": "Dimensione file compatta",
-          "values": {
-            "bmp": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadati (EXIF)",
-          "values": {
-            "bmp": false,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funzionalità"
+      ]
     },
     {
       "type": "gap",

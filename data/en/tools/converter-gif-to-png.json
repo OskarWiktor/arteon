@@ -25,14 +25,21 @@
   "schemas": {
     "software": {
       "name": "GIF to PNG converter – free, unlimited files",
-      "alternateName": ["Convert GIF to PNG online", "GIF frame to PNG", "Extract GIF frame as PNG"],
+      "alternateName": ["Convert GIF to PNG", "GIF frame to PNG", "Extract GIF frame as PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Free online GIF to PNG converter. Extract the first frame of a GIF as lossless PNG. No uploads, no limits.",
-      "featureList": ["GIF to PNG conversion", "Lossless first-frame extraction", "Batch conversion", "File size preview", "Individual or bulk download", "100% local processing"]
+      "description": "Free GIF to PNG converter. Extract the first frame of a GIF as lossless PNG. No uploads, no limits.",
+      "featureList": [
+        "GIF to PNG conversion",
+        "Lossless first-frame extraction",
+        "Batch conversion",
+        "File size preview",
+        "Individual or bulk download",
+        "100% local processing"
+      ]
     },
     "howTo": {
-      "name": "How to convert GIF to PNG online",
+      "name": "How to convert GIF to PNG",
       "description": "Step-by-step guide to converting GIF files to PNG.",
       "steps": [
         {
@@ -174,78 +181,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs PNG – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["GIF", "PNG"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Lossy compression",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["All browsers", "All browsers"]
+        },
+        {
+          "label": "Color depth",
+          "values": ["8-bit (256)", "8/16-bit"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "gif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "gif": "All browsers",
-            "png": "All browsers"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "gif": "8-bit (256)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

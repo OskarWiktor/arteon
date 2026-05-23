@@ -1,0 +1,118 @@
+'use client';
+
+import { useRef } from 'react';
+import { CarouselDots } from '@/components/molecules/CarouselDots';
+import { CarouselNavButtons } from '@/components/molecules/CarouselNavButtons';
+import type { Testimonial } from '@/types/testimonial';
+import TestimonialCard from '@/components/organisms/carousels/TestimonialCard';
+import SectionHeader from '../../molecules/SectionHeader';
+import { useCarouselScroller } from '@/hooks/useCarouselScroller';
+
+import testimonialsPl from '@/data/pl/testimonials.json';
+import { cn } from '@/lib/utils';
+
+const AUTO_PLAY_INTERVAL_MS = 4000;
+
+interface TestimonialsCarouselProps {
+  title?: string;
+  subtitle?: string;
+  testimonials?: Testimonial[];
+  ids?: string[];
+}
+
+export default function TestimonialsCarousel({
+  title = 'Opinie od naszych klientów',
+  subtitle,
+  testimonials,
+  ids,
+}: TestimonialsCarouselProps) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLElement>(null);
+
+  const source: Testimonial[] = testimonials?.length
+    ? testimonials
+    : (testimonialsPl as Testimonial[]);
+
+  const items: Testimonial[] = (() => {
+    let list = source;
+    if (ids?.length) {
+      const map = new Map(list.map(t => [t.id, t] as const));
+      list = ids.map(id => map.get(id)).filter(Boolean) as Testimonial[];
+    }
+    return list;
+  })();
+
+  const { currentSlide, maxSlides, isScrollable, scrollByCards, goToSlide, onKeyDown } =
+    useCarouselScroller({
+      itemCount: items.length,
+      scrollRef,
+      cardRef,
+      autoPlay: true,
+      autoPlayIntervalMs: AUTO_PLAY_INTERVAL_MS,
+    });
+
+  if (!items.length) return null;
+
+  return (
+    <section className='w-full' aria-labelledby='testimonials-heading'>
+      <SectionHeader subtitle={subtitle} title={title} titleId='testimonials-heading' />
+
+      <div className='relative'>
+        <div
+          ref={scrollRef}
+          className={cn(
+            'flex gap-4 overflow-x-auto',
+            'no-scrollbar snap-x snap-mandatory scroll-smooth',
+            'pb-8',
+            'focus:outline-none focus-visible:ring-2',
+            'focus-visible:ring-primary',
+            'focus-visible:ring-offset-2 focus-visible:ring-offset-white',
+          )}
+          role='region'
+          aria-roledescription='carousel'
+          aria-label='Karuzela opinii'
+          aria-live='polite'
+          tabIndex={0}
+          onKeyDown={onKeyDown}
+        >
+          {items.map((item, i) => (
+            <div
+              key={item.id}
+              ref={
+                i === 0
+                  ? (el: HTMLDivElement | null) => {
+                      cardRef.current = el;
+                    }
+                  : null
+              }
+              className='w-[320px] shrink-0 snap-start md:w-[420px] lg:w-[520px]'
+              role='group'
+              aria-label={`Opinia ${i + 1} z ${items.length}`}
+            >
+              <TestimonialCard item={item} />
+            </div>
+          ))}
+        </div>
+
+        <CarouselNavButtons
+          isScrollable={isScrollable}
+          onPrev={() => scrollByCards('left')}
+          onNext={() => scrollByCards('right')}
+          prevLabel='Przewiń w lewo'
+          nextLabel='Przewiń w prawo'
+        />
+      </div>
+
+      <CarouselDots
+        isScrollable={isScrollable}
+        currentSlide={currentSlide}
+        maxSlides={maxSlides}
+        onDotClick={goToSlide}
+        carouselNavigationLabel='Nawigacja karuzeli'
+        goToSlideLabel='Przejdź do slajdu'
+        ofLabel='z'
+        slideLabel='Slajd'
+      />
+    </section>
+  );
+}

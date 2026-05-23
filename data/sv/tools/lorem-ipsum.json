@@ -33,7 +33,7 @@
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
         "Business Ipsum generator",
-        "Dummy text generator online"
+        "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Gratis Lorem Ipsum-generator — 8 stilar: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business och mer. 9 genereringslägen. Kopiera som text eller HTML.",
@@ -254,122 +254,61 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Jämförelse av textstilar",
-      "featureLabel": "Egenskap",
-      "plans": [
-        {
-          "id": "classic",
-          "name": "Lorem Ipsum",
-          "highlighted": true
-        },
-        {
-          "id": "hipster",
-          "name": "Hipster"
-        },
-        {
-          "id": "business",
-          "name": "Business"
-        },
-        {
-          "id": "polish",
-          "name": "Lokal"
-        },
-        {
-          "id": "bacon",
-          "name": "Bacon"
-        },
-        {
-          "id": "cupcake",
-          "name": "Cupcake"
-        },
-        {
-          "id": "pirate",
-          "name": "Pirate"
-        },
-        {
-          "id": "legal",
-          "name": "Legal"
-        }
+      "labelHeader": "Egenskap",
+      "cols": [
+        "Lorem Ipsum",
+        "Hipster",
+        "Business",
+        "Lokal",
+        "Bacon",
+        "Cupcake",
+        "Pirate",
+        "Legal"
       ],
-      "features": [
+      "rows": [
         {
-          "name": "Språk",
-          "values": {
-            "classic": "Latin",
-            "hipster": "Engelska",
-            "business": "Engelska",
-            "polish": "Lokalt",
-            "bacon": "Engelska",
-            "cupcake": "Engelska",
-            "pirate": "Engelska",
-            "legal": "Engelska"
-          }
+          "label": "Språk",
+          "values": [
+            "Latin",
+            "Engelska",
+            "Engelska",
+            "Lokalt",
+            "Engelska",
+            "Engelska",
+            "Engelska",
+            "Engelska"
+          ]
         },
         {
-          "name": "Tema",
-          "values": {
-            "classic": "Filosofi",
-            "hipster": "Livsstil",
-            "business": "Företag",
-            "polish": "Allmänt",
-            "bacon": "Gastronomi",
-            "cupcake": "Bageri",
-            "pirate": "Äventyr",
-            "legal": "Juridik"
-          }
+          "label": "Tema",
+          "values": [
+            "Filosofi",
+            "Livsstil",
+            "Företag",
+            "Allmänt",
+            "Gastronomi",
+            "Bageri",
+            "Äventyr",
+            "Juridik"
+          ]
         },
         {
-          "name": "Visuell neutralitet",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Visuell neutralitet",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Naturlig rytm",
-          "values": {
-            "classic": true,
-            "hipster": true,
-            "business": true,
-            "polish": true,
-            "bacon": true,
-            "cupcake": true,
-            "pirate": true,
-            "legal": true
-          }
+          "label": "Naturlig rytm",
+          "values": ["✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"]
         },
         {
-          "name": "Branschstandard",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Branschstandard",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Humor / karaktär",
-          "values": {
-            "classic": "Neutral",
-            "hipster": "Medel",
-            "business": "Låg",
-            "polish": "Låg",
-            "bacon": "Hög",
-            "cupcake": "Hög",
-            "pirate": "Hög",
-            "legal": "Låg"
-          }
+          "label": "Humor / karaktär",
+          "values": ["Neutral", "Medel", "Låg", "Låg", "Hög", "Hög", "Hög", "Låg"]
         }
       ]
     },

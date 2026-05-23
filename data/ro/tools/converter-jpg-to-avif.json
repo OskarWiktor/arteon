@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fotografii JPG în AVIF modern. Compresie cu pana la 50% mai buna decat JPG. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
-      "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie JPG în AVIF", "Convertor JPG în AVIF", "Convertor gratuit JPG în AVIF"]
+      "featureList": [
+        "Conversie în AVIF",
+        "Ajustare calitate (60-95%)",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie JPG în AVIF",
+        "Convertor JPG în AVIF",
+        "Convertor gratuit JPG în AVIF"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți JPG în AVIF",
@@ -166,85 +175,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversia JPG în AVIF în practică",
-      "html": "<p class=\"text-mid mb-4\">AVIF atinge pana la 50% compresie mai buna decat JPEG la calitate vizuala comparabila. Pentru site-uri cu multe fotografii – portaluri imobiliare, reviste online, site-uri de calatorii – timpii de incarcare se reduc considerabil.</p><p class=\"text-mid mb-4\">Platforme precum Imobiliare.ro, Booking.com sau OLX adopta tot mai mult AVIF pentru o experienta mobila mai buna. Chrome, Firefox si Safari 16+ il suporta nativ.</p><p class=\"text-mid\">Conversia locala in browser va protejeaza imaginile: fotografii imobiliare, de produse sau portrete – nimic nu se incarca pe server. Complet conform cu GDPR.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF atinge pana la 50% compresie mai buna decat JPEG la calitate vizuala comparabila. Pentru site-uri cu multe fotografii – portaluri imobiliare, revisteii – timpii de incarcare se reduc considerabil.</p><p class=\"text-mid mb-4\">Platforme precum Imobiliare.ro, Booking.com sau OLX adopta tot mai mult AVIF pentru o experienta mobila mai buna. Chrome, Firefox si Safari 16+ il suporta nativ.</p><p class=\"text-mid\">Conversia locala in browser va protejeaza imaginile: fotografii imobiliare, de produse sau portrete – nimic nu se incarca pe server. Complet conform cu GDPR.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs AVIF – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["JPG", "AVIF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Compresie cu pierderi",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Toate browserele", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8-bit (16.7M)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "jpg": "Toate browserele",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

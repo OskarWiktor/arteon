@@ -1,0 +1,103 @@
+import type { Locale } from '@/types/locale';
+
+import { JsonLd } from '@/components/atoms/JsonLd';
+import { BREADCRUMBS_UI } from '@/lib/i18n/locales';
+import { cn } from '@/lib/utils';
+import { RiHomeLine } from 'react-icons/ri';
+
+import InlineLink from '../atoms/InlineLink';
+import Wrapper from '../atoms/Wrapper';
+
+const DEFAULT_SITE_URL = 'https://www.arteonagency.pl';
+
+type Crumb = {
+  href: string;
+  label: string;
+};
+
+interface BreadcrumbsProps {
+  second: Crumb;
+  third: Crumb;
+  fourth?: Crumb;
+  includeJsonLd?: boolean;
+  siteUrl?: string;
+  size?: 'default' | 'compact';
+  locale?: Locale;
+}
+
+export default function Breadcrumbs({
+  second,
+  third,
+  fourth,
+  includeJsonLd = false,
+  siteUrl = DEFAULT_SITE_URL,
+  size = 'default',
+  locale = 'pl',
+}: BreadcrumbsProps) {
+  const t = BREADCRUMBS_UI[locale];
+
+  const items: Crumb[] = [{ href: '/', label: t.home }, second, third, ...(fourth ? [fourth] : [])];
+
+  const visibleItems = items.slice(1);
+
+  const jsonLd = includeJsonLd
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: items.map((item, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: item.label,
+          item: `${siteUrl}${item.href}`,
+        })),
+      }
+    : null;
+
+  return (
+    <Wrapper>
+      <nav
+        aria-label={t.ariaLabel}
+        className={cn(size === 'compact' ? 'flex items-center justify-center py-3' : 'py-6')}
+      >
+        <ol className='flex flex-wrap items-center gap-2 text-sm!'>
+          <li>
+            <InlineLink href='/' variant='default' aria-label={t.home}>
+              <RiHomeLine className='text-primary-mid text-medium mt-2 h-4 w-4' />
+            </InlineLink>
+          </li>
+
+          {visibleItems.map((item, index) => {
+            const isLast = index === visibleItems.length - 1;
+
+            return (
+              <li
+                key={`${item.href}-${index}`}
+                className='text-primary-mid text-medium flex items-center gap-2 text-sm!'
+              >
+                <span aria-hidden='true' className='text-primary-mid text-sm!'>
+                  /
+                </span>
+
+                {isLast ? (
+                  <span className='text-primary text-medium text-sm!' aria-current='page'>
+                    {item.label}
+                  </span>
+                ) : (
+                  <InlineLink
+                    href={item.href}
+                    variant='default'
+                    className='text-primary-mid text-sm!'
+                  >
+                    {item.label}
+                  </InlineLink>
+                )}
+              </li>
+            );
+          })}
+        </ol>
+
+        {jsonLd && <JsonLd schema={jsonLd} />}
+      </nav>
+    </Wrapper>
+  );
+}

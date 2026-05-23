@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les fichiers AVIF en PNG sans perte. Qualite et transparence preservees. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
-      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convertir AVIF en PNG", "Conversion AVIF vers PNG", "Convertisseur AVIF en PNG gratuit"]
+      "featureList": [
+        "AVIF to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convertir AVIF en PNG",
+        "Conversion AVIF vers PNG",
+        "Convertisseur AVIF en PNG gratuit"
+      ]
     },
     "howTo": {
       "name": "AVIF to PNG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs PNG – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["AVIF", "PNG"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Compression avec perte",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Tous les navigateurs"]
+        },
+        {
+          "label": "Profondeur de couleur",
+          "values": ["8/10/12-bit, HDR", "8/16-bit"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "avif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "avif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "avif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "avif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
-            "png": "Tous les navigateurs"
-          }
-        },
-        {
-          "name": "Profondeur de couleur",
-          "values": {
-            "avif": "8/10/12-bit, HDR",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "avif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "avif": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

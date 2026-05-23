@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs PDF – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["WebP", "PDF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Compression avec perte",
+          "values": ["✓", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Visionneuse PDF intégrée"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "webp": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "webp": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "pdf": "Visionneuse PDF intégrée"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

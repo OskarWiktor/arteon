@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter SVG-grafikk til lett WebP. Ideell for nettsider og sosiale medier. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
-      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Konverter SVG til WEBP", "SVG til WEBP konvertering", "Gratis SVG til WEBP konverterer"]
+      "featureList": [
+        "SVG to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Konverter SVG til WEBP",
+        "SVG til WEBP konvertering",
+        "Gratis SVG til WEBP konverterer"
+      ]
     },
     "howTo": {
       "name": "SVG to WebP",
@@ -174,68 +183,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs WebP – formatsammenligning",
-      "plans": [
+      "cols": ["SVG", "WebP"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Komprimering med tap",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "svg": false,
-            "webp": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
+          "label": "Nettleserstøtte",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "webp": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
       ]
     },

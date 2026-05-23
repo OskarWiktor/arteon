@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "YAML vs JSON – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["YAML", "JSON"],
+      "rows": [
         {
-          "id": "yaml",
-          "name": "YAML"
+          "label": "Nested/hierarchical data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabular data",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Schema validation",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Human readable",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API standard",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Compact syntax",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Nested/hierarchical data",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabular data",
-          "values": {
-            "yaml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Schema validation",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Human readable",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API standard",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Compact syntax",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

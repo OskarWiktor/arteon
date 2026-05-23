@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Convertor BMP în PNG",
-      "alternateName": ["Conversie BMP în PNG", "Convertor BMP în PNG", "Convertor gratuit BMP în PNG"],
+      "alternateName": [
+        "Conversie BMP în PNG",
+        "Convertor BMP în PNG",
+        "Convertor gratuit BMP în PNG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește imagini BMP în PNG fără pierderi. Calitate păstrată, dimensiune redusă. Procesarea are loc în browser - fișierele nu părăsesc dispozitivul.",
-      "featureList": ["Conversie BMP în PNG", "Ieșire PNG fără pierderi", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
+      "featureList": [
+        "Conversie BMP în PNG",
+        "Ieșire PNG fără pierderi",
+        "Conversie în lot",
+        "Procesare locală în browser",
+        "Fără încărcare de fișiere"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți BMP în PNG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs PNG – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["BMP", "PNG"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Compresie cu pierderi",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Toate browserele", "Toate browserele"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["1/4/8/24/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "bmp": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "bmp": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "bmp": "Toate browserele",
-            "png": "Toate browserele"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

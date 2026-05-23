@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Decimal to binary converter",
-      "alternateName": ["Decimal to binary calculator", "Number base converter", "Binary converter"],
+      "alternateName": [
+        "Decimal to binary calculator",
+        "Number base converter",
+        "Binary converter"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert decimal numbers to binary and vice versa. Useful for programming, computer science, and digital electronics.",
@@ -184,55 +188,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimal vs Binary",
-      "featureLabel": "Feature",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["Decimal (base-10)", "Binary (base-2)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimal (base-10)"
+          "label": "Digits",
+          "values": ["0–9", "0–1"]
         },
         {
-          "id": "unit2",
-          "name": "Binary (base-2)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Digits",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–1"
-          }
+          "label": "Used by",
+          "values": ["Humans", "Computers"]
         },
         {
-          "name": "Used by",
-          "values": {
-            "unit1": "Humans",
-            "unit2": "Computers"
-          }
+          "label": "Example: 42",
+          "values": ["42", "101010"]
         },
         {
-          "name": "Example: 42",
-          "values": {
-            "unit1": "42",
-            "unit2": "101010"
-          }
+          "label": "Example: 255",
+          "values": ["255", "11111111"]
         },
         {
-          "name": "Example: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "11111111"
-          }
-        },
-        {
-          "name": "Readability",
-          "values": {
-            "unit1": "Easy for humans",
-            "unit2": "Long but computer-native"
-          }
+          "label": "Readability",
+          "values": ["Easy for humans", "Long but computer-native"]
         }
       ]
     },

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Konvertera HTML till Markdown-format. Automatisk parsning och formatering. Gratis.",
-      "featureList": ["HTML to Markdown conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert HTML to Markdown", "HTML to Markdown", "Free HTML to Markdown converter"]
+      "featureList": [
+        "HTML to Markdown conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert HTML to Markdown",
+        "HTML to Markdown",
+        "Free HTML to Markdown converter"
+      ]
     },
     "howTo": {
       "name": "Hur man konverterar HTML till Markdown",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera HTML till Markdown?",
-      "html": "<p class=\"text-mid mb-4\">HTML ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till MARKDOWN erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina HTML-filer till MARKDOWN-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">HTML ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till MARKDOWN erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratiserare omvandlar dina HTML-filer till MARKDOWN-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "HTML to Markdown conversion",
       "variant": "right"
@@ -128,64 +136,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HTML vs Markdown – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["HTML", "Markdown"],
+      "rows": [
         {
-          "id": "html",
-          "name": "HTML"
+          "label": "Nästlade data",
+          "values": ["✓", "—"]
         },
         {
-          "id": "markdown",
-          "name": "Markdown",
-          "highlighted": true
+          "label": "Tabelldata",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Schemavalidering",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Läsbart för människor",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "API-standard",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Kompakt syntax",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Nästlade data",
-          "values": {
-            "html": true,
-            "markdown": false
-          }
-        },
-        {
-          "name": "Tabelldata",
-          "values": {
-            "html": true,
-            "markdown": true
-          }
-        },
-        {
-          "name": "Schemavalidering",
-          "values": {
-            "html": true,
-            "markdown": false
-          }
-        },
-        {
-          "name": "Läsbart för människor",
-          "values": {
-            "html": false,
-            "markdown": true
-          }
-        },
-        {
-          "name": "API-standard",
-          "values": {
-            "html": false,
-            "markdown": false
-          }
-        },
-        {
-          "name": "Kompakt syntax",
-          "values": {
-            "html": false,
-            "markdown": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

@@ -37,7 +37,7 @@ const { data, error } = await resend.emails.send({
   from: 'Acme <onboarding@resend.dev>',
   to: ['user@example.com'],
   subject: 'Welcome to Acme',
-  react: <WelcomeEmail name="John" verificationUrl="https://example.com/verify" />,
+  react: <WelcomeEmail name='John' verificationUrl='https://example.com/verify' />,
 });
 
 if (error) {
@@ -86,7 +86,9 @@ const transporter = nodemailer.createTransport({
   auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
 });
 
-const html = await render(<WelcomeEmail name="John" verificationUrl="https://example.com/verify" />);
+const html = await render(
+  <WelcomeEmail name='John' verificationUrl='https://example.com/verify' />,
+);
 
 await transporter.sendMail({
   from: 'noreply@example.com',
@@ -104,7 +106,9 @@ import sgMail from '@sendgrid/mail';
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-const html = await render(<WelcomeEmail name="John" verificationUrl="https://example.com/verify" />);
+const html = await render(
+  <WelcomeEmail name='John' verificationUrl='https://example.com/verify' />,
+);
 
 await sgMail.send({
   to: 'user@example.com',

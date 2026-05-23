@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes JSON-t CSV-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A JSON szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a CSV formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a JSON fajlokat CSV formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A JSON szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a CSV formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes konvertalo kozvetlenul a bongeszoben alakitja at a JSON fajlokat CSV formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "JSON to CSV conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs CSV – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["JSON", "CSV"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Beágyazott adatok",
+          "values": ["✓", "—"]
         },
         {
-          "id": "csv",
-          "name": "CSV",
-          "highlighted": true
+          "label": "Táblázatos adatok",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Sémavalidáció",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Ember által olvasható",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-szabvány",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Kompakt szintaxis",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Beágyazott adatok",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Táblázatos adatok",
-          "values": {
-            "json": false,
-            "csv": true
-          }
-        },
-        {
-          "name": "Sémavalidáció",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Ember által olvasható",
-          "values": {
-            "json": true,
-            "csv": true
-          }
-        },
-        {
-          "name": "API-szabvány",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Kompakt szintaxis",
-          "values": {
-            "json": true,
-            "csv": true
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

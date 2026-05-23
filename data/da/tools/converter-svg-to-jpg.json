@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "SVG til JPG-konverter",
-      "alternateName": ["Konvertér SVG til JPG", "SVG til JPG konvertering", "Gratis SVG til JPG konverter"],
+      "alternateName": [
+        "Konvertér SVG til JPG",
+        "SVG til JPG konvertering",
+        "Gratis SVG til JPG konverter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertér SVG-grafik til kompakt JPG. Mindre fil, fuld kompatibilitet. Ingen installation nødvendig, virker på alle enheder. Gratis, privat og ubegrænset.",
-      "featureList": ["SVG til JPG-konvertering", "JPG-kvalitetskontrol", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
+      "featureList": [
+        "SVG til JPG-konvertering",
+        "JPG-kvalitetskontrol",
+        "Batchkonvertering",
+        "Lokal browserbehandling",
+        "Ingen filupload påkrævet"
+      ]
     },
     "howTo": {
       "name": "Sådan konverterer du SVG til JPG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs JPG – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["SVG", "JPG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Tabsgivende komprimering",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Alle browsere", "Alle browsere"]
+        },
+        {
+          "label": "Farvedybde",
+          "values": ["N/A (vektor)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "svg": "Alle browsere",
-            "jpg": "Alle browsere"
-          }
-        },
-        {
-          "name": "Farvedybde",
-          "values": {
-            "svg": "N/A (vektor)",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "svg": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

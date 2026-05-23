@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter ukomprimerte BMP-filer til lettvekts GIF. Ingen installasjon nødvendig, fungerer på alle enheter. Gratis, privat og ubegrenset.",
-      "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
-      "alternateName": ["Konverter BMP til GIF", "BMP til GIF konvertering", "Gratis BMP til GIF konverterer"]
+      "featureList": [
+        "Konvertering til GIF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal behandling i nettleseren"
+      ],
+      "alternateName": [
+        "Konverter BMP til GIF",
+        "BMP til GIF konvertering",
+        "Gratis BMP til GIF konverterer"
+      ]
     },
     "howTo": {
       "name": "Hvordan konvertere BMP til GIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs GIF – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funksjon",
+      "cols": ["BMP", "GIF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Komprimering med tap",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animasjonsstøtte",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Nettleserstøtte",
+          "values": ["Alle nettlesere", "Alle nettlesere"]
+        },
+        {
+          "label": "Fargedybde",
+          "values": ["1/4/8/24/32-bit", "8-bit (256)"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "bmp": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Komprimering uten tap",
-          "values": {
-            "bmp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "bmp": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "bmp": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Nettleserstøtte",
-          "values": {
-            "bmp": "Alle nettlesere",
-            "gif": "Alle nettlesere"
-          }
-        },
-        {
-          "name": "Fargedybde",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "bmp": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "bmp": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",

@@ -14,11 +14,11 @@ export function getAllProjects(): Project[] {
 }
 
 export function findProjectBySlug(slug: string): Project | undefined {
-  return projects.find((p) => p.slug === slug);
+  return projects.find(p => p.slug === slug);
 }
 
 export function getAllProjectPreviews(): ProjectPreview[] {
-  return projects.map((p) => ({
+  return projects.map(p => ({
     slug: p.slug,
     title: p.title,
     short: typeof p.short === 'string' ? p.short : '',

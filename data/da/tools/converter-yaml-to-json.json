@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "YAML vs JSON – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["YAML", "JSON"],
+      "rows": [
         {
-          "id": "yaml",
-          "name": "YAML"
+          "label": "Indlejrede data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabeldata",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Skemavalidering",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Menneskelæsbart",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standard",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Kompakt syntaks",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Indlejrede data",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabeldata",
-          "values": {
-            "yaml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Skemavalidering",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Menneskelæsbart",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-standard",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompakt syntaks",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Hvordan fungerer YAML til JSON-konvertering?",
-      "html": "<p class=\"text-mid mb-4\">YAML bruger indrykning og minimal syntaks til at repr\u00e6sentere strukturerede data, mens JSON bruger kr\u00f8llede parenteser, firkantede parenteser og eksplicitte anf\u00f8rselstegn. Konverteren parser YAML-strukturen og producerer korrekt formateret \u00e6kvivalent JSON.</p><p class=\"text-mid mb-4\">YAML-indrykning bliver til JSON-indlejring, elementer med bindestreg bliver til JSON-array-elementer, og YAML n\u00f8gle-v\u00e6rdi-par bliver til JSON-objektegenskaber. Datatyper bevares: strenge, tal, booleske, null, arrays og objekter overf\u00f8res direkte.</p><p class=\"text-mid\">YAML til JSON-konvertering er nyttig, n\u00e5r konfigurationsdata skal integreres i webapplikationer, REST API'er eller systemer, der forventer JSON-input. Al konvertering sker lokalt i din browser.</p>"
+      "html": "<p class=\"text-mid mb-4\">YAML bruger indrykning og minimal syntaks til at repræsentere strukturerede data, mens JSON bruger krøllede parenteser, firkantede parenteser og eksplicitte anførselstegn. Konverteren parser YAML-strukturen og producerer korrekt formateret ækvivalent JSON.</p><p class=\"text-mid mb-4\">YAML-indrykning bliver til JSON-indlejring, elementer med bindestreg bliver til JSON-array-elementer, og YAML nøgle-værdi-par bliver til JSON-objektegenskaber. Datatyper bevares: strenge, tal, booleske, null, arrays og objekter overføres direkte.</p><p class=\"text-mid\">YAML til JSON-konvertering er nyttig, når konfigurationsdata skal integreres i webapplikationer, REST API'er eller systemer, der forventer JSON-input. Al konvertering sker lokalt i din browser.</p>"
     },
     {
       "type": "gap",
@@ -259,11 +231,11 @@
         },
         {
           "question": "Bevares YAML-kommentarer?",
-          "answer": "Nej. JSON underst\u00f8tter ikke kommentarer, s\u00e5 alle #-kommentarer fra YAML-filen fjernes under konvertering. Behold den originale YAML-fil."
+          "answer": "Nej. JSON understøtter ikke kommentarer, så alle #-kommentarer fra YAML-filen fjernes under konvertering. Behold den originale YAML-fil."
         },
         {
           "question": "Er konverteringen tabsfri?",
-          "answer": "Ja, hvad ang\u00e5r data. Alle strenge, tal, booleske, null-v\u00e6rdier, arrays og objekter bevares pr\u00e6cist. Kun YAML-specifikke funktioner som kommentarer og ankre overf\u00f8res ikke til JSON."
+          "answer": "Ja, hvad angår data. Alle strenge, tal, booleske, null-værdier, arrays og objekter bevares præcist. Kun YAML-specifikke funktioner som kommentarer og ankre overføres ikke til JSON."
         }
       ]
     },

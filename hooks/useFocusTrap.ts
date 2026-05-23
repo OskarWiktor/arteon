@@ -3,9 +3,14 @@
 import { useEffect } from 'react';
 import type { RefObject } from 'react';
 
-const DEFAULT_FOCUSABLE = 'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
+const DEFAULT_FOCUSABLE =
+  'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
 
-export function useFocusTrap(containerRef: RefObject<HTMLElement | null>, enabled: boolean, focusableSelectors: string = DEFAULT_FOCUSABLE) {
+export function useFocusTrap(
+  containerRef: RefObject<HTMLElement | null>,
+  enabled: boolean,
+  focusableSelectors: string = DEFAULT_FOCUSABLE,
+) {
   useEffect(() => {
     if (!enabled) return;
 
@@ -15,7 +20,11 @@ export function useFocusTrap(containerRef: RefObject<HTMLElement | null>, enable
       const root = containerRef.current;
       if (!root) return;
 
-      const nodes = Array.from(root.querySelectorAll<HTMLElement>(focusableSelectors)).filter((el) => !el.hasAttribute('disabled') && (el.offsetParent !== null || el === document.activeElement));
+      const nodes = Array.from(root.querySelectorAll<HTMLElement>(focusableSelectors)).filter(
+        el =>
+          !el.hasAttribute('disabled') &&
+          (el.offsetParent !== null || el === document.activeElement),
+      );
 
       if (nodes.length === 0) return;
 

@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Muunna HEX-värikoodit RGB:ksi ja päinvastoin.",
-      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+      "featureList": [
+        "Kaksisuuntainen reaaliaikainen muunnos",
+        "Kaikki muuntimet yhdessä paikassa",
+        "Kopioi tulos leikepöydälle",
+        "Paikallinen laskenta selaimessa"
+      ]
     },
     "howTo": {
       "name": "Näin käytät muunninta",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEX vs RGB – vertailu",
-      "featureLabel": "Ominaisuus",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["HEX", "RGB"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "HEX"
+          "label": "Muoto",
+          "values": ["#RRGGBB", "rgb(R, G, B)"]
         },
         {
-          "id": "unit2",
-          "name": "RGB",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Muoto",
-          "values": {
-            "unit1": "#RRGGBB",
-            "unit2": "rgb(R, G, B)"
-          }
+          "label": "Arvot",
+          "values": ["00–FF (hex)", "0–255 (decimal)"]
         },
         {
-          "name": "Arvot",
-          "values": {
-            "unit1": "00–FF (hex)",
-            "unit2": "0–255 (decimal)"
-          }
+          "label": "Läpinäkyvyys",
+          "values": ["8-digit (#RRGGBBAA)", "rgba(R, G, B, A)"]
         },
         {
-          "name": "Läpinäkyvyys",
-          "values": {
-            "unit1": "8-digit (#RRGGBBAA)",
-            "unit2": "rgba(R, G, B, A)"
-          }
+          "label": "Lyhenne",
+          "values": ["#RGB (3 digits)", "Ei lyhennettä"]
         },
         {
-          "name": "Lyhenne",
-          "values": {
-            "unit1": "#RGB (3 digits)",
-            "unit2": "Ei lyhennettä"
-          }
-        },
-        {
-          "name": "Käyttö",
-          "values": {
-            "unit1": "CSS, suunnittelutyökalut",
-            "unit2": "CSS, ohjelmointi"
-          }
+          "label": "Käyttö",
+          "values": ["CSS, suunnittelutyökalut", "CSS, ohjelmointi"]
         }
       ]
     },

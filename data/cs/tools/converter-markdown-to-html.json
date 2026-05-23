@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Převeďte Markdown do formátu HTML. Automatické parsování a formátování. Zdarma.",
-      "featureList": ["Markdown to HTML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
+      "featureList": [
+        "Markdown to HTML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Markdown to HTML",
+        "Markdown to HTML",
+        "Free Markdown to HTML converter"
+      ]
     },
     "howTo": {
       "name": "Jak převést Markdown na HTML",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět Markdown na HTML?",
-      "html": "<p class=\"text-mid mb-4\">MARKDOWN je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na HTML prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase MARKDOWN soubory do formatu HTML primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">MARKDOWN je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na HTML prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny konvertor prevadi vase MARKDOWN soubory do formatu HTML primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Markdown to HTML conversion",
       "variant": "right"
@@ -128,64 +136,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Markdown vs HTML – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["Markdown", "HTML"],
+      "rows": [
         {
-          "id": "markdown",
-          "name": "Markdown"
+          "label": "Vnořená data",
+          "values": ["—", "✓"]
         },
         {
-          "id": "html",
-          "name": "HTML",
-          "highlighted": true
+          "label": "Tabulární data",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Validace schématu",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Lidsky čitelné",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "API standard",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Kompaktní syntaxe",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Vnořená data",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Tabulární data",
-          "values": {
-            "markdown": true,
-            "html": true
-          }
-        },
-        {
-          "name": "Validace schématu",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Lidsky čitelné",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        },
-        {
-          "name": "API standard",
-          "values": {
-            "markdown": false,
-            "html": false
-          }
-        },
-        {
-          "name": "Kompaktní syntaxe",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

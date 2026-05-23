@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Convertor GIF în PNG",
-      "alternateName": ["Conversie GIF în PNG", "Convertor GIF în PNG", "Convertor gratuit GIF în PNG"],
+      "alternateName": [
+        "Conversie GIF în PNG",
+        "Convertor GIF în PNG",
+        "Convertor gratuit GIF în PNG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
-      "featureList": ["Conversie GIF în PNG", "Ieșire PNG fără pierderi", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
+      "featureList": [
+        "Conversie GIF în PNG",
+        "Ieșire PNG fără pierderi",
+        "Conversie în lot",
+        "Procesare locală în browser",
+        "Fără încărcare de fișiere"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți GIF în PNG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs PNG – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["GIF", "PNG"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Compresie cu pierderi",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Toate browserele", "Toate browserele"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8-bit (256)", "8/16-bit"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "gif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "gif": "Toate browserele",
-            "png": "Toate browserele"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "gif": "8-bit (256)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

@@ -2,14 +2,14 @@
   "toolKey": "jsonToCsv",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JSON na CSV – eksport danych do Excela i CSV",
+    "title": "Darmowy konwerter formatu JSON na CSV bez limitu plików i rejestracji",
     "description": "Zamień odpowiedź REST API lub dane JSON na plik CSV gotowy do Excela i importu SQL. Działa w przeglądarce bez rejestracji – dane nie trafiają na serwer.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-json-na-csv"
   },
   "hero": {
-    "title": "Zamień JSON na CSV – konwerter danych do arkusza kalkulacyjnego",
-    "description": "Dane z PayU lub Stripe w JSON, a księgowość chce Excela? Konwerter spłaszcza obiekty do pliku CSV – bez rejestracji.",
+    "title": "Darmowy konwerter formatu JSON na CSV – eksport danych do Excela i CSV",
+    "description": "Zamień odpowiedź REST API lub dane JSON na plik CSV gotowy do Excela i importu SQL. Działa w przeglądarce bez rejestracji – dane nie trafiają na serwer.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -25,10 +25,10 @@
   "schemas": {
     "software": {
       "name": "Konwerter JSON na CSV - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana JSON na CSV online", "Konwersja JSON do CSV", "JSON to CSV converter"],
+      "alternateName": ["Zamiana JSON na CSV", "Konwersja JSON do CSV", "JSON to CSV converter"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
-      "description": "Darmowy konwerter JSON na CSV online. Zamień dane JSON na CSV w przeglądarce - dane nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter JSON na CSV. Zamień dane JSON na CSV w przeglądarce - dane nie są wysyłane na serwer.",
       "featureList": [
         "Konwersja tablicy obiektów JSON na plik CSV",
         "Automatyczne wyodrębnianie kluczy JSON jako nagłówków kolumn",
@@ -43,7 +43,7 @@
       ]
     },
     "howTo": {
-      "name": "Jak zamienić JSON na CSV online",
+      "name": "Jak zamienić JSON na CSV",
       "description": "Instrukcja konwersji danych JSON na format CSV.",
       "steps": [
         {
@@ -175,64 +175,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs CSV – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["JSON", "CSV"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Dane zagnieżdżone",
+          "values": ["✓", "—"]
         },
         {
-          "id": "csv",
-          "name": "CSV",
-          "highlighted": true
+          "label": "Dane tabelaryczne",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Walidacja schematu",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Czytelność dla człowieka",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Zwięzła składnia",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Dane zagnieżdżone",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Dane tabelaryczne",
-          "values": {
-            "json": false,
-            "csv": true
-          }
-        },
-        {
-          "name": "Walidacja schematu",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Czytelność dla człowieka",
-          "values": {
-            "json": true,
-            "csv": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Zwięzła składnia",
-          "values": {
-            "json": true,
-            "csv": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

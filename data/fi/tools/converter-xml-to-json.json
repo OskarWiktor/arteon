@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "XML vs JSON – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["XML", "JSON"],
+      "rows": [
         {
-          "id": "xml",
-          "name": "XML"
+          "label": "Sisäkkäinen data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Taulukkodata",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Skeemavalidointi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Ihmisen luettavissa",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standardi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Kompakti syntaksi",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Sisäkkäinen data",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Taulukkodata",
-          "values": {
-            "xml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Skeemavalidointi",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Ihmisen luettavissa",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-standardi",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompakti syntaksi",
-          "values": {
-            "xml": false,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten XML:n muuntaminen JSON:ksi toimii?",
-      "html": "<p class=\"text-mid mb-4\">XML k\u00e4ytt\u00e4\u00e4 tagipohjaista hierarkiaa avaus- ja sulkuelementeill\u00e4, kun taas JSON k\u00e4ytt\u00e4\u00e4 kevyit\u00e4 aaltosulkeita ja avain-arvo-pareja. Muunnin j\u00e4sent\u00e4\u00e4 XML-dokumenttipuun ja yhdist\u00e4\u00e4 jokaisen elementin vastaavaan JSON-rakenteeseen.</p><p class=\"text-mid mb-4\">XML-elementeist\u00e4 tulee JSON-objekteja, toistuvista samannimisist\u00e4 elementeist\u00e4 tulee JSON-taulukoita ja tekstisis\u00e4ll\u00f6st\u00e4 tulee merkkijonoarvoja. XML-attribuutit n\u00e4kyv\u00e4t erityisin\u00e4 ominaisuuksina (@-etuliitteell\u00e4) JSON-objektissa.</p><p class=\"text-mid\">JSON on suosittu muoto moderneille web-API:ille, JavaScript-sovelluksille ja NoSQL-tietokannoille. Kaikki muunnos tapahtuu paikallisesti selaimessasi.</p>"
+      "html": "<p class=\"text-mid mb-4\">XML käyttää tagipohjaista hierarkiaa avaus- ja sulkuelementeillä, kun taas JSON käyttää kevyitä aaltosulkeita ja avain-arvo-pareja. Muunnin jäsentää XML-dokumenttipuun ja yhdistää jokaisen elementin vastaavaan JSON-rakenteeseen.</p><p class=\"text-mid mb-4\">XML-elementeistä tulee JSON-objekteja, toistuvista samannimisistä elementeistä tulee JSON-taulukoita ja tekstisisällöstä tulee merkkijonoarvoja. XML-attribuutit näkyvät erityisinä ominaisuuksina (@-etuliitteellä) JSON-objektissa.</p><p class=\"text-mid\">JSON on suosittu muoto moderneille web-API:ille, JavaScript-sovelluksille ja NoSQL-tietokannoille. Kaikki muunnos tapahtuu paikallisesti selaimessasi.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +174,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Vinkkej\u00e4 XML:n muuntamiseen JSON:ksi",
-      "description": "Muutamia vinkkej\u00e4 yleisten ongelmien v\u00e4ltt\u00e4miseksi:",
+      "title": "Vinkkejä XML:n muuntamiseen JSON:ksi",
+      "description": "Muutamia vinkkejä yleisten ongelmien välttämiseksi:",
       "grid": "two",
       "items": [
         {
           "icon": "RiCodeLine",
           "title": "XML-attribuutit",
-          "description": "XML-attribuutit muunnetaan JSON-ominaisuuksiksi @-etuliitteell\u00e4. Esim. &lt;item id='1'&gt; tulee muotoon: {\"@id\": \"1\"}."
+          "description": "XML-attribuutit muunnetaan JSON-ominaisuuksiksi @-etuliitteellä. Esim. &lt;item id='1'&gt; tulee muotoon: {\"@id\": \"1\"}."
         },
         {
           "icon": "RiNodeTree",
           "title": "Nimiavaruudet",
-          "description": "XML-nimiavaruudet s\u00e4ilyv\u00e4t JSON-tuloksessa osana elementtien nimi\u00e4. Monimutkaiset nimiavaruusm\u00e4\u00e4rittelyt voivat vaatia manuaalista s\u00e4\u00e4t\u00f6\u00e4."
+          "description": "XML-nimiavaruudet säilyvät JSON-tuloksessa osana elementtien nimiä. Monimutkaiset nimiavaruusmäärittelyt voivat vaatia manuaalista säätöä."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Sekainen sis\u00e4lt\u00f6",
-          "description": "XML-elementit, jotka sis\u00e4lt\u00e4v\u00e4t sek\u00e4 teksti\u00e4 ett\u00e4 alielementtej\u00e4, k\u00e4sitell\u00e4\u00e4n sijoittamalla teksti erityiseen #text-ominaisuuteen JSON:ssa."
+          "title": "Sekainen sisältö",
+          "description": "XML-elementit, jotka sisältävät sekä tekstiä että alielementtejä, käsitellään sijoittamalla teksti erityiseen #text-ominaisuuteen JSON:ssa."
         },
         {
           "icon": "RiFileCodeLine",
           "title": "CDATA-osiot",
-          "description": "XML:n CDATA-osiot muunnetaan tavallisiksi merkkijonoarvoiksi JSON:ssa. CDATA-k\u00e4\u00e4re poistetaan ja sis\u00e4lt\u00f6 s\u00e4ilyy muuttumattomana."
+          "description": "XML:n CDATA-osiot muunnetaan tavallisiksi merkkijonoarvoiksi JSON:ssa. CDATA-kääre poistetaan ja sisältö säilyy muuttumattomana."
         }
       ]
     },
@@ -255,15 +227,15 @@
         },
         {
           "question": "Onko XML:n muuntaminen JSON:ksi turvallista?",
-          "answer": "Kyll\u00e4. Kaikki muunnos tapahtuu paikallisesti selaimessasi. Mit\u00e4\u00e4n tietoja ei l\u00e4hetet\u00e4 millek\u00e4\u00e4n palvelimelle."
+          "answer": "Kyllä. Kaikki muunnos tapahtuu paikallisesti selaimessasi. Mitään tietoja ei lähetetä millekään palvelimelle."
         },
         {
-          "question": "H\u00e4vi\u00e4v\u00e4tk\u00f6 XML-attribuutit muunnoksessa?",
-          "answer": "Eiv\u00e4t. XML-attribuutit s\u00e4ilyv\u00e4t JSON-tuloksessa @-etuliitteellisin\u00e4 ominaisuuksina. Esim. id='123' tulee muotoon: \"@id\": \"123\" JSON-objektissa."
+          "question": "Häviävätkö XML-attribuutit muunnoksessa?",
+          "answer": "Eivät. XML-attribuutit säilyvät JSON-tuloksessa @-etuliitteellisinä ominaisuuksina. Esim. id='123' tulee muotoon: \"@id\": \"123\" JSON-objektissa."
         },
         {
-          "question": "Voinko k\u00e4ytt\u00e4\u00e4 JSON-tulosta JavaScriptiss\u00e4?",
-          "answer": "Kyll\u00e4. Tulos on standardi JSON, jota voidaan k\u00e4ytt\u00e4\u00e4 JSON.parse()-funktiolla JavaScriptiss\u00e4, tai suoraan miss\u00e4 tahansa ohjelmointikieless\u00e4, API:ssa tai tietokannassa."
+          "question": "Voinko käyttää JSON-tulosta JavaScriptissä?",
+          "answer": "Kyllä. Tulos on standardi JSON, jota voidaan käyttää JSON.parse()-funktiolla JavaScriptissä, tai suoraan missä tahansa ohjelmointikielessä, API:ssa tai tietokannassa."
         }
       ]
     },

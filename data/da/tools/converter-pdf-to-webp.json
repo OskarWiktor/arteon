@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PDF vs WebP – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["PDF", "WebP"],
+      "rows": [
         {
-          "id": "pdf",
-          "name": "PDF"
+          "label": "Tabsgivende komprimering",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Indbygget PDF-fremviser", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "pdf": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "pdf": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "pdf": "Indbygget PDF-fremviser",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "pdf": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

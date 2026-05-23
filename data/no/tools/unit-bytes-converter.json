@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Regn om bytes til KB, MB, GB og omvendt.",
-      "featureList": ["Toveis-konvertering i sanntid", "Alle kalkulatorer samlet på ett sted", "Kopier resultat til utklippstavle", "Lokal beregning i nettleseren"]
+      "featureList": [
+        "Toveis-konvertering i sanntid",
+        "Alle kalkulatorer samlet på ett sted",
+        "Kopier resultat til utklippstavle",
+        "Lokal beregning i nettleseren"
+      ]
     },
     "howTo": {
       "name": "Slik bruker du kalkulatoren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Desimalt vs Binært",
-      "featureLabel": "Egenskap",
-      "plans": [
+      "labelHeader": "Egenskap",
+      "cols": ["Desimalt (SI)", "Binært (IEC)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Desimalt (SI)"
+          "label": "Multiplikator",
+          "values": ["1 000", "1 024"]
         },
         {
-          "id": "unit2",
-          "name": "Binært (IEC)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Multiplikator",
-          "values": {
-            "unit1": "1 000",
-            "unit2": "1 024"
-          }
+          "label": "Enheter",
+          "values": ["KB, MB, GB", "KiB, MiB, GiB"]
         },
         {
-          "name": "Enheter",
-          "values": {
-            "unit1": "KB, MB, GB",
-            "unit2": "KiB, MiB, GiB"
-          }
+          "label": "Brukes av",
+          "values": ["Diskprodusenter", "OS, RAM"]
         },
         {
-          "name": "Brukes av",
-          "values": {
-            "unit1": "Diskprodusenter",
-            "unit2": "OS, RAM"
-          }
+          "label": "1 TB",
+          "values": ["1 000 000 000 000 B", "1 099 511 627 776 B"]
         },
         {
-          "name": "1 TB",
-          "values": {
-            "unit1": "1 000 000 000 000 B",
-            "unit2": "1 099 511 627 776 B"
-          }
-        },
-        {
-          "name": "Forskjell",
-          "values": {
-            "unit1": "1 TB",
-            "unit2": "0,909 TiB"
-          }
+          "label": "Forskjell",
+          "values": ["1 TB", "0,909 TiB"]
         }
       ]
     },

@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Conversor SVG para JPG",
-      "alternateName": ["Converter SVG para JPG", "Conversão de SVG para JPG", "Conversor SVG para JPG grátis"],
+      "alternateName": [
+        "Converter SVG para JPG",
+        "Conversão de SVG para JPG",
+        "Conversor SVG para JPG grátis"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta gráficos SVG para JPG compacto. Ficheiro menor, compatibilidade total. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
-      "featureList": ["Conversão de SVG para JPG", "Controlo de qualidade JPG", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
+      "featureList": [
+        "Conversão de SVG para JPG",
+        "Controlo de qualidade JPG",
+        "Conversão em lote",
+        "Processamento local no navegador",
+        "Sem envio de ficheiros"
+      ]
     },
     "howTo": {
       "name": "Como converter SVG para JPG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs JPG – comparação de formatos",
-      "plans": [
+      "labelHeader": "Funcionalidade",
+      "cols": ["SVG", "JPG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Compressão com perda",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Compressão sem perda",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparência (canal alfa)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Suporte a animação",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Suporte em navegadores",
+          "values": ["Todos os navegadores", "Todos os navegadores"]
+        },
+        {
+          "label": "Profundidade de cor",
+          "values": ["N/A (vetor)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Tamanho de ficheiro compacto",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadados (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressão com perda",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Compressão sem perda",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparência (canal alfa)",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Suporte a animação",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Suporte em navegadores",
-          "values": {
-            "svg": "Todos os navegadores",
-            "jpg": "Todos os navegadores"
-          }
-        },
-        {
-          "name": "Profundidade de cor",
-          "values": {
-            "svg": "N/A (vetor)",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Tamanho de ficheiro compacto",
-          "values": {
-            "svg": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadados (EXIF)",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funcionalidade"
+      ]
     },
     {
       "type": "gap",

@@ -8,7 +8,7 @@
     "path": "/el/ergaleia/epexergasia-eikonas"
   },
   "hero": {
-    "title": "Αλλάξτε μέγεθος, περικόψτε και μετατρέψτε εικόνες online – δωρεάν",
+    "title": "Αλλάξτε μέγεθος, περικόψτε και μετατρέψτε εικόνες – δωρεάν",
     "description": "Αλλάξτε μέγεθος, περικόψτε και μετατρέψτε εικόνες για Instagram, Facebook και LinkedIn. Έτοιμες μορφές, στρογγυλά avatar, εξαγωγή σε JPG, PNG και WebP. Τοπική επεξεργασία στον browser.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -36,7 +36,7 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Δωρεάν online επεξεργαστής εικόνας για αλλαγή μεγέθους, περικοπή και μετατροπή μορφών. Έτοιμα preset για Instagram, Facebook και LinkedIn. Δημιουργία στρογγυλών avatar. Εξαγωγή σε JPG, PNG και WebP με έλεγχο ποιότητας. Τοπική επεξεργασία στον browser.",
+      "description": "Δωρεάν επεξεργαστής εικόνας για αλλαγή μεγέθους, περικοπή και μετατροπή μορφών. Έτοιμα preset για Instagram, Facebook και LinkedIn. Δημιουργία στρογγυλών avatar. Εξαγωγή σε JPG, PNG και WebP με έλεγχο ποιότητας. Τοπική επεξεργασία στον browser.",
       "featureList": [
         "Αλλαγή μεγέθους εικόνων σε οποιεσδήποτε διαστάσεις",
         "Περικοπή με διαδραστική επιλογή περιοχής",
@@ -389,7 +389,7 @@
       "description": "Έχετε μια ιδέα για μια νέα λειτουργία, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε ένα άλλο εργαλείο που θα διευκόλυνε τη δουλειά σας; Γράψτε μας – απαντάμε εντός 24 ωρών.",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/epexergasia-eikonas-el.webp",
       "imageAlt": "Online επεξεργασία εικόνας – Arteon",
-      "defaultSubject": "Feedback: Online επεξεργασία εικόνας"
+      "defaultSubject": "Feedback: επεξεργασία εικόνας"
     },
     {
       "type": "gap",

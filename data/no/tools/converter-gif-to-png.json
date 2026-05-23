@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "GIF til PNG-konverterer",
-      "alternateName": ["Konverter GIF til PNG", "GIF til PNG konvertering", "Gratis GIF til PNG konverterer"],
+      "alternateName": [
+        "Konverter GIF til PNG",
+        "GIF til PNG konvertering",
+        "Gratis GIF til PNG konverterer"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Eksporter det første bildet i en GIF som statisk PNG. Uten kvalitetstap. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
-      "featureList": ["GIF til PNG-konvertering", "Tapsfri PNG-utdata", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
+      "featureList": [
+        "GIF til PNG-konvertering",
+        "Tapsfri PNG-utdata",
+        "Batchkonvertering",
+        "Lokal nettleserbehandling",
+        "Ingen filopplasting kreves"
+      ]
     },
     "howTo": {
       "name": "Slik konverterer du GIF til PNG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs PNG – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funksjon",
+      "cols": ["GIF", "PNG"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Komprimering med tap",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animasjonsstøtte",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Nettleserstøtte",
+          "values": ["Alle nettlesere", "Alle nettlesere"]
+        },
+        {
+          "label": "Fargedybde",
+          "values": ["8-bit (256)", "8/16-bit"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Komprimering uten tap",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "gif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Nettleserstøtte",
-          "values": {
-            "gif": "Alle nettlesere",
-            "png": "Alle nettlesere"
-          }
-        },
-        {
-          "name": "Fargedybde",
-          "values": {
-            "gif": "8-bit (256)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",

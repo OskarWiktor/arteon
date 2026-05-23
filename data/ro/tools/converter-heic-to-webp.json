@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fotografii HEIC de pe iPhone în WebP usor. Dimensiuni mai mici. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
-      "featureList": ["Conversie HEIC în WebP", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie HEIC în WEBP", "Convertor HEIC în WEBP", "Convertor gratuit HEIC în WEBP"]
+      "featureList": [
+        "Conversie HEIC în WebP",
+        "Calitate reglabilă (60–95%)",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie HEIC în WEBP",
+        "Convertor HEIC în WEBP",
+        "Convertor gratuit HEIC în WEBP"
+      ]
     },
     "howTo": {
       "name": "HEIC to WebP",
@@ -158,85 +167,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversia HEIC în WebP în practică",
-      "html": "<p class=\"text-mid mb-4\">Fotografii iPhone in format HEIC direct pentru site-uri web? WebP este puntea ideala: combina compresia eficienta a HEIC cu compatibilitatea universala a browserelor (Chrome, Firefox, Safari 14+, Edge).</p><p class=\"text-mid mb-4\">Conversia HEIC la WebP este deosebit de eficienta, ambele formate folosind algoritmi moderni. Pentru bloguri, magazine online si portofolii, este cea mai rapida cale de publicare a fotografiilor iPhone optimizate.</p><p class=\"text-mid\">Bloggeri si comercianti online din Romania pot converti fotografiile iPhone local si conform GDPR – fara servicii cloud sau instrumente externe.</p>"
+      "html": "<p class=\"text-mid mb-4\">Fotografii iPhone in format HEIC direct pentru site-uri web? WebP este puntea ideala: combina compresia eficienta a HEIC cu compatibilitatea universala a browserelor (Chrome, Firefox, Safari 14+, Edge).</p><p class=\"text-mid mb-4\">Conversia HEIC la WebP este deosebit de eficienta, ambele formate folosind algoritmi moderni. Pentru bloguri, magazinecea mai rapida cale de publicare a fotografiilor iPhone optimizate.</p><p class=\"text-mid\">Bloggeri si comercianti din Root convtografione local si conform GDPR – fara servicii cloud sau instrumente externe.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs WebP – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["HEIC", "WebP"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Compresie cu pierderi",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Safari 13+ (macOS / iOS)", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8/10-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

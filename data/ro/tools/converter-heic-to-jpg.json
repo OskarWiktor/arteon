@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
-      "featureList": ["Conversie HEIC în JPG", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie HEIC în JPG", "Convertor HEIC în JPG", "Convertor gratuit HEIC în JPG"]
+      "featureList": [
+        "Conversie HEIC în JPG",
+        "Calitate reglabilă (60–95%)",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie HEIC în JPG",
+        "Convertor HEIC în JPG",
+        "Convertor gratuit HEIC în JPG"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți HEIC în JPG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs JPG – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["HEIC", "JPG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Compresie cu pierderi",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Safari 13+ (macOS / iOS)", "Toate browserele"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8/10-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "jpg": "Toate browserele"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

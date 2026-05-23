@@ -8,7 +8,7 @@
     "path": "/da/vaerktojer/billedrediger"
   },
   "hero": {
-    "title": "Ændr størrelse, beskær og konvertér billeder online – gratis",
+    "title": "Ændr størrelse, beskær og konvertér billeder – gratis",
     "description": "Upload et billede, vælg et færdigt format til sociale medier eller indtast egne mål, og download det beskårne billede.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -25,10 +25,13 @@
   "schemas": {
     "software": {
       "name": "Billedredigering – beskæring, størrelsesændring og konvertering",
-      "alternateName": ["Billedbeskæringsværktøj", "Størrelsesændring af billeder til sociale medier"],
+      "alternateName": [
+        "Billedbeskæringsværktøj",
+        "Størrelsesændring af billeder til sociale medier"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Gratis online billedredigering til størrelsesændring, beskæring og formatkonvertering. Færdige formater til Instagram, Facebook og LinkedIn. Runde avatarer. Eksport til JPG, PNG og WebP med kvalitetskontrol. Lokal behandling i browseren.",
+      "description": "Gratis billedredigering til størrelsesændring, beskæring og formatkonvertering. Færdige formater til Instagram, Facebook og LinkedIn. Runde avatarer. Eksport til JPG, PNG og WebP med kvalitetskontrol. Lokal behandling i browseren.",
       "featureList": [
         "Ændr størrelse på billeder til enhver dimension",
         "Beskæring med interaktivt områdevalg",
@@ -336,7 +339,7 @@
       "description": "Har du en idé til en ny funktion, fundet en fejl eller vil foreslå et andet værktøj, der ville gøre dit arbejde lettere? Skriv til os – vi svarer inden for 24 timer.",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/billedrediger-da.webp",
       "imageAlt": "Online billedrediger – Arteon",
-      "defaultSubject": "Feedback: Online billedrediger"
+      "defaultSubject": "Feedback: billedrediger"
     },
     {
       "type": "gap",

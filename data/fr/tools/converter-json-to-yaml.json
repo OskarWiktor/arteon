@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs YAML – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["JSON", "YAML"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Données hiérarchiques",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "yaml",
-          "name": "YAML",
-          "highlighted": true
+          "label": "Données tabulaires",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Validation de schéma",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Lisible par un humain",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Syntaxe compacte",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Données hiérarchiques",
-          "values": {
-            "json": true,
-            "yaml": true
-          }
-        },
-        {
-          "name": "Données tabulaires",
-          "values": {
-            "json": false,
-            "yaml": false
-          }
-        },
-        {
-          "name": "Validation de schéma",
-          "values": {
-            "json": true,
-            "yaml": false
-          }
-        },
-        {
-          "name": "Lisible par un humain",
-          "values": {
-            "json": true,
-            "yaml": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "json": true,
-            "yaml": false
-          }
-        },
-        {
-          "name": "Syntaxe compacte",
-          "values": {
-            "json": true,
-            "yaml": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

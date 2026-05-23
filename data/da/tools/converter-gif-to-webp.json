@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Eksporter forste GIF-frame som let WebP. Mindre fil, hurtigere indlasning. Al behandling sker lokalt i browseren - filer forlader aldrig din enhed.",
-      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Konvertér GIF til WEBP", "GIF til WEBP konvertering", "Gratis GIF til WEBP konverter"]
+      "featureList": [
+        "GIF to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Konvertér GIF til WEBP",
+        "GIF til WEBP konvertering",
+        "Gratis GIF til WEBP konverter"
+      ]
     },
     "howTo": {
       "name": "GIF to WebP",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs WebP – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["GIF", "WebP"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Tabsgivende komprimering",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Alle browsere", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Farvedybde",
+          "values": ["8-bit (256)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "gif": "Alle browsere",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Farvedybde",
-          "values": {
-            "gif": "8-bit (256)",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

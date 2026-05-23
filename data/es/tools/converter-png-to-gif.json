@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte graficos PNG a GIF. Ideal para iconos simples y graficos. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
-      "featureList": ["Conversión a GIF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"],
-      "alternateName": ["Convertir PNG a GIF", "Conversión de PNG a GIF", "Convertidor PNG a GIF gratis"]
+      "featureList": [
+        "Conversión a GIF",
+        "Ajuste de calidad (60-95%)",
+        "Conversión por lotes",
+        "Procesamiento local en el navegador"
+      ],
+      "alternateName": [
+        "Convertir PNG a GIF",
+        "Conversión de PNG a GIF",
+        "Convertidor PNG a GIF gratis"
+      ]
     },
     "howTo": {
       "name": "Cómo convertir PNG a GIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs GIF – comparación de formatos",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["PNG", "GIF"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Compresión con pérdida",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Compresión sin pérdida",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparencia (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Soporte de animación",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Compatibilidad con navegadores",
+          "values": ["Todos los navegadores", "Todos los navegadores"]
+        },
+        {
+          "label": "Profundidad de color",
+          "values": ["8/16-bit", "8-bit (256)"]
+        },
+        {
+          "label": "Tamaño de archivo compacto",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadatos (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresión con pérdida",
-          "values": {
-            "png": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Compresión sin pérdida",
-          "values": {
-            "png": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Transparencia (canal alfa)",
-          "values": {
-            "png": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Soporte de animación",
-          "values": {
-            "png": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Compatibilidad con navegadores",
-          "values": {
-            "png": "Todos los navegadores",
-            "gif": "Todos los navegadores"
-          }
-        },
-        {
-          "name": "Profundidad de color",
-          "values": {
-            "png": "8/16-bit",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Tamaño de archivo compacto",
-          "values": {
-            "png": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadatos (EXIF)",
-          "values": {
-            "png": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Característica"
+      ]
     },
     {
       "type": "gap",

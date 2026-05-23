@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PDF vs PNG – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["PDF", "PNG"],
+      "rows": [
         {
-          "id": "pdf",
-          "name": "PDF"
+          "label": "Förlustrik komprimering",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Inbyggd PDF-visare", "Alla webbläsare"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "pdf": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "pdf": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "pdf": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "pdf": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "pdf": "Inbyggd PDF-visare",
-            "png": "Alla webbläsare"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "pdf": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "pdf": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

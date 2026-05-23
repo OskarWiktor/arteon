@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Reken decimale getallen om naar hexadecimaal en andersom.",
-      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+      "featureList": [
+        "Bidirectionele realtime-conversie",
+        "Alle converters op één plek",
+        "Resultaat naar klembord kopiëren",
+        "Lokale berekening in de browser"
+      ]
     },
     "howTo": {
       "name": "Hoe de converter te gebruiken",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimaal vs Hexadecimaal",
-      "featureLabel": "Eigenschap",
-      "plans": [
+      "labelHeader": "Eigenschap",
+      "cols": ["Decimaal", "Hexadecimaal"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimaal"
+          "label": "Cijfers",
+          "values": ["0–9", "0–9, A–F"]
         },
         {
-          "id": "unit2",
-          "name": "Hexadecimaal",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Cijfers",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–9, A–F"
-          }
+          "label": "Voorbeeld: 255",
+          "values": ["255", "FF"]
         },
         {
-          "name": "Voorbeeld: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "FF"
-          }
+          "label": "Voorbeeld: 1000",
+          "values": ["1000", "3E8"]
         },
         {
-          "name": "Voorbeeld: 1000",
-          "values": {
-            "unit1": "1000",
-            "unit2": "3E8"
-          }
+          "label": "Gebruikt voor",
+          "values": ["Dagelijks rekenen", "Kleuren, adressen"]
         },
         {
-          "name": "Gebruikt voor",
-          "values": {
-            "unit1": "Dagelijks rekenen",
-            "unit2": "Kleuren, adressen"
-          }
-        },
-        {
-          "name": "Compactheid",
-          "values": {
-            "unit1": "Standaard",
-            "unit2": "Compacter dan binair"
-          }
+          "label": "Compactheid",
+          "values": ["Standaard", "Compacter dan binair"]
         }
       ]
     },

@@ -32,7 +32,10 @@ const securityHeaders = [
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   { key: 'X-DNS-Prefetch-Control', value: 'on' },
-  { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), browsing-topics=(), attribution-reporting=()' },
+  {
+    key: 'Permissions-Policy',
+    value: 'camera=(), microphone=(), geolocation=(), browsing-topics=(), attribution-reporting=()',
+  },
   { key: 'Content-Security-Policy', value: cspDirectives },
   { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
   { key: 'Cross-Origin-Opener-Policy', value: 'same-origin-allow-popups' },
@@ -122,15 +125,21 @@ const nextConfig: NextConfig = {
       : [...devHeaders, ...staticAssetHeaders];
   },
   async redirects() {
-    const staticRedirects: Redirect[] = Object.entries(ALL_STATIC_REDIRECTS).map(([source, destination]) => ({
-      source,
-      destination,
-      statusCode: 301,
-    }));
+    const staticRedirects: Redirect[] = Object.entries(ALL_STATIC_REDIRECTS).map(
+      ([source, destination]) => ({
+        source,
+        destination,
+        statusCode: 301,
+      }),
+    );
 
     const patternRedirects: Redirect[] = [
       { source: '/projects/:slug', destination: '/realizacje/:slug', statusCode: 301 },
-      { source: '/edukacja/design/:path*', destination: '/edukacja/grafika/:path*', statusCode: 301 },
+      {
+        source: '/edukacja/design/:path*',
+        destination: '/edukacja/grafika/:path*',
+        statusCode: 301,
+      },
     ];
 
     // Locale root pages — redirect to tools index (replaces permanentRedirect() stubs)
@@ -155,7 +164,9 @@ const nextConfig: NextConfig = {
     // Canonical host redirect (HTTP→HTTPS, non-www→www, trailing slash)
     // is handled by middleware.ts at the edge level in a single 301 hop.
 
-    const sitemapRedirects: Redirect[] = [{ source: '/sitemap-0.xml', destination: '/sitemap.xml', statusCode: 301 }];
+    const sitemapRedirects: Redirect[] = [
+      { source: '/sitemap-0.xml', destination: '/sitemap.xml', statusCode: 301 },
+    ];
 
     return [...staticRedirects, ...patternRedirects, ...localeRootRedirects, ...sitemapRedirects];
   },

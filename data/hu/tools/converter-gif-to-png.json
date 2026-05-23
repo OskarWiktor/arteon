@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "GIF PNG konverter",
-      "alternateName": ["GIF konvertálása PNG formátumba", "GIF–PNG átalakítás", "Ingyenes GIF–PNG konverter"],
+      "alternateName": [
+        "GIF konvertálása PNG formátumba",
+        "GIF–PNG átalakítás",
+        "Ingyenes GIF–PNG konverter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
-      "featureList": ["GIF – PNG konvertálás", "Veszteségmentes PNG kimenet", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
+      "featureList": [
+        "GIF – PNG konvertálás",
+        "Veszteségmentes PNG kimenet",
+        "Csoportos konvertálás",
+        "Helyi böngészős feldolgozás",
+        "Nincs fájlfeltöltés"
+      ]
     },
     "howTo": {
       "name": "GIF konvertálása PNG formátumra",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs PNG – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["GIF", "PNG"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Veszteséges tömörítés",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Veszteségmentes tömörítés",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Átlátszóság (alfa csatorna)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animáció támogatás",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Böngészőtámogatás",
+          "values": ["Minden böngésző", "Minden böngésző"]
+        },
+        {
+          "label": "Színmélység",
+          "values": ["8-bit (256)", "8/16-bit"]
+        },
+        {
+          "label": "Kis fájlméret",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metaadatok (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Veszteséges tömörítés",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Veszteségmentes tömörítés",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Átlátszóság (alfa csatorna)",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animáció támogatás",
-          "values": {
-            "gif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Böngészőtámogatás",
-          "values": {
-            "gif": "Minden böngésző",
-            "png": "Minden böngésző"
-          }
-        },
-        {
-          "name": "Színmélység",
-          "values": {
-            "gif": "8-bit (256)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Kis fájlméret",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metaadatok (EXIF)",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

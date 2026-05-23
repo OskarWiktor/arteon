@@ -10,7 +10,13 @@ type Params = {
   autoPlayIntervalMs?: number;
 };
 
-export function useCarouselScroller({ itemCount, scrollRef, cardRef, autoPlay = false, autoPlayIntervalMs = 5000 }: Params) {
+export function useCarouselScroller({
+  itemCount,
+  scrollRef,
+  cardRef,
+  autoPlay = false,
+  autoPlayIntervalMs = 5000,
+}: Params) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [maxSlides, setMaxSlides] = useState(0);
   const [cardWidth, setCardWidth] = useState(0);
@@ -115,7 +121,9 @@ export function useCarouselScroller({ itemCount, scrollRef, cardRef, autoPlay = 
     const el = scrollRef.current;
     if (!el) return;
 
-    const io = new IntersectionObserver(([entry]) => setIsVisible(entry.isIntersecting), { threshold: 0 });
+    const io = new IntersectionObserver(([entry]) => setIsVisible(entry.isIntersecting), {
+      threshold: 0,
+    });
     io.observe(el);
     return () => io.disconnect();
   }, [autoPlay, scrollRef]);

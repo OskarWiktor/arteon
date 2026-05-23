@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Μετατροπέας PNG σε WebP",
-      "alternateName": ["Μετατροπή PNG σε WEBP", "Μετατροπέας PNG σε WEBP", "Δωρεάν μετατροπέας PNG σε WEBP"],
+      "alternateName": [
+        "Μετατροπή PNG σε WEBP",
+        "Μετατροπέας PNG σε WEBP",
+        "Δωρεάν μετατροπέας PNG σε WEBP"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρέψτε γραφικά PNG σε WebP. Μικρότερα αρχεία διατηρώντας τη διαφάνεια. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
-      "featureList": ["Μετατροπή PNG σε WEBP", "Έλεγχος ποιότητας WEBP", "Ομαδική μετατροπή", "Τοπική επεξεργασία στον browser", "Χωρίς μεταφόρτωση αρχείων"]
+      "featureList": [
+        "Μετατροπή PNG σε WEBP",
+        "Έλεγχος ποιότητας WEBP",
+        "Ομαδική μετατροπή",
+        "Τοπική επεξεργασία στον browser",
+        "Χωρίς μεταφόρτωση αρχείων"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε PNG σε WEBP",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs WebP – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["PNG", "WebP"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": ["Όλοι οι περιηγητές", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Βάθος χρώματος",
+          "values": ["8/16-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "png": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "png": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "png": "Όλοι οι περιηγητές",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Βάθος χρώματος",
-          "values": {
-            "png": "8/16-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",

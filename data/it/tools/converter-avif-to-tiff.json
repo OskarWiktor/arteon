@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire AVIF in TIFF?",
-      "html": "<p class=\"text-mid mb-4\">AVIF e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in TIFF puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file AVIF nel formato TIFF direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "html": "<p class=\"text-mid mb-4\">AVIF e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in TIFF puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore gratuito trasforma i tuoi file AVIF nel formato TIFF direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "AVIF to TIFF conversion",
       "variant": "right"
@@ -128,78 +128,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs TIFF – confronto dei formati",
-      "plans": [
+      "labelHeader": "Funzionalità",
+      "cols": ["AVIF", "TIFF"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Compressione con perdita",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Compressione senza perdita",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Trasparenza (canale alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Supporto animazione",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Supporto browser",
+          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Solo Safari"]
+        },
+        {
+          "label": "Profondità colore",
+          "values": ["8/10/12-bit, HDR", "8/16/32-bit"]
+        },
+        {
+          "label": "Dimensione file compatta",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadati (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressione con perdita",
-          "values": {
-            "avif": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Compressione senza perdita",
-          "values": {
-            "avif": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Trasparenza (canale alfa)",
-          "values": {
-            "avif": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Supporto animazione",
-          "values": {
-            "avif": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Supporto browser",
-          "values": {
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
-            "tiff": "Solo Safari"
-          }
-        },
-        {
-          "name": "Profondità colore",
-          "values": {
-            "avif": "8/10/12-bit, HDR",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Dimensione file compatta",
-          "values": {
-            "avif": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadati (EXIF)",
-          "values": {
-            "avif": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funzionalità"
+      ]
     },
     {
       "type": "gap",

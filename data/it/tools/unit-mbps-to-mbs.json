@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Converti megabit al secondo in megabyte al secondo. Comprendi la tua velocità internet.",
-      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+      "featureList": [
+        "Conversione bidirezionale in tempo reale",
+        "Tutti i convertitori in un unico posto",
+        "Copia il risultato negli appunti",
+        "Calcolo locale nel browser"
+      ]
     },
     "howTo": {
       "name": "Come usare il convertitore",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Mbps vs MB/s – confronto",
-      "featureLabel": "Caratteristica",
-      "plans": [
+      "labelHeader": "Caratteristica",
+      "cols": ["Megabit/s (Mbps)", "Megabyte/s (MB/s)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Megabit/s (Mbps)"
+          "label": "Unità",
+          "values": ["Bit", "Byte"]
         },
         {
-          "id": "unit2",
-          "name": "Megabyte/s (MB/s)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Unità",
-          "values": {
-            "unit1": "Bit",
-            "unit2": "Byte"
-          }
+          "label": "Rapporto",
+          "values": ["8 Mbps", "= 1 MB/s"]
         },
         {
-          "name": "Rapporto",
-          "values": {
-            "unit1": "8 Mbps",
-            "unit2": "= 1 MB/s"
-          }
+          "label": "Usato per",
+          "values": ["Velocità ISP", "Download file"]
         },
         {
-          "name": "Usato per",
-          "values": {
-            "unit1": "Velocità ISP",
-            "unit2": "Download file"
-          }
+          "label": "100 Mbps",
+          "values": ["100 Mbps", "12,5 MB/s"]
         },
         {
-          "name": "100 Mbps",
-          "values": {
-            "unit1": "100 Mbps",
-            "unit2": "12,5 MB/s"
-          }
-        },
-        {
-          "name": "1 Gbps",
-          "values": {
-            "unit1": "1.000 Mbps",
-            "unit2": "125 MB/s"
-          }
+          "label": "1 Gbps",
+          "values": ["1.000 Mbps", "125 MB/s"]
         }
       ]
     },

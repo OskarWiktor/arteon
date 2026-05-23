@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PDF – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["SVG", "PDF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Lossy compression",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["All browsers", "Built-in PDF viewer"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "svg": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "svg": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "svg": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "svg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "svg": "All browsers",
-            "pdf": "Built-in PDF viewer"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "svg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

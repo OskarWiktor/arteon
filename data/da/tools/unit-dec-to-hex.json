@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Konverter decimal til hexadecimal og omvendt. Nyttig til webfarver og programmering. Ingen registrering krævet.",
-      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+      "featureList": [
+        "Tovejs-konvertering i realtid",
+        "Alle konvertere samlet ét sted",
+        "Kopier resultat til udklipsholder",
+        "Lokal beregning i browseren"
+      ]
     },
     "howTo": {
       "name": "Sådan bruger du konverteren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimal vs Hexadecimal",
-      "featureLabel": "Egenskab",
-      "plans": [
+      "labelHeader": "Egenskab",
+      "cols": ["Decimal", "Hexadecimal"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimal"
+          "label": "Cifre",
+          "values": ["0–9", "0–9, A–F"]
         },
         {
-          "id": "unit2",
-          "name": "Hexadecimal",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Cifre",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–9, A–F"
-          }
+          "label": "Eksempel: 255",
+          "values": ["255", "FF"]
         },
         {
-          "name": "Eksempel: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "FF"
-          }
+          "label": "Eksempel: 1000",
+          "values": ["1000", "3E8"]
         },
         {
-          "name": "Eksempel: 1000",
-          "values": {
-            "unit1": "1000",
-            "unit2": "3E8"
-          }
+          "label": "Bruges til",
+          "values": ["Daglig regning", "Farver, adresser"]
         },
         {
-          "name": "Bruges til",
-          "values": {
-            "unit1": "Daglig regning",
-            "unit2": "Farver, adresser"
-          }
-        },
-        {
-          "name": "Kompakthed",
-          "values": {
-            "unit1": "Standard",
-            "unit2": "Mere kompakt end binær"
-          }
+          "label": "Kompakthed",
+          "values": ["Standard", "Mere kompakt end binær"]
         }
       ]
     },

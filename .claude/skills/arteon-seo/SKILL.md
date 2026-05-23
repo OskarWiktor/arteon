@@ -253,7 +253,12 @@ potencjalnych long-tail keywords.
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://arteon.pl" },
-    { "@type": "ListItem", "position": 2, "name": "Narzędzia", "item": "https://arteon.pl/narzedzia" },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Narzędzia",
+      "item": "https://arteon.pl/narzedzia"
+    },
     { "@type": "ListItem", "position": 3, "name": "Generator palety kolorów" }
   ]
 }
@@ -321,7 +326,7 @@ const [isPending, startTransition] = useTransition();
 startTransition(() => setExpensiveState(value));
 
 // Break up long tasks
-await new Promise((resolve) => setTimeout(resolve, 0));
+await new Promise(resolve => setTimeout(resolve, 0));
 ```
 
 ## CLS Optimization
@@ -443,8 +448,16 @@ await fetch('https://api.indexnow.org/indexnow', {
 <link rel="alternate" hreflang="pl" href="https://arteon.pl/narzedzia/generator-palety-kolorow" />
 <link rel="alternate" hreflang="en" href="https://arteon.pl/en/tools/color-palette-generator" />
 <link rel="alternate" hreflang="de" href="https://arteon.pl/de/werkzeuge/farbpaletten-generator" />
-<link rel="alternate" hreflang="es" href="https://arteon.pl/es/herramientas/generador-de-paletas-de-colores" />
-<link rel="alternate" hreflang="x-default" href="https://arteon.pl/en/tools/color-palette-generator" />
+<link
+  rel="alternate"
+  hreflang="es"
+  href="https://arteon.pl/es/herramientas/generador-de-paletas-de-colores"
+/>
+<link
+  rel="alternate"
+  hreflang="x-default"
+  href="https://arteon.pl/en/tools/color-palette-generator"
+/>
 ```
 
 ## Locale URL Mapping

@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Převést RGB na CMYK a naopak. Užitečné pro přípravu grafiky pro tisk. Bez registrace.",
-      "featureList": ["Obousměrná konverze v reálném čase", "Všechny převodníky na jednom místě", "Kopírování výsledku do schránky", "Lokální výpočet v prohlížeči"]
+      "featureList": [
+        "Obousměrná konverze v reálném čase",
+        "Všechny převodníky na jednom místě",
+        "Kopírování výsledku do schránky",
+        "Lokální výpočet v prohlížeči"
+      ]
     },
     "howTo": {
       "name": "Jak používat převodník",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "RGB vs CMYK",
-      "featureLabel": "Vlastnost",
-      "plans": [
+      "labelHeader": "Vlastnost",
+      "cols": ["RGB", "CMYK"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "RGB"
+          "label": "Model",
+          "values": ["Aditivní (světlo)", "Subtraktivní (inkoust)"]
         },
         {
-          "id": "unit2",
-          "name": "CMYK",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Model",
-          "values": {
-            "unit1": "Aditivní (světlo)",
-            "unit2": "Subtraktivní (inkoust)"
-          }
+          "label": "Použití",
+          "values": ["Obrazovky, web", "Tisk, obaly"]
         },
         {
-          "name": "Použití",
-          "values": {
-            "unit1": "Obrazovky, web",
-            "unit2": "Tisk, obaly"
-          }
+          "label": "Gamut",
+          "values": ["Větší", "Menší"]
         },
         {
-          "name": "Gamut",
-          "values": {
-            "unit1": "Větší",
-            "unit2": "Menší"
-          }
+          "label": "Černá",
+          "values": ["R=0, G=0, B=0", "K=100 %"]
         },
         {
-          "name": "Černá",
-          "values": {
-            "unit1": "R=0, G=0, B=0",
-            "unit2": "K=100 %"
-          }
-        },
-        {
-          "name": "Bílá",
-          "values": {
-            "unit1": "R=255, G=255, B=255",
-            "unit2": "Žádný inkoust"
-          }
+          "label": "Bílá",
+          "values": ["R=255, G=255, B=255", "Žádný inkoust"]
         }
       ]
     },

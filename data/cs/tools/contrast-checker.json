@@ -177,82 +177,45 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Co znamenají úrovně AA a AAA ve standardu WCAG?",
-      "plans": [
+      "cols": ["Úroveň AA (minimum)", "Úroveň AAA (rozšířená)"],
+      "rows": [
         {
-          "id": "aa",
-          "name": "Úroveň AA (minimum)",
-          "highlighted": true
+          "label": "Běžný text – min. 4.5:1",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "aaa",
-          "name": "Úroveň AAA (rozšířená)"
-        }
-      ],
-      "features": [
-        {
-          "name": "Běžný text – min. 4.5:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Běžný text – min. 7:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Běžný text – min. 7:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Velký text / bold – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Velký text / bold – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Velký text / bold – min. 4.5:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Velký text / bold – min. 4.5:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Ikony a UI prvky – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Ikony a UI prvky – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Vyžadováno zákonem (směrnice EU)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Vyžadováno zákonem (směrnice EU)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Požadováno dle US ADA / Section 508",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Požadováno dle US ADA / Section 508",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Požadováno dle UK Equality Act 2010",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Požadováno dle UK Equality Act 2010",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
-        },
-        {
-          "name": "Doporučeno pro hlavní obsah",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Doporučeno pro hlavní obsah",
+          "values": ["✓", "✓"]
         }
       ]
     },

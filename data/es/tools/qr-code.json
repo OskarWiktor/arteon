@@ -245,68 +245,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG: ¿qué formato elegir para imprimir?",
-      "plans": [
+      "cols": ["PNG (ráster)", "SVG (vectorial)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (ráster)"
+          "label": "Sitios web y redes sociales",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (vectorial)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Sitios web y redes sociales",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Folletos y tarjetas de visita",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Folletos y tarjetas de visita",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Carteles y banners (gran formato)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Carteles y banners (gran formato)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Escalado sin pérdida de calidad",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Escalado sin pérdida de calidad",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Edición en programa gráfico",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Edición en programa gráfico",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Menor tamaño de archivo",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Menor tamaño de archivo",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Presentaciones",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Presentaciones",
+          "values": ["✓", "✓"]
         }
       ]
     },

@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "QR-koodigeneraattori ilman kirjautumista ja rekisteröitymistä",
-      "alternateName": ["QR-koodin luoja", "vCard QR-koodigeneraattori", "Ilmainen QR-generaattori", "QR-koodityökalu"],
+      "alternateName": [
+        "QR-koodin luoja",
+        "vCard QR-koodigeneraattori",
+        "Ilmainen QR-generaattori",
+        "QR-koodityökalu"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "QRCodeGenerator",
       "description": "Luo QR-koodi verkkosivulle, käyntikortille, menulle tai esitteelle. Valitse tietotyyppi, mukauta värejä ja kokoa, lataa sitten valmis PNG- tai SVG-tiedosto.",
@@ -221,68 +226,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG – mikä muoto kannattaa valita painoon?",
-      "plans": [
+      "cols": ["PNG (rasteri)", "SVG (vektori)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (rasteri)"
+          "label": "Verkko ja sosiaalinen media",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (vektori)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Verkko ja sosiaalinen media",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Esitteet ja käyntikortit",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Esitteet ja käyntikortit",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Julisteet ja bannerit (suuri koko)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Julisteet ja bannerit (suuri koko)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Skaalaus ilman laadun heikkenemistä",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Skaalaus ilman laadun heikkenemistä",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Muokkaus grafiikkasovelluksessa",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Muokkaus grafiikkasovelluksessa",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Pienempi tiedostokoko",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Pienempi tiedostokoko",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Esitykset",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Esitykset",
+          "values": ["✓", "✓"]
         }
       ]
     },

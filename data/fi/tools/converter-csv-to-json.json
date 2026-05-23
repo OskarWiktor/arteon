@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "CSV vs JSON – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["CSV", "JSON"],
+      "rows": [
         {
-          "id": "csv",
-          "name": "CSV"
+          "label": "Sisäkkäinen data",
+          "values": ["—", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Taulukkodata",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Skeemavalidointi",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Ihmisen luettavissa",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standardi",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Kompakti syntaksi",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Sisäkkäinen data",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Taulukkodata",
-          "values": {
-            "csv": true,
-            "json": false
-          }
-        },
-        {
-          "name": "Skeemavalidointi",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Ihmisen luettavissa",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-standardi",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompakti syntaksi",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

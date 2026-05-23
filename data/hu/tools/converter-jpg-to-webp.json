@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "JPG WebP konverter",
-      "alternateName": ["JPG konvertálása WEBP formátumba", "JPG–WEBP átalakítás", "Ingyenes JPG–WEBP konverter"],
+      "alternateName": [
+        "JPG konvertálása WEBP formátumba",
+        "JPG–WEBP átalakítás",
+        "Ingyenes JPG–WEBP konverter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "JPG fotók konvertálása könnyű WebP-re. Képméret csökkentése akár 35%-kal. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
-      "featureList": ["JPG – WEBP konvertálás", "WEBP minőségszabályozás", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
+      "featureList": [
+        "JPG – WEBP konvertálás",
+        "WEBP minőségszabályozás",
+        "Csoportos konvertálás",
+        "Helyi böngészős feldolgozás",
+        "Nincs fájlfeltöltés"
+      ]
     },
     "howTo": {
       "name": "JPG konvertálása WEBP formátumra",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs WebP – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["JPG", "WebP"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Veszteséges tömörítés",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Veszteségmentes tömörítés",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Átlátszóság (alfa csatorna)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animáció támogatás",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Böngészőtámogatás",
+          "values": ["Minden böngésző", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Színmélység",
+          "values": ["8-bit (16.7M)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kis fájlméret",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metaadatok (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Veszteséges tömörítés",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Veszteségmentes tömörítés",
-          "values": {
-            "jpg": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Átlátszóság (alfa csatorna)",
-          "values": {
-            "jpg": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animáció támogatás",
-          "values": {
-            "jpg": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Böngészőtámogatás",
-          "values": {
-            "jpg": "Minden böngésző",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Színmélység",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kis fájlméret",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metaadatok (EXIF)",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

@@ -69,7 +69,11 @@ export function getToolSectionIcon(sectionKey: ToolSectionKey): string {
 }
 
 export function isValidToolKey(key: string): key is ToolItemKey {
-  return typeof key === 'string' && key.length > 0 && key.length <= TOOL_VALIDATION_RULES.MAX_TOOL_KEY_LENGTH;
+  return (
+    typeof key === 'string' &&
+    key.length > 0 &&
+    key.length <= TOOL_VALIDATION_RULES.MAX_TOOL_KEY_LENGTH
+  );
 }
 
 export function isValidSectionKey(key: string): key is ToolSectionKey {
@@ -79,13 +83,16 @@ export function isValidSectionKey(key: string): key is ToolSectionKey {
 // Performance optimization for tool lookups
 export const TOOL_SECTION_CACHE = new Map<string, ToolSection>();
 
-export function getToolSection(sectionKey: ToolSectionKey, sections: ToolsSectionDefinition[]): ToolSection | null {
+export function getToolSection(
+  sectionKey: ToolSectionKey,
+  sections: ToolsSectionDefinition[],
+): ToolSection | null {
   const cacheKey = `${sectionKey}_${sections.length}`;
   if (TOOL_SECTION_CACHE.has(cacheKey)) {
     return TOOL_SECTION_CACHE.get(cacheKey) || null;
   }
 
-  const section = sections.find((s) => s.key === sectionKey);
+  const section = sections.find(s => s.key === sectionKey);
   if (section) {
     const toolSection: ToolSection = {
       key: sectionKey,
@@ -120,7 +127,10 @@ export function validateToolDefinition(tool: ToolDefinition): { valid: boolean; 
       errors.push(`Tytuł zbyt długi dla lokalizacji ${locale}`);
     }
 
-    if (text.description && text.description.length > TOOL_VALIDATION_RULES.MAX_TOOL_DESCRIPTION_LENGTH) {
+    if (
+      text.description &&
+      text.description.length > TOOL_VALIDATION_RULES.MAX_TOOL_DESCRIPTION_LENGTH
+    ) {
       errors.push(`Opis zbyt długi dla lokalizacji ${locale}`);
     }
   }

@@ -1,5 +1,22 @@
-import { escapeHtml, formatMultiline, formatPhone, sanitizeHrefUrl, sanitizeSrcUrl } from '@/lib/tools/email/sanitize';
-import type { BorderSides, FontSizeOption, LayoutType, MarginOption, CtaRadiusOption, SocialKey, SignatureConfig, SpacingConfig, StyleConfig, TextStyleConfig } from '@/types/tools/email';
+import {
+  escapeHtml,
+  formatMultiline,
+  formatPhone,
+  sanitizeHrefUrl,
+  sanitizeSrcUrl,
+} from '@/lib/tools/email/sanitize';
+import type {
+  BorderSides,
+  FontSizeOption,
+  LayoutType,
+  MarginOption,
+  CtaRadiusOption,
+  SocialKey,
+  SignatureConfig,
+  SpacingConfig,
+  StyleConfig,
+  TextStyleConfig,
+} from '@/types/tools/email';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import { getSocialIcon, type SocialPlatform, type IconSize } from '@/lib/tools/email/socialIcons';
 
@@ -31,7 +48,14 @@ const CTA_RADIUS_MAP: Record<CtaRadiusOption, string> = {
   full: '999px',
 };
 
-export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, spacing: SpacingConfig, layout: LayoutType, labels: BuildSignatureLabels, textStyle?: TextStyleConfig): string {
+export function buildSignatureHtml(
+  config: SignatureConfig,
+  style: StyleConfig,
+  spacing: SpacingConfig,
+  layout: LayoutType,
+  labels: BuildSignatureLabels,
+  textStyle?: TextStyleConfig,
+): string {
   const fontFamily = style.fontFamily || 'Arial, sans-serif';
   const baseFontSizeNum = parseInt(FONT_SIZE_MAP[style.fontSize] || FONT_SIZE_MAP.normal);
   const baseFontSize = `${baseFontSizeNum}px`;
@@ -44,13 +68,21 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
   const nameColor = textStyle?.name.color || accentColor;
   const nameFontSize = textStyle ? getElementFontSize(textStyle.name.sizeOffset + 2) : '15px'; // +2 for name default
   const jobTitleColor = textStyle?.jobTitle.color || textColor;
-  const jobTitleFontSize = textStyle ? getElementFontSize(textStyle.jobTitle.sizeOffset) : baseFontSize;
+  const jobTitleFontSize = textStyle
+    ? getElementFontSize(textStyle.jobTitle.sizeOffset)
+    : baseFontSize;
   const companyColor = textStyle?.company.color || textColor;
-  const companyFontSize = textStyle ? getElementFontSize(textStyle.company.sizeOffset) : baseFontSize;
+  const companyFontSize = textStyle
+    ? getElementFontSize(textStyle.company.sizeOffset)
+    : baseFontSize;
   const contactColor = textStyle?.contact.color || textColor;
-  const contactFontSize = textStyle ? getElementFontSize(textStyle.contact.sizeOffset) : baseFontSize;
+  const contactFontSize = textStyle
+    ? getElementFontSize(textStyle.contact.sizeOffset)
+    : baseFontSize;
   const socialsColor = textStyle?.socials.color || accentColor;
-  const socialsFontSize = textStyle ? getElementFontSize(textStyle.socials.sizeOffset) : baseFontSize;
+  const socialsFontSize = textStyle
+    ? getElementFontSize(textStyle.socials.sizeOffset)
+    : baseFontSize;
   const legalColor = textStyle?.legal.color || textColor;
   const legalFontSize = textStyle ? getElementFontSize(textStyle.legal.sizeOffset - 2) : '11px'; // -2 for legal default
   const backgroundColor = style.backgroundColor || SIGNATURE_COLOR_WHITE;
@@ -90,8 +122,12 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
   const AVATAR_RADIUS_MAP = { circle: '999px', rounded: '8px', square: '0' } as const;
   const avatarSize = AVATAR_SIZE_MAP[style.avatarSize] || 56;
   const avatarRadius = AVATAR_RADIUS_MAP[style.avatarShape] || '999px';
-  const avatarImg = hasAvatar ? `<img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:${avatarRadius};display:block;" />` : '';
-  const avatarCellInline = hasAvatar ? `<td style="padding-right:12px;vertical-align:top;">${avatarImg}</td>` : '';
+  const avatarImg = hasAvatar
+    ? `<img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:${avatarRadius};display:block;" />`
+    : '';
+  const avatarCellInline = hasAvatar
+    ? `<td style="padding-right:12px;vertical-align:top;">${avatarImg}</td>`
+    : '';
 
   const telLabel = labels.tel;
   const mailLabel = labels.email;
@@ -163,8 +199,8 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
   };
 
   const socialLinks = socials
-    .filter((s) => config.socials[s.key] && config.socials[s.key]?.trim().length)
-    .map((s) => {
+    .filter(s => config.socials[s.key] && config.socials[s.key]?.trim().length)
+    .map(s => {
       const url = sanitizeHrefUrl(config.socials[s.key]);
       if (!url) return '';
 
@@ -217,7 +253,9 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     ? `<tr><td style="padding-top:10px;padding-bottom:10px;"><div style="border-top:${dividerWidth}px ${dividerStyle} ${dividerColor};width:100%;"></div></td></tr>`
     : '';
 
-  const formalHtml = hasFormalLine ? `<tr><td style="padding-top:6px;font-size:11px;line-height:1.4;color:${textColor};">${formatMultiline(config.formalLine.trim())}</td></tr>` : '';
+  const formalHtml = hasFormalLine
+    ? `<tr><td style="padding-top:6px;font-size:11px;line-height:1.4;color:${textColor};">${formatMultiline(config.formalLine.trim())}</td></tr>`
+    : '';
 
   const topLineHtml = hasTopLine
     ? `<tr><td style="padding:0 0 4px 0;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:${textColor};">${escapeHtml(config.topLine.trim())}</td></tr>`
@@ -236,15 +274,21 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
         }${hasCompany ? `<span style="color:${companyColor};font-size:${companyFontSize};">${escapeHtml(config.company.trim())}</span>` : ''}</td></tr>`
       : '';
 
-  const extraLineHtml = hasExtraLine ? `<tr><td style="padding:0 0 ${spacing.afterExtra}px 0;color:${textColor};">${escapeHtml(config.extraLine.trim())}</td></tr>` : '';
+  const extraLineHtml = hasExtraLine
+    ? `<tr><td style="padding:0 0 ${spacing.afterExtra}px 0;color:${textColor};">${escapeHtml(config.extraLine.trim())}</td></tr>`
+    : '';
 
-  const addressHtml = hasAddress ? `<tr><td style="padding:0 0 6px 0;color:${textColor};font-size:${baseFontSize};">${formatMultiline(config.address.trim())}</td></tr>` : '';
+  const addressHtml = hasAddress
+    ? `<tr><td style="padding:0 0 6px 0;color:${textColor};font-size:${baseFontSize};">${formatMultiline(config.address.trim())}</td></tr>`
+    : '';
 
   const contactHtml = contactItems.length
     ? `<tr><td style="padding:${spacing.afterContact}px 0 0 0;color:${contactColor};font-size:${contactFontSize};">${contactItems.join('<span style="margin-right:4px;">&nbsp;</span>')}</td></tr>`
     : '';
 
-  const socialsHtml = socialLinks.length ? `<tr><td style="padding-top:${spacing.afterSocials}px;color:${socialsColor};font-size:${socialsFontSize};">${socialLinks.join('')}</td></tr>` : '';
+  const socialsHtml = socialLinks.length
+    ? `<tr><td style="padding-top:${spacing.afterSocials}px;color:${socialsColor};font-size:${socialsFontSize};">${socialLinks.join('')}</td></tr>`
+    : '';
 
   const headerBlock = `${topLineHtml}${nameRowHtml}${titleCompanyHtml}`;
   const contentBlock = `${extraLineHtml}${addressHtml}${contactHtml}${socialsHtml}${ctaHtml}${cta2Html}${dividerHtml}${formalHtml}${legalHtml}`;
@@ -272,12 +316,16 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
       </table>
     `;
   } else if (layout === 'top-banner') {
-    const bannerTopLine = hasTopLine ? `<div style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase;opacity:0.9;">${escapeHtml(config.topLine.trim())}</div>` : '';
+    const bannerTopLine = hasTopLine
+      ? `<div style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase;opacity:0.9;">${escapeHtml(config.topLine.trim())}</div>`
+      : '';
     const bannerName = `<div style="font-size:${nameFontSize};font-weight:bold;margin-top:2px;">${escapeHtml(config.fullName || '')}</div>`;
     const bannerTitleCompany =
       hasJobTitle || hasCompany
         ? `<div style="margin-top:2px;font-size:${jobTitleFontSize};">${hasJobTitle ? `<span style="color:inherit;">${escapeHtml(config.jobTitle.trim())}</span>` : ''}${hasJobTitle && hasCompany ? ' · ' : ''}${
-            hasCompany ? `<span style="color:inherit;font-size:${companyFontSize};">${escapeHtml(config.company.trim())}</span>` : ''
+            hasCompany
+              ? `<span style="color:inherit;font-size:${companyFontSize};">${escapeHtml(config.company.trim())}</span>`
+              : ''
           }</div>`
         : '';
     const bannerAvatar = hasAvatar
@@ -364,7 +412,8 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
       </table>
     `;
   } else if (layout === 'centered') {
-    const addCenterAlign = (html: string) => html.replace('<td style="', '<td style="text-align:center;');
+    const addCenterAlign = (html: string) =>
+      html.replace('<td style="', '<td style="text-align:center;');
 
     const avatarRowCentered = hasAvatar
       ? `<tr><td style="padding:0 0 8px 0;text-align:center;"><img src="${escapeHtml(
@@ -396,13 +445,19 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     `;
   } else if (layout === 'compact') {
     const compactName = `<span style="font-weight:bold;font-size:${nameFontSize};color:${nameColor};">${escapeHtml(config.fullName || '')}</span>`;
-    const compactTitle = hasJobTitle ? `<span style="color:${jobTitleColor};font-size:${jobTitleFontSize};"> · ${escapeHtml(config.jobTitle.trim())}</span>` : '';
-    const compactCompany = hasCompany ? `<span style="color:${companyColor};font-size:${companyFontSize};"> · ${escapeHtml(config.company.trim())}</span>` : '';
+    const compactTitle = hasJobTitle
+      ? `<span style="color:${jobTitleColor};font-size:${jobTitleFontSize};"> · ${escapeHtml(config.jobTitle.trim())}</span>`
+      : '';
+    const compactCompany = hasCompany
+      ? `<span style="color:${companyColor};font-size:${companyFontSize};"> · ${escapeHtml(config.company.trim())}</span>`
+      : '';
 
     const compactContactItems: string[] = [];
     if (config.phone.trim()) {
       const phone = formatPhone(config.phone);
-      compactContactItems.push(`<a href="tel:${escapeHtml(phone)}" style="color:${accentColor};text-decoration:none;font-size:${contactFontSize};">${escapeHtml(phone)}</a>`);
+      compactContactItems.push(
+        `<a href="tel:${escapeHtml(phone)}" style="color:${accentColor};text-decoration:none;font-size:${contactFontSize};">${escapeHtml(phone)}</a>`,
+      );
     }
     if (config.email.trim()) {
       compactContactItems.push(
@@ -412,11 +467,15 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     if (config.website.trim()) {
       const normalized = sanitizeHrefUrl(config.website);
       if (normalized) {
-        compactContactItems.push(`<a href="${escapeHtml(normalized)}" style="color:${accentColor};text-decoration:none;font-size:${contactFontSize};">${escapeHtml(normalized)}</a>`);
+        compactContactItems.push(
+          `<a href="${escapeHtml(normalized)}" style="color:${accentColor};text-decoration:none;font-size:${contactFontSize};">${escapeHtml(normalized)}</a>`,
+        );
       }
     }
 
-    const compactContact = compactContactItems.length ? ` <span style="color:${SIGNATURE_COLOR_DIVIDER};">|</span> ${compactContactItems.join(' · ')}` : '';
+    const compactContact = compactContactItems.length
+      ? ` <span style="color:${SIGNATURE_COLOR_DIVIDER};">|</span> ${compactContactItems.join(' · ')}`
+      : '';
 
     layoutWrapper = `
       <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};${borderStyle}">
@@ -461,7 +520,9 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
       }
     }
     if (hasAddress) {
-      rightColumnItems.push(`<div style="margin-bottom:4px;">${formatMultiline(config.address.trim())}</div>`);
+      rightColumnItems.push(
+        `<div style="margin-bottom:4px;">${formatMultiline(config.address.trim())}</div>`,
+      );
     }
 
     const rightColumn = `
@@ -511,7 +572,9 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     }
     if (config.phone.trim()) {
       const phone = formatPhone(config.phone);
-      minimalContactItems.push(`<a href="tel:${escapeHtml(phone)}" style="color:${accentColor};text-decoration:none;font-size:${contactFontSize};">${escapeHtml(phone)}</a>`);
+      minimalContactItems.push(
+        `<a href="tel:${escapeHtml(phone)}" style="color:${accentColor};text-decoration:none;font-size:${contactFontSize};">${escapeHtml(phone)}</a>`,
+      );
     }
 
     layoutWrapper = `
@@ -555,7 +618,9 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
       }
     }
     if (hasCompany) {
-      bottomBarContent.push(`<span style="opacity:0.9;font-size:${companyFontSize};">${escapeHtml(config.company.trim())}</span>`);
+      bottomBarContent.push(
+        `<span style="opacity:0.9;font-size:${companyFontSize};">${escapeHtml(config.company.trim())}</span>`,
+      );
     }
 
     const bottomBar = `

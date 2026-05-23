@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir PNG a PDF?",
-      "html": "<p class=\"text-mid mb-4\">PNG es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a PDF puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor online gratuito transforma tus archivos PNG al formato PDF directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a PDF puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor gratuito transforma tus archivos PNG al formato PDF directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "PNG to PDF conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs PDF – comparación de formatos",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["PNG", "PDF"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Compresión con pérdida",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Compresión sin pérdida",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparencia (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Soporte de animación",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Compatibilidad con navegadores",
+          "values": ["Todos los navegadores", "Visor PDF integrado"]
+        },
+        {
+          "label": "Tamaño de archivo compacto",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadatos (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresión con pérdida",
-          "values": {
-            "png": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Compresión sin pérdida",
-          "values": {
-            "png": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Transparencia (canal alfa)",
-          "values": {
-            "png": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Soporte de animación",
-          "values": {
-            "png": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Compatibilidad con navegadores",
-          "values": {
-            "png": "Todos los navegadores",
-            "pdf": "Visor PDF integrado"
-          }
-        },
-        {
-          "name": "Tamaño de archivo compacto",
-          "values": {
-            "png": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadatos (EXIF)",
-          "values": {
-            "png": false,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Característica"
+      ]
     },
     {
       "type": "gap",

@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "SVG PNG -muunnin",
-      "alternateName": ["Muunna SVG PNG-muotoon", "SVG:n muunto PNG-muotoon", "Ilmainen SVG–PNG-muunnin"],
+      "alternateName": [
+        "Muunna SVG PNG-muotoon",
+        "SVG:n muunto PNG-muotoon",
+        "Ilmainen SVG–PNG-muunnin"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna SVG-vektorigrafiikka PNG-muotoon. Ihanteellinen dokumentteihin ja sosiaaliseen mediaan. Ei asennusta, toimii kaikilla laitteilla. Ilmainen, yksityinen ja rajoittamaton.",
-      "featureList": ["SVG – PNG -muunnos", "Häviötön PNG-tulos", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
+      "featureList": [
+        "SVG – PNG -muunnos",
+        "Häviötön PNG-tulos",
+        "Erämuunnos",
+        "Paikallinen selainprosessointi",
+        "Ei tiedostojen latausta palvelimelle"
+      ]
     },
     "howTo": {
       "name": "SVG muuntaminen PNG-muotoon",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PNG – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["SVG", "PNG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Häviöllinen pakkaus",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Häviötön pakkaus",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Läpinäkyvyys (alfakanava)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animaatiotuki",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Selaintuki",
+          "values": ["Kaikki selaimet", "Kaikki selaimet"]
+        },
+        {
+          "label": "Värisyvyys",
+          "values": ["N/A (vektori)", "8/16-bit"]
+        },
+        {
+          "label": "Pieni tiedostokoko",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metatiedot (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Häviöllinen pakkaus",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Häviötön pakkaus",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Läpinäkyvyys (alfakanava)",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animaatiotuki",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Selaintuki",
-          "values": {
-            "svg": "Kaikki selaimet",
-            "png": "Kaikki selaimet"
-          }
-        },
-        {
-          "name": "Värisyvyys",
-          "values": {
-            "svg": "N/A (vektori)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Pieni tiedostokoko",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metatiedot (EXIF)",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

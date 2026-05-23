@@ -14,7 +14,15 @@ signatures.
 **Incorrect (render props):**
 
 ```tsx
-function Composer({ renderHeader, renderFooter, renderActions }: { renderHeader?: () => React.ReactNode; renderFooter?: () => React.ReactNode; renderActions?: () => React.ReactNode }) {
+function Composer({
+  renderHeader,
+  renderFooter,
+  renderActions,
+}: {
+  renderHeader?: () => React.ReactNode;
+  renderFooter?: () => React.ReactNode;
+  renderActions?: () => React.ReactNode;
+}) {
   return (
     <form>
       {renderHeader?.()}
@@ -48,7 +56,7 @@ function ComposerFrame({ children }: { children: React.ReactNode }) {
 }
 
 function ComposerFooter({ children }: { children: React.ReactNode }) {
-  return <footer className="flex">{children}</footer>;
+  return <footer className='flex'>{children}</footer>;
 }
 
 // Usage is flexible

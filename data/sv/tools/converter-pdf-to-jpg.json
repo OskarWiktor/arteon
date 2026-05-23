@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PDF vs JPG – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["PDF", "JPG"],
+      "rows": [
         {
-          "id": "pdf",
-          "name": "PDF"
+          "label": "Förlustrik komprimering",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Inbyggd PDF-visare", "Alla webbläsare"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "pdf": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "pdf": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "pdf": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "pdf": "Inbyggd PDF-visare",
-            "jpg": "Alla webbläsare"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "pdf": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

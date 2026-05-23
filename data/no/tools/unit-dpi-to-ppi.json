@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Sammenlign DPI og PPI — utskrifts- vs skjermoppløsning.",
-      "featureList": ["Toveis-konvertering i sanntid", "Alle kalkulatorer samlet på ett sted", "Kopier resultat til utklippstavle", "Lokal beregning i nettleseren"]
+      "featureList": [
+        "Toveis-konvertering i sanntid",
+        "Alle kalkulatorer samlet på ett sted",
+        "Kopier resultat til utklippstavle",
+        "Lokal beregning i nettleseren"
+      ]
     },
     "howTo": {
       "name": "Slik bruker du kalkulatoren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI vs PPI – sammenligning",
-      "featureLabel": "Egenskap",
-      "plans": [
+      "labelHeader": "Egenskap",
+      "cols": ["DPI", "PPI"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "DPI"
+          "label": "Gjelder for",
+          "values": ["Skrivere", "Skjermer og bilder"]
         },
         {
-          "id": "unit2",
-          "name": "PPI",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Gjelder for",
-          "values": {
-            "unit1": "Skrivere",
-            "unit2": "Skjermer og bilder"
-          }
+          "label": "Måler",
+          "values": ["Fysiske blekkpunkter", "Digitale piksler"]
         },
         {
-          "name": "Måler",
-          "values": {
-            "unit1": "Fysiske blekkpunkter",
-            "unit2": "Digitale piksler"
-          }
+          "label": "Typiske verdier",
+          "values": ["600–4 800 DPI", "72–460 PPI"]
         },
         {
-          "name": "Typiske verdier",
-          "values": {
-            "unit1": "600–4 800 DPI",
-            "unit2": "72–460 PPI"
-          }
+          "label": "Trykkvalitet",
+          "values": ["Mer = finere", "300 PPI standard"]
         },
         {
-          "name": "Trykkvalitet",
-          "values": {
-            "unit1": "Mer = finere",
-            "unit2": "300 PPI standard"
-          }
-        },
-        {
-          "name": "Forvirring",
-          "values": {
-            "unit1": "Feilaktig brukt for bilder",
-            "unit2": "Korrekt begrep"
-          }
+          "label": "Forvirring",
+          "values": ["Feilaktig brukt for bilder", "Korrekt begrep"]
         }
       ]
     },

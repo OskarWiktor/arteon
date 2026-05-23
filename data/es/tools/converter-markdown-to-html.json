@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convierte Markdown a formato HTML. Análisis y formato automáticos. Gratis.",
-      "featureList": ["Markdown to HTML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
+      "featureList": [
+        "Markdown to HTML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Markdown to HTML",
+        "Markdown to HTML",
+        "Free Markdown to HTML converter"
+      ]
     },
     "howTo": {
       "name": "Cómo convertir Markdown a HTML",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir Markdown a HTML?",
-      "html": "<p class=\"text-mid mb-4\">MARKDOWN es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a HTML puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor online gratuito transforma tus archivos MARKDOWN al formato HTML directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
+      "html": "<p class=\"text-mid mb-4\">MARKDOWN es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a HTML puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor gratuito transforma tus archivos MARKDOWN al formato HTML directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Markdown to HTML conversion",
       "variant": "right"
@@ -128,64 +136,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Markdown vs HTML – comparación de formatos",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["Markdown", "HTML"],
+      "rows": [
         {
-          "id": "markdown",
-          "name": "Markdown"
+          "label": "Datos jerárquicos",
+          "values": ["—", "✓"]
         },
         {
-          "id": "html",
-          "name": "HTML",
-          "highlighted": true
+          "label": "Datos tabulares",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Validación de esquema",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Legible por humanos",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Estándar API",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Sintaxis compacta",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Datos jerárquicos",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Datos tabulares",
-          "values": {
-            "markdown": true,
-            "html": true
-          }
-        },
-        {
-          "name": "Validación de esquema",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Legible por humanos",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        },
-        {
-          "name": "Estándar API",
-          "values": {
-            "markdown": false,
-            "html": false
-          }
-        },
-        {
-          "name": "Sintaxis compacta",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        }
-      ],
-      "featureLabel": "Característica"
+      ]
     },
     {
       "type": "gap",

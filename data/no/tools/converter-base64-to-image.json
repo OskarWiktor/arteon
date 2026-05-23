@@ -29,7 +29,11 @@
       "applicationSubCategory": "DataConverter",
       "description": "Dekod Base64-strenger til bilder. Forhåndsvisning og nedlasting i nettleseren. Gratis.",
       "featureList": ["Base64 to bilde conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Base64 to bilde", "Base64 to bilde", "Free Base64 to bilde converter"]
+      "alternateName": [
+        "Convert Base64 to bilde",
+        "Base64 to bilde",
+        "Free Base64 to bilde converter"
+      ]
     },
     "howTo": {
       "name": "Slik konverterer du Base64 til bilde",

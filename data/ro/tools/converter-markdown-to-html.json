@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convertește Markdown în format HTML. Parsare și formatare automată. Gratuit.",
-      "featureList": ["Markdown to HTML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
+      "featureList": [
+        "Markdown to HTML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Markdown to HTML",
+        "Markdown to HTML",
+        "Free Markdown to HTML converter"
+      ]
     },
     "howTo": {
       "name": "Cum convertiți Markdown în HTML",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți Markdown în HTML?",
-      "html": "<p class=\"text-mid mb-4\">MARKDOWN este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in HTML poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele MARKDOWN in format HTML direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">MARKDOWN este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in HTML poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertorisierele MARKDOWN in format HTML direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Markdown to HTML conversion",
       "variant": "right"
@@ -128,64 +136,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Markdown vs HTML – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["Markdown", "HTML"],
+      "rows": [
         {
-          "id": "markdown",
-          "name": "Markdown"
+          "label": "Date ierarhice",
+          "values": ["—", "✓"]
         },
         {
-          "id": "html",
-          "name": "HTML",
-          "highlighted": true
+          "label": "Date tabulare",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Validare schemă",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Lizibil pentru oameni",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Sintaxă compactă",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Date ierarhice",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Date tabulare",
-          "values": {
-            "markdown": true,
-            "html": true
-          }
-        },
-        {
-          "name": "Validare schemă",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Lizibil pentru oameni",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "markdown": false,
-            "html": false
-          }
-        },
-        {
-          "name": "Sintaxă compactă",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

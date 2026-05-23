@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer iPhone HEIC-fotos naar universeel JPG. Zonder registratie, zonder upload. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
-      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["HEIC naar JPG omzetten", "HEIC naar JPG conversie", "Gratis HEIC naar JPG converter"]
+      "featureList": [
+        "HEIC to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "HEIC naar JPG omzetten",
+        "HEIC naar JPG conversie",
+        "Gratis HEIC naar JPG converter"
+      ]
     },
     "howTo": {
       "name": "HEIC to JPG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs JPG – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["HEIC", "JPG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Lossy-compressie",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Safari 13+ (macOS / iOS)", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["8/10-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "heic": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "jpg": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

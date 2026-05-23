@@ -28,8 +28,18 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert first GIF frame to lightweight WebP. Smaller file, faster loading. All processing happens locally in your browser - files never leave your device.",
-      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert GIF to WEBP", "GIF to WEBP conversion", "Free GIF to WEBP converter", "Change GIF to WEBP"]
+      "featureList": [
+        "GIF to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert GIF to WEBP",
+        "GIF to WEBP conversion",
+        "Free GIF to WEBP converter",
+        "Change GIF to WEBP"
+      ]
     },
     "howTo": {
       "name": "GIF to WebP",
@@ -111,7 +121,7 @@
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce and marketplaces",
-          "description": "Product icons and category graphics saved as GIF lose quality due to the 256-color limit. Converting to WebP produces sharper, smaller files with full color depth for online stores."
+          "description": "Product icons and category graphics saved as GIF lose quality due to the 256-color limit. Converting to WebP produces sharper, smaller files with full color depth for stores."
         },
         {
           "icon": "RiPrinterLine",
@@ -174,78 +184,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs WebP – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["GIF", "WebP"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Lossy compression",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["All browsers", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Color depth",
+          "values": ["8-bit (256)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "gif": "All browsers",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "gif": "8-bit (256)",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

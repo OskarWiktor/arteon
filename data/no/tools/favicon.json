@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "Favicon.ico-generator for nettsider",
-      "alternateName": ["Favicon.ico-generator", "Nettikongenerator", "Favicon-verktøy", "Favicon-generator fra bilde"],
+      "alternateName": [
+        "Favicon.ico-generator",
+        "Nettikongenerator",
+        "Favicon-verktøy",
+        "Favicon-generator fra bilde"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
       "description": "Gratis favicon-generator. Lag favicon.ico og PNG-ikoner 16x16, 32x32, 180x180, 192x192 og 512x512 uten begrensninger og uten å sende filer til en server. Behandlingen skjer lokalt i nettleseren.",

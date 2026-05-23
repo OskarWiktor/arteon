@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere BMP în WebP usor. Reducere de pana la 95%. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
-      "featureList": ["Conversie BMP în WebP", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie BMP în WEBP", "Convertor BMP în WEBP", "Convertor gratuit BMP în WEBP"]
+      "featureList": [
+        "Conversie BMP în WebP",
+        "Calitate reglabilă (60–95%)",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie BMP în WEBP",
+        "Convertor BMP în WEBP",
+        "Convertor gratuit BMP în WEBP"
+      ]
     },
     "howTo": {
       "name": "BMP to WebP",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs WebP – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["BMP", "WebP"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Compresie cu pierderi",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Toate browserele", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["1/4/8/24/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "bmp": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "bmp": "Toate browserele",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

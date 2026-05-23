@@ -1,4 +1,4 @@
-import ArticlePageSkeleton from '@/components/ui/skeletons/ArticlePageSkeleton';
+import ArticlePageSkeleton from '@/components/organisms/skeletons/ArticlePageSkeleton';
 
 export default function Loading() {
   return <ArticlePageSkeleton />;

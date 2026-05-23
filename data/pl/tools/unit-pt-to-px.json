@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Przelicznik pt na px – punkty typograficzne na piksele CSS",
-      "alternateName": ["Przelicznik pt na px", "Kalkulator punktów na piksele", "Points to pixels"],
+      "alternateName": [
+        "Przelicznik pt na px",
+        "Kalkulator punktów na piksele",
+        "Points to pixels"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz punkty typograficzne (pt) na piksele – sprawdz, ze 12 pt = 16 px i zlap zwiazek miedzy InDesign, Word a CSS. Dziala w przegladarce, bez rejestracji.",
@@ -184,55 +188,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Punkt (pt) vs Piksel (px) – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
+      "labelHeader": "Cecha",
+      "cols": ["Punkt (pt)", "Piksel (px)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Punkt (pt)"
+          "label": "Definicja",
+          "values": ["1/72 cala", "Jednostka ekranowa"]
         },
         {
-          "id": "unit2",
-          "name": "Piksel (px)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Definicja",
-          "values": {
-            "unit1": "1/72 cala",
-            "unit2": "Jednostka ekranowa"
-          }
+          "label": "Programy",
+          "values": ["InDesign, Word", "CSS, Figma"]
         },
         {
-          "name": "Programy",
-          "values": {
-            "unit1": "InDesign, Word",
-            "unit2": "CSS, Figma"
-          }
+          "label": "Tekst podstawowy",
+          "values": ["12 pt", "16 px"]
         },
         {
-          "name": "Tekst podstawowy",
-          "values": {
-            "unit1": "12 pt",
-            "unit2": "16 px"
-          }
+          "label": "Nagłówek",
+          "values": ["24–36 pt", "32–48 px"]
         },
         {
-          "name": "Nagłówek",
-          "values": {
-            "unit1": "24–36 pt",
-            "unit2": "32–48 px"
-          }
-        },
-        {
-          "name": "Zależność od DPI",
-          "values": {
-            "unit1": "Nie",
-            "unit2": "Tak (96 DPI standard)"
-          }
+          "label": "Zależność od DPI",
+          "values": ["Nie", "Tak (96 DPI standard)"]
         }
       ]
     },

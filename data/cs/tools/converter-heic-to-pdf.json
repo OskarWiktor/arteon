@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět HEIC na PDF?",
-      "html": "<p class=\"text-mid mb-4\">HEIC je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na PDF prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase HEIC soubory do formatu PDF primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">HEIC je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na PDF prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny konvertor prevadi vase HEIC soubory do formatu PDF primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "HEIC to PDF conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs PDF – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["HEIC", "PDF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Ztrátová komprese",
+          "values": ["✓", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Safari 13+ (macOS / iOS)", "Vestavěný prohlížeč PDF"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "heic": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "heic": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "pdf": "Vestavěný prohlížeč PDF"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",
@@ -255,7 +224,7 @@
     {
       "type": "sectionInfo",
       "title": "How image conversion impacts page speed and SEO",
-      "html": "<p class=\"text-mid mb-4\">HEIC to PDF conversion creates document files. When sharing PDFs containing photos online, file size matters — large PDFs slow down downloads and may exceed email attachment limits (typically 10–25 MB).</p><p class=\"text-mid mb-4\">The converter optimizes the PDF output to balance quality and file size. A typical 12 MP iPhone photo produces a PDF page of about 1–2 MB, meaning a 10-photo PDF will be approximately 15–20 MB.</p><p class=\"text-mid\">For smaller PDFs, consider reducing quality settings. For web sharing, you may want to convert HEIC to JPG or WebP instead and display images directly on a web page.</p>"
+      "html": "<p class=\"text-mid mb-4\">HEIC to PDF conversion creates document files. When sharing PDFs containing photos, file size matters — large PDFs slow down downloads and may exceed email attachment limits (typically 10–25 MB).</p><p class=\"text-mid mb-4\">The converter optimizes the PDF output to balance quality and file size. A typical 12 MP iPhone photo produces a PDF page of about 1–2 MB, meaning a 10-photo PDF will be approximately 15–20 MB.</p><p class=\"text-mid\">For smaller PDFs, consider reducing quality settings. For web sharing, you may want to convert HEIC to JPG or WebP instead and display images directly on a web page.</p>"
     },
     {
       "type": "faq",

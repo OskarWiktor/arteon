@@ -26,13 +26,13 @@
     "software": {
       "name": "Contor de cuvinte, caractere și timp de citire cu formatarea textului",
       "alternateName": [
-        "Contor de cuvinte online",
+        "Contor de cuvinte",
         "Contor de caractere cu și fără spații",
         "Instrument de numărare cuvinte pentru copywriteri",
         "Calculator timp de citire",
-        "Convertor majuscule minuscule online",
+        "Convertor majuscule minuscule",
         "Verificator lizibilitate Flesch-Kincaid",
-        "Contor de silabe online",
+        "Contor de silabe",
         "Calculator timp de vorbire",
         "Instrument lizibilitate text",
         "Elimină linii duplicate din text",
@@ -379,7 +379,7 @@
     {
       "type": "sectionInfo",
       "title": "Lungimea ideală a textului pentru site-uri românești",
-      "html": "<p class=\"text-mid mb-4\">Articolele de blog în limba română obțin cele mai bune rezultate în motoarele de căutare la o lungime de 1 200–2 000 de cuvinte. Articolele mai scurte (600–1 000 de cuvinte) funcționează pentru ghiduri practice și răspunsuri la întrebări specifice. Articolele sub 500 de cuvinte ajung rareori pe poziții înalte, cu excepția cazului în care răspund unei interogări foarte specifice.</p><p class=\"text-mid mb-4\">Descrierile de produse în magazinele online românești trebuie să conțină 150–300 de cuvinte. Pe eMAG.ro, titlurile de produse au limite de caractere - folosiți acest spațiu pentru informații concrete despre caracteristici, materiale și dimensiuni. Pe OLX.ro, titlurile de anunțuri au o limită de circa 70 de caractere.</p><p class=\"text-mid\">Paginile de servicii (cabinet dentar, cabinet de avocatură, firmă de construcții) au nevoie de 500–800 de cuvinte cu informații concrete: gamă de servicii, zonă de acoperire, date de contact. Numărul de cuvinte în sine nu este un indicator de calitate - un text concis de 600 de cuvinte cu informații utile depășește un text umflat de 2 000 de cuvinte fără valoare adăugată.</p>"
+      "html": "<p class=\"text-mid mb-4\">Articolele de blog în limba română obțin cele mai bune rezultate în motoarele de căutare la o lungime de 1 200–2 000 de cuvinte. Articolele mai scurte (600–1 000 de cuvinte) funcționează pentru ghiduri practice și răspunsuri la întrebări specifice. Articolele sub 500 de cuvinte ajung rareori pe poziții înalte, cu excepția cazului în care răspund unei interogări foarte specifice.</p><p class=\"text-mid mb-4\">Descrierile de produse în magazinelești trebuie să conțină 150–300 de cuvinte. Pe eMAG.ro, titlurile de produse au limite de caractere - folosiți acest spațiu pentru informații concrete despre caracteristici, materiale și dimensiuni. Pe OLX.ro, titlurile de anunțuri au o limită de circa 70 de caractere.</p><p class=\"text-mid\">Paginile de servicii (cabinet dentar, cabinet de avocatură, firmă de construcții) au nevoie de 500–800 de cuvinte cu informații concrete: gamă de servicii, zonă de acoperire, date de contact. Numărul de cuvinte în sine nu este un indicator de calitate - un text concis de 600 de cuvinte cu informații utile depășește un text umflat de 2 000 de cuvinte fără valoare adăugată.</p>"
     },
     {
       "type": "gap",

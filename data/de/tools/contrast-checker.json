@@ -180,82 +180,45 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Was bedeuten die Stufen AA und AAA?",
-      "plans": [
+      "cols": ["Level AA (Minimum)", "Level AAA (Erweitert)"],
+      "rows": [
         {
-          "id": "aa",
-          "name": "Level AA (Minimum)",
-          "highlighted": true
+          "label": "Normaler Text - min. 4,5:1",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "aaa",
-          "name": "Level AAA (Erweitert)"
-        }
-      ],
-      "features": [
-        {
-          "name": "Normaler Text - min. 4,5:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Normaler Text - min. 7:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Normaler Text - min. 7:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Großer / fetter Text - min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Großer / fetter Text - min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Großer / fetter Text - min. 4,5:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Großer / fetter Text - min. 4,5:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Symbole und UI-Elemente - min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Symbole und UI-Elemente - min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Vorgeschrieben durch BITV 2.0 (Bundesbehörden)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Vorgeschrieben durch BITV 2.0 (Bundesbehörden)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Vorgeschrieben durch BFSG (Privatsektor ab VI 2025)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Vorgeschrieben durch BFSG (Privatsektor ab VI 2025)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Vorgeschrieben durch EU-Richtlinie 2016/2102",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Vorgeschrieben durch EU-Richtlinie 2016/2102",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
-        },
-        {
-          "name": "Empfohlen für wichtige Inhalte",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Empfohlen für wichtige Inhalte",
+          "values": ["✓", "✓"]
         }
       ]
     },

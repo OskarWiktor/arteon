@@ -160,7 +160,7 @@
     "helper": "Technisch voorbeeld, compatibel met Gmail, Outlook en de meeste e-mailclients.",
     "copySuccess": "Gekopieerd – plak in Gmail",
     "copyError": "Fout bij kopiëren",
-    "copyButton": "Handtekening kopiëren (Gmail / Outlook)",
+    "ButtonCopy": "Handtekening kopiëren (Gmail / Outlook)",
     "copyRawButton": "HTML-code kopiëren",
     "copyRawSuccess": "HTML-code gekopieerd",
     "downloadButton": "Downloaden als HTML",

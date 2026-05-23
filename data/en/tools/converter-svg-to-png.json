@@ -25,14 +25,26 @@
   "schemas": {
     "software": {
       "name": "SVG to PNG converter – free, unlimited files",
-      "alternateName": ["SVG to PNG rasterizer", "Convert SVG to PNG online", "Rasterize SVG to PNG", "Free SVG to PNG tool"],
+      "alternateName": [
+        "SVG to PNG rasterizer",
+        "Convert SVG to PNG",
+        "Rasterize SVG to PNG",
+        "Free SVG to PNG tool"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Free online SVG to PNG converter. Rasterize SVG vector graphics to PNG images in your browser. No uploads, no limits.",
-      "featureList": ["SVG to PNG rasterization", "High-quality anti-aliased output", "Batch conversion", "File size preview", "Individual or bulk download", "100% local processing"]
+      "description": "Free SVG to PNG converter. Rasterize SVG vector graphics to PNG images in your browser. No uploads, no limits.",
+      "featureList": [
+        "SVG to PNG rasterization",
+        "High-quality anti-aliased output",
+        "Batch conversion",
+        "File size preview",
+        "Individual or bulk download",
+        "100% local processing"
+      ]
     },
     "howTo": {
-      "name": "How to convert SVG to PNG online",
+      "name": "How to convert SVG to PNG",
       "description": "Step-by-step guide to converting SVG files to PNG.",
       "steps": [
         {
@@ -174,78 +186,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PNG – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["SVG", "PNG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Lossy compression",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["All browsers", "All browsers"]
+        },
+        {
+          "label": "Color depth",
+          "values": ["N/A (vector)", "8/16-bit"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "svg": "All browsers",
-            "png": "All browsers"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "svg": "N/A (vector)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

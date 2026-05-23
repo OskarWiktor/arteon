@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε TIFF σε PDF;",
-      "html": "<p class=\"text-mid mb-4\">Το TIFF είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε PDF μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν online μετατροπέας μετατρέπει τα αρχεία TIFF σε format PDF απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το TIFF είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε PDF μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν μετατροπέας μετατρέπει τα αρχεία TIFF σε format PDF απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "TIFF to PDF conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PDF – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["TIFF", "PDF"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": ["Μόνο Safari", "Ενσωματωμένη προβολή PDF"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "tiff": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "tiff": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "tiff": "Μόνο Safari",
-            "pdf": "Ενσωματωμένη προβολή PDF"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "tiff": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",
@@ -255,7 +224,7 @@
     {
       "type": "sectionInfo",
       "title": "How image conversion impacts page speed and SEO",
-      "html": "<p class=\"text-mid mb-4\">TIFF to PDF conversion is commonly used for document archival and sharing. TIFF files cannot be viewed in web browsers or opened easily on most devices, while PDF is universally readable.</p><p class=\"text-mid mb-4\">When sharing PDFs online, file size matters. TIFF files are large (10–50 MB each), but the converter compresses images within the PDF to produce more manageable file sizes. A 10-page PDF from TIFF scans will typically be 10–30 MB.</p><p class=\"text-mid\">For web display, consider converting TIFF directly to JPG, WebP, or AVIF instead. These formats produce much smaller files optimized for browser display.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF to PDF conversion is commonly used for document archival and sharing. TIFF files cannot be viewed in web browsers or opened easily on most devices, while PDF is universally readable.</p><p class=\"text-mid mb-4\">When sharing PDFs, file size matters. TIFF files are large (10–50 MB each), but the converter compresses images within the PDF to produce more manageable file sizes. A 10-page PDF from TIFF scans will typically be 10–30 MB.</p><p class=\"text-mid\">For web display, consider converting TIFF directly to JPG, WebP, or AVIF instead. These formats produce much smaller files optimized for browser display.</p>"
     },
     {
       "type": "faq",

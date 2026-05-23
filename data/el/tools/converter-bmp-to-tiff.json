@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε αρχεια BMP σε επαγγελματικη μορφη TIFF για εκτυπωση. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης - τα αρχεία δεν φεύγουν από τη συσκευή σας.",
-      "featureList": ["Μετατροπή σε TIFF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
-      "alternateName": ["Μετατροπή BMP σε TIFF", "Μετατροπέας BMP σε TIFF", "Δωρεάν μετατροπέας BMP σε TIFF"]
+      "featureList": [
+        "Μετατροπή σε TIFF",
+        "Ρύθμιση ποιότητας (60-95%)",
+        "Ομαδική μετατροπή",
+        "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"
+      ],
+      "alternateName": [
+        "Μετατροπή BMP σε TIFF",
+        "Μετατροπέας BMP σε TIFF",
+        "Δωρεάν μετατροπέας BMP σε TIFF"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε BMP σε TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs TIFF – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["BMP", "TIFF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["—", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": ["Όλοι οι περιηγητές", "Μόνο Safari"]
+        },
+        {
+          "label": "Βάθος χρώματος",
+          "values": ["1/4/8/24/32-bit", "8/16/32-bit"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "bmp": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "bmp": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "bmp": "Όλοι οι περιηγητές",
-            "tiff": "Μόνο Safari"
-          }
-        },
-        {
-          "name": "Βάθος χρώματος",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "bmp": false,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",

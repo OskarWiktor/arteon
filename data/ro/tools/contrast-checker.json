@@ -180,82 +180,45 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Ce înseamnă nivelurile AA și AAA în standardul WCAG?",
-      "plans": [
+      "cols": ["Nivelul AA (minim)", "Nivelul AAA (avansat)"],
+      "rows": [
         {
-          "id": "aa",
-          "name": "Nivelul AA (minim)",
-          "highlighted": true
+          "label": "Text normal – min. 4,5:1",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "aaa",
-          "name": "Nivelul AAA (avansat)"
-        }
-      ],
-      "features": [
-        {
-          "name": "Text normal – min. 4,5:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Text normal – min. 7:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Text normal – min. 7:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Text mare / bold – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Text mare / bold – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Text mare / bold – min. 4,5:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Text mare / bold – min. 4,5:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Pictograme și elemente UI – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Pictograme și elemente UI – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Obligatoriu legal (directiva UE)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Obligatoriu legal (directiva UE)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Cerut de ADA / Secțiunea 508 SUA",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Cerut de ADA / Secțiunea 508 SUA",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Cerut de UK Equality Act 2010",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Cerut de UK Equality Act 2010",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
-        },
-        {
-          "name": "Recomandat pentru conținut esențial",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Recomandat pentru conținut esențial",
+          "values": ["✓", "✓"]
         }
       ]
     },
@@ -285,7 +248,7 @@
         },
         {
           "icon": "RiShoppingCartLine",
-          "title": "Magazine online",
+          "title": "Magazine",
           "description": "Prețuri, butoane Cumpără, informații despre produse. O lizibilitate scăzută poate însemna comenzi pierdute."
         },
         {
@@ -326,7 +289,7 @@
     {
       "type": "sectionInfo",
       "title": "Cerințe de accesibilitate în România",
-      "html": "<p class=\"text-mid mb-4\">România a transpus directiva europeană privind accesibilitatea web prin <strong>OUG 112/2018</strong>, ulterior modificată prin Legea 198/2019.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Sectorul public</strong> - site-urile instituțiilor publice, autorităților locale și entităților finanțate din fonduri publice trebuie să respecte EN 301 549, care face referire la WCAG 2.1 nivel AA.</li><li><strong>ANCOM</strong> - Autoritatea Națională pentru Administrare și Reglementare în Comunicații monitorizează conformitatea.</li><li><strong>Actul European de Accesibilitate (EAA)</strong> - din iunie 2025, obligațiile se extind la sectorul privat: magazine online, servicii bancare, transport și platforme media.</li><li><strong>Piața digitală emergentă</strong> - România are una dintre cele mai rapide creșteri de digitalizare din UE, ceea ce face accesibilitatea deosebit de importantă pe măsură ce tot mai multe servicii se mută online.</li></ul><p class=\"text-mid mt-3\">Raportul de contrast de 4,5:1 pentru text normal și 3:1 pentru text mare este cerut de toate reglementările menționate.</p>"
+      "html": "<p class=\"text-mid mb-4\">România a transpus directiva europeană privind accesibilitatea web prin <strong>OUG 112/2018</strong>, ulterior modificată prin Legea 198/2019.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Sectorul public</strong> - site-urile instituțiilor publice, autorităților locale și entităților finanțate din fonduri publice trebuie să respecte EN 301 549, care face referire la WCAG 2.1 nivel AA.</li><li><strong>ANCOM</strong> - Autoritatea Națională pentru Administrare și Reglementare în Comunicații monitorizează conformitatea.</li><li><strong>Actul European de Accesibilitate (EAA)</strong> - din iunie 2025, obligațiile se extind la sectorul privat: magazine, servicii bancare, transport și platforme media.</li><li><strong>Piața digitală emergentă</strong> - România are una dintre cele mai rapide creșteri de digitalizare din UE, ceea ce face accesibilitatea deosebit de importantă pe măsură ce tot mai multe servicii se mută.</li></ul><p class=\"text-mid mt-3\">Raportul de contrast de 4,5:1 pentru text normal și 3:1 pentru text mare este cerut de toate reglementările menționate.</p>"
     },
     {
       "type": "gap",

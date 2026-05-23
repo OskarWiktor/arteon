@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les fichiers BMP en format TIFF professionnel pour impression. Tout le traitement se fait dans votre navigateur - vos fichiers restent sur votre appareil.",
-      "featureList": ["Conversion en TIFF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
-      "alternateName": ["Convertir BMP en TIFF", "Conversion BMP vers TIFF", "Convertisseur BMP en TIFF gratuit"]
+      "featureList": [
+        "Conversion en TIFF",
+        "Réglage de la qualité (60-95%)",
+        "Conversion par lots",
+        "Traitement local dans le navigateur"
+      ],
+      "alternateName": [
+        "Convertir BMP en TIFF",
+        "Conversion BMP vers TIFF",
+        "Convertisseur BMP en TIFF gratuit"
+      ]
     },
     "howTo": {
       "name": "Comment convertir BMP en TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs TIFF – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["BMP", "TIFF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Compression avec perte",
+          "values": ["—", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Tous les navigateurs", "Safari uniquement"]
+        },
+        {
+          "label": "Profondeur de couleur",
+          "values": ["1/4/8/24/32-bit", "8/16/32-bit"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "bmp": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "bmp": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "bmp": "Tous les navigateurs",
-            "tiff": "Safari uniquement"
-          }
-        },
-        {
-          "name": "Profondeur de couleur",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "bmp": false,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

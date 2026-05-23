@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Muunna cm pikseleiksi DPI-tuella.",
-      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+      "featureList": [
+        "Kaksisuuntainen reaaliaikainen muunnos",
+        "Kaikki muuntimet yhdessä paikassa",
+        "Kopioi tulos leikepöydälle",
+        "Paikallinen laskenta selaimessa"
+      ]
     },
     "howTo": {
       "name": "Näin käytät muunninta",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI-resoluutiot vertailussa",
-      "featureLabel": "Ominaisuus",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["300 DPI (paino)", "72 DPI (näyttö)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "300 DPI (paino)"
+          "label": "10 cm",
+          "values": ["1 181 px", "283 px"]
         },
         {
-          "id": "unit2",
-          "name": "72 DPI (näyttö)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "10 cm",
-          "values": {
-            "unit1": "1 181 px",
-            "unit2": "283 px"
-          }
+          "label": "A4 leveys",
+          "values": ["2 480 px", "595 px"]
         },
         {
-          "name": "A4 leveys",
-          "values": {
-            "unit1": "2 480 px",
-            "unit2": "595 px"
-          }
+          "label": "A4 korkeus",
+          "values": ["3 508 px", "842 px"]
         },
         {
-          "name": "A4 korkeus",
-          "values": {
-            "unit1": "3 508 px",
-            "unit2": "842 px"
-          }
+          "label": "Käyttö",
+          "values": ["Ammattimainen paino", "Verkkografiikka"]
         },
         {
-          "name": "Käyttö",
-          "values": {
-            "unit1": "Ammattimainen paino",
-            "unit2": "Verkkografiikka"
-          }
-        },
-        {
-          "name": "Laatu",
-          "values": {
-            "unit1": "Terävä kaikissa koissa",
-            "unit2": "Vain näytölle"
-          }
+          "label": "Laatu",
+          "values": ["Terävä kaikissa koissa", "Vain näytölle"]
         }
       ]
     },

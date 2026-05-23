@@ -1,7 +1,5 @@
-import Gap from '@/components/ui/Gap';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import Wrapper from '@/components/ui/Wrapper';
-import AppLink from '@/components/ui/Link';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import Wrapper from '@/components/atoms/Wrapper';
 import type { Metadata } from 'next';
 import type { NavItem } from '@/types/sitemap';
 
@@ -10,11 +8,14 @@ import { slugify } from '@/utils/slugify';
 import { siteUrl } from '@/utils/absoluteUrl';
 import type { ArticlePreview } from '@/types/article';
 import projectsData from '@/data/pl/projects.json';
-import { JsonLd } from '@/components/seo/JsonLd';
+import { JsonLd } from '@/components/atoms/JsonLd';
 
+import InlineLink from '@/components/atoms/InlineLink';
+import Divider from '@/components/atoms/Divider';
 export const metadata: Metadata = {
   title: 'Mapa strony | Arteon',
-  description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
+  description:
+    'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
   alternates: { canonical: 'https://www.arteonagency.pl/mapa-strony' },
 };
 
@@ -31,16 +32,25 @@ const GRAPHIC_SERVICES_SOURCE = [
   { name: 'Odzież firmowa', path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej' },
   { name: 'Projekt logo', path: '/uslugi/projekty-graficzne/projekt-logo' },
   { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
-  { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
+  {
+    name: 'Identyfikacja wizualna',
+    path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+  },
   { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
-  { name: 'Szablony postów na media społecznościowe', path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe' },
-  { name: 'Kupony rabatowe i vouchery', path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera' },
+  {
+    name: 'Szablony postów na media społecznościowe',
+    path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
+  },
+  {
+    name: 'Kupony rabatowe i vouchery',
+    path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
+  },
   { name: 'Projekt cennika', path: '/uslugi/projekty-graficzne/projekt-cennika' },
   { name: 'Karty lojalnościowe', path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
   { name: 'Projekt menu restauracji', path: '/uslugi/projekty-graficzne/projekt-menu-restauracji' },
 ];
 
-const GRAPHIC_SERVICES: NavItem[] = GRAPHIC_SERVICES_SOURCE.map((s) => ({
+const GRAPHIC_SERVICES: NavItem[] = GRAPHIC_SERVICES_SOURCE.map(s => ({
   title: s.name,
   href: s.path,
 }));
@@ -68,15 +78,17 @@ const services: NavItem[] = [
 
 const portfolioIndex: NavItem = { title: 'Wszystkie realizacje', href: '/realizacje' };
 
-const portfolioItems: NavItem[] = ((projectsData as { projects: Project[] }).projects || []).map((p) => ({
-  title: p.title,
-  href: `/realizacje/${p.slug}`,
-}));
+const portfolioItems: NavItem[] = ((projectsData as { projects: Project[] }).projects || []).map(
+  p => ({
+    title: p.title,
+    href: `/realizacje/${p.slug}`,
+  }),
+);
 
 const articlePreviews = getAllArticlePreviews();
 const blogCategories: NavItem[] = buildBlogCategoriesFromArticles(articlePreviews);
 
-const blogArticleItems: NavItem[] = articlePreviews.map((a) => ({
+const blogArticleItems: NavItem[] = articlePreviews.map(a => ({
   title: a.title,
   href: `/edukacja/${getPrimaryCategorySlug(a)}/${a.slug}`,
 }));
@@ -84,8 +96,11 @@ const blogArticleItems: NavItem[] = articlePreviews.map((a) => ({
 const tools: NavItem[] = [
   { title: 'Konwerter JPG/PNG na WebP', href: '/narzedzia/konwerter-jpg-na-webp' },
   { title: 'Zmiana rozmiaru i kadrowanie zdjęcia', href: '/narzedzia/edytor-zdjec-online' },
-  { title: 'Generator favicon online', href: '/narzedzia/darmowy-generator-favicon-ico' },
-  { title: 'Licznik meta title i description', href: '/narzedzia/licznik-dlugosci-meta-title-i-description' },
+  { title: 'Generator favicon', href: '/narzedzia/darmowy-generator-favicon-ico' },
+  {
+    title: 'Licznik meta title i description',
+    href: '/narzedzia/licznik-dlugosci-meta-title-i-description',
+  },
   { title: 'Generator stopki mailowej HTML', href: '/narzedzia/darmowy-generator-stopki-mailowej' },
   { title: 'Kontrast i czytelność kolorów', href: '/narzedzia/kontrast-i-czytelnosc-kolorow' },
   { title: 'Generator palet kolorów', href: '/narzedzia/generator-palet-kolorow' },
@@ -122,86 +137,89 @@ export default function SitemapPage() {
 
   return (
     <>
-      <Gap size="sm" />
+      <Divider size='sm' />
 
       <Wrapper>
         <header>
           <h1>Mapa strony</h1>
-          <p className="mt-2">Szybki przegląd kluczowych sekcji i podstron. Użyj tej strony, aby szybko dotrzeć do interesującej Cię treści.</p>
+          <p className='mt-2'>
+            Szybki przegląd kluczowych sekcji i podstron. Użyj tej strony, aby szybko dotrzeć do
+            interesującej Cię treści.
+          </p>
         </header>
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
-        <nav aria-label="Mapa strony">
-          <SectionInfo title="Usługi">
+        <nav aria-label='Mapa strony'>
+          <SectionInfo title='Usługi'>
             <NestedList items={services} />
           </SectionInfo>
 
-          <Gap variant="line" size="sm" />
+          <Divider line size='sm' />
 
-          <SectionInfo title="Realizacje">
+          <SectionInfo title='Realizacje'>
             <p>
-              <AppLink href={portfolioIndex.href} className="font-medium">
+              <InlineLink href={portfolioIndex.href} className='font-medium'>
                 {portfolioIndex.title}
-              </AppLink>
+              </InlineLink>
             </p>
             {showAllPortfolio ? (
-              <ul className="mt-2 space-y-2">
-                {portfolioItems.map((item) => (
+              <ul className='mt-2 space-y-2'>
+                {portfolioItems.map(item => (
                   <li key={item.href}>
-                    <AppLink href={item.href}>{item.title}</AppLink>
+                    <InlineLink href={item.href}>{item.title}</InlineLink>
                   </li>
                 ))}
               </ul>
             ) : null}
           </SectionInfo>
 
-          <Gap variant="line" size="sm" />
+          <Divider line size='sm' />
 
-          <SectionInfo title="Edukacja">
+          <SectionInfo title='Edukacja'>
             <p>
-              <AppLink href="/edukacja" className="font-medium">
+              <InlineLink href='/edukacja' className='font-medium'>
                 Wszystkie artykuły
-              </AppLink>
+              </InlineLink>
             </p>
             <NestedList items={blogCategories} />
           </SectionInfo>
 
-          <Gap variant="line" size="sm" />
+          <Divider line size='sm' />
 
-          <SectionInfo title="Narzędzia">
+          <SectionInfo title='Narzędzia'>
             <p>
-              <AppLink href="/narzedzia" className="font-medium">
+              <InlineLink href='/narzedzia' className='font-medium'>
                 Wszystkie narzędzia
-              </AppLink>
+              </InlineLink>
             </p>
-            <ul className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
-              {tools.map((tool) => (
+            <ul className='mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2'>
+              {tools.map(tool => (
                 <li key={tool.href}>
-                  <AppLink href={tool.href}>{tool.title}</AppLink>
+                  <InlineLink href={tool.href}>{tool.title}</InlineLink>
                 </li>
               ))}
             </ul>
           </SectionInfo>
 
-          <Gap variant="line" size="sm" />
+          <Divider line size='sm' />
 
-          <SectionInfo title="Informacje">
+          <SectionInfo title='Informacje'>
             <ul>
-              {infoPages.map((p) => (
+              {infoPages.map(p => (
                 <li key={p.href}>
-                  <AppLink href={p.href} className="font-medium">
+                  <InlineLink href={p.href} className='font-medium'>
                     {p.title}
-                  </AppLink>
+                  </InlineLink>
                 </li>
               ))}
             </ul>
           </SectionInfo>
         </nav>
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
-        <JsonLd schema={jsonLd} id="schema-sitemap-itemlist" />
+        <JsonLd schema={jsonLd} id='schema-sitemap-itemlist' />
       </Wrapper>
     </>
   );
@@ -209,17 +227,17 @@ export default function SitemapPage() {
 
 function NestedList({ items }: { items: NavItem[] }) {
   return (
-    <ul className="space-y-2">
-      {items.map((item) => (
+    <ul className='space-y-2'>
+      {items.map(item => (
         <li key={item.href}>
-          <AppLink href={item.href} className="font-medium">
+          <InlineLink href={item.href} className='font-medium'>
             {item.title}
-          </AppLink>
+          </InlineLink>
           {item.children && item.children.length > 0 && (
-            <ul className="mt-1 ml-5 space-y-1 text-sm">
-              {item.children.map((child) => (
+            <ul className='mt-1 ml-5 space-y-1 text-sm'>
+              {item.children.map(child => (
                 <li key={child.href}>
-                  <AppLink href={child.href}>{child.title}</AppLink>
+                  <InlineLink href={child.href}>{child.title}</InlineLink>
                 </li>
               ))}
             </ul>
@@ -283,7 +301,7 @@ function buildJsonLd({
   blogArticleItems: NavItem[];
   tools: NavItem[];
 }) {
-  const servicesChildren = services.flatMap((s) => s.children ?? []);
+  const servicesChildren = services.flatMap(s => s.children ?? []);
 
   return {
     '@context': 'https://schema.org',
@@ -316,7 +334,11 @@ function buildJsonLd({
         '@type': 'ItemList',
         '@id': `${siteUrl}/#sitemap-edukacja`,
         name: 'Mapa strony - Edukacja',
-        itemListElement: toListElements([{ title: 'Edukacja', href: '/edukacja' }, ...blogCategories, ...blogArticleItems]),
+        itemListElement: toListElements([
+          { title: 'Edukacja', href: '/edukacja' },
+          ...blogCategories,
+          ...blogArticleItems,
+        ]),
       },
       {
         '@type': 'SiteNavigationElement',

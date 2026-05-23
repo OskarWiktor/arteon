@@ -33,7 +33,7 @@
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
         "Business Ipsum generator",
-        "Dummy text generator online"
+        "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Δωρεάν γεννήτρια Lorem Ipsum — 8 στυλ: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business και άλλα. 9 λειτουργίες δημιουργίας. Αντιγράψτε ως κείμενο ή HTML.",
@@ -254,122 +254,61 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Σύγκριση στυλ κειμένου",
-      "featureLabel": "Χαρακτηριστικό",
-      "plans": [
-        {
-          "id": "classic",
-          "name": "Lorem Ipsum",
-          "highlighted": true
-        },
-        {
-          "id": "hipster",
-          "name": "Hipster"
-        },
-        {
-          "id": "business",
-          "name": "Business"
-        },
-        {
-          "id": "polish",
-          "name": "Τοπικό"
-        },
-        {
-          "id": "bacon",
-          "name": "Bacon"
-        },
-        {
-          "id": "cupcake",
-          "name": "Cupcake"
-        },
-        {
-          "id": "pirate",
-          "name": "Pirate"
-        },
-        {
-          "id": "legal",
-          "name": "Legal"
-        }
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": [
+        "Lorem Ipsum",
+        "Hipster",
+        "Business",
+        "Τοπικό",
+        "Bacon",
+        "Cupcake",
+        "Pirate",
+        "Legal"
       ],
-      "features": [
+      "rows": [
         {
-          "name": "Γλώσσα",
-          "values": {
-            "classic": "Λατινικά",
-            "hipster": "Αγγλικά",
-            "business": "Αγγλικά",
-            "polish": "Τοπική",
-            "bacon": "Αγγλικά",
-            "cupcake": "Αγγλικά",
-            "pirate": "Αγγλικά",
-            "legal": "Αγγλικά"
-          }
+          "label": "Γλώσσα",
+          "values": [
+            "Λατινικά",
+            "Αγγλικά",
+            "Αγγλικά",
+            "Τοπική",
+            "Αγγλικά",
+            "Αγγλικά",
+            "Αγγλικά",
+            "Αγγλικά"
+          ]
         },
         {
-          "name": "Θέμα",
-          "values": {
-            "classic": "Φιλοσοφία",
-            "hipster": "Τρόπος ζωής",
-            "business": "Εταιρικό",
-            "polish": "Γενικό",
-            "bacon": "Γαστρονομία",
-            "cupcake": "Ζαχαροπλαστική",
-            "pirate": "Περιπέτεια",
-            "legal": "Δίκαιο"
-          }
+          "label": "Θέμα",
+          "values": [
+            "Φιλοσοφία",
+            "Τρόπος ζωής",
+            "Εταιρικό",
+            "Γενικό",
+            "Γαστρονομία",
+            "Ζαχαροπλαστική",
+            "Περιπέτεια",
+            "Δίκαιο"
+          ]
         },
         {
-          "name": "Οπτική ουδετερότητα",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Οπτική ουδετερότητα",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Φυσικός ρυθμός",
-          "values": {
-            "classic": true,
-            "hipster": true,
-            "business": true,
-            "polish": true,
-            "bacon": true,
-            "cupcake": true,
-            "pirate": true,
-            "legal": true
-          }
+          "label": "Φυσικός ρυθμός",
+          "values": ["✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"]
         },
         {
-          "name": "Πρότυπο κλάδου",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Πρότυπο κλάδου",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Χιούμορ / χαρακτήρας",
-          "values": {
-            "classic": "Ουδέτερο",
-            "hipster": "Μέτριο",
-            "business": "Χαμηλό",
-            "polish": "Χαμηλό",
-            "bacon": "Υψηλό",
-            "cupcake": "Υψηλό",
-            "pirate": "Υψηλό",
-            "legal": "Χαμηλό"
-          }
+          "label": "Χιούμορ / χαρακτήρας",
+          "values": ["Ουδέτερο", "Μέτριο", "Χαμηλό", "Χαμηλό", "Υψηλό", "Υψηλό", "Υψηλό", "Χαμηλό"]
         }
       ]
     },

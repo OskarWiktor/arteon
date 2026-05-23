@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "SVG zu PNG Konverter",
-      "alternateName": ["SVG in PNG umwandeln", "SVG zu PNG konvertieren", "Kostenloser SVG-zu-PNG-Konverter"],
+      "alternateName": [
+        "SVG in PNG umwandeln",
+        "SVG zu PNG konvertieren",
+        "Kostenloser SVG-zu-PNG-Konverter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "SVG-Vektorgrafiken im Browser in PNG umwandeln. Ideal für Dokumente und Social Media. Ohne Installation, funktioniert auf jedem Gerät. Kostenlos und unbegrenzt.",
-      "featureList": ["SVG-zu-PNG-Konvertierung", "Verlustfreie PNG-Ausgabe", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
+      "featureList": [
+        "SVG-zu-PNG-Konvertierung",
+        "Verlustfreie PNG-Ausgabe",
+        "Stapelkonvertierung",
+        "Lokale Browserverarbeitung",
+        "Kein Datei-Upload erforderlich"
+      ]
     },
     "howTo": {
       "name": "SVG in PNG umwandeln",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PNG – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["SVG", "PNG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Verlustbehaftete Komprimierung",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Verlustfreie Komprimierung",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparenz (Alphakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunterstützung",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowser-Unterstützung",
+          "values": ["Alle Browser", "Alle Browser"]
+        },
+        {
+          "label": "Farbtiefe",
+          "values": ["N/A (Vektor)", "8/16-bit"]
+        },
+        {
+          "label": "Kompakte Dateigröße",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadaten (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verlustbehaftete Komprimierung",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Verlustfreie Komprimierung",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparenz (Alphakanal)",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animationsunterstützung",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbrowser-Unterstützung",
-          "values": {
-            "svg": "Alle Browser",
-            "png": "Alle Browser"
-          }
-        },
-        {
-          "name": "Farbtiefe",
-          "values": {
-            "svg": "N/A (Vektor)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Kompakte Dateigröße",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadaten (EXIF)",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

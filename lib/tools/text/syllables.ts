@@ -9,7 +9,9 @@ import type { Locale } from '@/types/locale';
  * Falls back to a generic vowel-group heuristic for unsupported languages.
  */
 export function countSyllablesInWord(word: string, locale: Locale = 'en'): number {
-  const w = word.toLowerCase().replace(/[^a-zA-Z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF\u00E0-\u00FF]/g, '');
+  const w = word
+    .toLowerCase()
+    .replace(/[^a-zA-Z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF\u00E0-\u00FF]/g, '');
   if (!w) return 0;
 
   switch (locale) {
@@ -77,7 +79,13 @@ function countSyllablesEN(word: string): number {
   if (word.endsWith('ed') && !word.endsWith('ted') && !word.endsWith('ded')) {
     count = Math.max(1, count - 1);
   }
-  if (word.endsWith('es') && !word.endsWith('ses') && !word.endsWith('zes') && !word.endsWith('ces') && !word.endsWith('xes')) {
+  if (
+    word.endsWith('es') &&
+    !word.endsWith('ses') &&
+    !word.endsWith('zes') &&
+    !word.endsWith('ces') &&
+    !word.endsWith('xes')
+  ) {
     count = Math.max(1, count - 1);
   }
 
@@ -98,7 +106,12 @@ function countSyllablesDE(word: string): number {
 
   // German diphthongs count as one syllable: ei, au, eu, äu, ie
   let w = word;
-  w = w.replace(/ei/g, 'X').replace(/au/g, 'X').replace(/eu/g, 'X').replace(/äu/g, 'X').replace(/ie/g, 'X');
+  w = w
+    .replace(/ei/g, 'X')
+    .replace(/au/g, 'X')
+    .replace(/eu/g, 'X')
+    .replace(/äu/g, 'X')
+    .replace(/ie/g, 'X');
 
   const vowelGroups = w.match(/[aeiouyäöüX]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
@@ -125,7 +138,13 @@ function countSyllablesFR(word: string): number {
   }
 
   // French diphthongs
-  w = w.replace(/ou/g, 'X').replace(/ai/g, 'X').replace(/ei/g, 'X').replace(/au/g, 'X').replace(/eau/g, 'X').replace(/oi/g, 'X');
+  w = w
+    .replace(/ou/g, 'X')
+    .replace(/ai/g, 'X')
+    .replace(/ei/g, 'X')
+    .replace(/au/g, 'X')
+    .replace(/eau/g, 'X')
+    .replace(/oi/g, 'X');
 
   const vowelGroups = w.match(/[aeiouyàâéèêëïîôùûüæœX]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
@@ -142,7 +161,12 @@ function countSyllablesRomance(word: string): number {
   let w = word;
   w = w.replace(/ia/g, 'YA').replace(/ie/g, 'YE').replace(/io/g, 'YO').replace(/iu/g, 'YU');
   w = w.replace(/ua/g, 'WA').replace(/ue/g, 'WE').replace(/ui/g, 'WI').replace(/uo/g, 'WO');
-  w = w.replace(/ai/g, 'X').replace(/ei/g, 'X').replace(/oi/g, 'X').replace(/au/g, 'X').replace(/eu/g, 'X');
+  w = w
+    .replace(/ai/g, 'X')
+    .replace(/ei/g, 'X')
+    .replace(/oi/g, 'X')
+    .replace(/au/g, 'X')
+    .replace(/eu/g, 'X');
 
   const vowelGroups = w.match(/[aeiouyàáâãéèêíîóôõúùûäëïöüăîâșțX]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
@@ -157,7 +181,15 @@ function countSyllablesNL(word: string): number {
 
   let w = word;
   // Dutch diphthongs
-  w = w.replace(/ij/g, 'X').replace(/ei/g, 'X').replace(/au/g, 'X').replace(/ou/g, 'X').replace(/eu/g, 'X').replace(/oe/g, 'X').replace(/ie/g, 'X').replace(/ui/g, 'X');
+  w = w
+    .replace(/ij/g, 'X')
+    .replace(/ei/g, 'X')
+    .replace(/au/g, 'X')
+    .replace(/ou/g, 'X')
+    .replace(/eu/g, 'X')
+    .replace(/oe/g, 'X')
+    .replace(/ie/g, 'X')
+    .replace(/ui/g, 'X');
 
   const vowelGroups = w.match(/[aeiouyëïöüX]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);

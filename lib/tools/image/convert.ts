@@ -29,10 +29,18 @@ function getSvgDimensions(dataUrl: string): { width: number; height: number } | 
     const raw = atob(dataUrl.substring(idx + base64Marker.length));
     const wMatch = raw.match(/\bwidth\s*=\s*["'](\d+(?:\.\d+)?)/);
     const hMatch = raw.match(/\bheight\s*=\s*["'](\d+(?:\.\d+)?)/);
-    if (wMatch && hMatch) return { width: Math.round(parseFloat(wMatch[1])), height: Math.round(parseFloat(hMatch[1])) };
+    if (wMatch && hMatch)
+      return {
+        width: Math.round(parseFloat(wMatch[1])),
+        height: Math.round(parseFloat(hMatch[1])),
+      };
 
     const vbMatch = raw.match(/viewBox\s*=\s*["']\s*[\d.]+\s+[\d.]+\s+([\d.]+)\s+([\d.]+)/);
-    if (vbMatch) return { width: Math.round(parseFloat(vbMatch[1])), height: Math.round(parseFloat(vbMatch[2])) };
+    if (vbMatch)
+      return {
+        width: Math.round(parseFloat(vbMatch[1])),
+        height: Math.round(parseFloat(vbMatch[2])),
+      };
   } catch {
     // Parsing failed - fall through
   }
@@ -41,7 +49,12 @@ function getSvgDimensions(dataUrl: string): { width: number; height: number } | 
 
 function isHeic(file: File): boolean {
   const name = file.name.toLowerCase();
-  return file.type === 'image/heic' || file.type === 'image/heif' || name.endsWith('.heic') || name.endsWith('.heif');
+  return (
+    file.type === 'image/heic' ||
+    file.type === 'image/heif' ||
+    name.endsWith('.heic') ||
+    name.endsWith('.heif')
+  );
 }
 
 function isTiff(file: File): boolean {
@@ -75,7 +88,7 @@ async function checkAvifSupport(): Promise<boolean> {
     const c = document.createElement('canvas');
     c.width = 1;
     c.height = 1;
-    const blob = await new Promise<Blob | null>((resolve) => c.toBlob(resolve, 'image/avif', 0.5));
+    const blob = await new Promise<Blob | null>(resolve => c.toBlob(resolve, 'image/avif', 0.5));
     avifSupportCache = blob !== null && blob.type === 'image/avif';
   } catch {
     avifSupportCache = false;
@@ -99,18 +112,30 @@ async function encodeGif(canvas: HTMLCanvasElement, errorMessage?: string): Prom
 }
 
 // ---- TIFF encoding via utif2 ----
-async function encodeTiffFromCanvas(canvas: HTMLCanvasElement, errorMessage?: string): Promise<Blob> {
+async function encodeTiffFromCanvas(
+  canvas: HTMLCanvasElement,
+  errorMessage?: string,
+): Promise<Blob> {
   const UTIF = await import('utif2');
   const ctx = canvas.getContext('2d');
   if (!ctx) throw new Error(errorMessage ?? 'Failed to generate TIFF.');
   const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const encoded = (UTIF as any).encodeImage(imgData.data, imgData.width, imgData.height) as ArrayBuffer;
+  const encoded = (UTIF as any).encodeImage(
+    imgData.data,
+    imgData.width,
+    imgData.height,
+  ) as ArrayBuffer;
   return new Blob([encoded], { type: 'image/tiff' });
 }
 
 // ---- Unified output encoding ----
-async function encodeFromCanvas(canvas: HTMLCanvasElement, targetMime: string, quality: number | undefined, errorMessages?: ConvertImageOptions['errorMessages']): Promise<Blob> {
+async function encodeFromCanvas(
+  canvas: HTMLCanvasElement,
+  targetMime: string,
+  quality: number | undefined,
+  errorMessages?: ConvertImageOptions['errorMessages'],
+): Promise<Blob> {
   if (targetMime === 'image/gif') {
     return encodeGif(canvas, errorMessages?.generationError);
   }
@@ -120,7 +145,10 @@ async function encodeFromCanvas(canvas: HTMLCanvasElement, targetMime: string, q
   if (targetMime === 'image/avif') {
     const supported = await checkAvifSupport();
     if (!supported) {
-      throw new Error(errorMessages?.avifNotSupported ?? 'Your browser does not support AVIF encoding. Use Chrome, Edge, or Firefox.');
+      throw new Error(
+        errorMessages?.avifNotSupported ??
+          'Your browser does not support AVIF encoding. Use Chrome, Edge, or Firefox.',
+      );
     }
   }
   return canvasToBlob(canvas, targetMime, quality, errorMessages?.generationError);
@@ -130,14 +158,20 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
   const { targetMime, quality, errorMessages } = options;
 
   if (file.size > MAX_FILE_SIZE) {
-    throw new Error(errorMessages?.fileTooLarge ?? `Plik jest za duży (maks. ${Math.round(MAX_FILE_SIZE / 1024 / 1024)} MB).`);
+    throw new Error(
+      errorMessages?.fileTooLarge ??
+        `Plik jest za duży (maks. ${Math.round(MAX_FILE_SIZE / 1024 / 1024)} MB).`,
+    );
   }
 
   // ---- HEIC pre-decode (dynamic import of heic2any) ----
   if (isHeic(file)) {
     try {
       const decoded = await decodeHeic(file);
-      return convertImage(new File([decoded], file.name.replace(/\.hei[cf]$/i, '.png'), { type: 'image/png' }), options);
+      return convertImage(
+        new File([decoded], file.name.replace(/\.hei[cf]$/i, '.png'), { type: 'image/png' }),
+        options,
+      );
     } catch {
       throw new Error(errorMessages?.imageLoad ?? 'HEIC decoding failed. Try a different file.');
     }
@@ -149,8 +183,15 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
       const imgData = await decodeTiff(file);
       const origW = imgData.width;
       const origH = imgData.height;
-      const needsScale = origW > MAX_CANVAS_DIM || origH > MAX_CANVAS_DIM || origW * origH > MAX_CANVAS_PIXELS;
-      const scale = needsScale ? Math.min(MAX_CANVAS_DIM / origW, MAX_CANVAS_DIM / origH, Math.sqrt(MAX_CANVAS_PIXELS / (origW * origH))) : 1;
+      const needsScale =
+        origW > MAX_CANVAS_DIM || origH > MAX_CANVAS_DIM || origW * origH > MAX_CANVAS_PIXELS;
+      const scale = needsScale
+        ? Math.min(
+            MAX_CANVAS_DIM / origW,
+            MAX_CANVAS_DIM / origH,
+            Math.sqrt(MAX_CANVAS_PIXELS / (origW * origH)),
+          )
+        : 1;
       const w = Math.round(origW * scale);
       const h = Math.round(origH * scale);
 
@@ -193,7 +234,14 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
       ctx.drawImage(tmpCanvas, 0, 0, w, h);
       return encodeFromCanvas(canvas, targetMime, quality, errorMessages);
     } catch (err) {
-      if (err instanceof Error && (err.message.includes('Canvas') || err.message.includes('AVIF') || err.message.includes('GIF') || err.message.includes('TIFF'))) throw err;
+      if (
+        err instanceof Error &&
+        (err.message.includes('Canvas') ||
+          err.message.includes('AVIF') ||
+          err.message.includes('GIF') ||
+          err.message.includes('TIFF'))
+      )
+        throw err;
       throw new Error(errorMessages?.imageLoad ?? 'TIFF decoding failed. Try a different file.');
     }
   }
@@ -229,7 +277,11 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
 
   // Guard: canvas dimension limits
   if (w > MAX_CANVAS_DIM || h > MAX_CANVAS_DIM || w * h > MAX_CANVAS_PIXELS) {
-    const scale = Math.min(MAX_CANVAS_DIM / w, MAX_CANVAS_DIM / h, Math.sqrt(MAX_CANVAS_PIXELS / (w * h)));
+    const scale = Math.min(
+      MAX_CANVAS_DIM / w,
+      MAX_CANVAS_DIM / h,
+      Math.sqrt(MAX_CANVAS_PIXELS / (w * h)),
+    );
     w = Math.round(w * scale);
     h = Math.round(h * scale);
   }

@@ -24,7 +24,13 @@ app/
 
 ```tsx
 // app/layout.tsx
-export default function RootLayout({ children, modal }: { children: React.ReactNode; modal: React.ReactNode }) {
+export default function RootLayout({
+  children,
+  modal,
+}: {
+  children: React.ReactNode;
+  modal: React.ReactNode;
+}) {
   return (
     <html>
       <body>
@@ -78,7 +84,7 @@ export default async function PhotoPage({ params }: { params: Promise<{ id: stri
   const photo = await getPhoto(id);
 
   return (
-    <div className="full-page">
+    <div className='full-page'>
       <img src={photo.url} alt={photo.title} />
       <h1>{photo.title}</h1>
     </div>
@@ -123,11 +129,15 @@ export function Modal({ children }: { children: React.ReactNode }) {
   );
 
   return (
-    <div ref={overlayRef} onClick={handleOverlayClick} className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-      <div className="mx-4 w-full max-w-2xl rounded-md bg-white p-6">
+    <div
+      ref={overlayRef}
+      onClick={handleOverlayClick}
+      className='fixed inset-0 z-50 flex items-center justify-center bg-black/50'
+    >
+      <div className='mx-4 w-full max-w-2xl rounded-md bg-white p-6'>
         <button
           onClick={() => router.back()} // Correct!
-          className="absolute top-4 right-4"
+          className='absolute top-4 right-4'
         >
           Close
         </button>
@@ -260,8 +270,8 @@ export default async function Gallery() {
   const photos = await getPhotos();
 
   return (
-    <div className="grid grid-cols-3 gap-4">
-      {photos.map((photo) => (
+    <div className='grid grid-cols-3 gap-4'>
+      {photos.map(photo => (
         <Link key={photo.id} href={`/photos/${photo.id}`}>
           <img src={photo.thumbnail} alt={photo.title} />
         </Link>

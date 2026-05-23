@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Rechnen Sie RGB-Farbwerte in CMYK um. Unverzichtbar für die Druckvorbereitung von Webgrafiken.",
-      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+      "featureList": [
+        "Bidirektionale Echtzeit-Konvertierung",
+        "Alle Konverter an einem Ort",
+        "Ergebnis in die Zwischenablage kopieren",
+        "Lokale Berechnung im Browser"
+      ]
     },
     "howTo": {
       "name": "So verwenden Sie den Konverter RGB na CMYK",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "RGB vs CMYK – Vergleich",
-      "featureLabel": "Eigenschaft",
-      "plans": [
+      "labelHeader": "Eigenschaft",
+      "cols": ["RGB", "CMYK"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "RGB"
+          "label": "Modell",
+          "values": ["Additiv (Licht)", "Subtraktiv (Tinte)"]
         },
         {
-          "id": "unit2",
-          "name": "CMYK",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Modell",
-          "values": {
-            "unit1": "Additiv (Licht)",
-            "unit2": "Subtraktiv (Tinte)"
-          }
+          "label": "Verwendet für",
+          "values": ["Bildschirme, Web", "Druck, Verpackung"]
         },
         {
-          "name": "Verwendet für",
-          "values": {
-            "unit1": "Bildschirme, Web",
-            "unit2": "Druck, Verpackung"
-          }
+          "label": "Farbraum",
+          "values": ["Größer", "Kleiner"]
         },
         {
-          "name": "Farbraum",
-          "values": {
-            "unit1": "Größer",
-            "unit2": "Kleiner"
-          }
+          "label": "Schwarz",
+          "values": ["R=0, G=0, B=0", "K=100 %"]
         },
         {
-          "name": "Schwarz",
-          "values": {
-            "unit1": "R=0, G=0, B=0",
-            "unit2": "K=100 %"
-          }
-        },
-        {
-          "name": "Weiß",
-          "values": {
-            "unit1": "R=255, G=255, B=255",
-            "unit2": "Keine Tinte (Papier)"
-          }
+          "label": "Weiß",
+          "values": ["R=255, G=255, B=255", "Keine Tinte (Papier)"]
         }
       ]
     },

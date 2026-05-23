@@ -29,7 +29,11 @@
       "applicationSubCategory": "DataConverter",
       "description": "Decode Base64 strings to images. Preview and download in your browser. Free, no registration.",
       "featureList": ["Base64 to image conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Base64 to image", "Base64 to image", "Free Base64 to image converter"]
+      "alternateName": [
+        "Convert Base64 to image",
+        "Base64 to image",
+        "Free Base64 to image converter"
+      ]
     },
     "howTo": {
       "name": "How to convert Base64 to image",

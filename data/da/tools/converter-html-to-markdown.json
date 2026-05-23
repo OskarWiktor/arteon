@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Konverter HTML til Markdown-format. Automatisk parsing og formatering. Gratis.",
-      "featureList": ["HTML to Markdown conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert HTML to Markdown", "HTML to Markdown", "Free HTML to Markdown converter"]
+      "featureList": [
+        "HTML to Markdown conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert HTML to Markdown",
+        "HTML to Markdown",
+        "Free HTML to Markdown converter"
+      ]
     },
     "howTo": {
       "name": "Sådan konverterer du HTML til Markdown",
@@ -128,64 +136,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HTML vs Markdown – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["HTML", "Markdown"],
+      "rows": [
         {
-          "id": "html",
-          "name": "HTML"
+          "label": "Indlejrede data",
+          "values": ["✓", "—"]
         },
         {
-          "id": "markdown",
-          "name": "Markdown",
-          "highlighted": true
+          "label": "Tabeldata",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Skemavalidering",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Menneskelæsbart",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "API-standard",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Kompakt syntaks",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Indlejrede data",
-          "values": {
-            "html": true,
-            "markdown": false
-          }
-        },
-        {
-          "name": "Tabeldata",
-          "values": {
-            "html": true,
-            "markdown": true
-          }
-        },
-        {
-          "name": "Skemavalidering",
-          "values": {
-            "html": true,
-            "markdown": false
-          }
-        },
-        {
-          "name": "Menneskelæsbart",
-          "values": {
-            "html": false,
-            "markdown": true
-          }
-        },
-        {
-          "name": "API-standard",
-          "values": {
-            "html": false,
-            "markdown": false
-          }
-        },
-        {
-          "name": "Kompakt syntaks",
-          "values": {
-            "html": false,
-            "markdown": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

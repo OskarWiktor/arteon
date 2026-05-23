@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Prevedte vektorovou grafiku SVG na kompaktni rastrovy format AVIF. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
-      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
-      "alternateName": ["Převést SVG na AVIF", "Konverze SVG do AVIF", "Převodník SVG na AVIF zdarma"]
+      "featureList": [
+        "Konverze do AVIF",
+        "Nastavení kvality (60-95%)",
+        "Dávková konverze",
+        "Lokální zpracování v prohlížeči"
+      ],
+      "alternateName": [
+        "Převést SVG na AVIF",
+        "Konverze SVG do AVIF",
+        "Převodník SVG na AVIF zdarma"
+      ]
     },
     "howTo": {
       "name": "Jak převést SVG na AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs AVIF – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["SVG", "AVIF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Ztrátová komprese",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Všechny prohlížeče", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["N/A (vektor)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "svg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "svg": "Všechny prohlížeče",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "svg": "N/A (vektor)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

@@ -2,13 +2,13 @@
   "toolKey": "base64ToImage",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter Base64 na obraz - odkoduj i pobierz plik",
+    "title": "Darmowy konwerter formatu Base64 na obraz bez limitu plików i rejestracji",
     "description": "Odkoduj ciąg Base64 na obraz z podglądem i pobieraniem. Obsługa JPG, PNG, WebP, SVG, GIF. Bez rejestracji - konwersja lokalna.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-base64-na-obraz"
   },
   "hero": {
-    "title": "Odkoduj Base64 na obraz z podglądem",
+    "title": "Darmowy konwerter formatu Base64 na obraz bez limitu plików i rejestracji",
     "description": "Wklej ciąg Base64 (data URI), a narzędzie wyświetli podgląd obrazu i pozwoli go pobrać jako plik. Konwersja lokalna w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,11 +25,20 @@
   "schemas": {
     "software": {
       "name": "Konwerter Base64 na obraz - darmowy, bez rejestracji",
-      "alternateName": ["Dekodowanie Base64 na obraz", "Base64 to image decoder", "Data URI na obraz"],
+      "alternateName": [
+        "Dekodowanie Base64 na obraz",
+        "Base64 to image decoder",
+        "Data URI na obraz"
+      ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
-      "description": "Darmowy konwerter Base64 na obraz online. Odkoduj ciąg Base64 na obraz z podglądem w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Dekodowanie Base64 na obraz", "Podgląd obrazu w przeglądarce", "Pobieranie jako plik graficzny", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter Base64 na obraz. Odkoduj ciąg Base64 na obraz z podglądem w przeglądarce - dane nie są wysyłane na serwer.",
+      "featureList": [
+        "Dekodowanie Base64 na obraz",
+        "Podgląd obrazu w przeglądarce",
+        "Pobieranie jako plik graficzny",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
       "name": "Jak odkodować Base64 na obraz",

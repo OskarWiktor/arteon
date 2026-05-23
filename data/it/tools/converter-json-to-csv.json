@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire JSON in CSV?",
-      "html": "<p class=\"text-mid mb-4\">JSON e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in CSV puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file JSON nel formato CSV direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in CSV puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore gratuito trasforma i tuoi file JSON nel formato CSV direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "JSON to CSV conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs CSV – confronto dei formati",
-      "plans": [
+      "labelHeader": "Funzionalità",
+      "cols": ["JSON", "CSV"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Dati gerarchici",
+          "values": ["✓", "—"]
         },
         {
-          "id": "csv",
-          "name": "CSV",
-          "highlighted": true
+          "label": "Dati tabulari",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Validazione schema",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Leggibile dall'uomo",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Sintassi compatta",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Dati gerarchici",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Dati tabulari",
-          "values": {
-            "json": false,
-            "csv": true
-          }
-        },
-        {
-          "name": "Validazione schema",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Leggibile dall'uomo",
-          "values": {
-            "json": true,
-            "csv": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Sintassi compatta",
-          "values": {
-            "json": true,
-            "csv": true
-          }
-        }
-      ],
-      "featureLabel": "Funzionalità"
+      ]
     },
     {
       "type": "gap",

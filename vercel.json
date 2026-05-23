@@ -1,34 +1,301 @@
 {
-  "redirects": [],
+  "redirects": [
+    {
+      "source": "/narzedzia/konwerter-tailwind-css-spacing-na-px",
+      "destination": "/narzedzia",
+      "permanent": true
+    },
+    {
+      "source": "/narzedzia/konwerter-rgb-na-hsl",
+      "destination": "/narzedzia",
+      "permanent": true
+    },
+    {
+      "source": "/en/tools/rgb-to-hsl-converter",
+      "destination": "/en/tools",
+      "permanent": true
+    },
+    {
+      "source": "/de/werkzeuge/rgb-in-hsl-umrechner",
+      "destination": "/de/werkzeuge",
+      "permanent": true
+    },
+    {
+      "source": "/es/herramientas/convertidor-rgb-a-hsl",
+      "destination": "/es/herramientas",
+      "permanent": true
+    },
+    {
+      "source": "/fr/outils/convertisseur-rgb-en-hsl",
+      "destination": "/fr/outils",
+      "permanent": true
+    },
+    {
+      "source": "/pt/ferramentas/conversor-rgb-para-hsl",
+      "destination": "/pt/ferramentas",
+      "permanent": true
+    },
+    {
+      "source": "/it/strumenti/convertitore-rgb-in-hsl",
+      "destination": "/it/strumenti",
+      "permanent": true
+    },
+    {
+      "source": "/ro/instrumente/convertor-rgb-in-hsl",
+      "destination": "/ro/instrumente",
+      "permanent": true
+    },
+    {
+      "source": "/nl/tools/rgb-naar-hsl-converter",
+      "destination": "/nl/tools",
+      "permanent": true
+    },
+    {
+      "source": "/hu/eszkozok/rgb-hsl-atvalto",
+      "destination": "/hu/eszkozok",
+      "permanent": true
+    },
+    {
+      "source": "/cs/nastroje/prevodnik-rgb-na-hsl",
+      "destination": "/cs/nastroje",
+      "permanent": true
+    },
+    {
+      "source": "/sv/verktyg/rgb-till-hsl-omvandlare",
+      "destination": "/sv/verktyg",
+      "permanent": true
+    },
+    {
+      "source": "/da/vaerktojer/rgb-til-hsl-konverter",
+      "destination": "/da/vaerktojer",
+      "permanent": true
+    },
+    {
+      "source": "/no/verktoy/rgb-til-hsl-kalkulator",
+      "destination": "/no/verktoy",
+      "permanent": true
+    },
+    {
+      "source": "/fi/tyokalut/rgb-hsl-muunnin",
+      "destination": "/fi/tyokalut",
+      "permanent": true
+    },
+    {
+      "source": "/el/ergaleia/metatropeas-rgb-se-hsl",
+      "destination": "/el/ergaleia",
+      "permanent": true
+    },
+    {
+      "source": "/en/tools/tailwind-css-spacing-to-px-converter",
+      "destination": "/en/tools",
+      "permanent": true
+    },
+    {
+      "source": "/de/werkzeuge/tailwind-css-spacing-in-px-umrechner",
+      "destination": "/de/werkzeuge",
+      "permanent": true
+    },
+    {
+      "source": "/es/herramientas/convertidor-tailwind-css-spacing-a-px",
+      "destination": "/es/herramientas",
+      "permanent": true
+    },
+    {
+      "source": "/fr/outils/convertisseur-tailwind-css-spacing-en-px",
+      "destination": "/fr/outils",
+      "permanent": true
+    },
+    {
+      "source": "/pt/ferramentas/conversor-tailwind-css-spacing-para-px",
+      "destination": "/pt/ferramentas",
+      "permanent": true
+    },
+    {
+      "source": "/it/strumenti/convertitore-tailwind-css-spacing-in-px",
+      "destination": "/it/strumenti",
+      "permanent": true
+    },
+    {
+      "source": "/ro/instrumente/convertor-tailwind-css-spacing-in-px",
+      "destination": "/ro/instrumente",
+      "permanent": true
+    },
+    {
+      "source": "/nl/tools/tailwind-css-spacing-naar-px-converter",
+      "destination": "/nl/tools",
+      "permanent": true
+    },
+    {
+      "source": "/hu/eszkozok/tailwind-css-spacing-px-atvalto",
+      "destination": "/hu/eszkozok",
+      "permanent": true
+    },
+    {
+      "source": "/cs/nastroje/prevodnik-tailwind-css-spacing-na-px",
+      "destination": "/cs/nastroje",
+      "permanent": true
+    },
+    {
+      "source": "/sv/verktyg/tailwind-css-spacing-till-px-omvandlare",
+      "destination": "/sv/verktyg",
+      "permanent": true
+    },
+    {
+      "source": "/da/vaerktojer/tailwind-css-spacing-til-px-konverter",
+      "destination": "/da/vaerktojer",
+      "permanent": true
+    },
+    {
+      "source": "/no/verktoy/tailwind-css-spacing-til-px-kalkulator",
+      "destination": "/no/verktoy",
+      "permanent": true
+    },
+    {
+      "source": "/fi/tyokalut/tailwind-css-spacing-px-muunnin",
+      "destination": "/fi/tyokalut",
+      "permanent": true
+    },
+    {
+      "source": "/el/ergaleia/metatropeas-tailwind-css-spacing-se-px",
+      "destination": "/el/ergaleia",
+      "permanent": true
+    },
+    {
+      "source": "/narzedzia/konwerter-vw-na-px",
+      "destination": "/narzedzia",
+      "permanent": true
+    },
+    {
+      "source": "/en/tools/vw-to-px-converter",
+      "destination": "/en/tools",
+      "permanent": true
+    },
+    {
+      "source": "/de/werkzeuge/vw-in-px-umrechner",
+      "destination": "/de/werkzeuge",
+      "permanent": true
+    },
+    {
+      "source": "/es/herramientas/convertidor-vw-a-px",
+      "destination": "/es/herramientas",
+      "permanent": true
+    },
+    {
+      "source": "/fr/outils/convertisseur-vw-en-px",
+      "destination": "/fr/outils",
+      "permanent": true
+    },
+    {
+      "source": "/pt/ferramentas/conversor-vw-para-px",
+      "destination": "/pt/ferramentas",
+      "permanent": true
+    },
+    {
+      "source": "/it/strumenti/convertitore-vw-in-px",
+      "destination": "/it/strumenti",
+      "permanent": true
+    },
+    {
+      "source": "/ro/instrumente/convertor-vw-in-px",
+      "destination": "/ro/instrumente",
+      "permanent": true
+    },
+    {
+      "source": "/nl/tools/vw-naar-px-converter",
+      "destination": "/nl/tools",
+      "permanent": true
+    },
+    {
+      "source": "/hu/eszkozok/vw-px-atvalto",
+      "destination": "/hu/eszkozok",
+      "permanent": true
+    },
+    {
+      "source": "/cs/nastroje/prevodnik-vw-na-px",
+      "destination": "/cs/nastroje",
+      "permanent": true
+    },
+    {
+      "source": "/sv/verktyg/vw-till-px-omvandlare",
+      "destination": "/sv/verktyg",
+      "permanent": true
+    },
+    {
+      "source": "/da/vaerktojer/vw-til-px-konverter",
+      "destination": "/da/vaerktojer",
+      "permanent": true
+    },
+    {
+      "source": "/no/verktoy/vw-til-px-kalkulator",
+      "destination": "/no/verktoy",
+      "permanent": true
+    },
+    {
+      "source": "/fi/tyokalut/vw-px-muunnin",
+      "destination": "/fi/tyokalut",
+      "permanent": true
+    },
+    {
+      "source": "/el/ergaleia/metatropeas-vw-se-px",
+      "destination": "/el/ergaleia",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
-      "headers": [{ "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains; preload" }]
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains; preload"
+        }
+      ]
     },
     {
       "source": "/((?!_next|assets|fonts|favicon|sitemap|robots|ads|llms|\\.well-known).*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800"
+        }
+      ]
     },
     {
       "source": "/(en|de|es|fr|pt|it|ro|nl|hu|cs|sv|da|no|fi|el)/:path*",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=604800, stale-while-revalidate=2592000" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=604800, stale-while-revalidate=2592000"
+        }
+      ]
     },
     {
       "source": "/narzedzia/:path*",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=604800, stale-while-revalidate=2592000" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=604800, stale-while-revalidate=2592000"
+        }
+      ]
     },
     {
       "source": "/sitemap.xml",
       "headers": [
         { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=604800, stale-while-revalidate=86400" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=604800, stale-while-revalidate=86400"
+        }
       ]
     },
     {
       "source": "/sitemap-:slug.xml",
       "headers": [
         { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=604800, stale-while-revalidate=86400" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=604800, stale-while-revalidate=86400"
+        }
       ]
     },
     {

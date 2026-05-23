@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε γραφικα PNG σε επαγγελματικη μορφη TIFF. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης - χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
-      "featureList": ["Μετατροπή σε TIFF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
-      "alternateName": ["Μετατροπή PNG σε TIFF", "Μετατροπέας PNG σε TIFF", "Δωρεάν μετατροπέας PNG σε TIFF"]
+      "featureList": [
+        "Μετατροπή σε TIFF",
+        "Ρύθμιση ποιότητας (60-95%)",
+        "Ομαδική μετατροπή",
+        "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"
+      ],
+      "alternateName": [
+        "Μετατροπή PNG σε TIFF",
+        "Μετατροπέας PNG σε TIFF",
+        "Δωρεάν μετατροπέας PNG σε TIFF"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε PNG σε TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs TIFF – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["PNG", "TIFF"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["—", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": ["Όλοι οι περιηγητές", "Μόνο Safari"]
+        },
+        {
+          "label": "Βάθος χρώματος",
+          "values": ["8/16-bit", "8/16/32-bit"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "png": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "png": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "png": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "png": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "png": "Όλοι οι περιηγητές",
-            "tiff": "Μόνο Safari"
-          }
-        },
-        {
-          "name": "Βάθος χρώματος",
-          "values": {
-            "png": "8/16-bit",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "png": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "png": false,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",

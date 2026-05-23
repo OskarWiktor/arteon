@@ -153,7 +153,7 @@
     "helper": "Technický náhled – kompatibilní s Gmailem, Outlookem a většinou e-mailových klientů.",
     "copySuccess": "Zkopírováno – vložte do Gmailu",
     "copyError": "Chyba při kopírování",
-    "copyButton": "Zkopírovat podpis (Gmail / Outlook)",
+    "ButtonCopy": "Zkopírovat podpis (Gmail / Outlook)",
     "copyRawButton": "Zkopírovat HTML kód",
     "copyRawSuccess": "HTML kód zkopírován",
     "downloadButton": "Stáhnout jako HTML",

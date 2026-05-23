@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "WebP kepek konvertálása GIF formatumra maximalis kompatibilitassal. A feldolgozás a böngészőben történik - a fájlok nem hagyják el az eszközödet.",
-      "featureList": ["Konvertálás GIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
-      "alternateName": ["WEBP konvertálása GIF formátumba", "WEBP–GIF átalakítás", "Ingyenes WEBP–GIF konverter"]
+      "featureList": [
+        "Konvertálás GIF-re",
+        "Minőség beállítása (60-95%)",
+        "Kötegelt konvertálás",
+        "Helyi feldolgozás a böngészőben"
+      ],
+      "alternateName": [
+        "WEBP konvertálása GIF formátumba",
+        "WEBP–GIF átalakítás",
+        "Ingyenes WEBP–GIF konverter"
+      ]
     },
     "howTo": {
       "name": "WebP konvertálása GIF-ra",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs GIF – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["WebP", "GIF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Veszteséges tömörítés",
+          "values": ["✓", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Veszteségmentes tömörítés",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Átlátszóság (alfa csatorna)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animáció támogatás",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Böngészőtámogatás",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Minden böngésző"]
+        },
+        {
+          "label": "Színmélység",
+          "values": ["8-bit (16.7M)", "8-bit (256)"]
+        },
+        {
+          "label": "Kis fájlméret",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metaadatok (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Veszteséges tömörítés",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Veszteségmentes tömörítés",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Átlátszóság (alfa csatorna)",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animáció támogatás",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Böngészőtámogatás",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "gif": "Minden böngésző"
-          }
-        },
-        {
-          "name": "Színmélység",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Kis fájlméret",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metaadatok (EXIF)",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

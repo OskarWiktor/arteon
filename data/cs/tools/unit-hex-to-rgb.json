@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Převést HEX na RGB a naopak. Užitečné pro webdesign a CSS. Bez registrace.",
-      "featureList": ["Obousměrná konverze v reálném čase", "Všechny převodníky na jednom místě", "Kopírování výsledku do schránky", "Lokální výpočet v prohlížeči"]
+      "featureList": [
+        "Obousměrná konverze v reálném čase",
+        "Všechny převodníky na jednom místě",
+        "Kopírování výsledku do schránky",
+        "Lokální výpočet v prohlížeči"
+      ]
     },
     "howTo": {
       "name": "Jak používat převodník",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEX vs RGB",
-      "featureLabel": "Vlastnost",
-      "plans": [
+      "labelHeader": "Vlastnost",
+      "cols": ["HEX", "RGB"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "HEX"
+          "label": "Formát",
+          "values": ["#RRGGBB", "rgb(R, G, B)"]
         },
         {
-          "id": "unit2",
-          "name": "RGB",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Formát",
-          "values": {
-            "unit1": "#RRGGBB",
-            "unit2": "rgb(R, G, B)"
-          }
+          "label": "Hodnoty",
+          "values": ["00–FF (hex)", "0–255 (dek.)"]
         },
         {
-          "name": "Hodnoty",
-          "values": {
-            "unit1": "00–FF (hex)",
-            "unit2": "0–255 (dek.)"
-          }
+          "label": "Průhlednost",
+          "values": ["#RRGGBBAA", "rgba(R, G, B, A)"]
         },
         {
-          "name": "Průhlednost",
-          "values": {
-            "unit1": "#RRGGBBAA",
-            "unit2": "rgba(R, G, B, A)"
-          }
+          "label": "Zkratka",
+          "values": ["#RGB", "Žádná"]
         },
         {
-          "name": "Zkratka",
-          "values": {
-            "unit1": "#RGB",
-            "unit2": "Žádná"
-          }
-        },
-        {
-          "name": "Použití",
-          "values": {
-            "unit1": "CSS, návrhy",
-            "unit2": "CSS, programování"
-          }
+          "label": "Použití",
+          "values": ["CSS, návrhy", "CSS, programování"]
         }
       ]
     },

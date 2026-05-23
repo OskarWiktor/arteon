@@ -3,7 +3,7 @@
   "locale": "en",
   "metadata": {
     "title": "Lorem Ipsum Generator — dummy text, paragraphs, sentences & random words",
-    "description": "Free Lorem Ipsum generator online — 8 styles: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business & more. 9 generation modes. Copy as text or HTML.",
+    "description": "Free Lorem Ipsum generator — 8 styles: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business & more. 9 generation modes. Copy as text or HTML.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-en.webp",
     "path": "/tools/lorem-ipsum-generator"
   },
@@ -33,10 +33,10 @@
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
         "Business Ipsum generator",
-        "Dummy text generator online"
+        "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free Lorem Ipsum generator online — 8 styles: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business & more. 9 generation modes. Copy as text or HTML.",
+      "description": "Free Lorem Ipsum generator — 8 styles: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business & more. 9 generation modes. Copy as text or HTML.",
       "featureList": [
         "Generate lorem ipsum paragraphs",
         "Generate individual sentences",
@@ -254,122 +254,61 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Text style comparison",
-      "featureLabel": "Feature",
-      "plans": [
-        {
-          "id": "classic",
-          "name": "Lorem Ipsum",
-          "highlighted": true
-        },
-        {
-          "id": "hipster",
-          "name": "Hipster"
-        },
-        {
-          "id": "business",
-          "name": "Business"
-        },
-        {
-          "id": "polish",
-          "name": "Local"
-        },
-        {
-          "id": "bacon",
-          "name": "Bacon"
-        },
-        {
-          "id": "cupcake",
-          "name": "Cupcake"
-        },
-        {
-          "id": "pirate",
-          "name": "Pirate"
-        },
-        {
-          "id": "legal",
-          "name": "Legal"
-        }
+      "labelHeader": "Feature",
+      "cols": [
+        "Lorem Ipsum",
+        "Hipster",
+        "Business",
+        "Local",
+        "Bacon",
+        "Cupcake",
+        "Pirate",
+        "Legal"
       ],
-      "features": [
+      "rows": [
         {
-          "name": "Language",
-          "values": {
-            "classic": "Latin",
-            "hipster": "English",
-            "business": "English",
-            "polish": "Local",
-            "bacon": "English",
-            "cupcake": "English",
-            "pirate": "English",
-            "legal": "English"
-          }
+          "label": "Language",
+          "values": [
+            "Latin",
+            "English",
+            "English",
+            "Local",
+            "English",
+            "English",
+            "English",
+            "English"
+          ]
         },
         {
-          "name": "Theme",
-          "values": {
-            "classic": "Philosophy",
-            "hipster": "Lifestyle",
-            "business": "Corporate",
-            "polish": "General",
-            "bacon": "Gastronomy",
-            "cupcake": "Bakery",
-            "pirate": "Adventure",
-            "legal": "Law"
-          }
+          "label": "Theme",
+          "values": [
+            "Philosophy",
+            "Lifestyle",
+            "Corporate",
+            "General",
+            "Gastronomy",
+            "Bakery",
+            "Adventure",
+            "Law"
+          ]
         },
         {
-          "name": "Visual neutrality",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Visual neutrality",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Natural rhythm",
-          "values": {
-            "classic": true,
-            "hipster": true,
-            "business": true,
-            "polish": true,
-            "bacon": true,
-            "cupcake": true,
-            "pirate": true,
-            "legal": true
-          }
+          "label": "Natural rhythm",
+          "values": ["✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"]
         },
         {
-          "name": "Industry standard",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Industry standard",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Humour / character",
-          "values": {
-            "classic": "Neutral",
-            "hipster": "Medium",
-            "business": "Low",
-            "polish": "Low",
-            "bacon": "High",
-            "cupcake": "High",
-            "pirate": "High",
-            "legal": "Low"
-          }
+          "label": "Humour / character",
+          "values": ["Neutral", "Medium", "Low", "Low", "High", "High", "High", "Low"]
         }
       ]
     },

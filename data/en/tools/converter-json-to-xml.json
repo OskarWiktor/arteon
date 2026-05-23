@@ -139,64 +139,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs XML – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["JSON", "XML"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Nested/hierarchical data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "xml",
-          "name": "XML",
-          "highlighted": true
+          "label": "Tabular data",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Schema validation",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Human readable",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API standard",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Compact syntax",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Nested/hierarchical data",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Tabular data",
-          "values": {
-            "json": false,
-            "xml": false
-          }
-        },
-        {
-          "name": "Schema validation",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Human readable",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "API standard",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Compact syntax",
-          "values": {
-            "json": true,
-            "xml": false
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

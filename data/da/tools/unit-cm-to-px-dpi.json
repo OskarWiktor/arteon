@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Konverter cm til pixels (DPI) og omvendt. Nyttig til trykdesign og billedforberedelse. Ingen registrering krævet.",
-      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+      "featureList": [
+        "Tovejs-konvertering i realtid",
+        "Alle konvertere samlet ét sted",
+        "Kopier resultat til udklipsholder",
+        "Lokal beregning i browseren"
+      ]
     },
     "howTo": {
       "name": "Sådan bruger du konverteren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI-opløsninger sammenlignet",
-      "featureLabel": "Egenskab",
-      "plans": [
+      "labelHeader": "Egenskab",
+      "cols": ["300 DPI (tryk)", "72 DPI (skærm)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "300 DPI (tryk)"
+          "label": "10 cm",
+          "values": ["1.181 px", "283 px"]
         },
         {
-          "id": "unit2",
-          "name": "72 DPI (skærm)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "10 cm",
-          "values": {
-            "unit1": "1.181 px",
-            "unit2": "283 px"
-          }
+          "label": "A4 bredde",
+          "values": ["2.480 px", "595 px"]
         },
         {
-          "name": "A4 bredde",
-          "values": {
-            "unit1": "2.480 px",
-            "unit2": "595 px"
-          }
+          "label": "A4 højde",
+          "values": ["3.508 px", "842 px"]
         },
         {
-          "name": "A4 højde",
-          "values": {
-            "unit1": "3.508 px",
-            "unit2": "842 px"
-          }
+          "label": "Anvendelse",
+          "values": ["Professionelt tryk", "Webgrafik"]
         },
         {
-          "name": "Anvendelse",
-          "values": {
-            "unit1": "Professionelt tryk",
-            "unit2": "Webgrafik"
-          }
-        },
-        {
-          "name": "Kvalitet",
-          "values": {
-            "unit1": "Skarp i alle størrelser",
-            "unit2": "Kun til skærm"
-          }
+          "label": "Kvalitet",
+          "values": ["Skarp i alle størrelser", "Kun til skærm"]
         }
       ]
     },

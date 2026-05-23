@@ -2,7 +2,14 @@
 
 import { createContext, useContext, type ReactNode } from 'react';
 
-import type { Locale, LocaleConfig, NavigationUi, FooterUi, DesktopOnlyUi, LegalLink } from '@/types/locale';
+import type {
+  Locale,
+  LocaleConfig,
+  NavigationUi,
+  FooterUi,
+  DesktopOnlyUi,
+  LegalLink,
+} from '@/types/locale';
 export type { Locale } from '@/types/locale';
 
 export interface ClientDictionary {
@@ -153,7 +160,7 @@ interface LocaleProviderProps {
 }
 
 export function LocaleProvider({ value, config, dict, children }: LocaleProviderProps) {
-  const ctx = ({ locale: value, config, dict });
+  const ctx = { locale: value, config, dict };
   return <LocaleContext.Provider value={ctx}>{children}</LocaleContext.Provider>;
 }
 

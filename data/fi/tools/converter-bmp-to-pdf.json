@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs PDF – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["BMP", "PDF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Häviöllinen pakkaus",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Häviötön pakkaus",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Läpinäkyvyys (alfakanava)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animaatiotuki",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Selaintuki",
+          "values": ["Kaikki selaimet", "Sisäänrakennettu PDF-katselin"]
+        },
+        {
+          "label": "Pieni tiedostokoko",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metatiedot (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Häviöllinen pakkaus",
-          "values": {
-            "bmp": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Häviötön pakkaus",
-          "values": {
-            "bmp": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Läpinäkyvyys (alfakanava)",
-          "values": {
-            "bmp": false,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Animaatiotuki",
-          "values": {
-            "bmp": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Selaintuki",
-          "values": {
-            "bmp": "Kaikki selaimet",
-            "pdf": "Sisäänrakennettu PDF-katselin"
-          }
-        },
-        {
-          "name": "Pieni tiedostokoko",
-          "values": {
-            "bmp": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metatiedot (EXIF)",
-          "values": {
-            "bmp": false,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

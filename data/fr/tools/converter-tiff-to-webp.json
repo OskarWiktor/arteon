@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les fichiers TIFF en WebP leger. Enorme reduction avec qualite preservee. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
-      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convertir TIFF en WEBP", "Conversion TIFF vers WEBP", "Convertisseur TIFF en WEBP gratuit"]
+      "featureList": [
+        "TIFF to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convertir TIFF en WEBP",
+        "Conversion TIFF vers WEBP",
+        "Convertisseur TIFF en WEBP gratuit"
+      ]
     },
     "howTo": {
       "name": "TIFF to WebP",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs WebP – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["TIFF", "WebP"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Compression avec perte",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compression sans perte",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparence (canal alpha)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Prise en charge de l'animation",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Prise en charge des navigateurs",
+          "values": ["Safari uniquement", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Profondeur de couleur",
+          "values": ["8/16/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Taille de fichier compacte",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Métadonnées (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compression avec perte",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compression sans perte",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparence (canal alpha)",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Prise en charge de l'animation",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Prise en charge des navigateurs",
-          "values": {
-            "tiff": "Safari uniquement",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Profondeur de couleur",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Taille de fichier compacte",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Métadonnées (EXIF)",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

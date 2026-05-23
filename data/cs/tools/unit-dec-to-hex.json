@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Převést decimal na hexadecimal a naopak. Užitečné pro webové barvy a programování. Bez registrace.",
-      "featureList": ["Obousměrná konverze v reálném čase", "Všechny převodníky na jednom místě", "Kopírování výsledku do schránky", "Lokální výpočet v prohlížeči"]
+      "featureList": [
+        "Obousměrná konverze v reálném čase",
+        "Všechny převodníky na jednom místě",
+        "Kopírování výsledku do schránky",
+        "Lokální výpočet v prohlížeči"
+      ]
     },
     "howTo": {
       "name": "Jak používat převodník",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Desítková vs Šestnáctková",
-      "featureLabel": "Vlastnost",
-      "plans": [
+      "labelHeader": "Vlastnost",
+      "cols": ["Desítková", "Šestnáctková"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Desítková"
+          "label": "Číslice",
+          "values": ["0–9", "0–9, A–F"]
         },
         {
-          "id": "unit2",
-          "name": "Šestnáctková",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Číslice",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–9, A–F"
-          }
+          "label": "Příklad: 255",
+          "values": ["255", "FF"]
         },
         {
-          "name": "Příklad: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "FF"
-          }
+          "label": "Příklad: 1000",
+          "values": ["1000", "3E8"]
         },
         {
-          "name": "Příklad: 1000",
-          "values": {
-            "unit1": "1000",
-            "unit2": "3E8"
-          }
+          "label": "Použití",
+          "values": ["Běžný počet", "Barvy, adresy"]
         },
         {
-          "name": "Použití",
-          "values": {
-            "unit1": "Běžný počet",
-            "unit2": "Barvy, adresy"
-          }
-        },
-        {
-          "name": "Kompaktnost",
-          "values": {
-            "unit1": "Standardní",
-            "unit2": "Kompaktnější než binární"
-          }
+          "label": "Kompaktnost",
+          "values": ["Standardní", "Kompaktnější než binární"]
         }
       ]
     },

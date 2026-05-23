@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Rechnen Sie CSS-em-Einheiten in Pixel um. Stellen Sie die Basisschriftgröße ein für responsives Webdesign.",
-      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+      "featureList": [
+        "Bidirektionale Echtzeit-Konvertierung",
+        "Alle Konverter an einem Ort",
+        "Ergebnis in die Zwischenablage kopieren",
+        "Lokale Berechnung im Browser"
+      ]
     },
     "howTo": {
       "name": "So verwenden Sie den Konverter em na px",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "em vs px vs rem",
-      "featureLabel": "Eigenschaft",
-      "plans": [
+      "labelHeader": "Eigenschaft",
+      "cols": ["em", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "em"
+          "label": "Bezug",
+          "values": ["Eltern-Schriftgröße", "Fester Pixel"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Bezug",
-          "values": {
-            "unit1": "Eltern-Schriftgröße",
-            "unit2": "Fester Pixel"
-          }
+          "label": "Kaskadiert",
+          "values": ["Ja (verschachtelt)", "Nein"]
         },
         {
-          "name": "Kaskadiert",
-          "values": {
-            "unit1": "Ja (verschachtelt)",
-            "unit2": "Nein"
-          }
+          "label": "Responsiv",
+          "values": ["Ja", "Nein"]
         },
         {
-          "name": "Responsiv",
-          "values": {
-            "unit1": "Ja",
-            "unit2": "Nein"
-          }
+          "label": "Barrierefreiheit",
+          "values": ["Respektiert Einstellungen", "Feste Größe"]
         },
         {
-          "name": "Barrierefreiheit",
-          "values": {
-            "unit1": "Respektiert Einstellungen",
-            "unit2": "Feste Größe"
-          }
-        },
-        {
-          "name": "Vorhersagbarkeit",
-          "values": {
-            "unit1": "Kontextabhängig",
-            "unit2": "Immer konstant"
-          }
+          "label": "Vorhersagbarkeit",
+          "values": ["Kontextabhängig", "Immer konstant"]
         }
       ]
     },

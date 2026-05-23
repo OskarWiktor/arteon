@@ -116,9 +116,9 @@ White background, centered, left-aligned content:
 Include physical address, unsubscribe link, current year:
 
 ```tsx
-<Section className="text-center text-sm text-gray-500">
-  <Text className="m-0">123 Main St, City, State 12345</Text>
-  <Text className="m-0">&copy; {new Date().getFullYear()} Company Name</Text>
+<Section className='text-center text-sm text-gray-500'>
+  <Text className='m-0'>123 Main St, City, State 12345</Text>
+  <Text className='m-0'>&copy; {new Date().getFullYear()} Company Name</Text>
   <Link href={unsubscribeUrl}>Unsubscribe</Link>
 </Section>
 ```
@@ -156,7 +156,7 @@ Use consistent spacing that respects content hierarchy. Larger margins for headi
 - Include `alt` text for accessibility
 
 ```tsx
-<Img src="https://example.com/image.png" alt="Description" className="h-auto w-full" />
+<Img src='https://example.com/image.png' alt='Description' className='h-auto w-full' />
 ```
 
 ## Buttons
@@ -164,7 +164,10 @@ Use consistent spacing that respects content hierarchy. Larger margins for headi
 Always use `box-border` to prevent padding overflow:
 
 ```tsx
-<Button href="https://example.com" className="box-border block rounded bg-blue-600 px-5 py-3 text-center text-white no-underline">
+<Button
+  href='https://example.com'
+  className='box-border block rounded bg-blue-600 px-5 py-3 text-center text-white no-underline'
+>
   Click Here
 </Button>
 ```
@@ -185,8 +188,8 @@ Use `Row` and `Column` components instead of flexbox/grid:
 
 ```tsx
 <Row>
-  <Column className="w-1/2">Left content</Column>
-  <Column className="w-1/2">Right content</Column>
+  <Column className='w-1/2'>Left content</Column>
+  <Column className='w-1/2'>Right content</Column>
 </Row>
 ```
 
@@ -255,10 +258,10 @@ Import the shared config in every email template:
 import tailwindConfig, { brandAssets } from './tailwind.config';
 
 <Tailwind config={tailwindConfig}>
-  <Body className="bg-gray-100 font-sans">
-    <Container className="bg-white p-6">
+  <Body className='bg-gray-100 font-sans'>
+    <Container className='bg-white p-6'>
       <Img src={brandAssets.logo.src} alt={brandAssets.logo.alt} width={brandAssets.logo.width} />
-      <Button className="bg-brand-primary text-white">Action</Button>
+      <Button className='bg-brand-primary text-white'>Action</Button>
     </Container>
   </Body>
 </Tailwind>;

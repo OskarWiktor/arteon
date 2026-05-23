@@ -153,7 +153,7 @@
     "helper": "Podgląd techniczny - zgodny z Gmail, Outlook i większością klientów pocztowych.",
     "copySuccess": "Skopiowano - wklej w Gmailu",
     "copyError": "Błąd kopiowania",
-    "copyButton": "Kopiuj stopkę (Gmail / Outlook)",
+    "ButtonCopy": "Kopiuj stopkę (Gmail / Outlook)",
     "copyRawButton": "Kopiuj kod HTML",
     "copyRawSuccess": "Kod HTML skopiowany",
     "downloadButton": "Pobierz jako HTML",

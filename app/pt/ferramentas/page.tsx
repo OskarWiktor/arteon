@@ -1,10 +1,10 @@
-import HeroBanner from '@/components/sections/HeroBanner';
-import Button from '@/components/ui/buttons/Button';
-import Gap from '@/components/ui/Gap';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import FaqPanels from '@/components/ui/FaqPanels';
-import Wrapper from '@/components/ui/Wrapper';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import Divider from '@/components/atoms/Divider';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import FaqPanels from '@/components/molecules/FaqPanels';
+import Wrapper from '@/components/atoms/Wrapper';
 import Script from 'next/script';
 import {
   RiCropLine,
@@ -26,12 +26,12 @@ import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
-  title: 'Ferramentas online gratuitas | Conversores, SEO, cores, favicon',
+  title: 'Ferramentas gratuitas | Conversores, SEO, cores, favicon',
   description:
     'Ferramentas gratuitas: Conversores de imagens (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), gerador de favicon, editor de imagens, contador de texto, paletas de cores e códigos QR. Sem registo.',
   alternates: getToolsIndexAlternates('pt'),
   openGraph: {
-    title: 'Ferramentas online gratuitas | Conversores, SEO, cores, favicon',
+    title: 'Ferramentas gratuitas | Conversores, SEO, cores, favicon',
     description:
       'Ferramentas gratuitas: Conversores de imagens (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), gerador de favicon, editor de imagens, contador de texto, paletas de cores e códigos QR. Sem registo.',
     url: toAbsoluteUrl('/pt/ferramentas'),
@@ -46,7 +46,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 35,
         name: 'Conversor JPG para AVIF',
-        description: 'Converta fotos JPG para AVIF moderno. Compressao ate 50% melhor que JPG mantendo a qualidade.',
+        description:
+          'Converta fotos JPG para AVIF moderno. Compressao ate 50% melhor que JPG mantendo a qualidade.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-jpg-para-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -55,7 +56,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 36,
         name: 'Conversor PNG para AVIF',
-        description: 'Converta graficos PNG para AVIF com suporte a transparencia. Ficheiros significativamente menores.',
+        description:
+          'Converta graficos PNG para AVIF com suporte a transparencia. Ficheiros significativamente menores.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-png-para-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -64,7 +66,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 37,
         name: 'Conversor WebP para AVIF',
-        description: 'Converta ficheiros WebP para AVIF. Compressao ainda melhor num formato moderno.',
+        description:
+          'Converta ficheiros WebP para AVIF. Compressao ainda melhor num formato moderno.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-webp-para-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -91,7 +94,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 40,
         name: 'Conversor GIF para AVIF',
-        description: 'Converta o primeiro quadro GIF para imagem AVIF estatica com excelente compressao.',
+        description:
+          'Converta o primeiro quadro GIF para imagem AVIF estatica com excelente compressao.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-gif-para-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -109,7 +113,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 42,
         name: 'Conversor TIFF para AVIF',
-        description: 'Converta ficheiros TIFF para AVIF moderno. Reducao massiva do tamanho do ficheiro.',
+        description:
+          'Converta ficheiros TIFF para AVIF moderno. Reducao massiva do tamanho do ficheiro.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-tiff-para-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -118,7 +123,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 43,
         name: 'Conversor JPG para GIF',
-        description: 'Converta fotos JPG para formato GIF. Perfeito para graficos simples e icones.',
+        description:
+          'Converta fotos JPG para formato GIF. Perfeito para graficos simples e icones.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-jpg-para-gif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -220,7 +226,7 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Ferramentas online gratuitas - conversores de imagens, SEO, cores, favicon',
+  name: 'Ferramentas gratuitas - conversores de imagens, SEO, cores, favicon',
   description:
     'Ferramentas gratuitas: Conversores de imagens (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), gerador de favicon, editor de imagens, contador de texto, paletas de cores e códigos QR. Sem registo.',
   url: toAbsoluteUrl('/pt/ferramentas'),
@@ -234,7 +240,7 @@ const schema = {
     { '@type': 'Thing', name: 'Otimização de imagens' },
     { '@type': 'Thing', name: 'SEO' },
     { '@type': 'Thing', name: 'Cores e branding' },
-    { '@type': 'Thing', name: 'Geradores online' },
+    { '@type': 'Thing', name: 'Geradores' },
   ],
   mainEntity: {
     '@type': 'ItemList',
@@ -243,8 +249,9 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 1,
-        name: 'Conversor JPG e PNG para WebP online',
-        description: 'Conversor online gratuito de JPG e PNG para WebP. Reduz o peso dos ficheiros até 35 % sem perda de qualidade visível. Sem registo – os ficheiros permanecem no seu navegador.',
+        name: 'Conversor JPG e PNG para WebP',
+        description:
+          'Conversor gratuito de JPG e PNG para WebP. Reduz o peso dos ficheiros até 35 % sem perda de qualidade visível. Sem registo – os ficheiros permanecem no seu navegador.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-jpg-para-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -252,8 +259,9 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 2,
-        name: 'Editor de imagens online',
-        description: 'Recorte e redimensione as suas imagens para redes sociais e sites. Modelos prontos a usar, dimensões personalizadas e avatares redondos.',
+        name: 'Editor de imagens',
+        description:
+          'Recorte e redimensione as suas imagens para redes sociais e sites. Modelos prontos a usar, dimensões personalizadas e avatares redondos.',
         url: toAbsoluteUrl('/pt/ferramentas/editor-de-imagens-online'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -261,8 +269,9 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 3,
-        name: 'Gerador de favicon online',
-        description: 'Gerador de favicon gratuito. Cria favicon.ico e ícones PNG (16×16 a 512×512) a partir de uma única imagem – compatível com todos os navegadores e Lighthouse.',
+        name: 'Gerador de favicon',
+        description:
+          'Gerador de favicon gratuito. Cria favicon.ico e ícones PNG (16×16 a 512×512) a partir de uma única imagem – compatível com todos os navegadores e Lighthouse.',
         url: toAbsoluteUrl('/pt/ferramentas/gerador-de-favicon-gratuito'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -281,7 +290,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 5,
         name: 'Gerador de assinatura de e-mail HTML',
-        description: 'Gerador gratuito de assinatura de e-mail HTML. Preencha os seus dados de contacto, link CTA e perfis de redes sociais, depois copie o código HTML para o Gmail ou Outlook.',
+        description:
+          'Gerador gratuito de assinatura de e-mail HTML. Preencha os seus dados de contacto, link CTA e perfis de redes sociais, depois copie o código HTML para o Gmail ou Outlook.',
         url: toAbsoluteUrl('/pt/ferramentas/gerador-de-assinatura-de-email-gratuito'),
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Any',
@@ -290,7 +300,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 6,
         name: 'Verificador de contraste e legibilidade de cores',
-        description: 'Verifica o contraste e a legibilidade das cores de texto e fundo segundo as WCAG. Calcula o rácio de contraste e propõe ajuste automático.',
+        description:
+          'Verifica o contraste e a legibilidade das cores de texto e fundo segundo as WCAG. Calcula o rácio de contraste e propõe ajuste automático.',
         url: toAbsoluteUrl('/pt/ferramentas/verificador-de-contraste-de-cores'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -298,8 +309,9 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 7,
-        name: 'Extrator de cores de imagem online',
-        description: 'Extrator de cores gratuito. Importe uma foto ou logótipo e obtenha uma paleta de até 12 cores dominantes (HEX e RGB).',
+        name: 'Extrator de cores de imagem',
+        description:
+          'Extrator de cores gratuito. Importe uma foto ou logótipo e obtenha uma paleta de até 12 cores dominantes (HEX e RGB).',
         url: toAbsoluteUrl('/pt/ferramentas/extrator-de-cores-de-imagem'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -307,8 +319,9 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 8,
-        name: 'Gerador de paletas de cores online',
-        description: 'Gere paletas a partir de uma cor de base. Monocromática, triádica, análoga, complementar e mais – com variantes pastel, escura e minimalista.',
+        name: 'Gerador de paletas de cores',
+        description:
+          'Gere paletas a partir de uma cor de base. Monocromática, triádica, análoga, complementar e mais – com variantes pastel, escura e minimalista.',
         url: toAbsoluteUrl('/pt/ferramentas/gerador-de-paletas-de-cores'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -316,7 +329,7 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 9,
-        name: 'Contador de palavras e caracteres online',
+        name: 'Contador de palavras e caracteres',
         description:
           'Contador de palavras e caracteres gratuito com avaliação do comprimento. Verifique se o comprimento do texto é adequado para uma página inicial, página de serviço, artigo de blog ou ficha de produto.',
         url: toAbsoluteUrl('/pt/ferramentas/contador-de-palavras-e-caracteres'),
@@ -326,8 +339,9 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 10,
-        name: 'Gerador de códigos QR online',
-        description: 'Gerador de códigos QR gratuito. Crie códigos QR para sites, vCards, menus ou flyers. Exportação em PNG e SVG, sem registo, sem limite.',
+        name: 'Gerador de códigos QR',
+        description:
+          'Gerador de códigos QR gratuito. Crie códigos QR para sites, vCards, menus ou flyers. Exportação em PNG e SVG, sem registo, sem limite.',
         url: toAbsoluteUrl('/pt/ferramentas/gerador-de-codigos-qr-gratuito'),
         applicationCategory: 'UtilityApplication',
         operatingSystem: 'Any',
@@ -345,7 +359,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 12,
         name: 'Conversor PNG para JPG',
-        description: 'Converta ficheiros PNG para JPG no navegador. Sem limite de ficheiros, sem registo.',
+        description:
+          'Converta ficheiros PNG para JPG no navegador. Sem limite de ficheiros, sem registo.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-png-para-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -354,7 +369,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 13,
         name: 'Conversor WebP para JPG',
-        description: 'Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo.',
+        description:
+          'Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-webp-para-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -381,7 +397,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 16,
         name: 'Conversor WebP para PNG',
-        description: 'Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.',
+        description:
+          'Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-webp-para-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -390,7 +407,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 17,
         name: 'Conversor SVG para PNG',
-        description: 'Converta gráficos vetoriais SVG para PNG. Ideal para documentos e redes sociais.',
+        description:
+          'Converta gráficos vetoriais SVG para PNG. Ideal para documentos e redes sociais.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-svg-para-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -399,7 +417,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 18,
         name: 'Conversor SVG para JPG',
-        description: 'Converta gráficos SVG para JPG compacto. Ficheiro menor, compatibilidade total.',
+        description:
+          'Converta gráficos SVG para JPG compacto. Ficheiro menor, compatibilidade total.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-svg-para-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -417,7 +436,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 20,
         name: 'Conversor BMP para PNG',
-        description: 'Converta imagens BMP para PNG sem perdas. Qualidade preservada, tamanho reduzido.',
+        description:
+          'Converta imagens BMP para PNG sem perdas. Qualidade preservada, tamanho reduzido.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-bmp-para-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -426,7 +446,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 21,
         name: 'Conversor GIF para PNG',
-        description: 'Exporte o primeiro fotograma de um GIF como PNG estático. Sem perdas de qualidade.',
+        description:
+          'Exporte o primeiro fotograma de um GIF como PNG estático. Sem perdas de qualidade.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-gif-para-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -559,7 +580,8 @@ const faqItems = [
   },
   {
     question: 'Os meus ficheiros são enviados para um servidor?',
-    answer: 'Não. Todas as ferramentas funcionam inteiramente no seu navegador. Os ficheiros nunca saem do seu computador e não são armazenados em lado nenhum.',
+    answer:
+      'Não. Todas as ferramentas funcionam inteiramente no seu navegador. Os ficheiros nunca saem do seu computador e não são armazenados em lado nenhum.',
   },
   {
     question: 'Tenho de criar uma conta?',
@@ -567,7 +589,8 @@ const faqItems = [
   },
   {
     question: 'Existe um limite de utilização?',
-    answer: 'Não. Utilize as ferramentas sem restrições – sem limite diário, sem limite de ficheiros, sem limite de conversões.',
+    answer:
+      'Não. Utilize as ferramentas sem restrições – sem limite diário, sem limite de ficheiros, sem limite de conversões.',
   },
   {
     question: 'Para que servem estas ferramentas?',
@@ -576,7 +599,8 @@ const faqItems = [
   },
   {
     question: 'As ferramentas funcionam no telemóvel?',
-    answer: 'Sim, mas algumas ferramentas (por ex. o conversor WebP e o gerador de favicon) estão otimizadas para computador, pois processam ficheiros volumosos.',
+    answer:
+      'Sim, mas algumas ferramentas (por ex. o conversor WebP e o gerador de favicon) estão otimizadas para computador, pois processam ficheiros volumosos.',
   },
 ];
 
@@ -584,111 +608,128 @@ export default function ToolsIndexPage() {
   return (
     <>
       <HeroBanner
-        title="Ferramentas online gratuitas"
-        description="Conversores de formatos de imagem, editor de imagens, gerador de favicon, contador de texto, ferramentas de cor e códigos QR. Sem registo, sem limites."
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
-        overlay="black"
+        title='Ferramentas gratuitas'
+        description='Conversores de formatos de imagem, editor de imagens, gerador de favicon, contador de texto, ferramentas de cor e códigos QR. Sem registo, sem limites.'
+        backgroundImage='/assets/arteon-logo-on-mockup.webp'
+        overlay='black'
       />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Imagens e favicons"
-          description="Ferramentas para preparar fotos, gráficos e ícones para sites e redes sociais."
-          grid="three"
+          title='Imagens e favicons'
+          description='Ferramentas para preparar fotos, gráficos e ícones para sites e redes sociais.'
+          grid='three'
           items={[
             {
-              icon: <RiCropLine className="h-8 w-8" />,
-              title: 'Editor de imagens online',
-              topImageAlt: 'Editor de imagens online Arteon',
-              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagens-online-pt.webp',
+              icon: <RiCropLine className='h-8 w-8' />,
+              title: 'Editor de imagens',
+              topImageAlt: 'Editor de imagens Arteon',
+              topImageSrc:
+                '/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagens-online-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Prepare o corte perfeito para redes sociais ou o seu site. Escolha um formato predefinido ou introduza dimensões personalizadas e descarregue a imagem em PNG, JPG ou WebP.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/editor-de-imagens-online">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Prepare o corte perfeito para redes sociais ou o seu site. Escolha um formato
+                    predefinido ou introduza dimensões personalizadas e descarregue a imagem em PNG,
+                    JPG ou WebP.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/editor-de-imagens-online'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiAppsLine className="h-8 w-8" />,
+              icon: <RiAppsLine className='h-8 w-8' />,
               title: 'Gerador de favicon',
               topImageAlt: 'Gerador de favicon Arteon',
               topImageSrc: '/assets/tools/favicon-generator/gerador-de-favicon-gratuito-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Gere <strong>favicon.ico</strong> e ícones PNG 180x180, 192x192 e 512x512 a partir de uma única imagem – conforme às exigências dos navegadores e do Lighthouse.
+                    Gere <strong>favicon.ico</strong> e ícones PNG 180x180, 192x192 e 512x512 a
+                    partir de uma única imagem – conforme às exigências dos navegadores e do
+                    Lighthouse.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/gerador-de-favicon-gratuito">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/gerador-de-favicon-gratuito'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Texto e SEO"
-          description="Ferramentas para verificar o comprimento de texto, as tags meta e pré-visualizar a sua página nos resultados de pesquisa."
-          grid="three"
+          title='Texto e SEO'
+          description='Ferramentas para verificar o comprimento de texto, as tags meta e pré-visualizar a sua página nos resultados de pesquisa.'
+          grid='three'
           items={[
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
+              icon: <RiFileTextLine className='h-8 w-8' />,
               title: 'Verificador de meta título e descrição',
               topImageAlt: 'Verificador de meta título e descrição Arteon',
-              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/verificador-de-meta-titulo-e-descricao-pt.webp',
+              topImageSrc:
+                '/assets/tools/free-meta-title-and-description-checker-pixel-width/verificador-de-meta-titulo-e-descricao-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Verifique o número de caracteres, palavras e a largura em píxeis – com pré-visualização da aparência da sua página nos resultados Google. Evite títulos e descrições truncados.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/verificador-de-meta-titulo-e-descricao">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Verifique o número de caracteres, palavras e a largura em píxeis – com
+                    pré-visualização da aparência da sua página nos resultados Google. Evite títulos
+                    e descrições truncados.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/verificador-de-meta-titulo-e-descricao'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiArticleLine className="h-8 w-8" />,
+              icon: <RiArticleLine className='h-8 w-8' />,
               title: 'Contador de palavras e caracteres',
               topImageAlt: 'Contador de palavras e caracteres Arteon',
-              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp',
+              topImageSrc:
+                '/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Verifique se o comprimento do texto é adequado para uma página inicial, página de serviço, artigo de blog ou ficha de produto. A ferramenta conta palavras, caracteres, parágrafos e
-                    estima o tempo de leitura.
+                    Verifique se o comprimento do texto é adequado para uma página inicial, página
+                    de serviço, artigo de blog ou ficha de produto. A ferramenta conta palavras,
+                    caracteres, parágrafos e estima o tempo de leitura.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/contador-de-palavras-e-caracteres">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/contador-de-palavras-e-caracteres'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
 
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
+              icon: <RiFileTextLine className='h-8 w-8' />,
               title: 'Gerador Lorem Ipsum',
               topImageAlt: 'Gerador Lorem Ipsum Arteon',
               topImageSrc: '/assets/tools/lorem-ipsum-generator/gerador-lorem-ipsum-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Gere texto de preenchimento em 8 estilos e 9 modos. Lorem Ipsum, Hipster, Business, Bacon e mais. Copie como texto ou HTML.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/gerador-lorem-ipsum">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Gere texto de preenchimento em 8 estilos e 9 modos. Lorem Ipsum, Hipster,
+                    Business, Bacon e mais. Copie como texto ou HTML.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/gerador-lorem-ipsum'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -696,27 +737,33 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="E-mail e comunicação"
-          description="Ferramentas para comunicação por e-mail profissional e imagem de marca coerente."
-          grid="three"
+          title='E-mail e comunicação'
+          description='Ferramentas para comunicação por e-mail profissional e imagem de marca coerente.'
+          grid='three'
           items={[
             {
-              icon: <RiMailLine className="h-8 w-8" />,
+              icon: <RiMailLine className='h-8 w-8' />,
               title: 'Gerador de assinatura de e-mail HTML gratuito',
               topImageAlt: 'Gerador de assinatura de e-mail HTML gratuito Arteon',
-              topImageSrc: '/assets/tools/free-html-email-signature-generator/gerador-de-assinatura-de-email-gratuito-pt.webp',
+              topImageSrc:
+                '/assets/tools/free-html-email-signature-generator/gerador-de-assinatura-de-email-gratuito-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Crie uma assinatura de e-mail profissional em minutos. Preencha os seus dados, escolha as cores e copie o código HTML para o Gmail, Outlook ou qualquer outro cliente de e-mail.
+                    Crie uma assinatura de e-mail profissional em minutos. Preencha os seus dados,
+                    escolha as cores e copie o código HTML para o Gmail, Outlook ou qualquer outro
+                    cliente de e-mail.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/gerador-de-assinatura-de-email-gratuito">
+                  <div className='mt-4'>
+                    <ButtonLink
+                      arrow
+                      href='/pt/ferramentas/gerador-de-assinatura-de-email-gratuito'
+                    >
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -724,25 +771,28 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Códigos QR"
-          description="Gerador de códigos QR para sites, cartões de visita, menus e suportes impressos."
-          grid="three"
+          title='Códigos QR'
+          description='Gerador de códigos QR para sites, cartões de visita, menus e suportes impressos.'
+          grid='three'
           items={[
             {
-              icon: <RiQrCodeLine className="h-8 w-8" />,
+              icon: <RiQrCodeLine className='h-8 w-8' />,
               title: 'Gerador de códigos QR gratuito',
               topImageAlt: 'Gerador de códigos QR gratuito Arteon',
               topImageSrc: '/assets/tools/qr-code-generator/gerador-de-codigos-qr-gratuito-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Crie um código QR para um site, vCard, menu ou flyer. Exportação em PNG e SVG – sem registo, sem limite.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/gerador-de-codigos-qr-gratuito">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Crie um código QR para um site, vCard, menu ou flyer. Exportação em PNG e SVG –
+                    sem registo, sem limite.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/gerador-de-codigos-qr-gratuito'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -750,60 +800,70 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Cores e acessibilidade"
-          description="Ferramentas para trabalhar com cores, contraste e acessibilidade WCAG."
-          grid="three"
+          title='Cores e acessibilidade'
+          description='Ferramentas para trabalhar com cores, contraste e acessibilidade WCAG.'
+          grid='three'
           items={[
             {
-              icon: <RiContrast2Line className="h-8 w-8" />,
+              icon: <RiContrast2Line className='h-8 w-8' />,
               title: 'Verificador de contraste e legibilidade',
               topImageAlt: 'Verificador de contraste de cores Arteon',
-              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/verificador-de-contraste-de-cores-pt.webp',
+              topImageSrc:
+                '/assets/tools/color-contrast-and-readability-checker/verificador-de-contraste-de-cores-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Verifique se as suas cores de texto e fundo são legíveis. Introduza os códigos de cor, consulte o rácio de contraste <strong>WCAG</strong> e utilize a função{' '}
+                    Verifique se as suas cores de texto e fundo são legíveis. Introduza os códigos
+                    de cor, consulte o rácio de contraste <strong>WCAG</strong> e utilize a função{' '}
                     <strong>Ajustar</strong> para correção automática.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/verificador-de-contraste-de-cores">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/verificador-de-contraste-de-cores'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiPantoneLine className="h-8 w-8" />,
+              icon: <RiPantoneLine className='h-8 w-8' />,
               title: 'Extrator de cores de imagem',
               topImageAlt: 'Extrator de cores de imagem Arteon',
-              topImageSrc: '/assets/tools/image-color-extractor/extrator-de-cores-de-imagem-pt.webp',
+              topImageSrc:
+                '/assets/tools/image-color-extractor/extrator-de-cores-de-imagem-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Importe uma foto ou logótipo – a ferramenta extrairá as cores dominantes. Copie os códigos HEX com um clique e utilize-os em qualquer lugar.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/extrator-de-cores-de-imagem">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Importe uma foto ou logótipo – a ferramenta extrairá as cores dominantes. Copie
+                    os códigos HEX com um clique e utilize-os em qualquer lugar.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/extrator-de-cores-de-imagem'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiPaletteLine className="h-8 w-8" />,
+              icon: <RiPaletteLine className='h-8 w-8' />,
               title: 'Gerador de paletas de cores',
               topImageAlt: 'Gerador de paletas de cores Arteon',
-              topImageSrc: '/assets/tools/color-palette-generator/gerador-de-paletas-de-cores-pt.webp',
+              topImageSrc:
+                '/assets/tools/color-palette-generator/gerador-de-paletas-de-cores-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Escolha uma cor de base e gere 9 paletas: monocromática, complementar, triádica, pastel, escura e mais. Copie os códigos HEX com um clique.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/gerador-de-paletas-de-cores">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Escolha uma cor de base e gere 9 paletas: monocromática, complementar, triádica,
+                    pastel, escura e mais. Copie os códigos HEX com um clique.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/gerador-de-paletas-de-cores'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -811,210 +871,234 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Conversores de formatos de imagem"
-          description="Conversores de imagens online - converta entre JPG, PNG, WebP, SVG, BMP e GIF. Conversão no navegador, sem envio de ficheiros."
-          grid="three"
+          title='Conversores de formatos de imagem'
+          description='Conversores de imagens - converta entre JPG, PNG, WebP, SVG, BMP e GIF. Conversão no navegador, sem envio de ficheiros.'
+          grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'Conversor JPG para WebP',
               topImageAlt: 'Conversor JPG para WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-jpg-para-webp">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/conversor-jpg-para-webp'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'Conversor PNG para JPG',
               topImageAlt: 'Conversor PNG para JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta ficheiros PNG para JPG no navegador. Sem limite de ficheiros, sem registo.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-png-para-jpg">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Converta ficheiros PNG para JPG no navegador. Sem limite de ficheiros, sem
+                    registo.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/conversor-png-para-jpg'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'Conversor WebP para JPG',
               topImageAlt: 'Conversor WebP para JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-webp-para-jpg">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/conversor-webp-para-jpg'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'Conversor PNG para WebP',
               topImageAlt: 'Conversor PNG para WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-png-para-webp">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/conversor-png-para-webp'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'Conversor JPG para PNG',
               topImageAlt: 'Conversor JPG para PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Converta imagens JPG para PNG sem perdas. Conversão local no navegador.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-jpg-para-png">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/conversor-jpg-para-png'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'Conversor WebP para PNG',
               topImageAlt: 'Conversor WebP para PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-webp-para-png">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao
+                    servidor.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/conversor-webp-para-png'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Conversores de dados"
-          description="Conversores de formatos de dados online — converta entre CSV, JSON, XML, YAML, Markdown e HTML. Processamento no navegador."
-          grid="three"
+          title='Conversores de dados'
+          description='Conversores de formatos de dados — converta entre CSV, JSON, XML, YAML, Markdown e HTML. Processamento no navegador.'
+          grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'CSV para JSON',
               topImageAlt: 'CSV para JSON Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Converta CSV para formato JSON. Detecção automática de separadores e formatação.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-csv-para-json">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Converta CSV para formato JSON. Detecção automática de separadores e formatação.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/conversor-csv-para-json'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JSON para CSV',
               topImageAlt: 'JSON para CSV Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Converta dados JSON para formato CSV. Processamento no navegador.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-json-para-csv">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/conversor-json-para-csv'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'XML para JSON',
               topImageAlt: 'XML para JSON Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Converta dados XML para JSON. Conversão no navegador com validação.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-xml-para-json">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/conversor-xml-para-json'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JSON para XML',
               topImageAlt: 'JSON para XML Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Converta dados JSON para XML válido. Conversão no navegador com formatação.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-json-para-xml">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/conversor-json-para-xml'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'YAML para JSON',
               topImageAlt: 'YAML para JSON Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Converta configuração YAML para JSON. Validação e formatação no navegador.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-yaml-para-json">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/conversor-yaml-para-json'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JSON para YAML',
               topImageAlt: 'JSON para YAML Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Converta dados JSON para YAML legível. Processamento no navegador.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/pt/ferramentas/conversor-json-para-yaml">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/pt/ferramentas/conversor-json-para-yaml'>
                       Abrir ferramenta
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -1022,55 +1106,62 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="O que são as ferramentas Arteon?">
-          <p className="mb-4">
-            34 ferramentas online gratuitas para criar e otimizar conteúdos para sites, redes sociais e impressão – conversor WebP, gerador de favicon, contador de texto, extrator de cores, gerador de
-            paletas e códigos QR.
+        <SectionInfo title='O que são as ferramentas Arteon?'>
+          <p className='mb-4'>
+            34 ferramentas gratuitas para criar e otimizar conteúdos para sites, redes sociais e
+            impressão – conversor WebP, gerador de favicon, contador de texto, extrator de cores,
+            gerador de paletas e códigos QR.
           </p>
-          <p>Todas as ferramentas funcionam no seu navegador – os ficheiros nunca são enviados para um servidor. Utilize-as sem registo e sem limite.</p>
+          <p>
+            Todas as ferramentas funcionam no seu navegador – os ficheiros nunca são enviados para
+            um servidor. Utilize-as sem registo e sem limite.
+          </p>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionSteps
-          title="Porquê utilizar as ferramentas Arteon?"
-          grid="two"
+          title='Porquê utilizar as ferramentas Arteon?'
+          grid='two'
           items={[
             {
-              icon: <RiShieldCheckLine className="h-6 w-6" />,
+              icon: <RiShieldCheckLine className='h-6 w-6' />,
               title: 'Privacidade total',
-              description: 'Todas as ferramentas processam os ficheiros localmente no seu navegador. Nada é enviado para um servidor – os dados desaparecem quando fecha o separador.',
+              description:
+                'Todas as ferramentas processam os ficheiros localmente no seu navegador. Nada é enviado para um servidor – os dados desaparecem quando fecha o separador.',
             },
             {
-              icon: <RiInfinityFill className="h-6 w-6" />,
+              icon: <RiInfinityFill className='h-6 w-6' />,
               title: 'Sem limite de utilização',
-              description: 'Utilize as ferramentas sem restrições – sem limite diário, sem limite de ficheiros, sem limite de conversões. Tantas vezes quantas necessário.',
+              description:
+                'Utilize as ferramentas sem restrições – sem limite diário, sem limite de ficheiros, sem limite de conversões. Tantas vezes quantas necessário.',
             },
             {
-              icon: <RiLockLine className="h-6 w-6" />,
+              icon: <RiLockLine className='h-6 w-6' />,
               title: 'Sem registo',
               description: 'Nenhuma conta necessária. Abra a ferramenta, utilize-a, é tudo.',
             },
             {
-              icon: <RiGlobalLine className="h-6 w-6" />,
+              icon: <RiGlobalLine className='h-6 w-6' />,
               title: 'Disponível em português',
-              description: 'Todas as ferramentas estão disponíveis em português – interface, instruções e mensagens.',
+              description:
+                'Todas as ferramentas estão disponíveis em português – interface, instruções e mensagens.',
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <FaqPanels items={faqItems} title="Perguntas frequentes sobre as nossas ferramentas" />
+        <FaqPanels items={faqItems} title='Perguntas frequentes sobre as nossas ferramentas' />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
-      <Script id="ld-json-tools-pt" type="application/ld+json" strategy="afterInteractive">
+      <Script id='ld-json-tools-pt' type='application/ld+json' strategy='afterInteractive'>
         {JSON.stringify(schema)}
       </Script>
     </>

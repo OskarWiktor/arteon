@@ -13,7 +13,7 @@
   },
   "footer": {
     "copyright": "All rights reserved.",
-    "description": "Free online tools for web developers, designers, and marketers.",
+    "description": "Free tools for web developers, designers, and marketers.",
     "companyDataLabel": "Company info",
     "toolsLabel": "Tools",
     "legalLabel": "Legal documents",
@@ -80,7 +80,7 @@
     "success": "Message sent! We will respond as soon as possible."
   },
   "toolsCarousel": {
-    "defaultTitle": "Free online tools",
+    "defaultTitle": "Free tools",
     "seeAllTools": "See all tools",
     "carouselLabel": "Tools carousel",
     "scrollLeft": "Scroll left",

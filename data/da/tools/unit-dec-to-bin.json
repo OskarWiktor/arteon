@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Konverter decimal til binary og omvendt. Nyttig til programmering og datalogi. Ingen registrering krævet.",
-      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+      "featureList": [
+        "Tovejs-konvertering i realtid",
+        "Alle konvertere samlet ét sted",
+        "Kopier resultat til udklipsholder",
+        "Lokal beregning i browseren"
+      ]
     },
     "howTo": {
       "name": "Sådan bruger du konverteren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimal vs Binær",
-      "featureLabel": "Egenskab",
-      "plans": [
+      "labelHeader": "Egenskab",
+      "cols": ["Decimal (base-10)", "Binær (base-2)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimal (base-10)"
+          "label": "Cifre",
+          "values": ["0–9", "0–1"]
         },
         {
-          "id": "unit2",
-          "name": "Binær (base-2)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Cifre",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–1"
-          }
+          "label": "Bruges af",
+          "values": ["Mennesker", "Computere"]
         },
         {
-          "name": "Bruges af",
-          "values": {
-            "unit1": "Mennesker",
-            "unit2": "Computere"
-          }
+          "label": "Eksempel: 42",
+          "values": ["42", "101010"]
         },
         {
-          "name": "Eksempel: 42",
-          "values": {
-            "unit1": "42",
-            "unit2": "101010"
-          }
+          "label": "Eksempel: 255",
+          "values": ["255", "11111111"]
         },
         {
-          "name": "Eksempel: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "11111111"
-          }
-        },
-        {
-          "name": "Læsbarhed",
-          "values": {
-            "unit1": "Nem",
-            "unit2": "Lang men nativ"
-          }
+          "label": "Læsbarhed",
+          "values": ["Nem", "Lang men nativ"]
         }
       ]
     },

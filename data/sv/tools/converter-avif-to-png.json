@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera AVIF-filer till forlustfri PNG. Behall full kvalitet och transparens. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
-      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Konvertera AVIF till PNG", "AVIF till PNG konvertering", "Gratis AVIF till PNG konverterare"]
+      "featureList": [
+        "AVIF to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Konvertera AVIF till PNG",
+        "AVIF till PNG konvertering",
+        "Gratis AVIF till PNG konverterare"
+      ]
     },
     "howTo": {
       "name": "AVIF to PNG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs PNG – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["AVIF", "PNG"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Förlustrik komprimering",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Alla webbläsare"]
+        },
+        {
+          "label": "Färgdjup",
+          "values": ["8/10/12-bit, HDR", "8/16-bit"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "avif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "avif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "avif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "avif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
-            "png": "Alla webbläsare"
-          }
-        },
-        {
-          "name": "Färgdjup",
-          "values": {
-            "avif": "8/10/12-bit, HDR",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "avif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "avif": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

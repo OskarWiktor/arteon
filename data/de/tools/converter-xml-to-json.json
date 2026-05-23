@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "XML vs JSON – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["XML", "JSON"],
+      "rows": [
         {
-          "id": "xml",
-          "name": "XML"
+          "label": "Verschachtelte Daten",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabellarische Daten",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Schema-Validierung",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Menschenlesbar",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-Standard",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Kompakte Syntax",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verschachtelte Daten",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabellarische Daten",
-          "values": {
-            "xml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Schema-Validierung",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Menschenlesbar",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-Standard",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompakte Syntax",
-          "values": {
-            "xml": false,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Wie funktioniert die XML-zu-JSON-Konvertierung?",
-      "html": "<p class=\"text-mid mb-4\">XML (eXtensible Markup Language) verwendet eine tag-basierte Hierarchie mit \u00f6ffnenden und schlie\u00dfenden Elementen, w\u00e4hrend JSON (JavaScript Object Notation) leichtgewichtige geschweifte Klammern und Schl\u00fcssel-Wert-Paare nutzt. Der Konverter analysiert den XML-Dokumentenbaum und ordnet jedes Element einer entsprechenden JSON-Struktur zu.</p><p class=\"text-mid mb-4\">XML-Elemente werden zu JSON-Objekten, wiederholte Elemente mit demselben Tag-Namen zu JSON-Arrays, und Textinhalte zu String-Werten. XML-Attribute werden als spezielle Eigenschaften (mit @-Pr\u00e4fix) im JSON-Objekt abgebildet, um sie von Kindelementen zu unterscheiden.</p><p class=\"text-mid\">JSON ist das bevorzugte Format f\u00fcr moderne Web-APIs, JavaScript-Anwendungen und NoSQL-Datenbanken. Die Konvertierung erfolgt vollst\u00e4ndig lokal in Ihrem Browser \u2014 es werden keine Daten an einen Server gesendet.</p>"
+      "html": "<p class=\"text-mid mb-4\">XML (eXtensible Markup Language) verwendet eine tag-basierte Hierarchie mit öffnenden und schließenden Elementen, während JSON (JavaScript Object Notation) leichtgewichtige geschweifte Klammern und Schlüssel-Wert-Paare nutzt. Der Konverter analysiert den XML-Dokumentenbaum und ordnet jedes Element einer entsprechenden JSON-Struktur zu.</p><p class=\"text-mid mb-4\">XML-Elemente werden zu JSON-Objekten, wiederholte Elemente mit demselben Tag-Namen zu JSON-Arrays, und Textinhalte zu String-Werten. XML-Attribute werden als spezielle Eigenschaften (mit @-Präfix) im JSON-Objekt abgebildet, um sie von Kindelementen zu unterscheiden.</p><p class=\"text-mid\">JSON ist das bevorzugte Format für moderne Web-APIs, JavaScript-Anwendungen und NoSQL-Datenbanken. Die Konvertierung erfolgt vollständig lokal in Ihrem Browser — es werden keine Daten an einen Server gesendet.</p>"
     },
     {
       "type": "gap",
@@ -202,19 +174,19 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tipps f\u00fcr die XML-zu-JSON-Konvertierung",
-      "description": "Einige Hinweise, um h\u00e4ufige Probleme zu vermeiden:",
+      "title": "Tipps für die XML-zu-JSON-Konvertierung",
+      "description": "Einige Hinweise, um häufige Probleme zu vermeiden:",
       "grid": "two",
       "items": [
         {
           "icon": "RiCodeLine",
           "title": "XML-Attribute",
-          "description": "XML-Attribute werden zu JSON-Eigenschaften mit @-Pr\u00e4fix konvertiert. Zum Beispiel wird &lt;item id='1'&gt; zu {\"@id\": \"1\"}."
+          "description": "XML-Attribute werden zu JSON-Eigenschaften mit @-Präfix konvertiert. Zum Beispiel wird &lt;item id='1'&gt; zu {\"@id\": \"1\"}."
         },
         {
           "icon": "RiNodeTree",
           "title": "Namespaces",
-          "description": "XML-Namespaces bleiben in der JSON-Ausgabe als Teil der Elementnamen erhalten. Komplexe Namespace-Deklarationen m\u00fcssen m\u00f6glicherweise manuell bereinigt werden."
+          "description": "XML-Namespaces bleiben in der JSON-Ausgabe als Teil der Elementnamen erhalten. Komplexe Namespace-Deklarationen müssen möglicherweise manuell bereinigt werden."
         },
         {
           "icon": "RiFileTextLine",
@@ -224,7 +196,7 @@
         {
           "icon": "RiFileCodeLine",
           "title": "CDATA-Abschnitte",
-          "description": "CDATA-Abschnitte in XML werden zu einfachen String-Werten in JSON konvertiert. Die CDATA-H\u00fclle wird entfernt und der Inhalt bleibt unver\u00e4ndert erhalten."
+          "description": "CDATA-Abschnitte in XML werden zu einfachen String-Werten in JSON konvertiert. Die CDATA-Hülle wird entfernt und der Inhalt bleibt unverändert erhalten."
         }
       ]
     },
@@ -255,11 +227,11 @@
         },
         {
           "question": "Ist die XML-zu-JSON-Konvertierung sicher?",
-          "answer": "Ja. Die gesamte Konvertierung erfolgt lokal in Ihrem Browser. Ihre Daten werden nie an einen Server gesendet. Beim Schlie\u00dfen der Seite werden alle Daten automatisch gel\u00f6scht."
+          "answer": "Ja. Die gesamte Konvertierung erfolgt lokal in Ihrem Browser. Ihre Daten werden nie an einen Server gesendet. Beim Schließen der Seite werden alle Daten automatisch gelöscht."
         },
         {
           "question": "Gehen XML-Attribute bei der Konvertierung verloren?",
-          "answer": "Nein. XML-Attribute bleiben in der JSON-Ausgabe als Eigenschaften mit @-Pr\u00e4fix erhalten. Zum Beispiel wird id='123' zu \"@id\": \"123\" im JSON-Objekt."
+          "answer": "Nein. XML-Attribute bleiben in der JSON-Ausgabe als Eigenschaften mit @-Präfix erhalten. Zum Beispiel wird id='123' zu \"@id\": \"123\" im JSON-Objekt."
         },
         {
           "question": "Kann ich die JSON-Ausgabe in JavaScript verwenden?",

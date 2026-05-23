@@ -89,7 +89,12 @@ class TestSuiteManager {
     const jestConfig = {
       testMatch: [this.config.testPatterns.unit],
       collectCoverage: true,
-      collectCoverageFrom: ['src/**/*.{js,ts}', '!src/**/*.test.{js,ts}', '!src/**/*.spec.{js,ts}', '!src/test/**/*'],
+      collectCoverageFrom: [
+        'src/**/*.{js,ts}',
+        '!src/**/*.test.{js,ts}',
+        '!src/**/*.spec.{js,ts}',
+        '!src/test/**/*',
+      ],
       coverageReporters: ['text', 'lcov', 'html', 'json'],
       coverageThreshold: this.config.coverageThreshold,
       testEnvironment: 'jsdom',
@@ -219,7 +224,7 @@ class TestSuiteManager {
         execSync('redis-cli -p 6380 ping', { stdio: 'pipe' });
         return; // Services are ready
       } catch (error) {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 1000));
       }
     }
 
@@ -249,7 +254,7 @@ class TestSuiteManager {
 
   determineOverallStatus() {
     const results = Object.values(this.testResults);
-    const failures = results.filter((result) => result && result.status === 'failed');
+    const failures = results.filter(result => result && result.status === 'failed');
     return failures.length === 0 ? 'PASSED' : 'FAILED';
   }
 
@@ -312,10 +317,10 @@ class TestPatterns {
       pageObject[name] = {
         element: () => page.locator(selector),
         click: () => page.click(selector),
-        fill: (text) => page.fill(selector, text),
+        fill: text => page.fill(selector, text),
         getText: () => page.textContent(selector),
         isVisible: () => page.isVisible(selector),
-        waitFor: (options) => page.waitForSelector(selector, options),
+        waitFor: options => page.waitForSelector(selector, options),
       };
     });
 
@@ -342,7 +347,9 @@ class TestPatterns {
       },
 
       buildList: (count, overrides = {}) => {
-        return Array.from({ length: count }, (_, index) => this.build({ ...overrides, id: index + 1 }));
+        return Array.from({ length: count }, (_, index) =>
+          this.build({ ...overrides, id: index + 1 }),
+        );
       },
     };
   }
@@ -351,18 +358,18 @@ class TestPatterns {
   static createMockService(serviceName, methods) {
     const mock = {};
 
-    methods.forEach((method) => {
+    methods.forEach(method => {
       mock[method] = jest.fn();
     });
 
     mock.reset = () => {
-      methods.forEach((method) => {
+      methods.forEach(method => {
         mock[method].mockReset();
       });
     };
 
     mock.restore = () => {
-      methods.forEach((method) => {
+      methods.forEach(method => {
         mock[method].mockRestore();
       });
     };
@@ -461,7 +468,11 @@ module.exports = defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: [['html'], ['json', { outputFile: 'test-results/e2e-results.json' }], ['junit', { outputFile: 'test-results/e2e-results.xml' }]],
+  reporter: [
+    ['html'],
+    ['json', { outputFile: 'test-results/e2e-results.json' }],
+    ['junit', { outputFile: 'test-results/e2e-results.xml' }],
+  ],
   use: {
     baseURL: process.env.BASE_URL || 'http://localhost:3000',
     trace: 'on-first-retry',
@@ -506,7 +517,13 @@ module.exports = {
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest',
   },
-  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts', '!src/test/**/*', '!src/**/*.stories.*', '!src/**/*.test.*'],
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx,ts,tsx}',
+    '!src/**/*.d.ts',
+    '!src/test/**/*',
+    '!src/**/*.stories.*',
+    '!src/**/*.test.*',
+  ],
   coverageReporters: ['text', 'lcov', 'html', 'json-summary'],
   coverageThreshold: {
     global: {
@@ -543,7 +560,14 @@ class PerformanceTestFramework {
   }
 
   async runLoadTest(config) {
-    const { endpoint, method = 'GET', payload, concurrent = 10, duration = 60000, rampUp = 5000 } = config;
+    const {
+      endpoint,
+      method = 'GET',
+      payload,
+      concurrent = 10,
+      duration = 60000,
+      rampUp = 5000,
+    } = config;
 
     console.log(`🚀 Starting load test: ${concurrent} users for ${duration}ms`);
 
@@ -558,7 +582,9 @@ class PerformanceTestFramework {
     const userPromises = [];
     for (let i = 0; i < concurrent; i++) {
       const delay = (rampUp / concurrent) * i;
-      userPromises.push(this.simulateUser(endpoint, method, payload, duration - delay, delay, results));
+      userPromises.push(
+        this.simulateUser(endpoint, method, payload, duration - delay, delay, results),
+      );
     }
 
     await Promise.all(userPromises);
@@ -568,7 +594,7 @@ class PerformanceTestFramework {
   }
 
   async simulateUser(endpoint, method, payload, duration, delay, results) {
-    await new Promise((resolve) => setTimeout(resolve, delay));
+    await new Promise(resolve => setTimeout(resolve, delay));
 
     const endTime = Date.now() + duration;
 
@@ -595,7 +621,7 @@ class PerformanceTestFramework {
       }
 
       // Small delay between requests
-      await new Promise((resolve) => setTimeout(resolve, 100));
+      await new Promise(resolve => setTimeout(resolve, 100));
     }
   }
 
@@ -621,9 +647,9 @@ class PerformanceTestFramework {
     const totalDuration = endTime - startTime;
 
     // Calculate metrics
-    const responseTimes = requests.map((r) => r.duration);
-    const successfulRequests = requests.filter((r) => r.status < 400);
-    const failedRequests = requests.filter((r) => r.status >= 400);
+    const responseTimes = requests.map(r => r.duration);
+    const successfulRequests = requests.filter(r => r.status < 400);
+    const failedRequests = requests.filter(r => r.status >= 400);
 
     const analysis = {
       summary: {
@@ -646,7 +672,7 @@ class PerformanceTestFramework {
       errors: {
         total: errors.length,
         byType: this.groupBy(errors, 'type'),
-        timeline: errors.map((e) => ({ timestamp: e.timestamp, type: e.type })),
+        timeline: errors.map(e => ({ timestamp: e.timestamp, type: e.type })),
       },
       recommendations: this.generatePerformanceRecommendations(results),
     };
@@ -710,14 +736,16 @@ class PerformanceTestFramework {
   logResults(analysis) {
     console.log('\n📈 Performance Test Results:');
     console.log(`Total Requests: ${analysis.summary.totalRequests}`);
-    console.log(`Success Rate: ${((analysis.summary.successfulRequests / analysis.summary.totalRequests) * 100).toFixed(2)}%`);
+    console.log(
+      `Success Rate: ${((analysis.summary.successfulRequests / analysis.summary.totalRequests) * 100).toFixed(2)}%`,
+    );
     console.log(`Throughput: ${analysis.summary.throughput.toFixed(2)} req/s`);
     console.log(`Average Response Time: ${analysis.responseTime.mean.toFixed(2)}ms`);
     console.log(`95th Percentile: ${analysis.responseTime.p95.toFixed(2)}ms`);
 
     if (analysis.recommendations.length > 0) {
       console.log('\n⚠️ Recommendations:');
-      analysis.recommendations.forEach((rec) => {
+      analysis.recommendations.forEach(rec => {
         console.log(`- ${rec.issue}: ${rec.recommendation}`);
       });
     }

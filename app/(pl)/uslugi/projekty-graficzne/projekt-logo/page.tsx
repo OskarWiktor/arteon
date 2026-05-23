@@ -1,34 +1,48 @@
-import WorkSteps from '@/components/sections/steps/WorkSteps';
-import HeroBanner from '@/components/sections/HeroBanner';
-import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABanner from '@/components/sections/CTABanner';
-import Gap from '@/components/ui/Gap';
-import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiBookOpenLine, RiKey2Line, RiPantoneLine, RiQuillPenLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
-import SectionContactForm from '@/components/sections/SectionContactForm';
-import Wrapper from '@/components/ui/Wrapper';
-import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
-import Breadcrumbs from '@/components/sections/BreadCrumbs';
-import FaqPanels from '@/components/ui/FaqPanels';
-import FeatureGrid from '@/components/sections/FeatureGrid';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
+import WorkSteps from '@/components/organisms/WorkSteps';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import CTABanner from '@/components/organisms/CTABanner';
+import Divider from '@/components/atoms/Divider';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import {
+  RiBookOpenLine,
+  RiKey2Line,
+  RiPantoneLine,
+  RiQuillPenLine,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Wrapper from '@/components/atoms/Wrapper';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import FaqPanels from '@/components/molecules/FaqPanels';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import SectionPrices from '@/components/ui/sections/SectionPrices';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt logo | Arteon',
-  description: 'Logo jako fundament identyfikacji wizualnej. Tworzymy czytelny znak z wersjami kolorystycznymi i mini-księgą znaku.',
+  description:
+    'Logo jako fundament identyfikacji wizualnej. Tworzymy czytelny znak z wersjami kolorystycznymi i mini-księgą znaku.',
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo' },
   openGraph: {
     title: 'Projekt logo | Arteon',
-    description: 'Profesjonalne logo dopasowane do charakteru marki. Wektory, warianty i mini-księga znaku.',
+    description:
+      'Profesjonalne logo dopasowane do charakteru marki. Wektory, warianty i mini-księga znaku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp', width: 1200, height: 630 }],
+    images: [
+      {
+        url: 'https://www.arteonagency.pl/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 } as const;
 
@@ -36,13 +50,14 @@ function ServiceSchema() {
   const json = buildServiceSchema({
     path: '/uslugi/projekty-graficzne/projekt-logo',
     serviceName: 'Projekt logo',
-    description: 'Znak marki z podstawową księgą znaku: warianty, siatka, wersje kolorystyczne. Pliki wektorowe gotowe do użycia.',
+    description:
+      'Znak marki z podstawową księgą znaku: warianty, siatka, wersje kolorystyczne. Pliki wektorowe gotowe do użycia.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
 
   return (
-    <Script id="schema-service-projekt-logo" type="application/ld+json">
+    <Script id='schema-service-projekt-logo' type='application/ld+json'>
       {JSON.stringify(json)}
     </Script>
   );
@@ -52,21 +67,22 @@ export default function OfferDesignLogoPage() {
   return (
     <>
       <HeroBanner
-        title="Projekt logo"
+        title='Projekt logo'
         description={
           <>
-            Silny znak porządkuje komunikację i wyróżnia markę. Projektujemy logo z myślą o czytelności, skalowalności i psychologii odbiorcy - z wersjami kolorystycznymi oraz mini-księgą znaku, którą
-            wykorzystasz przez lata.
+            Silny znak porządkuje komunikację i wyróżnia markę. Projektujemy logo z myślą o
+            czytelności, skalowalności i psychologii odbiorcy - z wersjami kolorystycznymi oraz
+            mini-księgą znaku, którą wykorzystasz przez lata.
           </>
         }
-        secondaryCtaLabel="Bezpłatna wycena"
-        secondaryCtaLink="#kontakt"
-        variant="left"
-        backgroundImage="/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp"
-        overlay="black"
+        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaHref='#kontakt'
+        variant='left'
+        backgroundImage='/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp'
+        overlay='black'
       />
 
-      <BenefitBelt variant="carousel" />
+      <BenefitBelt variant='carousel' />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -76,17 +92,24 @@ export default function OfferDesignLogoPage() {
       />
 
       <Wrapper>
-        <Gap size="xs" />
+        <Divider size='xs' />
 
-        <ProjectsCarousel title="Wybrane realizacje projektów logo dla firm" category="logo" />
+        <ProjectsCarousel title='Wybrane realizacje projektów logo dla firm' category='logo' />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Co zyskujesz zamawiając projekt logo?">
+        <SectionInfo title='Co zyskujesz zamawiając projekt logo?'>
           <p>
-            <strong>Profesjonalne logo wzmacnia wizerunek i ułatwia sprzedaż.</strong> Spójny branding realnie przekłada się na wynik - firmy utrzymujące konsekwentną identyfikację raportują ok.{` `}
+            <strong>Profesjonalne logo wzmacnia wizerunek i ułatwia sprzedaż.</strong> Spójny
+            branding realnie przekłada się na wynik - firmy utrzymujące konsekwentną identyfikację
+            raportują ok.{` `}
             <strong>10-20% wyższy wzrost/przychody</strong>
-            <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
+            <a
+              href='https://www.marq.com/blog/brand-consistency-competitive-advantage'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-link ml-1'
+            >
               (źródło)
             </a>
             .
@@ -95,9 +118,16 @@ export default function OfferDesignLogoPage() {
           <br />
 
           <p>
-            <strong>Logo buduje wiarygodność w ułamku sekundy.</strong> Jakość oprawy wizualnej (logo, układ, estetyka) silnie wpływa na ocenę firmy: ok.{` `}
-            <strong>75%</strong> osób przypisuje wiarygodność marce na podstawie tego, jak wyglądają jej materiały
-            <a href="https://rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
+            <strong>Logo buduje wiarygodność w ułamku sekundy.</strong> Jakość oprawy wizualnej
+            (logo, układ, estetyka) silnie wpływa na ocenę firmy: ok.{` `}
+            <strong>75%</strong> osób przypisuje wiarygodność marce na podstawie tego, jak wyglądają
+            jej materiały
+            <a
+              href='https://rareformnewmedia.com/credibility-in-web-design/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-link ml-1'
+            >
               (źródło)
             </a>
             .
@@ -108,98 +138,130 @@ export default function OfferDesignLogoPage() {
           <p>
             <strong>Dobre logo robi trzy rzeczy naraz:</strong>
           </p>
-          <ul className="ml-5 list-disc">
+          <ul className='ml-5 list-disc'>
             <li>Porządkuje komunikację i ułatwia tworzenie kolejnych materiałów,</li>
             <li>Buduje rozpoznawalność i pamięć marki w głowie klienta,</li>
             <li>Podnosi zaufanie.</li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FeatureGrid
-          title="Co zyskujesz zamawiając logo u nas?"
-          subtitle="Nasz standard pracy"
+          title='Co zyskujesz zamawiając logo u nas?'
+          subtitle='Nasz standard pracy'
           items={[
             {
               title: 'Znak, który prowadzi markę',
-              description: <>Tworzymy logo, które jest czytelne, charakterystyczne i łatwe do zapamiętania - również w małych rozmiarach.</>,
-              icon: <RiQuillPenLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Tworzymy logo, które jest czytelne, charakterystyczne i łatwe do zapamiętania -
+                  również w małych rozmiarach.
+                </>
+              ),
+              icon: <RiQuillPenLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Warianty i zastosowania',
-              description: <>Otrzymujesz wersje kolorystyczne, monochromatyczne, poziome i pionowe - gotowe do użycia na stronie, w mediach społecznościowych i w druku.</>,
-              icon: <RiPantoneLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Otrzymujesz wersje kolorystyczne, monochromatyczne, poziome i pionowe - gotowe do
+                  użycia na stronie, w mediach społecznościowych i w druku.
+                </>
+              ),
+              icon: <RiPantoneLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Prosta instrukcja użycia',
-              description: <>Dołączamy mini-księgę znaku z podstawowymi wytycznymi, dzięki czemu każdy w firmie wie, jak poprawnie korzystać z logo.</>,
-              icon: <RiBookOpenLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Dołączamy mini-księgę znaku z podstawowymi wytycznymi, dzięki czemu każdy w firmie
+                  wie, jak poprawnie korzystać z logo.
+                </>
+              ),
+              icon: <RiBookOpenLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Pełna własność i pliki źródłowe',
-              description: <>Po zakończeniu projektu masz komplet plików wektorowych i pełnię praw - możesz swobodnie rozwijać identyfikację w przyszłości.</>,
-              icon: <RiKey2Line className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Po zakończeniu projektu masz komplet plików wektorowych i pełnię praw - możesz
+                  swobodnie rozwijać identyfikację w przyszłości.
+                </>
+              ),
+              icon: <RiKey2Line className='text-primary h-6 w-6' />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
+              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Dla kogo projekt logo ma największy sens?" subtitle="Dla kogo">
-          <ul className="ml-5 list-disc space-y-2">
+        <SectionInfo title='Dla kogo projekt logo ma największy sens?' subtitle='Dla kogo'>
+          <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Dla nowych firm i start-upów,</strong> które chcą od początku wejść na rynek z klarowną, przemyślaną identyfikacją.
+              <strong>Dla nowych firm i start-upów,</strong> które chcą od początku wejść na rynek z
+              klarowną, przemyślaną identyfikacją.
             </li>
             <li>
-              <strong>Dla lokalnych biznesów,</strong> które rozwijają się i potrzebują logo na poziomie jakości usług, które oferują.
+              <strong>Dla lokalnych biznesów,</strong> które rozwijają się i potrzebują logo na
+              poziomie jakości usług, które oferują.
             </li>
             <li>
-              <strong>Dla ekspertów i marek osobistych,</strong> gdzie logo musi współgrać z reputacją, jaką budujesz latami.
+              <strong>Dla ekspertów i marek osobistych,</strong> gdzie logo musi współgrać z
+              reputacją, jaką budujesz latami.
             </li>
             <li>
-              <strong>Dla firm w rebrandingu,</strong> które zmieniają kierunek, grupę docelową lub poziom usług i potrzebują nowego symbolu tej zmiany.
+              <strong>Dla firm w rebrandingu,</strong> które zmieniają kierunek, grupę docelową lub
+              poziom usług i potrzebują nowego symbolu tej zmiany.
             </li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu nowego logo?" subtitle="Efekty po wdrożeniu">
-          <ul className="ml-5 list-disc space-y-2">
+        <SectionInfo
+          title='Jakie efekty możesz zobaczyć po wdrożeniu nowego logo?'
+          subtitle='Efekty po wdrożeniu'
+        >
+          <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Spójny wizerunek na wszystkich nośnikach</strong> - od strony WWW, przez media społecznościowe, po druk.
+              <strong>Spójny wizerunek na wszystkich nośnikach</strong> - od strony WWW, przez media
+              społecznościowe, po druk.
             </li>
             <li>
-              <strong>Łatwiejsze tworzenie materiałów,</strong> bo logo wyznacza kierunek dla kolorów, typografii i stylu.
+              <strong>Łatwiejsze tworzenie materiałów,</strong> bo logo wyznacza kierunek dla
+              kolorów, typografii i stylu.
             </li>
             <li>
-              <strong>Wyższe postrzegane zaufanie,</strong> co ułatwia domykanie sprzedaży i podnoszenie stawek.
+              <strong>Wyższe postrzegane zaufanie,</strong> co ułatwia domykanie sprzedaży i
+              podnoszenie stawek.
             </li>
             <li>
-              <strong>Większa rozpoznawalność,</strong> gdy ten sam znak konsekwentnie pojawia się w wielu miejscach.
+              <strong>Większa rozpoznawalność,</strong> gdy ten sam znak konsekwentnie pojawia się w
+              wielu miejscach.
             </li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <TestimonialsCarousel />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionPrices
-          title="Projekt logo - przykładowe pakiety"
+          title='Projekt logo - przykładowe pakiety'
           plans={[
             {
               name: 'Pakiet Start - logo dla nowej marki',
               price: 'wycena indywidualna',
-              description: 'Dla jednoosobowych działalności i małych firm, które potrzebują solidnego znaku na start.',
+              description:
+                'Dla jednoosobowych działalności i małych firm, które potrzebują solidnego znaku na start.',
               features: [
                 'Krótkie konsultacje i brief online',
                 '2-3 wstępne kierunki logo do wyboru',
@@ -208,12 +270,13 @@ export default function OfferDesignLogoPage() {
                 'Pliki PNG i SVG do użycia online',
               ],
               btnOne: 'Zamów wycenę pakietu Start',
-              btnOneLink: '#kontakt',
+              btnOneHref: '#kontakt',
             },
             {
               name: 'Pakiet Standard - logo + mini-księga znaku',
               price: 'wycena indywidualna',
-              description: 'Dla firm, które chcą mieć logo oraz podstawowe zasady jego stosowania w jednym miejscu.',
+              description:
+                'Dla firm, które chcą mieć logo oraz podstawowe zasady jego stosowania w jednym miejscu.',
               features: [
                 'Wszystko z pakietu Start, a dodatkowo:',
                 'Wersje poziome i pionowe logo',
@@ -222,12 +285,13 @@ export default function OfferDesignLogoPage() {
                 'Pliki wektorowe (AI, EPS, SVG) do druku i produkcji',
               ],
               btnOne: 'Zamów wycenę pakietu Standard',
-              btnOneLink: '#kontakt',
+              btnOneHref: '#kontakt',
             },
             {
               name: 'Pakiet Pro - logo i system identyfikacji',
               price: 'wycena indywidualna',
-              description: 'Dla marek, które chcą od razu zbudować szerszy system wizualny: logo, podstawowe materiały i spójne zasady.',
+              description:
+                'Dla marek, które chcą od razu zbudować szerszy system wizualny: logo, podstawowe materiały i spójne zasady.',
               features: [
                 'Wszystko z pakietu Standard, a dodatkowo:',
                 'Rozszerzona mini-księga znaku (kolory, typografia, przykładowe zastosowania)',
@@ -236,32 +300,32 @@ export default function OfferDesignLogoPage() {
                 'Rekomendacje co do kolejnych kroków (strona, materiały drukowane, media społecznościowe)',
               ],
               btnOne: 'Porozmawiajmy o pakiecie Pro',
-              btnOneLink: '#kontakt',
+              btnOneHref: '#kontakt',
             },
           ]}
-          legalNote="Ostateczna wycena zależy m.in. od liczby kierunków, zakresu księgi znaku oraz dodatkowych materiałów. Po krótkim briefie przygotujemy dopasowaną, klarowną propozycję."
+          legalNote='Ostateczna wycena zależy m.in. od liczby kierunków, zakresu księgi znaku oraz dodatkowych materiałów. Po krótkim briefie przygotujemy dopasowaną, klarowną propozycję.'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <WorkSteps variant="design" />
+        <WorkSteps variant='design' />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionContactForm
-          title="Sprawdź koszt realizacji logo"
-          description="Napisz czym zajmuje się Twoja firma i jaki typ znaku Ci się podoba (symbol, logotyp, monogram) - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp"
-          imageAlt="Realizacja projektu logo - Finish Masters"
-          defaultSubject="Projekt logo"
+          title='Sprawdź koszt realizacji logo'
+          description='Napisz czym zajmuje się Twoja firma i jaki typ znaku Ci się podoba (symbol, logotyp, monogram) - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp'
+          imageAlt='Realizacja projektu logo - Finish Masters'
+          defaultSubject='Projekt logo'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FaqPanels
-          openByDefault={1}
-          title="Najczęstsze pytania dotyczące projektów logo"
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo"
+          defaultOpenIndex={1}
+          title='Najczęstsze pytania dotyczące projektów logo'
+          pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo'
           items={[
             {
               question: 'Ile kosztuje profesjonalne logo?',
@@ -270,15 +334,18 @@ export default function OfferDesignLogoPage() {
             },
             {
               question: 'Jak długo trwa realizacja projektu logo?',
-              answer: 'Standardowy proces trwa około 5-10 dni roboczych, w zależności od liczby kierunków i rund poprawek. Przy pilnych zleceniach możemy zaproponować tryb ekspresowy.',
+              answer:
+                'Standardowy proces trwa około 5-10 dni roboczych, w zależności od liczby kierunków i rund poprawek. Przy pilnych zleceniach możemy zaproponować tryb ekspresowy.',
             },
             {
               question: 'W jakich formatach otrzymam logo?',
-              answer: 'Otrzymasz pliki wektorowe oraz rastrowe w wysokiej rozdzielczości - w wersjach kolorystycznych, monochromatycznych oraz na jasne i ciemne tło, wraz z mini-księgą znaku.',
+              answer:
+                'Otrzymasz pliki wektorowe oraz rastrowe w wysokiej rozdzielczości - w wersjach kolorystycznych, monochromatycznych oraz na jasne i ciemne tło, wraz z mini-księgą znaku.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do logo?',
-              answer: 'Tak, w standardowym pakiecie uwzględniamy minimum jedną rundę korekt. Razem dopracujemy kształt, proporcje i detale, aby efekt odpowiadał Twojej wizji.',
+              answer:
+                'Tak, w standardowym pakiecie uwzględniamy minimum jedną rundę korekt. Razem dopracujemy kształt, proporcje i detale, aby efekt odpowiadał Twojej wizji.',
             },
             {
               question: 'Czy pomogacie określić styl i kierunek logo?',
@@ -292,19 +359,21 @@ export default function OfferDesignLogoPage() {
             },
             {
               question: 'Czy dostaję prawa autorskie do logo?',
-              answer: 'Tak, po finalizacji projektu przekazujemy Ci pełne prawa autorskie majątkowe do logo oraz komplet plików źródłowych. Możesz swobodnie korzystać z niego w materiałach własnych.',
+              answer:
+                'Tak, po finalizacji projektu przekazujemy Ci pełne prawa autorskie majątkowe do logo oraz komplet plików źródłowych. Możesz swobodnie korzystać z niego w materiałach własnych.',
             },
             {
               question: 'Czy oferujecie ekspresową realizację logo?',
-              answer: 'Tak, dla projektów priorytetowych proponujemy tryb ekspresowy. Zakres, czas i koszt ustalamy indywidualnie przed rozpoczęciem pracy.',
+              answer:
+                'Tak, dla projektów priorytetowych proponujemy tryb ekspresowy. Zakres, czas i koszt ustalamy indywidualnie przed rozpoczęciem pracy.',
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionBento
-          title="Poznaj inne usługi"
+          title='Poznaj inne usługi'
           items={[
             {
               title: 'Identyfikacja wizualna',
@@ -316,14 +385,16 @@ export default function OfferDesignLogoPage() {
             {
               title: 'Projekt wizytówki',
               size: 'medium',
-              backgroundImage: '/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp',
+              backgroundImage:
+                '/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
               title: 'Strony internetowe',
               size: 'small',
-              backgroundImage: '/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp',
+              backgroundImage:
+                '/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
@@ -337,22 +408,26 @@ export default function OfferDesignLogoPage() {
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getArticlePreviewsByCategory('grafika', 6)} />
+        <ArticlesCarousel
+          title='Przydatne artykuły dotyczące projektów graficznych'
+          categorySlug='grafika'
+          articles={getArticlePreviewsByCategory('grafika', 6)}
+        />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
       <CTABanner
-        title="Znak, który prowadzi markę"
-        description="Stworzymy logo, które zostaje w pamięci i kreuje profesjonalny wizerunek."
-        btnOne="Skontaktuj się"
-        btnOneLink="#kontakt"
-        btnTwo="Poznaj usługi graficzne"
-        btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp"
-        overlay="black"
+        title='Znak, który prowadzi markę'
+        description='Stworzymy logo, które zostaje w pamięci i kreuje profesjonalny wizerunek.'
+        btnOne='Skontaktuj się'
+        btnOneHref='#kontakt'
+        btnTwo='Poznaj usługi graficzne'
+        btnTwoHref='/uslugi/projekty-graficzne'
+        backgroundImage='/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp'
+        overlay='black'
       />
 
       <ServiceSchema />

@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Prevedte vektorovou grafiku SVG na kvalitni rastrovy TIFF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
-      "featureList": ["Konverze do TIFF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
-      "alternateName": ["Převést SVG na TIFF", "Konverze SVG do TIFF", "Převodník SVG na TIFF zdarma"]
+      "featureList": [
+        "Konverze do TIFF",
+        "Nastavení kvality (60-95%)",
+        "Dávková konverze",
+        "Lokální zpracování v prohlížeči"
+      ],
+      "alternateName": [
+        "Převést SVG na TIFF",
+        "Konverze SVG do TIFF",
+        "Převodník SVG na TIFF zdarma"
+      ]
     },
     "howTo": {
       "name": "Jak převést SVG na TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs TIFF – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["SVG", "TIFF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Ztrátová komprese",
+          "values": ["—", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Všechny prohlížeče", "Pouze Safari"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["N/A (vektor)", "8/16/32-bit"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "svg": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "svg": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "svg": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "svg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "svg": "Všechny prohlížeče",
-            "tiff": "Pouze Safari"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "svg": "N/A (vektor)",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "svg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

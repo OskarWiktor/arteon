@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu. Zpracování probíhá v prohlížeči - soubory neopouštějí vaše zařízení.",
-      "featureList": ["Konverze do GIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
-      "alternateName": ["Převést WEBP na GIF", "Konverze WEBP do GIF", "Převodník WEBP na GIF zdarma"]
+      "featureList": [
+        "Konverze do GIF",
+        "Nastavení kvality (60-95%)",
+        "Dávková konverze",
+        "Lokální zpracování v prohlížeči"
+      ],
+      "alternateName": [
+        "Převést WEBP na GIF",
+        "Konverze WEBP do GIF",
+        "Převodník WEBP na GIF zdarma"
+      ]
     },
     "howTo": {
       "name": "Jak převést WebP na GIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs GIF – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["WebP", "GIF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Ztrátová komprese",
+          "values": ["✓", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Všechny prohlížeče"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["8-bit (16.7M)", "8-bit (256)"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "gif": "Všechny prohlížeče"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

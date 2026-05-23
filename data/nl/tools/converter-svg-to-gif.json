@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer vector SVG-afbeeldingen naar GIF-rasterformaat. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
-      "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
-      "alternateName": ["SVG naar GIF omzetten", "SVG naar GIF conversie", "Gratis SVG naar GIF converter"]
+      "featureList": [
+        "Conversie naar GIF",
+        "Kwaliteitsaanpassing (60-95%)",
+        "Batchconversie",
+        "Lokale verwerking in de browser"
+      ],
+      "alternateName": [
+        "SVG naar GIF omzetten",
+        "SVG naar GIF conversie",
+        "Gratis SVG naar GIF converter"
+      ]
     },
     "howTo": {
       "name": "SVG naar GIF converteren",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs GIF – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["SVG", "GIF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Lossy-compressie",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alle browsers", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["N/A (vector)", "8-bit (256)"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "svg": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "svg": "Alle browsers",
-            "gif": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "svg": "N/A (vector)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "svg": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

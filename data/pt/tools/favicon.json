@@ -25,7 +25,13 @@
   "schemas": {
     "software": {
       "name": "Gerador de favicon.ico para sites",
-      "alternateName": ["Criar um favicon gratuito", "Gerador favicon.ico", "Gerador Apple Touch Icon", "Criar ícones PWA", "Favicon a partir de uma imagem"],
+      "alternateName": [
+        "Criar um favicon gratuito",
+        "Gerador favicon.ico",
+        "Gerador Apple Touch Icon",
+        "Criar ícones PWA",
+        "Favicon a partir de uma imagem"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
       "description": "Gerador gratuito de favicon. Crie favicon.ico e ícones PNG 16x16, 32x32, 180x180, 192x192 e 512x512 sem limites e sem enviar ficheiros para um servidor. O processamento ocorre localmente no navegador.",
@@ -294,7 +300,7 @@
     {
       "type": "sectionInfo",
       "title": "Favicon e identidade visual da marca em Portugal e no Brasil",
-      "html": "<p class=\"text-mid mb-4\">A coerência visual entre o favicon e o logótipo fortalece a memorização da marca. O ícone aparece nos separadores do navegador, nos favoritos, no histórico de navegação e no ecrã inicial do telemóvel. Quando um utilizador tem dez ou mais separadores abertos, o favicon é o único elemento visível que identifica o site.</p><p class=\"text-mid mb-4\">Em Portugal, plataformas como Shopify e WooCommerce permitem configurar o favicon nas definições do tema. No Brasil, Loja Integrada e Nuvemshop facilitam a personalização visual das lojas online. O Brasil é um mercado mobile-first - mais de 80 % dos acessos à internet provêm de smartphones, tornando o favicon no ecrã inicial ainda mais relevante.</p><p class=\"text-mid mb-4\">Sites de comparação como Buscapé e Zoom exibem favicons nos resultados, aumentando a diferenciação visual entre os vendedores. Um favicon profissional sinaliza credibilidade e destaca a loja entre dezenas de resultados concorrentes.</p><p class=\"text-mid\">As empresas de serviços - desde escritórios de advocacia até clínicas médicas - constroem confiança já ao nível do ícone no separador do navegador. A ausência de favicon ou o ícone predefinido do navegador pode sugerir falta de profissionalismo.</p>"
+      "html": "<p class=\"text-mid mb-4\">A coerência visual entre o favicon e o logótipo fortalece a memorização da marca. O ícone aparece nos separadores do navegador, nos favoritos, no histórico de navegação e no ecrã inicial do telemóvel. Quando um utilizador tem dez ou mais separadores abertos, o favicon é o único elemento visível que identifica o site.</p><p class=\"text-mid mb-4\">Em Portugal, plataformas como Shopify e WooCommerce permitem configurar o favicon nas definições do tema. No Brasil, Loja Integrada e Nuvemshop facilitam a personalização visual das lojasm mercado mobile-first - mais de 80 % dos acessos à internet provêm de smartphones, tornando o favicon no ecrã inicial ainda mais relevante.</p><p class=\"text-mid mb-4\">Sites de comparação como Buscapé e Zoom exibem favicons nos resultados, aumentando a diferenciação visual entre os vendedores. Um favicon profissional sinaliza credibilidade e destaca a loja entre dezenas de resultados concorrentes.</p><p class=\"text-mid\">As empresas de serviços - desde escritórios de advocacia até clínicas médicas - constroem confiança já ao nível do ícone no separador do navegador. A ausência de favicon ou o ícone predefinido do navegador pode sugerir falta de profissionalismo.</p>"
     },
     {
       "type": "gap",

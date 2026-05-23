@@ -377,7 +377,7 @@ function validateToolData(locale) {
   const toolsDir = `data/${locale}/tools`;
   const files = fs.readdirSync(toolsDir);
 
-  files.forEach((file) => {
+  files.forEach(file => {
     const data = JSON.parse(fs.readFileSync(`${toolsDir}/${file}`));
     const valid = ajv.validate(toolSchema, data);
     if (!valid) console.error(`Invalid: ${file}`, ajv.errors);

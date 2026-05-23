@@ -180,82 +180,45 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Τι σημαίνουν τα επίπεδα AA και AAA στο πρότυπο WCAG;",
-      "plans": [
+      "cols": ["Επίπεδο AA (ελάχιστο)", "Επίπεδο AAA (ενισχυμένο)"],
+      "rows": [
         {
-          "id": "aa",
-          "name": "Επίπεδο AA (ελάχιστο)",
-          "highlighted": true
+          "label": "Κανονικό κείμενο - ελάχ. 4.5:1",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "aaa",
-          "name": "Επίπεδο AAA (ενισχυμένο)"
-        }
-      ],
-      "features": [
-        {
-          "name": "Κανονικό κείμενο - ελάχ. 4.5:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Κανονικό κείμενο - ελάχ. 7:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Κανονικό κείμενο - ελάχ. 7:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Μεγάλο / bold κείμενο - ελάχ. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Μεγάλο / bold κείμενο - ελάχ. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Μεγάλο / bold κείμενο - ελάχ. 4.5:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Μεγάλο / bold κείμενο - ελάχ. 4.5:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Εικονίδια και στοιχεία UI - ελάχ. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Εικονίδια και στοιχεία UI - ελάχ. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Νομικά απαιτούμενο (Οδηγία ΕΕ)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Νομικά απαιτούμενο (Οδηγία ΕΕ)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Απαιτείται από US ADA / Section 508",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Απαιτείται από US ADA / Section 508",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Απαιτείται από UK Equality Act 2010",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Απαιτείται από UK Equality Act 2010",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
-        },
-        {
-          "name": "Συνιστάται για κρίσιμο περιεχόμενο",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Συνιστάται για κρίσιμο περιεχόμενο",
+          "values": ["✓", "✓"]
         }
       ]
     },

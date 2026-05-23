@@ -1,6 +1,13 @@
 import type { GridColor } from '@/types/tools/image';
 
-export function getCropRect(ow: number, oh: number, targetAspect: number, cropX: number, cropY: number, zoom: number) {
+export function getCropRect(
+  ow: number,
+  oh: number,
+  targetAspect: number,
+  cropX: number,
+  cropY: number,
+  zoom: number,
+) {
   const originalAspect = ow / oh;
   let baseW: number;
   let baseH: number;

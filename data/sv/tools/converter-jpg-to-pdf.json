@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera JPG till PDF?",
-      "html": "<p class=\"text-mid mb-4\">JPG ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till PDF erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina JPG-filer till PDF-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPG ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till PDF erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratisJPG-filer till PDF-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "JPG to PDF conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs PDF – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["JPG", "PDF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Förlustrik komprimering",
+          "values": ["✓", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Alla webbläsare", "Inbyggd PDF-visare"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "jpg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "jpg": false,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "jpg": false,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "jpg": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "jpg": "Alla webbläsare",
-            "pdf": "Inbyggd PDF-visare"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "jpg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "jpg": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

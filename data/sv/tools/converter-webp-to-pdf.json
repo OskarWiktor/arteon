@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs PDF – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["WebP", "PDF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Förlustrik komprimering",
+          "values": ["✓", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Inbyggd PDF-visare"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "webp": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "webp": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "pdf": "Inbyggd PDF-visare"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "webp": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

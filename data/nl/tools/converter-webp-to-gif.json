@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer WebP-afbeeldingen naar GIF-formaat voor maximale compatibiliteit. Alle verwerking gebeurt lokaal in je browser - bestanden verlaten je apparaat niet.",
-      "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
-      "alternateName": ["WEBP naar GIF omzetten", "WEBP naar GIF conversie", "Gratis WEBP naar GIF converter"]
+      "featureList": [
+        "Conversie naar GIF",
+        "Kwaliteitsaanpassing (60-95%)",
+        "Batchconversie",
+        "Lokale verwerking in de browser"
+      ],
+      "alternateName": [
+        "WEBP naar GIF omzetten",
+        "WEBP naar GIF conversie",
+        "Gratis WEBP naar GIF converter"
+      ]
     },
     "howTo": {
       "name": "WebP naar GIF converteren",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs GIF – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["WebP", "GIF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Lossy-compressie",
+          "values": ["✓", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["8-bit (16.7M)", "8-bit (256)"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "gif": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

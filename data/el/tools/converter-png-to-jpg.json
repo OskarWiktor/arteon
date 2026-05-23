@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Μετατροπέας PNG σε JPG",
-      "alternateName": ["Μετατροπή PNG σε JPG", "Μετατροπέας PNG σε JPG", "Δωρεάν μετατροπέας PNG σε JPG"],
+      "alternateName": [
+        "Μετατροπή PNG σε JPG",
+        "Μετατροπέας PNG σε JPG",
+        "Δωρεάν μετατροπέας PNG σε JPG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρέψτε αρχεία PNG σε JPG στο πρόγραμμα περιήγησης. Χωρίς όριο, χωρίς εγγραφή. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης - χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
-      "featureList": ["Μετατροπή PNG σε JPG", "Έλεγχος ποιότητας JPG", "Ομαδική μετατροπή", "Τοπική επεξεργασία στον browser", "Χωρίς μεταφόρτωση αρχείων"]
+      "featureList": [
+        "Μετατροπή PNG σε JPG",
+        "Έλεγχος ποιότητας JPG",
+        "Ομαδική μετατροπή",
+        "Τοπική επεξεργασία στον browser",
+        "Χωρίς μεταφόρτωση αρχείων"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε PNG σε JPG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs JPG – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["PNG", "JPG"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": ["Όλοι οι περιηγητές", "Όλοι οι περιηγητές"]
+        },
+        {
+          "label": "Βάθος χρώματος",
+          "values": ["8/16-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "png": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "png": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "png": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "png": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "png": "Όλοι οι περιηγητές",
-            "jpg": "Όλοι οι περιηγητές"
-          }
-        },
-        {
-          "name": "Βάθος χρώματος",
-          "values": {
-            "png": "8/16-bit",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "png": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "png": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",

@@ -66,7 +66,11 @@ export const none: None = { type: 'none' };
 /**
  * Make all properties deeply readonly.
  */
-export type DeepReadonly<T> = T extends (...args: any[]) => any ? T : T extends object ? { readonly [K in keyof T]: DeepReadonly<T[K]> } : T;
+export type DeepReadonly<T> = T extends (...args: any[]) => any
+  ? T
+  : T extends object
+    ? { readonly [K in keyof T]: DeepReadonly<T[K]> }
+    : T;
 
 /**
  * Make all properties deeply optional.
@@ -136,9 +140,15 @@ export type ElementOf<T> = T extends (infer E)[] ? E : never;
 /**
  * Tuple of specific length.
  */
-export type Tuple<T, N extends number> = N extends N ? (number extends N ? T[] : _TupleOf<T, N, []>) : never;
+export type Tuple<T, N extends number> = N extends N
+  ? number extends N
+    ? T[]
+    : _TupleOf<T, N, []>
+  : never;
 
-type _TupleOf<T, N extends number, R extends unknown[]> = R['length'] extends N ? R : _TupleOf<T, N, [T, ...R]>;
+type _TupleOf<T, N extends number, R extends unknown[]> = R['length'] extends N
+  ? R
+  : _TupleOf<T, N, [T, ...R]>;
 
 /**
  * Non-empty array.
@@ -167,12 +177,16 @@ export type FirstArgument<T> = T extends (first: infer F, ...args: any[]) => any
 /**
  * Async version of function.
  */
-export type AsyncFunction<T extends (...args: any[]) => any> = (...args: Parameters<T>) => Promise<Awaited<ReturnType<T>>>;
+export type AsyncFunction<T extends (...args: any[]) => any> = (
+  ...args: Parameters<T>
+) => Promise<Awaited<ReturnType<T>>>;
 
 /**
  * Promisify return type.
  */
-export type Promisify<T> = T extends (...args: infer A) => infer R ? (...args: A) => Promise<Awaited<R>> : never;
+export type Promisify<T> = T extends (...args: infer A) => infer R
+  ? (...args: A) => Promise<Awaited<R>>
+  : never;
 
 // =============================================================================
 // STRING UTILITIES
@@ -181,7 +195,9 @@ export type Promisify<T> = T extends (...args: infer A) => infer R ? (...args: A
 /**
  * Split string by delimiter.
  */
-export type Split<S extends string, D extends string> = S extends `${infer T}${D}${infer U}` ? [T, ...Split<U, D>] : [S];
+export type Split<S extends string, D extends string> = S extends `${infer T}${D}${infer U}`
+  ? [T, ...Split<U, D>]
+  : [S];
 
 /**
  * Join tuple to string.
@@ -197,7 +213,11 @@ export type Join<T extends string[], D extends string> = T extends []
 /**
  * Path to nested object.
  */
-export type PathOf<T, K extends keyof T = keyof T> = K extends string ? (T[K] extends object ? K | `${K}.${PathOf<T[K]>}` : K) : never;
+export type PathOf<T, K extends keyof T = keyof T> = K extends string
+  ? T[K] extends object
+    ? K | `${K}.${PathOf<T[K]>}`
+    : K
+  : never;
 
 // =============================================================================
 // UNION UTILITIES
@@ -206,17 +226,24 @@ export type PathOf<T, K extends keyof T = keyof T> = K extends string ? (T[K] ex
 /**
  * Last element of union.
  */
-export type UnionLast<T> = UnionToIntersection<T extends any ? () => T : never> extends () => infer R ? R : never;
+export type UnionLast<T> =
+  UnionToIntersection<T extends any ? () => T : never> extends () => infer R ? R : never;
 
 /**
  * Union to intersection.
  */
-export type UnionToIntersection<U> = (U extends any ? (k: U) => void : never) extends (k: infer I) => void ? I : never;
+export type UnionToIntersection<U> = (U extends any ? (k: U) => void : never) extends (
+  k: infer I,
+) => void
+  ? I
+  : never;
 
 /**
  * Union to tuple.
  */
-export type UnionToTuple<T, L = UnionLast<T>> = [T] extends [never] ? [] : [...UnionToTuple<Exclude<T, L>>, L];
+export type UnionToTuple<T, L = UnionLast<T>> = [T] extends [never]
+  ? []
+  : [...UnionToTuple<Exclude<T, L>>, L];
 
 // =============================================================================
 // VALIDATION UTILITIES
@@ -225,7 +252,8 @@ export type UnionToTuple<T, L = UnionLast<T>> = [T] extends [never] ? [] : [...U
 /**
  * Assert type at compile time.
  */
-export type AssertEqual<T, U> = (<V>() => V extends T ? 1 : 2) extends <V>() => V extends U ? 1 : 2 ? true : false;
+export type AssertEqual<T, U> =
+  (<V>() => V extends T ? 1 : 2) extends <V>() => V extends U ? 1 : 2 ? true : false;
 
 /**
  * Ensure type is not never.

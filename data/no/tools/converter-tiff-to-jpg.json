@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter TIFF-filer til kompakt JPG. Ideell for skanninger og fotoarkiv. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
-      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Konverter TIFF til JPG", "TIFF til JPG konvertering", "Gratis TIFF til JPG konverterer"]
+      "featureList": [
+        "TIFF to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Konverter TIFF til JPG",
+        "TIFF til JPG konvertering",
+        "Gratis TIFF til JPG konverterer"
+      ]
     },
     "howTo": {
       "name": "TIFF to JPG",
@@ -174,68 +183,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs JPG – formatsammenligning",
-      "plans": [
+      "cols": ["TIFF", "JPG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Komprimering med tap",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "tiff": false,
-            "jpg": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "tiff": true,
-            "jpg": false
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "tiff": true,
-            "jpg": false
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["—", "—"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "tiff": false,
-            "jpg": false
-          }
+          "label": "Nettleserstøtte",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "tiff": false,
-            "jpg": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "tiff": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "tiff": true,
-            "jpg": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
       ]
     },

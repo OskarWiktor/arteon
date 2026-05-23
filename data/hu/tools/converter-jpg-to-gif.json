@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "JPG fotok konvertálása GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
-      "featureList": ["Konvertálás GIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
-      "alternateName": ["JPG konvertálása GIF formátumba", "JPG–GIF átalakítás", "Ingyenes JPG–GIF konverter"]
+      "featureList": [
+        "Konvertálás GIF-re",
+        "Minőség beállítása (60-95%)",
+        "Kötegelt konvertálás",
+        "Helyi feldolgozás a böngészőben"
+      ],
+      "alternateName": [
+        "JPG konvertálása GIF formátumba",
+        "JPG–GIF átalakítás",
+        "Ingyenes JPG–GIF konverter"
+      ]
     },
     "howTo": {
       "name": "JPG konvertálása GIF-ra",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs GIF – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["JPG", "GIF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Veszteséges tömörítés",
+          "values": ["✓", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Veszteségmentes tömörítés",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Átlátszóság (alfa csatorna)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animáció támogatás",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Böngészőtámogatás",
+          "values": ["Minden böngésző", "Minden böngésző"]
+        },
+        {
+          "label": "Színmélység",
+          "values": ["8-bit (16.7M)", "8-bit (256)"]
+        },
+        {
+          "label": "Kis fájlméret",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metaadatok (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Veszteséges tömörítés",
-          "values": {
-            "jpg": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Veszteségmentes tömörítés",
-          "values": {
-            "jpg": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Átlátszóság (alfa csatorna)",
-          "values": {
-            "jpg": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animáció támogatás",
-          "values": {
-            "jpg": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Böngészőtámogatás",
-          "values": {
-            "jpg": "Minden böngésző",
-            "gif": "Minden böngésző"
-          }
-        },
-        {
-          "name": "Színmélység",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Kis fájlméret",
-          "values": {
-            "jpg": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metaadatok (EXIF)",
-          "values": {
-            "jpg": true,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

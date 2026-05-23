@@ -2,7 +2,12 @@
 
 import { useState } from 'react';
 import { useTimeout } from '@/hooks/useTimeout';
-import { copyTextToClipboard, canWriteTextToClipboard, copyHtmlWithExecCommand, writeTextToClipboard } from '@/utils/clipboard';
+import {
+  copyTextToClipboard,
+  canWriteTextToClipboard,
+  copyHtmlWithExecCommand,
+  writeTextToClipboard,
+} from '@/utils/clipboard';
 
 type CopyStatus = 'idle' | 'success' | 'error';
 
@@ -18,62 +23,62 @@ export function useCopyToClipboard(defaultResetMs = 1200) {
   const { start: startReset } = useTimeout();
 
   const resetAfter = (ms: number) => {
-      startReset(() => {
-        setCopied(false);
-        setStatus('idle');
-      }, ms);
-    };
+    startReset(() => {
+      setCopied(false);
+      setStatus('idle');
+    }, ms);
+  };
 
   const copy = async (text: string, options?: CopyOptions) => {
-      const ms = options?.resetAfterMs ?? defaultResetMs;
-      try {
-        await copyTextToClipboard(text);
-        setCopied(true);
-        setStatus('success');
-        options?.onCopy?.();
-        resetAfter(ms);
-        return true;
-      } catch {
+    const ms = options?.resetAfterMs ?? defaultResetMs;
+    try {
+      await copyTextToClipboard(text);
+      setCopied(true);
+      setStatus('success');
+      options?.onCopy?.();
+      resetAfter(ms);
+      return true;
+    } catch {
+      setStatus('error');
+      options?.onError?.();
+      resetAfter(ms);
+      return false;
+    }
+  };
+
+  const copyHtml = (html: string, options?: CopyOptions) => {
+    const ms = options?.resetAfterMs ?? defaultResetMs;
+    if (!html) return;
+
+    try {
+      const ok = copyHtmlWithExecCommand(html);
+      if (!ok) throw new Error('execCommand failed');
+      setCopied(true);
+      setStatus('success');
+      options?.onCopy?.();
+      resetAfter(ms);
+    } catch {
+      if (!canWriteTextToClipboard()) {
         setStatus('error');
         options?.onError?.();
         resetAfter(ms);
-        return false;
+        return;
       }
-    };
 
-  const copyHtml = (html: string, options?: CopyOptions) => {
-      const ms = options?.resetAfterMs ?? defaultResetMs;
-      if (!html) return;
-
-      try {
-        const ok = copyHtmlWithExecCommand(html);
-        if (!ok) throw new Error('execCommand failed');
-        setCopied(true);
-        setStatus('success');
-        options?.onCopy?.();
-        resetAfter(ms);
-      } catch {
-        if (!canWriteTextToClipboard()) {
+      writeTextToClipboard(html)
+        .then(() => {
+          setCopied(true);
+          setStatus('success');
+          options?.onCopy?.();
+          resetAfter(ms);
+        })
+        .catch(() => {
           setStatus('error');
           options?.onError?.();
           resetAfter(ms);
-          return;
-        }
-
-        writeTextToClipboard(html)
-          .then(() => {
-            setCopied(true);
-            setStatus('success');
-            options?.onCopy?.();
-            resetAfter(ms);
-          })
-          .catch(() => {
-            setStatus('error');
-            options?.onError?.();
-            resetAfter(ms);
-          });
-      }
-    };
+        });
+    }
+  };
 
   return { copied, status, copy, copyHtml };
 }

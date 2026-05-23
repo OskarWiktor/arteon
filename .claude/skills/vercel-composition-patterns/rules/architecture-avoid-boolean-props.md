@@ -14,12 +14,24 @@ unmaintainable conditional logic. Use composition instead.
 **Incorrect (boolean props create exponential complexity):**
 
 ```tsx
-function Composer({ onSubmit, isThread, channelId, isDMThread, dmId, isEditing, isForwarding }: Props) {
+function Composer({
+  onSubmit,
+  isThread,
+  channelId,
+  isDMThread,
+  dmId,
+  isEditing,
+  isForwarding,
+}: Props) {
   return (
     <form>
       <Header />
       <Input />
-      {isDMThread ? <AlsoSendToDMField id={dmId} /> : isThread ? <AlsoSendToChannelField id={channelId} /> : null}
+      {isDMThread ? (
+        <AlsoSendToDMField id={dmId} />
+      ) : isThread ? (
+        <AlsoSendToChannelField id={channelId} />
+      ) : null}
       {isEditing ? <EditActions /> : isForwarding ? <ForwardActions /> : <DefaultActions />}
       <Footer onSubmit={onSubmit} />
     </form>

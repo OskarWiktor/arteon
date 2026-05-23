@@ -2,13 +2,13 @@
   "toolKey": "bmpToGif",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter BMP na GIF - BMP GIF",
-    "description": "Zamień nieskompresowane pliki BMP na lekki GIF. Redukcja rozmiaru dla prostych grafik. Bez instalacji, bez logowania. Działa na każdym urządzeniu z przeglądarką.",
+    "title": "Darmowy konwerter formatu BMP na GIF bez limitu plików i rejestracji",
+    "description": "Zamień nieskompresowane pliki BMP na lekki GIF. Redukcja rozmiaru dla prostych grafik. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-bmp-na-gif"
   },
   "hero": {
-    "title": "Konwerter BMP na GIF",
+    "title": "Darmowy konwerter formatu BMP na GIF bez limitu plików i rejestracji",
     "description": "Zamień nieskompresowane pliki BMP na lekki GIF. Redukcja rozmiaru dla prostych grafik. Bez instalacji, bez logowania. Działa na każdym urządzeniu z przeglądarką.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień nieskompresowane pliki BMP na lekki GIF. Redukcja rozmiaru dla prostych grafik. Bez instalacji, bez logowania. Działa na każdym urządzeniu z przeglądarką.",
-      "featureList": ["Konwersja do GIF", "Kwantyzacja do 256 kolorow", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
-      "alternateName": ["Zamiana BMP na GIF", "Konwersja BMP do GIF", "Darmowy konwerter BMP na GIF"]
+      "featureList": [
+        "Konwersja do GIF",
+        "Kwantyzacja do 256 kolorow",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne w przeglądarce"
+      ],
+      "alternateName": [
+        "Zamiana BMP na GIF",
+        "Konwersja BMP do GIF",
+        "Darmowy konwerter BMP na GIF"
+      ]
     },
     "howTo": {
       "name": "BMP to GIF",
@@ -168,78 +177,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs GIF – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["BMP", "GIF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Kompresja stratna",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["1/4/8/24/32-bit", "8-bit (256)"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "bmp": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "bmp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "bmp": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "bmp": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "bmp": "Wszystkie przeglądarki",
-            "gif": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "bmp": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "bmp": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

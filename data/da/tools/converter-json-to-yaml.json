@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs YAML – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["JSON", "YAML"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Indlejrede data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "yaml",
-          "name": "YAML",
-          "highlighted": true
+          "label": "Tabeldata",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Skemavalidering",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Menneskelæsbart",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standard",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Kompakt syntaks",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Indlejrede data",
-          "values": {
-            "json": true,
-            "yaml": true
-          }
-        },
-        {
-          "name": "Tabeldata",
-          "values": {
-            "json": false,
-            "yaml": false
-          }
-        },
-        {
-          "name": "Skemavalidering",
-          "values": {
-            "json": true,
-            "yaml": false
-          }
-        },
-        {
-          "name": "Menneskelæsbart",
-          "values": {
-            "json": true,
-            "yaml": true
-          }
-        },
-        {
-          "name": "API-standard",
-          "values": {
-            "json": true,
-            "yaml": false
-          }
-        },
-        {
-          "name": "Kompakt syntaks",
-          "values": {
-            "json": true,
-            "yaml": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

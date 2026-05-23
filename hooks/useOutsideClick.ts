@@ -7,7 +7,11 @@ type EventType = MouseEvent | TouchEvent;
 
 type Handler = (event: EventType) => void;
 
-export function useOutsideClick(ref: RefObject<HTMLElement | null> | RefObject<HTMLElement | null>[], handler: Handler, enabled: boolean = true) {
+export function useOutsideClick(
+  ref: RefObject<HTMLElement | null> | RefObject<HTMLElement | null>[],
+  handler: Handler,
+  enabled: boolean = true,
+) {
   const handlerRef = useRef(handler);
   const refsRef = useRef(ref);
 

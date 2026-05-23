@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "YAML vs JSON – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["YAML", "JSON"],
+      "rows": [
         {
-          "id": "yaml",
-          "name": "YAML"
+          "label": "Données hiérarchiques",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Données tabulaires",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Validation de schéma",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Lisible par un humain",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Syntaxe compacte",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Données hiérarchiques",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Données tabulaires",
-          "values": {
-            "yaml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Validation de schéma",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Lisible par un humain",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Syntaxe compacte",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Comment fonctionne la conversion YAML en JSON ?",
-      "html": "<p class=\"text-mid mb-4\">YAML (YAML Ain't Markup Language) utilise l\u2019indentation et une syntaxe minimale pour repr\u00e9senter des donn\u00e9es structur\u00e9es, tandis que JSON utilise des accolades, des crochets et des guillemets explicites. Le convertisseur analyse la structure YAML et produit du JSON \u00e9quivalent avec un formatage correct.</p><p class=\"text-mid mb-4\">L\u2019indentation YAML devient l\u2019imbrication JSON, les \u00e9l\u00e9ments avec tirets deviennent des \u00e9l\u00e9ments de tableau JSON, et les paires cl\u00e9-valeur YAML deviennent des propri\u00e9t\u00e9s d\u2019objets JSON. Les types de donn\u00e9es sont pr\u00e9serv\u00e9s : cha\u00eenes, nombres, bool\u00e9ens, null, tableaux et objets sont directement transf\u00e9r\u00e9s.</p><p class=\"text-mid\">La conversion de YAML en JSON est utile pour int\u00e9grer des donn\u00e9es de configuration dans des applications web, API REST ou syst\u00e8mes qui attendent du JSON. La conversion s\u2019effectue enti\u00e8rement dans votre navigateur.</p>"
+      "html": "<p class=\"text-mid mb-4\">YAML (YAML Ain't Markup Language) utilise l’indentation et une syntaxe minimale pour représenter des données structurées, tandis que JSON utilise des accolades, des crochets et des guillemets explicites. Le convertisseur analyse la structure YAML et produit du JSON équivalent avec un formatage correct.</p><p class=\"text-mid mb-4\">L’indentation YAML devient l’imbrication JSON, les éléments avec tirets deviennent des éléments de tableau JSON, et les paires clé-valeur YAML deviennent des propriétés d’objets JSON. Les types de données sont préservés : chaînes, nombres, booléens, null, tableaux et objets sont directement transférés.</p><p class=\"text-mid\">La conversion de YAML en JSON est utile pour intégrer des données de configuration dans des applications web, API REST ou systèmes qui attendent du JSON. La conversion s’effectue entièrement dans votre navigateur.</p>"
     },
     {
       "type": "gap",
@@ -203,28 +175,28 @@
     {
       "type": "sectionSteps",
       "title": "Conseils pour la conversion YAML en JSON",
-      "description": "Quelques conseils pour \u00e9viter les probl\u00e8mes courants :",
+      "description": "Quelques conseils pour éviter les problèmes courants :",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileTextLine",
-          "title": "Coh\u00e9rence de l\u2019indentation",
-          "description": "YAML est sensible \u00e0 l\u2019indentation. Si votre fichier m\u00e9lange tabulations et espaces, l\u2019analyse peut \u00e9chouer. Le convertisseur signale les erreurs d\u2019indentation d\u00e9tect\u00e9es."
+          "title": "Cohérence de l’indentation",
+          "description": "YAML est sensible à l’indentation. Si votre fichier mélange tabulations et espaces, l’analyse peut échouer. Le convertisseur signale les erreurs d’indentation détectées."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Les commentaires sont supprim\u00e9s",
-          "description": "JSON ne supporte pas les commentaires. Tous les commentaires # de votre fichier YAML n\u2019appara\u00eetront pas dans la sortie JSON. Conservez votre fichier YAML original."
+          "title": "Les commentaires sont supprimés",
+          "description": "JSON ne supporte pas les commentaires. Tous les commentaires # de votre fichier YAML n’apparaîtront pas dans la sortie JSON. Conservez votre fichier YAML original."
         },
         {
           "icon": "RiCodeLine",
           "title": "YAML multi-document",
-          "description": "Les fichiers YAML peuvent contenir plusieurs documents s\u00e9par\u00e9s par ---. Le convertisseur traite par d\u00e9faut le premier document."
+          "description": "Les fichiers YAML peuvent contenir plusieurs documents séparés par ---. Le convertisseur traite par défaut le premier document."
         },
         {
           "icon": "RiFileCodeLine",
           "title": "Ancres et alias",
-          "description": "Les ancres YAML (&) et les alias (*) sont r\u00e9solus lors de la conversion. La sortie JSON contient les valeurs expans\u00e9es, pas les r\u00e9f\u00e9rences YAML."
+          "description": "Les ancres YAML (&) et les alias (*) sont résolus lors de la conversion. La sortie JSON contient les valeurs expansées, pas les références YAML."
         }
       ]
     },
@@ -254,16 +226,16 @@
           "answer": "Oui, il fonctionne sur tout appareil disposant d'un navigateur web moderne."
         },
         {
-          "question": "La conversion YAML en JSON est-elle s\u00e9curis\u00e9e ?",
-          "answer": "Oui. Toute la conversion s\u2019effectue localement dans votre navigateur. Aucune donn\u00e9e n\u2019est envoy\u00e9e \u00e0 un serveur."
+          "question": "La conversion YAML en JSON est-elle sécurisée ?",
+          "answer": "Oui. Toute la conversion s’effectue localement dans votre navigateur. Aucune donnée n’est envoyée à un serveur."
         },
         {
-          "question": "Les commentaires YAML sont-ils conserv\u00e9s ?",
-          "answer": "Non. JSON ne supporte pas les commentaires, donc tous les commentaires # de votre fichier YAML sont supprim\u00e9s lors de la conversion. Conservez votre fichier YAML original."
+          "question": "Les commentaires YAML sont-ils conservés ?",
+          "answer": "Non. JSON ne supporte pas les commentaires, donc tous les commentaires # de votre fichier YAML sont supprimés lors de la conversion. Conservez votre fichier YAML original."
         },
         {
           "question": "La conversion est-elle sans perte ?",
-          "answer": "Oui, pour les valeurs de donn\u00e9es. Toutes les cha\u00eenes, nombres, bool\u00e9ens, valeurs null, tableaux et objets sont exactement pr\u00e9serv\u00e9s. Seules les fonctionnalit\u00e9s sp\u00e9cifiques \u00e0 YAML comme les commentaires et les ancres ne sont pas transf\u00e9r\u00e9es en JSON."
+          "answer": "Oui, pour les valeurs de données. Toutes les chaînes, nombres, booléens, valeurs null, tableaux et objets sont exactement préservés. Seules les fonctionnalités spécifiques à YAML comme les commentaires et les ancres ne sont pas transférées en JSON."
         }
       ]
     },

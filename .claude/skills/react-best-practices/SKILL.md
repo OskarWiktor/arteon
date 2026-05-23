@@ -4,7 +4,17 @@ description: Comprehensive React and Next.js performance optimization guide with
 version: 1.0.0
 author: Vercel Engineering
 license: MIT
-tags: [React, Next.js, Performance, Optimization, Best Practices, Bundle Size, Rendering, Server Components]
+tags:
+  [
+    React,
+    Next.js,
+    Performance,
+    Optimization,
+    Best Practices,
+    Bundle Size,
+    Rendering,
+    Server Components,
+  ]
 dependencies: []
 ---
 

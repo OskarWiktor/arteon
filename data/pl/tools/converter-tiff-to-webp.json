@@ -2,13 +2,13 @@
   "toolKey": "tiffToWebp",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter TIFF na WebP – ogromna redukcja rozmiaru skanów",
-    "description": "Zamień pliki TIFF na lekki WebP w przeglądarce. Ogromna redukcja rozmiaru przy zachowaniu jakości. Bez rejestracji, bez wysyłania na serwer.",
+    "title": "Darmowy konwerter formatu TIFF na WebP bez limitu plików i rejestracji",
+    "description": "Zamień pliki TIFF na lekki WebP w przeglądarce. Ogromna redukcja rozmiaru przy zachowaniu jakości. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-tiff-na-webp"
   },
   "hero": {
-    "title": "Konwerter TIFF na WebP – lekkie pliki ze skanów i zdjęć",
+    "title": "Darmowy konwerter formatu TIFF na WebP – lekkie pliki ze skanów i zdjęć",
     "description": "Zamień duże pliki TIFF na lekki WebP. Ustaw jakość i pobierz wynik. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter TIFF na WebP – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana TIFF na WebP online", "Konwersja TIFF do WebP"],
+      "alternateName": ["Zamiana TIFF na WebP", "Konwersja TIFF do WebP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter TIFF na WebP online. Zamień pliki TIFF na lekki WebP - pliki nie są wysyłane na serwer.",
-      "featureList": ["Konwersja TIFF do WebP", "Regulacja poziomu jakości", "Ogromna redukcja rozmiaru", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter TIFF na WebP. Zamień pliki TIFF na lekki WebP - pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja TIFF do WebP",
+        "Regulacja poziomu jakości",
+        "Ogromna redukcja rozmiaru",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić TIFF na WebP online",
+      "name": "Jak zamienić TIFF na WebP",
       "description": "Instrukcja konwersji plików TIFF na format WebP.",
       "steps": [
         {
@@ -165,78 +170,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs WebP – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["TIFF", "WebP"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Kompresja stratna",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Tylko Safari", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8/16/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "tiff": "Tylko Safari",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

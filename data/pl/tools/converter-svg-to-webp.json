@@ -2,13 +2,13 @@
   "toolKey": "svgToWebp",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter SVG na WebP – zamień wektor na lekki obraz",
-    "description": "Zamień grafikę wektorową SVG na rastrowy WebP w przeglądarce. Bez limitu plików, bez rejestracji. Pliki nie są wysyłane na serwer.",
+    "title": "Darmowy konwerter formatu SVG na WebP bez limitu plików i rejestracji",
+    "description": "Zamień grafikę wektorową SVG na rastrowy WebP w przeglądarce. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-svg-na-webp"
   },
   "hero": {
-    "title": "Konwerter SVG na WebP – lekki raster z wektora",
+    "title": "Darmowy konwerter formatu SVG na WebP – lekki raster z wektora",
     "description": "Zamień pliki SVG na WebP i uzyskaj lekki obraz rastrowy gotowy do publikacji. Ustaw jakość i pobierz wynik. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,10 +25,10 @@
   "schemas": {
     "software": {
       "name": "Konwerter SVG na WebP – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana SVG na WebP online", "Konwersja SVG do WebP", "SVG to WebP converter"],
+      "alternateName": ["Zamiana SVG na WebP", "Konwersja SVG do WebP", "SVG to WebP converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter SVG na WebP online. Zamień grafikę wektorową SVG na lekki rastrowy WebP w przeglądarce - pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter SVG na WebP. Zamień grafikę wektorową SVG na lekki rastrowy WebP w przeglądarce - pliki nie są wysyłane na serwer.",
       "featureList": [
         "Konwersja SVG do WebP",
         "Regulacja poziomu jakości (60–95%)",
@@ -38,8 +38,8 @@
       ]
     },
     "howTo": {
-      "name": "Jak zamienić SVG na WebP online",
-      "description": "Instrukcja konwersji plików SVG na format WebP za pomocą darmowego narzędzia online.",
+      "name": "Jak zamienić SVG na WebP",
+      "description": "Instrukcja konwersji plików SVG na format WebP za pomocą darmowego narzędzia.",
       "steps": [
         {
           "name": "Dodaj pliki SVG",
@@ -163,78 +163,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs WebP – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["SVG", "WebP"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Kompresja stratna",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["N/A (wektor)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "svg": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "svg": "Wszystkie przeglądarki",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "svg": "N/A (wektor)",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "svg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "svg": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

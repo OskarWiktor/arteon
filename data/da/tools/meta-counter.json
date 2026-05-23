@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Kontrol af meta-titel og beskrivelseslængde i pixels",
-      "alternateName": ["Meta-titel og beskrivelseskontrol med Google-forhåndsvisning", "Google SERP-forhåndsvisning", "SEO-titelbreddekontrol i pixels"],
+      "alternateName": [
+        "Meta-titel og beskrivelseskontrol med Google-forhåndsvisning",
+        "Google SERP-forhåndsvisning",
+        "SEO-titelbreddekontrol i pixels"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
       "description": "Gratis kontrol af meta-titel og beskrivelseslængde. Kontrollerer antal tegn, ord og bredde i pixels. Viser forhåndsvisning af hvordan titel og beskrivelse vises i Googles søgeresultater.",
@@ -271,7 +275,7 @@
     {
       "type": "sectionInfo",
       "title": "Lokal SEO i Danmark - optimering for byer og regioner",
-      "html": "<p class=\"text-mid mb-4\">Lokale servicevirksomheder bør inkludere bynavnet i meta-titlen. Anbefalet struktur: &quot;[Tjeneste] [By] - [Virksomhedsnavn]&quot;. Eksempel: &quot;Tandlæge København Østerbro - Tandklinikken Smil&quot;. Titlen indeholder den lokale søgefrase i begyndelsen, hvor den har størst SEO-værdi. For virksomheder med flere lokationer lønner det sig at oprette en separat side per by med unik titel og beskrivelse.</p><p class=\"text-mid mb-4\">Meta-beskrivelsen for en lokal virksomhed bør indeholde adresse eller bydel, åbningstider og en konkret fordel. Eksempel: &quot;Tandklinik på Østerbro i København. Book online, korte ventetider. Mandag–fredag 8–17&quot;. Google viser ofte disse oplysninger i udvidede søgeresultater, hvilket hjælper den søgende med at træffe en beslutning uden at besøge hjemmesiden.</p><p class=\"text-mid\">Brancher med stærk lokal SEO i Danmark omfatter restaurant, sundhed, ejendomsmæglere, advokater og håndværkere. Sørg for, at Google Virksomhedsprofilen og hjemmesiden bruger det samme virksomhedsnavn og adresseformat. Uoverensstemmelser mellem disse kilder kan gøre det sværere for Google at forbinde dem.</p>"
+      "html": "<p class=\"text-mid mb-4\">Lokale servicevirksomheder bør inkludere bynavnet i meta-titlen. Anbefalet struktur: &quot;[Tjeneste] [By] - [Virksomhedsnavn]&quot;. Eksempel: &quot;Tandlæge København Østerbro - Tandklinikken Smil&quot;. Titlen indeholder den lokale søgefrase i begyndelsen, hvor den har størst SEO-værdi. For virksomheder med flere lokationer lønner det sig at oprette en separat side per by med unik titel og beskrivelse.</p><p class=\"text-mid mb-4\">Meta-beskrivelsen for en lokal virksomhed bør indeholde adresse eller bydel, åbningstider og en konkret fordel. Eksempel: &quot;Tandklinik på Østerbro i København. Book, korte ventetider. Mandag–fredag 8–17&quot;. Google viser ofte disse oplysninger i udvidede søgeresultater, hvilket hjælper den søgende med at træffe en beslutning uden at besøge hjemmesiden.</p><p class=\"text-mid\">Brancher med stærk lokal SEO i Danmark omfatter restaurant, sundhed, ejendomsmæglere, advokater og håndværkere. Sørg for, at Google Virksomhedsprofilen og hjemmesiden bruger det samme virksomhedsnavn og adresseformat. Uoverensstemmelser mellem disse kilder kan gøre det sværere for Google at forbinde dem.</p>"
     },
     {
       "type": "gap",

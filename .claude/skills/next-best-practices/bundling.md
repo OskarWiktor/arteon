@@ -84,7 +84,7 @@ Import CSS files instead of using `<link>` tags. Next.js handles bundling and op
 
 ```tsx
 // Bad: Manual link tag
-<link rel="stylesheet" href="/styles.css" />;
+<link rel='stylesheet' href='/styles.css' />;
 
 // Good: Import CSS
 import './styles.css';
@@ -101,7 +101,7 @@ Already included: `Array.from`, `Object.assign`, `Promise`, `fetch`, `Map`, `Set
 
 ```tsx
 // Bad: Redundant polyfills
-<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch,Promise,Array.from" />
+<script src='https://polyfill.io/v3/polyfill.min.js?features=fetch,Promise,Array.from' />
 
 // Good: Next.js includes these automatically
 ```
@@ -173,7 +173,7 @@ module.exports = {
   transpilePackages: ['package'],
 
   // Bad: Webpack-only - migrate away from this
-  webpack: (config) => {
+  webpack: config => {
     // custom webpack config
   },
 };

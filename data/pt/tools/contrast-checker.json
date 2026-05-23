@@ -176,82 +176,45 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "O que significam os níveis AA e AAA na norma WCAG?",
-      "plans": [
+      "cols": ["Nível AA (mínimo)", "Nível AAA (melhorado)"],
+      "rows": [
         {
-          "id": "aa",
-          "name": "Nível AA (mínimo)",
-          "highlighted": true
+          "label": "Texto normal – mín. 4,5:1",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "aaa",
-          "name": "Nível AAA (melhorado)"
-        }
-      ],
-      "features": [
-        {
-          "name": "Texto normal – mín. 4,5:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Texto normal – mín. 7:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Texto normal – mín. 7:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Texto grande / negrito – mín. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Texto grande / negrito – mín. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Texto grande / negrito – mín. 4,5:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Texto grande / negrito – mín. 4,5:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Ícones e elementos de interface – mín. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Ícones e elementos de interface – mín. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Legalmente obrigatório (diretiva UE)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Legalmente obrigatório (diretiva UE)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Exigido pela ADA / Seção 508 dos EUA",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Exigido pela ADA / Seção 508 dos EUA",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Exigido pelo UK Equality Act 2010",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Exigido pelo UK Equality Act 2010",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
-        },
-        {
-          "name": "Recomendado para conteúdo essencial",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Recomendado para conteúdo essencial",
+          "values": ["✓", "✓"]
         }
       ]
     },
@@ -281,7 +244,7 @@
         },
         {
           "icon": "RiShoppingCartLine",
-          "title": "Lojas online",
+          "title": "Lojas",
           "description": "Preços, botões Comprar, informação de produto. Uma legibilidade fraca pode significar encomendas perdidas."
         },
         {

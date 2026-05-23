@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter JPG-bilder til GIF-format. Perfekt for enkel grafikk og ikoner. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
-      "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
-      "alternateName": ["Konverter JPG til GIF", "JPG til GIF konvertering", "Gratis JPG til GIF konverterer"]
+      "featureList": [
+        "Konvertering til GIF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal behandling i nettleseren"
+      ],
+      "alternateName": [
+        "Konverter JPG til GIF",
+        "JPG til GIF konvertering",
+        "Gratis JPG til GIF konverterer"
+      ]
     },
     "howTo": {
       "name": "Hvordan konvertere JPG til GIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs GIF – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funksjon",
+      "cols": ["JPG", "GIF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Komprimering med tap",
+          "values": ["✓", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Komprimering uten tap",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animasjonsstøtte",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Nettleserstøtte",
+          "values": ["Alle nettlesere", "Alle nettlesere"]
+        },
+        {
+          "label": "Fargedybde",
+          "values": ["8-bit (16.7M)", "8-bit (256)"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "jpg": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Komprimering uten tap",
-          "values": {
-            "jpg": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "jpg": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "jpg": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Nettleserstøtte",
-          "values": {
-            "jpg": "Alle nettlesere",
-            "gif": "Alle nettlesere"
-          }
-        },
-        {
-          "name": "Fargedybde",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "jpg": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "jpg": true,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",

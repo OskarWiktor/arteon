@@ -2,13 +2,13 @@
   "toolKey": "avifToTiff",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter AVIF na TIFF - AVIF TIFF",
-    "description": "Zamień pliki AVIF na bezstratny TIFF. Z formatu webowego do profesjonalnego. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
+    "title": "Darmowy konwerter obrazów formatu AVIF na TIFF bez limitu plików i rejestracji",
+    "description": "Zamień pliki AVIF na bezstratny TIFF. Z formatu webowego do profesjonalnego. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-avif-na-tiff"
   },
   "hero": {
-    "title": "Konwerter AVIF na TIFF",
+    "title": "Darmowy konwerter obrazów formatu AVIF na TIFF",
     "description": "Zamień pliki AVIF na bezstratny TIFF. Z formatu webowego do profesjonalnego. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień pliki AVIF na bezstratny TIFF. Z formatu webowego do profesjonalnego. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
-      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
-      "alternateName": ["Zamiana AVIF na TIFF", "Konwersja AVIF do TIFF", "Darmowy konwerter AVIF na TIFF"]
+      "featureList": [
+        "Konwersja do TIFF",
+        "Format bezstratny",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne w przeglądarce"
+      ],
+      "alternateName": [
+        "Zamiana AVIF na TIFF",
+        "Konwersja AVIF do TIFF",
+        "Darmowy konwerter AVIF na TIFF"
+      ]
     },
     "howTo": {
       "name": "AVIF to TIFF",
@@ -168,78 +177,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "AVIF vs TIFF – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["AVIF", "TIFF"],
+      "rows": [
         {
-          "id": "avif",
-          "name": "AVIF"
+          "label": "Kompresja stratna",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Tylko Safari"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8/10/12-bit, HDR", "8/16/32-bit"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "avif": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "avif": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "avif": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "avif": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
-            "tiff": "Tylko Safari"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "avif": "8/10/12-bit, HDR",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "avif": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "avif": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

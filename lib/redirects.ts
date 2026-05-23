@@ -43,22 +43,35 @@ export const PROJECT_REDIRECTS: Record<string, string> = {
  */
 export const EDUCATION_REDIRECTS: Record<string, string> = {
   '/edukacja/design': '/edukacja/grafika',
-  '/edukacja/psychologia/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow': '/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  '/edukacja/widocznosc/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty': '/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony',
-  '/edukacja/widocznosc/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google': '/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google',
+  '/edukacja/psychologia/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow':
+    '/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
+  '/edukacja/widocznosc/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty':
+    '/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony',
+  '/edukacja/widocznosc/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google':
+    '/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google',
   '/edukacja/seo/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp':
     '/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
-  '/edukacja/tresci/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google': '/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google',
-  '/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow': '/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow',
-  '/edukacja/widocznosc/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic': '/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
+  '/edukacja/tresci/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google':
+    '/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google',
+  '/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow':
+    '/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow',
+  '/edukacja/widocznosc/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic':
+    '/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
   // Zmienione slugi artykułów (2026-01-17)
-  '/edukacja/sklepy/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac': '/edukacja/sklepy/regulamin-sklepu-internetowego-co-musi-zawierac',
-  '/edukacja/seo/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google': '/edukacja/seo/szybkosc-ladowania-strony-a-pozycja-w-google',
-  '/edukacja/ux/czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec': '/edukacja/ux/breadcrumbs-sciezka-nawigacji-na-stronie',
-  '/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu': '/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena',
-  '/edukacja/grafika/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych': '/edukacja/grafika/czcionki-szeryfowe-vs-bezszeryfowe',
-  '/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje': '/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci',
-  '/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty': '/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony',
+  '/edukacja/sklepy/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac':
+    '/edukacja/sklepy/regulamin-sklepu-internetowego-co-musi-zawierac',
+  '/edukacja/seo/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google':
+    '/edukacja/seo/szybkosc-ladowania-strony-a-pozycja-w-google',
+  '/edukacja/ux/czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec':
+    '/edukacja/ux/breadcrumbs-sciezka-nawigacji-na-stronie',
+  '/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu':
+    '/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena',
+  '/edukacja/grafika/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych':
+    '/edukacja/grafika/czcionki-szeryfowe-vs-bezszeryfowe',
+  '/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje':
+    '/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci',
+  '/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty':
+    '/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony',
   // Redirects for removed secondary categories to main education page (2026-02-23)
   '/edukacja/tresci': '/edukacja',
   '/edukacja/widocznosc': '/edukacja',
@@ -73,26 +86,40 @@ export const EDUCATION_REDIRECTS: Record<string, string> = {
   '/edukacja/dostepnosc': '/edukacja/strony',
   '/edukacja/bezpieczenstwo': '/edukacja/strony',
   // Redirects for moved articles (2026-02-23)
-  '/edukacja/bezpieczeństwo/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa': '/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa',
-  '/edukacja/dostępność/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie': '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
-  '/edukacja/bezpieczeństwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje': '/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje',
-  '/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic': '/edukacja/grafika/materialy-drukowane-dla-firmy-ktore-zamowic',
-  '/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa': '/edukacja/marketing/jak-przygotowac-profesjonalna-stopke-mailowa',
-  '/edukacja/zdjęcia/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie': '/edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie',
+  '/edukacja/bezpieczeństwo/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa':
+    '/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa',
+  '/edukacja/dostępność/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie':
+    '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
+  '/edukacja/bezpieczeństwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje':
+    '/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje',
+  '/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic':
+    '/edukacja/grafika/materialy-drukowane-dla-firmy-ktore-zamowic',
+  '/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa':
+    '/edukacja/marketing/jak-przygotowac-profesjonalna-stopke-mailowa',
+  '/edukacja/zdjęcia/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie':
+    '/edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie',
   '/edukacja/zdjęcia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp':
     '/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
   // ASCII variants of moved article paths
-  '/edukacja/bezpieczenstwo/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa': '/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa',
-  '/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie': '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
-  '/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje': '/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje',
-  '/edukacja/zdjecia/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie': '/edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie',
+  '/edukacja/bezpieczenstwo/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa':
+    '/edukacja/strony/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa',
+  '/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie':
+    '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
+  '/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje':
+    '/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje',
+  '/edukacja/zdjecia/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie':
+    '/edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie',
   '/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp':
     '/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
   // Błędne kategorie zgłoszone przez Bing Webmaster Tools (2026-03-06)
-  '/edukacja/grafika/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie': '/edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie',
-  '/edukacja/grafika/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie': '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
-  '/edukacja/ux/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie': '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
-  '/edukacja/strony/jak-mierzyc-skutecznosc-strony-internetowej': '/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej',
+  '/edukacja/grafika/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie':
+    '/edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie',
+  '/edukacja/grafika/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie':
+    '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
+  '/edukacja/ux/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie':
+    '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
+  '/edukacja/strony/jak-mierzyc-skutecznosc-strony-internetowej':
+    '/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej',
 };
 
 /**
@@ -117,7 +144,8 @@ export const TOOLS_REDIRECTS: Record<string, string> = {
   '/narzedzia/generator-palet-kolorow-online/instrukcja': '/narzedzia/generator-palet-kolorow',
   // Zmiana URL ekstraktora kolorów (2026-01-20)
   '/narzedzia/generator-palety-kolorow-z-obrazu': '/narzedzia/ekstraktor-kolorow-z-obrazu',
-  '/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja': '/narzedzia/ekstraktor-kolorow-z-obrazu',
+  '/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja':
+    '/narzedzia/ekstraktor-kolorow-z-obrazu',
   // Zmiana URL edytora zdjęć (2026-01-20) - lepsza fraza kluczowa
   '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia': '/narzedzia/edytor-zdjec-online',
   '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja': '/narzedzia/edytor-zdjec-online',
@@ -139,13 +167,15 @@ export const TOOLS_REDIRECTS: Record<string, string> = {
   // Błędny czeski slug w węgierskim locale (prevodnik = CS, nie HU)
   '/hu/eszkozok/prevodnik-png-na-jpg': '/hu/eszkozok/png-jpg-konverter',
   // Połączenie stron instrukcji z narzędziami (2026-02) - treść przeniesiona na stronę narzędzia
-  '/narzedzia/darmowy-generator-stopki-mailowej/instrukcja': '/narzedzia/darmowy-generator-stopki-mailowej',
+  '/narzedzia/darmowy-generator-stopki-mailowej/instrukcja':
+    '/narzedzia/darmowy-generator-stopki-mailowej',
   '/narzedzia/jpg-png-na-webp-bez-limitu': '/narzedzia/konwerter-jpg-na-webp',
   '/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja': '/narzedzia/konwerter-jpg-na-webp',
   '/narzedzia/edytor-zdjec-online/instrukcja': '/narzedzia/edytor-zdjec-online',
   '/narzedzia/darmowy-generator-favicon-ico/instrukcja': '/narzedzia/darmowy-generator-favicon-ico',
   '/narzedzia/licznik-slow-i-znakow/instrukcja': '/narzedzia/licznik-slow-i-znakow',
-  '/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja': '/narzedzia/licznik-dlugosci-meta-title-i-description',
+  '/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja':
+    '/narzedzia/licznik-dlugosci-meta-title-i-description',
   '/narzedzia/kontrast-i-czytelnosc-kolorow/instrukcja': '/narzedzia/kontrast-i-czytelnosc-kolorow',
   '/narzedzia/generator-palet-kolorow/instrukcja': '/narzedzia/generator-palet-kolorow',
   '/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja': '/narzedzia/ekstraktor-kolorow-z-obrazu',
@@ -204,9 +234,11 @@ export const DE_TOOLS_REDIRECTS: Record<string, string> = {
   '/de/tools/jpg-png-zu-webp-konverter': '/de/werkzeuge/jpg-zu-webp-konverter',
   '/de/tools/online-bildeditor': '/de/werkzeuge/online-bildeditor',
   '/de/tools/kostenloser-favicon-generator': '/de/werkzeuge/kostenloser-favicon-generator',
-  '/de/tools/meta-titel-beschreibung-laengenpruefer': '/de/werkzeuge/meta-titel-beschreibung-laengenpruefer',
+  '/de/tools/meta-titel-beschreibung-laengenpruefer':
+    '/de/werkzeuge/meta-titel-beschreibung-laengenpruefer',
   '/de/tools/wort-und-zeichenzaehler': '/de/werkzeuge/wort-und-zeichenzaehler',
-  '/de/tools/kostenloser-e-mail-signatur-generator': '/de/werkzeuge/kostenloser-e-mail-signatur-generator',
+  '/de/tools/kostenloser-e-mail-signatur-generator':
+    '/de/werkzeuge/kostenloser-e-mail-signatur-generator',
   '/de/tools/farbkontrast-checker': '/de/werkzeuge/farbkontrast-checker',
   '/de/tools/bild-farbextraktor': '/de/werkzeuge/bild-farbextraktor',
   '/de/tools/farbpaletten-generator': '/de/werkzeuge/farbpaletten-generator',
@@ -219,7 +251,8 @@ export const DE_TOOLS_REDIRECTS: Record<string, string> = {
 export const SERVICES_REDIRECTS: Record<string, string> = {
   // Zmiana URL strony internetowe → tworzenie stron WordPress (2026-01-24)
   '/uslugi/strony-internetowe': '/uslugi/tworzenie-stron-wordpress',
-  '/uslugi/strony-internetowe/optymalizacja-strony-wordpress': '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
+  '/uslugi/strony-internetowe/optymalizacja-strony-wordpress':
+    '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
 };
 
 /**
@@ -252,7 +285,8 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/sq/mjetet/konvertues-jpg-png-ne-webp': '/en/tools/jpg-to-webp-converter',
   '/sq/mjetet/redaktues-imazhesh': '/en/tools/online-image-editor',
   '/sq/mjetet/gjenerues-favicon-falas': '/en/tools/free-favicon-generator',
-  '/sq/mjetet/kontrollues-meta-titull-dhe-pershkrim': '/en/tools/meta-title-description-length-checker',
+  '/sq/mjetet/kontrollues-meta-titull-dhe-pershkrim':
+    '/en/tools/meta-title-description-length-checker',
   '/sq/mjetet/numerues-fjalesh-dhe-karakteresh': '/en/tools/word-and-character-counter',
   '/sq/mjetet/gjenerues-nenshkrimi-email-falas': '/en/tools/free-email-signature-generator',
   '/sq/mjetet/kontrollues-kontrasti-ngjyrave': '/en/tools/color-contrast-checker',
@@ -300,7 +334,8 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/lt/irankiai/jpg-png-i-webp-konverteris': '/en/tools/jpg-to-webp-converter',
   '/lt/irankiai/vaizdu-redaktorius': '/en/tools/online-image-editor',
   '/lt/irankiai/nemokamas-favicon-generatorius': '/en/tools/free-favicon-generator',
-  '/lt/irankiai/meta-pavadinimo-ir-aprasymo-tikrintuvas': '/en/tools/meta-title-description-length-checker',
+  '/lt/irankiai/meta-pavadinimo-ir-aprasymo-tikrintuvas':
+    '/en/tools/meta-title-description-length-checker',
   '/lt/irankiai/zodziu-ir-simboliu-skaitiklis': '/en/tools/word-and-character-counter',
   '/lt/irankiai/nemokamas-el-pasto-paraso-generatorius': '/en/tools/free-email-signature-generator',
   '/lt/irankiai/spalvu-kontrasto-tikrintuvas': '/en/tools/color-contrast-checker',
@@ -308,7 +343,8 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/lt/irankiai/spalvu-paletes-generatorius': '/en/tools/color-palette-generator',
   '/lt/irankiai/nemokamas-qr-kodo-generatorius': '/en/tools/free-qr-code-generator',
   // Old typo redirect (was in NO_LT_TOOLS_REDIRECTS)
-  '/lt/irankiai/nemokamas-el-paraso-paraso-generatorius': '/en/tools/free-email-signature-generator',
+  '/lt/irankiai/nemokamas-el-paraso-paraso-generatorius':
+    '/en/tools/free-email-signature-generator',
   // ── Slovenian (sl) ──────────────────────────────────────────────────
   '/sl': '/en',
   '/sl/orodja': '/en/tools',
@@ -334,9 +370,11 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/bg/instrumenti/konvertor-jpg-png-v-webp': '/en/tools/jpg-to-webp-converter',
   '/bg/instrumenti/redaktor-na-izobrazhenia': '/en/tools/online-image-editor',
   '/bg/instrumenti/bezplaten-generator-na-favicon': '/en/tools/free-favicon-generator',
-  '/bg/instrumenti/proverka-na-meta-zaglavie-i-opisanie': '/en/tools/meta-title-description-length-checker',
+  '/bg/instrumenti/proverka-na-meta-zaglavie-i-opisanie':
+    '/en/tools/meta-title-description-length-checker',
   '/bg/instrumenti/broiach-na-dumi-i-simvoli': '/en/tools/word-and-character-counter',
-  '/bg/instrumenti/bezplaten-generator-na-podpis-za-email': '/en/tools/free-email-signature-generator',
+  '/bg/instrumenti/bezplaten-generator-na-podpis-za-email':
+    '/en/tools/free-email-signature-generator',
   '/bg/instrumenti/proverka-na-kontrast-na-tsvetove': '/en/tools/color-contrast-checker',
   '/bg/instrumenti/ekstraktor-na-tsvetove-ot-izobrazhenie': '/en/tools/image-color-extractor',
   '/bg/instrumenti/generator-na-tsvetovi-palitri': '/en/tools/color-palette-generator',
@@ -350,9 +388,11 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/uk/instrumenty/konverter-jpg-png-u-webp': '/en/tools/jpg-to-webp-converter',
   '/uk/instrumenty/redaktor-zobrazhen': '/en/tools/online-image-editor',
   '/uk/instrumenty/bezkoshtovnyi-generator-favicon': '/en/tools/free-favicon-generator',
-  '/uk/instrumenty/perevirka-meta-zaholovka-ta-opysu': '/en/tools/meta-title-description-length-checker',
+  '/uk/instrumenty/perevirka-meta-zaholovka-ta-opysu':
+    '/en/tools/meta-title-description-length-checker',
   '/uk/instrumenty/lichylnyk-sliv-i-symvoliv': '/en/tools/word-and-character-counter',
-  '/uk/instrumenty/bezkoshtovnyi-generator-pidpysu-email': '/en/tools/free-email-signature-generator',
+  '/uk/instrumenty/bezkoshtovnyi-generator-pidpysu-email':
+    '/en/tools/free-email-signature-generator',
   '/uk/instrumenty/perevirka-kontrastu-koloriv': '/en/tools/color-contrast-checker',
   '/uk/instrumenty/ekstraktor-koloriv-z-zobrazhennia': '/en/tools/image-color-extractor',
   '/uk/instrumenty/generator-kolirnykh-palitr': '/en/tools/color-palette-generator',
@@ -373,7 +413,8 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/vi/cong-cu/chuyen-doi-jpg-png-sang-webp': '/en/tools/jpg-to-webp-converter',
   '/vi/cong-cu/chinh-sua-hinh-anh': '/en/tools/online-image-editor',
   '/vi/cong-cu/tao-favicon-mien-phi': '/en/tools/free-favicon-generator',
-  '/vi/cong-cu/kiem-tra-meta-title-va-description': '/en/tools/meta-title-description-length-checker',
+  '/vi/cong-cu/kiem-tra-meta-title-va-description':
+    '/en/tools/meta-title-description-length-checker',
   '/vi/cong-cu/dem-tu-va-ky-tu': '/en/tools/word-and-character-counter',
   '/vi/cong-cu/tao-chu-ky-email-mien-phi': '/en/tools/free-email-signature-generator',
   '/vi/cong-cu/kiem-tra-do-tuong-phan-mau': '/en/tools/color-contrast-checker',
@@ -405,7 +446,8 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/ms/alatan/penukar-jpg-png-ke-webp': '/en/tools/jpg-to-webp-converter',
   '/ms/alatan/editor-imej': '/en/tools/online-image-editor',
   '/ms/alatan/penjana-favicon-percuma': '/en/tools/free-favicon-generator',
-  '/ms/alatan/penyemak-meta-tajuk-dan-penerangan': '/en/tools/meta-title-description-length-checker',
+  '/ms/alatan/penyemak-meta-tajuk-dan-penerangan':
+    '/en/tools/meta-title-description-length-checker',
   '/ms/alatan/pengira-perkataan-dan-aksara': '/en/tools/word-and-character-counter',
   '/ms/alatan/penjana-tandatangan-emel-percuma': '/en/tools/free-email-signature-generator',
   '/ms/alatan/penyemak-kontras-warna': '/en/tools/color-contrast-checker',
@@ -453,9 +495,11 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/tl/mga-kasangkapan/jpg-png-sa-webp-converter': '/en/tools/jpg-to-webp-converter',
   '/tl/mga-kasangkapan/editor-ng-larawan': '/en/tools/online-image-editor',
   '/tl/mga-kasangkapan/libreng-favicon-generator': '/en/tools/free-favicon-generator',
-  '/tl/mga-kasangkapan/tagasuri-ng-meta-title-at-description': '/en/tools/meta-title-description-length-checker',
+  '/tl/mga-kasangkapan/tagasuri-ng-meta-title-at-description':
+    '/en/tools/meta-title-description-length-checker',
   '/tl/mga-kasangkapan/tagabilang-ng-salita-at-character': '/en/tools/word-and-character-counter',
-  '/tl/mga-kasangkapan/libreng-email-signature-generator': '/en/tools/free-email-signature-generator',
+  '/tl/mga-kasangkapan/libreng-email-signature-generator':
+    '/en/tools/free-email-signature-generator',
   '/tl/mga-kasangkapan/tagasuri-ng-contrast-ng-kulay': '/en/tools/color-contrast-checker',
   '/tl/mga-kasangkapan/tagakuha-ng-kulay-mula-sa-larawan': '/en/tools/image-color-extractor',
   '/tl/mga-kasangkapan/generator-ng-palette-ng-kulay': '/en/tools/color-palette-generator',
@@ -469,7 +513,8 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/ceb/mga-himan/jpg-png-ngadto-webp-converter': '/en/tools/jpg-to-webp-converter',
   '/ceb/mga-himan/editor-sa-hulagway': '/en/tools/online-image-editor',
   '/ceb/mga-himan/libre-nga-favicon-generator': '/en/tools/free-favicon-generator',
-  '/ceb/mga-himan/tigsusi-sa-meta-titulo-ug-deskripsyon': '/en/tools/meta-title-description-length-checker',
+  '/ceb/mga-himan/tigsusi-sa-meta-titulo-ug-deskripsyon':
+    '/en/tools/meta-title-description-length-checker',
   '/ceb/mga-himan/tigihap-sa-pulong-ug-karakter': '/en/tools/word-and-character-counter',
   '/ceb/mga-himan/libre-nga-email-pirma-generator': '/en/tools/free-email-signature-generator',
   '/ceb/mga-himan/tigsusi-sa-kontras-sa-kolor': '/en/tools/color-contrast-checker',
@@ -517,7 +562,8 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/yo/awon-irinse/oluyipada-jpg-png-si-webp': '/en/tools/jpg-to-webp-converter',
   '/yo/awon-irinse/olootu-aworan': '/en/tools/online-image-editor',
   '/yo/awon-irinse/olupilese-favicon-ofe': '/en/tools/free-favicon-generator',
-  '/yo/awon-irinse/atunyewo-meta-akole-ati-apejuwe': '/en/tools/meta-title-description-length-checker',
+  '/yo/awon-irinse/atunyewo-meta-akole-ati-apejuwe':
+    '/en/tools/meta-title-description-length-checker',
   '/yo/awon-irinse/oluka-oro-ati-ohun-kikoo': '/en/tools/word-and-character-counter',
   '/yo/awon-irinse/olupilese-ibuwolu-imeeli-ofe': '/en/tools/free-email-signature-generator',
   '/yo/awon-irinse/atunyewo-iyato-awon-awoo': '/en/tools/color-contrast-checker',
@@ -549,7 +595,8 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/af/gereedskap/jpg-png-na-webp-omskakelaar': '/en/tools/jpg-to-webp-converter',
   '/af/gereedskap/beeldredigeerder': '/en/tools/online-image-editor',
   '/af/gereedskap/gratis-favicon-generator': '/en/tools/free-favicon-generator',
-  '/af/gereedskap/meta-titel-en-beskrywing-nagaaier': '/en/tools/meta-title-description-length-checker',
+  '/af/gereedskap/meta-titel-en-beskrywing-nagaaier':
+    '/en/tools/meta-title-description-length-checker',
   '/af/gereedskap/woord-en-karakter-teller': '/en/tools/word-and-character-counter',
   '/af/gereedskap/gratis-e-pos-handtekening-generator': '/en/tools/free-email-signature-generator',
   '/af/gereedskap/kleurkontras-nagaaier': '/en/tools/color-contrast-checker',
@@ -860,7 +907,8 @@ export const REMOVED_UNIT_CONVERTER_REDIRECTS: Record<string, string> = {
  * Używane przez middleware do szybkiego lookup
  */
 export const ALL_STATIC_REDIRECTS: Record<string, string> = {
-  '/uslugi/projekty-graficzne/szablony-postow-social-media': '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
+  '/uslugi/projekty-graficzne/szablony-postow-social-media':
+    '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
   ...LEGACY_REDIRECTS,
   ...PROJECT_REDIRECTS,
   ...EDUCATION_REDIRECTS,

@@ -2,14 +2,14 @@
   "toolKey": "loremIpsum",
   "locale": "pl",
   "metadata": {
-    "title": "Generator Lorem Ipsum - tekst przykładowy, akapity, zdania i losowe słowa",
-    "description": "Darmowy generator lorem ipsum online — 8 stylów: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business i więcej. 9 trybów generowania tekstu. Kopiuj jako tekst lub HTML.",
+    "title": "Darmowy generator Lorem Ipsum. Skopiuj przykładowy tekst do mockupów, prototypów i projektów graficznych",
+    "description": "Darmowy generator lorem ipsum wraz z 8 stylami przykładowych tekstów w tym: Bacon Ipsum, Cupcake Ipsum czy Legal Ipsum. Skopiuj przykładowy tekst dla nagłówków, zdań, akapitów, tabel czy cytatów w formie zwykłego tekstu lub HTML.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-pl.webp",
     "path": "/narzedzia/generator-lorem-ipsum"
   },
   "hero": {
-    "title": "Generator Lorem Ipsum - tekst przykładowy, akapity, zdania i losowe słowa",
-    "description": "8 stylów tekstu: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal i polski wypełniacz. 9 trybów: akapity, zdania, słowa, listy, nagłówki, linki, tabele, cytaty, definicje. Kopiuj lub pobierz jednym kliknięciem.",
+    "title": "Darmowy generator Lorem Ipsum. Skopiuj przykładowy tekst do mockupów, prototypów i projektów graficznych",
+    "description": "Darmowy generator lorem ipsum wraz z 8 stylami przykładowych tekstów w tym: Bacon Ipsum, Cupcake Ipsum czy Legal Ipsum. Skopiuj przykładowy tekst dla nagłówków, zdań, akapitów, tabel czy cytatów w formie zwykłego tekstu lub HTML.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-pl.webp"
   },
   "breadcrumbs": {
@@ -26,14 +26,13 @@
     "software": {
       "name": "Generator Lorem Ipsum - tekst przykładowy, akapity, zdania i losowe słowa",
       "alternateName": [
-        "Generator tekstu przykładowego online",
+        "Generator tekstu przykładowego",
         "Dummy text generator po polsku",
         "Generator losowych akapitów",
         "Placeholder text generator",
-        "Wypełniacz tekstu online",
+        "Wypełniacz tekstu",
         "Blind text generator",
         "Generator tekstu zastępczego",
-        "Lorem ipsum do mockupów i prototypów",
         "Bacon Ipsum generator",
         "Cupcake Ipsum generator",
         "Pirate Ipsum generator",
@@ -42,7 +41,7 @@
         "Business Ipsum generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Darmowy generator lorem ipsum online z 9 trybami generowania i 8 stylami tekstu. Generuj akapity, zdania, słowa, listy, nagłówki, linki, tabele, cytaty i definicje. Kopiuj jako tekst lub HTML, pobierz jako plik .txt. Statystyki w czasie rzeczywistym.",
+      "description": "Darmowy generator lorem ipsum z 9 trybami generowania i 8 stylami tekstu. Generuj akapity, zdania, słowa, listy, nagłówki, linki, tabele, cytaty i definicje. Kopiuj jako tekst lub HTML, pobierz jako plik .txt. Statystyki w czasie rzeczywistym.",
       "featureList": [
         "Generowanie akapitów lorem ipsum",
         "Generowanie pojedynczych zdań",
@@ -104,7 +103,7 @@
       "title": "Czym jest Lorem Ipsum i do czego służy",
       "html": "<p class=\"text-mid\">Lorem Ipsum to standardowy tekst zastępczy używany w branży poligraficznej, projektowania graficznego i tworzenia stron internetowych od ponad 500 lat. Tekst pochodzi z dzieła <em>De Finibus Bonorum et Malorum</em> (O granicach dobra i zła) napisanego przez Marka Tulliusza Cycerona w 45 roku p.n.e. Oryginalny fragment został celowo zmodyfikowany - dodano, usunięto i zamieniono słowa - tak aby tekst nie miał sensu, ale zachował naturalny rytm i rozkład liter zbliżone do prawdziwego języka.</p><p class=\"text-mid mt-3\">Generator Lorem Ipsum pozwala szybko utworzyć dowolną ilość tekstu przykładowego do mockupów, prototypów UI, projektów graficznych i testowania układów typograficznych. Narzędzie oferuje 9 trybów generowania (akapity, zdania, słowa, listy, nagłówki, linki, tabele, cytaty, definicje), 8 stylów tekstu i statystyki w czasie rzeczywistym.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-pl.webp",
-      "imageAlt": "Generator Lorem Ipsum - tekst przykładowy online - Arteon"
+      "imageAlt": "Generator Lorem Ipsum - tekst przykładowy - Arteon"
     },
     {
       "type": "gap",
@@ -260,122 +259,61 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Porównanie stylów tekstu zastępczego",
-      "featureLabel": "Cecha",
-      "plans": [
-        {
-          "id": "classic",
-          "name": "Lorem Ipsum",
-          "highlighted": true
-        },
-        {
-          "id": "hipster",
-          "name": "Hipster"
-        },
-        {
-          "id": "business",
-          "name": "Business"
-        },
-        {
-          "id": "polish",
-          "name": "Polski"
-        },
-        {
-          "id": "bacon",
-          "name": "Bacon"
-        },
-        {
-          "id": "cupcake",
-          "name": "Cupcake"
-        },
-        {
-          "id": "pirate",
-          "name": "Pirate"
-        },
-        {
-          "id": "legal",
-          "name": "Legal"
-        }
+      "labelHeader": "Cecha",
+      "cols": [
+        "Lorem Ipsum",
+        "Hipster",
+        "Business",
+        "Polski",
+        "Bacon",
+        "Cupcake",
+        "Pirate",
+        "Legal"
       ],
-      "features": [
+      "rows": [
         {
-          "name": "Język",
-          "values": {
-            "classic": "Łacina",
-            "hipster": "Angielski",
-            "business": "Angielski",
-            "polish": "Polski",
-            "bacon": "Angielski",
-            "cupcake": "Angielski",
-            "pirate": "Angielski",
-            "legal": "Angielski"
-          }
+          "label": "Język",
+          "values": [
+            "Łacina",
+            "Angielski",
+            "Angielski",
+            "Polski",
+            "Angielski",
+            "Angielski",
+            "Angielski",
+            "Angielski"
+          ]
         },
         {
-          "name": "Tematyka",
-          "values": {
-            "classic": "Filozofia",
-            "hipster": "Lifestyle",
-            "business": "Korporacje",
-            "polish": "Ogólny",
-            "bacon": "Gastronomia",
-            "cupcake": "Cukiernictwo",
-            "pirate": "Przygoda",
-            "legal": "Prawo"
-          }
+          "label": "Tematyka",
+          "values": [
+            "Filozofia",
+            "Lifestyle",
+            "Korporacje",
+            "Ogólny",
+            "Gastronomia",
+            "Cukiernictwo",
+            "Przygoda",
+            "Prawo"
+          ]
         },
         {
-          "name": "Neutralność wizualna",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Neutralność wizualna",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Naturalny rytm",
-          "values": {
-            "classic": true,
-            "hipster": true,
-            "business": true,
-            "polish": true,
-            "bacon": true,
-            "cupcake": true,
-            "pirate": true,
-            "legal": true
-          }
+          "label": "Naturalny rytm",
+          "values": ["✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"]
         },
         {
-          "name": "Standard branżowy",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Standard branżowy",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Humor / charakter",
-          "values": {
-            "classic": "Neutralny",
-            "hipster": "Średni",
-            "business": "Niski",
-            "polish": "Niski",
-            "bacon": "Wysoki",
-            "cupcake": "Wysoki",
-            "pirate": "Wysoki",
-            "legal": "Niski"
-          }
+          "label": "Humor / charakter",
+          "values": ["Neutralny", "Średni", "Niski", "Niski", "Wysoki", "Wysoki", "Wysoki", "Niski"]
         }
       ]
     },
@@ -522,7 +460,7 @@
       "title": "Pomóż nam ulepszyć narzędzia",
       "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby pracę? Napisz do nas - odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-pl.webp",
-      "imageAlt": "Generator Lorem Ipsum - tekst przykładowy online - Arteon",
+      "imageAlt": "Generator Lorem Ipsum - tekst przykładowy - Arteon",
       "defaultSubject": "Feedback: Generator Lorem Ipsum"
     },
     {

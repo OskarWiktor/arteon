@@ -2,14 +2,14 @@
   "toolKey": "imageResize",
   "locale": "pl",
   "metadata": {
-    "title": "Darmowe kadrowanie, zmiana rozmiaru i konwersja zdjęcia",
-    "description": "Zmień rozmiar, kadr i format zdjęcia za darmo. Skorzystaj z gotowych formatów dla mediów społecznościowych i pobierz JPG, PNG lub WebP.",
+    "title": "Darmowe narzędzie do edycji zdjęć: kadrowanie, zmiana rozmiaru i formatu obrazu",
+    "description": "Zmień rozmiar, kadr i format zdjęcia bez rejestracji i limitu. Skorzystaj z gotowych formatów dla mediów społecznościowych i pobierz swój obraz w formacie JPG, PNG lub WebP.",
     "ogImage": "/assets/tools/free-image-editor-crop-resize-and-convert/edytor-zdjec-online-pl.webp",
     "path": "/narzedzia/edytor-zdjec-online"
   },
   "hero": {
-    "title": "Zmień rozmiar, wykadruj i przekonwertuj zdjęcie online",
-    "description": "Zmień rozmiar, wykadruj i konwertuj zdjęcia do Instagram, Facebook i LinkedIn. Gotowe formaty, okrągłe avatary, eksport do JPG, PNG i WebP. Przetwarzanie lokalne w przeglądarce.",
+    "title": "Darmowe narzędzie do edycji zdjęć: kadrowanie, zmiana rozmiaru i formatu obrazu",
+    "description": "Zmień rozmiar, kadr i format zdjęcia bez rejestracji i limitu. Skorzystaj z gotowych formatów dla mediów społecznościowych i pobierz swój obraz w formacie JPG, PNG lub WebP.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
   "breadcrumbs": {
@@ -19,25 +19,25 @@
     },
     "third": {
       "href": "/narzedzia/edytor-zdjec-online",
-      "label": "Darmowy edytor zdjęć online"
+      "label": "Darmowy edytor zdjęć"
     }
   },
   "schemas": {
     "software": {
       "name": "Edytor zdjęć – kadrowanie, zmiana rozmiaru i konwersja",
       "alternateName": [
-        "Zmiana rozmiaru zdjęcia online",
-        "Kadrowanie zdjęć online",
-        "Przycinanie zdjęć online",
+        "Zmiana rozmiaru zdjęcia",
+        "Kadrowanie zdjęć",
+        "Przycinanie zdjęć",
         "Rozmiar zdjęcia Instagram",
         "Rozmiar zdjęcia Facebook",
         "Konwerter JPG na WebP",
-        "Okrągłe zdjęcie profilowe online",
-        "Kompresja zdjęć online"
+        "Okrągłe zdjęcie profilowe",
+        "Kompresja zdjęć"
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Darmowy edytor zdjęć online do zmiany rozmiaru, kadrowania i konwersji formatów. Gotowe presety dla Instagram, Facebook i LinkedIn. Tworzenie okrągłych avatarów. Eksport do JPG, PNG i WebP z kontrolą jakości. Przetwarzanie lokalne w przeglądarce.",
+      "description": "Darmowy edytor zdjęć do zmiany rozmiaru, kadrowania i konwersji formatów. Gotowe presety dla Instagram, Facebook i LinkedIn. Tworzenie okrągłych avatarów. Eksport do JPG, PNG i WebP z kontrolą jakości. Przetwarzanie lokalne w przeglądarce.",
       "featureList": [
         "Zmiana rozmiaru zdjęcia do dowolnych wymiarów",
         "Kadrowanie z interaktywnym wyborem obszaru",
@@ -85,10 +85,10 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Zmień rozmiar zdjęcia online - kadrowanie, konwersja i kompresja w jednym narzędziu",
-      "html": "<p class=\"text-mid\">Narzędzie do edycji zdjęć online pozwala szybko dopasować obrazy do konkretnych wymiarów. Możesz zmienić rozmiar zdjęcia do dowolnych wymiarów w pikselach, wybrać gotowy format dla mediów społecznościowych lub przyciąć fragment obrazu z precyzyjnym kadrowaniem.</p><p class=\"text-mid mt-3\">Oprócz zmiany rozmiaru narzędzie oferuje konwersję formatów (JPG, PNG, WebP), tworzenie okrągłych avatarów i kontrolę jakości kompresji.</p>",
+      "title": "Zmień rozmiar zdjęcia - kadrowanie, konwersja i kompresja w jednym narzędziu",
+      "html": "<p class=\"text-mid\">Narzędzie do edycji zdjęć pozwala szybko dopasować obrazy do konkretnych wymiarów. Możesz zmienić rozmiar zdjęcia do dowolnych wymiarów w pikselach, wybrać gotowy format dla mediów społecznościowych lub przyciąć fragment obrazu z precyzyjnym kadrowaniem.</p><p class=\"text-mid mt-3\">Oprócz zmiany rozmiaru narzędzie oferuje konwersję formatów (JPG, PNG, WebP), tworzenie okrągłych avatarów i kontrolę jakości kompresji.</p>",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/edytor-zdjec-online-pl.webp",
-      "imageAlt": "Edytor zdjęć online – Arteon"
+      "imageAlt": "Edytor zdjęć – Arteon"
     },
     {
       "type": "gap",
@@ -96,7 +96,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Jak zmienić rozmiar zdjęcia online?",
+      "title": "Jak zmienić rozmiar zdjęcia?",
       "description": "Edycja zdjęcia zajmuje zaledwie kilka sekund:",
       "grid": "three",
       "items": [
@@ -387,8 +387,8 @@
       "title": "Pomóż nam ulepszyć narzędzia",
       "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/edytor-zdjec-online-pl.webp",
-      "imageAlt": "Edytor zdjęć online – Arteon",
-      "defaultSubject": "Feedback: Edytor zdjęć online"
+      "imageAlt": "Edytor zdjęć – Arteon",
+      "defaultSubject": "Feedback: Edytor zdjęć"
     },
     {
       "type": "gap",

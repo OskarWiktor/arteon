@@ -2,13 +2,13 @@
   "toolKey": "markdownToHtml",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter Markdown na HTML – dla CMS, e-maili i dokumentacji",
+    "title": "Darmowy konwerter formatu Markdown na HTML bez limitu plików i rejestracji",
     "description": "Zamień plik Markdown na semantyczny HTML gotowy do WordPressa, Docusaurusa i szablonów e-mail. Działa w przeglądarce bez rejestracji – dane zostają na komputerze.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-markdown-na-html"
   },
   "hero": {
-    "title": "Zamień Markdown na HTML – konwerter dla CMS i newsletterów",
+    "title": "Darmowy konwerter formatu Markdown na HTML – konwerter dla CMS i newsletterów",
     "description": "Piszesz w Markdown, ale CMS lub e-mail wymaga HTML? Konwerter generuje semantyczny HTML z poprawnymi tagami – bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,10 +25,14 @@
   "schemas": {
     "software": {
       "name": "Konwerter Markdown na HTML - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana Markdown na HTML online", "Konwersja Markdown do HTML", "Markdown to HTML converter"],
+      "alternateName": [
+        "Zamiana Markdown na HTML",
+        "Konwersja Markdown do HTML",
+        "Markdown to HTML converter"
+      ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
-      "description": "Darmowy konwerter Markdown na HTML online. Zamień dane Markdown na HTML w przeglądarce - dane nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter Markdown na HTML. Zamień dane Markdown na HTML w przeglądarce - dane nie są wysyłane na serwer.",
       "featureList": [
         "Konwersja pełnej składni CommonMark i GitHub Flavored Markdown (GFM)",
         "Generowanie semantycznych tagów HTML: h1–h6, p, ul, ol, pre, code, blockquote",
@@ -43,7 +47,7 @@
       ]
     },
     "howTo": {
-      "name": "Jak zamienić Markdown na HTML online",
+      "name": "Jak zamienić Markdown na HTML",
       "description": "Instrukcja konwersji danych Markdown na format HTML.",
       "steps": [
         {
@@ -175,64 +179,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Markdown vs HTML – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["Markdown", "HTML"],
+      "rows": [
         {
-          "id": "markdown",
-          "name": "Markdown"
+          "label": "Dane zagnieżdżone",
+          "values": ["—", "✓"]
         },
         {
-          "id": "html",
-          "name": "HTML",
-          "highlighted": true
+          "label": "Dane tabelaryczne",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Walidacja schematu",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Czytelność dla człowieka",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Zwięzła składnia",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Dane zagnieżdżone",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Dane tabelaryczne",
-          "values": {
-            "markdown": true,
-            "html": true
-          }
-        },
-        {
-          "name": "Walidacja schematu",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Czytelność dla człowieka",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "markdown": false,
-            "html": false
-          }
-        },
-        {
-          "name": "Zwięzła składnia",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",
@@ -298,7 +274,7 @@
         },
         {
           "question": "Do czego mogę użyć wynikowego HTML?",
-          "answer": "Wynikowy HTML możesz wstawić na stronę internetową, do newslettera, systemu CMS, dokumentacji online lub dowolnego miejsca przyjmującego kod HTML."
+          "answer": "Wynikowy HTML możesz wstawić na stronę internetową, do newslettera, systemu CMS, dokumentacji lub dowolnego miejsca przyjmującego kod HTML."
         },
         {
           "question": "Czy konwersja Markdown na HTML jest bezpieczna?",

@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer WebP-bestanden naar AVIF. Nog betere compressie in een modern formaat. Alle verwerking gebeurt lokaal in je browser - bestanden verlaten je apparaat niet.",
-      "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
-      "alternateName": ["WEBP naar AVIF omzetten", "WEBP naar AVIF conversie", "Gratis WEBP naar AVIF converter"]
+      "featureList": [
+        "Conversie naar AVIF",
+        "Kwaliteitsaanpassing (60-95%)",
+        "Batchconversie",
+        "Lokale verwerking in de browser"
+      ],
+      "alternateName": [
+        "WEBP naar AVIF omzetten",
+        "WEBP naar AVIF conversie",
+        "Gratis WEBP naar AVIF converter"
+      ]
     },
     "howTo": {
       "name": "WebP naar AVIF converteren",
@@ -173,78 +182,47 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs AVIF – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["WebP", "AVIF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Lossy-compressie",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          ]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["8-bit (16.7M)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "webp": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

@@ -14,22 +14,22 @@ import {
   RiShoppingCartLine,
 } from 'react-icons/ri';
 
-import BenefitBelt from '@/components/sections/BenefitBelt';
-import Breadcrumbs from '@/components/sections/BreadCrumbs';
-import SectionContactForm from '@/components/sections/SectionContactForm';
-import CTABanner from '@/components/sections/CTABanner';
-import FeatureGrid from '@/components/sections/FeatureGrid';
-import HeroBanner from '@/components/sections/HeroBanner';
-import SectionBento from '@/components/ui/sections/SectionBento';
-import WorkSteps from '@/components/sections/steps/WorkSteps';
-import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import Button from '@/components/ui/buttons/Button';
-import FaqPanels from '@/components/ui/FaqPanels';
-import Gap from '@/components/ui/Gap';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Wrapper from '@/components/ui/Wrapper';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import WorkSteps from '@/components/organisms/WorkSteps';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import FaqPanels from '@/components/molecules/FaqPanels';
+import Divider from '@/components/atoms/Divider';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import Wrapper from '@/components/atoms/Wrapper';
 import { buildServiceSchema } from '@/lib/serviceSchema';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { siteUrl } from '@/utils/absoluteUrl';
 
@@ -37,13 +37,14 @@ function ServiceSchema() {
   const json = buildServiceSchema({
     path: '/uslugi/tworzenie-tresci',
     serviceName: 'Tworzenie treści',
-    description: 'Treści dla stron, sklepów i blogów: oferty, artykuły, opisy produktów i microcopy - pod intencje użytkownika i SEO.',
+    description:
+      'Treści dla stron, sklepów i blogów: oferty, artykuły, opisy produktów i microcopy - pod intencje użytkownika i SEO.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
 
   return (
-    <Script id="schema-service-tworzenie-tresci" type="application/ld+json">
+    <Script id='schema-service-tworzenie-tresci' type='application/ld+json'>
       {JSON.stringify(json)}
     </Script>
   );
@@ -51,14 +52,22 @@ function ServiceSchema() {
 
 export const metadata = {
   title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
-  description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły blogowe, opisy produktów i treści na strony z redakcją pod SEO.',
+  description:
+    'Klarowne teksty dopasowane do odbiorcy. Artykuły blogowe, opisy produktów i treści na strony z redakcją pod SEO.',
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/tworzenie-tresci' },
   openGraph: {
     title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
-    description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły blogowe, opisy produktów i treści na strony z redakcją pod SEO.',
+    description:
+      'Klarowne teksty dopasowane do odbiorcy. Artykuły blogowe, opisy produktów i treści na strony z redakcją pod SEO.',
     url: `${siteUrl}/uslugi/tworzenie-tresci`,
     type: 'website',
-    images: [{ url: `${siteUrl}/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp`, width: 1200, height: 630 }],
+    images: [
+      {
+        url: `${siteUrl}/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp`,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 } as const;
 
@@ -66,175 +75,184 @@ export default function OfferContentPage() {
   return (
     <>
       <HeroBanner
-        title="Tworzenie treści"
-        description={<>Tworzymy artykuły, opisy produktów i treści na strony. Redakcja pod SEO i spójny język marki.</>}
-        secondaryCtaLabel="Bezpłatna wycena"
-        secondaryCtaLink="#kontakt"
-        variant="left"
-        backgroundImage="/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp"
-        overlay="black"
+        title='Tworzenie treści'
+        description={
+          <>
+            Tworzymy artykuły, opisy produktów i treści na strony. Redakcja pod SEO i spójny język
+            marki.
+          </>
+        }
+        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaHref='#kontakt'
+        variant='left'
+        backgroundImage='/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp'
+        overlay='black'
       />
 
-      <BenefitBelt variant="carousel" />
+      <BenefitBelt variant='carousel' />
 
-      <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/tworzenie-tresci`, label: 'Tworzenie treści' }} includeJsonLd />
+      <Breadcrumbs
+        second={{ href: '/uslugi', label: 'Usługi' }}
+        third={{ href: `/uslugi/tworzenie-tresci`, label: 'Tworzenie treści' }}
+        includeJsonLd
+      />
 
       <Wrapper>
-        <Gap size="xs" />
+        <Divider size='xs' />
 
         <FeatureGrid
-          title="Co zyskujesz tworząc treści z nami?"
-          subtitle="Nasz standard pracy"
+          title='Co zyskujesz tworząc treści z nami?'
+          subtitle='Nasz standard pracy'
           items={[
             {
               title: 'Treści pod SEO - widoczność w Google',
-              icon: <RiFileSearchLine className="text-primary h-6 w-6" />,
+              icon: <RiFileSearchLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Redakcja treści sprzedażowych i marketingowych',
-              icon: <RiArticleLine className="text-primary h-6 w-6" />,
+              icon: <RiArticleLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Język marki - spójny ton komunikacji',
-              icon: <RiChatQuoteLine className="text-primary h-6 w-6" />,
+              icon: <RiChatQuoteLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Treści budujące emocje i transformację klienta',
-              icon: <IoSparkles className="text-primary h-6 w-6" />,
+              icon: <IoSparkles className='text-primary h-6 w-6' />,
             },
             {
               title: 'Artykuły i wpisy eksperckie na bloga',
-              icon: <RiBookOpenLine className="text-primary h-6 w-6" />,
+              icon: <RiBookOpenLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Scenariusze do rolek i social mediów',
-              icon: <RiShareForwardLine className="text-primary h-6 w-6" />,
+              icon: <RiShareForwardLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Opisy produktów wspierające SEO',
-              icon: <RiPencilRuler2Line className="text-primary h-6 w-6" />,
+              icon: <RiPencilRuler2Line className='text-primary h-6 w-6' />,
             },
             {
               title: 'Treści dopasowane do archetypu i wartości marki',
-              icon: <RiTeamLine className="text-primary h-6 w-6" />,
+              icon: <RiTeamLine className='text-primary h-6 w-6' />,
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionSteps
-          title="Oferta Tworzenia treści"
+          title='Oferta Tworzenia treści'
           items={[
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
+              icon: <RiFileTextLine className='h-8 w-8' />,
               title: 'Strony www',
               subtitle: 'od 600 zł',
               description: (
-                <div className="flex h-full flex-col">
-                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                <div className='flex h-full flex-col'>
+                  <ul className='mb-3 list-disc space-y-1 pl-4 text-sm'>
                     <li>Piszemy treści, które jasno przedstawiają ofertę</li>
                     <li>Układamy strukturę, by prowadziła odbiorcę przez kolejne etapy</li>
                     <li>Dostosowujemy język do Twojej branży i klientów</li>
                   </ul>
-                  <div className="mt-auto">
-                    <Button arrow link="#kontakt">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='#kontakt'>
                       Wyceń treści do strony
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiArticleLine className="h-8 w-8" />,
+              icon: <RiArticleLine className='h-8 w-8' />,
               title: 'Artykuły eksperckie',
               subtitle: 'od 300 zł',
               description: (
-                <div className="flex h-full flex-col">
-                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                <div className='flex h-full flex-col'>
+                  <ul className='mb-3 list-disc space-y-1 pl-4 text-sm'>
                     <li>Przygotowujemy artykuły eksperckie i edukacyjne</li>
                     <li>Optymalizujemy je pod SEO, by wzmacniały widoczność</li>
                     <li>Planujemy publikacje, by utrzymać regularność i wspomóc SEO</li>
                   </ul>
-                  <div className="mt-auto">
-                    <Button arrow link="#kontakt">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='#kontakt'>
                       Zamów artykuły
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiShoppingCartLine className="h-8 w-8" />,
+              icon: <RiShoppingCartLine className='h-8 w-8' />,
               title: 'E-commerce: opisy',
               subtitle: 'od 40 zł / szt.',
               description: (
-                <div className="flex h-full flex-col">
-                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                <div className='flex h-full flex-col'>
+                  <ul className='mb-3 list-disc space-y-1 pl-4 text-sm'>
                     <li>Piszemy opisy produktów pokazujące korzyści</li>
                     <li>Tworzymy krótkie treści do szybkich decyzji zakupowych</li>
                     <li>Przygotowujemy rozbudowane opisy premium dla produktów wyższej klasy</li>
                   </ul>
-                  <div className="mt-auto">
-                    <Button arrow link="#kontakt">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='#kontakt'>
                       Wyceń treści do sklepu
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiShareForwardLine className="h-8 w-8" />,
+              icon: <RiShareForwardLine className='h-8 w-8' />,
               title: 'Media społecznościowe: treści',
               subtitle: 'od 30 zł',
               description: (
-                <div className="flex h-full flex-col">
-                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                <div className='flex h-full flex-col'>
+                  <ul className='mb-3 list-disc space-y-1 pl-4 text-sm'>
                     <li>Przygotowujemy posty, które zatrzymują uwagę i reakcje</li>
                     <li>Piszemy scenariusze z jasnym wezwaniem do działania</li>
                     <li>Układamy scenariusze rolek pod większe zasięgi</li>
                   </ul>
-                  <div className="mt-auto">
-                    <Button arrow link="#kontakt">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='#kontakt'>
                       Zamów copy do social
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiFilePdfLine className="h-8 w-8" />,
+              icon: <RiFilePdfLine className='h-8 w-8' />,
               title: 'Oferty i case studies',
               subtitle: 'od 400 zł',
               description: (
-                <div className="flex h-full flex-col">
-                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                <div className='flex h-full flex-col'>
+                  <ul className='mb-3 list-disc space-y-1 pl-4 text-sm'>
                     <li>Projektujemy oferty sprzedażowe podkreślające Twoją wartość</li>
                     <li>Opracowujemy case studies pokazujące efekty współpracy</li>
                   </ul>
-                  <div className="mt-auto">
-                    <Button arrow link="#kontakt">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='#kontakt'>
                       Poproś o ofertę PDF
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiPencilLine className="h-8 w-8" />,
+              icon: <RiPencilLine className='h-8 w-8' />,
               title: 'Korekta i redakcja',
               subtitle: 'wycena indywidualna',
               description: (
-                <div className="flex h-full flex-col">
-                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                <div className='flex h-full flex-col'>
+                  <ul className='mb-3 list-disc space-y-1 pl-4 text-sm'>
                     <li>Poprawiamy błędy językowe i stylistyczne</li>
                     <li>Ujednolicamy format, ton i układ treści</li>
                     <li>Dostosowujemy teksty pod SEO dla lepszej widoczności</li>
                   </ul>
-                  <div className="mt-auto">
-                    <Button arrow link="#kontakt">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='#kontakt'>
                       Prześlij tekst do korekty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -242,34 +260,35 @@ export default function OfferContentPage() {
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <TestimonialsCarousel />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <WorkSteps variant="content" />
+        <WorkSteps variant='content' />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionContactForm
-          title="Sprawdź koszt tworzenia treści"
-          description="Napisz czym zajmuje się Twoja firma, jakie treści chcesz tworzyć i na jakich kanałach publikujesz - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp"
-          imageAlt="Content marketing - tworzenie treści dla firm"
-          defaultSubject="Treści"
+          title='Sprawdź koszt tworzenia treści'
+          description='Napisz czym zajmuje się Twoja firma, jakie treści chcesz tworzyć i na jakich kanałach publikujesz - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp'
+          imageAlt='Content marketing - tworzenie treści dla firm'
+          defaultSubject='Treści'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/tworzenie-tresci"
-          title="Najczęstsze pytania dotyczące tworzenia treści"
+          defaultOpenIndex={1}
+          pageUrl='https://www.arteonagency.pl/uslugi/tworzenie-tresci'
+          title='Najczęstsze pytania dotyczące tworzenia treści'
           items={[
             {
               question: 'Ile czasu trwa przygotowanie treści?',
-              answer: 'Standardowo od 2 do 10 dni roboczych - zależnie od długości, złożoności i naszej bieżącej dostępności.',
+              answer:
+                'Standardowo od 2 do 10 dni roboczych - zależnie od długości, złożoności i naszej bieżącej dostępności.',
             },
             {
               question: 'Czy treści są unikalne i pisane ręcznie?',
@@ -277,32 +296,37 @@ export default function OfferContentPage() {
             },
             {
               question: 'Czy możemy mieć wpływ na styl i język treści?',
-              answer: 'Tak. Na początku wspólnie ustalamy ton komunikacji i dostosowujemy treści do Twojej marki oraz grupy docelowej.',
+              answer:
+                'Tak. Na początku wspólnie ustalamy ton komunikacji i dostosowujemy treści do Twojej marki oraz grupy docelowej.',
             },
             {
               question: 'Czy oferujecie też korektę i redakcję istniejących treści?',
-              answer: 'Tak, poprawiamy i przekształcamy obecne treści tak, aby były bardziej przekonujące, poprawne językowo i dopasowane do celów marketingowych.',
+              answer:
+                'Tak, poprawiamy i przekształcamy obecne treści tak, aby były bardziej przekonujące, poprawne językowo i dopasowane do celów marketingowych.',
             },
             {
               question: 'Czy treści są zoptymalizowane pod SEO?',
-              answer: 'Tak, tworzymy je z uwzględnieniem fraz kluczowych, struktury nagłówków i zasad SEO copywritingu - tak, aby dobrze wypadały w Google.',
+              answer:
+                'Tak, tworzymy je z uwzględnieniem fraz kluczowych, struktury nagłówków i zasad SEO copywritingu - tak, aby dobrze wypadały w Google.',
             },
             {
               question: 'Czy mogę zlecić regularne przygotowanie treści (np. co miesiąc)?',
-              answer: 'Tak, możliwa jest stała współpraca abonamentowa - np. comiesięczne artykuły, newslettery lub pakiety treści.',
+              answer:
+                'Tak, możliwa jest stała współpraca abonamentowa - np. comiesięczne artykuły, newslettery lub pakiety treści.',
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionBento
-          title="Poznaj inne usługi"
+          title='Poznaj inne usługi'
           items={[
             {
               title: 'Pozycjonowanie stron',
               size: 'large',
-              backgroundImage: '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
+              backgroundImage:
+                '/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
@@ -330,20 +354,24 @@ export default function OfferContentPage() {
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <ArticlesCarousel title="Przydatne artykuły dotyczące tworzenia treści" categorySlug="tresci" articles={getArticlePreviewsByCategory('tresci', 6)} />
+        <ArticlesCarousel
+          title='Przydatne artykuły dotyczące tworzenia treści'
+          categorySlug='tresci'
+          articles={getArticlePreviewsByCategory('tresci', 6)}
+        />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
       <CTABanner
-        title="Stwórzmy treści, które działają jak magnez"
-        description="Tworzymy treści, które trafiają do ludzi oraz algorytmów, wspierając sprzedaż"
-        btnOne="Skontaktuj się"
-        btnOneLink="#kontakt"
-        backgroundImage="/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp"
-        overlay="black"
+        title='Stwórzmy treści, które działają jak magnez'
+        description='Tworzymy treści, które trafiają do ludzi oraz algorytmów, wspierając sprzedaż'
+        btnOne='Skontaktuj się'
+        btnOneHref='#kontakt'
+        backgroundImage='/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp'
+        overlay='black'
       />
       <ServiceSchema />
     </>

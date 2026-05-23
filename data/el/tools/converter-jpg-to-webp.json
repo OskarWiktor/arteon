@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Μετατροπέας JPG σε WebP",
-      "alternateName": ["Μετατροπή JPG σε WEBP", "Μετατροπέας JPG σε WEBP", "Δωρεάν μετατροπέας JPG σε WEBP"],
+      "alternateName": [
+        "Μετατροπή JPG σε WEBP",
+        "Μετατροπέας JPG σε WEBP",
+        "Δωρεάν μετατροπέας JPG σε WEBP"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρέψτε φωτογραφίες JPG σε ελαφρύ WebP. Μείωση βάρους έως 35%. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
-      "featureList": ["Μετατροπή JPG σε WEBP", "Έλεγχος ποιότητας WEBP", "Ομαδική μετατροπή", "Τοπική επεξεργασία στον browser", "Χωρίς μεταφόρτωση αρχείων"]
+      "featureList": [
+        "Μετατροπή JPG σε WEBP",
+        "Έλεγχος ποιότητας WEBP",
+        "Ομαδική μετατροπή",
+        "Τοπική επεξεργασία στον browser",
+        "Χωρίς μεταφόρτωση αρχείων"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε JPG σε WEBP",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs WebP – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["JPG", "WebP"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": ["Όλοι οι περιηγητές", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Βάθος χρώματος",
+          "values": ["8-bit (16.7M)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "jpg": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "jpg": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "jpg": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "jpg": "Όλοι οι περιηγητές",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Βάθος χρώματος",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",

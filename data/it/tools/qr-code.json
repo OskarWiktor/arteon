@@ -127,7 +127,7 @@
         {
           "icon": "RiGlobalLine",
           "title": "URL / Sito web",
-          "description": "Reindirizza gli utenti al tuo sito, landing page o negozio online."
+          "description": "Reindirizza gli utenti al tuo sito, landing page o negozio."
         },
         {
           "icon": "RiContactsLine",
@@ -249,68 +249,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG: quale formato scegliere per la stampa?",
-      "plans": [
+      "cols": ["PNG (raster)", "SVG (vettoriale)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (raster)"
+          "label": "Siti web e social media",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (vettoriale)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Siti web e social media",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Volantini e biglietti da visita",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Volantini e biglietti da visita",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Poster e striscioni (grande formato)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Poster e striscioni (grande formato)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Ridimensionamento senza perdita di qualità",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Ridimensionamento senza perdita di qualità",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Modifica in software grafico",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Modifica in software grafico",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Dimensione file ridotta",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Dimensione file ridotta",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Presentazioni",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Presentazioni",
+          "values": ["✓", "✓"]
         }
       ]
     },

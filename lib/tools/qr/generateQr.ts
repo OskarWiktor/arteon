@@ -61,4 +61,7 @@ export async function generateQrSvg(options: QrOptions): Promise<string> {
   return svg;
 }
 
-export { calculateHexContrast as calculateContrast, isHexContrastSufficient as isContrastSufficient } from '@/lib/tools/color/contrast';
+export {
+  calculateHexContrast as calculateContrast,
+  isHexContrastSufficient as isContrastSufficient,
+} from '@/lib/tools/color/contrast';

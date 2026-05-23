@@ -1,27 +1,34 @@
-import WorkSteps from '@/components/sections/steps/WorkSteps';
-import HeroBanner from '@/components/sections/HeroBanner';
-import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABanner from '@/components/sections/CTABanner';
-import Gap from '@/components/ui/Gap';
-import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiArticleLine, RiFileTextLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
-import SectionContactForm from '@/components/sections/SectionContactForm';
-import Wrapper from '@/components/ui/Wrapper';
-import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
-import Breadcrumbs from '@/components/sections/BreadCrumbs';
-import FaqPanels from '@/components/ui/FaqPanels';
-import FeatureGrid from '@/components/sections/FeatureGrid';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
+import WorkSteps from '@/components/organisms/WorkSteps';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import CTABanner from '@/components/organisms/CTABanner';
+import Divider from '@/components/atoms/Divider';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import {
+  RiPencilRuler2Line,
+  RiArticleLine,
+  RiFileTextLine,
+  RiLayoutLine,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Wrapper from '@/components/atoms/Wrapper';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import FaqPanels from '@/components/molecules/FaqPanels';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import SectionPrices from '@/components/ui/sections/SectionPrices';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt ulotki | Arteon',
-  description: 'Projekt ulotki reklamowej z układem, typografią i grafiką. Pliki do druku (CMYK) oraz wersja cyfrowa.',
+  description:
+    'Projekt ulotki reklamowej z układem, typografią i grafiką. Pliki do druku (CMYK) oraz wersja cyfrowa.',
   alternates: {
     canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
   },
@@ -30,7 +37,13 @@ export const metadata = {
     description: 'Skuteczna ulotka z jasnym przekazem i mocnym CTA. Pliki gotowe do druku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp', width: 1200, height: 630 }],
+    images: [
+      {
+        url: 'https://www.arteonagency.pl/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 } as const;
 
@@ -38,13 +51,14 @@ function ServiceSchema() {
   const json = buildServiceSchema({
     path: '/uslugi/projekty-graficzne/projekt-ulotki',
     serviceName: 'Projekt ulotki',
-    description: 'Skuteczne ulotki reklamowe: jasne CTA, czytelna hierarchia, formaty pod druk i wersje cyfrowe.',
+    description:
+      'Skuteczne ulotki reklamowe: jasne CTA, czytelna hierarchia, formaty pod druk i wersje cyfrowe.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
 
   return (
-    <Script id="schema-service-projekt-ulotki" type="application/ld+json">
+    <Script id='schema-service-projekt-ulotki' type='application/ld+json'>
       {JSON.stringify(json)}
     </Script>
   );
@@ -54,16 +68,21 @@ export default function OfferDesignFlyerPage() {
   return (
     <>
       <HeroBanner
-        title="Projekt ulotki"
-        description={<>Tworzymy ulotki reklamowe z jasnym przekazem i czytelnym układem. Pliki do druku (CMYK) oraz wersja cyfrowa.</>}
-        secondaryCtaLabel="Bezpłatna wycena"
-        secondaryCtaLink="#kontakt"
-        variant="left"
-        backgroundImage="/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp"
-        overlay="black"
+        title='Projekt ulotki'
+        description={
+          <>
+            Tworzymy ulotki reklamowe z jasnym przekazem i czytelnym układem. Pliki do druku (CMYK)
+            oraz wersja cyfrowa.
+          </>
+        }
+        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaHref='#kontakt'
+        variant='left'
+        backgroundImage='/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp'
+        overlay='black'
       />
 
-      <BenefitBelt variant="carousel" />
+      <BenefitBelt variant='carousel' />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -79,25 +98,39 @@ export default function OfferDesignFlyerPage() {
       />
 
       <Wrapper>
-        <Gap size="xs" />
+        <Divider size='xs' />
 
-        <ProjectsCarousel title="Realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title='Realizacje projektów graficznych' category='grafika' />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Co zyskujesz zamawiając projekt ulotki?">
+        <SectionInfo title='Co zyskujesz zamawiając projekt ulotki?'>
           <p>
-            <strong>Profesjonalna ulotka dociera tam, gdzie reklama cyfrowa znika po sekundzie.</strong> Materiały drukowane są łatwiejsze w odbiorze i dłużej zostają w pamięci - badania
-            neuromarketingowe pokazują niższe obciążenie poznawcze i wyższą zapamiętywalność niż w kanale wyłącznie cyfrowym (badanie Temple University / Canada Post, 2015). Dobrze zaprojektowana
-            ulotka prowadzi klienta od nagłówka, przez korzyści, aż do konkretnego działania.
+            <strong>
+              Profesjonalna ulotka dociera tam, gdzie reklama cyfrowa znika po sekundzie.
+            </strong>{' '}
+            Materiały drukowane są łatwiejsze w odbiorze i dłużej zostają w pamięci - badania
+            neuromarketingowe pokazują niższe obciążenie poznawcze i wyższą zapamiętywalność niż w
+            kanale wyłącznie cyfrowym (badanie Temple University / Canada Post, 2015). Dobrze
+            zaprojektowana ulotka prowadzi klienta od nagłówka, przez korzyści, aż do konkretnego
+            działania.
           </p>
 
           <br />
 
           <p>
-            <strong>Wygląd materiałów graficznych, w tym ulotki, realnie wpływa na zaufanie.</strong> Odbiorcy często oceniają wiarygodność firmy po jakości oprawy. Estetyczny, czytelny projekt
-            zwiększa szansę na pozytywną reakcję - wejście na stronę, telefon lub wizytę stacjonarną
-            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
+            <strong>
+              Wygląd materiałów graficznych, w tym ulotki, realnie wpływa na zaufanie.
+            </strong>{' '}
+            Odbiorcy często oceniają wiarygodność firmy po jakości oprawy. Estetyczny, czytelny
+            projekt zwiększa szansę na pozytywną reakcję - wejście na stronę, telefon lub wizytę
+            stacjonarną
+            <a
+              href='https://credibility.stanford.edu/guidelines/index.html'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-link ml-1'
+            >
               (Stanford - web credibility)
             </a>
             . Ulotka łączy prosty przekaz z jasnym wezwaniem do działania.
@@ -108,98 +141,132 @@ export default function OfferDesignFlyerPage() {
           <p>
             <strong>Dobra ulotka robi trzy rzeczy naraz:</strong>
           </p>
-          <ul className="ml-5 list-disc">
+          <ul className='ml-5 list-disc'>
             <li>Przedstawia ofertę w prosty i zrozumiały sposób,</li>
             <li>Prowadzi do konkretnego działania (telefon, rezerwacja, wejście na stronę),</li>
             <li>Buduje rozpoznawalność marki i zwiększa zaufanie.</li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FeatureGrid
-          title="Co zyskujesz zamawiając ulotkę?"
-          subtitle="Nasz standard pracy"
+          title='Co zyskujesz zamawiając ulotkę?'
+          subtitle='Nasz standard pracy'
           items={[
             {
               title: 'Jasny przekaz i mocne wezwanie do działania',
-              description: <>Tworzymy układy, które przyciągają wzrok, wyjaśniają ofertę i prowadzą prosto do kontaktu lub zakupu.</>,
-              icon: <RiArticleLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Tworzymy układy, które przyciągają wzrok, wyjaśniają ofertę i prowadzą prosto do
+                  kontaktu lub zakupu.
+                </>
+              ),
+              icon: <RiArticleLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Format dopasowany do celu',
-              description: <>Dobieramy rozmiar i orientację ulotki tak, aby była poręczna, czytelna i wygodna w dystrybucji.</>,
-              icon: <RiLayoutLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Dobieramy rozmiar i orientację ulotki tak, aby była poręczna, czytelna i wygodna w
+                  dystrybucji.
+                </>
+              ),
+              icon: <RiLayoutLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Pliki gotowe do druku i wersja cyfrowa',
-              description: <>Otrzymujesz pliki przygotowane pod drukarnię oraz wersję do wykorzystania w internecie lub mailingu.</>,
-              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Otrzymujesz pliki przygotowane pod drukarnię oraz wersję do wykorzystania w
+                  internecie lub mailingu.
+                </>
+              ),
+              icon: <RiFileTextLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Dopracowanie detali',
-              description: <>W cenie przewidujemy poprawki. Wspólnie dopieszczamy treści, układ i wyróżniki Twojej oferty.</>,
-              icon: <RiPencilRuler2Line className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  W cenie przewidujemy poprawki. Wspólnie dopieszczamy treści, układ i wyróżniki
+                  Twojej oferty.
+                </>
+              ),
+              icon: <RiPencilRuler2Line className='text-primary h-6 w-6' />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
+              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Dla kogo projekt ulotki ma największy sens?" subtitle="Dla kogo">
-          <ul className="ml-5 list-disc space-y-2">
+        <SectionInfo title='Dla kogo projekt ulotki ma największy sens?' subtitle='Dla kogo'>
+          <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Dla firm lokalnych,</strong> które chcą poinformować o nowej ofercie, promocji, otwarciu lokalu lub wydarzeniu w konkretnej okolicy.
+              <strong>Dla firm lokalnych,</strong> które chcą poinformować o nowej ofercie,
+              promocji, otwarciu lokalu lub wydarzeniu w konkretnej okolicy.
             </li>
             <li>
-              <strong>Dla gabinetów, salonów i punktów usługowych,</strong> które chcą w prosty sposób pokazać zakres usług i zachęcić do rezerwacji wizyty.
+              <strong>Dla gabinetów, salonów i punktów usługowych,</strong> które chcą w prosty
+              sposób pokazać zakres usług i zachęcić do rezerwacji wizyty.
             </li>
             <li>
-              <strong>Dla organizatorów wydarzeń,</strong> szkoleń i konferencji, którzy potrzebują materiału informacyjnego z kluczowymi danymi: gdzie, kiedy i jak się zapisać.
+              <strong>Dla organizatorów wydarzeń,</strong> szkoleń i konferencji, którzy potrzebują
+              materiału informacyjnego z kluczowymi danymi: gdzie, kiedy i jak się zapisać.
             </li>
             <li>
-              <strong>Dla firm łączących offline z online,</strong> które chcą, aby ulotka kierowała na stronę www, landing page lub profil w mediach społecznościowych (np. QR kod + krótkie CTA).
+              <strong>Dla firm łączących offline z online,</strong> które chcą, aby ulotka kierowała
+              na stronę www, landing page lub profil w mediach społecznościowych (np. QR kod +
+              krótkie CTA).
             </li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu ulotki?" subtitle="Efekty po wdrożeniu">
-          <ul className="ml-5 list-disc space-y-2">
+        <SectionInfo
+          title='Jakie efekty możesz zobaczyć po wdrożeniu ulotki?'
+          subtitle='Efekty po wdrożeniu'
+        >
+          <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Więcej wejść na stronę lub profil,</strong> bo klient otrzymuje jasny adres, QR kod i prostą instrukcję, co zrobić w kolejnym kroku.
+              <strong>Więcej wejść na stronę lub profil,</strong> bo klient otrzymuje jasny adres,
+              QR kod i prostą instrukcję, co zrobić w kolejnym kroku.
             </li>
             <li>
-              <strong>Więcej telefonów i zapytań z lokalnego rynku,</strong> szczególnie przy dobrze zaplanowanej dystrybucji w miejscach odwiedzanych przez Twoją grupę docelową.
+              <strong>Więcej telefonów i zapytań z lokalnego rynku,</strong> szczególnie przy dobrze
+              zaplanowanej dystrybucji w miejscach odwiedzanych przez Twoją grupę docelową.
             </li>
             <li>
-              <strong>Większa rozpoznawalność marki offline,</strong> bo logo, kolory i kluczowy komunikat powtarzają się na ulotce, stronie i innych materiałach.
+              <strong>Większa rozpoznawalność marki offline,</strong> bo logo, kolory i kluczowy
+              komunikat powtarzają się na ulotce, stronie i innych materiałach.
             </li>
             <li>
-              <strong>Lepsze wsparcie kampanii online,</strong> gdy ulotka jest przedłużeniem reklamy w Google Ads, Meta Ads lub działań w mediach społecznościowych, a nie osobnym komunikatem.
+              <strong>Lepsze wsparcie kampanii online,</strong> gdy ulotka jest przedłużeniem
+              reklamy w Google Ads, Meta Ads lub działań w mediach społecznościowych, a nie osobnym
+              komunikatem.
             </li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <TestimonialsCarousel />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionPrices
-          title="Projekt ulotki - przykładowe pakiety"
+          title='Projekt ulotki - przykładowe pakiety'
           plans={[
             {
               name: 'Pakiet Start - prosta ulotka jednostronna',
               price: 'wycena indywidualna',
-              description: 'Dla firm, które potrzebują jednej, czytelnej ulotki z najważniejszą ofertą i kontaktem.',
+              description:
+                'Dla firm, które potrzebują jednej, czytelnej ulotki z najważniejszą ofertą i kontaktem.',
               features: [
                 'Krótki brief o ofercie, celu kampanii i grupie docelowej',
                 'Projekt jednostronnej ulotki (np. A5 lub DL)',
@@ -208,12 +275,13 @@ export default function OfferDesignFlyerPage() {
                 'Jedna runda poprawek w cenie',
               ],
               btnOne: 'Zamów wycenę pakietu Start',
-              btnOneLink: '#kontakt',
+              btnOneHref: '#kontakt',
             },
             {
               name: 'Pakiet Standard - ulotka dwustronna lub kilka wersji',
               price: 'wycena indywidualna',
-              description: 'Dla marek, które chcą zmieścić więcej treści, cennik, kilka usług lub przygotować dwie wersje dla różnych odbiorców.',
+              description:
+                'Dla marek, które chcą zmieścić więcej treści, cennik, kilka usług lub przygotować dwie wersje dla różnych odbiorców.',
               features: [
                 'Wszystko z pakietu Start, a dodatkowo:',
                 'Projekt ulotki dwustronnej (np. oferta + korzyści + dane kontaktowe)',
@@ -222,12 +290,13 @@ export default function OfferDesignFlyerPage() {
                 'Dwie rundy poprawek w cenie',
               ],
               btnOne: 'Zamów wycenę pakietu Standard',
-              btnOneLink: '#kontakt',
+              btnOneHref: '#kontakt',
             },
             {
               name: 'Pakiet Pro - ulotka w kampanii i systemie materiałów',
               price: 'wycena indywidualna',
-              description: 'Dla firm, które traktują ulotkę jako element większej kampanii i chcą, aby spójnie łączyła się z wizytówkami, plakatami i stroną www.',
+              description:
+                'Dla firm, które traktują ulotkę jako element większej kampanii i chcą, aby spójnie łączyła się z wizytówkami, plakatami i stroną www.',
               features: [
                 'Wszystko z pakietu Standard, a dodatkowo:',
                 'Rekomendacje dotyczące formatu, nakładu i papieru pod konkretną kampanię',
@@ -236,36 +305,37 @@ export default function OfferDesignFlyerPage() {
                 'Wsparcie przy przygotowaniu plików zgodnie z wymaganiami drukarni',
               ],
               btnOne: 'Porozmawiajmy o pakiecie Pro',
-              btnOneLink: '#kontakt',
+              btnOneHref: '#kontakt',
             },
           ]}
-          legalNote="Zakres, format i liczbę wersji dopasowujemy indywidualnie - po briefie otrzymasz konkretną wycenę i harmonogram prac."
+          legalNote='Zakres, format i liczbę wersji dopasowujemy indywidualnie - po briefie otrzymasz konkretną wycenę i harmonogram prac.'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <WorkSteps variant="design" />
+        <WorkSteps variant='design' />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionContactForm
-          title="Sprawdź koszt realizacji ulotki"
-          description="Napisz co chcesz przedstawić na ulotce, czy posiadasz logo oraz zdjęcia i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp"
-          imageAlt="Realizacja projektu ulotki reklamowej - Simba Group"
-          defaultSubject="Projekt ulotki"
+          title='Sprawdź koszt realizacji ulotki'
+          description='Napisz co chcesz przedstawić na ulotce, czy posiadasz logo oraz zdjęcia i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp'
+          imageAlt='Realizacja projektu ulotki reklamowej - Simba Group'
+          defaultSubject='Projekt ulotki'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki"
-          title="Najczęstsze pytania dotyczące projektów ulotek"
+          defaultOpenIndex={1}
+          pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki'
+          title='Najczęstsze pytania dotyczące projektów ulotek'
           items={[
             {
               question: 'Ile kosztuje projekt ulotki?',
-              answer: 'Cena projektu ulotki zależy od formatu, liczby wersji i objętości treści. Po krótkim zapoznaniu z Twoimi potrzebami i Twoją ofertą, przygotujemy indywidualną wycenę.',
+              answer:
+                'Cena projektu ulotki zależy od formatu, liczby wersji i objętości treści. Po krótkim zapoznaniu z Twoimi potrzebami i Twoją ofertą, przygotujemy indywidualną wycenę.',
             },
             {
               question: 'Jak długo trwa projektowanie ulotki?',
@@ -284,15 +354,16 @@ export default function OfferDesignFlyerPage() {
             },
             {
               question: 'Czy projekt ulotki będzie gotowy do druku?',
-              answer: 'Tak, pliki przygotowujemy zgodnie z wymaganiami druku: odpowiednia rozdzielczość, kolory, spady i marginesy bezpieczeństwa. Możesz przekazać je bezpośrednio do drukarni.',
+              answer:
+                'Tak, pliki przygotowujemy zgodnie z wymaganiami druku: odpowiednia rozdzielczość, kolory, spady i marginesy bezpieczeństwa. Możesz przekazać je bezpośrednio do drukarni.',
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionBento
-          title="Poznaj inne usługi"
+          title='Poznaj inne usługi'
           items={[
             {
               title: 'Identyfikacja wizualna',
@@ -325,22 +396,26 @@ export default function OfferDesignFlyerPage() {
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getArticlePreviewsByCategory('grafika', 6)} />
+        <ArticlesCarousel
+          title='Przydatne artykuły dotyczące projektów graficznych'
+          categorySlug='grafika'
+          articles={getArticlePreviewsByCategory('grafika', 6)}
+        />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
       <CTABanner
-        title="Wypromuj swoją ofertę"
-        description="Zaprojektujemy ulotkę, która przyciąga wzrok i prowadzi prosto do kontaktu i sprzedaży."
-        btnOne="Skontaktuj się"
-        btnOneLink="#kontakt"
-        btnTwo="Poznaj inne usługi graficzne"
-        btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp"
-        overlay="black"
+        title='Wypromuj swoją ofertę'
+        description='Zaprojektujemy ulotkę, która przyciąga wzrok i prowadzi prosto do kontaktu i sprzedaży.'
+        btnOne='Skontaktuj się'
+        btnOneHref='#kontakt'
+        btnTwo='Poznaj inne usługi graficzne'
+        btnTwoHref='/uslugi/projekty-graficzne'
+        backgroundImage='/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp'
+        overlay='black'
       />
 
       <ServiceSchema />

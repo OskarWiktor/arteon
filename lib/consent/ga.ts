@@ -4,7 +4,7 @@ export function loadGA(measurementId?: string) {
 
   const gtagSrc = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
 
-  const alreadyLoaded = Array.from(document.scripts).some((s) => s.src === gtagSrc);
+  const alreadyLoaded = Array.from(document.scripts).some(s => s.src === gtagSrc);
   if (!alreadyLoaded && !document.getElementById('ga4-src')) {
     const s1 = document.createElement('script');
     s1.id = 'ga4-src';

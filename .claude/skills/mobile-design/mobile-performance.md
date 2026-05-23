@@ -125,7 +125,12 @@ const getItemLayout = useCallback(
 // Consider FlashList for better performance
 import { FlashList } from '@shopify/flash-list';
 
-<FlashList data={items} renderItem={renderItem} estimatedItemSize={ITEM_HEIGHT} keyExtractor={keyExtractor} />;
+<FlashList
+  data={items}
+  renderItem={renderItem}
+  estimatedItemSize={ITEM_HEIGHT}
+  keyExtractor={keyExtractor}
+/>;
 
 // Benefits over FlatList:
 // ├── Faster recycling
@@ -725,7 +730,7 @@ COMPRESS: Reduce payload size
     ),
     [],
   )}
-  keyExtractor={useCallback((item) => item.id, [])}
+  keyExtractor={useCallback(item => item.id, [])}
   getItemLayout={useCallback((_, i) => ({ length: H, offset: H * i, index: i }), [])}
 />;
 

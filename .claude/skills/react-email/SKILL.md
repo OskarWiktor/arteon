@@ -132,7 +132,18 @@ Replace the sample email templates. Here is how to create a new email template:
 Create an email component with proper structure using the Tailwind component for styling:
 
 ```tsx
-import { Html, Head, Preview, Body, Container, Heading, Text, Button, Tailwind, pixelBasedPreset } from '@react-email/components';
+import {
+  Html,
+  Head,
+  Preview,
+  Body,
+  Container,
+  Heading,
+  Text,
+  Button,
+  Tailwind,
+  pixelBasedPreset,
+} from '@react-email/components';
 
 interface WelcomeEmailProps {
   name: string;
@@ -141,7 +152,7 @@ interface WelcomeEmailProps {
 
 export default function WelcomeEmail({ name, verificationUrl }: WelcomeEmailProps) {
   return (
-    <Html lang="en">
+    <Html lang='en'>
       <Tailwind
         config={{
           presets: [pixelBasedPreset],
@@ -156,11 +167,14 @@ export default function WelcomeEmail({ name, verificationUrl }: WelcomeEmailProp
       >
         <Head />
         <Preview>Welcome - Verify your email</Preview>
-        <Body className="bg-gray-100 font-sans">
-          <Container className="mx-auto max-w-xl p-5">
-            <Heading className="text-2xl text-gray-800">Welcome!</Heading>
-            <Text className="text-base text-gray-800">Hi {name}, thanks for signing up!</Text>
-            <Button href={verificationUrl} className="bg-brand box-border block rounded px-5 py-3 text-center text-white no-underline">
+        <Body className='bg-gray-100 font-sans'>
+          <Container className='mx-auto max-w-xl p-5'>
+            <Heading className='text-2xl text-gray-800'>Welcome!</Heading>
+            <Text className='text-base text-gray-800'>Hi {name}, thanks for signing up!</Text>
+            <Button
+              href={verificationUrl}
+              className='bg-brand box-border block rounded px-5 py-3 text-center text-white no-underline'
+            >
               Verify Email
             </Button>
           </Container>
@@ -259,7 +273,7 @@ const baseURL =
     : '';
 
 export default function Email() {
-  return <Img src={`${baseURL}/static/logo.png`} alt="Logo" width="150" height="50" />;
+  return <Img src={`${baseURL}/static/logo.png`} alt='Logo' width='150' height='50' />;
 }
 ```
 
@@ -332,7 +346,7 @@ These classes are **always required** on their respective components — omittin
 - Only include props in PreviewProps that the component actually uses
 
 ```tsx
-const Email = (props) => {
+const Email = props => {
   return (
     <div>
       <a href={props.source}>click here if you want candy 👀</a>
@@ -392,7 +406,9 @@ When requested: container black (#000), background dark gray (#151516)
 import { render } from '@react-email/components';
 import { WelcomeEmail } from './emails/welcome';
 
-const html = await render(<WelcomeEmail name="John" verificationUrl="https://example.com/verify" />);
+const html = await render(
+  <WelcomeEmail name='John' verificationUrl='https://example.com/verify' />,
+);
 ```
 
 ### Convert to Plain Text
@@ -401,7 +417,10 @@ const html = await render(<WelcomeEmail name="John" verificationUrl="https://exa
 import { render } from '@react-email/components';
 import { WelcomeEmail } from './emails/welcome';
 
-const text = await render(<WelcomeEmail name="John" verificationUrl="https://example.com/verify" />, { plainText: true });
+const text = await render(
+  <WelcomeEmail name='John' verificationUrl='https://example.com/verify' />,
+  { plainText: true },
+);
 ```
 
 ## Sending
@@ -420,7 +439,7 @@ const { data, error } = await resend.emails.send({
   from: 'Acme <onboarding@resend.dev>',
   to: ['user@example.com'],
   subject: 'Welcome to Acme',
-  react: <WelcomeEmail name="John" verificationUrl="https://example.com/verify" />,
+  react: <WelcomeEmail name='John' verificationUrl='https://example.com/verify' />,
 });
 
 if (error) {
@@ -469,9 +488,9 @@ export default async function WelcomeEmail({ name, locale }: EmailProps) {
           <Container className="max-w-xl mx-auto p-5">
             <Text className="text-base text-gray-800">{t('greeting')} {name},</Text>
             <Text className="text-base text-gray-800">{t('body')}</Text>
-            <Button href="https://example.com" className="bg-blue-600 text-white px-5 py-3 rounded">
+            <ButtonLink href="https://example.com" className="bg-blue-600 text-white px-5 py-3 rounded">
               {t('cta')}
-            </Button>
+            </ButtonLink>
           </Container>
         </Body>
       </Tailwind>

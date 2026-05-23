@@ -2,11 +2,20 @@ const fg = require('fast-glob');
 const path = require('node:path');
 const fs = require('node:fs');
 const { execSync } = require('node:child_process');
-const { SITE_URL, LOCALES, LOCALE_TOOLS_BASE, LOCALE_TO_HREFLANG, MULTILINGUAL_PAGES, buildToolLocalePathsMap } = require('./lib/sitemap-locale-config.cjs');
+const {
+  SITE_URL,
+  LOCALES,
+  LOCALE_TOOLS_BASE,
+  LOCALE_TO_HREFLANG,
+  MULTILINGUAL_PAGES,
+  buildToolLocalePathsMap,
+} = require('./lib/sitemap-locale-config.cjs');
 
 function gitLastCommitISO(filePath) {
   try {
-    const out = execSync(`git log -1 --format=%cI -- "${filePath}"`, { stdio: ['ignore', 'pipe', 'ignore'] })
+    const out = execSync(`git log -1 --format=%cI -- "${filePath}"`, {
+      stdio: ['ignore', 'pipe', 'ignore'],
+    })
       .toString()
       .trim();
     return out || null;
@@ -71,7 +80,16 @@ function buildRouteLastmodMap() {
   const appDir = path.join(process.cwd(), 'app');
   const files = fg.sync(['**/page.{ts,tsx,mdx}'], {
     cwd: appDir,
-    ignore: ['**/(_*)/**', '**/_*', 'api/**', '**/components/**', '**/shared/**', '**/layout.{ts,tsx}', '_not-found/**', '**/_not-found/**'],
+    ignore: [
+      '**/(_*)/**',
+      '**/_*',
+      'api/**',
+      '**/components/**',
+      '**/shared/**',
+      '**/layout.{ts,tsx}',
+      '_not-found/**',
+      '**/_not-found/**',
+    ],
   });
 
   const map = new Map();
@@ -104,7 +122,15 @@ function readProjects() {
   }
 }
 function projectLastmodFromFiles(slug) {
-  const candidates = fg.sync([`content/projects/${slug}.mdx`, `content/projects/${slug}/**/*`, `data/pl/projects.json`, `public/assets/projects/${slug}/**/*`], { dot: false });
+  const candidates = fg.sync(
+    [
+      `content/projects/${slug}.mdx`,
+      `content/projects/${slug}/**/*`,
+      `data/pl/projects.json`,
+      `public/assets/projects/${slug}/**/*`,
+    ],
+    { dot: false },
+  );
 
   let newest = null;
   for (const rel of candidates) {
@@ -118,7 +144,9 @@ function projectLastmodFromFiles(slug) {
 function readBlog() {
   try {
     const blogDir = path.join(process.cwd(), 'data', 'pl', 'blog');
-    const catFiles = fs.readdirSync(blogDir).filter((f) => f.endsWith('.json') && f !== '_index.json');
+    const catFiles = fs
+      .readdirSync(blogDir)
+      .filter(f => f.endsWith('.json') && f !== '_index.json');
     const all = [];
     for (const f of catFiles) {
       const data = JSON.parse(fs.readFileSync(path.join(blogDir, f), 'utf8'));
@@ -135,7 +163,15 @@ function primaryCategorySlug(article) {
 }
 function articleAssetsLastmod(article) {
   const slug = article.slug;
-  const candidates = fg.sync([`content/blog/${slug}.mdx`, `content/blog/${slug}/**/*`, `public/assets/blog/${slug}/**/*`, `data/pl/blog/*.json`], { dot: false });
+  const candidates = fg.sync(
+    [
+      `content/blog/${slug}.mdx`,
+      `content/blog/${slug}/**/*`,
+      `public/assets/blog/${slug}/**/*`,
+      `data/pl/blog/*.json`,
+    ],
+    { dot: false },
+  );
 
   let newest = null;
   for (const rel of candidates) {
@@ -163,7 +199,23 @@ for (const [key, localePaths] of TOOL_LOCALE_PATHS.entries()) {
 }
 
 // Locale homepage paths that permanentRedirect — must not appear in sitemap
-const REDIRECT_LOCALE_ROOTS = new Set(['/en', '/de', '/es', '/fr', '/pt', '/it', '/ro', '/nl', '/hu', '/cs', '/sv', '/da', '/no', '/fi', '/el']);
+const REDIRECT_LOCALE_ROOTS = new Set([
+  '/en',
+  '/de',
+  '/es',
+  '/fr',
+  '/pt',
+  '/it',
+  '/ro',
+  '/nl',
+  '/hu',
+  '/cs',
+  '/sv',
+  '/da',
+  '/no',
+  '/fi',
+  '/el',
+]);
 
 /** Return alternateRefs (all locales + x-default) for any sitemap loc, or [] if not multilingual */
 function getAlternateRefs(loc) {
@@ -177,8 +229,16 @@ function getAlternateRefs(loc) {
 
   // Tool index pages
   if (Object.values(LOCALE_TOOLS_BASE).includes(loc)) {
-    const refs = LOCALES.map((lang) => ({ href: `${SITE_URL}${LOCALE_TOOLS_BASE[lang]}`, hreflang: LOCALE_TO_HREFLANG[lang], hrefIsAbsolute: true }));
-    refs.push({ href: `${SITE_URL}${LOCALE_TOOLS_BASE.en}`, hreflang: 'x-default', hrefIsAbsolute: true });
+    const refs = LOCALES.map(lang => ({
+      href: `${SITE_URL}${LOCALE_TOOLS_BASE[lang]}`,
+      hreflang: LOCALE_TO_HREFLANG[lang],
+      hrefIsAbsolute: true,
+    }));
+    refs.push({
+      href: `${SITE_URL}${LOCALE_TOOLS_BASE.en}`,
+      hreflang: 'x-default',
+      hrefIsAbsolute: true,
+    });
     return refs;
   }
 
@@ -192,14 +252,19 @@ function getAlternateRefs(loc) {
       hrefIsAbsolute: true,
     }));
     const enPath = localePaths['en'];
-    if (enPath) refs.push({ href: `${SITE_URL}${enPath}`, hreflang: 'x-default', hrefIsAbsolute: true });
+    if (enPath)
+      refs.push({ href: `${SITE_URL}${enPath}`, hreflang: 'x-default', hrefIsAbsolute: true });
     return refs;
   }
 
   // Non-tool multilingual pages (about, contact, privacy, terms)
   for (const page of MULTILINGUAL_PAGES) {
     if (Object.values(page).includes(loc)) {
-      const refs = Object.entries(page).map(([lang, href]) => ({ href: `${SITE_URL}${href}`, hreflang: LOCALE_TO_HREFLANG[lang] || lang, hrefIsAbsolute: true }));
+      const refs = Object.entries(page).map(([lang, href]) => ({
+        href: `${SITE_URL}${href}`,
+        hreflang: LOCALE_TO_HREFLANG[lang] || lang,
+        hrefIsAbsolute: true,
+      }));
       refs.push({ href: `${SITE_URL}${page.en}`, hreflang: 'x-default', hrefIsAbsolute: true });
       return refs;
     }
@@ -211,7 +276,23 @@ function getAlternateRefs(loc) {
 // ---------------------------------------------------------------------------
 // Priority & changefreq classification
 // ---------------------------------------------------------------------------
-const LOCALE_PREFIXES = ['en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
+const LOCALE_PREFIXES = [
+  'en',
+  'de',
+  'es',
+  'fr',
+  'pt',
+  'it',
+  'ro',
+  'nl',
+  'hu',
+  'cs',
+  'sv',
+  'da',
+  'no',
+  'fi',
+  'el',
+];
 const TOOLS_BASE_PATHS = Object.values(LOCALE_TOOLS_BASE);
 
 function isToolPage(loc) {
@@ -259,41 +340,91 @@ const ROUTE_IMAGE = new Map();
 
 ROUTE_IMAGE.set('/', '/assets/arteon-logo-on-mockup.webp');
 ROUTE_IMAGE.set('/uslugi', '/assets/projects/arteon-baners-msc.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne', '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-logo', '/assets/projects/finish-masters/logo-finish-masters-case-study.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-wizytowki', '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-ulotki', '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-katalogu', '/assets/projects/gazetka-mockup.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-cennika', '/assets/projects/cennik-mockup.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-papieru-firmowego', '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-teczki-ofertowej', '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-menu-restauracji', '/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp');
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne',
+  '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+);
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-logo',
+  '/assets/projects/finish-masters/logo-finish-masters-case-study.webp',
+);
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-wizytowki',
+  '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+);
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-ulotki',
+  '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp',
+);
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-katalogu',
+  '/assets/projects/gazetka-mockup.webp',
+);
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-cennika',
+  '/assets/projects/cennik-mockup.webp',
+);
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+  '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
+);
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+  '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+);
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-menu-restauracji',
+  '/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp',
+);
 ROUTE_IMAGE.set(
   '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
   '/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp',
 );
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera', '/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe', '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp');
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
+  '/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp',
+);
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
+  '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
+);
 ROUTE_IMAGE.set(
   '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
   '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp',
 );
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-odziezy-firmowej', '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-graficzny-strony', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
+  '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp',
+);
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-graficzny-strony',
+  '/assets/projects/arteon-baners-msc.webp',
+);
 ROUTE_IMAGE.set('/uslugi/tworzenie-stron-wordpress', '/assets/projects/arteon-baners-msc.webp');
-ROUTE_IMAGE.set('/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress', '/assets/projects/arteon-baners-camper-albania-mockup.webp');
+ROUTE_IMAGE.set(
+  '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
+  '/assets/projects/arteon-baners-camper-albania-mockup.webp',
+);
 ROUTE_IMAGE.set('/uslugi/sklepy-internetowe', '/assets/projects/arteon-baners-trilllizo.webp');
 ROUTE_IMAGE.set('/uslugi/blogi-internetowe', '/assets/projects/arteon-baners-msc.webp');
-ROUTE_IMAGE.set('/uslugi/tworzenie-tresci', '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp');
+ROUTE_IMAGE.set(
+  '/uslugi/tworzenie-tresci',
+  '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
+);
 ROUTE_IMAGE.set('/uslugi/marketing', '/assets/projects/arteon-baners-msc.webp');
 ROUTE_IMAGE.set('/uslugi/marketing/audyt-seo', '/assets/projects/arteon-baners-msc.webp');
 ROUTE_IMAGE.set('/uslugi/marketing/optymalizacja-seo', '/assets/projects/arteon-baners-msc.webp');
-ROUTE_IMAGE.set('/uslugi/marketing/pozycjonowanie-stron', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set(
+  '/uslugi/marketing/pozycjonowanie-stron',
+  '/assets/projects/arteon-baners-msc.webp',
+);
 ROUTE_IMAGE.set('/narzedzia', '/assets/arteon-logo-on-mockup.webp');
 
 function sitemapImage(relativePath) {
   if (!relativePath) return undefined;
-  const abs = relativePath.startsWith('http') ? relativePath : `${SITE_URL}${relativePath.startsWith('/') ? '' : '/'}${relativePath}`;
+  const abs = relativePath.startsWith('http')
+    ? relativePath
+    : `${SITE_URL}${relativePath.startsWith('/') ? '' : '/'}${relativePath}`;
   return [{ loc: new URL(abs) }];
 }
 
@@ -309,7 +440,8 @@ function sitemapImage(relativePath) {
 
   const byCat = new Map();
   for (const a of ARTICLES) {
-    const datestr = parseISO(a.dateModified) || parseISO(a.datePublished) || articleAssetsLastmod(a);
+    const datestr =
+      parseISO(a.dateModified) || parseISO(a.datePublished) || articleAssetsLastmod(a);
     const primary = a.primaryCategory || (a.category && a.category[0]);
     const allCats = [primary, ...(a.category || [])].filter(Boolean);
     for (const c of allCats) {
@@ -323,7 +455,9 @@ function sitemapImage(relativePath) {
     if (last) ROUTE_LASTMOD.set(`/edukacja/${cat}`, last);
   }
 
-  const allDates = ARTICLES.map((a) => parseISO(a.dateModified) || parseISO(a.datePublished) || articleAssetsLastmod(a)).filter(Boolean);
+  const allDates = ARTICLES.map(
+    a => parseISO(a.dateModified) || parseISO(a.datePublished) || articleAssetsLastmod(a),
+  ).filter(Boolean);
   const newest = maxISO(allDates);
   if (newest) ROUTE_LASTMOD.set('/edukacja', newest);
 })();
@@ -365,7 +499,12 @@ module.exports = {
       // Skip individual project pages - added from PROJECTS data below with images
       if (loc.startsWith('/realizacje/') && loc !== '/realizacje') continue;
 
-      const entry = { loc, changefreq: getPageChangefreq(loc), priority: getPagePriority(loc), alternateRefs: getAlternateRefs(loc) };
+      const entry = {
+        loc,
+        changefreq: getPageChangefreq(loc),
+        priority: getPagePriority(loc),
+        alternateRefs: getAlternateRefs(loc),
+      };
       if (last) entry.lastmod = last;
       const img = ROUTE_IMAGE.get(loc);
       if (img) entry.images = sitemapImage(img);
@@ -379,8 +518,13 @@ module.exports = {
       for (const [lang, toolPath] of Object.entries(localePaths)) {
         const loc = toolPath;
         // Skip if already added from ROUTE_LASTMOD
-        if (add.some((e) => e.loc === loc)) continue;
-        const entry = { loc, changefreq: 'weekly', priority: 0.9, alternateRefs: getAlternateRefs(loc) };
+        if (add.some(e => e.loc === loc)) continue;
+        const entry = {
+          loc,
+          changefreq: 'weekly',
+          priority: 0.9,
+          alternateRefs: getAlternateRefs(loc),
+        };
         const lastmod = ROUTE_LASTMOD.get(loc);
         if (lastmod) entry.lastmod = lastmod;
         add.push(entry);
@@ -389,7 +533,11 @@ module.exports = {
 
     for (const p of PROJECTS) {
       const loc = `/realizacje/${p.slug}`;
-      const iso = (p.updatedAt && parseISO(p.updatedAt)) || projectLastmodFromFiles(p.slug) || ROUTE_LASTMOD.get(loc) || null;
+      const iso =
+        (p.updatedAt && parseISO(p.updatedAt)) ||
+        projectLastmodFromFiles(p.slug) ||
+        ROUTE_LASTMOD.get(loc) ||
+        null;
 
       const entry = { loc, changefreq: getPageChangefreq(loc), priority: getPagePriority(loc) };
       if (iso) entry.lastmod = iso;

@@ -153,7 +153,7 @@
     "helper": "Teknisk förhandsgranskning – kompatibel med Gmail, Outlook och de flesta e-postklienter.",
     "copySuccess": "Kopierat – klistra in i Gmail",
     "copyError": "Kopieringsfel",
-    "copyButton": "Kopiera signatur (Gmail / Outlook)",
+    "ButtonCopy": "Kopiera signatur (Gmail / Outlook)",
     "copyRawButton": "Kopiera HTML-kod",
     "copyRawSuccess": "HTML-kod kopierad",
     "downloadButton": "Ladda ner som HTML",

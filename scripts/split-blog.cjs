@@ -11,7 +11,15 @@ const BLOG_DIR = path.join(process.cwd(), 'data', 'pl', 'blog');
 const INDEX_FILE = path.join(BLOG_DIR, '_index.json');
 
 // Category files to process
-const CATEGORY_FILES = ['grafika.json', 'marketing.json', 'psychologia.json', 'seo.json', 'sklepy.json', 'strony.json', 'ux.json'];
+const CATEGORY_FILES = [
+  'grafika.json',
+  'marketing.json',
+  'psychologia.json',
+  'seo.json',
+  'sklepy.json',
+  'strony.json',
+  'ux.json',
+];
 
 function main() {
   const allPreviews = [];

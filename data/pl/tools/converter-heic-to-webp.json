@@ -2,13 +2,13 @@
   "toolKey": "heicToWebp",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter HEIC na WebP – lekkie zdjęcia z iPhone na stronę",
-    "description": "Zamień zdjęcia HEIC z iPhone na lekki WebP w przeglądarce. Mniejszy rozmiar pliku, szybsze ładowanie strony. Bez rejestracji, bez wysyłania na serwer.",
+    "title": "Darmowy konwerter formatu HEIC na WebP bez limitu plików i rejestracji",
+    "description": "Zamień zdjęcia HEIC z iPhone na lekki WebP w przeglądarce. Mniejszy rozmiar pliku, szybsze ładowanie strony. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-heic-na-webp"
   },
   "hero": {
-    "title": "Konwerter HEIC na WebP – zdjęcia z iPhone gotowe do publikacji",
+    "title": "Darmowy konwerter formatu HEIC na WebP – zdjęcia z iPhone gotowe do publikacji",
     "description": "Zamień pliki HEIC z iPhone na lekki WebP. Mniejszy rozmiar, szybsze ładowanie i szeroka kompatybilność. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter HEIC na WebP – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana HEIC na WebP online", "Konwersja HEIC do WebP"],
+      "alternateName": ["Zamiana HEIC na WebP", "Konwersja HEIC do WebP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter HEIC na WebP online. Zamień zdjęcia HEIC z iPhone na lekki WebP - pliki nie są wysyłane na serwer.",
-      "featureList": ["Konwersja HEIC/HEIF do WebP", "Regulacja poziomu jakości", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter HEIC na WebP. Zamień zdjęcia HEIC z iPhone na lekki WebP - pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja HEIC/HEIF do WebP",
+        "Regulacja poziomu jakości",
+        "Konwersja wielu plików jednocześnie",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić HEIC na WebP online",
+      "name": "Jak zamienić HEIC na WebP",
       "description": "Instrukcja konwersji plików HEIC na format WebP.",
       "steps": [
         {
@@ -165,78 +170,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs WebP – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["HEIC", "WebP"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Kompresja stratna",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Safari 13+ (macOS / iOS)", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8/10-bit, HDR", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "heic": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

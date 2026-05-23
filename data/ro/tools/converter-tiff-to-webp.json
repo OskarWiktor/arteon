@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere TIFF în WebP usor. Reducere masiva cu calitate pastrata. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
-      "featureList": ["Conversie TIFF în WebP", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie TIFF în WEBP", "Convertor TIFF în WEBP", "Convertor gratuit TIFF în WEBP"]
+      "featureList": [
+        "Conversie TIFF în WebP",
+        "Calitate reglabilă (60–95%)",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie TIFF în WEBP",
+        "Convertor TIFF în WEBP",
+        "Convertor gratuit TIFF în WEBP"
+      ]
     },
     "howTo": {
       "name": "TIFF to WebP",
@@ -158,85 +167,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversia TIFF în WebP în practică",
-      "html": "<p class=\"text-mid mb-4\">TIFF la WebP realizeaza cea mai mare reducere: fisiere de 20–100 MB se micsoreaza adesea la 200 KB – 2 MB. Pentru publicarea fotografiilor profesionale pe web, este cel mai eficient.</p><p class=\"text-mid mb-4\">La calitate 80–85%, WebP mentine calitate vizuala excelenta. Pentru galerii, portofolii si reviste online: calitate profesionala la o fractiune din dimensiunea originala.</p><p class=\"text-mid\">Fotografii si agentiile din Romania pot converti sedinte de inalta rezolutie local in formate web-optimizate – fara cloud, conform GDPR.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF la WebP realizeaza cea mai mare reducere: fisiere de 20–100 MB se micsoreaza adesea la 200 KB – 2 MB. Pentru publicarea fotografiilor profesionale pe web, este cel mai eficient.</p><p class=\"text-mid mb-4\">La calitate 80–85%, WebP mentine calitate vizuala excelenta. Pentru galerii, portofolii si reviste fractiune din dimensiunea originala.</p><p class=\"text-mid\">Fotografii si agentiile din Romania pot converti sedinte de inalta rezolutie local in formate web-optimizate – fara cloud, conform GDPR.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs WebP – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["TIFF", "WebP"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Compresie cu pierderi",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Doar Safari", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8/16/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "tiff": "Doar Safari",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

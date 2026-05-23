@@ -45,7 +45,7 @@ let cookieCache: Record<string, string> | null = null;
 
 function getCookie(name: string) {
   if (!cookieCache) {
-    cookieCache = Object.fromEntries(document.cookie.split('; ').map((c) => c.split('=')));
+    cookieCache = Object.fromEntries(document.cookie.split('; ').map(c => c.split('=')));
   }
   return cookieCache[name];
 }
@@ -54,7 +54,7 @@ function getCookie(name: string) {
 **Important:** If storage can change externally (another tab, server-set cookies), invalidate cache:
 
 ```typescript
-window.addEventListener('storage', (e) => {
+window.addEventListener('storage', e => {
   if (e.key) storageCache.delete(e.key);
 });
 

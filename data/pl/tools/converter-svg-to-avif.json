@@ -2,13 +2,13 @@
   "toolKey": "svgToAvif",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter SVG na AVIF - SVG AVIF",
-    "description": "Zamień grafikę wektorową SVG na nowoczesny format rastrowy AVIF. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
+    "title": "Darmowy konwerter formatu SVG na AVIF bez limitu plików i rejestracji",
+    "description": "Zamień grafikę wektorową SVG na nowoczesny format rastrowy AVIF. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-svg-na-avif"
   },
   "hero": {
-    "title": "Konwerter SVG na AVIF",
+    "title": "Darmowy konwerter formatu SVG na AVIF",
     "description": "Zamień grafikę wektorową SVG na nowoczesny format rastrowy AVIF. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień grafikę wektorową SVG na nowoczesny format rastrowy AVIF. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
-      "featureList": ["Konwersja do AVIF", "Regulacja jakości (60-95%)", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
-      "alternateName": ["Zamiana SVG na AVIF", "Konwersja SVG do AVIF", "Darmowy konwerter SVG na AVIF"]
+      "featureList": [
+        "Konwersja do AVIF",
+        "Regulacja jakości (60-95%)",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne w przeglądarce"
+      ],
+      "alternateName": [
+        "Zamiana SVG na AVIF",
+        "Konwersja SVG do AVIF",
+        "Darmowy konwerter SVG na AVIF"
+      ]
     },
     "howTo": {
       "name": "SVG to AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs AVIF – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["SVG", "AVIF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Kompresja stratna",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["N/A (wektor)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "svg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "svg": "Wszystkie przeglądarki",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "svg": "N/A (wektor)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "svg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "svg": false,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

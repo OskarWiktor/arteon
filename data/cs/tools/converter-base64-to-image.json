@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Dekódujte řetězce Base64 na obrázky. Náhled a stažení v prohlížeči. Zdarma.",
-      "featureList": ["Base64 to obrázek conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Base64 to obrázek", "Base64 to obrázek", "Free Base64 to obrázek converter"]
+      "featureList": [
+        "Base64 to obrázek conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Base64 to obrázek",
+        "Base64 to obrázek",
+        "Free Base64 to obrázek converter"
+      ]
     },
     "howTo": {
       "name": "Jak převést Base64 na obrázek",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět Base64 na obrázek?",
-      "html": "<p class=\"text-mid mb-4\">BASE64 je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na IMAGE prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase BASE64 soubory do formatu IMAGE primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">BASE64 je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na IMAGE prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny konvertor prevadi vase BASE64 soubory do formatu IMAGE primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Base64 to obrázek conversion",
       "variant": "right"

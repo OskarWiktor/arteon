@@ -82,7 +82,7 @@ const [createItem, { loading }] = useCreateItemMutation({
   onCompleted: () => {
     toast.success({ title: 'Item created' });
   },
-  onError: (error) => {
+  onError: error => {
     console.error('createItem failed:', error);
     toast.error({ title: 'Failed to create item' });
   },
@@ -90,7 +90,7 @@ const [createItem, { loading }] = useCreateItemMutation({
 
 // WRONG - Error silently caught, user has no idea
 const [createItem] = useCreateItemMutation({
-  onError: (error) => {
+  onError: error => {
     console.error(error); // User sees nothing!
   },
 });
@@ -199,8 +199,17 @@ const MyForm = () => {
 
   return (
     <form>
-      <Input value={values.name} onChange={handleChange('name')} error={touched.name ? errors.name : undefined} />
-      <Button type="submit" onClick={handleSubmit} disabled={!isValid || loading} isLoading={loading}>
+      <Input
+        value={values.name}
+        onChange={handleChange('name')}
+        error={touched.name ? errors.name : undefined}
+      />
+      <Button
+        type='submit'
+        onClick={handleSubmit}
+        disabled={!isValid || loading}
+        isLoading={loading}
+      >
         Submit
       </Button>
     </form>
@@ -231,7 +240,7 @@ try {
 }
 
 // CORRECT - Error surfaced
-onError: (error) => {
+onError: error => {
   console.error('operation failed:', error);
   toast.error({ title: 'Operation failed' });
 };

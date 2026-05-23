@@ -40,9 +40,9 @@ export interface ToolPageData {
     title: string;
     description: string;
     btnOne: string;
-    btnOneLink: string;
+    btnOneHref: string;
     btnTwo?: string;
-    btnTwoLink?: string;
+    btnTwoHref?: string;
     backgroundImage: string;
     overlay?: string;
   };
@@ -54,7 +54,7 @@ export type ToolContentBlock =
   | SectionStepsBlock
   | SectionDemoBlock
   | SectionTabsBlock
-  | SectionFeatureComparisonBlock
+  | SectionTableBlock
   | SectionTimelineBlock
   | GapBlock
   | FaqBlock
@@ -80,9 +80,10 @@ export interface SectionStepsBlock {
   type: 'sectionSteps';
   title: string;
   description?: string;
-  grid?: 'two' | 'three' | 'four';
+  grid?: 'one' | 'two' | 'three' | 'four';
+  inlineIcon?: boolean;
   btnOne?: string;
-  btnOneLink?: string;
+  btnOneHref?: string;
   items: {
     icon: string;
     title: string;
@@ -126,18 +127,18 @@ export interface SectionTabsBlock {
   }[];
 }
 
-export interface SectionFeatureComparisonBlock {
-  type: 'sectionFeatureComparison';
+export interface SectionTableBlock {
+  type: 'sectionTable';
   title?: string;
-  featureLabel?: string;
-  plans: {
-    id: string;
-    name: string;
-    highlighted?: boolean;
-  }[];
-  features: {
-    name: string;
-    values: Record<string, boolean | string>;
+  description?: string;
+  caption?: string;
+  labelHeader?: string;
+  cols: string[];
+  rows: {
+    label?: string;
+    values?: string[];
+    emphasis?: boolean;
+    groupLabel?: string;
   }[];
 }
 

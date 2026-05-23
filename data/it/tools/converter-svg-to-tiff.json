@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converti grafiche vettoriali SVG in raster TIFF di alta qualita. Senza installazione, funziona su qualsiasi dispositivo. Gratuito, privato e illimitato.",
-      "featureList": ["Conversione in TIFF", "Regolazione qualità (60-95%)", "Conversione in batch", "Elaborazione locale nel browser"],
-      "alternateName": ["Convertire SVG in TIFF", "Conversione SVG in TIFF", "Convertitore SVG in TIFF gratuito"]
+      "featureList": [
+        "Conversione in TIFF",
+        "Regolazione qualità (60-95%)",
+        "Conversione in batch",
+        "Elaborazione locale nel browser"
+      ],
+      "alternateName": [
+        "Convertire SVG in TIFF",
+        "Conversione SVG in TIFF",
+        "Convertitore SVG in TIFF gratuito"
+      ]
     },
     "howTo": {
       "name": "Come convertire SVG in TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs TIFF – confronto dei formati",
-      "plans": [
+      "labelHeader": "Funzionalità",
+      "cols": ["SVG", "TIFF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Compressione con perdita",
+          "values": ["—", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Compressione senza perdita",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Trasparenza (canale alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Supporto animazione",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Supporto browser",
+          "values": ["Tutti i browser", "Solo Safari"]
+        },
+        {
+          "label": "Profondità colore",
+          "values": ["N/A (vettore)", "8/16/32-bit"]
+        },
+        {
+          "label": "Dimensione file compatta",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadati (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressione con perdita",
-          "values": {
-            "svg": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Compressione senza perdita",
-          "values": {
-            "svg": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Trasparenza (canale alfa)",
-          "values": {
-            "svg": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Supporto animazione",
-          "values": {
-            "svg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Supporto browser",
-          "values": {
-            "svg": "Tutti i browser",
-            "tiff": "Solo Safari"
-          }
-        },
-        {
-          "name": "Profondità colore",
-          "values": {
-            "svg": "N/A (vettore)",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Dimensione file compatta",
-          "values": {
-            "svg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadati (EXIF)",
-          "values": {
-            "svg": false,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funzionalità"
+      ]
     },
     {
       "type": "gap",

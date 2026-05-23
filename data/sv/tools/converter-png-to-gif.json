@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera PNG-grafik till GIF. Idealiskt for enkla ikoner och grafik. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
-      "featureList": ["Konvertering till GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
-      "alternateName": ["Konvertera PNG till GIF", "PNG till GIF konvertering", "Gratis PNG till GIF konverterare"]
+      "featureList": [
+        "Konvertering till GIF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal bearbetning i webbläsaren"
+      ],
+      "alternateName": [
+        "Konvertera PNG till GIF",
+        "PNG till GIF konvertering",
+        "Gratis PNG till GIF konverterare"
+      ]
     },
     "howTo": {
       "name": "Hur konverterar man PNG till GIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs GIF – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["PNG", "GIF"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Förlustrik komprimering",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Alla webbläsare", "Alla webbläsare"]
+        },
+        {
+          "label": "Färgdjup",
+          "values": ["8/16-bit", "8-bit (256)"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "png": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "png": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "png": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "png": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "png": "Alla webbläsare",
-            "gif": "Alla webbläsare"
-          }
-        },
-        {
-          "name": "Färgdjup",
-          "values": {
-            "png": "8/16-bit",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "png": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "png": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

@@ -26,12 +26,12 @@
     "software": {
       "name": "Contador de palabras, caracteres y tiempo de lectura con formato de texto",
       "alternateName": [
-        "Contador de palabras online",
+        "Contador de palabras",
         "Contador de caracteres con y sin espacios",
         "Herramienta de conteo de palabras para redactores",
         "Calculadora de tiempo de lectura",
         "Verificador de legibilidad Flesch-Kincaid",
-        "Contador de sílabas online",
+        "Contador de sílabas",
         "Calculadora de tiempo de habla",
         "Conversor de mayúsculas y minúsculas",
         "Herramienta de legibilidad de textos",
@@ -377,7 +377,7 @@
     {
       "type": "sectionInfo",
       "title": "Longitud ideal del contenido para webs en español",
-      "html": "<p class=\"text-mid mb-4\">Los artículos de blog en español obtienen los mejores resultados en buscadores con una extensión de 1 200–2 000 palabras. Artículos cortos (600–1 000 palabras) funcionan para guías prácticas y respuestas a preguntas concretas. Los artículos de menos de 500 palabras rara vez alcanzan las primeras posiciones, salvo que respondan a una consulta muy específica.</p><p class=\"text-mid mb-4\">Las fichas de producto en tiendas online hispanohablantes deben contener 150–300 palabras. En MercadoLibre, el título tiene un límite de 60 caracteres y la descripción admite un texto extenso - aproveche ese espacio con información detallada sobre características, materiales y dimensiones. En Amazon.es, los puntos clave permiten hasta 500 caracteres cada uno.</p><p class=\"text-mid\">Las páginas de servicios (despacho de abogados, clínica dental, empresa constructora) necesitan 500–800 palabras con información concreta: alcance del servicio, zona de cobertura, datos de contacto. El recuento de palabras por sí solo no es un indicador de calidad - un texto conciso de 600 palabras con información útil supera a un texto de 2 000 palabras lleno de generalidades.</p>"
+      "html": "<p class=\"text-mid mb-4\">Los artículos de blog en español obtienen los mejores resultados en buscadores con una extensión de 1 200–2 000 palabras. Artículos cortos (600–1 000 palabras) funcionan para guías prácticas y respuestas a preguntas concretas. Los artículos de menos de 500 palabras rara vez alcanzan las primeras posiciones, salvo que respondan a una consulta muy específica.</p><p class=\"text-mid mb-4\">Las fichas de producto en tiendas hispanohablantes deben contener 150–300 palabras. En MercadoLibre, el título tiene un límite de 60 caracteres y la descripción admite un texto extenso - aproveche ese espacio con información detallada sobre características, materiales y dimensiones. En Amazon.es, los puntos clave permiten hasta 500 caracteres cada uno.</p><p class=\"text-mid\">Las páginas de servicios (despacho de abogados, clínica dental, empresa constructora) necesitan 500–800 palabras con información concreta: alcance del servicio, zona de cobertura, datos de contacto. El recuento de palabras por sí solo no es un indicador de calidad - un texto conciso de 600 palabras con información útil supera a un texto de 2 000 palabras lleno de generalidades.</p>"
     },
     {
       "type": "gap",

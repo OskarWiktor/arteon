@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere TIFF în PNG fara pierderi. Pastreaza calitatea scanarilor. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
-      "featureList": ["Conversie TIFF în PNG", "Lossless PNG output", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie TIFF în PNG", "Convertor TIFF în PNG", "Convertor gratuit TIFF în PNG"]
+      "featureList": [
+        "Conversie TIFF în PNG",
+        "Lossless PNG output",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie TIFF în PNG",
+        "Convertor TIFF în PNG",
+        "Convertor gratuit TIFF în PNG"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți TIFF în PNG",
@@ -158,85 +167,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversia TIFF în PNG în practică",
-      "html": "<p class=\"text-mid mb-4\">Cand fisierele TIFF sunt necesare pentru editare in programe grafice sau site-uri cu transparenta, PNG este formatul potrivit – fara pierderi si universal compatibil.</p><p class=\"text-mid mb-4\">PNG pastreaza calitatea completa si transparenta TIFF-ului. Fisierele sunt mai mici decat TIFF dar mai mari decat JPEG/WebP. Pentru Figma, Canva sau Photoshop, PNG este ideal.</p><p class=\"text-mid\">Pentru pregatirea iesirilor de scaner si imaginilor de arhiva pentru utilizare online, conversia locala ofera un flux sigur si rapid.</p>"
+      "html": "<p class=\"text-mid mb-4\">Cand fisierele TIFF sunt necesare pentru editare in programe grafice sau site-uri cu transparenta, PNG este formatul potrivit – fara pierderi si universal compatibil.</p><p class=\"text-mid mb-4\">PNG pastreaza calitatea completa si transparenta TIFF-ului. Fisierele sunt mai mici decat TIFF dar mai mari decat JPEG/WebP. Pentru Figma, Canva sau Photoshop, PNG este ideal.</p><p class=\"text-mid\">Pentru pregatirea iesirilor de scaner si imaginilor de arhiva pentru utilizarerapid.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PNG – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["TIFF", "PNG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Compresie cu pierderi",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Doar Safari", "Toate browserele"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8/16/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "tiff": "Doar Safari",
-            "png": "Toate browserele"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "tiff": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

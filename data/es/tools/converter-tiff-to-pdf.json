@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir TIFF a PDF?",
-      "html": "<p class=\"text-mid mb-4\">TIFF es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a PDF puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor online gratuito transforma tus archivos TIFF al formato PDF directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
+      "html": "<p class=\"text-mid mb-4\">TIFF es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a PDF puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor gratuito transforma tus archivos TIFF al formato PDF directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "TIFF to PDF conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PDF – comparación de formatos",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["TIFF", "PDF"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Compresión con pérdida",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Compresión sin pérdida",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparencia (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Soporte de animación",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Compatibilidad con navegadores",
+          "values": ["Solo Safari", "Visor PDF integrado"]
+        },
+        {
+          "label": "Tamaño de archivo compacto",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadatos (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresión con pérdida",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Compresión sin pérdida",
-          "values": {
-            "tiff": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Transparencia (canal alfa)",
-          "values": {
-            "tiff": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Soporte de animación",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Compatibilidad con navegadores",
-          "values": {
-            "tiff": "Solo Safari",
-            "pdf": "Visor PDF integrado"
-          }
-        },
-        {
-          "name": "Tamaño de archivo compacto",
-          "values": {
-            "tiff": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadatos (EXIF)",
-          "values": {
-            "tiff": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Característica"
+      ]
     },
     {
       "type": "gap",
@@ -255,7 +224,7 @@
     {
       "type": "sectionInfo",
       "title": "How image conversion impacts page speed and SEO",
-      "html": "<p class=\"text-mid mb-4\">TIFF to PDF conversion is commonly used for document archival and sharing. TIFF files cannot be viewed in web browsers or opened easily on most devices, while PDF is universally readable.</p><p class=\"text-mid mb-4\">When sharing PDFs online, file size matters. TIFF files are large (10–50 MB each), but the converter compresses images within the PDF to produce more manageable file sizes. A 10-page PDF from TIFF scans will typically be 10–30 MB.</p><p class=\"text-mid\">For web display, consider converting TIFF directly to JPG, WebP, or AVIF instead. These formats produce much smaller files optimized for browser display.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF to PDF conversion is commonly used for document archival and sharing. TIFF files cannot be viewed in web browsers or opened easily on most devices, while PDF is universally readable.</p><p class=\"text-mid mb-4\">When sharing PDFs, file size matters. TIFF files are large (10–50 MB each), but the converter compresses images within the PDF to produce more manageable file sizes. A 10-page PDF from TIFF scans will typically be 10–30 MB.</p><p class=\"text-mid\">For web display, consider converting TIFF directly to JPG, WebP, or AVIF instead. These formats produce much smaller files optimized for browser display.</p>"
     },
     {
       "type": "faq",

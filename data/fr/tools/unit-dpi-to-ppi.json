@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Comprenez la différence entre DPI et PPI. Pour le design d'impression et d'écran.",
-      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+      "featureList": [
+        "Conversion bidirectionnelle en temps réel",
+        "Tous les convertisseurs au même endroit",
+        "Copier le résultat dans le presse-papiers",
+        "Calcul local dans le navigateur"
+      ]
     },
     "howTo": {
       "name": "Comment utiliser le convertisseur",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI vs PPI – comparaison",
-      "featureLabel": "Caractéristique",
-      "plans": [
+      "labelHeader": "Caractéristique",
+      "cols": ["DPI (points par pouce)", "PPI (pixels par pouce)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "DPI (points par pouce)"
+          "label": "S’applique à",
+          "values": ["Imprimantes", "Écrans et images"]
         },
         {
-          "id": "unit2",
-          "name": "PPI (pixels par pouce)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "S’applique à",
-          "values": {
-            "unit1": "Imprimantes",
-            "unit2": "Écrans et images"
-          }
+          "label": "Mesure",
+          "values": ["Points d’encre physiques", "Pixels numériques"]
         },
         {
-          "name": "Mesure",
-          "values": {
-            "unit1": "Points d’encre physiques",
-            "unit2": "Pixels numériques"
-          }
+          "label": "Valeurs typiques",
+          "values": ["600–4 800 DPI", "72–460 PPI"]
         },
         {
-          "name": "Valeurs typiques",
-          "values": {
-            "unit1": "600–4 800 DPI",
-            "unit2": "72–460 PPI"
-          }
+          "label": "Qualité d’impression",
+          "values": ["Plus = plus fin", "300 PPI standard"]
         },
         {
-          "name": "Qualité d’impression",
-          "values": {
-            "unit1": "Plus = plus fin",
-            "unit2": "300 PPI standard"
-          }
-        },
-        {
-          "name": "Confusion",
-          "values": {
-            "unit1": "Utilisé à tort pour les images",
-            "unit2": "Terme correct"
-          }
+          "label": "Confusion",
+          "values": ["Utilisé à tort pour les images", "Terme correct"]
         }
       ]
     },

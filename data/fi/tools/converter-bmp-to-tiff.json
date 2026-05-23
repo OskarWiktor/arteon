@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten. Kaikki käsittely tapahtuu paikallisesti selaimessa - tiedostot eivät poistu laitteeltasi.",
-      "featureList": ["Muunnos TIFF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
-      "alternateName": ["Muunna BMP TIFF-muotoon", "BMP:n muunto TIFF-muotoon", "Ilmainen BMP–TIFF-muunnin"]
+      "featureList": [
+        "Muunnos TIFF-muotoon",
+        "Laadun säätö (60-95%)",
+        "Erämuunnos",
+        "Paikallinen käsittely selaimessa"
+      ],
+      "alternateName": [
+        "Muunna BMP TIFF-muotoon",
+        "BMP:n muunto TIFF-muotoon",
+        "Ilmainen BMP–TIFF-muunnin"
+      ]
     },
     "howTo": {
       "name": "Kuinka muuntaa BMP TIFF-muotoon",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs TIFF – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["BMP", "TIFF"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Häviöllinen pakkaus",
+          "values": ["—", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Häviötön pakkaus",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Läpinäkyvyys (alfakanava)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animaatiotuki",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Selaintuki",
+          "values": ["Kaikki selaimet", "Vain Safari"]
+        },
+        {
+          "label": "Värisyvyys",
+          "values": ["1/4/8/24/32-bit", "8/16/32-bit"]
+        },
+        {
+          "label": "Pieni tiedostokoko",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metatiedot (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Häviöllinen pakkaus",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Häviötön pakkaus",
-          "values": {
-            "bmp": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Läpinäkyvyys (alfakanava)",
-          "values": {
-            "bmp": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Animaatiotuki",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Selaintuki",
-          "values": {
-            "bmp": "Kaikki selaimet",
-            "tiff": "Vain Safari"
-          }
-        },
-        {
-          "name": "Värisyvyys",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Pieni tiedostokoko",
-          "values": {
-            "bmp": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metatiedot (EXIF)",
-          "values": {
-            "bmp": false,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",

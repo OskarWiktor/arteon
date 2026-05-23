@@ -2,13 +2,13 @@
   "toolKey": "svgToPdf",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter SVG na PDF - darmowy, bez rejestracji",
-    "description": "Zamień pliki SVG na PDF w przeglądarce. Idealne do przygotowania logotypów i grafik wektorowych do druku. Bez limitu - konwersja lokalna.",
+    "title": "Darmowy konwerter formatu SVG na PDF bez limitu plików i rejestracji",
+    "description": "Zamień pliki SVG na PDF w przeglądarce. Idealne do przygotowania logotypów i grafik wektorowych do druku. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-svg-na-pdf"
   },
   "hero": {
-    "title": "Zamień grafikę wektorową SVG na PDF",
+    "title": "Zamień grafikę wektorową SVG na dokument PDF",
     "description": "Wgraj pliki SVG, a narzędzie zamieni je na dokument PDF. Idealne do przygotowania logotypów i grafik wektorowych do druku lub archiwizacji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter SVG na PDF - darmowy, bez limitu",
-      "alternateName": ["Zamiana SVG na PDF online", "Konwersja SVG do PDF", "SVG to PDF converter"],
+      "alternateName": ["Zamiana SVG na PDF", "Konwersja SVG do PDF", "SVG to PDF converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
-      "description": "Darmowy konwerter SVG na PDF online. Zamień pliki SVG na dokument PDF w przeglądarce - pliki nie są wysyłane na serwer.",
-      "featureList": ["Konwersja SVG do PDF", "Łączenie wielu plików w jeden PDF", "Automatyczna orientacja strony A4", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter SVG na PDF. Zamień pliki SVG na dokument PDF w przeglądarce - pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja SVG do PDF",
+        "Łączenie wielu plików w jeden PDF",
+        "Automatyczna orientacja strony A4",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić SVG na PDF online",
+      "name": "Jak zamienić SVG na PDF",
       "description": "Instrukcja konwersji plików SVG na format PDF.",
       "steps": [
         {
@@ -164,71 +169,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PDF – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["SVG", "PDF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Kompresja stratna",
+          "values": ["—", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Wbudowana przeglądarka PDF"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "svg": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "svg": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "svg": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "svg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "svg": "Wszystkie przeglądarki",
-            "pdf": "Wbudowana przeglądarka PDF"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "svg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "svg": false,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

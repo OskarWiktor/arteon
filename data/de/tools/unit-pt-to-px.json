@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Rechnen Sie typografische Punkte in Pixel um. Unverzichtbar für Web- und Drucktypografie.",
-      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+      "featureList": [
+        "Bidirektionale Echtzeit-Konvertierung",
+        "Alle Konverter an einem Ort",
+        "Ergebnis in die Zwischenablage kopieren",
+        "Lokale Berechnung im Browser"
+      ]
     },
     "howTo": {
       "name": "So verwenden Sie den Konverter pt na px",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Punkt (pt) vs Pixel (px)",
-      "featureLabel": "Eigenschaft",
-      "plans": [
+      "labelHeader": "Eigenschaft",
+      "cols": ["Punkt (pt)", "Pixel (px)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Punkt (pt)"
+          "label": "Definition",
+          "values": ["1/72 Zoll", "1/96 Zoll (CSS)"]
         },
         {
-          "id": "unit2",
-          "name": "Pixel (px)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Definition",
-          "values": {
-            "unit1": "1/72 Zoll",
-            "unit2": "1/96 Zoll (CSS)"
-          }
+          "label": "Verwendet in",
+          "values": ["Druck, Word, PDF", "Web, CSS, Bildschirme"]
         },
         {
-          "name": "Verwendet in",
-          "values": {
-            "unit1": "Druck, Word, PDF",
-            "unit2": "Web, CSS, Bildschirme"
-          }
+          "label": "12 pt =",
+          "values": ["12 pt", "16 px"]
         },
         {
-          "name": "12 pt =",
-          "values": {
-            "unit1": "12 pt",
-            "unit2": "16 px"
-          }
+          "label": "Fließtext",
+          "values": ["10–12 pt", "14–18 px"]
         },
         {
-          "name": "Fließtext",
-          "values": {
-            "unit1": "10–12 pt",
-            "unit2": "14–18 px"
-          }
-        },
-        {
-          "name": "Überschrift",
-          "values": {
-            "unit1": "18–24 pt",
-            "unit2": "24–32 px"
-          }
+          "label": "Überschrift",
+          "values": ["18–24 pt", "24–32 px"]
         }
       ]
     },

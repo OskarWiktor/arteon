@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "RGB to CMYK converter",
-      "alternateName": ["RGB to CMYK color converter", "Screen to print color converter", "Color mode converter"],
+      "alternateName": [
+        "RGB to CMYK color converter",
+        "Screen to print color converter",
+        "Color mode converter"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert RGB to CMYK to verify print color values before production. Check gamut compatibility for Adobe InDesign, Illustrator, and Pantone-based workflows. Browser-only, no registration.",
@@ -185,55 +189,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "RGB vs CMYK – comparison",
-      "featureLabel": "Feature",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["RGB", "CMYK"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "RGB"
+          "label": "Model",
+          "values": ["Additive (light)", "Subtractive (ink)"]
         },
         {
-          "id": "unit2",
-          "name": "CMYK",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Model",
-          "values": {
-            "unit1": "Additive (light)",
-            "unit2": "Subtractive (ink)"
-          }
+          "label": "Used for",
+          "values": ["Screens, web", "Print, packaging"]
         },
         {
-          "name": "Used for",
-          "values": {
-            "unit1": "Screens, web",
-            "unit2": "Print, packaging"
-          }
+          "label": "Gamut",
+          "values": ["Wider (more colors)", "Narrower"]
         },
         {
-          "name": "Gamut",
-          "values": {
-            "unit1": "Wider (more colors)",
-            "unit2": "Narrower"
-          }
+          "label": "Black",
+          "values": ["R=0, G=0, B=0", "K=100%"]
         },
         {
-          "name": "Black",
-          "values": {
-            "unit1": "R=0, G=0, B=0",
-            "unit2": "K=100%"
-          }
-        },
-        {
-          "name": "White",
-          "values": {
-            "unit1": "R=255, G=255, B=255",
-            "unit2": "No ink (paper)"
-          }
+          "label": "White",
+          "values": ["R=255, G=255, B=255", "No ink (paper)"]
         }
       ]
     },

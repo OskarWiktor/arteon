@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "SVG til JPG-konverterer",
-      "alternateName": ["Konverter SVG til JPG", "SVG til JPG konvertering", "Gratis SVG til JPG konverterer"],
+      "alternateName": [
+        "Konverter SVG til JPG",
+        "SVG til JPG konvertering",
+        "Gratis SVG til JPG konverterer"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter SVG-grafikk til kompakt JPG. Mindre fil, full kompatibilitet. Ingen installasjon nødvendig, fungerer på alle enheter. Gratis, privat og ubegrenset.",
-      "featureList": ["SVG til JPG-konvertering", "JPG-kvalitetskontroll", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
+      "featureList": [
+        "SVG til JPG-konvertering",
+        "JPG-kvalitetskontroll",
+        "Batchkonvertering",
+        "Lokal nettleserbehandling",
+        "Ingen filopplasting kreves"
+      ]
     },
     "howTo": {
       "name": "Slik konverterer du SVG til JPG",
@@ -174,68 +184,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs JPG – formatsammenligning",
-      "plans": [
+      "cols": ["SVG", "JPG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Komprimering med tap",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
+          "label": "Nettleserstøtte",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "svg": true,
-            "jpg": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "svg": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
       ]
     },

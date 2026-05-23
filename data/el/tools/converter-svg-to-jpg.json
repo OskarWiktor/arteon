@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Μετατροπέας SVG σε JPG",
-      "alternateName": ["Μετατροπή SVG σε JPG", "Μετατροπέας SVG σε JPG", "Δωρεάν μετατροπέας SVG σε JPG"],
+      "alternateName": [
+        "Μετατροπή SVG σε JPG",
+        "Μετατροπέας SVG σε JPG",
+        "Δωρεάν μετατροπέας SVG σε JPG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
-      "featureList": ["Μετατροπή SVG σε JPG", "Έλεγχος ποιότητας JPG", "Ομαδική μετατροπή", "Τοπική επεξεργασία στον browser", "Χωρίς μεταφόρτωση αρχείων"]
+      "featureList": [
+        "Μετατροπή SVG σε JPG",
+        "Έλεγχος ποιότητας JPG",
+        "Ομαδική μετατροπή",
+        "Τοπική επεξεργασία στον browser",
+        "Χωρίς μεταφόρτωση αρχείων"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε SVG σε JPG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs JPG – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["SVG", "JPG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Συμπίεση με απώλειες",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Συμπίεση χωρίς απώλειες",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Διαφάνεια (κανάλι άλφα)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Υποστήριξη κίνησης",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Υποστήριξη περιηγητών",
+          "values": ["Όλοι οι περιηγητές", "Όλοι οι περιηγητές"]
+        },
+        {
+          "label": "Βάθος χρώματος",
+          "values": ["N/A (διάνυσμα)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Συμπαγές μέγεθος αρχείου",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Μεταδεδομένα (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Συμπίεση με απώλειες",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Συμπίεση χωρίς απώλειες",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Διαφάνεια (κανάλι άλφα)",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Υποστήριξη κίνησης",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Υποστήριξη περιηγητών",
-          "values": {
-            "svg": "Όλοι οι περιηγητές",
-            "jpg": "Όλοι οι περιηγητές"
-          }
-        },
-        {
-          "name": "Βάθος χρώματος",
-          "values": {
-            "svg": "N/A (διάνυσμα)",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Συμπαγές μέγεθος αρχείου",
-          "values": {
-            "svg": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Μεταδεδομένα (EXIF)",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",

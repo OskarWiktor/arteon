@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PDF vs PNG – formatsammenligning",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["PDF", "PNG"],
+      "rows": [
         {
-          "id": "pdf",
-          "name": "PDF"
+          "label": "Tabsgivende komprimering",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Tabsfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Gennemsigtighed (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunderstøttelse",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowserunderstøttelse",
+          "values": ["Indbygget PDF-fremviser", "Alle browsere"]
+        },
+        {
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Tabsgivende komprimering",
-          "values": {
-            "pdf": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Tabsfri komprimering",
-          "values": {
-            "pdf": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Gennemsigtighed (alfakanal)",
-          "values": {
-            "pdf": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animationsunderstøttelse",
-          "values": {
-            "pdf": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbrowserunderstøttelse",
-          "values": {
-            "pdf": "Indbygget PDF-fremviser",
-            "png": "Alle browsere"
-          }
-        },
-        {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "pdf": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "pdf": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

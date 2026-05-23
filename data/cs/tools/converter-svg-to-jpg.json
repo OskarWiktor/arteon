@@ -29,7 +29,13 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
-      "featureList": ["Převod SVG na JPG", "Ovládání kvality JPG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
+      "featureList": [
+        "Převod SVG na JPG",
+        "Ovládání kvality JPG",
+        "Hromadný převod",
+        "Lokální zpracování v prohlížeči",
+        "Bez nahrávání souborů"
+      ]
     },
     "howTo": {
       "name": "Jak převést SVG na JPG",
@@ -165,78 +171,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs JPG – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["SVG", "JPG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Ztrátová komprese",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Všechny prohlížeče", "Všechny prohlížeče"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["N/A (vektor)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "svg": "Všechny prohlížeče",
-            "jpg": "Všechny prohlížeče"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "svg": "N/A (vektor)",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "svg": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

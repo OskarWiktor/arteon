@@ -184,55 +184,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "em vs px – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
+      "labelHeader": "Cecha",
+      "cols": ["em", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "em"
+          "label": "Typ",
+          "values": ["Relatywna (rodzic)", "Absolutna"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Typ",
-          "values": {
-            "unit1": "Relatywna (rodzic)",
-            "unit2": "Absolutna"
-          }
+          "label": "Odniesienie",
+          "values": ["font-size rodzica", "Stała wartość"]
         },
         {
-          "name": "Odniesienie",
-          "values": {
-            "unit1": "font-size rodzica",
-            "unit2": "Stała wartość"
-          }
+          "label": "Zagnieżdżanie",
+          "values": ["Kumuluje się", "Brak efektu"]
         },
         {
-          "name": "Zagnieżdżanie",
-          "values": {
-            "unit1": "Kumuluje się",
-            "unit2": "Brak efektu"
-          }
+          "label": "Zastosowanie",
+          "values": ["Padding, margin, line-height", "Border, shadow, stałe wymiary"]
         },
         {
-          "name": "Zastosowanie",
-          "values": {
-            "unit1": "Padding, margin, line-height",
-            "unit2": "Border, shadow, stałe wymiary"
-          }
-        },
-        {
-          "name": "Media queries",
-          "values": {
-            "unit1": "Respektuje zoom",
-            "unit2": "Nie respektuje zoom"
-          }
+          "label": "Media queries",
+          "values": ["Respektuje zoom", "Nie respektuje zoom"]
         }
       ]
     },

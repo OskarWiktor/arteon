@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convierte marcas de tiempo Unix a fechas legibles. Esencial para desarrolladores y análisis de logs.",
-      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+      "featureList": [
+        "Conversión bidireccional en tiempo real",
+        "Todos los convertidores en un solo lugar",
+        "Copiar resultado al portapapeles",
+        "Cálculo local en el navegador"
+      ]
     },
     "howTo": {
       "name": "Cómo usar el convertidor",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Timestamp Unix vs Fecha ISO",
-      "featureLabel": "Característica",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["Timestamp Unix", "Fecha ISO 8601"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Timestamp Unix"
+          "label": "Formato",
+          "values": ["1709251200", "2024-03-01T00:00:00Z"]
         },
         {
-          "id": "unit2",
-          "name": "Fecha ISO 8601",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Formato",
-          "values": {
-            "unit1": "1709251200",
-            "unit2": "2024-03-01T00:00:00Z"
-          }
+          "label": "Legibilidad",
+          "values": ["Solo para máquinas", "Legible por humanos"]
         },
         {
-          "name": "Legibilidad",
-          "values": {
-            "unit1": "Solo para máquinas",
-            "unit2": "Legible por humanos"
-          }
+          "label": "Zona horaria",
+          "values": ["Siempre UTC", "Incluye zona (Z, +02:00)"]
         },
         {
-          "name": "Zona horaria",
-          "values": {
-            "unit1": "Siempre UTC",
-            "unit2": "Incluye zona (Z, +02:00)"
-          }
+          "label": "Comparación",
+          "values": ["Simple (mayor = más tarde)", "Requiere parsing"]
         },
         {
-          "name": "Comparación",
-          "values": {
-            "unit1": "Simple (mayor = más tarde)",
-            "unit2": "Requiere parsing"
-          }
-        },
-        {
-          "name": "Almacenamiento",
-          "values": {
-            "unit1": "4–8 bytes",
-            "unit2": "20+ bytes"
-          }
+          "label": "Almacenamiento",
+          "values": ["4–8 bytes", "20+ bytes"]
         }
       ]
     },

@@ -160,7 +160,7 @@
     "helper": "Anteprima tecnica, compatibile con Gmail, Outlook e la maggior parte dei client e-mail.",
     "copySuccess": "Copiato  incolla in Gmail",
     "copyError": "Errore durante la copia",
-    "copyButton": "Copia firma (Gmail / Outlook)",
+    "ButtonCopy": "Copia firma (Gmail / Outlook)",
     "copyRawButton": "Copia codice HTML",
     "copyRawSuccess": "Codice HTML copiato",
     "downloadButton": "Scarica in HTML",

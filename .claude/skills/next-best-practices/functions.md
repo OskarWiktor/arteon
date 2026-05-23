@@ -54,12 +54,12 @@ Use `next/link` for internal navigation instead of `<a>` tags.
 
 ```tsx
 // Bad: Plain anchor tag
-<a href="/about">About</a>;
+<a href='/about'>About</a>;
 
 // Good: Next.js Link
 import Link from 'next/link';
 
-<Link href="/about">About</Link>;
+<Link href='/about'>About</Link>;
 ```
 
 Active link styling:
@@ -87,7 +87,7 @@ export function NavLink({ href, children }) {
 // app/blog/[slug]/page.tsx
 export async function generateStaticParams() {
   const posts = await getPosts();
-  return posts.map((post) => ({ slug: post.slug }));
+  return posts.map(post => ({ slug: post.slug }));
 }
 ```
 

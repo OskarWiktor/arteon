@@ -153,7 +153,7 @@
     "helper": "Vista previa técnica, compatible con Gmail, Outlook y la mayoría de clientes de correo.",
     "copySuccess": "Copiado  pegue en Gmail",
     "copyError": "Error al copiar",
-    "copyButton": "Copiar firma (Gmail / Outlook)",
+    "ButtonCopy": "Copiar firma (Gmail / Outlook)",
     "copyRawButton": "Copiar código HTML",
     "copyRawSuccess": "Código HTML copiado",
     "downloadButton": "Descargar como HTML",

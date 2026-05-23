@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět JSON na YAML?",
-      "html": "<p class=\"text-mid mb-4\">JSON je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na YAML prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase JSON soubory do formatu YAML primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na YAML prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny konvertor prevadi vase JSON soubory do formatu YAML primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "JSON to YAML conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs YAML – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["JSON", "YAML"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Vnořená data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "yaml",
-          "name": "YAML",
-          "highlighted": true
+          "label": "Tabulární data",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Validace schématu",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Lidsky čitelné",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API standard",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Kompaktní syntaxe",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Vnořená data",
-          "values": {
-            "json": true,
-            "yaml": true
-          }
-        },
-        {
-          "name": "Tabulární data",
-          "values": {
-            "json": false,
-            "yaml": false
-          }
-        },
-        {
-          "name": "Validace schématu",
-          "values": {
-            "json": true,
-            "yaml": false
-          }
-        },
-        {
-          "name": "Lidsky čitelné",
-          "values": {
-            "json": true,
-            "yaml": true
-          }
-        },
-        {
-          "name": "API standard",
-          "values": {
-            "json": true,
-            "yaml": false
-          }
-        },
-        {
-          "name": "Kompaktní syntaxe",
-          "values": {
-            "json": true,
-            "yaml": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

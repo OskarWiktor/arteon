@@ -121,7 +121,11 @@ Write a JSON file with this structure:
     },
     "loser": {
       "score": 6,
-      "issues": ["Did not use the skill's formatting template", "Invented own approach instead of following step 3", "Missed the 'always validate output' instruction"]
+      "issues": [
+        "Did not use the skill's formatting template",
+        "Invented own approach instead of following step 3",
+        "Missed the 'always validate output' instruction"
+      ]
     }
   },
   "improvement_suggestions": [

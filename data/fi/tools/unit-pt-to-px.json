@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Muunna pisteet pikseleiksi ja päinvastoin.",
-      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+      "featureList": [
+        "Kaksisuuntainen reaaliaikainen muunnos",
+        "Kaikki muuntimet yhdessä paikassa",
+        "Kopioi tulos leikepöydälle",
+        "Paikallinen laskenta selaimessa"
+      ]
     },
     "howTo": {
       "name": "Näin käytät muunninta",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Piste (pt) vs Pikseli (px)",
-      "featureLabel": "Ominaisuus",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["Piste (pt)", "Pikseli (px)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Piste (pt)"
+          "label": "Määritelmä",
+          "values": ["1/72 tuumaa", "1/96 tuumaa (CSS)"]
         },
         {
-          "id": "unit2",
-          "name": "Pikseli (px)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Määritelmä",
-          "values": {
-            "unit1": "1/72 tuumaa",
-            "unit2": "1/96 tuumaa (CSS)"
-          }
+          "label": "Käytetään",
+          "values": ["Paino, Word, PDF", "Verkko, CSS, näytöt"]
         },
         {
-          "name": "Käytetään",
-          "values": {
-            "unit1": "Paino, Word, PDF",
-            "unit2": "Verkko, CSS, näytöt"
-          }
+          "label": "12 pt =",
+          "values": ["12 pt", "16 px"]
         },
         {
-          "name": "12 pt =",
-          "values": {
-            "unit1": "12 pt",
-            "unit2": "16 px"
-          }
+          "label": "Leipäteksti",
+          "values": ["10–12 pt", "14–18 px"]
         },
         {
-          "name": "Leipäteksti",
-          "values": {
-            "unit1": "10–12 pt",
-            "unit2": "14–18 px"
-          }
-        },
-        {
-          "name": "Otsikko",
-          "values": {
-            "unit1": "18–24 pt",
-            "unit2": "24–32 px"
-          }
+          "label": "Otsikko",
+          "values": ["18–24 pt", "24–32 px"]
         }
       ]
     },

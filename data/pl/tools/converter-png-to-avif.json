@@ -2,13 +2,13 @@
   "toolKey": "pngToAvif",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter PNG na AVIF - PNG AVIF",
-    "description": "Zamień grafiki PNG na AVIF z zachowaniem przezroczystości. Znacznie mniejsze pliki. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
+    "title": "Darmowy konwerter formatu PNG na AVIF bez limitu plików i rejestracji",
+    "description": "Zamień grafiki PNG na AVIF z zachowaniem przezroczystości. Znacznie mniejsze pliki. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-png-na-avif"
   },
   "hero": {
-    "title": "Konwerter PNG na AVIF",
+    "title": "Darmowy konwerter formatu PNG na AVIF",
     "description": "Zamień grafiki PNG na AVIF z zachowaniem przezroczystości. Znacznie mniejsze pliki. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień grafiki PNG na AVIF z zachowaniem przezroczystości. Znacznie mniejsze pliki. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
-      "featureList": ["Konwersja do AVIF", "Regulacja jakości (60-95%)", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
-      "alternateName": ["Zamiana PNG na AVIF", "Konwersja PNG do AVIF", "Darmowy konwerter PNG na AVIF"]
+      "featureList": [
+        "Konwersja do AVIF",
+        "Regulacja jakości (60-95%)",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne w przeglądarce"
+      ],
+      "alternateName": [
+        "Zamiana PNG na AVIF",
+        "Konwersja PNG do AVIF",
+        "Darmowy konwerter PNG na AVIF"
+      ]
     },
     "howTo": {
       "name": "PNG to AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs AVIF – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["PNG", "AVIF"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Kompresja stratna",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8/16-bit", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "png": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "png": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "png": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "png": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "png": "Wszystkie przeglądarki",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "png": "8/16-bit",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "png": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "png": false,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

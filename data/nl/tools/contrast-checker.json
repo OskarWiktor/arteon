@@ -180,82 +180,45 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Wat betekenen de niveaus AA en AAA in de WCAG-standaard?",
-      "plans": [
+      "cols": ["Niveau AA (minimum)", "Niveau AAA (verbeterd)"],
+      "rows": [
         {
-          "id": "aa",
-          "name": "Niveau AA (minimum)",
-          "highlighted": true
+          "label": "Normale tekst – min. 4,5:1",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "aaa",
-          "name": "Niveau AAA (verbeterd)"
-        }
-      ],
-      "features": [
-        {
-          "name": "Normale tekst – min. 4,5:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Normale tekst – min. 7:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Normale tekst – min. 7:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Grote / vette tekst – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Grote / vette tekst – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Grote / vette tekst – min. 4,5:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Grote / vette tekst – min. 4,5:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Pictogrammen en UI-elementen – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Pictogrammen en UI-elementen – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Wettelijk verplicht (EU-richtlijn)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Wettelijk verplicht (EU-richtlijn)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Vereist door US ADA / Section 508",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Vereist door US ADA / Section 508",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Vereist door UK Equality Act 2010",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Vereist door UK Equality Act 2010",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
-        },
-        {
-          "name": "Aanbevolen voor essentiële inhoud",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Aanbevolen voor essentiële inhoud",
+          "values": ["✓", "✓"]
         }
       ]
     },

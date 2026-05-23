@@ -4,7 +4,24 @@
  */
 
 // Universal Format Type
-export type UniversalFormat = 'jpg' | 'png' | 'webp' | 'gif' | 'bmp' | 'svg' | 'avif' | 'heic' | 'tiff' | 'pdf' | 'csv' | 'json' | 'xml' | 'yaml' | 'markdown' | 'html' | 'base64';
+export type UniversalFormat =
+  | 'jpg'
+  | 'png'
+  | 'webp'
+  | 'gif'
+  | 'bmp'
+  | 'svg'
+  | 'avif'
+  | 'heic'
+  | 'tiff'
+  | 'pdf'
+  | 'csv'
+  | 'json'
+  | 'xml'
+  | 'yaml'
+  | 'markdown'
+  | 'html'
+  | 'base64';
 
 export type FormatCategory = 'images' | 'documents' | 'data' | 'units';
 
@@ -38,9 +55,13 @@ export const FORMAT_CATEGORIES: { key: FormatCategory; formats: UniversalFormat[
 ] as const;
 
 // Format Type Guards
-export const IMAGE_FORMATS = new Set(FORMAT_CATEGORIES.find((c) => c.key === 'images')?.formats || []);
-export const DOCUMENT_FORMATS = new Set(FORMAT_CATEGORIES.find((c) => c.key === 'documents')?.formats || []);
-export const DATA_FORMATS = new Set(FORMAT_CATEGORIES.find((c) => c.key === 'data')?.formats || []);
+export const IMAGE_FORMATS = new Set(
+  FORMAT_CATEGORIES.find(c => c.key === 'images')?.formats || [],
+);
+export const DOCUMENT_FORMATS = new Set(
+  FORMAT_CATEGORIES.find(c => c.key === 'documents')?.formats || [],
+);
+export const DATA_FORMATS = new Set(FORMAT_CATEGORIES.find(c => c.key === 'data')?.formats || []);
 
 // Helper Functions
 export function isImageFormat(format: string): format is UniversalFormat {
@@ -145,7 +166,11 @@ export const FORMAT_ERROR_MESSAGES = {
 } as const;
 
 // Helper function to validate file format
-export function validateFileFormat(file: File): { valid: boolean; format?: UniversalFormat; error?: string } {
+export function validateFileFormat(file: File): {
+  valid: boolean;
+  format?: UniversalFormat;
+  error?: string;
+} {
   // Check file extension
   const extension = file.name.toLowerCase().split('.').pop();
   if (!extension) {
@@ -153,7 +178,9 @@ export function validateFileFormat(file: File): { valid: boolean; format?: Unive
   }
 
   // Find matching format
-  const format = Object.entries(FORMAT_FILE_EXTENSIONS).find(([_, ext]) => ext.toLowerCase() === `.${extension}`)?.[0] as UniversalFormat | undefined;
+  const format = Object.entries(FORMAT_FILE_EXTENSIONS).find(
+    ([_, ext]) => ext.toLowerCase() === `.${extension}`,
+  )?.[0] as UniversalFormat | undefined;
 
   if (!format) {
     return { valid: false, error: FORMAT_ERROR_MESSAGES.UNSUPPORTED_FORMAT };

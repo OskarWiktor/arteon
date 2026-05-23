@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte fotos JPG a AVIF moderno. Compresion hasta un 50% mejor que JPG manteniendo la calidad. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
-      "featureList": ["Conversión a AVIF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"],
-      "alternateName": ["Convertir JPG a AVIF", "Conversión de JPG a AVIF", "Convertidor JPG a AVIF gratis"]
+      "featureList": [
+        "Conversión a AVIF",
+        "Ajuste de calidad (60-95%)",
+        "Conversión por lotes",
+        "Procesamiento local en el navegador"
+      ],
+      "alternateName": [
+        "Convertir JPG a AVIF",
+        "Conversión de JPG a AVIF",
+        "Convertidor JPG a AVIF gratis"
+      ]
     },
     "howTo": {
       "name": "Cómo convertir JPG a AVIF",
@@ -166,85 +175,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de JPG a AVIF en la práctica",
-      "html": "<p class=\"text-mid mb-4\">AVIF logra hasta un 50% mejor compresión que JPEG a calidad visual comparable. Para sitios con muchas fotos – portales inmobiliarios, revistas online, webs de viajes – los tiempos de carga se reducen considerablemente.</p><p class=\"text-mid mb-4\">Plataformas como Idealista, Booking.com o Wallapop adoptan cada vez más AVIF para mejorar la experiencia móvil. Chrome, Firefox y Safari 16+ lo soportan nativamente. Para navegadores antiguos, un fallback WebP o JPG es recomendable.</p><p class=\"text-mid\">La conversión local en el navegador protege tus imágenes: fotos inmobiliarias, de productos o retratos – nada se sube a ningún servidor. Conforme al RGPD.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF logra hasta un 50% mejor compresión que JPEG a calidad visual comparable. Para sitios con muchas fotos – portales inmobiliarios, revistas, webs de viajes – los tiempos de carga se reducen considerablemente.</p><p class=\"text-mid mb-4\">Plataformas como Idealista, Booking.com o Wallapop adoptan cada vez más AVIF para mejorar la experiencia móvil. Chrome, Firefox y Safari 16+ lo soportan nativamente. Para navegadores antiguos, un fallback WebP o JPG es recomendable.</p><p class=\"text-mid\">La conversión local en el navegador protege tus imágenes: fotos inmobiliarias, de productos o retratos – nada se sube a ningún servidor. Conforme al RGPD.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs AVIF – comparación de formatos",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["JPG", "AVIF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Compresión con pérdida",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Compresión sin pérdida",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparencia (canal alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Soporte de animación",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Compatibilidad con navegadores",
+          "values": ["Todos los navegadores", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Profundidad de color",
+          "values": ["8-bit (16.7M)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Tamaño de archivo compacto",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadatos (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresión con pérdida",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Compresión sin pérdida",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Transparencia (canal alfa)",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Soporte de animación",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Compatibilidad con navegadores",
-          "values": {
-            "jpg": "Todos los navegadores",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Profundidad de color",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Tamaño de archivo compacto",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadatos (EXIF)",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Característica"
+      ]
     },
     {
       "type": "gap",

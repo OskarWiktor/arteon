@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Unix timestamp converter",
-      "alternateName": ["Unix timestamp converter", "Epoch time converter", "Date to timestamp converter"],
+      "alternateName": [
+        "Unix timestamp converter",
+        "Epoch time converter",
+        "Date to timestamp converter"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert Unix timestamps to human-readable dates and vice versa. Essential for developers, debugging, and log analysis.",
@@ -184,55 +188,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Timestamp formats",
-      "featureLabel": "Feature",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["Unix (seconds)", "Unix (milliseconds)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Unix (seconds)"
+          "label": "Digits",
+          "values": ["10 digits", "13 digits"]
         },
         {
-          "id": "unit2",
-          "name": "Unix (milliseconds)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Digits",
-          "values": {
-            "unit1": "10 digits",
-            "unit2": "13 digits"
-          }
+          "label": "Example",
+          "values": ["1700000000", "1700000000000"]
         },
         {
-          "name": "Example",
-          "values": {
-            "unit1": "1700000000",
-            "unit2": "1700000000000"
-          }
+          "label": "Used by",
+          "values": ["PHP, Python, MySQL", "JavaScript, Java"]
         },
         {
-          "name": "Used by",
-          "values": {
-            "unit1": "PHP, Python, MySQL",
-            "unit2": "JavaScript, Java"
-          }
+          "label": "Precision",
+          "values": ["1 second", "1 millisecond"]
         },
         {
-          "name": "Precision",
-          "values": {
-            "unit1": "1 second",
-            "unit2": "1 millisecond"
-          }
-        },
-        {
-          "name": "Max (32-bit)",
-          "values": {
-            "unit1": "Jan 19, 2038",
-            "unit2": "N/A (uses 64-bit)"
-          }
+          "label": "Max (32-bit)",
+          "values": ["Jan 19, 2038", "N/A (uses 64-bit)"]
         }
       ]
     },

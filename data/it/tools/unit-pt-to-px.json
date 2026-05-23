@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Converti punti tipografici in pixel. Per tipografia web e stampa.",
-      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+      "featureList": [
+        "Conversione bidirezionale in tempo reale",
+        "Tutti i convertitori in un unico posto",
+        "Copia il risultato negli appunti",
+        "Calcolo locale nel browser"
+      ]
     },
     "howTo": {
       "name": "Come usare il convertitore",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Punti (pt) vs Pixel (px)",
-      "featureLabel": "Caratteristica",
-      "plans": [
+      "labelHeader": "Caratteristica",
+      "cols": ["Punti (pt)", "Pixel (px)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Punti (pt)"
+          "label": "Definizione",
+          "values": ["1/72 pollice", "1/96 pollice (CSS)"]
         },
         {
-          "id": "unit2",
-          "name": "Pixel (px)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Definizione",
-          "values": {
-            "unit1": "1/72 pollice",
-            "unit2": "1/96 pollice (CSS)"
-          }
+          "label": "Usato in",
+          "values": ["Stampa, Word, PDF", "Web, CSS, schermi"]
         },
         {
-          "name": "Usato in",
-          "values": {
-            "unit1": "Stampa, Word, PDF",
-            "unit2": "Web, CSS, schermi"
-          }
+          "label": "12 pt =",
+          "values": ["12 pt", "16 px"]
         },
         {
-          "name": "12 pt =",
-          "values": {
-            "unit1": "12 pt",
-            "unit2": "16 px"
-          }
+          "label": "Testo corrente",
+          "values": ["10–12 pt", "14–18 px"]
         },
         {
-          "name": "Testo corrente",
-          "values": {
-            "unit1": "10–12 pt",
-            "unit2": "14–18 px"
-          }
-        },
-        {
-          "name": "Intestazione",
-          "values": {
-            "unit1": "18–24 pt",
-            "unit2": "24–32 px"
-          }
+          "label": "Intestazione",
+          "values": ["18–24 pt", "24–32 px"]
         }
       ]
     },

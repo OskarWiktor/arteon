@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire XML in JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in JSON puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file XML nel formato JSON direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "html": "<p class=\"text-mid mb-4\">XML e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in JSON puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore gratuito trasforma i tuoi file XML nel formato JSON direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "XML to JSON conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "XML vs JSON – confronto dei formati",
-      "plans": [
+      "labelHeader": "Funzionalità",
+      "cols": ["XML", "JSON"],
+      "rows": [
         {
-          "id": "xml",
-          "name": "XML"
+          "label": "Dati gerarchici",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Dati tabulari",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Validazione schema",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Leggibile dall'uomo",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Sintassi compatta",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Dati gerarchici",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Dati tabulari",
-          "values": {
-            "xml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Validazione schema",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Leggibile dall'uomo",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Sintassi compatta",
-          "values": {
-            "xml": false,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funzionalità"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Come funziona la conversione da XML a JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML usa una gerarchia basata su tag con elementi di apertura e chiusura, mentre JSON usa parentesi graffe leggere e coppie chiave-valore. Il convertitore analizza l'albero del documento XML e associa ogni elemento a una struttura JSON corrispondente.</p><p class=\"text-mid mb-4\">Gli elementi XML diventano oggetti JSON, gli elementi ripetuti con lo stesso nome di tag diventano array JSON, e il contenuto testuale diventa valori stringa. Gli attributi XML sono rappresentati come propriet\u00e0 speciali (con prefisso @) nell'oggetto JSON.</p><p class=\"text-mid\">JSON \u00e8 il formato preferito per le API web moderne, le applicazioni JavaScript e i database NoSQL. La conversione avviene interamente nel tuo browser.</p>"
+      "html": "<p class=\"text-mid mb-4\">XML usa una gerarchia basata su tag con elementi di apertura e chiusura, mentre JSON usa parentesi graffe leggere e coppie chiave-valore. Il convertitore analizza l'albero del documento XML e associa ogni elemento a una struttura JSON corrispondente.</p><p class=\"text-mid mb-4\">Gli elementi XML diventano oggetti JSON, gli elementi ripetuti con lo stesso nome di tag diventano array JSON, e il contenuto testuale diventa valori stringa. Gli attributi XML sono rappresentati come proprietà speciali (con prefisso @) nell'oggetto JSON.</p><p class=\"text-mid\">JSON è il formato preferito per le API web moderne, le applicazioni JavaScript e i database NoSQL. La conversione avviene interamente nel tuo browser.</p>"
     },
     {
       "type": "gap",
@@ -209,7 +181,7 @@
         {
           "icon": "RiCodeLine",
           "title": "Attributi XML",
-          "description": "Gli attributi XML vengono convertiti in propriet\u00e0 JSON con prefisso @. Ad esempio, &lt;item id='1'&gt; diventa {\"@id\": \"1\"}."
+          "description": "Gli attributi XML vengono convertiti in proprietà JSON con prefisso @. Ad esempio, &lt;item id='1'&gt; diventa {\"@id\": \"1\"}."
         },
         {
           "icon": "RiNodeTree",
@@ -219,7 +191,7 @@
         {
           "icon": "RiFileTextLine",
           "title": "Contenuto misto",
-          "description": "Gli elementi XML che contengono sia testo che elementi figli vengono gestiti posizionando il testo in una propriet\u00e0 speciale #text nel JSON."
+          "description": "Gli elementi XML che contengono sia testo che elementi figli vengono gestiti posizionando il testo in una proprietà speciale #text nel JSON."
         },
         {
           "icon": "RiFileCodeLine",
@@ -254,16 +226,16 @@
           "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno."
         },
         {
-          "question": "\u00c8 sicura la conversione da XML a JSON?",
-          "answer": "S\u00ec. Tutta la conversione avviene localmente nel tuo browser. Nessun dato viene inviato a un server."
+          "question": "È sicura la conversione da XML a JSON?",
+          "answer": "Sì. Tutta la conversione avviene localmente nel tuo browser. Nessun dato viene inviato a un server."
         },
         {
           "question": "Gli attributi XML vengono persi durante la conversione?",
-          "answer": "No. Gli attributi XML vengono conservati nell'output JSON come propriet\u00e0 con prefisso @. Ad esempio, id='123' diventa \"@id\": \"123\" nell'oggetto JSON."
+          "answer": "No. Gli attributi XML vengono conservati nell'output JSON come proprietà con prefisso @. Ad esempio, id='123' diventa \"@id\": \"123\" nell'oggetto JSON."
         },
         {
           "question": "Posso usare l'output JSON in JavaScript?",
-          "answer": "S\u00ec. L'output \u00e8 JSON standard utilizzabile con JSON.parse() in JavaScript o direttamente in qualsiasi linguaggio di programmazione, API o database."
+          "answer": "Sì. L'output è JSON standard utilizzabile con JSON.parse() in JavaScript o direttamente in qualsiasi linguaggio di programmazione, API o database."
         }
       ]
     },

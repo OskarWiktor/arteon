@@ -25,14 +25,21 @@
   "schemas": {
     "software": {
       "name": "BMP to PNG converter – free, unlimited files",
-      "alternateName": ["Bitmap to PNG converter", "Convert BMP to PNG online", "Change BMP to PNG"],
+      "alternateName": ["Bitmap to PNG converter", "Convert BMP to PNG", "Change BMP to PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Free online BMP to PNG converter. Compress BMP to lossless PNG in your browser. No uploads, no limits.",
-      "featureList": ["BMP to PNG conversion", "Lossless compression", "Significant size reduction", "Batch conversion", "Individual or bulk download", "100% local processing"]
+      "description": "Free BMP to PNG converter. Compress BMP to lossless PNG in your browser. No uploads, no limits.",
+      "featureList": [
+        "BMP to PNG conversion",
+        "Lossless compression",
+        "Significant size reduction",
+        "Batch conversion",
+        "Individual or bulk download",
+        "100% local processing"
+      ]
     },
     "howTo": {
-      "name": "How to convert BMP to PNG online",
+      "name": "How to convert BMP to PNG",
       "description": "Step-by-step guide to converting BMP files to PNG.",
       "steps": [
         {
@@ -174,78 +181,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs PNG – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["BMP", "PNG"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Lossy compression",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["All browsers", "All browsers"]
+        },
+        {
+          "label": "Color depth",
+          "values": ["1/4/8/24/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "bmp": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "bmp": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "bmp": "All browsers",
-            "png": "All browsers"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

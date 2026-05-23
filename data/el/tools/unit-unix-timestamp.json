@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Μετατρέψτε Unix timestamp σε ημερομηνία και ώρα.",
-      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+      "featureList": [
+        "Αμφίδρομη μετατροπή σε πραγματικό χρόνο",
+        "Όλοι οι μετατροπείς σε ένα μέρος",
+        "Αντιγραφή αποτελέσματος στο πρόχειρο",
+        "Τοπικός υπολογισμός στον browser"
+      ]
     },
     "howTo": {
       "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Timestamp formats",
-      "featureLabel": "Ιδιότητα",
-      "plans": [
+      "labelHeader": "Ιδιότητα",
+      "cols": ["Unix (seconds)", "Unix (milliseconds)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Unix (seconds)"
+          "label": "Ψηφία",
+          "values": ["10 digits", "13 digits"]
         },
         {
-          "id": "unit2",
-          "name": "Unix (milliseconds)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Ψηφία",
-          "values": {
-            "unit1": "10 digits",
-            "unit2": "13 digits"
-          }
+          "label": "Παράδειγμα",
+          "values": ["1700000000", "1700000000000"]
         },
         {
-          "name": "Παράδειγμα",
-          "values": {
-            "unit1": "1700000000",
-            "unit2": "1700000000000"
-          }
+          "label": "Χρήση",
+          "values": ["PHP, Python, MySQL", "JavaScript, Java"]
         },
         {
-          "name": "Χρήση",
-          "values": {
-            "unit1": "PHP, Python, MySQL",
-            "unit2": "JavaScript, Java"
-          }
+          "label": "Ακρίβεια",
+          "values": ["1 second", "1 millisecond"]
         },
         {
-          "name": "Ακρίβεια",
-          "values": {
-            "unit1": "1 second",
-            "unit2": "1 millisecond"
-          }
-        },
-        {
-          "name": "Max (32-bit)",
-          "values": {
-            "unit1": "Jan 19, 2038",
-            "unit2": "N/A (uses 64-bit)"
-          }
+          "label": "Max (32-bit)",
+          "values": ["Jan 19, 2038", "N/A (uses 64-bit)"]
         }
       ]
     },

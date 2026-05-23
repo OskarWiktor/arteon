@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Markdown in HTML-Format konvertieren. Automatisches Parsen und Formatieren. Kostenlos.",
-      "featureList": ["Markdown to HTML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
+      "featureList": [
+        "Markdown to HTML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Markdown to HTML",
+        "Markdown to HTML",
+        "Free Markdown to HTML converter"
+      ]
     },
     "howTo": {
       "name": "So konvertieren Sie Markdown in HTML",
@@ -128,64 +136,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Markdown vs HTML – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["Markdown", "HTML"],
+      "rows": [
         {
-          "id": "markdown",
-          "name": "Markdown"
+          "label": "Verschachtelte Daten",
+          "values": ["—", "✓"]
         },
         {
-          "id": "html",
-          "name": "HTML",
-          "highlighted": true
+          "label": "Tabellarische Daten",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Schema-Validierung",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Menschenlesbar",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "API-Standard",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Kompakte Syntax",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verschachtelte Daten",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Tabellarische Daten",
-          "values": {
-            "markdown": true,
-            "html": true
-          }
-        },
-        {
-          "name": "Schema-Validierung",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Menschenlesbar",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        },
-        {
-          "name": "API-Standard",
-          "values": {
-            "markdown": false,
-            "html": false
-          }
-        },
-        {
-          "name": "Kompakte Syntax",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "Favicon.ico Generator for Websites",
-      "alternateName": ["Favicon.ico generator", "Create favicon from image", "Free favicon creator", "Website icon generator"],
+      "alternateName": [
+        "Favicon.ico generator",
+        "Create favicon from image",
+        "Free favicon creator",
+        "Website icon generator"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "FaviconGenerator",
       "description": "Free favicon generator. Create favicon.ico and PNG icons 16x16, 32x32, 180x180, 192x192, and 512x512 without limits and without sending files to a server. Processing happens locally in the browser.",

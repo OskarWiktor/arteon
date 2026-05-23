@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fotografii HEIC de pe iPhone în format AVIF modern. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
-      "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
-      "alternateName": ["Conversie HEIC în AVIF", "Convertor HEIC în AVIF", "Convertor gratuit HEIC în AVIF"]
+      "featureList": [
+        "Conversie în AVIF",
+        "Ajustare calitate (60-95%)",
+        "Conversie în lot",
+        "Procesare locală în browser"
+      ],
+      "alternateName": [
+        "Conversie HEIC în AVIF",
+        "Convertor HEIC în AVIF",
+        "Convertor gratuit HEIC în AVIF"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți HEIC în AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs AVIF – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["HEIC", "AVIF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Compresie cu pierderi",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Safari 13+ (macOS / iOS)", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8/10-bit, HDR", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

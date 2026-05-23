@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs CSV – comparaison des formats",
-      "plans": [
+      "labelHeader": "Fonctionnalité",
+      "cols": ["JSON", "CSV"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Données hiérarchiques",
+          "values": ["✓", "—"]
         },
         {
-          "id": "csv",
-          "name": "CSV",
-          "highlighted": true
+          "label": "Données tabulaires",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Validation de schéma",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Lisible par un humain",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Syntaxe compacte",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Données hiérarchiques",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Données tabulaires",
-          "values": {
-            "json": false,
-            "csv": true
-          }
-        },
-        {
-          "name": "Validation de schéma",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Lisible par un humain",
-          "values": {
-            "json": true,
-            "csv": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "json": true,
-            "csv": false
-          }
-        },
-        {
-          "name": "Syntaxe compacte",
-          "values": {
-            "json": true,
-            "csv": true
-          }
-        }
-      ],
-      "featureLabel": "Fonctionnalité"
+      ]
     },
     {
       "type": "gap",

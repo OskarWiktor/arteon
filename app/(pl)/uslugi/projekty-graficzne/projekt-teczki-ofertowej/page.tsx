@@ -1,37 +1,50 @@
-import WorkSteps from '@/components/sections/steps/WorkSteps';
-import HeroBanner from '@/components/sections/HeroBanner';
-import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABanner from '@/components/sections/CTABanner';
-import Gap from '@/components/ui/Gap';
-import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiBrushLine, RiFileTextLine, RiFolderOpenLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
-import SectionContactForm from '@/components/sections/SectionContactForm';
-import Wrapper from '@/components/ui/Wrapper';
-import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
-import Breadcrumbs from '@/components/sections/BreadCrumbs';
-import FaqPanels from '@/components/ui/FaqPanels';
-import FeatureGrid from '@/components/sections/FeatureGrid';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
+import WorkSteps from '@/components/organisms/WorkSteps';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import CTABanner from '@/components/organisms/CTABanner';
+import Divider from '@/components/atoms/Divider';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import {
+  RiBrushLine,
+  RiFileTextLine,
+  RiFolderOpenLine,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Wrapper from '@/components/atoms/Wrapper';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import FaqPanels from '@/components/molecules/FaqPanels';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import { IoColorPalette } from 'react-icons/io5';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import SectionPrices from '@/components/ui/sections/SectionPrices';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt teczki ofertowej | Arteon',
-  description: 'Teczka ofertowa na dokumenty i materiały sprzedażowe. Projekt spójny z identyfikacją wizualną, pliki do druku.',
+  description:
+    'Teczka ofertowa na dokumenty i materiały sprzedażowe. Projekt spójny z identyfikacją wizualną, pliki do druku.',
   alternates: {
     canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
   },
   openGraph: {
     title: 'Projekt teczki ofertowej | Arteon',
-    description: 'Elegancka teczka ofertowa dopasowana do identyfikacji marki. Pliki gotowe do druku.',
+    description:
+      'Elegancka teczka ofertowa dopasowana do identyfikacji marki. Pliki gotowe do druku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp', width: 1200, height: 630 }],
+    images: [
+      {
+        url: 'https://www.arteonagency.pl/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 } as const;
 
@@ -39,13 +52,14 @@ function ServiceSchema() {
   const json = buildServiceSchema({
     path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
     serviceName: 'Projekt teczki ofertowej',
-    description: 'Teczka firmowa spójna z identyfikacją: estetyka i funkcja, poprawne spady oraz makiety pod druk.',
+    description:
+      'Teczka firmowa spójna z identyfikacją: estetyka i funkcja, poprawne spady oraz makiety pod druk.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
 
   return (
-    <Script id="schema-service-projekt-teczki-ofertowej" type="application/ld+json">
+    <Script id='schema-service-projekt-teczki-ofertowej' type='application/ld+json'>
       {JSON.stringify(json)}
     </Script>
   );
@@ -55,16 +69,21 @@ export default function OfferDesignPresentationFolderPage() {
   return (
     <>
       <HeroBanner
-        title="Projekt teczki ofertowej"
-        description={<>Spotkania sprzedażowe wymagają porządku i klasy. Projektujemy teczki ofertowe spójne z identyfikacją - trwałe, eleganckie i funkcjonalne na prezentacje, dokumenty i umowy.</>}
-        secondaryCtaLabel="Bezpłatna wycena"
-        secondaryCtaLink="#kontakt"
-        variant="left"
-        backgroundImage="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
-        overlay="black"
+        title='Projekt teczki ofertowej'
+        description={
+          <>
+            Spotkania sprzedażowe wymagają porządku i klasy. Projektujemy teczki ofertowe spójne z
+            identyfikacją - trwałe, eleganckie i funkcjonalne na prezentacje, dokumenty i umowy.
+          </>
+        }
+        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaHref='#kontakt'
+        variant='left'
+        backgroundImage='/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp'
+        overlay='black'
       />
 
-      <BenefitBelt variant="carousel" />
+      <BenefitBelt variant='carousel' />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
@@ -77,28 +96,39 @@ export default function OfferDesignPresentationFolderPage() {
       />
 
       <Wrapper>
-        <Gap size="xs" />
+        <Divider size='xs' />
 
-        <ProjectsCarousel title="Realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title='Realizacje projektów graficznych' category='grafika' />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Co zyskujesz zamawiając projekt teczki ofertowej?">
+        <SectionInfo title='Co zyskujesz zamawiając projekt teczki ofertowej?'>
           <p>
-            <strong>Własna firmowa teczka porządkuje dokumenty i utrzymuje spójność materiałów.</strong> Klient dostaje Twoje materiały w jednej, eleganckiej formie - to ułatwia zapamiętanie marki
-            oraz buduje jej autorytet. Materiały drukowane zostają w pamięci dłużej niż przekaz cyfrowy - mniejsze obciążenie poznawcze i wyższa zapamiętywalność (badanie Temple University / Canada
-            Post, 2015).
+            <strong>
+              Własna firmowa teczka porządkuje dokumenty i utrzymuje spójność materiałów.
+            </strong>{' '}
+            Klient dostaje Twoje materiały w jednej, eleganckiej formie - to ułatwia zapamiętanie
+            marki oraz buduje jej autorytet. Materiały drukowane zostają w pamięci dłużej niż
+            przekaz cyfrowy - mniejsze obciążenie poznawcze i wyższa zapamiętywalność (badanie
+            Temple University / Canada Post, 2015).
           </p>
 
           <br />
 
           <p>
-            <strong>Profesjonalna teczka ofertowa wzmacnia wiarygodność w kilka sekund.</strong> Estetyka i czytelność oprawy silnie wpływają na ocenę firmy - odbiorcy przypisują zaufanie na podstawie
-            jakości materiałów
-            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
+            <strong>Profesjonalna teczka ofertowa wzmacnia wiarygodność w kilka sekund.</strong>{' '}
+            Estetyka i czytelność oprawy silnie wpływają na ocenę firmy - odbiorcy przypisują
+            zaufanie na podstawie jakości materiałów
+            <a
+              href='https://credibility.stanford.edu/guidelines/index.html'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-link ml-1'
+            >
               (Stanford - web credibility)
             </a>
-            . Spójna estetyka, kolory i typografia wzmacniają rozpoznawalność w każdym kontakcie z Twoją marką.
+            . Spójna estetyka, kolory i typografia wzmacniają rozpoznawalność w każdym kontakcie z
+            Twoją marką.
           </p>
 
           <br />
@@ -106,99 +136,134 @@ export default function OfferDesignPresentationFolderPage() {
           <p>
             <strong>Estetyczna teczka ofertowa robi trzy rzeczy naraz:</strong>
           </p>
-          <ul className="ml-5 list-disc">
+          <ul className='ml-5 list-disc'>
             <li>Porządkuje dokumenty i ułatwia proces spotkania,</li>
             <li>Podkreśla profesjonalizm w trakcie prezentacji i po wyjściu klienta,</li>
             <li>Zostawia fizyczny ślad - klient łatwiej wraca do Twojej firmy i oferty.</li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FeatureGrid
-          title="Co dokładnie dostajesz w ramach projektu teczki ofertowej?"
-          subtitle="Nasz standard pracy"
+          title='Co dokładnie dostajesz w ramach projektu teczki ofertowej?'
+          subtitle='Nasz standard pracy'
           items={[
             {
               title: 'Prestiż na każdym spotkaniu',
-              description: <>Projekt teczki podkreśla profesjonalizm Twojej firmy - już samo wręczenie materiałów robi dobre wrażenie.</>,
-              icon: <RiFolderOpenLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Projekt teczki podkreśla profesjonalizm Twojej firmy - już samo wręczenie
+                  materiałów robi dobre wrażenie.
+                </>
+              ),
+              icon: <RiFolderOpenLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Spójność z identyfikacją marki',
-              description: <>Kolory, typografia i detale nawiązują do Twojej identyfikacji wizualnej, aby wszystkie materiały mówiły jednym językiem.</>,
-              icon: <IoColorPalette className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Kolory, typografia i detale nawiązują do Twojej identyfikacji wizualnej, aby
+                  wszystkie materiały mówiły jednym językiem.
+                </>
+              ),
+              icon: <IoColorPalette className='text-primary h-6 w-6' />,
             },
             {
               title: 'Przemyślane rozwiązania konstrukcyjne',
-              description: <>Proponujemy układ kieszeni, bigów i skrzydełek tak, aby teczka była trwała, wygodna i funkcjonalna w codziennym użyciu.</>,
-              icon: <RiBrushLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Proponujemy układ kieszeni, bigów i skrzydełek tak, aby teczka była trwała,
+                  wygodna i funkcjonalna w codziennym użyciu.
+                </>
+              ),
+              icon: <RiBrushLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Pliki gotowe do druku',
-              description: <>Dostarczamy finalne pliki z poprawnymi spadami i makietami pod drukarnię - możesz od razu przekazać je do produkcji.</>,
-              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Dostarczamy finalne pliki z poprawnymi spadami i makietami pod drukarnię - możesz
+                  od razu przekazać je do produkcji.
+                </>
+              ),
+              icon: <RiFileTextLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
+              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Dla kogo projekt teczki ofertowej ma największy sens?" subtitle="Dla kogo">
-          <ul className="ml-5 list-disc space-y-2">
+        <SectionInfo
+          title='Dla kogo projekt teczki ofertowej ma największy sens?'
+          subtitle='Dla kogo'
+        >
+          <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Dla kancelarii, doradców i firm usługowych,</strong> które wręczają oferty, umowy lub raporty podczas spotkań z klientami.
+              <strong>Dla kancelarii, doradców i firm usługowych,</strong> które wręczają oferty,
+              umowy lub raporty podczas spotkań z klientami.
             </li>
             <li>
-              <strong>Dla firm B2B,</strong> które prezentują oferty wielostronicowe i chcą, aby wszystkie dokumenty były uporządkowane w jednym miejscu.
+              <strong>Dla firm B2B,</strong> które prezentują oferty wielostronicowe i chcą, aby
+              wszystkie dokumenty były uporządkowane w jednym miejscu.
             </li>
             <li>
-              <strong>Dla szkół, uczelni, instytucji i organizatorów szkoleń,</strong> którzy przekazują materiały edukacyjne i informacje o programach.
+              <strong>Dla szkół, uczelni, instytucji i organizatorów szkoleń,</strong> którzy
+              przekazują materiały edukacyjne i informacje o programach.
             </li>
             <li>
-              <strong>Dla marek budujących prestiż offline,</strong> które chcą, aby doświadczenie klienta „na żywo” było równie dopracowane, jak strona internetowa czy profil w mediach
+              <strong>Dla marek budujących prestiż offline,</strong> które chcą, aby doświadczenie
+              klienta „na żywo” było równie dopracowane, jak strona internetowa czy profil w mediach
               społecznościowych.
             </li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu teczek ofertowych?" subtitle="Efekty po wdrożeniu">
-          <ul className="ml-5 list-disc space-y-2">
+        <SectionInfo
+          title='Jakie efekty możesz zobaczyć po wdrożeniu teczek ofertowych?'
+          subtitle='Efekty po wdrożeniu'
+        >
+          <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Bardziej uporządkowane spotkania,</strong> bo wszystkie materiały - oferta, umowa, wizytówka - trafiają do jednej, spójnej teczki.
+              <strong>Bardziej uporządkowane spotkania,</strong> bo wszystkie materiały - oferta,
+              umowa, wizytówka - trafiają do jednej, spójnej teczki.
             </li>
             <li>
-              <strong>Wyższy poziom zaufania i postrzeganego profesjonalizmu,</strong> szczególnie przy pierwszym kontakcie i prezentacjach dla nowych klientów.
+              <strong>Wyższy poziom zaufania i postrzeganego profesjonalizmu,</strong> szczególnie
+              przy pierwszym kontakcie i prezentacjach dla nowych klientów.
             </li>
             <li>
-              <strong>Lepsza zapamiętywalność marki,</strong> ponieważ klient wychodzi ze spotkania z fizycznym nośnikiem, który przypomina o Twojej firmie nawet po kilku dniach.
+              <strong>Lepsza zapamiętywalność marki,</strong> ponieważ klient wychodzi ze spotkania
+              z fizycznym nośnikiem, który przypomina o Twojej firmie nawet po kilku dniach.
             </li>
             <li>
-              <strong>Silniejsza spójność materiałów offline i online,</strong> gdy teczka jest dopasowana do strony, wizytówek i innych elementów identyfikacji.
+              <strong>Silniejsza spójność materiałów offline i online,</strong> gdy teczka jest
+              dopasowana do strony, wizytówek i innych elementów identyfikacji.
             </li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <TestimonialsCarousel />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionPrices
-          title="Projekt teczki ofertowej - przykładowe pakiety"
+          title='Projekt teczki ofertowej - przykładowe pakiety'
           plans={[
             {
               name: 'Pakiet Start - klasyczna teczka firmowa',
               price: 'wycena indywidualna',
-              description: 'Dla firm, które potrzebują jednej dopracowanej teczki na spotkania z klientami i przekazanie oferty w eleganckiej formie.',
+              description:
+                'Dla firm, które potrzebują jednej dopracowanej teczki na spotkania z klientami i przekazanie oferty w eleganckiej formie.',
               features: [
                 'Krótki brief o marce, grupie docelowej i rodzaju dokumentów w teczce',
                 'Projekt jednej wersji teczki w standardowym formacie (np. A4 z kieszeniami)',
@@ -207,12 +272,13 @@ export default function OfferDesignPresentationFolderPage() {
                 'Jedna runda poprawek w cenie',
               ],
               btnOne: 'Zamów wycenę pakietu Start',
-              btnOneLink: '#kontakt',
+              btnOneHref: '#kontakt',
             },
             {
               name: 'Pakiet Standard - teczka + warianty',
               price: 'wycena indywidualna',
-              description: 'Dla marek, które potrzebują kilku wersji teczek (np. różne działy, języki lub linie usług), zachowując spójny styl.',
+              description:
+                'Dla marek, które potrzebują kilku wersji teczek (np. różne działy, języki lub linie usług), zachowując spójny styl.',
               features: [
                 'Wszystko z pakietu Start, a dodatkowo:',
                 'Możliwość przygotowania dwóch wersji teczki (np. dwie linie usług/szczeble oferty)',
@@ -221,12 +287,13 @@ export default function OfferDesignPresentationFolderPage() {
                 'Dwie rundy poprawek w cenie',
               ],
               btnOne: 'Zamów wycenę pakietu Standard',
-              btnOneLink: '#kontakt',
+              btnOneHref: '#kontakt',
             },
             {
               name: 'Pakiet Pro - teczka w systemie materiałów',
               price: 'wycena indywidualna',
-              description: 'Dla firm, które chcą, aby teczka była elementem większego systemu: wraz z wizytówkami, ofertą PDF i innymi materiałami.',
+              description:
+                'Dla firm, które chcą, aby teczka była elementem większego systemu: wraz z wizytówkami, ofertą PDF i innymi materiałami.',
               features: [
                 'Wszystko z pakietu Standard, a dodatkowo:',
                 'Projekt teczki spójny z wizytówkami, ulotkami lub katalogiem',
@@ -235,32 +302,32 @@ export default function OfferDesignPresentationFolderPage() {
                 'Wsparcie przy dopasowaniu projektu do specyfikacji wybranej drukarni',
               ],
               btnOne: 'Porozmawiajmy o pakiecie Pro',
-              btnOneLink: '#kontakt',
+              btnOneHref: '#kontakt',
             },
           ]}
-          legalNote="Zakres, typ teczki i liczbę wersji dopasowujemy indywidualnie - po briefie otrzymasz konkretną wycenę i harmonogram prac."
+          legalNote='Zakres, typ teczki i liczbę wersji dopasowujemy indywidualnie - po briefie otrzymasz konkretną wycenę i harmonogram prac.'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <WorkSteps variant="design" />
+        <WorkSteps variant='design' />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionContactForm
-          title="Sprawdź koszt realizacji teczki ofertowej"
-          description="Napisz jakie informacje chcesz umieścić na teczce, czy posiadasz logo oraz materiały graficzne i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
-          imageAlt="Realizacja teczki ofertowej - kancelaria Luxnova"
-          defaultSubject="Projekt teczki ofertowej"
+          title='Sprawdź koszt realizacji teczki ofertowej'
+          description='Napisz jakie informacje chcesz umieścić na teczce, czy posiadasz logo oraz materiały graficzne i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp'
+          imageAlt='Realizacja teczki ofertowej - kancelaria Luxnova'
+          defaultSubject='Projekt teczki ofertowej'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej"
-          title="Najczęstsze pytania dotyczące projektów teczek ofertowych"
+          defaultOpenIndex={1}
+          pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej'
+          title='Najczęstsze pytania dotyczące projektów teczek ofertowych'
           items={[
             {
               question: 'Jak długo trwa realizacja teczki ofertowej?',
@@ -269,11 +336,13 @@ export default function OfferDesignPresentationFolderPage() {
             },
             {
               question: 'W jakich formatach dostanę pliki teczki?',
-              answer: 'Dostarczamy pliki do druku (PDF ze spadami i oznaczeniami) oraz - na życzenie - pliki źródłowe. Pliki możemy dopasować do specyfikacji konkretnej drukarni.',
+              answer:
+                'Dostarczamy pliki do druku (PDF ze spadami i oznaczeniami) oraz - na życzenie - pliki źródłowe. Pliki możemy dopasować do specyfikacji konkretnej drukarni.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu?',
-              answer: 'Tak, w ramach każdego projektu przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, kolory i detale aż do pełnej akceptacji.',
+              answer:
+                'Tak, w ramach każdego projektu przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, kolory i detale aż do pełnej akceptacji.',
             },
             {
               question: 'Czy projekt teczki jest gotowy do druku?',
@@ -283,15 +352,16 @@ export default function OfferDesignPresentationFolderPage() {
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionBento
-          title="Poznaj inne usługi"
+          title='Poznaj inne usługi'
           items={[
             {
               title: 'Identyfikacja wizualna',
               size: 'large',
-              backgroundImage: '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp',
+              backgroundImage:
+                '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
@@ -305,36 +375,42 @@ export default function OfferDesignPresentationFolderPage() {
             {
               title: 'Strony internetowe',
               size: 'small',
-              backgroundImage: '/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp',
+              backgroundImage:
+                '/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Projekt ulotki',
               size: 'small',
-              backgroundImage: '/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp',
+              backgroundImage:
+                '/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-ulotki',
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getArticlePreviewsByCategory('grafika', 6)} />
+        <ArticlesCarousel
+          title='Przydatne artykuły dotyczące projektów graficznych'
+          categorySlug='grafika'
+          articles={getArticlePreviewsByCategory('grafika', 6)}
+        />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
       <CTABanner
-        title="Dodaj klasę każdemu spotkaniu"
-        description="Przygotujemy teczkę, która podkreśla prestiż Twojej marki."
-        btnOne="Skontaktuj się"
-        btnOneLink="#kontakt"
-        btnTwo="Poznaj inne usługi graficzne"
-        btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
-        overlay="black"
+        title='Dodaj klasę każdemu spotkaniu'
+        description='Przygotujemy teczkę, która podkreśla prestiż Twojej marki.'
+        btnOne='Skontaktuj się'
+        btnOneHref='#kontakt'
+        btnTwo='Poznaj inne usługi graficzne'
+        btnTwoHref='/uslugi/projekty-graficzne'
+        backgroundImage='/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp'
+        overlay='black'
       />
 
       <ServiceSchema />

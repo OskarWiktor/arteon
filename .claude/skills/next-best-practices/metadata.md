@@ -219,11 +219,14 @@ export default async function Image() {
   const fontPath = join(process.cwd(), 'assets/fonts/Inter-Bold.ttf');
   const fontData = await readFile(fontPath);
 
-  return new ImageResponse(<div style={{ fontFamily: 'Inter', fontSize: 64 }}>Custom Font Text</div>, {
-    width: 1200,
-    height: 630,
-    fonts: [{ name: 'Inter', data: fontData, style: 'normal' }],
-  });
+  return new ImageResponse(
+    <div style={{ fontFamily: 'Inter', fontSize: 64 }}>Custom Font Text</div>,
+    {
+      width: 1200,
+      height: 630,
+      fonts: [{ name: 'Inter', data: fontData, style: 'normal' }],
+    },
+  );
 }
 ```
 
@@ -283,7 +286,7 @@ export default async function sitemap({ id }: { id: number }): Promise<MetadataR
   const end = start + 50000;
   const products = await getProducts(start, end);
 
-  return products.map((product) => ({
+  return products.map(product => ({
     url: `https://example.com/product/${product.id}`,
     lastModified: product.updatedAt,
   }));

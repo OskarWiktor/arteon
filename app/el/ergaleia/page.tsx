@@ -1,10 +1,10 @@
-import HeroBanner from '@/components/sections/HeroBanner';
-import Button from '@/components/ui/buttons/Button';
-import Gap from '@/components/ui/Gap';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import FaqPanels from '@/components/ui/FaqPanels';
-import Wrapper from '@/components/ui/Wrapper';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import Divider from '@/components/atoms/Divider';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import FaqPanels from '@/components/molecules/FaqPanels';
+import Wrapper from '@/components/atoms/Wrapper';
 import Script from 'next/script';
 import {
   RiCropLine,
@@ -26,26 +26,28 @@ import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
-  title: 'Δωρεάν online εργαλεία | Μετατροπείς, SEO, χρώματα, favicon',
+  title: 'Δωρεάν εργαλεία | Μετατροπείς, SEO, χρώματα, favicon',
   description:
-    '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
+    '22 δωρεάν εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
   alternates: getToolsIndexAlternates('el'),
   openGraph: {
-    title: 'Δωρεάν online εργαλεία | Μετατροπείς, SEO, χρώματα, favicon',
+    title: 'Δωρεάν εργαλεία | Μετατροπείς, SEO, χρώματα, favicon',
     description:
-      '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
+      '22 δωρεάν εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
     url: toAbsoluteUrl('/el/ergaleia'),
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
+    images: [
+      { url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 },
+    ],
   },
 };
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Δωρεάν online εργαλεία - μετατροπείς εικόνων, SEO, χρώματα, favicon',
+  name: 'Δωρεάν εργαλεία - μετατροπείς εικόνων, SEO, χρώματα, favicon',
   description:
-    '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
+    '22 δωρεάν εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
   url: toAbsoluteUrl('/el/ergaleia'),
   inLanguage: 'el',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -152,7 +154,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 12,
         name: 'Μετατροπέας PNG σε JPG',
-        description: 'Μετατρέψτε αρχεία PNG σε JPG στο πρόγραμμα περιήγησης. Χωρίς όριο, χωρίς εγγραφή.',
+        description:
+          'Μετατρέψτε αρχεία PNG σε JPG στο πρόγραμμα περιήγησης. Χωρίς όριο, χωρίς εγγραφή.',
         url: toAbsoluteUrl('/el/ergaleia/metatropeas-png-se-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -179,7 +182,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 15,
         name: 'Μετατροπέας JPG σε PNG',
-        description: 'Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.',
+        description:
+          'Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.',
         url: toAbsoluteUrl('/el/ergaleia/metatropeas-jpg-se-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -197,7 +201,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 17,
         name: 'Μετατροπέας SVG σε PNG',
-        description: 'Μετατρέψτε διανυσματικά SVG σε PNG. Ιδανικό για έγγραφα και κοινωνικά δίκτυα.',
+        description:
+          'Μετατρέψτε διανυσματικά SVG σε PNG. Ιδανικό για έγγραφα και κοινωνικά δίκτυα.',
         url: toAbsoluteUrl('/el/ergaleia/metatropeas-svg-se-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -206,7 +211,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 18,
         name: 'Μετατροπέας SVG σε JPG',
-        description: 'Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.',
+        description:
+          'Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.',
         url: toAbsoluteUrl('/el/ergaleia/metatropeas-svg-se-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -224,7 +230,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 20,
         name: 'Μετατροπέας BMP σε PNG',
-        description: 'Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο.',
+        description:
+          'Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο.',
         url: toAbsoluteUrl('/el/ergaleia/metatropeas-bmp-se-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -413,7 +420,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 41,
         name: 'Μετατροπέας JPG σε GIF',
-        description: 'Μετατρεψτε φωτογραφιες JPG σε μορφη GIF. Ιδανικο για απλα γραφικα και εικονιδια.',
+        description:
+          'Μετατρεψτε φωτογραφιες JPG σε μορφη GIF. Ιδανικο για απλα γραφικα και εικονιδια.',
         url: toAbsoluteUrl('/el/ergaleia/metatropeas-jpg-se-gif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -458,7 +466,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 46,
         name: 'Μετατροπέας JPG σε TIFF',
-        description: 'Μετατρεψτε φωτογραφιες JPG σε TIFF χωρις απωλειες. Για εκτυπωση και αρχειοθετηση.',
+        description:
+          'Μετατρεψτε φωτογραφιες JPG σε TIFF χωρις απωλειες. Για εκτυπωση και αρχειοθετηση.',
         url: toAbsoluteUrl('/el/ergaleia/metatropeas-jpg-se-tiff'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -513,13 +522,24 @@ const schema = {
 };
 
 const faqItems = [
-  { question: 'Πόσο κοστίζουν τα εργαλεία;', answer: 'Τίποτα. Όλα τα εργαλεία είναι εντελώς δωρεάν, χωρίς συνδρομές και κρυφές χρεώσεις.' },
+  {
+    question: 'Πόσο κοστίζουν τα εργαλεία;',
+    answer: 'Τίποτα. Όλα τα εργαλεία είναι εντελώς δωρεάν, χωρίς συνδρομές και κρυφές χρεώσεις.',
+  },
   {
     question: 'Τα αρχεία μου αποστέλλονται σε διακομιστή;',
-    answer: 'Όχι. Όλα τα εργαλεία λειτουργούν απευθείας στο πρόγραμμα περιήγησης. Τα αρχεία δεν φεύγουν ποτέ από τη συσκευή σας και δεν αποθηκεύονται πουθενά.',
+    answer:
+      'Όχι. Όλα τα εργαλεία λειτουργούν απευθείας στο πρόγραμμα περιήγησης. Τα αρχεία δεν φεύγουν ποτέ από τη συσκευή σας και δεν αποθηκεύονται πουθενά.',
   },
-  { question: 'Χρειάζομαι λογαριασμό;', answer: 'Όχι. Μπορείτε να χρησιμοποιήσετε τα εργαλεία αμέσως χωρίς σύνδεση ή εγγραφή.' },
-  { question: 'Υπάρχουν όρια χρήσης;', answer: 'Όχι. Χρησιμοποιήστε τα χωρίς περιορισμούς – χωρίς ημερήσιο όριο, χωρίς όριο αρχείων, χωρίς όριο μετατροπών.' },
+  {
+    question: 'Χρειάζομαι λογαριασμό;',
+    answer: 'Όχι. Μπορείτε να χρησιμοποιήσετε τα εργαλεία αμέσως χωρίς σύνδεση ή εγγραφή.',
+  },
+  {
+    question: 'Υπάρχουν όρια χρήσης;',
+    answer:
+      'Όχι. Χρησιμοποιήστε τα χωρίς περιορισμούς – χωρίς ημερήσιο όριο, χωρίς όριο αρχείων, χωρίς όριο μετατροπών.',
+  },
   {
     question: 'Για τι χρησιμεύουν τα εργαλεία;',
     answer:
@@ -527,7 +547,8 @@ const faqItems = [
   },
   {
     question: 'Τα εργαλεία λειτουργούν σε κινητό;',
-    answer: 'Ναι, αλλά ορισμένα εργαλεία (μετατροπέας WebP, δημιουργία favicon) λειτουργούν καλύτερα σε υπολογιστή, καθώς επεξεργάζονται μεγαλύτερα αρχεία.',
+    answer:
+      'Ναι, αλλά ορισμένα εργαλεία (μετατροπέας WebP, δημιουργία favicon) λειτουργούν καλύτερα σε υπολογιστή, καθώς επεξεργάζονται μεγαλύτερα αρχεία.',
   },
 ];
 
@@ -535,427 +556,491 @@ export default function ToolsIndexPage() {
   return (
     <>
       <HeroBanner
-        title="Δωρεάν εργαλεία"
-        description="12 μετατροπείς μορφών εικόνας, επεξεργασία εικόνας, δημιουργία favicon, μετρητής κειμένου, εργαλεία χρωμάτων και κωδικοί QR. Χωρίς εγγραφή, χωρίς όρια."
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
-        overlay="black"
+        title='Δωρεάν εργαλεία'
+        description='12 μετατροπείς μορφών εικόνας, επεξεργασία εικόνας, δημιουργία favicon, μετρητής κειμένου, εργαλεία χρωμάτων και κωδικοί QR. Χωρίς εγγραφή, χωρίς όρια.'
+        backgroundImage='/assets/arteon-logo-on-mockup.webp'
+        overlay='black'
       />
       <Wrapper>
-        <Gap size="sm" />
+        <Divider size='sm' />
         <SectionSteps
-          title="Εικόνες και favicon"
-          description="Εργαλεία προετοιμασίας εικόνων, γραφικών και εικονιδίων για ιστοσελίδες και μέσα κοινωνικής δικτύωσης."
-          grid="three"
+          title='Εικόνες και favicon'
+          description='Εργαλεία προετοιμασίας εικόνων, γραφικών και εικονιδίων για ιστοσελίδες και μέσα κοινωνικής δικτύωσης.'
+          grid='three'
           items={[
             {
-              icon: <RiCropLine className="h-8 w-8" />,
-              title: 'Επεξεργασία εικόνας online',
-              topImageAlt: 'Επεξεργασία εικόνας online Arteon',
-              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/epexergasia-eikonas-el.webp',
+              icon: <RiCropLine className='h-8 w-8' />,
+              title: 'Επεξεργασία εικόνας',
+              topImageAlt: 'Επεξεργασία εικόνας Arteon',
+              topImageSrc:
+                '/assets/tools/free-image-editor-crop-resize-and-convert/epexergasia-eikonas-el.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Προετοιμάστε την τέλεια περικοπή για κοινωνικά δίκτυα ή τον ιστότοπό σας. Επιλέξτε έτοιμη μορφή ή εισάγετε προσαρμοσμένες διαστάσεις και κατεβάστε την εικόνα σε PNG, JPG ή WebP.
+                    Προετοιμάστε την τέλεια περικοπή για κοινωνικά δίκτυα ή τον ιστότοπό σας.
+                    Επιλέξτε έτοιμη μορφή ή εισάγετε προσαρμοσμένες διαστάσεις και κατεβάστε την
+                    εικόνα σε PNG, JPG ή WebP.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/epexergasia-eikonas">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/epexergasia-eikonas'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiAppsLine className="h-8 w-8" />,
+              icon: <RiAppsLine className='h-8 w-8' />,
               title: 'Δημιουργία favicon',
               topImageAlt: 'Δημιουργία favicon Arteon',
               topImageSrc: '/assets/tools/favicon-generator/dorean-dimiourgia-favicon-el.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Δημιουργήστε <strong>favicon.ico</strong> και εικονίδια PNG 180x180, 192x192 και 512x512 από μία εικόνα – σύμφωνα με τις απαιτήσεις προγραμμάτων περιήγησης και Lighthouse.
+                    Δημιουργήστε <strong>favicon.ico</strong> και εικονίδια PNG 180x180, 192x192 και
+                    512x512 από μία εικόνα – σύμφωνα με τις απαιτήσεις προγραμμάτων περιήγησης και
+                    Lighthouse.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/dorean-dimiourgia-favicon">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/dorean-dimiourgia-favicon'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Κείμενο και SEO"
-          description="Εργαλεία ελέγχου μήκους κειμένου, meta ετικετών και προεπισκόπησης σελίδας στα αποτελέσματα αναζήτησης."
-          grid="three"
+          title='Κείμενο και SEO'
+          description='Εργαλεία ελέγχου μήκους κειμένου, meta ετικετών και προεπισκόπησης σελίδας στα αποτελέσματα αναζήτησης.'
+          grid='three'
           items={[
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
+              icon: <RiFileTextLine className='h-8 w-8' />,
               title: 'Έλεγχος meta τίτλου και περιγραφής',
               topImageAlt: 'Έλεγχος meta τίτλου και περιγραφής Arteon',
-              topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/elegkhos-meta-titlou-kai-perigrafis-el.webp',
+              topImageSrc:
+                '/assets/tools/free-meta-title-and-description-checker-pixel-width/elegkhos-meta-titlou-kai-perigrafis-el.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Ελέγξτε τον αριθμό χαρακτήρων και λέξεων καθώς και το πλάτος σε pixel – με προεπισκόπηση Google. Αποφύγετε κομμένους τίτλους και περιγραφές στα αποτελέσματα αναζήτησης.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/elegkhos-meta-titlou-kai-perigrafis">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Ελέγξτε τον αριθμό χαρακτήρων και λέξεων καθώς και το πλάτος σε pixel – με
+                    προεπισκόπηση Google. Αποφύγετε κομμένους τίτλους και περιγραφές στα
+                    αποτελέσματα αναζήτησης.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/elegkhos-meta-titlou-kai-perigrafis'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiArticleLine className="h-8 w-8" />,
+              icon: <RiArticleLine className='h-8 w-8' />,
               title: 'Μετρητής λέξεων και χαρακτήρων',
               topImageAlt: 'Μετρητής λέξεων και χαρακτήρων Arteon',
-              topImageSrc: '/assets/tools/word-and-character-counter-with-text-formatting-tools/metritis-lexeon-kai-charaktiron-el.webp',
+              topImageSrc:
+                '/assets/tools/word-and-character-counter-with-text-formatting-tools/metritis-lexeon-kai-charaktiron-el.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Ελέγξτε το μήκος κειμένου και αξιολογήστε αν ταιριάζει σε αρχική σελίδα, σελίδα υπηρεσιών, άρθρο ή περιγραφή προϊόντος. Μετρά λέξεις, χαρακτήρες, παραγράφους και χρόνο ανάγνωσης.
+                    Ελέγξτε το μήκος κειμένου και αξιολογήστε αν ταιριάζει σε αρχική σελίδα, σελίδα
+                    υπηρεσιών, άρθρο ή περιγραφή προϊόντος. Μετρά λέξεις, χαρακτήρες, παραγράφους
+                    και χρόνο ανάγνωσης.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metritis-lexeon-kai-charaktiron">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metritis-lexeon-kai-charaktiron'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
 
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
+              icon: <RiFileTextLine className='h-8 w-8' />,
               title: 'Γεννήτρια Lorem Ipsum',
               topImageAlt: 'Γεννήτρια Lorem Ipsum Arteon',
               topImageSrc: '/assets/tools/lorem-ipsum-generator/gennitra-lorem-ipsum-el.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Δημιουργήστε κείμενο πλήρωσης σε 8 στυλ και 9 λειτουργίες. Lorem Ipsum, Hipster, Business, Bacon και άλλα. Αντιγράψτε ως κείμενο ή HTML.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/gennitra-lorem-ipsum">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Δημιουργήστε κείμενο πλήρωσης σε 8 στυλ και 9 λειτουργίες. Lorem Ipsum, Hipster,
+                    Business, Bacon και άλλα. Αντιγράψτε ως κείμενο ή HTML.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/gennitra-lorem-ipsum'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
         <SectionSteps
-          title="Email και επικοινωνία"
-          description="Εργαλεία για επαγγελματική επικοινωνία μέσω email και ενιαία οπτική ταυτότητα."
-          grid="three"
+          title='Email και επικοινωνία'
+          description='Εργαλεία για επαγγελματική επικοινωνία μέσω email και ενιαία οπτική ταυτότητα.'
+          grid='three'
           items={[
             {
-              icon: <RiMailLine className="h-8 w-8" />,
+              icon: <RiMailLine className='h-8 w-8' />,
               title: 'Δημιουργία υπογραφής email',
               topImageAlt: 'Δημιουργία υπογραφής email Arteon',
-              topImageSrc: '/assets/tools/free-html-email-signature-generator/dorean-dimiourgia-ypografis-email-el.webp',
+              topImageSrc:
+                '/assets/tools/free-html-email-signature-generator/dorean-dimiourgia-ypografis-email-el.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Δημιουργήστε επαγγελματική υπογραφή email σε λίγα λεπτά. Εισάγετε τα στοιχεία σας, επιλέξτε χρώματα και αντιγράψτε τον έτοιμο κώδικα HTML στο Gmail, Outlook ή άλλη εφαρμογή.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/dorean-dimiourgia-ypografis-email">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Δημιουργήστε επαγγελματική υπογραφή email σε λίγα λεπτά. Εισάγετε τα στοιχεία
+                    σας, επιλέξτε χρώματα και αντιγράψτε τον έτοιμο κώδικα HTML στο Gmail, Outlook ή
+                    άλλη εφαρμογή.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/dorean-dimiourgia-ypografis-email'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
         <SectionSteps
-          title="Κωδικοί QR"
-          description="Δημιουργία κωδικών QR για ιστοσελίδες, επαγγελματικές κάρτες, μενού και έντυπα."
-          grid="three"
+          title='Κωδικοί QR'
+          description='Δημιουργία κωδικών QR για ιστοσελίδες, επαγγελματικές κάρτες, μενού και έντυπα.'
+          grid='three'
           items={[
             {
-              icon: <RiQrCodeLine className="h-8 w-8" />,
+              icon: <RiQrCodeLine className='h-8 w-8' />,
               title: 'Δωρεάν δημιουργία κωδικού QR',
               topImageAlt: 'Δημιουργία κωδικού QR Arteon',
               topImageSrc: '/assets/tools/qr-code-generator/dorean-dimiourgia-kodikou-qr-el.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Δημιουργήστε κωδικό QR για ιστοσελίδα, vCard, μενού εστιατορίου ή φυλλάδιο. Εξαγωγή σε PNG και SVG – χωρίς σύνδεση, χωρίς περιορισμούς.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/dorean-dimiourgia-kodikou-qr">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Δημιουργήστε κωδικό QR για ιστοσελίδα, vCard, μενού εστιατορίου ή φυλλάδιο.
+                    Εξαγωγή σε PNG και SVG – χωρίς σύνδεση, χωρίς περιορισμούς.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/dorean-dimiourgia-kodikou-qr'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
         <SectionSteps
-          title="Χρώματα και προσβασιμότητα"
-          description="Εργαλεία εργασίας με χρώματα, αντίθεση και προσβασιμότητα WCAG."
-          grid="three"
+          title='Χρώματα και προσβασιμότητα'
+          description='Εργαλεία εργασίας με χρώματα, αντίθεση και προσβασιμότητα WCAG.'
+          grid='three'
           items={[
             {
-              icon: <RiContrast2Line className="h-8 w-8" />,
+              icon: <RiContrast2Line className='h-8 w-8' />,
               title: 'Έλεγχος αντίθεσης χρωμάτων',
               topImageAlt: 'Έλεγχος αντίθεσης χρωμάτων Arteon',
-              topImageSrc: '/assets/tools/color-contrast-and-readability-checker/elegkhos-kontrast-chromaton-el.webp',
+              topImageSrc:
+                '/assets/tools/color-contrast-and-readability-checker/elegkhos-kontrast-chromaton-el.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Ελέγξτε αν τα χρώματα κειμένου και φόντου είναι ευανάγνωστα. Εισάγετε κωδικούς χρωμάτων, ελέγξτε την αναλογία αντίθεσης σύμφωνα με το πρότυπο <strong>WCAG</strong> και
-                    χρησιμοποιήστε τη λειτουργία <strong>Match</strong> για αυτόματη διόρθωση.
+                    Ελέγξτε αν τα χρώματα κειμένου και φόντου είναι ευανάγνωστα. Εισάγετε κωδικούς
+                    χρωμάτων, ελέγξτε την αναλογία αντίθεσης σύμφωνα με το πρότυπο{' '}
+                    <strong>WCAG</strong> και χρησιμοποιήστε τη λειτουργία <strong>Match</strong>{' '}
+                    για αυτόματη διόρθωση.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/elegkhos-kontrast-chromaton">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/elegkhos-kontrast-chromaton'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiPantoneLine className="h-8 w-8" />,
+              icon: <RiPantoneLine className='h-8 w-8' />,
               title: 'Εξαγωγή χρωμάτων από εικόνα',
               topImageAlt: 'Εξαγωγή χρωμάτων από εικόνα Arteon',
-              topImageSrc: '/assets/tools/image-color-extractor/exagogi-chromaton-apo-eikona-el.webp',
+              topImageSrc:
+                '/assets/tools/image-color-extractor/exagogi-chromaton-apo-eikona-el.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Ανεβάστε μια φωτογραφία ή λογότυπο – το εργαλείο θα εξάγει τα κυρίαρχα χρώματα. Αντιγράψτε κωδικούς HEX με ένα κλικ και χρησιμοποιήστε τους οπουδήποτε.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/exagogi-chromaton-apo-eikona">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Ανεβάστε μια φωτογραφία ή λογότυπο – το εργαλείο θα εξάγει τα κυρίαρχα χρώματα.
+                    Αντιγράψτε κωδικούς HEX με ένα κλικ και χρησιμοποιήστε τους οπουδήποτε.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/exagogi-chromaton-apo-eikona'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiPaletteLine className="h-8 w-8" />,
+              icon: <RiPaletteLine className='h-8 w-8' />,
               title: 'Δημιουργία παλέτας χρωμάτων',
               topImageAlt: 'Δημιουργία παλέτας χρωμάτων Arteon',
-              topImageSrc: '/assets/tools/color-palette-generator/dimiourgia-paletas-chromaton-el.webp',
+              topImageSrc:
+                '/assets/tools/color-palette-generator/dimiourgia-paletas-chromaton-el.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Επιλέξτε ένα βασικό χρώμα και δημιουργήστε 9 παλέτες: μονοχρωματική, συμπληρωματική, τριαδική, παστέλ, σκούρα και άλλες. Αντιγράψτε κωδικούς HEX με ένα κλικ.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/dimiourgia-paletas-chromaton">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Επιλέξτε ένα βασικό χρώμα και δημιουργήστε 9 παλέτες: μονοχρωματική,
+                    συμπληρωματική, τριαδική, παστέλ, σκούρα και άλλες. Αντιγράψτε κωδικούς HEX με
+                    ένα κλικ.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/dimiourgia-paletas-chromaton'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Μετατροπείς μορφών εικόνας"
-          description="12 online μετατροπείς εικόνων - μετατρέψτε μεταξύ JPG, PNG, WebP, SVG, BMP και GIF. Μετατροπή στο πρόγραμμα περιήγησης, χωρίς αποστολή αρχείων."
-          grid="three"
+          title='Μετατροπείς μορφών εικόνας'
+          description='12 μετατροπείς εικόνων - μετατρέψτε μεταξύ JPG, PNG, WebP, SVG, BMP και GIF. Μετατροπή στο πρόγραμμα περιήγησης, χωρίς αποστολή αρχείων.'
+          grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'Μετατροπέας JPG σε WebP',
               topImageAlt: 'Μετατροπέας JPG σε WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Μετατρέψτε φωτογραφίες JPG σε ελαφρύ WebP. Μείωση βάρους έως 35%.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-jpg-se-webp">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metatropeas-jpg-se-webp'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'Μετατροπέας PNG σε JPG',
               topImageAlt: 'Μετατροπέας PNG σε JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρέψτε αρχεία PNG σε JPG στο πρόγραμμα περιήγησης. Χωρίς όριο, χωρίς εγγραφή.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-png-se-jpg">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Μετατρέψτε αρχεία PNG σε JPG στο πρόγραμμα περιήγησης. Χωρίς όριο, χωρίς
+                    εγγραφή.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metatropeas-png-se-jpg'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'Μετατροπέας WebP σε JPG',
               topImageAlt: 'Μετατροπέας WebP σε JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-webp-se-jpg">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metatropeas-webp-se-jpg'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'Μετατροπέας PNG σε WebP',
               topImageAlt: 'Μετατροπέας PNG σε WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Μετατρέψτε γραφικά PNG σε WebP. Μικρότερα αρχεία διατηρώντας τη διαφάνεια.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-png-se-webp">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metatropeas-png-se-webp'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'Μετατροπέας JPG σε PNG',
               topImageAlt: 'Μετατροπέας JPG σε PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-jpg-se-png">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα
+                    περιήγησης.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metatropeas-jpg-se-png'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'Μετατροπέας WebP σε PNG',
               topImageAlt: 'Μετατροπέας WebP σε PNG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-webp-se-png">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metatropeas-webp-se-png'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
         />
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionSteps
-          title="Μετατροπείς δεδομένων"
-          description="Online μετατροπείς μορφών δεδομένων — μετατρέψτε μεταξύ CSV, JSON, XML, YAML, Markdown και HTML. Επεξεργασία στο πρόγραμμα περιήγησης."
-          grid="three"
+          title='Μετατροπείς δεδομένων'
+          description='Online μετατροπείς μορφών δεδομένων — μετατρέψτε μεταξύ CSV, JSON, XML, YAML, Markdown και HTML. Επεξεργασία στο πρόγραμμα περιήγησης.'
+          grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'CSV σε JSON',
               topImageAlt: 'CSV σε JSON Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρέψτε CSV σε μορφή JSON. Αυτόματη ανίχνευση διαχωριστικών και μορφοποίηση.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-csv-se-json">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Μετατρέψτε CSV σε μορφή JSON. Αυτόματη ανίχνευση διαχωριστικών και μορφοποίηση.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metatropeas-csv-se-json'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JSON σε CSV',
               topImageAlt: 'JSON σε CSV Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρέψτε δεδομένα JSON σε μορφή CSV. Επεξεργασία στο πρόγραμμα περιήγησης.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-json-se-csv">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Μετατρέψτε δεδομένα JSON σε μορφή CSV. Επεξεργασία στο πρόγραμμα περιήγησης.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metatropeas-json-se-csv'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'XML σε JSON',
               topImageAlt: 'XML σε JSON Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρέψτε δεδομένα XML σε JSON. Μετατροπή στο πρόγραμμα περιήγησης με επικύρωση.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-xml-se-json">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Μετατρέψτε δεδομένα XML σε JSON. Μετατροπή στο πρόγραμμα περιήγησης με
+                    επικύρωση.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metatropeas-xml-se-json'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JSON σε XML',
               topImageAlt: 'JSON σε XML Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Μετατρέψτε δεδομένα JSON σε έγκυρο XML. Μετατροπή με μορφοποίηση.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-json-se-xml">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metatropeas-json-se-xml'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'YAML σε JSON',
               topImageAlt: 'YAML σε JSON Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>Μετατρέψτε τη διαμόρφωση YAML σε JSON. Επικύρωση και μορφοποίηση.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-yaml-se-json">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metatropeas-yaml-se-json'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              icon: <RiLoopLeftLine className='h-8 w-8' />,
               title: 'JSON σε YAML',
               topImageAlt: 'JSON σε YAML Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
-                <div className="flex h-full flex-col">
-                  <p>Μετατρέψτε δεδομένα JSON σε αναγνώσιμο YAML. Επεξεργασία στο πρόγραμμα περιήγησης.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-json-se-yaml">
+                <div className='flex h-full flex-col'>
+                  <p>
+                    Μετατρέψτε δεδομένα JSON σε αναγνώσιμο YAML. Επεξεργασία στο πρόγραμμα
+                    περιήγησης.
+                  </p>
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/el/ergaleia/metatropeas-json-se-yaml'>
                       Άνοιγμα εργαλείου
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -963,41 +1048,57 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
-        <Gap variant="line" />
-        <SectionInfo title="Τι είναι τα εργαλεία Arteon;">
-          <p className="mb-4">
-            22 δωρεάν εργαλεία για την προετοιμασία υλικού για ιστοσελίδες, μέσα κοινωνικής δικτύωσης και εκτύπωση – μετατροπέας WebP, δημιουργία favicon, μετρητής λέξεων, εξαγωγή χρωμάτων, δημιουργία
-            παλετών και κωδικοί QR.
+        <Divider line />
+        <SectionInfo title='Τι είναι τα εργαλεία Arteon;'>
+          <p className='mb-4'>
+            22 δωρεάν εργαλεία για την προετοιμασία υλικού για ιστοσελίδες, μέσα κοινωνικής
+            δικτύωσης και εκτύπωση – μετατροπέας WebP, δημιουργία favicon, μετρητής λέξεων, εξαγωγή
+            χρωμάτων, δημιουργία παλετών και κωδικοί QR.
           </p>
-          <p>Όλα τα εργαλεία λειτουργούν στο πρόγραμμα περιήγησης – τα αρχεία δεν αποστέλλονται ποτέ σε διακομιστή. Χρησιμοποιήστε τα χωρίς εγγραφή και χωρίς περιορισμούς.</p>
+          <p>
+            Όλα τα εργαλεία λειτουργούν στο πρόγραμμα περιήγησης – τα αρχεία δεν αποστέλλονται ποτέ
+            σε διακομιστή. Χρησιμοποιήστε τα χωρίς εγγραφή και χωρίς περιορισμούς.
+          </p>
         </SectionInfo>
-        <Gap variant="line" />
+        <Divider line />
         <SectionSteps
-          title="Γιατί να χρησιμοποιήσετε τα εργαλεία Arteon;"
-          grid="two"
+          title='Γιατί να χρησιμοποιήσετε τα εργαλεία Arteon;'
+          grid='two'
           items={[
             {
-              icon: <RiShieldCheckLine className="h-6 w-6" />,
+              icon: <RiShieldCheckLine className='h-6 w-6' />,
               title: 'Απόλυτο απόρρητο',
-              description: 'Όλα τα εργαλεία επεξεργάζονται αρχεία τοπικά στο πρόγραμμα περιήγησης. Τίποτα δεν αποστέλλεται σε διακομιστή – τα δεδομένα εξαφανίζονται όταν κλείσετε την καρτέλα.',
+              description:
+                'Όλα τα εργαλεία επεξεργάζονται αρχεία τοπικά στο πρόγραμμα περιήγησης. Τίποτα δεν αποστέλλεται σε διακομιστή – τα δεδομένα εξαφανίζονται όταν κλείσετε την καρτέλα.',
             },
             {
-              icon: <RiInfinityFill className="h-6 w-6" />,
+              icon: <RiInfinityFill className='h-6 w-6' />,
               title: 'Χωρίς όρια χρήσης',
-              description: 'Χρησιμοποιήστε τα χωρίς περιορισμούς – χωρίς ημερήσιο όριο, χωρίς όριο αρχείων, χωρίς όριο μετατροπών. Όσες φορές χρειάζεστε.',
+              description:
+                'Χρησιμοποιήστε τα χωρίς περιορισμούς – χωρίς ημερήσιο όριο, χωρίς όριο αρχείων, χωρίς όριο μετατροπών. Όσες φορές χρειάζεστε.',
             },
-            { icon: <RiLockLine className="h-6 w-6" />, title: 'Χωρίς εγγραφή', description: 'Δεν χρειάζεται λογαριασμός. Ανοίξτε το εργαλείο, χρησιμοποιήστε το, τέλος.' },
-            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Διαθέσιμα στα Ελληνικά', description: 'Όλα τα εργαλεία είναι διαθέσιμα στα ελληνικά – διεπαφή, οδηγίες και ειδοποιήσεις.' },
+            {
+              icon: <RiLockLine className='h-6 w-6' />,
+              title: 'Χωρίς εγγραφή',
+              description:
+                'Δεν χρειάζεται λογαριασμός. Ανοίξτε το εργαλείο, χρησιμοποιήστε το, τέλος.',
+            },
+            {
+              icon: <RiGlobalLine className='h-6 w-6' />,
+              title: 'Διαθέσιμα στα Ελληνικά',
+              description:
+                'Όλα τα εργαλεία είναι διαθέσιμα στα ελληνικά – διεπαφή, οδηγίες και ειδοποιήσεις.',
+            },
           ]}
         />
 
-        <Gap variant="line" />
-        <FaqPanels items={faqItems} title="Συχνές ερωτήσεις σχετικά με τα εργαλεία μας" />
-        <Gap size="sm" />
+        <Divider line />
+        <FaqPanels items={faqItems} title='Συχνές ερωτήσεις σχετικά με τα εργαλεία μας' />
+        <Divider size='sm' />
       </Wrapper>
-      <Script id="ld-json-tools-el" type="application/ld+json" strategy="afterInteractive">
+      <Script id='ld-json-tools-el' type='application/ld+json' strategy='afterInteractive'>
         {JSON.stringify(schema)}
       </Script>
     </>

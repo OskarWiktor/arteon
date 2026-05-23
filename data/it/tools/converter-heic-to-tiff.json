@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converti foto HEIC dell\\'iPhone in formato TIFF professionale. Strumento gratuito nel browser - senza registrazione, senza limiti, privacy totale.",
-      "featureList": ["Conversione in TIFF", "Regolazione qualità (60-95%)", "Conversione in batch", "Elaborazione locale nel browser"],
-      "alternateName": ["Convertire HEIC in TIFF", "Conversione HEIC in TIFF", "Convertitore HEIC in TIFF gratuito"]
+      "featureList": [
+        "Conversione in TIFF",
+        "Regolazione qualità (60-95%)",
+        "Conversione in batch",
+        "Elaborazione locale nel browser"
+      ],
+      "alternateName": [
+        "Convertire HEIC in TIFF",
+        "Conversione HEIC in TIFF",
+        "Convertitore HEIC in TIFF gratuito"
+      ]
     },
     "howTo": {
       "name": "Come convertire HEIC in TIFF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs TIFF – confronto dei formati",
-      "plans": [
+      "labelHeader": "Funzionalità",
+      "cols": ["HEIC", "TIFF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Compressione con perdita",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Compressione senza perdita",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Trasparenza (canale alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Supporto animazione",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Supporto browser",
+          "values": ["Safari 13+ (macOS / iOS)", "Solo Safari"]
+        },
+        {
+          "label": "Profondità colore",
+          "values": ["8/10-bit, HDR", "8/16/32-bit"]
+        },
+        {
+          "label": "Dimensione file compatta",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadati (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressione con perdita",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Compressione senza perdita",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Trasparenza (canale alfa)",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Supporto animazione",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Supporto browser",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "tiff": "Solo Safari"
-          }
-        },
-        {
-          "name": "Profondità colore",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Dimensione file compatta",
-          "values": {
-            "heic": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadati (EXIF)",
-          "values": {
-            "heic": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funzionalità"
+      ]
     },
     {
       "type": "gap",

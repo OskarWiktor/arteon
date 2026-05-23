@@ -2,13 +2,13 @@
   "toolKey": "jpgToTiff",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JPG na TIFF - JPG TIFF",
-    "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
+    "title": "Darmowy konwerter formatu JPG na TIFF bez limitu plików i rejestracji",
+    "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-jpg-na-tiff"
   },
   "hero": {
-    "title": "Konwerter JPG na TIFF",
+    "title": "Darmowy konwerter formatu JPG na TIFF",
     "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
-      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
-      "alternateName": ["Zamiana JPG na TIFF", "Konwersja JPG do TIFF", "Darmowy konwerter JPG na TIFF"]
+      "featureList": [
+        "Konwersja do TIFF",
+        "Format bezstratny",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne w przeglądarce"
+      ],
+      "alternateName": [
+        "Zamiana JPG na TIFF",
+        "Konwersja JPG do TIFF",
+        "Darmowy konwerter JPG na TIFF"
+      ]
     },
     "howTo": {
       "name": "JPG to TIFF",
@@ -168,78 +177,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs TIFF – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["JPG", "TIFF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Kompresja stratna",
+          "values": ["✓", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Tylko Safari"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8-bit (16.7M)", "8/16/32-bit"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "jpg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "jpg": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "jpg": false,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "jpg": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "jpg": "Wszystkie przeglądarki",
-            "tiff": "Tylko Safari"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "jpg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "jpg": true,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

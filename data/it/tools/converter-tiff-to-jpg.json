@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converti file TIFF in JPG compatto. Ideale per scansioni, documenti e archivi foto. Strumento gratuito nel browser - senza registrazione, senza limiti, privacy totale.",
-      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convertire TIFF in JPG", "Conversione TIFF in JPG", "Convertitore TIFF in JPG gratuito"]
+      "featureList": [
+        "TIFF to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convertire TIFF in JPG",
+        "Conversione TIFF in JPG",
+        "Convertitore TIFF in JPG gratuito"
+      ]
     },
     "howTo": {
       "name": "TIFF to JPG",
@@ -165,78 +174,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs JPG – confronto dei formati",
-      "plans": [
+      "labelHeader": "Funzionalità",
+      "cols": ["TIFF", "JPG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Compressione con perdita",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Compressione senza perdita",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Trasparenza (canale alfa)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Supporto animazione",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Supporto browser",
+          "values": ["Solo Safari", "Tutti i browser"]
+        },
+        {
+          "label": "Profondità colore",
+          "values": ["8/16/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Dimensione file compatta",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadati (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressione con perdita",
-          "values": {
-            "tiff": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Compressione senza perdita",
-          "values": {
-            "tiff": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Trasparenza (canale alfa)",
-          "values": {
-            "tiff": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Supporto animazione",
-          "values": {
-            "tiff": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Supporto browser",
-          "values": {
-            "tiff": "Solo Safari",
-            "jpg": "Tutti i browser"
-          }
-        },
-        {
-          "name": "Profondità colore",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Dimensione file compatta",
-          "values": {
-            "tiff": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadati (EXIF)",
-          "values": {
-            "tiff": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funzionalità"
+      ]
     },
     {
       "type": "gap",

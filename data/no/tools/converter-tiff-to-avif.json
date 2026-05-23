@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter TIFF-filer til moderne AVIF. Massiv filstorrelsesreduksjon. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
-      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
-      "alternateName": ["Konverter TIFF til AVIF", "TIFF til AVIF konvertering", "Gratis TIFF til AVIF konverterer"]
+      "featureList": [
+        "Konvertering til AVIF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal behandling i nettleseren"
+      ],
+      "alternateName": [
+        "Konverter TIFF til AVIF",
+        "TIFF til AVIF konvertering",
+        "Gratis TIFF til AVIF konverterer"
+      ]
     },
     "howTo": {
       "name": "Hvordan konvertere TIFF til AVIF",
@@ -182,68 +191,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs AVIF – formatsammenligning",
-      "plans": [
+      "cols": ["TIFF", "AVIF"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Komprimering med tap",
+          "values": ["—", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "tiff": false,
-            "avif": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "tiff": true,
-            "avif": true
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "tiff": true,
-            "avif": true
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "tiff": false,
-            "avif": true
-          }
+          "label": "Nettleserstøtte",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "tiff": false,
-            "avif": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "tiff": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "tiff": true,
-            "avif": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
       ]
     },

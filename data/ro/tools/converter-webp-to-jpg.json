@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Convertor WebP în JPG",
-      "alternateName": ["Conversie WEBP în JPG", "Convertor WEBP în JPG", "Convertor gratuit WEBP în JPG"],
+      "alternateName": [
+        "Conversie WEBP în JPG",
+        "Convertor WEBP în JPG",
+        "Convertor gratuit WEBP în JPG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere WebP în JPG compatibil universal. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
-      "featureList": ["Conversie WEBP în JPG", "Control calitate JPG", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
+      "featureList": [
+        "Conversie WEBP în JPG",
+        "Control calitate JPG",
+        "Conversie în lot",
+        "Procesare locală în browser",
+        "Fără încărcare de fișiere"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți WEBP în JPG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs JPG – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["WebP", "JPG"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Compresie cu pierderi",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Toate browserele"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8-bit (16.7M)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "webp": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "webp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "webp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "webp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "jpg": "Toate browserele"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "webp": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "webp": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

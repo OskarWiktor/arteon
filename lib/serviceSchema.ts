@@ -29,8 +29,20 @@ interface ServiceSchema {
   };
 }
 
-export function buildServiceSchema(params: { path: string; serviceName: string; description: string; availableLanguages?: string[]; includeServiceChannel?: boolean }) {
-  const { path, serviceName, description, availableLanguages = ['pl'], includeServiceChannel = true } = params;
+export function buildServiceSchema(params: {
+  path: string;
+  serviceName: string;
+  description: string;
+  availableLanguages?: string[];
+  includeServiceChannel?: boolean;
+}) {
+  const {
+    path,
+    serviceName,
+    description,
+    availableLanguages = ['pl'],
+    includeServiceChannel = true,
+  } = params;
 
   const url = toAbsoluteUrl(path);
 

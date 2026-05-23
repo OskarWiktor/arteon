@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "JPG til WebP-konverterer",
-      "alternateName": ["Konverter JPG til WEBP", "JPG til WEBP konvertering", "Gratis JPG til WEBP konverterer"],
+      "alternateName": [
+        "Konverter JPG til WEBP",
+        "JPG til WEBP konvertering",
+        "Gratis JPG til WEBP konverterer"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
-      "featureList": ["JPG til WEBP-konvertering", "WEBP-kvalitetskontroll", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
+      "featureList": [
+        "JPG til WEBP-konvertering",
+        "WEBP-kvalitetskontroll",
+        "Batchkonvertering",
+        "Lokal nettleserbehandling",
+        "Ingen filopplasting kreves"
+      ]
     },
     "howTo": {
       "name": "Slik konverterer du JPG til WEBP",
@@ -174,68 +184,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs WebP – formatsammenligning",
-      "plans": [
+      "cols": ["JPG", "WebP"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Komprimering med tap",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "jpg": false,
-            "webp": true
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "jpg": false,
-            "webp": true
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "jpg": false,
-            "webp": true
-          }
+          "label": "Nettleserstøtte",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
       ]
     },

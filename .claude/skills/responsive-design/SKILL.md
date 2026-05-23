@@ -124,12 +124,16 @@ Master modern responsive design techniques to create interfaces that adapt seaml
 // React component with container queries
 function ResponsiveCard({ title, image, description }) {
   return (
-    <div className="@container">
-      <article className="flex flex-col @md:flex-row @md:gap-4">
-        <img src={image} alt="" className="aspect-video w-full object-cover @md:aspect-square @md:w-48 @lg:w-64" />
-        <div className="p-4 @md:p-0">
-          <h2 className="text-lg font-semibold @md:text-xl @lg:text-2xl">{title}</h2>
-          <p className="text-muted-foreground mt-2 @md:line-clamp-3">{description}</p>
+    <div className='@container'>
+      <article className='flex flex-col @md:flex-row @md:gap-4'>
+        <img
+          src={image}
+          alt=''
+          className='aspect-video w-full object-cover @md:aspect-square @md:w-48 @lg:w-64'
+        />
+        <div className='p-4 @md:p-0'>
+          <h2 className='text-lg font-semibold @md:text-xl @lg:text-2xl'>{title}</h2>
+          <p className='text-muted-foreground mt-2 @md:line-clamp-3'>{description}</p>
         </div>
       </article>
     </div>
@@ -263,7 +267,7 @@ const fluidTypeScale = {
 function ResponsiveGrid({ children, minItemWidth = '250px', gap = '1.5rem' }) {
   return (
     <div
-      className="grid"
+      className='grid'
       style={{
         gridTemplateColumns: `repeat(auto-fit, minmax(min(${minItemWidth}, 100%), 1fr))`,
         gap,
@@ -277,8 +281,8 @@ function ResponsiveGrid({ children, minItemWidth = '250px', gap = '1.5rem' }) {
 // Usage with Tailwind
 function ProductGrid({ products }) {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
-      {products.map((product) => (
+    <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4'>
+      {products.map(product => (
         <ProductCard key={product.id} product={product} />
       ))}
     </div>
@@ -293,16 +297,21 @@ function ResponsiveNav({ items }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative">
+    <nav className='relative'>
       {/* Mobile menu button */}
-      <button className="p-2 lg:hidden" onClick={() => setIsOpen(!isOpen)} aria-expanded={isOpen} aria-controls="nav-menu">
-        <span className="sr-only">Toggle navigation</span>
+      <button
+        className='p-2 lg:hidden'
+        onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        aria-controls='nav-menu'
+      >
+        <span className='sr-only'>Toggle navigation</span>
         {isOpen ? <X /> : <Menu />}
       </button>
 
       {/* Navigation links */}
       <ul
-        id="nav-menu"
+        id='nav-menu'
         className={cn(
           // Base: hidden on mobile
           'bg-background absolute top-full right-0 left-0 border-b',
@@ -313,9 +322,16 @@ function ResponsiveNav({ items }) {
           'lg:static lg:flex lg:flex-row lg:border-0 lg:bg-transparent',
         )}
       >
-        {items.map((item) => (
+        {items.map(item => (
           <li key={item.href}>
-            <a href={item.href} className={cn('block px-4 py-3', 'lg:px-3 lg:py-2', 'hover:bg-muted lg:hover:text-primary lg:hover:bg-transparent')}>
+            <a
+              href={item.href}
+              className={cn(
+                'block px-4 py-3',
+                'lg:px-3 lg:py-2',
+                'hover:bg-muted lg:hover:text-primary lg:hover:bg-transparent',
+              )}
+            >
               {item.label}
             </a>
           </li>
@@ -334,12 +350,18 @@ function ResponsiveHero() {
   return (
     <picture>
       {/* Art direction: different crops for different screens */}
-      <source media="(min-width: 1024px)" srcSet="/hero-wide.webp" type="image/webp" />
-      <source media="(min-width: 768px)" srcSet="/hero-medium.webp" type="image/webp" />
-      <source srcSet="/hero-mobile.webp" type="image/webp" />
+      <source media='(min-width: 1024px)' srcSet='/hero-wide.webp' type='image/webp' />
+      <source media='(min-width: 768px)' srcSet='/hero-medium.webp' type='image/webp' />
+      <source srcSet='/hero-mobile.webp' type='image/webp' />
 
       {/* Fallback */}
-      <img src="/hero-mobile.jpg" alt="Hero image description" className="h-auto w-full" loading="eager" fetchpriority="high" />
+      <img
+        src='/hero-mobile.jpg'
+        alt='Hero image description'
+        className='h-auto w-full'
+        loading='eager'
+        fetchpriority='high'
+      />
     </picture>
   );
 }
@@ -354,10 +376,10 @@ function ProductImage({ product }) {
         ${product.image}?w=800 800w,
         ${product.image}?w=1200 1200w
       `}
-      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+      sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
       alt={product.name}
-      className="h-auto w-full object-cover"
-      loading="lazy"
+      className='h-auto w-full object-cover'
+      loading='lazy'
     />
   );
 }
@@ -369,12 +391,12 @@ function ProductImage({ product }) {
 // Responsive table with horizontal scroll
 function ResponsiveTable({ data, columns }) {
   return (
-    <div className="w-full overflow-x-auto">
-      <table className="w-full min-w-[600px]">
+    <div className='w-full overflow-x-auto'>
+      <table className='w-full min-w-[600px]'>
         <thead>
           <tr>
-            {columns.map((col) => (
-              <th key={col.key} className="p-3 text-left">
+            {columns.map(col => (
+              <th key={col.key} className='p-3 text-left'>
                 {col.label}
               </th>
             ))}
@@ -382,9 +404,9 @@ function ResponsiveTable({ data, columns }) {
         </thead>
         <tbody>
           {data.map((row, i) => (
-            <tr key={i} className="border-t">
-              {columns.map((col) => (
-                <td key={col.key} className="p-3">
+            <tr key={i} className='border-t'>
+              {columns.map(col => (
+                <td key={col.key} className='p-3'>
                   {row[col.key]}
                 </td>
               ))}
@@ -401,15 +423,15 @@ function ResponsiveDataTable({ data, columns }) {
   return (
     <>
       {/* Desktop table */}
-      <table className="hidden w-full md:table">{/* ... standard table */}</table>
+      <table className='hidden w-full md:table'>{/* ... standard table */}</table>
 
       {/* Mobile cards */}
-      <div className="space-y-4 md:hidden">
+      <div className='space-y-4 md:hidden'>
         {data.map((row, i) => (
-          <div key={i} className="space-y-2 rounded-md border p-4">
-            {columns.map((col) => (
-              <div key={col.key} className="flex justify-between">
-                <span className="text-muted-foreground font-medium">{col.label}</span>
+          <div key={i} className='space-y-2 rounded-md border p-4'>
+            {columns.map(col => (
+              <div key={col.key} className='flex justify-between'>
+                <span className='text-muted-foreground font-medium'>{col.label}</span>
                 <span>{row[col.key]}</span>
               </div>
             ))}

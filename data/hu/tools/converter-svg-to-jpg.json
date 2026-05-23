@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "SVG JPG konverter",
-      "alternateName": ["SVG konvertálása JPG formátumba", "SVG–JPG átalakítás", "Ingyenes SVG–JPG konverter"],
+      "alternateName": [
+        "SVG konvertálása JPG formátumba",
+        "SVG–JPG átalakítás",
+        "Ingyenes SVG–JPG konverter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
-      "featureList": ["SVG – JPG konvertálás", "JPG minőségszabályozás", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
+      "featureList": [
+        "SVG – JPG konvertálás",
+        "JPG minőségszabályozás",
+        "Csoportos konvertálás",
+        "Helyi böngészős feldolgozás",
+        "Nincs fájlfeltöltés"
+      ]
     },
     "howTo": {
       "name": "SVG konvertálása JPG formátumra",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs JPG – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["SVG", "JPG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Veszteséges tömörítés",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Veszteségmentes tömörítés",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Átlátszóság (alfa csatorna)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animáció támogatás",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Böngészőtámogatás",
+          "values": ["Minden böngésző", "Minden böngésző"]
+        },
+        {
+          "label": "Színmélység",
+          "values": ["N/A (vektor)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Kis fájlméret",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metaadatok (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Veszteséges tömörítés",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Veszteségmentes tömörítés",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Átlátszóság (alfa csatorna)",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animáció támogatás",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Böngészőtámogatás",
-          "values": {
-            "svg": "Minden böngésző",
-            "jpg": "Minden böngésző"
-          }
-        },
-        {
-          "name": "Színmélység",
-          "values": {
-            "svg": "N/A (vektor)",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Kis fájlméret",
-          "values": {
-            "svg": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metaadatok (EXIF)",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

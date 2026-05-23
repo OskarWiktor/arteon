@@ -4,7 +4,21 @@ import type { ToolItemKey } from './common';
 // Unit conversion configuration
 // ---------------------------------------------------------------------------
 
-export type UnitCategory = 'length' | 'weight' | 'temperature' | 'volume' | 'area' | 'speed' | 'pressure' | 'power' | 'css' | 'color' | 'data' | 'time' | 'math' | 'energy';
+export type UnitCategory =
+  | 'length'
+  | 'weight'
+  | 'temperature'
+  | 'volume'
+  | 'area'
+  | 'speed'
+  | 'pressure'
+  | 'power'
+  | 'css'
+  | 'color'
+  | 'data'
+  | 'time'
+  | 'math'
+  | 'energy';
 
 export interface UnitField {
   label?: string;

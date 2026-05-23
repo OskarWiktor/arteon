@@ -87,9 +87,9 @@ gtag('consent', 'update', {
 // components/shared/CookieConsent.tsx
 function CookieConsent() {
   return (
-    <div className="fixed inset-x-0 bottom-0 bg-white p-4 shadow-lg">
+    <div className='fixed inset-x-0 bottom-0 bg-white p-4 shadow-lg'>
       <p>Używamy plików cookie do analizy ruchu.</p>
-      <div className="mt-3 flex gap-2">
+      <div className='mt-3 flex gap-2'>
         <button onClick={acceptAll}>Akceptuję</button>
         <button onClick={rejectAll}>Odrzuć</button>
         <button onClick={openSettings}>Ustawienia</button>
@@ -222,9 +222,11 @@ async function cleanupOldData() {
 ## Consent Checkbox
 
 ```tsx
-<label className="flex items-start gap-2">
-  <input type="checkbox" required name="consent" />
-  <span className="text-sm">Wyrażam zgodę na przetwarzanie danych osobowych w celu odpowiedzi na zapytanie.</span>
+<label className='flex items-start gap-2'>
+  <input type='checkbox' required name='consent' />
+  <span className='text-sm'>
+    Wyrażam zgodę na przetwarzanie danych osobowych w celu odpowiedzi na zapytanie.
+  </span>
 </label>
 ```
 

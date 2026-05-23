@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "CSS rem átváltása pixelre és fordítva.",
-      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+      "featureList": [
+        "Kétirányú valós idejű átváltás",
+        "Minden átváltó egy helyen",
+        "Eredmény másolása a vágólapra",
+        "Helyi számítás a böngészőben"
+      ]
     },
     "howTo": {
       "name": "Hogyan használja az átváltót",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "rem vs em vs px",
-      "featureLabel": "Tulajdonság",
-      "plans": [
+      "labelHeader": "Tulajdonság",
+      "cols": ["rem", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "rem"
+          "label": "Hivatkozás",
+          "values": ["Gyökér betűméret", "Fix pixel"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Hivatkozás",
-          "values": {
-            "unit1": "Gyökér betűméret",
-            "unit2": "Fix pixel"
-          }
+          "label": "Halmozódás",
+          "values": ["Nem (mindig gyökér)", "No"]
         },
         {
-          "name": "Halmozódás",
-          "values": {
-            "unit1": "Nem (mindig gyökér)",
-            "unit2": "No"
-          }
+          "label": "Reszponzív",
+          "values": ["Yes", "No"]
         },
         {
-          "name": "Reszponzív",
-          "values": {
-            "unit1": "Yes",
-            "unit2": "No"
-          }
+          "label": "Akadálymentesség",
+          "values": ["Tiszteletben tartja a felhasználói beállításokat", "Fix méret"]
         },
         {
-          "name": "Akadálymentesség",
-          "values": {
-            "unit1": "Tiszteletben tartja a felhasználói beállításokat",
-            "unit2": "Fix méret"
-          }
-        },
-        {
-          "name": "Kiszámíthatóság",
-          "values": {
-            "unit1": "Mindenhol egységes",
-            "unit2": "Mindig egységes"
-          }
+          "label": "Kiszámíthatóság",
+          "values": ["Mindenhol egységes", "Mindig egységes"]
         }
       ]
     },

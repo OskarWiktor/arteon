@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "XML vs JSON – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["XML", "JSON"],
+      "rows": [
         {
-          "id": "xml",
-          "name": "XML"
+          "label": "Nästlade data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabelldata",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Schemavalidering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Läsbart för människor",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standard",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Kompakt syntax",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Nästlade data",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabelldata",
-          "values": {
-            "xml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Schemavalidering",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Läsbart för människor",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-standard",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompakt syntax",
-          "values": {
-            "xml": false,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",
@@ -193,8 +165,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hur fungerar konvertering fr\u00e5n XML till JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML anv\u00e4nder en taggbaserad hierarki med \u00f6ppnings- och st\u00e4ngningselement, medan JSON anv\u00e4nder l\u00e4ttviktiga klammerparenteser och nyckel-v\u00e4rde-par. Konverteraren analyserar XML-dokumenttr\u00e4det och kopplar varje element till en motsvarande JSON-struktur.</p><p class=\"text-mid mb-4\">XML-element blir JSON-objekt, upprepade element med samma taggnamn blir JSON-arrayer, och textinneh\u00e5ll blir str\u00e4ngv\u00e4rden. XML-attribut representeras som speciella egenskaper (med @-prefix) i JSON-objektet.</p><p class=\"text-mid\">JSON \u00e4r det f\u00f6redragna formatet f\u00f6r moderna webb-API:er, JavaScript-applikationer och NoSQL-databaser. Konverteringen sker helt i din webbl\u00e4sare.</p>"
+      "title": "Hur fungerar konvertering från XML till JSON?",
+      "html": "<p class=\"text-mid mb-4\">XML använder en taggbaserad hierarki med öppnings- och stängningselement, medan JSON använder lättviktiga klammerparenteser och nyckel-värde-par. Konverteraren analyserar XML-dokumentträdet och kopplar varje element till en motsvarande JSON-struktur.</p><p class=\"text-mid mb-4\">XML-element blir JSON-objekt, upprepade element med samma taggnamn blir JSON-arrayer, och textinnehåll blir strängvärden. XML-attribut representeras som speciella egenskaper (med @-prefix) i JSON-objektet.</p><p class=\"text-mid\">JSON är det föredragna formatet för moderna webb-API:er, JavaScript-applikationer och NoSQL-databaser. Konverteringen sker helt i din webbläsare.</p>"
     },
     {
       "type": "gap",
@@ -202,8 +174,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips f\u00f6r konvertering fr\u00e5n XML till JSON",
-      "description": "N\u00e5gra tips f\u00f6r att undvika vanliga problem:",
+      "title": "Tips för konvertering från XML till JSON",
+      "description": "Några tips för att undvika vanliga problem:",
       "grid": "two",
       "items": [
         {
@@ -214,17 +186,17 @@
         {
           "icon": "RiNodeTree",
           "title": "Namnrymder",
-          "description": "XML-namnrymder bevaras i JSON-utdata som en del av elementnamnen. Komplexa namnrymdsdeklarationer kan kr\u00e4va manuell rensning."
+          "description": "XML-namnrymder bevaras i JSON-utdata som en del av elementnamnen. Komplexa namnrymdsdeklarationer kan kräva manuell rensning."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Blandat inneh\u00e5ll",
-          "description": "XML-element som inneh\u00e5ller b\u00e5de text och barnelement hanteras genom att placera texten i en speciell #text-egenskap i JSON."
+          "title": "Blandat innehåll",
+          "description": "XML-element som innehåller både text och barnelement hanteras genom att placera texten i en speciell #text-egenskap i JSON."
         },
         {
           "icon": "RiFileCodeLine",
           "title": "CDATA-sektioner",
-          "description": "CDATA-sektioner i XML konverteras till vanliga str\u00e4ngv\u00e4rden i JSON. CDATA-omslutningen tas bort och inneh\u00e5llet bevaras intakt."
+          "description": "CDATA-sektioner i XML konverteras till vanliga strängvärden i JSON. CDATA-omslutningen tas bort och innehållet bevaras intakt."
         }
       ]
     },

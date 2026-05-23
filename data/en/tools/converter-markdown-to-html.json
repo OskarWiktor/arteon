@@ -40,7 +40,11 @@
         "Batch multi-file conversion",
         "Local browser processing – no upload"
       ],
-      "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
+      "alternateName": [
+        "Convert Markdown to HTML",
+        "Markdown to HTML",
+        "Free Markdown to HTML converter"
+      ]
     },
     "howTo": {
       "name": "How to convert Markdown to HTML",
@@ -139,64 +143,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Markdown vs HTML – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["Markdown", "HTML"],
+      "rows": [
         {
-          "id": "markdown",
-          "name": "Markdown"
+          "label": "Nested/hierarchical data",
+          "values": ["—", "✓"]
         },
         {
-          "id": "html",
-          "name": "HTML",
-          "highlighted": true
+          "label": "Tabular data",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Schema validation",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Human readable",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "API standard",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Compact syntax",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Nested/hierarchical data",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Tabular data",
-          "values": {
-            "markdown": true,
-            "html": true
-          }
-        },
-        {
-          "name": "Schema validation",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Human readable",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        },
-        {
-          "name": "API standard",
-          "values": {
-            "markdown": false,
-            "html": false
-          }
-        },
-        {
-          "name": "Compact syntax",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

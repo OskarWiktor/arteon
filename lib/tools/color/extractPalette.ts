@@ -23,7 +23,10 @@ function rgbDistance(a: RGB, b: RGB): number {
   return Math.sqrt(dr * dr + dg * dg + db * db);
 }
 
-export function extractPalette(imageData: ImageData, options?: ExtractPaletteOptions): ExtractedColor[] {
+export function extractPalette(
+  imageData: ImageData,
+  options?: ExtractPaletteOptions,
+): ExtractedColor[] {
   const maxColors = options?.maxColors ?? 12;
   const bucketSize = options?.bucketSize ?? 16;
   const alphaThreshold = options?.alphaThreshold ?? 32;
@@ -57,7 +60,7 @@ export function extractPalette(imageData: ImageData, options?: ExtractPaletteOpt
   for (const bucket of sorted) {
     if (result.length >= maxColors) break;
 
-    const tooClose = result.some((picked) => rgbDistance(picked.rgb, bucket.rgb) < minDistance);
+    const tooClose = result.some(picked => rgbDistance(picked.rgb, bucket.rgb) < minDistance);
     if (tooClose) continue;
 
     result.push({

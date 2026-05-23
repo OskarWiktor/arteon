@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Convertor SVG în PNG",
-      "alternateName": ["Conversie SVG în PNG", "Convertor SVG în PNG", "Convertor gratuit SVG în PNG"],
+      "alternateName": [
+        "Conversie SVG în PNG",
+        "Convertor SVG în PNG",
+        "Convertor gratuit SVG în PNG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește grafice vectoriale SVG în PNG. Ideal pentru documente și social media. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
-      "featureList": ["Conversie SVG în PNG", "Ieșire PNG fără pierderi", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
+      "featureList": [
+        "Conversie SVG în PNG",
+        "Ieșire PNG fără pierderi",
+        "Conversie în lot",
+        "Procesare locală în browser",
+        "Fără încărcare de fișiere"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți SVG în PNG",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PNG – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["SVG", "PNG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Compresie cu pierderi",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Toate browserele", "Toate browserele"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["N/A (vector)", "8/16-bit"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "svg": "Toate browserele",
-            "png": "Toate browserele"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "svg": "N/A (vector)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

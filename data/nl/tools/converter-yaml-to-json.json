@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom YAML naar JSON converteren?",
-      "html": "<p class=\"text-mid mb-4\">YAML is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar JSON aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw YAML-bestanden direct in de browser om naar het JSON-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">YAML is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar JSON aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis converter zet uw YAML-bestanden direct in de browser om naar het JSON-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "YAML vs JSON – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["YAML", "JSON"],
+      "rows": [
         {
-          "id": "yaml",
-          "name": "YAML"
+          "label": "Geneste gegevens",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabelgegevens",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Schemavalidatie",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Menselijk leesbaar",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standaard",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Compacte syntaxis",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Geneste gegevens",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabelgegevens",
-          "values": {
-            "yaml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Schemavalidatie",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Menselijk leesbaar",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-standaard",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Compacte syntaxis",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Hoe werkt de conversie van YAML naar JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML gebruikt inspringing en minimale syntaxis om gestructureerde gegevens weer te geven, terwijl JSON accolades, vierkante haken en expliciete aanhalingstekens gebruikt. De converter analyseert de YAML-structuur en produceert equivalent JSON met correcte opmaak.</p><p class=\"text-mid mb-4\">YAML-inspringing wordt JSON-nesting, elementen met streepjes worden JSON-array-elementen, en YAML key-value paren worden JSON-objecteigenschappen. Datatypes worden behouden: strings, getallen, booleans, null, arrays en objecten worden direct overgedragen.</p><p class=\"text-mid\">De conversie van YAML naar JSON is nuttig wanneer configuratiegegevens ge\u00efntegreerd moeten worden in webapplicaties, REST-API's of systemen die JSON-invoer verwachten. De conversie vindt volledig plaats in je browser.</p>"
+      "html": "<p class=\"text-mid mb-4\">YAML gebruikt inspringing en minimale syntaxis om gestructureerde gegevens weer te geven, terwijl JSON accolades, vierkante haken en expliciete aanhalingstekens gebruikt. De converter analyseert de YAML-structuur en produceert equivalent JSON met correcte opmaak.</p><p class=\"text-mid mb-4\">YAML-inspringing wordt JSON-nesting, elementen met streepjes worden JSON-array-elementen, en YAML key-value paren worden JSON-objecteigenschappen. Datatypes worden behouden: strings, getallen, booleans, null, arrays en objecten worden direct overgedragen.</p><p class=\"text-mid\">De conversie van YAML naar JSON is nuttig wanneer configuratiegegevens geïntegreerd moeten worden in webapplicaties, REST-API's of systemen die JSON-invoer verwachten. De conversie vindt volledig plaats in je browser.</p>"
     },
     {
       "type": "gap",

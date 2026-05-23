@@ -1,6 +1,13 @@
 import type { HSL, PaletteColor, PaletteGroup } from '@/types/tools/color';
 export type { PaletteColor, PaletteGroupId, PaletteGroup } from '@/types/tools/color';
-import { clamp, hexToRgb, hslToRgb, normalizeHex, rgbToHex, rgbToHsl } from '@/lib/tools/color/convert';
+import {
+  clamp,
+  hexToRgb,
+  hslToRgb,
+  normalizeHex,
+  rgbToHex,
+  rgbToHsl,
+} from '@/lib/tools/color/convert';
 
 function rotateHue(h: number, delta: number): number {
   const value = (h + delta) % 360;
@@ -85,7 +92,13 @@ export function createPaletteFromHex(baseHex: string): PaletteGroup[] {
   const pastelS = Math.min(baseHsl.s, 45);
   const pastel: PaletteGroup = {
     id: 'soft-pastel',
-    colors: [mkColor(baseHsl.h, pastelS, 92), mkColor(baseHsl.h, pastelS, 88), mkColor(baseHsl.h, pastelS, 84), mkColor(baseHsl.h, pastelS, 80), mkColor(baseHsl.h, pastelS, 76)],
+    colors: [
+      mkColor(baseHsl.h, pastelS, 92),
+      mkColor(baseHsl.h, pastelS, 88),
+      mkColor(baseHsl.h, pastelS, 84),
+      mkColor(baseHsl.h, pastelS, 80),
+      mkColor(baseHsl.h, pastelS, 76),
+    ],
   };
 
   const deepS = Math.max(baseHsl.s, 55);
@@ -113,7 +126,13 @@ export function createPaletteFromHex(baseHex: string): PaletteGroup[] {
 
   const apple: PaletteGroup = {
     id: 'apple-minimal',
-    colors: [mkColor(baseHsl.h, Math.max(baseHsl.s, 60), clamp(baseHsl.l, 45, 60)), mkColor(baseHsl.h, 6, 98), mkColor(baseHsl.h, 6, 94), mkColor(baseHsl.h, 6, 88), mkColor(baseHsl.h, 6, 30)],
+    colors: [
+      mkColor(baseHsl.h, Math.max(baseHsl.s, 60), clamp(baseHsl.l, 45, 60)),
+      mkColor(baseHsl.h, 6, 98),
+      mkColor(baseHsl.h, 6, 94),
+      mkColor(baseHsl.h, 6, 88),
+      mkColor(baseHsl.h, 6, 30),
+    ],
   };
 
   // --- New palettes ---
@@ -142,7 +161,11 @@ export function createPaletteFromHex(baseHex: string): PaletteGroup[] {
     ],
   };
 
-  const coolBase = clamp(rotateHue(baseHsl.h, 0) > 120 && rotateHue(baseHsl.h, 0) < 280 ? baseHsl.h : 200, 170, 260);
+  const coolBase = clamp(
+    rotateHue(baseHsl.h, 0) > 120 && rotateHue(baseHsl.h, 0) < 280 ? baseHsl.h : 200,
+    170,
+    260,
+  );
   const coolShift: PaletteGroup = {
     id: 'cool-shift',
     colors: [
@@ -210,5 +233,23 @@ export function createPaletteFromHex(baseHex: string): PaletteGroup[] {
     ],
   };
 
-  return [mono, triadic, split, pastel, deep, material, apple, analogous, complementary, tetradic, warmShift, coolShift, earthTones, neonVibrant, vintageMuted, highContrast, sunsetGradient];
+  return [
+    mono,
+    triadic,
+    split,
+    pastel,
+    deep,
+    material,
+    apple,
+    analogous,
+    complementary,
+    tetradic,
+    warmShift,
+    coolShift,
+    earthTones,
+    neonVibrant,
+    vintageMuted,
+    highContrast,
+    sunsetGradient,
+  ];
 }

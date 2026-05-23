@@ -2,13 +2,13 @@
   "toolKey": "xmlToJson",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter XML na JSON - darmowy, z walidacją",
+    "title": "Darmowy konwerter formatu XML na JSON bez limitu plików i rejestracji",
     "description": "Zamień dane XML na poprawny JSON z walidacją składni. Bez rejestracji, bez limitu - konwersja lokalna w przeglądarce.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-xml-na-json"
   },
   "hero": {
-    "title": "Zamień dane XML na format JSON",
+    "title": "Darmowy konwerter formatu XML na JSON",
     "description": "Wklej dane XML lub wgraj plik, a narzędzie zamieni je na poprawnie sformatowany JSON z walidacją składni. Konwersja lokalna w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter XML na JSON - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana XML na JSON online", "Konwersja XML do JSON", "XML to JSON converter"],
+      "alternateName": ["Zamiana XML na JSON", "Konwersja XML do JSON", "XML to JSON converter"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
-      "description": "Darmowy konwerter XML na JSON online. Zamień dane XML na JSON w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja XML na JSON", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
+      "description": "Darmowy konwerter XML na JSON. Zamień dane XML na JSON w przeglądarce - dane nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja XML na JSON",
+        "Walidacja danych wejściowych",
+        "Przetwarzanie lokalne w przeglądarce",
+        "Kopiowanie do schowka lub pobieranie"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić XML na JSON online",
+      "name": "Jak zamienić XML na JSON",
       "description": "Instrukcja konwersji danych XML na format JSON.",
       "steps": [
         {
@@ -164,64 +169,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "XML vs JSON – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["XML", "JSON"],
+      "rows": [
         {
-          "id": "xml",
-          "name": "XML"
+          "label": "Dane zagnieżdżone",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Dane tabelaryczne",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Walidacja schematu",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Czytelność dla człowieka",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Zwięzła składnia",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Dane zagnieżdżone",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Dane tabelaryczne",
-          "values": {
-            "xml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Walidacja schematu",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Czytelność dla człowieka",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Zwięzła składnia",
-          "values": {
-            "xml": false,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

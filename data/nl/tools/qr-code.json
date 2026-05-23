@@ -246,68 +246,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG - welk formaat kiezen voor afdrukken?",
-      "plans": [
+      "cols": ["PNG (raster)", "SVG (vector)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (raster)"
+          "label": "Websites en social media",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (vector)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Websites en social media",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Flyers en visitekaartjes",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Flyers en visitekaartjes",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Posters en banners (groot formaat)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Posters en banners (groot formaat)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Schalen zonder kwaliteitsverlies",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Schalen zonder kwaliteitsverlies",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Bewerken in grafisch programma",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Bewerken in grafisch programma",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Kleiner bestandsformaat",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Kleiner bestandsformaat",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Presentaties",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Presentaties",
+          "values": ["✓", "✓"]
         }
       ]
     },

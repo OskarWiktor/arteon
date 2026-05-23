@@ -1,6 +1,15 @@
 import type { ReactNode } from 'react';
 
-export type ProjectCategory = 'strona' | 'blog' | 'sklep' | 'grafika' | 'treść' | 'wizytówka' | 'logo' | 'aplikacja' | 'marketing';
+export type ProjectCategory =
+  | 'strona'
+  | 'blog'
+  | 'sklep'
+  | 'grafika'
+  | 'treść'
+  | 'wizytówka'
+  | 'logo'
+  | 'aplikacja'
+  | 'marketing';
 
 export type Stat = { label: string; value: string; note?: string };
 export type FaqItem = { question: string; answer: string };
@@ -34,8 +43,23 @@ export type ContentBlock =
       breakBefore?: boolean;
       breakAfter?: boolean;
     }
-  | { type: 'quote'; text: string; author?: string; role?: string; breakBefore?: boolean; breakAfter?: boolean }
-  | { type: 'callout'; icon?: string; title?: string; text?: string; html?: string; breakBefore?: boolean; breakAfter?: boolean }
+  | {
+      type: 'quote';
+      text: string;
+      author?: string;
+      role?: string;
+      breakBefore?: boolean;
+      breakAfter?: boolean;
+    }
+  | {
+      type: 'callout';
+      icon?: string;
+      title?: string;
+      text?: string;
+      html?: string;
+      breakBefore?: boolean;
+      breakAfter?: boolean;
+    }
   | {
       type: 'steps';
       title?: string;
@@ -47,7 +71,14 @@ export type ContentBlock =
   | {
       type: 'metrics';
       title?: string;
-      items: { label: string; value: number; unit?: string; max?: number; color?: string; inverse?: boolean }[];
+      items: {
+        label: string;
+        value: number;
+        unit?: string;
+        max?: number;
+        color?: string;
+        inverse?: boolean;
+      }[];
       breakBefore?: boolean;
       breakAfter?: boolean;
     }
@@ -130,9 +161,9 @@ export type ProjectCTA = {
   title?: string;
   description?: string;
   btnOne?: string;
-  btnOneLink?: string;
+  btnOneHref?: string;
   btnTwo?: string;
-  btnTwoLink?: string;
+  btnTwoHref?: string;
   backgroundImage?: string;
   overlay?: 'black' | 'white';
 };

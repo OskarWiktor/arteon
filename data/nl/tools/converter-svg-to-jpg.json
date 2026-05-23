@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "SVG naar JPG converter",
-      "alternateName": ["SVG naar JPG omzetten", "SVG naar JPG conversie", "Gratis SVG naar JPG converter"],
+      "alternateName": [
+        "SVG naar JPG omzetten",
+        "SVG naar JPG conversie",
+        "Gratis SVG naar JPG converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer SVG-afbeeldingen naar compact JPG. Kleiner bestand, volledige compatibiliteit. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
-      "featureList": ["SVG naar JPG conversie", "JPG-kwaliteitscontrole", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
+      "featureList": [
+        "SVG naar JPG conversie",
+        "JPG-kwaliteitscontrole",
+        "Batchconversie",
+        "Lokale browserverwerking",
+        "Geen bestandsupload vereist"
+      ]
     },
     "howTo": {
       "name": "SVG naar JPG converteren",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs JPG – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["SVG", "JPG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Lossy-compressie",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alle browsers", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["N/A (vector)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "svg": "Alle browsers",
-            "jpg": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "svg": "N/A (vector)",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "svg": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

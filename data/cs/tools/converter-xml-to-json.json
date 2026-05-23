@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět XML na JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na JSON prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase XML soubory do formatu JSON primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">XML je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na JSON prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny konvertor prevadi vase XML soubory do formatu JSON primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "XML to JSON conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "XML vs JSON – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["XML", "JSON"],
+      "rows": [
         {
-          "id": "xml",
-          "name": "XML"
+          "label": "Vnořená data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabulární data",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Validace schématu",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Lidsky čitelné",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API standard",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Kompaktní syntaxe",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Vnořená data",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabulární data",
-          "values": {
-            "xml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Validace schématu",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Lidsky čitelné",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API standard",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompaktní syntaxe",
-          "values": {
-            "xml": false,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Jak funguje konverze z XML do JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML pou\u017e\u00edv\u00e1 hierarchii zalo\u017eenou na taz\u00edch s otev\u00edrac\u00edmi a uzav\u00edrac\u00edmi elementy, zat\u00edmco JSON pou\u017e\u00edv\u00e1 lehk\u00e9 slo\u017een\u00e9 z\u00e1vorky a p\u00e1ry kl\u00ed\u010d-hodnota. Konvertor analyzuje strom XML dokumentu a p\u0159i\u0159ad\u00ed ka\u017ed\u00fd element k odpov\u00eddaj\u00edc\u00ed JSON struktu\u0159e.</p><p class=\"text-mid mb-4\">XML elementy se stanou JSON objekty, opakovan\u00e9 elementy se stejn\u00fdm n\u00e1zvem tagu se stanou JSON poli a textov\u00fd obsah se stane \u0159et\u011bzcov\u00fdmi hodnotami. XML atributy se zobraz\u00ed jako speci\u00e1ln\u00ed vlastnosti (s @-prefixem) v JSON objektu.</p><p class=\"text-mid\">JSON je preferovan\u00fd form\u00e1t pro modern\u00ed webov\u00e1 API, JavaScript aplikace a NoSQL datab\u00e1ze. Konverze prob\u00edh\u00e1 zcela ve va\u0161em prohl\u00ed\u017ee\u010di.</p>"
+      "html": "<p class=\"text-mid mb-4\">XML používá hierarchii založenou na tazích s otevíracími a uzavíracími elementy, zatímco JSON používá lehké složené závorky a páry klíč-hodnota. Konvertor analyzuje strom XML dokumentu a přiřadí každý element k odpovídající JSON struktuře.</p><p class=\"text-mid mb-4\">XML elementy se stanou JSON objekty, opakované elementy se stejným názvem tagu se stanou JSON poli a textový obsah se stane řetězcovými hodnotami. XML atributy se zobrazí jako speciální vlastnosti (s @-prefixem) v JSON objektu.</p><p class=\"text-mid\">JSON je preferovaný formát pro moderní webová API, JavaScript aplikace a NoSQL databáze. Konverze probíhá zcela ve vašem prohlížeči.</p>"
     },
     {
       "type": "gap",
@@ -203,28 +175,28 @@
     {
       "type": "sectionSteps",
       "title": "Tipy pro konverzi z XML do JSON",
-      "description": "N\u011bkolik tip\u016f, jak se vyhnout b\u011b\u017en\u00fdm probl\u00e9m\u016fm:",
+      "description": "Několik tipů, jak se vyhnout běžným problémům:",
       "grid": "two",
       "items": [
         {
           "icon": "RiCodeLine",
           "title": "XML atributy",
-          "description": "XML atributy se p\u0159ev\u00e1d\u011bj\u00ed na JSON vlastnosti s @-prefixem. Nap\u0159. &lt;item id='1'&gt; se stane {\"@id\": \"1\"}."
+          "description": "XML atributy se převádějí na JSON vlastnosti s @-prefixem. Např. &lt;item id='1'&gt; se stane {\"@id\": \"1\"}."
         },
         {
           "icon": "RiNodeTree",
-          "title": "Jmenn\u00e9 prostory",
-          "description": "XML jmenn\u00e9 prostory se zachov\u00e1vaj\u00ed v JSON v\u00fdstupu jako sou\u010d\u00e1st n\u00e1zv\u016f element\u016f. Slo\u017eit\u00e9 deklarace jmenn\u00fdch prostor\u016f mohou vy\u017eadovat ru\u010dn\u00ed \u00fapravu."
+          "title": "Jmenné prostory",
+          "description": "XML jmenné prostory se zachovávají v JSON výstupu jako součást názvů elementů. Složité deklarace jmenných prostorů mohou vyžadovat ruční úpravu."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Sm\u00ed\u0161en\u00fd obsah",
-          "description": "XML elementy obsahuj\u00edc\u00ed text i d\u011btsk\u00e9 elementy se zpracuj\u00ed um\u00edst\u011bn\u00edm textu do speci\u00e1ln\u00ed vlastnosti #text v JSON."
+          "title": "Smíšený obsah",
+          "description": "XML elementy obsahující text i dětské elementy se zpracují umístěním textu do speciální vlastnosti #text v JSON."
         },
         {
           "icon": "RiFileCodeLine",
           "title": "CDATA sekce",
-          "description": "CDATA sekce v XML se p\u0159evedou na b\u011b\u017en\u00e9 \u0159et\u011bzcov\u00e9 hodnoty v JSON. CDATA ob\u00e1lka se odstran\u00ed a obsah z\u016fstane nedot\u010den."
+          "description": "CDATA sekce v XML se převedou na běžné řetězcové hodnoty v JSON. CDATA obálka se odstraní a obsah zůstane nedotčen."
         }
       ]
     },
@@ -254,16 +226,16 @@
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
         },
         {
-          "question": "Je konverze z XML do JSON bezpe\u010dn\u00e1?",
-          "answer": "Ano. Ve\u0161ker\u00e1 konverze prob\u00edh\u00e1 lok\u00e1ln\u011b ve va\u0161em prohl\u00ed\u017ee\u010di. \u017d\u00e1dn\u00e1 data se neodes\u00edlaj\u00ed na server."
+          "question": "Je konverze z XML do JSON bezpečná?",
+          "answer": "Ano. Veškerá konverze probíhá lokálně ve vašem prohlížeči. Žádná data se neodesílají na server."
         },
         {
-          "question": "Ztr\u00e1cej\u00ed se XML atributy p\u0159i konverzi?",
-          "answer": "Ne. XML atributy se zachov\u00e1vaj\u00ed v JSON v\u00fdstupu jako vlastnosti s @-prefixem. Nap\u0159. id='123' se stane \"@id\": \"123\" v JSON objektu."
+          "question": "Ztrácejí se XML atributy při konverzi?",
+          "answer": "Ne. XML atributy se zachovávají v JSON výstupu jako vlastnosti s @-prefixem. Např. id='123' se stane \"@id\": \"123\" v JSON objektu."
         },
         {
-          "question": "Mohu pou\u017e\u00edt JSON v\u00fdstup v JavaScriptu?",
-          "answer": "Ano. V\u00fdstup je standardn\u00ed JSON, kter\u00fd lze pou\u017e\u00edt s JSON.parse() v JavaScriptu nebo p\u0159\u00edmo v jak\u00e9mkoli programovac\u00edm jazyce, API nebo datab\u00e1zi."
+          "question": "Mohu použít JSON výstup v JavaScriptu?",
+          "answer": "Ano. Výstup je standardní JSON, který lze použít s JSON.parse() v JavaScriptu nebo přímo v jakémkoli programovacím jazyce, API nebo databázi."
         }
       ]
     },

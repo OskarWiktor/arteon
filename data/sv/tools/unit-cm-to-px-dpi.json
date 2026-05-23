@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Omvandla cm till pixlar med DPI-stöd.",
-      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+      "featureList": [
+        "Dubbelriktad konvertering i realtid",
+        "Alla omvandlare på ett ställe",
+        "Kopiera resultat till urklipp",
+        "Lokal beräkning i webbläsaren"
+      ]
     },
     "howTo": {
       "name": "Så använder du omvandlaren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI-upplösningar jämförda",
-      "featureLabel": "Egenskap",
-      "plans": [
+      "labelHeader": "Egenskap",
+      "cols": ["300 DPI (tryck)", "72 DPI (skärm)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "300 DPI (tryck)"
+          "label": "10 cm",
+          "values": ["1 181 px", "283 px"]
         },
         {
-          "id": "unit2",
-          "name": "72 DPI (skärm)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "10 cm",
-          "values": {
-            "unit1": "1 181 px",
-            "unit2": "283 px"
-          }
+          "label": "A4 bredd",
+          "values": ["2 480 px", "595 px"]
         },
         {
-          "name": "A4 bredd",
-          "values": {
-            "unit1": "2 480 px",
-            "unit2": "595 px"
-          }
+          "label": "A4 höjd",
+          "values": ["3 508 px", "842 px"]
         },
         {
-          "name": "A4 höjd",
-          "values": {
-            "unit1": "3 508 px",
-            "unit2": "842 px"
-          }
+          "label": "Användning",
+          "values": ["Professionellt tryck", "Webbgrafik"]
         },
         {
-          "name": "Användning",
-          "values": {
-            "unit1": "Professionellt tryck",
-            "unit2": "Webbgrafik"
-          }
-        },
-        {
-          "name": "Kvalitet",
-          "values": {
-            "unit1": "Skarpt i alla storlekar",
-            "unit2": "Bara för skärm"
-          }
+          "label": "Kvalitet",
+          "values": ["Skarpt i alla storlekar", "Bara för skärm"]
         }
       ]
     },

@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Convertor PNG în WebP",
-      "alternateName": ["Conversie PNG în WEBP", "Convertor PNG în WEBP", "Convertor gratuit PNG în WEBP"],
+      "alternateName": [
+        "Conversie PNG în WEBP",
+        "Convertor PNG în WEBP",
+        "Convertor gratuit PNG în WEBP"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește grafice PNG în WebP. Fișiere mai mici păstrând transparența. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
-      "featureList": ["Conversie PNG în WEBP", "Control calitate WEBP", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
+      "featureList": [
+        "Conversie PNG în WEBP",
+        "Control calitate WEBP",
+        "Conversie în lot",
+        "Procesare locală în browser",
+        "Fără încărcare de fișiere"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți PNG în WEBP",
@@ -158,85 +168,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversia PNG în WebP în practică",
-      "html": "<p class=\"text-mid mb-4\">Designerii web si proprietarii de magazine online din Romania folosesc PNG pentru logo-uri, decupaje de produse si elemente de interfata cu transparenta. La trecerea la WebP, transparenta se pastreaza complet, in timp ce dimensiunea fisierului scade cu 25–35% – un castig direct pentru timpii de incarcare si Core Web Vitals.</p><p class=\"text-mid mb-4\">Grafica cu suprafete mari de culoare uniforma (logo-uri, pictograme) beneficiaza cel mai mult: fisiere de 200–500 KB scad adesea sub 100 KB. Pentru fotografii de produse pe OLX.ro, eMAG.ro, Amazon sau magazine Shopify, aceasta inseamna pagini de categorie mai rapide si o experienta mobila mai buna.</p><p class=\"text-mid\">Toata procesarea are loc local in browser – ideal pentru agentii si companii care trebuie sa respecte GDPR. Imaginile de produse sau grafica clientilor nu parasesc niciodata dispozitivul dvs.</p>"
+      "html": "<p class=\"text-mid mb-4\">Designerii web si proprietarii de magazineolosesc PNG pentru logo-uri, decupaje de produse si elemente de interfata cu transparenta. La trecerea la WebP, transparenta se pastreaza complet, in timp ce dimensiunea fisierului scade cu 25–35% – un castig direct pentru timpii de incarcare si Core Web Vitals.</p><p class=\"text-mid mb-4\">Grafica cu suprafete mari de culoare uniforma (logo-uri, pictograme) beneficiaza cel mai mult: fisiere de 200–500 KB scad adesea sub 100 KB. Pentru fotografii de produse pe OLX.ro, eMAG.ro, Amazon sau magazine Shopify, aceasta inseamna pagini de categorie mai rapide si o experienta mobila mai buna.</p><p class=\"text-mid\">Toata procesarea are loc local in browser – ideal pentru agentii si companii care trebuie sa respecte GDPR. Imaginile de produse sau grafica clientilor nu parasesc niciodata dispozitivul dvs.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs WebP – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["PNG", "WebP"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Compresie cu pierderi",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Toate browserele", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8/16-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "png": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "png": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "png": "Toate browserele",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "png": "8/16-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "png": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

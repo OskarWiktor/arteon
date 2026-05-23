@@ -2,13 +2,13 @@
   "toolKey": "pngToJpg",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter PNG na JPG – zamień format obrazu za darmo",
-    "description": "Zamień pliki PNG na JPG w przeglądarce. Bez limitu plików, bez rejestracji. Konwersja odbywa się lokalnie - pliki nie są wysyłane na serwer.",
+    "title": "Darmowy konwerter formatu PNG na JPG bez limitu plików i rejestracji",
+    "description": "Zamień pliki PNG na JPG w przeglądarce. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-png-na-jpg"
   },
   "hero": {
-    "title": "Konwerter PNG na JPG – zmniejsz rozmiar obrazu bez utraty jakości",
+    "title": "Darmowy konwerter formatu PNG na JPG – zmniejsz rozmiar obrazu bez utraty jakości",
     "description": "Zamień pliki PNG na JPG i zmniejsz ich rozmiar. Dodaj pliki, ustaw jakość i pobierz obrazy w formacie JPG. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,10 +25,10 @@
   "schemas": {
     "software": {
       "name": "Konwerter PNG na JPG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana PNG na JPG online", "Konwersja PNG do JPG", "Zmiana formatu PNG na JPG"],
+      "alternateName": ["Zamiana PNG na JPG", "Konwersja PNG do JPG", "Zmiana formatu PNG na JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter PNG na JPG online. Zamień pliki PNG na JPG w przeglądarce - pliki nie są wysyłane na serwer. Bez limitu plików i rejestracji.",
+      "description": "Darmowy konwerter PNG na JPG. Zamień pliki PNG na JPG w przeglądarce - pliki nie są wysyłane na serwer. Bez limitu plików i rejestracji.",
       "featureList": [
         "Konwersja PNG do JPG",
         "Regulacja poziomu jakości (60–95%)",
@@ -39,8 +39,8 @@
       ]
     },
     "howTo": {
-      "name": "Jak zamienić PNG na JPG online",
-      "description": "Instrukcja konwersji plików PNG na format JPG za pomocą darmowego narzędzia online.",
+      "name": "Jak zamienić PNG na JPG",
+      "description": "Instrukcja konwersji plików PNG na format JPG za pomocą darmowego narzędzia.",
       "steps": [
         {
           "name": "Dodaj pliki PNG",
@@ -65,7 +65,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować PNG na JPG?",
-      "html": "<p class=\"text-mid mb-4\">PNG (Portable Network Graphics) to format bezstratny, który zachowuje pełną jakość obrazu i obsługuje przezroczystość (kanał alfa). Pliki PNG są jednak znacznie większe od JPG - zdjęcie o rozdzielczości 3000×2000 pikseli w PNG może ważyć 8–15 MB, podczas gdy w JPG przy jakości 85% zajmie 0,5–1,5 MB.</p><p class=\"text-mid mb-4\">JPG (JPEG) to format stratny, który kompresuje obraz poprzez usunięcie szczegółów niewidocznych dla ludzkiego oka. Przy jakości 80–85% różnica wizualna jest praktycznie niezauważalna, a plik jest kilkukrotnie mniejszy. Format JPG jest obsługiwany przez każdy program, przeglądarkę i platformę.</p><p class=\"text-mid\">Konwersja PNG na JPG ma sens, gdy obraz nie wymaga przezroczystości - na przykład zdjęcia, screenshoty z jednolitym tłem, grafiki do e-maili czy obrazy do formularzy online z ograniczeniem rozmiaru pliku.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG (Portable Network Graphics) to format bezstratny, który zachowuje pełną jakość obrazu i obsługuje przezroczystość (kanał alfa). Pliki PNG są jednak znacznie większe od JPG - zdjęcie o rozdzielczości 3000×2000 pikseli w PNG może ważyć 8–15 MB, podczas gdy w JPG przy jakości 85% zajmie 0,5–1,5 MB.</p><p class=\"text-mid mb-4\">JPG (JPEG) to format stratny, który kompresuje obraz poprzez usunięcie szczegółów niewidocznych dla ludzkiego oka. Przy jakości 80–85% różnica wizualna jest praktycznie niezauważalna, a plik jest kilkukrotnie mniejszy. Format JPG jest obsługiwany przez każdy program, przeglądarkę i platformę.</p><p class=\"text-mid\">Konwersja PNG na JPG ma sens, gdy obraz nie wymaga przezroczystości - na przykład zdjęcia, screenshoty z jednolitym tłem, grafiki do e-maili czy obrazy do formularzy z ograniczeniem rozmiaru pliku.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter PNG na JPG – Arteon"
     },
@@ -118,7 +118,7 @@
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Formularze online",
+          "title": "Formularze",
           "description": "Formularze rekrutacyjne, urzędowe i bankowe często akceptują tylko JPG z limitem rozmiaru. Konwersja z PNG rozwiązuje ten problem."
         },
         {
@@ -164,78 +164,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs JPG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["PNG", "JPG"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Kompresja stratna",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8/16-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "png": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "png": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "png": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "png": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "png": "Wszystkie przeglądarki",
-            "jpg": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "png": "8/16-bit",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "png": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "png": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

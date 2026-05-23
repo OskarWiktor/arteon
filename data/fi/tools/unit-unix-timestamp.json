@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Muunna Unix-aikaleima päivämääräksi ja ajaksi.",
-      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+      "featureList": [
+        "Kaksisuuntainen reaaliaikainen muunnos",
+        "Kaikki muuntimet yhdessä paikassa",
+        "Kopioi tulos leikepöydälle",
+        "Paikallinen laskenta selaimessa"
+      ]
     },
     "howTo": {
       "name": "Näin käytät muunninta",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Timestamp formats",
-      "featureLabel": "Ominaisuus",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["Unix (seconds)", "Unix (milliseconds)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Unix (seconds)"
+          "label": "Numerot",
+          "values": ["10 digits", "13 digits"]
         },
         {
-          "id": "unit2",
-          "name": "Unix (milliseconds)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Numerot",
-          "values": {
-            "unit1": "10 digits",
-            "unit2": "13 digits"
-          }
+          "label": "Esimerkki",
+          "values": ["1700000000", "1700000000000"]
         },
         {
-          "name": "Esimerkki",
-          "values": {
-            "unit1": "1700000000",
-            "unit2": "1700000000000"
-          }
+          "label": "Käyttäjä",
+          "values": ["PHP, Python, MySQL", "JavaScript, Java"]
         },
         {
-          "name": "Käyttäjä",
-          "values": {
-            "unit1": "PHP, Python, MySQL",
-            "unit2": "JavaScript, Java"
-          }
+          "label": "Tarkkuus",
+          "values": ["1 second", "1 millisecond"]
         },
         {
-          "name": "Tarkkuus",
-          "values": {
-            "unit1": "1 second",
-            "unit2": "1 millisecond"
-          }
-        },
-        {
-          "name": "Max (32-bit)",
-          "values": {
-            "unit1": "Jan 19, 2038",
-            "unit2": "N/A (uses 64-bit)"
-          }
+          "label": "Max (32-bit)",
+          "values": ["Jan 19, 2038", "N/A (uses 64-bit)"]
         }
       ]
     },

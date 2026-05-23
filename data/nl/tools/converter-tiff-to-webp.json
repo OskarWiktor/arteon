@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer TIFF-bestanden naar lichtgewicht WebP. Enorme reductie met behoud van kwaliteit. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
-      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["TIFF naar WEBP omzetten", "TIFF naar WEBP conversie", "Gratis TIFF naar WEBP converter"]
+      "featureList": [
+        "TIFF to WebP conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "TIFF naar WEBP omzetten",
+        "TIFF naar WEBP conversie",
+        "Gratis TIFF naar WEBP converter"
+      ]
     },
     "howTo": {
       "name": "TIFF to WebP",
@@ -158,85 +167,51 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-naar-WebP-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">De conversie van TIFF naar WebP bereikt de grootste bestandsverkleining van alle gangbare formaatwijzigingen: TIFF-bestanden van 20–100 MB krimpen vaak tot 200 KB – 2 MB. Voor het publiceren van professionele foto's op het web is dit de meest efficiënte weg.</p><p class=\"text-mid mb-4\">WebP behoudt bij kwaliteitsniveau 80–85% een uitstekende visuele kwaliteit. Voor fotogalerijen, portfoliowebsites en online magazines betekent dit: professionele beeldkwaliteit bij een fractie van de oorspronkelijke bestandsgrootte.</p><p class=\"text-mid\">Fotografen en bureaus in Nederland kunnen hoogwaardige shootresultaten lokaal omzetten naar webgeoptimaliseerde formaten – zonder cloud-upload en volledig AVG-conform.</p>"
+      "html": "<p class=\"text-mid mb-4\">De conversie van TIFF naar WebP bereikt de grootste bestandsverkleining van alle gangbare formaatwijzigingen: TIFF-bestanden van 20–100 MB krimpen vaak tot 200 KB – 2 MB. Voor het publiceren van professionele foto's op het web is dit de meest efficiënte weg.</p><p class=\"text-mid mb-4\">WebP behoudt bij kwaliteitsniveau 80–85% een uitstekende visuele kwaliteit. Voor fotogalerijen, portfoliowebsites en magazines betekent dit: professionele beeldkwaliteit bij een fractie van de oorspronkelijke bestandsgrootte.</p><p class=\"text-mid\">Fotografen en bureaus in Nederland kunnen hoogwaardige shootresultaten lokaal omzetten naar webgeoptimaliseerde formaten – zonder cloud-upload en volledig AVG-conform.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs WebP – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["TIFF", "WebP"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Lossy-compressie",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alleen Safari", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["8/16/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "tiff": "Alleen Safari",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "tiff": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "tiff": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

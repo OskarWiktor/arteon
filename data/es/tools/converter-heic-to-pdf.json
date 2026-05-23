@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir HEIC a PDF?",
-      "html": "<p class=\"text-mid mb-4\">HEIC es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a PDF puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor online gratuito transforma tus archivos HEIC al formato PDF directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
+      "html": "<p class=\"text-mid mb-4\">HEIC es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a PDF puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor gratuito transforma tus archivos HEIC al formato PDF directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "HEIC to PDF conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs PDF – comparación de formatos",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["HEIC", "PDF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Compresión con pérdida",
+          "values": ["✓", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Compresión sin pérdida",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparencia (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Soporte de animación",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Compatibilidad con navegadores",
+          "values": ["Safari 13+ (macOS / iOS)", "Visor PDF integrado"]
+        },
+        {
+          "label": "Tamaño de archivo compacto",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadatos (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresión con pérdida",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Compresión sin pérdida",
-          "values": {
-            "heic": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Transparencia (canal alfa)",
-          "values": {
-            "heic": true,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Soporte de animación",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Compatibilidad con navegadores",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "pdf": "Visor PDF integrado"
-          }
-        },
-        {
-          "name": "Tamaño de archivo compacto",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadatos (EXIF)",
-          "values": {
-            "heic": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Característica"
+      ]
     },
     {
       "type": "gap",
@@ -255,7 +224,7 @@
     {
       "type": "sectionInfo",
       "title": "How image conversion impacts page speed and SEO",
-      "html": "<p class=\"text-mid mb-4\">HEIC to PDF conversion creates document files. When sharing PDFs containing photos online, file size matters — large PDFs slow down downloads and may exceed email attachment limits (typically 10–25 MB).</p><p class=\"text-mid mb-4\">The converter optimizes the PDF output to balance quality and file size. A typical 12 MP iPhone photo produces a PDF page of about 1–2 MB, meaning a 10-photo PDF will be approximately 15–20 MB.</p><p class=\"text-mid\">For smaller PDFs, consider reducing quality settings. For web sharing, you may want to convert HEIC to JPG or WebP instead and display images directly on a web page.</p>"
+      "html": "<p class=\"text-mid mb-4\">HEIC to PDF conversion creates document files. When sharing PDFs containing photos, file size matters — large PDFs slow down downloads and may exceed email attachment limits (typically 10–25 MB).</p><p class=\"text-mid mb-4\">The converter optimizes the PDF output to balance quality and file size. A typical 12 MP iPhone photo produces a PDF page of about 1–2 MB, meaning a 10-photo PDF will be approximately 15–20 MB.</p><p class=\"text-mid\">For smaller PDFs, consider reducing quality settings. For web sharing, you may want to convert HEIC to JPG or WebP instead and display images directly on a web page.</p>"
     },
     {
       "type": "faq",

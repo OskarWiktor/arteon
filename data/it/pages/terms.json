@@ -1,19 +1,19 @@
 {
   "slug": "termini-di-servizio",
   "metadata": {
-    "title": "Termini di Servizio – Strumenti Online Gratuiti Arteon",
-    "description": "Termini di servizio per gli strumenti online gratuiti di Arteon. Scopri le condizioni d'uso, la proprieta intellettuale, le esclusioni e la responsabilita."
+    "title": "Termini di Servizio – Strumenti Gratuiti Arteon",
+    "description": "Termini di servizio per gli strumenti gratuiti di Arteon. Scopri le condizioni d'uso, la proprieta intellettuale, le esclusioni e la responsabilita."
   },
   "hero": {
     "title": "Termini di Servizio",
-    "description": "Condizioni d'uso degli strumenti online gratuiti di Arteon"
+    "description": "Condizioni d'uso degli strumenti gratuiti di Arteon"
   },
   "version": "24.02.2026",
   "sections": [
     {
       "id": "introduction",
       "title": "1. Introduzione",
-      "content": "Questi Termini di Servizio regolano l'utilizzo degli strumenti online gratuiti forniti da Arteon su arteonagency.pl. Utilizzando i nostri strumenti, accetti questi termini."
+      "content": "Questi Termini di Servizio regolano l'utilizzo degli strumenti gratuiti forniti da Arteon su arteonagency.pl. Utilizzando i nostri strumenti, accetti questi termini."
     },
     {
       "id": "provider",
@@ -73,7 +73,7 @@
   ],
   "cta": {
     "title": "Torna agli strumenti",
-    "description": "Strumenti online gratuiti per lavorare con immagini, testo e colori",
+    "description": "Strumenti gratuiti per lavorare con immagini, testo e colori",
     "btnOne": "Strumenti"
   }
 }

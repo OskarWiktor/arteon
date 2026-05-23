@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Konverter DPI til PPI og omvendt. Nyttig til tryk- og skærmdesign. Ingen registrering krævet.",
-      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+      "featureList": [
+        "Tovejs-konvertering i realtid",
+        "Alle konvertere samlet ét sted",
+        "Kopier resultat til udklipsholder",
+        "Lokal beregning i browseren"
+      ]
     },
     "howTo": {
       "name": "Sådan bruger du konverteren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI vs PPI – sammenligning",
-      "featureLabel": "Egenskab",
-      "plans": [
+      "labelHeader": "Egenskab",
+      "cols": ["DPI", "PPI"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "DPI"
+          "label": "Gælder for",
+          "values": ["Printere", "Skærme og billeder"]
         },
         {
-          "id": "unit2",
-          "name": "PPI",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Gælder for",
-          "values": {
-            "unit1": "Printere",
-            "unit2": "Skærme og billeder"
-          }
+          "label": "Måler",
+          "values": ["Fysiske blækprikker", "Digitale pixels"]
         },
         {
-          "name": "Måler",
-          "values": {
-            "unit1": "Fysiske blækprikker",
-            "unit2": "Digitale pixels"
-          }
+          "label": "Typiske værdier",
+          "values": ["600–4.800 DPI", "72–460 PPI"]
         },
         {
-          "name": "Typiske værdier",
-          "values": {
-            "unit1": "600–4.800 DPI",
-            "unit2": "72–460 PPI"
-          }
+          "label": "Trykkvalitet",
+          "values": ["Mere = finere", "300 PPI standard"]
         },
         {
-          "name": "Trykkvalitet",
-          "values": {
-            "unit1": "Mere = finere",
-            "unit2": "300 PPI standard"
-          }
-        },
-        {
-          "name": "Forveksling",
-          "values": {
-            "unit1": "Fejlagtigt brugt for billeder",
-            "unit2": "Korrekt begreb"
-          }
+          "label": "Forveksling",
+          "values": ["Fejlagtigt brugt for billeder", "Korrekt begreb"]
         }
       ]
     },

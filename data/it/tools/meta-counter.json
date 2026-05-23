@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "Contatore della lunghezza di meta titolo e descrizione in pixel",
-      "alternateName": ["Verificatore meta titolo con anteprima Google", "Contatore caratteri meta titolo", "Anteprima SERP Google", "Verificatore lunghezza SEO"],
+      "alternateName": [
+        "Verificatore meta titolo con anteprima Google",
+        "Contatore caratteri meta titolo",
+        "Anteprima SERP Google",
+        "Verificatore lunghezza SEO"
+      ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "SEOTool",
       "description": "Contatore gratuito della lunghezza di meta titolo e descrizione. Verifica il numero di caratteri, parole e larghezza in pixel. Mostra un'anteprima di come titolo e descrizione appaiono nei risultati di ricerca di Google.",
@@ -261,7 +266,7 @@
     {
       "type": "sectionInfo",
       "title": "SEO locale in Italia - ottimizzazione per città e province",
-      "html": "<p class=\"text-mid mb-4\">Le attività locali italiane devono includere il nome della città nel meta title. Struttura consigliata: &quot;[Servizio] [Città] - [Nome azienda]&quot;. Esempio: &quot;Dentista Roma Prati - Studio Dentistico Bianchi&quot;. Questo titolo contiene la query locale all'inizio, dove ha il massimo valore per il posizionamento. Per aziende con più sedi, create una pagina dedicata per ogni città con titolo e descrizione unici.</p><p class=\"text-mid mb-4\">La meta description di un'attività locale deve contenere indirizzo o quartiere, orari di apertura e un vantaggio concreto. Esempio: &quot;Studio dentistico nel quartiere Prati a Roma. Prenotazione online, nessuna attesa. Lunedì–venerdì 9:00–19:00&quot;. Google mostra spesso queste informazioni nei risultati arricchiti, aiutando l'utente a decidere senza visitare il sito.</p><p class=\"text-mid\">In Italia, le ricerche locali includono spesso la provincia oltre alla città: &quot;idraulico Milano&quot;, ma anche &quot;idraulico provincia di Milano&quot; o &quot;idraulico Monza Brianza&quot;. I settori con forte SEO locale in Italia includono ristorazione, turismo, servizi medici, studi legali e immobiliare. Assicuratevi che il Profilo dell'Attività su Google e il sito web utilizzino la stessa denominazione e lo stesso formato di indirizzo.</p>"
+      "html": "<p class=\"text-mid mb-4\">Le attività locali italiane devono includere il nome della città nel meta title. Struttura consigliata: &quot;[Servizio] [Città] - [Nome azienda]&quot;. Esempio: &quot;Dentista Roma Prati - Studio Dentistico Bianchi&quot;. Questo titolo contiene la query locale all'inizio, dove ha il massimo valore per il posizionamento. Per aziende con più sedi, create una pagina dedicata per ogni città con titolo e descrizione unici.</p><p class=\"text-mid mb-4\">La meta description di un'attività locale deve contenere indirizzo o quartiere, orari di apertura e un vantaggio concreto. Esempio: &quot;Studio dentistico nel quartiere Prati a Roma. Prenotazione, nessuna attesa. Lunedì–venerdì 9:00–19:00&quot;. Google mostra spesso queste informazioni nei risultati arricchiti, aiutando l'utente a decidere senza visitare il sito.</p><p class=\"text-mid\">In Italia, le ricerche locali includono spesso la provincia oltre alla città: &quot;idraulico Milano&quot;, ma anche &quot;idraulico provincia di Milano&quot; o &quot;idraulico Monza Brianza&quot;. I settori con forte SEO locale in Italia includono ristorazione, turismo, servizi medici, studi legali e immobiliare. Assicuratevi che il Profilo dell'Attività su Google e il sito web utilizzino la stessa denominazione e lo stesso formato di indirizzo.</p>"
     },
     {
       "type": "gap",

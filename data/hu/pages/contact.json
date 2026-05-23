@@ -1,8 +1,8 @@
 {
   "slug": "kapcsolat",
   "metadata": {
-    "title": "Kapcsolat – Arteon ingyenes online eszközök | Támogatás és",
-    "description": "Lépjen kapcsolatba az Arteon csapatával. Jelentsen hibát, javasoljon új eszközt vagy tegyen fel kérdést ingyenes online eszközeinkről képekhez, SEO-hoz."
+    "title": "Kapcsolat – Arteon ingyenes eszközök | Támogatás és",
+    "description": "Lépjen kapcsolatba az Arteon csapatával. Jelentsen hibát, javasoljon új eszközt vagy tegyen fel kérdést ingyenes eszközeinkről képekhez, SEO-hoz."
   },
   "hero": {
     "title": "Lépjen kapcsolatba az Arteon csapatával",
@@ -22,7 +22,7 @@
   },
   "cta": {
     "title": "Vissza az eszközökhöz",
-    "description": "Ingyenes online eszköz képekhez, szövegekhez és színekhez",
+    "description": "Ingyenes eszköz képekhez, szövegekhez és színekhez",
     "btnOne": "Eszközök"
   }
 }

@@ -246,68 +246,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG - ποια μορφή να επιλέξετε για εκτύπωση;",
-      "plans": [
+      "cols": ["PNG (raster)", "SVG (διανυσματικό)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (raster)"
+          "label": "Ιστοσελίδες και κοινωνικά δίκτυα",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (διανυσματικό)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Ιστοσελίδες και κοινωνικά δίκτυα",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Φυλλάδια και επαγγελματικές κάρτες",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Φυλλάδια και επαγγελματικές κάρτες",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Αφίσες και banners (μεγάλο μέγεθος)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Αφίσες και banners (μεγάλο μέγεθος)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Κλιμάκωση χωρίς απώλεια ποιότητας",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Κλιμάκωση χωρίς απώλεια ποιότητας",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Επεξεργασία σε πρόγραμμα γραφικών",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Επεξεργασία σε πρόγραμμα γραφικών",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Μικρότερο μέγεθος αρχείου",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Μικρότερο μέγεθος αρχείου",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Παρουσιάσεις",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Παρουσιάσεις",
+          "values": ["✓", "✓"]
         }
       ]
     },

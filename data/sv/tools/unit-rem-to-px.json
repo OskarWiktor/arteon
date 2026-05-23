@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Omvandla CSS rem till pixlar och tvärtom.",
-      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+      "featureList": [
+        "Dubbelriktad konvertering i realtid",
+        "Alla omvandlare på ett ställe",
+        "Kopiera resultat till urklipp",
+        "Lokal beräkning i webbläsaren"
+      ]
     },
     "howTo": {
       "name": "Så använder du omvandlaren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "rem vs em vs px",
-      "featureLabel": "Egenskap",
-      "plans": [
+      "labelHeader": "Egenskap",
+      "cols": ["rem", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "rem"
+          "label": "Referens",
+          "values": ["Rotteckensnitt", "Fast pixel"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Referens",
-          "values": {
-            "unit1": "Rotteckensnitt",
-            "unit2": "Fast pixel"
-          }
+          "label": "Kaskaderar",
+          "values": ["Nej", "Nej"]
         },
         {
-          "name": "Kaskaderar",
-          "values": {
-            "unit1": "Nej",
-            "unit2": "Nej"
-          }
+          "label": "Responsiv",
+          "values": ["Ja", "Nej"]
         },
         {
-          "name": "Responsiv",
-          "values": {
-            "unit1": "Ja",
-            "unit2": "Nej"
-          }
+          "label": "Tillgänglighet",
+          "values": ["Respekterar inställningar", "Fast storlek"]
         },
         {
-          "name": "Tillgänglighet",
-          "values": {
-            "unit1": "Respekterar inställningar",
-            "unit2": "Fast storlek"
-          }
-        },
-        {
-          "name": "Förutsägbarhet",
-          "values": {
-            "unit1": "Alltid konsekvent",
-            "unit2": "Alltid konstant"
-          }
+          "label": "Förutsägbarhet",
+          "values": ["Alltid konsekvent", "Alltid konstant"]
         }
       ]
     },

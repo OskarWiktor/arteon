@@ -1,8 +1,8 @@
 {
   "slug": "contact",
   "metadata": {
-    "title": "Contact – Arteon gratis online tools | Ondersteuning &",
-    "description": "Neem contact op met het Arteon-team. Meld een bug, stel een nieuwe tool voor of stel een vraag over onze gratis online tools voor afbeeldingen, SEO, kleuren."
+    "title": "Contact – Arteon gratis tools | Ondersteuning &",
+    "description": "Neem contact op met het Arteon-team. Meld een bug, stel een nieuwe tool voor of stel een vraag over onze gratis tools voor afbeeldingen, SEO, kleuren."
   },
   "hero": {
     "title": "Neem contact op met het Arteon-team",
@@ -22,7 +22,7 @@
   },
   "cta": {
     "title": "Terug naar de tools",
-    "description": "Gratis online tools voor het werken met afbeeldingen, tekst en kleuren",
+    "description": "Gratis tools voor het werken met afbeeldingen, tekst en kleuren",
     "btnOne": "Tools"
   }
 }

@@ -554,7 +554,7 @@ async function testBreakpoints(page, breakpoints) {
     // Check for elements going off-screen
     const offscreenElements = await page.evaluate(() => {
       const elements = document.querySelectorAll('*');
-      return Array.from(elements).filter((el) => {
+      return Array.from(elements).filter(el => {
         const rect = el.getBoundingClientRect();
         return rect.right > window.innerWidth || rect.left < 0;
       }).length;

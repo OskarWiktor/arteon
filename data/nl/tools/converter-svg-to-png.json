@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "SVG naar PNG converter",
-      "alternateName": ["SVG naar PNG omzetten", "SVG naar PNG conversie", "Gratis SVG naar PNG converter"],
+      "alternateName": [
+        "SVG naar PNG omzetten",
+        "SVG naar PNG conversie",
+        "Gratis SVG naar PNG converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer SVG-vectorafbeeldingen naar PNG. Ideaal voor documenten en social media. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
-      "featureList": ["SVG naar PNG conversie", "Verliesvrije PNG-uitvoer", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
+      "featureList": [
+        "SVG naar PNG conversie",
+        "Verliesvrije PNG-uitvoer",
+        "Batchconversie",
+        "Lokale browserverwerking",
+        "Geen bestandsupload vereist"
+      ]
     },
     "howTo": {
       "name": "SVG naar PNG converteren",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs PNG – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["SVG", "PNG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Lossy-compressie",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alle browsers", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["N/A (vector)", "8/16-bit"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "svg": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "svg": "Alle browsers",
-            "png": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "svg": "N/A (vector)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "svg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "svg": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

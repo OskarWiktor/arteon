@@ -64,7 +64,13 @@ function ComposerInput() {
   } = use(ComposerContext);
 
   // This component works with ANY provider that implements the interface
-  return <TextInput ref={meta.inputRef} value={state.input} onChangeText={(text) => update((s) => ({ ...s, input: text }))} />;
+  return (
+    <TextInput
+      ref={meta.inputRef}
+      value={state.input}
+      onChangeText={text => update(s => ({ ...s, input: text }))}
+    />
+  );
 }
 ```
 

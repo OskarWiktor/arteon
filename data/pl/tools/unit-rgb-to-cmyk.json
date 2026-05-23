@@ -2,14 +2,14 @@
   "toolKey": "rgbToCmyk",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter RGB na CMYK – kolory ekranowe na druk offsetowy",
-    "description": "Przelicz kolory RGB na CMYK przed wysłaniem projektu do drukarni. Sprawdź wartości tuszów dla wizytówek, ulotek i katalogów. Bez rejestracji, działa w przeglądarce.",
+    "title": "Konwerter zamiany kolorów RGB na CMYK. Zamień kolor ekranowy na kolor do druku",
+    "description": "Darmowe narzędzie do zamiany konwersji kolorów RGB na CMYK. Przekształć wartości RGB (0-255) na procenty tuszów CMYK (0-100%) przed wysłaniem projektu do drukarni. Darmowe narzędzie bez rejestracji i limitu",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-rgb-na-cmyk"
   },
   "hero": {
-    "title": "Przelicz RGB na CMYK – konwerter kolorów dla druku",
-    "description": "Zanim wyślesz projekt do drukarni, sprawdź wartości CMYK. Unikniesz rozczarowania, gdy ekranowy niebieski wyjdzie matowo na wizytówce.",
+    "title": "Konwerter zamiany kolorów RGB na CMYK. Zamień kolor ekranowy na kolor do druku",
+    "description": "Darmowe narzędzie do zamiany konwersji kolorów RGB na CMYK. Przekształć wartości RGB (0-255) na procenty tuszów CMYK (0-100%) przed wysłaniem projektu do drukarni. Darmowe narzędzie bez rejestracji i limitu",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter RGB na CMYK – kolory ekranowe na druk",
-      "alternateName": ["Przelicznik RGB CMYK", "Kalkulator kolorów do druku", "RGB to CMYK converter"],
+      "alternateName": [
+        "Przelicznik RGB CMYK",
+        "Kalkulator kolorów do druku",
+        "RGB to CMYK converter"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz kolory RGB na CMYK przed wysłaniem projektu do drukarni. Sprawdź wartości tuszów dla wizytówek, ulotek i katalogów. Bez rejestracji, działa w przeglądarce.",
@@ -184,55 +188,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "RGB vs CMYK – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
+      "labelHeader": "Cecha",
+      "cols": ["RGB", "CMYK"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "RGB"
+          "label": "Model",
+          "values": ["Addytywny (światło)", "Subtraktywny (tusze)"]
         },
         {
-          "id": "unit2",
-          "name": "CMYK",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Model",
-          "values": {
-            "unit1": "Addytywny (światło)",
-            "unit2": "Subtraktywny (tusze)"
-          }
+          "label": "Medium",
+          "values": ["Ekrany", "Druk"]
         },
         {
-          "name": "Medium",
-          "values": {
-            "unit1": "Ekrany",
-            "unit2": "Druk"
-          }
+          "label": "Zakres (gamut)",
+          "values": ["Szerszy", "Węższy"]
         },
         {
-          "name": "Zakres (gamut)",
-          "values": {
-            "unit1": "Szerszy",
-            "unit2": "Węższy"
-          }
+          "label": "Czarny kolor",
+          "values": ["R0 G0 B0", "C0 M0 Y0 K100"]
         },
         {
-          "name": "Czarny kolor",
-          "values": {
-            "unit1": "R0 G0 B0",
-            "unit2": "C0 M0 Y0 K100"
-          }
-        },
-        {
-          "name": "Biały kolor",
-          "values": {
-            "unit1": "R255 G255 B255",
-            "unit2": "C0 M0 Y0 K0 (brak tuszu)"
-          }
+          "label": "Biały kolor",
+          "values": ["R255 G255 B255", "C0 M0 Y0 K0 (brak tuszu)"]
         }
       ]
     },

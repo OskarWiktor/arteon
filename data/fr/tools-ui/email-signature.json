@@ -153,7 +153,7 @@
     "helper": "Aperçu technique, compatible avec Gmail, Outlook et la plupart des clients de messagerie.",
     "copySuccess": "Copié  collez dans Gmail",
     "copyError": "Erreur lors de la copie",
-    "copyButton": "Copier la signature (Gmail / Outlook)",
+    "ButtonCopy": "Copier la signature (Gmail / Outlook)",
     "copyRawButton": "Copier le code HTML",
     "copyRawSuccess": "Code HTML copié",
     "downloadButton": "Télécharger en HTML",

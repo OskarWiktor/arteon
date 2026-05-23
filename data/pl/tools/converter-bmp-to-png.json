@@ -2,13 +2,13 @@
   "toolKey": "bmpToPng",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter BMP na PNG – bezstratna konwersja za darmo",
-    "description": "Zamień pliki BMP na bezstratny PNG w przeglądarce. Mniejszy plik przy zachowaniu pełnej jakości. Bez limitu i rejestracji.",
+    "title": "Darmowy konwerter formatu BMP na PNG bez limitu plików i rejestracji",
+    "description": "Zamień pliki BMP na bezstratny PNG w przeglądarce. Mniejszy plik przy zachowaniu pełnej jakości. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-bmp-na-png"
   },
   "hero": {
-    "title": "Konwerter BMP na PNG – zachowaj jakość, zmniejsz rozmiar",
+    "title": "Darmowy konwerter formatu BMP na PNG – zachowaj jakość, zmniejsz rozmiar",
     "description": "Zamień pliki BMP na bezstratny PNG. Mniejszy rozmiar pliku bez utraty jakości. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter BMP na PNG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana BMP na PNG online", "Konwersja BMP do PNG"],
+      "alternateName": ["Zamiana BMP na PNG", "Konwersja BMP do PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter BMP na PNG online. Bezstratna konwersja z kompresją. Bez limitu i rejestracji.",
-      "featureList": ["Konwersja BMP do PNG", "Kompresja bezstratna", "Konwersja wielu plików", "Przetwarzanie lokalne"]
+      "description": "Darmowy konwerter BMP na PNG. Bezstratna konwersja z kompresją. Bez limitu i rejestracji.",
+      "featureList": [
+        "Konwersja BMP do PNG",
+        "Kompresja bezstratna",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić BMP na PNG online",
+      "name": "Jak zamienić BMP na PNG",
       "description": "Instrukcja konwersji plików BMP na format PNG.",
       "steps": [
         {
@@ -156,78 +161,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs PNG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["BMP", "PNG"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Kompresja stratna",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["1/4/8/24/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "bmp": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "bmp": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "bmp": "Wszystkie przeglądarki",
-            "png": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "bmp": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

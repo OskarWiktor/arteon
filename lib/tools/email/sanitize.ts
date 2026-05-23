@@ -1,5 +1,10 @@
 export function escapeHtml(value: string): string {
-  return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 export function formatMultiline(value: string): string {
@@ -13,7 +18,7 @@ export function sanitizeHrefUrl(url: string): string {
   const lowered = trimmed.toLowerCase();
   const forbiddenProtocols = ['javascript:', 'data:', 'vbscript:', 'file:'];
 
-  if (forbiddenProtocols.some((proto) => lowered.startsWith(proto))) {
+  if (forbiddenProtocols.some(proto => lowered.startsWith(proto))) {
     return '';
   }
 
@@ -29,7 +34,7 @@ export function sanitizeSrcUrl(url: string): string {
   const lowered = trimmed.toLowerCase();
   const forbiddenProtocols = ['javascript:', 'vbscript:', 'file:'];
 
-  if (forbiddenProtocols.some((proto) => lowered.startsWith(proto))) {
+  if (forbiddenProtocols.some(proto => lowered.startsWith(proto))) {
     return '';
   }
 

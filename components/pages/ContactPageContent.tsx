@@ -1,10 +1,10 @@
-import HeroBanner from '@/components/sections/HeroBanner';
-import CTABanner from '@/components/sections/CTABanner';
-import ContactForm from '@/components/sections/ContactForm';
-import Gap from '@/components/ui/Gap';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Wrapper from '@/components/ui/Wrapper';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import CTABanner from '@/components/organisms/CTABanner';
+import ContactForm from '@/components/organisms/ContactForm';
+import Divider from '@/components/atoms/Divider';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import Wrapper from '@/components/atoms/Wrapper';
 import { RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
 
 import type { Locale } from '@/types/locale';
@@ -20,33 +20,38 @@ export default function ContactPageContent({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <HeroBanner title={data.hero.title} description={data.hero.description} backgroundImage="/assets/bg/abstract-bg10.webp" overlay="black" />
+      <HeroBanner
+        title={data.hero.title}
+        description={data.hero.description}
+        backgroundImage='/assets/bg/abstract-bg10.webp'
+        overlay='black'
+      />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionInfo title={data.intro.title}>
           <p>
             {data.intro.textBefore}{' '}
-            <a href={`mailto:${email}`} className="inline-link">
+            <a href={`mailto:${email}`} className='inline-link'>
               {email}
             </a>
             {data.intro.textAfter}
           </p>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <ContactForm title={data.formTitle} locale={locale} />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionSteps
-          variant="contact"
+          variant='contact'
           items={[
             {
               title: data.details.emailLabel,
-              icon: <RiMailLine className="h-6 w-6" />,
+              icon: <RiMailLine className='h-6 w-6' />,
               description: (
                 <p>
                   <a href={`mailto:${email}`}>{email}</a>
@@ -55,23 +60,23 @@ export default function ContactPageContent({ locale }: { locale: Locale }) {
             },
             {
               title: data.details.hoursLabel,
-              icon: <RiMapPinTimeLine className="h-6 w-6" />,
+              icon: <RiMapPinTimeLine className='h-6 w-6' />,
               description: <p>{data.details.hoursValue}</p>,
             },
           ]}
           title={data.details.title}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
       <CTABanner
         title={data.cta.title}
         description={data.cta.description}
         btnOne={data.cta.btnOne}
-        btnOneLink={config.toolsIndexHref}
-        backgroundImage="/assets/bg/abstract-bg10.webp"
-        overlay="black"
+        btnOneHref={config.toolsIndexHref}
+        backgroundImage='/assets/bg/abstract-bg10.webp'
+        overlay='black'
       />
     </>
   );

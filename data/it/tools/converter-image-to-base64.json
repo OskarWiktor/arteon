@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Codifica immagini in formato Base64. Copia il codice pronto per CSS o HTML. Gratuito.",
-      "featureList": ["immagine to Base64 conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert immagine to Base64", "immagine to Base64", "Free immagine to Base64 converter"]
+      "featureList": [
+        "immagine to Base64 conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert immagine to Base64",
+        "immagine to Base64",
+        "Free immagine to Base64 converter"
+      ]
     },
     "howTo": {
       "name": "Come convertire immagine in Base64",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire immagine in Base64?",
-      "html": "<p class=\"text-mid mb-4\">IMAGE e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in BASE64 puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file IMAGE nel formato BASE64 direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "html": "<p class=\"text-mid mb-4\">IMAGE e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in BASE64 puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore gratuito trasforma i tuoi file IMAGE nel formato BASE64 direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "immagine to Base64 conversion",
       "variant": "right"

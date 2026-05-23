@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertiți mm în pixeli cu suport DPI.",
-      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+      "featureList": [
+        "Conversie bidirecțională în timp real",
+        "Toate convertoarele într-un singur loc",
+        "Copierea rezultatului în clipboard",
+        "Calcul local în browser"
+      ]
     },
     "howTo": {
       "name": "Cum să utilizați convertorul",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "MM în pixeli la diferite DPI",
-      "featureLabel": "Proprietate",
-      "plans": [
+      "labelHeader": "Proprietate",
+      "cols": ["300 DPI", "600 DPI"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "300 DPI"
+          "label": "1 mm",
+          "values": ["11.81 px", "23.62 px"]
         },
         {
-          "id": "unit2",
-          "name": "600 DPI",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "1 mm",
-          "values": {
-            "unit1": "11.81 px",
-            "unit2": "23.62 px"
-          }
+          "label": "10 mm",
+          "values": ["118 px", "236 px"]
         },
         {
-          "name": "10 mm",
-          "values": {
-            "unit1": "118 px",
-            "unit2": "236 px"
-          }
+          "label": "85 mm (carte vizită)",
+          "values": ["1,004 px", "2,008 px"]
         },
         {
-          "name": "85 mm (carte vizită)",
-          "values": {
-            "unit1": "1,004 px",
-            "unit2": "2,008 px"
-          }
+          "label": "Caz de utilizare",
+          "values": ["Tipărire standard", "Artă / medical"]
         },
         {
-          "name": "Caz de utilizare",
-          "values": {
-            "unit1": "Tipărire standard",
-            "unit2": "Artă / medical"
-          }
-        },
-        {
-          "name": "Dimensiune fișier",
-          "values": {
-            "unit1": "Standard",
-            "unit2": "4× mai mare"
-          }
+          "label": "Dimensiune fișier",
+          "values": ["Standard", "4× mai mare"]
         }
       ]
     },

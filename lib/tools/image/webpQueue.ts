@@ -11,7 +11,7 @@ export function getWebpQueueFileKey(file: File): string {
 
 export function createWebpQueueItems(files: File[], existing: WebpQueueItem[]): WebpQueueItem[] {
   const now = Date.now();
-  const existingKeys = new Set(existing.map((item) => getWebpQueueFileKey(item.file)));
+  const existingKeys = new Set(existing.map(item => getWebpQueueFileKey(item.file)));
 
   const items: WebpQueueItem[] = [];
 

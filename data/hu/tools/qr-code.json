@@ -246,68 +246,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG - melyik formátumot válassza nyomtatáshoz?",
-      "plans": [
+      "cols": ["PNG (raszteres)", "SVG (vektoros)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (raszteres)"
+          "label": "Weboldalak és közösségi média",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (vektoros)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Weboldalak és közösségi média",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Szórólapok és névjegykártyák",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Szórólapok és névjegykártyák",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Plakátok és bannerek (nagyformátum)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Plakátok és bannerek (nagyformátum)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Skálázás minőségvesztés nélkül",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Skálázás minőségvesztés nélkül",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Szerkesztés grafikus programban",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Szerkesztés grafikus programban",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Kisebb fájlméret",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Kisebb fájlméret",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Prezentációk",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Prezentációk",
+          "values": ["✓", "✓"]
         }
       ]
     },
@@ -396,7 +365,7 @@
     {
       "type": "sectionInfo",
       "title": "QR-kodok a magyar fizetesi es szamlazasi rendszerben",
-      "html": "<p class=\"text-mid mb-4\">Magyarorszagon a QR-kodok egyre fontosabb szerepet toltenek be a penzugyi tranzakciokban. A magyar bankok - OTP, Erste, K&amp;H, Raiffeisen, MKB - tamogatjak az EPC QR szabvanyt (European Payments Council) a SEPA atutalasokhoz. A szamlan levo QR-kod tartalmazza a kedvezmenyezett IBAN-szamat, az osszeget es a kozlemenyt. Az ugyfel a bankapplikacioval beolvassa a kodot es jovahagyja az elorekitoltott atutalast.</p><p class=\"text-mid mb-4\">A NAV (Nemzeti Ado- es Vamhivatal) Online Szamla rendszere 2018 ota kotelezo az alanyok szamara. A szamlak QR-kodot tartalmazhatnak a hitelesseg ellenorzesere. A vevo beolvassa a kodot okostelefonjaval, es az Online Szamla rendszerben ellenorizheti a szamla adatait: eladoi es vevoi adoszam, szamla szama es brutto osszeg.</p><p class=\"text-mid\">Kis- es kozepes vallalkozasok, szabadfoglalkozasuak es mesteremberek szamara a szamlan levo QR-kod leroviditia befizetesi idot. Az ugyfel nem irja at kezzel a szamlaszamot, igy kevesebb hiba tortenik. Ez kulonosen ertekes azoknak, akik rendszeresen allitanak ki szamlakat.</p>"
+      "html": "<p class=\"text-mid mb-4\">Magyarorszagon a QR-kodok egyre fontosabb szerepet toltenek be a penzugyi tranzakciokban. A magyar bankok - OTP, Erste, K&amp;H, Raiffeisen, MKB - tamogatjak az EPC QR szabvanyt (European Payments Council) a SEPA atutalasokhoz. A szamlan levo QR-kod tartalmazza a kedvezmenyezett IBAN-szamat, az osszeget es a kozlemenyt. Az ugyfel a bankapplikacioval beolvassa a kodot es jovahagyja az elorekitoltott atutalast.</p><p class=\"text-mid mb-4\">A NAV (Nemzeti Ado- es Vamhivatal) Szamla rendszere 2018 ota kotelezo az alanyok szamara. A szamlak QR-kodot tartalmazhatnak a hitelesseg ellenorzesere. A vevo beolvassa a kodot okostelefonjaval, es az Szamla rendszerben ellenorizheti a szamla adatait: eladoi es vevoi adoszam, szamla szama es brutto osszeg.</p><p class=\"text-mid\">Kis- es kozepes vallalkozasok, szabadfoglalkozasuak es mesteremberek szamara a szamlan levo QR-kod leroviditia befizetesi idot. Az ugyfel nem irja at kezzel a szamlaszamot, igy kevesebb hiba tortenik. Ez kulonosen ertekes azoknak, akik rendszeresen allitanak ki szamlakat.</p>"
     },
     {
       "type": "gap",
@@ -405,7 +374,7 @@
     {
       "type": "sectionInfo",
       "title": "QR-kodok a magyar marketingben es vendeglatasban",
-      "html": "<p class=\"text-mid mb-4\">A magyar ettermek es kavezok szeles korben vezettek be a QR-menut a COVID-19-jarvany idejen. Sok uzlet megtartotta ezt a megoldast, mert lehetove teszi az arak es az etlap frissiteset valosagas idoben, ujranyomtatas nelkul. Budapesten es a turisztikai ovezetekben - Balaton, Eger, Debrecen - a QR-menuk gyakran tobb nyelven is elerhetok a kulfoldi vendegek szamara.</p><p class=\"text-mid mb-4\">A magyar online kereskedelemben QR-kodok jelennek meg a csomagokon, amelyek hivatkozasokat tartalmaznak a termeklapra, hasznalati utasitasra vagy visszakuldesii urlapra. Az eMAG.hu-n, a Jofogas.hu-n es mas magyar piactereken az eladok QR-kodokat hasznalhatnak a vevokkel valo egyszerubb kommunikaciora. Kiallitasokon es konferenciaken a QR-kodok a nevjegyeken kiváltjak a nyomtatott nevjegykartya-cseret.</p><p class=\"text-mid\">Helyi marketingben a vallalkozok QR-kodokat helyeznek el kirakatokban, szororlapokon es reklámtáblákon. Egy kod, amely a Google Uzleti Profilra, foglalas oldalra vagy kulonleges ajanlaatra mutat, megkonnyiti a jaroekeloknek a kapcsolatfelvetelt - meg nyitvatartasi idon kivul is.</p>"
+      "html": "<p class=\"text-mid mb-4\">A magyar ettermek es kavezok szeles korben vezettek be a QR-menut a COVID-19-jarvany idejen. Sok uzlet megtartotta ezt a megoldast, mert lehetove teszi az arak es az etlap frissiteset valosagas idoben, ujranyomtatas nelkul. Budapesten es a turisztikai ovezetekben - Balaton, Eger, Debrecen - a QR-menuk gyakran tobb nyelven is elerhetok a kulfoldi vendegek szamara.</p><p class=\"text-mid mb-4\">A magyar kereskedelemben QR-kodok jelennek meg a csomagokon, amelyek hivatkozasokat tartalmaznak a termeklapra, hasznalati utasitasra vagy visszakuldesii urlapra. Az eMAG.hu-n, a Jofogas.hu-n es mas magyar piactereken az eladok QR-kodokat hasznalhatnak a vevokkel valo egyszerubb kommunikaciora. Kiallitasokon es konferenciaken a QR-kodok a nevjegyeken kiváltjak a nyomtatott nevjegykartya-cseret.</p><p class=\"text-mid\">Helyi marketingben a vallalkozok QR-kodokat helyeznek el kirakatokban, szororlapokon es reklámtáblákon. Egy kod, amely a Google Uzleti Profilra, foglalas oldalra vagy kulonleges ajanlaatra mutat, megkonnyiti a jaroekeloknek a kapcsolatfelvetelt - meg nyitvatartasi idon kivul is.</p>"
     },
     {
       "type": "gap",

@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Převést em na pixels a naopak. Užitečné pro responzivní webdesign. Bez registrace.",
-      "featureList": ["Obousměrná konverze v reálném čase", "Všechny převodníky na jednom místě", "Kopírování výsledku do schránky", "Lokální výpočet v prohlížeči"]
+      "featureList": [
+        "Obousměrná konverze v reálném čase",
+        "Všechny převodníky na jednom místě",
+        "Kopírování výsledku do schránky",
+        "Lokální výpočet v prohlížeči"
+      ]
     },
     "howTo": {
       "name": "Jak používat převodník",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "em vs px vs rem",
-      "featureLabel": "Vlastnost",
-      "plans": [
+      "labelHeader": "Vlastnost",
+      "cols": ["em", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "em"
+          "label": "Odkaz",
+          "values": ["Rodičovské písmo", "Fixní pixel"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Odkaz",
-          "values": {
-            "unit1": "Rodičovské písmo",
-            "unit2": "Fixní pixel"
-          }
+          "label": "Kaskáďuje se",
+          "values": ["Ano", "Ne"]
         },
         {
-          "name": "Kaskáďuje se",
-          "values": {
-            "unit1": "Ano",
-            "unit2": "Ne"
-          }
+          "label": "Responzivní",
+          "values": ["Ano", "Ne"]
         },
         {
-          "name": "Responzivní",
-          "values": {
-            "unit1": "Ano",
-            "unit2": "Ne"
-          }
+          "label": "Přístupnost",
+          "values": ["Respektuje nastavení", "Fixní"]
         },
         {
-          "name": "Přístupnost",
-          "values": {
-            "unit1": "Respektuje nastavení",
-            "unit2": "Fixní"
-          }
-        },
-        {
-          "name": "Předvídatelnost",
-          "values": {
-            "unit1": "Závisí na kontextu",
-            "unit2": "Vždy konstantní"
-          }
+          "label": "Předvídatelnost",
+          "values": ["Závisí na kontextu", "Vždy konstantní"]
         }
       ]
     },

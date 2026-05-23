@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "Convertor JPG în WebP",
-      "alternateName": ["Conversie JPG în WEBP", "Convertor JPG în WEBP", "Convertor gratuit JPG în WEBP"],
+      "alternateName": [
+        "Conversie JPG în WEBP",
+        "Convertor JPG în WEBP",
+        "Convertor gratuit JPG în WEBP"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fotografii JPG în WebP ușor. Reducere de până la 35%. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
-      "featureList": ["Conversie JPG în WEBP", "Control calitate WEBP", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
+      "featureList": [
+        "Conversie JPG în WEBP",
+        "Control calitate WEBP",
+        "Conversie în lot",
+        "Procesare locală în browser",
+        "Fără încărcare de fișiere"
+      ]
     },
     "howTo": {
       "name": "Cum să convertiți JPG în WEBP",
@@ -158,85 +168,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversia JPG în WebP în practică",
-      "html": "<p class=\"text-mid mb-4\">JPEG este formatul standard pentru fotografii digitale, dar pentru site-uri web dimensiunile sunt adesea prea mari. WebP comprima imaginile JPEG cu inca 25–35% fara pierdere vizibila de calitate, imbunatatind direct timpii de incarcare.</p><p class=\"text-mid mb-4\">Pentru magazine online pe Shopify, WooCommerce sau PrestaShop, trecerea de la JPG la WebP accelereaza masurabil paginile de produs. Google PageSpeed recomanda WebP ca format de noua generatie. La calitate 80–85%, diferenta este imperceptibila.</p><p class=\"text-mid\">In Romania, unde cerintele GDPR sunt stricte, procesarea locala a imaginilor in browser este deosebit de valoroasa. Fotografiile de produse nu parasesc dispozitivul dvs.</p>"
+      "html": "<p class=\"text-mid mb-4\">JPEG este formatul standard pentru fotografii digitale, dar pentru site-uri web dimensiunile sunt adesea prea mari. WebP comprima imaginile JPEG cu inca 25–35% fara pierdere vizibila de calitate, imbunatatind direct timpii de incarcare.</p><p class=\"text-mid mb-4\">Pentru magazinepify, WooCommerce sau PrestaShop, trecerea de la JPG la WebP accelereaza masurabil paginile de produs. Google PageSpeed recomanda WebP ca format de noua generatie. La calitate 80–85%, diferenta este imperceptibila.</p><p class=\"text-mid\">In Romania, unde cerintele GDPR sunt stricte, procesarea locala a imaginilor in browser este deosebit de valoroasa. Fotografiile de produse nu parasesc dispozitivul dvs.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs WebP – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["JPG", "WebP"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Compresie cu pierderi",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Toate browserele", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Adâncime de culoare",
+          "values": ["8-bit (16.7M)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "jpg": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "jpg": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "jpg": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "jpg": "Toate browserele",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Adâncime de culoare",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "jpg": true,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

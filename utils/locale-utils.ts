@@ -1033,7 +1033,24 @@ export function getAllCategoryLabels(locale: string): Record<string, string> {
 
 // Common locale validation
 export function isValidLocale(locale: string): locale is Locale {
-  const validLocales: Locale[] = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
+  const validLocales: Locale[] = [
+    'pl',
+    'en',
+    'de',
+    'es',
+    'fr',
+    'pt',
+    'it',
+    'ro',
+    'nl',
+    'hu',
+    'cs',
+    'sv',
+    'da',
+    'no',
+    'fi',
+    'el',
+  ];
   return validLocales.includes(locale as Locale);
 }
 

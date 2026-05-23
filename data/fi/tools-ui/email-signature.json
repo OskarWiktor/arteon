@@ -153,7 +153,7 @@
     "helper": "Tekninen esikatselu – yhteensopiva Gmailin, Outlookin ja useimpien sähköpostiohjelmien kanssa.",
     "copySuccess": "Kopioitu – liitä Gmailiin",
     "copyError": "Kopiointivirhe",
-    "copyButton": "Kopioi allekirjoitus (Gmail / Outlook)",
+    "ButtonCopy": "Kopioi allekirjoitus (Gmail / Outlook)",
     "copyRawButton": "Kopioi HTML-koodi",
     "copyRawSuccess": "HTML-koodi kopioitu",
     "downloadButton": "Lataa HTML-tiedostona",

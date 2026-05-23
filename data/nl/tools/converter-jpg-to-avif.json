@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer JPG-foto\\'s naar modern AVIF. Tot 50% betere compressie dan JPG met behoud van kwaliteit. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
-      "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
-      "alternateName": ["JPG naar AVIF omzetten", "JPG naar AVIF conversie", "Gratis JPG naar AVIF converter"]
+      "featureList": [
+        "Conversie naar AVIF",
+        "Kwaliteitsaanpassing (60-95%)",
+        "Batchconversie",
+        "Lokale verwerking in de browser"
+      ],
+      "alternateName": [
+        "JPG naar AVIF omzetten",
+        "JPG naar AVIF conversie",
+        "Gratis JPG naar AVIF converter"
+      ]
     },
     "howTo": {
       "name": "JPG naar AVIF converteren",
@@ -166,85 +175,51 @@
     {
       "type": "sectionInfo",
       "title": "JPG-naar-AVIF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">AVIF bereikt tot 50% betere compressie dan JPEG bij vergelijkbare visuele kwaliteit. Voor websites met veel foto's – vastgoedportals, online magazines, reiswebsites – betekent dit aanzienlijk kortere laadtijden.</p><p class=\"text-mid mb-4\">Platforms zoals Funda.nl, Booking.com of Marktplaats adopteren steeds vaker AVIF voor een betere mobiele ervaring. Chrome, Firefox en Safari 16+ ondersteunen AVIF native. Voor oudere browsers is een WebP- of JPG-fallback aanbevolen.</p><p class=\"text-mid\">Lokale conversie in de browser beschermt uw beelden: vastgoedfoto's, productafbeeldingen of portretten – niets wordt naar een server geüpload. Volledig AVG-conform.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF bereikt tot 50% betere compressie dan JPEG bij vergelijkbare visuele kwaliteit. Voor websites met veel foto's – vastgoedportals, magazines, reiswebsites – betekent dit aanzienlijk kortere laadtijden.</p><p class=\"text-mid mb-4\">Platforms zoals Funda.nl, Booking.com of Marktplaats adopteren steeds vaker AVIF voor een betere mobiele ervaring. Chrome, Firefox en Safari 16+ ondersteunen AVIF native. Voor oudere browsers is een WebP- of JPG-fallback aanbevolen.</p><p class=\"text-mid\">Lokale conversie in de browser beschermt uw beelden: vastgoedfoto's, productafbeeldingen of portretten – niets wordt naar een server geüpload. Volledig AVG-conform.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs AVIF – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["JPG", "AVIF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Lossy-compressie",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alle browsers", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["8-bit (16.7M)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "jpg": "Alle browsers",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

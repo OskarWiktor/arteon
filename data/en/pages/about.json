@@ -1,16 +1,16 @@
 {
   "slug": "about",
   "metadata": {
-    "title": "About Arteon – Free Online Tools for Web, SEO & Design",
+    "title": "About Arteon – Free Tools for Web, SEO & Design",
     "description": "Arteon is a creative agency building free browser-based tools: WebP converter, favicon generator, color contrast checker, QR code maker and more."
   },
   "hero": {
-    "title": "Free online tools built by a creative agency",
+    "title": "Free tools built by a creative agency",
     "description": "10 browser-based tools for images, SEO, colors, email signatures and QR codes - no registration, no file uploads, no limits"
   },
   "whoWeAre": {
     "title": "Who we are",
-    "p1": "Arteon is a Polish creative agency. Beyond our commercial work, we build and maintain a growing collection of free online tools designed for business owners, website creators, designers, marketers, and anyone who works with digital content.",
+    "p1": "Arteon is a Polish creative agency. Beyond our commercial work, we build and maintain a growing collection of free tools designed for business owners, website creators, designers, marketers, and anyone who works with digital content.",
     "p2": "Every tool we create solves a specific, everyday problem: converting images, checking color contrast, generating favicons, creating QR codes, and more. Our goal is to build a comprehensive toolkit where you can find everything you need in one place - without switching between dozens of different websites."
   },
   "whyFree": {
@@ -39,7 +39,7 @@
     "items": [
       {
         "title": "Images & favicons",
-        "description": "WebP converter, online image editor, and favicon generator. 3 tools for everyday image work."
+        "description": "WebP converter, image editor, and favicon generator. 3 tools for everyday image work."
       },
       {
         "title": "Meta & SEO",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Try our tools",
-    "description": "Free online tools - no registration, no limits, no file uploads to servers",
+    "description": "Free tools - no registration, no limits, no file uploads to servers",
     "btnOne": "Go to tools",
     "btnTwo": "Contact"
   }

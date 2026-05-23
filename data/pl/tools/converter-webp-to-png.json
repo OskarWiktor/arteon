@@ -2,13 +2,13 @@
   "toolKey": "webpToPng",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter WebP na PNG – bezstratna konwersja za darmo",
-    "description": "Zamień pliki WebP na bezstratny PNG w przeglądarce. Zachowaj przezroczystość. Bez limitu plików, bez rejestracji. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
+    "title": "Darmowy konwerter formatu WebP na PNG bez limitu plików i rejestracji",
+    "description": "Zamień pliki WebP na bezstratny PNG w przeglądarce. Zachowaj przezroczystość. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-webp-na-png"
   },
   "hero": {
-    "title": "Konwerter WebP na PNG – zachowaj jakość i przezroczystość",
+    "title": "Darmowy konwerter formatu WebP na PNG – zachowaj jakość i przezroczystość",
     "description": "Zamień pliki WebP na bezstratny PNG. Zachowaj przezroczystość i pełną jakość obrazu. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter WebP na PNG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana WebP na PNG online", "Konwersja WebP do PNG"],
+      "alternateName": ["Zamiana WebP na PNG", "Konwersja WebP do PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter WebP na PNG online. Zachowaj przezroczystość i jakość obrazu. Bez limitu plików i rejestracji.",
-      "featureList": ["Konwersja WebP do PNG", "Zachowanie przezroczystości", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter WebP na PNG. Zachowaj przezroczystość i jakość obrazu. Bez limitu plików i rejestracji.",
+      "featureList": [
+        "Konwersja WebP do PNG",
+        "Zachowanie przezroczystości",
+        "Konwersja wielu plików jednocześnie",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić WebP na PNG online",
+      "name": "Jak zamienić WebP na PNG",
       "description": "Instrukcja konwersji plików WebP na format PNG.",
       "steps": [
         {
@@ -155,78 +160,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs PNG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["WebP", "PNG"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Kompresja stratna",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8-bit (16.7M)", "8/16-bit"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "webp": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "webp": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "webp": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "webp": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "png": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "webp": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "webp": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

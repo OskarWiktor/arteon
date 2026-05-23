@@ -184,55 +184,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Points (pt) vs Pixels (px)",
-      "featureLabel": "Feature",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["Points (pt)", "Pixels (px)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Points (pt)"
+          "label": "Definition",
+          "values": ["1/72 inch", "1/96 inch (CSS)"]
         },
         {
-          "id": "unit2",
-          "name": "Pixels (px)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Definition",
-          "values": {
-            "unit1": "1/72 inch",
-            "unit2": "1/96 inch (CSS)"
-          }
+          "label": "Used in",
+          "values": ["Print, Word, PDF", "Web, CSS, screens"]
         },
         {
-          "name": "Used in",
-          "values": {
-            "unit1": "Print, Word, PDF",
-            "unit2": "Web, CSS, screens"
-          }
+          "label": "12 pt =",
+          "values": ["12 pt", "16 px"]
         },
         {
-          "name": "12 pt =",
-          "values": {
-            "unit1": "12 pt",
-            "unit2": "16 px"
-          }
+          "label": "Body text",
+          "values": ["10–12 pt", "14–18 px"]
         },
         {
-          "name": "Body text",
-          "values": {
-            "unit1": "10–12 pt",
-            "unit2": "14–18 px"
-          }
-        },
-        {
-          "name": "Heading",
-          "values": {
-            "unit1": "18–24 pt",
-            "unit2": "24–32 px"
-          }
+          "label": "Heading",
+          "values": ["18–24 pt", "24–32 px"]
         }
       ]
     },

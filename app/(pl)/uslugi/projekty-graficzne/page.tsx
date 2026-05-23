@@ -1,18 +1,19 @@
-import WorkSteps from '@/components/sections/steps/WorkSteps';
-import HeroBanner from '@/components/sections/HeroBanner';
-import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABanner from '@/components/sections/CTABanner';
-import Gap from '@/components/ui/Gap';
-import SectionContactForm from '@/components/sections/SectionContactForm';
-import Wrapper from '@/components/ui/Wrapper';
-import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
-import Breadcrumbs from '@/components/sections/BreadCrumbs';
-import FaqPanels from '@/components/ui/FaqPanels';
-import FeatureGrid from '@/components/sections/FeatureGrid';
+import WorkSteps from '@/components/organisms/WorkSteps';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import CTABanner from '@/components/organisms/CTABanner';
+import Divider from '@/components/atoms/Divider';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Wrapper from '@/components/atoms/Wrapper';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import FaqPanels from '@/components/molecules/FaqPanels';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
 import { IoAccessibilityOutline, IoColorPalette } from 'react-icons/io5';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import Button from '@/components/atoms/buttons/Button';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import {
   RiBrushLine,
   RiImageLine,
@@ -34,7 +35,7 @@ import {
 } from 'react-icons/ri';
 
 import Script from 'next/script';
-import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import { siteUrl } from '@/utils/absoluteUrl';
 
 const SERVICES = [
@@ -45,10 +46,19 @@ const SERVICES = [
   { name: 'Odzież firmowa', path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej' },
   { name: 'Projekt logo', path: '/uslugi/projekty-graficzne/projekt-logo' },
   { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
-  { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
+  {
+    name: 'Identyfikacja wizualna',
+    path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+  },
   { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
-  { name: 'Szablony postów do mediów społecznościowych', path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe' },
-  { name: 'Kupony rabatowe i vouchery', path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera' },
+  {
+    name: 'Szablony postów do mediów społecznościowych',
+    path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
+  },
+  {
+    name: 'Kupony rabatowe i vouchery',
+    path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
+  },
   { name: 'Projekt cennika', path: '/uslugi/projekty-graficzne/projekt-cennika' },
   { name: 'Karty lojalnościowe', path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
   { name: 'Projekt menu restauracji', path: '/uslugi/projekty-graficzne/projekt-menu-restauracji' },
@@ -70,7 +80,7 @@ function ItemListSchema() {
   };
 
   return (
-    <Script id="schema-itemlist-projekty-graficzne" type="application/ld+json">
+    <Script id='schema-itemlist-projekty-graficzne' type='application/ld+json'>
       {JSON.stringify(json)}
     </Script>
   );
@@ -78,14 +88,22 @@ function ItemListSchema() {
 
 export const metadata = {
   title: 'Projekty graficzne do druku i online | Arteon',
-  description: 'Realizujemy projekty graficzne do druku i online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
+  description:
+    'Realizujemy projekty graficzne do druku i online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne' },
   openGraph: {
     title: 'Projekty graficzne do druku i online | Arteon',
-    description: 'Realizujemy projekty graficzne do druku i online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
+    description:
+      'Realizujemy projekty graficzne do druku i online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp', width: 1200, height: 630 }],
+    images: [
+      {
+        url: 'https://www.arteonagency.pl/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 } as const;
 
@@ -93,60 +111,91 @@ export default function OfferDesignPage() {
   return (
     <>
       <HeroBanner
-        title="Projekty graficzne"
+        title='Projekty graficzne'
         description={
           <>
-            Zbuduj spójny i profesjonalny wizerunek swojej marki. Projektujemy materiały firmowe - od logo i wizytówek po strony i odzież - dopasowane do Twojej branży, kolorystyki i stylu
-            komunikacji.
+            Zbuduj spójny i profesjonalny wizerunek swojej marki. Projektujemy materiały firmowe -
+            od logo i wizytówek po strony i odzież - dopasowane do Twojej branży, kolorystyki i
+            stylu komunikacji.
           </>
         }
-        secondaryCtaLabel="Bezpłatna wycena"
-        secondaryCtaLink="#kontakt"
-        variant="left"
-        backgroundImage="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
-        overlay="black"
+        secondaryCtaLabel='Bezpłatna wycena'
+        secondaryCtaHref='#kontakt'
+        variant='left'
+        backgroundImage='/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp'
+        overlay='black'
       />
 
-      <BenefitBelt variant="carousel" />
+      <BenefitBelt variant='carousel' />
 
-      <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }} includeJsonLd />
+      <Breadcrumbs
+        second={{ href: '/uslugi', label: 'Usługi' }}
+        third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
+        includeJsonLd
+      />
 
       <Wrapper>
-        <Gap size="xs" />
+        <Divider size='xs' />
 
-        <ProjectsCarousel title="Realizacje projektów graficznych" category="grafika" />
+        <ProjectsCarousel title='Realizacje projektów graficznych' category='grafika' />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Co zyskujesz dzięki projektom graficznym?">
+        <SectionInfo title='Co zyskujesz dzięki projektom graficznym?'>
           <p>
-            <strong>Spójna identyfikacja wizualna zwiększa rozpoznawalność marki nawet o 80%</strong>{' '}
-            <a href="https://www.lucidpress.com/blog/state-of-brand-consistency" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <strong>
+              Spójna identyfikacja wizualna zwiększa rozpoznawalność marki nawet o 80%
+            </strong>{' '}
+            <a
+              href='https://www.lucidpress.com/blog/state-of-brand-consistency'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-link'
+            >
               (Lucidpress - raport o spójności marek)
             </a>
-            . Profesjonalny projekt graficzny sprawia, że Twoja firma jest łatwiejsza do zapamiętania i budzi większe zaufanie już przy pierwszym kontakcie.
+            . Profesjonalny projekt graficzny sprawia, że Twoja firma jest łatwiejsza do
+            zapamiętania i budzi większe zaufanie już przy pierwszym kontakcie.
           </p>
 
           <br />
 
           <p>
-            <strong>Spójny wygląd marki ułatwia sprzedaż.</strong> Firmy utrzymujące jednolity brand notują średnio
+            <strong>Spójny wygląd marki ułatwia sprzedaż.</strong> Firmy utrzymujące jednolity brand
+            notują średnio
             <strong> 10-20% wyższe przychody</strong>{' '}
-            <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <a
+              href='https://www.marq.com/blog/brand-consistency-competitive-advantage'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-link'
+            >
               (Marq - analiza przewagi konkurencyjnej)
             </a>
-            . To logo, papier firmowy, katalog i teczka, które mówią jednym językiem - online, w druku i podczas spotkań z klientami.
+            . To logo, papier firmowy, katalog i teczka, które mówią jednym językiem - online, w
+            druku i podczas spotkań z klientami.
           </p>
 
           <br />
 
           <p>
-            <strong>Design buduje wiarygodność.</strong> Aż <strong>~75%</strong> osób ocenia firmę po jakości materiałów wizualnych i strony internetowej. Schludny, spójny projekt podnosi zaufanie i
-            wpływa na decyzję o kontakcie{' '}
-            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <strong>Design buduje wiarygodność.</strong> Aż <strong>~75%</strong> osób ocenia firmę
+            po jakości materiałów wizualnych i strony internetowej. Schludny, spójny projekt podnosi
+            zaufanie i wpływa na decyzję o kontakcie{' '}
+            <a
+              href='https://credibility.stanford.edu/guidelines/index.html'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-link'
+            >
               (Stanford - badanie wiarygodności stron)
             </a>{' '}
-            <a href="https://rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <a
+              href='https://rareformnewmedia.com/credibility-in-web-design/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-link'
+            >
               (Rareform - opracowanie branżowe)
             </a>
             .
@@ -155,8 +204,10 @@ export default function OfferDesignPage() {
           <br />
 
           <p>
-            <strong>Materiały drukowane nadal działają.</strong> 79% konsumentów deklaruje, że chętniej sięga po ofertę firm, które dostarczają estetyczne broszury, ulotki lub wizytówki (PrintPower,
-            raport o zaufaniu do druku). Dobrze zaprojektowane materiały drukowane są uzupełnieniem działań online i realnie zwiększają sprzedaż.
+            <strong>Materiały drukowane nadal działają.</strong> 79% konsumentów deklaruje, że
+            chętniej sięga po ofertę firm, które dostarczają estetyczne broszury, ulotki lub
+            wizytówki (PrintPower, raport o zaufaniu do druku). Dobrze zaprojektowane materiały
+            drukowane są uzupełnieniem działań online i realnie zwiększają sprzedaż.
           </p>
 
           <br />
@@ -165,300 +216,374 @@ export default function OfferDesignPage() {
             <strong>Dobre projekty graficzne robią trzy rzeczy naraz:</strong>
           </p>
 
-          <ul className="ml-5 list-disc">
+          <ul className='ml-5 list-disc'>
             <li>Przyciągają uwagę i budują pierwsze wrażenie,</li>
             <li>Porządkują przekaz i ułatwiają zrozumienie oferty,</li>
             <li>Wzmacniają decyzję o kontakcie lub zakupie.</li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FeatureGrid
-          title="Co zyskujesz realizując projekt graficzny z nami?"
-          subtitle="Nasz standard pracy"
+          title='Co zyskujesz realizując projekt graficzny z nami?'
+          subtitle='Nasz standard pracy'
           items={[
             {
               title: 'Pełną własność plików i praw',
-              description: <>Po zakończeniu projektu przekazujemy komplet plików źródłowych i użytkowych wraz z licencjami. Masz pełną kontrolę nad materiałami firmowymi - dziś i w przyszłości.</>,
-              icon: <RiKey2Line className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Po zakończeniu projektu przekazujemy komplet plików źródłowych i użytkowych wraz z
+                  licencjami. Masz pełną kontrolę nad materiałami firmowymi - dziś i w przyszłości.
+                </>
+              ),
+              icon: <RiKey2Line className='text-primary h-6 w-6' />,
             },
             {
               title: 'Pliki gotowe do druku i wdrożenia online',
-              description: <>Dostarczamy pakiet do druku a także warianty do sieci - wszystko zoptymalizowane i gotowe do użycia.</>,
-              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Dostarczamy pakiet do druku a także warianty do sieci - wszystko zoptymalizowane i
+                  gotowe do użycia.
+                </>
+              ),
+              icon: <RiFileTextLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Konsekwentną identyfikację wizualną',
-              description: <>Ustalamy system kolorów i typografii oraz reguły stosowania. Dzięki temu wszystkie materiały firmowe mówią jednym językiem i wzmacniają markę przy każdym kontakcie.</>,
-              icon: <IoColorPalette className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Ustalamy system kolorów i typografii oraz reguły stosowania. Dzięki temu wszystkie
+                  materiały firmowe mówią jednym językiem i wzmacniają markę przy każdym kontakcie.
+                </>
+              ),
+              icon: <IoColorPalette className='text-primary h-6 w-6' />,
             },
             {
               title: 'Skład DTP z dbałością o detale',
-              description: <>Kontrolujemy hierarchię, kerning i siatki. Przy katalogach i ulotkach pilnujemy czytelności, marginesów bezpieczeństwa oraz logiki łamania treści.</>,
-              icon: <RiBrushLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Kontrolujemy hierarchię, kerning i siatki. Przy katalogach i ulotkach pilnujemy
+                  czytelności, marginesów bezpieczeństwa oraz logiki łamania treści.
+                </>
+              ),
+              icon: <RiBrushLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Dobór i obróbkę zdjęć',
-              description: <>Pomagamy w wyborze zdjęć oraz dostosowujemy kadry, tła i kolory. Pliki przygotowujemy w zgodnych profilach barwnych do druku i na stronę internetową.</>,
-              icon: <RiImageLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Pomagamy w wyborze zdjęć oraz dostosowujemy kadry, tła i kolory. Pliki
+                  przygotowujemy w zgodnych profilach barwnych do druku i na stronę internetową.
+                </>
+              ),
+              icon: <RiImageLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Dostępność i czytelność',
-              description: <>Projektujemy tak, aby materiały były zrozumiałe i czytelne. Kontrast, wielkości fontów i hierarchia informacji wspierają odbiorcę w szybkim podjęciu decyzji.</>,
-              icon: <IoAccessibilityOutline className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Projektujemy tak, aby materiały były zrozumiałe i czytelne. Kontrast, wielkości
+                  fontów i hierarchia informacji wspierają odbiorcę w szybkim podjęciu decyzji.
+                </>
+              ),
+              icon: <IoAccessibilityOutline className='text-primary h-6 w-6' />,
             },
             {
               title: 'Gwarancję i wsparcie po wdrożeniu',
-              description: <>Po finalizacji masz nasze wsparcie przez 2 miesiące. Ewentualne poprawki techniczne wykonujemy w ramach gwarancji, a na życzenie wprowadzamy płatne zmiany.</>,
-              icon: <RiLifebuoyLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Po finalizacji masz nasze wsparcie przez 2 miesiące. Ewentualne poprawki
+                  techniczne wykonujemy w ramach gwarancji, a na życzenie wprowadzamy płatne zmiany.
+                </>
+              ),
+              icon: <RiLifebuoyLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Zero ukrytych kosztów',
-              description: <>Otrzymujesz ofertę z zakresem i terminami. Informujemy na bieżąco o ewentualnych kosztach dodatkowych, zanim podejmiemy kolejne kroki.</>,
-              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Otrzymujesz ofertę z zakresem i terminami. Informujemy na bieżąco o ewentualnych
+                  kosztach dodatkowych, zanim podejmiemy kolejne kroki.
+                </>
+              ),
+              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <TestimonialsCarousel />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionSteps
-          title="Projekty graficzne dla firm"
-          subtitle="Pełna oferta projektowa"
-          description="Poznaj pełną ofertę projektów graficznych - od wizytówek i ulotek po identyfikację wizualną oraz układy stron internetowych. Każda usługa ma własną stronę, na której zobaczysz szczegóły, przykłady realizacji i cennik."
-          grid="two"
+          title='Projekty graficzne dla firm'
+          subtitle='Pełna oferta projektowa'
+          description='Poznaj pełną ofertę projektów graficznych - od wizytówek i ulotek po identyfikację wizualną oraz układy stron internetowych. Każda usługa ma własną stronę, na której zobaczysz szczegóły, przykłady realizacji i cennik.'
+          grid='two'
           items={[
             {
-              icon: <RiIdCardLine className="h-8 w-8" />,
+              icon: <RiIdCardLine className='h-8 w-8' />,
               title: 'Projekt wizytówki',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Wizytówka wyjaśnia czym się zajmujesz w kilka sekund. Tworzymy projekty wizytówek, które łączą czytelność, elegancję i profesjonalny układ. Otrzymujesz gotowe pliki źródłowe oraz
-                    do druku.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Wizytówka wyjaśnia czym się zajmujesz w kilka sekund. Tworzymy projekty
+                    wizytówek, które łączą czytelność, elegancję i profesjonalny układ. Otrzymujesz
+                    gotowe pliki źródłowe oraz do druku.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-wizytowki'>
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiFileList2Line className="h-8 w-8" />,
+              icon: <RiFileList2Line className='h-8 w-8' />,
               title: 'Projekt ulotki',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Ulotka to najprostszy sposób, by dotrzeć lokalnie do nowych klientów. Zaprojektujemy ją tak, by jasno przedstawiała ofertę, przyciągała wzrok i kierowała prosto do zakupu lub
-                    kontaktu.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Ulotka to najprostszy sposób, by dotrzeć lokalnie do nowych klientów.
+                    Zaprojektujemy ją tak, by jasno przedstawiała ofertę, przyciągała wzrok i
+                    kierowała prosto do zakupu lub kontaktu.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-ulotki'>
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiFolderOpenLine className="h-8 w-8" />,
+              icon: <RiFolderOpenLine className='h-8 w-8' />,
               title: 'Teczka ofertowa',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Teczka ofertowa podnosi prestiż firmy i zwiększa wiarygodność w oczach klientów. Projekt teczki dopasowujemy do Twojej identyfikacji wizualnej, tworząc spójny i elegancki materiał
-                    firmowy.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Teczka ofertowa podnosi prestiż firmy i zwiększa wiarygodność w oczach klientów.
+                    Projekt teczki dopasowujemy do Twojej identyfikacji wizualnej, tworząc spójny i
+                    elegancki materiał firmowy.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-teczki-ofertowej'>
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
+              icon: <RiFileTextLine className='h-8 w-8' />,
               title: 'Papier firmowy',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Papier firmowy wzmacnia profesjonalny wizerunek w każdej korespondencji. Przygotowujemy szablony Word i PDF i wersję gotową do druku.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Papier firmowy wzmacnia profesjonalny wizerunek w każdej korespondencji.
+                    Przygotowujemy szablony Word i PDF i wersję gotową do druku.
+                  </p>
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-papieru-firmowego'>
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiTShirt2Line className="h-8 w-8" />,
+              icon: <RiTShirt2Line className='h-8 w-8' />,
               title: 'Odzież firmowa',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Odzież z logo zwiększa rozpoznawalność marki. Projektujemy nadruki i hafty dla zespołów, eventów i punktów sprzedaży - w wersjach pod sitodruk, DTF lub haft komputerowy.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Odzież z logo zwiększa rozpoznawalność marki. Projektujemy nadruki i hafty dla
+                    zespołów, eventów i punktów sprzedaży - w wersjach pod sitodruk, DTF lub haft
+                    komputerowy.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-odziezy-firmowej">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-odziezy-firmowej'>
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiQuillPenLine className="h-8 w-8" />,
+              icon: <RiQuillPenLine className='h-8 w-8' />,
               title: 'Projekt logo',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Logo to fundament identyfikacji wizualnej. Tworzymy znak, który oddaje charakter marki i pozostaje czytelny w każdym formacie. Otrzymujesz wersje wektorowe, kolorystyczne i
-                    mini-księgę znaku.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Logo to fundament identyfikacji wizualnej. Tworzymy znak, który oddaje charakter
+                    marki i pozostaje czytelny w każdym formacie. Otrzymujesz wersje wektorowe,
+                    kolorystyczne i mini-księgę znaku.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-logo">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-logo'>
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiBookletLine className="h-8 w-8" />,
+              icon: <RiBookletLine className='h-8 w-8' />,
               title: 'Projekt katalogu',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Katalog firmowy to wizualna prezentacja Twojej oferty. Zadbamy o skład, zdjęcia i typografię, dzięki czemu każdy produkt będzie przedstawiony czytelnie i estetycznie - w wersji
-                    drukowanej lub online.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Katalog firmowy to wizualna prezentacja Twojej oferty. Zadbamy o skład, zdjęcia
+                    i typografię, dzięki czemu każdy produkt będzie przedstawiony czytelnie i
+                    estetycznie - w wersji drukowanej lub online.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-katalogu">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-katalogu'>
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiPantoneLine className="h-8 w-8" />,
+              icon: <RiPantoneLine className='h-8 w-8' />,
               title: 'Identyfikacja wizualna',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe. Projektujemy identyfikację, która zwiększa rozpoznawalność i spójność w każdym punkcie styku z
-                    klientem.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe.
+                    Projektujemy identyfikację, która zwiększa rozpoznawalność i spójność w każdym
+                    punkcie styku z klientem.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
+                  <div className='mt-auto'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej'
+                    >
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLayoutLine className="h-8 w-8" />,
+              icon: <RiLayoutLine className='h-8 w-8' />,
               title: 'Projekt graficzny strony',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Makiety i layouty stron internetowych tworzone z myślą o konwersji i doświadczeniu użytkownika. Łączymy estetykę, UX i SEO, aby Twoja witryna wyróżniała się w sieci.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Makiety i layouty stron internetowych tworzone z myślą o konwersji i
+                    doświadczeniu użytkownika. Łączymy estetykę, UX i SEO, aby Twoja witryna
+                    wyróżniała się w sieci.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-graficzny-strony'>
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiLayoutLine className="h-8 w-8" />,
+              icon: <RiLayoutLine className='h-8 w-8' />,
               title: 'Szablony postów do mediów społecznościowych',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej marki. Otrzymujesz pliki gotowe
-                    do edycji i eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn,
+                    ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej
+                    marki. Otrzymujesz pliki gotowe do edycji i eksportu z czytelną hierarchią
+                    treści i miejscem na wezwanie do działania.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe">
+                  <div className='mt-auto'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe'
+                    >
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiCoupon2Line className="h-8 w-8" />,
+              icon: <RiCoupon2Line className='h-8 w-8' />,
               title: 'Kupony rabatowe i vouchery',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Kupony rabatowe i vouchery, które zachęcają Twoich klientów do powrotu i wspierają sprzedaż. Dostarczamy gotowe pliki do druku, spójne z wizerunkiem Twojej marki.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Kupony rabatowe i vouchery, które zachęcają Twoich klientów do powrotu i
+                    wspierają sprzedaż. Dostarczamy gotowe pliki do druku, spójne z wizerunkiem
+                    Twojej marki.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera">
+                  <div className='mt-auto'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera'
+                    >
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiPriceTag3Line className="h-8 w-8" />,
+              icon: <RiPriceTag3Line className='h-8 w-8' />,
               title: 'Projekt cennika',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Profesjonalne cenniki, które porządkują Twoją ofertę i budują profesjonalny wizerunek. Dostarczamy pliki gotowe do druku oraz dodania na stronę czy media społecznościowe.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Profesjonalne cenniki, które porządkują Twoją ofertę i budują profesjonalny
+                    wizerunek. Dostarczamy pliki gotowe do druku oraz dodania na stronę czy media
+                    społecznościowe.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-cennika">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-cennika'>
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiCoupon2Line className="h-8 w-8" />,
+              icon: <RiCoupon2Line className='h-8 w-8' />,
               title: 'Karty lojalnościowe',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Tworzymy projekty kart lojalnościowych, które zachęcają do regularnych powrotów Twoich klientów. Projektujemy czytelne układy z miejscem na pieczątki. Otrzymujesz gotowe pliki do
-                    druku.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Tworzymy projekty kart lojalnościowych, które zachęcają do regularnych powrotów
+                    Twoich klientów. Projektujemy czytelne układy z miejscem na pieczątki.
+                    Otrzymujesz gotowe pliki do druku.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej">
+                  <div className='mt-auto'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej'
+                    >
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiRestaurant2Line className="h-8 w-8" />,
+              icon: <RiRestaurant2Line className='h-8 w-8' />,
               title: 'Projekt menu restauracji',
               description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Menu dla restauracji, baru czy kawiarni. Tworzymy czytelne układy, ze spójną typografią zgodnie z wizerunkiem Twojej firmy. Otrzymujesz pliki do druku oraz wersję online.
+                <div className='flex h-full flex-col'>
+                  <p className='mb-3 text-sm'>
+                    Menu dla restauracji, baru czy kawiarni. Tworzymy czytelne układy, ze spójną
+                    typografią zgodnie z wizerunkiem Twojej firmy. Otrzymujesz pliki do druku oraz
+                    wersję online.
                   </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-menu-restauracji">
+                  <div className='mt-auto'>
+                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-menu-restauracji'>
                       Przejdź do oferty
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -466,26 +591,26 @@ export default function OfferDesignPage() {
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <WorkSteps variant="design" />
+        <WorkSteps variant='design' />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
 
         <SectionContactForm
-          title="Sprawdź koszt realizacji projektu graficznego"
-          description="Napisz czym zajmuje się Twoja firma, jaki materiał chcesz stworzyć oraz czy posiadasz logo i identyfikację wizualną - otrzymasz darmową wycenę realizacji."
-          imageSrc="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
-          imageAlt="Realizacja projektu graficznego - teczka ofertowa dla kancelarii"
-          defaultSubject="Projekty graficzne"
+          title='Sprawdź koszt realizacji projektu graficznego'
+          description='Napisz czym zajmuje się Twoja firma, jaki materiał chcesz stworzyć oraz czy posiadasz logo i identyfikację wizualną - otrzymasz darmową wycenę realizacji.'
+          imageSrc='/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp'
+          imageAlt='Realizacja projektu graficznego - teczka ofertowa dla kancelarii'
+          defaultSubject='Projekty graficzne'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne"
-          title="Najczęstsze pytania dotyczące projektów graficznych"
+          defaultOpenIndex={1}
+          pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne'
+          title='Najczęstsze pytania dotyczące projektów graficznych'
           items={[
             {
               question: 'Ile kosztuje projekt graficzny dla firmy?',
@@ -499,7 +624,8 @@ export default function OfferDesignPage() {
             },
             {
               question: 'W jakich formatach otrzymam gotowe pliki graficzne?',
-              answer: 'Dostarczamy komplet plików do druku i internetu: PDF (CMYK), PNG, JPG, SVG oraz pliki źródłowe (AI, PSD lub Figma).',
+              answer:
+                'Dostarczamy komplet plików do druku i internetu: PDF (CMYK), PNG, JPG, SVG oraz pliki źródłowe (AI, PSD lub Figma).',
             },
             {
               question: 'Czy mogę zamówić projekt logo i całej identyfikacji wizualnej?',
@@ -534,16 +660,16 @@ export default function OfferDesignPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
       <CTABanner
-        title="Nadaj marce wyjątkową tożsamość"
-        description="Projektujemy logo, identyfikację i materiały, które zostają w pamięci"
-        btnOne="Skontaktuj się"
-        btnOneLink="#kontakt"
-        backgroundImage="/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp"
-        overlay="black"
+        title='Nadaj marce wyjątkową tożsamość'
+        description='Projektujemy logo, identyfikację i materiały, które zostają w pamięci'
+        btnOne='Skontaktuj się'
+        btnOneHref='#kontakt'
+        backgroundImage='/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp'
+        overlay='black'
       />
       <ItemListSchema />
     </>

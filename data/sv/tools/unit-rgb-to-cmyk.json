@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Omvandla RGB till CMYK och tvärtom. För tryckförberedelse.",
-      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+      "featureList": [
+        "Dubbelriktad konvertering i realtid",
+        "Alla omvandlare på ett ställe",
+        "Kopiera resultat till urklipp",
+        "Lokal beräkning i webbläsaren"
+      ]
     },
     "howTo": {
       "name": "Så använder du omvandlaren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "RGB vs CMYK",
-      "featureLabel": "Egenskap",
-      "plans": [
+      "labelHeader": "Egenskap",
+      "cols": ["RGB", "CMYK"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "RGB"
+          "label": "Modell",
+          "values": ["Additiv (ljus)", "Subtraktiv (bläck)"]
         },
         {
-          "id": "unit2",
-          "name": "CMYK",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Modell",
-          "values": {
-            "unit1": "Additiv (ljus)",
-            "unit2": "Subtraktiv (bläck)"
-          }
+          "label": "Används för",
+          "values": ["Skärmar, webb", "Tryck, förpackning"]
         },
         {
-          "name": "Används för",
-          "values": {
-            "unit1": "Skärmar, webb",
-            "unit2": "Tryck, förpackning"
-          }
+          "label": "Gamut",
+          "values": ["Större", "Mindre"]
         },
         {
-          "name": "Gamut",
-          "values": {
-            "unit1": "Större",
-            "unit2": "Mindre"
-          }
+          "label": "Svart",
+          "values": ["R=0, G=0, B=0", "K=100%"]
         },
         {
-          "name": "Svart",
-          "values": {
-            "unit1": "R=0, G=0, B=0",
-            "unit2": "K=100%"
-          }
-        },
-        {
-          "name": "Vit",
-          "values": {
-            "unit1": "R=255, G=255, B=255",
-            "unit2": "Inget bläck"
-          }
+          "label": "Vit",
+          "values": ["R=255, G=255, B=255", "Inget bläck"]
         }
       ]
     },

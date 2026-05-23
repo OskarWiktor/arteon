@@ -1,8 +1,8 @@
 {
   "slug": "contact",
   "metadata": {
-    "title": "Contact Arteon – Free Online Tools Support & Feedback",
-    "description": "Get in touch with the Arteon team. Report a bug, suggest a new tool, or ask a question about our free online tools for images, SEO, colors and QR codes."
+    "title": "Contact Arteon – Free Tools Support & Feedback",
+    "description": "Get in touch with the Arteon team. Report a bug, suggest a new tool, or ask a question about our free tools for images, SEO, colors and QR codes."
   },
   "hero": {
     "title": "Get in touch with the Arteon team",
@@ -22,7 +22,7 @@
   },
   "cta": {
     "title": "Back to tools",
-    "description": "Free online tools for working with images, text, and colors",
+    "description": "Free tools for working with images, text, and colors",
     "btnOne": "Tools"
   }
 }

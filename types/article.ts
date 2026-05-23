@@ -63,7 +63,14 @@ export type Article = {
         breakBefore?: boolean;
         breakAfter?: boolean;
       }
-    | { type: 'quote'; text: string; author?: string; role?: string; breakBefore?: boolean; breakAfter?: boolean }
+    | {
+        type: 'quote';
+        text: string;
+        author?: string;
+        role?: string;
+        breakBefore?: boolean;
+        breakAfter?: boolean;
+      }
     | { type: 'callout'; title?: string; html: string; breakBefore?: boolean; breakAfter?: boolean }
     | { type: 'colorPalette'; colors: string[]; breakBefore?: boolean; breakAfter?: boolean }
     | { type: 'ad'; slot?: string; breakBefore?: boolean; breakAfter?: boolean }
@@ -73,4 +80,14 @@ export type Article = {
   cta?: ProjectCTA;
 };
 
-export type ArticlePreview = Pick<Article, 'slug' | 'title' | 'excerpt' | 'cover' | 'primaryCategory' | 'readingTime' | 'datePublished' | 'seo'>;
+export type ArticlePreview = Pick<
+  Article,
+  | 'slug'
+  | 'title'
+  | 'excerpt'
+  | 'cover'
+  | 'primaryCategory'
+  | 'readingTime'
+  | 'datePublished'
+  | 'seo'
+>;

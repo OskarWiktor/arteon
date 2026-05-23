@@ -2,14 +2,14 @@
   "toolKey": "emailSignature",
   "locale": "pl",
   "metadata": {
-    "title": "Darmowy generator stopki email HTML - stwórz podpis mailowy",
-    "description": "Stwórz stopkę mailową HTML bez logowania i rejestracji. Możliwości pełnej personalizacji, gotowe układy, podgląd na żywo i gotowy kod HTML.",
+    "title": "Darmowy generator stopki email HTML. Stwórz profesjonalny podpis mailowy",
+    "description": "Stwórz stopkę mailową HTML w bezpłatnym narzędziu bez rejestracji i limitów. Skorzystaj z gotowych układów z możliwością personalizacji każdego elementu. Po edycji otrzymasz gotowy kod HTML do wklejenia w Gmail, Outlook i inne poczty mailowych.",
     "ogImage": "/assets/tools/free-html-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp",
     "path": "/narzedzia/darmowy-generator-stopki-mailowej"
   },
   "hero": {
-    "title": "Zbuduj podpis e-mail HTML – skopiuj do Gmail i Outlook",
-    "description": "Zbuduj profesjonalny podpis e-mail w kilka minut. Wpisz dane, wybierz kolory i skopiuj gotowy kod HTML do Gmaila, Outlooka i innych klientów pocztowych",
+    "title": "Darmowy generator stopki email HTML. Stwórz profesjonalny podpis mailowy",
+    "description": "Zbuduj profesjonalny podpis e-mail w kilka minut. Wpisz dane, wybierz kolory i skopiuj gotowy kod HTML do Gmaila, Outlooka i innych klientów pocztowych. Darmowe narzędzie bez rejestracji i limitów działające lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/free-html-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": [
         "Generator podpisu e-mail HTML",
         "Kreator sygnaturki email",
-        "Generator stopki email po polsku",
+        "Generator stopki email",
         "Kreator podpisu mailowego",
         "Darmowy generator podpisu e-mail",
         "Generator stopki mailowej HTML",

@@ -25,10 +25,15 @@
   "schemas": {
     "software": {
       "name": "JPG to PNG converter – free, unlimited files",
-      "alternateName": ["JPEG to PNG converter", "Convert JPG to PNG online", "Change JPEG to PNG", "Free JPG to PNG tool"],
+      "alternateName": [
+        "JPEG to PNG converter",
+        "Convert JPG to PNG",
+        "Change JPEG to PNG",
+        "Free JPG to PNG tool"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Free online JPG to PNG converter. Transform JPEG images to lossless PNG directly in your browser - no files are uploaded. Unlimited conversions, no signup.",
+      "description": "Free JPG to PNG converter. Transform JPEG images to lossless PNG directly in your browser - no files are uploaded. Unlimited conversions, no signup.",
       "featureList": [
         "JPG to PNG conversion",
         "Lossless output preserving all details",
@@ -39,7 +44,7 @@
       ]
     },
     "howTo": {
-      "name": "How to convert JPG to PNG online",
+      "name": "How to convert JPG to PNG",
       "description": "Step-by-step guide to converting JPG files to lossless PNG using this free tool.",
       "steps": [
         {
@@ -164,78 +169,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs PNG – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["JPG", "PNG"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Lossy compression",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Lossless compression",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparency (alpha channel)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animation support",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Web browser support",
+          "values": ["All browsers", "All browsers"]
+        },
+        {
+          "label": "Color depth",
+          "values": ["8-bit (16.7M)", "8/16-bit"]
+        },
+        {
+          "label": "Compact file size",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy compression",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Lossless compression",
-          "values": {
-            "jpg": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparency (alpha channel)",
-          "values": {
-            "jpg": false,
-            "png": true
-          }
-        },
-        {
-          "name": "Animation support",
-          "values": {
-            "jpg": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Web browser support",
-          "values": {
-            "jpg": "All browsers",
-            "png": "All browsers"
-          }
-        },
-        {
-          "name": "Color depth",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Compact file size",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "jpg": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

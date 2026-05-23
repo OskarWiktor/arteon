@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertissez centimètres en pixels à toute résolution DPI. Pour l'impression et la préparation d'images.",
-      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+      "featureList": [
+        "Conversion bidirectionnelle en temps réel",
+        "Tous les convertisseurs au même endroit",
+        "Copier le résultat dans le presse-papiers",
+        "Calcul local dans le navigateur"
+      ]
     },
     "howTo": {
       "name": "Comment utiliser le convertisseur",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Résolutions DPI comparées",
-      "featureLabel": "Caractéristique",
-      "plans": [
+      "labelHeader": "Caractéristique",
+      "cols": ["300 DPI (impression)", "72 DPI (écran)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "300 DPI (impression)"
+          "label": "10 cm",
+          "values": ["1 181 px", "283 px"]
         },
         {
-          "id": "unit2",
-          "name": "72 DPI (écran)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "10 cm",
-          "values": {
-            "unit1": "1 181 px",
-            "unit2": "283 px"
-          }
+          "label": "A4 largeur (21 cm)",
+          "values": ["2 480 px", "595 px"]
         },
         {
-          "name": "A4 largeur (21 cm)",
-          "values": {
-            "unit1": "2 480 px",
-            "unit2": "595 px"
-          }
+          "label": "A4 hauteur (29,7 cm)",
+          "values": ["3 508 px", "842 px"]
         },
         {
-          "name": "A4 hauteur (29,7 cm)",
-          "values": {
-            "unit1": "3 508 px",
-            "unit2": "842 px"
-          }
+          "label": "Application",
+          "values": ["Impression pro", "Graphiques web"]
         },
         {
-          "name": "Application",
-          "values": {
-            "unit1": "Impression pro",
-            "unit2": "Graphiques web"
-          }
-        },
-        {
-          "name": "Qualité",
-          "values": {
-            "unit1": "Nette à toute taille",
-            "unit2": "Écran uniquement"
-          }
+          "label": "Qualité",
+          "values": ["Nette à toute taille", "Écran uniquement"]
         }
       ]
     },

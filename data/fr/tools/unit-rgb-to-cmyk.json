@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertissez les valeurs RGB en CMYK. Pour préparer les graphiques web pour l'impression.",
-      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+      "featureList": [
+        "Conversion bidirectionnelle en temps réel",
+        "Tous les convertisseurs au même endroit",
+        "Copier le résultat dans le presse-papiers",
+        "Calcul local dans le navigateur"
+      ]
     },
     "howTo": {
       "name": "Comment utiliser le convertisseur",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "RGB vs CMYK – comparaison",
-      "featureLabel": "Caractéristique",
-      "plans": [
+      "labelHeader": "Caractéristique",
+      "cols": ["RGB", "CMYK"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "RGB"
+          "label": "Modèle",
+          "values": ["Additif (lumière)", "Soustractif (encre)"]
         },
         {
-          "id": "unit2",
-          "name": "CMYK",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Modèle",
-          "values": {
-            "unit1": "Additif (lumière)",
-            "unit2": "Soustractif (encre)"
-          }
+          "label": "Utilisé pour",
+          "values": ["Écrans, web", "Impression, emballage"]
         },
         {
-          "name": "Utilisé pour",
-          "values": {
-            "unit1": "Écrans, web",
-            "unit2": "Impression, emballage"
-          }
+          "label": "Gamut",
+          "values": ["Plus grand", "Plus petit"]
         },
         {
-          "name": "Gamut",
-          "values": {
-            "unit1": "Plus grand",
-            "unit2": "Plus petit"
-          }
+          "label": "Noir",
+          "values": ["R=0, G=0, B=0", "K=100 %"]
         },
         {
-          "name": "Noir",
-          "values": {
-            "unit1": "R=0, G=0, B=0",
-            "unit2": "K=100 %"
-          }
-        },
-        {
-          "name": "Blanc",
-          "values": {
-            "unit1": "R=255, G=255, B=255",
-            "unit2": "Pas d’encre (papier)"
-          }
+          "label": "Blanc",
+          "values": ["R=255, G=255, B=255", "Pas d’encre (papier)"]
         }
       ]
     },

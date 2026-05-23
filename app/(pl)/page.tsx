@@ -1,15 +1,14 @@
-import BenefitBelt from '@/components/sections/BenefitBelt';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import CTABanner from '@/components/sections/CTABanner';
-import FeatureGrid from '@/components/sections/FeatureGrid';
-import HeroBanner from '@/components/sections/HeroBanner';
-import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
-import WorkSteps from '@/components/sections/steps/WorkSteps';
-import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import Button from '@/components/ui/buttons/Button';
-import Gap from '@/components/ui/Gap';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Wrapper from '@/components/ui/Wrapper';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import WorkSteps from '@/components/organisms/WorkSteps';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import Divider from '@/components/atoms/Divider';
+import Wrapper from '@/components/atoms/Wrapper';
 import { GoLaw } from 'react-icons/go';
 import { MdSupportAgent } from 'react-icons/md';
 import { RiArticleLine, RiBarChart2Line, RiBookOpenLine, RiBrushLine } from 'react-icons/ri';
@@ -17,9 +16,10 @@ import { getHomepageAlternates } from '@/lib/i18n/pages/tool-meta';
 import testimonialsPl from '@/data/pl/testimonials.json';
 import type { Testimonial } from '@/types/testimonial';
 import { getAllArticlePreviews } from '@/lib/blogDataService';
-import LazyToolsCarousel from '@/components/sections/tools/LazyToolsCarousel';
-import LogoCarousel from '@/components/sections/LogoCarousel';
-import { JsonLd } from '@/components/seo/JsonLd';
+import LogoCarousel from '@/components/organisms/carousels/LogoCarousel';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import ToolsCarousel from '@/components/organisms/carousels/ToolsCarousel';
+import { JsonLd } from '@/components/atoms/JsonLd';
 
 export const metadata = {
   title: 'Strony internetowe, sklepy, treści i projekty graficzne - Arteon',
@@ -42,8 +42,9 @@ export const metadata = {
 
 function HomePageSchemas() {
   const testimonials = testimonialsPl as Testimonial[];
-  const allRatings = testimonials.map((t) => t.rating);
-  const avgRating = allRatings.length > 0 ? allRatings.reduce((a, b) => a + b, 0) / allRatings.length : 5;
+  const allRatings = testimonials.map(t => t.rating);
+  const avgRating =
+    allRatings.length > 0 ? allRatings.reduce((a, b) => a + b, 0) / allRatings.length : 5;
   const reviewCount = testimonials.length;
 
   const aggregateRating = {
@@ -57,7 +58,7 @@ function HomePageSchemas() {
       bestRating: '5',
       worstRating: '1',
     },
-    review: testimonials.map((t) => ({
+    review: testimonials.map(t => ({
       '@type': 'Review',
       author: {
         '@type': 'Person',
@@ -78,7 +79,8 @@ function HomePageSchemas() {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     name: 'Jak pracujemy',
-    description: 'Posiadamy jasny proces współpracy, który maksymalizuje indywidualne podejście i końcowy efekt',
+    description:
+      'Posiadamy jasny proces współpracy, który maksymalizuje indywidualne podejście i końcowy efekt',
     step: [
       {
         '@type': 'HowToStep',
@@ -109,8 +111,8 @@ function HomePageSchemas() {
 
   return (
     <>
-      <JsonLd schema={aggregateRating} id="schema-aggregate-rating" />
-      <JsonLd schema={howTo} id="schema-howto-process" />
+      <JsonLd schema={aggregateRating} id='schema-aggregate-rating' />
+      <JsonLd schema={howTo} id='schema-howto-process' />
     </>
   );
 }
@@ -122,89 +124,100 @@ export default function HomePage() {
     <>
       <HomePageSchemas />
       <HeroBanner
-        title="Strony internetowe, sklepy, treści i projekty graficzne"
-        description="Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepu, treści oraz wszelkie projekty graficzne. Zajmuje się również pozycjonowaniem witryn jak i budową aplikacji webowych. Wszystko zrealizujesz w jednym miejscu."
-        backgroundImage="/assets/bg/arteon-zbior-realizacji.webp"
-        secondaryCtaLabel="Sprawdź ofertę"
-        secondaryCtaLink="/uslugi"
-        primaryCtaLabel="Skontaktuj się"
-        primaryCtaLink="/kontakt"
-        overlay="black"
+        title='Strony internetowe, sklepy, treści i projekty graficzne'
+        description='Zajmujemy się kompleksowym wsparciem małych i średnich przedsiębiorstw. Tworzymy strony internetowe, sklepu, treści oraz wszelkie projekty graficzne. Zajmuje się również pozycjonowaniem witryn jak i budową aplikacji webowych. Wszystko zrealizujesz w jednym miejscu.'
+        backgroundImage='/assets/bg/arteon-zbior-realizacji.webp'
+        secondaryCtaLabel='Sprawdź ofertę'
+        secondaryCtaHref='/uslugi'
+        primaryCtaLabel='Skontaktuj się'
+        primaryCtaHref='/kontakt'
+        overlay='black'
       />
 
-      <BenefitBelt variant="carousel" />
+      <BenefitBelt variant='carousel' />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Divider size='sm' />
 
-        <ProjectsCarousel title="Najnowsze realizacje stron internetowych i projektów graficznych" />
+        <ProjectsCarousel title='Najnowsze realizacje stron internetowych i projektów graficznych' />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionSteps
-          subtitle="Cztery filary jakości"
-          title="Elastyczny partner dla Twojej marki"
-          description="Działamy w czterech kluczowych obszarach, dzięki czemu masz wszystko w jednym miejscu. Niezależnie od branży i celów znajdziemy najlepszy sposób, aby rozwinąć Twój biznes i przyciągnąć właściwych klientów."
+          subtitle='Cztery filary jakości'
+          title='Elastyczny partner dla Twojej marki'
+          description='Działamy w czterech kluczowych obszarach, dzięki czemu masz wszystko w jednym miejscu. Niezależnie od branży i celów znajdziemy najlepszy sposób, aby rozwinąć Twój biznes i przyciągnąć właściwych klientów.'
           items={[
             {
               topImageAlt: 'Papier firmowy dla kancelarii Lux Nova - mockup',
               topImageSrc: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
               title: 'Projekty graficzne',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Tworzymy rozmaite projekty graficzne. Od projektów do druku, jak wizytówki czy ulotki, przez projekty do mediów społecznościowych oraz stron, po pełne identyfikacje wizualne i
-                    projekty nadruków na odzież. Opieramy się na psychologii, dzięki czemu nasze projekty trafiają do odpowiednich grup odbiorczych, tworząc dla Ciebie idealne środowisko do
-                    pozyskiwania najlepszych klientów
+                    Tworzymy rozmaite projekty graficzne. Od projektów do druku, jak wizytówki czy
+                    ulotki, przez projekty do mediów społecznościowych oraz stron, po pełne
+                    identyfikacje wizualne i projekty nadruków na odzież. Opieramy się na
+                    psychologii, dzięki czemu nasze projekty trafiają do odpowiednich grup
+                    odbiorczych, tworząc dla Ciebie idealne środowisko do pozyskiwania najlepszych
+                    klientów
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/uslugi/projekty-graficzne">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/uslugi/projekty-graficzne'>
                       Przejdź do projektów graficznych
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
               topImageAlt: 'Wizualizacja realizacji strony internetowej dla ',
-              topImageSrc: '/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp',
+              topImageSrc:
+                '/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp',
               title: 'Strony',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Tworzymy strony internetowe, sklepy, blogi oraz aplikacje webowe, dopasowując technologię, która w Twoim przypadku będzie najlepsza. Tworzymy witryny zgodne z krajowymi i
-                    międzynarodowymi wymogami prawnymi (m.in. RODO, WCAG 2.1 AA), oferując przy tym bezpłatne wsparcie. Każdy proces pracy tłumaczymy jak najprostszym językiem, dzięki czemu nie musisz
-                    się martwić, jeśli nie posiadasz wiedzy technicznej.
+                    Tworzymy strony internetowe, sklepy, blogi oraz aplikacje webowe, dopasowując
+                    technologię, która w Twoim przypadku będzie najlepsza. Tworzymy witryny zgodne z
+                    krajowymi i międzynarodowymi wymogami prawnymi (m.in. RODO, WCAG 2.1 AA),
+                    oferując przy tym bezpłatne wsparcie. Każdy proces pracy tłumaczymy jak
+                    najprostszym językiem, dzięki czemu nie musisz się martwić, jeśli nie posiadasz
+                    wiedzy technicznej.
                   </p>
-                  <div className="mt-auto flex gap-4">
-                    <Button arrow link="/uslugi/tworzenie-stron-wordpress">
+                  <div className='mt-auto flex gap-4'>
+                    <ButtonLink arrow href='/uslugi/tworzenie-stron-wordpress'>
                       Strony
-                    </Button>
-                    <Button arrow link="/uslugi/blogi-internetowe">
+                    </ButtonLink>
+                    <ButtonLink arrow href='/uslugi/blogi-internetowe'>
                       Blogi
-                    </Button>
-                    <Button arrow link="/uslugi/sklepy-internetowe">
+                    </ButtonLink>
+                    <ButtonLink arrow href='/uslugi/sklepy-internetowe'>
                       Sklepy
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
             {
-              topImageAlt: 'Mockup szablonów postów do medi społecznościowych dla MSC Psychotherapy',
+              topImageAlt:
+                'Mockup szablonów postów do medi społecznościowych dla MSC Psychotherapy',
               topImageSrc: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               title: 'Marketing',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz pełnym marketingu firm w Google i nie tylko. Z nami zyskasz widoczność dokładnie tam, gdzie szukają Cię klienci. Zajmujemy
-                    się również tworzeniem kampanii reklamowych oraz prowadzeniem mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz konkurencji, aby móc zaproponować
-                    działania, które trafiają dokładnie w Twoją grupę odbiorców.
+                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz pełnym marketingu firm w
+                    Google i nie tylko. Z nami zyskasz widoczność dokładnie tam, gdzie szukają Cię
+                    klienci. Zajmujemy się również tworzeniem kampanii reklamowych oraz prowadzeniem
+                    mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz
+                    konkurencji, aby móc zaproponować działania, które trafiają dokładnie w Twoją
+                    grupę odbiorców.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/uslugi/marketing">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/uslugi/marketing'>
                       Sprawdź ofertę marketingu
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
@@ -214,90 +227,92 @@ export default function HomePage() {
               topImageSrc: '/assets/projects/napilota/mockup-strony-napilota.webp',
               title: 'Treści',
               description: (
-                <div className="flex h-full flex-col">
+                <div className='flex h-full flex-col'>
                   <p>
-                    Tworzymy treści sprzedażowe, promocyjne oraz edukacyjne na witryny internetowe oraz platformy społecznościowe, które w jasny sposób pokazują Twoją ofertą i Twoje kompetencje.
-                    Wszystko to w oparciu o rozwiązywanie realnych problemów Twoich klientów.
+                    Tworzymy treści sprzedażowe, promocyjne oraz edukacyjne na witryny internetowe
+                    oraz platformy społecznościowe, które w jasny sposób pokazują Twoją ofertą i
+                    Twoje kompetencje. Wszystko to w oparciu o rozwiązywanie realnych problemów
+                    Twoich klientów.
                   </p>
-                  <div className="mt-4">
-                    <Button arrow link="/uslugi/tworzenie-tresci">
+                  <div className='mt-4'>
+                    <ButtonLink arrow href='/uslugi/tworzenie-tresci'>
                       Sprawdź ofertę tworzenia treści
-                    </Button>
+                    </ButtonLink>
                   </div>
                 </div>
               ),
             },
           ]}
-          grid="two"
-          btnOne="Sprawdź wszystkie nasze usługi"
-          btnOneLink="/uslugi"
+          grid='two'
+          btnOne='Sprawdź wszystkie nasze usługi'
+          btnOneHref='/uslugi'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FeatureGrid
-          title="Co możemy wnieść do Twojej marki?"
-          subtitle="Nasz standard pracy"
+          title='Co możemy wnieść do Twojej marki?'
+          subtitle='Nasz standard pracy'
           items={[
             {
               title: 'Treści dopasowane do Twojego wymarzonego klienta',
-              icon: <RiArticleLine className="text-primary h-6 w-6" />,
+              icon: <RiArticleLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Spójne projekty graficzne online oraz offline',
-              icon: <RiBrushLine className="text-primary h-6 w-6" />,
+              icon: <RiBrushLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Wsparcie prawne - polityki, regulaminy, WCAG 2.1 AA',
-              icon: <GoLaw className="text-primary h-6 w-6" />,
+              icon: <GoLaw className='text-primary h-6 w-6' />,
             },
             {
               title: 'Strategie marketingowe odpowiadające na problemy Twoich odbiorców',
-              icon: <RiBarChart2Line className="text-primary h-6 w-6" />,
+              icon: <RiBarChart2Line className='text-primary h-6 w-6' />,
             },
             {
               title: 'Dedykowane szkolenia i instrukcje',
-              icon: <RiBookOpenLine className="text-primary h-6 w-6" />,
+              icon: <RiBookOpenLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Wsparcie w dalszym rozwoju po realizacji',
-              icon: <MdSupportAgent className="text-primary h-6 w-6" />,
+              icon: <MdSupportAgent className='text-primary h-6 w-6' />,
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <LazyToolsCarousel />
+        <ToolsCarousel />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <TestimonialsCarousel />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <WorkSteps />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <LogoCarousel />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <ArticlesCarousel title="Nasze artykuły i poradniki" articles={articlePreviews} />
+        <ArticlesCarousel title='Nasze artykuły i poradniki' articles={articlePreviews} />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
       <CTABanner
-        title="Zacznijmy od rozmowy"
-        description="Opisz swoją wizję rozwoju, a przygotujemy propozycję dopasowaną do Twoich celów."
-        btnOne="Skontaktuj się"
-        btnOneLink="/kontakt"
-        btnTwo="Sprawdź pełną ofertę usług"
-        btnTwoLink="/uslugi"
-        backgroundImage="/assets/bg/arteon-hero-baner-z-realizacja-strony-jstax.webp"
-        overlay="black"
+        title='Zacznijmy od rozmowy'
+        description='Opisz swoją wizję rozwoju, a przygotujemy propozycję dopasowaną do Twoich celów.'
+        btnOne='Skontaktuj się'
+        btnOneHref='/kontakt'
+        btnTwo='Sprawdź pełną ofertę usług'
+        btnTwoHref='/uslugi'
+        backgroundImage='/assets/bg/arteon-hero-baner-z-realizacja-strony-jstax.webp'
+        overlay='black'
       />
     </>
   );

@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Reken punten om naar pixels en andersom.",
-      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+      "featureList": [
+        "Bidirectionele realtime-conversie",
+        "Alle converters op één plek",
+        "Resultaat naar klembord kopiëren",
+        "Lokale berekening in de browser"
+      ]
     },
     "howTo": {
       "name": "Hoe de converter te gebruiken",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Punt (pt) vs Pixel (px)",
-      "featureLabel": "Eigenschap",
-      "plans": [
+      "labelHeader": "Eigenschap",
+      "cols": ["Punt (pt)", "Pixel (px)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Punt (pt)"
+          "label": "Definitie",
+          "values": ["1/72 inch", "1/96 inch (CSS)"]
         },
         {
-          "id": "unit2",
-          "name": "Pixel (px)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Definitie",
-          "values": {
-            "unit1": "1/72 inch",
-            "unit2": "1/96 inch (CSS)"
-          }
+          "label": "Gebruikt in",
+          "values": ["Druk, Word, PDF", "Web, CSS, schermen"]
         },
         {
-          "name": "Gebruikt in",
-          "values": {
-            "unit1": "Druk, Word, PDF",
-            "unit2": "Web, CSS, schermen"
-          }
+          "label": "12 pt =",
+          "values": ["12 pt", "16 px"]
         },
         {
-          "name": "12 pt =",
-          "values": {
-            "unit1": "12 pt",
-            "unit2": "16 px"
-          }
+          "label": "Broodtekst",
+          "values": ["10–12 pt", "14–18 px"]
         },
         {
-          "name": "Broodtekst",
-          "values": {
-            "unit1": "10–12 pt",
-            "unit2": "14–18 px"
-          }
-        },
-        {
-          "name": "Kop",
-          "values": {
-            "unit1": "18–24 pt",
-            "unit2": "24–32 px"
-          }
+          "label": "Kop",
+          "values": ["18–24 pt", "24–32 px"]
         }
       ]
     },

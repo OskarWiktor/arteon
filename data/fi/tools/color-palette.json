@@ -25,7 +25,12 @@
   "schemas": {
     "software": {
       "name": "Väripalettien generaattori – 17 väriskeemaa",
-      "alternateName": ["Väriskeemojen generaattori", "Värigeneraattori", "Värien sovitustyökalu", "Väriharmonian generaattori"],
+      "alternateName": [
+        "Väriskeemojen generaattori",
+        "Värigeneraattori",
+        "Värien sovitustyökalu",
+        "Väriharmonian generaattori"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
       "description": "Ilmainen väripalettien generaattori. Syötä yksi HEX-väri ja työkalu luo 17 skeemaa: monokromaattinen, analoginen, komplementaarinen, triadinen, jaettu komplementaarinen, pastellinen, tumma, tonaalinen ja minimalistinen. Jokainen väri voidaan kopioida HEX-koodilla ja HSL-arvolla.",

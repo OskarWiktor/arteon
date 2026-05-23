@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Omvandla decimaltal till hexadecimala tal och tvärtom.",
-      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+      "featureList": [
+        "Dubbelriktad konvertering i realtid",
+        "Alla omvandlare på ett ställe",
+        "Kopiera resultat till urklipp",
+        "Lokal beräkning i webbläsaren"
+      ]
     },
     "howTo": {
       "name": "Så använder du omvandlaren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimal vs Hexadecimal",
-      "featureLabel": "Egenskap",
-      "plans": [
+      "labelHeader": "Egenskap",
+      "cols": ["Decimal", "Hexadecimal"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimal"
+          "label": "Siffror",
+          "values": ["0–9", "0–9, A–F"]
         },
         {
-          "id": "unit2",
-          "name": "Hexadecimal",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Siffror",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–9, A–F"
-          }
+          "label": "Exempel: 255",
+          "values": ["255", "FF"]
         },
         {
-          "name": "Exempel: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "FF"
-          }
+          "label": "Exempel: 1000",
+          "values": ["1000", "3E8"]
         },
         {
-          "name": "Exempel: 1000",
-          "values": {
-            "unit1": "1000",
-            "unit2": "3E8"
-          }
+          "label": "Används för",
+          "values": ["Daglig räkning", "Färger, adresser"]
         },
         {
-          "name": "Används för",
-          "values": {
-            "unit1": "Daglig räkning",
-            "unit2": "Färger, adresser"
-          }
-        },
-        {
-          "name": "Kompakthet",
-          "values": {
-            "unit1": "Standard",
-            "unit2": "Mer kompakt än binär"
-          }
+          "label": "Kompakthet",
+          "values": ["Standard", "Mer kompakt än binär"]
         }
       ]
     },

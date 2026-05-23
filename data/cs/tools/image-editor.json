@@ -8,7 +8,7 @@
     "path": "/cs/nastroje/editor-obrazku"
   },
   "hero": {
-    "title": "Změňte velikost, ořízněte a převeďte obrázek online – zdarma",
+    "title": "Změňte velikost, ořízněte a převeďte obrázek – zdarma",
     "description": "Nahrajte obrázek, vyberte přednastavený formát pro sociální sítě nebo zadejte vlastní rozměry a stáhněte hotový ořízaný obrázek.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -25,10 +25,15 @@
   "schemas": {
     "software": {
       "name": "Editor obrázků – ořez, změna velikosti a konverze",
-      "alternateName": ["Nástroj pro ořez obrázků", "Změna velikosti obrázků pro sociální sítě", "Editor obrázků pro Instagram a Facebook", "Ořez obrázku na vlastní poměr stran"],
+      "alternateName": [
+        "Nástroj pro ořez obrázků",
+        "Změna velikosti obrázků pro sociální sítě",
+        "Editor obrázků pro Instagram a Facebook",
+        "Ořez obrázku na vlastní poměr stran"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Bezplatný online editor obrázků pro změnu velikosti, ořez a konverzi formátů. Hotové presety pro Instagram, Facebook a LinkedIn. Vytváření kulatých avatarů. Export do JPG, PNG a WebP s nastavením kvality. Lokální zpracování v prohlížeči.",
+      "description": "Bezplatný editor obrázků pro změnu velikosti, ořez a konverzi formátů. Hotové presety pro Instagram, Facebook a LinkedIn. Vytváření kulatých avatarů. Export do JPG, PNG a WebP s nastavením kvality. Lokální zpracování v prohlížeči.",
       "featureList": [
         "Změna velikosti obrázků na libovolné rozměry",
         "Ořez s interaktivním výběrem oblasti",
@@ -336,7 +341,7 @@
       "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj, který by usnadnil vaši práci? Napište nám – odpovídáme do 24 hodin.",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-obrazku-cs.webp",
       "imageAlt": "Online editor obrázků – Arteon",
-      "defaultSubject": "Feedback: Online editor obrázků"
+      "defaultSubject": "Feedback: editor obrázků"
     },
     {
       "type": "gap",

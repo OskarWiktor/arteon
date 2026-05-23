@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "DPI to PPI converter",
-      "alternateName": ["DPI PPI converter", "Dots per inch to pixels per inch", "Print vs screen resolution"],
+      "alternateName": [
+        "DPI PPI converter",
+        "Dots per inch to pixels per inch",
+        "Print vs screen resolution"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert DPI (dots per inch) to PPI (pixels per inch) and understand the difference. Useful for print and screen design.",
@@ -184,55 +188,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI vs PPI – comparison",
-      "featureLabel": "Feature",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["DPI (dots per inch)", "PPI (pixels per inch)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "DPI (dots per inch)"
+          "label": "Applies to",
+          "values": ["Printers", "Screens and images"]
         },
         {
-          "id": "unit2",
-          "name": "PPI (pixels per inch)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Applies to",
-          "values": {
-            "unit1": "Printers",
-            "unit2": "Screens and images"
-          }
+          "label": "Measures",
+          "values": ["Physical ink dots", "Digital pixels"]
         },
         {
-          "name": "Measures",
-          "values": {
-            "unit1": "Physical ink dots",
-            "unit2": "Digital pixels"
-          }
+          "label": "Typical values",
+          "values": ["600–4800 DPI", "72–460 PPI"]
         },
         {
-          "name": "Typical values",
-          "values": {
-            "unit1": "600–4800 DPI",
-            "unit2": "72–460 PPI"
-          }
+          "label": "Print quality",
+          "values": ["Higher = finer detail", "300 PPI standard"]
         },
         {
-          "name": "Print quality",
-          "values": {
-            "unit1": "Higher = finer detail",
-            "unit2": "300 PPI standard"
-          }
-        },
-        {
-          "name": "Common confusion",
-          "values": {
-            "unit1": "Used for images (incorrectly)",
-            "unit2": "Correct term for images"
-          }
+          "label": "Common confusion",
+          "values": ["Used for images (incorrectly)", "Correct term for images"]
         }
       ]
     },

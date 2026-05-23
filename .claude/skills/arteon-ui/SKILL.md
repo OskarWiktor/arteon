@@ -56,9 +56,9 @@ interface FeatureProps {
 
 export function Feature({ title, items }: FeatureProps) {
   return (
-    <section className="py-16">
-      <h2 className="text-2xl font-bold">{title}</h2>
-      <ul className="mt-8 space-y-4">
+    <section className='py-16'>
+      <h2 className='text-2xl font-bold'>{title}</h2>
+      <ul className='mt-8 space-y-4'>
         {items.map((item, i) => (
           <li key={i}>{item}</li>
         ))}
@@ -81,7 +81,7 @@ interface CounterProps {
 
 export function Counter({ initialValue = 0 }: CounterProps) {
   const [count, setCount] = useState(initialValue);
-  return <button onClick={() => setCount((c) => c + 1)}>Count: {count}</button>;
+  return <button onClick={() => setCount(c => c + 1)}>Count: {count}</button>;
 }
 ```
 
@@ -174,8 +174,8 @@ import { Home } from 'lucide-react';
 
 ```tsx
 // Icon buttons MUST have aria-label
-<button aria-label="Zamknij menu" className="min-h-11 min-w-11 p-3">
-  <RiCloseLine className="h-6 w-6" />
+<button aria-label='Zamknij menu' className='min-h-11 min-w-11 p-3'>
+  <RiCloseLine className='h-6 w-6' />
 </button>
 ```
 
@@ -211,7 +211,7 @@ xl: 1280px  /* Large desktop */
 ### Sticky Header
 
 ```tsx
-<header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm">
+<header className='sticky top-0 z-50 bg-white/80 backdrop-blur-sm'>
   <nav>...</nav>
 </header>
 ```
@@ -219,8 +219,8 @@ xl: 1280px  /* Large desktop */
 ### Bottom Sheet
 
 ```tsx
-<div className="fixed inset-x-0 bottom-0 rounded-t-2xl bg-white p-4 shadow-lg md:hidden">
-  <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-gray-300" />
+<div className='fixed inset-x-0 bottom-0 rounded-t-2xl bg-white p-4 shadow-lg md:hidden'>
+  <div className='mx-auto mb-4 h-1 w-12 rounded-full bg-gray-300' />
   {/* Content */}
 </div>
 ```
@@ -228,9 +228,9 @@ xl: 1280px  /* Large desktop */
 ### Horizontal Scroll
 
 ```tsx
-<div className="snap-x snap-mandatory overflow-x-auto">
-  {items.map((item) => (
-    <div key={item.id} className="min-w-full snap-center">
+<div className='snap-x snap-mandatory overflow-x-auto'>
+  {items.map(item => (
+    <div key={item.id} className='min-w-full snap-center'>
       {item.content}
     </div>
   ))}
@@ -246,10 +246,10 @@ xl: 1280px  /* Large desktop */
 ```tsx
 function SubmitButton({ pending }: { pending: boolean }) {
   return (
-    <button disabled={pending} aria-busy={pending} className="btn">
+    <button disabled={pending} aria-busy={pending} className='btn'>
       {pending ? (
         <>
-          <Spinner className="mr-2 animate-spin" />
+          <Spinner className='mr-2 animate-spin' />
           Przetwarzanie...
         </>
       ) : (
@@ -265,11 +265,11 @@ function SubmitButton({ pending }: { pending: boolean }) {
 ```tsx
 function CardSkeleton() {
   return (
-    <div className="animate-pulse">
-      <div className="h-48 rounded-t-lg bg-neutral-200" />
-      <div className="space-y-3 p-4">
-        <div className="h-4 w-3/4 rounded bg-neutral-200" />
-        <div className="h-3 w-1/2 rounded bg-neutral-200" />
+    <div className='animate-pulse'>
+      <div className='h-48 rounded-t-lg bg-neutral-200' />
+      <div className='space-y-3 p-4'>
+        <div className='h-4 w-3/4 rounded bg-neutral-200' />
+        <div className='h-3 w-1/2 rounded bg-neutral-200' />
       </div>
     </div>
   );
@@ -309,12 +309,18 @@ export default function Loading() {
 function EmailInput({ error }: { error?: string }) {
   return (
     <div>
-      <label htmlFor="email" className="block text-sm font-medium">
+      <label htmlFor='email' className='block text-sm font-medium'>
         Email
       </label>
-      <input id="email" type="email" className={cn('input', error && 'border-red-500 focus:ring-red-500')} aria-invalid={!!error} aria-describedby={error ? 'email-error' : undefined} />
+      <input
+        id='email'
+        type='email'
+        className={cn('input', error && 'border-red-500 focus:ring-red-500')}
+        aria-invalid={!!error}
+        aria-describedby={error ? 'email-error' : undefined}
+      />
       {error && (
-        <p id="email-error" role="alert" className="mt-1 text-sm text-red-600">
+        <p id='email-error' role='alert' className='mt-1 text-sm text-red-600'>
           {error}
         </p>
       )}
@@ -331,10 +337,10 @@ function EmailInput({ error }: { error?: string }) {
 
 export default function Error({ error, reset }: { error: Error; reset: () => void }) {
   return (
-    <div className="py-20 text-center">
-      <h1 className="text-2xl font-bold">Coś poszło nie tak</h1>
-      <p className="mt-2 text-gray-600">{error.message}</p>
-      <button onClick={reset} className="btn mt-4">
+    <div className='py-20 text-center'>
+      <h1 className='text-2xl font-bold'>Coś poszło nie tak</h1>
+      <p className='mt-2 text-gray-600'>{error.message}</p>
+      <button onClick={reset} className='btn mt-4'>
         Spróbuj ponownie
       </button>
     </div>
@@ -347,9 +353,9 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
 ```tsx
 function EmptyState({ message }: { message: string }) {
   return (
-    <div className="py-12 text-center">
-      <RiFileSearchLine className="mx-auto h-12 w-12 text-gray-400" />
-      <p className="mt-4 text-gray-600">{message}</p>
+    <div className='py-12 text-center'>
+      <RiFileSearchLine className='mx-auto h-12 w-12 text-gray-400' />
+      <p className='mt-4 text-gray-600'>{message}</p>
     </div>
   );
 }
@@ -488,8 +494,15 @@ function Modal({ isOpen, onClose, children }) {
   }, [isOpen]);
 
   return (
-    <div ref={modalRef} role="dialog" aria-modal="true" aria-labelledby="modal-title" tabIndex={-1} onKeyDown={(e) => e.key === 'Escape' && onClose()}>
-      <h2 id="modal-title">Modal Title</h2>
+    <div
+      ref={modalRef}
+      role='dialog'
+      aria-modal='true'
+      aria-labelledby='modal-title'
+      tabIndex={-1}
+      onKeyDown={e => e.key === 'Escape' && onClose()}
+    >
+      <h2 id='modal-title'>Modal Title</h2>
       {children}
     </div>
   );
@@ -535,7 +548,7 @@ function Modal({ isOpen, onClose, children }) {
 
 ```tsx
 // ✅ Always add cursor-pointer to clickable elements
-<div onClick={handleClick} className="cursor-pointer hover:bg-gray-50">
+<div onClick={handleClick} className='cursor-pointer hover:bg-gray-50'>
   Card content
 </div>
 ```
@@ -558,7 +571,7 @@ function Modal({ isOpen, onClose, children }) {
 
 ```tsx
 // Smooth transitions (150-300ms)
-<button className="hover:bg-brand/10 transition-colors duration-200">Smooth</button>
+<button className='hover:bg-brand/10 transition-colors duration-200'>Smooth</button>
 ```
 
 ## Light Mode Contrast
@@ -596,12 +609,12 @@ toast.info('Przetwarzanie może potrwać kilka sekund');
 ## Copy to Clipboard
 
 ```tsx
-function CopyButton({ text }: { text: string }) {
+function ButtonCopy({ text }: { text: string }) {
   const { copied, copy } = useCopyToClipboard();
 
   return (
-    <button onClick={() => copy(text)} className="btn-icon">
-      {copied ? <RiCheckLine className="text-green-500" /> : <RiFileCopyLine />}
+    <button onClick={() => copy(text)} className='btn-icon'>
+      {copied ? <RiCheckLine className='text-green-500' /> : <RiFileCopyLine />}
     </button>
   );
 }

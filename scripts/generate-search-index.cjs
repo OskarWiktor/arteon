@@ -25,7 +25,7 @@ function generateSearchBlog() {
   }
 
   const articles = JSON.parse(fs.readFileSync(BLOG_INDEX, 'utf8'));
-  const searchItems = articles.map((a) => ({
+  const searchItems = articles.map(a => ({
     s: a.slug, // slug
     t: a.title, // title
     e: truncate(a.excerpt, 140), // excerpt (truncated)
@@ -45,7 +45,7 @@ function generateSearchProjects() {
 
   const data = JSON.parse(fs.readFileSync(PROJECTS_FILE, 'utf8'));
   const projects = data.projects || [];
-  const searchItems = projects.map((p) => ({
+  const searchItems = projects.map(p => ({
     s: p.slug, // slug
     t: p.title, // title
     d: truncate(p.short || p.excerpt || '', 140), // description (truncated)

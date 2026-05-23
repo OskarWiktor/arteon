@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Μετατρέψτε Markdown σε μορφή HTML. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.",
-      "featureList": ["Markdown to HTML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
+      "featureList": [
+        "Markdown to HTML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Markdown to HTML",
+        "Markdown to HTML",
+        "Free Markdown to HTML converter"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε Markdown σε HTML",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε Markdown σε HTML;",
-      "html": "<p class=\"text-mid mb-4\">Το MARKDOWN είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε HTML μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν online μετατροπέας μετατρέπει τα αρχεία MARKDOWN σε format HTML απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το MARKDOWN είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε HTML μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν μετατροπέας μετατρέπει τα αρχεία MARKDOWN σε format HTML απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Markdown to HTML conversion",
       "variant": "right"
@@ -128,64 +136,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Markdown vs HTML – σύγκριση μορφών",
-      "plans": [
+      "labelHeader": "Χαρακτηριστικό",
+      "cols": ["Markdown", "HTML"],
+      "rows": [
         {
-          "id": "markdown",
-          "name": "Markdown"
+          "label": "Ιεραρχικά δεδομένα",
+          "values": ["—", "✓"]
         },
         {
-          "id": "html",
-          "name": "HTML",
-          "highlighted": true
+          "label": "Δεδομένα πίνακα",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Επαλήθευση σχήματος",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Αναγνώσιμο από ανθρώπους",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Πρότυπο API",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Συμπαγής σύνταξη",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ιεραρχικά δεδομένα",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Δεδομένα πίνακα",
-          "values": {
-            "markdown": true,
-            "html": true
-          }
-        },
-        {
-          "name": "Επαλήθευση σχήματος",
-          "values": {
-            "markdown": false,
-            "html": true
-          }
-        },
-        {
-          "name": "Αναγνώσιμο από ανθρώπους",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        },
-        {
-          "name": "Πρότυπο API",
-          "values": {
-            "markdown": false,
-            "html": false
-          }
-        },
-        {
-          "name": "Συμπαγής σύνταξη",
-          "values": {
-            "markdown": true,
-            "html": false
-          }
-        }
-      ],
-      "featureLabel": "Χαρακτηριστικό"
+      ]
     },
     {
       "type": "gap",

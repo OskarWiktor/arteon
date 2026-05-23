@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Jämför DPI och PPI — tryck- vs skärmupplösning.",
-      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+      "featureList": [
+        "Dubbelriktad konvertering i realtid",
+        "Alla omvandlare på ett ställe",
+        "Kopiera resultat till urklipp",
+        "Lokal beräkning i webbläsaren"
+      ]
     },
     "howTo": {
       "name": "Så använder du omvandlaren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI vs PPI – jämförelse",
-      "featureLabel": "Egenskap",
-      "plans": [
+      "labelHeader": "Egenskap",
+      "cols": ["DPI", "PPI"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "DPI"
+          "label": "Gäller för",
+          "values": ["Skrivare", "Skärmar och bilder"]
         },
         {
-          "id": "unit2",
-          "name": "PPI",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Gäller för",
-          "values": {
-            "unit1": "Skrivare",
-            "unit2": "Skärmar och bilder"
-          }
+          "label": "Mäter",
+          "values": ["Fysiska bläckpunkter", "Digitala pixlar"]
         },
         {
-          "name": "Mäter",
-          "values": {
-            "unit1": "Fysiska bläckpunkter",
-            "unit2": "Digitala pixlar"
-          }
+          "label": "Typiska värden",
+          "values": ["600–4 800 DPI", "72–460 PPI"]
         },
         {
-          "name": "Typiska värden",
-          "values": {
-            "unit1": "600–4 800 DPI",
-            "unit2": "72–460 PPI"
-          }
+          "label": "Tryckkvalitet",
+          "values": ["Mer = finare", "300 PPI standard"]
         },
         {
-          "name": "Tryckkvalitet",
-          "values": {
-            "unit1": "Mer = finare",
-            "unit2": "300 PPI standard"
-          }
-        },
-        {
-          "name": "Förväxling",
-          "values": {
-            "unit1": "Felaktigt använt för bilder",
-            "unit2": "Korrekt begrepp"
-          }
+          "label": "Förväxling",
+          "values": ["Felaktigt använt för bilder", "Korrekt begrepp"]
         }
       ]
     },

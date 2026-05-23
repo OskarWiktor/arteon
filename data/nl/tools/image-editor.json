@@ -8,7 +8,7 @@
     "path": "/nl/tools/afbeeldingeneditor"
   },
   "hero": {
-    "title": "Wijzig formaat, snij bij en converteer uw afbeelding online",
+    "title": "Wijzig formaat, snij bij en converteer uw afbeelding",
     "description": "Wijzig het formaat, snij bij en converteer afbeeldingen voor Instagram, Facebook en LinkedIn. Kant-en-klare formaten, ronde avatars, export naar JPG, PNG en WebP. Lokale verwerking in de browser.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -36,7 +36,7 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Gratis online afbeeldingeneditor voor het wijzigen van formaat, bijsnijden en converteren. Voorinstellingen voor Instagram, Facebook en LinkedIn. Ronde avatars maken. Export naar JPG, PNG en WebP met kwaliteitscontrole. Lokale verwerking in de browser.",
+      "description": "Gratis afbeeldingeneditor voor het wijzigen van formaat, bijsnijden en converteren. Voorinstellingen voor Instagram, Facebook en LinkedIn. Ronde avatars maken. Export naar JPG, PNG en WebP met kwaliteitscontrole. Lokale verwerking in de browser.",
       "featureList": [
         "Afbeeldingen verkleinen naar elke afmeting",
         "Bijsnijden met interactieve gebiedsselectie",
@@ -389,7 +389,7 @@
       "description": "Heeft u een idee voor een nieuwe functie, een bug gevonden of wilt u een andere tool voorstellen die uw werk gemakkelijker zou maken? Schrijf ons – we reageren binnen 24 uur.",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/afbeeldingeneditor-nl.webp",
       "imageAlt": "Online afbeeldingeneditor – Arteon",
-      "defaultSubject": "Feedback: Online afbeeldingeneditor"
+      "defaultSubject": "Feedback: afbeeldingeneditor"
     },
     {
       "type": "gap",

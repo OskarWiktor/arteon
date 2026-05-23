@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "BMP naar JPG converter",
-      "alternateName": ["BMP naar JPG omzetten", "BMP naar JPG conversie", "Gratis BMP naar JPG converter"],
+      "alternateName": [
+        "BMP naar JPG omzetten",
+        "BMP naar JPG conversie",
+        "Gratis BMP naar JPG converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining. Alle verwerking gebeurt lokaal in je browser - bestanden verlaten je apparaat niet.",
-      "featureList": ["BMP naar JPG conversie", "JPG-kwaliteitscontrole", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
+      "featureList": [
+        "BMP naar JPG conversie",
+        "JPG-kwaliteitscontrole",
+        "Batchconversie",
+        "Lokale browserverwerking",
+        "Geen bestandsupload vereist"
+      ]
     },
     "howTo": {
       "name": "BMP naar JPG converteren",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs JPG – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["BMP", "JPG"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Lossy-compressie",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alle browsers", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["1/4/8/24/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "bmp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "bmp": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "bmp": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "bmp": "Alle browsers",
-            "jpg": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

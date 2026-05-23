@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convierte puntos tipográficos a píxeles. Para tipografía web e impresión.",
-      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+      "featureList": [
+        "Conversión bidireccional en tiempo real",
+        "Todos los convertidores en un solo lugar",
+        "Copiar resultado al portapapeles",
+        "Cálculo local en el navegador"
+      ]
     },
     "howTo": {
       "name": "Cómo usar el convertidor",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Puntos (pt) vs Píxeles (px)",
-      "featureLabel": "Característica",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["Puntos (pt)", "Píxeles (px)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Puntos (pt)"
+          "label": "Definición",
+          "values": ["1/72 pulgada", "1/96 pulgada (CSS)"]
         },
         {
-          "id": "unit2",
-          "name": "Píxeles (px)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Definición",
-          "values": {
-            "unit1": "1/72 pulgada",
-            "unit2": "1/96 pulgada (CSS)"
-          }
+          "label": "Usado en",
+          "values": ["Impresión, Word, PDF", "Web, CSS, pantallas"]
         },
         {
-          "name": "Usado en",
-          "values": {
-            "unit1": "Impresión, Word, PDF",
-            "unit2": "Web, CSS, pantallas"
-          }
+          "label": "12 pt =",
+          "values": ["12 pt", "16 px"]
         },
         {
-          "name": "12 pt =",
-          "values": {
-            "unit1": "12 pt",
-            "unit2": "16 px"
-          }
+          "label": "Texto corrido",
+          "values": ["10–12 pt", "14–18 px"]
         },
         {
-          "name": "Texto corrido",
-          "values": {
-            "unit1": "10–12 pt",
-            "unit2": "14–18 px"
-          }
-        },
-        {
-          "name": "Encabezado",
-          "values": {
-            "unit1": "18–24 pt",
-            "unit2": "24–32 px"
-          }
+          "label": "Encabezado",
+          "values": ["18–24 pt", "24–32 px"]
         }
       ]
     },

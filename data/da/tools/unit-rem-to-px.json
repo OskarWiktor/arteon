@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Konverter rem til pixels og omvendt. Nyttig til responsivt design. Ingen registrering krævet.",
-      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+      "featureList": [
+        "Tovejs-konvertering i realtid",
+        "Alle konvertere samlet ét sted",
+        "Kopier resultat til udklipsholder",
+        "Lokal beregning i browseren"
+      ]
     },
     "howTo": {
       "name": "Sådan bruger du konverteren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "rem vs em vs px",
-      "featureLabel": "Egenskab",
-      "plans": [
+      "labelHeader": "Egenskab",
+      "cols": ["rem", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "rem"
+          "label": "Reference",
+          "values": ["Rodskrift", "Fast pixel"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Reference",
-          "values": {
-            "unit1": "Rodskrift",
-            "unit2": "Fast pixel"
-          }
+          "label": "Kaskaderer",
+          "values": ["Nej", "Nej"]
         },
         {
-          "name": "Kaskaderer",
-          "values": {
-            "unit1": "Nej",
-            "unit2": "Nej"
-          }
+          "label": "Responsiv",
+          "values": ["Ja", "Nej"]
         },
         {
-          "name": "Responsiv",
-          "values": {
-            "unit1": "Ja",
-            "unit2": "Nej"
-          }
+          "label": "Tilgængelighed",
+          "values": ["Respekterer indstillinger", "Fast størrelse"]
         },
         {
-          "name": "Tilgængelighed",
-          "values": {
-            "unit1": "Respekterer indstillinger",
-            "unit2": "Fast størrelse"
-          }
-        },
-        {
-          "name": "Forudsigelighed",
-          "values": {
-            "unit1": "Altid konsistent",
-            "unit2": "Altid konstant"
-          }
+          "label": "Forudsigelighed",
+          "values": ["Altid konsistent", "Altid konstant"]
         }
       ]
     },

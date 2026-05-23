@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "YAML vs JSON – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["YAML", "JSON"],
+      "rows": [
         {
-          "id": "yaml",
-          "name": "YAML"
+          "label": "Nästlade data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabelldata",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Schemavalidering",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Läsbart för människor",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standard",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Kompakt syntax",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Nästlade data",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabelldata",
-          "values": {
-            "yaml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Schemavalidering",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Läsbart för människor",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-standard",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompakt syntax",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",
@@ -193,8 +165,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hur fungerar konvertering fr\u00e5n YAML till JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML anv\u00e4nder indragning och minimal syntax f\u00f6r att representera strukturerad data, medan JSON anv\u00e4nder klammerparenteser, hakparenteser och explicita citattecken. Konverteraren analyserar YAML-strukturen och producerar motsvarande JSON med korrekt formatering.</p><p class=\"text-mid mb-4\">YAML-indragning blir JSON-n\u00e4stling, element med bindestreck blir JSON-arrayelement, och YAML nyckel-v\u00e4rde-par blir JSON-objektegenskaper. Datatyper bevaras: str\u00e4ngar, tal, booleska, null, arrayer och objekt \u00f6verf\u00f6rs direkt.</p><p class=\"text-mid\">Konvertering fr\u00e5n YAML till JSON \u00e4r anv\u00e4ndbar n\u00e4r konfigurationsdata beh\u00f6ver integreras i webbapplikationer, REST-API:er eller system som f\u00f6rv\u00e4ntar JSON-indata. Konverteringen sker helt i din webbl\u00e4sare.</p>"
+      "title": "Hur fungerar konvertering från YAML till JSON?",
+      "html": "<p class=\"text-mid mb-4\">YAML använder indragning och minimal syntax för att representera strukturerad data, medan JSON använder klammerparenteser, hakparenteser och explicita citattecken. Konverteraren analyserar YAML-strukturen och producerar motsvarande JSON med korrekt formatering.</p><p class=\"text-mid mb-4\">YAML-indragning blir JSON-nästling, element med bindestreck blir JSON-arrayelement, och YAML nyckel-värde-par blir JSON-objektegenskaper. Datatyper bevaras: strängar, tal, booleska, null, arrayer och objekt överförs direkt.</p><p class=\"text-mid\">Konvertering från YAML till JSON är användbar när konfigurationsdata behöver integreras i webbapplikationer, REST-API:er eller system som förväntar JSON-indata. Konverteringen sker helt i din webbläsare.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +174,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips f\u00f6r konvertering fr\u00e5n YAML till JSON",
-      "description": "N\u00e5gra tips f\u00f6r att undvika vanliga problem:",
+      "title": "Tips för konvertering från YAML till JSON",
+      "description": "Några tips för att undvika vanliga problem:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "Indragningskonsekvens",
-          "description": "YAML \u00e4r k\u00e4nsligt f\u00f6r indragning. Om din fil blandar tabbar och mellanslag kan tolkningen misslyckas. Konverteraren rapporterar uppt\u00e4ckta indragningsfel."
+          "description": "YAML är känsligt för indragning. Om din fil blandar tabbar och mellanslag kan tolkningen misslyckas. Konverteraren rapporterar upptäckta indragningsfel."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Kommentarer tas bort",
-          "description": "JSON st\u00f6der inte kommentarer. Alla #-kommentarer fr\u00e5n din YAML-fil visas inte i JSON-utdata. Bevara din ursprungliga YAML-fil."
+          "description": "JSON stöder inte kommentarer. Alla #-kommentarer från din YAML-fil visas inte i JSON-utdata. Bevara din ursprungliga YAML-fil."
         },
         {
           "icon": "RiCodeLine",
           "title": "Flerdokument-YAML",
-          "description": "YAML-filer kan inneh\u00e5lla flera dokument separerade med ---. Konverteraren bearbetar som standard det f\u00f6rsta dokumentet."
+          "description": "YAML-filer kan innehålla flera dokument separerade med ---. Konverteraren bearbetar som standard det första dokumentet."
         },
         {
           "icon": "RiFileCodeLine",
           "title": "Ankare och alias",
-          "description": "YAML-ankare (&) och alias (*) l\u00f6ses upp under konverteringen. JSON-utdata inneh\u00e5ller de expanderade v\u00e4rdena, inte YAML-referenserna."
+          "description": "YAML-ankare (&) och alias (*) löses upp under konverteringen. JSON-utdata innehåller de expanderade värdena, inte YAML-referenserna."
         }
       ]
     },

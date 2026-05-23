@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter Mbps na MB/s – prędkość internetu",
-      "alternateName": ["Przelicznik Mbps MB/s", "Kalkulator prędkości internetu", "Megabity na megabajty"],
+      "alternateName": [
+        "Przelicznik Mbps MB/s",
+        "Kalkulator prędkości internetu",
+        "Megabity na megabajty"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz Mbps na MB/s i sprawdź realną prędkość pobierania plików. Porównaj oferty Orange, T-Mobile, Play i UPC. Działa w przeglądarce, bez rejestracji.",
@@ -185,55 +189,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Mbps (megabity/s) vs MB/s (megabajty/s) – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
+      "labelHeader": "Cecha",
+      "cols": ["Mbps (megabity/s)", "MB/s (megabajty/s)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Mbps (megabity/s)"
+          "label": "Jednostka",
+          "values": ["Megabit (Mb)", "Megabajt (MB)"]
         },
         {
-          "id": "unit2",
-          "name": "MB/s (megabajty/s)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Jednostka",
-          "values": {
-            "unit1": "Megabit (Mb)",
-            "unit2": "Megabajt (MB)"
-          }
+          "label": "Relacja",
+          "values": ["1 Mbps", "0,125 MB/s"]
         },
         {
-          "name": "Relacja",
-          "values": {
-            "unit1": "1 Mbps",
-            "unit2": "0,125 MB/s"
-          }
+          "label": "Użycie",
+          "values": ["Operatorzy, testy", "Menedżery pobierania"]
         },
         {
-          "name": "Użycie",
-          "values": {
-            "unit1": "Operatorzy, testy",
-            "unit2": "Menedżery pobierania"
-          }
+          "label": "100 Mbps =",
+          "values": ["100 Mbps", "12,5 MB/s"]
         },
         {
-          "name": "100 Mbps =",
-          "values": {
-            "unit1": "100 Mbps",
-            "unit2": "12,5 MB/s"
-          }
-        },
-        {
-          "name": "1 Gbps =",
-          "values": {
-            "unit1": "1 000 Mbps",
-            "unit2": "125 MB/s"
-          }
+          "label": "1 Gbps =",
+          "values": ["1 000 Mbps", "125 MB/s"]
         }
       ]
     },

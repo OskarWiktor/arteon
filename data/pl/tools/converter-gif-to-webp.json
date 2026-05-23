@@ -2,13 +2,13 @@
   "toolKey": "gifToWebp",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter GIF na WebP – zamień animację na lekki obraz",
-    "description": "Zamień pierwszą klatkę GIF na lekki WebP w przeglądarce. Bez limitu plików, bez rejestracji. Pliki nie są wysyłane na serwer.",
+    "title": "Darmowy konwerter formatu GIF na WebP bez limitu plików i rejestracji",
+    "description": "Zamień pierwszą klatkę GIF na lekki WebP w przeglądarce. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-gif-na-webp"
   },
   "hero": {
-    "title": "Konwerter GIF na WebP – lekki obraz z animacji",
+    "title": "Darmowy konwerter formatu GIF na WebP – lekki obraz z animacji",
     "description": "Wyeksportuj pierwszą klatkę GIF jako lekki WebP. Ustaw jakość i pobierz wynik. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,15 +25,20 @@
   "schemas": {
     "software": {
       "name": "Konwerter GIF na WebP – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana GIF na WebP online", "Konwersja GIF do WebP", "GIF to WebP converter"],
+      "alternateName": ["Zamiana GIF na WebP", "Konwersja GIF do WebP", "GIF to WebP converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter GIF na WebP online. Wyeksportuj pierwszą klatkę animacji GIF jako lekki WebP - pliki nie są wysyłane na serwer.",
-      "featureList": ["Eksport pierwszej klatki GIF do WebP", "Regulacja poziomu jakości", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter GIF na WebP. Wyeksportuj pierwszą klatkę animacji GIF jako lekki WebP - pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Eksport pierwszej klatki GIF do WebP",
+        "Regulacja poziomu jakości",
+        "Konwersja wielu plików jednocześnie",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić GIF na WebP online",
-      "description": "Instrukcja konwersji plików GIF na format WebP za pomocą darmowego narzędzia online.",
+      "name": "Jak zamienić GIF na WebP",
+      "description": "Instrukcja konwersji plików GIF na format WebP za pomocą darmowego narzędzia.",
       "steps": [
         {
           "name": "Dodaj pliki GIF",
@@ -156,78 +161,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs WebP – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["GIF", "WebP"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Kompresja stratna",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8-bit (256)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "gif": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "gif": "Wszystkie przeglądarki",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "gif": "8-bit (256)",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "gif": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

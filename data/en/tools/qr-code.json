@@ -246,68 +246,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG - which format to choose for printing?",
-      "plans": [
+      "cols": ["PNG (raster)", "SVG (vector)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (raster)"
+          "label": "Websites and social media",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (vector)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Websites and social media",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Flyers and business cards",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Flyers and business cards",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Posters and banners (large format)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Posters and banners (large format)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Scaling without quality loss",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Scaling without quality loss",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Editing in a graphics program",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Editing in a graphics program",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Smaller file size",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Smaller file size",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Presentations",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Presentations",
+          "values": ["✓", "✓"]
         }
       ]
     },
@@ -414,7 +383,7 @@
     {
       "type": "sectionInfo",
       "title": "QR codes in marketing - tracking campaign performance",
-      "html": "<p class=\"text-mid mb-4\">Marketers use QR codes to bridge offline and online campaigns. A QR code on a flyer, poster, or product packaging directs customers to a landing page, promotional offer, or app download. By encoding URLs with UTM parameters (source, medium, campaign name), businesses can track exactly how many scans each printed material generates in Google Analytics or similar tools.</p><p class=\"text-mid mb-4\">Creating a unique QR code for each campaign channel makes it possible to compare performance. A code on a trade show banner, a code in a magazine ad, and a code on product packaging each get a different UTM tag. This reveals which offline channel drives the most website visits, sign-ups, or purchases.</p><p class=\"text-mid\">Keep the encoded URL as short as possible. Longer URLs produce denser QR codes with smaller modules, which can be harder to scan at a distance or on small print. Use a URL shortener or redirect through a clean path on your domain to keep the code compact and easy to read.</p>"
+      "html": "<p class=\"text-mid mb-4\">Marketers use QR codes to bridge offline and campaigns. A QR code on a flyer, poster, or product packaging directs customers to a landing page, promotional offer, or app download. By encoding URLs with UTM parameters (source, medium, campaign name), businesses can track exactly how many scans each printed material generates in Google Analytics or similar tools.</p><p class=\"text-mid mb-4\">Creating a unique QR code for each campaign channel makes it possible to compare performance. A code on a trade show banner, a code in a magazine ad, and a code on product packaging each get a different UTM tag. This reveals which offline channel drives the most website visits, sign-ups, or purchases.</p><p class=\"text-mid\">Keep the encoded URL as short as possible. Longer URLs produce denser QR codes with smaller modules, which can be harder to scan at a distance or on small print. Use a URL shortener or redirect through a clean path on your domain to keep the code compact and easy to read.</p>"
     },
     {
       "type": "gap",

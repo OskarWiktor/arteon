@@ -8,7 +8,7 @@
     "path": "/pt/ferramentas/editor-de-imagens-online"
   },
   "hero": {
-    "title": "Redimensione, recorte e converta imagens online – editor gratuito",
+    "title": "Redimensione, recorte e converta imagens",
     "description": "Recorte e redimensione as suas imagens para redes sociais, sites e materiais impressos. Modelos prontos para Instagram, Facebook e LinkedIn – ou introduza as suas próprias dimensões.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -37,7 +37,7 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Editor de imagens online gratuito para redimensionar, cortar e converter formatos. Presets para Instagram, Facebook e LinkedIn. Criação de avatares circulares. Exportação para JPG, PNG e WebP com controlo de qualidade. Processamento local no navegador.",
+      "description": "Editor de imagensnsionar, cortar e converter formatos. Presets para Instagram, Facebook e LinkedIn. Criação de avatares circulares. Exportação para JPG, PNG e WebP com controlo de qualidade. Processamento local no navegador.",
       "featureList": [
         "Redimensionar imagens para qualquer dimensão",
         "Corte com seleção de área interativa",
@@ -88,7 +88,7 @@
       "title": "Recorte as suas imagens para cada plataforma",
       "html": "<p class=\"text-mid\">Cada plataforma tem os seus próprios requisitos de imagem – o Instagram favorece imagens quadradas ou verticais, o Facebook tem dimensões de capa específicas, o LinkedIn espera tamanhos de banner precisos. O editor oferece modelos prontos para todos os formatos comuns e permite também introduzir dimensões personalizadas.</p><p class=\"text-mid mt-3\">A ferramenta funciona inteiramente no seu navegador – nenhuma imagem é enviada para um servidor. Pode ajustar o zoom e a posição do recorte e transferir o resultado em três formatos: PNG (sem perdas, com transparência), JPG (ficheiro mais leve, sem transparência) e WebP (compressão ótima).</p>",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagens-online-pt.webp",
-      "imageAlt": "Editor de imagens online – Arteon"
+      "imageAlt": "Editor de imagens"
     },
     {
       "type": "gap",
@@ -364,8 +364,8 @@
       "title": "Ajude-nos a melhorar nossas ferramentas",
       "description": "Tem uma ideia para uma nova funcionalidade, encontrou um bug ou quer sugerir outra ferramenta que facilitaria seu trabalho? Escreva-nos – respondemos em 24 horas.",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagens-online-pt.webp",
-      "imageAlt": "Editor de imagens online – Arteon",
-      "defaultSubject": "Feedback: Editor de imagens online"
+      "imageAlt": "Editor de imagens",
+      "defaultSubject": "Feedback: Editor de imagens"
     },
     {
       "type": "gap",

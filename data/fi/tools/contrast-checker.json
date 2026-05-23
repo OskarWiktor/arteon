@@ -177,82 +177,45 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Mitä tasot AA ja AAA tarkoittavat WCAG-standardissa?",
-      "plans": [
+      "cols": ["Taso AA (vähimmäistaso)", "Taso AAA (parannettu)"],
+      "rows": [
         {
-          "id": "aa",
-          "name": "Taso AA (vähimmäistaso)",
-          "highlighted": true
+          "label": "Normaali teksti – min. 4.5:1",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "aaa",
-          "name": "Taso AAA (parannettu)"
-        }
-      ],
-      "features": [
-        {
-          "name": "Normaali teksti – min. 4.5:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Normaali teksti – min. 7:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Normaali teksti – min. 7:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Suuri teksti / lihavoitu – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Suuri teksti / lihavoitu – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Suuri teksti / lihavoitu – min. 4.5:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Suuri teksti / lihavoitu – min. 4.5:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Kuvakkeet ja käyttöliittymäelementit – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Kuvakkeet ja käyttöliittymäelementit – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Lakisääteinen vaatimus (EU-direktiivi)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Lakisääteinen vaatimus (EU-direktiivi)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Vaadittu US ADA / Section 508 mukaan",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Vaadittu US ADA / Section 508 mukaan",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Vaadittu UK Equality Act 2010 mukaan",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Vaadittu UK Equality Act 2010 mukaan",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
-        },
-        {
-          "name": "Suositellaan pääsisällölle",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Suositellaan pääsisällölle",
+          "values": ["✓", "✓"]
         }
       ]
     },

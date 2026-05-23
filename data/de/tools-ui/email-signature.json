@@ -153,7 +153,7 @@
     "helper": "Technische Vorschau - kompatibel mit Gmail, Outlook und den meisten E-Mail-Clients.",
     "copySuccess": "Kopiert - in Gmail einfügen",
     "copyError": "Kopierfehler",
-    "copyButton": "Signatur kopieren (Gmail / Outlook)",
+    "ButtonCopy": "Signatur kopieren (Gmail / Outlook)",
     "copyRawButton": "HTML-Code kopieren",
     "copyRawSuccess": "HTML-Code kopiert",
     "downloadButton": "Als HTML herunterladen",

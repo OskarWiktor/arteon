@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "YAML vs JSON – muotovertailu",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["YAML", "JSON"],
+      "rows": [
         {
-          "id": "yaml",
-          "name": "YAML"
+          "label": "Sisäkkäinen data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Taulukkodata",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Skeemavalidointi",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Ihmisen luettavissa",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-standardi",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Kompakti syntaksi",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Sisäkkäinen data",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Taulukkodata",
-          "values": {
-            "yaml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Skeemavalidointi",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Ihmisen luettavissa",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-standardi",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompakti syntaksi",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Ominaisuus"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten YAML:n muuntaminen JSON:ksi toimii?",
-      "html": "<p class=\"text-mid mb-4\">YAML k\u00e4ytt\u00e4\u00e4 sis\u00e4nnyst\u00e4 ja minimaalista syntaksia rakenteisten tietojen esitt\u00e4miseen, kun taas JSON k\u00e4ytt\u00e4\u00e4 aaltosulkeita, hakasulkeita ja eksplisiittisi\u00e4 lainausmerkkej\u00e4. Muunnin j\u00e4sent\u00e4\u00e4 YAML-rakenteen ja tuottaa oikein muotoillun vastaavan JSON:n.</p><p class=\"text-mid mb-4\">YAML-sis\u00e4nnys muuttuu JSON-sis\u00e4kk\u00e4isyydeksi, yhdysviivaelementit muuttuvat JSON-taulukkoelementeiksi ja YAML-avain-arvo-parit muuttuvat JSON-objektiominaisuuksiksi. Tietotyypit s\u00e4ilyv\u00e4t: merkkijonot, numerot, totuusarvot, null, taulukot ja objektit siirtyv\u00e4t suoraan.</p><p class=\"text-mid\">YAML:sta JSON:ksi muuntaminen on hy\u00f6dyllist\u00e4, kun asetustiedot pit\u00e4\u00e4 integroida verkkosovelluksiin, REST API:ihin tai j\u00e4rjestelmiin, jotka odottavat JSON-sy\u00f6tett\u00e4. Kaikki muunnos tapahtuu paikallisesti selaimessasi.</p>"
+      "html": "<p class=\"text-mid mb-4\">YAML käyttää sisännystä ja minimaalista syntaksia rakenteisten tietojen esittämiseen, kun taas JSON käyttää aaltosulkeita, hakasulkeita ja eksplisiittisiä lainausmerkkejä. Muunnin jäsentää YAML-rakenteen ja tuottaa oikein muotoillun vastaavan JSON:n.</p><p class=\"text-mid mb-4\">YAML-sisännys muuttuu JSON-sisäkkäisyydeksi, yhdysviivaelementit muuttuvat JSON-taulukkoelementeiksi ja YAML-avain-arvo-parit muuttuvat JSON-objektiominaisuuksiksi. Tietotyypit säilyvät: merkkijonot, numerot, totuusarvot, null, taulukot ja objektit siirtyvät suoraan.</p><p class=\"text-mid\">YAML:sta JSON:ksi muuntaminen on hyödyllistä, kun asetustiedot pitää integroida verkkosovelluksiin, REST API:ihin tai järjestelmiin, jotka odottavat JSON-syötettä. Kaikki muunnos tapahtuu paikallisesti selaimessasi.</p>"
     },
     {
       "type": "gap",
@@ -255,15 +227,15 @@
         },
         {
           "question": "Onko YAML:n muuntaminen JSON:ksi turvallista?",
-          "answer": "Kyll\u00e4. Kaikki muunnos tapahtuu paikallisesti selaimessasi. Mit\u00e4\u00e4n tietoja ei l\u00e4hetet\u00e4 millek\u00e4\u00e4n palvelimelle."
+          "answer": "Kyllä. Kaikki muunnos tapahtuu paikallisesti selaimessasi. Mitään tietoja ei lähetetä millekään palvelimelle."
         },
         {
-          "question": "S\u00e4ilyv\u00e4tk\u00f6 YAML-kommentit?",
-          "answer": "Eiv\u00e4t. JSON ei tue kommentteja, joten kaikki #-kommentit YAML-tiedostosta poistetaan muunnoksen aikana. S\u00e4ilyt\u00e4 alkuper\u00e4inen YAML-tiedosto."
+          "question": "Säilyvätkö YAML-kommentit?",
+          "answer": "Eivät. JSON ei tue kommentteja, joten kaikki #-kommentit YAML-tiedostosta poistetaan muunnoksen aikana. Säilytä alkuperäinen YAML-tiedosto."
         },
         {
-          "question": "Onko muunnos h\u00e4vi\u00f6t\u00f6n?",
-          "answer": "Kyll\u00e4, tietojen osalta. Kaikki merkkijonot, numerot, totuusarvot, null-arvot, taulukot ja objektit s\u00e4ilyv\u00e4t tarkasti. Vain YAML-spesifiset ominaisuudet kuten kommentit ja ankkurit eiv\u00e4t siirry JSON:iin."
+          "question": "Onko muunnos häviötön?",
+          "answer": "Kyllä, tietojen osalta. Kaikki merkkijonot, numerot, totuusarvot, null-arvot, taulukot ja objektit säilyvät tarkasti. Vain YAML-spesifiset ominaisuudet kuten kommentit ja ankkurit eivät siirry JSON:iin."
         }
       ]
     },

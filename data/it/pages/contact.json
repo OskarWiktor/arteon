@@ -1,7 +1,7 @@
 {
   "slug": "contatto",
   "metadata": {
-    "title": "Contatto – Arteon strumenti online gratuiti | Supporto e",
+    "title": "Contatto – Arteon strumenti gratuiti | Supporto e",
     "description": "Contatta il team Arteon. Segnala un bug, suggerisci un nuovo strumento o fai una domanda sui nostri strumenti gratuiti per immagini, SEO, colori e codici QR."
   },
   "hero": {
@@ -22,7 +22,7 @@
   },
   "cta": {
     "title": "Torna agli strumenti",
-    "description": "Strumenti online gratuiti per lavorare con immagini, testo e colori",
+    "description": "Strumenti gratuiti per lavorare con immagini, testo e colori",
     "btnOne": "Strumenti"
   }
 }

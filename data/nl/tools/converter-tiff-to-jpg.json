@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer TIFF-bestanden naar compact JPG. Ideaal voor scans en fotoarchieven. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
-      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
-      "alternateName": ["TIFF naar JPG omzetten", "TIFF naar JPG conversie", "Gratis TIFF naar JPG converter"]
+      "featureList": [
+        "TIFF to JPG conversion",
+        "Adjustable quality (60-95%)",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "TIFF naar JPG omzetten",
+        "TIFF naar JPG conversie",
+        "Gratis TIFF naar JPG converter"
+      ]
     },
     "howTo": {
       "name": "TIFF to JPG",
@@ -158,85 +167,51 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-naar-JPG-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">TIFF-bestanden uit professionele fotografie of scanners zijn vaak 20–100 MB groot. De conversie naar JPG levert compacte bestanden voor web, e-mail en social media – met een typische verkleining van meer dan 95%.</p><p class=\"text-mid mb-4\">Transparantie en laaginformatie gaan bij de conversie verloren. Voor pure fotografie is dat geen probleem. Bij kwaliteitsniveau 85–90% blijft de visuele kwaliteit uitstekend, terwijl de bestandsgrootte tot enkele honderden kilobytes daalt.</p><p class=\"text-mid\">Fotografen en scannergebruikers in Nederland kunnen hun TIFF-bestanden lokaal en AVG-conform omzetten naar verzendklare JPG's – ideaal voor klantpresentaties en online galerijen.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF-bestanden uit professionele fotografie of scanners zijn vaak 20–100 MB groot. De conversie naar JPG levert compacte bestanden voor web, e-mail en social media – met een typische verkleining van meer dan 95%.</p><p class=\"text-mid mb-4\">Transparantie en laaginformatie gaan bij de conversie verloren. Voor pure fotografie is dat geen probleem. Bij kwaliteitsniveau 85–90% blijft de visuele kwaliteit uitstekend, terwijl de bestandsgrootte tot enkele honderden kilobytes daalt.</p><p class=\"text-mid\">Fotografen en scannergebruikers in Nederland kunnen hun TIFF-bestanden lokaal en AVG-conform omzetten naar verzendklare JPG's – ideaal voor klantpresentaties en galerijen.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs JPG – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["TIFF", "JPG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Lossy-compressie",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alleen Safari", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["8/16/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "tiff": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "tiff": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "tiff": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "tiff": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "tiff": "Alleen Safari",
-            "jpg": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "tiff": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "tiff": true,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

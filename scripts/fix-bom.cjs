@@ -5,7 +5,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const FILES_TO_CHECK = ['node_modules/next/dist/compiled/anser/package.json', 'node_modules/sharp/package.json'];
+const FILES_TO_CHECK = [
+  'node_modules/next/dist/compiled/anser/package.json',
+  'node_modules/sharp/package.json',
+];
 
 for (const rel of FILES_TO_CHECK) {
   const p = path.join(process.cwd(), rel);

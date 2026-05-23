@@ -1,5 +1,10 @@
 import { useState, useEffect } from 'react';
-import { searchItems, groupSearchResults, type SearchItem, type SearchCategory } from '@/lib/search/searchIndex';
+import {
+  searchItems,
+  groupSearchResults,
+  type SearchItem,
+  type SearchCategory,
+} from '@/lib/search/searchIndex';
 import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
 
 import type { Locale } from '@/types/locale';
@@ -47,8 +52,10 @@ export function useSearch(options: UseSearchOptions): UseSearchReturn {
     { enabled: Boolean(query.trim()) },
   );
 
-  const results = (() => { if (!debouncedQuery.trim()) return [];
-    return searchItems(debouncedQuery, locale, limit); })();
+  const results = (() => {
+    if (!debouncedQuery.trim()) return [];
+    return searchItems(debouncedQuery, locale, limit);
+  })();
 
   const groupedResults = groupSearchResults(results);
 

@@ -2,13 +2,13 @@
   "toolKey": "svgToGif",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter SVG na GIF - SVG GIF",
-    "description": "Zamień grafikę wektorową SVG na rastrowy GIF. Uniwersalny format dla prostych grafik. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
+    "title": "Darmowy konwerter formatu SVG na GIF bez limitu plików i rejestracji",
+    "description": "Zamień grafikę wektorową SVG na rastrowy GIF. Uniwersalny format dla prostych grafik. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-svg-na-gif"
   },
   "hero": {
-    "title": "Konwerter SVG na GIF",
+    "title": "Darmowy konwerter formatu SVG na GIF",
     "description": "Zamień grafikę wektorową SVG na rastrowy GIF. Uniwersalny format dla prostych grafik. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień grafikę wektorową SVG na rastrowy GIF. Uniwersalny format dla prostych grafik. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
-      "featureList": ["Konwersja do GIF", "Kwantyzacja do 256 kolorow", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
-      "alternateName": ["Zamiana SVG na GIF", "Konwersja SVG do GIF", "Darmowy konwerter SVG na GIF"]
+      "featureList": [
+        "Konwersja do GIF",
+        "Kwantyzacja do 256 kolorow",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne w przeglądarce"
+      ],
+      "alternateName": [
+        "Zamiana SVG na GIF",
+        "Konwersja SVG do GIF",
+        "Darmowy konwerter SVG na GIF"
+      ]
     },
     "howTo": {
       "name": "SVG to GIF",
@@ -168,78 +177,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs GIF – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["SVG", "GIF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Kompresja stratna",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["N/A (wektor)", "8-bit (256)"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "svg": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "svg": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "svg": "Wszystkie przeglądarki",
-            "gif": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "svg": "N/A (wektor)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "svg": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "svg": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

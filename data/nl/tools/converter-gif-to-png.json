@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "GIF naar PNG converter",
-      "alternateName": ["GIF naar PNG omzetten", "GIF naar PNG conversie", "Gratis GIF naar PNG converter"],
+      "alternateName": [
+        "GIF naar PNG omzetten",
+        "GIF naar PNG conversie",
+        "Gratis GIF naar PNG converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exporteer het eerste frame van een GIF als statisch PNG. Zonder kwaliteitsverlies. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
-      "featureList": ["GIF naar PNG conversie", "Verliesvrije PNG-uitvoer", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
+      "featureList": [
+        "GIF naar PNG conversie",
+        "Verliesvrije PNG-uitvoer",
+        "Batchconversie",
+        "Lokale browserverwerking",
+        "Geen bestandsupload vereist"
+      ]
     },
     "howTo": {
       "name": "GIF naar PNG converteren",
@@ -165,78 +175,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs PNG – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["GIF", "PNG"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Lossy-compressie",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alle browsers", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["8-bit (256)", "8/16-bit"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "gif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "gif": "Alle browsers",
-            "png": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "gif": "8-bit (256)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

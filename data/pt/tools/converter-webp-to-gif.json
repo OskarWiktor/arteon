@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta imagens WebP para formato GIF para maxima compatibilidade. Todo o processamento ocorre no navegador - os ficheiros não saem do dispositivo.",
-      "featureList": ["Conversão para GIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
-      "alternateName": ["Converter WEBP para GIF", "Conversão de WEBP para GIF", "Conversor WEBP para GIF grátis"]
+      "featureList": [
+        "Conversão para GIF",
+        "Ajuste de qualidade (60-95%)",
+        "Conversão em lote",
+        "Processamento local no navegador"
+      ],
+      "alternateName": [
+        "Converter WEBP para GIF",
+        "Conversão de WEBP para GIF",
+        "Conversor WEBP para GIF grátis"
+      ]
     },
     "howTo": {
       "name": "Como converter WebP para GIF",
@@ -166,85 +175,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de WebP para GIF na prática",
-      "html": "<p class=\"text-mid mb-4\">O formato GIF é por vezes necessário – sistemas antigos, ferramentas de newsletter ou plataformas que só aceitam GIF. WebP para GIF é a solução mais rápida.</p><p class=\"text-mid mb-4\">O GIF suporta apenas 256 cores. Imagens fotorrealistas perdem qualidade. A conversão é mais adequada para gráficos simples, ícones ou logótipos.</p><p class=\"text-mid\">O processamento local oferece uma alternativa rápida e segura aos serviços de conversão online.</p>"
+      "html": "<p class=\"text-mid mb-4\">O formato GIF é por vezes necessário – sistemas antigos, ferramentas de newsletter ou plataformas que só aceitam GIF. WebP para GIF é a solução mais rápida.</p><p class=\"text-mid mb-4\">O GIF suporta apenas 256 cores. Imagens fotorrealistas perdem qualidade. A conversão é mais adequada para gráficos simples, ícones ou logótipos.</p><p class=\"text-mid\">O processamento local oferece uma alternativa rápida e segura aos serviços de conversão</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "WebP vs GIF – comparação de formatos",
-      "plans": [
+      "labelHeader": "Funcionalidade",
+      "cols": ["WebP", "GIF"],
+      "rows": [
         {
-          "id": "webp",
-          "name": "WebP"
+          "label": "Compressão com perda",
+          "values": ["✓", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Compressão sem perda",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparência (canal alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suporte a animação",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Suporte em navegadores",
+          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Todos os navegadores"]
+        },
+        {
+          "label": "Profundidade de cor",
+          "values": ["8-bit (16.7M)", "8-bit (256)"]
+        },
+        {
+          "label": "Tamanho de ficheiro compacto",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadados (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressão com perda",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Compressão sem perda",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Transparência (canal alfa)",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Suporte a animação",
-          "values": {
-            "webp": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Suporte em navegadores",
-          "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "gif": "Todos os navegadores"
-          }
-        },
-        {
-          "name": "Profundidade de cor",
-          "values": {
-            "webp": "8-bit (16.7M)",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Tamanho de ficheiro compacto",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadados (EXIF)",
-          "values": {
-            "webp": true,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funcionalidade"
+      ]
     },
     {
       "type": "gap",

@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertiți numere zecimale în hexazecimale și invers.",
-      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+      "featureList": [
+        "Conversie bidirecțională în timp real",
+        "Toate convertoarele într-un singur loc",
+        "Copierea rezultatului în clipboard",
+        "Calcul local în browser"
+      ]
     },
     "howTo": {
       "name": "Cum să utilizați convertorul",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimal vs Hexadecimal",
-      "featureLabel": "Proprietate",
-      "plans": [
+      "labelHeader": "Proprietate",
+      "cols": ["Decimal (base-10)", "Hexadecimal (base-16)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimal (base-10)"
+          "label": "Cifre",
+          "values": ["0–9", "0–9, A–F"]
         },
         {
-          "id": "unit2",
-          "name": "Hexadecimal (base-16)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Cifre",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–9, A–F"
-          }
+          "label": "Exemplu: 255",
+          "values": ["255", "FF"]
         },
         {
-          "name": "Exemplu: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "FF"
-          }
+          "label": "Exemplu: 1000",
+          "values": ["1000", "3E8"]
         },
         {
-          "name": "Exemplu: 1000",
-          "values": {
-            "unit1": "1000",
-            "unit2": "3E8"
-          }
+          "label": "Utilizare",
+          "values": ["Matematică zilnică", "Culori, adrese, date"]
         },
         {
-          "name": "Utilizare",
-          "values": {
-            "unit1": "Matematică zilnică",
-            "unit2": "Culori, adrese, date"
-          }
-        },
-        {
-          "name": "Compactitate",
-          "values": {
-            "unit1": "Standard",
-            "unit2": "Mai compact decât binar"
-          }
+          "label": "Compactitate",
+          "values": ["Standard", "Mai compact decât binar"]
         }
       ]
     },

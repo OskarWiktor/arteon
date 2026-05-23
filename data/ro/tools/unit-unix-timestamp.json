@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertiți marca temporală Unix în dată și oră.",
-      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+      "featureList": [
+        "Conversie bidirecțională în timp real",
+        "Toate convertoarele într-un singur loc",
+        "Copierea rezultatului în clipboard",
+        "Calcul local în browser"
+      ]
     },
     "howTo": {
       "name": "Cum să utilizați convertorul",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Timestamp formats",
-      "featureLabel": "Proprietate",
-      "plans": [
+      "labelHeader": "Proprietate",
+      "cols": ["Unix (seconds)", "Unix (milliseconds)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Unix (seconds)"
+          "label": "Cifre",
+          "values": ["10 digits", "13 digits"]
         },
         {
-          "id": "unit2",
-          "name": "Unix (milliseconds)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Cifre",
-          "values": {
-            "unit1": "10 digits",
-            "unit2": "13 digits"
-          }
+          "label": "Exemplu",
+          "values": ["1700000000", "1700000000000"]
         },
         {
-          "name": "Exemplu",
-          "values": {
-            "unit1": "1700000000",
-            "unit2": "1700000000000"
-          }
+          "label": "Utilizat de",
+          "values": ["PHP, Python, MySQL", "JavaScript, Java"]
         },
         {
-          "name": "Utilizat de",
-          "values": {
-            "unit1": "PHP, Python, MySQL",
-            "unit2": "JavaScript, Java"
-          }
+          "label": "Precizie",
+          "values": ["1 second", "1 millisecond"]
         },
         {
-          "name": "Precizie",
-          "values": {
-            "unit1": "1 second",
-            "unit2": "1 millisecond"
-          }
-        },
-        {
-          "name": "Max (32-bit)",
-          "values": {
-            "unit1": "Jan 19, 2038",
-            "unit2": "N/A (uses 64-bit)"
-          }
+          "label": "Max (32-bit)",
+          "values": ["Jan 19, 2038", "N/A (uses 64-bit)"]
         }
       ]
     },

@@ -8,7 +8,7 @@
     "path": "/es/herramientas/editor-de-imagenes-en-linea"
   },
   "hero": {
-    "title": "Redimensiona, recorta y convierte imágenes online – editor gratuito",
+    "title": "Redimensiona, recorta y convierte imágenes – editor gratuito",
     "description": "Redimensione, recorte y convierta imágenes para Instagram, Facebook y LinkedIn. Formatos predefinidos, avatares circulares, exportación a JPG, PNG y WebP. Procesamiento local en el navegador.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -85,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "Redimensione imágenes: recorte, convierta y comprima en una sola herramienta",
-      "html": "<p class=\"text-mid\">El editor de imágenes online le permite adaptar rápidamente las imágenes a dimensiones específicas. Puede redimensionar una imagen a cualquier dimensión en píxeles, seleccionar un formato predefinido para redes sociales o recortar una sección de la imagen con un encuadre preciso.</p><p class=\"text-mid mt-3\">Además de redimensionar, la herramienta ofrece conversión de formato (JPG, PNG, WebP), creación de avatares circulares y control de calidad de compresión.</p>",
+      "html": "<p class=\"text-mid\">El editor de imágenes le permite adaptar rápidamente las imágenes a dimensiones específicas. Puede redimensionar una imagen a cualquier dimensión en píxeles, seleccionar un formato predefinido para redes sociales o recortar una sección de la imagen con un encuadre preciso.</p><p class=\"text-mid mt-3\">Además de redimensionar, la herramienta ofrece conversión de formato (JPG, PNG, WebP), creación de avatares circulares y control de calidad de compresión.</p>",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagenes-en-linea-es.webp",
       "imageAlt": "Editor de imágenes en línea – Arteon"
     },

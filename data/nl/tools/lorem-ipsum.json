@@ -33,7 +33,7 @@
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
         "Business Ipsum generator",
-        "Dummy text generator online"
+        "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Gratis Lorem Ipsum-generator — 8 stijlen: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business en meer. 9 generatiemodi. Kopieer als tekst of HTML.",
@@ -254,122 +254,52 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Vergelijking van tekststijlen",
-      "featureLabel": "Kenmerk",
-      "plans": [
-        {
-          "id": "classic",
-          "name": "Lorem Ipsum",
-          "highlighted": true
-        },
-        {
-          "id": "hipster",
-          "name": "Hipster"
-        },
-        {
-          "id": "business",
-          "name": "Business"
-        },
-        {
-          "id": "polish",
-          "name": "Lokaal"
-        },
-        {
-          "id": "bacon",
-          "name": "Bacon"
-        },
-        {
-          "id": "cupcake",
-          "name": "Cupcake"
-        },
-        {
-          "id": "pirate",
-          "name": "Pirate"
-        },
-        {
-          "id": "legal",
-          "name": "Legal"
-        }
+      "labelHeader": "Kenmerk",
+      "cols": [
+        "Lorem Ipsum",
+        "Hipster",
+        "Business",
+        "Lokaal",
+        "Bacon",
+        "Cupcake",
+        "Pirate",
+        "Legal"
       ],
-      "features": [
+      "rows": [
         {
-          "name": "Taal",
-          "values": {
-            "classic": "Latijn",
-            "hipster": "Engels",
-            "business": "Engels",
-            "polish": "Lokaal",
-            "bacon": "Engels",
-            "cupcake": "Engels",
-            "pirate": "Engels",
-            "legal": "Engels"
-          }
+          "label": "Taal",
+          "values": ["Latijn", "Engels", "Engels", "Lokaal", "Engels", "Engels", "Engels", "Engels"]
         },
         {
-          "name": "Thema",
-          "values": {
-            "classic": "Filosofie",
-            "hipster": "Levensstijl",
-            "business": "Zakelijk",
-            "polish": "Algemeen",
-            "bacon": "Gastronomie",
-            "cupcake": "Banketbakkerij",
-            "pirate": "Avontuur",
-            "legal": "Recht"
-          }
+          "label": "Thema",
+          "values": [
+            "Filosofie",
+            "Levensstijl",
+            "Zakelijk",
+            "Algemeen",
+            "Gastronomie",
+            "Banketbakkerij",
+            "Avontuur",
+            "Recht"
+          ]
         },
         {
-          "name": "Visuele neutraliteit",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Visuele neutraliteit",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Natuurlijk ritme",
-          "values": {
-            "classic": true,
-            "hipster": true,
-            "business": true,
-            "polish": true,
-            "bacon": true,
-            "cupcake": true,
-            "pirate": true,
-            "legal": true
-          }
+          "label": "Natuurlijk ritme",
+          "values": ["✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"]
         },
         {
-          "name": "Industriestandaard",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Industriestandaard",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Humor / karakter",
-          "values": {
-            "classic": "Neutraal",
-            "hipster": "Gemiddeld",
-            "business": "Laag",
-            "polish": "Laag",
-            "bacon": "Hoog",
-            "cupcake": "Hoog",
-            "pirate": "Hoog",
-            "legal": "Laag"
-          }
+          "label": "Humor / karakter",
+          "values": ["Neutraal", "Gemiddeld", "Laag", "Laag", "Hoog", "Hoog", "Hoog", "Laag"]
         }
       ]
     },

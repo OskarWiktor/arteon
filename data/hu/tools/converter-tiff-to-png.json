@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["TIFF konvertálása PNG formátumba", "TIFF–PNG átalakítás", "Ingyenes TIFF–PNG konverter"]
+      "featureList": [
+        "TIFF to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "TIFF konvertálása PNG formátumba",
+        "TIFF–PNG átalakítás",
+        "Ingyenes TIFF–PNG konverter"
+      ]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -158,85 +167,51 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-PNG konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Amikor TIFF-fájlokra van szükség grafikai programokban való szerkesztéshez vagy átlátszóságot igénylő oldalakhoz, a PNG a megfelelő formátum – veszteségmentes és univerzálisan kompatibilis.</p><p class=\"text-mid mb-4\">A PNG megőrzi a TIFF teljes minőségét és átlátszóságát. A fájlok kisebbek a TIFF-nél, de nagyobbak a JPEG/WebP-nél. Figmához, Canvához vagy Photoshophoz a PNG ideális.</p><p class=\"text-mid\">Szkenner-kimenetek és archív képek online használatra való előkészítéséhez a helyi konvertálás biztonságos és gyors munkafolyamatot kínál.</p>"
+      "html": "<p class=\"text-mid mb-4\">Amikor TIFF-fájlokra van szükség grafikai programokban való szerkesztéshez vagy átlátszóságot igénylő oldalakhoz, a PNG a megfelelő formátum – veszteségmentes és univerzálisan kompatibilis.</p><p class=\"text-mid mb-4\">A PNG megőrzi a TIFF teljes minőségét és átlátszóságát. A fájlok kisebbek a TIFF-nél, de nagyobbak a JPEG/WebP-nél. Figmához, Canvához vagy Photoshophoz a PNG ideális.</p><p class=\"text-mid\">Szkenner-kimenetek és archív képek használatra való előkészítéséhez a helyi konvertálás biztonságos és gyors munkafolyamatot kínál.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PNG – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["TIFF", "PNG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Veszteséges tömörítés",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Veszteségmentes tömörítés",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Átlátszóság (alfa csatorna)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animáció támogatás",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Böngészőtámogatás",
+          "values": ["Csak Safari", "Minden böngésző"]
+        },
+        {
+          "label": "Színmélység",
+          "values": ["8/16/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Kis fájlméret",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metaadatok (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Veszteséges tömörítés",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Veszteségmentes tömörítés",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Átlátszóság (alfa csatorna)",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animáció támogatás",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Böngészőtámogatás",
-          "values": {
-            "tiff": "Csak Safari",
-            "png": "Minden böngésző"
-          }
-        },
-        {
-          "name": "Színmélység",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Kis fájlméret",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metaadatok (EXIF)",
-          "values": {
-            "tiff": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

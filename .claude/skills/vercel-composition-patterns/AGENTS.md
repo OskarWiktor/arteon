@@ -55,12 +55,24 @@ unmaintainable conditional logic. Use composition instead.
 **Incorrect: boolean props create exponential complexity**
 
 ```tsx
-function Composer({ onSubmit, isThread, channelId, isDMThread, dmId, isEditing, isForwarding }: Props) {
+function Composer({
+  onSubmit,
+  isThread,
+  channelId,
+  isDMThread,
+  dmId,
+  isEditing,
+  isForwarding,
+}: Props) {
   return (
     <form>
       <Header />
       <Input />
-      {isDMThread ? <AlsoSendToDMField id={dmId} /> : isThread ? <AlsoSendToChannelField id={channelId} /> : null}
+      {isDMThread ? (
+        <AlsoSendToDMField id={dmId} />
+      ) : isThread ? (
+        <AlsoSendToChannelField id={channelId} />
+      ) : null}
       {isEditing ? <EditActions /> : isForwarding ? <ForwardActions /> : <DefaultActions />}
       <Footer onSubmit={onSubmit} />
     </form>
@@ -136,7 +148,14 @@ pieces they need.
 **Incorrect: monolithic component with render props**
 
 ```tsx
-function Composer({ renderHeader, renderFooter, renderActions, showAttachments, showFormatting, showEmojis }: Props) {
+function Composer({
+  renderHeader,
+  renderFooter,
+  renderActions,
+  showAttachments,
+  showFormatting,
+  showEmojis,
+}: Props) {
   return (
     <form>
       {renderHeader?.()}
@@ -175,7 +194,13 @@ function ComposerInput() {
     actions: { update },
     meta: { inputRef },
   } = use(ComposerContext);
-  return <TextInput ref={inputRef} value={state.input} onChangeText={(text) => update((s) => ({ ...s, input: text }))} />;
+  return (
+    <TextInput
+      ref={inputRef}
+      value={state.input}
+      onChangeText={text => update(s => ({ ...s, input: text }))}
+    />
+  );
 }
 
 function ComposerSubmit() {
@@ -245,7 +270,7 @@ function ChannelComposer({ channelId }: { channelId: string }) {
 
   return (
     <Composer.Frame>
-      <Composer.Input value={state.input} onChange={(text) => sync.updateInput(text)} />
+      <Composer.Input value={state.input} onChange={text => sync.updateInput(text)} />
       <Composer.Submit onPress={() => sync.submit()} />
     </Composer.Frame>
   );
@@ -256,7 +281,13 @@ function ChannelComposer({ channelId }: { channelId: string }) {
 
 ```tsx
 // Provider handles all state management details
-function ChannelProvider({ channelId, children }: { channelId: string; children: React.ReactNode }) {
+function ChannelProvider({
+  channelId,
+  children,
+}: {
+  channelId: string;
+  children: React.ReactNode;
+}) {
   const { state, update, submit } = useGlobalChannel(channelId);
   const inputRef = useRef(null);
 
@@ -386,7 +417,13 @@ function ComposerInput() {
   } = use(ComposerContext);
 
   // This component works with ANY provider that implements the interface
-  return <TextInput ref={meta.inputRef} value={state.input} onChangeText={(text) => update((s) => ({ ...s, input: text }))} />;
+  return (
+    <TextInput
+      ref={meta.inputRef}
+      value={state.input}
+      onChangeText={text => update(s => ({ ...s, input: text }))}
+    />
+  );
 }
 ```
 
@@ -595,7 +632,11 @@ function ForwardMessageProvider({ children }: { children: React.ReactNode }) {
   const inputRef = useRef(null);
 
   return (
-    <Composer.Provider state={state} actions={{ update: setState, submit: forwardMessage }} meta={{ inputRef }}>
+    <Composer.Provider
+      state={state}
+      actions={{ update: setState, submit: forwardMessage }}
+      meta={{ inputRef }}
+    >
       {children}
     </Composer.Provider>
   );
@@ -657,7 +698,7 @@ itself.
 
 ```tsx
 // What does this component actually render?
-<Composer isThread isEditing={false} channelId="abc" showAttachments showFormatting={false} />
+<Composer isThread isEditing={false} channelId='abc' showAttachments showFormatting={false} />
 ```
 
 **Correct: explicit variants**
@@ -751,7 +792,15 @@ signatures.
 **Incorrect: render props**
 
 ```tsx
-function Composer({ renderHeader, renderFooter, renderActions }: { renderHeader?: () => React.ReactNode; renderFooter?: () => React.ReactNode; renderActions?: () => React.ReactNode }) {
+function Composer({
+  renderHeader,
+  renderFooter,
+  renderActions,
+}: {
+  renderHeader?: () => React.ReactNode;
+  renderFooter?: () => React.ReactNode;
+  renderActions?: () => React.ReactNode;
+}) {
   return (
     <form>
       {renderHeader?.()}
@@ -785,7 +834,7 @@ function ComposerFrame({ children }: { children: React.ReactNode }) {
 }
 
 function ComposerFooter({ children }: { children: React.ReactNode }) {
-  return <footer className="flex">{children}</footer>;
+  return <footer className='flex'>{children}</footer>;
 }
 
 // Usage is flexible

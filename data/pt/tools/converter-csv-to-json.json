@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter CSV para JSON?",
-      "html": "<p class=\"text-mid mb-4\">CSV e um formato amplamente utilizado com grande compatibilidade. Dependendo do uso, a conversao para JSON pode oferecer vantagens significativas - arquivos menores, melhor qualidade ou suporte mais amplo de plataformas.</p><p class=\"text-mid mb-4\">Este conversor online gratuito transforma seus arquivos CSV para o formato JSON diretamente no navegador. Nenhum arquivo e enviado a servidores - todo o processo acontece localmente no seu dispositivo.</p><p class=\"text-mid\">Converta quantos arquivos precisar sem limites diarios, sem registro e sem marcas d'agua. Arraste e solte seus arquivos, ajuste a qualidade e baixe os resultados.</p>",
+      "html": "<p class=\"text-mid mb-4\">CSV e um formato amplamente utilizado com grande compatibilidade. Dependendo do uso, a conversao para JSON pode oferecer vantagens significativas - arquivos menores, melhor qualidade ou suporte mais amplo de plataformas.</p><p class=\"text-mid mb-4\">Este conversor gratuito transforma seus arquivos CSV para o formato JSON diretamente no navegador. Nenhum arquivo e enviado a servidores - todo o processo acontece localmente no seu dispositivo.</p><p class=\"text-mid\">Converta quantos arquivos precisar sem limites diarios, sem registro e sem marcas d'agua. Arraste e solte seus arquivos, ajuste a qualidade e baixe os resultados.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "CSV to JSON conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "CSV vs JSON – comparação de formatos",
-      "plans": [
+      "labelHeader": "Funcionalidade",
+      "cols": ["CSV", "JSON"],
+      "rows": [
         {
-          "id": "csv",
-          "name": "CSV"
+          "label": "Dados hierárquicos",
+          "values": ["—", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Dados tabulares",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Validação de schema",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Legível por humanos",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Padrão API",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Sintaxe compacta",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Dados hierárquicos",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Dados tabulares",
-          "values": {
-            "csv": true,
-            "json": false
-          }
-        },
-        {
-          "name": "Validação de schema",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Legível por humanos",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Padrão API",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Sintaxe compacta",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funcionalidade"
+      ]
     },
     {
       "type": "gap",

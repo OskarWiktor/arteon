@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "HEX to RGB color converter",
-      "alternateName": ["HEX color to RGB converter", "Color code converter", "Web color converter"],
+      "alternateName": [
+        "HEX color to RGB converter",
+        "Color code converter",
+        "Web color converter"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert HEX to RGB for JavaScript canvas API, React inline styles, CSS-in-JS (styled-components, Emotion), and Chrome DevTools workflows. Bidirectional, real-time, browser-only.",
@@ -185,55 +189,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEX vs RGB – comparison",
-      "featureLabel": "Feature",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["HEX", "RGB"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "HEX"
+          "label": "Format",
+          "values": ["#RRGGBB", "rgb(R, G, B)"]
         },
         {
-          "id": "unit2",
-          "name": "RGB",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Format",
-          "values": {
-            "unit1": "#RRGGBB",
-            "unit2": "rgb(R, G, B)"
-          }
+          "label": "Values",
+          "values": ["00–FF (hex)", "0–255 (decimal)"]
         },
         {
-          "name": "Values",
-          "values": {
-            "unit1": "00–FF (hex)",
-            "unit2": "0–255 (decimal)"
-          }
+          "label": "Opacity",
+          "values": ["8-digit (#RRGGBBAA)", "rgba(R, G, B, A)"]
         },
         {
-          "name": "Opacity",
-          "values": {
-            "unit1": "8-digit (#RRGGBBAA)",
-            "unit2": "rgba(R, G, B, A)"
-          }
+          "label": "Shorthand",
+          "values": ["#RGB (3 digits)", "No shorthand"]
         },
         {
-          "name": "Shorthand",
-          "values": {
-            "unit1": "#RGB (3 digits)",
-            "unit2": "No shorthand"
-          }
-        },
-        {
-          "name": "Used in",
-          "values": {
-            "unit1": "CSS, design tools",
-            "unit2": "CSS, programming"
-          }
+          "label": "Used in",
+          "values": ["CSS, design tools", "CSS, programming"]
         }
       ]
     },

@@ -8,7 +8,12 @@ type UseDebouncedEffectOptions = {
   enabled?: boolean;
 };
 
-export function useDebouncedEffect(callback: Callback, delayMs: number, deps: DependencyList, options: UseDebouncedEffectOptions = {}) {
+export function useDebouncedEffect(
+  callback: Callback,
+  delayMs: number,
+  deps: DependencyList,
+  options: UseDebouncedEffectOptions = {},
+) {
   const { enabled = true } = options;
 
   const callbackRef = useRef(callback);

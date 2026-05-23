@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "CSV vs JSON – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["CSV", "JSON"],
+      "rows": [
         {
-          "id": "csv",
-          "name": "CSV"
+          "label": "Verschachtelte Daten",
+          "values": ["—", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabellarische Daten",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Schema-Validierung",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Menschenlesbar",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-Standard",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Kompakte Syntax",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verschachtelte Daten",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabellarische Daten",
-          "values": {
-            "csv": true,
-            "json": false
-          }
-        },
-        {
-          "name": "Schema-Validierung",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Menschenlesbar",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API-Standard",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompakte Syntax",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

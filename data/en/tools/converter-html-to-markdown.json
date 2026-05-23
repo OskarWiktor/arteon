@@ -40,7 +40,11 @@
         "Batch multi-file conversion",
         "Local browser processing – no upload"
       ],
-      "alternateName": ["Convert HTML to Markdown", "HTML to Markdown", "Free HTML to Markdown converter"]
+      "alternateName": [
+        "Convert HTML to Markdown",
+        "HTML to Markdown",
+        "Free HTML to Markdown converter"
+      ]
     },
     "howTo": {
       "name": "How to convert HTML to Markdown",
@@ -139,64 +143,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HTML vs Markdown – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["HTML", "Markdown"],
+      "rows": [
         {
-          "id": "html",
-          "name": "HTML"
+          "label": "Nested/hierarchical data",
+          "values": ["✓", "—"]
         },
         {
-          "id": "markdown",
-          "name": "Markdown",
-          "highlighted": true
+          "label": "Tabular data",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Schema validation",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Human readable",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "API standard",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Compact syntax",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Nested/hierarchical data",
-          "values": {
-            "html": true,
-            "markdown": false
-          }
-        },
-        {
-          "name": "Tabular data",
-          "values": {
-            "html": true,
-            "markdown": true
-          }
-        },
-        {
-          "name": "Schema validation",
-          "values": {
-            "html": true,
-            "markdown": false
-          }
-        },
-        {
-          "name": "Human readable",
-          "values": {
-            "html": false,
-            "markdown": true
-          }
-        },
-        {
-          "name": "API standard",
-          "values": {
-            "html": false,
-            "markdown": false
-          }
-        },
-        {
-          "name": "Compact syntax",
-          "values": {
-            "html": false,
-            "markdown": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

@@ -2,14 +2,14 @@
   "toolKey": "cmToPxDpi",
   "locale": "de",
   "metadata": {
-    "title": "CM in Pixel (DPI) umrechnen – Druckauflösungsrechner",
-    "description": "Rechnen Sie Zentimeter in Pixel bei beliebiger DPI-Auflösung um. Unverzichtbar für Druckdesign und Bildvorbereitung.",
+    "title": "Rechner cm in px (DPI) – Zentimeter in Pixel umrechnen",
+    "description": "Rechnen Sie Zentimeter mit einstellbarem DPI in Pixel um. Das ideale Werkzeug für Grafiker, Fotografen und Designer, die Materialien für den Druck oder den Bildschirm vorbereiten.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/cm-in-px-umrechner"
   },
   "hero": {
-    "title": "CM in Pixel umrechnen",
-    "description": "Dieser Konverter rechnet sofort um. Geben Sie einfach einen Wert ein und das Ergebnis erscheint sofort.",
+    "title": "Zentimeter mit beliebigem DPI in Pixel umrechnen",
+    "description": "Geben Sie einen Wert in Zentimetern ein, stellen Sie die DPI-Auflösung ein und sehen Sie das Ergebnis in Pixeln. Prüfen Sie, wie viele Pixel einem bestimmten Wert in Zentimetern entsprechen. Der Umrechner hilft Ihnen, die richtigen Abmessungen zu wählen, wenn Sie Grafiken für den Druck, für den Bildschirm oder für soziale Medien gestalten.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
@@ -24,29 +24,56 @@
   },
   "schemas": {
     "software": {
-      "name": "CM in Pixel (DPI) umrechnen – Druckauflösungsrechner",
-      "alternateName": ["CM in Pixel umrechnen"],
+      "name": "Zentimeter in Pixel Umrechner mit einstellbarem DPI – Umrechner cm in px",
+      "alternateName": [
+        "cm in px Umrechner",
+        "Zentimeter in Pixel Rechner",
+        "cm zu Pixel Umrechner",
+        "Zentimeter in Pixel umrechnen",
+        "cm in Pixel",
+        "cm zu px umrechnen",
+        "Zentimeter Pixel Umrechner",
+        "cm zu Pixel Rechner",
+        "cm in px 300 dpi",
+        "cm Pixel Umrechnung",
+        "Pixel pro Zentimeter",
+        "DPI Rechner für Druck",
+        "Centimeter Pixel Umrechnung",
+        "cm in px online",
+        "Bildgröße cm in px"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Rechnen Sie Zentimeter in Pixel bei beliebiger DPI-Auflösung um. Unverzichtbar für Druckdesign und Bildvorbereitung.",
-      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+      "description": "Umrechner von Zentimetern in Pixel mit einstellbarem DPI-Wert. Sobald Sie eine Abmessung eingeben, sehen Sie genau, wie viele Pixel einem bestimmten Wert in Zentimetern entsprechen. Der Umrechner eignet sich unter anderem für die Vorbereitung von Druckdateien und läuft im Browser ohne Registrierung.",
+      "featureList": [
+        "Einstellbare DPI-Auflösung",
+        "Die Umrechnung funktioniert in beide Richtungen, sodass Sie sowohl Zentimeter in Pixel als auch Pixel in Zentimeter umrechnen können",
+        "Das Ergebnis erscheint sofort während der Eingabe, ohne dass Sie irgendeine Schaltfläche drücken müssen",
+        "Das fertige Ergebnis können Sie mit einem einzigen Klick in die Zwischenablage kopieren",
+        "Die fertigen Formattabellen umfassen DIN A0–A7 Papier, Fotos 9×13, 10×15 und 13×18 sowie Visitenkarten bei 300 DPI",
+        "Die umgekehrte Tabelle zeigt, wie viele Zentimeter 100, 500, 1.500 oder 2.480 Pixeln entsprechen",
+        "Ein Abschnitt mit Anleitungen erklärt, wie Sie cm in px in Photoshop, Illustrator, Figma, Canva und Procreate einstellen",
+        "Alle Berechnungen erfolgen lokal in Ihrem Browser, Ihre Daten verlassen Ihr Gerät nicht und werden nirgendwo gespeichert",
+        "Die genaue Umrechnungsformel lautet px = cm × DPI ÷ 2,54 und nutzt die feste Zoll-Länge von 2,54 cm",
+        "Das Werkzeug funktioniert auf Handy, Tablet und Computer ohne Installation"
+      ]
     },
     "howTo": {
-      "name": "So verwenden Sie den Konverter cm na px",
-      "description": "Anleitung: cm na px.",
+      "name": "Wie rechnet man Zentimeter in Pixel um?",
+      "description": "Eine kurze Anleitung für den cm in px Umrechner mit einstellbarem DPI.",
       "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Wert eingeben",
-          "text": "Geben Sie eine Zahl in das Eingabefeld auf der linken Seite ein."
+          "name": "Wert in Zentimetern eingeben",
+          "text": "Geben Sie im linken Feld die Anzahl der Zentimeter ein, die Sie in Pixel umrechnen möchten."
         },
         {
-          "name": "Ergebnis ablesen",
-          "text": "Das Konvertierungsergebnis erscheint sofort im Feld daneben."
+          "name": "DPI-Auflösung einstellen",
+          "text": "Wählen Sie einen DPI-Wert. Für Bildschirme werden meist 96 DPI verwendet und für den Druck 300 DPI."
         },
         {
-          "name": "Kopieren oder Richtung ändern",
-          "text": "Klicken Sie auf Ergebnis kopieren oder auf Umkehren, um in die andere Richtung zu rechnen."
+          "name": "Ergebnis ablesen oder Richtung umkehren",
+          "text": "Das Ergebnis in Pixeln erscheint sofort im Feld daneben. Sie können es kopieren oder die Schaltfläche Reihenfolge ändern drücken, um Pixel in Zentimeter umzurechnen."
         }
       ]
     }
@@ -58,34 +85,242 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Wann muss man cm in Pixel umrechnen?",
-      "html": "<p class=\"text-mid mb-4\">Im Druckdesign werden Maße in Zentimetern angegeben, digitale Bilder jedoch in Pixeln. Die Umrechnung hängt von der DPI-Auflösung ab: Pixel = cm × DPI / 2,54.</p><p class=\"text-mid mb-4\">Standard-Druckauflösung 300 DPI: 10 cm = 1.181 Pixel, A4-Breite (21 cm) = 2.480 Pixel.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "CM in Pixel (DPI) umrechnen – Druckauflösungsrechner – Arteon"
+      "title": "Wozu Zentimeter in Pixel umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Der Zentimeter ist eine physische Einheit, die in der Welt des Drucks regiert. Das Pixel beschreibt dagegen einen einzelnen Punkt auf dem Bildschirm eines Handys, Tablets oder Laptops. Um eines in das andere umzurechnen, müssen Sie die DPI-Auflösung kennen, also die Anzahl der Pixel, die auf einen Zoll des Bildschirms passen.</p><p class=\"text-mid mb-4\">Eine solche Umrechnung führen am häufigsten Grafiker durch, die Dateien für eine Druckerei vorbereiten, Fotografen, die prüfen, ob ein Foto für ein konkretes Abzugsformat groß genug ist, oder Designer, die an Bannern, Grafiken für soziale Medien oder Elementen einer Webseite arbeiten. Der Umrechner befreit Sie vom Rechnen von Hand und vom Auswendiglernen der Formel.</p><p class=\"text-mid\">Weiter unten auf der Seite finden Sie Umrechnungstabellen in beide Richtungen, fertige Abmessungen beliebter Formate (von einem DIN A4-Blatt über 10×15 cm Fotos bis hin zum Passbild) und kurze Anleitungen, wie Sie Zentimeter in Pixel in Photoshop, Figma, Canva und anderen Grafikwerkzeugen umrechnen.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Kostenloser Zentimeter-zu-Pixel-Umrechner – Arteon"
     },
     {
       "type": "gap",
       "size": "xs"
     },
     {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung cm in px? Formel und Beispiel",
+      "html": "<p class=\"text-mid mb-4\">Die gesamte Umrechnung lässt sich auf eine einzige Formel zurückführen, die auf dem festen Verhältnis zwischen Zoll und Zentimeter beruht: Ein Zoll entspricht genau 2,54 cm. Es genügt also, die Anzahl der Zentimeter mit der gewählten DPI-Auflösung zu multiplizieren und das Ergebnis durch 2,54 zu teilen.</p><p class=\"text-mid mb-4\">Die vollständige Formel sieht so aus: <strong>Anzahl der Pixel = Anzahl der Zentimeter × DPI ÷ 2,54</strong>. Der Umrechner führt diese Operation exakt und sofort aus.</p><p class=\"text-mid mb-4\">Beispiel: Sie möchten prüfen, wie viele Pixel 7,5 cm bei der Druckauflösung von 300 DPI ergeben. Sie setzen die Werte in die Formel ein und erhalten 7,5 × 300 ÷ 2,54, was etwa 886 Pixel ergibt. Bei 96 DPI ergibt dieselbe Länge nur noch 284 Pixel.</p><p class=\"text-mid\">In umgekehrter Richtung funktioniert es genauso: Anzahl der Zentimeter = Anzahl der Pixel × 2,54 ÷ DPI. So können Sie prüfen, wie groß eine Datei mit einer Breite von 1.500 px auf Papier sein wird oder ob ein Foto aus der Kamera für ein konkretes Abzugsformat ausreicht.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Wie viele Pixel ergeben verschiedene Werte in Zentimetern bei verschiedenen DPI-Werten?",
+      "description": "Die folgende Tabelle zeigt, wie dieselben Abmessungen in Zentimetern bei den fünf am häufigsten verwendeten Auflösungen in Pixel umgerechnet werden. Die Werte wurden auf die nächste ganze Zahl gerundet, sodass sie leicht vom Ergebnis unseres Umrechners abweichen können, der die exakte Pixelzahl mit Kommastelle anzeigt.",
+      "labelHeader": "Abmessung",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
+      "rows": [
+        { "label": "0,5 cm", "values": ["14 px", "19 px", "30 px", "59 px", "118 px"] },
+        {
+          "label": "1 cm",
+          "values": ["28 px", "38 px", "59 px", "118 px", "236 px"],
+          "emphasis": true
+        },
+        { "label": "1,5 cm", "values": ["43 px", "57 px", "89 px", "177 px", "354 px"] },
+        { "label": "2 cm", "values": ["57 px", "76 px", "118 px", "236 px", "472 px"] },
+        { "label": "2,5 cm", "values": ["71 px", "94 px", "148 px", "295 px", "591 px"] },
+        { "label": "3 cm", "values": ["85 px", "113 px", "177 px", "354 px", "709 px"] },
+        { "label": "3,5 cm", "values": ["99 px", "132 px", "207 px", "413 px", "827 px"] },
+        { "label": "4 cm", "values": ["113 px", "151 px", "236 px", "472 px", "945 px"] },
+        { "label": "4,5 cm", "values": ["128 px", "170 px", "266 px", "531 px", "1.063 px"] },
+        {
+          "label": "5 cm",
+          "values": ["142 px", "189 px", "295 px", "591 px", "1.181 px"],
+          "emphasis": true
+        },
+        { "label": "6 cm", "values": ["170 px", "227 px", "354 px", "709 px", "1.417 px"] },
+        { "label": "7 cm", "values": ["198 px", "264 px", "413 px", "827 px", "1.654 px"] },
+        { "label": "8 cm", "values": ["227 px", "302 px", "472 px", "945 px", "1.890 px"] },
+        { "label": "9 cm", "values": ["255 px", "340 px", "531 px", "1.063 px", "2.126 px"] },
+        {
+          "label": "10 cm",
+          "values": ["283 px", "378 px", "591 px", "1.181 px", "2.362 px"],
+          "emphasis": true
+        },
+        { "label": "12 cm", "values": ["340 px", "454 px", "709 px", "1.417 px", "2.835 px"] },
+        { "label": "15 cm", "values": ["425 px", "567 px", "886 px", "1.772 px", "3.543 px"] },
+        {
+          "label": "20 cm",
+          "values": ["567 px", "756 px", "1.181 px", "2.362 px", "4.724 px"],
+          "emphasis": true
+        },
+        { "label": "25 cm", "values": ["709 px", "945 px", "1.476 px", "2.953 px", "5.906 px"] },
+        { "label": "30 cm", "values": ["850 px", "1.134 px", "1.772 px", "3.543 px", "7.087 px"] },
+        {
+          "label": "50 cm",
+          "values": ["1.417 px", "1.890 px", "2.953 px", "5.906 px", "11.811 px"]
+        },
+        {
+          "label": "100 cm",
+          "values": ["2.835 px", "3.780 px", "5.906 px", "11.811 px", "23.622 px"]
+        }
+      ],
+      "caption": "Alle Werte wurden gemäß der Formel px = cm × DPI ÷ 2,54 auf die nächste ganze Zahl gerundet."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Wie viele Zentimeter ergeben verschiedene Werte in Pixeln bei verschiedenen DPI-Werten?",
+      "description": "Manchmal beginnt man mit einer Pixelzahl und muss prüfen, wie viele Zentimeter das sind. Die folgende Tabelle zeigt diese Umrechnung für die vier am häufigsten verwendeten Auflösungen.",
+      "labelHeader": "Pixel",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
+      "rows": [
+        { "label": "100 px", "values": ["3,53 cm", "2,65 cm", "1,69 cm", "0,85 cm"] },
+        { "label": "200 px", "values": ["7,06 cm", "5,29 cm", "3,39 cm", "1,69 cm"] },
+        {
+          "label": "300 px",
+          "values": ["10,58 cm", "7,94 cm", "5,08 cm", "2,54 cm"],
+          "emphasis": true
+        },
+        { "label": "500 px", "values": ["17,64 cm", "13,23 cm", "8,47 cm", "4,23 cm"] },
+        { "label": "600 px", "values": ["21,17 cm", "15,88 cm", "10,16 cm", "5,08 cm"] },
+        { "label": "800 px", "values": ["28,22 cm", "21,17 cm", "13,55 cm", "6,77 cm"] },
+        {
+          "label": "1.000 px",
+          "values": ["35,28 cm", "26,46 cm", "16,93 cm", "8,47 cm"],
+          "emphasis": true
+        },
+        { "label": "1.200 px", "values": ["42,33 cm", "31,75 cm", "20,32 cm", "10,16 cm"] },
+        { "label": "1.500 px", "values": ["52,92 cm", "39,69 cm", "25,40 cm", "12,70 cm"] },
+        { "label": "1.920 px", "values": ["67,73 cm", "50,80 cm", "32,51 cm", "16,26 cm"] },
+        {
+          "label": "2.480 px",
+          "values": ["87,47 cm", "65,62 cm", "42,00 cm", "21,00 cm (A4)"],
+          "emphasis": true
+        },
+        { "label": "3.508 px", "values": ["123,73 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)"] }
+      ],
+      "caption": "Die letzten beiden Werte – 2.480 und 3.508 Pixel – entsprechen der exakten Breite und Höhe eines DIN A4-Blattes bei einer Auflösung von 300 DPI."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Die beliebtesten physischen Formate und ihre Abmessungen in Pixeln",
+      "description": "Wenn Sie statt einzelner Zentimeter die Abmessungen eines fertigen Formats benötigen (zum Beispiel eines DIN A4-Blattes, eines 10×15 cm Fotos oder eines Passbildes), führt die folgende Tabelle die Werte bei den zwei am häufigsten verwendeten Auflösungen auf. Die Abmessungen werden konsequent im Format Breite × Höhe im Hochformat angegeben.",
+      "labelHeader": "Format",
+      "cols": ["B × H (cm)", "B × H (150 DPI)", "B × H (300 DPI)"],
+      "rows": [
+        { "groupLabel": "DIN A-Reihe Papier" },
+        { "label": "A0", "values": ["84,1 × 118,9", "4.967 × 7.022", "9.933 × 14.043"] },
+        { "label": "A1", "values": ["59,4 × 84,1", "3.508 × 4.967", "7.016 × 9.933"] },
+        { "label": "A2", "values": ["42,0 × 59,4", "2.480 × 3.508", "4.961 × 7.016"] },
+        { "label": "A3", "values": ["29,7 × 42,0", "1.754 × 2.480", "3.508 × 4.961"] },
+        {
+          "label": "A4",
+          "values": ["21,0 × 29,7", "1.240 × 1.754", "2.480 × 3.508"],
+          "emphasis": true
+        },
+        { "label": "A5", "values": ["14,8 × 21,0", "874 × 1.240", "1.748 × 2.480"] },
+        { "label": "A6", "values": ["10,5 × 14,8", "620 × 874", "1.240 × 1.748"] },
+        { "label": "A7", "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"] },
+        { "groupLabel": "US-amerikanische Papiergrößen" },
+        {
+          "label": "Letter (8,5 × 11 in)",
+          "values": ["21,59 × 27,94", "1.275 × 1.650", "2.550 × 3.300"]
+        },
+        {
+          "label": "Legal (8,5 × 14 in)",
+          "values": ["21,59 × 35,56", "1.275 × 2.100", "2.550 × 4.200"]
+        },
+        {
+          "label": "Tabloid (11 × 17 in)",
+          "values": ["27,94 × 43,18", "1.650 × 2.550", "3.300 × 5.100"]
+        },
+        { "groupLabel": "Fotoabzüge" },
+        { "label": "Foto 4 × 6 in", "values": ["10,16 × 15,24", "600 × 900", "1.200 × 1.800"] },
+        { "label": "Foto 5 × 7 in", "values": ["12,70 × 17,78", "750 × 1.050", "1.500 × 2.100"] },
+        {
+          "label": "Foto 8 × 10 in",
+          "values": ["20,32 × 25,40", "1.200 × 1.500", "2.400 × 3.000"]
+        },
+        {
+          "label": "Foto 11 × 14 in",
+          "values": ["27,94 × 35,56", "1.650 × 2.100", "3.300 × 4.200"]
+        },
+        {
+          "label": "Foto 16 × 20 in",
+          "values": ["40,64 × 50,80", "2.400 × 3.000", "4.800 × 6.000"]
+        },
+        {
+          "label": "Foto 10 × 15 cm",
+          "values": ["10 × 15", "591 × 886", "1.181 × 1.772"],
+          "emphasis": true
+        },
+        { "label": "Foto 13 × 18 cm", "values": ["13 × 18", "768 × 1.063", "1.535 × 2.126"] },
+        { "label": "Foto 20 × 30 cm", "values": ["20 × 30", "1.181 × 1.772", "2.362 × 3.543"] },
+        { "groupLabel": "Personalausweis- und Passbilder" },
+        {
+          "label": "Reisepass ICAO / EU (35 × 45 mm)",
+          "values": ["3,5 × 4,5", "207 × 266", "413 × 531"],
+          "emphasis": true
+        },
+        { "label": "US-Reisepass (2 × 2 in)", "values": ["5,08 × 5,08", "300 × 300", "600 × 600"] },
+        { "groupLabel": "Visitenkarten" },
+        {
+          "label": "Europäisch ISO (85 × 55 mm)",
+          "values": ["8,5 × 5,5", "502 × 325", "1.004 × 650"],
+          "emphasis": true
+        },
+        { "label": "USA (3,5 × 2 in)", "values": ["8,89 × 5,08", "525 × 300", "1.050 × 600"] },
+        { "label": "Japanisch (91 × 55 mm)", "values": ["9,1 × 5,5", "538 × 325", "1.075 × 650"] },
+        { "groupLabel": "Großformatige Werbung" },
+        {
+          "label": "Roll-up (85 × 200 cm)",
+          "values": ["85 × 200", "5.020 × 11.811", "10.039 × 23.622"]
+        }
+      ],
+      "caption": "Bei Plakatwänden und anderen großformatigen Grafiken genügen in der Praxis 30–72 DPI, da sie aus großer Entfernung betrachtet werden."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
-      "title": "Wie benutzt man den Umrechner?",
-      "grid": "three",
+      "title": "Wie rechnet man Zentimeter in Pixel in beliebten Programmen um?",
+      "inlineIcon": true,
+      "grid": "one",
       "items": [
         {
-          "title": "1. Wert eingeben",
-          "description": "Geben Sie eine Zahl in das Eingabefeld ein.",
-          "icon": "RiInputMethodLine"
+          "title": "Photoshop",
+          "icon": "RiImageEditLine",
+          "description": "In Adobe Photoshop stellen Sie die Leinwandabmessungen im Fenster <strong>Bild &rsaquo; Bildgröße</strong> (Image &rsaquo; Image Size) ein. Wählen Sie aus der Dropdown-Liste der Einheiten Zentimeter, geben Sie die physische Abmessung und das gewünschte DPI im Feld Auflösung ein, und Photoshop rechnet den Wert automatisch in Pixel um. Wenn die Änderung der Einheit nicht die Pixelzahl der Datei selbst beeinflussen soll, deaktivieren Sie die Option Neu berechnen (Resample) – dann ändern Sie nur die physische Abmessung, während die Pixel unberührt bleiben."
         },
         {
-          "title": "2. Ergebnis ablesen",
-          "description": "Das Ergebnis erscheint sofort.",
-          "icon": "RiLoopLeftLine"
+          "title": "Illustrator",
+          "icon": "RiPencilLine",
+          "description": "Adobe Illustrator arbeitet standardmäßig in der Einheit, die Sie beim Anlegen des Dokuments gewählt haben. Sie können sie unter <strong>Bearbeiten &rsaquo; Voreinstellungen &rsaquo; Einheiten</strong> ändern – wählen Sie Pixel für Bildschirmprojekte oder Zentimeter für Druckmaterialien. Das Ergebnis in Pixeln hängt von der Zeichenflächen-Auflösung ab, die zu Beginn des Projekts festgelegt wurde. Wenn Sie an einem Flyer in cm arbeiten, der Kunde aber die Datei in px verlangt, ist es am einfachsten, die Abmessung aus unserem Umrechner zu kopieren und in das Transformieren-Panel einzufügen."
         },
         {
-          "title": "3. Kopieren oder umkehren",
-          "description": "Kopieren Sie das Ergebnis oder kehren Sie die Umrechnungsrichtung um.",
-          "icon": "RiClipboardLine"
+          "title": "Figma",
+          "icon": "RiLayoutGridLine",
+          "description": "Figma arbeitet ausschließlich mit Pixeln und nimmt feste 96 DPI an. Das bedeutet, dass Sie die physische Abmessung zuerst bei der gewünschten Auflösung in Pixel umrechnen müssen, wenn Sie etwas in Figma entwerfen möchten, das später in Zentimetern gedruckt wird. Zum Beispiel: Ein 10 × 15 cm Flyer bei 300 DPI entspricht einem Frame von 1.181 × 1.772 px – geben Sie diesen Wert beim Erstellen eines neuen Frames ein und exportieren Sie im Maßstab 1×, damit die Abmessungen dem Original treu bleiben."
+        },
+        {
+          "title": "Canva",
+          "icon": "RiPaletteLine",
+          "description": "In Canva können Sie nach dem Klick auf <strong>Design erstellen &rsaquo; Benutzerdefinierte Größe</strong> cm oder mm als Einheit wählen und die physische Abmessung eingeben. Canva rechnet den Wert beim Export automatisch in Pixel um. Wenn die Datei in eine Druckerei geht, aktivieren Sie in den Download-Optionen das PDF-Druckformat zusammen mit Beschnitt und Schnittmarken. Canva exportiert solche Dateien standardmäßig mit 300 DPI, sodass die Formattabelle auf dieser Seite mit dem übereinstimmt, was Sie als Ergebnis erhalten."
+        },
+        {
+          "title": "Procreate",
+          "icon": "RiBrushLine",
+          "description": "Procreate erlaubt beim Anlegen einer neuen Leinwand die Wahl zwischen Pixeln, Millimetern, Zentimetern und Zoll als Einheit. Stellen Sie auf der Registerkarte Benutzerdefinierte Leinwand die Abmessung in cm ein und geben Sie 300 DPI ein, wenn die Illustration gedruckt werden soll. Denken Sie daran, dass die App umso weniger Ebenen anbietet, je höher das DPI und je größer das Format ist – auf einem iPad Pro mit 8 GB RAM ist die sichere Grenze A3 bei 300 DPI, größere Formate teilen Sie besser in Abschnitte auf oder reduzieren die Auflösung auf 150 DPI."
+        },
+        {
+          "title": "Word, Excel, PowerPoint",
+          "icon": "RiFileTextLine",
+          "description": "Das Microsoft 365-Paket (Word, Excel und PowerPoint) arbeitet mit Zentimetern, und die Bildabmessungen stellen Sie im Panel <strong>Größe und Position</strong> ein. PDF-Dateien, die aus diesen Programmen exportiert werden, behalten standardmäßig eine hohe Qualität, sodass 1 cm bei 300 DPI 118 px entspricht. Wenn Sie eine Präsentation als Bild im PNG- oder JPG-Format speichern, verwendet PowerPoint die Standard-96 DPI, also entspricht 1 cm etwa 38 px – dann hilft unser Umrechner zu prüfen, ob die Datei tatsächlich groß genug für den Druck ist."
+        },
+        {
+          "title": "CSS und HTML",
+          "icon": "RiHtml5Line",
+          "description": "In CSS-Stylesheets wird die Einheit <code>cm</code> durch die feste Formel <code>1cm = 96px ÷ 2,54 ≈ 37,8px</code> umgerechnet. Dieser Wert ändert sich nicht je nach Bildschirm – Sie erhalten unabhängig vom Gerät immer dasselbe Ergebnis. In der Praxis verwendet man für Webschnittstellen die Einheiten <code>px</code>, <code>rem</code> oder <code>em</code> und reserviert <code>cm</code> für Stylesheets, die für den Druck bestimmt sind (<code>@media print</code>). Erst dann gibt das Seitenlayout tatsächlich die physischen Abmessungen eines Papierbogens wieder."
         }
       ]
     },
@@ -95,28 +330,28 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Wann ist dieser Umrechner nützlich?",
+      "title": "Wann lohnt es sich, zu diesem Umrechner zu greifen?",
       "grid": "two",
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "Druckdesign",
-          "description": "Bereiten Sie Bilder mit 300 DPI vor. A4 bei 300 DPI = 2.480 × 3.508 px."
+          "title": "Druckdateien für die Druckerei vorbereiten",
+          "description": "Sie prüfen, dass ein DIN A4-Blatt für den Druck bei 300 DPI 2.480 × 3.508 px misst und ein A3-Plakat 3.508 × 4.961 px einnimmt. Der Umrechner hilft Ihnen, die Situation zu vermeiden, in der die Druckerei die Datei wegen zu niedriger Auflösung ablehnt."
         },
         {
           "icon": "RiImageLine",
-          "title": "Großformat",
-          "description": "Banner und Plakate: 150 DPI. Banner mit 100 cm = 5.906 px."
+          "title": "Grafiken für eine Webseite",
+          "description": "Wenn Sie ein Banner mit den Maßen 20 × 6 cm entworfen haben, erfahren Sie, dass es bei 96 DPI 756 × 227 px entspricht. Das ist genau die Größe, die sich lohnt in den Code der Seite oder in eine CMS-Vorlage einzufügen."
         },
         {
-          "icon": "RiArtboardLine",
-          "title": "Web-Grafiken",
-          "description": "Bildschirmauflösung 72–96 DPI."
+          "icon": "RiCameraLine",
+          "title": "Personalausweis- und Passbilder",
+          "description": "Der ICAO-Standard für biometrische Pass- und Personalausweisfotos, der in Deutschland und den meisten Ländern verwendet wird (3,5 × 4,5 cm), entspricht exakt 413 × 531 px bei 300 DPI. Sie geben diese Werte einfach in der Kamera oder im Editor ein, damit die Datei die behördlichen Anforderungen erfüllt."
         },
         {
-          "icon": "RiLayoutLine",
-          "title": "Fotografie",
-          "description": "Prüfen Sie, ob die Kameraauflösung für eine Druckgröße ausreicht."
+          "icon": "RiContactsBookLine",
+          "title": "Visitenkarten und Firmenmaterialien",
+          "description": "Eine europäische Visitenkarte (8,5 × 5,5 cm) entspricht bei 300 DPI 1.004 × 650 px, während eine amerikanische (3,5 × 2 in) 1.050 × 600 px ergibt. Nach Hinzufügen eines Beschnitts von 3 mm lohnt es sich, die Datei etwa 35 px größer pro Seite zu gestalten."
         }
       ]
     },
@@ -125,105 +360,25 @@
       "variant": "line"
     },
     {
-      "type": "sectionSteps",
-      "title": "Was unterscheidet diesen Umrechner?",
-      "grid": "two",
-      "items": [
+      "type": "sectionTable",
+      "title": "Vergleich der Einheiten Zentimeter und Pixel",
+      "labelHeader": "Eigenschaft",
+      "cols": ["Zentimeter (cm)", "Pixel (px)"],
+      "rows": [
         {
-          "icon": "RiShieldCheckLine",
-          "title": "Volle Privatsphäre",
-          "description": "Alle Berechnungen werden lokal in Ihrem Browser durchgeführt."
+          "label": "Einheitstyp",
+          "values": ["Physisch und greifbar", "Digital und bildschirmbasiert"]
+        },
+        { "label": "Geräteabhängigkeit", "values": ["Immer gleich", "Hängt vom DPI oder PPI ab"] },
+        {
+          "label": "Druck bei 300 DPI",
+          "values": ["1 cm entspricht 118 px", "1 px entspricht 0,0085 cm"]
         },
         {
-          "icon": "RiTimeLine",
-          "title": "Echtzeit-Ergebnisse",
-          "description": "Das Ergebnis aktualisiert sich während der Eingabe."
+          "label": "Bildschirm bei 96 DPI",
+          "values": ["1 cm entspricht 37,8 px", "1 px entspricht 0,0265 cm"]
         },
-        {
-          "icon": "RiArrowLeftRightLine",
-          "title": "Bidirektionale Umrechnung",
-          "description": "Rechnen Sie mit einem Klick in beide Richtungen um."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Referenztabelle",
-          "description": "Tabelle mit gängigen Werten und kontextbezogenen Beschreibungen."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Wie funktioniert die Umrechnung?",
-      "html": "<p class=\"text-mid mb-4\">Formel: Pixel = cm × DPI / 2,54. Bei 300 DPI: 1 cm = 118,11 Pixel.</p><p class=\"text-mid\">Mehr DPI = mehr Pixel pro cm = schärferer Druck. 300 DPI ist der professionelle Standard.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Wie funktioniert die Umrechnung?",
-      "html": "<p class=\"text-mid mb-4\">Formel: Pixel = cm × DPI / 2,54. Bei 300 DPI: 1 cm = 118,11 Pixel.</p><p class=\"text-mid\">Mehr DPI = mehr Pixel pro cm = schärferer Druck. 300 DPI ist der professionelle Standard.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionFeatureComparison",
-      "title": "DPI-Auflösungen im Vergleich",
-      "featureLabel": "Eigenschaft",
-      "plans": [
-        {
-          "id": "unit1",
-          "name": "300 DPI (Druck)"
-        },
-        {
-          "id": "unit2",
-          "name": "72 DPI (Bildschirm)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "10 cm",
-          "values": {
-            "unit1": "1.181 px",
-            "unit2": "283 px"
-          }
-        },
-        {
-          "name": "A4 Breite (21 cm)",
-          "values": {
-            "unit1": "2.480 px",
-            "unit2": "595 px"
-          }
-        },
-        {
-          "name": "A4 Höhe (29,7 cm)",
-          "values": {
-            "unit1": "3.508 px",
-            "unit2": "842 px"
-          }
-        },
-        {
-          "name": "Anwendung",
-          "values": {
-            "unit1": "Professioneller Druck",
-            "unit2": "Web-Grafiken"
-          }
-        },
-        {
-          "name": "Qualität",
-          "values": {
-            "unit1": "Scharf in jeder Größe",
-            "unit2": "Nur für Bildschirm"
-          }
-        }
+        { "label": "DIN A4 Format", "values": ["21 × 29,7 cm", "2.480 × 3.508 px (300 DPI)"] }
       ]
     },
     {
@@ -232,16 +387,56 @@
     },
     {
       "type": "faq",
-      "title": "Häufig gestellte Fragen",
+      "title": "Häufige Fragen zur Umrechnung cm in px",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Wie viele Pixel sind 1 cm bei 300 DPI?",
-          "answer": "1 cm bei 300 DPI = 118,11 Pixel."
+          "question": "Wie viele Pixel hat 1 cm?",
+          "answer": "Alles hängt von der Auflösung ab, die Sie einstellen. Beim Bildschirmstandard von 96 DPI entspricht ein Zentimeter etwa 38 Pixeln, während es bei den früher in Bildschirmgrafiken verwendeten 72 DPI nur 28 Pixel sind. Im Druck, wo meist 300 DPI gelten, entspricht derselbe Zentimeter bereits etwa 118 Pixeln."
         },
         {
-          "question": "Werden die Berechnungen lokal durchgeführt?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "question": "Wie rechnet man Zentimeter in Pixel um?",
+          "answer": "Am einfachsten geben Sie die Anzahl der Zentimeter in das Feld des Umrechners ein und wählen das DPI, das Sie interessiert – das Ergebnis erscheint sofort. Wenn Sie es lieber von Hand berechnen, verwenden Sie die Formel: Anzahl der Pixel = Anzahl der Zentimeter × DPI ÷ 2,54. Für 5 cm bei 300 DPI erhalten Sie 5 × 300 ÷ 2,54, also etwa 591 Pixel."
+        },
+        {
+          "question": "Wie viel sind 1 Pixel in Zentimetern?",
+          "answer": "Ein Pixel auf einem Standardbildschirm mit 96 DPI misst etwa 0,0265 cm und bei den im Druck verwendeten 300 DPI nur 0,0085 cm. Um eine beliebige Pixelzahl in Zentimeter umzurechnen, teilen Sie sie durch den DPI-Wert und multiplizieren das Ergebnis mit 2,54."
+        },
+        {
+          "question": "Wie viele Pixel haben 5 cm?",
+          "answer": "Bei der Standard-Bildschirmauflösung von 96 DPI entsprechen fünf Zentimeter etwa 189 Pixeln. Wenn Sie eine Grafik für den Druck bei 300 DPI vorbereiten, wächst dieselbe Länge auf 591 Pixel an und bei 600 DPI erreicht sie bereits 1.181 Pixel."
+        },
+        {
+          "question": "Wie viele Pixel haben 10 cm?",
+          "answer": "Zehn Zentimeter entsprechen bei 96 DPI etwa 378 Pixeln. Im Druck bei 300 DPI sind dieselben 10 cm genau 1.181 Pixel – ein Wert, den man sich merken sollte, denn er taucht in der Fotografie als kürzere Seite des klassischen 10 × 15 cm Abzugs auf."
+        },
+        {
+          "question": "Wie viele Pixel haben 20 cm?",
+          "answer": "Zwanzig Zentimeter entsprechen 756 Pixeln auf einem 96 DPI-Bildschirm und 2.362 Pixeln im 300 DPI-Druck. Wenn Sie für eine Plakatwand entwerfen, wo 30–72 DPI ausreichen, sinkt dieselbe Breite auf 236–567 Pixel."
+        },
+        {
+          "question": "Wie viele Pixel hat ein DIN A4 bei 300 DPI?",
+          "answer": "Ein DIN A4-Blatt misst 21 × 29,7 cm, was bei 300 DPI genau 2.480 × 3.508 Pixel ergibt. Bei 150 DPI sind dieselben Abmessungen 1.240 × 1.754 Pixel und beim Bildschirmwert von 96 DPI nur 794 × 1.123 Pixel."
+        },
+        {
+          "question": "Wie viele Pixel hat ein 10×15 cm Foto?",
+          "answer": "Ein Standard-Fotoabzug von 10 × 15 cm entspricht bei 300 DPI 1.181 × 1.772 Pixeln. Wenn die Datei aus der Kamera mindestens diese Auflösung hat, können Sie den Abzug bedenkenlos bestellen – die Qualität wird hervorragend."
+        },
+        {
+          "question": "Wie viele Pixel hat ein Passbild (35 × 45 mm)?",
+          "answer": "Der ICAO-Standard für biometrische Pass- und Personalausweisfotos, der in Deutschland und den meisten Ländern verwendet wird, misst 3,5 × 4,5 cm, was bei 300 DPI 413 × 531 Pixel ergibt. Die Behörden akzeptieren auch eine digitale Version mit etwas höherer Auflösung, daher ist eine Datei von 492 × 633 px eine gute Wahl, die den üblichen Anforderungen der meisten Ämter entspricht."
+        },
+        {
+          "question": "Wie stellt man Zentimeter auf Pixel in Photoshop oder Canva um?",
+          "answer": "Öffnen Sie in Photoshop das Fenster Bild &rsaquo; Bildgröße, ändern Sie die Einheit auf Zentimeter und geben Sie die Abmessungen zusammen mit dem gewünschten DPI ein. In Canva wählen Sie Design erstellen &rsaquo; Benutzerdefinierte Größe, schalten Sie die Einheit auf cm um und geben Sie die benötigte Abmessung ein – das Programm rechnet die Datei beim Export automatisch in Pixel um. Ausführliche Anleitungen für Photoshop, Illustrator, Figma, Canva und Procreate finden Sie im Abschnitt oben."
+        },
+        {
+          "question": "Worin unterscheiden sich DPI und PPI?",
+          "answer": "DPI (dots per inch, also Punkte pro Zoll) ist die Anzahl der Tintenpunkte pro Zoll Material und beschreibt einen Drucker. PPI (pixels per inch, also Pixel pro Zoll) gibt die Anzahl der Pixel pro Zoll Bildschirm an und beschreibt einen Monitor oder ein Display. In der täglichen Arbeit verwenden Designer beide Abkürzungen austauschbar, technisch bezieht sich DPI jedoch auf den Druck und PPI auf Bildschirme."
+        },
+        {
+          "question": "Wie viele Pixel hat ein Zentimeter auf einem Retina-Bildschirm?",
+          "answer": "Retina-Displays von Apple haben eine doppelt so dichte Pixelpackung wie ein klassischer Monitor, aber das Betriebssystem interpretiert die Abmessungen weiterhin so, als hätte das Panel 96 DPI. Deshalb bereitet man Grafiken mit doppelter Auflösung vor (1 cm entspricht 76 px statt 38 px), speichert sie als 96 DPI und exportiert sie mit dem Suffix @2x."
         }
       ]
     },
@@ -251,11 +446,11 @@
     },
     {
       "type": "contactForm",
-      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
-      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "title": "Helfen Sie uns, diesen Umrechner zu verbessern",
+      "description": "Fehlt Ihnen ein Format in den Tabellen, haben Sie einen Berechnungsfehler entdeckt oder möchten Sie eine neue Funktion vorschlagen? Schreiben Sie uns – wir lesen alle Nachrichten persönlich und antworten innerhalb von 24 Stunden.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
-      "imageAlt": "cm na px – Arteon",
-      "defaultSubject": "Feedback: cm-to-px-dpi"
+      "imageAlt": "cm in px Umrechner – Arteon",
+      "defaultSubject": "Feedback: cm in px Umrechner"
     },
     {
       "type": "gap",
@@ -263,7 +458,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Weitere kostenlose Werkzeuge"
+      "title": "Andere Werkzeuge, die Ihnen nützlich sein könnten"
     },
     {
       "type": "gap",

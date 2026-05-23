@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Reken CSS em om naar pixels en andersom.",
-      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+      "featureList": [
+        "Bidirectionele realtime-conversie",
+        "Alle converters op één plek",
+        "Resultaat naar klembord kopiëren",
+        "Lokale berekening in de browser"
+      ]
     },
     "howTo": {
       "name": "Hoe de converter te gebruiken",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "em vs px vs rem",
-      "featureLabel": "Eigenschap",
-      "plans": [
+      "labelHeader": "Eigenschap",
+      "cols": ["em", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "em"
+          "label": "Referentie",
+          "values": ["Ouderlettergrootte", "Vaste pixel"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Referentie",
-          "values": {
-            "unit1": "Ouderlettergrootte",
-            "unit2": "Vaste pixel"
-          }
+          "label": "Cascadeert",
+          "values": ["Ja", "Nee"]
         },
         {
-          "name": "Cascadeert",
-          "values": {
-            "unit1": "Ja",
-            "unit2": "Nee"
-          }
+          "label": "Responsief",
+          "values": ["Ja", "Nee"]
         },
         {
-          "name": "Responsief",
-          "values": {
-            "unit1": "Ja",
-            "unit2": "Nee"
-          }
+          "label": "Toegankelijkheid",
+          "values": ["Respecteert instellingen", "Vaste grootte"]
         },
         {
-          "name": "Toegankelijkheid",
-          "values": {
-            "unit1": "Respecteert instellingen",
-            "unit2": "Vaste grootte"
-          }
-        },
-        {
-          "name": "Voorspelbaarheid",
-          "values": {
-            "unit1": "Contextafhankelijk",
-            "unit2": "Altijd constant"
-          }
+          "label": "Voorspelbaarheid",
+          "values": ["Contextafhankelijk", "Altijd constant"]
         }
       ]
     },

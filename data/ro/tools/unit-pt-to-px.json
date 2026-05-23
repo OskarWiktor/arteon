@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertiți puncte în pixeli și invers.",
-      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+      "featureList": [
+        "Conversie bidirecțională în timp real",
+        "Toate convertoarele într-un singur loc",
+        "Copierea rezultatului în clipboard",
+        "Calcul local în browser"
+      ]
     },
     "howTo": {
       "name": "Cum să utilizați convertorul",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Points (pt) vs Pixels (px)",
-      "featureLabel": "Proprietate",
-      "plans": [
+      "labelHeader": "Proprietate",
+      "cols": ["Points (pt)", "Pixels (px)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Points (pt)"
+          "label": "Definiție",
+          "values": ["1/72 inch", "1/96 inch (CSS)"]
         },
         {
-          "id": "unit2",
-          "name": "Pixels (px)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Definiție",
-          "values": {
-            "unit1": "1/72 inch",
-            "unit2": "1/96 inch (CSS)"
-          }
+          "label": "Utilizare",
+          "values": ["Tipărire, Word, PDF", "Web, CSS, ecrane"]
         },
         {
-          "name": "Utilizare",
-          "values": {
-            "unit1": "Tipărire, Word, PDF",
-            "unit2": "Web, CSS, ecrane"
-          }
+          "label": "12 pt =",
+          "values": ["12 pt", "16 px"]
         },
         {
-          "name": "12 pt =",
-          "values": {
-            "unit1": "12 pt",
-            "unit2": "16 px"
-          }
+          "label": "Text corp",
+          "values": ["10–12 pt", "14–18 px"]
         },
         {
-          "name": "Text corp",
-          "values": {
-            "unit1": "10–12 pt",
-            "unit2": "14–18 px"
-          }
-        },
-        {
-          "name": "Titlu",
-          "values": {
-            "unit1": "18–24 pt",
-            "unit2": "24–32 px"
-          }
+          "label": "Titlu",
+          "values": ["18–24 pt", "24–32 px"]
         }
       ]
     },

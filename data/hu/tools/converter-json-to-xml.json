@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes JSON-t XML-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A JSON szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a XML formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a JSON fajlokat XML formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A JSON szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a XML formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes konvertalo kozvetlenul a bongeszoben alakitja at a JSON fajlokat XML formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "JSON to XML conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JSON vs XML – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["JSON", "XML"],
+      "rows": [
         {
-          "id": "json",
-          "name": "JSON"
+          "label": "Beágyazott adatok",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "xml",
-          "name": "XML",
-          "highlighted": true
+          "label": "Táblázatos adatok",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Sémavalidáció",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Ember által olvasható",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API-szabvány",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Kompakt szintaxis",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Beágyazott adatok",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Táblázatos adatok",
-          "values": {
-            "json": false,
-            "xml": false
-          }
-        },
-        {
-          "name": "Sémavalidáció",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Ember által olvasható",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "API-szabvány",
-          "values": {
-            "json": true,
-            "xml": true
-          }
-        },
-        {
-          "name": "Kompakt szintaxis",
-          "values": {
-            "json": true,
-            "xml": false
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Konverter Unix timestamp til date og omvendt. Nyttig til udviklere og loganalyse. Ingen registrering krævet.",
-      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+      "featureList": [
+        "Tovejs-konvertering i realtid",
+        "Alle konvertere samlet ét sted",
+        "Kopier resultat til udklipsholder",
+        "Lokal beregning i browseren"
+      ]
     },
     "howTo": {
       "name": "Sådan bruger du konverteren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Unix-tidsstempel vs ISO-dato",
-      "featureLabel": "Egenskab",
-      "plans": [
+      "labelHeader": "Egenskab",
+      "cols": ["Unix-tidsstempel", "ISO 8601"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Unix-tidsstempel"
+          "label": "Format",
+          "values": ["1709251200", "2024-03-01T00:00:00Z"]
         },
         {
-          "id": "unit2",
-          "name": "ISO 8601",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Format",
-          "values": {
-            "unit1": "1709251200",
-            "unit2": "2024-03-01T00:00:00Z"
-          }
+          "label": "Læsbarhed",
+          "values": ["Kun for maskiner", "Læsbar for mennesker"]
         },
         {
-          "name": "Læsbarhed",
-          "values": {
-            "unit1": "Kun for maskiner",
-            "unit2": "Læsbar for mennesker"
-          }
+          "label": "Tidszone",
+          "values": ["Altid UTC", "Inkluderer tidszone"]
         },
         {
-          "name": "Tidszone",
-          "values": {
-            "unit1": "Altid UTC",
-            "unit2": "Inkluderer tidszone"
-          }
+          "label": "Sammenligning",
+          "values": ["Simpel (større = senere)", "Kræver parsing"]
         },
         {
-          "name": "Sammenligning",
-          "values": {
-            "unit1": "Simpel (større = senere)",
-            "unit2": "Kræver parsing"
-          }
-        },
-        {
-          "name": "Lagring",
-          "values": {
-            "unit1": "4–8 bytes",
-            "unit2": "20+ bytes"
-          }
+          "label": "Lagring",
+          "values": ["4–8 bytes", "20+ bytes"]
         }
       ]
     },

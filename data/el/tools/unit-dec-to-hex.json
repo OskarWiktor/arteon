@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Μετατρέψτε δεκαδικούς σε δεκαεξαδικούς αριθμούς.",
-      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+      "featureList": [
+        "Αμφίδρομη μετατροπή σε πραγματικό χρόνο",
+        "Όλοι οι μετατροπείς σε ένα μέρος",
+        "Αντιγραφή αποτελέσματος στο πρόχειρο",
+        "Τοπικός υπολογισμός στον browser"
+      ]
     },
     "howTo": {
       "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimal vs Hexadecimal",
-      "featureLabel": "Ιδιότητα",
-      "plans": [
+      "labelHeader": "Ιδιότητα",
+      "cols": ["Decimal (base-10)", "Hexadecimal (base-16)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimal (base-10)"
+          "label": "Ψηφία",
+          "values": ["0–9", "0–9, A–F"]
         },
         {
-          "id": "unit2",
-          "name": "Hexadecimal (base-16)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Ψηφία",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–9, A–F"
-          }
+          "label": "Παράδειγμα: 255",
+          "values": ["255", "FF"]
         },
         {
-          "name": "Παράδειγμα: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "FF"
-          }
+          "label": "Παράδειγμα: 1000",
+          "values": ["1000", "3E8"]
         },
         {
-          "name": "Παράδειγμα: 1000",
-          "values": {
-            "unit1": "1000",
-            "unit2": "3E8"
-          }
+          "label": "Χρήση",
+          "values": ["Καθημερινά μαθηματικά", "Χρώματα, διευθύνσεις, δεδομένα"]
         },
         {
-          "name": "Χρήση",
-          "values": {
-            "unit1": "Καθημερινά μαθηματικά",
-            "unit2": "Χρώματα, διευθύνσεις, δεδομένα"
-          }
-        },
-        {
-          "name": "Συμπαγές",
-          "values": {
-            "unit1": "Τυπικό",
-            "unit2": "Πιο συμπαγές από το δυαδικό"
-          }
+          "label": "Συμπαγές",
+          "values": ["Τυπικό", "Πιο συμπαγές από το δυαδικό"]
         }
       ]
     },

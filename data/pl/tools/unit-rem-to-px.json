@@ -184,55 +184,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "rem vs px – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
+      "labelHeader": "Cecha",
+      "cols": ["rem", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "rem"
+          "label": "Typ",
+          "values": ["Relatywna (root)", "Absolutna"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Typ",
-          "values": {
-            "unit1": "Relatywna (root)",
-            "unit2": "Absolutna"
-          }
+          "label": "Odniesienie",
+          "values": ["font-size <html>", "Stała wartość"]
         },
         {
-          "name": "Odniesienie",
-          "values": {
-            "unit1": "font-size <html>",
-            "unit2": "Stała wartość"
-          }
+          "label": "Dostępność",
+          "values": ["Skaluje się z preferencjami", "Stała niezależnie od ustawień"]
         },
         {
-          "name": "Dostępność",
-          "values": {
-            "unit1": "Skaluje się z preferencjami",
-            "unit2": "Stała niezależnie od ustawień"
-          }
+          "label": "Responsywność",
+          "values": ["Automatyczna", "Wymaga media queries"]
         },
         {
-          "name": "Responsywność",
-          "values": {
-            "unit1": "Automatyczna",
-            "unit2": "Wymaga media queries"
-          }
-        },
-        {
-          "name": "Tailwind",
-          "values": {
-            "unit1": "Domyślna jednostka",
-            "unit2": "Używana w konfiguracji"
-          }
+          "label": "Tailwind",
+          "values": ["Domyślna jednostka", "Używana w konfiguracji"]
         }
       ]
     },

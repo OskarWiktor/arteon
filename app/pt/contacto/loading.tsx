@@ -1,4 +1,4 @@
-import ContactPageSkeleton from '@/components/ui/skeletons/ContactPageSkeleton';
+import ContactPageSkeleton from '@/components/organisms/skeletons/ContactPageSkeleton';
 
 export default function Loading() {
   return <ContactPageSkeleton />;

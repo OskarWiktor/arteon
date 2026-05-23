@@ -1,28 +1,6 @@
 import type { ReactNode } from 'react';
 import type { Locale } from '@/types/locale';
 
-export type BadgeVariant = 'default' | 'selected' | 'success' | 'error' | 'neutral' | 'dark' | 'warning' | 'info' | 'tech';
-export type BadgeSize = 'sm' | 'md' | 'lg';
-export type BadgeElement = 'span' | 'button' | 'label' | 'a';
-
-export interface BadgeProps {
-  children?: ReactNode;
-  text?: string;
-  variant?: BadgeVariant;
-  size?: BadgeSize;
-  as?: BadgeElement;
-  className?: string;
-  onClick?: () => void;
-  htmlFor?: string;
-  type?: 'button' | 'submit' | 'reset';
-  'aria-label'?: string;
-  href?: string;
-  download?: string;
-  target?: string;
-  rel?: string;
-  disabled?: boolean;
-}
-
 export type SectionPricesPlan = {
   name: string;
   platform?: string;
@@ -32,9 +10,9 @@ export type SectionPricesPlan = {
   lastPlan?: boolean;
   badgeLabel?: string;
   btnOne?: string;
-  btnOneLink?: string;
+  btnOneHref?: string;
   btnTwo?: string;
-  btnTwoLink?: string;
+  btnTwoHref?: string;
 };
 
 export type Note = {
@@ -52,7 +30,13 @@ export type SectionPricesProps = {
   legalNote?: string;
 };
 
-export type AdVariant = 'tool-banner' | 'responsive' | 'in-article' | 'in-article-new' | 'autorelaxed' | 'vertical';
+export type AdVariant =
+  | 'tool-banner'
+  | 'responsive'
+  | 'in-article'
+  | 'in-article-new'
+  | 'autorelaxed'
+  | 'vertical';
 
 export interface AdSenseProps {
   variant: AdVariant;
@@ -61,19 +45,6 @@ export interface AdSenseProps {
   locale?: string;
 }
 
-export type Crumb = { href: string; label: string };
-
-export type BreadcrumbsProps = {
-  second: Crumb;
-  third: Crumb;
-  fourth?: Crumb;
-  className?: string;
-  includeJsonLd?: boolean;
-  siteUrl?: string;
-  size?: 'default' | 'compact';
-  locale?: Locale;
-};
-
 export type FeatureItem = {
   title: string;
   description?: ReactNode;
@@ -81,6 +52,9 @@ export type FeatureItem = {
   icon?: ReactNode;
 };
 
-export type GapSize = 'xs' | 'sm' | 'md' | 'xl';
+export type DividerSize = 'xs' | 'sm' | 'md' | 'xl';
 
 export type Selections = Record<number, string[]>;
+
+export type ButtonSize = 'small' | 'medium';
+export type ButtonVariant = 'normal' | 'accent';

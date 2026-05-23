@@ -13,7 +13,7 @@
   },
   "footer": {
     "copyright": "Todos os direitos reservados.",
-    "description": "Ferramentas online gratuitas para programadores web, designers e especialistas em marketing.",
+    "description": "Ferramentas gratuitas para programadores web, designers e especialistas em marketing.",
     "companyDataLabel": "Dados da empresa",
     "toolsLabel": "Ferramentas",
     "legalLabel": "Documentos legais",
@@ -80,7 +80,7 @@
     "success": "Mensagem enviada! Responderemos o mais brevemente possível."
   },
   "toolsCarousel": {
-    "defaultTitle": "Ferramentas online gratuitas",
+    "defaultTitle": "Ferramentas gratuitas",
     "seeAllTools": "Ver todas as ferramentas",
     "carouselLabel": "Carrossel de ferramentas",
     "scrollLeft": "Deslocar para a esquerda",

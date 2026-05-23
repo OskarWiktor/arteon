@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte soubory TIFF na bezztratove PNG. Zachovejte plnou kvalitu skenu. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Převést TIFF na PNG", "Konverze TIFF do PNG", "Převodník TIFF na PNG zdarma"]
+      "featureList": [
+        "TIFF to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Převést TIFF na PNG",
+        "Konverze TIFF do PNG",
+        "Převodník TIFF na PNG zdarma"
+      ]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -158,85 +167,51 @@
     {
       "type": "sectionInfo",
       "title": "Převod TIFF na PNG v praxi",
-      "html": "<p class=\"text-mid mb-4\">Když jsou TIFF soubory potřeba pro úpravu v grafických programech nebo pro weby s průhledností, PNG je vhodný formát – bezeztrátový a univerzálně kompatibilní.</p><p class=\"text-mid mb-4\">PNG zachovává plnou kvalitu a průhlednost TIFF originálu. Soubory jsou menší než TIFF, ale větší než JPEG/WebP. Pro Figmu, Canvu nebo Photoshop je PNG ideální.</p><p class=\"text-mid\">Pro přípravu výstupů ze skenerů a archivních obrázků pro online použití nabízí lokální převod bezpečný a rychlý workflow.</p>"
+      "html": "<p class=\"text-mid mb-4\">Když jsou TIFF soubory potřeba pro úpravu v grafických programech nebo pro weby s průhledností, PNG je vhodný formát – bezeztrátový a univerzálně kompatibilní.</p><p class=\"text-mid mb-4\">PNG zachovává plnou kvalitu a průhlednost TIFF originálu. Soubory jsou menší než TIFF, ale větší než JPEG/WebP. Pro Figmu, Canvu nebo Photoshop je PNG ideální.</p><p class=\"text-mid\">Pro přípravu výstupů ze skenerů a archivních obrázků pro použití nabízí lokální převod bezpečný a rychlý workflow.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PNG – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["TIFF", "PNG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Ztrátová komprese",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Bezeztrátová komprese",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Průhlednost (alfa kanál)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Podpora animací",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Podpora webových prohlížečů",
+          "values": ["Pouze Safari", "Všechny prohlížeče"]
+        },
+        {
+          "label": "Hloubka barev",
+          "values": ["8/16/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Malá velikost souboru",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Ztrátová komprese",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Bezeztrátová komprese",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Průhlednost (alfa kanál)",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Podpora animací",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Podpora webových prohlížečů",
-          "values": {
-            "tiff": "Pouze Safari",
-            "png": "Všechny prohlížeče"
-          }
-        },
-        {
-          "name": "Hloubka barev",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Malá velikost souboru",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "tiff": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

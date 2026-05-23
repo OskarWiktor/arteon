@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Muunna desimaaliluvut heksadesimaaliluvuiksi ja päinvastoin.",
-      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+      "featureList": [
+        "Kaksisuuntainen reaaliaikainen muunnos",
+        "Kaikki muuntimet yhdessä paikassa",
+        "Kopioi tulos leikepöydälle",
+        "Paikallinen laskenta selaimessa"
+      ]
     },
     "howTo": {
       "name": "Näin käytät muunninta",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimal vs Hexadecimal",
-      "featureLabel": "Ominaisuus",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["Decimal (base-10)", "Hexadecimal (base-16)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimal (base-10)"
+          "label": "Numerot",
+          "values": ["0–9", "0–9, A–F"]
         },
         {
-          "id": "unit2",
-          "name": "Hexadecimal (base-16)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Numerot",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–9, A–F"
-          }
+          "label": "Esimerkki: 255",
+          "values": ["255", "FF"]
         },
         {
-          "name": "Esimerkki: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "FF"
-          }
+          "label": "Esimerkki: 1000",
+          "values": ["1000", "3E8"]
         },
         {
-          "name": "Esimerkki: 1000",
-          "values": {
-            "unit1": "1000",
-            "unit2": "3E8"
-          }
+          "label": "Käyttö",
+          "values": ["Jokapäiväinen laskenta", "Värit, osoitteet, data"]
         },
         {
-          "name": "Käyttö",
-          "values": {
-            "unit1": "Jokapäiväinen laskenta",
-            "unit2": "Värit, osoitteet, data"
-          }
-        },
-        {
-          "name": "Tiiviys",
-          "values": {
-            "unit1": "Standardi",
-            "unit2": "Tiiviimpi kuin binääri"
-          }
+          "label": "Tiiviys",
+          "values": ["Standardi", "Tiiviimpi kuin binääri"]
         }
       ]
     },

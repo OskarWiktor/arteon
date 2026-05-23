@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "PNG-Grafiken in GIF umwandeln. Ideal fur einfache Icons und Grafiken. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
-      "featureList": ["Konvertierung zu GIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
-      "alternateName": ["PNG in GIF umwandeln", "PNG zu GIF konvertieren", "Kostenloser PNG-zu-GIF-Konverter"]
+      "featureList": [
+        "Konvertierung zu GIF",
+        "Qualitätsanpassung (60-95%)",
+        "Stapelkonvertierung",
+        "Lokale Verarbeitung im Browser"
+      ],
+      "alternateName": [
+        "PNG in GIF umwandeln",
+        "PNG zu GIF konvertieren",
+        "Kostenloser PNG-zu-GIF-Konverter"
+      ]
     },
     "howTo": {
       "name": "PNG zu GIF konvertieren",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs GIF – Formatvergleich",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["PNG", "GIF"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG"
+          "label": "Verlustbehaftete Komprimierung",
+          "values": ["—", "—"]
         },
         {
-          "id": "gif",
-          "name": "GIF",
-          "highlighted": true
+          "label": "Verlustfreie Komprimierung",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparenz (Alphakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsunterstützung",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Webbrowser-Unterstützung",
+          "values": ["Alle Browser", "Alle Browser"]
+        },
+        {
+          "label": "Farbtiefe",
+          "values": ["8/16-bit", "8-bit (256)"]
+        },
+        {
+          "label": "Kompakte Dateigröße",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadaten (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Verlustbehaftete Komprimierung",
-          "values": {
-            "png": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Verlustfreie Komprimierung",
-          "values": {
-            "png": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Transparenz (Alphakanal)",
-          "values": {
-            "png": true,
-            "gif": true
-          }
-        },
-        {
-          "name": "Animationsunterstützung",
-          "values": {
-            "png": false,
-            "gif": true
-          }
-        },
-        {
-          "name": "Webbrowser-Unterstützung",
-          "values": {
-            "png": "Alle Browser",
-            "gif": "Alle Browser"
-          }
-        },
-        {
-          "name": "Farbtiefe",
-          "values": {
-            "png": "8/16-bit",
-            "gif": "8-bit (256)"
-          }
-        },
-        {
-          "name": "Kompakte Dateigröße",
-          "values": {
-            "png": false,
-            "gif": false
-          }
-        },
-        {
-          "name": "Metadaten (EXIF)",
-          "values": {
-            "png": false,
-            "gif": false
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

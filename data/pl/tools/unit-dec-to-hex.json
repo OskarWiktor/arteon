@@ -185,55 +185,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Dziesiętny (DEC) vs Szesnastkowy (HEX) – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
+      "labelHeader": "Cecha",
+      "cols": ["Dziesiętny (DEC)", "Szesnastkowy (HEX)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Dziesiętny (DEC)"
+          "label": "Podstawa",
+          "values": ["10", "16"]
         },
         {
-          "id": "unit2",
-          "name": "Szesnastkowy (HEX)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Podstawa",
-          "values": {
-            "unit1": "10",
-            "unit2": "16"
-          }
+          "label": "Cyfry",
+          "values": ["0–9", "0–9, A–F"]
         },
         {
-          "name": "Cyfry",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–9, A–F"
-          }
+          "label": "Bajt (max)",
+          "values": ["255", "FF"]
         },
         {
-          "name": "Bajt (max)",
-          "values": {
-            "unit1": "255",
-            "unit2": "FF"
-          }
+          "label": "Prefiks",
+          "values": ["Brak", "0x (programowanie)"]
         },
         {
-          "name": "Prefiks",
-          "values": {
-            "unit1": "Brak",
-            "unit2": "0x (programowanie)"
-          }
-        },
-        {
-          "name": "Kolory CSS",
-          "values": {
-            "unit1": "rgb(255, 0, 0)",
-            "unit2": "#FF0000"
-          }
+          "label": "Kolory CSS",
+          "values": ["rgb(255, 0, 0)", "#FF0000"]
         }
       ]
     },

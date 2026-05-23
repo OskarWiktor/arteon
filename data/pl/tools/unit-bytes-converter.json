@@ -2,7 +2,7 @@
   "toolKey": "bytesConverter",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter bajtów – B, KB, MB, GB, TB w jednym miejscu",
+    "title": "Darmowy konwerter bajtów na kilobajty - B na Kb",
     "description": "Przelicz bajty na KB, MB, GB i TB w systemie binarnym (1024). Sprawdź, dlaczego dysk 500 GB pokazuje tylko 465 GB. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-bajtow"
@@ -185,55 +185,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "System binarny (1024) vs System dziesiętny (1000) – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
+      "labelHeader": "Cecha",
+      "cols": ["System binarny (1024)", "System dziesiętny (1000)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "System binarny (1024)"
+          "label": "Mnożnik",
+          "values": ["1 024", "1 000"]
         },
         {
-          "id": "unit2",
-          "name": "System dziesiętny (1000)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Mnożnik",
-          "values": {
-            "unit1": "1 024",
-            "unit2": "1 000"
-          }
+          "label": "Standard",
+          "values": ["IEC (KiB, MiB, GiB)", "SI (KB, MB, GB)"]
         },
         {
-          "name": "Standard",
-          "values": {
-            "unit1": "IEC (KiB, MiB, GiB)",
-            "unit2": "SI (KB, MB, GB)"
-          }
+          "label": "Użycie",
+          "values": ["Systemy operacyjne", "Producenci dysków"]
         },
         {
-          "name": "Użycie",
-          "values": {
-            "unit1": "Systemy operacyjne",
-            "unit2": "Producenci dysków"
-          }
+          "label": "1 TB =",
+          "values": ["1 099 511 627 776 B", "1 000 000 000 000 B"]
         },
         {
-          "name": "1 TB =",
-          "values": {
-            "unit1": "1 099 511 627 776 B",
-            "unit2": "1 000 000 000 000 B"
-          }
-        },
-        {
-          "name": "Różnica",
-          "values": {
-            "unit1": "Większe jednostki",
-            "unit2": "Mniejsze jednostki"
-          }
+          "label": "Różnica",
+          "values": ["Większe jednostki", "Mniejsze jednostki"]
         }
       ]
     },

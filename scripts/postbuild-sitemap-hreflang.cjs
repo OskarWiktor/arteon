@@ -60,7 +60,9 @@ function main() {
   }
 
   // 3. Delete ALL old sitemap-*.xml files (except sitemap.xml itself)
-  const oldFiles = fs.readdirSync(PUBLIC_DIR).filter((f) => f.startsWith('sitemap-') && f.endsWith('.xml'));
+  const oldFiles = fs
+    .readdirSync(PUBLIC_DIR)
+    .filter(f => f.startsWith('sitemap-') && f.endsWith('.xml'));
   for (const f of oldFiles) {
     fs.unlinkSync(path.join(PUBLIC_DIR, f));
   }
@@ -75,23 +77,30 @@ function main() {
   // 5. Write sitemap index (with <lastmod> per sub-sitemap for efficient Google re-crawling)
   const sitemapFiles = fs
     .readdirSync(PUBLIC_DIR)
-    .filter((f) => f.startsWith('sitemap-') && f.endsWith('.xml'))
+    .filter(f => f.startsWith('sitemap-') && f.endsWith('.xml'))
     .sort();
 
   const entries = sitemapFiles
-    .map((f) => {
+    .map(f => {
       const content = fs.readFileSync(path.join(PUBLIC_DIR, f), 'utf8');
-      const lastmods = [...content.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((m) => m[1]);
+      const lastmods = [...content.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map(m => m[1]);
       const newest = lastmods.sort().pop();
       const lastmodTag = newest ? `<lastmod>${newest}</lastmod>` : '';
       return `<sitemap><loc>${SITE_URL}/${f}</loc>${lastmodTag}</sitemap>`;
     })
     .join('\n');
 
-  const sitemapIndex = ['<?xml version="1.0" encoding="UTF-8"?>', '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', entries, '</sitemapindex>'].join('\n');
+  const sitemapIndex = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    entries,
+    '</sitemapindex>',
+  ].join('\n');
 
   fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap.xml'), sitemapIndex, 'utf8');
-  console.log(`✓ sitemap.xml index → ${sitemapFiles.length} sitemaps, ${urlBlocks.length} total URLs`);
+  console.log(
+    `✓ sitemap.xml index → ${sitemapFiles.length} sitemaps, ${urlBlocks.length} total URLs`,
+  );
 }
 
 main();

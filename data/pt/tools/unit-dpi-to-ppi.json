@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Compreenda a diferença entre DPI e PPI. Para design de impressão e ecrã.",
-      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+      "featureList": [
+        "Conversão bidirecional em tempo real",
+        "Todos os conversores num só lugar",
+        "Copiar resultado para a área de transferência",
+        "Cálculo local no navegador"
+      ]
     },
     "howTo": {
       "name": "Como usar o conversor",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI vs PPI – comparação",
-      "featureLabel": "Característica",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["DPI (pontos por polegada)", "PPI (pixels por polegada)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "DPI (pontos por polegada)"
+          "label": "Aplica-se a",
+          "values": ["Impressoras", "Telas e imagens"]
         },
         {
-          "id": "unit2",
-          "name": "PPI (pixels por polegada)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Aplica-se a",
-          "values": {
-            "unit1": "Impressoras",
-            "unit2": "Telas e imagens"
-          }
+          "label": "Mede",
+          "values": ["Pontos físicos de tinta", "Pixels digitais"]
         },
         {
-          "name": "Mede",
-          "values": {
-            "unit1": "Pontos físicos de tinta",
-            "unit2": "Pixels digitais"
-          }
+          "label": "Valores típicos",
+          "values": ["600–4.800 DPI", "72–460 PPI"]
         },
         {
-          "name": "Valores típicos",
-          "values": {
-            "unit1": "600–4.800 DPI",
-            "unit2": "72–460 PPI"
-          }
+          "label": "Qualidade de impressão",
+          "values": ["Mais = mais fino", "300 PPI padrão"]
         },
         {
-          "name": "Qualidade de impressão",
-          "values": {
-            "unit1": "Mais = mais fino",
-            "unit2": "300 PPI padrão"
-          }
-        },
-        {
-          "name": "Confusão",
-          "values": {
-            "unit1": "Usado erroneamente para imagens",
-            "unit2": "Termo correto"
-          }
+          "label": "Confusão",
+          "values": ["Usado erroneamente para imagens", "Termo correto"]
         }
       ]
     },

@@ -2,13 +2,13 @@
   "toolKey": "gifToPng",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter GIF na PNG – wyeksportuj klatkę za darmo",
-    "description": "Wyeksportuj pierwszą klatkę GIF-a jako statyczny PNG w przeglądarce. Bez utraty jakości, bez limitu i rejestracji. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
+    "title": "Darmowy konwerter formatu GIF na PNG bez limitu plików i rejestracji",
+    "description": "Wyeksportuj pierwszą klatkę GIF-a jako statyczny PNG w przeglądarce. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-gif-na-png"
   },
   "hero": {
-    "title": "Konwerter GIF na PNG – statyczny obraz z animacji",
+    "title": "Darmowy konwerter formatu GIF na PNG – statyczny obraz z animacji",
     "description": "Wyeksportuj pierwszą klatkę animowanego GIF-a jako statyczny PNG. Zachowaj przezroczystość i pełną jakość.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter GIF na PNG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana GIF na PNG online", "Eksport klatki GIF do PNG"],
+      "alternateName": ["Zamiana GIF na PNGport klatki GIF do PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter GIF na PNG online. Wyeksportuj pierwszą klatkę GIF-a jako statyczny obraz. Bez limitu i rejestracji.",
-      "featureList": ["Eksport pierwszej klatki GIF", "Zachowanie przezroczystości", "Konwersja wielu plików", "Przetwarzanie lokalne"]
+      "description": "Darmowy konwerter GIF na PNGportuj pierwszą klatkę GIF-a jako statyczny obraz. Bez limitu i rejestracji.",
+      "featureList": [
+        "Eksport pierwszej klatki GIF",
+        "Zachowanie przezroczystości",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić GIF na PNG online",
+      "name": "Jak zamienić GIF na PNG",
       "description": "Instrukcja konwersji plików GIF na format PNG.",
       "steps": [
         {
@@ -156,78 +161,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs PNG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["GIF", "PNG"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Kompresja stratna",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8-bit (256)", "8/16-bit"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "gif": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "gif": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "gif": "Wszystkie przeglądarki",
-            "png": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "gif": "8-bit (256)",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "gif": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

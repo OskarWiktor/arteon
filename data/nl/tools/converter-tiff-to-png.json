@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer TIFF-bestanden naar verliesvrij PNG. Behoud volledige kwaliteit van scans. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
-      "alternateName": ["TIFF naar PNG omzetten", "TIFF naar PNG conversie", "Gratis TIFF naar PNG converter"]
+      "featureList": [
+        "TIFF to PNG conversion",
+        "Lossless PNG output",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "TIFF naar PNG omzetten",
+        "TIFF naar PNG conversie",
+        "Gratis TIFF naar PNG converter"
+      ]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -158,85 +167,51 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-naar-PNG-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">Wanneer TIFF-bestanden nodig zijn voor verdere bewerking in grafische programma's of voor websites met transparantie-eisen, is PNG het geschikte doelformaat – verliesvrij en universeel compatibel.</p><p class=\"text-mid mb-4\">PNG behoudt de volledige beeldkwaliteit en transparantie van het TIFF-origineel. De bestanden zijn kleiner dan TIFF, maar groter dan JPEG of WebP. Voor verdere bewerking in Figma, Canva of Photoshop is PNG ideaal.</p><p class=\"text-mid\">Voor het voorbereiden van scanneruitvoer en archiefbeelden voor online gebruik biedt lokale conversie een veilige en snelle workflow.</p>"
+      "html": "<p class=\"text-mid mb-4\">Wanneer TIFF-bestanden nodig zijn voor verdere bewerking in grafische programma's of voor websites met transparantie-eisen, is PNG het geschikte doelformaat – verliesvrij en universeel compatibel.</p><p class=\"text-mid mb-4\">PNG behoudt de volledige beeldkwaliteit en transparantie van het TIFF-origineel. De bestanden zijn kleiner dan TIFF, maar groter dan JPEG of WebP. Voor verdere bewerking in Figma, Canva of Photoshop is PNG ideaal.</p><p class=\"text-mid\">Voor het voorbereiden van scanneruitvoer en archiefbeelden voor gebruik biedt lokale conversie een veilige en snelle workflow.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "TIFF vs PNG – formaatsvergelijking",
-      "plans": [
+      "labelHeader": "Functie",
+      "cols": ["TIFF", "PNG"],
+      "rows": [
         {
-          "id": "tiff",
-          "name": "TIFF"
+          "label": "Lossy-compressie",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Lossless-compressie",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparantie (alfakanaal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animatie-ondersteuning",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Webbrowserondersteuning",
+          "values": ["Alleen Safari", "Alle browsers"]
+        },
+        {
+          "label": "Kleurdiepte",
+          "values": ["8/16/32-bit", "8/16-bit"]
+        },
+        {
+          "label": "Compact bestandsformaat",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Lossy-compressie",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Lossless-compressie",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Transparantie (alfakanaal)",
-          "values": {
-            "tiff": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Animatie-ondersteuning",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Webbrowserondersteuning",
-          "values": {
-            "tiff": "Alleen Safari",
-            "png": "Alle browsers"
-          }
-        },
-        {
-          "name": "Kleurdiepte",
-          "values": {
-            "tiff": "8/16/32-bit",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Compact bestandsformaat",
-          "values": {
-            "tiff": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "tiff": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Functie"
+      ]
     },
     {
       "type": "gap",

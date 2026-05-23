@@ -1,4 +1,4 @@
-import { OFFER_SECTIONS_PL, ABOUT_NAV_ITEMS_PL } from '@/components/shared/navigation-data/pl';
+import { OFFER_SECTIONS_PL, ABOUT_NAV_ITEMS_PL } from '@/data/pl/navigation-data-pl';
 import searchBlog from '@/data/pl/search-blog.json';
 import searchProjects from '@/data/pl/search-projects.json';
 import { slugify } from '@/utils/slugify';
@@ -67,7 +67,7 @@ const STATIC_PAGES_PL: SearchItem[] = [
   },
   {
     title: 'Narzędzia',
-    description: 'Darmowe narzędzia online - konwertery, generatory, testery',
+    description: 'Darmowe narzędzia - konwertery, generatory, testery',
     href: '/narzedzia',
     category: 'narzedzia',
     categoryLabel: 'Narzędzia',
@@ -163,7 +163,10 @@ const NON_PL_PAGE_TITLES: Record<string, Record<string, string>> = {
   },
 };
 
-function buildStaticPagesForLocale(locale: Locale, categoryLabels: Record<SearchCategory, string>): SearchItem[] {
+function buildStaticPagesForLocale(
+  locale: Locale,
+  categoryLabels: Record<SearchCategory, string>,
+): SearchItem[] {
   if (locale === 'pl') return STATIC_PAGES_PL;
 
   const config = LOCALE_CONFIG[locale];
@@ -218,7 +221,7 @@ function buildServicesIndex(): SearchItem[] {
 }
 
 function buildAboutIndex(): SearchItem[] {
-  return ABOUT_NAV_ITEMS_PL.map((item) => ({
+  return ABOUT_NAV_ITEMS_PL.map(item => ({
     title: item.title,
     href: item.href,
     category: 'inne' as SearchCategory,
@@ -227,7 +230,7 @@ function buildAboutIndex(): SearchItem[] {
 }
 
 function buildBlogIndex(): SearchItem[] {
-  return (searchBlog as SearchBlogEntry[]).map((a) => ({
+  return (searchBlog as SearchBlogEntry[]).map(a => ({
     title: a.t,
     description: a.e,
     href: `/edukacja/${slugify(a.c)}/${a.s}`,
@@ -238,7 +241,7 @@ function buildBlogIndex(): SearchItem[] {
 }
 
 function buildProjectsIndex(): SearchItem[] {
-  return (searchProjects as SearchProjectEntry[]).map((p) => ({
+  return (searchProjects as SearchProjectEntry[]).map(p => ({
     title: p.t,
     description: p.d,
     href: `/realizacje/${p.s}`,
@@ -253,7 +256,7 @@ function buildProjectsIndex(): SearchItem[] {
 // ---------------------------------------------------------------------------
 
 function buildToolsIndex(locale: Locale, categoryLabel: string): SearchItem[] {
-  return getToolsList(locale).map((tool) => ({
+  return getToolsList(locale).map(tool => ({
     title: tool.title,
     description: tool.description,
     href: tool.href,
@@ -268,7 +271,10 @@ function buildToolsIndex(locale: Locale, categoryLabel: string): SearchItem[] {
 
 const cachedIndexes = new Map<Locale, SearchItem[]>();
 
-export function getSearchIndex(locale: Locale, categoryLabels?: Record<SearchCategory, string>): SearchItem[] {
+export function getSearchIndex(
+  locale: Locale,
+  categoryLabels?: Record<SearchCategory, string>,
+): SearchItem[] {
   const cached = cachedIndexes.get(locale);
   if (cached) return cached;
 
@@ -287,7 +293,14 @@ export function getSearchIndex(locale: Locale, categoryLabels?: Record<SearchCat
   let index: SearchItem[];
 
   if (locale === 'pl') {
-    index = [...staticPages, ...buildServicesIndex(), ...tools, ...buildAboutIndex(), ...buildBlogIndex(), ...buildProjectsIndex()];
+    index = [
+      ...staticPages,
+      ...buildServicesIndex(),
+      ...tools,
+      ...buildAboutIndex(),
+      ...buildBlogIndex(),
+      ...buildProjectsIndex(),
+    ];
   } else {
     index = [...staticPages, ...tools];
   }
@@ -296,7 +309,12 @@ export function getSearchIndex(locale: Locale, categoryLabels?: Record<SearchCat
   return index;
 }
 
-export function searchItems(query: string, locale: Locale, limit = 20, categoryLabels?: Record<SearchCategory, string>): SearchItem[] {
+export function searchItems(
+  query: string,
+  locale: Locale,
+  limit = 20,
+  categoryLabels?: Record<SearchCategory, string>,
+): SearchItem[] {
   if (!query.trim()) return [];
 
   const normalizedQuery = query.toLowerCase().trim();
@@ -304,7 +322,7 @@ export function searchItems(query: string, locale: Locale, limit = 20, categoryL
   const index = getSearchIndex(locale, categoryLabels);
 
   const scored = index
-    .map((item) => {
+    .map(item => {
       let score = 0;
       const titleLower = item.title.toLowerCase();
       const descLower = (item.description || '').toLowerCase();

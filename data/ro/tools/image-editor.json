@@ -8,7 +8,7 @@
     "path": "/ro/instrumente/editor-de-imagini"
   },
   "hero": {
-    "title": "Redimensionează, decupează și convertește imaginea online – gratuit",
+    "title": "Redimensionează, decupează și convertește imaginea",
     "description": "Redimensionați, decupați și convertiți imagini pentru Instagram, Facebook și LinkedIn. Formate gata făcute, avataruri circulare, export în JPG, PNG și WebP. Procesare locală în browser.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -36,7 +36,7 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Editor de imagini online gratuit pentru redimensionare, decupare și conversie de formate. Presetări pentru Instagram, Facebook și LinkedIn. Creare de avataruri circulare. Export în JPG, PNG și WebP cu control al calității. Procesare locală în browser.",
+      "description": "Editor de imaginire, decupare și conversie de formate. Presetări pentru Instagram, Facebook și LinkedIn. Creare de avataruri circulare. Export în JPG, PNG și WebP cu control al calității. Procesare locală în browser.",
       "featureList": [
         "Redimensionare imagini la orice dimensiuni",
         "Decupare cu selecție interactivă a zonei",
@@ -87,7 +87,7 @@
       "title": "Redimensionați imagini - decupați, convertiți și comprimați într-un singur instrument",
       "html": "<p class=\"text-mid\">Editorul de imagini vă permite să adaptați rapid imaginile la dimensiuni specifice. Puteți redimensiona o imagine la orice dimensiuni în pixeli, selecta un format gata făcut pentru rețelele sociale sau decupa o secțiune a imaginii cu încadrare precisă.</p><p class=\"text-mid mt-3\">Pe lângă redimensionare, instrumentul oferă conversie format (JPG, PNG, WebP), creare avatar circular și control al calității compresiei.</p>",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagini-ro.webp",
-      "imageAlt": "Editor de imagini online – Arteon"
+      "imageAlt": "Editor de imagini"
     },
     {
       "type": "gap",
@@ -388,8 +388,8 @@
       "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
       "description": "Aveți o idee pentru o nouă funcție, ați găsit o eroare sau doriți să sugerați un alt instrument care v-ar ușura munca? Scrieți-ne – răspundem în 24 de ore.",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagini-ro.webp",
-      "imageAlt": "Editor de imagini online – Arteon",
-      "defaultSubject": "Feedback: Editor de imagini online"
+      "imageAlt": "Editor de imagini",
+      "defaultSubject": "Feedback: Editor de imagini"
     },
     {
       "type": "gap",

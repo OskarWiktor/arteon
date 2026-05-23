@@ -184,55 +184,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "rem vs em vs px",
-      "featureLabel": "Feature",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["rem", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "rem"
+          "label": "Reference",
+          "values": ["Root font size", "Fixed pixel"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Reference",
-          "values": {
-            "unit1": "Root font size",
-            "unit2": "Fixed pixel"
-          }
+          "label": "Compounds",
+          "values": ["No (always root)", "No"]
         },
         {
-          "name": "Compounds",
-          "values": {
-            "unit1": "No (always root)",
-            "unit2": "No"
-          }
+          "label": "Responsive",
+          "values": ["Yes", "No"]
         },
         {
-          "name": "Responsive",
-          "values": {
-            "unit1": "Yes",
-            "unit2": "No"
-          }
+          "label": "Accessibility",
+          "values": ["Respects user settings", "Fixed size"]
         },
         {
-          "name": "Accessibility",
-          "values": {
-            "unit1": "Respects user settings",
-            "unit2": "Fixed size"
-          }
-        },
-        {
-          "name": "Predictability",
-          "values": {
-            "unit1": "Consistent everywhere",
-            "unit2": "Always consistent"
-          }
+          "label": "Predictability",
+          "values": ["Consistent everywhere", "Always consistent"]
         }
       ]
     },

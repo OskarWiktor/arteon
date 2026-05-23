@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertiți numere zecimale în binare și invers.",
-      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+      "featureList": [
+        "Conversie bidirecțională în timp real",
+        "Toate convertoarele într-un singur loc",
+        "Copierea rezultatului în clipboard",
+        "Calcul local în browser"
+      ]
     },
     "howTo": {
       "name": "Cum să utilizați convertorul",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimal vs Binary",
-      "featureLabel": "Proprietate",
-      "plans": [
+      "labelHeader": "Proprietate",
+      "cols": ["Decimal (base-10)", "Binary (base-2)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimal (base-10)"
+          "label": "Cifre",
+          "values": ["0–9", "0–1"]
         },
         {
-          "id": "unit2",
-          "name": "Binary (base-2)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Cifre",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–1"
-          }
+          "label": "Utilizat de",
+          "values": ["Oameni", "Calculatoare"]
         },
         {
-          "name": "Utilizat de",
-          "values": {
-            "unit1": "Oameni",
-            "unit2": "Calculatoare"
-          }
+          "label": "Exemplu: 42",
+          "values": ["42", "101010"]
         },
         {
-          "name": "Exemplu: 42",
-          "values": {
-            "unit1": "42",
-            "unit2": "101010"
-          }
+          "label": "Exemplu: 255",
+          "values": ["255", "11111111"]
         },
         {
-          "name": "Exemplu: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "11111111"
-          }
-        },
-        {
-          "name": "Lizibilitate",
-          "values": {
-            "unit1": "Ușor pentru oameni",
-            "unit2": "Lung dar nativ pentru calculatoare"
-          }
+          "label": "Lizibilitate",
+          "values": ["Ușor pentru oameni", "Lung dar nativ pentru calculatoare"]
         }
       ]
     },

@@ -139,64 +139,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "CSV vs JSON – format comparison",
-      "plans": [
+      "labelHeader": "Feature",
+      "cols": ["CSV", "JSON"],
+      "rows": [
         {
-          "id": "csv",
-          "name": "CSV"
+          "label": "Nested/hierarchical data",
+          "values": ["—", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabular data",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Schema validation",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Human readable",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API standard",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Compact syntax",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Nested/hierarchical data",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabular data",
-          "values": {
-            "csv": true,
-            "json": false
-          }
-        },
-        {
-          "name": "Schema validation",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Human readable",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API standard",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Compact syntax",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Feature"
+      ]
     },
     {
       "type": "gap",

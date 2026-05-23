@@ -45,7 +45,9 @@ export function getAllArticlePreviews(): ArticlePreview[] {
 }
 
 export function getArticlePreviewsByCategory(categorySlug: string, max = 6): ArticlePreview[] {
-  return previews.filter((a) => a.primaryCategory && slugify(a.primaryCategory) === categorySlug).slice(0, max);
+  return previews
+    .filter(a => a.primaryCategory && slugify(a.primaryCategory) === categorySlug)
+    .slice(0, max);
 }
 
 export function getCategoriesWithCount() {
@@ -55,7 +57,11 @@ export function getCategoriesWithCount() {
     if (a.primaryCategory) {
       const primarySlug = slugify(a.primaryCategory);
       const prev = map.get(primarySlug);
-      map.set(primarySlug, { label: a.primaryCategory, slug: primarySlug, count: (prev?.count || 0) + 1 });
+      map.set(primarySlug, {
+        label: a.primaryCategory,
+        slug: primarySlug,
+        count: (prev?.count || 0) + 1,
+      });
     }
   }
   return Array.from(map.values()).sort((a, b) => a.label.localeCompare(b.label));
@@ -66,10 +72,10 @@ export function getPrimaryCategorySlug(a: ArticlePreview): string {
 }
 
 export function findArticleBySlug(slug: string): Article | undefined {
-  const preview = previews.find((a) => a.slug === slug);
+  const preview = previews.find(a => a.slug === slug);
   if (!preview) return undefined;
 
   const categorySlug = getPrimaryCategorySlugBase(preview);
   const articles = loadCategory(categorySlug);
-  return articles.find((a) => a.slug === slug);
+  return articles.find(a => a.slug === slug);
 }

@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertissez entre octets, kilo-octets, méga-octets, giga-octets et téra-octets.",
-      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+      "featureList": [
+        "Conversion bidirectionnelle en temps réel",
+        "Tous les convertisseurs au même endroit",
+        "Copier le résultat dans le presse-papiers",
+        "Calcul local dans le navigateur"
+      ]
     },
     "howTo": {
       "name": "Comment utiliser le convertisseur",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Décimal vs Binaire – comparaison",
-      "featureLabel": "Caractéristique",
-      "plans": [
+      "labelHeader": "Caractéristique",
+      "cols": ["Décimal (SI)", "Binaire (IEC)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Décimal (SI)"
+          "label": "Multiplicateur",
+          "values": ["1 000", "1 024"]
         },
         {
-          "id": "unit2",
-          "name": "Binaire (IEC)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Multiplicateur",
-          "values": {
-            "unit1": "1 000",
-            "unit2": "1 024"
-          }
+          "label": "Unités",
+          "values": ["Ko, Mo, Go, To", "Kio, Mio, Gio, Tio"]
         },
         {
-          "name": "Unités",
-          "values": {
-            "unit1": "Ko, Mo, Go, To",
-            "unit2": "Kio, Mio, Gio, Tio"
-          }
+          "label": "Utilisé par",
+          "values": ["Fabricants de stockage", "Systèmes d’exploitation, RAM"]
         },
         {
-          "name": "Utilisé par",
-          "values": {
-            "unit1": "Fabricants de stockage",
-            "unit2": "Systèmes d’exploitation, RAM"
-          }
+          "label": "1 To équivaut à",
+          "values": ["1 000 000 000 000 octets", "1 099 511 627 776 octets"]
         },
         {
-          "name": "1 To équivaut à",
-          "values": {
-            "unit1": "1 000 000 000 000 octets",
-            "unit2": "1 099 511 627 776 octets"
-          }
-        },
-        {
-          "name": "Différence pour 1 To",
-          "values": {
-            "unit1": "1 To",
-            "unit2": "0,909 Tio"
-          }
+          "label": "Différence pour 1 To",
+          "values": ["1 To", "0,909 Tio"]
         }
       ]
     },

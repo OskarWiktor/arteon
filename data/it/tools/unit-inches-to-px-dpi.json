@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Converti pollici in pixel a qualsiasi risoluzione DPI. Per la preparazione delle immagini.",
-      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+      "featureList": [
+        "Conversione bidirezionale in tempo reale",
+        "Tutti i convertitori in un unico posto",
+        "Copia il risultato negli appunti",
+        "Calcolo locale nel browser"
+      ]
     },
     "howTo": {
       "name": "Come usare il convertitore",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Formati stampa comuni a 300 DPI",
-      "featureLabel": "Formato",
-      "plans": [
+      "labelHeader": "Formato",
+      "cols": ["Pollici", "Pixel (300 DPI)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Pollici"
+          "label": "Foto passaporto",
+          "values": ["2,5 × 3,5″", "750 × 1.050"]
         },
         {
-          "id": "unit2",
-          "name": "Pixel (300 DPI)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Foto passaporto",
-          "values": {
-            "unit1": "2,5 × 3,5″",
-            "unit2": "750 × 1.050"
-          }
+          "label": "Foto 4×6",
+          "values": ["4 × 6″", "1.200 × 1.800"]
         },
         {
-          "name": "Foto 4×6",
-          "values": {
-            "unit1": "4 × 6″",
-            "unit2": "1.200 × 1.800"
-          }
+          "label": "Foto 8×10",
+          "values": ["8 × 10″", "2.400 × 3.000"]
         },
         {
-          "name": "Foto 8×10",
-          "values": {
-            "unit1": "8 × 10″",
-            "unit2": "2.400 × 3.000"
-          }
+          "label": "US Letter",
+          "values": ["8,5 × 11″", "2.550 × 3.300"]
         },
         {
-          "name": "US Letter",
-          "values": {
-            "unit1": "8,5 × 11″",
-            "unit2": "2.550 × 3.300"
-          }
-        },
-        {
-          "name": "Poster (24×36)",
-          "values": {
-            "unit1": "24 × 36″",
-            "unit2": "7.200 × 10.800"
-          }
+          "label": "Poster (24×36)",
+          "values": ["24 × 36″", "7.200 × 10.800"]
         }
       ]
     },

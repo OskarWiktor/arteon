@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Převést pt na pixels a naopak. Užitečné pro webovou a tiskovou typografii. Bez registrace.",
-      "featureList": ["Obousměrná konverze v reálném čase", "Všechny převodníky na jednom místě", "Kopírování výsledku do schránky", "Lokální výpočet v prohlížeči"]
+      "featureList": [
+        "Obousměrná konverze v reálném čase",
+        "Všechny převodníky na jednom místě",
+        "Kopírování výsledku do schránky",
+        "Lokální výpočet v prohlížeči"
+      ]
     },
     "howTo": {
       "name": "Jak používat převodník",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Body (pt) vs Pixely (px)",
-      "featureLabel": "Vlastnost",
-      "plans": [
+      "labelHeader": "Vlastnost",
+      "cols": ["Body (pt)", "Pixely (px)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Body (pt)"
+          "label": "Definice",
+          "values": ["1/72 palce", "1/96 palce (CSS)"]
         },
         {
-          "id": "unit2",
-          "name": "Pixely (px)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Definice",
-          "values": {
-            "unit1": "1/72 palce",
-            "unit2": "1/96 palce (CSS)"
-          }
+          "label": "Použití",
+          "values": ["Tisk, Word, PDF", "Web, CSS, obrazovky"]
         },
         {
-          "name": "Použití",
-          "values": {
-            "unit1": "Tisk, Word, PDF",
-            "unit2": "Web, CSS, obrazovky"
-          }
+          "label": "12 pt =",
+          "values": ["12 pt", "16 px"]
         },
         {
-          "name": "12 pt =",
-          "values": {
-            "unit1": "12 pt",
-            "unit2": "16 px"
-          }
+          "label": "Běžný text",
+          "values": ["10–12 pt", "14–18 px"]
         },
         {
-          "name": "Běžný text",
-          "values": {
-            "unit1": "10–12 pt",
-            "unit2": "14–18 px"
-          }
-        },
-        {
-          "name": "Nadpis",
-          "values": {
-            "unit1": "18–24 pt",
-            "unit2": "24–32 px"
-          }
+          "label": "Nadpis",
+          "values": ["18–24 pt", "24–32 px"]
         }
       ]
     },

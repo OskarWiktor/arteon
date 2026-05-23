@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "JPG fotok konvertálása modern AVIF formatumra. Akar 50%-kal jobb tomoritest mint JPG. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
-      "featureList": ["Konvertálás AVIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
-      "alternateName": ["JPG konvertálása AVIF formátumba", "JPG–AVIF átalakítás", "Ingyenes JPG–AVIF konverter"]
+      "featureList": [
+        "Konvertálás AVIF-re",
+        "Minőség beállítása (60-95%)",
+        "Kötegelt konvertálás",
+        "Helyi feldolgozás a böngészőben"
+      ],
+      "alternateName": [
+        "JPG konvertálása AVIF formátumba",
+        "JPG–AVIF átalakítás",
+        "Ingyenes JPG–AVIF konverter"
+      ]
     },
     "howTo": {
       "name": "JPG konvertálása AVIF-ra",
@@ -166,85 +175,51 @@
     {
       "type": "sectionInfo",
       "title": "JPG-AVIF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Az AVIF akár 50%-kal jobb tömörítést ér el, mint a JPEG, összehasonlítható vizuális minőség mellett. Sok fotót tartalmazó weboldalakhoz – ingatlanportálok, online magazinok, utazási oldalak – a betöltési idők jelentősen csökkennek.</p><p class=\"text-mid mb-4\">Platformok, mint az Ingatlan.com, Booking.com vagy Jófogás egyre inkább AVIF-et használnak a jobb mobilélmény érdekében. A Chrome, Firefox és Safari 16+ natívan támogatja.</p><p class=\"text-mid\">A helyi konvertálás a böngészőben védi képeit: ingatlanfotók, termékképek vagy portrék – semmi sem kerül feltöltésre. Teljesen GDPR-kompatibilis.</p>"
+      "html": "<p class=\"text-mid mb-4\">Az AVIF akár 50%-kal jobb tömörítést ér el, mint a JPEG, összehasonlítható vizuális minőség mellett. Sok fotót tartalmazó weboldalakhoz – ingatlanportálok, magazinok, utazási oldalak – a betöltési idők jelentősen csökkennek.</p><p class=\"text-mid mb-4\">Platformok, mint az Ingatlan.com, Booking.com vagy Jófogás egyre inkább AVIF-et használnak a jobb mobilélmény érdekében. A Chrome, Firefox és Safari 16+ natívan támogatja.</p><p class=\"text-mid\">A helyi konvertálás a böngészőben védi képeit: ingatlanfotók, termékképek vagy portrék – semmi sem kerül feltöltésre. Teljesen GDPR-kompatibilis.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs AVIF – formátum-összehasonlítás",
-      "plans": [
+      "labelHeader": "Funkció",
+      "cols": ["JPG", "AVIF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Veszteséges tömörítés",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Veszteségmentes tömörítés",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Átlátszóság (alfa csatorna)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Animáció támogatás",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Böngészőtámogatás",
+          "values": ["Minden böngésző", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Színmélység",
+          "values": ["8-bit (16.7M)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Kis fájlméret",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metaadatok (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Veszteséges tömörítés",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Veszteségmentes tömörítés",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Átlátszóság (alfa csatorna)",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Animáció támogatás",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Böngészőtámogatás",
-          "values": {
-            "jpg": "Minden böngésző",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Színmélység",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Kis fájlméret",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metaadatok (EXIF)",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funkció"
+      ]
     },
     {
       "type": "gap",

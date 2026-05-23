@@ -96,7 +96,14 @@ export async function generateFaviconOutputs(options: {
   const outputs: FaviconOutputFile[] = [];
 
   for (const size of options.pngSizes) {
-    const pngBlob = await createPngFromImage(options.img, size, options.backgroundColor, options.transparentBackground, options.canvasNotSupportedErrorMessage, options.pngGenerationErrorMessage);
+    const pngBlob = await createPngFromImage(
+      options.img,
+      size,
+      options.backgroundColor,
+      options.transparentBackground,
+      options.canvasNotSupportedErrorMessage,
+      options.pngGenerationErrorMessage,
+    );
     const url = URL.createObjectURL(pngBlob);
     const fileName = suggestFaviconFileName(size, 'png');
 

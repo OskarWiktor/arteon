@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Dziesiętny na binarny – DEC na BIN, kurs informatyki IT",
-      "alternateName": ["Przelicznik dziesiętny binarny", "Kalkulator DEC BIN", "Decimal to binary"],
+      "alternateName": [
+        "Przelicznik dziesiętny binarny",
+        "Kalkulator DEC BIN",
+        "Decimal to binary"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz liczby dziesiętne na binarne i odwrotnie. Niezbędne na kursach informatyki i przy programowaniu niskopoziomowym. Działa w przeglądarce, bez rejestracji.",
@@ -185,55 +189,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Dziesiętny (DEC) vs Binarny (BIN) – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
+      "labelHeader": "Cecha",
+      "cols": ["Dziesiętny (DEC)", "Binarny (BIN)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Dziesiętny (DEC)"
+          "label": "Podstawa",
+          "values": ["10", "2"]
         },
         {
-          "id": "unit2",
-          "name": "Binarny (BIN)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Podstawa",
-          "values": {
-            "unit1": "10",
-            "unit2": "2"
-          }
+          "label": "Cyfry",
+          "values": ["0–9", "0–1"]
         },
         {
-          "name": "Cyfry",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–1"
-          }
+          "label": "Bajt (max)",
+          "values": ["255", "11111111"]
         },
         {
-          "name": "Bajt (max)",
-          "values": {
-            "unit1": "255",
-            "unit2": "11111111"
-          }
+          "label": "Użycie",
+          "values": ["Codzienne obliczenia", "Komputery, elektronika"]
         },
         {
-          "name": "Użycie",
-          "values": {
-            "unit1": "Codzienne obliczenia",
-            "unit2": "Komputery, elektronika"
-          }
-        },
-        {
-          "name": "Prefiks",
-          "values": {
-            "unit1": "Brak",
-            "unit2": "0b (programowanie)"
-          }
+          "label": "Prefiks",
+          "values": ["Brak", "0b (programowanie)"]
         }
       ]
     },

@@ -2,13 +2,13 @@
   "toolKey": "heicToPng",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter HEIC na PNG – zachowaj jakość zdjęć z iPhone",
-    "description": "Zamień zdjęcia HEIC z iPhone na bezstratny PNG w przeglądarce. Zachowaj pełną jakość i przezroczystość. Bez rejestracji, bez wysyłania na serwer.",
+    "title": "Darmowy konwerter formatu HEIC na PNG bez limitu plików i rejestracji",
+    "description": "Zamień zdjęcia HEIC z iPhone na bezstratny PNG w przeglądarce. Zachowaj pełną jakość i przezroczystość. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-heic-na-png"
   },
   "hero": {
-    "title": "Konwerter HEIC na PNG – bezstratna konwersja zdjęć z iPhone",
+    "title": "Darmowy konwerter formatu HEIC na PNG – bezstratna konwersja zdjęć z iPhone",
     "description": "Zamień pliki HEIC z iPhone na bezstratny PNG. Zachowaj pełną jakość i przezroczystość obrazu. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter HEIC na PNG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana HEIC na PNG online", "Konwersja HEIC do PNG"],
+      "alternateName": ["Zamiana HEIC na PNG", "Konwersja HEIC do PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter HEIC na PNG online. Zamień zdjęcia HEIC z iPhone na bezstratny PNG - pliki nie są wysyłane na serwer.",
-      "featureList": ["Konwersja HEIC/HEIF do PNG", "Zachowanie przezroczystości", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter HEIC na PNG. Zamień zdjęcia HEIC z iPhone na bezstratny PNG - pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja HEIC/HEIF do PNG",
+        "Zachowanie przezroczystości",
+        "Konwersja wielu plików jednocześnie",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić HEIC na PNG online",
+      "name": "Jak zamienić HEIC na PNG",
       "description": "Instrukcja konwersji plików HEIC na format PNG.",
       "steps": [
         {
@@ -165,78 +170,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs PNG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["HEIC", "PNG"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Kompresja stratna",
+          "values": ["✓", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Safari 13+ (macOS / iOS)", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["8/10-bit, HDR", "8/16-bit"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "heic": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "heic": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "png": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "png": "8/16-bit"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "heic": true,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

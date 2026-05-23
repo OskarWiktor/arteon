@@ -13,7 +13,7 @@ import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
  * Automatically includes every locale that has a slug for this tool.
  */
 export function getToolAlternates(toolKey: ToolItemKey, locale: Locale) {
-  const tool = TOOL_REGISTRY.find((t) => t.key === toolKey);
+  const tool = TOOL_REGISTRY.find(t => t.key === toolKey);
   if (!tool) return {};
 
   const href = getToolHref(toolKey, locale);
@@ -140,7 +140,15 @@ export function getToolSoftwareSchema(opts: {
 /**
  * Generate JSON-LD HowTo schema for a tool page.
  */
-export function getToolHowToSchema(opts: { toolKey: ToolItemKey; locale: Locale; name: string; description: string; totalTime?: string; steps: { name: string; text: string }[]; ogImage?: string }) {
+export function getToolHowToSchema(opts: {
+  toolKey: ToolItemKey;
+  locale: Locale;
+  name: string;
+  description: string;
+  totalTime?: string;
+  steps: { name: string; text: string }[];
+  ogImage?: string;
+}) {
   const href = getToolHref(opts.toolKey, opts.locale);
   return {
     '@context': 'https://schema.org',
@@ -168,7 +176,14 @@ export function getToolHowToSchema(opts: { toolKey: ToolItemKey; locale: Locale;
 /**
  * Generate JSON-LD WebPage schema for a tool page.
  */
-export function getToolWebPageSchema(opts: { locale: Locale; title: string; description: string; path: string; ogImage?: string; toolName: string }) {
+export function getToolWebPageSchema(opts: {
+  locale: Locale;
+  title: string;
+  description: string;
+  path: string;
+  ogImage?: string;
+  toolName: string;
+}) {
   const pageUrl = toAbsoluteUrl(opts.path);
   return {
     '@context': 'https://schema.org',
@@ -177,7 +192,9 @@ export function getToolWebPageSchema(opts: { locale: Locale; title: string; desc
     description: opts.description,
     url: pageUrl,
     inLanguage: LOCALE_CONFIG[opts.locale].lang,
-    ...(opts.ogImage ? { primaryImageOfPage: { '@type': 'ImageObject', url: toAbsoluteUrl(opts.ogImage) } } : {}),
+    ...(opts.ogImage
+      ? { primaryImageOfPage: { '@type': 'ImageObject', url: toAbsoluteUrl(opts.ogImage) } }
+      : {}),
     isPartOf: {
       '@type': 'WebSite',
       name: 'Arteon Agency',

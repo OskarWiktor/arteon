@@ -2,7 +2,10 @@ import { loadImage } from '@/utils/loadImage';
 import type { GetImageDataOptions } from '@/types/tools/image';
 export type { GetImageDataOptions } from '@/types/tools/image';
 
-export async function getDownscaledImageDataFromUrl(url: string, options?: GetImageDataOptions): Promise<ImageData> {
+export async function getDownscaledImageDataFromUrl(
+  url: string,
+  options?: GetImageDataOptions,
+): Promise<ImageData> {
   const img = await loadImage(url, {
     crossOrigin: options?.crossOrigin,
     errorMessage: options?.errorMessage ?? 'Failed to load image.',

@@ -2,14 +2,14 @@
   "toolKey": "colorPalette",
   "locale": "pl",
   "metadata": {
-    "title": "Darmowy generator palet kolorów – 17 schematów",
-    "description": "Wygeneruj 17 palet kolorów z jednego koloru: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Skopiuj kody HEX jednym kliknięciem.",
+    "title": "Darmowy generator palet kolorów z jednego koloru",
+    "description": "Wygeneruj aż 17 palet kolorystycznych spójnych z Twoim kolorem i skopiuj kod HEX koloru jednym kliknięciem.",
     "ogImage": "/assets/tools/color-palette-generator/generator-palet-kolorow-pl.webp",
     "path": "/narzedzia/generator-palet-kolorow"
   },
   "hero": {
     "title": "Wygeneruj 17 palet kolorów z jednego koloru bazowego",
-    "description": "Podaj jeden kolor bazowy, a narzędzie wygeneruje 17 harmonijnych palet kolorów: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Każdy kolor można skopiować z kodem HEX.",
+    "description": "Podaj jeden kolor, a narzędzie wygeneruje 17 harmonijnych palet kolorów w tym: paletę monochromatyczną, komplementarną, triadyczną czy pastelową, które będą idealnie współgrać z Twoim kolorem. Jednym kliknięciem możesz skopiować gotowy kod HEX koloru, który będzie idealnie komponował się z Twoim kolorem",
     "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow.webp"
   },
   "breadcrumbs": {
@@ -30,7 +30,7 @@
         "Generator kolorów",
         "Kreator palet kolorystycznych",
         "Narzędzie do dobierania kolorów",
-        "Paleta kolorów online",
+        "Paleta kolorów",
         "Harmonia kolorów generator",
         "Color palette generator"
       ],
@@ -95,7 +95,7 @@
       "title": "Po co generować paletę kolorów?",
       "html": "<p class=\"text-mid\">Spójna paleta kolorów to podstawa każdego projektu wizualnego - od strony internetowej, przez logo, po materiały drukowane. Ręczne dobieranie barw, które do siebie pasują, wymaga znajomości teorii koloru. Generator robi to automatycznie: podajesz jeden kolor bazowy (np. kolor swojego logo), a narzędzie tworzy 17 zestawów kolorów opartych na sprawdzonych schematach harmonii barw.</p><p class=\"text-mid mt-3\">Każdy wygenerowany kolor ma podany kod HEX (np. #496ba2) i wartość HSL (odcień, nasycenie, jasność). Kod HEX możesz wkleić bezpośrednio do CSS, Figmy, Canvy lub dowolnego programu graficznego.</p>",
       "imageSrc": "/assets/tools/color-palette-generator/generator-palet-kolorow-pl.webp",
-      "imageAlt": "Generator palet kolorów online – Arteon"
+      "imageAlt": "Generator palet kolorów – Arteon"
     },
     {
       "type": "gap",
@@ -370,7 +370,7 @@
       "title": "Pomóż nam ulepszyć narzędzia",
       "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/color-palette-generator/generator-palet-kolorow-pl.webp",
-      "imageAlt": "Generator palet kolorów online – Arteon",
+      "imageAlt": "Generator palet kolorów – Arteon",
       "defaultSubject": "Feedback: Generator palet kolorów"
     },
     {

@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertissez mégabits par seconde en mégaoctets par seconde. Comprenez votre vitesse internet.",
-      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+      "featureList": [
+        "Conversion bidirectionnelle en temps réel",
+        "Tous les convertisseurs au même endroit",
+        "Copier le résultat dans le presse-papiers",
+        "Calcul local dans le navigateur"
+      ]
     },
     "howTo": {
       "name": "Comment utiliser le convertisseur",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Mbps vs Mo/s – comparaison",
-      "featureLabel": "Caractéristique",
-      "plans": [
+      "labelHeader": "Caractéristique",
+      "cols": ["Mégabit/s (Mbps)", "Mégaoctet/s (Mo/s)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Mégabit/s (Mbps)"
+          "label": "Unité",
+          "values": ["Bits", "Octets"]
         },
         {
-          "id": "unit2",
-          "name": "Mégaoctet/s (Mo/s)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Unité",
-          "values": {
-            "unit1": "Bits",
-            "unit2": "Octets"
-          }
+          "label": "Rapport",
+          "values": ["8 Mbps", "= 1 Mo/s"]
         },
         {
-          "name": "Rapport",
-          "values": {
-            "unit1": "8 Mbps",
-            "unit2": "= 1 Mo/s"
-          }
+          "label": "Utilisé pour",
+          "values": ["Vitesses des FAI", "Téléchargements"]
         },
         {
-          "name": "Utilisé pour",
-          "values": {
-            "unit1": "Vitesses des FAI",
-            "unit2": "Téléchargements"
-          }
+          "label": "100 Mbps",
+          "values": ["100 Mbps", "12,5 Mo/s"]
         },
         {
-          "name": "100 Mbps",
-          "values": {
-            "unit1": "100 Mbps",
-            "unit2": "12,5 Mo/s"
-          }
-        },
-        {
-          "name": "1 Gbps",
-          "values": {
-            "unit1": "1 000 Mbps",
-            "unit2": "125 Mo/s"
-          }
+          "label": "1 Gbps",
+          "values": ["1 000 Mbps", "125 Mo/s"]
         }
       ]
     },

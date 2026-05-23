@@ -2,13 +2,13 @@
   "toolKey": "svgToJpg",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter SVG na JPG – zamień wektor na zdjęcie za darmo",
-    "description": "Zamień grafikę wektorową SVG na JPG w przeglądarce. Mniejszy plik, pełna kompatybilność. Bez limitu i rejestracji. Bez instalacji, bez logowania. Działa na każdym urządzeniu z przeglądarką.",
+    "title": "Darmowy konwerter formatu SVG na JPG bez limitu plików i rejestracji",
+    "description": "Zamień grafikę wektorową SVG na JPG w przeglądarce. Mniejszy plik, pełna kompatybilność. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-svg-na-jpg"
   },
   "hero": {
-    "title": "Konwerter SVG na JPG – mniejszy plik, pełna kompatybilność",
+    "title": "Darmowy konwerter formatu SVG na JPG – mniejszy plik, pełna kompatybilność",
     "description": "Zamień pliki SVG na JPG. Ustaw jakość i pobierz lekkie obrazy rastrowe. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter SVG na JPG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana SVG na JPG online", "Rasteryzacja SVG do JPG"],
+      "alternateName": ["Zamiana SVG na JPG", "Rasteryzacja SVG do JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter SVG na JPG online. Zamień grafikę wektorową na lekki JPG. Bez limitu i rejestracji.",
-      "featureList": ["Konwersja SVG do JPG", "Regulacja jakości (60–95%)", "Konwersja wielu plików", "Przetwarzanie lokalne"]
+      "description": "Darmowy konwerter SVG na JPG. Zamień grafikę wektorową na lekki JPG. Bez limitu i rejestracji.",
+      "featureList": [
+        "Konwersja SVG do JPG",
+        "Regulacja jakości (60–95%)",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić SVG na JPG online",
+      "name": "Jak zamienić SVG na JPG",
       "description": "Instrukcja konwersji plików SVG na format JPG.",
       "steps": [
         {
@@ -156,78 +161,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs JPG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["SVG", "JPG"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Kompresja stratna",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["N/A (wektor)", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "svg": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "svg": "Wszystkie przeglądarki",
-            "jpg": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "svg": "N/A (wektor)",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "svg": true,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "svg": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

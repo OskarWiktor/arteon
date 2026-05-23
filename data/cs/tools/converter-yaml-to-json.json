@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět YAML na JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na JSON prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase YAML soubory do formatu JSON primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">YAML je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na JSON prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny konvertor prevadi vase YAML soubory do formatu JSON primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "YAML vs JSON – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["YAML", "JSON"],
+      "rows": [
         {
-          "id": "yaml",
-          "name": "YAML"
+          "label": "Vnořená data",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabulární data",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Validace schématu",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Lidsky čitelné",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API standard",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Kompaktní syntaxe",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Vnořená data",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabulární data",
-          "values": {
-            "yaml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Validace schématu",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Lidsky čitelné",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API standard",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompaktní syntaxe",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",
@@ -194,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Jak funguje konverze z YAML do JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML pou\u017e\u00edv\u00e1 odsazen\u00ed a minim\u00e1ln\u00ed syntaxi pro reprezentaci strukturovan\u00fdch dat, zat\u00edmco JSON pou\u017e\u00edv\u00e1 slo\u017een\u00e9 z\u00e1vorky, hranat\u00e9 z\u00e1vorky a explicitn\u00ed uvozovky. Konvertor analyzuje YAML strukturu a produkuje ekvivalentn\u00ed JSON se spr\u00e1vn\u00fdm form\u00e1tov\u00e1n\u00edm.</p><p class=\"text-mid mb-4\">YAML odsazen\u00ed se stane JSON vno\u0159en\u00edm, prvky s poml\u010dkami se stanou JSON prvky pole a YAML p\u00e1ry kl\u00ed\u010d-hodnota se stanou vlastnostmi JSON objektu. Datov\u00e9 typy jsou zachov\u00e1ny: \u0159et\u011bzce, \u010d\u00edsla, booleovsk\u00e9, null, pole a objekty se p\u0159enesou p\u0159\u00edmo.</p><p class=\"text-mid\">Konverze z YAML do JSON je u\u017eite\u010dn\u00e1, kdy\u017e konfigura\u010dn\u00ed data pot\u0159ebuj\u00ed b\u00fdt integrovan\u00e1 do webov\u00fdch aplikac\u00ed, REST API nebo syst\u00e9m\u016f o\u010dek\u00e1vaj\u00edc\u00edch JSON vstup. Konverze prob\u00edh\u00e1 zcela ve va\u0161em prohl\u00ed\u017ee\u010di.</p>"
+      "html": "<p class=\"text-mid mb-4\">YAML používá odsazení a minimální syntaxi pro reprezentaci strukturovaných dat, zatímco JSON používá složené závorky, hranaté závorky a explicitní uvozovky. Konvertor analyzuje YAML strukturu a produkuje ekvivalentní JSON se správným formátováním.</p><p class=\"text-mid mb-4\">YAML odsazení se stane JSON vnořením, prvky s pomlčkami se stanou JSON prvky pole a YAML páry klíč-hodnota se stanou vlastnostmi JSON objektu. Datové typy jsou zachovány: řetězce, čísla, booleovské, null, pole a objekty se přenesou přímo.</p><p class=\"text-mid\">Konverze z YAML do JSON je užitečná, když konfigurační data potřebují být integrovaná do webových aplikací, REST API nebo systémů očekávajících JSON vstup. Konverze probíhá zcela ve vašem prohlížeči.</p>"
     },
     {
       "type": "gap",
@@ -203,28 +175,28 @@
     {
       "type": "sectionSteps",
       "title": "Tipy pro konverzi z YAML do JSON",
-      "description": "N\u011bkolik tip\u016f, jak se vyhnout b\u011b\u017en\u00fdm probl\u00e9m\u016fm:",
+      "description": "Několik tipů, jak se vyhnout běžným problémům:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileTextLine",
-          "title": "Konzistence odsazen\u00ed",
-          "description": "YAML je citliv\u00fd na odsazen\u00ed. Pokud v\u00e1\u0161 soubor m\u00edch\u00e1 tabel\u00e1tory a mezery, parsov\u00e1n\u00ed m\u016f\u017ee selhat. Konvertor hl\u00e1s\u00ed zji\u0161t\u011bn\u00e9 chyby odsazen\u00ed."
+          "title": "Konzistence odsazení",
+          "description": "YAML je citlivý na odsazení. Pokud váš soubor míchá tabelátory a mezery, parsování může selhat. Konvertor hlásí zjištěné chyby odsazení."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Koment\u00e1\u0159e se odstra\u0148uj\u00ed",
-          "description": "JSON nepodporuje koment\u00e1\u0159e. V\u0161echny #-koment\u00e1\u0159e z va\u0161eho YAML souboru se neobjev\u00ed v JSON v\u00fdstupu. Uchovejte sv\u016fj p\u016fvodn\u00ed YAML soubor."
+          "title": "Komentáře se odstraňují",
+          "description": "JSON nepodporuje komentáře. Všechny #-komentáře z vašeho YAML souboru se neobjeví v JSON výstupu. Uchovejte svůj původní YAML soubor."
         },
         {
           "icon": "RiCodeLine",
-          "title": "V\u00edcedokumentov\u00fd YAML",
-          "description": "YAML soubory mohou obsahovat v\u00edce dokument\u016f odd\u011blen\u00fdch ---. Konvertor standardn\u011b zpracov\u00e1v\u00e1 prvn\u00ed dokument."
+          "title": "Vícedokumentový YAML",
+          "description": "YAML soubory mohou obsahovat více dokumentů oddělených ---. Konvertor standardně zpracovává první dokument."
         },
         {
           "icon": "RiFileCodeLine",
           "title": "Kotvy a aliasy",
-          "description": "YAML kotvy (&) a aliasy (*) se vy\u0159e\u0161\u00ed b\u011bhem konverze. JSON v\u00fdstup obsahuje rozlo\u017een\u00e9 hodnoty, ne YAML reference."
+          "description": "YAML kotvy (&) a aliasy (*) se vyřeší během konverze. JSON výstup obsahuje rozložené hodnoty, ne YAML reference."
         }
       ]
     },
@@ -254,16 +226,16 @@
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
         },
         {
-          "question": "Je konverze z YAML do JSON bezpe\u010dn\u00e1?",
-          "answer": "Ano. Ve\u0161ker\u00e1 konverze prob\u00edh\u00e1 lok\u00e1ln\u011b ve va\u0161em prohl\u00ed\u017ee\u010di. \u017d\u00e1dn\u00e1 data se neodes\u00edlaj\u00ed na server."
+          "question": "Je konverze z YAML do JSON bezpečná?",
+          "answer": "Ano. Veškerá konverze probíhá lokálně ve vašem prohlížeči. Žádná data se neodesílají na server."
         },
         {
-          "question": "Zachovaj\u00ed se YAML koment\u00e1\u0159e?",
-          "answer": "Ne. JSON nepodporuje koment\u00e1\u0159e, tak\u017ee v\u0161echny #-koment\u00e1\u0159e z va\u0161eho YAML souboru se b\u011bhem konverze odstran\u00ed. Uchovejte sv\u016fj p\u016fvodn\u00ed YAML soubor."
+          "question": "Zachovají se YAML komentáře?",
+          "answer": "Ne. JSON nepodporuje komentáře, takže všechny #-komentáře z vašeho YAML souboru se během konverze odstraní. Uchovejte svůj původní YAML soubor."
         },
         {
-          "question": "Je konverze bezeztr\u00e1tov\u00e1?",
-          "answer": "Ano, pro datov\u00e9 hodnoty. V\u0161echny \u0159et\u011bzce, \u010d\u00edsla, booleovsk\u00e9, null hodnoty, pole a objekty se zachovaj\u00ed p\u0159esn\u011b. Pouze YAML-specifick\u00e9 funkce jako koment\u00e1\u0159e a kotvy se nep\u0159en\u00e1\u0161ej\u00ed do JSON."
+          "question": "Je konverze bezeztrátová?",
+          "answer": "Ano, pro datové hodnoty. Všechny řetězce, čísla, booleovské, null hodnoty, pole a objekty se zachovají přesně. Pouze YAML-specifické funkce jako komentáře a kotvy se nepřenášejí do JSON."
         }
       ]
     },

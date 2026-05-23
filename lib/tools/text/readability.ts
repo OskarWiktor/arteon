@@ -132,7 +132,7 @@ export function calculateReadability(text: string, locale: Locale = 'en'): Reada
       // LIX (word-length-based) is a better fit than syllable-based Flesch.
       // LIX = ASL + (percentage of words longer than 6 characters)
       const wordList = text.match(/\p{L}+/gu) || [];
-      const longWords = wordList.filter((w) => w.length > 6).length;
+      const longWords = wordList.filter(w => w.length > 6).length;
       const longPct = wordList.length > 0 ? (longWords / wordList.length) * 100 : 0;
       const lix = ASL + longPct;
       // Map LIX (typically 20-60) to Flesch-like 0-100 scale (inverted: low LIX = easy)
@@ -160,23 +160,122 @@ export function calculateReadability(text: string, locale: Locale = 'en'): Reada
 // Readability labels (human-readable interpretation)
 // ---------------------------------------------------------------------------
 
-const READABILITY_LABELS: Record<Locale, { veryEasy: string; easy: string; moderate: string; difficult: string; veryDifficult: string }> = {
-  en: { veryEasy: 'Very easy', easy: 'Easy', moderate: 'Moderate', difficult: 'Difficult', veryDifficult: 'Very difficult' },
-  pl: { veryEasy: 'Bardzo łatwy', easy: 'Łatwy', moderate: 'Umiarkowany', difficult: 'Trudny', veryDifficult: 'Bardzo trudny' },
-  de: { veryEasy: 'Sehr leicht', easy: 'Leicht', moderate: 'Mittel', difficult: 'Schwierig', veryDifficult: 'Sehr schwierig' },
-  es: { veryEasy: 'Muy fácil', easy: 'Fácil', moderate: 'Moderado', difficult: 'Difícil', veryDifficult: 'Muy difícil' },
-  fr: { veryEasy: 'Très facile', easy: 'Facile', moderate: 'Modéré', difficult: 'Difficile', veryDifficult: 'Très difficile' },
-  pt: { veryEasy: 'Muito fácil', easy: 'Fácil', moderate: 'Moderado', difficult: 'Difícil', veryDifficult: 'Muito difícil' },
-  it: { veryEasy: 'Molto facile', easy: 'Facile', moderate: 'Moderato', difficult: 'Difficile', veryDifficult: 'Molto difficile' },
-  ro: { veryEasy: 'Foarte ușor', easy: 'Ușor', moderate: 'Moderat', difficult: 'Dificil', veryDifficult: 'Foarte dificil' },
-  nl: { veryEasy: 'Zeer eenvoudig', easy: 'Eenvoudig', moderate: 'Gemiddeld', difficult: 'Moeilijk', veryDifficult: 'Zeer moeilijk' },
-  hu: { veryEasy: 'Nagyon könnyű', easy: 'Könnyű', moderate: 'Közepes', difficult: 'Nehéz', veryDifficult: 'Nagyon nehéz' },
-  cs: { veryEasy: 'Velmi snadné', easy: 'Snadné', moderate: 'Střední', difficult: 'Obtížné', veryDifficult: 'Velmi obtížné' },
-  sv: { veryEasy: 'Mycket lätt', easy: 'Lätt', moderate: 'Medel', difficult: 'Svår', veryDifficult: 'Mycket svår' },
-  da: { veryEasy: 'Meget let', easy: 'Let', moderate: 'Middel', difficult: 'Svær', veryDifficult: 'Meget svær' },
-  no: { veryEasy: 'Veldig lett', easy: 'Lett', moderate: 'Middels', difficult: 'Vanskelig', veryDifficult: 'Veldig vanskelig' },
-  fi: { veryEasy: 'Erittäin helppo', easy: 'Helppo', moderate: 'Keskitaso', difficult: 'Vaikea', veryDifficult: 'Erittäin vaikea' },
-  el: { veryEasy: 'Πολύ εύκολο', easy: 'Εύκολο', moderate: 'Μέτριο', difficult: 'Δύσκολο', veryDifficult: 'Πολύ δύσκολο' },
+const READABILITY_LABELS: Record<
+  Locale,
+  { veryEasy: string; easy: string; moderate: string; difficult: string; veryDifficult: string }
+> = {
+  en: {
+    veryEasy: 'Very easy',
+    easy: 'Easy',
+    moderate: 'Moderate',
+    difficult: 'Difficult',
+    veryDifficult: 'Very difficult',
+  },
+  pl: {
+    veryEasy: 'Bardzo łatwy',
+    easy: 'Łatwy',
+    moderate: 'Umiarkowany',
+    difficult: 'Trudny',
+    veryDifficult: 'Bardzo trudny',
+  },
+  de: {
+    veryEasy: 'Sehr leicht',
+    easy: 'Leicht',
+    moderate: 'Mittel',
+    difficult: 'Schwierig',
+    veryDifficult: 'Sehr schwierig',
+  },
+  es: {
+    veryEasy: 'Muy fácil',
+    easy: 'Fácil',
+    moderate: 'Moderado',
+    difficult: 'Difícil',
+    veryDifficult: 'Muy difícil',
+  },
+  fr: {
+    veryEasy: 'Très facile',
+    easy: 'Facile',
+    moderate: 'Modéré',
+    difficult: 'Difficile',
+    veryDifficult: 'Très difficile',
+  },
+  pt: {
+    veryEasy: 'Muito fácil',
+    easy: 'Fácil',
+    moderate: 'Moderado',
+    difficult: 'Difícil',
+    veryDifficult: 'Muito difícil',
+  },
+  it: {
+    veryEasy: 'Molto facile',
+    easy: 'Facile',
+    moderate: 'Moderato',
+    difficult: 'Difficile',
+    veryDifficult: 'Molto difficile',
+  },
+  ro: {
+    veryEasy: 'Foarte ușor',
+    easy: 'Ușor',
+    moderate: 'Moderat',
+    difficult: 'Dificil',
+    veryDifficult: 'Foarte dificil',
+  },
+  nl: {
+    veryEasy: 'Zeer eenvoudig',
+    easy: 'Eenvoudig',
+    moderate: 'Gemiddeld',
+    difficult: 'Moeilijk',
+    veryDifficult: 'Zeer moeilijk',
+  },
+  hu: {
+    veryEasy: 'Nagyon könnyű',
+    easy: 'Könnyű',
+    moderate: 'Közepes',
+    difficult: 'Nehéz',
+    veryDifficult: 'Nagyon nehéz',
+  },
+  cs: {
+    veryEasy: 'Velmi snadné',
+    easy: 'Snadné',
+    moderate: 'Střední',
+    difficult: 'Obtížné',
+    veryDifficult: 'Velmi obtížné',
+  },
+  sv: {
+    veryEasy: 'Mycket lätt',
+    easy: 'Lätt',
+    moderate: 'Medel',
+    difficult: 'Svår',
+    veryDifficult: 'Mycket svår',
+  },
+  da: {
+    veryEasy: 'Meget let',
+    easy: 'Let',
+    moderate: 'Middel',
+    difficult: 'Svær',
+    veryDifficult: 'Meget svær',
+  },
+  no: {
+    veryEasy: 'Veldig lett',
+    easy: 'Lett',
+    moderate: 'Middels',
+    difficult: 'Vanskelig',
+    veryDifficult: 'Veldig vanskelig',
+  },
+  fi: {
+    veryEasy: 'Erittäin helppo',
+    easy: 'Helppo',
+    moderate: 'Keskitaso',
+    difficult: 'Vaikea',
+    veryDifficult: 'Erittäin vaikea',
+  },
+  el: {
+    veryEasy: 'Πολύ εύκολο',
+    easy: 'Εύκολο',
+    moderate: 'Μέτριο',
+    difficult: 'Δύσκολο',
+    veryDifficult: 'Πολύ δύσκολο',
+  },
 };
 
 // Locale-aware thresholds for readability labels.
@@ -212,7 +311,8 @@ const DEFAULT_THRESHOLDS: [number, number, number, number] = [90, 70, 50, 30];
 export function getReadabilityLabel(score: number | null, locale: Locale = 'en'): string {
   if (score === null) return '-';
   const labels = READABILITY_LABELS[locale];
-  const [veryEasy, easy, moderate, difficult] = READABILITY_THRESHOLDS[locale] ?? DEFAULT_THRESHOLDS;
+  const [veryEasy, easy, moderate, difficult] =
+    READABILITY_THRESHOLDS[locale] ?? DEFAULT_THRESHOLDS;
   if (score >= veryEasy) return labels.veryEasy;
   if (score >= easy) return labels.easy;
   if (score >= moderate) return labels.moderate;
@@ -254,7 +354,7 @@ export function calculateKeywordDensity(text: string, topN: number = 10): Keywor
     .toLowerCase()
     .replace(/[^\p{L}\p{N}\s]/gu, '')
     .split(/\s+/)
-    .filter((w) => w.length > 2); // skip very short words
+    .filter(w => w.length > 2); // skip very short words
 
   if (words.length === 0) return [];
 

@@ -25,11 +25,21 @@
   "schemas": {
     "software": {
       "name": "GIF til JPG-konverterer",
-      "alternateName": ["Konverter GIF til JPG", "GIF til JPG konvertering", "Gratis GIF til JPG konverterer"],
+      "alternateName": [
+        "Konverter GIF til JPG",
+        "GIF til JPG konvertering",
+        "Gratis GIF til JPG konverterer"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Eksporter det første bildet i en GIF som kompakt JPG. Mindre fil. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
-      "featureList": ["GIF til JPG-konvertering", "JPG-kvalitetskontroll", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
+      "featureList": [
+        "GIF til JPG-konvertering",
+        "JPG-kvalitetskontroll",
+        "Batchkonvertering",
+        "Lokal nettleserbehandling",
+        "Ingen filopplasting kreves"
+      ]
     },
     "howTo": {
       "name": "Slik konverterer du GIF til JPG",
@@ -174,68 +184,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "GIF vs JPG – formatsammenligning",
-      "plans": [
+      "cols": ["GIF", "JPG"],
+      "rows": [
         {
-          "id": "gif",
-          "name": "GIF"
+          "label": "Komprimering med tap",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Komprimering med tap",
-          "values": {
-            "gif": false,
-            "jpg": true
-          }
+          "label": "Komprimering uten tap",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Komprimering uten tap",
-          "values": {
-            "gif": true,
-            "jpg": false
-          }
+          "label": "Gjennomsiktighet (alfakanal)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Gjennomsiktighet (alfakanal)",
-          "values": {
-            "gif": true,
-            "jpg": false
-          }
+          "label": "Animasjonsstøtte",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Animasjonsstøtte",
-          "values": {
-            "gif": true,
-            "jpg": false
-          }
+          "label": "Nettleserstøtte",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Nettleserstøtte",
-          "values": {
-            "gif": true,
-            "jpg": true
-          }
+          "label": "Kompakt filstørrelse",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Kompakt filstørrelse",
-          "values": {
-            "gif": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "gif": false,
-            "jpg": true
-          }
+          "label": "Metadata (EXIF)",
+          "values": ["—", "✓"]
         }
       ]
     },

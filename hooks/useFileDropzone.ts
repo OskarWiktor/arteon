@@ -10,26 +10,26 @@ type UseFileDropzoneOptions = {
 
 export function useFileDropzone({ onFiles, disabled = false, dropEffect }: UseFileDropzoneOptions) {
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-      if (disabled) return;
-      onFiles(e.target.files);
-      e.target.value = '';
-    };
+    if (disabled) return;
+    onFiles(e.target.files);
+    e.target.value = '';
+  };
 
   const handleDrop = (e: DragEvent<HTMLElement>) => {
-      e.preventDefault();
-      e.stopPropagation();
-      if (disabled) return;
-      onFiles(e.dataTransfer.files);
-    };
+    e.preventDefault();
+    e.stopPropagation();
+    if (disabled) return;
+    onFiles(e.dataTransfer.files);
+  };
 
   const handleDragOver = (e: DragEvent<HTMLElement>) => {
-      e.preventDefault();
-      e.stopPropagation();
-      if (disabled) return;
-      if (dropEffect) {
-        e.dataTransfer.dropEffect = dropEffect;
-      }
-    };
+    e.preventDefault();
+    e.stopPropagation();
+    if (disabled) return;
+    if (dropEffect) {
+      e.dataTransfer.dropEffect = dropEffect;
+    }
+  };
 
   return { handleFileChange, handleDrop, handleDragOver };
 }

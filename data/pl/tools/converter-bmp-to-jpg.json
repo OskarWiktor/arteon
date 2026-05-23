@@ -2,13 +2,13 @@
   "toolKey": "bmpToJpg",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter BMP na JPG – skompresuj obraz za darmo",
-    "description": "Zamień nieskompresowane pliki BMP na lekki JPG w przeglądarce. Redukcja rozmiaru nawet o 95%. Bez limitu i rejestracji. Przetwarzanie odbywa się w Twojej przeglądarce - pliki nie opuszczają urządzenia.",
+    "title": "Darmowy konwerter formatu BMP na JPG bez limitu plików i rejestracji",
+    "description": "Zamień nieskompresowane pliki BMP na lekki JPG w przeglądarce. Redukcja rozmiaru nawet o 95%. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-bmp-na-jpg"
   },
   "hero": {
-    "title": "Konwerter BMP na JPG – zmniejsz rozmiar pliku nawet o 95%",
+    "title": "Darmowy konwerter formatu BMP na JPG – zmniejsz rozmiar pliku nawet o 95%",
     "description": "Zamień nieskompresowane pliki BMP na lekki JPG. Ustaw jakość i pobierz skompresowane obrazy. Konwersja odbywa się lokalnie.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter BMP na JPG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana BMP na JPG online", "Konwersja BMP do JPG"],
+      "alternateName": ["Zamiana BMP na JPG", "Konwersja BMP do JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter BMP na JPG online. Zmniejsz rozmiar nieskompresowanych plików BMP. Bez limitu i rejestracji.",
-      "featureList": ["Konwersja BMP do JPG", "Regulacja jakości (60–95%)", "Konwersja wielu plików", "Przetwarzanie lokalne"]
+      "description": "Darmowy konwerter BMP na JPG. Zmniejsz rozmiar nieskompresowanych plików BMP. Bez limitu i rejestracji.",
+      "featureList": [
+        "Konwersja BMP do JPG",
+        "Regulacja jakości (60–95%)",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić BMP na JPG online",
+      "name": "Jak zamienić BMP na JPG",
       "description": "Instrukcja konwersji plików BMP na format JPG.",
       "steps": [
         {
@@ -115,7 +120,7 @@
         },
         {
           "icon": "RiShoppingCartLine",
-          "title": "Platformy i formularze online",
+          "title": "Platformy i formularze",
           "description": "Wiele platform wymaga formatu JPG z limitem rozmiaru. Konwersja z BMP rozwiązuje oba problemy jednocześnie."
         }
       ]
@@ -156,78 +161,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs JPG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["BMP", "JPG"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Kompresja stratna",
+          "values": ["—", "✓"]
         },
         {
-          "id": "jpg",
-          "name": "JPG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["1/4/8/24/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "bmp": true,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "bmp": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "bmp": false,
-            "jpg": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "bmp": "Wszystkie przeglądarki",
-            "jpg": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "jpg": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "bmp": false,
-            "jpg": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

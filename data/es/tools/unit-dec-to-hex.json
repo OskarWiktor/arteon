@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convierte números decimales a hexadecimal. Esencial para colores web y programación.",
-      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+      "featureList": [
+        "Conversión bidireccional en tiempo real",
+        "Todos los convertidores en un solo lugar",
+        "Copiar resultado al portapapeles",
+        "Cálculo local en el navegador"
+      ]
     },
     "howTo": {
       "name": "Cómo usar el convertidor",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Decimal vs Hexadecimal",
-      "featureLabel": "Característica",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["Decimal (base-10)", "Hexadecimal (base-16)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Decimal (base-10)"
+          "label": "Dígitos",
+          "values": ["0–9", "0–9, A–F"]
         },
         {
-          "id": "unit2",
-          "name": "Hexadecimal (base-16)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Dígitos",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–9, A–F"
-          }
+          "label": "Ejemplo: 255",
+          "values": ["255", "FF"]
         },
         {
-          "name": "Ejemplo: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "FF"
-          }
+          "label": "Ejemplo: 1000",
+          "values": ["1000", "3E8"]
         },
         {
-          "name": "Ejemplo: 1000",
-          "values": {
-            "unit1": "1000",
-            "unit2": "3E8"
-          }
+          "label": "Usado para",
+          "values": ["Cálculo diario", "Colores, direcciones"]
         },
         {
-          "name": "Usado para",
-          "values": {
-            "unit1": "Cálculo diario",
-            "unit2": "Colores, direcciones"
-          }
-        },
-        {
-          "name": "Compacidad",
-          "values": {
-            "unit1": "Estándar",
-            "unit2": "Más compacto que binario"
-          }
+          "label": "Compacidad",
+          "values": ["Estándar", "Más compacto que binario"]
         }
       ]
     },

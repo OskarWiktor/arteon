@@ -8,7 +8,7 @@
     "path": "/it/strumenti/editor-di-immagini-online"
   },
   "hero": {
-    "title": "Ridimensiona, ritaglia e converti immagini online – editor gratuito",
+    "title": "Ridimensiona, ritaglia e converti immagini – editor gratuito",
     "description": "Ritaglia e ridimensiona le tue immagini per i social media, i siti web e i materiali stampati. Modelli pronti per Instagram, Facebook e LinkedIn - oppure inserisci le tue dimensioni personalizzate.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -25,10 +25,16 @@
   "schemas": {
     "software": {
       "name": "Editor di immagini – ritaglio, ridimensionamento e conversione",
-      "alternateName": ["Ritagliare immagini gratis", "Ridimensionare immagini gratis", "Ritagliare immagini Instagram", "Dimensione copertina Facebook", "Creare banner LinkedIn"],
+      "alternateName": [
+        "Ritagliare immagini gratis",
+        "Ridimensionare immagini gratis",
+        "Ritagliare immagini Instagram",
+        "Dimensione copertina Facebook",
+        "Creare banner LinkedIn"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Editor di immagini online gratuito per ridimensionare, ritagliare e convertire formati. Preset per Instagram, Facebook e LinkedIn. Creazione di avatar circolari. Esportazione in JPG, PNG e WebP con controllo qualità. Elaborazione locale nel browser.",
+      "description": "Editor di immagini gratuito per ridimensionare, ritagliare e convertire formati. Preset per Instagram, Facebook e LinkedIn. Creazione di avatar circolari. Esportazione in JPG, PNG e WebP con controllo qualità. Elaborazione locale nel browser.",
       "featureList": [
         "Ridimensionamento immagini a qualsiasi dimensione",
         "Ritaglio con selezione area interattiva",
@@ -79,7 +85,7 @@
       "title": "Ritaglia le tue immagini per ogni piattaforma",
       "html": "<p class=\"text-mid\">Ogni piattaforma ha le proprie esigenze in termini di immagini: Instagram predilige le immagini quadrate o verticali, Facebook ha dimensioni di copertina specifiche, LinkedIn richiede dimensioni di banner precise. L'editor offre modelli pronti all'uso per tutti i formati comuni e permette anche di inserire dimensioni personalizzate.</p><p class=\"text-mid mt-3\">Lo strumento funziona interamente nel tuo browser: nessuna immagine viene inviata a un server. Puoi regolare lo zoom e la posizione del ritaglio e scaricare il risultato in tre formati: PNG (senza perdita, con trasparenza), JPG (file più leggero, senza trasparenza) e WebP (compressione ottimale).</p>",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-di-immagini-online-it.webp",
-      "imageAlt": "Editor di immagini online – Arteon"
+      "imageAlt": "Editor di immagini – Arteon"
     },
     {
       "type": "gap",
@@ -355,8 +361,8 @@
       "title": "Aiutaci a migliorare i nostri strumenti",
       "description": "Hai un'idea per una nuova funzionalità, hai trovato un bug o vuoi suggerire un altro strumento che renderebbe il tuo lavoro più facile? Scrivici – rispondiamo entro 24 ore.",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/editor-di-immagini-online-it.webp",
-      "imageAlt": "Editor di immagini online – Arteon",
-      "defaultSubject": "Feedback: Editor di immagini online"
+      "imageAlt": "Editor di immagini – Arteon",
+      "defaultSubject": "Feedback: Editor di immagini"
     },
     {
       "type": "gap",

@@ -103,7 +103,17 @@ type StrOrNumArray = ToArray<string | number>;
 **Nested Conditions:**
 
 ```typescript
-type TypeName<T> = T extends string ? 'string' : T extends number ? 'number' : T extends boolean ? 'boolean' : T extends undefined ? 'undefined' : T extends Function ? 'function' : 'object';
+type TypeName<T> = T extends string
+  ? 'string'
+  : T extends number
+    ? 'number'
+    : T extends boolean
+      ? 'boolean'
+      : T extends undefined
+        ? 'undefined'
+        : T extends Function
+          ? 'function'
+          : 'object';
 
 type T1 = TypeName<string>; // "string"
 type T2 = TypeName<() => void>; // "function"
@@ -277,14 +287,14 @@ class TypedEventEmitter<T extends Record<string, any>> {
   emit<K extends keyof T>(event: K, data: T[K]): void {
     const callbacks = this.listeners[event];
     if (callbacks) {
-      callbacks.forEach((callback) => callback(data));
+      callbacks.forEach(callback => callback(data));
     }
   }
 }
 
 const emitter = new TypedEventEmitter<EventMap>();
 
-emitter.on('user:created', (data) => {
+emitter.on('user:created', data => {
   console.log(data.id, data.name); // Type-safe!
 });
 
@@ -365,7 +375,8 @@ type OptionalKeys<T> = {
   [K in keyof T]-?: {} extends Pick<T, K> ? K : never;
 }[keyof T];
 
-type IsComplete<T, S> = RequiredKeys<T> extends keyof S ? (S[RequiredKeys<T>] extends undefined ? false : true) : false;
+type IsComplete<T, S> =
+  RequiredKeys<T> extends keyof S ? (S[RequiredKeys<T>] extends undefined ? false : true) : false;
 
 class Builder<T, S extends BuilderState<T> = {}> {
   private state: S = {} as S;
@@ -400,11 +411,19 @@ const user = builder.set('id', '1').set('name', 'John').set('email', 'john@examp
 
 ```typescript
 type DeepReadonly<T> = {
-  readonly [P in keyof T]: T[P] extends object ? (T[P] extends Function ? T[P] : DeepReadonly<T[P]>) : T[P];
+  readonly [P in keyof T]: T[P] extends object
+    ? T[P] extends Function
+      ? T[P]
+      : DeepReadonly<T[P]>
+    : T[P];
 };
 
 type DeepPartial<T> = {
-  [P in keyof T]?: T[P] extends object ? (T[P] extends Array<infer U> ? Array<DeepPartial<U>> : DeepPartial<T[P]>) : T[P];
+  [P in keyof T]?: T[P] extends object
+    ? T[P] extends Array<infer U>
+      ? Array<DeepPartial<U>>
+      : DeepPartial<T[P]>
+    : T[P];
 };
 
 interface Config {
@@ -487,17 +506,17 @@ interface LoginForm {
 const validator = new FormValidator<LoginForm>({
   email: [
     {
-      validate: (v) => v.includes('@'),
+      validate: v => v.includes('@'),
       message: 'Email must contain @',
     },
     {
-      validate: (v) => v.length > 0,
+      validate: v => v.length > 0,
       message: 'Email is required',
     },
   ],
   password: [
     {
-      validate: (v) => v.length >= 8,
+      validate: v => v.length >= 8,
       message: 'Password must be at least 8 characters',
     },
   ],
@@ -544,9 +563,17 @@ function handleState<T>(state: AsyncState<T>): void {
 }
 
 // Type-safe state machine
-type State = { type: 'idle' } | { type: 'fetching'; requestId: string } | { type: 'success'; data: any } | { type: 'error'; error: Error };
+type State =
+  | { type: 'idle' }
+  | { type: 'fetching'; requestId: string }
+  | { type: 'success'; data: any }
+  | { type: 'error'; error: Error };
 
-type Event = { type: 'FETCH'; requestId: string } | { type: 'SUCCESS'; data: any } | { type: 'ERROR'; error: Error } | { type: 'RESET' };
+type Event =
+  | { type: 'FETCH'; requestId: string }
+  | { type: 'SUCCESS'; data: any }
+  | { type: 'ERROR'; error: Error }
+  | { type: 'RESET' };
 
 function reducer(state: State, event: Event): State {
   switch (state.type) {
@@ -604,7 +631,7 @@ function isArrayOf<T>(value: unknown, guard: (item: unknown) => item is T): valu
 const data: unknown = ['a', 'b', 'c'];
 
 if (isArrayOf(data, isString)) {
-  data.forEach((s) => s.toUpperCase()); // Type: string[]
+  data.forEach(s => s.toUpperCase()); // Type: string[]
 }
 ```
 

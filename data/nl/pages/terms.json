@@ -1,19 +1,19 @@
 {
   "slug": "gebruiksvoorwaarden",
   "metadata": {
-    "title": "Gebruiksvoorwaarden – Arteon Gratis Online Tools",
-    "description": "Gebruiksvoorwaarden voor de gratis online tools van Arteon. Lees meer over gebruiksvoorwaarden, intellectueel eigendom, disclaimers en aansprakelijkheid."
+    "title": "Gebruiksvoorwaarden – Arteon Gratis Tools",
+    "description": "Gebruiksvoorwaarden voor de gratis tools van Arteon. Lees meer over gebruiksvoorwaarden, intellectueel eigendom, disclaimers en aansprakelijkheid."
   },
   "hero": {
     "title": "Gebruiksvoorwaarden",
-    "description": "Gebruiksvoorwaarden voor de gratis online tools van Arteon"
+    "description": "Gebruiksvoorwaarden voor de gratis tools van Arteon"
   },
   "version": "24.02.2026",
   "sections": [
     {
       "id": "introduction",
       "title": "1. Inleiding",
-      "content": "Deze Gebruiksvoorwaarden regelen uw gebruik van de gratis online tools die door Arteon worden aangeboden op arteonagency.pl. Door onze tools te gebruiken, gaat u akkoord met deze voorwaarden."
+      "content": "Deze Gebruiksvoorwaarden regelen uw gebruik van de gratis tools die door Arteon worden aangeboden op arteonagency.pl. Door onze tools te gebruiken, gaat u akkoord met deze voorwaarden."
     },
     {
       "id": "provider",
@@ -73,7 +73,7 @@
   ],
   "cta": {
     "title": "Terug naar tools",
-    "description": "Gratis online tools voor het werken met afbeeldingen, tekst en kleuren",
+    "description": "Gratis tools voor het werken met afbeeldingen, tekst en kleuren",
     "btnOne": "Tools"
   }
 }

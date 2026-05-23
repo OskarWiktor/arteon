@@ -2,13 +2,13 @@
   "toolKey": "svgToTiff",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter SVG na TIFF - SVG TIFF",
-    "description": "Zamień grafikę wektorową SVG na profesjonalny TIFF. Do druku i DTP. Bez instalacji, bez logowania. Działa na każdym urządzeniu z przeglądarką.",
+    "title": "Darmowy konwerter formatu SVG na TIFF bez limitu plików i rejestracji",
+    "description": "Zamień grafikę wektorową SVG na profesjonalny TIFF. Do druku i DTP. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-svg-na-tiff"
   },
   "hero": {
-    "title": "Konwerter SVG na TIFF",
+    "title": "Darmowy konwerter formatu SVG na TIFF",
     "description": "Zamień grafikę wektorową SVG na profesjonalny TIFF. Do druku i DTP. Bez instalacji, bez logowania. Działa na każdym urządzeniu z przeglądarką.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień grafikę wektorową SVG na profesjonalny TIFF. Do druku i DTP. Bez instalacji, bez logowania. Działa na każdym urządzeniu z przeglądarką.",
-      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
-      "alternateName": ["Zamiana SVG na TIFF", "Konwersja SVG do TIFF", "Darmowy konwerter SVG na TIFF"]
+      "featureList": [
+        "Konwersja do TIFF",
+        "Format bezstratny",
+        "Konwersja wielu plików",
+        "Przetwarzanie lokalne w przeglądarce"
+      ],
+      "alternateName": [
+        "Zamiana SVG na TIFF",
+        "Konwersja SVG do TIFF",
+        "Darmowy konwerter SVG na TIFF"
+      ]
     },
     "howTo": {
       "name": "SVG to TIFF",
@@ -168,78 +177,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "SVG vs TIFF – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["SVG", "TIFF"],
+      "rows": [
         {
-          "id": "svg",
-          "name": "SVG"
+          "label": "Kompresja stratna",
+          "values": ["—", "—"]
         },
         {
-          "id": "tiff",
-          "name": "TIFF",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Tylko Safari"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["N/A (wektor)", "8/16/32-bit"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "svg": false,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "svg": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "svg": true,
-            "tiff": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "svg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "svg": "Wszystkie przeglądarki",
-            "tiff": "Tylko Safari"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "svg": "N/A (wektor)",
-            "tiff": "8/16/32-bit"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "svg": true,
-            "tiff": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "svg": false,
-            "tiff": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

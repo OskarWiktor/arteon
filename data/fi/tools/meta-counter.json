@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Meta-otsikon ja kuvauksen pituustarkistus pikseleinä",
-      "alternateName": ["Meta-otsikon ja -kuvauksen tarkistus Google-esikatselulla", "Google SERP -esikatselu", "SEO-otsikon leveyden tarkistus pikseleinä"],
+      "alternateName": [
+        "Meta-otsikon ja -kuvauksen tarkistus Google-esikatselulla",
+        "Google SERP -esikatselu",
+        "SEO-otsikon leveyden tarkistus pikseleinä"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
       "description": "Ilmainen meta-otsikon ja kuvauksen pituustarkistus. Tarkistaa merkkien, sanojen määrän ja leveyden pikseleinä. Näyttää esikatselun otsikon ja kuvauksen ulkoasusta Googlen hakutuloksissa.",

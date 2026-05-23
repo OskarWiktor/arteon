@@ -31,7 +31,7 @@
         "Word counting tool for copywriters",
         "Reading time calculator",
         "Flesch-Kincaid readability checker",
-        "Syllable counter online",
+        "Syllable counter",
         "Speaking time calculator",
         "Online letter case converter",
         "Text readability score tool",
@@ -90,7 +90,7 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Free word and character counter online with text tools",
+      "title": "Free word and character counter with text tools",
       "html": "<p class=\"text-mid\">This tool combines a word and character counter with Flesch-Kincaid readability analysis and a set of text formatting functions. Paste your text and you will see the word count, characters, syllables, sentences, paragraphs, unique words, estimated reading time, speaking time, and a color-coded readability score.</p><p class=\"text-mid mt-3\">The <strong>Flesch-Kincaid readability score</strong> (0–100) tells you how easy your text is to read. Scores above 70 indicate easy reading (suitable for a broad audience), while scores below 30 indicate academic-level complexity. The tool uses language-adapted formulas for 16 languages, including Amstad (German), Fernandez-Huerta (Spanish), and Gulpease (Italian).</p><p class=\"text-mid mt-3\">Below the text field you will find a toolbar with 10 tools: letter case conversion (UPPERCASE, lowercase, Sentence case, Title Case), removing extra spaces, empty lines and duplicates, and alphabetical sorting. All analysis and processing happens locally in your browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp",
       "imageAlt": "Word and character counter – Arteon"

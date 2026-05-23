@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertiți coduri de culoare HEX în RGB și invers.",
-      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+      "featureList": [
+        "Conversie bidirecțională în timp real",
+        "Toate convertoarele într-un singur loc",
+        "Copierea rezultatului în clipboard",
+        "Calcul local în browser"
+      ]
     },
     "howTo": {
       "name": "Cum să utilizați convertorul",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEX vs RGB – comparație",
-      "featureLabel": "Proprietate",
-      "plans": [
+      "labelHeader": "Proprietate",
+      "cols": ["HEX", "RGB"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "HEX"
+          "label": "Format",
+          "values": ["#RRGGBB", "rgb(R, G, B)"]
         },
         {
-          "id": "unit2",
-          "name": "RGB",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Format",
-          "values": {
-            "unit1": "#RRGGBB",
-            "unit2": "rgb(R, G, B)"
-          }
+          "label": "Valori",
+          "values": ["00–FF (hex)", "0–255 (decimal)"]
         },
         {
-          "name": "Valori",
-          "values": {
-            "unit1": "00–FF (hex)",
-            "unit2": "0–255 (decimal)"
-          }
+          "label": "Opacitate",
+          "values": ["8-digit (#RRGGBBAA)", "rgba(R, G, B, A)"]
         },
         {
-          "name": "Opacitate",
-          "values": {
-            "unit1": "8-digit (#RRGGBBAA)",
-            "unit2": "rgba(R, G, B, A)"
-          }
+          "label": "Prescurtare",
+          "values": ["#RGB (3 digits)", "Fără prescurtare"]
         },
         {
-          "name": "Prescurtare",
-          "values": {
-            "unit1": "#RGB (3 digits)",
-            "unit2": "Fără prescurtare"
-          }
-        },
-        {
-          "name": "Utilizare",
-          "values": {
-            "unit1": "CSS, instrumente de design",
-            "unit2": "CSS, programare"
-          }
+          "label": "Utilizare",
+          "values": ["CSS, instrumente de design", "CSS, programare"]
         }
       ]
     },

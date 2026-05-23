@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Kontroll av metatittel og beskrivelseslengde i piksler",
-      "alternateName": ["Meta-tittel- og beskrivelsessjekker med Google-forhåndsvisning", "Google SERP-forhåndsvisning", "SEO-tittelbreddesjekk i piksler"],
+      "alternateName": [
+        "Meta-tittel- og beskrivelsessjekker med Google-forhåndsvisning",
+        "Google SERP-forhåndsvisning",
+        "SEO-tittelbreddesjekk i piksler"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "SEOTool",
       "description": "Gratis kontroll av metatittel- og beskrivelseslengde. Sjekker antall tegn, ord og bredde i piksler. Viser forhåndsvisning av hvordan tittelen og beskrivelsen vises i Googles søkeresultater.",
@@ -271,7 +275,7 @@
     {
       "type": "sectionInfo",
       "title": "Lokal SEO i Norge - optimalisering for byer og regioner",
-      "html": "<p class=\"text-mid mb-4\">Lokale tjenesteytere bør inkludere bynavnet i meta-tittelen. Anbefalt struktur: &quot;[Tjeneste] [By] - [Firmanavn]&quot;. Eksempel: &quot;Tannlege Oslo Grünerløkka - Tannklinikken Smil&quot;. Tittelen inneholder den lokale søkefrasen i begynnelsen, der den har størst SEO-verdi. For bedrifter med flere lokasjoner lønner det seg å opprette en egen side per by med unik tittel og beskrivelse.</p><p class=\"text-mid mb-4\">Meta-beskrivelsen for en lokal bedrift bør inneholde adresse eller bydel, åpningstider og en konkret fordel. Eksempel: &quot;Tannklinikk på Grünerløkka i Oslo. Bestill time online, korte ventetider. Mandag–fredag 8–17&quot;. Google viser ofte denne informasjonen i utvidede søkeresultater, noe som hjelper den søkende med å ta en beslutning uten å besøke nettsiden.</p><p class=\"text-mid\">Bransjer med sterk lokal SEO i Norge omfatter restaurant, helse, eiendom, advokater og håndverkere. Sørg for at Google Bedriftsprofilen og nettsiden bruker samme firmanavn og adresseformat. Avvik mellom disse kildene kan gjøre det vanskeligere for Google å koble dem sammen.</p>"
+      "html": "<p class=\"text-mid mb-4\">Lokale tjenesteytere bør inkludere bynavnet i meta-tittelen. Anbefalt struktur: &quot;[Tjeneste] [By] - [Firmanavn]&quot;. Eksempel: &quot;Tannlege Oslo Grünerløkka - Tannklinikken Smil&quot;. Tittelen inneholder den lokale søkefrasen i begynnelsen, der den har størst SEO-verdi. For bedrifter med flere lokasjoner lønner det seg å opprette en egen side per by med unik tittel og beskrivelse.</p><p class=\"text-mid mb-4\">Meta-beskrivelsen for en lokal bedrift bør inneholde adresse eller bydel, åpningstider og en konkret fordel. Eksempel: &quot;Tannklinikk på Grünerløkka i Oslo. Bestill time, korte ventetider. Mandag–fredag 8–17&quot;. Google viser ofte denne informasjonen i utvidede søkeresultater, noe som hjelper den søkende med å ta en beslutning uten å besøke nettsiden.</p><p class=\"text-mid\">Bransjer med sterk lokal SEO i Norge omfatter restaurant, helse, eiendom, advokater og håndverkere. Sørg for at Google Bedriftsprofilen og nettsiden bruker samme firmanavn og adresseformat. Avvik mellom disse kildene kan gjøre det vanskeligere for Google å koble dem sammen.</p>"
     },
     {
       "type": "gap",

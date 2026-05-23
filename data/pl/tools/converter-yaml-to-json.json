@@ -2,13 +2,13 @@
   "toolKey": "yamlToJson",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter YAML na JSON - darmowy, z walidacją",
+    "title": "Darmowy konwerter formatu YAML na JSON bez limitu plików i rejestracji",
     "description": "Zamień dane YAML na poprawny JSON z walidacją składni. Idealny do Docker, Kubernetes, CI/CD. Bez rejestracji - konwersja lokalna.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-yaml-na-json"
   },
   "hero": {
-    "title": "Zamień konfigurację YAML na JSON",
+    "title": "Darmowy konwerter formatu YAML na JSON",
     "description": "Wklej kod YAML, a narzędzie zamieni go na poprawnie sformatowany JSON z walidacją składni. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter YAML na JSON - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana YAML na JSON online", "Konwersja YAML do JSON", "YAML to JSON converter"],
+      "alternateName": ["Zamiana YAML na JSON", "Konwersja YAML do JSON", "YAML to JSON converter"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
-      "description": "Darmowy konwerter YAML na JSON online. Zamień dane YAML na JSON w przeglądarce - dane nie są wysyłane na serwer.",
-      "featureList": ["Konwersja YAML na JSON", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
+      "description": "Darmowy konwerter YAML na JSON. Zamień dane YAML na JSON w przeglądarce - dane nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja YAML na JSON",
+        "Walidacja danych wejściowych",
+        "Przetwarzanie lokalne w przeglądarce",
+        "Kopiowanie do schowka lub pobieranie"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić YAML na JSON online",
+      "name": "Jak zamienić YAML na JSON",
       "description": "Instrukcja konwersji danych YAML na format JSON.",
       "steps": [
         {
@@ -164,64 +169,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "YAML vs JSON – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["YAML", "JSON"],
+      "rows": [
         {
-          "id": "yaml",
-          "name": "YAML"
+          "label": "Dane zagnieżdżone",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Dane tabelaryczne",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Walidacja schematu",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Czytelność dla człowieka",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Zwięzła składnia",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Dane zagnieżdżone",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Dane tabelaryczne",
-          "values": {
-            "yaml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Walidacja schematu",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Czytelność dla człowieka",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Zwięzła składnia",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

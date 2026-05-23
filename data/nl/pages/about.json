@@ -1,16 +1,16 @@
 {
   "slug": "over-ons",
   "metadata": {
-    "title": "Over Arteon – Gratis online tools voor web, SEO & design",
+    "title": "Over Arteon – Gratis tools voor web, SEO & design",
     "description": "Arteon is een creatief bureau dat gratis browsertools bouwt: WebP-converter, favicon-generator, kleurcontrast-checker, QR-code generator en meer."
   },
   "hero": {
-    "title": "Gratis online tools gemaakt door een creatief bureau",
+    "title": "Gratis tools gemaakt door een creatief bureau",
     "description": "10 browsertools voor afbeeldingen, SEO, kleuren, e-mailhandtekeningen en QR-codes - zonder registratie, zonder bestandsuploads, zonder limieten"
   },
   "whoWeAre": {
     "title": "Wie wij zijn",
-    "p1": "Arteon is een Pools creatief bureau. Naast ons commerciële werk bouwen en onderhouden we een groeiende collectie gratis online tools voor ondernemers, websitebouwers, ontwerpers, marketeers en iedereen die met digitale content werkt.",
+    "p1": "Arteon is een Pools creatief bureau. Naast ons commerciële werk bouwen en onderhouden we een groeiende collectie gratis tools voor ondernemers, websitebouwers, ontwerpers, marketeers en iedereen die met digitale content werkt.",
     "p2": "Elke tool die we maken lost een specifiek, alledaags probleem op: afbeeldingen converteren, kleurcontrast controleren, favicons genereren, QR-codes maken en meer. Ons doel is een compleet pakket tools te bouwen waar u alles vindt wat u nodig heeft op één plek - zonder te schakelen tussen tientallen verschillende websites."
   },
   "whyFree": {
@@ -39,7 +39,7 @@
     "items": [
       {
         "title": "Afbeeldingen & favicons",
-        "description": "WebP-converter, online afbeeldingeneditor en favicon-generator. 3 tools voor dagelijks beeldwerk."
+        "description": "WebP-converter, afbeeldingeneditor en favicon-generator. 3 tools voor dagelijks beeldwerk."
       },
       {
         "title": "Meta & SEO",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Probeer onze tools",
-    "description": "Gratis online tools - zonder registratie, zonder limieten, zonder bestandsuploads naar servers",
+    "description": "Gratis tools - zonder registratie, zonder limieten, zonder bestandsuploads naar servers",
     "btnOne": "Naar de tools",
     "btnTwo": "Contact"
   }

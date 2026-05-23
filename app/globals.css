@@ -7,7 +7,7 @@
 }
 
 :root {
-  --primary: #130f0d;
+  --primary: #1b1512;
   --primary-light: #e0d6ce;
   --primary-mid: #493b30;
 
@@ -57,7 +57,9 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-sans:
+    var(--font-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
   --font-heading: var(--font-heading), ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 
   --color-background: var(--background);
@@ -304,13 +306,6 @@ strong {
   @apply underline underline-offset-4 hover:no-underline;
 }
 
-input,
-select,
-textarea {
-  @apply w-full rounded-md border border-neutral-300 bg-white px-4 py-6 text-lg transition focus:outline-none;
-  color: var(--text-mid);
-}
-
 textarea {
   @apply w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-lg transition focus:outline-none;
   color: var(--text-mid);
@@ -336,10 +331,13 @@ textarea {
     color: var(--text-mid);
   }
 }
+.tool-input {
+  @apply text-dark h-11 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm transition;
+}
 
 .hover-underline {
   position: relative;
-  display: inline-block;
+  display: flex;
 }
 
 .hover-underline::after {
@@ -375,17 +373,6 @@ textarea {
 }
 
 .tool-input {
-  @apply focus:border-mid w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:outline-none;
-  color: var(--text-mid);
-}
-
-.tool-textarea {
-  @apply focus:border-mid w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:outline-none;
-  color: var(--text-mid);
-}
-
-.tool-select {
-  @apply focus:border-mid w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:outline-none;
   color: var(--text-mid);
 }
 
@@ -425,11 +412,6 @@ textarea {
 
 .tool-upload-area {
   @apply hover:border-light flex cursor-pointer flex-col items-center justify-center rounded-lg border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center transition hover:bg-neutral-100;
-}
-
-.tool-checkbox {
-  @apply h-4 w-4! rounded border-neutral-300 p-0!;
-  accent-color: var(--primary);
 }
 
 .tool-range {

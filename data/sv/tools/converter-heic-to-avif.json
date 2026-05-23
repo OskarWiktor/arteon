@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera iPhone HEIC-foton till modernt AVIF-format. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
-      "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
-      "alternateName": ["Konvertera HEIC till AVIF", "HEIC till AVIF konvertering", "Gratis HEIC till AVIF konverterare"]
+      "featureList": [
+        "Konvertering till AVIF",
+        "Kvalitetsjustering (60-95%)",
+        "Batchkonvertering",
+        "Lokal bearbetning i webbläsaren"
+      ],
+      "alternateName": [
+        "Konvertera HEIC till AVIF",
+        "HEIC till AVIF konvertering",
+        "Gratis HEIC till AVIF konverterare"
+      ]
     },
     "howTo": {
       "name": "Hur konverterar man HEIC till AVIF",
@@ -173,78 +182,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEIC vs AVIF – formatjämförelse",
-      "plans": [
+      "labelHeader": "Funktion",
+      "cols": ["HEIC", "AVIF"],
+      "rows": [
         {
-          "id": "heic",
-          "name": "HEIC"
+          "label": "Förlustrik komprimering",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Förlustfri komprimering",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Transparens (alfakanal)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Animationsstöd",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Webbläsarstöd",
+          "values": ["Safari 13+ (macOS / iOS)", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Färgdjup",
+          "values": ["8/10-bit, HDR", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Kompakt filstorlek",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadata (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Förlustrik komprimering",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Förlustfri komprimering",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Transparens (alfakanal)",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Animationsstöd",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Webbläsarstöd",
-          "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Färgdjup",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Kompakt filstorlek",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadata (EXIF)",
-          "values": {
-            "heic": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funktion"
+      ]
     },
     {
       "type": "gap",

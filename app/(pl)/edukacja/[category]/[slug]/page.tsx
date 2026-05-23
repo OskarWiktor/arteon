@@ -1,37 +1,39 @@
 import { notFound, permanentRedirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
-
-import Gap from '@/components/ui/Gap';
-import Wrapper from '@/components/ui/Wrapper';
-import HeroBanner from '@/components/sections/HeroBanner';
-import Breadcrumbs from '@/components/sections/BreadCrumbs';
-import TableOfContents from '@/components/sections/TableOfContent';
-import Badge from '@/components/ui/Badge';
-import FaqPanels from '@/components/ui/FaqPanels';
-import CTABanner from '@/components/sections/CTABanner';
+import Wrapper from '@/components/atoms/Wrapper';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import TableOfContents from '@/components/organisms/TableOfContent';
+import Badge from '@/components/atoms/Badge';
+import FaqPanels from '@/components/molecules/FaqPanels';
+import CTABanner from '@/components/organisms/CTABanner';
 
 import type { Article } from '@/types/article';
-import { getAllArticlePreviews, findArticleBySlug, getPrimaryCategorySlug } from '@/lib/blogDataService';
+import {
+  getAllArticlePreviews,
+  findArticleBySlug,
+  getPrimaryCategorySlug,
+} from '@/lib/blogDataService';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
-import CodeBlock from '@/components/ui/CodeBlock';
-import TableBlock from '@/components/ui/TableBlock';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import ShareBlock from '@/components/sections/ShareBlock';
-import ColorPalette from '@/components/ui/ColorPalette';
-import AbbrTouchHandler from '@/components/ui/AbbrTouchHandler';
-import AdSense from '@/components/ui/AdSense';
-import { JsonLd } from '@/components/seo/JsonLd';
-
-const GAP: 'sm' | 'xs' | 'md' = 'sm';
+import CodeBlock from '@/components/organisms/CodeBlock';
+import TableBlock from '@/components/atoms/TableBlock';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import ShareBlock from '@/components/organisms/ShareBlock';
+import ColorPalette from '@/components/atoms/ColorPalette';
+import AbbrTouchHandler from '@/components/atoms/AbbrTouchHandler';
+import AdSense from '@/components/molecules/AdSense';
+import { JsonLd } from '@/components/atoms/JsonLd';
+import Divider from '@/components/atoms/Divider';
 
 const defaultCTA = {
   title: 'Rozwiń z nami swoją firmę',
-  description: 'Tworzymy strony, sklepy, blogi, SEO, treści, grafiki oraz marketing cyfrowy. U nas znajdziesz rozwiązania, dla każdej firmy, na każdy budżet',
+  description:
+    'Tworzymy strony, sklepy, blogi, SEO, treści, grafiki oraz marketing cyfrowy. U nas znajdziesz rozwiązania, dla każdej firmy, na każdy budżet',
   btnOne: 'Skontaktuj się',
-  btnOneLink: '/kontakt',
+  btnOneHref: '/kontakt',
   btnTwo: 'Sprawdź naszą ofertę',
-  btnTwoLink: '/uslugi',
+  btnTwoHref: '/uslugi',
   backgroundImage: '/assets/bg/abstract-bg13.webp',
   overlay: 'black',
 } as const;
@@ -67,7 +69,12 @@ function jsonLd(article: Article) {
     publisher: {
       '@type': 'Organization',
       name: 'Arteon',
-      logo: { '@type': 'ImageObject', url: toAbsoluteUrl('/icon-512x512.png'), width: 512, height: 512 },
+      logo: {
+        '@type': 'ImageObject',
+        url: toAbsoluteUrl('/icon-512x512.png'),
+        width: 512,
+        height: 512,
+      },
     },
     datePublished: article.datePublished,
     dateModified: article.dateModified || article.datePublished,
@@ -76,28 +83,56 @@ function jsonLd(article: Article) {
   } as const;
 }
 
-function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1' | 'auto'; children: React.ReactNode }) {
-  if (ratio === 'auto') return <div className="relative overflow-hidden rounded-lg border border-black/10">{children}</div>;
-  const map: Record<string, string> = { '16/9': 'aspect-square md:aspect-[16/9]', '4/3': 'aspect-[4/3]', '1/1': 'aspect-square' };
-  return <div className={`relative overflow-hidden rounded-lg border border-black/10 ${map[ratio] || ''}`}>{children}</div>;
+function Aspect({
+  ratio = '16/9',
+  children,
+}: {
+  ratio?: '16/9' | '4/3' | '1/1' | 'auto';
+  children: React.ReactNode;
+}) {
+  if (ratio === 'auto')
+    return (
+      <div className='relative overflow-hidden rounded-lg border border-black/10'>{children}</div>
+    );
+  const map: Record<string, string> = {
+    '16/9': 'aspect-square md:aspect-[16/9]',
+    '4/3': 'aspect-[4/3]',
+    '1/1': 'aspect-square',
+  };
+  return (
+    <div
+      className={`relative overflow-hidden rounded-lg border border-black/10 ${map[ratio] || ''}`}
+    >
+      {children}
+    </div>
+  );
 }
 
-type FlowBlock = Extract<Article['contentBlocks'][number], { type: 'richtext' | 'code' | 'table' | 'quote' | 'colorPalette' }>;
+type FlowBlock = Extract<
+  Article['contentBlocks'][number],
+  { type: 'richtext' | 'code' | 'table' | 'quote' | 'colorPalette' }
+>;
 
 function isFlowBlock(b: Article['contentBlocks'][number]): b is FlowBlock {
-  return b.type === 'richtext' || b.type === 'code' || b.type === 'table' || b.type === 'quote' || b.type === 'colorPalette';
+  return (
+    b.type === 'richtext' ||
+    b.type === 'code' ||
+    b.type === 'table' ||
+    b.type === 'quote' ||
+    b.type === 'colorPalette'
+  );
 }
 
 function FlowGroup({ items }: { items: FlowBlock[] }) {
   return (
-    <div className="prose prose-lg max-w-none">
+    <div className='prose prose-lg max-w-none'>
       {items.map((b, i) => {
         if (b.type === 'richtext') {
           return <div key={`f-rt-${i}`} dangerouslySetInnerHTML={{ __html: b.html }} />;
         }
         if (b.type === 'code') {
           return (
-            <div key={`f-code-${i}`} className="not-prose my-6">
+            <div key={`f-code-${i}`} className='not-prose my-6'>
               <CodeBlock
                 code={b.code}
                 language={b.language}
@@ -112,20 +147,27 @@ function FlowGroup({ items }: { items: FlowBlock[] }) {
         }
         if (b.type === 'table') {
           return (
-            <div key={`f-tbl-${i}`} className="not-prose my-6">
-              <TableBlock caption={b.caption} note={b.note} columns={b.columns} rows={b.rows} striped={b.striped ?? true} compact={b.compact ?? false} />
+            <div key={`f-tbl-${i}`} className='not-prose my-6'>
+              <TableBlock
+                caption={b.caption}
+                note={b.note}
+                columns={b.columns}
+                rows={b.rows}
+                striped={b.striped ?? true}
+                compact={b.compact ?? false}
+              />
             </div>
           );
         }
         if (b.type === 'quote') {
           return (
-            <div key={`f-q-${i}`} className="not-prose my-6">
-              <figure className="rounded-lg bg-white p-6 shadow-md">
+            <div key={`f-q-${i}`} className='not-prose my-6'>
+              <figure className='rounded-lg bg-white p-6 shadow-md'>
                 <blockquote>
-                  <p className="text-lg leading-relaxed">“{b.text}”</p>
+                  <p className='text-lg leading-relaxed'>“{b.text}”</p>
                 </blockquote>
                 {(b.author || b.role) && (
-                  <figcaption className="text-light mt-3 text-sm">
+                  <figcaption className='text-light mt-3 text-sm'>
                     {b.author}
                     {b.role ? `, ${b.role}` : ''}
                   </figcaption>
@@ -136,7 +178,7 @@ function FlowGroup({ items }: { items: FlowBlock[] }) {
         }
         if (b.type === 'colorPalette') {
           return (
-            <div key={`f-cp-${i}`} className="not-prose mt-3 mb-1">
+            <div key={`f-cp-${i}`} className='not-prose mt-3 mb-1'>
               <ColorPalette colors={b.colors} />
             </div>
           );
@@ -183,7 +225,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
           return (
             <div key={`grp-flow-${i}`}>
               <FlowGroup items={g.items} />
-              <Gap size={GAP} variant="line" />
+              <Divider size='sm' line />
             </div>
           );
         }
@@ -198,15 +240,33 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
             <div key={`grp-img-${i}`}>
               <figure className={!hasCaption ? 'mb-6 md:mb-12 lg:mb-16' : undefined}>
                 {isAuto ? (
-                  <div className="overflow-hidden rounded-lg border border-black/10">
-                    <Image src={b.src} alt={b.alt} width={b.width ?? 2000} height={b.height ?? 1200} sizes="100vw" style={{ width: '100%', height: 'auto' }} priority={b.priority ?? false} />
+                  <div className='overflow-hidden rounded-lg border border-black/10'>
+                    <Image
+                      src={b.src}
+                      alt={b.alt}
+                      width={b.width ?? 2000}
+                      height={b.height ?? 1200}
+                      sizes='100vw'
+                      style={{ width: '100%', height: 'auto' }}
+                      priority={b.priority ?? false}
+                    />
                   </div>
                 ) : (
                   <Aspect ratio={b.ratio || '16/9'}>
-                    <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" />
+                    <Image
+                      src={b.src}
+                      alt={b.alt}
+                      fill
+                      className='object-cover'
+                      sizes='(min-width:768px) 75vw, 100vw'
+                    />
                   </Aspect>
                 )}
-                {hasCaption && <figcaption className="text-light mt-2 mb-6 text-sm md:mb-12 lg:mb-16">{b.caption}</figcaption>}
+                {hasCaption && (
+                  <figcaption className='text-light mt-2 mb-6 text-sm md:mb-12 lg:mb-16'>
+                    {b.caption}
+                  </figcaption>
+                )}
               </figure>
             </div>
           );
@@ -215,39 +275,51 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
         if (b.type === 'imageText') {
           const Img =
             b.ratio === 'auto' ? (
-              <div className="overflow-hidden rounded-lg border border-black/10">
+              <div className='overflow-hidden rounded-lg border border-black/10'>
                 <Image
                   src={b.src}
                   alt={b.alt}
                   width={b.width ?? 2000}
                   height={b.height ?? 1200}
-                  sizes="(min-width:768px) 50vw, 100vw"
+                  sizes='(min-width:768px) 50vw, 100vw'
                   style={{ width: '100%', height: 'auto' }}
                   priority={b.priority ?? false}
                 />
               </div>
             ) : (
               <Aspect ratio={b.ratio || '4/3'}>
-                <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
+                <Image
+                  src={b.src}
+                  alt={b.alt}
+                  fill
+                  className='object-cover'
+                  sizes='(min-width:768px) 50vw, 100vw'
+                />
               </Aspect>
             );
 
           return (
             <div key={`grp-imgt-${i}`}>
-              <div className="grid items-start gap-6 md:grid-cols-2">
+              <div className='sm-6 grid items-start md:grid-cols-2'>
                 {b.imageSide === 'right' ? (
                   <>
-                    <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: b.html }} />
+                    <div
+                      className='prose prose-lg max-w-none'
+                      dangerouslySetInnerHTML={{ __html: b.html }}
+                    />
                     {Img}
                   </>
                 ) : (
                   <>
                     {Img}
-                    <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: b.html }} />
+                    <div
+                      className='prose prose-lg max-w-none'
+                      dangerouslySetInnerHTML={{ __html: b.html }}
+                    />
                   </>
                 )}
               </div>
-              <Gap size={GAP} variant="line" />
+              <Divider size='sm' line />
             </div>
           );
         }
@@ -255,10 +327,10 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
         if (b.type === 'ad') {
           return (
             <>
-              <div key={`grp-ad-${i}`} className="not-prose my-8 flex justify-center">
-                <AdSense variant="responsive" />
+              <div key={`grp-ad-${i}`} className='not-prose my-8 flex justify-center'>
+                <AdSense variant='responsive' />
               </div>
-              <Gap size={GAP} variant="line" />
+              <Divider size='sm' line />
             </>
           );
         }
@@ -271,19 +343,25 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
 
 export async function generateStaticParams() {
   const items = getAllArticlePreviews();
-  return items.map((a) => {
+  return items.map(a => {
     const category = getPrimaryCategorySlug(a);
     return { category, slug: a.slug };
   });
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ category: string; slug: string }> }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ category: string; slug: string }>;
+}): Promise<Metadata> {
   const { slug } = await params;
   const article = findArticleBySlug(slug);
   if (!article) return {};
 
   const canonicalCat = getPrimaryCategorySlug(article);
-  const ogUrl = toAbsoluteUrl(article.seo?.canonical || `/edukacja/${canonicalCat}/${article.slug}`);
+  const ogUrl = toAbsoluteUrl(
+    article.seo?.canonical || `/edukacja/${canonicalCat}/${article.slug}`,
+  );
   const title = article.seo?.title || article.title;
   const description = article.seo?.description || article.excerpt || '';
   const image = article.cover ? toAbsoluteUrl(article.cover) : undefined;
@@ -299,11 +377,20 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
       description,
       images: image ? [{ url: image, width: 1200, height: 630, alt: article.title }] : undefined,
     },
-    twitter: { card: 'summary_large_image', title, description, images: image ? [image] : undefined },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: image ? [image] : undefined,
+    },
   };
 }
 
-export default async function ArticlePage({ params }: { params: Promise<{ category: string; slug: string }> }) {
+export default async function ArticlePage({
+  params,
+}: {
+  params: Promise<{ category: string; slug: string }>;
+}) {
   const { slug, category } = await params;
   const article = findArticleBySlug(slug);
   if (!article) return notFound();
@@ -337,60 +424,78 @@ export default async function ArticlePage({ params }: { params: Promise<{ catego
         includeJsonLd
       />
 
-      <Wrapper as="article" id="article-root" itemScope itemType="https://schema.org/BlogPosting" className="flex flex-col-reverse gap-8 lg:grid lg:grid-cols-[1fr_300px]">
+      <Wrapper
+        as='article'
+        id='article-root'
+        itemScope
+        itemType='https://schema.org/BlogPosting'
+        className='sm-8 flex flex-col-reverse lg:grid lg:grid-cols-[1fr_300px]'
+      >
         <div>
           <header>
-            <h1 className="h2 mb-1" itemProp="headline">
+            <h1 className='h2 mb-1' itemProp='headline'>
               {article.title}
             </h1>
-            <div className="text-light mt-5 flex flex-wrap items-center gap-2 text-sm md:gap-4">
-              {article.author?.name ? <Badge text={article.author.name} /> : null}
-              {article.datePublished ? (
+            <div className='text-light sm-2 md:sm-4 mt-5 flex flex-wrap items-center text-sm'>
+              {article.author?.name && <Badge text={article.author.name} />}
+              {article.datePublished && (
                 <Badge>
                   Publikacja: <time dateTime={article.datePublished}>{article.datePublished}</time>
                 </Badge>
-              ) : null}
-              {article.dateModified && article.dateModified !== article.datePublished ? (
+              )}
+              {article.dateModified && article.dateModified !== article.datePublished && (
                 <Badge>
                   Aktualizacja: <time dateTime={article.dateModified}>{article.dateModified}</time>
                 </Badge>
-              ) : null}
-              {article.readingTime ? <Badge text={`${article.readingTime} min czytania`} /> : null}
+              )}
+              {article.readingTime && <Badge text={`${article.readingTime} min czytania`} />}
             </div>
           </header>
 
-          <Gap size="xs" />
+          <Divider size='xs' />
 
           <RenderBlocks blocks={article.contentBlocks} />
 
-          {article.faq?.length ? (
+          {article.faq?.length && (
             <>
-              <FaqPanels openByDefault={1} title="Najczęstsze pytania" items={article.faq} pageUrl={url} />
+              <FaqPanels
+                defaultOpenIndex={1}
+                title='Najczęstsze pytania'
+                items={article.faq}
+                pageUrl={url}
+                halfWidth={false}
+              />
             </>
-          ) : null}
+          )}
 
           <JsonLd schema={jsonLd(article)} id={`schema-article-${article.slug}`} />
         </div>
         <div>
-          <ShareBlock url={url} title={shareTitle} className="mb-12" /> <TableOfContents rootSelector="#article-root" size="large" levels="h2" />
+          <ShareBlock url={url} title={shareTitle} className='mb-12' />{' '}
+          <TableOfContents rootSelector='#article-root' size='large' levels='h2' />
         </div>
       </Wrapper>
 
       <Wrapper>
-        <Gap />
+        <Divider />
 
-        <ArticlesCarousel title={articlesCarouselTitle} categorySlug={canonicalCat} articles={articlePreviews} excludeSlug={article.slug} />
+        <ArticlesCarousel
+          title={articlesCarouselTitle}
+          categorySlug={canonicalCat}
+          articles={articlePreviews}
+          excludeSlug={article.slug}
+        />
       </Wrapper>
 
-      <Gap />
+      <Divider />
 
       <CTABanner
         title={cta.title}
         description={cta.description}
         btnOne={cta.btnOne}
-        btnOneLink={cta.btnOneLink}
+        btnOneHref={cta.btnOneHref}
         btnTwo={cta.btnTwo}
-        btnTwoLink={cta.btnTwoLink}
+        btnTwoHref={cta.btnTwoHref}
         backgroundImage={cta.backgroundImage}
         overlay={cta.overlay}
       />

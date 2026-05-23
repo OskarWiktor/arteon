@@ -29,7 +29,7 @@
         "title": "Potrzebujesz strony internetowej dla swojej kancelarii?",
         "description": "Projektujemy i realizujemy strony internetowe dopasowane do specyfiki każdej branży.",
         "btnTwo": "Sprawdź ofertę realizacji",
-        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress",
         "backgroundImage": "/assets/projects/jstax/moskup-strony-jstax.webp",
         "overlay": "black"
       },
@@ -99,7 +99,7 @@
         "title": "Potrzebujesz logo dla swojej firmy?",
         "description": "Projektujemy logo z myślą o różnych zastosowaniach: od strony internetowej po materiały drukowane. Sprawdź naszą ofertę lub skontaktuj się i zobacz co możemy dla Ciebie zrobić.",
         "btnTwo": "Sprawdź ofertę projektów graficznych",
-        "btnTwoLink": "/uslugi/projekty-graficzne",
+        "btnTwoHref": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp",
         "overlay": "black"
       },
@@ -138,7 +138,7 @@
         "title": "Potrzebujesz strony internetowej dla swojej firmy?",
         "description": "Stworzymy stronę dopasowaną do Twojej branży.",
         "btnTwo": "Sprawdź ofertę stron internetowych",
-        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress",
         "backgroundImage": "/assets/projects/napilota/mockup-strony-napilota.webp",
         "overlay": "black"
       },
@@ -171,7 +171,7 @@
         "title": "Twoja firma też potrzebuje strony internetowej?",
         "description": "Zajmujemy się projektowaniem stron oraz ich realizacją. Skontaktuj się z nami - stworzymy stronę dopasowaną do Twoich potrzeb.",
         "btnTwo": "Sprawdź ofertę stron internetowych",
-        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress",
         "backgroundImage": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
         "overlay": "black"
       },
@@ -192,7 +192,11 @@
       "category": ["grafika", "wizytówka"],
       "task": "Zaprojektować wizytówki spójne z logo i stroną Finish Masters.",
       "goals": "<p>Założenia projektu:</p><ul><li>Spójność z logo i stroną - odpowiednia kolorystyka</li><li>Dane firmy i krótki opis działalności</li><li>Kod QR prowadzący do strony</li></ul>",
-      "process_steps": ["Projekt graficzny w nawiązaniu do logo i strony.", "Konsultacja i poprawki.", "Przygotowanie plików do druku."],
+      "process_steps": [
+        "Projekt graficzny w nawiązaniu do logo i strony.",
+        "Konsultacja i poprawki.",
+        "Przygotowanie plików do druku."
+      ],
       "contentBlocks": [
         {
           "type": "image",
@@ -206,7 +210,7 @@
         "title": "Potrzebujesz spójnej identyfikacji wizualnej dla swojej firmy?",
         "description": "Zajmujemy się projektowaniem stron oraz wszelkich materiałów graficznych.",
         "btnTwo": "Sprawdź ofertę projektowania wizytówek",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-wizytowki",
         "backgroundImage": "/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp",
         "overlay": "black"
       },
@@ -245,7 +249,7 @@
         "title": "Twoja firma też potrzebuje strony internetowej?",
         "description": "Pomożemy zaprojektować i wdrożyć stronę dopasowaną do Twojej branży.",
         "btnTwo": "Sprawdź ofertę stron internetowych",
-        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress",
         "backgroundImage": "/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp",
         "overlay": "black"
       },
@@ -322,7 +326,7 @@
         "title": "Potrzebujesz plakatu promocyjnego dla swojej firmy?",
         "description": "Zaprojektujemy spójny plakat sezonowy z przygotowaniem do druku i wersją do mediów społecznościowych.",
         "btnTwo": "Sprawdź ofertę projektów graficznych",
-        "btnTwoLink": "/uslugi/projekty-graficzne",
+        "btnTwoHref": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/brewerynka/brewerynka-plakat-z-limitowana-oferta-mockup.webp",
         "overlay": "black"
       },
@@ -343,7 +347,12 @@
       "link": "https://stepard.pl/",
       "task": "Zaprojektować stronę internetową dla producenta schodów.",
       "goals": "<p>Założenia projektu:</p><ul><li>Spójność z wcześniej zaprojektowanym <a href=\"/realizacje/logo-dla-stepard\">logo</a></li><li>10 podstron ofertowych dla lepszej widoczności w Google</li><li>Ciemne kolory z brązem i niebieskim dla kontrastu i komplementarności</li></ul>",
-      "process_steps": ["Indywidualny projekt wyglądu strony.", "Konsultacje i poprawki.", "Realizacja strony.", "Optymalizacja, zabezpieczenie witryny oraz poprawki."],
+      "process_steps": [
+        "Indywidualny projekt wyglądu strony.",
+        "Konsultacje i poprawki.",
+        "Realizacja strony.",
+        "Optymalizacja, zabezpieczenie witryny oraz poprawki."
+      ],
       "contentBlocks": [
         {
           "type": "image",
@@ -357,7 +366,7 @@
         "title": "Twoja firma też potrzebuje strony internetowej?",
         "description": "Pomożemy zaprojektować i wdrożyć stronę dopasowaną do Twojej branży.",
         "btnTwo": "Sprawdź ofertę stron internetowych",
-        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress",
         "backgroundImage": "/assets/projects/stepard/strona/moskup-strony-stepard.webp",
         "overlay": "black"
       },
@@ -377,7 +386,12 @@
       "category": ["grafika", "logo"],
       "task": "Zaprojektować logo, które łączy minimalizm i elegancję z jasnym nawiązaniem do typu działalności firmy.",
       "goals": "<p>Założenia projektu:</p><ul><li>Minimalizm i elegancja</li><li>Jasne nawiązanie do typu działalności (producent schodów)</li></ul>",
-      "process_steps": ["Analiza potrzeb klienta oraz branży.", "Wstępne kierunki graficzne.", "Wybór i dopracowanie znaku.", "Przygotowanie wariantów kolorystycznych."],
+      "process_steps": [
+        "Analiza potrzeb klienta oraz branży.",
+        "Wstępne kierunki graficzne.",
+        "Wybór i dopracowanie znaku.",
+        "Przygotowanie wariantów kolorystycznych."
+      ],
       "contentBlocks": [
         {
           "type": "image",
@@ -391,7 +405,7 @@
         "title": "Potrzebujesz spójnej identyfikacji wizualnej?",
         "description": "Zajmujemy się realizacją wszelkich projektów graficznych oraz stron internetowych jak i sklepów.",
         "btnTwo": "Sprawdź ofertę projektowania logo",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-logo",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-logo",
         "backgroundImage": "/assets/projects/stepard/logo/mockup-logo-stepard.webp",
         "overlay": "black"
       },
@@ -410,7 +424,11 @@
       "image": "/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp",
       "category": ["grafika", "wizytówka"],
       "task": "Zaprojektować wizytówki spójne z logo i stroną StepArd.",
-      "process_steps": ["Projekt graficzny w nawiązaniu do logo i strony.", "Konsultacja i poprawki.", "Przygotowanie plików do druku."],
+      "process_steps": [
+        "Projekt graficzny w nawiązaniu do logo i strony.",
+        "Konsultacja i poprawki.",
+        "Przygotowanie plików do druku."
+      ],
       "contentBlocks": [
         {
           "type": "image",
@@ -424,7 +442,7 @@
         "title": "Potrzebujesz projekty wizytówki dla swojej firmy?",
         "description": "Zajmujemy się kompleksowym wsparciem firm online oraz offline. Realizujemy zarówno projekty graficzne jak i strony www.",
         "btnTwo": "Sprawdź ofertę projektowania wizytówek",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-wizytowki",
         "backgroundImage": "/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp",
         "overlay": "black"
       },
@@ -445,7 +463,11 @@
       "link": "https://elizawronska.com/",
       "task": "Poprawić wydajność strony bez zmiany wyglądu i treści.",
       "goals": "<p>Cele optymalizacji:</p><ul><li>Lepsza pozycja witryny w Google/li><li>Poprawa wygody korzystania z witryny</li><li>Przygotowanie witryny do jej rozbudowy</li></ul>",
-      "process_steps": ["Audyt strony i identyfikacja elementów spowalniających ładowanie.", "Optymalizacja.", "Pomiar wyników w PageSpeed."],
+      "process_steps": [
+        "Audyt strony i identyfikacja elementów spowalniających ładowanie.",
+        "Optymalizacja.",
+        "Pomiar wyników w PageSpeed."
+      ],
       "outcomes": [
         {
           "value": "Lepszy wynik PageSpeed",
@@ -474,7 +496,7 @@
         "title": "Potrzebujesz szybszej strony?",
         "description": "Prześlij link - sprawdzimy co można poprawić i przygotujemy wycenę.",
         "btnTwo": "Sprawdź ofertę optymalizacji stron",
-        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress",
+        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress",
         "backgroundImage": "/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp",
         "overlay": "black"
       },
@@ -551,7 +573,7 @@
         "title": "Potrzebujesz karty koktajli lub menu dla swojego lokalu?",
         "description": "Zaprojektujemy eleganckie menu dopasowane do charakteru lokalu - wraz z ilustracjami i plikami do druku.",
         "btnTwo": "Sprawdź ofertę projektów menu",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-menu-restauracji",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-menu-restauracji",
         "backgroundImage": "/assets/projects/nocturna/nocturna-menu-mockup.webp",
         "overlay": "black"
       },
@@ -661,7 +683,7 @@
         "title": "Potrzebujesz strony dla firmy budowlanej lub usługowej?",
         "description": "Tworzymy strony dla firm budowlanych i usługowych z naciskiem na widoczność w Google. Każda realizacja obejmuje indywidualny projekt, osobne podstrony ofertowe i pomoc z treściami.",
         "btnTwo": "Sprawdź ofertę stron internetowych",
-        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress",
         "backgroundImage": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp",
         "overlay": "black"
       },
@@ -744,7 +766,7 @@
         "title": "Potrzebujesz wizytówki dla swojej firmy?",
         "description": "Zaprojektujemy elegancką wizytówkę z przygotowaniem do druku - spójną z identyfikacją wizualną.",
         "btnTwo": "Sprawdź ofertę projektu wizytówki",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-wizytowki",
         "backgroundImage": "/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp",
         "overlay": "black"
       },
@@ -800,7 +822,13 @@
         {
           "type": "featureList",
           "title": "Zakres prac",
-          "items": ["Folder składany A3 → A4", "3 kierunki wizualne do wyboru", "Pomoc przy stworzeniu tekstu", "Kod QR do wirtualnego spaceru", "Plik do druku + PDF do wysyłki mailowej"],
+          "items": [
+            "Folder składany A3 → A4",
+            "3 kierunki wizualne do wyboru",
+            "Pomoc przy stworzeniu tekstu",
+            "Kod QR do wirtualnego spaceru",
+            "Plik do druku + PDF do wysyłki mailowej"
+          ],
           "breakAfter": true
         },
         {
@@ -832,7 +860,7 @@
         "title": "Potrzebujesz folderu reklamowego dla swojej firmy?",
         "description": "Zaprojektujemy folder z przygotowaniem do druku i wersją PDF do wysyłki mailowej.",
         "btnTwo": "Sprawdź ofertę ulotek i folderów",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-ulotki",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-ulotki",
         "backgroundImage": "/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp",
         "overlay": "black"
       },
@@ -853,7 +881,11 @@
       "link": "https://autonakorfu.pl/",
       "task": "Poprawić wydajność strony bez zmiany wyglądu i treści.",
       "goals": "<p>Cele optymalizacji:</p><ul><li>Lepsza pozycja witryny w Google/li><li>Poprawa wygody korzystania z witryny</li></ul>",
-      "process_steps": ["Audyt strony i identyfikacja elementów spowalniających ładowanie.", "Optymalizacja.", "Pomiar w PageSpeed."],
+      "process_steps": [
+        "Audyt strony i identyfikacja elementów spowalniających ładowanie.",
+        "Optymalizacja.",
+        "Pomiar w PageSpeed."
+      ],
       "outcomes": [
         {
           "value": "Lepszy wynik PageSpeed",
@@ -882,7 +914,7 @@
         "title": "Potrzebujesz szybszej strony?",
         "description": "Szybka strona to lepsza pozycja w Google i więcej klientów. Prześlij link do swojej witryny a my powiemy jaki będzie koszt jej optymalizacji",
         "btnTwo": "Sprawdź ofertę optymalizacji stron",
-        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress",
+        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress",
         "backgroundImage": "/assets/projects/autokorfu/mockup-strony-auto-korfu.webp",
         "overlay": "black"
       },
@@ -900,7 +932,11 @@
       "description": "<p>Projekt koncepcyjny - dane przykładowe. Papier firmowy dla kancelarii <strong>LUX NOVA</strong> wzmacnia wizerunek marki: klarowny nagłówek z logotypem, subtelny motyw gryfa w tle i czytelny blok kontaktu z <strong>kodem QR</strong>. Całość zachowuje równowagę między <em>elegancją</em> i <em>praktycznością</em> - gotowe do druku i do użycia cyfrowego (PDF).</p>",
       "image": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
       "category": ["grafika"],
-      "deliverables": ["Projekt papieru firmowego A4 (nagłówek + tło + stopka)", "Motyw gryfa w niskiej intensywności jako wzór tła", "Stopka z danymi: telefon, e-mail, adres + kod QR do strony"],
+      "deliverables": [
+        "Projekt papieru firmowego A4 (nagłówek + tło + stopka)",
+        "Motyw gryfa w niskiej intensywności jako wzór tła",
+        "Stopka z danymi: telefon, e-mail, adres + kod QR do strony"
+      ],
       "task": "Zaprojektować papier firmowy kancelarii - czytelny, elegancki, spójny z wizytówką i teczką.",
       "outcomes": [
         {
@@ -919,7 +955,11 @@
           "note": "Subtelny gryf w tle nadaje papierowi charakter bez przytłaczania treści."
         }
       ],
-      "process_steps": ["Analiza istniejących materiałów (logo, wizytówki, teczka)", "Ustalenie siatki i marginesów pod format A4", "Projekt motywu tła oraz stopki i nagłówka papieru firmowego"],
+      "process_steps": [
+        "Analiza istniejących materiałów (logo, wizytówki, teczka)",
+        "Ustalenie siatki i marginesów pod format A4",
+        "Projekt motywu tła oraz stopki i nagłówka papieru firmowego"
+      ],
       "contentBlocks": [
         {
           "type": "image",
@@ -945,7 +985,7 @@
         "title": "Potrzebujesz papieru firmowego dla swojej firmy?",
         "description": "Zaprojektujemy elegancki papier firmowy z przygotowaniem do druku i wersją cyfrową.",
         "btnTwo": "Sprawdź ofertę projektów graficznych",
-        "btnTwoLink": "/uslugi/projekty-graficzne",
+        "btnTwoHref": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
         "overlay": "black"
       },
@@ -1054,7 +1094,7 @@
         "title": "Potrzebujesz rozbudowy lub poprawek na swojej stronie?",
         "description": "Pomagamy z istniejącymi stronami na Wix, WordPress i innych platformach. Uporządkujemy strukturę, dodamy brakujące funkcje i skonfigurujemy analitykę.",
         "btnTwo": "Sprawdź ofertę stron internetowych",
-        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress",
         "backgroundImage": "/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp",
         "overlay": "black"
       },
@@ -1073,7 +1113,12 @@
       "image": "/assets/projects/km2/mockup-logo-km2.webp",
       "category": ["grafika", "logo"],
       "goals": "<p>Założenia projektu:</p><ul><li>Litery K i M wpisane w znak domu (dach)</li><li>Bezpośrednie nawiązanie do nazwy firmy i branży aranżacji wnętrz</li></ul>",
-      "process_steps": ["Analiza potrzeb oraz branży.", "Wstępne kierunki graficzne.", "Wybór i dopracowanie znaku.", "Przygotowanie wariantów kolorystycznych."],
+      "process_steps": [
+        "Analiza potrzeb oraz branży.",
+        "Wstępne kierunki graficzne.",
+        "Wybór i dopracowanie znaku.",
+        "Przygotowanie wariantów kolorystycznych."
+      ],
       "contentBlocks": [
         {
           "type": "image",
@@ -1087,7 +1132,7 @@
         "title": "Potrzebujesz spójnej identyfikacji wizualnej dla swojej marki?",
         "description": "Zajmujemy się projektowaniem i realizacją stron internetowych oraz projektami graficznymi online i offline. Z nami masz wszystko w jednym miejscu.",
         "btnTwo": "Sprawdź ofertę projektowania logo",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-logo",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-logo",
         "backgroundImage": "/assets/projects/km2/mockup-logo-km2.webp",
         "overlay": "black"
       },
@@ -1136,7 +1181,7 @@
         "title": "Potrzebujesz wizytówki dla swojego SPA lub gabinetu?",
         "description": "Zaprojektujemy elegancką wizytówkę z przygotowaniem do druku - dopasowaną do charakteru marki.",
         "btnTwo": "Sprawdź ofertę projektu wizytówki",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-wizytowki",
         "backgroundImage": "/assets/projects/talia/mockup-wizytówki-talia.webp",
         "overlay": "black"
       },
@@ -1192,14 +1237,19 @@
         {
           "type": "featureList",
           "title": "Zakres prac",
-          "items": ["Bon w formacie DL (99x210 mm)", "Front: kompozycja z motywem róż", "Rewers: pola do wypełnienia + dane gabinetu", "Plik do druku (CMYK, spady, 300 DPI)"]
+          "items": [
+            "Bon w formacie DL (99x210 mm)",
+            "Front: kompozycja z motywem róż",
+            "Rewers: pola do wypełnienia + dane gabinetu",
+            "Plik do druku (CMYK, spady, 300 DPI)"
+          ]
         }
       ],
       "cta": {
         "title": "Potrzebujesz vouchera lub bonu podarunkowego?",
         "description": "Zaprojektujemy elegancki voucher z plikami gotowymi do druku.",
         "btnTwo": "Sprawdź ofertę voucherów",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera",
         "backgroundImage": "/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp",
         "overlay": "black"
       },
@@ -1261,7 +1311,7 @@
         "title": "Potrzebujesz szybszej i czytelniejszej strony?",
         "description": "Prześlij link do swojej strony - sprawdzimy co można poprawić i przygotujemy wycenę.",
         "btnTwo": "Sprawdź ofertę optymalizacji stron",
-        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress",
         "backgroundImage": "/assets/projects/arteon-baners-camper-albania-mockup.webp",
         "overlay": "black"
       },
@@ -1347,7 +1397,7 @@
         "title": "Potrzebujesz teczki ofertowej dla swojej firmy?",
         "description": "Zaprojektujemy elegancką teczkę spójną z identyfikacją wizualną - z przygotowaniem do druku.",
         "btnTwo": "Sprawdź ofertę projektów graficznych",
-        "btnTwoLink": "/uslugi/projekty-graficzne",
+        "btnTwoHref": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp",
         "overlay": "black"
       },
@@ -1425,7 +1475,7 @@
         "title": "Potrzebujesz strony dla gabinetu psychologicznego?",
         "description": "Zaprojektujemy czytelną stronę z treściami pod SEO, prostą ścieżką do kontaktu i opcją rezerwacji wizyt.",
         "btnTwo": "Sprawdź ofertę stron internetowych",
-        "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
+        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress",
         "backgroundImage": "/assets/projects/msc/moskup-strony-msc-psychotherapy.webp",
         "overlay": "black"
       },
@@ -1466,7 +1516,11 @@
           "note": "Szablon umożliwia łatwe generowanie wizytówek dla nowych osób w zespole."
         }
       ],
-      "process_steps": ["Analiza identyfikacji i materiałów marki", "Warianty kompozycji i test czytelności", "Makiety 3D i finalne pliki poglądowe"],
+      "process_steps": [
+        "Analiza identyfikacji i materiałów marki",
+        "Warianty kompozycji i test czytelności",
+        "Makiety 3D i finalne pliki poglądowe"
+      ],
       "contentBlocks": [
         {
           "type": "imageText",
@@ -1480,7 +1534,7 @@
         "title": "Potrzebujesz wizytówek dla zespołu handlowego?",
         "description": "Zaprojektujemy spójny szablon i przygotujemy pliki do druku dla całej firmy.",
         "btnTwo": "Sprawdź ofertę projektu wizytówki",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-wizytowki",
         "backgroundImage": "/assets/projects/restoquality/mockup-wizytowki-restoquality.webp",
         "overlay": "black"
       },
@@ -1549,7 +1603,7 @@
         "title": "Potrzebujesz szablonów postów do mediów społecznościowych?",
         "description": "Zaprojektujemy spójny zestaw szablonów, który ułatwi regularną publikację i zbuduje profesjonalny wizerunek.",
         "btnTwo": "Sprawdź ofertę szablonów",
-        "btnTwoLink": "/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe",
+        "btnTwoHref": "/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe",
         "backgroundImage": "/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp",
         "overlay": "black"
       },
@@ -1588,7 +1642,7 @@
         "title": "Potrzebujesz sklepu internetowego z płatnościami i dostawami?",
         "description": "Wdrożymy sklep na WooCommerce z płatnościami, InPost i przygotowaniem pod SEO.",
         "btnTwo": "Sprawdź ofertę sklepów",
-        "btnTwoLink": "/uslugi/sklepy-internetowe",
+        "btnTwoHref": "/uslugi/sklepy-internetowe",
         "backgroundImage": "/assets/projects/trilllizo/moskup-strony-trilllizo.webp",
         "overlay": "black"
       },
@@ -1637,7 +1691,7 @@
         "title": "Potrzebujesz katalogu produktów dla swojej firmy?",
         "description": "Zaprojektujemy czytelny katalog z kartami produktów, parametrami i cenami - gotowy do druku.",
         "btnTwo": "Sprawdź ofertę projektu katalogu",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-katalogu",
+        "btnTwoHref": "/uslugi/projekty-graficzne/projekt-katalogu",
         "backgroundImage": "/assets/projects/restoquality/mockup-gazetka-restoquality.webp",
         "overlay": "black"
       },

@@ -2,13 +2,13 @@
   "toolKey": "pdfToPng",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter PDF na PNG - strony PDF jako obrazy PNG",
-    "description": "Zamień każdą stronę PDF na bezstratny obraz PNG. Idealne do zrzutów, prezentacji i druku. Bez rejestracji - konwersja w przeglądarce.",
+    "title": "Darmowy konwerter formatu PDF na PNG bez limitu plików i rejestracji",
+    "description": "Zamień każdą stronę PDF na bezstratny obraz PNG. Idealne do zrzutów, prezentacji i druku. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-pdf-na-png"
   },
   "hero": {
-    "title": "Zamień strony PDF na obrazy PNG",
+    "title": "Darmowy konwerter formatu PDF na obrazy PNG",
     "description": "Wgraj plik PDF, a narzędzie zamieni każdą stronę na osobny obraz PNG w wysokiej jakości. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter PDF na PNG - darmowy, bez limitu stron",
-      "alternateName": ["Zamiana PDF na PNG online", "Konwersja PDF do PNG", "PDF to PNG converter"],
+      "alternateName": ["Zamiana PDF na PNG", "Konwersja PDF do PNG", "PDF to PNG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
-      "description": "Darmowy konwerter PDF na PNG online. Zamień strony PDF na obrazy PNG w przeglądarce - pliki nie są wysyłane na serwer.",
-      "featureList": ["Konwersja stron PDF na PNG", "Przetwarzanie wszystkich stron dokumentu", "Renderowanie lokalne w przeglądarce", "Pobieranie pojedynczo lub wszystkich naraz"]
+      "description": "Darmowy konwerter PDF na PNG. Zamień strony PDF na obrazy PNG w przeglądarce - pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja stron PDF na PNG",
+        "Przetwarzanie wszystkich stron dokumentu",
+        "Renderowanie lokalne w przeglądarce",
+        "Pobieranie pojedynczo lub wszystkich naraz"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić PDF na PNG online",
+      "name": "Jak zamienić PDF na PNG",
       "description": "Instrukcja konwersji stron PDF na format PNG.",
       "steps": [
         {
@@ -164,71 +169,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PDF vs PNG – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["PDF", "PNG"],
+      "rows": [
         {
-          "id": "pdf",
-          "name": "PDF"
+          "label": "Kompresja stratna",
+          "values": ["—", "—"]
         },
         {
-          "id": "png",
-          "name": "PNG",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wbudowana przeglądarka PDF", "Wszystkie przeglądarki"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "pdf": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "pdf": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "pdf": true,
-            "png": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "pdf": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "pdf": "Wbudowana przeglądarka PDF",
-            "png": "Wszystkie przeglądarki"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "pdf": false,
-            "png": false
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "pdf": false,
-            "png": false
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

@@ -25,7 +25,14 @@
   "schemas": {
     "software": {
       "name": "Bildeditor – Zuschneiden, Größenänderung und Konvertierung",
-      "alternateName": ["Bilder zuschneiden Tool", "Bildgröße ändern kostenlos", "Instagram-Bilder zuschneiden", "Facebook-Cover-Größe", "LinkedIn-Banner erstellen", "Runde Avatare erstellen"],
+      "alternateName": [
+        "Bilder zuschneiden Tool",
+        "Bildgröße ändern kostenlos",
+        "Instagram-Bilder zuschneiden",
+        "Facebook-Cover-Größe",
+        "LinkedIn-Banner erstellen",
+        "Runde Avatare erstellen"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
       "description": "Kostenloser Online-Bildeditor zum Ändern der Größe, Zuschneiden und Konvertieren von Formaten. Fertige Presets für Instagram, Facebook und LinkedIn. Runde Avatare erstellen. Export als JPG, PNG und WebP mit Qualitätskontrolle. Lokale Verarbeitung im Browser.",

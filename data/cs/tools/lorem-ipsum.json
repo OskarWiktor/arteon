@@ -33,7 +33,7 @@
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
         "Business Ipsum generator",
-        "Dummy text generator online"
+        "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Bezplatný generátor Lorem Ipsum — 8 stylů: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business a další. 9 režimů generování. Zkopírujte jako text nebo HTML.",
@@ -254,122 +254,70 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Srovnání textových stylů",
-      "featureLabel": "Vlastnost",
-      "plans": [
-        {
-          "id": "classic",
-          "name": "Lorem Ipsum",
-          "highlighted": true
-        },
-        {
-          "id": "hipster",
-          "name": "Hipster"
-        },
-        {
-          "id": "business",
-          "name": "Business"
-        },
-        {
-          "id": "polish",
-          "name": "Místní"
-        },
-        {
-          "id": "bacon",
-          "name": "Bacon"
-        },
-        {
-          "id": "cupcake",
-          "name": "Cupcake"
-        },
-        {
-          "id": "pirate",
-          "name": "Pirate"
-        },
-        {
-          "id": "legal",
-          "name": "Legal"
-        }
+      "labelHeader": "Vlastnost",
+      "cols": [
+        "Lorem Ipsum",
+        "Hipster",
+        "Business",
+        "Místní",
+        "Bacon",
+        "Cupcake",
+        "Pirate",
+        "Legal"
       ],
-      "features": [
+      "rows": [
         {
-          "name": "Jazyk",
-          "values": {
-            "classic": "Latina",
-            "hipster": "Angličtina",
-            "business": "Angličtina",
-            "polish": "Místní",
-            "bacon": "Angličtina",
-            "cupcake": "Angličtina",
-            "pirate": "Angličtina",
-            "legal": "Angličtina"
-          }
+          "label": "Jazyk",
+          "values": [
+            "Latina",
+            "Angličtina",
+            "Angličtina",
+            "Místní",
+            "Angličtina",
+            "Angličtina",
+            "Angličtina",
+            "Angličtina"
+          ]
         },
         {
-          "name": "Téma",
-          "values": {
-            "classic": "Filozofie",
-            "hipster": "Životní styl",
-            "business": "Korporátní",
-            "polish": "Obecné",
-            "bacon": "Gastronomie",
-            "cupcake": "Cukrářství",
-            "pirate": "Dobrodružství",
-            "legal": "Právo"
-          }
+          "label": "Téma",
+          "values": [
+            "Filozofie",
+            "Životní styl",
+            "Korporátní",
+            "Obecné",
+            "Gastronomie",
+            "Cukrářství",
+            "Dobrodružství",
+            "Právo"
+          ]
         },
         {
-          "name": "Vizuální neutralita",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Vizuální neutralita",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Přirozený rytmus",
-          "values": {
-            "classic": true,
-            "hipster": true,
-            "business": true,
-            "polish": true,
-            "bacon": true,
-            "cupcake": true,
-            "pirate": true,
-            "legal": true
-          }
+          "label": "Přirozený rytmus",
+          "values": ["✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"]
         },
         {
-          "name": "Průmyslový standard",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Průmyslový standard",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Humor / charakter",
-          "values": {
-            "classic": "Neutrální",
-            "hipster": "Střední",
-            "business": "Nízký",
-            "polish": "Nízký",
-            "bacon": "Vysoký",
-            "cupcake": "Vysoký",
-            "pirate": "Vysoký",
-            "legal": "Nízký"
-          }
+          "label": "Humor / charakter",
+          "values": [
+            "Neutrální",
+            "Střední",
+            "Nízký",
+            "Nízký",
+            "Vysoký",
+            "Vysoký",
+            "Vysoký",
+            "Nízký"
+          ]
         }
       ]
     },

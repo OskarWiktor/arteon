@@ -2,14 +2,14 @@
   "toolKey": "contrastChecker",
   "locale": "pl",
   "metadata": {
-    "title": "Darmowy tester kontrastu kolorów i czytelności tekstu",
-    "description": "Sprawdź czy kolory mają dobry kontrast i czytelność według wytycznych WCAG 2.1 AA i AAA. Dodaj kolory i użyj automatycznej korekty kontrastu.",
+    "title": "Darmowy tester kontrastu kolorów według WCAG. Sprawdź czytelność tekstu i ikon",
+    "description": "Sprawdź czy Twoje kolory mają dobry kontrast i czytelność według wytycznych WCAG 2.1 AA i AAA. Dodaj kolory, sprawdź poziom kontrastu i użyj automatycznej korekty, jeśli kontrast jest zbyt niski. Darmowe narzędzie dla projektantów, programistów i właścicieli stron.",
     "ogImage": "/assets/tools/color-contrast-and-readability-checker/kontrast-i-czytelnosc-kolorow-pl.webp",
     "path": "/narzedzia/kontrast-i-czytelnosc-kolorow"
   },
   "hero": {
-    "title": "Sprawdź kontrast kolorów i czytelność tekstu według WCAG",
-    "description": "Wpisz kolor tekstu i tła, a narzędzie pokaże, czy kontrast jest wystarczający. Obliczenia opierają się na międzynarodowym standardzie dostępności WCAG 2.1, który określa minimalne wartości kontrastu dla różnych typów treści.",
+    "title": "Sprawdź kontrast kolorów i czytelność tekstu według wytycznych WCAG 2.1 AA i AAA",
+    "description": "Wpisz kolor tekstu i tła a narzędzie pokaże, czy kontrast miedzy nimi jest wystarczający. Obliczenia opierają się na międzynarodowym standardzie dostępności WCAG 2.1 AA i AAA, który określa minimalne wartości kontrastu. Dzięki temu osoby z różnymi wadami wzroku mogą swobodnie korzystać z treści cyfrowych. Jeśli kontrast jest zbyt niski, funkcja Dopasuj automatycznie znajdzie wariant koloru spełniający wybrany próg.",
     "backgroundImage": "/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
   },
   "breadcrumbs": {
@@ -53,7 +53,7 @@
       ]
     },
     "howTo": {
-      "name": "Jak sprawdzić kontrast i czytelność kolorów online",
+      "name": "Jak sprawdzić kontrast i czytelność kolorów",
       "description": "Jak sprawdzić czytelność kolorów tekstu i tła według standardu WCAG. Podaj kolory, odczytaj współczynnik kontrastu i skorzystaj z funkcji automatycznego dopasowania.",
       "steps": [
         {
@@ -177,82 +177,45 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Co oznaczają poziomy AA i AAA w standardzie WCAG?",
-      "plans": [
+      "cols": ["Poziom AA (minimalny)", "Poziom AAA (rozszerzony)"],
+      "rows": [
         {
-          "id": "aa",
-          "name": "Poziom AA (minimalny)",
-          "highlighted": true
+          "label": "Tekst zwykły - min. 4.5:1",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "aaa",
-          "name": "Poziom AAA (rozszerzony)"
-        }
-      ],
-      "features": [
-        {
-          "name": "Tekst zwykły - min. 4.5:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Tekst zwykły - min. 7:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Tekst zwykły - min. 7:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Tekst duży / pogrubiony - min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Tekst duży / pogrubiony - min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Tekst duży / pogrubiony - min. 4.5:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Tekst duży / pogrubiony - min. 4.5:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Ikony i elementy interfejsu - min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Ikony i elementy interfejsu - min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Wymagany przez polską Ustawę o dostępności cyfrowej (2019)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Wymagany przez polską Ustawę o dostępności cyfrowej (2019)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Wymagany przez Europejski Akt Dostępności (od VI 2025, sektor prywatny)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Wymagany przez Europejski Akt Dostępności (od VI 2025, sektor prywatny)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Wymagany przez dyrektywę UE o dostępności stron (2016/2102)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Wymagany przez dyrektywę UE o dostępności stron (2016/2102)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
-        },
-        {
-          "name": "Zalecany dla kluczowych treści",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Zalecany dla kluczowych treści",
+          "values": ["✓", "✓"]
         }
       ]
     },
@@ -443,7 +406,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Sprawdź inne darmowe narzędzia online"
+      "title": "Sprawdź inne darmowe narzędzia"
     },
     {
       "type": "gap",

@@ -2,14 +2,14 @@
   "toolKey": "qrCode",
   "locale": "pl",
   "metadata": {
-    "title": "Darmowy generator kodów QR bez logowania i rejestracji",
-    "description": "Wygeneruj kod QR dla swojej strony, wizytówki vCard lub do druku. Wklej link, wybierz kolor kodu, rozmiar i pobierz gotowy kod QR w PNG i SVG.",
+    "title": "Darmowy generator kodów QR bez limitów i rejestracji",
+    "description": "Wygeneruj kod QR dla swojej strony czy wizytówki vCard. Wklej link, wybierz kolor kodu oraz tła i pobierz gotowy kod QR w PNG i SVG gotowy do druku. Darmowy generator QR, bez limitów i rejestracji.",
     "ogImage": "/assets/tools/qr-code-generator/darmowy-generator-kodow-qr-pl.webp",
     "path": "/narzedzia/darmowy-generator-kodow-qr"
   },
   "hero": {
-    "title": "Stwórz kod QR do strony, wizytówki vCard lub druku",
-    "description": "Stwórz kod QR do strony WWW, wizytówki vCard, e-maila, telefonu lub tekstu. Dostosuj kolory, rozmiar i poziom korekcji błędów, a następnie pobierz gotowy plik PNG lub SVG.",
+    "title": "Darmowy generator kodów QR bez limitów i rejestracji",
+    "description": "Wygeneruj kod QR dla swojej strony czy wizytówki vCard. Wklej link, wybierz kolor kodu oraz tła i pobierz gotowy kod QR w PNG i SVG gotowy do druku. Darmowy generator QR, bez limitów i rejestracji.",
     "backgroundImage": "/assets/tools/narzedzia-generator-kodu-qr.webp"
   },
   "breadcrumbs": {
@@ -19,14 +19,14 @@
     },
     "third": {
       "href": "/narzedzia/darmowy-generator-kodow-qr",
-      "label": "Darmowy generator kodów QR online"
+      "label": "Darmowy generator kodów QR"
     }
   },
   "schemas": {
     "software": {
       "name": "Generator kodów QR bez logowania i rejestracji",
       "alternateName": [
-        "Kreator kodów QR online",
+        "Kreator kodów QR",
         "Generator QR do wizytówki vCard",
         "Darmowy generator QR po polsku",
         "Narzędzie do tworzenia kodów QR",
@@ -89,7 +89,7 @@
       "title": "Czym jest kod QR i jak działa?",
       "html": "<p class=\"text-mid\">Kod QR (Quick Response) to dwuwymiarowy kod kreskowy, który można zeskanować aparatem smartfona. W przeciwieństwie do tradycyjnych kodów kreskowych, QR przechowuje dane zarówno w poziomie, jak i w pionie, co pozwala zakodować znacznie więcej informacji - do około 3000 znaków alfanumerycznych.</p><p class=\"text-mid mt-3\">Kod QR został opracowany w 1994 roku przez japońską firmę Denso Wave (część grupy Toyota) do śledzenia części samochodowych. Dziś kody QR są powszechnie stosowane w marketingu, gastronomii, logistyce i komunikacji biznesowej. Szczególną popularność zyskały podczas pandemii COVID-19, gdy restauracje zaczęły masowo zastępować papierowe menu kodami QR.</p>",
       "imageSrc": "/assets/tools/qr-code-generator/darmowy-generator-kodow-qr-pl.webp",
-      "imageAlt": "Generator kodów QR online – Arteon"
+      "imageAlt": "Generator kodów QR – Arteon"
     },
     {
       "type": "gap",
@@ -125,7 +125,7 @@
     {
       "type": "sectionSteps",
       "title": "Typy kodów QR - URL, vCard, e-mail, telefon, tekst",
-      "description": "Nasz darmowy generator kodów QR online obsługuje pięć typów danych - każdy przydatny w innych sytuacjach:",
+      "description": "Nasz darmowy generator kodów QR obsługuje pięć typów danych - każdy przydatny w innych sytuacjach:",
       "grid": "two",
       "items": [
         {
@@ -248,68 +248,37 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "PNG vs SVG - jaki format wybrać do druku?",
-      "plans": [
+      "cols": ["PNG (rastrowy)", "SVG (wektorowy)"],
+      "rows": [
         {
-          "id": "png",
-          "name": "PNG (rastrowy)"
+          "label": "Strony WWW i media społecznościowe",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "svg",
-          "name": "SVG (wektorowy)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Strony WWW i media społecznościowe",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Ulotki i wizytówki",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Ulotki i wizytówki",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Plakaty i banery (duży format)",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Plakaty i banery (duży format)",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Skalowanie bez utraty jakości",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Skalowanie bez utraty jakości",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Edycja w programie graficznym",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Edycja w programie graficznym",
-          "values": {
-            "png": false,
-            "svg": true
-          }
+          "label": "Mniejszy rozmiar pliku",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Mniejszy rozmiar pliku",
-          "values": {
-            "png": false,
-            "svg": true
-          }
-        },
-        {
-          "name": "Prezentacje",
-          "values": {
-            "png": true,
-            "svg": true
-          }
+          "label": "Prezentacje",
+          "values": ["✓", "✓"]
         }
       ]
     },
@@ -412,7 +381,7 @@
     {
       "type": "sectionInfo",
       "title": "Kody QR w polskim marketingu i gastronomii",
-      "html": "<p class=\"text-mid mb-4\">Menu QR w polskich restauracjach i kawiarniach stały się powszechne podczas pandemii COVID-19. Wiele lokali gastronomicznych utrzymało to rozwiązanie, choć część wróciła do tradycyjnych kart menu. Kod QR na stoliku kierujący do cyfrowego menu sprawdza się szczególnie w lokalach z często zmienianą ofertą - pozwala aktualizować pozycje i ceny bez ponownego druku.</p><p class=\"text-mid mb-4\">W handlu internetowym kody QR pojawiają się na opakowaniach produktów z platformy Allegro i innych sklepów online. Sprzedawcy umieszczają kody z linkiem do strony produktu, instrukcji obsługi lub formularza zwrotu. Na wydarzeniach branżowych i konferencjach w Polsce coraz częściej stosuje się kody QR na identyfikatorach uczestników i materiałach promocyjnych.</p><p class=\"text-mid\">Lokalne firmy w mniejszych miastach wykorzystują kody QR na ulotkach i banerach reklamowych. Zakodowany numer telefonu lub link do wizytówki Google Maps ułatwia klientom kontakt z firmą po zobaczeniu reklamy na przystanku autobusowym czy tablicy ogłoszeń.</p>"
+      "html": "<p class=\"text-mid mb-4\">Menu QR w polskich restauracjach i kawiarniach stały się powszechne podczas pandemii COVID-19. Wiele lokali gastronomicznych utrzymało to rozwiązanie, choć część wróciła do tradycyjnych kart menu. Kod QR na stoliku kierujący do cyfrowego menu sprawdza się szczególnie w lokalach z często zmienianą ofertą - pozwala aktualizować pozycje i ceny bez ponownego druku.</p><p class=\"text-mid mb-4\">W handlu internetowym kody QR pojawiają się na opakowaniach produktów z platformy Allegro i innych sklepów. Sprzedawcy umieszczają kody z linkiem do strony produktu, instrukcji obsługi lub formularza zwrotu. Na wydarzeniach branżowych i konferencjach w Polsce coraz częściej stosuje się kody QR na identyfikatorach uczestników i materiałach promocyjnych.</p><p class=\"text-mid\">Lokalne firmy w mniejszych miastach wykorzystują kody QR na ulotkach i banerach reklamowych. Zakodowany numer telefonu lub link do wizytówki Google Maps ułatwia klientom kontakt z firmą po zobaczeniu reklamy na przystanku autobusowym czy tablicy ogłoszeń.</p>"
     },
     {
       "type": "gap",
@@ -475,7 +444,7 @@
       "title": "Pomóż nam ulepszyć narzędzia",
       "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/qr-code-generator/darmowy-generator-kodow-qr-pl.webp",
-      "imageAlt": "Generator kodów QR online – Arteon",
+      "imageAlt": "Generator kodów QR – Arteon",
       "defaultSubject": "Feedback: Generator kodów QR"
     },
     {
@@ -484,7 +453,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Sprawdź inne darmowe narzędzia online"
+      "title": "Sprawdź inne darmowe narzędzia"
     },
     {
       "type": "gap",

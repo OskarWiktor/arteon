@@ -2,14 +2,14 @@
   "toolKey": "paletteExtractor",
   "locale": "pl",
   "metadata": {
-    "title": "Darmowy ekstraktor kolorów z obrazu – paleta kolorów ze zdjęcia",
-    "description": "Wgraj zdjęcie a narzędzie wygeneruje paletę dominujących kolorów ze zdjęcia. Gotowe kody HEX, RBG, pełna prywatność i brak limitów.",
+    "title": "Darmowy generator palet kolorów z obrazów i zdjęć",
+    "description": "Wgraj zdjęcie a narzędzie wygeneruje paletę kolorów, które są na zdjęciu. Skopiuj gotowe kody HEX kolorów. Darmowy ekstraktor kolorów bez limitu i rejestracji, z analizą lokalną bez wysyłania plików na serwer.",
     "ogImage": "/assets/tools/image-color-extractor/ekstraktor-kolorow-z-obrazu-pl.webp",
     "path": "/narzedzia/ekstraktor-kolorow-z-obrazu"
   },
   "hero": {
-    "title": "Wyciągnij kolory ze zdjęcia – pobierz paletę z kodami HEX",
-    "description": "Wgraj zdjęcie, logo lub grafikę, a narzędzie wyciągnie do 12 dominujących kolorów z kodami HEX i RGB. Analiza odbywa się lokalnie w przeglądarce.",
+    "title": "Ekstraktor kolorów z obrazu. Zbuduj paletę kolorów na podstawie zdjęcia",
+    "description": "Wgraj dowolną grafikę a narzędzie wyciągnie do 12 dominujących kolorów wraz z kodami HEX gotowymi do skopiowania.",
     "backgroundImage": "/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp"
   },
   "breadcrumbs": {
@@ -25,9 +25,14 @@
   "schemas": {
     "software": {
       "name": "Ekstraktor kolorów z obrazu – paleta kolorów ze zdjęcia",
-      "alternateName": ["Pobierz paletę kolorów ze zdjęcia lub logo", "Wyciągnij dominujące kolory z obrazu", "Generator palety kolorów ze zdjęcia", "Narzędzie do ekstrakcji kolorów HEX i RGB"],
+      "alternateName": [
+        "Pobierz paletę kolorów ze zdjęcia lub logo",
+        "Wyciągnij dominujące kolory z obrazu",
+        "Generator palety kolorów ze zdjęcia",
+        "Narzędzie do ekstrakcji kolorów HEX i RGB"
+      ],
       "applicationSubCategory": "ColorExtractor",
-      "description": "Darmowy ekstraktor kolorów z obrazu online. Wgraj zdjęcie, logo lub grafikę i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB. Przetwarzanie odbywa się w przeglądarce - pliki nie są wysyłane na serwer.",
+      "description": "Darmowy ekstraktor kolorów z obrazu. Wgraj zdjęcie, logo lub grafikę i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB. Przetwarzanie odbywa się w przeglądarce - pliki nie są wysyłane na serwer.",
       "featureList": [
         "Automatyczna ekstrakcja do 12 dominujących kolorów",
         "Analiza zdjęć, logo i grafik wektorowych",

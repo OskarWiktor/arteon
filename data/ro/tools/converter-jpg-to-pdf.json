@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți JPG în PDF?",
-      "html": "<p class=\"text-mid mb-4\">JPG este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in PDF poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele JPG in format PDF direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPG este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in PDF poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertorforma fisierele JPG in format PDF direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "JPG to PDF conversion",
       "variant": "right"
@@ -128,71 +128,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs PDF – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["JPG", "PDF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Compresie cu pierderi",
+          "values": ["✓", "—"]
         },
         {
-          "id": "pdf",
-          "name": "PDF",
-          "highlighted": true
+          "label": "Compresie fără pierderi",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparență (canal alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suport pentru animații",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Suport în browsere",
+          "values": ["Toate browserele", "Vizualizator PDF integrat"]
+        },
+        {
+          "label": "Dimensiune compactă",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Metadate (EXIF)",
+          "values": ["✓", "—"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compresie cu pierderi",
-          "values": {
-            "jpg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Compresie fără pierderi",
-          "values": {
-            "jpg": false,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Transparență (canal alfa)",
-          "values": {
-            "jpg": false,
-            "pdf": true
-          }
-        },
-        {
-          "name": "Suport pentru animații",
-          "values": {
-            "jpg": false,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Suport în browsere",
-          "values": {
-            "jpg": "Toate browserele",
-            "pdf": "Vizualizator PDF integrat"
-          }
-        },
-        {
-          "name": "Dimensiune compactă",
-          "values": {
-            "jpg": true,
-            "pdf": false
-          }
-        },
-        {
-          "name": "Metadate (EXIF)",
-          "values": {
-            "jpg": true,
-            "pdf": false
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",

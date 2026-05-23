@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "HEX színkód átváltása RGB-re és fordítva.",
-      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+      "featureList": [
+        "Kétirányú valós idejű átváltás",
+        "Minden átváltó egy helyen",
+        "Eredmény másolása a vágólapra",
+        "Helyi számítás a böngészőben"
+      ]
     },
     "howTo": {
       "name": "Hogyan használja az átváltót",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEX vs RGB – összehasonlítás",
-      "featureLabel": "Tulajdonság",
-      "plans": [
+      "labelHeader": "Tulajdonság",
+      "cols": ["HEX", "RGB"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "HEX"
+          "label": "Formátum",
+          "values": ["#RRGGBB", "rgb(R, G, B)"]
         },
         {
-          "id": "unit2",
-          "name": "RGB",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Formátum",
-          "values": {
-            "unit1": "#RRGGBB",
-            "unit2": "rgb(R, G, B)"
-          }
+          "label": "Értékek",
+          "values": ["00–FF (hex)", "0–255 (decimal)"]
         },
         {
-          "name": "Értékek",
-          "values": {
-            "unit1": "00–FF (hex)",
-            "unit2": "0–255 (decimal)"
-          }
+          "label": "Átlátszatlanság",
+          "values": ["8-digit (#RRGGBBAA)", "rgba(R, G, B, A)"]
         },
         {
-          "name": "Átlátszatlanság",
-          "values": {
-            "unit1": "8-digit (#RRGGBBAA)",
-            "unit2": "rgba(R, G, B, A)"
-          }
+          "label": "Rövidítés",
+          "values": ["#RGB (3 digits)", "Nincs rövidítés"]
         },
         {
-          "name": "Rövidítés",
-          "values": {
-            "unit1": "#RGB (3 digits)",
-            "unit2": "Nincs rövidítés"
-          }
-        },
-        {
-          "name": "Használat",
-          "values": {
-            "unit1": "CSS, tervezőeszközök",
-            "unit2": "CSS, programozás"
-          }
+          "label": "Használat",
+          "values": ["CSS, tervezőeszközök", "CSS, programozás"]
         }
       ]
     },

@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Rechnen Sie Dezimalzahlen in Binär um und umgekehrt. Nützlich für Programmierung und Informatik.",
-      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+      "featureList": [
+        "Bidirektionale Echtzeit-Konvertierung",
+        "Alle Konverter an einem Ort",
+        "Ergebnis in die Zwischenablage kopieren",
+        "Lokale Berechnung im Browser"
+      ]
     },
     "howTo": {
       "name": "So verwenden Sie den Konverter dziesiętny na binarny",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Dezimal vs Binär",
-      "featureLabel": "Eigenschaft",
-      "plans": [
+      "labelHeader": "Eigenschaft",
+      "cols": ["Dezimal (Basis-10)", "Binär (Basis-2)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Dezimal (Basis-10)"
+          "label": "Ziffern",
+          "values": ["0–9", "0–1"]
         },
         {
-          "id": "unit2",
-          "name": "Binär (Basis-2)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Ziffern",
-          "values": {
-            "unit1": "0–9",
-            "unit2": "0–1"
-          }
+          "label": "Verwendet von",
+          "values": ["Menschen", "Computern"]
         },
         {
-          "name": "Verwendet von",
-          "values": {
-            "unit1": "Menschen",
-            "unit2": "Computern"
-          }
+          "label": "Beispiel: 42",
+          "values": ["42", "101010"]
         },
         {
-          "name": "Beispiel: 42",
-          "values": {
-            "unit1": "42",
-            "unit2": "101010"
-          }
+          "label": "Beispiel: 255",
+          "values": ["255", "11111111"]
         },
         {
-          "name": "Beispiel: 255",
-          "values": {
-            "unit1": "255",
-            "unit2": "11111111"
-          }
-        },
-        {
-          "name": "Lesbarkeit",
-          "values": {
-            "unit1": "Einfach",
-            "unit2": "Lang aber nativ für Computer"
-          }
+          "label": "Lesbarkeit",
+          "values": ["Einfach", "Lang aber nativ für Computer"]
         }
       ]
     },

@@ -17,6 +17,23 @@ import no from '@/data/no/tools-ui/image-resize.json';
 import fi from '@/data/fi/tools-ui/image-resize.json';
 import el from '@/data/el/tools-ui/image-resize.json';
 
-export const ui = { pl, en, de, es, fr, pt, it, ro, nl, hu, cs, sv, da, no, fi, el } as const satisfies Record<Locale, unknown>;
+export const ui = {
+  pl,
+  en,
+  de,
+  es,
+  fr,
+  pt,
+  it,
+  ro,
+  nl,
+  hu,
+  cs,
+  sv,
+  da,
+  no,
+  fi,
+  el,
+} as const satisfies Record<Locale, unknown>;
 
 export type UiLocale = (typeof ui)[Locale];

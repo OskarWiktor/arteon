@@ -2,14 +2,14 @@
   "toolKey": "favicon",
   "locale": "pl",
   "metadata": {
-    "title": "Darmowy generator ikony dla strony - stwórz favicon.ico",
-    "description": "Stwórz kompletny zestaw favicon.ico dla swojej witryny internetowej z jednego obrazu. Wszystkie wymagane rozmiary bez logowania i rejestracji.",
+    "title": "Darmowy generator favicon.ico dla strony internetowej. Stwórz pełen zestaw ikon z jednego obrazu bez rejestracji",
+    "description": "Stwórz kompletny zestaw favicon.ico dla swojej witryny internetowej z jednego obrazu. Wygeneruj wszystkie wymagane rozmiary bez rejestracji i limitów. Lokalne przetwarzanie w przeglądarce zapewnia bezpieczeństwo danych.",
     "ogImage": "/assets/tools/favicon-generator/darmowy-generator-favicon-ico-pl.webp",
     "path": "/narzedzia/darmowy-generator-favicon-ico"
   },
   "hero": {
     "title": "Stwórz favicon.ico dla swojej strony z jednego obrazu",
-    "description": "Wygeneruj favicon.ico i kompletny zestaw ikon PNG dla swojej strony z jednego obrazu. Całe przetwarzanie odbywa się lokalnie w przeglądarce.",
+    "description": "Wygeneruj favicon.ico i kompletny zestaw ikon dla swojej strony z jednego obrazu bez rejestracji. Narzędzie działa lokalnie w przeglądarce, więc Twoje dane są bezpieczne. Pobierz wszystkie ikony w jednym pliku ZIP lub pojedynczo.",
     "backgroundImage": "/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
   },
   "breadcrumbs": {
@@ -25,9 +25,14 @@
   "schemas": {
     "software": {
       "name": "Generator favicon.ico dla strony internetowej",
-      "alternateName": ["Kreator favicon dla strony internetowej", "Generator ikony witryny favicon.ico", "Narzędzie do tworzenia favicon", "Favicon generator online"],
+      "alternateName": [
+        "Kreator favicon dla strony internetowej",
+        "Generator ikony witryny favicon.ico",
+        "Narzędzie do tworzenia favicon",
+        "Favicon generator"
+      ],
       "applicationSubCategory": "IconGenerator",
-      "description": "Darmowy generator favicon online po polsku. Twórz favicon.ico oraz ikony PNG 16x16, 32x32, 180x180, 192x192 i 512x512 bez limitów i bez wysyłania plików na serwer. Przetwarzanie odbywa się lokalnie w przeglądarce.",
+      "description": "Darmowy generator favicon po polsku. Twórz favicon.ico oraz ikony PNG 16x16, 32x32, 180x180, 192x192 i 512x512 bez limitów i bez wysyłania plików na serwer. Przetwarzanie odbywa się lokalnie w przeglądarce.",
       "featureList": [
         "Generowanie favicon.ico (16x16, 32x32, 48x48 w jednym pliku)",
         "Generowanie ikon PNG 16x16 i 32x32",
@@ -76,7 +81,7 @@
       "title": "Co to jest favicon i dlaczego warto go mieć?",
       "html": "<p class=\"text-mid mb-4\">Favicon to mała ikona, która pojawia się na karcie przeglądarki obok tytułu strony. Widzisz ją też w zakładkach, historii przeglądania i na ekranie głównym telefonu, gdy ktoś doda stronę jako skrót.</p><p class=\"text-mid mb-4\">Ta niepozorna grafika pełni ważną funkcję - pomaga użytkownikom szybko rozpoznać stronę wśród wielu otwartych kart. Gdy ktoś ma kilkanaście kart w przeglądarce, favicon jest często jedynym widocznym elementem identyfikującym stronę.</p><p class=\"text-mid\">Generator tworzy kompletny zestaw ikon: klasyczny plik favicon.ico dla przeglądarek, ikony PNG w różnych rozmiarach oraz apple-touch-icon dla urządzeń Apple. Jeśli tworzysz aplikację webową (PWA), możesz też wygenerować ikony 192x192 i 512x512 wraz z plikiem manifest.</p>",
       "imageSrc": "/assets/tools/favicon-generator/darmowy-generator-favicon-ico-pl.webp",
-      "imageAlt": "Generator favicon online – Arteon"
+      "imageAlt": "Generator favicon – Arteon"
     },
     {
       "type": "gap",
@@ -350,7 +355,7 @@
       "title": "Pomóż nam ulepszyć narzędzia",
       "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie, które ułatwiłoby Twoją pracę? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/favicon-generator/darmowy-generator-favicon-ico-pl.webp",
-      "imageAlt": "Generator favicon online – Arteon",
+      "imageAlt": "Generator favicon – Arteon",
       "defaultSubject": "Feedback: Generator favicon"
     },
     {

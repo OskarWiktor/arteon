@@ -19,6 +19,7 @@
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
+    "clsx": "^2.1.1",
     "gifenc": "^1.0.3",
     "heic2any": "^0.0.4",
     "js-yaml": "^4.1.1",
@@ -32,6 +33,7 @@
     "react-icons": "^5.5.0",
     "server-only": "^0.0.1",
     "sharp": "^0.34.5",
+    "tailwind-merge": "^3.5.0",
     "turndown": "^7.2.2",
     "turndown-plugin-gfm": "^1.0.2",
     "utif2": "^4.1.0",

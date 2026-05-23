@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Converti codici colore HEX in valori RGB. Essenziale per web design e CSS.",
-      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+      "featureList": [
+        "Conversione bidirezionale in tempo reale",
+        "Tutti i convertitori in un unico posto",
+        "Copia il risultato negli appunti",
+        "Calcolo locale nel browser"
+      ]
     },
     "howTo": {
       "name": "Come usare il convertitore",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEX vs RGB – confronto",
-      "featureLabel": "Caratteristica",
-      "plans": [
+      "labelHeader": "Caratteristica",
+      "cols": ["HEX", "RGB"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "HEX"
+          "label": "Formato",
+          "values": ["#RRGGBB", "rgb(R, G, B)"]
         },
         {
-          "id": "unit2",
-          "name": "RGB",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Formato",
-          "values": {
-            "unit1": "#RRGGBB",
-            "unit2": "rgb(R, G, B)"
-          }
+          "label": "Valori",
+          "values": ["00–FF (hex)", "0–255 (decimale)"]
         },
         {
-          "name": "Valori",
-          "values": {
-            "unit1": "00–FF (hex)",
-            "unit2": "0–255 (decimale)"
-          }
+          "label": "Opacità",
+          "values": ["8 cifre (#RRGGBBAA)", "rgba(R, G, B, A)"]
         },
         {
-          "name": "Opacità",
-          "values": {
-            "unit1": "8 cifre (#RRGGBBAA)",
-            "unit2": "rgba(R, G, B, A)"
-          }
+          "label": "Abbreviato",
+          "values": ["#RGB (3 cifre)", "Nessuna abbreviazione"]
         },
         {
-          "name": "Abbreviato",
-          "values": {
-            "unit1": "#RGB (3 cifre)",
-            "unit2": "Nessuna abbreviazione"
-          }
-        },
-        {
-          "name": "Usato in",
-          "values": {
-            "unit1": "CSS, strumenti design",
-            "unit2": "CSS, programmazione"
-          }
+          "label": "Usato in",
+          "values": ["CSS, strumenti design", "CSS, programmazione"]
         }
       ]
     },

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Codeer afbeeldingen naar Base64-formaat. Kopieer kant-en-klare code voor CSS of HTML. Gratis.",
-      "featureList": ["afbeelding to Base64 conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert afbeelding to Base64", "afbeelding to Base64", "Free afbeelding to Base64 converter"]
+      "featureList": [
+        "afbeelding to Base64 conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert afbeelding to Base64",
+        "afbeelding to Base64",
+        "Free afbeelding to Base64 converter"
+      ]
     },
     "howTo": {
       "name": "Hoe afbeelding naar Base64 converteren",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom afbeelding naar Base64 converteren?",
-      "html": "<p class=\"text-mid mb-4\">IMAGE is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar BASE64 aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw IMAGE-bestanden direct in de browser om naar het BASE64-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">IMAGE is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar BASE64 aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis converter zet uw IMAGE-bestanden direct in de browser om naar het BASE64-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "afbeelding to Base64 conversion",
       "variant": "right"

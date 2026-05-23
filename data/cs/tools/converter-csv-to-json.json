@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět CSV na JSON?",
-      "html": "<p class=\"text-mid mb-4\">CSV je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na JSON prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase CSV soubory do formatu JSON primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">CSV je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na JSON prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny konvertor prevadi vase CSV soubory do formatu JSON primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "CSV to JSON conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "CSV vs JSON – srovnání formátů",
-      "plans": [
+      "labelHeader": "Funkce",
+      "cols": ["CSV", "JSON"],
+      "rows": [
         {
-          "id": "csv",
-          "name": "CSV"
+          "label": "Vnořená data",
+          "values": ["—", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Tabulární data",
+          "values": ["✓", "—"]
+        },
+        {
+          "label": "Validace schématu",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Lidsky čitelné",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "API standard",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Kompaktní syntaxe",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Vnořená data",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Tabulární data",
-          "values": {
-            "csv": true,
-            "json": false
-          }
-        },
-        {
-          "name": "Validace schématu",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Lidsky čitelné",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        },
-        {
-          "name": "API standard",
-          "values": {
-            "csv": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Kompaktní syntaxe",
-          "values": {
-            "csv": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funkce"
+      ]
     },
     {
       "type": "gap",

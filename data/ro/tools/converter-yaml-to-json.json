@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți YAML în JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in JSON poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele YAML in format JSON direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">YAML este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in JSON poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertorin format JSON direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "YAML vs JSON – comparație de formate",
-      "plans": [
+      "labelHeader": "Funcționalitate",
+      "cols": ["YAML", "JSON"],
+      "rows": [
         {
-          "id": "yaml",
-          "name": "YAML"
+          "label": "Date ierarhice",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Date tabulare",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Validare schemă",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Lizibil pentru oameni",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Standard API",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Sintaxă compactă",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Date ierarhice",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Date tabulare",
-          "values": {
-            "yaml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Validare schemă",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Lizibil pentru oameni",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Standard API",
-          "values": {
-            "yaml": false,
-            "json": true
-          }
-        },
-        {
-          "name": "Sintaxă compactă",
-          "values": {
-            "yaml": true,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Funcționalitate"
+      ]
     },
     {
       "type": "gap",
@@ -193,8 +165,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Cum func\u021bioneaz\u0103 conversia din YAML \u00een JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML folose\u0219te indentare \u0219i sintax\u0103 minimal\u0103 pentru a reprezenta date structurate, \u00een timp ce JSON folose\u0219te acolade, paranteze p\u0103trate \u0219i ghilimele explicite. Convertorul analizeaz\u0103 structura YAML \u0219i produce JSON echivalent cu formatare corect\u0103.</p><p class=\"text-mid mb-4\">Indentarea YAML devine imbricare JSON, elementele cu linioare devin elemente de array JSON, iar perechile cheie-valoare YAML devin propriet\u0103\u021bi ale obiectului JSON. Tipurile de date sunt p\u0103strate: \u0219iruri, numere, booleene, null, array-uri \u0219i obiecte se transfer\u0103 direct.</p><p class=\"text-mid\">Conversia din YAML \u00een JSON este util\u0103 c\u00e2nd datele de configurare trebuie integrate \u00een aplica\u021bii web, API-uri REST sau sisteme care a\u0219teapt\u0103 intrare JSON. Conversia se face complet \u00een browserul t\u0103u.</p>"
+      "title": "Cum funcționează conversia din YAML în JSON?",
+      "html": "<p class=\"text-mid mb-4\">YAML folosește indentare și sintaxă minimală pentru a reprezenta date structurate, în timp ce JSON folosește acolade, paranteze pătrate și ghilimele explicite. Convertorul analizează structura YAML și produce JSON echivalent cu formatare corectă.</p><p class=\"text-mid mb-4\">Indentarea YAML devine imbricare JSON, elementele cu linioare devin elemente de array JSON, iar perechile cheie-valoare YAML devin proprietăți ale obiectului JSON. Tipurile de date sunt păstrate: șiruri, numere, booleene, null, array-uri și obiecte se transferă direct.</p><p class=\"text-mid\">Conversia din YAML în JSON este utilă când datele de configurare trebuie integrate în aplicații web, API-uri REST sau sisteme care așteaptă intrare JSON. Conversia se face complet în browserul tău.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +174,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Sfaturi pentru conversia din YAML \u00een JSON",
-      "description": "C\u00e2teva sfaturi pentru a evita problemele comune:",
+      "title": "Sfaturi pentru conversia din YAML în JSON",
+      "description": "Câteva sfaturi pentru a evita problemele comune:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileTextLine",
-          "title": "Consisten\u021ba indent\u0103rii",
-          "description": "YAML este sensibil la indentare. Dac\u0103 fi\u0219ierul amestec\u0103 tab-uri \u0219i spa\u021bii, parsarea poate e\u0219ua. Convertorul raporteaz\u0103 erorile de indentare detectate."
+          "title": "Consistența indentării",
+          "description": "YAML este sensibil la indentare. Dacă fișierul amestecă tab-uri și spații, parsarea poate eșua. Convertorul raportează erorile de indentare detectate."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Comentariile se elimin\u0103",
-          "description": "JSON nu suport\u0103 comentarii. Toate comentariile # din fi\u0219ierul YAML nu vor ap\u0103rea \u00een rezultatul JSON. P\u0103streaz\u0103 fi\u0219ierul YAML original."
+          "title": "Comentariile se elimină",
+          "description": "JSON nu suportă comentarii. Toate comentariile # din fișierul YAML nu vor apărea în rezultatul JSON. Păstrează fișierul YAML original."
         },
         {
           "icon": "RiCodeLine",
           "title": "YAML multi-document",
-          "description": "Fi\u0219ierele YAML pot con\u021bine mai multe documente separate prin ---. Convertorul proceseaz\u0103 standard primul document."
+          "description": "Fișierele YAML pot conține mai multe documente separate prin ---. Convertorul procesează standard primul document."
         },
         {
           "icon": "RiFileCodeLine",
-          "title": "Ancore \u0219i aliasuri",
-          "description": "Ancorele YAML (&) \u0219i aliasurile (*) sunt rezolvate \u00een timpul conversiei. Rezultatul JSON con\u021bine valorile expandate, nu referin\u021bele YAML."
+          "title": "Ancore și aliasuri",
+          "description": "Ancorele YAML (&) și aliasurile (*) sunt rezolvate în timpul conversiei. Rezultatul JSON conține valorile expandate, nu referințele YAML."
         }
       ]
     },
@@ -254,16 +226,16 @@
           "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         },
         {
-          "question": "Este conversia din YAML \u00een JSON sigur\u0103?",
-          "answer": "Da. Toat\u0103 conversia se face local \u00een browserul t\u0103u. Nicio dat\u0103 nu este trimis\u0103 la vreun server."
+          "question": "Este conversia din YAML în JSON sigură?",
+          "answer": "Da. Toată conversia se face local în browserul tău. Nicio dată nu este trimisă la vreun server."
         },
         {
-          "question": "Se p\u0103streaz\u0103 comentariile YAML?",
-          "answer": "Nu. JSON nu suport\u0103 comentarii, a\u0219a c\u0103 toate comentariile # din fi\u0219ierul YAML sunt eliminate \u00een timpul conversiei. P\u0103streaz\u0103 fi\u0219ierul YAML original."
+          "question": "Se păstrează comentariile YAML?",
+          "answer": "Nu. JSON nu suportă comentarii, așa că toate comentariile # din fișierul YAML sunt eliminate în timpul conversiei. Păstrează fișierul YAML original."
         },
         {
-          "question": "Este conversia f\u0103r\u0103 pierderi?",
-          "answer": "Da, pentru valorile de date. Toate \u0219irurile, numerele, booleenele, valorile null, array-urile \u0219i obiectele sunt p\u0103strate exact. Doar func\u021bionalit\u0103\u021bile specifice YAML ca comentariile \u0219i ancorele nu se transfer\u0103 \u00een JSON."
+          "question": "Este conversia fără pierderi?",
+          "answer": "Da, pentru valorile de date. Toate șirurile, numerele, booleenele, valorile null, array-urile și obiectele sunt păstrate exact. Doar funcționalitățile specifice YAML ca comentariile și ancorele nu se transferă în JSON."
         }
       ]
     },

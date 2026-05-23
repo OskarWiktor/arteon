@@ -33,7 +33,7 @@
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
         "Business Ipsum generator",
-        "Dummy text generator online"
+        "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Generator Lorem Ipsum gratuit — 8 stiluri: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business și altele. 9 moduri de generare. Copiați ca text sau HTML.",
@@ -254,122 +254,70 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Compararea stilurilor de text",
-      "featureLabel": "Caracteristică",
-      "plans": [
-        {
-          "id": "classic",
-          "name": "Lorem Ipsum",
-          "highlighted": true
-        },
-        {
-          "id": "hipster",
-          "name": "Hipster"
-        },
-        {
-          "id": "business",
-          "name": "Business"
-        },
-        {
-          "id": "polish",
-          "name": "Local"
-        },
-        {
-          "id": "bacon",
-          "name": "Bacon"
-        },
-        {
-          "id": "cupcake",
-          "name": "Cupcake"
-        },
-        {
-          "id": "pirate",
-          "name": "Pirate"
-        },
-        {
-          "id": "legal",
-          "name": "Legal"
-        }
+      "labelHeader": "Caracteristică",
+      "cols": [
+        "Lorem Ipsum",
+        "Hipster",
+        "Business",
+        "Local",
+        "Bacon",
+        "Cupcake",
+        "Pirate",
+        "Legal"
       ],
-      "features": [
+      "rows": [
         {
-          "name": "Limba",
-          "values": {
-            "classic": "Latină",
-            "hipster": "Engleză",
-            "business": "Engleză",
-            "polish": "Locală",
-            "bacon": "Engleză",
-            "cupcake": "Engleză",
-            "pirate": "Engleză",
-            "legal": "Engleză"
-          }
+          "label": "Limba",
+          "values": [
+            "Latină",
+            "Engleză",
+            "Engleză",
+            "Locală",
+            "Engleză",
+            "Engleză",
+            "Engleză",
+            "Engleză"
+          ]
         },
         {
-          "name": "Temă",
-          "values": {
-            "classic": "Filozofie",
-            "hipster": "Stil de viață",
-            "business": "Corporativ",
-            "polish": "General",
-            "bacon": "Gastronomie",
-            "cupcake": "Patiserie",
-            "pirate": "Aventură",
-            "legal": "Drept"
-          }
+          "label": "Temă",
+          "values": [
+            "Filozofie",
+            "Stil de viață",
+            "Corporativ",
+            "General",
+            "Gastronomie",
+            "Patiserie",
+            "Aventură",
+            "Drept"
+          ]
         },
         {
-          "name": "Neutralitate vizuală",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Neutralitate vizuală",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Ritm natural",
-          "values": {
-            "classic": true,
-            "hipster": true,
-            "business": true,
-            "polish": true,
-            "bacon": true,
-            "cupcake": true,
-            "pirate": true,
-            "legal": true
-          }
+          "label": "Ritm natural",
+          "values": ["✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"]
         },
         {
-          "name": "Standard al industriei",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Standard al industriei",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Umor / caracter",
-          "values": {
-            "classic": "Neutru",
-            "hipster": "Mediu",
-            "business": "Scăzut",
-            "polish": "Scăzut",
-            "bacon": "Ridicat",
-            "cupcake": "Ridicat",
-            "pirate": "Ridicat",
-            "legal": "Scăzut"
-          }
+          "label": "Umor / caracter",
+          "values": [
+            "Neutru",
+            "Mediu",
+            "Scăzut",
+            "Scăzut",
+            "Ridicat",
+            "Ridicat",
+            "Ridicat",
+            "Scăzut"
+          ]
         }
       ]
     },

@@ -33,7 +33,9 @@ type ExportCroppedImageOptions = {
   fileGenerationErrorMessage: string;
 };
 
-export async function exportCroppedImage(options: ExportCroppedImageOptions): Promise<{ size: number }> {
+export async function exportCroppedImage(
+  options: ExportCroppedImageOptions,
+): Promise<{ size: number }> {
   const img = await loadImage(options.imageUrl, { errorMessage: options.imageLoadErrorMessage });
 
   const W = options.dims.width;
@@ -49,7 +51,14 @@ export async function exportCroppedImage(options: ExportCroppedImageOptions): Pr
   }
 
   const targetAspect = W / H;
-  const crop = getCropRect(options.originalWidth, options.originalHeight, targetAspect, options.cropX, options.cropY, options.cropZoom);
+  const crop = getCropRect(
+    options.originalWidth,
+    options.originalHeight,
+    targetAspect,
+    options.cropX,
+    options.cropY,
+    options.cropZoom,
+  );
 
   // JPEG has no transparency — fill white background to prevent black areas
   if (options.outputFormat === 'jpg') {
@@ -71,7 +80,12 @@ export async function exportCroppedImage(options: ExportCroppedImageOptions): Pr
   ctx.restore();
 
   const mime = getMime(options.outputFormat);
-  const blob = await canvasToBlob(canvas, mime, options.outputFormat === 'png' ? undefined : options.outputQuality, options.fileGenerationErrorMessage);
+  const blob = await canvasToBlob(
+    canvas,
+    mime,
+    options.outputFormat === 'png' ? undefined : options.outputQuality,
+    options.fileGenerationErrorMessage,
+  );
 
   const url = URL.createObjectURL(blob);
   const filename = `${options.baseName}-${options.dims.width}x${options.dims.height}.${options.outputFormat}`;

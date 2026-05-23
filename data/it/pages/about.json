@@ -1,16 +1,16 @@
 {
   "slug": "chi-siamo",
   "metadata": {
-    "title": "Chi siamo – Arteon | Strumenti online gratuiti per web",
+    "title": "Chi siamo – Arteon | Strumenti gratuiti per web",
     "description": "Arteon è un’agenzia creativa che sviluppa strumenti gratuiti nel browser: convertitore WebP, generatore di favicon, verificatore di contrasto, generatore di."
   },
   "hero": {
-    "title": "Strumenti online gratuiti creati da un’agenzia creativa",
+    "title": "Strumenti gratuiti creati da un’agenzia creativa",
     "description": "Strumenti nel browser per immagini, SEO, colori, firme e-mail e codici QR - senza registrazione, senza upload, senza limiti"
   },
   "whoWeAre": {
     "title": "Chi siamo",
-    "p1": "Arteon è un’agenzia creativa polacca. Oltre al nostro lavoro commerciale, sviluppiamo e manteniamo una collezione crescente di strumenti online gratuiti pensati per imprenditori, creatori di siti web, designer, specialisti di marketing e chiunque lavori con contenuti digitali.",
+    "p1": "Arteon è un’agenzia creativa polacca. Oltre al nostro lavoro commerciale, sviluppiamo e manteniamo una collezione crescente di strumenti gratuiti pensati per imprenditori, creatori di siti web, designer, specialisti di marketing e chiunque lavori con contenuti digitali.",
     "p2": "Ogni strumento che creiamo risolve un problema specifico e quotidiano: convertire immagini, verificare il contrasto dei colori, generare favicon, creare codici QR e molto altro. Il nostro obiettivo è costruire un toolkit completo dove trovare tutto ciò di cui hai bisogno in un unico posto - senza navigare tra decine di siti diversi."
   },
   "whyFree": {
@@ -39,7 +39,7 @@
     "items": [
       {
         "title": "Immagini e favicon",
-        "description": "Convertitore WebP, editor di immagini online e generatore di favicon. 3 strumenti per il lavoro quotidiano con le immagini."
+        "description": "Convertitore WebP, editor di immagini e generatore di favicon. 3 strumenti per il lavoro quotidiano con le immagini."
       },
       {
         "title": "Meta e SEO",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Prova i nostri strumenti",
-    "description": "Strumenti online gratuiti - senza registrazione, senza limiti, senza upload di file su server",
+    "description": "Strumenti gratuiti - senza registrazione, senza limiti, senza upload di file su server",
     "btnOne": "Vai agli strumenti",
     "btnTwo": "Contatto"
   }

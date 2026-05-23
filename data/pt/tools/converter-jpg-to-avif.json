@@ -28,8 +28,17 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta fotos JPG para AVIF moderno. Compressao ate 50% melhor que JPG mantendo a qualidade. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
-      "featureList": ["Conversão para AVIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
-      "alternateName": ["Converter JPG para AVIF", "Conversão de JPG para AVIF", "Conversor JPG para AVIF grátis"]
+      "featureList": [
+        "Conversão para AVIF",
+        "Ajuste de qualidade (60-95%)",
+        "Conversão em lote",
+        "Processamento local no navegador"
+      ],
+      "alternateName": [
+        "Converter JPG para AVIF",
+        "Conversão de JPG para AVIF",
+        "Conversor JPG para AVIF grátis"
+      ]
     },
     "howTo": {
       "name": "Como converter JPG para AVIF",
@@ -166,85 +175,51 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de JPG para AVIF na prática",
-      "html": "<p class=\"text-mid mb-4\">AVIF alcança até 50% melhor compressão que JPEG a qualidade visual comparável. Para sites com muitas fotos – portais imobiliários, revistas online, sites de viagens – os tempos de carregamento reduzem-se consideravelmente.</p><p class=\"text-mid mb-4\">Plataformas como Idealista.pt, Booking.com ou OLX adotam cada vez mais AVIF para melhorar a experiência móvel. Chrome, Firefox e Safari 16+ suportam nativamente. Para navegadores mais antigos, um fallback WebP ou JPG é recomendado.</p><p class=\"text-mid\">A conversão local protege as imagens: fotos imobiliárias, de produtos ou retratos – nada é enviado para nenhum servidor. Conforme com o RGPD/LGPD.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF alcança até 50% melhor compressão que JPEG a qualidade visual comparável. Para sites com muitas fotos – portais imobiliários, revistasgens – os tempos de carregamento reduzem-se consideravelmente.</p><p class=\"text-mid mb-4\">Plataformas como Idealista.pt, Booking.com ou OLX adotam cada vez mais AVIF para melhorar a experiência móvel. Chrome, Firefox e Safari 16+ suportam nativamente. Para navegadores mais antigos, um fallback WebP ou JPG é recomendado.</p><p class=\"text-mid\">A conversão local protege as imagens: fotos imobiliárias, de produtos ou retratos – nada é enviado para nenhum servidor. Conforme com o RGPD/LGPD.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "JPG vs AVIF – comparação de formatos",
-      "plans": [
+      "labelHeader": "Funcionalidade",
+      "cols": ["JPG", "AVIF"],
+      "rows": [
         {
-          "id": "jpg",
-          "name": "JPG"
+          "label": "Compressão com perda",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "avif",
-          "name": "AVIF",
-          "highlighted": true
+          "label": "Compressão sem perda",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Transparência (canal alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suporte a animação",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Suporte em navegadores",
+          "values": ["Todos os navegadores", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+        },
+        {
+          "label": "Profundidade de cor",
+          "values": ["8-bit (16.7M)", "8/10/12-bit, HDR"]
+        },
+        {
+          "label": "Tamanho de ficheiro compacto",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Metadados (EXIF)",
+          "values": ["✓", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Compressão com perda",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Compressão sem perda",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Transparência (canal alfa)",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Suporte a animação",
-          "values": {
-            "jpg": false,
-            "avif": true
-          }
-        },
-        {
-          "name": "Suporte em navegadores",
-          "values": {
-            "jpg": "Todos os navegadores",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Profundidade de cor",
-          "values": {
-            "jpg": "8-bit (16.7M)",
-            "avif": "8/10/12-bit, HDR"
-          }
-        },
-        {
-          "name": "Tamanho de ficheiro compacto",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        },
-        {
-          "name": "Metadados (EXIF)",
-          "values": {
-            "jpg": true,
-            "avif": true
-          }
-        }
-      ],
-      "featureLabel": "Funcionalidade"
+      ]
     },
     {
       "type": "gap",

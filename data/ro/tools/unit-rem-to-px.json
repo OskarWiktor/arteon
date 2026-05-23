@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertiți CSS rem în pixeli și invers.",
-      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+      "featureList": [
+        "Conversie bidirecțională în timp real",
+        "Toate convertoarele într-un singur loc",
+        "Copierea rezultatului în clipboard",
+        "Calcul local în browser"
+      ]
     },
     "howTo": {
       "name": "Cum să utilizați convertorul",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "rem vs em vs px",
-      "featureLabel": "Proprietate",
-      "plans": [
+      "labelHeader": "Proprietate",
+      "cols": ["rem", "px"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "rem"
+          "label": "Referință",
+          "values": ["Dimensiune font rădăcină", "Pixel fix"]
         },
         {
-          "id": "unit2",
-          "name": "px",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Referință",
-          "values": {
-            "unit1": "Dimensiune font rădăcină",
-            "unit2": "Pixel fix"
-          }
+          "label": "Compunere",
+          "values": ["Nu (întotdeauna rădăcină)", "No"]
         },
         {
-          "name": "Compunere",
-          "values": {
-            "unit1": "Nu (întotdeauna rădăcină)",
-            "unit2": "No"
-          }
+          "label": "Responsiv",
+          "values": ["Yes", "No"]
         },
         {
-          "name": "Responsiv",
-          "values": {
-            "unit1": "Yes",
-            "unit2": "No"
-          }
+          "label": "Accesibilitate",
+          "values": ["Respectă setările utilizatorului", "Dimensiune fixă"]
         },
         {
-          "name": "Accesibilitate",
-          "values": {
-            "unit1": "Respectă setările utilizatorului",
-            "unit2": "Dimensiune fixă"
-          }
-        },
-        {
-          "name": "Predictibilitate",
-          "values": {
-            "unit1": "Consistent peste tot",
-            "unit2": "Întotdeauna consistent"
-          }
+          "label": "Predictibilitate",
+          "values": ["Consistent peste tot", "Întotdeauna consistent"]
         }
       ]
     },

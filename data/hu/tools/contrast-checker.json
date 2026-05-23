@@ -180,82 +180,45 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Mit jelentenek az AA és AAA szintek a WCAG szabványban?",
-      "plans": [
+      "cols": ["AA szint (minimum)", "AAA szint (emelt)"],
+      "rows": [
         {
-          "id": "aa",
-          "name": "AA szint (minimum)",
-          "highlighted": true
+          "label": "Normál szöveg – min. 4,5:1",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "aaa",
-          "name": "AAA szint (emelt)"
-        }
-      ],
-      "features": [
-        {
-          "name": "Normál szöveg – min. 4,5:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Normál szöveg – min. 7:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Normál szöveg – min. 7:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Nagy / félkövér szöveg – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Nagy / félkövér szöveg – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Nagy / félkövér szöveg – min. 4,5:1",
+          "values": ["—", "✓"]
         },
         {
-          "name": "Nagy / félkövér szöveg – min. 4,5:1",
-          "values": {
-            "aa": false,
-            "aaa": true
-          }
+          "label": "Ikonok és UI-elemek – min. 3:1",
+          "values": ["✓", "✓"]
         },
         {
-          "name": "Ikonok és UI-elemek – min. 3:1",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Jogilag kötelező (EU irányelv)",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Jogilag kötelező (EU irányelv)",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Szükséges az US ADA / Section 508 szerint",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Szükséges az US ADA / Section 508 szerint",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
+          "label": "Szükséges az UK Equality Act 2010 szerint",
+          "values": ["✓", "—"]
         },
         {
-          "name": "Szükséges az UK Equality Act 2010 szerint",
-          "values": {
-            "aa": true,
-            "aaa": false
-          }
-        },
-        {
-          "name": "Ajánlott kulcsfontosságú tartalomhoz",
-          "values": {
-            "aa": true,
-            "aaa": true
-          }
+          "label": "Ajánlott kulcsfontosságú tartalomhoz",
+          "values": ["✓", "✓"]
         }
       ]
     },

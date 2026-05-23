@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convertissez les codes couleur HEX en valeurs RGB. Essentiel pour le design web et CSS.",
-      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+      "featureList": [
+        "Conversion bidirectionnelle en temps réel",
+        "Tous les convertisseurs au même endroit",
+        "Copier le résultat dans le presse-papiers",
+        "Calcul local dans le navigateur"
+      ]
     },
     "howTo": {
       "name": "Comment utiliser le convertisseur",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEX vs RGB – comparaison",
-      "featureLabel": "Caractéristique",
-      "plans": [
+      "labelHeader": "Caractéristique",
+      "cols": ["HEX", "RGB"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "HEX"
+          "label": "Format",
+          "values": ["#RRGGBB", "rgb(R, G, B)"]
         },
         {
-          "id": "unit2",
-          "name": "RGB",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Format",
-          "values": {
-            "unit1": "#RRGGBB",
-            "unit2": "rgb(R, G, B)"
-          }
+          "label": "Valeurs",
+          "values": ["00–FF (hex)", "0–255 (décimal)"]
         },
         {
-          "name": "Valeurs",
-          "values": {
-            "unit1": "00–FF (hex)",
-            "unit2": "0–255 (décimal)"
-          }
+          "label": "Opacité",
+          "values": ["8 chiffres (#RRGGBBAA)", "rgba(R, G, B, A)"]
         },
         {
-          "name": "Opacité",
-          "values": {
-            "unit1": "8 chiffres (#RRGGBBAA)",
-            "unit2": "rgba(R, G, B, A)"
-          }
+          "label": "Abrégé",
+          "values": ["#RGB (3 chiffres)", "Pas d’abrégé"]
         },
         {
-          "name": "Abrégé",
-          "values": {
-            "unit1": "#RGB (3 chiffres)",
-            "unit2": "Pas d’abrégé"
-          }
-        },
-        {
-          "name": "Utilisé dans",
-          "values": {
-            "unit1": "CSS, outils de design",
-            "unit2": "CSS, programmation"
-          }
+          "label": "Utilisé dans",
+          "values": ["CSS, outils de design", "CSS, programmation"]
         }
       ]
     },

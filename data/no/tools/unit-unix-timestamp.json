@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Regn om Unix-tidsstempel til dato og tid.",
-      "featureList": ["Toveis-konvertering i sanntid", "Alle kalkulatorer samlet på ett sted", "Kopier resultat til utklippstavle", "Lokal beregning i nettleseren"]
+      "featureList": [
+        "Toveis-konvertering i sanntid",
+        "Alle kalkulatorer samlet på ett sted",
+        "Kopier resultat til utklippstavle",
+        "Lokal beregning i nettleseren"
+      ]
     },
     "howTo": {
       "name": "Slik bruker du kalkulatoren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Unix-tidsstempel vs ISO-dato",
-      "featureLabel": "Egenskap",
-      "plans": [
+      "labelHeader": "Egenskap",
+      "cols": ["Unix-tidsstempel", "ISO 8601"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Unix-tidsstempel"
+          "label": "Format",
+          "values": ["1709251200", "2024-03-01T00:00:00Z"]
         },
         {
-          "id": "unit2",
-          "name": "ISO 8601",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Format",
-          "values": {
-            "unit1": "1709251200",
-            "unit2": "2024-03-01T00:00:00Z"
-          }
+          "label": "Lesbarhet",
+          "values": ["Bare for maskiner", "Lesbar for mennesker"]
         },
         {
-          "name": "Lesbarhet",
-          "values": {
-            "unit1": "Bare for maskiner",
-            "unit2": "Lesbar for mennesker"
-          }
+          "label": "Tidssone",
+          "values": ["Alltid UTC", "Inkluderer tidssone"]
         },
         {
-          "name": "Tidssone",
-          "values": {
-            "unit1": "Alltid UTC",
-            "unit2": "Inkluderer tidssone"
-          }
+          "label": "Sammenligning",
+          "values": ["Enkel (større = senere)", "Krever parsing"]
         },
         {
-          "name": "Sammenligning",
-          "values": {
-            "unit1": "Enkel (større = senere)",
-            "unit2": "Krever parsing"
-          }
-        },
-        {
-          "name": "Lagring",
-          "values": {
-            "unit1": "4–8 bytes",
-            "unit2": "20+ bytes"
-          }
+          "label": "Lagring",
+          "values": ["4–8 bytes", "20+ bytes"]
         }
       ]
     },

@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Rechnen Sie HEX-Farbcodes in RGB-Werte um. Unverzichtbar für Webdesign und CSS.",
-      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+      "featureList": [
+        "Bidirektionale Echtzeit-Konvertierung",
+        "Alle Konverter an einem Ort",
+        "Ergebnis in die Zwischenablage kopieren",
+        "Lokale Berechnung im Browser"
+      ]
     },
     "howTo": {
       "name": "So verwenden Sie den Konverter HEX na RGB",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEX vs RGB – Vergleich",
-      "featureLabel": "Eigenschaft",
-      "plans": [
+      "labelHeader": "Eigenschaft",
+      "cols": ["HEX", "RGB"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "HEX"
+          "label": "Format",
+          "values": ["#RRGGBB", "rgb(R, G, B)"]
         },
         {
-          "id": "unit2",
-          "name": "RGB",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Format",
-          "values": {
-            "unit1": "#RRGGBB",
-            "unit2": "rgb(R, G, B)"
-          }
+          "label": "Werte",
+          "values": ["00–FF (hex)", "0–255 (dezimal)"]
         },
         {
-          "name": "Werte",
-          "values": {
-            "unit1": "00–FF (hex)",
-            "unit2": "0–255 (dezimal)"
-          }
+          "label": "Transparenz",
+          "values": ["8 Ziffern (#RRGGBBAA)", "rgba(R, G, B, A)"]
         },
         {
-          "name": "Transparenz",
-          "values": {
-            "unit1": "8 Ziffern (#RRGGBBAA)",
-            "unit2": "rgba(R, G, B, A)"
-          }
+          "label": "Kurzform",
+          "values": ["#RGB (3 Ziffern)", "Keine Kurzform"]
         },
         {
-          "name": "Kurzform",
-          "values": {
-            "unit1": "#RGB (3 Ziffern)",
-            "unit2": "Keine Kurzform"
-          }
-        },
-        {
-          "name": "Verwendet in",
-          "values": {
-            "unit1": "CSS, Design-Tools",
-            "unit2": "CSS, Programmierung"
-          }
+          "label": "Verwendet in",
+          "values": ["CSS, Design-Tools", "CSS, Programmierung"]
         }
       ]
     },

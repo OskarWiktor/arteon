@@ -25,7 +25,14 @@
   "schemas": {
     "software": {
       "name": "Színpaletta-generátor – 17 színséma",
-      "alternateName": ["Színséma generátor", "HEX színgenerátor", "Színpaletta készítő", "Színillesztő eszköz", "Színpaletta ingyenes", "Színösszhang generátor"],
+      "alternateName": [
+        "Színséma generátor",
+        "HEX színgenerátor",
+        "Színpaletta készítő",
+        "Színillesztő eszköz",
+        "Színpaletta ingyenes",
+        "Színösszhang generátor"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorPaletteGenerator",
       "description": "Ingyenes színpaletta-generátor. Adjon meg egy HEX színt, és az eszköz 17 sémát generál: monokromatikus, analóg, komplementer, triádikus, osztott komplementer, pasztell, sötét, tonális és minimalista. Minden szín másolható a HEX kóddal és HSL értékkel.",

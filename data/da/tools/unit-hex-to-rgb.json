@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Konverter HEX til RGB og omvendt. Nyttig til webdesign og CSS. Ingen registrering krævet.",
-      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+      "featureList": [
+        "Tovejs-konvertering i realtid",
+        "Alle konvertere samlet ét sted",
+        "Kopier resultat til udklipsholder",
+        "Lokal beregning i browseren"
+      ]
     },
     "howTo": {
       "name": "Sådan bruger du konverteren",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "HEX vs RGB",
-      "featureLabel": "Egenskab",
-      "plans": [
+      "labelHeader": "Egenskab",
+      "cols": ["HEX", "RGB"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "HEX"
+          "label": "Format",
+          "values": ["#RRGGBB", "rgb(R, G, B)"]
         },
         {
-          "id": "unit2",
-          "name": "RGB",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Format",
-          "values": {
-            "unit1": "#RRGGBB",
-            "unit2": "rgb(R, G, B)"
-          }
+          "label": "Værdier",
+          "values": ["00–FF (hex)", "0–255 (decimal)"]
         },
         {
-          "name": "Værdier",
-          "values": {
-            "unit1": "00–FF (hex)",
-            "unit2": "0–255 (decimal)"
-          }
+          "label": "Gennemsigtighed",
+          "values": ["#RRGGBBAA", "rgba(R, G, B, A)"]
         },
         {
-          "name": "Gennemsigtighed",
-          "values": {
-            "unit1": "#RRGGBBAA",
-            "unit2": "rgba(R, G, B, A)"
-          }
+          "label": "Forkortelse",
+          "values": ["#RGB", "Ingen"]
         },
         {
-          "name": "Forkortelse",
-          "values": {
-            "unit1": "#RGB",
-            "unit2": "Ingen"
-          }
-        },
-        {
-          "name": "Bruges i",
-          "values": {
-            "unit1": "CSS, designværktøjer",
-            "unit2": "CSS, programmering"
-          }
+          "label": "Bruges i",
+          "values": ["CSS, designværktøjer", "CSS, programmering"]
         }
       ]
     },

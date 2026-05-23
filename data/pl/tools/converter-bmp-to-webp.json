@@ -2,13 +2,13 @@
   "toolKey": "bmpToWebp",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter BMP na WebP – zmniejsz rozmiar obrazu o 95%",
-    "description": "Zamień nieskompresowane pliki BMP na lekki WebP w przeglądarce. Redukcja rozmiaru nawet o 95%. Bez rejestracji, bez wysyłania na serwer.",
+    "title": "Darmowy konwerter formatu BMP na WebP bez limitu plików i rejestracji",
+    "description": "Zamień nieskompresowane pliki BMP na lekki WebP w przeglądarce. Redukcja rozmiaru nawet o 95%. Darmowe narzędzie do zmiany formatu zdjęcia bez limitu plików, bez rejestracji i bez znaków wodnych",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-bmp-na-webp"
   },
   "hero": {
-    "title": "Konwerter BMP na WebP – ogromna redukcja rozmiaru pliku",
+    "title": "Darmowy konwerter formatu BMP na WebP – ogromna redukcja rozmiaru pliku",
     "description": "Zamień nieskompresowane pliki BMP na lekki WebP. Dodaj pliki, ustaw jakość i pobierz obrazy. Konwersja odbywa się lokalnie w przeglądarce.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
@@ -25,14 +25,19 @@
   "schemas": {
     "software": {
       "name": "Konwerter BMP na WebP – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana BMP na WebP online", "Konwersja BMP do WebP"],
+      "alternateName": ["Zamiana BMP na WebP", "Konwersja BMP do WebP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter BMP na WebP online. Zamień nieskompresowane pliki BMP na lekki WebP w przeglądarce - pliki nie są wysyłane na serwer.",
-      "featureList": ["Konwersja BMP do WebP", "Redukcja rozmiaru nawet o 95%", "Regulacja poziomu jakości", "Przetwarzanie lokalne w przeglądarce"]
+      "description": "Darmowy konwerter BMP na WebP. Zamień nieskompresowane pliki BMP na lekki WebP w przeglądarce - pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja BMP do WebP",
+        "Redukcja rozmiaru nawet o 95%",
+        "Regulacja poziomu jakości",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
     },
     "howTo": {
-      "name": "Jak zamienić BMP na WebP online",
+      "name": "Jak zamienić BMP na WebP",
       "description": "Instrukcja konwersji plików BMP na format WebP.",
       "steps": [
         {
@@ -165,78 +170,44 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "BMP vs WebP – porównanie formatów",
-      "plans": [
+      "labelHeader": "Funkcja",
+      "cols": ["BMP", "WebP"],
+      "rows": [
         {
-          "id": "bmp",
-          "name": "BMP"
+          "label": "Kompresja stratna",
+          "values": ["—", "✓"]
         },
         {
-          "id": "webp",
-          "name": "WebP",
-          "highlighted": true
+          "label": "Kompresja bezstratna",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Przezroczystość (kanał alfa)",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa animacji",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Obsługa w przeglądarkach",
+          "values": ["Wszystkie przeglądarki", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+        },
+        {
+          "label": "Głębia kolorów",
+          "values": ["1/4/8/24/32-bit", "8-bit (16.7M)"]
+        },
+        {
+          "label": "Mały rozmiar pliku",
+          "values": ["—", "✓"]
+        },
+        {
+          "label": "Metadane (EXIF)",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Kompresja stratna",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Kompresja bezstratna",
-          "values": {
-            "bmp": true,
-            "webp": true
-          }
-        },
-        {
-          "name": "Przezroczystość (kanał alfa)",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Obsługa animacji",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Obsługa w przeglądarkach",
-          "values": {
-            "bmp": "Wszystkie przeglądarki",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Głębia kolorów",
-          "values": {
-            "bmp": "1/4/8/24/32-bit",
-            "webp": "8-bit (16.7M)"
-          }
-        },
-        {
-          "name": "Mały rozmiar pliku",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        },
-        {
-          "name": "Metadane (EXIF)",
-          "values": {
-            "bmp": false,
-            "webp": true
-          }
-        }
-      ],
-      "featureLabel": "Funkcja"
+      ]
     },
     {
       "type": "gap",

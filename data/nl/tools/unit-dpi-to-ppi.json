@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Vergelijk DPI en PPI — afdruk- vs schermresolutie.",
-      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+      "featureList": [
+        "Bidirectionele realtime-conversie",
+        "Alle converters op één plek",
+        "Resultaat naar klembord kopiëren",
+        "Lokale berekening in de browser"
+      ]
     },
     "howTo": {
       "name": "Hoe de converter te gebruiken",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI vs PPI – vergelijking",
-      "featureLabel": "Eigenschap",
-      "plans": [
+      "labelHeader": "Eigenschap",
+      "cols": ["DPI", "PPI"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "DPI"
+          "label": "Geldt voor",
+          "values": ["Printers", "Schermen en afbeeldingen"]
         },
         {
-          "id": "unit2",
-          "name": "PPI",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Geldt voor",
-          "values": {
-            "unit1": "Printers",
-            "unit2": "Schermen en afbeeldingen"
-          }
+          "label": "Meet",
+          "values": ["Fysieke inktpunten", "Digitale pixels"]
         },
         {
-          "name": "Meet",
-          "values": {
-            "unit1": "Fysieke inktpunten",
-            "unit2": "Digitale pixels"
-          }
+          "label": "Typische waarden",
+          "values": ["600–4.800 DPI", "72–460 PPI"]
         },
         {
-          "name": "Typische waarden",
-          "values": {
-            "unit1": "600–4.800 DPI",
-            "unit2": "72–460 PPI"
-          }
+          "label": "Drukkwaliteit",
+          "values": ["Meer = fijner", "300 PPI standaard"]
         },
         {
-          "name": "Drukkwaliteit",
-          "values": {
-            "unit1": "Meer = fijner",
-            "unit2": "300 PPI standaard"
-          }
-        },
-        {
-          "name": "Verwarring",
-          "values": {
-            "unit1": "Foutief gebruikt voor beelden",
-            "unit2": "Correct begrip"
-          }
+          "label": "Verwarring",
+          "values": ["Foutief gebruikt voor beelden", "Correct begrip"]
         }
       ]
     },

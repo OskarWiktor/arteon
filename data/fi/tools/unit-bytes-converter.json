@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Muunna tavut KB, MB, GB ja päinvastoin.",
-      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+      "featureList": [
+        "Kaksisuuntainen reaaliaikainen muunnos",
+        "Kaikki muuntimet yhdessä paikassa",
+        "Kopioi tulos leikepöydälle",
+        "Paikallinen laskenta selaimessa"
+      ]
     },
     "howTo": {
       "name": "Näin käytät muunninta",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Desimaali vs Binäärinen",
-      "featureLabel": "Ominaisuus",
-      "plans": [
+      "labelHeader": "Ominaisuus",
+      "cols": ["Desimaali (SI)", "Binäärinen (IEC)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Desimaali (SI)"
+          "label": "Kerroin",
+          "values": ["1 000", "1 024"]
         },
         {
-          "id": "unit2",
-          "name": "Binäärinen (IEC)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Kerroin",
-          "values": {
-            "unit1": "1 000",
-            "unit2": "1 024"
-          }
+          "label": "Yksiköt",
+          "values": ["KB, MB, GB", "KiB, MiB, GiB"]
         },
         {
-          "name": "Yksiköt",
-          "values": {
-            "unit1": "KB, MB, GB",
-            "unit2": "KiB, MiB, GiB"
-          }
+          "label": "Käyttäjä",
+          "values": ["Levyvalmistajat", "Käyttöjärjestelmä, RAM"]
         },
         {
-          "name": "Käyttäjä",
-          "values": {
-            "unit1": "Levyvalmistajat",
-            "unit2": "Käyttöjärjestelmä, RAM"
-          }
+          "label": "1 TB",
+          "values": ["1 000 000 000 000 B", "1 099 511 627 776 B"]
         },
         {
-          "name": "1 TB",
-          "values": {
-            "unit1": "1 000 000 000 000 B",
-            "unit2": "1 099 511 627 776 B"
-          }
-        },
-        {
-          "name": "Ero",
-          "values": {
-            "unit1": "1 TB",
-            "unit2": "0,909 TiB"
-          }
+          "label": "Ero",
+          "values": ["1 TB", "0,909 TiB"]
         }
       ]
     },

@@ -33,7 +33,7 @@
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
         "Business Ipsum generator",
-        "Dummy text generator online"
+        "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
       "description": "Ingyenes Lorem Ipsum generátor — 8 stílus: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business és több. 9 generálási mód. Másolás szövegként vagy HTML-ként.",
@@ -254,122 +254,61 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Szövegstílusok összehasonlítása",
-      "featureLabel": "Jellemző",
-      "plans": [
-        {
-          "id": "classic",
-          "name": "Lorem Ipsum",
-          "highlighted": true
-        },
-        {
-          "id": "hipster",
-          "name": "Hipster"
-        },
-        {
-          "id": "business",
-          "name": "Business"
-        },
-        {
-          "id": "polish",
-          "name": "Helyi"
-        },
-        {
-          "id": "bacon",
-          "name": "Bacon"
-        },
-        {
-          "id": "cupcake",
-          "name": "Cupcake"
-        },
-        {
-          "id": "pirate",
-          "name": "Pirate"
-        },
-        {
-          "id": "legal",
-          "name": "Legal"
-        }
+      "labelHeader": "Jellemző",
+      "cols": [
+        "Lorem Ipsum",
+        "Hipster",
+        "Business",
+        "Helyi",
+        "Bacon",
+        "Cupcake",
+        "Pirate",
+        "Legal"
       ],
-      "features": [
+      "rows": [
         {
-          "name": "Nyelv",
-          "values": {
-            "classic": "Latin",
-            "hipster": "Angol",
-            "business": "Angol",
-            "polish": "Helyi",
-            "bacon": "Angol",
-            "cupcake": "Angol",
-            "pirate": "Angol",
-            "legal": "Angol"
-          }
+          "label": "Nyelv",
+          "values": ["Latin", "Angol", "Angol", "Helyi", "Angol", "Angol", "Angol", "Angol"]
         },
         {
-          "name": "Téma",
-          "values": {
-            "classic": "Filozófia",
-            "hipster": "Életstílus",
-            "business": "Vállalati",
-            "polish": "Általános",
-            "bacon": "Gasztronómia",
-            "cupcake": "Cukrászat",
-            "pirate": "Kaland",
-            "legal": "Jog"
-          }
+          "label": "Téma",
+          "values": [
+            "Filozófia",
+            "Életstílus",
+            "Vállalati",
+            "Általános",
+            "Gasztronómia",
+            "Cukrászat",
+            "Kaland",
+            "Jog"
+          ]
         },
         {
-          "name": "Vizuális semlegesség",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Vizuális semlegesség",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Természetes ritmus",
-          "values": {
-            "classic": true,
-            "hipster": true,
-            "business": true,
-            "polish": true,
-            "bacon": true,
-            "cupcake": true,
-            "pirate": true,
-            "legal": true
-          }
+          "label": "Természetes ritmus",
+          "values": ["✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"]
         },
         {
-          "name": "Iparági szabvány",
-          "values": {
-            "classic": true,
-            "hipster": false,
-            "business": false,
-            "polish": false,
-            "bacon": false,
-            "cupcake": false,
-            "pirate": false,
-            "legal": false
-          }
+          "label": "Iparági szabvány",
+          "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "name": "Humor / karakter",
-          "values": {
-            "classic": "Semleges",
-            "hipster": "Közepes",
-            "business": "Alacsony",
-            "polish": "Alacsony",
-            "bacon": "Magas",
-            "cupcake": "Magas",
-            "pirate": "Magas",
-            "legal": "Alacsony"
-          }
+          "label": "Humor / karakter",
+          "values": [
+            "Semleges",
+            "Közepes",
+            "Alacsony",
+            "Alacsony",
+            "Magas",
+            "Magas",
+            "Magas",
+            "Alacsony"
+          ]
         }
       ]
     },

@@ -184,55 +184,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Milimetr (mm) vs Piksel (px) – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
+      "labelHeader": "Cecha",
+      "cols": ["Milimetr (mm)", "Piksel (px)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Milimetr (mm)"
+          "label": "Typ",
+          "values": ["Fizyczna", "Ekranowa"]
         },
         {
-          "id": "unit2",
-          "name": "Piksel (px)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Typ",
-          "values": {
-            "unit1": "Fizyczna",
-            "unit2": "Ekranowa"
-          }
+          "label": "Precyzja",
+          "values": ["Submilimetrowa", "Zależy od DPI"]
         },
         {
-          "name": "Precyzja",
-          "values": {
-            "unit1": "Submilimetrowa",
-            "unit2": "Zależy od DPI"
-          }
+          "label": "Druk 300 DPI",
+          "values": ["1 mm = 11,81 px", "1 px = 0,085 mm"]
         },
         {
-          "name": "Druk 300 DPI",
-          "values": {
-            "unit1": "1 mm = 11,81 px",
-            "unit2": "1 px = 0,085 mm"
-          }
+          "label": "Ekran 96 DPI",
+          "values": ["1 mm = 3,78 px", "1 px = 0,265 mm"]
         },
         {
-          "name": "Ekran 96 DPI",
-          "values": {
-            "unit1": "1 mm = 3,78 px",
-            "unit2": "1 px = 0,265 mm"
-          }
-        },
-        {
-          "name": "Wizytówka",
-          "values": {
-            "unit1": "85 × 55 mm",
-            "unit2": "1 004 × 650 px (300 DPI)"
-          }
+          "label": "Wizytówka",
+          "values": ["85 × 55 mm", "1 004 × 650 px (300 DPI)"]
         }
       ]
     },

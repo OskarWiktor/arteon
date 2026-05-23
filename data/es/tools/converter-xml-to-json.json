@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir XML a JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a JSON puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor online gratuito transforma tus archivos XML al formato JSON directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
+      "html": "<p class=\"text-mid mb-4\">XML es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a JSON puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor gratuito transforma tus archivos XML al formato JSON directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "XML to JSON conversion",
       "variant": "right"
@@ -128,64 +128,36 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "XML vs JSON – comparación de formatos",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["XML", "JSON"],
+      "rows": [
         {
-          "id": "xml",
-          "name": "XML"
+          "label": "Datos jerárquicos",
+          "values": ["✓", "✓"]
         },
         {
-          "id": "json",
-          "name": "JSON",
-          "highlighted": true
+          "label": "Datos tabulares",
+          "values": ["—", "—"]
+        },
+        {
+          "label": "Validación de esquema",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Legible por humanos",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Estándar API",
+          "values": ["✓", "✓"]
+        },
+        {
+          "label": "Sintaxis compacta",
+          "values": ["—", "✓"]
         }
-      ],
-      "features": [
-        {
-          "name": "Datos jerárquicos",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Datos tabulares",
-          "values": {
-            "xml": false,
-            "json": false
-          }
-        },
-        {
-          "name": "Validación de esquema",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Legible por humanos",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Estándar API",
-          "values": {
-            "xml": true,
-            "json": true
-          }
-        },
-        {
-          "name": "Sintaxis compacta",
-          "values": {
-            "xml": false,
-            "json": true
-          }
-        }
-      ],
-      "featureLabel": "Característica"
+      ]
     },
     {
       "type": "gap",
@@ -193,8 +165,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "\u00bfC\u00f3mo funciona la conversi\u00f3n de XML a JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML usa una jerarqu\u00eda basada en etiquetas con elementos de apertura y cierre, mientras que JSON usa llaves ligeras y pares clave-valor. El convertidor analiza el \u00e1rbol del documento XML y asocia cada elemento a una estructura JSON correspondiente.</p><p class=\"text-mid mb-4\">Los elementos XML se convierten en objetos JSON, los elementos repetidos con el mismo nombre de etiqueta en arrays JSON, y el contenido de texto en valores de cadena. Los atributos XML se representan como propiedades especiales (con prefijo @) en el objeto JSON.</p><p class=\"text-mid\">JSON es el formato preferido para APIs web modernas, aplicaciones JavaScript y bases de datos NoSQL. La conversi\u00f3n se realiza completamente en tu navegador.</p>"
+      "title": "¿Cómo funciona la conversión de XML a JSON?",
+      "html": "<p class=\"text-mid mb-4\">XML usa una jerarquía basada en etiquetas con elementos de apertura y cierre, mientras que JSON usa llaves ligeras y pares clave-valor. El convertidor analiza el árbol del documento XML y asocia cada elemento a una estructura JSON correspondiente.</p><p class=\"text-mid mb-4\">Los elementos XML se convierten en objetos JSON, los elementos repetidos con el mismo nombre de etiqueta en arrays JSON, y el contenido de texto en valores de cadena. Los atributos XML se representan como propiedades especiales (con prefijo @) en el objeto JSON.</p><p class=\"text-mid\">JSON es el formato preferido para APIs web modernas, aplicaciones JavaScript y bases de datos NoSQL. La conversión se realiza completamente en tu navegador.</p>"
     },
     {
       "type": "gap",
@@ -202,7 +174,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Consejos para la conversi\u00f3n de XML a JSON",
+      "title": "Consejos para la conversión de XML a JSON",
       "description": "Algunos consejos para evitar problemas comunes:",
       "grid": "two",
       "items": [
@@ -254,16 +226,16 @@
           "answer": "Sí, funciona en cualquier dispositivo con un navegador web moderno."
         },
         {
-          "question": "\u00bfEs segura la conversi\u00f3n de XML a JSON?",
-          "answer": "S\u00ed. Toda la conversi\u00f3n se realiza localmente en tu navegador. Ning\u00fan dato se env\u00eda a un servidor."
+          "question": "¿Es segura la conversión de XML a JSON?",
+          "answer": "Sí. Toda la conversión se realiza localmente en tu navegador. Ningún dato se envía a un servidor."
         },
         {
-          "question": "\u00bfSe pierden los atributos XML en la conversi\u00f3n?",
+          "question": "¿Se pierden los atributos XML en la conversión?",
           "answer": "No. Los atributos XML se conservan en la salida JSON como propiedades con prefijo @. Por ejemplo, id='123' se convierte en \"@id\": \"123\" en el objeto JSON."
         },
         {
-          "question": "\u00bfPuedo usar la salida JSON en JavaScript?",
-          "answer": "S\u00ed. La salida es JSON est\u00e1ndar utilizable con JSON.parse() en JavaScript o directamente en cualquier lenguaje de programaci\u00f3n, API o base de datos."
+          "question": "¿Puedo usar la salida JSON en JavaScript?",
+          "answer": "Sí. La salida es JSON estándar utilizable con JSON.parse() en JavaScript o directamente en cualquier lenguaje de programación, API o base de datos."
         }
       ]
     },

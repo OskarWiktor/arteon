@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Converta timestamps Unix para datas legíveis. Essencial para programadores e análise de logs.",
-      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+      "featureList": [
+        "Conversão bidirecional em tempo real",
+        "Todos os conversores num só lugar",
+        "Copiar resultado para a área de transferência",
+        "Cálculo local no navegador"
+      ]
     },
     "howTo": {
       "name": "Como usar o conversor",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Timestamp Unix vs Data ISO",
-      "featureLabel": "Característica",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["Timestamp Unix", "Data ISO 8601"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Timestamp Unix"
+          "label": "Formato",
+          "values": ["1709251200", "2024-03-01T00:00:00Z"]
         },
         {
-          "id": "unit2",
-          "name": "Data ISO 8601",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Formato",
-          "values": {
-            "unit1": "1709251200",
-            "unit2": "2024-03-01T00:00:00Z"
-          }
+          "label": "Legibilidade",
+          "values": ["Apenas para máquinas", "Legível por humanos"]
         },
         {
-          "name": "Legibilidade",
-          "values": {
-            "unit1": "Apenas para máquinas",
-            "unit2": "Legível por humanos"
-          }
+          "label": "Fuso horário",
+          "values": ["Sempre UTC", "Inclui fuso (Z, +02:00)"]
         },
         {
-          "name": "Fuso horário",
-          "values": {
-            "unit1": "Sempre UTC",
-            "unit2": "Inclui fuso (Z, +02:00)"
-          }
+          "label": "Comparação",
+          "values": ["Simples (maior = mais tarde)", "Requer parsing"]
         },
         {
-          "name": "Comparação",
-          "values": {
-            "unit1": "Simples (maior = mais tarde)",
-            "unit2": "Requer parsing"
-          }
-        },
-        {
-          "name": "Armazenamento",
-          "values": {
-            "unit1": "4–8 bytes",
-            "unit2": "20+ bytes"
-          }
+          "label": "Armazenamento",
+          "values": ["4–8 bytes", "20+ bytes"]
         }
       ]
     },

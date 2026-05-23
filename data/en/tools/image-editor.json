@@ -8,7 +8,7 @@
     "path": "/en/tools/online-image-editor"
   },
   "hero": {
-    "title": "Resize, crop and convert your image online – free editor",
+    "title": "Resize, crop and convert your image – free editor",
     "description": "Resize, crop, and convert images for Instagram, Facebook, and LinkedIn. Ready-made formats, circular avatars, export to JPG, PNG, and WebP. Local processing in the browser.",
     "backgroundImage": "/assets/tools/free-image-editor-crop-resize-and-convert/online-image-editor-en.webp"
   },
@@ -36,7 +36,7 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
-      "description": "Free online image editor for resizing, cropping and format conversion. Ready-made presets for Instagram, Facebook and LinkedIn. Circular avatar creation. Export to JPG, PNG and WebP with quality control. Local processing in the browser.",
+      "description": "Free image editor for resizing, cropping and format conversion. Ready-made presets for Instagram, Facebook and LinkedIn. Circular avatar creation. Export to JPG, PNG and WebP with quality control. Local processing in the browser.",
       "featureList": [
         "Resize images to any dimensions",
         "Crop with interactive area selection",
@@ -407,7 +407,7 @@
       "description": "Have an idea for a new feature, found a bug, or want to suggest another tool that would make your work easier? Write to us – we respond within 24 hours.",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/online-image-editor-en.webp",
       "imageAlt": "Online image editor – Arteon",
-      "defaultSubject": "Feedback: Online image editor"
+      "defaultSubject": "Feedback: image editor"
     },
     {
       "type": "gap",

@@ -13,7 +13,15 @@ import reactHooks from 'eslint-plugin-react-hooks';
 
 export default [
   {
-    ignores: ['**/.next/**', '**/node_modules/**', '**/.claude/**', '**/out/**', '**/build/**', '**/dist/**', '**/.next-docs/**'],
+    ignores: [
+      '**/.next/**',
+      '**/node_modules/**',
+      '**/.claude/**',
+      '**/out/**',
+      '**/build/**',
+      '**/dist/**',
+      '**/.next-docs/**',
+    ],
   },
   js.configs.recommended,
   {

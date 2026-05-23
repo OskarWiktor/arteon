@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Inches to pixels (DPI) converter",
-      "alternateName": ["Inches to pixel calculator", "Print DPI calculator", "Image resolution converter"],
+      "alternateName": [
+        "Inches to pixel calculator",
+        "Print DPI calculator",
+        "Image resolution converter"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert inches to pixels at any DPI resolution. Essential for print design, image preparation, and display calculations.",
@@ -184,55 +188,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Common print sizes at 300 DPI",
-      "featureLabel": "Print size",
-      "plans": [
+      "labelHeader": "Print size",
+      "cols": ["Inches", "Pixels (300 DPI)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "Inches"
+          "label": "Wallet",
+          "values": ["2.5 × 3.5″", "750 × 1,050"]
         },
         {
-          "id": "unit2",
-          "name": "Pixels (300 DPI)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Wallet",
-          "values": {
-            "unit1": "2.5 × 3.5″",
-            "unit2": "750 × 1,050"
-          }
+          "label": "4×6 photo",
+          "values": ["4 × 6″", "1,200 × 1,800"]
         },
         {
-          "name": "4×6 photo",
-          "values": {
-            "unit1": "4 × 6″",
-            "unit2": "1,200 × 1,800"
-          }
+          "label": "8×10 photo",
+          "values": ["8 × 10″", "2,400 × 3,000"]
         },
         {
-          "name": "8×10 photo",
-          "values": {
-            "unit1": "8 × 10″",
-            "unit2": "2,400 × 3,000"
-          }
+          "label": "US Letter",
+          "values": ["8.5 × 11″", "2,550 × 3,300"]
         },
         {
-          "name": "US Letter",
-          "values": {
-            "unit1": "8.5 × 11″",
-            "unit2": "2,550 × 3,300"
-          }
-        },
-        {
-          "name": "Poster (24×36)",
-          "values": {
-            "unit1": "24 × 36″",
-            "unit2": "7,200 × 10,800"
-          }
+          "label": "Poster (24×36)",
+          "values": ["24 × 36″", "7,200 × 10,800"]
         }
       ]
     },

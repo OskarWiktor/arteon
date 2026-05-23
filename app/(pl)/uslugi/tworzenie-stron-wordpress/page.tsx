@@ -10,38 +10,49 @@ import {
   RiCheckDoubleLine,
   RiMailSendLine,
 } from 'react-icons/ri';
-import HeroBanner from '@/components/sections/HeroBanner';
-import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABanner from '@/components/sections/CTABanner';
-import Gap from '@/components/ui/Gap';
-import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
-import SectionBento from '@/components/ui/sections/SectionBento';
-import SectionContactForm from '@/components/sections/SectionContactForm';
-import Wrapper from '@/components/ui/Wrapper';
-import Breadcrumbs from '@/components/sections/BreadCrumbs';
-import FaqPanels from '@/components/ui/FaqPanels';
-import FeatureGrid from '@/components/sections/FeatureGrid';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import CTABanner from '@/components/organisms/CTABanner';
+import Divider from '@/components/atoms/Divider';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Wrapper from '@/components/atoms/Wrapper';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import FaqPanels from '@/components/molecules/FaqPanels';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
 import { GoLaw } from 'react-icons/go';
-import SectionPrices, { type Note, type SectionPricesPlan } from '@/components/ui/sections/SectionPrices';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import SectionBasic from '@/components/ui/sections/SectionBasic';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import SectionTimeline from '@/components/ui/sections/SectionTimeline';
+import SectionPrices, {
+  type Note,
+  type SectionPricesPlan,
+} from '@/components/organisms/sections/SectionPrices';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import SectionTimeline from '@/components/organisms/sections/SectionTimeline';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 
 export const metadata = {
   title: 'Strony internetowe WordPress dla firm od 2200 zł | Arteon',
-  description: 'Tworzymy strony internetowe WordPress dla firm. Projekt w Figma do akceptacji, Elementor Pro w cenie, gwarancja wydajności 90+/100 dla telefonów. Sprawdź cennik.',
+  description:
+    'Tworzymy strony internetowe WordPress dla firm. Projekt w Figma do akceptacji, Elementor Pro w cenie, gwarancja wydajności 90+/100 dla telefonów. Sprawdź cennik.',
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/tworzenie-stron-wordpress' },
   openGraph: {
     title: 'Strony internetowe WordPress dla firm od 2200 zł | Arteon',
-    description: 'Tworzymy strony internetowe WordPress dla firm. Projekt w Figma do akceptacji, Elementor Pro w cenie, gwarancja wydajności 90+/100 dla telefonów. Sprawdź cennik.',
+    description:
+      'Tworzymy strony internetowe WordPress dla firm. Projekt w Figma do akceptacji, Elementor Pro w cenie, gwarancja wydajności 90+/100 dla telefonów. Sprawdź cennik.',
     url: 'https://www.arteonagency.pl/uslugi/tworzenie-stron-wordpress',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/msc/moskup-strony-msc-psychotherapy.webp', width: 1200, height: 630 }],
+    images: [
+      {
+        url: 'https://www.arteonagency.pl/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 } as const;
 
@@ -83,7 +94,8 @@ const FAQ_ITEMS = [
   },
   {
     question: 'Czy pomagacie z domeną i hostingiem?',
-    answer: 'Tak. Doradzamy w wyborze domeny i hostingu, pomagamy w konfiguracji i podłączeniu. Możemy też przejąć zarządzanie tymi elementami, jeśli tego potrzebujesz.',
+    answer:
+      'Tak. Doradzamy w wyborze domeny i hostingu, pomagamy w konfiguracji i podłączeniu. Możemy też przejąć zarządzanie tymi elementami, jeśli tego potrzebujesz.',
   },
   {
     question: 'Co dokładnie wchodzi w cenę strony internetowej WordPress?',
@@ -92,7 +104,8 @@ const FAQ_ITEMS = [
   },
   {
     question: 'Czy wystawiacie faktury dla firm spoza Polski?',
-    answer: 'Tak. Pracujemy z klientami mówiącymi po polsku na całym świecie. Wystawiamy faktury międzynarodowe, a cała komunikacja odbywa się po polsku.',
+    answer:
+      'Tak. Pracujemy z klientami mówiącymi po polsku na całym świecie. Wystawiamy faktury międzynarodowe, a cała komunikacja odbywa się po polsku.',
   },
 ];
 
@@ -100,7 +113,8 @@ function ServiceSchema() {
   const json = buildServiceSchema({
     path: '/uslugi/tworzenie-stron-wordpress',
     serviceName: 'Tworzenie stron internetowych WordPress dla firm',
-    description: 'Projektujemy i wdrażamy strony WordPress widoczne w Google. Elementor Pro w cenie, wydajność 90+/100 dla mobile, faktura po realizacji, brak ukrytych kosztów utrzymania.',
+    description:
+      'Projektujemy i wdrażamy strony WordPress widoczne w Google. Elementor Pro w cenie, wydajność 90+/100 dla mobile, faktura po realizacji, brak ukrytych kosztów utrzymania.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
@@ -115,7 +129,7 @@ function ServiceSchema() {
   };
 
   return (
-    <Script id="schema-service-tworzenie-stron-wordpress" type="application/ld+json">
+    <Script id='schema-service-tworzenie-stron-wordpress' type='application/ld+json'>
       {JSON.stringify(extendedJson)}
     </Script>
   );
@@ -125,152 +139,221 @@ export default function TworzenieStronWordPressPage() {
   return (
     <>
       <HeroBanner
-        title="Strony internetowe WordPress dla firm"
+        title='Strony internetowe WordPress dla firm'
         description={
-          <>Tworzymy strony internetowe WordPress, nastawione na widoczność w Google. Indywidualny projekt graficzny strony, wydajność 90+/100 dla telefonów, zgodność ze standardami Google i SEO.</>
+          <>
+            Tworzymy strony internetowe WordPress, nastawione na widoczność w Google. Indywidualny
+            projekt graficzny strony, wydajność 90+/100 dla telefonów, zgodność ze standardami
+            Google i SEO.
+          </>
         }
-        variant="left"
-        backgroundImage="/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp"
-        overlay="black"
+        variant='left'
+        backgroundImage='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp'
+        overlay='black'
       />
 
-      <BenefitBelt variant="carousel" />
+      <BenefitBelt variant='carousel' />
 
-      <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: '/uslugi/tworzenie-stron-wordpress', label: 'Strony internetowe WordPress' }} includeJsonLd />
+      <Breadcrumbs
+        second={{ href: '/uslugi', label: 'Usługi' }}
+        third={{ href: '/uslugi/tworzenie-stron-wordpress', label: 'Strony internetowe WordPress' }}
+        includeJsonLd
+      />
 
       <Wrapper>
-        <Gap size="xs" />
+        <Divider size='xs' />
 
-        <ProjectsCarousel title="Realizacje stron internetowych" category="strona" />
+        <ProjectsCarousel title='Realizacje stron internetowych' category='strona' />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Dlaczego strona internetowa WordPress?">
+        <SectionInfo title='Dlaczego strona internetowa WordPress?'>
           <p>
-            WordPress to najpopularniejszy system do tworzenia stron na świecie - ponad <strong>43% wszystkich stron</strong> działa właśnie na tej platformie (dane:{' '}
-            <a href="https://w3techs.com/technologies/details/cm-wordpress" target="_blank" rel="noopener noreferrer" className="inline-link">
+            WordPress to najpopularniejszy system do tworzenia stron na świecie - ponad{' '}
+            <strong>43% wszystkich stron</strong> działa właśnie na tej platformie (dane:{' '}
+            <a
+              href='https://w3techs.com/technologies/details/cm-wordpress'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-link'
+            >
               W3Techs, 2024
             </a>
-            ). Oznacza to, że łatwo znajdziesz specjalistów, wtyczki i rozwiązania do praktycznie każdego problemu.
+            ). Oznacza to, że łatwo znajdziesz specjalistów, wtyczki i rozwiązania do praktycznie
+            każdego problemu.
           </p>
           <br />
           <p>
             <strong>Dla właściciela firmy WordPress daje trzy główne korzyści:</strong>
           </p>
-          <ul className="mt-2 ml-5 list-disc space-y-1">
+          <ul className='mt-2 ml-5 list-disc space-y-1'>
             <li>
-              <strong>Samodzielna edycja</strong> - możesz zmieniać teksty, dodawać zdjęcia i nowe podstrony bez programisty
+              <strong>Samodzielna edycja</strong> - możesz zmieniać teksty, dodawać zdjęcia i nowe
+              podstrony bez programisty
             </li>
             <li>
-              <strong>Niezależność</strong> - strona jest Twoja, możesz przenieść ją do dowolnego hostingu lub zlecić rozwój komukolwiek
+              <strong>Niezależność</strong> - strona jest Twoja, możesz przenieść ją do dowolnego
+              hostingu lub zlecić rozwój komukolwiek
             </li>
             <li>
-              <strong>Rozbudowa w dowolnym momencie</strong> - blog, sklep, rezerwacje, newsletter - WordPress obsługuje praktycznie wszystko
+              <strong>Rozbudowa w dowolnym momencie</strong> - blog, sklep, rezerwacje, newsletter -
+              WordPress obsługuje praktycznie wszystko
             </li>
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FeatureGrid
-          title="Co dostajesz w ramach strony internetowej WordPress?"
-          variant="centered"
+          title='Co dostajesz w ramach strony internetowej WordPress?'
+          variant='centered'
           columns={3}
           items={[
             {
               title: 'Licencja Elementor Pro',
-              description: <>Elementor Pro to kreator stron, który daje pełną kontrolę nad wyglądem. Udostępniamy licencję w cenie - nie płacisz za nią ani teraz, ani później.</>,
-              icon: <RiLayoutLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Elementor Pro to kreator stron, który daje pełną kontrolę nad wyglądem.
+                  Udostępniamy licencję w cenie - nie płacisz za nią ani teraz, ani później.
+                </>
+              ),
+              icon: <RiLayoutLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Projekt w Figma przed realizacją',
-              description: <>Zanim zaczniemy kodować, przygotowujemy projekt graficzny strony głównej. Dostajesz link do podglądu i wspólnie ustalamy finalny wygląd.</>,
-              icon: <RiPencilRuler2Line className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Zanim zaczniemy kodować, przygotowujemy projekt graficzny strony głównej.
+                  Dostajesz link do podglądu i wspólnie ustalamy finalny wygląd.
+                </>
+              ),
+              icon: <RiPencilRuler2Line className='text-primary h-6 w-6' />,
             },
             {
               title: 'Wydajność 90+/100 dla telefonów',
               description: (
                 <>
                   Gwarantujemy wynik w{' '}
-                  <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer" className="inline-link">
+                  <a
+                    href='https://pagespeed.web.dev/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='inline-link'
+                  >
                     PageSpeed Insights
                   </a>{' '}
-                  na poziomie minimum 90/100 dla urządzeń mobilnych. Optymalizujemy obrazy, kod i konfigurację serwera.
+                  na poziomie minimum 90/100 dla urządzeń mobilnych. Optymalizujemy obrazy, kod i
+                  konfigurację serwera.
                 </>
               ),
-              icon: <RiSpeedFill className="text-primary h-6 w-6" />,
+              icon: <RiSpeedFill className='text-primary h-6 w-6' />,
             },
             {
               title: 'Automatyzacja utrzymania',
-              description: <>Konfigurujemy automatyczne aktualizacje wtyczek, kopie zapasowe i optymalizację obrazów. Nie musisz się martwić o techniczne aspekty utrzymania strony.</>,
-              icon: <RiShieldCheckLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Konfigurujemy automatyczne aktualizacje wtyczek, kopie zapasowe i optymalizację
+                  obrazów. Nie musisz się martwić o techniczne aspekty utrzymania strony.
+                </>
+              ),
+              icon: <RiShieldCheckLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Pomoc z treściami i SEO',
-              description: <>Doradzamy strukturę strony pod kątem widoczności w Google. Pomagamy w przygotowaniu i redakcji tekstów, które odpowiadają na pytania potencjalnych klientów.</>,
-              icon: <RiArticleLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Doradzamy strukturę strony pod kątem widoczności w Google. Pomagamy w
+                  przygotowaniu i redakcji tekstów, które odpowiadają na pytania potencjalnych
+                  klientów.
+                </>
+              ),
+              icon: <RiArticleLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Zgodność prawna i dostępność',
-              description: <>Przygotowujemy politykę prywatności, obsługę cookies (RODO) i deklarację dostępności. Kolory zgodne z WCAG 2.1 AA - strona czytelna dla każdego.</>,
-              icon: <GoLaw className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Przygotowujemy politykę prywatności, obsługę cookies (RODO) i deklarację
+                  dostępności. Kolory zgodne z WCAG 2.1 AA - strona czytelna dla każdego.
+                </>
+              ),
+              icon: <GoLaw className='text-primary h-6 w-6' />,
             },
             {
               title: 'Formularze, mapy i media społecznościowe',
-              description: <>Formularz kontaktowy, mapa dojazdu, ikony mediów społecznościowych, przyciski do dzwonienia i pisania maili - wszystko w cenie standardowej.</>,
-              icon: <RiCheckboxCircleLine className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Formularz kontaktowy, mapa dojazdu, ikony mediów społecznościowych, przyciski do
+                  dzwonienia i pisania maili - wszystko w cenie standardowej.
+                </>
+              ),
+              icon: <RiCheckboxCircleLine className='text-primary h-6 w-6' />,
             },
             {
               title: 'Pełna własność i dostępy',
-              description: <>Przekazujemy wszystkie hasła i dostępy - do hostingu, domeny, panelu WordPress i Google Search Console. Strona jest Twoja w 100%.</>,
-              icon: <RiKey2Line className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Przekazujemy wszystkie hasła i dostępy - do hostingu, domeny, panelu WordPress i
+                  Google Search Console. Strona jest Twoja w 100%.
+                </>
+              ),
+              icon: <RiKey2Line className='text-primary h-6 w-6' />,
             },
             {
               title: 'Wsparcie po realizacji',
-              description: <>Po uruchomieniu strony nie zostawiamy Cię samego. Odpowiadamy na pytania, doradzamy jak zwiększać widoczność i pomagamy przy kolejnych krokach.</>,
-              icon: <RiCustomerService2Line className="text-primary h-6 w-6" />,
+              description: (
+                <>
+                  Po uruchomieniu strony nie zostawiamy Cię samego. Odpowiadamy na pytania,
+                  doradzamy jak zwiększać widoczność i pomagamy przy kolejnych krokach.
+                </>
+              ),
+              icon: <RiCustomerService2Line className='text-primary h-6 w-6' />,
             },
           ]}
         />
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionTimeline
-          title="Jak wygląda współpraca przy tworzeniu strony internetowej w WordPress?"
+          title='Jak wygląda współpraca przy tworzeniu strony internetowej w WordPress?'
           items={[
             {
-              icon: <RiPencilRuler2Line className="h-6 w-6" />,
+              icon: <RiPencilRuler2Line className='h-6 w-6' />,
               title: 'Wycena i projekt',
-              description: 'Opisujesz swoją firmę i potrzeby. Przygotowujemy wycenę i projekt graficzny strony głównej w Figma. Dostajesz link do podglądu - możesz oglądać i komentować.',
+              description:
+                'Opisujesz swoją firmę i potrzeby. Przygotowujemy wycenę i projekt graficzny strony głównej w Figma. Dostajesz link do podglądu - możesz oglądać i komentować.',
             },
             {
-              icon: <RiCheckDoubleLine className="h-6 w-6" />,
+              icon: <RiCheckDoubleLine className='h-6 w-6' />,
               title: 'Akceptacja projektu',
-              description: 'Wspólnie omawiamy projekt. Wprowadzamy poprawki aż do pełnej akceptacji. Dopiero wtedy przechodzimy do budowania strony.',
+              description:
+                'Wspólnie omawiamy projekt. Wprowadzamy poprawki aż do pełnej akceptacji. Dopiero wtedy przechodzimy do budowania strony.',
             },
             {
-              icon: <RiLayoutLine className="h-6 w-6" />,
+              icon: <RiLayoutLine className='h-6 w-6' />,
               title: 'Wdrożenie strony',
-              description: 'Budujemy stronę w WordPress z Elementor Pro. Konfigurujemy formularze, optymalizujemy obrazy, wdrażamy SEO techniczne i testujemy na wszystkich urządzeniach.',
+              description:
+                'Budujemy stronę w WordPress z Elementor Pro. Konfigurujemy formularze, optymalizujemy obrazy, wdrażamy SEO techniczne i testujemy na wszystkich urządzeniach.',
             },
             {
-              icon: <RiMailSendLine className="h-6 w-6" />,
+              icon: <RiMailSendLine className='h-6 w-6' />,
               title: 'Faktura po odbiorze',
-              description: 'Prezentujemy gotową stronę. Faktura wystawiana jest od razu po zakończeniu prac. Masz 7 dni na płatność i 14 dni na zgłoszenie poprawek.',
+              description:
+                'Prezentujemy gotową stronę. Faktura wystawiana jest od razu po zakończeniu prac. Masz 7 dni na płatność i 14 dni na zgłoszenie poprawek.',
             },
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionBasic
-          variant="left"
-          imageSrc="/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-mockup-realizacji-arteon.webp"
-          imageAlt="Strona WordPress dla ośrodka psychoterapii Perły Mocy - mockup realizacji Arteon"
-          subtitle="Dla kogo tworzymy strony?"
-          title="Strony WordPress dla firm usługowych"
-          description="Specjalizujemy się w stronach dla małych i średnich firm usługowych. Kancelarie, gabinety, firmy budowlane, warsztaty - rozumiemy specyfikę tych branż."
+          variant='left'
+          imageSrc='/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-mockup-realizacji-arteon.webp'
+          imageAlt='Strona WordPress dla ośrodka psychoterapii Perły Mocy - mockup realizacji Arteon'
+          subtitle='Dla kogo tworzymy strony?'
+          title='Strony WordPress dla firm usługowych'
+          description='Specjalizujemy się w stronach dla małych i średnich firm usługowych. Kancelarie, gabinety, firmy budowlane, warsztaty - rozumiemy specyfikę tych branż.'
         >
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
+          <ul className='mt-4 list-disc space-y-2 pl-5 text-sm'>
             <li>
               <strong>Prezentacja oferty</strong> - jasny opis usług z cenami lub zakresem prac
             </li>
@@ -283,38 +366,41 @@ export default function TworzenieStronWordPressPage() {
           </ul>
         </SectionBasic>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionBasic
-          variant="right"
-          imageSrc="/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-wynik-optymalizacji-witryny-w-pagespeed-dla-urzadzen-mobilnych.webp"
-          imageAlt="Wynik optymalizacji strony WordPress w PageSpeed Insights - 98/100 dla mobile"
-          subtitle="Dlaczego wydajność ma znaczenie?"
-          title="Szybka strona oznacza więcej klientów z Google"
-          description="Google oficjalnie potwierdza, że szybkość strony wpływa na pozycję w wynikach wyszukiwania. Wolna strona traci klientów na dwa sposoby:"
+          variant='right'
+          imageSrc='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-wynik-optymalizacji-witryny-w-pagespeed-dla-urzadzen-mobilnych.webp'
+          imageAlt='Wynik optymalizacji strony WordPress w PageSpeed Insights - 98/100 dla mobile'
+          subtitle='Dlaczego wydajność ma znaczenie?'
+          title='Szybka strona oznacza więcej klientów z Google'
+          description='Google oficjalnie potwierdza, że szybkość strony wpływa na pozycję w wynikach wyszukiwania. Wolna strona traci klientów na dwa sposoby:'
         >
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
+          <ul className='mt-4 list-disc space-y-2 pl-5 text-sm'>
             <li>
-              <strong>Gorsza pozycja w Google</strong> - wyszukiwarka faworyzuje szybkie strony, szczególnie na telefonach
+              <strong>Gorsza pozycja w Google</strong> - wyszukiwarka faworyzuje szybkie strony,
+              szczególnie na telefonach
             </li>
             <li>
-              <strong>Porzucanie strony</strong> - użytkownicy zamykają kartę, jeśli strona ładuje się dłużej niż 3 sekundy
+              <strong>Porzucanie strony</strong> - użytkownicy zamykają kartę, jeśli strona ładuje
+              się dłużej niż 3 sekundy
             </li>
           </ul>
-          <p className="mt-4 text-sm">
-            Dlatego gwarantujemy wynik <strong>90+/100 w PageSpeed Insights</strong> dla każdej strony, którą tworzymy.
+          <p className='mt-4 text-sm'>
+            Dlatego gwarantujemy wynik <strong>90+/100 w PageSpeed Insights</strong> dla każdej
+            strony, którą tworzymy.
           </p>
         </SectionBasic>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <TestimonialsCarousel />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionPrices
-          id="pricing-web"
-          title="Ile kosztuje strona internetowa WordPress?"
+          id='pricing-web'
+          title='Ile kosztuje strona internetowa WordPress?'
           plans={
             [
               {
@@ -334,7 +420,7 @@ export default function TworzenieStronWordPressPage() {
                   'Wsparcie po realizacji',
                 ],
                 btnOne: 'Wyceń stronę firmową',
-                btnOneLink: '#kontakt',
+                btnOneHref: '#kontakt',
               },
               {
                 name: 'Strona rozbudowana',
@@ -353,7 +439,7 @@ export default function TworzenieStronWordPressPage() {
                   'Wsparcie po realizacji',
                 ],
                 btnOne: 'Wyceń stronę rozbudowaną',
-                btnOneLink: '#kontakt',
+                btnOneHref: '#kontakt',
               },
               {
                 name: 'Strona kompleksowa',
@@ -372,7 +458,7 @@ export default function TworzenieStronWordPressPage() {
                   'Wsparcie po realizacji',
                 ],
                 btnOne: 'Wyceń stronę kompleksową',
-                btnOneLink: '#kontakt',
+                btnOneHref: '#kontakt',
                 lastPlan: true,
               },
             ] as SectionPricesPlan[]
@@ -380,34 +466,38 @@ export default function TworzenieStronWordPressPage() {
           note={
             {
               text: (
-                <p className="text-light">
-                  <strong className="text-dark">Potrzebujesz 19+ podstron, bloga lub dedykowanych funkcji? </strong>
-                  Przygotujemy wycenę dopasowaną do skali projektu. Opisz swoje potrzeby w formularzu.
+                <p className='text-light'>
+                  <strong className='text-dark'>
+                    Potrzebujesz 19+ podstron, bloga lub dedykowanych funkcji?{' '}
+                  </strong>
+                  Przygotujemy wycenę dopasowaną do skali projektu. Opisz swoje potrzeby w
+                  formularzu.
                 </p>
               ),
               ctaLabel: 'Opisz swój projekt',
               ctaLink: '#kontakt',
             } as Note
           }
-          legalNote="Podane ceny są cenami końcowymi na fakturze. Wycena nie obejmuje kosztów domeny i hostingu (ok. 200-500 zł/rok)."
+          legalNote='Podane ceny są cenami końcowymi na fakturze. Wycena nie obejmuje kosztów domeny i hostingu (ok. 200-500 zł/rok).'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionBasic
-          variant="right"
-          imageSrc="/assets/projects/msc/moskup-strony-msc-psychotherapy.webp"
-          imageAlt="Realizacja strony internetowej WordPress - MSC mockup"
-          subtitle="Jak wygląda współpraca?"
-          title="Faktura po realizacji - bez zaliczek i ukrytych kosztów"
-          description="Wiemy, że zlecenie strony to decyzja finansowa. Dlatego płacisz dopiero wtedy, gdy strona jest gotowa i zaakceptowana."
+          variant='right'
+          imageSrc='/assets/projects/msc/moskup-strony-msc-psychotherapy.webp'
+          imageAlt='Realizacja strony internetowej WordPress - MSC mockup'
+          subtitle='Jak wygląda współpraca?'
+          title='Faktura po realizacji - bez zaliczek i ukrytych kosztów'
+          description='Wiemy, że zlecenie strony to decyzja finansowa. Dlatego płacisz dopiero wtedy, gdy strona jest gotowa i zaakceptowana.'
         >
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
+          <ul className='mt-4 list-disc space-y-2 pl-5 text-sm'>
             <li>
               <strong>Bez zaliczek</strong> - nie pobieramy płatności z góry
             </li>
             <li>
-              <strong>Faktura od razu po zakończeniu</strong> - wystawiamy ją w momencie prezentacji gotowej strony
+              <strong>Faktura od razu po zakończeniu</strong> - wystawiamy ją w momencie prezentacji
+              gotowej strony
             </li>
             <li>
               <strong>7 dni na płatność</strong> - termin płatności od daty wystawienia faktury
@@ -416,28 +506,39 @@ export default function TworzenieStronWordPressPage() {
               <strong>14 dni na poprawki</strong> - od momentu prezentacji gotowej strony
             </li>
             <li>
-              <strong>Zero opłat za utrzymanie</strong> - płacisz tylko za domenę i hosting (ok. 200-500 zł/rok)
+              <strong>Zero opłat za utrzymanie</strong> - płacisz tylko za domenę i hosting (ok.
+              200-500 zł/rok)
             </li>
           </ul>
         </SectionBasic>
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <SectionInfo title="Dodatkowe funkcje strony internetowej WordPress" subtitle="Wyceniane indywidualnie">
-          <p>Każdą stronę można rozbudować o dodatkowe funkcje. Wyceniamy je osobno, w zależności od złożoności:</p>
+        <SectionInfo
+          title='Dodatkowe funkcje strony internetowej WordPress'
+          subtitle='Wyceniane indywidualnie'
+        >
+          <p>
+            Każdą stronę można rozbudować o dodatkowe funkcje. Wyceniamy je osobno, w zależności od
+            złożoności:
+          </p>
           <br />
-          <ul className="ml-5 list-disc space-y-2">
+          <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Blog firmowy</strong> - artykuły, które wspierają widoczność w Google i budują pozycję eksperta
+              <strong>Blog firmowy</strong> - artykuły, które wspierają widoczność w Google i budują
+              pozycję eksperta
             </li>
             <li>
-              <strong>Kalkulatory i wyceny online</strong> - interaktywne narzędzia do szacowania kosztów usług
+              <strong>Kalkulatory i wyceny online</strong> - interaktywne narzędzia do szacowania
+              kosztów usług
             </li>
             <li>
-              <strong>System rezerwacji</strong> - umawianie wizyt, konsultacji lub spotkań przez stronę
+              <strong>System rezerwacji</strong> - umawianie wizyt, konsultacji lub spotkań przez
+              stronę
             </li>
             <li>
-              <strong>Newsletter</strong> - zbieranie adresów e-mail i integracja z Mailchimp lub GetResponse
+              <strong>Newsletter</strong> - zbieranie adresów e-mail i integracja z Mailchimp lub
+              GetResponse
             </li>
             <li>
               <strong>Wielojęzyczność</strong> - strona w kilku wersjach językowych z przełącznikiem
@@ -448,30 +549,30 @@ export default function TworzenieStronWordPressPage() {
           </ul>
         </SectionInfo>
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionContactForm
-          title="Sprawdź koszt realizacji strony WordPress"
-          description="Napisz co chciałbyś/aś umieścić na swojej stronie, czy potrzebujesz pomocy z tworzeniem treści oraz czy posiadasz materiały graficzne (logo oraz zdjęcia) i otrzymaj darmową wycenę realizacji."
-          imageSrc="/assets/projects/arteon-baners-camper-albania-mockup.webp"
-          imageAlt="Realizacja strony internetowej WordPress - Camper Albania mockup"
-          defaultSubject="Strona internetowa WordPress"
-          messagePlaceholder="Opisz swoją firmę, branżę i cele strony. Im więcej szczegółów, tym dokładniejsza wycena."
+          title='Sprawdź koszt realizacji strony WordPress'
+          description='Napisz co chciałbyś/aś umieścić na swojej stronie, czy potrzebujesz pomocy z tworzeniem treści oraz czy posiadasz materiały graficzne (logo oraz zdjęcia) i otrzymaj darmową wycenę realizacji.'
+          imageSrc='/assets/projects/arteon-baners-camper-albania-mockup.webp'
+          imageAlt='Realizacja strony internetowej WordPress - Camper Albania mockup'
+          defaultSubject='Strona internetowa WordPress'
+          messagePlaceholder='Opisz swoją firmę, branżę i cele strony. Im więcej szczegółów, tym dokładniejsza wycena.'
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/tworzenie-stron-wordpress"
-          title="Najczęstsze pytania dotyczące stworzenia strony internetowej WordPress"
+          defaultOpenIndex={1}
+          pageUrl='https://www.arteonagency.pl/uslugi/tworzenie-stron-wordpress'
+          title='Najczęstsze pytania dotyczące stworzenia strony internetowej WordPress'
           items={FAQ_ITEMS}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
         <SectionBento
-          title="Poznaj inne usługi"
+          title='Poznaj inne usługi'
           items={[
             {
               title: 'Sklepy internetowe',
@@ -504,20 +605,24 @@ export default function TworzenieStronWordPressPage() {
           ]}
         />
 
-        <Gap variant="line" />
+        <Divider line />
 
-        <ArticlesCarousel title="Przydatne artykuły dotyczące stron internetowych" categorySlug="strony" articles={getArticlePreviewsByCategory('strony', 6)} />
+        <ArticlesCarousel
+          title='Przydatne artykuły dotyczące stron internetowych'
+          categorySlug='strony'
+          articles={getArticlePreviewsByCategory('strony', 6)}
+        />
 
-        <Gap size="sm" />
+        <Divider size='sm' />
       </Wrapper>
 
       <CTABanner
-        title="Strona internetowa WordPress, która pomaga pozyskiwać klientów"
-        description="Otrzymujesz stronę zoptymalizowaną pod Google z gwarancją wydajności 90+/100 dla telefonów. Płacisz dopiero po zakończeniu prac."
-        btnOne="Wyceń swoją stronę"
-        btnOneLink="#kontakt"
-        backgroundImage="/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp"
-        overlay="black"
+        title='Strona internetowa WordPress, która pomaga pozyskiwać klientów'
+        description='Otrzymujesz stronę zoptymalizowaną pod Google z gwarancją wydajności 90+/100 dla telefonów. Płacisz dopiero po zakończeniu prac.'
+        btnOne='Wyceń swoją stronę'
+        btnOneHref='#kontakt'
+        backgroundImage='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp'
+        overlay='black'
       />
 
       <ServiceSchema />

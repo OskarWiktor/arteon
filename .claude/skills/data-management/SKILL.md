@@ -90,9 +90,9 @@ interface ToolPageData {
     title: string;
     description: string;
     btnOne: string;
-    btnOneLink: string;
+    btnOneHref: string;
     btnTwo?: string;
-    btnTwoLink?: string;
+    btnTwoHref?: string;
   };
 }
 ```

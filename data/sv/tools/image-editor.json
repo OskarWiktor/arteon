@@ -8,7 +8,7 @@
     "path": "/sv/verktyg/bildredigerare"
   },
   "hero": {
-    "title": "Ändra storlek, beskär och konvertera bilder online – gratis",
+    "title": "Ändra storlek, beskär och konvertera bilder – gratis",
     "description": "Ladda upp en bild, välj ett färdigt format för sociala medier eller ange egna mått och ladda ner den färdiga beskurna bilden.",
     "backgroundImage": "/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
   },
@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Bildredigerare – beskärning, storleksändring och konvertering",
-      "alternateName": ["Bildbeskärningsverktyg", "Storleksändring av bilder för sociala medier", "Bildredigerare för Instagram och Facebook"],
+      "alternateName": [
+        "Bildbeskärningsverktyg",
+        "Storleksändring av bilder för sociala medier",
+        "Bildredigerare för Instagram och Facebook"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
       "description": "Gratis bildredigerare för storleksändring, beskärning och formatkonvertering. Färdiga format för Instagram, Facebook och LinkedIn. Runda avatarer. Export till JPG, PNG och WebP med kvalitetskontroll. Lokal bearbetning i webbläsaren.",
@@ -336,7 +340,7 @@
       "description": "Har du en idé för en ny funktion, hittat en bugg eller vill föreslå ett annat verktyg som skulle göra ditt arbete enklare? Skriv till oss – vi svarar inom 24 timmar.",
       "imageSrc": "/assets/tools/free-image-editor-crop-resize-and-convert/bildredigerare-sv.webp",
       "imageAlt": "Online bildredigerare – Arteon",
-      "defaultSubject": "Feedback: Online bildredigerare"
+      "defaultSubject": "Feedback: bildredigerare"
     },
     {
       "type": "gap",

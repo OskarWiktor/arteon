@@ -29,7 +29,12 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Converta centímetros para pixels em qualquer resolução DPI. Para design de impressão.",
-      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+      "featureList": [
+        "Conversão bidirecional em tempo real",
+        "Todos os conversores num só lugar",
+        "Copiar resultado para a área de transferência",
+        "Cálculo local no navegador"
+      ]
     },
     "howTo": {
       "name": "Como usar o conversor",
@@ -174,55 +179,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "Resoluções DPI comparadas",
-      "featureLabel": "Característica",
-      "plans": [
+      "labelHeader": "Característica",
+      "cols": ["300 DPI (impressão)", "72 DPI (tela)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "300 DPI (impressão)"
+          "label": "10 cm",
+          "values": ["1.181 px", "283 px"]
         },
         {
-          "id": "unit2",
-          "name": "72 DPI (tela)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "10 cm",
-          "values": {
-            "unit1": "1.181 px",
-            "unit2": "283 px"
-          }
+          "label": "A4 largura (21 cm)",
+          "values": ["2.480 px", "595 px"]
         },
         {
-          "name": "A4 largura (21 cm)",
-          "values": {
-            "unit1": "2.480 px",
-            "unit2": "595 px"
-          }
+          "label": "A4 altura (29,7 cm)",
+          "values": ["3.508 px", "842 px"]
         },
         {
-          "name": "A4 altura (29,7 cm)",
-          "values": {
-            "unit1": "3.508 px",
-            "unit2": "842 px"
-          }
+          "label": "Aplicação",
+          "values": ["Impressão profissional", "Gráficos web"]
         },
         {
-          "name": "Aplicação",
-          "values": {
-            "unit1": "Impressão profissional",
-            "unit2": "Gráficos web"
-          }
-        },
-        {
-          "name": "Qualidade",
-          "values": {
-            "unit1": "Nítida em qualquer tamanho",
-            "unit2": "Apenas para tela"
-          }
+          "label": "Qualidade",
+          "values": ["Nítida em qualquer tamanho", "Apenas para tela"]
         }
       ]
     },

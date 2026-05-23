@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Zakódujte obrázky do formátu Base64. Zkopírujte hotový kód pro CSS nebo HTML. Zdarma.",
-      "featureList": ["obrázek to Base64 conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert obrázek to Base64", "obrázek to Base64", "Free obrázek to Base64 converter"]
+      "featureList": [
+        "obrázek to Base64 conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert obrázek to Base64",
+        "obrázek to Base64",
+        "Free obrázek to Base64 converter"
+      ]
     },
     "howTo": {
       "name": "Jak převést obrázek na Base64",
@@ -61,7 +69,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět obrázek na Base64?",
-      "html": "<p class=\"text-mid mb-4\">IMAGE je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na BASE64 prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase IMAGE soubory do formatu BASE64 primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">IMAGE je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na BASE64 prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny konvertor prevadi vase IMAGE soubory do formatu BASE64 primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "obrázek to Base64 conversion",
       "variant": "right"

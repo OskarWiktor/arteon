@@ -14,12 +14,12 @@ export function useTimeout() {
   };
 
   const start = (callback: () => void, delayMs: number) => {
-      clear();
-      timerRef.current = window.setTimeout(() => {
-        timerRef.current = null;
-        callback();
-      }, delayMs);
-    };
+    clear();
+    timerRef.current = window.setTimeout(() => {
+      timerRef.current = null;
+      callback();
+    }, delayMs);
+  };
 
   useEffect(() => clear, [clear]);
 

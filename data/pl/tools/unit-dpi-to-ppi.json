@@ -185,55 +185,30 @@
       "variant": "line"
     },
     {
-      "type": "sectionFeatureComparison",
+      "type": "sectionTable",
       "title": "DPI (Dots Per Inch) vs PPI (Pixels Per Inch) – porównanie",
-      "featureLabel": "Cecha",
-      "plans": [
+      "labelHeader": "Cecha",
+      "cols": ["DPI (Dots Per Inch)", "PPI (Pixels Per Inch)"],
+      "rows": [
         {
-          "id": "unit1",
-          "name": "DPI (Dots Per Inch)"
+          "label": "Dotyczy",
+          "values": ["Druku", "Ekranów"]
         },
         {
-          "id": "unit2",
-          "name": "PPI (Pixels Per Inch)",
-          "highlighted": true
-        }
-      ],
-      "features": [
-        {
-          "name": "Dotyczy",
-          "values": {
-            "unit1": "Druku",
-            "unit2": "Ekranów"
-          }
+          "label": "Fizyczne elementy",
+          "values": ["Kropki tuszu", "Piksele wyświetlacza"]
         },
         {
-          "name": "Fizyczne elementy",
-          "values": {
-            "unit1": "Kropki tuszu",
-            "unit2": "Piksele wyświetlacza"
-          }
+          "label": "Typowa wartość",
+          "values": ["150–300 (druk)", "72–460 (ekrany)"]
         },
         {
-          "name": "Typowa wartość",
-          "values": {
-            "unit1": "150–300 (druk)",
-            "unit2": "72–460 (ekrany)"
-          }
+          "label": "Standard web",
+          "values": ["72 (eksport)", "96 (CSS/Windows)"]
         },
         {
-          "name": "Standard web",
-          "values": {
-            "unit1": "72 (eksport)",
-            "unit2": "96 (CSS/Windows)"
-          }
-        },
-        {
-          "name": "Wartość numeryczna",
-          "values": {
-            "unit1": "Taka sama",
-            "unit2": "Taka sama"
-          }
+          "label": "Wartość numeryczna",
+          "values": ["Taka sama", "Taka sama"]
         }
       ]
     },
