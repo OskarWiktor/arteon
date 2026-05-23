@@ -1,6 +1,5 @@
 ﻿import HeroBanner from '@/components/organisms/HeroBanner';
 import CTABanner from '@/components/organisms/CTABanner';
-import Button from '@/components/atoms/buttons/Button';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
