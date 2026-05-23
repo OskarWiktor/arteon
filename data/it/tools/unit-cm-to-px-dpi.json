@@ -2,14 +2,14 @@
   "toolKey": "cmToPxDpi",
   "locale": "it",
   "metadata": {
-    "title": "Convertitore cm in pixel (DPI)",
-    "description": "Converti centimetri in pixel a qualsiasi risoluzione DPI. Per design di stampa e preparazione immagini.",
+    "title": "Calcolatore cm in px (DPI) – converti centimetri in pixel",
+    "description": "Converti centimetri in pixel con DPI regolabile. Lo strumento ideale per grafici, fotografi e designer che preparano materiali per la stampa o per lo schermo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-cm-in-px"
   },
   "hero": {
-    "title": "Convertire cm in pixel",
-    "description": "Questo convertitore converte istantaneamente. Inserisci un valore e il risultato appare subito.",
+    "title": "Converti centimetri in pixel con qualsiasi DPI",
+    "description": "Inserisci un valore in centimetri, imposta la risoluzione DPI e leggi il risultato in pixel. Verifica quanti pixel corrispondono a un determinato valore in centimetri. Il convertitore ti aiuta a scegliere le dimensioni giuste quando progetti grafiche per la stampa, per lo schermo o per i social media.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
@@ -24,34 +24,56 @@
   },
   "schemas": {
     "software": {
-      "name": "Convertitore cm in pixel (DPI)",
-      "alternateName": ["Convertire cm in pixel"],
+      "name": "Convertitore da centimetri a pixel con DPI regolabile – convertitore cm in px",
+      "alternateName": [
+        "convertitore cm in px",
+        "calcolatore cm in pixel",
+        "convertitore centimetri in pixel",
+        "centimetri in pixel",
+        "cm in pixel",
+        "convertire cm in px",
+        "calcolatrice centimetri pixel",
+        "cm in px 300 dpi",
+        "conversione cm in px",
+        "convertitore cm in pixel",
+        "pixel per centimetro",
+        "calcolatore dpi per stampa",
+        "convertitore di centimetri in pixel",
+        "cm in px online",
+        "dimensione immagine cm in px"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Converti centimetri in pixel a qualsiasi risoluzione DPI. Per design di stampa e preparazione immagini.",
+      "description": "Convertitore da centimetri a pixel con un valore DPI regolabile. Appena inserisci una dimensione, vedi esattamente quanti pixel corrispondono a un determinato valore in centimetri. Il convertitore si rivela utile fra le altre cose per preparare file per la stampa e funziona nel browser senza registrazione.",
       "featureList": [
-        "Conversione bidirezionale in tempo reale",
-        "Tutti i convertitori in un unico posto",
-        "Copia il risultato negli appunti",
-        "Calcolo locale nel browser"
+        "Risoluzione DPI regolabile",
+        "La conversione funziona in entrambe le direzioni, così converti sia centimetri in pixel sia pixel in centimetri",
+        "Il risultato appare subito mentre digiti, senza bisogno di premere alcun pulsante",
+        "Il risultato finale lo puoi copiare negli appunti con un solo clic",
+        "Le tabelle di formati pronte all'uso comprendono carta A0–A7, foto 9×13, 10×15 e 13×18 e biglietti da visita a 300 DPI",
+        "La tabella inversa mostra quanti centimetri corrispondono a 100, 500, 1.500 o 2.480 pixel",
+        "Una sezione con guide spiega come impostare cm in px in Photoshop, Illustrator, Figma, Canva e Procreate",
+        "Tutti i calcoli avvengono localmente nel tuo browser, i dati non lasciano il tuo dispositivo e non vengono memorizzati da nessuna parte",
+        "La formula esatta di conversione è px = cm × DPI ÷ 2,54 e utilizza la lunghezza fissa del pollice pari a 2,54 cm",
+        "Lo strumento funziona su telefono, tablet e computer senza installazione"
       ]
     },
     "howTo": {
-      "name": "Come usare il convertitore",
-      "description": "Guida rapida per usare il convertitore.",
+      "name": "Come convertire centimetri in pixel?",
+      "description": "Una breve guida all'uso del convertitore cm in px con DPI regolabile.",
       "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Inserire un valore",
-          "text": "Digita un numero nel campo di input a sinistra."
+          "name": "Inserisci il valore in centimetri",
+          "text": "Nel campo a sinistra inserisci il numero di centimetri che vuoi convertire in pixel."
         },
         {
-          "name": "Leggere il risultato",
-          "text": "Il risultato della conversione appare istantaneamente nel campo accanto."
+          "name": "Imposta la risoluzione DPI",
+          "text": "Scegli il valore DPI. Per gli schermi si usano di solito 96 DPI e per la stampa 300 DPI."
         },
         {
-          "name": "Copiare o invertire",
-          "text": "Clicca su Copia risultato o su Inverti per convertire nella direzione opposta."
+          "name": "Leggi il risultato o inverti la direzione",
+          "text": "Il risultato in pixel appare subito nel campo accanto. Puoi copiarlo oppure premere il pulsante Cambia ordine per convertire i pixel in centimetri."
         }
       ]
     }
@@ -63,116 +85,19 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Quando serve convertire cm in pixel?",
-      "html": "<p class=\"text-mid mb-4\">Nel design di stampa le misure sono in centimetri, ma le immagini digitali in pixel. La conversione dipende dalla risoluzione DPI: Pixel = cm × DPI / 2,54.</p><p class=\"text-mid mb-4\">Risoluzione stampa standard 300 DPI: 10 cm = 1.181 pixel, larghezza A4 (21 cm) = 2.480 pixel.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "Convertitore cm in pixel (DPI) – Arteon"
+      "title": "Perché convertire i centimetri in pixel?",
+      "html": "<p class=\"text-mid mb-4\">Il centimetro è un'unità fisica che regna nel mondo della stampa. Il pixel invece descrive un singolo punto sullo schermo di un telefono, di un tablet o di un portatile. Per convertire l'uno nell'altro devi conoscere la risoluzione DPI, cioè il numero di pixel che entrano in un pollice di schermo.</p><p class=\"text-mid mb-4\">Una conversione del genere la fanno soprattutto i grafici che preparano file per una tipografia, i fotografi che verificano se una foto è abbastanza grande per un determinato formato di stampa, oppure i designer che lavorano su banner, grafiche per i social media o elementi di una pagina web. Il convertitore ti libera dal calcolo a mano e dall'imparare a memoria la formula.</p><p class=\"text-mid\">Più avanti nella pagina trovi tabelle di conversione in entrambe le direzioni, dimensioni pronte per i formati più popolari (dal foglio A4, passando per foto da 10×15 cm, fino alla foto tessera) e brevi guide su come convertire centimetri in pixel in Photoshop, Figma, Canva e altri strumenti di design.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Convertitore gratuito di centimetri in pixel – Arteon"
     },
     {
       "type": "gap",
       "size": "xs"
     },
     {
-      "type": "sectionSteps",
-      "title": "Come usare il convertitore?",
-      "grid": "three",
-      "items": [
-        {
-          "title": "1. Inserisci un valore",
-          "description": "Digita un numero nel campo di inserimento.",
-          "icon": "RiInputMethodLine"
-        },
-        {
-          "title": "2. Leggi il risultato",
-          "description": "Il risultato appare istantaneamente.",
-          "icon": "RiLoopLeftLine"
-        },
-        {
-          "title": "3. Copia o inverti",
-          "description": "Copia il risultato o inverti la direzione di conversione.",
-          "icon": "RiClipboardLine"
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Quando è utile questo convertitore?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiPrinterLine",
-          "title": "Design di stampa",
-          "description": "Prepara immagini a 300 DPI. A4 a 300 DPI = 2.480 × 3.508 px."
-        },
-        {
-          "icon": "RiImageLine",
-          "title": "Grande formato",
-          "description": "Banner e poster: 150 DPI. Banner di 100 cm = 5.906 px."
-        },
-        {
-          "icon": "RiArtboardLine",
-          "title": "Grafica web",
-          "description": "Risoluzione schermo 72–96 DPI."
-        },
-        {
-          "icon": "RiLayoutLine",
-          "title": "Fotografia",
-          "description": "Verifica se la risoluzione della fotocamera è sufficiente per una dimensione di stampa."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Cosa rende diverso questo convertitore?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiShieldCheckLine",
-          "title": "Privacy totale",
-          "description": "Tutti i calcoli vengono eseguiti localmente nel tuo browser."
-        },
-        {
-          "icon": "RiTimeLine",
-          "title": "Risultati in tempo reale",
-          "description": "Il risultato si aggiorna mentre digiti."
-        },
-        {
-          "icon": "RiArrowLeftRightLine",
-          "title": "Conversione bidirezionale",
-          "description": "Converti in entrambe le direzioni con un clic."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Tabella di riferimento",
-          "description": "Tabella con valori comuni e descrizioni contestuali."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionInfo",
-      "title": "Come funziona la conversione?",
-      "html": "<p class=\"text-mid mb-4\">Formula: Pixel = cm × DPI / 2,54. A 300 DPI: 1 cm = 118,11 pixel.</p><p class=\"text-mid\">Più DPI = più pixel per cm = stampa più nitida. 300 DPI è lo standard professionale.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Come funziona la conversione?",
-      "html": "<p class=\"text-mid mb-4\">Formula: Pixel = cm × DPI / 2,54. A 300 DPI: 1 cm = 118,11 pixel.</p><p class=\"text-mid\">Più DPI = più pixel per cm = stampa più nitida. 300 DPI è lo standard professionale.</p>"
+      "title": "Come funziona la conversione cm in px? Formula ed esempio",
+      "html": "<p class=\"text-mid mb-4\">Tutta la conversione si riduce a una sola formula che si basa sul rapporto fisso tra pollice e centimetro: un pollice equivale esattamente a 2,54 cm. Basta quindi moltiplicare il numero di centimetri per la risoluzione DPI scelta e dividere il risultato per 2,54.</p><p class=\"text-mid mb-4\">La formula completa è la seguente: <strong>numero di pixel = numero di centimetri × DPI ÷ 2,54</strong>. Il convertitore esegue questa operazione in modo esatto e istantaneo.</p><p class=\"text-mid mb-4\">Esempio: vuoi sapere quanti pixel sono 7,5 cm alla risoluzione di stampa di 300 DPI. Sostituisci i valori nella formula e ottieni 7,5 × 300 ÷ 2,54, che dà circa 886 pixel. A 96 DPI la stessa lunghezza dà invece solo 284 pixel.</p><p class=\"text-mid\">Nella direzione opposta funziona allo stesso modo: numero di centimetri = numero di pixel × 2,54 ÷ DPI. Grazie a questo puoi verificare quanto sarà grande sulla carta un file largo 1.500 px oppure se la foto della tua fotocamera è sufficiente per un determinato formato di stampa.</p>"
     },
     {
       "type": "gap",
@@ -180,30 +105,200 @@
     },
     {
       "type": "sectionTable",
-      "title": "Risoluzioni DPI a confronto",
-      "labelHeader": "Caratteristica",
-      "cols": ["300 DPI (stampa)", "72 DPI (schermo)"],
+      "title": "Quanti pixel danno diversi valori in centimetri a diversi valori DPI?",
+      "description": "La tabella qui sotto mostra come le stesse dimensioni in centimetri si convertono in pixel alle cinque risoluzioni più usate. I valori sono stati arrotondati al numero intero più vicino, quindi possono differire leggermente dal risultato del nostro convertitore, che mostra il numero esatto di pixel con la virgola.",
+      "labelHeader": "Dimensione",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
       "rows": [
+        { "label": "0,5 cm", "values": ["14 px", "19 px", "30 px", "59 px", "118 px"] },
+        { "label": "1 cm", "values": ["28 px", "38 px", "59 px", "118 px", "236 px"], "emphasis": true },
+        { "label": "1,5 cm", "values": ["43 px", "57 px", "89 px", "177 px", "354 px"] },
+        { "label": "2 cm", "values": ["57 px", "76 px", "118 px", "236 px", "472 px"] },
+        { "label": "2,5 cm", "values": ["71 px", "94 px", "148 px", "295 px", "591 px"] },
+        { "label": "3 cm", "values": ["85 px", "113 px", "177 px", "354 px", "709 px"] },
+        { "label": "3,5 cm", "values": ["99 px", "132 px", "207 px", "413 px", "827 px"] },
+        { "label": "4 cm", "values": ["113 px", "151 px", "236 px", "472 px", "945 px"] },
+        { "label": "4,5 cm", "values": ["128 px", "170 px", "266 px", "531 px", "1.063 px"] },
+        { "label": "5 cm", "values": ["142 px", "189 px", "295 px", "591 px", "1.181 px"], "emphasis": true },
+        { "label": "6 cm", "values": ["170 px", "227 px", "354 px", "709 px", "1.417 px"] },
+        { "label": "7 cm", "values": ["198 px", "264 px", "413 px", "827 px", "1.654 px"] },
+        { "label": "8 cm", "values": ["227 px", "302 px", "472 px", "945 px", "1.890 px"] },
+        { "label": "9 cm", "values": ["255 px", "340 px", "531 px", "1.063 px", "2.126 px"] },
+        { "label": "10 cm", "values": ["283 px", "378 px", "591 px", "1.181 px", "2.362 px"], "emphasis": true },
+        { "label": "12 cm", "values": ["340 px", "454 px", "709 px", "1.417 px", "2.835 px"] },
+        { "label": "15 cm", "values": ["425 px", "567 px", "886 px", "1.772 px", "3.543 px"] },
+        { "label": "20 cm", "values": ["567 px", "756 px", "1.181 px", "2.362 px", "4.724 px"], "emphasis": true },
+        { "label": "25 cm", "values": ["709 px", "945 px", "1.476 px", "2.953 px", "5.906 px"] },
+        { "label": "30 cm", "values": ["850 px", "1.134 px", "1.772 px", "3.543 px", "7.087 px"] },
+        { "label": "50 cm", "values": ["1.417 px", "1.890 px", "2.953 px", "5.906 px", "11.811 px"] },
+        { "label": "100 cm", "values": ["2.835 px", "3.780 px", "5.906 px", "11.811 px", "23.622 px"] }
+      ],
+      "caption": "Tutti i valori sono stati arrotondati al numero intero più vicino secondo la formula px = cm × DPI ÷ 2,54."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Quanti centimetri danno diversi valori in pixel a diversi valori DPI?",
+      "description": "A volte partiamo da un numero di pixel e abbiamo bisogno di sapere a quanti centimetri corrisponde. La tabella qui sotto mostra questa conversione per le quattro risoluzioni più usate.",
+      "labelHeader": "Pixel",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
+      "rows": [
+        { "label": "100 px", "values": ["3,53 cm", "2,65 cm", "1,69 cm", "0,85 cm"] },
+        { "label": "200 px", "values": ["7,06 cm", "5,29 cm", "3,39 cm", "1,69 cm"] },
+        { "label": "300 px", "values": ["10,58 cm", "7,94 cm", "5,08 cm", "2,54 cm"], "emphasis": true },
+        { "label": "500 px", "values": ["17,64 cm", "13,23 cm", "8,47 cm", "4,23 cm"] },
+        { "label": "600 px", "values": ["21,17 cm", "15,88 cm", "10,16 cm", "5,08 cm"] },
+        { "label": "800 px", "values": ["28,22 cm", "21,17 cm", "13,55 cm", "6,77 cm"] },
+        { "label": "1.000 px", "values": ["35,28 cm", "26,46 cm", "16,93 cm", "8,47 cm"], "emphasis": true },
+        { "label": "1.200 px", "values": ["42,33 cm", "31,75 cm", "20,32 cm", "10,16 cm"] },
+        { "label": "1.500 px", "values": ["52,92 cm", "39,69 cm", "25,40 cm", "12,70 cm"] },
+        { "label": "1.920 px", "values": ["67,73 cm", "50,80 cm", "32,51 cm", "16,26 cm"] },
+        { "label": "2.480 px", "values": ["87,47 cm", "65,62 cm", "42,00 cm", "21,00 cm (A4)"], "emphasis": true },
+        { "label": "3.508 px", "values": ["123,73 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)"] }
+      ],
+      "caption": "Gli ultimi due valori – 2.480 e 3.508 pixel – corrispondono alla larghezza e all'altezza esatte di un foglio A4 alla risoluzione di 300 DPI."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "I formati fisici più popolari e le loro dimensioni in pixel",
+      "description": "Se invece di centimetri singoli ti servono le dimensioni di un formato finito (per esempio un foglio A4, una foto da 10×15 cm oppure una foto tessera), la tabella qui sotto riporta i valori alle due risoluzioni più usate. Le dimensioni sono indicate sempre in formato larghezza × altezza in verticale.",
+      "labelHeader": "Formato",
+      "cols": ["Larg. × alt. (cm)", "Larg. × alt. (150 DPI)", "Larg. × alt. (300 DPI)"],
+      "rows": [
+        { "groupLabel": "Carta ISO serie A" },
+        { "label": "A0", "values": ["84,1 × 118,9", "4.967 × 7.022", "9.933 × 14.043"] },
+        { "label": "A1", "values": ["59,4 × 84,1", "3.508 × 4.967", "7.016 × 9.933"] },
+        { "label": "A2", "values": ["42,0 × 59,4", "2.480 × 3.508", "4.961 × 7.016"] },
+        { "label": "A3", "values": ["29,7 × 42,0", "1.754 × 2.480", "3.508 × 4.961"] },
+        { "label": "A4", "values": ["21,0 × 29,7", "1.240 × 1.754", "2.480 × 3.508"], "emphasis": true },
+        { "label": "A5", "values": ["14,8 × 21,0", "874 × 1.240", "1.748 × 2.480"] },
+        { "label": "A6", "values": ["10,5 × 14,8", "620 × 874", "1.240 × 1.748"] },
+        { "label": "A7", "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"] },
+        { "groupLabel": "Formati carta USA" },
+        { "label": "Letter (8,5 × 11 in)", "values": ["21,59 × 27,94", "1.275 × 1.650", "2.550 × 3.300"] },
+        { "label": "Legal (8,5 × 14 in)", "values": ["21,59 × 35,56", "1.275 × 2.100", "2.550 × 4.200"] },
+        { "label": "Tabloid (11 × 17 in)", "values": ["27,94 × 43,18", "1.650 × 2.550", "3.300 × 5.100"] },
+        { "groupLabel": "Stampe fotografiche" },
+        { "label": "Foto 4 × 6 in", "values": ["10,16 × 15,24", "600 × 900", "1.200 × 1.800"] },
+        { "label": "Foto 5 × 7 in", "values": ["12,70 × 17,78", "750 × 1.050", "1.500 × 2.100"] },
+        { "label": "Foto 8 × 10 in", "values": ["20,32 × 25,40", "1.200 × 1.500", "2.400 × 3.000"] },
+        { "label": "Foto 11 × 14 in", "values": ["27,94 × 35,56", "1.650 × 2.100", "3.300 × 4.200"] },
+        { "label": "Foto 16 × 20 in", "values": ["40,64 × 50,80", "2.400 × 3.000", "4.800 × 6.000"] },
+        { "label": "Foto 10 × 15 cm", "values": ["10 × 15", "591 × 886", "1.181 × 1.772"], "emphasis": true },
+        { "label": "Foto 13 × 18 cm", "values": ["13 × 18", "768 × 1.063", "1.535 × 2.126"] },
+        { "label": "Foto 20 × 30 cm", "values": ["20 × 30", "1.181 × 1.772", "2.362 × 3.543"] },
+        { "groupLabel": "Foto per documenti e passaporto" },
+        { "label": "Passaporto ICAO / UE (35 × 45 mm)", "values": ["3,5 × 4,5", "207 × 266", "413 × 531"], "emphasis": true },
+        { "label": "Passaporto USA (2 × 2 in)", "values": ["5,08 × 5,08", "300 × 300", "600 × 600"] },
+        { "groupLabel": "Biglietti da visita" },
+        { "label": "Europeo ISO (85 × 55 mm)", "values": ["8,5 × 5,5", "502 × 325", "1.004 × 650"], "emphasis": true },
+        { "label": "USA (3,5 × 2 in)", "values": ["8,89 × 5,08", "525 × 300", "1.050 × 600"] },
+        { "label": "Giapponese (91 × 55 mm)", "values": ["9,1 × 5,5", "538 × 325", "1.075 × 650"] },
+        { "groupLabel": "Pubblicità di grande formato" },
+        { "label": "Roll-up (85 × 200 cm)", "values": ["85 × 200", "5.020 × 11.811", "10.039 × 23.622"] }
+      ],
+      "caption": "Per cartelloni e altre grafiche di grande formato in pratica bastano 30–72 DPI, perché si guardano da grande distanza."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come convertire centimetri in pixel nei programmi più popolari?",
+      "inlineIcon": true,
+      "grid": "one",
+      "items": [
         {
-          "label": "10 cm",
-          "values": ["1.181 px", "283 px"]
+          "title": "Photoshop",
+          "icon": "RiImageEditLine",
+          "description": "In Adobe Photoshop le dimensioni della tela si impostano nella finestra <strong>Immagine &rsaquo; Dimensione immagine</strong> (Image &rsaquo; Image Size). Dall'elenco a tendina delle unità scegli Centimetri, inserisci la dimensione fisica e il DPI desiderato nel campo Risoluzione, e Photoshop converte il valore in pixel in modo automatico. Se vuoi che il cambio di unità non influisca sul numero di pixel del file stesso, deseleziona l'opzione Ricampionamento (Resample) – così modifichi solo la dimensione fisica mentre i pixel restano intatti."
         },
         {
-          "label": "A4 larghezza (21 cm)",
-          "values": ["2.480 px", "595 px"]
+          "title": "Illustrator",
+          "icon": "RiPencilLine",
+          "description": "Adobe Illustrator lavora di default nell'unità che hai scelto al momento della creazione del documento. Puoi cambiarla in <strong>Modifica &rsaquo; Preferenze &rsaquo; Unità</strong> – scegli Pixel per progetti per schermo o Centimetri per materiali di stampa. Il risultato in pixel dipende dalla risoluzione della tavola da disegno impostata all'inizio del progetto. Se lavori su un volantino in cm ma il cliente chiede il file in px, la cosa più semplice è copiare la dimensione dal nostro convertitore e incollarla nel pannello Trasforma."
         },
         {
-          "label": "A4 altezza (29,7 cm)",
-          "values": ["3.508 px", "842 px"]
+          "title": "Figma",
+          "icon": "RiLayoutGridLine",
+          "description": "Figma lavora esclusivamente con i pixel e assume un valore fisso di 96 DPI. Questo significa che, se vuoi progettare al suo interno qualcosa che poi verrà stampato in centimetri, devi prima convertire la dimensione fisica in pixel alla risoluzione desiderata. Ad esempio: un volantino di 10 × 15 cm a 300 DPI equivale a un frame di 1.181 × 1.772 px – inserisci questo valore alla creazione del nuovo frame e all'esportazione imposta la scala 1×, in modo che le dimensioni restino fedeli all'originale."
         },
         {
-          "label": "Applicazione",
-          "values": ["Stampa professionale", "Grafica web"]
+          "title": "Canva",
+          "icon": "RiPaletteLine",
+          "description": "In Canva, dopo aver cliccato su <strong>Crea un progetto &rsaquo; Dimensione personalizzata</strong>, puoi scegliere cm o mm come unità e inserire la dimensione fisica. Canva converte il valore in pixel automaticamente all'esportazione. Se il file deve andare in tipografia, nelle opzioni di download seleziona il formato PDF per la stampa insieme a margini al vivo e segni di taglio. Canva esporta questi file a 300 DPI di default, quindi la tabella dei formati di questa pagina sarà coerente con ciò che riceverai in uscita."
         },
         {
-          "label": "Qualità",
-          "values": ["Nitida a qualsiasi dimensione", "Solo per schermo"]
+          "title": "Procreate",
+          "icon": "RiBrushLine",
+          "description": "Procreate, alla creazione di una nuova tela, permette di scegliere l'unità tra pixel, millimetri, centimetri e pollici. Nella scheda Tela personalizzata imposta la dimensione in cm e inserisci 300 DPI se l'illustrazione deve andare in stampa. Tieni presente che più alto è il DPI e più grande è il formato, meno livelli offre l'app – su un iPad Pro con 8 GB di RAM il limite sicuro è A3 a 300 DPI, mentre per formati più grandi conviene dividere la tela in sezioni o ridurre la risoluzione a 150 DPI."
+        },
+        {
+          "title": "Word, Excel, PowerPoint",
+          "icon": "RiFileTextLine",
+          "description": "Il pacchetto Microsoft 365 (Word, Excel e PowerPoint) lavora con i centimetri, e le dimensioni delle immagini si impostano nel pannello <strong>Dimensioni e posizione</strong>. I file PDF esportati da questi programmi conservano di default un'alta qualità, quindi 1 cm corrisponde a 118 px a 300 DPI. Se salvi la presentazione come immagine PNG o JPG, PowerPoint usa lo standard 96 DPI, cioè 1 cm equivale a circa 38 px – in quel momento il nostro convertitore aiuta a verificare se il file è davvero abbastanza grande per la stampa."
+        },
+        {
+          "title": "CSS e HTML",
+          "icon": "RiHtml5Line",
+          "description": "Nei fogli di stile CSS l'unità <code>cm</code> viene convertita con la formula fissa <code>1cm = 96px ÷ 2,54 ≈ 37,8px</code>. Questo valore non cambia in base allo schermo – ottieni sempre lo stesso risultato indipendentemente dal dispositivo. In pratica, per le interfacce web si usano le unità <code>px</code>, <code>rem</code> o <code>em</code>, e <code>cm</code> si riserva per i fogli di stile destinati alla stampa (<code>@media print</code>). Solo allora il layout della pagina rispecchia davvero le dimensioni fisiche di un foglio di carta."
         }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando vale la pena usare questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Preparare file per la tipografia",
+          "description": "Verifichi che un foglio A4 per la stampa misura 2.480 × 3.508 px a 300 DPI, e che un manifesto A3 occupa 3.508 × 4.961 px. Il convertitore ti aiuta a evitare la situazione in cui la tipografia rifiuta il file perché la risoluzione è troppo bassa."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Grafiche per una pagina web",
+          "description": "Se hai progettato un banner di 20 × 6 cm, scopri che a 96 DPI corrisponde a 756 × 227 px. È esattamente la dimensione che conviene inserire nel codice della pagina o in un modello del tuo CMS."
+        },
+        {
+          "icon": "RiCameraLine",
+          "title": "Foto per documenti e passaporto",
+          "description": "Lo standard ICAO per le foto biometriche di passaporto e carta d'identità usato in Italia e nella maggior parte dei Paesi (3,5 × 4,5 cm) corrisponde esattamente a 413 × 531 px a 300 DPI. Basta inserire questi valori nella fotocamera o nell'editor perché il file rispetti i requisiti ufficiali."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Biglietti da visita e materiali aziendali",
+          "description": "Un biglietto da visita europeo (8,5 × 5,5 cm) corrisponde a 1.004 × 650 px a 300 DPI, mentre uno americano (3,5 × 2 in) è 1.050 × 600 px. Dopo aver aggiunto un margine al vivo di 3 mm conviene progettare il file circa 35 px più grande per ogni lato."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Confronto delle unità centimetro e pixel",
+      "labelHeader": "Proprietà",
+      "cols": ["Centimetro (cm)", "Pixel (px)"],
+      "rows": [
+        { "label": "Tipo di unità", "values": ["Fisica e tangibile", "Digitale e da schermo"] },
+        { "label": "Dipendenza dal dispositivo", "values": ["Sempre uguale", "Dipende dal DPI o PPI"] },
+        { "label": "Stampa a 300 DPI", "values": ["1 cm equivale a 118 px", "1 px equivale a 0,0085 cm"] },
+        { "label": "Schermo a 96 DPI", "values": ["1 cm equivale a 37,8 px", "1 px equivale a 0,0265 cm"] },
+        { "label": "Formato A4", "values": ["21 × 29,7 cm", "2.480 × 3.508 px (300 DPI)"] }
       ]
     },
     {
@@ -212,20 +307,56 @@
     },
     {
       "type": "faq",
-      "title": "Domande frequenti",
+      "title": "Domande frequenti sulla conversione cm in px",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Quanti pixel è 1 cm a 300 DPI?",
-          "answer": "1 cm a 300 DPI = 118,11 pixel."
+          "question": "Quanti pixel ha 1 cm?",
+          "answer": "Tutto dipende dalla risoluzione che imposti. Allo standard schermo di 96 DPI un centimetro equivale a circa 38 pixel, mentre a 72 DPI usato in passato nella grafica per schermo sono solo 28 pixel. Nella stampa, dove vigono di solito 300 DPI, lo stesso centimetro corrisponde già a circa 118 pixel."
         },
         {
-          "question": "Quale DPI per la stampa?",
-          "answer": "300 DPI per stampa professionale. 150 DPI per grande formato. 72 DPI solo per schermo."
+          "question": "Come si convertono i centimetri in pixel?",
+          "answer": "Il modo più semplice è inserire il numero di centimetri nel campo del convertitore e scegliere il DPI che ti interessa – il risultato appare subito. Se preferisci calcolare a mano, usa la formula: numero di pixel = numero di centimetri × DPI ÷ 2,54. Per 5 cm a 300 DPI ottieni 5 × 300 ÷ 2,54, cioè circa 591 pixel."
         },
         {
-          "question": "I calcoli vengono eseguiti localmente?",
-          "answer": "Sì. Tutti i calcoli vengono eseguiti nel tuo browser."
+          "question": "A quanto corrisponde 1 pixel in centimetri?",
+          "answer": "Un pixel su uno schermo standard di 96 DPI misura circa 0,0265 cm e ai 300 DPI usati per la stampa solo 0,0085 cm. Per convertire qualsiasi numero di pixel in centimetri, dividilo per il valore DPI e moltiplicalo per 2,54."
+        },
+        {
+          "question": "Quanti pixel sono 5 cm?",
+          "answer": "Alla risoluzione standard dello schermo di 96 DPI cinque centimetri corrispondono a circa 189 pixel. Se prepari una grafica per la stampa a 300 DPI, la stessa lunghezza cresce a 591 pixel e a 600 DPI raggiunge già 1.181 pixel."
+        },
+        {
+          "question": "Quanti pixel sono 10 cm?",
+          "answer": "Dieci centimetri a 96 DPI corrispondono a circa 378 pixel. Nella stampa a 300 DPI gli stessi 10 cm sono esattamente 1.181 pixel – un valore che vale la pena ricordare perché compare in fotografia come lato corto della classica stampa 10 × 15 cm."
+        },
+        {
+          "question": "Quanti pixel sono 20 cm?",
+          "answer": "Venti centimetri corrispondono a 756 pixel su uno schermo a 96 DPI e a 2.362 pixel nella stampa a 300 DPI. Se progetti per un cartellone in cui bastano 30–72 DPI, la stessa larghezza scende a 236–567 pixel."
+        },
+        {
+          "question": "Quanti pixel ha un A4 a 300 DPI?",
+          "answer": "Un foglio A4 misura 21 × 29,7 cm, il che a 300 DPI dà esattamente 2.480 × 3.508 pixel. A 150 DPI le stesse dimensioni sono 1.240 × 1.754 pixel e al valore schermo di 96 DPI solo 794 × 1.123 pixel."
+        },
+        {
+          "question": "Quanti pixel ha una foto 10×15 cm?",
+          "answer": "Una stampa fotografica standard 10 × 15 cm corrisponde a 1.181 × 1.772 pixel a 300 DPI. Se il file della fotocamera ha almeno questa risoluzione, puoi ordinare la stampa con tranquillità – la qualità sarà eccellente."
+        },
+        {
+          "question": "Quanti pixel ha una foto tessera per passaporto (35 × 45 mm)?",
+          "answer": "Lo standard ICAO per le foto biometriche di passaporto e carta d'identità usato in Italia e nella maggior parte dei Paesi misura 3,5 × 4,5 cm, il che a 300 DPI dà 413 × 531 pixel. Gli enti pubblici accettano anche una versione digitale con risoluzione un po' più alta, quindi una buona scelta è un file di 492 × 633 px che soddisfa i requisiti più comuni della maggior parte degli uffici."
+        },
+        {
+          "question": "Come impostare centimetri in pixel in Photoshop o Canva?",
+          "answer": "In Photoshop apri la finestra Immagine &rsaquo; Dimensione immagine, cambia l'unità in centimetri e inserisci le dimensioni insieme al DPI desiderato. In Canva scegli Crea un progetto &rsaquo; Dimensione personalizzata, cambia le unità in cm e inserisci la dimensione richiesta – il programma convertirà il file in pixel automaticamente all'esportazione. Guide dettagliate per Photoshop, Illustrator, Figma, Canva e Procreate le trovi nella sezione qui sopra."
+        },
+        {
+          "question": "In cosa si differenziano DPI e PPI?",
+          "answer": "DPI (dots per inch, ovvero punti per pollice) è il numero di punti di inchiostro per pollice di materiale e descrive una stampante. PPI (pixels per inch, ovvero pixel per pollice) indica il numero di pixel per pollice di schermo e descrive un monitor o un display. Nel lavoro quotidiano i designer usano entrambe le sigle in modo intercambiabile, ma tecnicamente DPI riguarda la stampa e PPI gli schermi."
+        },
+        {
+          "question": "Quanti pixel ha un centimetro su uno schermo Retina?",
+          "answer": "Gli schermi Retina di Apple hanno una densità di pixel due volte più alta rispetto a un monitor classico, ma il sistema operativo continua a interpretare le dimensioni come se il pannello avesse 96 DPI. Per questo le grafiche si preparano a doppia risoluzione (1 cm equivale a 76 px invece di 38 px), si salvano come 96 DPI e si esportano con il suffisso @2x."
         }
       ]
     },
@@ -235,11 +366,11 @@
     },
     {
       "type": "contactForm",
-      "title": "Aiutaci a migliorare i nostri strumenti",
-      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzionalità? Scrivici – rispondiamo entro 24 ore.",
+      "title": "Aiutaci a migliorare questo convertitore",
+      "description": "Ti manca un formato nelle tabelle, hai trovato un errore di calcolo o vuoi proporre una nuova funzionalità? Scrivici – leggiamo tutti i messaggi personalmente e rispondiamo entro 24 ore.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
-      "imageAlt": "cm na px – Arteon",
-      "defaultSubject": "Feedback: cm-to-px-dpi"
+      "imageAlt": "Convertitore cm in px – Arteon",
+      "defaultSubject": "Feedback: convertitore cm in px"
     },
     {
       "type": "gap",
@@ -247,7 +378,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Altri strumenti gratuiti"
+      "title": "Altri strumenti che potrebbero esserti utili"
     },
     {
       "type": "gap",
