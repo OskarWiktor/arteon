@@ -10,6 +10,8 @@ import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import type { ArticlePreview } from '@/types/article';
 import { slugify } from '@/utils/slugify';
 import { getPrimaryCategorySlug } from '@/utils/blogCategory';
+import { focusRingClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 const AUTO_PLAY_INTERVAL_MS = 6000;
 
@@ -84,7 +86,7 @@ export default function ArticlesCarousel({
       <div className='relative'>
         <div
           ref={scrollRef}
-          className='no-scrollbar focus-visible:ring-primary flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white'
+          className={cn('no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8', focusRingClasses)} 
           role='region'
           aria-roledescription='carousel'
           aria-label='Karuzela artykułów'

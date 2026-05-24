@@ -679,7 +679,7 @@ export default async function ProjectPage({ params }: PageProps) {
                 <ul className='grid gap-3 md:grid-cols-2'>
                   {project.process_steps.map((step, i) => (
                     <li key={i} className='rounded-lg bg-white p-3 shadow-md'>
-                      <span className='border-light text-light mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border text-xs font-bold'>
+                      <span className='border-light text-light mr-2 inline-flex h-6 w-6 items-center justify-center rounded-lg border text-xs font-bold'>
                         {i + 1}
                       </span>
                       <span dangerouslySetInnerHTML={{ __html: step }} />
@@ -828,7 +828,7 @@ export default async function ProjectPage({ params }: PageProps) {
         </div>
 
         <div>
-          <ShareBlock url={url} title={shareTitle} className='mb-12' />
+          <ShareBlock url={url} title={shareTitle} />
           <TableOfContents rootSelector='#article-root' levels='h2' />
         </div>
       </Wrapper>

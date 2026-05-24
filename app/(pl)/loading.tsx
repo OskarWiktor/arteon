@@ -1,4 +1,4 @@
-import HomePageSkeleton from '@/components/organisms/skeletons/HomePageSkeleton';
+import HomePageSkeleton from '@/components/pages/skeletons/HomePageSkeleton';
 
 export default function Loading() {
   return <HomePageSkeleton />;

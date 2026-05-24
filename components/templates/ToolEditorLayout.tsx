@@ -11,7 +11,7 @@ export default function ToolEditorLayout({ children }: ToolEditorLayoutProps) {
   return (
     <div
       className={cn(
-        'mx-auto w-[100%] max-w-[1420px]',
+        'mx-auto mt-8 w-[100%] max-w-[1420px]',
         'xl:grid xl:w-full xl:max-w-none xl:grid-cols-[1fr_200px_minmax(0,1420px)_200px_1fr] xl:gap-x-4',
       )}
     >

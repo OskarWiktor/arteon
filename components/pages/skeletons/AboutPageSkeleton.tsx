@@ -1,8 +1,8 @@
-import HeroBannerSkeleton from './HeroBannerSkeleton';
-import SectionInfoSkeleton from './SectionInfoSkeleton';
-import SectionStepsSkeleton from './SectionStepsSkeleton';
-import DividerSkeleton from './GapSkeleton';
-import CTABannerSkeleton from './CTABannerSkeleton';
+import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
+import SectionInfoSkeleton from '../../organisms/skeletons/SectionInfoSkeleton';
+import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
+import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
+import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
 
 export default function AboutPageSkeleton() {
   return (

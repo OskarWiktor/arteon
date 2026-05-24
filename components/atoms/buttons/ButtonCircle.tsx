@@ -11,7 +11,7 @@ interface ButtonCircleProps {
 }
 
 const buttonCircleClasses =
-  'inline-flex items-center justify-center border-primary bg-primary rounded-full border p-1 text-white shadow-lg md:p-2 hover:text-mid transition-colors hover:scale-105 hover:bg-white';
+  'inline-flex items-center justify-center border-primary bg-primary rounded-lg border p-1 text-white shadow-lg md:p-2 hover:text-mid transition-colors hover:scale-105 hover:bg-white';
 
 export default function ButtonCircle({
   children,

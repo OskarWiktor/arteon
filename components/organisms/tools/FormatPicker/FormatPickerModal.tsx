@@ -18,6 +18,8 @@ import {
   type FormatCategory,
   type UniversalFormat,
 } from '@/lib/tools/conversionRoutes';
+import { cn } from '@/lib/utils';
+import { focusRingClasses } from '@/lib/ui-classes';
 
 type PickerSide = 'source' | 'target';
 
@@ -228,18 +230,16 @@ export default function FormatPickerModal({
     setOpen(false);
   };
 
-  // Build the formats grid for the active category
   const activeCategoryDef = FORMAT_CATEGORIES.find(c => c.key === activeCategory);
   const formats = activeCategoryDef?.formats ?? [];
 
   return (
     <div className='relative inline-block'>
-      {/* Trigger button */}
       <button
         ref={triggerRef}
         type='button'
         onClick={handleToggle}
-        className='focus:border-primary focus:ring-primary inline-flex items-center gap-1.5 rounded border border-neutral-300 bg-white px-3 py-2 text-xs font-medium transition-colors hover:border-neutral-400 focus:ring-1 focus:outline-none'
+        className={cn('inline-flex items-center gap-1.5 rounded border border-neutral-300 bg-white px-3 py-2 text-xs font-medium transition-colors hover:border-neutral-400 e', focusRingClasses)}
         aria-expanded={open}
         aria-haspopup='dialog'
       >
@@ -250,10 +250,8 @@ export default function FormatPickerModal({
         />
       </button>
 
-      {/* Panel - desktop: absolute submenu, mobile: fixed modal */}
       {open && (
         <>
-          {/* Mobile overlay */}
           <div
             ref={overlayRef}
             className='fixed inset-0 z-50 bg-black/40 md:hidden'

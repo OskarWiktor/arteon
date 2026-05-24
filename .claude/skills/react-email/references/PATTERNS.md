@@ -349,7 +349,7 @@ export default function Notification({
             <Heading className='mx-6 mt-6 mb-4 text-2xl font-bold text-gray-800'>{title}</Heading>
 
             <Text
-              className={`mx-6 mb-4 inline-block rounded-full px-3 py-1 text-xs font-bold text-white ${severityBtnColors[severity]}`}
+              className={`mx-6 mb-4 inline-block rounded-lg px-3 py-1 text-xs font-bold text-white ${severityBtnColors[severity]}`}
             >
               {severity.toUpperCase()}
             </Text>

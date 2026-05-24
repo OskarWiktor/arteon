@@ -46,7 +46,7 @@ export default function CarouselCard(props: CarouselCardProps) {
     const { title, href, description, image, buttonLabel = 'Otwórz narzędzie' } = props;
     return (
       <Card as='article' variant='default' className='flex h-full flex-col'>
-        <InlineLink href={href} prefetch={false} className='block focus:outline-none'>
+        <InlineLink href={href} prefetch={false} className='block'>
           <div className='relative aspect-[16/9] w-full overflow-hidden border-b border-black/10'>
             <Image src={image} alt={title} fill className='object-cover' sizes={IMAGE_SIZES} />
           </div>
@@ -58,7 +58,7 @@ export default function CarouselCard(props: CarouselCardProps) {
             <InlineLink
               href={href}
               prefetch={false}
-              className='focus-visible:ring-primary inline-flex w-fit items-center rounded-lg border border-black/10 bg-white px-3 py-1.5 text-sm font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus-visible:ring-2 focus-visible:ring-offset-2 md:px-4 md:py-2 md:text-base'
+              className='inline-flex w-fit items-center rounded-lg border border-black/10 bg-white px-3 py-1.5 text-sm font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-4 md:py-2 md:text-base'
             >
               <span>{buttonLabel}</span>
               <ArrowIcon />
@@ -73,7 +73,7 @@ export default function CarouselCard(props: CarouselCardProps) {
     const { article, href, readingTimeLabel } = props;
     return (
       <Card as='article' variant='default' className='h-full'>
-        <Link href={href} prefetch={false} className='block focus:outline-none'>
+        <Link href={href} prefetch={false} className='block'>
           {article.cover ? (
             <div className='relative aspect-[16/9] w-full overflow-hidden border-b border-black/10'>
               <Image
@@ -136,7 +136,7 @@ export default function CarouselCard(props: CarouselCardProps) {
             <InlineLink
               href={detailsHref}
               aria-label={`Szczegóły projektu: ${project.title}`}
-              className="focus-visible:ring-primary inline-flex items-center rounded-lg transition before:absolute before:inset-0 before:rounded-lg before:content-[''] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+              className="inline-flex items-center rounded-lg transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
             >
               Szczegóły projektu
               <ArrowIcon />
@@ -148,7 +148,7 @@ export default function CarouselCard(props: CarouselCardProps) {
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label={`Sprawdź stronę projektu ${project.title} (otwiera się w nowej karcie)`}
-                className='focus-visible:ring-primary text-light hover:text-primary relative z-10 inline-flex items-center rounded-lg transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2'
+                className='text-light hover:text-primary relative z-10 inline-flex items-center rounded-lg transition'
               >
                 Sprawdź stronę
                 <ArrowIcon />

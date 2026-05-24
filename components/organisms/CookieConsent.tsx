@@ -11,6 +11,8 @@ import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useTimeout } from '@/hooks/useTimeout';
 import Checkbox from '../atoms/form/Checkbox';
+import { cn } from '@/lib/utils';
+import { focusRingClasses } from '@/lib/ui-classes';
 
 export type CookieConsentTranslations = {
   title: string;
@@ -160,7 +162,10 @@ export default function CookieConsent({
               <button
                 ref={firstNativeBtnRef}
                 onClick={() => saveAndClose({ analytics: true, ads: true })}
-                className='bg-primary focus-visible:ring-primary inline-flex w-fit cursor-pointer items-center rounded-lg px-3 py-1.5 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 md:px-4 md:py-2 md:text-base'
+                className={cn(
+                  'bg-primary inline-flex w-fit cursor-pointer items-center rounded-lg px-3 py-1.5 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-4 md:py-2 md:text-base',
+                  focusRingClasses,
+                )}
               >
                 {t.accept}
               </button>
@@ -169,7 +174,10 @@ export default function CookieConsent({
                   setPanel(true);
                   focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
                 }}
-                className='text-dark focus-visible:ring-primary inline-flex w-fit items-center rounded-lg border border-neutral-200 bg-white px-3 py-1 text-sm font-medium transition hover:bg-neutral-50 focus:outline-none focus-visible:ring-2'
+                className={cn(
+                  'text-dark inline-flex w-fit items-center rounded-lg border border-neutral-200 bg-white px-3 py-1 text-sm font-medium transition hover:bg-neutral-50',
+                  focusRingClasses,
+                )}
               >
                 {t.settings}
               </button>
@@ -194,7 +202,7 @@ export default function CookieConsent({
                     {t.essentialDescription}
                   </span>
                 </div>
-                <span className='text-dark bg-primary-light rounded-full px-3 py-1 text-xs font-semibold'>
+                <span className='text-dark bg-primary-light rounded-lg px-3 py-1 text-xs font-semibold'>
                   {t.essentialStatus}
                 </span>
               </div>
@@ -240,7 +248,10 @@ export default function CookieConsent({
               <div className='flex gap-2'>
                 <button
                   onClick={() => saveAndClose({ analytics: false, ads: false })}
-                  className='text-dark border-primary-light focus-visible:ring-primary inline-flex w-fit items-center rounded-lg border bg-white px-3 py-1 text-sm font-medium shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2'
+                  className={cn(
+                    'text-dark border-primary-light inline-flex w-fit items-center rounded-lg border bg-white px-3 py-1 text-sm font-medium shadow transition hover:-translate-y-0.5 hover:shadow-lg',
+                    focusRingClasses,
+                  )}
                 >
                   {t.reject}
                 </button>

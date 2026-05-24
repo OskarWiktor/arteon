@@ -10,6 +10,7 @@ import CarouselCard from '@/components/organisms/carousels/CarouselCard';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import { cn } from '@/lib/utils';
+import { focusRingClasses } from '@/lib/ui-classes';
 
 const AUTO_PLAY_INTERVAL_MS = 6000;
 
@@ -60,7 +61,7 @@ export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
           className={cn(
             'flex gap-4 overflow-x-auto pb-8',
             'no-scrollbar snap-x snap-mandatory scroll-smooth',
-            'focus-visible:ring-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white',
+            focusRingClasses,
           )}
           role='region'
           aria-roledescription='carousel'

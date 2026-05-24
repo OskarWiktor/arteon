@@ -18,6 +18,8 @@ import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useScrollLock } from '@/hooks/useScrollLock';
 
 import InlineLink from '../atoms/InlineLink';
+import { focusRingClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 type AlternateLink = {
   locale: Locale;
   href: string;
@@ -142,7 +144,7 @@ export default function LanguageSwitcher({
       hrefLang={link.hreflang}
       title={link.title}
       onClick={close}
-      className='group/link focus-visible:ring-primary flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors hover:bg-white focus:outline-none focus-visible:ring-2'
+      className='group/link flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors hover:bg-white'
     >
       <span className='text-primary-mid group-hover/link:text-primary w-6 text-center text-xs font-semibold uppercase transition-colors'>
         {link.label}
@@ -164,7 +166,10 @@ export default function LanguageSwitcher({
             aria-haspopup='menu'
             aria-expanded={isOpen}
             aria-label={t.toggleLabel}
-            className='text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 items-center gap-1.5 rounded-md px-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white'
+            className={cn(
+              'text-primary hover:bg-primary-light flex h-8 items-center gap-1.5 rounded-md px-2 transition-colors',
+              focusRingClasses,
+            )}
           >
             <RiTranslate2 className='h-5 w-5' aria-hidden='true' />
             <span className='text-xs font-semibold tracking-wide uppercase'>
@@ -257,7 +262,10 @@ export default function LanguageSwitcher({
           aria-haspopup='dialog'
           aria-expanded={isOpen}
           aria-label={t.toggleLabel}
-          className='text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 items-center gap-1.5 rounded-md px-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white'
+          className={cn(
+            'text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 items-center gap-1.5 rounded-md px-2 transition-colors',
+            focusRingClasses,
+          )}
         >
           <RiTranslate2 className='h-5 w-5' aria-hidden='true' />
           <span className='text-xs font-semibold tracking-wide uppercase'>
@@ -288,7 +296,7 @@ export default function LanguageSwitcher({
                 <button
                   type='button'
                   onClick={close}
-                  className='text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-md transition-colors focus:outline-none focus-visible:ring-2'
+                  className={cn('text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-md transition-colors', focusRingClasses)}
                   aria-label={t.closeModalLabel}
                 >
                   <RiCloseLine className='h-5 w-5' aria-hidden='true' />

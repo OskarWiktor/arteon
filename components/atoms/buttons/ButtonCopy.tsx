@@ -18,12 +18,12 @@ interface ButtonCopyProps {
 }
 
 const variantClasses: Record<ButtonCopyVariant, string> = {
-  default: 'border-black/15 bg-white text-dark hover:bg-neutral-50',
+  default: 'border-black/10 bg-white text-dark hover:bg-neutral-50',
   dark: 'border-white/10 text-white/80 hover:bg-white/10',
 };
 
 const buttonCopyClasses =
-  'inline-flex items-center gap-1rounded-full border px-2.5 py-1 text-[11px] font-medium cursor-pointer transition-colors';
+  'inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm font-medium cursor-pointer transition';
 
 export default function ButtonCopy({
   text,

@@ -10,21 +10,19 @@ type BenefitItem = {
 interface BenefitBeltProps {
   items?: BenefitItem[];
   ariaLabel?: string;
-  className?: string;
   variant?: 'default' | 'carousel';
 }
 
 export default function BenefitBelt({
   items,
   ariaLabel = 'Kluczowe benefity',
-  className,
   variant = 'default',
 }: BenefitBeltProps) {
   const data = (items ?? []).slice(0, 6);
 
   if (variant === 'carousel') {
     return (
-      <section className={`relative bg-white ${className}`} aria-label={ariaLabel}>
+      <section className='relative bg-white' aria-label={ariaLabel}>
         <Wrapper className='py-2 md:py-3'>
           <LogoCarousel variant='logo' />
         </Wrapper>
@@ -33,7 +31,7 @@ export default function BenefitBelt({
   }
 
   return (
-    <section className={`relative bg-white ${className}`} aria-label={ariaLabel}>
+    <section className='relative bg-white' aria-label={ariaLabel}>
       <Wrapper className='py-4'>
         <ul className='flex flex-wrap items-center justify-between gap-y-4'>
           {data.map((item, i) => (

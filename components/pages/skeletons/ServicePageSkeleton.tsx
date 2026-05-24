@@ -1,13 +1,13 @@
-import HeroBannerSkeleton from './HeroBannerSkeleton';
-import BenefitBeltSkeleton from './BenefitBeltSkeleton';
-import BreadcrumbsSkeleton from './BreadcrumbsSkeleton';
-import CarouselSkeleton from './CarouselSkeleton';
-import SectionStepsSkeleton from './SectionStepsSkeleton';
-import SectionInfoSkeleton from './SectionInfoSkeleton';
-import FaqSkeleton from './FaqSkeleton';
-import DividerSkeleton from './GapSkeleton';
-import CTABannerSkeleton from './CTABannerSkeleton';
-import Shimmer from './Shimmer';
+import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
+import BenefitBeltSkeleton from '../../organisms/skeletons/BenefitBeltSkeleton';
+import BreadcrumbsSkeleton from '../../organisms/skeletons/BreadcrumbsSkeleton';
+import CarouselSkeleton from '../../organisms/skeletons/CarouselSkeleton';
+import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
+import SectionInfoSkeleton from '../../organisms/skeletons/SectionInfoSkeleton';
+import FaqSkeleton from '../../organisms/skeletons/FaqSkeleton';
+import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
+import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
+import Shimmer from '../../organisms/skeletons/Shimmer';
 
 function FeatureGridSkeleton() {
   return (

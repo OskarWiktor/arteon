@@ -220,7 +220,7 @@ xl: 1280px  /* Large desktop */
 
 ```tsx
 <div className='fixed inset-x-0 bottom-0 rounded-t-2xl bg-white p-4 shadow-lg md:hidden'>
-  <div className='mx-auto mb-4 h-1 w-12 rounded-full bg-gray-300' />
+  <div className='mx-auto mb-4 h-1 w-12 rounded-lg bg-gray-300' />
   {/* Content */}
 </div>
 ```
@@ -296,7 +296,7 @@ export default function Loading() {
 </progress>
 
 // Indeterminate (spinner)
-<div className="animate-spin h-5 w-5 border-2 border-brand border-t-transparent rounded-full" />
+<div className="animate-spin h-5 w-5 border-2 border-brand border-t-transparent rounded-lg" />
 ```
 
 ---

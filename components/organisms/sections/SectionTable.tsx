@@ -1,3 +1,4 @@
+import SectionHeader from '@/components/molecules/SectionHeader';
 import { useId } from 'react';
 
 export interface SectionTableRow {
@@ -39,11 +40,7 @@ export default function SectionTable({
 
   return (
     <section data-section='table' aria-labelledby={title ? headingId : undefined}>
-      {title && (
-        <h2 id={headingId} className='h3 mb-4 text-center md:mb-6 lg:mb-8'>
-          {title}
-        </h2>
-      )}
+      {title && <SectionHeader title={title} />}
 
       {description && <p className='text-mid mb-4 text-base md:mb-6'>{description}</p>}
 

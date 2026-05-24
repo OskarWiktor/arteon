@@ -5,7 +5,6 @@ import Button from '@/components/atoms/buttons/Button';
 import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolInfo from '@/components/atoms/ToolInfo';
 import ToolAlert from '@/components/atoms/ToolAlert';
-import FileDropzone from '@/components/molecules/FileDropzone';
 import Badge from '@/components/atoms/Badge';
 import ToolUploadContent from '@/components/organisms/tools/ToolUploadContent';
 import ToolFileRow from '@/components/organisms/tools/ToolFileRow';
@@ -24,6 +23,7 @@ import { createZipBlob, type ZipFileInput } from '@/utils/zip';
 import { useLocale, type Locale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/favicon';
 import Checkbox from '@/components/atoms/form/Checkbox';
+import FileDropzone from '@/components/molecules/FileDropzone';
 
 function createWebmanifest(
   outputs: FaviconOutputFile[],

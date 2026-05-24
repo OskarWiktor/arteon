@@ -1,5 +1,5 @@
-import Shimmer from './Shimmer';
-import DividerSkeleton from './GapSkeleton';
+import Shimmer from '../../organisms/skeletons/Shimmer';
+import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
 
 export default function PrivacyPageSkeleton() {
   return (

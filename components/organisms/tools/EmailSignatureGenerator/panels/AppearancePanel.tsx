@@ -44,9 +44,9 @@ export default function AppearancePanel({
               className='gap-2'
               label={
                 <>
-                  <span className='flex h-4 w-4 items-center justify-center rounded-full border border-neutral-300'>
+                  <span className='flex h-4 w-4 items-center justify-center rounded-lg border border-neutral-300'>
                     <span
-                      className='h-3 w-3 rounded-full'
+                      className='h-3 w-3 rounded-lg'
                       style={{ backgroundColor: preset.accentColor }}
                     />
                   </span>

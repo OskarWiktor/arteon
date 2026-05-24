@@ -31,7 +31,7 @@ export default function SectionHeader({
   const hasButton = Boolean(buttonText && buttonLink);
 
   const content = (
-    <>
+    <div className='mb-2 lg:mb-4'>
       {subtitle && (
         <div className='mb-2 md:mb-4'>
           <Subtitle className={SubtitleClassName} id={subtitleId}>
@@ -39,18 +39,18 @@ export default function SectionHeader({
           </Subtitle>
         </div>
       )}
-      <h2 className={`${titleClassName} h3 mb-4 lg:mb-6`} id={titleId}>
+      <h2 className={`${titleClassName} h3 mb-2 scroll-mt-26 lg:mb-4`} id={titleId}>
         {title}
       </h2>
       {description && <p className={descriptionClassName}>{description}</p>}
-    </>
+    </div>
   );
 
   if (!hasButton) return content;
 
   return (
     <div className='flex flex-row justify-between'>
-      <div>{content}</div>
+      {content}
       <div>
         <ButtonLink href={buttonLink!}>{buttonText}</ButtonLink>
       </div>

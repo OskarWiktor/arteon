@@ -1,3 +1,5 @@
+import { focusRingClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import { RiStarFill, RiStarLine } from 'react-icons/ri';
 
@@ -46,7 +48,7 @@ export default function SectionStarRating({
               type='button'
               onClick={() => onChange(starValue)}
               onMouseEnter={() => setHoverValue(starValue)}
-              className='focus-visible:ring-accent transition-transform hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2'
+              className={cn('transition-transform hover:scale-110', focusRingClasses)}
               aria-label={`${starValue} z ${max} gwiazdek`}
             >
               {isFilled ? (

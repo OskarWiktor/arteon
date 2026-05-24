@@ -9,6 +9,7 @@ import SectionHeader from '@/components/molecules/SectionHeader';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
 import { cn } from '@/lib/utils';
+import { focusRingClasses } from '@/lib/ui-classes';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
 
@@ -81,7 +82,7 @@ export default function ProjectsCarouselClient({
           className={cn(
             'flex gap-4 overflow-x-auto pb-8',
             'no-scrollbar snap-x snap-mandatory scroll-smooth',
-            'focus-visible:ring-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white',
+            focusRingClasses,
           )}
           role='region'
           aria-roledescription='carousel'

@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '../../atoms/Wrapper';
+import SectionHeader from '@/components/molecules/SectionHeader';
 
 interface ProcessStep {
   number: number;
@@ -17,11 +18,7 @@ export default function SectionProcess({ title, steps }: SectionProcessProps) {
   return (
     <section data-section='process' aria-labelledby={title ? 'process-title' : undefined}>
       <Wrapper>
-        {title && (
-          <h2 id='process-title' className='h3 mb-4 lg:mb-6'>
-            {title}
-          </h2>
-        )}
+        {title && <SectionHeader title={title} />}
 
         <div className='flex flex-col items-stretch gap-4 md:flex-row md:items-center'>
           {steps.map((step, index) => (

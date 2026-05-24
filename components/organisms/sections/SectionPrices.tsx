@@ -95,7 +95,7 @@ export default function SectionPrices({
                       <IconText
                         icon={
                           <span
-                            className='group-hover:ring-primary8 mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full ring-1 ring-neutral-300'
+                            className='group-hover:ring-primary8 mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-lg ring-1 ring-neutral-300'
                             title='Zawarte w planie'
                           >
                             <RiCheckFill className='h-3.5 w-3.5' />

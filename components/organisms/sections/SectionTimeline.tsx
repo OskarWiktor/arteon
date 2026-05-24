@@ -58,13 +58,13 @@ export default function SectionTimeline({
               key={index}
               className={`relative flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
             >
-              <div className='md:bg-primary hidden md:absolute md:left-1/2 md:flex md:h-12 md:w-12 md:-translate-x-1/2 md:items-center md:justify-center md:rounded-full md:text-white md:shadow-lg'>
+              <div className='md:bg-primary hidden md:absolute md:left-1/2 md:flex md:h-12 md:w-12 md:-translate-x-1/2 md:items-center md:justify-center md:rounded-lg md:text-white md:shadow-lg'>
                 {step.icon}
               </div>
 
               <div className={`flex-1 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
                 <Card padding='lg' className='ml-16 md:ml-0'>
-                  <div className='bg-primary absolute top-6 left-0 flex h-12 w-12 items-center justify-center rounded-full text-white shadow-lg md:hidden'>
+                  <div className='bg-primary absolute top-6 left-0 flex h-12 w-12 items-center justify-center rounded-lg text-white shadow-lg md:hidden'>
                     {step.icon}
                   </div>
                   <h3 className='h5 mb-2'>{step.title}</h3>

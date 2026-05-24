@@ -26,6 +26,8 @@ import {
   SiGoogleads,
 } from 'react-icons/si';
 import SectionHeader from '@/components/molecules/SectionHeader';
+import { focusRingClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 interface LogoCarouselDefaultItem {
   label: string;
@@ -213,7 +215,7 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
       <section className='relative overflow-hidden'>
         <div
           ref={containerRef}
-          className='focus-visible:ring-primary overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white'
+          className={cn('overflow-hidden rounded-lg', focusRingClasses)}
           role='region'
           aria-label='Przewijana lista logo firm.'
           tabIndex={0}
@@ -257,7 +259,7 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
 
       <div
         ref={containerRef}
-        className='focus-visible:ring-primary overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white'
+        className={cn('overflow-hidden rounded-lg', focusRingClasses)}
         role='region'
         aria-label='Przewijana lista technologii.'
         tabIndex={0}

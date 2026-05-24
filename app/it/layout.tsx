@@ -1,5 +1,5 @@
-import LocaleLayout from '@/components/pages/LocaleLayout';
-import RootHtml from '@/components/pages/RootHtml';
+import LocaleLayout from '@/components/templates/LocaleLayout';
+import RootHtml from '@/components/templates/RootHtml';
 import { baseMetadata } from '@/lib/shared-metadata';
 
 export const metadata = baseMetadata;

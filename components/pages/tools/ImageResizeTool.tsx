@@ -2,7 +2,6 @@
 
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
-import FileDropzone from '@/components/molecules/FileDropzone';
 import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolUploadContent from '@/components/organisms/tools/ToolUploadContent';
 import { exportCroppedImage } from '@/lib/tools/image/exportCroppedImage';
@@ -38,6 +37,7 @@ import InputWithLabel from '@/components/molecules/InputWithLabel';
 import ToolRangeInput from '@/components/organisms/tools/ToolRangeInput';
 import CropPreview from '@/components/organisms/tools/ImageResizeTool/CropPreview';
 import Input from '@/components/atoms/form/Input';
+import FileDropzone from '@/components/molecules/FileDropzone';
 
 function getImagePresets(t: UiLocale) {
   return {
@@ -205,7 +205,7 @@ export default function ImageResizeTool() {
   const gridStroke = getGridStroke(state.gridColor);
   const presetList = IMAGE_PRESETS[state.selectedCategory];
   const shapeNeedsAlpha = state.shape === 'circle';
-  const selectionShapeClass = state.shape === 'circle' ? 'rounded-full' : 'rounded-md';
+  const selectionShapeClass = state.shape === 'circle' ? 'rounded-lg' : 'rounded-md';
 
   const handleFileChange = (file: File | null) => {
     if (!file) return;
@@ -811,7 +811,7 @@ export default function ImageResizeTool() {
                             cropX: 0.5,
                           }))
                         }
-                        className='flex h-7 w-7 items-center justify-center rounded-full border border-black/10 bg-white hover:bg-neutral-100'
+                        className='flex h-7 w-7 items-center justify-center rounded-lg border border-black/10 bg-white hover:bg-neutral-100'
                         title={t.centerHorizontal}
                       >
                         <MdAlignHorizontalCenter className='text-xs' />
@@ -824,7 +824,7 @@ export default function ImageResizeTool() {
                             cropY: 0.5,
                           }))
                         }
-                        className='flex h-7 w-7 items-center justify-center rounded-full border border-black/10 bg-white hover:bg-neutral-100'
+                        className='flex h-7 w-7 items-center justify-center rounded-lg border border-black/10 bg-white hover:bg-neutral-100'
                         title={t.centerVertical}
                       >
                         <MdAlignVerticalCenter className='text-xs' />
@@ -838,7 +838,7 @@ export default function ImageResizeTool() {
                             cropY: 0.5,
                           }))
                         }
-                        className='flex h-7 w-7 items-center justify-center rounded-full border border-black/10 bg-white hover:bg-neutral-100'
+                        className='flex h-7 w-7 items-center justify-center rounded-lg border border-black/10 bg-white hover:bg-neutral-100'
                         title={t.centerCrop}
                       >
                         <span>C</span>
@@ -859,7 +859,7 @@ export default function ImageResizeTool() {
                         label={
                           <span className='flex items-center gap-2'>
                             <span
-                              className='h-4 w-4 rounded-full'
+                              className='h-4 w-4 rounded-lg'
                               style={{ backgroundColor: getGridStroke(opt.value) }}
                             />
                             {opt.label}

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { RiExpandLeftRightLine } from 'react-icons/ri';
 import Wrapper from '../../atoms/Wrapper';
+import SectionHeader from '@/components/molecules/SectionHeader';
 
 interface SectionBeforeAfterProps {
   title?: string;
@@ -25,11 +26,7 @@ export default function SectionBeforeAfter({
   return (
     <section data-section='before-after' aria-labelledby={title ? 'before-after-title' : undefined}>
       <Wrapper>
-        {title && (
-          <h2 id='before-after-title' className='h3 mb-4 lg:mb-6'>
-            {title}
-          </h2>
-        )}
+        {title && <SectionHeader title={title} />}
 
         <div className='mx-auto max-w-2xl'>
           <div className='relative aspect-video overflow-hidden rounded-lg shadow-lg'>
@@ -60,7 +57,7 @@ export default function SectionBeforeAfter({
               <div className='absolute top-1/2 left-1/2 h-full w-1 -translate-x-1/2 bg-white shadow-lg' />
               <button
                 type='button'
-                className='absolute top-1/2 left-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg'
+                className='absolute top-1/2 left-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg bg-white shadow-lg'
               >
                 <RiExpandLeftRightLine className='text-primary h-5 w-5' />
               </button>
@@ -76,10 +73,10 @@ export default function SectionBeforeAfter({
               aria-label='Suwak porównania przed i po'
             />
 
-            <div className='absolute bottom-4 left-4 rounded-full bg-black/70 px-3 py-1 text-sm text-white'>
+            <div className='absolute bottom-4 left-4 rounded-lg bg-black/70 px-3 py-1 text-sm text-white'>
               {beforeLabel}
             </div>
-            <div className='absolute right-4 bottom-4 rounded-full bg-black/70 px-3 py-1 text-sm text-white'>
+            <div className='absolute right-4 bottom-4 rounded-lg bg-black/70 px-3 py-1 text-sm text-white'>
               {afterLabel}
             </div>
           </div>

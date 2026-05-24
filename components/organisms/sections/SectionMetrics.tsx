@@ -1,3 +1,4 @@
+import SectionHeader from '@/components/molecules/SectionHeader';
 import Wrapper from '../../atoms/Wrapper';
 import Card from '../Card';
 
@@ -19,11 +20,7 @@ export default function SectionMetrics({ title, metrics }: SectionMetricsProps) 
   return (
     <section data-section='metrics' aria-labelledby={title ? 'metrics-title' : undefined}>
       <Wrapper>
-        {title && (
-          <h2 id='metrics-title' className='h6 mb-4 lg:mb-6'>
-            {title}
-          </h2>
-        )}
+        {title && <SectionHeader title={title} />}
 
         <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-4'>
           {metrics.map((metric, index) => {
@@ -38,9 +35,9 @@ export default function SectionMetrics({ title, metrics }: SectionMetricsProps) 
                   <span className='h3'>{metric.value}</span>
                   <span className='text-light text-sm'>{metric.unit}</span>
                 </div>
-                <div className='bg-primary-light h-2 overflow-hidden rounded-full'>
+                <div className='bg-primary-light h-2 overflow-hidden rounded-lg'>
                   <div
-                    className={`h-full rounded-full ${metric.color}`}
+                    className={`h-full rounded-lg ${metric.color}`}
                     style={{ width: `${percentage}%` }}
                     role='progressbar'
                     aria-valuenow={metric.value}

@@ -471,7 +471,7 @@ export default async function ArticlePage({
           <JsonLd schema={jsonLd(article)} id={`schema-article-${article.slug}`} />
         </div>
         <div>
-          <ShareBlock url={url} title={shareTitle} className='mb-12' />{' '}
+          <ShareBlock url={url} title={shareTitle} />{' '}
           <TableOfContents rootSelector='#article-root' size='large' levels='h2' />
         </div>
       </Wrapper>

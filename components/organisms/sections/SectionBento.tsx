@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import Image from 'next/image';
 import ButtonLink from '../../atoms/buttons/ButtonLink';
+import SectionHeader from '@/components/molecules/SectionHeader';
 
 interface BentoItem {
   title: string;
@@ -20,11 +21,7 @@ interface SectionBentoProps {
 export default function SectionBento({ title, items }: SectionBentoProps) {
   return (
     <section data-section='bento' aria-labelledby={title ? 'bento-title' : undefined}>
-      {title && (
-        <h2 id='bento-title' className='h3 mb-4 lg:mb-6'>
-          {title}
-        </h2>
-      )}
+      {title && <SectionHeader title={title} />}
 
       <div className='grid auto-rows-[240px] grid-cols-2 gap-3 md:grid-cols-4'>
         {items.map((item, index) => {

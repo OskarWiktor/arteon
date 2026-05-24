@@ -86,7 +86,7 @@ export default function Badge({
   const ResolvedComponent = Component ?? 'span';
   const content = children ?? text;
 
-  const baseClasses = 'inline-flex items-center rounded-full font-medium';
+  const baseClasses = 'inline-flex items-center rounded-lg font-medium';
   const hoverClasses =
     ResolvedComponent !== 'span' && !disabled ? 'cursor-pointer hover:border-light' : '';
   const disabledClasses = disabled ? 'cursor-not-allowed opacity-40' : '';

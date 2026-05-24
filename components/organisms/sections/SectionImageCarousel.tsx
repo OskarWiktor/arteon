@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '../../atoms/Wrapper';
+import SectionHeader from '@/components/molecules/SectionHeader';
 
 interface CarouselSlide {
   imageSrc: string;
@@ -50,11 +51,7 @@ export default function SectionImageCarousel({
   return (
     <section data-section='image-carousel' aria-labelledby={title ? 'carousel-title' : undefined}>
       <Wrapper>
-        {title && (
-          <h2 id='carousel-title' className='h3 mb-4 lg:mb-6'>
-            {title}
-          </h2>
-        )}
+        {title && <SectionHeader title={title} />}
 
         <div
           className={`relative mx-auto overflow-hidden rounded-lg ${variant === 'fullWidth' ? 'max-w-full' : 'max-w-4xl'}`}
@@ -93,7 +90,7 @@ export default function SectionImageCarousel({
               <button
                 type='button'
                 onClick={goToPrev}
-                className='absolute top-1/2 left-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow-lg transition hover:bg-white'
+                className='absolute top-1/2 left-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg bg-white/90 shadow-lg transition hover:bg-white'
                 aria-label='Poprzedni slajd'
               >
                 <RiArrowLeftLine className='text-primary h-5 w-5' />
@@ -102,7 +99,7 @@ export default function SectionImageCarousel({
               <button
                 type='button'
                 onClick={goToNext}
-                className='absolute top-1/2 right-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow-lg transition hover:bg-white'
+                className='absolute top-1/2 right-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg bg-white/90 shadow-lg transition hover:bg-white'
                 aria-label='Następny slajd'
               >
                 <RiArrowRightSLine className='text-primary h-5 w-5' />
@@ -114,7 +111,7 @@ export default function SectionImageCarousel({
                     key={index}
                     type='button'
                     onClick={() => setCurrentSlide(index)}
-                    className={`h-2 w-8 rounded-full transition ${index === currentSlide ? 'bg-white' : 'bg-white/30'}`}
+                    className={`h-2 w-8 rounded-lg transition ${index === currentSlide ? 'bg-white' : 'bg-white/30'}`}
                     aria-label={`Przejdź do slajdu ${index + 1}`}
                   />
                 ))}

@@ -105,7 +105,7 @@ export default function CarouselSkeleton({
       </div>
       <div className='flex justify-center gap-2'>
         {Array.from({ length: Math.min(count, 5) }).map((_, i) => (
-          <Shimmer key={i} className='h-2.5 w-2.5 !rounded-full' />
+          <Shimmer key={i} className='h-2.5 w-2.5 !rounded-lg' />
         ))}
       </div>
     </div>

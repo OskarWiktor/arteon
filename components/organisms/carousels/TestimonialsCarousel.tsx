@@ -10,6 +10,7 @@ import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 
 import testimonialsPl from '@/data/pl/testimonials.json';
 import { cn } from '@/lib/utils';
+import { focusRingClasses } from '@/lib/ui-classes';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
 
@@ -64,9 +65,7 @@ export default function TestimonialsCarousel({
             'flex gap-4 overflow-x-auto',
             'no-scrollbar snap-x snap-mandatory scroll-smooth',
             'pb-8',
-            'focus:outline-none focus-visible:ring-2',
-            'focus-visible:ring-primary',
-            'focus-visible:ring-offset-2 focus-visible:ring-offset-white',
+            focusRingClasses,
           )}
           role='region'
           aria-roledescription='carousel'

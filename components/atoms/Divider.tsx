@@ -11,14 +11,13 @@ const HEIGHT_BY_SIZE: Record<DividerSize, CSSProperties['height']> = {
 interface DividerProps {
   size?: DividerSize;
   line?: boolean;
-  className?: string;
 }
 
-export default function Divider({ size = 'md', line = false, className }: DividerProps) {
+export default function Divider({ size = 'md', line = false }: DividerProps) {
   return (
     <div
       aria-hidden='true'
-      className={['relative w-full shrink-0', className].filter(Boolean).join(' ')}
+      className='relative w-full shrink-0'
       style={{ height: HEIGHT_BY_SIZE[size] }}
     >
       {line && (

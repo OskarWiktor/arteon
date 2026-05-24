@@ -200,7 +200,7 @@
     {
       "type": "sectionDemo",
       "title": "Rajausmuodot",
-      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Suorakulmio</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Neliö</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Ympyrä</span></div></div>",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Suorakulmio</span><span class=\"inline-flex items-center rounded-lg font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Neliö</span><span class=\"inline-flex items-center rounded-lg font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Ympyrä</span></div></div>",
       "html": "<p class=\"text-mid\">Välilehdessä <strong>Rajausmuodot</strong> valitset viedyn kuvan muodon: suorakulmio (valituilla mittasuhteilla), neliö (pakottaa 1:1) tai ympyrä (läpinäkyvällä taustalla).</p><p class=\"text-mid mt-3\">Ympyrämuoto luo pyöreän avatarin, jossa ympyrän ulkopuolinen alue on läpinäkyvä. Työkalu vaihtaa muodon automaattisesti PNG:hen tai WebP:hen, koska JPG ei tue läpinäkyvyyttä.</p>"
     },
     {

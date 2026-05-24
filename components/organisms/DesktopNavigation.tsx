@@ -22,6 +22,8 @@ import {
 } from '@/components/atoms/NavIcons';
 
 import InlineLink from '../atoms/InlineLink';
+import { cn } from '@/lib/utils';
+import { focusRingClasses } from '@/lib/ui-classes';
 const plUi = {
   closeServicesList: 'Zamknij listę usług',
   openServicesList: 'Otwórz listę usług',
@@ -194,7 +196,7 @@ export default function DesktopNavigation() {
               aria-expanded={isToolsOpen}
               aria-controls={toolsMenuId}
               ref={toolsBtnRef}
-              className='text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white'
+              className={cn('text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors', focusRingClasses)}
               aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
             >
               <span
@@ -262,7 +264,7 @@ export default function DesktopNavigation() {
                   aria-expanded={isToolsOpen}
                   aria-controls={toolsMenuId}
                   ref={toolsBtnRef}
-                  className='text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white'
+                  className={cn('text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors', focusRingClasses)}
                   aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
                 >
                   <span
@@ -298,7 +300,7 @@ export default function DesktopNavigation() {
                   aria-expanded={isOfferOpen}
                   aria-controls={menuId}
                   ref={offerBtnRef}
-                  className='text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white'
+                  className={cn('text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors', focusRingClasses)}
                   aria-label={isOfferOpen ? plUi.closeServicesList : plUi.openServicesList}
                 >
                   <span
@@ -334,7 +336,7 @@ export default function DesktopNavigation() {
                   aria-expanded={isAboutOpen}
                   aria-controls={aboutMenuId}
                   ref={aboutBtnRef}
-                  className='text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white'
+                  className={cn('text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors', focusRingClasses)}
                   aria-label={isAboutOpen ? plUi.closeAboutList : plUi.openAboutList}
                 >
                   <span
@@ -390,7 +392,7 @@ export default function DesktopNavigation() {
                           prefetch={false}
                           onMouseEnter={() => handleCategoryHover(section.key)}
                           onFocus={() => handleCategoryHover(section.key)}
-                          className={`group/cat focus-visible:ring-primary flex w-full items-center justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 ${
+                          className={`group/cat flex w-full items-center justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200 ${
                             isActiveCategory
                               ? 'text-primary bg-white'
                               : 'text-primary-mid hover:text-primary hover:bg-white'
@@ -425,7 +427,7 @@ export default function DesktopNavigation() {
                             key={item.href}
                             href={item.href}
                             prefetch={false}
-                            className='group/link focus-visible:ring-primary flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2'
+                            className='group/link flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white'
                           >
                             {ItemIcon ? (
                               <ItemIcon
@@ -433,7 +435,7 @@ export default function DesktopNavigation() {
                                 aria-hidden='true'
                               />
                             ) : (
-                              <span className='bg-primary-light h-2 w-2 shrink-0 rounded-full' />
+                              <span className='bg-primary-light h-2 w-2 shrink-0 rounded-lg' />
                             )}
                             <span className='text-mid group-hover/link:text-primary text-sm font-medium transition-colors'>
                               {item.title}
@@ -479,7 +481,7 @@ export default function DesktopNavigation() {
                           type='button'
                           onMouseEnter={() => handleToolsCategoryHover(section.key)}
                           onFocus={() => handleToolsCategoryHover(section.key)}
-                          className={`group/cat focus-visible:ring-primary flex w-full items-center justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 ${
+                          className={`group/cat flex w-full items-center justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200 ${
                             isActiveCategory
                               ? 'text-primary bg-white'
                               : 'text-primary-mid hover:text-primary hover:bg-white'
@@ -532,7 +534,7 @@ export default function DesktopNavigation() {
                             key={item.href}
                             href={item.href}
                             prefetch={false}
-                            className='group/link focus-visible:ring-primary flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2'
+                            className='group/link flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white'
                           >
                             {ItemIcon ? (
                               <ItemIcon
@@ -540,7 +542,7 @@ export default function DesktopNavigation() {
                                 aria-hidden='true'
                               />
                             ) : (
-                              <span className='bg-primary-light h-2 w-2 shrink-0 rounded-full' />
+                              <span className='bg-primary-light h-2 w-2 shrink-0 rounded-lg' />
                             )}
                             <span className='text-primary group-hover/link:text-primary text-sm font-medium transition-colors'>
                               {item.title}
@@ -576,7 +578,7 @@ export default function DesktopNavigation() {
                     key={item.href}
                     href={item.href}
                     prefetch={false}
-                    className='group/link focus-visible:ring-primary flex items-center gap-3 rounded-lg px-4 py-3 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2'
+                    className='group/link flex items-center gap-3 rounded-lg px-4 py-3 transition-colors duration-150 hover:bg-white '
                   >
                     {item.icon ? (
                       <span className='text-primary-mid group-hover/link:text-primary shrink-0 transition-colors'>

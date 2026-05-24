@@ -22,6 +22,8 @@ import ButtonIcon from '@/components/atoms/buttons/ButtonIcon';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
+import { cn } from '@/lib/utils';
+import { focusRingClasses } from '@/lib/ui-classes';
 
 const SearchDialog = dynamic(() => import('@/components/organisms/SearchDialog'), { ssr: false });
 
@@ -86,7 +88,10 @@ export default function Navigation() {
             <button
               type='button'
               onClick={() => startTransition(() => setIsSearchOpen(true))}
-              className='text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-md transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white'
+              className={cn(
+                'text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-md transition-colors',
+                focusRingClasses,
+              )}
               aria-label={`${dict.search.ariaSearch} (Ctrl+K)`}
             >
               <RiSearchLine className='h-5 w-5' aria-hidden='true' />
@@ -109,7 +114,7 @@ export default function Navigation() {
             <button
               type='button'
               onClick={() => startTransition(() => setIsSearchOpen(true))}
-              className='text-primary hover:bg-primary-light hover:text-primary focus-visible:ring-primary flex h-10 w-10 items-center justify-center rounded-md transition-colors focus:outline-none focus-visible:ring-2'
+              className={cn('text-primary hover:bg-primary-light hover:text-primary flex h-10 w-10 items-center justify-center rounded-md transition-colors', focusRingClasses)}
               aria-label={dict.search.ariaSearch}
             >
               <RiSearchLine className='h-6 w-6' aria-hidden='true' />

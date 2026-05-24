@@ -77,7 +77,7 @@ export default function SectionContactForm({
           <ul className='space-y-3'>
             {benefits.map((item, i) => (
               <li key={i} className='flex items-center gap-3'>
-                <div className='bg-accent/10 flex h-6 w-6 items-center justify-center rounded-full'>
+                <div className='bg-accent/10 flex h-6 w-6 items-center justify-center rounded-lg'>
                   {item.icon}
                 </div>
                 <span className='text-sm'>{item.label}</span>

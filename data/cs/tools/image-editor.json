@@ -205,7 +205,7 @@
     {
       "type": "sectionDemo",
       "title": "Tvary ořezu",
-      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Obdélník</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Čtverec</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Kruh</span></div></div>",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Obdélník</span><span class=\"inline-flex items-center rounded-lg font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Čtverec</span><span class=\"inline-flex items-center rounded-lg font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Kruh</span></div></div>",
       "html": "<p class=\"text-mid\">V záložce <strong>Tvary ořezu</strong> vybíráte tvar exportovaného obrázku: obdélník (se zvolenými proporcemi), čtverec (vynutí 1:1) nebo kruh (s průhledným pozadím).</p><p class=\"text-mid mt-3\">Tvar kruhu vytvoří kulatý avatar s průhledným pozadím mimo kruh. Nástroj automaticky přepne formát na PNG nebo WebP, protože JPG nepodporuje průhlednost.</p>"
     },
     {

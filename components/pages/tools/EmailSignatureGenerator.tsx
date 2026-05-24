@@ -463,7 +463,7 @@ export default function EmailSignatureGenerator() {
                           <button
                             type='button'
                             onClick={() => removeCustomColor(color)}
-                            className='bg-error-icon absolute -top-1.5 -right-1.5 hidden h-5 w-5 items-center justify-center rounded-full text-white group-hover:flex'
+                            className='bg-error-icon absolute -top-1.5 -right-1.5 hidden h-5 w-5 items-center justify-center rounded-lg text-white group-hover:flex'
                             aria-label='Usuń kolor'
                           >
                             <RiDeleteBinLine className='h-3 w-3' />

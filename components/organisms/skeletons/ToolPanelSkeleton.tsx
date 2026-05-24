@@ -77,10 +77,10 @@ function MetaCounterPanel() {
         <div key={i} className='space-y-2'>
           <div className='flex items-center justify-between'>
             <Shimmer className='h-3.5 w-24 !rounded-md' />
-            <Shimmer className='h-6 w-16 !rounded-full' />
+            <Shimmer className='h-6 w-16 !rounded-lg' />
           </div>
           <Shimmer className='h-10 w-full' />
-          <Shimmer className='h-2 w-full !rounded-full' />
+          <Shimmer className='h-2 w-full !rounded-lg' />
           <Shimmer className='h-3 w-48 !rounded-md' />
         </div>
       ))}
@@ -123,8 +123,8 @@ function ContrastCheckerPanel() {
           >
             <Shimmer className='h-4 w-32 !rounded-md' />
             <div className='flex gap-2'>
-              <Shimmer className='h-6 w-16 !rounded-full' />
-              <Shimmer className='h-6 w-16 !rounded-full' />
+              <Shimmer className='h-6 w-16 !rounded-lg' />
+              <Shimmer className='h-6 w-16 !rounded-lg' />
             </div>
           </div>
         ))}
@@ -181,9 +181,9 @@ function WordCountPanel() {
         <div className='space-y-2'>
           <div className='flex items-center justify-between'>
             <Shimmer className='h-4 w-32 !rounded-md' />
-            <Shimmer className='h-6 w-16 !rounded-full' />
+            <Shimmer className='h-6 w-16 !rounded-lg' />
           </div>
-          <Shimmer className='h-2 w-full !rounded-full' />
+          <Shimmer className='h-2 w-full !rounded-lg' />
         </div>
         <ButtonShimmer width='w-full' />
       </SectionBox>
@@ -295,7 +295,7 @@ function EmailSignaturePanel() {
         <Shimmer className='h-4 w-16 !rounded-md' />
         <div className='flex flex-wrap gap-1'>
           {[1, 2, 3, 4, 5].map(i => (
-            <Shimmer key={i} className='h-7 w-16 !rounded-full' />
+            <Shimmer key={i} className='h-7 w-16 !rounded-lg' />
           ))}
         </div>
       </SectionBox>

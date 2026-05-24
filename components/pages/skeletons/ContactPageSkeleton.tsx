@@ -1,8 +1,8 @@
-import HeroBannerSkeleton from './HeroBannerSkeleton';
-import SectionInfoSkeleton from './SectionInfoSkeleton';
-import DividerSkeleton from './GapSkeleton';
-import CTABannerSkeleton from './CTABannerSkeleton';
-import Shimmer from './Shimmer';
+import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
+import SectionInfoSkeleton from '../../organisms/skeletons/SectionInfoSkeleton';
+import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
+import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
+import Shimmer from '../../organisms/skeletons/Shimmer';
 
 export default function ContactPageSkeleton() {
   return (

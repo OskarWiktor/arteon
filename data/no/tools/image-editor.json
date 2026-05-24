@@ -203,7 +203,7 @@
     {
       "type": "sectionDemo",
       "title": "Beskjæringsformer",
-      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Rektangel</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Kvadrat</span><span class=\"inline-flex items-center rounded-full font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Sirkel</span></div></div>",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Rektangel</span><span class=\"inline-flex items-center rounded-lg font-medium px-2.5 py-1 text-sm bg-primary/10 text-primary\">Kvadrat</span><span class=\"inline-flex items-center rounded-lg font-medium px-2.5 py-1 text-sm bg-neutral-100 text-neutral-700 border border-black/10\">Sirkel</span></div></div>",
       "html": "<p class=\"text-mid\">I fanen <strong>Beskjæringsformer</strong> velger du formen på det eksporterte bildet: rektangel (med valgte proporsjoner), kvadrat (tvinger 1:1) eller sirkel (med gjennomsiktig bakgrunn).</p><p class=\"text-mid mt-3\">Sirkelformen lager en rund avatar med gjennomsiktig bakgrunn utenfor sirkelen. Verktøyet bytter automatisk format til PNG eller WebP, siden JPG ikke støtter gjennomsiktighet.</p>"
     },
     {

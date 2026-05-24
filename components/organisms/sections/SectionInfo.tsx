@@ -34,7 +34,6 @@ export default function SectionInfo({
         subtitle={subtitle}
         title={title}
         description={description}
-        titleClassName=' scroll-mt-26'
         titleId={headingId}
       />
 

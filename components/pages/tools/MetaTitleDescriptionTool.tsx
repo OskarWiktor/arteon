@@ -159,7 +159,7 @@ export default function MetaTitleDescriptionTool() {
           <div className='rounded-lg border border-neutral-200 bg-white p-4 text-sm shadow-inner'>
             <div className='flex gap-3'>
               {/* Favicon w kole z ramką - osobna kolumna */}
-              <div className='flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border border-neutral-300 bg-white p-1'>
+              <div className='flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg border border-neutral-300 bg-white p-1'>
                 <img src='/favicon-32x32.png' alt='Arteon' className='h-8 w-8 rounded-sm' />
               </div>
 
@@ -172,9 +172,9 @@ export default function MetaTitleDescriptionTool() {
                 <div className='flex items-center gap-1'>
                   <p className='text-mid truncate text-[13px]!'>{url || t.urlPlaceholder}</p>
                   <div className='ml-3 flex flex-col gap-0.5'>
-                    <div className='h-0.5 w-0.5 rounded-full bg-neutral-500'></div>
-                    <div className='h-0.5 w-0.5 rounded-full bg-neutral-500'></div>
-                    <div className='h-0.5 w-0.5 rounded-full bg-neutral-500'></div>
+                    <div className='h-0.5 w-0.5 rounded-lg bg-neutral-500'></div>
+                    <div className='h-0.5 w-0.5 rounded-lg bg-neutral-500'></div>
+                    <div className='h-0.5 w-0.5 rounded-lg bg-neutral-500'></div>
                   </div>
                 </div>
               </div>

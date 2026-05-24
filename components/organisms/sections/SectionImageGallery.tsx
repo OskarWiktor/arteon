@@ -3,6 +3,9 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { RiCloseLine, RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '../../atoms/Wrapper';
+import SectionHeader from '@/components/molecules/SectionHeader';
+import { cn } from '@/lib/utils';
+import { focusRingClasses } from '@/lib/ui-classes';
 
 interface GalleryImage {
   src: string;
@@ -40,11 +43,7 @@ export default function SectionImageGallery({
 
   const galleryContent = (
     <>
-      {title && (
-        <h2 id='gallery-title' className='h3 mb-4 lg:mb-6'>
-          {title}
-        </h2>
-      )}
+      {title && <SectionHeader title={title} />}
 
       <div
         className={`grid ${grid === 'two' ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-2' : grid === 'four' ? 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4' : 'grid-cols-2 md:grid-cols-4 lg:grid-cols-6'} gap-4`}
@@ -54,7 +53,7 @@ export default function SectionImageGallery({
             key={index}
             type='button'
             onClick={() => openLightbox(index)}
-            className='group focus-visible:ring-primary relative aspect-square overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2'
+            className={cn('group relative aspect-square overflow-hidden rounded-lg', focusRingClasses)}
           >
             <Image
               src={image.src}

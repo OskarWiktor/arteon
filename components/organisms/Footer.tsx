@@ -278,28 +278,6 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
                   </a>
                 </p>
               </address>
-              {/* NAV-001: Tymczasowo ukryte linki do media społecznościowe
-              <div className="flex items-center gap-3">
-                <a
-                  href="https://www.instagram.com/arteon.pl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram Arteon"
-                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                >
-                  <RiInstagramLine className="h-6 w-6 text-primary" aria-hidden="true" />
-                </a>
-                <a
-                  href="https://www.facebook.com/people/Arteon/61583260915021/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook Arteon"
-                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                >
-                  <RiFacebookFill className="h-6 w-6 text-primary" aria-hidden="true" />
-                </a>
-              </div>
-              */}
             </section>
 
             <nav

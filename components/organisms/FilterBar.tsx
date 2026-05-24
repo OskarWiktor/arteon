@@ -202,7 +202,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
           <button
             type='button'
             onClick={onClose}
-            className='text-primary hover:bg-primary-light rounded-full p-1.5'
+            className='text-primary hover:bg-primary-light rounded-lg p-1.5'
             aria-label='Zamknij'
           >
             <RiCloseLine className='h-5 w-5' />

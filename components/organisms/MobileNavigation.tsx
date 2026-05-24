@@ -7,8 +7,6 @@ import { createPortal } from 'react-dom';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import Subtitle from '../atoms/typography/Subtitle';
 import IconText from '../atoms/IconText';
-// NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
-// import SocialIconLink from '../../ui/SocialIconLink';
 import {
   ABOUT_NAV_ITEMS_PL,
   MOBILE_NAV_ITEMS_PL,
@@ -24,8 +22,6 @@ import { useScrollLock } from '@/hooks/useScrollLock';
 import { useEventListener } from '@/hooks/useEventListener';
 import { useTimeout } from '@/hooks/useTimeout';
 import { NavArrowDownSLine as RiArrowDownSLine } from '@/components/atoms/NavIcons';
-// NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
-// import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {
