@@ -8,9 +8,9 @@ import Badge from '@/components/atoms/Badge';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import ToolUploadContent from '@/components/organisms/tools/ToolUploadContent';
 import ToolFileRow from '@/components/organisms/tools/ToolFileRow';
-import Checkbox from '@/components/atoms/form/Checkbox';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import ToolProgressBar from '@/components/organisms/tools/ToolProgressBar';
-import ToolRangeInput from '@/components/organisms/tools/ToolRangeInput';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { downloadFromUrl } from '@/utils/download';
@@ -172,7 +172,7 @@ export default function JpgPngToWebp() {
 
           <div>
             <h3 className='h6 mt-8 mb-2'>{t.setQuality}</h3>
-            <ToolRangeInput
+            <InputRangeWithLabel
               value={quality}
               min={60}
               max={95}
@@ -181,7 +181,7 @@ export default function JpgPngToWebp() {
               helper={t.qualityHelper}
             />
 
-            <Checkbox
+            <InputCheckboxWithLabel
               id='auto-download'
               checked={autoDownload}
               onChange={setAutoDownload}
@@ -262,7 +262,7 @@ export default function JpgPngToWebp() {
               </Button>
             </div>
 
-            <Checkbox
+            <InputCheckboxWithLabel
               id='webp-include-csv'
               checked={includeCsvReport}
               onChange={setIncludeCsvReport}

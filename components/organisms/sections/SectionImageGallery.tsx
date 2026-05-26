@@ -53,7 +53,10 @@ export default function SectionImageGallery({
             key={index}
             type='button'
             onClick={() => openLightbox(index)}
-            className={cn('group relative aspect-square overflow-hidden rounded-lg', focusRingClasses)}
+            className={cn(
+              'group relative aspect-square overflow-hidden rounded-lg',
+              focusRingClasses,
+            )}
           >
             <Image
               src={image.src}

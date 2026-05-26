@@ -3,6 +3,7 @@
 import Button from '@/components/atoms/buttons/Button';
 import ToolSection from '@/components/organisms/tools/ToolSection';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import InputColor from '@/components/atoms/form/InputColor';
 import { downloadBlob } from '@/utils/download';
 import { buildSignatureHtml } from '@/lib/tools/email/buildSignatureHtml';
 import { exportSignatureAsHtml } from '@/lib/tools/email/exportSignature';
@@ -428,11 +429,10 @@ export default function EmailSignatureGenerator() {
                   <p className='tool-label mb-2'>{t.textStyle.addColor}</p>
                   <div className='flex items-center gap-2'>
                     <div className='relative'>
-                      <input
-                        type='color'
+                      <InputColor
                         value={pendingCustomColor}
                         onChange={e => setPendingCustomColor(e.target.value)}
-                        className='absolute inset-0 h-full w-full cursor-pointer opacity-0'
+                        className='absolute inset-0 h-full! w-full! opacity-0'
                       />
                       <div
                         className='h-8 w-8 cursor-pointer rounded border border-neutral-300'

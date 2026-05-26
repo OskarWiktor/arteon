@@ -10,7 +10,7 @@ import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useTimeout } from '@/hooks/useTimeout';
-import Checkbox from '../atoms/form/Checkbox';
+import InputCheckboxWithLabel from '../molecules/form/InputCheckboxWithLabel';
 import { cn } from '@/lib/utils';
 import { focusRingClasses } from '@/lib/ui-classes';
 
@@ -215,7 +215,7 @@ export default function CookieConsent({
                   </span>
                 </div>
                 <div className='flex w-[24px] items-center justify-center'>
-                  <Checkbox
+                  <InputCheckboxWithLabel
                     aria-label={t.analyticsLabel}
                     checked={analyticsChoice}
                     onChange={() => setAnalyticsChoice(v => !v)}
@@ -231,7 +231,7 @@ export default function CookieConsent({
                   <span className='text-dark ml-2 text-sm font-medium'>{t.adsDescription}</span>
                 </div>
                 <div className='flex w-[24px] items-center justify-center'>
-                  <Checkbox
+                  <InputCheckboxWithLabel
                     aria-label={t.adsLabel}
                     checked={adsChoice}
                     onChange={() => setAdsChoice(v => !v)}

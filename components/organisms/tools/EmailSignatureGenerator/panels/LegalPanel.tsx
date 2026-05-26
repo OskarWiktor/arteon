@@ -1,7 +1,8 @@
 import type { SignatureConfig, StyleConfig } from '@/types/tools/email';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import Textarea from '@/components/atoms/form/Textarea';
-import Checkbox from '@/components/atoms/form/Checkbox';
+import InputColor from '@/components/atoms/form/InputColor';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 
 type Props = {
   config: SignatureConfig;
@@ -23,7 +24,7 @@ export default function LegalPanel({ config, styleConfig, onTextChange, onStyleC
         rows={6}
         placeholder={t.legal.placeholder}
       />
-      <Checkbox
+      <InputCheckboxWithLabel
         id='divider-toggle'
         checked={styleConfig.showDivider}
         onChange={v => onStyleChange('showDivider', v)}
@@ -88,11 +89,10 @@ export default function LegalPanel({ config, styleConfig, onTextChange, onStyleC
                 {t.legal.dividerColorDefault}
               </button>
               <div className='relative'>
-                <input
-                  type='color'
+                <InputColor
                   value={styleConfig.dividerColor || '#e5e7eb'}
                   onChange={e => onStyleChange('dividerColor', e.target.value)}
-                  className='absolute inset-0 h-full w-full cursor-pointer opacity-0'
+                  className='absolute inset-0 h-full! w-full! opacity-0'
                 />
                 <div
                   className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded border-2 ${styleConfig.dividerColor ? 'border-mid' : 'border-neutral-300'}`}

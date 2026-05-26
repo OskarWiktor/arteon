@@ -5,6 +5,7 @@ import Badge from '../../atoms/Badge';
 import Card from '../Card';
 import IconText from '../../atoms/IconText';
 import type { SectionPricesProps } from '@/types/ui';
+import { cn } from '@/lib/utils';
 export type { SectionPricesPlan, Note, SectionPricesProps } from '@/types/ui';
 
 export default function SectionPrices({
@@ -51,11 +52,11 @@ export default function SectionPrices({
               padding='lg'
               aria-labelledby={itemHeadingId}
               aria-describedby={itemDescribedBy}
-              className={[
+              className={cn(
                 'group relative flex h-full flex-col justify-between',
                 'ring-1 ring-neutral-200 duration-200',
                 plan.lastPlan ? 'ring-2 ring-neutral-900' : '',
-              ].join(' ')}
+              )}
             >
               {plan.badgeLabel && (
                 <Badge

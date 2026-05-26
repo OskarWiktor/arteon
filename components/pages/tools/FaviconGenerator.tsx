@@ -22,7 +22,8 @@ import { revokeObjectUrl } from '@/utils/objectUrl';
 import { createZipBlob, type ZipFileInput } from '@/utils/zip';
 import { useLocale, type Locale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/favicon';
-import Checkbox from '@/components/atoms/form/Checkbox';
+import InputColor from '@/components/atoms/form/InputColor';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import FileDropzone from '@/components/molecules/FileDropzone';
 
 function createWebmanifest(
@@ -268,7 +269,7 @@ export default function FaviconGenerator() {
                         htmlFor={`size-${size}`}
                         className={`inline-flex cursor-pointer items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${checked ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
                       >
-                        <Checkbox
+                        <InputCheckboxWithLabel
                           id={`size-${size}`}
                           checked={checked}
                           onChange={() => toggleSize(size)}
@@ -282,7 +283,7 @@ export default function FaviconGenerator() {
               </ToolInfo>
 
               <ToolInfo className='mt-4 gap-2'>
-                <Checkbox
+                <InputCheckboxWithLabel
                   id='transparent-bg'
                   checked={transparentBackground}
                   onChange={setTransparentBackground}
@@ -291,30 +292,29 @@ export default function FaviconGenerator() {
 
                 <div className='flex items-center gap-2'>
                   <span className='tool-meta'>{t.backgroundColor}</span>
-                  <input
-                    type='color'
+                  <InputColor
                     value={backgroundColor}
                     onChange={e => setBackgroundColor(e.target.value)}
                     disabled={transparentBackground}
-                    className='tool-color-picker h-8! w-7!'
+                    className='h-8! w-7!'
                   />
                 </div>
               </ToolInfo>
 
               <ToolInfo className='mt-4 flex flex-wrap items-center gap-2'>
-                <Checkbox
+                <InputCheckboxWithLabel
                   id='include-ico'
                   checked={includeIco}
                   onChange={setIncludeIco}
                   label={t.generateFaviconIco}
                 />
-                <Checkbox
+                <InputCheckboxWithLabel
                   id='include-webmanifest'
                   checked={includeWebmanifest}
                   onChange={setIncludeWebmanifest}
                   label={t.includeWebmanifest}
                 />
-                <Checkbox
+                <InputCheckboxWithLabel
                   id='auto-download'
                   checked={autoDownload}
                   onChange={setAutoDownload}

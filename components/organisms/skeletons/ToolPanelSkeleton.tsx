@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import Shimmer from './Shimmer';
 
 export type ToolPanelVariant =
@@ -365,10 +366,10 @@ function SideAdShimmer() {
 export default function ToolPanelSkeleton({ variant = 'default' }: ToolPanelSkeletonProps) {
   return (
     <div
-      className={[
+      className={cn(
         'mx-auto w-[94%] max-w-[1420px]',
         'xl:grid xl:w-full xl:max-w-none xl:grid-cols-[1fr_160px_minmax(0,1420px)_160px_1fr] xl:gap-x-4',
-      ].join(' ')}
+      )}
     >
       <div className='hidden xl:col-start-2 xl:block'>
         <SideAdShimmer />

@@ -1,7 +1,8 @@
 import type { StyleConfig, FontSizeOption, BorderSides } from '@/types/tools/email';
 import { FONT_OPTIONS } from '@/lib/tools/email/signatureDefaults';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import Checkbox from '@/components/atoms/form/Checkbox';
+import InputColor from '@/components/atoms/form/InputColor';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 
 type ThemePreset = {
   id: string;
@@ -62,33 +63,30 @@ export default function AppearancePanel({
         <div>
           <p className='tool-label mb-1'>{t.appearance.accentColor}</p>
           <div className='flex items-center gap-2'>
-            <input
-              type='color'
+            <InputColor
               value={styleConfig.accentColor}
               onChange={e => onStyleChange('accentColor', e.target.value)}
-              className='tool-color-picker h-9! w-9!'
+              className='h-9! w-9!'
             />
           </div>
         </div>
         <div>
           <p className='tool-label mb-1'>{t.appearance.textColor}</p>
           <div className='flex items-center gap-2'>
-            <input
-              type='color'
+            <InputColor
               value={styleConfig.textColor}
               onChange={e => onStyleChange('textColor', e.target.value)}
-              className='tool-color-picker h-9! w-9!'
+              className='h-9! w-9!'
             />
           </div>
         </div>
         <div>
           <p className='tool-label mb-1'>{t.appearance.backgroundColor}</p>
           <div className='flex items-center gap-2'>
-            <input
-              type='color'
+            <InputColor
               value={styleConfig.backgroundColor}
               onChange={e => onStyleChange('backgroundColor', e.target.value)}
-              className='tool-color-picker h-9! w-9!'
+              className='h-9! w-9!'
             />
           </div>
         </div>
@@ -139,7 +137,7 @@ export default function AppearancePanel({
         <div className='flex flex-wrap gap-3'>
           {(['left', 'right', 'top', 'bottom'] as (keyof BorderSides)[]).map(side => (
             <label key={side} className='flex cursor-pointer items-center gap-1.5'>
-              <Checkbox
+              <InputCheckboxWithLabel
                 checked={styleConfig.border[side]}
                 onChange={checked => {
                   const newBorder = { ...styleConfig.border, [side]: checked };

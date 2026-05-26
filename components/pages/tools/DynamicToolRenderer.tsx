@@ -151,6 +151,7 @@ const UNIT_KEYS = new Set([
   'remToPx',
   'emToPx',
   'cmToPxDpi',
+  'pxToCmDpi',
   'mmToPxDpi',
   'inchesToPxDpi',
   'dpiToPpi',

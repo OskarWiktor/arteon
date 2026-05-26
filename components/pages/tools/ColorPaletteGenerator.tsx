@@ -7,7 +7,7 @@ import ToolInfo from '@/components/atoms/ToolInfo';
 import ToolHelper from '@/components/organisms/tools/ToolHelper';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
-import ToolColorInput from '@/components/atoms/ToolColorInput';
+import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
 import { useTimeout } from '@/hooks/useTimeout';
 import { formatHsl, normalizeHex, randomHexColor, rgbToHex } from '@/lib/tools/color/convert';
 import { createPaletteFromHex, type PaletteGroupId } from '@/lib/tools/color/palette';
@@ -79,12 +79,13 @@ export default function ColorPaletteGenerator() {
       <ToolSection>
         <form onSubmit={handleSubmit} className='space-y-4'>
           <div className='flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between'>
-            <ToolColorInput
+            <InputColorWithLabel
+              withTextField
               value={inputColor}
               onChange={setInputColor}
               ariaLabel={t.selectBaseColor}
               placeholder={DEFAULT_BASE_COLOR}
-              inputClassName='h-10 w-32'
+              textFieldClassName='h-10 w-32'
             />
 
             <div className='flex flex-wrap items-center gap-2'>

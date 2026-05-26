@@ -9285,6 +9285,95 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'pxToCmDpi',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-px-na-cm',
+        title: 'px na cm',
+        description: 'Przelicz piksele na centymetry z uwzglednieniem DPI. Dla grafiki i druku.',
+      },
+      en: {
+        slug: 'px-to-cm-converter',
+        title: 'px to cm',
+        description: 'Convert pixels to centimeters with DPI support. For graphics and print.',
+      },
+      de: {
+        slug: 'px-in-cm-umrechner',
+        title: 'px in cm',
+        description: 'Pixel in Zentimeter umrechnen mit DPI-Unterstützung.',
+      },
+      fr: {
+        slug: 'convertisseur-px-en-cm',
+        title: 'px en cm',
+        description: 'Convertissez pixels en cm avec support DPI.',
+      },
+      es: {
+        slug: 'convertidor-px-a-cm',
+        title: 'px a cm',
+        description: 'Convierte píxeles a cm con soporte DPI.',
+      },
+      pt: {
+        slug: 'conversor-px-para-cm',
+        title: 'px para cm',
+        description: 'Converta píxeis em cm com suporte DPI.',
+      },
+      it: {
+        slug: 'convertitore-px-in-cm',
+        title: 'px in cm',
+        description: 'Converti pixel in cm con supporto DPI.',
+      },
+      nl: {
+        slug: 'px-naar-cm-converter',
+        title: 'px naar cm',
+        description: 'Reken pixels om naar cm met DPI-ondersteuning.',
+      },
+      cs: {
+        slug: 'prevodnik-px-na-cm',
+        title: 'px na cm',
+        description: 'Převeďte pixely na cm s podporou DPI.',
+      },
+      da: {
+        slug: 'px-til-cm-konverter',
+        title: 'px til cm',
+        description: 'Omregn pixels til cm med DPI-understøttelse.',
+      },
+      sv: {
+        slug: 'px-till-cm-omvandlare',
+        title: 'px till cm',
+        description: 'Omvandla pixlar till cm med DPI-stöd.',
+      },
+      no: {
+        slug: 'px-til-cm-kalkulator',
+        title: 'px til cm',
+        description: 'Regn om piksler til cm med DPI-støtte.',
+      },
+      fi: {
+        slug: 'px-cm-muunnin',
+        title: 'px cm:ksi',
+        description: 'Muunna pikselit senttimetreiksi DPI-tuella.',
+      },
+      hu: {
+        slug: 'px-cm-atvalto',
+        title: 'px cm-re',
+        description: 'Pixel átváltása centiméterre DPI támogatással.',
+      },
+      ro: {
+        slug: 'convertor-px-in-cm',
+        title: 'px în cm',
+        description: 'Convertiți pixeli în cm cu suport DPI.',
+      },
+      el: {
+        slug: 'metatropeas-px-se-cm',
+        title: 'px σε cm',
+        description: 'Μετατρέψτε pixel σε cm με υποστήριξη DPI.',
+      },
+    },
+  },
+  {
     key: 'mmToPxDpi',
     section: 'jednostki',
     icon: RiRulerLine,
@@ -10445,6 +10534,7 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'remToPx',
   'emToPx',
   'cmToPxDpi',
+  'pxToCmDpi',
   'mmToPxDpi',
   'inchesToPxDpi',
   'dpiToPpi',

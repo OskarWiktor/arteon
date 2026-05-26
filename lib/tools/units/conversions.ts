@@ -103,6 +103,36 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
   },
 
   {
+    toolKey: 'pxToCmDpi',
+    category: 'css',
+    sourceField: { labelKey: 'pixels', suffix: 'px' },
+    targetField: { labelKey: 'centimeters', suffix: 'cm' },
+    extraField: {
+      key: 'dpi',
+      labelKey: 'dpiPpi',
+      suffix: 'dpi',
+      defaultValue: 96,
+      min: 1,
+      max: 2400,
+      step: 1,
+    },
+    convert: (v, extra) => (v * 2.54) / (extra ?? 96),
+    reverseConvert: (v, extra) => (v * (extra ?? 96)) / 2.54,
+    formula: 'cm = px × 2,54 ÷ DPI',
+    reverseFormula: 'px = cm × DPI ÷ 2,54',
+    precision: 2,
+    swappable: true,
+    popularValues: [
+      { source: 96, target: 2.54, labelKey: 'oneInch96dpi' },
+      { source: 378, target: 10 },
+      { source: 794, target: 21, labelKey: 'a4Width96dpi' },
+      { source: 1080, target: 28.58, label: 'Full HD' },
+      { source: 1123, target: 29.7, labelKey: 'a4Height96dpi' },
+      { source: 1920, target: 50.8, label: 'Full HD' },
+    ],
+  },
+
+  {
     toolKey: 'mmToPxDpi',
     category: 'css',
     sourceField: { labelKey: 'millimeters', suffix: 'mm' },

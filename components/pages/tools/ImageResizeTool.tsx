@@ -33,8 +33,9 @@ import {
 import { useLocale } from '@/lib/LocaleContext';
 import { ui, type UiLocale } from '@/lib/i18n/tools/image-resize';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import InputWithLabel from '@/components/molecules/InputWithLabel';
-import ToolRangeInput from '@/components/organisms/tools/ToolRangeInput';
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import CropPreview from '@/components/organisms/tools/ImageResizeTool/CropPreview';
 import Input from '@/components/atoms/form/Input';
 import FileDropzone from '@/components/molecules/FileDropzone';
@@ -534,7 +535,7 @@ export default function ImageResizeTool() {
             </div>
 
             {state.outputFormat !== 'png' && (
-              <ToolRangeInput
+              <InputRangeWithLabel
                 label={t.quality}
                 value={Math.round(state.outputQuality * 100)}
                 min={60}
@@ -660,20 +661,16 @@ export default function ImageResizeTool() {
                     </div>
                   </div>
 
-                  <label className='tool-value flex items-center gap-2'>
-                    <input
-                      type='checkbox'
-                      checked={state.keepAspectRatio}
-                      onChange={e =>
-                        setState(prev => ({
-                          ...prev,
-                          keepAspectRatio: e.target.checked,
-                        }))
-                      }
-                      className='tool-checkbox'
-                    />
-                    <span>{t.keepAspectRatio}</span>
-                  </label>
+                  <InputCheckboxWithLabel
+                    checked={state.keepAspectRatio}
+                    onChange={checked =>
+                      setState(prev => ({
+                        ...prev,
+                        keepAspectRatio: checked,
+                      }))
+                    }
+                    label={t.keepAspectRatio}
+                  />
                 </div>
               )}
 

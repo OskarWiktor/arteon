@@ -196,7 +196,10 @@ export default function DesktopNavigation() {
               aria-expanded={isToolsOpen}
               aria-controls={toolsMenuId}
               ref={toolsBtnRef}
-              className={cn('text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors', focusRingClasses)}
+              className={cn(
+                'text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors',
+                focusRingClasses,
+              )}
               aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
             >
               <span
@@ -264,7 +267,10 @@ export default function DesktopNavigation() {
                   aria-expanded={isToolsOpen}
                   aria-controls={toolsMenuId}
                   ref={toolsBtnRef}
-                  className={cn('text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors', focusRingClasses)}
+                  className={cn(
+                    'text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors',
+                    focusRingClasses,
+                  )}
                   aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
                 >
                   <span
@@ -300,7 +306,10 @@ export default function DesktopNavigation() {
                   aria-expanded={isOfferOpen}
                   aria-controls={menuId}
                   ref={offerBtnRef}
-                  className={cn('text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors', focusRingClasses)}
+                  className={cn(
+                    'text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors',
+                    focusRingClasses,
+                  )}
                   aria-label={isOfferOpen ? plUi.closeServicesList : plUi.openServicesList}
                 >
                   <span
@@ -336,7 +345,10 @@ export default function DesktopNavigation() {
                   aria-expanded={isAboutOpen}
                   aria-controls={aboutMenuId}
                   ref={aboutBtnRef}
-                  className={cn('text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors', focusRingClasses)}
+                  className={cn(
+                    'text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors',
+                    focusRingClasses,
+                  )}
                   aria-label={isAboutOpen ? plUi.closeAboutList : plUi.openAboutList}
                 >
                   <span
@@ -578,7 +590,7 @@ export default function DesktopNavigation() {
                     key={item.href}
                     href={item.href}
                     prefetch={false}
-                    className='group/link flex items-center gap-3 rounded-lg px-4 py-3 transition-colors duration-150 hover:bg-white '
+                    className='group/link flex items-center gap-3 rounded-lg px-4 py-3 transition-colors duration-150 hover:bg-white'
                   >
                     {item.icon ? (
                       <span className='text-primary-mid group-hover/link:text-primary shrink-0 transition-colors'>

@@ -6,9 +6,9 @@ import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolInfo from '@/components/atoms/ToolInfo';
 import ToolHelper from '@/components/organisms/tools/ToolHelper';
 import ToolAlert from '@/components/atoms/ToolAlert';
-import InputWithLabel from '@/components/molecules/InputWithLabel';
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import ToolSelect from '@/components/organisms/tools/ToolSelect';
-import ToolColorInput from '@/components/atoms/ToolColorInput';
+import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
 import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
 import {
   generateQrPng,
@@ -313,11 +313,11 @@ export default function QrCodeGenerator() {
         <div className='grid gap-3 sm:grid-cols-2'>
           <div>
             <label className='tool-label mb-2 block'>{t.qrColor}</label>
-            <ToolColorInput value={darkColor} onChange={setDarkColor} />
+            <InputColorWithLabel withTextField value={darkColor} onChange={setDarkColor} />
           </div>
           <div>
             <label className='tool-label mb-2 block'>{t.bgColor}</label>
-            <ToolColorInput value={lightColor} onChange={setLightColor} />
+            <InputColorWithLabel withTextField value={lightColor} onChange={setLightColor} />
           </div>
         </div>
 

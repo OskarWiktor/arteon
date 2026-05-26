@@ -8,7 +8,7 @@ import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/organisms/tools/ToolHelper';
 import ToolInfo from '@/components/atoms/ToolInfo';
-import ToolColorInput from '@/components/atoms/ToolColorInput';
+import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
 import Badge from '@/components/atoms/Badge';
 import { getContrastRatio, parseColor } from '@/lib/tools/color/contrast';
 import { hslToRgb, rgbToHex, rgbToHsl } from '@/lib/tools/color/convert';
@@ -253,7 +253,8 @@ export default function WcagContrastChecker() {
                   }
                   helperClassName='text-xs!'
                 >
-                  <ToolColorInput
+                  <InputColorWithLabel
+                    withTextField
                     value={foreground}
                     onChange={setForeground}
                     pickerValue={foregroundPicker}
@@ -277,7 +278,8 @@ export default function WcagContrastChecker() {
                   }
                   helperClassName='text-xs!'
                 >
-                  <ToolColorInput
+                  <InputColorWithLabel
+                    withTextField
                     value={background}
                     onChange={setBackground}
                     pickerValue={backgroundPicker}

@@ -86,7 +86,10 @@ export default function ArticlesCarousel({
       <div className='relative'>
         <div
           ref={scrollRef}
-          className={cn('no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8', focusRingClasses)} 
+          className={cn(
+            'no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8',
+            focusRingClasses,
+          )}
           role='region'
           aria-roledescription='carousel'
           aria-label='Karuzela artykułów'

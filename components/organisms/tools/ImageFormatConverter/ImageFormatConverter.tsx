@@ -8,7 +8,7 @@ import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import ToolFileRow from '@/components/organisms/tools/ToolFileRow';
 import ToolProgressBar from '@/components/organisms/tools/ToolProgressBar';
-import ToolRangeInput from '@/components/organisms/tools/ToolRangeInput';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolUploadContent from '@/components/organisms/tools/ToolUploadContent';
 import { useDictionary } from '@/lib/LocaleContext';
@@ -185,7 +185,7 @@ export default function ImageFormatConverter({
             {showQuality && (
               <div>
                 <h3 className='h6 mt-8 mb-2'>{tpl(t.setQuality, { format: targetLabel })}</h3>
-                <ToolRangeInput
+                <InputRangeWithLabel
                   value={quality}
                   min={60}
                   max={95}

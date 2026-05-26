@@ -1,7 +1,7 @@
 import type { SignatureConfig, StyleConfig, SocialKey } from '@/types/tools/email';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import InputWithLabel from '@/components/molecules/InputWithLabel';
-import Checkbox from '@/components/atoms/form/Checkbox';
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 
 type Props = {
   config: SignatureConfig;
@@ -71,7 +71,7 @@ export default function SocialPanel({
       <p className='text-light text-xs!'>{t.social.helper}</p>
 
       <div className='mt-4 space-y-3 border-t border-neutral-200 pt-4'>
-        <Checkbox
+        <InputCheckboxWithLabel
           id='social-icons-toggle'
           checked={styleConfig.socialIcons.showIcons}
           onChange={v => onStyleChange('socialIcons', { ...styleConfig.socialIcons, showIcons: v })}

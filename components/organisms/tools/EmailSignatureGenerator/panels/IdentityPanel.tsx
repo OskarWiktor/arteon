@@ -1,6 +1,6 @@
 import type { SignatureConfig, StyleConfig } from '@/types/tools/email';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import InputWithLabel from '@/components/molecules/InputWithLabel';
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import Textarea from '@/components/atoms/form/Textarea';
 
 type Props = {

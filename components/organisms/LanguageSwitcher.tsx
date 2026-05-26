@@ -296,7 +296,10 @@ export default function LanguageSwitcher({
                 <button
                   type='button'
                   onClick={close}
-                  className={cn('text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-md transition-colors', focusRingClasses)}
+                  className={cn(
+                    'text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-md transition-colors',
+                    focusRingClasses,
+                  )}
                   aria-label={t.closeModalLabel}
                 >
                   <RiCloseLine className='h-5 w-5' aria-hidden='true' />

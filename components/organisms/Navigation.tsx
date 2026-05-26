@@ -114,7 +114,10 @@ export default function Navigation() {
             <button
               type='button'
               onClick={() => startTransition(() => setIsSearchOpen(true))}
-              className={cn('text-primary hover:bg-primary-light hover:text-primary flex h-10 w-10 items-center justify-center rounded-md transition-colors', focusRingClasses)}
+              className={cn(
+                'text-primary hover:bg-primary-light hover:text-primary flex h-10 w-10 items-center justify-center rounded-md transition-colors',
+                focusRingClasses,
+              )}
               aria-label={dict.search.ariaSearch}
             >
               <RiSearchLine className='h-6 w-6' aria-hidden='true' />

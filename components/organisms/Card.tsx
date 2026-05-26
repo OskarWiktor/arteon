@@ -1,18 +1,17 @@
+import { cn } from '@/lib/utils';
 import type { ComponentPropsWithoutRef, ElementType, ReactNode } from 'react';
 
 type CardVariant = 'default' | 'lift' | 'outlined' | 'section';
 type CardPadding = 'none' | 'sm' | 'md' | 'lg' | 'xl';
 
-const BASE = 'rounded-lg transition';
-
-const VARIANT_CLASSES: Record<CardVariant, string> = {
+const variantClasses: Record<CardVariant, string> = {
   default: 'bg-white overflow-hidden shadow-md focus-within:shadow-lg hover:shadow-lg',
   lift: 'bg-white shadow-sm hover:-translate-y-0.5 hover:shadow-md',
   outlined: 'bg-white border border-black/10 overflow-hidden',
   section: 'bg-white/80 border border-black/10 shadow-sm',
 };
 
-const PADDING_CLASSES: Record<CardPadding, string> = {
+const paddingClasses: Record<CardPadding, string> = {
   none: '',
   sm: 'p-4',
   md: 'p-4 md:p-6',
@@ -37,12 +36,17 @@ export default function Card<T extends ElementType = 'div'>({
   ...rest
 }: PolymorphicProps<T>) {
   const Component = (as ?? 'div') as ElementType;
-  const classes = [BASE, VARIANT_CLASSES[variant], PADDING_CLASSES[padding], className]
-    .filter(Boolean)
-    .join(' ');
 
   return (
-    <Component className={classes} {...rest}>
+    <Component
+      className={cn(
+        'rounded-lg transition',
+        variantClasses[variant],
+        paddingClasses[padding],
+        className,
+      )}
+      {...rest}
+    >
       {children}
     </Component>
   );

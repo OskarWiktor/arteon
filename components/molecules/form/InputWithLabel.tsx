@@ -1,17 +1,8 @@
 import { useId, type ChangeEvent, type FocusEvent, type ReactNode } from 'react';
 import Label from '@/components/atoms/form/Label';
 import Input from '@/components/atoms/form/Input';
-import Textarea from '@/components/atoms/form/Textarea';
 
-type InputWithLabelType =
-  | 'text'
-  | 'email'
-  | 'password'
-  | 'tel'
-  | 'url'
-  | 'number'
-  | 'search'
-  | 'textarea';
+type InputWithLabelType = 'text' | 'email' | 'password' | 'tel' | 'url' | 'number' | 'search';
 
 interface InputWithLabelProps {
   id?: string;
@@ -31,7 +22,6 @@ interface InputWithLabelProps {
   min?: number;
   max?: number;
   step?: number;
-  rows?: number;
   inputMode?: 'text' | 'email' | 'tel' | 'url' | 'numeric' | 'decimal' | 'search' | 'none';
   pattern?: string;
   className?: string;
@@ -39,7 +29,7 @@ interface InputWithLabelProps {
   helperText?: ReactNode;
   errorMessage?: ReactNode;
   onChange?: (value: string) => void;
-  onBlur?: (e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+  onBlur?: (e: FocusEvent<HTMLInputElement>) => void;
 }
 
 export default function InputWithLabel({
@@ -60,7 +50,6 @@ export default function InputWithLabel({
   min,
   max,
   step,
-  rows,
   inputMode,
   pattern,
   className,
@@ -96,62 +85,34 @@ export default function InputWithLabel({
       <Label htmlFor={id} required={required} variant={variant}>
         {label}
       </Label>
-
-      {type === 'textarea' ? (
-        <Textarea
-          id={id}
-          name={name}
-          value={value}
-          defaultValue={defaultValue}
-          placeholder={placeholder}
-          required={required}
-          disabled={disabled}
-          readOnly={readOnly}
-          autoComplete={autoComplete}
-          maxLength={maxLength}
-          minLength={minLength}
-          rows={rows}
-          className={className}
-          aria-describedby={describedBy}
-          aria-invalid={hasError || undefined}
-          onChange={
-            handleChange
-              ? (e: ChangeEvent<HTMLTextAreaElement>) => handleChange(e.target.value)
-              : undefined
-          }
-          onBlur={onBlur}
-        />
-      ) : (
-        <Input
-          id={id}
-          type={type}
-          name={name}
-          value={value}
-          defaultValue={defaultValue}
-          placeholder={placeholder}
-          required={required}
-          disabled={disabled}
-          readOnly={readOnly}
-          autoComplete={autoComplete}
-          maxLength={maxLength}
-          minLength={minLength}
-          min={min}
-          max={max}
-          step={step}
-          inputMode={inputMode}
-          pattern={pattern}
-          className={className}
-          aria-describedby={describedBy}
-          aria-invalid={hasError || undefined}
-          onChange={
-            handleChange
-              ? (e: ChangeEvent<HTMLInputElement>) => handleChange(e.target.value)
-              : undefined
-          }
-          onBlur={onBlur}
-        />
-      )}
-
+      <Input
+        id={id}
+        type={type}
+        name={name}
+        value={value}
+        defaultValue={defaultValue}
+        placeholder={placeholder}
+        required={required}
+        disabled={disabled}
+        readOnly={readOnly}
+        autoComplete={autoComplete}
+        maxLength={maxLength}
+        minLength={minLength}
+        min={min}
+        max={max}
+        step={step}
+        inputMode={inputMode}
+        pattern={pattern}
+        className={className}
+        aria-describedby={describedBy}
+        aria-invalid={hasError || undefined}
+        onChange={
+          handleChange
+            ? (e: ChangeEvent<HTMLInputElement>) => handleChange(e.target.value)
+            : undefined
+        }
+        onBlur={onBlur}
+      />
       {errorMessage && (
         <p id={errorId} role='alert' className='mt-1 text-sm text-red-500'>
           {errorMessage}

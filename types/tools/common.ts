@@ -90,6 +90,7 @@ export type ToolItemKey =
   | 'remToPx'
   | 'emToPx'
   | 'cmToPxDpi'
+  | 'pxToCmDpi'
   | 'mmToPxDpi'
   | 'inchesToPxDpi'
   | 'dpiToPpi'

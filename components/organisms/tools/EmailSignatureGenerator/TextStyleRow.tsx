@@ -1,5 +1,6 @@
 import { RiRefreshLine, RiAddLine, RiSubtractLine } from 'react-icons/ri';
 import type { TextElementKey } from '@/types/tools/email';
+import InputColor from '@/components/atoms/form/InputColor';
 
 interface TextStyleRowProps {
   elementKey: TextElementKey;
@@ -53,11 +54,10 @@ export default function TextStyleRow({
           />
         ))}
         <div className='relative'>
-          <input
-            type='color'
+          <InputColor
             value={currentColor || defaultColor}
             onChange={e => onColorChange(elementKey, e.target.value)}
-            className='absolute inset-0 h-full w-full cursor-pointer opacity-0'
+            className='absolute inset-0 h-full! w-full! opacity-0'
           />
           <div className='border-primary8 hover:border-primary-light0 flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed'>
             <RiAddLine className='text-light h-3.5 w-3.5' />

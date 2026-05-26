@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { RiExpandLeftRightLine } from 'react-icons/ri';
 import Wrapper from '../../atoms/Wrapper';
 import SectionHeader from '@/components/molecules/SectionHeader';
+import InputRange from '@/components/atoms/form/InputRange';
 
 interface SectionBeforeAfterProps {
   title?: string;
@@ -63,13 +64,12 @@ export default function SectionBeforeAfter({
               </button>
             </div>
 
-            <input
-              type='range'
-              min='0'
-              max='100'
+            <InputRange
+              min={0}
+              max={100}
               value={position}
               onChange={e => setPosition(Number(e.target.value))}
-              className='absolute inset-0 h-full w-full cursor-ew-resize opacity-0'
+              className='absolute inset-0 h-full cursor-ew-resize opacity-0'
               aria-label='Suwak porównania przed i po'
             />
 

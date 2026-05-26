@@ -3,7 +3,8 @@
 import { useRef, useState } from 'react';
 import Button from '../atoms/buttons/Button';
 import ToolAlert from '../atoms/ToolAlert';
-import InputWithLabel from '../molecules/InputWithLabel';
+import InputWithLabel from '../molecules/form/InputWithLabel';
+import TextareaWithLabel from '../molecules/form/TextareaWithLabel';
 import { useDictionary } from '@/lib/LocaleContext';
 import type { Locale } from '@/types/locale';
 import SectionHeader from '../molecules/SectionHeader';
@@ -94,10 +95,9 @@ export default function ContactForm({
           defaultValue={defaultSubject}
         />
 
-        <InputWithLabel
+        <TextareaWithLabel
           id='message'
           label={t.messageLabel}
-          type='textarea'
           name='Wiadomość'
           placeholder={messagePlaceholder ?? t.messagePlaceholder}
           required

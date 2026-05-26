@@ -239,7 +239,10 @@ export default function FormatPickerModal({
         ref={triggerRef}
         type='button'
         onClick={handleToggle}
-        className={cn('inline-flex items-center gap-1.5 rounded border border-neutral-300 bg-white px-3 py-2 text-xs font-medium transition-colors hover:border-neutral-400 e', focusRingClasses)}
+        className={cn(
+          'e inline-flex items-center gap-1.5 rounded border border-neutral-300 bg-white px-3 py-2 text-xs font-medium transition-colors hover:border-neutral-400',
+          focusRingClasses,
+        )}
         aria-expanded={open}
         aria-haspopup='dialog'
       >
