@@ -13,7 +13,7 @@ import {
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
@@ -25,6 +25,8 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
@@ -151,7 +153,7 @@ export default function OfferSeoSubscription() {
                   treści, budując Twoją widoczność tam, gdzie szukają Cię klienci.
                 </>
               ),
-              icon: <RiLightbulbFlashLine className='text-primary h-6 w-6' />,
+              icon: <RiLightbulbFlashLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Poprawa kluczowych podstron (on-page)',
@@ -162,7 +164,7 @@ export default function OfferSeoSubscription() {
                   realnych zapytań użytkowników.
                 </>
               ),
-              icon: <RiFileList2Line className='text-primary h-6 w-6' />,
+              icon: <RiFileList2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Bezpieczne linki z wartościowych miejsc',
@@ -172,7 +174,7 @@ export default function OfferSeoSubscription() {
                   branżowe, katalogi) - to wzmacnia autorytet Twojej witryny
                 </>
               ),
-              icon: <RiLinksFill className='text-primary h-6 w-6' />,
+              icon: <RiLinksFill className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Monitoring i raport co miesiąc',
@@ -182,7 +184,7 @@ export default function OfferSeoSubscription() {
                   i rekomendacje na kolejny miesiąc.
                 </>
               ),
-              icon: <RiBarChart2Fill className='text-primary h-6 w-6' />,
+              icon: <RiBarChart2Fill className={cn('text-primary', normalIconSizeClasses)} />,
             },
           ]}
         />
@@ -347,7 +349,7 @@ export default function OfferSeoSubscription() {
           description='Najlepsze efekty osiągamy, łącząc strategię treści z solidnym fundamentem technicznym.'
           items={[
             {
-              icon: <RiSearchLine className='h-8 w-8' />,
+              icon: <RiSearchLine className={largeIconSizeClasses} />,
               title: 'Audyt SEO (diagnostyka)',
               description: (
                 <div className='flex h-full flex-col'>
@@ -363,7 +365,7 @@ export default function OfferSeoSubscription() {
               ),
             },
             {
-              icon: <RiFileList2Line className='h-8 w-8' />,
+              icon: <RiFileList2Line className={largeIconSizeClasses} />,
               title: 'Optymalizacja SEO (wdrożenia)',
               description: (
                 <div className='flex h-full flex-col'>
@@ -395,7 +397,7 @@ export default function OfferSeoSubscription() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           title='Najczęstsze pytania dotyczące pozycjonowania stron'
           pageUrl='https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron'

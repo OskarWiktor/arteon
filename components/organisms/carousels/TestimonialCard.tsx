@@ -24,7 +24,8 @@ export default function TestimonialCard({ item }: Props) {
   return (
     <Card
       as='figure'
-      className='flex h-full w-full flex-col justify-between border-neutral-300 p-5 text-center md:px-6 md:py-8'
+      padding='lg'
+      className='flex h-full w-full flex-col justify-between border-neutral-300 text-center'
     >
       <figcaption>
         <span className='text-dark text-xl font-semibold'>{item.author}</span>
@@ -41,10 +42,9 @@ export default function TestimonialCard({ item }: Props) {
       {item.link && (
         <InlineLink
           href={item.link}
-          prefetch={false}
           target='_blank'
           rel='noopener noreferrer'
-          className='mt-5 text-sm underline underline-offset-4 transition hover:opacity-80'
+          className='mt-5 underline underline-offset-4 transition hover:opacity-80'
         >
           Zobacz opinię u źródła
         </InlineLink>

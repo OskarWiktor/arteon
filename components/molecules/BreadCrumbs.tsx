@@ -7,6 +7,7 @@ import { RiHomeLine } from 'react-icons/ri';
 
 import InlineLink from '../atoms/InlineLink';
 import Wrapper from '../atoms/Wrapper';
+import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 
 const DEFAULT_SITE_URL = 'https://www.arteonagency.pl';
 
@@ -57,12 +58,14 @@ export default function Breadcrumbs({
     <Wrapper>
       <nav
         aria-label={t.ariaLabel}
-        className={cn(size === 'compact' ? 'flex items-center justify-center py-3' : 'py-6')}
+        className={cn(size === 'compact' ? cn('py-3', flexCenterClasses) : 'py-6')}
       >
         <ol className='flex flex-wrap items-center gap-2 text-sm!'>
           <li>
             <InlineLink href='/' variant='default' aria-label={t.home}>
-              <RiHomeLine className='text-primary-mid text-medium mt-2 h-4 w-4' />
+              <RiHomeLine
+                className={cn('text-primary-mid text-medium mt-2', smallIconSizeClasses)}
+              />
             </InlineLink>
           </li>
 
@@ -83,11 +86,7 @@ export default function Breadcrumbs({
                     {item.label}
                   </span>
                 ) : (
-                  <InlineLink
-                    href={item.href}
-                    variant='default'
-                    className='text-primary-mid text-sm!'
-                  >
+                  <InlineLink href={item.href} variant='default' className='text-primary-mid'>
                     {item.label}
                   </InlineLink>
                 )}

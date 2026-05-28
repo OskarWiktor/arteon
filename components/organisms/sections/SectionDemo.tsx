@@ -1,5 +1,7 @@
 import { useId, type ReactNode } from 'react';
 import SectionHeader from '../../molecules/SectionHeader';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 type Variant = 'left' | 'right';
 
@@ -29,16 +31,25 @@ export default function SectionDemo({
     <section id={id} aria-labelledby={headingId} className='w-full'>
       <div className='flex flex-col gap-6 lg:flex-row lg:gap-8'>
         <div
-          className={`flex w-full items-center justify-center lg:w-2/5 ${variant === 'left' ? 'lg:order-2' : ''}`}
+          className={cn('w-full lg:w-2/5', flexCenterClasses, {
+            'lg:order-2': variant === 'left',
+          })}
         >
           <div className='w-full rounded-lg border border-neutral-200 bg-neutral-50 p-4 md:p-6'>
             {demo}
           </div>
         </div>
 
-        <div className={`flex w-full lg:w-3/5 ${variant === 'left' ? 'lg:order-1' : ''}`}>
+        <div
+          className={cn('flex w-full lg:w-3/5', {
+            'lg:order-1': variant === 'left',
+          })}
+        >
           <div
-            className={`flex h-full flex-col justify-center ${variant === 'right' ? 'lg:pl-2' : 'lg:pr-2'}`}
+            className={cn('flex h-full flex-col justify-center', {
+              'lg:pl-2': variant === 'right',
+              'lg:pr-2': variant === 'left',
+            })}
           >
             <SectionHeader
               subtitle={subtitle}

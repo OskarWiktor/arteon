@@ -1,11 +1,10 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import ToolEditorSkeleton from '@/components/organisms/skeletons/ToolEditorSkeleton';
+import ToolEditorSkeleton from '@/components/pages/skeletons/ToolEditorSkeleton';
 
 const L = () => <ToolEditorSkeleton />;
 
-// ── Standalone tool components (unique UI per tool) ──
 const STANDALONE = {
   favicon: dynamic(() => import('./FaviconGenerator'), { ssr: false, loading: L }),
   qrCode: dynamic(() => import('./QrCodeGenerator'), { ssr: false, loading: L }),
@@ -20,7 +19,6 @@ const STANDALONE = {
   paletteExtractor: dynamic(() => import('./PaletteExtractor'), { ssr: false, loading: L }),
 } as const;
 
-// ── Lazy parent components for config-driven wrappers ──
 const LazyImageConverter = dynamic(
   () => import('../../organisms/tools/ImageFormatConverter/ImageFormatConverter'),
   { ssr: false, loading: L },
@@ -46,7 +44,6 @@ const LazyUnit = dynamic(() => import('../../organisms/tools/UnitConverter/UnitC
   loading: L,
 });
 
-// ── Image format converter configs ──
 interface ImgCfg {
   s: string;
   t: string;
@@ -100,11 +97,11 @@ const IMG: Record<string, ImgCfg> = {
   heicToTiff: { s: 'heic', t: 'tiff', a: 'image/heic,image/heif,.heic,.heif' },
 };
 
-// ── Image → PDF configs ──
 interface ImgPdfCfg {
   s: string;
   a: string;
 }
+
 const IMG_PDF: Record<string, ImgPdfCfg> = {
   jpgToPdf: { s: 'jpg', a: 'image/jpeg,.jpg,.jpeg' },
   pngToPdf: { s: 'png', a: 'image/png,.png' },
@@ -115,14 +112,12 @@ const IMG_PDF: Record<string, ImgPdfCfg> = {
   svgToPdf: { s: 'svg', a: 'image/svg+xml,.svg' },
 };
 
-// ── PDF → Image configs ──
 const PDF_IMG: Record<string, string> = {
   pdfToJpg: 'jpg',
   pdfToPng: 'png',
   pdfToWebp: 'webp',
 };
 
-// ── Text/data converter configs ──
 interface TextCfg {
   c: string;
   s: string;
@@ -139,13 +134,11 @@ const TEXT: Record<string, TextCfg> = {
   htmlToMarkdown: { c: 'htmlToMarkdown', s: 'HTML', t: 'Markdown' },
 };
 
-// ── Base64 configs ──
 const B64: Record<string, 'encode' | 'decode'> = {
   imageToBase64: 'encode',
   base64ToImage: 'decode',
 };
 
-// ── Unit converter configs (toolKey passed directly) ──
 const UNIT_KEYS = new Set([
   'ptToPx',
   'remToPx',
@@ -167,11 +160,9 @@ const UNIT_KEYS = new Set([
 export default function DynamicToolRenderer({ toolKey }: { toolKey: string }) {
   const key = toolKey === 'e-mailSignature' ? 'emailSignature' : toolKey;
 
-  // Standalone tools (unique UI)
   const Standalone = STANDALONE[key as keyof typeof STANDALONE];
   if (Standalone) return <Standalone />;
 
-  // Image format converters
   const img = IMG[key];
   if (img)
     return (
@@ -183,26 +174,21 @@ export default function DynamicToolRenderer({ toolKey }: { toolKey: string }) {
       />
     );
 
-  // Image → PDF
   const imgPdf = IMG_PDF[key];
   if (imgPdf) return <LazyImageToPdf sourceFormat={imgPdf.s as any} acceptMime={imgPdf.a} />;
 
-  // PDF → Image
   const pdfTarget = PDF_IMG[key];
   if (pdfTarget) return <LazyPdfToImage targetFormat={pdfTarget as any} />;
 
-  // Text/data converters
   const text = TEXT[key];
   if (text)
     return (
       <LazyTextConverter conversionType={text.c as any} sourceLabel={text.s} targetLabel={text.t} />
     );
 
-  // Base64
   const b64Mode = B64[key];
   if (b64Mode) return <LazyBase64 mode={b64Mode} />;
 
-  // Unit converters
   if (UNIT_KEYS.has(key)) return <LazyUnit toolKey={key as any} />;
 
   return null;

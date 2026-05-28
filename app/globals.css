@@ -306,11 +306,6 @@ strong {
   @apply underline underline-offset-4 hover:no-underline;
 }
 
-textarea {
-  @apply w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-lg transition focus:outline-none;
-  color: var(--text-mid);
-}
-
 @layer base {
   input:-webkit-autofill,
   textarea:-webkit-autofill,
@@ -331,6 +326,7 @@ textarea {
     color: var(--text-mid);
   }
 }
+
 .tool-input {
   @apply text-dark h-11 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm transition;
 }
@@ -362,27 +358,8 @@ textarea {
   }
 }
 
-.arteon-crop-area {
-  box-shadow: 0 0 0 9999px color-mix(in srgb, var(--black) 55%, transparent);
-  border-radius: 8px;
-  border: 1px solid var(--crop-grid-color, var(--crop-green));
-}
-
-.arteon-cropper .reactEasyCrop_GridLine {
-  background-color: var(--crop-grid-color, var(--crop-green));
-}
-
-.tool-input {
-  color: var(--text-mid);
-}
-
 .tool-label {
   @apply text-xs! font-medium uppercase;
-  color: var(--text-light);
-}
-
-.tool-helper {
-  @apply text-xs!;
   color: var(--text-light);
 }
 
@@ -392,35 +369,6 @@ textarea {
 
 .tool-button-inactive {
   @apply border-black/10 bg-white hover:bg-neutral-100;
-}
-
-.tool-button-active {
-  @apply bg-primary text-white;
-}
-
-.tool-upload-area {
-  @apply hover:border-light flex cursor-pointer flex-col items-center justify-center rounded-lg border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center transition hover:bg-neutral-100;
-}
-
-.tool-badge {
-  @apply inline-flex items-center rounded-lg px-2.5 py-0.5 text-xs! font-medium;
-}
-
-.tool-badge-success {
-  @apply border-success-border bg-success-bg text-success-text;
-}
-
-.tool-badge-warning {
-  @apply border-warning-border bg-warning-bg text-warning-text;
-}
-
-.tool-badge-error {
-  @apply border-error-border bg-error-bg text-error-text;
-}
-
-.tool-badge-neutral {
-  @apply border-neutral-200 bg-neutral-100;
-  color: var(--text-mid);
 }
 
 .tool-info-box {
@@ -435,43 +383,6 @@ textarea {
 .tool-meta {
   @apply text-xs!;
   color: var(--text-light);
-}
-
-.tool-row {
-  @apply flex items-center gap-2 overflow-hidden rounded-lg border border-neutral-200 bg-white px-3 py-2;
-}
-
-.tool-color-swatch {
-  @apply rounded-md border border-black/10;
-}
-
-.calc-option-button {
-  @apply relative flex items-start gap-3 rounded-lg border p-4 text-left transition hover:cursor-pointer;
-}
-
-.calc-option-button-selected {
-  @apply border-primary-mid bg-neutral-50;
-}
-
-.calc-option-button-unselected {
-  @apply hover:border-primary-light border-neutral-300 hover:shadow-lg;
-}
-
-.calc-input-container {
-  @apply relative rounded-lg border py-2 transition;
-}
-
-.calc-input-container-filled {
-  @apply border-primary-mid;
-}
-
-.calc-input-container-empty {
-  @apply hover:border-primary-light border-neutral-100;
-}
-
-.calc-input-field {
-  @apply w-full border-b border-neutral-300 bg-transparent px-2 py-1.5 transition focus:outline-none;
-  color: var(--text-mid);
 }
 
 /* ── Below-fold content sections: skip rendering until near viewport ── */

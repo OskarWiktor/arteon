@@ -5,7 +5,7 @@ import { RiCloseLine, RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri'
 import Wrapper from '../../atoms/Wrapper';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { cn } from '@/lib/utils';
-import { focusRingClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, focusRingClasses, largeIconSizeClasses } from '@/lib/ui-classes';
 
 interface GalleryImage {
   src: string;
@@ -13,12 +13,20 @@ interface GalleryImage {
   title?: string;
 }
 
+type SectionImageGalleryGrid = 'two' | 'four' | 'six';
+
 interface SectionImageGalleryProps {
   title?: string;
   images: GalleryImage[];
-  grid?: 'two' | 'four' | 'six';
+  grid?: SectionImageGalleryGrid;
   noWrapper?: boolean;
 }
+
+const SectionImageGalleryGridClasses: Record<SectionImageGalleryGrid, string> = {
+  two: 'grid-cols-1 md:grid-cols-2 lg:grid-cols-2',
+  four: 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4',
+  six: 'grid-cols-2 md:grid-cols-4 lg:grid-cols-6',
+};
 
 export default function SectionImageGallery({
   title,
@@ -45,9 +53,7 @@ export default function SectionImageGallery({
     <>
       {title && <SectionHeader title={title} />}
 
-      <div
-        className={`grid ${grid === 'two' ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-2' : grid === 'four' ? 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4' : 'grid-cols-2 md:grid-cols-4 lg:grid-cols-6'} gap-4`}
-      >
+      <div className={cn('grid gap-4', SectionImageGalleryGridClasses[grid])}>
         {images.map((image, index) => (
           <button
             key={index}
@@ -82,7 +88,7 @@ export default function SectionImageGallery({
 
       {lightboxIndex !== null && (
         <div
-          className='fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4'
+          className={cn('fixed inset-0 z-50 bg-black/90 p-4', flexCenterClasses)}
           onClick={closeLightbox}
           role='dialog'
           aria-modal='true'
@@ -94,7 +100,7 @@ export default function SectionImageGallery({
             className='absolute top-4 right-4 text-white hover:text-neutral-300'
             aria-label='Zamknij'
           >
-            <RiCloseLine className='h-8 w-8' />
+            <RiCloseLine className={largeIconSizeClasses} />
           </button>
 
           <button
@@ -106,7 +112,7 @@ export default function SectionImageGallery({
             className='absolute left-4 text-white hover:text-neutral-300'
             aria-label='Poprzednie zdjęcie'
           >
-            <RiArrowLeftLine className='h-8 w-8' />
+            <RiArrowLeftLine className={largeIconSizeClasses} />
           </button>
 
           <div className='relative max-h-[80vh] max-w-[90vw]' onClick={e => e.stopPropagation()}>
@@ -131,7 +137,7 @@ export default function SectionImageGallery({
             className='absolute right-4 text-white hover:text-neutral-300'
             aria-label='Następne zdjęcie'
           >
-            <RiArrowRightSLine className='h-8 w-8' />
+            <RiArrowRightSLine className={largeIconSizeClasses} />
           </button>
 
           <div className='absolute bottom-4 left-1/2 -translate-x-1/2 text-sm text-white'>

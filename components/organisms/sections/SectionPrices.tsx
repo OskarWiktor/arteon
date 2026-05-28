@@ -6,6 +6,7 @@ import Card from '../Card';
 import IconText from '../../atoms/IconText';
 import type { SectionPricesProps } from '@/types/ui';
 import { cn } from '@/lib/utils';
+import { normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 export type { SectionPricesPlan, Note, SectionPricesProps } from '@/types/ui';
 
 export default function SectionPrices({
@@ -53,8 +54,7 @@ export default function SectionPrices({
               aria-labelledby={itemHeadingId}
               aria-describedby={itemDescribedBy}
               className={cn(
-                'group relative flex h-full flex-col justify-between',
-                'ring-1 ring-neutral-200 duration-200',
+                'group relative flex h-full flex-col justify-between ring-1 ring-neutral-200 duration-200',
                 plan.lastPlan ? 'ring-2 ring-neutral-900' : '',
               )}
             >
@@ -96,10 +96,13 @@ export default function SectionPrices({
                       <IconText
                         icon={
                           <span
-                            className='group-hover:ring-primary8 mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-lg ring-1 ring-neutral-300'
+                            className={cn(
+                              'group-hover:ring-primary8 mt-0.5 inline-flex flex-none items-center justify-center rounded-lg ring-1 ring-neutral-300',
+                              normalIconSizeClasses,
+                            )}
                             title='Zawarte w planie'
                           >
-                            <RiCheckFill className='h-3.5 w-3.5' />
+                            <RiCheckFill className={smallIconSizeClasses} />
                           </span>
                         }
                         gap='3'
@@ -119,10 +122,8 @@ export default function SectionPrices({
                   btnOneVariant={plan.lastPlan ? 'normal' : 'accent'}
                   btnTwo={plan.btnTwo}
                   btnTwoHref={plan.btnTwoHref}
-                  spacing='default'
                   align='left'
                   ariaLabel={`Działania planu: ${plan.name}`}
-                  className='mt-6'
                 />
               ) : null}
             </Card>

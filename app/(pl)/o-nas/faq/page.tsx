@@ -2,7 +2,7 @@ import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import Divider from '@/components/atoms/Divider';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import Wrapper from '@/components/atoms/Wrapper';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { JsonLd } from '@/components/atoms/JsonLd';
@@ -202,7 +202,7 @@ export default function AboutFaqPage() {
       <Wrapper as='article' itemScope itemType='https://schema.org/FAQPage'>
         <Divider size='xs' />
 
-        <FaqPanels
+        <SectionFaqPanels
           title='Najczęstsze pytania dotyczące współpracy'
           items={FAQ_ITEMS}
           generateSchema={false}

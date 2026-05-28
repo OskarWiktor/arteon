@@ -3,7 +3,7 @@ import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import Wrapper from '@/components/atoms/Wrapper';
 import Script from 'next/script';
 import {
@@ -24,6 +24,7 @@ import {
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 export const metadata = {
   title: 'Bezplatné nástroje | Převodníky, SEO, barvy, favicon',
@@ -605,7 +606,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiCropLine className='h-8 w-8' />,
+              icon: <RiCropLine className={largeIconSizeClasses} />,
               title: 'Online editor obrázků',
               topImageAlt: 'Online editor obrázků Arteon',
               topImageSrc:
@@ -625,7 +626,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiAppsLine className='h-8 w-8' />,
+              icon: <RiAppsLine className={largeIconSizeClasses} />,
               title: 'Generator favicon a ikon',
               topImageAlt: 'Generator favicon Arteon',
               topImageSrc: '/assets/tools/favicon-generator/generator-favicon-zdarma-cs.webp',
@@ -653,7 +654,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiFileTextLine className='h-8 w-8' />,
+              icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Kontrola meta titulku a popisu',
               topImageAlt: 'Kontrola meta titulku a popisu Arteon',
               topImageSrc:
@@ -673,7 +674,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiArticleLine className='h-8 w-8' />,
+              icon: <RiArticleLine className={largeIconSizeClasses} />,
               title: 'Pocitadlo slov a znaku',
               topImageAlt: 'Pocitadlo slov a znaku Arteon',
               topImageSrc:
@@ -695,7 +696,7 @@ export default function ToolsIndexPage() {
             },
 
             {
-              icon: <RiFileTextLine className='h-8 w-8' />,
+              icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Generátor Lorem Ipsum',
               topImageAlt: 'Generátor Lorem Ipsum Arteon',
               topImageSrc: '/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-cs.webp',
@@ -724,7 +725,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiMailLine className='h-8 w-8' />,
+              icon: <RiMailLine className={largeIconSizeClasses} />,
               title: 'Generator podpisu e-mailu zdarma',
               topImageAlt: 'Generator podpisu e-mailu zdarma Arteon',
               topImageSrc:
@@ -755,7 +756,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiQrCodeLine className='h-8 w-8' />,
+              icon: <RiQrCodeLine className={largeIconSizeClasses} />,
               title: 'Generator QR kodu zdarma',
               topImageAlt: 'Generator QR kodu zdarma Arteon',
               topImageSrc: '/assets/tools/qr-code-generator/generator-qr-kodu-zdarma-cs.webp',
@@ -784,7 +785,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiContrast2Line className='h-8 w-8' />,
+              icon: <RiContrast2Line className={largeIconSizeClasses} />,
               title: 'Kontrola kontrastu barev',
               topImageAlt: 'Kontrola kontrastu barev Arteon',
               topImageSrc:
@@ -805,7 +806,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiPantoneLine className='h-8 w-8' />,
+              icon: <RiPantoneLine className={largeIconSizeClasses} />,
               title: 'Extraktor barev z obrazku',
               topImageAlt: 'Extraktor barev z obrazku Arteon',
               topImageSrc: '/assets/tools/image-color-extractor/extraktor-barev-z-obrazku-cs.webp',
@@ -824,7 +825,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiPaletteLine className='h-8 w-8' />,
+              icon: <RiPaletteLine className={largeIconSizeClasses} />,
               title: 'Generator barevnych palet',
               topImageAlt: 'Generator barevnych palet Arteon',
               topImageSrc:
@@ -855,7 +856,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'Převodník JPG na WebP',
               topImageAlt: 'Převodník JPG na WebP Arteon',
               topImageSrc:
@@ -872,7 +873,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'Převodník PNG na JPG',
               topImageAlt: 'Převodník PNG na JPG Arteon',
               topImageSrc:
@@ -889,7 +890,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'Převodník WebP na JPG',
               topImageAlt: 'Převodník WebP na JPG Arteon',
               topImageSrc:
@@ -906,7 +907,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'Převodník PNG na WebP',
               topImageAlt: 'Převodník PNG na WebP Arteon',
               topImageSrc:
@@ -923,7 +924,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'Převodník JPG na PNG',
               topImageAlt: 'Převodník JPG na PNG Arteon',
               topImageSrc:
@@ -940,7 +941,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'Převodník WebP na PNG',
               topImageAlt: 'Převodník WebP na PNG Arteon',
               topImageSrc:
@@ -966,7 +967,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'CSV na JSON',
               topImageAlt: 'CSV na JSON Arteon',
               topImageSrc:
@@ -985,7 +986,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON na CSV',
               topImageAlt: 'JSON na CSV Arteon',
               topImageSrc:
@@ -1002,7 +1003,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'XML na JSON',
               topImageAlt: 'XML na JSON Arteon',
               topImageSrc:
@@ -1019,7 +1020,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON na XML',
               topImageAlt: 'JSON na XML Arteon',
               topImageSrc:
@@ -1036,7 +1037,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'YAML na JSON',
               topImageAlt: 'YAML na JSON Arteon',
               topImageSrc:
@@ -1053,7 +1054,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON na YAML',
               topImageAlt: 'JSON na YAML Arteon',
               topImageSrc:
@@ -1094,24 +1095,24 @@ export default function ToolsIndexPage() {
           grid='two'
           items={[
             {
-              icon: <RiShieldCheckLine className='h-6 w-6' />,
+              icon: <RiShieldCheckLine className={normalIconSizeClasses} />,
               title: 'Uplne soukromi',
               description:
                 'Vsechny nastroje zpracovavaji soubory lokalne v prohlizeci. Nic se neodesila na server - data zmizi po zavreni karty.',
             },
             {
-              icon: <RiInfinityFill className='h-6 w-6' />,
+              icon: <RiInfinityFill className={normalIconSizeClasses} />,
               title: 'Bez omezeni pouziti',
               description:
                 'Pouzivejte bez omezeni - zadny denni limit, zadny limit souboru, zadny limit konverzi. Kolikrat potrebujete.',
             },
             {
-              icon: <RiLockLine className='h-6 w-6' />,
+              icon: <RiLockLine className={normalIconSizeClasses} />,
               title: 'Bez registrace',
               description: 'Nepotrebujete ucet. Otevrete nastroj, pouzijte, hotovo.',
             },
             {
-              icon: <RiGlobalLine className='h-6 w-6' />,
+              icon: <RiGlobalLine className={normalIconSizeClasses} />,
               title: 'K dispozici v cestine',
               description:
                 'Vsechny nastroje jsou k dispozici v cestine - rozhrani, navody i hlasky.',
@@ -1121,7 +1122,7 @@ export default function ToolsIndexPage() {
 
         <Divider line />
 
-        <FaqPanels items={faqItems} title='Casto kladene otazky o nasich nastrojich' />
+        <SectionFaqPanels items={faqItems} title='Casto kladene otazky o nasich nastrojich' />
 
         <Divider size='sm' />
       </Wrapper>

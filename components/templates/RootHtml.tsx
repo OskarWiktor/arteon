@@ -10,6 +10,7 @@ import { JsonLd } from '@/components/atoms/JsonLd';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 import '@/app/globals.css';
+import { cn } from '@/lib/utils';
 
 const inter = Inter({
   subsets: ['latin', 'latin-ext'],
@@ -177,7 +178,7 @@ interface RootHtmlProps {
 
 export default function RootHtml({ lang, children }: RootHtmlProps) {
   return (
-    <html lang={lang} className={`${inter.variable} ${playfairDisplay.variable}`}>
+    <html lang={lang} className={cn(inter.variable, playfairDisplay.variable)}>
       <head>
         <script
           id='google-consent-default'

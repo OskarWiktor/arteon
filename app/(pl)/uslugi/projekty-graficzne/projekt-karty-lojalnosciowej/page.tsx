@@ -14,7 +14,7 @@ import SectionContactForm from '@/components/organisms/sections/SectionContactFo
 import Wrapper from '@/components/atoms/Wrapper';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import { IoColorPalette } from 'react-icons/io5';
@@ -24,6 +24,8 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Projekt karty lojalnościowej | Arteon',
@@ -153,7 +155,7 @@ export default function OfferDesignLoyaltyCardPage() {
                   Ciebie, jak i klientów.
                 </>
               ),
-              icon: <RiVipCrownLine className='text-primary h-6 w-6' />,
+              icon: <RiVipCrownLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Spójność z identyfikacją marki',
@@ -163,7 +165,7 @@ export default function OfferDesignLoyaltyCardPage() {
                   naturalnie uzupełnia pozostałe materiały i wzmacnia profesjonalny wizerunek firmy.
                 </>
               ),
-              icon: <IoColorPalette className='text-primary h-6 w-6' />,
+              icon: <IoColorPalette className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Gotowość do druku',
@@ -174,7 +176,7 @@ export default function OfferDesignLoyaltyCardPage() {
                   technicznych.
                 </>
               ),
-              icon: <RiFileTextLine className='text-primary h-6 w-6' />,
+              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Numeracje i pola pieczątek',
@@ -184,12 +186,14 @@ export default function OfferDesignLoyaltyCardPage() {
                   obsługa programu jest prosta dla zespołu i zrozumiała dla klientów.
                 </>
               ),
-              icon: <RiCoupon2Line className='text-primary h-6 w-6' />,
+              icon: <RiCoupon2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
+              icon: (
+                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
           ]}
         />
@@ -291,7 +295,7 @@ export default function OfferDesignLoyaltyCardPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej'
           title='Najczęstsze pytania dotyczące projektów kart lojalnościowych'

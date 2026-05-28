@@ -1,6 +1,8 @@
 import { RiRefreshLine, RiAddLine, RiSubtractLine } from 'react-icons/ri';
 import type { TextElementKey } from '@/types/tools/email';
 import InputColor from '@/components/atoms/form/InputColor';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 interface TextStyleRowProps {
   elementKey: TextElementKey;
@@ -41,7 +43,10 @@ export default function TextStyleRow({
           <RiRefreshLine className='text-primary h-3.5 w-3.5' />
         </button>
         <div
-          className={`h-7 w-7 rounded border-2 ${currentColor === null ? 'border-mid' : 'border-neutral-300'}`}
+          className={cn(
+            'h-7 w-7 rounded border-2',
+            currentColor === null ? 'border-mid' : 'border-neutral-300',
+          )}
           style={{ backgroundColor: currentColor || defaultColor }}
         />
         {customColors.map(color => (
@@ -49,7 +54,10 @@ export default function TextStyleRow({
             key={color}
             type='button'
             onClick={() => onColorChange(elementKey, color)}
-            className={`h-7 w-7 rounded border-2 ${currentColor === color ? 'border-mid' : 'border-neutral-300'}`}
+            className={cn(
+              'h-7 w-7 rounded border-2',
+              currentColor === color ? 'border-mid' : 'border-neutral-300',
+            )}
             style={{ backgroundColor: color }}
           />
         ))}
@@ -59,7 +67,12 @@ export default function TextStyleRow({
             onChange={e => onColorChange(elementKey, e.target.value)}
             className='absolute inset-0 h-full! w-full! opacity-0'
           />
-          <div className='border-primary8 hover:border-primary-light0 flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed'>
+          <div
+            className={cn(
+              'border-primary8 hover:border-primary-light0 h-7 w-7 cursor-pointer rounded border border-dashed',
+              flexCenterClasses,
+            )}
+          >
             <RiAddLine className='text-light h-3.5 w-3.5' />
           </div>
         </div>

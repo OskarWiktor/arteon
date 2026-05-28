@@ -1,6 +1,7 @@
 import SectionHeader from '@/components/molecules/SectionHeader';
 import Wrapper from '../../atoms/Wrapper';
 import Card from '../Card';
+import { cn } from '@/lib/utils';
 
 interface Metric {
   label: string;
@@ -29,7 +30,7 @@ export default function SectionMetrics({ title, metrics }: SectionMetricsProps) 
               : (metric.value / metric.max) * 100;
 
             return (
-              <Card key={index} className='p-5'>
+              <Card key={index} padding='md'>
                 <p className='text-light mb-2 text-sm'>{metric.label}</p>
                 <div className='mb-3 flex items-baseline gap-1'>
                   <span className='h3'>{metric.value}</span>
@@ -37,7 +38,7 @@ export default function SectionMetrics({ title, metrics }: SectionMetricsProps) 
                 </div>
                 <div className='bg-primary-light h-2 overflow-hidden rounded-lg'>
                   <div
-                    className={`h-full rounded-lg ${metric.color}`}
+                    className={cn('h-full rounded-lg', metric.color)}
                     style={{ width: `${percentage}%` }}
                     role='progressbar'
                     aria-valuenow={metric.value}

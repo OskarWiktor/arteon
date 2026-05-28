@@ -1,5 +1,7 @@
 import { useState, type ReactNode } from 'react';
 import Wrapper from '../../atoms/Wrapper';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 interface VerticalTab {
   label: string;
@@ -38,11 +40,14 @@ export default function SectionVerticalTabs({ title, tabs }: SectionVerticalTabs
                 aria-controls={`vtabpanel-${index}`}
                 id={`vtab-${index}`}
                 onClick={() => setActiveTab(index)}
-                className={`flex items-center justify-center gap-2 rounded-md px-3 py-2.5 text-center text-sm font-medium transition md:justify-start md:text-left ${
-                  activeTab === index
-                    ? 'bg-primary text-white'
-                    : 'bg-primary-light text-primary hover:bg-primary-light'
-                }`}
+                className={cn(
+                  'gap-2 rounded-md px-3 py-2.5 text-center text-sm font-medium transition md:justify-start md:text-left',
+                  flexCenterClasses,
+                  {
+                    'bg-primary text-white': activeTab === index,
+                    'bg-primary-light text-primary hover:bg-primary-light': activeTab !== index,
+                  },
+                )}
               >
                 {tab.icon}
                 <span className='line-clamp-1'>{tab.label}</span>

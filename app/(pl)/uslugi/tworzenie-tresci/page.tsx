@@ -24,7 +24,7 @@ import SectionBento from '@/components/organisms/sections/SectionBento';
 import WorkSteps from '@/components/organisms/WorkSteps';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import Divider from '@/components/atoms/Divider';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import Wrapper from '@/components/atoms/Wrapper';
@@ -32,6 +32,8 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { siteUrl } from '@/utils/absoluteUrl';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 function ServiceSchema() {
   const json = buildServiceSchema({
@@ -106,35 +108,35 @@ export default function OfferContentPage() {
           items={[
             {
               title: 'Treści pod SEO - widoczność w Google',
-              icon: <RiFileSearchLine className='text-primary h-6 w-6' />,
+              icon: <RiFileSearchLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Redakcja treści sprzedażowych i marketingowych',
-              icon: <RiArticleLine className='text-primary h-6 w-6' />,
+              icon: <RiArticleLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Język marki - spójny ton komunikacji',
-              icon: <RiChatQuoteLine className='text-primary h-6 w-6' />,
+              icon: <RiChatQuoteLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Treści budujące emocje i transformację klienta',
-              icon: <IoSparkles className='text-primary h-6 w-6' />,
+              icon: <IoSparkles className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Artykuły i wpisy eksperckie na bloga',
-              icon: <RiBookOpenLine className='text-primary h-6 w-6' />,
+              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Scenariusze do rolek i social mediów',
-              icon: <RiShareForwardLine className='text-primary h-6 w-6' />,
+              icon: <RiShareForwardLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Opisy produktów wspierające SEO',
-              icon: <RiPencilRuler2Line className='text-primary h-6 w-6' />,
+              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Treści dopasowane do archetypu i wartości marki',
-              icon: <RiTeamLine className='text-primary h-6 w-6' />,
+              icon: <RiTeamLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
           ]}
         />
@@ -145,7 +147,7 @@ export default function OfferContentPage() {
           title='Oferta Tworzenia treści'
           items={[
             {
-              icon: <RiFileTextLine className='h-8 w-8' />,
+              icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Strony www',
               subtitle: 'od 600 zł',
               description: (
@@ -164,7 +166,7 @@ export default function OfferContentPage() {
               ),
             },
             {
-              icon: <RiArticleLine className='h-8 w-8' />,
+              icon: <RiArticleLine className={largeIconSizeClasses} />,
               title: 'Artykuły eksperckie',
               subtitle: 'od 300 zł',
               description: (
@@ -183,7 +185,7 @@ export default function OfferContentPage() {
               ),
             },
             {
-              icon: <RiShoppingCartLine className='h-8 w-8' />,
+              icon: <RiShoppingCartLine className={largeIconSizeClasses} />,
               title: 'E-commerce: opisy',
               subtitle: 'od 40 zł / szt.',
               description: (
@@ -202,7 +204,7 @@ export default function OfferContentPage() {
               ),
             },
             {
-              icon: <RiShareForwardLine className='h-8 w-8' />,
+              icon: <RiShareForwardLine className={largeIconSizeClasses} />,
               title: 'Media społecznościowe: treści',
               subtitle: 'od 30 zł',
               description: (
@@ -221,7 +223,7 @@ export default function OfferContentPage() {
               ),
             },
             {
-              icon: <RiFilePdfLine className='h-8 w-8' />,
+              icon: <RiFilePdfLine className={largeIconSizeClasses} />,
               title: 'Oferty i case studies',
               subtitle: 'od 400 zł',
               description: (
@@ -239,7 +241,7 @@ export default function OfferContentPage() {
               ),
             },
             {
-              icon: <RiPencilLine className='h-8 w-8' />,
+              icon: <RiPencilLine className={largeIconSizeClasses} />,
               title: 'Korekta i redakcja',
               subtitle: 'wycena indywidualna',
               description: (
@@ -280,7 +282,7 @@ export default function OfferContentPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/tworzenie-tresci'
           title='Najczęstsze pytania dotyczące tworzenia treści'

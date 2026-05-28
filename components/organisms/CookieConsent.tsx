@@ -12,7 +12,7 @@ import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useTimeout } from '@/hooks/useTimeout';
 import InputCheckboxWithLabel from '../molecules/form/InputCheckboxWithLabel';
 import { cn } from '@/lib/utils';
-import { focusRingClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, focusRingClasses } from '@/lib/ui-classes';
 
 export type CookieConsentTranslations = {
   title: string;
@@ -89,7 +89,6 @@ export default function CookieConsent({
   useEffect(() => {
     const saved = readConsent();
     if (saved) {
-      // Migracja starych ciasteczek bez pola ads - domyślnie true, bo wcześniej reklamy działały
       const ads = saved.ads ?? true;
       updateGtag(saved.analytics, ads);
       if (saved.analytics) {
@@ -113,7 +112,6 @@ export default function CookieConsent({
     });
 
     updateGtag(next.analytics, next.ads);
-    // Notify AdSense components to retry any unfilled ad slots now that consent is known.
     document.dispatchEvent(new Event('arteon:consent-updated'));
     if (next.analytics) {
       loadGA(window.__GA_ID);
@@ -214,7 +212,7 @@ export default function CookieConsent({
                     {t.analyticsDescription}
                   </span>
                 </div>
-                <div className='flex w-[24px] items-center justify-center'>
+                <div className={cn('w-[24px]', flexCenterClasses)}>
                   <InputCheckboxWithLabel
                     aria-label={t.analyticsLabel}
                     checked={analyticsChoice}
@@ -230,7 +228,7 @@ export default function CookieConsent({
                   <span className='text-base font-medium'>{t.adsTitle}</span>
                   <span className='text-dark ml-2 text-sm font-medium'>{t.adsDescription}</span>
                 </div>
-                <div className='flex w-[24px] items-center justify-center'>
+                <div className={cn('w-[24px]', flexCenterClasses)}>
                   <InputCheckboxWithLabel
                     aria-label={t.adsLabel}
                     checked={adsChoice}

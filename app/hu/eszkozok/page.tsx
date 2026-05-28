@@ -3,7 +3,7 @@ import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import Wrapper from '@/components/atoms/Wrapper';
 import Script from 'next/script';
 import {
@@ -24,6 +24,7 @@ import {
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 export const metadata = {
   title: 'Ingyenes eszközök | Konverterek, SEO, színek, favicon',
@@ -614,7 +615,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiCropLine className='h-8 w-8' />,
+              icon: <RiCropLine className={largeIconSizeClasses} />,
               title: 'Online képszerkesztő',
               topImageAlt: 'Online képszerkesztő Arteon',
               topImageSrc:
@@ -635,7 +636,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiAppsLine className='h-8 w-8' />,
+              icon: <RiAppsLine className={largeIconSizeClasses} />,
               title: 'Favicon és ikon generátor',
               topImageAlt: 'Favicon generátor Arteon',
               topImageSrc: '/assets/tools/favicon-generator/ingyenes-favicon-generator-hu.webp',
@@ -664,7 +665,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiFileTextLine className='h-8 w-8' />,
+              icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Meta cím és leírás ellenőrző',
               topImageAlt: 'Meta cím és leírás ellenőrző Arteon',
               topImageSrc:
@@ -685,7 +686,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiArticleLine className='h-8 w-8' />,
+              icon: <RiArticleLine className={largeIconSizeClasses} />,
               title: 'Szó- és karakterszámláló',
               topImageAlt: 'Szó- és karakterszámláló Arteon',
               topImageSrc:
@@ -707,7 +708,7 @@ export default function ToolsIndexPage() {
             },
 
             {
-              icon: <RiFileTextLine className='h-8 w-8' />,
+              icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Lorem Ipsum generátor',
               topImageAlt: 'Lorem Ipsum generátor Arteon',
               topImageSrc: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-hu.webp',
@@ -736,7 +737,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiMailLine className='h-8 w-8' />,
+              icon: <RiMailLine className={largeIconSizeClasses} />,
               title: 'Ingyenes HTML e-mail aláírás generátor',
               topImageAlt: 'Ingyenes HTML e-mail aláírás generátor Arteon',
               topImageSrc:
@@ -767,7 +768,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiQrCodeLine className='h-8 w-8' />,
+              icon: <RiQrCodeLine className={largeIconSizeClasses} />,
               title: 'Ingyenes QR-kód generátor',
               topImageAlt: 'Ingyenes QR-kód generátor Arteon',
               topImageSrc: '/assets/tools/qr-code-generator/ingyenes-qr-kod-generator-hu.webp',
@@ -796,7 +797,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiContrast2Line className='h-8 w-8' />,
+              icon: <RiContrast2Line className={largeIconSizeClasses} />,
               title: 'Színkontraszt ellenőrző',
               topImageAlt: 'Színkontraszt ellenőrző Arteon',
               topImageSrc:
@@ -817,7 +818,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiPantoneLine className='h-8 w-8' />,
+              icon: <RiPantoneLine className={largeIconSizeClasses} />,
               title: 'Színkinyerő képből',
               topImageAlt: 'Színkinyerő képből Arteon',
               topImageSrc: '/assets/tools/image-color-extractor/szinkinyero-kepbol-hu.webp',
@@ -836,7 +837,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiPaletteLine className='h-8 w-8' />,
+              icon: <RiPaletteLine className={largeIconSizeClasses} />,
               title: 'Színpaletta generátor',
               topImageAlt: 'Színpaletta generátor Arteon',
               topImageSrc: '/assets/tools/color-palette-generator/szinpaletta-generator-hu.webp',
@@ -866,7 +867,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JPG WebP konverter',
               topImageAlt: 'JPG WebP konverter Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
@@ -882,7 +883,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'PNG JPG konverter',
               topImageAlt: 'PNG JPG konverter Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
@@ -900,7 +901,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'WebP JPG konverter',
               topImageAlt: 'WebP JPG konverter Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
@@ -916,7 +917,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'PNG WebP konverter',
               topImageAlt: 'PNG WebP konverter Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
@@ -934,7 +935,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JPG PNG konverter',
               topImageAlt: 'JPG PNG konverter Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
@@ -952,7 +953,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'WebP PNG konverter',
               topImageAlt: 'WebP PNG konverter Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
@@ -977,7 +978,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'CSV JSON',
               topImageAlt: 'CSV JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
@@ -995,7 +996,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON CSV',
               topImageAlt: 'JSON CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
@@ -1011,7 +1012,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'XML JSON',
               topImageAlt: 'XML JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
@@ -1029,7 +1030,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON XML',
               topImageAlt: 'JSON XML Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
@@ -1045,7 +1046,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'YAML JSON',
               topImageAlt: 'YAML JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
@@ -1061,7 +1062,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON YAML',
               topImageAlt: 'JSON YAML Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
@@ -1104,24 +1105,24 @@ export default function ToolsIndexPage() {
           grid='two'
           items={[
             {
-              icon: <RiShieldCheckLine className='h-6 w-6' />,
+              icon: <RiShieldCheckLine className={normalIconSizeClasses} />,
               title: 'Teljes adatvédelem',
               description:
                 'Minden eszköz lokálisan dolgozza fel a fájlokat a böngészőjében. Semmi sem kerül szerverre - az adatok eltűnnek, amikor bezárja a lapot.',
             },
             {
-              icon: <RiInfinityFill className='h-6 w-6' />,
+              icon: <RiInfinityFill className={normalIconSizeClasses} />,
               title: 'Nincs használati korlát',
               description:
                 'Használja korlátozás nélkül - nincs napi limit, nincs fájllimit, nincs konverziós limit. Annyiszor, ahányszor szükséges.',
             },
             {
-              icon: <RiLockLine className='h-6 w-6' />,
+              icon: <RiLockLine className={normalIconSizeClasses} />,
               title: 'Regisztráció nélkül',
               description: 'Nincs szükség fiókra. Nyissa meg az eszközt, használja, és kész.',
             },
             {
-              icon: <RiGlobalLine className='h-6 w-6' />,
+              icon: <RiGlobalLine className={normalIconSizeClasses} />,
               title: 'Magyarul elérhető',
               description:
                 'Minden eszköz elérhető magyar nyelven - felület, útmutatók és üzenetek.',
@@ -1131,7 +1132,7 @@ export default function ToolsIndexPage() {
 
         <Divider line />
 
-        <FaqPanels items={faqItems} title='Gyakran ismételt kérdések eszközeinkről' />
+        <SectionFaqPanels items={faqItems} title='Gyakran ismételt kérdések eszközeinkről' />
 
         <Divider size='sm' />
       </Wrapper>

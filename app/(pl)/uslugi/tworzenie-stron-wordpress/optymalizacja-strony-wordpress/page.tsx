@@ -6,7 +6,7 @@ import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
@@ -27,6 +27,8 @@ import Script from 'next/script';
 import Image from 'next/image';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import { siteUrl } from '@/utils/absoluteUrl';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
@@ -166,7 +168,7 @@ export default function OfferOptimizationWordPressPage() {
                   wyższa widoczność w Google, szczególnie na urządzeniach mobilnych.
                 </>
               ),
-              icon: <RiSpeedFill className='text-primary h-6 w-6' />,
+              icon: <RiSpeedFill className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Porządki we wtyczkach i motywie',
@@ -177,7 +179,7 @@ export default function OfferOptimizationWordPressPage() {
                   problemów technicznych przy dalszych aktualizacjach.
                 </>
               ),
-              icon: <RiToolsLine className='text-primary h-6 w-6' />,
+              icon: <RiToolsLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Obrazy dopasowane do urządzeń',
@@ -188,7 +190,7 @@ export default function OfferOptimizationWordPressPage() {
                   szybkość działania witryny.
                 </>
               ),
-              icon: <RiFileList2Line className='text-primary h-6 w-6' />,
+              icon: <RiFileList2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Wersja mobilna i wygoda korzystania',
@@ -198,7 +200,7 @@ export default function OfferOptimizationWordPressPage() {
                   czytelna, łatwa w obsłudze i lepiej przygotowana na ruch z urządzeń mobilnych.
                 </>
               ),
-              icon: <RiDeviceLine className='text-primary h-6 w-6' />,
+              icon: <RiDeviceLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
           ]}
         />
@@ -441,7 +443,7 @@ export default function OfferOptimizationWordPressPage() {
           description='Optymalizacja WordPress często łączy się z działaniami SEO oraz stałą opieką techniczną nad stroną.'
           items={[
             {
-              icon: <RiBarChart2Fill className='h-8 w-8' />,
+              icon: <RiBarChart2Fill className={largeIconSizeClasses} />,
               title: 'Optymalizacja SEO (wdrożenia)',
               description: (
                 <div className='flex h-full flex-col'>
@@ -458,7 +460,7 @@ export default function OfferOptimizationWordPressPage() {
               ),
             },
             {
-              icon: <RiShieldCheckLine className='h-8 w-8' />,
+              icon: <RiShieldCheckLine className={largeIconSizeClasses} />,
               title: 'Audyt SEO',
               description: (
                 <div className='flex h-full flex-col'>
@@ -490,7 +492,7 @@ export default function OfferOptimizationWordPressPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress'
           title='Najczęstsze pytania dotyczące optymalizacji stron internetowych w WordPress'

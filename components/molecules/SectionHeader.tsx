@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import Subtitle from '../atoms/typography/Subtitle';
 import ButtonLink from '../atoms/buttons/ButtonLink';
+import { cn } from '@/lib/utils';
 
 interface SectionHeaderProps {
   subtitle?: ReactNode;
@@ -39,7 +40,7 @@ export default function SectionHeader({
           </Subtitle>
         </div>
       )}
-      <h2 className={`${titleClassName} h3 mb-2 scroll-mt-26 lg:mb-4`} id={titleId}>
+      <h2 className={cn('h3 mb-2 scroll-mt-26 lg:mb-4', titleClassName)} id={titleId}>
         {title}
       </h2>
       {description && <p className={descriptionClassName}>{description}</p>}

@@ -1,3 +1,5 @@
+import { cn } from '@/lib/utils';
+
 interface ToolProgressBarProps {
   value: number;
   max?: number;
@@ -16,7 +18,7 @@ export default function ToolProgressBar({
   return (
     <div className='h-2 w-full overflow-hidden rounded-lg bg-neutral-200'>
       <div
-        className={`h-full rounded-lg transition-all duration-300 ${colorClass}`}
+        className={cn('h-full rounded-lg transition-all duration-300', colorClass)}
         style={{ width: `${percent}%` }}
         role='progressbar'
         aria-valuemin={0}

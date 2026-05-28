@@ -8,6 +8,7 @@ import { getContactAlternates } from '@/lib/i18n/pages/contact';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import Divider from '@/components/atoms/Divider';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
 
 export const metadata = {
   title: 'Kontakt - wycena Twojego planu - Arteon',
@@ -136,7 +137,7 @@ export default function ContactPage() {
           items={[
             {
               title: 'Telefon',
-              icon: <RiPhoneLine className='h-6 w-6' />,
+              icon: <RiPhoneLine className={normalIconSizeClasses} />,
               description: (
                 <p>
                   <a href='tel:+48516466255'>+48 516 466 255</a>
@@ -145,7 +146,7 @@ export default function ContactPage() {
             },
             {
               title: 'Email',
-              icon: <RiMailLine className='h-6 w-6' />,
+              icon: <RiMailLine className={normalIconSizeClasses} />,
               description: (
                 <>
                   <p>
@@ -163,7 +164,7 @@ export default function ContactPage() {
             },
             {
               title: 'Godziny otwarcia',
-              icon: <RiMapPinTimeLine className='h-6 w-6' />,
+              icon: <RiMapPinTimeLine className={normalIconSizeClasses} />,
               description: (
                 <p>Jesteśmy do Twojej dyspozycji od poniedziałku do piątku od 9 do 20</p>
               ),

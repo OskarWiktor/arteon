@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import ButtonGroup from '../molecules/ButtonGroup';
 import Subtitle from '../atoms/typography/Subtitle';
 import Wrapper from '../atoms/Wrapper';
+import { cn } from '@/lib/utils';
 
 interface HeroBannerProps {
   id?: string;
@@ -80,27 +81,45 @@ export default function HeroBanner({
       {hasBg && overlay !== 'none' && (
         <div
           aria-hidden='true'
-          className={`absolute inset-0 ${overlay === 'black' ? 'bg-black/70' : 'bg-white/80'}`}
+          className={cn('absolute inset-0', overlay === 'black' ? 'bg-black/70' : 'bg-white/80')}
         />
       )}
       <Wrapper className='relative flex h-auto items-center'>
         <div
-          className={`max-w-[100vw] ${contentWidthClass} ${contentAnchor} ${textAlign} ${toneTextClass} ${isCompact ? '' : 'rounded-lg p-5 pt-4 md:p-7'} ${hasBg && overlay === 'black' ? 'bg-black/60' : hasBg && overlay === 'white' ? 'bg-white/50' : ''} hyphens-auto`}
+          className={cn(
+            'max-w-[100vw]',
+            contentWidthClass,
+            contentAnchor,
+            textAlign,
+            toneTextClass,
+            isCompact ? '' : 'rounded-lg p-5 pt-4 md:p-7',
+            hasBg && overlay === 'black'
+              ? 'bg-black/60'
+              : hasBg && overlay === 'white'
+                ? 'bg-white/50'
+                : '',
+            'hyphens-auto',
+          )}
         >
           {subtitle && (
-            <Subtitle variant='hero' className={` ${toneMutedClass}`}>
+            <Subtitle variant='hero' className={cn(' ', toneMutedClass)}>
               {subtitle}
             </Subtitle>
           )}
           {title && (
-            <h1 id={titleId} className={`text-pretty ${isCompact ? 'h4 text-center' : ''}`}>
+            <h1 id={titleId} className={cn('text-pretty', isCompact ? 'h4 text-center' : '')}>
               {title}
             </h1>
           )}
           {description && (
             <p
               id={descId}
-              className={`text-pretty ${isCompact ? 'mt-2 text-center md:mt-3' : 'mt-3 md:mt-5'} text-base leading-relaxed ${isLightText ? 'text-white' : 'text-mid'}`}
+              className={cn(
+                'text-pretty',
+                isCompact ? 'mt-2 text-center md:mt-3' : 'mt-3 md:mt-5',
+                'text-base leading-relaxed',
+                isLightText ? 'text-white' : 'text-mid',
+              )}
             >
               {description}
             </p>
@@ -115,7 +134,6 @@ export default function HeroBanner({
               btnTwoVariant='accent'
               spacing='loose'
               align={variant === 'center' ? 'center' : variant === 'right' ? 'right' : 'left'}
-              className='mt-7 md:mt-8'
             />
           )}
         </div>

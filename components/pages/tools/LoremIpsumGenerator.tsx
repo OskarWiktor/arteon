@@ -9,9 +9,8 @@ import {
   RiPaletteLine,
 } from 'react-icons/ri';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
-import ToolStatRow from '@/components/organisms/tools/ToolStatRow';
+import ToolStatRow from '@/components/molecules/tools/ToolStatRow';
 import Button from '@/components/atoms/buttons/Button';
 import {
   generateLoremIpsum,
@@ -27,6 +26,9 @@ import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { useLocale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/lorem-ipsum';
 import Input from '@/components/atoms/form/Input';
+import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 
 const MODES: LoremMode[] = [
   'paragraphs',
@@ -116,7 +118,7 @@ export default function LoremIpsumGenerator() {
 
   return (
     <div className='space-y-4 overflow-hidden'>
-      <ToolSection padding='sm' className='flex flex-wrap items-center gap-3'>
+      <Card className='flex flex-wrap items-center'>
         <div className='flex flex-wrap items-center gap-2'>
           <RiPaletteLine className='text-primary text-base' />
           <span className='tool-value'>{t.styleBarTitle}</span>
@@ -126,14 +128,12 @@ export default function LoremIpsumGenerator() {
             ))}
           </div>
         </div>
-      </ToolSection>
+      </Card>
 
       <div className='grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]'>
-        {/* Settings panel */}
-        <ToolSection className='space-y-5'>
+        <Card padding='md'>
           <h2 className='h6 pb-1'>{t.panelTitle}</h2>
 
-          {/* Mode */}
           <ToolFieldRow label={t.mode}>
             <div className='flex flex-wrap gap-2'>
               {MODES.map(m => (
@@ -141,7 +141,10 @@ export default function LoremIpsumGenerator() {
                   key={m}
                   type='button'
                   onClick={() => setMode(m)}
-                  className={`tool-button ${mode === m ? 'tool-button-active' : 'tool-button-inactive'}`}
+                  className={cn(
+                    'tool-button',
+                    mode === m ? 'bg-primary text-white' : 'tool-button-inactive',
+                  )}
                 >
                   {modeLabels[m]}
                 </button>
@@ -149,7 +152,6 @@ export default function LoremIpsumGenerator() {
             </div>
           </ToolFieldRow>
 
-          {/* Count */}
           <ToolFieldRow label={t.count}>
             <Input
               type='number'
@@ -160,7 +162,6 @@ export default function LoremIpsumGenerator() {
             />
           </ToolFieldRow>
 
-          {/* Paragraph length – only show for paragraphs mode */}
           {mode === 'paragraphs' && (
             <ToolFieldRow label={t.paragraphLength}>
               <div className='flex flex-wrap gap-2'>
@@ -169,7 +170,10 @@ export default function LoremIpsumGenerator() {
                     key={l}
                     type='button'
                     onClick={() => setParagraphLength(l)}
-                    className={`tool-button ${paragraphLength === l ? 'tool-button-active' : 'tool-button-inactive'}`}
+                    className={cn(
+                      'tool-button',
+                      paragraphLength === l ? 'bg-primary text-white' : 'tool-button-inactive',
+                    )}
                   >
                     {lengthLabels[l]}
                   </button>
@@ -178,7 +182,6 @@ export default function LoremIpsumGenerator() {
             </ToolFieldRow>
           )}
 
-          {/* Format */}
           <ToolFieldRow label={t.outputFormat}>
             <div className='flex flex-wrap gap-2'>
               {FORMATS.map(f => (
@@ -186,7 +189,10 @@ export default function LoremIpsumGenerator() {
                   key={f}
                   type='button'
                   onClick={() => setOutputFormat(f)}
-                  className={`tool-button ${outputFormat === f ? 'tool-button-active' : 'tool-button-inactive'}`}
+                  className={cn(
+                    'tool-button',
+                    outputFormat === f ? 'bg-primary text-white' : 'tool-button-inactive',
+                  )}
                 >
                   {formatLabels[f]}
                 </button>
@@ -194,12 +200,10 @@ export default function LoremIpsumGenerator() {
             </div>
           </ToolFieldRow>
 
-          {/* Generate button */}
           <Button variant='accent' onClick={generate} className='w-full'>
             {t.generate}
           </Button>
 
-          {/* Statistics */}
           {output && (
             <div className='border-t border-neutral-200 pt-4'>
               <h3 className='tool-value mb-3'>{t.statistics}</h3>
@@ -214,10 +218,9 @@ export default function LoremIpsumGenerator() {
               </div>
             </div>
           )}
-        </ToolSection>
+        </Card>
 
-        {/* Preview panel */}
-        <ToolSection className='space-y-4'>
+        <Card>
           <h2 className='h6 pb-1'>{t.preview}</h2>
 
           {output ? (
@@ -225,12 +228,11 @@ export default function LoremIpsumGenerator() {
               {output}
             </div>
           ) : (
-            <div className='tool-input flex min-h-[400px] items-center justify-center text-neutral-400'>
+            <div className={cn('tool-input min-h-[400px] text-neutral-400', flexCenterClasses)}>
               {t.emptyState}
             </div>
           )}
 
-          {/* Action bar */}
           {output && (
             <div className='flex flex-wrap gap-2'>
               <Button
@@ -240,9 +242,9 @@ export default function LoremIpsumGenerator() {
               >
                 <span className='inline-flex items-center gap-2'>
                   {copied ? (
-                    <RiCheckLine className='h-4 w-4' />
+                    <RiCheckLine className={smallIconSizeClasses} />
                   ) : (
-                    <RiFileCopyLine className='h-4 w-4' />
+                    <RiFileCopyLine className={smallIconSizeClasses} />
                   )}
                   {copied ? t.copied : t.copyText}
                 </span>
@@ -256,9 +258,9 @@ export default function LoremIpsumGenerator() {
                 >
                   <span className='inline-flex items-center gap-2'>
                     {copiedHtml ? (
-                      <RiCheckLine className='h-4 w-4' />
+                      <RiCheckLine className={smallIconSizeClasses} />
                     ) : (
-                      <RiCodeSSlashLine className='h-4 w-4' />
+                      <RiCodeSSlashLine className={smallIconSizeClasses} />
                     )}
                     {copiedHtml ? t.copied : t.copyHtml}
                   </span>
@@ -267,13 +269,13 @@ export default function LoremIpsumGenerator() {
 
               <Button variant='normal' onClick={handleDownload} aria-label={t.downloadTxt}>
                 <span className='inline-flex items-center gap-2'>
-                  <RiDownloadLine className='h-4 w-4' />
+                  <RiDownloadLine className={smallIconSizeClasses} />
                   {t.downloadTxt}
                 </span>
               </Button>
             </div>
           )}
-        </ToolSection>
+        </Card>
       </div>
     </div>
   );

@@ -475,12 +475,28 @@
           "answer": "Everything depends on the resolution you choose. At the standard screen value of 96 DPI one pixel equals about 0.0265 cm, while at the 300 DPI used for print only 0.0085 cm. To convert any pixel count into centimeters, multiply it by 2.54 and divide by the DPI value."
         },
         {
+          "question": "What is the formula for converting px to cm?",
+          "answer": "The formula is simple and comes from a fixed relationship: one inch equals exactly 2.54 cm. The full formula is number of centimeters = number of pixels × 2.54 ÷ DPI. It also works the other way around: number of pixels = number of centimeters × DPI ÷ 2.54. With two known values – pixel count and target resolution – you can instantly calculate the third."
+        },
+        {
           "question": "How do you convert pixels to centimeters?",
           "answer": "The easiest way is to type the pixel count into the converter and pick the DPI you need – the result appears straight away. If you would rather calculate by hand, use the formula number of centimeters = number of pixels × 2.54 ÷ DPI. For 500 px at 300 DPI you get 500 × 2.54 ÷ 300, which equals roughly 4.23 cm."
         },
         {
+          "question": "How many centimeters does 100 pixels produce?",
+          "answer": "One hundred pixels on a 96 DPI screen equals exactly 2.65 cm – roughly the width of an adult thumb. In 300 DPI print the same 100 pixels covers only 0.85 cm, and at 600 DPI just 0.42 cm. This is a handy value to remember because it shows up frequently in button and icon sizes on websites."
+        },
+        {
           "question": "How many centimeters does 200 pixels produce?",
           "answer": "Two hundred pixels on a 96 DPI screen equals about 5.29 cm. In 300 DPI print the same 200 pixels covers only 1.69 cm, because more dots fit on one inch. At 600 DPI used for high-end photo print it is only 0.85 cm."
+        },
+        {
+          "question": "How many centimeters does 300 pixels produce?",
+          "answer": "Three hundred pixels equals about 7.94 cm on a 96 DPI screen and exactly 2.54 cm in 300 DPI print – exactly one inch. The relationship is no coincidence: the 300 DPI standard literally means that 300 dots fit on each inch of print. The value of 300 px often matches a product thumbnail size in an online store."
+        },
+        {
+          "question": "How many centimeters does 1,000 pixels produce?",
+          "answer": "One thousand pixels at 96 DPI equals about 26.46 cm – roughly the width of an A4 sheet with margins. In 300 DPI print the same 1,000 pixels covers 8.47 cm – enough for a business card or a small photo. At 150 DPI used for posters and brochures you get 16.93 cm, a format close to a postcard."
         },
         {
           "question": "How many centimeters does 500 pixels produce?",
@@ -499,6 +515,10 @@
           "answer": "A full Full HD frame at 1:1 scale covers 50.80 × 28.58 cm at the 96 DPI screen standard. If you wanted to print the same image at photo-quality 300 DPI it would fit exactly on 16.26 × 9.14 cm – roughly the size of a postcard. For 4K UHD 3,840 × 2,160 px every dimension doubles: 101.60 × 57.15 cm on screen and 32.51 × 18.29 cm in print."
         },
         {
+          "question": "What are the dimensions of a 4K (3,840 × 2,160 px) screen in centimeters?",
+          "answer": "The 4K UHD resolution (3,840 × 2,160 px) at 1:1 scale corresponds to 101.60 × 57.15 cm at the 96 DPI screen standard – more than a meter wide, roughly the size of a 45-inch TV viewed up close. In 300 DPI print the same file fits on 32.51 × 18.29 cm, a format close to a landscape A4 sheet. At 150 DPI it is enough for a 65.02 × 36.58 cm poster."
+        },
+        {
           "question": "How many centimeters does a file 2,480 pixels wide produce?",
           "answer": "A 2,480 px wide file at 300 DPI equals exactly 21.00 cm, the short side of an A4 sheet. A print shop will accept such a file without issues if the height is 3,508 px (29.7 cm). The same file on a 96 DPI screen would cover 65.62 cm, stretching far beyond the visible area of a regular monitor."
         },
@@ -509,6 +529,10 @@
         {
           "question": "How do you set pixels to centimeters in Photoshop or Canva?",
           "answer": "In Photoshop open Image &rsaquo; Image Size, change the unit from pixels to centimeters and type the target DPI – the program shows the current physical size. In Canva the project dimensions panel is visible when you create a new file or via the Resize menu; switch the units to cm. Detailed walkthroughs for Photoshop, Illustrator, Figma, Canva, and Procreate are in the section above."
+        },
+        {
+          "question": "How do you set px to cm in Illustrator or Figma?",
+          "answer": "In Adobe Illustrator go to Edit &rsaquo; Preferences &rsaquo; Units and pick Centimeters – the unit changes across all panels and rulers immediately. Figma works differently because it operates only in pixels at a fixed 96 DPI – there is no option to switch units inside the tool. To check the physical size of a Figma project, copy the pixel value from the Design panel and paste it into our converter while setting the target DPI (96 for screen, 300 for print)."
         },
         {
           "question": "What is the difference between DPI and PPI?",

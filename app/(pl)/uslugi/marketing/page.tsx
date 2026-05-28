@@ -24,6 +24,8 @@ import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import Script from 'next/script';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import { siteUrl } from '@/utils/absoluteUrl';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Marketing internetowy - SEO, reklamy i komunikacja | Arteon',
@@ -107,7 +109,7 @@ export default function OfferMarketingHubPage() {
                   strategiczne działania długoterminowe.
                 </>
               ),
-              icon: <RiLightbulbFlashLine className='text-primary h-6 w-6' />,
+              icon: <RiLightbulbFlashLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Raporty i decyzje oparte na danych',
@@ -117,7 +119,7 @@ export default function OfferMarketingHubPage() {
                   abyś miał pewność, że marketing z nami będzie skuteczny.
                 </>
               ),
-              icon: <IoAnalytics className='text-primary h-6 w-6' />,
+              icon: <IoAnalytics className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Pełna własność danych i kont',
@@ -127,7 +129,7 @@ export default function OfferMarketingHubPage() {
                   chwili możesz sprawdzić wyniki naszych działań.
                 </>
               ),
-              icon: <RiShieldCheckLine className='text-primary h-6 w-6' />,
+              icon: <RiShieldCheckLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'SEO techniczne + treściowe',
@@ -138,7 +140,7 @@ export default function OfferMarketingHubPage() {
                   wyszukiwarki
                 </>
               ),
-              icon: <RiSearchLine className='text-primary h-6 w-6' />,
+              icon: <RiSearchLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Lokalne lub krajowe SEO',
@@ -148,7 +150,7 @@ export default function OfferMarketingHubPage() {
                   rozwijać się w Twoim mieście i jednocześnie za granicą lub w całym kraju
                 </>
               ),
-              icon: <RiSearchEyeLine className='text-primary h-6 w-6' />,
+              icon: <RiSearchEyeLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Reklamy Google i Meta',
@@ -158,7 +160,7 @@ export default function OfferMarketingHubPage() {
                   słowa kluczowe, a budżet kierujemy w to, co działa.
                 </>
               ),
-              icon: <RiBarChart2Fill className='text-primary h-6 w-6' />,
+              icon: <RiBarChart2Fill className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Zero ukrytych kosztów',
@@ -168,7 +170,9 @@ export default function OfferMarketingHubPage() {
                   przed startem działań.
                 </>
               ),
-              icon: <RiCustomerService2Line className='text-primary h-6 w-6' />,
+              icon: (
+                <RiCustomerService2Line className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
             {
               title: 'Wsparcie po wdrożeniu',
@@ -178,7 +182,7 @@ export default function OfferMarketingHubPage() {
                   mailu oraz prowadzimy konsultacje
                 </>
               ),
-              icon: <RiShieldCheckLine className='text-primary h-6 w-6' />,
+              icon: <RiShieldCheckLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
           ]}
         />
@@ -192,7 +196,7 @@ export default function OfferMarketingHubPage() {
           grid='two'
           items={[
             {
-              icon: <RiFileList2Line className='h-8 w-8' />,
+              icon: <RiFileList2Line className={largeIconSizeClasses} />,
               title: 'Audyt SEO',
               subtitle: 'Diagnoza i priorytety działań',
               description: (
@@ -211,7 +215,7 @@ export default function OfferMarketingHubPage() {
               ),
             },
             {
-              icon: <RiSearchEyeLine className='h-8 w-8' />,
+              icon: <RiSearchEyeLine className={largeIconSizeClasses} />,
               title: 'Optymalizacja SEO',
               subtitle: 'Wdrożenia po audycie',
               description: (
@@ -229,7 +233,7 @@ export default function OfferMarketingHubPage() {
               ),
             },
             {
-              icon: <RiLineChartLine className='h-8 w-8' />,
+              icon: <RiLineChartLine className={largeIconSizeClasses} />,
               title: 'Pozycjonowanie stron',
               subtitle: 'Stały wzrost widoczności',
               description: (

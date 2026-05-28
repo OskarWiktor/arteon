@@ -5,6 +5,8 @@ import Button from '@/components/atoms/buttons/Button';
 import Wrapper from '@/components/atoms/Wrapper';
 import type { ErrorPagesDictionary } from '@/lib/i18n/get-dictionary';
 import ButtonLink from '../atoms/buttons/ButtonLink';
+import { flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 type ErrorPageProps = {
   error: Error & { digest?: string };
@@ -34,7 +36,7 @@ export default function ErrorPage({ error, reset, t, homeHref, contactHref }: Er
 
   return (
     <Wrapper>
-      <div className='flex min-h-[60vh] flex-col items-center justify-center px-6 text-center'>
+      <div className={cn('min-h-[60vh] flex-col px-6 text-center', flexCenterClasses)}>
         <h1 className='mb-4'>{t.title}</h1>
         <p className='text-light mb-8 max-w-md text-lg leading-relaxed'>{t.description}</p>
         <div className='flex flex-wrap gap-3'>

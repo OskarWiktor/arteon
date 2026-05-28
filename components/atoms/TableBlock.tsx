@@ -31,7 +31,10 @@ export default function TableBlock({
   return (
     <figure className='not-prose'>
       <div
-        className={`overflow-x-auto rounded-lg border border-black/10 bg-white shadow-sm ${className}`}
+        className={cn(
+          'overflow-x-auto rounded-lg border border-black/10 bg-white shadow-sm',
+          className,
+        )}
         role='region'
         aria-label={caption || t.defaultTableLabel}
       >
@@ -48,7 +51,7 @@ export default function TableBlock({
                 <th
                   key={i}
                   scope='col'
-                  className={`px-4 ${compact ? 'py-2' : 'py-3'} ${alignCls(c.align)}`}
+                  className={cn('px-4', compact ? 'py-2' : 'py-3', alignCls(c.align))}
                 >
                   <span className='text-sm font-semibold'>{c.header}</span>
                 </th>
@@ -67,7 +70,12 @@ export default function TableBlock({
                 {r.map((cell, j) => (
                   <td
                     key={j}
-                    className={`px-4 ${compact ? 'py-2' : 'py-3'} align-top ${alignCls(columns[j]?.align)}`}
+                    className={cn(
+                      'px-4',
+                      compact ? 'py-2' : 'py-3',
+                      'align-top',
+                      alignCls(columns[j]?.align),
+                    )}
                   >
                     <div className='text-dark text-base'>{String(cell)}</div>
                   </td>

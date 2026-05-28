@@ -7,6 +7,8 @@ import {
   type ResolvedRoute,
 } from '@/lib/tools/conversionRoutes';
 import Divider from '@/components/atoms/Divider';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 const TITLE_CONVERT_TO: Record<string, (fmt: string) => string> = {
   pl: f => `Konwertuj inne pliki do formatu ${f}`,
@@ -74,7 +76,10 @@ function LinkGrid({ routes, locale }: { routes: ResolvedRoute[]; locale: string 
         <a
           key={r.toolKey}
           href={r.href}
-          className='border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors'
+          className={cn(
+            'border-primary/20 hover:bg-primary/5 hover:border-primary/40 rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors',
+            flexCenterClasses,
+          )}
         >
           {FORMAT_DISPLAY_LABELS[r.source]} {connector} {FORMAT_DISPLAY_LABELS[r.target]}
         </a>

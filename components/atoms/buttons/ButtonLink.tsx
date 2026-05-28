@@ -1,7 +1,9 @@
 import {
   buttonAccentVariantClasses,
   buttonNormalVariantClasses,
+  flexCenterClasses,
   focusRingClasses,
+  normalIconSizeClasses,
 } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 import { ButtonVariant } from '@/types/ui';
@@ -46,7 +48,7 @@ export default function ButtonLink({
       <span>{children}</span>
 
       {arrow && (
-        <span className='ml-1 flex h-5 w-5 items-center justify-center' aria-hidden='true'>
+        <span className={cn('ml-1', flexCenterClasses, normalIconSizeClasses)} aria-hidden='true'>
           <RiArrowRightSLine className='text-current' />
         </span>
       )}

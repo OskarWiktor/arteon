@@ -1,6 +1,6 @@
 import ConsentListener from '@/components/organisms/ConsentListener';
 import Footer from '@/components/organisms/Footer';
-import Navigation from '@/components/organisms/Navigation';
+import Navigation from '@/components/organisms/navigation/Navigation';
 import SkipToContent from '@/components/atoms/SkipToContent';
 import { LocaleProvider } from '@/lib/LocaleContext';
 import { getClientDictionary, getLocaleConfigFor } from '@/lib/i18n/client-dictionary';

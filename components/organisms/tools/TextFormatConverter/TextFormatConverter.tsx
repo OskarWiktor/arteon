@@ -4,7 +4,6 @@ import { useRef, useState } from 'react';
 
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
-import ToolSection from '@/components/organisms/tools/ToolSection';
 import { useDictionary } from '@/lib/LocaleContext';
 
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
@@ -14,6 +13,9 @@ import { convertText } from '@/lib/tools/text/convert';
 import type { TextFormatConverterProps } from '@/types/tools/text-format-converter';
 import Textarea from '@/components/atoms/form/Textarea';
 import Input from '@/components/atoms/form/Input';
+import Card from '../../Card';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 const LABEL_TO_FORMAT: Record<string, UniversalFormat> = {
   CSV: 'csv',
@@ -144,8 +146,8 @@ export default function TextFormatConverter({
       />
 
       <div className='grid gap-4 md:grid-cols-2'>
-        <ToolSection className='space-y-3'>
-          <div className='flex items-center justify-between gap-2'>
+        <Card>
+          <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <h2 className='h6'>{sourceLabel}</h2>
             <label className='text-primary-mid hover:text-primary cursor-pointer text-xs font-medium transition-colors'>
               <Input
@@ -184,9 +186,9 @@ export default function TextFormatConverter({
               {t.clearAll}
             </Button>
           </div>
-        </ToolSection>
+        </Card>
 
-        <ToolSection className='space-y-3'>
+        <Card>
           <h2 className='h6'>{targetLabel}</h2>
           <Textarea
             className='min-h-[300px] resize-y'
@@ -212,7 +214,7 @@ export default function TextFormatConverter({
               {t.download}
             </Button>
           </div>
-        </ToolSection>
+        </Card>
       </div>
     </div>
   );

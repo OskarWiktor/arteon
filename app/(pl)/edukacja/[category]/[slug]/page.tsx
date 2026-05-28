@@ -6,7 +6,6 @@ import HeroBanner from '@/components/organisms/HeroBanner';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import TableOfContents from '@/components/organisms/TableOfContent';
 import Badge from '@/components/atoms/Badge';
-import FaqPanels from '@/components/molecules/FaqPanels';
 import CTABanner from '@/components/organisms/CTABanner';
 
 import type { Article } from '@/types/article';
@@ -25,6 +24,8 @@ import AbbrTouchHandler from '@/components/atoms/AbbrTouchHandler';
 import AdSense from '@/components/molecules/AdSense';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import Divider from '@/components/atoms/Divider';
+import { cn } from '@/lib/utils';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 
 const defaultCTA = {
   title: 'Rozwiń z nami swoją firmę',
@@ -101,7 +102,7 @@ function Aspect({
   };
   return (
     <div
-      className={`relative overflow-hidden rounded-lg border border-black/10 ${map[ratio] || ''}`}
+      className={cn('relative overflow-hidden rounded-lg border border-black/10', map[ratio] || '')}
     >
       {children}
     </div>
@@ -458,7 +459,7 @@ export default async function ArticlePage({
 
           {article.faq?.length && (
             <>
-              <FaqPanels
+              <SectionFaqPanels
                 defaultOpenIndex={1}
                 title='Najczęstsze pytania'
                 items={article.faq}
@@ -472,7 +473,7 @@ export default async function ArticlePage({
         </div>
         <div>
           <ShareBlock url={url} title={shareTitle} />{' '}
-          <TableOfContents rootSelector='#article-root' size='large' levels='h2' />
+          <TableOfContents rootSelector='#article-root' size='large' />
         </div>
       </Wrapper>
 

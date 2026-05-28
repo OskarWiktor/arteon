@@ -2,14 +2,13 @@
 
 import Button from '@/components/atoms/buttons/Button';
 import { useEffect, useRef, useState, type FormEvent } from 'react';
-import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import Badge from '@/components/atoms/Badge';
 import FileDropzone from '@/components/molecules/FileDropzone';
-import ToolUploadContent from '@/components/organisms/tools/ToolUploadContent';
-import ToolFileRow from '@/components/organisms/tools/ToolFileRow';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
+import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import ToolProgressBar from '@/components/organisms/tools/ToolProgressBar';
+import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
@@ -21,13 +20,16 @@ import { useWebpDownloads } from '@/hooks/useWebpDownloads';
 import { useWebpReportCopy } from '@/hooks/useWebpReportCopy';
 import { useLocale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/jpg-png-webp';
+import Card from '@/components/organisms/Card';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export default function JpgPngToWebp() {
   const locale = useLocale();
   const t = ui[locale];
 
   const { copy } = useCopyToClipboard();
-  const [quality, setQuality] = useState(80); // domyślna jakość 80%
+  const [quality, setQuality] = useState(80);
   const [autoDownload, setAutoDownload] = useState(false);
   const [autoDownloadMode, setAutoDownloadMode] = useState<'files' | 'zip'>('files');
   const [includeCsvReport, setIncludeCsvReport] = useState(false);
@@ -152,7 +154,7 @@ export default function JpgPngToWebp() {
 
   return (
     <div className='grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-      <ToolSection className='space-y-4'>
+      <Card>
         <form onSubmit={handleSubmitWithAutoZip} className='space-y-4'>
           <div>
             <h2 className='h6 mb-2'>{t.addFiles}</h2>
@@ -212,7 +214,7 @@ export default function JpgPngToWebp() {
             <h3 className='h6 mt-8 mb-2'>{t.convertAndDownload}</h3>
             {total > 0 && (
               <div className='mb-3 space-y-2'>
-                <div className='flex items-center justify-between'>
+                <div className={flexCenterBetweenClasses}>
                   <span className='tool-meta'>
                     {t.inQueue} <strong>{total}</strong> {t.files}
                   </span>
@@ -328,10 +330,10 @@ export default function JpgPngToWebp() {
             </div>
           </div>
         </form>
-      </ToolSection>
+      </Card>
 
-      <ToolSection aria-label={t.queueListAriaLabel} className='space-y-2'>
-        <div className='flex items-center justify-between gap-2'>
+      <Card aria-label={t.queueListAriaLabel}>
+        <div className={cn('gap-2', flexCenterBetweenClasses)}>
           <h2 className='h6'>{t.queueFilesHeading}</h2>
           {files.length > 0 && (
             <p className='tool-meta'>
@@ -504,7 +506,7 @@ export default function JpgPngToWebp() {
             })}
           </div>
         )}
-      </ToolSection>
+      </Card>
     </div>
   );
 }

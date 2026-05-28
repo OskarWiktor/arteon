@@ -3,7 +3,7 @@ import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import Wrapper from '@/components/atoms/Wrapper';
 import Script from 'next/script';
 import {
@@ -24,6 +24,7 @@ import {
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 export const metadata = {
   title: 'Gratis nettverktøy | Konverterere, SEO, farger, favicon',
@@ -584,7 +585,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiCropLine className='h-8 w-8' />,
+              icon: <RiCropLine className={largeIconSizeClasses} />,
               title: 'Bildeeditor',
               topImageAlt: 'Bildeeditor Arteon',
               topImageSrc:
@@ -605,7 +606,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiAppsLine className='h-8 w-8' />,
+              icon: <RiAppsLine className={largeIconSizeClasses} />,
               title: 'Favicon- og ikongenerator',
               topImageAlt: 'Favicon-generator Arteon',
               topImageSrc: '/assets/tools/favicon-generator/gratis-favicon-generator-no.webp',
@@ -633,7 +634,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiFileTextLine className='h-8 w-8' />,
+              icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Meta-tittel- og beskrivelsessjekker',
               topImageAlt: 'Meta-tittel- og beskrivelsessjekker Arteon',
               topImageSrc:
@@ -653,7 +654,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiArticleLine className='h-8 w-8' />,
+              icon: <RiArticleLine className={largeIconSizeClasses} />,
               title: 'Ord- og tegnteller',
               topImageAlt: 'Ord- og tegnteller Arteon',
               topImageSrc:
@@ -675,7 +676,7 @@ export default function ToolsIndexPage() {
             },
 
             {
-              icon: <RiFileTextLine className='h-8 w-8' />,
+              icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Lorem Ipsum-generator',
               topImageAlt: 'Lorem Ipsum-generator Arteon',
               topImageSrc: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-no.webp',
@@ -702,7 +703,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiMailLine className='h-8 w-8' />,
+              icon: <RiMailLine className={largeIconSizeClasses} />,
               title: 'Gratis HTML e-postsignatur-generator',
               topImageAlt: 'Gratis e-postsignatur-generator Arteon',
               topImageSrc:
@@ -731,7 +732,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiQrCodeLine className='h-8 w-8' />,
+              icon: <RiQrCodeLine className={largeIconSizeClasses} />,
               title: 'Gratis QR-kode-generator',
               topImageAlt: 'Gratis QR-kode-generator Arteon',
               topImageSrc: '/assets/tools/qr-code-generator/gratis-qr-kode-generator-no.webp',
@@ -758,7 +759,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiContrast2Line className='h-8 w-8' />,
+              icon: <RiContrast2Line className={largeIconSizeClasses} />,
               title: 'Fargekontrastsjekker',
               topImageAlt: 'Fargekontrastsjekker Arteon',
               topImageSrc:
@@ -779,7 +780,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiPantoneLine className='h-8 w-8' />,
+              icon: <RiPantoneLine className={largeIconSizeClasses} />,
               title: 'Fargeutrekker fra bilde',
               topImageAlt: 'Fargeutrekker fra bilde Arteon',
               topImageSrc: '/assets/tools/image-color-extractor/fargeutrekker-fra-bilde-no.webp',
@@ -798,7 +799,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiPaletteLine className='h-8 w-8' />,
+              icon: <RiPaletteLine className={largeIconSizeClasses} />,
               title: 'Fargepalettgenerator',
               topImageAlt: 'Fargepalettgenerator Arteon',
               topImageSrc: '/assets/tools/color-palette-generator/fargepalettgenerator-no.webp',
@@ -826,7 +827,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JPG til WebP-konverterer',
               topImageAlt: 'JPG til WebP-konverterer Arteon',
               topImageSrc:
@@ -843,7 +844,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'PNG til JPG-konverterer',
               topImageAlt: 'PNG til JPG-konverterer Arteon',
               topImageSrc:
@@ -862,7 +863,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'WebP til JPG-konverterer',
               topImageAlt: 'WebP til JPG-konverterer Arteon',
               topImageSrc:
@@ -879,7 +880,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'PNG til WebP-konverterer',
               topImageAlt: 'PNG til WebP-konverterer Arteon',
               topImageSrc:
@@ -896,7 +897,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JPG til PNG-konverterer',
               topImageAlt: 'JPG til PNG-konverterer Arteon',
               topImageSrc:
@@ -913,7 +914,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'WebP til PNG-konverterer',
               topImageAlt: 'WebP til PNG-konverterer Arteon',
               topImageSrc:
@@ -939,7 +940,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'CSV til JSON',
               topImageAlt: 'CSV til JSON Arteon',
               topImageSrc:
@@ -958,7 +959,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON til CSV',
               topImageAlt: 'JSON til CSV Arteon',
               topImageSrc:
@@ -975,7 +976,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'XML til JSON',
               topImageAlt: 'XML til JSON Arteon',
               topImageSrc:
@@ -992,7 +993,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON til XML',
               topImageAlt: 'JSON til XML Arteon',
               topImageSrc:
@@ -1009,7 +1010,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'YAML til JSON',
               topImageAlt: 'YAML til JSON Arteon',
               topImageSrc:
@@ -1026,7 +1027,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON til YAML',
               topImageAlt: 'JSON til YAML Arteon',
               topImageSrc:
@@ -1065,24 +1066,24 @@ export default function ToolsIndexPage() {
           grid='two'
           items={[
             {
-              icon: <RiShieldCheckLine className='h-6 w-6' />,
+              icon: <RiShieldCheckLine className={normalIconSizeClasses} />,
               title: 'Fullt personvern',
               description:
                 'Alle verktoy behandler filer lokalt i nettleseren. Ingenting sendes til en server -- data forsvinner naar du lukker fanen.',
             },
             {
-              icon: <RiInfinityFill className='h-6 w-6' />,
+              icon: <RiInfinityFill className={normalIconSizeClasses} />,
               title: 'Uten bruksgrense',
               description:
                 'Bruk uten begrensninger -- ingen daglig grense, ingen filgrense, ingen konverteringsgrense. Saa mange ganger du trenger.',
             },
             {
-              icon: <RiLockLine className='h-6 w-6' />,
+              icon: <RiLockLine className={normalIconSizeClasses} />,
               title: 'Uten registrering',
               description: 'Ingen konto nodvendig. Aapne verktoyet, bruk det, ferdig.',
             },
             {
-              icon: <RiGlobalLine className='h-6 w-6' />,
+              icon: <RiGlobalLine className={normalIconSizeClasses} />,
               title: 'Tilgjengelig paa norsk',
               description:
                 'Alle verktoy er tilgjengelige paa norsk -- grensesnitt, veiledninger og meldinger.',
@@ -1091,7 +1092,7 @@ export default function ToolsIndexPage() {
         />
 
         <Divider line />
-        <FaqPanels items={faqItems} title='Ofte stilte sporsmaal om vaare verktoy' />
+        <SectionFaqPanels items={faqItems} title='Ofte stilte sporsmaal om vaare verktoy' />
         <Divider size='sm' />
       </Wrapper>
       <Script id='ld-json-tools-no' type='application/ld+json' strategy='afterInteractive'>

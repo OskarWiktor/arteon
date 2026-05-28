@@ -4,13 +4,16 @@ import { RiFacebookFill, RiLinkedinBoxFill, RiMailLine, RiTwitterXFill } from 'r
 import Card from './Card';
 import ButtonCopy from '../atoms/buttons/ButtonCopy';
 import { cn } from '@/lib/utils';
-import { focusRingClasses } from '@/lib/ui-classes';
+import { focusRingClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 type ShareBlockProps = {
   url: string;
   title: string;
   label?: string;
 };
+
+const shareBlockLinkClasses =
+  'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-white transition hover:opacity-90';
 
 export default function ShareBlock({ url, title }: ShareBlockProps) {
   const encodedUrl = encodeURIComponent(url);
@@ -22,24 +25,15 @@ export default function ShareBlock({ url, title }: ShareBlockProps) {
   const mailHref = `mailto:?subject=${encodedTitle}&body=${encodedUrl}`;
 
   return (
-    <Card
-      as='aside'
-      variant='section'
-      padding='sm'
-      className='mb-12 w-fit'
-      aria-label='Udostępnij ten materiał'
-    >
+    <Card as='aside' className='mb-12 w-fit' aria-label='Udostępnij ten materiał'>
       <div className='flex flex-wrap items-center gap-2'>
         <a
           href={facebookHref}
           target='_blank'
           rel='noopener noreferrer'
-          className={cn(
-            'bg-brand-facebook flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-white transition hover:opacity-90',
-            focusRingClasses,
-          )}
+          className={cn('bg-brand-facebook', shareBlockLinkClasses, focusRingClasses)}
         >
-          <RiFacebookFill className='h-5 w-5' />
+          <RiFacebookFill className={normalIconSizeClasses} />
           Facebook
         </a>
 
@@ -47,24 +41,18 @@ export default function ShareBlock({ url, title }: ShareBlockProps) {
           href={twitterHref}
           target='_blank'
           rel='noopener noreferrer'
-          className={cn(
-            'flex items-center gap-2 rounded-lg bg-black px-4 py-2 text-sm font-medium text-white transition hover:opacity-90',
-            focusRingClasses,
-          )}
+          className={cn('bg-black', shareBlockLinkClasses, focusRingClasses)}
         >
-          <RiTwitterXFill className='h-5 w-5' />X
+          <RiTwitterXFill className={normalIconSizeClasses} />X
         </a>
 
         <a
           href={linkedinHref}
           target='_blank'
           rel='noopener noreferrer'
-          className={cn(
-            'bg-brand-linkedin flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-white transition hover:opacity-90',
-            focusRingClasses,
-          )}
+          className={cn('bg-brand-linkedin', shareBlockLinkClasses, focusRingClasses)}
         >
-          <RiLinkedinBoxFill className='h-5 w-5' />
+          <RiLinkedinBoxFill className={normalIconSizeClasses} />
           LinkedIn
         </a>
 
@@ -75,7 +63,7 @@ export default function ShareBlock({ url, title }: ShareBlockProps) {
             focusRingClasses,
           )}
         >
-          <RiMailLine className='h-5 w-5' />
+          <RiMailLine className={normalIconSizeClasses} />
           E-mail
         </a>
 

@@ -2,12 +2,11 @@
 
 import { useState } from 'react';
 import Button from '@/components/atoms/buttons/Button';
-import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolInfo from '@/components/atoms/ToolInfo';
-import ToolHelper from '@/components/organisms/tools/ToolHelper';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
-import ToolSelect from '@/components/organisms/tools/ToolSelect';
+import ToolSelect from '@/components/molecules/tools/ToolSelect';
 import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
 import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
 import {
@@ -23,7 +22,10 @@ import type { QrDataType, VCardData, EmailData } from '@/types/tools/qr';
 import { downloadFromUrl } from '@/utils/download';
 import { useLocale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/qr-code';
-import Textarea from '@/components/atoms/form/Textarea';
+import TextareaWithLabel from '@/components/molecules/form/TextareaWithLabel';
+import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 const DEFAULT_SIZE = 300;
 const DEFAULT_MARGIN = 2;
@@ -155,7 +157,7 @@ export default function QrCodeGenerator() {
 
   return (
     <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-      <ToolSection className='space-y-4'>
+      <Card>
         <ToolSelect
           label={t.dataType}
           value={dataType}
@@ -180,11 +182,11 @@ export default function QrCodeGenerator() {
         )}
 
         {dataType === 'text' && (
-          <div>
-            <label className='tool-label mb-2 block'>{t.types.text}</label>
-            <Textarea
+          <div className='mb-2'>
+            <TextareaWithLabel
+              label={t.types.text}
               value={textValue}
-              onChange={e => setTextValue(e.target.value)}
+              onChange={setTextValue}
               placeholder={t.textPlaceholder}
               rows={4}
             />
@@ -278,11 +280,11 @@ export default function QrCodeGenerator() {
               value={emailData.subject ?? ''}
               onChange={v => updateEmail('subject', v)}
             />
-            <div>
-              <label className='tool-label mb-1 block'>{t.email.body}</label>
-              <Textarea
+            <div className='mb-1'>
+              <TextareaWithLabel
+                label={t.email.body}
                 value={emailData.body}
-                onChange={e => updateEmail('body', e.target.value)}
+                onChange={value => updateEmail('body', value)}
                 rows={3}
                 className='w-full resize-none'
               />
@@ -311,13 +313,21 @@ export default function QrCodeGenerator() {
         </div>
 
         <div className='grid gap-3 sm:grid-cols-2'>
-          <div>
-            <label className='tool-label mb-2 block'>{t.qrColor}</label>
-            <InputColorWithLabel withTextField value={darkColor} onChange={setDarkColor} />
+          <div className='mb-2'>
+            <InputColorWithLabel
+              label={t.qrColor}
+              withTextField
+              value={darkColor}
+              onChange={setDarkColor}
+            />
           </div>
-          <div>
-            <label className='tool-label mb-2 block'>{t.bgColor}</label>
-            <InputColorWithLabel withTextField value={lightColor} onChange={setLightColor} />
+          <div className='mb-2'>
+            <InputColorWithLabel
+              label={t.bgColor}
+              withTextField
+              value={lightColor}
+              onChange={setLightColor}
+            />
           </div>
         </div>
 
@@ -334,9 +344,9 @@ export default function QrCodeGenerator() {
           </ToolSelect>
           <ToolHelper className='mt-1'>{t.printTip}</ToolHelper>
         </div>
-      </ToolSection>
+      </Card>
 
-      <ToolSection className='space-y-4'>
+      <Card>
         {!contrastOk && (
           <ToolAlert variant='warning'>
             {t.contrastWarning}
@@ -350,7 +360,7 @@ export default function QrCodeGenerator() {
         <div className='flex flex-col items-center'>
           <p className='tool-label mb-3'>{t.preview}</p>
           <div
-            className='flex max-w-full items-center justify-center rounded-md border border-neutral-200 p-4'
+            className={cn('max-w-full rounded-md border border-neutral-200 p-4', flexCenterClasses)}
             style={{
               backgroundColor: lightColor,
               minWidth: Math.min(size, 300) + 32,
@@ -386,7 +396,7 @@ export default function QrCodeGenerator() {
             {t.downloadSvg}
           </Button>
         </div>
-      </ToolSection>
+      </Card>
     </div>
   );
 }

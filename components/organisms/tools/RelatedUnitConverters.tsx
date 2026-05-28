@@ -4,6 +4,8 @@ import Divider from '@/components/atoms/Divider';
 import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
 import { getToolHref, getToolByKey } from '@/lib/i18n/tool-registry';
 import { getUnitLabel } from '@/utils/locale-utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 const TITLE_CONVERT_TO: Record<string, (unit: string) => string> = {
   pl: u => `Konwertuj inne jednostki do ${u}`,
@@ -194,7 +196,10 @@ function ConverterGrid({
           <a
             key={c.toolKey}
             href={href}
-            className='border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors'
+            className={cn(
+              'border-primary/20 hover:bg-primary/5 hover:border-primary/40 rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors',
+              flexCenterClasses,
+            )}
           >
             {label}
           </a>

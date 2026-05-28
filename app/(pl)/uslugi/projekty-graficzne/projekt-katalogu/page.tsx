@@ -15,7 +15,7 @@ import SectionContactForm from '@/components/organisms/sections/SectionContactFo
 import Wrapper from '@/components/atoms/Wrapper';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import Script from 'next/script';
@@ -24,6 +24,8 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Projekt katalogu | Arteon',
@@ -151,7 +153,7 @@ export default function OfferDesignCatalogPage() {
                   pakietami - bez zgadywania i szukania drobnego druku.
                 </>
               ),
-              icon: <RiBookletLine className='text-primary h-6 w-6' />,
+              icon: <RiBookletLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Dopracowane zdjęcia i typografia',
@@ -161,7 +163,7 @@ export default function OfferDesignCatalogPage() {
                   lekki w odbiorze, nawet przy dużej liczbie stron.
                 </>
               ),
-              icon: <RiImageLine className='text-primary h-6 w-6' />,
+              icon: <RiImageLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Wersja drukowana i cyfrowa',
@@ -171,7 +173,7 @@ export default function OfferDesignCatalogPage() {
                   idealną do mailingu i oferty PDF.
                 </>
               ),
-              icon: <RiFileTextLine className='text-primary h-6 w-6' />,
+              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Wspólne dopracowanie szczegółów',
@@ -181,12 +183,14 @@ export default function OfferDesignCatalogPage() {
                   ofertowe i sposób prezentacji cen.
                 </>
               ),
-              icon: <RiPencilRuler2Line className='text-primary h-6 w-6' />,
+              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
+              icon: (
+                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
           ]}
         />
@@ -298,7 +302,7 @@ export default function OfferDesignCatalogPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu'
           title='Najczęstsze pytania dotyczące projektów katalogów'

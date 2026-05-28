@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 
 import Button from '@/components/atoms/buttons/Button';
-import ToolSection from '@/components/organisms/tools/ToolSection';
 import { useDictionary, useLocale } from '@/lib/LocaleContext';
 import { getUnitLabel } from '@/utils/locale-utils';
 
@@ -23,7 +22,8 @@ import {
   dateToUnix,
 } from '@/lib/tools/units/specialConverters';
 import type { UnitConverterProps } from '@/types/tools/unit-converter';
-import Input from '@/components/atoms/form/Input';
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
+import Card from '../../Card';
 
 export default function UnitConverter({ toolKey }: UnitConverterProps) {
   const { imageConverter: t } = useDictionary();
@@ -154,14 +154,14 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
 
       {/* Main converter */}
       <div className='grid gap-4 md:grid-cols-2'>
-        <ToolSection className='space-y-3'>
-          <h2 className='h6'>{srcLabel}</h2>
+        <Card>
           <div className='relative'>
-            <Input
+            <InputWithLabel
+              label={srcLabel}
               type={isSpecial ? 'text' : 'number'}
               inputMode={isSpecial ? 'text' : 'decimal'}
               value={sourceValue}
-              onChange={e => handleSourceChange(e.target.value)}
+              onChange={handleSourceChange}
               placeholder={
                 srcFieldConfig.placeholder ??
                 t.enterValue.replace('{{label}}', srcLabel.toLowerCase())
@@ -176,13 +176,11 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
 
           {config.extraField && (
             <div className='flex items-center gap-3 rounded-md border border-neutral-100 bg-white p-3'>
-              <label className='text-mid text-sm font-medium whitespace-nowrap'>
-                {extraLabel}:
-              </label>
-              <Input
+              <InputWithLabel
+                label={extraLabel}
                 type='number'
-                value={extraValue}
-                onChange={e => setExtraValue(parseFloat(e.target.value) || 0)}
+                value={String(extraValue)}
+                onChange={v => setExtraValue(parseFloat(v) || 0)}
                 min={config.extraField.min}
                 max={config.extraField.max}
                 step={config.extraField.step}
@@ -219,16 +217,16 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
               {t.clearAll}
             </Button>
           </div>
-        </ToolSection>
+        </Card>
 
-        <ToolSection className='space-y-3'>
-          <h2 className='h6'>{tgtLabel}</h2>
+        <Card>
           <div className='relative'>
-            <Input
+            <InputWithLabel
+              label={tgtLabel}
               type={isSpecial ? 'text' : 'number'}
               inputMode={isSpecial ? 'text' : 'decimal'}
               value={targetValue}
-              onChange={e => handleTargetChange(e.target.value)}
+              onChange={handleTargetChange}
               placeholder={
                 tgtFieldConfig.placeholder ??
                 t.resultIn.replace('{{label}}', tgtLabel.toLowerCase())
@@ -252,7 +250,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
               {copied ? t.copied : t.copyResult}
             </Button>
           </div>
-        </ToolSection>
+        </Card>
       </div>
     </div>
   );

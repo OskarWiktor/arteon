@@ -21,7 +21,7 @@ import {
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionPrices, {
   type Note,
@@ -34,6 +34,8 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Sklepy internetowe - projekt i realizacja | Arteon',
@@ -235,12 +237,12 @@ export default function OfferWebPage() {
                   Wygląd, który od pierwszych sekund pokazuje profesjonalizm i wyróżnia Twój sklep
                 </>
               ),
-              icon: <RiPencilRuler2Line className='text-primary h-6 w-6' />,
+              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Redakcję treści sprzedażowych dla lepszej pozycji w Google',
               description: <>Opisy, które jasno mówią o korzyściach i prowadzą do zakupu</>,
-              icon: <RiArticleLine className='text-primary h-6 w-6' />,
+              icon: <RiArticleLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Dobór i obróbka zdjęć produktów',
@@ -250,29 +252,29 @@ export default function OfferWebPage() {
                   rozmiary, waga.
                 </>
               ),
-              icon: <RiBrushLine className='text-primary h-6 w-6' />,
+              icon: <RiBrushLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Wsparcie prawne przy politykach i regulaminach',
               description: <>Przeprowadzamy Cię przez wszelkie wymogi prawne</>,
-              icon: <GoLaw className='text-primary h-6 w-6' />,
+              icon: <GoLaw className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Sklep online dostosowany do różnych urządzeń',
               description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
-              icon: <RiDeviceLine className='text-primary h-6 w-6' />,
+              icon: <RiDeviceLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Szybkość i stabilność',
               description: <>Sklep online który działa szybko, bez awarii</>,
-              icon: <RiSpeedLine className='text-primary h-6 w-6' />,
+              icon: <RiSpeedLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Pełną własność i dostępy',
               description: (
                 <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>
               ),
-              icon: <RiKey2Line className='text-primary h-6 w-6' />,
+              icon: <RiKey2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Zero ukrytych kosztów',
@@ -281,21 +283,23 @@ export default function OfferWebPage() {
                   Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje
                 </>
               ),
-              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
+              icon: (
+                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
             {
               title: 'Termin i plan z kamieniami milowymi',
               description: (
                 <>Tworzymy harmonogram i trzymamy się go. Wiesz, co będzie gotowe i kiedy</>
               ),
-              icon: <RiCalendarCheckLine className='text-primary h-6 w-6' />,
+              icon: <RiCalendarCheckLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Transparentna współpraca na bieżąco',
               description: (
                 <>Informujemy Cię regularnie o postępach naszych prac nad Twoim sklepem</>
               ),
-              icon: <RiMessage2Line className='text-primary h-6 w-6' />,
+              icon: <RiMessage2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Dedykowane szkolenie PDF z obsługi sklepu',
@@ -305,7 +309,7 @@ export default function OfferWebPage() {
                   promocje
                 </>
               ),
-              icon: <RiBookOpenLine className='text-primary h-6 w-6' />,
+              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
@@ -315,7 +319,7 @@ export default function OfferWebPage() {
                   Ewentualne błędy poprawiamy w ramach gwarancji
                 </>
               ),
-              icon: <RiLifebuoyLine className='text-primary h-6 w-6' />,
+              icon: <RiLifebuoyLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
           ]}
         />
@@ -422,7 +426,7 @@ export default function OfferWebPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/sklepy-internetowe'
           title='Najczęstsze pytania dotyczące projektów sklepów internetowych'

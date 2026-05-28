@@ -1,4 +1,5 @@
 import Label from '@/components/atoms/form/Label';
+import { cn } from '@/lib/utils';
 import type { ReactNode } from 'react';
 
 interface ToolSelectProps {
@@ -19,14 +20,14 @@ export default function ToolSelect({
   selectClassName = 'w-full',
 }: ToolSelectProps) {
   return (
-    <div className={className}>
+    <div className={cn('space-y-1', className)}>
       {label && (
         <Label variant='tool' className='mb-2 block'>
           {label}
         </Label>
       )}
       <select
-        className={`tool-input ${selectClassName}`}
+        className={cn('text-mid', selectClassName)}
         value={value}
         onChange={e => onChange(e.target.value)}
       >

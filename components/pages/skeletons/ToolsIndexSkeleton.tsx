@@ -1,9 +1,9 @@
-import HeroBannerSkeleton from './HeroBannerSkeleton';
-import SectionStepsSkeleton from './SectionStepsSkeleton';
-import SectionInfoSkeleton from './SectionInfoSkeleton';
-import FaqSkeleton from './FaqSkeleton';
-import DividerSkeleton from './GapSkeleton';
-import CTABannerSkeleton from './CTABannerSkeleton';
+import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
+import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
+import SectionInfoSkeleton from '../../organisms/skeletons/SectionInfoSkeleton';
+import FaqSkeleton from '../../organisms/skeletons/FaqSkeleton';
+import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
+import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
 
 export default function ToolsIndexSkeleton() {
   return (

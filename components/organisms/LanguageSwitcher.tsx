@@ -18,7 +18,14 @@ import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useScrollLock } from '@/hooks/useScrollLock';
 
 import InlineLink from '../atoms/InlineLink';
-import { focusRingClasses } from '@/lib/ui-classes';
+import {
+  flexCenterBetweenClasses,
+  flexCenterClasses,
+  focusRingClasses,
+  largeIconSizeClasses,
+  normalIconSizeClasses,
+  smallIconSizeClasses,
+} from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 type AlternateLink = {
   locale: Locale;
@@ -139,12 +146,11 @@ export default function LanguageSwitcher({
     <InlineLink
       key={link.locale}
       href={link.href}
-      prefetch={false}
       role='menuitem'
       hrefLang={link.hreflang}
       title={link.title}
       onClick={close}
-      className='group/link flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors hover:bg-white'
+      className='group/link gap-3 rounded-lg px-3 py-2.5 transition-colors hover:bg-white'
     >
       <span className='text-primary-mid group-hover/link:text-primary w-6 text-center text-xs font-semibold uppercase transition-colors'>
         {link.label}
@@ -171,7 +177,7 @@ export default function LanguageSwitcher({
               focusRingClasses,
             )}
           >
-            <RiTranslate2 className='h-5 w-5' aria-hidden='true' />
+            <RiTranslate2 className={normalIconSizeClasses} aria-hidden='true' />
             <span className='text-xs font-semibold tracking-wide uppercase'>
               {currentConfig.label}
             </span>
@@ -179,7 +185,7 @@ export default function LanguageSwitcher({
               className='inline-flex transition-transform duration-200'
               style={{ transform: isOpen ? 'rotate(180deg)' : undefined }}
             >
-              <RiArrowDownSLine className='h-4 w-4' aria-hidden='true' />
+              <RiArrowDownSLine className={smallIconSizeClasses} aria-hidden='true' />
             </span>
           </button>
         </div>
@@ -197,7 +203,10 @@ export default function LanguageSwitcher({
                 <div className='grid grid-cols-6 gap-0'>
                   <div className='border-primary-light border-r pr-4'>
                     <div className='text-primary flex items-center gap-3 rounded-lg bg-white px-4 py-3'>
-                      <RiTranslate2 className='h-5 w-5 shrink-0' aria-hidden='true' />
+                      <RiTranslate2
+                        className={cn('shrink-0', normalIconSizeClasses)}
+                        aria-hidden='true'
+                      />
                       <div>
                         <div className='text-dark text-sm font-medium'>{t.chooseLabel}</div>
                         <div className='text-light text-xs'>
@@ -267,7 +276,7 @@ export default function LanguageSwitcher({
             focusRingClasses,
           )}
         >
-          <RiTranslate2 className='h-5 w-5' aria-hidden='true' />
+          <RiTranslate2 className={normalIconSizeClasses} aria-hidden='true' />
           <span className='text-xs font-semibold tracking-wide uppercase'>
             {currentConfig.label}
           </span>
@@ -291,23 +300,28 @@ export default function LanguageSwitcher({
               aria-label={t.chooseLabel}
               className='animate-dropdown-in fixed inset-x-4 top-1/2 z-[1101] max-h-[80dvh] -translate-y-1/2 overflow-y-auto rounded-lg bg-white p-5 shadow-2xl sm:inset-x-auto sm:left-1/2 sm:w-[420px] sm:-translate-x-1/2'
             >
-              <div className='mb-4 flex items-center justify-between'>
+              <div className={cn('mb-4', flexCenterBetweenClasses)}>
                 <h2 className='text-dark text-base font-semibold'>{t.chooseLabel}</h2>
                 <button
                   type='button'
                   onClick={close}
                   className={cn(
-                    'text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-md transition-colors',
+                    'text-primary hover:bg-primary-light focus-visible:ring-primary rounded-md transition-colors',
+                    flexCenterClasses,
                     focusRingClasses,
+                    largeIconSizeClasses,
                   )}
                   aria-label={t.closeModalLabel}
                 >
-                  <RiCloseLine className='h-5 w-5' aria-hidden='true' />
+                  <RiCloseLine className={normalIconSizeClasses} aria-hidden='true' />
                 </button>
               </div>
 
               <div className='mb-4 flex items-center gap-2.5 rounded-lg bg-neutral-50 px-3 py-2.5'>
-                <RiTranslate2 className='text-primary h-4 w-4 shrink-0' aria-hidden='true' />
+                <RiTranslate2
+                  className={cn('text-primary shrink-0', smallIconSizeClasses)}
+                  aria-hidden='true'
+                />
                 <span className='text-dark text-sm font-semibold'>
                   {currentConfig.label} - {currentConfig.name}
                 </span>
@@ -324,11 +338,10 @@ export default function LanguageSwitcher({
                         <InlineLink
                           key={link.locale}
                           href={link.href}
-                          prefetch={false}
                           hrefLang={link.hreflang}
                           title={link.title}
                           onClick={close}
-                          className='text-dark flex items-center gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
+                          className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
                         >
                           <span className='text-light w-5 text-center text-[11px] font-semibold uppercase'>
                             {link.label}
@@ -343,11 +356,10 @@ export default function LanguageSwitcher({
                           <InlineLink
                             key={link.locale}
                             href={link.href}
-                            prefetch={false}
                             hrefLang={link.hreflang}
                             title={link.title}
                             onClick={close}
-                            className='text-dark flex items-center gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
+                            className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
                           >
                             <span className='text-light w-5 text-center text-[11px] font-semibold uppercase'>
                               {link.label}
@@ -372,11 +384,10 @@ export default function LanguageSwitcher({
                         <InlineLink
                           key={link.locale}
                           href={link.href}
-                          prefetch={false}
                           hrefLang={link.hreflang}
                           title={link.title}
                           onClick={close}
-                          className='text-dark flex items-center gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
+                          className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
                         >
                           <span className='text-light w-5 text-center text-[11px] font-semibold uppercase'>
                             {link.label}
@@ -391,11 +402,10 @@ export default function LanguageSwitcher({
                           <InlineLink
                             key={link.locale}
                             href={link.href}
-                            prefetch={false}
                             hrefLang={link.hreflang}
                             title={link.title}
                             onClick={close}
-                            className='text-dark flex items-center gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
+                            className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
                           >
                             <span className='text-light w-5 text-center text-[11px] font-semibold uppercase'>
                               {link.label}

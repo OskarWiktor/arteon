@@ -9,7 +9,7 @@ import SectionContactForm from '@/components/organisms/sections/SectionContactFo
 import Wrapper from '@/components/atoms/Wrapper';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
@@ -19,6 +19,8 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Projekt wizytówki | Arteon',
@@ -134,14 +136,14 @@ export default function OfferDesignBusinessCardPage() {
               description: (
                 <>Projektujemy wizytówki, które w kilka sekund wyjaśniają, czym się zajmujesz.</>
               ),
-              icon: <RiIdCardLine className='text-primary h-6 w-6' />,
+              icon: <RiIdCardLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Pliki gotowe do druku',
               description: (
                 <>Otrzymujesz pliki przygotowane do druku w standardzie CMYK ze spadami.</>
               ),
-              icon: <RiFileTextLine className='text-primary h-6 w-6' />,
+              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Spójność z identyfikacją marki',
@@ -151,12 +153,14 @@ export default function OfferDesignBusinessCardPage() {
                   wizerunku.
                 </>
               ),
-              icon: <IoColorPalette className='text-primary h-6 w-6' />,
+              icon: <IoColorPalette className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
+              icon: (
+                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
           ]}
         />
@@ -258,7 +262,7 @@ export default function OfferDesignBusinessCardPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki'
           title='Najczęstsze pytania dotyczące projektów wizytówek'

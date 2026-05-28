@@ -8,22 +8,26 @@ import {
   NavSearchLine as RiSearchLine,
 } from '@/components/atoms/NavIcons';
 import Image from 'next/image';
-
 import { DesktopNavSkeleton } from '@/components/organisms/skeletons/NavSkeleton';
-
-import InlineLink from '../atoms/InlineLink';
-const MobileNavigation = dynamic(() => import('./MobileNavigation'), { ssr: false });
-const DesktopNavigation = dynamic(() => import('./DesktopNavigation'), {
-  ssr: false,
-  loading: () => <DesktopNavSkeleton />,
-});
+import InlineLink from '../../atoms/InlineLink';
 import Wrapper from '@/components/atoms/Wrapper';
 import ButtonIcon from '@/components/atoms/buttons/ButtonIcon';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { cn } from '@/lib/utils';
-import { focusRingClasses } from '@/lib/ui-classes';
+import {
+  flexCenterClasses,
+  focusRingClasses,
+  largeIconSizeClasses,
+  normalIconSizeClasses,
+} from '@/lib/ui-classes';
+
+const MobileNavigation = dynamic(() => import('./MobileNavigation'), { ssr: false });
+const DesktopNavigation = dynamic(() => import('./DesktopNavigation'), {
+  ssr: false,
+  loading: () => <DesktopNavSkeleton />,
+});
 
 const SearchDialog = dynamic(() => import('@/components/organisms/SearchDialog'), { ssr: false });
 
@@ -58,7 +62,7 @@ export default function Navigation() {
       <SectionInfoBanner
         items={[
           {
-            icon: <RiMailSettingsLine className="h-4 w-4" aria-hidden="true" />,
+            icon: <RiMailSettingsLine className={smallIconSizeClasses} aria-hidden="true" />,
             text: dict.infoBanner.text,
             linkText: dict.infoBanner.linkText,
             linkHref: locale === 'pl' ? '/narzedzia/darmowy-generator-stopki-mailowej' : getToolHref('emailSignature', locale),
@@ -72,7 +76,7 @@ export default function Navigation() {
           className='flex h-12 items-center justify-between md:h-14 lg:h-16'
           aria-label={t.mainNavigation}
         >
-          <InlineLink href={isPl ? '/' : localeConfig.toolsIndexHref} prefetch={false}>
+          <InlineLink href={isPl ? '/' : localeConfig.toolsIndexHref}>
             <Image
               src='/assets/arteon-logo.webp'
               width={100}
@@ -89,12 +93,14 @@ export default function Navigation() {
               type='button'
               onClick={() => startTransition(() => setIsSearchOpen(true))}
               className={cn(
-                'text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-md transition-colors',
+                'text-primary hover:bg-primary-light focus-visible:ring-primary rounded-md transition-colors',
+                flexCenterClasses,
+                largeIconSizeClasses,
                 focusRingClasses,
               )}
               aria-label={`${dict.search.ariaSearch} (Ctrl+K)`}
             >
-              <RiSearchLine className='h-5 w-5' aria-hidden='true' />
+              <RiSearchLine className={normalIconSizeClasses} aria-hidden='true' />
             </button>
 
             <a
@@ -115,12 +121,13 @@ export default function Navigation() {
               type='button'
               onClick={() => startTransition(() => setIsSearchOpen(true))}
               className={cn(
-                'text-primary hover:bg-primary-light hover:text-primary flex h-10 w-10 items-center justify-center rounded-md transition-colors',
+                'text-primary hover:bg-primary-light hover:text-primary h-10 w-10 rounded-md transition-colors',
+                flexCenterClasses,
                 focusRingClasses,
               )}
               aria-label={dict.search.ariaSearch}
             >
-              <RiSearchLine className='h-6 w-6' aria-hidden='true' />
+              <RiSearchLine className={normalIconSizeClasses} aria-hidden='true' />
             </button>
             <ButtonIcon
               onClick={toggleMenu}

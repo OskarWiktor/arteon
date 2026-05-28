@@ -6,12 +6,14 @@ import ProjectsGrid from '../molecules/ProjectsGrid';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
 
 export default function ProjectsWithFilters({ projects }: { projects: ProjectPreview[] }) {
-  const [selectedSet, setSelectedSet] = useState<Set<ProjectCategory>>(new Set());
+  const [selectedCategoriesSet, setSelectedCategoriesSet] = useState<Set<ProjectCategory>>(
+    new Set(),
+  );
 
-  const selected = Array.from(selectedSet);
+  const selectedCategories = Array.from(selectedCategoriesSet);
 
   const onToggle = (cat: ProjectCategory) => {
-    setSelectedSet(prev => {
+    setSelectedCategoriesSet(prev => {
       const next = new Set(prev);
       if (next.has(cat)) next.delete(cat);
       else next.add(cat);
@@ -19,12 +21,17 @@ export default function ProjectsWithFilters({ projects }: { projects: ProjectPre
     });
   };
 
-  const onClear = () => setSelectedSet(new Set());
+  const onClear = () => setSelectedCategoriesSet(new Set());
 
   return (
     <>
-      <Filters projects={projects} selected={selected} onToggle={onToggle} onClear={onClear} />
-      <ProjectsGrid projects={projects} selectedCategories={selected} />
+      <Filters
+        projects={projects}
+        selected={selectedCategories}
+        onToggle={onToggle}
+        onClear={onClear}
+      />
+      <ProjectsGrid projects={projects} selectedCategories={selectedCategories} />
     </>
   );
 }

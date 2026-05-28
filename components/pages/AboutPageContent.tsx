@@ -19,6 +19,8 @@ import {
 import type { Locale } from '@/types/locale';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { getAboutPageData } from '@/lib/i18n/pages/about';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 const WHY_FREE_ICONS = [RiInfinityFill, RiLockLine, RiToolsFill, RiRocketLine];
 const OUR_TOOLS_ICONS = [RiImageEditLine, RiSearchLine, RiMailLine, RiPaletteLine, RiQrCodeLine];
@@ -55,7 +57,7 @@ export default function AboutPageContent({ locale }: { locale: Locale }) {
             title: item.title,
             icon: (() => {
               const Icon = WHY_FREE_ICONS[i];
-              return <Icon className='text-primary h-6 w-6' />;
+              return <Icon className={cn('text-primary', normalIconSizeClasses)} />;
             })(),
             description: <p>{item.description}</p>,
           }))}
@@ -70,7 +72,7 @@ export default function AboutPageContent({ locale }: { locale: Locale }) {
             title: item.title,
             icon: (() => {
               const Icon = OUR_TOOLS_ICONS[i];
-              return <Icon className='text-primary h-6 w-6' />;
+              return <Icon className={cn('text-primary', normalIconSizeClasses)} />;
             })(),
             description: <p>{item.description}</p>,
           }))}

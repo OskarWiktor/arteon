@@ -6,10 +6,9 @@ import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
-import ToolFileRow from '@/components/organisms/tools/ToolFileRow';
-import ToolProgressBar from '@/components/organisms/tools/ToolProgressBar';
-import ToolSection from '@/components/organisms/tools/ToolSection';
-import ToolUploadContent from '@/components/organisms/tools/ToolUploadContent';
+import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
+import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import { useDictionary } from '@/lib/LocaleContext';
 import { downloadBlob, downloadFromUrl } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
@@ -21,6 +20,9 @@ import type {
   ImageToPdfConverterProps,
   PdfQueueFile,
 } from '@/types/tools/image-to-pdf-converter';
+import Card from '../../Card';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 let fileIdCounter = 0;
 
@@ -285,7 +287,7 @@ export default function ImageToPdfConverter({
       />
 
       <div className='grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-        <ToolSection className='space-y-4'>
+        <Card>
           <form onSubmit={handleConvert} className='space-y-4'>
             <div>
               <h2 className='h6 mb-2'>{t.addFiles}</h2>
@@ -312,7 +314,7 @@ export default function ImageToPdfConverter({
               <h3 className='h6 mt-8 mb-2'>{t.convertAndDownload}</h3>
               {total > 0 && (
                 <div className='mb-3 space-y-2'>
-                  <div className='flex items-center justify-between'>
+                  <div className={flexCenterBetweenClasses}>
                     <span className='tool-meta'>
                       {t.inQueue} <strong>{total}</strong> {t.files}
                     </span>
@@ -353,10 +355,10 @@ export default function ImageToPdfConverter({
               </div>
             </div>
           </form>
-        </ToolSection>
+        </Card>
 
-        <ToolSection aria-label={t.queueAriaLabel} className='space-y-2'>
-          <div className='flex items-center justify-between gap-2'>
+        <Card aria-label={t.queueAriaLabel}>
+          <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <h2 className='h6'>{t.queueHeading}</h2>
             {files.length > 0 && (
               <p className='tool-meta'>
@@ -442,7 +444,7 @@ export default function ImageToPdfConverter({
               })}
             </div>
           )}
-        </ToolSection>
+        </Card>
       </div>
     </div>
   );

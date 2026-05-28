@@ -9,7 +9,7 @@ import SectionContactForm from '@/components/organisms/sections/SectionContactFo
 import Wrapper from '@/components/atoms/Wrapper';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import { IoColorPalette } from 'react-icons/io5';
@@ -19,6 +19,8 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Kupony rabatowe i vouchery | Arteon',
@@ -142,7 +144,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
                   voucher będzie spójnym elementem Twojej marki.
                 </>
               ),
-              icon: <IoColorPalette className='text-primary h-6 w-6' />,
+              icon: <IoColorPalette className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Wersje do druku i online',
@@ -152,7 +154,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
                   mailingu lub sklepu internetowego.
                 </>
               ),
-              icon: <RiFileTextLine className='text-primary h-6 w-6' />,
+              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Czytelne pola i zasady wykorzystania',
@@ -162,7 +164,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
                   aby voucher był piękny i praktyczny.
                 </>
               ),
-              icon: <RiTicket2Line className='text-primary h-6 w-6' />,
+              icon: <RiTicket2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Warianty na różne okazje',
@@ -172,12 +174,14 @@ export default function OfferDesignCouponsAndVouchersPage() {
                   zachowaniem jednego spójnego stylu.
                 </>
               ),
-              icon: <RiGiftLine className='text-primary h-6 w-6' />,
+              icon: <RiGiftLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
+              icon: (
+                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
           ]}
         />
@@ -298,7 +302,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera'
           title='Najczęstsze pytania dotyczące projektów kuponów i voucherów'

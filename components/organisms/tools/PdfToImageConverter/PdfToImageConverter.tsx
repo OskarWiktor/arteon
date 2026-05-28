@@ -6,11 +6,10 @@ import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
-import ToolFileRow from '@/components/organisms/tools/ToolFileRow';
-import ToolProgressBar from '@/components/organisms/tools/ToolProgressBar';
+import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
+import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
-import ToolSection from '@/components/organisms/tools/ToolSection';
-import ToolUploadContent from '@/components/organisms/tools/ToolUploadContent';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import { useDictionary } from '@/lib/LocaleContext';
 import { downloadBlob } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
@@ -18,6 +17,9 @@ import { formatBytes } from '@/utils/formatBytes';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { FORMAT_EXT, FORMAT_LABELS, FORMAT_MIME } from '@/lib/tools/image/pdfToImage';
 import type { PdfPageFile, PdfToImageConverterProps } from '@/types/tools/pdf-to-image-converter';
+import Card from '../../Card';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 let fileIdCounter = 0;
 
@@ -211,7 +213,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
       />
 
       <div className='grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-        <ToolSection className='space-y-4'>
+        <Card padding='md'>
           <form onSubmit={handleConvert} className='space-y-4'>
             <div>
               <h2 className='h6 mb-2'>{t.addFiles}</h2>
@@ -247,7 +249,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
               <h3 className='h6 mt-8 mb-2'>{t.convertAndDownload}</h3>
               {total > 0 && (
                 <div className='mb-3 space-y-2'>
-                  <div className='flex items-center justify-between'>
+                  <div className={flexCenterBetweenClasses}>
                     <span className='tool-meta'>
                       {t.inQueue} <strong>{total}</strong> {t.files}
                     </span>
@@ -288,10 +290,10 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
               </div>
             </div>
           </form>
-        </ToolSection>
+        </Card>
 
-        <ToolSection aria-label={t.queueAriaLabel} className='space-y-2'>
-          <div className='flex items-center justify-between gap-2'>
+        <Card aria-label={t.queueAriaLabel}>
+          <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <h2 className='h6'>{t.queueHeading}</h2>
             {pages.length > 0 && (
               <p className='tool-meta'>
@@ -375,7 +377,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
               })}
             </div>
           )}
-        </ToolSection>
+        </Card>
       </div>
     </div>
   );

@@ -3,6 +3,8 @@ import { FONT_OPTIONS } from '@/lib/tools/email/signatureDefaults';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import InputColor from '@/components/atoms/form/InputColor';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 
 type ThemePreset = {
   id: string;
@@ -45,7 +47,13 @@ export default function AppearancePanel({
               className='gap-2'
               label={
                 <>
-                  <span className='flex h-4 w-4 items-center justify-center rounded-lg border border-neutral-300'>
+                  <span
+                    className={cn(
+                      'rounded-lg border border-neutral-300',
+                      flexCenterClasses,
+                      smallIconSizeClasses,
+                    )}
+                  >
                     <span
                       className='h-3 w-3 rounded-lg'
                       style={{ backgroundColor: preset.accentColor }}
@@ -167,7 +175,15 @@ export default function AppearancePanel({
             onClick={() =>
               onStyleChange('border', { left: true, right: true, top: true, bottom: true })
             }
-            className={`tool-button ${styleConfig.border.left && styleConfig.border.right && styleConfig.border.top && styleConfig.border.bottom ? 'tool-button-active' : 'tool-button-inactive'}`}
+            className={cn(
+              'tool-button',
+              styleConfig.border.left &&
+                styleConfig.border.right &&
+                styleConfig.border.top &&
+                styleConfig.border.bottom
+                ? 'bg-primary text-white'
+                : 'tool-button-inactive',
+            )}
           >
             {t.border.full}
           </button>
@@ -176,7 +192,15 @@ export default function AppearancePanel({
             onClick={() =>
               onStyleChange('border', { left: false, right: false, top: false, bottom: false })
             }
-            className={`tool-button ${!styleConfig.border.left && !styleConfig.border.right && !styleConfig.border.top && !styleConfig.border.bottom ? 'tool-button-active' : 'tool-button-inactive'}`}
+            className={cn(
+              'tool-button',
+              !styleConfig.border.left &&
+                !styleConfig.border.right &&
+                !styleConfig.border.top &&
+                !styleConfig.border.bottom
+                ? 'bg-primary text-white'
+                : 'tool-button-inactive',
+            )}
           >
             {t.border.none}
           </button>

@@ -20,6 +20,8 @@ import LogoCarousel from '@/components/organisms/carousels/LogoCarousel';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import ToolsCarousel from '@/components/organisms/carousels/ToolsCarousel';
 import { JsonLd } from '@/components/atoms/JsonLd';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Strony internetowe, sklepy, treści i projekty graficzne - Arteon',
@@ -256,27 +258,27 @@ export default function HomePage() {
           items={[
             {
               title: 'Treści dopasowane do Twojego wymarzonego klienta',
-              icon: <RiArticleLine className='text-primary h-6 w-6' />,
+              icon: <RiArticleLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Spójne projekty graficzne online oraz offline',
-              icon: <RiBrushLine className='text-primary h-6 w-6' />,
+              icon: <RiBrushLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Wsparcie prawne - polityki, regulaminy, WCAG 2.1 AA',
-              icon: <GoLaw className='text-primary h-6 w-6' />,
+              icon: <GoLaw className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Strategie marketingowe odpowiadające na problemy Twoich odbiorców',
-              icon: <RiBarChart2Line className='text-primary h-6 w-6' />,
+              icon: <RiBarChart2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Dedykowane szkolenia i instrukcje',
-              icon: <RiBookOpenLine className='text-primary h-6 w-6' />,
+              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Wsparcie w dalszym rozwoju po realizacji',
-              icon: <MdSupportAgent className='text-primary h-6 w-6' />,
+              icon: <MdSupportAgent className={cn('text-primary', normalIconSizeClasses)} />,
             },
           ]}
         />

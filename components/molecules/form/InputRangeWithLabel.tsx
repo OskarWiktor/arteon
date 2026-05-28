@@ -1,5 +1,7 @@
 import { useId, type ReactNode } from 'react';
 import InputRange from '@/components/atoms/form/InputRange';
+import { cn } from '@/lib/utils';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
 
 interface InputRangeWithLabelProps {
   id?: string;
@@ -32,9 +34,9 @@ export default function InputRangeWithLabel({
   const id = providedId ?? autoId;
 
   return (
-    <div className={`space-y-1 ${className ?? ''}`}>
+    <div className={cn('space-y-1', className)}>
       {label && (
-        <label htmlFor={id} className='tool-value flex items-center justify-between'>
+        <label htmlFor={id} className={cn('tool-value', flexCenterBetweenClasses)}>
           <span>{label}</span>
           <span>
             {value}

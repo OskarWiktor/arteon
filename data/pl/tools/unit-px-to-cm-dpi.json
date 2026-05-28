@@ -104,7 +104,7 @@
     },
     {
       "type": "sectionTable",
-      "title": "Ile centymetrów mają różne wartości w pikselach przy różnych wartościach DPI??",
+      "title": "Ile centymetrów mają różne wartości w pikselach przy różnych wartościach DPI?",
       "description": "Poniższa tabela pokazuje, jak te same wartości w pikselach przekładają się na centymetry przy pięciu najczęściej używanych rozdzielczościach. Kilka wartości warto zapamiętać, bo dokładnie odpowiadają konkretnym formatom: 413 px przy 300 DPI to krótszy bok zdjęcia paszportowego, 827 px to 7 cm, a 945 px to równe 8 cm.",
       "labelHeader": "Piksele",
       "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
@@ -490,12 +490,28 @@
           "answer": "Wszystko zależy od rozdzielczości, którą ustawisz. Przy standardzie ekranu 96 DPI jeden piksel to około 0,0265 cm, a przy 300 DPI używanym w druku zaledwie 0,0085 cm. Aby przeliczyć dowolną liczbę pikseli na centymetry, pomnóż ją przez 2,54 i podziel przez DPI."
         },
         {
+          "question": "Jaki jest wzór na przeliczanie px na cm?",
+          "answer": "Wzór jest prosty i wynika ze stałej zależności: jeden cal to dokładnie 2,54 cm. Pełna formuła to liczba centymetrów = liczba pikseli × 2,54 ÷ DPI. Działa to także w drugą stronę: liczba pikseli = liczba centymetrów × DPI ÷ 2,54. Wystarczy znać dwie wartości – liczbę pikseli oraz rozdzielczość docelową – aby błyskawicznie obliczyć trzecią."
+        },
+        {
           "question": "Jak przeliczyć piksele na centymetry?",
           "answer": "Najprościej wpisać liczbę pikseli w pole konwertera i wybrać interesujące Cię DPI – wynik pojawi się od razu. Jeżeli wolisz policzyć ręcznie, użyj wzoru: liczba centymetrów = liczba pikseli × 2,54 ÷ DPI. Dla 500 px przy 300 DPI otrzymasz 500 × 2,54 ÷ 300, czyli około 4,23 cm."
         },
         {
+          "question": "Ile centymetrów ma 100 pikseli?",
+          "answer": "Sto pikseli przy ekranie 96 DPI to dokładnie 2,65 cm – mniej więcej szerokość kciuka dorosłego człowieka. W druku przy 300 DPI te same 100 pikseli zajmuje już tylko 0,85 cm, a przy 600 DPI zaledwie 0,42 cm. To wartość warta zapamiętania, bo często pojawia się w rozmiarach przycisków i ikon na stronach internetowych."
+        },
+        {
           "question": "Ile centymetrów ma 200 pikseli?",
           "answer": "Dwieście pikseli przy ekranie 96 DPI to około 5,29 cm. W druku przy 300 DPI te same 200 pikseli zajmuje już tylko 1,69 cm, ponieważ na cal mieści się więcej punktów. Przy 600 DPI używanym w druku fotograficznym wysokiej jakości to zaledwie 0,85 cm."
+        },
+        {
+          "question": "Ile centymetrów ma 300 pikseli?",
+          "answer": "Trzysta pikseli to około 7,94 cm na ekranie 96 DPI oraz dokładnie 2,54 cm w druku 300 DPI – czyli równo jeden cal. Ta zależność jest nieprzypadkowa: standard 300 DPI dosłownie oznacza, że na każdy cal druku przypada 300 punktów. Wartość 300 px często odpowiada wielkości miniaturki produktu w sklepie internetowym."
+        },
+        {
+          "question": "Ile centymetrów ma 1 000 pikseli?",
+          "answer": "Tysiąc pikseli przy 96 DPI to około 26,46 cm, czyli mniej więcej szerokość arkusza A4 z marginesem. W druku przy 300 DPI te same 1 000 pikseli to 8,47 cm – wystarczająco na wizytówkę albo małe zdjęcie. Przy 150 DPI używanym do plakatów i broszur wychodzi 16,93 cm, czyli format zbliżony do pocztówki."
         },
         {
           "question": "Ile centymetrów ma 500 pikseli?",
@@ -514,6 +530,10 @@
           "answer": "Pełen kadr Full HD w skali 1:1 zajmuje 50,80 × 28,58 cm przy standardzie ekranu 96 DPI. Jeżeli ten sam obraz chciałbyś wydrukować w jakości fotograficznej 300 DPI, zmieściłby się dokładnie na 16,26 × 9,14 cm – to mniej więcej szerokość pocztówki. Przy 4K UHD 3 840 × 2 160 px wszystkie wymiary podwajają się: 101,60 × 57,15 cm na ekranie i 32,51 × 18,29 cm w druku."
         },
         {
+          "question": "Jakie wymiary ma ekran 4K (3 840 × 2 160 px) w centymetrach?",
+          "answer": "Rozdzielczość 4K UHD (3 840 × 2 160 px) w skali 1:1 odpowiada wymiarom 101,60 × 57,15 cm przy standardzie ekranu 96 DPI – to ponad metr szerokości, czyli mniej więcej tyle, co duży telewizor 45-calowy oglądany z bliska. W druku przy 300 DPI ten sam plik zmieści się na 32,51 × 18,29 cm, czyli formacie zbliżonym do arkusza A4 w orientacji poziomej. Przy 150 DPI wystarczy na plakat 65,02 × 36,58 cm."
+        },
+        {
           "question": "Ile centymetrów ma plik o szerokości 2 480 pikseli?",
           "answer": "Plik o szerokości 2 480 pikseli przy 300 DPI to dokładnie 21,00 cm, czyli krótszy bok arkusza A4. Drukarnia przyjmie taki plik bez zastrzeżeń, jeśli wysokość wynosi 3 508 px (29,7 cm). Ten sam plik na ekranie 96 DPI zajmie 65,62 cm, czyli rozciągnie się daleko poza widoczny obszar przeciętnego monitora."
         },
@@ -524,6 +544,10 @@
         {
           "question": "Jak ustawić piksele na centymetry w Photoshopie albo Canvie?",
           "answer": "W Photoshopie otwórz okno Obraz &rsaquo; Rozmiar obrazu, zmień jednostkę z pikseli na centymetry i wpisz docelowe DPI – program pokaże aktualny rozmiar fizyczny. W Canvie panel z wymiarami projektu jest widoczny przy tworzeniu nowego pliku albo w menu Zmień rozmiar – wystarczy przełączyć jednostki na cm. Szczegółowe poradniki dla Photoshopa, Illustratora, Figmy, Canvy oraz Procreate znajdziesz w sekcji wyżej."
+        },
+        {
+          "question": "Jak ustawić px na cm w Illustratorze albo Figmie?",
+          "answer": "W Adobe Illustratorze przejdź do menu Edycja &rsaquo; Preferencje &rsaquo; Jednostki i wybierz Centymetry – jednostka zmieni się we wszystkich panelach i linijkach od ręki. Figma działa inaczej, ponieważ operuje wyłącznie na pikselach przy sztywnym 96 DPI – nie ma w niej opcji przełączenia jednostek. Aby sprawdzić fizyczny wymiar projektu Figmy, skopiuj liczbę pikseli z panelu Design i wpisz ją w naszym konwerterze, ustawiając docelowe DPI (96 dla ekranu, 300 dla druku)."
         },
         {
           "question": "Czym różni się DPI od PPI?",

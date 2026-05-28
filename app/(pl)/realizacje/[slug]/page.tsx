@@ -43,7 +43,7 @@ import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import Badge from '@/components/atoms/Badge';
 import CTABanner from '@/components/organisms/CTABanner';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import ShareBlock from '@/components/organisms/ShareBlock';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
@@ -52,6 +52,8 @@ import SectionMetrics from '@/components/organisms/sections/SectionMetrics';
 import SectionFeatureList from '@/components/organisms/sections/SectionFeatureList';
 import SectionProcess from '@/components/organisms/sections/SectionProcess';
 import SectionImageGallery from '@/components/organisms/sections/SectionImageGallery';
+import { cn } from '@/lib/utils';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 interface ProjectsData {
   projects: Project[];
@@ -156,7 +158,7 @@ function Aspect({
 
   return (
     <div
-      className={`relative overflow-hidden rounded-lg border border-black/10 ${map[ratio] || ''}`}
+      className={cn('relative overflow-hidden rounded-lg border border-black/10', map[ratio] || '')}
     >
       {children}
     </div>
@@ -195,7 +197,7 @@ const ICON_MAP: Record<string, React.ElementType> = {
 function getIcon(iconName?: string) {
   if (!iconName) return null;
   const IconComponent = ICON_MAP[iconName.toLowerCase()];
-  return IconComponent && <IconComponent className='h-5 w-5' />;
+  return IconComponent && <IconComponent className={normalIconSizeClasses} />;
 }
 
 function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
@@ -679,7 +681,12 @@ export default async function ProjectPage({ params }: PageProps) {
                 <ul className='grid gap-3 md:grid-cols-2'>
                   {project.process_steps.map((step, i) => (
                     <li key={i} className='rounded-lg bg-white p-3 shadow-md'>
-                      <span className='border-light text-light mr-2 inline-flex h-6 w-6 items-center justify-center rounded-lg border text-xs font-bold'>
+                      <span
+                        className={cn(
+                          'border-light text-light mr-2 inline-flex items-center justify-center rounded-lg border text-xs font-bold',
+                          largeIconSizeClasses,
+                        )}
+                      >
                         {i + 1}
                       </span>
                       <span dangerouslySetInnerHTML={{ __html: step }} />
@@ -815,7 +822,7 @@ export default async function ProjectPage({ params }: PageProps) {
           {project.faq?.length ? (
             <>
               <Divider size='sm' line />
-              <FaqPanels
+              <SectionFaqPanels
                 defaultOpenIndex={1}
                 title='Najczęstsze pytania dotyczące realizacji'
                 items={project.faq}
@@ -829,7 +836,7 @@ export default async function ProjectPage({ params }: PageProps) {
 
         <div>
           <ShareBlock url={url} title={shareTitle} />
-          <TableOfContents rootSelector='#article-root' levels='h2' />
+          <TableOfContents rootSelector='#article-root' />
         </div>
       </Wrapper>
 

@@ -9,7 +9,7 @@ import SectionContactForm from '@/components/organisms/sections/SectionContactFo
 import Wrapper from '@/components/atoms/Wrapper';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import { IoColorPalette } from 'react-icons/io5';
@@ -19,6 +19,8 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Projekt menu restauracji | Arteon',
@@ -139,7 +141,7 @@ export default function OfferDesignMenuPage() {
                   pozycje.
                 </>
               ),
-              icon: <RiLayoutLine className='text-primary h-6 w-6' />,
+              icon: <RiLayoutLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Spójność z klimatem lokalu',
@@ -149,7 +151,7 @@ export default function OfferDesignMenuPage() {
                   - nowoczesnego, klasycznego, rustykalnego czy street foodowego.
                 </>
               ),
-              icon: <IoColorPalette className='text-primary h-6 w-6' />,
+              icon: <IoColorPalette className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Gotowe pliki do druku i online',
@@ -159,7 +161,7 @@ export default function OfferDesignMenuPage() {
                   dodasz na stronę, do mediów społecznościowych lub do kodu QR.
                 </>
               ),
-              icon: <RiFileTextLine className='text-primary h-6 w-6' />,
+              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Możliwość samodzielnej aktualizacji',
@@ -169,7 +171,7 @@ export default function OfferDesignMenuPage() {
                   samodzielnie zaktualizujesz sezonowe dania, ceny czy nowe pozycje.
                 </>
               ),
-              icon: <RiBookOpenLine className='text-primary h-6 w-6' />,
+              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
           ]}
         />
@@ -300,7 +302,7 @@ export default function OfferDesignMenuPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji'
           title='Najczęstsze pytania dotyczące projektów menu dla restauracji'

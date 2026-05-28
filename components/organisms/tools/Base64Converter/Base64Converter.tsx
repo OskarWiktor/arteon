@@ -1,17 +1,17 @@
 'use client';
 
 import { useState } from 'react';
-
 import Button from '@/components/atoms/buttons/Button';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
-import ToolSection from '@/components/organisms/tools/ToolSection';
-import ToolUploadContent from '@/components/organisms/tools/ToolUploadContent';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import { useDictionary } from '@/lib/LocaleContext';
 import { downloadBlob } from '@/utils/download';
-
-import Textarea from '@/components/atoms/form/Textarea';
+import TextareaWithLabel from '@/components/molecules/form/TextareaWithLabel';
+import Card from '../../Card';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 type Base64Mode = 'encode' | 'decode';
 
@@ -148,7 +148,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
       <div className='overflow-hidden'>
         <FormatSelector currentSource='jpg' currentTarget='base64' hasFiles={!!base64} />
         <div className='grid gap-4 md:grid-cols-2'>
-          <ToolSection className='space-y-3'>
+          <Card>
             <h2 className='h6'>{t.imageHeading}</h2>
             <FileDropzone accept='image/*' onFiles={handleAddFiles}>
               <ToolUploadContent
@@ -171,11 +171,11 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
             >
               {t.clearAll}
             </Button>
-          </ToolSection>
+          </Card>
 
-          <ToolSection className='space-y-3'>
-            <h2 className='h6'>Base64</h2>
-            <Textarea
+          <Card>
+            <TextareaWithLabel
+              label='Base64'
               className='min-h-[300px] resize-y'
               value={base64}
               readOnly
@@ -191,7 +191,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
                 {copied ? t.copied : t.copy}
               </Button>
             </div>
-          </ToolSection>
+          </Card>
         </div>
       </div>
     );
@@ -202,12 +202,12 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     <div className='overflow-hidden'>
       <FormatSelector currentSource='base64' currentTarget='jpg' hasFiles={!!base64} />
       <div className='grid gap-4 md:grid-cols-2'>
-        <ToolSection className='space-y-3'>
-          <h2 className='h6'>Base64</h2>
-          <Textarea
+        <Card>
+          <TextareaWithLabel
+            label='Base64'
             className='min-h-[300px] w-full resize-y'
             value={base64}
-            onChange={e => setBase64(e.target.value)}
+            onChange={setBase64}
             placeholder={t.base64PastePlaceholder}
           />
           {error && <ToolAlert variant='error'>{error}</ToolAlert>}
@@ -230,13 +230,18 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
               {t.clearAll}
             </Button>
           </div>
-        </ToolSection>
+        </Card>
 
-        <ToolSection className='space-y-3'>
+        <Card>
           <h2 className='h6'>{t.imagePreview}</h2>
           {previewUrl ? (
             <div className='space-y-3'>
-              <div className='flex items-center justify-center rounded-lg border border-neutral-200 bg-neutral-50 p-4'>
+              <div
+                className={cn(
+                  'rounded-lg border border-neutral-200 bg-neutral-50 p-4',
+                  flexCenterClasses,
+                )}
+              >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={previewUrl}
@@ -249,11 +254,16 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
               </Button>
             </div>
           ) : (
-            <div className='flex min-h-[300px] items-center justify-center rounded-lg border border-neutral-200 bg-neutral-50 p-4'>
+            <div
+              className={cn(
+                'min-h-[300px] rounded-lg border border-neutral-200 bg-neutral-50 p-4',
+                flexCenterClasses,
+              )}
+            >
               <p className='tool-meta'>{t.base64DecodeHint}</p>
             </div>
           )}
-        </ToolSection>
+        </Card>
       </div>
     </div>
   );

@@ -5,15 +5,17 @@ import Card from '../Card';
 
 import InlineLink from '../../atoms/InlineLink';
 import Link from 'next/link';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 const IMAGE_SIZES = '(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw';
 
 const ArrowIcon = () => (
-  <span className='ml-1 flex h-5 w-5 items-center justify-center' aria-hidden='true'>
+  <span className={cn('ml-1', flexCenterClasses, normalIconSizeClasses)} aria-hidden='true'>
     <svg
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 24 24'
       fill='currentColor'
-      className='h-4 w-4'
+      className={smallIconSizeClasses}
     >
       <path d='M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z' />
     </svg>
@@ -45,8 +47,8 @@ export default function CarouselCard(props: CarouselCardProps) {
   if (props.variant === 'tool') {
     const { title, href, description, image, buttonLabel = 'Otwórz narzędzie' } = props;
     return (
-      <Card as='article' variant='default' className='flex h-full flex-col'>
-        <InlineLink href={href} prefetch={false} className='block'>
+      <Card as='article' className='flex h-full flex-col' padding='md'>
+        <InlineLink href={href} className='block'>
           <div className='relative aspect-[16/9] w-full overflow-hidden border-b border-black/10'>
             <Image src={image} alt={title} fill className='object-cover' sizes={IMAGE_SIZES} />
           </div>
@@ -57,8 +59,7 @@ export default function CarouselCard(props: CarouselCardProps) {
           <div className='mt-auto'>
             <InlineLink
               href={href}
-              prefetch={false}
-              className='inline-flex w-fit items-center rounded-lg border border-black/10 bg-white px-3 py-1.5 text-sm font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-4 md:py-2 md:text-base'
+              className='inline-flex w-fit rounded-lg border border-black/10 bg-white px-3 py-1.5 font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-4 md:py-2 md:text-base'
             >
               <span>{buttonLabel}</span>
               <ArrowIcon />
@@ -72,7 +73,7 @@ export default function CarouselCard(props: CarouselCardProps) {
   if (props.variant === 'article') {
     const { article, href, readingTimeLabel } = props;
     return (
-      <Card as='article' variant='default' className='h-full'>
+      <Card as='article' className='h-full' padding='md'>
         <Link href={href} prefetch={false} className='block'>
           {article.cover ? (
             <div className='relative aspect-[16/9] w-full overflow-hidden border-b border-black/10'>
@@ -115,8 +116,8 @@ export default function CarouselCard(props: CarouselCardProps) {
   const externalLink = project.link;
 
   return (
-    <Card as='article' className='group relative flex h-full flex-col overflow-hidden'>
-      <div className={`relative ${aspectClass} w-full`}>
+    <Card as='article' className='group relative flex h-full flex-col' padding='md'>
+      <div className={cn('relative', aspectClass, 'w-full')}>
         <Image
           src={project.image}
           alt={`Zrzut ekranu projektu ${project.title}`}
@@ -136,7 +137,7 @@ export default function CarouselCard(props: CarouselCardProps) {
             <InlineLink
               href={detailsHref}
               aria-label={`Szczegóły projektu: ${project.title}`}
-              className="inline-flex items-center rounded-lg transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+              className="inline-flex rounded-lg transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
             >
               Szczegóły projektu
               <ArrowIcon />
@@ -148,7 +149,7 @@ export default function CarouselCard(props: CarouselCardProps) {
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label={`Sprawdź stronę projektu ${project.title} (otwiera się w nowej karcie)`}
-                className='text-light hover:text-primary relative z-10 inline-flex items-center rounded-lg transition'
+                className='text-light hover:text-primary relative z-10 inline-flex rounded-lg transition'
               >
                 Sprawdź stronę
                 <ArrowIcon />

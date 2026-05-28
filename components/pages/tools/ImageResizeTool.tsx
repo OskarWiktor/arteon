@@ -2,8 +2,7 @@
 
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
-import ToolSection from '@/components/organisms/tools/ToolSection';
-import ToolUploadContent from '@/components/organisms/tools/ToolUploadContent';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import { exportCroppedImage } from '@/lib/tools/image/exportCroppedImage';
 import { getCropRect, getGridStroke } from '@/lib/tools/image/cropMath';
 import { useCropDrag } from '@/hooks/useCropDrag';
@@ -37,8 +36,14 @@ import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import CropPreview from '@/components/organisms/tools/ImageResizeTool/CropPreview';
-import Input from '@/components/atoms/form/Input';
 import FileDropzone from '@/components/molecules/FileDropzone';
+import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/utils';
+import {
+  flexCenterBetweenClasses,
+  flexCenterClasses,
+  smallIconSizeClasses,
+} from '@/lib/ui-classes';
 
 function getImagePresets(t: UiLocale) {
   return {
@@ -436,7 +441,7 @@ export default function ImageResizeTool() {
 
   return (
     <div className='grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,2.5fr)]'>
-      <ToolSection className='space-y-4'>
+      <Card>
         <form onSubmit={handleSubmit} className='space-y-6'>
           <div>
             <h2 className='h6 mb-2'>{t.addImage}</h2>
@@ -566,10 +571,10 @@ export default function ImageResizeTool() {
             )}
           </div>
         </form>
-      </ToolSection>
+      </Card>
 
-      <ToolSection className='space-y-4'>
-        <div className='mb-2 flex items-center justify-between gap-2'>
+      <Card>
+        <div className={cn('mb-2', flexCenterBetweenClasses)}>
           <h2 className='h6'>{t.cropTools}</h2>
           {dims && (
             <span className='tool-meta'>
@@ -592,7 +597,12 @@ export default function ImageResizeTool() {
               ))}
             </div>
 
-            <div className='relative mt-4 flex aspect-[4/5] max-h-[340px] items-center justify-center overflow-hidden rounded-lg border border-neutral-300 bg-neutral-100'>
+            <div
+              className={cn(
+                'relative mt-4 aspect-[4/5] max-h-[340px] overflow-hidden rounded-lg border border-neutral-300 bg-neutral-100',
+                flexCenterClasses,
+              )}
+            >
               <div className='flex flex-col items-center gap-2 text-neutral-400'>
                 <RiImageLine className='text-5xl' aria-hidden='true' />
                 <span className='text-sm! font-medium'>{t.demoPreset}</span>
@@ -632,30 +642,24 @@ export default function ImageResizeTool() {
                 <div className='space-y-3'>
                   <div className='grid gap-3 md:grid-cols-2'>
                     <div>
-                      <label className='tool-value'>{t.width}</label>
-                      <Input
+                      <InputWithLabel
+                        label={t.width}
                         type='number'
                         min={1}
-                        value={state.targetWidth ?? ''}
-                        onChange={e =>
-                          handleDimensionChange(
-                            'width',
-                            e.target.value ? Number(e.target.value) : null,
-                          )
+                        value={state.targetWidth != null ? String(state.targetWidth) : ''}
+                        onChange={value =>
+                          handleDimensionChange('width', value ? Number(value) : null)
                         }
                       />
                     </div>
                     <div>
-                      <label className='tool-value'>{t.height}</label>
-                      <Input
+                      <InputWithLabel
+                        label={t.height}
                         type='number'
                         min={1}
-                        value={state.targetHeight ?? ''}
-                        onChange={e =>
-                          handleDimensionChange(
-                            'height',
-                            e.target.value ? Number(e.target.value) : null,
-                          )
+                        value={state.targetHeight != null ? String(state.targetHeight) : ''}
+                        onChange={value =>
+                          handleDimensionChange('height', value ? Number(value) : null)
                         }
                       />
                     </div>
@@ -808,7 +812,10 @@ export default function ImageResizeTool() {
                             cropX: 0.5,
                           }))
                         }
-                        className='flex h-7 w-7 items-center justify-center rounded-lg border border-black/10 bg-white hover:bg-neutral-100'
+                        className={cn(
+                          'h-7 w-7 rounded-lg border border-black/10 bg-white hover:bg-neutral-100',
+                          flexCenterClasses,
+                        )}
                         title={t.centerHorizontal}
                       >
                         <MdAlignHorizontalCenter className='text-xs' />
@@ -821,7 +828,10 @@ export default function ImageResizeTool() {
                             cropY: 0.5,
                           }))
                         }
-                        className='flex h-7 w-7 items-center justify-center rounded-lg border border-black/10 bg-white hover:bg-neutral-100'
+                        className={cn(
+                          'h-7 w-7 rounded-lg border border-black/10 bg-white hover:bg-neutral-100',
+                          flexCenterClasses,
+                        )}
                         title={t.centerVertical}
                       >
                         <MdAlignVerticalCenter className='text-xs' />
@@ -835,7 +845,10 @@ export default function ImageResizeTool() {
                             cropY: 0.5,
                           }))
                         }
-                        className='flex h-7 w-7 items-center justify-center rounded-lg border border-black/10 bg-white hover:bg-neutral-100'
+                        className={cn(
+                          'h-7 w-7 rounded-lg border border-black/10 bg-white hover:bg-neutral-100',
+                          flexCenterClasses,
+                        )}
                         title={t.centerCrop}
                       >
                         <span>C</span>
@@ -856,7 +869,7 @@ export default function ImageResizeTool() {
                         label={
                           <span className='flex items-center gap-2'>
                             <span
-                              className='h-4 w-4 rounded-lg'
+                              className={cn('rounded-lg', smallIconSizeClasses)}
                               style={{ backgroundColor: getGridStroke(opt.value) }}
                             />
                             {opt.label}
@@ -894,7 +907,7 @@ export default function ImageResizeTool() {
             />
           </>
         )}
-      </ToolSection>
+      </Card>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import { cn } from '@/lib/utils';
+
 function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
 }
@@ -72,7 +74,7 @@ export function StarRating({
   );
 
   return (
-    <span className={`text-accent ${className}`} aria-hidden='true'>
+    <span className={cn('text-accent', className)} aria-hidden='true'>
       {Array.from({ length: full }).map((_, i) => (
         <span key={`f-${i}`}>{FullStar}</span>
       ))}

@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import FeatureCard from './FeatureCard';
 import SectionHeader from '../molecules/SectionHeader';
 import type { FeatureItem } from '@/types/ui';
+import { cn } from '@/lib/utils';
 export type { FeatureItem } from '@/types/ui';
 
 interface FeatureGridProps {
@@ -50,7 +51,7 @@ export default function FeatureGrid({
         titleId={`${sectionId}-h`}
       />
 
-      <ul className={`grid gap-4 ${gridClasses}`}>
+      <ul className={cn('grid gap-4', gridClasses)}>
         {items.map((item, idx) => (
           <li
             className='h-full'

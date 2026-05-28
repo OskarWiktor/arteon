@@ -2,6 +2,7 @@ import { useId, type ReactNode } from 'react';
 import Image from 'next/image';
 import SectionHeader from '../../molecules/SectionHeader';
 import ButtonGroup from '../../molecules/ButtonGroup';
+import { cn } from '@/lib/utils';
 
 interface SectionBasicProps {
   id?: string;
@@ -38,7 +39,11 @@ export default function SectionBasic({
   return (
     <section id={id} aria-labelledby={headingId} className='w-full'>
       <div className='flex flex-col md:gap-4 lg:flex-row lg:gap-8'>
-        <div className={`flex w-full lg:w-1/2 ${variant === 'left' ? 'lg:order-2' : ''}`}>
+        <div
+          className={cn('flex w-full lg:w-1/2', {
+            'lg:order-2': variant === 'left',
+          })}
+        >
           <div className='relative aspect-[4/3] w-full'>
             <Image
               src={imageSrc}
@@ -50,9 +55,16 @@ export default function SectionBasic({
           </div>
         </div>
 
-        <div className={`flex w-full lg:w-1/2 ${variant === 'left' ? 'lg:order-1' : ''}`}>
+        <div
+          className={cn('flex w-full lg:w-1/2', {
+            'lg:order-1': variant === 'left',
+          })}
+        >
           <div
-            className={`flex h-full flex-col justify-center py-6 md:py-8 lg:py-8 ${variant === 'right' ? 'lg:pl-6' : 'lg:pr-6'}`}
+            className={cn('flex h-full flex-col justify-center py-6 md:py-8 lg:py-8', {
+              'lg:pl-6': variant === 'right',
+              'lg:pr-6': variant === 'left',
+            })}
           >
             <SectionHeader
               subtitle={subtitle}

@@ -19,7 +19,7 @@ import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import { GoLaw } from 'react-icons/go';
 import SectionPrices, {
@@ -34,6 +34,8 @@ import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Strony internetowe WordPress dla firm od 2200 zł | Arteon',
@@ -217,7 +219,7 @@ export default function TworzenieStronWordPressPage() {
                   Udostępniamy licencję w cenie - nie płacisz za nią ani teraz, ani później.
                 </>
               ),
-              icon: <RiLayoutLine className='text-primary h-6 w-6' />,
+              icon: <RiLayoutLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Projekt w Figma przed realizacją',
@@ -227,7 +229,7 @@ export default function TworzenieStronWordPressPage() {
                   Dostajesz link do podglądu i wspólnie ustalamy finalny wygląd.
                 </>
               ),
-              icon: <RiPencilRuler2Line className='text-primary h-6 w-6' />,
+              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Wydajność 90+/100 dla telefonów',
@@ -246,7 +248,7 @@ export default function TworzenieStronWordPressPage() {
                   konfigurację serwera.
                 </>
               ),
-              icon: <RiSpeedFill className='text-primary h-6 w-6' />,
+              icon: <RiSpeedFill className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Automatyzacja utrzymania',
@@ -256,7 +258,7 @@ export default function TworzenieStronWordPressPage() {
                   obrazów. Nie musisz się martwić o techniczne aspekty utrzymania strony.
                 </>
               ),
-              icon: <RiShieldCheckLine className='text-primary h-6 w-6' />,
+              icon: <RiShieldCheckLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Pomoc z treściami i SEO',
@@ -267,7 +269,7 @@ export default function TworzenieStronWordPressPage() {
                   klientów.
                 </>
               ),
-              icon: <RiArticleLine className='text-primary h-6 w-6' />,
+              icon: <RiArticleLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Zgodność prawna i dostępność',
@@ -277,7 +279,7 @@ export default function TworzenieStronWordPressPage() {
                   dostępności. Kolory zgodne z WCAG 2.1 AA - strona czytelna dla każdego.
                 </>
               ),
-              icon: <GoLaw className='text-primary h-6 w-6' />,
+              icon: <GoLaw className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Formularze, mapy i media społecznościowe',
@@ -287,7 +289,7 @@ export default function TworzenieStronWordPressPage() {
                   dzwonienia i pisania maili - wszystko w cenie standardowej.
                 </>
               ),
-              icon: <RiCheckboxCircleLine className='text-primary h-6 w-6' />,
+              icon: <RiCheckboxCircleLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Pełna własność i dostępy',
@@ -297,7 +299,7 @@ export default function TworzenieStronWordPressPage() {
                   Google Search Console. Strona jest Twoja w 100%.
                 </>
               ),
-              icon: <RiKey2Line className='text-primary h-6 w-6' />,
+              icon: <RiKey2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Wsparcie po realizacji',
@@ -307,7 +309,9 @@ export default function TworzenieStronWordPressPage() {
                   doradzamy jak zwiększać widoczność i pomagamy przy kolejnych krokach.
                 </>
               ),
-              icon: <RiCustomerService2Line className='text-primary h-6 w-6' />,
+              icon: (
+                <RiCustomerService2Line className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
           ]}
         />
@@ -317,25 +321,25 @@ export default function TworzenieStronWordPressPage() {
           title='Jak wygląda współpraca przy tworzeniu strony internetowej w WordPress?'
           items={[
             {
-              icon: <RiPencilRuler2Line className='h-6 w-6' />,
+              icon: <RiPencilRuler2Line className={normalIconSizeClasses} />,
               title: 'Wycena i projekt',
               description:
                 'Opisujesz swoją firmę i potrzeby. Przygotowujemy wycenę i projekt graficzny strony głównej w Figma. Dostajesz link do podglądu - możesz oglądać i komentować.',
             },
             {
-              icon: <RiCheckDoubleLine className='h-6 w-6' />,
+              icon: <RiCheckDoubleLine className={normalIconSizeClasses} />,
               title: 'Akceptacja projektu',
               description:
                 'Wspólnie omawiamy projekt. Wprowadzamy poprawki aż do pełnej akceptacji. Dopiero wtedy przechodzimy do budowania strony.',
             },
             {
-              icon: <RiLayoutLine className='h-6 w-6' />,
+              icon: <RiLayoutLine className={normalIconSizeClasses} />,
               title: 'Wdrożenie strony',
               description:
                 'Budujemy stronę w WordPress z Elementor Pro. Konfigurujemy formularze, optymalizujemy obrazy, wdrażamy SEO techniczne i testujemy na wszystkich urządzeniach.',
             },
             {
-              icon: <RiMailSendLine className='h-6 w-6' />,
+              icon: <RiMailSendLine className={normalIconSizeClasses} />,
               title: 'Faktura po odbiorze',
               description:
                 'Prezentujemy gotową stronę. Faktura wystawiana jest od razu po zakończeniu prac. Masz 7 dni na płatność i 14 dni na zgłoszenie poprawek.',
@@ -562,7 +566,7 @@ export default function TworzenieStronWordPressPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/tworzenie-stron-wordpress'
           title='Najczęstsze pytania dotyczące stworzenia strony internetowej WordPress'

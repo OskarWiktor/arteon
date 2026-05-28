@@ -4,6 +4,8 @@ import { createPortal } from 'react-dom';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import Button from '@/components/atoms/buttons/Button';
+import { flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 type ConfirmModalProps = {
   isOpen: boolean;
@@ -45,7 +47,10 @@ export default function ConfirmModal({
 
   return createPortal(
     <div
-      className='animate-modal-backdrop fixed inset-0 z-[100] flex items-center justify-center bg-black/40 px-4'
+      className={cn(
+        'animate-modal-backdrop fixed inset-0 z-[100] bg-black/40 px-4',
+        flexCenterClasses,
+      )}
       onClick={handleBackdropClick}
       role='dialog'
       aria-modal='true'

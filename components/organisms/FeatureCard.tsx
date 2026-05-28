@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react';
 import Card from './Card';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 type FeatureCardProps = {
   idx?: number;
@@ -30,13 +32,17 @@ export default function FeatureCard({
     return (
       <Card
         as='section'
-        padding='sm'
         aria-labelledby={headingId}
         aria-describedby={descId}
-        className='flex h-full flex-col items-center text-center'
+        className={cn('h-full flex-col', flexCenterClasses)}
         {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
       >
-        <div className='bg-primary-light text-primary mb-3 flex h-12 w-12 items-center justify-center rounded-lg'>
+        <div
+          className={cn(
+            'bg-primary-light text-primary mb-3 h-12 w-12 rounded-lg',
+            flexCenterClasses,
+          )}
+        >
           {displayIcon}
         </div>
         <h3 id={headingId} className='h6 text-dark mb-1' itemProp='name'>
@@ -56,7 +62,7 @@ export default function FeatureCard({
         {Array.isArray(points) && points.length > 0 && (
           <ul className='mt-2 space-y-2' role='list'>
             {points.map((pt, i) => (
-              <li key={i} className='flex items-center justify-center gap-1'>
+              <li key={i} className={cn('gap-1', flexCenterClasses)}>
                 <span className='text-light text-base'>{pt}</span>
               </li>
             ))}
@@ -69,13 +75,17 @@ export default function FeatureCard({
   return (
     <Card
       as='section'
-      padding='sm'
       aria-labelledby={headingId}
       aria-describedby={descId}
       className='flex h-full gap-4'
       {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
     >
-      <div className='bg-primary-light text-primary flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg'>
+      <div
+        className={cn(
+          'bg-primary-light text-primary h-12 w-12 flex-shrink-0 rounded-lg',
+          flexCenterClasses,
+        )}
+      >
         {displayIcon}
       </div>
       <div className='flex flex-col'>
@@ -92,7 +102,7 @@ export default function FeatureCard({
         {Array.isArray(points) && points.length > 0 && (
           <ul className='mt-2 space-y-2' role='list'>
             {points.map((pt, i) => (
-              <li key={i} className='flex items-start gap-1'>
+              <li key={i} className={cn('gap-1', flexCenterClasses)}>
                 <span className='text-light text-base'>{pt}</span>
               </li>
             ))}

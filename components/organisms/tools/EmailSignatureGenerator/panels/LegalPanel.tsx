@@ -3,6 +3,8 @@ import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import Textarea from '@/components/atoms/form/Textarea';
 import InputColor from '@/components/atoms/form/InputColor';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses, largeIconSizeClasses } from '@/lib/ui-classes';
 
 type Props = {
   config: SignatureConfig;
@@ -84,7 +86,10 @@ export default function LegalPanel({ config, styleConfig, onTextChange, onStyleC
               <button
                 type='button'
                 onClick={() => onStyleChange('dividerColor', '')}
-                className={`tool-button ${!styleConfig.dividerColor ? 'tool-button-active' : 'tool-button-inactive'}`}
+                className={cn(
+                  'tool-button',
+                  !styleConfig.dividerColor ? 'bg-primary text-white' : 'tool-button-inactive',
+                )}
               >
                 {t.legal.dividerColorDefault}
               </button>
@@ -95,7 +100,12 @@ export default function LegalPanel({ config, styleConfig, onTextChange, onStyleC
                   className='absolute inset-0 h-full! w-full! opacity-0'
                 />
                 <div
-                  className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded border-2 ${styleConfig.dividerColor ? 'border-mid' : 'border-neutral-300'}`}
+                  className={cn(
+                    'cursor-pointer rounded border-2',
+                    flexCenterClasses,
+                    largeIconSizeClasses,
+                    styleConfig.dividerColor ? 'border-mid' : 'border-neutral-300',
+                  )}
                   style={{ backgroundColor: styleConfig.dividerColor || '#e5e7eb' }}
                 />
               </div>

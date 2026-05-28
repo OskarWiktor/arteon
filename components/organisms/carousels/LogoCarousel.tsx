@@ -26,7 +26,7 @@ import {
   SiGoogleads,
 } from 'react-icons/si';
 import SectionHeader from '@/components/molecules/SectionHeader';
-import { focusRingClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, focusRingClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 
 interface LogoCarouselDefaultItem {
@@ -239,7 +239,10 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
                     alt={alt}
                     width={width}
                     height={height}
-                    className={`${heightClass ?? 'h-12 md:h-14'} w-auto object-contain opacity-60 transition-opacity hover:opacity-100`}
+                    className={cn(
+                      'w-auto object-contain opacity-60 transition-opacity hover:opacity-100',
+                      heightClass ?? 'h-12 md:h-14',
+                    )}
                     style={filter ? { filter } : undefined}
                     onLoad={measure}
                     unoptimized
@@ -278,7 +281,7 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
           {[...LogoCarouselDefaultItems, ...LogoCarouselDefaultItems].map(
             ({ label, icon: Icon }, index) => (
               <li key={`${label}-${index}`} className='shrink-0'>
-                <div className='flex min-w-[120px] flex-col items-center justify-center opacity-65'>
+                <div className={cn('min-w-[120px] flex-col opacity-65', flexCenterClasses)}>
                   <IconText
                     icon={<Icon className='text-primary h-auto w-12' aria-hidden='true' />}
                     children={undefined}

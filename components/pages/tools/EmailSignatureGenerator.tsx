@@ -1,7 +1,6 @@
 'use client';
 
 import Button from '@/components/atoms/buttons/Button';
-import ToolSection from '@/components/organisms/tools/ToolSection';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import InputColor from '@/components/atoms/form/InputColor';
 import { downloadBlob } from '@/utils/download';
@@ -60,6 +59,15 @@ import {
   RiShareForwardLine,
 } from 'react-icons/ri';
 import { useLocale } from '@/lib/LocaleContext';
+import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/utils';
+import {
+  flexCenterBetweenClasses,
+  flexCenterClasses,
+  largeIconSizeClasses,
+  normalIconSizeClasses,
+  smallIconSizeClasses,
+} from '@/lib/ui-classes';
 
 export default function EmailSignatureGenerator() {
   const locale = useLocale();
@@ -257,7 +265,7 @@ export default function EmailSignatureGenerator() {
 
   return (
     <div className='space-y-4'>
-      <ToolSection padding='sm' className='flex flex-wrap items-center justify-between gap-3'>
+      <Card className='flex flex-wrap items-center justify-between'>
         <div className='flex flex-wrap items-center gap-3'>
           <div className='flex flex-wrap items-center gap-2'>
             <RiLayout3Line className='text-primary text-base' />
@@ -315,9 +323,9 @@ export default function EmailSignatureGenerator() {
           </div>
         </div>
         <p className='tool-meta'>{t.moreLayoutsSoon}</p>
-      </ToolSection>
+      </Card>
 
-      <ToolSection padding='sm' className='flex flex-wrap items-center gap-3'>
+      <Card className='flex flex-wrap items-center'>
         <div className='flex items-center gap-2'>
           <span className='tool-value'>{t.editorTitle}</span>
         </div>
@@ -372,10 +380,10 @@ export default function EmailSignatureGenerator() {
             label={t.panels.legal}
           />
         </div>
-      </ToolSection>
+      </Card>
 
       <div className='grid items-stretch gap-4 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]'>
-        <ToolSection className='flex min-h-[620px] flex-col space-y-4'>
+        <Card padding='md' className='flex min-h-[620px] flex-col'>
           <div className='space-y-4 text-sm!'>
             {activePanel === 'identity' && (
               <IdentityPanel
@@ -435,7 +443,10 @@ export default function EmailSignatureGenerator() {
                         className='absolute inset-0 h-full! w-full! opacity-0'
                       />
                       <div
-                        className='h-8 w-8 cursor-pointer rounded border border-neutral-300'
+                        className={cn(
+                          'cursor-pointer rounded border border-neutral-300',
+                          largeIconSizeClasses,
+                        )}
                         style={{ backgroundColor: pendingCustomColor }}
                       />
                     </div>
@@ -456,14 +467,20 @@ export default function EmailSignatureGenerator() {
                       {textStyleConfig.customColors.map(color => (
                         <div key={color} className='group relative'>
                           <div
-                            className='h-8 w-8 rounded border border-neutral-300'
+                            className={cn(
+                              'rounded border border-neutral-300',
+                              largeIconSizeClasses,
+                            )}
                             style={{ backgroundColor: color }}
                             title={color}
                           />
                           <button
                             type='button'
                             onClick={() => removeCustomColor(color)}
-                            className='bg-error-icon absolute -top-1.5 -right-1.5 hidden h-5 w-5 items-center justify-center rounded-lg text-white group-hover:flex'
+                            className={cn(
+                              'bg-error-icon absolute -top-1.5 -right-1.5 hidden items-center justify-center rounded-lg text-white group-hover:flex',
+                              normalIconSizeClasses,
+                            )}
                             aria-label='Usuń kolor'
                           >
                             <RiDeleteBinLine className='h-3 w-3' />
@@ -588,10 +605,13 @@ export default function EmailSignatureGenerator() {
               />
             )}
           </div>
-        </ToolSection>
+        </Card>
 
-        <ToolSection className='flex min-h-[620px] flex-col space-y-4 lg:sticky lg:top-24 lg:self-start'>
-          <div className='flex items-center justify-between gap-2'>
+        <Card
+          padding='md'
+          className='flex min-h-[620px] flex-col lg:sticky lg:top-24 lg:self-start'
+        >
+          <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <div>
               <h2 className='h6'>{t.preview.title}</h2>
               <p className='text-light text-xs!'>{t.preview.helper}</p>
@@ -600,32 +620,54 @@ export default function EmailSignatureGenerator() {
               <button
                 type='button'
                 onClick={() => setPreviewBg('light')}
-                className={`rounded-md border p-1.5 ${previewBg === 'light' ? 'border-primary bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                className={cn(
+                  'rounded-md border p-1.5',
+                  previewBg === 'light'
+                    ? 'border-primary bg-primary text-white'
+                    : 'border-black/10 bg-white hover:bg-neutral-100',
+                )}
                 title={t.preview.bgLight}
               >
-                <RiSunLine className='h-4 w-4' />
+                <RiSunLine className={smallIconSizeClasses} />
               </button>
               <button
                 type='button'
                 onClick={() => setPreviewBg('dark')}
-                className={`rounded-md border p-1.5 ${previewBg === 'dark' ? 'border-primary bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                className={cn(
+                  'rounded-md border p-1.5',
+                  previewBg === 'dark'
+                    ? 'border-primary bg-primary text-white'
+                    : 'border-black/10 bg-white hover:bg-neutral-100',
+                )}
                 title={t.preview.bgDark}
               >
-                <RiMoonLine className='h-4 w-4' />
+                <RiMoonLine className={smallIconSizeClasses} />
               </button>
               <button
                 type='button'
                 onClick={() => setPreviewBg('checker')}
-                className={`rounded-md border p-1.5 ${previewBg === 'checker' ? 'border-primary bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                className={cn(
+                  'rounded-md border p-1.5',
+                  previewBg === 'checker'
+                    ? 'border-primary bg-primary text-white'
+                    : 'border-black/10 bg-white hover:bg-neutral-100',
+                )}
                 title={t.preview.bgChecker}
               >
-                <RiGridLine className='h-4 w-4' />
+                <RiGridLine className={smallIconSizeClasses} />
               </button>
             </div>
           </div>
 
           <div
-            className={`rounded-lg border border-neutral-200 p-4 ${previewBg === 'dark' ? 'bg-neutral-800' : previewBg === 'checker' ? 'bg-white bg-[image:linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%),linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%)] bg-[length:20px_20px] bg-[position:0_0,10px_10px]' : 'bg-neutral-50'}`}
+            className={cn(
+              'rounded-lg border border-neutral-200 p-4',
+              previewBg === 'dark'
+                ? 'bg-neutral-800'
+                : previewBg === 'checker'
+                  ? 'bg-white bg-[image:linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%),linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%)] bg-[length:20px_20px] bg-[position:0_0,10px_10px]'
+                  : 'bg-neutral-50',
+            )}
           >
             <div className='mx-auto max-w-full overflow-x-auto'>
               <div className='inline-block rounded-lg border border-neutral-200 bg-white px-4 py-4 text-sm!'>
@@ -702,7 +744,7 @@ export default function EmailSignatureGenerator() {
 
           {showSourceModal && (
             <div
-              className='fixed inset-0 z-[100] flex items-center justify-center bg-black/40 px-4'
+              className={cn('fixed inset-0 z-[100] bg-black/40 px-4', flexCenterClasses)}
               onClick={e => {
                 if (e.target === e.currentTarget) setShowSourceModal(false);
               }}
@@ -710,14 +752,14 @@ export default function EmailSignatureGenerator() {
               aria-modal='true'
             >
               <div className='w-full max-w-2xl overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5'>
-                <div className='mb-4 flex items-center justify-between'>
+                <div className={cn('mb-4', flexCenterBetweenClasses)}>
                   <h3 className='h6'>{t.preview.viewSourceTitle}</h3>
                   <button
                     type='button'
                     onClick={() => setShowSourceModal(false)}
                     className='rounded-md p-1.5 hover:bg-neutral-100'
                   >
-                    <RiCloseLine className='h-5 w-5' />
+                    <RiCloseLine className={normalIconSizeClasses} />
                   </button>
                 </div>
                 <pre className='max-h-[60vh] overflow-auto rounded-md bg-neutral-50 p-4 text-xs! leading-relaxed break-all whitespace-pre-wrap'>
@@ -760,7 +802,7 @@ export default function EmailSignatureGenerator() {
           />
 
           {!hasRequired && <p className='text-light text-xs!'>{t.preview.requiredFields}</p>}
-        </ToolSection>
+        </Card>
       </div>
     </div>
   );

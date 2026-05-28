@@ -3,7 +3,7 @@ import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import Wrapper from '@/components/atoms/Wrapper';
 import Script from 'next/script';
 import {
@@ -24,6 +24,7 @@ import {
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 export const metadata = {
   title: 'Δωρεάν εργαλεία | Μετατροπείς, SEO, χρώματα, favicon',
@@ -569,7 +570,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiCropLine className='h-8 w-8' />,
+              icon: <RiCropLine className={largeIconSizeClasses} />,
               title: 'Επεξεργασία εικόνας',
               topImageAlt: 'Επεξεργασία εικόνας Arteon',
               topImageSrc:
@@ -590,7 +591,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiAppsLine className='h-8 w-8' />,
+              icon: <RiAppsLine className={largeIconSizeClasses} />,
               title: 'Δημιουργία favicon',
               topImageAlt: 'Δημιουργία favicon Arteon',
               topImageSrc: '/assets/tools/favicon-generator/dorean-dimiourgia-favicon-el.webp',
@@ -619,7 +620,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiFileTextLine className='h-8 w-8' />,
+              icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Έλεγχος meta τίτλου και περιγραφής',
               topImageAlt: 'Έλεγχος meta τίτλου και περιγραφής Arteon',
               topImageSrc:
@@ -640,7 +641,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiArticleLine className='h-8 w-8' />,
+              icon: <RiArticleLine className={largeIconSizeClasses} />,
               title: 'Μετρητής λέξεων και χαρακτήρων',
               topImageAlt: 'Μετρητής λέξεων και χαρακτήρων Arteon',
               topImageSrc:
@@ -662,7 +663,7 @@ export default function ToolsIndexPage() {
             },
 
             {
-              icon: <RiFileTextLine className='h-8 w-8' />,
+              icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Γεννήτρια Lorem Ipsum',
               topImageAlt: 'Γεννήτρια Lorem Ipsum Arteon',
               topImageSrc: '/assets/tools/lorem-ipsum-generator/gennitra-lorem-ipsum-el.webp',
@@ -689,7 +690,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiMailLine className='h-8 w-8' />,
+              icon: <RiMailLine className={largeIconSizeClasses} />,
               title: 'Δημιουργία υπογραφής email',
               topImageAlt: 'Δημιουργία υπογραφής email Arteon',
               topImageSrc:
@@ -718,7 +719,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiQrCodeLine className='h-8 w-8' />,
+              icon: <RiQrCodeLine className={largeIconSizeClasses} />,
               title: 'Δωρεάν δημιουργία κωδικού QR',
               topImageAlt: 'Δημιουργία κωδικού QR Arteon',
               topImageSrc: '/assets/tools/qr-code-generator/dorean-dimiourgia-kodikou-qr-el.webp',
@@ -745,7 +746,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiContrast2Line className='h-8 w-8' />,
+              icon: <RiContrast2Line className={largeIconSizeClasses} />,
               title: 'Έλεγχος αντίθεσης χρωμάτων',
               topImageAlt: 'Έλεγχος αντίθεσης χρωμάτων Arteon',
               topImageSrc:
@@ -767,7 +768,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiPantoneLine className='h-8 w-8' />,
+              icon: <RiPantoneLine className={largeIconSizeClasses} />,
               title: 'Εξαγωγή χρωμάτων από εικόνα',
               topImageAlt: 'Εξαγωγή χρωμάτων από εικόνα Arteon',
               topImageSrc:
@@ -787,7 +788,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiPaletteLine className='h-8 w-8' />,
+              icon: <RiPaletteLine className={largeIconSizeClasses} />,
               title: 'Δημιουργία παλέτας χρωμάτων',
               topImageAlt: 'Δημιουργία παλέτας χρωμάτων Arteon',
               topImageSrc:
@@ -817,7 +818,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'Μετατροπέας JPG σε WebP',
               topImageAlt: 'Μετατροπέας JPG σε WebP Arteon',
               topImageSrc:
@@ -834,7 +835,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'Μετατροπέας PNG σε JPG',
               topImageAlt: 'Μετατροπέας PNG σε JPG Arteon',
               topImageSrc:
@@ -854,7 +855,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'Μετατροπέας WebP σε JPG',
               topImageAlt: 'Μετατροπέας WebP σε JPG Arteon',
               topImageSrc:
@@ -871,7 +872,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'Μετατροπέας PNG σε WebP',
               topImageAlt: 'Μετατροπέας PNG σε WebP Arteon',
               topImageSrc:
@@ -888,7 +889,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'Μετατροπέας JPG σε PNG',
               topImageAlt: 'Μετατροπέας JPG σε PNG Arteon',
               topImageSrc:
@@ -908,7 +909,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'Μετατροπέας WebP σε PNG',
               topImageAlt: 'Μετατροπέας WebP σε PNG Arteon',
               topImageSrc:
@@ -934,7 +935,7 @@ export default function ToolsIndexPage() {
           grid='three'
           items={[
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'CSV σε JSON',
               topImageAlt: 'CSV σε JSON Arteon',
               topImageSrc:
@@ -953,7 +954,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON σε CSV',
               topImageAlt: 'JSON σε CSV Arteon',
               topImageSrc:
@@ -972,7 +973,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'XML σε JSON',
               topImageAlt: 'XML σε JSON Arteon',
               topImageSrc:
@@ -992,7 +993,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON σε XML',
               topImageAlt: 'JSON σε XML Arteon',
               topImageSrc:
@@ -1009,7 +1010,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'YAML σε JSON',
               topImageAlt: 'YAML σε JSON Arteon',
               topImageSrc:
@@ -1026,7 +1027,7 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiLoopLeftLine className='h-8 w-8' />,
+              icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON σε YAML',
               topImageAlt: 'JSON σε YAML Arteon',
               topImageSrc:
@@ -1068,25 +1069,25 @@ export default function ToolsIndexPage() {
           grid='two'
           items={[
             {
-              icon: <RiShieldCheckLine className='h-6 w-6' />,
+              icon: <RiShieldCheckLine className={normalIconSizeClasses} />,
               title: 'Απόλυτο απόρρητο',
               description:
                 'Όλα τα εργαλεία επεξεργάζονται αρχεία τοπικά στο πρόγραμμα περιήγησης. Τίποτα δεν αποστέλλεται σε διακομιστή – τα δεδομένα εξαφανίζονται όταν κλείσετε την καρτέλα.',
             },
             {
-              icon: <RiInfinityFill className='h-6 w-6' />,
+              icon: <RiInfinityFill className={normalIconSizeClasses} />,
               title: 'Χωρίς όρια χρήσης',
               description:
                 'Χρησιμοποιήστε τα χωρίς περιορισμούς – χωρίς ημερήσιο όριο, χωρίς όριο αρχείων, χωρίς όριο μετατροπών. Όσες φορές χρειάζεστε.',
             },
             {
-              icon: <RiLockLine className='h-6 w-6' />,
+              icon: <RiLockLine className={normalIconSizeClasses} />,
               title: 'Χωρίς εγγραφή',
               description:
                 'Δεν χρειάζεται λογαριασμός. Ανοίξτε το εργαλείο, χρησιμοποιήστε το, τέλος.',
             },
             {
-              icon: <RiGlobalLine className='h-6 w-6' />,
+              icon: <RiGlobalLine className={normalIconSizeClasses} />,
               title: 'Διαθέσιμα στα Ελληνικά',
               description:
                 'Όλα τα εργαλεία είναι διαθέσιμα στα ελληνικά – διεπαφή, οδηγίες και ειδοποιήσεις.',
@@ -1095,7 +1096,7 @@ export default function ToolsIndexPage() {
         />
 
         <Divider line />
-        <FaqPanels items={faqItems} title='Συχνές ερωτήσεις σχετικά με τα εργαλεία μας' />
+        <SectionFaqPanels items={faqItems} title='Συχνές ερωτήσεις σχετικά με τα εργαλεία μας' />
         <Divider size='sm' />
       </Wrapper>
       <Script id='ld-json-tools-el' type='application/ld+json' strategy='afterInteractive'>

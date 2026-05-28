@@ -18,7 +18,7 @@ import {
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import { GoLaw } from 'react-icons/go';
 import SectionPrices, {
@@ -32,6 +32,8 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',
@@ -179,7 +181,7 @@ export default function OfferBlogPage() {
                   Wygląd, który od pierwszych sekund pokazuje profesjonalizm i zachęca do czytania
                 </>
               ),
-              icon: <RiPencilRuler2Line className='text-primary h-6 w-6' />,
+              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Dobór i obróbka grafik do wpisów',
@@ -188,22 +190,22 @@ export default function OfferBlogPage() {
                   Pomagamy dobrać spójne grafiki i dopasowujemy je do bloga: kadry, proporcje, waga
                 </>
               ),
-              icon: <RiBrushLine className='text-primary h-6 w-6' />,
+              icon: <RiBrushLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Wsparcie prawne przy politykach i zgodach',
               description: <>Przeprowadzamy Cię przez wymagania (polityki, pliki cookie, zgody)</>,
-              icon: <GoLaw className='text-primary h-6 w-6' />,
+              icon: <GoLaw className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Blog dostosowany do różnych urządzeń',
               description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
-              icon: <RiDeviceLine className='text-primary h-6 w-6' />,
+              icon: <RiDeviceLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Dedykowane szkolenie PDF z obsługi bloga',
               description: <>Proste instrukcje: jak dodać wpis, zdjęcia i linki</>,
-              icon: <RiBookOpenLine className='text-primary h-6 w-6' />,
+              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Zero ukrytych kosztów',
@@ -212,19 +214,21 @@ export default function OfferBlogPage() {
                   Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje
                 </>
               ),
-              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
+              icon: (
+                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
             {
               title: 'Transparentna współpraca na bieżąco',
               description: <>Informujemy Cię regularnie o postępach prac nad Twoim blogiem</>,
-              icon: <RiMessage2Line className='text-primary h-6 w-6' />,
+              icon: <RiMessage2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Pełną własność i dostępy',
               description: (
                 <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>
               ),
-              icon: <RiKey2Line className='text-primary h-6 w-6' />,
+              icon: <RiKey2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Proste raporty wyników',
@@ -234,7 +238,7 @@ export default function OfferBlogPage() {
                   najlepiej
                 </>
               ),
-              icon: <RiBarChart2Line className='text-primary h-6 w-6' />,
+              icon: <RiBarChart2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
@@ -244,7 +248,7 @@ export default function OfferBlogPage() {
                   ramach gwarancji
                 </>
               ),
-              icon: <RiLifebuoyLine className='text-primary h-6 w-6' />,
+              icon: <RiLifebuoyLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
           ]}
         />
@@ -350,7 +354,7 @@ export default function OfferBlogPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           title='Najczęstsze pytania dotyczące blogów internetowych'
           pageUrl='https://www.arteonagency.pl/uslugi/blogi-internetowe'

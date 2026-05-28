@@ -3,11 +3,19 @@ import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import { RiStarFill, RiStarLine } from 'react-icons/ri';
 
+type SectionStarRatingSize = 'small' | 'medium' | 'large';
+
+const SectionStarRatingSizeClasses: Record<SectionStarRatingSize, string> = {
+  small: 'h-5 w-5',
+  medium: 'h-7 w-7',
+  large: 'h-9 w-9',
+};
+
 interface SectionStarRatingProps {
   value: number;
   onChange: (value: number) => void;
   max?: number;
-  size?: 'small' | 'medium' | 'large';
+  size?: SectionStarRatingSize;
   label?: string;
 }
 
@@ -19,12 +27,6 @@ export default function SectionStarRating({
   label,
 }: SectionStarRatingProps) {
   const [hoverValue, setHoverValue] = useState<number | null>(null);
-
-  const sizeClasses = {
-    small: 'h-5 w-5',
-    medium: 'h-7 w-7',
-    large: 'h-9 w-9',
-  };
 
   const displayValue = hoverValue !== null ? hoverValue : value;
 
@@ -52,9 +54,11 @@ export default function SectionStarRating({
               aria-label={`${starValue} z ${max} gwiazdek`}
             >
               {isFilled ? (
-                <RiStarFill className={`${sizeClasses[size]} text-accent`} />
+                <RiStarFill className={SectionStarRatingSizeClasses[size] + ' text-accent'} />
               ) : (
-                <RiStarLine className={`${sizeClasses[size]} text-primary-light`} />
+                <RiStarLine
+                  className={SectionStarRatingSizeClasses[size] + ' text-primary-light'}
+                />
               )}
             </button>
           );

@@ -7,7 +7,7 @@ import SectionContactForm from '@/components/organisms/sections/SectionContactFo
 import Wrapper from '@/components/atoms/Wrapper';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import { IoAccessibilityOutline, IoColorPalette } from 'react-icons/io5';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
@@ -36,6 +36,8 @@ import {
 import Script from 'next/script';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import { siteUrl } from '@/utils/absoluteUrl';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 const SERVICES = [
   { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne/projekt-wizytowki' },
@@ -236,7 +238,7 @@ export default function OfferDesignPage() {
                   licencjami. Masz pełną kontrolę nad materiałami firmowymi - dziś i w przyszłości.
                 </>
               ),
-              icon: <RiKey2Line className='text-primary h-6 w-6' />,
+              icon: <RiKey2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Pliki gotowe do druku i wdrożenia online',
@@ -246,7 +248,7 @@ export default function OfferDesignPage() {
                   gotowe do użycia.
                 </>
               ),
-              icon: <RiFileTextLine className='text-primary h-6 w-6' />,
+              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Konsekwentną identyfikację wizualną',
@@ -256,7 +258,7 @@ export default function OfferDesignPage() {
                   materiały firmowe mówią jednym językiem i wzmacniają markę przy każdym kontakcie.
                 </>
               ),
-              icon: <IoColorPalette className='text-primary h-6 w-6' />,
+              icon: <IoColorPalette className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Skład DTP z dbałością o detale',
@@ -266,7 +268,7 @@ export default function OfferDesignPage() {
                   czytelności, marginesów bezpieczeństwa oraz logiki łamania treści.
                 </>
               ),
-              icon: <RiBrushLine className='text-primary h-6 w-6' />,
+              icon: <RiBrushLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Dobór i obróbkę zdjęć',
@@ -276,7 +278,7 @@ export default function OfferDesignPage() {
                   przygotowujemy w zgodnych profilach barwnych do druku i na stronę internetową.
                 </>
               ),
-              icon: <RiImageLine className='text-primary h-6 w-6' />,
+              icon: <RiImageLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Dostępność i czytelność',
@@ -286,7 +288,9 @@ export default function OfferDesignPage() {
                   fontów i hierarchia informacji wspierają odbiorcę w szybkim podjęciu decyzji.
                 </>
               ),
-              icon: <IoAccessibilityOutline className='text-primary h-6 w-6' />,
+              icon: (
+                <IoAccessibilityOutline className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
             {
               title: 'Gwarancję i wsparcie po wdrożeniu',
@@ -296,7 +300,7 @@ export default function OfferDesignPage() {
                   techniczne wykonujemy w ramach gwarancji, a na życzenie wprowadzamy płatne zmiany.
                 </>
               ),
-              icon: <RiLifebuoyLine className='text-primary h-6 w-6' />,
+              icon: <RiLifebuoyLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Zero ukrytych kosztów',
@@ -306,7 +310,9 @@ export default function OfferDesignPage() {
                   kosztach dodatkowych, zanim podejmiemy kolejne kroki.
                 </>
               ),
-              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
+              icon: (
+                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
           ]}
         />
@@ -324,7 +330,7 @@ export default function OfferDesignPage() {
           grid='two'
           items={[
             {
-              icon: <RiIdCardLine className='h-8 w-8' />,
+              icon: <RiIdCardLine className={largeIconSizeClasses} />,
               title: 'Projekt wizytówki',
               description: (
                 <div className='flex h-full flex-col'>
@@ -342,7 +348,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiFileList2Line className='h-8 w-8' />,
+              icon: <RiFileList2Line className={largeIconSizeClasses} />,
               title: 'Projekt ulotki',
               description: (
                 <div className='flex h-full flex-col'>
@@ -360,7 +366,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiFolderOpenLine className='h-8 w-8' />,
+              icon: <RiFolderOpenLine className={largeIconSizeClasses} />,
               title: 'Teczka ofertowa',
               description: (
                 <div className='flex h-full flex-col'>
@@ -378,7 +384,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiFileTextLine className='h-8 w-8' />,
+              icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Papier firmowy',
               description: (
                 <div className='flex h-full flex-col'>
@@ -395,7 +401,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiTShirt2Line className='h-8 w-8' />,
+              icon: <RiTShirt2Line className={largeIconSizeClasses} />,
               title: 'Odzież firmowa',
               description: (
                 <div className='flex h-full flex-col'>
@@ -413,7 +419,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiQuillPenLine className='h-8 w-8' />,
+              icon: <RiQuillPenLine className={largeIconSizeClasses} />,
               title: 'Projekt logo',
               description: (
                 <div className='flex h-full flex-col'>
@@ -431,7 +437,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiBookletLine className='h-8 w-8' />,
+              icon: <RiBookletLine className={largeIconSizeClasses} />,
               title: 'Projekt katalogu',
               description: (
                 <div className='flex h-full flex-col'>
@@ -449,7 +455,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiPantoneLine className='h-8 w-8' />,
+              icon: <RiPantoneLine className={largeIconSizeClasses} />,
               title: 'Identyfikacja wizualna',
               description: (
                 <div className='flex h-full flex-col'>
@@ -470,7 +476,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiLayoutLine className='h-8 w-8' />,
+              icon: <RiLayoutLine className={largeIconSizeClasses} />,
               title: 'Projekt graficzny strony',
               description: (
                 <div className='flex h-full flex-col'>
@@ -488,7 +494,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiLayoutLine className='h-8 w-8' />,
+              icon: <RiLayoutLine className={largeIconSizeClasses} />,
               title: 'Szablony postów do mediów społecznościowych',
               description: (
                 <div className='flex h-full flex-col'>
@@ -510,7 +516,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiCoupon2Line className='h-8 w-8' />,
+              icon: <RiCoupon2Line className={largeIconSizeClasses} />,
               title: 'Kupony rabatowe i vouchery',
               description: (
                 <div className='flex h-full flex-col'>
@@ -531,7 +537,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiPriceTag3Line className='h-8 w-8' />,
+              icon: <RiPriceTag3Line className={largeIconSizeClasses} />,
               title: 'Projekt cennika',
               description: (
                 <div className='flex h-full flex-col'>
@@ -549,7 +555,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiCoupon2Line className='h-8 w-8' />,
+              icon: <RiCoupon2Line className={largeIconSizeClasses} />,
               title: 'Karty lojalnościowe',
               description: (
                 <div className='flex h-full flex-col'>
@@ -570,7 +576,7 @@ export default function OfferDesignPage() {
               ),
             },
             {
-              icon: <RiRestaurant2Line className='h-8 w-8' />,
+              icon: <RiRestaurant2Line className={largeIconSizeClasses} />,
               title: 'Projekt menu restauracji',
               description: (
                 <div className='flex h-full flex-col'>
@@ -606,7 +612,7 @@ export default function OfferDesignPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne'
           title='Najczęstsze pytania dotyczące projektów graficznych'

@@ -2,12 +2,11 @@
 
 import { useState, type FormEvent } from 'react';
 import Button from '@/components/atoms/buttons/Button';
-import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolInfo from '@/components/atoms/ToolInfo';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import Badge from '@/components/atoms/Badge';
-import ToolUploadContent from '@/components/organisms/tools/ToolUploadContent';
-import ToolFileRow from '@/components/organisms/tools/ToolFileRow';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
+import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import type { ToolStatus } from '@/types/tools/common';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import { downloadFromUrl } from '@/utils/download';
@@ -25,6 +24,9 @@ import { ui } from '@/lib/i18n/tools/favicon';
 import InputColor from '@/components/atoms/form/InputColor';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import FileDropzone from '@/components/molecules/FileDropzone';
+import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/utils';
+import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/ui-classes';
 
 function createWebmanifest(
   outputs: FaviconOutputFile[],
@@ -231,7 +233,7 @@ export default function FaviconGenerator() {
   return (
     <>
       <div className='grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-        <ToolSection className='space-y-4'>
+        <Card padding='md'>
           <form onSubmit={handleGenerate} className='space-y-6'>
             <div>
               <h2 className='h6 mb-2'>{t.addBaseImageLabel}</h2>
@@ -267,7 +269,12 @@ export default function FaviconGenerator() {
                       <label
                         key={size}
                         htmlFor={`size-${size}`}
-                        className={`inline-flex cursor-pointer items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${checked ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                        className={cn(
+                          'inline-flex cursor-pointer items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium',
+                          checked
+                            ? 'bg-primary border-black text-white'
+                            : 'border-black/10 bg-white hover:bg-neutral-100',
+                        )}
                       >
                         <InputCheckboxWithLabel
                           id={`size-${size}`}
@@ -382,10 +389,10 @@ export default function FaviconGenerator() {
               )}
             </div>
           </form>
-        </ToolSection>
+        </Card>
 
-        <ToolSection aria-label={t.previewAndFilesLabel} className='space-y-4'>
-          <div className='flex items-center justify-between gap-2'>
+        <Card padding='md' aria-label={t.previewAndFilesLabel}>
+          <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <h2 className='h6'>{t.previewAndFiles}</h2>
             {anyOutputs && (
               <p className='tool-meta'>
@@ -428,7 +435,12 @@ export default function FaviconGenerator() {
                 <p className='tool-value mb-2'>{t.previewBaseImage}</p>
                 <div className='flex items-center gap-3'>
                   <div className='flex items-center gap-2'>
-                    <div className='flex h-10 w-10 items-center justify-center overflow-hidden rounded border border-neutral-300 bg-white'>
+                    <div
+                      className={cn(
+                        'h-10 w-10 overflow-hidden rounded border border-neutral-300 bg-white',
+                        flexCenterClasses,
+                      )}
+                    >
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && (
                         <img
@@ -442,7 +454,12 @@ export default function FaviconGenerator() {
                   </div>
 
                   <div className='hidden items-center gap-2 md:flex'>
-                    <div className='flex h-12 w-12 items-center justify-center overflow-hidden rounded border border-neutral-300 bg-white'>
+                    <div
+                      className={cn(
+                        'h-12 w-12 overflow-hidden rounded border border-neutral-300 bg-white',
+                        flexCenterClasses,
+                      )}
+                    >
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && (
                         <img
@@ -500,7 +517,7 @@ export default function FaviconGenerator() {
               ))}
             </div>
           )}
-        </ToolSection>
+        </Card>
       </div>
     </>
   );

@@ -1,8 +1,6 @@
 import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
 import BreadcrumbsSkeleton from '../../organisms/skeletons/BreadcrumbsSkeleton';
-import ToolPanelSkeleton, {
-  type ToolPanelVariant,
-} from '../../organisms/skeletons/ToolPanelSkeleton';
+import ToolPanelSkeleton, { type ToolPanelVariant } from './ToolPanelSkeleton';
 import ContentSkeleton from '../../organisms/skeletons/ContentSkeleton';
 
 interface ToolPageSkeletonProps {

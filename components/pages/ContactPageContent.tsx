@@ -10,6 +10,7 @@ import { RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
 import type { Locale } from '@/types/locale';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { getContactPageData } from '@/lib/i18n/pages/contact';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
 
 export default function ContactPageContent({ locale }: { locale: Locale }) {
   const data = getContactPageData(locale);
@@ -51,7 +52,7 @@ export default function ContactPageContent({ locale }: { locale: Locale }) {
           items={[
             {
               title: data.details.emailLabel,
-              icon: <RiMailLine className='h-6 w-6' />,
+              icon: <RiMailLine className={normalIconSizeClasses} />,
               description: (
                 <p>
                   <a href={`mailto:${email}`}>{email}</a>
@@ -60,7 +61,7 @@ export default function ContactPageContent({ locale }: { locale: Locale }) {
             },
             {
               title: data.details.hoursLabel,
-              icon: <RiMapPinTimeLine className='h-6 w-6' />,
+              icon: <RiMapPinTimeLine className={normalIconSizeClasses} />,
               description: <p>{data.details.hoursValue}</p>,
             },
           ]}

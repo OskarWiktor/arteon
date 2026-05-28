@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import type { ReactNode } from 'react';
 
 interface ToolInfoProps {
@@ -5,6 +6,6 @@ interface ToolInfoProps {
   className?: string;
 }
 
-export default function ToolInfo({ children, className = '' }: ToolInfoProps) {
-  return <div className={`tool-info-box ${className}`}>{children}</div>;
+export default function ToolInfo({ children, className }: ToolInfoProps) {
+  return <div className={cn('tool-info-box', className)}>{children}</div>;
 }

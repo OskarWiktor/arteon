@@ -19,7 +19,13 @@ import {
   type UniversalFormat,
 } from '@/lib/tools/conversionRoutes';
 import { cn } from '@/lib/utils';
-import { focusRingClasses } from '@/lib/ui-classes';
+import {
+  flexCenterBetweenClasses,
+  flexCenterClasses,
+  focusRingClasses,
+  normalIconSizeClasses,
+  smallIconSizeClasses,
+} from '@/lib/ui-classes';
 
 type PickerSide = 'source' | 'target';
 
@@ -240,7 +246,7 @@ export default function FormatPickerModal({
         type='button'
         onClick={handleToggle}
         className={cn(
-          'e inline-flex items-center gap-1.5 rounded border border-neutral-300 bg-white px-3 py-2 text-xs font-medium transition-colors hover:border-neutral-400',
+          'inline-flex items-center gap-1.5 rounded border border-neutral-300 bg-white px-3 py-2 text-xs font-medium transition-colors hover:border-neutral-400',
           focusRingClasses,
         )}
         aria-expanded={open}
@@ -249,7 +255,7 @@ export default function FormatPickerModal({
         {unitTriggerLabel ??
           (currentFormat ? FORMAT_DISPLAY_LABELS[currentFormat as UniversalFormat] : '')}
         <RiArrowDownSLine
-          className={`h-3.5 w-3.5 transition-transform ${open ? 'rotate-180' : ''}`}
+          className={cn('transition-transform', smallIconSizeClasses, { 'rotate-180': open })}
         />
       </button>
 
@@ -268,7 +274,12 @@ export default function FormatPickerModal({
             aria-modal='true'
           >
             {/* Header (mobile) */}
-            <div className='flex items-center justify-between border-b border-neutral-100 px-4 py-3 md:hidden'>
+            <div
+              className={cn(
+                'border-b border-neutral-100 px-4 py-3 md:hidden',
+                flexCenterBetweenClasses,
+              )}
+            >
               <span className='text-sm font-semibold'>
                 {PICKER_HEADER[side][locale] ?? PICKER_HEADER[side].en}
               </span>
@@ -277,7 +288,7 @@ export default function FormatPickerModal({
                 onClick={() => setOpen(false)}
                 className='rounded-md p-1 hover:bg-neutral-100'
               >
-                <RiCloseLine className='h-5 w-5' />
+                <RiCloseLine className={normalIconSizeClasses} />
               </button>
             </div>
 
@@ -289,7 +300,13 @@ export default function FormatPickerModal({
                     key={cat.key}
                     type='button'
                     onClick={() => setActiveCategory(cat.key)}
-                    className={`rounded-md px-3 py-2.5 text-left text-xs font-medium transition-colors ${activeCategory === cat.key ? 'bg-primary/10 text-primary' : 'text-mid hover:bg-neutral-100'}`}
+                    className={cn(
+                      'rounded-md px-3 py-2.5 text-left text-xs font-medium transition-colors',
+                      {
+                        'bg-primary/10 text-primary': activeCategory === cat.key,
+                        'text-mid hover:bg-neutral-100': activeCategory !== cat.key,
+                      },
+                    )}
                   >
                     {getCategoryLabel(cat.key, locale)}
                   </button>
@@ -305,7 +322,10 @@ export default function FormatPickerModal({
                         return (
                           <span
                             key={item.id}
-                            className='bg-primary flex items-center justify-center rounded-md px-2 py-2.5 text-center text-xs font-semibold text-white'
+                            className={cn(
+                              'bg-primary rounded-md px-2 py-2.5 text-center text-xs font-semibold text-white',
+                              flexCenterClasses,
+                            )}
                             aria-current='true'
                           >
                             {item.label}
@@ -316,7 +336,10 @@ export default function FormatPickerModal({
                         return (
                           <span
                             key={item.id}
-                            className='flex cursor-not-allowed items-center justify-center rounded-md border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300'
+                            className={cn(
+                              'cursor-not-allowed rounded-md border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300',
+                              flexCenterClasses,
+                            )}
                             aria-disabled='true'
                           >
                             {item.label}
@@ -329,7 +352,10 @@ export default function FormatPickerModal({
                           href={item.href}
                           scroll={false}
                           onClick={e => handleLinkClick(e, item.href)}
-                          className='border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors'
+                          className={cn(
+                            'border-primary/20 hover:bg-primary/5 hover:border-primary/40 rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors',
+                            flexCenterClasses,
+                          )}
                           prefetch={false}
                         >
                           {item.label}
@@ -360,7 +386,10 @@ export default function FormatPickerModal({
                         return (
                           <span
                             key={fmt}
-                            className='bg-primary flex items-center justify-center rounded-md px-2 py-2.5 text-center text-xs font-semibold text-white'
+                            className={cn(
+                              'bg-primary rounded-md px-2 py-2.5 text-center text-xs font-semibold text-white',
+                              flexCenterClasses,
+                            )}
                             aria-current='true'
                           >
                             {FORMAT_DISPLAY_LABELS[fmt]}
@@ -372,7 +401,10 @@ export default function FormatPickerModal({
                         return (
                           <span
                             key={fmt}
-                            className='flex cursor-not-allowed items-center justify-center rounded-md border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300'
+                            className={cn(
+                              'cursor-not-allowed rounded-md border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300',
+                              flexCenterClasses,
+                            )}
                             aria-disabled='true'
                           >
                             {FORMAT_DISPLAY_LABELS[fmt]}
@@ -386,7 +418,10 @@ export default function FormatPickerModal({
                           href={href!}
                           scroll={false}
                           onClick={e => handleLinkClick(e, href)}
-                          className='border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors'
+                          className={cn(
+                            'border-primary/20 hover:bg-primary/5 hover:border-primary/40 rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors',
+                            flexCenterClasses,
+                          )}
                           prefetch={false}
                         >
                           {FORMAT_DISPLAY_LABELS[fmt]}

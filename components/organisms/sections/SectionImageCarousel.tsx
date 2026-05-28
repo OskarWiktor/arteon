@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '../../atoms/Wrapper';
 import SectionHeader from '@/components/molecules/SectionHeader';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 interface CarouselSlide {
   imageSrc: string;
@@ -13,14 +15,21 @@ interface CarouselSlide {
   description?: string;
 }
 
+type SectionImageCarouselVariant = 'default' | 'fullWidth';
+
 interface SectionImageCarouselProps {
   title?: string;
   slides: CarouselSlide[];
   overlay?: boolean;
-  variant?: 'default' | 'fullWidth';
+  variant?: SectionImageCarouselVariant;
   autoPlay?: boolean;
   autoPlayInterval?: number;
 }
+
+const SectionImageCarouselVariantClasses: Record<SectionImageCarouselVariant, string> = {
+  default: 'aspect-video',
+  fullWidth: 'aspect-[21/9]',
+};
 
 export default function SectionImageCarousel({
   title,
@@ -46,21 +55,25 @@ export default function SectionImageCarousel({
     return () => clearInterval(interval);
   }, [autoPlay, autoPlayInterval, goToNext, slides.length]);
 
-  const aspectClass = variant === 'fullWidth' ? 'aspect-[21/9]' : 'aspect-video';
-
   return (
     <section data-section='image-carousel' aria-labelledby={title ? 'carousel-title' : undefined}>
       <Wrapper>
         {title && <SectionHeader title={title} />}
 
         <div
-          className={`relative mx-auto overflow-hidden rounded-lg ${variant === 'fullWidth' ? 'max-w-full' : 'max-w-4xl'}`}
+          className={cn('relative mx-auto overflow-hidden rounded-lg', {
+            'max-w-full': variant === 'fullWidth',
+            'max-w-4xl': variant === 'default',
+          })}
         >
-          <div className={`relative ${aspectClass}`}>
+          <div className={cn('relative', SectionImageCarouselVariantClasses[variant])}>
             {slides.map((slide, index) => (
               <div
                 key={index}
-                className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
+                className={cn('absolute inset-0 transition-opacity duration-500', {
+                  'opacity-100': index === currentSlide,
+                  'opacity-0': index !== currentSlide,
+                })}
               >
                 <Image
                   src={slide.imageSrc}
@@ -90,19 +103,25 @@ export default function SectionImageCarousel({
               <button
                 type='button'
                 onClick={goToPrev}
-                className='absolute top-1/2 left-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg bg-white/90 shadow-lg transition hover:bg-white'
+                className={cn(
+                  'absolute top-1/2 left-4 h-10 w-10 -translate-y-1/2 rounded-lg bg-white/90 shadow-lg transition hover:bg-white',
+                  flexCenterClasses,
+                )}
                 aria-label='Poprzedni slajd'
               >
-                <RiArrowLeftLine className='text-primary h-5 w-5' />
+                <RiArrowLeftLine className={cn('text-primary', normalIconSizeClasses)} />
               </button>
 
               <button
                 type='button'
                 onClick={goToNext}
-                className='absolute top-1/2 right-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg bg-white/90 shadow-lg transition hover:bg-white'
+                className={cn(
+                  'absolute top-1/2 right-4 h-10 w-10 -translate-y-1/2 rounded-lg bg-white/90 shadow-lg transition hover:bg-white',
+                  flexCenterClasses,
+                )}
                 aria-label='Następny slajd'
               >
-                <RiArrowRightSLine className='text-primary h-5 w-5' />
+                <RiArrowRightSLine className={cn('text-primary', normalIconSizeClasses)} />
               </button>
 
               <div className='absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2'>
@@ -111,7 +130,10 @@ export default function SectionImageCarousel({
                     key={index}
                     type='button'
                     onClick={() => setCurrentSlide(index)}
-                    className={`h-2 w-8 rounded-lg transition ${index === currentSlide ? 'bg-white' : 'bg-white/30'}`}
+                    className={cn('h-2 w-8 rounded-lg transition', {
+                      'bg-white': index === currentSlide,
+                      'bg-white/30': index !== currentSlide,
+                    })}
                     aria-label={`Przejdź do slajdu ${index + 1}`}
                   />
                 ))}

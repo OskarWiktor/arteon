@@ -2,6 +2,7 @@
 
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
 import ButtonCircle from '../atoms/buttons/ButtonCircle';
+import { largeIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 
 type CarouselNavButtonsProps = {
@@ -30,14 +31,14 @@ export function CarouselNavButtons({
         ariaLabel={prevLabel}
         className={cn('left-2`', carouselNavButtonsClasses)}
       >
-        <RiArrowLeftSLine className='h-8 w-8' aria-hidden='true' />
+        <RiArrowLeftSLine className={largeIconSizeClasses} aria-hidden='true' />
       </ButtonCircle>
       <ButtonCircle
         onClick={onNext}
         ariaLabel={nextLabel}
         className={cn('right-2', carouselNavButtonsClasses)}
       >
-        <RiArrowRightSLine className='h-8 w-8' aria-hidden='true' />
+        <RiArrowRightSLine className={largeIconSizeClasses} aria-hidden='true' />
       </ButtonCircle>
     </>
   );

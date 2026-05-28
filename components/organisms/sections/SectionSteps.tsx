@@ -6,6 +6,8 @@ import { RiArrowDownSLine } from 'react-icons/ri';
 import SectionHeader from '../../molecules/SectionHeader';
 import Wrapper from '../../atoms/Wrapper';
 import ButtonGroup from '../../molecules/ButtonGroup';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 interface SectionStepItem {
   icon?: ReactNode;
@@ -106,7 +108,7 @@ export default function SectionSteps({
 
   return (
     <section
-      className={`relative pb-2 ${hasBg ? 'bg-cover bg-center' : ''} ${bgPadY}`}
+      className={cn('relative pb-2', hasBg ? 'bg-cover bg-center' : '', bgPadY)}
       style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
       data-section='steps'
       aria-labelledby={title ? titleId : undefined}
@@ -114,13 +116,13 @@ export default function SectionSteps({
       {hasBg && overlay !== 'none' && (
         <div
           aria-hidden='true'
-          className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`}
+          className={cn('pointer-events-none absolute inset-0 z-0', overlayClass)}
         />
       )}
 
       <Tag className='relative z-10'>
         <SectionHeader
-          SubtitleClassName={`${hasBg ? 'text-white' : 'text-light'}`}
+          SubtitleClassName={cn(hasBg ? 'text-white' : 'text-light')}
           subtitle={subtitle}
           titleClassName={toneTextClass}
           titleId={titleId}
@@ -153,7 +155,7 @@ export default function SectionSteps({
 
         {disclaimer && (
           <div className='mt-4 md:mt-5 lg:mt-6'>
-            <p className={`${hasBg ? 'text-white' : 'text-light'}`}>{disclaimer}</p>
+            <p className={cn(hasBg ? 'text-white' : 'text-light')}>{disclaimer}</p>
           </div>
         )}
       </Tag>
@@ -190,7 +192,7 @@ function ExpandableStepsList({
 
   return (
     <ol
-      className={`grid grid-cols-1 gap-4 md:auto-rows-fr ${gridColsSm} ${gridColsMd} ${gridColsLg}`}
+      className={cn('grid grid-cols-1 gap-4 md:auto-rows-fr', gridColsSm, gridColsMd, gridColsLg)}
     >
       {items.map((item, index) => {
         const {
@@ -229,7 +231,13 @@ function ExpandableStepsList({
         return (
           <li key={index} className='flex flex-col items-stretch'>
             <article
-              className={`flex h-full w-full flex-col rounded-lg p-4 transition md:p-6 ${variant === 'contact' ? 'text-center' : ''} ${highlighted ? 'bg-primary text-white shadow-lg' : 'border border-neutral-200 bg-white shadow-sm hover:-translate-y-0.5 hover:shadow-md'}`}
+              className={cn(
+                'flex h-full w-full flex-col rounded-lg p-4 transition md:p-6',
+                variant === 'contact' ? 'text-center' : '',
+                highlighted
+                  ? 'bg-primary text-white shadow-lg'
+                  : 'border border-neutral-200 bg-white shadow-sm hover:-translate-y-0.5 hover:shadow-md',
+              )}
             >
               {topImageSrc && (
                 <div className='mb-4 md:mb-6'>
@@ -248,10 +256,17 @@ function ExpandableStepsList({
 
               {!useInline && hasVisual && (
                 <div
-                  className={`mb-4 flex ${variant === 'contact' ? 'justify-center' : 'justify-start'}`}
+                  className={cn(
+                    'mb-4 flex',
+                    variant === 'contact' ? 'justify-center' : 'justify-start',
+                  )}
                 >
                   <div
-                    className={`flex h-12 w-12 items-center justify-center rounded-lg ${highlighted ? 'bg-white/20 text-white' : 'bg-primary-light text-primary'}`}
+                    className={cn(
+                      'h-12 w-12 rounded-lg',
+                      flexCenterClasses,
+                      highlighted ? 'bg-white/20 text-white' : 'bg-primary-light text-primary',
+                    )}
                   >
                     {visualNode}
                   </div>
@@ -260,10 +275,13 @@ function ExpandableStepsList({
 
               {useInline ? (
                 <h3
-                  className={`h5 mb-1 flex items-center gap-2 ${highlighted ? 'text-white' : 'text-dark'}`}
+                  className={cn(
+                    'h5 mb-1 flex items-center gap-2',
+                    highlighted ? 'text-white' : 'text-dark',
+                  )}
                 >
                   {hasVisual && (
-                    <span className={`shrink-0 ${highlighted ? 'text-white' : 'text-primary'}`}>
+                    <span className={cn('shrink-0', highlighted ? 'text-white' : 'text-primary')}>
                       {visualNode}
                     </span>
                   )}
@@ -273,35 +291,48 @@ function ExpandableStepsList({
                 <button
                   type='button'
                   onClick={() => toggleExpand(index)}
-                  className={`flex w-full items-center justify-between text-left ${highlighted ? 'text-white' : 'text-dark'}`}
+                  className={cn(
+                    'flex w-full items-center justify-between text-left',
+                    highlighted ? 'text-white' : 'text-dark',
+                  )}
                   aria-expanded={isExpanded}
                 >
                   <h3 className='h5 mb-1'>{itemTitle}</h3>
                   <RiArrowDownSLine
-                    className={`h-5 w-5 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
+                    className={cn(
+                      'transition-transform',
+                      normalIconSizeClasses,
+                      isExpanded ? 'rotate-180' : '',
+                    )}
                   />
                 </button>
               ) : (
-                <h3 className={`h5 mb-1 ${highlighted ? 'text-white' : 'text-dark'}`}>
+                <h3 className={cn('h5 mb-1', highlighted ? 'text-white' : 'text-dark')}>
                   {itemTitle}
                 </h3>
               )}
 
               {itemSubtitle && (
-                <span className={`text-base ${highlighted ? 'text-white/80' : 'text-light'}`}>
+                <span className={cn('text-base', highlighted ? 'text-white/80' : 'text-light')}>
                   {itemSubtitle}
                 </span>
               )}
 
               <div
-                className={`z-10 mt-2 flex flex-1 flex-col ${highlighted ? 'text-white/80' : ''}`}
+                className={cn(
+                  'z-10 mt-2 flex flex-1 flex-col',
+                  highlighted ? 'text-white/80' : 'text-light',
+                )}
               >
                 {itemDesc}
               </div>
 
               {hasExpandable && isExpanded && (
                 <div
-                  className={`mt-4 border-t pt-4 ${highlighted ? 'border-white/20' : 'border-neutral-200'}`}
+                  className={cn(
+                    'mt-4 border-t pt-4',
+                    highlighted ? 'border-white/20' : 'border-neutral-200',
+                  )}
                 >
                   {expandableContent}
                 </div>

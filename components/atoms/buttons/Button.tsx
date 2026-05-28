@@ -2,7 +2,9 @@ import {
   buttonAccentVariantClasses,
   buttonNormalVariantClasses,
   disabledInteractiveClasses,
+  flexCenterClasses,
   focusRingClasses,
+  normalIconSizeClasses,
 } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 import { ButtonSize, ButtonVariant } from '@/types/ui';
@@ -37,10 +39,10 @@ const buttonClasses =
 function ButtonContent({ children, arrow }: { children: ReactNode; arrow?: boolean }) {
   return (
     <>
-      <span className='flex items-center justify-center gap-2'>{children}</span>
+      <span className={cn('gap-2', flexCenterClasses)}>{children}</span>
 
       {arrow && (
-        <span className='ml-1 flex h-5 w-5 items-center justify-center' aria-hidden='true'>
+        <span className={cn('ml-1', flexCenterClasses, normalIconSizeClasses)} aria-hidden='true'>
           <RiArrowRightSLine className='text-current' />
         </span>
       )}

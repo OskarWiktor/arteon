@@ -2,6 +2,8 @@
 
 import { useId, useState, type ReactNode } from 'react';
 import SectionHeader from '../../molecules/SectionHeader';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 interface Tab {
   title: string;
@@ -34,11 +36,14 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
               aria-controls={`tabpanel-${autoId}-${index}`}
               id={`tab-${autoId}-${index}`}
               onClick={() => setActiveTab(index)}
-              className={`flex flex-1 items-center justify-center gap-2 rounded-md px-4 py-3 text-sm font-medium transition ${
-                activeTab === index
-                  ? 'text-primary bg-white shadow-sm'
-                  : 'text-primary-mid hover:text-primary'
-              }`}
+              className={cn(
+                'flex-1 gap-2 rounded-md px-4 py-3 text-sm font-medium transition',
+                flexCenterClasses,
+                {
+                  'text-primary bg-white shadow-sm': activeTab === index,
+                  'text-primary-mid hover:text-primary': activeTab !== index,
+                },
+              )}
             >
               {tab.icon}
               <span className='hidden sm:inline'>{tab.title}</span>

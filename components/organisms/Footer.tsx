@@ -170,7 +170,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm'>
                 {toolsCol1.map(({ href, label }) => (
                   <li key={href}>
-                    <InlineLink href={href} className='text-left text-sm'>
+                    <InlineLink href={href} className='text-left'>
                       {label}
                     </InlineLink>
                   </li>
@@ -183,7 +183,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
                 {toolsCol2.map(({ href, label }) => (
                   <li key={href}>
-                    <InlineLink href={href} className='text-left text-sm'>
+                    <InlineLink href={href} className='text-left'>
                       {label}
                     </InlineLink>
                   </li>
@@ -196,7 +196,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
                 {toolsCol3.map(({ href, label }) => (
                   <li key={href}>
-                    <InlineLink href={href} className='text-left text-sm'>
+                    <InlineLink href={href} className='text-left'>
                       {label}
                     </InlineLink>
                   </li>
@@ -209,7 +209,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
                 {toolsCol4.map(({ href, label }) => (
                   <li key={href}>
-                    <InlineLink href={href} className='text-left text-sm'>
+                    <InlineLink href={href} className='text-left'>
                       {label}
                     </InlineLink>
                   </li>
@@ -225,9 +225,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </small>
               {localeLegalLinks.map(link => (
                 <p key={link.key}>
-                  <InlineLink href={link.href} className='text-sm'>
-                    {link.label}
-                  </InlineLink>
+                  <InlineLink href={link.href}>{link.label}</InlineLink>
                 </p>
               ))}
               <ButtonCookieSettings label={ft.cookieSettingsLabel} />
@@ -288,7 +286,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm'>
                 {offerLinksOne.map(({ href, title }) => (
                   <li key={href}>
-                    <InlineLink className='text-left text-sm' href={href}>
+                    <InlineLink className='text-left' href={href}>
                       {title}
                     </InlineLink>
                   </li>
@@ -301,7 +299,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm'>
                 {offerLinksTwo.map(({ href, title }) => (
                   <li key={href}>
-                    <InlineLink className='text-left text-sm' href={href}>
+                    <InlineLink className='text-left' href={href}>
                       {title}
                     </InlineLink>
                   </li>
@@ -317,7 +315,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm'>
                 {gfxLeft.map(({ href, title }) => (
                   <li key={href}>
-                    <InlineLink className='text-left text-sm' href={href}>
+                    <InlineLink className='text-left' href={href}>
                       {title}
                     </InlineLink>
                   </li>
@@ -333,7 +331,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
                 {gfxRight.map(({ href, title }) => (
                   <li key={href}>
-                    <InlineLink className='text-left text-sm' href={href}>
+                    <InlineLink className='text-left' href={href}>
                       {title}
                     </InlineLink>
                   </li>
@@ -346,7 +344,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm'>
                 {navLinksPrimary.map(({ href, label }) => (
                   <li key={href}>
-                    <InlineLink className='text-left text-sm' href={href}>
+                    <InlineLink className='text-left' href={href}>
                       {label}
                     </InlineLink>
                   </li>
@@ -359,7 +357,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm'>
                 {navLinksSecondary.map(({ href, label }) => (
                   <li key={href}>
-                    <InlineLink className='text-left text-sm' href={href}>
+                    <InlineLink className='text-left' href={href}>
                       {label}
                     </InlineLink>
                   </li>
@@ -372,7 +370,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm'>
                 {toolsLeft.map(({ href, label }) => (
                   <li key={href}>
-                    <InlineLink href={href} className='text-left text-sm'>
+                    <InlineLink href={href} className='text-left'>
                       {label}
                     </InlineLink>
                   </li>
@@ -385,7 +383,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
                 {toolsRight.map(({ href, label }) => (
                   <li key={href}>
-                    <InlineLink href={href} className='text-left text-sm'>
+                    <InlineLink href={href} className='text-left'>
                       {label}
                     </InlineLink>
                   </li>
@@ -401,7 +399,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </small>
               {PL_LEGAL_LINKS.map(({ href, label }) => (
                 <p key={href}>
-                  <InlineLink href={href} className='text-light text-sm'>
+                  <InlineLink href={href} className='text-light'>
                     {label}
                   </InlineLink>
                 </p>

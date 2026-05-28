@@ -19,7 +19,7 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
         const catSlug = getPrimaryCategorySlug(a);
         const href = `/edukacja/${catSlug}/${a.slug}`;
         return (
-          <Card key={a.slug} as='article' variant='default'>
+          <Card key={a.slug} as='article' padding='md'>
             <Link href={href} prefetch={false} className='block'>
               {a.cover && (
                 <div className='relative aspect-[16/9] w-full overflow-hidden border-b border-black/10'>

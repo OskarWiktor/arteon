@@ -2,10 +2,9 @@
 
 import { useState } from 'react';
 import { RiFileCopyLine, RiCheckLine, RiDeleteBinLine } from 'react-icons/ri';
-import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
-import ToolHelper from '@/components/organisms/tools/ToolHelper';
-import ToolStatRow from '@/components/organisms/tools/ToolStatRow';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
+import ToolStatRow from '@/components/molecules/tools/ToolStatRow';
 import Button from '@/components/atoms/buttons/Button';
 import {
   analyzeText,
@@ -26,6 +25,9 @@ import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { useLocale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/word-count';
 import Textarea from '@/components/atoms/form/Textarea';
+import Card from '@/components/organisms/Card';
+import { smallIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export default function WordCountTool() {
   const locale = useLocale();
@@ -54,7 +56,7 @@ export default function WordCountTool() {
   return (
     <div className='space-y-4 overflow-hidden'>
       <div className='grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]'>
-        <ToolSection className='space-y-5'>
+        <Card padding='md'>
           <div>
             <h2 className='h6 pb-2'>{t.statistics}</h2>
             <ToolHelper>{metrics.words === 0 ? t.empty : ''}</ToolHelper>
@@ -104,12 +106,12 @@ export default function WordCountTool() {
             >
               {copied ? (
                 <>
-                  <RiCheckLine className='mr-2 h-4 w-4' />
+                  <RiCheckLine className={cn('mr-2', smallIconSizeClasses)} />
                   {t.copied}
                 </>
               ) : (
                 <>
-                  <RiFileCopyLine className='mr-2 h-4 w-4' />
+                  <RiFileCopyLine className={cn('mr-2', smallIconSizeClasses)} />
                   {t.copyText}
                 </>
               )}
@@ -121,13 +123,13 @@ export default function WordCountTool() {
               disabled={metrics.words === 0}
               aria-label={t.clearText}
             >
-              <RiDeleteBinLine className='mr-2 h-4 w-4' />
+              <RiDeleteBinLine className={cn('mr-2', smallIconSizeClasses)} />
               {t.clearText}
             </Button>
           </div>
-        </ToolSection>
+        </Card>
 
-        <ToolSection className='space-y-5'>
+        <Card padding='md'>
           <ToolFieldRow label={t.pasteText}>
             <Textarea
               value={text}
@@ -136,10 +138,10 @@ export default function WordCountTool() {
               placeholder={t.textPlaceholder}
             />
           </ToolFieldRow>
-        </ToolSection>
+        </Card>
       </div>
 
-      <ToolSection padding='sm' className='flex flex-wrap items-center gap-3'>
+      <Card padding='md' className='flex flex-wrap items-center'>
         <span className='tool-value'>{t.toolbarTitle}</span>
         <div className='flex flex-wrap gap-2'>
           {toolbarActions.map(action => (
@@ -154,7 +156,7 @@ export default function WordCountTool() {
             </button>
           ))}
         </div>
-      </ToolSection>
+      </Card>
     </div>
   );
 }

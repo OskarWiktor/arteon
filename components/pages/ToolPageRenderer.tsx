@@ -8,7 +8,7 @@ import HeroBanner from '@/components/organisms/HeroBanner';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import DynamicToolRenderer from '@/components/pages/tools/DynamicToolRenderer';
 import ToolsCarousel from '@/components/organisms/carousels/ToolsCarousel';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import ToolEditorLayout from '@/components/templates/ToolEditorLayout';
 import AdSense from '@/components/molecules/AdSense';
 
@@ -128,7 +128,12 @@ function renderBlock(block: ToolContentBlock, idx: number, pageUrl: string): Rea
 
     case 'faq':
       return (
-        <FaqPanels key={`faq-${idx}`} title={block.title} items={block.items} pageUrl={pageUrl} />
+        <SectionFaqPanels
+          key={`faq-${idx}`}
+          title={block.title}
+          items={block.items}
+          pageUrl={pageUrl}
+        />
       );
 
     case 'sectionTabs':

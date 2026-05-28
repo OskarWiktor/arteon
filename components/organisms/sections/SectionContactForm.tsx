@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { RiMailSendLine, RiTimeLine, RiFileList2Line } from 'react-icons/ri';
 import ContactForm from '../ContactForm';
+import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 type SectionContactFormProps = {
   title: string;
@@ -14,12 +16,15 @@ type SectionContactFormProps = {
 
 const benefits = [
   {
-    icon: <RiMailSendLine className='text-accent h-4 w-4' />,
+    icon: <RiMailSendLine className={cn('text-accent', smallIconSizeClasses)} />,
     label: 'Bezpłatna wycena bez zobowiązań',
   },
-  { icon: <RiTimeLine className='text-accent h-4 w-4' />, label: 'Odpowiedź w ciągu 24 godzin' },
   {
-    icon: <RiFileList2Line className='text-accent h-4 w-4' />,
+    icon: <RiTimeLine className={cn('text-accent', smallIconSizeClasses)} />,
+    label: 'Odpowiedź w ciągu 24 godzin',
+  },
+  {
+    icon: <RiFileList2Line className={cn('text-accent', smallIconSizeClasses)} />,
     label: 'Faktura dopiero po realizacji',
   },
 ];
@@ -77,7 +82,13 @@ export default function SectionContactForm({
           <ul className='space-y-3'>
             {benefits.map((item, i) => (
               <li key={i} className='flex items-center gap-3'>
-                <div className='bg-accent/10 flex h-6 w-6 items-center justify-center rounded-lg'>
+                <div
+                  className={cn(
+                    'bg-accent/10 rounded-lg',
+                    flexCenterClasses,
+                    normalIconSizeClasses,
+                  )}
+                >
                   {item.icon}
                 </div>
                 <span className='text-sm'>{item.label}</span>

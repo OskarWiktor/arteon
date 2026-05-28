@@ -2,6 +2,8 @@ import { useId, type ReactNode } from 'react';
 import ButtonGroup from '../../molecules/ButtonGroup';
 import SectionHeader from '../../molecules/SectionHeader';
 import Card from '../Card';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 interface TimelineItem {
   icon: ReactNode;
@@ -56,15 +58,28 @@ export default function SectionTimeline({
           {items.map((step, index) => (
             <li
               key={index}
-              className={`relative flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
+              className={cn('relative flex flex-col md:flex-row', {
+                'md:flex-row': index % 2 === 0,
+                'md:flex-row-reverse': index % 2 !== 0,
+              })}
             >
               <div className='md:bg-primary hidden md:absolute md:left-1/2 md:flex md:h-12 md:w-12 md:-translate-x-1/2 md:items-center md:justify-center md:rounded-lg md:text-white md:shadow-lg'>
                 {step.icon}
               </div>
 
-              <div className={`flex-1 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
+              <div
+                className={cn('flex-1', {
+                  'md:pr-16 md:text-right': index % 2 === 0,
+                  'md:pl-16': index % 2 !== 0,
+                })}
+              >
                 <Card padding='lg' className='ml-16 md:ml-0'>
-                  <div className='bg-primary absolute top-6 left-0 flex h-12 w-12 items-center justify-center rounded-lg text-white shadow-lg md:hidden'>
+                  <div
+                    className={cn(
+                      'bg-primary absolute top-6 left-0 h-12 w-12 rounded-lg text-white shadow-lg md:hidden',
+                      flexCenterClasses,
+                    )}
+                  >
                     {step.icon}
                   </div>
                   <h3 className='h5 mb-2'>{step.title}</h3>

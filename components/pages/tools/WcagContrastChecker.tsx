@@ -4,9 +4,8 @@ import { useEffect, useState, type FormEvent } from 'react';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonCopy from '@/components/atoms/buttons/ButtonCopy';
 import { RiContrast2Line } from 'react-icons/ri';
-import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
-import ToolHelper from '@/components/organisms/tools/ToolHelper';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolInfo from '@/components/atoms/ToolInfo';
 import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
 import Badge from '@/components/atoms/Badge';
@@ -15,6 +14,13 @@ import { hslToRgb, rgbToHex, rgbToHsl } from '@/lib/tools/color/convert';
 import { useLocale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/wcag-contrast';
 import Input from '@/components/atoms/form/Input';
+import Card from '@/components/organisms/Card';
+import {
+  flexCenterBetweenClasses,
+  flexCenterClasses,
+  largeIconSizeClasses,
+} from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 const DEFAULT_FOREGROUND = rgbToHex({ r: 0, g: 0, b: 0 });
 const DEFAULT_BACKGROUND = rgbToHex({ r: 255, g: 255, b: 255 });
@@ -225,7 +231,7 @@ export default function WcagContrastChecker() {
   return (
     <>
       <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-        <ToolSection className='space-y-4'>
+        <Card>
           <form onSubmit={handleSubmit} className='space-y-6'>
             <ToolFieldRow label={<span className='tool-value'>{t.sampleTextLabel}</span>}>
               <Input
@@ -355,7 +361,7 @@ export default function WcagContrastChecker() {
                 <div className='flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between'>
                   <div className='flex min-w-0 items-center gap-3'>
                     <div
-                      className='tool-color-swatch h-8 w-8'
+                      className={cn('rounded-md border border-black/10', largeIconSizeClasses)}
                       style={{ backgroundColor: matchedForeground }}
                       aria-hidden='true'
                     />
@@ -376,9 +382,9 @@ export default function WcagContrastChecker() {
               </ToolInfo>
             )}
           </form>
-        </ToolSection>
+        </Card>
 
-        <ToolSection aria-label={t.resultsLabel} className='space-y-4'>
+        <Card aria-label={t.resultsLabel}>
           <div className='flex items-start justify-between gap-3'>
             <div>
               <div className='space-y-1'>
@@ -402,7 +408,7 @@ export default function WcagContrastChecker() {
           </div>
 
           <ToolInfo className='space-y-2'>
-            <div className='flex items-center justify-between gap-2'>
+            <div className={cn('gap-2', flexCenterBetweenClasses)}>
               <p className='tool-value uppercase'>{t.normalText}</p>
               <div className='flex flex-wrap items-center gap-1.5'>
                 <ResultBadge
@@ -429,7 +435,7 @@ export default function WcagContrastChecker() {
           </ToolInfo>
 
           <ToolInfo className='space-y-2'>
-            <div className='items_center flex justify-between gap-2'>
+            <div className={cn('gap-2', flexCenterBetweenClasses)}>
               <p className='tool-value uppercase'>{t.largeText}</p>
               <div className='flex flex-wrap items-center gap-1.5'>
                 <ResultBadge ok={!!result.ratio && result.largeText.AA} label={t.badges.largeAA} />
@@ -453,7 +459,7 @@ export default function WcagContrastChecker() {
           </ToolInfo>
 
           <ToolInfo className='space-y-2'>
-            <div className='flex items-center justify-between gap-2'>
+            <div className={cn('gap-2', flexCenterBetweenClasses)}>
               <p className='tool-value uppercase'>{t.icon}</p>
               <div className='flex flex-wrap items-center gap-1.5'>
                 <ResultBadge ok={!!result.ratio && result.uiGraphics.AA} label={t.badges.iconAA} />
@@ -461,7 +467,7 @@ export default function WcagContrastChecker() {
             </div>
             <div className='flex items-center gap-3'>
               <div
-                className='flex h-10 w-10 items-center justify-center rounded-md border border-neutral-200'
+                className={cn('h-10 w-10 rounded-md border border-neutral-200', flexCenterClasses)}
                 style={{
                   color: foreground,
                   backgroundColor: background,
@@ -472,7 +478,7 @@ export default function WcagContrastChecker() {
               </div>
             </div>
           </ToolInfo>
-        </ToolSection>
+        </Card>
       </div>
     </>
   );

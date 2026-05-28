@@ -7,7 +7,7 @@ import { RiLightbulbFlashLine, RiSearchLine, RiFileList2Line, RiCheckLine } from
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
@@ -20,6 +20,8 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { siteUrl } from '@/utils/absoluteUrl';
+import { cn } from '@/lib/utils';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 export const metadata = {
   title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
@@ -158,7 +160,7 @@ export default function OfferMarketingPage() {
                   wyszukiwarką.
                 </>
               ),
-              icon: <RiSearchLine className='text-primary h-6 w-6' />,
+              icon: <RiSearchLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Szybkość ładowania i wygodę korzystania',
@@ -169,7 +171,7 @@ export default function OfferMarketingPage() {
                   użytkowników.
                 </>
               ),
-              icon: <RiCheckLine className='text-primary h-6 w-6' />,
+              icon: <RiCheckLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Czy treści są dopasowane do tego, czego szukają klienci',
@@ -180,7 +182,7 @@ export default function OfferMarketingPage() {
                   pozycji.
                 </>
               ),
-              icon: <RiLightbulbFlashLine className='text-primary h-6 w-6' />,
+              icon: <RiLightbulbFlashLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Strukturę strony oraz linki wewnętrzne',
@@ -190,7 +192,7 @@ export default function OfferMarketingPage() {
                   łatwo dostępne dla użytkowników i wyszukiwarki.
                 </>
               ),
-              icon: <RiFileList2Line className='text-primary h-6 w-6' />,
+              icon: <RiFileList2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
           ]}
         />
@@ -352,7 +354,7 @@ export default function OfferMarketingPage() {
           description='Po diagnozie zwykle przechodzimy do wdrożeń i stałej pracy nad widocznością.'
           items={[
             {
-              icon: <RiSearchLine className='h-8 w-8' />,
+              icon: <RiSearchLine className={largeIconSizeClasses} />,
               title: 'Optymalizacja SEO (wdrożenia)',
               description: (
                 <div className='flex h-full flex-col'>
@@ -369,7 +371,7 @@ export default function OfferMarketingPage() {
               ),
             },
             {
-              icon: <RiFileList2Line className='h-8 w-8' />,
+              icon: <RiFileList2Line className={largeIconSizeClasses} />,
               title: 'Pozycjonowanie stron (abonament)',
               description: (
                 <div className='flex h-full flex-col'>
@@ -405,7 +407,7 @@ export default function OfferMarketingPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           title='Najczęstsze pytania dotyczące audytu SEO'
           pageUrl='https://www.arteonagency.pl/uslugi/marketing/audyt-seo'

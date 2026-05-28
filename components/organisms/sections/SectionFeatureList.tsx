@@ -1,6 +1,8 @@
 import { RiCheckLine } from 'react-icons/ri';
 import Wrapper from '../../atoms/Wrapper';
 import SectionHeader from '@/components/molecules/SectionHeader';
+import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 interface SectionFeatureListProps {
   title?: string;
@@ -17,8 +19,14 @@ export default function SectionFeatureList({ title, features }: SectionFeatureLi
           <ul className='grid gap-3 md:grid-cols-2'>
             {features.map((feature, index) => (
               <li key={index} className='flex items-center gap-3'>
-                <div className='bg-success-bg flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-lg'>
-                  <RiCheckLine className='text-success-icon h-4 w-4' />
+                <div
+                  className={cn(
+                    'bg-success-bg flex-shrink-0 rounded-lg',
+                    flexCenterClasses,
+                    normalIconSizeClasses,
+                  )}
+                >
+                  <RiCheckLine className={cn('text-success-icon', smallIconSizeClasses)} />
                 </div>
                 <span className='text-sm'>{feature}</span>
               </li>

@@ -1,4 +1,6 @@
+import { cn } from '@/lib/utils';
 import ButtonCopy from '../atoms/buttons/ButtonCopy';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
 
 type CodeBlockProps = {
   code: string;
@@ -25,9 +27,17 @@ export default function CodeBlock({
 
   return (
     <figure
-      className={`group rounded-lg border border-black/10 bg-gradient-to-b from-[color:var(--foreground)] to-[color:var(--neutral-900)] text-[color:var(--text-on-dark)] shadow-sm ${className}`}
+      className={cn(
+        'group rounded-lg border border-black/10 bg-gradient-to-b from-[color:var(--foreground)] to-[color:var(--neutral-900)] text-[color:var(--text-on-dark)] shadow-sm',
+        className,
+      )}
     >
-      <div className='flex items-center justify-between gap-3 rounded-t-xl border-b border-white/10 px-4 py-2'>
+      <div
+        className={cn(
+          'gap-3 rounded-t-xl border-b border-white/10 px-4 py-2',
+          flexCenterBetweenClasses,
+        )}
+      >
         <div className='flex items-center gap-2'>
           {language ? (
             <span className='inline-block rounded bg-white/10 px-2 py-0.5 text-xs text-white/70'>
@@ -46,7 +56,10 @@ export default function CodeBlock({
       </div>
 
       <pre
-        className={`relative overflow-x-auto rounded-b-xl p-4 text-[13px] leading-relaxed ${wrap ? 'break-words whitespace-pre-wrap' : 'whitespace-pre'}`}
+        className={cn('relative overflow-x-auto rounded-b-xl p-4 text-[13px] leading-relaxed', {
+          'break-words whitespace-pre-wrap': wrap,
+          'whitespace-pre': !wrap,
+        })}
         role='region'
         aria-label={filename || 'Fragment kodu'}
       >
@@ -55,7 +68,7 @@ export default function CodeBlock({
             const n = i + 1;
             const isHl = highlightLines.includes(n);
             return (
-              <span key={i} className={`contents ${isHl ? 'bg-white/[0.04]' : ''}`} data-line={n}>
+              <span key={i} className={cn('contents', { 'bg-white/[0.04]': isHl })} data-line={n}>
                 {showLineNumbers ? (
                   <span aria-hidden='true'>
                     <span className='min-w-6 pr-1 text-right text-xs text-white/40 tabular-nums select-none'>
@@ -63,7 +76,7 @@ export default function CodeBlock({
                     </span>
                   </span>
                 ) : null}
-                <span className={`font-mono ${wrap ? '' : 'inline-block min-w-full'}`}>
+                <span className={cn('font-mono', { '': wrap, 'inline-block min-w-full': !wrap })}>
                   {ln || ' '}
                 </span>
               </span>

@@ -1,0 +1,574 @@
+{
+  "toolKey": "pxToCmDpi",
+  "locale": "es",
+  "metadata": {
+    "title": "Calculadora px a cm (DPI) – convierte píxeles a centímetros",
+    "description": "Convierte píxeles a centímetros con DPI ajustable. La herramienta ideal para diseñadores, fotógrafos y creadores que comprueban el tamaño de impresión de archivos de pantalla.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/es/herramientas/convertidor-px-a-cm"
+  },
+  "hero": {
+    "title": "Convierte píxeles a centímetros con cualquier DPI",
+    "description": "Introduce un valor en píxeles, ajusta la resolución DPI y obtén el resultado en centímetros. Comprueba a cuántos centímetros corresponde una cantidad determinada de píxeles, incluidas resoluciones de pantalla populares como 1920 × 1080. El convertidor te ayuda a elegir el tamaño adecuado cuando quieres imprimir un archivo gráfico o adaptarlo a un formato de papel concreto."
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-px-a-cm",
+      "label": "px a cm"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de píxeles a centímetros con DPI ajustable – calculadora px a cm",
+      "alternateName": [
+        "Convertidor px a cm",
+        "Calculadora px a centímetros",
+        "Conversor de píxeles a centímetros",
+        "Píxeles a centímetros",
+        "px a centímetros",
+        "Convertir px a cm",
+        "Calculadora de píxeles a cm",
+        "px a cm 300 dpi",
+        "Convertidor de px a centímetros",
+        "px en línea",
+        "Centímetros desde píxeles",
+        "Calculadora DPI para imprenta",
+        "Conversión px cm",
+        "Cuántos cm tiene 1 px",
+        "Tamaño de píxel a cm"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Conversor de píxeles a centímetros con valor DPI ajustable. Al escribir la cantidad de píxeles verás de inmediato a cuántos centímetros corresponde y qué formato de papel produciría. El convertidor es perfecto para comprobar si un archivo de cámara, una captura de pantalla o un gráfico de internet es lo bastante grande para un tamaño de impresión concreto, y funciona en el navegador sin registro.",
+      "featureList": [
+        "Resolución DPI ajustable",
+        "La conversión funciona en ambos sentidos, así puedes pasar de píxeles a centímetros y de centímetros a píxeles con un clic",
+        "El resultado aparece al instante mientras escribes, sin necesidad de pulsar ningún botón",
+        "Puedes copiar el valor final al portapapeles con un solo clic",
+        "Tabla ampliada de respuestas para valores de 50 a 8.000 píxeles, incluidos anchos de documento como 413, 827 y 1.181 px",
+        "Tabla independiente con resoluciones de pantalla populares (Full HD, 4K, 8K) y tamaños de gráficos para redes sociales (Instagram, Facebook, Twitter)",
+        "Tabla de formatos de papel A0–A7 junto con copias fotográficas y tarjetas de visita en píxeles a 300 DPI",
+        "Sección con guías que explica cómo cambiar de px a cm en Photoshop, Illustrator, Figma, Canva y Procreate",
+        "Todos los cálculos se realizan localmente en el navegador, tus datos no salen del dispositivo y no se almacenan en ningún sitio",
+        "La fórmula exacta es cm = px × 2,54 ÷ DPI y utiliza la longitud fija de la pulgada de 2,54 cm"
+      ]
+    },
+    "howTo": {
+      "name": "¿Cómo convertir píxeles a centímetros?",
+      "description": "Guía breve para usar el convertidor de px a cm con DPI ajustable.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduce el valor en píxeles",
+          "text": "En el campo izquierdo escribe la cantidad de píxeles que quieres convertir a centímetros."
+        },
+        {
+          "name": "Ajusta la resolución DPI",
+          "text": "Elige el valor de DPI. Las pantallas suelen usar 96 DPI y la impresión, 300 DPI."
+        },
+        {
+          "name": "Lee el resultado o invierte la dirección",
+          "text": "El resultado en centímetros aparece de inmediato en el campo de al lado. Puedes copiarlo o pulsar el botón Cambiar orden para convertir centímetros a píxeles."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "¿Para qué convertir píxeles a centímetros?",
+      "html": "<p class=\"text-mid mb-4\">El píxel es una unidad digital que describe un punto en la pantalla de un teléfono, una tableta o un monitor. El centímetro, en cambio, gobierna el mundo físico del papel y la impresión. Para traducir uno al otro debes conocer la resolución DPI, es decir, cuántos píxeles caben en una pulgada de soporte o pantalla.</p><p class=\"text-mid mb-4\">Este tipo de conversión la realizan sobre todo diseñadores que quieren comprobar el tamaño de su proyecto tras la impresión, fotógrafos que evalúan si un archivo de cámara es suficiente para un tamaño concreto de copia y personas que preparan capturas de pantalla o gráficos de internet para imprimir. El convertidor te libera de hacer cálculos a mano y de memorizar la fórmula.</p><p class=\"text-mid\">Más abajo en la página encontrarás una tabla ampliada de respuestas para valores populares de píxeles, una tabla aparte con resoluciones de pantalla como Full HD y 4K, dimensiones listas para formatos de papel y fotografía, y guías cortas para cambiar de píxeles a centímetros en Photoshop, Figma, Canva y otras herramientas de diseño.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Conversor gratuito de píxeles a centímetros – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión px a cm? Fórmula y ejemplo",
+      "html": "<p class=\"text-mid mb-4\">Toda la conversión se reduce a una sola fórmula que se basa en una relación fija entre pulgada y centímetro: una pulgada equivale exactamente a 2,54 cm. Basta con multiplicar la cantidad de píxeles por 2,54 y dividirla entre la resolución DPI elegida.</p><p class=\"text-mid mb-4\">La fórmula completa es la siguiente: <strong>número de centímetros = número de píxeles × 2,54 ÷ DPI</strong>. El convertidor realiza este cálculo al instante, por lo que no tienes que contar ni buscar una calculadora.</p><p class=\"text-mid mb-4\">Ejemplo: quieres comprobar cuántos centímetros son 1.920 píxeles en una pantalla estándar de 96 DPI. Sustituyes los valores en la fórmula y obtienes 1.920 × 2,54 ÷ 96, lo que da exactamente 50,80 cm. Los mismos 1.920 píxeles a 300 DPI utilizados en imprenta son ya solo 16,26 cm, porque caben más píxeles en una pulgada.</p><p class=\"text-mid\">En el sentido contrario funciona de forma análoga: número de píxeles = número de centímetros × DPI ÷ 2,54. Gracias a esto puedes comprobar cuántos píxeles debe tener un gráfico que quieras imprimir en un tamaño concreto, por ejemplo en formato tarjeta de visita o foto 10 × 15 cm.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "¿Cuántos centímetros equivalen distintos valores de píxeles según el DPI?",
+      "description": "La tabla siguiente muestra cómo los mismos valores en píxeles se traducen a centímetros con las cinco resoluciones más utilizadas. Vale la pena recordar algunos valores porque corresponden exactamente a formatos concretos: 413 px a 300 DPI es el lado corto de una foto de pasaporte, 827 px son 7 cm y 945 px son exactamente 8 cm.",
+      "labelHeader": "Píxeles",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
+      "rows": [
+        { "label": "50 px", "values": ["1,76 cm", "1,32 cm", "0,85 cm", "0,42 cm", "0,21 cm"] },
+        { "label": "90 px", "values": ["3,18 cm", "2,38 cm", "1,52 cm", "0,76 cm", "0,38 cm"] },
+        {
+          "label": "100 px",
+          "values": ["3,53 cm", "2,65 cm", "1,69 cm", "0,85 cm", "0,42 cm"],
+          "emphasis": true
+        },
+        { "label": "150 px", "values": ["5,29 cm", "3,97 cm", "2,54 cm", "1,27 cm", "0,64 cm"] },
+        {
+          "label": "200 px",
+          "values": ["7,06 cm", "5,29 cm", "3,39 cm", "1,69 cm", "0,85 cm"],
+          "emphasis": true
+        },
+        { "label": "250 px", "values": ["8,82 cm", "6,61 cm", "4,23 cm", "2,12 cm", "1,06 cm"] },
+        {
+          "label": "300 px",
+          "values": ["10,58 cm", "7,94 cm", "5,08 cm", "2,54 cm", "1,27 cm"],
+          "emphasis": true
+        },
+        { "label": "400 px", "values": ["14,11 cm", "10,58 cm", "6,77 cm", "3,39 cm", "1,69 cm"] },
+        {
+          "label": "413 px",
+          "values": ["14,57 cm", "10,93 cm", "6,99 cm", "3,50 cm", "1,75 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "500 px",
+          "values": ["17,64 cm", "13,23 cm", "8,47 cm", "4,23 cm", "2,12 cm"],
+          "emphasis": true
+        },
+        { "label": "591 px", "values": ["20,85 cm", "15,64 cm", "10,01 cm", "5,00 cm", "2,50 cm"] },
+        { "label": "600 px", "values": ["21,17 cm", "15,88 cm", "10,16 cm", "5,08 cm", "2,54 cm"] },
+        { "label": "640 px", "values": ["22,58 cm", "16,93 cm", "10,84 cm", "5,42 cm", "2,71 cm"] },
+        { "label": "720 px", "values": ["25,40 cm", "19,05 cm", "12,19 cm", "6,10 cm", "3,05 cm"] },
+        { "label": "800 px", "values": ["28,22 cm", "21,17 cm", "13,55 cm", "6,77 cm", "3,39 cm"] },
+        {
+          "label": "827 px",
+          "values": ["29,17 cm", "21,88 cm", "14,00 cm", "7,00 cm", "3,50 cm"],
+          "emphasis": true
+        },
+        { "label": "900 px", "values": ["31,75 cm", "23,81 cm", "15,24 cm", "7,62 cm", "3,81 cm"] },
+        {
+          "label": "945 px",
+          "values": ["33,34 cm", "25,00 cm", "16,00 cm", "8,00 cm", "4,00 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1.000 px",
+          "values": ["35,28 cm", "26,46 cm", "16,93 cm", "8,47 cm", "4,23 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1.080 px",
+          "values": ["38,10 cm", "28,58 cm", "18,29 cm", "9,14 cm", "4,57 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1.181 px",
+          "values": ["41,66 cm", "31,24 cm", "20,00 cm", "10,00 cm", "5,00 cm"]
+        },
+        {
+          "label": "1.200 px",
+          "values": ["42,33 cm", "31,75 cm", "20,32 cm", "10,16 cm", "5,08 cm"]
+        },
+        {
+          "label": "1.500 px",
+          "values": ["52,92 cm", "39,69 cm", "25,40 cm", "12,70 cm", "6,35 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1.920 px",
+          "values": ["67,73 cm", "50,80 cm", "32,51 cm", "16,26 cm", "8,13 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "2.000 px",
+          "values": ["70,56 cm", "52,92 cm", "33,87 cm", "16,93 cm", "8,47 cm"]
+        },
+        {
+          "label": "2.048 px",
+          "values": ["72,25 cm", "54,19 cm", "34,68 cm", "17,34 cm", "8,67 cm"]
+        },
+        {
+          "label": "2.400 px",
+          "values": ["84,67 cm", "63,50 cm", "40,64 cm", "20,32 cm", "10,16 cm"]
+        },
+        {
+          "label": "2.480 px",
+          "values": ["87,47 cm", "65,62 cm", "42,00 cm", "21,00 cm (A4)", "10,50 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "3.000 px",
+          "values": ["105,83 cm", "79,38 cm", "50,80 cm", "25,40 cm", "12,70 cm"]
+        },
+        {
+          "label": "3.508 px",
+          "values": ["123,73 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)", "14,85 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "4.000 px",
+          "values": ["141,11 cm", "105,83 cm", "67,73 cm", "33,87 cm", "16,93 cm"]
+        },
+        {
+          "label": "5.000 px",
+          "values": ["176,39 cm", "132,29 cm", "84,67 cm", "42,33 cm", "21,17 cm"]
+        },
+        {
+          "label": "6.000 px",
+          "values": ["211,67 cm", "158,75 cm", "101,60 cm", "50,80 cm", "25,40 cm"]
+        },
+        {
+          "label": "8.000 px",
+          "values": ["282,22 cm", "211,67 cm", "135,47 cm", "67,73 cm", "33,87 cm"]
+        }
+      ],
+      "caption": "Todos los valores se han redondeado a dos decimales según la fórmula cm = px × 2,54 ÷ DPI."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "¿Cuántos centímetros equivalen las resoluciones de pantalla y los gráficos de redes sociales más populares?",
+      "description": "La tabla siguiente muestra las dimensiones físicas de las resoluciones más populares de monitores, smartphones y gráficos de redes sociales. La primera columna con valores en centímetros asume 96 DPI – el valor que el sistema operativo aplica a una pantalla típica. La segunda columna muestra cuántos centímetros ocuparía la misma imagen a 300 DPI usados en imprenta, es decir, qué tamaño tendría con calidad fotográfica.",
+      "labelHeader": "Formato",
+      "cols": ["Resolución (px)", "Tamaño @ 96 DPI", "Tamaño @ 300 DPI"],
+      "rows": [
+        { "groupLabel": "Resoluciones de pantalla" },
+        { "label": "HD 720p", "values": ["1.280 × 720", "33,87 × 19,05 cm", "10,84 × 6,10 cm"] },
+        {
+          "label": "Full HD 1080p",
+          "values": ["1.920 × 1.080", "50,80 × 28,58 cm", "16,26 × 9,14 cm"],
+          "emphasis": true
+        },
+        { "label": "2K QHD", "values": ["2.560 × 1.440", "67,73 × 38,10 cm", "21,67 × 12,19 cm"] },
+        {
+          "label": "4K UHD",
+          "values": ["3.840 × 2.160", "101,60 × 57,15 cm", "32,51 × 18,29 cm"],
+          "emphasis": true
+        },
+        { "label": "5K", "values": ["5.120 × 2.880", "135,47 × 76,20 cm", "43,35 × 24,38 cm"] },
+        { "label": "8K", "values": ["7.680 × 4.320", "203,20 × 114,30 cm", "65,02 × 36,58 cm"] },
+        {
+          "label": "Smartphone (vertical)",
+          "values": ["1.080 × 1.920", "28,58 × 50,80 cm", "9,14 × 16,26 cm"]
+        },
+        { "groupLabel": "Gráficos de redes sociales" },
+        {
+          "label": "Instagram (cuadrado)",
+          "values": ["1.080 × 1.080", "28,58 × 28,58 cm", "9,14 × 9,14 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "Instagram story / Reel",
+          "values": ["1.080 × 1.920", "28,58 × 50,80 cm", "9,14 × 16,26 cm"]
+        },
+        {
+          "label": "Miniatura de YouTube",
+          "values": ["1.280 × 720", "33,87 × 19,05 cm", "10,84 × 6,10 cm"]
+        },
+        {
+          "label": "Imagen OG / Facebook compartir",
+          "values": ["1.200 × 630", "31,75 × 16,67 cm", "10,16 × 5,33 cm"]
+        },
+        {
+          "label": "Portada de Facebook",
+          "values": ["851 × 315", "22,51 × 8,33 cm", "7,21 × 2,67 cm"]
+        },
+        {
+          "label": "Cabecera de X / Twitter",
+          "values": ["1.500 × 500", "39,69 × 13,23 cm", "12,70 × 4,23 cm"]
+        }
+      ],
+      "caption": "Una pantalla Full HD completa en un monitor de 24 pulgadas mide físicamente algo menos de 50,80 cm de ancho, porque los fabricantes utilizan distintas densidades de píxeles – el valor de la tabla es el ancho teórico al estándar de 96 DPI."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "¿Cuántos píxeles tienen los tamaños populares en centímetros?",
+      "description": "A veces partimos del lado físico y queremos saber cuántos píxeles necesita un gráfico para imprimirse a un tamaño concreto. La tabla siguiente muestra la conversión inversa para las cuatro resoluciones más utilizadas.",
+      "labelHeader": "Dimensión",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
+      "rows": [
+        { "label": "0,5 cm", "values": ["14 px", "19 px", "30 px", "59 px"] },
+        { "label": "1 cm", "values": ["28 px", "38 px", "59 px", "118 px"], "emphasis": true },
+        { "label": "2 cm", "values": ["57 px", "76 px", "118 px", "236 px"] },
+        { "label": "3 cm", "values": ["85 px", "113 px", "177 px", "354 px"] },
+        { "label": "5 cm", "values": ["142 px", "189 px", "295 px", "591 px"], "emphasis": true },
+        { "label": "7 cm", "values": ["198 px", "264 px", "413 px", "827 px"] },
+        {
+          "label": "10 cm",
+          "values": ["283 px", "378 px", "591 px", "1.181 px"],
+          "emphasis": true
+        },
+        { "label": "15 cm", "values": ["425 px", "567 px", "886 px", "1.772 px"] },
+        { "label": "20 cm", "values": ["567 px", "756 px", "1.181 px", "2.362 px"] },
+        {
+          "label": "21 cm (A4 anch.)",
+          "values": ["595 px", "794 px", "1.240 px", "2.480 px"],
+          "emphasis": true
+        },
+        {
+          "label": "29,7 cm (A4 alt.)",
+          "values": ["842 px", "1.123 px", "1.754 px", "3.508 px"],
+          "emphasis": true
+        },
+        { "label": "50 cm", "values": ["1.417 px", "1.890 px", "2.953 px", "5.906 px"] }
+      ],
+      "caption": "Si usas más a menudo la conversión en este sentido, tenemos para ti una calculadora dedicada de cm a px con un rango aún más amplio de valores."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Formatos físicos más populares y sus dimensiones en píxeles",
+      "description": "Si en lugar de píxeles sueltos necesitas las dimensiones de un formato terminado (por ejemplo un A4, una copia de 10×15 cm o una foto de DNI), la tabla siguiente recoge los valores en las dos resoluciones más utilizadas. Las dimensiones se dan siempre como ancho × alto en orientación vertical.",
+      "labelHeader": "Formato",
+      "cols": ["Anch. × alt. (cm)", "Anch. × alt. (150 DPI)", "Anch. × alt. (300 DPI)"],
+      "rows": [
+        { "groupLabel": "Papel ISO serie A" },
+        { "label": "A0", "values": ["84,1 × 118,9", "4.967 × 7.022", "9.933 × 14.043"] },
+        { "label": "A1", "values": ["59,4 × 84,1", "3.508 × 4.967", "7.016 × 9.933"] },
+        { "label": "A2", "values": ["42,0 × 59,4", "2.480 × 3.508", "4.961 × 7.016"] },
+        { "label": "A3", "values": ["29,7 × 42,0", "1.754 × 2.480", "3.508 × 4.961"] },
+        {
+          "label": "A4",
+          "values": ["21,0 × 29,7", "1.240 × 1.754", "2.480 × 3.508"],
+          "emphasis": true
+        },
+        { "label": "A5", "values": ["14,8 × 21,0", "874 × 1.240", "1.748 × 2.480"] },
+        { "label": "A6", "values": ["10,5 × 14,8", "620 × 874", "1.240 × 1.748"] },
+        { "label": "A7", "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"] },
+        { "groupLabel": "Tamaños de papel EE. UU." },
+        {
+          "label": "Carta (8,5 × 11 in)",
+          "values": ["21,59 × 27,94", "1.275 × 1.650", "2.550 × 3.300"],
+          "emphasis": true
+        },
+        {
+          "label": "Oficio (8,5 × 14 in)",
+          "values": ["21,59 × 35,56", "1.275 × 2.100", "2.550 × 4.200"]
+        },
+        {
+          "label": "Tabloide (11 × 17 in)",
+          "values": ["27,94 × 43,18", "1.650 × 2.550", "3.300 × 5.100"]
+        },
+        { "groupLabel": "Copias fotográficas" },
+        {
+          "label": "Foto 10 × 15 cm",
+          "values": ["10 × 15", "591 × 886", "1.181 × 1.772"],
+          "emphasis": true
+        },
+        { "label": "Foto 13 × 18 cm", "values": ["13 × 18", "768 × 1.063", "1.535 × 2.126"] },
+        { "label": "Foto 15 × 21 cm", "values": ["15 × 21", "886 × 1.240", "1.772 × 2.480"] },
+        { "label": "Foto 20 × 30 cm", "values": ["20 × 30", "1.181 × 1.772", "2.362 × 3.543"] },
+        { "groupLabel": "Documentos de identidad" },
+        {
+          "label": "Foto DNI/pasaporte (ES, 26 × 32 mm)",
+          "values": ["2,6 × 3,2", "154 × 189", "307 × 378"],
+          "emphasis": true
+        },
+        {
+          "label": "Foto ICAO / pasaporte (35 × 45 mm)",
+          "values": ["3,5 × 4,5", "207 × 266", "413 × 531"]
+        },
+        { "groupLabel": "Tarjetas de visita" },
+        {
+          "label": "Tarjeta europea ISO (85 × 55 mm)",
+          "values": ["8,5 × 5,5", "502 × 325", "1.004 × 650"],
+          "emphasis": true
+        },
+        {
+          "label": "Tarjeta estadounidense (3,5 × 2 in)",
+          "values": ["8,89 × 5,08", "525 × 300", "1.050 × 600"]
+        }
+      ],
+      "caption": "Estos valores son el espejo de la tabla de nuestro conversor de cm a px – siempre puedes pasar de un sentido al otro conociendo solo la cantidad de píxeles y el DPI de destino."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo cambiar de píxeles a centímetros en los programas más populares?",
+      "inlineIcon": true,
+      "grid": "one",
+      "items": [
+        {
+          "title": "Photoshop",
+          "icon": "RiImageEditLine",
+          "description": "En Adobe Photoshop puedes comprobar las dimensiones del lienzo y el resultado en centímetros en la ventana <strong>Imagen &rsaquo; Tamaño de imagen</strong>. Selecciona Centímetros en la lista desplegable de unidades y escribe el DPI deseado en el campo Resolución – Photoshop mostrará al instante a cuántos centímetros corresponden las dimensiones en píxeles de tu archivo. Si quieres que el cambio de unidad no afecte al número de píxeles del archivo, desactiva la opción Remuestrear. Así solo cambias la forma en que se presentan las dimensiones, mientras que los píxeles permanecen intactos."
+        },
+        {
+          "title": "Illustrator",
+          "icon": "RiPencilLine",
+          "description": "Adobe Illustrator trabaja por defecto en la unidad que elegiste al crear el documento. Puedes cambiarla en <strong>Edición &rsaquo; Preferencias &rsaquo; Unidades</strong> – selecciona Centímetros si quieres ver el tamaño del proyecto tras imprimirse. El resultado en centímetros depende de la resolución de la mesa de trabajo definida al inicio del proyecto. Si trabajas con un archivo recibido en píxeles pero necesitas las dimensiones para la imprenta, lo más sencillo es copiar el valor en píxeles del panel Transformar y pegarlo en nuestro convertidor con el DPI adecuado."
+        },
+        {
+          "title": "Figma",
+          "icon": "RiLayoutGridLine",
+          "description": "Figma opera exclusivamente en píxeles y asume 96 DPI fijos. Esto significa que, si quieres saber cuán grande será tu proyecto tras imprimirse en centímetros, primero debes traducir el valor en píxeles con la resolución de impresión deseada. Por ejemplo: una mesa de trabajo de 1.181 × 1.772 px dividida entre 300 DPI es exactamente una foto de 10 × 15 cm. Introduce el valor de Figma en nuestro convertidor, ajusta 300 DPI y verás de inmediato el tamaño físico sobre el papel."
+        },
+        {
+          "title": "Canva",
+          "icon": "RiPaletteLine",
+          "description": "En Canva, al hacer clic en <strong>Crear un diseño &rsaquo; Tamaño personalizado</strong> puedes elegir la unidad cm o mm y ver al momento la dimensión física en centímetros. Si trabajas sobre un gráfico existente en píxeles, abre el panel de dimensiones del proyecto y conviértelas con nuestro convertidor a 300 DPI para comprobar el tamaño tras imprimirse. Canva exporta por defecto los archivos para imprenta a 300 DPI, así que nuestra tabla de formatos coincidirá con lo que recibas en la salida."
+        },
+        {
+          "title": "Procreate",
+          "icon": "RiBrushLine",
+          "description": "Al crear un nuevo lienzo, Procreate permite elegir la unidad entre píxeles, milímetros, centímetros y pulgadas. En la pestaña Lienzo personalizado escribe la dimensión en cm y ajusta 300 DPI para ver cuántos píxeles tendrá el archivo final. Si ya tienes una ilustración en píxeles y quieres saber cuán grande será tras imprimirse, usa nuestro convertidor – Procreate muestra las dimensiones del lienzo actual en el panel Acciones, así que basta con copiarlas."
+        },
+        {
+          "title": "Word, Excel, PowerPoint",
+          "icon": "RiFileTextLine",
+          "description": "El paquete Microsoft 365 (Word, Excel y PowerPoint) opera en centímetros, y las dimensiones de las imágenes insertadas en el documento se ajustan en el panel Tamaño y posición. Si pegas una captura de pantalla o un gráfico de internet con dimensiones en píxeles, Office mostrará automáticamente a cuántos centímetros corresponde a 96 DPI. Los archivos PDF exportados desde estos programas conservan por defecto la alta calidad, así que el mismo gráfico se imprime al tamaño físico que Word mostró originalmente."
+        },
+        {
+          "title": "CSS y HTML",
+          "icon": "RiHtml5Line",
+          "description": "En las hojas de estilo CSS, la unidad cm se calcula con una fórmula fija: 1cm = 96px ÷ 2,54 ≈ 37,8px. Dicho de otro modo, 1 píxel CSS son siempre unos 0,0265 cm, independientemente del dispositivo en el que abras la página. En la práctica se usan px, rem o em para las interfaces web y cm se reserva para hojas de estilo destinadas a la impresión (@media print). Solo entonces la disposición de la página refleja realmente las dimensiones físicas de la hoja."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo conviene usar este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCameraLine",
+          "title": "Evaluar fotos de cámara para imprenta",
+          "description": "Sabes que tu sensor produce archivos de 6.000 × 4.000 px. El convertidor mostrará que, a 300 DPI, son exactamente 50,80 × 33,87 cm – más que suficiente para un póster A2. También puedes comprobar el umbral inferior, es decir, cuántos centímetros saldrán de un archivo más pequeño de móvil o de un gráfico de internet."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Dimensiones de capturas y gráficos de pantalla",
+          "description": "Haces una captura de pantalla en Full HD 1.920 × 1.080 px y quieres saber cuán grande será al imprimirse con calidad fotográfica. El convertidor mostrará que, a 300 DPI, son 16,26 × 9,14 cm – más que suficiente para una diapositiva de presentación, pero insuficiente para una página A4 completa."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Comprobar gráficos antes de enviarlos a imprenta",
+          "description": "Recibes de un cliente un archivo de 2.480 px de ancho y no sabes qué formato corresponde. El convertidor mostrará al instante que, a 300 DPI, son exactamente 21 cm, es decir, el lado corto de una hoja A4. Así evitas que la imprenta rechace el archivo por una resolución incompatible."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Fotos para documentos y tarjetas de visita",
+          "description": "La cámara te dio una foto de 413 × 531 px y te preguntas si es un buen formato. El convertidor mostrará que, a 300 DPI, son exactamente 3,5 × 4,5 cm – el requisito de las fotos biométricas estándar ICAO para pasaporte. Lo mismo para tarjetas de visita: un archivo de 1.004 × 650 px corresponde a la tarjeta europea estándar 85 × 55 mm a 300 DPI."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Píxel y centímetro – breve comparación",
+      "labelHeader": "Característica",
+      "cols": ["Píxel (px)", "Centímetro (cm)"],
+      "rows": [
+        {
+          "label": "Tipo de unidad",
+          "values": ["Digital y de pantalla", "Física y tangible"]
+        },
+        {
+          "label": "Dependencia del dispositivo",
+          "values": ["Depende del DPI o PPI", "Siempre la misma"]
+        },
+        {
+          "label": "Pantalla a 96 DPI",
+          "values": ["1 px equivale a 0,0265 cm", "1 cm equivale a 37,8 px"]
+        },
+        {
+          "label": "Imprenta a 300 DPI",
+          "values": ["1 px equivale a 0,0085 cm", "1 cm equivale a 118 px"]
+        },
+        {
+          "label": "Full HD 1.920 × 1.080 px",
+          "values": ["50,80 × 28,58 cm (96 DPI)", "16,26 × 9,14 cm (300 DPI)"]
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre la conversión de px a cm",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Cuántos centímetros tiene 1 píxel?",
+          "answer": "Todo depende de la resolución que ajustes. Con el estándar de pantalla de 96 DPI, un píxel equivale a unos 0,0265 cm, mientras que con los 300 DPI utilizados en imprenta apenas 0,0085 cm. Para convertir cualquier cantidad de píxeles a centímetros, multiplícala por 2,54 y divídela entre el DPI."
+        },
+        {
+          "question": "¿Cuál es la fórmula para convertir px a cm?",
+          "answer": "La fórmula es sencilla y surge de una relación fija: una pulgada equivale exactamente a 2,54 cm. La fórmula completa es número de centímetros = número de píxeles × 2,54 ÷ DPI. También funciona en sentido inverso: número de píxeles = número de centímetros × DPI ÷ 2,54. Conociendo dos valores – la cantidad de píxeles y la resolución de destino – puedes calcular el tercero al instante."
+        },
+        {
+          "question": "¿Cómo se convierten los píxeles a centímetros?",
+          "answer": "Lo más fácil es escribir la cantidad de píxeles en el campo del convertidor y elegir el DPI que te interese – el resultado aparece al momento. Si prefieres calcularlo a mano, usa la fórmula número de centímetros = número de píxeles × 2,54 ÷ DPI. Para 500 px a 300 DPI obtendrás 500 × 2,54 ÷ 300, es decir, unos 4,23 cm."
+        },
+        {
+          "question": "¿Cuántos centímetros son 100 píxeles?",
+          "answer": "Cien píxeles en una pantalla de 96 DPI son exactamente 2,65 cm – aproximadamente el ancho del pulgar de un adulto. En imprenta a 300 DPI, los mismos 100 píxeles ocupan solo 0,85 cm, y a 600 DPI apenas 0,42 cm. Es un valor útil que recordar, porque aparece con frecuencia en el tamaño de botones e iconos de las páginas web."
+        },
+        {
+          "question": "¿Cuántos centímetros son 200 píxeles?",
+          "answer": "Doscientos píxeles en una pantalla de 96 DPI equivalen a unos 5,29 cm. En imprenta a 300 DPI, los mismos 200 píxeles ocupan ya solo 1,69 cm, porque caben más puntos en una pulgada. A 600 DPI utilizados en imprenta fotográfica de alta calidad son apenas 0,85 cm."
+        },
+        {
+          "question": "¿Cuántos centímetros son 300 píxeles?",
+          "answer": "Trescientos píxeles equivalen a unos 7,94 cm en pantalla de 96 DPI y exactamente 2,54 cm en imprenta de 300 DPI – es decir, exactamente una pulgada. La relación no es casualidad: el estándar de 300 DPI significa literalmente que en cada pulgada de impresión caben 300 puntos. El valor de 300 px suele corresponder al tamaño de una miniatura de producto en una tienda online."
+        },
+        {
+          "question": "¿Cuántos centímetros son 500 píxeles?",
+          "answer": "Quinientos píxeles corresponden a unos 13,23 cm en pantalla de 96 DPI y a 4,23 cm en imprenta de 300 DPI. El valor de 500 px es un ancho popular para banners publicitarios y avatares, por lo que conviene recordarlo para estimar tamaños con rapidez."
+        },
+        {
+          "question": "¿Cuántos centímetros son 1.000 píxeles?",
+          "answer": "Mil píxeles a 96 DPI son unos 26,46 cm, aproximadamente el ancho de una hoja A4 con márgenes. En imprenta a 300 DPI, los mismos 1.000 píxeles son 8,47 cm – suficiente para una tarjeta de visita o una foto pequeña. A 150 DPI utilizados para pósters y folletos salen 16,93 cm, un formato cercano al de una postal."
+        },
+        {
+          "question": "¿Cuántos centímetros son 1.080 píxeles?",
+          "answer": "Mil ochenta píxeles son exactamente 28,58 cm en una pantalla típica de 96 DPI – la altura de una imagen Full HD mostrada a escala 1:1. En imprenta a 300 DPI, los mismos 1.080 píxeles ocupan ya solo 9,14 cm, más o menos el ancho de una tarjeta de visita. A 150 DPI utilizados para pósters salen 18,29 cm."
+        },
+        {
+          "question": "¿Cuántos centímetros son 1.920 píxeles?",
+          "answer": "Mil novecientos veinte píxeles son exactamente 50,80 cm en pantalla de 96 DPI – corresponde al ancho de una imagen Full HD. En imprenta a 300 DPI, la misma cantidad de píxeles ocupa solo 16,26 cm, y a 600 DPI apenas 8,13 cm. Es un valor que vale la pena recordar, porque aparece en casi cualquier captura de monitor."
+        },
+        {
+          "question": "¿Qué dimensiones en centímetros tiene una pantalla Full HD 1.920 × 1.080 px?",
+          "answer": "Un cuadro Full HD completo a escala 1:1 ocupa 50,80 × 28,58 cm con el estándar de pantalla de 96 DPI. Si quisieras imprimir la misma imagen con calidad fotográfica a 300 DPI, encajaría exactamente en 16,26 × 9,14 cm – aproximadamente el tamaño de una postal. Con 4K UHD 3.840 × 2.160 px todas las dimensiones se duplican: 101,60 × 57,15 cm en pantalla y 32,51 × 18,29 cm en imprenta."
+        },
+        {
+          "question": "¿Qué dimensiones tiene una pantalla 4K (3.840 × 2.160 px) en centímetros?",
+          "answer": "La resolución 4K UHD (3.840 × 2.160 px) a escala 1:1 corresponde a 101,60 × 57,15 cm con el estándar de pantalla de 96 DPI – más de un metro de ancho, aproximadamente el tamaño de un televisor de 45 pulgadas visto de cerca. En imprenta a 300 DPI, el mismo archivo cabe en 32,51 × 18,29 cm, un formato cercano a una hoja A4 horizontal. A 150 DPI alcanza para un póster de 65,02 × 36,58 cm."
+        },
+        {
+          "question": "¿Cuántos centímetros tiene un archivo de 2.480 píxeles de ancho?",
+          "answer": "Un archivo de 2.480 px de ancho a 300 DPI son exactamente 21,00 cm, es decir, el lado corto de una hoja A4. La imprenta aceptará ese archivo sin problemas si la altura es de 3.508 px (29,7 cm). El mismo archivo en pantalla de 96 DPI ocupa 65,62 cm, lo que se extiende mucho más allá del área visible de un monitor medio."
+        },
+        {
+          "question": "¿Cuántos centímetros tiene una foto de 6.000 píxeles de una cámara?",
+          "answer": "Seis mil píxeles son un ancho típico de una foto de réflex digital o cámara sin espejo de gama media. A 300 DPI utilizados en imprenta fotográfica da 50,80 cm – suficiente para un póster A2 o una copia ancha de galería. Si la foto tiene proporción 3:2, el otro lado son 4.000 px, es decir, 33,87 cm."
+        },
+        {
+          "question": "¿Cómo cambiar de píxeles a centímetros en Photoshop o Canva?",
+          "answer": "En Photoshop abre Imagen &rsaquo; Tamaño de imagen, cambia la unidad de píxeles a centímetros y escribe el DPI de destino – el programa mostrará el tamaño físico actual. En Canva el panel con las dimensiones del proyecto está visible al crear un archivo nuevo o en el menú Cambiar de tamaño – basta con cambiar las unidades a cm. Encontrarás guías detalladas para Photoshop, Illustrator, Figma, Canva y Procreate en la sección superior."
+        },
+        {
+          "question": "¿Cómo cambiar de px a cm en Illustrator o Figma?",
+          "answer": "En Adobe Illustrator entra en Edición &rsaquo; Preferencias &rsaquo; Unidades y selecciona Centímetros – la unidad cambia en todos los paneles y reglas al instante. Figma funciona de otra forma porque opera exclusivamente en píxeles con 96 DPI fijos – no existe la opción de cambiar las unidades. Para comprobar el tamaño físico de un proyecto de Figma, copia el valor en píxeles del panel Design y pégalo en nuestro convertidor ajustando el DPI deseado (96 para pantalla, 300 para imprenta)."
+        },
+        {
+          "question": "¿En qué se diferencia el DPI del PPI?",
+          "answer": "DPI (dots per inch) es la cantidad de puntos de tinta por pulgada de material y describe la impresora. PPI (pixels per inch) indica la cantidad de píxeles por pulgada de pantalla y describe el monitor o display. En el trabajo cotidiano los diseñadores usan ambas siglas de forma intercambiable, aunque técnicamente DPI se aplica a la imprenta y PPI a las pantallas."
+        },
+        {
+          "question": "¿Cuántos centímetros ocupa un píxel en una pantalla Retina?",
+          "answer": "Las pantallas Retina de Apple tienen una densidad de píxeles dos veces mayor que un monitor clásico, pero el sistema operativo sigue interpretando las dimensiones como si el panel fuese de 96 DPI. En la práctica esto significa que un píxel físico ocupa unos 0,0132 cm en lugar de 0,0265 cm, pero en los paneles de diseño de Photoshop, Figma o Canva los valores siguen siendo idénticos – preparas el gráfico al doble de resolución y lo exportas con el sufijo @2x."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar este convertidor",
+      "description": "¿Te falta algún valor en las tablas, has detectado un error en la conversión o quieres proponer una nueva función? Escríbenos – leemos todos los mensajes en persona y respondemos en menos de 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor px a cm – Arteon",
+      "defaultSubject": "Feedback: convertidor px a cm"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Otras herramientas que te pueden venir bien" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

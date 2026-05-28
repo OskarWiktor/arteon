@@ -4,7 +4,7 @@ import CarouselSkeleton from './CarouselSkeleton';
 import FaqSkeleton from './FaqSkeleton';
 import DividerSkeleton from './GapSkeleton';
 import CTABannerSkeleton from './CTABannerSkeleton';
-import Shimmer from './Shimmer';
+import Shimmer from '../../atoms/skeletons/Shimmer';
 
 export default function ProjectDetailSkeleton() {
   return (
@@ -20,21 +20,21 @@ export default function ProjectDetailSkeleton() {
                 <Shimmer key={i} className='h-7 w-24 !rounded-lg' />
               ))}
             </div>
-            <Shimmer className='h-4 w-full !rounded-md' />
-            <Shimmer className='h-4 w-5/6 !rounded-md' />
+            <Shimmer className='h-4 w-full' />
+            <Shimmer className='h-4 w-5/6' />
             <Shimmer className='aspect-video w-full !rounded-lg !bg-neutral-300' />
-            <Shimmer className='h-4 w-full !rounded-md' />
-            <Shimmer className='h-4 w-full !rounded-md' />
-            <Shimmer className='h-4 w-4/5 !rounded-md' />
-            <Shimmer className='mt-4 h-6 w-2/5 !rounded-md' />
-            <Shimmer className='h-4 w-full !rounded-md' />
-            <Shimmer className='h-4 w-5/6 !rounded-md' />
+            <Shimmer className='h-4 w-full' />
+            <Shimmer className='h-4 w-full' />
+            <Shimmer className='h-4 w-4/5' />
+            <Shimmer className='mt-4 h-6 w-2/5' />
+            <Shimmer className='h-4 w-full' />
+            <Shimmer className='h-4 w-5/6' />
           </div>
           <aside className='hidden lg:block'>
             <div className='sticky top-24 space-y-3 rounded-lg border border-black/5 bg-white p-5 shadow-sm'>
-              <Shimmer className='h-5 w-3/4 !rounded-md' />
+              <Shimmer className='h-5 w-3/4' />
               {Array.from({ length: 6 }).map((_, i) => (
-                <Shimmer key={i} className='h-3.5 w-full !rounded-md' />
+                <Shimmer key={i} className='h-3.5 w-full' />
               ))}
             </div>
           </aside>

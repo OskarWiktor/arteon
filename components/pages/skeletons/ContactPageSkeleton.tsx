@@ -2,7 +2,7 @@ import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
 import SectionInfoSkeleton from '../../organisms/skeletons/SectionInfoSkeleton';
 import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
 import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
-import Shimmer from '../../organisms/skeletons/Shimmer';
+import Shimmer from '../../atoms/skeletons/Shimmer';
 
 export default function ContactPageSkeleton() {
   return (
@@ -15,24 +15,24 @@ export default function ContactPageSkeleton() {
 
         {/* Contact form skeleton */}
         <div className='space-y-4'>
-          <Shimmer className='h-7 w-1/4 !rounded-md' />
+          <Shimmer className='h-7 w-1/4' />
           <div className='grid gap-4 sm:grid-cols-2'>
             <div className='space-y-2'>
-              <Shimmer className='h-4 w-24 !rounded-md' />
-              <Shimmer className='h-11 w-full !rounded-md' />
+              <Shimmer className='h-4 w-24' />
+              <Shimmer className='h-11 w-full' />
             </div>
             <div className='space-y-2'>
-              <Shimmer className='h-4 w-20 !rounded-md' />
-              <Shimmer className='h-11 w-full !rounded-md' />
+              <Shimmer className='h-4 w-20' />
+              <Shimmer className='h-11 w-full' />
             </div>
           </div>
           <div className='space-y-2'>
-            <Shimmer className='h-4 w-16 !rounded-md' />
-            <Shimmer className='h-11 w-full !rounded-md' />
+            <Shimmer className='h-4 w-16' />
+            <Shimmer className='h-11 w-full' />
           </div>
           <div className='space-y-2'>
-            <Shimmer className='h-4 w-28 !rounded-md' />
-            <Shimmer className='h-32 w-full !rounded-md' />
+            <Shimmer className='h-4 w-28' />
+            <Shimmer className='h-32 w-full' />
           </div>
           <Shimmer className='h-11 w-32 !rounded-lg' />
         </div>
@@ -41,7 +41,7 @@ export default function ContactPageSkeleton() {
 
         {/* Contact details skeleton (2 cards side by side) */}
         <div className='space-y-4'>
-          <Shimmer className='h-7 w-1/3 !rounded-md' />
+          <Shimmer className='h-7 w-1/3' />
           <div className='grid gap-4 sm:grid-cols-2'>
             {[0, 1].map(i => (
               <div
@@ -50,8 +50,8 @@ export default function ContactPageSkeleton() {
               >
                 <Shimmer className='h-10 w-10 shrink-0 !rounded-lg' />
                 <div className='flex-1 space-y-2'>
-                  <Shimmer className='h-5 w-1/2 !rounded-md' />
-                  <Shimmer className='h-4 w-3/4 !rounded-md' />
+                  <Shimmer className='h-5 w-1/2' />
+                  <Shimmer className='h-4 w-3/4' />
                 </div>
               </div>
             ))}

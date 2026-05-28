@@ -1,4 +1,6 @@
-import Shimmer from './Shimmer';
+import { flexCenterClasses } from '@/lib/ui-classes';
+import Shimmer from '../../atoms/skeletons/Shimmer';
+import { cn } from '@/lib/utils';
 
 interface BreadcrumbsSkeletonProps {
   size?: 'default' | 'compact';
@@ -9,13 +11,13 @@ export default function BreadcrumbsSkeleton({ size = 'default' }: BreadcrumbsSke
 
   return (
     <div className='m-auto w-[94%] max-w-[1420px] 2xl:max-w-none'>
-      <div className={isCompact ? 'flex items-center justify-center py-3' : 'py-6'}>
+      <div className={isCompact ? cn('py-3', flexCenterClasses) : 'py-6'}>
         <div className='flex items-center gap-2 text-sm'>
-          <Shimmer className='h-4 w-4 !rounded-md' />
+          <Shimmer className='h-4 w-8' />
           <span className='text-neutral-300'>/</span>
-          <Shimmer className='h-4 w-20 !rounded-md' />
+          <Shimmer className='h-4 w-20' />
           <span className='text-neutral-300'>/</span>
-          <Shimmer className='h-4 w-44 !rounded-md' />
+          <Shimmer className='h-4 w-8' />
         </div>
       </div>
     </div>

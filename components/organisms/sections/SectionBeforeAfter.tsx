@@ -6,6 +6,8 @@ import { RiExpandLeftRightLine } from 'react-icons/ri';
 import Wrapper from '../../atoms/Wrapper';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import InputRange from '@/components/atoms/form/InputRange';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 interface SectionBeforeAfterProps {
   title?: string;
@@ -58,9 +60,12 @@ export default function SectionBeforeAfter({
               <div className='absolute top-1/2 left-1/2 h-full w-1 -translate-x-1/2 bg-white shadow-lg' />
               <button
                 type='button'
-                className='absolute top-1/2 left-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg bg-white shadow-lg'
+                className={cn(
+                  'absolute top-1/2 left-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white shadow-lg',
+                  flexCenterClasses,
+                )}
               >
-                <RiExpandLeftRightLine className='text-primary h-5 w-5' />
+                <RiExpandLeftRightLine className={cn('text-primary', normalIconSizeClasses)} />
               </button>
             </div>
 

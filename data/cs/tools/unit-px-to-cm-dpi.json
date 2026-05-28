@@ -1,0 +1,544 @@
+{
+  "toolKey": "pxToCmDpi",
+  "locale": "cs",
+  "metadata": {
+    "title": "Kalkulačka px na cm (DPI) – převeďte pixely na centimetry",
+    "description": "Převeďte pixely na centimetry s nastavitelným DPI. Ideální nástroj pro grafiky, fotografy a tvůrce, kteří kontrolují tiskovou velikost obrazovkových souborů.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-px-na-cm"
+  },
+  "hero": {
+    "title": "Převeďte pixely na centimetry při libovolném DPI",
+    "description": "Zadejte hodnotu v pixelech, nastavte rozlišení DPI a přečtěte výsledek v centimetrech. Zjistěte, kolika centimetrům odpovídá daný počet pixelů, včetně oblíbených rozlišení obrazovek jako 1920 × 1080. Převodník vám pomůže zvolit správnou velikost, když chcete vytisknout grafický soubor nebo ho přizpůsobit konkrétnímu formátu papíru."
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-px-na-cm",
+      "label": "px na cm"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník pixelů na centimetry s nastavitelným DPI – kalkulačka px na cm",
+      "alternateName": [
+        "Převodník px na cm",
+        "Kalkulačka px na centimetry",
+        "Převodník pixelů na centimetry",
+        "Pixely na centimetry",
+        "px na centimetry",
+        "Převést px na cm",
+        "Kalkulačka pixelů na cm",
+        "px na cm 300 dpi",
+        "Online převodník px",
+        "Převodník px na centimetry",
+        "Centimetry z pixelů",
+        "DPI kalkulačka pro tisk",
+        "Převod px cm",
+        "Kolik cm má 1 px",
+        "Velikost pixelu v cm"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník pixelů na centimetry s nastavitelnou hodnotou DPI. Po zadání počtu pixelů ihned uvidíte, kolika centimetrům daná hodnota odpovídá a jaký formát papíru by vznikl. Převodník se hodí ke kontrole, zda soubor z fotoaparátu, snímek obrazovky nebo grafika z internetu vystačí na konkrétní tiskovou velikost, a funguje v prohlížeči bez registrace.",
+      "featureList": [
+        "Nastavitelné rozlišení DPI",
+        "Převod funguje oběma směry, takže přepočítáte jak pixely na centimetry, tak centimetry na pixely",
+        "Výsledek se zobrazí okamžitě při psaní, není třeba mačkat žádné tlačítko",
+        "Hotový výsledek lze zkopírovat do schránky jediným kliknutím",
+        "Rozsáhlá tabulka odpovědí pro hodnoty od 50 do 8 000 pixelů, včetně šířek dokumentů jako 413, 827 a 1 181 px",
+        "Samostatná tabulka oblíbených rozlišení obrazovek (Full HD, 4K, 8K) a formátů sociálních sítí (Instagram, Facebook, Twitter)",
+        "Tabulka formátů papíru A0–A7 spolu s rozměry fotografií a vizitek v pixelech při 300 DPI",
+        "Sekce s návody vysvětluje, jak přepnout px na cm v Photoshopu, Illustratoru, Figmě, Canvě a Procreate",
+        "Všechny výpočty probíhají lokálně v prohlížeči, vaše data neopouštějí zařízení a nikde se neukládají",
+        "Přesný vzorec převodu je cm = px × 2,54 ÷ DPI a využívá pevnou délku palce 2,54 cm"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést pixely na centimetry?",
+      "description": "Stručný návod k použití převodníku px na cm s nastavitelným DPI.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadejte hodnotu v pixelech",
+          "text": "Do levého pole zapište počet pixelů, který chcete převést na centimetry."
+        },
+        {
+          "name": "Nastavte rozlišení DPI",
+          "text": "Zvolte hodnotu DPI. Pro obrazovky se nejčastěji nastavuje 96 DPI, pro tisk 300 DPI."
+        },
+        {
+          "name": "Přečtěte výsledek nebo otočte směr",
+          "text": "Výsledek v centimetrech se zobrazí ihned ve vedlejším poli. Můžete ho zkopírovat nebo použít tlačítko Změnit pořadí pro převod centimetrů na pixely."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět pixely na centimetry?",
+      "html": "<p class=\"text-mid mb-4\">Pixel je digitální jednotka, která popisuje jeden bod na obrazovce telefonu, tabletu nebo monitoru. Centimetr naopak vládne fyzickému světu papíru a tisku. Abyste převedli jeden na druhý, musíte znát rozlišení DPI, tedy počet pixelů, který se vejde na jeden palec materiálu nebo obrazovky.</p><p class=\"text-mid mb-4\">Takové převody nejčastěji provádějí grafici, kteří chtějí zjistit, jak velký bude jejich projekt po vytištění, fotografové posuzující, zda soubor z fotoaparátu vystačí na konkrétní formát fotografie, a lidé připravující snímky obrazovky nebo grafiku z internetu k tisku. Převodník vás zbavuje ručního počítání a pamatování vzorce.</p><p class=\"text-mid\">Dále na stránce najdete rozsáhlou tabulku odpovědí pro oblíbené hodnoty pixelů, samostatnou tabulku rozlišení obrazovek jako Full HD a 4K, hotové rozměry formátů papíru a fotografií a stručné návody, jak přepnout pixely na centimetry v Photoshopu, Figmě, Canvě a dalších grafických nástrojích.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Bezplatný převodník pixelů na centimetry – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod px na cm? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Celý převod se redukuje na jeden vzorec, který se opírá o pevný vztah mezi palcem a centimetrem: jeden palec je přesně 2,54 cm. Stačí tedy počet pixelů vynásobit 2,54 a vydělit zvoleným rozlišením DPI.</p><p class=\"text-mid mb-4\">Úplný vzorec vypadá takto: <strong>počet centimetrů = počet pixelů × 2,54 ÷ DPI</strong>. Převodník provede tento výpočet okamžitě, takže nemusíte počítat ani hledat kalkulačku.</p><p class=\"text-mid mb-4\">Příklad: chcete zjistit, kolik centimetrů má 1 920 pixelů na standardní obrazovce 96 DPI. Hodnoty dosadíte do vzorce a získáte 1 920 × 2,54 ÷ 96, což je přesně 50,80 cm. Stejných 1 920 pixelů při 300 DPI používaném v tisku je už jen 16,26 cm, protože se na palec vejde více pixelů.</p><p class=\"text-mid\">Opačný směr funguje obdobně: počet pixelů = počet centimetrů × DPI ÷ 2,54. Díky tomu zjistíte, kolik pixelů musí mít grafika, kterou chcete vytisknout v konkrétní velikosti, například ve formátu vizitky nebo fotografie 10 × 15 cm.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Kolik centimetrů mají různé hodnoty pixelů při různých hodnotách DPI?",
+      "description": "Následující tabulka ukazuje, jak se stejné hodnoty v pixelech převádějí na centimetry při pěti nejčastěji používaných rozlišeních. Několik hodnot stojí za zapamatování, protože přesně odpovídají konkrétním formátům: 413 px při 300 DPI je kratší strana pasové fotografie, 827 px je 7 cm a 945 px je rovných 8 cm.",
+      "labelHeader": "Pixely",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
+      "rows": [
+        { "label": "50 px", "values": ["1,76 cm", "1,32 cm", "0,85 cm", "0,42 cm", "0,21 cm"] },
+        { "label": "90 px", "values": ["3,18 cm", "2,38 cm", "1,52 cm", "0,76 cm", "0,38 cm"] },
+        {
+          "label": "100 px",
+          "values": ["3,53 cm", "2,65 cm", "1,69 cm", "0,85 cm", "0,42 cm"],
+          "emphasis": true
+        },
+        { "label": "150 px", "values": ["5,29 cm", "3,97 cm", "2,54 cm", "1,27 cm", "0,64 cm"] },
+        {
+          "label": "200 px",
+          "values": ["7,06 cm", "5,29 cm", "3,39 cm", "1,69 cm", "0,85 cm"],
+          "emphasis": true
+        },
+        { "label": "250 px", "values": ["8,82 cm", "6,61 cm", "4,23 cm", "2,12 cm", "1,06 cm"] },
+        {
+          "label": "300 px",
+          "values": ["10,58 cm", "7,94 cm", "5,08 cm", "2,54 cm", "1,27 cm"],
+          "emphasis": true
+        },
+        { "label": "400 px", "values": ["14,11 cm", "10,58 cm", "6,77 cm", "3,39 cm", "1,69 cm"] },
+        {
+          "label": "413 px",
+          "values": ["14,57 cm", "10,93 cm", "6,99 cm", "3,50 cm", "1,75 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "500 px",
+          "values": ["17,64 cm", "13,23 cm", "8,47 cm", "4,23 cm", "2,12 cm"],
+          "emphasis": true
+        },
+        { "label": "591 px", "values": ["20,85 cm", "15,64 cm", "10,01 cm", "5,00 cm", "2,50 cm"] },
+        { "label": "600 px", "values": ["21,17 cm", "15,88 cm", "10,16 cm", "5,08 cm", "2,54 cm"] },
+        { "label": "640 px", "values": ["22,58 cm", "16,93 cm", "10,84 cm", "5,42 cm", "2,71 cm"] },
+        { "label": "720 px", "values": ["25,40 cm", "19,05 cm", "12,19 cm", "6,10 cm", "3,05 cm"] },
+        { "label": "800 px", "values": ["28,22 cm", "21,17 cm", "13,55 cm", "6,77 cm", "3,39 cm"] },
+        {
+          "label": "827 px",
+          "values": ["29,17 cm", "21,88 cm", "14,00 cm", "7,00 cm", "3,50 cm"],
+          "emphasis": true
+        },
+        { "label": "900 px", "values": ["31,75 cm", "23,81 cm", "15,24 cm", "7,62 cm", "3,81 cm"] },
+        {
+          "label": "945 px",
+          "values": ["33,34 cm", "25,00 cm", "16,00 cm", "8,00 cm", "4,00 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1 000 px",
+          "values": ["35,28 cm", "26,46 cm", "16,93 cm", "8,47 cm", "4,23 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1 080 px",
+          "values": ["38,10 cm", "28,58 cm", "18,29 cm", "9,14 cm", "4,57 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1 181 px",
+          "values": ["41,66 cm", "31,24 cm", "20,00 cm", "10,00 cm", "5,00 cm"]
+        },
+        {
+          "label": "1 200 px",
+          "values": ["42,33 cm", "31,75 cm", "20,32 cm", "10,16 cm", "5,08 cm"]
+        },
+        {
+          "label": "1 500 px",
+          "values": ["52,92 cm", "39,69 cm", "25,40 cm", "12,70 cm", "6,35 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1 920 px",
+          "values": ["67,73 cm", "50,80 cm", "32,51 cm", "16,26 cm", "8,13 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "2 000 px",
+          "values": ["70,56 cm", "52,92 cm", "33,87 cm", "16,93 cm", "8,47 cm"]
+        },
+        {
+          "label": "2 048 px",
+          "values": ["72,25 cm", "54,19 cm", "34,68 cm", "17,34 cm", "8,67 cm"]
+        },
+        {
+          "label": "2 400 px",
+          "values": ["84,67 cm", "63,50 cm", "40,64 cm", "20,32 cm", "10,16 cm"]
+        },
+        {
+          "label": "2 480 px",
+          "values": ["87,47 cm", "65,62 cm", "42,00 cm", "21,00 cm (A4)", "10,50 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "3 000 px",
+          "values": ["105,83 cm", "79,38 cm", "50,80 cm", "25,40 cm", "12,70 cm"]
+        },
+        {
+          "label": "3 508 px",
+          "values": ["123,73 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)", "14,85 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "4 000 px",
+          "values": ["141,11 cm", "105,83 cm", "67,73 cm", "33,87 cm", "16,93 cm"]
+        },
+        {
+          "label": "5 000 px",
+          "values": ["176,39 cm", "132,29 cm", "84,67 cm", "42,33 cm", "21,17 cm"]
+        },
+        {
+          "label": "6 000 px",
+          "values": ["211,67 cm", "158,75 cm", "101,60 cm", "50,80 cm", "25,40 cm"]
+        },
+        {
+          "label": "8 000 px",
+          "values": ["282,22 cm", "211,67 cm", "135,47 cm", "67,73 cm", "33,87 cm"]
+        }
+      ],
+      "caption": "Všechny hodnoty byly zaokrouhleny na dvě desetinná místa podle vzorce cm = px × 2,54 ÷ DPI."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Kolik centimetrů mají oblíbená rozlišení obrazovek a grafika pro sociální sítě?",
+      "description": "Následující tabulka ukazuje fyzické rozměry nejoblíbenějších rozlišení monitorů, chytrých telefonů a grafiky ze sociálních sítí. První sloupec s hodnotami v centimetrech předpokládá 96 DPI – tolik, kolik operační systém uvažuje pro typickou obrazovku. Druhý sloupec ukazuje, kolik centimetrů by se vešlo při 300 DPI používaném v tisku, tedy jak velká by stejná grafika byla vytištěná ve fotografické kvalitě.",
+      "labelHeader": "Formát",
+      "cols": ["Rozlišení (px)", "Rozměr @ 96 DPI", "Rozměr @ 300 DPI"],
+      "rows": [
+        { "groupLabel": "Rozlišení obrazovek" },
+        { "label": "HD 720p", "values": ["1 280 × 720", "33,87 × 19,05 cm", "10,84 × 6,10 cm"] },
+        {
+          "label": "Full HD 1080p",
+          "values": ["1 920 × 1 080", "50,80 × 28,58 cm", "16,26 × 9,14 cm"],
+          "emphasis": true
+        },
+        { "label": "2K QHD", "values": ["2 560 × 1 440", "67,73 × 38,10 cm", "21,67 × 12,19 cm"] },
+        {
+          "label": "4K UHD",
+          "values": ["3 840 × 2 160", "101,60 × 57,15 cm", "32,51 × 18,29 cm"],
+          "emphasis": true
+        },
+        { "label": "5K", "values": ["5 120 × 2 880", "135,47 × 76,20 cm", "43,35 × 24,38 cm"] },
+        { "label": "8K", "values": ["7 680 × 4 320", "203,20 × 114,30 cm", "65,02 × 36,58 cm"] },
+        {
+          "label": "Smartphone (na výšku)",
+          "values": ["1 080 × 1 920", "28,58 × 50,80 cm", "9,14 × 16,26 cm"]
+        },
+        { "groupLabel": "Grafika pro sociální sítě" },
+        {
+          "label": "Instagram (čtverec)",
+          "values": ["1 080 × 1 080", "28,58 × 28,58 cm", "9,14 × 9,14 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "Instagram story / Reel",
+          "values": ["1 080 × 1 920", "28,58 × 50,80 cm", "9,14 × 16,26 cm"]
+        },
+        {
+          "label": "Náhled YouTube",
+          "values": ["1 280 × 720", "33,87 × 19,05 cm", "10,84 × 6,10 cm"]
+        },
+        {
+          "label": "Obrázek OG / sdílení Facebook",
+          "values": ["1 200 × 630", "31,75 × 16,67 cm", "10,16 × 5,33 cm"]
+        },
+        {
+          "label": "Úvodní foto Facebook",
+          "values": ["851 × 315", "22,51 × 8,33 cm", "7,21 × 2,67 cm"]
+        },
+        {
+          "label": "Hlavička X / Twitter",
+          "values": ["1 500 × 500", "39,69 × 13,23 cm", "12,70 × 4,23 cm"]
+        }
+      ],
+      "caption": "Plná obrazovka Full HD na 24palcovém monitoru má fyzicky o něco méně než 50,80 cm šířky, protože výrobci používají různé hustoty pixelů – hodnota v tabulce je teoretická šířka při standardu 96 DPI."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Kolik pixelů mají oblíbené rozměry v centimetrech?",
+      "description": "Někdy začínáme od fyzické strany a chceme vědět, kolik pixelů musí mít grafika, aby šla vytisknout v konkrétní velikosti. Následující tabulka ukazuje opačný převod pro čtyři nejpoužívanější rozlišení.",
+      "labelHeader": "Rozměr",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
+      "rows": [
+        { "label": "0,5 cm", "values": ["14 px", "19 px", "30 px", "59 px"] },
+        { "label": "1 cm", "values": ["28 px", "38 px", "59 px", "118 px"], "emphasis": true },
+        { "label": "2 cm", "values": ["57 px", "76 px", "118 px", "236 px"] },
+        { "label": "3 cm", "values": ["85 px", "113 px", "177 px", "354 px"] },
+        { "label": "5 cm", "values": ["142 px", "189 px", "295 px", "591 px"], "emphasis": true },
+        { "label": "7 cm", "values": ["198 px", "264 px", "413 px", "827 px"] },
+        {
+          "label": "10 cm",
+          "values": ["283 px", "378 px", "591 px", "1 181 px"],
+          "emphasis": true
+        },
+        { "label": "15 cm", "values": ["425 px", "567 px", "886 px", "1 772 px"] },
+        { "label": "20 cm", "values": ["567 px", "756 px", "1 181 px", "2 362 px"] },
+        {
+          "label": "21 cm (A4 šíř.)",
+          "values": ["595 px", "794 px", "1 240 px", "2 480 px"],
+          "emphasis": true
+        },
+        {
+          "label": "29,7 cm (A4 výš.)",
+          "values": ["842 px", "1 123 px", "1 754 px", "3 508 px"],
+          "emphasis": true
+        },
+        { "label": "50 cm", "values": ["1 417 px", "1 890 px", "2 953 px", "5 906 px"] }
+      ],
+      "caption": "Pokud používáte převod tímto směrem častěji, máme pro vás samostatnou kalkulačku cm na px s ještě širším rozsahem hodnot."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Nejoblíbenější fyzické formáty a jejich rozměry v pixelech",
+      "description": "Pokud místo jednotlivých pixelů potřebujete rozměry hotového formátu (například archu A4, fotografie 10×15 cm nebo pasové fotografie), tabulka níže uvádí hodnoty pro dvě nejpoužívanější rozlišení. Rozměry zapisujeme důsledně ve formátu šířka × výška a v orientaci na výšku.",
+      "labelHeader": "Formát",
+      "cols": ["Šíř. × výš. (cm)", "Šíř. × výš. (150 DPI)", "Šíř. × výš. (300 DPI)"],
+      "rows": [
+        { "groupLabel": "Papír řady ISO A" },
+        { "label": "A0", "values": ["84,1 × 118,9", "4 967 × 7 022", "9 933 × 14 043"] },
+        { "label": "A1", "values": ["59,4 × 84,1", "3 508 × 4 967", "7 016 × 9 933"] },
+        { "label": "A2", "values": ["42,0 × 59,4", "2 480 × 3 508", "4 961 × 7 016"] },
+        { "label": "A3", "values": ["29,7 × 42,0", "1 754 × 2 480", "3 508 × 4 961"] },
+        {
+          "label": "A4",
+          "values": ["21,0 × 29,7", "1 240 × 1 754", "2 480 × 3 508"],
+          "emphasis": true
+        },
+        { "label": "A5", "values": ["14,8 × 21,0", "874 × 1 240", "1 748 × 2 480"] },
+        { "label": "A6", "values": ["10,5 × 14,8", "620 × 874", "1 240 × 1 748"] },
+        { "label": "A7", "values": ["7,4 × 10,5", "437 × 620", "874 × 1 240"] },
+        { "groupLabel": "Fotografie a odlitky" },
+        { "label": "Foto 9 × 13", "values": ["9 × 13", "531 × 768", "1 063 × 1 535"] },
+        {
+          "label": "Foto 10 × 15",
+          "values": ["10 × 15", "591 × 886", "1 181 × 1 772"],
+          "emphasis": true
+        },
+        { "label": "Foto 13 × 18", "values": ["13 × 18", "768 × 1 063", "1 535 × 2 126"] },
+        { "label": "Foto 15 × 21", "values": ["15 × 21", "886 × 1 240", "1 772 × 2 480"] },
+        { "label": "Foto 20 × 30", "values": ["20 × 30", "1 181 × 1 772", "2 362 × 3 543"] },
+        { "groupLabel": "Doklady a vizitky" },
+        {
+          "label": "Foto na pas / OP (ČR, 35 × 45 mm)",
+          "values": ["3,5 × 4,5", "207 × 266", "413 × 531"],
+          "emphasis": true
+        },
+        { "label": "Česká vizitka", "values": ["9,0 × 5,0", "531 × 295", "1 063 × 591"] },
+        {
+          "label": "Evropská vizitka (ISO ID-1)",
+          "values": ["8,5 × 5,5", "502 × 325", "1 004 × 650"]
+        },
+        { "label": "Americká vizitka", "values": ["8,89 × 5,08", "525 × 300", "1 050 × 600"] }
+      ],
+      "caption": "Tyto hodnoty jsou zrcadlem tabulky z našeho převodníku cm na px – vždy můžete přejít z jedné strany na druhou, znáte-li jen počet pixelů a cílové DPI."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak přepnout pixely na centimetry v oblíbených programech?",
+      "inlineIcon": true,
+      "grid": "one",
+      "items": [
+        {
+          "title": "Photoshop",
+          "icon": "RiImageEditLine",
+          "description": "V Adobe Photoshopu zkontrolujete rozměry plátna a výsledek v centimetrech v okně <strong>Obraz &rsaquo; Velikost obrazu</strong>. Z rozbalovacího seznamu jednotek vyberte Centimetry a do pole Rozlišení zadejte cílové DPI – Photoshop ihned ukáže, kolika centimetrům odpovídají pixelové rozměry vašeho souboru. Pokud chcete, aby změna jednotky neovlivnila samotný počet pixelů souboru, odškrtněte volbu Převzorkování. Pak měníte jen způsob prezentace rozměrů, zatímco pixely zůstávají netknuté."
+        },
+        {
+          "title": "Illustrator",
+          "icon": "RiPencilLine",
+          "description": "Adobe Illustrator pracuje ve výchozí jednotce, kterou jste zvolili při vytváření dokumentu. Můžete ji změnit v <strong>Úpravy &rsaquo; Předvolby &rsaquo; Jednotky</strong> – vyberte Centimetry, pokud chcete vidět, jak velký bude projekt po vytištění. Samotný výsledek v centimetrech závisí na rozlišení kreslicího plátna nastaveném na začátku projektu. Pokud pracujete na souboru obdrženém v pixelech, ale potřebujete rozměry pro tiskárnu, nejjednodušší je zkopírovat hodnotu v pixelech z panelu Transformace a zadat ji do našeho převodníku s příslušným DPI."
+        },
+        {
+          "title": "Figma",
+          "icon": "RiLayoutGridLine",
+          "description": "Figma pracuje výhradně v pixelech a předpokládá pevných 96 DPI. To znamená, že pokud chcete vědět, jak velký bude váš projekt po vytištění v centimetrech, musíte hodnotu v pixelech nejprve přepočítat na cílové rozlišení tisku. Příklad: kreslicí plátno 1 181 × 1 772 px po vydělení 300 DPI je přesně fotografie 10 × 15 cm. Zadejte hodnotu z Figmy do našeho převodníku, nastavte 300 DPI a ihned uvidíte fyzický rozměr na papíře."
+        },
+        {
+          "title": "Canva",
+          "icon": "RiPaletteLine",
+          "description": "V Canvě po kliknutí na <strong>Vytvořit návrh &rsaquo; Vlastní velikost</strong> můžete zvolit jednotku cm nebo mm a hned vidět fyzický rozměr v centimetrech. Pokud pracujete na existující grafice v pixelech, otevřete panel s rozměry projektu a převeďte je naším převodníkem při 300 DPI, abyste zkontrolovali, jak velký bude soubor po vytištění. Canva ve výchozím nastavení exportuje soubory pro tisk při 300 DPI, takže naše tabulka formátů bude odpovídat tomu, co dostanete na výstupu."
+        },
+        {
+          "title": "Procreate",
+          "icon": "RiBrushLine",
+          "description": "Procreate při vytváření nového plátna umožňuje zvolit jednotku mezi pixely, milimetry, centimetry a palci. Na záložce Vlastní plátno zadejte rozměr v cm a nastavte 300 DPI, abyste viděli, kolik pixelů bude mít finální soubor. Pokud máte hotovou ilustraci v pixelech a chcete vědět, jak velká bude po vytištění, použijte náš převodník – Procreate ihned ukazuje rozměry aktuálního plátna v panelu Akce, takže je stačí zkopírovat."
+        },
+        {
+          "title": "Word, Excel, PowerPoint",
+          "icon": "RiFileTextLine",
+          "description": "Balík Microsoft 365 (Word, Excel a PowerPoint) pracuje v centimetrech a rozměry obrázků vložených do dokumentu nastavujete v panelu Velikost a umístění. Pokud vložíte snímek obrazovky nebo grafiku z internetu o rozměrech v pixelech, Office automaticky ukáže, kolika centimetrům to odpovídá při 96 DPI. PDF soubory exportované z těchto programů standardně zachovávají vysokou kvalitu, takže stejnou grafiku lze pak vytisknout ve fyzickém rozměru, jaký zobrazil Word."
+        },
+        {
+          "title": "CSS a HTML",
+          "icon": "RiHtml5Line",
+          "description": "V CSS stylech je jednotka cm přepočítávána pevným vzorcem 1cm = 96px ÷ 2,54 ≈ 37,8px. Jinými slovy 1 pixel CSS je vždy přibližně 0,0265 cm, bez ohledu na zařízení, na kterém stránku otevřete. V praxi se pro internetové rozhraní používají jednotky px, rem nebo em, zatímco cm se rezervuje pro styly určené k tisku (@media print). Až tehdy rozvržení stránky skutečně odpovídá fyzickým rozměrům listu papíru."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se vyplatí sáhnout po tomto převodníku?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCameraLine",
+          "title": "Posouzení fotografií z fotoaparátu pro tisk",
+          "description": "Víte, že vaše matrice produkuje soubory o rozměrech 6 000 × 4 000 px. Převodník ukáže, že při 300 DPI je to přesně 50,80 × 33,87 cm – v klidu vystačí na poster A2. Zkontrolujete také spodní hranici, tedy kolik centimetrů vyjde z menšího souboru z telefonu nebo grafiky nalezené na internetu."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Rozměry snímků obrazovky a grafiky z displeje",
+          "description": "Děláte snímek obrazovky v Full HD 1 920 × 1 080 px a chcete vědět, jak velký bude po vytištění ve fotografické kvalitě. Převodník ukáže, že při 300 DPI je to 16,26 × 9,14 cm – rozhodně dost na snímek prezentace, ale málo na celou stránku A4."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Kontrola grafiky před odesláním do tiskárny",
+          "description": "Obdrželi jste od klienta soubor o šířce 2 480 px a nevíte, jaký to je formát. Převodník ihned ukáže, že při 300 DPI je to přesně 21 cm, tedy kratší strana archu A4. Díky tomu se vyhnete situaci, kdy tiskárna odmítne soubor kvůli nevyhovujícímu rozlišení."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Foto na doklady a vizitky",
+          "description": "Fotoaparát vám dal fotografii 413 × 531 px a přemýšlíte, zda je to vhodný formát. Převodník ukáže, že při 300 DPI je to přesně 3,5 × 4,5 cm – požadavek českých biometrických fotografií na pas a občanský průkaz. Podobně zkontrolujete vizitky: soubor 1 063 × 591 px je standardní česká vizitka 9 × 5 cm při 300 DPI."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Srovnání jednotek pixelu a centimetru",
+      "labelHeader": "Vlastnost",
+      "cols": ["Pixel (px)", "Centimetr (cm)"],
+      "rows": [
+        { "label": "Druh jednotky", "values": ["Digitální a obrazovková", "Fyzická a hmatatelná"] },
+        {
+          "label": "Závislost na zařízení",
+          "values": ["Vychází z DPI nebo PPI", "Vždy stejná"]
+        },
+        { "label": "Obrazovka 96 DPI", "values": ["1 px je 0,0265 cm", "1 cm je 37,8 px"] },
+        { "label": "Tisk 300 DPI", "values": ["1 px je 0,0085 cm", "1 cm je 118 px"] },
+        {
+          "label": "Full HD 1 920 × 1 080 px",
+          "values": ["50,80 × 28,58 cm (96 DPI)", "16,26 × 9,14 cm (300 DPI)"]
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Nejčastější dotazy k převodu px na cm",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kolik centimetrů má 1 pixel?",
+          "answer": "Vše závisí na rozlišení, které nastavíte. Při standardu obrazovky 96 DPI je jeden pixel přibližně 0,0265 cm, zatímco při 300 DPI používaném v tisku jen 0,0085 cm. Pro převod libovolného počtu pixelů na centimetry ho vynásobte 2,54 a vydělte DPI."
+        },
+        {
+          "question": "Jaký je vzorec pro převod px na cm?",
+          "answer": "Vzorec je jednoduchý a vychází z pevného vztahu: jeden palec je přesně 2,54 cm. Úplný vzorec je počet centimetrů = počet pixelů × 2,54 ÷ DPI. Funguje i opačně: počet pixelů = počet centimetrů × DPI ÷ 2,54. Stačí znát dvě hodnoty – počet pixelů a cílové rozlišení – a bleskově dopočítáte třetí."
+        },
+        {
+          "question": "Jak převést pixely na centimetry?",
+          "answer": "Nejjednodušší je zadat počet pixelů do pole převodníku a vybrat zajímavé DPI – výsledek se objeví ihned. Pokud raději počítáte ručně, použijte vzorec: počet centimetrů = počet pixelů × 2,54 ÷ DPI. Pro 500 px při 300 DPI vyjde 500 × 2,54 ÷ 300, tedy přibližně 4,23 cm."
+        },
+        {
+          "question": "Kolik centimetrů má 100 pixelů?",
+          "answer": "Sto pixelů při obrazovce 96 DPI je přesně 2,65 cm – přibližně šířka palce dospělého člověka. V tisku při 300 DPI stejných 100 pixelů zabere jen 0,85 cm a při 600 DPI sotva 0,42 cm. Tuto hodnotu se vyplatí pamatovat, protože se často objevuje v rozměrech tlačítek a ikon na webových stránkách."
+        },
+        {
+          "question": "Kolik centimetrů má 200 pixelů?",
+          "answer": "Dvě stě pixelů při obrazovce 96 DPI je přibližně 5,29 cm. V tisku při 300 DPI stejných 200 pixelů zabere jen 1,69 cm, protože na palec se vejde více bodů. Při 600 DPI používaném ve fotografickém tisku vysoké kvality je to sotva 0,85 cm."
+        },
+        {
+          "question": "Kolik centimetrů má 300 pixelů?",
+          "answer": "Tři sta pixelů je přibližně 7,94 cm na obrazovce 96 DPI a přesně 2,54 cm v tisku 300 DPI – tedy rovný jeden palec. Tato souvislost není náhodná: standard 300 DPI doslova znamená, že na každý palec tisku připadá 300 bodů. Hodnota 300 px často odpovídá velikosti náhledu produktu v internetovém obchodě."
+        },
+        {
+          "question": "Kolik centimetrů má 500 pixelů?",
+          "answer": "Pět set pixelů odpovídá přibližně 13,23 cm na obrazovce 96 DPI a 4,23 cm v tisku 300 DPI. Hodnota 500 px je oblíbená šířka reklamních bannerů a avatarů, takže ji stojí za to pamatovat při rychlém odhadu rozměrů."
+        },
+        {
+          "question": "Kolik centimetrů má 1 000 pixelů?",
+          "answer": "Tisíc pixelů při 96 DPI je přibližně 26,46 cm, tedy zhruba šířka archu A4 s okraji. V tisku při 300 DPI stejných 1 000 pixelů je 8,47 cm – dost na vizitku nebo malou fotografii. Při 150 DPI používaném na plakáty a brožury vyjde 16,93 cm, tedy formát blízký pohlednici."
+        },
+        {
+          "question": "Kolik centimetrů má 1 080 pixelů?",
+          "answer": "Tisíc osmdesát pixelů je přesně 28,58 cm na typické obrazovce 96 DPI – tolik měří výška obrazu Full HD zobrazeného v měřítku 1:1. V tisku při 300 DPI stejných 1 080 pixelů zabere jen 9,14 cm, tedy zhruba šířku vizitky. Při 150 DPI používaném na plakáty vyjde 18,29 cm."
+        },
+        {
+          "question": "Kolik centimetrů má 1 920 pixelů?",
+          "answer": "Tisíc devět set dvacet pixelů je přesně 50,80 cm na obrazovce 96 DPI – odpovídá to šířce obrazu Full HD. V tisku při 300 DPI stejný počet pixelů zabere jen 16,26 cm a při 600 DPI sotva 8,13 cm. Tuto hodnotu se vyplatí pamatovat, protože se objevuje téměř v každém snímku z monitoru."
+        },
+        {
+          "question": "Jaké rozměry v centimetrech má obrazovka Full HD 1 920 × 1 080 px?",
+          "answer": "Plný snímek Full HD v měřítku 1:1 zabírá 50,80 × 28,58 cm při standardu obrazovky 96 DPI. Pokud byste chtěli stejný obraz vytisknout ve fotografické kvalitě 300 DPI, vešel by se přesně na 16,26 × 9,14 cm – zhruba šířka pohlednice. Při 4K UHD 3 840 × 2 160 px se všechny rozměry zdvojnásobí: 101,60 × 57,15 cm na obrazovce a 32,51 × 18,29 cm v tisku."
+        },
+        {
+          "question": "Jaké rozměry má obrazovka 4K (3 840 × 2 160 px) v centimetrech?",
+          "answer": "Rozlišení 4K UHD (3 840 × 2 160 px) v měřítku 1:1 odpovídá rozměrům 101,60 × 57,15 cm při standardu obrazovky 96 DPI – tedy přes metr šířky, což je zhruba velikost 45palcové televize sledované zblízka. V tisku při 300 DPI se stejný soubor vejde na 32,51 × 18,29 cm, formát blízký archu A4 v orientaci na šířku. Při 150 DPI vystačí na plakát 65,02 × 36,58 cm."
+        },
+        {
+          "question": "Kolik centimetrů má soubor o šířce 2 480 pixelů?",
+          "answer": "Soubor o šířce 2 480 pixelů při 300 DPI je přesně 21,00 cm, tedy kratší strana archu A4. Tiskárna takový soubor přijme bez výhrad, pokud výška činí 3 508 px (29,7 cm). Stejný soubor na obrazovce 96 DPI zabere 65,62 cm, tedy se roztáhne daleko za viditelnou oblast průměrného monitoru."
+        },
+        {
+          "question": "Kolik centimetrů má fotografie 6 000 pixelů z fotoaparátu?",
+          "answer": "Šest tisíc pixelů je typická šířka fotografie z digitální zrcadlovky nebo bezzrcadlovky střední třídy. Při 300 DPI používaném ve fotografickém tisku to dává 50,80 cm – dost na poster velikosti A2 nebo širokou galerijní odlitku. Pokud má fotografie poměr 3:2, druhá strana je 4 000 px, tedy 33,87 cm."
+        },
+        {
+          "question": "Jak nastavit pixely na centimetry v Photoshopu nebo Canvě?",
+          "answer": "V Photoshopu otevřete okno Obraz &rsaquo; Velikost obrazu, změňte jednotku z pixelů na centimetry a zadejte cílové DPI – program ukáže aktuální fyzickou velikost. V Canvě je panel s rozměry projektu viditelný při vytváření nového souboru nebo v menu Změnit velikost – stačí přepnout jednotky na cm. Podrobné návody pro Photoshop, Illustrator, Figmu, Canvu a Procreate najdete v sekci výše."
+        },
+        {
+          "question": "Jak nastavit px na cm v Illustratoru nebo Figmě?",
+          "answer": "V Adobe Illustratoru přejděte do menu Úpravy &rsaquo; Předvolby &rsaquo; Jednotky a vyberte Centimetry – jednotka se okamžitě změní ve všech panelech a pravítkách. Figma funguje jinak, protože pracuje výhradně v pixelech při pevných 96 DPI – nemá možnost přepínání jednotek. Pro kontrolu fyzického rozměru projektu Figmy zkopírujte hodnotu v pixelech z panelu Design a zadejte ji do našeho převodníku s nastavením cílového DPI (96 pro obrazovku, 300 pro tisk)."
+        },
+        {
+          "question": "Čím se liší DPI od PPI?",
+          "answer": "DPI (dots per inch) je počet bodů barvy připadající na palec materiálu a je to parametr tiskárny. PPI (pixels per inch) určuje počet pixelů na palec obrazovky a popisuje monitor nebo displej. V každodenní práci grafici používají obě zkratky zaměnitelně, technicky se však DPI týká tisku a PPI obrazovek."
+        },
+        {
+          "question": "Kolik centimetrů má pixel na obrazovce Retina?",
+          "answer": "Obrazovky Retina firmy Apple mají dvakrát hustší zaplnění pixely než klasický monitor, ale operační systém stále interpretuje rozměry tak, jako by panel měl 96 DPI. V praxi to znamená, že jeden fyzický pixel zabere asi 0,0132 cm místo 0,0265 cm, ale v designových panelech Photoshopu, Figmy nebo Canvy zůstávají hodnoty stejné – grafiku připravujete ve dvojnásobném rozlišení a exportujete s příponou @2x."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám tento převodník vylepšit",
+      "description": "Chybí vám nějaká hodnota v tabulkách, našli jste chybu v převodu nebo chcete navrhnout novou funkci? Napište nám – všechny zprávy čteme osobně a odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník px na cm – Arteon",
+      "defaultSubject": "Zpětná vazba: převodník px na cm"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Další nástroje, které se vám mohou hodit" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

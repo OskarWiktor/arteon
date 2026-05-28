@@ -1,13 +1,12 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolInfo from '@/components/atoms/ToolInfo';
 import ToolAlert from '@/components/atoms/ToolAlert';
-import ToolHelper from '@/components/organisms/tools/ToolHelper';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
-import ToolUploadContent from '@/components/organisms/tools/ToolUploadContent';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import type { ToolStatus } from '@/types/tools/common';
 import { revokeObjectUrl } from '@/utils/objectUrl';
 import { formatBytes } from '@/utils/formatBytes';
@@ -20,6 +19,9 @@ import {
 import { extractPalette, type ExtractedColor } from '@/lib/tools/color/extractPalette';
 import { useLocale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/palette-extractor';
+import Card from '@/components/organisms/Card';
+import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export default function PaletteExtractor() {
   const locale = useLocale();
@@ -107,7 +109,7 @@ export default function PaletteExtractor() {
 
   return (
     <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-      <ToolSection className='space-y-4'>
+      <Card>
         <div>
           <h2 className='h6 mb-2'>{t.addImageLabel}</h2>
           <FileDropzone
@@ -138,10 +140,10 @@ export default function PaletteExtractor() {
             </ToolAlert>
           )}
         </div>
-      </ToolSection>
+      </Card>
 
-      <ToolSection aria-label={t.preview} className='min-w-0 space-y-4'>
-        <div className='flex items-center justify-between gap-2'>
+      <Card aria-label={t.preview} className='min-w-0'>
+        <div className={cn('gap-2', flexCenterBetweenClasses)}>
           <h2 className='h6'>{t.preview}</h2>
           {file && (
             <p className='tool-meta'>
@@ -181,7 +183,12 @@ export default function PaletteExtractor() {
         {previewUrl && (
           <ToolInfo>
             <div className='flex items-center gap-3'>
-              <div className='flex h-14 w-14 items-center justify-center overflow-hidden rounded border border-neutral-300 bg-white'>
+              <div
+                className={cn(
+                  'h-14 w-14 overflow-hidden rounded border border-neutral-300 bg-white',
+                  flexCenterClasses,
+                )}
+              >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={previewUrl}
@@ -217,7 +224,7 @@ export default function PaletteExtractor() {
         {colors.length === 0 && previewUrl && status === 'done' && (
           <p className='tool-meta'>{t.empty}</p>
         )}
-      </ToolSection>
+      </Card>
     </div>
   );
 }

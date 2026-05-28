@@ -9,6 +9,8 @@ import type {
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import { LAYOUT_SPACING_MAP } from '@/lib/tools/email/signatureDefaults';
 import { RiAddLine, RiSubtractLine } from 'react-icons/ri';
+import { flexCenterBetweenClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 type Props = {
   config: SignatureConfig;
@@ -34,7 +36,7 @@ function SpacingRow({
   onSpacingChange: (key: SpacingKey, delta: number) => void;
 }) {
   return (
-    <div className='flex items-center justify-between gap-2 py-1'>
+    <div className={cn('gap-2 py-1', flexCenterBetweenClasses)}>
       <span className='tool-value'>{label}</span>
       <div className='flex items-center gap-1'>
         <button
@@ -43,7 +45,7 @@ function SpacingRow({
           className='rounded-md border border-neutral-300 p-1 hover:bg-neutral-100'
           aria-label='Zmniejsz odstęp'
         >
-          <RiSubtractLine className='text-primary h-4 w-4' />
+          <RiSubtractLine className={cn('text-primary', smallIconSizeClasses)} />
         </button>
         <span className='w-10 text-center text-xs! font-medium'>{value} px</span>
         <button
@@ -52,7 +54,7 @@ function SpacingRow({
           className='rounded-md border border-neutral-300 p-1 hover:bg-neutral-100'
           aria-label='Zwiększ odstęp'
         >
-          <RiAddLine className='text-primary h-4 w-4' />
+          <RiAddLine className={cn('text-primary', smallIconSizeClasses)} />
         </button>
       </div>
     </div>

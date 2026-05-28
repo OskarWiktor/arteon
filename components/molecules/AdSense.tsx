@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import type { AdSenseProps } from '@/types/ui';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 export type { AdVariant, AdSenseProps } from '@/types/ui';
 
 const AD_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? '';
@@ -260,10 +262,13 @@ export default function AdSense({ variant, adSlot, className, locale }: AdSenseP
   if (variant === 'tool-banner') {
     return (
       <div
-        className={`ad-placeholder flex min-h-[110px] flex-col items-center rounded bg-neutral-50 ${className}`}
+        className={cn(
+          'ad-placeholder flex min-h-[110px] flex-col items-center rounded bg-neutral-50',
+          className,
+        )}
       >
         {labelNode}
-        <div ref={containerRef} className='flex w-full items-center justify-center' />
+        <div ref={containerRef} className={cn('w-full', flexCenterClasses)} />
       </div>
     );
   }
@@ -280,7 +285,10 @@ export default function AdSense({ variant, adSlot, className, locale }: AdSenseP
   if (variant === 'vertical') {
     return (
       <div
-        className={`ad-placeholder inline-block min-h-[600px] w-[160px] rounded bg-neutral-50 ${className}`}
+        className={cn(
+          'ad-placeholder inline-block min-h-[600px] w-[160px] rounded bg-neutral-50',
+          className,
+        )}
       >
         {labelNode}
         <div ref={containerRef} className='h-full w-full' />
@@ -290,7 +298,7 @@ export default function AdSense({ variant, adSlot, className, locale }: AdSenseP
 
   if (isInArticleVariant) {
     return (
-      <div className={`ad-placeholder min-h-[280px] w-full rounded bg-neutral-50 ${className}`}>
+      <div className={cn('ad-placeholder min-h-[280px] w-full rounded bg-neutral-50', className)}>
         {labelNode}
         <div ref={containerRef} className='w-full' />
       </div>
@@ -298,7 +306,7 @@ export default function AdSense({ variant, adSlot, className, locale }: AdSenseP
   }
 
   return (
-    <div className={`ad-placeholder rounded bg-neutral-50 ${className}`}>
+    <div className={cn('ad-placeholder rounded bg-neutral-50', className)}>
       {labelNode}
       <div ref={containerRef} />
     </div>

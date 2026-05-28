@@ -22,16 +22,12 @@ function SitemapSection({ title, items }: { title: string; items: NavItem[] }) {
       <ul className='grid gap-2 sm:grid-cols-2 lg:grid-cols-3'>
         {items.map(item => (
           <li key={item.href}>
-            <InlineLink href={item.href} prefetch={false}>
-              {item.title}
-            </InlineLink>
+            <InlineLink href={item.href}>{item.title}</InlineLink>
             {item.children && item.children.length > 0 && (
               <ul className='mt-1 ml-4 space-y-1'>
                 {item.children.map(child => (
                   <li key={child.href}>
-                    <InlineLink href={child.href} prefetch={false}>
-                      {child.title}
-                    </InlineLink>
+                    <InlineLink href={child.href}>{child.title}</InlineLink>
                   </li>
                 ))}
               </ul>
@@ -59,9 +55,7 @@ export default function SitemapPageClient({
         <nav aria-label='okruszki' className='mb-6'>
           <ol className='flex gap-2 text-sm'>
             <li>
-              <InlineLink href='/' prefetch={false}>
-                Strona główna
-              </InlineLink>
+              <InlineLink href='/'>Strona główna</InlineLink>
               <span className='text-primary-mid ml-2'>/</span>
             </li>
             <li>

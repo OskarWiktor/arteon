@@ -2,9 +2,8 @@
 
 import { useState, type FormEvent } from 'react';
 import Button from '@/components/atoms/buttons/Button';
-import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolInfo from '@/components/atoms/ToolInfo';
-import ToolHelper from '@/components/organisms/tools/ToolHelper';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
 import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
@@ -13,6 +12,9 @@ import { formatHsl, normalizeHex, randomHexColor, rgbToHex } from '@/lib/tools/c
 import { createPaletteFromHex, type PaletteGroupId } from '@/lib/tools/color/palette';
 import { useLocale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/color-palette';
+import Card from '@/components/organisms/Card';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 function getPaletteMeta(
   t: (typeof ui)[keyof typeof ui],
@@ -76,7 +78,7 @@ export default function ColorPaletteGenerator() {
 
   return (
     <div className='space-y-4 overflow-hidden'>
-      <ToolSection>
+      <Card padding='md'>
         <form onSubmit={handleSubmit} className='space-y-4'>
           <div className='flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between'>
             <InputColorWithLabel
@@ -105,7 +107,7 @@ export default function ColorPaletteGenerator() {
             {normalizedBase && (
               <ToolInfo className='flex items-center gap-3'>
                 <div
-                  className='tool-color-swatch h-7 w-7'
+                  className='rounded-md border border-black/10 h-7 w-7'
                   style={{ backgroundColor: normalizedBase }}
                   aria-label={t.currentBaseColor}
                 />
@@ -117,9 +119,9 @@ export default function ColorPaletteGenerator() {
             )}
           </div>
         </form>
-      </ToolSection>
+      </Card>
 
-      <ToolSection aria-label={t.generatedPalettes} className='space-y-4'>
+      <Card aria-label={t.generatedPalettes}>
         {!normalizedBase && (
           <ToolAlert variant='error'>
             {t.colorReadError} <code className='rounded bg-black/5 px-1'>#rrggbb</code>, {t.example}{' '}
@@ -137,7 +139,7 @@ export default function ColorPaletteGenerator() {
           <div className='grid gap-4 md:grid-cols-2'>
             {palettes.map(group => (
               <ToolInfo key={group.id} className='space-y-2'>
-                <div className='flex items-center justify-between gap-2'>
+                <div className={cn('gap-2', flexCenterBetweenClasses)}>
                   <div>
                     <p className='tool-value'>{group.label}</p>
                     <ToolHelper>{group.description}</ToolHelper>
@@ -160,7 +162,7 @@ export default function ColorPaletteGenerator() {
             ))}
           </div>
         )}
-      </ToolSection>
+      </Card>
     </div>
   );
 }

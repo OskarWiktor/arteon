@@ -1,28 +1,20 @@
 import SectionHeader from '@/components/molecules/SectionHeader';
+import { cn } from '@/lib/utils';
 import { useId } from 'react';
 
 export interface SectionTableRow {
-  /** First-column label (row header). Required unless this is a group separator. */
   label?: string;
-  /** Cell values for each column, in same order as `cols`. */
   values?: string[];
-  /** Renders the row in medium weight to emphasise a particularly important entry. */
   emphasis?: boolean;
-  /** When set, the row becomes a full-width group header spanning all columns. */
   groupLabel?: string;
 }
 
 interface SectionTableProps {
   title?: string;
-  /** Lead paragraph rendered above the table. */
   description?: string;
-  /** Small footnote rendered below the table. */
   caption?: string;
-  /** Header text for the first (label) column. Defaults to empty string. */
   labelHeader?: string;
-  /** Headers for the value columns (excluding the label column). */
   cols: string[];
-  /** Data rows; supports a `groupLabel` row variant for section separators. */
   rows: SectionTableRow[];
 }
 
@@ -77,14 +69,19 @@ export default function SectionTable({
                 <tr key={i} className='border-b border-black/5'>
                   <th
                     scope='row'
-                    className={`p-4 text-left text-sm ${row.emphasis ? 'text-dark font-medium' : 'font-normal'}`}
+                    className={cn(
+                      'p-4 text-left text-sm',
+                      row.emphasis ? 'text-dark font-medium' : 'font-normal',
+                    )}
                   >
                     {row.label}
                   </th>
                   {(row.values ?? []).map((v, j) => (
                     <td
                       key={j}
-                      className={`p-4 text-right text-sm ${row.emphasis ? 'font-medium' : ''}`}
+                      className={cn('p-4 text-right text-sm', {
+                        'font-medium': row.emphasis === true,
+                      })}
                     >
                       {v}
                     </td>

@@ -2,6 +2,8 @@ import type { ReactNode } from 'react';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '../../atoms/Wrapper';
 import SectionHeader from '@/components/molecules/SectionHeader';
+import { flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 interface ProcessStep {
   number: number;
@@ -24,7 +26,12 @@ export default function SectionProcess({ title, steps }: SectionProcessProps) {
           {steps.map((step, index) => (
             <div key={index} className='flex flex-1 items-center'>
               <div className='flex flex-1 items-center gap-3 rounded-lg bg-white p-4 shadow-sm'>
-                <div className='bg-primary flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg text-white'>
+                <div
+                  className={cn(
+                    'bg-primary h-12 w-12 flex-shrink-0 rounded-lg text-white',
+                    flexCenterClasses,
+                  )}
+                >
                   {step.icon}
                 </div>
                 <div>

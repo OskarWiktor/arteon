@@ -8,6 +8,12 @@ import { RiCloseLine, RiCheckLine, RiArrowDownSLine, RiArrowUpSLine } from 'reac
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import ButtonLink from '../atoms/buttons/ButtonLink';
+import { cn } from '@/lib/utils';
+import {
+  flexCenterBetweenClasses,
+  normalIconSizeClasses,
+  smallIconSizeClasses,
+} from '@/lib/ui-classes';
 
 type Cat = { label: string; slug: string; count: number };
 
@@ -112,9 +118,9 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
             >
               <span>{isExpanded ? 'Mniej filtrów' : 'Więcej filtrów'}</span>
               {isExpanded ? (
-                <RiArrowUpSLine className='h-4 w-4' />
+                <RiArrowUpSLine className={smallIconSizeClasses} />
               ) : (
-                <RiArrowDownSLine className='h-4 w-4' />
+                <RiArrowDownSLine className={smallIconSizeClasses} />
               )}
             </button>
           )}
@@ -197,7 +203,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
         className='animate-modal-content w-full max-w-lg overflow-hidden rounded-lg bg-white shadow-lg'
         onKeyDown={handleKeyDown}
       >
-        <div className='flex items-center justify-between border-b border-neutral-200 px-4 py-3'>
+        <div className={cn('border-b border-neutral-200 px-4 py-3', flexCenterBetweenClasses)}>
           <h3 className='text-base font-semibold'>Wybierz kategorię</h3>
           <button
             type='button'
@@ -205,7 +211,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
             className='text-primary hover:bg-primary-light rounded-lg p-1.5'
             aria-label='Zamknij'
           >
-            <RiCloseLine className='h-5 w-5' />
+            <RiCloseLine className={normalIconSizeClasses} />
           </button>
         </div>
 
@@ -228,13 +234,24 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
                 onClick={onClose}
                 role='option'
                 aria-selected={isActive}
-                className={`flex w-full items-center justify-between px-4 py-3 text-left transition ${isActive ? 'bg-primary-light' : 'hover:bg-neutral-50'}`}
+                className={cn(
+                  'flex w-full items-center justify-between px-4 py-3 text-left transition',
+                  {
+                    'bg-primary-light': isActive,
+                    'hover:bg-neutral-50': !isActive,
+                  },
+                )}
               >
                 <span className='flex items-center gap-2'>
                   <span className='font-medium'>{item.label}</span>
                   {!item.isAll && <span className='text-light text-sm'>({item.count})</span>}
                 </span>
-                {isActive && <RiCheckLine className='text-primary h-5 w-5' aria-hidden='true' />}
+                {isActive && (
+                  <RiCheckLine
+                    className={cn('text-primary', normalIconSizeClasses)}
+                    aria-hidden='true'
+                  />
+                )}
               </Link>
             );
           })}

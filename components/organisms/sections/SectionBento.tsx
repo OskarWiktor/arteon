@@ -2,12 +2,16 @@ import type { ReactNode } from 'react';
 import Image from 'next/image';
 import ButtonLink from '../../atoms/buttons/ButtonLink';
 import SectionHeader from '@/components/molecules/SectionHeader';
+import { flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+
+type BentoItemSize = 'small' | 'medium' | 'large';
 
 interface BentoItem {
   title: string;
   description?: string;
   icon?: ReactNode;
-  size: 'small' | 'medium' | 'large';
+  size: BentoItemSize;
   backgroundImage: string;
   btnLabel?: string;
   btnLink?: string;
@@ -18,6 +22,12 @@ interface SectionBentoProps {
   items: BentoItem[];
 }
 
+const BentoItemSizeClasses: Record<BentoItemSize, string> = {
+  small: 'col-span-1 row-span-1',
+  medium: 'col-span-2 row-span-1',
+  large: 'col-span-2 row-span-2',
+};
+
 export default function SectionBento({ title, items }: SectionBentoProps) {
   return (
     <section data-section='bento' aria-labelledby={title ? 'bento-title' : undefined}>
@@ -25,17 +35,12 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
 
       <div className='grid auto-rows-[240px] grid-cols-2 gap-3 md:grid-cols-4'>
         {items.map((item, index) => {
-          const sizeClass =
-            item.size === 'large'
-              ? 'col-span-2 row-span-2'
-              : item.size === 'medium'
-                ? 'col-span-2'
-                : '';
-
           return (
             <div
               key={index}
-              className={`relative flex flex-col justify-end overflow-hidden rounded-lg ${sizeClass}`}
+              className={cn('relative flex flex-col justify-end overflow-hidden rounded-lg', {
+                [BentoItemSizeClasses[item.size]]: true,
+              })}
             >
               <Image
                 src={item.backgroundImage}
@@ -52,11 +57,21 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
 
               <div className='relative z-10 p-4'>
                 {item.icon && (
-                  <div className='mb-2 flex h-9 w-9 items-center justify-center rounded-md bg-white/20 text-white'>
+                  <div
+                    className={cn(
+                      'mb-2 h-9 w-9 rounded-md bg-white/20 text-white',
+                      flexCenterClasses,
+                    )}
+                  >
                     {item.icon}
                   </div>
                 )}
-                <h3 className={item.size === 'large' ? 'h5 mb-1 text-white' : 'h6 mb-1 text-white'}>
+                <h3
+                  className={cn('mb-1 text-white', {
+                    h5: item.size === 'large',
+                    h6: item.size !== 'large',
+                  })}
+                >
                   {item.title}
                 </h3>
                 <p className='text-sm text-white/80'>{item.description}</p>

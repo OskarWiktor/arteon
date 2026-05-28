@@ -1,7 +1,7 @@
 import type { SignatureConfig, StyleConfig } from '@/types/tools/email';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
-import Textarea from '@/components/atoms/form/Textarea';
+import TextareaWithLabel from '@/components/molecules/form/TextareaWithLabel';
 
 type Props = {
   config: SignatureConfig;
@@ -164,25 +164,21 @@ export default function IdentityPanel({
         placeholder={t.identity.websitePlaceholder}
       />
 
-      <div>
-        <label className='mb-1 block'>
-          <span className='tool-label'>{t.identity.address}</span>
-        </label>
-        <Textarea
+      <div className='mb-1'>
+        <TextareaWithLabel
+          label={t.identity.address}
           value={config.address}
-          onChange={e => onTextChange('address', e.target.value)}
+          onChange={value => onTextChange('address', value)}
           rows={2}
           placeholder={t.identity.addressPlaceholder}
         />
       </div>
 
-      <div>
-        <label className='mb-1 block'>
-          <span className='tool-label'>{t.identity.formalLine}</span>
-        </label>
-        <Textarea
+      <div className='mb-1'>
+        <TextareaWithLabel
+          label={t.identity.formalLine}
           value={config.formalLine}
-          onChange={e => onTextChange('formalLine', e.target.value)}
+          onChange={value => onTextChange('formalLine', value)}
           rows={2}
           placeholder={t.identity.formalLinePlaceholder}
         />

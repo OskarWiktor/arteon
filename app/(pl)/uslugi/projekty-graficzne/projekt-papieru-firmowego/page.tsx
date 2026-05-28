@@ -15,7 +15,7 @@ import SectionContactForm from '@/components/organisms/sections/SectionContactFo
 import Wrapper from '@/components/atoms/Wrapper';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import Script from 'next/script';
@@ -24,6 +24,8 @@ import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsC
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Projekt papieru firmowego | Arteon',
@@ -145,7 +147,7 @@ export default function OfferDesignLetterheadPage() {
               description: (
                 <>Projekt wzmacnia profesjonalny obraz firmy w każdym piśmie i wiadomości.</>
               ),
-              icon: <RiFileTextLine className='text-primary h-6 w-6' />,
+              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Szablony do codziennej pracy',
@@ -155,7 +157,7 @@ export default function OfferDesignLetterheadPage() {
                   elektroniczne.
                 </>
               ),
-              icon: <RiBookOpenLine className='text-primary h-6 w-6' />,
+              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Dopasowanie danych i układu',
@@ -165,19 +167,21 @@ export default function OfferDesignLetterheadPage() {
                   marki.
                 </>
               ),
-              icon: <RiPencilRuler2Line className='text-primary h-6 w-6' />,
+              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Szybka realizacja i poprawki',
               description: (
                 <>Ustalamy termin, dostarczamy projekt i wspólnie dopracowujemy szczegóły.</>
               ),
-              icon: <RiMessage2Line className='text-primary h-6 w-6' />,
+              icon: <RiMessage2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
+              icon: (
+                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
           ]}
         />
@@ -308,7 +312,7 @@ export default function OfferDesignLetterheadPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego'
           title='Najczęstsze pytania dotyczące projektów papieru firmowego'

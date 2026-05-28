@@ -152,10 +152,8 @@ export default function AboutPage() {
                 <p>
                   Jasne zasady: faktura po realizacji (małe projekty), przy większych niska zaliczka
                   i kamienie milowe. Gwarancja opisana w{' '}
-                  <InlineLink href='/regulamin' prefetch={false}>
-                    regulaminie
-                  </InlineLink>
-                  . Po wdrożeniu dwa miesiące wsparcia w cenie.
+                  <InlineLink href='/regulamin'>regulaminie</InlineLink>. Po wdrożeniu dwa miesiące
+                  wsparcia w cenie.
                 </p>
               ),
             },

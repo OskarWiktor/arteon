@@ -2,19 +2,26 @@
 
 import { useEffect, useState } from 'react';
 import Card from './Card';
+import { cn } from '@/lib/utils';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
 
 type Entry = { id: string; text: string; level: 2 | 3 };
 
+type SizeClass = 'small' | 'large';
+
 type TableOfContentsProps = {
   rootSelector?: string;
-  size?: 'small' | 'large';
-  levels?: 'h2' | 'h2+h3';
+  size?: SizeClass;
+};
+
+const widthClass = {
+  small: 'lg:w-[208px]',
+  large: 'lg:w-[300px]',
 };
 
 export default function TableOfContents({
   rootSelector = '#article-root',
   size = 'small',
-  levels = 'h2+h3',
 }: TableOfContentsProps) {
   const [items, setItems] = useState<Entry[]>([]);
   const [activeId, setActiveId] = useState<string>('');
@@ -24,8 +31,7 @@ export default function TableOfContents({
     const sectionFallback = 'sekcja';
     const root = (document.querySelector(rootSelector) as Document | Element) || document;
 
-    const selector = levels === 'h2' ? 'h2' : 'h2, h3';
-    const headings = Array.from(root.querySelectorAll(selector)) as HTMLElement[];
+    const headings = Array.from(root.querySelectorAll('h2')) as HTMLElement[];
 
     const seen = new Set<string>();
     const slugify = (t: string) =>
@@ -75,15 +81,13 @@ export default function TableOfContents({
 
     headings.forEach(h => obs.observe(h));
     return () => obs.disconnect();
-  }, [rootSelector, levels]);
+  }, [rootSelector]);
 
   const hasItems = items.length > 0;
   if (!hasItems) return null;
 
-  const widthClass = size === 'small' ? 'lg:w-[208px]' : 'lg:w-[300px]';
-
   const LinkList = ({ dense = false }: { dense?: boolean }) => (
-    <ul className={dense ? 'space-y-0.5 text-[13px] leading-tight' : 'space-y-0.5 text-sm'}>
+    <ul className={cn(dense ? 'space-y-0.5 text-[13px] leading-tight' : 'space-y-0.5 text-sm')}>
       {items.map(i => {
         const isActive = activeId === i.id;
         return (
@@ -91,7 +95,10 @@ export default function TableOfContents({
             <a
               href={`#${i.id}`}
               aria-current={isActive ? 'location' : undefined}
-              className={`text-mid flex items-center gap-1 rounded-lg px-2 py-1 hover:underline ${isActive ? 'bg-black/5' : ''}`}
+              className={cn(
+                'text-mid flex items-center gap-1 rounded-lg px-2 py-1 hover:underline',
+                isActive ? 'bg-black/5' : '',
+              )}
             >
               <span className='line-clamp-1 text-[14px]'>{i.text}</span>
             </a>
@@ -103,9 +110,9 @@ export default function TableOfContents({
 
   return (
     <>
-      <aside className={`block lg:hidden ${widthClass}`}>
-        <Card variant='outlined' className='relative shadow-sm'>
-          <div className='flex items-center justify-between p-2'>
+      <aside className={cn('block lg:hidden', widthClass[size])}>
+        <Card variant='outlined' className='relative' padding='md'>
+          <div className={cn('p-2', flexCenterBetweenClasses)}>
             <p className='text-light text-xs font-medium tracking-wider uppercase'>
               Spis treści <span className='opacity-60'>({items.length})</span>
             </p>
@@ -122,7 +129,11 @@ export default function TableOfContents({
           <nav aria-label='Spis treści' className='px-2 pb-2'>
             <div className='relative'>
               <div
-                className={`overflow-y-auto ${expanded ? 'max-h-[70vh]' : 'max-h-40'} pr-1 pb-6`}
+                className={cn(
+                  'overflow-y-auto',
+                  expanded ? 'max-h-[70vh]' : 'max-h-40',
+                  'pr-1 pb-6',
+                )}
               >
                 <LinkList dense />
               </div>
@@ -137,8 +148,8 @@ export default function TableOfContents({
         </Card>
       </aside>
 
-      <aside className={`sticky top-24 hidden ${widthClass} self-start lg:block`}>
-        <Card variant='outlined' padding='sm' className='shadow-sm'>
+      <aside className={cn('sticky top-24 hidden', 'self-start lg:block', widthClass[size])}>
+        <Card variant='outlined'>
           <p className='text-light mb-2 text-xs tracking-wider uppercase'>Spis treści</p>
           <nav aria-label='Spis treści'>
             <LinkList />

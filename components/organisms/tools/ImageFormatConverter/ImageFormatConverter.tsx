@@ -6,11 +6,10 @@ import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
-import ToolFileRow from '@/components/organisms/tools/ToolFileRow';
-import ToolProgressBar from '@/components/organisms/tools/ToolProgressBar';
+import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
+import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
-import ToolSection from '@/components/organisms/tools/ToolSection';
-import ToolUploadContent from '@/components/organisms/tools/ToolUploadContent';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import { useDictionary } from '@/lib/LocaleContext';
 import { downloadBlob } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
@@ -23,6 +22,9 @@ import {
   hasQualitySlider,
 } from '@/lib/tools/image/imageFormatConverter';
 import type { ImageFormatConverterProps } from '@/types/tools/image-format-converter';
+import Card from '../../Card';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 function tpl(str: string, vars: Record<string, string>): string {
   return Object.entries(vars).reduce(
@@ -164,7 +166,7 @@ export default function ImageFormatConverter({
       />
 
       <div className='grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-        <ToolSection className='space-y-4'>
+        <Card>
           <form onSubmit={handleSubmit} className='space-y-4'>
             <div>
               <h2 className='h6 mb-2'>{t.addFiles}</h2>
@@ -200,7 +202,7 @@ export default function ImageFormatConverter({
               <h3 className='h6 mt-8 mb-2'>{t.convertAndDownload}</h3>
               {total > 0 && (
                 <div className='mb-3 space-y-2'>
-                  <div className='flex items-center justify-between'>
+                  <div className={flexCenterBetweenClasses}>
                     <span className='tool-meta'>
                       {t.inQueue} <strong>{total}</strong> {t.files}
                     </span>
@@ -273,10 +275,10 @@ export default function ImageFormatConverter({
               )}
             </div>
           </form>
-        </ToolSection>
+        </Card>
 
-        <ToolSection aria-label={t.queueAriaLabel} className='space-y-2'>
-          <div className='flex items-center justify-between gap-2'>
+        <Card aria-label={t.queueAriaLabel}>
+          <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <h2 className='h6'>{t.queueHeading}</h2>
             {files.length > 0 && (
               <p className='tool-meta'>
@@ -380,7 +382,7 @@ export default function ImageFormatConverter({
               })}
             </div>
           )}
-        </ToolSection>
+        </Card>
       </div>
     </div>
   );

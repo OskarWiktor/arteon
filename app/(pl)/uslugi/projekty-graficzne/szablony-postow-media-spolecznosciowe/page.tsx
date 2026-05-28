@@ -8,7 +8,7 @@ import SectionContactForm from '@/components/organisms/sections/SectionContactFo
 import Wrapper from '@/components/atoms/Wrapper';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
@@ -19,6 +19,8 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Szablony postów do mediów społecznościowych | Arteon',
@@ -142,7 +144,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
                   od zera - zgodnie z grupą odbiorców i charakterem komunikacji.
                 </>
               ),
-              icon: <IoColorPalette className='text-primary h-6 w-6' />,
+              icon: <IoColorPalette className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Edytowalne pliki',
@@ -153,7 +155,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
                   zaawansowanych programów.
                 </>
               ),
-              icon: <RiFileTextLine className='text-primary h-6 w-6' />,
+              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'System pod różne typy postów',
@@ -163,12 +165,14 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
                   opinia, poradnik, cytat, karuzela, okładka wideo czy zapowiedź wydarzenia.
                 </>
               ),
-              icon: <RiLayoutLine className='text-primary h-6 w-6' />,
+              icon: <RiLayoutLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className='text-primary h-6 w-6' />,
+              icon: (
+                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
           ]}
         />
@@ -289,7 +293,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           pageUrl='https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe'
           title='Najczęstsze pytania dotyczące projektów szablonów postów na media społecznościowe'

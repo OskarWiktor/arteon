@@ -8,6 +8,8 @@ import Wrapper from '@/components/atoms/Wrapper';
 import type { Metadata } from 'next';
 import { RiAppsLine, RiPantoneLine, RiShareForwardLine } from 'react-icons/ri';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import { cn } from '@/lib/utils';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
 
 export const metadata: Metadata = {
   title: 'Dołącz do sieci Arteon',
@@ -79,26 +81,26 @@ export default function JoinNetworkPage() {
           items={[
             {
               title: 'Wideo i montaż',
-              icon: <RiShareForwardLine className='text-primary h-6 w-6' />,
+              icon: <RiShareForwardLine className={cn('text-primary', normalIconSizeClasses)} />,
               description: (
                 <p>Montaż rolek i krótkich formatów wideo do mediów społecznościowych.</p>
               ),
             },
             {
               title: 'Animacje',
-              icon: <RiPantoneLine className='text-primary h-6 w-6' />,
+              icon: <RiPantoneLine className={cn('text-primary', normalIconSizeClasses)} />,
               description: (
                 <p>Tworzenie animacji do krótkich filmów do mediów społecznościowych.</p>
               ),
             },
             {
               title: 'Grafika 3D i wizualizacje',
-              icon: <RiPantoneLine className='text-primary h-6 w-6' />,
+              icon: <RiPantoneLine className={cn('text-primary', normalIconSizeClasses)} />,
               description: <p>Tworzenie grafik 3D, w tym głównie wizualizacji produktów.</p>,
             },
             {
               title: 'Aplikacje mobilne',
-              icon: <RiAppsLine className='text-primary h-6 w-6' />,
+              icon: <RiAppsLine className={cn('text-primary', normalIconSizeClasses)} />,
               description: (
                 <p>
                   Tworzenie dedykowanych rozwiązań biznesowych dla systemów Android i iOS (React

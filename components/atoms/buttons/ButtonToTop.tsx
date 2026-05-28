@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { RiArrowUpLine } from 'react-icons/ri';
 import { useEventListener } from '@/hooks/useEventListener';
 import ButtonCircle from './ButtonCircle';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
 
 interface ButtonToTop {
   targetId?: string;
@@ -46,7 +47,7 @@ export default function ButtonToTop({
       ariaLabel={label}
       className='fixed right-5 bottom-5 z-50'
     >
-      <RiArrowUpLine aria-hidden className='h-5 w-5' />
+      <RiArrowUpLine aria-hidden className={normalIconSizeClasses} />
     </ButtonCircle>
   );
 }

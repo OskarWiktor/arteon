@@ -1,4 +1,4 @@
-﻿import ToolsIndexSkeleton from '@/components/organisms/skeletons/ToolsIndexSkeleton';
+﻿import ToolsIndexSkeleton from '@/components/pages/skeletons/ToolsIndexSkeleton';
 
 export default function Loading() {
   return <ToolsIndexSkeleton />;

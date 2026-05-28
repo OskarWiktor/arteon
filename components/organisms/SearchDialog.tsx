@@ -9,9 +9,11 @@ import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import { useDictionary, useLocale, useLocaleConfig } from '@/lib/LocaleContext';
 import type { SearchCategory, SearchItem } from '@/lib/search/searchIndex';
-
 import InlineLink from '../atoms/InlineLink';
 import Input from '../atoms/form/Input';
+import { cn } from '@/lib/utils';
+import { smallIconSizeClasses } from '@/lib/ui-classes';
+
 type SearchDialogProps = {
   isOpen: boolean;
   onClose: () => void;
@@ -30,7 +32,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
   const [activeIndex, setActiveIndex] = useState(-1);
   const mounted = useIsMounted();
 
-  const CATEGORY_LABELS: Record<SearchCategory, string> = {
+  const categoryLabels: Record<SearchCategory, string> = {
     uslugi: t.categoryServices,
     narzedzia: t.categoryTools,
     edukacja: t.categoryEducation,
@@ -109,9 +111,8 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
           </p>
           <InlineLink
             href={localeConfig.contactHref ?? '/kontakt'}
-            prefetch={false}
             onClick={onClose}
-            className='text-dark inline-link mt-2 inline-block text-sm font-medium'
+            className='inline-link mt-2 inline-block font-medium'
           >
             {t.contactUs}
           </InlineLink>
@@ -130,7 +131,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
           return (
             <div key={category} className='mb-2'>
               <div className='text-light px-4 py-1.5 text-xs font-semibold tracking-wide uppercase'>
-                {CATEGORY_LABELS[category]}
+                {categoryLabels[category]}
               </div>
               {items.slice(0, 5).map(item => {
                 const currentIndex = globalIndex++;
@@ -165,7 +166,10 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
     >
       <div className='animate-modal-content w-full max-w-xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black/5'>
         <div className='flex items-center gap-2 border-b border-neutral-200 px-4 py-1'>
-          <RiSearchLine className='text-primary h-4 w-4 shrink-0' aria-hidden='true' />
+          <RiSearchLine
+            className={cn('text-primary shrink-0', smallIconSizeClasses)}
+            aria-hidden='true'
+          />
           <Input
             ref={inputRef}
             type='text'
@@ -181,7 +185,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
             className='text-primary hover:bg-primary-light rounded p-0.5'
             aria-label={t.ariaClose}
           >
-            <RiCloseLine className='h-4 w-4' />
+            <RiCloseLine className={smallIconSizeClasses} />
           </button>
         </div>
 
@@ -205,14 +209,20 @@ function SearchResultItem({ item, isActive, dataIndex, onClick }: SearchResultIt
       type='button'
       data-index={dataIndex}
       onClick={onClick}
-      className={`group flex w-full items-center gap-3 px-4 py-2 text-left transition ${isActive ? 'bg-neutral-100' : 'hover:bg-neutral-50'}`}
+      className={cn('group flex w-full items-center gap-3 px-4 py-2 text-left transition', {
+        'bg-neutral-100': isActive,
+        'hover:bg-neutral-50': !isActive,
+      })}
     >
       <div className='min-w-0 flex-1'>
         <div className='text-dark truncate text-sm font-medium'>{item.title}</div>
         {item.description && <div className='text-light truncate text-xs'>{item.description}</div>}
       </div>
       <RiArrowRightSLine
-        className={`text-primary h-4 w-4 shrink-0 transition ${isActive ? 'translate-x-0.5 opacity-100' : 'opacity-0 group-hover:opacity-50'}`}
+        className={cn('text-primary shrink-0 transition', smallIconSizeClasses, {
+          'translate-x-0.5 opacity-100': isActive,
+          'opacity-0 group-hover:opacity-50': !isActive,
+        })}
         aria-hidden='true'
       />
     </button>

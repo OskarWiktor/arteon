@@ -1,3 +1,5 @@
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 import type { ReactNode } from 'react';
 
 interface ToolStatRowProps {
@@ -9,7 +11,11 @@ interface ToolStatRowProps {
 export default function ToolStatRow({ label, value, className = '' }: ToolStatRowProps) {
   return (
     <div
-      className={`flex items-center justify-between rounded-md border border-neutral-200 bg-white px-3 py-2 ${className}`}
+      className={cn(
+        'rounded-md border border-neutral-200 bg-white px-3 py-2',
+        flexCenterBetweenClasses,
+        className,
+      )}
     >
       <span className='tool-value'>{label}</span>
       <strong className='text-dark'>{value}</strong>

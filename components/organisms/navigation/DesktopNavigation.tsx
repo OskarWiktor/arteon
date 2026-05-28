@@ -21,9 +21,14 @@ import {
   NavArrowRightSLine as RiArrowRightSLine,
 } from '@/components/atoms/NavIcons';
 
-import InlineLink from '../atoms/InlineLink';
+import InlineLink from '../../atoms/InlineLink';
 import { cn } from '@/lib/utils';
-import { focusRingClasses } from '@/lib/ui-classes';
+import {
+  flexCenterClasses,
+  focusRingClasses,
+  normalIconSizeClasses,
+  smallIconSizeClasses,
+} from '@/lib/ui-classes';
 const plUi = {
   closeServicesList: 'Zamknij listę usług',
   openServicesList: 'Otwórz listę usług',
@@ -131,7 +136,7 @@ export default function DesktopNavigation() {
         const Icon = item.icon;
         return {
           ...item,
-          icon: Icon ? <Icon className='text-primary h-5 w-5' /> : undefined,
+          icon: Icon ? <Icon className={cn('text-primary', normalIconSizeClasses)} /> : undefined,
         };
       })
     : [];
@@ -197,7 +202,8 @@ export default function DesktopNavigation() {
               aria-controls={toolsMenuId}
               ref={toolsBtnRef}
               className={cn(
-                'text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors',
+                'text-primary hover:bg-primary-light mr-[-14px] h-7 w-7 cursor-pointer rounded transition-colors',
+                flexCenterClasses,
                 focusRingClasses,
               )}
               aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
@@ -206,7 +212,7 @@ export default function DesktopNavigation() {
                 className='inline-flex transition-transform duration-200'
                 style={{ transform: isToolsOpen ? 'rotate(180deg)' : undefined }}
               >
-                <RiArrowDownSLine className='h-4 w-4' aria-hidden='true' />
+                <RiArrowDownSLine className={smallIconSizeClasses} aria-hidden='true' />
               </span>
             </button>
           </li>
@@ -268,7 +274,8 @@ export default function DesktopNavigation() {
                   aria-controls={toolsMenuId}
                   ref={toolsBtnRef}
                   className={cn(
-                    'text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors',
+                    'text-primary hover:bg-primary-light mr-[-14px] h-7 w-7 cursor-pointer rounded transition-colors',
+                    flexCenterClasses,
                     focusRingClasses,
                   )}
                   aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
@@ -277,7 +284,7 @@ export default function DesktopNavigation() {
                     className='inline-flex transition-transform duration-200'
                     style={{ transform: isToolsOpen ? 'rotate(180deg)' : undefined }}
                   >
-                    <RiArrowDownSLine className='h-4 w-4' aria-hidden='true' />
+                    <RiArrowDownSLine className={smallIconSizeClasses} aria-hidden='true' />
                   </span>
                 </button>
               </li>
@@ -307,7 +314,8 @@ export default function DesktopNavigation() {
                   aria-controls={menuId}
                   ref={offerBtnRef}
                   className={cn(
-                    'text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors',
+                    'text-primary hover:bg-primary-light mr-[-14px] h-7 w-7 cursor-pointer rounded transition-colors',
+                    flexCenterClasses,
                     focusRingClasses,
                   )}
                   aria-label={isOfferOpen ? plUi.closeServicesList : plUi.openServicesList}
@@ -316,7 +324,7 @@ export default function DesktopNavigation() {
                     className='inline-flex transition-transform duration-200'
                     style={{ transform: isOfferOpen ? 'rotate(180deg)' : undefined }}
                   >
-                    <RiArrowDownSLine className='h-4 w-4' aria-hidden='true' />
+                    <RiArrowDownSLine className={smallIconSizeClasses} aria-hidden='true' />
                   </span>
                 </button>
               </li>
@@ -346,7 +354,8 @@ export default function DesktopNavigation() {
                   aria-controls={aboutMenuId}
                   ref={aboutBtnRef}
                   className={cn(
-                    'text-primary hover:bg-primary-light mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition-colors',
+                    'text-primary hover:bg-primary-light mr-[-14px] h-7 w-7 cursor-pointer rounded transition-colors',
+                    flexCenterClasses,
                     focusRingClasses,
                   )}
                   aria-label={isAboutOpen ? plUi.closeAboutList : plUi.openAboutList}
@@ -355,7 +364,7 @@ export default function DesktopNavigation() {
                     className='inline-flex transition-transform duration-200'
                     style={{ transform: isAboutOpen ? 'rotate(180deg)' : undefined }}
                   >
-                    <RiArrowDownSLine className='h-4 w-4' aria-hidden='true' />
+                    <RiArrowDownSLine className={smallIconSizeClasses} aria-hidden='true' />
                   </span>
                 </button>
               </li>
@@ -401,26 +410,39 @@ export default function DesktopNavigation() {
                         <InlineLink
                           key={section.key}
                           href={section.hubHref || '#'}
-                          prefetch={false}
                           onMouseEnter={() => handleCategoryHover(section.key)}
                           onFocus={() => handleCategoryHover(section.key)}
-                          className={`group/cat flex w-full items-center justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200 ${
-                            isActiveCategory
-                              ? 'text-primary bg-white'
-                              : 'text-primary-mid hover:text-primary hover:bg-white'
-                          }`}
+                          className={cn(
+                            'group/cat w-full justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200',
+                            {
+                              'text-primary bg-white': isActiveCategory,
+                              'text-primary-mid hover:text-primary hover:bg-white':
+                                !isActiveCategory,
+                            },
+                          )}
                         >
                           <span className='flex items-center gap-3'>
                             {CategoryIcon && (
                               <CategoryIcon
-                                className={`h-5 w-5 transition-colors duration-200 ${isActiveCategory ? 'text-primary' : 'text-primary-mid group-hover/cat:text-primary'}`}
+                                className={cn(
+                                  'transition-colors duration-200',
+                                  normalIconSizeClasses,
+                                  {
+                                    'text-primary': isActiveCategory,
+                                    'text-primary-mid group-hover/cat:text-primary':
+                                      !isActiveCategory,
+                                  },
+                                )}
                                 aria-hidden='true'
                               />
                             )}
                             <span className='text-sm font-medium'>{section.title}</span>
                           </span>
                           <RiArrowRightSLine
-                            className={`h-4 w-4 transition-all duration-200 ${isActiveCategory ? 'text-primary translate-x-0.5' : 'text-primary-mid'}`}
+                            className={cn('transition-all duration-200', smallIconSizeClasses, {
+                              'text-primary translate-x-0.5': isActiveCategory,
+                              'text-primary-mid': !isActiveCategory,
+                            })}
                             aria-hidden='true'
                           />
                         </InlineLink>
@@ -438,12 +460,14 @@ export default function DesktopNavigation() {
                           <InlineLink
                             key={item.href}
                             href={item.href}
-                            prefetch={false}
-                            className='group/link flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white'
+                            className='group/link gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white'
                           >
                             {ItemIcon ? (
                               <ItemIcon
-                                className='text-primary-mid group-hover/link:text-primary h-5 w-5 shrink-0 transition-colors'
+                                className={cn(
+                                  'text-primary-mid group-hover/link:text-primary shrink-0 transition-colors',
+                                  normalIconSizeClasses,
+                                )}
                                 aria-hidden='true'
                               />
                             ) : (
@@ -493,23 +517,37 @@ export default function DesktopNavigation() {
                           type='button'
                           onMouseEnter={() => handleToolsCategoryHover(section.key)}
                           onFocus={() => handleToolsCategoryHover(section.key)}
-                          className={`group/cat flex w-full items-center justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200 ${
-                            isActiveCategory
-                              ? 'text-primary bg-white'
-                              : 'text-primary-mid hover:text-primary hover:bg-white'
-                          }`}
+                          className={cn(
+                            'group/cat flex w-full items-center justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200',
+                            {
+                              'text-primary bg-white': isActiveCategory,
+                              'text-primary-mid hover:text-primary hover:bg-white':
+                                !isActiveCategory,
+                            },
+                          )}
                         >
                           <span className='flex items-center gap-3'>
                             {CategoryIcon && (
                               <CategoryIcon
-                                className={`h-5 w-5 transition-colors duration-200 ${isActiveCategory ? 'text-primary' : 'text-primary-mid group-hover/cat:text-primary'}`}
+                                className={cn(
+                                  'transition-colors duration-200',
+                                  normalIconSizeClasses,
+                                  {
+                                    'text-primary': isActiveCategory,
+                                    'text-primary-mid group-hover/cat:text-primary':
+                                      !isActiveCategory,
+                                  },
+                                )}
                                 aria-hidden='true'
                               />
                             )}
                             <span className='text-sm font-medium'>{section.title}</span>
                           </span>
                           <RiArrowRightSLine
-                            className={`h-4 w-4 transition-all duration-200 ${isActiveCategory ? 'text-primary translate-x-0.5' : 'text-primary-mid'}`}
+                            className={cn('transition-all duration-200', smallIconSizeClasses, {
+                              'text-primary translate-x-0.5': isActiveCategory,
+                              'text-primary-mid': !isActiveCategory,
+                            })}
                             aria-hidden='true'
                           />
                         </button>
@@ -545,12 +583,14 @@ export default function DesktopNavigation() {
                           <InlineLink
                             key={item.href}
                             href={item.href}
-                            prefetch={false}
-                            className='group/link flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white'
+                            className='group/link gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white'
                           >
                             {ItemIcon ? (
                               <ItemIcon
-                                className='text-primary-mid group-hover/link:text-primary h-5 w-5 shrink-0 transition-colors'
+                                className={cn(
+                                  'text-primary-mid group-hover/link:text-primary shrink-0 transition-colors',
+                                  normalIconSizeClasses,
+                                )}
                                 aria-hidden='true'
                               />
                             ) : (
@@ -589,8 +629,7 @@ export default function DesktopNavigation() {
                   <InlineLink
                     key={item.href}
                     href={item.href}
-                    prefetch={false}
-                    className='group/link flex items-center gap-3 rounded-lg px-4 py-3 transition-colors duration-150 hover:bg-white'
+                    className='group/link gap-3 rounded-lg px-4 py-3 transition-colors duration-150 hover:bg-white'
                   >
                     {item.icon ? (
                       <span className='text-primary-mid group-hover/link:text-primary shrink-0 transition-colors'>

@@ -1,4 +1,5 @@
-import Shimmer from './Shimmer';
+import { cn } from '@/lib/utils';
+import Shimmer from '../../atoms/skeletons/Shimmer';
 
 interface SectionStepsSkeletonProps {
   cols?: 2 | 3 | 4;
@@ -15,10 +16,10 @@ export default function SectionStepsSkeleton({ cols = 3 }: SectionStepsSkeletonP
 
   return (
     <div className='space-y-4'>
-      <Shimmer className='h-4 w-32 !rounded-md' />
-      <Shimmer className='h-7 w-1/3 !rounded-md' />
-      <Shimmer className='h-4 w-3/5 !rounded-md' />
-      <div className={`mt-4 grid gap-4 ${gridClass}`}>
+      <Shimmer className='h-4 w-32' />
+      <Shimmer className='h-7 w-1/3' />
+      <Shimmer className='h-4 w-3/5' />
+      <div className={cn('mt-4 grid gap-4', gridClass)}>
         {Array.from({ length: cols }).map((_, i) => (
           <div
             key={i}
@@ -29,9 +30,9 @@ export default function SectionStepsSkeleton({ cols = 3 }: SectionStepsSkeletonP
             )}
             <div className='space-y-3 p-6'>
               {!hasImages && <Shimmer className='h-10 w-10 !rounded-lg' />}
-              <Shimmer className='h-5 w-3/4 !rounded-md' />
-              <Shimmer className='h-3.5 w-full !rounded-md' />
-              <Shimmer className='h-3.5 w-5/6 !rounded-md' />
+              <Shimmer className='h-5 w-3/4' />
+              <Shimmer className='h-3.5 w-full' />
+              <Shimmer className='h-3.5 w-5/6' />
               {hasImages && <Shimmer className='mt-2 h-9 w-40 !rounded-lg' />}
             </div>
           </div>

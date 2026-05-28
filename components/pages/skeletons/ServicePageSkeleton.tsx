@@ -7,23 +7,23 @@ import SectionInfoSkeleton from '../../organisms/skeletons/SectionInfoSkeleton';
 import FaqSkeleton from '../../organisms/skeletons/FaqSkeleton';
 import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
 import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
-import Shimmer from '../../organisms/skeletons/Shimmer';
+import Shimmer from '../../atoms/skeletons/Shimmer';
 
 function FeatureGridSkeleton() {
   return (
     <div className='space-y-4'>
-      <Shimmer className='h-4 w-32 !rounded-md' />
-      <Shimmer className='h-7 w-1/3 !rounded-md' />
+      <Shimmer className='h-4 w-32' />
+      <Shimmer className='h-7 w-1/3' />
       <div className='mt-4 grid gap-4 sm:grid-cols-2'>
         {Array.from({ length: 4 }).map((_, i) => (
           <div
             key={i}
             className='flex items-start gap-4 rounded-lg border border-black/5 bg-white p-5 shadow-sm'
           >
-            <Shimmer className='h-8 w-8 shrink-0 !rounded-md' />
+            <Shimmer className='h-8 w-8 shrink-0' />
             <div className='flex-1 space-y-2'>
-              <Shimmer className='h-5 w-3/4 !rounded-md' />
-              <Shimmer className='h-3.5 w-full !rounded-md' />
+              <Shimmer className='h-5 w-3/4' />
+              <Shimmer className='h-3.5 w-full' />
             </div>
           </div>
         ))}
@@ -35,16 +35,16 @@ function FeatureGridSkeleton() {
 function PricesSkeleton() {
   return (
     <div className='space-y-4'>
-      <Shimmer className='h-7 w-2/5 !rounded-md' />
+      <Shimmer className='h-7 w-2/5' />
       <div className='mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
         {Array.from({ length: 3 }).map((_, i) => (
           <div key={i} className='rounded-lg border border-black/5 bg-white p-6 shadow-sm'>
-            <Shimmer className='h-5 w-3/4 !rounded-md' />
-            <Shimmer className='mt-2 h-7 w-1/2 !rounded-md' />
-            <Shimmer className='mt-3 h-3.5 w-full !rounded-md' />
+            <Shimmer className='h-5 w-3/4' />
+            <Shimmer className='mt-2 h-7 w-1/2' />
+            <Shimmer className='mt-3 h-3.5 w-full' />
             <div className='mt-4 space-y-2'>
               {Array.from({ length: 5 }).map((_, j) => (
-                <Shimmer key={j} className='h-3.5 w-5/6 !rounded-md' />
+                <Shimmer key={j} className='h-3.5 w-5/6' />
               ))}
             </div>
             <Shimmer className='mt-4 h-10 w-full !rounded-lg' />
@@ -59,16 +59,16 @@ function ContactFormSkeleton() {
   return (
     <div className='grid gap-6 lg:grid-cols-2'>
       <div className='space-y-4'>
-        <Shimmer className='h-7 w-3/5 !rounded-md' />
-        <Shimmer className='h-4 w-full !rounded-md' />
-        <Shimmer className='h-4 w-4/5 !rounded-md' />
+        <Shimmer className='h-7 w-3/5' />
+        <Shimmer className='h-4 w-full' />
+        <Shimmer className='h-4 w-4/5' />
         <Shimmer className='aspect-[4/3] w-full !rounded-lg !bg-neutral-300' />
       </div>
       <div className='space-y-4 rounded-lg border border-black/5 bg-white p-6 shadow-sm'>
-        <Shimmer className='h-10 w-full !rounded-md' />
-        <Shimmer className='h-10 w-full !rounded-md' />
-        <Shimmer className='h-10 w-full !rounded-md' />
-        <Shimmer className='h-24 w-full !rounded-md' />
+        <Shimmer className='h-10 w-full' />
+        <Shimmer className='h-10 w-full' />
+        <Shimmer className='h-10 w-full' />
+        <Shimmer className='h-24 w-full' />
         <Shimmer className='h-10 w-40 !rounded-lg' />
       </div>
     </div>
@@ -78,7 +78,7 @@ function ContactFormSkeleton() {
 function BentoSkeleton() {
   return (
     <div className='space-y-4'>
-      <Shimmer className='h-7 w-1/3 !rounded-md' />
+      <Shimmer className='h-7 w-1/3' />
       <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
         <Shimmer className='aspect-[4/3] w-full !rounded-lg !bg-neutral-300 sm:col-span-2 lg:col-span-1 lg:row-span-2' />
         <Shimmer className='aspect-[16/9] w-full !rounded-lg !bg-neutral-300' />

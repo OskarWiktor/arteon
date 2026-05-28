@@ -175,7 +175,7 @@ import { Home } from 'lucide-react';
 ```tsx
 // Icon buttons MUST have aria-label
 <button aria-label='Zamknij menu' className='min-h-11 min-w-11 p-3'>
-  <RiCloseLine className='h-6 w-6' />
+  <RiCloseLine className={normalIconSizeClasses} />
 </button>
 ```
 

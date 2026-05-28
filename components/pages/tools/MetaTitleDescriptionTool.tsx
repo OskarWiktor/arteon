@@ -1,9 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import ToolSection from '@/components/organisms/tools/ToolSection';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
-import ToolHelper from '@/components/organisms/tools/ToolHelper';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import {
   analyzeMetaDescription,
   analyzeMetaTitle,
@@ -15,6 +14,9 @@ import { useLocale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/meta-title';
 import Textarea from '@/components/atoms/form/Textarea';
 import Input from '@/components/atoms/form/Input';
+import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses, largeIconSizeClasses } from '@/lib/ui-classes';
 
 type UiTexts = { [K in keyof (typeof ui)['pl']]: string };
 
@@ -75,7 +77,7 @@ export default function MetaTitleDescriptionTool() {
   return (
     <>
       <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-        <ToolSection className='space-y-5'>
+        <Card padding='lg'>
           <ToolFieldRow label={t.addUrl} helper={t.urlHelper}>
             <Input
               type='text'
@@ -109,7 +111,7 @@ export default function MetaTitleDescriptionTool() {
               <span>
                 {t.width}: <strong>~{titleAnalysis.pixels} px</strong>
               </span>
-              <span className={`tool-badge ml-auto ${getStatusClasses(titleAnalysis.status)}`}>
+              <span className={cn('inline-flex items-center rounded-lg px-2.5 py-0.5 text-xs! font-medium ml-auto', getStatusClasses(titleAnalysis.status))}>
                 {titleAnalysis.status === 'empty' ? t.noTitle : titleAnalysis.statusLabel}
               </span>
             </div>
@@ -140,7 +142,7 @@ export default function MetaTitleDescriptionTool() {
                 {t.width}: <strong>~{descriptionAnalysis.pixels} px</strong>
               </span>
               <span
-                className={`tool-badge ml-auto ${getStatusClasses(descriptionAnalysis.status)}`}
+                className={cn('inline-flex items-center rounded-lg px-2.5 py-0.5 text-xs! font-medium ml-auto', getStatusClasses(descriptionAnalysis.status))}
               >
                 {descriptionAnalysis.status === 'empty'
                   ? t.noDescription
@@ -148,9 +150,9 @@ export default function MetaTitleDescriptionTool() {
               </span>
             </div>
           </ToolFieldRow>
-        </ToolSection>
+        </Card>
 
-        <ToolSection className='space-y-4'>
+        <Card>
           <div>
             <h2 className='h6 pb-2'>{t.previewTitle}</h2>
             <ToolHelper>{t.previewHelper}</ToolHelper>
@@ -158,17 +160,22 @@ export default function MetaTitleDescriptionTool() {
 
           <div className='rounded-lg border border-neutral-200 bg-white p-4 text-sm shadow-inner'>
             <div className='flex gap-3'>
-              {/* Favicon w kole z ramką - osobna kolumna */}
-              <div className='flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg border border-neutral-300 bg-white p-1'>
-                <img src='/favicon-32x32.png' alt='Arteon' className='h-8 w-8 rounded-sm' />
+              <div
+                className={cn(
+                  'h-12 w-12 flex-shrink-0 rounded-lg border border-neutral-300 bg-white p-1',
+                  flexCenterClasses,
+                )}
+              >
+                <img
+                  src='/favicon-32x32.png'
+                  alt='Arteon'
+                  className={cn(largeIconSizeClasses, 'rounded-sm')}
+                />
               </div>
 
-              {/* Nazwa strony, URL i kropki - środkowa kolumna */}
               <div className='min-w-0 flex-1'>
-                {/* Nazwa strony nad linkiem */}
                 <p className='text-xs text-neutral-600'>Arteon</p>
 
-                {/* URL z 3 kropkami */}
                 <div className='flex items-center gap-1'>
                   <p className='text-mid truncate text-[13px]!'>{url || t.urlPlaceholder}</p>
                   <div className='ml-3 flex flex-col gap-0.5'>
@@ -180,20 +187,17 @@ export default function MetaTitleDescriptionTool() {
               </div>
             </div>
 
-            {/* Tytuł i opis - osobny div bez pustej przestrzeni */}
             <div className='mt-2'>
-              {/* Tytuł - niebieski i grubszy */}
               <p className='line-clamp-2 text-[22px]! leading-tight font-[500]! text-blue-900'>
                 {previewTitle}
               </p>
 
-              {/* Opis - większy i pogrubiony */}
               <p className='mt-1 line-clamp-3 text-[14px]! leading-snug font-medium text-neutral-700'>
                 {previewDescription}
               </p>
             </div>
           </div>
-        </ToolSection>
+        </Card>
       </div>
     </>
   );

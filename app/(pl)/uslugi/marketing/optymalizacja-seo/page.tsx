@@ -12,7 +12,7 @@ import {
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import FaqPanels from '@/components/molecules/FaqPanels';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
@@ -24,6 +24,8 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
@@ -152,7 +154,7 @@ export default function OfferOptimizationSEO() {
                   strona działa szybciej, a użytkownicy rzadziej rezygnują z przeglądania.
                 </>
               ),
-              icon: <RiSearchLine className='text-primary h-6 w-6' />,
+              icon: <RiSearchLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Tytuły i opisy widoczne w Google',
@@ -162,7 +164,7 @@ export default function OfferOptimizationSEO() {
                   więcej trafnych zapytań i więcej wejść z wyników wyszukiwania.
                 </>
               ),
-              icon: <RiLightbulbFlashLine className='text-primary h-6 w-6' />,
+              icon: <RiLightbulbFlashLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Struktura treści i nawigacja',
@@ -172,7 +174,7 @@ export default function OfferOptimizationSEO() {
                   Efekt: łatwiejsza nawigacja i lepsze rozumienie strony przez Google.
                 </>
               ),
-              icon: <RiFileList2Line className='text-primary h-6 w-6' />,
+              icon: <RiFileList2Line className={cn('text-primary', normalIconSizeClasses)} />,
             },
             {
               title: 'Dodatkowe dane dla Google',
@@ -182,7 +184,7 @@ export default function OfferOptimizationSEO() {
                   Google lepiej zrozumieć zawartość i to co dokładnie oferujesz.
                 </>
               ),
-              icon: <RiShieldCheckLine className='text-primary h-6 w-6' />,
+              icon: <RiShieldCheckLine className={cn('text-primary', normalIconSizeClasses)} />,
             },
           ]}
         />
@@ -334,7 +336,7 @@ export default function OfferOptimizationSEO() {
           description='Optymalizacja najczęściej poprzedzona jest audytem, a po wdrożeniach przechodzimy do stałego pozycjonowania.'
           items={[
             {
-              icon: <RiSearchLine className='h-8 w-8' />,
+              icon: <RiSearchLine className={largeIconSizeClasses} />,
               title: 'Audyt SEO (diagnostyka)',
               description: (
                 <div className='flex h-full flex-col'>
@@ -350,7 +352,7 @@ export default function OfferOptimizationSEO() {
               ),
             },
             {
-              icon: <RiFileList2Line className='h-8 w-8' />,
+              icon: <RiFileList2Line className={largeIconSizeClasses} />,
               title: 'Pozycjonowanie stron',
               description: (
                 <div className='flex h-full flex-col'>
@@ -381,7 +383,7 @@ export default function OfferOptimizationSEO() {
 
         <Divider line />
 
-        <FaqPanels
+        <SectionFaqPanels
           defaultOpenIndex={1}
           title='Najczęstsze pytania dotyczące optymalizacji SEO'
           pageUrl='https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo'

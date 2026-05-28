@@ -1,4 +1,4 @@
-import { focusRingClasses } from '@/lib/ui-classes';
+import { focusRingClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 
 type InputCheckboxProps = Omit<React.ComponentProps<'input'>, 'type'>;
@@ -7,7 +7,12 @@ export default function InputCheckbox({ className, ...props }: InputCheckboxProp
   return (
     <input
       type='checkbox'
-      className={cn('h-4 w-4! rounded border-neutral-300 p-0!', focusRingClasses, className)}
+      className={cn(
+        'rounded border-neutral-300 p-0!',
+        smallIconSizeClasses,
+        focusRingClasses,
+        className,
+      )}
       {...props}
     />
   );

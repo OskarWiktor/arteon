@@ -96,7 +96,7 @@ export default function OfferPage() {
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/tworzenie-stron-wordpress'>
-                      Przejdź do stron
+                      Przejdź do oferty
                     </ButtonLink>
                   </div>
                 </div>
@@ -114,7 +114,7 @@ export default function OfferPage() {
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/sklepy-internetowe'>
-                      Przejdź do sklepów
+                      Przejdź do oferty
                     </ButtonLink>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ export default function OfferPage() {
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/blogi-internetowe'>
-                      Przejdź do blogów
+                      Przejdź do oferty
                     </ButtonLink>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export default function OfferPage() {
           title='Projekty graficzne'
           subtitle='Pełna oferta projektowa'
           description='Poznaj pełną ofertę projektów graficznych - od wizytówek i ulotek po identyfikację wizualną oraz układy stron internetowych. Każda usługa ma własną stronę, na której zobaczysz szczegóły, przykłady realizacji i cennik.'
-          grid='two'
+          grid='three'
           items={[
             {
               topImageSrc: '/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp',

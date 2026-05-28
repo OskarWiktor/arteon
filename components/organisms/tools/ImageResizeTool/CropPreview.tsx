@@ -1,3 +1,5 @@
+import { flexCenterBetweenClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 import type { RefObject } from 'react';
 
 type CropRect = {
@@ -51,7 +53,7 @@ export default function CropPreview({
 }: Props) {
   return (
     <div>
-      <div className='mt-4 mb-2 flex items-center justify-between'>
+      <div className={cn('mt-4 mb-2', flexCenterBetweenClasses)}>
         <h3 className='h6'>{t.cropPreview}</h3>
         {dims && (
           <span className='text-light text-xs!'>
@@ -80,15 +82,21 @@ export default function CropPreview({
               onPointerMove={handlePointerMove}
               onPointerUp={handlePointerUp}
               onPointerLeave={handlePointerLeave}
-              className={`absolute box-border ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+              className={cn('absolute box-border', isDragging ? 'cursor-grabbing' : 'cursor-grab')}
               style={{ ...cropRectPreview }}
             >
               <div className='pointer-events-none absolute inset-0'>
                 <div
-                  className={`absolute inset-0 shadow-[0_0_0_9999px_rgba(0,0,0,0.55)] ${selectionShapeClass}`}
+                  className={cn(
+                    'absolute inset-0 shadow-[0_0_0_9999px_rgba(0,0,0,0.55)]',
+                    selectionShapeClass,
+                  )}
                 />
                 <div
-                  className={`absolute inset-0 grid grid-cols-3 grid-rows-3 overflow-hidden ${selectionShapeClass}`}
+                  className={cn(
+                    'absolute inset-0 grid grid-cols-3 grid-rows-3 overflow-hidden',
+                    selectionShapeClass,
+                  )}
                 >
                   {Array.from({ length: 9 }).map((_, i) => (
                     <div key={i} className='border' style={{ borderColor: gridStroke }} />
@@ -97,22 +105,34 @@ export default function CropPreview({
               </div>
 
               <div
-                className='absolute -top-1 -left-1 h-4 w-4 cursor-nwse-resize rounded-[2px] border-2 bg-white/80'
+                className={cn(
+                  'absolute -top-1 -left-1 cursor-nwse-resize rounded-[2px] border-2 bg-white/80',
+                  smallIconSizeClasses,
+                )}
                 style={{ borderColor: gridStroke }}
                 onPointerDown={e => startResizeDrag(e, 'tl')}
               />
               <div
-                className='absolute -top-1 -right-1 h-4 w-4 cursor-nesw-resize rounded-[2px] border-2 bg-white/80'
+                className={cn(
+                  'absolute -top-1 -right-1 cursor-nesw-resize rounded-[2px] border-2 bg-white/80',
+                  smallIconSizeClasses,
+                )}
                 style={{ borderColor: gridStroke }}
                 onPointerDown={e => startResizeDrag(e, 'tr')}
               />
               <div
-                className='absolute -bottom-1 -left-1 h-4 w-4 cursor-nesw-resize rounded-[2px] border-2 bg-white/80'
+                className={cn(
+                  'absolute -bottom-1 -left-1 cursor-nesw-resize rounded-[2px] border-2 bg-white/80',
+                  smallIconSizeClasses,
+                )}
                 style={{ borderColor: gridStroke }}
                 onPointerDown={e => startResizeDrag(e, 'bl')}
               />
               <div
-                className='absolute -right-1 -bottom-1 h-4 w-4 cursor-nwse-resize rounded-[2px] border-2 bg-white/80'
+                className={cn(
+                  'absolute -right-1 -bottom-1 cursor-nwse-resize rounded-[2px] border-2 bg-white/80',
+                  smallIconSizeClasses,
+                )}
                 style={{ borderColor: gridStroke }}
                 onPointerDown={e => startResizeDrag(e, 'br')}
               />

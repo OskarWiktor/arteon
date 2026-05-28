@@ -1,21 +1,11 @@
 import type { ReactNode } from 'react';
 import Image from 'next/image';
-import { RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '../atoms/Wrapper';
 import SectionHeader from '../molecules/SectionHeader';
 import ButtonGroup from '../molecules/ButtonGroup';
-import Card from './Card';
-import InlineLink from '../atoms/InlineLink';
-
-interface CTASplitColumn {
-  title: ReactNode;
-  description?: ReactNode;
-  btnLabel?: string;
-  btnLink?: string;
-}
+import { cn } from '@/lib/utils';
 
 interface CTABannerProps {
-  variant?: 'default' | 'split';
   title?: ReactNode;
   subtitle?: ReactNode;
   description?: ReactNode;
@@ -26,12 +16,9 @@ interface CTABannerProps {
   backgroundImage?: string;
   backgroundStyle?: 'image' | 'gradient' | 'solid';
   overlay?: 'none' | 'black' | 'white';
-  leftColumn?: CTASplitColumn;
-  rightColumn?: CTASplitColumn;
 }
 
 export default function CTABanner({
-  variant = 'default',
   title,
   subtitle,
   description,
@@ -42,54 +29,7 @@ export default function CTABanner({
   backgroundImage,
   backgroundStyle = 'image',
   overlay = 'none',
-  leftColumn,
-  rightColumn,
 }: CTABannerProps) {
-  if (variant === 'split') {
-    return (
-      <section data-section='cta-split'>
-        <Wrapper>
-          <div className='grid gap-6 md:grid-cols-2'>
-            <div className='bg-primary flex flex-col justify-between rounded-lg p-8 text-white'>
-              <div>
-                <h2 className='h3 mb-3'>{leftColumn?.title}</h2>
-                {leftColumn?.description && (
-                  <p className='mb-6 text-white/80'>{leftColumn.description}</p>
-                )}
-              </div>
-              {leftColumn?.btnLabel && leftColumn?.btnLink && (
-                <InlineLink
-                  href={leftColumn.btnLink}
-                  className='text-primary hover:bg-primary-light inline-flex w-fit items-center gap-2 rounded-lg bg-white px-6 py-3 font-medium transition'
-                >
-                  {leftColumn.btnLabel}
-                  <RiArrowRightSLine className='h-5 w-5' />
-                </InlineLink>
-              )}
-            </div>
-            <Card variant='outlined' className='flex flex-col justify-between p-8'>
-              <div>
-                <h2 className='h3 mb-3'>{rightColumn?.title}</h2>
-                {rightColumn?.description && (
-                  <p className='text-light mb-6'>{rightColumn.description}</p>
-                )}
-              </div>
-              {rightColumn?.btnLabel && rightColumn?.btnLink && (
-                <InlineLink
-                  href={rightColumn.btnLink}
-                  className='border-primary text-primary inline-flex w-fit items-center gap-2 rounded-lg border px-6 py-3 font-medium transition hover:bg-neutral-50'
-                >
-                  {rightColumn.btnLabel}
-                  <RiArrowRightSLine className='h-5 w-5' />
-                </InlineLink>
-              )}
-            </Card>
-          </div>
-        </Wrapper>
-      </section>
-    );
-  }
-
   const hasBg = Boolean(backgroundImage);
   const isGradient = backgroundStyle === 'gradient';
   const isSolid = backgroundStyle === 'solid';
@@ -109,7 +49,7 @@ export default function CTABanner({
 
   return (
     <section
-      className={`relative flex h-auto min-h-[360px] overflow-hidden md:min-h-[440px] ${baseBg}`}
+      className={cn('relative flex h-auto min-h-[360px] overflow-hidden md:min-h-[440px]', baseBg)}
       data-section='final-cta'
     >
       {hasBg && !isGradient && !isSolid && backgroundImage && (
@@ -124,21 +64,35 @@ export default function CTABanner({
       {hasBg && !isGradient && !isSolid && overlay !== 'none' && (
         <div
           aria-hidden='true'
-          className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`}
+          className={cn('pointer-events-none absolute inset-0 z-0', overlayClass)}
         />
       )}
 
       <Wrapper className='relative flex h-auto justify-center md:items-center'>
         <div
-          className={`mt-6 mb-6 max-w-[100vw] rounded-lg p-2 md:m-0 md:max-w-[65%] md:p-5 md:text-center lg:p-7 ${toneTextClass} ${isGradient || isSolid ? 'bg-transparent' : overlay === 'black' ? 'bg-black/50' : 'bg-white/70'}`}
+          className={cn(
+            'mt-6 mb-6 max-w-[100vw] rounded-lg p-2 md:m-0 md:max-w-[65%] md:p-5 md:text-center lg:p-7',
+            toneTextClass,
+            {
+              'bg-transparent': isGradient || isSolid,
+              'bg-black/50': overlay === 'black',
+              'bg-white/70': overlay === 'white',
+            },
+          )}
         >
           <SectionHeader
             subtitle={subtitle}
             title={title}
             description={description}
             SubtitleVariant='dynamic'
-            SubtitleClassName={`text-base tracking-wider uppercase ${overlay === 'black' ? 'text-white' : 'text-dark'}`}
-            descriptionClassName={` mx-auto text-base leading-relaxed md:text-lg ${toneMutedClass}`}
+            SubtitleClassName={cn('text-base tracking-wider uppercase', {
+              'text-white': overlay === 'black',
+              'text-dark': overlay !== 'black',
+            })}
+            descriptionClassName={cn(
+              'mx-auto text-base leading-relaxed md:text-lg',
+              toneMutedClass,
+            )}
           />
 
           <ButtonGroup
