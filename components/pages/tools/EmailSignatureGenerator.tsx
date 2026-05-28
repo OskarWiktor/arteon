@@ -265,7 +265,7 @@ export default function EmailSignatureGenerator() {
 
   return (
     <div className='space-y-4'>
-      <Card className='flex flex-wrap items-center justify-between'>
+      <Card interactive={false} padding='lg' className='flex flex-wrap items-center justify-between'>
         <div className='flex flex-wrap items-center gap-3'>
           <div className='flex flex-wrap items-center gap-2'>
             <RiLayout3Line className='text-primary text-base' />
@@ -325,7 +325,7 @@ export default function EmailSignatureGenerator() {
         <p className='tool-meta'>{t.moreLayoutsSoon}</p>
       </Card>
 
-      <Card className='flex flex-wrap items-center'>
+      <Card interactive={false} padding='lg' className='flex flex-wrap items-center'>
         <div className='flex items-center gap-2'>
           <span className='tool-value'>{t.editorTitle}</span>
         </div>
@@ -383,7 +383,7 @@ export default function EmailSignatureGenerator() {
       </Card>
 
       <div className='grid items-stretch gap-4 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]'>
-        <Card padding='md' className='flex min-h-[620px] flex-col'>
+        <Card interactive={false} padding='lg' className='flex min-h-[620px] flex-col'>
           <div className='space-y-4 text-sm!'>
             {activePanel === 'identity' && (
               <IdentityPanel
@@ -607,8 +607,7 @@ export default function EmailSignatureGenerator() {
           </div>
         </Card>
 
-        <Card
-          padding='md'
+        <Card interactive={false} padding='lg'
           className='flex min-h-[620px] flex-col lg:sticky lg:top-24 lg:self-start'
         >
           <div className={cn('gap-2', flexCenterBetweenClasses)}>

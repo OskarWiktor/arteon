@@ -4,12 +4,11 @@ import {
   disabledInteractiveClasses,
   flexCenterClasses,
   focusRingClasses,
-  normalIconSizeClasses,
 } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 import { ButtonSize, ButtonVariant } from '@/types/ui';
 import type { ReactNode } from 'react';
-import { RiArrowRightSLine } from 'react-icons/ri';
+import ArrowIcon from '../ArrowIcon';
 
 interface ButtonProps {
   children: ReactNode;
@@ -35,20 +34,6 @@ const variantClasses: Record<ButtonVariant, string> = {
 
 const buttonClasses =
   'inline-flex w-fit items-center rounded-sm text-sm font-medium md:text-base transition hover:-translate-y-0.5';
-
-function ButtonContent({ children, arrow }: { children: ReactNode; arrow?: boolean }) {
-  return (
-    <>
-      <span className={cn('gap-2', flexCenterClasses)}>{children}</span>
-
-      {arrow && (
-        <span className={cn('ml-1', flexCenterClasses, normalIconSizeClasses)} aria-hidden='true'>
-          <RiArrowRightSLine className='text-current' />
-        </span>
-      )}
-    </>
-  );
-}
 
 export default function Button({
   children,
@@ -76,7 +61,9 @@ export default function Button({
         className,
       )}
     >
-      <ButtonContent arrow={arrow}>{children}</ButtonContent>
+      <span className={cn('gap-2', flexCenterClasses)}>{children}</span>
+
+      {arrow && <ArrowIcon />}
     </button>
   );
 }

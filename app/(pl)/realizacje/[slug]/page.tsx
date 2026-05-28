@@ -54,6 +54,7 @@ import SectionProcess from '@/components/organisms/sections/SectionProcess';
 import SectionImageGallery from '@/components/organisms/sections/SectionImageGallery';
 import { cn } from '@/lib/utils';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import Card from '@/components/organisms/Card';
 
 interface ProjectsData {
   projects: Project[];
@@ -129,11 +130,11 @@ const defaultCTA = {
 
 function Stat({ label, value, note }: { label: string; value: string; note?: string }) {
   return (
-    <div className='rounded-lg bg-white p-4 shadow-md'>
+    <Card>
       <p className='h5'>{value}</p>
       <p className='text-light'>{label}</p>
       {note && <p className='mt-2'>{note}</p>}
-    </div>
+    </Card>
   );
 }
 
@@ -324,7 +325,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
           const calloutIcon = getIcon(b.icon);
           return (
             <div key={`callout-${i}`} className={wrapperClass}>
-              <div className='border-accent flex gap-4 rounded-lg border-l-4 bg-white p-6 shadow-md'>
+              <Card interactive={false} className='border-accent flex border-l-4'>
                 {calloutIcon && <div className='text-accent mt-1 shrink-0'>{calloutIcon}</div>}
                 <div>
                   {b.title && <h4 className='h5 mb-2'>{b.title}</h4>}
@@ -334,7 +335,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                     b.text && <p>{b.text}</p>
                   )}
                 </div>
-              </div>
+              </Card>
               {b.breakAfter && <Divider size='sm' line />}
             </div>
           );

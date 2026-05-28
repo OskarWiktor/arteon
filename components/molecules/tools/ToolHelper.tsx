@@ -14,7 +14,5 @@ const ToolHelperVariantClasses = {
 };
 
 export default function ToolHelper({ children, className, variant = 'default' }: ToolHelperProps) {
-  return (
-    <p className={cn('text-sm', ToolHelperVariantClasses[variant], className)}>{children}</p>
-  );
+  return <p className={cn('text-sm', ToolHelperVariantClasses[variant], className)}>{children}</p>;
 }

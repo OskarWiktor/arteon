@@ -5,6 +5,7 @@ import {
   flexCenterClasses,
   largeIconSizeClasses,
 } from '@/lib/ui-classes';
+import Card from '@/components/organisms/Card';
 
 export type ToolPanelVariant =
   | 'default'
@@ -90,11 +91,11 @@ function MetaCounterPanel() {
           <Shimmer className='h-3 w-48' />
         </div>
       ))}
-      <div className='space-y-2 rounded-lg border border-black/5 bg-neutral-50 p-4'>
+      <Card interactive={false} padding='lg' variant='outlined' className='space-y-2'>
         <Shimmer className='h-4 w-64' />
         <Shimmer className='h-3 w-full' />
         <Shimmer className='h-3 w-3/4' />
-      </div>
+      </Card>
     </SectionBox>
   );
 }
@@ -123,16 +124,13 @@ function ContrastCheckerPanel() {
       <SectionBox className='space-y-3'>
         <Shimmer className='h-5 w-40' />
         {[1, 2, 3].map(i => (
-          <div
-            key={i}
-            className={cn('rounded-md border border-black/5 px-4 py-3', flexCenterBetweenClasses)}
-          >
+          <Card interactive={false} padding='lg' key={i} variant='outlined' className={flexCenterBetweenClasses}>
             <Shimmer className='h-4 w-32' />
             <div className='flex gap-2'>
               <Shimmer className='h-6 w-16 !rounded-lg' />
               <Shimmer className='h-6 w-16 !rounded-lg' />
             </div>
-          </div>
+          </Card>
         ))}
       </SectionBox>
     </div>
@@ -275,7 +273,7 @@ function ColorPalettePanel() {
       <SectionBox className='space-y-4'>
         <div className='grid gap-4 md:grid-cols-2'>
           {[1, 2, 3, 4].map(i => (
-            <div key={i} className='space-y-2 rounded-lg border border-black/5 bg-white/90 p-4'>
+            <Card interactive={false} padding='lg' key={i} variant='outlined' className='space-y-2'>
               <Shimmer className='h-4 w-28' />
               <Shimmer className='h-3 w-44' />
               <div className='mt-2 grid gap-2 sm:grid-cols-2'>
@@ -283,7 +281,7 @@ function ColorPalettePanel() {
                   <Shimmer key={j} className='h-14 w-full' />
                 ))}
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </SectionBox>

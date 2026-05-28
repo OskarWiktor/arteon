@@ -213,7 +213,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
       />
 
       <div className='grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-        <Card padding='md'>
+        <Card interactive={false} padding='lg'>
           <form onSubmit={handleConvert} className='space-y-4'>
             <div>
               <h2 className='h6 mb-2'>{t.addFiles}</h2>
@@ -292,7 +292,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
           </form>
         </Card>
 
-        <Card aria-label={t.queueAriaLabel}>
+        <Card interactive={false} padding='lg' aria-label={t.queueAriaLabel}>
           <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <h2 className='h6'>{t.queueHeading}</h2>
             {pages.length > 0 && (

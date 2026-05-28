@@ -157,7 +157,7 @@ export default function QrCodeGenerator() {
 
   return (
     <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-      <Card>
+      <Card interactive={false} padding='lg'>
         <ToolSelect
           label={t.dataType}
           value={dataType}
@@ -346,7 +346,7 @@ export default function QrCodeGenerator() {
         </div>
       </Card>
 
-      <Card>
+      <Card interactive={false} padding='lg'>
         {!contrastOk && (
           <ToolAlert variant='warning'>
             {t.contrastWarning}

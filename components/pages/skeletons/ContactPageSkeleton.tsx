@@ -2,6 +2,7 @@ import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
 import SectionInfoSkeleton from '../../organisms/skeletons/SectionInfoSkeleton';
 import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
 import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
+import Card from '../../organisms/Card';
 import Shimmer from '../../atoms/skeletons/Shimmer';
 
 export default function ContactPageSkeleton() {
@@ -44,16 +45,19 @@ export default function ContactPageSkeleton() {
           <Shimmer className='h-7 w-1/3' />
           <div className='grid gap-4 sm:grid-cols-2'>
             {[0, 1].map(i => (
-              <div
+              <Card
                 key={i}
-                className='flex items-start gap-4 rounded-lg border border-black/5 bg-white p-6 shadow-sm'
+                interactive={false}
+                variant='outlined'
+                padding='md'
+                className='flex items-start gap-4'
               >
                 <Shimmer className='h-10 w-10 shrink-0 !rounded-lg' />
                 <div className='flex-1 space-y-2'>
                   <Shimmer className='h-5 w-1/2' />
                   <Shimmer className='h-4 w-3/4' />
                 </div>
-              </div>
+              </Card>
             ))}
           </div>
         </div>

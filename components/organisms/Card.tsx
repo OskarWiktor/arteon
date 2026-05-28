@@ -19,6 +19,7 @@ type PolymorphicProps<T extends ElementType> = {
   as?: T;
   variant?: CardVariant;
   padding?: CardPadding;
+  interactive?: boolean;
   className?: string;
   children?: ReactNode;
 } & Omit<ComponentPropsWithoutRef<T>, 'className' | 'children'>;
@@ -27,6 +28,7 @@ export default function Card<T extends ElementType = 'div'>({
   as,
   variant = 'default',
   padding = 'sm',
+  interactive = true,
   className,
   children,
   ...rest
@@ -36,7 +38,8 @@ export default function Card<T extends ElementType = 'div'>({
   return (
     <Component
       className={cn(
-        'gap-3 overflow-hidden rounded-lg bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md',
+        'gap-3 overflow-hidden rounded-lg bg-white shadow-sm flex flex-col',
+        interactive && 'transition hover:-translate-y-0.5 hover:shadow-md',
         variantClasses[variant],
         paddingClasses[padding],
         className,
@@ -44,6 +47,7 @@ export default function Card<T extends ElementType = 'div'>({
       {...rest}
     >
       {children}
+
     </Component>
   );
 }

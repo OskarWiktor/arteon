@@ -8,6 +8,7 @@ import FaqSkeleton from '../../organisms/skeletons/FaqSkeleton';
 import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
 import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
 import Shimmer from '../../atoms/skeletons/Shimmer';
+import Card from '@/components/organisms/Card';
 
 function FeatureGridSkeleton() {
   return (
@@ -16,16 +17,13 @@ function FeatureGridSkeleton() {
       <Shimmer className='h-7 w-1/3' />
       <div className='mt-4 grid gap-4 sm:grid-cols-2'>
         {Array.from({ length: 4 }).map((_, i) => (
-          <div
-            key={i}
-            className='flex items-start gap-4 rounded-lg border border-black/5 bg-white p-5 shadow-sm'
-          >
+          <Card key={i} variant='outlined' className='flex items-start gap-4'>
             <Shimmer className='h-8 w-8 shrink-0' />
             <div className='flex-1 space-y-2'>
               <Shimmer className='h-5 w-3/4' />
               <Shimmer className='h-3.5 w-full' />
             </div>
-          </div>
+          </Card>
         ))}
       </div>
     </div>
@@ -38,7 +36,7 @@ function PricesSkeleton() {
       <Shimmer className='h-7 w-2/5' />
       <div className='mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
         {Array.from({ length: 3 }).map((_, i) => (
-          <div key={i} className='rounded-lg border border-black/5 bg-white p-6 shadow-sm'>
+          <Card key={i} padding='md' variant='outlined'>
             <Shimmer className='h-5 w-3/4' />
             <Shimmer className='mt-2 h-7 w-1/2' />
             <Shimmer className='mt-3 h-3.5 w-full' />
@@ -48,7 +46,7 @@ function PricesSkeleton() {
               ))}
             </div>
             <Shimmer className='mt-4 h-10 w-full !rounded-lg' />
-          </div>
+          </Card>
         ))}
       </div>
     </div>
@@ -64,13 +62,13 @@ function ContactFormSkeleton() {
         <Shimmer className='h-4 w-4/5' />
         <Shimmer className='aspect-[4/3] w-full !rounded-lg !bg-neutral-300' />
       </div>
-      <div className='space-y-4 rounded-lg border border-black/5 bg-white p-6 shadow-sm'>
+      <Card variant='outlined' padding='md' className='space-y-4'>
         <Shimmer className='h-10 w-full' />
         <Shimmer className='h-10 w-full' />
         <Shimmer className='h-10 w-full' />
         <Shimmer className='h-24 w-full' />
         <Shimmer className='h-10 w-40 !rounded-lg' />
-      </div>
+      </Card>
     </div>
   );
 }

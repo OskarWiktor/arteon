@@ -148,7 +148,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
       <div className='overflow-hidden'>
         <FormatSelector currentSource='jpg' currentTarget='base64' hasFiles={!!base64} />
         <div className='grid gap-4 md:grid-cols-2'>
-          <Card>
+          <Card interactive={false} padding='lg'>
             <h2 className='h6'>{t.imageHeading}</h2>
             <FileDropzone accept='image/*' onFiles={handleAddFiles}>
               <ToolUploadContent
@@ -173,7 +173,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
             </Button>
           </Card>
 
-          <Card>
+          <Card interactive={false} padding='lg'>
             <TextareaWithLabel
               label='Base64'
               className='min-h-[300px] resize-y'
@@ -202,7 +202,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     <div className='overflow-hidden'>
       <FormatSelector currentSource='base64' currentTarget='jpg' hasFiles={!!base64} />
       <div className='grid gap-4 md:grid-cols-2'>
-        <Card>
+        <Card interactive={false} padding='lg'>
           <TextareaWithLabel
             label='Base64'
             className='min-h-[300px] w-full resize-y'
@@ -232,7 +232,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
           </div>
         </Card>
 
-        <Card>
+        <Card interactive={false} padding='lg'>
           <h2 className='h6'>{t.imagePreview}</h2>
           {previewUrl ? (
             <div className='space-y-3'>

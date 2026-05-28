@@ -152,9 +152,8 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
     <div>
       <FormatSelector unitToolKey={toolKey} />
 
-      {/* Main converter */}
       <div className='grid gap-4 md:grid-cols-2'>
-        <Card>
+        <Card interactive={false} padding='lg'>
           <div className='relative'>
             <InputWithLabel
               label={srcLabel}
@@ -219,7 +218,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
           </div>
         </Card>
 
-        <Card>
+        <Card interactive={false} padding='lg'>
           <div className='relative'>
             <InputWithLabel
               label={tgtLabel}

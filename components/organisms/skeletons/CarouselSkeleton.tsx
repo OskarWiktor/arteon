@@ -1,4 +1,5 @@
 import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import Card from '../Card';
 import Shimmer from '../../atoms/skeletons/Shimmer';
 
 type CarouselVariant = 'project' | 'tool' | 'article' | 'testimonial';
@@ -11,7 +12,7 @@ interface CarouselSkeletonProps {
 function ProjectCardSkeleton() {
   return (
     <div className='w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]'>
-      <div className='overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm'>
+      <Card interactive={false} variant='outlined'>
         <Shimmer className='aspect-[2/1] w-full !rounded-none !bg-neutral-300' />
         <div className='space-y-3 px-6 py-4 md:px-7 md:py-5'>
           <Shimmer className='h-5 w-3/4' />
@@ -19,7 +20,7 @@ function ProjectCardSkeleton() {
           <div className='mt-2 h-px w-full bg-neutral-200' />
           <Shimmer className='h-8 w-36 !rounded-lg' />
         </div>
-      </div>
+      </Card>
     </div>
   );
 }
@@ -27,7 +28,7 @@ function ProjectCardSkeleton() {
 function ToolCardSkeleton() {
   return (
     <div className='w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]'>
-      <div className='overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm'>
+      <Card interactive={false} variant='outlined'>
         <Shimmer className='!bg-neutral-250 aspect-[16/9] w-full !rounded-none !bg-neutral-300' />
         <div className='space-y-3 p-4 md:p-5'>
           <Shimmer className='h-5 w-3/5' />
@@ -35,7 +36,7 @@ function ToolCardSkeleton() {
           <Shimmer className='h-3.5 w-4/5' />
           <Shimmer className='mt-2 h-9 w-36 !rounded-lg' />
         </div>
-      </div>
+      </Card>
     </div>
   );
 }
@@ -43,7 +44,7 @@ function ToolCardSkeleton() {
 function ArticleCardSkeleton() {
   return (
     <div className='w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]'>
-      <div className='overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm'>
+      <Card interactive={false} variant='outlined'>
         <Shimmer className='aspect-[16/9] w-full !rounded-none !bg-neutral-300' />
         <div className='space-y-2 p-4'>
           <Shimmer className='h-5 w-4/5' />
@@ -54,7 +55,7 @@ function ArticleCardSkeleton() {
             <Shimmer className='h-3.5 w-24' />
           </div>
         </div>
-      </div>
+      </Card>
     </div>
   );
 }
@@ -62,7 +63,12 @@ function ArticleCardSkeleton() {
 function TestimonialCardSkeleton() {
   return (
     <div className='w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]'>
-      <div className='flex flex-col items-center rounded-lg border border-black/5 bg-white p-5 shadow-sm md:px-6 md:py-8'>
+      <Card
+        interactive={false}
+        variant='outlined'
+        padding='lg'
+        className='flex flex-col items-center gap-0'
+      >
         <Shimmer className='h-6 w-40' />
         <Shimmer className='mt-2 h-4 w-28' />
         <div className='mt-2 flex gap-1'>
@@ -75,7 +81,7 @@ function TestimonialCardSkeleton() {
           <Shimmer className='mx-auto h-4 w-5/6' />
           <Shimmer className='mx-auto h-4 w-3/4' />
         </div>
-      </div>
+      </Card>
     </div>
   );
 }
@@ -91,7 +97,7 @@ export default function CarouselSkeleton({
   variant = 'project',
   count = 3,
 }: CarouselSkeletonProps) {
-  const Card = cardMap[variant];
+  const CardComponent = cardMap[variant];
 
   return (
     <div className='space-y-4'>
@@ -101,7 +107,7 @@ export default function CarouselSkeleton({
       </div>
       <div className='no-scrollbar flex gap-4 overflow-hidden pb-2'>
         {Array.from({ length: count }).map((_, i) => (
-          <Card key={i} />
+          <CardComponent key={i} />
         ))}
       </div>
       <div className='flex justify-center gap-2'>

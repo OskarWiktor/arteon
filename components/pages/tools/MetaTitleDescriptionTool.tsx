@@ -77,7 +77,7 @@ export default function MetaTitleDescriptionTool() {
   return (
     <>
       <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-        <Card padding='lg'>
+        <Card interactive={false} padding='lg'>
           <ToolFieldRow label={t.addUrl} helper={t.urlHelper}>
             <Input
               type='text'
@@ -111,7 +111,12 @@ export default function MetaTitleDescriptionTool() {
               <span>
                 {t.width}: <strong>~{titleAnalysis.pixels} px</strong>
               </span>
-              <span className={cn('inline-flex items-center rounded-lg px-2.5 py-0.5 text-xs! font-medium ml-auto', getStatusClasses(titleAnalysis.status))}>
+              <span
+                className={cn(
+                  'ml-auto inline-flex items-center rounded-lg px-2.5 py-0.5 text-xs! font-medium',
+                  getStatusClasses(titleAnalysis.status),
+                )}
+              >
                 {titleAnalysis.status === 'empty' ? t.noTitle : titleAnalysis.statusLabel}
               </span>
             </div>
@@ -142,7 +147,10 @@ export default function MetaTitleDescriptionTool() {
                 {t.width}: <strong>~{descriptionAnalysis.pixels} px</strong>
               </span>
               <span
-                className={cn('inline-flex items-center rounded-lg px-2.5 py-0.5 text-xs! font-medium ml-auto', getStatusClasses(descriptionAnalysis.status))}
+                className={cn(
+                  'ml-auto inline-flex items-center rounded-lg px-2.5 py-0.5 text-xs! font-medium',
+                  getStatusClasses(descriptionAnalysis.status),
+                )}
               >
                 {descriptionAnalysis.status === 'empty'
                   ? t.noDescription
@@ -152,7 +160,7 @@ export default function MetaTitleDescriptionTool() {
           </ToolFieldRow>
         </Card>
 
-        <Card>
+        <Card interactive={false} padding='lg'>
           <div>
             <h2 className='h6 pb-2'>{t.previewTitle}</h2>
             <ToolHelper>{t.previewHelper}</ToolHelper>

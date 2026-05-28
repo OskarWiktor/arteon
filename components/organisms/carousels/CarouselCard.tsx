@@ -6,21 +6,8 @@ import Card from '../Card';
 import InlineLink from '../../atoms/InlineLink';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
-import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import ArrowIcon from '@/components/atoms/ArrowIcon';
 const IMAGE_SIZES = '(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw';
-
-const ArrowIcon = () => (
-  <span className={cn('ml-1', flexCenterClasses, normalIconSizeClasses)} aria-hidden='true'>
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      viewBox='0 0 24 24'
-      fill='currentColor'
-      className={smallIconSizeClasses}
-    >
-      <path d='M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z' />
-    </svg>
-  </span>
-);
 
 type CarouselCardProps =
   | {
@@ -47,25 +34,26 @@ export default function CarouselCard(props: CarouselCardProps) {
   if (props.variant === 'tool') {
     const { title, href, description, image, buttonLabel = 'Otwórz narzędzie' } = props;
     return (
-      <Card as='article' className='flex h-full flex-col' padding='md'>
-        <InlineLink href={href} className='block'>
-          <div className='relative aspect-[16/9] w-full overflow-hidden border-b border-black/10'>
+      <Card as='article' className='group flex h-full flex-col' padding='md'>
+        <Link href={href} className='block'>
+          <div className='relative aspect-[2/1] w-full overflow-hidden'>
             <Image src={image} alt={title} fill className='object-cover' sizes={IMAGE_SIZES} />
           </div>
-        </InlineLink>
-        <div className='flex flex-1 flex-col p-4 md:p-5'>
-          <h3 className='h5 text-dark mb-2'>{title}</h3>
-          <p className='text-light mb-4 line-clamp-3 !text-sm'>{description}</p>
-          <div className='mt-auto'>
+        <div className='flex grow flex-col px-6 py-4 md:px-7 md:py-5'>
+          <h3 className='h5 line-clamp-2'>{title}</h3>
+          <p className='text-light mt-2 line-clamp-2'>{description}</p>
+          <div className='mt-4 mb-2 h-px w-full bg-neutral-200' aria-hidden='true' />
+          <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
             <InlineLink
               href={href}
-              className='inline-flex w-fit rounded-lg border border-black/10 bg-white px-3 py-1.5 font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-4 md:py-2 md:text-base'
+              className="inline-flex rounded-lg transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
             >
               <span>{buttonLabel}</span>
               <ArrowIcon />
             </InlineLink>
           </div>
         </div>
+        </Link>
       </Card>
     );
   }
@@ -73,10 +61,10 @@ export default function CarouselCard(props: CarouselCardProps) {
   if (props.variant === 'article') {
     const { article, href, readingTimeLabel } = props;
     return (
-      <Card as='article' className='h-full' padding='md'>
+      <Card as='article' className='group relative flex h-full flex-col' padding='md'>
         <Link href={href} prefetch={false} className='block'>
           {article.cover ? (
-            <div className='relative aspect-[16/9] w-full overflow-hidden border-b border-black/10'>
+            <div className='relative aspect-[2/1] w-full overflow-hidden'>
               <Image
                 src={article.cover}
                 alt={article.title}
@@ -87,22 +75,30 @@ export default function CarouselCard(props: CarouselCardProps) {
             </div>
           ) : null}
           <div className='p-4'>
-            <h3 className='h6'>{article.title}</h3>
-            {article.excerpt ? (
-              <p className='text-light mt-2 line-clamp-3 !text-sm'>{article.excerpt}</p>
+            <h3 className='h5 line-clamp-2'>{article.title}</h3>
+            {article.readingTime ? (
+              <span className='text-light inline-flex pt-2 text-sm'>
+                {article.readingTime} {readingTimeLabel}
+              </span>
             ) : null}
-            <div className='mt-3 flex flex-wrap items-center gap-2'>
-              {article.readingTime ? (
-                <span className='text-light text-sm'>
-                  {article.readingTime} {readingTimeLabel}
-                </span>
-              ) : null}
-              {article.datePublished ? (
-                <span className='text-light text-sm'>
-                  <span className='mx-1'>•</span>
-                  {article.datePublished.split('-').reverse().join('.')}
-                </span>
-              ) : null}
+            {article.datePublished ? (
+              <span className='text-light inline-flex pt-2 text-sm'>
+                <span className='mx-1'>•</span>
+                {article.datePublished.split('-').reverse().join('.')}
+              </span>
+            ) : null}
+            {article.excerpt ? (
+              <p className='text-light mt-2 line-clamp-3'>{article.excerpt}</p>
+            ) : null}
+            <div className='mt-4 mb-2 h-px w-full bg-neutral-200' aria-hidden='true' />
+            <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
+              <InlineLink
+                href={href}
+                className="inline-flex rounded-lg transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
+              >
+                Przeczytaj artykuł
+                <ArrowIcon />
+              </InlineLink>
             </div>
           </div>
         </Link>

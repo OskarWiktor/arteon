@@ -1,7 +1,11 @@
+import Card from '@/components/organisms/Card';
+
 export default function ToolEditorSkeleton() {
   return (
-    <div
-      className='animate-pulse rounded-lg border border-black/5 bg-neutral-50 p-6'
+    <Card
+      variant='outlined'
+      padding='md'
+      className='animate-pulse'
       role='status'
       aria-label='Loading tool...'
     >
@@ -31,6 +35,6 @@ export default function ToolEditorSkeleton() {
       </div>
 
       <span className='sr-only'>Loading tool editor...</span>
-    </div>
+    </Card>
   );
 }

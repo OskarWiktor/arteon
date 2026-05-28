@@ -22,7 +22,7 @@ export default function ToolFieldRow({
     <div className={className}>
       {label && <p className={cn('tool-label mb-2', labelClassName)}>{label}</p>}
       {children}
-      {helper && <p className={cn('text-sm mt-1', helperClassName)}>{helper}</p>}
+      {helper && <p className={cn('mt-1 text-sm', helperClassName)}>{helper}</p>}
     </div>
   );
 }

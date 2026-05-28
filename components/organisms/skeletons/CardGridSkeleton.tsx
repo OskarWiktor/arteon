@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import Card from '../Card';
 import Shimmer from '../../atoms/skeletons/Shimmer';
 
 interface CardGridSkeletonProps {
@@ -19,10 +20,7 @@ export default function CardGridSkeleton({
   return (
     <div className={cn('grid gap-6', gridClass)}>
       {Array.from({ length: count }).map((_, i) => (
-        <div
-          key={i}
-          className='overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm'
-        >
+        <Card key={i} interactive={false} variant='outlined'>
           <Shimmer className={cn(imageAspect, 'w-full !rounded-none !bg-neutral-300')} />
           <div className='space-y-3 px-6 py-4 md:px-7 md:py-5'>
             <Shimmer className='h-5 w-3/4' />
@@ -35,7 +33,7 @@ export default function CardGridSkeleton({
               </>
             )}
           </div>
-        </div>
+        </Card>
       ))}
     </div>
   );

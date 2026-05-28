@@ -10,6 +10,7 @@ import { ButtonVariant } from '@/types/ui';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { RiArrowRightSLine } from 'react-icons/ri';
+import ArrowIcon from '../ArrowIcon';
 
 interface ButtonLinkProps {
   href: string;
@@ -43,18 +44,6 @@ export default function ButtonLink({
 }: ButtonLinkProps) {
   const classes = cn(buttonLinkClasses, focusRingClasses, variantClasses[variant], className);
 
-  const content = (
-    <>
-      <span>{children}</span>
-
-      {arrow && (
-        <span className={cn('ml-1', flexCenterClasses, normalIconSizeClasses)} aria-hidden='true'>
-          <RiArrowRightSLine className='text-current' />
-        </span>
-      )}
-    </>
-  );
-
   if (isExternalHref(href)) {
     return (
       <a
@@ -64,14 +53,18 @@ export default function ButtonLink({
         className={classes}
         aria-label={ariaLabel}
       >
-        {content}
+        <span>{children}</span>
+
+        {arrow && <ArrowIcon />}
       </a>
     );
   }
 
   return (
     <Link href={href} prefetch={false} className={classes} aria-label={ariaLabel}>
-      {content}
+      <span>{children}</span>
+
+      {arrow && <ArrowIcon />}
     </Link>
   );
 }

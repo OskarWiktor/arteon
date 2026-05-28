@@ -118,7 +118,7 @@ export default function LoremIpsumGenerator() {
 
   return (
     <div className='space-y-4 overflow-hidden'>
-      <Card className='flex flex-wrap items-center'>
+      <Card padding='lg' interactive={false} className='flex flex-wrap items-center'>
         <div className='flex flex-wrap items-center gap-2'>
           <RiPaletteLine className='text-primary text-base' />
           <span className='tool-value'>{t.styleBarTitle}</span>
@@ -131,7 +131,7 @@ export default function LoremIpsumGenerator() {
       </Card>
 
       <div className='grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]'>
-        <Card padding='md'>
+        <Card interactive={false} padding='lg'>
           <h2 className='h6 pb-1'>{t.panelTitle}</h2>
 
           <ToolFieldRow label={t.mode}>
@@ -220,7 +220,7 @@ export default function LoremIpsumGenerator() {
           )}
         </Card>
 
-        <Card>
+        <Card interactive={false} padding='lg'>
           <h2 className='h6 pb-1'>{t.preview}</h2>
 
           {output ? (

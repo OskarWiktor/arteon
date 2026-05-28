@@ -154,7 +154,7 @@ export default function JpgPngToWebp() {
 
   return (
     <div className='grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-      <Card>
+      <Card interactive={false} padding='lg'>
         <form onSubmit={handleSubmitWithAutoZip} className='space-y-4'>
           <div>
             <h2 className='h6 mb-2'>{t.addFiles}</h2>
@@ -332,7 +332,7 @@ export default function JpgPngToWebp() {
         </form>
       </Card>
 
-      <Card aria-label={t.queueListAriaLabel}>
+      <Card interactive={false} padding='lg'>
         <div className={cn('gap-2', flexCenterBetweenClasses)}>
           <h2 className='h6'>{t.queueFilesHeading}</h2>
           {files.length > 0 && (

@@ -2,6 +2,7 @@ import type { Testimonial } from '@/types/testimonial';
 import InlineLink from '../../atoms/InlineLink';
 import Card from '../Card';
 import { StarRating } from '../../atoms/StarRating';
+import ArrowIcon from '@/components/atoms/ArrowIcon';
 
 type Props = { item: Testimonial };
 
@@ -24,7 +25,7 @@ export default function TestimonialCard({ item }: Props) {
   return (
     <Card
       as='figure'
-      padding='lg'
+      padding='md'
       className='flex h-full w-full flex-col justify-between border-neutral-300 text-center'
     >
       <figcaption>
@@ -35,7 +36,7 @@ export default function TestimonialCard({ item }: Props) {
         </div>
       </figcaption>
 
-      <blockquote className='mt-4'>
+      <blockquote>
         <p className='text-dark text-base'>"{displayedQuote}"</p>
       </blockquote>
 
@@ -44,9 +45,10 @@ export default function TestimonialCard({ item }: Props) {
           href={item.link}
           target='_blank'
           rel='noopener noreferrer'
-          className='mt-5 underline underline-offset-4 transition hover:opacity-80'
+          className='mx-auto mt-2 inline-flex underline-offset-4 transition'
         >
           Zobacz opinię u źródła
+          <ArrowIcon />
         </InlineLink>
       )}
     </Card>

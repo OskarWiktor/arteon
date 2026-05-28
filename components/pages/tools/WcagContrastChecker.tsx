@@ -231,7 +231,7 @@ export default function WcagContrastChecker() {
   return (
     <>
       <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-        <Card>
+        <Card interactive={false} padding='lg'>
           <form onSubmit={handleSubmit} className='space-y-6'>
             <ToolFieldRow label={<span className='tool-value'>{t.sampleTextLabel}</span>}>
               <Input
@@ -384,7 +384,7 @@ export default function WcagContrastChecker() {
           </form>
         </Card>
 
-        <Card aria-label={t.resultsLabel}>
+        <Card interactive={false} padding='lg'>
           <div className='flex items-start justify-between gap-3'>
             <div>
               <div className='space-y-1'>

@@ -146,7 +146,7 @@ export default function TextFormatConverter({
       />
 
       <div className='grid gap-4 md:grid-cols-2'>
-        <Card>
+        <Card interactive={false} padding='lg'>
           <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <h2 className='h6'>{sourceLabel}</h2>
             <label className='text-primary-mid hover:text-primary cursor-pointer text-xs font-medium transition-colors'>
@@ -188,7 +188,7 @@ export default function TextFormatConverter({
           </div>
         </Card>
 
-        <Card>
+        <Card interactive={false} padding='lg'>
           <h2 className='h6'>{targetLabel}</h2>
           <Textarea
             className='min-h-[300px] resize-y'

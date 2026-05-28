@@ -1,13 +1,13 @@
 'use client';
 
-import { useId, useState, type ElementType, type ReactNode } from 'react';
+import { useId, type ElementType, type ReactNode } from 'react';
 import Image from 'next/image';
-import { RiArrowDownSLine } from 'react-icons/ri';
 import SectionHeader from '../../molecules/SectionHeader';
 import Wrapper from '../../atoms/Wrapper';
 import ButtonGroup from '../../molecules/ButtonGroup';
+import Card from '../Card';
 import { cn } from '@/lib/utils';
-import { flexCenterClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 interface SectionStepItem {
   icon?: ReactNode;
@@ -19,7 +19,6 @@ interface SectionStepItem {
   subtitle?: string;
   description: ReactNode;
   highlight?: boolean;
-  expandableContent?: ReactNode;
 }
 
 interface SectionStepsProps {
@@ -184,11 +183,6 @@ function ExpandableStepsList({
   inlineIcon,
   isHighlighted,
 }: ExpandableStepsListProps) {
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
-
-  const toggleExpand = (index: number) => {
-    setExpandedIndex(expandedIndex === index ? null : index);
-  };
 
   return (
     <ol
@@ -204,13 +198,9 @@ function ExpandableStepsList({
           title: itemTitle,
           description: itemDesc,
           subtitle: itemSubtitle,
-          expandableContent,
         } = item;
         const hasVisual = showIndex || icon || imageSrc;
         const highlighted = isHighlighted(item);
-        const isExpanded = expandedIndex === index;
-        const hasExpandable = Boolean(expandableContent);
-
         const useInline = inlineIcon && !topImageSrc;
 
         const visualNode = showIndex ? (
@@ -230,18 +220,19 @@ function ExpandableStepsList({
 
         return (
           <li key={index} className='flex flex-col items-stretch'>
-            <article
+            <Card
+              as='article'
+              padding='lg'
+              interactive={false}
               className={cn(
-                'flex h-full w-full flex-col rounded-lg p-4 transition md:p-6',
+                'flex h-full w-full flex-col gap-0',
                 variant === 'contact' ? 'text-center' : '',
-                highlighted
-                  ? 'bg-primary text-white shadow-lg'
-                  : 'border border-neutral-200 bg-white shadow-sm hover:-translate-y-0.5 hover:shadow-md',
+                highlighted ? 'bg-primary text-white shadow-lg' : 'border border-neutral-200',
               )}
             >
               {topImageSrc && (
                 <div className='mb-4 md:mb-6'>
-                  <div className='relative h-52 w-full overflow-hidden rounded-lg md:h-68'>
+                  <div className='relative h-52 w-full overflow-hidden md:h-68'>
                     <Image
                       src={topImageSrc}
                       alt={topImageAlt ?? ''}
@@ -287,25 +278,6 @@ function ExpandableStepsList({
                   )}
                   <span>{itemTitle}</span>
                 </h3>
-              ) : hasExpandable ? (
-                <button
-                  type='button'
-                  onClick={() => toggleExpand(index)}
-                  className={cn(
-                    'flex w-full items-center justify-between text-left',
-                    highlighted ? 'text-white' : 'text-dark',
-                  )}
-                  aria-expanded={isExpanded}
-                >
-                  <h3 className='h5 mb-1'>{itemTitle}</h3>
-                  <RiArrowDownSLine
-                    className={cn(
-                      'transition-transform',
-                      normalIconSizeClasses,
-                      isExpanded ? 'rotate-180' : '',
-                    )}
-                  />
-                </button>
               ) : (
                 <h3 className={cn('h5 mb-1', highlighted ? 'text-white' : 'text-dark')}>
                   {itemTitle}
@@ -326,18 +298,7 @@ function ExpandableStepsList({
               >
                 {itemDesc}
               </div>
-
-              {hasExpandable && isExpanded && (
-                <div
-                  className={cn(
-                    'mt-4 border-t pt-4',
-                    highlighted ? 'border-white/20' : 'border-neutral-200',
-                  )}
-                >
-                  {expandableContent}
-                </div>
-              )}
-            </article>
+            </Card>
           </li>
         );
       })}

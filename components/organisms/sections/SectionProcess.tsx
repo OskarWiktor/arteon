@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { RiArrowRightSLine } from 'react-icons/ri';
+import Card from '../Card';
 import Wrapper from '../../atoms/Wrapper';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { flexCenterClasses } from '@/lib/ui-classes';
@@ -25,7 +26,7 @@ export default function SectionProcess({ title, steps }: SectionProcessProps) {
         <div className='flex flex-col items-stretch gap-4 md:flex-row md:items-center'>
           {steps.map((step, index) => (
             <div key={index} className='flex flex-1 items-center'>
-              <div className='flex flex-1 items-center gap-3 rounded-lg bg-white p-4 shadow-sm'>
+              <Card interactive={false} className='flex flex-1 items-center'>
                 <div
                   className={cn(
                     'bg-primary h-12 w-12 flex-shrink-0 rounded-lg text-white',
@@ -38,7 +39,7 @@ export default function SectionProcess({ title, steps }: SectionProcessProps) {
                   <span className='text-light text-xs uppercase'>Krok {step.number}</span>
                   <h3 className='h6 font-semibold'>{step.title}</h3>
                 </div>
-              </div>
+              </Card>
               {index < steps.length - 1 && (
                 <RiArrowRightSLine
                   className='text-primary-light mx-2 hidden h-5 w-5 flex-shrink-0 md:block'

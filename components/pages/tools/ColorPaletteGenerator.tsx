@@ -78,7 +78,7 @@ export default function ColorPaletteGenerator() {
 
   return (
     <div className='space-y-4 overflow-hidden'>
-      <Card padding='md'>
+      <Card interactive={false} padding='lg'>
         <form onSubmit={handleSubmit} className='space-y-4'>
           <div className='flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between'>
             <InputColorWithLabel
@@ -107,7 +107,7 @@ export default function ColorPaletteGenerator() {
             {normalizedBase && (
               <ToolInfo className='flex items-center gap-3'>
                 <div
-                  className='rounded-md border border-black/10 h-7 w-7'
+                  className='h-7 w-7 rounded-md border border-black/10'
                   style={{ backgroundColor: normalizedBase }}
                   aria-label={t.currentBaseColor}
                 />
@@ -121,7 +121,7 @@ export default function ColorPaletteGenerator() {
         </form>
       </Card>
 
-      <Card aria-label={t.generatedPalettes}>
+      <Card interactive={false} padding='lg' aria-label={t.generatedPalettes}>
         {!normalizedBase && (
           <ToolAlert variant='error'>
             {t.colorReadError} <code className='rounded bg-black/5 px-1'>#rrggbb</code>, {t.example}{' '}

@@ -19,6 +19,7 @@ export function StarRating({
   const empty = 5 - full - (half ? 1 : 0);
   const box = 24;
   const starCls = 'inline-block align-middle';
+  const starColor = '#fbca41';
 
   const FullStar = (
     <svg
@@ -29,7 +30,7 @@ export function StarRating({
       className={starCls}
     >
       <path
-        fill='currentColor'
+        fill={starColor}
         d='M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z'
       />
     </svg>
@@ -45,13 +46,13 @@ export function StarRating({
     >
       <defs>
         <linearGradient id='halfGrad' x1='0' x2='1' y1='0' y2='0'>
-          <stop offset='50%' stopColor='currentColor' />
+          <stop offset='50%' stopColor={starColor} />
           <stop offset='50%' stopColor='transparent' />
         </linearGradient>
       </defs>
       <path
         fill='url(#halfGrad)'
-        stroke='currentColor'
+        stroke={starColor}
         d='M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z'
       />
     </svg>
@@ -67,7 +68,7 @@ export function StarRating({
     >
       <path
         fill='none'
-        stroke='currentColor'
+        stroke={starColor}
         d='M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z'
       />
     </svg>
