@@ -1,15 +1,12 @@
 import {
   buttonAccentVariantClasses,
   buttonNormalVariantClasses,
-  flexCenterClasses,
   focusRingClasses,
-  normalIconSizeClasses,
 } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 import { ButtonVariant } from '@/types/ui';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
-import { RiArrowRightSLine } from 'react-icons/ri';
 import ArrowIcon from '../ArrowIcon';
 
 interface ButtonLinkProps {
