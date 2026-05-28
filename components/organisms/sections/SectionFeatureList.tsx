@@ -13,7 +13,7 @@ export default function SectionFeatureList({ title, features }: SectionFeatureLi
   return (
     <section data-section='feature-list' aria-labelledby={title ? 'feature-list-title' : undefined}>
       <Wrapper>
-        <div className='mx-auto max-w-2xl rounded-lg border border-black/10 bg-white p-8'>
+        <div className='mx-auto max-w-2xl rounded-lg border border-neutral-200 bg-white p-8'>
           {title && <SectionHeader title={title} titleClassName='text-center' />}
 
           <ul className='grid gap-3 md:grid-cols-2'>

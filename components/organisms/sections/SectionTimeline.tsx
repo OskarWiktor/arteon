@@ -98,9 +98,7 @@ export default function SectionTimeline({
         btnOneHref={btnOneHref}
         btnTwo={btnTwo}
         btnTwoHref={btnTwoHref}
-        spacing='loose'
         ariaLabel='Działania sekcji'
-        role='group'
       />
     </section>
   );

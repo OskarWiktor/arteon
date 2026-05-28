@@ -265,7 +265,11 @@ export default function EmailSignatureGenerator() {
 
   return (
     <div className='space-y-4'>
-      <Card interactive={false} padding='lg' className='flex flex-wrap items-center justify-between'>
+      <Card
+        interactive={false}
+        padding='lg'
+        className='flex flex-wrap items-center justify-between'
+      >
         <div className='flex flex-wrap items-center gap-3'>
           <div className='flex flex-wrap items-center gap-2'>
             <RiLayout3Line className='text-primary text-base' />
@@ -607,7 +611,9 @@ export default function EmailSignatureGenerator() {
           </div>
         </Card>
 
-        <Card interactive={false} padding='lg'
+        <Card
+          interactive={false}
+          padding='lg'
           className='flex min-h-[620px] flex-col lg:sticky lg:top-24 lg:self-start'
         >
           <div className={cn('gap-2', flexCenterBetweenClasses)}>
@@ -623,7 +629,7 @@ export default function EmailSignatureGenerator() {
                   'rounded-md border p-1.5',
                   previewBg === 'light'
                     ? 'border-primary bg-primary text-white'
-                    : 'border-black/10 bg-white hover:bg-neutral-100',
+                    : 'border-neutral-200 bg-white hover:bg-neutral-100',
                 )}
                 title={t.preview.bgLight}
               >
@@ -636,7 +642,7 @@ export default function EmailSignatureGenerator() {
                   'rounded-md border p-1.5',
                   previewBg === 'dark'
                     ? 'border-primary bg-primary text-white'
-                    : 'border-black/10 bg-white hover:bg-neutral-100',
+                    : 'border-neutral-200 bg-white hover:bg-neutral-100',
                 )}
                 title={t.preview.bgDark}
               >
@@ -649,7 +655,7 @@ export default function EmailSignatureGenerator() {
                   'rounded-md border p-1.5',
                   previewBg === 'checker'
                     ? 'border-primary bg-primary text-white'
-                    : 'border-black/10 bg-white hover:bg-neutral-100',
+                    : 'border-neutral-200 bg-white hover:bg-neutral-100',
                 )}
                 title={t.preview.bgChecker}
               >

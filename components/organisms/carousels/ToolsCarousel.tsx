@@ -4,8 +4,8 @@ import { useRef } from 'react';
 
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { getToolsSections } from '@/lib/i18n/tool-registry';
-import { CarouselDots } from '@/components/molecules/CarouselDots';
-import { CarouselNavButtons } from '@/components/molecules/CarouselNavButtons';
+import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
+import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';

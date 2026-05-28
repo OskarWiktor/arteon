@@ -57,7 +57,7 @@ function isAnalyticsAllowed(fc: any): boolean {
  * Listens for Google CMP (Privacy & Messaging) consent decisions
  * and loads third-party analytics scripts when analytics_storage is granted.
  *
- * GA4 is loaded unconditionally in Advanced Consent Mode (see RootHtml.tsx)
+ * GA4 is loaded unconditionally in Advanced Consent Mode (see RootLayout.tsx)
  * and respects Consent Mode natively - no manual handling needed.
  *
  * Ahrefs and Metricool are NOT Consent-Mode-aware, so we load them

@@ -22,7 +22,7 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
           <Card key={a.slug} as='article' padding='md'>
             <Link href={href} prefetch={false} className='block'>
               {a.cover && (
-                <div className='relative aspect-[16/9] w-full overflow-hidden border-b border-black/10'>
+                <div className='relative aspect-[16/9] w-full overflow-hidden border-b border-neutral-200'>
                   <Image
                     src={a.cover}
                     alt={a.title}

@@ -49,7 +49,7 @@ const DESKTOP_ONLY_TOOLS = new Set([
 
 function DesktopOnlyNotice({ t }: { t: DesktopOnlyUi }) {
   return (
-    <section className='mx-auto my-6 max-w-xl rounded-lg border border-black/10 bg-white/90 p-6 text-sm shadow-sm'>
+    <section className='mx-auto my-6 max-w-xl rounded-lg border border-neutral-200 bg-white/90 p-6 text-sm shadow-sm'>
       <h2 className='mb-3 text-lg font-semibold'>{t.title}</h2>
       <p className='text-mid mb-3'>{t.description}</p>
       <div className='text-light rounded-lg bg-neutral-50 px-4 py-3 text-xs'>
@@ -210,12 +210,12 @@ function renderBlock(block: ToolContentBlock, idx: number, pageUrl: string): Rea
   }
 }
 
-interface ToolPageRendererProps {
+interface ToolPageProps {
   data: ToolPageData;
   tool?: ReactNode;
 }
 
-export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) {
+export default function ToolPage({ data, tool }: ToolPageProps) {
   const pageUrl = toAbsoluteUrl(data.metadata.path);
   const isDesktopOnly = DESKTOP_ONLY_TOOLS.has(data.toolKey);
   const desktopOnlyT = DESKTOP_ONLY_UI[data.locale as Locale];

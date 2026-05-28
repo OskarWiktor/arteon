@@ -144,12 +144,9 @@ export default function SectionSteps({
         <ButtonGroup
           btnOne={btnOne}
           btnOneHref={btnOneHref}
-          btnOneVariant={btnOneVariant === 'dark' ? 'normal' : btnOneVariant}
           btnTwo={btnTwo}
           btnTwoHref={btnTwoHref}
-          spacing='loose'
           ariaLabel='Działania sekcji'
-          role='group'
         />
 
         {disclaimer && (
@@ -183,7 +180,6 @@ function ExpandableStepsList({
   inlineIcon,
   isHighlighted,
 }: ExpandableStepsListProps) {
-
   return (
     <ol
       className={cn('grid grid-cols-1 gap-4 md:auto-rows-fr', gridColsSm, gridColsMd, gridColsLg)}

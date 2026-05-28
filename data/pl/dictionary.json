@@ -211,5 +211,10 @@
       "contactHref": "/kontakt",
       "errorCode": "Kod błędu"
     }
+  },
+  "relatedConverters": {
+    "titleConvertTo": "Konwertuj inne pliki do formatu {{format}}",
+    "titleConvertFrom": "Konwertuj {{format}} do innych formatów",
+    "formatConnector": "do"
   }
 }

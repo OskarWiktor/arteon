@@ -34,7 +34,7 @@ export default function FeatureCard({
         as='section'
         aria-labelledby={headingId}
         aria-describedby={descId}
-        className={cn('h-full flex-col', flexCenterClasses)}
+        className={cn('h-full !flex-col', flexCenterClasses)}
         {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
       >
         <div

@@ -26,7 +26,7 @@ export default function ButtonTool<T extends string>({
       onClick={() => onClick(id)}
       className={cn(
         buttonToolClasses,
-        isActive ? 'bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100',
+        isActive ? 'bg-primary text-white' : 'border-neutral-200 bg-white hover:bg-neutral-100',
       )}
     >
       {icon}

@@ -463,7 +463,7 @@ export default function ImageResizeTool() {
             )}
           </div>
 
-          <div className='text-light mt-4 rounded-lg border border-black/10 bg-white/90 p-4 text-xs!'>
+          <div className='text-light mt-4 rounded-lg border border-neutral-200 bg-white/90 p-4 text-xs!'>
             <h3 className='h6 mb-2'>{t.imageParams}</h3>
             {!state.imageUrl && <p>{t.noData}</p>}
             {state.imageUrl && (
@@ -813,7 +813,7 @@ export default function ImageResizeTool() {
                           }))
                         }
                         className={cn(
-                          'h-7 w-7 rounded-lg border border-black/10 bg-white hover:bg-neutral-100',
+                          'h-7 w-7 rounded-lg border border-neutral-200 bg-white hover:bg-neutral-100',
                           flexCenterClasses,
                         )}
                         title={t.centerHorizontal}
@@ -829,7 +829,7 @@ export default function ImageResizeTool() {
                           }))
                         }
                         className={cn(
-                          'h-7 w-7 rounded-lg border border-black/10 bg-white hover:bg-neutral-100',
+                          'h-7 w-7 rounded-lg border border-neutral-200 bg-white hover:bg-neutral-100',
                           flexCenterClasses,
                         )}
                         title={t.centerVertical}
@@ -846,7 +846,7 @@ export default function ImageResizeTool() {
                           }))
                         }
                         className={cn(
-                          'h-7 w-7 rounded-lg border border-black/10 bg-white hover:bg-neutral-100',
+                          'h-7 w-7 rounded-lg border border-neutral-200 bg-white hover:bg-neutral-100',
                           flexCenterClasses,
                         )}
                         title={t.centerCrop}

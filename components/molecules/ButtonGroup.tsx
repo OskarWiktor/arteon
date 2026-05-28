@@ -1,7 +1,6 @@
 import { cn } from '@/lib/utils';
 import ButtonLink from '../atoms/buttons/ButtonLink';
 
-type SpacingClasses = 'default' | 'loose';
 type AlignClasses = 'left' | 'center' | 'right';
 
 interface ButtonGroupProps {
@@ -11,17 +10,9 @@ interface ButtonGroupProps {
   btnTwo?: string;
   btnTwoHref?: string;
   btnTwoVariant?: 'accent' | 'normal';
-  className?: string;
-  spacing?: SpacingClasses;
   align?: AlignClasses;
   ariaLabel?: string;
-  role?: 'group' | 'none';
 }
-
-const spacingClasses: Record<SpacingClasses, string> = {
-  default: 'mt-2 md:mt-4 lg:mt-6',
-  loose: 'mt-4 md:mt-6 lg:mt-8',
-};
 
 const alignClasses: Record<AlignClasses, string> = {
   left: '',
@@ -36,23 +27,15 @@ export default function ButtonGroup({
   btnTwo,
   btnTwoHref,
   btnTwoVariant = 'accent',
-  className,
-  spacing = 'default',
   align = 'left',
   ariaLabel,
-  role = 'group',
 }: ButtonGroupProps) {
   if (!btnOne && !btnTwo) return null;
 
   return (
     <div
-      className={cn(
-        'flex flex-wrap gap-3',
-        spacingClasses[spacing],
-        alignClasses[align],
-        className,
-      )}
-      role={role}
+      className={cn('mt-4 flex flex-wrap gap-3 md:mt-6 lg:mt-8', alignClasses[align])}
+      role='group'
       aria-label={ariaLabel}
     >
       {btnOne && btnOneHref && (

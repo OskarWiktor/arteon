@@ -206,7 +206,7 @@
     {
       "type": "sectionDemo",
       "title": "Zuschnittsformen",
-      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\">Rechteck</span><span class=\"inline-flex items-center rounded-lg bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white\">Quadrat</span><span class=\"inline-flex items-center rounded-lg border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\">Kreis</span></div></div>",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg border border-neutral-200 bg-white px-3 py-1.5 text-sm font-medium\">Rechteck</span><span class=\"inline-flex items-center rounded-lg bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white\">Quadrat</span><span class=\"inline-flex items-center rounded-lg border border-neutral-200 bg-white px-3 py-1.5 text-sm font-medium\">Kreis</span></div></div>",
       "html": "<p class=\"text-mid\">Im Reiter <strong>Zuschnittsformen</strong> wählen Sie die Form des exportierten Bildes: Rechteck (mit gewählten Proportionen), Quadrat (erzwingt 1:1) oder Kreis (mit transparentem Hintergrund).</p><p class=\"text-mid mt-3\">Die Kreisform erstellt einen runden Avatar mit transparentem Hintergrund außerhalb des Kreises. Das Tool wechselt automatisch zum Format PNG oder WebP, da JPG keine Transparenz unterstützt.</p>"
     },
     {

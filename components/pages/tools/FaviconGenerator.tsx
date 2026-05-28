@@ -273,7 +273,7 @@ export default function FaviconGenerator() {
                           'inline-flex cursor-pointer items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium',
                           checked
                             ? 'bg-primary border-black text-white'
-                            : 'border-black/10 bg-white hover:bg-neutral-100',
+                            : 'border-neutral-200 bg-white hover:bg-neutral-100',
                         )}
                       >
                         <InputCheckboxWithLabel

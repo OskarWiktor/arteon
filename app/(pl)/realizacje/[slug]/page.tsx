@@ -147,7 +147,9 @@ function Aspect({
 }) {
   if (ratio === 'auto') {
     return (
-      <div className='relative overflow-hidden rounded-lg border border-black/10'>{children}</div>
+      <div className='relative overflow-hidden rounded-lg border border-neutral-200'>
+        {children}
+      </div>
     );
   }
 
@@ -159,7 +161,10 @@ function Aspect({
 
   return (
     <div
-      className={cn('relative overflow-hidden rounded-lg border border-black/10', map[ratio] || '')}
+      className={cn(
+        'relative overflow-hidden rounded-lg border border-neutral-200',
+        map[ratio] || '',
+      )}
     >
       {children}
     </div>
@@ -225,7 +230,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
               <Divider size='xs' />
               <figure>
                 {isAuto ? (
-                  <div className='overflow-hidden rounded-lg border border-black/10'>
+                  <div className='overflow-hidden rounded-lg border border-neutral-200'>
                     <Image
                       src={b.src}
                       alt={b.alt}
@@ -259,7 +264,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
         if (b.type === 'imageText') {
           const Img =
             b.ratio === 'auto' ? (
-              <div className='overflow-hidden rounded-lg border border-black/10'>
+              <div className='overflow-hidden rounded-lg border border-neutral-200'>
                 <Image
                   src={b.src}
                   alt={b.alt}
@@ -455,7 +460,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
               <SectionInfo title={b.title || 'Jak było - jak jest'}>
                 <div className='grid grid-cols-1 items-start gap-6 md:grid-cols-2'>
                   <figure>
-                    <div className='overflow-hidden rounded-lg border border-black/10'>
+                    <div className='overflow-hidden rounded-lg border border-neutral-200'>
                       <Image
                         src={b.beforeImage}
                         alt={b.beforeLabel || 'Widok przed zmianami'}
@@ -470,7 +475,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                     </figcaption>
                   </figure>
                   <figure>
-                    <div className='overflow-hidden rounded-lg border border-black/10'>
+                    <div className='overflow-hidden rounded-lg border border-neutral-200'>
                       <Image
                         src={b.afterImage}
                         alt={b.afterLabel || 'Widok po wdrożeniu'}
@@ -511,7 +516,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
               <div className='grid grid-cols-1 gap-4 sm:grid-cols-3'>
                 {b.images.map((img, idx) => (
                   <figure key={idx}>
-                    <div className='overflow-hidden rounded-lg border border-black/10'>
+                    <div className='overflow-hidden rounded-lg border border-neutral-200'>
                       <Image
                         src={img.src}
                         alt={img.alt}
@@ -724,7 +729,7 @@ export default async function ProjectPage({ params }: PageProps) {
               <SectionInfo title='Jak było - jak jest'>
                 <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
                   <figure>
-                    <div className='relative aspect-[16/9] overflow-hidden rounded-lg border border-black/10'>
+                    <div className='relative aspect-[16/9] overflow-hidden rounded-lg border border-neutral-200'>
                       <Image
                         src={project.beforeAfter.beforeImage || project.image}
                         alt='Widok przed zmianami'
@@ -737,7 +742,7 @@ export default async function ProjectPage({ params }: PageProps) {
                   </figure>
 
                   <figure>
-                    <div className='relative aspect-[16/9] overflow-hidden rounded-lg border border-black/10'>
+                    <div className='relative aspect-[16/9] overflow-hidden rounded-lg border border-neutral-200'>
                       <Image
                         src={project.beforeAfter.afterImage || project.image}
                         alt='Widok po wdrożeniu'

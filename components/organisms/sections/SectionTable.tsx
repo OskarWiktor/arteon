@@ -39,7 +39,7 @@ export default function SectionTable({
       <div className='-mx-4 overflow-x-auto sm:mx-0'>
         <table className='w-full min-w-full border-collapse text-sm tabular-nums'>
           <thead>
-            <tr className='border-b border-black/10'>
+            <tr className='border-b border-neutral-200'>
               <th scope='col' className='text-light p-4 text-left text-sm font-medium'>
                 {labelHeader}
               </th>

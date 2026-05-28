@@ -13,7 +13,7 @@ export default function ColorPalette({ colors }: ColorPaletteProps) {
         {colors.map((color, index) => (
           <div
             key={index}
-            className='h-10 w-10 rounded border border-black/10'
+            className='h-10 w-10 rounded border border-neutral-200'
             style={{ backgroundColor: color }}
             title={color}
             aria-label={`Kolor ${index + 1}: ${color}`}

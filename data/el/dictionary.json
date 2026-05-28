@@ -213,5 +213,10 @@
       "contactHref": "/el/epikoinonia",
       "errorCode": "Κωδικός σφάλματος"
     }
+  },
+  "relatedConverters": {
+    "titleConvertTo": "Μετατρέψτε άλλα αρχεία σε {{format}}",
+    "titleConvertFrom": "Μετατρέψτε {{format}} σε άλλες μορφές",
+    "formatConnector": "σε"
   }
 }

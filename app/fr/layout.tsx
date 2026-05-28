@@ -1,13 +1,13 @@
 import LocaleLayout from '@/components/templates/LocaleLayout';
-import RootHtml from '@/components/templates/RootHtml';
+import RootLayout from '@/components/templates/RootLayout';
 import { baseMetadata } from '@/lib/shared-metadata';
 
 export const metadata = baseMetadata;
 
 export default function FrLayout({ children }: { children: React.ReactNode }) {
   return (
-    <RootHtml lang='fr'>
+    <RootLayout lang='fr'>
       <LocaleLayout locale='fr'>{children}</LocaleLayout>
-    </RootHtml>
+    </RootLayout>
   );
 }

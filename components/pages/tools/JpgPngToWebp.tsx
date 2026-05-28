@@ -484,7 +484,7 @@ export default function JpgPngToWebp() {
                         onClick={() => reconvertFile(item.id)}
                         variant='default'
                         size='md'
-                        className='cursor-pointer border-black/10'
+                        className='cursor-pointer border-neutral-200'
                       >
                         {t.actions.reconvert}
                       </Badge>

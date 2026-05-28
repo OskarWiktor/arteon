@@ -38,27 +38,6 @@ export default function SectionContactForm({
   messagePlaceholder,
   variant = 'default-page',
 }: SectionContactFormProps) {
-  if (variant === 'tool-page') {
-    return (
-      <section id='contact-tool' className='scroll-mt-26'>
-        <div className='grid gap-8 lg:grid-cols-2 lg:gap-12'>
-          <ContactForm title={title} description={description} defaultSubject={defaultSubject} />
-          <div className='flex flex-col justify-center'>
-            <div className='relative mb-6 aspect-[4/3] overflow-hidden rounded-lg'>
-              <Image
-                src={imageSrc}
-                alt={imageAlt}
-                fill
-                className='object-cover'
-                sizes='(max-width: 1024px) 100vw, 50vw'
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
   return (
     <section id='contact' className='scroll-mt-26'>
       <div className='grid gap-8 lg:grid-cols-2 lg:gap-12'>
@@ -70,7 +49,7 @@ export default function SectionContactForm({
         />
 
         <div className='flex flex-col justify-center'>
-          <div className='relative mb-6 aspect-[4/3] overflow-hidden rounded-lg'>
+          <div className='relative mb-6 aspect-[4/3] overflow-hidden'>
             <Image
               src={imageSrc}
               alt={imageAlt}
@@ -79,22 +58,24 @@ export default function SectionContactForm({
               sizes='(max-width: 1024px) 100vw, 50vw'
             />
           </div>
-          <ul className='space-y-3'>
-            {benefits.map((item, i) => (
-              <li key={i} className='flex items-center gap-3'>
-                <div
-                  className={cn(
-                    'bg-accent/10 rounded-lg',
-                    flexCenterClasses,
-                    normalIconSizeClasses,
-                  )}
-                >
-                  {item.icon}
-                </div>
-                <span className='text-sm'>{item.label}</span>
-              </li>
-            ))}
-          </ul>
+          {variant === 'default-page' && (
+            <ul className='space-y-3'>
+              {benefits.map((item, i) => (
+                <li key={i} className='flex items-center gap-3'>
+                  <div
+                    className={cn(
+                      'bg-accent/10 rounded-lg',
+                      flexCenterClasses,
+                      normalIconSizeClasses,
+                    )}
+                  >
+                    {item.icon}
+                  </div>
+                  <span className='text-sm'>{item.label}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </section>

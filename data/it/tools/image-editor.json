@@ -205,7 +205,7 @@
     {
       "type": "sectionDemo",
       "title": "Forme di ritaglio",
-      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\">Rettangolo</span><span class=\"inline-flex items-center rounded-lg bg-blue-100 px-3 py-1.5 text-sm font-medium text-blue-800\">Quadrato</span><span class=\"inline-flex items-center rounded-lg border border-black/10 bg-white px-3 py-1.5 text-sm font-medium\">Cerchio</span></div></div>",
+      "demoHtml": "<div class=\"tool-section space-y-3\"><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg border border-neutral-200 bg-white px-3 py-1.5 text-sm font-medium\">Rettangolo</span><span class=\"inline-flex items-center rounded-lg bg-blue-100 px-3 py-1.5 text-sm font-medium text-blue-800\">Quadrato</span><span class=\"inline-flex items-center rounded-lg border border-neutral-200 bg-white px-3 py-1.5 text-sm font-medium\">Cerchio</span></div></div>",
       "html": "<p class=\"text-mid\">Nella scheda <strong>Forme di ritaglio</strong>, scegli la forma dell'immagine esportata: rettangolo (con le proporzioni selezionate), quadrato (forza 1:1) o cerchio (con sfondo trasparente).</p><p class=\"text-mid mt-3\">La forma cerchio crea un avatar rotondo con sfondo trasparente al di fuori del cerchio. Lo strumento passa automaticamente al formato PNG o WebP, poiche il JPG non supporta la trasparenza.</p>"
     },
     {

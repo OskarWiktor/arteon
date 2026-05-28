@@ -1,4 +1,4 @@
-import TermsPageContent from '@/components/pages/TermsPageContent';
+import TermsPage from '@/components/pages/TermsPage';
 import { getTermsPageData, getTermsAlternates } from '@/lib/i18n/pages/terms';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
@@ -21,6 +21,6 @@ export const metadata = {
   },
 };
 
-export default function TermsPage() {
-  return <TermsPageContent locale={LOCALE} />;
+export default function Page() {
+  return <TermsPage locale={LOCALE} />;
 }

@@ -1,13 +1,13 @@
 import LocaleLayout from '@/components/templates/LocaleLayout';
-import RootHtml from '@/components/templates/RootHtml';
+import RootLayout from '@/components/templates/RootLayout';
 import { baseMetadata } from '@/lib/shared-metadata';
 
 export const metadata = baseMetadata;
 
 export default function EsLayout({ children }: { children: React.ReactNode }) {
   return (
-    <RootHtml lang='es'>
+    <RootLayout lang='es'>
       <LocaleLayout locale='es'>{children}</LocaleLayout>
-    </RootHtml>
+    </RootLayout>
   );
 }

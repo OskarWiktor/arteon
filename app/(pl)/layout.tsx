@@ -1,13 +1,13 @@
 import LocaleLayout from '@/components/templates/LocaleLayout';
-import RootHtml from '@/components/templates/RootHtml';
+import RootLayout from '@/components/templates/RootLayout';
 import { baseMetadata } from '@/lib/shared-metadata';
 
 export const metadata = baseMetadata;
 
 export default function PlLayout({ children }: { children: React.ReactNode }) {
   return (
-    <RootHtml lang='pl-PL'>
+    <RootLayout lang='pl-PL'>
       <LocaleLayout locale='pl'>{children}</LocaleLayout>
-    </RootHtml>
+    </RootLayout>
   );
 }

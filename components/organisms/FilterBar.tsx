@@ -69,7 +69,7 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
         <button
           type='button'
           onClick={openModal}
-          className='inline-flex items-center gap-2 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md'
+          className='inline-flex items-center gap-2 rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md'
           aria-haspopup='dialog'
           aria-expanded={isModalOpen}
         >
@@ -113,7 +113,7 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
             <button
               type='button'
               onClick={toggleExpand}
-              className='inline-flex shrink-0 items-center gap-1 rounded-lg border border-black/10 bg-white px-3 py-1.5 text-sm font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md'
+              className='inline-flex shrink-0 items-center gap-1 rounded-lg border border-neutral-200 bg-white px-3 py-1.5 text-sm font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md'
               aria-expanded={isExpanded}
             >
               <span>{isExpanded ? 'Mniej filtrów' : 'Więcej filtrów'}</span>

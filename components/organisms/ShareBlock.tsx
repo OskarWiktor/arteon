@@ -59,7 +59,7 @@ export default function ShareBlock({ url, title }: ShareBlockProps) {
         <a
           href={mailHref}
           className={cn(
-            'text-primary flex items-center gap-2 rounded-lg border border-black/10 bg-white px-4 py-2 text-sm font-medium transition hover:bg-neutral-50',
+            'text-primary flex items-center gap-2 rounded-lg border border-neutral-200 bg-white px-4 py-2 text-sm font-medium transition hover:bg-neutral-50',
             focusRingClasses,
           )}
         >

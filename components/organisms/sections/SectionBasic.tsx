@@ -80,8 +80,6 @@ export default function SectionBasic({
               btnOneHref={btnOneHref}
               btnTwo={btnTwo}
               btnTwoHref={btnTwoHref}
-              spacing='loose'
-              role='group'
             />
           </div>
         </div>

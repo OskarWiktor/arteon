@@ -93,7 +93,9 @@ function Aspect({
 }) {
   if (ratio === 'auto')
     return (
-      <div className='relative overflow-hidden rounded-lg border border-black/10'>{children}</div>
+      <div className='relative overflow-hidden rounded-lg border border-neutral-200'>
+        {children}
+      </div>
     );
   const map: Record<string, string> = {
     '16/9': 'aspect-square md:aspect-[16/9]',
@@ -102,7 +104,10 @@ function Aspect({
   };
   return (
     <div
-      className={cn('relative overflow-hidden rounded-lg border border-black/10', map[ratio] || '')}
+      className={cn(
+        'relative overflow-hidden rounded-lg border border-neutral-200',
+        map[ratio] || '',
+      )}
     >
       {children}
     </div>
@@ -241,7 +246,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
             <div key={`grp-img-${i}`}>
               <figure className={!hasCaption ? 'mb-6 md:mb-12 lg:mb-16' : undefined}>
                 {isAuto ? (
-                  <div className='overflow-hidden rounded-lg border border-black/10'>
+                  <div className='overflow-hidden rounded-lg border border-neutral-200'>
                     <Image
                       src={b.src}
                       alt={b.alt}
@@ -276,7 +281,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
         if (b.type === 'imageText') {
           const Img =
             b.ratio === 'auto' ? (
-              <div className='overflow-hidden rounded-lg border border-black/10'>
+              <div className='overflow-hidden rounded-lg border border-neutral-200'>
                 <Image
                   src={b.src}
                   alt={b.alt}

@@ -25,7 +25,7 @@ import { cn } from '@/lib/utils';
 const WHY_FREE_ICONS = [RiInfinityFill, RiLockLine, RiToolsFill, RiRocketLine];
 const OUR_TOOLS_ICONS = [RiImageEditLine, RiSearchLine, RiMailLine, RiPaletteLine, RiQrCodeLine];
 
-export default function AboutPageContent({ locale }: { locale: Locale }) {
+export default function AboutPage({ locale }: { locale: Locale }) {
   const data = getAboutPageData(locale);
   if (!data) return null;
 

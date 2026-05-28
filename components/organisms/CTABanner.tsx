@@ -100,10 +100,8 @@ export default function CTABanner({
             btnOneHref={btnOneHref}
             btnTwo={btnTwo}
             btnTwoHref={btnTwoHref}
-            spacing='loose'
             align='center'
             ariaLabel='Działania sekcji'
-            role='group'
           />
         </div>
       </Wrapper>

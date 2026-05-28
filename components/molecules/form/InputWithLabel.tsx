@@ -25,7 +25,6 @@ interface InputWithLabelProps {
   inputMode?: 'text' | 'email' | 'tel' | 'url' | 'numeric' | 'decimal' | 'search' | 'none';
   pattern?: string;
   className?: string;
-  wrapperClassName?: string;
   helperText?: ReactNode;
   errorMessage?: ReactNode;
   onChange?: (value: string) => void;
@@ -53,7 +52,6 @@ export default function InputWithLabel({
   inputMode,
   pattern,
   className,
-  wrapperClassName,
   helperText,
   errorMessage,
   onChange,
@@ -81,7 +79,7 @@ export default function InputWithLabel({
     : undefined;
 
   return (
-    <div className={wrapperClassName}>
+    <div>
       <Label htmlFor={id} required={required} variant={variant}>
         {label}
       </Label>

@@ -32,14 +32,14 @@ export default function TableBlock({
     <figure className='not-prose'>
       <div
         className={cn(
-          'overflow-x-auto rounded-lg border border-black/10 bg-white shadow-sm',
+          'overflow-x-auto rounded-lg border border-neutral-200 bg-white shadow-sm',
           className,
         )}
         role='region'
         aria-label={caption || t.defaultTableLabel}
       >
         {caption && (
-          <div className='border-b border-black/10 px-4 py-3'>
+          <div className='border-b border-neutral-200 px-4 py-3'>
             <div className='text-dark text-sm font-medium'>{caption}</div>
           </div>
         )}

@@ -213,5 +213,10 @@
       "contactHref": "/ro/contact",
       "errorCode": "Cod eroare"
     }
+  },
+  "relatedConverters": {
+    "titleConvertTo": "Convertește alte fișiere în {{format}}",
+    "titleConvertFrom": "Convertește {{format}} în alte formate",
+    "formatConnector": "în"
   }
 }

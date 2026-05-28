@@ -1,8 +1,8 @@
 'use client';
 
 import { useRef } from 'react';
-import { CarouselDots } from '@/components/molecules/CarouselDots';
-import { CarouselNavButtons } from '@/components/molecules/CarouselNavButtons';
+import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
+import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
 import type { Testimonial } from '@/types/testimonial';
 import TestimonialCard from '@/components/organisms/carousels/TestimonialCard';
 import SectionHeader from '../../molecules/SectionHeader';

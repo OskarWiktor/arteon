@@ -19,7 +19,7 @@ interface ButtonLinkProps {
 }
 
 const buttonLinkClasses =
-  'inline-flex w-fit items-center px-4 py-2 md:px-5 md:py-2.5 rounded-sm text-sm font-medium md:text-base transition hover:-translate-y-0.5 text-dark border border-black/10 bg-white shadow-sm hover:shadow-md';
+  'inline-flex w-fit items-center px-4 py-2 md:px-5 md:py-2.5 rounded-sm text-sm font-medium md:text-base transition hover:-translate-y-0.5 text-dark border border-neutral-200 bg-white shadow-sm hover:shadow-md';
 
 const variantClasses: Record<ButtonVariant, string> = {
   normal: buttonNormalVariantClasses,

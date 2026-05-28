@@ -14,10 +14,7 @@ interface InputColorWithLabelProps {
   onPickerChange?: (value: string) => void;
   ariaLabel?: string;
   placeholder?: string;
-  pickerClassName?: string;
   textFieldClassName?: string;
-  wrapperClassName?: string;
-  disabled?: boolean;
 }
 
 export default function InputColorWithLabel({
@@ -31,10 +28,7 @@ export default function InputColorWithLabel({
   onPickerChange,
   ariaLabel,
   placeholder,
-  pickerClassName,
   textFieldClassName = 'h-10 flex-1',
-  wrapperClassName,
-  disabled,
 }: InputColorWithLabelProps) {
   const autoId = useId();
   const id = providedId ?? autoId;
@@ -48,7 +42,7 @@ export default function InputColorWithLabel({
   };
 
   return (
-    <div className={wrapperClassName}>
+    <div>
       {label && (
         <Label htmlFor={id} variant={variant}>
           {label}
@@ -60,8 +54,6 @@ export default function InputColorWithLabel({
           value={pickerVal}
           onChange={e => handlePickerChange(e.target.value)}
           aria-label={ariaLabel}
-          disabled={disabled}
-          className={pickerClassName}
         />
         {withTextField && (
           <Input
@@ -69,7 +61,6 @@ export default function InputColorWithLabel({
             value={value}
             onChange={e => onChange(e.target.value)}
             placeholder={placeholder}
-            disabled={disabled}
             className={textFieldClassName}
           />
         )}

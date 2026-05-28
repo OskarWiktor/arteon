@@ -275,7 +275,7 @@ export default function AdSense({ variant, adSlot, className, locale }: AdSenseP
 
   if (variant === 'responsive') {
     return (
-      <div className={`ad-placeholder min-h-[250px] w-full rounded bg-neutral-50 ${className}`}>
+      <div className={cn('ad-placeholder min-h-[250px] w-full rounded bg-neutral-50', className)}>
         {labelNode}
         <div ref={containerRef} className='w-full' />
       </div>

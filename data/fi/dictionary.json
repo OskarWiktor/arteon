@@ -213,5 +213,10 @@
       "contactHref": "/fi/yhteystiedot",
       "errorCode": "Virhekoodi"
     }
+  },
+  "relatedConverters": {
+    "titleConvertTo": "Muunna muut tiedostot {{format}}-muotoon",
+    "titleConvertFrom": "Muunna {{format}} muihin muotoihin",
+    "formatConnector": "→"
   }
 }

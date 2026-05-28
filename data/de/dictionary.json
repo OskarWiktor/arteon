@@ -213,5 +213,10 @@
       "contactHref": "/de/kontakt",
       "errorCode": "Fehlercode"
     }
+  },
+  "relatedConverters": {
+    "titleConvertTo": "Andere Dateien in {{format}} konvertieren",
+    "titleConvertFrom": "{{format}} in andere Formate konvertieren",
+    "formatConnector": "in"
   }
 }

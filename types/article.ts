@@ -4,7 +4,7 @@ export type Article = {
   slug: string;
   title: string;
   excerpt?: string;
-  cover?: string;
+  cover: string;
   primaryCategory?: string;
   author?: { name: string; url?: string };
   readingTime?: number;

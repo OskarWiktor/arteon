@@ -55,7 +55,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
           id={`tabpanel-${autoId}-${activeTab}`}
           role='tabpanel'
           aria-labelledby={`tab-${autoId}-${activeTab}`}
-          className='rounded-lg border border-black/10 bg-white p-6'
+          className='rounded-lg border border-neutral-200 bg-white p-6'
         >
           <h3 className='h5 mb-3 flex items-center gap-2'>
             {tabs[activeTab].icon}

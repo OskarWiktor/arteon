@@ -18,7 +18,7 @@ interface ButtonCopyProps {
 }
 
 const variantClasses: Record<ButtonCopyVariant, string> = {
-  default: 'border-black/10 bg-white text-dark hover:bg-neutral-50',
+  default: 'border-neutral-200 bg-white text-dark hover:bg-neutral-50',
   dark: 'border-white/10 text-white/80 hover:bg-white/10',
 };
 

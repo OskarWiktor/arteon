@@ -29,7 +29,9 @@ function AdBannerShimmer() {
 
 function SectionBox({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <div className={cn('rounded-lg border border-black/10 bg-white/80 p-7 shadow-sm', className)}>
+    <div
+      className={cn('rounded-lg border border-neutral-200 bg-white/80 p-7 shadow-sm', className)}
+    >
       {children}
     </div>
   );
@@ -124,7 +126,13 @@ function ContrastCheckerPanel() {
       <SectionBox className='space-y-3'>
         <Shimmer className='h-5 w-40' />
         {[1, 2, 3].map(i => (
-          <Card interactive={false} padding='lg' key={i} variant='outlined' className={flexCenterBetweenClasses}>
+          <Card
+            interactive={false}
+            padding='lg'
+            key={i}
+            variant='outlined'
+            className={flexCenterBetweenClasses}
+          >
             <Shimmer className='h-4 w-32' />
             <div className='flex gap-2'>
               <Shimmer className='h-6 w-16 !rounded-lg' />

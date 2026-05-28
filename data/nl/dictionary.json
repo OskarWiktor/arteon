@@ -213,5 +213,10 @@
       "contactHref": "/nl/contact",
       "errorCode": "Foutcode"
     }
+  },
+  "relatedConverters": {
+    "titleConvertTo": "Converteer andere bestanden naar {{format}}",
+    "titleConvertFrom": "Converteer {{format}} naar andere formaten",
+    "formatConnector": "naar"
   }
 }

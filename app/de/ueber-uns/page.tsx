@@ -1,4 +1,4 @@
-import AboutPageContent from '@/components/pages/AboutPageContent';
+import AboutPage from '@/components/pages/AboutPage';
 import { getAboutPageData, getAboutAlternates } from '@/lib/i18n/pages/about';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
@@ -22,5 +22,5 @@ export const metadata = {
 };
 
 export default function UeberUnsPage() {
-  return <AboutPageContent locale={LOCALE} />;
+  return <AboutPage locale={LOCALE} />;
 }

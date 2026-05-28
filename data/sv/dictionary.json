@@ -213,5 +213,10 @@
       "contactHref": "/sv/kontakt",
       "errorCode": "Felkod"
     }
+  },
+  "relatedConverters": {
+    "titleConvertTo": "Konvertera andra filer till {{format}}",
+    "titleConvertFrom": "Konvertera {{format}} till andra format",
+    "formatConnector": "till"
   }
 }

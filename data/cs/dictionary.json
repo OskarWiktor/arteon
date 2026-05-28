@@ -213,5 +213,10 @@
       "contactHref": "/cs/kontakt",
       "errorCode": "Kód chyby"
     }
+  },
+  "relatedConverters": {
+    "titleConvertTo": "Převést ostatní soubory do formátu {{format}}",
+    "titleConvertFrom": "Převést {{format}} do jiných formátů",
+    "formatConnector": "do"
   }
 }

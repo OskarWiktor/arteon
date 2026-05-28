@@ -128,11 +128,8 @@ export default function HeroBanner({
             <ButtonGroup
               btnOne={secondaryCtaLabel}
               btnOneHref={secondaryCtaHref}
-              btnOneVariant='normal'
               btnTwo={primaryCtaLabel}
               btnTwoHref={primaryCtaHref}
-              btnTwoVariant='accent'
-              spacing='loose'
               align={variant === 'center' ? 'center' : variant === 'right' ? 'right' : 'left'}
             />
           )}

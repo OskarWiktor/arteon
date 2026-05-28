@@ -11,7 +11,7 @@ interface FaqPanelProps {
 }
 
 const detailsClasses =
-  'faq-details group hover:border-primary-light open:border-primary-light my-2 overflow-hidden rounded-lg border border-neutral-200 bg-white transition-shadow open:shadow-sm hover:shadow-md';
+  'faq-details group hover:border-neutral-300 open:border-neutral-300 my-2 overflow-hidden rounded-lg border border-neutral-200 bg-white transition open:shadow-sm hover:shadow-md';
 
 const summaryClasses =
   'flex w-full cursor-pointer list-none items-center justify-between p-3 text-left transition-colors md:p-4 [&::-webkit-details-marker]:hidden';
@@ -19,15 +19,9 @@ const summaryClasses =
 const iconClasses =
   'bg-primary-light flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg text-neutral-900 transition group-open:bg-neutral-900 group-open:text-white';
 
-export default function FaqPanel({
-  question,
-  answer,
-  icon,
-  name,
-  defaultOpen = false,
-}: FaqPanelProps) {
+export default function FaqPanel({ question, answer, icon, name }: FaqPanelProps) {
   return (
-    <details name={name} open={defaultOpen ? true : undefined} className={detailsClasses}>
+    <details name={name} className={detailsClasses}>
       <summary className={cn(summaryClasses, focusRingClasses, icon && 'gap-4')}>
         {icon && <div className={iconClasses}>{icon}</div>}
 

@@ -138,6 +138,12 @@ const ErrorPagesSchema = z.object({
   error: ErrorPagesErrorSchema,
 });
 
+const RelatedConvertersSchema = z.object({
+  titleConvertTo: z.string(),
+  titleConvertFrom: z.string(),
+  formatConnector: z.string(),
+});
+
 const DictionarySchema = z.object({
   nav: NavSchema,
   footer: FooterSchema,
@@ -152,6 +158,7 @@ const DictionarySchema = z.object({
   mobileNav: MobileNavSchema,
   infoBanner: InfoBannerSchema,
   errorPages: ErrorPagesSchema,
+  relatedConverters: RelatedConvertersSchema,
 });
 
 export type Dictionary = z.infer<typeof DictionarySchema>;
@@ -167,6 +174,7 @@ export type LanguageSwitcherDictionary = z.infer<typeof LanguageSwitcherSchema>;
 export type MobileNavDictionary = z.infer<typeof MobileNavSchema>;
 export type InfoBannerDictionary = z.infer<typeof InfoBannerSchema>;
 export type ErrorPagesDictionary = z.infer<typeof ErrorPagesSchema>;
+export type RelatedConvertersDictionary = z.infer<typeof RelatedConvertersSchema>;
 
 const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   pl: () => import('@/data/pl/dictionary.json').then(m => DictionarySchema.parse(m.default)),

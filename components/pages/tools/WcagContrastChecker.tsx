@@ -361,7 +361,7 @@ export default function WcagContrastChecker() {
                 <div className='flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between'>
                   <div className='flex min-w-0 items-center gap-3'>
                     <div
-                      className={cn('rounded-md border border-black/10', largeIconSizeClasses)}
+                      className={cn('rounded-md border border-neutral-200', largeIconSizeClasses)}
                       style={{ backgroundColor: matchedForeground }}
                       aria-hidden='true'
                     />

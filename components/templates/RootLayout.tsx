@@ -171,12 +171,12 @@ const websiteJsonLd = {
   },
 };
 
-interface RootHtmlProps {
+interface RootLayoutProps {
   lang: string;
   children: React.ReactNode;
 }
 
-export default function RootHtml({ lang, children }: RootHtmlProps) {
+export default function RootLayout({ lang, children }: RootLayoutProps) {
   return (
     <html lang={lang} className={cn(inter.variable, playfairDisplay.variable)}>
       <head>

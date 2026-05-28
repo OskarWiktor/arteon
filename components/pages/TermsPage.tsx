@@ -8,7 +8,7 @@ import { getTermsPageData } from '@/lib/i18n/pages/terms';
 import Divider from '../atoms/Divider';
 import SectionInfo from '../organisms/sections/SectionInfo';
 
-export default function TermsPageContent({ locale }: { locale: Locale }) {
+export default function TermsPage({ locale }: { locale: Locale }) {
   const data = getTermsPageData(locale);
   if (!data) return null;
 

@@ -20,7 +20,7 @@ export default function ToolColorSwatch({
   return (
     <div className='flex items-center gap-3 overflow-hidden rounded-lg border border-neutral-200 bg-white px-3 py-2'>
       <div
-        className='h-9 w-9 rounded-md border border-black/10'
+        className='h-9 w-9 rounded-md border border-neutral-200'
         style={{ backgroundColor: hex }}
         aria-label={ariaLabelPrefix ? `${ariaLabelPrefix} ${hex}` : hex}
       />

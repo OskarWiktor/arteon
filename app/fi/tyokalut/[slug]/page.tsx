@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import ToolPageRenderer, { generateToolMetadata } from '@/components/pages/ToolPageRenderer';
+import ToolPage, { generateToolMetadata } from '@/components/pages/ToolPage';
 import { getAllToolSlugs, getToolDataBySlug } from '@/lib/tools/data-loader';
 import type { Metadata } from 'next';
 
@@ -24,5 +24,5 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const { slug } = await params;
   const data = getToolDataBySlug(LOCALE, slug);
   if (!data) notFound();
-  return <ToolPageRenderer data={data} />;
+  return <ToolPage data={data} />;
 }

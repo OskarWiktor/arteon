@@ -213,5 +213,10 @@
       "contactHref": "/hu/kapcsolat",
       "errorCode": "Hibakód"
     }
+  },
+  "relatedConverters": {
+    "titleConvertTo": "Más fájlok konvertálása {{format}} formátumba",
+    "titleConvertFrom": "{{format}} konvertálása más formátumokba",
+    "formatConnector": "→"
   }
 }

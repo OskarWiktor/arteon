@@ -59,7 +59,7 @@ export default function SectionVerticalTabs({ title, tabs }: SectionVerticalTabs
             id={`vtabpanel-${activeTab}`}
             role='tabpanel'
             aria-labelledby={`vtab-${activeTab}`}
-            className='flex-1 rounded-lg border border-black/10 bg-white p-6'
+            className='flex-1 rounded-lg border border-neutral-200 bg-white p-6'
           >
             {tabs[activeTab].content}
           </div>

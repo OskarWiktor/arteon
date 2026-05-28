@@ -326,7 +326,7 @@ export default function OfferOptimizationWordPressPage() {
               <h3 className='h5 mb-3'>Camper Albania - wypożyczalnia kamperów</h3>
               <div className='grid grid-cols-2 gap-4 md:grid-cols-4'>
                 <figure>
-                  <div className='overflow-hidden rounded-lg border border-black/10'>
+                  <div className='overflow-hidden rounded-lg border border-neutral-200'>
                     <Image
                       src='/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-przed.webp'
                       alt='Camper Albania - wynik PageSpeed przed optymalizacją'
@@ -339,7 +339,7 @@ export default function OfferOptimizationWordPressPage() {
                   <figcaption className='text-light mt-2 text-sm'>Przed optymalizacją</figcaption>
                 </figure>
                 <figure>
-                  <div className='overflow-hidden rounded-lg border border-black/10'>
+                  <div className='overflow-hidden rounded-lg border border-neutral-200'>
                     <Image
                       src='/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-po.webp'
                       alt='Camper Albania - wynik PageSpeed po optymalizacji'
@@ -360,7 +360,7 @@ export default function OfferOptimizationWordPressPage() {
               <h3 className='h5 mb-3'>MSC Psychotherapy - gabinet psychologiczny</h3>
               <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
                 <figure>
-                  <div className='overflow-hidden rounded-lg border border-black/10'>
+                  <div className='overflow-hidden rounded-lg border border-neutral-200'>
                     <Image
                       src='/assets/projects/msc/msc-optymalizacja-strony-wynik-przed.webp'
                       alt='MSC Psychotherapy - wynik PageSpeed przed optymalizacją'
@@ -373,7 +373,7 @@ export default function OfferOptimizationWordPressPage() {
                   <figcaption className='text-light mt-2 text-sm'>Przed optymalizacją</figcaption>
                 </figure>
                 <figure>
-                  <div className='overflow-hidden rounded-lg border border-black/10'>
+                  <div className='overflow-hidden rounded-lg border border-neutral-200'>
                     <Image
                       src='/assets/projects/msc/msc-optymalizacja-strony-wynik-po.webp'
                       alt='MSC Psychotherapy - wynik PageSpeed po optymalizacji'

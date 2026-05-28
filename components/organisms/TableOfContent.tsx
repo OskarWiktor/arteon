@@ -91,7 +91,7 @@ export default function TableOfContents({
       {items.map(i => {
         const isActive = activeId === i.id;
         return (
-          <li key={i.id} className={i.level === 3 ? 'border-l border-black/10' : ''}>
+          <li key={i.id} className={i.level === 3 ? 'border-l border-neutral-200' : ''}>
             <a
               href={`#${i.id}`}
               aria-current={isActive ? 'location' : undefined}

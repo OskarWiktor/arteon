@@ -1,8 +1,8 @@
 'use client';
 
 import { useRef } from 'react';
-import { CarouselDots } from '@/components/molecules/CarouselDots';
-import { CarouselNavButtons } from '@/components/molecules/CarouselNavButtons';
+import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
+import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
 
 import SectionHeader from '@/components/molecules/SectionHeader';
@@ -105,7 +105,7 @@ export default function ProjectsCarouselClient({
               role='group'
               aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}
             >
-              <CarouselCard variant='project' project={project} size='small' />
+              <CarouselCard variant='project' project={project} />
             </div>
           ))}
         </div>

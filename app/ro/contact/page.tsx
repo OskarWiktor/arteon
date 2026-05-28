@@ -1,4 +1,4 @@
-﻿import ContactPageContent from '@/components/pages/ContactPageContent';
+﻿import ContactPage from '@/components/pages/ContactPage';
 import { getContactPageData, getContactAlternates } from '@/lib/i18n/pages/contact';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
@@ -21,6 +21,6 @@ export const metadata = {
   },
 };
 
-export default function ContactPage() {
-  return <ContactPageContent locale={LOCALE} />;
+export default function Page() {
+  return <ContactPage locale={LOCALE} />;
 }

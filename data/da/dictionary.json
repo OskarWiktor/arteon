@@ -213,5 +213,10 @@
       "contactHref": "/da/kontakt",
       "errorCode": "Fejlkode"
     }
+  },
+  "relatedConverters": {
+    "titleConvertTo": "Konverter andre filer til {{format}}",
+    "titleConvertFrom": "Konverter {{format}} til andre formater",
+    "formatConnector": "til"
   }
 }

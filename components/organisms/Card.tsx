@@ -6,7 +6,7 @@ type CardPadding = 'sm' | 'md' | 'lg';
 
 const variantClasses: Record<CardVariant, string> = {
   default: '',
-  outlined: 'border border-black/10',
+  outlined: 'border border-neutral-200',
 };
 
 const paddingClasses: Record<CardPadding, string> = {
@@ -38,7 +38,7 @@ export default function Card<T extends ElementType = 'div'>({
   return (
     <Component
       className={cn(
-        'gap-3 overflow-hidden rounded-lg bg-white shadow-sm flex flex-col',
+        'flex flex-col gap-3 overflow-hidden rounded-lg bg-white shadow-sm',
         interactive && 'transition hover:-translate-y-0.5 hover:shadow-md',
         variantClasses[variant],
         paddingClasses[padding],
@@ -47,7 +47,6 @@ export default function Card<T extends ElementType = 'div'>({
       {...rest}
     >
       {children}
-
     </Component>
   );
 }

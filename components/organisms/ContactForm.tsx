@@ -101,7 +101,6 @@ export default function ContactForm({
           name='Wiadomość'
           placeholder={messagePlaceholder ?? t.messagePlaceholder}
           required
-          maxLength={2000}
           className='h-48 resize-none'
         />
 

@@ -107,7 +107,7 @@ export default function ColorPaletteGenerator() {
             {normalizedBase && (
               <ToolInfo className='flex items-center gap-3'>
                 <div
-                  className='h-7 w-7 rounded-md border border-black/10'
+                  className='h-7 w-7 rounded-md border border-neutral-200'
                   style={{ backgroundColor: normalizedBase }}
                   aria-label={t.currentBaseColor}
                 />

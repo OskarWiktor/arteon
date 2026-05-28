@@ -368,7 +368,7 @@ strong {
 }
 
 .tool-button-inactive {
-  @apply border-black/10 bg-white hover:bg-neutral-100;
+  @apply border-neutral-200 bg-white hover:bg-neutral-100;
 }
 
 .tool-info-box {

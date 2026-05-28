@@ -12,7 +12,7 @@ import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { getContactPageData } from '@/lib/i18n/pages/contact';
 import { normalIconSizeClasses } from '@/lib/ui-classes';
 
-export default function ContactPageContent({ locale }: { locale: Locale }) {
+export default function ContactPage({ locale }: { locale: Locale }) {
   const data = getContactPageData(locale);
   if (!data) return null;
 
