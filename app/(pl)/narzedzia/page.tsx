@@ -11,7 +11,7 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 import InlineLink from '@/components/atoms/InlineLink';
 import Divider from '@/components/atoms/Divider';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
 import { RiShieldCheckLine, RiInfinityFill, RiLockLine, RiGlobalLine } from 'react-icons/ri';
 export const metadata = {
   title:
