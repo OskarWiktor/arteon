@@ -1,0 +1,541 @@
+{
+  "toolKey": "pxToCmDpi",
+  "locale": "ro",
+  "metadata": {
+    "title": "Calculator px în cm (DPI) – convertește pixeli în centimetri",
+    "description": "Convertește pixeli în centimetri cu DPI reglabil. Instrumentul ideal pentru graficieni, fotografi și creatori care verifică dimensiunea de tipărire a fișierelor de ecran.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/unelte/convertor-px-in-cm"
+  },
+  "hero": {
+    "title": "Convertește pixeli în centimetri cu orice DPI",
+    "description": "Introdu o valoare în pixeli, setează rezoluția DPI și citește rezultatul în centimetri. Verifică la câți centimetri corespunde un anumit număr de pixeli, inclusiv rezoluții de ecran populare precum 1920 × 1080. Convertorul te ajută să alegi dimensiunea potrivită atunci când vrei să tipărești un fișier grafic sau să îl adaptezi la un format de hârtie anume."
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/unelte",
+      "label": "Unelte"
+    },
+    "third": {
+      "href": "/ro/unelte/convertor-px-in-cm",
+      "label": "px în cm"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor de pixeli în centimetri cu DPI reglabil – calculator px în cm",
+      "alternateName": [
+        "Convertor px în cm",
+        "Calculator px în centimetri",
+        "Convertor de pixeli în centimetri",
+        "Pixeli în centimetri",
+        "px în centimetri",
+        "Convertește px în cm",
+        "Calculator pixeli în cm",
+        "px în cm 300 dpi",
+        "px în cm online",
+        "Convertor pixel în cm",
+        "Centimetri din pixeli",
+        "Calculator DPI pentru tipar",
+        "Conversie px cm",
+        "Câți cm are 1 px",
+        "Dimensiunea pixelului în cm"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertor de pixeli în centimetri cu valoare DPI reglabilă. Imediat ce introduci numărul de pixeli, vezi pe loc la câți centimetri corespunde valoarea și ce format de hârtie ar produce. Convertorul este perfect pentru a verifica dacă un fișier de la aparatul foto, o captură de ecran sau o imagine de pe internet sunt suficient de mari pentru o dimensiune de tipărire anume și funcționează în browser, fără înregistrare.",
+      "featureList": [
+        "Rezoluție DPI reglabilă",
+        "Conversia funcționează în ambele sensuri, așa că transformi atât pixelii în centimetri, cât și centimetrii în pixeli",
+        "Rezultatul apare instantaneu pe măsură ce scrii, fără a fi nevoie să apeși vreun buton",
+        "Rezultatul final poate fi copiat în clipboard cu un singur clic",
+        "Tabel extins de răspunsuri pentru valori de la 50 la 8.000 de pixeli, inclusiv lățimi de document precum 413, 827 și 1.181 px",
+        "Tabel separat cu rezoluțiile de ecran populare (Full HD, 4K, 8K) și formatele pentru rețelele sociale (Instagram, Facebook, Twitter)",
+        "Tabel cu formatele de hârtie A0–A7 împreună cu dimensiunile fotografiilor și cărților de vizită în pixeli la 300 DPI",
+        "O secțiune cu ghiduri explică cum treci de la px la cm în Photoshop, Illustrator, Figma, Canva și Procreate",
+        "Toate calculele se fac local în browser, datele tale nu părăsesc dispozitivul și nu sunt stocate nicăieri",
+        "Formula exactă de conversie este cm = px × 2,54 ÷ DPI și folosește lungimea fixă a inchului egală cu 2,54 cm"
+      ]
+    },
+    "howTo": {
+      "name": "Cum convertești pixeli în centimetri?",
+      "description": "Ghid rapid pentru folosirea convertorului px în cm cu DPI reglabil.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introdu valoarea în pixeli",
+          "text": "În câmpul din stânga scrie numărul de pixeli pe care vrei să îl convertești în centimetri."
+        },
+        {
+          "name": "Setează rezoluția DPI",
+          "text": "Alege valoarea DPI. Pentru ecrane se folosesc de obicei 96 DPI, iar pentru tipar 300 DPI."
+        },
+        {
+          "name": "Citește rezultatul sau inversează sensul",
+          "text": "Rezultatul în centimetri apare imediat în câmpul alăturat. Îl poți copia sau poți folosi butonul Schimbă ordinea pentru a converti centimetrii în pixeli."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "De ce să convertești pixeli în centimetri?",
+      "html": "<p class=\"text-mid mb-4\">Pixelul este o unitate digitală care descrie un punct pe ecranul unui telefon, al unei tablete sau al unui monitor. Centimetrul, în schimb, domnește în lumea fizică a hârtiei și a tiparului. Pentru a-l traduce pe unul în celălalt, trebuie să cunoști rezoluția DPI, adică numărul de pixeli care încap pe un inch de material sau de ecran.</p><p class=\"text-mid mb-4\">Acest tip de conversie îl fac mai ales graficienii care vor să verifice cât de mare va fi proiectul lor după tipărire, fotografii care evaluează dacă un fișier de la aparatul foto este suficient pentru un anumit format de tipar și persoanele care pregătesc capturi de ecran sau imagini de pe internet pentru tipărire. Convertorul te scapă de calculele de mână și de memorarea formulei.</p><p class=\"text-mid\">Mai jos pe pagină vei găsi un tabel extins de răspunsuri pentru valorile populare de pixeli, un tabel separat cu rezoluțiile de ecran precum Full HD și 4K, dimensiunile gata calculate ale formatelor de hârtie și fotografie, precum și ghiduri scurte despre cum treci de la pixeli la centimetri în Photoshop, Figma, Canva și alte instrumente grafice.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertor gratuit de pixeli în centimetri – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează conversia px în cm? Formulă și exemplu",
+      "html": "<p class=\"text-mid mb-4\">Întreaga conversie se reduce la o singură formulă care se bazează pe relația fixă dintre inch și centimetru: un inch este exact 2,54 cm. Așadar, este suficient să înmulțești numărul de pixeli cu 2,54 și să îl împarți la rezoluția DPI aleasă.</p><p class=\"text-mid mb-4\">Formula completă arată astfel: <strong>număr de centimetri = număr de pixeli × 2,54 ÷ DPI</strong>. Convertorul efectuează acest calcul instantaneu, așa că nu trebuie să calculezi și nici să cauți un calculator.</p><p class=\"text-mid mb-4\">Exemplu: vrei să verifici câți centimetri sunt 1.920 de pixeli pe un ecran standard la 96 DPI. Înlocuiești valorile în formulă și obții 1.920 × 2,54 ÷ 96, ceea ce dă exact 50,80 cm. Aceiași 1.920 de pixeli la 300 DPI folosiți în tipar sunt deja doar 16,26 cm, pentru că pe un inch încap mai mulți pixeli.</p><p class=\"text-mid\">În sens invers funcționează în mod similar: număr de pixeli = număr de centimetri × DPI ÷ 2,54. Astfel poți verifica câți pixeli trebuie să aibă o imagine pe care vrei să o tipărești într-o dimensiune anume, de exemplu în format de carte de vizită sau de fotografie 10 × 15 cm.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "La câți centimetri corespund diferite valori de pixeli la diferite valori DPI?",
+      "description": "Tabelul de mai jos arată cum se traduc aceleași valori în pixeli în centimetri la cele cinci rezoluții cele mai folosite. Câteva valori merită reținute, pentru că corespund exact unor formate anume: 413 px la 300 DPI este latura scurtă a unei fotografii de pașaport, 827 px sunt 7 cm, iar 945 px sunt exact 8 cm.",
+      "labelHeader": "Pixeli",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
+      "rows": [
+        { "label": "50 px", "values": ["1,76 cm", "1,32 cm", "0,85 cm", "0,42 cm", "0,21 cm"] },
+        { "label": "90 px", "values": ["3,18 cm", "2,38 cm", "1,52 cm", "0,76 cm", "0,38 cm"] },
+        {
+          "label": "100 px",
+          "values": ["3,53 cm", "2,65 cm", "1,69 cm", "0,85 cm", "0,42 cm"],
+          "emphasis": true
+        },
+        { "label": "150 px", "values": ["5,29 cm", "3,97 cm", "2,54 cm", "1,27 cm", "0,64 cm"] },
+        {
+          "label": "200 px",
+          "values": ["7,06 cm", "5,29 cm", "3,39 cm", "1,69 cm", "0,85 cm"],
+          "emphasis": true
+        },
+        { "label": "250 px", "values": ["8,82 cm", "6,61 cm", "4,23 cm", "2,12 cm", "1,06 cm"] },
+        {
+          "label": "300 px",
+          "values": ["10,58 cm", "7,94 cm", "5,08 cm", "2,54 cm", "1,27 cm"],
+          "emphasis": true
+        },
+        { "label": "400 px", "values": ["14,11 cm", "10,58 cm", "6,77 cm", "3,39 cm", "1,69 cm"] },
+        {
+          "label": "413 px",
+          "values": ["14,57 cm", "10,93 cm", "6,99 cm", "3,50 cm", "1,75 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "500 px",
+          "values": ["17,64 cm", "13,23 cm", "8,47 cm", "4,23 cm", "2,12 cm"],
+          "emphasis": true
+        },
+        { "label": "591 px", "values": ["20,85 cm", "15,64 cm", "10,01 cm", "5,00 cm", "2,50 cm"] },
+        { "label": "600 px", "values": ["21,17 cm", "15,88 cm", "10,16 cm", "5,08 cm", "2,54 cm"] },
+        { "label": "640 px", "values": ["22,58 cm", "16,93 cm", "10,84 cm", "5,42 cm", "2,71 cm"] },
+        { "label": "720 px", "values": ["25,40 cm", "19,05 cm", "12,19 cm", "6,10 cm", "3,05 cm"] },
+        { "label": "800 px", "values": ["28,22 cm", "21,17 cm", "13,55 cm", "6,77 cm", "3,39 cm"] },
+        {
+          "label": "827 px",
+          "values": ["29,17 cm", "21,88 cm", "14,00 cm", "7,00 cm", "3,50 cm"],
+          "emphasis": true
+        },
+        { "label": "900 px", "values": ["31,75 cm", "23,81 cm", "15,24 cm", "7,62 cm", "3,81 cm"] },
+        {
+          "label": "945 px",
+          "values": ["33,34 cm", "25,00 cm", "16,00 cm", "8,00 cm", "4,00 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1.000 px",
+          "values": ["35,28 cm", "26,46 cm", "16,93 cm", "8,47 cm", "4,23 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1.080 px",
+          "values": ["38,10 cm", "28,58 cm", "18,29 cm", "9,14 cm", "4,57 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1.181 px",
+          "values": ["41,66 cm", "31,24 cm", "20,00 cm", "10,00 cm", "5,00 cm"]
+        },
+        {
+          "label": "1.200 px",
+          "values": ["42,33 cm", "31,75 cm", "20,32 cm", "10,16 cm", "5,08 cm"]
+        },
+        {
+          "label": "1.500 px",
+          "values": ["52,92 cm", "39,69 cm", "25,40 cm", "12,70 cm", "6,35 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1.920 px",
+          "values": ["67,73 cm", "50,80 cm", "32,51 cm", "16,26 cm", "8,13 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "2.000 px",
+          "values": ["70,56 cm", "52,92 cm", "33,87 cm", "16,93 cm", "8,47 cm"]
+        },
+        {
+          "label": "2.048 px",
+          "values": ["72,25 cm", "54,19 cm", "34,68 cm", "17,34 cm", "8,67 cm"]
+        },
+        {
+          "label": "2.400 px",
+          "values": ["84,67 cm", "63,50 cm", "40,64 cm", "20,32 cm", "10,16 cm"]
+        },
+        {
+          "label": "2.480 px",
+          "values": ["87,47 cm", "65,62 cm", "42,00 cm", "21,00 cm (A4)", "10,50 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "3.000 px",
+          "values": ["105,83 cm", "79,38 cm", "50,80 cm", "25,40 cm", "12,70 cm"]
+        },
+        {
+          "label": "3.508 px",
+          "values": ["123,73 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)", "14,85 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "4.000 px",
+          "values": ["141,11 cm", "105,83 cm", "67,73 cm", "33,87 cm", "16,93 cm"]
+        },
+        {
+          "label": "5.000 px",
+          "values": ["176,39 cm", "132,29 cm", "84,67 cm", "42,33 cm", "21,17 cm"]
+        },
+        {
+          "label": "6.000 px",
+          "values": ["211,67 cm", "158,75 cm", "101,60 cm", "50,80 cm", "25,40 cm"]
+        },
+        {
+          "label": "8.000 px",
+          "values": ["282,22 cm", "211,67 cm", "135,47 cm", "67,73 cm", "33,87 cm"]
+        }
+      ],
+      "caption": "Toate valorile au fost rotunjite la două zecimale conform formulei cm = px × 2,54 ÷ DPI."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "La câți centimetri corespund rezoluțiile de ecran și grafica pentru rețelele sociale cele mai populare?",
+      "description": "Tabelul de mai jos arată dimensiunile fizice ale celor mai populare rezoluții de monitoare, smartphone-uri și grafică pentru rețelele sociale. Prima coloană cu valori în centimetri presupune 96 DPI, adică ceea ce sistemul de operare consideră pentru un ecran tipic. A doua coloană arată câți centimetri ar ocupa aceeași grafică la 300 DPI folosiți în tipar, adică ce dimensiune ar avea tipărită în calitate fotografică.",
+      "labelHeader": "Format",
+      "cols": ["Rezoluție (px)", "Dimensiune @ 96 DPI", "Dimensiune @ 300 DPI"],
+      "rows": [
+        { "groupLabel": "Rezoluții de ecran" },
+        { "label": "HD 720p", "values": ["1.280 × 720", "33,87 × 19,05 cm", "10,84 × 6,10 cm"] },
+        {
+          "label": "Full HD 1080p",
+          "values": ["1.920 × 1.080", "50,80 × 28,58 cm", "16,26 × 9,14 cm"],
+          "emphasis": true
+        },
+        { "label": "2K QHD", "values": ["2.560 × 1.440", "67,73 × 38,10 cm", "21,67 × 12,19 cm"] },
+        {
+          "label": "4K UHD",
+          "values": ["3.840 × 2.160", "101,60 × 57,15 cm", "32,51 × 18,29 cm"],
+          "emphasis": true
+        },
+        { "label": "5K", "values": ["5.120 × 2.880", "135,47 × 76,20 cm", "43,35 × 24,38 cm"] },
+        { "label": "8K", "values": ["7.680 × 4.320", "203,20 × 114,30 cm", "65,02 × 36,58 cm"] },
+        {
+          "label": "Smartphone (vertical)",
+          "values": ["1.080 × 1.920", "28,58 × 50,80 cm", "9,14 × 16,26 cm"]
+        },
+        { "groupLabel": "Grafică pentru rețelele sociale" },
+        {
+          "label": "Instagram (pătrat)",
+          "values": ["1.080 × 1.080", "28,58 × 28,58 cm", "9,14 × 9,14 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "Instagram story / Reel",
+          "values": ["1.080 × 1.920", "28,58 × 50,80 cm", "9,14 × 16,26 cm"]
+        },
+        {
+          "label": "Miniatură YouTube",
+          "values": ["1.280 × 720", "33,87 × 19,05 cm", "10,84 × 6,10 cm"]
+        },
+        {
+          "label": "Imagine OG / distribuire Facebook",
+          "values": ["1.200 × 630", "31,75 × 16,67 cm", "10,16 × 5,33 cm"]
+        },
+        { "label": "Copertă Facebook", "values": ["851 × 315", "22,51 × 8,33 cm", "7,21 × 2,67 cm"] },
+        {
+          "label": "Antet X / Twitter",
+          "values": ["1.500 × 500", "39,69 × 13,23 cm", "12,70 × 4,23 cm"]
+        }
+      ],
+      "caption": "Un ecran Full HD complet pe un monitor de 24 de inchi măsoară fizic puțin mai puțin de 50,80 cm lățime, pentru că producătorii folosesc densități de pixeli diferite – valoarea din tabel este lățimea teoretică la standardul de 96 DPI."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "La câți pixeli corespund dimensiunile în centimetri cele mai populare?",
+      "description": "Uneori pornim de la latura fizică și vrem să știm câți pixeli trebuie să aibă o imagine pentru a fi tipărită într-o dimensiune anume. Tabelul de mai jos arată conversia inversă pentru cele patru rezoluții cele mai folosite.",
+      "labelHeader": "Dimensiune",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
+      "rows": [
+        { "label": "0,5 cm", "values": ["14 px", "19 px", "30 px", "59 px"] },
+        { "label": "1 cm", "values": ["28 px", "38 px", "59 px", "118 px"], "emphasis": true },
+        { "label": "2 cm", "values": ["57 px", "76 px", "118 px", "236 px"] },
+        { "label": "3 cm", "values": ["85 px", "113 px", "177 px", "354 px"] },
+        { "label": "5 cm", "values": ["142 px", "189 px", "295 px", "591 px"], "emphasis": true },
+        { "label": "7 cm", "values": ["198 px", "264 px", "413 px", "827 px"] },
+        {
+          "label": "10 cm",
+          "values": ["283 px", "378 px", "591 px", "1.181 px"],
+          "emphasis": true
+        },
+        { "label": "15 cm", "values": ["425 px", "567 px", "886 px", "1.772 px"] },
+        { "label": "20 cm", "values": ["567 px", "756 px", "1.181 px", "2.362 px"] },
+        {
+          "label": "21 cm (A4 lăț.)",
+          "values": ["595 px", "794 px", "1.240 px", "2.480 px"],
+          "emphasis": true
+        },
+        {
+          "label": "29,7 cm (A4 înălț.)",
+          "values": ["842 px", "1.123 px", "1.754 px", "3.508 px"],
+          "emphasis": true
+        },
+        { "label": "50 cm", "values": ["1.417 px", "1.890 px", "2.953 px", "5.906 px"] }
+      ],
+      "caption": "Dacă folosești mai des conversia în acest sens, avem pentru tine un calculator cm în px dedicat, cu un interval de valori și mai larg."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Cele mai populare formate fizice și dimensiunile lor în pixeli",
+      "description": "Dacă, în loc de pixeli izolați, ai nevoie de dimensiunile unui format gata făcut (de exemplu o coală A4, o fotografie 10×15 cm sau o fotografie de pașaport), tabelul de mai jos indică valorile la cele două rezoluții cele mai folosite. Dimensiunile sunt indicate mereu în formatul lățime × înălțime, în orientare verticală.",
+      "labelHeader": "Format",
+      "cols": ["Lăț. × înălț. (cm)", "Lăț. × înălț. (150 DPI)", "Lăț. × înălț. (300 DPI)"],
+      "rows": [
+        { "groupLabel": "Hârtie seria ISO A" },
+        { "label": "A0", "values": ["84,1 × 118,9", "4.967 × 7.022", "9.933 × 14.043"] },
+        { "label": "A1", "values": ["59,4 × 84,1", "3.508 × 4.967", "7.016 × 9.933"] },
+        { "label": "A2", "values": ["42,0 × 59,4", "2.480 × 3.508", "4.961 × 7.016"] },
+        { "label": "A3", "values": ["29,7 × 42,0", "1.754 × 2.480", "3.508 × 4.961"] },
+        {
+          "label": "A4",
+          "values": ["21,0 × 29,7", "1.240 × 1.754", "2.480 × 3.508"],
+          "emphasis": true
+        },
+        { "label": "A5", "values": ["14,8 × 21,0", "874 × 1.240", "1.748 × 2.480"] },
+        { "label": "A6", "values": ["10,5 × 14,8", "620 × 874", "1.240 × 1.748"] },
+        { "label": "A7", "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"] },
+        { "groupLabel": "Fotografii și imprimări" },
+        { "label": "Foto 9 × 13", "values": ["9 × 13", "531 × 768", "1.063 × 1.535"] },
+        {
+          "label": "Foto 10 × 15",
+          "values": ["10 × 15", "591 × 886", "1.181 × 1.772"],
+          "emphasis": true
+        },
+        { "label": "Foto 13 × 18", "values": ["13 × 18", "768 × 1.063", "1.535 × 2.126"] },
+        { "label": "Foto 15 × 21", "values": ["15 × 21", "886 × 1.240", "1.772 × 2.480"] },
+        { "label": "Foto 20 × 30", "values": ["20 × 30", "1.181 × 1.772", "2.362 × 3.543"] },
+        { "groupLabel": "Documente și cărți de vizită" },
+        {
+          "label": "Foto de pașaport (RO, 35 × 45 mm)",
+          "values": ["3,5 × 4,5", "207 × 266", "413 × 531"],
+          "emphasis": true
+        },
+        {
+          "label": "Carte de vizită RO/UE (ISO ID-1, 85 × 55 mm)",
+          "values": ["8,5 × 5,5", "502 × 325", "1.004 × 650"],
+          "emphasis": true
+        },
+        { "label": "Carte de vizită americană (3,5 × 2 in)", "values": ["8,89 × 5,08", "525 × 300", "1.050 × 600"] }
+      ],
+      "caption": "Aceste valori sunt oglinda tabelului din convertorul nostru cm în px – poți trece oricând de la un sens la altul cunoscând doar numărul de pixeli și DPI-ul țintă."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Cum treci de la pixeli la centimetri în programele populare?",
+      "inlineIcon": true,
+      "grid": "one",
+      "items": [
+        {
+          "title": "Photoshop",
+          "icon": "RiImageEditLine",
+          "description": "În Adobe Photoshop verifici dimensiunile pânzei și rezultatul în centimetri în fereastra <strong>Imagine &rsaquo; Dimensiune imagine</strong>. Din lista derulantă a unităților alege Centimetri, iar în câmpul Rezoluție introdu DPI-ul țintă: Photoshop arată imediat la câți centimetri corespund dimensiunile în pixeli ale fișierului tău. Dacă vrei ca schimbarea unității să nu afecteze numărul de pixeli al fișierului, debifează opțiunea Reeșantionare. Atunci schimbi doar modul în care sunt prezentate dimensiunile, iar pixelii rămân neatinși."
+        },
+        {
+          "title": "Illustrator",
+          "icon": "RiPencilLine",
+          "description": "Adobe Illustrator lucrează în unitatea aleasă la crearea documentului. O poți schimba în <strong>Editare &rsaquo; Preferințe &rsaquo; Unități</strong>: alege Centimetri dacă vrei să vezi cât de mare va fi proiectul după tipărire. Rezultatul în centimetri depinde de rezoluția planșei setate la începutul proiectului. Dacă lucrezi cu un fișier primit în pixeli, dar ai nevoie de dimensiunile pentru tipografie, cel mai simplu este să copiezi valoarea în pixeli din panoul Transformare și să o introduci în convertorul nostru cu DPI-ul potrivit."
+        },
+        {
+          "title": "Figma",
+          "icon": "RiLayoutGridLine",
+          "description": "Figma lucrează exclusiv în pixeli și presupune 96 DPI fixe. Asta înseamnă că, dacă vrei să știi cât de mare va fi proiectul tău după tipărire în centimetri, trebuie mai întâi să convertești valoarea în pixeli la rezoluția de tipar țintă. De exemplu: o planșă de 1.181 × 1.772 px împărțită la 300 DPI este exact o fotografie 10 × 15 cm. Introdu valoarea din Figma în convertorul nostru, setează 300 DPI și vezi imediat dimensiunea fizică pe hârtie."
+        },
+        {
+          "title": "Canva",
+          "icon": "RiPaletteLine",
+          "description": "În Canva, după ce dai clic pe <strong>Creează un design &rsaquo; Dimensiune personalizată</strong>, poți alege unitatea cm sau mm și vezi imediat dimensiunea fizică în centimetri. Dacă lucrezi cu o grafică existentă în pixeli, deschide panoul cu dimensiunile proiectului și convertește-le cu convertorul nostru la 300 DPI pentru a verifica cât de mare va fi după tipărire. Canva exportă fișierele pentru tipar la 300 DPI în mod implicit, așa că tabelul nostru de formate va corespunde cu ceea ce primești la ieșire."
+        },
+        {
+          "title": "Procreate",
+          "icon": "RiBrushLine",
+          "description": "Procreate, la crearea unei pânze noi, permite alegerea unității dintre pixeli, milimetri, centimetri și inchi. În fila Pânză personalizată introdu dimensiunea în cm și setează 300 DPI pentru a vedea câți pixeli va avea fișierul final. Dacă ai deja o ilustrație în pixeli și vrei să știi cât de mare va fi după tipărire, folosește convertorul nostru: Procreate arată imediat dimensiunile pânzei curente în panoul Acțiuni, așa că trebuie doar să le copiezi."
+        },
+        {
+          "title": "Word, Excel, PowerPoint",
+          "icon": "RiFileTextLine",
+          "description": "Pachetul Microsoft 365 (Word, Excel și PowerPoint) lucrează în centimetri, iar dimensiunile imaginilor inserate în document se setează în panoul Dimensiune și poziție. Dacă lipești o captură de ecran sau o grafică de pe internet cu dimensiuni în pixeli, Office arată automat la câți centimetri corespunde la 96 DPI. Fișierele PDF exportate din aceste programe păstrează calitatea înaltă în mod implicit, așa că aceeași grafică poate fi apoi tipărită la dimensiunea fizică pe care a arătat-o Word."
+        },
+        {
+          "title": "CSS și HTML",
+          "icon": "RiHtml5Line",
+          "description": "În foile de stil CSS, unitatea cm este convertită prin formula fixă 1cm = 96px ÷ 2,54 ≈ 37,8px. Cu alte cuvinte, 1 pixel CSS este mereu aproximativ 0,0265 cm, indiferent de dispozitivul pe care deschizi pagina. În practică, pentru interfețele web se folosesc unitățile px, rem sau em, iar cm se rezervă pentru foile de stil destinate tiparului (@media print). Abia atunci aranjamentul paginii reproduce cu adevărat dimensiunile fizice ale unei coli."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Când merită să apelezi la acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCameraLine",
+          "title": "Evaluarea fișierelor de la aparatul foto pentru tipar",
+          "description": "Știi că senzorul tău produce fișiere de 6.000 × 4.000 px. Convertorul arată că la 300 DPI acestea sunt exact 50,80 × 33,87 cm: mai mult decât suficient pentru un poster A2. Poți verifica și pragul inferior, adică câți centimetri rezultă dintr-un fișier mai mic de pe telefon sau dintr-o grafică găsită pe internet."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Dimensiunile capturilor de ecran și ale graficii de pe ecran",
+          "description": "Faci o captură de ecran în Full HD 1.920 × 1.080 px și vrei să știi cât de mare va fi după tipărire în calitate fotografică. Convertorul arată că la 300 DPI aceasta este 16,26 × 9,14 cm: clar suficient pentru un slide de prezentare, dar prea puțin pentru o pagină A4 întreagă."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Verificarea graficii înainte de trimiterea la tipografie",
+          "description": "Ai primit de la un client un fișier cu lățimea de 2.480 px și nu știi cărui format îi corespunde. Convertorul arată imediat că la 300 DPI acesta este exact 21 cm, adică latura scurtă a unei coli A4. Astfel eviți situația în care tipografia respinge fișierul din cauza unei rezoluții neconforme."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Fotografii pentru documente și cărți de vizită",
+          "description": "Aparatul foto ți-a dat o fotografie de 413 × 531 px și te întrebi dacă este un format bun. Convertorul arată că la 300 DPI aceasta este exact 3,5 × 4,5 cm: cerința fotografiilor de pașaport românești în standard ICAO. La fel verifici și cărțile de vizită: un fișier de 1.004 × 650 px corespunde cărții europene standard 85 × 55 mm la 300 DPI."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Comparație între unitățile pixel și centimetru",
+      "labelHeader": "Caracteristică",
+      "cols": ["Pixel (px)", "Centimetru (cm)"],
+      "rows": [
+        { "label": "Tip de unitate", "values": ["Digitală și de ecran", "Fizică și tangibilă"] },
+        {
+          "label": "Dependența de dispozitiv",
+          "values": ["Rezultă din DPI sau PPI", "Mereu aceeași"]
+        },
+        { "label": "Ecran 96 DPI", "values": ["1 px este 0,0265 cm", "1 cm este 37,8 px"] },
+        { "label": "Tipar 300 DPI", "values": ["1 px este 0,0085 cm", "1 cm este 118 px"] },
+        {
+          "label": "Full HD 1.920 × 1.080 px",
+          "values": ["50,80 × 28,58 cm (96 DPI)", "16,26 × 9,14 cm (300 DPI)"]
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre conversia px în cm",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Câți centimetri are 1 pixel?",
+          "answer": "Totul depinde de rezoluția pe care o setezi. La standardul de ecran de 96 DPI, un pixel este aproximativ 0,0265 cm, iar la 300 DPI folosiți în tipar doar 0,0085 cm. Pentru a converti orice număr de pixeli în centimetri, înmulțește-l cu 2,54 și împarte-l la DPI."
+        },
+        {
+          "question": "Care este formula de conversie din px în cm?",
+          "answer": "Formula este simplă și rezultă dintr-o relație fixă: un inch este exact 2,54 cm. Formula completă este număr de centimetri = număr de pixeli × 2,54 ÷ DPI. Funcționează și invers: număr de pixeli = număr de centimetri × DPI ÷ 2,54. Cunoscând două valori – numărul de pixeli și rezoluția țintă – calculezi a treia într-o clipă."
+        },
+        {
+          "question": "Cum convertești pixelii în centimetri?",
+          "answer": "Cel mai simplu este să scrii numărul de pixeli în câmpul convertorului și să alegi DPI-ul care te interesează: rezultatul apare imediat. Dacă preferi să calculezi de mână, folosește formula număr de centimetri = număr de pixeli × 2,54 ÷ DPI. Pentru 500 px la 300 DPI obții 500 × 2,54 ÷ 300, adică aproximativ 4,23 cm."
+        },
+        {
+          "question": "Câți centimetri sunt 100 de pixeli?",
+          "answer": "O sută de pixeli pe un ecran la 96 DPI sunt exact 2,65 cm, cam lățimea degetului mare al unui adult. La tipar la 300 DPI, aceiași 100 de pixeli ocupă doar 0,85 cm, iar la 600 DPI abia 0,42 cm. Este o valoare utilă de reținut, pentru că apare des în dimensiunile butoanelor și pictogramelor de pe paginile web."
+        },
+        {
+          "question": "Câți centimetri sunt 200 de pixeli?",
+          "answer": "Două sute de pixeli pe un ecran la 96 DPI sunt aproximativ 5,29 cm. La tipar la 300 DPI, aceiași 200 de pixeli ocupă doar 1,69 cm, pentru că pe un inch încap mai multe puncte. La 600 DPI folosiți în tiparul fotografic de înaltă calitate sunt abia 0,85 cm."
+        },
+        {
+          "question": "Câți centimetri sunt 300 de pixeli?",
+          "answer": "Trei sute de pixeli sunt aproximativ 7,94 cm pe un ecran la 96 DPI și exact 2,54 cm la tipar la 300 DPI, adică exact un inch. Relația nu este întâmplătoare: standardul de 300 DPI înseamnă literal că pe fiecare inch de tipar revin 300 de puncte. Valoarea de 300 px corespunde adesea dimensiunii unei miniaturi de produs dintr-un magazin online."
+        },
+        {
+          "question": "Câți centimetri sunt 500 de pixeli?",
+          "answer": "Cinci sute de pixeli corespund la aproximativ 13,23 cm pe un ecran la 96 DPI și la 4,23 cm la tipar la 300 DPI. Valoarea de 500 px este o lățime populară pentru bannere publicitare și avatare, așa că merită reținută pentru estimarea rapidă a dimensiunilor."
+        },
+        {
+          "question": "Câți centimetri sunt 1.000 de pixeli?",
+          "answer": "O mie de pixeli la 96 DPI sunt aproximativ 26,46 cm, cam lățimea unei coli A4 cu margini. La tipar la 300 DPI, aceiași 1.000 de pixeli sunt 8,47 cm: suficient pentru o carte de vizită sau o fotografie mică. La 150 DPI folosiți pentru postere și broșuri rezultă 16,93 cm, un format apropiat de o vedere."
+        },
+        {
+          "question": "Câți centimetri sunt 1.080 de pixeli?",
+          "answer": "O mie optzeci de pixeli sunt exact 28,58 cm pe un ecran tipic la 96 DPI, adică înălțimea unei imagini Full HD afișate la scara 1:1. La tipar la 300 DPI, aceiași 1.080 de pixeli ocupă doar 9,14 cm, cam lățimea unei cărți de vizită. La 150 DPI folosiți pentru postere rezultă 18,29 cm."
+        },
+        {
+          "question": "Câți centimetri sunt 1.920 de pixeli?",
+          "answer": "O mie nouă sute douăzeci de pixeli sunt exact 50,80 cm pe un ecran la 96 DPI, corespunzând lățimii unei imagini Full HD. La tipar la 300 DPI, același număr de pixeli ocupă doar 16,26 cm, iar la 600 DPI abia 8,13 cm. Este o valoare de reținut, pentru că apare în aproape orice captură de ecran de monitor."
+        },
+        {
+          "question": "Ce dimensiuni în centimetri are un ecran Full HD 1.920 × 1.080 px?",
+          "answer": "Un cadru Full HD complet la scara 1:1 ocupă 50,80 × 28,58 cm la standardul de ecran de 96 DPI. Dacă ai vrea să tipărești aceeași imagine în calitate fotografică la 300 DPI, ar încăpea exact pe 16,26 × 9,14 cm, cam dimensiunea unei vederi. La 4K UHD 3.840 × 2.160 px toate dimensiunile se dublează: 101,60 × 57,15 cm pe ecran și 32,51 × 18,29 cm la tipar."
+        },
+        {
+          "question": "Ce dimensiuni are un ecran 4K (3.840 × 2.160 px) în centimetri?",
+          "answer": "Rezoluția 4K UHD (3.840 × 2.160 px) la scara 1:1 corespunde la 101,60 × 57,15 cm la standardul de ecran de 96 DPI: peste un metru lățime, cam dimensiunea unui televizor de 45 de inchi privit de aproape. La tipar la 300 DPI, același fișier încape pe 32,51 × 18,29 cm, un format apropiat de o coală A4 pe orizontală. La 150 DPI ajunge pentru un poster de 65,02 × 36,58 cm."
+        },
+        {
+          "question": "Câți centimetri are un fișier cu lățimea de 2.480 de pixeli?",
+          "answer": "Un fișier cu lățimea de 2.480 de pixeli la 300 DPI este exact 21,00 cm, adică latura scurtă a unei coli A4. Tipografia acceptă un astfel de fișier fără rezerve dacă înălțimea este de 3.508 px (29,7 cm). Același fișier pe un ecran la 96 DPI ocupă 65,62 cm, întinzându-se astfel mult dincolo de zona vizibilă a unui monitor obișnuit."
+        },
+        {
+          "question": "Câți centimetri are o fotografie de 6.000 de pixeli de la un aparat foto?",
+          "answer": "Șase mii de pixeli sunt o lățime tipică pentru o fotografie de la un DSLR sau de la o cameră mirrorless de gamă medie. La 300 DPI folosiți în tiparul fotografic rezultă 50,80 cm: suficient pentru un poster în format A2 sau o imprimare de galerie lată. Dacă fotografia are un raport 3:2, cealaltă latură este de 4.000 px, adică 33,87 cm."
+        },
+        {
+          "question": "Cum setezi pixelii în centimetri în Photoshop sau Canva?",
+          "answer": "În Photoshop deschide fereastra Imagine &rsaquo; Dimensiune imagine, schimbă unitatea din pixeli în centimetri și introdu DPI-ul țintă: programul arată dimensiunea fizică actuală. În Canva, panoul cu dimensiunile proiectului este vizibil la crearea unui fișier nou sau prin meniul Redimensionează: trebuie doar să schimbi unitățile în cm. Găsești ghiduri detaliate pentru Photoshop, Illustrator, Figma, Canva și Procreate în secțiunea de mai sus."
+        },
+        {
+          "question": "Cum setezi px în cm în Illustrator sau Figma?",
+          "answer": "În Adobe Illustrator mergi la Editare &rsaquo; Preferințe &rsaquo; Unități și alege Centimetri: unitatea se schimbă imediat în toate panourile și riglele. Figma funcționează diferit, pentru că lucrează exclusiv în pixeli la 96 DPI fixe și nu oferă opțiunea de a schimba unitățile. Pentru a verifica dimensiunea fizică a unui proiect Figma, copiază valoarea în pixeli din panoul Design și lipește-o în convertorul nostru, setând DPI-ul țintă (96 pentru ecran, 300 pentru tipar)."
+        },
+        {
+          "question": "Prin ce se deosebește DPI de PPI?",
+          "answer": "DPI (dots per inch) este numărul de puncte de cerneală pe inch de material și este un parametru al imprimantei. PPI (pixels per inch) indică numărul de pixeli pe inch de ecran și descrie un monitor sau un afișaj. În activitatea de zi cu zi, graficienii folosesc ambele abrevieri interschimbabil, dar tehnic DPI se referă la tipar, iar PPI la ecrane."
+        },
+        {
+          "question": "Câți centimetri ocupă un pixel pe un ecran Retina?",
+          "answer": "Ecranele Retina de la Apple au o densitate de pixeli de două ori mai mare decât un monitor clasic, dar sistemul de operare interpretează în continuare dimensiunile ca și cum panoul ar avea 96 DPI. În practică, asta înseamnă că un pixel fizic ocupă aproximativ 0,0132 cm în loc de 0,0265 cm, dar în panourile de design ale Photoshop, Figma sau Canva valorile rămân identice: pregătești grafica la dublul rezoluției și o exporți cu sufixul @2x."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Ajută-ne să îmbunătățim acest convertor",
+      "description": "Îți lipsește vreo valoare din tabele, ai găsit o eroare de conversie sau vrei să propui o funcție nouă? Scrie-ne: citim fiecare mesaj personal și răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertor px în cm – Arteon",
+      "defaultSubject": "Feedback: convertor px în cm"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Alte unelte care îți pot fi de folos" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

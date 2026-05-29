@@ -35,7 +35,7 @@ import SectionSteps from '../organisms/sections/SectionSteps';
 import SectionTabs from '../organisms/sections/SectionTabs';
 import SectionTimeline from '../organisms/sections/SectionTimeline';
 
-const AD_SECTION_INTERVAL = 6;
+const AD_SECTION_INTERVAL = 3; 
 const AD_SKIP_AFTER = new Set(['faq', 'toolsCarousel']);
 
 const DESKTOP_ONLY_TOOLS = new Set([
