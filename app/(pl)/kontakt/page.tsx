@@ -133,7 +133,6 @@ export default function ContactPage() {
         <Divider line />
 
         <SectionSteps
-          variant='contact'
           items={[
             {
               title: 'Telefon',

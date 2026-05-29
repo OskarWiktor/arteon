@@ -48,7 +48,6 @@ export default function ContactPage({ locale }: { locale: Locale }) {
         <Divider line />
 
         <SectionSteps
-          variant='contact'
           items={[
             {
               title: data.details.emailLabel,

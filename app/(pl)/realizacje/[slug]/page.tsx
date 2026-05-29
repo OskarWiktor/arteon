@@ -354,7 +354,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
           }));
           return (
             <div key={`steps-${i}`} className={wrapperClass}>
-              <SectionSteps title={b.title} items={stepsItems} variant={b.variant} />
+              <SectionSteps title={b.title} items={stepsItems} />
               {b.breakAfter && <Divider size='sm' line />}
             </div>
           );

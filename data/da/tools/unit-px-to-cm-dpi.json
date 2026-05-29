@@ -1,0 +1,547 @@
+{
+  "toolKey": "pxToCmDpi",
+  "locale": "da",
+  "metadata": {
+    "title": "px til cm konverter (DPI) – omregn pixels til centimeter",
+    "description": "Omregn pixels til centimeter med justerbar DPI. Det ideelle værktøj for designere, fotografer og skabere, der tjekker udskriftsstørrelsen på skærmfiler.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/da/verktojer/px-til-cm-konverter"
+  },
+  "hero": {
+    "title": "Omregn pixels til centimeter med en hvilken som helst DPI",
+    "description": "Indtast en værdi i pixels, indstil DPI-opløsningen, og aflæs resultatet i centimeter. Tjek, hvor mange centimeter et givent antal pixels svarer til, herunder populære skærmopløsninger som 1920 × 1080. Konverteren hjælper dig med at vælge den rette størrelse, når du vil udskrive en grafikfil eller tilpasse den til et bestemt papirformat."
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/verktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/verktojer/px-til-cm-konverter",
+      "label": "px til cm"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Pixels til centimeter konverter med justerbar DPI – px til cm kalkulator",
+      "alternateName": [
+        "px til cm konverter",
+        "Pixels til cm kalkulator",
+        "Pixels til centimeter konverter",
+        "Pixels til centimeter",
+        "px til centimeter",
+        "Omregn px til cm",
+        "Pixelkalkulator centimeter",
+        "px til cm 300 dpi",
+        "px til cm online",
+        "Pixel til cm konverter",
+        "Centimeter fra pixels",
+        "DPI-kalkulator til udskrivning",
+        "px cm omregning",
+        "Hvor mange cm er 1 px",
+        "Pixelstørrelse i cm"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Konverter fra pixels til centimeter med justerbar DPI-værdi. Så snart du indtaster antallet af pixels, ser du straks, hvor mange centimeter værdien svarer til, og hvilket papirformat det ville give. Konverteren er perfekt til at tjekke, om en kamerafil, et skærmbillede eller en grafik fra internettet er stor nok til en bestemt udskriftsstørrelse, og den kører i browseren uden registrering.",
+      "featureList": [
+        "Justerbar DPI-opløsning",
+        "Omregningen fungerer i begge retninger, så du omregner både pixels til centimeter og centimeter til pixels",
+        "Resultatet vises med det samme, mens du skriver, uden at du skal trykke på nogen knap",
+        "Det færdige resultat kan kopieres til udklipsholderen med ét klik",
+        "Udvidet svartabel for værdier fra 50 til 8.000 pixels, herunder dokumentbredder som 413, 827 og 1.181 px",
+        "Separat tabel over populære skærmopløsninger (Full HD, 4K, 8K) og formater til sociale medier (Instagram, Facebook, Twitter)",
+        "Tabel over papirformaterne A0–A7 sammen med målene for fotografier og visitkort i pixels ved 300 DPI",
+        "Et særskilt afsnit med vejledninger forklarer, hvordan du skifter fra px til cm i Photoshop, Illustrator, Figma, Canva og Procreate",
+        "Alle beregninger sker lokalt i browseren, dine data forlader ikke enheden og gemmes ingen steder",
+        "Den præcise omregningsformel er cm = px × 2,54 ÷ DPI og bruger den faste tommelængde på 2,54 cm"
+      ]
+    },
+    "howTo": {
+      "name": "Hvordan omregner man pixels til centimeter?",
+      "description": "Kort vejledning til brug af px til cm-konverteren med justerbar DPI.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Indtast værdien i pixels",
+          "text": "Skriv antallet af pixels, du vil omregne til centimeter, i feltet til venstre."
+        },
+        {
+          "name": "Indstil DPI-opløsningen",
+          "text": "Vælg DPI-værdien. Til skærme bruges oftest 96 DPI, og til udskrivning 300 DPI."
+        },
+        {
+          "name": "Aflæs resultatet eller vend retningen om",
+          "text": "Resultatet i centimeter vises med det samme i feltet ved siden af. Du kan kopiere det eller bruge knappen Skift rækkefølge til at omregne centimeter til pixels."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Hvorfor omregne pixels til centimeter?",
+      "html": "<p class=\"text-mid mb-4\">Pixlen er en digital enhed, der beskriver ét punkt på skærmen af en telefon, tablet eller skærm. Centimeteren derimod hersker i den fysiske verden af papir og tryk. For at oversætte den ene til den anden skal du kende DPI-opløsningen, altså antallet af pixels, der kan være på én tomme materiale eller skærm.</p><p class=\"text-mid mb-4\">Den slags omregning udfører oftest designere, der vil tjekke, hvor stort deres projekt bliver efter udskrift, fotografer, der vurderer, om en kamerafil er nok til et bestemt udskriftsformat, samt personer, der forbereder skærmbilleder eller grafik fra internettet til udskrivning. Konverteren sparer dig for hovedregning og for at skulle huske formlen.</p><p class=\"text-mid\">Længere nede på siden finder du en udvidet svartabel for populære pixelværdier, en separat tabel over skærmopløsninger som Full HD og 4K, færdige mål for papir- og fotoformater samt korte vejledninger til, hvordan du skifter fra pixels til centimeter i Photoshop, Figma, Canva og andre grafikværktøjer.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Gratis pixels til centimeter-konverter – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan virker omregningen px til cm? Formel og eksempel",
+      "html": "<p class=\"text-mid mb-4\">Hele omregningen koger ned til én formel, der bygger på det faste forhold mellem tomme og centimeter: én tomme er præcis 2,54 cm. Du behøver altså bare at gange antallet af pixels med 2,54 og dividere med den valgte DPI-opløsning.</p><p class=\"text-mid mb-4\">Den fulde formel ser sådan ud: <strong>antal centimeter = antal pixels × 2,54 ÷ DPI</strong>. Konverteren udfører denne beregning straks, så du hverken skal regne eller lede efter en lommeregner.</p><p class=\"text-mid mb-4\">Eksempel: du vil tjekke, hvor mange centimeter 1.920 pixels er på en standardskærm med 96 DPI. Du sætter værdierne ind i formlen og får 1.920 × 2,54 ÷ 96, hvilket giver præcis 50,80 cm. De samme 1.920 pixels ved 300 DPI, som bruges i tryk, er allerede kun 16,26 cm, fordi der er plads til flere pixels på én tomme.</p><p class=\"text-mid\">Den anden vej virker på tilsvarende måde: antal pixels = antal centimeter × DPI ÷ 2,54. Sådan kan du tjekke, hvor mange pixels en grafik skal have for at blive udskrevet i en bestemt størrelse, for eksempel i visitkortformat eller som et 10 × 15 cm foto.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Hvor mange centimeter er forskellige pixelværdier ved forskellige DPI-værdier?",
+      "description": "Nedenstående tabel viser, hvordan de samme værdier i pixels oversættes til centimeter ved de fem mest brugte opløsninger. Nogle værdier er værd at huske, fordi de svarer præcis til bestemte formater: 413 px ved 300 DPI er den korte side af et pasfoto, 827 px er 7 cm, og 945 px er præcis 8 cm.",
+      "labelHeader": "Pixels",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
+      "rows": [
+        { "label": "50 px", "values": ["1,76 cm", "1,32 cm", "0,85 cm", "0,42 cm", "0,21 cm"] },
+        { "label": "90 px", "values": ["3,18 cm", "2,38 cm", "1,52 cm", "0,76 cm", "0,38 cm"] },
+        {
+          "label": "100 px",
+          "values": ["3,53 cm", "2,65 cm", "1,69 cm", "0,85 cm", "0,42 cm"],
+          "emphasis": true
+        },
+        { "label": "150 px", "values": ["5,29 cm", "3,97 cm", "2,54 cm", "1,27 cm", "0,64 cm"] },
+        {
+          "label": "200 px",
+          "values": ["7,06 cm", "5,29 cm", "3,39 cm", "1,69 cm", "0,85 cm"],
+          "emphasis": true
+        },
+        { "label": "250 px", "values": ["8,82 cm", "6,61 cm", "4,23 cm", "2,12 cm", "1,06 cm"] },
+        {
+          "label": "300 px",
+          "values": ["10,58 cm", "7,94 cm", "5,08 cm", "2,54 cm", "1,27 cm"],
+          "emphasis": true
+        },
+        { "label": "400 px", "values": ["14,11 cm", "10,58 cm", "6,77 cm", "3,39 cm", "1,69 cm"] },
+        {
+          "label": "413 px",
+          "values": ["14,57 cm", "10,93 cm", "6,99 cm", "3,50 cm", "1,75 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "500 px",
+          "values": ["17,64 cm", "13,23 cm", "8,47 cm", "4,23 cm", "2,12 cm"],
+          "emphasis": true
+        },
+        { "label": "591 px", "values": ["20,85 cm", "15,64 cm", "10,01 cm", "5,00 cm", "2,50 cm"] },
+        { "label": "600 px", "values": ["21,17 cm", "15,88 cm", "10,16 cm", "5,08 cm", "2,54 cm"] },
+        { "label": "640 px", "values": ["22,58 cm", "16,93 cm", "10,84 cm", "5,42 cm", "2,71 cm"] },
+        { "label": "720 px", "values": ["25,40 cm", "19,05 cm", "12,19 cm", "6,10 cm", "3,05 cm"] },
+        { "label": "800 px", "values": ["28,22 cm", "21,17 cm", "13,55 cm", "6,77 cm", "3,39 cm"] },
+        {
+          "label": "827 px",
+          "values": ["29,17 cm", "21,88 cm", "14,00 cm", "7,00 cm", "3,50 cm"],
+          "emphasis": true
+        },
+        { "label": "900 px", "values": ["31,75 cm", "23,81 cm", "15,24 cm", "7,62 cm", "3,81 cm"] },
+        {
+          "label": "945 px",
+          "values": ["33,34 cm", "25,00 cm", "16,00 cm", "8,00 cm", "4,00 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1.000 px",
+          "values": ["35,28 cm", "26,46 cm", "16,93 cm", "8,47 cm", "4,23 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1.080 px",
+          "values": ["38,10 cm", "28,58 cm", "18,29 cm", "9,14 cm", "4,57 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1.181 px",
+          "values": ["41,66 cm", "31,24 cm", "20,00 cm", "10,00 cm", "5,00 cm"]
+        },
+        {
+          "label": "1.200 px",
+          "values": ["42,33 cm", "31,75 cm", "20,32 cm", "10,16 cm", "5,08 cm"]
+        },
+        {
+          "label": "1.500 px",
+          "values": ["52,92 cm", "39,69 cm", "25,40 cm", "12,70 cm", "6,35 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "1.920 px",
+          "values": ["67,73 cm", "50,80 cm", "32,51 cm", "16,26 cm", "8,13 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "2.000 px",
+          "values": ["70,56 cm", "52,92 cm", "33,87 cm", "16,93 cm", "8,47 cm"]
+        },
+        {
+          "label": "2.048 px",
+          "values": ["72,25 cm", "54,19 cm", "34,68 cm", "17,34 cm", "8,67 cm"]
+        },
+        {
+          "label": "2.400 px",
+          "values": ["84,67 cm", "63,50 cm", "40,64 cm", "20,32 cm", "10,16 cm"]
+        },
+        {
+          "label": "2.480 px",
+          "values": ["87,47 cm", "65,62 cm", "42,00 cm", "21,00 cm (A4)", "10,50 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "3.000 px",
+          "values": ["105,83 cm", "79,38 cm", "50,80 cm", "25,40 cm", "12,70 cm"]
+        },
+        {
+          "label": "3.508 px",
+          "values": ["123,73 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)", "14,85 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "4.000 px",
+          "values": ["141,11 cm", "105,83 cm", "67,73 cm", "33,87 cm", "16,93 cm"]
+        },
+        {
+          "label": "5.000 px",
+          "values": ["176,39 cm", "132,29 cm", "84,67 cm", "42,33 cm", "21,17 cm"]
+        },
+        {
+          "label": "6.000 px",
+          "values": ["211,67 cm", "158,75 cm", "101,60 cm", "50,80 cm", "25,40 cm"]
+        },
+        {
+          "label": "8.000 px",
+          "values": ["282,22 cm", "211,67 cm", "135,47 cm", "67,73 cm", "33,87 cm"]
+        }
+      ],
+      "caption": "Alle værdier er afrundet til to decimaler efter formlen cm = px × 2,54 ÷ DPI."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Hvor mange centimeter er populære skærmopløsninger og grafik til sociale medier?",
+      "description": "Nedenstående tabel viser de fysiske mål for de mest populære opløsninger på skærme, smartphones og grafik fra sociale medier. Den første kolonne med værdier i centimeter forudsætter 96 DPI – så mange operativsystemet antager for en typisk skærm. Den anden kolonne viser, hvor mange centimeter den samme grafik ville fylde ved 300 DPI, der bruges i tryk, altså hvor stor den ville være udskrevet i fotokvalitet.",
+      "labelHeader": "Format",
+      "cols": ["Opløsning (px)", "Størrelse @ 96 DPI", "Størrelse @ 300 DPI"],
+      "rows": [
+        { "groupLabel": "Skærmopløsninger" },
+        { "label": "HD 720p", "values": ["1.280 × 720", "33,87 × 19,05 cm", "10,84 × 6,10 cm"] },
+        {
+          "label": "Full HD 1080p",
+          "values": ["1.920 × 1.080", "50,80 × 28,58 cm", "16,26 × 9,14 cm"],
+          "emphasis": true
+        },
+        { "label": "2K QHD", "values": ["2.560 × 1.440", "67,73 × 38,10 cm", "21,67 × 12,19 cm"] },
+        {
+          "label": "4K UHD",
+          "values": ["3.840 × 2.160", "101,60 × 57,15 cm", "32,51 × 18,29 cm"],
+          "emphasis": true
+        },
+        { "label": "5K", "values": ["5.120 × 2.880", "135,47 × 76,20 cm", "43,35 × 24,38 cm"] },
+        { "label": "8K", "values": ["7.680 × 4.320", "203,20 × 114,30 cm", "65,02 × 36,58 cm"] },
+        {
+          "label": "Smartphone (stående)",
+          "values": ["1.080 × 1.920", "28,58 × 50,80 cm", "9,14 × 16,26 cm"]
+        },
+        { "groupLabel": "Grafik til sociale medier" },
+        {
+          "label": "Instagram (kvadrat)",
+          "values": ["1.080 × 1.080", "28,58 × 28,58 cm", "9,14 × 9,14 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "Instagram story / Reel",
+          "values": ["1.080 × 1.920", "28,58 × 50,80 cm", "9,14 × 16,26 cm"]
+        },
+        {
+          "label": "YouTube-miniature",
+          "values": ["1.280 × 720", "33,87 × 19,05 cm", "10,84 × 6,10 cm"]
+        },
+        {
+          "label": "OG-billede / Facebook-deling",
+          "values": ["1.200 × 630", "31,75 × 16,67 cm", "10,16 × 5,33 cm"]
+        },
+        {
+          "label": "Facebook-forside",
+          "values": ["851 × 315", "22,51 × 8,33 cm", "7,21 × 2,67 cm"]
+        },
+        {
+          "label": "X / Twitter-header",
+          "values": ["1.500 × 500", "39,69 × 13,23 cm", "12,70 × 4,23 cm"]
+        }
+      ],
+      "caption": "En fuld Full HD-skærm på en 24-tommer skærm måler fysisk lidt mindre end 50,80 cm i bredden, fordi producenter bruger forskellige pixeltætheder – værdien i tabellen er den teoretiske bredde ved standarden på 96 DPI."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Hvor mange pixels er populære mål i centimeter?",
+      "description": "Nogle gange starter vi fra den fysiske side og vil vide, hvor mange pixels en grafik skal have for at blive udskrevet i en bestemt størrelse. Nedenstående tabel viser den omvendte omregning for de fire mest brugte opløsninger.",
+      "labelHeader": "Mål",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
+      "rows": [
+        { "label": "0,5 cm", "values": ["14 px", "19 px", "30 px", "59 px"] },
+        { "label": "1 cm", "values": ["28 px", "38 px", "59 px", "118 px"], "emphasis": true },
+        { "label": "2 cm", "values": ["57 px", "76 px", "118 px", "236 px"] },
+        { "label": "3 cm", "values": ["85 px", "113 px", "177 px", "354 px"] },
+        { "label": "5 cm", "values": ["142 px", "189 px", "295 px", "591 px"], "emphasis": true },
+        { "label": "7 cm", "values": ["198 px", "264 px", "413 px", "827 px"] },
+        {
+          "label": "10 cm",
+          "values": ["283 px", "378 px", "591 px", "1.181 px"],
+          "emphasis": true
+        },
+        { "label": "15 cm", "values": ["425 px", "567 px", "886 px", "1.772 px"] },
+        { "label": "20 cm", "values": ["567 px", "756 px", "1.181 px", "2.362 px"] },
+        {
+          "label": "21 cm (A4 bredde)",
+          "values": ["595 px", "794 px", "1.240 px", "2.480 px"],
+          "emphasis": true
+        },
+        {
+          "label": "29,7 cm (A4 højde)",
+          "values": ["842 px", "1.123 px", "1.754 px", "3.508 px"],
+          "emphasis": true
+        },
+        { "label": "50 cm", "values": ["1.417 px", "1.890 px", "2.953 px", "5.906 px"] }
+      ],
+      "caption": "Hvis du oftere bruger omregningen i denne retning, har vi en separat cm til px-kalkulator med et endnu bredere værdiområde."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "De mest populære fysiske formater og deres mål i pixels",
+      "description": "Hvis du i stedet for enkelte pixels har brug for målene på et færdigt format (for eksempel et A4-ark, et 10×15 cm foto eller et pasfoto), angiver nedenstående tabel værdierne ved de to mest brugte opløsninger. Målene angives konsekvent i formatet bredde × højde, i stående retning.",
+      "labelHeader": "Format",
+      "cols": ["Bredde × højde (cm)", "Bredde × højde (150 DPI)", "Bredde × højde (300 DPI)"],
+      "rows": [
+        { "groupLabel": "Papir i ISO A-serien" },
+        { "label": "A0", "values": ["84,1 × 118,9", "4.967 × 7.022", "9.933 × 14.043"] },
+        { "label": "A1", "values": ["59,4 × 84,1", "3.508 × 4.967", "7.016 × 9.933"] },
+        { "label": "A2", "values": ["42,0 × 59,4", "2.480 × 3.508", "4.961 × 7.016"] },
+        { "label": "A3", "values": ["29,7 × 42,0", "1.754 × 2.480", "3.508 × 4.961"] },
+        {
+          "label": "A4",
+          "values": ["21,0 × 29,7", "1.240 × 1.754", "2.480 × 3.508"],
+          "emphasis": true
+        },
+        { "label": "A5", "values": ["14,8 × 21,0", "874 × 1.240", "1.748 × 2.480"] },
+        { "label": "A6", "values": ["10,5 × 14,8", "620 × 874", "1.240 × 1.748"] },
+        { "label": "A7", "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"] },
+        { "groupLabel": "Fotografier og udskrifter" },
+        { "label": "Foto 9 × 13", "values": ["9 × 13", "531 × 768", "1.063 × 1.535"] },
+        {
+          "label": "Foto 10 × 15",
+          "values": ["10 × 15", "591 × 886", "1.181 × 1.772"],
+          "emphasis": true
+        },
+        { "label": "Foto 13 × 18", "values": ["13 × 18", "768 × 1.063", "1.535 × 2.126"] },
+        { "label": "Foto 15 × 21", "values": ["15 × 21", "886 × 1.240", "1.772 × 2.480"] },
+        { "label": "Foto 20 × 30", "values": ["20 × 30", "1.181 × 1.772", "2.362 × 3.543"] },
+        { "groupLabel": "Dokumenter og visitkort" },
+        {
+          "label": "Pasfoto (DK, 35 × 45 mm)",
+          "values": ["3,5 × 4,5", "207 × 266", "413 × 531"],
+          "emphasis": true
+        },
+        {
+          "label": "Visitkort DK/EU (ISO ID-1, 85 × 55 mm)",
+          "values": ["8,5 × 5,5", "502 × 325", "1.004 × 650"],
+          "emphasis": true
+        },
+        {
+          "label": "Amerikansk visitkort (3,5 × 2 in)",
+          "values": ["8,89 × 5,08", "525 × 300", "1.050 × 600"]
+        }
+      ],
+      "caption": "Disse værdier er spejlbilledet af tabellen i vores cm til px-konverter – du kan altid gå fra den ene retning til den anden, når du kun kender antallet af pixels og mål-DPI."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan skifter du fra pixels til centimeter i populære programmer?",
+      "inlineIcon": true,
+      "grid": "one",
+      "items": [
+        {
+          "title": "Photoshop",
+          "icon": "RiImageEditLine",
+          "description": "I Adobe Photoshop tjekker du lærredsmålene og resultatet i centimeter i vinduet <strong>Billede &rsaquo; Billedstørrelse</strong>. Vælg Centimeter fra rullelisten over enheder, og skriv mål-DPI i feltet Opløsning – Photoshop viser straks, hvor mange centimeter pixelmålene på din fil svarer til. Hvis du vil have, at skiftet af enhed ikke påvirker antallet af pixels i filen, så fjern hakket ved Genberegn. Så ændrer du kun, hvordan målene vises, mens pixlerne forbliver urørte."
+        },
+        {
+          "title": "Illustrator",
+          "icon": "RiPencilLine",
+          "description": "Adobe Illustrator arbejder i den enhed, du valgte, da du oprettede dokumentet. Du kan ændre den under <strong>Rediger &rsaquo; Indstillinger &rsaquo; Enheder</strong> – vælg Centimeter, hvis du vil se, hvor stort projektet bliver efter udskrift. Selve resultatet i centimeter afhænger af opløsningen på det tegnefelt, der blev sat i starten af projektet. Hvis du arbejder med en fil modtaget i pixels, men har brug for målene til trykkeriet, er det letteste at kopiere pixelværdien fra Transformér-panelet og indtaste den i vores konverter med den rette DPI."
+        },
+        {
+          "title": "Figma",
+          "icon": "RiLayoutGridLine",
+          "description": "Figma arbejder udelukkende i pixels og forudsætter faste 96 DPI. Det betyder, at hvis du vil vide, hvor stort dit projekt bliver efter udskrift i centimeter, skal du først omregne pixelværdien ved mål-trykopløsningen. For eksempel: et tegnefelt på 1.181 × 1.772 px divideret med 300 DPI er præcis et 10 × 15 cm foto. Indtast værdien fra Figma i vores konverter, indstil 300 DPI, og du ser straks den fysiske størrelse på papir."
+        },
+        {
+          "title": "Canva",
+          "icon": "RiPaletteLine",
+          "description": "I Canva kan du efter at have klikket på <strong>Opret et design &rsaquo; Brugerdefineret størrelse</strong> vælge enheden cm eller mm og straks se den fysiske størrelse i centimeter. Hvis du arbejder med en eksisterende grafik i pixels, så åbn panelet med projektets mål, og omregn dem med vores konverter ved 300 DPI for at tjekke, hvor stor den bliver efter udskrift. Canva eksporterer trykfiler i 300 DPI som standard, så vores formattabel vil passe med det, du får ud."
+        },
+        {
+          "title": "Procreate",
+          "icon": "RiBrushLine",
+          "description": "Procreate giver dig mulighed for ved oprettelsen af et nyt lærred at vælge enhed mellem pixels, millimeter, centimeter og tommer. På fanen Brugerdefineret lærred indtaster du målet i cm og indstiller 300 DPI for at se, hvor mange pixels den endelige fil får. Hvis du allerede har en illustration i pixels og vil vide, hvor stor den bliver efter udskrift, så brug vores konverter – Procreate viser straks målene på det aktuelle lærred i Handlinger-panelet, så det er bare at kopiere dem."
+        },
+        {
+          "title": "Word, Excel, PowerPoint",
+          "icon": "RiFileTextLine",
+          "description": "Microsoft 365-pakken (Word, Excel og PowerPoint) arbejder i centimeter, og målene på billeder, der indsættes i dokumentet, indstilles i panelet Størrelse og placering. Hvis du indsætter et skærmbillede eller en grafik fra internettet med mål i pixels, viser Office automatisk, hvor mange centimeter det svarer til ved 96 DPI. PDF-filer eksporteret fra disse programmer bevarer den høje kvalitet som standard, så den samme grafik kan derefter udskrives i den fysiske størrelse, som Word viste."
+        },
+        {
+          "title": "CSS og HTML",
+          "icon": "RiHtml5Line",
+          "description": "I CSS-stylesheets omregnes enheden cm med den faste formel 1cm = 96px ÷ 2,54 ≈ 37,8px. Med andre ord er 1 CSS-pixel altid omkring 0,0265 cm, uanset hvilken enhed du åbner siden på. I praksis bruges enhederne px, rem eller em til webgrænseflader, og cm forbeholdes stylesheets beregnet til udskrivning (@media print). Først da gengiver sidelayoutet rent faktisk de fysiske mål på et ark."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Hvornår er det værd at gribe til denne konverter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCameraLine",
+          "title": "Vurdering af kamerafiler til tryk",
+          "description": "Du ved, at din sensor laver filer på 6.000 × 4.000 px. Konverteren viser, at dette ved 300 DPI er præcis 50,80 × 33,87 cm – rigeligt til en A2-plakat. Du kan også tjekke den nedre grænse, altså hvor mange centimeter en mindre fil fra telefonen eller en grafik fundet på internettet giver."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Mål på skærmbilleder og skærmgrafik",
+          "description": "Du tager et skærmbillede i Full HD 1.920 × 1.080 px og vil vide, hvor stort det bliver efter udskrift i fotokvalitet. Konverteren viser, at dette ved 300 DPI er 16,26 × 9,14 cm – rigeligt til et præsentationsdias, men for lidt til en hel A4-side."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Tjek af grafik før afsendelse til trykkeriet",
+          "description": "Du har modtaget en fil fra en kunde med en bredde på 2.480 px og ved ikke, hvilket format det er. Konverteren viser straks, at dette ved 300 DPI er præcis 21 cm, altså den korte side af et A4-ark. Sådan undgår du situationen, hvor trykkeriet afviser filen på grund af en ikke-passende opløsning."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Fotos til dokumenter og visitkort",
+          "description": "Kameraet gav dig et billede på 413 × 531 px, og du spekulerer på, om det er et godt format. Konverteren viser, at dette ved 300 DPI er præcis 3,5 × 4,5 cm – kravet til danske pasfotos efter ICAO-standarden. På samme måde tjekker du visitkort: en fil på 1.004 × 650 px svarer til det europæiske standardkort 85 × 55 mm ved 300 DPI."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Sammenligning af enhederne pixel og centimeter",
+      "labelHeader": "Egenskab",
+      "cols": ["Pixel (px)", "Centimeter (cm)"],
+      "rows": [
+        { "label": "Enhedstype", "values": ["Digital og skærmbaseret", "Fysisk og håndgribelig"] },
+        {
+          "label": "Afhængighed af enheden",
+          "values": ["Følger af DPI eller PPI", "Altid den samme"]
+        },
+        { "label": "Skærm 96 DPI", "values": ["1 px er 0,0265 cm", "1 cm er 37,8 px"] },
+        { "label": "Tryk 300 DPI", "values": ["1 px er 0,0085 cm", "1 cm er 118 px"] },
+        {
+          "label": "Full HD 1.920 × 1.080 px",
+          "values": ["50,80 × 28,58 cm (96 DPI)", "16,26 × 9,14 cm (300 DPI)"]
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål om omregning fra px til cm",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvor mange centimeter er 1 pixel?",
+          "answer": "Alt afhænger af den opløsning, du indstiller. Ved skærmstandarden 96 DPI er én pixel cirka 0,0265 cm, mens den ved 300 DPI, der bruges i tryk, kun er 0,0085 cm. For at omregne et hvilket som helst antal pixels til centimeter, gang det med 2,54 og divider med DPI."
+        },
+        {
+          "question": "Hvad er formlen til at omregne px til cm?",
+          "answer": "Formlen er enkel og følger af et fast forhold: én tomme er præcis 2,54 cm. Den fulde formel er antal centimeter = antal pixels × 2,54 ÷ DPI. Den virker også den anden vej: antal pixels = antal centimeter × DPI ÷ 2,54. Når du kender to værdier – antallet af pixels og mål-opløsningen – kan du beregne den tredje på et øjeblik."
+        },
+        {
+          "question": "Hvordan omregner du pixels til centimeter?",
+          "answer": "Det letteste er at skrive antallet af pixels i feltet i konverteren og vælge den DPI, du er interesseret i – resultatet vises med det samme. Hvis du hellere vil regne i hånden, så brug formlen antal centimeter = antal pixels × 2,54 ÷ DPI. For 500 px ved 300 DPI får du 500 × 2,54 ÷ 300, altså cirka 4,23 cm."
+        },
+        {
+          "question": "Hvor mange centimeter er 100 pixels?",
+          "answer": "Hundrede pixels på en skærm med 96 DPI er præcis 2,65 cm – cirka bredden af tommelfingeren på en voksen. I tryk ved 300 DPI fylder de samme 100 pixels kun 0,85 cm, og ved 600 DPI knap 0,42 cm. Det er en nyttig værdi at huske, fordi den ofte dukker op i størrelsen af knapper og ikoner på hjemmesider."
+        },
+        {
+          "question": "Hvor mange centimeter er 200 pixels?",
+          "answer": "To hundrede pixels på en skærm med 96 DPI svarer til cirka 5,29 cm. I tryk ved 300 DPI fylder de samme 200 pixels kun 1,69 cm, fordi der er plads til flere punkter på én tomme. Ved 600 DPI, der bruges til fotoudskrift af høj kvalitet, er det knap 0,85 cm."
+        },
+        {
+          "question": "Hvor mange centimeter er 300 pixels?",
+          "answer": "Tre hundrede pixels svarer til cirka 7,94 cm på en skærm med 96 DPI og præcis 2,54 cm i tryk ved 300 DPI – altså præcis én tomme. Forholdet er ikke tilfældigt: standarden på 300 DPI betyder bogstaveligt, at der er 300 punkter pr. tomme tryk. Værdien 300 px svarer ofte til størrelsen på en produktminiature i en webshop."
+        },
+        {
+          "question": "Hvor mange centimeter er 500 pixels?",
+          "answer": "Fem hundrede pixels svarer til cirka 13,23 cm på en skærm med 96 DPI og 4,23 cm i tryk ved 300 DPI. Værdien 500 px er en populær bredde til reklamebannere og avatarer, så det er værd at huske til hurtige størrelsesvurderinger."
+        },
+        {
+          "question": "Hvor mange centimeter er 1.000 pixels?",
+          "answer": "Tusind pixels ved 96 DPI er cirka 26,46 cm, altså omtrent bredden af et A4-ark med margener. I tryk ved 300 DPI er de samme 1.000 pixels 8,47 cm – nok til et visitkort eller et lille foto. Ved 150 DPI, der bruges til plakater og brochurer, kommer du på 16,93 cm, et format tæt på et postkort."
+        },
+        {
+          "question": "Hvor mange centimeter er 1.080 pixels?",
+          "answer": "Ettusinde og firs pixels er præcis 28,58 cm på en typisk skærm med 96 DPI – så højt er et Full HD-billede vist i skala 1:1. I tryk ved 300 DPI fylder de samme 1.080 pixels kun 9,14 cm, cirka bredden af et visitkort. Ved 150 DPI, der bruges til plakater, kommer du på 18,29 cm."
+        },
+        {
+          "question": "Hvor mange centimeter er 1.920 pixels?",
+          "answer": "Ettusinde nihundrede og tyve pixels er præcis 50,80 cm på en skærm med 96 DPI, hvilket svarer til bredden af et Full HD-billede. I tryk ved 300 DPI fylder det samme antal pixels kun 16,26 cm, og ved 600 DPI knap 8,13 cm. Det er en værdi værd at huske, fordi den dukker op i næsten hvert eneste skærmbillede fra en skærm."
+        },
+        {
+          "question": "Hvilke mål i centimeter har en Full HD-skærm på 1.920 × 1.080 px?",
+          "answer": "Et fuldt Full HD-billede i skala 1:1 fylder 50,80 × 28,58 cm ved skærmstandarden 96 DPI. Hvis du ville udskrive det samme billede i fotokvalitet ved 300 DPI, ville det få plads på præcis 16,26 × 9,14 cm – cirka størrelsen på et postkort. Ved 4K UHD 3.840 × 2.160 px fordobles alle mål: 101,60 × 57,15 cm på skærmen og 32,51 × 18,29 cm i tryk."
+        },
+        {
+          "question": "Hvilke mål har en 4K-skærm (3.840 × 2.160 px) i centimeter?",
+          "answer": "Opløsningen 4K UHD (3.840 × 2.160 px) i skala 1:1 svarer til 101,60 × 57,15 cm ved skærmstandarden 96 DPI – over en meter bred, cirka størrelsen på et 45-tommer tv set tæt på. I tryk ved 300 DPI får den samme fil plads på 32,51 × 18,29 cm, et format tæt på et A4-ark i liggende format. Ved 150 DPI rækker det til en plakat på 65,02 × 36,58 cm."
+        },
+        {
+          "question": "Hvor mange centimeter er en fil på 2.480 pixels bred?",
+          "answer": "En fil på 2.480 px bred ved 300 DPI er præcis 21,00 cm, altså den korte side af et A4-ark. Trykkeriet accepterer en sådan fil uden indvendinger, hvis højden er 3.508 px (29,7 cm). Den samme fil på en skærm med 96 DPI fylder 65,62 cm og strækker sig dermed langt ud over det synlige område på en gennemsnitlig skærm."
+        },
+        {
+          "question": "Hvor mange centimeter er et foto på 6.000 pixels fra et kamera?",
+          "answer": "Seks tusind pixels er en typisk bredde for et foto fra et spejlreflekskamera eller et spejlløst kamera i mellemklassen. Ved 300 DPI, der bruges til fotoudskrift, giver det 50,80 cm – nok til en plakat i A2-format eller en bred galleriudskrift. Hvis fotoet har et forhold på 3:2, er den anden side 4.000 px, altså 33,87 cm."
+        },
+        {
+          "question": "Hvordan indstiller du pixels til centimeter i Photoshop eller Canva?",
+          "answer": "I Photoshop åbner du vinduet Billede &rsaquo; Billedstørrelse, ændrer enheden fra pixels til centimeter og skriver mål-DPI – programmet viser den nuværende fysiske størrelse. I Canva er panelet med projektets mål synligt, når du opretter en ny fil eller via menuen Skift størrelse – skift bare enhederne til cm. Du finder detaljerede vejledninger til Photoshop, Illustrator, Figma, Canva og Procreate i afsnittet ovenfor."
+        },
+        {
+          "question": "Hvordan indstiller du px til cm i Illustrator eller Figma?",
+          "answer": "I Adobe Illustrator går du til Rediger &rsaquo; Indstillinger &rsaquo; Enheder og vælger Centimeter – enheden ændres med det samme i alle paneler og linealer. Figma fungerer anderledes, fordi det arbejder udelukkende i pixels ved faste 96 DPI – der findes ingen mulighed for at skifte enhederne. For at tjekke den fysiske størrelse af et Figma-projekt skal du kopiere pixelværdien fra Design-panelet og indsætte den i vores konverter, mens du indstiller mål-DPI (96 for skærm, 300 for tryk)."
+        },
+        {
+          "question": "Hvad er forskellen på DPI og PPI?",
+          "answer": "DPI (dots per inch) er antallet af blækpunkter pr. tomme materiale og er en parameter ved printeren. PPI (pixels per inch) angiver antallet af pixels pr. tomme skærm og beskriver en skærm eller et display. I det daglige arbejde bruger designere begge forkortelser i flæng, men teknisk vedrører DPI tryk og PPI skærme."
+        },
+        {
+          "question": "Hvor mange centimeter fylder en pixel på en Retina-skærm?",
+          "answer": "Apples Retina-skærme har en dobbelt så tæt pixelpakning som en klassisk skærm, men operativsystemet fortolker stadig målene, som om panelet havde 96 DPI. I praksis betyder det, at én fysisk pixel fylder cirka 0,0132 cm i stedet for 0,0265 cm, men i designpanelerne i Photoshop, Figma eller Canva forbliver værdierne identiske – du forbereder grafikken i dobbelt opløsning og eksporterer den med endelsen @2x."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre denne konverter",
+      "description": "Mangler du en værdi i tabellerne, har du fundet en fejl i omregningen, eller vil du foreslå en ny funktion? Skriv til os – vi læser alle beskeder personligt og svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "px til cm konverter – Arteon",
+      "defaultSubject": "Feedback: px til cm konverter"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Andre værktøjer, der kan være nyttige for dig" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

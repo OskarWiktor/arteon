@@ -149,6 +149,9 @@ export default function HomePage() {
           subtitle='Cztery filary jakości'
           title='Elastyczny partner dla Twojej marki'
           description='Działamy w czterech kluczowych obszarach, dzięki czemu masz wszystko w jednym miejscu. Niezależnie od branży i celów znajdziemy najlepszy sposób, aby rozwinąć Twój biznes i przyciągnąć właściwych klientów.'
+          grid='four'
+          buttonText='Sprawdź wszystkie nasze usługi'
+          buttonHref='/uslugi'
           items={[
             {
               topImageAlt: 'Papier firmowy dla kancelarii Lux Nova - mockup',
@@ -245,9 +248,6 @@ export default function HomePage() {
               ),
             },
           ]}
-          grid='two'
-          btnOne='Sprawdź wszystkie nasze usługi'
-          btnOneHref='/uslugi'
         />
 
         <Divider line />

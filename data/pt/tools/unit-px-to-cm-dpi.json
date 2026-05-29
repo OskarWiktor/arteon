@@ -264,7 +264,10 @@
           "label": "Imagem OG / partilha Facebook",
           "values": ["1.200 × 630", "31,75 × 16,67 cm", "10,16 × 5,33 cm"]
         },
-        { "label": "Capa do Facebook", "values": ["851 × 315", "22,51 × 8,33 cm", "7,21 × 2,67 cm"] },
+        {
+          "label": "Capa do Facebook",
+          "values": ["851 × 315", "22,51 × 8,33 cm", "7,21 × 2,67 cm"]
+        },
         {
           "label": "Cabeçalho X / Twitter",
           "values": ["1.500 × 500", "39,69 × 13,23 cm", "12,70 × 4,23 cm"]
@@ -349,7 +352,10 @@
           "values": ["8,5 × 5,5", "502 × 325", "1.004 × 650"],
           "emphasis": true
         },
-        { "label": "Cartão de visita americano (3,5 × 2 in)", "values": ["8,89 × 5,08", "525 × 300", "1.050 × 600"] }
+        {
+          "label": "Cartão de visita americano (3,5 × 2 in)",
+          "values": ["8,89 × 5,08", "525 × 300", "1.050 × 600"]
+        }
       ],
       "caption": "Estes valores são o espelho da tabela do nosso conversor cm para px – podes sempre passar de um sentido para o outro conhecendo apenas o número de píxeis e o DPI de destino."
     },
@@ -437,8 +443,14 @@
           "label": "Dependência do dispositivo",
           "values": ["Resulta do DPI ou PPI", "Sempre a mesma"]
         },
-        { "label": "Ecrã 96 DPI", "values": ["1 px equivale a 0,0265 cm", "1 cm equivale a 37,8 px"] },
-        { "label": "Impressão 300 DPI", "values": ["1 px equivale a 0,0085 cm", "1 cm equivale a 118 px"] },
+        {
+          "label": "Ecrã 96 DPI",
+          "values": ["1 px equivale a 0,0265 cm", "1 cm equivale a 37,8 px"]
+        },
+        {
+          "label": "Impressão 300 DPI",
+          "values": ["1 px equivale a 0,0085 cm", "1 cm equivale a 118 px"]
+        },
         {
           "label": "Full HD 1.920 × 1.080 px",
           "values": ["50,80 × 28,58 cm (96 DPI)", "16,26 × 9,14 cm (300 DPI)"]
