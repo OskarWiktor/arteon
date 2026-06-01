@@ -1,10 +1,8 @@
-import type { HeaderNavItem, AboutNavItem, OfferSection } from '@/types/navigation';
+import type { HeaderNavItem, OfferSection } from '@/types/navigation';
 import type { ToolsSection } from '@/types/tools/common';
 export type {
   HeaderNavItemKey,
   HeaderNavItem,
-  AboutItemKey,
-  AboutNavItem,
   OfferSectionKey,
   OfferItemKey,
   OfferSectionItem,
@@ -47,7 +45,6 @@ import {
   NavRestaurant2Line as RiRestaurant2Line,
   NavSearchLine as RiSearchLine,
   NavShoppingCartLine as RiShoppingCartLine,
-  NavTeamLine as RiTeamLine,
   NavTShirt2Line as RiTShirt2Line,
 } from '@/components/atoms/NavIcons';
 
@@ -63,16 +60,6 @@ export const DESKTOP_NAV_ITEMS_PL: HeaderNavItem[] = [
 export const MOBILE_NAV_ITEMS_PL: HeaderNavItem[] = DESKTOP_NAV_ITEMS_PL.filter(
   it => it.key !== 'uslugi',
 );
-
-export const ABOUT_NAV_ITEMS_PL: AboutNavItem[] = [
-  { key: 'faq', href: '/o-nas/faq', title: 'FAQ', icon: RiFileList2Line },
-  {
-    key: 'joinNetwork',
-    href: '/o-nas/dolacz-do-sieci',
-    title: 'Dołącz do sieci',
-    icon: RiTeamLine,
-  },
-];
 
 export const OFFER_SECTIONS_PL: OfferSection[] = [
   {

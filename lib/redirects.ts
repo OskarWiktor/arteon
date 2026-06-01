@@ -246,6 +246,15 @@ export const DE_TOOLS_REDIRECTS: Record<string, string> = {
 };
 
 /**
+ * Redirecty dla usuniętych podstron sekcji "O nas" (2026-06)
+ * Strony FAQ i "Dołącz do sieci" usunięte → przekierowanie na stronę "O nas".
+ */
+export const ABOUT_REDIRECTS: Record<string, string> = {
+  '/o-nas/faq': '/o-nas',
+  '/o-nas/dolacz-do-sieci': '/o-nas',
+};
+
+/**
  * Redirecty dla usług (zmienione URL-e)
  */
 export const SERVICES_REDIRECTS: Record<string, string> = {
@@ -917,6 +926,7 @@ export const ALL_STATIC_REDIRECTS: Record<string, string> = {
   ...NO_TOOLS_REDIRECTS,
   ...DE_TOOLS_REDIRECTS,
   ...SERVICES_REDIRECTS,
+  ...ABOUT_REDIRECTS,
   ...REMOVED_LOCALE_REDIRECTS_EU,
   ...REMOVED_LOCALE_REDIRECTS,
   ...REMOVED_UNIT_CONVERTER_REDIRECTS,

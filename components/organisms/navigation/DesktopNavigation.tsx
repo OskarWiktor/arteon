@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
 import Wrapper from '@/components/atoms/Wrapper';
 import {
-  ABOUT_NAV_ITEMS_PL,
   DESKTOP_NAV_ITEMS_PL,
   OFFER_SECTIONS_PL,
   type OfferSectionKey,
@@ -32,8 +31,6 @@ import {
 const plUi = {
   closeServicesList: 'Zamknij listę usług',
   openServicesList: 'Otwórz listę usług',
-  closeAboutList: 'Zamknij listę O nas',
-  openAboutList: 'Otwórz listę O nas',
 } as const;
 
 export default function DesktopNavigation() {
@@ -45,7 +42,6 @@ export default function DesktopNavigation() {
   const pathname = usePathname();
   const [isOfferOpen, setIsOfferOpen] = useState(false);
   const [isToolsOpen, setIsToolsOpen] = useState(false);
-  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [activeOfferCategory, setActiveOfferCategory] = useState<OfferSectionKey>('witryny');
   const [activeToolsCategory, setActiveToolsCategory] = useState<ToolsSectionKey>('obrazy');
 
@@ -57,20 +53,14 @@ export default function DesktopNavigation() {
   const toolsBtnRef = useRef<HTMLButtonElement>(null);
   const toolsMenuRef = useRef<HTMLDivElement>(null);
 
-  const aboutLiRef = useRef<HTMLLIElement>(null);
-  const aboutBtnRef = useRef<HTMLButtonElement>(null);
-  const aboutMenuRef = useRef<HTMLDivElement>(null);
-
   const offerPanelRef = useRef<HTMLDivElement>(null);
   const toolsPanelRef = useRef<HTMLDivElement>(null);
-  const aboutPanelRef = useRef<HTMLDivElement>(null);
 
   const mounted = useIsMounted();
   const [headerBottom, setHeaderBottom] = useState(0);
 
   const offerMenuKeyboard = useMenuKeyboardNavigation(menuRef);
   const toolsMenuKeyboard = useMenuKeyboardNavigation(toolsMenuRef);
-  const aboutMenuKeyboard = useMenuKeyboardNavigation(aboutMenuRef);
 
   const buttonId = 'offer-button';
   const menuId = 'offer-submenu';
@@ -78,27 +68,21 @@ export default function DesktopNavigation() {
   const toolsButtonId = 'tools-button';
   const toolsMenuId = 'tools-submenu';
 
-  const aboutButtonId = 'about-button';
-  const aboutMenuId = 'about-submenu';
-
   useOutsideClick([offerLiRef, offerPanelRef], () => setIsOfferOpen(false), isOfferOpen);
   useOutsideClick([toolsLiRef, toolsPanelRef], () => setIsToolsOpen(false), isToolsOpen);
-  useOutsideClick([aboutLiRef, aboutPanelRef], () => setIsAboutOpen(false), isAboutOpen);
 
   useEscapeKey(
     () => {
       setIsOfferOpen(false);
       setIsToolsOpen(false);
-      setIsAboutOpen(false);
-      (offerBtnRef.current ?? toolsBtnRef.current ?? aboutBtnRef.current)?.focus();
+      (offerBtnRef.current ?? toolsBtnRef.current)?.focus();
     },
-    isOfferOpen || isToolsOpen || isAboutOpen,
+    isOfferOpen || isToolsOpen,
   );
 
   useEffect(() => {
     setIsOfferOpen(false);
     setIsToolsOpen(false);
-    setIsAboutOpen(false);
   }, [pathname]);
 
   useEffect(() => {
@@ -131,16 +115,6 @@ export default function DesktopNavigation() {
   const activeToolsSection =
     toolsSections.find(s => s.key === activeToolsCategory) || toolsSections[0];
 
-  const aboutItems = isPl
-    ? ABOUT_NAV_ITEMS_PL.map(item => {
-        const Icon = item.icon;
-        return {
-          ...item,
-          icon: Icon ? <Icon className={cn('text-primary', normalIconSizeClasses)} /> : undefined,
-        };
-      })
-    : [];
-
   const handleOfferButtonKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
     if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
@@ -162,17 +136,6 @@ export default function DesktopNavigation() {
 
   const handleToolsMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) =>
     toolsMenuKeyboard.onKeyDown(e);
-
-  const handleAboutButtonKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
-    if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      if (!isAboutOpen) setIsAboutOpen(true);
-      requestAnimationFrame(() => aboutMenuKeyboard.focusFirst());
-    }
-  };
-
-  const handleAboutMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) =>
-    aboutMenuKeyboard.onKeyDown(e);
 
   const toolsHref = localeConfig.toolsIndexHref;
   const isToolsActive = pathname.startsWith(localeConfig.toolsBasePath);
@@ -323,46 +286,6 @@ export default function DesktopNavigation() {
                   <span
                     className='inline-flex transition-transform duration-200'
                     style={{ transform: isOfferOpen ? 'rotate(180deg)' : undefined }}
-                  >
-                    <RiArrowDownSLine className={smallIconSizeClasses} aria-hidden='true' />
-                  </span>
-                </button>
-              </li>
-            );
-          }
-
-          if (itemKey === 'oNas') {
-            const isActive = pathname.startsWith('/o-nas');
-            return (
-              <li ref={aboutLiRef} className='group relative flex items-center gap-0.5' key={label}>
-                <InlineLink
-                  href={href}
-                  variant='navigation'
-                  aria-current={isActive ? 'page' : undefined}
-                  className={isActive ? 'text-dark font-semibold' : ''}
-                >
-                  {label}
-                </InlineLink>
-
-                <button
-                  id={aboutButtonId}
-                  type='button'
-                  onClick={() => startTransition(() => setIsAboutOpen(p => !p))}
-                  onKeyDown={handleAboutButtonKeyDown}
-                  aria-haspopup='menu'
-                  aria-expanded={isAboutOpen}
-                  aria-controls={aboutMenuId}
-                  ref={aboutBtnRef}
-                  className={cn(
-                    'text-primary hover:bg-primary-light mr-[-14px] h-7 w-7 cursor-pointer rounded transition-colors',
-                    flexCenterClasses,
-                    focusRingClasses,
-                  )}
-                  aria-label={isAboutOpen ? plUi.closeAboutList : plUi.openAboutList}
-                >
-                  <span
-                    className='inline-flex transition-transform duration-200'
-                    style={{ transform: isAboutOpen ? 'rotate(180deg)' : undefined }}
                   >
                     <RiArrowDownSLine className={smallIconSizeClasses} aria-hidden='true' />
                   </span>
@@ -611,41 +534,6 @@ export default function DesktopNavigation() {
           document.body,
         )}
 
-      {isPl &&
-        mounted &&
-        isAboutOpen &&
-        createPortal(
-          <div
-            ref={aboutPanelRef}
-            id={aboutMenuId}
-            role='menu'
-            aria-labelledby={aboutButtonId}
-            className='animate-dropdown-in fixed left-0 z-50 w-full bg-white/95 p-4 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm'
-            style={{ top: headerBottom }}
-          >
-            <Wrapper>
-              <div ref={aboutMenuRef} onKeyDown={handleAboutMenuKeyDown} className='flex gap-2'>
-                {aboutItems.map(item => (
-                  <InlineLink
-                    key={item.href}
-                    href={item.href}
-                    className='group/link gap-3 rounded-lg px-4 py-3 transition-colors duration-150 hover:bg-white'
-                  >
-                    {item.icon ? (
-                      <span className='text-primary-mid group-hover/link:text-primary shrink-0 transition-colors'>
-                        {item.icon}
-                      </span>
-                    ) : null}
-                    <span className='text-primary group-hover/link:text-primary text-sm font-medium transition-colors'>
-                      {item.title}
-                    </span>
-                  </InlineLink>
-                ))}
-              </div>
-            </Wrapper>
-          </div>,
-          document.body,
-        )}
     </div>
   );
 }

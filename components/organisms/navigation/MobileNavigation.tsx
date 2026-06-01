@@ -7,11 +7,7 @@ import { createPortal } from 'react-dom';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import Subtitle from '../../atoms/typography/Subtitle';
 import IconText from '../../atoms/IconText';
-import {
-  ABOUT_NAV_ITEMS_PL,
-  MOBILE_NAV_ITEMS_PL,
-  OFFER_SECTIONS_PL,
-} from '@/data/pl/navigation-data-pl';
+import { MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL } from '@/data/pl/navigation-data-pl';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { getMobileToolsSections } from '@/lib/i18n/tool-registry';
 import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
@@ -68,15 +64,6 @@ export default function MobileNavigation({
   const pathname = usePathname();
   const panelRef = useRef<HTMLDivElement>(null);
   const NAV = isPl ? MOBILE_NAV_ITEMS_PL : [];
-  const ABOUT_ITEMS = isPl
-    ? ABOUT_NAV_ITEMS_PL.map(it => {
-        const Icon = it.icon;
-        return {
-          ...it,
-          icon: Icon ? <Icon aria-hidden className={normalIconSizeClasses} /> : undefined,
-        };
-      })
-    : [];
   const SECTIONS: Section[] = isPl
     ? OFFER_SECTIONS_PL.map(section => ({
         key: section.key,
@@ -165,7 +152,6 @@ export default function MobileNavigation({
     tresc: false,
   });
 
-  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isToolsOpen, setIsToolsOpen] = useState(false);
 
   const closedKeys = { witryny: false, marketing: false, grafika: false, tresc: false } as const;
@@ -175,17 +161,6 @@ export default function MobileNavigation({
       const willOpen = !openKeys[key];
       setOpenKeys({ ...closedKeys, [key]: willOpen });
       if (willOpen) {
-        setIsAboutOpen(false);
-        setIsToolsOpen(false);
-      }
-    });
-
-  const toggleAbout = () =>
-    startTransition(() => {
-      const willOpen = !isAboutOpen;
-      setIsAboutOpen(willOpen);
-      if (willOpen) {
-        setOpenKeys(closedKeys);
         setIsToolsOpen(false);
       }
     });
@@ -196,7 +171,6 @@ export default function MobileNavigation({
       setIsToolsOpen(willOpen);
       if (willOpen) {
         setOpenKeys(closedKeys);
-        setIsAboutOpen(false);
       }
     });
 
@@ -377,75 +351,22 @@ export default function MobileNavigation({
               ) : null}
 
               {aboutNav ? (
-                <div className='rounded-lg py-1 transition-colors hover:bg-neutral-100'>
-                  <div className={flexCenterBetweenClasses}>
-                    <Link
-                      href={aboutNav.href}
-                      prefetch={false}
-                      onClick={() => setIsOpen(false)}
-                      aria-current={pathname.startsWith(aboutNav.href) ? 'page' : undefined}
-                      className={cn(
-                        'focus-visible:ring-primary rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
-                        {
-                          'text-dark font-semibold': pathname.startsWith(aboutNav.href),
-                          'text-dark': !pathname.startsWith(aboutNav.href),
-                        },
-                      )}
-                    >
-                      {aboutNav.label}
-                    </Link>
-
-                    <button
-                      type='button'
-                      aria-expanded={isAboutOpen}
-                      aria-controls='about-submenu-mobile'
-                      onClick={toggleAbout}
-                      className={cn(
-                        'text-primary focus-visible:ring-primary h-9 w-9 rounded-md transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2',
-                        flexCenterClasses,
-                      )}
-                    >
-                      <span
-                        className='inline-flex transition-transform duration-200'
-                        style={{ transform: isAboutOpen ? 'rotate(180deg)' : undefined }}
-                      >
-                        <RiArrowDownSLine className={normalIconSizeClasses} aria-hidden='true' />
-                      </span>
-                    </button>
-                  </div>
-
-                  {isAboutOpen && ABOUT_ITEMS.length > 0 && (
-                    <div id='about-submenu-mobile' className='animate-dropdown-in'>
-                      <ul className='mt-1 ml-3 flex flex-col gap-1 border-l border-neutral-200 pl-3'>
-                        {ABOUT_ITEMS.map(aboutItem => {
-                          const isSubActive = pathname.startsWith(aboutItem.href);
-                          return (
-                            <li key={aboutItem.href}>
-                              <Link
-                                href={aboutItem.href}
-                                prefetch={false}
-                                onClick={() => setIsOpen(false)}
-                                aria-current={isSubActive ? 'page' : undefined}
-                                className={cn(
-                                  'ring-primary flex items-center gap-3 rounded-lg px-2 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2',
-                                  {
-                                    'text-dark bg-neutral-50 font-semibold': isSubActive,
-                                    'text-dark hover:bg-neutral-100': !isSubActive,
-                                  },
-                                )}
-                              >
-                                {aboutItem.icon ? (
-                                  <span className='text-primary'>{aboutItem.icon}</span>
-                                ) : null}
-                                <span className='min-w-0'>{aboutItem.title}</span>
-                              </Link>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </div>
+                <Link
+                  key='oNas'
+                  href={aboutNav.href}
+                  prefetch={false}
+                  onClick={() => setIsOpen(false)}
+                  aria-current={pathname.startsWith(aboutNav.href) ? 'page' : undefined}
+                  className={cn(
+                    'ring-primary block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2',
+                    {
+                      'text-dark bg-neutral-50 font-semibold': pathname.startsWith(aboutNav.href),
+                      'text-dark hover:bg-neutral-100': !pathname.startsWith(aboutNav.href),
+                    },
                   )}
-                </div>
+                >
+                  {aboutNav.label}
+                </Link>
               ) : null}
 
               {edukacjaNav ? (

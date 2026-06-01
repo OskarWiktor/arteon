@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
-// All deployments go directly to production — no preview/staging environments.
-// Treat as production unless explicitly running local dev (NODE_ENV=development).
 const IS_PROD = process.env.NODE_ENV !== 'development';
 const metadataBase = new URL(siteUrl);
 

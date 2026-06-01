@@ -15,15 +15,6 @@ export type HeaderNavItem = {
   exact?: boolean;
 };
 
-export type AboutItemKey = 'faq' | 'joinNetwork';
-
-export type AboutNavItem = {
-  key: AboutItemKey;
-  href: string;
-  title: string;
-  icon?: IconType;
-};
-
 export type OfferSectionKey = 'witryny' | 'marketing' | 'grafika' | 'tresc';
 
 export type OfferItemKey =

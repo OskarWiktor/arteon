@@ -85,13 +85,11 @@ const navLinksPrimary = [
   { href: '/uslugi', label: 'Usługi' },
   { href: '/realizacje', label: 'Realizacje' },
   { href: '/o-nas', label: 'O nas' },
-  { href: '/o-nas/dolacz-do-sieci', label: 'Dołącz do sieci' },
 ];
 
 const navLinksSecondary = [
   { href: '/edukacja', label: 'Edukacja' },
   { href: '/narzedzia', label: 'Narzędzia' },
-  { href: '/o-nas/faq', label: 'FAQ' },
   { href: '/kontakt', label: 'Kontakt' },
 ];
 

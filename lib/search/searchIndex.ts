@@ -1,4 +1,4 @@
-import { OFFER_SECTIONS_PL, ABOUT_NAV_ITEMS_PL } from '@/data/pl/navigation-data-pl';
+import { OFFER_SECTIONS_PL } from '@/data/pl/navigation-data-pl';
 import searchBlog from '@/data/pl/search-blog.json';
 import searchProjects from '@/data/pl/search-projects.json';
 import { slugify } from '@/utils/slugify';
@@ -220,15 +220,6 @@ function buildServicesIndex(): SearchItem[] {
   return items;
 }
 
-function buildAboutIndex(): SearchItem[] {
-  return ABOUT_NAV_ITEMS_PL.map(item => ({
-    title: item.title,
-    href: item.href,
-    category: 'inne' as SearchCategory,
-    categoryLabel: 'Strony',
-  }));
-}
-
 function buildBlogIndex(): SearchItem[] {
   return (searchBlog as SearchBlogEntry[]).map(a => ({
     title: a.t,
@@ -297,7 +288,6 @@ export function getSearchIndex(
       ...staticPages,
       ...buildServicesIndex(),
       ...tools,
-      ...buildAboutIndex(),
       ...buildBlogIndex(),
       ...buildProjectsIndex(),
     ];
