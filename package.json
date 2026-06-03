@@ -69,7 +69,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "next-sitemap": "^4.2.3",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.10",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.12",
     "tailwind-scrollbar": "^4.0.2",
