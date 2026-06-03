@@ -13,6 +13,10 @@ updates:
     open-pull-requests-limit: 10
     labels:
       - "dependencies"
+    ignore:
+      # Newer react-icons drop the Adobe brand icons (trademark removal from
+      # Simple Icons) used in LogoCarousel. Pinned to 5.5.0 — do not auto-bump.
+      - dependency-name: "react-icons"
     # Group routine minor/patch bumps into a single PR to cut noise.
     # Security updates and major bumps still come as their own PRs.
     groups:
