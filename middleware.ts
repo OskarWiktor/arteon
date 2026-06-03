@@ -56,8 +56,11 @@ export function middleware(request: NextRequest) {
   const proto = request.headers.get('x-forwarded-proto') || 'https';
   const host = request.headers.get('host') || '';
 
-  // 0. Block Vercel preview/deployment URLs from search engine indexing.
-  if (host.endsWith('.vercel.app')) {
+  // 0. Non-production deployments (Vercel preview URLs AND the staging custom
+  //    domain like staging.arteonagency.pl): never index, and never run the
+  //    canonical redirects below — otherwise the staging host would 301 to the
+  //    production host and be unusable. Covers local dev too (VERCEL_ENV unset).
+  if (process.env.VERCEL_ENV !== 'production') {
     const res = NextResponse.next();
     res.headers.set('X-Robots-Tag', 'noindex, nofollow');
     return res;
@@ -69,11 +72,6 @@ export function middleware(request: NextRequest) {
       status: 410,
       headers: { 'X-Robots-Tag': 'noindex' },
     });
-  }
-
-  // Skip canonical redirects in development
-  if (process.env.NODE_ENV !== 'production') {
-    return NextResponse.next();
   }
 
   let needsRedirect = false;
