@@ -6,9 +6,11 @@ import {
   focusRingClasses,
 } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import { ButtonSize, ButtonVariant } from '@/types/ui';
 import type { ReactNode } from 'react';
 import ArrowIcon from '../ArrowIcon';
+
+type ButtonSize = 'small' | 'medium';
+type ButtonVariant = 'normal' | 'accent';
 
 interface ButtonProps {
   children: ReactNode;

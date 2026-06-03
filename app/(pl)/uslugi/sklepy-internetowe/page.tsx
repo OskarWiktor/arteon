@@ -23,10 +23,7 @@ import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
-import SectionPrices, {
-  type Note,
-  type SectionPricesPlan,
-} from '@/components/organisms/sections/SectionPrices';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import { GoLaw } from 'react-icons/go';
 import Script from 'next/script';
@@ -393,7 +390,7 @@ export default function OfferWebPage() {
                 btnOneHref: '#kontakt',
                 lastPlan: true,
               },
-            ] as SectionPricesPlan[]
+            ]
           }
           note={
             {
@@ -406,7 +403,7 @@ export default function OfferWebPage() {
               ),
               ctaLabel: 'Porozmawiajmy o Twoim projekcie',
               ctaLink: '#kontakt',
-            } as Note
+            }
           }
         />
 

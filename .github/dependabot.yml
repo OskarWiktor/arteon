@@ -17,6 +17,12 @@ updates:
       # Newer react-icons drop the Adobe brand icons (trademark removal from
       # Simple Icons) used in LogoCarousel. Pinned to 5.5.0 — do not auto-bump.
       - dependency-name: "react-icons"
+      # Major bumps keep breaking the build (eslint 10, @eslint/js 10,
+      # eslint-plugin-sonarjs 4, @types/node 25, next majors) and need manual
+      # testing. Auto-handle only minor/patch; do majors by hand when there is
+      # time to verify. Security updates still come through regardless.
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     # Group routine minor/patch bumps into a single PR to cut noise.
     # Security updates and major bumps still come as their own PRs.
     groups:

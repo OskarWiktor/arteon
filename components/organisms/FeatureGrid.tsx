@@ -1,9 +1,14 @@
 import type { ReactNode } from 'react';
 import FeatureCard from './FeatureCard';
 import SectionHeader from '../molecules/SectionHeader';
-import type { FeatureItem } from '@/types/ui';
 import { cn } from '@/lib/utils';
-export type { FeatureItem } from '@/types/ui';
+
+type FeatureItem = {
+  title: string;
+  description?: ReactNode;
+  points?: string[];
+  icon?: ReactNode;
+};
 
 interface FeatureGridProps {
   title: ReactNode;

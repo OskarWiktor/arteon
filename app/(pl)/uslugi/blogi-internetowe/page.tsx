@@ -21,10 +21,6 @@ import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import { GoLaw } from 'react-icons/go';
-import SectionPrices, {
-  type Note,
-  type SectionPricesPlan,
-} from '@/components/organisms/sections/SectionPrices';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
@@ -34,6 +30,7 @@ import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import { normalIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',
@@ -321,7 +318,7 @@ export default function OfferBlogPage() {
                 btnOneHref: '#kontakt',
                 lastPlan: true,
               },
-            ] as SectionPricesPlan[]
+            ]
           }
           note={
             {
@@ -334,7 +331,7 @@ export default function OfferBlogPage() {
               ),
               ctaLabel: 'Porozmawiajmy o Twoim blogu',
               ctaLink: '#kontakt',
-            } as Note
+            }
           }
         />
 

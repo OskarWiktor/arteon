@@ -4,10 +4,38 @@ import ButtonGroup from '../../molecules/ButtonGroup';
 import Badge from '../../atoms/Badge';
 import Card from '../Card';
 import IconText from '../../atoms/IconText';
-import type { SectionPricesProps } from '@/types/ui';
 import { cn } from '@/lib/utils';
 import { normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
-export type { SectionPricesPlan, Note, SectionPricesProps } from '@/types/ui';
+import { ReactNode } from 'react';
+
+type Note = {
+  text: ReactNode;
+  ctaLabel?: string;
+  ctaLink?: string;
+};
+
+type SectionPricesPlan = {
+  name: string;
+  platform?: string;
+  price: string;
+  description: string;
+  features: string[];
+  lastPlan?: boolean;
+  badgeLabel?: string;
+  btnOne?: string;
+  btnOneHref?: string;
+  btnTwo?: string;
+  btnTwoHref?: string;
+};
+
+type SectionPricesProps = {
+  id?: string;
+  title?: string;
+  subtitle?: string;
+  plans?: SectionPricesPlan[];
+  note?: Note | null;
+  legalNote?: string;
+};
 
 export default function SectionPrices({
   id = 'pricing',
