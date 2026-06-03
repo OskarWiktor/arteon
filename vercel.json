@@ -1,4 +1,7 @@
 {
+  "github": {
+    "silent": true
+  },
   "redirects": [
     {
       "source": "/narzedzia/konwerter-tailwind-css-spacing-na-px",
