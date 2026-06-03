@@ -1,0 +1,34 @@
+name: Security Audit
+
+# Scans dependencies for known vulnerabilities.
+# Fails the run on HIGH or CRITICAL advisories so they block a merge.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Weekly catch-all (Mondays 06:00 UTC) for advisories published
+    # after a dependency was already merged.
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: npm audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Reads package-lock.json directly — no install or build needed.
+      - name: Run npm audit (fail on high/critical)
+        run: npm audit --audit-level=high

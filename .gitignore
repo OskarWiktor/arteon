@@ -31,7 +31,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files
 .env*
 
 # vercel
@@ -41,12 +41,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# generated search index (built from source data via prebuild)
+# generated search index
 /data/pl/search-blog.json
 /data/pl/search-projects.json
 
 # next-agents-md
 .next-docs/
 .worktrees/
-
-/.claude/
