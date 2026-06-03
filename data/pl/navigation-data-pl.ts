@@ -1,20 +1,67 @@
-import type { HeaderNavItem, OfferSection } from '@/types/navigation';
+import type { IconType } from 'react-icons';
 import type { ToolsSection } from '@/types/tools/common';
-export type {
-  HeaderNavItemKey,
-  HeaderNavItem,
-  OfferSectionKey,
-  OfferItemKey,
-  OfferSectionItem,
-  OfferSection,
-  LegalLinkKey,
-} from '@/types/navigation';
 export type {
   ToolsSectionKey,
   ToolItemKey,
   ToolSectionItem,
   ToolsSection,
 } from '@/types/tools/common';
+
+export type HeaderNavItemKey =
+  | 'realizacje'
+  | 'uslugi'
+  | 'oNas'
+  | 'edukacja'
+  | 'narzedzia'
+  | 'kontakt';
+
+export type HeaderNavItem = {
+  key: HeaderNavItemKey;
+  href: string;
+  label: string;
+  exact?: boolean;
+};
+
+export type OfferSectionKey = 'witryny' | 'marketing' | 'grafika' | 'tresc';
+
+export type OfferItemKey =
+  | 'websites'
+  | 'shops'
+  | 'blogs'
+  | 'auditSeo'
+  | 'optimizationSeo'
+  | 'positioning'
+  | 'priceList'
+  | 'visualIdentity'
+  | 'loyaltyCard'
+  | 'catalogs'
+  | 'coupons'
+  | 'websiteDesign'
+  | 'logo'
+  | 'restaurantMenu'
+  | 'companyClothing'
+  | 'companyPaper'
+  | 'socialTemplates'
+  | 'offerFolder'
+  | 'flyers'
+  | 'businessCards'
+  | 'contentCreation';
+
+export type OfferSectionItem = {
+  key: OfferItemKey;
+  href: string;
+  title: string;
+  desc?: string;
+  icon?: IconType;
+};
+
+export type OfferSection = {
+  key: OfferSectionKey;
+  title: string;
+  hubHref?: string;
+  icon?: IconType;
+  items: OfferSectionItem[];
+};
 
 import {
   NavAppsLine as RiAppsLine,

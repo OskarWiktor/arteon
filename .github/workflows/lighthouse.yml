@@ -1,0 +1,42 @@
+name: Lighthouse CI
+
+# Builds the app and runs Lighthouse against a few representative pages,
+# reporting performance, accessibility, best-practices and SEO scores on PRs.
+# Assertions are "warn" (non-blocking) for now — tune to "error" once the
+# scores are stable if you want it to gate merges.
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lighthouse:
+    name: Lighthouse
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Run prebuild (search index) + next build directly, NOT `npm run build`,
+      # so the postbuild step (sitemap + IndexNow submission) does not fire in CI.
+      - name: Build
+        run: |
+          npm run prebuild
+          npx next build
+
+      - name: Run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.14.x
+          lhci autorun

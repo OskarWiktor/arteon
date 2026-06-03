@@ -21,7 +21,11 @@ import {
   unixToDate,
   dateToUnix,
 } from '@/lib/tools/units/specialConverters';
-import type { UnitConverterProps } from '@/types/tools/unit-converter';
+import type { ToolItemKey } from '@/types/tools/common';
+
+interface UnitConverterProps {
+  toolKey: ToolItemKey;
+}
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import Card from '../../Card';
 

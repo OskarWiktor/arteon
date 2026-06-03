@@ -1,4 +1,4 @@
-import type { UnitConversionConfig } from '@/types/tools/units';
+import type { ToolItemKey } from '@/types/tools/common';
 import {
   CSS_CONVERSION_FACTORS,
   CONVERSION_PRECISION,
@@ -7,15 +7,64 @@ import {
   CONVERSION_FORMULAS,
 } from '@/utils/conversion-constants';
 
-// ---------------------------------------------------------------------------
-// All 17 unit conversion configurations
-// ---------------------------------------------------------------------------
+type UnitCategory =
+  | 'length'
+  | 'weight'
+  | 'temperature'
+  | 'volume'
+  | 'area'
+  | 'speed'
+  | 'pressure'
+  | 'power'
+  | 'css'
+  | 'color'
+  | 'data'
+  | 'time'
+  | 'math'
+  | 'energy';
+
+interface UnitField {
+  label?: string;
+  labelKey?: string;
+  suffix: string;
+  placeholder?: string;
+}
+
+interface ExtraField {
+  key: string;
+  label?: string;
+  labelKey?: string;
+  suffix: string;
+  defaultValue: number;
+  min?: number;
+  max?: number;
+  step?: number;
+}
+
+interface PopularValue {
+  source: number | string;
+  target: number | string;
+  label?: string;
+  labelKey?: string;
+}
+
+export interface UnitConversionConfig {
+  toolKey: ToolItemKey;
+  category: UnitCategory;
+  sourceField: UnitField;
+  targetField: UnitField;
+  extraField?: ExtraField;
+  convert: (value: number, extra?: number) => number;
+  reverseConvert: (value: number, extra?: number) => number;
+  formula: string;
+  reverseFormula: string;
+  precision: number;
+  popularValues: PopularValue[];
+  swappable: boolean;
+}
+
 
 export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
-  // ═══════════════════════════════════════════════════════════════════════════
-  // A. Design / graphics (10)
-  // ═══════════════════════════════════════════════════════════════════════════
-
   {
     toolKey: 'ptToPx',
     category: 'css',
@@ -365,10 +414,6 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     ],
   },
 ];
-
-// ---------------------------------------------------------------------------
-// Lookup helper
-// ---------------------------------------------------------------------------
 
 export function getUnitConversion(toolKey: string): UnitConversionConfig | undefined {
   return UNIT_CONVERSIONS.find(c => c.toolKey === toolKey);
