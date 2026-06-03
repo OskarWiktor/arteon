@@ -1,5 +1,11 @@
 import type { CSSProperties } from 'react';
-import type { DividerSize } from '@/types/ui';
+
+type DividerSize = 'xs' | 'sm' | 'md' | 'xl';
+
+interface DividerProps {
+  size?: DividerSize;
+  line?: boolean;
+}
 
 const HEIGHT_BY_SIZE: Record<DividerSize, CSSProperties['height']> = {
   xs: 'clamp(40px, calc(40px + 40 * ((100vw - 360px) / 1080)), 80px)',
@@ -7,11 +13,6 @@ const HEIGHT_BY_SIZE: Record<DividerSize, CSSProperties['height']> = {
   md: 'clamp(128px, calc(128px + 64 * ((100vw - 360px) / 1080)), 192px)',
   xl: 'clamp(160px, calc(160px + 96 * ((100vw - 360px) / 1080)), 256px)',
 };
-
-interface DividerProps {
-  size?: DividerSize;
-  line?: boolean;
-}
 
 export default function Divider({ size = 'md', line = false }: DividerProps) {
   return (

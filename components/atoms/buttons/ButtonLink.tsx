@@ -4,10 +4,11 @@ import {
   focusRingClasses,
 } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import { ButtonVariant } from '@/types/ui';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import ArrowIcon from '../ArrowIcon';
+
+type ButtonVariant = 'normal' | 'accent';
 
 interface ButtonLinkProps {
   href: string;

@@ -2,10 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import type { AdSenseProps } from '@/types/ui';
 import { cn } from '@/lib/utils';
 import { flexCenterClasses } from '@/lib/ui-classes';
-export type { AdVariant, AdSenseProps } from '@/types/ui';
 
 const AD_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? '';
 const AD_SCRIPT_SRC = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${AD_CLIENT}`;
@@ -43,6 +41,22 @@ const AD_LABEL: Record<string, string> = {
 const SLOT_ALIASES: Record<string, string> = {
   [LEGACY_IN_ARTICLE_SLOT]: PRESETS['in-article'].slot,
 };
+
+type AdVariant =
+  | 'tool-banner'
+  | 'responsive'
+  | 'in-article'
+  | 'in-article-new'
+  | 'autorelaxed'
+  | 'vertical';
+
+interface AdSenseProps {
+  variant: AdVariant;
+  adSlot?: string;
+  className?: string;
+  locale?: string;
+}
+
 
 declare global {
   interface Window {

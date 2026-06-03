@@ -22,10 +22,7 @@ import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import { GoLaw } from 'react-icons/go';
-import SectionPrices, {
-  type Note,
-  type SectionPricesPlan,
-} from '@/components/organisms/sections/SectionPrices';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
@@ -465,7 +462,7 @@ export default function TworzenieStronWordPressPage() {
                 btnOneHref: '#kontakt',
                 lastPlan: true,
               },
-            ] as SectionPricesPlan[]
+            ]
           }
           note={
             {
@@ -480,7 +477,7 @@ export default function TworzenieStronWordPressPage() {
               ),
               ctaLabel: 'Opisz swój projekt',
               ctaLink: '#kontakt',
-            } as Note
+            }
           }
           legalNote='Podane ceny są cenami końcowymi na fakturze. Wycena nie obejmuje kosztów domeny i hostingu (ok. 200-500 zł/rok).'
         />

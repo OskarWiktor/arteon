@@ -29,6 +29,8 @@ jobs:
         with:
           node-version: "20"
 
+      # Audits only production dependencies (--omit=dev): this is a static site,
+      # so dev-only tooling (eslint plugins, build tools) never ships to users.
       # Reads package-lock.json directly — no install or build needed.
-      - name: Run npm audit (fail on high/critical)
-        run: npm audit --audit-level=high
+      - name: Run npm audit (fail on high/critical, production deps only)
+        run: npm audit --audit-level=high --omit=dev
