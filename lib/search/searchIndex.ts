@@ -6,8 +6,16 @@ import { getToolsList } from '@/lib/i18n/tool-registry';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 
 import type { Locale } from '@/types/locale';
-import type { SearchCategory, SearchItem } from '@/types/search';
-export type { SearchCategory, SearchItem } from '@/types/search';
+export type SearchCategory = 'uslugi' | 'narzedzia' | 'edukacja' | 'realizacje' | 'inne';
+
+export type SearchItem = {
+  title: string;
+  description?: string;
+  href: string;
+  category: SearchCategory;
+  categoryLabel: string;
+  keywords?: string[];
+};
 
 type SearchBlogEntry = { s: string; t: string; e: string; c: string; k: string[] };
 type SearchProjectEntry = { s: string; t: string; d: string; k: string[] };

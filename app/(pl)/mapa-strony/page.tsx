@@ -1,7 +1,7 @@
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import Wrapper from '@/components/atoms/Wrapper';
 import type { Metadata } from 'next';
-import type { NavItem } from '@/types/sitemap';
+import type { NavItem } from './SitemapPageClient';
 
 import { getAllArticlePreviews, getPrimaryCategorySlug } from '@/lib/blogDataService';
 import { slugify } from '@/utils/slugify';

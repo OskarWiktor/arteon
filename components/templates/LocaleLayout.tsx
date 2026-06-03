@@ -1,6 +1,6 @@
 import ConsentListener from '@/components/organisms/ConsentListener';
 import Footer from '@/components/organisms/Footer';
-import Navigation from '@/components/organisms/navigation/Navigation';
+import NavigationShell from '@/components/organisms/navigation/NavigationShell';
 import SkipToContent from '@/components/atoms/SkipToContent';
 import { LocaleProvider } from '@/lib/LocaleContext';
 import { getClientDictionary, getLocaleConfigFor } from '@/lib/i18n/client-dictionary';
@@ -24,7 +24,7 @@ export default async function LocaleLayout({ locale, children }: LocaleLayoutPro
       <ConsentListener />
       <SkipToContent label={fullDict.skipToContent} />
 
-      <Navigation />
+      <NavigationShell />
 
       <main id='main-content' tabIndex={-1}>
         {children}

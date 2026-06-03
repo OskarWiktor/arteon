@@ -1,8 +1,9 @@
 import Wrapper from '@/components/atoms/Wrapper';
 import { JsonLd } from '@/components/atoms/JsonLd';
 
-import type { NavItem } from '@/types/sitemap';
 import SectionHeader from '@/components/molecules/SectionHeader';
+
+export type NavItem = { title: string; href: string; children?: NavItem[] };
 
 import InlineLink from '@/components/atoms/InlineLink';
 type SitemapPageClientProps = {

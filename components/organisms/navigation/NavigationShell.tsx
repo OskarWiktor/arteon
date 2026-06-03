@@ -31,7 +31,7 @@ const DesktopNavigation = dynamic(() => import('./DesktopNavigation'), {
 
 const SearchDialog = dynamic(() => import('@/components/organisms/SearchDialog'), { ssr: false });
 
-export default function Navigation() {
+export default function NavigationShell() {
   const locale = useLocale();
   const isPl = locale === 'pl';
   const dict = useDictionary();

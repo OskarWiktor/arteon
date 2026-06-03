@@ -28,7 +28,6 @@ export function useConversionQueue(options: ConversionQueueOptions) {
   const filesRef = useRef(files);
   filesRef.current = files;
 
-  // Revoke all object URLs on unmount to prevent memory leaks
   useEffect(() => {
     return () => {
       filesRef.current.forEach(f => {
@@ -76,10 +75,8 @@ export function useConversionQueue(options: ConversionQueueOptions) {
     setIsConverting(true);
     const targetMime = FORMAT_MIME[targetFormat];
 
-    // Use ref to get the latest files snapshot - avoids stale closure
     const pending = filesRef.current.filter(f => f.status === 'pending' || f.status === 'error');
     for (const entry of pending) {
-      // Check if file was removed while we were processing the queue
       if (!filesRef.current.some(f => f.id === entry.id)) continue;
 
       setFiles(prev =>
