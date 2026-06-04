@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, type FormEvent } from 'react';
+import { useRef, useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
@@ -12,7 +12,7 @@ import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useDictionary } from '@/lib/LocaleContext';
 import { FORMAT_EXT, FORMAT_LABELS, FORMAT_MIME } from '@/lib/tools/image/pdfToImage';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { PdfPageFile, PdfToImageConverterProps } from '@/types/tools/pdf-to-image-converter';
 import { downloadBlob } from '@/utils/download';
@@ -103,7 +103,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
     });
   };
 
-  const handleConvert = async (e: FormEvent) => {
+  const handleConvert = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!pages.length) {
       setGlobalError(t.errorNoFiles.replace('{{format}}', 'PDF'));

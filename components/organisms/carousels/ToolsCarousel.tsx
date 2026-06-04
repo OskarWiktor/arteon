@@ -6,9 +6,9 @@ import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNav
 import SectionHeader from '@/components/molecules/SectionHeader';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
-import { getToolsSections } from '@/lib/i18n/tool-registry';
+import { getToolsSections } from '@/lib/i18n/toolRegistry';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
+import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 const AUTO_PLAY_INTERVAL_MS = 6000;

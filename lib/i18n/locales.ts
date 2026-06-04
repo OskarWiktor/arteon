@@ -14,22 +14,22 @@ export type {
   DesktopOnlyUi,
 } from '@/types/locale';
 
-import huDict from '@/data/hu/dictionary.json';
 import csDict from '@/data/cs/dictionary.json';
-import svDict from '@/data/sv/dictionary.json';
 import daDict from '@/data/da/dictionary.json';
 import deDict from '@/data/de/dictionary.json';
-import noDict from '@/data/no/dictionary.json';
 import elDict from '@/data/el/dictionary.json';
 import enDict from '@/data/en/dictionary.json';
 import esDict from '@/data/es/dictionary.json';
 import fiDict from '@/data/fi/dictionary.json';
 import frDict from '@/data/fr/dictionary.json';
+import huDict from '@/data/hu/dictionary.json';
 import itDict from '@/data/it/dictionary.json';
 import nlDict from '@/data/nl/dictionary.json';
+import noDict from '@/data/no/dictionary.json';
 import plDict from '@/data/pl/dictionary.json';
 import ptDict from '@/data/pt/dictionary.json';
 import roDict from '@/data/ro/dictionary.json';
+import svDict from '@/data/sv/dictionary.json';
 import type {
   BreadcrumbsDictionary,
   ContactFormDictionary,
@@ -37,7 +37,7 @@ import type {
   LanguageSwitcherDictionary,
   MobileNavDictionary,
   InfoBannerDictionary,
-} from '@/lib/i18n/get-dictionary';
+} from '@/lib/i18n/getDictionary';
 
 const dicts = {
   pl: plDict,

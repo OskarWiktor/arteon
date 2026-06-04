@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { RiStarFill, RiStarLine } from 'react-icons/ri';
-import { focusRingClasses } from '@/lib/ui-classes';
+import { focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 type SectionStarRatingSize = 'small' | 'medium' | 'large';

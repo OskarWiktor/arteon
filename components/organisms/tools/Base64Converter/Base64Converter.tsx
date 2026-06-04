@@ -8,7 +8,7 @@ import TextareaWithLabel from '@/components/molecules/form/TextareaWithLabel';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useDictionary } from '@/lib/LocaleContext';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import { downloadBlob } from '@/utils/download';
 import Card from '../../Card';
@@ -49,7 +49,6 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     reader.readAsDataURL(file);
   };
 
-  // DECODE: Base64 string → image preview
   const handleDecode = () => {
     if (!base64.trim()) {
       setError(t.base64PasteEmpty);
@@ -58,7 +57,6 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     setError(null);
 
     let dataUrl = base64.trim();
-    // Add data URL prefix if missing
     if (!dataUrl.startsWith('data:')) {
       let mime = 'image/png';
       try {
@@ -126,7 +124,6 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     };
     const ext = extMap[mime] ?? '.png';
 
-    // Convert data URL to blob
     const byteString = atob(previewUrl.split(',')[1]);
     const ab = new ArrayBuffer(byteString.length);
     const ia = new Uint8Array(ab);
@@ -176,7 +173,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
           <Card interactive={false} padding='lg'>
             <TextareaWithLabel
               label='Base64'
-              className='min-h-[300px] resize-y'
+              className='min-h-75 resize-y'
               value={base64}
               readOnly
               placeholder={t.base64Placeholder}
@@ -197,7 +194,6 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     );
   }
 
-  // mode === 'decode'
   return (
     <div className='overflow-hidden'>
       <FormatSelector currentSource='base64' currentTarget='jpg' hasFiles={!!base64} />
@@ -205,7 +201,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
         <Card interactive={false} padding='lg'>
           <TextareaWithLabel
             label='Base64'
-            className='min-h-[300px] w-full resize-y'
+            className='min-h-75 w-full resize-y'
             value={base64}
             onChange={setBase64}
             placeholder={t.base64PastePlaceholder}
@@ -246,7 +242,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
                 <img
                   src={previewUrl}
                   alt={t.decodedImageAlt}
-                  className='max-h-[400px] max-w-full object-contain'
+                  className='max-h-100 max-w-full object-contain'
                 />
               </div>
               <Button onClick={handleDownload} size='small'>
@@ -256,7 +252,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
           ) : (
             <div
               className={cn(
-                'min-h-[300px] rounded-lg border border-neutral-200 bg-neutral-50 p-4',
+                'min-h-75 rounded-lg border border-neutral-200 bg-neutral-50 p-4',
                 flexCenterClasses,
               )}
             >

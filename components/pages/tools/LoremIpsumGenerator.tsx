@@ -15,7 +15,7 @@ import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolStatRow from '@/components/molecules/tools/ToolStatRow';
 import Card from '@/components/organisms/Card';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { ui } from '@/lib/i18n/tools/lorem-ipsum';
+import { ui } from '@/lib/i18n/tools/loremIpsum';
 import { useLocale } from '@/lib/LocaleContext';
 import {
   generateLoremIpsum,
@@ -27,7 +27,7 @@ import {
   type LoremFormat,
   type LoremOptions,
 } from '@/lib/tools/text/loremIpsum';
-import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 const MODES: LoremMode[] = [

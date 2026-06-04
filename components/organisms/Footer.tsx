@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { JsonLd } from '@/components/atoms/JsonLd';
-import { getFooterTools } from '@/lib/i18n/tool-registry';
+import { getFooterTools } from '@/lib/i18n/toolRegistry';
 import type { Locale, FooterUi, LegalLink } from '@/types/locale';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 import ButtonCookieSettings from '../atoms/buttons/ButtonCookieSettings';

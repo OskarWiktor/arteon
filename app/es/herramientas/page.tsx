@@ -22,8 +22,8 @@ import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { getToolsIndexAlternates } from '@/lib/i18n/pages/toolMeta';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {

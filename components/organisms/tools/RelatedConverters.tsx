@@ -1,5 +1,5 @@
 import Divider from '@/components/atoms/Divider';
-import { getDictionary } from '@/lib/i18n/get-dictionary';
+import { getDictionary } from '@/lib/i18n/getDictionary';
 import {
   getConversionByToolKey,
   getConvertersToSameTarget,
@@ -7,7 +7,7 @@ import {
   FORMAT_DISPLAY_LABELS,
   type ResolvedRoute,
 } from '@/lib/tools/conversionRoutes';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { Locale } from '@/types/locale';
 

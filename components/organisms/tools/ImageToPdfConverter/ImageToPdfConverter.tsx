@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, type FormEvent } from 'react';
+import { useRef, useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
@@ -11,7 +11,7 @@ import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useDictionary } from '@/lib/LocaleContext';
 import { FORMAT_LABELS } from '@/lib/tools/image/imageToPdf';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type {
   ImageFormat,
@@ -160,7 +160,7 @@ export default function ImageToPdfConverter({
     });
   };
 
-  const handleConvert = async (e: FormEvent) => {
+  const handleConvert = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!files.length) {
       setGlobalError(t.errorNoFiles.replace('{{format}}', sourceLabel));

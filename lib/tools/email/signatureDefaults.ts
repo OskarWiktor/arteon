@@ -1,4 +1,4 @@
-import { ui } from '@/lib/i18n/tools/email-signature';
+import { ui } from '@/lib/i18n/tools/emailSignature';
 import type { Locale } from '@/lib/LocaleContext';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import type {

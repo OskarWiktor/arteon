@@ -39,17 +39,17 @@ import Card from '@/components/organisms/Card';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import ShareBlock from '@/components/organisms/ShareBlock';
-import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import SectionMetrics from '@/components/organisms/sections/SectionMetrics';
 import SectionFeatureList from '@/components/organisms/sections/SectionFeatureList';
-import SectionProcess from '@/components/organisms/sections/SectionProcess';
 import SectionImageGallery from '@/components/organisms/sections/SectionImageGallery';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionMetrics from '@/components/organisms/sections/SectionMetrics';
+import SectionProcess from '@/components/organisms/sections/SectionProcess';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import ShareBlock from '@/components/organisms/ShareBlock';
 import TableOfContents from '@/components/organisms/TableOfContent';
 import projectsData from '@/data/pl/projects.json';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { Project, ContentBlock } from '@/types/project';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
@@ -310,7 +310,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
             <div key={`quote-${i}`} className={wrapperClass}>
               <figure className='rounded-lg bg-white p-6 shadow-md'>
                 <blockquote>
-                  <p className='text-lg leading-relaxed'>"{b.text}"</p>
+                  <p className='text-lg'>"{b.text}"</p>
                 </blockquote>
                 {(b.author || b.role) && (
                   <figcaption className='mt-3 text-sm text-light'>
@@ -433,7 +433,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
             <div key={`testimonial-${i}`} className={wrapperClass}>
               <SectionInfo title='Ocena współpracy'>
                 <blockquote className='rounded-lg bg-white p-6 shadow-md'>
-                  <p className='text-lg leading-relaxed'>"{b.quote}"</p>
+                  <p className='text-lg'>"{b.quote}"</p>
                   {(b.author || b.role) && (
                     <footer className='mt-2'>
                       <h5 className='mt-5'>{b.author}</h5>
@@ -510,7 +510,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
           return (
             <div key={`grid3-${i}`} className={wrapperClass}>
               {b.title && <h3 className='h5 mb-2'>{b.title}</h3>}
-              {b.description && <p className='mb-4 text-mid'>{b.description}</p>}
+              {b.description && <p className='mb-4'>{b.description}</p>}
               <div className='grid grid-cols-1 gap-4 sm:grid-cols-3'>
                 {b.images.map((img, idx) => (
                   <figure key={idx}>
@@ -729,7 +729,7 @@ export default async function ProjectPage({ params }: PageProps) {
               <SectionInfo title='Jak było - jak jest'>
                 <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
                   <figure>
-                    <div className='relative aspect-[16/9] overflow-hidden rounded-lg border border-neutral-200'>
+                    <div className='relative aspect-video overflow-hidden rounded-lg border border-neutral-200'>
                       <Image
                         src={project.beforeAfter.beforeImage || project.image}
                         alt='Widok przed zmianami'
@@ -742,7 +742,7 @@ export default async function ProjectPage({ params }: PageProps) {
                   </figure>
 
                   <figure>
-                    <div className='relative aspect-[16/9] overflow-hidden rounded-lg border border-neutral-200'>
+                    <div className='relative aspect-video overflow-hidden rounded-lg border border-neutral-200'>
                       <Image
                         src={project.beforeAfter.afterImage || project.image}
                         alt='Widok po wdrożeniu'
@@ -806,7 +806,7 @@ export default async function ProjectPage({ params }: PageProps) {
               <Divider size='sm' line />
               <SectionInfo title='Ocena współpracy'>
                 <blockquote className='rounded-lg bg-white p-6 shadow-md'>
-                  <p className='text-lg leading-relaxed'>“{project.testimonial.quote}”</p>
+                  <p className='text-lg'>“{project.testimonial.quote}”</p>
                   {(project.testimonial.author || project.testimonial.role) && (
                     <footer className='mt-2'>
                       <h5 className='mt-5'>{project.testimonial.author}</h5>

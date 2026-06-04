@@ -38,7 +38,7 @@ export default function PoliticaDeConfidentialitatePage() {
       >
         <div>
           <h1>Politica de confidențialitate</h1>
-          <p className='mt-2 text-sm opacity-70'>
+          <p className='mt-2 text-sm'>
             Versiune: <strong>03.03.2026</strong>
           </p>
 

@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
       >
         <div>
           <h1>Zasady ochrany osobnich udaju</h1>
-          <p className='mt-2 text-sm opacity-70'>
+          <p className='mt-2 text-sm'>
             Verze: <strong>03.03.2026</strong>
           </p>
           <Divider size='xs' />

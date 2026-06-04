@@ -15,15 +15,15 @@ import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import WorkSteps from '@/components/organisms/WorkSteps';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import { siteUrl } from '@/utils/absoluteUrl';
 

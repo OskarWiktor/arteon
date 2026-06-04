@@ -30,7 +30,7 @@ export default function ContactForm({
   const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);

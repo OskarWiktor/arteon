@@ -116,14 +116,14 @@ const InfoBannerSchema = z.object({
   linkText: z.string(),
 });
 
-const ErrorPagesNotFoundSchema = z.object({
+const ErrorPageComponentsNotFoundSchema = z.object({
   title: z.string(),
   code: z.string(),
   description: z.string(),
   backHome: z.string(),
 });
 
-const ErrorPagesErrorSchema = z.object({
+const ErrorPageComponentsErrorSchema = z.object({
   title: z.string(),
   description: z.string(),
   tryAgain: z.string(),
@@ -133,9 +133,9 @@ const ErrorPagesErrorSchema = z.object({
   errorCode: z.string(),
 });
 
-const ErrorPagesSchema = z.object({
-  notFound: ErrorPagesNotFoundSchema,
-  error: ErrorPagesErrorSchema,
+const ErrorPageComponentsSchema = z.object({
+  notFound: ErrorPageComponentsNotFoundSchema,
+  error: ErrorPageComponentsErrorSchema,
 });
 
 const RelatedConvertersSchema = z.object({
@@ -157,7 +157,7 @@ const DictionarySchema = z.object({
   languageSwitcher: LanguageSwitcherSchema,
   mobileNav: MobileNavSchema,
   infoBanner: InfoBannerSchema,
-  errorPages: ErrorPagesSchema,
+  errorPages: ErrorPageComponentsSchema,
   relatedConverters: RelatedConvertersSchema,
 });
 
@@ -173,7 +173,7 @@ export type ToolsCarouselDictionary = z.infer<typeof ToolsCarouselSchema>;
 export type LanguageSwitcherDictionary = z.infer<typeof LanguageSwitcherSchema>;
 export type MobileNavDictionary = z.infer<typeof MobileNavSchema>;
 export type InfoBannerDictionary = z.infer<typeof InfoBannerSchema>;
-export type ErrorPagesDictionary = z.infer<typeof ErrorPagesSchema>;
+export type ErrorPageComponentsDictionary = z.infer<typeof ErrorPageComponentsSchema>;
 export type RelatedConvertersDictionary = z.infer<typeof RelatedConvertersSchema>;
 
 const dictionaries: Record<Locale, () => Promise<Dictionary>> = {

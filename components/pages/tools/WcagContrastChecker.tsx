@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, type FormEvent } from 'react';
+import { useEffect, useState } from 'react';
 import { RiContrast2Line } from 'react-icons/ri';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
@@ -11,15 +11,11 @@ import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
-import { ui } from '@/lib/i18n/tools/wcag-contrast';
+import { ui } from '@/lib/i18n/tools/wcagContrast';
 import { useLocale } from '@/lib/LocaleContext';
 import { getContrastRatio, parseColor } from '@/lib/tools/color/contrast';
 import { hslToRgb, rgbToHex, rgbToHsl } from '@/lib/tools/color/convert';
-import {
-  flexCenterBetweenClasses,
-  flexCenterClasses,
-  largeIconSizeClasses,
-} from '@/lib/ui-classes';
+import { flexCenterBetweenClasses, flexCenterClasses, largeIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 const DEFAULT_FOREGROUND = rgbToHex({ r: 0, g: 0, b: 0 });
@@ -222,7 +218,7 @@ export default function WcagContrastChecker() {
     setForeground(matchedForeground);
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
   };
 

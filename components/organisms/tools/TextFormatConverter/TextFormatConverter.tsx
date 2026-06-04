@@ -7,11 +7,11 @@ import Textarea from '@/components/atoms/form/Textarea';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useDictionary } from '@/lib/LocaleContext';
+import type { UniversalFormat } from '@/lib/tools/formats';
 import { convertText } from '@/lib/tools/text/convert';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { TextFormatConverterProps } from '@/types/tools/text-format-converter';
-import type { UniversalFormat } from '@/utils/format-utils';
 import Card from '../../Card';
 
 const LABEL_TO_FORMAT: Record<string, UniversalFormat> = {

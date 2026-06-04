@@ -2,8 +2,8 @@ import SkipToContent from '@/components/atoms/SkipToContent';
 import ConsentListener from '@/components/organisms/ConsentListener';
 import Footer from '@/components/organisms/Footer';
 import NavigationShell from '@/components/organisms/navigation/NavigationShell';
-import { getClientDictionary, getLocaleConfigFor } from '@/lib/i18n/client-dictionary';
-import { getDictionary } from '@/lib/i18n/get-dictionary';
+import { getClientDictionary, getLocaleConfigFor } from '@/lib/i18n/clientDictionary';
+import { getDictionary } from '@/lib/i18n/getDictionary';
 import { LocaleProvider } from '@/lib/LocaleContext';
 import type { Locale } from '@/types/locale';
 

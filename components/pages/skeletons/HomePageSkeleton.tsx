@@ -1,5 +1,5 @@
 import Card from '@/components/organisms/Card';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import Shimmer from '../../atoms/skeletons/Shimmer';
 import BenefitBeltSkeleton from '../../organisms/skeletons/BenefitBeltSkeleton';
 import CarouselSkeleton from '../../organisms/skeletons/CarouselSkeleton';

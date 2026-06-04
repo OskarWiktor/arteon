@@ -9,7 +9,7 @@ import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolStatRow from '@/components/molecules/tools/ToolStatRow';
 import Card from '@/components/organisms/Card';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { ui } from '@/lib/i18n/tools/word-count';
+import { ui } from '@/lib/i18n/tools/wordCount';
 import { useLocale } from '@/lib/LocaleContext';
 import { getReadabilityLabel, getReadabilityColor } from '@/lib/tools/text/readability';
 import {
@@ -26,7 +26,7 @@ import {
   sortLinesAsc,
   sortLinesDesc,
 } from '@/lib/tools/text/wordCount';
-import { smallIconSizeClasses } from '@/lib/ui-classes';
+import { smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 export default function WordCountTool() {
@@ -92,7 +92,7 @@ export default function WordCountTool() {
               }
             />
             {t.readabilityHint && metrics.fleschScore !== null && (
-              <p className='text-xs text-neutral-400'>{t.readabilityHint}</p>
+              <p className='text-xs text-light'>{t.readabilityHint}</p>
             )}
           </div>
 
@@ -134,7 +134,7 @@ export default function WordCountTool() {
             <Textarea
               value={text}
               onChange={e => setText(e.target.value)}
-              className='min-h-[400px] resize-y'
+              className='min-h-100 resize-y'
               placeholder={t.textPlaceholder}
             />
           </ToolFieldRow>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { RiMailSendLine, RiTimeLine, RiFileList2Line } from 'react-icons/ri';
-import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import ContactForm from '../ContactForm';
 

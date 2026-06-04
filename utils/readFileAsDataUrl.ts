@@ -1,5 +1,4 @@
 import type { ReadFileAsDataUrlOptions } from '@/types/tools/image';
-export type { ReadFileAsDataUrlOptions } from '@/types/tools/image';
 
 export function readFileAsDataUrl(file: File, options?: ReadFileAsDataUrlOptions): Promise<string> {
   return new Promise((resolve, reject) => {

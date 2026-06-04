@@ -1,4 +1,4 @@
-import { focusRingClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { focusRingClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 type InputCheckboxProps = Omit<React.ComponentProps<'input'>, 'type'>;

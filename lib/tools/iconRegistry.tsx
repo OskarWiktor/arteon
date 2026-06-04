@@ -100,7 +100,7 @@ import {
   RiWordpressLine,
   RiZoomInLine,
 } from 'react-icons/ri';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 
 const ICON_MAP: Record<string, ReactNode> = {
   RiAlertLine: <RiAlertLine className={normalIconSizeClasses} />,

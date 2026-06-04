@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import ToolPage, { generateToolMetadata } from '@/components/pages/ToolPage';
-import { getAllToolSlugs, getToolDataBySlug } from '@/lib/tools/data-loader';
+import { getAllToolSlugs, getToolDataBySlug } from '@/lib/tools/dataLoader';
 
 const LOCALE = 'pt';
 

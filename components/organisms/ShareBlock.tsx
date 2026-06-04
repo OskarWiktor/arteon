@@ -1,7 +1,7 @@
 'use client';
 
 import { RiFacebookFill, RiLinkedinBoxFill, RiMailLine, RiTwitterXFill } from 'react-icons/ri';
-import { focusRingClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { focusRingClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Card from './Card';
 import ButtonCopy from '../atoms/buttons/ButtonCopy';

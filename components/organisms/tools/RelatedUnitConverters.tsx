@@ -1,11 +1,11 @@
 import Divider from '@/components/atoms/Divider';
-import { getToolHref, getToolByKey } from '@/lib/i18n/tool-registry';
+import { getToolHref, getToolByKey } from '@/lib/i18n/toolRegistry';
+import { getUnitLabel } from '@/lib/tools/unitLabels';
 import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { Locale } from '@/types/locale';
 import type { ToolItemKey } from '@/types/tools/common';
-import { getUnitLabel } from '@/utils/locale-utils';
 
 const TITLE_CONVERT_TO: Record<string, (unit: string) => string> = {
   pl: u => `Konwertuj inne jednostki do ${u}`,

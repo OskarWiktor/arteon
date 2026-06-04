@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Card from './Card';
 

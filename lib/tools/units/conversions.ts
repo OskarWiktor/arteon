@@ -5,7 +5,7 @@ import {
   POPULAR_CSS_VALUES,
   RANGE_CONSTRAINTS,
   CONVERSION_FORMULAS,
-} from '@/utils/conversion-constants';
+} from '@/utils/conversionConstants';
 
 type UnitCategory =
   | 'length'

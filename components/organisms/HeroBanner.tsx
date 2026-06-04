@@ -118,7 +118,7 @@ export default function HeroBanner({
                 'text-pretty',
                 isCompact ? 'mt-2 text-center md:mt-3' : 'mt-3 md:mt-5',
                 'text-base leading-relaxed',
-                isLightText ? 'text-white' : 'text-mid',
+                isLightText ? 'text-white!' : 'text-mid!',
               )}
             >
               {description}

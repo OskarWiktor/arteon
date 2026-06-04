@@ -1,6 +1,6 @@
 ﻿'use client';
 
-import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import {
   RiZoomInLine,
@@ -20,9 +20,14 @@ import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWit
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
+import Card from '@/components/organisms/Card';
+import CropPreview from '@/components/organisms/tools/ImageResizeTool/CropPreview';
+import { useCropDrag } from '@/hooks/useCropDrag';
+import { ui, type UiLocale } from '@/lib/i18n/tools/imageResize';
+import { useLocale } from '@/lib/LocaleContext';
 import { getCropRect, getGridStroke } from '@/lib/tools/image/cropMath';
 import { exportCroppedImage } from '@/lib/tools/image/exportCroppedImage';
-import { useCropDrag } from '@/hooks/useCropDrag';
+import { flexCenterBetweenClasses, flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type {
   ActiveTool,
@@ -32,18 +37,9 @@ import type {
   ShapeAspect,
   ShapeType,
 } from '@/types/tools/image';
-import { formatBytes } from '@/utils/formatBytes';
 import { getFileFormatLabel } from '@/utils/fileFormat';
+import { formatBytes } from '@/utils/formatBytes';
 import { revokeObjectUrl } from '@/utils/objectUrl';
-import { useLocale } from '@/lib/LocaleContext';
-import { ui, type UiLocale } from '@/lib/i18n/tools/image-resize';
-import CropPreview from '@/components/organisms/tools/ImageResizeTool/CropPreview';
-import Card from '@/components/organisms/Card';
-import {
-  flexCenterBetweenClasses,
-  flexCenterClasses,
-  smallIconSizeClasses,
-} from '@/lib/ui-classes';
 
 function getImagePresets(t: UiLocale) {
   return {
@@ -414,7 +410,7 @@ export default function ImageResizeTool() {
     })();
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     handleDownload();
   };
@@ -599,7 +595,7 @@ export default function ImageResizeTool() {
 
             <div
               className={cn(
-                'relative mt-4 aspect-[4/5] max-h-[340px] overflow-hidden rounded-lg border border-neutral-300 bg-neutral-100',
+                'relative mt-4 aspect-4/5 max-h-85 overflow-hidden rounded-lg border border-neutral-300 bg-neutral-100',
                 flexCenterClasses,
               )}
             >

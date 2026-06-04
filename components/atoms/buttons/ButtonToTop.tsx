@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { RiArrowUpLine } from 'react-icons/ri';
 import { useEventListener } from '@/hooks/useEventListener';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import ButtonCircle from './ButtonCircle';
 
 interface ButtonToTop {

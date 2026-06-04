@@ -26,7 +26,7 @@ import SectionHeader from '@/components/molecules/SectionHeader';
 import { useEventListener } from '@/hooks/useEventListener';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { useTimeout } from '@/hooks/useTimeout';
-import { flexCenterClasses, focusRingClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 interface LogoCarouselDefaultItem {

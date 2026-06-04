@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 const AD_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? '';

@@ -14,14 +14,14 @@ import { useIsMounted } from '@/hooks/useIsMounted';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useScrollLock } from '@/hooks/useScrollLock';
 import { useTimeout } from '@/hooks/useTimeout';
-import { getMobileToolsSections } from '@/lib/i18n/tool-registry';
+import { getMobileToolsSections } from '@/lib/i18n/toolRegistry';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
   modalBackdropClasses,
   normalIconSizeClasses,
-} from '@/lib/ui-classes';
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import IconText from '../../atoms/IconText';
 import Subtitle from '../../atoms/typography/Subtitle';

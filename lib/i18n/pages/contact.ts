@@ -35,10 +35,8 @@ export type ContactPageData = {
 };
 
 import cs from '@/data/cs/pages/contact.json';
-import sv from '@/data/sv/pages/contact.json';
 import da from '@/data/da/pages/contact.json';
 import de from '@/data/de/pages/contact.json';
-import no from '@/data/no/pages/contact.json';
 import el from '@/data/el/pages/contact.json';
 import en from '@/data/en/pages/contact.json';
 import es from '@/data/es/pages/contact.json';
@@ -47,8 +45,10 @@ import fr from '@/data/fr/pages/contact.json';
 import hu from '@/data/hu/pages/contact.json';
 import it from '@/data/it/pages/contact.json';
 import nl from '@/data/nl/pages/contact.json';
+import no from '@/data/no/pages/contact.json';
 import pt from '@/data/pt/pages/contact.json';
 import ro from '@/data/ro/pages/contact.json';
+import sv from '@/data/sv/pages/contact.json';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {

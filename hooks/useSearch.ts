@@ -5,7 +5,7 @@ import {
   groupSearchResults,
   type SearchItem,
   type SearchCategory,
-} from '@/lib/search/searchIndex';
+} from '@/lib/searchIndex';
 import type { Locale } from '@/types/locale';
 
 type UseSearchOptions = {

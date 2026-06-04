@@ -8,7 +8,7 @@ import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import Card from '@/components/organisms/Card';
-import { ui } from '@/lib/i18n/tools/palette-extractor';
+import { ui } from '@/lib/i18n/tools/paletteExtractor';
 import { useLocale } from '@/lib/LocaleContext';
 import { extractPalette, type ExtractedColor } from '@/lib/tools/color/extractPalette';
 import { getDownscaledImageDataFromUrl } from '@/lib/tools/image/canvas';
@@ -16,7 +16,7 @@ import {
   isSupportedImageUploadType,
   SUPPORTED_IMAGE_UPLOAD_TYPES,
 } from '@/lib/tools/image/uploadTypes';
-import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { ToolStatus } from '@/types/tools/common';
 import { getFileFormatLabel } from '@/utils/fileFormat';

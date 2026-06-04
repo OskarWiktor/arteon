@@ -2,7 +2,7 @@ import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import InputColor from '@/components/atoms/form/InputColor';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import { FONT_OPTIONS } from '@/lib/tools/email/signatureDefaults';
-import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { StyleConfig, FontSizeOption, BorderSides } from '@/types/tools/email';
 

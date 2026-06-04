@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { RiCloseLine, RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeader from '@/components/molecules/SectionHeader';
-import { flexCenterClasses, focusRingClasses, largeIconSizeClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, focusRingClasses, largeIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Wrapper from '../../atoms/Wrapper';
 
@@ -72,7 +72,7 @@ export default function SectionImageGallery({
               sizes='(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw'
             />
             {image.title && (
-              <div className='absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 transition group-hover:opacity-100'>
+              <div className='absolute inset-0 flex items-end bg-linear-to-t from-black/60 to-transparent p-3 opacity-0 transition group-hover:opacity-100'>
                 <span className='text-sm font-medium text-white'>{image.title}</span>
               </div>
             )}

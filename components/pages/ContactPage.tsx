@@ -8,7 +8,7 @@ import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { getContactPageData } from '@/lib/i18n/pages/contact';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import type { Locale } from '@/types/locale';
 
 export default function ContactPage({ locale }: { locale: Locale }) {

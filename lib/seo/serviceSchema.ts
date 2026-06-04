@@ -1,4 +1,4 @@
-import { ORG_NAME } from '@/lib/seo/schema';
+const ORG_NAME = 'Arteon';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 interface ServiceSchema {

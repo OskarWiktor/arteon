@@ -11,7 +11,7 @@ import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolSelect from '@/components/molecules/tools/ToolSelect';
 import Card from '@/components/organisms/Card';
 import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
-import { ui } from '@/lib/i18n/tools/qr-code';
+import { ui } from '@/lib/i18n/tools/qrCode';
 import { useLocale } from '@/lib/LocaleContext';
 import {
   generateQrPng,
@@ -21,8 +21,8 @@ import {
   buildPhoneString,
   isContrastSufficient,
   calculateContrast,
-} from '@/lib/tools/qr/generateQr';
-import { flexCenterClasses } from '@/lib/ui-classes';
+} from '@/lib/tools/generateQr';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { QrDataType, VCardData, EmailData } from '@/types/tools/qr';
 import { downloadFromUrl } from '@/utils/download';

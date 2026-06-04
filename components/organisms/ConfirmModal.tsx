@@ -4,7 +4,7 @@ import { createPortal } from 'react-dom';
 import Button from '@/components/atoms/buttons/Button';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
-import { flexCenterClasses, modalBackdropClasses, modalContentClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, modalBackdropClasses, modalContentClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 type ConfirmModalProps = {
@@ -66,7 +66,7 @@ export default function ConfirmModal({
         <h3 id='confirm-modal-title' className='h3 mb-2'>
           {title}
         </h3>
-        {description && <p className='mb-6 text-sm text-mid'>{description}</p>}
+        {description && <p className='mb-6 text-sm'>{description}</p>}
         <div className='flex gap-3'>
           <Button variant='accent' size='small' onClick={handleConfirm}>
             {confirmLabel}

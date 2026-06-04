@@ -49,7 +49,7 @@ export default function CTABanner({
 
   return (
     <section
-      className={cn('relative flex h-auto min-h-[360px] overflow-hidden md:min-h-[440px]', baseBg)}
+      className={cn('relative flex h-auto min-h-90 overflow-hidden md:min-h-110', baseBg)}
       data-section='final-cta'
     >
       {hasBg && !isGradient && !isSolid && backgroundImage && (
@@ -86,8 +86,8 @@ export default function CTABanner({
             description={description}
             SubtitleVariant='dynamic'
             SubtitleClassName={cn('text-base tracking-wider uppercase', {
-              'text-white': overlay === 'black',
-              'text-dark': overlay !== 'black',
+              'text-white!': overlay === 'black',
+              'text-dark!': overlay !== 'black',
             })}
             descriptionClassName={cn(
               'mx-auto text-base leading-relaxed md:text-lg',

@@ -1,4 +1,4 @@
-import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 const ArrowIcon = () => (

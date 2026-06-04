@@ -34,7 +34,7 @@ export default function SectionTable({
     <section data-section='table' aria-labelledby={title ? headingId : undefined}>
       {title && <SectionHeader title={title} />}
 
-      {description && <p className='mb-4 text-base text-mid md:mb-6'>{description}</p>}
+      {description && <p className='mb-4 text-base md:mb-6'>{description}</p>}
 
       <div className='-mx-4 overflow-x-auto sm:mx-0'>
         <table className='w-full min-w-full border-collapse text-sm tabular-nums'>

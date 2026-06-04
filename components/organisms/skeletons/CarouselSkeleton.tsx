@@ -1,4 +1,4 @@
-import { flexCenterBetweenClasses, noScrollbarClasses } from '@/lib/ui-classes';
+import { flexCenterBetweenClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Shimmer from '../../atoms/skeletons/Shimmer';
 import Card from '../Card';

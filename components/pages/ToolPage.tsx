@@ -1,21 +1,7 @@
 import type { Metadata } from 'next';
 import { Fragment, type ReactNode } from 'react';
-
-import { toAbsoluteUrl } from '@/utils/absoluteUrl';
-import {
-  getToolAlternates,
-  getToolSoftwareSchema,
-  getToolHowToSchema,
-  getToolWebPageSchema,
-} from '@/lib/i18n/pages/tool-meta';
-import { getToolHref } from '@/lib/i18n/tool-registry';
-import { getToolIcon } from '@/lib/tools/icon-registry';
-import { DESKTOP_ONLY_UI } from '@/lib/i18n/locales';
-import RelatedConverters from '../organisms/tools/RelatedConverters';
-import RelatedUnitConverters from '../organisms/tools/RelatedUnitConverters';
-import { JsonLd } from '@/components/atoms/JsonLd';
-import SectionContactForm from '../organisms/sections/SectionContactForm';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import AdSense from '@/components/molecules/AdSense';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import ToolsCarousel from '@/components/organisms/carousels/ToolsCarousel';
@@ -23,16 +9,29 @@ import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import DynamicToolRenderer from '@/components/pages/tools/DynamicToolRenderer';
 import ToolEditorLayout from '@/components/templates/ToolEditorLayout';
+import { DESKTOP_ONLY_UI } from '@/lib/i18n/locales';
+import {
+  getToolAlternates,
+  getToolSoftwareSchema,
+  getToolHowToSchema,
+  getToolWebPageSchema,
+} from '@/lib/i18n/pages/toolMeta';
+import { getToolHref } from '@/lib/i18n/toolRegistry';
+import { getToolIcon } from '@/lib/tools/iconRegistry';
 import type { Locale, DesktopOnlyUi } from '@/types/locale';
 import type { ToolPageData, ToolContentBlock } from '@/types/tool-page';
 import type { ToolItemKey } from '@/types/tools/common';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 import SectionBasic from '../organisms/sections/SectionBasic';
+import SectionContactForm from '../organisms/sections/SectionContactForm';
 import SectionDemo from '../organisms/sections/SectionDemo';
 import SectionInfo from '../organisms/sections/SectionInfo';
 import SectionSteps from '../organisms/sections/SectionSteps';
 import SectionTable from '../organisms/sections/SectionTable';
 import SectionTabs from '../organisms/sections/SectionTabs';
 import SectionTimeline from '../organisms/sections/SectionTimeline';
+import RelatedConverters from '../organisms/tools/RelatedConverters';
+import RelatedUnitConverters from '../organisms/tools/RelatedUnitConverters';
 
 const AD_SECTION_INTERVAL = 3;
 const AD_SKIP_AFTER = new Set(['faq', 'toolsCarousel']);
@@ -50,7 +49,7 @@ function DesktopOnlyNotice({ t }: { t: DesktopOnlyUi }) {
   return (
     <section className='mx-auto my-6 max-w-xl rounded-lg border border-neutral-200 bg-white/90 p-6 text-sm shadow-sm'>
       <h2 className='mb-3 text-lg font-semibold'>{t.title}</h2>
-      <p className='mb-3 text-mid'>{t.description}</p>
+      <p className='mb-3'>{t.description}</p>
       <div className='rounded-lg bg-neutral-50 px-4 py-3 text-xs text-light'>
         <p className='mb-1 font-medium'>{t.tipTitle}</p>
         <p>{t.tipText}</p>
@@ -291,7 +290,7 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
         <div className='mt-24 block lg:hidden'>
           <AdSense variant='responsive' locale={data.locale} />
         </div> */}
-        <div className='mx-auto w-full max-w-[1420px] px-[3%]'>
+        <div className='mx-auto w-full max-w-355 px-[3%]'>
           {(() => {
             const adPositions = new Set<number>();
             let contentCount = 0;
@@ -311,9 +310,9 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
 
               const node = renderBlock(block, idx, pageUrl);
               const adNode = adPositions.has(idx) ? (
-                <div key={`ad-after-${idx}`} className='ad-slot-wrapper min-h-[280px]'>
+                <div key={`ad-after-${idx}`} className='ad-slot-wrapper min-h-70'>
                   <Divider line />
-                  <div className='not-prose -mx-[3%] flex justify-center py-4'>
+                  <div className='not-prose mx-[-3%] flex justify-center py-4'>
                     <AdSense variant='responsive' locale={data.locale} />
                   </div>
                 </div>

@@ -1,9 +1,5 @@
 import Card from '@/components/organisms/Card';
-import {
-  flexCenterBetweenClasses,
-  flexCenterClasses,
-  largeIconSizeClasses,
-} from '@/lib/ui-classes';
+import { flexCenterBetweenClasses, flexCenterClasses, largeIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Shimmer from '../../atoms/skeletons/Shimmer';
 

@@ -17,14 +17,14 @@ import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
-import { getDesktopToolsSections, type ToolsSectionKey } from '@/lib/i18n/tool-registry';
+import { getDesktopToolsSections, type ToolsSectionKey } from '@/lib/i18n/toolRegistry';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import {
   flexCenterClasses,
   focusRingClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
-} from '@/lib/ui-classes';
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import InlineLink from '../../atoms/InlineLink';
 const plUi = {

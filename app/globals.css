@@ -204,7 +204,7 @@ p,
 li,
 .p,
 label {
-  @apply leading-relaxed font-normal;
+  @apply leading-relaxed font-normal text-pretty text-mid;
   font-size: clamp(14px, calc(14px + 2 * ((100vw - 360px) / 1080)), 16px);
 }
 

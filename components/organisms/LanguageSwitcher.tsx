@@ -14,7 +14,7 @@ import { useIsMounted } from '@/hooks/useIsMounted';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useScrollLock } from '@/hooks/useScrollLock';
 import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locales';
-import { getAlternateToolHref } from '@/lib/i18n/tool-registry';
+import { getAlternateToolHref } from '@/lib/i18n/toolRegistry';
 import { useLocale, useDictionary, useLocaleConfig, type Locale } from '@/lib/LocaleContext';
 import {
   flexCenterBetweenClasses,
@@ -24,7 +24,7 @@ import {
   modalBackdropClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
-} from '@/lib/ui-classes';
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import InlineLink from '../atoms/InlineLink';
 type AlternateLink = {

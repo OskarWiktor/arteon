@@ -38,7 +38,7 @@ export default function AdatvedelmiIranyelvekPage() {
       >
         <div>
           <h1>Adatvédelmi irányelvek</h1>
-          <p className='mt-2 text-sm opacity-70'>
+          <p className='mt-2 text-sm'>
             Verzió: <strong>2026.02.13</strong>
           </p>
 

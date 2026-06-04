@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Card from './Card';
 
@@ -140,7 +140,7 @@ export default function TableOfContents({
               {!expanded && (
                 <div
                   aria-hidden='true'
-                  className='pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-white/95 to-transparent'
+                  className='pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-linear-to-t from-white/95 to-transparent'
                 />
               )}
             </div>

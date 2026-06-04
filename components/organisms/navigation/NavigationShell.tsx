@@ -19,7 +19,7 @@ import {
   focusRingClasses,
   largeIconSizeClasses,
   normalIconSizeClasses,
-} from '@/lib/ui-classes';
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import InlineLink from '../../atoms/InlineLink';
 

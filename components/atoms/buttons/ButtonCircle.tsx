@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { disabledInteractiveClasses, focusRingClasses } from '@/lib/ui-classes';
+import { disabledInteractiveClasses, focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 interface ButtonCircleProps {

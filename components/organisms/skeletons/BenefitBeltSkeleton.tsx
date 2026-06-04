@@ -1,4 +1,4 @@
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Shimmer from '../../atoms/skeletons/Shimmer';
 

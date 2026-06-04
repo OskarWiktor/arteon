@@ -17,7 +17,7 @@ import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { getAboutPageData } from '@/lib/i18n/pages/about';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { Locale } from '@/types/locale';
 

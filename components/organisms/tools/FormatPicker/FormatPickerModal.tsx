@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useRef, useState, cache } from 'react';
 import { RiArrowDownSLine, RiCloseLine } from 'react-icons/ri';
-import { getToolHref } from '@/lib/i18n/tool-registry';
+import { getToolHref } from '@/lib/i18n/toolRegistry';
 import { useLocale } from '@/lib/LocaleContext';
 import {
   FORMAT_CATEGORIES,
@@ -13,6 +13,7 @@ import {
   type FormatCategory,
   type UniversalFormat,
 } from '@/lib/tools/conversionRoutes';
+import { getUnitLabel, getCategoryLabel } from '@/lib/tools/unitLabels';
 import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
 import {
   flexCenterBetweenClasses,
@@ -20,10 +21,9 @@ import {
   focusRingClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
-} from '@/lib/ui-classes';
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { Locale } from '@/types/locale';
-import { getUnitLabel, getCategoryLabel } from '@/utils/locale-utils';
 
 type PickerSide = 'source' | 'target';
 

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeader from '@/components/molecules/SectionHeader';
-import { flexCenterClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Wrapper from '../../atoms/Wrapper';
 
@@ -85,7 +85,7 @@ export default function SectionImageCarousel({
                 />
 
                 {overlay && (slide.title || slide.description) && (
-                  <div className='absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 to-transparent p-6'>
+                  <div className='absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/70 to-transparent p-6'>
                     {slide.title && (
                       <h3 className='text-lg font-semibold text-white'>{slide.title}</h3>
                     )}

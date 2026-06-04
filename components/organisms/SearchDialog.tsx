@@ -8,8 +8,13 @@ import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import { useSearch } from '@/hooks/useSearch';
 import { useDictionary, useLocale, useLocaleConfig } from '@/lib/LocaleContext';
-import type { SearchCategory, SearchItem } from '@/lib/search/searchIndex';
-import { modalBackdropClasses, modalContentClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import type { SearchCategory, SearchItem } from '@/lib/searchIndex';
+import {
+  largeIconSizeClasses,
+  modalBackdropClasses,
+  modalContentClasses,
+  smallIconSizeClasses,
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Input from '../atoms/form/Input';
 import InlineLink from '../atoms/InlineLink';
@@ -130,7 +135,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
 
           return (
             <div key={category} className='mb-2'>
-              <div className='px-4 py-1.5 text-xs font-semibold tracking-wide text-light uppercase'>
+              <div className='px-4 py-3 text-xs font-semibold tracking-wide text-light uppercase'>
                 {categoryLabels[category]}
               </div>
               {items.slice(0, 5).map(item => {
@@ -173,9 +178,9 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
           modalContentClasses,
         )}
       >
-        <div className='flex items-center gap-2 border-b border-neutral-200 px-4 py-1'>
+        <div className='relative flex items-center gap-2 border-b border-neutral-200 px-4 py-1'>
           <RiSearchLine
-            className={cn('shrink-0 text-primary', smallIconSizeClasses)}
+            className={cn('absolute left-8 shrink-0 text-primary', smallIconSizeClasses)}
             aria-hidden='true'
           />
           <Input
@@ -186,6 +191,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
             onKeyDown={handleKeyDown}
             placeholder={t.placeholder}
             aria-label={t.ariaSearch}
+            className={cn('py-2 pr-4 pl-10')}
           />
           <button
             type='button'
@@ -193,7 +199,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
             className='rounded p-0.5 text-primary hover:bg-primary-light'
             aria-label={t.ariaClose}
           >
-            <RiCloseLine className={smallIconSizeClasses} />
+            <RiCloseLine className={largeIconSizeClasses} />
           </button>
         </div>
 

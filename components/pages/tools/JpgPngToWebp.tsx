@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, type FormEvent } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
@@ -17,9 +17,9 @@ import { useWebpConversion } from '@/hooks/useWebpConversion';
 import { useWebpDownloads } from '@/hooks/useWebpDownloads';
 import { useWebpQueue } from '@/hooks/useWebpQueue';
 import { useWebpReportCopy } from '@/hooks/useWebpReportCopy';
-import { ui } from '@/lib/i18n/tools/jpg-png-webp';
+import { ui } from '@/lib/i18n/tools/jpgPngWebp';
 import { useLocale } from '@/lib/LocaleContext';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import { downloadFromUrl } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
@@ -108,7 +108,7 @@ export default function JpgPngToWebp() {
     setZipError(null);
   }
 
-  function handleSubmitWithAutoZip(e: FormEvent) {
+  function handleSubmitWithAutoZip(e: React.SubmitEvent<HTMLFormElement>) {
     const toProcess = files.filter(f => f.status === 'pending' || f.status === 'error');
     if (autoDownload && autoDownloadMode === 'zip' && toProcess.length) {
       setAutoZipRequestId(prev => prev + 1);

@@ -6,7 +6,7 @@ import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNav
 import SectionHeader from '@/components/molecules/SectionHeader';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
+import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
 

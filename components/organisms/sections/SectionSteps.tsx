@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useId, type ReactNode } from 'react';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import SectionHeader from '../../molecules/SectionHeader';
 import Card from '../Card';
@@ -163,7 +163,11 @@ export default function SectionSteps({
           })}
         </ol>
 
-        {buttonText && buttonHref && <ButtonLink href={buttonHref}>{buttonText}</ButtonLink>}
+        {buttonText && buttonHref && (
+          <ButtonLink className='mt-4' href={buttonHref}>
+            {buttonText}
+          </ButtonLink>
+        )}
       </div>
     </section>
   );

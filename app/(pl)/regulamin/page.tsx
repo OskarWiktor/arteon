@@ -41,7 +41,7 @@ export default function TermsPage() {
         <div>
           <h1>Regulamin świadczenia usług</h1>
 
-          <p className='mt-2 text-sm opacity-70'>
+          <p className='mt-2 text-sm'>
             Wersja: <strong>1.10.2025</strong>
           </p>
 

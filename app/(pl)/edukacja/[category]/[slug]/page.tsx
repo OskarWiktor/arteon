@@ -10,9 +10,12 @@ import TableBlock from '@/components/atoms/TableBlock';
 import Wrapper from '@/components/atoms/Wrapper';
 import AdSense from '@/components/molecules/AdSense';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import CodeBlock from '@/components/organisms/CodeBlock';
 import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import ShareBlock from '@/components/organisms/ShareBlock';
 import TableOfContents from '@/components/organisms/TableOfContent';
 import {
   getAllArticlePreviews,
@@ -22,9 +25,6 @@ import {
 import { cn } from '@/lib/utils';
 import type { Article } from '@/types/article';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
-import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
-import ShareBlock from '@/components/organisms/ShareBlock';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 
 const defaultCTA = {
   title: 'Rozwiń z nami swoją firmę',

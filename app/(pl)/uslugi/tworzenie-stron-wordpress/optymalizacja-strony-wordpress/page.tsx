@@ -23,8 +23,8 @@ import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import { buildServiceSchema } from '@/lib/serviceSchema';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { buildServiceSchema } from '@/lib/seo/serviceSchema';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import { siteUrl } from '@/utils/absoluteUrl';
 

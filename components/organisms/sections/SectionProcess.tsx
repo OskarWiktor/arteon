@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeader from '@/components/molecules/SectionHeader';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Wrapper from '../../atoms/Wrapper';
 import Card from '../Card';

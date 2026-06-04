@@ -13,7 +13,7 @@ import {
   modalContentClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
-} from '@/lib/ui-classes';
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import ButtonLink from '../atoms/buttons/ButtonLink';
 

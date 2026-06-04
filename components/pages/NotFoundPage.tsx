@@ -1,7 +1,7 @@
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
-import { getDictionary } from '@/lib/i18n/get-dictionary';
+import { getDictionary } from '@/lib/i18n/getDictionary';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { Locale } from '@/types/locale';
 
@@ -14,7 +14,7 @@ export default async function NotFoundPage({ locale }: { locale: Locale }) {
     <div className={cn('min-h-screen flex-col px-6 text-center', flexCenterClasses)}>
       <h1 className='mb-4'>{t.title}</h1>
       <p className='mb-2 text-6xl font-bold text-light'>{t.code}</p>
-      <p className='mb-8 max-w-md text-lg leading-relaxed'>{t.description}</p>
+      <p className='mb-8 max-w-md text-lg'>{t.description}</p>
       <ButtonLink href={href} variant='accent'>
         {t.backHome}
       </ButtonLink>

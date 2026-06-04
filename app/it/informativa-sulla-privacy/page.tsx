@@ -38,7 +38,7 @@ export default function InformativaSullaPrivacyPage() {
       >
         <div>
           <h1>Informativa sulla privacy</h1>
-          <p className='mt-2 text-sm opacity-70'>
+          <p className='mt-2 text-sm'>
             Versione:&nbsp;<strong>03.03.2026</strong>
           </p>
 

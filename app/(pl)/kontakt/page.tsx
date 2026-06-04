@@ -7,7 +7,7 @@ import ContactForm from '@/components/organisms/ContactForm';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { getContactAlternates } from '@/lib/i18n/pages/contact';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {

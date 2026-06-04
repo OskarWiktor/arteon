@@ -1,7 +1,7 @@
 'use client';
 
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
-import { largeIconSizeClasses } from '@/lib/ui-classes';
+import { largeIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import ButtonCircle from '../../atoms/buttons/ButtonCircle';
 

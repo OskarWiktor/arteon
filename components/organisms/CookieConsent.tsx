@@ -9,7 +9,7 @@ import { loadAhrefs } from '@/lib/consent/ahrefs';
 import { readConsent, writeConsent } from '@/lib/consent/consentCookie';
 import { loadGA, sendGAPageView } from '@/lib/consent/ga';
 import { updateGtagConsent } from '@/lib/consent/gtag';
-import { flexCenterClasses, focusRingClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Button from '../atoms/buttons/Button';
 import InputCheckboxWithLabel from '../molecules/form/InputCheckboxWithLabel';

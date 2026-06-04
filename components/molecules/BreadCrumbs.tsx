@@ -1,7 +1,7 @@
 import { RiHomeLine } from 'react-icons/ri';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import { BREADCRUMBS_UI } from '@/lib/i18n/locales';
-import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { Locale } from '@/types/locale';
 import InlineLink from '../atoms/InlineLink';

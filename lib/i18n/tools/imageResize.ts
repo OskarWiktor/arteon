@@ -6,14 +6,14 @@ import en from '@/data/en/tools-ui/image-resize.json';
 import es from '@/data/es/tools-ui/image-resize.json';
 import fi from '@/data/fi/tools-ui/image-resize.json';
 import fr from '@/data/fr/tools-ui/image-resize.json';
+import hu from '@/data/hu/tools-ui/image-resize.json';
 import it from '@/data/it/tools-ui/image-resize.json';
+import nl from '@/data/nl/tools-ui/image-resize.json';
+import no from '@/data/no/tools-ui/image-resize.json';
 import pl from '@/data/pl/tools-ui/image-resize.json';
 import pt from '@/data/pt/tools-ui/image-resize.json';
 import ro from '@/data/ro/tools-ui/image-resize.json';
-import nl from '@/data/nl/tools-ui/image-resize.json';
-import hu from '@/data/hu/tools-ui/image-resize.json';
 import sv from '@/data/sv/tools-ui/image-resize.json';
-import no from '@/data/no/tools-ui/image-resize.json';
 import type { Locale } from '@/lib/LocaleContext';
 
 export const ui = {

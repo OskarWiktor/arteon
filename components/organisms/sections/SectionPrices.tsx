@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { RiCheckFill } from 'react-icons/ri';
-import { normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { normalIconSizeClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Badge from '../../atoms/Badge';
 import ButtonLink from '../../atoms/buttons/ButtonLink';
@@ -161,7 +161,7 @@ export default function SectionPrices({
 
       {note && (
         <div
-          className='mt-8 rounded-lg bg-gradient-to-br from-white to-neutral-50 p-6 shadow-sm ring-1 ring-neutral-200'
+          className='mt-8 rounded-lg bg-linear-to-br from-white to-neutral-50 p-6 shadow-sm ring-1 ring-neutral-200'
           role='note'
           aria-label='Informacja'
         >
@@ -176,7 +176,7 @@ export default function SectionPrices({
         </div>
       )}
 
-      {legalNote && <p className='pt-4 text-sm leading-relaxed text-light'>{legalNote}</p>}
+      {legalNote && <p className='pt-4 text-sm text-light'>{legalNote}</p>}
     </section>
   );
 }

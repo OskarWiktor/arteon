@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { ComponentProps } from 'react';
-import { focusRingClasses } from '@/lib/ui-classes';
+import { focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 type InlineLinkProps = ComponentProps<typeof Link> & {

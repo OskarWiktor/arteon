@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import type { ReactNode } from 'react';
 import SectionHeader from '@/components/molecules/SectionHeader';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import ButtonLink from '../../atoms/buttons/ButtonLink';
 
@@ -51,7 +51,7 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
                 aria-hidden='true'
               />
               <div
-                className='absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/10'
+                className='absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-black/10'
                 aria-hidden='true'
               />
 

@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { focusRingClasses } from '@/lib/ui-classes';
+import { focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 interface FaqPanelProps {
@@ -17,7 +17,7 @@ const summaryClasses =
   'flex w-full cursor-pointer list-none items-center justify-between p-3 text-left transition-colors md:p-4 [&::-webkit-details-marker]:hidden';
 
 const iconClasses =
-  'bg-primary-light flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg text-neutral-900 transition group-open:bg-neutral-900 group-open:text-white';
+  'bg-primary-light flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-neutral-900 transition group-open:bg-neutral-900 group-open:text-white';
 
 export default function FaqPanel({ question, answer, icon, name }: FaqPanelProps) {
   return (

@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, type FormEvent } from 'react';
+import { useRef, useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
@@ -17,7 +17,7 @@ import {
   FORMAT_LABELS,
   hasQualitySlider,
 } from '@/lib/tools/image/imageFormatConverter';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { ImageFormatConverterProps } from '@/types/tools/image-format-converter';
 import { downloadBlob } from '@/utils/download';
@@ -122,7 +122,7 @@ export default function ImageFormatConverter({
     if (valid.length > 0) addFiles(valid);
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!files.length) {
       setGlobalError(tpl(t.errorNoFiles, { format: sourceLabel }));

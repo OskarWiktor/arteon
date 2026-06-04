@@ -23,10 +23,39 @@ import {
 } from 'react-icons/ri';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import SocialPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/SocialPanel';
+import ButtonTool from '@/components/atoms/buttons/ButtonTool';
+import InputColor from '@/components/atoms/form/InputColor';
+import Card from '@/components/organisms/Card';
+import ConfirmModal from '@/components/organisms/ConfirmModal';
 import AppearancePanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/AppearancePanel';
-import SpacingPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/SpacingPanel';
+import ButtonsPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/ButtonsPanel';
+import IdentityPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/IdentityPanel';
 import LegalPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/LegalPanel';
+import SocialPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/SocialPanel';
+import SpacingPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/SpacingPanel';
+import TextStyleRow from '@/components/organisms/tools/EmailSignatureGenerator/TextStyleRow';
+import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { ui } from '@/lib/i18n/tools/emailSignature';
+import { useLocale } from '@/lib/LocaleContext';
+import { buildSignatureHtml } from '@/lib/tools/email/buildSignatureHtml';
+import { exportSignatureAsHtml } from '@/lib/tools/email/exportSignature';
+import {
+  STORAGE_KEY_BASE,
+  DEFAULT_STYLE,
+  DEFAULT_SPACING,
+  DEFAULT_TEXT_STYLE,
+  getSignatureLabels,
+  getDefaultSignature,
+  getThemePresets,
+} from '@/lib/tools/email/signatureDefaults';
+import {
+  flexCenterBetweenClasses,
+  flexCenterClasses,
+  largeIconSizeClasses,
+  normalIconSizeClasses,
+  smallIconSizeClasses,
+} from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
 import type {
   ActivePanel,
   LayoutType,
@@ -38,35 +67,6 @@ import type {
   TextElementKey,
   TextStyleConfig,
 } from '@/types/tools/email';
-import { ui } from '@/lib/i18n/tools/email-signature';
-import {
-  STORAGE_KEY_BASE,
-  DEFAULT_STYLE,
-  DEFAULT_SPACING,
-  DEFAULT_TEXT_STYLE,
-  getSignatureLabels,
-  getDefaultSignature,
-  getThemePresets,
-} from '@/lib/tools/email/signatureDefaults';
-import ButtonTool from '@/components/atoms/buttons/ButtonTool';
-import InputColor from '@/components/atoms/form/InputColor';
-import ConfirmModal from '@/components/organisms/ConfirmModal';
-import Card from '@/components/organisms/Card';
-import ButtonsPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/ButtonsPanel';
-import IdentityPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/IdentityPanel';
-import TextStyleRow from '@/components/organisms/tools/EmailSignatureGenerator/TextStyleRow';
-import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { useLocale } from '@/lib/LocaleContext';
-import { buildSignatureHtml } from '@/lib/tools/email/buildSignatureHtml';
-import { exportSignatureAsHtml } from '@/lib/tools/email/exportSignature';
-import {
-  flexCenterBetweenClasses,
-  flexCenterClasses,
-  largeIconSizeClasses,
-  normalIconSizeClasses,
-  smallIconSizeClasses,
-} from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import { downloadBlob } from '@/utils/download';
 
 export default function EmailSignatureGenerator() {
@@ -387,7 +387,7 @@ export default function EmailSignatureGenerator() {
       </Card>
 
       <div className='grid items-stretch gap-4 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]'>
-        <Card interactive={false} padding='lg' className='flex min-h-[620px] flex-col'>
+        <Card interactive={false} padding='lg' className='flex min-h-155 flex-col'>
           <div className='space-y-4 text-sm!'>
             {activePanel === 'identity' && (
               <IdentityPanel
@@ -614,7 +614,7 @@ export default function EmailSignatureGenerator() {
         <Card
           interactive={false}
           padding='lg'
-          className='flex min-h-[620px] flex-col lg:sticky lg:top-24 lg:self-start'
+          className='flex min-h-155 flex-col lg:sticky lg:top-24 lg:self-start'
         >
           <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <div>
@@ -670,7 +670,7 @@ export default function EmailSignatureGenerator() {
               previewBg === 'dark'
                 ? 'bg-neutral-800'
                 : previewBg === 'checker'
-                  ? 'bg-white bg-[image:linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%),linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%)] bg-[length:20px_20px] bg-[position:0_0,10px_10px]'
+                  ? 'bg-white bg-[linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%),linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%)] bg-size-[20px_20px] bg-position-[0_0,10px_10px]'
                   : 'bg-neutral-50',
             )}
           >
@@ -749,7 +749,7 @@ export default function EmailSignatureGenerator() {
 
           {showSourceModal && (
             <div
-              className={cn('fixed inset-0 z-[100] bg-black/40 px-4', flexCenterClasses)}
+              className={cn('fixed inset-0 z-100 bg-black/40 px-4', flexCenterClasses)}
               onClick={e => {
                 if (e.target === e.currentTarget) setShowSourceModal(false);
               }}

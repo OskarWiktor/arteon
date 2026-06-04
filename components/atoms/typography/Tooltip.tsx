@@ -5,7 +5,7 @@ import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useEventListener } from '@/hooks/useEventListener';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useTimeout } from '@/hooks/useTimeout';
-import { focusRingClasses } from '@/lib/ui-classes';
+import { focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 const PASSIVE_SCROLL: AddEventListenerOptions = { passive: true };

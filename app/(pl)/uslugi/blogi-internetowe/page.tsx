@@ -15,22 +15,22 @@ import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
-import WorkSteps from '@/components/organisms/WorkSteps';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import { buildServiceSchema } from '@/lib/serviceSchema';
-import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import WorkSteps from '@/components/organisms/WorkSteps';
+import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { buildServiceSchema } from '@/lib/seo/serviceSchema';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',

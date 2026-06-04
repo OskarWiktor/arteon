@@ -15,11 +15,9 @@ import {
 } from 'react-icons/ri';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
-import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
-import { buildServiceSchema } from '@/lib/serviceSchema';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import CTABanner from '@/components/organisms/CTABanner';
@@ -28,9 +26,11 @@ import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { buildServiceSchema } from '@/lib/seo/serviceSchema';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import { siteUrl } from '@/utils/absoluteUrl';
 

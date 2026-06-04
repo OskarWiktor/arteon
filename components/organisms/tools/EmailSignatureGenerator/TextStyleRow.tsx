@@ -1,6 +1,6 @@
 import { RiRefreshLine, RiAddLine, RiSubtractLine } from 'react-icons/ri';
 import InputColor from '@/components/atoms/form/InputColor';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { TextElementKey } from '@/types/tools/email';
 

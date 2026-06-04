@@ -1,6 +1,6 @@
 'use client';
-
-import { useState, type FormEvent } from 'react';
+import Image from 'next/image';
+import { useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import InputColor from '@/components/atoms/form/InputColor';
@@ -14,11 +14,12 @@ import Card from '@/components/organisms/Card';
 import { ui } from '@/lib/i18n/tools/favicon';
 import { useLocale, type Locale } from '@/lib/LocaleContext';
 import { rgbToHex } from '@/lib/tools/color/convert';
-import { type FaviconOutputFile, generateFaviconOutputs } from '@/lib/tools/favicon/generator';
+import { type FaviconOutputFile, generateFaviconOutputs } from '@/lib/tools/faviconGenerator';
 import {
   isSupportedImageUploadType,
   SUPPORTED_IMAGE_UPLOAD_TYPES,
 } from '@/lib/tools/image/uploadTypes';
+import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { ToolStatus } from '@/types/tools/common';
 import { downloadFromUrl } from '@/utils/download';
@@ -26,7 +27,6 @@ import { formatBytes } from '@/utils/formatBytes';
 import { loadImage } from '@/utils/loadImage';
 import { revokeObjectUrl } from '@/utils/objectUrl';
 import { createZipBlob, type ZipFileInput } from '@/utils/zip';
-import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/ui-classes';
 
 function createWebmanifest(
   outputs: FaviconOutputFile[],
@@ -116,7 +116,7 @@ export default function FaviconGenerator() {
     });
   }
 
-  async function handleGenerate(e: FormEvent) {
+  async function handleGenerate(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
     setError(null);
 
@@ -443,7 +443,7 @@ export default function FaviconGenerator() {
                     >
                       {}
                       {sourcePreviewUrl && (
-                        <img
+                        <Image
                           src={sourcePreviewUrl}
                           alt={t.previewFavicon}
                           className='h-full w-full object-cover'
@@ -462,7 +462,7 @@ export default function FaviconGenerator() {
                     >
                       {}
                       {sourcePreviewUrl && (
-                        <img
+                        <Image
                           src={sourcePreviewUrl}
                           alt={t.largeIconPreview}
                           className='h-full w-full object-cover'

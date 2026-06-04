@@ -1,6 +1,6 @@
 import { RiCheckLine } from 'react-icons/ri';
 import SectionHeader from '@/components/molecules/SectionHeader';
-import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Wrapper from '../../atoms/Wrapper';
 
@@ -21,7 +21,7 @@ export default function SectionFeatureList({ title, features }: SectionFeatureLi
               <li key={index} className='flex items-center gap-3'>
                 <div
                   className={cn(
-                    'flex-shrink-0 rounded-lg bg-success-bg',
+                    'shrink-0 rounded-lg bg-success-bg',
                     flexCenterClasses,
                     normalIconSizeClasses,
                   )}

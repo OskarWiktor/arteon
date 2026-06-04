@@ -1,9 +1,9 @@
 'use client';
 
-import ErrorPage from '@/components/pages/ErrorPage';
+import ErrorPageComponent from '@/components/organisms/ErrorPageComponent';
 import dict from '@/data/hu/dictionary.json';
 
-export default function Error({
+export default function ErrorPage({
   error,
   reset,
 }: {
@@ -11,7 +11,7 @@ export default function Error({
   reset: () => void;
 }) {
   return (
-    <ErrorPage
+    <ErrorPageComponent
       error={error}
       reset={reset}
       t={dict.errorPages.error}

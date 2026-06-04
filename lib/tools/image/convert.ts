@@ -27,15 +27,15 @@ function getSvgDimensions(dataUrl: string): { width: number; height: number } | 
     const idx = dataUrl.indexOf(base64Marker);
     if (idx === -1) return null;
     const raw = atob(dataUrl.substring(idx + base64Marker.length));
-    const wMatch = raw.match(/\bwidth\s*=\s*["'](\d+(?:\.\d+)?)/);
-    const hMatch = raw.match(/\bheight\s*=\s*["'](\d+(?:\.\d+)?)/);
+    const wMatch = /(?:width\s*=\s*["'])(\d+(?:\.\d+)?)/.exec(raw);
+    const hMatch = /(?:height\s*=\s*["'])(\d+(?:\.\d+)?)/.exec(raw);
     if (wMatch && hMatch)
       return {
         width: Math.round(parseFloat(wMatch[1])),
         height: Math.round(parseFloat(hMatch[1])),
       };
 
-    const vbMatch = raw.match(/viewBox\s*=\s*["']\s*[\d.]+\s+[\d.]+\s+([\d.]+)\s+([\d.]+)/);
+    const vbMatch = /viewBox\s*=\s*["']\s*[\d.]+\s+[\d.]+\s+([\d.]+)\s+([\d.]+)/.exec(raw);
     if (vbMatch)
       return {
         width: Math.round(parseFloat(vbMatch[1])),

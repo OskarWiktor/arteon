@@ -38,7 +38,7 @@ export default function DatenschutzrichtliniePage() {
       >
         <div>
           <h1>Datenschutzrichtlinie</h1>
-          <p className='mt-2 text-sm opacity-70'>
+          <p className='mt-2 text-sm'>
             Version: <strong>03.03.2026</strong>
           </p>
 

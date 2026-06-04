@@ -10,18 +10,18 @@ import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel'
 import LogoCarousel from '@/components/organisms/carousels/LogoCarousel';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import ToolsCarousel from '@/components/organisms/carousels/ToolsCarousel';
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import WorkSteps from '@/components/organisms/WorkSteps';
 import testimonialsPl from '@/data/pl/testimonials.json';
 import { getAllArticlePreviews } from '@/lib/blogDataService';
-import { getHomepageAlternates } from '@/lib/i18n/pages/tool-meta';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { getHomepageAlternates } from '@/lib/i18n/pages/toolMeta';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { Testimonial } from '@/types/testimonial';
-import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import ToolsCarousel from '@/components/organisms/carousels/ToolsCarousel';
 
 export const metadata = {
   title: 'Strony internetowe, sklepy, treści i projekty graficzne - Arteon',
@@ -146,10 +146,9 @@ export default function HomePage() {
         <Divider line />
 
         <SectionSteps
-          subtitle='Cztery filary jakości'
           title='Elastyczny partner dla Twojej marki'
           description='Działamy w czterech kluczowych obszarach, dzięki czemu masz wszystko w jednym miejscu. Niezależnie od branży i celów znajdziemy najlepszy sposób, aby rozwinąć Twój biznes i przyciągnąć właściwych klientów.'
-          grid='four'
+          grid='two'
           buttonText='Sprawdź wszystkie nasze usługi'
           buttonHref='/uslugi'
           items={[

@@ -3,20 +3,26 @@
 import { useEffect } from 'react';
 import Button from '@/components/atoms/buttons/Button';
 import Wrapper from '@/components/atoms/Wrapper';
-import type { ErrorPagesDictionary } from '@/lib/i18n/get-dictionary';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import type { ErrorPageComponentsDictionary } from '@/lib/i18n/getDictionary';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import ButtonLink from '../atoms/buttons/ButtonLink';
 
-type ErrorPageProps = {
+type ErrorPageComponentProps = {
   error: Error & { digest?: string };
   reset: () => void;
-  t: ErrorPagesDictionary['error'];
+  t: ErrorPageComponentsDictionary['error'];
   homeHref: string;
   contactHref: string;
 };
 
-export default function ErrorPage({ error, reset, t, homeHref, contactHref }: ErrorPageProps) {
+export default function ErrorPageComponent({
+  error,
+  reset,
+  t,
+  homeHref,
+  contactHref,
+}: ErrorPageComponentProps) {
   useEffect(() => {
     if (process.env.NODE_ENV === 'development') {
       console.error('Error:', error);
@@ -38,7 +44,7 @@ export default function ErrorPage({ error, reset, t, homeHref, contactHref }: Er
     <Wrapper>
       <div className={cn('min-h-[60vh] flex-col px-6 text-center', flexCenterClasses)}>
         <h1 className='mb-4'>{t.title}</h1>
-        <p className='mb-8 max-w-md text-lg leading-relaxed text-light'>{t.description}</p>
+        <p className='mb-8 max-w-md text-lg text-light'>{t.description}</p>
         <div className='flex flex-wrap gap-3'>
           <Button onClick={handleRetry} variant='accent' arrow>
             {t.tryAgain}
