@@ -9,7 +9,7 @@ import SectionHeader from '@/components/molecules/SectionHeader';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
 import { cn } from '@/lib/utils';
-import { focusRingClasses } from '@/lib/ui-classes';
+import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
 
@@ -80,8 +80,8 @@ export default function ProjectsCarouselClient({
         <div
           ref={scrollRef}
           className={cn(
-            'flex gap-4 overflow-x-auto pb-8',
-            'no-scrollbar snap-x snap-mandatory scroll-smooth',
+            'flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8',
+            noScrollbarClasses,
             focusRingClasses,
           )}
           role='region'
@@ -101,7 +101,7 @@ export default function ProjectsCarouselClient({
                     }
                   : null
               }
-              className='w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]'
+              className='w-85 shrink-0 snap-start md:w-105 lg:w-130'
               role='group'
               aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}
             >

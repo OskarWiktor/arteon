@@ -96,7 +96,7 @@ export default function TableOfContents({
               href={`#${i.id}`}
               aria-current={isActive ? 'location' : undefined}
               className={cn(
-                'text-mid flex items-center gap-1 rounded-lg px-2 py-1 hover:underline',
+                'flex items-center gap-1 rounded-lg px-2 py-1 text-mid hover:underline',
                 isActive ? 'bg-black/5' : '',
               )}
             >
@@ -113,7 +113,7 @@ export default function TableOfContents({
       <aside className={cn('block lg:hidden', widthClass[size])}>
         <Card variant='outlined' className='relative' padding='md'>
           <div className={cn('p-2', flexCenterBetweenClasses)}>
-            <p className='text-light text-xs font-medium tracking-wider uppercase'>
+            <p className='text-xs font-medium tracking-wider text-light uppercase'>
               Spis treści <span className='opacity-60'>({items.length})</span>
             </p>
             <button
@@ -150,7 +150,7 @@ export default function TableOfContents({
 
       <aside className={cn('sticky top-24 hidden', 'self-start lg:block', widthClass[size])}>
         <Card variant='outlined'>
-          <p className='text-light mb-2 text-xs tracking-wider uppercase'>Spis treści</p>
+          <p className='mb-2 text-xs tracking-wider text-light uppercase'>Spis treści</p>
           <nav aria-label='Spis treści'>
             <LinkList />
           </nav>

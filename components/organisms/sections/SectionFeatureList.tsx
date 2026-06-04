@@ -21,7 +21,7 @@ export default function SectionFeatureList({ title, features }: SectionFeatureLi
               <li key={index} className='flex items-center gap-3'>
                 <div
                   className={cn(
-                    'bg-success-bg flex-shrink-0 rounded-lg',
+                    'flex-shrink-0 rounded-lg bg-success-bg',
                     flexCenterClasses,
                     normalIconSizeClasses,
                   )}

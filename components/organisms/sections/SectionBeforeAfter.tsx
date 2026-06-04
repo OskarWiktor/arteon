@@ -86,7 +86,7 @@ export default function SectionBeforeAfter({
             </div>
           </div>
 
-          <p className='text-light mt-4 text-center text-sm'>Przesuń suwak, aby porównać</p>
+          <p className='mt-4 text-center text-sm text-light'>Przesuń suwak, aby porównać</p>
         </div>
       </Wrapper>
     </section>

@@ -57,7 +57,6 @@ interface AdSenseProps {
   locale?: string;
 }
 
-
 declare global {
   interface Window {
     adsbygoogle: unknown[];

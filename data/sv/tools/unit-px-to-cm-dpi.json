@@ -264,7 +264,10 @@
           "label": "OG-bild / Facebook-delning",
           "values": ["1 200 × 630", "31,75 × 16,67 cm", "10,16 × 5,33 cm"]
         },
-        { "label": "Facebook-omslag", "values": ["851 × 315", "22,51 × 8,33 cm", "7,21 × 2,67 cm"] },
+        {
+          "label": "Facebook-omslag",
+          "values": ["851 × 315", "22,51 × 8,33 cm", "7,21 × 2,67 cm"]
+        },
         {
           "label": "X / Twitter-header",
           "values": ["1 500 × 500", "39,69 × 13,23 cm", "12,70 × 4,23 cm"]
@@ -349,7 +352,10 @@
           "values": ["8,5 × 5,5", "502 × 325", "1 004 × 650"],
           "emphasis": true
         },
-        { "label": "Amerikanskt visitkort (3,5 × 2 in)", "values": ["8,89 × 5,08", "525 × 300", "1 050 × 600"] }
+        {
+          "label": "Amerikanskt visitkort (3,5 × 2 in)",
+          "values": ["8,89 × 5,08", "525 × 300", "1 050 × 600"]
+        }
       ],
       "caption": "Dessa värden är spegelbilden av tabellen i vår cm till px-omvandlare – du kan alltid gå från den ena riktningen till den andra om du bara känner till antalet pixlar och mål-DPI."
     },

@@ -22,7 +22,7 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
           <Card key={a.slug} as='article' padding='md'>
             <Link href={href} prefetch={false} className='block'>
               {a.cover && (
-                <div className='relative aspect-[16/9] w-full overflow-hidden border-b border-neutral-200'>
+                <div className='relative aspect-video w-full overflow-hidden border-b border-neutral-200'>
                   <Image
                     src={a.cover}
                     alt={a.title}
@@ -34,13 +34,13 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
               )}
               <div className='p-4'>
                 <h3 className='h6'>{a.title}</h3>
-                <p className='text-light mt-2 line-clamp-5 !text-sm md:line-clamp-4'>{a.excerpt}</p>
+                <p className='mt-2 line-clamp-5 text-sm! text-light md:line-clamp-4'>{a.excerpt}</p>
                 <div className='mt-3 flex flex-wrap items-center gap-2'>
                   {a.readingTime && (
-                    <span className='text-light text-sm'>{a.readingTime} min czytania</span>
+                    <span className='text-sm text-light'>{a.readingTime} min czytania</span>
                   )}
                   {a.datePublished && (
-                    <span className='text-light text-sm' aria-label='Data publikacji'>
+                    <span className='text-sm text-light' aria-label='Data publikacji'>
                       <span className='mx-1'>• </span>
                       {a.datePublished.split('-').reverse().join('.')}
                     </span>

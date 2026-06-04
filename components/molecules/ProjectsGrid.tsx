@@ -18,7 +18,7 @@ export default function ProjectsGrid({ projects, selectedCategories }: Props) {
   })();
 
   if (!filteredProjects.length) {
-    return <p className='text-light mt-6 text-base'>Brak projektów dla wybranych filtrów.</p>;
+    return <p className='mt-6 text-base text-light'>Brak projektów dla wybranych filtrów.</p>;
   }
 
   return (
@@ -27,7 +27,7 @@ export default function ProjectsGrid({ projects, selectedCategories }: Props) {
         {filteredProjects.map((project, i) => (
           <div
             key={project.slug}
-            className='animate-fade-in'
+            className='animate-[fade-in_0.4s_ease-out_both]'
             style={{ animationDelay: `${i * 0.1}s` }}
           >
             <CarouselCard variant='project' project={project} />

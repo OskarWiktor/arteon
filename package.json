@@ -9,6 +9,7 @@
     "prebuild": "node scripts/fix-bom.cjs && node scripts/split-blog.cjs && node scripts/generate-search-index.cjs",
     "build": "next build",
     "postinstall": "node scripts/fix-bom.cjs",
+    "prepare": "husky",
     "postbuild": "next-sitemap --config next-sitemap.config.cjs && node scripts/postbuild-sitemap-hreflang.cjs && node scripts/indexnow-notify.cjs",
     "clear-cache": "node scripts/clear-vercel-cache.cjs",
     "start": "next start",
@@ -62,7 +63,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-promise": "^7.3.0",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-security": "^3.0.1",
+    "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-sonarjs": "^3.0.2",
     "eslint-plugin-unused-imports": "^4.4.1",
     "fast-glob": "^3.3.3",
@@ -72,9 +73,7 @@
     "postcss": "^8.5.15",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.12",
-    "tailwind-scrollbar": "^4.0.2",
     "tailwindcss": "^4",
-    "tailwindcss-children": "^2.1.0",
     "typescript": "^5"
   },
   "overrides": {

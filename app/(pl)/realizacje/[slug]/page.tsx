@@ -253,7 +253,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                   </Aspect>
                 )}
                 {b.caption && (
-                  <figcaption className='text-light mt-2 text-sm'>{b.caption}</figcaption>
+                  <figcaption className='mt-2 text-sm text-light'>{b.caption}</figcaption>
                 )}
               </figure>
               {b.breakAfter && <Divider size='sm' line />}
@@ -315,7 +315,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                   <p className='text-lg leading-relaxed'>"{b.text}"</p>
                 </blockquote>
                 {(b.author || b.role) && (
-                  <figcaption className='text-light mt-3 text-sm'>
+                  <figcaption className='mt-3 text-sm text-light'>
                     {b.author}
                     {b.role ? `, ${b.role}` : ''}
                   </figcaption>
@@ -330,8 +330,8 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
           const calloutIcon = getIcon(b.icon);
           return (
             <div key={`callout-${i}`} className={wrapperClass}>
-              <Card interactive={false} className='border-accent flex border-l-4'>
-                {calloutIcon && <div className='text-accent mt-1 shrink-0'>{calloutIcon}</div>}
+              <Card interactive={false} className='flex border-l-4 border-accent'>
+                {calloutIcon && <div className='mt-1 shrink-0 text-accent'>{calloutIcon}</div>}
                 <div>
                   {b.title && <h4 className='h5 mb-2'>{b.title}</h4>}
                   {b.html ? (
@@ -439,7 +439,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                   {(b.author || b.role) && (
                     <footer className='mt-2'>
                       <h5 className='mt-5'>{b.author}</h5>
-                      {b.role && <p className='text-light mt-1 mb-3'>{b.role}</p>}
+                      {b.role && <p className='mt-1 mb-3 text-light'>{b.role}</p>}
                       {b.link && (
                         <ButtonLink variant='accent' arrow href={b.link}>
                           Link do opinii
@@ -470,7 +470,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                         sizes='(min-width:768px) 50vw, 100vw'
                       />
                     </div>
-                    <figcaption className='text-light mt-2 text-sm'>
+                    <figcaption className='mt-2 text-sm text-light'>
                       {b.beforeLabel || 'Przed'}
                     </figcaption>
                   </figure>
@@ -485,7 +485,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                         sizes='(min-width:768px) 50vw, 100vw'
                       />
                     </div>
-                    <figcaption className='text-light mt-2 text-sm font-semibold'>
+                    <figcaption className='mt-2 text-sm font-semibold text-light'>
                       {b.afterLabel || 'Po'}
                     </figcaption>
                   </figure>
@@ -512,7 +512,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
           return (
             <div key={`grid3-${i}`} className={wrapperClass}>
               {b.title && <h3 className='h5 mb-2'>{b.title}</h3>}
-              {b.description && <p className='text-mid mb-4'>{b.description}</p>}
+              {b.description && <p className='mb-4 text-mid'>{b.description}</p>}
               <div className='grid grid-cols-1 gap-4 sm:grid-cols-3'>
                 {b.images.map((img, idx) => (
                   <figure key={idx}>
@@ -527,7 +527,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                       />
                     </div>
                     {img.label && (
-                      <figcaption className='text-light mt-2 text-center text-sm'>
+                      <figcaption className='mt-2 text-center text-sm text-light'>
                         {img.label}
                       </figcaption>
                     )}
@@ -614,7 +614,7 @@ export default async function ProjectPage({ params }: PageProps) {
             </h1>
 
             {project.category?.length ? (
-              <span className='text-light my-4 block text-sm uppercase'>
+              <span className='my-4 block text-sm text-light uppercase'>
                 {project.category.join(' • ')}
               </span>
             ) : null}
@@ -639,7 +639,9 @@ export default async function ProjectPage({ params }: PageProps) {
                 }
               />
             )}
-            {project.stack?.map(s => <Badge key={s} text={s} />)}
+            {project.stack?.map(s => (
+              <Badge key={s} text={s} />
+            ))}
           </div>
 
           {project.link && (
@@ -689,7 +691,7 @@ export default async function ProjectPage({ params }: PageProps) {
                     <li key={i} className='rounded-lg bg-white p-3 shadow-md'>
                       <span
                         className={cn(
-                          'border-light text-light mr-2 inline-flex items-center justify-center rounded-lg border text-xs font-bold',
+                          'mr-2 inline-flex items-center justify-center rounded-lg border border-light text-xs font-bold text-light',
                           largeIconSizeClasses,
                         )}
                       >
@@ -738,7 +740,7 @@ export default async function ProjectPage({ params }: PageProps) {
                         sizes='(min-width:768px) 50vw, 100vw'
                       />
                     </div>
-                    <figcaption className='text-light mt-2 text-sm'>Przed</figcaption>
+                    <figcaption className='mt-2 text-sm text-light'>Przed</figcaption>
                   </figure>
 
                   <figure>
@@ -751,7 +753,7 @@ export default async function ProjectPage({ params }: PageProps) {
                         sizes='(min-width:768px) 50vw, 100vw'
                       />
                     </div>
-                    <figcaption className='text-light mt-2 text-sm font-semibold'>Po</figcaption>
+                    <figcaption className='mt-2 text-sm font-semibold text-light'>Po</figcaption>
                   </figure>
                 </div>
 
@@ -811,7 +813,7 @@ export default async function ProjectPage({ params }: PageProps) {
                     <footer className='mt-2'>
                       <h5 className='mt-5'>{project.testimonial.author}</h5>
                       {project.testimonial.role ? (
-                        <p className='text-light mt-1 mb-3'>{project.testimonial.role}</p>
+                        <p className='mt-1 mb-3 text-light'>{project.testimonial.role}</p>
                       ) : null}
                       {project.testimonial.link ? (
                         <ButtonLink variant='accent' arrow href={project.testimonial.link}>

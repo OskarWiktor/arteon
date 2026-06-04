@@ -160,7 +160,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
                   <Image src='/assets/arteon-logo.webp' width={140} height={50} alt='Arteon logo' />
                 </InlineLink>
               </div>
-              <p className='text-dark text-base'>{ft.description}</p>
+              <p className='text-base text-dark'>{ft.description}</p>
             </section>
 
             <nav aria-label={`${ft.toolsLabel} (1)`} className='lg:col-start-2 lg:row-start-1'>
@@ -216,7 +216,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
             </nav>
           </div>
 
-          <div className='text-light mt-8 border-t border-neutral-200 pt-4'>
+          <div className='mt-8 border-t border-neutral-200 pt-4 text-light'>
             <div className='flex flex-col items-center justify-between gap-2 md:flex-row md:items-start'>
               <small className='text-center text-sm md:text-left'>
                 &copy; <time dateTime='2025'>2025</time> Arteon. {ft.copyright}
@@ -259,7 +259,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               <div className='mb-4'>
                 <Image src='/assets/arteon-logo.webp' width={140} height={50} alt='Logo Arteon' />
               </div>
-              <address className='text-dark mb-4 text-base not-italic'>
+              <address className='mb-4 text-base text-dark not-italic'>
                 <p>
                   <strong>{ORG.name}</strong>
                 </p>
@@ -390,7 +390,7 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
             </nav>
           </div>
 
-          <div className='text-light mt-8 border-t border-neutral-200 pt-4'>
+          <div className='mt-8 border-t border-neutral-200 pt-4 text-light'>
             <div className='flex flex-col items-center justify-between gap-2 md:flex-row md:items-start'>
               <small className='text-center text-sm md:text-left'>
                 &copy; <time dateTime='2025'>2025</time> Arteon. Wszelkie prawa zastrzeżone.

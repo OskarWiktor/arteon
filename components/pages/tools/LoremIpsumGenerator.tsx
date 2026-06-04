@@ -120,7 +120,7 @@ export default function LoremIpsumGenerator() {
     <div className='space-y-4 overflow-hidden'>
       <Card padding='lg' interactive={false} className='flex flex-wrap items-center'>
         <div className='flex flex-wrap items-center gap-2'>
-          <RiPaletteLine className='text-primary text-base' />
+          <RiPaletteLine className='text-base text-primary' />
           <span className='tool-value'>{t.styleBarTitle}</span>
           <div className='flex flex-wrap gap-1'>
             {STYLES.map(s => (

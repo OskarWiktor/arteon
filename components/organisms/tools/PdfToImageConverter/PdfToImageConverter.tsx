@@ -330,7 +330,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
                       <>
                         {item.outputBlob ? formatBytes(item.outputBlob.size) : ''}
                         {item.errorMessage && (
-                          <span className='text-error-text ml-1'>{item.errorMessage}</span>
+                          <span className='ml-1 text-error-text'>{item.errorMessage}</span>
                         )}
                       </>
                     }
@@ -365,7 +365,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
                             type='button'
                             onClick={() => removeFile(item.id)}
                             size='sm'
-                            className='text-light hover:text-dark cursor-pointer'
+                            className='cursor-pointer text-light hover:text-dark'
                           >
                             {t.remove}
                           </Badge>

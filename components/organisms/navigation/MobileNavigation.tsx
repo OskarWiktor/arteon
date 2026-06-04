@@ -22,6 +22,7 @@ import { cn } from '@/lib/utils';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
+  modalBackdropClasses,
   normalIconSizeClasses,
 } from '@/lib/ui-classes';
 
@@ -200,7 +201,7 @@ export default function MobileNavigation({
     <>
       <Portal>
         <div
-          className='animate-modal-backdrop fixed inset-y-0 left-0 z-[999] bg-black/40'
+          className={cn('fixed inset-y-0 left-0 z-999 bg-black/40', modalBackdropClasses)}
           style={{ right: `${panelWidth}px` }}
           onClick={() => setIsOpen(false)}
           aria-hidden='true'
@@ -212,14 +213,14 @@ export default function MobileNavigation({
         role='dialog'
         aria-modal='true'
         aria-label={navUi.mobileMenu}
-        className='z[1000] animate-dropdown-in fixed top-0 right-0 h-[100dvh] w-[88vw] max-w-[300px] bg-white shadow-lg'
+        className='z[1000] animate-dropdown-in fixed top-0 right-0 h-dvh w-[88vw] max-w-75 bg-white shadow-lg'
       >
         <div className='flex items-center justify-end px-4 pt-3'>
           <button
             onClick={() => setIsOpen(false)}
-            className='ring-primary rounded px-3 pt-1 ring-offset-2 outline-none focus-visible:ring-2'
+            className='rounded px-3 pt-1 ring-primary ring-offset-2 outline-none focus-visible:ring-2'
           >
-            <span className='text-light text-sm font-medium'>{mobileNavUi.close}</span>
+            <span className='text-sm font-medium text-light'>{mobileNavUi.close}</span>
           </button>
         </div>
 
@@ -246,7 +247,7 @@ export default function MobileNavigation({
                           prefetch={false}
                           onClick={() => setIsOpen(false)}
                           className={cn(
-                            'text-dark focus-visible:ring-primary inline-block rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
+                            'inline-block rounded px-3 py-1 text-[15px] text-dark outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                             {
                               'font-semibold': pathname.startsWith(sec.hubHref),
                             },
@@ -255,7 +256,7 @@ export default function MobileNavigation({
                           {sec.title}
                         </Link>
                       ) : (
-                        <div className='text-dark px-3 py-1 text-[15px]'>{sec.title}</div>
+                        <div className='px-3 py-1 text-[15px] text-dark'>{sec.title}</div>
                       )}
 
                       <button
@@ -264,7 +265,7 @@ export default function MobileNavigation({
                         aria-controls={`sec-${sec.key}`}
                         onClick={() => toggleKey(sec.key)}
                         className={cn(
-                          'text-primary focus-visible:ring-primary h-9 w-9 rounded-md transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2',
+                          'h-9 w-9 rounded-md text-primary transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                           flexCenterClasses,
                         )}
                       >
@@ -293,7 +294,7 @@ export default function MobileNavigation({
                                   href={it.href}
                                   prefetch={false}
                                   onClick={() => setIsOpen(false)}
-                                  className='group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-lg px-2 py-[7px] text-[15px] transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2'
+                                  className='group flex items-center gap-3 rounded-lg px-2 py-1.75 text-[15px] text-dark transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
                                 >
                                   <IconText
                                     icon={
@@ -304,7 +305,7 @@ export default function MobileNavigation({
                                     gap='3'
                                     className='min-w-0'
                                   >
-                                    <span className='text-dark text-[15px]'>{it.title}</span>
+                                    <span className='text-[15px] text-dark'>{it.title}</span>
                                   </IconText>
                                 </Link>
                               </li>
@@ -337,9 +338,9 @@ export default function MobileNavigation({
                         : undefined
                   }
                   className={cn(
-                    'ring-primary block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2',
+                    'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                     {
-                      'text-dark bg-neutral-50 font-semibold': pathname.startsWith(
+                      'bg-neutral-50 font-semibold text-dark': pathname.startsWith(
                         realizacjeNav.href,
                       ),
                       'text-dark hover:bg-neutral-100': !pathname.startsWith(realizacjeNav.href),
@@ -358,9 +359,9 @@ export default function MobileNavigation({
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(aboutNav.href) ? 'page' : undefined}
                   className={cn(
-                    'ring-primary block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2',
+                    'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                     {
-                      'text-dark bg-neutral-50 font-semibold': pathname.startsWith(aboutNav.href),
+                      'bg-neutral-50 font-semibold text-dark': pathname.startsWith(aboutNav.href),
                       'text-dark hover:bg-neutral-100': !pathname.startsWith(aboutNav.href),
                     },
                   )}
@@ -377,9 +378,9 @@ export default function MobileNavigation({
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(edukacjaNav.href) ? 'page' : undefined}
                   className={cn(
-                    'ring-primary block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2',
+                    'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                     {
-                      'text-dark bg-neutral-50 font-semibold': pathname.startsWith(
+                      'bg-neutral-50 font-semibold text-dark': pathname.startsWith(
                         edukacjaNav.href,
                       ),
                       'text-dark hover:bg-neutral-100': !pathname.startsWith(edukacjaNav.href),
@@ -399,9 +400,9 @@ export default function MobileNavigation({
                       onClick={() => setIsOpen(false)}
                       aria-current={pathname.startsWith(narzedziaNav.href) ? 'page' : undefined}
                       className={cn(
-                        'focus-visible:ring-primary rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
+                        'rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                         {
-                          'text-dark font-semibold': pathname.startsWith(narzedziaNav.href),
+                          'font-semibold text-dark': pathname.startsWith(narzedziaNav.href),
                           'text-dark': !pathname.startsWith(narzedziaNav.href),
                         },
                       )}
@@ -415,7 +416,7 @@ export default function MobileNavigation({
                       aria-controls='tools-submenu-mobile'
                       onClick={toggleTools}
                       className={cn(
-                        'text-primary focus-visible:ring-primary h-9 w-9 rounded-md transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2',
+                        'h-9 w-9 rounded-md text-primary transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                         flexCenterClasses,
                       )}
                     >
@@ -441,9 +442,9 @@ export default function MobileNavigation({
                                 onClick={() => setIsOpen(false)}
                                 aria-current={isToolActive ? 'page' : undefined}
                                 className={cn(
-                                  'ring-primary flex items-center gap-3 rounded-lg px-2 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2',
+                                  'flex items-center gap-3 rounded-lg px-2 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                                   {
-                                    'text-dark bg-neutral-50 font-semibold': isToolActive,
+                                    'bg-neutral-50 font-semibold text-dark': isToolActive,
                                     'text-dark hover:bg-neutral-100': !isToolActive,
                                   },
                                 )}
@@ -470,9 +471,9 @@ export default function MobileNavigation({
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(contactHref) ? 'page' : undefined}
                   className={cn(
-                    'ring-primary block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2',
+                    'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                     {
-                      'text-dark bg-neutral-50 font-semibold': pathname.startsWith(contactHref),
+                      'bg-neutral-50 font-semibold text-dark': pathname.startsWith(contactHref),
                       'text-dark hover:bg-neutral-100': !pathname.startsWith(contactHref),
                     },
                   )}
@@ -490,9 +491,9 @@ export default function MobileNavigation({
                 onClick={() => setIsOpen(false)}
                 aria-current={pathname === localeConfig.toolsIndexHref ? 'page' : undefined}
                 className={cn(
-                  'ring-primary mb-2 block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2',
+                  'mb-2 block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                   {
-                    'text-dark bg-neutral-50 font-semibold':
+                    'bg-neutral-50 font-semibold text-dark':
                       pathname === localeConfig.toolsIndexHref,
                     'text-dark hover:bg-neutral-100': pathname !== localeConfig.toolsIndexHref,
                   },
@@ -512,7 +513,7 @@ export default function MobileNavigation({
                           flexCenterBetweenClasses,
                         )}
                       >
-                        <div className='text-dark px-3 py-1 text-[15px]'>{sec.title}</div>
+                        <div className='px-3 py-1 text-[15px] text-dark'>{sec.title}</div>
 
                         <button
                           type='button'
@@ -520,7 +521,7 @@ export default function MobileNavigation({
                           aria-controls={`sec-${locale}-${sec.key}`}
                           onClick={() => toggleToolSection(sec.key)}
                           className={cn(
-                            'text-primary focus-visible:ring-primary h-9 w-9 rounded-md transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2',
+                            'h-9 w-9 rounded-md text-primary transition-colors outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                             flexCenterClasses,
                           )}
                         >
@@ -552,7 +553,7 @@ export default function MobileNavigation({
                                     href={it.href}
                                     prefetch={false}
                                     onClick={() => setIsOpen(false)}
-                                    className='group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-lg px-2 py-[7px] text-[15px] transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2'
+                                    className='group flex items-center gap-3 rounded-lg px-2 py-1.75 text-[15px] text-dark transition-colors outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
                                   >
                                     <IconText
                                       icon={
@@ -563,7 +564,7 @@ export default function MobileNavigation({
                                       gap='3'
                                       className='min-w-0'
                                     >
-                                      <span className='text-dark text-[15px]'>{it.title}</span>
+                                      <span className='text-[15px] text-dark'>{it.title}</span>
                                     </IconText>
                                   </Link>
                                 </li>
@@ -584,9 +585,9 @@ export default function MobileNavigation({
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(localeConfig.aboutHref) ? 'page' : undefined}
                   className={cn(
-                    'ring-primary block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2',
+                    'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                     {
-                      'text-dark bg-neutral-50 font-semibold': pathname.startsWith(
+                      'bg-neutral-50 font-semibold text-dark': pathname.startsWith(
                         localeConfig.aboutHref,
                       ),
                       'text-dark hover:bg-neutral-100': !pathname.startsWith(
@@ -606,9 +607,9 @@ export default function MobileNavigation({
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(localeConfig.contactHref) ? 'page' : undefined}
                   className={cn(
-                    'ring-primary block rounded-lg px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2',
+                    'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                     {
-                      'text-dark bg-neutral-50 font-semibold': pathname.startsWith(
+                      'bg-neutral-50 font-semibold text-dark': pathname.startsWith(
                         localeConfig.contactHref,
                       ),
                       'text-dark hover:bg-neutral-100': !pathname.startsWith(
@@ -632,7 +633,7 @@ export default function MobileNavigation({
                   href={href}
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  className='text-dark focus-visible:ring-primary block rounded-lg px-3 py-[7px] text-[15px] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2'
+                  className='block rounded-lg px-3 py-1.75 text-[15px] text-dark outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
                 >
                   {label}
                 </Link>
@@ -648,7 +649,7 @@ export default function MobileNavigation({
                   href={contactHref}
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  className='bg-primary focus-visible:ring-primary rounded-lg px-3 py-2 text-sm font-semibold text-white transition-colors outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2'
+                  className='rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-white transition-colors outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
                 >
                   {mobileNavUi.contact}
                 </Link>

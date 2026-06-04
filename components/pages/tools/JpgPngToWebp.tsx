@@ -414,7 +414,7 @@ export default function JpgPngToWebp() {
 
                     <div className='min-w-0 flex-1'>
                       <div title={item.file.name}>
-                        <p className='tool-value text-dark truncate'>{item.file.name}</p>
+                        <p className='tool-value truncate text-dark'>{item.file.name}</p>
                       </div>
                       <p className='tool-meta'>
                         {t.sizeBefore} {formatBytes(item.inputSize)}
@@ -430,7 +430,7 @@ export default function JpgPngToWebp() {
                               </>
                             )}
                             {isBigger && (
-                              <span className='text-warning-text ml-1 text-xs!'>
+                              <span className='ml-1 text-xs! text-warning-text'>
                                 {t.biggerThanOriginal}
                               </span>
                             )}
@@ -496,7 +496,7 @@ export default function JpgPngToWebp() {
                       onClick={() => removeFile(item.id)}
                       variant='default'
                       size='sm'
-                      className='text-light hover:text-dark cursor-pointer'
+                      className='cursor-pointer text-light hover:text-dark'
                     >
                       {t.actions.remove}
                     </Badge>

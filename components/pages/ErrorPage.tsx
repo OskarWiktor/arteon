@@ -38,7 +38,7 @@ export default function ErrorPage({ error, reset, t, homeHref, contactHref }: Er
     <Wrapper>
       <div className={cn('min-h-[60vh] flex-col px-6 text-center', flexCenterClasses)}>
         <h1 className='mb-4'>{t.title}</h1>
-        <p className='text-light mb-8 max-w-md text-lg leading-relaxed'>{t.description}</p>
+        <p className='mb-8 max-w-md text-lg leading-relaxed text-light'>{t.description}</p>
         <div className='flex flex-wrap gap-3'>
           <Button onClick={handleRetry} variant='accent' arrow>
             {t.tryAgain}
@@ -51,7 +51,7 @@ export default function ErrorPage({ error, reset, t, homeHref, contactHref }: Er
           </ButtonLink>
         </div>
         {error.digest && (
-          <p className='text-light mt-8 text-xs'>
+          <p className='mt-8 text-xs text-light'>
             {t.errorCode}: <code className='rounded bg-neutral-100 px-2 py-1'>{error.digest}</code>
           </p>
         )}

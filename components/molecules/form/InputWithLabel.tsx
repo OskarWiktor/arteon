@@ -117,7 +117,7 @@ export default function InputWithLabel({
         </p>
       )}
       {helperText && !errorMessage && (
-        <p id={helperId} className='text-light mt-1 text-sm'>
+        <p id={helperId} className='mt-1 text-sm text-light'>
           {helperText}
         </p>
       )}

@@ -10,7 +10,7 @@ import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import type { ArticlePreview } from '@/types/article';
 import { slugify } from '@/utils/slugify';
 import { getPrimaryCategorySlug } from '@/utils/blogCategory';
-import { focusRingClasses } from '@/lib/ui-classes';
+import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 
 const AUTO_PLAY_INTERVAL_MS = 6000;
@@ -87,7 +87,8 @@ export default function ArticlesCarousel({
         <div
           ref={scrollRef}
           className={cn(
-            'no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8',
+            'flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8',
+            noScrollbarClasses,
             focusRingClasses,
           )}
           role='region'
@@ -111,7 +112,7 @@ export default function ArticlesCarousel({
                       }
                     : null
                 }
-                className='w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]'
+                className='w-85 shrink-0 snap-start md:w-105 lg:w-130'
                 role='group'
                 aria-label={`Artykuł ${i + 1} z ${finalArticles.length}`}
               >

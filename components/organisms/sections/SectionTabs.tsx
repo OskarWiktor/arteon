@@ -26,7 +26,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
       {title && <SectionHeader titleId={headingId} title={title} />}
 
       <div className='space-y-4'>
-        <div className='bg-primary-light flex gap-2 rounded-lg p-1.5' role='tablist'>
+        <div className='flex gap-2 rounded-lg bg-primary-light p-1.5' role='tablist'>
           {tabs.map((tab, index) => (
             <button
               key={index}
@@ -40,7 +40,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
                 'flex-1 gap-2 rounded-md px-4 py-3 text-sm font-medium transition',
                 flexCenterClasses,
                 {
-                  'text-primary bg-white shadow-sm': activeTab === index,
+                  'bg-white text-primary shadow-sm': activeTab === index,
                   'text-primary-mid hover:text-primary': activeTab !== index,
                 },
               )}

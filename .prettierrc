@@ -9,5 +9,6 @@
   "jsxSingleQuote": true,
   "arrowParens": "avoid",
   "plugins": ["prettier-plugin-tailwindcss"],
-  "tailwindFunctions": ["cn"]
+  "tailwindFunctions": ["cn"],
+  "tailwindStylesheet": "./app/globals.css"
 }

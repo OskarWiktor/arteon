@@ -57,7 +57,7 @@ export default function SitemapPageClient({
           <ol className='flex gap-2 text-sm'>
             <li>
               <InlineLink href='/'>Strona główna</InlineLink>
-              <span className='text-primary-mid ml-2'>/</span>
+              <span className='ml-2 text-primary-mid'>/</span>
             </li>
             <li>
               <span className='text-primary' aria-current='page'>

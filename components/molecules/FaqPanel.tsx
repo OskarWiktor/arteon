@@ -48,8 +48,8 @@ export default function FaqPanel({ question, answer, icon, name }: FaqPanelProps
         </span>
       </summary>
 
-      <div className='border-primary-light border-t p-4'>
-        <div className='text-light leading-relaxed'>
+      <div className='border-t border-primary-light p-4'>
+        <div className='leading-relaxed text-light'>
           {typeof answer === 'string' ? <p>{answer}</p> : answer}
         </div>
       </div>

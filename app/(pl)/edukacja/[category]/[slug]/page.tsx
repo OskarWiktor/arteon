@@ -173,7 +173,7 @@ function FlowGroup({ items }: { items: FlowBlock[] }) {
                   <p className='text-lg leading-relaxed'>“{b.text}”</p>
                 </blockquote>
                 {(b.author || b.role) && (
-                  <figcaption className='text-light mt-3 text-sm'>
+                  <figcaption className='mt-3 text-sm text-light'>
                     {b.author}
                     {b.role ? `, ${b.role}` : ''}
                   </figcaption>
@@ -269,7 +269,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
                   </Aspect>
                 )}
                 {hasCaption && (
-                  <figcaption className='text-light mt-2 mb-6 text-sm md:mb-12 lg:mb-16'>
+                  <figcaption className='mt-2 mb-6 text-sm text-light md:mb-12 lg:mb-16'>
                     {b.caption}
                   </figcaption>
                 )}
@@ -442,7 +442,7 @@ export default async function ArticlePage({
             <h1 className='h2 mb-1' itemProp='headline'>
               {article.title}
             </h1>
-            <div className='text-light sm-2 md:sm-4 mt-5 flex flex-wrap items-center text-sm'>
+            <div className='sm-2 md:sm-4 mt-5 flex flex-wrap items-center text-sm text-light'>
               {article.author?.name && <Badge text={article.author.name} />}
               {article.datePublished && (
                 <Badge>

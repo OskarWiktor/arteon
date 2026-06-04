@@ -349,7 +349,10 @@
           "values": ["8,5 × 5,5", "502 × 325", "1 004 × 650"],
           "emphasis": true
         },
-        { "label": "Amerikkalainen käyntikortti (3,5 × 2 in)", "values": ["8,89 × 5,08", "525 × 300", "1 050 × 600"] }
+        {
+          "label": "Amerikkalainen käyntikortti (3,5 × 2 in)",
+          "values": ["8,89 × 5,08", "525 × 300", "1 050 × 600"]
+        }
       ],
       "caption": "Nämä arvot ovat peilikuva taulukosta cm–px-muuntimessamme – voit aina siirtyä suunnasta toiseen tuntemalla vain pikselien määrän ja kohde-DPI:n."
     },
@@ -432,7 +435,10 @@
       "labelHeader": "Ominaisuus",
       "cols": ["Pikseli (px)", "Senttimetri (cm)"],
       "rows": [
-        { "label": "Yksikön tyyppi", "values": ["Digitaalinen ja näyttöpohjainen", "Fyysinen ja kouriintuntuva"] },
+        {
+          "label": "Yksikön tyyppi",
+          "values": ["Digitaalinen ja näyttöpohjainen", "Fyysinen ja kouriintuntuva"]
+        },
         {
           "label": "Riippuvuus laitteesta",
           "values": ["Seuraa DPI:stä tai PPI:stä", "Aina sama"]

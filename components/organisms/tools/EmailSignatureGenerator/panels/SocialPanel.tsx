@@ -68,7 +68,7 @@ export default function SocialPanel({
           )}
         </div>
       ))}
-      <p className='text-light text-xs!'>{t.social.helper}</p>
+      <p className='text-xs! text-light'>{t.social.helper}</p>
 
       <div className='mt-4 space-y-3 border-t border-neutral-200 pt-4'>
         <InputCheckboxWithLabel

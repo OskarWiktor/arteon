@@ -185,37 +185,6 @@
   }
 }
 
-.animate-dropdown-in {
-  animation: dropdown-in 0.2s ease-out both;
-}
-.animate-fade-slide-in {
-  animation: fade-slide-in 0.15s ease-out both;
-}
-.animate-modal-backdrop {
-  animation: modal-backdrop-in 0.15s ease-out both;
-}
-.animate-modal-content {
-  animation: modal-content-in 0.15s ease-out both;
-}
-.animate-tooltip {
-  animation: tooltip-in 0.18s ease-out both;
-}
-.animate-tooltip-bottom {
-  animation: tooltip-in-bottom 0.18s ease-out both;
-}
-.animate-fade-in {
-  animation: fade-in 0.4s ease-out both;
-}
-
-.no-scrollbar {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -328,7 +297,7 @@ strong {
 }
 
 .tool-input {
-  @apply text-dark h-11 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm transition;
+  @apply h-11 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-dark transition;
 }
 
 .hover-underline {
@@ -385,10 +354,6 @@ strong {
   color: var(--text-light);
 }
 
-/* ── Below-fold content sections: skip rendering until near viewport ── */
-/* Improves INP + LCP by reducing initial render work on long pages.    */
-/* Ad containers are NOT included — they need IO visibility for loading. */
-
 [data-section='info'],
 [data-section='basic'],
 [data-section='steps'],
@@ -410,7 +375,6 @@ strong {
   contain-intrinsic-size: auto 500px;
 }
 
-/* Taller sections on mobile — larger placeholder reduces CLS when content renders */
 [data-section='feature-list'],
 [data-section='vertical-tabs'] {
   contain-intrinsic-size: auto 800px;
@@ -423,26 +387,13 @@ strong {
   contain-intrinsic-size: auto 600px;
 }
 
-/* ── Ad slot containment: isolate ad reflow from surrounding layout ── */
-
 .ad-slot-wrapper {
   contain: layout style;
 }
 
-/* ── Ad slot placeholder (keep reserved space even when unfilled) ── */
-
 .ad-slot-wrapper:has(ins.adsbygoogle[data-ad-status='unfilled']) .ad-placeholder {
   background: transparent;
 }
-
-/* ── Headings use Playfair Display (body stays Inter via font-sans) ── */
-/*
-h1,
-h2 {
-  font-family: var(--font-heading);
-}
-
-/* ── Reduced motion ────────────────────────────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {
   *,

@@ -56,7 +56,7 @@ export default function CropPreview({
       <div className={cn('mt-4 mb-2', flexCenterBetweenClasses)}>
         <h3 className='h6'>{t.cropPreview}</h3>
         {dims && (
-          <span className='text-light text-xs!'>
+          <span className='text-xs! text-light'>
             {dims.width} x {dims.height} px
           </span>
         )}
@@ -64,7 +64,7 @@ export default function CropPreview({
 
       <div
         ref={previewRef}
-        className='bg-primary relative w-full overflow-hidden rounded-lg border border-neutral-300'
+        className='relative w-full overflow-hidden rounded-lg border border-neutral-300 bg-primary'
         style={{ paddingBottom: `${previewPadding}%` }}
       >
         <div className='absolute inset-0'>
@@ -141,7 +141,7 @@ export default function CropPreview({
         </div>
       </div>
 
-      <p className='text-light mt-2 text-xs!'>{t.cropPreviewHelper}</p>
+      <p className='mt-2 text-xs! text-light'>{t.cropPreviewHelper}</p>
     </div>
   );
 }

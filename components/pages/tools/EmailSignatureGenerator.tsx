@@ -272,7 +272,7 @@ export default function EmailSignatureGenerator() {
       >
         <div className='flex flex-wrap items-center gap-3'>
           <div className='flex flex-wrap items-center gap-2'>
-            <RiLayout3Line className='text-primary text-base' />
+            <RiLayout3Line className='text-base text-primary' />
             <span className='tool-value'>{t.layoutLabel}</span>
             <div className='flex flex-wrap gap-1'>
               <ButtonPill
@@ -482,7 +482,7 @@ export default function EmailSignatureGenerator() {
                             type='button'
                             onClick={() => removeCustomColor(color)}
                             className={cn(
-                              'bg-error-icon absolute -top-1.5 -right-1.5 hidden items-center justify-center rounded-lg text-white group-hover:flex',
+                              'absolute -top-1.5 -right-1.5 hidden items-center justify-center rounded-lg bg-error-icon text-white group-hover:flex',
                               normalIconSizeClasses,
                             )}
                             aria-label='Usuń kolor'
@@ -619,7 +619,7 @@ export default function EmailSignatureGenerator() {
           <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <div>
               <h2 className='h6'>{t.preview.title}</h2>
-              <p className='text-light text-xs!'>{t.preview.helper}</p>
+              <p className='text-xs! text-light'>{t.preview.helper}</p>
             </div>
             <div className='flex gap-1'>
               <button
@@ -806,7 +806,7 @@ export default function EmailSignatureGenerator() {
             cancelLabel={t.preview.resetCancel}
           />
 
-          {!hasRequired && <p className='text-light text-xs!'>{t.preview.requiredFields}</p>}
+          {!hasRequired && <p className='text-xs! text-light'>{t.preview.requiredFields}</p>}
         </Card>
       </div>
     </div>

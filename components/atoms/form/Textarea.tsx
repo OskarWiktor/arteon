@@ -5,7 +5,7 @@ export default function Textarea({ className, ...props }: React.ComponentProps<'
   return (
     <textarea
       className={cn(
-        'text-dark w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm! transition',
+        'w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm! text-dark transition',
         focusRingClasses,
         className,
       )}

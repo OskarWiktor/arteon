@@ -4,7 +4,7 @@ import { createPortal } from 'react-dom';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import Button from '@/components/atoms/buttons/Button';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, modalBackdropClasses, modalContentClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 
 type ConfirmModalProps = {
@@ -48,7 +48,8 @@ export default function ConfirmModal({
   return createPortal(
     <div
       className={cn(
-        'animate-modal-backdrop fixed inset-0 z-[100] bg-black/40 px-4',
+        'fixed inset-0 z-100 bg-black/40 px-4',
+        modalBackdropClasses,
         flexCenterClasses,
       )}
       onClick={handleBackdropClick}
@@ -56,11 +57,16 @@ export default function ConfirmModal({
       aria-modal='true'
       aria-labelledby='confirm-modal-title'
     >
-      <div className='animate-modal-content w-full max-w-md overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5'>
+      <div
+        className={cn(
+          'w-full max-w-md overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5',
+          modalContentClasses,
+        )}
+      >
         <h3 id='confirm-modal-title' className='h3 mb-2'>
           {title}
         </h3>
-        {description && <p className='text-mid mb-6 text-sm'>{description}</p>}
+        {description && <p className='mb-6 text-sm text-mid'>{description}</p>}
         <div className='flex gap-3'>
           <Button variant='accent' size='small' onClick={handleConfirm}>
             {confirmLabel}

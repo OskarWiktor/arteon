@@ -40,12 +40,12 @@ export default function TableBlock({
       >
         {caption && (
           <div className='border-b border-neutral-200 px-4 py-3'>
-            <div className='text-dark text-sm font-medium'>{caption}</div>
+            <div className='text-sm font-medium text-dark'>{caption}</div>
           </div>
         )}
 
         <table className='w-full text-left'>
-          <thead className='bg-[color:var(--foreground)] text-white'>
+          <thead className='bg-(--foreground) text-white'>
             <tr>
               {columns.map((c, i) => (
                 <th
@@ -77,7 +77,7 @@ export default function TableBlock({
                       alignCls(columns[j]?.align),
                     )}
                   >
-                    <div className='text-dark text-base'>{String(cell)}</div>
+                    <div className='text-base text-dark'>{String(cell)}</div>
                   </td>
                 ))}
               </tr>
@@ -88,7 +88,7 @@ export default function TableBlock({
 
       {note ? (
         <figcaption className='mt-2'>
-          <p className='text-light text-xs'>{note}</p>
+          <p className='text-xs text-light'>{note}</p>
         </figcaption>
       ) : null}
     </figure>

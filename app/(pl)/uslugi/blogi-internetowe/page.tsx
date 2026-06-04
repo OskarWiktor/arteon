@@ -259,80 +259,76 @@ export default function OfferBlogPage() {
         <SectionPrices
           id='pricing-blogs'
           title='Cennik blogów internetowych'
-          plans={
-            [
-              {
-                name: 'Blog mały',
-                price: '1 800 - 2 500 zł',
-                description:
-                  'Prosty blog firmowy na start. Stabilny, łatwy w obsłudze i przygotowany pod SEO, abyś mógł zacząć publikować i zdobywać klientów od pierwszego dnia.',
-                features: [
-                  'Do 30 artykułów - idealne na początek',
-                  'SEO techniczne - w cenie',
-                  'Wybrane integracje (newsletter, formularz)',
-                  'Analityka GA4 i Search Console do monitorowania wyników',
-                  'Optymalizacja prędkości i zabezpieczenia',
-                  'Wsparcie prawne - polityka prywatności, regulaminy',
-                  'Prosty panel do samodzielnej edycji treści',
-                  'Szkolenie PDF z obsługi bloga',
-                ],
-                btnOne: 'Zamów mały blog',
-                btnOneHref: '#kontakt',
-              },
-              {
-                name: 'Blog średni',
-                price: '3 200 - 4 000 zł',
-                description:
-                  'Rozbudowany blog dla firm, które chcą regularnie publikować i budować wizerunek eksperta. Więcej treści, integracje marketingowe i większe możliwości rozwoju.',
-                features: [
-                  'Do 100 artykułów',
-                  'SEO techniczne i redakcja treści - w pakiecie',
-                  'Newsletter i wybrane integracje marketingowe (np. mailing)',
-                  'Zaawansowana analityka i monitoring pozycji',
-                  'Przejrzysta struktura treści i nawigacji',
-                  'Wsparcie prawne - polityka prywatności, regulaminy',
-                  'Panel do edycji treści - WordPress lub Webflow',
-                  'Szkolenie PDF z obsługi bloga',
-                ],
-                btnOne: 'Zamów blog średni',
-                btnOneHref: '#kontakt',
-              },
-              {
-                name: 'Blog premium',
-                price: '6 500 - 8 000 zł',
-                description:
-                  'Blog premium w technologii Webflow. Design klasy premium, płynne animacje i sekcje polecanych treści. Idealny dla marek, które stawiają na estetykę i pełen komfort edycji.',
-                features: [
-                  'Do 300 artykułów, rozbudowane kategorie',
-                  'SEO techniczne - w cenie',
-                  'Newsletter i wybrane integracje marketingowe (np. mailing)',
-                  'Zaawansowana analityka i monitoring pozycji',
-                  'Przejrzysta struktura treści i nawigacji',
-                  'Zaawansowana optymalizacja szybkości i bezpieczeństwa',
-                  'WCAG 2.1 AA + Deklaracja Dostępności',
-                  'Wsparcie prawne - polityka prywatności, regulaminy',
-                  'Intuicyjny CMS do samodzielnego zarządzania treścią',
-                  'Darmowe szkolenie PDF dla Ciebie i zespołu',
-                ],
-                btnOne: 'Zamów blog premium',
-                btnOneHref: '#kontakt',
-                lastPlan: true,
-              },
-            ]
-          }
-          note={
+          plans={[
             {
-              text: (
-                <p className='text-light'>
-                  <strong className='text-dark'>Masz większe plany? </strong>
-                  Tworzymy zaawansowane strony, aplikacje i sklepy w Next.js - rozwiązania szyte na
-                  miarę, które spełnią najbardziej wymagające cele biznesowe.
-                </p>
-              ),
-              ctaLabel: 'Porozmawiajmy o Twoim blogu',
-              ctaLink: '#kontakt',
-            }
-          }
+              name: 'Blog mały',
+              price: '1 800 - 2 500 zł',
+              description:
+                'Prosty blog firmowy na start. Stabilny, łatwy w obsłudze i przygotowany pod SEO, abyś mógł zacząć publikować i zdobywać klientów od pierwszego dnia.',
+              features: [
+                'Do 30 artykułów - idealne na początek',
+                'SEO techniczne - w cenie',
+                'Wybrane integracje (newsletter, formularz)',
+                'Analityka GA4 i Search Console do monitorowania wyników',
+                'Optymalizacja prędkości i zabezpieczenia',
+                'Wsparcie prawne - polityka prywatności, regulaminy',
+                'Prosty panel do samodzielnej edycji treści',
+                'Szkolenie PDF z obsługi bloga',
+              ],
+              btnOne: 'Zamów mały blog',
+              btnOneHref: '#kontakt',
+            },
+            {
+              name: 'Blog średni',
+              price: '3 200 - 4 000 zł',
+              description:
+                'Rozbudowany blog dla firm, które chcą regularnie publikować i budować wizerunek eksperta. Więcej treści, integracje marketingowe i większe możliwości rozwoju.',
+              features: [
+                'Do 100 artykułów',
+                'SEO techniczne i redakcja treści - w pakiecie',
+                'Newsletter i wybrane integracje marketingowe (np. mailing)',
+                'Zaawansowana analityka i monitoring pozycji',
+                'Przejrzysta struktura treści i nawigacji',
+                'Wsparcie prawne - polityka prywatności, regulaminy',
+                'Panel do edycji treści - WordPress lub Webflow',
+                'Szkolenie PDF z obsługi bloga',
+              ],
+              btnOne: 'Zamów blog średni',
+              btnOneHref: '#kontakt',
+            },
+            {
+              name: 'Blog premium',
+              price: '6 500 - 8 000 zł',
+              description:
+                'Blog premium w technologii Webflow. Design klasy premium, płynne animacje i sekcje polecanych treści. Idealny dla marek, które stawiają na estetykę i pełen komfort edycji.',
+              features: [
+                'Do 300 artykułów, rozbudowane kategorie',
+                'SEO techniczne - w cenie',
+                'Newsletter i wybrane integracje marketingowe (np. mailing)',
+                'Zaawansowana analityka i monitoring pozycji',
+                'Przejrzysta struktura treści i nawigacji',
+                'Zaawansowana optymalizacja szybkości i bezpieczeństwa',
+                'WCAG 2.1 AA + Deklaracja Dostępności',
+                'Wsparcie prawne - polityka prywatności, regulaminy',
+                'Intuicyjny CMS do samodzielnego zarządzania treścią',
+                'Darmowe szkolenie PDF dla Ciebie i zespołu',
+              ],
+              btnOne: 'Zamów blog premium',
+              btnOneHref: '#kontakt',
+              lastPlan: true,
+            },
+          ]}
+          note={{
+            text: (
+              <p className='text-light'>
+                <strong className='text-dark'>Masz większe plany? </strong>
+                Tworzymy zaawansowane strony, aplikacje i sklepy w Next.js - rozwiązania szyte na
+                miarę, które spełnią najbardziej wymagające cele biznesowe.
+              </p>
+            ),
+            ctaLabel: 'Porozmawiajmy o Twoim blogu',
+            ctaLink: '#kontakt',
+          }}
         />
 
         <Divider />

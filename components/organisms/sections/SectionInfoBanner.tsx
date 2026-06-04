@@ -26,7 +26,7 @@ export default function SectionInfoBanner({ items }: SectionInfoBannerProps) {
             {' '}
             <InlineLink
               href={item.linkHref}
-              className='hover:text-accent underline underline-offset-2 transition-colors'
+              className='underline underline-offset-2 transition-colors hover:text-accent'
             >
               {item.linkText}
             </InlineLink>

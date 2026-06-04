@@ -4,7 +4,6 @@ import tsparser from '@typescript-eslint/parser';
 import prettier from 'eslint-config-prettier';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import promise from 'eslint-plugin-promise';
-import security from 'eslint-plugin-security';
 import sonarjs from 'eslint-plugin-sonarjs';
 import unusedImports from 'eslint-plugin-unused-imports';
 import importPlugin from 'eslint-plugin-import';
@@ -57,18 +56,27 @@ export default [
         ecmaVersion: 'latest',
       },
     },
+    settings: {
+      'import/resolver': {
+        typescript: true,
+        node: true,
+      },
+    },
     plugins: {
       '@typescript-eslint': tseslint,
       'unused-imports': unusedImports,
       import: importPlugin,
       'jsx-a11y': jsxA11y,
       sonarjs: sonarjs,
-      security: security,
       promise: promise,
       'react-hooks': reactHooks,
       '@next/next': nextPlugin,
     },
     rules: {
+      ...(jsxA11y.configs?.recommended?.rules ?? {}),
+      ...(sonarjs.configs?.recommended?.rules ?? {}),
+      ...(promise.configs?.['flat/recommended']?.rules ?? {}),
+
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/explicit-function-return-type': 'off',
@@ -76,8 +84,16 @@ export default [
       'no-undef': 'off',
 
       'unused-imports/no-unused-imports': 'error',
-      'no-duplicate-imports': 'error',
-      'import/order': 'off',
+      'import/no-duplicates': 'error',
+      'import/no-cycle': 'error',
+      'import/order': [
+        'warn',
+        {
+          groups: ['builtin', 'external', 'internal', ['parent', 'sibling', 'index']],
+          'newlines-between': 'never',
+          alphabetize: { order: 'asc', caseInsensitive: true },
+        },
+      ],
 
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [

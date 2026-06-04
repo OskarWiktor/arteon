@@ -64,7 +64,7 @@ export default function Breadcrumbs({
           <li>
             <InlineLink href='/' variant='default' aria-label={t.home}>
               <RiHomeLine
-                className={cn('text-primary-mid text-medium mt-2', smallIconSizeClasses)}
+                className={cn('text-medium mt-2 text-primary-mid', smallIconSizeClasses)}
               />
             </InlineLink>
           </li>
@@ -75,14 +75,14 @@ export default function Breadcrumbs({
             return (
               <li
                 key={`${item.href}-${index}`}
-                className='text-primary-mid text-medium flex items-center gap-2 text-sm!'
+                className='text-medium flex items-center gap-2 text-sm! text-primary-mid'
               >
-                <span aria-hidden='true' className='text-primary-mid text-sm!'>
+                <span aria-hidden='true' className='text-sm! text-primary-mid'>
                   /
                 </span>
 
                 {isLast ? (
-                  <span className='text-primary text-medium text-sm!' aria-current='page'>
+                  <span className='text-medium text-sm! text-primary' aria-current='page'>
                     {item.label}
                   </span>
                 ) : (

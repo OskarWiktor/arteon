@@ -149,7 +149,7 @@ export default function TextFormatConverter({
         <Card interactive={false} padding='lg'>
           <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <h2 className='h6'>{sourceLabel}</h2>
-            <label className='text-primary-mid hover:text-primary cursor-pointer text-xs font-medium transition-colors'>
+            <label className='cursor-pointer text-xs font-medium text-primary-mid transition-colors hover:text-primary'>
               <Input
                 ref={fileInputRef}
                 type='file'

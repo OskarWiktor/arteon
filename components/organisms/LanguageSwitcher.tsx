@@ -23,6 +23,7 @@ import {
   flexCenterClasses,
   focusRingClasses,
   largeIconSizeClasses,
+  modalBackdropClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/ui-classes';
@@ -152,10 +153,10 @@ export default function LanguageSwitcher({
       onClick={close}
       className='group/link gap-3 rounded-lg px-3 py-2.5 transition-colors hover:bg-white'
     >
-      <span className='text-primary-mid group-hover/link:text-primary w-6 text-center text-xs font-semibold uppercase transition-colors'>
+      <span className='w-6 text-center text-xs font-semibold text-primary-mid uppercase transition-colors group-hover/link:text-primary'>
         {link.label}
       </span>
-      <span className='text-mid group-hover/link:text-primary text-sm font-medium transition-colors'>
+      <span className='text-sm font-medium text-mid transition-colors group-hover/link:text-primary'>
         {link.name}
       </span>
     </InlineLink>
@@ -173,7 +174,7 @@ export default function LanguageSwitcher({
             aria-expanded={isOpen}
             aria-label={t.toggleLabel}
             className={cn(
-              'text-primary hover:bg-primary-light flex h-8 items-center gap-1.5 rounded-md px-2 transition-colors',
+              'flex h-8 items-center gap-1.5 rounded-md px-2 text-primary transition-colors hover:bg-primary-light',
               focusRingClasses,
             )}
           >
@@ -201,15 +202,15 @@ export default function LanguageSwitcher({
             >
               <Wrapper>
                 <div className='grid grid-cols-6 gap-0'>
-                  <div className='border-primary-light border-r pr-4'>
-                    <div className='text-primary flex items-center gap-3 rounded-lg bg-white px-4 py-3'>
+                  <div className='border-r border-primary-light pr-4'>
+                    <div className='flex items-center gap-3 rounded-lg bg-white px-4 py-3 text-primary'>
                       <RiTranslate2
                         className={cn('shrink-0', normalIconSizeClasses)}
                         aria-hidden='true'
                       />
                       <div>
-                        <div className='text-dark text-sm font-medium'>{t.chooseLabel}</div>
-                        <div className='text-light text-xs'>
+                        <div className='text-sm font-medium text-dark'>{t.chooseLabel}</div>
+                        <div className='text-xs text-light'>
                           {currentConfig.label} - {currentConfig.name}
                         </div>
                       </div>
@@ -218,14 +219,14 @@ export default function LanguageSwitcher({
 
                   {popularSorted.length > 0 && (
                     <>
-                      <div className='border-primary-light border-r pr-4 pl-6'>
-                        <span className='text-light mb-2 block px-3 text-[11px] font-semibold tracking-wider uppercase'>
+                      <div className='border-r border-primary-light pr-4 pl-6'>
+                        <span className='mb-2 block px-3 text-[11px] font-semibold tracking-wider text-light uppercase'>
                           {t.popularLabel}
                         </span>
                         <div className='flex flex-col'>{popularCols[0].map(linkItem)}</div>
                       </div>
                       {popularCols[1]?.length > 0 && (
-                        <div className='border-primary-light border-r pt-5 pr-4'>
+                        <div className='border-r border-primary-light pt-5 pr-4'>
                           <div className='flex flex-col'>{popularCols[1].map(linkItem)}</div>
                         </div>
                       )}
@@ -235,7 +236,7 @@ export default function LanguageSwitcher({
                   {otherSorted.length > 0 && (
                     <>
                       <div className='pl-6'>
-                        <span className='text-light mb-2 block px-3 text-[11px] font-semibold tracking-wider uppercase'>
+                        <span className='mb-2 block px-3 text-[11px] font-semibold tracking-wider text-light uppercase'>
                           {t.otherLabel}
                         </span>
                         <div className='flex flex-col'>{otherCols[0].map(linkItem)}</div>
@@ -272,7 +273,7 @@ export default function LanguageSwitcher({
           aria-expanded={isOpen}
           aria-label={t.toggleLabel}
           className={cn(
-            'text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 items-center gap-1.5 rounded-md px-2 transition-colors',
+            'flex h-8 items-center gap-1.5 rounded-md px-2 text-primary transition-colors hover:bg-primary-light focus-visible:ring-primary',
             focusRingClasses,
           )}
         >
@@ -288,7 +289,7 @@ export default function LanguageSwitcher({
         createPortal(
           <>
             <div
-              className='animate-modal-backdrop fixed inset-0 z-[1100] bg-black/50'
+              className={cn('fixed inset-0 z-1100 bg-black/50', modalBackdropClasses)}
               onClick={close}
               aria-hidden='true'
             />
@@ -298,15 +299,15 @@ export default function LanguageSwitcher({
               role='dialog'
               aria-modal='true'
               aria-label={t.chooseLabel}
-              className='animate-dropdown-in fixed inset-x-4 top-1/2 z-[1101] max-h-[80dvh] -translate-y-1/2 overflow-y-auto rounded-lg bg-white p-5 shadow-2xl sm:inset-x-auto sm:left-1/2 sm:w-[420px] sm:-translate-x-1/2'
+              className='animate-dropdown-in fixed inset-x-4 top-1/2 z-1101 max-h-[80dvh] -translate-y-1/2 overflow-y-auto rounded-lg bg-white p-5 shadow-2xl sm:inset-x-auto sm:left-1/2 sm:w-105 sm:-translate-x-1/2'
             >
               <div className={cn('mb-4', flexCenterBetweenClasses)}>
-                <h2 className='text-dark text-base font-semibold'>{t.chooseLabel}</h2>
+                <h2 className='text-base font-semibold text-dark'>{t.chooseLabel}</h2>
                 <button
                   type='button'
                   onClick={close}
                   className={cn(
-                    'text-primary hover:bg-primary-light focus-visible:ring-primary rounded-md transition-colors',
+                    'rounded-md text-primary transition-colors hover:bg-primary-light focus-visible:ring-primary',
                     flexCenterClasses,
                     focusRingClasses,
                     largeIconSizeClasses,
@@ -319,17 +320,17 @@ export default function LanguageSwitcher({
 
               <div className='mb-4 flex items-center gap-2.5 rounded-lg bg-neutral-50 px-3 py-2.5'>
                 <RiTranslate2
-                  className={cn('text-primary shrink-0', smallIconSizeClasses)}
+                  className={cn('shrink-0 text-primary', smallIconSizeClasses)}
                   aria-hidden='true'
                 />
-                <span className='text-dark text-sm font-semibold'>
+                <span className='text-sm font-semibold text-dark'>
                   {currentConfig.label} - {currentConfig.name}
                 </span>
               </div>
 
               {popularSorted.length > 0 && (
                 <>
-                  <span className='text-light mb-1.5 block px-2 text-[10px] font-semibold tracking-wider uppercase'>
+                  <span className='mb-1.5 block px-2 text-[10px] font-semibold tracking-wider text-light uppercase'>
                     {t.popularLabel}
                   </span>
                   <div className='mb-3 grid grid-cols-2 gap-x-2'>
@@ -343,7 +344,7 @@ export default function LanguageSwitcher({
                           onClick={close}
                           className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
                         >
-                          <span className='text-light w-5 text-center text-[11px] font-semibold uppercase'>
+                          <span className='w-5 text-center text-[11px] font-semibold text-light uppercase'>
                             {link.label}
                           </span>
                           <span>{link.name}</span>
@@ -361,7 +362,7 @@ export default function LanguageSwitcher({
                             onClick={close}
                             className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
                           >
-                            <span className='text-light w-5 text-center text-[11px] font-semibold uppercase'>
+                            <span className='w-5 text-center text-[11px] font-semibold text-light uppercase'>
                               {link.label}
                             </span>
                             <span>{link.name}</span>
@@ -375,7 +376,7 @@ export default function LanguageSwitcher({
 
               {otherSorted.length > 0 && (
                 <>
-                  <span className='text-light mb-1.5 block px-2 text-[10px] font-semibold tracking-wider uppercase'>
+                  <span className='mb-1.5 block px-2 text-[10px] font-semibold tracking-wider text-light uppercase'>
                     {t.otherLabel}
                   </span>
                   <div className='grid grid-cols-2 gap-x-2'>
@@ -389,7 +390,7 @@ export default function LanguageSwitcher({
                           onClick={close}
                           className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
                         >
-                          <span className='text-light w-5 text-center text-[11px] font-semibold uppercase'>
+                          <span className='w-5 text-center text-[11px] font-semibold text-light uppercase'>
                             {link.label}
                           </span>
                           <span>{link.name}</span>
@@ -407,7 +408,7 @@ export default function LanguageSwitcher({
                             onClick={close}
                             className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
                           >
-                            <span className='text-light w-5 text-center text-[11px] font-semibold uppercase'>
+                            <span className='w-5 text-center text-[11px] font-semibold text-light uppercase'>
                               {link.label}
                             </span>
                             <span>{link.name}</span>
