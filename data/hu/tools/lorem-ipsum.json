@@ -270,7 +270,16 @@
       "rows": [
         {
           "label": "Nyelv",
-          "values": ["Latin", "Angol", "Angol", "Helyi", "Angol", "Angol", "Angol", "Angol"]
+          "values": [
+            "Latin",
+            "Angol",
+            "Angol",
+            "Helyi",
+            "Angol",
+            "Angol",
+            "Angol",
+            "Angol"
+          ]
         },
         {
           "label": "Téma",

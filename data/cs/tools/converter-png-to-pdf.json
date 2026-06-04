@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Převeďte obrázky PNG na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.",
-      "featureList": ["PNG to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PNG to PDF", "PNG to PDF", "Free PNG to PDF converter"]
+      "featureList": [
+        "PNG to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PNG to PDF",
+        "PNG to PDF",
+        "Free PNG to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Jak převést PNG na PDF",

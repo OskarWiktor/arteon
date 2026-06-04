@@ -5,7 +5,10 @@ function stripBom(s: string): string {
   return s.charCodeAt(0) === 0xfeff ? s.slice(1) : s;
 }
 
-export async function convertText(raw: string, type: TextConversionType): Promise<string> {
+export async function convertText(
+  raw: string,
+  type: TextConversionType,
+): Promise<string> {
   const input = stripBom(raw);
 
   switch (type) {
@@ -39,7 +42,8 @@ export async function convertText(raw: string, type: TextConversionType): Promis
     }
     case 'htmlToMarkdown': {
       const TurndownService = (await import('turndown')).default;
-      const { gfm, tables, strikethrough } = await import('turndown-plugin-gfm');
+      const { gfm, tables, strikethrough } =
+        await import('turndown-plugin-gfm');
       const td = new TurndownService({
         headingStyle: 'atx',
         codeBlockStyle: 'fenced',
@@ -118,10 +122,12 @@ function detectSeparator(firstLine: string): string {
 
 function csvToJson(csv: string): string {
   const lines = csv.trim().split(/\r?\n/);
-  if (lines.length === 0 || !lines[0].trim()) throw new Error('CSV input is empty');
+  if (lines.length === 0 || !lines[0].trim())
+    throw new Error('CSV input is empty');
   const sep = detectSeparator(lines[0]);
   const headers = parseCsvLine(lines[0], sep);
-  if (headers.length === 0 || headers.every(h => !h)) throw new Error('CSV has no valid headers');
+  if (headers.length === 0 || headers.every(h => !h))
+    throw new Error('CSV has no valid headers');
   const dataLines = lines.slice(1).filter(l => l.trim());
   // Header-only CSV returns empty array
   if (dataLines.length === 0) return JSON.stringify([], null, 2);
@@ -219,7 +225,8 @@ function xmlToJson(xml: string): string {
   const parser = new DOMParser();
   const doc = parser.parseFromString(xml, 'text/xml');
   const errorNode = doc.querySelector('parsererror');
-  if (errorNode) throw new Error('Invalid XML: ' + errorNode.textContent?.slice(0, 200));
+  if (errorNode)
+    throw new Error('Invalid XML: ' + errorNode.textContent?.slice(0, 200));
   const result = xmlNodeToObj(doc.documentElement);
   return JSON.stringify(result, null, 2);
 }
@@ -240,7 +247,8 @@ function xmlNodeToObj(node: Element): Record<string, unknown> {
   // Children
   const children = Array.from(node.childNodes);
   const textOnly = children.every(
-    c => c.nodeType === Node.TEXT_NODE || c.nodeType === Node.CDATA_SECTION_NODE,
+    c =>
+      c.nodeType === Node.TEXT_NODE || c.nodeType === Node.CDATA_SECTION_NODE,
   );
 
   if (textOnly) {
@@ -288,8 +296,10 @@ function jsonToXml(json: string): string {
 
 function objToXml(obj: unknown, indent: number): string {
   const pad = '  '.repeat(indent);
-  if (typeof obj !== 'object' || obj === null) return `${pad}${escapeXml(String(obj))}`;
-  if (Array.isArray(obj)) return obj.map(item => objToXml(item, indent)).join('\n');
+  if (typeof obj !== 'object' || obj === null)
+    return `${pad}${escapeXml(String(obj))}`;
+  if (Array.isArray(obj))
+    return obj.map(item => objToXml(item, indent)).join('\n');
 
   const entries = Object.entries(obj as Record<string, unknown>);
   const lines: string[] = [];
@@ -304,12 +314,14 @@ function objToXml(obj: unknown, indent: number): string {
         .map(([k, v]) => ` ${k.slice(1)}="${String(v)}"`)
         .join('');
       const textContent = (value as Record<string, unknown>)['#text'];
-      const childEntries = Object.entries(value as Record<string, unknown>).filter(
-        ([k]) => !k.startsWith('@') && k !== '#text',
-      );
+      const childEntries = Object.entries(
+        value as Record<string, unknown>,
+      ).filter(([k]) => !k.startsWith('@') && k !== '#text');
 
       if (childEntries.length === 0) {
-        lines.push(`${pad}<${key}${attrs}>${escapeXml(String(textContent ?? ''))}</${key}>`);
+        lines.push(
+          `${pad}<${key}${attrs}>${escapeXml(String(textContent ?? ''))}</${key}>`,
+        );
       } else {
         lines.push(`${pad}<${key}${attrs}>`);
         for (const [ck, cv] of childEntries) {

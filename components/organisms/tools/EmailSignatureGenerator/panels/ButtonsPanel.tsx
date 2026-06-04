@@ -1,12 +1,22 @@
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
-import type { SignatureConfig, StyleConfig, CtaRadiusOption } from '@/types/tools/email';
+import type {
+  SignatureConfig,
+  StyleConfig,
+  CtaRadiusOption,
+} from '@/types/tools/email';
 
 type Props = {
   config: SignatureConfig;
   styleConfig: StyleConfig;
-  onTextChange: <K extends keyof SignatureConfig>(key: K, value: SignatureConfig[K]) => void;
-  onStyleChange: <K extends keyof StyleConfig>(key: K, value: StyleConfig[K]) => void;
+  onTextChange: <K extends keyof SignatureConfig>(
+    key: K,
+    value: SignatureConfig[K],
+  ) => void;
+  onStyleChange: <K extends keyof StyleConfig>(
+    key: K,
+    value: StyleConfig[K],
+  ) => void;
   t: {
     buttons: Record<string, string>;
   };

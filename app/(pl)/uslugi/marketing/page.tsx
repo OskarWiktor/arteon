@@ -53,7 +53,10 @@ function ItemListSchema() {
   const services = [
     { name: 'Audyt SEO', path: '/uslugi/marketing/audyt-seo' },
     { name: 'Optymalizacja SEO', path: '/uslugi/marketing/optymalizacja-seo' },
-    { name: 'Pozycjonowanie stron', path: '/uslugi/marketing/pozycjonowanie-stron' },
+    {
+      name: 'Pozycjonowanie stron',
+      path: '/uslugi/marketing/pozycjonowanie-stron',
+    },
   ];
   const json = {
     '@context': 'https://schema.org',
@@ -80,7 +83,11 @@ export default function OfferMarketingHubPage() {
     <>
       <HeroBanner
         title='Marketing internetowy'
-        description={<>Przyciągnij nowych klientów, przemyślanym działaniem marketingowym</>}
+        description={
+          <>
+            Przyciągnij nowych klientów, przemyślanym działaniem marketingowym
+          </>
+        }
         variant='left'
         backgroundImage='/assets/projects/msc/moskup-strony-msc-psychotherapy.webp'
         overlay='black'
@@ -105,84 +112,118 @@ export default function OfferMarketingHubPage() {
               title: 'Jasną strategię działania',
               description: (
                 <>
-                  Plan działań oparty na psychologii w biznesie z podziałem na szybkie wygrane i
-                  strategiczne działania długoterminowe.
+                  Plan działań oparty na psychologii w biznesie z podziałem na
+                  szybkie wygrane i strategiczne działania długoterminowe.
                 </>
               ),
-              icon: <RiLightbulbFlashLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiLightbulbFlashLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Raporty i decyzje oparte na danych',
               description: (
                 <>
-                  Przed realizacją jakichkolwiek działań, dokładnie badamy Twoją konkurencję, tak,
-                  abyś miał pewność, że marketing z nami będzie skuteczny.
+                  Przed realizacją jakichkolwiek działań, dokładnie badamy Twoją
+                  konkurencję, tak, abyś miał pewność, że marketing z nami
+                  będzie skuteczny.
                 </>
               ),
-              icon: <IoAnalytics className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <IoAnalytics
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Pełna własność danych i kont',
               description: (
                 <>
-                  Masz dostęp do wszystkich narzędzi, z których korzystamy, dzięki czemu w dowolnej
-                  chwili możesz sprawdzić wyniki naszych działań.
+                  Masz dostęp do wszystkich narzędzi, z których korzystamy,
+                  dzięki czemu w dowolnej chwili możesz sprawdzić wyniki naszych
+                  działań.
                 </>
               ),
-              icon: <RiShieldCheckLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiShieldCheckLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'SEO techniczne + treściowe',
               description: (
                 <>
-                  Prowadzimy pełne działania pozycjonowania stron, dzięki czemu Twoja witryna ma
-                  treść, która odpowiada klientom oraz techniczną strukturę, którą lubią
-                  wyszukiwarki
+                  Prowadzimy pełne działania pozycjonowania stron, dzięki czemu
+                  Twoja witryna ma treść, która odpowiada klientom oraz
+                  techniczną strukturę, którą lubią wyszukiwarki
                 </>
               ),
-              icon: <RiSearchLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiSearchLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Lokalne lub krajowe SEO',
               description: (
                 <>
-                  Prowadzimy działania SEO krajowe oraz lokalne, dzięki czemu Twój biznes może
-                  rozwijać się w Twoim mieście i jednocześnie za granicą lub w całym kraju
+                  Prowadzimy działania SEO krajowe oraz lokalne, dzięki czemu
+                  Twój biznes może rozwijać się w Twoim mieście i jednocześnie
+                  za granicą lub w całym kraju
                 </>
               ),
-              icon: <RiSearchEyeLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiSearchEyeLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Reklamy Google i Meta',
               description: (
                 <>
-                  Tworzymy kampanie oparte na realnych problemach klientów. Testujemy kreacje i
-                  słowa kluczowe, a budżet kierujemy w to, co działa.
+                  Tworzymy kampanie oparte na realnych problemach klientów.
+                  Testujemy kreacje i słowa kluczowe, a budżet kierujemy w to,
+                  co działa.
                 </>
               ),
-              icon: <RiBarChart2Fill className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBarChart2Fill
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Zero ukrytych kosztów',
               description: (
                 <>
-                  Na każdym etapie wiesz, ile i za co płacisz. Budżet, zakres i terminy są rozpisane
-                  przed startem działań.
+                  Na każdym etapie wiesz, ile i za co płacisz. Budżet, zakres i
+                  terminy są rozpisane przed startem działań.
                 </>
               ),
               icon: (
-                <RiCustomerService2Line className={cn('text-primary', normalIconSizeClasses)} />
+                <RiCustomerService2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
             {
               title: 'Wsparcie po wdrożeniu',
               description: (
                 <>
-                  Stale informujemy Cię o wynikach naszych działań, dajemy Ci jasne podsumowanie w
-                  mailu oraz prowadzimy konsultacje
+                  Stale informujemy Cię o wynikach naszych działań, dajemy Ci
+                  jasne podsumowanie w mailu oraz prowadzimy konsultacje
                 </>
               ),
-              icon: <RiShieldCheckLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiShieldCheckLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
           ]}
         />
@@ -202,9 +243,9 @@ export default function OfferMarketingHubPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Przeprowadzamy audyt SEO, a następnie ustalamy cele i zakres na trzy najbliższe
-                    miesiące: tematy treści, podstrony do dopracowania i działania wspierające Twoją
-                    pozycję.
+                    Przeprowadzamy audyt SEO, a następnie ustalamy cele i zakres
+                    na trzy najbliższe miesiące: tematy treści, podstrony do
+                    dopracowania i działania wspierające Twoją pozycję.
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/marketing/audyt-seo'>
@@ -221,11 +262,15 @@ export default function OfferMarketingHubPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak, aby
-                    Google uznał ją za wartościową i lepszą od Twojej konkurencji.
+                    Optymalizujemy prędkość strony i poprawiamy ją od strony
+                    technicznej tak, aby Google uznał ją za wartościową i lepszą
+                    od Twojej konkurencji.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/marketing/optymalizacja-seo'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/marketing/optymalizacja-seo'
+                    >
                       Przejdź do optymalizacji
                     </ButtonLink>
                   </div>
@@ -239,11 +284,15 @@ export default function OfferMarketingHubPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Budujemy widoczność strategicznym działaniem co miesiąc. Wprowadzamy treści,
-                    które odpowiadają na potrzeby Twoich klientów.
+                    Budujemy widoczność strategicznym działaniem co miesiąc.
+                    Wprowadzamy treści, które odpowiadają na potrzeby Twoich
+                    klientów.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/marketing/pozycjonowanie-stron'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/marketing/pozycjonowanie-stron'
+                    >
                       Zobacz pozycjonowanie
                     </ButtonLink>
                   </div>
@@ -279,21 +328,24 @@ export default function OfferMarketingHubPage() {
             {
               title: 'Strony internetowe',
               size: 'large',
-              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              backgroundImage:
+                '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Sklepy internetowe',
               size: 'medium',
-              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              backgroundImage:
+                '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
               title: 'Projekty graficzne',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
+              backgroundImage:
+                '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne',
             },

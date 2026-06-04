@@ -1,15 +1,16 @@
 'use client';
 
 import { useRef } from 'react';
+
 import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
 import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
-import SectionHeader from '@/components/molecules/SectionHeader';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
+import SectionHeader from '@/components/molecules/SectionHeader';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import { getToolsSections } from '@/lib/i18n/toolRegistry';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import { noScrollbarClasses, focusRingClasses } from '@/lib/uiClasses';
 
 const AUTO_PLAY_INTERVAL_MS = 6000;
 
@@ -19,6 +20,18 @@ type Props = {
   subtitle?: string;
 };
 
+/**
+ * Render a localized, accessible tools carousel section with navigation and pagination.
+ *
+ * The component collects tools for the current locale, orders them by `carouselOrder`, and
+ * displays up to `max` items as a horizontally scrollable, auto-playing carousel. If no tools
+ * are available for the locale, nothing is rendered.
+ *
+ * @param max - Maximum number of tool items to display (default 10)
+ * @param title - Optional override for the section title
+ * @param subtitle - Optional subtitle for the section header
+ * @returns The section element containing the carousel, or `null` when there are no tools to display
+ */
 export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
   const locale = useLocale();
   const t = useDictionary().toolsCarousel;
@@ -30,17 +43,25 @@ export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
   const toolsSections = getToolsSections(locale);
   const items = (() => {
     const all = toolsSections.flatMap(section => section.items);
-    return all.sort((a, b) => (a.carouselOrder ?? 999) - (b.carouselOrder ?? 999)).slice(0, max);
+    return all
+      .sort((a, b) => (a.carouselOrder ?? 999) - (b.carouselOrder ?? 999))
+      .slice(0, max);
   })();
 
-  const { currentSlide, maxSlides, isScrollable, scrollByCards, goToSlide, onKeyDown } =
-    useCarouselScroller({
-      itemCount: items.length,
-      scrollRef,
-      cardRef,
-      autoPlay: true,
-      autoPlayIntervalMs: AUTO_PLAY_INTERVAL_MS,
-    });
+  const {
+    currentSlide,
+    maxSlides,
+    isScrollable,
+    scrollByCards,
+    goToSlide,
+    onKeyDown,
+  } = useCarouselScroller({
+    itemCount: items.length,
+    scrollRef,
+    cardRef,
+    autoPlay: true,
+    autoPlayIntervalMs: AUTO_PLAY_INTERVAL_MS,
+  });
 
   if (!items.length) return null;
 

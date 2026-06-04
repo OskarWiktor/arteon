@@ -1,5 +1,8 @@
 import type { RefObject } from 'react';
-import { flexCenterBetweenClasses, smallIconSizeClasses } from '@/lib/uiClasses';
+import {
+  flexCenterBetweenClasses,
+  smallIconSizeClasses,
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 type CropRect = {
@@ -34,6 +37,25 @@ type Props = {
   };
 };
 
+/**
+ * Renders an image preview with an optional draggable, resizable crop rectangle overlay.
+ *
+ * Renders a header with an optional computed dimensions label, a fixed-aspect preview area (controlled by `previewPadding`) that contains the image, and — when `cropRectPreview` is provided — an interactive crop overlay with a 3x3 grid and corner resize handles.
+ *
+ * @param cropRectPreview - CSS positioning/size for the overlay (`left`, `top`, `width`, `height` as CSS values). When omitted, no crop overlay is shown.
+ * @param previewPadding - Bottom padding percentage used to enforce the preview's aspect ratio (applied as `padding-bottom: {previewPadding}%`).
+ * @param gridStroke - CSS color used for the grid cell borders and handle outlines.
+ * @param selectionShapeClass - Additional classes applied to the overlay and grid to control selection appearance.
+ * @param isDragging - When true, the overlay shows a grabbing cursor.
+ * @param previewRef - Ref attached to the preview container element.
+ * @param startMoveDrag - Pointer down handler that begins moving the crop rectangle.
+ * @param startResizeDrag - Pointer down handler that begins resizing; called with the pointer event and corner identifier ('tl'|'tr'|'bl'|'br').
+ * @param handlePointerMove - Pointer move handler used while dragging/resizing.
+ * @param handlePointerUp - Pointer up handler to end dragging/resizing.
+ * @param handlePointerLeave - Pointer leave handler to abort or finish interactions when the pointer leaves the overlay.
+ * @param dims - Optional display dimensions object with `{ width, height }` shown in the header when present.
+ * @param t - Localization strings used for labels: `{ cropPreview, cropPreviewHelper, previewAlt }`.
+ */
 export default function CropPreview({
   imageUrl,
   fileName,
@@ -82,7 +104,10 @@ export default function CropPreview({
               onPointerMove={handlePointerMove}
               onPointerUp={handlePointerUp}
               onPointerLeave={handlePointerLeave}
-              className={cn('absolute box-border', isDragging ? 'cursor-grabbing' : 'cursor-grab')}
+              className={cn(
+                'absolute box-border',
+                isDragging ? 'cursor-grabbing' : 'cursor-grab',
+              )}
               style={{ ...cropRectPreview }}
             >
               <div className='pointer-events-none absolute inset-0'>
@@ -99,7 +124,11 @@ export default function CropPreview({
                   )}
                 >
                   {Array.from({ length: 9 }).map((_, i) => (
-                    <div key={i} className='border' style={{ borderColor: gridStroke }} />
+                    <div
+                      key={i}
+                      className='border'
+                      style={{ borderColor: gridStroke }}
+                    />
                   ))}
                 </div>
               </div>

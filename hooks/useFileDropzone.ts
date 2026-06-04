@@ -8,7 +8,11 @@ type UseFileDropzoneOptions = {
   dropEffect?: DataTransfer['dropEffect'];
 };
 
-export function useFileDropzone({ onFiles, disabled = false, dropEffect }: UseFileDropzoneOptions) {
+export function useFileDropzone({
+  onFiles,
+  disabled = false,
+  dropEffect,
+}: UseFileDropzoneOptions) {
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (disabled) return;
     onFiles(e.target.files);

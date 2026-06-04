@@ -11,7 +11,22 @@ import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { Locale } from '@/types/locale';
 
-function LinkGrid({ routes, connector }: { routes: ResolvedRoute[]; connector: string }) {
+/**
+ * Render a responsive grid of links for the given conversion routes.
+ *
+ * Each route is shown as an anchor whose text is `FORMAT_DISPLAY_LABELS[source] + connector + FORMAT_DISPLAY_LABELS[target]`.
+ *
+ * @param routes - Array of resolved routes; each route must provide `toolKey`, `href`, `source`, and `target`
+ * @param connector - String inserted between source and target labels in each link
+ * @returns A JSX element containing a responsive grid of anchors for the provided routes
+ */
+function LinkGrid({
+  routes,
+  connector,
+}: {
+  routes: ResolvedRoute[];
+  connector: string;
+}) {
   return (
     <div className='grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4'>
       {routes.map(r => (
@@ -23,7 +38,8 @@ function LinkGrid({ routes, connector }: { routes: ResolvedRoute[]; connector: s
             flexCenterClasses,
           )}
         >
-          {FORMAT_DISPLAY_LABELS[r.source]} {connector} {FORMAT_DISPLAY_LABELS[r.target]}
+          {FORMAT_DISPLAY_LABELS[r.source]} {connector}{' '}
+          {FORMAT_DISPLAY_LABELS[r.target]}
         </a>
       ))}
     </div>
@@ -35,7 +51,10 @@ interface RelatedConvertersProps {
   locale: Locale;
 }
 
-export default async function RelatedConverters({ toolKey, locale }: RelatedConvertersProps) {
+export default async function RelatedConverters({
+  toolKey,
+  locale,
+}: RelatedConvertersProps) {
   const conversion = getConversionByToolKey(toolKey);
   if (!conversion) return null;
 
@@ -46,8 +65,14 @@ export default async function RelatedConverters({ toolKey, locale }: RelatedConv
   if (toSameTarget.length === 0 && fromSameSource.length === 0) return null;
 
   const { relatedConverters: t } = await getDictionary(locale);
-  const titleTo = t.titleConvertTo.replace('{{format}}', FORMAT_DISPLAY_LABELS[target]);
-  const titleFrom = t.titleConvertFrom.replace('{{format}}', FORMAT_DISPLAY_LABELS[source]);
+  const titleTo = t.titleConvertTo.replace(
+    '{{format}}',
+    FORMAT_DISPLAY_LABELS[target],
+  );
+  const titleFrom = t.titleConvertFrom.replace(
+    '{{format}}',
+    FORMAT_DISPLAY_LABELS[source],
+  );
 
   return (
     <>

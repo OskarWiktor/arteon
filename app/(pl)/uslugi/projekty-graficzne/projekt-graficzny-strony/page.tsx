@@ -32,11 +32,13 @@ export const metadata = {
   description:
     'Makiety i layouty stron internetowych tworzone z myślą o czytelności i konwersji. Estetyka, UX i SEO w jednym projekcie.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony',
+    canonical:
+      'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony',
   },
   openGraph: {
     title: 'Projekt graficzny strony | Arteon',
-    description: 'Layout www dopasowany do Twojej marki i celów biznesowych. Gotowy do wdrożenia.',
+    description:
+      'Layout www dopasowany do Twojej marki i celów biznesowych. Gotowy do wdrożenia.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony',
     type: 'website',
     images: [
@@ -60,7 +62,10 @@ function ServiceSchema() {
   });
 
   return (
-    <Script id='schema-service-projekt-graficzny-strony' type='application/ld+json'>
+    <Script
+      id='schema-service-projekt-graficzny-strony'
+      type='application/ld+json'
+    >
       {JSON.stringify(json)}
     </Script>
   );
@@ -73,9 +78,9 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
         title='Projekt graficzny strony'
         description={
           <>
-            Wygląd, struktura i komfort użytkownika pracują na sprzedaż. Zaprojektujemy layout
-            Twojej strony tak, aby prowadził wzrok od pierwszego wrażenia, przez ofertę, aż po
-            kontakt lub zakup.
+            Wygląd, struktura i komfort użytkownika pracują na sprzedaż.
+            Zaprojektujemy layout Twojej strony tak, aby prowadził wzrok od
+            pierwszego wrażenia, przez ofertę, aż po kontakt lub zakup.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -89,7 +94,10 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
+        third={{
+          href: `/uslugi/projekty-graficzne`,
+          label: 'Projekty graficzne',
+        }}
         fourth={{
           href: `/uslugi/projekty-graficzne/projekt-graficzny-strony`,
           label: 'Projekt graficzny strony',
@@ -110,11 +118,13 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
         <SectionInfo title='Co zyskujesz zamawiając projekt graficzny strony?'>
           <p>
             <strong>
-              Przejrzysty projekt strony, bloga czy sklepu zwiększa wiarygodność firmy w oczach
-              odbiorców od pierwszych sekund.
+              Przejrzysty projekt strony, bloga czy sklepu zwiększa wiarygodność
+              firmy w oczach odbiorców od pierwszych sekund.
             </strong>
-            Odbiorcy bardzo mocno oceniają firmę przez wygląd ich strony oraz materiałów - nawet
-            <strong> ~75%</strong> wrażeń o wiarygodności wynika z jakości oprawy wizualnej
+            Odbiorcy bardzo mocno oceniają firmę przez wygląd ich strony oraz
+            materiałów - nawet
+            <strong> ~75%</strong> wrażeń o wiarygodności wynika z jakości
+            oprawy wizualnej
             <a
               href='https://credibility.stanford.edu/guidelines/index.html'
               target='_blank'
@@ -129,18 +139,25 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
           <br />
 
           <p>
-            <strong>Układ, hierarchia i czytelne CTA skracają drogę do decyzji.</strong> Użytkownik
-            bez wysiłku znajduje to, czego szuka: ofertę, referencje i przyciski kontaktu. Spójny
-            design porządkuje treść, zmniejsza liczbę pytań i ułatwia rozmowę handlową.
+            <strong>
+              Układ, hierarchia i czytelne CTA skracają drogę do decyzji.
+            </strong>{' '}
+            Użytkownik bez wysiłku znajduje to, czego szuka: ofertę, referencje
+            i przyciski kontaktu. Spójny design porządkuje treść, zmniejsza
+            liczbę pytań i ułatwia rozmowę handlową.
           </p>
 
           <br />
 
           <p>
-            <strong>Dobry projekt graficzny strony robi za Ciebie trzy rzeczy naraz:</strong>
+            <strong>
+              Dobry projekt graficzny strony robi za Ciebie trzy rzeczy naraz:
+            </strong>
           </p>
           <ul className='ml-5 list-disc'>
-            <li>Przyciąga uwagę i utrzymuje ją na najważniejszych treściach,</li>
+            <li>
+              Przyciąga uwagę i utrzymuje ją na najważniejszych treściach,
+            </li>
             <li>Wyjaśnia ofertę w prostych blokach i przykładach,</li>
             <li>Prowadzi do działania: kontakt, wycena, rezerwacja.</li>
           </ul>
@@ -148,9 +165,10 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
           <br />
 
           <p>
-            Gotowy layout porządkuje też współpracę z deweloperem: zamiast ciągłych zmian „w trakcie
-            kodowania” masz zatwierdzony projekt, do którego wszyscy się odnoszą. Mniej poprawek
-            oznacza krótszy czas wdrożenia i niższe koszty.
+            Gotowy layout porządkuje też współpracę z deweloperem: zamiast
+            ciągłych zmian „w trakcie kodowania” masz zatwierdzony projekt, do
+            którego wszyscy się odnoszą. Mniej poprawek oznacza krótszy czas
+            wdrożenia i niższe koszty.
           </p>
         </SectionInfo>
 
@@ -164,47 +182,70 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
               title: 'Przemyślany układ i estetyka',
               description: (
                 <>
-                  Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie decyzji na stronie -
-                  od nagłówka po stopkę.
+                  Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie
+                  decyzji na stronie - od nagłówka po stopkę.
                 </>
               ),
-              icon: <RiLayoutLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiLayoutLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Responsywność i czytelność',
               description: (
                 <>
-                  Projekt działa na komputerze, tablecie i telefonie, zachowując spójny wygląd i
-                  wygodę użycia.
+                  Projekt działa na komputerze, tablecie i telefonie, zachowując
+                  spójny wygląd i wygodę użycia.
                 </>
               ),
-              icon: <RiDeviceLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiDeviceLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Gotowość do wdrożenia',
               description: (
                 <>
-                  Dostarczamy pliki i rekomendacje, które przyspieszają pracę dewelopera i skracają
-                  czas publikacji.
+                  Dostarczamy pliki i rekomendacje, które przyspieszają pracę
+                  dewelopera i skracają czas publikacji.
                 </>
               ),
-              icon: <RiCodeSSlashFill className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiCodeSSlashFill
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Wspólne dopracowanie szczegółów',
               description: (
                 <>
-                  Uwzględniamy poprawki i dopracowujemy kolory, typografię oraz elementy nawigacji
-                  do pełnej akceptacji.
+                  Uwzględniamy poprawki i dopracowujemy kolory, typografię oraz
+                  elementy nawigacji do pełnej akceptacji.
                 </>
               ),
-              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiPencilRuler2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Faktura po realizacji',
-              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              description: (
+                <>
+                  Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
+                  formie.
+                </>
+              ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
           ]}
@@ -217,41 +258,42 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
           subtitle='Kiedy ma największy sens?'
         >
           <p>
-            Projekt graficzny strony najbardziej opłaca się wtedy, gdy chcesz świadomie zaplanować
-            każdy ekran, zamiast „składać” stronę z przypadkowych sekcji.
+            Projekt graficzny strony najbardziej opłaca się wtedy, gdy chcesz
+            świadomie zaplanować każdy ekran, zamiast „składać” stronę z
+            przypadkowych sekcji.
           </p>
 
           <br />
 
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              Planujesz nową stronę lub redesign i chcesz najpierw zobaczyć gotowy layout, zanim
-              zainwestujesz w wdrożenie.
+              Planujesz nową stronę lub redesign i chcesz najpierw zobaczyć
+              gotowy layout, zanim zainwestujesz w wdrożenie.
             </li>
             <li>
-              Masz rozbudowaną ofertę i potrzebujesz jasnej ścieżki użytkownika: od wejścia na
-              stronę do kontaktu lub zakupu.
+              Masz rozbudowaną ofertę i potrzebujesz jasnej ścieżki użytkownika:
+              od wejścia na stronę do kontaktu lub zakupu.
             </li>
             <li>
-              Współpracujesz z deweloperem i chcesz przekazać mu konkretny projekt zamiast ogólnego
-              briefu.
+              Współpracujesz z deweloperem i chcesz przekazać mu konkretny
+              projekt zamiast ogólnego briefu.
             </li>
             <li>
-              Chcesz uporządkować aktualną stronę: poprawić czytelność, nagłówki, sekcje i wezwania
-              do działania.
+              Chcesz uporządkować aktualną stronę: poprawić czytelność,
+              nagłówki, sekcje i wezwania do działania.
             </li>
             <li>
-              Przygotowujesz landing page pod kampanie reklamowe i zależy Ci na jak najlepszym
-              wykorzystaniu ruchu.
+              Przygotowujesz landing page pod kampanie reklamowe i zależy Ci na
+              jak najlepszym wykorzystaniu ruchu.
             </li>
           </ul>
 
           <br />
 
           <p>
-            Jeśli Twoja strona dziś „jakoś działa”, ale czujesz, że nie wykorzystuje potencjału -
-            projekt graficzny jest dobrym krokiem przed kolejną inwestycją w reklamy czy
-            pozycjonowanie.
+            Jeśli Twoja strona dziś „jakoś działa”, ale czujesz, że nie
+            wykorzystuje potencjału - projekt graficzny jest dobrym krokiem
+            przed kolejną inwestycją w reklamy czy pozycjonowanie.
           </p>
         </SectionInfo>
 
@@ -363,7 +405,8 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
                 'Najczęściej pracujemy w Figmie i w tej formie przekazujemy projekt do wdrożenia. Możemy również zająć się realizacją strony, co wpłynie na mniejsze koszty.',
             },
             {
-              question: 'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
+              question:
+                'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
               answer:
                 'Tak, po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go od razu lub w przyszłości, a także rozwijać swoją stronę o kolejne podstrony na bazie dostarczonego projektu.',
             },
@@ -383,28 +426,33 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             {
               title: 'Strony internetowe',
               size: 'large',
-              backgroundImage: '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
+              backgroundImage:
+                '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Sklepy internetowe',
               size: 'medium',
-              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              backgroundImage:
+                '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
               title: 'Identyfikacja wizualna',
               size: 'small',
-              backgroundImage: '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
+              backgroundImage:
+                '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Pozycjonowanie stron',
               size: 'small',
-              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              backgroundImage:
+                '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },

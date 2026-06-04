@@ -30,7 +30,10 @@ const BentoItemSizeClasses: Record<BentoItemSize, string> = {
 
 export default function SectionBento({ title, items }: SectionBentoProps) {
   return (
-    <section data-section='bento' aria-labelledby={title ? 'bento-title' : undefined}>
+    <section
+      data-section='bento'
+      aria-labelledby={title ? 'bento-title' : undefined}
+    >
       {title && <SectionHeader title={title} />}
 
       <div className='grid auto-rows-[240px] grid-cols-2 gap-3 md:grid-cols-4'>
@@ -38,9 +41,12 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
           return (
             <div
               key={index}
-              className={cn('relative flex flex-col justify-end overflow-hidden rounded-lg', {
-                [BentoItemSizeClasses[item.size]]: true,
-              })}
+              className={cn(
+                'relative flex flex-col justify-end overflow-hidden rounded-lg',
+                {
+                  [BentoItemSizeClasses[item.size]]: true,
+                },
+              )}
             >
               <Image
                 src={item.backgroundImage}
@@ -76,7 +82,11 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
                 </h3>
                 <p className='text-sm text-white/80'>{item.description}</p>
                 {item.btnLabel && item.btnLink && (
-                  <ButtonLink href={item.btnLink} variant='accent' className='mt-3'>
+                  <ButtonLink
+                    href={item.btnLink}
+                    variant='accent'
+                    className='mt-3'
+                  >
                     {item.btnLabel}
                   </ButtonLink>
                 )}

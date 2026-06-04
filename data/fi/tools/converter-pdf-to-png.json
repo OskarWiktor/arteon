@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Muunna PDF-sivut PNG-kuviksi. Korkea laatu, ei rajoituksia. Ilmainen.",
-      "featureList": ["PDF to PNG conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PDF to PNG", "PDF to PNG", "Free PDF to PNG converter"]
+      "featureList": [
+        "PDF to PNG conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PDF to PNG",
+        "PDF to PNG",
+        "Free PDF to PNG converter"
+      ]
     },
     "howTo": {
       "name": "Kuinka muuntaa PDF PNG-muotoon",

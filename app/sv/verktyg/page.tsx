@@ -38,7 +38,11 @@ export const metadata = {
     url: toAbsoluteUrl('/sv/verktyg'),
     type: 'website',
     images: [
-      { url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 },
+      {
+        url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),
+        width: 1200,
+        height: 630,
+      },
     ],
   },
 };
@@ -146,7 +150,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 11,
         name: 'JPG till WebP-konverterare',
-        description: 'Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.',
+        description:
+          'Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.',
         url: toAbsoluteUrl('/sv/verktyg/jpg-till-webp-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -174,7 +179,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 14,
         name: 'PNG till WebP-konverterare',
-        description: 'Konvertera PNG-bilder till WebP. Mindre filer med bibehållen transparens.',
+        description:
+          'Konvertera PNG-bilder till WebP. Mindre filer med bibehållen transparens.',
         url: toAbsoluteUrl('/sv/verktyg/png-till-webp-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -193,7 +199,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 16,
         name: 'WebP till PNG-konverterare',
-        description: 'Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering.',
+        description:
+          'Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering.',
         url: toAbsoluteUrl('/sv/verktyg/webp-till-png-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -212,7 +219,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 18,
         name: 'SVG till JPG-konverterare',
-        description: 'Konvertera SVG-filer till kompakt JPG. Mindre fil, full kompatibilitet.',
+        description:
+          'Konvertera SVG-filer till kompakt JPG. Mindre fil, full kompatibilitet.',
         url: toAbsoluteUrl('/sv/verktyg/svg-till-jpg-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -221,7 +229,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 19,
         name: 'BMP till JPG-konverterare',
-        description: 'Konvertera BMP-filer till lättvikts-JPG. Drastisk storleksminskning.',
+        description:
+          'Konvertera BMP-filer till lättvikts-JPG. Drastisk storleksminskning.',
         url: toAbsoluteUrl('/sv/verktyg/bmp-till-jpg-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -250,7 +259,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 22,
         name: 'GIF till JPG-konverterare',
-        description: 'Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.',
+        description:
+          'Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.',
         url: toAbsoluteUrl('/sv/verktyg/gif-till-jpg-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -259,7 +269,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 23,
         name: 'SVG till WebP-konverterare',
-        description: 'Konvertera SVG-grafik till lattvikts-WebP. Idealiskt for webbplatser.',
+        description:
+          'Konvertera SVG-grafik till lattvikts-WebP. Idealiskt for webbplatser.',
         url: toAbsoluteUrl('/sv/verktyg/svg-till-webp-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -268,7 +279,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 24,
         name: 'GIF till WebP-konverterare',
-        description: 'Exportera forsta GIF-bildrutan som lattvikts-WebP. Mindre fil.',
+        description:
+          'Exportera forsta GIF-bildrutan som lattvikts-WebP. Mindre fil.',
         url: toAbsoluteUrl('/sv/verktyg/gif-till-webp-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -277,7 +289,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 25,
         name: 'BMP till WebP-konverterare',
-        description: 'Konvertera BMP-filer till lattvikts-WebP. Upp till 95% mindre.',
+        description:
+          'Konvertera BMP-filer till lattvikts-WebP. Upp till 95% mindre.',
         url: toAbsoluteUrl('/sv/verktyg/bmp-till-webp-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -286,7 +299,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 26,
         name: 'AVIF till JPG-konverterare',
-        description: 'Konvertera AVIF-filer till universell JPG. Kompatibel overallt.',
+        description:
+          'Konvertera AVIF-filer till universell JPG. Kompatibel overallt.',
         url: toAbsoluteUrl('/sv/verktyg/avif-till-jpg-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -295,7 +309,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 27,
         name: 'AVIF till PNG-konverterare',
-        description: 'Konvertera AVIF-filer till forlustfri PNG. Full kvalitet.',
+        description:
+          'Konvertera AVIF-filer till forlustfri PNG. Full kvalitet.',
         url: toAbsoluteUrl('/sv/verktyg/avif-till-png-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -313,7 +328,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 29,
         name: 'HEIC till JPG-konverterare',
-        description: 'Konvertera iPhone HEIC-foton till universell JPG. Ingen registrering.',
+        description:
+          'Konvertera iPhone HEIC-foton till universell JPG. Ingen registrering.',
         url: toAbsoluteUrl('/sv/verktyg/heic-till-jpg-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -340,7 +356,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 32,
         name: 'TIFF till JPG-konverterare',
-        description: 'Konvertera TIFF-filer till kompakt JPG. Idealiskt for skanningar.',
+        description:
+          'Konvertera TIFF-filer till kompakt JPG. Idealiskt for skanningar.',
         url: toAbsoluteUrl('/sv/verktyg/tiff-till-jpg-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -358,7 +375,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 34,
         name: 'TIFF till WebP-konverterare',
-        description: 'Konvertera TIFF-filer till lattvikts-WebP. Massiv minskning.',
+        description:
+          'Konvertera TIFF-filer till lattvikts-WebP. Massiv minskning.',
         url: toAbsoluteUrl('/sv/verktyg/tiff-till-webp-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -377,7 +395,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 36,
         name: 'PNG till AVIF-konverterare',
-        description: 'Konvertera PNG-grafik till AVIF med transparensstod. Betydligt mindre filer.',
+        description:
+          'Konvertera PNG-grafik till AVIF med transparensstod. Betydligt mindre filer.',
         url: toAbsoluteUrl('/sv/verktyg/png-till-avif-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -396,7 +415,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 38,
         name: 'SVG till AVIF-konverterare',
-        description: 'Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat.',
+        description:
+          'Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat.',
         url: toAbsoluteUrl('/sv/verktyg/svg-till-avif-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -405,7 +425,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 39,
         name: 'BMP till AVIF-konverterare',
-        description: 'Konvertera okomprimerade BMP-filer till ultrakompakt AVIF.',
+        description:
+          'Konvertera okomprimerade BMP-filer till ultrakompakt AVIF.',
         url: toAbsoluteUrl('/sv/verktyg/bmp-till-avif-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -433,7 +454,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 42,
         name: 'TIFF till AVIF-konverterare',
-        description: 'Konvertera TIFF-filer till modernt AVIF. Massiv filstorleksreducering.',
+        description:
+          'Konvertera TIFF-filer till modernt AVIF. Massiv filstorleksreducering.',
         url: toAbsoluteUrl('/sv/verktyg/tiff-till-avif-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -442,7 +464,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 43,
         name: 'JPG till GIF-konverterare',
-        description: 'Konvertera JPG-foton till GIF-format. Perfekt for enkel grafik och ikoner.',
+        description:
+          'Konvertera JPG-foton till GIF-format. Perfekt for enkel grafik och ikoner.',
         url: toAbsoluteUrl('/sv/verktyg/jpg-till-gif-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -451,7 +474,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 44,
         name: 'PNG till GIF-konverterare',
-        description: 'Konvertera PNG-grafik till GIF. Idealiskt for enkla ikoner och grafik.',
+        description:
+          'Konvertera PNG-grafik till GIF. Idealiskt for enkla ikoner och grafik.',
         url: toAbsoluteUrl('/sv/verktyg/png-till-gif-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -460,7 +484,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 45,
         name: 'WebP till GIF-konverterare',
-        description: 'Konvertera WebP-bilder till GIF-format for maximal kompatibilitet.',
+        description:
+          'Konvertera WebP-bilder till GIF-format for maximal kompatibilitet.',
         url: toAbsoluteUrl('/sv/verktyg/webp-till-gif-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -487,7 +512,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 48,
         name: 'JPG till TIFF-konverterare',
-        description: 'Konvertera JPG-foton till forlustfritt TIFF. For utskrift och arkivering.',
+        description:
+          'Konvertera JPG-foton till forlustfritt TIFF. For utskrift och arkivering.',
         url: toAbsoluteUrl('/sv/verktyg/jpg-till-tiff-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -505,7 +531,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 50,
         name: 'WebP till TIFF-konverterare',
-        description: 'Konvertera WebP-bilder till professionellt TIFF for utskrift och arkivering.',
+        description:
+          'Konvertera WebP-bilder till professionellt TIFF for utskrift och arkivering.',
         url: toAbsoluteUrl('/sv/verktyg/webp-till-tiff-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -514,7 +541,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 51,
         name: 'SVG till TIFF-konverterare',
-        description: 'Konvertera vektor-SVG-grafik till hogkvalitativt TIFF-raster.',
+        description:
+          'Konvertera vektor-SVG-grafik till hogkvalitativt TIFF-raster.',
         url: toAbsoluteUrl('/sv/verktyg/svg-till-tiff-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -523,7 +551,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 52,
         name: 'BMP till TIFF-konverterare',
-        description: 'Konvertera BMP-filer till professionellt TIFF-format for utskrift.',
+        description:
+          'Konvertera BMP-filer till professionellt TIFF-format for utskrift.',
         url: toAbsoluteUrl('/sv/verktyg/bmp-till-tiff-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -532,7 +561,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 53,
         name: 'HEIC till TIFF-konverterare',
-        description: 'Konvertera iPhone HEIC-foton till professionellt TIFF-format.',
+        description:
+          'Konvertera iPhone HEIC-foton till professionellt TIFF-format.',
         url: toAbsoluteUrl('/sv/verktyg/heic-till-tiff-konverterare'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -544,7 +574,8 @@ const schema = {
 const faqItems = [
   {
     question: 'Vad kostar verktygen?',
-    answer: 'Ingenting. Alla verktyg ar gratis, utan prenumeration och utan dolda avgifter.',
+    answer:
+      'Ingenting. Alla verktyg ar gratis, utan prenumeration och utan dolda avgifter.',
   },
   {
     question: 'Skickas mina filer till en server?',
@@ -553,7 +584,8 @@ const faqItems = [
   },
   {
     question: 'Behover jag ett konto?',
-    answer: 'Nej. Du kan anvanda dem direkt utan att logga in eller skapa ett konto.',
+    answer:
+      'Nej. Du kan anvanda dem direkt utan att logga in eller skapa ett konto.',
   },
   {
     question: 'Finns det nagon anvandningsgrans?',
@@ -597,9 +629,9 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Förbered den perfekta beskärningen för sociala medier eller din webbplats. Välj
-                    ett färdigt format eller ange egna pixelmått och ladda ner bilden som PNG, JPG
-                    eller WebP.
+                    Förbered den perfekta beskärningen för sociala medier eller
+                    din webbplats. Välj ett färdigt format eller ange egna
+                    pixelmått och ladda ner bilden som PNG, JPG eller WebP.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/sv/verktyg/bildredigerare'>
@@ -613,15 +645,20 @@ export default function ToolsIndexPage() {
               icon: <RiAppsLine className={largeIconSizeClasses} />,
               title: 'Favicon- och ikongenerator',
               topImageAlt: 'Favicon-generator Arteon',
-              topImageSrc: '/assets/tools/favicon-generator/gratis-favicon-generator-sv.webp',
+              topImageSrc:
+                '/assets/tools/favicon-generator/gratis-favicon-generator-sv.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Skapa <strong>favicon.ico</strong> och PNG-ikoner 180x180, 192x192 och 512x512
-                    fran en enda bild -- i enlighet med webblasarnas och Lighthouse krav.
+                    Skapa <strong>favicon.ico</strong> och PNG-ikoner 180x180,
+                    192x192 och 512x512 fran en enda bild -- i enlighet med
+                    webblasarnas och Lighthouse krav.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/gratis-favicon-generator'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/gratis-favicon-generator'
+                    >
                       Oppna verktyget
                     </ButtonLink>
                   </div>
@@ -647,11 +684,14 @@ export default function ToolsIndexPage() {
                 <div className='flex h-full flex-col'>
                   <p>
                     Kontrollera antal tecken, antal ord och pixelbredd -- med
-                    Google-forhandsgranskning. Undvik avkortade titlar och beskrivningar i
-                    sokresultaten.
+                    Google-forhandsgranskning. Undvik avkortade titlar och
+                    beskrivningar i sokresultaten.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/meta-titel-och-beskrivning-kontroll'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/meta-titel-och-beskrivning-kontroll'
+                    >
                       Oppna verktyget
                     </ButtonLink>
                   </div>
@@ -667,9 +707,10 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Kontrollera textlangden och bedom om den passar for en startsida, tjanstesida,
-                    blogginlagg eller produktbeskrivning. Verktyget raknar ord, tecken, stycken och
-                    lastid.
+                    Kontrollera textlangden och bedom om den passar for en
+                    startsida, tjanstesida, blogginlagg eller
+                    produktbeskrivning. Verktyget raknar ord, tecken, stycken
+                    och lastid.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/sv/verktyg/ord-och-teckenraknare'>
@@ -684,12 +725,14 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Lorem Ipsum-generator',
               topImageAlt: 'Lorem Ipsum-generator Arteon',
-              topImageSrc: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-sv.webp',
+              topImageSrc:
+                '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-sv.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Generera utfyllnadstext i 8 stilar och 9 lägen. Lorem Ipsum, Hipster, Business,
-                    Bacon och fler. Kopiera som text eller HTML.
+                    Generera utfyllnadstext i 8 stilar och 9 lägen. Lorem Ipsum,
+                    Hipster, Business, Bacon och fler. Kopiera som text eller
+                    HTML.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/sv/verktyg/lorem-ipsum-generator'>
@@ -716,12 +759,15 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Skapa en professionell e-postsignatur pa nagra minuter. Ange dina uppgifter,
-                    valj farger och kopiera den fardiga HTML-koden till Gmail, Outlook eller annan
-                    e-postklient.
+                    Skapa en professionell e-postsignatur pa nagra minuter. Ange
+                    dina uppgifter, valj farger och kopiera den fardiga
+                    HTML-koden till Gmail, Outlook eller annan e-postklient.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/gratis-e-postsignatur-generator'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/gratis-e-postsignatur-generator'
+                    >
                       Oppna verktyget
                     </ButtonLink>
                   </div>
@@ -740,12 +786,14 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className={largeIconSizeClasses} />,
               title: 'Gratis QR-kodgenerator',
               topImageAlt: 'Gratis QR-kodgenerator Arteon',
-              topImageSrc: '/assets/tools/qr-code-generator/gratis-qr-kodgenerator-sv.webp',
+              topImageSrc:
+                '/assets/tools/qr-code-generator/gratis-qr-kodgenerator-sv.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Skapa en QR-kod for en webbplats, vCard, restaurangmeny eller flygblad.
-                    Exportera till PNG och SVG -- utan inloggning, utan begransningar.
+                    Skapa en QR-kod for en webbplats, vCard, restaurangmeny
+                    eller flygblad. Exportera till PNG och SVG -- utan
+                    inloggning, utan begransningar.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/sv/verktyg/gratis-qr-kodgenerator'>
@@ -772,9 +820,10 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Kontrollera om text- och bakgrundsfargerna ar lasbara. Ange fargkoder, se
-                    kontrastforhallandet enligt <strong>WCAG</strong> och anvand{' '}
-                    <strong>Match</strong>-funktionen for automatisk korrigering.
+                    Kontrollera om text- och bakgrundsfargerna ar lasbara. Ange
+                    fargkoder, se kontrastforhallandet enligt{' '}
+                    <strong>WCAG</strong> och anvand <strong>Match</strong>
+                    -funktionen for automatisk korrigering.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/sv/verktyg/fargkontrastkontroll'>
@@ -788,15 +837,20 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className={largeIconSizeClasses} />,
               title: 'Fargextraktor fran bild',
               topImageAlt: 'Fargextraktor fran bild Arteon',
-              topImageSrc: '/assets/tools/image-color-extractor/fargextraktor-fran-bild-sv.webp',
+              topImageSrc:
+                '/assets/tools/image-color-extractor/fargextraktor-fran-bild-sv.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Ladda upp ett foto eller logotyp -- verktyget extraherar de dominerande
-                    fargerna. Kopiera HEX-koder med ett klick och anvand dem var som helst.
+                    Ladda upp ett foto eller logotyp -- verktyget extraherar de
+                    dominerande fargerna. Kopiera HEX-koder med ett klick och
+                    anvand dem var som helst.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/fargextraktor-fran-bild'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/fargextraktor-fran-bild'
+                    >
                       Oppna verktyget
                     </ButtonLink>
                   </div>
@@ -807,12 +861,14 @@ export default function ToolsIndexPage() {
               icon: <RiPaletteLine className={largeIconSizeClasses} />,
               title: 'Fargpalettgenerator',
               topImageAlt: 'Fargpalettgenerator Arteon',
-              topImageSrc: '/assets/tools/color-palette-generator/fargpalettgenerator-sv.webp',
+              topImageSrc:
+                '/assets/tools/color-palette-generator/fargpalettgenerator-sv.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Valj en basfarg och skapa 9 fargpaletter: monokromatisk, komplementar, triadisk,
-                    pastell, mork och fler. Kopiera HEX-koder med ett klick.
+                    Valj en basfarg och skapa 9 fargpaletter: monokromatisk,
+                    komplementar, triadisk, pastell, mork och fler. Kopiera
+                    HEX-koder med ett klick.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/sv/verktyg/fargpalettgenerator'>
@@ -839,9 +895,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.</p>
+                  <p>
+                    Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35%
+                    filstorlek.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/jpg-till-webp-konverterare'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/jpg-till-webp-konverterare'
+                    >
                       Öppna verktyg
                     </ButtonLink>
                   </div>
@@ -857,11 +919,14 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan
-                    registrering.
+                    Konvertera PNG-filer till JPG i webbläsaren. Utan
+                    begränsning, utan registrering.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/png-till-jpg-konverterare'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/png-till-jpg-konverterare'
+                    >
                       Öppna verktyg
                     </ButtonLink>
                   </div>
@@ -878,7 +943,10 @@ export default function ToolsIndexPage() {
                 <div className='flex h-full flex-col'>
                   <p>Konvertera WebP-filer till universellt kompatibelt JPG.</p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/webp-till-jpg-konverterare'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/webp-till-jpg-konverterare'
+                    >
                       Öppna verktyg
                     </ButtonLink>
                   </div>
@@ -893,9 +961,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Konvertera PNG-bilder till WebP. Mindre filer med bibehållen transparens.</p>
+                  <p>
+                    Konvertera PNG-bilder till WebP. Mindre filer med bibehållen
+                    transparens.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/png-till-webp-konverterare'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/png-till-webp-konverterare'
+                    >
                       Öppna verktyg
                     </ButtonLink>
                   </div>
@@ -911,10 +985,14 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren.
+                    Konvertera JPG-bilder till förlustfritt PNG. Lokal
+                    konvertering i webbläsaren.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/jpg-till-png-konverterare'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/jpg-till-png-konverterare'
+                    >
                       Öppna verktyg
                     </ButtonLink>
                   </div>
@@ -929,9 +1007,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering.</p>
+                  <p>
+                    Konvertera WebP-bilder till förlustfritt PNG. Lokal
+                    konvertering.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/webp-till-png-konverterare'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/webp-till-png-konverterare'
+                    >
                       Öppna verktyg
                     </ButtonLink>
                   </div>
@@ -956,10 +1040,14 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Konvertera CSV till JSON-format. Automatisk avskiljardetektion och formatering.
+                    Konvertera CSV till JSON-format. Automatisk
+                    avskiljardetektion och formatering.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/csv-till-json-konverterare'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/csv-till-json-konverterare'
+                    >
                       Öppna verktyget
                     </ButtonLink>
                   </div>
@@ -974,9 +1062,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Konvertera JSON-data till CSV-format. Bearbetning i webbläsaren.</p>
+                  <p>
+                    Konvertera JSON-data till CSV-format. Bearbetning i
+                    webbläsaren.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/json-till-csv-konverterare'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/json-till-csv-konverterare'
+                    >
                       Öppna verktyget
                     </ButtonLink>
                   </div>
@@ -992,10 +1086,14 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Konvertera XML-data till JSON. Webbläsarbaserad konvertering med validering.
+                    Konvertera XML-data till JSON. Webbläsarbaserad konvertering
+                    med validering.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/xml-till-json-konverterare'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/xml-till-json-konverterare'
+                    >
                       Öppna verktyget
                     </ButtonLink>
                   </div>
@@ -1010,9 +1108,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Konvertera JSON-data till giltig XML. Konvertering med formatering.</p>
+                  <p>
+                    Konvertera JSON-data till giltig XML. Konvertering med
+                    formatering.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/json-till-xml-konverterare'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/json-till-xml-konverterare'
+                    >
                       Öppna verktyget
                     </ButtonLink>
                   </div>
@@ -1027,9 +1131,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Konvertera YAML-konfiguration till JSON. Validering och formatering.</p>
+                  <p>
+                    Konvertera YAML-konfiguration till JSON. Validering och
+                    formatering.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/yaml-till-json-konverterare'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/yaml-till-json-konverterare'
+                    >
                       Öppna verktyget
                     </ButtonLink>
                   </div>
@@ -1044,9 +1154,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Konvertera JSON-data till läsbar YAML. Bearbetning i webbläsaren.</p>
+                  <p>
+                    Konvertera JSON-data till läsbar YAML. Bearbetning i
+                    webbläsaren.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/sv/verktyg/json-till-yaml-konverterare'>
+                    <ButtonLink
+                      arrow
+                      href='/sv/verktyg/json-till-yaml-konverterare'
+                    >
                       Öppna verktyget
                     </ButtonLink>
                   </div>
@@ -1061,13 +1177,13 @@ export default function ToolsIndexPage() {
         <Divider line />
         <SectionInfo title='Vad ar Arteons verktyg?'>
           <p className='mb-4'>
-            34 gratis verktyg for att forbereda material for webbplatser, sociala medier och tryck
-            -- WebP-konverterare, favicon-generator, textraknare, fargextraktor, palettgenerator och
-            QR-kod.
+            34 gratis verktyg for att forbereda material for webbplatser,
+            sociala medier och tryck -- WebP-konverterare, favicon-generator,
+            textraknare, fargextraktor, palettgenerator och QR-kod.
           </p>
           <p>
-            Alla verktyg kor i webblasaren -- filer skickas aldrig till en server. Anvand utan
-            registrering och utan begransningar.
+            Alla verktyg kor i webblasaren -- filer skickas aldrig till en
+            server. Anvand utan registrering och utan begransningar.
           </p>
         </SectionInfo>
         <Divider line />
@@ -1090,7 +1206,8 @@ export default function ToolsIndexPage() {
             {
               icon: <RiLockLine className={normalIconSizeClasses} />,
               title: 'Utan registrering',
-              description: 'Inget konto behovs. Oppna verktyget, anvand det, klart.',
+              description:
+                'Inget konto behovs. Oppna verktyget, anvand det, klart.',
             },
             {
               icon: <RiGlobalLine className={normalIconSizeClasses} />,
@@ -1102,10 +1219,17 @@ export default function ToolsIndexPage() {
         />
 
         <Divider line />
-        <SectionFaqPanels items={faqItems} title='Vanliga fragor om vara verktyg' />
+        <SectionFaqPanels
+          items={faqItems}
+          title='Vanliga fragor om vara verktyg'
+        />
         <Divider size='sm' />
       </Wrapper>
-      <Script id='ld-json-tools-sv' type='application/ld+json' strategy='afterInteractive'>
+      <Script
+        id='ld-json-tools-sv'
+        type='application/ld+json'
+        strategy='afterInteractive'
+      >
         {JSON.stringify(schema)}
       </Script>
     </>

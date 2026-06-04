@@ -3,26 +3,26 @@
 import { useEffect, useRef, useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
-import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
-import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
-import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import Card from '@/components/organisms/Card';
+import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
+import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
+import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { downloadFromUrl } from '@/utils/download';
+import { formatBytes } from '@/utils/formatBytes';
+import { useWebpQueue } from '@/hooks/useWebpQueue';
 import { useWebpConversion } from '@/hooks/useWebpConversion';
 import { useWebpDownloads } from '@/hooks/useWebpDownloads';
-import { useWebpQueue } from '@/hooks/useWebpQueue';
 import { useWebpReportCopy } from '@/hooks/useWebpReportCopy';
 import { ui } from '@/lib/i18n/tools/jpgPngWebp';
 import { useLocale } from '@/lib/LocaleContext';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import { downloadFromUrl } from '@/utils/download';
-import { formatBytes } from '@/utils/formatBytes';
+import Card from '@/components/organisms/Card';
 
 export default function JpgPngToWebp() {
   const locale = useLocale();
@@ -31,7 +31,9 @@ export default function JpgPngToWebp() {
   const { copy } = useCopyToClipboard();
   const [quality, setQuality] = useState(80);
   const [autoDownload, setAutoDownload] = useState(false);
-  const [autoDownloadMode, setAutoDownloadMode] = useState<'files' | 'zip'>('files');
+  const [autoDownloadMode, setAutoDownloadMode] = useState<'files' | 'zip'>(
+    'files',
+  );
   const [includeCsvReport, setIncludeCsvReport] = useState(false);
   const [autoZipRequestId, setAutoZipRequestId] = useState(0);
   const handledAutoZipRequestId = useRef(0);
@@ -109,7 +111,9 @@ export default function JpgPngToWebp() {
   }
 
   function handleSubmitWithAutoZip(e: React.SubmitEvent<HTMLFormElement>) {
-    const toProcess = files.filter(f => f.status === 'pending' || f.status === 'error');
+    const toProcess = files.filter(
+      f => f.status === 'pending' || f.status === 'error',
+    );
     if (autoDownload && autoDownloadMode === 'zip' && toProcess.length) {
       setAutoZipRequestId(prev => prev + 1);
     }
@@ -134,7 +138,9 @@ export default function JpgPngToWebp() {
   ]);
 
   const total = files.length;
-  const completed = files.filter(f => f.status === 'done' || f.status === 'error').length;
+  const completed = files.filter(
+    f => f.status === 'done' || f.status === 'error',
+  ).length;
 
   const progress = total ? Math.round((completed / total) * 100) : 0;
 
@@ -158,7 +164,11 @@ export default function JpgPngToWebp() {
         <form onSubmit={handleSubmitWithAutoZip} className='space-y-4'>
           <div>
             <h2 className='h6 mb-2'>{t.addFiles}</h2>
-            <FileDropzone accept='image/jpeg,image/png' multiple onFiles={addFiles}>
+            <FileDropzone
+              accept='image/jpeg,image/png'
+              multiple
+              onFiles={addFiles}
+            >
               <ToolUploadContent
                 dragLabel={t.dragDropImages}
                 clickLabel={t.clickToSelect}
@@ -224,7 +234,10 @@ export default function JpgPngToWebp() {
                     </span>
                   )}
                 </div>
-                <ToolProgressBar value={progress} ariaLabel={`${completed} / ${total}`} />
+                <ToolProgressBar
+                  value={progress}
+                  ariaLabel={`${completed} / ${total}`}
+                />
               </div>
             )}
 
@@ -291,14 +304,16 @@ export default function JpgPngToWebp() {
                 {totalOutput > 0 && (
                   <>
                     <p className='tool-meta'>
-                      {t.totalOutputSize} <strong>{formatBytes(totalOutput)}</strong>
+                      {t.totalOutputSize}{' '}
+                      <strong>{formatBytes(totalOutput)}</strong>
                     </p>
                     <p className='tool-meta'>
                       {totalSaved >= 0 ? (
                         <>
                           {t.totalSaved}:{' '}
                           <strong>
-                            {formatBytes(totalSaved)} (~{totalSavedPercent}% {t.less})
+                            {formatBytes(totalSaved)} (~{totalSavedPercent}%{' '}
+                            {t.less})
                           </strong>
                         </>
                       ) : (
@@ -351,7 +366,8 @@ export default function JpgPngToWebp() {
                   name={f.name}
                   meta={
                     <>
-                      {t.sizeBefore} {f.before} · {t.sizeAfter} {f.after} ({f.diff} {t.less})
+                      {t.sizeBefore} {f.before} · {t.sizeAfter} {f.after} (
+                      {f.diff} {t.less})
                     </>
                   }
                   actions={
@@ -383,11 +399,15 @@ export default function JpgPngToWebp() {
                       ? t.status.done
                       : t.status.error;
 
-              const isBigger = item.outputSize != null && item.outputSize > item.inputSize;
+              const isBigger =
+                item.outputSize != null && item.outputSize > item.inputSize;
 
               const diffPercent =
                 item.outputSize != null && item.inputSize > 0
-                  ? Math.round(((item.inputSize - item.outputSize) / item.inputSize) * 100)
+                  ? Math.round(
+                      ((item.inputSize - item.outputSize) / item.inputSize) *
+                        100,
+                    )
                   : null;
 
               return (
@@ -414,7 +434,9 @@ export default function JpgPngToWebp() {
 
                     <div className='min-w-0 flex-1'>
                       <div title={item.file.name}>
-                        <p className='tool-value truncate text-dark'>{item.file.name}</p>
+                        <p className='tool-value truncate text-dark'>
+                          {item.file.name}
+                        </p>
                       </div>
                       <p className='tool-meta'>
                         {t.sizeBefore} {formatBytes(item.inputSize)}
@@ -425,7 +447,8 @@ export default function JpgPngToWebp() {
                             {diffPercent !== null && (
                               <>
                                 {' ('}
-                                {Math.abs(diffPercent)}% {diffPercent >= 0 ? t.less : t.more}
+                                {Math.abs(diffPercent)}%{' '}
+                                {diffPercent >= 0 ? t.less : t.more}
                                 {')'}
                               </>
                             )}

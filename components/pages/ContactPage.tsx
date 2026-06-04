@@ -16,7 +16,8 @@ export default function ContactPage({ locale }: { locale: Locale }) {
   if (!data) return null;
 
   const config = LOCALE_CONFIG[locale];
-  const email = locale === 'pl' ? 'kontakt@arteonagency.pl' : 'contact@arteonagency.com';
+  const email =
+    locale === 'pl' ? 'kontakt@arteonagency.pl' : 'contact@arteonagency.com';
 
   return (
     <>

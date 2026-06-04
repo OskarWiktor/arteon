@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
-import InlineLink from '../../atoms/InlineLink';
 import Wrapper from '../../atoms/Wrapper';
+import InlineLink from '../../atoms/InlineLink';
 
 interface InfoBannerItem {
   icon?: ReactNode;
@@ -13,11 +13,20 @@ interface SectionInfoBannerProps {
   items: InfoBannerItem[];
 }
 
+/**
+ * Render an information banner containing a list of items, each optionally with an icon and an inline link.
+ *
+ * @param items - Array of banner items to display; each item may include an `icon`, `text`, and optional `linkText`/`linkHref`.
+ * @returns A React element representing the info banner, or `null` when `items` is empty.
+ */
 export default function SectionInfoBanner({ items }: SectionInfoBannerProps) {
   if (!items.length) return null;
 
   const renderItem = (item: InfoBannerItem, index: number) => (
-    <span key={index} className='mr-6 flex items-center gap-2 !text-xs font-medium text-white'>
+    <span
+      key={index}
+      className='mr-6 flex items-center gap-2 !text-xs font-medium text-white'
+    >
       {item.icon && <span className='text-accent'>{item.icon}</span>}
       <span>
         {item.text}

@@ -10,7 +10,7 @@ export default function GenericPageSkeleton() {
     <>
       <HeroBannerSkeleton />
       <BenefitBeltSkeleton />
-      <div className='m-auto w-[94%] max-w-[1420px] 2xl:max-w-none'>
+      <div className='m-auto w-[94%] max-w-355 2xl:max-w-none'>
         <DividerSkeleton variant='space' />
         <CarouselSkeleton variant='project' />
         <DividerSkeleton variant='line' />

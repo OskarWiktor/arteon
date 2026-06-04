@@ -64,10 +64,13 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
         if (header.startsWith('\xFF\xD8')) mime = 'image/jpeg';
         else if (header.startsWith('\x89PNG')) mime = 'image/png';
         else if (header.startsWith('GIF')) mime = 'image/gif';
-        else if (header.startsWith('RIFF') && header.includes('WEBP')) mime = 'image/webp';
-        else if (header.startsWith('<svg') || header.startsWith('<?xml')) mime = 'image/svg+xml';
+        else if (header.startsWith('RIFF') && header.includes('WEBP'))
+          mime = 'image/webp';
+        else if (header.startsWith('<svg') || header.startsWith('<?xml'))
+          mime = 'image/svg+xml';
         else if (header.includes('ftypavif')) mime = 'image/avif';
-        else if (header.startsWith('II') || header.startsWith('MM')) mime = 'image/tiff';
+        else if (header.startsWith('II') || header.startsWith('MM'))
+          mime = 'image/tiff';
       } catch {
         setError(t.base64Invalid);
         setPreviewUrl(null);
@@ -127,7 +130,8 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     const byteString = atob(previewUrl.split(',')[1]);
     const ab = new ArrayBuffer(byteString.length);
     const ia = new Uint8Array(ab);
-    for (let i = 0; i < byteString.length; i++) ia[i] = byteString.charCodeAt(i);
+    for (let i = 0; i < byteString.length; i++)
+      ia[i] = byteString.charCodeAt(i);
     const blob = new Blob([ab], { type: mime });
     downloadBlob(blob, `${t.decodedImageFilename}${ext}`);
   };
@@ -143,7 +147,11 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
   if (mode === 'encode') {
     return (
       <div className='overflow-hidden'>
-        <FormatSelector currentSource='jpg' currentTarget='base64' hasFiles={!!base64} />
+        <FormatSelector
+          currentSource='jpg'
+          currentTarget='base64'
+          hasFiles={!!base64}
+        />
         <div className='grid gap-4 md:grid-cols-2'>
           <Card interactive={false} padding='lg'>
             <h2 className='h6'>{t.imageHeading}</h2>
@@ -196,7 +204,11 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
 
   return (
     <div className='overflow-hidden'>
-      <FormatSelector currentSource='base64' currentTarget='jpg' hasFiles={!!base64} />
+      <FormatSelector
+        currentSource='base64'
+        currentTarget='jpg'
+        hasFiles={!!base64}
+      />
       <div className='grid gap-4 md:grid-cols-2'>
         <Card interactive={false} padding='lg'>
           <TextareaWithLabel

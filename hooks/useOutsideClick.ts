@@ -24,7 +24,9 @@ export function useOutsideClick(
     if (!enabled) return;
 
     const onPointerDown = (e: EventType) => {
-      const refs = Array.isArray(refsRef.current) ? refsRef.current : [refsRef.current];
+      const refs = Array.isArray(refsRef.current)
+        ? refsRef.current
+        : [refsRef.current];
       const target = e.target as Node | null;
       if (!target) return;
 

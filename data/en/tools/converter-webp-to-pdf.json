@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Convert WebP images to PDF documents. Combine multiple files into one PDF. Free, no registration.",
-      "featureList": ["WebP to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert WebP to PDF", "WebP to PDF", "Free WebP to PDF converter"]
+      "featureList": [
+        "WebP to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert WebP to PDF",
+        "WebP to PDF",
+        "Free WebP to PDF converter"
+      ]
     },
     "howTo": {
       "name": "How to convert WebP to PDF",
@@ -151,7 +159,10 @@
         },
         {
           "label": "Web browser support",
-          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Built-in PDF viewer"]
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Built-in PDF viewer"
+          ]
         },
         {
           "label": "Compact file size",

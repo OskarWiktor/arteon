@@ -34,7 +34,11 @@ export default function CTABanner({
   const isGradient = backgroundStyle === 'gradient';
   const isSolid = backgroundStyle === 'solid';
   const overlayClass =
-    overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
+    overlay === 'black'
+      ? 'bg-black/70'
+      : overlay === 'white'
+        ? 'bg-white/80'
+        : '';
   const baseBg = isGradient
     ? 'bg-gradient-to-r from-primary to-primary'
     : isSolid
@@ -43,13 +47,19 @@ export default function CTABanner({
         ? 'bg-neutral-900'
         : 'bg-white';
 
-  const toneTextClass = isGradient || isSolid || overlay === 'black' ? 'text-white' : 'text-dark';
+  const toneTextClass =
+    isGradient || isSolid || overlay === 'black' ? 'text-white' : 'text-dark';
   const toneMutedClass =
-    isGradient || isSolid || overlay === 'black' ? 'text-white/90' : 'text-light';
+    isGradient || isSolid || overlay === 'black'
+      ? 'text-white/90'
+      : 'text-light';
 
   return (
     <section
-      className={cn('relative flex h-auto min-h-90 overflow-hidden md:min-h-110', baseBg)}
+      className={cn(
+        'relative flex h-auto min-h-90 overflow-hidden md:min-h-110',
+        baseBg,
+      )}
       data-section='final-cta'
     >
       {hasBg && !isGradient && !isSolid && backgroundImage && (
@@ -64,7 +74,10 @@ export default function CTABanner({
       {hasBg && !isGradient && !isSolid && overlay !== 'none' && (
         <div
           aria-hidden='true'
-          className={cn('pointer-events-none absolute inset-0 z-0', overlayClass)}
+          className={cn(
+            'pointer-events-none absolute inset-0 z-0',
+            overlayClass,
+          )}
         />
       )}
 

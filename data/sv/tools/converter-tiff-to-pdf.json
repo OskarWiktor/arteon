@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Konvertera TIFF-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.",
-      "featureList": ["TIFF to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert TIFF to PDF", "TIFF to PDF", "Free TIFF to PDF converter"]
+      "featureList": [
+        "TIFF to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert TIFF to PDF",
+        "TIFF to PDF",
+        "Free TIFF to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Hur man konverterar TIFF till PDF",

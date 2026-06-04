@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "JSON in YAML-Format konvertieren. Automatisches Parsen und Formatieren. Kostenlos.",
-      "featureList": ["JSON to YAML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert JSON to YAML", "JSON to YAML", "Free JSON to YAML converter"]
+      "featureList": [
+        "JSON to YAML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert JSON to YAML",
+        "JSON to YAML",
+        "Free JSON to YAML converter"
+      ]
     },
     "howTo": {
       "name": "So konvertieren Sie JSON in YAML",

@@ -2,7 +2,10 @@ import SkipToContent from '@/components/atoms/SkipToContent';
 import ConsentListener from '@/components/organisms/ConsentListener';
 import Footer from '@/components/organisms/Footer';
 import NavigationShell from '@/components/organisms/navigation/NavigationShell';
-import { getClientDictionary, getLocaleConfigFor } from '@/lib/i18n/clientDictionary';
+import {
+  getClientDictionary,
+  getLocaleConfigFor,
+} from '@/lib/i18n/clientDictionary';
 import { getDictionary } from '@/lib/i18n/getDictionary';
 import { LocaleProvider } from '@/lib/LocaleContext';
 import type { Locale } from '@/types/locale';
@@ -12,7 +15,10 @@ interface LocaleLayoutProps {
   children: React.ReactNode;
 }
 
-export default async function LocaleLayout({ locale, children }: LocaleLayoutProps) {
+export default async function LocaleLayout({
+  locale,
+  children,
+}: LocaleLayoutProps) {
   const [clientDict, config, fullDict] = await Promise.all([
     getClientDictionary(locale),
     Promise.resolve(getLocaleConfigFor(locale)),

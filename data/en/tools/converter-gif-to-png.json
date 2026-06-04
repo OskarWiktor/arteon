@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "GIF to PNG converter – free, unlimited files",
-      "alternateName": ["Convert GIF to PNG", "GIF frame to PNG", "Extract GIF frame as PNG"],
+      "alternateName": [
+        "Convert GIF to PNG",
+        "GIF frame to PNG",
+        "Extract GIF frame as PNG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Free GIF to PNG converter. Extract the first frame of a GIF as lossless PNG. No uploads, no limits.",

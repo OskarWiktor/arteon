@@ -40,7 +40,11 @@
         "Output passes yamllint validation",
         "Compatible with Docker Compose, Kubernetes, GitHub Actions, Ansible, and Helm"
       ],
-      "alternateName": ["Convert JSON to YAML", "JSON to YAML", "Free JSON to YAML converter"]
+      "alternateName": [
+        "Convert JSON to YAML",
+        "JSON to YAML",
+        "Free JSON to YAML converter"
+      ]
     },
     "howTo": {
       "name": "How to convert JSON to YAML",

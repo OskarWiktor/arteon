@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Points to pixels converter",
-      "alternateName": ["Point to pixel calculator", "Typography converter", "Font size converter"],
+      "alternateName": [
+        "Point to pixel calculator",
+        "Typography converter",
+        "Font size converter"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert typographic points (pt) to pixels (px) and vice versa. Essential for web and print typography.",

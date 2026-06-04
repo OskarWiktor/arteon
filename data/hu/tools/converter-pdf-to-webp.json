@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "PDF oldalak konvertálása WebP képekké. Kiváló minőség, korlátok nélkül. Ingyenes.",
-      "featureList": ["PDF to WebP conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PDF to WebP", "PDF to WebP", "Free PDF to WebP converter"]
+      "featureList": [
+        "PDF to WebP conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PDF to WebP",
+        "PDF to WebP",
+        "Free PDF to WebP converter"
+      ]
     },
     "howTo": {
       "name": "Hogyan konvertáljuk PDF-t WebP-vé",
@@ -151,7 +159,10 @@
         },
         {
           "label": "Böngészőtámogatás",
-          "values": ["Beépített PDF-megjelenítő", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+          "values": [
+            "Beépített PDF-megjelenítő",
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          ]
         },
         {
           "label": "Kis fájlméret",

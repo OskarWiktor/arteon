@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Converti immagini SVG in documenti PDF. Combina più file in un unico PDF. Gratuito.",
-      "featureList": ["SVG to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert SVG to PDF", "SVG to PDF", "Free SVG to PDF converter"]
+      "featureList": [
+        "SVG to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert SVG to PDF",
+        "SVG to PDF",
+        "Free SVG to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Come convertire SVG in PDF",

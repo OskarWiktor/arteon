@@ -198,7 +198,10 @@
         },
         {
           "label": "Webbläsarstöd",
-          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Alla webbläsare"]
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Alla webbläsare"
+          ]
         },
         {
           "label": "Färgdjup",

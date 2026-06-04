@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
@@ -9,10 +10,10 @@ import { loadAhrefs } from '@/lib/consent/ahrefs';
 import { readConsent, writeConsent } from '@/lib/consent/consentCookie';
 import { loadGA, sendGAPageView } from '@/lib/consent/ga';
 import { updateGtagConsent } from '@/lib/consent/gtag';
-import { flexCenterClasses, focusRingClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
 import Button from '../atoms/buttons/Button';
 import InputCheckboxWithLabel from '../molecules/form/InputCheckboxWithLabel';
+import { focusRingClasses, flexCenterClasses } from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
 
 export type CookieConsentTranslations = {
   title: string;
@@ -43,6 +44,15 @@ function updateGtag(analytics: boolean, ads: boolean) {
   updateGtagConsent({ analytics, ads });
 }
 
+/**
+ * Render a cookie consent dialog that manages user cookie preferences, persists selections, and updates analytics/ads integrations.
+ *
+ * The component shows either a quick accept view or a preferences panel, reads saved consent on mount, exposes an external `open` handler
+ * via `window.ArteonConsent`, and dispatches an `arteon:consent-updated` event when choices are saved.
+ *
+ * @param translations - UI strings, labels, ARIA text, and the privacy policy link used throughout the dialog
+ * @returns The rendered cookie consent dialog element, or `null` when the dialog is hidden
+ */
 export default function CookieConsent({
   translations: t,
 }: {
@@ -134,7 +144,7 @@ export default function CookieConsent({
       aria-modal='true'
       aria-labelledby={titleId}
       aria-describedby={descId}
-      className='fixed inset-x-0 bottom-0 z-[70] bg-transparent'
+      className='fixed inset-x-0 bottom-0 z-70 bg-transparent'
     >
       <div className='mx-auto mb-4 w-[min(92vw,1280px)] rounded bg-white p-5 text-dark shadow-lg ring-1 ring-black/5'>
         {!panel ? (
@@ -195,7 +205,9 @@ export default function CookieConsent({
 
               <div className='flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2'>
                 <div>
-                  <span className='text-base font-medium'>{t.essentialTitle}</span>
+                  <span className='text-base font-medium'>
+                    {t.essentialTitle}
+                  </span>
                   <span className='ml-2 text-sm font-medium text-dark'>
                     {t.essentialDescription}
                   </span>
@@ -207,12 +219,14 @@ export default function CookieConsent({
 
               <div className='flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2'>
                 <div>
-                  <span className='text-base font-medium'>{t.analyticsTitle}</span>
+                  <span className='text-base font-medium'>
+                    {t.analyticsTitle}
+                  </span>
                   <span className='ml-2 text-sm font-medium text-dark'>
                     {t.analyticsDescription}
                   </span>
                 </div>
-                <div className={cn('w-[24px]', flexCenterClasses)}>
+                <div className={cn('w-6', flexCenterClasses)}>
                   <InputCheckboxWithLabel
                     aria-label={t.analyticsLabel}
                     checked={analyticsChoice}
@@ -226,9 +240,11 @@ export default function CookieConsent({
               <div className='flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2'>
                 <div>
                   <span className='text-base font-medium'>{t.adsTitle}</span>
-                  <span className='ml-2 text-sm font-medium text-dark'>{t.adsDescription}</span>
+                  <span className='ml-2 text-sm font-medium text-dark'>
+                    {t.adsDescription}
+                  </span>
                 </div>
-                <div className={cn('w-[24px]', flexCenterClasses)}>
+                <div className={cn('w-6', flexCenterClasses)}>
                   <InputCheckboxWithLabel
                     aria-label={t.adsLabel}
                     checked={adsChoice}
@@ -241,7 +257,9 @@ export default function CookieConsent({
             </fieldset>
 
             <div className='flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between'>
-              <span className='text-sm font-medium text-dark'>{t.changeDecision}</span>
+              <span className='text-sm font-medium text-dark'>
+                {t.changeDecision}
+              </span>
 
               <div className='flex gap-2'>
                 <button

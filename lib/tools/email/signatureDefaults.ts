@@ -68,7 +68,13 @@ export const LAYOUT_SPACING_MAP: Record<LayoutType, SpacingKey[]> = {
     'afterCta',
     'beforeLegal',
   ],
-  'top-banner': ['afterExtra', 'afterContact', 'afterSocials', 'afterCta', 'beforeLegal'],
+  'top-banner': [
+    'afterExtra',
+    'afterContact',
+    'afterSocials',
+    'afterCta',
+    'beforeLegal',
+  ],
   'label-column': [
     'afterName',
     'afterTitle',
@@ -459,7 +465,8 @@ export function getDefaultSignature(locale: Locale): SignatureConfig {
       phone: '+420 601 234 567',
       website: 'https://www.vasedomena.cz',
       address: 'V\u00e1clavsk\u00e9 n\u00e1m. 1, 110 00 Praha',
-      extraLine: 'Tvo\u0159\u00edm rychl\u00e9 a funk\u010dn\u00ed webov\u00e9 str\u00e1nky.',
+      extraLine:
+        'Tvo\u0159\u00edm rychl\u00e9 a funk\u010dn\u00ed webov\u00e9 str\u00e1nky.',
       ctaLabel: 'Objednejte si bezplatnou konzultaci',
       ctaUrl: 'https://www.vasedomena.cz',
       cta2Label: '',

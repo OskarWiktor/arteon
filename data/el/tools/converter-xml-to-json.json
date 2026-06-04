@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Μετατρέψτε XML σε μορφή JSON. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.",
-      "featureList": ["XML to JSON conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert XML to JSON", "XML to JSON", "Free XML to JSON converter"]
+      "featureList": [
+        "XML to JSON conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert XML to JSON",
+        "XML to JSON",
+        "Free XML to JSON converter"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε XML σε JSON",

@@ -47,10 +47,29 @@ export const FORMAT_DISPLAY_LABELS: Record<UniversalFormat, string> = {
 } as const;
 
 // Format Categories
-export const FORMAT_CATEGORIES: { key: FormatCategory; formats: UniversalFormat[] }[] = [
-  { key: 'images', formats: ['jpg', 'png', 'webp', 'avif', 'gif', 'bmp', 'svg', 'heic', 'tiff'] },
+export const FORMAT_CATEGORIES: {
+  key: FormatCategory;
+  formats: UniversalFormat[];
+}[] = [
+  {
+    key: 'images',
+    formats: [
+      'jpg',
+      'png',
+      'webp',
+      'avif',
+      'gif',
+      'bmp',
+      'svg',
+      'heic',
+      'tiff',
+    ],
+  },
   { key: 'documents', formats: ['pdf'] },
-  { key: 'data', formats: ['csv', 'json', 'xml', 'yaml', 'markdown', 'html', 'base64'] },
+  {
+    key: 'data',
+    formats: ['csv', 'json', 'xml', 'yaml', 'markdown', 'html', 'base64'],
+  },
   { key: 'units', formats: [] },
 ] as const;
 
@@ -61,7 +80,9 @@ export const IMAGE_FORMATS = new Set(
 export const DOCUMENT_FORMATS = new Set(
   FORMAT_CATEGORIES.find(c => c.key === 'documents')?.formats || [],
 );
-export const DATA_FORMATS = new Set(FORMAT_CATEGORIES.find(c => c.key === 'data')?.formats || []);
+export const DATA_FORMATS = new Set(
+  FORMAT_CATEGORIES.find(c => c.key === 'data')?.formats || [],
+);
 
 // Helper Functions
 export function isImageFormat(format: string): format is UniversalFormat {
@@ -77,10 +98,14 @@ export function isDataFormat(format: string): format is UniversalFormat {
 }
 
 export function isValidFormat(format: string): format is UniversalFormat {
-  return isImageFormat(format) || isDocumentFormat(format) || isDataFormat(format);
+  return (
+    isImageFormat(format) || isDocumentFormat(format) || isDataFormat(format)
+  );
 }
 
-export function getFormatCategory(format: UniversalFormat): FormatCategory | null {
+export function getFormatCategory(
+  format: UniversalFormat,
+): FormatCategory | null {
   if (isImageFormat(format)) return 'images';
   if (isDocumentFormat(format)) return 'documents';
   if (isDataFormat(format)) return 'data';

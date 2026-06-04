@@ -8,10 +8,16 @@ import type { Locale } from '@/types/locale';
  * Count syllables in a single word using language-specific rules.
  * Falls back to a generic vowel-group heuristic for unsupported languages.
  */
-export function countSyllablesInWord(word: string, locale: Locale = 'en'): number {
+export function countSyllablesInWord(
+  word: string,
+  locale: Locale = 'en',
+): number {
   const w = word
     .toLowerCase()
-    .replace(/[^a-zA-Z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF\u00E0-\u00FF]/g, '');
+    .replace(
+      /[^a-zA-Z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF\u00E0-\u00FF]/g,
+      '',
+    );
   if (!w) return 0;
 
   switch (locale) {
@@ -51,7 +57,10 @@ export function countSyllablesInWord(word: string, locale: Locale = 'en'): numbe
 export function countSyllables(text: string, locale: Locale = 'en'): number {
   if (!text.trim()) return 0;
   const words = text.trim().split(/\s+/);
-  return words.reduce((sum, word) => sum + countSyllablesInWord(word, locale), 0);
+  return words.reduce(
+    (sum, word) => sum + countSyllablesInWord(word, locale),
+    0,
+  );
 }
 
 // ---------------------------------------------------------------------------
@@ -64,7 +73,12 @@ function countSyllablesEN(word: string): number {
   let w = word;
 
   // Remove trailing silent-e
-  if (w.endsWith('e') && !w.endsWith('le') && !w.endsWith('ee') && !w.endsWith('ie')) {
+  if (
+    w.endsWith('e') &&
+    !w.endsWith('le') &&
+    !w.endsWith('ee') &&
+    !w.endsWith('ie')
+  ) {
     w = w.slice(0, -1);
   }
 
@@ -73,7 +87,11 @@ function countSyllablesEN(word: string): number {
   let count = vowelGroups ? vowelGroups.length : 1;
 
   // Adjustments for common patterns
-  if (word.endsWith('le') && word.length > 2 && !/[aeiouy]/.test(word[word.length - 3])) {
+  if (
+    word.endsWith('le') &&
+    word.length > 2 &&
+    !/[aeiouy]/.test(word[word.length - 3])
+  ) {
     count++;
   }
   if (word.endsWith('ed') && !word.endsWith('ted') && !word.endsWith('ded')) {
@@ -127,7 +145,12 @@ function countSyllablesFR(word: string): number {
   let w = word;
 
   // French silent-e at end (unless preceded by consonant cluster that needs it)
-  if (w.endsWith('e') && !w.endsWith('ée') && !w.endsWith('ie') && w.length > 2) {
+  if (
+    w.endsWith('e') &&
+    !w.endsWith('ée') &&
+    !w.endsWith('ie') &&
+    w.length > 2
+  ) {
     w = w.slice(0, -1);
   }
   if (w.endsWith('es') && w.length > 3) {
@@ -159,8 +182,16 @@ function countSyllablesRomance(word: string): number {
 
   // Common Romance diphthongs
   let w = word;
-  w = w.replace(/ia/g, 'YA').replace(/ie/g, 'YE').replace(/io/g, 'YO').replace(/iu/g, 'YU');
-  w = w.replace(/ua/g, 'WA').replace(/ue/g, 'WE').replace(/ui/g, 'WI').replace(/uo/g, 'WO');
+  w = w
+    .replace(/ia/g, 'YA')
+    .replace(/ie/g, 'YE')
+    .replace(/io/g, 'YO')
+    .replace(/iu/g, 'YU');
+  w = w
+    .replace(/ua/g, 'WA')
+    .replace(/ue/g, 'WE')
+    .replace(/ui/g, 'WI')
+    .replace(/uo/g, 'WO');
   w = w
     .replace(/ai/g, 'X')
     .replace(/ei/g, 'X')
@@ -222,7 +253,10 @@ function countSyllablesNordic(word: string, locale: Locale = 'sv'): number {
     // Finnish diphthongs - these are single syllables, not two.
     // Finnish has 18 diphthongs: ai, ei, oi, ui, yi, äi, öi, au, eu, ou, iu,
     // ey, äy, öy, ie, uo, yö + iy
-    w = w.replace(/ai|ei|oi|ui|yi|äi|öi|au|eu|ou|iu|ey|äy|öy|ie|uo|yö|iy/gi, 'X');
+    w = w.replace(
+      /ai|ei|oi|ui|yi|äi|öi|au|eu|ou|iu|ey|äy|öy|ie|uo|yö|iy/gi,
+      'X',
+    );
   }
 
   // Nordic vowels including å, ä, ö (SV), æ, ø, å (DA/NO), ä, ö, y (FI)
@@ -251,7 +285,11 @@ function countSyllablesEL(word: string): number {
 
   // Greek diphthongs: αι, ει, οι, ου, αυ, ευ, ηυ
   let w = word;
-  w = w.replace(/αι/g, 'X').replace(/ει/g, 'X').replace(/οι/g, 'X').replace(/ου/g, 'X');
+  w = w
+    .replace(/αι/g, 'X')
+    .replace(/ει/g, 'X')
+    .replace(/οι/g, 'X')
+    .replace(/ου/g, 'X');
   w = w.replace(/αυ/g, 'X').replace(/ευ/g, 'X').replace(/ηυ/g, 'X');
 
   const vowels = /[αεηιοωυάέήίόώύϊϋΐΰX]/gi.exec(w);

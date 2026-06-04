@@ -1,11 +1,12 @@
-import Image from 'next/image';
-import { JsonLd } from '@/components/atoms/JsonLd';
 import { getFooterTools } from '@/lib/i18n/toolRegistry';
-import type { Locale, FooterUi, LegalLink } from '@/types/locale';
+import { Locale, FooterUi, LegalLink } from '@/types/locale';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 import ButtonCookieSettings from '../atoms/buttons/ButtonCookieSettings';
 import InlineLink from '../atoms/InlineLink';
+import { JsonLd } from '../atoms/JsonLd';
 import Wrapper from '../atoms/Wrapper';
+import Image from 'next/image';
+
 const ORG = {
   name: 'Arteon',
   phoneE164: '+48516466255',
@@ -34,7 +35,12 @@ function FooterSchemas() {
     ],
   };
 
-  return <JsonLd schema={professionalService} id='schema-professional-service-footer' />;
+  return (
+    <JsonLd
+      schema={professionalService}
+      id='schema-professional-service-footer'
+    />
+  );
 }
 
 const offerLinksOne = [
@@ -47,7 +53,10 @@ const offerLinksTwo = [
   { href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści' },
   { href: '/uslugi/marketing/audyt-seo', title: 'Audyt SEO' },
   { href: '/uslugi/marketing/optymalizacja-seo', title: 'Optymalizacja SEO' },
-  { href: '/uslugi/marketing/pozycjonowanie-stron', title: 'Pozycjonowanie stron' },
+  {
+    href: '/uslugi/marketing/pozycjonowanie-stron',
+    title: 'Pozycjonowanie stron',
+  },
 ];
 
 const offerLinksThree = [
@@ -56,7 +65,10 @@ const offerLinksThree = [
     href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
     title: 'Identyfikacja wizualna',
   },
-  { href: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej', title: 'Karty lojalnościowe' },
+  {
+    href: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
+    title: 'Karty lojalnościowe',
+  },
   { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Katalogi' },
   {
     href: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
@@ -67,14 +79,26 @@ const offerLinksThree = [
     title: 'Projekt graficzny strony',
   },
   { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Logo' },
-  { href: '/uslugi/projekty-graficzne/projekt-menu-restauracji', title: 'Menu restauracji' },
-  { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Odzież firmowa' },
-  { href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Papier firmowy' },
+  {
+    href: '/uslugi/projekty-graficzne/projekt-menu-restauracji',
+    title: 'Menu restauracji',
+  },
+  {
+    href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
+    title: 'Odzież firmowa',
+  },
+  {
+    href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+    title: 'Papier firmowy',
+  },
   {
     href: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
     title: 'Szablony do mediów społecznościowych',
   },
-  { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Teczki ofertowe' },
+  {
+    href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+    title: 'Teczki ofertowe',
+  },
   { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Ulotki' },
   { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Wizytówki' },
 ];
@@ -103,14 +127,35 @@ const toolsLinks = [
     href: '/narzedzia/licznik-dlugosci-meta-title-i-description',
     label: 'Licznik meta title i description',
   },
-  { href: '/narzedzia/kontrast-i-czytelnosc-kolorow', label: 'Kontrast i czytelność kolorów' },
-  { href: '/narzedzia/ekstraktor-kolorow-z-obrazu', label: 'Ekstraktor kolorów z obrazu' },
-  { href: '/narzedzia/generator-palet-kolorow', label: 'Generator palet kolorów' },
+  {
+    href: '/narzedzia/kontrast-i-czytelnosc-kolorow',
+    label: 'Kontrast i czytelność kolorów',
+  },
+  {
+    href: '/narzedzia/ekstraktor-kolorow-z-obrazu',
+    label: 'Ekstraktor kolorów z obrazu',
+  },
+  {
+    href: '/narzedzia/generator-palet-kolorow',
+    label: 'Generator palet kolorów',
+  },
   { href: '/narzedzia/konwerter-jpg-na-webp', label: 'Konwerter JPG na WebP' },
-  { href: '/narzedzia/edytor-zdjec-online', label: 'Kadrowanie i zmiana rozmiaru obrazu' },
-  { href: '/narzedzia/darmowy-generator-favicon-ico', label: 'Generator favicon' },
-  { href: '/narzedzia/darmowy-generator-stopki-mailowej', label: 'Generator stopki mailowej HTML' },
-  { href: '/narzedzia/darmowy-generator-kodow-qr', label: 'Generator kodów QR' },
+  {
+    href: '/narzedzia/edytor-zdjec-online',
+    label: 'Kadrowanie i zmiana rozmiaru obrazu',
+  },
+  {
+    href: '/narzedzia/darmowy-generator-favicon-ico',
+    label: 'Generator favicon',
+  },
+  {
+    href: '/narzedzia/darmowy-generator-stopki-mailowej',
+    label: 'Generator stopki mailowej HTML',
+  },
+  {
+    href: '/narzedzia/darmowy-generator-kodow-qr',
+    label: 'Generator kodów QR',
+  },
 ];
 
 interface FooterProps {
@@ -120,7 +165,23 @@ interface FooterProps {
   toolsIndexHref: string;
 }
 
-export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }: FooterProps) {
+/**
+ * Render the site footer tailored to the provided locale, UI labels, and link collections.
+ *
+ * Renders a full Polish footer when `locale` is `'pl'`; for other locales it renders a simplified tools-focused footer.
+ *
+ * @param locale - Locale code used to choose footer variant (e.g., `'pl'` for Polish)
+ * @param footerUi - UI labels and text fragments used throughout the footer
+ * @param legalLinks - Locale-specific legal links to display in the footer (used for non-PL variant)
+ * @param toolsIndexHref - Href for the tools index logo/link in the non-PL footer
+ * @returns The footer element (JSX) appropriate for the given locale and props
+ */
+export default function Footer({
+  locale,
+  footerUi,
+  legalLinks,
+  toolsIndexHref,
+}: FooterProps) {
   const isPl = locale === 'pl';
   const ft = footerUi;
   const midGfx = Math.ceil(offerLinksThree.length / 2);
@@ -130,7 +191,10 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
   // For PL: use hardcoded toolsLinks; for other locales: generate from registry
   const localeToolsLinks = isPl
     ? toolsLinks
-    : getFooterTools(locale).map(tool => ({ href: tool.href, label: tool.title }));
+    : getFooterTools(locale).map(tool => ({
+        href: tool.href,
+        label: tool.title,
+      }));
   const localeLegalLinks = legalLinks;
 
   const midTools = Math.ceil(localeToolsLinks.length / 2);
@@ -153,16 +217,27 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
       >
         <Wrapper>
           <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:auto-rows-min lg:grid-cols-6'>
-            <section aria-label={ft.companyDataLabel} className='lg:col-start-1 lg:row-start-1'>
+            <section
+              aria-label={ft.companyDataLabel}
+              className='lg:col-start-1 lg:row-start-1'
+            >
               <div className='mb-4'>
                 <InlineLink href={toolsIndexHref}>
-                  <Image src='/assets/arteon-logo.webp' width={140} height={50} alt='Arteon logo' />
+                  <Image
+                    src='/assets/arteon-logo.webp'
+                    width={140}
+                    height={50}
+                    alt='Arteon logo'
+                  />
                 </InlineLink>
               </div>
               <p className='text-base text-dark'>{ft.description}</p>
             </section>
 
-            <nav aria-label={`${ft.toolsLabel} (1)`} className='lg:col-start-2 lg:row-start-1'>
+            <nav
+              aria-label={`${ft.toolsLabel} (1)`}
+              className='lg:col-start-2 lg:row-start-1'
+            >
               <h3 className='h6 mb-3'>{ft.toolsLabel}</h3>
               <ul className='flex flex-col gap-2 text-sm'>
                 {toolsCol1.map(({ href, label }) => (
@@ -175,7 +250,10 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </ul>
             </nav>
 
-            <nav aria-label={`${ft.toolsLabel} (2)`} className='lg:col-start-3 lg:row-start-1'>
+            <nav
+              aria-label={`${ft.toolsLabel} (2)`}
+              className='lg:col-start-3 lg:row-start-1'
+            >
               <h3 className='sr-only'>{ft.toolsLabel}</h3>
               <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
                 {toolsCol2.map(({ href, label }) => (
@@ -188,7 +266,10 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </ul>
             </nav>
 
-            <nav aria-label={`${ft.toolsLabel} (3)`} className='lg:col-start-4 lg:row-start-1'>
+            <nav
+              aria-label={`${ft.toolsLabel} (3)`}
+              className='lg:col-start-4 lg:row-start-1'
+            >
               <h3 className='sr-only'>{ft.toolsLabel}</h3>
               <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
                 {toolsCol3.map(({ href, label }) => (
@@ -201,7 +282,10 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </ul>
             </nav>
 
-            <nav aria-label={`${ft.toolsLabel} (4)`} className='lg:col-start-5 lg:row-start-1'>
+            <nav
+              aria-label={`${ft.toolsLabel} (4)`}
+              className='lg:col-start-5 lg:row-start-1'
+            >
               <h3 className='sr-only'>{ft.toolsLabel}</h3>
               <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
                 {toolsCol4.map(({ href, label }) => (
@@ -256,7 +340,12 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               className='lg:col-start-1 lg:row-start-1'
             >
               <div className='mb-4'>
-                <Image src='/assets/arteon-logo.webp' width={140} height={50} alt='Logo Arteon' />
+                <Image
+                  src='/assets/arteon-logo.webp'
+                  width={140}
+                  height={50}
+                  alt='Logo Arteon'
+                />
               </div>
               <address className='mb-4 text-base text-dark not-italic'>
                 <p>
@@ -291,7 +380,10 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </ul>
             </nav>
 
-            <nav aria-label='Treści i Marketing' className='lg:col-start-3 lg:row-start-1'>
+            <nav
+              aria-label='Treści i Marketing'
+              className='lg:col-start-3 lg:row-start-1'
+            >
               <h3 className='h6 mb-3'>Treści + Marketing</h3>
               <ul className='flex flex-col gap-2 text-sm'>
                 {offerLinksTwo.map(({ href, title }) => (
@@ -336,7 +428,10 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </ul>
             </nav>
 
-            <nav aria-label='Główne sekcje' className='lg:col-start-1 lg:row-start-2'>
+            <nav
+              aria-label='Główne sekcje'
+              className='lg:col-start-1 lg:row-start-2'
+            >
               <h3 className='h6 mb-3'>Główne strony</h3>
               <ul className='flex flex-col gap-2 text-sm'>
                 {navLinksPrimary.map(({ href, label }) => (
@@ -349,7 +444,10 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </ul>
             </nav>
 
-            <nav aria-label='Nawigacja (cd.)' className='lg:col-start-2 lg:row-start-2'>
+            <nav
+              aria-label='Nawigacja (cd.)'
+              className='lg:col-start-2 lg:row-start-2'
+            >
               <h3 className='h6 mb-3'>Inne</h3>
               <ul className='flex flex-col gap-2 text-sm'>
                 {navLinksSecondary.map(({ href, label }) => (
@@ -362,7 +460,10 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </ul>
             </nav>
 
-            <nav aria-label='Narzędzia (1)' className='lg:col-start-4 lg:row-start-2'>
+            <nav
+              aria-label='Narzędzia (1)'
+              className='lg:col-start-4 lg:row-start-2'
+            >
               <h3 className='h6 mb-3'>Narzędzia</h3>
               <ul className='flex flex-col gap-2 text-sm'>
                 {toolsLeft.map(({ href, label }) => (
@@ -375,7 +476,10 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
               </ul>
             </nav>
 
-            <nav aria-label='Narzędzia (2)' className='lg:col-start-5 lg:row-start-2'>
+            <nav
+              aria-label='Narzędzia (2)'
+              className='lg:col-start-5 lg:row-start-2'
+            >
               <h3 className='sr-only'>Narzędzia</h3>
               <ul className='flex flex-col gap-2 text-sm lg:mt-9'>
                 {toolsRight.map(({ href, label }) => (
@@ -392,7 +496,8 @@ export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }:
           <div className='mt-8 border-t border-neutral-200 pt-4 text-light'>
             <div className='flex flex-col items-center justify-between gap-2 md:flex-row md:items-start'>
               <small className='text-center text-sm md:text-left'>
-                &copy; <time dateTime='2025'>2025</time> Arteon. Wszelkie prawa zastrzeżone.
+                &copy; <time dateTime='2025'>2025</time> Arteon. Wszelkie prawa
+                zastrzeżone.
               </small>
               {PL_LEGAL_LINKS.map(({ href, label }) => (
                 <p key={href}>

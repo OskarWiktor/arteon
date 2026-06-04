@@ -158,9 +158,16 @@ interface LocaleProviderProps {
   children: ReactNode;
 }
 
-export function LocaleProvider({ value, config, dict, children }: LocaleProviderProps) {
+export function LocaleProvider({
+  value,
+  config,
+  dict,
+  children,
+}: LocaleProviderProps) {
   const ctx = { locale: value, config, dict };
-  return <LocaleContext.Provider value={ctx}>{children}</LocaleContext.Provider>;
+  return (
+    <LocaleContext.Provider value={ctx}>{children}</LocaleContext.Provider>
+  );
 }
 
 export function useLocale(): Locale {

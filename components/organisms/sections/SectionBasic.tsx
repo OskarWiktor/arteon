@@ -61,10 +61,13 @@ export default function SectionBasic({
           })}
         >
           <div
-            className={cn('flex h-full flex-col justify-center py-6 md:py-8 lg:py-8', {
-              'lg:pl-6': variant === 'right',
-              'lg:pr-6': variant === 'left',
-            })}
+            className={cn(
+              'flex h-full flex-col justify-center py-6 md:py-8 lg:py-8',
+              {
+                'lg:pl-6': variant === 'right',
+                'lg:pr-6': variant === 'left',
+              },
+            )}
           >
             <SectionHeader
               subtitle={subtitle}

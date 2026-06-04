@@ -36,12 +36,14 @@ const schema = {
 };
 
 export const metadata = {
-  title: 'Realizacje stron internetowych, sklepów oraz projektów graficznych - Arteon',
+  title:
+    'Realizacje stron internetowych, sklepów oraz projektów graficznych - Arteon',
   description:
     'Specjalizujemy się na projektowaniu graficznym projektów do druku oraz stron internetowych wraz z realizacją. Sprawdź opisy realizacji i zobacz jakie dajemy efekty',
   alternates: { canonical: toAbsoluteUrl('/realizacje') },
   openGraph: {
-    title: 'Realizacje stron internetowych, sklepów oraz projektów graficznych - Arteon',
+    title:
+      'Realizacje stron internetowych, sklepów oraz projektów graficznych - Arteon',
     description:
       'Specjalizujemy się na projektowaniu graficznym projektów do druku oraz stron internetowych wraz z realizacją. Sprawdź opisy realizacji i zobacz jakie dajemy efekty',
     url: toAbsoluteUrl('/realizacje'),

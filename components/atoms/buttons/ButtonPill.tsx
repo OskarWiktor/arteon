@@ -32,7 +32,9 @@ export default function ButtonPill<T extends string | number>({
       className={cn(
         buttonPillClasses,
         focusRingClasses,
-        isActive ? 'bg-primary text-white' : 'border-neutral-200 bg-white hover:bg-neutral-100',
+        isActive
+          ? 'bg-primary text-white'
+          : 'border-neutral-200 bg-white hover:bg-neutral-100',
         disabled && disabledInteractiveClasses,
         className,
       )}

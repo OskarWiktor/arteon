@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Muunna XML JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
-      "featureList": ["XML to JSON conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert XML to JSON", "XML to JSON", "Free XML to JSON converter"]
+      "featureList": [
+        "XML to JSON conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert XML to JSON",
+        "XML to JSON",
+        "Free XML to JSON converter"
+      ]
     },
     "howTo": {
       "name": "Kuinka muuntaa XML JSON-muotoon",

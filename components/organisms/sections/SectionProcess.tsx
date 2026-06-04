@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react';
 import { RiArrowRightSLine } from 'react-icons/ri';
+import Card from '../Card';
+import Wrapper from '../../atoms/Wrapper';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import Wrapper from '../../atoms/Wrapper';
-import Card from '../Card';
 
 interface ProcessStep {
   number: number;
@@ -17,9 +17,22 @@ interface SectionProcessProps {
   steps: ProcessStep[];
 }
 
+/**
+ * Render a responsive "process" section that displays numbered step cards with icons and desktop arrows between them.
+ *
+ * Renders an accessible section (aria-labelledby set when `title` is provided), an optional header, and a responsive list of steps:
+ * stacked on small screens and horizontal with arrows on larger screens.
+ *
+ * @param title - Optional heading text; when provided it is rendered and used as the section's accessible label (`aria-labelledby="process-title"`).
+ * @param steps - Array of steps to render. Each step should include `number`, `title`, and `icon`.
+ * @returns A React element representing the process/steps section.
+ */
 export default function SectionProcess({ title, steps }: SectionProcessProps) {
   return (
-    <section data-section='process' aria-labelledby={title ? 'process-title' : undefined}>
+    <section
+      data-section='process'
+      aria-labelledby={title ? 'process-title' : undefined}
+    >
       <Wrapper>
         {title && <SectionHeader title={title} />}
 
@@ -36,7 +49,9 @@ export default function SectionProcess({ title, steps }: SectionProcessProps) {
                   {step.icon}
                 </div>
                 <div>
-                  <span className='text-xs text-light uppercase'>Krok {step.number}</span>
+                  <span className='text-xs text-light uppercase'>
+                    Krok {step.number}
+                  </span>
                   <h3 className='h6 font-semibold'>{step.title}</h3>
                 </div>
               </Card>

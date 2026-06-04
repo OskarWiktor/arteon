@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Converteer WebP-afbeeldingen naar PDF-documenten. Combineer meerdere bestanden in één PDF. Gratis.",
-      "featureList": ["WebP to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert WebP to PDF", "WebP to PDF", "Free WebP to PDF converter"]
+      "featureList": [
+        "WebP to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert WebP to PDF",
+        "WebP to PDF",
+        "Free WebP to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Hoe WebP naar PDF converteren",
@@ -151,7 +159,10 @@
         },
         {
           "label": "Webbrowserondersteuning",
-          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Ingebouwde PDF-viewer"]
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Ingebouwde PDF-viewer"
+          ]
         },
         {
           "label": "Compact bestandsformaat",

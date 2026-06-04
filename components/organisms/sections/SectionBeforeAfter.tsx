@@ -17,6 +17,16 @@ interface SectionBeforeAfterProps {
   afterLabel?: string;
 }
 
+/**
+ * Renders an interactive before/after image comparison with a draggable slider.
+ *
+ * @param beforeImage - Image source for the "before" view.
+ * @param afterImage - Image source for the "after" view.
+ * @param title - Optional section title.
+ * @param beforeLabel - Label displayed on the before image.
+ * @param afterLabel - Label displayed on the after image.
+ * @returns The rendered section.
+ */
 export default function SectionBeforeAfter({
   title,
   beforeImage,
@@ -27,7 +37,10 @@ export default function SectionBeforeAfter({
   const [position, setPosition] = useState(50);
 
   return (
-    <section data-section='before-after' aria-labelledby={title ? 'before-after-title' : undefined}>
+    <section
+      data-section='before-after'
+      aria-labelledby={title ? 'before-after-title' : undefined}
+    >
       <Wrapper>
         {title && <SectionHeader title={title} />}
 
@@ -56,7 +69,10 @@ export default function SectionBeforeAfter({
               />
             </div>
 
-            <div className='absolute inset-y-0' style={{ left: `${position}%` }}>
+            <div
+              className='absolute inset-y-0'
+              style={{ left: `${position}%` }}
+            >
               <div className='absolute top-1/2 left-1/2 h-full w-1 -translate-x-1/2 bg-white shadow-lg' />
               <button
                 type='button'
@@ -65,7 +81,9 @@ export default function SectionBeforeAfter({
                   flexCenterClasses,
                 )}
               >
-                <RiExpandLeftRightLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiExpandLeftRightLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               </button>
             </div>
 
@@ -86,7 +104,9 @@ export default function SectionBeforeAfter({
             </div>
           </div>
 
-          <p className='mt-4 text-center text-sm text-light'>Przesuń suwak, aby porównać</p>
+          <p className='mt-4 text-center text-sm text-light'>
+            Przesuń suwak, aby porównać
+          </p>
         </div>
       </Wrapper>
     </section>

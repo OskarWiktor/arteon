@@ -6,8 +6,14 @@ import type { SignatureConfig, StyleConfig } from '@/types/tools/email';
 type Props = {
   config: SignatureConfig;
   styleConfig: StyleConfig;
-  onTextChange: <K extends keyof SignatureConfig>(key: K, value: SignatureConfig[K]) => void;
-  onStyleChange: <K extends keyof StyleConfig>(key: K, value: StyleConfig[K]) => void;
+  onTextChange: <K extends keyof SignatureConfig>(
+    key: K,
+    value: SignatureConfig[K],
+  ) => void;
+  onStyleChange: <K extends keyof StyleConfig>(
+    key: K,
+    value: StyleConfig[K],
+  ) => void;
   t: {
     identity: Record<string, string>;
   };

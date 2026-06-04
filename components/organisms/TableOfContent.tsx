@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
 import Card from './Card';
+import { cn } from '@/lib/utils';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 
 type Entry = { id: string; text: string; level: 2 | 3 };
 
@@ -19,6 +19,17 @@ const widthClass = {
   large: 'lg:w-[300px]',
 };
 
+/**
+ * Render a table of contents built from headings found under the specified root element.
+ *
+ * Scans the DOM for H2 headings, ensures each has a stable id (generating unique slugs when needed),
+ * tracks the currently visible heading to highlight its link, and renders a responsive TOC UI
+ * with a collapsible mobile list and a sticky desktop sidebar.
+ *
+ * @param rootSelector - CSS selector used to locate the article root. Defaults to `#article-root`.
+ * @param size - Layout size variant; `'small'` or `'large'` to control width classes. Defaults to `'small'`.
+ * @returns The rendered table of contents element, or `null` when no headings are found.
+ */
 export default function TableOfContents({
   rootSelector = '#article-root',
   size = 'small',
@@ -29,7 +40,8 @@ export default function TableOfContents({
 
   useEffect(() => {
     const sectionFallback = 'sekcja';
-    const root = (document.querySelector(rootSelector) as Document | Element) || document;
+    const root =
+      (document.querySelector(rootSelector) as Document | Element) || document;
 
     const headings = Array.from(root.querySelectorAll('h2')) as HTMLElement[];
 
@@ -46,7 +58,11 @@ export default function TableOfContents({
         const base = slugify(h.textContent || '');
         let candidate = base || sectionFallback;
         let i = 2;
-        while (!candidate || seen.has(candidate) || document.getElementById(candidate)) {
+        while (
+          !candidate ||
+          seen.has(candidate) ||
+          document.getElementById(candidate)
+        ) {
           candidate = `${base || sectionFallback}-${i++}`;
         }
         h.id = candidate;
@@ -87,11 +103,18 @@ export default function TableOfContents({
   if (!hasItems) return null;
 
   const LinkList = ({ dense = false }: { dense?: boolean }) => (
-    <ul className={cn(dense ? 'space-y-0.5 text-[13px] leading-tight' : 'space-y-0.5 text-sm')}>
+    <ul
+      className={cn(
+        dense ? 'space-y-0.5 text-[13px] leading-tight' : 'space-y-0.5 text-sm',
+      )}
+    >
       {items.map(i => {
         const isActive = activeId === i.id;
         return (
-          <li key={i.id} className={i.level === 3 ? 'border-l border-neutral-200' : ''}>
+          <li
+            key={i.id}
+            className={i.level === 3 ? 'border-l border-neutral-200' : ''}
+          >
             <a
               href={`#${i.id}`}
               aria-current={isActive ? 'location' : undefined}
@@ -148,9 +171,17 @@ export default function TableOfContents({
         </Card>
       </aside>
 
-      <aside className={cn('sticky top-24 hidden', 'self-start lg:block', widthClass[size])}>
+      <aside
+        className={cn(
+          'sticky top-24 hidden',
+          'self-start lg:block',
+          widthClass[size],
+        )}
+      >
         <Card variant='outlined'>
-          <p className='mb-2 text-xs tracking-wider text-light uppercase'>Spis treści</p>
+          <p className='mb-2 text-xs tracking-wider text-light uppercase'>
+            Spis treści
+          </p>
           <nav aria-label='Spis treści'>
             <LinkList />
           </nav>

@@ -3,13 +3,22 @@ import type { QrOptions, VCardData, EmailData } from '@/types/tools/qr';
 
 /** Escape special vCard characters: backslash, semicolon, comma, newline */
 function escapeVCard(s: string): string {
-  return s.replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n');
+  return s
+    .replace(/\\/g, '\\\\')
+    .replace(/;/g, '\\;')
+    .replace(/,/g, '\\,')
+    .replace(/\n/g, '\\n');
 }
 
 export function buildVCardString(data: VCardData): string {
   const fn = escapeVCard(data.firstName);
   const ln = escapeVCard(data.lastName);
-  const lines = ['BEGIN:VCARD', 'VERSION:3.0', `N:${ln};${fn};;;`, `FN:${fn} ${ln}`];
+  const lines = [
+    'BEGIN:VCARD',
+    'VERSION:3.0',
+    `N:${ln};${fn};;;`,
+    `FN:${fn} ${ln}`,
+  ];
 
   if (data.organization) lines.push(`ORG:${escapeVCard(data.organization)}`);
   if (data.title) lines.push(`TITLE:${escapeVCard(data.title)}`);

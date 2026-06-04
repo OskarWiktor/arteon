@@ -202,7 +202,10 @@
         },
         {
           "label": "Yleinen sekaannus",
-          "values": ["Käytetään kuvista (virheellisesti)", "Oikea termi kuville"]
+          "values": [
+            "Käytetään kuvista (virheellisesti)",
+            "Oikea termi kuville"
+          ]
         }
       ]
     },

@@ -51,7 +51,8 @@ function slugify(input) {
 }
 
 function toRoute(file) {
-  if (file === 'page.tsx' || file === 'page.ts' || file === 'page.mdx') return '/';
+  if (file === 'page.tsx' || file === 'page.ts' || file === 'page.mdx')
+    return '/';
   let r = '/' + file.replace(/\\/g, '/').replace(/\/page\.(ts|tsx|mdx)$/, '');
   r = r.replace(/\/\([^/]+\)/g, '');
   if (r === '') r = '/'; // Fix: route group at root becomes empty string
@@ -158,7 +159,10 @@ function readBlog() {
   }
 }
 function primaryCategorySlug(article) {
-  const primary = article.primaryCategory || (article.category && article.category[0]) || 'inne';
+  const primary =
+    article.primaryCategory ||
+    (article.category && article.category[0]) ||
+    'inne';
   return slugify(primary);
 }
 function articleAssetsLastmod(article) {
@@ -185,7 +189,9 @@ function articleAssetsLastmod(article) {
 const ROUTE_LASTMOD = buildRouteLastmodMap();
 const PROJECTS = readProjects();
 const ARTICLES = readBlog();
-const IS_PROD = process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production';
+const IS_PROD =
+  process.env.VERCEL_ENV === 'production' ||
+  process.env.NODE_ENV === 'production';
 
 // ---------------------------------------------------------------------------
 // Locale data imported from single source of truth: lib/sitemap-locale-config.cjs
@@ -223,7 +229,11 @@ function getAlternateRefs(loc) {
   if (loc === '/') {
     return [
       { href: `${SITE_URL}/`, hreflang: 'pl', hrefIsAbsolute: true },
-      { href: `${SITE_URL}${LOCALE_TOOLS_BASE.en}`, hreflang: 'x-default', hrefIsAbsolute: true },
+      {
+        href: `${SITE_URL}${LOCALE_TOOLS_BASE.en}`,
+        hreflang: 'x-default',
+        hrefIsAbsolute: true,
+      },
     ];
   }
 
@@ -253,7 +263,11 @@ function getAlternateRefs(loc) {
     }));
     const enPath = localePaths['en'];
     if (enPath)
-      refs.push({ href: `${SITE_URL}${enPath}`, hreflang: 'x-default', hrefIsAbsolute: true });
+      refs.push({
+        href: `${SITE_URL}${enPath}`,
+        hreflang: 'x-default',
+        hrefIsAbsolute: true,
+      });
     return refs;
   }
 
@@ -265,7 +279,11 @@ function getAlternateRefs(loc) {
         hreflang: LOCALE_TO_HREFLANG[lang] || lang,
         hrefIsAbsolute: true,
       }));
-      refs.push({ href: `${SITE_URL}${page.en}`, hreflang: 'x-default', hrefIsAbsolute: true });
+      refs.push({
+        href: `${SITE_URL}${page.en}`,
+        hreflang: 'x-default',
+        hrefIsAbsolute: true,
+      });
       return refs;
     }
   }
@@ -400,20 +418,35 @@ ROUTE_IMAGE.set(
   '/uslugi/projekty-graficzne/projekt-graficzny-strony',
   '/assets/projects/arteon-baners-msc.webp',
 );
-ROUTE_IMAGE.set('/uslugi/tworzenie-stron-wordpress', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set(
+  '/uslugi/tworzenie-stron-wordpress',
+  '/assets/projects/arteon-baners-msc.webp',
+);
 ROUTE_IMAGE.set(
   '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
   '/assets/projects/arteon-baners-camper-albania-mockup.webp',
 );
-ROUTE_IMAGE.set('/uslugi/sklepy-internetowe', '/assets/projects/arteon-baners-trilllizo.webp');
-ROUTE_IMAGE.set('/uslugi/blogi-internetowe', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set(
+  '/uslugi/sklepy-internetowe',
+  '/assets/projects/arteon-baners-trilllizo.webp',
+);
+ROUTE_IMAGE.set(
+  '/uslugi/blogi-internetowe',
+  '/assets/projects/arteon-baners-msc.webp',
+);
 ROUTE_IMAGE.set(
   '/uslugi/tworzenie-tresci',
   '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
 );
 ROUTE_IMAGE.set('/uslugi/marketing', '/assets/projects/arteon-baners-msc.webp');
-ROUTE_IMAGE.set('/uslugi/marketing/audyt-seo', '/assets/projects/arteon-baners-msc.webp');
-ROUTE_IMAGE.set('/uslugi/marketing/optymalizacja-seo', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set(
+  '/uslugi/marketing/audyt-seo',
+  '/assets/projects/arteon-baners-msc.webp',
+);
+ROUTE_IMAGE.set(
+  '/uslugi/marketing/optymalizacja-seo',
+  '/assets/projects/arteon-baners-msc.webp',
+);
 ROUTE_IMAGE.set(
   '/uslugi/marketing/pozycjonowanie-stron',
   '/assets/projects/arteon-baners-msc.webp',
@@ -441,7 +474,9 @@ function sitemapImage(relativePath) {
   const byCat = new Map();
   for (const a of ARTICLES) {
     const datestr =
-      parseISO(a.dateModified) || parseISO(a.datePublished) || articleAssetsLastmod(a);
+      parseISO(a.dateModified) ||
+      parseISO(a.datePublished) ||
+      articleAssetsLastmod(a);
     const primary = a.primaryCategory || (a.category && a.category[0]);
     const allCats = [primary, ...(a.category || [])].filter(Boolean);
     for (const c of allCats) {
@@ -456,7 +491,10 @@ function sitemapImage(relativePath) {
   }
 
   const allDates = ARTICLES.map(
-    a => parseISO(a.dateModified) || parseISO(a.datePublished) || articleAssetsLastmod(a),
+    a =>
+      parseISO(a.dateModified) ||
+      parseISO(a.datePublished) ||
+      articleAssetsLastmod(a),
   ).filter(Boolean);
   const newest = maxISO(allDates);
   if (newest) ROUTE_LASTMOD.set('/edukacja', newest);
@@ -539,7 +577,11 @@ module.exports = {
         ROUTE_LASTMOD.get(loc) ||
         null;
 
-      const entry = { loc, changefreq: getPageChangefreq(loc), priority: getPagePriority(loc) };
+      const entry = {
+        loc,
+        changefreq: getPageChangefreq(loc),
+        priority: getPagePriority(loc),
+      };
       if (iso) entry.lastmod = iso;
       if (p.image) entry.images = sitemapImage(p.image);
       add.push(entry);
@@ -551,7 +593,11 @@ module.exports = {
       const fromData = parseISO(a.dateModified) || parseISO(a.datePublished);
       const fallback = articleAssetsLastmod(a);
       const lastmod = fromData || fallback;
-      const entry = { loc, changefreq: getPageChangefreq(loc), priority: getPagePriority(loc) };
+      const entry = {
+        loc,
+        changefreq: getPageChangefreq(loc),
+        priority: getPagePriority(loc),
+      };
       if (lastmod) entry.lastmod = lastmod;
       if (a.cover) entry.images = sitemapImage(a.cover);
       add.push(entry);

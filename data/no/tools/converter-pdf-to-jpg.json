@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Konverter PDF-sider til JPG-bilder. Høy kvalitet, ingen begrensninger. Gratis.",
-      "featureList": ["PDF to JPG conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PDF to JPG", "PDF to JPG", "Free PDF to JPG converter"]
+      "featureList": [
+        "PDF to JPG conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PDF to JPG",
+        "PDF to JPG",
+        "Free PDF to JPG converter"
+      ]
     },
     "howTo": {
       "name": "Slik konverterer du PDF til JPG",

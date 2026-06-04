@@ -19,6 +19,19 @@ interface SectionStarRatingProps {
   label?: string;
 }
 
+/**
+ * Renders an interactive star rating control that lets users view and set a rating.
+ *
+ * Renders up to `max` stars, highlights stars up to the current `value` (or the hovered star while hovering),
+ * and calls `onChange` with the selected rating when a star is clicked.
+ *
+ * @param value - Current selected rating (0 to `max`)
+ * @param onChange - Callback invoked with the new rating when a star is clicked
+ * @param max - Number of stars to render (default `5`)
+ * @param size - Visual size of the star icons: `'small' | 'medium' | 'large'` (default `'medium'`)
+ * @param label - Optional label displayed above the stars and used as the group's accessible name
+ * @returns The rendered star rating element
+ */
 export default function SectionStarRating({
   value,
   onChange,
@@ -32,7 +45,9 @@ export default function SectionStarRating({
 
   return (
     <div className='inline-flex flex-col items-center gap-2'>
-      {label && <span className='text-sm font-medium text-primary'>{label}</span>}
+      {label && (
+        <span className='text-sm font-medium text-primary'>{label}</span>
+      )}
 
       <div
         className='flex gap-1'
@@ -50,14 +65,23 @@ export default function SectionStarRating({
               type='button'
               onClick={() => onChange(starValue)}
               onMouseEnter={() => setHoverValue(starValue)}
-              className={cn('transition-transform hover:scale-110', focusRingClasses)}
+              className={cn(
+                'transition-transform hover:scale-110',
+                focusRingClasses,
+              )}
               aria-label={`${starValue} z ${max} gwiazdek`}
             >
               {isFilled ? (
-                <RiStarFill className={SectionStarRatingSizeClasses[size] + ' text-accent'} />
+                <RiStarFill
+                  className={
+                    SectionStarRatingSizeClasses[size] + ' text-accent'
+                  }
+                />
               ) : (
                 <RiStarLine
-                  className={SectionStarRatingSizeClasses[size] + ' text-primary-light'}
+                  className={
+                    SectionStarRatingSizeClasses[size] + ' text-primary-light'
+                  }
                 />
               )}
             </button>

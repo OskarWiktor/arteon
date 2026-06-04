@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Převodník SVG na PNG",
-      "alternateName": ["Převést SVG na PNG", "Konverze SVG do PNG", "Převodník SVG na PNG zdarma"],
+      "alternateName": [
+        "Převést SVG na PNG",
+        "Konverze SVG do PNG",
+        "Převodník SVG na PNG zdarma"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",

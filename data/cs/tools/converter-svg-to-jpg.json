@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Převodník SVG na JPG",
-      "alternateName": ["Převést SVG na JPG", "Konverze SVG do JPG", "Převodník SVG na JPG zdarma"],
+      "alternateName": [
+        "Převést SVG na JPG",
+        "Konverze SVG do JPG",
+        "Převodník SVG na JPG zdarma"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",

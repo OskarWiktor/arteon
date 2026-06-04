@@ -8,7 +8,11 @@ interface ToolStatRowProps {
   className?: string;
 }
 
-export default function ToolStatRow({ label, value, className = '' }: ToolStatRowProps) {
+export default function ToolStatRow({
+  label,
+  value,
+  className = '',
+}: ToolStatRowProps) {
   return (
     <div
       className={cn(

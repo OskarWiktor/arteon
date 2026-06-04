@@ -1,6 +1,11 @@
 import { GoLaw } from 'react-icons/go';
 import { MdSupportAgent } from 'react-icons/md';
-import { RiArticleLine, RiBarChart2Line, RiBookOpenLine, RiBrushLine } from 'react-icons/ri';
+import {
+  RiArticleLine,
+  RiBarChart2Line,
+  RiBookOpenLine,
+  RiBrushLine,
+} from 'react-icons/ri';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import { JsonLd } from '@/components/atoms/JsonLd';
@@ -46,7 +51,9 @@ function HomePageSchemas() {
   const testimonials = testimonialsPl as Testimonial[];
   const allRatings = testimonials.map(t => t.rating);
   const avgRating =
-    allRatings.length > 0 ? allRatings.reduce((a, b) => a + b, 0) / allRatings.length : 5;
+    allRatings.length > 0
+      ? allRatings.reduce((a, b) => a + b, 0) / allRatings.length
+      : 5;
   const reviewCount = testimonials.length;
 
   const aggregateRating = {
@@ -154,17 +161,19 @@ export default function HomePage() {
           items={[
             {
               topImageAlt: 'Papier firmowy dla kancelarii Lux Nova - mockup',
-              topImageSrc: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
+              topImageSrc:
+                '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
               title: 'Projekty graficzne',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Tworzymy rozmaite projekty graficzne. Od projektów do druku, jak wizytówki czy
-                    ulotki, przez projekty do mediów społecznościowych oraz stron, po pełne
-                    identyfikacje wizualne i projekty nadruków na odzież. Opieramy się na
-                    psychologii, dzięki czemu nasze projekty trafiają do odpowiednich grup
-                    odbiorczych, tworząc dla Ciebie idealne środowisko do pozyskiwania najlepszych
-                    klientów
+                    Tworzymy rozmaite projekty graficzne. Od projektów do druku,
+                    jak wizytówki czy ulotki, przez projekty do mediów
+                    społecznościowych oraz stron, po pełne identyfikacje
+                    wizualne i projekty nadruków na odzież. Opieramy się na
+                    psychologii, dzięki czemu nasze projekty trafiają do
+                    odpowiednich grup odbiorczych, tworząc dla Ciebie idealne
+                    środowisko do pozyskiwania najlepszych klientów
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/uslugi/projekty-graficzne'>
@@ -182,12 +191,13 @@ export default function HomePage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Tworzymy strony internetowe, sklepy, blogi oraz aplikacje webowe, dopasowując
-                    technologię, która w Twoim przypadku będzie najlepsza. Tworzymy witryny zgodne z
-                    krajowymi i międzynarodowymi wymogami prawnymi (m.in. RODO, WCAG 2.1 AA),
-                    oferując przy tym bezpłatne wsparcie. Każdy proces pracy tłumaczymy jak
-                    najprostszym językiem, dzięki czemu nie musisz się martwić, jeśli nie posiadasz
-                    wiedzy technicznej.
+                    Tworzymy strony internetowe, sklepy, blogi oraz aplikacje
+                    webowe, dopasowując technologię, która w Twoim przypadku
+                    będzie najlepsza. Tworzymy witryny zgodne z krajowymi i
+                    międzynarodowymi wymogami prawnymi (m.in. RODO, WCAG 2.1
+                    AA), oferując przy tym bezpłatne wsparcie. Każdy proces
+                    pracy tłumaczymy jak najprostszym językiem, dzięki czemu nie
+                    musisz się martwić, jeśli nie posiadasz wiedzy technicznej.
                   </p>
                   <div className='mt-auto flex gap-4'>
                     <ButtonLink arrow href='/uslugi/tworzenie-stron-wordpress'>
@@ -206,16 +216,19 @@ export default function HomePage() {
             {
               topImageAlt:
                 'Mockup szablonów postów do medi społecznościowych dla MSC Psychotherapy',
-              topImageSrc: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
+              topImageSrc:
+                '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               title: 'Marketing',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz pełnym marketingu firm w
-                    Google i nie tylko. Z nami zyskasz widoczność dokładnie tam, gdzie szukają Cię
-                    klienci. Zajmujemy się również tworzeniem kampanii reklamowych oraz prowadzeniem
-                    mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz
-                    konkurencji, aby móc zaproponować działania, które trafiają dokładnie w Twoją
+                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz
+                    pełnym marketingu firm w Google i nie tylko. Z nami zyskasz
+                    widoczność dokładnie tam, gdzie szukają Cię klienci.
+                    Zajmujemy się również tworzeniem kampanii reklamowych oraz
+                    prowadzeniem mediów społecznościowych. Przeprowadzamy
+                    dokładną analizę Twojej branży oraz konkurencji, aby móc
+                    zaproponować działania, które trafiają dokładnie w Twoją
                     grupę odbiorców.
                   </p>
                   <div className='mt-4'>
@@ -228,14 +241,16 @@ export default function HomePage() {
             },
             {
               topImageAlt: 'Mockup realizacji strony internetowej NaPilota ',
-              topImageSrc: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              topImageSrc:
+                '/assets/projects/napilota/mockup-strony-napilota.webp',
               title: 'Treści',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Tworzymy treści sprzedażowe, promocyjne oraz edukacyjne na witryny internetowe
-                    oraz platformy społecznościowe, które w jasny sposób pokazują Twoją ofertą i
-                    Twoje kompetencje. Wszystko to w oparciu o rozwiązywanie realnych problemów
+                    Tworzymy treści sprzedażowe, promocyjne oraz edukacyjne na
+                    witryny internetowe oraz platformy społecznościowe, które w
+                    jasny sposób pokazują Twoją ofertą i Twoje kompetencje.
+                    Wszystko to w oparciu o rozwiązywanie realnych problemów
                     Twoich klientów.
                   </p>
                   <div className='mt-4'>
@@ -257,27 +272,50 @@ export default function HomePage() {
           items={[
             {
               title: 'Treści dopasowane do Twojego wymarzonego klienta',
-              icon: <RiArticleLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiArticleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Spójne projekty graficzne online oraz offline',
-              icon: <RiBrushLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBrushLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Wsparcie prawne - polityki, regulaminy, WCAG 2.1 AA',
-              icon: <GoLaw className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <GoLaw className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
             {
-              title: 'Strategie marketingowe odpowiadające na problemy Twoich odbiorców',
-              icon: <RiBarChart2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              title:
+                'Strategie marketingowe odpowiadające na problemy Twoich odbiorców',
+              icon: (
+                <RiBarChart2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Dedykowane szkolenia i instrukcje',
-              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBookOpenLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Wsparcie w dalszym rozwoju po realizacji',
-              icon: <MdSupportAgent className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <MdSupportAgent
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
           ]}
         />
@@ -300,7 +338,10 @@ export default function HomePage() {
 
         <Divider line />
 
-        <ArticlesCarousel title='Nasze artykuły i poradniki' articles={articlePreviews} />
+        <ArticlesCarousel
+          title='Nasze artykuły i poradniki'
+          articles={articlePreviews}
+        />
 
         <Divider size='sm' />
       </Wrapper>

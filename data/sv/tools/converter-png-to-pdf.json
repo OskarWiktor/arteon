@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Konvertera PNG-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.",
-      "featureList": ["PNG to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PNG to PDF", "PNG to PDF", "Free PNG to PDF converter"]
+      "featureList": [
+        "PNG to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PNG to PDF",
+        "PNG to PDF",
+        "Free PNG to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Hur man konverterar PNG till PDF",

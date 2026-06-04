@@ -32,7 +32,10 @@ export const metadata = {
   title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
   description:
     'Długofalowe pozycjonowanie stron: plan treści, porządek na stronie i bezpieczne linki. Comiesięczny raport i jasne priorytety działań.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron' },
+  alternates: {
+    canonical:
+      'https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron',
+  },
   openGraph: {
     title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
     description:
@@ -73,8 +76,9 @@ export default function OfferSeoSubscription() {
         title='Pozycjonowanie stron'
         description={
           <>
-            Budujemy długofalową widoczność Twojej strony w Google. Co miesiąc rozwijamy treści,
-            optymalizujemy serwis i dbamy o jak najwyższą pozycję w wynikach wyszukiwania Google
+            Budujemy długofalową widoczność Twojej strony w Google. Co miesiąc
+            rozwijamy treści, optymalizujemy serwis i dbamy o jak najwyższą
+            pozycję w wynikach wyszukiwania Google
           </>
         }
         secondaryCtaLabel='Bezpłatna konsultacja'
@@ -89,7 +93,10 @@ export default function OfferSeoSubscription() {
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/marketing`, label: 'Marketing' }}
-        fourth={{ href: `/uslugi/marketing/pozycjonowanie-stron`, label: 'Pozycjonowanie stron' }}
+        fourth={{
+          href: `/uslugi/marketing/pozycjonowanie-stron`,
+          label: 'Pozycjonowanie stron',
+        }}
         includeJsonLd
       />
 
@@ -99,19 +106,22 @@ export default function OfferSeoSubscription() {
         <SectionInfo title='Na czym polega pozycjonowanie stron i dlaczego działa?'>
           <p>
             <strong>
-              Pozycjonowanie SEO stron to praca polegająca na rozwijaniu Twojego serwisu w celu
-              uzyskania jak najwyższej pozycji w wyszukiwarce Google.
+              Pozycjonowanie SEO stron to praca polegająca na rozwijaniu Twojego
+              serwisu w celu uzyskania jak najwyższej pozycji w wyszukiwarce
+              Google.
             </strong>{' '}
-            Nasza oferta pozycjonowania to spójny system: rozwijamy treści, poprawiamy kluczowe
-            podstrony, pozyskujemy linki, które wzmacniają wiarygodność domeny oraz stale dodajemy
-            nowe strony abyś miał coraz więcej klientów. Dzięki temu Twoja witryna częściej pojawia
-            się tam, gdzie szukają Cię klienci.
+            Nasza oferta pozycjonowania to spójny system: rozwijamy treści,
+            poprawiamy kluczowe podstrony, pozyskujemy linki, które wzmacniają
+            wiarygodność domeny oraz stale dodajemy nowe strony abyś miał coraz
+            więcej klientów. Dzięki temu Twoja witryna częściej pojawia się tam,
+            gdzie szukają Cię klienci.
           </p>
           <br />
           <p>
-            <strong>Pracujemy na priorytetach i danych.</strong> Każdy miesiąc ma jasny cel:
-            konkretne tematy treści, podstrony do dopracowania i zadania wspierające widoczność.
-            Otrzymujesz czytelny raport i plan na kolejny etap.
+            <strong>Pracujemy na priorytetach i danych.</strong> Każdy miesiąc
+            ma jasny cel: konkretne tematy treści, podstrony do dopracowania i
+            zadania wspierające widoczność. Otrzymujesz czytelny raport i plan
+            na kolejny etap.
           </p>
         </SectionInfo>
 
@@ -129,13 +139,17 @@ export default function OfferSeoSubscription() {
         >
           <ul className='mt-4 list-disc space-y-2 pl-5 text-sm'>
             <li>
-              Właścicieli stron firmowych, którzy chcą rosnąć w wynikach wyszukiwania i pozyskiwać
-              więcej klientów.
+              Właścicieli stron firmowych, którzy chcą rosnąć w wynikach
+              wyszukiwania i pozyskiwać więcej klientów.
             </li>
             <li>
-              Branż usługowych i B2B, gdzie liczy się budowa autorytetu i regularne publikacje.
+              Branż usługowych i B2B, gdzie liczy się budowa autorytetu i
+              regularne publikacje.
             </li>
-            <li>Marek, które potrzebują stabilnej strategii budowy swojej widoczności online.</li>
+            <li>
+              Marek, które potrzebują stabilnej strategii budowy swojej
+              widoczności online.
+            </li>
           </ul>
         </SectionBasic>
 
@@ -149,42 +163,61 @@ export default function OfferSeoSubscription() {
               title: 'Strategia treści',
               description: (
                 <>
-                  Wybieramy tematy, które odpowiadają na pytania klientów i tworzymy odpowiednie
-                  treści, budując Twoją widoczność tam, gdzie szukają Cię klienci.
+                  Wybieramy tematy, które odpowiadają na pytania klientów i
+                  tworzymy odpowiednie treści, budując Twoją widoczność tam,
+                  gdzie szukają Cię klienci.
                 </>
               ),
-              icon: <RiLightbulbFlashLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiLightbulbFlashLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Poprawa kluczowych podstron (on-page)',
               description: (
                 <>
-                  Analizujemy Twoją konkurencję i dopracowujemy istniejące podstrony: nagłówki,
-                  tytuły, dodatkowe opisy oraz elementy - tak, by strony były lepiej dopasowane do
-                  realnych zapytań użytkowników.
+                  Analizujemy Twoją konkurencję i dopracowujemy istniejące
+                  podstrony: nagłówki, tytuły, dodatkowe opisy oraz elementy -
+                  tak, by strony były lepiej dopasowane do realnych zapytań
+                  użytkowników.
                 </>
               ),
-              icon: <RiFileList2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileList2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Bezpieczne linki z wartościowych miejsc',
               description: (
                 <>
-                  Pozyskujemy odnośniki z miejsc, które mają sens dla Twojej branży (np. artykuły
-                  branżowe, katalogi) - to wzmacnia autorytet Twojej witryny
+                  Pozyskujemy odnośniki z miejsc, które mają sens dla Twojej
+                  branży (np. artykuły branżowe, katalogi) - to wzmacnia
+                  autorytet Twojej witryny
                 </>
               ),
-              icon: <RiLinksFill className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiLinksFill
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Monitoring i raport co miesiąc',
               description: (
                 <>
-                  Sprawdzamy widoczność, wejścia z Google i zapytania z WWW. Dostajesz prosty raport
-                  i rekomendacje na kolejny miesiąc.
+                  Sprawdzamy widoczność, wejścia z Google i zapytania z WWW.
+                  Dostajesz prosty raport i rekomendacje na kolejny miesiąc.
                 </>
               ),
-              icon: <RiBarChart2Fill className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBarChart2Fill
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
           ]}
         />
@@ -197,15 +230,16 @@ export default function OfferSeoSubscription() {
         >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Widoczność fraz:</strong> ile zapytań trafia do Top10/Top3 i jak rośnie Twój
-              zasięg.
+              <strong>Widoczność fraz:</strong> ile zapytań trafia do Top10/Top3
+              i jak rośnie Twój zasięg.
             </li>
             <li>
-              <strong>Ruch z Google:</strong> liczba wejść na stronę z wyników wyszukiwania.
+              <strong>Ruch z Google:</strong> liczba wejść na stronę z wyników
+              wyszukiwania.
             </li>
             <li>
-              <strong>Zapytania:</strong> formularze, telefony i wiadomości - ile realnie zgłasza
-              się klientów.
+              <strong>Zapytania:</strong> formularze, telefony i wiadomości -
+              ile realnie zgłasza się klientów.
             </li>
           </ul>
         </SectionInfo>
@@ -222,8 +256,9 @@ export default function OfferSeoSubscription() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Przeprowadzamy audyt SEO, a następnie ustalamy cele i zakres na trzy najbliższe
-                    miesiące: tematy treści, podstrony do dopracowania i zadania wspierające.
+                    Przeprowadzamy audyt SEO, a następnie ustalamy cele i zakres
+                    na trzy najbliższe miesiące: tematy treści, podstrony do
+                    dopracowania i zadania wspierające.
                   </p>
                 </div>
               ),
@@ -233,8 +268,8 @@ export default function OfferSeoSubscription() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak, aby
-                    Google uznał ją za wartościową.
+                    Optymalizujemy prędkość strony i poprawiamy ją od strony
+                    technicznej tak, aby Google uznał ją za wartościową.
                   </p>
                 </div>
               ),
@@ -244,8 +279,8 @@ export default function OfferSeoSubscription() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Publikujemy artykuły, rozwijamy sekcje ofert i porządkujemy elementy, które
-                    wpływają na widoczność i sprzedaż.
+                    Publikujemy artykuły, rozwijamy sekcje ofert i porządkujemy
+                    elementy, które wpływają na widoczność i sprzedaż.
                   </p>
                 </div>
               ),
@@ -255,8 +290,8 @@ export default function OfferSeoSubscription() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Omawiamy wyniki i rekomendujemy kolejne kroki, żeby praca była przewidywalna i
-                    skuteczna.
+                    Omawiamy wyniki i rekomendujemy kolejne kroki, żeby praca
+                    była przewidywalna i skuteczna.
                   </p>
                 </div>
               ),
@@ -327,8 +362,9 @@ export default function OfferSeoSubscription() {
           note={{
             text: (
               <>
-                Masz rozbudowaną stronę lub działasz w wielu lokalizacjach? Dobierzemy tempo
-                publikacji i pozyskiwania linków do realiów Twojej branży i celów biznesowych.
+                Masz rozbudowaną stronę lub działasz w wielu lokalizacjach?
+                Dobierzemy tempo publikacji i pozyskiwania linków do realiów
+                Twojej branży i celów biznesowych.
               </>
             ),
             ctaLabel: 'Skonsultuj potrzeby',
@@ -354,7 +390,8 @@ export default function OfferSeoSubscription() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Jeśli jeszcze nie robiliśmy audytu - zaczniemy od diagnozy i listy priorytetów.
+                    Jeśli jeszcze nie robiliśmy audytu - zaczniemy od diagnozy i
+                    listy priorytetów.
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/marketing/audyt-seo'>
@@ -370,11 +407,14 @@ export default function OfferSeoSubscription() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Wprowadzimy zmiany techniczne i treściowe, które poprawią widoczność i wygodę
-                    korzystania.
+                    Wprowadzimy zmiany techniczne i treściowe, które poprawią
+                    widoczność i wygodę korzystania.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/marketing/optymalizacja-seo'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/marketing/optymalizacja-seo'
+                    >
                       Przejdź do optymalizacji
                     </ButtonLink>
                   </div>
@@ -446,7 +486,8 @@ export default function OfferSeoSubscription() {
             {
               title: 'Sklepy internetowe',
               size: 'medium',
-              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              backgroundImage:
+                '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
@@ -461,7 +502,8 @@ export default function OfferSeoSubscription() {
             {
               title: 'Blogi internetowe',
               size: 'small',
-              backgroundImage: '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
+              backgroundImage:
+                '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/blogi-internetowe',
             },

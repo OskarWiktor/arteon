@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Μετατρέψτε εικόνες TIFF σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.",
-      "featureList": ["TIFF to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert TIFF to PDF", "TIFF to PDF", "Free TIFF to PDF converter"]
+      "featureList": [
+        "TIFF to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert TIFF to PDF",
+        "TIFF to PDF",
+        "Free TIFF to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε TIFF σε PDF",

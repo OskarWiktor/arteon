@@ -1,6 +1,12 @@
 'use client';
 
-import { useEffect, useRef, useState, type KeyboardEvent, type RefObject } from 'react';
+import {
+  useEffect,
+  useRef,
+  useState,
+  type KeyboardEvent,
+  type RefObject,
+} from 'react';
 
 type Params = {
   itemCount: number;
@@ -47,7 +53,8 @@ export function useCarouselScroller({
       setCardWidth(cardWithGap);
 
       const maxScroll = container.scrollWidth - container.clientWidth;
-      const slides = maxScroll > 0 ? Math.round(maxScroll / cardWithGap) + 1 : 1;
+      const slides =
+        maxScroll > 0 ? Math.round(maxScroll / cardWithGap) + 1 : 1;
 
       setMaxSlides(slides);
       setIsScrollable(slides > 1);
@@ -121,9 +128,12 @@ export function useCarouselScroller({
     const el = scrollRef.current;
     if (!el) return;
 
-    const io = new IntersectionObserver(([entry]) => setIsVisible(entry.isIntersecting), {
-      threshold: 0,
-    });
+    const io = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      {
+        threshold: 0,
+      },
+    );
     io.observe(el);
     return () => io.disconnect();
   }, [autoPlay, scrollRef]);
@@ -157,7 +167,10 @@ export function useCarouselScroller({
     const container = scrollRef.current;
     const maxScroll = container.scrollWidth - container.clientWidth;
     const delta = dir === 'left' ? -1 : 1;
-    const targetLeft = Math.max(0, Math.min((currentSlide + delta) * cardWidth, maxScroll));
+    const targetLeft = Math.max(
+      0,
+      Math.min((currentSlide + delta) * cardWidth, maxScroll),
+    );
     container.scrollTo({ left: targetLeft, behavior: 'smooth' });
   };
 

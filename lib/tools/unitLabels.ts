@@ -1016,7 +1016,10 @@ export function getUnitLabel(key: string, locale: string): string {
 }
 
 // Helper function to get category label for a locale
-export function getCategoryLabel(category: FormatCategory, locale: string): string {
+export function getCategoryLabel(
+  category: FormatCategory,
+  locale: string,
+): string {
   const labels = CATEGORY_LABELS[category];
   return labels[locale] || labels.en || category;
 }

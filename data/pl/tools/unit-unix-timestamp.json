@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Unix Timestamp – epoch na datę i godzinę",
-      "alternateName": ["Przelicznik Unix timestamp", "Epoch converter", "Kalkulator czasu Unix"],
+      "alternateName": [
+        "Przelicznik Unix timestamp",
+        "Epoch converter",
+        "Kalkulator czasu Unix"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz Unix timestamp na datę i godzinę w strefie Europe/Warsaw. Niezbędne przy API, tokenach JWT i logach serwerów. Działa w przeglądarce, bez rejestracji.",

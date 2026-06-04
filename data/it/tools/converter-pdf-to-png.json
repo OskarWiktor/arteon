@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Converti pagine PDF in immagini PNG. Alta qualità, senza limiti. Gratuito.",
-      "featureList": ["PDF to PNG conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PDF to PNG", "PDF to PNG", "Free PDF to PNG converter"]
+      "featureList": [
+        "PDF to PNG conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PDF to PNG",
+        "PDF to PNG",
+        "Free PDF to PNG converter"
+      ]
     },
     "howTo": {
       "name": "Come convertire PDF in PNG",

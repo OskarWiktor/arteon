@@ -20,7 +20,9 @@ export function useWebpDownloads(options: UseWebpDownloadsOptions) {
   const [zipError, setZipError] = useState<string | null>(null);
 
   const handleDownloadAll = async () => {
-    const ready = options.files.filter(f => f.status === 'done' && f.downloadUrl);
+    const ready = options.files.filter(
+      f => f.status === 'done' && f.downloadUrl,
+    );
     if (!ready.length) return;
 
     for (const item of ready) {
@@ -44,8 +46,14 @@ export function useWebpDownloads(options: UseWebpDownloadsOptions) {
     }
   };
 
-  const handleDownloadZip = async ({ includeCsvReport }: { includeCsvReport: boolean }) => {
-    const ready = options.files.filter(f => f.status === 'done' && f.downloadUrl);
+  const handleDownloadZip = async ({
+    includeCsvReport,
+  }: {
+    includeCsvReport: boolean;
+  }) => {
+    const ready = options.files.filter(
+      f => f.status === 'done' && f.downloadUrl,
+    );
     if (!ready.length) return;
 
     setZipError(null);
@@ -76,11 +84,16 @@ export function useWebpDownloads(options: UseWebpDownloadsOptions) {
             error: f.error,
           })),
         );
-        files.push({ path: 'raport-konwersji-webp.csv', data: new TextEncoder().encode(csv) });
+        files.push({
+          path: 'raport-konwersji-webp.csv',
+          data: new TextEncoder().encode(csv),
+        });
       }
 
       const zipBlob = createZipBlob(files);
-      downloadBlob(zipBlob, 'webp.zip', { downloadFromUrl: options.triggerDownloadFromUrl });
+      downloadBlob(zipBlob, 'webp.zip', {
+        downloadFromUrl: options.triggerDownloadFromUrl,
+      });
 
       const downloadedIds = new Set(ready.map(f => f.id));
       options.setFiles(prev =>

@@ -37,6 +37,20 @@ type SectionPricesProps = {
   legalNote?: string;
 };
 
+/**
+ * Render a responsive, accessible pricing section composed of plan cards, an optional informational note, and optional legal text.
+ *
+ * The component generates ARIA ids for the section heading/subtitle and for each plan card (heading, platform, price, description)
+ * to provide accessible relationships between labels and content.
+ *
+ * @param id - Root DOM id for the section; used as the base for generated ARIA ids. Defaults to `'pricing'`.
+ * @param title - Main heading text for the section.
+ * @param subtitle - Optional subtitle displayed above the heading; when present it is exposed via `aria-describedby`.
+ * @param plans - Array of plan objects rendered as individual cards (name, optional platform, price, description, features, optional badges and action buttons).
+ * @param note - Optional informational note shown below the plans; may include `text`, `ctaLabel`, and `ctaLink`.
+ * @param legalNote - Optional legal or explanatory text shown below the note; defaults to a message about individualized pricing.
+ * @returns A JSX element representing the complete pricing section.
+ */
 export default function SectionPrices({
   id = 'pricing',
   title = 'Przykładowe ceny',
@@ -50,15 +64,26 @@ export default function SectionPrices({
   const describedBy = subtitleId || undefined;
 
   return (
-    <section id={id} aria-labelledby={headingId} aria-describedby={describedBy} className='w-full'>
+    <section
+      id={id}
+      aria-labelledby={headingId}
+      aria-describedby={describedBy}
+      className='w-full'
+    >
       <div className='mb-4 lg:mb-6'>
         {subtitle && (
-          <span id={subtitleId} className='text-sm tracking-wider text-light uppercase'>
+          <span
+            id={subtitleId}
+            className='text-sm tracking-wider text-light uppercase'
+          >
             {subtitle}
           </span>
         )}
         {title && (
-          <h3 className='text-2xl font-semibold tracking-tight text-dark' id={headingId}>
+          <h3
+            className='text-2xl font-semibold tracking-tight text-dark'
+            id={headingId}
+          >
             {title}
           </h3>
         )}
@@ -68,11 +93,15 @@ export default function SectionPrices({
         {plans.map((plan, idx) => {
           const itemId = `${id}-plan-${idx}`;
           const itemHeadingId = `${itemId}-heading`;
-          const itemPlatformId = plan.platform ? `${itemId}-platform` : undefined;
+          const itemPlatformId = plan.platform
+            ? `${itemId}-platform`
+            : undefined;
           const itemPriceId = `${itemId}-price`;
           const itemDescId = `${itemId}-desc`;
           const itemDescribedBy =
-            [itemPlatformId, itemPriceId, itemDescId].filter(Boolean).join(' ') || undefined;
+            [itemPlatformId, itemPriceId, itemDescId]
+              .filter(Boolean)
+              .join(' ') || undefined;
 
           return (
             <Card
@@ -98,7 +127,10 @@ export default function SectionPrices({
               )}
 
               <div>
-                <h4 id={itemHeadingId} className='h5 text-xl font-semibold text-dark'>
+                <h4
+                  id={itemHeadingId}
+                  className='h5 text-xl font-semibold text-dark'
+                >
                   {plan.name}
                 </h4>
 
@@ -143,7 +175,8 @@ export default function SectionPrices({
                 </ul>
               </div>
 
-              {(plan.btnOne && plan.btnOneHref) || (plan.btnTwo && plan.btnTwoHref) ? (
+              {(plan.btnOne && plan.btnOneHref) ||
+              (plan.btnTwo && plan.btnTwoHref) ? (
                 <ButtonGroup
                   btnOne={plan.btnOne}
                   btnOneHref={plan.btnOneHref}
@@ -165,7 +198,9 @@ export default function SectionPrices({
           role='note'
           aria-label='Informacja'
         >
-          <div className='text-[15px] leading-relaxed text-mid'>{note.text}</div>
+          <div className='text-[15px] leading-relaxed text-mid'>
+            {note.text}
+          </div>
           {note.ctaLink && note.ctaLabel && (
             <div className='mt-4'>
               <ButtonLink href={note.ctaLink} variant='accent' arrow>

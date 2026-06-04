@@ -1,12 +1,12 @@
 'use client';
 
-import Image from 'next/image';
 import { useId, type ReactNode } from 'react';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
-import { flexCenterClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import Image from 'next/image';
 import SectionHeader from '../../molecules/SectionHeader';
 import Card from '../Card';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/uiClasses';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 
 interface SectionStepItem {
   icon?: ReactNode;
@@ -62,7 +62,8 @@ export default function SectionSteps({
 }: SectionStepsProps) {
   const autoId = useId();
   const titleId = `steps-title-${autoId}`;
-  const gridClasses = SectionStepsGridClasses[resolveGridVariant(grid, items?.length ?? 0)];
+  const gridClasses =
+    SectionStepsGridClasses[resolveGridVariant(grid, items?.length ?? 0)];
 
   return (
     <section
@@ -81,7 +82,9 @@ export default function SectionSteps({
           description={description}
         />
 
-        <ol className={cn('grid grid-cols-1 gap-4 md:auto-rows-fr', gridClasses)}>
+        <ol
+          className={cn('grid grid-cols-1 gap-4 md:auto-rows-fr', gridClasses)}
+        >
           {items.map((item, index) => {
             const {
               icon,
@@ -147,16 +150,24 @@ export default function SectionSteps({
 
                   {useInline ? (
                     <h3 className='h5 mb-1 flex items-center gap-2 text-dark'>
-                      {hasVisual && <span className='shrink-0 text-primary'>{visualNode}</span>}
+                      {hasVisual && (
+                        <span className='shrink-0 text-primary'>
+                          {visualNode}
+                        </span>
+                      )}
                       <span>{itemTitle}</span>
                     </h3>
                   ) : (
                     <h3 className='h5 mb-1 text-dark'>{itemTitle}</h3>
                   )}
 
-                  {itemSubtitle && <span className='text-base text-light'>{itemSubtitle}</span>}
+                  {itemSubtitle && (
+                    <span className='text-base text-light'>{itemSubtitle}</span>
+                  )}
 
-                  <div className='z-10 mt-2 flex flex-1 flex-col text-light'>{itemDesc}</div>
+                  <div className='z-10 mt-2 flex flex-1 flex-col text-light'>
+                    {itemDesc}
+                  </div>
                 </Card>
               </li>
             );

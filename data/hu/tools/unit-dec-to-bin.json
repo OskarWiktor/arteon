@@ -202,7 +202,10 @@
         },
         {
           "label": "Olvashatóság",
-          "values": ["Könnyű az embereknek", "Hosszú, de a számítógép natív nyelve"]
+          "values": [
+            "Könnyű az embereknek",
+            "Hosszú, de a számítógép natív nyelve"
+          ]
         }
       ]
     },

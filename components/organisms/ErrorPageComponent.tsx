@@ -36,13 +36,18 @@ export default function ErrorPageComponent({
       /* fall through to hard reload */
     }
     if (typeof window !== 'undefined') {
-      window.location.reload();
+      location.reload();
     }
   };
 
   return (
     <Wrapper>
-      <div className={cn('min-h-[60vh] flex-col px-6 text-center', flexCenterClasses)}>
+      <div
+        className={cn(
+          'min-h-[60vh] flex-col px-6 text-center',
+          flexCenterClasses,
+        )}
+      >
         <h1 className='mb-4'>{t.title}</h1>
         <p className='mb-8 max-w-md text-lg text-light'>{t.description}</p>
         <div className='flex flex-wrap gap-3'>
@@ -58,7 +63,10 @@ export default function ErrorPageComponent({
         </div>
         {error.digest && (
           <p className='mt-8 text-xs text-light'>
-            {t.errorCode}: <code className='rounded bg-neutral-100 px-2 py-1'>{error.digest}</code>
+            {t.errorCode}:{' '}
+            <code className='rounded bg-neutral-100 px-2 py-1'>
+              {error.digest}
+            </code>
           </p>
         )}
       </div>

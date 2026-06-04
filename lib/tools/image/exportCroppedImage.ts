@@ -36,7 +36,9 @@ type ExportCroppedImageOptions = {
 export async function exportCroppedImage(
   options: ExportCroppedImageOptions,
 ): Promise<{ size: number }> {
-  const img = await loadImage(options.imageUrl, { errorMessage: options.imageLoadErrorMessage });
+  const img = await loadImage(options.imageUrl, {
+    errorMessage: options.imageLoadErrorMessage,
+  });
 
   const W = options.dims.width;
   const H = options.dims.height;

@@ -25,7 +25,10 @@
   "schemas": {
     "software": {
       "name": "Kuvaeditori – rajaus, koon muuttaminen ja muuntaminen",
-      "alternateName": ["Kuvan rajaustyökalu", "Kuvien koon muuttaminen sosiaaliseen mediaan"],
+      "alternateName": [
+        "Kuvan rajaustyökalu",
+        "Kuvien koon muuttaminen sosiaaliseen mediaan"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageEditor",
       "description": "Ilmainen verkkopohjainen kuvaeditori koon muuttamiseen, rajaukseen ja muotomuunnokseen. Valmiit asetukset Instagramille, Facebookille ja LinkedInille. Pyöreiden avatarien luominen. Vienti JPG-, PNG- ja WebP-muotoon laadunhallinnalla. Paikallinen käsittely selaimessa.",

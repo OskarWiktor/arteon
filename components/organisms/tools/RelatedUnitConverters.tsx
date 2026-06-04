@@ -99,7 +99,10 @@ interface RelatedUnitConvertersProps {
   locale: Locale;
 }
 
-export default function RelatedUnitConverters({ toolKey, locale }: RelatedUnitConvertersProps) {
+export default function RelatedUnitConverters({
+  toolKey,
+  locale,
+}: RelatedUnitConvertersProps) {
   const current = UNIT_CONVERSIONS.find(c => c.toolKey === toolKey);
   if (!current) return null;
 
@@ -126,18 +129,29 @@ export default function RelatedUnitConverters({ toolKey, locale }: RelatedUnitCo
     ...fromSameSource.map(c => c.toolKey),
   ]);
   const otherConverters = UNIT_CONVERSIONS.filter(
-    c => !shownKeys.has(c.toolKey) && getToolHref(c.toolKey as ToolItemKey, locale) !== '#',
+    c =>
+      !shownKeys.has(c.toolKey) &&
+      getToolHref(c.toolKey as ToolItemKey, locale) !== '#',
   );
 
-  if (toSameTarget.length === 0 && fromSameSource.length === 0 && otherConverters.length === 0)
+  if (
+    toSameTarget.length === 0 &&
+    fromSameSource.length === 0 &&
+    otherConverters.length === 0
+  )
     return null;
 
   const targetUnitLabel = unitLabel(current.targetField, locale);
   const sourceUnitLabel = unitLabel(current.sourceField, locale);
 
-  const titleTo = (TITLE_CONVERT_TO[locale] ?? TITLE_CONVERT_TO.en)(targetUnitLabel);
-  const titleFrom = (TITLE_CONVERT_FROM[locale] ?? TITLE_CONVERT_FROM.en)(sourceUnitLabel);
-  const titleOther = TITLE_OTHER_CONVERTERS[locale] ?? TITLE_OTHER_CONVERTERS.en;
+  const titleTo = (TITLE_CONVERT_TO[locale] ?? TITLE_CONVERT_TO.en)(
+    targetUnitLabel,
+  );
+  const titleFrom = (TITLE_CONVERT_FROM[locale] ?? TITLE_CONVERT_FROM.en)(
+    sourceUnitLabel,
+  );
+  const titleOther =
+    TITLE_OTHER_CONVERTERS[locale] ?? TITLE_OTHER_CONVERTERS.en;
 
   return (
     <>
@@ -160,7 +174,9 @@ export default function RelatedUnitConverters({ toolKey, locale }: RelatedUnitCo
 
       {otherConverters.length > 0 && (
         <>
-          {(toSameTarget.length > 0 || fromSameSource.length > 0) && <Divider line />}
+          {(toSameTarget.length > 0 || fromSameSource.length > 0) && (
+            <Divider line />
+          )}
           <section className='mb-2'>
             <h2 className='h3 mb-4 md:mb-6'>{titleOther}</h2>
             <ConverterGrid converters={otherConverters} locale={locale} />
@@ -173,11 +189,22 @@ export default function RelatedUnitConverters({ toolKey, locale }: RelatedUnitCo
   );
 }
 
+/**
+ * Render a responsive grid of links for related unit converters.
+ *
+ * @param converters - List of converters to render; each item must include `toolKey`, `sourceField`, and `targetField`.
+ * @param locale - Locale used to select localized tool titles, unit labels, and connector text.
+ * @returns A grid element containing one link per converter (skipping entries whose tool href is `'#'`). Each link uses the tool's localized title when available, otherwise the constructed "`source` {connector} `target`" label.
+ */
 function ConverterGrid({
   converters,
   locale,
 }: {
-  converters: { toolKey: string; sourceField: UnitFieldRef; targetField: UnitFieldRef }[];
+  converters: {
+    toolKey: string;
+    sourceField: UnitFieldRef;
+    targetField: UnitFieldRef;
+  }[];
   locale: Locale;
 }) {
   const connector = UNIT_CONNECTOR[locale] ?? 'to';

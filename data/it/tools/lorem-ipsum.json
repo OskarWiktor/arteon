@@ -308,7 +308,16 @@
         },
         {
           "label": "Umorismo / carattere",
-          "values": ["Neutro", "Medio", "Basso", "Basso", "Alto", "Alto", "Alto", "Basso"]
+          "values": [
+            "Neutro",
+            "Medio",
+            "Basso",
+            "Basso",
+            "Alto",
+            "Alto",
+            "Alto",
+            "Basso"
+          ]
         }
       ]
     },

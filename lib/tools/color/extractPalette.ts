@@ -1,7 +1,14 @@
 import { clamp, rgbToHex } from '@/lib/tools/color/convert';
-import type { RGB, ExtractedColor, ExtractPaletteOptions } from '@/types/tools/color';
+import type {
+  RGB,
+  ExtractedColor,
+  ExtractPaletteOptions,
+} from '@/types/tools/color';
 
-export type { ExtractedColor, ExtractPaletteOptions } from '@/types/tools/color';
+export type {
+  ExtractedColor,
+  ExtractPaletteOptions,
+} from '@/types/tools/color';
 
 type Bucket = {
   rgb: RGB;
@@ -60,7 +67,9 @@ export function extractPalette(
   for (const bucket of sorted) {
     if (result.length >= maxColors) break;
 
-    const tooClose = result.some(picked => rgbDistance(picked.rgb, bucket.rgb) < minDistance);
+    const tooClose = result.some(
+      picked => rgbDistance(picked.rgb, bucket.rgb) < minDistance,
+    );
     if (tooClose) continue;
 
     result.push({

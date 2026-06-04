@@ -47,7 +47,9 @@ export function getToolTitle(key: ToolItemKey, locale: Locale): string {
 }
 
 /** Find a tool by its slug in any locale, returns the tool + matched locale */
-export function findToolBySlug(slug: string): { tool: ToolDefinition; locale: Locale } | null {
+export function findToolBySlug(
+  slug: string,
+): { tool: ToolDefinition; locale: Locale } | null {
   for (const tool of TOOL_REGISTRY) {
     for (const [loc, text] of Object.entries(tool.locales)) {
       if (text.slug === slug) return { tool, locale: loc as Locale };
@@ -85,16 +87,32 @@ export function getAlternateToolHref(
   }
 
   // Non-tool pages: about, contact, privacy, terms
-  if (fromConfig.aboutHref && currentPath === fromConfig.aboutHref && toConfig.aboutHref) {
+  if (
+    fromConfig.aboutHref &&
+    currentPath === fromConfig.aboutHref &&
+    toConfig.aboutHref
+  ) {
     return toConfig.aboutHref;
   }
-  if (fromConfig.contactHref && currentPath === fromConfig.contactHref && toConfig.contactHref) {
+  if (
+    fromConfig.contactHref &&
+    currentPath === fromConfig.contactHref &&
+    toConfig.contactHref
+  ) {
     return toConfig.contactHref;
   }
-  if (fromConfig.privacyHref && currentPath === fromConfig.privacyHref && toConfig.privacyHref) {
+  if (
+    fromConfig.privacyHref &&
+    currentPath === fromConfig.privacyHref &&
+    toConfig.privacyHref
+  ) {
     return toConfig.privacyHref;
   }
-  if (fromConfig.termsHref && currentPath === fromConfig.termsHref && toConfig.termsHref) {
+  if (
+    fromConfig.termsHref &&
+    currentPath === fromConfig.termsHref &&
+    toConfig.termsHref
+  ) {
     return toConfig.termsHref;
   }
 
@@ -114,27 +132,31 @@ export function getAlternateToolHref(
 
 /** Build navigation-compatible tool sections for a given locale */
 export function getToolsSections(locale: Locale): ToolsSection[] {
-  return TOOL_SECTIONS.filter(section => section.locales[locale]).map(section => ({
-    key: section.key,
-    title: section.locales[locale]!.title,
-    icon: section.icon,
-    items: TOOL_REGISTRY.filter(t => t.section === section.key && t.locales[locale])
-      .map(tool => ({
-        key: tool.key,
-        href: getToolHref(tool.key, locale),
-        title: tool.locales[locale]!.title,
-        description: tool.locales[locale]!.description,
-        image: tool.images?.[locale] ?? tool.image,
-        icon: tool.icon,
-        desktopOnly: tool.desktopOnly || undefined,
-        carouselOrder: tool.carouselOrder,
-      }))
-      .sort((a, b) =>
-        section.key === 'konwertery' || section.key === 'dokumenty'
-          ? a.title.localeCompare(b.title, locale)
-          : 0,
-      ),
-  }));
+  return TOOL_SECTIONS.filter(section => section.locales[locale]).map(
+    section => ({
+      key: section.key,
+      title: section.locales[locale]!.title,
+      icon: section.icon,
+      items: TOOL_REGISTRY.filter(
+        t => t.section === section.key && t.locales[locale],
+      )
+        .map(tool => ({
+          key: tool.key,
+          href: getToolHref(tool.key, locale),
+          title: tool.locales[locale]!.title,
+          description: tool.locales[locale]!.description,
+          image: tool.images?.[locale] ?? tool.image,
+          icon: tool.icon,
+          desktopOnly: tool.desktopOnly || undefined,
+          carouselOrder: tool.carouselOrder,
+        }))
+        .sort((a, b) =>
+          section.key === 'konwertery' || section.key === 'dokumenty'
+            ? a.title.localeCompare(b.title, locale)
+            : 0,
+        ),
+    }),
+  );
 }
 
 /** Flat list of all tool items for a given locale (used in Footer, etc.) */
@@ -169,7 +191,10 @@ const POPULAR_CONVERTER_KEYS: ToolItemKey[] = [
 /** Footer tools: all non-converter tools + 9 most popular image converters */
 export function getFooterTools(locale: Locale): ToolSectionItem[] {
   const nonConverters = TOOL_REGISTRY.filter(
-    t => t.section !== 'konwertery' && t.section !== 'dokumenty' && t.locales[locale],
+    t =>
+      t.section !== 'konwertery' &&
+      t.section !== 'dokumenty' &&
+      t.locales[locale],
   );
   const popularConverters = POPULAR_CONVERTER_KEYS.map(key =>
     TOOL_REGISTRY.find(t => t.key === key),
@@ -189,35 +214,41 @@ export function getFooterTools(locale: Locale): ToolSectionItem[] {
 
 /** Mobile nav tool sections: same as getToolsSections but limits konwertery to 9 popular */
 export function getMobileToolsSections(locale: Locale): ToolsSection[] {
-  return TOOL_SECTIONS.filter(section => section.locales[locale]).map(section => {
-    const isConverters = section.key === 'konwertery';
-    const tools = isConverters
-      ? POPULAR_CONVERTER_KEYS.map(key => TOOL_REGISTRY.find(t => t.key === key)).filter(
-          (t): t is ToolDefinition => !!t && !!t.locales[locale],
-        )
-      : TOOL_REGISTRY.filter(t => t.section === section.key && t.locales[locale]);
+  return TOOL_SECTIONS.filter(section => section.locales[locale]).map(
+    section => {
+      const isConverters = section.key === 'konwertery';
+      const tools = isConverters
+        ? POPULAR_CONVERTER_KEYS.map(key =>
+            TOOL_REGISTRY.find(t => t.key === key),
+          ).filter((t): t is ToolDefinition => !!t && !!t.locales[locale])
+        : TOOL_REGISTRY.filter(
+            t => t.section === section.key && t.locales[locale],
+          );
 
-    return {
-      key: section.key,
-      title: section.locales[locale]!.title,
-      icon: section.icon,
-      items: tools
-        .filter(t => !t.desktopOnly)
-        .map(tool => ({
-          key: tool.key,
-          href: getToolHref(tool.key, locale),
-          title: tool.locales[locale]!.title,
-          description: tool.locales[locale]!.description,
-          image: tool.images?.[locale] ?? tool.image,
-          icon: tool.icon,
-          desktopOnly: tool.desktopOnly || undefined,
-          carouselOrder: tool.carouselOrder,
-        }))
-        .sort((a, b) =>
-          isConverters || section.key === 'dokumenty' ? a.title.localeCompare(b.title, locale) : 0,
-        ),
-    };
-  });
+      return {
+        key: section.key,
+        title: section.locales[locale]!.title,
+        icon: section.icon,
+        items: tools
+          .filter(t => !t.desktopOnly)
+          .map(tool => ({
+            key: tool.key,
+            href: getToolHref(tool.key, locale),
+            title: tool.locales[locale]!.title,
+            description: tool.locales[locale]!.description,
+            image: tool.images?.[locale] ?? tool.image,
+            icon: tool.icon,
+            desktopOnly: tool.desktopOnly || undefined,
+            carouselOrder: tool.carouselOrder,
+          }))
+          .sort((a, b) =>
+            isConverters || section.key === 'dokumenty'
+              ? a.title.localeCompare(b.title, locale)
+              : 0,
+          ),
+      };
+    },
+  );
 }
 
 // ---------------------------------------------------------------------------
@@ -297,43 +328,47 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
 
 /** Desktop nav tool sections: limits konwertery to 48 and jednostki to 17 */
 export function getDesktopToolsSections(locale: Locale): ToolsSection[] {
-  return TOOL_SECTIONS.filter(section => section.locales[locale]).map(section => {
-    const isConverters = section.key === 'konwertery';
-    const isUnits = section.key === 'jednostki';
+  return TOOL_SECTIONS.filter(section => section.locales[locale]).map(
+    section => {
+      const isConverters = section.key === 'konwertery';
+      const isUnits = section.key === 'jednostki';
 
-    let tools: ToolDefinition[];
-    if (isConverters) {
-      tools = NAV_IMAGE_CONVERTER_KEYS.map(key => TOOL_REGISTRY.find(t => t.key === key)).filter(
-        (t): t is ToolDefinition => !!t && !!t.locales[locale],
-      );
-    } else if (isUnits) {
-      tools = NAV_UNIT_CONVERTER_KEYS.map(key => TOOL_REGISTRY.find(t => t.key === key)).filter(
-        (t): t is ToolDefinition => !!t && !!t.locales[locale],
-      );
-    } else {
-      tools = TOOL_REGISTRY.filter(t => t.section === section.key && t.locales[locale]);
-    }
+      let tools: ToolDefinition[];
+      if (isConverters) {
+        tools = NAV_IMAGE_CONVERTER_KEYS.map(key =>
+          TOOL_REGISTRY.find(t => t.key === key),
+        ).filter((t): t is ToolDefinition => !!t && !!t.locales[locale]);
+      } else if (isUnits) {
+        tools = NAV_UNIT_CONVERTER_KEYS.map(key =>
+          TOOL_REGISTRY.find(t => t.key === key),
+        ).filter((t): t is ToolDefinition => !!t && !!t.locales[locale]);
+      } else {
+        tools = TOOL_REGISTRY.filter(
+          t => t.section === section.key && t.locales[locale],
+        );
+      }
 
-    return {
-      key: section.key,
-      title: section.locales[locale]!.title,
-      icon: section.icon,
-      items: tools
-        .map(tool => ({
-          key: tool.key,
-          href: getToolHref(tool.key, locale),
-          title: tool.locales[locale]!.title,
-          description: tool.locales[locale]!.description,
-          image: tool.images?.[locale] ?? tool.image,
-          icon: tool.icon,
-          desktopOnly: tool.desktopOnly || undefined,
-          carouselOrder: tool.carouselOrder,
-        }))
-        .sort((a, b) =>
-          isConverters || isUnits || section.key === 'dokumenty'
-            ? a.title.localeCompare(b.title, locale)
-            : 0,
-        ),
-    };
-  });
+      return {
+        key: section.key,
+        title: section.locales[locale]!.title,
+        icon: section.icon,
+        items: tools
+          .map(tool => ({
+            key: tool.key,
+            href: getToolHref(tool.key, locale),
+            title: tool.locales[locale]!.title,
+            description: tool.locales[locale]!.description,
+            image: tool.images?.[locale] ?? tool.image,
+            icon: tool.icon,
+            desktopOnly: tool.desktopOnly || undefined,
+            carouselOrder: tool.carouselOrder,
+          }))
+          .sort((a, b) =>
+            isConverters || isUnits || section.key === 'dokumenty'
+              ? a.title.localeCompare(b.title, locale)
+              : 0,
+          ),
+      };
+    },
+  );
 }

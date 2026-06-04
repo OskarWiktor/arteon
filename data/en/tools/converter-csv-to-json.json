@@ -40,7 +40,11 @@
         "Supports Python pandas and D3.js input format",
         "Empty cell handling with empty string or null"
       ],
-      "alternateName": ["Convert CSV to JSON", "CSV to JSON", "Free CSV to JSON converter"]
+      "alternateName": [
+        "Convert CSV to JSON",
+        "CSV to JSON",
+        "Free CSV to JSON converter"
+      ]
     },
     "howTo": {
       "name": "How to convert CSV to JSON",

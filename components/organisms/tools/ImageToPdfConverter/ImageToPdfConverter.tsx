@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState } from 'react';
+
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
@@ -8,23 +9,27 @@ import FileDropzone from '@/components/molecules/FileDropzone';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useDictionary } from '@/lib/LocaleContext';
+import { downloadBlob, downloadFromUrl } from '@/utils/download';
+import { formatBytes } from '@/utils/formatBytes';
+
+import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { FORMAT_LABELS } from '@/lib/tools/image/imageToPdf';
-import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
 import type {
   ImageFormat,
   ImageToPdfConverterProps,
   PdfQueueFile,
 } from '@/types/tools/image-to-pdf-converter';
-import { downloadBlob, downloadFromUrl } from '@/utils/download';
-import { formatBytes } from '@/utils/formatBytes';
 import Card from '../../Card';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
 
 let fileIdCounter = 0;
 
-async function decodeToCanvas(file: File, sourceFormat: ImageFormat): Promise<HTMLCanvasElement> {
+async function decodeToCanvas(
+  file: File,
+  sourceFormat: ImageFormat,
+): Promise<HTMLCanvasElement> {
   let blob: Blob = file;
 
   if (sourceFormat === 'heic') {
@@ -41,8 +46,6 @@ async function decodeToCanvas(file: File, sourceFormat: ImageFormat): Promise<HT
     const rgba = UTIF.toRGBA8(ifds[0]);
     const w = ifds[0].width;
     const h = ifds[0].height;
-    // putImageData replaces pixels (no compositing), so use a temp canvas
-    // then drawImage onto the white-filled output canvas for proper alpha blending
     const tmpCanvas = document.createElement('canvas');
     tmpCanvas.width = w;
     tmpCanvas.height = h;
@@ -57,7 +60,6 @@ async function decodeToCanvas(file: File, sourceFormat: ImageFormat): Promise<HT
     canvas.height = h;
     const ctx = canvas.getContext('2d');
     if (!ctx) throw new Error('Canvas is not supported.');
-    // Fill white background — output is JPEG which has no transparency
     ctx.fillStyle = '#FFFFFF';
     ctx.fillRect(0, 0, w, h);
     ctx.drawImage(tmpCanvas, 0, 0);
@@ -78,7 +80,6 @@ async function decodeToCanvas(file: File, sourceFormat: ImageFormat): Promise<HT
     canvas.height = img.naturalHeight;
     const ctx = canvas.getContext('2d');
     if (!ctx) throw new Error('Canvas is not supported.');
-    // Fill white background — output is JPEG which has no transparency
     ctx.fillStyle = '#FFFFFF';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(img, 0, 0);
@@ -118,7 +119,9 @@ export default function ImageToPdfConverter({
       'image/heif': ['.heif'],
       'image/tiff': ['.tiff', '.tif'],
     };
-    const directExts = mimeList.filter(m => m.startsWith('.')).map(m => m.toLowerCase());
+    const directExts = mimeList
+      .filter(m => m.startsWith('.'))
+      .map(m => m.toLowerCase());
     const allowedExts = [
       ...directExts,
       ...mimeList.filter(m => !m.startsWith('.')).flatMap(m => extMap[m] ?? []),
@@ -172,14 +175,18 @@ export default function ImageToPdfConverter({
     try {
       const { default: jsPDF } = await import('jspdf');
 
-      const pending = filesRef.current.filter(f => f.status === 'idle' || f.status === 'error');
+      const pending = filesRef.current.filter(
+        f => f.status === 'idle' || f.status === 'error',
+      );
 
       for (const entry of pending) {
         if (!filesRef.current.some(f => f.id === entry.id)) continue;
 
         setFiles(prev =>
           prev.map(f =>
-            f.id === entry.id ? { ...f, status: 'processing' as const, errorMessage: null } : f,
+            f.id === entry.id
+              ? { ...f, status: 'processing' as const, errorMessage: null }
+              : f,
           ),
         );
 
@@ -210,7 +217,11 @@ export default function ImageToPdfConverter({
           setFiles(prev =>
             prev.map(f =>
               f.id === entry.id
-                ? { ...f, status: 'done' as const, previewUrl: URL.createObjectURL(pdfBlob) }
+                ? {
+                    ...f,
+                    status: 'done' as const,
+                    previewUrl: URL.createObjectURL(pdfBlob),
+                  }
                 : f,
             ),
           );
@@ -221,7 +232,8 @@ export default function ImageToPdfConverter({
                 ? {
                     ...f,
                     status: 'error' as const,
-                    errorMessage: err instanceof Error ? err.message : t.conversionFailed,
+                    errorMessage:
+                      err instanceof Error ? err.message : t.conversionFailed,
                   }
                 : f,
             ),
@@ -229,7 +241,9 @@ export default function ImageToPdfConverter({
         }
       }
     } catch (err) {
-      setGlobalError(err instanceof Error ? err.message : t.failedToLoadLibrary);
+      setGlobalError(
+        err instanceof Error ? err.message : t.failedToLoadLibrary,
+      );
     }
 
     setIsConverting(false);
@@ -247,7 +261,10 @@ export default function ImageToPdfConverter({
       .catch(err => {
         console.error('Download failed:', err);
         if (file.previewUrl) {
-          downloadFromUrl(file.previewUrl, `${file.file.name.replace(/\.[^.]+$/, '')}.pdf`);
+          downloadFromUrl(
+            file.previewUrl,
+            `${file.file.name.replace(/\.[^.]+$/, '')}.pdf`,
+          );
         }
       });
   };
@@ -264,17 +281,24 @@ export default function ImageToPdfConverter({
         .catch(err => {
           console.error('Download failed:', err);
           if (file.previewUrl) {
-            downloadFromUrl(file.previewUrl, `${file.file.name.replace(/\.[^.]+$/, '')}.pdf`);
+            downloadFromUrl(
+              file.previewUrl,
+              `${file.file.name.replace(/\.[^.]+$/, '')}.pdf`,
+            );
           }
         });
     }
   };
 
   const total = files.length;
-  const completed = files.filter(f => f.status === 'done' || f.status === 'error').length;
+  const completed = files.filter(
+    f => f.status === 'done' || f.status === 'error',
+  ).length;
   const progress = total ? Math.round((completed / total) * 100) : 0;
   const doneCount = files.filter(f => f.status === 'done').length;
-  const pendingCount = files.filter(f => f.status === 'idle' || f.status === 'error').length;
+  const pendingCount = files.filter(
+    f => f.status === 'idle' || f.status === 'error',
+  ).length;
 
   return (
     <div className='overflow-hidden'>
@@ -289,7 +313,11 @@ export default function ImageToPdfConverter({
           <form onSubmit={handleConvert} className='space-y-4'>
             <div>
               <h2 className='h6 mb-2'>{t.addFiles}</h2>
-              <FileDropzone accept={acceptMime} multiple onFiles={handleAddFiles}>
+              <FileDropzone
+                accept={acceptMime}
+                multiple
+                onFiles={handleAddFiles}
+              >
                 <ToolUploadContent
                   dragLabel={
                     t.dragDrop?.replace('{{format}}', sourceLabel) ??
@@ -297,7 +325,8 @@ export default function ImageToPdfConverter({
                   }
                   clickLabel={t.clickToSelect}
                   formatsLabel={
-                    t.supported?.replace('{{format}}', sourceLabel) ?? `Supported: ${sourceLabel}`
+                    t.supported?.replace('{{format}}', sourceLabel) ??
+                    `Supported: ${sourceLabel}`
                   }
                 />
               </FileDropzone>
@@ -320,7 +349,10 @@ export default function ImageToPdfConverter({
                       {t.completed}: {completed} / {total}
                     </span>
                   </div>
-                  <ToolProgressBar value={progress} ariaLabel={`${completed} / ${total}`} />
+                  <ToolProgressBar
+                    value={progress}
+                    ariaLabel={`${completed} / ${total}`}
+                  />
                 </div>
               )}
 
@@ -368,7 +400,9 @@ export default function ImageToPdfConverter({
           {files.length === 0 && (
             <div className='rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-6 text-center'>
               <p className='tool-meta'>
-                {t.emptyState?.replace('{{source}}', sourceLabel).replace('{{target}}', 'PDF') ??
+                {t.emptyState
+                  ?.replace('{{source}}', sourceLabel)
+                  .replace('{{target}}', 'PDF') ??
                   `Add ${sourceLabel} files to convert to PDF`}
               </p>
             </div>
@@ -394,7 +428,9 @@ export default function ImageToPdfConverter({
                       <>
                         {formatBytes(item.file.size)}
                         {item.errorMessage && (
-                          <span className='ml-1 text-error-text'>{item.errorMessage}</span>
+                          <span className='ml-1 text-error-text'>
+                            {item.errorMessage}
+                          </span>
                         )}
                       </>
                     }

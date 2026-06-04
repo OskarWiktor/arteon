@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Converta JSON para formato CSV. Análise e formatação automáticas. Gratuito.",
-      "featureList": ["JSON to CSV conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert JSON to CSV", "JSON to CSV", "Free JSON to CSV converter"]
+      "featureList": [
+        "JSON to CSV conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert JSON to CSV",
+        "JSON to CSV",
+        "Free JSON to CSV converter"
+      ]
     },
     "howTo": {
       "name": "Como converter JSON para CSV",

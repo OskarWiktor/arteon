@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Konverter PDF-sider til PNG-bilder. Høy kvalitet, ingen begrensninger. Gratis.",
-      "featureList": ["PDF to PNG conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PDF to PNG", "PDF to PNG", "Free PDF to PNG converter"]
+      "featureList": [
+        "PDF to PNG conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PDF to PNG",
+        "PDF to PNG",
+        "Free PDF to PNG converter"
+      ]
     },
     "howTo": {
       "name": "Slik konverterer du PDF til PNG",

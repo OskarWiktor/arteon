@@ -1,8 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Input from '@/components/atoms/form/Input';
-import Textarea from '@/components/atoms/form/Textarea';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
@@ -16,6 +14,8 @@ import {
 } from '@/lib/tools/metaLength';
 import { flexCenterClasses, largeIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import Input from '@/components/atoms/form/Input';
+import Textarea from '@/components/atoms/form/Textarea';
 
 type LengthStatus = 'empty' | 'too-short' | 'ideal' | 'too-long';
 
@@ -55,27 +55,56 @@ function analyzeTitle(text: string, t: UiTexts): FieldAnalysis {
     return { ...metrics, statusLabel: t.tooLong, helperText: t.titleTooLong };
   }
 
-  return { ...metrics, statusLabel: t.goodLength, helperText: t.titleGoodLength };
+  return {
+    ...metrics,
+    statusLabel: t.goodLength,
+    helperText: t.titleGoodLength,
+  };
 }
 
 function analyzeDescription(text: string, t: UiTexts): FieldAnalysis {
   const metrics = analyzeMetaDescription(text);
 
   if (metrics.status === 'empty') {
-    return { ...metrics, statusLabel: t.noData, helperText: t.enterDescription };
+    return {
+      ...metrics,
+      statusLabel: t.noData,
+      helperText: t.enterDescription,
+    };
   }
 
   if (metrics.status === 'too-short') {
-    return { ...metrics, statusLabel: t.tooShort, helperText: t.descriptionTooShort };
+    return {
+      ...metrics,
+      statusLabel: t.tooShort,
+      helperText: t.descriptionTooShort,
+    };
   }
 
   if (metrics.status === 'too-long') {
-    return { ...metrics, statusLabel: t.tooLong, helperText: t.descriptionTooLong };
+    return {
+      ...metrics,
+      statusLabel: t.tooLong,
+      helperText: t.descriptionTooLong,
+    };
   }
 
-  return { ...metrics, statusLabel: t.goodLength, helperText: t.descriptionGoodLength };
+  return {
+    ...metrics,
+    statusLabel: t.goodLength,
+    helperText: t.descriptionGoodLength,
+  };
 }
 
+/**
+ * Renders a client-side UI for editing and previewing a page meta title and description.
+ *
+ * Maintains local state for title, description, and URL, displays editable inputs with live
+ * length/width metrics and status badges, and shows a styled search-engine preview that updates
+ * as the user types. Text is localized based on the current locale.
+ *
+ * @returns The component's rendered JSX for the meta title/description editor and preview.
+ */
 export default function MetaTitleDescriptionTool() {
   const locale = useLocale();
   const t = ui[locale];
@@ -87,7 +116,10 @@ export default function MetaTitleDescriptionTool() {
   const descriptionAnalysis = analyzeDescription(description, t);
 
   const previewTitle = truncateForPreview(title || t.exampleTitle, 65);
-  const previewDescription = truncateForPreview(description || t.exampleDescription, 165);
+  const previewDescription = truncateForPreview(
+    description || t.exampleDescription,
+    165,
+  );
 
   return (
     <>
@@ -132,7 +164,9 @@ export default function MetaTitleDescriptionTool() {
                   getStatusClasses(titleAnalysis.status),
                 )}
               >
-                {titleAnalysis.status === 'empty' ? t.noTitle : titleAnalysis.statusLabel}
+                {titleAnalysis.status === 'empty'
+                  ? t.noTitle
+                  : titleAnalysis.statusLabel}
               </span>
             </div>
           </ToolFieldRow>
@@ -200,7 +234,9 @@ export default function MetaTitleDescriptionTool() {
                 <p className='text-xs'>Arteon</p>
 
                 <div className='flex items-center gap-1'>
-                  <p className='truncate text-[13px]!'>{url || t.urlPlaceholder}</p>
+                  <p className='truncate text-[13px]!'>
+                    {url || t.urlPlaceholder}
+                  </p>
                   <div className='ml-3 flex flex-col gap-0.5'>
                     <div className='h-0.5 w-0.5 rounded-lg bg-neutral-500'></div>
                     <div className='h-0.5 w-0.5 rounded-lg bg-neutral-500'></div>

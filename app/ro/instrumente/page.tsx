@@ -77,7 +77,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 38,
         name: 'Convertor SVG in AVIF',
-        description: 'Converteste grafice vectoriale SVG in format raster AVIF compact.',
+        description:
+          'Converteste grafice vectoriale SVG in format raster AVIF compact.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-svg-in-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -86,7 +87,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 39,
         name: 'Convertor BMP in AVIF',
-        description: 'Converteste fisiere BMP necomprimate in AVIF ultracompact.',
+        description:
+          'Converteste fisiere BMP necomprimate in AVIF ultracompact.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-bmp-in-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -95,7 +97,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 40,
         name: 'Convertor GIF in AVIF',
-        description: 'Converteste primul cadru GIF in imagine AVIF statica cu compresie excelenta.',
+        description:
+          'Converteste primul cadru GIF in imagine AVIF statica cu compresie excelenta.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-gif-in-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -104,7 +107,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 41,
         name: 'Convertor HEIC in AVIF',
-        description: 'Converteste fotografii HEIC de pe iPhone in format AVIF modern.',
+        description:
+          'Converteste fotografii HEIC de pe iPhone in format AVIF modern.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-heic-in-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -133,7 +137,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 44,
         name: 'Convertor PNG in GIF',
-        description: 'Converteste grafice PNG in GIF. Ideal pentru pictograme simple si grafice.',
+        description:
+          'Converteste grafice PNG in GIF. Ideal pentru pictograme simple si grafice.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-png-in-gif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -142,7 +147,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 45,
         name: 'Convertor WebP in GIF',
-        description: 'Converteste imagini WebP in format GIF pentru compatibilitate maxima.',
+        description:
+          'Converteste imagini WebP in format GIF pentru compatibilitate maxima.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-webp-in-gif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -188,7 +194,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 50,
         name: 'Convertor WebP in TIFF',
-        description: 'Converteste imagini WebP in TIFF profesional pentru tiparire si arhivare.',
+        description:
+          'Converteste imagini WebP in TIFF profesional pentru tiparire si arhivare.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-webp-in-tiff'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -197,7 +204,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 51,
         name: 'Convertor SVG in TIFF',
-        description: 'Converteste grafice vectoriale SVG in raster TIFF de inalta calitate.',
+        description:
+          'Converteste grafice vectoriale SVG in raster TIFF de inalta calitate.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-svg-in-tiff'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -206,7 +214,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 52,
         name: 'Convertor BMP in TIFF',
-        description: 'Converteste fisiere BMP in format TIFF profesional pentru tiparire.',
+        description:
+          'Converteste fisiere BMP in format TIFF profesional pentru tiparire.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-bmp-in-tiff'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -215,7 +224,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 53,
         name: 'Convertor HEIC in TIFF',
-        description: 'Converteste fotografii HEIC de pe iPhone in format TIFF profesional.',
+        description:
+          'Converteste fotografii HEIC de pe iPhone in format TIFF profesional.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-heic-in-tiff'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -283,7 +293,9 @@ const schema = {
         name: 'Verificator meta titlu și descriere',
         description:
           'Verificator de lungime meta titlu și descriere cu previzualizare Google. Arată numărul de caractere și lățimea în pixeli pentru a evita trunchierea în rezultatele căutării.',
-        url: toAbsoluteUrl('/ro/instrumente/verificator-meta-titlu-si-descriere'),
+        url: toAbsoluteUrl(
+          '/ro/instrumente/verificator-meta-titlu-si-descriere',
+        ),
         applicationCategory: 'DeveloperApplication',
         operatingSystem: 'Any',
       },
@@ -351,7 +363,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 11,
         name: 'Convertor JPG în WebP',
-        description: 'Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.',
+        description:
+          'Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-jpg-in-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -360,7 +373,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 12,
         name: 'Convertor PNG în JPG',
-        description: 'Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare.',
+        description:
+          'Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-png-in-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -378,7 +392,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 14,
         name: 'Convertor PNG în WebP',
-        description: 'Convertește grafice PNG în WebP. Fișiere mai mici păstrând transparența.',
+        description:
+          'Convertește grafice PNG în WebP. Fișiere mai mici păstrând transparența.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-png-in-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -387,7 +402,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 15,
         name: 'Convertor JPG în PNG',
-        description: 'Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser.',
+        description:
+          'Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-jpg-in-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -396,7 +412,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 16,
         name: 'Convertor WebP în PNG',
-        description: 'Convertește imagini WebP în PNG fără pierderi. Conversie locală.',
+        description:
+          'Convertește imagini WebP în PNG fără pierderi. Conversie locală.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-webp-in-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -425,7 +442,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 19,
         name: 'Convertor BMP în JPG',
-        description: 'Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.',
+        description:
+          'Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-bmp-in-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -444,7 +462,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 21,
         name: 'Convertor GIF în PNG',
-        description: 'Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate.',
+        description:
+          'Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-gif-in-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -453,7 +472,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 22,
         name: 'Convertor GIF în JPG',
-        description: 'Exportă primul cadru al unui GIF ca JPG compact. Fișier mai mic.',
+        description:
+          'Exportă primul cadru al unui GIF ca JPG compact. Fișier mai mic.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-gif-in-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -462,7 +482,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 23,
         name: 'Convertor SVG in WebP',
-        description: 'Converteste grafice SVG in WebP usor. Ideal pentru site-uri.',
+        description:
+          'Converteste grafice SVG in WebP usor. Ideal pentru site-uri.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-svg-in-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -480,7 +501,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 25,
         name: 'Convertor BMP in WebP',
-        description: 'Converteste fisiere BMP in WebP usor. Reducere pana la 95%.',
+        description:
+          'Converteste fisiere BMP in WebP usor. Reducere pana la 95%.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-bmp-in-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -489,7 +511,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 26,
         name: 'Convertor AVIF in JPG',
-        description: 'Converteste fisiere AVIF in JPG universal. Compatibil cu orice.',
+        description:
+          'Converteste fisiere AVIF in JPG universal. Compatibil cu orice.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-avif-in-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -498,7 +521,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 27,
         name: 'Convertor AVIF in PNG',
-        description: 'Converteste fisiere AVIF in PNG fara pierderi. Calitate pastrata.',
+        description:
+          'Converteste fisiere AVIF in PNG fara pierderi. Calitate pastrata.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-avif-in-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -516,7 +540,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 29,
         name: 'Convertor HEIC in JPG',
-        description: 'Converteste fotografii HEIC de pe iPhone in JPG. Fara inregistrare.',
+        description:
+          'Converteste fotografii HEIC de pe iPhone in JPG. Fara inregistrare.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-heic-in-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -525,7 +550,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 30,
         name: 'Convertor HEIC in PNG',
-        description: 'Converteste fotografii HEIC de pe iPhone in PNG fara pierderi.',
+        description:
+          'Converteste fotografii HEIC de pe iPhone in PNG fara pierderi.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-heic-in-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -543,7 +569,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 32,
         name: 'Convertor TIFF in JPG',
-        description: 'Converteste fisiere TIFF in JPG compact. Ideal pentru scanari.',
+        description:
+          'Converteste fisiere TIFF in JPG compact. Ideal pentru scanari.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-tiff-in-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -573,7 +600,8 @@ const schema = {
 const faqItems = [
   {
     question: 'Cât costă instrumentele?',
-    answer: 'Nimic. Toate instrumentele sunt gratuite, fără abonamente și fără taxe ascunse.',
+    answer:
+      'Nimic. Toate instrumentele sunt gratuite, fără abonamente și fără taxe ascunse.',
   },
   {
     question: 'Fișierele mele sunt trimise pe un server?',
@@ -582,7 +610,8 @@ const faqItems = [
   },
   {
     question: 'Am nevoie de un cont?',
-    answer: 'Nu. Puteți folosi instrumentele imediat, fără autentificare sau creare de cont.',
+    answer:
+      'Nu. Puteți folosi instrumentele imediat, fără autentificare sau creare de cont.',
   },
   {
     question: 'Există o limită de utilizare?',
@@ -628,9 +657,10 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Pregătiți decupajul perfect pentru rețelele sociale sau site-ul dvs. Alegeți un
-                    format predefinit sau introduceți dimensiuni personalizate și descărcați
-                    imaginea în PNG, JPG sau WebP.
+                    Pregătiți decupajul perfect pentru rețelele sociale sau
+                    site-ul dvs. Alegeți un format predefinit sau introduceți
+                    dimensiuni personalizate și descărcați imaginea în PNG, JPG
+                    sau WebP.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/ro/instrumente/editor-de-imagini'>
@@ -644,15 +674,20 @@ export default function ToolsIndexPage() {
               icon: <RiAppsLine className={largeIconSizeClasses} />,
               title: 'Generator favicon și pictograme',
               topImageAlt: 'Generator favicon Arteon',
-              topImageSrc: '/assets/tools/favicon-generator/generator-favicon-gratuit-ro.webp',
+              topImageSrc:
+                '/assets/tools/favicon-generator/generator-favicon-gratuit-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Generați <strong>favicon.ico</strong> și pictograme PNG 180x180, 192x192 și
-                    512x512 dintr-o singură imagine - conform cerințelor browserelor și Lighthouse.
+                    Generați <strong>favicon.ico</strong> și pictograme PNG
+                    180x180, 192x192 și 512x512 dintr-o singură imagine -
+                    conform cerințelor browserelor și Lighthouse.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/generator-favicon-gratuit'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/generator-favicon-gratuit'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -677,12 +712,15 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Verificați numărul de caractere, numărul de cuvinte și lățimea în pixeli - cu
-                    previzualizare Google. Evitați titlurile și descrierile trunchiate în
-                    rezultatele căutării.
+                    Verificați numărul de caractere, numărul de cuvinte și
+                    lățimea în pixeli - cu previzualizare Google. Evitați
+                    titlurile și descrierile trunchiate în rezultatele căutării.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/verificator-meta-titlu-si-descriere'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/verificator-meta-titlu-si-descriere'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -698,12 +736,16 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Verificați lungimea textului și evaluați dacă este potrivită pentru o pagină
-                    principală, pagină de servicii, articol de blog sau descriere de produs.
-                    Instrumentul numără cuvinte, caractere, paragrafe și timpul de citire.
+                    Verificați lungimea textului și evaluați dacă este potrivită
+                    pentru o pagină principală, pagină de servicii, articol de
+                    blog sau descriere de produs. Instrumentul numără cuvinte,
+                    caractere, paragrafe și timpul de citire.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/contor-cuvinte-si-caractere'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/contor-cuvinte-si-caractere'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -715,15 +757,20 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Generator Lorem Ipsum',
               topImageAlt: 'Generator Lorem Ipsum Arteon',
-              topImageSrc: '/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-ro.webp',
+              topImageSrc:
+                '/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Generează text de umplutură în 8 stiluri și 9 moduri. Lorem Ipsum, Hipster,
-                    Business, Bacon și altele. Copiază ca text sau HTML.
+                    Generează text de umplutură în 8 stiluri și 9 moduri. Lorem
+                    Ipsum, Hipster, Business, Bacon și altele. Copiază ca text
+                    sau HTML.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/generator-lorem-ipsum'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/generator-lorem-ipsum'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -749,12 +796,15 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Creați o semnătură e-mail profesională în câteva minute. Introduceți datele,
-                    alegeți culorile și copiați codul HTML în Gmail, Outlook sau alt client de
-                    e-mail.
+                    Creați o semnătură e-mail profesională în câteva minute.
+                    Introduceți datele, alegeți culorile și copiați codul HTML
+                    în Gmail, Outlook sau alt client de e-mail.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/generator-semnatura-email-gratuit'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/generator-semnatura-email-gratuit'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -775,15 +825,20 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className={largeIconSizeClasses} />,
               title: 'Generator gratuit de coduri QR',
               topImageAlt: 'Generator gratuit de coduri QR Arteon',
-              topImageSrc: '/assets/tools/qr-code-generator/generator-coduri-qr-gratuit-ro.webp',
+              topImageSrc:
+                '/assets/tools/qr-code-generator/generator-coduri-qr-gratuit-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Creați un cod QR pentru un site web, vCard, meniu de restaurant sau pliant.
-                    Export PNG și SVG - fără înregistrare, fără limite.
+                    Creați un cod QR pentru un site web, vCard, meniu de
+                    restaurant sau pliant. Export PNG și SVG - fără
+                    înregistrare, fără limite.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/generator-coduri-qr-gratuit'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/generator-coduri-qr-gratuit'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -809,13 +864,17 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Verificați dacă culorile textului și fundalului sunt lizibile. Introduceți
-                    codurile de culoare, vizualizați raportul de contrast conform{' '}
-                    <strong>WCAG</strong> și utilizați funcția <strong>Match</strong> pentru
-                    corecție automată.
+                    Verificați dacă culorile textului și fundalului sunt
+                    lizibile. Introduceți codurile de culoare, vizualizați
+                    raportul de contrast conform <strong>WCAG</strong> și
+                    utilizați funcția <strong>Match</strong> pentru corecție
+                    automată.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/verificator-contrast-culori'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/verificator-contrast-culori'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -831,11 +890,15 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Încărcați o fotografie sau un logo - instrumentul va extrage culorile dominante.
-                    Copiați codurile HEX cu un singur clic și utilizați-le oriunde.
+                    Încărcați o fotografie sau un logo - instrumentul va extrage
+                    culorile dominante. Copiați codurile HEX cu un singur clic
+                    și utilizați-le oriunde.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/extractor-culori-din-imagine'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/extractor-culori-din-imagine'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -851,12 +914,15 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Alegeți o culoare de bază și generați 9 palete de culori: monocromatică,
-                    complementară, triadică, pastel, întunecată și multe altele. Copiați codurile
-                    HEX cu un singur clic.
+                    Alegeți o culoare de bază și generați 9 palete de culori:
+                    monocromatică, complementară, triadică, pastel, întunecată
+                    și multe altele. Copiați codurile HEX cu un singur clic.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/generator-de-palete-de-culori'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/generator-de-palete-de-culori'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -881,9 +947,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.</p>
+                  <p>
+                    Convertește fotografii JPG în WebP ușor. Reducere de până la
+                    35%.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/convertor-jpg-in-webp'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/convertor-jpg-in-webp'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -898,9 +970,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare.</p>
+                  <p>
+                    Convertește fișiere PNG în JPG în browser. Fără limită, fără
+                    înregistrare.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/convertor-png-in-jpg'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/convertor-png-in-jpg'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -917,7 +995,10 @@ export default function ToolsIndexPage() {
                 <div className='flex h-full flex-col'>
                   <p>Convertește fișiere WebP în JPG compatibil universal.</p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/convertor-webp-in-jpg'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/convertor-webp-in-jpg'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -932,9 +1013,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Convertește grafice PNG în WebP. Fișiere mai mici păstrând transparența.</p>
+                  <p>
+                    Convertește grafice PNG în WebP. Fișiere mai mici păstrând
+                    transparența.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/convertor-png-in-webp'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/convertor-png-in-webp'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -949,9 +1036,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser.</p>
+                  <p>
+                    Convertește imagini JPG în PNG fără pierderi. Conversie
+                    locală în browser.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/convertor-jpg-in-png'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/convertor-jpg-in-png'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -966,9 +1059,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Convertește imagini WebP în PNG fără pierderi. Conversie locală.</p>
+                  <p>
+                    Convertește imagini WebP în PNG fără pierderi. Conversie
+                    locală.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/convertor-webp-in-png'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/convertor-webp-in-png'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -993,10 +1092,14 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Convertiți CSV în format JSON. Detectare automată a separatoarelor și formatare.
+                    Convertiți CSV în format JSON. Detectare automată a
+                    separatoarelor și formatare.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/convertor-csv-in-json'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/convertor-csv-in-json'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -1011,9 +1114,14 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Convertiți date JSON în format CSV. Procesare în browser.</p>
+                  <p>
+                    Convertiți date JSON în format CSV. Procesare în browser.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/convertor-json-in-csv'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/convertor-json-in-csv'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -1028,9 +1136,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Convertiți date XML în JSON. Conversie în browser cu validare.</p>
+                  <p>
+                    Convertiți date XML în JSON. Conversie în browser cu
+                    validare.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/convertor-xml-in-json'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/convertor-xml-in-json'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -1045,9 +1159,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Convertiți date JSON în XML valid. Conversie în browser cu formatare.</p>
+                  <p>
+                    Convertiți date JSON în XML valid. Conversie în browser cu
+                    formatare.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/convertor-json-in-xml'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/convertor-json-in-xml'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -1062,9 +1182,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Convertiți configurația YAML în JSON. Validare și formatare în browser.</p>
+                  <p>
+                    Convertiți configurația YAML în JSON. Validare și formatare
+                    în browser.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/convertor-yaml-in-json'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/convertor-yaml-in-json'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -1079,9 +1205,14 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Convertiți date JSON în YAML lizibil. Procesare în browser.</p>
+                  <p>
+                    Convertiți date JSON în YAML lizibil. Procesare în browser.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/ro/instrumente/convertor-json-in-yaml'>
+                    <ButtonLink
+                      arrow
+                      href='/ro/instrumente/convertor-json-in-yaml'
+                    >
                       Deschide instrumentul
                     </ButtonLink>
                   </div>
@@ -1097,13 +1228,15 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title='Ce sunt instrumentele Arteon?'>
           <p className='mb-4'>
-            34 instrumente gratuite pentru pregătirea materialelor pentru site-uri web, social media
-            și tipărire - convertor WebP, generator favicon, contor de text, extractor de culori,
-            generator de palete și coduri QR.
+            34 instrumente gratuite pentru pregătirea materialelor pentru
+            site-uri web, social media și tipărire - convertor WebP, generator
+            favicon, contor de text, extractor de culori, generator de palete și
+            coduri QR.
           </p>
           <p>
-            Toate instrumentele rulează în browserul dvs. - fișierele nu sunt trimise niciodată pe
-            un server. Utilizați-le fără înregistrare și fără limite.
+            Toate instrumentele rulează în browserul dvs. - fișierele nu sunt
+            trimise niciodată pe un server. Utilizați-le fără înregistrare și
+            fără limite.
           </p>
         </SectionInfo>
 
@@ -1128,7 +1261,8 @@ export default function ToolsIndexPage() {
             {
               icon: <RiLockLine className={normalIconSizeClasses} />,
               title: 'Fără înregistrare',
-              description: 'Nu este necesar un cont. Deschideți instrumentul, utilizați-l și gata.',
+              description:
+                'Nu este necesar un cont. Deschideți instrumentul, utilizați-l și gata.',
             },
             {
               icon: <RiGlobalLine className={normalIconSizeClasses} />,
@@ -1149,7 +1283,11 @@ export default function ToolsIndexPage() {
         <Divider size='sm' />
       </Wrapper>
 
-      <Script id='ld-json-tools-ro' type='application/ld+json' strategy='afterInteractive'>
+      <Script
+        id='ld-json-tools-ro'
+        type='application/ld+json'
+        strategy='afterInteractive'
+      >
         {JSON.stringify(schema)}
       </Script>
     </>

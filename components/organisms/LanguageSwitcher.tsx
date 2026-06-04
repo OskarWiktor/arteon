@@ -1,7 +1,7 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import { startTransition, useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
 import {
   NavTranslate2 as RiTranslate2,
@@ -9,13 +9,19 @@ import {
   NavArrowDownSLine as RiArrowDownSLine,
 } from '@/components/atoms/NavIcons';
 import Wrapper from '@/components/atoms/Wrapper';
-import { useEscapeKey } from '@/hooks/useEscapeKey';
+import {
+  useLocale,
+  useDictionary,
+  useLocaleConfig,
+  type Locale,
+} from '@/lib/LocaleContext';
 import { useIsMounted } from '@/hooks/useIsMounted';
-import { useOutsideClick } from '@/hooks/useOutsideClick';
-import { useScrollLock } from '@/hooks/useScrollLock';
 import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locales';
-import { getAlternateToolHref } from '@/lib/i18n/toolRegistry';
-import { useLocale, useDictionary, useLocaleConfig, type Locale } from '@/lib/LocaleContext';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useScrollLock } from '@/hooks/useScrollLock';
+
+import InlineLink from '../atoms/InlineLink';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
@@ -26,7 +32,7 @@ import {
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import InlineLink from '../atoms/InlineLink';
+import { getAlternateToolHref } from '@/lib/i18n/toolRegistry';
 type AlternateLink = {
   locale: Locale;
   href: string;
@@ -48,7 +54,10 @@ function splitIntoColumns<T>(items: T[], cols: number): T[][] {
   return result;
 }
 
-function getAlternateLinks(pathname: string, currentLocale: Locale): AlternateLink[] {
+function getAlternateLinks(
+  pathname: string,
+  currentLocale: Locale,
+): AlternateLink[] {
   const links: AlternateLink[] = [];
 
   for (const targetLocale of SUPPORTED_LOCALES) {
@@ -73,6 +82,12 @@ function getAlternateLinks(pathname: string, currentLocale: Locale): AlternateLi
   return links;
 }
 
+/**
+ * Render a language selection control that displays either a desktop dropdown or a mobile modal.
+ *
+ * @param variant - Chooses the presentation: `'desktop'` shows a header-anchored dropdown, `'mobile'` shows a full-screen modal dialog. Defaults to `'desktop'`.
+ * @returns The language switcher UI as a React element, or `null` when there are no alternate locale links.
+ */
 export default function LanguageSwitcher({
   variant = 'desktop',
 }: {
@@ -119,21 +134,27 @@ export default function LanguageSwitcher({
 
   useScrollLock(variant === 'mobile' && isOpen);
 
-  const { popularCols, otherCols, popularMobileCols, otherMobileCols, popularSorted, otherSorted } =
-    (() => {
-      const popular = links.filter(l => POPULAR_LOCALES.includes(l.locale));
-      const other = links.filter(l => !POPULAR_LOCALES.includes(l.locale));
-      const pSorted = [...popular].sort((a, b) => a.name.localeCompare(b.name));
-      const oSorted = [...other].sort((a, b) => a.name.localeCompare(b.name));
-      return {
-        popularSorted: pSorted,
-        otherSorted: oSorted,
-        popularCols: splitIntoColumns(pSorted, 2),
-        otherCols: splitIntoColumns(oSorted, 3),
-        popularMobileCols: splitIntoColumns(pSorted, 2),
-        otherMobileCols: splitIntoColumns(oSorted, 2),
-      };
-    })();
+  const {
+    popularCols,
+    otherCols,
+    popularMobileCols,
+    otherMobileCols,
+    popularSorted,
+    otherSorted,
+  } = (() => {
+    const popular = links.filter(l => POPULAR_LOCALES.includes(l.locale));
+    const other = links.filter(l => !POPULAR_LOCALES.includes(l.locale));
+    const pSorted = [...popular].sort((a, b) => a.name.localeCompare(b.name));
+    const oSorted = [...other].sort((a, b) => a.name.localeCompare(b.name));
+    return {
+      popularSorted: pSorted,
+      otherSorted: oSorted,
+      popularCols: splitIntoColumns(pSorted, 2),
+      otherCols: splitIntoColumns(oSorted, 3),
+      popularMobileCols: splitIntoColumns(pSorted, 2),
+      otherMobileCols: splitIntoColumns(oSorted, 2),
+    };
+  })();
 
   if (links.length === 0) return null;
 
@@ -177,7 +198,10 @@ export default function LanguageSwitcher({
               focusRingClasses,
             )}
           >
-            <RiTranslate2 className={normalIconSizeClasses} aria-hidden='true' />
+            <RiTranslate2
+              className={normalIconSizeClasses}
+              aria-hidden='true'
+            />
             <span className='text-xs font-semibold tracking-wide uppercase'>
               {currentConfig.label}
             </span>
@@ -185,7 +209,10 @@ export default function LanguageSwitcher({
               className='inline-flex transition-transform duration-200'
               style={{ transform: isOpen ? 'rotate(180deg)' : undefined }}
             >
-              <RiArrowDownSLine className={smallIconSizeClasses} aria-hidden='true' />
+              <RiArrowDownSLine
+                className={smallIconSizeClasses}
+                aria-hidden='true'
+              />
             </span>
           </button>
         </div>
@@ -208,7 +235,9 @@ export default function LanguageSwitcher({
                         aria-hidden='true'
                       />
                       <div>
-                        <div className='text-sm font-medium text-dark'>{t.chooseLabel}</div>
+                        <div className='text-sm font-medium text-dark'>
+                          {t.chooseLabel}
+                        </div>
                         <div className='text-xs text-light'>
                           {currentConfig.label} - {currentConfig.name}
                         </div>
@@ -222,11 +251,15 @@ export default function LanguageSwitcher({
                         <span className='mb-2 block px-3 text-[11px] font-semibold tracking-wider text-light uppercase'>
                           {t.popularLabel}
                         </span>
-                        <div className='flex flex-col'>{popularCols[0].map(linkItem)}</div>
+                        <div className='flex flex-col'>
+                          {popularCols[0].map(linkItem)}
+                        </div>
                       </div>
                       {popularCols[1]?.length > 0 && (
                         <div className='border-r border-primary-light pt-5 pr-4'>
-                          <div className='flex flex-col'>{popularCols[1].map(linkItem)}</div>
+                          <div className='flex flex-col'>
+                            {popularCols[1].map(linkItem)}
+                          </div>
                         </div>
                       )}
                     </>
@@ -238,16 +271,22 @@ export default function LanguageSwitcher({
                         <span className='mb-2 block px-3 text-[11px] font-semibold tracking-wider text-light uppercase'>
                           {t.otherLabel}
                         </span>
-                        <div className='flex flex-col'>{otherCols[0].map(linkItem)}</div>
+                        <div className='flex flex-col'>
+                          {otherCols[0].map(linkItem)}
+                        </div>
                       </div>
                       {otherCols[1]?.length > 0 && (
                         <div className='pt-5'>
-                          <div className='flex flex-col'>{otherCols[1].map(linkItem)}</div>
+                          <div className='flex flex-col'>
+                            {otherCols[1].map(linkItem)}
+                          </div>
                         </div>
                       )}
                       {otherCols[2]?.length > 0 && (
                         <div className='pt-5'>
-                          <div className='flex flex-col'>{otherCols[2].map(linkItem)}</div>
+                          <div className='flex flex-col'>
+                            {otherCols[2].map(linkItem)}
+                          </div>
                         </div>
                       )}
                     </>
@@ -288,7 +327,10 @@ export default function LanguageSwitcher({
         createPortal(
           <>
             <div
-              className={cn('fixed inset-0 z-1100 bg-black/50', modalBackdropClasses)}
+              className={cn(
+                'fixed inset-0 z-1100 bg-black/50',
+                modalBackdropClasses,
+              )}
               onClick={close}
               aria-hidden='true'
             />
@@ -301,7 +343,9 @@ export default function LanguageSwitcher({
               className='animate-dropdown-in fixed inset-x-4 top-1/2 z-1101 max-h-[80dvh] -translate-y-1/2 overflow-y-auto rounded-lg bg-white p-5 shadow-2xl sm:inset-x-auto sm:left-1/2 sm:w-105 sm:-translate-x-1/2'
             >
               <div className={cn('mb-4', flexCenterBetweenClasses)}>
-                <h2 className='text-base font-semibold text-dark'>{t.chooseLabel}</h2>
+                <h2 className='text-base font-semibold text-dark'>
+                  {t.chooseLabel}
+                </h2>
                 <button
                   type='button'
                   onClick={close}
@@ -313,7 +357,10 @@ export default function LanguageSwitcher({
                   )}
                   aria-label={t.closeModalLabel}
                 >
-                  <RiCloseLine className={normalIconSizeClasses} aria-hidden='true' />
+                  <RiCloseLine
+                    className={normalIconSizeClasses}
+                    aria-hidden='true'
+                  />
                 </button>
               </div>
 

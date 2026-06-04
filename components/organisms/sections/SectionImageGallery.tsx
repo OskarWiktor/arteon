@@ -1,9 +1,17 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
-import { RiCloseLine, RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
+import {
+  RiCloseLine,
+  RiArrowLeftLine,
+  RiArrowRightSLine,
+} from 'react-icons/ri';
 import SectionHeader from '@/components/molecules/SectionHeader';
-import { flexCenterClasses, focusRingClasses, largeIconSizeClasses } from '@/lib/uiClasses';
+import {
+  flexCenterClasses,
+  focusRingClasses,
+  largeIconSizeClasses,
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Wrapper from '../../atoms/Wrapper';
 
@@ -22,11 +30,12 @@ interface SectionImageGalleryProps {
   noWrapper?: boolean;
 }
 
-const SectionImageGalleryGridClasses: Record<SectionImageGalleryGrid, string> = {
-  two: 'grid-cols-1 md:grid-cols-2 lg:grid-cols-2',
-  four: 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4',
-  six: 'grid-cols-2 md:grid-cols-4 lg:grid-cols-6',
-};
+const SectionImageGalleryGridClasses: Record<SectionImageGalleryGrid, string> =
+  {
+    two: 'grid-cols-1 md:grid-cols-2 lg:grid-cols-2',
+    four: 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4',
+    six: 'grid-cols-2 md:grid-cols-4 lg:grid-cols-6',
+  };
 
 export default function SectionImageGallery({
   title,
@@ -41,12 +50,16 @@ export default function SectionImageGallery({
 
   const goToPrev = () => {
     if (lightboxIndex === null) return;
-    setLightboxIndex(lightboxIndex === 0 ? images.length - 1 : lightboxIndex - 1);
+    setLightboxIndex(
+      lightboxIndex === 0 ? images.length - 1 : lightboxIndex - 1,
+    );
   };
 
   const goToNext = () => {
     if (lightboxIndex === null) return;
-    setLightboxIndex(lightboxIndex === images.length - 1 ? 0 : lightboxIndex + 1);
+    setLightboxIndex(
+      lightboxIndex === images.length - 1 ? 0 : lightboxIndex + 1,
+    );
   };
 
   const galleryContent = (
@@ -73,7 +86,9 @@ export default function SectionImageGallery({
             />
             {image.title && (
               <div className='absolute inset-0 flex items-end bg-linear-to-t from-black/60 to-transparent p-3 opacity-0 transition group-hover:opacity-100'>
-                <span className='text-sm font-medium text-white'>{image.title}</span>
+                <span className='text-sm font-medium text-white'>
+                  {image.title}
+                </span>
               </div>
             )}
           </button>
@@ -83,12 +98,18 @@ export default function SectionImageGallery({
   );
 
   return (
-    <section data-section='image-gallery' aria-labelledby={title ? 'gallery-title' : undefined}>
+    <section
+      data-section='image-gallery'
+      aria-labelledby={title ? 'gallery-title' : undefined}
+    >
       {noWrapper ? galleryContent : <Wrapper>{galleryContent}</Wrapper>}
 
       {lightboxIndex !== null && (
         <div
-          className={cn('fixed inset-0 z-50 bg-black/90 p-4', flexCenterClasses)}
+          className={cn(
+            'fixed inset-0 z-50 bg-black/90 p-4',
+            flexCenterClasses,
+          )}
           onClick={closeLightbox}
           role='dialog'
           aria-modal='true'
@@ -115,7 +136,10 @@ export default function SectionImageGallery({
             <RiArrowLeftLine className={largeIconSizeClasses} />
           </button>
 
-          <div className='relative max-h-[80vh] max-w-[90vw]' onClick={e => e.stopPropagation()}>
+          <div
+            className='relative max-h-[80vh] max-w-[90vw]'
+            onClick={e => e.stopPropagation()}
+          >
             <Image
               src={images[lightboxIndex].src}
               alt={images[lightboxIndex].alt}
@@ -124,7 +148,9 @@ export default function SectionImageGallery({
               className='max-h-[80vh] w-auto object-contain'
             />
             {images[lightboxIndex].title && (
-              <p className='mt-4 text-center text-white'>{images[lightboxIndex].title}</p>
+              <p className='mt-4 text-center text-white'>
+                {images[lightboxIndex].title}
+              </p>
             )}
           </div>
 

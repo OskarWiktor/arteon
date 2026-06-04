@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter BMP na PDF - darmowy, bez limitu",
-      "alternateName": ["Zamiana BMP na PDF", "Konwersja BMP do PDF", "BMP to PDF converter"],
+      "alternateName": [
+        "Zamiana BMP na PDF",
+        "Konwersja BMP do PDF",
+        "BMP to PDF converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Darmowy konwerter BMP na PDF. Zamień pliki BMP na dokument PDF w przeglądarce - pliki nie są wysyłane na serwer.",

@@ -117,7 +117,9 @@ export function getConversionHref(
   target: UniversalFormat,
   locale: Locale,
 ): string | null {
-  const def = ALL_CONVERSION_DEFS.find(d => d.source === source && d.target === target);
+  const def = ALL_CONVERSION_DEFS.find(
+    d => d.source === source && d.target === target,
+  );
   if (!def) return null;
   const href = getToolHref(def.toolKey, locale);
   return href === '#' ? null : href;
@@ -130,13 +132,19 @@ export const getAllRoutes = cache((locale: Locale): ResolvedRoute[] => {
   })).filter(r => r.href !== '#');
 });
 
-export function getAvailableTargets(source: UniversalFormat, locale: Locale): UniversalFormat[] {
+export function getAvailableTargets(
+  source: UniversalFormat,
+  locale: Locale,
+): UniversalFormat[] {
   return getAllRoutes(locale)
     .filter(r => r.source === source)
     .map(r => r.target);
 }
 
-export function getAvailableSources(target: UniversalFormat, locale: Locale): UniversalFormat[] {
+export function getAvailableSources(
+  target: UniversalFormat,
+  locale: Locale,
+): UniversalFormat[] {
   return getAllRoutes(locale)
     .filter(r => r.target === target)
     .map(r => r.source);
@@ -149,14 +157,24 @@ export function getConversionByToolKey(
   return def ? { source: def.source, target: def.target } : null;
 }
 
-export function getConvertersToSameTarget(toolKey: string, locale: Locale): ResolvedRoute[] {
+export function getConvertersToSameTarget(
+  toolKey: string,
+  locale: Locale,
+): ResolvedRoute[] {
   const current = ALL_CONVERSION_DEFS.find(d => d.toolKey === toolKey);
   if (!current) return [];
-  return getAllRoutes(locale).filter(r => r.target === current.target && r.toolKey !== toolKey);
+  return getAllRoutes(locale).filter(
+    r => r.target === current.target && r.toolKey !== toolKey,
+  );
 }
 
-export function getConvertersFromSameSource(toolKey: string, locale: Locale): ResolvedRoute[] {
+export function getConvertersFromSameSource(
+  toolKey: string,
+  locale: Locale,
+): ResolvedRoute[] {
   const current = ALL_CONVERSION_DEFS.find(d => d.toolKey === toolKey);
   if (!current) return [];
-  return getAllRoutes(locale).filter(r => r.source === current.source && r.toolKey !== toolKey);
+  return getAllRoutes(locale).filter(
+    r => r.source === current.source && r.toolKey !== toolKey,
+  );
 }

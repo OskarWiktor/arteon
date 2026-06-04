@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Převodník PNG na JPG",
-      "alternateName": ["Převést PNG na JPG", "Konverze PNG do JPG", "Převodník PNG na JPG zdarma"],
+      "alternateName": [
+        "Převést PNG na JPG",
+        "Konverze PNG do JPG",
+        "Převodník PNG na JPG zdarma"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",

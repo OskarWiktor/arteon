@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "BMP to PNG converter – free, unlimited files",
-      "alternateName": ["Bitmap to PNG converter", "Convert BMP to PNG", "Change BMP to PNG"],
+      "alternateName": [
+        "Bitmap to PNG converter",
+        "Convert BMP to PNG",
+        "Change BMP to PNG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Free BMP to PNG converter. Compress BMP to lossless PNG in your browser. No uploads, no limits.",

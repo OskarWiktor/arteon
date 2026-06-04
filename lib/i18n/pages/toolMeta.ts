@@ -21,7 +21,9 @@ export function getToolAlternates(toolKey: ToolItemKey, locale: Locale) {
   const languages: Record<string, string> = {};
   for (const loc of SUPPORTED_LOCALES) {
     if (tool.locales[loc]) {
-      languages[LOCALE_CONFIG[loc].hreflang] = toAbsoluteUrl(getToolHref(toolKey, loc));
+      languages[LOCALE_CONFIG[loc].hreflang] = toAbsoluteUrl(
+        getToolHref(toolKey, loc),
+      );
     }
   }
   // PL tools live at root (no /pl/ prefix), handled by getToolHref already
@@ -49,7 +51,9 @@ export function getHomepageAlternates() {
 export function getToolsIndexAlternates(locale: Locale) {
   const languages: Record<string, string> = {};
   for (const loc of SUPPORTED_LOCALES) {
-    languages[LOCALE_CONFIG[loc].hreflang] = toAbsoluteUrl(LOCALE_CONFIG[loc].toolsIndexHref);
+    languages[LOCALE_CONFIG[loc].hreflang] = toAbsoluteUrl(
+      LOCALE_CONFIG[loc].toolsIndexHref,
+    );
   }
   languages['x-default'] = toAbsoluteUrl(LOCALE_CONFIG['en'].toolsIndexHref);
 
@@ -79,17 +83,22 @@ export function getToolSoftwareSchema(opts: {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: opts.name,
-    ...(opts.alternateName?.length ? { alternateName: opts.alternateName } : {}),
+    ...(opts.alternateName?.length
+      ? { alternateName: opts.alternateName }
+      : {}),
     url: pageUrl,
     applicationCategory: opts.applicationCategory || 'UtilitiesApplication',
-    ...(opts.applicationSubCategory ? { applicationSubCategory: opts.applicationSubCategory } : {}),
+    ...(opts.applicationSubCategory
+      ? { applicationSubCategory: opts.applicationSubCategory }
+      : {}),
     operatingSystem: 'Any',
     description: opts.description,
     inLanguage: LOCALE_CONFIG[opts.locale].lang,
     isAccessibleForFree: true,
     ...(opts.featureList?.length ? { featureList: opts.featureList } : {}),
     ...(opts.ogImage ? { screenshot: toAbsoluteUrl(opts.ogImage) } : {}),
-    browserRequirements: 'Requires a modern web browser with JavaScript enabled',
+    browserRequirements:
+      'Requires a modern web browser with JavaScript enabled',
     permissions: 'none',
     offers: {
       '@type': 'Offer',
@@ -193,7 +202,12 @@ export function getToolWebPageSchema(opts: {
     url: pageUrl,
     inLanguage: LOCALE_CONFIG[opts.locale].lang,
     ...(opts.ogImage
-      ? { primaryImageOfPage: { '@type': 'ImageObject', url: toAbsoluteUrl(opts.ogImage) } }
+      ? {
+          primaryImageOfPage: {
+            '@type': 'ImageObject',
+            url: toAbsoluteUrl(opts.ogImage),
+          },
+        }
       : {}),
     isPartOf: {
       '@type': 'WebSite',

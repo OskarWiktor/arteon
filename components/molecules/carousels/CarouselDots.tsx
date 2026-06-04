@@ -53,7 +53,8 @@ export function CarouselDots({
       </div>
 
       <p className='sr-only' aria-live='polite'>
-        {slideLabel} {Math.min(currentSlide + 1, maxSlides)} {ofLabel} {maxSlides}
+        {slideLabel} {Math.min(currentSlide + 1, maxSlides)} {ofLabel}{' '}
+        {maxSlides}
       </p>
     </>
   );

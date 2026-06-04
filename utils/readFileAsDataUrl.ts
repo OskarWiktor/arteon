@@ -1,6 +1,9 @@
 import type { ReadFileAsDataUrlOptions } from '@/types/tools/image';
 
-export function readFileAsDataUrl(file: File, options?: ReadFileAsDataUrlOptions): Promise<string> {
+export function readFileAsDataUrl(
+  file: File,
+  options?: ReadFileAsDataUrlOptions,
+): Promise<string> {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
 

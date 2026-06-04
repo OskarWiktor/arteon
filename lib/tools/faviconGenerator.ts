@@ -2,7 +2,10 @@ import type { FaviconOutputFile } from '@/types/tools/image';
 import { canvasToBlob } from '@/utils/canvasToBlob';
 export type { FaviconOutputFile } from '@/types/tools/image';
 
-export function suggestFaviconFileName(size: number | 'ico', type: 'png' | 'ico'): string {
+export function suggestFaviconFileName(
+  size: number | 'ico',
+  type: 'png' | 'ico',
+): string {
   if (type === 'ico') return 'favicon.ico';
 
   if (size === 180) return 'apple-touch-icon.png';

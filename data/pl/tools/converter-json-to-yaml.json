@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter JSON na YAML - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana JSON na YAML", "Konwersja JSON do YAML", "JSON to YAML converter"],
+      "alternateName": [
+        "Zamiana JSON na YAML",
+        "Konwersja JSON do YAML",
+        "JSON to YAML converter"
+      ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter JSON na YAML. Zamień dane JSON na YAML w przeglądarce - dane nie są wysyłane na serwer.",

@@ -4,7 +4,11 @@ import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWit
 import { FONT_OPTIONS } from '@/lib/tools/email/signatureDefaults';
 import { flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import type { StyleConfig, FontSizeOption, BorderSides } from '@/types/tools/email';
+import type {
+  StyleConfig,
+  FontSizeOption,
+  BorderSides,
+} from '@/types/tools/email';
 
 type ThemePreset = {
   id: string;
@@ -17,7 +21,10 @@ type Props = {
   styleConfig: StyleConfig;
   themeId: string;
   themePresets: ThemePreset[];
-  onStyleChange: <K extends keyof StyleConfig>(key: K, value: StyleConfig[K]) => void;
+  onStyleChange: <K extends keyof StyleConfig>(
+    key: K,
+    value: StyleConfig[K],
+  ) => void;
   onApplyTheme: (presetId: string) => void;
   t: {
     appearance: Record<string, string>;
@@ -143,37 +150,58 @@ export default function AppearancePanel({
       <div>
         <p className='tool-label mb-1'>{t.border.label}</p>
         <div className='flex flex-wrap gap-3'>
-          {(['left', 'right', 'top', 'bottom'] as (keyof BorderSides)[]).map(side => (
-            <label key={side} className='flex cursor-pointer items-center gap-1.5'>
-              <InputCheckboxWithLabel
-                checked={styleConfig.border[side]}
-                onChange={checked => {
-                  const newBorder = { ...styleConfig.border, [side]: checked };
-                  const allSelected =
-                    newBorder.left && newBorder.right && newBorder.top && newBorder.bottom;
-                  if (allSelected) {
-                    onStyleChange('border', { left: true, right: true, top: true, bottom: true });
-                  } else {
-                    onStyleChange('border', newBorder);
-                  }
-                }}
-                id={''}
-                label={''}
-              />
-              <span className='tool-value'>
-                {side === 'left' && t.border.left}
-                {side === 'right' && t.border.right}
-                {side === 'top' && t.border.top}
-                {side === 'bottom' && t.border.bottom}
-              </span>
-            </label>
-          ))}
+          {(['left', 'right', 'top', 'bottom'] as (keyof BorderSides)[]).map(
+            side => (
+              <label
+                key={side}
+                className='flex cursor-pointer items-center gap-1.5'
+              >
+                <InputCheckboxWithLabel
+                  checked={styleConfig.border[side]}
+                  onChange={checked => {
+                    const newBorder = {
+                      ...styleConfig.border,
+                      [side]: checked,
+                    };
+                    const allSelected =
+                      newBorder.left &&
+                      newBorder.right &&
+                      newBorder.top &&
+                      newBorder.bottom;
+                    if (allSelected) {
+                      onStyleChange('border', {
+                        left: true,
+                        right: true,
+                        top: true,
+                        bottom: true,
+                      });
+                    } else {
+                      onStyleChange('border', newBorder);
+                    }
+                  }}
+                  id={''}
+                  label={''}
+                />
+                <span className='tool-value'>
+                  {side === 'left' && t.border.left}
+                  {side === 'right' && t.border.right}
+                  {side === 'top' && t.border.top}
+                  {side === 'bottom' && t.border.bottom}
+                </span>
+              </label>
+            ),
+          )}
         </div>
         <div className='mt-2 flex gap-2'>
           <button
             type='button'
             onClick={() =>
-              onStyleChange('border', { left: true, right: true, top: true, bottom: true })
+              onStyleChange('border', {
+                left: true,
+                right: true,
+                top: true,
+                bottom: true,
+              })
             }
             className={cn(
               'tool-button',
@@ -190,7 +218,12 @@ export default function AppearancePanel({
           <button
             type='button'
             onClick={() =>
-              onStyleChange('border', { left: false, right: false, top: false, bottom: false })
+              onStyleChange('border', {
+                left: false,
+                right: false,
+                top: false,
+                bottom: false,
+              })
             }
             className={cn(
               'tool-button',

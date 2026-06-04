@@ -7,7 +7,9 @@ const COOKIE_MAX_AGE = 60 * 60 * 24 * 180;
 export function readConsent(): ConsentState | null {
   if (typeof document === 'undefined') return null;
 
-  const m = document.cookie.match(new RegExp('(?:^|; )' + COOKIE_NAME + '=([^;]+)'));
+  const m = document.cookie.match(
+    new RegExp('(?:^|; )' + COOKIE_NAME + '=([^;]+)'),
+  );
   if (!m) return null;
 
   try {
@@ -18,7 +20,8 @@ export function readConsent(): ConsentState | null {
 }
 
 export function writeConsent(state: ConsentState) {
-  if (typeof document === 'undefined' || typeof location === 'undefined') return;
+  if (typeof document === 'undefined' || typeof location === 'undefined')
+    return;
 
   const value = encodeURIComponent(JSON.stringify(state));
   const secure = location.protocol === 'https:' ? '; Secure' : '';

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Muunna PNG-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.",
-      "featureList": ["PNG to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PNG to PDF", "PNG to PDF", "Free PNG to PDF converter"]
+      "featureList": [
+        "PNG to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PNG to PDF",
+        "PNG to PDF",
+        "Free PNG to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Kuinka muuntaa PNG PDF-muotoon",

@@ -1,20 +1,38 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import Card from '@/components/organisms/Card';
-import { getAllArticlePreviews, getPrimaryCategorySlug } from '@/lib/blogDataService';
+import Image from 'next/image';
+import {
+  getAllArticlePreviews,
+  getPrimaryCategorySlug,
+} from '@/lib/blogDataService';
 import { slugify } from '@/utils/slugify';
+import Card from '@/components/organisms/Card';
 
 const articles = getAllArticlePreviews();
 
-export default function ArticlesList({ filterCategorySlug }: { filterCategorySlug?: string }) {
+/**
+ * Render a responsive grid of article cards, optionally filtered by a category slug.
+ *
+ * @param filterCategorySlug - Optional slug used to show only articles whose primary category matches this slug
+ * @returns A section element containing a responsive grid of article cards. Each card links to the article using its primary category slug and article slug, and displays an optional cover image, title, excerpt, reading time, and publication date.
+ */
+export default function ArticlesList({
+  filterCategorySlug,
+}: {
+  filterCategorySlug?: string;
+}) {
   const items = filterCategorySlug
     ? articles.filter(a => {
-        return a.primaryCategory && slugify(a.primaryCategory) === filterCategorySlug;
+        return (
+          a.primaryCategory && slugify(a.primaryCategory) === filterCategorySlug
+        );
       })
     : articles;
 
   return (
-    <section aria-label='Lista artykułów' className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+    <section
+      aria-label='Lista artykułów'
+      className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'
+    >
       {items.map(a => {
         const catSlug = getPrimaryCategorySlug(a);
         const href = `/edukacja/${catSlug}/${a.slug}`;
@@ -34,13 +52,20 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
               )}
               <div className='p-4'>
                 <h3 className='h6'>{a.title}</h3>
-                <p className='mt-2 line-clamp-5 text-sm! text-light md:line-clamp-4'>{a.excerpt}</p>
+                <p className='mt-2 line-clamp-5 text-sm! text-light md:line-clamp-4'>
+                  {a.excerpt}
+                </p>
                 <div className='mt-3 flex flex-wrap items-center gap-2'>
                   {a.readingTime && (
-                    <span className='text-sm text-light'>{a.readingTime} min czytania</span>
+                    <span className='text-sm text-light'>
+                      {a.readingTime} min czytania
+                    </span>
                   )}
                   {a.datePublished && (
-                    <span className='text-sm text-light' aria-label='Data publikacji'>
+                    <span
+                      className='text-sm text-light'
+                      aria-label='Data publikacji'
+                    >
                       <span className='mx-1'>• </span>
                       {a.datePublished.split('-').reverse().join('.')}
                     </span>

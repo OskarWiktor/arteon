@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Převeďte obrázky HEIC na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.",
-      "featureList": ["HEIC to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert HEIC to PDF", "HEIC to PDF", "Free HEIC to PDF converter"]
+      "featureList": [
+        "HEIC to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert HEIC to PDF",
+        "HEIC to PDF",
+        "Free HEIC to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Jak převést HEIC na PDF",

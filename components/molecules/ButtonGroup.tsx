@@ -34,7 +34,10 @@ export default function ButtonGroup({
 
   return (
     <div
-      className={cn('mt-4 flex flex-wrap gap-3 md:mt-6 lg:mt-8', alignClasses[align])}
+      className={cn(
+        'mt-4 flex flex-wrap gap-3 md:mt-6 lg:mt-8',
+        alignClasses[align],
+      )}
       role='group'
       aria-label={ariaLabel}
     >

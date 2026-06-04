@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter JPG na PNG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana JPG na PNG", "Konwersja JPG do PNG", "Zmiana formatu JPG na PNG"],
+      "alternateName": [
+        "Zamiana JPG na PNG",
+        "Konwersja JPG do PNG",
+        "Zmiana formatu JPG na PNG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Darmowy konwerter JPG na PNG. Zamień pliki JPG na bezstratny PNG w przeglądarce. Bez limitu plików i rejestracji.",

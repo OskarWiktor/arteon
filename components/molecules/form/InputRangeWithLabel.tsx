@@ -36,7 +36,10 @@ export default function InputRangeWithLabel({
   return (
     <div className={cn('space-y-1', className)}>
       {label && (
-        <label htmlFor={id} className={cn('tool-value', flexCenterBetweenClasses)}>
+        <label
+          htmlFor={id}
+          className={cn('tool-value', flexCenterBetweenClasses)}
+        >
           <span>{label}</span>
           <span>
             {value}

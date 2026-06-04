@@ -1,6 +1,10 @@
 import Script from 'next/script';
 import { IoColorPalette } from 'react-icons/io5';
-import { RiFileTextLine, RiTableLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import {
+  RiFileTextLine,
+  RiTableLine,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
@@ -27,7 +31,8 @@ export const metadata = {
   description:
     'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika',
+    canonical:
+      'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika',
   },
   openGraph: {
     title: 'Projekt cennika | Arteon',
@@ -69,9 +74,10 @@ export default function OfferDesignPriceListPage() {
         title='Projekt cennika'
         description={
           <>
-            Zaprojektujemy cennik, który porządkuje Twoją ofertę i prowadzi klienta do wyboru
-            właściwej opcji. W kilka dni otrzymasz gotowy plik do druku oraz wersję cyfrową do
-            wykorzystania na stronie i w mediach społecznościowych.
+            Zaprojektujemy cennik, który porządkuje Twoją ofertę i prowadzi
+            klienta do wyboru właściwej opcji. W kilka dni otrzymasz gotowy plik
+            do druku oraz wersję cyfrową do wykorzystania na stronie i w mediach
+            społecznościowych.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -85,31 +91,42 @@ export default function OfferDesignPriceListPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
-        fourth={{ href: `/uslugi/projekty-graficzne/projekt-cennika`, label: 'Projekt cennika' }}
+        third={{
+          href: `/uslugi/projekty-graficzne`,
+          label: 'Projekty graficzne',
+        }}
+        fourth={{
+          href: `/uslugi/projekty-graficzne/projekt-cennika`,
+          label: 'Projekt cennika',
+        }}
         includeJsonLd
       />
 
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Przykładowe realizacje projektów graficznych' category='grafika' />
+        <ProjectsCarousel
+          title='Przykładowe realizacje projektów graficznych'
+          category='grafika'
+        />
 
         <Divider line />
 
         <SectionInfo title='Dlaczego warto mieć profesjonalny projekt cennika?'>
           <p>
-            Dobrze zaprojektowany układ cennika porządkuje ofertę, ułatwia porównanie, zachęca do
-            wyboru droższych opcji oraz buduje profesjonalny wizerunek Twojej firmy. Klient widzi
-            jasną i estetyczną strukturę, co dodatkowo wzbudza zaufanie.
+            Dobrze zaprojektowany układ cennika porządkuje ofertę, ułatwia
+            porównanie, zachęca do wyboru droższych opcji oraz buduje
+            profesjonalny wizerunek Twojej firmy. Klient widzi jasną i
+            estetyczną strukturę, co dodatkowo wzbudza zaufanie.
           </p>
 
           <br />
 
           <p>
-            <strong>Wygląd ma wpływ na decyzje zakupowe.</strong> Sposób prezentacji cen może
-            realnie zwiększyć sprzedaż: odpowiednia hierarchia, wyróżnione pakiety oraz czytelne
-            nazwy sprawiają, że rozmowa o cenie jest prostsza i mniej konfliktowa.
+            <strong>Wygląd ma wpływ na decyzje zakupowe.</strong> Sposób
+            prezentacji cen może realnie zwiększyć sprzedaż: odpowiednia
+            hierarchia, wyróżnione pakiety oraz czytelne nazwy sprawiają, że
+            rozmowa o cenie jest prostsza i mniej konfliktowa.
           </p>
 
           <br />
@@ -134,38 +151,59 @@ export default function OfferDesignPriceListPage() {
               title: 'Przejrzysty układ i hierarchia',
               description: (
                 <>
-                  Projektujemy logiczne sekcje, wyróżniamy kluczowe usługi i podkreślamy
-                  rekomendowane opcje, aby ułatwić wybór klientowi, ułatwiając przy tym rozmowę o
-                  cenach.
+                  Projektujemy logiczne sekcje, wyróżniamy kluczowe usługi i
+                  podkreślamy rekomendowane opcje, aby ułatwić wybór klientowi,
+                  ułatwiając przy tym rozmowę o cenach.
                 </>
               ),
-              icon: <RiTableLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiTableLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: (
                 <>
-                  Kolory, czcionki i ikony dopasowujemy do stylu Twojej marki oraz branży. Cennik
-                  staje się integralną częścią Twojej komunikacji.
+                  Kolory, czcionki i ikony dopasowujemy do stylu Twojej marki
+                  oraz branży. Cennik staje się integralną częścią Twojej
+                  komunikacji.
                 </>
               ),
-              icon: <IoColorPalette className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <IoColorPalette
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Wersje do druku i online',
               description: (
                 <>
-                  Otrzymasz plik PDF gotowy do druku oraz wersję cyfrową do publikacji na stronie
-                  czy mediach społecznościowych. Dostajesz gotową paczkę plików.
+                  Otrzymasz plik PDF gotowy do druku oraz wersję cyfrową do
+                  publikacji na stronie czy mediach społecznościowych. Dostajesz
+                  gotową paczkę plików.
                 </>
               ),
-              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileTextLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Faktura po realizacji',
-              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              description: (
+                <>
+                  Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
+                  formie.
+                </>
+              ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
           ]}
@@ -173,24 +211,27 @@ export default function OfferDesignPriceListPage() {
 
         <Divider line />
 
-        <SectionInfo title='Dla kogo jest projekt cennika?' subtitle='Kiedy ma największy sens?'>
+        <SectionInfo
+          title='Dla kogo jest projekt cennika?'
+          subtitle='Kiedy ma największy sens?'
+        >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              Masz kilka lub kilkanaście usług / pakietów i klienci dopytują, czym dokładnie się
-              różnią.
+              Masz kilka lub kilkanaście usług / pakietów i klienci dopytują,
+              czym dokładnie się różnią.
             </li>
             <li>Obecny cennik nie pasuje do reszty identyfikacji.</li>
             <li>
-              Chcesz podnieść ceny, ale potrzebujesz lepszej argumentacji wizualnej i logicznej
-              struktury oferty.
+              Chcesz podnieść ceny, ale potrzebujesz lepszej argumentacji
+              wizualnej i logicznej struktury oferty.
             </li>
             <li>
-              Planujesz wprowadzić pakiety (Standard / Premium / VIP) i chcesz, aby klient
-              naturalnie wybierał właściwą opcję.
+              Planujesz wprowadzić pakiety (Standard / Premium / VIP) i chcesz,
+              aby klient naturalnie wybierał właściwą opcję.
             </li>
             <li>
-              Chcesz mieć jeden spójny wizualnie cennik dla punktu stacjonarnego, strony www i
-              mediów społecznościowych.
+              Chcesz mieć jeden spójny wizualnie cennik dla punktu
+              stacjonarnego, strony www i mediów społecznościowych.
             </li>
           </ul>
         </SectionInfo>
@@ -290,7 +331,8 @@ export default function OfferDesignPriceListPage() {
                 'Zazwyczaj od 3 do 5 dni roboczych. Dla cenników z dużą liczbą pozycji ( wieloma stronami ) termin ustalamy indywidualnie.',
             },
             {
-              question: 'Czy możliwe jest zrealizowanie cennika, który ma wiele stron?',
+              question:
+                'Czy możliwe jest zrealizowanie cennika, który ma wiele stron?',
               answer:
                 'Tak, możemy zaprojektować katalog cenowy, menu lub broszurę z cennikiem w formie wielostronicowej.',
             },
@@ -307,7 +349,8 @@ export default function OfferDesignPriceListPage() {
               size: 'large',
               backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Strony internetowe',
@@ -328,7 +371,8 @@ export default function OfferDesignPriceListPage() {
             {
               title: 'Projekt katalogu',
               size: 'small',
-              backgroundImage: '/assets/projects/restoquality/mockup-gazetka-restoquality.webp',
+              backgroundImage:
+                '/assets/projects/restoquality/mockup-gazetka-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-katalogu',
             },

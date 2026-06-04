@@ -1,7 +1,8 @@
 import type { FieldMetrics } from '@/types/tools/text';
 export type { LengthStatus, FieldMetrics } from '@/types/tools/text';
 
-const TITLE_FONT = '400 20px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+const TITLE_FONT =
+  '400 20px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
 const DESCRIPTION_FONT =
   '300 15px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
 
@@ -11,7 +12,11 @@ function countWords(text: string): number {
   return text ? text.split(/\s+/).filter(Boolean).length : 0;
 }
 
-function measureTextWidth(text: string, font: string, fallbackAvgPx: number): number {
+function measureTextWidth(
+  text: string,
+  font: string,
+  fallbackAvgPx: number,
+): number {
   if (!text) return 0;
 
   if (typeof document === 'undefined') {
@@ -50,8 +55,10 @@ function analyzeField(
     return { chars, words, pixels, status: 'empty' };
   }
 
-  const isTooShort = chars < thresholds.tooShort.chars || pixels < thresholds.tooShort.pixels;
-  const isTooLong = chars > thresholds.tooLong.chars || pixels > thresholds.tooLong.pixels;
+  const isTooShort =
+    chars < thresholds.tooShort.chars || pixels < thresholds.tooShort.pixels;
+  const isTooLong =
+    chars > thresholds.tooLong.chars || pixels > thresholds.tooLong.pixels;
 
   if (isTooShort) {
     return { chars, words, pixels, status: 'too-short' };

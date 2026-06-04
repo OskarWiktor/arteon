@@ -5,7 +5,10 @@ import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import projectsData from '@/data/pl/projects.json';
-import { getAllArticlePreviews, getPrimaryCategorySlug } from '@/lib/blogDataService';
+import {
+  getAllArticlePreviews,
+  getPrimaryCategorySlug,
+} from '@/lib/blogDataService';
 import type { ArticlePreview } from '@/types/article';
 import { siteUrl } from '@/utils/absoluteUrl';
 import { slugify } from '@/utils/slugify';
@@ -24,18 +27,36 @@ type Project = {
 };
 
 const GRAPHIC_SERVICES_SOURCE = [
-  { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne/projekt-wizytowki' },
+  {
+    name: 'Projekt wizytówki',
+    path: '/uslugi/projekty-graficzne/projekt-wizytowki',
+  },
   { name: 'Projekt ulotki', path: '/uslugi/projekty-graficzne/projekt-ulotki' },
-  { name: 'Teczka ofertowa', path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej' },
-  { name: 'Papier firmowy', path: '/uslugi/projekty-graficzne/projekt-papieru-firmowego' },
-  { name: 'Odzież firmowa', path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej' },
+  {
+    name: 'Teczka ofertowa',
+    path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+  },
+  {
+    name: 'Papier firmowy',
+    path: '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+  },
+  {
+    name: 'Odzież firmowa',
+    path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
+  },
   { name: 'Projekt logo', path: '/uslugi/projekty-graficzne/projekt-logo' },
-  { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
+  {
+    name: 'Projekt katalogu',
+    path: '/uslugi/projekty-graficzne/projekt-katalogu',
+  },
   {
     name: 'Identyfikacja wizualna',
     path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
   },
-  { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
+  {
+    name: 'Projekt graficzny strony',
+    path: '/uslugi/projekty-graficzne/projekt-graficzny-strony',
+  },
   {
     name: 'Szablony postów na media społecznościowe',
     path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
@@ -44,9 +65,18 @@ const GRAPHIC_SERVICES_SOURCE = [
     name: 'Kupony rabatowe i vouchery',
     path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
   },
-  { name: 'Projekt cennika', path: '/uslugi/projekty-graficzne/projekt-cennika' },
-  { name: 'Karty lojalnościowe', path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
-  { name: 'Projekt menu restauracji', path: '/uslugi/projekty-graficzne/projekt-menu-restauracji' },
+  {
+    name: 'Projekt cennika',
+    path: '/uslugi/projekty-graficzne/projekt-cennika',
+  },
+  {
+    name: 'Karty lojalnościowe',
+    path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
+  },
+  {
+    name: 'Projekt menu restauracji',
+    path: '/uslugi/projekty-graficzne/projekt-menu-restauracji',
+  },
 ];
 
 const GRAPHIC_SERVICES: NavItem[] = GRAPHIC_SERVICES_SOURCE.map(s => ({
@@ -69,23 +99,33 @@ const services: NavItem[] = [
     title: 'Marketing',
     children: [
       { href: '/uslugi/marketing/audyt-seo', title: 'Audyt SEO' },
-      { href: '/uslugi/marketing/optymalizacja-seo', title: 'Optymalizacja SEO' },
-      { href: '/uslugi/marketing/pozycjonowanie-stron', title: 'Pozycjonowanie stron' },
+      {
+        href: '/uslugi/marketing/optymalizacja-seo',
+        title: 'Optymalizacja SEO',
+      },
+      {
+        href: '/uslugi/marketing/pozycjonowanie-stron',
+        title: 'Pozycjonowanie stron',
+      },
     ],
   },
 ];
 
-const portfolioIndex: NavItem = { title: 'Wszystkie realizacje', href: '/realizacje' };
+const portfolioIndex: NavItem = {
+  title: 'Wszystkie realizacje',
+  href: '/realizacje',
+};
 
-const portfolioItems: NavItem[] = ((projectsData as { projects: Project[] }).projects || []).map(
-  p => ({
-    title: p.title,
-    href: `/realizacje/${p.slug}`,
-  }),
-);
+const portfolioItems: NavItem[] = (
+  (projectsData as { projects: Project[] }).projects || []
+).map(p => ({
+  title: p.title,
+  href: `/realizacje/${p.slug}`,
+}));
 
 const articlePreviews = getAllArticlePreviews();
-const blogCategories: NavItem[] = buildBlogCategoriesFromArticles(articlePreviews);
+const blogCategories: NavItem[] =
+  buildBlogCategoriesFromArticles(articlePreviews);
 
 const blogArticleItems: NavItem[] = articlePreviews.map(a => ({
   title: a.title,
@@ -93,18 +133,42 @@ const blogArticleItems: NavItem[] = articlePreviews.map(a => ({
 }));
 
 const tools: NavItem[] = [
-  { title: 'Konwerter JPG/PNG na WebP', href: '/narzedzia/konwerter-jpg-na-webp' },
-  { title: 'Zmiana rozmiaru i kadrowanie zdjęcia', href: '/narzedzia/edytor-zdjec-online' },
-  { title: 'Generator favicon', href: '/narzedzia/darmowy-generator-favicon-ico' },
+  {
+    title: 'Konwerter JPG/PNG na WebP',
+    href: '/narzedzia/konwerter-jpg-na-webp',
+  },
+  {
+    title: 'Zmiana rozmiaru i kadrowanie zdjęcia',
+    href: '/narzedzia/edytor-zdjec-online',
+  },
+  {
+    title: 'Generator favicon',
+    href: '/narzedzia/darmowy-generator-favicon-ico',
+  },
   {
     title: 'Licznik meta title i description',
     href: '/narzedzia/licznik-dlugosci-meta-title-i-description',
   },
-  { title: 'Generator stopki mailowej HTML', href: '/narzedzia/darmowy-generator-stopki-mailowej' },
-  { title: 'Kontrast i czytelność kolorów', href: '/narzedzia/kontrast-i-czytelnosc-kolorow' },
-  { title: 'Generator palet kolorów', href: '/narzedzia/generator-palet-kolorow' },
-  { title: 'Ekstraktor kolorów z obrazu', href: '/narzedzia/ekstraktor-kolorow-z-obrazu' },
-  { title: 'Generator kodów QR', href: '/narzedzia/darmowy-generator-kodow-qr' },
+  {
+    title: 'Generator stopki mailowej HTML',
+    href: '/narzedzia/darmowy-generator-stopki-mailowej',
+  },
+  {
+    title: 'Kontrast i czytelność kolorów',
+    href: '/narzedzia/kontrast-i-czytelnosc-kolorow',
+  },
+  {
+    title: 'Generator palet kolorów',
+    href: '/narzedzia/generator-palet-kolorow',
+  },
+  {
+    title: 'Ekstraktor kolorów z obrazu',
+    href: '/narzedzia/ekstraktor-kolorow-z-obrazu',
+  },
+  {
+    title: 'Generator kodów QR',
+    href: '/narzedzia/darmowy-generator-kodow-qr',
+  },
 ];
 
 const infoPages: NavItem[] = [
@@ -121,7 +185,8 @@ const infoPages: NavItem[] = [
 ];
 
 export default function SitemapPage() {
-  const showAllPortfolio = portfolioItems.length > 0 && portfolioItems.length <= 40;
+  const showAllPortfolio =
+    portfolioItems.length > 0 && portfolioItems.length <= 40;
 
   const jsonLd = buildJsonLd({
     services,
@@ -140,8 +205,8 @@ export default function SitemapPage() {
         <header>
           <h1>Mapa strony</h1>
           <p className='mt-2'>
-            Szybki przegląd kluczowych sekcji i podstron. Użyj tej strony, aby szybko dotrzeć do
-            interesującej Cię treści.
+            Szybki przegląd kluczowych sekcji i podstron. Użyj tej strony, aby
+            szybko dotrzeć do interesującej Cię treści.
           </p>
         </header>
 
@@ -258,7 +323,9 @@ function toListElements(arr: NavItem[]) {
   }));
 }
 
-function buildBlogCategoriesFromArticles(articles: ArticlePreview[]): NavItem[] {
+function buildBlogCategoriesFromArticles(
+  articles: ArticlePreview[],
+): NavItem[] {
   const categoryMap = new Map<string, NavItem>();
 
   for (const article of articles) {
@@ -280,7 +347,9 @@ function buildBlogCategoriesFromArticles(articles: ArticlePreview[]): NavItem[] 
     });
   }
 
-  return Array.from(categoryMap.values()).sort((a, b) => a.title.localeCompare(b.title, 'pl'));
+  return Array.from(categoryMap.values()).sort((a, b) =>
+    a.title.localeCompare(b.title, 'pl'),
+  );
 }
 
 function buildJsonLd({
@@ -347,7 +416,10 @@ function buildJsonLd({
         '@type': 'ItemList',
         '@id': `${siteUrl}/#sitemap-narzedzia`,
         name: 'Mapa strony - Narzędzia',
-        itemListElement: toListElements([{ title: 'Narzędzia', href: '/narzedzia' }, ...tools]),
+        itemListElement: toListElements([
+          { title: 'Narzędzia', href: '/narzedzia' },
+          ...tools,
+        ]),
       },
       {
         '@type': 'ItemList',

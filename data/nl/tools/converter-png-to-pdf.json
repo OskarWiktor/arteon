@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Converteer PNG-afbeeldingen naar PDF-documenten. Combineer meerdere bestanden in één PDF. Gratis.",
-      "featureList": ["PNG to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PNG to PDF", "PNG to PDF", "Free PNG to PDF converter"]
+      "featureList": [
+        "PNG to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PNG to PDF",
+        "PNG to PDF",
+        "Free PNG to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Hoe PNG naar PDF converteren",

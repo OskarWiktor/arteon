@@ -202,7 +202,10 @@
         },
         {
           "label": "Confuzie frecventă",
-          "values": ["Folosit pentru imagini (incorect)", "Termen corect pentru imagini"]
+          "values": [
+            "Folosit pentru imagini (incorect)",
+            "Termen corect pentru imagini"
+          ]
         }
       ]
     },

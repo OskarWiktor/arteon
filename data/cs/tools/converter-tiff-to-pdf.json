@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Převeďte obrázky TIFF na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.",
-      "featureList": ["TIFF to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert TIFF to PDF", "TIFF to PDF", "Free TIFF to PDF converter"]
+      "featureList": [
+        "TIFF to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert TIFF to PDF",
+        "TIFF to PDF",
+        "Free TIFF to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Jak převést TIFF na PDF",

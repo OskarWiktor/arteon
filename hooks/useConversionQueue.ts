@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { convertImage } from '@/lib/tools/image/convert';
 import { FORMAT_MIME } from '@/lib/tools/image/imageFormatConverter';
-import type { ConversionFile, OutputFormat } from '@/types/tools/image-format-converter';
+import type {
+  ConversionFile,
+  OutputFormat,
+} from '@/types/tools/image-format-converter';
 import { revokeObjectUrl } from '@/utils/objectUrl';
 
 let fileIdCounter = 0;
@@ -73,13 +76,17 @@ export function useConversionQueue(options: ConversionQueueOptions) {
     setIsConverting(true);
     const targetMime = FORMAT_MIME[targetFormat];
 
-    const pending = filesRef.current.filter(f => f.status === 'pending' || f.status === 'error');
+    const pending = filesRef.current.filter(
+      f => f.status === 'pending' || f.status === 'error',
+    );
     for (const entry of pending) {
       if (!filesRef.current.some(f => f.id === entry.id)) continue;
 
       setFiles(prev =>
         prev.map(f =>
-          f.id === entry.id ? { ...f, status: 'processing' as const, errorMessage: null } : f,
+          f.id === entry.id
+            ? { ...f, status: 'processing' as const, errorMessage: null }
+            : f,
         ),
       );
 
@@ -112,7 +119,8 @@ export function useConversionQueue(options: ConversionQueueOptions) {
               ? {
                   ...f,
                   status: 'error' as const,
-                  errorMessage: err instanceof Error ? err.message : 'Unknown error',
+                  errorMessage:
+                    err instanceof Error ? err.message : 'Unknown error',
                 }
               : f,
           ),
@@ -126,7 +134,9 @@ export function useConversionQueue(options: ConversionQueueOptions) {
   const totalInputSize = files.reduce((sum, f) => sum + f.inputSize, 0);
   const doneFiles = files.filter(f => f.status === 'done');
   const totalOutputSize = doneFiles.reduce((sum, f) => sum + f.outputSize, 0);
-  const pendingCount = files.filter(f => f.status === 'pending' || f.status === 'error').length;
+  const pendingCount = files.filter(
+    f => f.status === 'pending' || f.status === 'error',
+  ).length;
   const doneCount = doneFiles.length;
 
   return {

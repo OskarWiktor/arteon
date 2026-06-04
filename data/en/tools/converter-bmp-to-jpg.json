@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "BMP to JPG converter – free, unlimited files",
-      "alternateName": ["BMP to JPEG converter", "Convert BMP to JPG", "Bitmap to JPG"],
+      "alternateName": [
+        "BMP to JPEG converter",
+        "Convert BMP to JPG",
+        "Bitmap to JPG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Free BMP to JPG converter. Compress BMP images to lightweight JPG in your browser. No uploads, no limits.",

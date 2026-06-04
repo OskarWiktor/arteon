@@ -197,7 +197,10 @@
         },
         {
           "label": "Böngészőtámogatás",
-          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Minden böngésző"]
+          "values": [
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "Minden böngésző"
+          ]
         },
         {
           "label": "Színmélység",

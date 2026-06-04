@@ -27,7 +27,9 @@ export default function ContactForm({
   locale: _locale = 'pl',
 }: ContactFormProps) {
   const t = useDictionary().contactForm;
-  const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>(
+    'idle',
+  );
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
@@ -104,7 +106,11 @@ export default function ContactForm({
           className='h-48 resize-none'
         />
 
-        <Button variant='accent' arrow onClick={() => formRef.current?.requestSubmit()}>
+        <Button
+          variant='accent'
+          arrow
+          onClick={() => formRef.current?.requestSubmit()}
+        >
           {t.send}
         </Button>
 

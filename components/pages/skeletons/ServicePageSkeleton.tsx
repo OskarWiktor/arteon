@@ -45,7 +45,7 @@ function PricesSkeleton() {
                 <Shimmer key={j} className='h-3.5 w-5/6' />
               ))}
             </div>
-            <Shimmer className='mt-4 h-10 w-full !rounded-lg' />
+            <Shimmer className='mt-4 h-10 w-full rounded-lg!' />
           </Card>
         ))}
       </div>
@@ -60,14 +60,14 @@ function ContactFormSkeleton() {
         <Shimmer className='h-7 w-3/5' />
         <Shimmer className='h-4 w-full' />
         <Shimmer className='h-4 w-4/5' />
-        <Shimmer className='aspect-[4/3] w-full !rounded-lg !bg-neutral-300' />
+        <Shimmer className='aspect-4/3 w-full rounded-lg! bg-neutral-300!' />
       </div>
       <Card variant='outlined' padding='md' className='space-y-4'>
         <Shimmer className='h-10 w-full' />
         <Shimmer className='h-10 w-full' />
         <Shimmer className='h-10 w-full' />
         <Shimmer className='h-24 w-full' />
-        <Shimmer className='h-10 w-40 !rounded-lg' />
+        <Shimmer className='h-10 w-40 rounded-lg!' />
       </Card>
     </div>
   );
@@ -78,9 +78,9 @@ function BentoSkeleton() {
     <div className='space-y-4'>
       <Shimmer className='h-7 w-1/3' />
       <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
-        <Shimmer className='aspect-[4/3] w-full !rounded-lg !bg-neutral-300 sm:col-span-2 lg:col-span-1 lg:row-span-2' />
-        <Shimmer className='aspect-[16/9] w-full !rounded-lg !bg-neutral-300' />
-        <Shimmer className='aspect-[16/9] w-full !rounded-lg !bg-neutral-300' />
+        <Shimmer className='aspect-4/3 w-full rounded-lg! bg-neutral-300! sm:col-span-2 lg:col-span-1 lg:row-span-2' />
+        <Shimmer className='aspect-video w-full rounded-lg! bg-neutral-300!' />
+        <Shimmer className='aspect-video w-full rounded-lg! bg-neutral-300!' />
       </div>
     </div>
   );
@@ -92,7 +92,7 @@ export default function ServicePageSkeleton() {
       <HeroBannerSkeleton />
       <BenefitBeltSkeleton />
       <BreadcrumbsSkeleton />
-      <div className='m-auto w-[94%] max-w-[1420px] 2xl:max-w-none'>
+      <div className='m-auto w-[94%] max-w-355 2xl:max-w-none'>
         <DividerSkeleton variant='space' />
         <CarouselSkeleton variant='project' />
         <DividerSkeleton variant='line' />

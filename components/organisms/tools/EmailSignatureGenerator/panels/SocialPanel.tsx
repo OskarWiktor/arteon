@@ -1,32 +1,72 @@
+import type {
+  SignatureConfig,
+  StyleConfig,
+  SocialKey,
+} from '@/types/tools/email';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
-import type { SignatureConfig, StyleConfig, SocialKey } from '@/types/tools/email';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 
 type Props = {
   config: SignatureConfig;
   styleConfig: StyleConfig;
   onSocialChange: (key: SocialKey, value: string) => void;
-  onStyleChange: <K extends keyof StyleConfig>(key: K, value: StyleConfig[K]) => void;
+  onStyleChange: <K extends keyof StyleConfig>(
+    key: K,
+    value: StyleConfig[K],
+  ) => void;
   t: {
     social: Record<string, string>;
   };
 };
 
-const SOCIAL_FIELDS: { key: SocialKey; label: string; placeholder: string }[] = [
-  { key: 'linkedin', label: 'LinkedIn', placeholder: 'https://www.linkedin.com/in/...' },
-  { key: 'instagram', label: 'Instagram', placeholder: 'https://www.instagram.com/...' },
-  { key: 'facebook', label: 'Facebook', placeholder: 'https://www.facebook.com/...' },
-  { key: 'tiktok', label: 'TikTok', placeholder: 'https://www.tiktok.com/@...' },
-  { key: 'youtube', label: 'YouTube', placeholder: 'https://www.youtube.com/@...' },
-  { key: 'x', label: 'X (Twitter)', placeholder: 'https://x.com/...' },
-  { key: 'github', label: 'GitHub', placeholder: 'https://github.com/...' },
-  { key: 'dribbble', label: 'Dribbble', placeholder: 'https://dribbble.com/...' },
-  { key: 'behance', label: 'Behance', placeholder: 'https://www.behance.net/...' },
-  { key: 'whatsapp', label: 'WhatsApp', placeholder: 'https://wa.me/48...' },
-  { key: 'telegram', label: 'Telegram', placeholder: 'https://t.me/...' },
-  { key: 'pinterest', label: 'Pinterest', placeholder: 'https://www.pinterest.com/...' },
-];
+const SOCIAL_FIELDS: { key: SocialKey; label: string; placeholder: string }[] =
+  [
+    {
+      key: 'linkedin',
+      label: 'LinkedIn',
+      placeholder: 'https://www.linkedin.com/in/...',
+    },
+    {
+      key: 'instagram',
+      label: 'Instagram',
+      placeholder: 'https://www.instagram.com/...',
+    },
+    {
+      key: 'facebook',
+      label: 'Facebook',
+      placeholder: 'https://www.facebook.com/...',
+    },
+    {
+      key: 'tiktok',
+      label: 'TikTok',
+      placeholder: 'https://www.tiktok.com/@...',
+    },
+    {
+      key: 'youtube',
+      label: 'YouTube',
+      placeholder: 'https://www.youtube.com/@...',
+    },
+    { key: 'x', label: 'X (Twitter)', placeholder: 'https://x.com/...' },
+    { key: 'github', label: 'GitHub', placeholder: 'https://github.com/...' },
+    {
+      key: 'dribbble',
+      label: 'Dribbble',
+      placeholder: 'https://dribbble.com/...',
+    },
+    {
+      key: 'behance',
+      label: 'Behance',
+      placeholder: 'https://www.behance.net/...',
+    },
+    { key: 'whatsapp', label: 'WhatsApp', placeholder: 'https://wa.me/48...' },
+    { key: 'telegram', label: 'Telegram', placeholder: 'https://t.me/...' },
+    {
+      key: 'pinterest',
+      label: 'Pinterest',
+      placeholder: 'https://www.pinterest.com/...',
+    },
+  ];
 
 function pairs<T>(arr: T[]): [T, T][] {
   const result: [T, T][] = [];
@@ -36,6 +76,20 @@ function pairs<T>(arr: T[]): [T, T][] {
   return result;
 }
 
+/**
+ * Renders the social links inputs and controls for social icon display and styling.
+ *
+ * Renders paired URL inputs for each social field, helper text, and a section to toggle
+ * social icons and choose their size and color mode. Icon size/color controls are shown
+ * only when social icons are enabled in `styleConfig`.
+ *
+ * @param config - Component configuration containing `socials`, a mapping of social keys to URLs
+ * @param styleConfig - Styling configuration containing `socialIcons` settings (e.g., `showIcons`, `iconSize`, `colorMode`)
+ * @param onSocialChange - Callback invoked with `(key, value)` when a social URL input changes
+ * @param onStyleChange - Callback invoked with `(section, updatedValues)` when a style section is updated
+ * @param t - Translation object with `social` strings used for labels, helper text, and button text
+ * @returns The React element for the social settings panel
+ */
 export default function SocialPanel({
   config,
   styleConfig,
@@ -74,7 +128,12 @@ export default function SocialPanel({
         <InputCheckboxWithLabel
           id='social-icons-toggle'
           checked={styleConfig.socialIcons.showIcons}
-          onChange={v => onStyleChange('socialIcons', { ...styleConfig.socialIcons, showIcons: v })}
+          onChange={v =>
+            onStyleChange('socialIcons', {
+              ...styleConfig.socialIcons,
+              showIcons: v,
+            })
+          }
           label={t.social.showIcons}
         />
 
@@ -88,7 +147,10 @@ export default function SocialPanel({
                   current={styleConfig.socialIcons.iconSize}
                   label={t.social.iconSizeSmall}
                   onChange={v =>
-                    onStyleChange('socialIcons', { ...styleConfig.socialIcons, iconSize: v })
+                    onStyleChange('socialIcons', {
+                      ...styleConfig.socialIcons,
+                      iconSize: v,
+                    })
                   }
                 />
                 <ButtonPill
@@ -96,7 +158,10 @@ export default function SocialPanel({
                   current={styleConfig.socialIcons.iconSize}
                   label={t.social.iconSizeMedium}
                   onChange={v =>
-                    onStyleChange('socialIcons', { ...styleConfig.socialIcons, iconSize: v })
+                    onStyleChange('socialIcons', {
+                      ...styleConfig.socialIcons,
+                      iconSize: v,
+                    })
                   }
                 />
                 <ButtonPill
@@ -104,7 +169,10 @@ export default function SocialPanel({
                   current={styleConfig.socialIcons.iconSize}
                   label={t.social.iconSizeLarge}
                   onChange={v =>
-                    onStyleChange('socialIcons', { ...styleConfig.socialIcons, iconSize: v })
+                    onStyleChange('socialIcons', {
+                      ...styleConfig.socialIcons,
+                      iconSize: v,
+                    })
                   }
                 />
               </div>
@@ -118,7 +186,10 @@ export default function SocialPanel({
                   current={styleConfig.socialIcons.colorMode}
                   label={t.social.iconColorPlatform}
                   onChange={v =>
-                    onStyleChange('socialIcons', { ...styleConfig.socialIcons, colorMode: v })
+                    onStyleChange('socialIcons', {
+                      ...styleConfig.socialIcons,
+                      colorMode: v,
+                    })
                   }
                 />
                 <ButtonPill
@@ -126,7 +197,10 @@ export default function SocialPanel({
                   current={styleConfig.socialIcons.colorMode}
                   label={t.social.iconColorAccent}
                   onChange={v =>
-                    onStyleChange('socialIcons', { ...styleConfig.socialIcons, colorMode: v })
+                    onStyleChange('socialIcons', {
+                      ...styleConfig.socialIcons,
+                      colorMode: v,
+                    })
                   }
                 />
                 <ButtonPill
@@ -134,7 +208,10 @@ export default function SocialPanel({
                   current={styleConfig.socialIcons.colorMode}
                   label={t.social.iconColorText}
                   onChange={v =>
-                    onStyleChange('socialIcons', { ...styleConfig.socialIcons, colorMode: v })
+                    onStyleChange('socialIcons', {
+                      ...styleConfig.socialIcons,
+                      colorMode: v,
+                    })
                   }
                 />
               </div>

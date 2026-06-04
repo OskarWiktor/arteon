@@ -40,7 +40,9 @@ export function calculateAvgWordLength(text: string): number {
   if (!text.trim()) return 0;
   const words = text.trim().split(/\s+/);
   const totalChars = words.reduce(
-    (sum, w) => sum + w.replace(/[^a-zA-Z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF]/g, '').length,
+    (sum, w) =>
+      sum +
+      w.replace(/[^a-zA-Z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF]/g, '').length,
     0,
   );
   return Math.round((totalChars / words.length) * 10) / 10;
@@ -74,7 +76,8 @@ export function analyzeText(text: string, locale: Locale = 'en'): TextMetrics {
 // Reading-time i18n (kept minimal - only formatting, no page-type evaluation)
 // ---------------------------------------------------------------------------
 const READING_TIME_FMT: Record<Locale, (m: number) => string> = {
-  pl: m => (m === 1 ? '1 minuta' : m >= 2 && m <= 4 ? `${m} minuty` : `${m} minut`),
+  pl: m =>
+    m === 1 ? '1 minuta' : m >= 2 && m <= 4 ? `${m} minuty` : `${m} minut`,
   en: m => (m === 1 ? '1 minute' : `${m} minutes`),
   de: m => (m === 1 ? '1 Minute' : `${m} Minuten`),
   es: m => (m === 1 ? '1 minuto' : `${m} minutos`),
@@ -84,15 +87,22 @@ const READING_TIME_FMT: Record<Locale, (m: number) => string> = {
   ro: m => (m === 1 ? '1 minut' : `${m} minute`),
   nl: m => (m === 1 ? '1 minuut' : `${m} minuten`),
   hu: m => (m === 1 ? '1 perc' : `${m} perc`),
-  cs: m => (m === 1 ? '1 minuta' : m >= 2 && m <= 4 ? `${m} minuty` : `${m} minut`),
+  cs: m =>
+    m === 1 ? '1 minuta' : m >= 2 && m <= 4 ? `${m} minuty` : `${m} minut`,
   sv: m => (m === 1 ? '1 minut' : `${m} minuter`),
   da: m => (m === 1 ? '1 minut' : `${m} minutter`),
   no: m => (m === 1 ? '1 minutt' : `${m} minutter`),
   fi: m => (m === 1 ? '1 minuutti' : `${m} minuuttia`),
-  el: m => (m === 1 ? '1 \u03bb\u03b5\u03c0\u03c4\u03cc' : `${m} \u03bb\u03b5\u03c0\u03c4\u03ac`),
+  el: m =>
+    m === 1
+      ? '1 \u03bb\u03b5\u03c0\u03c4\u03cc'
+      : `${m} \u03bb\u03b5\u03c0\u03c4\u03ac`,
 };
 
-export function formatReadingTime(minutes: number, locale: Locale = 'pl'): string {
+export function formatReadingTime(
+  minutes: number,
+  locale: Locale = 'pl',
+): string {
   return READING_TIME_FMT[locale](minutes);
 }
 

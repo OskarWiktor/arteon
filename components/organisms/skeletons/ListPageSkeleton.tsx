@@ -7,7 +7,9 @@ interface ListPageSkeletonProps {
   variant?: 'article' | 'project';
 }
 
-export default function ListPageSkeleton({ variant = 'article' }: ListPageSkeletonProps) {
+export default function ListPageSkeleton({
+  variant = 'article',
+}: ListPageSkeletonProps) {
   return (
     <>
       <HeroBannerSkeleton />

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Convertește pagini PDF în imagini WebP. Calitate înaltă, fără limite. Gratuit.",
-      "featureList": ["PDF to WebP conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PDF to WebP", "PDF to WebP", "Free PDF to WebP converter"]
+      "featureList": [
+        "PDF to WebP conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PDF to WebP",
+        "PDF to WebP",
+        "Free PDF to WebP converter"
+      ]
     },
     "howTo": {
       "name": "Cum convertiți PDF în WebP",
@@ -151,7 +159,10 @@
         },
         {
           "label": "Suport în browsere",
-          "values": ["Vizualizator PDF integrat", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+          "values": [
+            "Vizualizator PDF integrat",
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          ]
         },
         {
           "label": "Dimensiune compactă",

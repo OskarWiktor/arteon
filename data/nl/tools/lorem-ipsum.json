@@ -270,7 +270,16 @@
       "rows": [
         {
           "label": "Taal",
-          "values": ["Latijn", "Engels", "Engels", "Lokaal", "Engels", "Engels", "Engels", "Engels"]
+          "values": [
+            "Latijn",
+            "Engels",
+            "Engels",
+            "Lokaal",
+            "Engels",
+            "Engels",
+            "Engels",
+            "Engels"
+          ]
         },
         {
           "label": "Thema",
@@ -299,7 +308,16 @@
         },
         {
           "label": "Humor / karakter",
-          "values": ["Neutraal", "Gemiddeld", "Laag", "Laag", "Hoog", "Hoog", "Hoog", "Laag"]
+          "values": [
+            "Neutraal",
+            "Gemiddeld",
+            "Laag",
+            "Laag",
+            "Hoog",
+            "Hoog",
+            "Hoog",
+            "Laag"
+          ]
         }
       ]
     },

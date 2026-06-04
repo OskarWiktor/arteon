@@ -1,10 +1,15 @@
 'use client';
 
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { RiCloseLine, RiCheckLine, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
+import {
+  RiCloseLine,
+  RiCheckLine,
+  RiArrowDownSLine,
+  RiArrowUpSLine,
+} from 'react-icons/ri';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import {
@@ -21,7 +26,13 @@ type Cat = { label: string; slug: string; count: number };
 
 const COLLAPSED_HEIGHT = 48;
 
-export default function FilterBar({ cats, active }: { cats: Cat[]; active?: string }) {
+export default function FilterBar({
+  cats,
+  active,
+}: {
+  cats: Cat[];
+  active?: string;
+}) {
   const pathname = usePathname();
   const isRoot = pathname === '/edukacja';
 
@@ -39,8 +50,8 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
       }
     };
     checkOverflow();
-    window.addEventListener('resize', checkOverflow);
-    return () => window.removeEventListener('resize', checkOverflow);
+    addEventListener('resize', checkOverflow);
+    return () => removeEventListener('resize', checkOverflow);
   }, [cats]);
 
   const openModal = () => setIsModalOpen(true);
@@ -86,7 +97,9 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
             ref={navRef}
             aria-label='Kategorie artykułów'
             className='flex flex-1 flex-wrap gap-2 overflow-hidden transition-[max-height] duration-200 ease-out'
-            style={{ maxHeight: isExpanded ? '500px' : `${COLLAPSED_HEIGHT}px` }}
+            style={{
+              maxHeight: isExpanded ? '500px' : `${COLLAPSED_HEIGHT}px`,
+            }}
           >
             <ButtonLink
               variant={isRoot ? 'accent' : 'normal'}
@@ -152,7 +165,27 @@ type FilterModalProps = {
   isRoot: boolean;
 };
 
-function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps) {
+/**
+ * Render a modal dialog that lists categories and allows the user to pick one.
+ *
+ * The modal displays an "All" item plus the provided categories, highlights the active category,
+ * and closes when a category is selected, the backdrop is clicked, or the close button is pressed.
+ * While open, the list supports ArrowUp/ArrowDown keyboard navigation and manages focus to the
+ * currently focused list item.
+ *
+ * @param isOpen - Whether the modal is currently visible
+ * @param onClose - Callback invoked to close the modal
+ * @param cats - Array of category objects rendered as selectable items
+ * @param active - Slug of the currently active category (used to determine the active item)
+ * @param isRoot - True when the "All" item should be considered active
+ */
+function FilterModal({
+  isOpen,
+  onClose,
+  cats,
+  active,
+  isRoot,
+}: FilterModalProps) {
   const listRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(-1);
 
@@ -182,7 +215,9 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
 
   useEffect(() => {
     if (activeIndex >= 0 && listRef.current) {
-      const el = listRef.current.querySelector(`[data-index="${activeIndex}"]`) as HTMLElement;
+      const el = listRef.current.querySelector(
+        `[data-index="${activeIndex}"]`,
+      ) as HTMLElement;
       el?.focus();
     }
   }, [activeIndex]);
@@ -211,7 +246,12 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
         )}
         onKeyDown={handleKeyDown}
       >
-        <div className={cn('border-b border-neutral-200 px-4 py-3', flexCenterBetweenClasses)}>
+        <div
+          className={cn(
+            'border-b border-neutral-200 px-4 py-3',
+            flexCenterBetweenClasses,
+          )}
+        >
           <h3 className='text-base font-semibold'>Wybierz kategorię</h3>
           <button
             type='button'
@@ -252,7 +292,9 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
               >
                 <span className='flex items-center gap-2'>
                   <span className='font-medium'>{item.label}</span>
-                  {!item.isAll && <span className='text-sm text-light'>({item.count})</span>}
+                  {!item.isAll && (
+                    <span className='text-sm text-light'>({item.count})</span>
+                  )}
                 </span>
                 {isActive && (
                   <RiCheckLine

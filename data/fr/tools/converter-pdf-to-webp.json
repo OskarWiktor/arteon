@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Convertissez les pages PDF en images WebP. Haute qualité, sans limites. Gratuit.",
-      "featureList": ["PDF to WebP conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PDF to WebP", "PDF to WebP", "Free PDF to WebP converter"]
+      "featureList": [
+        "PDF to WebP conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PDF to WebP",
+        "PDF to WebP",
+        "Free PDF to WebP converter"
+      ]
     },
     "howTo": {
       "name": "Comment convertir PDF en WebP",
@@ -151,7 +159,10 @@
         },
         {
           "label": "Prise en charge des navigateurs",
-          "values": ["Visionneuse PDF intégrée", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+          "values": [
+            "Visionneuse PDF intégrée",
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          ]
         },
         {
           "label": "Taille de fichier compacte",

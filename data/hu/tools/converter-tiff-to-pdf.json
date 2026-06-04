@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "TIFF képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.",
-      "featureList": ["TIFF to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert TIFF to PDF", "TIFF to PDF", "Free TIFF to PDF converter"]
+      "featureList": [
+        "TIFF to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert TIFF to PDF",
+        "TIFF to PDF",
+        "Free TIFF to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Hogyan konvertáljuk TIFF-t PDF-vé",

@@ -1,7 +1,10 @@
 'use client';
 
 import { useState, type Dispatch, type SetStateAction } from 'react';
-import { convertImageFileToWebpSmart, getWebpFileName } from '@/lib/tools/image/webp';
+import {
+  convertImageFileToWebpSmart,
+  getWebpFileName,
+} from '@/lib/tools/image/webp';
 import type { WebpQueueItem } from '@/lib/tools/image/webpQueue';
 
 type UseWebpConversionLabels = {
@@ -41,7 +44,9 @@ export function useWebpConversion(options: UseWebpConversionOptions) {
       return;
     }
 
-    const toProcess = options.files.filter(f => f.status === 'pending' || f.status === 'error');
+    const toProcess = options.files.filter(
+      f => f.status === 'pending' || f.status === 'error',
+    );
     if (!toProcess.length) {
       options.setGlobalError(options.labels.allProcessed);
       return;
@@ -64,10 +69,8 @@ export function useWebpConversion(options: UseWebpConversionOptions) {
         );
 
         try {
-          const { blob: webpBlob, usedQuality } = await convertImageFileToWebpSmart(
-            item.file,
-            item.inputSize,
-            {
+          const { blob: webpBlob, usedQuality } =
+            await convertImageFileToWebpSmart(item.file, item.inputSize, {
               initialQuality: options.quality,
               minQuality: 60,
               step: 5,
@@ -75,8 +78,7 @@ export function useWebpConversion(options: UseWebpConversionOptions) {
               imageLoadErrorMessage: options.labels.imageLoadError,
               canvasNotSupportedErrorMessage: options.labels.canvasNotSupported,
               webpGenerationErrorMessage: options.labels.webpGenerationError,
-            },
-          );
+            });
           const url = URL.createObjectURL(webpBlob);
           const outputSize = webpBlob.size;
           const ratio = outputSize / item.inputSize;
@@ -93,7 +95,8 @@ export function useWebpConversion(options: UseWebpConversionOptions) {
                     ratio,
                     usedQuality,
                     downloaded:
-                      options.autoDownload && options.autoDownloadMode === 'files'
+                      options.autoDownload &&
+                      options.autoDownloadMode === 'files'
                         ? true
                         : f.downloaded,
                   }
@@ -112,7 +115,10 @@ export function useWebpConversion(options: UseWebpConversionOptions) {
                 ? {
                     ...f,
                     status: 'error',
-                    error: err instanceof Error ? err.message : options.labels.conversionError,
+                    error:
+                      err instanceof Error
+                        ? err.message
+                        : options.labels.conversionError,
                   }
                 : f,
             ),

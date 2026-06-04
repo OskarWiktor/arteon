@@ -36,7 +36,9 @@ export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',
   description:
     'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/blogi-internetowe' },
+  alternates: {
+    canonical: 'https://www.arteonagency.pl/uslugi/blogi-internetowe',
+  },
   openGraph: {
     title: 'Blogi internetowe - projekt i realizacja | Arteon',
     description:
@@ -70,12 +72,20 @@ function ServiceSchema() {
   );
 }
 
+/**
+ * Renders the marketing offer page for "Blogi internetowe", composing hero, benefits,
+ * breadcrumbs, feature sections, pricing, contact form, FAQ, related services, articles, and structured data.
+ *
+ * @returns The React element for the "Blogi internetowe" offer page.
+ */
 export default function OfferBlogPage() {
   return (
     <>
       <HeroBanner
         title='Blogi internetowe'
-        description={<>Zwiększ swoją widoczność, tworząc własny blog internetowy</>}
+        description={
+          <>Zwiększ swoją widoczność, tworząc własny blog internetowy</>
+        }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
         variant='left'
@@ -87,25 +97,32 @@ export default function OfferBlogPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/blogi-internetowe`, label: 'Blogi internetowe' }}
+        third={{
+          href: `/uslugi/blogi-internetowe`,
+          label: 'Blogi internetowe',
+        }}
         includeJsonLd
       />
 
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Realizacje stron internetowych i blogów' category='strona' />
+        <ProjectsCarousel
+          title='Realizacje stron internetowych i blogów'
+          category='strona'
+        />
 
         <Divider line />
 
         <SectionInfo title='Co zyskujesz tworząc blog internetowy?'>
           <p>
             <strong>
-              Stworzenie bloga internetowego daje Twojej firmie dodatkowe stałe źródło ruchu i
-              zapytań.
+              Stworzenie bloga internetowego daje Twojej firmie dodatkowe stałe
+              źródło ruchu i zapytań.
             </strong>{' '}
-            Artykuły na blogu internetowym potrafią generować dużą, znaczącą ilość wejść na stronę -{' '}
-            <strong>ok. 55% więcej odwiedzin</strong> porównując z firmami bez bloga{' '}
+            Artykuły na blogu internetowym potrafią generować dużą, znaczącą
+            ilość wejść na stronę - <strong>ok. 55% więcej odwiedzin</strong>{' '}
+            porównując z firmami bez bloga{' '}
             <a
               target='_blank'
               rel='noopener noreferrer'
@@ -114,16 +131,20 @@ export default function OfferBlogPage() {
             >
               (źródło)
             </a>
-            . Regularna publikacja artykułów zwiększa widoczność w Google i ściąga nowych klientów.
+            . Regularna publikacja artykułów zwiększa widoczność w Google i
+            ściąga nowych klientów.
           </p>
 
           <br />
 
           <p>
-            <strong>Blog internetowy daje więcej odwiedzin przy niskim koszcie.</strong> Marketing
-            skoncentrowany wokół tworzenia treści, generuje ok.
-            <strong> 3x więcej odwiedzin</strong> i kosztuje ok. <strong>62% mniej</strong> niż
-            działania outbound - płatne reklamy, „zimne” maile i telefony sprzedażowe{' '}
+            <strong>
+              Blog internetowy daje więcej odwiedzin przy niskim koszcie.
+            </strong>{' '}
+            Marketing skoncentrowany wokół tworzenia treści, generuje ok.
+            <strong> 3x więcej odwiedzin</strong> i kosztuje ok.{' '}
+            <strong>62% mniej</strong> niż działania outbound - płatne reklamy,
+            „zimne” maile i telefony sprzedażowe{' '}
             <a
               target='_blank'
               rel='noopener noreferrer'
@@ -138,9 +159,12 @@ export default function OfferBlogPage() {
           <br />
 
           <p>
-            <strong>Klienci wolą pomocne, edukacyjne i eksperckie treści niż reklamy.</strong> Aż{' '}
-            <strong>~70%</strong> odbiorców woli poznawać firmę poprzez artykuły, a nie reklamy - to
-            prosty sposób na budowanie zaufania i dodatkowe kontakty{' '}
+            <strong>
+              Klienci wolą pomocne, edukacyjne i eksperckie treści niż reklamy.
+            </strong>{' '}
+            Aż <strong>~70%</strong> odbiorców woli poznawać firmę poprzez
+            artykuły, a nie reklamy - to prosty sposób na budowanie zaufania i
+            dodatkowe kontakty{' '}
             <a
               target='_blank'
               rel='noopener noreferrer'
@@ -160,7 +184,10 @@ export default function OfferBlogPage() {
 
           <ul className='ml-5 list-disc'>
             <li>Przyciąga właściwy ruch z Google,</li>
-            <li>Wyjaśnia Twoją ofertę i buduje rolę lidera poprzez przykłady oraz porady,</li>
+            <li>
+              Wyjaśnia Twoją ofertę i buduje rolę lidera poprzez przykłady oraz
+              porady,
+            </li>
             <li>Konwertuje czytelników na zapytania oraz sprzedaż,</li>
           </ul>
         </SectionInfo>
@@ -175,77 +202,130 @@ export default function OfferBlogPage() {
               title: 'Indywidualny projekt graficzny bloga ',
               description: (
                 <>
-                  Wygląd, który od pierwszych sekund pokazuje profesjonalizm i zachęca do czytania
+                  Wygląd, który od pierwszych sekund pokazuje profesjonalizm i
+                  zachęca do czytania
                 </>
               ),
-              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiPencilRuler2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Dobór i obróbka grafik do wpisów',
               description: (
                 <>
-                  Pomagamy dobrać spójne grafiki i dopasowujemy je do bloga: kadry, proporcje, waga
+                  Pomagamy dobrać spójne grafiki i dopasowujemy je do bloga:
+                  kadry, proporcje, waga
                 </>
               ),
-              icon: <RiBrushLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBrushLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Wsparcie prawne przy politykach i zgodach',
-              description: <>Przeprowadzamy Cię przez wymagania (polityki, pliki cookie, zgody)</>,
-              icon: <GoLaw className={cn('text-primary', normalIconSizeClasses)} />,
+              description: (
+                <>
+                  Przeprowadzamy Cię przez wymagania (polityki, pliki cookie,
+                  zgody)
+                </>
+              ),
+              icon: (
+                <GoLaw className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
             {
               title: 'Blog dostosowany do różnych urządzeń',
               description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
-              icon: <RiDeviceLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiDeviceLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Dedykowane szkolenie PDF z obsługi bloga',
-              description: <>Proste instrukcje: jak dodać wpis, zdjęcia i linki</>,
-              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
+              description: (
+                <>Proste instrukcje: jak dodać wpis, zdjęcia i linki</>
+              ),
+              icon: (
+                <RiBookOpenLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Zero ukrytych kosztów',
               description: (
                 <>
-                  Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje
+                  Dostajesz wycenę z jasnym zakresem, informujemy Cię na
+                  bieżąco, ile coś kosztuje
                 </>
               ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
             {
               title: 'Transparentna współpraca na bieżąco',
-              description: <>Informujemy Cię regularnie o postępach prac nad Twoim blogiem</>,
-              icon: <RiMessage2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              description: (
+                <>
+                  Informujemy Cię regularnie o postępach prac nad Twoim blogiem
+                </>
+              ),
+              icon: (
+                <RiMessage2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Pełną własność i dostępy',
               description: (
-                <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>
+                <>
+                  Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po
+                  zakończeniu prac
+                </>
               ),
-              icon: <RiKey2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiKey2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Proste raporty wyników',
               description: (
                 <>
-                  Wdrażamy narzędzia analityczne pokazujące skąd jest ruch i które wpisy pracują
-                  najlepiej
+                  Wdrażamy narzędzia analityczne pokazujące skąd jest ruch i
+                  które wpisy pracują najlepiej
                 </>
               ),
-              icon: <RiBarChart2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBarChart2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
               description: (
                 <>
-                  Po publikacji pomagamy w dalszym rozwoju bloga. Ewentualne błędy poprawiamy w
-                  ramach gwarancji
+                  Po publikacji pomagamy w dalszym rozwoju bloga. Ewentualne
+                  błędy poprawiamy w ramach gwarancji
                 </>
               ),
-              icon: <RiLifebuoyLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiLifebuoyLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
           ]}
         />
@@ -322,8 +402,9 @@ export default function OfferBlogPage() {
             text: (
               <p className='text-light'>
                 <strong className='text-dark'>Masz większe plany? </strong>
-                Tworzymy zaawansowane strony, aplikacje i sklepy w Next.js - rozwiązania szyte na
-                miarę, które spełnią najbardziej wymagające cele biznesowe.
+                Tworzymy zaawansowane strony, aplikacje i sklepy w Next.js -
+                rozwiązania szyte na miarę, które spełnią najbardziej wymagające
+                cele biznesowe.
               </p>
             ),
             ctaLabel: 'Porozmawiajmy o Twoim blogu',
@@ -393,14 +474,16 @@ export default function OfferBlogPage() {
             {
               title: 'Strony internetowe',
               size: 'large',
-              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              backgroundImage:
+                '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Pozycjonowanie stron',
               size: 'medium',
-              backgroundImage: '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
+              backgroundImage:
+                '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },

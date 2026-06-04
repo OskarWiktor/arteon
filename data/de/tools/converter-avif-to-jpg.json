@@ -197,7 +197,10 @@
         },
         {
           "label": "Webbrowser-Unterstützung",
-          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Alle Browser"]
+          "values": [
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "Alle Browser"
+          ]
         },
         {
           "label": "Farbtiefe",

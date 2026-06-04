@@ -22,7 +22,13 @@ import { cn } from '@/lib/utils';
 import type { Locale } from '@/types/locale';
 
 const WHY_FREE_ICONS = [RiInfinityFill, RiLockLine, RiToolsFill, RiRocketLine];
-const OUR_TOOLS_ICONS = [RiImageEditLine, RiSearchLine, RiMailLine, RiPaletteLine, RiQrCodeLine];
+const OUR_TOOLS_ICONS = [
+  RiImageEditLine,
+  RiSearchLine,
+  RiMailLine,
+  RiPaletteLine,
+  RiQrCodeLine,
+];
 
 export default function AboutPage({ locale }: { locale: Locale }) {
   const data = getAboutPageData(locale);
@@ -56,7 +62,9 @@ export default function AboutPage({ locale }: { locale: Locale }) {
             title: item.title,
             icon: (() => {
               const Icon = WHY_FREE_ICONS[i];
-              return <Icon className={cn('text-primary', normalIconSizeClasses)} />;
+              return (
+                <Icon className={cn('text-primary', normalIconSizeClasses)} />
+              );
             })(),
             description: <p>{item.description}</p>,
           }))}
@@ -71,7 +79,9 @@ export default function AboutPage({ locale }: { locale: Locale }) {
             title: item.title,
             icon: (() => {
               const Icon = OUR_TOOLS_ICONS[i];
-              return <Icon className={cn('text-primary', normalIconSizeClasses)} />;
+              return (
+                <Icon className={cn('text-primary', normalIconSizeClasses)} />
+              );
             })(),
             description: <p>{item.description}</p>,
           }))}

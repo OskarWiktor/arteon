@@ -5,23 +5,33 @@ import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
-import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useDictionary } from '@/lib/LocaleContext';
-import { FORMAT_EXT, FORMAT_LABELS, FORMAT_MIME } from '@/lib/tools/image/pdfToImage';
-import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
-import type { PdfPageFile, PdfToImageConverterProps } from '@/types/tools/pdf-to-image-converter';
 import { downloadBlob } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
+
+import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
+import {
+  FORMAT_EXT,
+  FORMAT_LABELS,
+  FORMAT_MIME,
+} from '@/lib/tools/image/pdfToImage';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
+import {
+  PdfToImageConverterProps,
+  PdfPageFile,
+} from '@/types/tools/pdf-to-image-converter';
 import Card from '../../Card';
 
 let fileIdCounter = 0;
 
-export default function PdfToImageConverter({ targetFormat }: PdfToImageConverterProps) {
+export default function PdfToImageConverter({
+  targetFormat,
+}: PdfToImageConverterProps) {
   const { imageConverter: t } = useDictionary();
   const [pages, setPages] = useState<PdfPageFile[]>([]);
   const [isConverting, setIsConverting] = useState(false);
@@ -117,14 +127,18 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
       pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
       const mime = FORMAT_MIME[targetFormat];
-      const pending = pagesRef.current.filter(p => p.status === 'idle' || p.status === 'error');
+      const pending = pagesRef.current.filter(
+        p => p.status === 'idle' || p.status === 'error',
+      );
 
       for (const entry of pending) {
         if (!pagesRef.current.some(p => p.id === entry.id)) continue;
 
         setPages(prev =>
           prev.map(p =>
-            p.id === entry.id ? { ...p, status: 'processing' as const, errorMessage: null } : p,
+            p.id === entry.id
+              ? { ...p, status: 'processing' as const, errorMessage: null }
+              : p,
           ),
         );
 
@@ -141,7 +155,8 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
           const ctx = canvas.getContext('2d');
           if (!ctx) throw new Error(t.canvasNotSupported);
 
-          await page.render({ canvasContext: ctx, viewport, canvas } as never).promise;
+          await page.render({ canvasContext: ctx, viewport, canvas } as never)
+            .promise;
 
           const blob = await new Promise<Blob>((resolve, reject) => {
             canvas.toBlob(
@@ -156,7 +171,12 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
           setPages(prev =>
             prev.map(p =>
               p.id === entry.id
-                ? { ...p, status: 'done' as const, outputBlob: blob, outputUrl: url }
+                ? {
+                    ...p,
+                    status: 'done' as const,
+                    outputBlob: blob,
+                    outputUrl: url,
+                  }
                 : p,
             ),
           );
@@ -167,7 +187,8 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
                 ? {
                     ...p,
                     status: 'error' as const,
-                    errorMessage: err instanceof Error ? err.message : t.conversionFailed,
+                    errorMessage:
+                      err instanceof Error ? err.message : t.conversionFailed,
                   }
                 : p,
             ),
@@ -175,7 +196,9 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
         }
       }
     } catch (err) {
-      setGlobalError(err instanceof Error ? err.message : t.failedToLoadLibrary);
+      setGlobalError(
+        err instanceof Error ? err.message : t.failedToLoadLibrary,
+      );
     }
 
     setIsConverting(false);
@@ -197,10 +220,14 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
   };
 
   const total = pages.length;
-  const completed = pages.filter(p => p.status === 'done' || p.status === 'error').length;
+  const completed = pages.filter(
+    p => p.status === 'done' || p.status === 'error',
+  ).length;
   const progress = total ? Math.round((completed / total) * 100) : 0;
   const doneCount = pages.filter(p => p.status === 'done').length;
-  const pendingCount = pages.filter(p => p.status === 'idle' || p.status === 'error').length;
+  const pendingCount = pages.filter(
+    p => p.status === 'idle' || p.status === 'error',
+  ).length;
 
   return (
     <div className='overflow-hidden'>
@@ -215,7 +242,11 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
           <form onSubmit={handleConvert} className='space-y-4'>
             <div>
               <h2 className='h6 mb-2'>{t.addFiles}</h2>
-              <FileDropzone accept='application/pdf,.pdf' multiple onFiles={handleAddFiles}>
+              <FileDropzone
+                accept='application/pdf,.pdf'
+                multiple
+                onFiles={handleAddFiles}
+              >
                 <ToolUploadContent
                   dragLabel={t.dragDrop.replace('{{format}}', 'PDF')}
                   clickLabel={t.clickToSelect}
@@ -231,7 +262,9 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
 
             {showQuality && (
               <div>
-                <h3 className='h6 mt-8 mb-2'>{t.setQuality.replace('{{format}}', targetLabel)}</h3>
+                <h3 className='h6 mt-8 mb-2'>
+                  {t.setQuality.replace('{{format}}', targetLabel)}
+                </h3>
                 <InputRangeWithLabel
                   value={quality}
                   min={60}
@@ -255,7 +288,10 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
                       {t.completed}: {completed} / {total}
                     </span>
                   </div>
-                  <ToolProgressBar value={progress} ariaLabel={`${completed} / ${total}`} />
+                  <ToolProgressBar
+                    value={progress}
+                    ariaLabel={`${completed} / ${total}`}
+                  />
                 </div>
               )}
 
@@ -303,7 +339,9 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
           {pages.length === 0 && (
             <div className='rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-6 text-center'>
               <p className='tool-meta'>
-                {t.emptyState.replace('{{source}}', 'PDF').replace('{{target}}', targetLabel)}
+                {t.emptyState
+                  .replace('{{source}}', 'PDF')
+                  .replace('{{target}}', targetLabel)}
               </p>
             </div>
           )}
@@ -326,9 +364,13 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
                     name={item.pageLabel}
                     meta={
                       <>
-                        {item.outputBlob ? formatBytes(item.outputBlob.size) : ''}
+                        {item.outputBlob
+                          ? formatBytes(item.outputBlob.size)
+                          : ''}
                         {item.errorMessage && (
-                          <span className='ml-1 text-error-text'>{item.errorMessage}</span>
+                          <span className='ml-1 text-error-text'>
+                            {item.errorMessage}
+                          </span>
                         )}
                       </>
                     }

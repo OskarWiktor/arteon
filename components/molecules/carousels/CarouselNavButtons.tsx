@@ -13,7 +13,8 @@ type CarouselNavButtonsProps = {
   nextLabel: string;
 };
 
-const carouselNavButtonsClasses = 'absolute bottom-[-31px] z-10 max-h-13 max-w-13';
+const carouselNavButtonsClasses =
+  'absolute bottom-[-31px] z-10 max-h-13 max-w-13';
 
 export function CarouselNavButtons({
   isScrollable,
@@ -38,7 +39,10 @@ export function CarouselNavButtons({
         ariaLabel={nextLabel}
         className={cn('right-2', carouselNavButtonsClasses)}
       >
-        <RiArrowRightSLine className={largeIconSizeClasses} aria-hidden='true' />
+        <RiArrowRightSLine
+          className={largeIconSizeClasses}
+          aria-hidden='true'
+        />
       </ButtonCircle>
     </>
   );

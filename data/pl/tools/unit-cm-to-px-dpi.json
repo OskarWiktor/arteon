@@ -279,39 +279,71 @@
       "title": "Najpopularniejsze formaty fizyczne i ich wymiary w pikselach",
       "description": "Jeżeli zamiast pojedynczych centymetrów potrzebujesz wymiarów gotowego formatu (na przykład arkusza A4, zdjęcia 10×15 cm albo fotografii do paszportu), poniższa tabela podaje wartości przy dwóch najczęściej używanych rozdzielczościach. Wymiary zapisujemy konsekwentnie w formacie szerokość × wysokość, przyjmując orientację pionową.",
       "labelHeader": "Format",
-      "cols": ["Szer. × wys. (cm)", "Szer. × wys. (150 DPI)", "Szer. × wys. (300 DPI)"],
+      "cols": [
+        "Szer. × wys. (cm)",
+        "Szer. × wys. (150 DPI)",
+        "Szer. × wys. (300 DPI)"
+      ],
       "rows": [
         {
           "groupLabel": "Papier z serii A"
         },
         {
           "label": "A0",
-          "values": ["84,1 cm × 118,9 cm", "4 967 px × 7 022 px", "9 933 px × 14 043 px"]
+          "values": [
+            "84,1 cm × 118,9 cm",
+            "4 967 px × 7 022 px",
+            "9 933 px × 14 043 px"
+          ]
         },
         {
           "label": "A1",
-          "values": ["59,4 cm × 84,1 cm", "3 508 px × 4 967 px", "7 016 px × 9 933 px"]
+          "values": [
+            "59,4 cm × 84,1 cm",
+            "3 508 px × 4 967 px",
+            "7 016 px × 9 933 px"
+          ]
         },
         {
           "label": "A2",
-          "values": ["42,0 cm × 59,4 cm", "2 480 px × 3 508 px", "4 961 px × 7 016 px"]
+          "values": [
+            "42,0 cm × 59,4 cm",
+            "2 480 px × 3 508 px",
+            "4 961 px × 7 016 px"
+          ]
         },
         {
           "label": "A3",
-          "values": ["29,7 cm × 42,0 cm", "1 754 px × 2 480 px", "3 508 px × 4 961 px"]
+          "values": [
+            "29,7 cm × 42,0 cm",
+            "1 754 px × 2 480 px",
+            "3 508 px × 4 961 px"
+          ]
         },
         {
           "label": "A4",
-          "values": ["21,0 cm × 29,7 cm", "1 240 px × 1 754 px", "2 480 px × 3 508 px"],
+          "values": [
+            "21,0 cm × 29,7 cm",
+            "1 240 px × 1 754 px",
+            "2 480 px × 3 508 px"
+          ],
           "emphasis": true
         },
         {
           "label": "A5",
-          "values": ["14,8 cm × 21,0 cm", "874 px × 1 240 px", "1 748 px × 2 480 px"]
+          "values": [
+            "14,8 cm × 21,0 cm",
+            "874 px × 1 240 px",
+            "1 748 px × 2 480 px"
+          ]
         },
         {
           "label": "A6",
-          "values": ["10,5 cm × 14,8 cm", "620 px × 874 px", "1 240 px × 1 748 px"]
+          "values": [
+            "10,5 cm × 14,8 cm",
+            "620 px × 874 px",
+            "1 240 px × 1 748 px"
+          ]
         },
         {
           "label": "A7",
@@ -331,27 +363,51 @@
         },
         {
           "label": "Foto 13×18",
-          "values": ["13 cm × 18 cm", "768 px × 1 063 px", "1 535 px × 2 126 px"]
+          "values": [
+            "13 cm × 18 cm",
+            "768 px × 1 063 px",
+            "1 535 px × 2 126 px"
+          ]
         },
         {
           "label": "Foto 15×21",
-          "values": ["15 cm × 21 cm", "886 px × 1 240 px", "1 772 px × 2 480 px"]
+          "values": [
+            "15 cm × 21 cm",
+            "886 px × 1 240 px",
+            "1 772 px × 2 480 px"
+          ]
         },
         {
           "label": "Foto 20×30",
-          "values": ["20 cm × 30 cm", "1 181 px × 1 772 px", "2 362 px × 3 543 px"]
+          "values": [
+            "20 cm × 30 cm",
+            "1 181 px × 1 772 px",
+            "2 362 px × 3 543 px"
+          ]
         },
         {
           "label": "Foto 30×40",
-          "values": ["30 cm × 40 cm", "1 772 px × 2 362 px", "3 543 px × 4 724 px"]
+          "values": [
+            "30 cm × 40 cm",
+            "1 772 px × 2 362 px",
+            "3 543 px × 4 724 px"
+          ]
         },
         {
           "label": "Foto 50×70",
-          "values": ["50 cm × 70 cm", "2 953 px × 4 134 px", "5 906 px × 8 268 px"]
+          "values": [
+            "50 cm × 70 cm",
+            "2 953 px × 4 134 px",
+            "5 906 px × 8 268 px"
+          ]
         },
         {
           "label": "Foto 70×100",
-          "values": ["70 cm × 100 cm", "4 134 px × 5 906 px", "8 268 px × 11 811 px"]
+          "values": [
+            "70 cm × 100 cm",
+            "4 134 px × 5 906 px",
+            "8 268 px × 11 811 px"
+          ]
         },
         {
           "groupLabel": "Dokumenty i wizytówki"
@@ -371,14 +427,22 @@
         },
         {
           "label": "Wizytówka amerykańska",
-          "values": ["8,89 cm × 5,08 cm", "525 px × 300 px", "1 050 px × 600 px"]
+          "values": [
+            "8,89 cm × 5,08 cm",
+            "525 px × 300 px",
+            "1 050 px × 600 px"
+          ]
         },
         {
           "groupLabel": "Reklama wielkoformatowa"
         },
         {
           "label": "Roll-up baner",
-          "values": ["85 cm × 200 cm", "5 020 px × 11 811 px", "10 039 px × 23 622 px"]
+          "values": [
+            "85 cm × 200 cm",
+            "5 020 px × 11 811 px",
+            "10 039 px × 23 622 px"
+          ]
         }
       ],
       "caption": "Przy bilbordach i innych grafikach wielkoformatowych w praktyce wystarczy 30–72 DPI, ponieważ patrzy się na nie z dużej odległości."

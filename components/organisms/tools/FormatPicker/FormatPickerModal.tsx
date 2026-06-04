@@ -5,6 +5,9 @@ import { useEffect, useRef, useState, cache } from 'react';
 import { RiArrowDownSLine, RiCloseLine } from 'react-icons/ri';
 import { getToolHref } from '@/lib/i18n/toolRegistry';
 import { useLocale } from '@/lib/LocaleContext';
+import type { Locale } from '@/types/locale';
+import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
+
 import {
   FORMAT_CATEGORIES,
   FORMAT_DISPLAY_LABELS,
@@ -13,8 +16,7 @@ import {
   type FormatCategory,
   type UniversalFormat,
 } from '@/lib/tools/conversionRoutes';
-import { getUnitLabel, getCategoryLabel } from '@/lib/tools/unitLabels';
-import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
+
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
@@ -23,7 +25,7 @@ import {
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import type { Locale } from '@/types/locale';
+import { getUnitLabel, getCategoryLabel } from '@/lib/tools/unitLabels';
 
 type PickerSide = 'source' | 'target';
 
@@ -39,7 +41,8 @@ type UnitField = {
   readonly suffix: string;
 };
 
-const unitId = (field: UnitField): string => field.suffix || field.labelKey || field.label || '';
+const unitId = (field: UnitField): string =>
+  field.suffix || field.labelKey || field.label || '';
 const unitDisplayLabel = (field: UnitField, locale: Locale): string => {
   if (field.labelKey) return getUnitLabel(field.labelKey, locale);
   return field.suffix || field.label || '';
@@ -85,7 +88,11 @@ const PICKER_HEADER: Record<PickerSide, Record<string, string>> = {
 };
 
 const getUnitOptions = cache(
-  (side: 'source' | 'target', locale: Locale, currentToolKey?: string): UnitOption[] => {
+  (
+    side: 'source' | 'target',
+    locale: Locale,
+    currentToolKey?: string,
+  ): UnitOption[] => {
     const seen = new Set<string>();
     const items: UnitOption[] = [];
 
@@ -118,7 +125,11 @@ const getUnitOptions = cache(
             getToolHref(c.toolKey, locale) !== '#'
           );
         });
-        items.push({ id, label: unitDisplayLabel(field, locale), href: hasPair ? href : '' });
+        items.push({
+          id,
+          label: unitDisplayLabel(field, locale),
+          href: hasPair ? href : '',
+        });
       } else {
         items.push({ id, label: unitDisplayLabel(field, locale), href });
       }
@@ -139,7 +150,19 @@ interface FormatPickerModalProps {
 
 // ---------------------------------------------------------------------------
 // Component
-// ---------------------------------------------------------------------------
+/**
+ * Render a modal picker for choosing a format or unit for the given side.
+ *
+ * Renders a trigger button and a modal dialog that lets the user pick a target/source format or, when `unitToolKey` is provided, a unit. The modal handles keyboard and outside-click dismissal, body scroll locking while open, and optional confirmation when navigating away with unsaved files.
+ *
+ * @param side - Which side the picker controls: `'source'` or `'target'`
+ * @param currentSource - Currently selected source format key (if any)
+ * @param currentTarget - Currently selected target format key (if any)
+ * @param hasFiles - When true, navigation actions will prompt the user for confirmation if `confirmMessage` is provided
+ * @param confirmMessage - Confirmation message shown to the user when `hasFiles` is true and a navigation action is initiated
+ * @param unitToolKey - When provided, switch the picker to unit-selection mode using the specified tool key
+ * @returns The FormatPickerModal React element
+ */
 
 export default function FormatPickerModal({
   side,
@@ -151,7 +174,8 @@ export default function FormatPickerModal({
 }: FormatPickerModalProps) {
   const locale = useLocale();
   const [open, setOpen] = useState(false);
-  const [activeCategory, setActiveCategory] = useState<FormatCategory>('images');
+  const [activeCategory, setActiveCategory] =
+    useState<FormatCategory>('images');
   const triggerRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
@@ -163,7 +187,10 @@ export default function FormatPickerModal({
     const conv = UNIT_CONVERSIONS.find(c => c.toolKey === unitToolKey);
     if (!conv) return { currentUnitId: null, unitTriggerLabel: null };
     const field = side === 'source' ? conv.sourceField : conv.targetField;
-    return { currentUnitId: unitId(field), unitTriggerLabel: unitDisplayLabel(field, locale) };
+    return {
+      currentUnitId: unitId(field),
+      unitTriggerLabel: unitDisplayLabel(field, locale),
+    };
   })();
 
   // Close on Escape
@@ -197,7 +224,7 @@ export default function FormatPickerModal({
   // Lock body scroll when modal is open, compensate scrollbar width to prevent layout shift
   useEffect(() => {
     if (!open) return;
-    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    const scrollbarWidth = innerWidth - document.documentElement.clientWidth;
     const prevOverflow = document.body.style.overflow;
     const prevPaddingRight = document.body.style.paddingRight;
     document.body.style.overflow = 'hidden';
@@ -215,12 +242,17 @@ export default function FormatPickerModal({
     if (unitToolKey) {
       setActiveCategory('units');
     } else if (currentFormat) {
-      const cat = FORMAT_CATEGORIES.find(c => c.formats.includes(currentFormat));
+      const cat = FORMAT_CATEGORIES.find(c =>
+        c.formats.includes(currentFormat),
+      );
       if (cat) setActiveCategory(cat.key);
     }
   };
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string | null) => {
+  const handleLinkClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string | null,
+  ) => {
     if (!href) {
       e.preventDefault();
       return;
@@ -234,7 +266,9 @@ export default function FormatPickerModal({
     setOpen(false);
   };
 
-  const activeCategoryDef = FORMAT_CATEGORIES.find(c => c.key === activeCategory);
+  const activeCategoryDef = FORMAT_CATEGORIES.find(
+    c => c.key === activeCategory,
+  );
   const formats = activeCategoryDef?.formats ?? [];
 
   return (
@@ -251,9 +285,13 @@ export default function FormatPickerModal({
         aria-haspopup='dialog'
       >
         {unitTriggerLabel ??
-          (currentFormat ? FORMAT_DISPLAY_LABELS[currentFormat as UniversalFormat] : '')}
+          (currentFormat
+            ? FORMAT_DISPLAY_LABELS[currentFormat as UniversalFormat]
+            : '')}
         <RiArrowDownSLine
-          className={cn('transition-transform', smallIconSizeClasses, { 'rotate-180': open })}
+          className={cn('transition-transform', smallIconSizeClasses, {
+            'rotate-180': open,
+          })}
         />
       </button>
 
@@ -267,7 +305,7 @@ export default function FormatPickerModal({
 
           <div
             ref={panelRef}
-            className='fixed inset-x-4 top-1/2 z-50 max-h-[80vh] -translate-y-1/2 overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-2xl md:absolute md:inset-x-auto md:top-full md:left-1/2 md:mt-2 md:max-h-[420px] md:w-[520px] md:-translate-x-1/2 md:-translate-y-0 md:rounded-lg md:shadow-lg'
+            className='fixed inset-x-4 top-1/2 z-50 max-h-[80vh] -translate-y-1/2 overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-2xl md:absolute md:inset-x-auto md:top-full md:left-1/2 md:mt-2 md:max-h-105 md:w-130 md:-translate-x-1/2 md:translate-y-0 md:rounded-lg md:shadow-lg'
             role='dialog'
             aria-modal='true'
           >
@@ -290,7 +328,7 @@ export default function FormatPickerModal({
               </button>
             </div>
 
-            <div className='flex h-full max-h-[calc(80vh-52px)] md:max-h-[420px]'>
+            <div className='flex h-full max-h-[calc(80vh-52px)] md:max-h-105'>
               {/* Category sidebar */}
               <nav className='flex w-28 shrink-0 flex-col gap-1 border-r border-neutral-100 bg-neutral-50/50 p-2 md:w-32'>
                 {FORMAT_CATEGORIES.map(cat => (
@@ -301,8 +339,10 @@ export default function FormatPickerModal({
                     className={cn(
                       'rounded-md px-3 py-2.5 text-left text-xs font-medium transition-colors',
                       {
-                        'bg-primary/10 text-primary': activeCategory === cat.key,
-                        'text-mid hover:bg-neutral-100': activeCategory !== cat.key,
+                        'bg-primary/10 text-primary':
+                          activeCategory === cat.key,
+                        'text-mid hover:bg-neutral-100':
+                          activeCategory !== cat.key,
                       },
                     )}
                   >
@@ -364,7 +404,8 @@ export default function FormatPickerModal({
                 ) : (
                   <div className='grid grid-cols-3 gap-2'>
                     {formats.map(fmt => {
-                      const isCurrent = !!currentFormat && fmt === currentFormat;
+                      const isCurrent =
+                        !!currentFormat && fmt === currentFormat;
                       const newSource = side === 'source' ? fmt : currentSource;
                       const newTarget = side === 'target' ? fmt : currentTarget;
 
@@ -372,9 +413,13 @@ export default function FormatPickerModal({
                       if (newSource && newTarget && newSource !== newTarget) {
                         href = getConversionHref(newSource, newTarget, locale);
                       } else if (newSource && !newTarget) {
-                        href = getAllRoutes(locale).find(r => r.source === newSource)?.href ?? null;
+                        href =
+                          getAllRoutes(locale).find(r => r.source === newSource)
+                            ?.href ?? null;
                       } else if (!newSource && newTarget) {
-                        href = getAllRoutes(locale).find(r => r.target === newTarget)?.href ?? null;
+                        href =
+                          getAllRoutes(locale).find(r => r.target === newTarget)
+                            ?.href ?? null;
                       }
 
                       const isAvailable = !!href;

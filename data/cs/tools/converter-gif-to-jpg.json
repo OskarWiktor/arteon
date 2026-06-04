@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Převodník GIF na JPG",
-      "alternateName": ["Převést GIF na JPG", "Konverze GIF do JPG", "Převodník GIF na JPG zdarma"],
+      "alternateName": [
+        "Převést GIF na JPG",
+        "Konverze GIF do JPG",
+        "Převodník GIF na JPG zdarma"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",

@@ -3,7 +3,10 @@ import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import TableOfContents from '@/components/organisms/TableOfContent';
-import { getPrivacyPageMeta, getPrivacyAlternates } from '@/lib/i18n/pages/privacy';
+import {
+  getPrivacyPageMeta,
+  getPrivacyAlternates,
+} from '@/lib/i18n/pages/privacy';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 const LOCALE = 'nl' as const;
@@ -20,7 +23,11 @@ export const metadata = {
     url: toAbsoluteUrl('/nl/privacybeleid'),
     type: 'website',
     images: [
-      { url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 },
+      {
+        url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),
+        width: 1200,
+        height: 630,
+      },
     ],
   },
 };
@@ -46,11 +53,13 @@ export default function PrivacybeleidPage() {
 
           <SectionInfo title='1. Verwerkingsverantwoordelijke'>
             <p>
-              De verwerkingsverantwoordelijke voor persoonsgegevens is Arteon, gevestigd in gemeente
-              Czernichów, Zagacie, ul. Jaśminowa 36, 32-070, Polen.
+              De verwerkingsverantwoordelijke voor persoonsgegevens is Arteon,
+              gevestigd in gemeente Czernichów, Zagacie, ul. Jaśminowa 36,
+              32-070, Polen.
             </p>
             <p>
-              Belastingnummer (NIP): <strong>9442284430</strong>, REGON: <strong>528888241</strong>
+              Belastingnummer (NIP): <strong>9442284430</strong>, REGON:{' '}
+              <strong>528888241</strong>
             </p>
             <p>
               Contact: <strong>contact@arteonagency.com</strong>, tel.:{' '}
@@ -63,24 +72,30 @@ export default function PrivacybeleidPage() {
           <SectionInfo title='2. Omvang van verzamelde gegevens'>
             <ul className='list-disc space-y-1 pl-6'>
               <li>
-                gegevens ingediend via het contactformulier (voornaam, achternaam, e-mail,
-                berichtinhoud),
+                gegevens ingediend via het contactformulier (voornaam,
+                achternaam, e-mail, berichtinhoud),
               </li>
               <li>
-                automatisch verzamelde technische gegevens (IP-adres, apparaatinformatie, cookies),
+                automatisch verzamelde technische gegevens (IP-adres,
+                apparaatinformatie, cookies),
               </li>
               <li>
-                analytische gegevens van Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics
-                en Vercel Speed Insights,
-              </li>
-              <li>analytische gegevens van Metricool (bezoekstatistieken, verkeersbronnen),</li>
-              <li>
-                gegevens verzameld door Google AdSense voor het weergeven van advertenties
-                (advertentie-ID&apos;s, advertentiecookies, interactiegegevens met advertenties, IAB
-                TCF v2.3-toestemmingsreeksen),
+                analytische gegevens van Google Analytics 4, Ahrefs Web
+                Analytics, Vercel Analytics en Vercel Speed Insights,
               </li>
               <li>
-                server- en beveiligingslogboeken (bijv. tijdstempels, IP-adres, verzoekheaders).
+                analytische gegevens van Metricool (bezoekstatistieken,
+                verkeersbronnen),
+              </li>
+              <li>
+                gegevens verzameld door Google AdSense voor het weergeven van
+                advertenties (advertentie-ID&apos;s, advertentiecookies,
+                interactiegegevens met advertenties, IAB TCF
+                v2.3-toestemmingsreeksen),
+              </li>
+              <li>
+                server- en beveiligingslogboeken (bijv. tijdstempels, IP-adres,
+                verzoekheaders).
               </li>
             </ul>
           </SectionInfo>
@@ -90,30 +105,32 @@ export default function PrivacybeleidPage() {
           <SectionInfo title='3. Doeleinden en rechtsgronden van de verwerking'>
             <ol className='list-decimal space-y-1 pl-6'>
               <li>
-                <strong>Klantencontact</strong> - beantwoording van vragen via het contactformulier
-                (Art. 6 lid 1 sub b en f AVG).
+                <strong>Klantencontact</strong> - beantwoording van vragen via
+                het contactformulier (Art. 6 lid 1 sub b en f AVG).
               </li>
               <li>
-                <strong>Marketing en analyse</strong> - sitestatistieken, contentoptimalisatie (Art.
-                6 lid 1 sub f AVG).
+                <strong>Marketing en analyse</strong> - sitestatistieken,
+                contentoptimalisatie (Art. 6 lid 1 sub f AVG).
               </li>
               <li>
-                <strong>Dienstverlening</strong> - voorbereiding van offertes, contracten, facturen
-                (Art. 6 lid 1 sub b AVG).
+                <strong>Dienstverlening</strong> - voorbereiding van offertes,
+                contracten, facturen (Art. 6 lid 1 sub b AVG).
               </li>
               <li>
-                <strong>Wettelijke verplichtingen</strong> - bijv. bewaring van boekhoudkundige
-                documentatie (Art. 6 lid 1 sub c AVG).
+                <strong>Wettelijke verplichtingen</strong> - bijv. bewaring van
+                boekhoudkundige documentatie (Art. 6 lid 1 sub c AVG).
               </li>
               <li>
-                <strong>Beveiliging en vorderingen</strong> - bijhouden van logboeken, voorkomen van
-                misbruik, vaststelling/uitoefening/verdediging van vorderingen (Art. 6 lid 1 sub f
-                AVG).
+                <strong>Beveiliging en vorderingen</strong> - bijhouden van
+                logboeken, voorkomen van misbruik,
+                vaststelling/uitoefening/verdediging van vorderingen (Art. 6 lid
+                1 sub f AVG).
               </li>
               <li>
-                <strong>Weergave van advertenties</strong> - weergave van op interesses gebaseerde
-                advertenties via Google AdSense (Art. 6 lid 1 sub a AVG - toestemming van de
-                gebruiker via het Google Privacy & Messaging-dialoogvenster).
+                <strong>Weergave van advertenties</strong> - weergave van op
+                interesses gebaseerde advertenties via Google AdSense (Art. 6
+                lid 1 sub a AVG - toestemming van de gebruiker via het Google
+                Privacy & Messaging-dialoogvenster).
               </li>
             </ol>
           </SectionInfo>
@@ -121,50 +138,59 @@ export default function PrivacybeleidPage() {
           <Divider line size='sm' />
 
           <SectionInfo title='4. Cookies en toestemming'>
-            <p>De website maakt gebruik van cookies voor de volgende doeleinden:</p>
+            <p>
+              De website maakt gebruik van cookies voor de volgende doeleinden:
+            </p>
             <ul className='list-disc space-y-1 pl-6'>
               <li>het waarborgen van de goede werking van de website,</li>
               <li>
-                verkeersanalyse (Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics,
-                Metricool),
+                verkeersanalyse (Google Analytics 4, Ahrefs Web Analytics,
+                Vercel Analytics, Metricool),
               </li>
               <li>marketingdoeleinden,</li>
               <li>
-                weergave van op interesses gebaseerde advertenties (Google AdSense / DoubleClick).
+                weergave van op interesses gebaseerde advertenties (Google
+                AdSense / DoubleClick).
               </li>
             </ul>
             <p>
-              Google AdSense kan DoubleClick-cookies gebruiken om advertenties weer te geven op
-              basis van eerdere bezoeken van de gebruiker aan onze website of andere websites.
-              Externe partijen (waaronder Google) gebruiken deze cookies om advertenties weer te
-              geven op basis van browsegeschiedenis.
+              Google AdSense kan DoubleClick-cookies gebruiken om advertenties
+              weer te geven op basis van eerdere bezoeken van de gebruiker aan
+              onze website of andere websites. Externe partijen (waaronder
+              Google) gebruiken deze cookies om advertenties weer te geven op
+              basis van browsegeschiedenis.
             </p>
             <h3 className='h5 mt-4 mb-3'>Toestemmingsbeheer (CMP)</h3>
             <p>
-              Voor het verzamelen en beheren van toestemming voor cookies en gegevensverwerking voor
-              advertentiedoeleinden maakt deze website gebruik van Google Privacy &amp; Messaging
-              &mdash; een gecertificeerd Consent Management Platform (CMP) dat is geïntegreerd met
-              de IAB Transparency and Consent Framework (TCF) versie 2.3.
+              Voor het verzamelen en beheren van toestemming voor cookies en
+              gegevensverwerking voor advertentiedoeleinden maakt deze website
+              gebruik van Google Privacy &amp; Messaging &mdash; een
+              gecertificeerd Consent Management Platform (CMP) dat is
+              geïntegreerd met de IAB Transparency and Consent Framework (TCF)
+              versie 2.3.
             </p>
             <p>
-              Gebruikers uit de Europese Economische Ruimte (EER), het Verenigd Koninkrijk en
-              Zwitserland worden via een Google-dialoogvenster om toestemming gevraagd. Gebruikers
-              uit Amerikaanse staten met privacywetgeving zien een bericht dat voldoet aan de
-              regelgeving van hun staat (inclusief ondersteuning voor Global Privacy
+              Gebruikers uit de Europese Economische Ruimte (EER), het Verenigd
+              Koninkrijk en Zwitserland worden via een Google-dialoogvenster om
+              toestemming gevraagd. Gebruikers uit Amerikaanse staten met
+              privacywetgeving zien een bericht dat voldoet aan de regelgeving
+              van hun staat (inclusief ondersteuning voor Global Privacy
               Control-signalen).
             </p>
             <p>
-              U kunt uw toestemmingsvoorkeuren op elk moment wijzigen door te klikken op de link
-              &quot;Cookie-instellingen&quot; in de voettekst van de website.
+              U kunt uw toestemmingsvoorkeuren op elk moment wijzigen door te
+              klikken op de link &quot;Cookie-instellingen&quot; in de voettekst
+              van de website.
             </p>
             <h3 className='h5 mt-4 mb-3'>Google Consent Mode v2</h3>
             <p>
-              De website maakt gebruik van Google Consent Mode v2 in geavanceerde modus (Advanced).
-              Voor gebruikers in gereguleerde regio&apos;s zijn alle toestemmingssignalen
-              (ad_storage, ad_user_data, ad_personalization, analytics_storage) standaard ingesteld
-              op &quot;denied&quot; en worden pas bijgewerkt nadat toestemming is verleend. Voor
-              gebruikers in andere regio&apos;s zijn de toestemmingen standaard ingesteld op
-              &quot;granted&quot;.
+              De website maakt gebruik van Google Consent Mode v2 in
+              geavanceerde modus (Advanced). Voor gebruikers in gereguleerde
+              regio&apos;s zijn alle toestemmingssignalen (ad_storage,
+              ad_user_data, ad_personalization, analytics_storage) standaard
+              ingesteld op &quot;denied&quot; en worden pas bijgewerkt nadat
+              toestemming is verleend. Voor gebruikers in andere regio&apos;s
+              zijn de toestemmingen standaard ingesteld op &quot;granted&quot;.
             </p>
             <p>
               U kunt gepersonaliseerde advertenties uitschakelen via{' '}
@@ -188,8 +214,8 @@ export default function PrivacybeleidPage() {
               .
             </p>
             <p>
-              U kunt cookies beheren in uw browserinstellingen. Het beperken van cookies kan sommige
-              functies van de website beïnvloeden.
+              U kunt cookies beheren in uw browserinstellingen. Het beperken van
+              cookies kan sommige functies van de website beïnvloeden.
             </p>
           </SectionInfo>
 
@@ -197,21 +223,27 @@ export default function PrivacybeleidPage() {
 
           <SectionInfo title='5. Ontvangers van gegevens'>
             <p>
-              Gegevens kunnen worden gedeeld met partijen die ons ondersteunen bij het verlenen van
-              diensten, zoals:
+              Gegevens kunnen worden gedeeld met partijen die ons ondersteunen
+              bij het verlenen van diensten, zoals:
             </p>
             <ul className='list-disc space-y-1 pl-6'>
               <li>hosting-/applicatieproviders (bijv. Vercel),</li>
               <li>
-                aanbieders van analysetools (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc.,
-                Metricool S.L.),
+                aanbieders van analysetools (Google Ireland Ltd., Ahrefs Pte.
+                Ltd., Vercel Inc., Metricool S.L.),
               </li>
-              <li>aanbieders van advertentiediensten (Google Ireland Ltd. - Google AdSense),</li>
-              <li>boekhoudkantoor, betalingsverwerkers of juridische adviseurs - indien nodig.</li>
+              <li>
+                aanbieders van advertentiediensten (Google Ireland Ltd. - Google
+                AdSense),
+              </li>
+              <li>
+                boekhoudkantoor, betalingsverwerkers of juridische adviseurs -
+                indien nodig.
+              </li>
             </ul>
             <p>
-              Alle ontvangers verwerken gegevens in overeenstemming met de AVG op basis van passende
-              overeenkomsten.
+              Alle ontvangers verwerken gegevens in overeenstemming met de AVG
+              op basis van passende overeenkomsten.
             </p>
           </SectionInfo>
 
@@ -219,9 +251,9 @@ export default function PrivacybeleidPage() {
 
           <SectionInfo title='6. Verwerkersovereenkomst'>
             <p>
-              Op verzoek sluiten wij een verwerkersovereenkomst wanneer wij gegevens verwerken
-              namens een klant (bijv. in het kader van websiteonderhoud, configuratie van tools of
-              systemen).
+              Op verzoek sluiten wij een verwerkersovereenkomst wanneer wij
+              gegevens verwerken namens een klant (bijv. in het kader van
+              websiteonderhoud, configuratie van tools of systemen).
             </p>
           </SectionInfo>
 
@@ -229,10 +261,11 @@ export default function PrivacybeleidPage() {
 
           <SectionInfo title='7. Gegevensoverdracht buiten de EER'>
             <p>
-              Google en Vercel kunnen gegevens verwerken buiten de Europese Economische Ruimte. Er
-              worden passende juridische waarborgen toegepast (waaronder Standaard
-              Contractbepalingen goedgekeurd door de Europese Commissie) en, waar mogelijk,
-              technische maatregelen (pseudonimisering, minimalisering).
+              Google en Vercel kunnen gegevens verwerken buiten de Europese
+              Economische Ruimte. Er worden passende juridische waarborgen
+              toegepast (waaronder Standaard Contractbepalingen goedgekeurd door
+              de Europese Commissie) en, waar mogelijk, technische maatregelen
+              (pseudonimisering, minimalisering).
             </p>
           </SectionInfo>
 
@@ -241,18 +274,21 @@ export default function PrivacybeleidPage() {
           <SectionInfo title='8. Bewaartermijn van gegevens'>
             <ul className='list-disc space-y-1 pl-6'>
               <li>
-                Gegevens uit het contactformulier - tot 12 maanden na het einde van de
-                correspondentie.
+                Gegevens uit het contactformulier - tot 12 maanden na het einde
+                van de correspondentie.
               </li>
               <li>
-                Klantgegevens - voor de wettelijk vereiste periode (boekhoudkundige documentatie).
+                Klantgegevens - voor de wettelijk vereiste periode
+                (boekhoudkundige documentatie).
               </li>
               <li>
-                Analytische gegevens - conform het Google Analytics-beleid (bijv. 26 maanden).
+                Analytische gegevens - conform het Google Analytics-beleid
+                (bijv. 26 maanden).
               </li>
               <li>
-                Logboeken - voor de periode die nodig is voor beveiliging en verantwoording
-                (doorgaans tot 12 maanden, tenzij regelgeving anders bepaalt).
+                Logboeken - voor de periode die nodig is voor beveiliging en
+                verantwoording (doorgaans tot 12 maanden, tenzij regelgeving
+                anders bepaalt).
               </li>
             </ul>
           </SectionInfo>
@@ -269,8 +305,9 @@ export default function PrivacybeleidPage() {
               <li>overdraagbaarheid van gegevens,</li>
               <li>bezwaar tegen verwerking (inclusief marketing),</li>
               <li>
-                het indienen van een klacht bij de bevoegde toezichthoudende autoriteit (in Polen:
-                de Voorzitter van het Bureau voor de Bescherming van Persoonsgegevens, UODO).
+                het indienen van een klacht bij de bevoegde toezichthoudende
+                autoriteit (in Polen: de Voorzitter van het Bureau voor de
+                Bescherming van Persoonsgegevens, UODO).
               </li>
             </ul>
           </SectionInfo>
@@ -279,8 +316,8 @@ export default function PrivacybeleidPage() {
 
           <SectionInfo title='10. Vrijwillige verstrekking van gegevens'>
             <p>
-              Het verstrekken van persoonsgegevens is vrijwillig, maar noodzakelijk voor contact of
-              dienstverlening.
+              Het verstrekken van persoonsgegevens is vrijwillig, maar
+              noodzakelijk voor contact of dienstverlening.
             </p>
           </SectionInfo>
 
@@ -288,8 +325,9 @@ export default function PrivacybeleidPage() {
 
           <SectionInfo title='11. Beveiligingsmaatregelen'>
             <p>
-              Wij passen technische en organisatorische maatregelen toe om persoonsgegevens te
-              beschermen tegen ongeoorloofde toegang, verlies of vernietiging.
+              Wij passen technische en organisatorische maatregelen toe om
+              persoonsgegevens te beschermen tegen ongeoorloofde toegang,
+              verlies of vernietiging.
             </p>
           </SectionInfo>
 
@@ -297,8 +335,9 @@ export default function PrivacybeleidPage() {
 
           <SectionInfo title='12. Wijzigingen in het beleid'>
             <p>
-              Dit privacybeleid kan worden bijgewerkt om wijzigingen in wetgeving of technologie
-              weer te geven. De huidige versie is altijd beschikbaar op deze pagina.
+              Dit privacybeleid kan worden bijgewerkt om wijzigingen in
+              wetgeving of technologie weer te geven. De huidige versie is
+              altijd beschikbaar op deze pagina.
             </p>
           </SectionInfo>
 

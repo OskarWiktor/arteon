@@ -1,7 +1,10 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { createWebpQueueItems, type WebpQueueItem } from '@/lib/tools/image/webpQueue';
+import {
+  createWebpQueueItems,
+  type WebpQueueItem,
+} from '@/lib/tools/image/webpQueue';
 import { revokeObjectUrl, revokeObjectUrls } from '@/utils/objectUrl';
 
 type UseWebpQueueOptions = {
@@ -81,7 +84,7 @@ export function useWebpQueue(options: UseWebpQueueOptions) {
   const previewFile = (id: string) => {
     const item = files.find(f => f.id === id);
     if (!item?.previewUrl) return;
-    window.open(item.previewUrl, '_blank', 'noopener,noreferrer');
+    open(item.previewUrl, '_blank', 'noopener,noreferrer');
   };
 
   return {

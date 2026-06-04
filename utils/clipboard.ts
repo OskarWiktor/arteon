@@ -1,5 +1,8 @@
 export function canWriteTextToClipboard(): boolean {
-  return typeof navigator !== 'undefined' && typeof navigator.clipboard?.writeText === 'function';
+  return (
+    typeof navigator !== 'undefined' &&
+    typeof navigator.clipboard?.writeText === 'function'
+  );
 }
 
 export async function writeTextToClipboard(text: string): Promise<void> {
@@ -51,13 +54,13 @@ export function copyHtmlWithExecCommand(html: string): boolean {
   try {
     const range = document.createRange();
     range.selectNodeContents(temp);
-    const selection = window.getSelection();
+    const selection = getSelection();
     selection?.removeAllRanges();
     selection?.addRange(range);
 
     return document.execCommand('copy');
   } finally {
-    window.getSelection()?.removeAllRanges();
+    getSelection()?.removeAllRanges();
     temp.remove();
   }
 }

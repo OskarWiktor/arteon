@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Dekoodaa Base64-merkkijonot kuviksi. Esikatsele ja lataa selaimessa. Ilmainen.",
-      "featureList": ["Base64 to kuva conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Base64 to kuva", "Base64 to kuva", "Free Base64 to kuva converter"]
+      "featureList": [
+        "Base64 to kuva conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Base64 to kuva",
+        "Base64 to kuva",
+        "Free Base64 to kuva converter"
+      ]
     },
     "howTo": {
       "name": "Kuinka muuntaa Base64 kuva-muotoon",

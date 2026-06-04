@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter WebP na PDF - darmowy, bez limitu",
-      "alternateName": ["Zamiana WebP na PDF", "Konwersja WebP do PDF", "WebP to PDF converter"],
+      "alternateName": [
+        "Zamiana WebP na PDF",
+        "Konwersja WebP do PDF",
+        "WebP to PDF converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Darmowy konwerter WebP na PDF. Zamień pliki WebP na dokument PDF w przeglądarce - pliki nie są wysyłane na serwer.",
@@ -192,7 +196,10 @@
         },
         {
           "label": "Obsługa w przeglądarkach",
-          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Wbudowana przeglądarka PDF"]
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Wbudowana przeglądarka PDF"
+          ]
         },
         {
           "label": "Mały rozmiar pliku",

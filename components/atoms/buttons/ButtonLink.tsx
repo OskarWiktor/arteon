@@ -40,7 +40,12 @@ export default function ButtonLink({
   ariaLabel,
   variant = 'normal',
 }: ButtonLinkProps) {
-  const classes = cn(buttonLinkClasses, focusRingClasses, variantClasses[variant], className);
+  const classes = cn(
+    buttonLinkClasses,
+    focusRingClasses,
+    variantClasses[variant],
+    className,
+  );
 
   if (isExternalHref(href)) {
     return (
@@ -59,7 +64,12 @@ export default function ButtonLink({
   }
 
   return (
-    <Link href={href} prefetch={false} className={classes} aria-label={ariaLabel}>
+    <Link
+      href={href}
+      prefetch={false}
+      className={classes}
+      aria-label={ariaLabel}
+    >
       <span>{children}</span>
 
       {arrow && <ArrowIcon />}

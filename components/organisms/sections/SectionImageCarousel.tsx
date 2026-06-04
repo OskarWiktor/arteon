@@ -26,7 +26,10 @@ interface SectionImageCarouselProps {
   autoPlayInterval?: number;
 }
 
-const SectionImageCarouselVariantClasses: Record<SectionImageCarouselVariant, string> = {
+const SectionImageCarouselVariantClasses: Record<
+  SectionImageCarouselVariant,
+  string
+> = {
   default: 'aspect-video',
   fullWidth: 'aspect-[21/9]',
 };
@@ -56,7 +59,10 @@ export default function SectionImageCarousel({
   }, [autoPlay, autoPlayInterval, goToNext, slides.length]);
 
   return (
-    <section data-section='image-carousel' aria-labelledby={title ? 'carousel-title' : undefined}>
+    <section
+      data-section='image-carousel'
+      aria-labelledby={title ? 'carousel-title' : undefined}
+    >
       <Wrapper>
         {title && <SectionHeader title={title} />}
 
@@ -66,14 +72,22 @@ export default function SectionImageCarousel({
             'max-w-4xl': variant === 'default',
           })}
         >
-          <div className={cn('relative', SectionImageCarouselVariantClasses[variant])}>
+          <div
+            className={cn(
+              'relative',
+              SectionImageCarouselVariantClasses[variant],
+            )}
+          >
             {slides.map((slide, index) => (
               <div
                 key={index}
-                className={cn('absolute inset-0 transition-opacity duration-500', {
-                  'opacity-100': index === currentSlide,
-                  'opacity-0': index !== currentSlide,
-                })}
+                className={cn(
+                  'absolute inset-0 transition-opacity duration-500',
+                  {
+                    'opacity-100': index === currentSlide,
+                    'opacity-0': index !== currentSlide,
+                  },
+                )}
               >
                 <Image
                   src={slide.imageSrc}
@@ -87,10 +101,14 @@ export default function SectionImageCarousel({
                 {overlay && (slide.title || slide.description) && (
                   <div className='absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/70 to-transparent p-6'>
                     {slide.title && (
-                      <h3 className='text-lg font-semibold text-white'>{slide.title}</h3>
+                      <h3 className='text-lg font-semibold text-white'>
+                        {slide.title}
+                      </h3>
                     )}
                     {slide.description && (
-                      <p className='text-sm text-white/80'>{slide.description}</p>
+                      <p className='text-sm text-white/80'>
+                        {slide.description}
+                      </p>
                     )}
                   </div>
                 )}
@@ -109,7 +127,9 @@ export default function SectionImageCarousel({
                 )}
                 aria-label='Poprzedni slajd'
               >
-                <RiArrowLeftLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiArrowLeftLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               </button>
 
               <button
@@ -121,7 +141,9 @@ export default function SectionImageCarousel({
                 )}
                 aria-label='Następny slajd'
               >
-                <RiArrowRightSLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiArrowRightSLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               </button>
 
               <div className='absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2'>

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Muunna PDF-sivut JPG-kuviksi. Korkea laatu, ei rajoituksia. Ilmainen.",
-      "featureList": ["PDF to JPG conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PDF to JPG", "PDF to JPG", "Free PDF to JPG converter"]
+      "featureList": [
+        "PDF to JPG conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PDF to JPG",
+        "PDF to JPG",
+        "Free PDF to JPG converter"
+      ]
     },
     "howTo": {
       "name": "Kuinka muuntaa PDF JPG-muotoon",

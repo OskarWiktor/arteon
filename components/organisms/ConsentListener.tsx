@@ -109,7 +109,7 @@ export default function ConsentListener() {
     if (typeof requestIdleCallback === 'function') {
       fallbackId = requestIdleCallback(fallbackFn, { timeout: 5000 });
     } else {
-      fallbackId = window.setTimeout(fallbackFn, 5000) as unknown as number;
+      fallbackId = setTimeout(fallbackFn, 5000) as unknown as number;
     }
 
     return () => {

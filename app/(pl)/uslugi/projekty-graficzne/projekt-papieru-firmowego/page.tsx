@@ -32,7 +32,8 @@ export const metadata = {
   description:
     'Papier firmowy z nagłówkiem i stopką. Szablony edytowalne (Word/PDF) oraz pliki do druku.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+    canonical:
+      'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego',
   },
   openGraph: {
     title: 'Projekt papieru firmowego | Arteon',
@@ -61,7 +62,10 @@ function ServiceSchema() {
   });
 
   return (
-    <Script id='schema-service-projekt-papieru-firmowego' type='application/ld+json'>
+    <Script
+      id='schema-service-projekt-papieru-firmowego'
+      type='application/ld+json'
+    >
       {JSON.stringify(json)}
     </Script>
   );
@@ -74,8 +78,8 @@ export default function OfferDesignLetterheadPage() {
         title='Projekt papieru firmowego'
         description={
           <>
-            Projektujemy papier firmowy z szablonami Word/PDF i plikami do druku - czytelny i spójny
-            z identyfikacją wizualną.
+            Projektujemy papier firmowy z szablonami Word/PDF i plikami do druku
+            - czytelny i spójny z identyfikacją wizualną.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -89,7 +93,10 @@ export default function OfferDesignLetterheadPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
+        third={{
+          href: `/uslugi/projekty-graficzne`,
+          label: 'Projekty graficzne',
+        }}
         fourth={{
           href: `/uslugi/projekty-graficzne/projekt-papieru-firmowego`,
           label: 'Projekt papieru firmowego',
@@ -100,19 +107,23 @@ export default function OfferDesignLetterheadPage() {
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Realizacje projektów graficznych' category='grafika' />
+        <ProjectsCarousel
+          title='Realizacje projektów graficznych'
+          category='grafika'
+        />
 
         <Divider line />
 
         <SectionInfo title='Co zyskujesz zamawiając projekt papieru firmowego?'>
           <p>
             <strong>
-              Własny projekt papieru firmowego sprawia, że dokumenty wyglądają profesjonalnie od
-              pierwszej sekundy.
+              Własny projekt papieru firmowego sprawia, że dokumenty wyglądają
+              profesjonalnie od pierwszej sekundy.
             </strong>{' '}
-            Oferty, umowy i pisma mają jeden, spójny wzór - logo, układ, dane kontaktowe - dzięki
-            czemu autorytet Twojej marki wzrasta. Estetyczna oprawa zwiększa postrzeganą
-            wiarygodność marki już w pierwszych sekundach
+            Oferty, umowy i pisma mają jeden, spójny wzór - logo, układ, dane
+            kontaktowe - dzięki czemu autorytet Twojej marki wzrasta. Estetyczna
+            oprawa zwiększa postrzeganą wiarygodność marki już w pierwszych
+            sekundach
             <a
               href='https://credibility.stanford.edu/guidelines/index.html'
               target='_blank'
@@ -145,42 +156,71 @@ export default function OfferDesignLetterheadPage() {
             {
               title: 'Spójny wygląd korespondencji',
               description: (
-                <>Projekt wzmacnia profesjonalny obraz firmy w każdym piśmie i wiadomości.</>
+                <>
+                  Projekt wzmacnia profesjonalny obraz firmy w każdym piśmie i
+                  wiadomości.
+                </>
               ),
-              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileTextLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Szablony do codziennej pracy',
               description: (
                 <>
-                  Otrzymujesz gotowe do użycia pliki w wersji do druku oraz praktyczne szablony
-                  elektroniczne.
+                  Otrzymujesz gotowe do użycia pliki w wersji do druku oraz
+                  praktyczne szablony elektroniczne.
                 </>
               ),
-              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBookOpenLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Dopasowanie danych i układu',
               description: (
                 <>
-                  Dbamy o czytelność, hierarchię informacji i zgodność z pozostałymi materiałami
-                  marki.
+                  Dbamy o czytelność, hierarchię informacji i zgodność z
+                  pozostałymi materiałami marki.
                 </>
               ),
-              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiPencilRuler2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Szybka realizacja i poprawki',
               description: (
-                <>Ustalamy termin, dostarczamy projekt i wspólnie dopracowujemy szczegóły.</>
+                <>
+                  Ustalamy termin, dostarczamy projekt i wspólnie dopracowujemy
+                  szczegóły.
+                </>
               ),
-              icon: <RiMessage2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiMessage2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Faktura po realizacji',
-              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              description: (
+                <>
+                  Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
+                  formie.
+                </>
+              ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
           ]}
@@ -194,20 +234,23 @@ export default function OfferDesignLetterheadPage() {
         >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Dla kancelarii, biur rachunkowych i doradców,</strong> którzy wysyłają umowy,
-              pisma i opinie w formie drukowanej lub PDF.
+              <strong>Dla kancelarii, biur rachunkowych i doradców,</strong>{' '}
+              którzy wysyłają umowy, pisma i opinie w formie drukowanej lub PDF.
             </li>
             <li>
-              <strong>Dla firm B2B,</strong> które regularnie przygotowują oferty, specyfikacje,
-              protokoły i chcą, aby każdy dokument wyglądał spójnie.
+              <strong>Dla firm B2B,</strong> które regularnie przygotowują
+              oferty, specyfikacje, protokoły i chcą, aby każdy dokument
+              wyglądał spójnie.
             </li>
             <li>
-              <strong>Dla organizacji, instytucji i NGO,</strong> które komunikują się oficjalnie z
-              partnerami, urzędami i beneficjentami.
+              <strong>Dla organizacji, instytucji i NGO,</strong> które
+              komunikują się oficjalnie z partnerami, urzędami i beneficjentami.
             </li>
             <li>
-              <strong>Dla marek budujących prestiż również w dokumentach,</strong> a nie tylko na
-              stronie www czy w mediach społecznościowych.
+              <strong>
+                Dla marek budujących prestiż również w dokumentach,
+              </strong>{' '}
+              a nie tylko na stronie www czy w mediach społecznościowych.
             </li>
           </ul>
         </SectionInfo>
@@ -220,20 +263,23 @@ export default function OfferDesignLetterheadPage() {
         >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Spójniejsze doświadczenie marki,</strong> bo każdy dokument - od krótkiego
-              pisma po wielostronicową ofertę - wygląda tak, jak reszta komunikacji.
+              <strong>Spójniejsze doświadczenie marki,</strong> bo każdy
+              dokument - od krótkiego pisma po wielostronicową ofertę - wygląda
+              tak, jak reszta komunikacji.
             </li>
             <li>
-              <strong>Mniej chaosu wśród pracowników,</strong> dzięki gotowym szablonom Word/PDF, z
-              których korzysta cały zespół.
+              <strong>Mniej chaosu wśród pracowników,</strong> dzięki gotowym
+              szablonom Word/PDF, z których korzysta cały zespół.
             </li>
             <li>
-              <strong>Wyższy poziom zaufania u klientów i partnerów,</strong> gdy dokumenty od
-              początku wyglądają jasno, profesjonalnie i są dobrze podpisane.
+              <strong>Wyższy poziom zaufania u klientów i partnerów,</strong>{' '}
+              gdy dokumenty od początku wyglądają jasno, profesjonalnie i są
+              dobrze podpisane.
             </li>
             <li>
-              <strong>Łatwiejsza praca z drukarnią,</strong> bo pliki są już przygotowane zgodnie ze
-              standardami druku i nie wymagają dodatkowego składu.
+              <strong>Łatwiejsza praca z drukarnią,</strong> bo pliki są już
+              przygotowane zgodnie ze standardami druku i nie wymagają
+              dodatkowego składu.
             </li>
           </ul>
         </SectionInfo>
@@ -338,12 +384,14 @@ export default function OfferDesignLetterheadPage() {
                 'Tak, w każdym projekcie przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, hierarchię informacji i detale wizualne, aż efekt będzie spójny z wizerunkiem Twojej marki.',
             },
             {
-              question: 'Czy papier firmowy będzie prawidłowo przygotowany do druku?',
+              question:
+                'Czy papier firmowy będzie prawidłowo przygotowany do druku?',
               answer:
                 'Tak, pliki przygotowujemy z zachowaniem spadów, marginesów bezpieczeństwa i odpowiednich ustawień kolorów. Materiały są gotowe do przekazania do drukarni.',
             },
             {
-              question: 'Czy mogę zamówić ekspresowy projekt papieru firmowego?',
+              question:
+                'Czy mogę zamówić ekspresowy projekt papieru firmowego?',
               answer:
                 'Tak, oferujemy opcję realizacji w trybie przyspieszonym za dodatkową opłatą. Przed startem ustalamy możliwy termin oraz dodatkowy koszt.',
             },
@@ -361,26 +409,30 @@ export default function OfferDesignLetterheadPage() {
               backgroundImage:
                 '/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Projekt wizytówki',
               size: 'medium',
-              backgroundImage: '/assets/projects/talia/mockup-wizytówki-talia.webp',
+              backgroundImage:
+                '/assets/projects/talia/mockup-wizytówki-talia.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
               title: 'Strony internetowe',
               size: 'small',
-              backgroundImage: '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
+              backgroundImage:
+                '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Projekt teczki ofertowej',
               size: 'small',
-              backgroundImage: '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
+              backgroundImage:
+                '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
             },

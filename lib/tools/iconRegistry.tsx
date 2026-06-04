@@ -112,13 +112,19 @@ const ICON_MAP: Record<string, ReactNode> = {
   RiBriefcaseLine: <RiBriefcaseLine className={normalIconSizeClasses} />,
   RiBrushLine: <RiBrushLine className={normalIconSizeClasses} />,
   RiBuilding2Line: <RiBuilding2Line className={normalIconSizeClasses} />,
-  RiCalendarEventLine: <RiCalendarEventLine className={normalIconSizeClasses} />,
+  RiCalendarEventLine: (
+    <RiCalendarEventLine className={normalIconSizeClasses} />
+  ),
   RiCameraLine: <RiCameraLine className={normalIconSizeClasses} />,
-  RiCheckboxCircleLine: <RiCheckboxCircleLine className={normalIconSizeClasses} />,
+  RiCheckboxCircleLine: (
+    <RiCheckboxCircleLine className={normalIconSizeClasses} />
+  ),
   RiClipboardLine: <RiClipboardLine className={normalIconSizeClasses} />,
   RiCodeLine: <RiCodeLine className={normalIconSizeClasses} />,
   RiContactsBookLine: <RiContactsBookLine className={normalIconSizeClasses} />,
-  RiContractLeftRightLine: <RiContractLeftRightLine className={normalIconSizeClasses} />,
+  RiContractLeftRightLine: (
+    <RiContractLeftRightLine className={normalIconSizeClasses} />
+  ),
   RiContrast2Line: <RiContrast2Line className={normalIconSizeClasses} />,
   RiContrastLine: <RiContrastLine className={normalIconSizeClasses} />,
   RiCropLine: <RiCropLine className={normalIconSizeClasses} />,
@@ -140,7 +146,9 @@ const ICON_MAP: Record<string, ReactNode> = {
   RiFlashlightLine: <RiFlashlightLine className={normalIconSizeClasses} />,
   RiFolderZipLine: <RiFolderZipLine className={normalIconSizeClasses} />,
   RiGlobalLine: <RiGlobalLine className={normalIconSizeClasses} />,
-  RiGraduationCapLine: <RiGraduationCapLine className={normalIconSizeClasses} />,
+  RiGraduationCapLine: (
+    <RiGraduationCapLine className={normalIconSizeClasses} />
+  ),
   RiGroupLine: <RiGroupLine className={normalIconSizeClasses} />,
   RiHandCoinLine: <RiHandCoinLine className={normalIconSizeClasses} />,
   RiHashtag: <RiHashtag className={normalIconSizeClasses} />,
@@ -153,7 +161,9 @@ const ICON_MAP: Record<string, ReactNode> = {
   RiInfinityLine: <RiInfinityLine className={normalIconSizeClasses} />,
   RiInstagramLine: <RiInstagramLine className={normalIconSizeClasses} />,
   RiLayoutGridLine: <RiLayoutGridLine className={normalIconSizeClasses} />,
-  RiLayoutMasonryLine: <RiLayoutMasonryLine className={normalIconSizeClasses} />,
+  RiLayoutMasonryLine: (
+    <RiLayoutMasonryLine className={normalIconSizeClasses} />
+  ),
   RiLinkedinLine: <RiLinkedinLine className={normalIconSizeClasses} />,
   RiListCheck2: <RiListCheck2 className={normalIconSizeClasses} />,
   RiLockLine: <RiLockLine className={normalIconSizeClasses} />,

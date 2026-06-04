@@ -198,7 +198,10 @@
         },
         {
           "label": "Akadálymentesség",
-          "values": ["Tiszteletben tartja a felhasználói beállításokat", "Fix méret"]
+          "values": [
+            "Tiszteletben tartja a felhasználói beállításokat",
+            "Fix méret"
+          ]
         },
         {
           "label": "Kiszámíthatóság",

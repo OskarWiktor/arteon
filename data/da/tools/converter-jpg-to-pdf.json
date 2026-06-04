@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Konverter JPG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
-      "featureList": ["JPG to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert JPG to PDF", "JPG to PDF", "Free JPG to PDF converter"]
+      "featureList": [
+        "JPG to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert JPG to PDF",
+        "JPG to PDF",
+        "Free JPG to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Sådan konverterer du JPG til PDF",

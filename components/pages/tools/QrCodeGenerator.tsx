@@ -79,7 +79,8 @@ export default function QrCodeGenerator() {
       case 'phone':
         return phoneValue.trim() ? buildPhoneString(phoneValue.trim()) : '';
       case 'vcard':
-        if (!vcardData.firstName.trim() || !vcardData.lastName.trim()) return '';
+        if (!vcardData.firstName.trim() || !vcardData.lastName.trim())
+          return '';
         return buildVCardString({
           ...vcardData,
           firstName: vcardData.firstName.trim(),
@@ -114,7 +115,10 @@ export default function QrCodeGenerator() {
         errorCorrectionLevel: errorLevel,
       };
 
-      const [pngUrl, svgStr] = await Promise.all([generateQrPng(options), generateQrSvg(options)]);
+      const [pngUrl, svgStr] = await Promise.all([
+        generateQrPng(options),
+        generateQrSvg(options),
+      ]);
 
       setQrDataUrl(pngUrl);
       setQrSvg(svgStr);
@@ -293,7 +297,11 @@ export default function QrCodeGenerator() {
         )}
 
         <div className='grid gap-3 sm:grid-cols-2'>
-          <ToolSelect label={t.size} value={size} onChange={v => setSize(Number(v))}>
+          <ToolSelect
+            label={t.size}
+            value={size}
+            onChange={v => setSize(Number(v))}
+          >
             <option value={150}>150 px</option>
             <option value={200}>200 px</option>
             <option value={300}>300 px</option>
@@ -303,7 +311,11 @@ export default function QrCodeGenerator() {
             <option value={800}>800 px</option>
             <option value={1000}>1000 px</option>
           </ToolSelect>
-          <ToolSelect label={t.margin} value={margin} onChange={v => setMargin(Number(v))}>
+          <ToolSelect
+            label={t.margin}
+            value={margin}
+            onChange={v => setMargin(Number(v))}
+          >
             <option value={0}>{t.marginNone}</option>
             <option value={1}>1</option>
             <option value={2}>2</option>
@@ -360,7 +372,10 @@ export default function QrCodeGenerator() {
         <div className='flex flex-col items-center'>
           <p className='tool-label mb-3'>{t.preview}</p>
           <div
-            className={cn('max-w-full rounded-md border border-neutral-200 p-4', flexCenterClasses)}
+            className={cn(
+              'max-w-full rounded-md border border-neutral-200 p-4',
+              flexCenterClasses,
+            )}
             style={{
               backgroundColor: lightColor,
               minWidth: Math.min(size, 300) + 32,
@@ -372,7 +387,10 @@ export default function QrCodeGenerator() {
               <img
                 src={qrDataUrl}
                 alt='QR Code'
-                style={{ width: Math.min(size, 300), height: Math.min(size, 300) }}
+                style={{
+                  width: Math.min(size, 300),
+                  height: Math.min(size, 300),
+                }}
                 className='block'
               />
             ) : (
@@ -392,7 +410,11 @@ export default function QrCodeGenerator() {
           >
             {t.downloadPng}
           </Button>
-          <Button onClick={handleDownloadSvg} disabled={!qrSvg || isGenerating} size='small'>
+          <Button
+            onClick={handleDownloadSvg}
+            disabled={!qrSvg || isGenerating}
+            size='small'
+          >
             {t.downloadSvg}
           </Button>
         </div>

@@ -85,14 +85,16 @@ export default function AboutPage() {
           title='Kim jesteśmy'
         >
           <p>
-            W Arteon łączymy strategię, design i technologię w jeden proces. Wdrażamy doświadczenie
-            z pracy dla globalnych marek w małych i średnich biznesach - tak, żeby Twoja marka była
-            spójna, a działania przynosiły konkretne rezultaty.
+            W Arteon łączymy strategię, design i technologię w jeden proces.
+            Wdrażamy doświadczenie z pracy dla globalnych marek w małych i
+            średnich biznesach - tak, żeby Twoja marka była spójna, a działania
+            przynosiły konkretne rezultaty.
           </p>
           <p className='mt-2'>
-            Nie sprzedajemy „samej strony”. Zaczynamy od celu (zapytania, sprzedaż, rekrutacja,
-            wizerunek), a dopiero potem dobieramy narzędzia: ofertę, identyfikację, treści,
-            wdrożenie i kanały dotarcia.
+            Nie sprzedajemy „samej strony”. Zaczynamy od celu (zapytania,
+            sprzedaż, rekrutacja, wizerunek), a dopiero potem dobieramy
+            narzędzia: ofertę, identyfikację, treści, wdrożenie i kanały
+            dotarcia.
           </p>
           <ul className='mt-4 list-disc space-y-1 pl-6'>
             <li>Strategia i architektura oferty</li>
@@ -120,8 +122,9 @@ export default function AboutPage() {
               title: 'Komplet usług wokół Twojej oferty i komunikacji',
               description: (
                 <p>
-                  Jedna odpowiedzialność, jeden plan: strategia, kreacja, wdrożenie i widoczność.
-                  Bez rozbijania pracy na kilku wykonawców.
+                  Jedna odpowiedzialność, jeden plan: strategia, kreacja,
+                  wdrożenie i widoczność. Bez rozbijania pracy na kilku
+                  wykonawców.
                 </p>
               ),
             },
@@ -129,9 +132,9 @@ export default function AboutPage() {
               title: 'Dobór technologii do celu',
               description: (
                 <p>
-                  Najpierw cel. Potem narzędzia. Dobieramy technologię tak, by szybciej dojść do
-                  wyniku, w ramach Twojego budżetu i skali. Tłumaczymy każdą decyzję prosto, bez
-                  technicznego żargonu.
+                  Najpierw cel. Potem narzędzia. Dobieramy technologię tak, by
+                  szybciej dojść do wyniku, w ramach Twojego budżetu i skali.
+                  Tłumaczymy każdą decyzję prosto, bez technicznego żargonu.
                 </p>
               ),
             },
@@ -139,8 +142,9 @@ export default function AboutPage() {
               title: 'Widoczność i pomiar od startu',
               description: (
                 <p>
-                  SEO i analityka od pierwszego dnia: struktura, treści i techniczne podstawy. Po
-                  wdrożeniu dostajesz propozycję „co dalej”, żeby rosnąć szybciej.
+                  SEO i analityka od pierwszego dnia: struktura, treści i
+                  techniczne podstawy. Po wdrożeniu dostajesz propozycję „co
+                  dalej”, żeby rosnąć szybciej.
                 </p>
               ),
             },
@@ -149,10 +153,10 @@ export default function AboutPage() {
               title: 'Gwarancja i proste rozliczenia',
               description: (
                 <p>
-                  Jasne zasady: faktura po realizacji (małe projekty), przy większych niska zaliczka
-                  i kamienie milowe. Gwarancja opisana w{' '}
-                  <InlineLink href='/regulamin'>regulaminie</InlineLink>. Po wdrożeniu dwa miesiące
-                  wsparcia w cenie.
+                  Jasne zasady: faktura po realizacji (małe projekty), przy
+                  większych niska zaliczka i kamienie milowe. Gwarancja opisana
+                  w <InlineLink href='/regulamin'>regulaminie</InlineLink>. Po
+                  wdrożeniu dwa miesiące wsparcia w cenie.
                 </p>
               ),
             },

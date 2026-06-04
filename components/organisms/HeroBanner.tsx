@@ -40,7 +40,11 @@ export default function HeroBanner({
   const hasBg = !isCompact && Boolean(backgroundImage);
   const isLightText = !isCompact && overlay !== 'white';
 
-  const baseBg = isCompact ? 'bg-transparent' : overlay === 'white' ? 'bg-white' : 'bg-black';
+  const baseBg = isCompact
+    ? 'bg-transparent'
+    : overlay === 'white'
+      ? 'bg-white'
+      : 'bg-black';
   const toneTextClass = isLightText ? 'text-white' : 'text-dark';
   const toneMutedClass = isLightText ? 'text-white' : 'text-dark opacity-80';
 
@@ -50,7 +54,8 @@ export default function HeroBanner({
       : variant === 'right'
         ? 'text-right'
         : 'text-left';
-  const contentAnchor = variant === 'right' ? 'ml-auto' : variant === 'center' ? 'mx-auto' : '';
+  const contentAnchor =
+    variant === 'right' ? 'ml-auto' : variant === 'center' ? 'mx-auto' : '';
   const contentWidthClass = isCompact
     ? 'text-center md:w-[100%]'
     : variant === 'left'
@@ -65,7 +70,12 @@ export default function HeroBanner({
     : `relative ${baseBg} flex h-auto min-h-[400px] items-center overflow-hidden py-10 md:min-h-[460px] md:py-0 lg:min-h-[480px]`;
 
   return (
-    <section id={id} aria-labelledby={titleId} aria-describedby={descId} className={sectionClass}>
+    <section
+      id={id}
+      aria-labelledby={titleId}
+      aria-describedby={descId}
+      className={sectionClass}
+    >
       {hasBg && backgroundImage && (
         <Image
           src={backgroundImage}
@@ -81,7 +91,10 @@ export default function HeroBanner({
       {hasBg && overlay !== 'none' && (
         <div
           aria-hidden='true'
-          className={cn('absolute inset-0', overlay === 'black' ? 'bg-black/70' : 'bg-white/80')}
+          className={cn(
+            'absolute inset-0',
+            overlay === 'black' ? 'bg-black/70' : 'bg-white/80',
+          )}
         />
       )}
       <Wrapper className='relative flex h-auto items-center'>
@@ -107,7 +120,10 @@ export default function HeroBanner({
             </Subtitle>
           )}
           {title && (
-            <h1 id={titleId} className={cn('text-pretty', isCompact ? 'h4 text-center' : '')}>
+            <h1
+              id={titleId}
+              className={cn('text-pretty', isCompact ? 'h4 text-center' : '')}
+            >
               {title}
             </h1>
           )}
@@ -130,7 +146,13 @@ export default function HeroBanner({
               btnOneHref={secondaryCtaHref}
               btnTwo={primaryCtaLabel}
               btnTwoHref={primaryCtaHref}
-              align={variant === 'center' ? 'center' : variant === 'right' ? 'right' : 'left'}
+              align={
+                variant === 'center'
+                  ? 'center'
+                  : variant === 'right'
+                    ? 'right'
+                    : 'left'
+              }
             />
           )}
         </div>

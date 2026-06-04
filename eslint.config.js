@@ -107,7 +107,12 @@ export default [
       'import/order': [
         'warn',
         {
-          groups: ['builtin', 'external', 'internal', ['parent', 'sibling', 'index']],
+          groups: [
+            'builtin',
+            'external',
+            'internal',
+            ['parent', 'sibling', 'index'],
+          ],
           'newlines-between': 'never',
           alphabetize: { order: 'asc', caseInsensitive: true },
         },

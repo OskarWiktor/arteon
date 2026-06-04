@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "REM to pixels converter",
-      "alternateName": ["CSS rem to pixel calculator", "rem unit converter", "Root em calculator"],
+      "alternateName": [
+        "CSS rem to pixel calculator",
+        "rem unit converter",
+        "Root em calculator"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert CSS rem units to pixels and vice versa. Set your root font size and get instant pixel values for responsive design.",

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Convertește imagini PNG în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.",
-      "featureList": ["PNG to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PNG to PDF", "PNG to PDF", "Free PNG to PDF converter"]
+      "featureList": [
+        "PNG to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PNG to PDF",
+        "PNG to PDF",
+        "Free PNG to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Cum convertiți PNG în PDF",

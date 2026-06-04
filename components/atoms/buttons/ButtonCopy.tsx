@@ -51,7 +51,12 @@ export default function ButtonCopy({
     <button
       type='button'
       onClick={handleCopy}
-      className={cn(buttonCopyClasses, focusRingClasses, variantClasses[variant], className)}
+      className={cn(
+        buttonCopyClasses,
+        focusRingClasses,
+        variantClasses[variant],
+        className,
+      )}
       aria-label={currentLabel}
     >
       <Icon className='h-3.5 w-3.5' aria-hidden='true' />

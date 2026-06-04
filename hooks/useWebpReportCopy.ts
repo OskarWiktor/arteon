@@ -41,7 +41,10 @@ export function useWebpReportCopy(options: UseWebpReportCopyOptions) {
     }
 
     const text = buildWebpConversionReportText(
-      converted.map(f => ({ inputSize: f.inputSize, outputSize: f.outputSize })),
+      converted.map(f => ({
+        inputSize: f.inputSize,
+        outputSize: f.outputSize,
+      })),
       {
         conversionReport: options.labels.conversionReport,
         fileCount: options.labels.fileCount,
@@ -55,7 +58,9 @@ export function useWebpReportCopy(options: UseWebpReportCopyOptions) {
     );
 
     const ok = await options.copy(text);
-    setCopyInfo(ok ? options.labels.reportCopied : options.labels.reportCopyError);
+    setCopyInfo(
+      ok ? options.labels.reportCopied : options.labels.reportCopyError,
+    );
   };
 
   return { copyInfo, setCopyInfo, handleCopySummary };

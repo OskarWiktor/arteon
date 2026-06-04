@@ -34,7 +34,11 @@
         "Dávková konverze",
         "Lokální zpracování v prohlížeči"
       ],
-      "alternateName": ["Převést BMP na GIF", "Konverze BMP do GIF", "Převodník BMP na GIF zdarma"]
+      "alternateName": [
+        "Převést BMP na GIF",
+        "Konverze BMP do GIF",
+        "Převodník BMP na GIF zdarma"
+      ]
     },
     "howTo": {
       "name": "Jak převést BMP na GIF",

@@ -197,7 +197,10 @@
         },
         {
           "label": "Webbrowserondersteuning",
-          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Alle browsers"]
+          "values": [
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "Alle browsers"
+          ]
         },
         {
           "label": "Kleurdiepte",

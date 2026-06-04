@@ -2247,7 +2247,10 @@ function buildSentence(
   return capitalize(words.join(' ')) + '.';
 }
 
-function getLengthRange(length: LoremLength): { minSentences: number; maxSentences: number } {
+function getLengthRange(length: LoremLength): {
+  minSentences: number;
+  maxSentences: number;
+} {
   switch (length) {
     case 'short':
       return { minSentences: 2, maxSentences: 4 };
@@ -2258,7 +2261,11 @@ function getLengthRange(length: LoremLength): { minSentences: number; maxSentenc
   }
 }
 
-function buildParagraph(bank: string[], rng: () => number, length: LoremLength): string {
+function buildParagraph(
+  bank: string[],
+  rng: () => number,
+  length: LoremLength,
+): string {
   const { minSentences, maxSentences } = getLengthRange(length);
   const sentenceCount = randBetween(minSentences, maxSentences, rng);
   const sentences: string[] = [];
@@ -2272,13 +2279,19 @@ function buildParagraph(bank: string[], rng: () => number, length: LoremLength):
 // Public API
 // ---------------------------------------------------------------------------
 
-export function generateLoremIpsum(options: LoremOptions, seed?: number): string {
+export function generateLoremIpsum(
+  options: LoremOptions,
+  seed?: number,
+): string {
   const rng = seededRandom(seed ?? Date.now());
   const bank =
-    options.style === 'polish' && options.locale && LOCALE_FILLERS[options.locale]
+    options.style === 'polish' &&
+    options.locale &&
+    LOCALE_FILLERS[options.locale]
       ? LOCALE_FILLERS[options.locale]
       : WORD_BANKS[options.style];
-  const { mode, count, paragraphLength, startWithLorem, outputFormat } = options;
+  const { mode, count, paragraphLength, startWithLorem, outputFormat } =
+    options;
   const isHtml = outputFormat === 'html';
 
   const clampedCount = Math.max(1, Math.min(count, 9999));
@@ -2335,7 +2348,10 @@ export function generateLoremIpsum(options: LoremOptions, seed?: number): string
         items[0] = LOREM_OPENER;
       }
       if (isHtml) {
-        result = '<ul>\n' + items.map(item => `  <li>${item}</li>`).join('\n') + '\n</ul>';
+        result =
+          '<ul>\n' +
+          items.map(item => `  <li>${item}</li>`).join('\n') +
+          '\n</ul>';
       } else {
         result = items.map((item, i) => `${i + 1}. ${item}`).join('\n');
       }
@@ -2350,7 +2366,11 @@ export function generateLoremIpsum(options: LoremOptions, seed?: number): string
         const words: string[] = [];
         for (let w = 0; w < len; w++) words.push(pick(bank, rng));
         const text = capitalize(words.join(' '));
-        headings.push(isHtml ? `<h${level}>${text}</h${level}>` : `${'#'.repeat(level)} ${text}`);
+        headings.push(
+          isHtml
+            ? `<h${level}>${text}</h${level}>`
+            : `${'#'.repeat(level)} ${text}`,
+        );
       }
       result = headings.join('\n');
       break;
@@ -2370,7 +2390,9 @@ export function generateLoremIpsum(options: LoremOptions, seed?: number): string
             .replace(/[^a-z]/g, '') || 'example';
         const tld = pick(tlds, rng);
         const url = `https://${domain}.${tld}`;
-        links.push(isHtml ? `<a href="${url}">${linkText}</a>` : `[${linkText}](${url})`);
+        links.push(
+          isHtml ? `<a href="${url}">${linkText}</a>` : `[${linkText}](${url})`,
+        );
       }
       result = links.join('\n');
       break;
@@ -2379,7 +2401,8 @@ export function generateLoremIpsum(options: LoremOptions, seed?: number): string
     case 'table': {
       const cols = Math.min(randBetween(3, 5, rng), 6);
       const headerWords: string[] = [];
-      for (let c = 0; c < cols; c++) headerWords.push(capitalize(pick(bank, rng)));
+      for (let c = 0; c < cols; c++)
+        headerWords.push(capitalize(pick(bank, rng)));
 
       if (isHtml) {
         const thRow = headerWords.map(h => `    <th>${h}</th>`).join('\n');
@@ -2424,7 +2447,9 @@ export function generateLoremIpsum(options: LoremOptions, seed?: number): string
           sentences.push(buildSentence(bank, rng, 5, 12));
         }
         const text = sentences.join(' ');
-        quotes.push(isHtml ? `<blockquote><p>${text}</p></blockquote>` : `> ${text}`);
+        quotes.push(
+          isHtml ? `<blockquote><p>${text}</p></blockquote>` : `> ${text}`,
+        );
       }
       result = isHtml ? quotes.join('\n') : quotes.join('\n\n');
       break;
@@ -2496,7 +2521,15 @@ export function getLoremStats(text: string): LoremStats {
     readingTime = `${Math.round(readingMinutes)} min`;
   }
 
-  return { words, charsWithSpaces, charsWithoutSpaces, sentences, paragraphs, readingTime, bytes };
+  return {
+    words,
+    charsWithSpaces,
+    charsWithoutSpaces,
+    sentences,
+    paragraphs,
+    readingTime,
+    bytes,
+  };
 }
 
 export function formatBytes(bytes: number): string {

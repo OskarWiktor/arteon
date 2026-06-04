@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Μετατρέψτε σελίδες PDF σε εικόνες PNG. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.",
-      "featureList": ["PDF to PNG conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PDF to PNG", "PDF to PNG", "Free PDF to PNG converter"]
+      "featureList": [
+        "PDF to PNG conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PDF to PNG",
+        "PDF to PNG",
+        "Free PDF to PNG converter"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε PDF σε PNG",

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Converteer JSON naar YAML-formaat. Automatisch parsen en formatteren. Gratis.",
-      "featureList": ["JSON to YAML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert JSON to YAML", "JSON to YAML", "Free JSON to YAML converter"]
+      "featureList": [
+        "JSON to YAML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert JSON to YAML",
+        "JSON to YAML",
+        "Free JSON to YAML converter"
+      ]
     },
     "howTo": {
       "name": "Hoe JSON naar YAML converteren",

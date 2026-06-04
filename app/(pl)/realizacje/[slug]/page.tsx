@@ -1,6 +1,6 @@
+import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { notFound } from 'next/navigation';
 import {
   RiCheckLine,
   RiArrowRightSLine,
@@ -29,15 +29,10 @@ import {
   RiBookOpenLine,
   RiMessageLine,
 } from 'react-icons/ri';
-import Badge from '@/components/atoms/Badge';
+
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
-import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
-import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import Card from '@/components/organisms/Card';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
-import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionFeatureList from '@/components/organisms/sections/SectionFeatureList';
@@ -49,9 +44,15 @@ import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import ShareBlock from '@/components/organisms/ShareBlock';
 import TableOfContents from '@/components/organisms/TableOfContent';
 import projectsData from '@/data/pl/projects.json';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import type { Project, ContentBlock } from '@/types/project';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
+import Card from '@/components/organisms/Card';
+import Badge from '@/components/atoms/Badge';
+import { JsonLd } from '@/components/atoms/JsonLd';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
+import { Project, ContentBlock } from '@/types/project';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 interface ProjectsData {
@@ -126,7 +127,15 @@ const defaultCTA = {
   overlay: 'black',
 } as const;
 
-function Stat({ label, value, note }: { label: string; value: string; note?: string }) {
+function Stat({
+  label,
+  value,
+  note,
+}: {
+  label: string;
+  value: string;
+  note?: string;
+}) {
   return (
     <Card>
       <p className='h5'>{value}</p>
@@ -204,13 +213,26 @@ function getIcon(iconName?: string) {
   return IconComponent && <IconComponent className={normalIconSizeClasses} />;
 }
 
+/**
+ * Render a sequence of structured content blocks into corresponding presentation sections.
+ *
+ * Each block in `blocks` produces a specific UI fragment (rich text, images, callouts, steps,
+ * metrics, galleries, etc.) and may insert small dividers based on block break flags.
+ *
+ * @param blocks - An optional array of structured `ContentBlock` objects describing the sections to render.
+ * @returns A React fragment containing the rendered block elements, or `null` when `blocks` is empty or undefined.
+ */
 function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
   if (!blocks?.length) return null;
 
   return (
     <>
       {blocks.map((b, i) => {
-        const wrapperClass = b.breakBefore ? 'mt-8' : b.breakAfter ? 'mb-8' : '';
+        const wrapperClass = b.breakBefore
+          ? 'mt-8'
+          : b.breakAfter
+            ? 'mb-8'
+            : '';
 
         if (b.type === 'richtext') {
           return (
@@ -251,7 +273,9 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                   </Aspect>
                 )}
                 {b.caption && (
-                  <figcaption className='mt-2 text-sm text-light'>{b.caption}</figcaption>
+                  <figcaption className='mt-2 text-sm text-light'>
+                    {b.caption}
+                  </figcaption>
                 )}
               </figure>
               {b.breakAfter && <Divider size='sm' line />}
@@ -328,8 +352,13 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
           const calloutIcon = getIcon(b.icon);
           return (
             <div key={`callout-${i}`} className={wrapperClass}>
-              <Card interactive={false} className='flex border-l-4 border-accent'>
-                {calloutIcon && <div className='mt-1 shrink-0 text-accent'>{calloutIcon}</div>}
+              <Card
+                interactive={false}
+                className='flex border-l-4 border-accent'
+              >
+                {calloutIcon && (
+                  <div className='mt-1 shrink-0 text-accent'>{calloutIcon}</div>
+                )}
                 <div>
                   {b.title && <h4 className='h5 mb-2'>{b.title}</h4>}
                   {b.html ? (
@@ -419,7 +448,12 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
               <SectionInfo title={b.title || 'Rezultaty'}>
                 <div className='grid gap-3 sm:grid-cols-2 lg:grid-cols-3'>
                   {b.items.map((o, idx) => (
-                    <Stat key={idx} label={o.label} value={o.value} note={o.note} />
+                    <Stat
+                      key={idx}
+                      label={o.label}
+                      value={o.value}
+                      note={o.note}
+                    />
                   ))}
                 </div>
               </SectionInfo>
@@ -437,7 +471,9 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                   {(b.author || b.role) && (
                     <footer className='mt-2'>
                       <h5 className='mt-5'>{b.author}</h5>
-                      {b.role && <p className='mt-1 mb-3 text-light'>{b.role}</p>}
+                      {b.role && (
+                        <p className='mt-1 mb-3 text-light'>{b.role}</p>
+                      )}
                       {b.link && (
                         <ButtonLink variant='accent' arrow href={b.link}>
                           Link do opinii
@@ -489,7 +525,10 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                   </figure>
                 </div>
                 {b.note && (
-                  <div className='mt-3 text-sm' dangerouslySetInnerHTML={{ __html: b.note }} />
+                  <div
+                    className='mt-3 text-sm'
+                    dangerouslySetInnerHTML={{ __html: b.note }}
+                  />
                 )}
               </SectionInfo>
               {b.breakAfter && <Divider size='sm' line />}
@@ -500,7 +539,12 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
         if (b.type === 'imageGallery') {
           return (
             <div key={`gallery-${i}`} className={wrapperClass}>
-              <SectionImageGallery title={b.title} images={b.images} grid={b.grid} noWrapper />
+              <SectionImageGallery
+                title={b.title}
+                images={b.images}
+                grid={b.grid}
+                noWrapper
+              />
               {b.breakAfter && <Divider size='sm' line />}
             </div>
           );
@@ -549,7 +593,9 @@ export async function generateStaticParams() {
 
 type PageProps = { params: Promise<{ slug: string }> };
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const project = getProject(slug);
   if (!project) return {};
@@ -568,7 +614,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: ogUrl,
       title,
       description,
-      images: image ? [{ url: image, width: 1200, height: 630, alt: project.title }] : undefined,
+      images: image
+        ? [{ url: image, width: 1200, height: 630, alt: project.title }]
+        : undefined,
     },
     twitter: {
       card: 'summary_large_image',
@@ -579,6 +627,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+/**
+ * Render the project detail page for the supplied route parameters.
+ *
+ * Loads a project by `params.slug`, renders its full detail view (hero, metadata, content blocks,
+ * sidebars, share/TOC, carousel, and CTA). If no project matches the slug, triggers a 404 via `notFound()`.
+ *
+ * @param params - Route parameters object containing `slug`, the project identifier.
+ * @returns The React elements composing the project detail page.
+ */
 export default async function ProjectPage({ params }: PageProps) {
   const { slug } = await params;
   const project = getProject(slug);
@@ -627,7 +684,9 @@ export default async function ProjectPage({ params }: PageProps) {
           <div className='mb-4 flex flex-wrap items-center gap-1 text-sm'>
             {project.client?.name && <Badge text={project.client.name} />}
             {project.client?.sector && <Badge text={project.client.sector} />}
-            {project.client?.location && <Badge text={project.client.location} />}
+            {project.client?.location && (
+              <Badge text={project.client.location} />
+            )}
             {project.timeline?.start && (
               <Badge
                 text={
@@ -662,7 +721,8 @@ export default async function ProjectPage({ params }: PageProps) {
                 <Block content={project.description} />
                 {project.task && (
                   <p className='mt-6'>
-                    <strong>Nasze zadanie:</strong> <Inline content={project.task} />
+                    <strong>Nasze zadanie:</strong>{' '}
+                    <Inline content={project.task} />
                   </p>
                 )}
               </SectionInfo>
@@ -722,7 +782,8 @@ export default async function ProjectPage({ params }: PageProps) {
           ) : null}
 
           {project.beforeAfter &&
-          (project.beforeAfter.beforeImage || project.beforeAfter.afterImage) ? (
+          (project.beforeAfter.beforeImage ||
+            project.beforeAfter.afterImage) ? (
             <>
               <Divider size='sm' line />
 
@@ -738,7 +799,9 @@ export default async function ProjectPage({ params }: PageProps) {
                         sizes='(min-width:768px) 50vw, 100vw'
                       />
                     </div>
-                    <figcaption className='mt-2 text-sm text-light'>Przed</figcaption>
+                    <figcaption className='mt-2 text-sm text-light'>
+                      Przed
+                    </figcaption>
                   </figure>
 
                   <figure>
@@ -751,14 +814,18 @@ export default async function ProjectPage({ params }: PageProps) {
                         sizes='(min-width:768px) 50vw, 100vw'
                       />
                     </div>
-                    <figcaption className='mt-2 text-sm font-semibold text-light'>Po</figcaption>
+                    <figcaption className='mt-2 text-sm font-semibold text-light'>
+                      Po
+                    </figcaption>
                   </figure>
                 </div>
 
                 {project.beforeAfter.note && (
                   <div
                     className='mt-3 text-sm'
-                    dangerouslySetInnerHTML={{ __html: project.beforeAfter.note }}
+                    dangerouslySetInnerHTML={{
+                      __html: project.beforeAfter.note,
+                    }}
                   />
                 )}
               </SectionInfo>
@@ -794,7 +861,12 @@ export default async function ProjectPage({ params }: PageProps) {
               <SectionInfo title='Rezultaty'>
                 <div className='grid gap-3 sm:grid-cols-2 lg:grid-cols-3'>
                   {project.outcomes.map((o, i) => (
-                    <Stat key={i} label={o.label} value={o.value} note={o.note} />
+                    <Stat
+                      key={i}
+                      label={o.label}
+                      value={o.value}
+                      note={o.note}
+                    />
                   ))}
                 </div>
               </SectionInfo>
@@ -811,10 +883,16 @@ export default async function ProjectPage({ params }: PageProps) {
                     <footer className='mt-2'>
                       <h5 className='mt-5'>{project.testimonial.author}</h5>
                       {project.testimonial.role ? (
-                        <p className='mt-1 mb-3 text-light'>{project.testimonial.role}</p>
+                        <p className='mt-1 mb-3 text-light'>
+                          {project.testimonial.role}
+                        </p>
                       ) : null}
                       {project.testimonial.link ? (
-                        <ButtonLink variant='accent' arrow href={project.testimonial.link}>
+                        <ButtonLink
+                          variant='accent'
+                          arrow
+                          href={project.testimonial.link}
+                        >
                           Link do opinii
                         </ButtonLink>
                       ) : null}
@@ -837,7 +915,10 @@ export default async function ProjectPage({ params }: PageProps) {
             </>
           ) : null}
 
-          <JsonLd schema={jsonLd(project)} id={`schema-realizacja-${project.slug}`} />
+          <JsonLd
+            schema={jsonLd(project)}
+            id={`schema-realizacja-${project.slug}`}
+          />
         </div>
 
         <div>
@@ -848,7 +929,10 @@ export default async function ProjectPage({ params }: PageProps) {
 
       <Wrapper>
         <Divider />
-        <ProjectsCarousel title='Sprawdź najnowsze realizacje' excludeSlug={project.slug} />{' '}
+        <ProjectsCarousel
+          title='Sprawdź najnowsze realizacje'
+          excludeSlug={project.slug}
+        />{' '}
       </Wrapper>
 
       <Divider />

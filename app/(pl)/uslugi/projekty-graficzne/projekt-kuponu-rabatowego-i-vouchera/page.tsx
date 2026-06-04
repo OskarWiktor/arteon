@@ -1,6 +1,11 @@
 import Script from 'next/script';
 import { IoColorPalette } from 'react-icons/io5';
-import { RiFileTextLine, RiTicket2Line, RiGiftLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import {
+  RiFileTextLine,
+  RiTicket2Line,
+  RiGiftLine,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
@@ -57,7 +62,10 @@ function ServiceSchema() {
   });
 
   return (
-    <Script id='schema-service-kupony-rabatowe-vouchery' type='application/ld+json'>
+    <Script
+      id='schema-service-kupony-rabatowe-vouchery'
+      type='application/ld+json'
+    >
       {JSON.stringify(json)}
     </Script>
   );
@@ -70,9 +78,9 @@ export default function OfferDesignCouponsAndVouchersPage() {
         title='Kupony rabatowe i vouchery'
         description={
           <>
-            Zachęć klientów do powrotu i zbuduj lojalność dzięki estetycznym voucherom i kuponom.
-            Projektujemy materiały promocyjne gotowe do druku i wersji online - spójne z Twoją
-            marką.
+            Zachęć klientów do powrotu i zbuduj lojalność dzięki estetycznym
+            voucherom i kuponom. Projektujemy materiały promocyjne gotowe do
+            druku i wersji online - spójne z Twoją marką.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -86,7 +94,10 @@ export default function OfferDesignCouponsAndVouchersPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
+        third={{
+          href: `/uslugi/projekty-graficzne`,
+          label: 'Projekty graficzne',
+        }}
         fourth={{
           href: `/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera`,
           label: 'Kupony rabatowe i vouchery',
@@ -97,31 +108,40 @@ export default function OfferDesignCouponsAndVouchersPage() {
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Przykładowe realizacje projektów graficznych' category='grafika' />
+        <ProjectsCarousel
+          title='Przykładowe realizacje projektów graficznych'
+          category='grafika'
+        />
 
         <Divider line />
 
         <SectionInfo title='Dlaczego warto inwestować w kupony i vouchery?'>
           <p>
             <strong>
-              Kupon oraz voucher to drobny materiał, który potrafi przynieść duży efekt.
+              Kupon oraz voucher to drobny materiał, który potrafi przynieść
+              duży efekt.
             </strong>{' '}
-            Daje pretekst do kontaktu, zakupów i powrotu klienta. Estetyczny projekt buduje
-            pozytywne emocje, wyróżnia markę i wzmacnia profesjonalny wizerunek.
+            Daje pretekst do kontaktu, zakupów i powrotu klienta. Estetyczny
+            projekt buduje pozytywne emocje, wyróżnia markę i wzmacnia
+            profesjonalny wizerunek.
           </p>
 
           <br />
 
           <p>
-            <strong>Vouchery prezentowe zwiększają sprzedaż i zasięg.</strong> Dobrze zaprojektowany
-            voucher staje się eleganckim prezentem - klienci sami wręczają go innym, a Twoja marka
-            pojawia się w nowych kręgach.
+            <strong>Vouchery prezentowe zwiększają sprzedaż i zasięg.</strong>{' '}
+            Dobrze zaprojektowany voucher staje się eleganckim prezentem -
+            klienci sami wręczają go innym, a Twoja marka pojawia się w nowych
+            kręgach.
           </p>
 
           <br />
 
           <p>
-            <strong>Odpowiednio zaprojektowane kupony i vouchery robią trzy rzeczy naraz:</strong>
+            <strong>
+              Odpowiednio zaprojektowane kupony i vouchery robią trzy rzeczy
+              naraz:
+            </strong>
           </p>
           <ul className='ml-5 list-disc'>
             <li>Zwiększają szansę na powrót klienta,</li>
@@ -140,47 +160,71 @@ export default function OfferDesignCouponsAndVouchersPage() {
               title: 'Spójność z identyfikacją marki',
               description: (
                 <>
-                  Dopasujemy projekt do Twojej kolorystyki, logo i tonu komunikacji, dzięki czemu
-                  voucher będzie spójnym elementem Twojej marki.
+                  Dopasujemy projekt do Twojej kolorystyki, logo i tonu
+                  komunikacji, dzięki czemu voucher będzie spójnym elementem
+                  Twojej marki.
                 </>
               ),
-              icon: <IoColorPalette className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <IoColorPalette
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Wersje do druku i online',
               description: (
                 <>
-                  Otrzymasz gotowe pliki do druku oraz wersje cyfrowe - do mediów społecznościowych,
-                  mailingu lub sklepu internetowego.
+                  Otrzymasz gotowe pliki do druku oraz wersje cyfrowe - do
+                  mediów społecznościowych, mailingu lub sklepu internetowego.
                 </>
               ),
-              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileTextLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Czytelne pola i zasady wykorzystania',
               description: (
                 <>
-                  Zaprojektujemy odpowiednie pola na datę ważności, kod, podpis czy regulamin tak,
-                  aby voucher był piękny i praktyczny.
+                  Zaprojektujemy odpowiednie pola na datę ważności, kod, podpis
+                  czy regulamin tak, aby voucher był piękny i praktyczny.
                 </>
               ),
-              icon: <RiTicket2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiTicket2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Warianty na różne okazje',
               description: (
                 <>
-                  Możemy przygotować serię voucherów: urodzinowe, świąteczne, okazjonalne - z
-                  zachowaniem jednego spójnego stylu.
+                  Możemy przygotować serię voucherów: urodzinowe, świąteczne,
+                  okazjonalne - z zachowaniem jednego spójnego stylu.
                 </>
               ),
-              icon: <RiGiftLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiGiftLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Faktura po realizacji',
-              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              description: (
+                <>
+                  Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
+                  formie.
+                </>
+              ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
           ]}
@@ -188,19 +232,23 @@ export default function OfferDesignCouponsAndVouchersPage() {
 
         <Divider line />
 
-        <SectionInfo title='Dla kogo są kupony rabatowe i vouchery?' subtitle='Dla kogo'>
+        <SectionInfo
+          title='Dla kogo są kupony rabatowe i vouchery?'
+          subtitle='Dla kogo'
+        >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Dla salonów beauty, fryzjerów, SPA,</strong> które chcą zachęcić klientów do
-              kolejnej wizyty lub podarowania kuponu bliskim.
+              <strong>Dla salonów beauty, fryzjerów, SPA,</strong> które chcą
+              zachęcić klientów do kolejnej wizyty lub podarowania kuponu
+              bliskim.
             </li>
             <li>
-              <strong>Dla sklepów stacjonarnych i online,</strong> które chcą wręczać bony i kupony
-              rabatowe na zakupy.
+              <strong>Dla sklepów stacjonarnych i online,</strong> które chcą
+              wręczać bony i kupony rabatowe na zakupy.
             </li>
             <li>
-              <strong>Dla restauracji i kawiarni,</strong> które chcą oferować vouchery na
-              degustacje, kolacje lub konkretne zestawy.
+              <strong>Dla restauracji i kawiarni,</strong> które chcą oferować
+              vouchery na degustacje, kolacje lub konkretne zestawy.
             </li>
           </ul>
         </SectionInfo>
@@ -213,20 +261,20 @@ export default function OfferDesignCouponsAndVouchersPage() {
         >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Więcej powrotów klientów,</strong> bo mają konkretny powód, by ponownie
-              skorzystać z Twojej usługi.
+              <strong>Więcej powrotów klientów,</strong> bo mają konkretny
+              powód, by ponownie skorzystać z Twojej usługi.
             </li>
             <li>
-              <strong>Więcej poleceń,</strong> dzięki voucherom prezentowym, które Twoi klienci
-              wręczają rodzinie i znajomym.
+              <strong>Więcej poleceń,</strong> dzięki voucherom prezentowym,
+              które Twoi klienci wręczają rodzinie i znajomym.
             </li>
             <li>
-              <strong>Spójniejszy wizerunek,</strong> gdy każdy materiał - od wizytówki po voucher -
-              wygląda na część jednego systemu.
+              <strong>Spójniejszy wizerunek,</strong> gdy każdy materiał - od
+              wizytówki po voucher - wygląda na część jednego systemu.
             </li>
             <li>
-              <strong>Łatwiejsza komunikacja promocji,</strong> bo wszystkie warunki i zasady są
-              czytelnie pokazane na projekcie.
+              <strong>Łatwiejsza komunikacja promocji,</strong> bo wszystkie
+              warunki i zasady są czytelnie pokazane na projekcie.
             </li>
           </ul>
         </SectionInfo>
@@ -313,12 +361,14 @@ export default function OfferDesignCouponsAndVouchersPage() {
                 'Najczęściej projektujemy kupony i vouchery w formacie DL lub A6, ale możemy dopasować wymiary do Twoich indywidualnych potrzeb i wymagań.',
             },
             {
-              question: 'Jak długo trwa realizacja projektu kuponów lub voucherów?',
+              question:
+                'Jak długo trwa realizacja projektu kuponów lub voucherów?',
               answer:
                 'Standardowo realizujemy projekt w ciągu 3-6 dni roboczych, w zależności od liczby wariantów oraz formatu. Terminy ustalamy indywidualnie przed startem prac.',
             },
             {
-              question: 'Czy mogę zlecić przygotowanie całej akcji promocyjnej?',
+              question:
+                'Czy mogę zlecić przygotowanie całej akcji promocyjnej?',
               answer:
                 'Tak, możemy zaprojektować kupony oraz materiały wspierające (posty, grafiki na stronę, media społecznościowe czy ulotki).',
             },
@@ -335,7 +385,8 @@ export default function OfferDesignCouponsAndVouchersPage() {
               size: 'large',
               backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Karty lojalnościowe',
@@ -343,19 +394,22 @@ export default function OfferDesignCouponsAndVouchersPage() {
               backgroundImage:
                 '/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
             },
             {
               title: 'Projekt wizytówki',
               size: 'small',
-              backgroundImage: '/assets/projects/talia/mockup-wizytówki-talia.webp',
+              backgroundImage:
+                '/assets/projects/talia/mockup-wizytówki-talia.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
               title: 'Strony internetowe',
               size: 'small',
-              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              backgroundImage:
+                '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },

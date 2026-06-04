@@ -40,7 +40,11 @@
         "Compatible with SOAP, SAP, Salesforce, and RSS/Atom feed formats",
         "Handles null values as empty XML elements"
       ],
-      "alternateName": ["Convert JSON to XML", "JSON to XML", "Free JSON to XML converter"]
+      "alternateName": [
+        "Convert JSON to XML",
+        "JSON to XML",
+        "Free JSON to XML converter"
+      ]
     },
     "howTo": {
       "name": "How to convert JSON to XML",

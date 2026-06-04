@@ -9,14 +9,26 @@ import type { SignatureConfig, StyleConfig } from '@/types/tools/email';
 type Props = {
   config: SignatureConfig;
   styleConfig: StyleConfig;
-  onTextChange: <K extends keyof SignatureConfig>(key: K, value: SignatureConfig[K]) => void;
-  onStyleChange: <K extends keyof StyleConfig>(key: K, value: StyleConfig[K]) => void;
+  onTextChange: <K extends keyof SignatureConfig>(
+    key: K,
+    value: SignatureConfig[K],
+  ) => void;
+  onStyleChange: <K extends keyof StyleConfig>(
+    key: K,
+    value: StyleConfig[K],
+  ) => void;
   t: {
     legal: Record<string, string>;
   };
 };
 
-export default function LegalPanel({ config, styleConfig, onTextChange, onStyleChange, t }: Props) {
+export default function LegalPanel({
+  config,
+  styleConfig,
+  onTextChange,
+  onStyleChange,
+  t,
+}: Props) {
   return (
     <div className='space-y-3'>
       <span className='tool-value'>{t.legal.title}</span>
@@ -88,7 +100,9 @@ export default function LegalPanel({ config, styleConfig, onTextChange, onStyleC
                 onClick={() => onStyleChange('dividerColor', '')}
                 className={cn(
                   'tool-button',
-                  !styleConfig.dividerColor ? 'bg-primary text-white' : 'tool-button-inactive',
+                  !styleConfig.dividerColor
+                    ? 'bg-primary text-white'
+                    : 'tool-button-inactive',
                 )}
               >
                 {t.legal.dividerColorDefault}
@@ -104,9 +118,13 @@ export default function LegalPanel({ config, styleConfig, onTextChange, onStyleC
                     'cursor-pointer rounded border-2',
                     flexCenterClasses,
                     largeIconSizeClasses,
-                    styleConfig.dividerColor ? 'border-mid' : 'border-neutral-300',
+                    styleConfig.dividerColor
+                      ? 'border-mid'
+                      : 'border-neutral-300',
                   )}
-                  style={{ backgroundColor: styleConfig.dividerColor || '#e5e7eb' }}
+                  style={{
+                    backgroundColor: styleConfig.dividerColor || '#e5e7eb',
+                  }}
                 />
               </div>
             </div>

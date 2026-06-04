@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Bytes converter – KB, MB, GB, TB conversion",
-      "alternateName": ["Data size converter", "Storage unit calculator", "Bytes to MB converter"],
+      "alternateName": [
+        "Data size converter",
+        "Storage unit calculator",
+        "Bytes to MB converter"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Convert between bytes, kilobytes, megabytes, gigabytes, and terabytes.",

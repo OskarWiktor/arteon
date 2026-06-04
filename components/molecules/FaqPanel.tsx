@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
-import { focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import { focusRingClasses } from '@/lib/uiClasses';
 
 interface FaqPanelProps {
   question: string;
@@ -19,10 +19,30 @@ const summaryClasses =
 const iconClasses =
   'bg-primary-light flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-neutral-900 transition group-open:bg-neutral-900 group-open:text-white';
 
-export default function FaqPanel({ question, answer, icon, name }: FaqPanelProps) {
+/**
+ * Render a collapsible FAQ panel with a summary row and a revealable answer section.
+ *
+ * Renders a <details> element containing a clickable <summary> that shows the `question`,
+ * an optional `icon`, and a plus/cross affordance. When opened, the panel reveals the
+ * provided `answer` content; plain string answers are wrapped in a paragraph element.
+ *
+ * @param question - The text displayed in the summary row as the FAQ question
+ * @param answer - The content displayed when the panel is expanded; may be a string or any ReactNode
+ * @param icon - Optional icon rendered to the left of the question in the summary row
+ * @param name - Value assigned to the underlying `<details>` element's `name` attribute
+ * @returns The FAQ panel as a React element
+ */
+export default function FaqPanel({
+  question,
+  answer,
+  icon,
+  name,
+}: FaqPanelProps) {
   return (
     <details name={name} className={detailsClasses}>
-      <summary className={cn(summaryClasses, focusRingClasses, icon && 'gap-4')}>
+      <summary
+        className={cn(summaryClasses, focusRingClasses, icon && 'gap-4')}
+      >
         {icon && <div className={iconClasses}>{icon}</div>}
 
         <h3 className='h6 flex-1'>{question}</h3>

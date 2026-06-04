@@ -13,7 +13,8 @@ import {
 import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata: Metadata = {
-  title: 'Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym - Arteon',
+  title:
+    'Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym - Arteon',
   description:
     'Lubimy pomagać i dzielić się wiedzą ze wszystkimi. Znajdziesz tutaj poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych',
   alternates: { canonical: 'https://www.arteonagency.pl/edukacja' },

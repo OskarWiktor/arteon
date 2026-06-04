@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Converta páginas PDF em imagens JPG. Alta qualidade, sem limites. Gratuito.",
-      "featureList": ["PDF to JPG conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PDF to JPG", "PDF to JPG", "Free PDF to JPG converter"]
+      "featureList": [
+        "PDF to JPG conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PDF to JPG",
+        "PDF to JPG",
+        "Free PDF to JPG converter"
+      ]
     },
     "howTo": {
       "name": "Como converter PDF para JPG",

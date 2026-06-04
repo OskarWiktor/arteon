@@ -38,7 +38,11 @@ export const metadata = {
     url: toAbsoluteUrl('/cs/nastroje'),
     type: 'website',
     images: [
-      { url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 },
+      {
+        url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),
+        width: 1200,
+        height: 630,
+      },
     ],
   },
 };
@@ -166,7 +170,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 11,
         name: 'Převodník JPG na WebP',
-        description: 'Převeďte fotky JPG na lehké WebP. Snižte váhu obrázků až o 35%.',
+        description:
+          'Převeďte fotky JPG na lehké WebP. Snižte váhu obrázků až o 35%.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-jpg-na-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -175,7 +180,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 12,
         name: 'Převodník PNG na JPG',
-        description: 'Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace.',
+        description:
+          'Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-png-na-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -193,7 +199,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 14,
         name: 'Převodník PNG na WebP',
-        description: 'Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.',
+        description:
+          'Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-png-na-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -202,7 +209,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 15,
         name: 'Převodník JPG na PNG',
-        description: 'Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.',
+        description:
+          'Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-jpg-na-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -211,7 +219,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 16,
         name: 'Převodník WebP na PNG',
-        description: 'Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.',
+        description:
+          'Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-webp-na-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -230,7 +239,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 18,
         name: 'Převodník SVG na JPG',
-        description: 'Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.',
+        description:
+          'Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-svg-na-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -239,7 +249,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 19,
         name: 'Převodník BMP na JPG',
-        description: 'Převeďte soubory BMP na lehké JPG. Drastické zmenšení velikosti.',
+        description:
+          'Převeďte soubory BMP na lehké JPG. Drastické zmenšení velikosti.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-bmp-na-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -258,7 +269,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 21,
         name: 'Převodník GIF na PNG',
-        description: 'Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.',
+        description:
+          'Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-gif-na-png'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -267,7 +279,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 22,
         name: 'Převodník GIF na JPG',
-        description: 'Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.',
+        description:
+          'Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-gif-na-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -285,7 +298,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 24,
         name: 'Prevodnik GIF na WebP',
-        description: 'Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor.',
+        description:
+          'Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-gif-na-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -303,7 +317,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 26,
         name: 'Prevodnik AVIF na JPG',
-        description: 'Prevedte soubory AVIF na univerzalni JPG. Kompatibilni vsude.',
+        description:
+          'Prevedte soubory AVIF na univerzalni JPG. Kompatibilni vsude.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-avif-na-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -330,7 +345,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 29,
         name: 'Prevodnik HEIC na JPG',
-        description: 'Prevedte fotky HEIC z iPhonu na univerzalni JPG. Bez registrace.',
+        description:
+          'Prevedte fotky HEIC z iPhonu na univerzalni JPG. Bez registrace.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-heic-na-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -357,7 +373,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 32,
         name: 'Prevodnik TIFF na JPG',
-        description: 'Prevedte soubory TIFF na kompaktni JPG. Idealni pro skeny.',
+        description:
+          'Prevedte soubory TIFF na kompaktni JPG. Idealni pro skeny.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-tiff-na-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -394,7 +411,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 36,
         name: 'Převodník PNG na AVIF',
-        description: 'Prevedte grafiku PNG na AVIF s podporou pruhlednosti. Vyrazne mensi soubory.',
+        description:
+          'Prevedte grafiku PNG na AVIF s podporou pruhlednosti. Vyrazne mensi soubory.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-png-na-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -403,7 +421,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 37,
         name: 'Převodník WebP na AVIF',
-        description: 'Prevedte soubory WebP na AVIF. Jeste lepsi komprese v modernim formatu.',
+        description:
+          'Prevedte soubory WebP na AVIF. Jeste lepsi komprese v modernim formatu.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-webp-na-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -412,7 +431,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 38,
         name: 'Převodník SVG na AVIF',
-        description: 'Prevedte vektorovou grafiku SVG na kompaktni rastrovy format AVIF.',
+        description:
+          'Prevedte vektorovou grafiku SVG na kompaktni rastrovy format AVIF.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-svg-na-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -421,7 +441,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 39,
         name: 'Převodník BMP na AVIF',
-        description: 'Prevedte nekomprimovane soubory BMP na ultrakompaktni AVIF.',
+        description:
+          'Prevedte nekomprimovane soubory BMP na ultrakompaktni AVIF.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-bmp-na-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -430,7 +451,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 40,
         name: 'Převodník GIF na AVIF',
-        description: 'Prevedte prvni snimek GIF na staticky obraz AVIF s vynikajici kompresi.',
+        description:
+          'Prevedte prvni snimek GIF na staticky obraz AVIF s vynikajici kompresi.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-gif-na-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -448,7 +470,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 42,
         name: 'Převodník TIFF na AVIF',
-        description: 'Prevedte soubory TIFF na moderni AVIF. Masivni snizeni velikosti souboru.',
+        description:
+          'Prevedte soubory TIFF na moderni AVIF. Masivni snizeni velikosti souboru.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-tiff-na-avif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -457,7 +480,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 43,
         name: 'Převodník JPG na GIF',
-        description: 'Prevedte fotky JPG na format GIF. Idealni pro jednoduchou grafiku a ikony.',
+        description:
+          'Prevedte fotky JPG na format GIF. Idealni pro jednoduchou grafiku a ikony.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-jpg-na-gif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -466,7 +490,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 44,
         name: 'Převodník PNG na GIF',
-        description: 'Prevedte grafiku PNG na GIF. Idealni pro jednoduche ikony a grafiku.',
+        description:
+          'Prevedte grafiku PNG na GIF. Idealni pro jednoduche ikony a grafiku.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-png-na-gif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -475,7 +500,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 45,
         name: 'Převodník WebP na GIF',
-        description: 'Prevedte obrazky WebP na format GIF pro maximalni kompatibilitu.',
+        description:
+          'Prevedte obrazky WebP na format GIF pro maximalni kompatibilitu.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-webp-na-gif'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -502,7 +528,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 48,
         name: 'Převodník JPG na TIFF',
-        description: 'Prevedte fotky JPG na bezztratovy TIFF. Pro tisk a archivaci.',
+        description:
+          'Prevedte fotky JPG na bezztratovy TIFF. Pro tisk a archivaci.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-jpg-na-tiff'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -520,7 +547,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 50,
         name: 'Převodník WebP na TIFF',
-        description: 'Prevedte obrazky WebP na profesionalni TIFF pro tisk a archivaci.',
+        description:
+          'Prevedte obrazky WebP na profesionalni TIFF pro tisk a archivaci.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-webp-na-tiff'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -529,7 +557,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 51,
         name: 'Převodník SVG na TIFF',
-        description: 'Prevedte vektorovou grafiku SVG na kvalitni rastrovy TIFF.',
+        description:
+          'Prevedte vektorovou grafiku SVG na kvalitni rastrovy TIFF.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-svg-na-tiff'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -538,7 +567,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 52,
         name: 'Převodník BMP na TIFF',
-        description: 'Prevedte soubory BMP na profesionalni format TIFF pro tisk.',
+        description:
+          'Prevedte soubory BMP na profesionalni format TIFF pro tisk.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-bmp-na-tiff'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -547,7 +577,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 53,
         name: 'Převodník HEIC na TIFF',
-        description: 'Prevedte fotky HEIC z iPhonu na profesionalni format TIFF.',
+        description:
+          'Prevedte fotky HEIC z iPhonu na profesionalni format TIFF.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-heic-na-tiff'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -559,7 +590,8 @@ const schema = {
 const faqItems = [
   {
     question: 'Kolik nastroje stoji?',
-    answer: 'Nic. Vsechny nastroje jsou zdarma, bez predplatneho a bez skrytych poplatku.',
+    answer:
+      'Nic. Vsechny nastroje jsou zdarma, bez predplatneho a bez skrytych poplatku.',
   },
   {
     question: 'Odesilaji se soubory na server?',
@@ -614,8 +646,9 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Připravte ideální ořez pro sociální sítě nebo web. Vyberte hotový formát nebo
-                    zadejte vlastní rozměry a stáhněte obrázek jako PNG, JPG nebo WebP.
+                    Připravte ideální ořez pro sociální sítě nebo web. Vyberte
+                    hotový formát nebo zadejte vlastní rozměry a stáhněte
+                    obrázek jako PNG, JPG nebo WebP.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/cs/nastroje/editor-obrazku'>
@@ -629,15 +662,20 @@ export default function ToolsIndexPage() {
               icon: <RiAppsLine className={largeIconSizeClasses} />,
               title: 'Generator favicon a ikon',
               topImageAlt: 'Generator favicon Arteon',
-              topImageSrc: '/assets/tools/favicon-generator/generator-favicon-zdarma-cs.webp',
+              topImageSrc:
+                '/assets/tools/favicon-generator/generator-favicon-zdarma-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Vytvorte <strong>favicon.ico</strong> a PNG ikony 180x180, 192x192 a 512x512 z
-                    jednoho obrazku - v souladu s pozadavky prohlizecu a Lighthouse.
+                    Vytvorte <strong>favicon.ico</strong> a PNG ikony 180x180,
+                    192x192 a 512x512 z jednoho obrazku - v souladu s pozadavky
+                    prohlizecu a Lighthouse.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/generator-favicon-zdarma'>
+                    <ButtonLink
+                      arrow
+                      href='/cs/nastroje/generator-favicon-zdarma'
+                    >
                       Otevrit nastroj
                     </ButtonLink>
                   </div>
@@ -662,11 +700,15 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Zkontrolujte pocet znaku, pocet slov a sirku v pixelech - s nahledem Google.
-                    Vyhnete se oriznutym titulkum a popisum ve vysledcich vyhledavani.
+                    Zkontrolujte pocet znaku, pocet slov a sirku v pixelech - s
+                    nahledem Google. Vyhnete se oriznutym titulkum a popisum ve
+                    vysledcich vyhledavani.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/kontrola-meta-titulku-a-popisu'>
+                    <ButtonLink
+                      arrow
+                      href='/cs/nastroje/kontrola-meta-titulku-a-popisu'
+                    >
                       Otevrit nastroj
                     </ButtonLink>
                   </div>
@@ -682,12 +724,16 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Zkontrolujte delku textu a vyhodnotte, zda se hodi pro hlavni stranku, stranku
-                    sluzeb, clanek na blog nebo popis produktu. Nastroj pocita slova, znaky,
-                    odstavce a dobu cteni.
+                    Zkontrolujte delku textu a vyhodnotte, zda se hodi pro
+                    hlavni stranku, stranku sluzeb, clanek na blog nebo popis
+                    produktu. Nastroj pocita slova, znaky, odstavce a dobu
+                    cteni.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/pocitadlo-slov-a-znaku'>
+                    <ButtonLink
+                      arrow
+                      href='/cs/nastroje/pocitadlo-slov-a-znaku'
+                    >
                       Otevrit nastroj
                     </ButtonLink>
                   </div>
@@ -699,12 +745,14 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Generátor Lorem Ipsum',
               topImageAlt: 'Generátor Lorem Ipsum Arteon',
-              topImageSrc: '/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-cs.webp',
+              topImageSrc:
+                '/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Vygenerujte zástupný text v 8 stylech a 9 režimech. Lorem Ipsum, Hipster,
-                    Business, Bacon a další. Zkopírujte jako text nebo HTML.
+                    Vygenerujte zástupný text v 8 stylech a 9 režimech. Lorem
+                    Ipsum, Hipster, Business, Bacon a další. Zkopírujte jako
+                    text nebo HTML.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/cs/nastroje/generator-lorem-ipsum'>
@@ -733,12 +781,15 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Vytvorte profesionalni podpis e-mailu za par minut. Zadejte sve udaje, vyberte
-                    barvy a zkopirujte hotovy HTML kod do Gmailu, Outlooku nebo jineho e-mailoveho
-                    klienta.
+                    Vytvorte profesionalni podpis e-mailu za par minut. Zadejte
+                    sve udaje, vyberte barvy a zkopirujte hotovy HTML kod do
+                    Gmailu, Outlooku nebo jineho e-mailoveho klienta.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/generator-podpisu-emailu-zdarma'>
+                    <ButtonLink
+                      arrow
+                      href='/cs/nastroje/generator-podpisu-emailu-zdarma'
+                    >
                       Otevrit nastroj
                     </ButtonLink>
                   </div>
@@ -759,15 +810,19 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className={largeIconSizeClasses} />,
               title: 'Generator QR kodu zdarma',
               topImageAlt: 'Generator QR kodu zdarma Arteon',
-              topImageSrc: '/assets/tools/qr-code-generator/generator-qr-kodu-zdarma-cs.webp',
+              topImageSrc:
+                '/assets/tools/qr-code-generator/generator-qr-kodu-zdarma-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Vytvorte QR kod pro web, vCard, menu restaurace nebo letak. Export do PNG a SVG
-                    - bez prihlaseni, bez limitu.
+                    Vytvorte QR kod pro web, vCard, menu restaurace nebo letak.
+                    Export do PNG a SVG - bez prihlaseni, bez limitu.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/generator-qr-kodu-zdarma'>
+                    <ButtonLink
+                      arrow
+                      href='/cs/nastroje/generator-qr-kodu-zdarma'
+                    >
                       Otevrit nastroj
                     </ButtonLink>
                   </div>
@@ -793,12 +848,16 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Zkontrolujte, zda jsou barvy textu a pozadi citelne. Zadejte kody barev,
-                    zobrazte pomer kontrastu podle <strong>WCAG</strong> a pouzijte funkci{' '}
+                    Zkontrolujte, zda jsou barvy textu a pozadi citelne. Zadejte
+                    kody barev, zobrazte pomer kontrastu podle{' '}
+                    <strong>WCAG</strong> a pouzijte funkci{' '}
                     <strong>Match</strong> pro automatickou opravu.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/kontrola-kontrastu-barev'>
+                    <ButtonLink
+                      arrow
+                      href='/cs/nastroje/kontrola-kontrastu-barev'
+                    >
                       Otevrit nastroj
                     </ButtonLink>
                   </div>
@@ -809,15 +868,20 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className={largeIconSizeClasses} />,
               title: 'Extraktor barev z obrazku',
               topImageAlt: 'Extraktor barev z obrazku Arteon',
-              topImageSrc: '/assets/tools/image-color-extractor/extraktor-barev-z-obrazku-cs.webp',
+              topImageSrc:
+                '/assets/tools/image-color-extractor/extraktor-barev-z-obrazku-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Nahrajte fotografii nebo logo - nastroj extrahuje dominantni barvy. Zkopirujte
-                    HEX kody jednim kliknutim a pouzijte je kdekoliv.
+                    Nahrajte fotografii nebo logo - nastroj extrahuje dominantni
+                    barvy. Zkopirujte HEX kody jednim kliknutim a pouzijte je
+                    kdekoliv.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/extraktor-barev-z-obrazku'>
+                    <ButtonLink
+                      arrow
+                      href='/cs/nastroje/extraktor-barev-z-obrazku'
+                    >
                       Otevrit nastroj
                     </ButtonLink>
                   </div>
@@ -833,12 +897,15 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Vyberte jednu zakladni barvu a vytvorte 9 barevnych palet: monochromatickou,
-                    komplementarni, triadickou, pastelovou, tmavou a dalsi. Zkopirujte HEX kody
-                    jednim kliknutim.
+                    Vyberte jednu zakladni barvu a vytvorte 9 barevnych palet:
+                    monochromatickou, komplementarni, triadickou, pastelovou,
+                    tmavou a dalsi. Zkopirujte HEX kody jednim kliknutim.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/generator-barevnych-palet'>
+                    <ButtonLink
+                      arrow
+                      href='/cs/nastroje/generator-barevnych-palet'
+                    >
                       Otevrit nastroj
                     </ButtonLink>
                   </div>
@@ -863,7 +930,10 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Převeďte fotky JPG na lehké WebP. Snižte váhu obrázků až o 35%.</p>
+                  <p>
+                    Převeďte fotky JPG na lehké WebP. Snižte váhu obrázků až o
+                    35%.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/cs/nastroje/prevodnik-jpg-na-webp'>
                       Otevřít nástroj
@@ -880,7 +950,10 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace.</p>
+                  <p>
+                    Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez
+                    registrace.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/cs/nastroje/prevodnik-png-na-jpg'>
                       Otevřít nástroj
@@ -914,7 +987,10 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.</p>
+                  <p>
+                    Převeďte grafiku PNG na WebP. Menší soubory se zachováním
+                    průhlednosti.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/cs/nastroje/prevodnik-png-na-webp'>
                       Otevřít nástroj
@@ -931,7 +1007,10 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.</p>
+                  <p>
+                    Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování
+                    v prohlížeči.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/cs/nastroje/prevodnik-jpg-na-png'>
                       Otevřít nástroj
@@ -948,7 +1027,10 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.</p>
+                  <p>
+                    Převeďte obrázky WebP na bezeztrátové PNG. Lokální
+                    zpracování.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/cs/nastroje/prevodnik-webp-na-png'>
                       Otevřít nástroj
@@ -975,7 +1057,8 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Převeďte CSV do formátu JSON. Automatické rozpoznání oddělovačů a formátování.
+                    Převeďte CSV do formátu JSON. Automatické rozpoznání
+                    oddělovačů a formátování.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/cs/nastroje/prevodnik-csv-na-json'>
@@ -993,7 +1076,9 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Převeďte JSON data do formátu CSV. Zpracování v prohlížeči.</p>
+                  <p>
+                    Převeďte JSON data do formátu CSV. Zpracování v prohlížeči.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/cs/nastroje/prevodnik-json-na-csv'>
                       Otevřít nástroj
@@ -1010,7 +1095,10 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Převeďte XML data do JSON. Konverze v prohlížeči s validací struktury.</p>
+                  <p>
+                    Převeďte XML data do JSON. Konverze v prohlížeči s validací
+                    struktury.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/cs/nastroje/prevodnik-xml-na-json'>
                       Otevřít nástroj
@@ -1027,7 +1115,10 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Převeďte JSON data do platného XML. Konverze v prohlížeči s formátováním.</p>
+                  <p>
+                    Převeďte JSON data do platného XML. Konverze v prohlížeči s
+                    formátováním.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/cs/nastroje/prevodnik-json-na-xml'>
                       Otevřít nástroj
@@ -1044,9 +1135,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Převeďte YAML konfiguraci do JSON. Validace a formátování v prohlížeči.</p>
+                  <p>
+                    Převeďte YAML konfiguraci do JSON. Validace a formátování v
+                    prohlížeči.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/prevodnik-yaml-na-json'>
+                    <ButtonLink
+                      arrow
+                      href='/cs/nastroje/prevodnik-yaml-na-json'
+                    >
                       Otevřít nástroj
                     </ButtonLink>
                   </div>
@@ -1061,9 +1158,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Převeďte JSON data do čitelného YAML. Zpracování v prohlížeči.</p>
+                  <p>
+                    Převeďte JSON data do čitelného YAML. Zpracování v
+                    prohlížeči.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/cs/nastroje/prevodnik-json-na-yaml'>
+                    <ButtonLink
+                      arrow
+                      href='/cs/nastroje/prevodnik-json-na-yaml'
+                    >
                       Otevřít nástroj
                     </ButtonLink>
                   </div>
@@ -1079,12 +1182,13 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title='Co jsou nastroje Arteon?'>
           <p className='mb-4'>
-            34 bezplatnych nastroju pro pripravu materialu pro web, socialni site a tisk - konvertor
-            WebP, generator favicon, pocitadlo textu, extraktor barev, generator palet a QR kod.
+            34 bezplatnych nastroju pro pripravu materialu pro web, socialni
+            site a tisk - konvertor WebP, generator favicon, pocitadlo textu,
+            extraktor barev, generator palet a QR kod.
           </p>
           <p>
-            Vsechny nastroje bezi v prohlizeci - soubory se nikdy neodesilaji na server. Pouzivejte
-            bez registrace a bez omezeni.
+            Vsechny nastroje bezi v prohlizeci - soubory se nikdy neodesilaji na
+            server. Pouzivejte bez registrace a bez omezeni.
           </p>
         </SectionInfo>
 
@@ -1109,7 +1213,8 @@ export default function ToolsIndexPage() {
             {
               icon: <RiLockLine className={normalIconSizeClasses} />,
               title: 'Bez registrace',
-              description: 'Nepotrebujete ucet. Otevrete nastroj, pouzijte, hotovo.',
+              description:
+                'Nepotrebujete ucet. Otevrete nastroj, pouzijte, hotovo.',
             },
             {
               icon: <RiGlobalLine className={normalIconSizeClasses} />,
@@ -1122,12 +1227,19 @@ export default function ToolsIndexPage() {
 
         <Divider line />
 
-        <SectionFaqPanels items={faqItems} title='Casto kladene otazky o nasich nastrojich' />
+        <SectionFaqPanels
+          items={faqItems}
+          title='Casto kladene otazky o nasich nastrojich'
+        />
 
         <Divider size='sm' />
       </Wrapper>
 
-      <Script id='ld-json-tools-cs' type='application/ld+json' strategy='afterInteractive'>
+      <Script
+        id='ld-json-tools-cs'
+        type='application/ld+json'
+        strategy='afterInteractive'
+      >
         {JSON.stringify(schema)}
       </Script>
     </>

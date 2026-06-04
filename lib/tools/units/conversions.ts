@@ -90,8 +90,10 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
       defaultValue: CSS_CONVERSION_FACTORS.DEFAULT_BASE_FONT_SIZE,
       ...RANGE_CONSTRAINTS.BASE_FONT_SIZE,
     },
-    convert: (v, extra) => v * (extra ?? CSS_CONVERSION_FACTORS.DEFAULT_BASE_FONT_SIZE),
-    reverseConvert: (v, extra) => v / (extra ?? CSS_CONVERSION_FACTORS.DEFAULT_BASE_FONT_SIZE),
+    convert: (v, extra) =>
+      v * (extra ?? CSS_CONVERSION_FACTORS.DEFAULT_BASE_FONT_SIZE),
+    reverseConvert: (v, extra) =>
+      v / (extra ?? CSS_CONVERSION_FACTORS.DEFAULT_BASE_FONT_SIZE),
     formula: CONVERSION_FORMULAS.REM_TO_PX,
     reverseFormula: CONVERSION_FORMULAS.PX_TO_REM,
     precision: CONVERSION_PRECISION.DEFAULT,
@@ -111,8 +113,10 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
       defaultValue: CSS_CONVERSION_FACTORS.DEFAULT_PARENT_FONT_SIZE,
       ...RANGE_CONSTRAINTS.PARENT_FONT_SIZE,
     },
-    convert: (v, extra) => v * (extra ?? CSS_CONVERSION_FACTORS.DEFAULT_PARENT_FONT_SIZE),
-    reverseConvert: (v, extra) => v / (extra ?? CSS_CONVERSION_FACTORS.DEFAULT_PARENT_FONT_SIZE),
+    convert: (v, extra) =>
+      v * (extra ?? CSS_CONVERSION_FACTORS.DEFAULT_PARENT_FONT_SIZE),
+    reverseConvert: (v, extra) =>
+      v / (extra ?? CSS_CONVERSION_FACTORS.DEFAULT_PARENT_FONT_SIZE),
     formula: CONVERSION_FORMULAS.EM_TO_PX,
     reverseFormula: CONVERSION_FORMULAS.PX_TO_EM,
     precision: CONVERSION_PRECISION.DEFAULT,
@@ -270,7 +274,8 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     reverseConvert: () => 0,
     formula:
       'R = parseInt(hex[1..2], 16), G = parseInt(hex[3..4], 16), B = parseInt(hex[5..6], 16)',
-    reverseFormula: 'HEX = # + R.toString(16) + G.toString(16) + B.toString(16)',
+    reverseFormula:
+      'HEX = # + R.toString(16) + G.toString(16) + B.toString(16)',
     precision: 0,
     swappable: true,
     popularValues: [
@@ -290,16 +295,37 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     targetField: { labelKey: 'cmyk', suffix: '' },
     convert: () => 0,
     reverseConvert: () => 0,
-    formula: 'K=1-max(R,G,B)/255, C=(1-R/255-K)/(1-K), M=(1-G/255-K)/(1-K), Y=(1-B/255-K)/(1-K)',
+    formula:
+      'K=1-max(R,G,B)/255, C=(1-R/255-K)/(1-K), M=(1-G/255-K)/(1-K), Y=(1-B/255-K)/(1-K)',
     reverseFormula: 'R=255(1-C)(1-K), G=255(1-M)(1-K), B=255(1-Y)(1-K)',
     precision: 0,
     swappable: true,
     popularValues: [
-      { source: '0, 0, 0', target: 'cmyk(0%, 0%, 0%, 100%)', labelKey: 'black' },
-      { source: '255, 255, 255', target: 'cmyk(0%, 0%, 0%, 0%)', labelKey: 'white' },
-      { source: '255, 0, 0', target: 'cmyk(0%, 100%, 100%, 0%)', labelKey: 'red' },
-      { source: '0, 128, 0', target: 'cmyk(100%, 0%, 100%, 50%)', labelKey: 'green' },
-      { source: '0, 0, 255', target: 'cmyk(100%, 100%, 0%, 0%)', labelKey: 'blue' },
+      {
+        source: '0, 0, 0',
+        target: 'cmyk(0%, 0%, 0%, 100%)',
+        labelKey: 'black',
+      },
+      {
+        source: '255, 255, 255',
+        target: 'cmyk(0%, 0%, 0%, 0%)',
+        labelKey: 'white',
+      },
+      {
+        source: '255, 0, 0',
+        target: 'cmyk(0%, 100%, 100%, 0%)',
+        labelKey: 'red',
+      },
+      {
+        source: '0, 128, 0',
+        target: 'cmyk(100%, 0%, 100%, 50%)',
+        labelKey: 'green',
+      },
+      {
+        source: '0, 0, 255',
+        target: 'cmyk(100%, 100%, 0%, 0%)',
+        labelKey: 'blue',
+      },
     ],
   },
 
@@ -331,7 +357,11 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
   {
     toolKey: 'unixTimestamp',
     category: 'time',
-    sourceField: { labelKey: 'unixTimestamp', suffix: 's', placeholder: '1700000000' },
+    sourceField: {
+      labelKey: 'unixTimestamp',
+      suffix: 's',
+      placeholder: '1700000000',
+    },
     targetField: { labelKey: 'dateTime', suffix: '' },
     convert: () => 0,
     reverseConvert: () => 0,
@@ -341,10 +371,22 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     swappable: false,
     popularValues: [
       { source: 0, target: '1970-01-01 01:00:00', labelKey: 'unixEpoch' },
-      { source: 1000000000, target: '2001-09-09 03:46:40', labelKey: 'oneBillion' },
+      {
+        source: 1000000000,
+        target: '2001-09-09 03:46:40',
+        labelKey: 'oneBillion',
+      },
       { source: 1700000000, target: '2023-11-14 23:13:20' },
-      { source: 1735689600, target: '2025-01-01 01:00:00', labelKey: 'newYear2025' },
-      { source: 2000000000, target: '2033-05-18 05:33:20', labelKey: 'twoBillion' },
+      {
+        source: 1735689600,
+        target: '2025-01-01 01:00:00',
+        labelKey: 'newYear2025',
+      },
+      {
+        source: 2000000000,
+        target: '2033-05-18 05:33:20',
+        labelKey: 'twoBillion',
+      },
     ],
   },
 
@@ -414,6 +456,8 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
   },
 ];
 
-export function getUnitConversion(toolKey: string): UnitConversionConfig | undefined {
+export function getUnitConversion(
+  toolKey: string,
+): UnitConversionConfig | undefined {
   return UNIT_CONVERSIONS.find(c => c.toolKey === toolKey);
 }

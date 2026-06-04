@@ -32,7 +32,8 @@ export const metadata = {
   description:
     'Projekt nadruków i haftów na odzież firmową: koszulki, bluzy, czapki. Pliki techniczne dla drukarni i hafciarni.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
+    canonical:
+      'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
   },
   openGraph: {
     title: 'Projekt odzieży firmowej | Arteon',
@@ -61,7 +62,10 @@ function ServiceSchema() {
   });
 
   return (
-    <Script id='schema-service-projekt-odziezy-firmowej' type='application/ld+json'>
+    <Script
+      id='schema-service-projekt-odziezy-firmowej'
+      type='application/ld+json'
+    >
       {JSON.stringify(json)}
     </Script>
   );
@@ -74,9 +78,9 @@ export default function OfferDesignCorporateApparelPage() {
         title='Projekt odzieży firmowej'
         description={
           <>
-            Zespół wygląda spójnie, a marka zyskuje widoczność. Przygotowujemy projekty nadruków i
-            haftów - pod sitodruk, DTF i haft komputerowy - zgodnie z identyfikacją wizualną i
-            realiami produkcji.
+            Zespół wygląda spójnie, a marka zyskuje widoczność. Przygotowujemy
+            projekty nadruków i haftów - pod sitodruk, DTF i haft komputerowy -
+            zgodnie z identyfikacją wizualną i realiami produkcji.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -90,7 +94,10 @@ export default function OfferDesignCorporateApparelPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
+        third={{
+          href: `/uslugi/projekty-graficzne`,
+          label: 'Projekty graficzne',
+        }}
         fourth={{
           href: `/uslugi/projekty-graficzne/projekt-odziezy-firmowej`,
           label: 'Projekt odzieży firmowej',
@@ -101,17 +108,23 @@ export default function OfferDesignCorporateApparelPage() {
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Realizacje projektów graficznych' category='grafika' />
+        <ProjectsCarousel
+          title='Realizacje projektów graficznych'
+          category='grafika'
+        />
 
         <Divider line />
 
         <SectionInfo title='Co zyskujesz zamawiając projekt odzieży firmowej?'>
           <p>
-            <strong>Spójny wygląd odzieży zespołu ułatwia identyfikację firmy.</strong> Klient od
-            razu widzi, kto reprezentuje Twoją firmę. Jednolita odzież firmowa buduje wizerunek i
-            wzmacnia wiarygodność - zarówno w siedzibie, jak i w terenie. Dzięki temu Twoja marka
-            jest widoczna wszędzie tam, gdzie pojawia się zespół, a to działa jak darmowa reklama
-            mobilna.
+            <strong>
+              Spójny wygląd odzieży zespołu ułatwia identyfikację firmy.
+            </strong>{' '}
+            Klient od razu widzi, kto reprezentuje Twoją firmę. Jednolita odzież
+            firmowa buduje wizerunek i wzmacnia wiarygodność - zarówno w
+            siedzibie, jak i w terenie. Dzięki temu Twoja marka jest widoczna
+            wszędzie tam, gdzie pojawia się zespół, a to działa jak darmowa
+            reklama mobilna.
           </p>
 
           <br />
@@ -121,9 +134,12 @@ export default function OfferDesignCorporateApparelPage() {
           </p>
           <ul className='ml-5 list-disc'>
             <li>Ujednolica zespół i podnosi rozpoznawalność marki,</li>
-            <li>Ułatwia obsługę - klient szybciej trafia do właściwej osoby,</li>
             <li>
-              Wzmacnia wizerunek i buduje autorytet Twojej firmy w oczach klientów i partnerów.
+              Ułatwia obsługę - klient szybciej trafia do właściwej osoby,
+            </li>
+            <li>
+              Wzmacnia wizerunek i buduje autorytet Twojej firmy w oczach
+              klientów i partnerów.
             </li>
           </ul>
         </SectionInfo>
@@ -138,44 +154,70 @@ export default function OfferDesignCorporateApparelPage() {
               title: 'Spójny wygląd zespołu',
               description: (
                 <>
-                  Projekt buduje rozpoznawalność marki w terenie, na hali, w salonie i podczas
-                  wydarzeń.
+                  Projekt buduje rozpoznawalność marki w terenie, na hali, w
+                  salonie i podczas wydarzeń.
                 </>
               ),
-              icon: <RiTShirt2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiTShirt2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Wizualizacje i warianty',
               description: (
                 <>
-                  Przygotowujemy podglądy na koszulkach, bluzach i innych elementach, aby łatwiej
-                  było podjąć decyzję.
+                  Przygotowujemy podglądy na koszulkach, bluzach i innych
+                  elementach, aby łatwiej było podjąć decyzję.
                 </>
               ),
-              icon: <RiImageLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiImageLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Dopasowanie do wybranej technologii',
               description: (
                 <>
-                  Projekt przygotowujemy tak, aby wyglądał dobrze niezależnie od sposobu naniesienia
-                  znaków - sitodruk, haft, DTF.
+                  Projekt przygotowujemy tak, aby wyglądał dobrze niezależnie od
+                  sposobu naniesienia znaków - sitodruk, haft, DTF.
                 </>
               ),
-              icon: <RiQuillPenLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiQuillPenLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Pliki gotowe do produkcji',
               description: (
-                <>Otrzymujesz materiały, które możesz od razu przekazać wykonawcy odzieży.</>
+                <>
+                  Otrzymujesz materiały, które możesz od razu przekazać
+                  wykonawcy odzieży.
+                </>
               ),
-              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileTextLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Faktura po realizacji',
-              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              description: (
+                <>
+                  Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
+                  formie.
+                </>
+              ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
           ]}
@@ -189,20 +231,26 @@ export default function OfferDesignCorporateApparelPage() {
         >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Dla firm usługowych i serwisów w terenie</strong> - ekipy montażowe,
-              serwisowe, budowlane, które codziennie pracują u klientów.
+              <strong>Dla firm usługowych i serwisów w terenie</strong> - ekipy
+              montażowe, serwisowe, budowlane, które codziennie pracują u
+              klientów.
             </li>
             <li>
-              <strong>Dla salonów, kawiarni, restauracji i punktów sprzedaży,</strong> gdzie kontakt
-              z klientem opiera się na bezpośredniej obsłudze.
+              <strong>
+                Dla salonów, kawiarni, restauracji i punktów sprzedaży,
+              </strong>{' '}
+              gdzie kontakt z klientem opiera się na bezpośredniej obsłudze.
             </li>
             <li>
-              <strong>Dla organizatorów wydarzeń, szkół, klubów sportowych,</strong> które chcą
-              spójnego wyglądu zespołu na eventach i turniejach.
+              <strong>
+                Dla organizatorów wydarzeń, szkół, klubów sportowych,
+              </strong>{' '}
+              które chcą spójnego wyglądu zespołu na eventach i turniejach.
             </li>
             <li>
-              <strong>Dla marek budujących rozpoznawalność lokalnie,</strong> którym zależy na tym,
-              by logo i nazwa pojawiały się w przestrzeni miejskiej regularnie.
+              <strong>Dla marek budujących rozpoznawalność lokalnie,</strong>{' '}
+              którym zależy na tym, by logo i nazwa pojawiały się w przestrzeni
+              miejskiej regularnie.
             </li>
           </ul>
         </SectionInfo>
@@ -292,7 +340,8 @@ export default function OfferDesignCorporateApparelPage() {
             },
             {
               question: 'Jak długo trwa projekt odzieży firmowej?',
-              answer: 'Standardowy czas realizacji to zwykle 5-10 dni roboczych.',
+              answer:
+                'Standardowy czas realizacji to zwykle 5-10 dni roboczych.',
             },
             {
               question: 'W jakich formatach otrzymam projekt nadruków?',
@@ -300,7 +349,8 @@ export default function OfferDesignCorporateApparelPage() {
                 'Dostarczamy pliki wektorowe oraz rastrowe w wysokiej rozdzielczości, z wariantami kolorystycznymi i adaptacjami do różnych elementów odzieży.',
             },
             {
-              question: 'Czy mogę zgłosić poprawki do projektu nadruku na odzież?',
+              question:
+                'Czy mogę zgłosić poprawki do projektu nadruku na odzież?',
               answer:
                 'Tak, w projekcie przewidujemy rundy poprawek. Doprecyzowujemy kolory, umiejscowienie, skalę i szczegóły, aż otrzymasz finalną wersję zgodną z Twoją wizją.',
             },
@@ -325,9 +375,11 @@ export default function OfferDesignCorporateApparelPage() {
             {
               title: 'Identyfikacja wizualna',
               size: 'large',
-              backgroundImage: '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
+              backgroundImage:
+                '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Projekt wizytówki',
@@ -340,7 +392,8 @@ export default function OfferDesignCorporateApparelPage() {
             {
               title: 'Strony internetowe',
               size: 'small',
-              backgroundImage: '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
+              backgroundImage:
+                '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },

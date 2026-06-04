@@ -21,7 +21,9 @@ const MAX_CANVAS_DIM = 16384; // Chrome/Edge limit; Firefox ~11180 but we use co
 const MAX_CANVAS_PIXELS = 268_435_456; // ~268M pixels (Chrome limit)
 const SVG_FALLBACK_SIZE = 1024; // Default size for SVGs without explicit dimensions
 
-function getSvgDimensions(dataUrl: string): { width: number; height: number } | null {
+function getSvgDimensions(
+  dataUrl: string,
+): { width: number; height: number } | null {
   try {
     const base64Marker = 'base64,';
     const idx = dataUrl.indexOf(base64Marker);
@@ -35,7 +37,8 @@ function getSvgDimensions(dataUrl: string): { width: number; height: number } | 
         height: Math.round(parseFloat(hMatch[1])),
       };
 
-    const vbMatch = /viewBox\s*=\s*["']\s*[\d.]+\s+[\d.]+\s+([\d.]+)\s+([\d.]+)/.exec(raw);
+    const vbMatch =
+      /viewBox\s*=\s*["']\s*[\d.]+\s+[\d.]+\s+([\d.]+)\s+([\d.]+)/.exec(raw);
     if (vbMatch)
       return {
         width: Math.round(parseFloat(vbMatch[1])),
@@ -59,12 +62,20 @@ function isHeic(file: File): boolean {
 
 function isTiff(file: File): boolean {
   const name = file.name.toLowerCase();
-  return file.type === 'image/tiff' || name.endsWith('.tiff') || name.endsWith('.tif');
+  return (
+    file.type === 'image/tiff' ||
+    name.endsWith('.tiff') ||
+    name.endsWith('.tif')
+  );
 }
 
 async function decodeHeic(file: File): Promise<Blob> {
   const heic2any = (await import('heic2any')).default;
-  const result = await heic2any({ blob: file, toType: 'image/png', quality: 1 });
+  const result = await heic2any({
+    blob: file,
+    toType: 'image/png',
+    quality: 1,
+  });
   return Array.isArray(result) ? result[0] : result;
 }
 
@@ -88,7 +99,9 @@ async function checkAvifSupport(): Promise<boolean> {
     const c = document.createElement('canvas');
     c.width = 1;
     c.height = 1;
-    const blob = await new Promise<Blob | null>(resolve => c.toBlob(resolve, 'image/avif', 0.5));
+    const blob = await new Promise<Blob | null>(resolve =>
+      c.toBlob(resolve, 'image/avif', 0.5),
+    );
     avifSupportCache = blob !== null && blob.type === 'image/avif';
   } catch {
     avifSupportCache = false;
@@ -97,11 +110,19 @@ async function checkAvifSupport(): Promise<boolean> {
 }
 
 // ---- GIF encoding via gifenc ----
-async function encodeGif(canvas: HTMLCanvasElement, errorMessage?: string): Promise<Blob> {
+async function encodeGif(
+  canvas: HTMLCanvasElement,
+  errorMessage?: string,
+): Promise<Blob> {
   const { GIFEncoder, quantize, applyPalette } = await import('gifenc');
   const ctx = canvas.getContext('2d');
   if (!ctx) throw new Error(errorMessage ?? 'Failed to generate GIF.');
-  const { data, width, height } = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const { data, width, height } = ctx.getImageData(
+    0,
+    0,
+    canvas.width,
+    canvas.height,
+  );
   const palette = quantize(data, 256);
   const index = applyPalette(data, palette);
   const gif = GIFEncoder();
@@ -151,10 +172,18 @@ async function encodeFromCanvas(
       );
     }
   }
-  return canvasToBlob(canvas, targetMime, quality, errorMessages?.generationError);
+  return canvasToBlob(
+    canvas,
+    targetMime,
+    quality,
+    errorMessages?.generationError,
+  );
 }
 
-export async function convertImage(file: File, options: ConvertImageOptions): Promise<Blob> {
+export async function convertImage(
+  file: File,
+  options: ConvertImageOptions,
+): Promise<Blob> {
   const { targetMime, quality, errorMessages } = options;
 
   if (file.size > MAX_FILE_SIZE) {
@@ -169,11 +198,16 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
     try {
       const decoded = await decodeHeic(file);
       return convertImage(
-        new File([decoded], file.name.replace(/\.hei[cf]$/i, '.png'), { type: 'image/png' }),
+        new File([decoded], file.name.replace(/\.hei[cf]$/i, '.png'), {
+          type: 'image/png',
+        }),
         options,
       );
     } catch {
-      throw new Error(errorMessages?.imageLoad ?? 'HEIC decoding failed. Try a different file.');
+      throw new Error(
+        errorMessages?.imageLoad ??
+          'HEIC decoding failed. Try a different file.',
+      );
     }
   }
 
@@ -184,7 +218,9 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
       const origW = imgData.width;
       const origH = imgData.height;
       const needsScale =
-        origW > MAX_CANVAS_DIM || origH > MAX_CANVAS_DIM || origW * origH > MAX_CANVAS_PIXELS;
+        origW > MAX_CANVAS_DIM ||
+        origH > MAX_CANVAS_DIM ||
+        origW * origH > MAX_CANVAS_PIXELS;
       const scale = needsScale
         ? Math.min(
             MAX_CANVAS_DIM / origW,
@@ -202,7 +238,10 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
       tmpCanvas.width = srcW;
       tmpCanvas.height = srcH;
       const tmpCtx = tmpCanvas.getContext('2d');
-      if (!tmpCtx) throw new Error(errorMessages?.canvasNotSupported ?? 'Canvas is not supported.');
+      if (!tmpCtx)
+        throw new Error(
+          errorMessages?.canvasNotSupported ?? 'Canvas is not supported.',
+        );
       // If original fits in the capped canvas, putImageData directly; otherwise scale via createImageBitmap
       if (srcW === origW && srcH === origH) {
         tmpCtx.putImageData(imgData, 0, 0);
@@ -226,7 +265,10 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
       canvas.width = w;
       canvas.height = h;
       const ctx = canvas.getContext('2d');
-      if (!ctx) throw new Error(errorMessages?.canvasNotSupported ?? 'Canvas is not supported.');
+      if (!ctx)
+        throw new Error(
+          errorMessages?.canvasNotSupported ?? 'Canvas is not supported.',
+        );
       if (targetMime === 'image/jpeg') {
         ctx.fillStyle = '#FFFFFF';
         ctx.fillRect(0, 0, w, h);
@@ -242,11 +284,15 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
           err.message.includes('TIFF'))
       )
         throw err;
-      throw new Error(errorMessages?.imageLoad ?? 'TIFF decoding failed. Try a different file.');
+      throw new Error(
+        errorMessages?.imageLoad ??
+          'TIFF decoding failed. Try a different file.',
+      );
     }
   }
 
-  const isSvg = file.type === 'image/svg+xml' || file.name.toLowerCase().endsWith('.svg');
+  const isSvg =
+    file.type === 'image/svg+xml' || file.name.toLowerCase().endsWith('.svg');
 
   const dataUrl = await readFileAsDataUrl(file, {
     errorMessage: errorMessages?.fileLoad,
@@ -292,7 +338,9 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
 
   const ctx = canvas.getContext('2d');
   if (!ctx) {
-    throw new Error(errorMessages?.canvasNotSupported ?? 'Canvas is not supported.');
+    throw new Error(
+      errorMessages?.canvasNotSupported ?? 'Canvas is not supported.',
+    );
   }
 
   // JPG does not support transparency - fill with white background

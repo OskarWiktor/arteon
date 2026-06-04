@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Képek kódolása Base64 formátumba. Másolja a kész kódot CSS-hez vagy HTML-hez. Ingyenes.",
-      "featureList": ["kép to Base64 conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert kép to Base64", "kép to Base64", "Free kép to Base64 converter"]
+      "featureList": [
+        "kép to Base64 conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert kép to Base64",
+        "kép to Base64",
+        "Free kép to Base64 converter"
+      ]
     },
     "howTo": {
       "name": "Hogyan konvertáljuk kép-t Base64-vé",

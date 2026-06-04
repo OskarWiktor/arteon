@@ -6,21 +6,55 @@ import ToolEditorSkeleton from '@/components/pages/skeletons/ToolEditorSkeleton'
 const L = () => <ToolEditorSkeleton />;
 
 const STANDALONE = {
-  favicon: dynamic(() => import('./FaviconGenerator'), { ssr: false, loading: L }),
-  qrCode: dynamic(() => import('./QrCodeGenerator'), { ssr: false, loading: L }),
-  emailSignature: dynamic(() => import('./EmailSignatureGenerator'), { ssr: false, loading: L }),
-  colorPalette: dynamic(() => import('./ColorPaletteGenerator'), { ssr: false, loading: L }),
-  contrastChecker: dynamic(() => import('./WcagContrastChecker'), { ssr: false, loading: L }),
-  wordCounter: dynamic(() => import('./WordCountTool'), { ssr: false, loading: L }),
-  loremIpsum: dynamic(() => import('./LoremIpsumGenerator'), { ssr: false, loading: L }),
-  metaCounter: dynamic(() => import('./MetaTitleDescriptionTool'), { ssr: false, loading: L }),
-  jpgToWebp: dynamic(() => import('./JpgPngToWebp'), { ssr: false, loading: L }),
-  imageResize: dynamic(() => import('./ImageResizeTool'), { ssr: false, loading: L }),
-  paletteExtractor: dynamic(() => import('./PaletteExtractor'), { ssr: false, loading: L }),
+  favicon: dynamic(() => import('./FaviconGenerator'), {
+    ssr: false,
+    loading: L,
+  }),
+  qrCode: dynamic(() => import('./QrCodeGenerator'), {
+    ssr: false,
+    loading: L,
+  }),
+  emailSignature: dynamic(() => import('./EmailSignatureGenerator'), {
+    ssr: false,
+    loading: L,
+  }),
+  colorPalette: dynamic(() => import('./ColorPaletteGenerator'), {
+    ssr: false,
+    loading: L,
+  }),
+  contrastChecker: dynamic(() => import('./WcagContrastChecker'), {
+    ssr: false,
+    loading: L,
+  }),
+  wordCounter: dynamic(() => import('./WordCountTool'), {
+    ssr: false,
+    loading: L,
+  }),
+  loremIpsum: dynamic(() => import('./LoremIpsumGenerator'), {
+    ssr: false,
+    loading: L,
+  }),
+  metaCounter: dynamic(() => import('./MetaTitleDescriptionTool'), {
+    ssr: false,
+    loading: L,
+  }),
+  jpgToWebp: dynamic(() => import('./JpgPngToWebp'), {
+    ssr: false,
+    loading: L,
+  }),
+  imageResize: dynamic(() => import('./ImageResizeTool'), {
+    ssr: false,
+    loading: L,
+  }),
+  paletteExtractor: dynamic(() => import('./PaletteExtractor'), {
+    ssr: false,
+    loading: L,
+  }),
 } as const;
 
 const LazyImageConverter = dynamic(
-  () => import('../../organisms/tools/ImageFormatConverter/ImageFormatConverter'),
+  () =>
+    import('../../organisms/tools/ImageFormatConverter/ImageFormatConverter'),
   { ssr: false, loading: L },
 );
 const LazyImageToPdf = dynamic(
@@ -35,14 +69,20 @@ const LazyTextConverter = dynamic(
   () => import('../../organisms/tools/TextFormatConverter/TextFormatConverter'),
   { ssr: false, loading: L },
 );
-const LazyBase64 = dynamic(() => import('../../organisms/tools/Base64Converter/Base64Converter'), {
-  ssr: false,
-  loading: L,
-});
-const LazyUnit = dynamic(() => import('../../organisms/tools/UnitConverter/UnitConverter'), {
-  ssr: false,
-  loading: L,
-});
+const LazyBase64 = dynamic(
+  () => import('../../organisms/tools/Base64Converter/Base64Converter'),
+  {
+    ssr: false,
+    loading: L,
+  },
+);
+const LazyUnit = dynamic(
+  () => import('../../organisms/tools/UnitConverter/UnitConverter'),
+  {
+    ssr: false,
+    loading: L,
+  },
+);
 
 interface ImgCfg {
   s: string;
@@ -57,7 +97,12 @@ const IMG: Record<string, ImgCfg> = {
   webpToPng: { s: 'webp', t: 'png', a: 'image/webp' },
   svgToPng: { s: 'svg', t: 'png', a: 'image/svg+xml' },
   svgToJpg: { s: 'svg', t: 'jpg', a: 'image/svg+xml', q: 85 },
-  bmpToJpg: { s: 'bmp', t: 'jpg', a: 'image/bmp,image/x-ms-bmp,image/x-bmp', q: 85 },
+  bmpToJpg: {
+    s: 'bmp',
+    t: 'jpg',
+    a: 'image/bmp,image/x-ms-bmp,image/x-bmp',
+    q: 85,
+  },
   bmpToPng: { s: 'bmp', t: 'png', a: 'image/bmp,image/x-ms-bmp,image/x-bmp' },
   gifToPng: { s: 'gif', t: 'png', a: 'image/gif' },
   gifToJpg: { s: 'gif', t: 'jpg', a: 'image/gif', q: 85 },
@@ -65,13 +110,28 @@ const IMG: Record<string, ImgCfg> = {
   pngToWebpSimple: { s: 'png', t: 'webp', a: 'image/png', q: 80 },
   svgToWebp: { s: 'svg', t: 'webp', a: 'image/svg+xml', q: 80 },
   gifToWebp: { s: 'gif', t: 'webp', a: 'image/gif', q: 80 },
-  bmpToWebp: { s: 'bmp', t: 'webp', a: 'image/bmp,image/x-ms-bmp,image/x-bmp', q: 80 },
+  bmpToWebp: {
+    s: 'bmp',
+    t: 'webp',
+    a: 'image/bmp,image/x-ms-bmp,image/x-bmp',
+    q: 80,
+  },
   avifToJpg: { s: 'avif', t: 'jpg', a: 'image/avif', q: 85 },
   avifToPng: { s: 'avif', t: 'png', a: 'image/avif' },
   avifToWebp: { s: 'avif', t: 'webp', a: 'image/avif', q: 80 },
-  heicToJpg: { s: 'heic', t: 'jpg', a: 'image/heic,image/heif,.heic,.heif', q: 85 },
+  heicToJpg: {
+    s: 'heic',
+    t: 'jpg',
+    a: 'image/heic,image/heif,.heic,.heif',
+    q: 85,
+  },
   heicToPng: { s: 'heic', t: 'png', a: 'image/heic,image/heif,.heic,.heif' },
-  heicToWebp: { s: 'heic', t: 'webp', a: 'image/heic,image/heif,.heic,.heif', q: 80 },
+  heicToWebp: {
+    s: 'heic',
+    t: 'webp',
+    a: 'image/heic,image/heif,.heic,.heif',
+    q: 80,
+  },
   tiffToJpg: { s: 'tiff', t: 'jpg', a: 'image/tiff,.tiff,.tif', q: 85 },
   tiffToPng: { s: 'tiff', t: 'png', a: 'image/tiff,.tiff,.tif' },
   tiffToWebp: { s: 'tiff', t: 'webp', a: 'image/tiff,.tiff,.tif', q: 80 },
@@ -79,9 +139,19 @@ const IMG: Record<string, ImgCfg> = {
   pngToAvif: { s: 'png', t: 'avif', a: 'image/png', q: 80 },
   webpToAvif: { s: 'webp', t: 'avif', a: 'image/webp', q: 80 },
   svgToAvif: { s: 'svg', t: 'avif', a: 'image/svg+xml', q: 80 },
-  bmpToAvif: { s: 'bmp', t: 'avif', a: 'image/bmp,image/x-ms-bmp,image/x-bmp', q: 80 },
+  bmpToAvif: {
+    s: 'bmp',
+    t: 'avif',
+    a: 'image/bmp,image/x-ms-bmp,image/x-bmp',
+    q: 80,
+  },
   gifToAvif: { s: 'gif', t: 'avif', a: 'image/gif', q: 80 },
-  heicToAvif: { s: 'heic', t: 'avif', a: 'image/heic,image/heif,.heic,.heif', q: 80 },
+  heicToAvif: {
+    s: 'heic',
+    t: 'avif',
+    a: 'image/heic,image/heif,.heic,.heif',
+    q: 80,
+  },
   tiffToAvif: { s: 'tiff', t: 'avif', a: 'image/tiff,.tiff,.tif', q: 80 },
   jpgToGif: { s: 'jpg', t: 'gif', a: 'image/jpeg' },
   pngToGif: { s: 'png', t: 'gif', a: 'image/png' },
@@ -175,7 +245,10 @@ export default function DynamicToolRenderer({ toolKey }: { toolKey: string }) {
     );
 
   const imgPdf = IMG_PDF[key];
-  if (imgPdf) return <LazyImageToPdf sourceFormat={imgPdf.s as any} acceptMime={imgPdf.a} />;
+  if (imgPdf)
+    return (
+      <LazyImageToPdf sourceFormat={imgPdf.s as any} acceptMime={imgPdf.a} />
+    );
 
   const pdfTarget = PDF_IMG[key];
   if (pdfTarget) return <LazyPdfToImage targetFormat={pdfTarget as any} />;
@@ -183,7 +256,11 @@ export default function DynamicToolRenderer({ toolKey }: { toolKey: string }) {
   const text = TEXT[key];
   if (text)
     return (
-      <LazyTextConverter conversionType={text.c as any} sourceLabel={text.s} targetLabel={text.t} />
+      <LazyTextConverter
+        conversionType={text.c as any}
+        sourceLabel={text.s}
+        targetLabel={text.t}
+      />
     );
 
   const b64Mode = B64[key];

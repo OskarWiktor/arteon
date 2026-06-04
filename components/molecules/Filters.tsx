@@ -11,9 +11,20 @@ type Props = {
   onClear: () => void;
 };
 
-const ORDER: readonly ProjectCategory[] = ['strona', 'sklep', 'blog', 'grafika', 'treść'] as const;
+const ORDER: readonly ProjectCategory[] = [
+  'strona',
+  'sklep',
+  'blog',
+  'grafika',
+  'treść',
+] as const;
 
-export default function Filters({ projects, selected, onToggle, onClear }: Props) {
+export default function Filters({
+  projects,
+  selected,
+  onToggle,
+  onClear,
+}: Props) {
   const available = (() => {
     const present = new Set<ProjectCategory>();
     for (const p of projects) for (const c of p.category ?? []) present.add(c);

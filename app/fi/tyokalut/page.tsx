@@ -38,7 +38,11 @@ export const metadata = {
     url: toAbsoluteUrl('/fi/tyokalut'),
     type: 'website',
     images: [
-      { url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 },
+      {
+        url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),
+        width: 1200,
+        height: 630,
+      },
     ],
   },
 };
@@ -98,7 +102,9 @@ const schema = {
         '@type': 'WebApplication',
         position: 5,
         name: 'Sähköpostiallekirjoitusgeneraattori',
-        url: toAbsoluteUrl('/fi/tyokalut/ilmainen-sahkopostiallekirjoitus-generaattori'),
+        url: toAbsoluteUrl(
+          '/fi/tyokalut/ilmainen-sahkopostiallekirjoitus-generaattori',
+        ),
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Any',
       },
@@ -146,7 +152,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 11,
         name: 'JPG WebP -muunnin',
-        description: 'Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%.',
+        description:
+          'Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%.',
         url: toAbsoluteUrl('/fi/tyokalut/jpg-webp-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -165,7 +172,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 13,
         name: 'WebP JPG -muunnin',
-        description: 'Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon.',
+        description:
+          'Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon.',
         url: toAbsoluteUrl('/fi/tyokalut/webp-jpg-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -184,7 +192,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 15,
         name: 'JPG PNG -muunnin',
-        description: 'Muunna JPG-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely selaimessa.',
+        description:
+          'Muunna JPG-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely selaimessa.',
         url: toAbsoluteUrl('/fi/tyokalut/jpg-png-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -193,7 +202,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 16,
         name: 'WebP PNG -muunnin',
-        description: 'Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.',
+        description:
+          'Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.',
         url: toAbsoluteUrl('/fi/tyokalut/webp-png-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -222,7 +232,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 19,
         name: 'BMP JPG -muunnin',
-        description: 'Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen.',
+        description:
+          'Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen.',
         url: toAbsoluteUrl('/fi/tyokalut/bmp-jpg-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -231,7 +242,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 20,
         name: 'BMP PNG -muunnin',
-        description: 'Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.',
+        description:
+          'Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.',
         url: toAbsoluteUrl('/fi/tyokalut/bmp-png-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -250,7 +262,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 22,
         name: 'GIF JPG -muunnin',
-        description: 'Vie GIF-kuvan ensimmäinen ruutu kompaktina JPG-kuvana. Pienempi tiedosto.',
+        description:
+          'Vie GIF-kuvan ensimmäinen ruutu kompaktina JPG-kuvana. Pienempi tiedosto.',
         url: toAbsoluteUrl('/fi/tyokalut/gif-jpg-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -259,7 +272,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 23,
         name: 'SVG WebP -muunnin',
-        description: 'Muunna SVG-grafiikat kevyeen WebP-muotoon. Ihanteellinen verkkosivuille.',
+        description:
+          'Muunna SVG-grafiikat kevyeen WebP-muotoon. Ihanteellinen verkkosivuille.',
         url: toAbsoluteUrl('/fi/tyokalut/svg-webp-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -277,7 +291,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 25,
         name: 'BMP WebP -muunnin',
-        description: 'Muunna BMP-tiedostot kevyeen WebP-muotoon. Jopa 95% pienempi.',
+        description:
+          'Muunna BMP-tiedostot kevyeen WebP-muotoon. Jopa 95% pienempi.',
         url: toAbsoluteUrl('/fi/tyokalut/bmp-webp-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -286,7 +301,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 26,
         name: 'AVIF JPG -muunnin',
-        description: 'Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkialla.',
+        description:
+          'Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkialla.',
         url: toAbsoluteUrl('/fi/tyokalut/avif-jpg-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -295,7 +311,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 27,
         name: 'AVIF PNG -muunnin',
-        description: 'Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu.',
+        description:
+          'Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu.',
         url: toAbsoluteUrl('/fi/tyokalut/avif-png-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -304,7 +321,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 28,
         name: 'AVIF WebP -muunnin',
-        description: 'Muunna AVIF-tiedostot WebP-muotoon. Laaja yhteensopivuus.',
+        description:
+          'Muunna AVIF-tiedostot WebP-muotoon. Laaja yhteensopivuus.',
         url: toAbsoluteUrl('/fi/tyokalut/avif-webp-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -313,7 +331,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 29,
         name: 'HEIC JPG -muunnin',
-        description: 'Muunna iPhone HEIC-valokuvat yleiseen JPG-muotoon. Ei rekisteroitymista.',
+        description:
+          'Muunna iPhone HEIC-valokuvat yleiseen JPG-muotoon. Ei rekisteroitymista.',
         url: toAbsoluteUrl('/fi/tyokalut/heic-jpg-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -340,7 +359,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 32,
         name: 'TIFF JPG -muunnin',
-        description: 'Muunna TIFF-tiedostot kompaktiin JPG-muotoon. Ihanteellinen skannauksille.',
+        description:
+          'Muunna TIFF-tiedostot kompaktiin JPG-muotoon. Ihanteellinen skannauksille.',
         url: toAbsoluteUrl('/fi/tyokalut/tiff-jpg-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -358,7 +378,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 34,
         name: 'TIFF WebP -muunnin',
-        description: 'Muunna TIFF-tiedostot kevyeen WebP-muotoon. Valtava vahenema.',
+        description:
+          'Muunna TIFF-tiedostot kevyeen WebP-muotoon. Valtava vahenema.',
         url: toAbsoluteUrl('/fi/tyokalut/tiff-webp-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -367,7 +388,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 35,
         name: 'JPG AVIF -muunnin',
-        description: 'Muunna JPG-kuvat moderniin AVIF-muotoon. Jopa 50% parempi pakkaus kuin JPG.',
+        description:
+          'Muunna JPG-kuvat moderniin AVIF-muotoon. Jopa 50% parempi pakkaus kuin JPG.',
         url: toAbsoluteUrl('/fi/tyokalut/jpg-avif-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -396,7 +418,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 38,
         name: 'SVG AVIF -muunnin',
-        description: 'Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon.',
+        description:
+          'Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon.',
         url: toAbsoluteUrl('/fi/tyokalut/svg-avif-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -405,7 +428,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 39,
         name: 'BMP AVIF -muunnin',
-        description: 'Muunna pakkaamattomat BMP-tiedostot ultrakompaktiin AVIF-muotoon.',
+        description:
+          'Muunna pakkaamattomat BMP-tiedostot ultrakompaktiin AVIF-muotoon.',
         url: toAbsoluteUrl('/fi/tyokalut/bmp-avif-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -491,7 +515,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 48,
         name: 'JPG TIFF -muunnin',
-        description: 'Muunna JPG-kuvat haviottomaan TIFF-muotoon. Tulostukseen ja arkistointiin.',
+        description:
+          'Muunna JPG-kuvat haviottomaan TIFF-muotoon. Tulostukseen ja arkistointiin.',
         url: toAbsoluteUrl('/fi/tyokalut/jpg-tiff-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -509,7 +534,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 50,
         name: 'WebP TIFF -muunnin',
-        description: 'Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin.',
+        description:
+          'Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin.',
         url: toAbsoluteUrl('/fi/tyokalut/webp-tiff-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -518,7 +544,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 51,
         name: 'SVG TIFF -muunnin',
-        description: 'Muunna vektori-SVG-grafiikat korkealaatuiseen TIFF-rasterimuotoon.',
+        description:
+          'Muunna vektori-SVG-grafiikat korkealaatuiseen TIFF-rasterimuotoon.',
         url: toAbsoluteUrl('/fi/tyokalut/svg-tiff-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -527,7 +554,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 52,
         name: 'BMP TIFF -muunnin',
-        description: 'Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten.',
+        description:
+          'Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten.',
         url: toAbsoluteUrl('/fi/tyokalut/bmp-tiff-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -548,7 +576,8 @@ const schema = {
 const faqItems = [
   {
     question: 'Mitä työkalut maksavat?',
-    answer: 'Ei mitään. Kaikki työkalut ovat ilmaisia, ilman tilauksia ja piilotettuja maksuja.',
+    answer:
+      'Ei mitään. Kaikki työkalut ovat ilmaisia, ilman tilauksia ja piilotettuja maksuja.',
   },
   {
     question: 'Lähetetäänkö tiedostoni palvelimelle?',
@@ -557,7 +586,8 @@ const faqItems = [
   },
   {
     question: 'Tarvitsenko tilin?',
-    answer: 'Et. Voit käyttää niitä heti ilman kirjautumista tai tilin luomista.',
+    answer:
+      'Et. Voit käyttää niitä heti ilman kirjautumista tai tilin luomista.',
   },
   {
     question: 'Onko käyttörajoja?',
@@ -601,9 +631,9 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Valmistele täydellinen rajaus sosiaaliseen mediaan tai verkkosivustollesi.
-                    Valitse valmis muoto tai syötä omat pikselimitat ja lataa kuva PNG-, JPG- tai
-                    WebP-muodossa.
+                    Valmistele täydellinen rajaus sosiaaliseen mediaan tai
+                    verkkosivustollesi. Valitse valmis muoto tai syötä omat
+                    pikselimitat ja lataa kuva PNG-, JPG- tai WebP-muodossa.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/kuvaeditori'>
@@ -617,15 +647,20 @@ export default function ToolsIndexPage() {
               icon: <RiAppsLine className={largeIconSizeClasses} />,
               title: 'Favicon- ja kuvakegeneraattori',
               topImageAlt: 'Favicon-generaattori Arteon',
-              topImageSrc: '/assets/tools/favicon-generator/ilmainen-favicon-generaattori-fi.webp',
+              topImageSrc:
+                '/assets/tools/favicon-generator/ilmainen-favicon-generaattori-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Luo <strong>favicon.ico</strong> ja PNG-kuvakkeet 180x180, 192x192 ja 512x512
-                    yhdestä kuvasta – selain- ja Lighthouse-vaatimusten mukaisesti.
+                    Luo <strong>favicon.ico</strong> ja PNG-kuvakkeet 180x180,
+                    192x192 ja 512x512 yhdestä kuvasta – selain- ja
+                    Lighthouse-vaatimusten mukaisesti.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/fi/tyokalut/ilmainen-favicon-generaattori'>
+                    <ButtonLink
+                      arrow
+                      href='/fi/tyokalut/ilmainen-favicon-generaattori'
+                    >
                       Avaa työkalu
                     </ButtonLink>
                   </div>
@@ -650,11 +685,15 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Tarkista merkkien ja sanojen määrä sekä pikselileveys – Google-esikatselulla.
-                    Vältä katkenneet otsikot ja kuvaukset hakutuloksissa.
+                    Tarkista merkkien ja sanojen määrä sekä pikselileveys –
+                    Google-esikatselulla. Vältä katkenneet otsikot ja kuvaukset
+                    hakutuloksissa.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/fi/tyokalut/meta-otsikko-ja-kuvaus-tarkistus'>
+                    <ButtonLink
+                      arrow
+                      href='/fi/tyokalut/meta-otsikko-ja-kuvaus-tarkistus'
+                    >
                       Avaa työkalu
                     </ButtonLink>
                   </div>
@@ -670,9 +709,9 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Tarkista tekstin pituus ja arvioi, sopiiko se etusivulle, palvelusivulle,
-                    blogikirjoitukseen tai tuotekuvaukseen. Työkalu laskee sanat, merkit, kappaleet
-                    ja lukuajan.
+                    Tarkista tekstin pituus ja arvioi, sopiiko se etusivulle,
+                    palvelusivulle, blogikirjoitukseen tai tuotekuvaukseen.
+                    Työkalu laskee sanat, merkit, kappaleet ja lukuajan.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/sana-ja-merkkilaskuri'>
@@ -687,15 +726,20 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Lorem Ipsum -generaattori',
               topImageAlt: 'Lorem Ipsum -generaattori Arteon',
-              topImageSrc: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generaattori-fi.webp',
+              topImageSrc:
+                '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generaattori-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Luo täytetekstiä 8 tyylillä ja 9 tilassa. Lorem Ipsum, Hipster, Business, Bacon
-                    ja lisää. Kopioi tekstinä tai HTML:nä.
+                    Luo täytetekstiä 8 tyylillä ja 9 tilassa. Lorem Ipsum,
+                    Hipster, Business, Bacon ja lisää. Kopioi tekstinä tai
+                    HTML:nä.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/fi/tyokalut/lorem-ipsum-generaattori'>
+                    <ButtonLink
+                      arrow
+                      href='/fi/tyokalut/lorem-ipsum-generaattori'
+                    >
                       Avaa työkalu
                     </ButtonLink>
                   </div>
@@ -713,14 +757,16 @@ export default function ToolsIndexPage() {
             {
               icon: <RiMailLine className={largeIconSizeClasses} />,
               title: 'Ilmainen HTML-sähköpostiallekirjoitusgeneraattori',
-              topImageAlt: 'Ilmainen sähköpostiallekirjoitusgeneraattori Arteon',
+              topImageAlt:
+                'Ilmainen sähköpostiallekirjoitusgeneraattori Arteon',
               topImageSrc:
                 '/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostiallekirjoitus-generaattori-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Luo ammattimainen sähköpostiallekirjoitus muutamassa minuutissa. Syötä tietosi,
-                    valitse värit ja kopioi valmis HTML-koodi Gmailiin, Outlookiin tai muuhun
+                    Luo ammattimainen sähköpostiallekirjoitus muutamassa
+                    minuutissa. Syötä tietosi, valitse värit ja kopioi valmis
+                    HTML-koodi Gmailiin, Outlookiin tai muuhun
                     sähköpostiohjelmaan.
                   </p>
                   <div className='mt-4'>
@@ -746,15 +792,20 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className={largeIconSizeClasses} />,
               title: 'Ilmainen QR-koodigeneraattori',
               topImageAlt: 'Ilmainen QR-koodigeneraattori Arteon',
-              topImageSrc: '/assets/tools/qr-code-generator/ilmainen-qr-koodi-generaattori-fi.webp',
+              topImageSrc:
+                '/assets/tools/qr-code-generator/ilmainen-qr-koodi-generaattori-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Luo QR-koodi verkkosivulle, vCard-käyntikortille, ravintolan ruokalistalle tai
-                    esitteelle. Vie PNG- ja SVG-muotoon – ilman kirjautumista, ilman rajoituksia.
+                    Luo QR-koodi verkkosivulle, vCard-käyntikortille, ravintolan
+                    ruokalistalle tai esitteelle. Vie PNG- ja SVG-muotoon –
+                    ilman kirjautumista, ilman rajoituksia.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/fi/tyokalut/ilmainen-qr-koodi-generaattori'>
+                    <ButtonLink
+                      arrow
+                      href='/fi/tyokalut/ilmainen-qr-koodi-generaattori'
+                    >
                       Avaa työkalu
                     </ButtonLink>
                   </div>
@@ -778,12 +829,16 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Tarkista, ovatko teksti- ja taustavärit luettavia. Syötä värikoodit, tarkista
-                    kontrastisuhde <strong>WCAG</strong>-standardin mukaan ja käytä{' '}
-                    <strong>Match</strong>-toimintoa automaattiseen korjaukseen.
+                    Tarkista, ovatko teksti- ja taustavärit luettavia. Syötä
+                    värikoodit, tarkista kontrastisuhde <strong>WCAG</strong>
+                    -standardin mukaan ja käytä <strong>Match</strong>-toimintoa
+                    automaattiseen korjaukseen.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/fi/tyokalut/varikontrasti-tarkistus'>
+                    <ButtonLink
+                      arrow
+                      href='/fi/tyokalut/varikontrasti-tarkistus'
+                    >
                       Avaa työkalu
                     </ButtonLink>
                   </div>
@@ -794,15 +849,20 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className={largeIconSizeClasses} />,
               title: 'Värien poiminta kuvasta',
               topImageAlt: 'Värien poiminta kuvasta Arteon',
-              topImageSrc: '/assets/tools/image-color-extractor/varien-poiminta-kuvasta-fi.webp',
+              topImageSrc:
+                '/assets/tools/image-color-extractor/varien-poiminta-kuvasta-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Lataa valokuva tai logo – työkalu poimii hallitsevat värit. Kopioi HEX-koodit
-                    yhdellä napsautuksella ja käytä niitä missä tahansa.
+                    Lataa valokuva tai logo – työkalu poimii hallitsevat värit.
+                    Kopioi HEX-koodit yhdellä napsautuksella ja käytä niitä
+                    missä tahansa.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/fi/tyokalut/varien-poiminta-kuvasta'>
+                    <ButtonLink
+                      arrow
+                      href='/fi/tyokalut/varien-poiminta-kuvasta'
+                    >
                       Avaa työkalu
                     </ButtonLink>
                   </div>
@@ -813,15 +873,20 @@ export default function ToolsIndexPage() {
               icon: <RiPaletteLine className={largeIconSizeClasses} />,
               title: 'Väripalettien generaattori',
               topImageAlt: 'Väripalettien generaattori Arteon',
-              topImageSrc: '/assets/tools/color-palette-generator/varipaletti-generaattori-fi.webp',
+              topImageSrc:
+                '/assets/tools/color-palette-generator/varipaletti-generaattori-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Valitse perusväri ja luo 9 väripalettia: monokromaattinen, komplementaarinen,
-                    triadinen, pastelli, tumma ja muita. Kopioi HEX-koodit yhdellä napsautuksella.
+                    Valitse perusväri ja luo 9 väripalettia: monokromaattinen,
+                    komplementaarinen, triadinen, pastelli, tumma ja muita.
+                    Kopioi HEX-koodit yhdellä napsautuksella.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/fi/tyokalut/varipaletti-generaattori'>
+                    <ButtonLink
+                      arrow
+                      href='/fi/tyokalut/varipaletti-generaattori'
+                    >
                       Avaa työkalu
                     </ButtonLink>
                   </div>
@@ -841,10 +906,14 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JPG WebP -muunnin',
               topImageAlt: 'JPG WebP -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%.</p>
+                  <p>
+                    Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä
+                    tiedostokokoa jopa 35%.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/jpg-webp-muunnin'>
                       Avaa työkalu
@@ -857,11 +926,13 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'PNG JPG -muunnin',
               topImageAlt: 'PNG JPG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Muunna PNG-tiedostot JPG-muotoon selaimessa. Rajaton, ilman rekisteröitymistä.
+                    Muunna PNG-tiedostot JPG-muotoon selaimessa. Rajaton, ilman
+                    rekisteröitymistä.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/png-jpg-muunnin'>
@@ -875,10 +946,13 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'WebP JPG -muunnin',
               topImageAlt: 'WebP JPG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon.</p>
+                  <p>
+                    Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/webp-jpg-muunnin'>
                       Avaa työkalu
@@ -891,11 +965,13 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'PNG WebP -muunnin',
               topImageAlt: 'PNG WebP -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Muunna PNG-grafiikat WebP-muotoon. Pienemmät tiedostot läpinäkyvyys säilyttäen.
+                    Muunna PNG-grafiikat WebP-muotoon. Pienemmät tiedostot
+                    läpinäkyvyys säilyttäen.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/png-webp-muunnin'>
@@ -909,11 +985,13 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JPG PNG -muunnin',
               topImageAlt: 'JPG PNG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Muunna JPG-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely selaimessa.
+                    Muunna JPG-kuvat häviöttömään PNG-muotoon. Paikallinen
+                    käsittely selaimessa.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/jpg-png-muunnin'>
@@ -927,10 +1005,14 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'WebP PNG -muunnin',
               topImageAlt: 'WebP PNG -muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.</p>
+                  <p>
+                    Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen
+                    käsittely.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/webp-png-muunnin'>
                       Avaa työkalu
@@ -952,10 +1034,14 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'CSV JSON',
               topImageAlt: 'CSV JSON Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Muunna CSV JSON-muotoon. Automaattinen erottimen tunnistus ja muotoilu.</p>
+                  <p>
+                    Muunna CSV JSON-muotoon. Automaattinen erottimen tunnistus
+                    ja muotoilu.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/csv-json-muunnin'>
                       Avaa työkalu
@@ -968,7 +1054,8 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON CSV',
               topImageAlt: 'JSON CSV Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>Muunna JSON-tiedot CSV-muotoon. Käsittely selaimessa.</p>
@@ -984,10 +1071,14 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'XML JSON',
               topImageAlt: 'XML JSON Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Muunna XML-tiedot JSON-muotoon. Selainpohjainen muuntaminen validoinnilla.</p>
+                  <p>
+                    Muunna XML-tiedot JSON-muotoon. Selainpohjainen muuntaminen
+                    validoinnilla.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/xml-json-muunnin'>
                       Avaa työkalu
@@ -1000,10 +1091,14 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON XML',
               topImageAlt: 'JSON XML Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Muunna JSON-tiedot kelvolliseksi XML:ksi. Muotoilu selaimessa.</p>
+                  <p>
+                    Muunna JSON-tiedot kelvolliseksi XML:ksi. Muotoilu
+                    selaimessa.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/json-xml-muunnin'>
                       Avaa työkalu
@@ -1016,10 +1111,14 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'YAML JSON',
               topImageAlt: 'YAML JSON Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Muunna YAML-konfiguraatio JSON-muotoon. Validointi ja muotoilu.</p>
+                  <p>
+                    Muunna YAML-konfiguraatio JSON-muotoon. Validointi ja
+                    muotoilu.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/yaml-json-muunnin'>
                       Avaa työkalu
@@ -1032,10 +1131,14 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className={largeIconSizeClasses} />,
               title: 'JSON YAML',
               topImageAlt: 'JSON YAML Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc:
+                '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>Muunna JSON-tiedot luettavaksi YAML:ksi. Käsittely selaimessa.</p>
+                  <p>
+                    Muunna JSON-tiedot luettavaksi YAML:ksi. Käsittely
+                    selaimessa.
+                  </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/fi/tyokalut/json-yaml-muunnin'>
                       Avaa työkalu
@@ -1052,13 +1155,14 @@ export default function ToolsIndexPage() {
         <Divider line />
         <SectionInfo title='Mitä Arteonin työkalut ovat?'>
           <p className='mb-4'>
-            22 ilmaista työkalua materiaalien valmisteluun verkkosivuille, sosiaaliseen mediaan ja
-            painotuotteisiin – WebP-muunnin, favicon-generaattori, tekstilaskuri, värien poiminta,
-            palettien generaattori ja QR-koodi.
+            22 ilmaista työkalua materiaalien valmisteluun verkkosivuille,
+            sosiaaliseen mediaan ja painotuotteisiin – WebP-muunnin,
+            favicon-generaattori, tekstilaskuri, värien poiminta, palettien
+            generaattori ja QR-koodi.
           </p>
           <p>
-            Kaikki työkalut toimivat selaimessa – tiedostoja ei koskaan lähetetä palvelimelle. Käytä
-            ilman rekisteröitymistä ja ilman rajoituksia.
+            Kaikki työkalut toimivat selaimessa – tiedostoja ei koskaan lähetetä
+            palvelimelle. Käytä ilman rekisteröitymistä ja ilman rajoituksia.
           </p>
         </SectionInfo>
         <Divider line />
@@ -1081,7 +1185,8 @@ export default function ToolsIndexPage() {
             {
               icon: <RiLockLine className={normalIconSizeClasses} />,
               title: 'Ilman rekisteröitymistä',
-              description: 'Tiliä ei tarvita. Avaa työkalu, käytä sitä, valmis.',
+              description:
+                'Tiliä ei tarvita. Avaa työkalu, käytä sitä, valmis.',
             },
             {
               icon: <RiGlobalLine className={normalIconSizeClasses} />,
@@ -1093,10 +1198,17 @@ export default function ToolsIndexPage() {
         />
 
         <Divider line />
-        <SectionFaqPanels items={faqItems} title='Usein kysytyt kysymykset työkaluistamme' />
+        <SectionFaqPanels
+          items={faqItems}
+          title='Usein kysytyt kysymykset työkaluistamme'
+        />
         <Divider size='sm' />
       </Wrapper>
-      <Script id='ld-json-tools-fi' type='application/ld+json' strategy='afterInteractive'>
+      <Script
+        id='ld-json-tools-fi'
+        type='application/ld+json'
+        strategy='afterInteractive'
+      >
         {JSON.stringify(schema)}
       </Script>
     </>

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Convierte imágenes HEIC a documentos PDF. Combina varios archivos en un PDF. Gratis.",
-      "featureList": ["HEIC to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert HEIC to PDF", "HEIC to PDF", "Free HEIC to PDF converter"]
+      "featureList": [
+        "HEIC to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert HEIC to PDF",
+        "HEIC to PDF",
+        "Free HEIC to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Cómo convertir HEIC a PDF",

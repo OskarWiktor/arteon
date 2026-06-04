@@ -1,37 +1,48 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import { startTransition, useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
-import {
-  NavArrowDownSLine as RiArrowDownSLine,
-  NavArrowRightSLine as RiArrowRightSLine,
-} from '@/components/atoms/NavIcons';
 import Wrapper from '@/components/atoms/Wrapper';
 import {
   DESKTOP_NAV_ITEMS_PL,
   OFFER_SECTIONS_PL,
+  ToolsSectionKey,
   type OfferSectionKey,
 } from '@/data/pl/navigation-data-pl';
-import { useEscapeKey } from '@/hooks/useEscapeKey';
-import { useIsMounted } from '@/hooks/useIsMounted';
-import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
-import { useOutsideClick } from '@/hooks/useOutsideClick';
-import { getDesktopToolsSections, type ToolsSectionKey } from '@/lib/i18n/toolRegistry';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
+import { useIsMounted } from '@/hooks/useIsMounted';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
+import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
+import {
+  NavArrowDownSLine as RiArrowDownSLine,
+  NavArrowRightSLine as RiArrowRightSLine,
+} from '@/components/atoms/NavIcons';
+
+import InlineLink from '../../atoms/InlineLink';
+import { cn } from '@/lib/utils';
 import {
   flexCenterClasses,
   focusRingClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
-import InlineLink from '../../atoms/InlineLink';
+import { getDesktopToolsSections } from '@/lib/i18n/toolRegistry';
 const plUi = {
   closeServicesList: 'Zamknij listę usług',
   openServicesList: 'Otwórz listę usług',
 } as const;
 
+/**
+ * Render the desktop navigation bar with localized links and two dropdown menus: Offer and Tools.
+ *
+ * The component manages dropdown open state, active categories, keyboard navigation, and focus handling.
+ * Dropdowns close on outside click, Escape key, or route changes. For the Polish (`pl`) locale dropdown
+ * panels are rendered into document.body via portals; otherwise Tools is integrated into the main nav.
+ *
+ * @returns A JSX element representing the responsive desktop navigation bar with its dropdown panels.
+ */
 export default function DesktopNavigation() {
   const locale = useLocale();
   const isPl = locale === 'pl';
@@ -41,8 +52,10 @@ export default function DesktopNavigation() {
   const pathname = usePathname();
   const [isOfferOpen, setIsOfferOpen] = useState(false);
   const [isToolsOpen, setIsToolsOpen] = useState(false);
-  const [activeOfferCategory, setActiveOfferCategory] = useState<OfferSectionKey>('witryny');
-  const [activeToolsCategory, setActiveToolsCategory] = useState<ToolsSectionKey>('obrazy');
+  const [activeOfferCategory, setActiveOfferCategory] =
+    useState<OfferSectionKey>('witryny');
+  const [activeToolsCategory, setActiveToolsCategory] =
+    useState<ToolsSectionKey>('obrazy');
 
   const offerLiRef = useRef<HTMLLIElement>(null);
   const offerBtnRef = useRef<HTMLButtonElement>(null);
@@ -67,8 +80,16 @@ export default function DesktopNavigation() {
   const toolsButtonId = 'tools-button';
   const toolsMenuId = 'tools-submenu';
 
-  useOutsideClick([offerLiRef, offerPanelRef], () => setIsOfferOpen(false), isOfferOpen);
-  useOutsideClick([toolsLiRef, toolsPanelRef], () => setIsToolsOpen(false), isToolsOpen);
+  useOutsideClick(
+    [offerLiRef, offerPanelRef],
+    () => setIsOfferOpen(false),
+    isOfferOpen,
+  );
+  useOutsideClick(
+    [toolsLiRef, toolsPanelRef],
+    () => setIsToolsOpen(false),
+    isToolsOpen,
+  );
 
   useEscapeKey(() => {
     setIsOfferOpen(false);
@@ -107,11 +128,14 @@ export default function DesktopNavigation() {
   const navigationItems = isPl ? DESKTOP_NAV_ITEMS_PL : [];
 
   const activeSection =
-    (isPl && OFFER_SECTIONS_PL.find(s => s.key === activeOfferCategory)) || OFFER_SECTIONS_PL[0];
+    (isPl && OFFER_SECTIONS_PL.find(s => s.key === activeOfferCategory)) ||
+    OFFER_SECTIONS_PL[0];
   const activeToolsSection =
     toolsSections.find(s => s.key === activeToolsCategory) || toolsSections[0];
 
-  const handleOfferButtonKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
+  const handleOfferButtonKeyDown = (
+    e: React.KeyboardEvent<HTMLButtonElement>,
+  ) => {
     if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       if (!isOfferOpen) setIsOfferOpen(true);
@@ -122,7 +146,9 @@ export default function DesktopNavigation() {
   const handleMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) =>
     offerMenuKeyboard.onKeyDown(e);
 
-  const handleToolsButtonKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
+  const handleToolsButtonKeyDown = (
+    e: React.KeyboardEvent<HTMLButtonElement>,
+  ) => {
     if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       if (!isToolsOpen) setIsToolsOpen(true);
@@ -141,7 +167,10 @@ export default function DesktopNavigation() {
       <ul className='relative flex items-center gap-4 lg:gap-6'>
         {/* Tools link + dropdown rendered at correct position for non-PL (standalone) */}
         {!isPl && (
-          <li ref={toolsLiRef} className='group relative flex items-center gap-0.5'>
+          <li
+            ref={toolsLiRef}
+            className='group relative flex items-center gap-0.5'
+          >
             <InlineLink
               href={toolsHref}
               variant='navigation'
@@ -169,9 +198,14 @@ export default function DesktopNavigation() {
             >
               <span
                 className='inline-flex transition-transform duration-200'
-                style={{ transform: isToolsOpen ? 'rotate(180deg)' : undefined }}
+                style={{
+                  transform: isToolsOpen ? 'rotate(180deg)' : undefined,
+                }}
               >
-                <RiArrowDownSLine className={smallIconSizeClasses} aria-hidden='true' />
+                <RiArrowDownSLine
+                  className={smallIconSizeClasses}
+                  aria-hidden='true'
+                />
               </span>
             </button>
           </li>
@@ -182,9 +216,13 @@ export default function DesktopNavigation() {
             <InlineLink
               href={localeConfig.aboutHref}
               variant='navigation'
-              aria-current={pathname.startsWith(localeConfig.aboutHref) ? 'page' : undefined}
+              aria-current={
+                pathname.startsWith(localeConfig.aboutHref) ? 'page' : undefined
+              }
               className={
-                pathname.startsWith(localeConfig.aboutHref) ? 'font-semibold text-dark' : ''
+                pathname.startsWith(localeConfig.aboutHref)
+                  ? 'font-semibold text-dark'
+                  : ''
               }
             >
               {t.aboutLabel}
@@ -197,9 +235,15 @@ export default function DesktopNavigation() {
             <InlineLink
               href={localeConfig.contactHref}
               variant='navigation'
-              aria-current={pathname.startsWith(localeConfig.contactHref) ? 'page' : undefined}
+              aria-current={
+                pathname.startsWith(localeConfig.contactHref)
+                  ? 'page'
+                  : undefined
+              }
               className={
-                pathname.startsWith(localeConfig.contactHref) ? 'font-semibold text-dark' : ''
+                pathname.startsWith(localeConfig.contactHref)
+                  ? 'font-semibold text-dark'
+                  : ''
               }
             >
               {t.contactLabel}
@@ -209,11 +253,17 @@ export default function DesktopNavigation() {
 
         {/* PL nav items (Tools rendered in correct order within the loop) */}
         {navigationItems.map(({ href, label, exact, key: itemKey }) => {
-          const isActivePage = exact ? pathname === href : pathname.startsWith(href);
+          const isActivePage = exact
+            ? pathname === href
+            : pathname.startsWith(href);
 
           if (itemKey === 'narzedzia') {
             return (
-              <li ref={toolsLiRef} className='group relative flex items-center gap-0.5' key={label}>
+              <li
+                ref={toolsLiRef}
+                className='group relative flex items-center gap-0.5'
+                key={label}
+              >
                 <InlineLink
                   href={toolsHref}
                   variant='navigation'
@@ -241,9 +291,14 @@ export default function DesktopNavigation() {
                 >
                   <span
                     className='inline-flex transition-transform duration-200'
-                    style={{ transform: isToolsOpen ? 'rotate(180deg)' : undefined }}
+                    style={{
+                      transform: isToolsOpen ? 'rotate(180deg)' : undefined,
+                    }}
                   >
-                    <RiArrowDownSLine className={smallIconSizeClasses} aria-hidden='true' />
+                    <RiArrowDownSLine
+                      className={smallIconSizeClasses}
+                      aria-hidden='true'
+                    />
                   </span>
                 </button>
               </li>
@@ -253,7 +308,11 @@ export default function DesktopNavigation() {
           if (itemKey === 'uslugi') {
             const isActive = pathname.startsWith('/uslugi');
             return (
-              <li ref={offerLiRef} className='group relative flex items-center gap-0.5' key={label}>
+              <li
+                ref={offerLiRef}
+                className='group relative flex items-center gap-0.5'
+                key={label}
+              >
                 <InlineLink
                   href={href}
                   variant='navigation'
@@ -277,13 +336,20 @@ export default function DesktopNavigation() {
                     flexCenterClasses,
                     focusRingClasses,
                   )}
-                  aria-label={isOfferOpen ? plUi.closeServicesList : plUi.openServicesList}
+                  aria-label={
+                    isOfferOpen ? plUi.closeServicesList : plUi.openServicesList
+                  }
                 >
                   <span
                     className='inline-flex transition-transform duration-200'
-                    style={{ transform: isOfferOpen ? 'rotate(180deg)' : undefined }}
+                    style={{
+                      transform: isOfferOpen ? 'rotate(180deg)' : undefined,
+                    }}
                   >
-                    <RiArrowDownSLine className={smallIconSizeClasses} aria-hidden='true' />
+                    <RiArrowDownSLine
+                      className={smallIconSizeClasses}
+                      aria-hidden='true'
+                    />
                   </span>
                 </button>
               </li>
@@ -319,11 +385,16 @@ export default function DesktopNavigation() {
             style={{ top: headerBottom }}
           >
             <Wrapper>
-              <div ref={menuRef} onKeyDown={handleMenuKeyDown} className='grid grid-cols-5 gap-0'>
+              <div
+                ref={menuRef}
+                onKeyDown={handleMenuKeyDown}
+                className='grid grid-cols-5 gap-0'
+              >
                 <div className='border-r border-primary-light pr-4'>
                   <div className='flex flex-col gap-1'>
                     {OFFER_SECTIONS_PL.map(section => {
-                      const isActiveCategory = activeOfferCategory === section.key;
+                      const isActiveCategory =
+                        activeOfferCategory === section.key;
                       const CategoryIcon = section.icon;
                       return (
                         <InlineLink
@@ -355,13 +426,20 @@ export default function DesktopNavigation() {
                                 aria-hidden='true'
                               />
                             )}
-                            <span className='text-sm font-medium'>{section.title}</span>
+                            <span className='text-sm font-medium'>
+                              {section.title}
+                            </span>
                           </span>
                           <RiArrowRightSLine
-                            className={cn('transition-all duration-200', smallIconSizeClasses, {
-                              'translate-x-0.5 text-primary': isActiveCategory,
-                              'text-primary-mid': !isActiveCategory,
-                            })}
+                            className={cn(
+                              'transition-all duration-200',
+                              smallIconSizeClasses,
+                              {
+                                'translate-x-0.5 text-primary':
+                                  isActiveCategory,
+                                'text-primary-mid': !isActiveCategory,
+                              },
+                            )}
                             aria-hidden='true'
                           />
                         </InlineLink>
@@ -431,13 +509,16 @@ export default function DesktopNavigation() {
                 <div className='border-r border-primary-light pr-4'>
                   <div className='flex flex-col gap-1'>
                     {toolsSections.map(section => {
-                      const isActiveCategory = activeToolsCategory === section.key;
+                      const isActiveCategory =
+                        activeToolsCategory === section.key;
                       const CategoryIcon = section.icon;
                       return (
                         <button
                           key={section.key}
                           type='button'
-                          onMouseEnter={() => handleToolsCategoryHover(section.key)}
+                          onMouseEnter={() =>
+                            handleToolsCategoryHover(section.key)
+                          }
                           onFocus={() => handleToolsCategoryHover(section.key)}
                           className={cn(
                             'group/cat flex w-full items-center justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200',
@@ -463,13 +544,20 @@ export default function DesktopNavigation() {
                                 aria-hidden='true'
                               />
                             )}
-                            <span className='text-sm font-medium'>{section.title}</span>
+                            <span className='text-sm font-medium'>
+                              {section.title}
+                            </span>
                           </span>
                           <RiArrowRightSLine
-                            className={cn('transition-all duration-200', smallIconSizeClasses, {
-                              'translate-x-0.5 text-primary': isActiveCategory,
-                              'text-primary-mid': !isActiveCategory,
-                            })}
+                            className={cn(
+                              'transition-all duration-200',
+                              smallIconSizeClasses,
+                              {
+                                'translate-x-0.5 text-primary':
+                                  isActiveCategory,
+                                'text-primary-mid': !isActiveCategory,
+                              },
+                            )}
                             aria-hidden='true'
                           />
                         </button>

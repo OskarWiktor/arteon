@@ -48,7 +48,10 @@ export default function SectionFaqPanels({
             name: item.question,
             acceptedAnswer: {
               '@type': 'Answer',
-              text: typeof item.answer === 'string' ? item.answer : (item.answerSchemaText ?? ''),
+              text:
+                typeof item.answer === 'string'
+                  ? item.answer
+                  : (item.answerSchemaText ?? ''),
             },
           })),
         }
@@ -56,7 +59,12 @@ export default function SectionFaqPanels({
 
   return (
     <section aria-labelledby={headingId}>
-      <SectionHeader subtitle={subtitle} title={title} titleClassName='h4' titleId={headingId} />
+      <SectionHeader
+        subtitle={subtitle}
+        title={title}
+        titleClassName='h4'
+        titleId={headingId}
+      />
 
       <div className={cn(halfWidth && 'mx-auto max-w-2xl')}>
         {items.map((item, index) => (

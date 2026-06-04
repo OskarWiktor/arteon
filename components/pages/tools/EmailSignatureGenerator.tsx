@@ -1,26 +1,5 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import {
-  RiUser3Line,
-  RiMailLine,
-  RiShareLine,
-  RiPaletteLine,
-  RiFileTextLine,
-  RiLayout3Line,
-  RiSpace,
-  RiFontSize2,
-  RiDeleteBinLine,
-  RiDownloadLine,
-  RiCodeLine,
-  RiSunLine,
-  RiMoonLine,
-  RiGridLine,
-  RiEyeLine,
-  RiCloseLine,
-  RiUploadLine,
-  RiShareForwardLine,
-} from 'react-icons/ri';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import ButtonTool from '@/components/atoms/buttons/ButtonTool';
@@ -68,7 +47,35 @@ import type {
   TextStyleConfig,
 } from '@/types/tools/email';
 import { downloadBlob } from '@/utils/download';
+import { useState, useEffect } from 'react';
+import {
+  RiLayout3Line,
+  RiUser3Line,
+  RiShareLine,
+  RiMailLine,
+  RiPaletteLine,
+  RiFontSize2,
+  RiSpace,
+  RiFileTextLine,
+  RiDeleteBinLine,
+  RiSunLine,
+  RiMoonLine,
+  RiGridLine,
+  RiCodeLine,
+  RiDownloadLine,
+  RiEyeLine,
+  RiShareForwardLine,
+  RiUploadLine,
+  RiCloseLine,
+} from 'react-icons/ri';
 
+/**
+ * Renders the EmailSignatureGenerator UI for building, previewing, exporting, importing, and copying email signatures.
+ *
+ * Provides controls to edit identity, social links, buttons, appearance, text styles, spacing, and legal text; previews the generated HTML with background themes; persists settings to locale-scoped localStorage; and exposes actions to copy (Gmail/raw), download HTML, export/import configuration, view source, and reset to defaults.
+ *
+ * @returns The React element for the email signature generator interface.
+ */
 export default function EmailSignatureGenerator() {
   const locale = useLocale();
   const t = ui[locale];
@@ -76,18 +83,25 @@ export default function EmailSignatureGenerator() {
   const defaultSignature = getDefaultSignature(locale);
   const [config, setConfig] = useState<SignatureConfig>(defaultSignature);
   const [styleConfig, setStyleConfig] = useState<StyleConfig>(DEFAULT_STYLE);
-  const [spacingConfig, setSpacingConfig] = useState<SpacingConfig>(DEFAULT_SPACING);
-  const [textStyleConfig, setTextStyleConfig] = useState<TextStyleConfig>(DEFAULT_TEXT_STYLE);
-  const [pendingCustomColor, setPendingCustomColor] = useState<string>('#000000');
-  const { status: copyStatus, copyHtml: copyToGmail } = useCopyToClipboard(3000);
+  const [spacingConfig, setSpacingConfig] =
+    useState<SpacingConfig>(DEFAULT_SPACING);
+  const [textStyleConfig, setTextStyleConfig] =
+    useState<TextStyleConfig>(DEFAULT_TEXT_STYLE);
+  const [pendingCustomColor, setPendingCustomColor] =
+    useState<string>('#000000');
+  const { status: copyStatus, copyHtml: copyToGmail } =
+    useCopyToClipboard(3000);
   const { status: copyRawStatus, copy: copyRaw } = useCopyToClipboard(3000);
-  const [previewBg, setPreviewBg] = useState<'light' | 'dark' | 'checker'>('light');
+  const [previewBg, setPreviewBg] = useState<'light' | 'dark' | 'checker'>(
+    'light',
+  );
   const [activePanel, setActivePanel] = useState<ActivePanel>('identity');
   const [layout, setLayout] = useState<LayoutType>('standard');
   const [themeId, setThemeId] = useState<string>('classic-dark');
   const [showResetModal, setShowResetModal] = useState(false);
   const [showSourceModal, setShowSourceModal] = useState(false);
-  const { status: sourceModalCopyStatus, copy: copySource } = useCopyToClipboard(3000);
+  const { status: sourceModalCopyStatus, copy: copySource } =
+    useCopyToClipboard(3000);
   const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {
@@ -112,15 +126,32 @@ export default function EmailSignatureGenerator() {
   useEffect(() => {
     if (!isHydrated) return;
     try {
-      const data = { config, styleConfig, spacingConfig, textStyleConfig, layout, themeId };
+      const data = {
+        config,
+        styleConfig,
+        spacingConfig,
+        textStyleConfig,
+        layout,
+        themeId,
+      };
       const storageKey = `${STORAGE_KEY_BASE}-${locale}`;
       localStorage.setItem(storageKey, JSON.stringify(data));
     } catch {
       // Ignore localStorage errors
     }
-  }, [config, styleConfig, spacingConfig, textStyleConfig, layout, themeId, isHydrated, locale]);
+  }, [
+    config,
+    styleConfig,
+    spacingConfig,
+    textStyleConfig,
+    layout,
+    themeId,
+    isHydrated,
+    locale,
+  ]);
 
-  const hasRequired = config.fullName.trim().length > 0 && config.email.trim().length > 0;
+  const hasRequired =
+    config.fullName.trim().length > 0 && config.email.trim().length > 0;
 
   const signatureLabels = getSignatureLabels(locale);
   const themePresets = getThemePresets(locale);
@@ -134,7 +165,10 @@ export default function EmailSignatureGenerator() {
     textStyleConfig,
   );
 
-  function handleTextChange<K extends keyof SignatureConfig>(key: K, value: SignatureConfig[K]) {
+  function handleTextChange<K extends keyof SignatureConfig>(
+    key: K,
+    value: SignatureConfig[K],
+  ) {
     setConfig(prev => ({
       ...prev,
       [key]: value,
@@ -151,7 +185,10 @@ export default function EmailSignatureGenerator() {
     }));
   }
 
-  function handleStyleChange<K extends keyof StyleConfig>(key: K, value: StyleConfig[K]) {
+  function handleStyleChange<K extends keyof StyleConfig>(
+    key: K,
+    value: StyleConfig[K],
+  ) {
     setStyleConfig(prev => ({
       ...prev,
       [key]: value,
@@ -165,7 +202,10 @@ export default function EmailSignatureGenerator() {
     }));
   }
 
-  function handleTextStyleColorChange(key: TextElementKey, color: string | null) {
+  function handleTextStyleColorChange(
+    key: TextElementKey,
+    color: string | null,
+  ) {
     setTextStyleConfig(prev => ({
       ...prev,
       [key]: { ...prev[key], color },
@@ -175,7 +215,10 @@ export default function EmailSignatureGenerator() {
   function handleTextStyleSizeChange(key: TextElementKey, delta: number) {
     setTextStyleConfig(prev => ({
       ...prev,
-      [key]: { ...prev[key], sizeOffset: Math.max(-4, Math.min(4, prev[key].sizeOffset + delta)) },
+      [key]: {
+        ...prev[key],
+        sizeOffset: Math.max(-4, Math.min(4, prev[key].sizeOffset + delta)),
+      },
     }));
   }
 
@@ -329,7 +372,11 @@ export default function EmailSignatureGenerator() {
         <p className='tool-meta'>{t.moreLayoutsSoon}</p>
       </Card>
 
-      <Card interactive={false} padding='lg' className='flex flex-wrap items-center'>
+      <Card
+        interactive={false}
+        padding='lg'
+        className='flex flex-wrap items-center'
+      >
         <div className='flex items-center gap-2'>
           <span className='tool-value'>{t.editorTitle}</span>
         </div>
@@ -387,7 +434,11 @@ export default function EmailSignatureGenerator() {
       </Card>
 
       <div className='grid items-stretch gap-4 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]'>
-        <Card interactive={false} padding='lg' className='flex min-h-155 flex-col'>
+        <Card
+          interactive={false}
+          padding='lg'
+          className='flex min-h-155 flex-col'
+        >
           <div className='space-y-4 text-sm!'>
             {activePanel === 'identity' && (
               <IdentityPanel
@@ -466,7 +517,9 @@ export default function EmailSignatureGenerator() {
 
                 {textStyleConfig.customColors.length > 0 && (
                   <div>
-                    <p className='tool-label mb-2'>{t.textStyle.customColors}</p>
+                    <p className='tool-label mb-2'>
+                      {t.textStyle.customColors}
+                    </p>
                     <div className='flex flex-wrap gap-2'>
                       {textStyleConfig.customColors.map(color => (
                         <div key={color} className='group relative'>
@@ -540,7 +593,9 @@ export default function EmailSignatureGenerator() {
                   />
                 )}
 
-                {(config.email.trim() || config.phone.trim() || config.website.trim()) && (
+                {(config.email.trim() ||
+                  config.phone.trim() ||
+                  config.website.trim()) && (
                   <TextStyleRow
                     elementKey='contact'
                     label={t.textStyle.contact}
@@ -705,7 +760,9 @@ export default function EmailSignatureGenerator() {
               className='disabled:opacity-60'
             >
               <RiCodeLine className='mr-1.5 inline-block text-base' />
-              {copyRawStatus === 'success' ? t.preview.copyRawSuccess : t.preview.copyRawButton}
+              {copyRawStatus === 'success'
+                ? t.preview.copyRawSuccess
+                : t.preview.copyRawButton}
             </Button>
             <Button
               type='button'
@@ -729,11 +786,21 @@ export default function EmailSignatureGenerator() {
               <RiEyeLine className='mr-1.5 inline-block text-base' />
               {t.preview.viewSourceButton}
             </Button>
-            <Button type='button' variant='normal' size='small' onClick={handleExportConfig}>
+            <Button
+              type='button'
+              variant='normal'
+              size='small'
+              onClick={handleExportConfig}
+            >
               <RiShareForwardLine className='mr-1.5 inline-block text-base' />
               {t.preview.exportConfig}
             </Button>
-            <Button type='button' variant='normal' size='small' onClick={handleImportConfig}>
+            <Button
+              type='button'
+              variant='normal'
+              size='small'
+              onClick={handleImportConfig}
+            >
               <RiUploadLine className='mr-1.5 inline-block text-base' />
               {t.preview.importConfig}
             </Button>
@@ -749,7 +816,10 @@ export default function EmailSignatureGenerator() {
 
           {showSourceModal && (
             <div
-              className={cn('fixed inset-0 z-100 bg-black/40 px-4', flexCenterClasses)}
+              className={cn(
+                'fixed inset-0 z-100 bg-black/40 px-4',
+                flexCenterClasses,
+              )}
               onClick={e => {
                 if (e.target === e.currentTarget) setShowSourceModal(false);
               }}
@@ -806,7 +876,9 @@ export default function EmailSignatureGenerator() {
             cancelLabel={t.preview.resetCancel}
           />
 
-          {!hasRequired && <p className='text-xs! text-light'>{t.preview.requiredFields}</p>}
+          {!hasRequired && (
+            <p className='text-xs! text-light'>{t.preview.requiredFields}</p>
+          )}
         </Card>
       </div>
     </div>

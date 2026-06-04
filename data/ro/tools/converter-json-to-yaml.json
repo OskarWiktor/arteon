@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convertește JSON în format YAML. Parsare și formatare automată. Gratuit.",
-      "featureList": ["JSON to YAML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert JSON to YAML", "JSON to YAML", "Free JSON to YAML converter"]
+      "featureList": [
+        "JSON to YAML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert JSON to YAML",
+        "JSON to YAML",
+        "Free JSON to YAML converter"
+      ]
     },
     "howTo": {
       "name": "Cum convertiți JSON în YAML",

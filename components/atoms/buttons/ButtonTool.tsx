@@ -9,7 +9,8 @@ interface ButtonToolProps<T extends string> {
   label: string;
 }
 
-const buttonToolClasses = 'flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]!';
+const buttonToolClasses =
+  'flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]!';
 
 export default function ButtonTool<T extends string>({
   id,
@@ -26,7 +27,9 @@ export default function ButtonTool<T extends string>({
       onClick={() => onClick(id)}
       className={cn(
         buttonToolClasses,
-        isActive ? 'bg-primary text-white' : 'border-neutral-200 bg-white hover:bg-neutral-100',
+        isActive
+          ? 'bg-primary text-white'
+          : 'border-neutral-200 bg-white hover:bg-neutral-100',
       )}
     >
       {icon}

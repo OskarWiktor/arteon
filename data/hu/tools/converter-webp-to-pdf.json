@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "WebP képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.",
-      "featureList": ["WebP to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert WebP to PDF", "WebP to PDF", "Free WebP to PDF converter"]
+      "featureList": [
+        "WebP to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert WebP to PDF",
+        "WebP to PDF",
+        "Free WebP to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Hogyan konvertáljuk WebP-t PDF-vé",
@@ -151,7 +159,10 @@
         },
         {
           "label": "Böngészőtámogatás",
-          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Beépített PDF-megjelenítő"]
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Beépített PDF-megjelenítő"
+          ]
         },
         {
           "label": "Kis fájlméret",

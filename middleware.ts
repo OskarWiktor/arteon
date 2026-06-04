@@ -82,7 +82,11 @@ export function middleware(request: NextRequest) {
   }
 
   // 3. Enforce www
-  if (host && host !== CANONICAL_HOST && host.replace(/:\d+$/, '') !== CANONICAL_HOST) {
+  if (
+    host &&
+    host !== CANONICAL_HOST &&
+    host.replace(/:\d+$/, '') !== CANONICAL_HOST
+  ) {
     needsRedirect = true;
   }
 

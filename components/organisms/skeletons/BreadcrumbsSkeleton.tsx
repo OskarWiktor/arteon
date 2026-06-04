@@ -6,7 +6,9 @@ interface BreadcrumbsSkeletonProps {
   size?: 'default' | 'compact';
 }
 
-export default function BreadcrumbsSkeleton({ size = 'default' }: BreadcrumbsSkeletonProps) {
+export default function BreadcrumbsSkeleton({
+  size = 'default',
+}: BreadcrumbsSkeletonProps) {
   const isCompact = size === 'compact';
 
   return (

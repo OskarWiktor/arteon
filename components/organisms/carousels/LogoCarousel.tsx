@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import type { IconType } from 'react-icons';
+import IconText from '@/components/atoms/IconText';
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -21,7 +22,6 @@ import {
   SiGoogleanalytics,
   SiGoogleads,
 } from 'react-icons/si';
-import IconText from '@/components/atoms/IconText';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { useEventListener } from '@/hooks/useEventListener';
 import useMediaQuery from '@/hooks/useMediaQuery';
@@ -133,7 +133,19 @@ const LogoCarouselLogoItems: LogoCarouselLogoImage[] = [
   },
 ];
 
-export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps) {
+/**
+ * Renders a horizontally scrolling, continuously looping carousel of logos or technology icons.
+ *
+ * The carousel pauses on hover, focus, or touch, and does not animate when the user prefers reduced motion
+ * or the carousel is outside the viewport. Items are duplicated to create a seamless loop and the component
+ * provides accessible region semantics and focusability.
+ *
+ * @param variant - Display mode: `'logo'` shows company logo images, any other value shows technology icons with a section header.
+ * @returns The rendered carousel React element.
+ */
+export default function LogoCarousel({
+  variant = 'default',
+}: LogoCarouselProps) {
   const baseVelocity = 30;
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLUListElement>(null);
@@ -159,7 +171,11 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
     loopWidthRef.current = total / 2;
   };
 
-  useEventListener(typeof window !== 'undefined' ? window : null, 'resize', measure);
+  useEventListener(
+    typeof window !== 'undefined' ? window : null,
+    'resize',
+    measure,
+  );
 
   useEffect(() => {
     measure();
@@ -177,9 +193,12 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
-    const io = new IntersectionObserver(([entry]) => setIsInView(entry.isIntersecting), {
-      threshold: 0,
-    });
+    const io = new IntersectionObserver(
+      ([entry]) => setIsInView(entry.isIntersecting),
+      {
+        threshold: 0,
+      },
+    );
     io.observe(el);
     return () => io.disconnect();
   }, []);
@@ -257,8 +276,14 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
   }
 
   return (
-    <section className='relative overflow-hidden' aria-labelledby='LogoCarousel-heading'>
-      <SectionHeader titleId='LogoCarousel-heading' title='Jakiej technologii używamy?' />
+    <section
+      className='relative overflow-hidden'
+      aria-labelledby='LogoCarousel-heading'
+    >
+      <SectionHeader
+        titleId='LogoCarousel-heading'
+        title='Jakiej technologii używamy?'
+      />
 
       <div
         ref={containerRef}
@@ -281,9 +306,19 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
           {[...LogoCarouselDefaultItems, ...LogoCarouselDefaultItems].map(
             ({ label, icon: Icon }, index) => (
               <li key={`${label}-${index}`} className='shrink-0'>
-                <div className={cn('min-w-30 flex-col opacity-65', flexCenterClasses)}>
+                <div
+                  className={cn(
+                    'min-w-30 flex-col opacity-65',
+                    flexCenterClasses,
+                  )}
+                >
                   <IconText
-                    icon={<Icon className='h-auto w-12 text-primary' aria-hidden='true' />}
+                    icon={
+                      <Icon
+                        className='h-auto w-12 text-primary'
+                        aria-hidden='true'
+                      />
+                    }
                     children={undefined}
                   />
                   <span className='mt-1 text-2xl text-primary'>{label}</span>

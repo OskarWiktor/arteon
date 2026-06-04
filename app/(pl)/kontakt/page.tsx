@@ -24,7 +24,9 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: toAbsoluteUrl('/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp'),
+        url: toAbsoluteUrl(
+          '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
+        ),
         width: 1200,
         height: 630,
         alt: 'Kontakt - Arteon',
@@ -38,8 +40,18 @@ function ContactSchemas() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: toAbsoluteUrl('/') },
-      { '@type': 'ListItem', position: 2, name: 'Kontakt', item: toAbsoluteUrl('/kontakt') },
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Strona główna',
+        item: toAbsoluteUrl('/'),
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Kontakt',
+        item: toAbsoluteUrl('/kontakt'),
+      },
     ],
   };
 
@@ -111,20 +123,29 @@ export default function ContactPage() {
             {
               title: <>Kontaktujesz się</>,
               description: (
-                <>Opisujesz co chciałbym zrealizować poprzez formularz, email lub telefonicznie</>
+                <>
+                  Opisujesz co chciałbym zrealizować poprzez formularz, email
+                  lub telefonicznie
+                </>
               ),
             },
             {
               title: <>Analizujemy potrzeby</>,
-              description: <>Sprawdzamy Twoją branżę, analizujemy cele i tworzymy plan</>,
+              description: (
+                <>Sprawdzamy Twoją branżę, analizujemy cele i tworzymy plan</>
+              ),
             },
             {
               title: <>Otrzymujesz ofertę</>,
-              description: <>Wysyłamy ofertę z wyceną i wszelkimi etapami realizacji</>,
+              description: (
+                <>Wysyłamy ofertę z wyceną i wszelkimi etapami realizacji</>
+              ),
             },
             {
               title: <>Dopracowujemy szczegóły</>,
-              description: <>Wspólnie dopracowujemy idealny plan i ruszamy z realizacją</>,
+              description: (
+                <>Wspólnie dopracowujemy idealny plan i ruszamy z realizacją</>
+              ),
             },
           ]}
           title='Jak wygląda pierwszy kontakt?'
@@ -150,12 +171,16 @@ export default function ContactPage() {
                 <>
                   <p>
                     Dla polskojęzycznych:
-                    <a href='mailto:kontakt@arteonagency.pl'>kontakt@arteonagency.pl</a>
+                    <a href='mailto:kontakt@arteonagency.pl'>
+                      kontakt@arteonagency.pl
+                    </a>
                   </p>
                   <p>
                     For english speaker:
                     <strong>
-                      <a href='mailto:contact@arteonagency.com'>contact@arteonagency.com</a>
+                      <a href='mailto:contact@arteonagency.com'>
+                        contact@arteonagency.com
+                      </a>
                     </strong>
                   </p>
                 </>
@@ -165,7 +190,10 @@ export default function ContactPage() {
               title: 'Godziny otwarcia',
               icon: <RiMapPinTimeLine className={normalIconSizeClasses} />,
               description: (
-                <p>Jesteśmy do Twojej dyspozycji od poniedziałku do piątku od 9 do 20</p>
+                <p>
+                  Jesteśmy do Twojej dyspozycji od poniedziałku do piątku od 9
+                  do 20
+                </p>
               ),
             },
           ]}

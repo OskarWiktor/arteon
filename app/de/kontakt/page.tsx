@@ -1,5 +1,8 @@
 import ContactPage from '@/components/pages/ContactPage';
-import { getContactPageData, getContactAlternates } from '@/lib/i18n/pages/contact';
+import {
+  getContactPageData,
+  getContactAlternates,
+} from '@/lib/i18n/pages/contact';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 const LOCALE = 'de' as const;
@@ -16,7 +19,11 @@ export const metadata = {
     url: toAbsoluteUrl('/de/kontakt'),
     type: 'website',
     images: [
-      { url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 },
+      {
+        url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),
+        width: 1200,
+        height: 630,
+      },
     ],
   },
 };

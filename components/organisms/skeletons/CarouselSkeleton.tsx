@@ -1,7 +1,7 @@
 import { flexCenterBetweenClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import Shimmer from '../../atoms/skeletons/Shimmer';
 import Card from '../Card';
+import Shimmer from '../../atoms/skeletons/Shimmer';
 
 type CarouselVariant = 'project' | 'tool' | 'article' | 'testimonial';
 
@@ -10,6 +10,13 @@ interface CarouselSkeletonProps {
   count?: number;
 }
 
+/**
+ * Skeleton placeholder representing a project card used inside a carousel.
+ *
+ * Renders a fixed-width, non-interactive outlined Card with shimmer placeholders for a media area, title/text lines, a divider, and an action/button.
+ *
+ * @returns A JSX element containing the project card skeleton
+ */
 function ProjectCardSkeleton() {
   return (
     <div className='w-85 shrink-0 snap-start md:w-105 lg:w-130'>
@@ -26,6 +33,14 @@ function ProjectCardSkeleton() {
   );
 }
 
+/**
+ * Renders a skeleton placeholder for a tool card inside the carousel.
+ *
+ * The skeleton matches the carousel card sizing and layout and composes an outlined,
+ * non-interactive Card with a media shimmer and several text/action shimmers.
+ *
+ * @returns A JSX element representing the tool card skeleton.
+ */
 function ToolCardSkeleton() {
   return (
     <div className='w-85 shrink-0 snap-start md:w-105 lg:w-130'>
@@ -42,6 +57,14 @@ function ToolCardSkeleton() {
   );
 }
 
+/**
+ * Renders a skeleton placeholder for an article-style carousel card.
+ *
+ * The skeleton includes a video-aspect shimmer header and several line shimmers to mimic title,
+ * subtitle, and metadata layout inside an outlined, non-interactive card sized for a carousel.
+ *
+ * @returns A JSX element representing the article card skeleton
+ */
 function ArticleCardSkeleton() {
   return (
     <div className='w-85 shrink-0 snap-start md:w-105 lg:w-130'>
@@ -61,6 +84,11 @@ function ArticleCardSkeleton() {
   );
 }
 
+/**
+ * Renders a testimonial skeleton card used as a placeholder in carousels.
+ *
+ * @returns A JSX element containing a centered, outlined testimonial card skeleton with name/title shimmers, a five-item star/score shimmer row, and three centered line shimmers for the testimonial text.
+ */
 function TestimonialCardSkeleton() {
   return (
     <div className='w-85 shrink-0 snap-start md:w-105 lg:w-130'>
@@ -94,6 +122,15 @@ const cardMap: Record<CarouselVariant, () => React.JSX.Element> = {
   testimonial: TestimonialCardSkeleton,
 };
 
+/**
+ * Render a horizontal carousel skeleton composed of a header, a row of variant-specific skeleton cards, and pagination dots.
+ *
+ * Renders `count` skeleton cards of the selected `variant` and up to five pagination dots; the card row uses no-scrollbar utility classes and keeps items horizontally scrollable.
+ *
+ * @param variant - Which skeleton card style to render: `'project' | 'tool' | 'article' | 'testimonial'`. Defaults to `'project'`.
+ * @param count - Number of skeleton cards to render. Defaults to `3`.
+ * @returns The JSX element for the carousel skeleton (header, card row, and pagination dots).
+ */
 export default function CarouselSkeleton({
   variant = 'project',
   count = 3,
@@ -106,7 +143,9 @@ export default function CarouselSkeleton({
         <Shimmer className='h-7 w-1/3' />
         <Shimmer className='h-4 w-32' />
       </div>
-      <div className={cn(noScrollbarClasses, 'flex gap-4 overflow-hidden pb-2')}>
+      <div
+        className={cn(noScrollbarClasses, 'flex gap-4 overflow-hidden pb-2')}
+      >
         {Array.from({ length: count }).map((_, i) => (
           <CardComponent key={i} />
         ))}

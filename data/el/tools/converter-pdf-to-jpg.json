@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Μετατρέψτε σελίδες PDF σε εικόνες JPG. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.",
-      "featureList": ["PDF to JPG conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert PDF to JPG", "PDF to JPG", "Free PDF to JPG converter"]
+      "featureList": [
+        "PDF to JPG conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert PDF to JPG",
+        "PDF to JPG",
+        "Free PDF to JPG converter"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε PDF σε JPG",

@@ -173,26 +173,78 @@ export type ToolsCarouselDictionary = z.infer<typeof ToolsCarouselSchema>;
 export type LanguageSwitcherDictionary = z.infer<typeof LanguageSwitcherSchema>;
 export type MobileNavDictionary = z.infer<typeof MobileNavSchema>;
 export type InfoBannerDictionary = z.infer<typeof InfoBannerSchema>;
-export type ErrorPageComponentsDictionary = z.infer<typeof ErrorPageComponentsSchema>;
-export type RelatedConvertersDictionary = z.infer<typeof RelatedConvertersSchema>;
+export type ErrorPageComponentsDictionary = z.infer<
+  typeof ErrorPageComponentsSchema
+>;
+export type RelatedConvertersDictionary = z.infer<
+  typeof RelatedConvertersSchema
+>;
 
 const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
-  pl: () => import('@/data/pl/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  en: () => import('@/data/en/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  de: () => import('@/data/de/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  es: () => import('@/data/es/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  fr: () => import('@/data/fr/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  pt: () => import('@/data/pt/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  it: () => import('@/data/it/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  ro: () => import('@/data/ro/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  nl: () => import('@/data/nl/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  hu: () => import('@/data/hu/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  cs: () => import('@/data/cs/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  sv: () => import('@/data/sv/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  da: () => import('@/data/da/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  no: () => import('@/data/no/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  fi: () => import('@/data/fi/dictionary.json').then(m => DictionarySchema.parse(m.default)),
-  el: () => import('@/data/el/dictionary.json').then(m => DictionarySchema.parse(m.default)),
+  pl: () =>
+    import('@/data/pl/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  en: () =>
+    import('@/data/en/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  de: () =>
+    import('@/data/de/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  es: () =>
+    import('@/data/es/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  fr: () =>
+    import('@/data/fr/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  pt: () =>
+    import('@/data/pt/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  it: () =>
+    import('@/data/it/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  ro: () =>
+    import('@/data/ro/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  nl: () =>
+    import('@/data/nl/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  hu: () =>
+    import('@/data/hu/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  cs: () =>
+    import('@/data/cs/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  sv: () =>
+    import('@/data/sv/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  da: () =>
+    import('@/data/da/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  no: () =>
+    import('@/data/no/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  fi: () =>
+    import('@/data/fi/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
+  el: () =>
+    import('@/data/el/dictionary.json').then(m =>
+      DictionarySchema.parse(m.default),
+    ),
 };
 
 const cache = new Map<Locale, Dictionary>();

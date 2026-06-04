@@ -43,7 +43,10 @@ export function getAllToolSlugs(locale: string): string[] {
 }
 
 /** Load tool data by URL slug */
-export function getToolDataBySlug(locale: string, slug: string): ToolPageData | null {
+export function getToolDataBySlug(
+  locale: string,
+  slug: string,
+): ToolPageData | null {
   const map = getSlugMap(locale);
   return map[slug]?.data ?? null;
 }

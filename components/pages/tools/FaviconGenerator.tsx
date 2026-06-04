@@ -1,20 +1,17 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
-import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
-import InputColor from '@/components/atoms/form/InputColor';
-import ToolAlert from '@/components/atoms/ToolAlert';
 import ToolInfo from '@/components/atoms/ToolInfo';
-import FileDropzone from '@/components/molecules/FileDropzone';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
+import ToolAlert from '@/components/atoms/ToolAlert';
+import Badge from '@/components/atoms/Badge';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import Card from '@/components/organisms/Card';
-import { ui } from '@/lib/i18n/tools/favicon';
-import { useLocale, type Locale } from '@/lib/LocaleContext';
+import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import { rgbToHex } from '@/lib/tools/color/convert';
-import { type FaviconOutputFile, generateFaviconOutputs } from '@/lib/tools/faviconGenerator';
+import {
+  type FaviconOutputFile,
+  generateFaviconOutputs,
+} from '@/lib/tools/faviconGenerator';
 import {
   isSupportedImageUploadType,
   SUPPORTED_IMAGE_UPLOAD_TYPES,
@@ -27,6 +24,13 @@ import { formatBytes } from '@/utils/formatBytes';
 import { loadImage } from '@/utils/loadImage';
 import { revokeObjectUrl } from '@/utils/objectUrl';
 import { createZipBlob, type ZipFileInput } from '@/utils/zip';
+import InputColor from '@/components/atoms/form/InputColor';
+import FileDropzone from '@/components/molecules/FileDropzone';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
+import Card from '@/components/organisms/Card';
+import { ui } from '@/lib/i18n/tools/favicon';
+import { useLocale } from '@/lib/LocaleContext';
+import { Locale } from '@/types/locale';
 
 function createWebmanifest(
   outputs: FaviconOutputFile[],
@@ -42,7 +46,12 @@ function createWebmanifest(
     }));
 
   const manifest = {
-    name: locale === 'pl' ? 'Twoja strona' : locale === 'de' ? 'Ihre Website' : 'Your website',
+    name:
+      locale === 'pl'
+        ? 'Twoja strona'
+        : locale === 'de'
+          ? 'Ihre Website'
+          : 'Your website',
     short_name: locale === 'pl' ? 'Strona' : locale === 'de' ? 'Seite' : 'Site',
     icons,
     theme_color: backgroundColor,
@@ -57,6 +66,17 @@ const PNG_SIZES = [16, 32, 180, 192, 512];
 
 const DEFAULT_BACKGROUND_COLOR = rgbToHex({ r: 255, g: 255, b: 255 });
 
+/**
+ * Interactive UI for creating, previewing, and downloading favicons from a user-provided image.
+ *
+ * Renders a form to upload a source image, choose PNG sizes and options (ICO, transparent/background color,
+ * include webmanifest, auto-download), generate favicon files, preview results, download individual files or a ZIP,
+ * and clear state.
+ *
+ * The component creates temporary object URLs for image previews and generated files and revokes them when no longer needed.
+ *
+ * @returns The component's rendered JSX element tree.
+ */
 export default function FaviconGenerator() {
   const locale = useLocale();
   const t = ui[locale];
@@ -65,10 +85,14 @@ export default function FaviconGenerator() {
   const [status, setStatus] = useState<ToolStatus>('idle');
   const [error, setError] = useState<string | null>(null);
 
-  const [selectedSizes, setSelectedSizes] = useState<number[]>([16, 32, 180, 192, 512]);
+  const [selectedSizes, setSelectedSizes] = useState<number[]>([
+    16, 32, 180, 192, 512,
+  ]);
   const [includeIco, setIncludeIco] = useState(true);
   const [transparentBackground, setTransparentBackground] = useState(false);
-  const [backgroundColor, setBackgroundColor] = useState(DEFAULT_BACKGROUND_COLOR);
+  const [backgroundColor, setBackgroundColor] = useState(
+    DEFAULT_BACKGROUND_COLOR,
+  );
   const [includeWebmanifest, setIncludeWebmanifest] = useState(false);
   const [autoDownload, setAutoDownload] = useState(false);
   const [isZipping, setIsZipping] = useState(false);
@@ -237,7 +261,10 @@ export default function FaviconGenerator() {
           <form onSubmit={handleGenerate} className='space-y-6'>
             <div>
               <h2 className='h6 mb-2'>{t.addBaseImageLabel}</h2>
-              <FileDropzone accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')} onFiles={handleFiles}>
+              <FileDropzone
+                accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')}
+                onFiles={handleFiles}
+              >
                 <ToolUploadContent
                   dragLabel={t.dragDropImage}
                   clickLabel={t.clickToSelect}
@@ -405,11 +432,31 @@ export default function FaviconGenerator() {
             <div className='space-y-2 text-sm!'>
               {[
                 { name: 'favicon.ico', label: 'ICO 32x32', size: '1.1 KB' },
-                { name: 'favicon-16x16.png', label: 'PNG 16x16', size: '0.4 KB' },
-                { name: 'favicon-32x32.png', label: 'PNG 32x32', size: '0.8 KB' },
-                { name: 'apple-touch-icon.png', label: 'PNG 180x180', size: '5.2 KB' },
-                { name: 'android-chrome-192x192.png', label: 'PNG 192x192', size: '6.1 KB' },
-                { name: 'android-chrome-512x512.png', label: 'PNG 512x512', size: '18.7 KB' },
+                {
+                  name: 'favicon-16x16.png',
+                  label: 'PNG 16x16',
+                  size: '0.4 KB',
+                },
+                {
+                  name: 'favicon-32x32.png',
+                  label: 'PNG 32x32',
+                  size: '0.8 KB',
+                },
+                {
+                  name: 'apple-touch-icon.png',
+                  label: 'PNG 180x180',
+                  size: '5.2 KB',
+                },
+                {
+                  name: 'android-chrome-192x192.png',
+                  label: 'PNG 192x192',
+                  size: '6.1 KB',
+                },
+                {
+                  name: 'android-chrome-512x512.png',
+                  label: 'PNG 512x512',
+                  size: '18.7 KB',
+                },
               ].map(f => (
                 <ToolFileRow
                   key={f.name}
@@ -441,7 +488,7 @@ export default function FaviconGenerator() {
                         flexCenterClasses,
                       )}
                     >
-                      {}
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && (
                         <Image
                           src={sourcePreviewUrl}
@@ -460,7 +507,7 @@ export default function FaviconGenerator() {
                         flexCenterClasses,
                       )}
                     >
-                      {}
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && (
                         <Image
                           src={sourcePreviewUrl}
@@ -490,7 +537,9 @@ export default function FaviconGenerator() {
                   preview={
                     <button
                       type='button'
-                      onClick={() => window.open(item.url, '_blank', 'noopener,noreferrer')}
+                      onClick={() =>
+                        open(item.url, '_blank', 'noopener,noreferrer')
+                      }
                       className='hidden h-10 w-10 overflow-hidden rounded-md border border-neutral-200 bg-neutral-50 md:block'
                       title={t.clickToPreview}
                     >

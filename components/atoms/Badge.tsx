@@ -88,7 +88,9 @@ export default function Badge({
 
   const baseClasses = 'inline-flex items-center rounded-lg font-medium';
   const hoverClasses =
-    ResolvedComponent !== 'span' && !disabled ? 'cursor-pointer hover:border-light' : '';
+    ResolvedComponent !== 'span' && !disabled
+      ? 'cursor-pointer hover:border-light'
+      : '';
   const disabledClasses = disabled ? 'cursor-not-allowed opacity-40' : '';
   const classes = `${baseClasses} ${sizeClasses[resolvedSize]} ${variantClasses[resolvedVariant]} ${hoverClasses} ${disabledClasses} ${className}`;
 
@@ -102,7 +104,8 @@ export default function Badge({
     ...(target && { target }),
     ...(rel && { rel }),
     ...(type && { type }),
-    ...(disabled !== undefined && ResolvedComponent === 'button' && { disabled }),
+    ...(disabled !== undefined &&
+      ResolvedComponent === 'button' && { disabled }),
   };
 
   return <ResolvedComponent {...commonProps}>{content}</ResolvedComponent>;

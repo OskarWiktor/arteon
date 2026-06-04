@@ -40,7 +40,10 @@ export default function SectionHeader({
           </Subtitle>
         </div>
       )}
-      <h2 className={cn('h3 mb-2 scroll-mt-26 lg:mb-4', titleClassName)} id={titleId}>
+      <h2
+        className={cn('h3 mb-2 scroll-mt-26 lg:mb-4', titleClassName)}
+        id={titleId}
+      >
         {title}
       </h2>
       {description && <p className={descriptionClassName}>{description}</p>}

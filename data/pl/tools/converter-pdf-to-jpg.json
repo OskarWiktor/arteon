@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter PDF na JPG - darmowy, bez limitu stron",
-      "alternateName": ["Zamiana PDF na JPG", "Konwersja PDF do JPG", "PDF to JPG converter"],
+      "alternateName": [
+        "Zamiana PDF na JPG",
+        "Konwersja PDF do JPG",
+        "PDF to JPG converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Darmowy konwerter PDF na JPG. Zamień strony PDF na obrazy JPG w przeglądarce - pliki nie są wysyłane na serwer.",

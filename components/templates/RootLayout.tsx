@@ -51,7 +51,11 @@ const ORG_DESCRIPTIONS: Record<string, string> = {
 };
 
 function getOrgDescription(lang: string): string {
-  return ORG_DESCRIPTIONS[lang] || ORG_DESCRIPTIONS[lang.split('-')[0]] || ORG_DESCRIPTIONS['en'];
+  return (
+    ORG_DESCRIPTIONS[lang] ||
+    ORG_DESCRIPTIONS[lang.split('-')[0]] ||
+    ORG_DESCRIPTIONS['en']
+  );
 }
 
 function buildOrgJsonLd(lang: string) {
@@ -215,9 +219,16 @@ export default function RootLayout({ lang, children }: RootLayoutProps) {
           href='https://fundingchoicesmessages.google.com'
           crossOrigin='anonymous'
         />
-        <link rel='preconnect' href='https://tpc.googlesyndication.com' crossOrigin='anonymous' />
+        <link
+          rel='preconnect'
+          href='https://tpc.googlesyndication.com'
+          crossOrigin='anonymous'
+        />
         <link rel='dns-prefetch' href='https://pagead2.googlesyndication.com' />
-        <link rel='dns-prefetch' href='https://fundingchoicesmessages.google.com' />
+        <link
+          rel='dns-prefetch'
+          href='https://fundingchoicesmessages.google.com'
+        />
         <link rel='dns-prefetch' href='https://fundingchoices.google.com' />
         <link rel='dns-prefetch' href='https://tpc.googlesyndication.com' />
         <link rel='dns-prefetch' href='https://www.googletagmanager.com' />

@@ -74,7 +74,8 @@ export function buildServiceSchema(params: {
       '@type': 'ServiceChannel',
       serviceUrl: toAbsoluteUrl('/kontakt'),
       availableLanguage: availableLanguages,
-      description: 'Usługa świadczona zdalnie dla klientów polskojęzycznych na całym świecie.',
+      description:
+        'Usługa świadczona zdalnie dla klientów polskojęzycznych na całym świecie.',
     };
   }
 

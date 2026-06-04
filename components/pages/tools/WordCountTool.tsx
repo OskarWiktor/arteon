@@ -11,7 +11,10 @@ import Card from '@/components/organisms/Card';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { ui } from '@/lib/i18n/tools/wordCount';
 import { useLocale } from '@/lib/LocaleContext';
-import { getReadabilityLabel, getReadabilityColor } from '@/lib/tools/text/readability';
+import {
+  getReadabilityLabel,
+  getReadabilityColor,
+} from '@/lib/tools/text/readability';
 import {
   analyzeText,
   formatReadingTime,
@@ -40,15 +43,31 @@ export default function WordCountTool() {
   const readabilityLabel = getReadabilityLabel(metrics.fleschScore, locale);
   const readabilityColor = getReadabilityColor(metrics.fleschScore, locale);
 
-  const toolbarActions: { key: string; label: string; fn: (t: string) => string }[] = [
+  const toolbarActions: {
+    key: string;
+    label: string;
+    fn: (t: string) => string;
+  }[] = [
     { key: 'uppercase', label: t.uppercase, fn: toUpperCase },
     { key: 'lowercase', label: t.lowercase, fn: toLowerCase },
     { key: 'sentenceCase', label: t.sentenceCase, fn: toSentenceCase },
     { key: 'titleCase', label: t.titleCase, fn: toTitleCase },
     { key: 'toggleCase', label: t.toggleCase, fn: toToggleCase },
-    { key: 'removeExtraSpaces', label: t.removeExtraSpaces, fn: removeExtraSpaces },
-    { key: 'removeEmptyLines', label: t.removeEmptyLines, fn: removeEmptyLines },
-    { key: 'removeDuplicateLines', label: t.removeDuplicateLines, fn: removeDuplicateLines },
+    {
+      key: 'removeExtraSpaces',
+      label: t.removeExtraSpaces,
+      fn: removeExtraSpaces,
+    },
+    {
+      key: 'removeEmptyLines',
+      label: t.removeEmptyLines,
+      fn: removeEmptyLines,
+    },
+    {
+      key: 'removeDuplicateLines',
+      label: t.removeDuplicateLines,
+      fn: removeDuplicateLines,
+    },
     { key: 'sortAsc', label: t.sortAsc, fn: sortLinesAsc },
     { key: 'sortDesc', label: t.sortDesc, fn: sortLinesDesc },
   ];
@@ -63,13 +82,25 @@ export default function WordCountTool() {
           </div>
 
           <div className='space-y-3'>
-            <ToolStatRow label={t.words} value={<span className='text-lg'>{metrics.words}</span>} />
-            <ToolStatRow label={t.charsWithSpaces} value={metrics.charsWithSpaces} />
-            <ToolStatRow label={t.charsWithoutSpaces} value={metrics.charsWithoutSpaces} />
+            <ToolStatRow
+              label={t.words}
+              value={<span className='text-lg'>{metrics.words}</span>}
+            />
+            <ToolStatRow
+              label={t.charsWithSpaces}
+              value={metrics.charsWithSpaces}
+            />
+            <ToolStatRow
+              label={t.charsWithoutSpaces}
+              value={metrics.charsWithoutSpaces}
+            />
             <ToolStatRow label={t.sentences} value={metrics.sentences} />
             <ToolStatRow label={t.paragraphs} value={metrics.paragraphs} />
             <ToolStatRow label={t.uniqueWords} value={metrics.uniqueWords} />
-            <ToolStatRow label={t.avgWordLength} value={metrics.avgWordLength} />
+            <ToolStatRow
+              label={t.avgWordLength}
+              value={metrics.avgWordLength}
+            />
             <ToolStatRow
               label={t.readingTime}
               value={formatReadingTime(metrics.readingTimeMinutes, locale)}
@@ -111,7 +142,9 @@ export default function WordCountTool() {
                 </>
               ) : (
                 <>
-                  <RiFileCopyLine className={cn('mr-2', smallIconSizeClasses)} />
+                  <RiFileCopyLine
+                    className={cn('mr-2', smallIconSizeClasses)}
+                  />
                   {t.copyText}
                 </>
               )}
@@ -141,7 +174,11 @@ export default function WordCountTool() {
         </Card>
       </div>
 
-      <Card interactive={false} padding='md' className='flex flex-wrap items-center'>
+      <Card
+        interactive={false}
+        padding='md'
+        className='flex flex-wrap items-center'
+      >
         <span className='tool-value'>{t.toolbarTitle}</span>
         <div className='flex flex-wrap gap-2'>
           {toolbarActions.map(action => (

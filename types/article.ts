@@ -12,7 +12,12 @@ export type Article = {
   dateModified?: string;
   faq?: { question: string; answer: string }[];
   contentBlocks: Array<
-    | { type: 'richtext'; html: string; breakBefore?: boolean; breakAfter?: boolean }
+    | {
+        type: 'richtext';
+        html: string;
+        breakBefore?: boolean;
+        breakAfter?: boolean;
+      }
     | {
         type: 'code';
         code: string;
@@ -71,8 +76,19 @@ export type Article = {
         breakBefore?: boolean;
         breakAfter?: boolean;
       }
-    | { type: 'callout'; title?: string; html: string; breakBefore?: boolean; breakAfter?: boolean }
-    | { type: 'colorPalette'; colors: string[]; breakBefore?: boolean; breakAfter?: boolean }
+    | {
+        type: 'callout';
+        title?: string;
+        html: string;
+        breakBefore?: boolean;
+        breakAfter?: boolean;
+      }
+    | {
+        type: 'colorPalette';
+        colors: string[];
+        breakBefore?: boolean;
+        breakAfter?: boolean;
+      }
     | { type: 'ad'; slot?: string; breakBefore?: boolean; breakAfter?: boolean }
   >;
   seo?: { title?: string; description?: string; canonical?: string };

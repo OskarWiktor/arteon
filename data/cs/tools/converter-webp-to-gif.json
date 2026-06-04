@@ -205,7 +205,10 @@
         },
         {
           "label": "Podpora webových prohlížečů",
-          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Všechny prohlížeče"]
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Všechny prohlížeče"
+          ]
         },
         {
           "label": "Hloubka barev",

@@ -13,6 +13,14 @@ const ToolHelperVariantClasses = {
   error: 'text-error-text',
 };
 
-export default function ToolHelper({ children, className, variant = 'default' }: ToolHelperProps) {
-  return <p className={cn('text-sm', ToolHelperVariantClasses[variant], className)}>{children}</p>;
+export default function ToolHelper({
+  children,
+  className,
+  variant = 'default',
+}: ToolHelperProps) {
+  return (
+    <p className={cn('text-sm', ToolHelperVariantClasses[variant], className)}>
+      {children}
+    </p>
+  );
 }

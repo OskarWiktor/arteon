@@ -31,7 +31,10 @@ export const metadata = {
   title: 'Projekt logo | Arteon',
   description:
     'Logo jako fundament identyfikacji wizualnej. Tworzymy czytelny znak z wersjami kolorystycznymi i mini-księgą znaku.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo' },
+  alternates: {
+    canonical:
+      'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo',
+  },
   openGraph: {
     title: 'Projekt logo | Arteon',
     description:
@@ -72,9 +75,10 @@ export default function OfferDesignLogoPage() {
         title='Projekt logo'
         description={
           <>
-            Silny znak porządkuje komunikację i wyróżnia markę. Projektujemy logo z myślą o
-            czytelności, skalowalności i psychologii odbiorcy - z wersjami kolorystycznymi oraz
-            mini-księgą znaku, którą wykorzystasz przez lata.
+            Silny znak porządkuje komunikację i wyróżnia markę. Projektujemy
+            logo z myślą o czytelności, skalowalności i psychologii odbiorcy - z
+            wersjami kolorystycznymi oraz mini-księgą znaku, którą wykorzystasz
+            przez lata.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -88,23 +92,34 @@ export default function OfferDesignLogoPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
-        fourth={{ href: `/uslugi/projekty-graficzne/projekt-logo`, label: 'Projekt logo' }}
+        third={{
+          href: `/uslugi/projekty-graficzne`,
+          label: 'Projekty graficzne',
+        }}
+        fourth={{
+          href: `/uslugi/projekty-graficzne/projekt-logo`,
+          label: 'Projekt logo',
+        }}
         includeJsonLd
       />
 
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Wybrane realizacje projektów logo dla firm' category='logo' />
+        <ProjectsCarousel
+          title='Wybrane realizacje projektów logo dla firm'
+          category='logo'
+        />
 
         <Divider line />
 
         <SectionInfo title='Co zyskujesz zamawiając projekt logo?'>
           <p>
-            <strong>Profesjonalne logo wzmacnia wizerunek i ułatwia sprzedaż.</strong> Spójny
-            branding realnie przekłada się na wynik - firmy utrzymujące konsekwentną identyfikację
-            raportują ok.{` `}
+            <strong>
+              Profesjonalne logo wzmacnia wizerunek i ułatwia sprzedaż.
+            </strong>{' '}
+            Spójny branding realnie przekłada się na wynik - firmy utrzymujące
+            konsekwentną identyfikację raportują ok.{` `}
             <strong>10-20% wyższy wzrost/przychody</strong>
             <a
               href='https://www.marq.com/blog/brand-consistency-competitive-advantage'
@@ -120,10 +135,11 @@ export default function OfferDesignLogoPage() {
           <br />
 
           <p>
-            <strong>Logo buduje wiarygodność w ułamku sekundy.</strong> Jakość oprawy wizualnej
-            (logo, układ, estetyka) silnie wpływa na ocenę firmy: ok.{` `}
-            <strong>75%</strong> osób przypisuje wiarygodność marce na podstawie tego, jak wyglądają
-            jej materiały
+            <strong>Logo buduje wiarygodność w ułamku sekundy.</strong> Jakość
+            oprawy wizualnej (logo, układ, estetyka) silnie wpływa na ocenę
+            firmy: ok.{` `}
+            <strong>75%</strong> osób przypisuje wiarygodność marce na podstawie
+            tego, jak wyglądają jej materiały
             <a
               href='https://rareformnewmedia.com/credibility-in-web-design/'
               target='_blank'
@@ -141,7 +157,9 @@ export default function OfferDesignLogoPage() {
             <strong>Dobre logo robi trzy rzeczy naraz:</strong>
           </p>
           <ul className='ml-5 list-disc'>
-            <li>Porządkuje komunikację i ułatwia tworzenie kolejnych materiałów,</li>
+            <li>
+              Porządkuje komunikację i ułatwia tworzenie kolejnych materiałów,
+            </li>
             <li>Buduje rozpoznawalność i pamięć marki w głowie klienta,</li>
             <li>Podnosi zaufanie.</li>
           </ul>
@@ -157,47 +175,72 @@ export default function OfferDesignLogoPage() {
               title: 'Znak, który prowadzi markę',
               description: (
                 <>
-                  Tworzymy logo, które jest czytelne, charakterystyczne i łatwe do zapamiętania -
-                  również w małych rozmiarach.
+                  Tworzymy logo, które jest czytelne, charakterystyczne i łatwe
+                  do zapamiętania - również w małych rozmiarach.
                 </>
               ),
-              icon: <RiQuillPenLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiQuillPenLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Warianty i zastosowania',
               description: (
                 <>
-                  Otrzymujesz wersje kolorystyczne, monochromatyczne, poziome i pionowe - gotowe do
-                  użycia na stronie, w mediach społecznościowych i w druku.
+                  Otrzymujesz wersje kolorystyczne, monochromatyczne, poziome i
+                  pionowe - gotowe do użycia na stronie, w mediach
+                  społecznościowych i w druku.
                 </>
               ),
-              icon: <RiPantoneLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiPantoneLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Prosta instrukcja użycia',
               description: (
                 <>
-                  Dołączamy mini-księgę znaku z podstawowymi wytycznymi, dzięki czemu każdy w firmie
-                  wie, jak poprawnie korzystać z logo.
+                  Dołączamy mini-księgę znaku z podstawowymi wytycznymi, dzięki
+                  czemu każdy w firmie wie, jak poprawnie korzystać z logo.
                 </>
               ),
-              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBookOpenLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Pełna własność i pliki źródłowe',
               description: (
                 <>
-                  Po zakończeniu projektu masz komplet plików wektorowych i pełnię praw - możesz
-                  swobodnie rozwijać identyfikację w przyszłości.
+                  Po zakończeniu projektu masz komplet plików wektorowych i
+                  pełnię praw - możesz swobodnie rozwijać identyfikację w
+                  przyszłości.
                 </>
               ),
-              icon: <RiKey2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiKey2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Faktura po realizacji',
-              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              description: (
+                <>
+                  Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
+                  formie.
+                </>
+              ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
           ]}
@@ -205,23 +248,27 @@ export default function OfferDesignLogoPage() {
 
         <Divider line />
 
-        <SectionInfo title='Dla kogo projekt logo ma największy sens?' subtitle='Dla kogo'>
+        <SectionInfo
+          title='Dla kogo projekt logo ma największy sens?'
+          subtitle='Dla kogo'
+        >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Dla nowych firm i start-upów,</strong> które chcą od początku wejść na rynek z
-              klarowną, przemyślaną identyfikacją.
+              <strong>Dla nowych firm i start-upów,</strong> które chcą od
+              początku wejść na rynek z klarowną, przemyślaną identyfikacją.
             </li>
             <li>
-              <strong>Dla lokalnych biznesów,</strong> które rozwijają się i potrzebują logo na
-              poziomie jakości usług, które oferują.
+              <strong>Dla lokalnych biznesów,</strong> które rozwijają się i
+              potrzebują logo na poziomie jakości usług, które oferują.
             </li>
             <li>
-              <strong>Dla ekspertów i marek osobistych,</strong> gdzie logo musi współgrać z
-              reputacją, jaką budujesz latami.
+              <strong>Dla ekspertów i marek osobistych,</strong> gdzie logo musi
+              współgrać z reputacją, jaką budujesz latami.
             </li>
             <li>
-              <strong>Dla firm w rebrandingu,</strong> które zmieniają kierunek, grupę docelową lub
-              poziom usług i potrzebują nowego symbolu tej zmiany.
+              <strong>Dla firm w rebrandingu,</strong> które zmieniają kierunek,
+              grupę docelową lub poziom usług i potrzebują nowego symbolu tej
+              zmiany.
             </li>
           </ul>
         </SectionInfo>
@@ -234,20 +281,20 @@ export default function OfferDesignLogoPage() {
         >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Spójny wizerunek na wszystkich nośnikach</strong> - od strony WWW, przez media
-              społecznościowe, po druk.
+              <strong>Spójny wizerunek na wszystkich nośnikach</strong> - od
+              strony WWW, przez media społecznościowe, po druk.
             </li>
             <li>
-              <strong>Łatwiejsze tworzenie materiałów,</strong> bo logo wyznacza kierunek dla
-              kolorów, typografii i stylu.
+              <strong>Łatwiejsze tworzenie materiałów,</strong> bo logo wyznacza
+              kierunek dla kolorów, typografii i stylu.
             </li>
             <li>
-              <strong>Wyższe postrzegane zaufanie,</strong> co ułatwia domykanie sprzedaży i
-              podnoszenie stawek.
+              <strong>Wyższe postrzegane zaufanie,</strong> co ułatwia domykanie
+              sprzedaży i podnoszenie stawek.
             </li>
             <li>
-              <strong>Większa rozpoznawalność,</strong> gdy ten sam znak konsekwentnie pojawia się w
-              wielu miejscach.
+              <strong>Większa rozpoznawalność,</strong> gdy ten sam znak
+              konsekwentnie pojawia się w wielu miejscach.
             </li>
           </ul>
         </SectionInfo>
@@ -382,9 +429,11 @@ export default function OfferDesignLogoPage() {
             {
               title: 'Identyfikacja wizualna',
               size: 'large',
-              backgroundImage: '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
+              backgroundImage:
+                '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Projekt wizytówki',
@@ -405,7 +454,8 @@ export default function OfferDesignLogoPage() {
             {
               title: 'Sklepy internetowe',
               size: 'small',
-              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              backgroundImage:
+                '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },

@@ -202,7 +202,10 @@
         },
         {
           "label": "Luettavuus",
-          "values": ["Helppo ihmisille", "Pitkä mutta tietokoneelle luonnollinen"]
+          "values": [
+            "Helppo ihmisille",
+            "Pitkä mutta tietokoneelle luonnollinen"
+          ]
         }
       ]
     },

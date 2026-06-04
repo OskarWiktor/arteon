@@ -1,18 +1,18 @@
 'use client';
 
-import dynamic from 'next/dynamic';
-import Image from 'next/image';
 import { startTransition, useEffect, useState } from 'react';
-import ButtonIcon from '@/components/atoms/buttons/ButtonIcon';
+import dynamic from 'next/dynamic';
 import {
   NavMenuLine as RiMenuLine,
   NavCloseLine as RiCloseLine,
   NavSearchLine as RiSearchLine,
 } from '@/components/atoms/NavIcons';
-import Wrapper from '@/components/atoms/Wrapper';
-import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
+import Image from 'next/image';
 import { DesktopNavSkeleton } from '@/components/organisms/skeletons/NavSkeleton';
+import Wrapper from '@/components/atoms/Wrapper';
+import ButtonIcon from '@/components/atoms/buttons/ButtonIcon';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
+import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import {
   flexCenterClasses,
@@ -23,14 +23,26 @@ import {
 import { cn } from '@/lib/utils';
 import InlineLink from '../../atoms/InlineLink';
 
-const MobileNavigation = dynamic(() => import('./MobileNavigation'), { ssr: false });
+const MobileNavigation = dynamic(() => import('./MobileNavigation'), {
+  ssr: false,
+});
 const DesktopNavigation = dynamic(() => import('./DesktopNavigation'), {
   ssr: false,
   loading: () => <DesktopNavSkeleton />,
 });
 
-const SearchDialog = dynamic(() => import('@/components/organisms/SearchDialog'), { ssr: false });
+const SearchDialog = dynamic(
+  () => import('@/components/organisms/SearchDialog'),
+  { ssr: false },
+);
 
+/**
+ * Render the site header and navigation shell with responsive desktop and mobile controls, language switching, and an integrated search dialog.
+ *
+ * The component manages local state for the mobile menu and search dialog, closes the mobile menu on Escape, and opens the search dialog when the user presses Ctrl/Cmd+K or interacts with the search controls.
+ *
+ * @returns The navigation header element containing logo, desktop and mobile navigation controls, language switcher, and the search dialog.
+ */
 export default function NavigationShell() {
   const locale = useLocale();
   const isPl = locale === 'pl';
@@ -57,7 +69,10 @@ export default function NavigationShell() {
   }, []);
 
   return (
-    <header id='navigation' className='sticky top-0 z-50 w-full bg-white shadow-md'>
+    <header
+      id='navigation'
+      className='sticky top-0 z-50 w-full bg-white shadow-md'
+    >
       {/*
       <SectionInfoBanner
         items={[
@@ -100,7 +115,10 @@ export default function NavigationShell() {
               )}
               aria-label={`${dict.search.ariaSearch} (Ctrl+K)`}
             >
-              <RiSearchLine className={normalIconSizeClasses} aria-hidden='true' />
+              <RiSearchLine
+                className={normalIconSizeClasses}
+                aria-hidden='true'
+              />
             </button>
 
             <a
@@ -127,7 +145,10 @@ export default function NavigationShell() {
               )}
               aria-label={dict.search.ariaSearch}
             >
-              <RiSearchLine className={normalIconSizeClasses} aria-hidden='true' />
+              <RiSearchLine
+                className={normalIconSizeClasses}
+                aria-hidden='true'
+              />
             </button>
             <ButtonIcon
               onClick={toggleMenu}
@@ -146,7 +167,10 @@ export default function NavigationShell() {
 
         <MobileNavigation isOpen={isOpen} setIsOpen={setIsOpen} />
 
-        <SearchDialog isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+        <SearchDialog
+          isOpen={isSearchOpen}
+          onClose={() => setIsSearchOpen(false)}
+        />
       </Wrapper>
     </header>
   );

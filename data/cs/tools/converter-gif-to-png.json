@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Převodník GIF na PNG",
-      "alternateName": ["Převést GIF na PNG", "Konverze GIF do PNG", "Převodník GIF na PNG zdarma"],
+      "alternateName": [
+        "Převést GIF na PNG",
+        "Konverze GIF do PNG",
+        "Převodník GIF na PNG zdarma"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",

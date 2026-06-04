@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter PDF na WebP - darmowy, bez limitu stron",
-      "alternateName": ["Zamiana PDF na WebP", "Konwersja PDF do WebP", "PDF to WebP converter"],
+      "alternateName": [
+        "Zamiana PDF na WebP",
+        "Konwersja PDF do WebP",
+        "PDF to WebP converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Darmowy konwerter PDF na WebP. Zamień strony PDF na obrazy WebP w przeglądarce - pliki nie są wysyłane na serwer.",
@@ -192,7 +196,10 @@
         },
         {
           "label": "Obsługa w przeglądarkach",
-          "values": ["Wbudowana przeglądarka PDF", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+          "values": [
+            "Wbudowana przeglądarka PDF",
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          ]
         },
         {
           "label": "Mały rozmiar pliku",

@@ -16,17 +16,31 @@ interface SectionTabsProps {
   tabs: Tab[];
 }
 
+/**
+ * Renders a tabbed section with an optional header and manages the active tab.
+ *
+ * Displays a segmented control of tabs (icon always visible, title visible on small screens and up) and the currently selected tab's content. Associates tab buttons and their panel with stable ARIA ids and updates the active tab when a tab button is clicked.
+ *
+ * @param title - Optional section title; when provided a header is rendered and used as the section's accessible label.
+ * @param tabs - Array of tabs, each providing `title`, `icon`, and `content` for its tab button and panel.
+ */
 export default function SectionTabs({ title, tabs }: SectionTabsProps) {
   const [activeTab, setActiveTab] = useState(0);
   const autoId = useId();
   const headingId = `tabs-title-${autoId}`;
 
   return (
-    <section data-section='tabs' aria-labelledby={title ? headingId : undefined}>
+    <section
+      data-section='tabs'
+      aria-labelledby={title ? headingId : undefined}
+    >
       {title && <SectionHeader titleId={headingId} title={title} />}
 
       <div className='space-y-4'>
-        <div className='flex gap-2 rounded-lg bg-primary-light p-1.5' role='tablist'>
+        <div
+          className='flex gap-2 rounded-lg bg-primary-light p-1.5'
+          role='tablist'
+        >
           {tabs.map((tab, index) => (
             <button
               key={index}

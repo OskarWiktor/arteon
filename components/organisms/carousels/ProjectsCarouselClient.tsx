@@ -3,12 +3,13 @@
 import { useRef } from 'react';
 import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
 import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
-import SectionHeader from '@/components/molecules/SectionHeader';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
+
+import SectionHeader from '@/components/molecules/SectionHeader';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
+import { cn } from '@/lib/utils';
+import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
 
@@ -22,6 +23,20 @@ type Props = {
   excludeSlug?: string;
 };
 
+/**
+ * Render a horizontally scrollable projects carousel with optional filtering, navigation controls, and pagination dots.
+ *
+ * The displayed list is determined in this order: explicit `slugs` (a single slug is wrapped into an array), then `category`, then the full `projects` list. If `excludeSlug` is provided that project is removed from the list. The resulting list is truncated to `max` items.
+ *
+ * @param projects - Array of project previews to source items from
+ * @param max - Maximum number of projects to display (default: 10)
+ * @param title - Heading title for the section (default: "Nasze Realizacje")
+ * @param subtitle - Optional subtitle rendered under the heading
+ * @param category - If provided, only projects whose `category` includes this value will be shown (used when `slugs` is not provided)
+ * @param slugs - Optional slug or list of slugs specifying the exact order of projects to display; when present, these take precedence over `category`
+ * @param excludeSlug - Optional slug of a project to exclude from the final list
+ * @returns The carousel section element, or `null` when there are no projects to display
+ */
 export default function ProjectsCarouselClient({
   projects,
   max = 10,
@@ -40,7 +55,9 @@ export default function ProjectsCarouselClient({
 
     if (slugsArray && slugsArray.length) {
       const map = new Map(projects.map(p => [p.slug, p] as const));
-      list = slugsArray.map(s => map.get(s)).filter(Boolean) as ProjectPreview[];
+      list = slugsArray
+        .map(s => map.get(s))
+        .filter(Boolean) as ProjectPreview[];
     } else if (category) {
       list = projects.filter(p => (p.category || []).includes(category));
     } else {
@@ -54,14 +71,20 @@ export default function ProjectsCarouselClient({
     return list.slice(0, max);
   })();
 
-  const { currentSlide, maxSlides, isScrollable, scrollByCards, goToSlide, onKeyDown } =
-    useCarouselScroller({
-      itemCount: finalProjects.length,
-      scrollRef,
-      cardRef,
-      autoPlay: true,
-      autoPlayIntervalMs: AUTO_PLAY_INTERVAL_MS,
-    });
+  const {
+    currentSlide,
+    maxSlides,
+    isScrollable,
+    scrollByCards,
+    goToSlide,
+    onKeyDown,
+  } = useCarouselScroller({
+    itemCount: finalProjects.length,
+    scrollRef,
+    cardRef,
+    autoPlay: true,
+    autoPlayIntervalMs: AUTO_PLAY_INTERVAL_MS,
+  });
 
   if (!finalProjects.length) return null;
 
