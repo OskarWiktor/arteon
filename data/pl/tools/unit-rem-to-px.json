@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Przelicznik rem na px – konwerter CSS z ustawianym font-size",
-      "alternateName": ["Przelicznik rem na px", "Kalkulator rem CSS", "rem to pixels"],
+      "alternateName": [
+        "Przelicznik rem na px",
+        "Kalkulator rem CSS",
+        "rem to pixels"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz rem na piksele i odwrotnie – ustaw bazowy font-size i sprawdz wynik natychmiast. Niezbedny przy pracy z Tailwind CSS i dostepnoscia WCAG. Bez rejestracji.",
@@ -199,7 +203,10 @@
         },
         {
           "label": "Dostępność",
-          "values": ["Skaluje się z preferencjami", "Stała niezależnie od ustawień"]
+          "values": [
+            "Skaluje się z preferencjami",
+            "Stała niezależnie od ustawień"
+          ]
         },
         {
           "label": "Responsywność",

@@ -1,5 +1,5 @@
-import type { ToolItemKey } from '@/types/tools/common';
 import type { Locale } from '@/types/locale';
+import type { ToolItemKey } from '@/types/tools/common';
 
 export interface ToolPageData {
   toolKey: ToolItemKey;

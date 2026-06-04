@@ -1,7 +1,7 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import ToolPage, { generateToolMetadata } from '@/components/pages/ToolPage';
-import { getAllToolSlugs, getToolDataBySlug } from '@/lib/tools/data-loader';
-import type { Metadata } from 'next';
+import { getAllToolSlugs, getToolDataBySlug } from '@/lib/tools/dataLoader';
 
 const LOCALE = 'cs';
 
@@ -20,7 +20,11 @@ export async function generateMetadata({
   return generateToolMetadata(data);
 }
 
-export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const data = getToolDataBySlug(LOCALE, slug);
   if (!data) notFound();

@@ -3,14 +3,13 @@
 import { useRef } from 'react';
 import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
 import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
-import type { Testimonial } from '@/types/testimonial';
 import TestimonialCard from '@/components/organisms/carousels/TestimonialCard';
+import testimonialsPl from '@/data/pl/testimonials.json';
+import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
+import type { Testimonial } from '@/types/testimonial';
 import SectionHeader from '../../molecules/SectionHeader';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
-
-import testimonialsPl from '@/data/pl/testimonials.json';
-import { cn } from '@/lib/utils';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
 
@@ -43,20 +42,30 @@ export default function TestimonialsCarousel({
     return list;
   })();
 
-  const { currentSlide, maxSlides, isScrollable, scrollByCards, goToSlide, onKeyDown } =
-    useCarouselScroller({
-      itemCount: items.length,
-      scrollRef,
-      cardRef,
-      autoPlay: true,
-      autoPlayIntervalMs: AUTO_PLAY_INTERVAL_MS,
-    });
+  const {
+    currentSlide,
+    maxSlides,
+    isScrollable,
+    scrollByCards,
+    goToSlide,
+    onKeyDown,
+  } = useCarouselScroller({
+    itemCount: items.length,
+    scrollRef,
+    cardRef,
+    autoPlay: true,
+    autoPlayIntervalMs: AUTO_PLAY_INTERVAL_MS,
+  });
 
   if (!items.length) return null;
 
   return (
     <section className='w-full' aria-labelledby='testimonials-heading'>
-      <SectionHeader subtitle={subtitle} title={title} titleId='testimonials-heading' />
+      <SectionHeader
+        subtitle={subtitle}
+        title={title}
+        titleId='testimonials-heading'
+      />
 
       <div className='relative'>
         <div

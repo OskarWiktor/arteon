@@ -1,9 +1,4 @@
-import WorkSteps from '@/components/organisms/WorkSteps';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import CTABanner from '@/components/organisms/CTABanner';
-import Divider from '@/components/atoms/Divider';
-import SectionBento from '@/components/organisms/sections/SectionBento';
+import Script from 'next/script';
 import {
   RiPencilRuler2Line,
   RiArticleLine,
@@ -11,20 +6,25 @@ import {
   RiLayoutLine,
   RiMoneyDollarCircleLine,
 } from 'react-icons/ri';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { buildServiceSchema } from '@/lib/seo/serviceSchema';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 export const metadata = {
@@ -32,11 +32,13 @@ export const metadata = {
   description:
     'Projekt ulotki reklamowej z układem, typografią i grafiką. Pliki do druku (CMYK) oraz wersja cyfrowa.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
+    canonical:
+      'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
   },
   openGraph: {
     title: 'Projekt ulotki | Arteon',
-    description: 'Skuteczna ulotka z jasnym przekazem i mocnym CTA. Pliki gotowe do druku.',
+    description:
+      'Skuteczna ulotka z jasnym przekazem i mocnym CTA. Pliki gotowe do druku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
     type: 'website',
     images: [
@@ -73,8 +75,8 @@ export default function OfferDesignFlyerPage() {
         title='Projekt ulotki'
         description={
           <>
-            Tworzymy ulotki reklamowe z jasnym przekazem i czytelnym układem. Pliki do druku (CMYK)
-            oraz wersja cyfrowa.
+            Tworzymy ulotki reklamowe z jasnym przekazem i czytelnym układem.
+            Pliki do druku (CMYK) oraz wersja cyfrowa.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -102,31 +104,37 @@ export default function OfferDesignFlyerPage() {
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Realizacje projektów graficznych' category='grafika' />
+        <ProjectsCarousel
+          title='Realizacje projektów graficznych'
+          category='grafika'
+        />
 
         <Divider line />
 
         <SectionInfo title='Co zyskujesz zamawiając projekt ulotki?'>
           <p>
             <strong>
-              Profesjonalna ulotka dociera tam, gdzie reklama cyfrowa znika po sekundzie.
+              Profesjonalna ulotka dociera tam, gdzie reklama cyfrowa znika po
+              sekundzie.
             </strong>{' '}
-            Materiały drukowane są łatwiejsze w odbiorze i dłużej zostają w pamięci - badania
-            neuromarketingowe pokazują niższe obciążenie poznawcze i wyższą zapamiętywalność niż w
-            kanale wyłącznie cyfrowym (badanie Temple University / Canada Post, 2015). Dobrze
-            zaprojektowana ulotka prowadzi klienta od nagłówka, przez korzyści, aż do konkretnego
-            działania.
+            Materiały drukowane są łatwiejsze w odbiorze i dłużej zostają w
+            pamięci - badania neuromarketingowe pokazują niższe obciążenie
+            poznawcze i wyższą zapamiętywalność niż w kanale wyłącznie cyfrowym
+            (badanie Temple University / Canada Post, 2015). Dobrze
+            zaprojektowana ulotka prowadzi klienta od nagłówka, przez korzyści,
+            aż do konkretnego działania.
           </p>
 
           <br />
 
           <p>
             <strong>
-              Wygląd materiałów graficznych, w tym ulotki, realnie wpływa na zaufanie.
+              Wygląd materiałów graficznych, w tym ulotki, realnie wpływa na
+              zaufanie.
             </strong>{' '}
-            Odbiorcy często oceniają wiarygodność firmy po jakości oprawy. Estetyczny, czytelny
-            projekt zwiększa szansę na pozytywną reakcję - wejście na stronę, telefon lub wizytę
-            stacjonarną
+            Odbiorcy często oceniają wiarygodność firmy po jakości oprawy.
+            Estetyczny, czytelny projekt zwiększa szansę na pozytywną reakcję -
+            wejście na stronę, telefon lub wizytę stacjonarną
             <a
               href='https://credibility.stanford.edu/guidelines/index.html'
               target='_blank'
@@ -145,7 +153,10 @@ export default function OfferDesignFlyerPage() {
           </p>
           <ul className='ml-5 list-disc'>
             <li>Przedstawia ofertę w prosty i zrozumiały sposób,</li>
-            <li>Prowadzi do konkretnego działania (telefon, rezerwacja, wejście na stronę),</li>
+            <li>
+              Prowadzi do konkretnego działania (telefon, rezerwacja, wejście na
+              stronę),
+            </li>
             <li>Buduje rozpoznawalność marki i zwiększa zaufanie.</li>
           </ul>
         </SectionInfo>
@@ -160,47 +171,70 @@ export default function OfferDesignFlyerPage() {
               title: 'Jasny przekaz i mocne wezwanie do działania',
               description: (
                 <>
-                  Tworzymy układy, które przyciągają wzrok, wyjaśniają ofertę i prowadzą prosto do
-                  kontaktu lub zakupu.
+                  Tworzymy układy, które przyciągają wzrok, wyjaśniają ofertę i
+                  prowadzą prosto do kontaktu lub zakupu.
                 </>
               ),
-              icon: <RiArticleLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiArticleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Format dopasowany do celu',
               description: (
                 <>
-                  Dobieramy rozmiar i orientację ulotki tak, aby była poręczna, czytelna i wygodna w
-                  dystrybucji.
+                  Dobieramy rozmiar i orientację ulotki tak, aby była poręczna,
+                  czytelna i wygodna w dystrybucji.
                 </>
               ),
-              icon: <RiLayoutLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiLayoutLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Pliki gotowe do druku i wersja cyfrowa',
               description: (
                 <>
-                  Otrzymujesz pliki przygotowane pod drukarnię oraz wersję do wykorzystania w
-                  internecie lub mailingu.
+                  Otrzymujesz pliki przygotowane pod drukarnię oraz wersję do
+                  wykorzystania w internecie lub mailingu.
                 </>
               ),
-              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileTextLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Dopracowanie detali',
               description: (
                 <>
-                  W cenie przewidujemy poprawki. Wspólnie dopieszczamy treści, układ i wyróżniki
-                  Twojej oferty.
+                  W cenie przewidujemy poprawki. Wspólnie dopieszczamy treści,
+                  układ i wyróżniki Twojej oferty.
                 </>
               ),
-              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiPencilRuler2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Faktura po realizacji',
-              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              description: (
+                <>
+                  Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
+                  formie.
+                </>
+              ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
           ]}
@@ -208,24 +242,30 @@ export default function OfferDesignFlyerPage() {
 
         <Divider line />
 
-        <SectionInfo title='Dla kogo projekt ulotki ma największy sens?' subtitle='Dla kogo'>
+        <SectionInfo
+          title='Dla kogo projekt ulotki ma największy sens?'
+          subtitle='Dla kogo'
+        >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Dla firm lokalnych,</strong> które chcą poinformować o nowej ofercie,
-              promocji, otwarciu lokalu lub wydarzeniu w konkretnej okolicy.
+              <strong>Dla firm lokalnych,</strong> które chcą poinformować o
+              nowej ofercie, promocji, otwarciu lokalu lub wydarzeniu w
+              konkretnej okolicy.
             </li>
             <li>
-              <strong>Dla gabinetów, salonów i punktów usługowych,</strong> które chcą w prosty
-              sposób pokazać zakres usług i zachęcić do rezerwacji wizyty.
+              <strong>Dla gabinetów, salonów i punktów usługowych,</strong>{' '}
+              które chcą w prosty sposób pokazać zakres usług i zachęcić do
+              rezerwacji wizyty.
             </li>
             <li>
-              <strong>Dla organizatorów wydarzeń,</strong> szkoleń i konferencji, którzy potrzebują
-              materiału informacyjnego z kluczowymi danymi: gdzie, kiedy i jak się zapisać.
+              <strong>Dla organizatorów wydarzeń,</strong> szkoleń i
+              konferencji, którzy potrzebują materiału informacyjnego z
+              kluczowymi danymi: gdzie, kiedy i jak się zapisać.
             </li>
             <li>
-              <strong>Dla firm łączących offline z online,</strong> które chcą, aby ulotka kierowała
-              na stronę www, landing page lub profil w mediach społecznościowych (np. QR kod +
-              krótkie CTA).
+              <strong>Dla firm łączących offline z online,</strong> które chcą,
+              aby ulotka kierowała na stronę www, landing page lub profil w
+              mediach społecznościowych (np. QR kod + krótkie CTA).
             </li>
           </ul>
         </SectionInfo>
@@ -238,21 +278,24 @@ export default function OfferDesignFlyerPage() {
         >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Więcej wejść na stronę lub profil,</strong> bo klient otrzymuje jasny adres,
-              QR kod i prostą instrukcję, co zrobić w kolejnym kroku.
+              <strong>Więcej wejść na stronę lub profil,</strong> bo klient
+              otrzymuje jasny adres, QR kod i prostą instrukcję, co zrobić w
+              kolejnym kroku.
             </li>
             <li>
-              <strong>Więcej telefonów i zapytań z lokalnego rynku,</strong> szczególnie przy dobrze
-              zaplanowanej dystrybucji w miejscach odwiedzanych przez Twoją grupę docelową.
+              <strong>Więcej telefonów i zapytań z lokalnego rynku,</strong>{' '}
+              szczególnie przy dobrze zaplanowanej dystrybucji w miejscach
+              odwiedzanych przez Twoją grupę docelową.
             </li>
             <li>
-              <strong>Większa rozpoznawalność marki offline,</strong> bo logo, kolory i kluczowy
-              komunikat powtarzają się na ulotce, stronie i innych materiałach.
+              <strong>Większa rozpoznawalność marki offline,</strong> bo logo,
+              kolory i kluczowy komunikat powtarzają się na ulotce, stronie i
+              innych materiałach.
             </li>
             <li>
-              <strong>Lepsze wsparcie kampanii online,</strong> gdy ulotka jest przedłużeniem
-              reklamy w Google Ads, Meta Ads lub działań w mediach społecznościowych, a nie osobnym
-              komunikatem.
+              <strong>Lepsze wsparcie kampanii online,</strong> gdy ulotka jest
+              przedłużeniem reklamy w Google Ads, Meta Ads lub działań w mediach
+              społecznościowych, a nie osobnym komunikatem.
             </li>
           </ul>
         </SectionInfo>
@@ -374,26 +417,30 @@ export default function OfferDesignFlyerPage() {
               size: 'large',
               backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Projekt wizytówki',
               size: 'medium',
-              backgroundImage: '/assets/projects/restoquality/mockup-wizytowki-restoquality.webp',
+              backgroundImage:
+                '/assets/projects/restoquality/mockup-wizytowki-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
               title: 'Strony internetowe',
               size: 'small',
-              backgroundImage: '/assets/projects/autokorfu/mockup-strony-auto-korfu.webp',
+              backgroundImage:
+                '/assets/projects/autokorfu/mockup-strony-auto-korfu.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Projekt katalogu',
               size: 'small',
-              backgroundImage: '/assets/projects/restoquality/mockup-gazetka-restoquality.webp',
+              backgroundImage:
+                '/assets/projects/restoquality/mockup-gazetka-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-katalogu',
             },

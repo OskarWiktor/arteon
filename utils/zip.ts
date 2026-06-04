@@ -111,5 +111,7 @@ export function createZipBlob(files: ZipFileInput[]): Blob {
 
   const zipBytes = concatChunks(allParts, totalSize);
 
-  return new Blob([zipBytes.buffer as ArrayBuffer], { type: 'application/zip' });
+  return new Blob([zipBytes.buffer as ArrayBuffer], {
+    type: 'application/zip',
+  });
 }

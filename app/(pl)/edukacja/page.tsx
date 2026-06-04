@@ -1,19 +1,20 @@
 import type { Metadata } from 'next';
-import HeroBanner from '@/components/organisms/HeroBanner';
+import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import ArticlesList from '@/components/organisms/ArticlesList';
 import FilterBar from '@/components/organisms/FilterBar';
+import HeroBanner from '@/components/organisms/HeroBanner';
 import {
   getAllArticlePreviews,
   getCategoriesWithCount,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
 import { siteUrl } from '@/utils/absoluteUrl';
-import { JsonLd } from '@/components/atoms/JsonLd';
-import Divider from '@/components/atoms/Divider';
 
 export const metadata: Metadata = {
-  title: 'Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym - Arteon',
+  title:
+    'Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym - Arteon',
   description:
     'Lubimy pomagać i dzielić się wiedzą ze wszystkimi. Znajdziesz tutaj poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych',
   alternates: { canonical: 'https://www.arteonagency.pl/edukacja' },

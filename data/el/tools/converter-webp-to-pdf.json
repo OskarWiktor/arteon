@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Μετατρέψτε εικόνες WebP σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.",
-      "featureList": ["WebP to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert WebP to PDF", "WebP to PDF", "Free WebP to PDF converter"]
+      "featureList": [
+        "WebP to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert WebP to PDF",
+        "WebP to PDF",
+        "Free WebP to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε WebP σε PDF",
@@ -151,7 +159,10 @@
         },
         {
           "label": "Υποστήριξη περιηγητών",
-          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Ενσωματωμένη προβολή PDF"]
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Ενσωματωμένη προβολή PDF"
+          ]
         },
         {
           "label": "Συμπαγές μέγεθος αρχείου",

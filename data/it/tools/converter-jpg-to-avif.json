@@ -205,7 +205,10 @@
         },
         {
           "label": "Supporto browser",
-          "values": ["Tutti i browser", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+          "values": [
+            "Tutti i browser",
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          ]
         },
         {
           "label": "Profondità colore",

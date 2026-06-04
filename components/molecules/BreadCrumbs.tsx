@@ -7,7 +7,7 @@ import { RiHomeLine } from 'react-icons/ri';
 
 import InlineLink from '../atoms/InlineLink';
 import Wrapper from '../atoms/Wrapper';
-import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 
 const DEFAULT_SITE_URL = 'https://www.arteonagency.pl';
 
@@ -26,6 +26,21 @@ interface BreadcrumbsProps {
   locale?: Locale;
 }
 
+/**
+ * Render a breadcrumb navigation bar with an accessible home link, intermediate crumbs, and optional JSON-LD.
+ *
+ * Renders a home icon followed by the provided second, third, and optional fourth crumbs. When `includeJsonLd` is `true`,
+ * a `BreadcrumbList` schema is emitted with item positions and absolute URLs based on `siteUrl`.
+ *
+ * @param second - The second breadcrumb (first after home) containing `href` and `label`
+ * @param third - The third breadcrumb containing `href` and `label`
+ * @param fourth - An optional fourth breadcrumb containing `href` and `label`
+ * @param includeJsonLd - If `true`, include schema.org BreadcrumbList JSON-LD in the rendered output
+ * @param siteUrl - Base site URL used to form absolute URLs in the JSON-LD
+ * @param size - Visual size mode; `'default'` or `'compact'`
+ * @param locale - Locale key used to select localized UI strings for labels and aria attributes
+ * @returns The rendered breadcrumb navigation element (JSX) containing links, current-page labeling, and optional JSON-LD
+ */
 export default function Breadcrumbs({
   second,
   third,
@@ -37,7 +52,12 @@ export default function Breadcrumbs({
 }: BreadcrumbsProps) {
   const t = BREADCRUMBS_UI[locale];
 
-  const items: Crumb[] = [{ href: '/', label: t.home }, second, third, ...(fourth ? [fourth] : [])];
+  const items: Crumb[] = [
+    { href: '/', label: t.home },
+    second,
+    third,
+    ...(fourth ? [fourth] : []),
+  ];
 
   const visibleItems = items.slice(1);
 
@@ -58,13 +78,18 @@ export default function Breadcrumbs({
     <Wrapper>
       <nav
         aria-label={t.ariaLabel}
-        className={cn(size === 'compact' ? cn('py-3', flexCenterClasses) : 'py-6')}
+        className={cn(
+          size === 'compact' ? cn('py-3', flexCenterClasses) : 'py-6',
+        )}
       >
         <ol className='flex flex-wrap items-center gap-2 text-sm!'>
           <li>
             <InlineLink href='/' variant='default' aria-label={t.home}>
               <RiHomeLine
-                className={cn('text-medium mt-2 text-primary-mid', smallIconSizeClasses)}
+                className={cn(
+                  'text-medium mt-2 text-primary-mid',
+                  smallIconSizeClasses,
+                )}
               />
             </InlineLink>
           </li>
@@ -82,11 +107,18 @@ export default function Breadcrumbs({
                 </span>
 
                 {isLast ? (
-                  <span className='text-medium text-sm! text-primary' aria-current='page'>
+                  <span
+                    className='text-medium text-sm! text-primary'
+                    aria-current='page'
+                  >
                     {item.label}
                   </span>
                 ) : (
-                  <InlineLink href={item.href} variant='default' className='text-primary-mid'>
+                  <InlineLink
+                    href={item.href}
+                    variant='default'
+                    className='text-primary-mid'
+                  >
                     {item.label}
                   </InlineLink>
                 )}

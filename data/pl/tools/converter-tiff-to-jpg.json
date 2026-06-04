@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter TIFF na JPG – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana TIFF na JPG", "Konwersja TIFF do JPG", "TIFF to JPG converter"],
+      "alternateName": [
+        "Zamiana TIFF na JPG",
+        "Konwersja TIFF do JPG",
+        "TIFF to JPG converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Darmowy konwerter TIFF na JPG. Zamień pliki TIFF na kompaktowy JPG w przeglądarce - pliki nie są wysyłane na serwer.",

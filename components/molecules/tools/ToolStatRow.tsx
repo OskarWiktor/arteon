@@ -1,6 +1,6 @@
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import type { ReactNode } from 'react';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
 
 interface ToolStatRowProps {
   label: string;
@@ -8,7 +8,11 @@ interface ToolStatRowProps {
   className?: string;
 }
 
-export default function ToolStatRow({ label, value, className = '' }: ToolStatRowProps) {
+export default function ToolStatRow({
+  label,
+  value,
+  className = '',
+}: ToolStatRowProps) {
   return (
     <div
       className={cn(

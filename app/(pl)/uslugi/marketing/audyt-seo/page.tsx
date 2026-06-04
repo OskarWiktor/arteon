@@ -1,33 +1,40 @@
-﻿import HeroBanner from '@/components/organisms/HeroBanner';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import CTABanner from '@/components/organisms/CTABanner';
+﻿import Script from 'next/script';
+import {
+  RiLightbulbFlashLine,
+  RiSearchLine,
+  RiFileList2Line,
+  RiCheckLine,
+} from 'react-icons/ri';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
-import SectionBento from '@/components/organisms/sections/SectionBento';
-import { RiLightbulbFlashLine, RiSearchLine, RiFileList2Line, RiCheckLine } from 'react-icons/ri';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
-import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import { siteUrl } from '@/utils/absoluteUrl';
+import { buildServiceSchema } from '@/lib/seo/serviceSchema';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
   title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
   description:
     'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi, że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing/audyt-seo' },
+  alternates: {
+    canonical: 'https://www.arteonagency.pl/uslugi/marketing/audyt-seo',
+  },
   openGraph: {
     title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
     description:
@@ -77,8 +84,8 @@ export default function OfferMarketingPage() {
         title='Audyt SEO'
         description={
           <>
-            Przeprowadź audyt SEO swojej witryny i sprawdź, co możesz zrobić, aby wyświetlać się
-            wyżej w wynikach wyszukiwarki Google.
+            Przeprowadź audyt SEO swojej witryny i sprawdź, co możesz zrobić,
+            aby wyświetlać się wyżej w wynikach wyszukiwarki Google.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -103,18 +110,19 @@ export default function OfferMarketingPage() {
         <SectionInfo title='Co zyskasz po audycie SEO?'>
           <p>
             <strong>
-              Przeprowadzając audyt SEO swojej strony otrzymujesz pełny raport mocnych i słabych
-              punktów swojej witryny oraz jasny plan poprawy widoczności w wyszukiwarce.
+              Przeprowadzając audyt SEO swojej strony otrzymujesz pełny raport
+              mocnych i słabych punktów swojej witryny oraz jasny plan poprawy
+              widoczności w wyszukiwarce.
             </strong>{' '}
-            Dowiesz się, jak Google widzi Twoją stronę, które podstrony blokują wyniki i jakie
-            elementy wymagają poprawy w pierwszej kolejności.
+            Dowiesz się, jak Google widzi Twoją stronę, które podstrony blokują
+            wyniki i jakie elementy wymagają poprawy w pierwszej kolejności.
           </p>
           <br />
           <p>
-            <strong>Szybkie poprawki + plan na 90 dni.</strong> Wskażemy zmiany, które da się
-            wdrożyć od razu, a następnie rozpiszemy plan działania na kolejne tygodnie. Dzięki temu
-            Twoja strona zacznie zajmować wyższą pozycję w Google, przyciągając odpowiednich
-            klientów.
+            <strong>Szybkie poprawki + plan na 90 dni.</strong> Wskażemy zmiany,
+            które da się wdrożyć od razu, a następnie rozpiszemy plan działania
+            na kolejne tygodnie. Dzięki temu Twoja strona zacznie zajmować
+            wyższą pozycję w Google, przyciągając odpowiednich klientów.
           </p>
         </SectionInfo>
 
@@ -132,16 +140,17 @@ export default function OfferMarketingPage() {
         >
           <ul className='mt-4 list-disc space-y-2 pl-5 text-sm'>
             <li>
-              Właścicieli nowych platform, które potrzebują solidnych podstaw zanim ruszą z
-              kampaniami reklamowymi.
+              Właścicieli nowych platform, które potrzebują solidnych podstaw
+              zanim ruszą z kampaniami reklamowymi.
             </li>
             <li>
-              Właścicieli sklepów oraz stron internetowych z problemami widoczności, które nie
-              pozwalają na dostateczną ilość zapytań lub klientów.
-            </li>
-            <li>
-              Firm usługowych i B2B, którym zależy na stałym dopływie jakościowych zapytań od
+              Właścicieli sklepów oraz stron internetowych z problemami
+              widoczności, które nie pozwalają na dostateczną ilość zapytań lub
               klientów.
+            </li>
+            <li>
+              Firm usługowych i B2B, którym zależy na stałym dopływie
+              jakościowych zapytań od klientów.
             </li>
           </ul>
         </SectionBasic>
@@ -155,44 +164,61 @@ export default function OfferMarketingPage() {
               title: 'Czy Google może znaleźć i zrozumieć Twoją stronę',
               description: (
                 <>
-                  Weryfikujemy, czy strona pojawia się w Google, które podstrony są pomijane i
-                  dlaczego. Sprawdzimy mapę strony i ustawienia, które potrafią ukryć treści przed
-                  wyszukiwarką.
+                  Weryfikujemy, czy strona pojawia się w Google, które podstrony
+                  są pomijane i dlaczego. Sprawdzimy mapę strony i ustawienia,
+                  które potrafią ukryć treści przed wyszukiwarką.
                 </>
               ),
-              icon: <RiSearchLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiSearchLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Szybkość ładowania i wygodę korzystania',
               description: (
                 <>
-                  Mierzymy, jak szybko wczytuje się strona i jak wygląda ona od strony technicznej.
-                  Wskazujemy proste zmiany, które przyspieszą działanie i poprawią wrażenia
-                  użytkowników.
+                  Mierzymy, jak szybko wczytuje się strona i jak wygląda ona od
+                  strony technicznej. Wskazujemy proste zmiany, które
+                  przyspieszą działanie i poprawią wrażenia użytkowników.
                 </>
               ),
-              icon: <RiCheckLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiCheckLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Czy treści są dopasowane do tego, czego szukają klienci',
               description: (
                 <>
-                  Sprawdzimy, czy Twoje treści odpowiadają na pytania użytkowników i czy nie
-                  konkurują ze sobą. Zaproponujemy tematy i układ, który ułatwi zdobywanie wyższych
-                  pozycji.
+                  Sprawdzimy, czy Twoje treści odpowiadają na pytania
+                  użytkowników i czy nie konkurują ze sobą. Zaproponujemy tematy
+                  i układ, który ułatwi zdobywanie wyższych pozycji.
                 </>
               ),
-              icon: <RiLightbulbFlashLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiLightbulbFlashLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Strukturę strony oraz linki wewnętrzne',
               description: (
                 <>
-                  Uporządkujemy nawigację i połączenia między podstronami, aby ważne treści były
-                  łatwo dostępne dla użytkowników i wyszukiwarki.
+                  Uporządkujemy nawigację i połączenia między podstronami, aby
+                  ważne treści były łatwo dostępne dla użytkowników i
+                  wyszukiwarki.
                 </>
               ),
-              icon: <RiFileList2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileList2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
           ]}
         />
@@ -208,8 +234,8 @@ export default function OfferMarketingPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Analizujemy stronę technicznie, następnie patrzymy na ruch i wyszukiwania,
-                    sprawdzamy, jak Google widzi Twoją stronę.
+                    Analizujemy stronę technicznie, następnie patrzymy na ruch i
+                    wyszukiwania, sprawdzamy, jak Google widzi Twoją stronę.
                   </p>
                 </div>
               ),
@@ -219,8 +245,9 @@ export default function OfferMarketingPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Tworzymy raport wszelkich błędów i problemów oraz przygotowujemy listę działań
-                    podzielonych na szybkie poprawki i zadania na 90 dni.
+                    Tworzymy raport wszelkich błędów i problemów oraz
+                    przygotowujemy listę działań podzielonych na szybkie
+                    poprawki i zadania na 90 dni.
                   </p>
                 </div>
               ),
@@ -230,8 +257,8 @@ export default function OfferMarketingPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Przechodzimy przez dokument wspólnie. Ustalamy, co wdrażamy od razu, a co
-                    planujemy na kolejny etap.
+                    Przechodzimy przez dokument wspólnie. Ustalamy, co wdrażamy
+                    od razu, a co planujemy na kolejny etap.
                   </p>
                 </div>
               ),
@@ -247,17 +274,17 @@ export default function OfferMarketingPage() {
         >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Pozycję strony:</strong> sprawdzamy, na której pozycji pokazuje się Twoja
-              strona przy poszczególnych frazach.
+              <strong>Pozycję strony:</strong> sprawdzamy, na której pozycji
+              pokazuje się Twoja strona przy poszczególnych frazach.
             </li>
             <li>
-              <strong>Ilość fraz:</strong> patrzymy, ile nowych fraz Google łączy z Twoją witryną i
-              jak wpływa to na ruch oraz pozycję.
+              <strong>Ilość fraz:</strong> patrzymy, ile nowych fraz Google
+              łączy z Twoją witryną i jak wpływa to na ruch oraz pozycję.
             </li>
             <li>
-              <strong>Zapytania i ruch:</strong> patrzymy, o ile wzrósł ruch na Twojej stronie oraz
-              o ile wzrosła ilość uzupełnionych formularzy, telefonów i wiadomości po wprowadzonych
-              zmianach.
+              <strong>Zapytania i ruch:</strong> patrzymy, o ile wzrósł ruch na
+              Twojej stronie oraz o ile wzrosła ilość uzupełnionych formularzy,
+              telefonów i wiadomości po wprowadzonych zmianach.
             </li>
           </ul>
         </SectionInfo>
@@ -271,8 +298,8 @@ export default function OfferMarketingPage() {
           subtitle='Wyniki wdrożeń'
           title={
             <>
-              Jakie efekty widzimy najczęściej po przeprowadzeniu audytu SEO i wdrożeniu
-              pozycjonowania?
+              Jakie efekty widzimy najczęściej po przeprowadzeniu audytu SEO i
+              wdrożeniu pozycjonowania?
             </>
           }
           btnOne='Porozmawiajmy o audycie'
@@ -280,15 +307,16 @@ export default function OfferMarketingPage() {
         >
           <ul className='mt-4 grid grid-cols-1 gap-3 pl-0 text-sm md:grid-cols-3'>
             <li className='list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200'>
-              <strong>Więcej wejść z Google</strong> efekt może być zauważalny już po 2-3
-              miesiącach.
+              <strong>Więcej wejść z Google</strong> efekt może być zauważalny
+              już po 2-3 miesiącach.
             </li>
             <li className='list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200'>
-              <strong>Szybsze działanie strony</strong> dzięki optymalizacji technicznej witryny.
+              <strong>Szybsze działanie strony</strong> dzięki optymalizacji
+              technicznej witryny.
             </li>
             <li className='list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200'>
-              <strong>Więcej zapytań z formularza i telefonów</strong> po dopracowaniu nagłówków,
-              opisów i całej oferty.
+              <strong>Więcej zapytań z formularza i telefonów</strong> po
+              dopracowaniu nagłówków, opisów i całej oferty.
             </li>
           </ul>
         </SectionBasic>
@@ -331,7 +359,8 @@ export default function OfferMarketingPage() {
             {
               name: 'Audyt SEO: 30+ stron',
               price: 'od 1000 zł',
-              description: 'Dla kogo: dla właścicieli dużych stron firmowych i sklepów.',
+              description:
+                'Dla kogo: dla właścicieli dużych stron firmowych i sklepów.',
               features: [
                 'Wszystko z pakietu dla małych sklepów i rozbudowanych stron, a dodatkowo:',
                 'Analiza crawl budgetu i logiki indeksacji dużych zasobów',
@@ -359,11 +388,15 @@ export default function OfferMarketingPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Wprowadzamy zmiany: przyspieszamy ładowanie, porządkujemy tytuły i opisy,
-                    dodajemy dane ułatwiające Google zrozumienie treści.
+                    Wprowadzamy zmiany: przyspieszamy ładowanie, porządkujemy
+                    tytuły i opisy, dodajemy dane ułatwiające Google zrozumienie
+                    treści.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/marketing/optymalizacja-seo'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/marketing/optymalizacja-seo'
+                    >
                       Przejdź do optymalizacji SEO
                     </ButtonLink>
                   </div>
@@ -376,11 +409,15 @@ export default function OfferMarketingPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Pracujemy nad stałym wzrostem widoczności: tworzymy plan treści, rozbudowujemy
-                    ofertę, dodajemy nowe bloki i mierzymy efekt co miesiąc.
+                    Pracujemy nad stałym wzrostem widoczności: tworzymy plan
+                    treści, rozbudowujemy ofertę, dodajemy nowe bloki i mierzymy
+                    efekt co miesiąc.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/marketing/pozycjonowanie-stron'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/marketing/pozycjonowanie-stron'
+                    >
                       Sprawdź abonament na pozycjonowanie stron
                     </ButtonLink>
                   </div>
@@ -413,14 +450,16 @@ export default function OfferMarketingPage() {
           pageUrl='https://www.arteonagency.pl/uslugi/marketing/audyt-seo'
           items={[
             {
-              question: 'Co dokładnie sprawdza audyt SEO i jakie są najczęstsze blokery?',
+              question:
+                'Co dokładnie sprawdza audyt SEO i jakie są najczęstsze blokery?',
               answer: (
                 <p>
-                  Weryfikujemy indeksację, szybkość i Core Web Vitals, strukturę informacji, meta
-                  dane, nagłówki, linkowanie wewnętrzne, dane strukturalne, mapy strony, robots.txt
-                  i treści pod intencję wyszukiwania. Częste blokery to: brak indeksacji kluczowych
-                  podstron, wolne ładowanie, duplikacja treści, słabe nagłówki i chaotyczna
-                  nawigacja. Szerzej opisujemy to w naszym{' '}
+                  Weryfikujemy indeksację, szybkość i Core Web Vitals, strukturę
+                  informacji, meta dane, nagłówki, linkowanie wewnętrzne, dane
+                  strukturalne, mapy strony, robots.txt i treści pod intencję
+                  wyszukiwania. Częste blokery to: brak indeksacji kluczowych
+                  podstron, wolne ładowanie, duplikacja treści, słabe nagłówki i
+                  chaotyczna nawigacja. Szerzej opisujemy to w naszym{' '}
                   <a
                     href='/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic'
                     className='inline-link'
@@ -482,14 +521,16 @@ export default function OfferMarketingPage() {
             {
               title: 'Strony internetowe',
               size: 'medium',
-              backgroundImage: '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
+              backgroundImage:
+                '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Sklepy internetowe',
               size: 'small',
-              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              backgroundImage:
+                '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },

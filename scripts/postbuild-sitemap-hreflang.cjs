@@ -15,7 +15,10 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-const { SITE_URL, LOCALE_TOOLS_BASE } = require('../lib/sitemap-locale-config.cjs');
+const {
+  SITE_URL,
+  LOCALE_TOOLS_BASE,
+} = require('../lib/sitemap-locale-config.cjs');
 
 const PUBLIC_DIR = path.join(process.cwd(), 'public');
 
@@ -83,7 +86,9 @@ function main() {
   const entries = sitemapFiles
     .map(f => {
       const content = fs.readFileSync(path.join(PUBLIC_DIR, f), 'utf8');
-      const lastmods = [...content.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map(m => m[1]);
+      const lastmods = [
+        ...content.matchAll(/<lastmod>([^<]+)<\/lastmod>/g),
+      ].map(m => m[1]);
       const newest = lastmods.sort().pop();
       const lastmodTag = newest ? `<lastmod>${newest}</lastmod>` : '';
       return `<sitemap><loc>${SITE_URL}/${f}</loc>${lastmodTag}</sitemap>`;

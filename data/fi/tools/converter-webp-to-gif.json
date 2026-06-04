@@ -205,7 +205,10 @@
         },
         {
           "label": "Selaintuki",
-          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Kaikki selaimet"]
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Kaikki selaimet"
+          ]
         },
         {
           "label": "Värisyvyys",

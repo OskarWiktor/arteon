@@ -2,7 +2,10 @@
 
 import { useEffect } from 'react';
 
-export function useScrollLock(locked: boolean, className: string = 'overflow-hidden') {
+export function useScrollLock(
+  locked: boolean,
+  className: string = 'overflow-hidden',
+) {
   useEffect(() => {
     const root = document.documentElement;
     if (locked) root.classList.add(className);

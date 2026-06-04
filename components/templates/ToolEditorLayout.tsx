@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react';
-
 import AdSense from '@/components/molecules/AdSense';
 import { cn } from '@/lib/utils';
 
@@ -11,7 +10,7 @@ export default function ToolEditorLayout({ children }: ToolEditorLayoutProps) {
   return (
     <div
       className={cn(
-        'mx-auto mt-8 w-[100%] max-w-[1420px]',
+        'mx-auto mt-8 w-full max-w-355',
         'xl:grid xl:w-full xl:max-w-none xl:grid-cols-[1fr_200px_minmax(0,1420px)_200px_1fr] xl:gap-x-4',
       )}
     >

@@ -1,19 +1,27 @@
 'use client';
 
-import { useState, type FormEvent } from 'react';
+import { useState } from 'react';
 import Button from '@/components/atoms/buttons/Button';
-import ToolInfo from '@/components/atoms/ToolInfo';
-import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolAlert from '@/components/atoms/ToolAlert';
-import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
+import ToolInfo from '@/components/atoms/ToolInfo';
 import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
-import { useTimeout } from '@/hooks/useTimeout';
-import { formatHsl, normalizeHex, randomHexColor, rgbToHex } from '@/lib/tools/color/convert';
-import { createPaletteFromHex, type PaletteGroupId } from '@/lib/tools/color/palette';
-import { useLocale } from '@/lib/LocaleContext';
-import { ui } from '@/lib/i18n/tools/color-palette';
+import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { useTimeout } from '@/hooks/useTimeout';
+import { ui } from '@/lib/i18n/tools/colorPalette';
+import { useLocale } from '@/lib/LocaleContext';
+import {
+  formatHsl,
+  normalizeHex,
+  randomHexColor,
+  rgbToHex,
+} from '@/lib/tools/color/convert';
+import {
+  createPaletteFromHex,
+  type PaletteGroupId,
+} from '@/lib/tools/color/palette';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 function getPaletteMeta(
@@ -58,7 +66,7 @@ export default function ColorPaletteGenerator() {
       }))
     : [];
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     const normalized = normalizeHex(inputColor);
     if (!normalized) {
@@ -113,7 +121,9 @@ export default function ColorPaletteGenerator() {
                 />
                 <div className='min-w-0'>
                   <p className='tool-value text-dark'>{normalizedBase}</p>
-                  <ToolHelper className='text-xs!'>{t.baseColorHelper}</ToolHelper>
+                  <ToolHelper className='text-xs!'>
+                    {t.baseColorHelper}
+                  </ToolHelper>
                 </div>
               </ToolInfo>
             )}
@@ -124,8 +134,13 @@ export default function ColorPaletteGenerator() {
       <Card interactive={false} padding='lg' aria-label={t.generatedPalettes}>
         {!normalizedBase && (
           <ToolAlert variant='error'>
-            {t.colorReadError} <code className='rounded bg-black/5 px-1'>#rrggbb</code>, {t.example}{' '}
-            <code className='rounded bg-black/5 px-1'>{DEFAULT_BASE_COLOR}</code>.
+            {t.colorReadError}{' '}
+            <code className='rounded bg-black/5 px-1'>#rrggbb</code>,{' '}
+            {t.example}{' '}
+            <code className='rounded bg-black/5 px-1'>
+              {DEFAULT_BASE_COLOR}
+            </code>
+            .
           </ToolAlert>
         )}
 

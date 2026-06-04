@@ -1,5 +1,5 @@
+const ORG_NAME = 'Arteon';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
-import { ORG_NAME } from '@/lib/seo/schema';
 
 interface ServiceSchema {
   '@context': string;
@@ -74,7 +74,8 @@ export function buildServiceSchema(params: {
       '@type': 'ServiceChannel',
       serviceUrl: toAbsoluteUrl('/kontakt'),
       availableLanguage: availableLanguages,
-      description: 'Usługa świadczona zdalnie dla klientów polskojęzycznych na całym świecie.',
+      description:
+        'Usługa świadczona zdalnie dla klientów polskojęzycznych na całym świecie.',
     };
   }
 

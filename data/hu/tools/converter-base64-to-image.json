@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Base64 karakterláncok dekódolása képekké. Előnézet és letöltés a böngészőben. Ingyenes.",
-      "featureList": ["Base64 to kép conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Base64 to kép", "Base64 to kép", "Free Base64 to kép converter"]
+      "featureList": [
+        "Base64 to kép conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Base64 to kép",
+        "Base64 to kép",
+        "Free Base64 to kép converter"
+      ]
     },
     "howTo": {
       "name": "Hogyan konvertáljuk Base64-t kép-vé",

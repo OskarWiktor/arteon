@@ -1,12 +1,12 @@
-import { canvasToBlob } from '@/utils/canvasToBlob';
-import { loadImage } from '@/utils/loadImage';
-import { readFileAsDataUrl } from '@/utils/readFileAsDataUrl';
-
 import type {
   ConvertImageFileToWebpErrorMessages,
   ConvertImageFileToWebpSmartOptions,
   ConvertImageFileToWebpSmartResult,
 } from '@/types/tools/image';
+import { canvasToBlob } from '@/utils/canvasToBlob';
+import { loadImage } from '@/utils/loadImage';
+import { readFileAsDataUrl } from '@/utils/readFileAsDataUrl';
+
 export type {
   ConvertImageFileToWebpErrorMessages,
   ConvertImageFileToWebpSmartOptions,
@@ -25,8 +25,12 @@ export async function convertImageFileToWebp(
   quality: number,
   messages: ConvertImageFileToWebpErrorMessages,
 ): Promise<Blob> {
-  const dataUrl = await readFileAsDataUrl(file, { errorMessage: messages.fileLoadErrorMessage });
-  const img = await loadImage(dataUrl, { errorMessage: messages.imageLoadErrorMessage });
+  const dataUrl = await readFileAsDataUrl(file, {
+    errorMessage: messages.fileLoadErrorMessage,
+  });
+  const img = await loadImage(dataUrl, {
+    errorMessage: messages.imageLoadErrorMessage,
+  });
 
   let w = img.naturalWidth || img.width;
   let h = img.naturalHeight || img.height;
@@ -57,7 +61,12 @@ export async function convertImageFileToWebp(
 
   ctx.drawImage(img, 0, 0, w, h);
 
-  return canvasToBlob(canvas, 'image/webp', quality / 100, messages.webpGenerationErrorMessage);
+  return canvasToBlob(
+    canvas,
+    'image/webp',
+    quality / 100,
+    messages.webpGenerationErrorMessage,
+  );
 }
 
 export async function convertImageFileToWebpSmart(

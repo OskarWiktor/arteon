@@ -197,7 +197,10 @@
         },
         {
           "label": "Selaintuki",
-          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Kaikki selaimet"]
+          "values": [
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "Kaikki selaimet"
+          ]
         },
         {
           "label": "Värisyvyys",

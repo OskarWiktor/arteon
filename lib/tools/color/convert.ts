@@ -96,26 +96,20 @@ export function hslToRgb({ h, s, l }: HSL): RGB {
   if (h >= 0 && h < 60) {
     rN = c;
     gN = x;
-    bN = 0;
   } else if (h >= 60 && h < 120) {
     rN = x;
     gN = c;
-    bN = 0;
   } else if (h >= 120 && h < 180) {
-    rN = 0;
     gN = c;
     bN = x;
   } else if (h >= 180 && h < 240) {
-    rN = 0;
     gN = x;
     bN = c;
   } else if (h >= 240 && h < 300) {
     rN = x;
-    gN = 0;
     bN = c;
   } else {
     rN = c;
-    gN = 0;
     bN = x;
   }
 
@@ -144,7 +138,7 @@ export function formatHsl(hsl: HSL): string {
 
 export function parseHsl(color: string): HSLA | null {
   const trimmed = color.trim();
-  const wrapperMatch = trimmed.match(/^hsla?\((.*)\)$/i);
+  const wrapperMatch = /^hsla?\((.*)\)$/i.exec(trimmed);
   if (!wrapperMatch) return null;
 
   const inner = wrapperMatch[1].trim();

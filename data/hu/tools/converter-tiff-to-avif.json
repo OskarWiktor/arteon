@@ -205,7 +205,10 @@
         },
         {
           "label": "Böngészőtámogatás",
-          "values": ["Csak Safari", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+          "values": [
+            "Csak Safari",
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          ]
         },
         {
           "label": "Színmélység",

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera AVIF-filer till TIFF-format. Gratis, privat och obegränsat.",
-      "featureList": ["AVIF to TIFF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert AVIF to TIFF", "AVIF to TIFF", "Free AVIF to TIFF converter"]
+      "featureList": [
+        "AVIF to TIFF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert AVIF to TIFF",
+        "AVIF to TIFF",
+        "Free AVIF to TIFF converter"
+      ]
     },
     "howTo": {
       "name": "Hur man konverterar AVIF till TIFF",
@@ -151,7 +159,10 @@
         },
         {
           "label": "Webbläsarstöd",
-          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Endast Safari"]
+          "values": [
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "Endast Safari"
+          ]
         },
         {
           "label": "Färgdjup",

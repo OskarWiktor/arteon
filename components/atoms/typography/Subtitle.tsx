@@ -1,5 +1,5 @@
-import { cn } from '@/lib/utils';
 import type { ReactNode } from 'react';
+import { cn } from '@/lib/utils';
 
 interface SubtitleProps {
   children: ReactNode;
@@ -8,7 +8,12 @@ interface SubtitleProps {
   id?: string;
 }
 
-export default function Subtitle({ children, variant = 'default', className, id }: SubtitleProps) {
+export default function Subtitle({
+  children,
+  variant = 'default',
+  className,
+  id,
+}: SubtitleProps) {
   const variantClasses = {
     default: 'text-base tracking-wider uppercase text-light',
     hero: 'text-base tracking-wide uppercase sm:text-lg',

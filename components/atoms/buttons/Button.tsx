@@ -1,12 +1,12 @@
+import type { ReactNode } from 'react';
 import {
   buttonAccentVariantClasses,
   buttonNormalVariantClasses,
   disabledInteractiveClasses,
   flexCenterClasses,
   focusRingClasses,
-} from '@/lib/ui-classes';
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import type { ReactNode } from 'react';
 import ArrowIcon from '../ArrowIcon';
 
 type ButtonSize = 'small' | 'medium';

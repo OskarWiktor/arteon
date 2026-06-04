@@ -1,3 +1,11 @@
+import { RiAddLine, RiSubtractLine } from 'react-icons/ri';
+import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import { LAYOUT_SPACING_MAP } from '@/lib/tools/email/signatureDefaults';
+import {
+  flexCenterBetweenClasses,
+  smallIconSizeClasses,
+} from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
 import type {
   SignatureConfig,
   StyleConfig,
@@ -6,18 +14,16 @@ import type {
   MarginOption,
   LayoutType,
 } from '@/types/tools/email';
-import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import { LAYOUT_SPACING_MAP } from '@/lib/tools/email/signatureDefaults';
-import { RiAddLine, RiSubtractLine } from 'react-icons/ri';
-import { flexCenterBetweenClasses, smallIconSizeClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 
 type Props = {
   config: SignatureConfig;
   styleConfig: StyleConfig;
   spacingConfig: SpacingConfig;
   layout: LayoutType;
-  onStyleChange: <K extends keyof StyleConfig>(key: K, value: StyleConfig[K]) => void;
+  onStyleChange: <K extends keyof StyleConfig>(
+    key: K,
+    value: StyleConfig[K],
+  ) => void;
   onSpacingChange: (key: SpacingKey, delta: number) => void;
   t: {
     spacing: Record<string, string>;
@@ -45,9 +51,13 @@ function SpacingRow({
           className='rounded-md border border-neutral-300 p-1 hover:bg-neutral-100'
           aria-label='Zmniejsz odstęp'
         >
-          <RiSubtractLine className={cn('text-primary', smallIconSizeClasses)} />
+          <RiSubtractLine
+            className={cn('text-primary', smallIconSizeClasses)}
+          />
         </button>
-        <span className='w-10 text-center text-xs! font-medium'>{value} px</span>
+        <span className='w-10 text-center text-xs! font-medium'>
+          {value} px
+        </span>
         <button
           type='button'
           onClick={() => onSpacingChange(spacingKey, 2)}
@@ -88,7 +98,8 @@ export default function SpacingPanel({
       key: 'afterTitle',
       labelKey: 'afterTitle',
       visible:
-        !!(config.jobTitle.trim() || config.company.trim()) && layoutKeys.includes('afterTitle'),
+        !!(config.jobTitle.trim() || config.company.trim()) &&
+        layoutKeys.includes('afterTitle'),
     },
     {
       key: 'afterExtra',
@@ -99,8 +110,11 @@ export default function SpacingPanel({
       key: 'afterContact',
       labelKey: 'afterContact',
       visible:
-        !!(config.email.trim() || config.phone.trim() || config.website.trim()) &&
-        layoutKeys.includes('afterContact'),
+        !!(
+          config.email.trim() ||
+          config.phone.trim() ||
+          config.website.trim()
+        ) && layoutKeys.includes('afterContact'),
     },
     {
       key: 'afterSocials',
@@ -113,7 +127,8 @@ export default function SpacingPanel({
       key: 'afterCta',
       labelKey: 'afterCta',
       visible:
-        !!(config.ctaLabel.trim() && config.ctaUrl.trim()) && layoutKeys.includes('afterCta'),
+        !!(config.ctaLabel.trim() && config.ctaUrl.trim()) &&
+        layoutKeys.includes('afterCta'),
     },
     {
       key: 'beforeLegal',

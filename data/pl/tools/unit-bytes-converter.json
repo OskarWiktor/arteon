@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter bajtów – B, KB, MB, GB, TB",
-      "alternateName": ["Przelicznik bajtów", "Kalkulator KB MB GB", "Konwerter wielkości plików"],
+      "alternateName": [
+        "Przelicznik bajtów",
+        "Kalkulator KB MB GB",
+        "Konwerter wielkości plików"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz bajty na KB, MB, GB i TB w systemie binarnym (1024). Sprawdź, dlaczego dysk 500 GB pokazuje tylko 465 GB. Działa w przeglądarce, bez rejestracji.",

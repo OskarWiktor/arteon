@@ -35,8 +35,8 @@ export default function AbbrTouchHandler() {
       const halfWidth = tooltipRect.width / 2;
       if (left - halfWidth < 10) {
         left = halfWidth + 10;
-      } else if (left + halfWidth > window.innerWidth - 10) {
-        left = window.innerWidth - halfWidth - 10;
+      } else if (left + halfWidth > innerWidth - 10) {
+        left = innerWidth - halfWidth - 10;
       }
 
       tooltip.style.top = `${top}px`;
@@ -73,11 +73,11 @@ export default function AbbrTouchHandler() {
     document.addEventListener('touchend', handleTouch, { passive: false });
 
     const handleScroll = () => hideTooltip();
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
       document.removeEventListener('touchend', handleTouch);
-      window.removeEventListener('scroll', handleScroll);
+      removeEventListener('scroll', handleScroll);
       hideTooltip();
     };
   }, []);

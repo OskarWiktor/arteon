@@ -197,7 +197,10 @@
         },
         {
           "label": "Compatibilidad con navegadores",
-          "values": ["Safari 13+ (macOS / iOS)", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+          "values": [
+            "Safari 13+ (macOS / iOS)",
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          ]
         },
         {
           "label": "Profundidad de color",

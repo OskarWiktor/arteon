@@ -1,13 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-
 import Button from '@/components/atoms/buttons/Button';
-import { useDictionary, useLocale } from '@/lib/LocaleContext';
-import { getUnitLabel } from '@/utils/locale-utils';
-
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
-
+import { useDictionary, useLocale } from '@/lib/LocaleContext';
+import { getUnitLabel } from '@/lib/tools/unitLabels';
 import { getUnitConversion } from '@/lib/tools/units/conversions';
 import {
   hexToRgb,
@@ -26,9 +24,17 @@ import type { ToolItemKey } from '@/types/tools/common';
 interface UnitConverterProps {
   toolKey: ToolItemKey;
 }
-import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import Card from '../../Card';
 
+/**
+ * Render a two-field unit conversion UI for the provided conversion tool key.
+ *
+ * The component looks up conversion configuration for `toolKey` and renders source/target inputs,
+ * optional extra numeric input, swap/clear/copy controls, and localized labels/placeholders.
+ *
+ * @param toolKey - The conversion tool identifier used to resolve conversion logic and field configuration
+ * @returns A React element containing the conversion UI, or `null` when no conversion configuration is available
+ */
 export default function UnitConverter({ toolKey }: UnitConverterProps) {
   const { imageConverter: t } = useDictionary();
   const locale = useLocale();
@@ -40,7 +46,9 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
 
   const [sourceValue, setSourceValue] = useState('');
   const [targetValue, setTargetValue] = useState('');
-  const [extraValue, setExtraValue] = useState<number>(config?.extraField?.defaultValue ?? 0);
+  const [extraValue, setExtraValue] = useState<number>(
+    config?.extraField?.defaultValue ?? 0,
+  );
   const [isReversed, setIsReversed] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -188,7 +196,9 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
                 max={config.extraField.max}
                 step={config.extraField.step}
               />
-              <span className='text-sm text-primary-mid'>{config.extraField.suffix}</span>
+              <span className='text-sm text-primary-mid'>
+                {config.extraField.suffix}
+              </span>
             </div>
           )}
 

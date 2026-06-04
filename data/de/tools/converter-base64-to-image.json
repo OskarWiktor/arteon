@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Base64-Zeichenketten in Bilder dekodieren. Vorschau und Download im Browser. Kostenlos.",
-      "featureList": ["Base64 to Bild conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Base64 to Bild", "Base64 to Bild", "Free Base64 to Bild converter"]
+      "featureList": [
+        "Base64 to Bild conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Base64 to Bild",
+        "Base64 to Bild",
+        "Free Base64 to Bild converter"
+      ]
     },
     "howTo": {
       "name": "So konvertieren Sie Base64 in Bild",

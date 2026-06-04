@@ -197,7 +197,10 @@
         },
         {
           "label": "Webbrowserunderstøttelse",
-          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Alle browsere"]
+          "values": [
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "Alle browsere"
+          ]
         },
         {
           "label": "Farvedybde",

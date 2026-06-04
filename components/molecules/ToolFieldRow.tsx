@@ -1,5 +1,5 @@
-import { cn } from '@/lib/utils';
 import type { ReactNode } from 'react';
+import { cn } from '@/lib/utils';
 
 interface ToolFieldRowProps {
   label?: ReactNode;
@@ -20,9 +20,13 @@ export default function ToolFieldRow({
 }: ToolFieldRowProps) {
   return (
     <div className={className}>
-      {label && <p className={cn('tool-label mb-2', labelClassName)}>{label}</p>}
+      {label && (
+        <p className={cn('tool-label mb-2', labelClassName)}>{label}</p>
+      )}
       {children}
-      {helper && <p className={cn('mt-1 text-sm', helperClassName)}>{helper}</p>}
+      {helper && (
+        <p className={cn('mt-1 text-sm', helperClassName)}>{helper}</p>
+      )}
     </div>
   );
 }

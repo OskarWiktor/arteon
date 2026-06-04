@@ -1,9 +1,9 @@
-import type { ReactNode } from 'react';
 import Image from 'next/image';
-import Wrapper from '../atoms/Wrapper';
-import SectionHeader from '../molecules/SectionHeader';
-import ButtonGroup from '../molecules/ButtonGroup';
+import type { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
+import Wrapper from '../atoms/Wrapper';
+import ButtonGroup from '../molecules/ButtonGroup';
+import SectionHeader from '../molecules/SectionHeader';
 
 interface CTABannerProps {
   title?: ReactNode;
@@ -34,7 +34,11 @@ export default function CTABanner({
   const isGradient = backgroundStyle === 'gradient';
   const isSolid = backgroundStyle === 'solid';
   const overlayClass =
-    overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
+    overlay === 'black'
+      ? 'bg-black/70'
+      : overlay === 'white'
+        ? 'bg-white/80'
+        : '';
   const baseBg = isGradient
     ? 'bg-gradient-to-r from-primary to-primary'
     : isSolid
@@ -43,13 +47,19 @@ export default function CTABanner({
         ? 'bg-neutral-900'
         : 'bg-white';
 
-  const toneTextClass = isGradient || isSolid || overlay === 'black' ? 'text-white' : 'text-dark';
+  const toneTextClass =
+    isGradient || isSolid || overlay === 'black' ? 'text-white' : 'text-dark';
   const toneMutedClass =
-    isGradient || isSolid || overlay === 'black' ? 'text-white/90' : 'text-light';
+    isGradient || isSolid || overlay === 'black'
+      ? 'text-white/90'
+      : 'text-light';
 
   return (
     <section
-      className={cn('relative flex h-auto min-h-[360px] overflow-hidden md:min-h-[440px]', baseBg)}
+      className={cn(
+        'relative flex h-auto min-h-90 overflow-hidden md:min-h-110',
+        baseBg,
+      )}
       data-section='final-cta'
     >
       {hasBg && !isGradient && !isSolid && backgroundImage && (
@@ -64,7 +74,10 @@ export default function CTABanner({
       {hasBg && !isGradient && !isSolid && overlay !== 'none' && (
         <div
           aria-hidden='true'
-          className={cn('pointer-events-none absolute inset-0 z-0', overlayClass)}
+          className={cn(
+            'pointer-events-none absolute inset-0 z-0',
+            overlayClass,
+          )}
         />
       )}
 
@@ -86,8 +99,8 @@ export default function CTABanner({
             description={description}
             SubtitleVariant='dynamic'
             SubtitleClassName={cn('text-base tracking-wider uppercase', {
-              'text-white': overlay === 'black',
-              'text-dark': overlay !== 'black',
+              'text-white!': overlay === 'black',
+              'text-dark!': overlay !== 'black',
             })}
             descriptionClassName={cn(
               'mx-auto text-base leading-relaxed md:text-lg',

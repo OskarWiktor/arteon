@@ -1,9 +1,3 @@
-/**
- * Conversion constants and magic numbers
- * Centralized for better maintainability and type safety
- */
-
-// CSS Unit Conversion Factors
 export const CSS_CONVERSION_FACTORS = {
   PT_TO_PX: 1.333333,
   PX_TO_PT: 0.75,
@@ -11,14 +5,12 @@ export const CSS_CONVERSION_FACTORS = {
   DEFAULT_PARENT_FONT_SIZE: 16,
 } as const;
 
-// Common Precision Values
 export const CONVERSION_PRECISION = {
   DEFAULT: 2,
   HIGH_PRECISION: 4,
   LOW_PRECISION: 1,
 } as const;
 
-// Popular Values for CSS Units
 export const POPULAR_CSS_VALUES = {
   PT_TO_PX: [
     { source: 8, target: 10.67 },
@@ -56,13 +48,11 @@ export const POPULAR_CSS_VALUES = {
   ],
 };
 
-// Range Validation Constants
 export const RANGE_CONSTRAINTS = {
   BASE_FONT_SIZE: { min: 1, max: 100, step: 1 },
   PARENT_FONT_SIZE: { min: 1, max: 200, step: 1 },
 } as const;
 
-// Formula Templates
 export const CONVERSION_FORMULAS = {
   PT_TO_PX: 'px = pt × 1.3 (96/72)',
   PX_TO_PT: 'pt = px × 0.75 (72/96)',
@@ -72,7 +62,6 @@ export const CONVERSION_FORMULAS = {
   PX_TO_EM: 'em = px ÷ font-size rodzica',
 } as const;
 
-// Validation Messages
 export const VALIDATION_MESSAGES = {
   INVALID_CONVERSION: 'Nieprawidłowa konwersja',
   INVALID_RANGE: 'Wartość poza zakresem',

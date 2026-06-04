@@ -205,7 +205,10 @@
         },
         {
           "label": "Compatibilidad con navegadores",
-          "values": ["Todos los navegadores", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+          "values": [
+            "Todos los navegadores",
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          ]
         },
         {
           "label": "Profundidad de color",

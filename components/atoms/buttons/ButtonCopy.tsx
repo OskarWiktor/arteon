@@ -2,8 +2,8 @@
 
 import { RiCheckLine, RiClipboardLine } from 'react-icons/ri';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import { focusRingClasses } from '@/lib/ui-classes';
 
 type ButtonCopyVariant = 'default' | 'dark';
 
@@ -51,7 +51,12 @@ export default function ButtonCopy({
     <button
       type='button'
       onClick={handleCopy}
-      className={cn(buttonCopyClasses, focusRingClasses, variantClasses[variant], className)}
+      className={cn(
+        buttonCopyClasses,
+        focusRingClasses,
+        variantClasses[variant],
+        className,
+      )}
       aria-label={currentLabel}
     >
       <Icon className='h-3.5 w-3.5' aria-hidden='true' />

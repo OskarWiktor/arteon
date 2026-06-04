@@ -1,10 +1,3 @@
-import HeroBanner from '@/components/organisms/HeroBanner';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
-import Divider from '@/components/atoms/Divider';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import Wrapper from '@/components/atoms/Wrapper';
 import Script from 'next/script';
 import {
   RiCropLine,
@@ -22,9 +15,16 @@ import {
   RiLockLine,
   RiLoopLeftLine,
 } from 'react-icons/ri';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import Divider from '@/components/atoms/Divider';
+import Wrapper from '@/components/atoms/Wrapper';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import { getToolsIndexAlternates } from '@/lib/i18n/pages/toolMeta';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
-import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 export const metadata = {
   title: 'Kostenlose Online-Tools | Konverter, SEO, Farben, Favicon',
@@ -67,7 +67,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 37,
         name: 'WebP zu AVIF Konverter',
-        description: 'WebP-Dateien in AVIF umwandeln. Noch bessere Kompression im modernen Format.',
+        description:
+          'WebP-Dateien in AVIF umwandeln. Noch bessere Kompression im modernen Format.',
         url: toAbsoluteUrl('/de/werkzeuge/webp-zu-avif-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -76,7 +77,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 38,
         name: 'SVG zu AVIF Konverter',
-        description: 'Vektor-SVG-Grafiken in kompaktes AVIF-Rasterformat umwandeln.',
+        description:
+          'Vektor-SVG-Grafiken in kompaktes AVIF-Rasterformat umwandeln.',
         url: toAbsoluteUrl('/de/werkzeuge/svg-zu-avif-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -85,7 +87,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 39,
         name: 'BMP zu AVIF Konverter',
-        description: 'Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln.',
+        description:
+          'Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln.',
         url: toAbsoluteUrl('/de/werkzeuge/bmp-zu-avif-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -113,7 +116,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 42,
         name: 'TIFF zu AVIF Konverter',
-        description: 'TIFF-Dateien in modernes AVIF umwandeln. Massive Dateigrossen-Reduzierung.',
+        description:
+          'TIFF-Dateien in modernes AVIF umwandeln. Massive Dateigrossen-Reduzierung.',
         url: toAbsoluteUrl('/de/werkzeuge/tiff-zu-avif-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -122,7 +126,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 43,
         name: 'JPG zu GIF Konverter',
-        description: 'JPG-Fotos in GIF-Format umwandeln. Perfekt fur einfache Grafiken und Icons.',
+        description:
+          'JPG-Fotos in GIF-Format umwandeln. Perfekt fur einfache Grafiken und Icons.',
         url: toAbsoluteUrl('/de/werkzeuge/jpg-zu-gif-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -131,7 +136,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 44,
         name: 'PNG zu GIF Konverter',
-        description: 'PNG-Grafiken in GIF umwandeln. Ideal fur einfache Icons und Grafiken.',
+        description:
+          'PNG-Grafiken in GIF umwandeln. Ideal fur einfache Icons und Grafiken.',
         url: toAbsoluteUrl('/de/werkzeuge/png-zu-gif-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -140,7 +146,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 45,
         name: 'WebP zu GIF Konverter',
-        description: 'WebP-Bilder in GIF-Format umwandeln fur maximale Kompatibilitat.',
+        description:
+          'WebP-Bilder in GIF-Format umwandeln fur maximale Kompatibilitat.',
         url: toAbsoluteUrl('/de/werkzeuge/webp-zu-gif-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -167,7 +174,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 48,
         name: 'JPG zu TIFF Konverter',
-        description: 'JPG-Fotos in verlustfreies TIFF umwandeln. Zum Drucken und Archivieren.',
+        description:
+          'JPG-Fotos in verlustfreies TIFF umwandeln. Zum Drucken und Archivieren.',
         url: toAbsoluteUrl('/de/werkzeuge/jpg-zu-tiff-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -185,7 +193,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 50,
         name: 'WebP zu TIFF Konverter',
-        description: 'WebP-Bilder in professionelles TIFF fur Druck und Archivierung umwandeln.',
+        description:
+          'WebP-Bilder in professionelles TIFF fur Druck und Archivierung umwandeln.',
         url: toAbsoluteUrl('/de/werkzeuge/webp-zu-tiff-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -194,7 +203,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 51,
         name: 'SVG zu TIFF Konverter',
-        description: 'Vektor-SVG-Grafiken in hochwertiges TIFF-Raster umwandeln.',
+        description:
+          'Vektor-SVG-Grafiken in hochwertiges TIFF-Raster umwandeln.',
         url: toAbsoluteUrl('/de/werkzeuge/svg-zu-tiff-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -203,7 +213,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 52,
         name: 'BMP zu TIFF Konverter',
-        description: 'BMP-Dateien in professionelles TIFF-Format fur den Druck umwandeln.',
+        description:
+          'BMP-Dateien in professionelles TIFF-Format fur den Druck umwandeln.',
         url: toAbsoluteUrl('/de/werkzeuge/bmp-zu-tiff-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -212,7 +223,8 @@ export const metadata = {
         '@type': 'WebApplication',
         position: 53,
         name: 'HEIC zu TIFF Konverter',
-        description: 'iPhone HEIC-Fotos in professionelles TIFF-Format umwandeln.',
+        description:
+          'iPhone HEIC-Fotos in professionelles TIFF-Format umwandeln.',
         url: toAbsoluteUrl('/de/werkzeuge/heic-zu-tiff-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -280,7 +292,9 @@ const schema = {
         name: 'Meta-Tag-Checker',
         description:
           'Meta-Titel- und Beschreibungs-Checker mit Google-Vorschau. Zeigt Zeichenanzahl und Pixelbreite, damit Titel und Beschreibungen in den Suchergebnissen nicht abgeschnitten werden.',
-        url: toAbsoluteUrl('/de/werkzeuge/meta-titel-beschreibung-laengenpruefer'),
+        url: toAbsoluteUrl(
+          '/de/werkzeuge/meta-titel-beschreibung-laengenpruefer',
+        ),
         applicationCategory: 'DeveloperApplication',
         operatingSystem: 'Any',
       },
@@ -290,7 +304,9 @@ const schema = {
         name: 'HTML-E-Mail-Signatur-Generator',
         description:
           'Kostenloser HTML-E-Mail-Signatur-Generator. Kontaktdaten, CTA-Link und Social-Media-Profile eintragen, fertigen HTML-Code in Gmail oder Outlook einfügen.',
-        url: toAbsoluteUrl('/de/werkzeuge/kostenloser-e-mail-signatur-generator'),
+        url: toAbsoluteUrl(
+          '/de/werkzeuge/kostenloser-e-mail-signatur-generator',
+        ),
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Any',
       },
@@ -348,7 +364,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 11,
         name: 'JPG zu WebP Konverter',
-        description: 'JPG-Fotos in leichtes WebP umwandeln. Bildgewicht um bis zu 35% reduzieren.',
+        description:
+          'JPG-Fotos in leichtes WebP umwandeln. Bildgewicht um bis zu 35% reduzieren.',
         url: toAbsoluteUrl('/de/werkzeuge/jpg-zu-webp-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -367,7 +384,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 13,
         name: 'WebP zu JPG Konverter',
-        description: 'WebP-Dateien in universell kompatibles JPG umwandeln. Funktioniert überall.',
+        description:
+          'WebP-Dateien in universell kompatibles JPG umwandeln. Funktioniert überall.',
         url: toAbsoluteUrl('/de/werkzeuge/webp-zu-jpg-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -376,7 +394,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 14,
         name: 'PNG zu WebP Konverter',
-        description: 'PNG-Grafiken in WebP umwandeln. Kleinere Dateien bei erhaltener Transparenz.',
+        description:
+          'PNG-Grafiken in WebP umwandeln. Kleinere Dateien bei erhaltener Transparenz.',
         url: toAbsoluteUrl('/de/werkzeuge/png-zu-webp-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -465,7 +484,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 23,
         name: 'SVG zu WebP Konverter',
-        description: 'SVG-Grafiken in leichtes WebP umwandeln. Ideal fur Websites.',
+        description:
+          'SVG-Grafiken in leichtes WebP umwandeln. Ideal fur Websites.',
         url: toAbsoluteUrl('/de/werkzeuge/svg-zu-webp-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -474,7 +494,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 24,
         name: 'GIF zu WebP Konverter',
-        description: 'Erstes GIF-Bild als leichtes WebP exportieren. Kleinere Datei.',
+        description:
+          'Erstes GIF-Bild als leichtes WebP exportieren. Kleinere Datei.',
         url: toAbsoluteUrl('/de/werkzeuge/gif-zu-webp-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -483,7 +504,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 25,
         name: 'BMP zu WebP Konverter',
-        description: 'BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% kleiner.',
+        description:
+          'BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% kleiner.',
         url: toAbsoluteUrl('/de/werkzeuge/bmp-zu-webp-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -492,7 +514,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 26,
         name: 'AVIF zu JPG Konverter',
-        description: 'AVIF-Dateien in universelles JPG umwandeln. Kompatibel uberall.',
+        description:
+          'AVIF-Dateien in universelles JPG umwandeln. Kompatibel uberall.',
         url: toAbsoluteUrl('/de/werkzeuge/avif-zu-jpg-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -501,7 +524,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 27,
         name: 'AVIF zu PNG Konverter',
-        description: 'AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat.',
+        description:
+          'AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat.',
         url: toAbsoluteUrl('/de/werkzeuge/avif-zu-png-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -519,7 +543,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 29,
         name: 'HEIC zu JPG Konverter',
-        description: 'iPhone HEIC-Fotos in universelles JPG umwandeln. Ohne Registrierung.',
+        description:
+          'iPhone HEIC-Fotos in universelles JPG umwandeln. Ohne Registrierung.',
         url: toAbsoluteUrl('/de/werkzeuge/heic-zu-jpg-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -528,7 +553,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 30,
         name: 'HEIC zu PNG Konverter',
-        description: 'iPhone HEIC-Fotos in verlustfreies PNG umwandeln. Volle Qualitat.',
+        description:
+          'iPhone HEIC-Fotos in verlustfreies PNG umwandeln. Volle Qualitat.',
         url: toAbsoluteUrl('/de/werkzeuge/heic-zu-png-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -537,7 +563,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 31,
         name: 'HEIC zu WebP Konverter',
-        description: 'iPhone HEIC-Fotos in leichtes WebP umwandeln. Kleinere Datei.',
+        description:
+          'iPhone HEIC-Fotos in leichtes WebP umwandeln. Kleinere Datei.',
         url: toAbsoluteUrl('/de/werkzeuge/heic-zu-webp-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -546,7 +573,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 32,
         name: 'TIFF zu JPG Konverter',
-        description: 'TIFF-Dateien in kompaktes JPG umwandeln. Ideal fur Scans.',
+        description:
+          'TIFF-Dateien in kompaktes JPG umwandeln. Ideal fur Scans.',
         url: toAbsoluteUrl('/de/werkzeuge/tiff-zu-jpg-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -555,7 +583,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 33,
         name: 'TIFF zu PNG Konverter',
-        description: 'TIFF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat.',
+        description:
+          'TIFF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat.',
         url: toAbsoluteUrl('/de/werkzeuge/tiff-zu-png-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -564,7 +593,8 @@ const schema = {
         '@type': 'WebApplication',
         position: 34,
         name: 'TIFF zu WebP Konverter',
-        description: 'TIFF-Dateien in leichtes WebP umwandeln. Massive Reduktion.',
+        description:
+          'TIFF-Dateien in leichtes WebP umwandeln. Massive Reduktion.',
         url: toAbsoluteUrl('/de/werkzeuge/tiff-zu-webp-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -576,7 +606,8 @@ const schema = {
 const faqItems = [
   {
     question: 'Was kosten die Tools?',
-    answer: 'Nichts. Alle Tools sind kostenlos, ohne Abonnements und ohne versteckte Gebühren.',
+    answer:
+      'Nichts. Alle Tools sind kostenlos, ohne Abonnements und ohne versteckte Gebühren.',
   },
   {
     question: 'Werden meine Dateien an einen Server gesendet?',
@@ -632,9 +663,10 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Den perfekten Zuschnitt für Social Media oder Ihre Website vorbereiten. Wählen
-                    Sie ein fertiges Format oder geben Sie eigene Pixelmaße ein und laden Sie das
-                    Bild als PNG, JPG oder WebP herunter.
+                    Den perfekten Zuschnitt für Social Media oder Ihre Website
+                    vorbereiten. Wählen Sie ein fertiges Format oder geben Sie
+                    eigene Pixelmaße ein und laden Sie das Bild als PNG, JPG
+                    oder WebP herunter.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/de/werkzeuge/online-bildeditor'>
@@ -648,16 +680,20 @@ export default function ToolsIndexPage() {
               icon: <RiAppsLine className={largeIconSizeClasses} />,
               title: 'Favicon- & Symbol-Generator',
               topImageAlt: 'Favicon-Generator Arteon',
-              topImageSrc: '/assets/tools/favicon-generator/kostenloser-favicon-generator-de.webp',
+              topImageSrc:
+                '/assets/tools/favicon-generator/kostenloser-favicon-generator-de.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Generieren Sie <strong>favicon.ico</strong> und PNG-Symbole 180x180, 192x192 und
-                    512x512 aus einem einzigen Bild - konform mit Browser- und
-                    Lighthouse-Anforderungen.
+                    Generieren Sie <strong>favicon.ico</strong> und PNG-Symbole
+                    180x180, 192x192 und 512x512 aus einem einzigen Bild -
+                    konform mit Browser- und Lighthouse-Anforderungen.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/kostenloser-favicon-generator'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/kostenloser-favicon-generator'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -682,12 +718,16 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Prüfen Sie Zeichenanzahl, Wortanzahl und Pixelbreite - mit Vorschau, wie Ihre
-                    Seite in den Google-Suchergebnissen erscheint. Vermeiden Sie abgeschnittene
-                    Titel und Beschreibungen.
+                    Prüfen Sie Zeichenanzahl, Wortanzahl und Pixelbreite - mit
+                    Vorschau, wie Ihre Seite in den Google-Suchergebnissen
+                    erscheint. Vermeiden Sie abgeschnittene Titel und
+                    Beschreibungen.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/meta-titel-beschreibung-laengenpruefer'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/meta-titel-beschreibung-laengenpruefer'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -703,12 +743,16 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Prüfen Sie, ob die Textlänge für eine Startseite, Dienstleistungsseite, einen
-                    Blogartikel oder eine Produktbeschreibung passt. Das Tool zählt Wörter, Zeichen,
+                    Prüfen Sie, ob die Textlänge für eine Startseite,
+                    Dienstleistungsseite, einen Blogartikel oder eine
+                    Produktbeschreibung passt. Das Tool zählt Wörter, Zeichen,
                     Absätze und schätzt die Lesezeit.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/wort-und-zeichenzaehler'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/wort-und-zeichenzaehler'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -720,15 +764,20 @@ export default function ToolsIndexPage() {
               icon: <RiFileTextLine className={largeIconSizeClasses} />,
               title: 'Lorem-Ipsum-Generator',
               topImageAlt: 'Lorem-Ipsum-Generator Arteon',
-              topImageSrc: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-de.webp',
+              topImageSrc:
+                '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-de.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Blindtext in 8 Stilen und 9 Modi generieren. Lorem Ipsum, Hipster, Business,
-                    Bacon und mehr. Als Text oder HTML kopieren.
+                    Blindtext in 8 Stilen und 9 Modi generieren. Lorem Ipsum,
+                    Hipster, Business, Bacon und mehr. Als Text oder HTML
+                    kopieren.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/lorem-ipsum-generator'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/lorem-ipsum-generator'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -754,12 +803,16 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    In wenigen Minuten eine professionelle E-Mail-Signatur erstellen. Daten
-                    eingeben, Farben wählen und den fertigen HTML-Code in Gmail, Outlook oder andere
-                    E-Mail-Clients einfügen.
+                    In wenigen Minuten eine professionelle E-Mail-Signatur
+                    erstellen. Daten eingeben, Farben wählen und den fertigen
+                    HTML-Code in Gmail, Outlook oder andere E-Mail-Clients
+                    einfügen.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/kostenloser-e-mail-signatur-generator'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/kostenloser-e-mail-signatur-generator'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -780,15 +833,20 @@ export default function ToolsIndexPage() {
               icon: <RiQrCodeLine className={largeIconSizeClasses} />,
               title: 'Kostenloser QR-Code-Generator',
               topImageAlt: 'Kostenloser QR-Code-Generator Arteon',
-              topImageSrc: '/assets/tools/qr-code-generator/kostenloser-qr-code-generator-de.webp',
+              topImageSrc:
+                '/assets/tools/qr-code-generator/kostenloser-qr-code-generator-de.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    QR-Code für Website, vCard, Speisekarte oder Flyer erstellen. Export als PNG und
-                    SVG - ohne Anmeldung, ohne Limits.
+                    QR-Code für Website, vCard, Speisekarte oder Flyer
+                    erstellen. Export als PNG und SVG - ohne Anmeldung, ohne
+                    Limits.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/kostenloser-qr-code-generator'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/kostenloser-qr-code-generator'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -814,8 +872,9 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Prüfen Sie, ob Text- und Hintergrundfarben gut lesbar sind. Farbcodes eingeben,
-                    Kontrastverhältnis nach <strong>WCAG</strong> ablesen und bei Bedarf die{' '}
+                    Prüfen Sie, ob Text- und Hintergrundfarben gut lesbar sind.
+                    Farbcodes eingeben, Kontrastverhältnis nach{' '}
+                    <strong>WCAG</strong> ablesen und bei Bedarf die{' '}
                     <strong>Match</strong>
                     -Funktion zur automatischen Korrektur nutzen.
                   </p>
@@ -831,12 +890,14 @@ export default function ToolsIndexPage() {
               icon: <RiPantoneLine className={largeIconSizeClasses} />,
               title: 'Bild-Farbextraktor',
               topImageAlt: 'Bild-Farbextraktor Arteon',
-              topImageSrc: '/assets/tools/image-color-extractor/bild-farbextraktor-de.webp',
+              topImageSrc:
+                '/assets/tools/image-color-extractor/bild-farbextraktor-de.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Foto oder Logo hochladen - das Tool extrahiert die dominanten Farben. HEX-Codes
-                    mit einem Klick kopieren und überall verwenden.
+                    Foto oder Logo hochladen - das Tool extrahiert die
+                    dominanten Farben. HEX-Codes mit einem Klick kopieren und
+                    überall verwenden.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/de/werkzeuge/bild-farbextraktor'>
@@ -850,15 +911,20 @@ export default function ToolsIndexPage() {
               icon: <RiPaletteLine className={largeIconSizeClasses} />,
               title: 'Farbpaletten-Generator',
               topImageAlt: 'Farbpaletten-Generator Arteon',
-              topImageSrc: '/assets/tools/color-palette-generator/farbpaletten-generator-de.webp',
+              topImageSrc:
+                '/assets/tools/color-palette-generator/farbpaletten-generator-de.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Basisfarbe wählen und 9 Farbpaletten generieren: monochromatisch, komplementär,
-                    triadisch, Pastell, dunkel und mehr. HEX-Codes mit einem Klick kopieren.
+                    Basisfarbe wählen und 9 Farbpaletten generieren:
+                    monochromatisch, komplementär, triadisch, Pastell, dunkel
+                    und mehr. HEX-Codes mit einem Klick kopieren.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/farbpaletten-generator'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/farbpaletten-generator'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -883,9 +949,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>JPG-Fotos in leichtes WebP umwandeln. Bildgewicht um bis zu 35% reduzieren.</p>
+                  <p>
+                    JPG-Fotos in leichtes WebP umwandeln. Bildgewicht um bis zu
+                    35% reduzieren.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/jpg-zu-webp-konverter'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/jpg-zu-webp-konverter'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -901,7 +973,8 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    PNG-Dateien im Browser in JPG umwandeln. Ohne Dateilimit, ohne Registrierung.
+                    PNG-Dateien im Browser in JPG umwandeln. Ohne Dateilimit,
+                    ohne Registrierung.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/de/werkzeuge/png-zu-jpg-konverter'>
@@ -919,9 +992,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>WebP-Dateien in universell kompatibles JPG umwandeln. Funktioniert überall.</p>
+                  <p>
+                    WebP-Dateien in universell kompatibles JPG umwandeln.
+                    Funktioniert überall.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/webp-zu-jpg-konverter'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/webp-zu-jpg-konverter'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -937,10 +1016,14 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    PNG-Grafiken in WebP umwandeln. Kleinere Dateien bei erhaltener Transparenz.
+                    PNG-Grafiken in WebP umwandeln. Kleinere Dateien bei
+                    erhaltener Transparenz.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/png-zu-webp-konverter'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/png-zu-webp-konverter'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -956,8 +1039,8 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    JPG-Bilder verlustfrei in PNG umwandeln. Lokale Verarbeitung, unbegrenzte
-                    Dateien.
+                    JPG-Bilder verlustfrei in PNG umwandeln. Lokale
+                    Verarbeitung, unbegrenzte Dateien.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink arrow href='/de/werkzeuge/jpg-zu-png-konverter'>
@@ -976,11 +1059,14 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    WebP-Bilder verlustfrei in PNG umwandeln. Lokale Konvertierung, kein
-                    Server-Upload.
+                    WebP-Bilder verlustfrei in PNG umwandeln. Lokale
+                    Konvertierung, kein Server-Upload.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/webp-zu-png-konverter'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/webp-zu-png-konverter'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -1004,9 +1090,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>CSV in JSON-Format konvertieren. Automatische Erkennung und Formatierung.</p>
+                  <p>
+                    CSV in JSON-Format konvertieren. Automatische Erkennung und
+                    Formatierung.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/csv-zu-json-konverter'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/csv-zu-json-konverter'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -1021,9 +1113,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>JSON-Daten in CSV-Format konvertieren. Verarbeitung im Browser.</p>
+                  <p>
+                    JSON-Daten in CSV-Format konvertieren. Verarbeitung im
+                    Browser.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/json-zu-csv-konverter'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/json-zu-csv-konverter'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -1039,10 +1137,14 @@ export default function ToolsIndexPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    XML-Daten in JSON konvertieren. Browserbasierte Konvertierung mit Validierung.
+                    XML-Daten in JSON konvertieren. Browserbasierte
+                    Konvertierung mit Validierung.
                   </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/xml-zu-json-konverter'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/xml-zu-json-konverter'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -1057,9 +1159,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>JSON-Daten in gültiges XML konvertieren. Formatierung im Browser.</p>
+                  <p>
+                    JSON-Daten in gültiges XML konvertieren. Formatierung im
+                    Browser.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/json-zu-xml-konverter'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/json-zu-xml-konverter'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -1074,9 +1182,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>YAML-Konfiguration in JSON konvertieren. Validierung und Formatierung.</p>
+                  <p>
+                    YAML-Konfiguration in JSON konvertieren. Validierung und
+                    Formatierung.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/yaml-zu-json-konverter'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/yaml-zu-json-konverter'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -1091,9 +1205,15 @@ export default function ToolsIndexPage() {
                 '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
               description: (
                 <div className='flex h-full flex-col'>
-                  <p>JSON-Daten in lesbares YAML konvertieren. Verarbeitung im Browser.</p>
+                  <p>
+                    JSON-Daten in lesbares YAML konvertieren. Verarbeitung im
+                    Browser.
+                  </p>
                   <div className='mt-4'>
-                    <ButtonLink arrow href='/de/werkzeuge/json-zu-yaml-konverter'>
+                    <ButtonLink
+                      arrow
+                      href='/de/werkzeuge/json-zu-yaml-konverter'
+                    >
                       Tool öffnen
                     </ButtonLink>
                   </div>
@@ -1109,13 +1229,14 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title='Was sind Arteon-Tools?'>
           <p className='mb-4'>
-            Kostenlose Online-Tools zur Erstellung und Optimierung von Inhalten für Websites, Social
-            Media und Druck - WebP-Konverter, Favicon-Generator, Textzähler, Farbextraktor,
-            Paletten-Generator und QR-Codes.
+            Kostenlose Online-Tools zur Erstellung und Optimierung von Inhalten
+            für Websites, Social Media und Druck - WebP-Konverter,
+            Favicon-Generator, Textzähler, Farbextraktor, Paletten-Generator und
+            QR-Codes.
           </p>
           <p>
-            Alle Tools laufen in Ihrem Browser - Dateien werden nie an einen Server gesendet. Nutzen
-            Sie sie ohne Registrierung und ohne Limits.
+            Alle Tools laufen in Ihrem Browser - Dateien werden nie an einen
+            Server gesendet. Nutzen Sie sie ohne Registrierung und ohne Limits.
           </p>
         </SectionInfo>
 
@@ -1140,7 +1261,8 @@ export default function ToolsIndexPage() {
             {
               icon: <RiLockLine className={normalIconSizeClasses} />,
               title: 'Keine Registrierung',
-              description: 'Kein Konto erforderlich. Öffnen Sie das Tool, nutzen Sie es, fertig.',
+              description:
+                'Kein Konto erforderlich. Öffnen Sie das Tool, nutzen Sie es, fertig.',
             },
             {
               icon: <RiGlobalLine className={normalIconSizeClasses} />,
@@ -1153,12 +1275,19 @@ export default function ToolsIndexPage() {
 
         <Divider line />
 
-        <SectionFaqPanels items={faqItems} title='Häufig gestellte Fragen zu unseren Tools' />
+        <SectionFaqPanels
+          items={faqItems}
+          title='Häufig gestellte Fragen zu unseren Tools'
+        />
 
         <Divider size='sm' />
       </Wrapper>
 
-      <Script id='ld-json-tools-de' type='application/ld+json' strategy='afterInteractive'>
+      <Script
+        id='ld-json-tools-de'
+        type='application/ld+json'
+        strategy='afterInteractive'
+      >
         {JSON.stringify(schema)}
       </Script>
     </>

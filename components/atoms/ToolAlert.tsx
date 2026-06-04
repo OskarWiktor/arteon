@@ -1,5 +1,5 @@
-import { cn } from '@/lib/utils';
 import type { ReactNode } from 'react';
+import { cn } from '@/lib/utils';
 
 type ToolAlertVariant = 'error' | 'success' | 'info' | 'warning';
 
@@ -16,10 +16,18 @@ const variantClasses: Record<ToolAlertVariant, string> = {
   warning: 'border-warning-border bg-warning-bg text-warning-text',
 };
 
-export default function ToolAlert({ children, variant = 'info', className }: ToolAlertProps) {
+export default function ToolAlert({
+  children,
+  variant = 'info',
+  className,
+}: ToolAlertProps) {
   return (
     <div
-      className={cn('rounded-lg border px-3 py-2 text-[11px]!', variantClasses[variant], className)}
+      className={cn(
+        'rounded-lg border px-3 py-2 text-[11px]!',
+        variantClasses[variant],
+        className,
+      )}
       role='alert'
     >
       {children}

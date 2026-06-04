@@ -15,7 +15,12 @@ export type Stat = { label: string; value: string; note?: string };
 export type FaqItem = { question: string; answer: string };
 
 export type ContentBlock =
-  | { type: 'richtext'; html: string; breakBefore?: boolean; breakAfter?: boolean }
+  | {
+      type: 'richtext';
+      html: string;
+      breakBefore?: boolean;
+      breakAfter?: boolean;
+    }
   | {
       type: 'image';
       src: string;
@@ -187,7 +192,12 @@ export type Project = {
   solutions?: ReactNode;
   outcomes?: Stat[];
   process_steps?: string[];
-  testimonial?: { quote: string; author?: string; role?: string; link?: string };
+  testimonial?: {
+    quote: string;
+    author?: string;
+    role?: string;
+    link?: string;
+  };
 
   beforeAfter?: { beforeImage?: string; afterImage?: string; note?: string };
 

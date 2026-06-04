@@ -1,6 +1,6 @@
 'use client';
 
-import { focusRingClasses } from '@/lib/ui-classes';
+import { focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 type CarouselDotsProps = {
@@ -53,7 +53,8 @@ export function CarouselDots({
       </div>
 
       <p className='sr-only' aria-live='polite'>
-        {slideLabel} {Math.min(currentSlide + 1, maxSlides)} {ofLabel} {maxSlides}
+        {slideLabel} {Math.min(currentSlide + 1, maxSlides)} {ofLabel}{' '}
+        {maxSlides}
       </p>
     </>
   );

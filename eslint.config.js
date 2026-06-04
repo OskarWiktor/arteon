@@ -20,6 +20,8 @@ export default [
       '**/build/**',
       '**/dist/**',
       '**/.next-docs/**',
+      'public/**',
+      '**/*.min.*',
     ],
   },
   js.configs.recommended,
@@ -42,6 +44,17 @@ export default [
         module: 'readonly',
         __dirname: 'readonly',
         __filename: 'readonly',
+        console: 'readonly',
+        Buffer: 'readonly',
+        URL: 'readonly',
+        URLSearchParams: 'readonly',
+        fetch: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
+        setInterval: 'readonly',
+        clearInterval: 'readonly',
+        TextEncoder: 'readonly',
+        TextDecoder: 'readonly',
       },
     },
   },
@@ -77,6 +90,11 @@ export default [
       ...(sonarjs.configs?.recommended?.rules ?? {}),
       ...(promise.configs?.['flat/recommended']?.rules ?? {}),
 
+      // Too noisy for an existing React codebase (200+ hits, marginal benefit).
+      'sonarjs/prefer-read-only-props': 'off',
+      // Nested ternaries are common and acceptable in JSX — keep visible, not blocking.
+      'sonarjs/no-nested-conditional': 'warn',
+
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/explicit-function-return-type': 'off',
@@ -89,7 +107,12 @@ export default [
       'import/order': [
         'warn',
         {
-          groups: ['builtin', 'external', 'internal', ['parent', 'sibling', 'index']],
+          groups: [
+            'builtin',
+            'external',
+            'internal',
+            ['parent', 'sibling', 'index'],
+          ],
           'newlines-between': 'never',
           alphabetize: { order: 'asc', caseInsensitive: true },
         },

@@ -1,26 +1,26 @@
 'use client';
 
-import { useEffect, useState, type FormEvent } from 'react';
+import { useEffect, useState } from 'react';
+import { RiContrast2Line } from 'react-icons/ri';
+import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonCopy from '@/components/atoms/buttons/ButtonCopy';
-import { RiContrast2Line } from 'react-icons/ri';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolInfo from '@/components/atoms/ToolInfo';
 import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
-import Badge from '@/components/atoms/Badge';
+import Card from '@/components/organisms/Card';
+import { ui } from '@/lib/i18n/tools/wcagContrast';
+import { useLocale } from '@/lib/LocaleContext';
 import { getContrastRatio, parseColor } from '@/lib/tools/color/contrast';
 import { hslToRgb, rgbToHex, rgbToHsl } from '@/lib/tools/color/convert';
-import { useLocale } from '@/lib/LocaleContext';
-import { ui } from '@/lib/i18n/tools/wcag-contrast';
-import Input from '@/components/atoms/form/Input';
-import Card from '@/components/organisms/Card';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
   largeIconSizeClasses,
-} from '@/lib/ui-classes';
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import Input from '@/components/atoms/form/Input';
 
 const DEFAULT_FOREGROUND = rgbToHex({ r: 0, g: 0, b: 0 });
 const DEFAULT_BACKGROUND = rgbToHex({ r: 255, g: 255, b: 255 });
@@ -91,7 +91,10 @@ const MATCH_TARGET_RATIOS: Record<MatchTarget, number> = {
   iconAA: 3,
 };
 
-function formatRgba({ r, g, b }: { r: number; g: number; b: number }, alpha: number): string {
+function formatRgba(
+  { r, g, b }: { r: number; g: number; b: number },
+  alpha: number,
+): string {
   const clampChannel = (v: number) => Math.min(255, Math.max(0, Math.round(v)));
   const a = Math.round(alpha * 1000) / 1000;
   return `rgba(${clampChannel(r)}, ${clampChannel(g)}, ${clampChannel(b)}, ${a})`;
@@ -150,6 +153,16 @@ function adjustColorToWcag({
   return best?.color ?? null;
 }
 
+/**
+ * Render the WCAG Contrast Checker user interface for comparing foreground and background colors,
+ * selecting a WCAG target, and generating suggested foreground colors that meet the chosen contrast.
+ *
+ * The component manages its own state for color inputs, color pickers, match target, suggested color,
+ * and sample text; computes contrast results and suggestions; and exposes controls to swap, reset,
+ * match, and apply suggested colors.
+ *
+ * @returns The React element for the WCAG contrast checker interface.
+ */
 export default function WcagContrastChecker() {
   const locale = useLocale();
   const t = ui[locale];
@@ -159,7 +172,9 @@ export default function WcagContrastChecker() {
   const [foregroundPicker, setForegroundPicker] = useState(DEFAULT_FOREGROUND);
   const [backgroundPicker, setBackgroundPicker] = useState(DEFAULT_BACKGROUND);
   const [matchTarget, setMatchTarget] = useState<MatchTarget>('normalAA');
-  const [matchedForeground, setMatchedForeground] = useState<string | null>(null);
+  const [matchedForeground, setMatchedForeground] = useState<string | null>(
+    null,
+  );
   const [matchError, setMatchError] = useState<string | null>(null);
 
   const result = getWcagResult(foreground, background);
@@ -222,7 +237,7 @@ export default function WcagContrastChecker() {
     setForeground(matchedForeground);
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
   };
 
@@ -233,7 +248,9 @@ export default function WcagContrastChecker() {
       <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
         <Card interactive={false} padding='lg'>
           <form onSubmit={handleSubmit} className='space-y-6'>
-            <ToolFieldRow label={<span className='tool-value'>{t.sampleTextLabel}</span>}>
+            <ToolFieldRow
+              label={<span className='tool-value'>{t.sampleTextLabel}</span>}
+            >
               <Input
                 id='text-sample'
                 type='text'
@@ -249,12 +266,25 @@ export default function WcagContrastChecker() {
                   label={t.textColorLabel}
                   helper={
                     <span className='text-xs! text-inherit'>
-                      {t.supportedFormats} <code className='rounded bg-black/5 px-1'>#rrggbb</code>,{' '}
+                      {t.supportedFormats}{' '}
+                      <code className='rounded bg-black/5 px-1'>#rrggbb</code>,{' '}
                       <code className='rounded bg-black/5 px-1'>#rgb</code>,{' '}
-                      <code className='rounded bg-black/5 px-1'>rgb(r,g,b)</code>,{' '}
-                      <code className='rounded bg-black/5 px-1'>rgba(r,g,b,a)</code>,{' '}
-                      <code className='rounded bg-black/5 px-1'>hsl(h,s%,l%)</code>,{' '}
-                      <code className='rounded bg-black/5 px-1'>hsla(h,s%,l%,a)</code>.
+                      <code className='rounded bg-black/5 px-1'>
+                        rgb(r,g,b)
+                      </code>
+                      ,{' '}
+                      <code className='rounded bg-black/5 px-1'>
+                        rgba(r,g,b,a)
+                      </code>
+                      ,{' '}
+                      <code className='rounded bg-black/5 px-1'>
+                        hsl(h,s%,l%)
+                      </code>
+                      ,{' '}
+                      <code className='rounded bg-black/5 px-1'>
+                        hsla(h,s%,l%,a)
+                      </code>
+                      .
                     </span>
                   }
                   helperClassName='text-xs!'
@@ -271,15 +301,30 @@ export default function WcagContrastChecker() {
                 </ToolFieldRow>
 
                 <ToolFieldRow
-                  label={<span className='tool-value'>{t.backgroundColorLabel}</span>}
+                  label={
+                    <span className='tool-value'>{t.backgroundColorLabel}</span>
+                  }
                   helper={
                     <span className='text-xs! text-inherit'>
-                      {t.supportedFormats} <code className='rounded bg-black/5 px-1'>#rrggbb</code>,{' '}
+                      {t.supportedFormats}{' '}
+                      <code className='rounded bg-black/5 px-1'>#rrggbb</code>,{' '}
                       <code className='rounded bg-black/5 px-1'>#rgb</code>,{' '}
-                      <code className='rounded bg-black/5 px-1'>rgb(r,g,b)</code>,{' '}
-                      <code className='rounded bg-black/5 px-1'>rgba(r,g,b,a)</code>,{' '}
-                      <code className='rounded bg-black/5 px-1'>hsl(h,s%,l%)</code>,{' '}
-                      <code className='rounded bg-black/5 px-1'>hsla(h,s%,l%,a)</code>.
+                      <code className='rounded bg-black/5 px-1'>
+                        rgb(r,g,b)
+                      </code>
+                      ,{' '}
+                      <code className='rounded bg-black/5 px-1'>
+                        rgba(r,g,b,a)
+                      </code>
+                      ,{' '}
+                      <code className='rounded bg-black/5 px-1'>
+                        hsl(h,s%,l%)
+                      </code>
+                      ,{' '}
+                      <code className='rounded bg-black/5 px-1'>
+                        hsla(h,s%,l%,a)
+                      </code>
+                      .
                     </span>
                   }
                   helperClassName='text-xs!'
@@ -314,7 +359,9 @@ export default function WcagContrastChecker() {
               </div>
             </div>
 
-            <ToolFieldRow label={<span className='tool-value'>{t.matchTargetLabel}</span>}>
+            <ToolFieldRow
+              label={<span className='tool-value'>{t.matchTargetLabel}</span>}
+            >
               <div className='flex flex-col gap-2 sm:flex-row sm:items-center'>
                 <select
                   className='tool-input h-10'
@@ -361,18 +408,31 @@ export default function WcagContrastChecker() {
                 <div className='flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between'>
                   <div className='flex min-w-0 items-center gap-3'>
                     <div
-                      className={cn('rounded-md border border-neutral-200', largeIconSizeClasses)}
+                      className={cn(
+                        'rounded-md border border-neutral-200',
+                        largeIconSizeClasses,
+                      )}
                       style={{ backgroundColor: matchedForeground }}
                       aria-hidden='true'
                     />
-                    <p className='tool-value truncate text-dark'>{matchedForeground}</p>
+                    <p className='tool-value truncate text-dark'>
+                      {matchedForeground}
+                    </p>
                   </div>
 
                   <div className='flex flex-wrap items-center gap-2'>
-                    <Button type='button' size='small' onClick={handleApplySuggested}>
+                    <Button
+                      type='button'
+                      size='small'
+                      onClick={handleApplySuggested}
+                    >
                       {t.applySuggestedColor}
                     </Button>
-                    <ButtonCopy text={matchedForeground} label={t.copy} copiedLabel={t.copied} />
+                    <ButtonCopy
+                      text={matchedForeground}
+                      label={t.copy}
+                      copiedLabel={t.copied}
+                    />
                   </div>
                 </div>
 
@@ -389,16 +449,28 @@ export default function WcagContrastChecker() {
             <div>
               <div className='space-y-1'>
                 <p className='tool-value uppercase'>{t.contrastRatio}</p>
-                <p className='text-xl font-semibold text-dark'>{formatRatio(result.ratio)}</p>
+                <p className='text-xl font-semibold text-dark'>
+                  {formatRatio(result.ratio)}
+                </p>
               </div>
               {hasError ? (
                 <ToolHelper variant='error' className='mt-1'>
                   <span className='text-xs! text-dark'>
-                    {t.colorReadError} <code className='rounded bg-black/5 px-1'>#rrggbb</code>,{' '}
+                    {t.colorReadError}{' '}
+                    <code className='rounded bg-black/5 px-1'>#rrggbb</code>,{' '}
                     <code className='rounded bg-black/5 px-1'>rgb(r,g,b)</code>,{' '}
-                    <code className='rounded bg-black/5 px-1'>rgba(r,g,b,a)</code>,{' '}
-                    <code className='rounded bg-black/5 px-1'>hsl(h,s%,l%)</code>,{' '}
-                    <code className='rounded bg-black/5 px-1'>hsla(h,s%,l%,a)</code>.
+                    <code className='rounded bg-black/5 px-1'>
+                      rgba(r,g,b,a)
+                    </code>
+                    ,{' '}
+                    <code className='rounded bg-black/5 px-1'>
+                      hsl(h,s%,l%)
+                    </code>
+                    ,{' '}
+                    <code className='rounded bg-black/5 px-1'>
+                      hsla(h,s%,l%,a)
+                    </code>
+                    .
                   </span>
                 </ToolHelper>
               ) : (
@@ -438,7 +510,10 @@ export default function WcagContrastChecker() {
             <div className={cn('gap-2', flexCenterBetweenClasses)}>
               <p className='tool-value uppercase'>{t.largeText}</p>
               <div className='flex flex-wrap items-center gap-1.5'>
-                <ResultBadge ok={!!result.ratio && result.largeText.AA} label={t.badges.largeAA} />
+                <ResultBadge
+                  ok={!!result.ratio && result.largeText.AA}
+                  label={t.badges.largeAA}
+                />
                 <ResultBadge
                   ok={!!result.ratio && result.largeText.AAA}
                   label={t.badges.largeAAA}
@@ -462,12 +537,18 @@ export default function WcagContrastChecker() {
             <div className={cn('gap-2', flexCenterBetweenClasses)}>
               <p className='tool-value uppercase'>{t.icon}</p>
               <div className='flex flex-wrap items-center gap-1.5'>
-                <ResultBadge ok={!!result.ratio && result.uiGraphics.AA} label={t.badges.iconAA} />
+                <ResultBadge
+                  ok={!!result.ratio && result.uiGraphics.AA}
+                  label={t.badges.iconAA}
+                />
               </div>
             </div>
             <div className='flex items-center gap-3'>
               <div
-                className={cn('h-10 w-10 rounded-md border border-neutral-200', flexCenterClasses)}
+                className={cn(
+                  'h-10 w-10 rounded-md border border-neutral-200',
+                  flexCenterClasses,
+                )}
                 style={{
                   color: foreground,
                   backgroundColor: background,

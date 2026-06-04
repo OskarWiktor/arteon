@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "GIF to JPG converter – free, unlimited files",
-      "alternateName": ["Convert GIF to JPG", "GIF frame to JPG", "Extract GIF as JPEG"],
+      "alternateName": [
+        "Convert GIF to JPG",
+        "GIF frame to JPG",
+        "Extract GIF as JPEG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Free GIF to JPG converter. Extract the first frame of a GIF as compact JPG. No uploads, no limits.",

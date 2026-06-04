@@ -17,9 +17,33 @@ interface SectionMetricsProps {
   metrics: Metric[];
 }
 
-export default function SectionMetrics({ title, metrics }: SectionMetricsProps) {
+/**
+ * Render a responsive metrics section with metric cards and accessible progress bars.
+ *
+ * Each metric is displayed as a card showing its label, value and unit, and a colored progress bar
+ * whose width is computed from the metric value and max. If a metric's `inverse` flag is true,
+ * the progress is calculated from `max - value`.
+ *
+ * @param title - Optional section title; when provided it is rendered as the section header and used for `aria-labelledby`.
+ * @param metrics - Array of metric objects. Each metric should include:
+ *   - `label`: display label for the metric
+ *   - `value`: current numeric value
+ *   - `unit`: unit string shown next to the value
+ *   - `max`: numeric maximum used to compute progress percentage
+ *   - `color`: CSS class(es) applied to the inner progress bar
+ *   - `inverse` (optional): when true, progress is computed as `(max - value) / max`
+ *
+ * @returns A React element containing the metrics section.
+ */
+export default function SectionMetrics({
+  title,
+  metrics,
+}: SectionMetricsProps) {
   return (
-    <section data-section='metrics' aria-labelledby={title ? 'metrics-title' : undefined}>
+    <section
+      data-section='metrics'
+      aria-labelledby={title ? 'metrics-title' : undefined}
+    >
       <Wrapper>
         {title && <SectionHeader title={title} />}
 

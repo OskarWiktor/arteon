@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "YAML konvertálása JSON formátumba. Automatikus elemzés és formázás. Ingyenes.",
-      "featureList": ["YAML to JSON conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert YAML to JSON", "YAML to JSON", "Free YAML to JSON converter"]
+      "featureList": [
+        "YAML to JSON conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert YAML to JSON",
+        "YAML to JSON",
+        "Free YAML to JSON converter"
+      ]
     },
     "howTo": {
       "name": "Hogyan konvertáljuk YAML-t JSON-vé",

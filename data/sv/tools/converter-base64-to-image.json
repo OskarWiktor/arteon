@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Avkoda Base64-strängar till bilder. Förhandsgranska och ladda ner i webbläsaren. Gratis.",
-      "featureList": ["Base64 to bild conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert Base64 to bild", "Base64 to bild", "Free Base64 to bild converter"]
+      "featureList": [
+        "Base64 to bild conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert Base64 to bild",
+        "Base64 to bild",
+        "Free Base64 to bild converter"
+      ]
     },
     "howTo": {
       "name": "Hur man konverterar Base64 till bild",

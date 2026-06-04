@@ -1,9 +1,9 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { useEffect, useRef, useState } from 'react';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import { flexCenterClasses } from '@/lib/ui-classes';
 
 const AD_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? '';
 const AD_SCRIPT_SRC = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${AD_CLIENT}`;
@@ -88,7 +88,9 @@ function ensureAdScript() {
 
   if (scriptState !== 'idle') return;
 
-  const alreadyPresent = Array.from(document.scripts).some(s => s.src.includes('adsbygoogle.js'));
+  const alreadyPresent = Array.from(document.scripts).some(s =>
+    s.src.includes('adsbygoogle.js'),
+  );
   if (alreadyPresent) {
     flushReady();
     return;
@@ -130,7 +132,12 @@ function initConsentBus() {
   });
 }
 
-export default function AdSense({ variant, adSlot, className, locale }: AdSenseProps) {
+export default function AdSense({
+  variant,
+  adSlot,
+  className,
+  locale,
+}: AdSenseProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const pushed = useRef(false);
   const retryCount = useRef(0);
@@ -140,7 +147,8 @@ export default function AdSense({ variant, adSlot, className, locale }: AdSenseP
   const preset = PRESETS[variant];
   const rawSlot = adSlot || preset.slot;
   const slot = SLOT_ALIASES[rawSlot] ?? rawSlot;
-  const isInArticleVariant = variant === 'in-article' || variant === 'in-article-new';
+  const isInArticleVariant =
+    variant === 'in-article' || variant === 'in-article-new';
 
   const resetAd = () => {
     pushed.current = false;
@@ -269,14 +277,16 @@ export default function AdSense({ variant, adSlot, className, locale }: AdSenseP
 
   const label = locale && (AD_LABEL[locale] ?? AD_LABEL.en);
   const labelNode = label && (
-    <span className='block text-center text-[10px] tracking-widest text-neutral-400'>{label}</span>
+    <span className='block text-center text-[10px] tracking-widest text-neutral-400'>
+      {label}
+    </span>
   );
 
   if (variant === 'tool-banner') {
     return (
       <div
         className={cn(
-          'ad-placeholder flex min-h-[110px] flex-col items-center rounded bg-neutral-50',
+          'ad-placeholder flex min-h-27.5 flex-col items-center rounded bg-neutral-50',
           className,
         )}
       >
@@ -288,7 +298,12 @@ export default function AdSense({ variant, adSlot, className, locale }: AdSenseP
 
   if (variant === 'responsive') {
     return (
-      <div className={cn('ad-placeholder min-h-[250px] w-full rounded bg-neutral-50', className)}>
+      <div
+        className={cn(
+          'ad-placeholder min-h-62.5 w-full rounded bg-neutral-50',
+          className,
+        )}
+      >
         {labelNode}
         <div ref={containerRef} className='w-full' />
       </div>
@@ -299,7 +314,7 @@ export default function AdSense({ variant, adSlot, className, locale }: AdSenseP
     return (
       <div
         className={cn(
-          'ad-placeholder inline-block min-h-[600px] w-[160px] rounded bg-neutral-50',
+          'ad-placeholder inline-block min-h-150 w-40 rounded bg-neutral-50',
           className,
         )}
       >
@@ -311,7 +326,12 @@ export default function AdSense({ variant, adSlot, className, locale }: AdSenseP
 
   if (isInArticleVariant) {
     return (
-      <div className={cn('ad-placeholder min-h-[280px] w-full rounded bg-neutral-50', className)}>
+      <div
+        className={cn(
+          'ad-placeholder min-h-70 w-full rounded bg-neutral-50',
+          className,
+        )}
+      >
         {labelNode}
         <div ref={containerRef} className='w-full' />
       </div>

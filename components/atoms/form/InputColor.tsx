@@ -1,4 +1,4 @@
-import { focusRingClasses } from '@/lib/ui-classes';
+import { focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 type InputColorProps = Omit<React.ComponentProps<'input'>, 'type'>;

@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter JSON na CSV - darmowy, bez rejestracji",
-      "alternateName": ["Zamiana JSON na CSV", "Konwersja JSON do CSV", "JSON to CSV converter"],
+      "alternateName": [
+        "Zamiana JSON na CSV",
+        "Konwersja JSON do CSV",
+        "JSON to CSV converter"
+      ],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Darmowy konwerter JSON na CSV. Zamień dane JSON na CSV w przeglądarce - dane nie są wysyłane na serwer.",

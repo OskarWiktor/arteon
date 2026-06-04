@@ -2,8 +2,12 @@ import { notFound, permanentRedirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Wrapper from '@/components/atoms/Wrapper';
-import HeroBanner from '@/components/organisms/HeroBanner';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import CodeBlock from '@/components/organisms/CodeBlock';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import ShareBlock from '@/components/organisms/ShareBlock';
 import TableOfContents from '@/components/organisms/TableOfContent';
 import Badge from '@/components/atoms/Badge';
 import CTABanner from '@/components/organisms/CTABanner';
@@ -15,17 +19,13 @@ import {
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
-import CodeBlock from '@/components/organisms/CodeBlock';
-import TableBlock from '@/components/atoms/TableBlock';
-import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
-import ShareBlock from '@/components/organisms/ShareBlock';
-import ColorPalette from '@/components/atoms/ColorPalette';
 import AbbrTouchHandler from '@/components/atoms/AbbrTouchHandler';
-import AdSense from '@/components/molecules/AdSense';
-import { JsonLd } from '@/components/atoms/JsonLd';
+import ColorPalette from '@/components/atoms/ColorPalette';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
+import TableBlock from '@/components/atoms/TableBlock';
+import AdSense from '@/components/molecules/AdSense';
 import { cn } from '@/lib/utils';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 
 const defaultCTA = {
   title: 'Rozwiń z nami swoją firmę',
@@ -66,7 +66,9 @@ function jsonLd(article: Article) {
     description,
     image: imageObject ? [imageObject] : undefined,
     thumbnailUrl: imageUrl,
-    author: [{ '@type': 'Organization', name: article.author?.name || 'Arteon' }],
+    author: [
+      { '@type': 'Organization', name: article.author?.name || 'Arteon' },
+    ],
     publisher: {
       '@type': 'Organization',
       name: 'Arteon',
@@ -129,12 +131,23 @@ function isFlowBlock(b: Article['contentBlocks'][number]): b is FlowBlock {
   );
 }
 
+/**
+ * Render a sequence of article "flow" content blocks (richtext, code, table, quote, color palette) inside a prose container.
+ *
+ * @param items - An ordered array of FlowBlock items to render
+ * @returns A JSX element containing the rendered flow blocks
+ */
 function FlowGroup({ items }: { items: FlowBlock[] }) {
   return (
     <div className='prose prose-lg max-w-none'>
       {items.map((b, i) => {
         if (b.type === 'richtext') {
-          return <div key={`f-rt-${i}`} dangerouslySetInnerHTML={{ __html: b.html }} />;
+          return (
+            <div
+              key={`f-rt-${i}`}
+              dangerouslySetInnerHTML={{ __html: b.html }}
+            />
+          );
         }
         if (b.type === 'code') {
           return (
@@ -195,11 +208,21 @@ function FlowGroup({ items }: { items: FlowBlock[] }) {
   );
 }
 
+/**
+ * Render an article's content blocks, grouping consecutive flow blocks and rendering individual non-flow blocks.
+ *
+ * Renders supported block types: flow blocks (`richtext`, `code`, `table`, `quote`, `colorPalette`) are grouped and rendered together; single non-flow blocks such as `image`, `imageText`, and `ad` are rendered with their respective layout and captions. Unknown block types produce an empty placeholder.
+ *
+ * @param blocks - The article's content blocks; may be omitted or empty.
+ * @returns A JSX fragment with the rendered blocks, or `null` if `blocks` is empty or not provided.
+ */
 function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
   if (!blocks?.length) return null;
 
   type NonFlowBlock = Exclude<Article['contentBlocks'][number], FlowBlock>;
-  type Group = { kind: 'flow'; items: FlowBlock[] } | { kind: 'single'; items: NonFlowBlock[] };
+  type Group =
+    | { kind: 'flow'; items: FlowBlock[] }
+    | { kind: 'single'; items: NonFlowBlock[] };
   const groups: Group[] = [];
   let buf: FlowBlock[] = [];
 
@@ -244,7 +267,9 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
 
           return (
             <div key={`grp-img-${i}`}>
-              <figure className={!hasCaption ? 'mb-6 md:mb-12 lg:mb-16' : undefined}>
+              <figure
+                className={!hasCaption ? 'mb-6 md:mb-12 lg:mb-16' : undefined}
+              >
                 {isAuto ? (
                   <div className='overflow-hidden rounded-lg border border-neutral-200'>
                     <Image
@@ -333,7 +358,10 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
         if (b.type === 'ad') {
           return (
             <>
-              <div key={`grp-ad-${i}`} className='not-prose my-8 flex justify-center'>
+              <div
+                key={`grp-ad-${i}`}
+                className='not-prose my-8 flex justify-center'
+              >
                 <AdSense variant='responsive' />
               </div>
               <Divider size='sm' line />
@@ -381,7 +409,9 @@ export async function generateMetadata({
       url: ogUrl,
       title,
       description,
-      images: image ? [{ url: image, width: 1200, height: 630, alt: article.title }] : undefined,
+      images: image
+        ? [{ url: image, width: 1200, height: 630, alt: article.title }]
+        : undefined,
     },
     twitter: {
       card: 'summary_large_image',
@@ -392,6 +422,14 @@ export async function generateMetadata({
   };
 }
 
+/**
+ * Renders the article page for the given route parameters, including hero banner, breadcrumbs,
+ * article content (blocks, FAQ, JSON-LD), sidebar (share and table of contents), related-articles
+ * carousel, and CTA banner.
+ *
+ * @param params - A promise resolving to an object with `category` and `slug` route parameters
+ * @returns The fully composed article page content for the specified `slug` and `category`. May cause a 404 when the article is not found or a permanent redirect to the canonical category URL when the provided `category` does not match the article's primary category.
+ */
 export default async function ArticlePage({
   params,
 }: {
@@ -404,7 +442,8 @@ export default async function ArticlePage({
   const articlePreviews = getAllArticlePreviews();
 
   const canonicalCat = getPrimaryCategorySlug(article);
-  const categoryLabel = article.primaryCategory || canonicalCat.replace(/-/g, ' ').toUpperCase();
+  const categoryLabel =
+    article.primaryCategory || canonicalCat.replace(/-/g, ' ').toUpperCase();
 
   const articlesCarouselTitle = `Sprawdź inne artykuły na temat: ${categoryLabel}`;
   if (category !== canonicalCat) {
@@ -418,7 +457,9 @@ export default async function ArticlePage({
   return (
     <>
       <AbbrTouchHandler />
-      <HeroBanner backgroundImage={article.cover || '/assets/bg/abstract-bg13.webp'} />
+      <HeroBanner
+        backgroundImage={article.cover || '/assets/bg/abstract-bg13.webp'}
+      />
 
       <Breadcrumbs
         second={{ href: '/edukacja', label: 'Edukacja' }}
@@ -426,7 +467,10 @@ export default async function ArticlePage({
           href: `/edukacja/${canonicalCat}`,
           label: categoryLabel,
         }}
-        fourth={{ href: `/edukacja/${canonicalCat}/${article.slug}`, label: article.title }}
+        fourth={{
+          href: `/edukacja/${canonicalCat}/${article.slug}`,
+          label: article.title,
+        }}
         includeJsonLd
       />
 
@@ -446,15 +490,24 @@ export default async function ArticlePage({
               {article.author?.name && <Badge text={article.author.name} />}
               {article.datePublished && (
                 <Badge>
-                  Publikacja: <time dateTime={article.datePublished}>{article.datePublished}</time>
+                  Publikacja:{' '}
+                  <time dateTime={article.datePublished}>
+                    {article.datePublished}
+                  </time>
                 </Badge>
               )}
-              {article.dateModified && article.dateModified !== article.datePublished && (
-                <Badge>
-                  Aktualizacja: <time dateTime={article.dateModified}>{article.dateModified}</time>
-                </Badge>
+              {article.dateModified &&
+                article.dateModified !== article.datePublished && (
+                  <Badge>
+                    Aktualizacja:{' '}
+                    <time dateTime={article.dateModified}>
+                      {article.dateModified}
+                    </time>
+                  </Badge>
+                )}
+              {article.readingTime && (
+                <Badge text={`${article.readingTime} min czytania`} />
               )}
-              {article.readingTime && <Badge text={`${article.readingTime} min czytania`} />}
             </div>
           </header>
 
@@ -474,7 +527,10 @@ export default async function ArticlePage({
             </>
           )}
 
-          <JsonLd schema={jsonLd(article)} id={`schema-article-${article.slug}`} />
+          <JsonLd
+            schema={jsonLd(article)}
+            id={`schema-article-${article.slug}`}
+          />
         </div>
         <div>
           <ShareBlock url={url} title={shareTitle} />{' '}

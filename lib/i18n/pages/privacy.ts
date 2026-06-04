@@ -1,6 +1,5 @@
 import type { Locale } from '@/types/locale';
 import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
-import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 // ---------------------------------------------------------------------------
 // Non-PL "Privacy Policy" page – centralised metadata (loaded from JSON)
@@ -13,21 +12,22 @@ export type PrivacyPageMeta = {
   description: string;
 };
 
-import en from '@/data/en/pages/privacy.json';
-import de from '@/data/de/pages/privacy.json';
-import es from '@/data/es/pages/privacy.json';
-import fr from '@/data/fr/pages/privacy.json';
-import pt from '@/data/pt/pages/privacy.json';
-import it from '@/data/it/pages/privacy.json';
-import ro from '@/data/ro/pages/privacy.json';
-import nl from '@/data/nl/pages/privacy.json';
-import hu from '@/data/hu/pages/privacy.json';
 import cs from '@/data/cs/pages/privacy.json';
-import sv from '@/data/sv/pages/privacy.json';
 import da from '@/data/da/pages/privacy.json';
-import no from '@/data/no/pages/privacy.json';
-import fi from '@/data/fi/pages/privacy.json';
+import de from '@/data/de/pages/privacy.json';
 import el from '@/data/el/pages/privacy.json';
+import en from '@/data/en/pages/privacy.json';
+import es from '@/data/es/pages/privacy.json';
+import fi from '@/data/fi/pages/privacy.json';
+import fr from '@/data/fr/pages/privacy.json';
+import hu from '@/data/hu/pages/privacy.json';
+import it from '@/data/it/pages/privacy.json';
+import nl from '@/data/nl/pages/privacy.json';
+import no from '@/data/no/pages/privacy.json';
+import pt from '@/data/pt/pages/privacy.json';
+import ro from '@/data/ro/pages/privacy.json';
+import sv from '@/data/sv/pages/privacy.json';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   en,

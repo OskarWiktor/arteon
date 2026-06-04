@@ -197,7 +197,10 @@
         },
         {
           "label": "Prise en charge des navigateurs",
-          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "Tous les navigateurs"]
+          "values": [
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "Tous les navigateurs"
+          ]
         },
         {
           "label": "Profondeur de couleur",

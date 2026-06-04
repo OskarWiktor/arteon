@@ -1,13 +1,13 @@
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import Shimmer from '../../atoms/skeletons/Shimmer';
-import { flexCenterClasses } from '@/lib/ui-classes';
 
 export default function BenefitBeltSkeleton() {
   return (
     <div className='bg-white py-4'>
       <div
         className={cn(
-          'm-auto w-[94%] max-w-[1420px] gap-6 overflow-hidden md:gap-10 2xl:max-w-none',
+          'm-auto w-[94%] max-w-355 gap-6 overflow-hidden md:gap-10 2xl:max-w-none',
           flexCenterClasses,
         )}
       >

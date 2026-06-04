@@ -1,12 +1,12 @@
-import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
+import Card from '@/components/organisms/Card';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
+import Shimmer from '../../atoms/skeletons/Shimmer';
 import BenefitBeltSkeleton from '../../organisms/skeletons/BenefitBeltSkeleton';
 import CarouselSkeleton from '../../organisms/skeletons/CarouselSkeleton';
-import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
-import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
 import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
-import Shimmer from '../../atoms/skeletons/Shimmer';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
-import Card from '@/components/organisms/Card';
+import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
+import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
+import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
 
 function FeatureGridSkeleton() {
   return (
@@ -33,7 +33,7 @@ function WorkStepsSkeleton() {
       <div className='mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
         {Array.from({ length: 4 }).map((_, i) => (
           <Card key={i} variant='outlined' className='flex items-start'>
-            <Shimmer className='mb-3 h-10 w-10 !rounded-lg' />
+            <Shimmer className='mb-3 h-10 w-10 rounded-lg!' />
             <Shimmer className='h-5 w-3/4' />
             <Shimmer className='mt-2 h-3.5 w-full' />
             <Shimmer className='mt-1 h-3.5 w-5/6' />
@@ -65,7 +65,7 @@ export default function HomePageSkeleton() {
     <>
       <HeroBannerSkeleton />
       <BenefitBeltSkeleton />
-      <div className='m-auto w-[94%] max-w-[1420px] 2xl:max-w-none'>
+      <div className='m-auto w-[94%] max-w-355 2xl:max-w-none'>
         <DividerSkeleton variant='space' />
         <CarouselSkeleton variant='project' />
         <DividerSkeleton variant='line' />

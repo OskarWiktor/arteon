@@ -34,7 +34,11 @@
         "Dávková konverze",
         "Lokální zpracování v prohlížeči"
       ],
-      "alternateName": ["Převést PNG na GIF", "Konverze PNG do GIF", "Převodník PNG na GIF zdarma"]
+      "alternateName": [
+        "Převést PNG na GIF",
+        "Konverze PNG do GIF",
+        "Převodník PNG na GIF zdarma"
+      ]
     },
     "howTo": {
       "name": "Jak převést PNG na GIF",

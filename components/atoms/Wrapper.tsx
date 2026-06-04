@@ -1,5 +1,5 @@
-import { cn } from '@/lib/utils';
 import type { ElementType, HTMLAttributes, ReactNode } from 'react';
+import { cn } from '@/lib/utils';
 
 interface WrapperProps extends HTMLAttributes<HTMLElement> {
   children: ReactNode;
@@ -16,7 +16,11 @@ export default function Wrapper({
   ...rest
 }: WrapperProps) {
   return (
-    <Tag id={id} className={cn('m-auto w-[94%] max-w-[1620px]', className)} {...rest}>
+    <Tag
+      id={id}
+      className={cn('m-auto w-[94%] max-w-405', className)}
+      {...rest}
+    >
       {children}
     </Tag>
   );

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Μετατρέψτε εικόνες JPG σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.",
-      "featureList": ["JPG to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert JPG to PDF", "JPG to PDF", "Free JPG to PDF converter"]
+      "featureList": [
+        "JPG to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert JPG to PDF",
+        "JPG to PDF",
+        "Free JPG to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Πώς να μετατρέψετε JPG σε PDF",

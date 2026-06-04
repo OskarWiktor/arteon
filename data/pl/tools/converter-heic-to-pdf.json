@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter HEIC na PDF - darmowy, bez limitu",
-      "alternateName": ["Zamiana HEIC na PDF", "Konwersja HEIC do PDF", "HEIC to PDF converter"],
+      "alternateName": [
+        "Zamiana HEIC na PDF",
+        "Konwersja HEIC do PDF",
+        "HEIC to PDF converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Darmowy konwerter HEIC na PDF. Zamień pliki HEIC na dokument PDF w przeglądarce - pliki nie są wysyłane na serwer.",

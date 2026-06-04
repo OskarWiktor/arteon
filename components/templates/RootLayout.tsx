@@ -3,14 +3,13 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Inter, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
 import { Suspense } from 'react';
-
 import FocusManager from '@/components/atoms/FocusManager';
-import RouteAnnouncer from '@/components/atoms/RouteAnnouncer';
 import { JsonLd } from '@/components/atoms/JsonLd';
+import RouteAnnouncer from '@/components/atoms/RouteAnnouncer';
+import { cn } from '@/lib/utils';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 import '@/app/globals.css';
-import { cn } from '@/lib/utils';
 
 const inter = Inter({
   subsets: ['latin', 'latin-ext'],
@@ -52,7 +51,11 @@ const ORG_DESCRIPTIONS: Record<string, string> = {
 };
 
 function getOrgDescription(lang: string): string {
-  return ORG_DESCRIPTIONS[lang] || ORG_DESCRIPTIONS[lang.split('-')[0]] || ORG_DESCRIPTIONS['en'];
+  return (
+    ORG_DESCRIPTIONS[lang] ||
+    ORG_DESCRIPTIONS[lang.split('-')[0]] ||
+    ORG_DESCRIPTIONS['en']
+  );
 }
 
 function buildOrgJsonLd(lang: string) {
@@ -216,9 +219,16 @@ export default function RootLayout({ lang, children }: RootLayoutProps) {
           href='https://fundingchoicesmessages.google.com'
           crossOrigin='anonymous'
         />
-        <link rel='preconnect' href='https://tpc.googlesyndication.com' crossOrigin='anonymous' />
+        <link
+          rel='preconnect'
+          href='https://tpc.googlesyndication.com'
+          crossOrigin='anonymous'
+        />
         <link rel='dns-prefetch' href='https://pagead2.googlesyndication.com' />
-        <link rel='dns-prefetch' href='https://fundingchoicesmessages.google.com' />
+        <link
+          rel='dns-prefetch'
+          href='https://fundingchoicesmessages.google.com'
+        />
         <link rel='dns-prefetch' href='https://fundingchoices.google.com' />
         <link rel='dns-prefetch' href='https://tpc.googlesyndication.com' />
         <link rel='dns-prefetch' href='https://www.googletagmanager.com' />

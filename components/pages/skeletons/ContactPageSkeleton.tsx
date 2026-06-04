@@ -1,15 +1,15 @@
+import Shimmer from '../../atoms/skeletons/Shimmer';
+import Card from '../../organisms/Card';
+import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
+import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
 import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
 import SectionInfoSkeleton from '../../organisms/skeletons/SectionInfoSkeleton';
-import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
-import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
-import Card from '../../organisms/Card';
-import Shimmer from '../../atoms/skeletons/Shimmer';
 
 export default function ContactPageSkeleton() {
   return (
     <>
       <HeroBannerSkeleton />
-      <div className='m-auto w-[94%] max-w-[1420px] 2xl:max-w-none'>
+      <div className='m-auto w-[94%] max-w-355 2xl:max-w-none'>
         <DividerSkeleton variant='space' />
         <SectionInfoSkeleton />
         <DividerSkeleton variant='line' />
@@ -35,7 +35,7 @@ export default function ContactPageSkeleton() {
             <Shimmer className='h-4 w-28' />
             <Shimmer className='h-32 w-full' />
           </div>
-          <Shimmer className='h-11 w-32 !rounded-lg' />
+          <Shimmer className='h-11 w-32 rounded-lg!' />
         </div>
 
         <DividerSkeleton variant='line' />
@@ -52,7 +52,7 @@ export default function ContactPageSkeleton() {
                 padding='md'
                 className='flex items-start gap-4'
               >
-                <Shimmer className='h-10 w-10 shrink-0 !rounded-lg' />
+                <Shimmer className='h-10 w-10 shrink-0 rounded-lg!' />
                 <div className='flex-1 space-y-2'>
                   <Shimmer className='h-5 w-1/2' />
                   <Shimmer className='h-4 w-3/4' />

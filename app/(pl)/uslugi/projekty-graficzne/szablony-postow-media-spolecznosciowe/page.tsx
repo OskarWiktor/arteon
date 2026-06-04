@@ -1,25 +1,29 @@
-import WorkSteps from '@/components/organisms/WorkSteps';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import CTABanner from '@/components/organisms/CTABanner';
+import Script from 'next/script';
+import { IoColorPalette } from 'react-icons/io5';
+import {
+  RiFileTextLine,
+  RiLayoutLine,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
+import Wrapper from '@/components/atoms/Wrapper';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
-import Wrapper from '@/components/atoms/Wrapper';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
-import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
-import { IoColorPalette } from 'react-icons/io5';
-import { RiFileTextLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
-import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { buildServiceSchema } from '@/lib/seo/serviceSchema';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 export const metadata = {
@@ -57,7 +61,10 @@ function ServiceSchema() {
   });
 
   return (
-    <Script id='schema-service-szablony-postow-social-media' type='application/ld+json'>
+    <Script
+      id='schema-service-szablony-postow-social-media'
+      type='application/ld+json'
+    >
       {JSON.stringify(json)}
     </Script>
   );
@@ -70,9 +77,10 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         title='Szablony postów do mediów społecznościowych'
         description={
           <>
-            Uporządkuj wygląd swoich profili i odzyskaj czas. Projektujemy edytowalne szablony do
-            Instagrama, Facebooka, LinkedIna i TikToka - spójne z marką, gotowe do szybkiej edycji,
-            pomagające w regularnej publikacji.
+            Uporządkuj wygląd swoich profili i odzyskaj czas. Projektujemy
+            edytowalne szablony do Instagrama, Facebooka, LinkedIna i TikToka -
+            spójne z marką, gotowe do szybkiej edycji, pomagające w regularnej
+            publikacji.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -86,7 +94,10 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
+        third={{
+          href: `/uslugi/projekty-graficzne`,
+          label: 'Projekty graficzne',
+        }}
         fourth={{
           href: `/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe`,
           label: 'Szablony postów do mediów społecznościowych',
@@ -97,35 +108,46 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Realizacje projektów graficznych' category='grafika' />
+        <ProjectsCarousel
+          title='Realizacje projektów graficznych'
+          category='grafika'
+        />
 
         <Divider line />
 
         <SectionInfo title='Co zyskujesz dzięki szablonom postów?'>
           <p>
-            <strong>Stały, rozpoznawalny styl w całej komunikacji.</strong> Szablony utrzymują
-            wspólny charakter postów, dzięki czemu odbiorca szybciej kojarzy Twoją markę, a profil
-            wzbudza większe zaufanie wśród klientów.
+            <strong>Stały, rozpoznawalny styl w całej komunikacji.</strong>{' '}
+            Szablony utrzymują wspólny charakter postów, dzięki czemu odbiorca
+            szybciej kojarzy Twoją markę, a profil wzbudza większe zaufanie
+            wśród klientów.
           </p>
 
           <br />
 
           <p>
-            Dzięki przemyślanej strukturze relacji, zaoszczędzisz czas na tworzeniu kolejnych
-            publikacji. Gotowe szablony znacząco ułatwią Ci pracę, dzięki nim będziesz w stanie
-            dodawać więcej relacji co bezpośrednio przełoży się na szybszy wzrost obserwacji.
+            Dzięki przemyślanej strukturze relacji, zaoszczędzisz czas na
+            tworzeniu kolejnych publikacji. Gotowe szablony znacząco ułatwią Ci
+            pracę, dzięki nim będziesz w stanie dodawać więcej relacji co
+            bezpośrednio przełoży się na szybszy wzrost obserwacji.
           </p>
 
           <br />
 
           <p>
-            <strong>Dobrze zaprojektowane szablony robią za Ciebie trzy rzeczy naraz:</strong>
+            <strong>
+              Dobrze zaprojektowane szablony robią za Ciebie trzy rzeczy naraz:
+            </strong>
           </p>
           <ul className='ml-5 list-disc'>
-            <li>Podnoszą zaufanie do marki, bo wszystko wygląda spójnie i profesjonalnie,</li>
+            <li>
+              Podnoszą zaufanie do marki, bo wszystko wygląda spójnie i
+              profesjonalnie,
+            </li>
             <li>Przyspieszają przygotowanie nowych treści,</li>
             <li>
-              Wzmacniają rozpoznawalność, bo odbiorca zapamiętuje charakter Twoich publikacji.
+              Wzmacniają rozpoznawalność, bo odbiorca zapamiętuje charakter
+              Twoich publikacji.
             </li>
           </ul>
         </SectionInfo>
@@ -140,38 +162,59 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
               title: 'Spójny system wizualny',
               description: (
                 <>
-                  Dopasowujemy kolory, typografię i styl do Twojej marki lub tworzymy nowy kierunek
-                  od zera - zgodnie z grupą odbiorców i charakterem komunikacji.
+                  Dopasowujemy kolory, typografię i styl do Twojej marki lub
+                  tworzymy nowy kierunek od zera - zgodnie z grupą odbiorców i
+                  charakterem komunikacji.
                 </>
               ),
-              icon: <IoColorPalette className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <IoColorPalette
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Edytowalne pliki',
               description: (
                 <>
-                  Otrzymujesz pliki, które z łatwością edytujesz (np. w Figmie lub Canvie), wraz z
-                  krótką instrukcją. Tekst, zdjęcia czy kolory zmienisz bez znajomości
-                  zaawansowanych programów.
+                  Otrzymujesz pliki, które z łatwością edytujesz (np. w Figmie
+                  lub Canvie), wraz z krótką instrukcją. Tekst, zdjęcia czy
+                  kolory zmienisz bez znajomości zaawansowanych programów.
                 </>
               ),
-              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileTextLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'System pod różne typy postów',
               description: (
                 <>
-                  Projektujemy zestaw układów pod konkretne formaty: post informacyjny, oferta,
-                  opinia, poradnik, cytat, karuzela, okładka wideo czy zapowiedź wydarzenia.
+                  Projektujemy zestaw układów pod konkretne formaty: post
+                  informacyjny, oferta, opinia, poradnik, cytat, karuzela,
+                  okładka wideo czy zapowiedź wydarzenia.
                 </>
               ),
-              icon: <RiLayoutLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiLayoutLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Faktura po realizacji',
-              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              description: (
+                <>
+                  Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
+                  formie.
+                </>
+              ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
           ]}
@@ -179,22 +222,28 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
 
         <Divider line />
 
-        <SectionInfo title='Dla kogo szablony postów mają największy sens?' subtitle='Dla kogo'>
+        <SectionInfo
+          title='Dla kogo szablony postów mają największy sens?'
+          subtitle='Dla kogo'
+        >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Dla mikro i małych firm,</strong> które chcą przyśpieszyć rozwój swojej firmy.
+              <strong>Dla mikro i małych firm,</strong> które chcą przyśpieszyć
+              rozwój swojej firmy.
             </li>
             <li>
-              <strong>Dla specjalistów i edukatorów</strong> - psychoterapeutów, trenerów, doradców
-              - którzy regularnie dzielą się wiedzą i potrzebują estetycznych, czytelnych układów.
+              <strong>Dla specjalistów i edukatorów</strong> - psychoterapeutów,
+              trenerów, doradców - którzy regularnie dzielą się wiedzą i
+              potrzebują estetycznych, czytelnych układów.
             </li>
             <li>
-              <strong>Dla e-commerce i biznesów lokalnych,</strong> gdzie ważna jest powtarzalność
-              promocji: nowości, rabaty, stałe cykle publikacji.
+              <strong>Dla e-commerce i biznesów lokalnych,</strong> gdzie ważna
+              jest powtarzalność promocji: nowości, rabaty, stałe cykle
+              publikacji.
             </li>
             <li>
-              <strong>Dla prywatnych osób,</strong> które dopiero zaczynają budować swój wizerunek w
-              sieci.
+              <strong>Dla prywatnych osób,</strong> które dopiero zaczynają
+              budować swój wizerunek w sieci.
             </li>
           </ul>
         </SectionInfo>
@@ -207,16 +256,17 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Regularny rytm publikacji</strong> - łatwiej będzie Ci zaplanować serię
-              postów, bo wizualna część będzie już przygotowana.
+              <strong>Regularny rytm publikacji</strong> - łatwiej będzie Ci
+              zaplanować serię postów, bo wizualna część będzie już
+              przygotowana.
             </li>
             <li>
-              <strong>Lepsze pierwsze wrażenie na profilu,</strong> szczególnie dla nowych osób,
-              które wchodzą na Twój profil.
+              <strong>Lepsze pierwsze wrażenie na profilu,</strong> szczególnie
+              dla nowych osób, które wchodzą na Twój profil.
             </li>
             <li>
-              <strong>Mniej poprawek graficznych,</strong> bo raz ustalony styl i gotowe układy
-              pozwalają skupić się na treści.
+              <strong>Mniej poprawek graficznych,</strong> bo raz ustalony styl
+              i gotowe układy pozwalają skupić się na treści.
             </li>
           </ul>
         </SectionInfo>
@@ -309,7 +359,8 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
                 'Standardowo prace trwają około od 3 do 5 dni roboczych. Dokładny termin zależy od liczby wariantów i liczby platform, na które przygotowujemy szablony.',
             },
             {
-              question: 'Czy szablony będą spójne z moją stroną i identyfikacją?',
+              question:
+                'Czy szablony będą spójne z moją stroną i identyfikacją?',
               answer:
                 'Tak. Jeśli masz już identyfikację wizualną lub stronę internetową, dopasujemy szablony do istniejącego stylu.',
             },
@@ -324,14 +375,17 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             {
               title: 'Identyfikacja wizualna',
               size: 'large',
-              backgroundImage: '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
+              backgroundImage:
+                '/assets/projects/stepard/logo/mockup-logo-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Strony internetowe',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baners-camper-albania-mockup.webp',
+              backgroundImage:
+                '/assets/projects/arteon-baners-camper-albania-mockup.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
@@ -345,7 +399,8 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             {
               title: 'Pozycjonowanie stron',
               size: 'small',
-              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              backgroundImage:
+                '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },

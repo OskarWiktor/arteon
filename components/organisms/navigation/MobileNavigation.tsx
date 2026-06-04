@@ -7,9 +7,11 @@ import { createPortal } from 'react-dom';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import Subtitle from '../../atoms/typography/Subtitle';
 import IconText from '../../atoms/IconText';
-import { MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL } from '@/data/pl/navigation-data-pl';
+import {
+  MOBILE_NAV_ITEMS_PL,
+  OFFER_SECTIONS_PL,
+} from '@/data/pl/navigation-data-pl';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import { getMobileToolsSections } from '@/lib/i18n/tool-registry';
 import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
@@ -17,14 +19,15 @@ import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useScrollLock } from '@/hooks/useScrollLock';
 import { useEventListener } from '@/hooks/useEventListener';
 import { useTimeout } from '@/hooks/useTimeout';
-import { NavArrowDownSLine as RiArrowDownSLine } from '@/components/atoms/NavIcons';
-import { cn } from '@/lib/utils';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
   modalBackdropClasses,
   normalIconSizeClasses,
-} from '@/lib/ui-classes';
+} from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
+import { getMobileToolsSections } from '@/lib/i18n/toolRegistry';
+import { RiArrowDownSLine } from 'react-icons/ri';
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {
@@ -47,6 +50,17 @@ function Portal({ children }: { children: React.ReactNode }) {
   return createPortal(children, document.body);
 }
 
+/**
+ * Renders the mobile slide-over navigation panel and its interactive behaviours.
+ *
+ * The panel includes locale-aware sections, collapsible subsections, focus trapping,
+ * scroll locking, keyboard navigation for lists, and closes on backdrop click, route change,
+ * or Escape. It returns `null` when the panel is closed.
+ *
+ * @param isOpen - Controls whether the mobile navigation is visible
+ * @param setIsOpen - Setter used to open or close the mobile navigation
+ * @returns The navigation JSX when `isOpen` is true, `null` otherwise
+ */
 export default function MobileNavigation({
   isOpen,
   setIsOpen,
@@ -75,7 +89,9 @@ export default function MobileNavigation({
           return {
             href: it.href,
             title: it.title,
-            icon: Icon ? <Icon aria-hidden className={normalIconSizeClasses} /> : undefined,
+            icon: Icon ? (
+              <Icon aria-hidden className={normalIconSizeClasses} />
+            ) : undefined,
           };
         }),
       }))
@@ -92,13 +108,17 @@ export default function MobileNavigation({
           return {
             href: it.href,
             title: it.title,
-            icon: Icon ? <Icon aria-hidden className={normalIconSizeClasses} /> : undefined,
+            icon: Icon ? (
+              <Icon aria-hidden className={normalIconSizeClasses} />
+            ) : undefined,
           };
         }),
     }))
     .filter(section => section.items.length > 0);
 
-  const [openToolSections, setOpenToolSections] = useState<Record<string, boolean>>({});
+  const [openToolSections, setOpenToolSections] = useState<
+    Record<string, boolean>
+  >({});
 
   const toggleToolSection = (key: string) =>
     startTransition(() => {
@@ -120,8 +140,13 @@ export default function MobileNavigation({
   const { start: focusFirst } = useTimeout();
 
   const [panelWidth, setPanelWidth] = useState(0);
-  const updatePanelWidth = () => setPanelWidth(Math.min(window.innerWidth * 0.88, 300));
-  useEventListener(typeof window !== 'undefined' ? window : null, 'resize', updatePanelWidth);
+  const updatePanelWidth = () =>
+    setPanelWidth(Math.min(innerWidth * 0.88, 300));
+  useEventListener(
+    typeof window !== 'undefined' ? window : null,
+    'resize',
+    updatePanelWidth,
+  );
 
   useEffect(() => {
     updatePanelWidth();
@@ -133,7 +158,11 @@ export default function MobileNavigation({
 
   useScrollLock(isOpen);
   useEscapeKey(() => setIsOpen(false), isOpen);
-  useFocusTrap(panelRef, isOpen, 'a[href],button:not([disabled]),[tabindex="0"]');
+  useFocusTrap(
+    panelRef,
+    isOpen,
+    'a[href],button:not([disabled]),[tabindex="0"]',
+  );
   useRestoreFocus(isOpen);
 
   useEffect(() => {
@@ -155,7 +184,12 @@ export default function MobileNavigation({
 
   const [isToolsOpen, setIsToolsOpen] = useState(false);
 
-  const closedKeys = { witryny: false, marketing: false, grafika: false, tresc: false } as const;
+  const closedKeys = {
+    witryny: false,
+    marketing: false,
+    grafika: false,
+    tresc: false,
+  } as const;
 
   const toggleKey = (key: Section['key']) =>
     startTransition(() => {
@@ -201,7 +235,10 @@ export default function MobileNavigation({
     <>
       <Portal>
         <div
-          className={cn('fixed inset-y-0 left-0 z-999 bg-black/40', modalBackdropClasses)}
+          className={cn(
+            'fixed inset-y-0 left-0 z-999 bg-black/40',
+            modalBackdropClasses,
+          )}
           style={{ right: `${panelWidth}px` }}
           onClick={() => setIsOpen(false)}
           aria-hidden='true'
@@ -220,13 +257,17 @@ export default function MobileNavigation({
             onClick={() => setIsOpen(false)}
             className='rounded px-3 pt-1 ring-primary ring-offset-2 outline-none focus-visible:ring-2'
           >
-            <span className='text-sm font-medium text-light'>{mobileNavUi.close}</span>
+            <span className='text-sm font-medium text-light'>
+              {mobileNavUi.close}
+            </span>
           </button>
         </div>
 
         <div className='flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3'>
           {isPl && (
-            <Subtitle className='px-3 pb-1 text-xs tracking-wider'>{mobileNavUi.services}</Subtitle>
+            <Subtitle className='px-3 pb-1 text-xs tracking-wider'>
+              {mobileNavUi.services}
+            </Subtitle>
           )}
 
           {isPl && (
@@ -256,7 +297,9 @@ export default function MobileNavigation({
                           {sec.title}
                         </Link>
                       ) : (
-                        <div className='px-3 py-1 text-[15px] text-dark'>{sec.title}</div>
+                        <div className='px-3 py-1 text-[15px] text-dark'>
+                          {sec.title}
+                        </div>
                       )}
 
                       <button
@@ -271,20 +314,29 @@ export default function MobileNavigation({
                       >
                         <span
                           className='inline-flex transition-transform duration-200'
-                          style={{ transform: expanded ? 'rotate(180deg)' : undefined }}
+                          style={{
+                            transform: expanded ? 'rotate(180deg)' : undefined,
+                          }}
                         >
-                          <RiArrowDownSLine className={normalIconSizeClasses} aria-hidden='true' />
+                          <RiArrowDownSLine
+                            className={normalIconSizeClasses}
+                            aria-hidden='true'
+                          />
                         </span>
                       </button>
                     </div>
 
                     {expanded && (
-                      <div id={`sec-${sec.key}`} className='animate-dropdown-in'>
+                      <div
+                        id={`sec-${sec.key}`}
+                        className='animate-dropdown-in'
+                      >
                         <div className='ml-3 border-l border-neutral-200 pl-3'>
                           <ul
                             className='flex flex-col gap-1 py-1'
                             onKeyDown={e => {
-                              const container = e.currentTarget as unknown as HTMLElement;
+                              const container =
+                                e.currentTarget as unknown as HTMLElement;
                               onListKeyDown(container, e);
                             }}
                           >
@@ -299,13 +351,17 @@ export default function MobileNavigation({
                                   <IconText
                                     icon={
                                       it.icon ? (
-                                        <span className='text-primary'>{it.icon}</span>
+                                        <span className='text-primary'>
+                                          {it.icon}
+                                        </span>
                                       ) : undefined
                                     }
                                     gap='3'
                                     className='min-w-0'
                                   >
-                                    <span className='text-[15px] text-dark'>{it.title}</span>
+                                    <span className='text-[15px] text-dark'>
+                                      {it.title}
+                                    </span>
                                   </IconText>
                                 </Link>
                               </li>
@@ -340,10 +396,11 @@ export default function MobileNavigation({
                   className={cn(
                     'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                     {
-                      'bg-neutral-50 font-semibold text-dark': pathname.startsWith(
+                      'bg-neutral-50 font-semibold text-dark':
+                        pathname.startsWith(realizacjeNav.href),
+                      'text-dark hover:bg-neutral-100': !pathname.startsWith(
                         realizacjeNav.href,
                       ),
-                      'text-dark hover:bg-neutral-100': !pathname.startsWith(realizacjeNav.href),
                     },
                   )}
                 >
@@ -357,12 +414,17 @@ export default function MobileNavigation({
                   href={aboutNav.href}
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  aria-current={pathname.startsWith(aboutNav.href) ? 'page' : undefined}
+                  aria-current={
+                    pathname.startsWith(aboutNav.href) ? 'page' : undefined
+                  }
                   className={cn(
                     'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                     {
-                      'bg-neutral-50 font-semibold text-dark': pathname.startsWith(aboutNav.href),
-                      'text-dark hover:bg-neutral-100': !pathname.startsWith(aboutNav.href),
+                      'bg-neutral-50 font-semibold text-dark':
+                        pathname.startsWith(aboutNav.href),
+                      'text-dark hover:bg-neutral-100': !pathname.startsWith(
+                        aboutNav.href,
+                      ),
                     },
                   )}
                 >
@@ -376,14 +438,17 @@ export default function MobileNavigation({
                   href={edukacjaNav.href}
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  aria-current={pathname.startsWith(edukacjaNav.href) ? 'page' : undefined}
+                  aria-current={
+                    pathname.startsWith(edukacjaNav.href) ? 'page' : undefined
+                  }
                   className={cn(
                     'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                     {
-                      'bg-neutral-50 font-semibold text-dark': pathname.startsWith(
+                      'bg-neutral-50 font-semibold text-dark':
+                        pathname.startsWith(edukacjaNav.href),
+                      'text-dark hover:bg-neutral-100': !pathname.startsWith(
                         edukacjaNav.href,
                       ),
-                      'text-dark hover:bg-neutral-100': !pathname.startsWith(edukacjaNav.href),
                     },
                   )}
                 >
@@ -398,11 +463,17 @@ export default function MobileNavigation({
                       href={narzedziaNav.href}
                       prefetch={false}
                       onClick={() => setIsOpen(false)}
-                      aria-current={pathname.startsWith(narzedziaNav.href) ? 'page' : undefined}
+                      aria-current={
+                        pathname.startsWith(narzedziaNav.href)
+                          ? 'page'
+                          : undefined
+                      }
                       className={cn(
                         'rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                         {
-                          'font-semibold text-dark': pathname.startsWith(narzedziaNav.href),
+                          'font-semibold text-dark': pathname.startsWith(
+                            narzedziaNav.href,
+                          ),
                           'text-dark': !pathname.startsWith(narzedziaNav.href),
                         },
                       )}
@@ -422,17 +493,27 @@ export default function MobileNavigation({
                     >
                       <span
                         className='inline-flex transition-transform duration-200'
-                        style={{ transform: isToolsOpen ? 'rotate(180deg)' : undefined }}
+                        style={{
+                          transform: isToolsOpen ? 'rotate(180deg)' : undefined,
+                        }}
                       >
-                        <RiArrowDownSLine className={normalIconSizeClasses} aria-hidden='true' />
+                        <RiArrowDownSLine
+                          className={normalIconSizeClasses}
+                          aria-hidden='true'
+                        />
                       </span>
                     </button>
                   </div>
 
                   {isToolsOpen && (
-                    <div id='tools-submenu-mobile' className='animate-dropdown-in'>
+                    <div
+                      id='tools-submenu-mobile'
+                      className='animate-dropdown-in'
+                    >
                       <ul className='mt-1 ml-3 flex flex-col gap-1 border-l border-neutral-200 pl-3'>
-                        {TOOLS_SECTIONS_MOBILE.flatMap(section => section.items).map(tool => {
+                        {TOOLS_SECTIONS_MOBILE.flatMap(
+                          section => section.items,
+                        ).map(tool => {
                           const isToolActive = pathname.startsWith(tool.href);
                           return (
                             <li key={tool.href}>
@@ -444,13 +525,17 @@ export default function MobileNavigation({
                                 className={cn(
                                   'flex items-center gap-3 rounded-lg px-2 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                                   {
-                                    'bg-neutral-50 font-semibold text-dark': isToolActive,
-                                    'text-dark hover:bg-neutral-100': !isToolActive,
+                                    'bg-neutral-50 font-semibold text-dark':
+                                      isToolActive,
+                                    'text-dark hover:bg-neutral-100':
+                                      !isToolActive,
                                   },
                                 )}
                               >
                                 {tool.icon ? (
-                                  <span className='text-primary'>{tool.icon}</span>
+                                  <span className='text-primary'>
+                                    {tool.icon}
+                                  </span>
                                 ) : null}
                                 <span className='min-w-0'>{tool.title}</span>
                               </Link>
@@ -469,12 +554,16 @@ export default function MobileNavigation({
                   href={contactHref}
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  aria-current={pathname.startsWith(contactHref) ? 'page' : undefined}
+                  aria-current={
+                    pathname.startsWith(contactHref) ? 'page' : undefined
+                  }
                   className={cn(
                     'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                     {
-                      'bg-neutral-50 font-semibold text-dark': pathname.startsWith(contactHref),
-                      'text-dark hover:bg-neutral-100': !pathname.startsWith(contactHref),
+                      'bg-neutral-50 font-semibold text-dark':
+                        pathname.startsWith(contactHref),
+                      'text-dark hover:bg-neutral-100':
+                        !pathname.startsWith(contactHref),
                     },
                   )}
                 >
@@ -489,13 +578,16 @@ export default function MobileNavigation({
                 href={localeConfig.toolsIndexHref}
                 prefetch={false}
                 onClick={() => setIsOpen(false)}
-                aria-current={pathname === localeConfig.toolsIndexHref ? 'page' : undefined}
+                aria-current={
+                  pathname === localeConfig.toolsIndexHref ? 'page' : undefined
+                }
                 className={cn(
                   'mb-2 block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                   {
                     'bg-neutral-50 font-semibold text-dark':
                       pathname === localeConfig.toolsIndexHref,
-                    'text-dark hover:bg-neutral-100': pathname !== localeConfig.toolsIndexHref,
+                    'text-dark hover:bg-neutral-100':
+                      pathname !== localeConfig.toolsIndexHref,
                   },
                 )}
               >
@@ -513,7 +605,9 @@ export default function MobileNavigation({
                           flexCenterBetweenClasses,
                         )}
                       >
-                        <div className='px-3 py-1 text-[15px] text-dark'>{sec.title}</div>
+                        <div className='px-3 py-1 text-[15px] text-dark'>
+                          {sec.title}
+                        </div>
 
                         <button
                           type='button'
@@ -527,7 +621,11 @@ export default function MobileNavigation({
                         >
                           <span
                             className='inline-flex transition-transform duration-200'
-                            style={{ transform: expanded ? 'rotate(180deg)' : undefined }}
+                            style={{
+                              transform: expanded
+                                ? 'rotate(180deg)'
+                                : undefined,
+                            }}
                           >
                             <RiArrowDownSLine
                               className={normalIconSizeClasses}
@@ -538,12 +636,16 @@ export default function MobileNavigation({
                       </div>
 
                       {expanded && (
-                        <div id={`sec-${locale}-${sec.key}`} className='animate-dropdown-in'>
+                        <div
+                          id={`sec-${locale}-${sec.key}`}
+                          className='animate-dropdown-in'
+                        >
                           <div className='ml-3 border-l border-neutral-200 pl-3'>
                             <ul
                               className='flex flex-col gap-1 py-1'
                               onKeyDown={e => {
-                                const container = e.currentTarget as unknown as HTMLElement;
+                                const container =
+                                  e.currentTarget as unknown as HTMLElement;
                                 onListKeyDown(container, e);
                               }}
                             >
@@ -558,13 +660,17 @@ export default function MobileNavigation({
                                     <IconText
                                       icon={
                                         it.icon ? (
-                                          <span className='text-primary'>{it.icon}</span>
+                                          <span className='text-primary'>
+                                            {it.icon}
+                                          </span>
                                         ) : undefined
                                       }
                                       gap='3'
                                       className='min-w-0'
                                     >
-                                      <span className='text-[15px] text-dark'>{it.title}</span>
+                                      <span className='text-[15px] text-dark'>
+                                        {it.title}
+                                      </span>
                                     </IconText>
                                   </Link>
                                 </li>
@@ -583,13 +689,16 @@ export default function MobileNavigation({
                   href={localeConfig.aboutHref}
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  aria-current={pathname.startsWith(localeConfig.aboutHref) ? 'page' : undefined}
+                  aria-current={
+                    pathname.startsWith(localeConfig.aboutHref)
+                      ? 'page'
+                      : undefined
+                  }
                   className={cn(
                     'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                     {
-                      'bg-neutral-50 font-semibold text-dark': pathname.startsWith(
-                        localeConfig.aboutHref,
-                      ),
+                      'bg-neutral-50 font-semibold text-dark':
+                        pathname.startsWith(localeConfig.aboutHref),
                       'text-dark hover:bg-neutral-100': !pathname.startsWith(
                         localeConfig.aboutHref,
                       ),
@@ -605,13 +714,16 @@ export default function MobileNavigation({
                   href={localeConfig.contactHref}
                   prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  aria-current={pathname.startsWith(localeConfig.contactHref) ? 'page' : undefined}
+                  aria-current={
+                    pathname.startsWith(localeConfig.contactHref)
+                      ? 'page'
+                      : undefined
+                  }
                   className={cn(
                     'block rounded-lg px-3 py-1.75 text-[15px] ring-primary ring-offset-2 outline-none focus-visible:ring-2',
                     {
-                      'bg-neutral-50 font-semibold text-dark': pathname.startsWith(
-                        localeConfig.contactHref,
-                      ),
+                      'bg-neutral-50 font-semibold text-dark':
+                        pathname.startsWith(localeConfig.contactHref),
                       'text-dark hover:bg-neutral-100': !pathname.startsWith(
                         localeConfig.contactHref,
                       ),

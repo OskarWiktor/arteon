@@ -1,12 +1,12 @@
 'use client';
 
 import { useRef, useState } from 'react';
+import { useDictionary } from '@/lib/LocaleContext';
+import type { Locale } from '@/types/locale';
 import Button from '../atoms/buttons/Button';
 import ToolAlert from '../atoms/ToolAlert';
 import InputWithLabel from '../molecules/form/InputWithLabel';
 import TextareaWithLabel from '../molecules/form/TextareaWithLabel';
-import { useDictionary } from '@/lib/LocaleContext';
-import type { Locale } from '@/types/locale';
 import SectionHeader from '../molecules/SectionHeader';
 
 type ContactFormProps = {
@@ -27,10 +27,12 @@ export default function ContactForm({
   locale: _locale = 'pl',
 }: ContactFormProps) {
   const t = useDictionary().contactForm;
-  const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>(
+    'idle',
+  );
   const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
@@ -104,7 +106,11 @@ export default function ContactForm({
           className='h-48 resize-none'
         />
 
-        <Button variant='accent' arrow onClick={() => formRef.current?.requestSubmit()}>
+        <Button
+          variant='accent'
+          arrow
+          onClick={() => formRef.current?.requestSubmit()}
+        >
           {t.send}
         </Button>
 

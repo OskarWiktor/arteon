@@ -34,7 +34,9 @@ function generateSearchBlog() {
   }));
 
   fs.writeFileSync(SEARCH_BLOG_FILE, JSON.stringify(searchItems), 'utf8');
-  console.log(`✓ Generated ${SEARCH_BLOG_FILE} with ${searchItems.length} items`);
+  console.log(
+    `✓ Generated ${SEARCH_BLOG_FILE} with ${searchItems.length} items`,
+  );
 }
 
 function generateSearchProjects() {
@@ -53,7 +55,9 @@ function generateSearchProjects() {
   }));
 
   fs.writeFileSync(SEARCH_PROJECTS_FILE, JSON.stringify(searchItems), 'utf8');
-  console.log(`✓ Generated ${SEARCH_PROJECTS_FILE} with ${searchItems.length} items`);
+  console.log(
+    `✓ Generated ${SEARCH_PROJECTS_FILE} with ${searchItems.length} items`,
+  );
 }
 
 function main() {

@@ -40,7 +40,11 @@
         "Download output as .csv file",
         "Compatible with Excel, Google Sheets, and LibreOffice Calc"
       ],
-      "alternateName": ["Convert JSON to CSV", "JSON to CSV", "Free JSON to CSV converter"]
+      "alternateName": [
+        "Convert JSON to CSV",
+        "JSON to CSV",
+        "Free JSON to CSV converter"
+      ]
     },
     "howTo": {
       "name": "How to convert JSON to CSV",

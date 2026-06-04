@@ -13,7 +13,9 @@
     "postbuild": "next-sitemap --config next-sitemap.config.cjs && node scripts/postbuild-sitemap-hreflang.cjs && node scripts/indexnow-notify.cjs",
     "clear-cache": "node scripts/clear-vercel-cache.cjs",
     "start": "next start",
-    "lint": "eslint app --ext .ts,.tsx",
+    "lint": "eslint .",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "analyze": "node scripts/analyze.cjs"
   },
@@ -73,7 +75,6 @@
     "postcss": "^8.5.15",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.8.0",
-    "tailwind-scrollbar": "^4.0.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

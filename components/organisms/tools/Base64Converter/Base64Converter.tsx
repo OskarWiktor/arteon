@@ -2,16 +2,16 @@
 
 import { useState } from 'react';
 import Button from '@/components/atoms/buttons/Button';
-import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import { useDictionary } from '@/lib/LocaleContext';
-import { downloadBlob } from '@/utils/download';
 import TextareaWithLabel from '@/components/molecules/form/TextareaWithLabel';
-import Card from '../../Card';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
+import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
+import { useDictionary } from '@/lib/LocaleContext';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import { downloadBlob } from '@/utils/download';
+import Card from '../../Card';
 
 type Base64Mode = 'encode' | 'decode';
 
@@ -49,7 +49,6 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     reader.readAsDataURL(file);
   };
 
-  // DECODE: Base64 string → image preview
   const handleDecode = () => {
     if (!base64.trim()) {
       setError(t.base64PasteEmpty);
@@ -58,7 +57,6 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     setError(null);
 
     let dataUrl = base64.trim();
-    // Add data URL prefix if missing
     if (!dataUrl.startsWith('data:')) {
       let mime = 'image/png';
       try {
@@ -66,10 +64,13 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
         if (header.startsWith('\xFF\xD8')) mime = 'image/jpeg';
         else if (header.startsWith('\x89PNG')) mime = 'image/png';
         else if (header.startsWith('GIF')) mime = 'image/gif';
-        else if (header.startsWith('RIFF') && header.includes('WEBP')) mime = 'image/webp';
-        else if (header.startsWith('<svg') || header.startsWith('<?xml')) mime = 'image/svg+xml';
+        else if (header.startsWith('RIFF') && header.includes('WEBP'))
+          mime = 'image/webp';
+        else if (header.startsWith('<svg') || header.startsWith('<?xml'))
+          mime = 'image/svg+xml';
         else if (header.includes('ftypavif')) mime = 'image/avif';
-        else if (header.startsWith('II') || header.startsWith('MM')) mime = 'image/tiff';
+        else if (header.startsWith('II') || header.startsWith('MM'))
+          mime = 'image/tiff';
       } catch {
         setError(t.base64Invalid);
         setPreviewUrl(null);
@@ -126,11 +127,11 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     };
     const ext = extMap[mime] ?? '.png';
 
-    // Convert data URL to blob
     const byteString = atob(previewUrl.split(',')[1]);
     const ab = new ArrayBuffer(byteString.length);
     const ia = new Uint8Array(ab);
-    for (let i = 0; i < byteString.length; i++) ia[i] = byteString.charCodeAt(i);
+    for (let i = 0; i < byteString.length; i++)
+      ia[i] = byteString.charCodeAt(i);
     const blob = new Blob([ab], { type: mime });
     downloadBlob(blob, `${t.decodedImageFilename}${ext}`);
   };
@@ -146,7 +147,11 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
   if (mode === 'encode') {
     return (
       <div className='overflow-hidden'>
-        <FormatSelector currentSource='jpg' currentTarget='base64' hasFiles={!!base64} />
+        <FormatSelector
+          currentSource='jpg'
+          currentTarget='base64'
+          hasFiles={!!base64}
+        />
         <div className='grid gap-4 md:grid-cols-2'>
           <Card interactive={false} padding='lg'>
             <h2 className='h6'>{t.imageHeading}</h2>
@@ -176,7 +181,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
           <Card interactive={false} padding='lg'>
             <TextareaWithLabel
               label='Base64'
-              className='min-h-[300px] resize-y'
+              className='min-h-75 resize-y'
               value={base64}
               readOnly
               placeholder={t.base64Placeholder}
@@ -197,15 +202,18 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     );
   }
 
-  // mode === 'decode'
   return (
     <div className='overflow-hidden'>
-      <FormatSelector currentSource='base64' currentTarget='jpg' hasFiles={!!base64} />
+      <FormatSelector
+        currentSource='base64'
+        currentTarget='jpg'
+        hasFiles={!!base64}
+      />
       <div className='grid gap-4 md:grid-cols-2'>
         <Card interactive={false} padding='lg'>
           <TextareaWithLabel
             label='Base64'
-            className='min-h-[300px] w-full resize-y'
+            className='min-h-75 w-full resize-y'
             value={base64}
             onChange={setBase64}
             placeholder={t.base64PastePlaceholder}
@@ -246,7 +254,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
                 <img
                   src={previewUrl}
                   alt={t.decodedImageAlt}
-                  className='max-h-[400px] max-w-full object-contain'
+                  className='max-h-100 max-w-full object-contain'
                 />
               </div>
               <Button onClick={handleDownload} size='small'>
@@ -256,7 +264,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
           ) : (
             <div
               className={cn(
-                'min-h-[300px] rounded-lg border border-neutral-200 bg-neutral-50 p-4',
+                'min-h-75 rounded-lg border border-neutral-200 bg-neutral-50 p-4',
                 flexCenterClasses,
               )}
             >

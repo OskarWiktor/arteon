@@ -6,12 +6,10 @@ import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNav
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
-
-import type { ArticlePreview } from '@/types/article';
-import { slugify } from '@/utils/slugify';
-import { getPrimaryCategorySlug } from '@/utils/blogCategory';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
+import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import { ArticlePreview } from '@/types/article';
+import { getPrimaryCategorySlug } from '@/utils/blogCategory';
 
 const AUTO_PLAY_INTERVAL_MS = 6000;
 
@@ -25,6 +23,18 @@ type Props = {
   excludeSlug?: string;
 };
 
+/**
+ * Renders a horizontally scrollable, snap-based carousel of article preview cards with a section header, navigation controls, and pagination dots.
+ *
+ * @param articles - Source list of article previews; defaults to an empty list when omitted.
+ * @param max - Maximum number of articles to display.
+ * @param title - Section title shown in the header.
+ * @param subtitle - Optional section subtitle shown in the header.
+ * @param categorySlug - When provided, filters articles to those whose primary category slug matches this value.
+ * @param slugs - When provided (string or array), selects articles matching these slugs in the given order.
+ * @param excludeSlug - When provided, excludes the article with this slug from the final list.
+ * @returns The rendered carousel section element, or `null` if no articles are available to display.
+ */
 export default function ArticlesCarousel({
   articles,
   max = 10,
@@ -44,10 +54,21 @@ export default function ArticlesCarousel({
 
     if (slugsArray && slugsArray.length) {
       const map = new Map(source.map(a => [a.slug, a] as const));
-      list = slugsArray.map(s => map.get(s)).filter(Boolean) as ArticlePreview[];
+      list = slugsArray
+        .map(s => map.get(s))
+        .filter(Boolean) as ArticlePreview[];
     } else if (categorySlug) {
       list = source.filter(a => {
-        return a.primaryCategory && slugify(a.primaryCategory) === categorySlug;
+        return (
+          a.primaryCategory &&
+          a.primaryCategory
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9 -]/g, '')
+            .replace(/\s+/g, '-')
+            .trim() === categorySlug
+        );
       });
     } else {
       list = source;
@@ -60,18 +81,26 @@ export default function ArticlesCarousel({
     return list.slice(0, max);
   })();
 
-  const { currentSlide, maxSlides, isScrollable, scrollByCards, goToSlide, onKeyDown } =
-    useCarouselScroller({
-      itemCount: finalArticles.length,
-      scrollRef,
-      cardRef,
-      autoPlay: true,
-      autoPlayIntervalMs: AUTO_PLAY_INTERVAL_MS,
-    });
+  const {
+    currentSlide,
+    maxSlides,
+    isScrollable,
+    scrollByCards,
+    goToSlide,
+    onKeyDown,
+  } = useCarouselScroller({
+    itemCount: finalArticles.length,
+    scrollRef,
+    cardRef,
+    autoPlay: true,
+    autoPlayIntervalMs: AUTO_PLAY_INTERVAL_MS,
+  });
 
   if (!finalArticles.length) return null;
 
-  const allArticlesHref = categorySlug ? `/edukacja/${categorySlug}` : '/edukacja';
+  const allArticlesHref = categorySlug
+    ? `/edukacja/${categorySlug}`
+    : '/edukacja';
 
   return (
     <section className='w-full' aria-labelledby='articles-heading'>

@@ -205,7 +205,10 @@
         },
         {
           "label": "Selaintuki",
-          "values": ["Safari 13+ (macOS / iOS)", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+          "values": [
+            "Safari 13+ (macOS / iOS)",
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          ]
         },
         {
           "label": "Värisyvyys",

@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter PDF na PNG - darmowy, bez limitu stron",
-      "alternateName": ["Zamiana PDF na PNG", "Konwersja PDF do PNG", "PDF to PNG converter"],
+      "alternateName": [
+        "Zamiana PDF na PNG",
+        "Konwersja PDF do PNG",
+        "PDF to PNG converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Darmowy konwerter PDF na PNG. Zamień strony PDF na obrazy PNG w przeglądarce - pliki nie są wysyłane na serwer.",

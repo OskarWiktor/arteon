@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "JPG to WebP converter – free, unlimited files",
-      "alternateName": ["JPEG to WebP converter", "Convert JPG to WebP", "Change JPG to WebP"],
+      "alternateName": [
+        "JPEG to WebP converter",
+        "Convert JPG to WebP",
+        "Change JPG to WebP"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Free JPG to WebP converter. Reduce image weight by up to 35%. No uploads, no registration.",
@@ -187,7 +191,10 @@
         },
         {
           "label": "Web browser support",
-          "values": ["All browsers", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+          "values": [
+            "All browsers",
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          ]
         },
         {
           "label": "Color depth",

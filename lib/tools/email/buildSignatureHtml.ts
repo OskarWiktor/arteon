@@ -1,3 +1,4 @@
+import { rgbToHex } from '@/lib/tools/color/convert';
 import {
   escapeHtml,
   formatMultiline,
@@ -5,6 +6,11 @@ import {
   sanitizeHrefUrl,
   sanitizeSrcUrl,
 } from '@/lib/tools/email/sanitize';
+import {
+  getSocialIcon,
+  type SocialPlatform,
+  type IconSize,
+} from '@/lib/tools/email/socialIcons';
 import type {
   BorderSides,
   FontSizeOption,
@@ -17,8 +23,6 @@ import type {
   StyleConfig,
   TextStyleConfig,
 } from '@/types/tools/email';
-import { rgbToHex } from '@/lib/tools/color/convert';
-import { getSocialIcon, type SocialPlatform, type IconSize } from '@/lib/tools/email/socialIcons';
 
 type BuildSignatureLabels = {
   tel: string;
@@ -57,16 +61,21 @@ export function buildSignatureHtml(
   textStyle?: TextStyleConfig,
 ): string {
   const fontFamily = style.fontFamily || 'Arial, sans-serif';
-  const baseFontSizeNum = parseInt(FONT_SIZE_MAP[style.fontSize] || FONT_SIZE_MAP.normal);
+  const baseFontSizeNum = parseInt(
+    FONT_SIZE_MAP[style.fontSize] || FONT_SIZE_MAP.normal,
+  );
   const baseFontSize = `${baseFontSizeNum}px`;
 
-  const getElementFontSize = (sizeOffset: number): string => `${baseFontSizeNum + sizeOffset}px`;
+  const getElementFontSize = (sizeOffset: number): string =>
+    `${baseFontSizeNum + sizeOffset}px`;
   const accentColor = style.accentColor || SIGNATURE_COLOR_DARK;
   const textColor = style.textColor || SIGNATURE_COLOR_DARK;
 
   // Per-element styles
   const nameColor = textStyle?.name.color || accentColor;
-  const nameFontSize = textStyle ? getElementFontSize(textStyle.name.sizeOffset + 2) : '15px'; // +2 for name default
+  const nameFontSize = textStyle
+    ? getElementFontSize(textStyle.name.sizeOffset + 2)
+    : '15px'; // +2 for name default
   const jobTitleColor = textStyle?.jobTitle.color || textColor;
   const jobTitleFontSize = textStyle
     ? getElementFontSize(textStyle.jobTitle.sizeOffset)
@@ -84,7 +93,9 @@ export function buildSignatureHtml(
     ? getElementFontSize(textStyle.socials.sizeOffset)
     : baseFontSize;
   const legalColor = textStyle?.legal.color || textColor;
-  const legalFontSize = textStyle ? getElementFontSize(textStyle.legal.sizeOffset - 2) : '11px'; // -2 for legal default
+  const legalFontSize = textStyle
+    ? getElementFontSize(textStyle.legal.sizeOffset - 2)
+    : '11px'; // -2 for legal default
   const backgroundColor = style.backgroundColor || SIGNATURE_COLOR_WHITE;
 
   const paddingAll = PADDING_MAP[style.padding] ?? '16px';
@@ -93,7 +104,8 @@ export function buildSignatureHtml(
   const getBorderStyle = (border: BorderSides): string => {
     const borderColor = accentColor;
     const styles: string[] = [];
-    const allSelected = border.left && border.right && border.top && border.bottom;
+    const allSelected =
+      border.left && border.right && border.top && border.bottom;
 
     if (allSelected) {
       return `border:2px solid ${borderColor};`;
@@ -119,7 +131,11 @@ export function buildSignatureHtml(
   const hasAvatar = sanitizedAvatarUrl.length > 0;
 
   const AVATAR_SIZE_MAP = { small: 40, medium: 56, large: 72 } as const;
-  const AVATAR_RADIUS_MAP = { circle: '999px', rounded: '8px', square: '0' } as const;
+  const AVATAR_RADIUS_MAP = {
+    circle: '999px',
+    rounded: '8px',
+    square: '0',
+  } as const;
   const avatarSize = AVATAR_SIZE_MAP[style.avatarSize] || 56;
   const avatarRadius = AVATAR_RADIUS_MAP[style.avatarShape] || '999px';
   const avatarImg = hasAvatar

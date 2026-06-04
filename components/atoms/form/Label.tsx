@@ -7,6 +7,19 @@ type LabelProps = ComponentProps<'label'> & {
   required?: boolean;
 };
 
+/**
+ * Render a styled label element with optional "tool" variant styling and a required-field indicator.
+ *
+ * The component always renders a <label> with base layout classes. When `variant` is `"tool"`, compact
+ * uppercase styling is applied. When `required` is `true`, a visually red asterisk is appended and marked
+ * `aria-hidden`.
+ *
+ * @param variant - Controls visual variant; `'tool'` applies compact/uppercase styling, `'default'` uses base styling
+ * @param required - If `true`, appends a trailing red `*` to indicate the field is required
+ * @param className - Additional CSS class names to append to the label
+ * @param children - Label contents
+ * @returns The rendered `<label>` element
+ */
 export default function Label({
   variant = 'default',
   required = false,

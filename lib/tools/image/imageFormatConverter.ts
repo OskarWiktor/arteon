@@ -1,4 +1,7 @@
-import type { ImageFormat, OutputFormat } from '@/types/tools/image-format-converter';
+import type {
+  ImageFormat,
+  OutputFormat,
+} from '@/types/tools/image-format-converter';
 
 export const FORMAT_LABELS: Record<ImageFormat, string> = {
   jpg: 'JPG',

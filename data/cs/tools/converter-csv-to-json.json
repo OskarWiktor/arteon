@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Převeďte CSV do formátu JSON. Automatické parsování a formátování. Zdarma.",
-      "featureList": ["CSV to JSON conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert CSV to JSON", "CSV to JSON", "Free CSV to JSON converter"]
+      "featureList": [
+        "CSV to JSON conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert CSV to JSON",
+        "CSV to JSON",
+        "Free CSV to JSON converter"
+      ]
     },
     "howTo": {
       "name": "Jak převést CSV na JSON",

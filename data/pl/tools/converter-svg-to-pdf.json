@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter SVG na PDF - darmowy, bez limitu",
-      "alternateName": ["Zamiana SVG na PDF", "Konwersja SVG do PDF", "SVG to PDF converter"],
+      "alternateName": [
+        "Zamiana SVG na PDF",
+        "Konwersja SVG do PDF",
+        "SVG to PDF converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Darmowy konwerter SVG na PDF. Zamień pliki SVG na dokument PDF w przeglądarce - pliki nie są wysyłane na serwer.",

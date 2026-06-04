@@ -23,10 +23,13 @@ export const PROJECT_REDIRECTS: Record<string, string> = {
   '/realizacje/cennik-dla-salonu-kosmetycznego': '/realizacje',
   '/realizacje/trilllizo': '/realizacje/sklep-dla-firmy-odziezowej-trilllizo',
   '/realizacje/pilka-nozna-pl': '/realizacje',
-  '/realizacje/msc-psychotherapy': '/realizacje/strona-dla-psychologa-msc-psychotherapy',
-  '/projects/msc-psychotherapy': '/realizacje/strona-dla-psychologa-msc-psychotherapy',
+  '/realizacje/msc-psychotherapy':
+    '/realizacje/strona-dla-psychologa-msc-psychotherapy',
+  '/projects/msc-psychotherapy':
+    '/realizacje/strona-dla-psychologa-msc-psychotherapy',
   '/projects/trilllizo': '/realizacje/sklep-dla-firmy-odziezowej-trilllizo',
-  '/realizacje/katalog-produktów-restoquality': '/realizacje/katalog-produktow-restoquality',
+  '/realizacje/katalog-produktów-restoquality':
+    '/realizacje/katalog-produktow-restoquality',
   // Usunięte realizacje - thin content (2026-01-30)
   '/realizacje/blog-sportowy-pilka-nozna-pl': '/realizacje',
   '/realizacje/meridol-accessibility': '/realizacje',
@@ -138,31 +141,44 @@ export const PATTERN_REDIRECTS = {
  */
 export const TOOLS_REDIRECTS: Record<string, string> = {
   // Zmiana URL generatora palet kolorów (2026-01-20) - lepsza fraza kluczowa
-  '/narzedzia/generator-schematow-kolorow': '/narzedzia/generator-palet-kolorow',
-  '/narzedzia/generator-schematow-kolorow/instrukcja': '/narzedzia/generator-palet-kolorow',
-  '/narzedzia/generator-palet-kolorow-online': '/narzedzia/generator-palet-kolorow',
-  '/narzedzia/generator-palet-kolorow-online/instrukcja': '/narzedzia/generator-palet-kolorow',
+  '/narzedzia/generator-schematow-kolorow':
+    '/narzedzia/generator-palet-kolorow',
+  '/narzedzia/generator-schematow-kolorow/instrukcja':
+    '/narzedzia/generator-palet-kolorow',
+  '/narzedzia/generator-palet-kolorow-online':
+    '/narzedzia/generator-palet-kolorow',
+  '/narzedzia/generator-palet-kolorow-online/instrukcja':
+    '/narzedzia/generator-palet-kolorow',
   // Zmiana URL ekstraktora kolorów (2026-01-20)
-  '/narzedzia/generator-palety-kolorow-z-obrazu': '/narzedzia/ekstraktor-kolorow-z-obrazu',
+  '/narzedzia/generator-palety-kolorow-z-obrazu':
+    '/narzedzia/ekstraktor-kolorow-z-obrazu',
   '/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja':
     '/narzedzia/ekstraktor-kolorow-z-obrazu',
   // Zmiana URL edytora zdjęć (2026-01-20) - lepsza fraza kluczowa
-  '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia': '/narzedzia/edytor-zdjec-online',
-  '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja': '/narzedzia/edytor-zdjec-online',
+  '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia':
+    '/narzedzia/edytor-zdjec-online',
+  '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja':
+    '/narzedzia/edytor-zdjec-online',
   // Zmiana URL generatora kodów QR (2026-01-22) - dodanie "darmowy" dla lepszego SEO
   '/narzedzia/generator-kodu-qr': '/narzedzia/darmowy-generator-kodow-qr',
-  '/narzedzia/generator-kodu-qr/instrukcja': '/narzedzia/darmowy-generator-kodow-qr',
+  '/narzedzia/generator-kodu-qr/instrukcja':
+    '/narzedzia/darmowy-generator-kodow-qr',
   // Zmiana URL testera kontrastu (2026-01-22) - szersze pozycjonowanie na "czytelność kolorów"
   // Aktualizacja (2026-01-30) - zmiana na "kontrast-i-czytelnosc-kolorow"
-  '/narzedzia/tester-kontrastu-kolorow-wcag': '/narzedzia/kontrast-i-czytelnosc-kolorow',
-  '/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja': '/narzedzia/kontrast-i-czytelnosc-kolorow',
-  '/narzedzia/sprawdz-czytelnosc-kolorow': '/narzedzia/kontrast-i-czytelnosc-kolorow',
-  '/narzedzia/sprawdz-czytelnosc-kolorow/instrukcja': '/narzedzia/kontrast-i-czytelnosc-kolorow',
+  '/narzedzia/tester-kontrastu-kolorow-wcag':
+    '/narzedzia/kontrast-i-czytelnosc-kolorow',
+  '/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja':
+    '/narzedzia/kontrast-i-czytelnosc-kolorow',
+  '/narzedzia/sprawdz-czytelnosc-kolorow':
+    '/narzedzia/kontrast-i-czytelnosc-kolorow',
+  '/narzedzia/sprawdz-czytelnosc-kolorow/instrukcja':
+    '/narzedzia/kontrast-i-czytelnosc-kolorow',
   // Stare slugi edytora zdjęć w lokalach (zmienione ~2026-02)
   '/nl/tools/online-afbeeldingseditor': '/nl/tools/afbeeldingeneditor',
   '/hu/eszkozok/online-kepszerkeszto': '/hu/eszkozok/kepszerkeszto',
   '/sv/verktyg/bildredigerare-online': '/sv/verktyg/bildredigerare',
-  '/ro/instrumente/editor-de-imagini-online': '/ro/instrumente/editor-de-imagini',
+  '/ro/instrumente/editor-de-imagini-online':
+    '/ro/instrumente/editor-de-imagini',
   '/no/verktoy/bildeeditor-online': '/no/verktoy/bilderedigerer',
   // Błędny czeski slug w węgierskim locale (prevodnik = CS, nie HU)
   '/hu/eszkozok/prevodnik-png-na-jpg': '/hu/eszkozok/png-jpg-konverter',
@@ -170,16 +186,23 @@ export const TOOLS_REDIRECTS: Record<string, string> = {
   '/narzedzia/darmowy-generator-stopki-mailowej/instrukcja':
     '/narzedzia/darmowy-generator-stopki-mailowej',
   '/narzedzia/jpg-png-na-webp-bez-limitu': '/narzedzia/konwerter-jpg-na-webp',
-  '/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja': '/narzedzia/konwerter-jpg-na-webp',
+  '/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja':
+    '/narzedzia/konwerter-jpg-na-webp',
   '/narzedzia/edytor-zdjec-online/instrukcja': '/narzedzia/edytor-zdjec-online',
-  '/narzedzia/darmowy-generator-favicon-ico/instrukcja': '/narzedzia/darmowy-generator-favicon-ico',
-  '/narzedzia/licznik-slow-i-znakow/instrukcja': '/narzedzia/licznik-slow-i-znakow',
+  '/narzedzia/darmowy-generator-favicon-ico/instrukcja':
+    '/narzedzia/darmowy-generator-favicon-ico',
+  '/narzedzia/licznik-slow-i-znakow/instrukcja':
+    '/narzedzia/licznik-slow-i-znakow',
   '/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja':
     '/narzedzia/licznik-dlugosci-meta-title-i-description',
-  '/narzedzia/kontrast-i-czytelnosc-kolorow/instrukcja': '/narzedzia/kontrast-i-czytelnosc-kolorow',
-  '/narzedzia/generator-palet-kolorow/instrukcja': '/narzedzia/generator-palet-kolorow',
-  '/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja': '/narzedzia/ekstraktor-kolorow-z-obrazu',
-  '/narzedzia/darmowy-generator-kodow-qr/instrukcja': '/narzedzia/darmowy-generator-kodow-qr',
+  '/narzedzia/kontrast-i-czytelnosc-kolorow/instrukcja':
+    '/narzedzia/kontrast-i-czytelnosc-kolorow',
+  '/narzedzia/generator-palet-kolorow/instrukcja':
+    '/narzedzia/generator-palet-kolorow',
+  '/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja':
+    '/narzedzia/ekstraktor-kolorow-z-obrazu',
+  '/narzedzia/darmowy-generator-kodow-qr/instrukcja':
+    '/narzedzia/darmowy-generator-kodow-qr',
 };
 
 /**
@@ -190,40 +213,52 @@ export const CONVERTER_REDIRECTS: Record<string, string> = {
   // EN
   '/en/tools/jpg-png-to-webp-unlimited': '/en/tools/jpg-to-webp-converter',
   // DE
-  '/de/werkzeuge/jpg-png-zu-webp-konverter': '/de/werkzeuge/jpg-zu-webp-konverter',
+  '/de/werkzeuge/jpg-png-zu-webp-konverter':
+    '/de/werkzeuge/jpg-zu-webp-konverter',
   // ES
-  '/es/herramientas/convertidor-jpg-png-a-webp': '/es/herramientas/convertidor-jpg-a-webp',
+  '/es/herramientas/convertidor-jpg-png-a-webp':
+    '/es/herramientas/convertidor-jpg-a-webp',
   // FR
-  '/fr/outils/convertisseur-jpg-png-en-webp': '/fr/outils/convertisseur-jpg-en-webp',
+  '/fr/outils/convertisseur-jpg-png-en-webp':
+    '/fr/outils/convertisseur-jpg-en-webp',
   // PT
-  '/pt/ferramentas/conversor-jpg-png-para-webp': '/pt/ferramentas/conversor-jpg-para-webp',
+  '/pt/ferramentas/conversor-jpg-png-para-webp':
+    '/pt/ferramentas/conversor-jpg-para-webp',
   // IT
-  '/it/strumenti/convertitore-jpg-png-in-webp': '/it/strumenti/convertitore-jpg-in-webp',
+  '/it/strumenti/convertitore-jpg-png-in-webp':
+    '/it/strumenti/convertitore-jpg-in-webp',
   // RO
-  '/ro/instrumente/convertor-jpg-png-in-webp': '/ro/instrumente/convertor-jpg-in-webp',
+  '/ro/instrumente/convertor-jpg-png-in-webp':
+    '/ro/instrumente/convertor-jpg-in-webp',
   // NL
   '/nl/tools/jpg-png-naar-webp-converter': '/nl/tools/jpg-naar-webp-converter',
   // HU
   '/hu/eszkozok/jpg-png-webp-konverter': '/hu/eszkozok/jpg-webp-konverter',
   // CS
-  '/cs/nastroje/konvertor-jpg-png-na-webp': '/cs/nastroje/prevodnik-jpg-na-webp',
+  '/cs/nastroje/konvertor-jpg-png-na-webp':
+    '/cs/nastroje/prevodnik-jpg-na-webp',
   // SV
-  '/sv/verktyg/jpg-png-till-webp-konverterare': '/sv/verktyg/jpg-till-webp-konverterare',
+  '/sv/verktyg/jpg-png-till-webp-konverterare':
+    '/sv/verktyg/jpg-till-webp-konverterare',
   // DA
-  '/da/vaerktojer/jpg-png-til-webp-konverter': '/da/vaerktojer/jpg-til-webp-konverter',
+  '/da/vaerktojer/jpg-png-til-webp-konverter':
+    '/da/vaerktojer/jpg-til-webp-konverter',
   // NO
-  '/no/verktoy/jpg-png-til-webp-konverterer': '/no/verktoy/jpg-til-webp-konverterer',
+  '/no/verktoy/jpg-png-til-webp-konverterer':
+    '/no/verktoy/jpg-til-webp-konverterer',
   // FI
   '/fi/tyokalut/jpg-png-webp-muunnin': '/fi/tyokalut/jpg-webp-muunnin',
   // EL
-  '/el/ergaleia/metatropeas-jpg-png-se-webp': '/el/ergaleia/metatropeas-jpg-se-webp',
+  '/el/ergaleia/metatropeas-jpg-png-se-webp':
+    '/el/ergaleia/metatropeas-jpg-se-webp',
 };
 
 /**
  * Redirecty dla norweskich narzędzi (poprawki literówek w slugach, 2026-02-16)
  */
 export const NO_TOOLS_REDIRECTS: Record<string, string> = {
-  '/no/verktoy/fargeuttrrekker-fra-bilde': '/no/verktoy/fargeutrekker-fra-bilde',
+  '/no/verktoy/fargeuttrrekker-fra-bilde':
+    '/no/verktoy/fargeutrekker-fra-bilde',
 };
 
 /**
@@ -233,7 +268,8 @@ export const DE_TOOLS_REDIRECTS: Record<string, string> = {
   '/de/tools': '/de/werkzeuge',
   '/de/tools/jpg-png-zu-webp-konverter': '/de/werkzeuge/jpg-zu-webp-konverter',
   '/de/tools/online-bildeditor': '/de/werkzeuge/online-bildeditor',
-  '/de/tools/kostenloser-favicon-generator': '/de/werkzeuge/kostenloser-favicon-generator',
+  '/de/tools/kostenloser-favicon-generator':
+    '/de/werkzeuge/kostenloser-favicon-generator',
   '/de/tools/meta-titel-beschreibung-laengenpruefer':
     '/de/werkzeuge/meta-titel-beschreibung-laengenpruefer',
   '/de/tools/wort-und-zeichenzaehler': '/de/werkzeuge/wort-und-zeichenzaehler',
@@ -242,7 +278,8 @@ export const DE_TOOLS_REDIRECTS: Record<string, string> = {
   '/de/tools/farbkontrast-checker': '/de/werkzeuge/farbkontrast-checker',
   '/de/tools/bild-farbextraktor': '/de/werkzeuge/bild-farbextraktor',
   '/de/tools/farbpaletten-generator': '/de/werkzeuge/farbpaletten-generator',
-  '/de/tools/kostenloser-qr-code-generator': '/de/werkzeuge/kostenloser-qr-code-generator',
+  '/de/tools/kostenloser-qr-code-generator':
+    '/de/werkzeuge/kostenloser-qr-code-generator',
 };
 
 /**
@@ -278,9 +315,12 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/tr/araclar/jpg-png-webp-donusturucu': '/en/tools/jpg-to-webp-converter',
   '/tr/araclar/gorsel-duzenleyici': '/en/tools/online-image-editor',
   '/tr/araclar/ucretsiz-favicon-olusturucu': '/en/tools/free-favicon-generator',
-  '/tr/araclar/meta-baslik-ve-aciklama-kontrol': '/en/tools/meta-title-description-length-checker',
-  '/tr/araclar/kelime-ve-karakter-sayaci': '/en/tools/word-and-character-counter',
-  '/tr/araclar/ucretsiz-e-posta-imza-olusturucu': '/en/tools/free-email-signature-generator',
+  '/tr/araclar/meta-baslik-ve-aciklama-kontrol':
+    '/en/tools/meta-title-description-length-checker',
+  '/tr/araclar/kelime-ve-karakter-sayaci':
+    '/en/tools/word-and-character-counter',
+  '/tr/araclar/ucretsiz-e-posta-imza-olusturucu':
+    '/en/tools/free-email-signature-generator',
   '/tr/araclar/renk-kontrast-kontrolu': '/en/tools/color-contrast-checker',
   '/tr/araclar/gorsel-renk-cikarici': '/en/tools/image-color-extractor',
   '/tr/araclar/renk-paleti-olusturucu': '/en/tools/color-palette-generator',
@@ -296,9 +336,12 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/sq/mjetet/gjenerues-favicon-falas': '/en/tools/free-favicon-generator',
   '/sq/mjetet/kontrollues-meta-titull-dhe-pershkrim':
     '/en/tools/meta-title-description-length-checker',
-  '/sq/mjetet/numerues-fjalesh-dhe-karakteresh': '/en/tools/word-and-character-counter',
-  '/sq/mjetet/gjenerues-nenshkrimi-email-falas': '/en/tools/free-email-signature-generator',
-  '/sq/mjetet/kontrollues-kontrasti-ngjyrave': '/en/tools/color-contrast-checker',
+  '/sq/mjetet/numerues-fjalesh-dhe-karakteresh':
+    '/en/tools/word-and-character-counter',
+  '/sq/mjetet/gjenerues-nenshkrimi-email-falas':
+    '/en/tools/free-email-signature-generator',
+  '/sq/mjetet/kontrollues-kontrasti-ngjyrave':
+    '/en/tools/color-contrast-checker',
   '/sq/mjetet/nxjerres-ngjyrash-nga-imazhi': '/en/tools/image-color-extractor',
   '/sq/mjetet/gjenerues-paletash-ngjyrash': '/en/tools/color-palette-generator',
   '/sq/mjetet/gjenerues-kodi-qr-falas': '/en/tools/free-qr-code-generator',
@@ -311,9 +354,12 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/sk/nastroje/konvertor-jpg-png-na-webp': '/en/tools/jpg-to-webp-converter',
   '/sk/nastroje/editor-obrazkov': '/en/tools/online-image-editor',
   '/sk/nastroje/generator-favicon-zadarmo': '/en/tools/free-favicon-generator',
-  '/sk/nastroje/kontrola-meta-titulku-a-popisu': '/en/tools/meta-title-description-length-checker',
-  '/sk/nastroje/pocitadlo-slov-a-znakov': '/en/tools/word-and-character-counter',
-  '/sk/nastroje/generator-podpisu-emailu-zadarmo': '/en/tools/free-email-signature-generator',
+  '/sk/nastroje/kontrola-meta-titulku-a-popisu':
+    '/en/tools/meta-title-description-length-checker',
+  '/sk/nastroje/pocitadlo-slov-a-znakov':
+    '/en/tools/word-and-character-counter',
+  '/sk/nastroje/generator-podpisu-emailu-zadarmo':
+    '/en/tools/free-email-signature-generator',
   '/sk/nastroje/kontrola-kontrastu-farieb': '/en/tools/color-contrast-checker',
   '/sk/nastroje/extraktor-farieb-z-obrazka': '/en/tools/image-color-extractor',
   '/sk/nastroje/generator-farebnych-palet': '/en/tools/color-palette-generator',
@@ -327,9 +373,11 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/hr/alati/pretvaranje-jpg-png-u-webp': '/en/tools/jpg-to-webp-converter',
   '/hr/alati/urednik-slika': '/en/tools/online-image-editor',
   '/hr/alati/besplatni-generator-favicona': '/en/tools/free-favicon-generator',
-  '/hr/alati/provjera-meta-naslova-i-opisa': '/en/tools/meta-title-description-length-checker',
+  '/hr/alati/provjera-meta-naslova-i-opisa':
+    '/en/tools/meta-title-description-length-checker',
   '/hr/alati/brojac-rijeci-i-znakova': '/en/tools/word-and-character-counter',
-  '/hr/alati/besplatni-generator-potpisa-emaila': '/en/tools/free-email-signature-generator',
+  '/hr/alati/besplatni-generator-potpisa-emaila':
+    '/en/tools/free-email-signature-generator',
   '/hr/alati/provjera-kontrasta-boja': '/en/tools/color-contrast-checker',
   '/hr/alati/izdvajanje-boja-iz-slike': '/en/tools/image-color-extractor',
   '/hr/alati/generator-paleta-boja': '/en/tools/color-palette-generator',
@@ -342,15 +390,21 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/lt/privatumo-politika': '/en/privacy-policy',
   '/lt/irankiai/jpg-png-i-webp-konverteris': '/en/tools/jpg-to-webp-converter',
   '/lt/irankiai/vaizdu-redaktorius': '/en/tools/online-image-editor',
-  '/lt/irankiai/nemokamas-favicon-generatorius': '/en/tools/free-favicon-generator',
+  '/lt/irankiai/nemokamas-favicon-generatorius':
+    '/en/tools/free-favicon-generator',
   '/lt/irankiai/meta-pavadinimo-ir-aprasymo-tikrintuvas':
     '/en/tools/meta-title-description-length-checker',
-  '/lt/irankiai/zodziu-ir-simboliu-skaitiklis': '/en/tools/word-and-character-counter',
-  '/lt/irankiai/nemokamas-el-pasto-paraso-generatorius': '/en/tools/free-email-signature-generator',
-  '/lt/irankiai/spalvu-kontrasto-tikrintuvas': '/en/tools/color-contrast-checker',
+  '/lt/irankiai/zodziu-ir-simboliu-skaitiklis':
+    '/en/tools/word-and-character-counter',
+  '/lt/irankiai/nemokamas-el-pasto-paraso-generatorius':
+    '/en/tools/free-email-signature-generator',
+  '/lt/irankiai/spalvu-kontrasto-tikrintuvas':
+    '/en/tools/color-contrast-checker',
   '/lt/irankiai/spalvu-isrinkimas-is-vaizdo': '/en/tools/image-color-extractor',
-  '/lt/irankiai/spalvu-paletes-generatorius': '/en/tools/color-palette-generator',
-  '/lt/irankiai/nemokamas-qr-kodo-generatorius': '/en/tools/free-qr-code-generator',
+  '/lt/irankiai/spalvu-paletes-generatorius':
+    '/en/tools/color-palette-generator',
+  '/lt/irankiai/nemokamas-qr-kodo-generatorius':
+    '/en/tools/free-qr-code-generator',
   // Old typo redirect (was in NO_LT_TOOLS_REDIRECTS)
   '/lt/irankiai/nemokamas-el-paraso-paraso-generatorius':
     '/en/tools/free-email-signature-generator',
@@ -362,10 +416,13 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/sl/pravilnik-o-zasebnosti': '/en/privacy-policy',
   '/sl/orodja/pretvornik-jpg-png-v-webp': '/en/tools/jpg-to-webp-converter',
   '/sl/orodja/urejevalnik-slik': '/en/tools/online-image-editor',
-  '/sl/orodja/brezplacni-generator-faviconov': '/en/tools/free-favicon-generator',
-  '/sl/orodja/preverjanje-meta-naslova-in-opisa': '/en/tools/meta-title-description-length-checker',
+  '/sl/orodja/brezplacni-generator-faviconov':
+    '/en/tools/free-favicon-generator',
+  '/sl/orodja/preverjanje-meta-naslova-in-opisa':
+    '/en/tools/meta-title-description-length-checker',
   '/sl/orodja/stevec-besed-in-znakov': '/en/tools/word-and-character-counter',
-  '/sl/orodja/brezplacni-generator-podpisa-eposta': '/en/tools/free-email-signature-generator',
+  '/sl/orodja/brezplacni-generator-podpisa-eposta':
+    '/en/tools/free-email-signature-generator',
   '/sl/orodja/preverjanje-kontrasta-barv': '/en/tools/color-contrast-checker',
   '/sl/orodja/izlocanje-barv-iz-slike': '/en/tools/image-color-extractor',
   '/sl/orodja/generator-barvnih-palet': '/en/tools/color-palette-generator',
@@ -378,16 +435,22 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/bg/politika-za-poveritelnost': '/en/privacy-policy',
   '/bg/instrumenti/konvertor-jpg-png-v-webp': '/en/tools/jpg-to-webp-converter',
   '/bg/instrumenti/redaktor-na-izobrazhenia': '/en/tools/online-image-editor',
-  '/bg/instrumenti/bezplaten-generator-na-favicon': '/en/tools/free-favicon-generator',
+  '/bg/instrumenti/bezplaten-generator-na-favicon':
+    '/en/tools/free-favicon-generator',
   '/bg/instrumenti/proverka-na-meta-zaglavie-i-opisanie':
     '/en/tools/meta-title-description-length-checker',
-  '/bg/instrumenti/broiach-na-dumi-i-simvoli': '/en/tools/word-and-character-counter',
+  '/bg/instrumenti/broiach-na-dumi-i-simvoli':
+    '/en/tools/word-and-character-counter',
   '/bg/instrumenti/bezplaten-generator-na-podpis-za-email':
     '/en/tools/free-email-signature-generator',
-  '/bg/instrumenti/proverka-na-kontrast-na-tsvetove': '/en/tools/color-contrast-checker',
-  '/bg/instrumenti/ekstraktor-na-tsvetove-ot-izobrazhenie': '/en/tools/image-color-extractor',
-  '/bg/instrumenti/generator-na-tsvetovi-palitri': '/en/tools/color-palette-generator',
-  '/bg/instrumenti/bezplaten-generator-na-qr-kod': '/en/tools/free-qr-code-generator',
+  '/bg/instrumenti/proverka-na-kontrast-na-tsvetove':
+    '/en/tools/color-contrast-checker',
+  '/bg/instrumenti/ekstraktor-na-tsvetove-ot-izobrazhenie':
+    '/en/tools/image-color-extractor',
+  '/bg/instrumenti/generator-na-tsvetovi-palitri':
+    '/en/tools/color-palette-generator',
+  '/bg/instrumenti/bezplaten-generator-na-qr-kod':
+    '/en/tools/free-qr-code-generator',
   // ── Ukrainian (uk) ──────────────────────────────────────────────────
   '/uk': '/en',
   '/uk/instrumenty': '/en/tools',
@@ -396,16 +459,22 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/uk/polityka-konfidentsiinosti': '/en/privacy-policy',
   '/uk/instrumenty/konverter-jpg-png-u-webp': '/en/tools/jpg-to-webp-converter',
   '/uk/instrumenty/redaktor-zobrazhen': '/en/tools/online-image-editor',
-  '/uk/instrumenty/bezkoshtovnyi-generator-favicon': '/en/tools/free-favicon-generator',
+  '/uk/instrumenty/bezkoshtovnyi-generator-favicon':
+    '/en/tools/free-favicon-generator',
   '/uk/instrumenty/perevirka-meta-zaholovka-ta-opysu':
     '/en/tools/meta-title-description-length-checker',
-  '/uk/instrumenty/lichylnyk-sliv-i-symvoliv': '/en/tools/word-and-character-counter',
+  '/uk/instrumenty/lichylnyk-sliv-i-symvoliv':
+    '/en/tools/word-and-character-counter',
   '/uk/instrumenty/bezkoshtovnyi-generator-pidpysu-email':
     '/en/tools/free-email-signature-generator',
-  '/uk/instrumenty/perevirka-kontrastu-koloriv': '/en/tools/color-contrast-checker',
-  '/uk/instrumenty/ekstraktor-koloriv-z-zobrazhennia': '/en/tools/image-color-extractor',
-  '/uk/instrumenty/generator-kolirnykh-palitr': '/en/tools/color-palette-generator',
-  '/uk/instrumenty/bezkoshtovnyi-generator-qr-kodu': '/en/tools/free-qr-code-generator',
+  '/uk/instrumenty/perevirka-kontrastu-koloriv':
+    '/en/tools/color-contrast-checker',
+  '/uk/instrumenty/ekstraktor-koloriv-z-zobrazhennia':
+    '/en/tools/image-color-extractor',
+  '/uk/instrumenty/generator-kolirnykh-palitr':
+    '/en/tools/color-palette-generator',
+  '/uk/instrumenty/bezkoshtovnyi-generator-qr-kodu':
+    '/en/tools/free-qr-code-generator',
 };
 
 /**
@@ -425,7 +494,8 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/vi/cong-cu/kiem-tra-meta-title-va-description':
     '/en/tools/meta-title-description-length-checker',
   '/vi/cong-cu/dem-tu-va-ky-tu': '/en/tools/word-and-character-counter',
-  '/vi/cong-cu/tao-chu-ky-email-mien-phi': '/en/tools/free-email-signature-generator',
+  '/vi/cong-cu/tao-chu-ky-email-mien-phi':
+    '/en/tools/free-email-signature-generator',
   '/vi/cong-cu/kiem-tra-do-tuong-phan-mau': '/en/tools/color-contrast-checker',
   '/vi/cong-cu/trich-xuat-mau-tu-hinh-anh': '/en/tools/image-color-extractor',
   '/vi/cong-cu/tao-bang-mau': '/en/tools/color-palette-generator',
@@ -439,9 +509,12 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/id/alat/konverter-jpg-png-ke-webp': '/en/tools/jpg-to-webp-converter',
   '/id/alat/editor-gambar': '/en/tools/online-image-editor',
   '/id/alat/generator-favicon-gratis': '/en/tools/free-favicon-generator',
-  '/id/alat/pemeriksa-meta-judul-dan-deskripsi': '/en/tools/meta-title-description-length-checker',
-  '/id/alat/penghitung-kata-dan-karakter': '/en/tools/word-and-character-counter',
-  '/id/alat/generator-tanda-tangan-email-gratis': '/en/tools/free-email-signature-generator',
+  '/id/alat/pemeriksa-meta-judul-dan-deskripsi':
+    '/en/tools/meta-title-description-length-checker',
+  '/id/alat/penghitung-kata-dan-karakter':
+    '/en/tools/word-and-character-counter',
+  '/id/alat/generator-tanda-tangan-email-gratis':
+    '/en/tools/free-email-signature-generator',
   '/id/alat/pemeriksa-kontras-warna': '/en/tools/color-contrast-checker',
   '/id/alat/ekstraktor-warna-dari-gambar': '/en/tools/image-color-extractor',
   '/id/alat/generator-palet-warna': '/en/tools/color-palette-generator',
@@ -457,8 +530,10 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/ms/alatan/penjana-favicon-percuma': '/en/tools/free-favicon-generator',
   '/ms/alatan/penyemak-meta-tajuk-dan-penerangan':
     '/en/tools/meta-title-description-length-checker',
-  '/ms/alatan/pengira-perkataan-dan-aksara': '/en/tools/word-and-character-counter',
-  '/ms/alatan/penjana-tandatangan-emel-percuma': '/en/tools/free-email-signature-generator',
+  '/ms/alatan/pengira-perkataan-dan-aksara':
+    '/en/tools/word-and-character-counter',
+  '/ms/alatan/penjana-tandatangan-emel-percuma':
+    '/en/tools/free-email-signature-generator',
   '/ms/alatan/penyemak-kontras-warna': '/en/tools/color-contrast-checker',
   '/ms/alatan/pengekstrak-warna-dari-imej': '/en/tools/image-color-extractor',
   '/ms/alatan/penjana-palet-warna': '/en/tools/color-palette-generator',
@@ -472,9 +547,11 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/hi/upkaran/jpg-png-se-webp-badlein': '/en/tools/jpg-to-webp-converter',
   '/hi/upkaran/chitra-sampadak': '/en/tools/online-image-editor',
   '/hi/upkaran/favicon-nirmata': '/en/tools/free-favicon-generator',
-  '/hi/upkaran/meta-sheerashak-jaanch': '/en/tools/meta-title-description-length-checker',
+  '/hi/upkaran/meta-sheerashak-jaanch':
+    '/en/tools/meta-title-description-length-checker',
   '/hi/upkaran/shabd-ganak': '/en/tools/word-and-character-counter',
-  '/hi/upkaran/email-hastakshar-nirmata': '/en/tools/free-email-signature-generator',
+  '/hi/upkaran/email-hastakshar-nirmata':
+    '/en/tools/free-email-signature-generator',
   '/hi/upkaran/rang-virodh-jaanch': '/en/tools/color-contrast-checker',
   '/hi/upkaran/chitra-se-rang-nikaalein': '/en/tools/image-color-extractor',
   '/hi/upkaran/rang-palette-nirmata': '/en/tools/color-palette-generator',
@@ -488,7 +565,8 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/bn/yantra/jpg-png-theke-webp-rupantor': '/en/tools/jpg-to-webp-converter',
   '/bn/yantra/chhobi-sompadok': '/en/tools/online-image-editor',
   '/bn/yantra/favicon-toyri': '/en/tools/free-favicon-generator',
-  '/bn/yantra/meta-shirshonam-pariksha': '/en/tools/meta-title-description-length-checker',
+  '/bn/yantra/meta-shirshonam-pariksha':
+    '/en/tools/meta-title-description-length-checker',
   '/bn/yantra/shobdo-gonok': '/en/tools/word-and-character-counter',
   '/bn/yantra/email-shakkhor-toyri': '/en/tools/free-email-signature-generator',
   '/bn/yantra/rong-boiporitto-pariksha': '/en/tools/color-contrast-checker',
@@ -501,35 +579,50 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/tl/tungkol-sa-amin': '/en/about',
   '/tl/makipag-ugnayan': '/en/contact',
   '/tl/patakaran-sa-privacy': '/en/privacy-policy',
-  '/tl/mga-kasangkapan/jpg-png-sa-webp-converter': '/en/tools/jpg-to-webp-converter',
+  '/tl/mga-kasangkapan/jpg-png-sa-webp-converter':
+    '/en/tools/jpg-to-webp-converter',
   '/tl/mga-kasangkapan/editor-ng-larawan': '/en/tools/online-image-editor',
-  '/tl/mga-kasangkapan/libreng-favicon-generator': '/en/tools/free-favicon-generator',
+  '/tl/mga-kasangkapan/libreng-favicon-generator':
+    '/en/tools/free-favicon-generator',
   '/tl/mga-kasangkapan/tagasuri-ng-meta-title-at-description':
     '/en/tools/meta-title-description-length-checker',
-  '/tl/mga-kasangkapan/tagabilang-ng-salita-at-character': '/en/tools/word-and-character-counter',
+  '/tl/mga-kasangkapan/tagabilang-ng-salita-at-character':
+    '/en/tools/word-and-character-counter',
   '/tl/mga-kasangkapan/libreng-email-signature-generator':
     '/en/tools/free-email-signature-generator',
-  '/tl/mga-kasangkapan/tagasuri-ng-contrast-ng-kulay': '/en/tools/color-contrast-checker',
-  '/tl/mga-kasangkapan/tagakuha-ng-kulay-mula-sa-larawan': '/en/tools/image-color-extractor',
-  '/tl/mga-kasangkapan/generator-ng-palette-ng-kulay': '/en/tools/color-palette-generator',
-  '/tl/mga-kasangkapan/libreng-qr-code-generator': '/en/tools/free-qr-code-generator',
+  '/tl/mga-kasangkapan/tagasuri-ng-contrast-ng-kulay':
+    '/en/tools/color-contrast-checker',
+  '/tl/mga-kasangkapan/tagakuha-ng-kulay-mula-sa-larawan':
+    '/en/tools/image-color-extractor',
+  '/tl/mga-kasangkapan/generator-ng-palette-ng-kulay':
+    '/en/tools/color-palette-generator',
+  '/tl/mga-kasangkapan/libreng-qr-code-generator':
+    '/en/tools/free-qr-code-generator',
   // ── Cebuano (ceb) ────────────────────────────────────────────────────
   '/ceb': '/en',
   '/ceb/mga-himan': '/en/tools',
   '/ceb/mahitungod-kanamo': '/en/about',
   '/ceb/kontaka-kami': '/en/contact',
   '/ceb/palisiya-sa-pribasiya': '/en/privacy-policy',
-  '/ceb/mga-himan/jpg-png-ngadto-webp-converter': '/en/tools/jpg-to-webp-converter',
+  '/ceb/mga-himan/jpg-png-ngadto-webp-converter':
+    '/en/tools/jpg-to-webp-converter',
   '/ceb/mga-himan/editor-sa-hulagway': '/en/tools/online-image-editor',
-  '/ceb/mga-himan/libre-nga-favicon-generator': '/en/tools/free-favicon-generator',
+  '/ceb/mga-himan/libre-nga-favicon-generator':
+    '/en/tools/free-favicon-generator',
   '/ceb/mga-himan/tigsusi-sa-meta-titulo-ug-deskripsyon':
     '/en/tools/meta-title-description-length-checker',
-  '/ceb/mga-himan/tigihap-sa-pulong-ug-karakter': '/en/tools/word-and-character-counter',
-  '/ceb/mga-himan/libre-nga-email-pirma-generator': '/en/tools/free-email-signature-generator',
-  '/ceb/mga-himan/tigsusi-sa-kontras-sa-kolor': '/en/tools/color-contrast-checker',
-  '/ceb/mga-himan/tigkuha-sa-kolor-gikan-sa-hulagway': '/en/tools/image-color-extractor',
-  '/ceb/mga-himan/generator-sa-paleta-sa-kolor': '/en/tools/color-palette-generator',
-  '/ceb/mga-himan/libre-nga-qr-code-generator': '/en/tools/free-qr-code-generator',
+  '/ceb/mga-himan/tigihap-sa-pulong-ug-karakter':
+    '/en/tools/word-and-character-counter',
+  '/ceb/mga-himan/libre-nga-email-pirma-generator':
+    '/en/tools/free-email-signature-generator',
+  '/ceb/mga-himan/tigsusi-sa-kontras-sa-kolor':
+    '/en/tools/color-contrast-checker',
+  '/ceb/mga-himan/tigkuha-sa-kolor-gikan-sa-hulagway':
+    '/en/tools/image-color-extractor',
+  '/ceb/mga-himan/generator-sa-paleta-sa-kolor':
+    '/en/tools/color-palette-generator',
+  '/ceb/mga-himan/libre-nga-qr-code-generator':
+    '/en/tools/free-qr-code-generator',
   // ── Swahili (sw) ─────────────────────────────────────────────────────
   '/sw': '/en',
   '/sw/zana': '/en/tools',
@@ -539,10 +632,14 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/sw/zana/kibadilishaji-jpg-png-hadi-webp': '/en/tools/jpg-to-webp-converter',
   '/sw/zana/kihariri-cha-picha': '/en/tools/online-image-editor',
   '/sw/zana/kitengenezaji-favicon-bure': '/en/tools/free-favicon-generator',
-  '/sw/zana/kikaguzi-cha-meta-kichwa-na-maelezo': '/en/tools/meta-title-description-length-checker',
-  '/sw/zana/kihesabuji-maneno-na-herufi': '/en/tools/word-and-character-counter',
-  '/sw/zana/kitengenezaji-saini-barua-pepe-bure': '/en/tools/free-email-signature-generator',
-  '/sw/zana/kikaguzi-cha-utofautishaji-rangi': '/en/tools/color-contrast-checker',
+  '/sw/zana/kikaguzi-cha-meta-kichwa-na-maelezo':
+    '/en/tools/meta-title-description-length-checker',
+  '/sw/zana/kihesabuji-maneno-na-herufi':
+    '/en/tools/word-and-character-counter',
+  '/sw/zana/kitengenezaji-saini-barua-pepe-bure':
+    '/en/tools/free-email-signature-generator',
+  '/sw/zana/kikaguzi-cha-utofautishaji-rangi':
+    '/en/tools/color-contrast-checker',
   '/sw/zana/kitoa-rangi-kutoka-picha': '/en/tools/image-color-extractor',
   '/sw/zana/kitengenezaji-paleti-za-rangi': '/en/tools/color-palette-generator',
   '/sw/zana/kitengenezaji-msimbo-qr-bure': '/en/tools/free-qr-code-generator',
@@ -552,30 +649,41 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/ha/game-da-mu': '/en/about',
   '/ha/tuntube-mu': '/en/contact',
   '/ha/manufar-sirri': '/en/privacy-policy',
-  '/ha/kayan-aiki/mai-canza-jpg-png-zuwa-webp': '/en/tools/jpg-to-webp-converter',
+  '/ha/kayan-aiki/mai-canza-jpg-png-zuwa-webp':
+    '/en/tools/jpg-to-webp-converter',
   '/ha/kayan-aiki/editan-hoto': '/en/tools/online-image-editor',
   '/ha/kayan-aiki/samar-da-favicon-kyauta': '/en/tools/free-favicon-generator',
-  '/ha/kayan-aiki/tantance-meta-take-da-bayani': '/en/tools/meta-title-description-length-checker',
-  '/ha/kayan-aiki/kidaya-kalmomi-da-haruffa': '/en/tools/word-and-character-counter',
-  '/ha/kayan-aiki/samar-da-sa-hannu-imel-kyauta': '/en/tools/free-email-signature-generator',
-  '/ha/kayan-aiki/tantance-bambancin-launuka': '/en/tools/color-contrast-checker',
+  '/ha/kayan-aiki/tantance-meta-take-da-bayani':
+    '/en/tools/meta-title-description-length-checker',
+  '/ha/kayan-aiki/kidaya-kalmomi-da-haruffa':
+    '/en/tools/word-and-character-counter',
+  '/ha/kayan-aiki/samar-da-sa-hannu-imel-kyauta':
+    '/en/tools/free-email-signature-generator',
+  '/ha/kayan-aiki/tantance-bambancin-launuka':
+    '/en/tools/color-contrast-checker',
   '/ha/kayan-aiki/fitar-launuka-daga-hoto': '/en/tools/image-color-extractor',
-  '/ha/kayan-aiki/samar-da-fayafayan-launuka': '/en/tools/color-palette-generator',
-  '/ha/kayan-aiki/samar-da-lambar-qr-kyauta': '/en/tools/free-qr-code-generator',
+  '/ha/kayan-aiki/samar-da-fayafayan-launuka':
+    '/en/tools/color-palette-generator',
+  '/ha/kayan-aiki/samar-da-lambar-qr-kyauta':
+    '/en/tools/free-qr-code-generator',
   // ── Yoruba (yo) ──────────────────────────────────────────────────────
   '/yo': '/en',
   '/yo/awon-irinse': '/en/tools',
   '/yo/nipa-wa': '/en/about',
   '/yo/kan-si-wa': '/en/contact',
   '/yo/ilana-asiri': '/en/privacy-policy',
-  '/yo/awon-irinse/oluyipada-jpg-png-si-webp': '/en/tools/jpg-to-webp-converter',
+  '/yo/awon-irinse/oluyipada-jpg-png-si-webp':
+    '/en/tools/jpg-to-webp-converter',
   '/yo/awon-irinse/olootu-aworan': '/en/tools/online-image-editor',
   '/yo/awon-irinse/olupilese-favicon-ofe': '/en/tools/free-favicon-generator',
   '/yo/awon-irinse/atunyewo-meta-akole-ati-apejuwe':
     '/en/tools/meta-title-description-length-checker',
-  '/yo/awon-irinse/oluka-oro-ati-ohun-kikoo': '/en/tools/word-and-character-counter',
-  '/yo/awon-irinse/olupilese-ibuwolu-imeeli-ofe': '/en/tools/free-email-signature-generator',
-  '/yo/awon-irinse/atunyewo-iyato-awon-awoo': '/en/tools/color-contrast-checker',
+  '/yo/awon-irinse/oluka-oro-ati-ohun-kikoo':
+    '/en/tools/word-and-character-counter',
+  '/yo/awon-irinse/olupilese-ibuwolu-imeeli-ofe':
+    '/en/tools/free-email-signature-generator',
+  '/yo/awon-irinse/atunyewo-iyato-awon-awoo':
+    '/en/tools/color-contrast-checker',
   '/yo/awon-irinse/iseduro-awoo-lati-aworan': '/en/tools/image-color-extractor',
   '/yo/awon-irinse/olupilese-paleti-awoo': '/en/tools/color-palette-generator',
   '/yo/awon-irinse/olupilese-koodu-qr-ofe': '/en/tools/free-qr-code-generator',
@@ -588,11 +696,15 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/ig/ngwa-oru/gbanwee-jpg-png-gaa-webp': '/en/tools/jpg-to-webp-converter',
   '/ig/ngwa-oru/edita-onyonyo': '/en/tools/online-image-editor',
   '/ig/ngwa-oru/njikota-favicon-nefu': '/en/tools/free-favicon-generator',
-  '/ig/ngwa-oru/nyocha-meta-aha-na-nkowa': '/en/tools/meta-title-description-length-checker',
-  '/ig/ngwa-oru/agu-okwu-na-mkpuruedemede': '/en/tools/word-and-character-counter',
-  '/ig/ngwa-oru/njikota-mbinye-aka-email-nefu': '/en/tools/free-email-signature-generator',
+  '/ig/ngwa-oru/nyocha-meta-aha-na-nkowa':
+    '/en/tools/meta-title-description-length-checker',
+  '/ig/ngwa-oru/agu-okwu-na-mkpuruedemede':
+    '/en/tools/word-and-character-counter',
+  '/ig/ngwa-oru/njikota-mbinye-aka-email-nefu':
+    '/en/tools/free-email-signature-generator',
   '/ig/ngwa-oru/nyocha-idi-iche-agba': '/en/tools/color-contrast-checker',
-  '/ig/ngwa-oru/mweputa-agba-site-na-onyonyo': '/en/tools/image-color-extractor',
+  '/ig/ngwa-oru/mweputa-agba-site-na-onyonyo':
+    '/en/tools/image-color-extractor',
   '/ig/ngwa-oru/njikota-palette-agba': '/en/tools/color-palette-generator',
   '/ig/ngwa-oru/njikota-koodu-qr-nefu': '/en/tools/free-qr-code-generator',
   // ── Afrikaans (af) ───────────────────────────────────────────────────
@@ -601,15 +713,19 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/af/oor-ons': '/en/about',
   '/af/kontak': '/en/contact',
   '/af/privaatheidsbeleid': '/en/privacy-policy',
-  '/af/gereedskap/jpg-png-na-webp-omskakelaar': '/en/tools/jpg-to-webp-converter',
+  '/af/gereedskap/jpg-png-na-webp-omskakelaar':
+    '/en/tools/jpg-to-webp-converter',
   '/af/gereedskap/beeldredigeerder': '/en/tools/online-image-editor',
   '/af/gereedskap/gratis-favicon-generator': '/en/tools/free-favicon-generator',
   '/af/gereedskap/meta-titel-en-beskrywing-nagaaier':
     '/en/tools/meta-title-description-length-checker',
-  '/af/gereedskap/woord-en-karakter-teller': '/en/tools/word-and-character-counter',
-  '/af/gereedskap/gratis-e-pos-handtekening-generator': '/en/tools/free-email-signature-generator',
+  '/af/gereedskap/woord-en-karakter-teller':
+    '/en/tools/word-and-character-counter',
+  '/af/gereedskap/gratis-e-pos-handtekening-generator':
+    '/en/tools/free-email-signature-generator',
   '/af/gereedskap/kleurkontras-nagaaier': '/en/tools/color-contrast-checker',
-  '/af/gereedskap/kleur-onttrekker-uit-beeld': '/en/tools/image-color-extractor',
+  '/af/gereedskap/kleur-onttrekker-uit-beeld':
+    '/en/tools/image-color-extractor',
   '/af/gereedskap/kleurpalet-generator': '/en/tools/color-palette-generator',
   '/af/gereedskap/gratis-qr-kode-generator': '/en/tools/free-qr-code-generator',
 };

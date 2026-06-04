@@ -1,24 +1,6 @@
-﻿'use client';
+'use client';
 
-import Button from '@/components/atoms/buttons/Button';
-import ToolAlert from '@/components/atoms/ToolAlert';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import { exportCroppedImage } from '@/lib/tools/image/exportCroppedImage';
-import { getCropRect, getGridStroke } from '@/lib/tools/image/cropMath';
-import { useCropDrag } from '@/hooks/useCropDrag';
-import type {
-  ActiveTool,
-  GridColor,
-  OutputFormat,
-  ResizeMode,
-  ShapeAspect,
-  ShapeType,
-} from '@/types/tools/image';
-import ButtonTool from '@/components/atoms/buttons/ButtonTool';
-import { formatBytes } from '@/utils/formatBytes';
-import { getFileFormatLabel } from '@/utils/fileFormat';
-import { revokeObjectUrl } from '@/utils/objectUrl';
-import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import {
   RiZoomInLine,
@@ -29,27 +11,55 @@ import {
   RiCropLine,
   RiImageLine,
 } from 'react-icons/ri';
-import { useLocale } from '@/lib/LocaleContext';
-import { ui, type UiLocale } from '@/lib/i18n/tools/image-resize';
-import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import InputWithLabel from '@/components/molecules/form/InputWithLabel';
-import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import CropPreview from '@/components/organisms/tools/ImageResizeTool/CropPreview';
-import FileDropzone from '@/components/molecules/FileDropzone';
+import Button from '@/components/atoms/buttons/Button';
+import ToolAlert from '@/components/atoms/ToolAlert';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import Card from '@/components/organisms/Card';
-import { cn } from '@/lib/utils';
+import CropPreview from '@/components/organisms/tools/ImageResizeTool/CropPreview';
+import { useCropDrag } from '@/hooks/useCropDrag';
+import { ui, type UiLocale } from '@/lib/i18n/tools/imageResize';
+import { useLocale } from '@/lib/LocaleContext';
+import { getCropRect, getGridStroke } from '@/lib/tools/image/cropMath';
+import { exportCroppedImage } from '@/lib/tools/image/exportCroppedImage';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
   smallIconSizeClasses,
-} from '@/lib/ui-classes';
+} from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
+import type {
+  ActiveTool,
+  GridColor,
+  OutputFormat,
+  ResizeMode,
+  ShapeAspect,
+  ShapeType,
+} from '@/types/tools/image';
+import { getFileFormatLabel } from '@/utils/fileFormat';
+import { formatBytes } from '@/utils/formatBytes';
+import { revokeObjectUrl } from '@/utils/objectUrl';
+import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import ButtonTool from '@/components/atoms/buttons/ButtonTool';
+import FileDropzone from '@/components/molecules/FileDropzone';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 
 function getImagePresets(t: UiLocale) {
   return {
     social: [
-      { key: 'ig-square', label: t.presets.igSquare, width: 1080, height: 1080 },
-      { key: 'ig-portrait', label: t.presets.igPortrait, width: 1080, height: 1350 },
+      {
+        key: 'ig-square',
+        label: t.presets.igSquare,
+        width: 1080,
+        height: 1080,
+      },
+      {
+        key: 'ig-portrait',
+        label: t.presets.igPortrait,
+        width: 1080,
+        height: 1350,
+      },
       { key: 'ig-story', label: t.presets.igStory, width: 1080, height: 1920 },
       { key: 'fb-post', label: t.presets.fbPost, width: 1200, height: 630 },
       { key: 'fb-cover', label: t.presets.fbCover, width: 820, height: 360 },
@@ -88,7 +98,9 @@ interface ResizeToolState {
   shapeAspect: ShapeAspect;
 }
 
-function getGridColorOptions(t: UiLocale): { value: GridColor; label: string }[] {
+function getGridColorOptions(
+  t: UiLocale,
+): { value: GridColor; label: string }[] {
   return [
     { value: 'emerald', label: t.gridColors.emerald },
     { value: 'white', label: t.gridColors.white },
@@ -108,17 +120,48 @@ function getShapeOptions(t: UiLocale): { value: ShapeType; label: string }[] {
 
 const RECT_ASPECTS: ShapeAspect[] = ['1:1', '4:5', '3:2', '16:9', '9:16'];
 
-function getToolbarItems(t: UiLocale): { id: ActiveTool; label: string; icon: ReactNode }[] {
+function getToolbarItems(
+  t: UiLocale,
+): { id: ActiveTool; label: string; icon: ReactNode }[] {
   return [
-    { id: 'dimensions', label: t.dimensions, icon: <RiRulerLine className='text-base' /> },
-    { id: 'presets', label: t.presetsLabel, icon: <RiLayoutGridLine className='text-base' /> },
-    { id: 'shapes', label: t.shapesLabel, icon: <RiCropLine className='text-base' /> },
+    {
+      id: 'dimensions',
+      label: t.dimensions,
+      icon: <RiRulerLine className='text-base' />,
+    },
+    {
+      id: 'presets',
+      label: t.presetsLabel,
+      icon: <RiLayoutGridLine className='text-base' />,
+    },
+    {
+      id: 'shapes',
+      label: t.shapesLabel,
+      icon: <RiCropLine className='text-base' />,
+    },
     { id: 'zoom', label: t.zoom, icon: <RiZoomInLine className='text-base' /> },
-    { id: 'position', label: t.position, icon: <RiDragMove2Line className='text-base' /> },
-    { id: 'grid', label: t.gridColor, icon: <RiGridLine className='text-base' /> },
+    {
+      id: 'position',
+      label: t.position,
+      icon: <RiDragMove2Line className='text-base' />,
+    },
+    {
+      id: 'grid',
+      label: t.gridColor,
+      icon: <RiGridLine className='text-base' />,
+    },
   ];
 }
 
+/**
+ * Image upload and interactive resize/crop UI that lets users pick target dimensions or presets,
+ * choose shape and grid options, adjust crop position and zoom, and export a cropped image file.
+ *
+ * The component manages image loading, dimension/shape presets, crop state and drag interactions,
+ * output format/quality selection, and invokes image export to produce the final file.
+ *
+ * @returns The rendered ImageResizeTool UI as a JSX element
+ */
 export default function ImageResizeTool() {
   const locale = useLocale();
   const t = ui[locale];
@@ -181,7 +224,8 @@ export default function ImageResizeTool() {
 
   const inputFormat = getFileFormatLabel(state.file);
 
-  const cropEnabled = !!state.imageUrl && !!state.originalWidth && !!state.originalHeight;
+  const cropEnabled =
+    !!state.imageUrl && !!state.originalWidth && !!state.originalHeight;
 
   const previewPadding =
     state.originalWidth && state.originalHeight
@@ -189,7 +233,12 @@ export default function ImageResizeTool() {
       : 56.25;
 
   const cropRectPreview = (() => {
-    if (!cropEnabled || !state.originalWidth || !state.originalHeight || !effectiveDims)
+    if (
+      !cropEnabled ||
+      !state.originalWidth ||
+      !state.originalHeight ||
+      !effectiveDims
+    )
       return null;
     const targetAspect = effectiveDims.width / effectiveDims.height;
     const rect = getCropRect(
@@ -211,7 +260,8 @@ export default function ImageResizeTool() {
   const gridStroke = getGridStroke(state.gridColor);
   const presetList = IMAGE_PRESETS[state.selectedCategory];
   const shapeNeedsAlpha = state.shape === 'circle';
-  const selectionShapeClass = state.shape === 'circle' ? 'rounded-lg' : 'rounded-md';
+  const selectionShapeClass =
+    state.shape === 'circle' ? 'rounded-lg' : 'rounded-md';
 
   const handleFileChange = (file: File | null) => {
     if (!file) return;
@@ -243,7 +293,10 @@ export default function ImageResizeTool() {
     };
   };
 
-  const handleDimensionChange = (type: 'width' | 'height', value: number | null) => {
+  const handleDimensionChange = (
+    type: 'width' | 'height',
+    value: number | null,
+  ) => {
     if (value === null || value <= 0 || Number.isNaN(value)) {
       setState(prev => ({
         ...prev,
@@ -414,7 +467,7 @@ export default function ImageResizeTool() {
     })();
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     handleDownload();
   };
@@ -493,7 +546,8 @@ export default function ImageResizeTool() {
                   </p>
                 )}
                 <p className='text-xs!'>
-                  {t.outputFormat} <strong>{state.outputFormat.toUpperCase()}</strong>
+                  {t.outputFormat}{' '}
+                  <strong>{state.outputFormat.toUpperCase()}</strong>
                 </p>
                 <p className='text-xs!'>
                   {t.shape}{' '}
@@ -507,12 +561,14 @@ export default function ImageResizeTool() {
                 </p>
                 {state.file && (
                   <p className='text-xs!'>
-                    {t.sourceFile} <strong>{formatBytes(state.file.size)}</strong>
+                    {t.sourceFile}{' '}
+                    <strong>{formatBytes(state.file.size)}</strong>
                   </p>
                 )}
                 {estimatedSize !== null && (
                   <p className='text-xs!'>
-                    {t.estimatedResult} <strong>{formatBytes(estimatedSize)}</strong>
+                    {t.estimatedResult}{' '}
+                    <strong>{formatBytes(estimatedSize)}</strong>
                   </p>
                 )}
               </div>
@@ -545,7 +601,9 @@ export default function ImageResizeTool() {
                 value={Math.round(state.outputQuality * 100)}
                 min={60}
                 max={100}
-                onChange={val => setState(prev => ({ ...prev, outputQuality: val / 100 }))}
+                onChange={val =>
+                  setState(prev => ({ ...prev, outputQuality: val / 100 }))
+                }
                 suffix='%'
                 helper={t.qualityHelper}
                 className='mt-4'
@@ -599,7 +657,7 @@ export default function ImageResizeTool() {
 
             <div
               className={cn(
-                'relative mt-4 aspect-[4/5] max-h-[340px] overflow-hidden rounded-lg border border-neutral-300 bg-neutral-100',
+                'relative mt-4 aspect-4/5 max-h-85 overflow-hidden rounded-lg border border-neutral-300 bg-neutral-100',
                 flexCenterClasses,
               )}
             >
@@ -609,7 +667,10 @@ export default function ImageResizeTool() {
               </div>
               <div className='pointer-events-none absolute inset-4 grid grid-cols-3 grid-rows-3 rounded-md border border-dashed border-neutral-300'>
                 {Array.from({ length: 9 }).map((_, i) => (
-                  <div key={i} className='border border-dashed border-neutral-300/50' />
+                  <div
+                    key={i}
+                    className='border border-dashed border-neutral-300/50'
+                  />
                 ))}
               </div>
             </div>
@@ -646,9 +707,16 @@ export default function ImageResizeTool() {
                         label={t.width}
                         type='number'
                         min={1}
-                        value={state.targetWidth != null ? String(state.targetWidth) : ''}
+                        value={
+                          state.targetWidth != null
+                            ? String(state.targetWidth)
+                            : ''
+                        }
                         onChange={value =>
-                          handleDimensionChange('width', value ? Number(value) : null)
+                          handleDimensionChange(
+                            'width',
+                            value ? Number(value) : null,
+                          )
                         }
                       />
                     </div>
@@ -657,9 +725,16 @@ export default function ImageResizeTool() {
                         label={t.height}
                         type='number'
                         min={1}
-                        value={state.targetHeight != null ? String(state.targetHeight) : ''}
+                        value={
+                          state.targetHeight != null
+                            ? String(state.targetHeight)
+                            : ''
+                        }
                         onChange={value =>
-                          handleDimensionChange('height', value ? Number(value) : null)
+                          handleDimensionChange(
+                            'height',
+                            value ? Number(value) : null,
+                          )
                         }
                       />
                     </div>
@@ -689,7 +764,9 @@ export default function ImageResizeTool() {
                         onChange={e =>
                           setState(prev => ({
                             ...prev,
-                            selectedCategory: e.target.value as 'social' | 'web',
+                            selectedCategory: e.target.value as
+                              | 'social'
+                              | 'web',
                             selectedPresetKey: null,
                           }))
                         }
@@ -741,7 +818,9 @@ export default function ImageResizeTool() {
                             value={aspect}
                             current={state.shapeAspect}
                             label={aspect}
-                            onChange={val => handleShapeAspectChange(val as ShapeAspect)}
+                            onChange={val =>
+                              handleShapeAspectChange(val as ShapeAspect)
+                            }
                           />
                         ))}
                       </div>
@@ -870,7 +949,9 @@ export default function ImageResizeTool() {
                           <span className='flex items-center gap-2'>
                             <span
                               className={cn('rounded-lg', smallIconSizeClasses)}
-                              style={{ backgroundColor: getGridStroke(opt.value) }}
+                              style={{
+                                backgroundColor: getGridStroke(opt.value),
+                              }}
                             />
                             {opt.label}
                           </span>

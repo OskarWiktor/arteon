@@ -1,12 +1,14 @@
-import { flexCenterClasses } from '@/lib/ui-classes';
-import Shimmer from '../../atoms/skeletons/Shimmer';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import Shimmer from '../../atoms/skeletons/Shimmer';
 
 interface BreadcrumbsSkeletonProps {
   size?: 'default' | 'compact';
 }
 
-export default function BreadcrumbsSkeleton({ size = 'default' }: BreadcrumbsSkeletonProps) {
+export default function BreadcrumbsSkeleton({
+  size = 'default',
+}: BreadcrumbsSkeletonProps) {
   const isCompact = size === 'compact';
 
   return (

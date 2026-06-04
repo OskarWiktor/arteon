@@ -1,9 +1,4 @@
-import WorkSteps from '@/components/organisms/WorkSteps';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import CTABanner from '@/components/organisms/CTABanner';
-import Divider from '@/components/atoms/Divider';
-import SectionBento from '@/components/organisms/sections/SectionBento';
+import Script from 'next/script';
 import {
   RiPencilRuler2Line,
   RiBookletLine,
@@ -11,20 +6,25 @@ import {
   RiImageLine,
   RiMoneyDollarCircleLine,
 } from 'react-icons/ri';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { buildServiceSchema } from '@/lib/seo/serviceSchema';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 export const metadata = {
@@ -32,11 +32,13 @@ export const metadata = {
   description:
     'Katalog produktów lub usług z profesjonalnym składem DTP. Zdjęcia, typografia, układ i plik gotowy do druku.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu',
+    canonical:
+      'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu',
   },
   openGraph: {
     title: 'Projekt katalogu | Arteon',
-    description: 'Estetyczny i czytelny katalog firmowy. Wersje do druku i online.',
+    description:
+      'Estetyczny i czytelny katalog firmowy. Wersje do druku i online.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu',
     type: 'website',
     images: [
@@ -73,9 +75,10 @@ export default function OfferDesignCatalogPage() {
         title='Projekt katalogu'
         description={
           <>
-            Sprzedaż potrzebuje klarownej prezentacji oferty. Projektujemy katalogi z dopracowanym
-            składem DTP, zdjęciami i typografią - w wersji do druku i online - tak, aby klient
-            szybko zrozumiał ofertę i wiedział, jak zamówić.
+            Sprzedaż potrzebuje klarownej prezentacji oferty. Projektujemy
+            katalogi z dopracowanym składem DTP, zdjęciami i typografią - w
+            wersji do druku i online - tak, aby klient szybko zrozumiał ofertę i
+            wiedział, jak zamówić.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -89,32 +92,44 @@ export default function OfferDesignCatalogPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
-        fourth={{ href: `/uslugi/projekty-graficzne/projekt-katalogu`, label: 'Projekt katalogu' }}
+        third={{
+          href: `/uslugi/projekty-graficzne`,
+          label: 'Projekty graficzne',
+        }}
+        fourth={{
+          href: `/uslugi/projekty-graficzne/projekt-katalogu`,
+          label: 'Projekt katalogu',
+        }}
         includeJsonLd
       />
 
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Realizacje projektów graficznych' category='grafika' />
+        <ProjectsCarousel
+          title='Realizacje projektów graficznych'
+          category='grafika'
+        />
 
         <Divider line />
 
         <SectionInfo title='Co zyskujesz zamawiając projekt katalogu?'>
           <p>
-            <strong>Katalog porządkuje ofertę i prowadzi do kontaktu.</strong> Klient widzi produkty
-            lub usługi w jasnym układzie: sekcje, zdjęcia, najważniejsze dane i ceny. Znika chaos, a
-            pojawia się prosty wybór - „który wariant jest dla mnie”.
+            <strong>Katalog porządkuje ofertę i prowadzi do kontaktu.</strong>{' '}
+            Klient widzi produkty lub usługi w jasnym układzie: sekcje, zdjęcia,
+            najważniejsze dane i ceny. Znika chaos, a pojawia się prosty wybór -
+            „który wariant jest dla mnie”.
           </p>
 
           <br />
 
           <p>
-            <strong>Katalog działa zarówno online, jak i w druku.</strong> Dostajesz wersję do
-            wysyłki mailem (PDF) i pliki gotowe do druku. Materiały drukowane dłużej zostają w
-            pamięci niż przekaz wyłącznie cyfrowy (badanie Temple University / Canada Post, 2015).
-            Dobrze zaprojektowany katalog staje się „fizycznym dowodem” jakości Twojej marki.
+            <strong>Katalog działa zarówno online, jak i w druku.</strong>{' '}
+            Dostajesz wersję do wysyłki mailem (PDF) i pliki gotowe do druku.
+            Materiały drukowane dłużej zostają w pamięci niż przekaz wyłącznie
+            cyfrowy (badanie Temple University / Canada Post, 2015). Dobrze
+            zaprojektowany katalog staje się „fizycznym dowodem” jakości Twojej
+            marki.
           </p>
 
           <br />
@@ -124,18 +139,26 @@ export default function OfferDesignCatalogPage() {
           </p>
           <ul className='ml-5 list-disc'>
             <li>
-              Prezentuje produkty lub usługi w logicznym porządku, bez „gubienia się” w szczegółach,
+              Prezentuje produkty lub usługi w logicznym porządku, bez „gubienia
+              się” w szczegółach,
             </li>
-            <li>Ułatwia decyzję dzięki czytelnym kartom, cenom i wyróżnionym rekomendacjom,</li>
-            <li>Kieruje do zamówienia: kontaktu z handlowcem, strony www lub sklepu online.</li>
+            <li>
+              Ułatwia decyzję dzięki czytelnym kartom, cenom i wyróżnionym
+              rekomendacjom,
+            </li>
+            <li>
+              Kieruje do zamówienia: kontaktu z handlowcem, strony www lub
+              sklepu online.
+            </li>
           </ul>
 
           <br />
 
           <p>
-            Z perspektywy sprzedaży katalog to narzędzie, które można zabrać na spotkanie, targi,
-            event albo po prostu wysłać mailem - za każdym razem pracuje dla Ciebie tak samo,
-            niezależnie od nastroju handlowca.
+            Z perspektywy sprzedaży katalog to narzędzie, które można zabrać na
+            spotkanie, targi, event albo po prostu wysłać mailem - za każdym
+            razem pracuje dla Ciebie tak samo, niezależnie od nastroju
+            handlowca.
           </p>
         </SectionInfo>
 
@@ -149,47 +172,72 @@ export default function OfferDesignCatalogPage() {
               title: 'Klarowna prezentacja oferty',
               description: (
                 <>
-                  Układ, który ułatwia odbiorcy zrozumienie produktów, usług i różnic między
-                  pakietami - bez zgadywania i szukania drobnego druku.
+                  Układ, który ułatwia odbiorcy zrozumienie produktów, usług i
+                  różnic między pakietami - bez zgadywania i szukania drobnego
+                  druku.
                 </>
               ),
-              icon: <RiBookletLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBookletLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Dopracowane zdjęcia i typografia',
               description: (
                 <>
-                  Dbamy o spójność zdjęć, czytelne podpisy i hierarchię nagłówków, aby katalog był
-                  lekki w odbiorze, nawet przy dużej liczbie stron.
+                  Dbamy o spójność zdjęć, czytelne podpisy i hierarchię
+                  nagłówków, aby katalog był lekki w odbiorze, nawet przy dużej
+                  liczbie stron.
                 </>
               ),
-              icon: <RiImageLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiImageLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Wersja drukowana i cyfrowa',
               description: (
                 <>
-                  Dostarczamy katalog gotowy do druku oraz wygodną wersję do udostępniania online -
-                  idealną do mailingu i oferty PDF.
+                  Dostarczamy katalog gotowy do druku oraz wygodną wersję do
+                  udostępniania online - idealną do mailingu i oferty PDF.
                 </>
               ),
-              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileTextLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Wspólne dopracowanie szczegółów',
               description: (
                 <>
-                  W cenie przewidujemy poprawki. Razem ustalamy układ, kolejność sekcji, wyróżniki
-                  ofertowe i sposób prezentacji cen.
+                  W cenie przewidujemy poprawki. Razem ustalamy układ, kolejność
+                  sekcji, wyróżniki ofertowe i sposób prezentacji cen.
                 </>
               ),
-              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiPencilRuler2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Faktura po realizacji',
-              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              description: (
+                <>
+                  Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
+                  formie.
+                </>
+              ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
           ]}
@@ -202,32 +250,43 @@ export default function OfferDesignCatalogPage() {
           subtitle='Kiedy inwestycja zwraca się najszybciej?'
         >
           <p>
-            Katalog najlepiej sprawdza się tam, gdzie oferta ma wiele pozycji lub wariantów, a
-            klient potrzebuje ich porównania w jednym miejscu. Im większa złożoność oferty, tym
-            mocniej rośnie znaczenie dobrego składu DTP.
+            Katalog najlepiej sprawdza się tam, gdzie oferta ma wiele pozycji
+            lub wariantów, a klient potrzebuje ich porównania w jednym miejscu.
+            Im większa złożoność oferty, tym mocniej rośnie znaczenie dobrego
+            składu DTP.
           </p>
 
           <br />
 
           <ul className='ml-5 list-disc space-y-2'>
-            <li>Firmy produktowe - producenci, hurtownie, sklepy z szerokim asortymentem.</li>
-            <li>Branże B2B - usługi techniczne, systemy, rozwiązania modułowe, konfiguracje.</li>
             <li>
-              Biura projektowe, deweloperzy, firmy budowlane - portfolio realizacji i pakiety.
+              Firmy produktowe - producenci, hurtownie, sklepy z szerokim
+              asortymentem.
             </li>
-            <li>Marki lifestyle, beauty, fashion - kolekcje, linie produktów, zestawy usług.</li>
             <li>
-              Organizatorzy szkoleń i usług doradczych - pakiety, poziomy wsparcia, cenniki w jednym
-              materiale.
+              Branże B2B - usługi techniczne, systemy, rozwiązania modułowe,
+              konfiguracje.
+            </li>
+            <li>
+              Biura projektowe, deweloperzy, firmy budowlane - portfolio
+              realizacji i pakiety.
+            </li>
+            <li>
+              Marki lifestyle, beauty, fashion - kolekcje, linie produktów,
+              zestawy usług.
+            </li>
+            <li>
+              Organizatorzy szkoleń i usług doradczych - pakiety, poziomy
+              wsparcia, cenniki w jednym materiale.
             </li>
           </ul>
 
           <br />
 
           <p>
-            Jeśli masz poczucie, że Twoja oferta „nie mieści się na jednej stronie” - katalog jest
-            często najbardziej czytelną formą, jaką możesz pokazać klientowi przed rozmową o
-            szczegółach.
+            Jeśli masz poczucie, że Twoja oferta „nie mieści się na jednej
+            stronie” - katalog jest często najbardziej czytelną formą, jaką
+            możesz pokazać klientowi przed rozmową o szczegółach.
           </p>
         </SectionInfo>
 
@@ -356,19 +415,22 @@ export default function OfferDesignCatalogPage() {
               backgroundImage:
                 '/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Strony internetowe',
               size: 'medium',
-              backgroundImage: '/assets/projects/autokorfu/mockup-strony-auto-korfu.webp',
+              backgroundImage:
+                '/assets/projects/autokorfu/mockup-strony-auto-korfu.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Projekt wizytówki',
               size: 'small',
-              backgroundImage: '/assets/projects/restoquality/mockup-wizytowki-restoquality.webp',
+              backgroundImage:
+                '/assets/projects/restoquality/mockup-wizytowki-restoquality.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },

@@ -28,7 +28,11 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Encode images to Base64 format. Copy ready code for CSS or HTML. Free, no registration.",
-      "featureList": ["image to Base64 conversion", "Batch conversion", "Local browser processing"],
+      "featureList": [
+        "image to Base64 conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
       "alternateName": [
         "Convert image to Base64",
         "image to Base64",

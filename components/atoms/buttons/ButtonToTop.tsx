@@ -3,8 +3,8 @@
 import { useEffect, useState } from 'react';
 import { RiArrowUpLine } from 'react-icons/ri';
 import { useEventListener } from '@/hooks/useEventListener';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import ButtonCircle from './ButtonCircle';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
 
 interface ButtonToTop {
   targetId?: string;
@@ -24,19 +24,19 @@ export default function ButtonToTop({
   useEventListener(
     typeof window !== 'undefined' ? window : null,
     'scroll',
-    () => setVisible(window.scrollY > showAfter),
+    () => setVisible(scrollY > showAfter),
     PASSIVE_SCROLL,
     true,
   );
 
   useEffect(() => {
-    setVisible(window.scrollY > showAfter);
+    setVisible(scrollY > showAfter);
   }, [showAfter]);
 
   const scrollToTarget = () => {
     const el = document.getElementById(targetId);
-    const top = el ? el.getBoundingClientRect().top + window.scrollY : 0;
-    window.scrollTo({ top, behavior: 'smooth' });
+    const top = el ? el.getBoundingClientRect().top + scrollY : 0;
+    scrollTo({ top, behavior: 'smooth' });
   };
 
   if (!visible) return null;

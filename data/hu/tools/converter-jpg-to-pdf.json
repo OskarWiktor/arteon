@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "JPG képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.",
-      "featureList": ["JPG to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert JPG to PDF", "JPG to PDF", "Free JPG to PDF converter"]
+      "featureList": [
+        "JPG to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert JPG to PDF",
+        "JPG to PDF",
+        "Free JPG to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Hogyan konvertáljuk JPG-t PDF-vé",

@@ -3,20 +3,35 @@
 import { useState } from 'react';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
+import Card from '@/components/organisms/Card';
+import { ui } from '@/lib/i18n/tools/metaTitle';
+import { useLocale } from '@/lib/LocaleContext';
 import {
   analyzeMetaDescription,
   analyzeMetaTitle,
   truncateForPreview,
   type FieldMetrics,
-} from '@/lib/tools/seo/metaLength';
-import { getStatusClasses } from '@/utils/statusClasses';
-import { useLocale } from '@/lib/LocaleContext';
-import { ui } from '@/lib/i18n/tools/meta-title';
-import Textarea from '@/components/atoms/form/Textarea';
-import Input from '@/components/atoms/form/Input';
-import Card from '@/components/organisms/Card';
+} from '@/lib/tools/metaLength';
+import { flexCenterClasses, largeIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import { flexCenterClasses, largeIconSizeClasses } from '@/lib/ui-classes';
+import Input from '@/components/atoms/form/Input';
+import Textarea from '@/components/atoms/form/Textarea';
+
+type LengthStatus = 'empty' | 'too-short' | 'ideal' | 'too-long';
+
+function getStatusClasses(status: LengthStatus): string {
+  switch (status) {
+    case 'ideal':
+      return 'bg-success-bg text-success-text border-success-border';
+    case 'too-short':
+      return 'bg-warning-bg text-warning-text border-warning-border';
+    case 'too-long':
+      return 'bg-error-bg text-error-text border-error-border';
+    case 'empty':
+    default:
+      return 'bg-neutral-100 text-mid border-neutral-200';
+  }
+}
 
 type UiTexts = { [K in keyof (typeof ui)['pl']]: string };
 
@@ -40,27 +55,56 @@ function analyzeTitle(text: string, t: UiTexts): FieldAnalysis {
     return { ...metrics, statusLabel: t.tooLong, helperText: t.titleTooLong };
   }
 
-  return { ...metrics, statusLabel: t.goodLength, helperText: t.titleGoodLength };
+  return {
+    ...metrics,
+    statusLabel: t.goodLength,
+    helperText: t.titleGoodLength,
+  };
 }
 
 function analyzeDescription(text: string, t: UiTexts): FieldAnalysis {
   const metrics = analyzeMetaDescription(text);
 
   if (metrics.status === 'empty') {
-    return { ...metrics, statusLabel: t.noData, helperText: t.enterDescription };
+    return {
+      ...metrics,
+      statusLabel: t.noData,
+      helperText: t.enterDescription,
+    };
   }
 
   if (metrics.status === 'too-short') {
-    return { ...metrics, statusLabel: t.tooShort, helperText: t.descriptionTooShort };
+    return {
+      ...metrics,
+      statusLabel: t.tooShort,
+      helperText: t.descriptionTooShort,
+    };
   }
 
   if (metrics.status === 'too-long') {
-    return { ...metrics, statusLabel: t.tooLong, helperText: t.descriptionTooLong };
+    return {
+      ...metrics,
+      statusLabel: t.tooLong,
+      helperText: t.descriptionTooLong,
+    };
   }
 
-  return { ...metrics, statusLabel: t.goodLength, helperText: t.descriptionGoodLength };
+  return {
+    ...metrics,
+    statusLabel: t.goodLength,
+    helperText: t.descriptionGoodLength,
+  };
 }
 
+/**
+ * Renders a client-side UI for editing and previewing a page meta title and description.
+ *
+ * Maintains local state for title, description, and URL, displays editable inputs with live
+ * length/width metrics and status badges, and shows a styled search-engine preview that updates
+ * as the user types. Text is localized based on the current locale.
+ *
+ * @returns The component's rendered JSX for the meta title/description editor and preview.
+ */
 export default function MetaTitleDescriptionTool() {
   const locale = useLocale();
   const t = ui[locale];
@@ -72,7 +116,10 @@ export default function MetaTitleDescriptionTool() {
   const descriptionAnalysis = analyzeDescription(description, t);
 
   const previewTitle = truncateForPreview(title || t.exampleTitle, 65);
-  const previewDescription = truncateForPreview(description || t.exampleDescription, 165);
+  const previewDescription = truncateForPreview(
+    description || t.exampleDescription,
+    165,
+  );
 
   return (
     <>
@@ -117,7 +164,9 @@ export default function MetaTitleDescriptionTool() {
                   getStatusClasses(titleAnalysis.status),
                 )}
               >
-                {titleAnalysis.status === 'empty' ? t.noTitle : titleAnalysis.statusLabel}
+                {titleAnalysis.status === 'empty'
+                  ? t.noTitle
+                  : titleAnalysis.statusLabel}
               </span>
             </div>
           </ToolFieldRow>
@@ -130,7 +179,7 @@ export default function MetaTitleDescriptionTool() {
             <Textarea
               value={description}
               onChange={e => setDescription(e.target.value)}
-              className='min-h-[110px] resize-y'
+              className='min-h-27.5 resize-y'
               placeholder={t.descriptionPlaceholder}
               maxLength={400}
             />
@@ -170,7 +219,7 @@ export default function MetaTitleDescriptionTool() {
             <div className='flex gap-3'>
               <div
                 className={cn(
-                  'h-12 w-12 flex-shrink-0 rounded-lg border border-neutral-300 bg-white p-1',
+                  'h-12 w-12 shrink-0 rounded-lg border border-neutral-300 bg-white p-1',
                   flexCenterClasses,
                 )}
               >
@@ -182,10 +231,12 @@ export default function MetaTitleDescriptionTool() {
               </div>
 
               <div className='min-w-0 flex-1'>
-                <p className='text-xs text-neutral-600'>Arteon</p>
+                <p className='text-xs'>Arteon</p>
 
                 <div className='flex items-center gap-1'>
-                  <p className='truncate text-[13px]! text-mid'>{url || t.urlPlaceholder}</p>
+                  <p className='truncate text-[13px]!'>
+                    {url || t.urlPlaceholder}
+                  </p>
                   <div className='ml-3 flex flex-col gap-0.5'>
                     <div className='h-0.5 w-0.5 rounded-lg bg-neutral-500'></div>
                     <div className='h-0.5 w-0.5 rounded-lg bg-neutral-500'></div>
@@ -196,11 +247,11 @@ export default function MetaTitleDescriptionTool() {
             </div>
 
             <div className='mt-2'>
-              <p className='line-clamp-2 text-[22px]! leading-tight font-[500]! text-blue-900'>
+              <p className='line-clamp-2 text-[22px]! leading-tight font-medium! text-blue-900'>
                 {previewTitle}
               </p>
 
-              <p className='mt-1 line-clamp-3 text-[14px]! leading-snug font-medium text-neutral-700'>
+              <p className='mt-1 line-clamp-3 text-[14px]! leading-snug font-medium'>
                 {previewDescription}
               </p>
             </div>

@@ -1,11 +1,11 @@
-import HeroBannerSkeleton from './HeroBannerSkeleton';
 import BreadcrumbsSkeleton from './BreadcrumbsSkeleton';
 import CarouselSkeleton from './CarouselSkeleton';
+import CTABannerSkeleton from './CTABannerSkeleton';
 import FaqSkeleton from './FaqSkeleton';
 import DividerSkeleton from './GapSkeleton';
-import CTABannerSkeleton from './CTABannerSkeleton';
-import Card from '../Card';
+import HeroBannerSkeleton from './HeroBannerSkeleton';
 import Shimmer from '../../atoms/skeletons/Shimmer';
+import Card from '../Card';
 
 export default function ProjectDetailSkeleton() {
   return (
@@ -32,7 +32,11 @@ export default function ProjectDetailSkeleton() {
             <Shimmer className='h-4 w-5/6' />
           </div>
           <aside className='hidden lg:block'>
-            <Card interactive={false} variant='outlined' className='sticky top-24 space-y-3'>
+            <Card
+              interactive={false}
+              variant='outlined'
+              className='sticky top-24 space-y-3'
+            >
               <Shimmer className='h-5 w-3/4' />
               {Array.from({ length: 6 }).map((_, i) => (
                 <Shimmer key={i} className='h-3.5 w-full' />

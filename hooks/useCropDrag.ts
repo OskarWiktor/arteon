@@ -44,7 +44,9 @@ type UseCropDragOptions<State extends CropStateLike> = {
   setActiveTool: Dispatch<SetStateAction<ActiveTool>>;
 };
 
-export function useCropDrag<State extends CropStateLike>(options: UseCropDragOptions<State>) {
+export function useCropDrag<State extends CropStateLike>(
+  options: UseCropDragOptions<State>,
+) {
   const {
     imageUrl,
     originalWidth,
@@ -281,11 +283,19 @@ export function useCropDrag<State extends CropStateLike>(options: UseCropDragOpt
       const minCenterY = halfH;
       const maxCenterY = oh - halfH;
 
-      const clampedCenterX = Math.min(maxCenterX, Math.max(minCenterX, centerX));
-      const clampedCenterY = Math.min(maxCenterY, Math.max(minCenterY, centerY));
+      const clampedCenterX = Math.min(
+        maxCenterX,
+        Math.max(minCenterX, centerX),
+      );
+      const clampedCenterY = Math.min(
+        maxCenterY,
+        Math.max(minCenterY, centerY),
+      );
 
-      const nextCropX = (clampedCenterX - minCenterX) / (maxCenterX - minCenterX || 1);
-      const nextCropY = (clampedCenterY - minCenterY) / (maxCenterY - minCenterY || 1);
+      const nextCropX =
+        (clampedCenterX - minCenterX) / (maxCenterX - minCenterX || 1);
+      const nextCropY =
+        (clampedCenterY - minCenterY) / (maxCenterY - minCenterY || 1);
 
       setState(prev => ({
         ...prev,

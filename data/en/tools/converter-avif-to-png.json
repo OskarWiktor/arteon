@@ -207,7 +207,10 @@
         },
         {
           "label": "Web browser support",
-          "values": ["Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+", "All browsers"]
+          "values": [
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "All browsers"
+          ]
         },
         {
           "label": "Color depth",

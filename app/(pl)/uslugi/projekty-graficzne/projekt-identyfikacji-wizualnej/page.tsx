@@ -1,9 +1,4 @@
-import WorkSteps from '@/components/organisms/WorkSteps';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import CTABanner from '@/components/organisms/CTABanner';
-import Divider from '@/components/atoms/Divider';
-import SectionBento from '@/components/organisms/sections/SectionBento';
+import Script from 'next/script';
 import {
   RiBookOpenLine,
   RiFileTextLine,
@@ -11,20 +6,25 @@ import {
   RiPantoneLine,
   RiMoneyDollarCircleLine,
 } from 'react-icons/ri';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { buildServiceSchema } from '@/lib/seo/serviceSchema';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 export const metadata = {
@@ -62,7 +62,10 @@ function ServiceSchema() {
   });
 
   return (
-    <Script id='schema-service-projekt-identyfikacji-wizualnej' type='application/ld+json'>
+    <Script
+      id='schema-service-projekt-identyfikacji-wizualnej'
+      type='application/ld+json'
+    >
       {JSON.stringify(json)}
     </Script>
   );
@@ -75,9 +78,10 @@ export default function OfferDesignBrandIdentityDesignPage() {
         title='Projekt identyfikacji wizualnej'
         description={
           <>
-            Spójny system wizualny zwiększa wiarygodność i rozpoznawalność marki. Zaprojektujemy
-            identyfikację: logo, kolory, typografię i materiały firmowe - tak, aby Twoja marka
-            wyglądała profesjonalnie w każdym kanale.
+            Spójny system wizualny zwiększa wiarygodność i rozpoznawalność
+            marki. Zaprojektujemy identyfikację: logo, kolory, typografię i
+            materiały firmowe - tak, aby Twoja marka wyglądała profesjonalnie w
+            każdym kanale.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -91,7 +95,10 @@ export default function OfferDesignBrandIdentityDesignPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
+        third={{
+          href: `/uslugi/projekty-graficzne`,
+          label: 'Projekty graficzne',
+        }}
         fourth={{
           href: `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`,
           label: 'Projekt identyfikacji wizualnej',
@@ -102,14 +109,19 @@ export default function OfferDesignBrandIdentityDesignPage() {
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Realizacje projektów graficznych' category='grafika' />
+        <ProjectsCarousel
+          title='Realizacje projektów graficznych'
+          category='grafika'
+        />
 
         <Divider line />
 
         <SectionInfo title='Co zyskujesz zamawiając identyfikację wizualną?'>
           <p>
-            <strong>Spójny system wizualny porządkuje każdy kontakt z Twoją marką.</strong> Firmy,
-            które konsekwentnie trzymają identyfikację, notują średnio
+            <strong>
+              Spójny system wizualny porządkuje każdy kontakt z Twoją marką.
+            </strong>{' '}
+            Firmy, które konsekwentnie trzymają identyfikację, notują średnio
             <strong> 10-20% wyższe przychody</strong>
             <a
               href='https://www.marq.com/blog/brand-consistency-competitive-advantage'
@@ -119,14 +131,16 @@ export default function OfferDesignBrandIdentityDesignPage() {
             >
               (źródło)
             </a>
-            . Ten sam styl działa na stronie, w ofertach, w druku i w mediach społecznościowych.
+            . Ten sam styl działa na stronie, w ofertach, w druku i w mediach
+            społecznościowych.
           </p>
 
           <br />
 
           <p>
-            <strong>Jakość oprawy przekłada się na zaufanie.</strong> Nawet <strong>~75%</strong>{' '}
-            odbiorców ocenia wiarygodność firmy po wyglądzie materiałów i strony
+            <strong>Jakość oprawy przekłada się na zaufanie.</strong> Nawet{' '}
+            <strong>~75%</strong> odbiorców ocenia wiarygodność firmy po
+            wyglądzie materiałów i strony
             <a
               href='https://credibility.stanford.edu/guidelines/index.html'
               target='_blank'
@@ -135,14 +149,16 @@ export default function OfferDesignBrandIdentityDesignPage() {
             >
               (źródło)
             </a>
-            . Czytelna typografia i porządek wizualny ułatwiają decyzję o kontakcie i współpracy.
+            . Czytelna typografia i porządek wizualny ułatwiają decyzję o
+            kontakcie i współpracy.
           </p>
 
           <br />
 
           <p>
-            <strong>Kolor i konsekwencja zwiększają rozpoznawalność.</strong> Zastosowanie spójnych
-            barw potrafi podnieść zapamiętywanie marki nawet o <strong>~80%</strong>
+            <strong>Kolor i konsekwencja zwiększają rozpoznawalność.</strong>{' '}
+            Zastosowanie spójnych barw potrafi podnieść zapamiętywanie marki
+            nawet o <strong>~80%</strong>
             <a
               href='https://www.xerox.com/en-us/insights/color'
               target='_blank'
@@ -151,26 +167,32 @@ export default function OfferDesignBrandIdentityDesignPage() {
             >
               (źródło)
             </a>
-            . Klient szybciej kojarzy, z kim rozmawia i łatwiej wraca do Twojej oferty.
+            . Klient szybciej kojarzy, z kim rozmawia i łatwiej wraca do Twojej
+            oferty.
           </p>
 
           <br />
 
           <p>
-            <strong>Dobra identyfikacja wizualna robi za Ciebie trzy rzeczy naraz:</strong>
+            <strong>
+              Dobra identyfikacja wizualna robi za Ciebie trzy rzeczy naraz:
+            </strong>
           </p>
           <ul className='ml-5 list-disc'>
             <li>Ujednolica komunikację w całej firmie,</li>
-            <li>Przyspiesza tworzenie materiałów i zmniejsza liczbę poprawek,</li>
+            <li>
+              Przyspiesza tworzenie materiałów i zmniejsza liczbę poprawek,
+            </li>
             <li>Podnosi rozpoznawalność i ułatwia budowanie zaufania.</li>
           </ul>
 
           <br />
 
           <p>
-            Zamiast za każdym razem wymyślać „jak to ma wyglądać”, korzystasz z gotowego systemu.
-            Dzięki temu oszczędzasz czas swój i zespołu, a marka pozostaje spójna niezależnie od
-            tego, kto przygotowuje kolejne materiały.
+            Zamiast za każdym razem wymyślać „jak to ma wyglądać”, korzystasz z
+            gotowego systemu. Dzięki temu oszczędzasz czas swój i zespołu, a
+            marka pozostaje spójna niezależnie od tego, kto przygotowuje kolejne
+            materiały.
           </p>
         </SectionInfo>
 
@@ -184,47 +206,70 @@ export default function OfferDesignBrandIdentityDesignPage() {
               title: 'Spójny system marki',
               description: (
                 <>
-                  Projektujemy logo, kolory i typografię tak, aby wszystkie materiały - online i
-                  offline - działały razem.
+                  Projektujemy logo, kolory i typografię tak, aby wszystkie
+                  materiały - online i offline - działały razem.
                 </>
               ),
-              icon: <RiPantoneLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiPantoneLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Materiały do codziennej komunikacji',
               description: (
                 <>
-                  Przygotowujemy podstawowe wzory: wizytówki, papiery firmowe i grafiki do
-                  prezentacji marki.
+                  Przygotowujemy podstawowe wzory: wizytówki, papiery firmowe i
+                  grafiki do prezentacji marki.
                 </>
               ),
-              icon: <RiIdCardLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiIdCardLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Proste zasady stosowania',
               description: (
                 <>
-                  Dostajesz krótkie wytyczne, które ułatwiają wdrożenie identyfikacji w całej firmie
-                  - także osobom nietechnicznym.
+                  Dostajesz krótkie wytyczne, które ułatwiają wdrożenie
+                  identyfikacji w całej firmie - także osobom nietechnicznym.
                 </>
               ),
-              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBookOpenLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Pełna gotowość do druku i online',
               description: (
                 <>
-                  Otrzymujesz komplet plików do codziennej pracy: wersje do druku, internetu i
-                  mediów społecznościowych.
+                  Otrzymujesz komplet plików do codziennej pracy: wersje do
+                  druku, internetu i mediów społecznościowych.
                 </>
               ),
-              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileTextLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Faktura po realizacji',
-              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              description: (
+                <>
+                  Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
+                  formie.
+                </>
+              ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
           ]}
@@ -237,37 +282,43 @@ export default function OfferDesignBrandIdentityDesignPage() {
           subtitle='Kiedy warto w nią zainwestować?'
         >
           <p>
-            Projekt identyfikacji wizualnej szczególnie przydaje się wtedy, gdy chcesz świadomie
-            ułożyć obraz marki na lata, a nie tylko zaprojektować pojedyncze logo czy wizytówkę.
+            Projekt identyfikacji wizualnej szczególnie przydaje się wtedy, gdy
+            chcesz świadomie ułożyć obraz marki na lata, a nie tylko
+            zaprojektować pojedyncze logo czy wizytówkę.
           </p>
 
           <br />
 
           <ul className='ml-5 list-disc space-y-2'>
-            <li>Zakładasz firmę i chcesz od początku zbudować spójny, profesjonalny wizerunek.</li>
             <li>
-              Masz już logo, ale materiały „żyją własnym życiem” i brakuje jednego kierunku dla
-              całej komunikacji.
+              Zakładasz firmę i chcesz od początku zbudować spójny,
+              profesjonalny wizerunek.
             </li>
             <li>
-              Planujesz stronę internetową, kampanie reklamowe lub wejście na nowy rynek i
-              potrzebujesz wyraźnego, rozpoznawalnego stylu.
+              Masz już logo, ale materiały „żyją własnym życiem” i brakuje
+              jednego kierunku dla całej komunikacji.
             </li>
             <li>
-              Twój zespół lub podwykonawcy często pytają „czy mogę użyć tego koloru / fontu?” -
-              chcesz jasnych zasad, zamiast ciągłego ustalania detali.
+              Planujesz stronę internetową, kampanie reklamowe lub wejście na
+              nowy rynek i potrzebujesz wyraźnego, rozpoznawalnego stylu.
             </li>
             <li>
-              Przygotowujesz markę ekspercką (np. gabinet, kancelaria, marka osobista) i zależy Ci
-              na zaufaniu już przy pierwszym kontakcie.
+              Twój zespół lub podwykonawcy często pytają „czy mogę użyć tego
+              koloru / fontu?” - chcesz jasnych zasad, zamiast ciągłego
+              ustalania detali.
+            </li>
+            <li>
+              Przygotowujesz markę ekspercką (np. gabinet, kancelaria, marka
+              osobista) i zależy Ci na zaufaniu już przy pierwszym kontakcie.
             </li>
           </ul>
 
           <br />
 
           <p>
-            Jeśli masz poczucie, że Twoja marka „jest dobra w środku”, ale na zewnątrz nie wygląda
-            jeszcze tak, jak powinna - identyfikacja wizualna jest naturalnym kolejnym krokiem.
+            Jeśli masz poczucie, że Twoja marka „jest dobra w środku”, ale na
+            zewnątrz nie wygląda jeszcze tak, jak powinna - identyfikacja
+            wizualna jest naturalnym kolejnym krokiem.
           </p>
         </SectionInfo>
 
@@ -378,7 +429,8 @@ export default function OfferDesignBrandIdentityDesignPage() {
                 'Tak, przekazujemy pliki źródłowe, wersje do druku, internetu i mediów społecznościowych, tak, abyś miał pełny dostęp do wszystkich materiałów z możliwością edycji w dowolnym momencie.',
             },
             {
-              question: 'Czy mogę liczyć na doradztwo w wyborze stylu identyfikacji?',
+              question:
+                'Czy mogę liczyć na doradztwo w wyborze stylu identyfikacji?',
               answer:
                 'Tak, przed rozpoczęciem pracy, analizujemy Twoją branżę i Twoją ofertę, przygotowujemy propozycje stylistyczne i moodboardy, omawiamy plusy i minusy różnych kierunków, a następnie wspólnie wybieramy kierunek najlepiej dopasowany do Twojej grupy docelowej.',
             },
@@ -398,21 +450,24 @@ export default function OfferDesignBrandIdentityDesignPage() {
             {
               title: 'Strony internetowe',
               size: 'large',
-              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              backgroundImage:
+                '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Sklepy internetowe',
               size: 'medium',
-              backgroundImage: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              backgroundImage:
+                '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
               title: 'Projekt wizytówki',
               size: 'small',
-              backgroundImage: '/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp',
+              backgroundImage:
+                '/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },

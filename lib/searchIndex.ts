@@ -1,12 +1,16 @@
 import { OFFER_SECTIONS_PL } from '@/data/pl/navigation-data-pl';
 import searchBlog from '@/data/pl/search-blog.json';
 import searchProjects from '@/data/pl/search-projects.json';
-import { slugify } from '@/utils/slugify';
-import { getToolsList } from '@/lib/i18n/tool-registry';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
-
+import { getToolsList } from '@/lib/i18n/toolRegistry';
 import type { Locale } from '@/types/locale';
-export type SearchCategory = 'uslugi' | 'narzedzia' | 'edukacja' | 'realizacje' | 'inne';
+import { slugify } from '@/utils/slugify';
+export type SearchCategory =
+  | 'uslugi'
+  | 'narzedzia'
+  | 'edukacja'
+  | 'realizacje'
+  | 'inne';
 
 export type SearchItem = {
   title: string;
@@ -17,7 +21,13 @@ export type SearchItem = {
   keywords?: string[];
 };
 
-type SearchBlogEntry = { s: string; t: string; e: string; c: string; k: string[] };
+type SearchBlogEntry = {
+  s: string;
+  t: string;
+  e: string;
+  c: string;
+  k: string[];
+};
 type SearchProjectEntry = { s: string; t: string; d: string; k: string[] };
 
 // ---------------------------------------------------------------------------
@@ -27,7 +37,8 @@ type SearchProjectEntry = { s: string; t: string; d: string; k: string[] };
 const STATIC_PAGES_PL: SearchItem[] = [
   {
     title: 'Strona główna',
-    description: 'Arteon - strony internetowe, sklepy, marketing i projekty graficzne',
+    description:
+      'Arteon - strony internetowe, sklepy, marketing i projekty graficzne',
     href: '/',
     category: 'inne',
     categoryLabel: 'Strony',
@@ -43,7 +54,8 @@ const STATIC_PAGES_PL: SearchItem[] = [
   },
   {
     title: 'Usługi',
-    description: 'Oferta usług - witryny, marketing, projekty graficzne, treści',
+    description:
+      'Oferta usług - witryny, marketing, projekty graficzne, treści',
     href: '/uslugi',
     category: 'uslugi',
     categoryLabel: 'Usługi',
@@ -328,7 +340,8 @@ export function searchItems(
 
       for (const term of terms) {
         if (titleLower.includes(term)) {
-          score += titleLower === term ? 100 : titleLower.startsWith(term) ? 50 : 20;
+          score +=
+            titleLower === term ? 100 : titleLower.startsWith(term) ? 50 : 20;
         }
         if (descLower.includes(term)) {
           score += 10;
@@ -348,7 +361,9 @@ export function searchItems(
   return scored;
 }
 
-export function groupSearchResults(items: SearchItem[]): Record<SearchCategory, SearchItem[]> {
+export function groupSearchResults(
+  items: SearchItem[],
+): Record<SearchCategory, SearchItem[]> {
   const groups: Record<SearchCategory, SearchItem[]> = {
     uslugi: [],
     narzedzia: [],

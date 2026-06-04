@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Przelicznik mm na piksele (DPI) – milimetry na px do druku",
-      "alternateName": ["Przelicznik mm na px", "Kalkulator mm na piksele", "mm to pixels DPI"],
+      "alternateName": [
+        "Przelicznik mm na px",
+        "Kalkulator mm na piksele",
+        "mm to pixels DPI"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz milimetry na piksele z regulowanym DPI – wizytówka 85 x 55 mm to 1004 x 650 px przy 300 DPI. Niezbędny w poligrafii i Photoshopie. Bez rejestracji.",

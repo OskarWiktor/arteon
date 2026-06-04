@@ -1,4 +1,13 @@
-export type ImageFormat = 'jpg' | 'png' | 'webp' | 'gif' | 'bmp' | 'svg' | 'avif' | 'heic' | 'tiff';
+export type ImageFormat =
+  | 'jpg'
+  | 'png'
+  | 'webp'
+  | 'gif'
+  | 'bmp'
+  | 'svg'
+  | 'avif'
+  | 'heic'
+  | 'tiff';
 export type OutputFormat = 'jpg' | 'png' | 'webp' | 'avif' | 'gif' | 'tiff';
 
 export type ConversionFileStatus = 'pending' | 'processing' | 'done' | 'error';

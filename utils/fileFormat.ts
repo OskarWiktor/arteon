@@ -2,7 +2,7 @@ export function getFileFormatLabel(file: File | null | undefined) {
   if (!file) return null;
 
   const name = file.name;
-  const extMatch = name.match(/\.([^.]+)$/);
+  const extMatch = /\.([^.]+)$/.exec(name);
   if (extMatch && extMatch[1]) return extMatch[1].toUpperCase();
 
   if (file.type && file.type.includes('/')) {

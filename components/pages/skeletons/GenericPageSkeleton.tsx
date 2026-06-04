@@ -1,16 +1,16 @@
-import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
 import BenefitBeltSkeleton from '../../organisms/skeletons/BenefitBeltSkeleton';
 import CarouselSkeleton from '../../organisms/skeletons/CarouselSkeleton';
-import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
-import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
 import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
+import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
+import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
+import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
 
 export default function GenericPageSkeleton() {
   return (
     <>
       <HeroBannerSkeleton />
       <BenefitBeltSkeleton />
-      <div className='m-auto w-[94%] max-w-[1420px] 2xl:max-w-none'>
+      <div className='m-auto w-[94%] max-w-355 2xl:max-w-none'>
         <DividerSkeleton variant='space' />
         <CarouselSkeleton variant='project' />
         <DividerSkeleton variant='line' />

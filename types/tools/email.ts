@@ -61,7 +61,13 @@ export type ActivePanel =
   | 'spacing'
   | 'legal';
 
-export type TextElementKey = 'name' | 'jobTitle' | 'company' | 'contact' | 'socials' | 'legal';
+export type TextElementKey =
+  | 'name'
+  | 'jobTitle'
+  | 'company'
+  | 'contact'
+  | 'socials'
+  | 'legal';
 
 export interface TextElementStyle {
   color: string | null;

@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { buildWebpConversionReportText } from '@/lib/tools/image/webpReport';
 import type { WebpQueueItem } from '@/lib/tools/image/webpQueue';
+import { buildWebpConversionReportText } from '@/lib/tools/image/webpReport';
 
 type UseWebpReportCopyLabels = {
   clipboardNotSupported: string;
@@ -41,7 +41,10 @@ export function useWebpReportCopy(options: UseWebpReportCopyOptions) {
     }
 
     const text = buildWebpConversionReportText(
-      converted.map(f => ({ inputSize: f.inputSize, outputSize: f.outputSize })),
+      converted.map(f => ({
+        inputSize: f.inputSize,
+        outputSize: f.outputSize,
+      })),
       {
         conversionReport: options.labels.conversionReport,
         fileCount: options.labels.fileCount,
@@ -55,7 +58,9 @@ export function useWebpReportCopy(options: UseWebpReportCopyOptions) {
     );
 
     const ok = await options.copy(text);
-    setCopyInfo(ok ? options.labels.reportCopied : options.labels.reportCopyError);
+    setCopyInfo(
+      ok ? options.labels.reportCopied : options.labels.reportCopyError,
+    );
   };
 
   return { copyInfo, setCopyInfo, handleCopySummary };

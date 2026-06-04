@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convertește XML în format JSON. Parsare și formatare automată. Gratuit.",
-      "featureList": ["XML to JSON conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert XML to JSON", "XML to JSON", "Free XML to JSON converter"]
+      "featureList": [
+        "XML to JSON conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert XML to JSON",
+        "XML to JSON",
+        "Free XML to JSON converter"
+      ]
     },
     "howTo": {
       "name": "Cum convertiți XML în JSON",

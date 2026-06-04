@@ -1,6 +1,9 @@
 import { downloadFromUrl } from '@/utils/download';
 
-export function exportSignatureAsHtml(html: string, filename = 'stopka-email.html'): void {
+export function exportSignatureAsHtml(
+  html: string,
+  filename = 'stopka-email.html',
+): void {
   const fullHtml = `<!DOCTYPE html>
 <html lang="pl">
 <head>

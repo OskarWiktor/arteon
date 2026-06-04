@@ -1,23 +1,23 @@
-import HeroBanner from '@/components/organisms/HeroBanner';
-import CTABanner from '@/components/organisms/CTABanner';
-import ContactForm from '@/components/organisms/ContactForm';
+import { RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
+import Wrapper from '@/components/atoms/Wrapper';
+import ContactForm from '@/components/organisms/ContactForm';
+import CTABanner from '@/components/organisms/CTABanner';
+import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import Wrapper from '@/components/atoms/Wrapper';
-import { RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
-
-import type { Locale } from '@/types/locale';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { getContactPageData } from '@/lib/i18n/pages/contact';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
+import type { Locale } from '@/types/locale';
 
 export default function ContactPage({ locale }: { locale: Locale }) {
   const data = getContactPageData(locale);
   if (!data) return null;
 
   const config = LOCALE_CONFIG[locale];
-  const email = locale === 'pl' ? 'kontakt@arteonagency.pl' : 'contact@arteonagency.com';
+  const email =
+    locale === 'pl' ? 'kontakt@arteonagency.pl' : 'contact@arteonagency.com';
 
   return (
     <>

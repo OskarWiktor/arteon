@@ -1,8 +1,15 @@
-import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import {
+  flexCenterClasses,
+  normalIconSizeClasses,
+  smallIconSizeClasses,
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 const ArrowIcon = () => (
-  <span className={cn('ml-1', flexCenterClasses, normalIconSizeClasses)} aria-hidden='true'>
+  <span
+    className={cn('ml-1', flexCenterClasses, normalIconSizeClasses)}
+    aria-hidden='true'
+  >
     <svg
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 24 24'

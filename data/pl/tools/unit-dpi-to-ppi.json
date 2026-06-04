@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "DPI na PPI – rozdzielczość druku i ekranu dla grafików DTP",
-      "alternateName": ["Przelicznik DPI PPI", "DPI vs PPI", "Rozdzielczość druku i ekranu"],
+      "alternateName": [
+        "Przelicznik DPI PPI",
+        "DPI vs PPI",
+        "Rozdzielczość druku i ekranu"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
       "description": "Przelicz DPI na PPI i dobierz rozdzielczość do druku lub ekranu. Niezbędne dla projektantów DTP i grafików w Polsce. Działa w przeglądarce, bez rejestracji.",

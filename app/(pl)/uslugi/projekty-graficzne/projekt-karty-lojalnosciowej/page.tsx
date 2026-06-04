@@ -1,30 +1,30 @@
-import WorkSteps from '@/components/organisms/WorkSteps';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import CTABanner from '@/components/organisms/CTABanner';
-import Divider from '@/components/atoms/Divider';
-import SectionBento from '@/components/organisms/sections/SectionBento';
+import Script from 'next/script';
+import { IoColorPalette } from 'react-icons/io5';
 import {
   RiFileTextLine,
   RiVipCrownLine,
   RiCoupon2Line,
   RiMoneyDollarCircleLine,
 } from 'react-icons/ri';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import { IoColorPalette } from 'react-icons/io5';
-import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { buildServiceSchema } from '@/lib/seo/serviceSchema';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 export const metadata = {
@@ -32,7 +32,8 @@ export const metadata = {
   description:
     'Projekt karty lojalnościowej dla salonów, kawiarni, butików i siłowni. Plik do druku + szablon cyfrowy.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
+    canonical:
+      'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
   },
   openGraph: {
     title: 'Projekt karty lojalnościowej | Arteon',
@@ -61,7 +62,10 @@ function ServiceSchema() {
   });
 
   return (
-    <Script id='schema-service-projekt-karty-lojalnosciowej' type='application/ld+json'>
+    <Script
+      id='schema-service-projekt-karty-lojalnosciowej'
+      type='application/ld+json'
+    >
       {JSON.stringify(json)}
     </Script>
   );
@@ -74,8 +78,9 @@ export default function OfferDesignLoyaltyCardPage() {
         title='Projekt karty lojalnościowej'
         description={
           <>
-            Projektujemy czytelne karty lojalnościowe dla firm usługowych i handlowych. Karty
-            wspierają sprzedaż i porządkują zasady programu lojalnościowego.
+            Projektujemy czytelne karty lojalnościowe dla firm usługowych i
+            handlowych. Karty wspierają sprzedaż i porządkują zasady programu
+            lojalnościowego.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -89,7 +94,10 @@ export default function OfferDesignLoyaltyCardPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
+        third={{
+          href: `/uslugi/projekty-graficzne`,
+          label: 'Projekty graficzne',
+        }}
         fourth={{
           href: `/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej`,
           label: 'Projekt karty lojalnościowej',
@@ -100,24 +108,31 @@ export default function OfferDesignLoyaltyCardPage() {
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Przykładowe projekty graficzne' category='grafika' />
+        <ProjectsCarousel
+          title='Przykładowe projekty graficzne'
+          category='grafika'
+        />
 
         <Divider line />
 
         <SectionInfo title='Dlaczego warto zainwestować w karty lojalnościowe?'>
           <p>
-            <strong>Karty lojalnościowe realnie zwiększają liczbę powracających klientów.</strong>{' '}
-            Narzędzie marketingowe, które wzmacnia lojalność klientów: „wracam do tej firmy, bo
-            dzięki temu mam dodatkowe korzyści". W efekcie zwiększa się częstotliwość wizyt oraz
-            średnia wartość zakupu.
+            <strong>
+              Karty lojalnościowe realnie zwiększają liczbę powracających
+              klientów.
+            </strong>{' '}
+            Narzędzie marketingowe, które wzmacnia lojalność klientów: „wracam
+            do tej firmy, bo dzięki temu mam dodatkowe korzyści". W efekcie
+            zwiększa się częstotliwość wizyt oraz średnia wartość zakupu.
           </p>
 
           <br />
 
           <p>
-            <strong>Estetyka ma znaczenie.</strong> Dobrze zaprojektowana karta staje się spójną
-            częścią wizerunku firmy - wygląda profesjonalnie, budzi pozytywne emocje i nie „ginie” w
-            portfelu. Klient chętniej ją zachowuje i częściej o niej pamięta.
+            <strong>Estetyka ma znaczenie.</strong> Dobrze zaprojektowana karta
+            staje się spójną częścią wizerunku firmy - wygląda profesjonalnie,
+            budzi pozytywne emocje i nie „ginie” w portfelu. Klient chętniej ją
+            zachowuje i częściej o niej pamięta.
           </p>
 
           <br />
@@ -128,15 +143,18 @@ export default function OfferDesignLoyaltyCardPage() {
           <ul className='ml-5 list-disc'>
             <li>Motywuje do powrotu poprzez jasne i atrakcyjne nagrody,</li>
             <li>Wzmacnia więź klienta z marką i ułatwia budowanie zaufania,</li>
-            <li>Promuje firmę dzięki estetycznej formie, którą klient nosi często przy sobie.</li>
+            <li>
+              Promuje firmę dzięki estetycznej formie, którą klient nosi często
+              przy sobie.
+            </li>
           </ul>
 
           <br />
 
           <p>
-            Z perspektywy biznesu to jeden z najtańszych sposobów na podniesienie przychodów -
-            zamiast szukać nowych klientów, zatrzymujesz na dłużej tych, którzy już znają Twoją
-            markę.
+            Z perspektywy biznesu to jeden z najtańszych sposobów na
+            podniesienie przychodów - zamiast szukać nowych klientów,
+            zatrzymujesz na dłużej tych, którzy już znają Twoją markę.
           </p>
         </SectionInfo>
 
@@ -150,49 +168,74 @@ export default function OfferDesignLoyaltyCardPage() {
               title: 'Układ dopasowany do branży',
               description: (
                 <>
-                  Tworzymy karty dopasowane do specyfiki działalności - salonów, kawiarni, siłowni,
-                  butików i innych punktów usługowych. Zasady programu są czytelne zarówno dla
-                  Ciebie, jak i klientów.
+                  Tworzymy karty dopasowane do specyfiki działalności - salonów,
+                  kawiarni, siłowni, butików i innych punktów usługowych. Zasady
+                  programu są czytelne zarówno dla Ciebie, jak i klientów.
                 </>
               ),
-              icon: <RiVipCrownLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiVipCrownLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: (
                 <>
-                  Kolory, typografia i detale dopasowujemy do Twojej identyfikacji wizualnej. Karta
-                  naturalnie uzupełnia pozostałe materiały i wzmacnia profesjonalny wizerunek firmy.
+                  Kolory, typografia i detale dopasowujemy do Twojej
+                  identyfikacji wizualnej. Karta naturalnie uzupełnia pozostałe
+                  materiały i wzmacnia profesjonalny wizerunek firmy.
                 </>
               ),
-              icon: <IoColorPalette className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <IoColorPalette
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Gotowość do druku',
               description: (
                 <>
-                  Dostarczamy pliki w formacie gotowym do druku, z odpowiednimi spadami i
-                  specyfikacją dla drukarni. Możesz od razu zamówić nakład bez dodatkowych przeróbek
-                  technicznych.
+                  Dostarczamy pliki w formacie gotowym do druku, z odpowiednimi
+                  spadami i specyfikacją dla drukarni. Możesz od razu zamówić
+                  nakład bez dodatkowych przeróbek technicznych.
                 </>
               ),
-              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileTextLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Numeracje i pola pieczątek',
               description: (
                 <>
-                  Projektujemy czytelne pola na pieczątki, podpisy i oznaczenia nagród. Dzięki temu
-                  obsługa programu jest prosta dla zespołu i zrozumiała dla klientów.
+                  Projektujemy czytelne pola na pieczątki, podpisy i oznaczenia
+                  nagród. Dzięki temu obsługa programu jest prosta dla zespołu i
+                  zrozumiała dla klientów.
                 </>
               ),
-              icon: <RiCoupon2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiCoupon2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Faktura po realizacji',
-              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              description: (
+                <>
+                  Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
+                  formie.
+                </>
+              ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
           ]}
@@ -205,9 +248,10 @@ export default function OfferDesignLoyaltyCardPage() {
           subtitle='Kiedy ten projekt szybko się zwraca?'
         >
           <p>
-            Projekt karty lojalnościowej szczególnie opłaca się tam, gdzie kluczowe jest, aby klient
-            wracał regularnie - kilka lub kilkanaście razy w roku. Oto kilka branż, w których
-            posiadanie karty lojalnościowej przynosi najlepsze efekty:
+            Projekt karty lojalnościowej szczególnie opłaca się tam, gdzie
+            kluczowe jest, aby klient wracał regularnie - kilka lub kilkanaście
+            razy w roku. Oto kilka branż, w których posiadanie karty
+            lojalnościowej przynosi najlepsze efekty:
           </p>
 
           <br />
@@ -306,7 +350,8 @@ export default function OfferDesignLoyaltyCardPage() {
                 'Najczęściej przygotowujemy karty lojalnościowe w formacie wizytówki (85 x 55 mm). Jeśli potrzebujesz innego formatu, dopasujemy projekt.',
             },
             {
-              question: 'Czy mogę dodać logo i kolory marki na kartę lojalnościową?',
+              question:
+                'Czy mogę dodać logo i kolory marki na kartę lojalnościową?',
               answer:
                 'Tak, projekt zawsze opiera się na Twoim dotychczasowym wizerunku. Korzystamy z logo, kolorów i stylu identyfikacji wizualnej, aby zachować pełną spójność materiałów.',
             },
@@ -333,7 +378,8 @@ export default function OfferDesignLoyaltyCardPage() {
               size: 'large',
               backgroundImage: '/assets/projects/km2/mockup-logo-km2.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Kupony i vouchery',
@@ -341,19 +387,22 @@ export default function OfferDesignLoyaltyCardPage() {
               backgroundImage:
                 '/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
             },
             {
               title: 'Projekt wizytówki',
               size: 'small',
-              backgroundImage: '/assets/projects/talia/mockup-wizytówki-talia.webp',
+              backgroundImage:
+                '/assets/projects/talia/mockup-wizytówki-talia.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
               title: 'Strony internetowe',
               size: 'small',
-              backgroundImage: '/assets/projects/jstax/moskup-strony-jstax.webp',
+              backgroundImage:
+                '/assets/projects/jstax/moskup-strony-jstax.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },

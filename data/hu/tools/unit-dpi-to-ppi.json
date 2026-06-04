@@ -202,7 +202,10 @@
         },
         {
           "label": "Gyakori tévhit",
-          "values": ["Képekhez használják (helytelenül)", "Helyes kifejezés képekre"]
+          "values": [
+            "Képekhez használják (helytelenül)",
+            "Helyes kifejezés képekre"
+          ]
         }
       ]
     },

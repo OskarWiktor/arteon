@@ -1,14 +1,14 @@
+import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
+import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
 import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
 import SectionInfoSkeleton from '../../organisms/skeletons/SectionInfoSkeleton';
 import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
-import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
-import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
 
 export default function AboutPageSkeleton() {
   return (
     <>
       <HeroBannerSkeleton />
-      <div className='m-auto w-[94%] max-w-[1420px] 2xl:max-w-none'>
+      <div className='m-auto w-[94%] max-w-355 2xl:max-w-none'>
         <DividerSkeleton variant='space' />
         <SectionInfoSkeleton />
         <DividerSkeleton variant='line' />

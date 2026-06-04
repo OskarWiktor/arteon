@@ -1,21 +1,18 @@
 'use client';
 
 import { useRef, useState } from 'react';
-
 import Button from '@/components/atoms/buttons/Button';
-import ToolAlert from '@/components/atoms/ToolAlert';
-import { useDictionary } from '@/lib/LocaleContext';
-
-import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
-import type { UniversalFormat } from '@/utils/format-utils';
-
-import { convertText } from '@/lib/tools/text/convert';
-import type { TextFormatConverterProps } from '@/types/tools/text-format-converter';
-import Textarea from '@/components/atoms/form/Textarea';
 import Input from '@/components/atoms/form/Input';
-import Card from '../../Card';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import Textarea from '@/components/atoms/form/Textarea';
+import ToolAlert from '@/components/atoms/ToolAlert';
+import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
+import { useDictionary } from '@/lib/LocaleContext';
+import type { UniversalFormat } from '@/lib/tools/formats';
+import { convertText } from '@/lib/tools/text/convert';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import type { TextFormatConverterProps } from '@/types/tools/text-format-converter';
+import Card from '../../Card';
 
 const LABEL_TO_FORMAT: Record<string, UniversalFormat> = {
   CSV: 'csv',
@@ -26,6 +23,19 @@ const LABEL_TO_FORMAT: Record<string, UniversalFormat> = {
   HTML: 'html',
 };
 
+/**
+ * Renders a two-panel text format converter UI with file upload, convert, copy, download, and clear controls.
+ *
+ * The left panel accepts manual input or an uploaded file, validates and converts text using the provided
+ * conversionType, and shows conversion errors. The right panel displays the conversion result and provides
+ * copy and download actions.
+ *
+ * @param conversionType - A key identifying the conversion direction (e.g., "csvToJson", "jsonToYaml").
+ * @param sourceLabel - Human-readable label for the source format shown in the left panel.
+ * @param targetLabel - Human-readable label for the target format shown in the right panel.
+ * @param sourcePlaceholder - Optional placeholder text for the source textarea; if omitted a default localized placeholder is used.
+ * @returns The rendered TextFormatConverter React component UI.
+ */
 export default function TextFormatConverter({
   conversionType,
   sourceLabel,
@@ -157,14 +167,19 @@ export default function TextFormatConverter({
                 onChange={handleFileUpload}
                 className='hidden'
               />
-              {fileName ? fileName : t.uploadFile.replace('{{format}}', sourceLabel)}
+              {fileName
+                ? fileName
+                : t.uploadFile.replace('{{format}}', sourceLabel)}
             </label>
           </div>
           <Textarea
             className='min-h-[300px] resize-y'
             value={input}
             onChange={e => setInput(e.target.value)}
-            placeholder={sourcePlaceholder ?? t.pasteOrTypeData.replace('{{format}}', sourceLabel)}
+            placeholder={
+              sourcePlaceholder ??
+              t.pasteOrTypeData.replace('{{format}}', sourceLabel)
+            }
           />
           {error && <ToolAlert variant='error'>{error}</ToolAlert>}
           <div className='flex flex-wrap gap-3'>

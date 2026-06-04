@@ -6,7 +6,7 @@ export default function PrivacyPageSkeleton() {
   return (
     <>
       <div className='my-8 md:my-12' />
-      <div className='m-auto flex w-[94%] max-w-[1420px] flex-col-reverse gap-8 lg:grid lg:grid-cols-[1fr_300px] 2xl:max-w-none'>
+      <div className='m-auto flex w-[94%] max-w-355 flex-col-reverse gap-8 lg:grid lg:grid-cols-[1fr_300px] 2xl:max-w-none'>
         <div className='space-y-0'>
           <Shimmer className='mb-3 h-9 w-3/5' />
           <Shimmer className='mb-6 h-4 w-40' />

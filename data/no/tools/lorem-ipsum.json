@@ -308,7 +308,16 @@
         },
         {
           "label": "Humor / karakter",
-          "values": ["Nøytral", "Middels", "Lav", "Lav", "Høy", "Høy", "Høy", "Lav"]
+          "values": [
+            "Nøytral",
+            "Middels",
+            "Lav",
+            "Lav",
+            "Høy",
+            "Høy",
+            "Høy",
+            "Lav"
+          ]
         }
       ]
     },

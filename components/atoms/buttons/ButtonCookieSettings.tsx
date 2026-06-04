@@ -4,7 +4,9 @@ interface ButtonCookieSettingsProps {
   label: string;
 }
 
-export default function ButtonCookieSettings({ label }: ButtonCookieSettingsProps) {
+export default function ButtonCookieSettings({
+  label,
+}: ButtonCookieSettingsProps) {
   return (
     <button
       onClick={() => {

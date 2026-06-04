@@ -197,7 +197,10 @@
         },
         {
           "label": "Webbrowserunderstøttelse",
-          "values": ["Kun Safari", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+          "values": [
+            "Kun Safari",
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          ]
         },
         {
           "label": "Farvedybde",

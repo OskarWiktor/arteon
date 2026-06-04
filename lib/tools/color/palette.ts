@@ -1,5 +1,9 @@
 import type { HSL, PaletteColor, PaletteGroup } from '@/types/tools/color';
-export type { PaletteColor, PaletteGroupId, PaletteGroup } from '@/types/tools/color';
+export type {
+  PaletteColor,
+  PaletteGroupId,
+  PaletteGroup,
+} from '@/types/tools/color';
 import {
   clamp,
   hexToRgb,
@@ -62,8 +66,16 @@ export function createPaletteFromHex(baseHex: string): PaletteGroup[] {
       mkColor(baseHsl.h, baseHsl.s, baseHsl.l),
       mkColor(baseHsl.h, baseHsl.s, clamp(baseHsl.l - 10, 5, 95)),
       mkColor(rotateHue(baseHsl.h + 180, 0), baseHsl.s, baseHsl.l),
-      mkColor(rotateHue(baseHsl.h + 180, 0), baseHsl.s, clamp(baseHsl.l + 10, 5, 95)),
-      mkColor(rotateHue(baseHsl.h + 180, 0), baseHsl.s, clamp(baseHsl.l - 10, 5, 95)),
+      mkColor(
+        rotateHue(baseHsl.h + 180, 0),
+        baseHsl.s,
+        clamp(baseHsl.l + 10, 5, 95),
+      ),
+      mkColor(
+        rotateHue(baseHsl.h + 180, 0),
+        baseHsl.s,
+        clamp(baseHsl.l - 10, 5, 95),
+      ),
     ],
   };
 
@@ -84,8 +96,16 @@ export function createPaletteFromHex(baseHex: string): PaletteGroup[] {
       mkColor(baseHsl.h, baseHsl.s, baseHsl.l),
       mkColor(rotateHue(baseHsl.h + 150, 0), baseHsl.s, baseHsl.l),
       mkColor(rotateHue(baseHsl.h + 210, 0), baseHsl.s, baseHsl.l),
-      mkColor(rotateHue(baseHsl.h + 150, 0), baseHsl.s, clamp(baseHsl.l + 8, 5, 95)),
-      mkColor(rotateHue(baseHsl.h + 210, 0), baseHsl.s, clamp(baseHsl.l - 8, 5, 95)),
+      mkColor(
+        rotateHue(baseHsl.h + 150, 0),
+        baseHsl.s,
+        clamp(baseHsl.l + 8, 5, 95),
+      ),
+      mkColor(
+        rotateHue(baseHsl.h + 210, 0),
+        baseHsl.s,
+        clamp(baseHsl.l - 8, 5, 95),
+      ),
     ],
   };
 
@@ -149,7 +169,8 @@ export function createPaletteFromHex(baseHex: string): PaletteGroup[] {
   };
 
   const warmTarget = baseHsl.h > 180 ? baseHsl.h - 180 : baseHsl.h;
-  const warmBase = warmTarget < 60 ? warmTarget : clamp(warmTarget * 0.3 + 10, 0, 50);
+  const warmBase =
+    warmTarget < 60 ? warmTarget : clamp(warmTarget * 0.3 + 10, 0, 50);
   const warmShift: PaletteGroup = {
     id: 'warm-shift',
     colors: [
@@ -162,7 +183,9 @@ export function createPaletteFromHex(baseHex: string): PaletteGroup[] {
   };
 
   const coolBase = clamp(
-    rotateHue(baseHsl.h, 0) > 120 && rotateHue(baseHsl.h, 0) < 280 ? baseHsl.h : 200,
+    rotateHue(baseHsl.h, 0) > 120 && rotateHue(baseHsl.h, 0) < 280
+      ? baseHsl.h
+      : 200,
     170,
     260,
   );
@@ -177,7 +200,11 @@ export function createPaletteFromHex(baseHex: string): PaletteGroup[] {
     ],
   };
 
-  const earthBase = clamp(baseHsl.h > 180 ? baseHsl.h - 150 : baseHsl.h + 30, 20, 60);
+  const earthBase = clamp(
+    baseHsl.h > 180 ? baseHsl.h - 150 : baseHsl.h + 30,
+    20,
+    60,
+  );
   const earthTones: PaletteGroup = {
     id: 'earth-tones',
     colors: [

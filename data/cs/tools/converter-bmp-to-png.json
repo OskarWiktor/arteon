@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Převodník BMP na PNG",
-      "alternateName": ["Převést BMP na PNG", "Konverze BMP do PNG", "Převodník BMP na PNG zdarma"],
+      "alternateName": [
+        "Převést BMP na PNG",
+        "Konverze BMP do PNG",
+        "Převodník BMP na PNG zdarma"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena. Zpracování probíhá v prohlížeči - soubory neopouštějí vaše zařízení.",

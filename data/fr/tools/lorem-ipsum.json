@@ -308,7 +308,16 @@
         },
         {
           "label": "Humour / caractère",
-          "values": ["Neutre", "Moyen", "Faible", "Faible", "Élevé", "Élevé", "Élevé", "Faible"]
+          "values": [
+            "Neutre",
+            "Moyen",
+            "Faible",
+            "Faible",
+            "Élevé",
+            "Élevé",
+            "Élevé",
+            "Faible"
+          ]
         }
       ]
     },

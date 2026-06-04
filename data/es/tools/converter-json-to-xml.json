@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Convierte JSON a formato XML. Análisis y formato automáticos. Gratis.",
-      "featureList": ["JSON to XML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert JSON to XML", "JSON to XML", "Free JSON to XML converter"]
+      "featureList": [
+        "JSON to XML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert JSON to XML",
+        "JSON to XML",
+        "Free JSON to XML converter"
+      ]
     },
     "howTo": {
       "name": "Cómo convertir JSON a XML",

@@ -47,7 +47,9 @@ export default function TextareaWithLabel({
         rows={rows}
         className={className}
         onChange={
-          onChange ? (e: ChangeEvent<HTMLTextAreaElement>) => onChange(e.target.value) : undefined
+          onChange
+            ? (e: ChangeEvent<HTMLTextAreaElement>) => onChange(e.target.value)
+            : undefined
         }
       />
     </div>

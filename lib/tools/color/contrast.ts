@@ -1,5 +1,5 @@
-import type { RGB, RGBA } from '@/types/tools/color';
 import { hexToRgb, hslToRgb, parseHsl } from '@/lib/tools/color/convert';
+import type { RGB, RGBA } from '@/types/tools/color';
 
 export function parseColor(color: string): RGBA | null {
   const trimmed = color.trim();
@@ -82,19 +82,30 @@ export function calculateHexContrast(hex1: string, hex2: string): number {
   return (lighter + 0.05) / (darker + 0.05);
 }
 
-export function isHexContrastSufficient(hex1: string, hex2: string, minRatio = 3): boolean {
+export function isHexContrastSufficient(
+  hex1: string,
+  hex2: string,
+  minRatio = 3,
+): boolean {
   return calculateHexContrast(hex1, hex2) >= minRatio;
 }
 
-export function getContrastRatio(foreground: string, background: string): number | null {
+export function getContrastRatio(
+  foreground: string,
+  background: string,
+): number | null {
   const fg = parseColor(foreground);
   const bg = parseColor(background);
 
   if (!fg || !bg) return null;
 
   const baseBackground: RGB = { r: 255, g: 255, b: 255 };
-  const bgOpaque = bg.a < 1 ? compositeOver(bg, baseBackground) : { r: bg.r, g: bg.g, b: bg.b };
-  const fgOpaque = fg.a < 1 ? compositeOver(fg, bgOpaque) : { r: fg.r, g: fg.g, b: fg.b };
+  const bgOpaque =
+    bg.a < 1
+      ? compositeOver(bg, baseBackground)
+      : { r: bg.r, g: bg.g, b: bg.b };
+  const fgOpaque =
+    fg.a < 1 ? compositeOver(fg, bgOpaque) : { r: fg.r, g: fg.g, b: fg.b };
 
   const L1 = relativeLuminance(fgOpaque);
   const L2 = relativeLuminance(bgOpaque);

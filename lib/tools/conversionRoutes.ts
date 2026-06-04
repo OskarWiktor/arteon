@@ -1,19 +1,19 @@
 import { cache } from 'react';
+import { getToolHref } from '@/lib/i18n/toolRegistry';
+import type { UniversalFormat } from '@/lib/tools/formats';
 import type { Locale } from '@/types/locale';
 import type { ToolItemKey } from '@/types/tools/common';
-import { getToolHref } from '@/lib/i18n/tool-registry';
-import type { UniversalFormat } from '@/utils/format-utils';
 
 // ---------------------------------------------------------------------------
 // Universal format identifiers used across ALL converters
 // ---------------------------------------------------------------------------
 
 // Re-export types from utils for backward compatibility
-export type { UniversalFormat, FormatCategory } from '@/utils/format-utils';
-export { FORMAT_CATEGORIES, FORMAT_DISPLAY_LABELS } from '@/utils/format-utils';
+export type { UniversalFormat, FormatCategory } from '@/lib/tools/formats';
+export { FORMAT_CATEGORIES, FORMAT_DISPLAY_LABELS } from '@/lib/tools/formats';
 
 // Category labels per locale - re-export from utils for backward compatibility
-export { CATEGORY_LABELS } from '@/utils/locale-utils';
+export { CATEGORY_LABELS } from '@/lib/tools/unitLabels';
 
 // ---------------------------------------------------------------------------
 // Complete conversion map: (source, target) → toolKey
@@ -117,7 +117,9 @@ export function getConversionHref(
   target: UniversalFormat,
   locale: Locale,
 ): string | null {
-  const def = ALL_CONVERSION_DEFS.find(d => d.source === source && d.target === target);
+  const def = ALL_CONVERSION_DEFS.find(
+    d => d.source === source && d.target === target,
+  );
   if (!def) return null;
   const href = getToolHref(def.toolKey, locale);
   return href === '#' ? null : href;
@@ -130,13 +132,19 @@ export const getAllRoutes = cache((locale: Locale): ResolvedRoute[] => {
   })).filter(r => r.href !== '#');
 });
 
-export function getAvailableTargets(source: UniversalFormat, locale: Locale): UniversalFormat[] {
+export function getAvailableTargets(
+  source: UniversalFormat,
+  locale: Locale,
+): UniversalFormat[] {
   return getAllRoutes(locale)
     .filter(r => r.source === source)
     .map(r => r.target);
 }
 
-export function getAvailableSources(target: UniversalFormat, locale: Locale): UniversalFormat[] {
+export function getAvailableSources(
+  target: UniversalFormat,
+  locale: Locale,
+): UniversalFormat[] {
   return getAllRoutes(locale)
     .filter(r => r.target === target)
     .map(r => r.source);
@@ -149,14 +157,24 @@ export function getConversionByToolKey(
   return def ? { source: def.source, target: def.target } : null;
 }
 
-export function getConvertersToSameTarget(toolKey: string, locale: Locale): ResolvedRoute[] {
+export function getConvertersToSameTarget(
+  toolKey: string,
+  locale: Locale,
+): ResolvedRoute[] {
   const current = ALL_CONVERSION_DEFS.find(d => d.toolKey === toolKey);
   if (!current) return [];
-  return getAllRoutes(locale).filter(r => r.target === current.target && r.toolKey !== toolKey);
+  return getAllRoutes(locale).filter(
+    r => r.target === current.target && r.toolKey !== toolKey,
+  );
 }
 
-export function getConvertersFromSameSource(toolKey: string, locale: Locale): ResolvedRoute[] {
+export function getConvertersFromSameSource(
+  toolKey: string,
+  locale: Locale,
+): ResolvedRoute[] {
   const current = ALL_CONVERSION_DEFS.find(d => d.toolKey === toolKey);
   if (!current) return [];
-  return getAllRoutes(locale).filter(r => r.source === current.source && r.toolKey !== toolKey);
+  return getAllRoutes(locale).filter(
+    r => r.source === current.source && r.toolKey !== toolKey,
+  );
 }

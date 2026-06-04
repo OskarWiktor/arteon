@@ -1,39 +1,37 @@
 import { Fragment, type ReactNode } from 'react';
-import type { Metadata } from 'next';
-import type { ToolPageData, ToolContentBlock } from '@/types/tool-page';
-import type { Locale, DesktopOnlyUi } from '@/types/locale';
-import type { ToolItemKey } from '@/types/tools/common';
-
-import HeroBanner from '@/components/organisms/HeroBanner';
-import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import DynamicToolRenderer from '@/components/pages/tools/DynamicToolRenderer';
-import ToolsCarousel from '@/components/organisms/carousels/ToolsCarousel';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import ToolEditorLayout from '@/components/templates/ToolEditorLayout';
+import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import AdSense from '@/components/molecules/AdSense';
-
-import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import ToolsCarousel from '@/components/organisms/carousels/ToolsCarousel';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import DynamicToolRenderer from '@/components/pages/tools/DynamicToolRenderer';
+import ToolEditorLayout from '@/components/templates/ToolEditorLayout';
+import { DESKTOP_ONLY_UI } from '@/lib/i18n/locales';
 import {
   getToolAlternates,
   getToolSoftwareSchema,
   getToolHowToSchema,
   getToolWebPageSchema,
-} from '@/lib/i18n/pages/tool-meta';
-import { getToolHref } from '@/lib/i18n/tool-registry';
-import { getToolIcon } from '@/lib/tools/icon-registry';
-import { DESKTOP_ONLY_UI } from '@/lib/i18n/locales';
-import RelatedConverters from '../organisms/tools/RelatedConverters';
-import RelatedUnitConverters from '../organisms/tools/RelatedUnitConverters';
-import { JsonLd } from '@/components/atoms/JsonLd';
-import SectionContactForm from '../organisms/sections/SectionContactForm';
-import Divider from '@/components/atoms/Divider';
+} from '@/lib/i18n/pages/toolMeta';
+import { getToolHref } from '@/lib/i18n/toolRegistry';
+import { getToolIcon } from '@/lib/tools/iconRegistry';
+import type { Locale, DesktopOnlyUi } from '@/types/locale';
+import type { ToolPageData, ToolContentBlock } from '@/types/tool-page';
+import type { ToolItemKey } from '@/types/tools/common';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 import SectionBasic from '../organisms/sections/SectionBasic';
+import SectionContactForm from '../organisms/sections/SectionContactForm';
 import SectionDemo from '../organisms/sections/SectionDemo';
 import SectionTable from '../organisms/sections/SectionTable';
 import SectionInfo from '../organisms/sections/SectionInfo';
 import SectionSteps from '../organisms/sections/SectionSteps';
 import SectionTabs from '../organisms/sections/SectionTabs';
 import SectionTimeline from '../organisms/sections/SectionTimeline';
+import RelatedConverters from '../organisms/tools/RelatedConverters';
+import RelatedUnitConverters from '../organisms/tools/RelatedUnitConverters';
+import { Metadata } from 'next';
 
 const AD_SECTION_INTERVAL = 3;
 const AD_SKIP_AFTER = new Set(['faq', 'toolsCarousel']);
@@ -47,11 +45,17 @@ const DESKTOP_ONLY_TOOLS = new Set([
   'pngToWebpSimple',
 ]);
 
+/**
+ * Render a styled notice that informs users the tool is available only on desktop using localized copy.
+ *
+ * @param t - Localized text for the notice (`title`, `description`, `tipTitle`, `tipText`)
+ * @returns A React element containing the desktop-only notice section with title, description, and tip box
+ */
 function DesktopOnlyNotice({ t }: { t: DesktopOnlyUi }) {
   return (
     <section className='mx-auto my-6 max-w-xl rounded-lg border border-neutral-200 bg-white/90 p-6 text-sm shadow-sm'>
       <h2 className='mb-3 text-lg font-semibold'>{t.title}</h2>
-      <p className='mb-3 text-mid'>{t.description}</p>
+      <p className='mb-3'>{t.description}</p>
       <div className='rounded-lg bg-neutral-50 px-4 py-3 text-xs text-light'>
         <p className='mb-1 font-medium'>{t.tipTitle}</p>
         <p>{t.tipText}</p>
@@ -61,11 +65,17 @@ function DesktopOnlyNotice({ t }: { t: DesktopOnlyUi }) {
 }
 
 export function generateToolMetadata(data: ToolPageData): Metadata {
-  const canonicalPath = getToolHref(data.toolKey as ToolItemKey, data.locale as Locale);
+  const canonicalPath = getToolHref(
+    data.toolKey as ToolItemKey,
+    data.locale as Locale,
+  );
   return {
     title: data.metadata.title,
     description: data.metadata.description,
-    alternates: getToolAlternates(data.toolKey as ToolItemKey, data.locale as Locale),
+    alternates: getToolAlternates(
+      data.toolKey as ToolItemKey,
+      data.locale as Locale,
+    ),
     robots: {
       index: true,
       follow: true,
@@ -78,12 +88,18 @@ export function generateToolMetadata(data: ToolPageData): Metadata {
       description: data.metadata.description,
       url: toAbsoluteUrl(canonicalPath),
       type: 'website',
-      images: [{ url: toAbsoluteUrl(data.metadata.ogImage), width: 1200, height: 630 }],
+      images: [
+        { url: toAbsoluteUrl(data.metadata.ogImage), width: 1200, height: 630 },
+      ],
     },
   };
 }
 
-function renderBlock(block: ToolContentBlock, idx: number, pageUrl: string): ReactNode {
+function renderBlock(
+  block: ToolContentBlock,
+  idx: number,
+  pageUrl: string,
+): ReactNode {
   switch (block.type) {
     case 'gap':
       return <Divider key={`gap-${idx}`} line size='md' />;
@@ -108,7 +124,9 @@ function renderBlock(block: ToolContentBlock, idx: number, pageUrl: string): Rea
           items={block.items.map(item => ({
             icon: getToolIcon(item.icon),
             title: item.title,
-            description: <span dangerouslySetInnerHTML={{ __html: item.description }} />,
+            description: (
+              <span dangerouslySetInnerHTML={{ __html: item.description }} />
+            ),
           }))}
         />
       );
@@ -171,7 +189,9 @@ function renderBlock(block: ToolContentBlock, idx: number, pageUrl: string): Rea
           items={block.items.map(item => ({
             icon: getToolIcon(item.icon),
             title: item.title,
-            description: <span dangerouslySetInnerHTML={{ __html: item.description }} />,
+            description: (
+              <span dangerouslySetInnerHTML={{ __html: item.description }} />
+            ),
           }))}
         />
       );
@@ -255,7 +275,10 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
 
   return (
     <>
-      <JsonLd schema={combinedSchemas} id={`ld-json-${data.toolKey}-${data.locale}`} />
+      <JsonLd
+        schema={combinedSchemas}
+        id={`ld-json-${data.toolKey}-${data.locale}`}
+      />
 
       <HeroBanner
         title={data.hero.title}
@@ -292,14 +315,17 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
         <div className='mt-24 block lg:hidden'>
           <AdSense variant='responsive' locale={data.locale} />
         </div> */}
-        <div className='mx-auto w-full max-w-[1420px] px-[3%]'>
+        <div className='mx-auto w-full max-w-355 px-[3%]'>
           {(() => {
             const adPositions = new Set<number>();
             let contentCount = 0;
             data.contentBlocks.forEach((block, idx) => {
               if (block.type !== 'gap') {
                 contentCount++;
-                if (contentCount % AD_SECTION_INTERVAL === 0 && !AD_SKIP_AFTER.has(block.type)) {
+                if (
+                  contentCount % AD_SECTION_INTERVAL === 0 &&
+                  !AD_SKIP_AFTER.has(block.type)
+                ) {
                   adPositions.add(idx);
                 }
               }
@@ -312,9 +338,12 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
 
               const node = renderBlock(block, idx, pageUrl);
               const adNode = adPositions.has(idx) ? (
-                <div key={`ad-after-${idx}`} className='ad-slot-wrapper min-h-[280px]'>
+                <div
+                  key={`ad-after-${idx}`}
+                  className='ad-slot-wrapper min-h-70'
+                >
                   <Divider line />
-                  <div className='not-prose -mx-[3%] flex justify-center py-4'>
+                  <div className='not-prose mx-[-3%] flex justify-center py-4'>
                     <AdSense variant='responsive' locale={data.locale} />
                   </div>
                 </div>
@@ -323,8 +352,14 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
               if (insertRelated) {
                 return (
                   <Fragment key={`block-rel-${idx}`}>
-                    <RelatedConverters toolKey={data.toolKey} locale={data.locale as Locale} />
-                    <RelatedUnitConverters toolKey={data.toolKey} locale={data.locale as Locale} />
+                    <RelatedConverters
+                      toolKey={data.toolKey}
+                      locale={data.locale as Locale}
+                    />
+                    <RelatedUnitConverters
+                      toolKey={data.toolKey}
+                      locale={data.locale as Locale}
+                    />
                     {node}
                     {adNode}
                   </Fragment>

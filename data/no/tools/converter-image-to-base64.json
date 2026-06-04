@@ -28,7 +28,11 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Kod bilder til Base64-format. Kopier ferdig kode for CSS eller HTML. Gratis.",
-      "featureList": ["bilde to Base64 conversion", "Batch conversion", "Local browser processing"],
+      "featureList": [
+        "bilde to Base64 conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
       "alternateName": [
         "Convert bilde to Base64",
         "bilde to Base64",

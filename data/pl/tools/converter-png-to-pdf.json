@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Darmowy konwerter formatu PNG na PDF - darmowy, bez limitu",
-      "alternateName": ["Zamiana PNG na PDF", "Konwersja PNG do PDF", "PNG to PDF converter"],
+      "alternateName": [
+        "Zamiana PNG na PDF",
+        "Konwersja PNG do PDF",
+        "PNG to PDF converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Darmowy konwerter PNG na PDF. Zamień pliki PNG na dokument PDF w przeglądarce - pliki nie są wysyłane na serwer.",

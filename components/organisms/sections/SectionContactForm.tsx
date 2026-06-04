@@ -1,8 +1,12 @@
 import Image from 'next/image';
 import { RiMailSendLine, RiTimeLine, RiFileList2Line } from 'react-icons/ri';
-import ContactForm from '../ContactForm';
-import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import {
+  flexCenterClasses,
+  normalIconSizeClasses,
+  smallIconSizeClasses,
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import ContactForm from '../ContactForm';
 
 type SectionContactFormProps = {
   title: string;
@@ -16,7 +20,9 @@ type SectionContactFormProps = {
 
 const benefits = [
   {
-    icon: <RiMailSendLine className={cn('text-accent', smallIconSizeClasses)} />,
+    icon: (
+      <RiMailSendLine className={cn('text-accent', smallIconSizeClasses)} />
+    ),
     label: 'Bezpłatna wycena bez zobowiązań',
   },
   {
@@ -24,11 +30,25 @@ const benefits = [
     label: 'Odpowiedź w ciągu 24 godzin',
   },
   {
-    icon: <RiFileList2Line className={cn('text-accent', smallIconSizeClasses)} />,
+    icon: (
+      <RiFileList2Line className={cn('text-accent', smallIconSizeClasses)} />
+    ),
     label: 'Faktura dopiero po realizacji',
   },
 ];
 
+/**
+ * Renders a two-column contact section with a contact form and an illustrative image; shows a benefits list when `variant` is `'default-page'`.
+ *
+ * @param title - Heading text for the contact form
+ * @param description - Supporting description displayed above the form
+ * @param imageSrc - Source URL or imported image for the illustrative image
+ * @param imageAlt - Alt text for the illustrative image
+ * @param defaultSubject - Pre-filled subject value for the contact form
+ * @param messagePlaceholder - Optional placeholder text for the message textarea
+ * @param variant - Layout variant; `'default-page'` shows the benefits list, `'tool-page'` hides it (defaults to `'default-page'`)
+ * @returns The rendered contact section element
+ */
 export default function SectionContactForm({
   title,
   description,

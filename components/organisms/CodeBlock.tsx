@@ -1,6 +1,6 @@
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import ButtonCopy from '../atoms/buttons/ButtonCopy';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
 
 type CodeBlockProps = {
   code: string;
@@ -28,7 +28,7 @@ export default function CodeBlock({
   return (
     <figure
       className={cn(
-        'group rounded-lg border border-neutral-200 bg-gradient-to-b from-[color:var(--foreground)] to-[color:var(--neutral-900)] text-[color:var(--text-on-dark)] shadow-sm',
+        'group rounded-lg border border-neutral-200 bg-linear-to-b from-(--foreground) to-neutral-900 text-(--text-on-dark) shadow-sm',
         className,
       )}
     >
@@ -44,7 +44,9 @@ export default function CodeBlock({
               {language}
             </span>
           ) : null}
-          {filename ? <span className='truncate text-xs text-white/70'>{filename}</span> : null}
+          {filename ? (
+            <span className='truncate text-xs text-white/70'>{filename}</span>
+          ) : null}
         </div>
         <ButtonCopy
           text={code}
@@ -56,10 +58,13 @@ export default function CodeBlock({
       </div>
 
       <pre
-        className={cn('relative overflow-x-auto rounded-b-xl p-4 text-[13px] leading-relaxed', {
-          'break-words whitespace-pre-wrap': wrap,
-          'whitespace-pre': !wrap,
-        })}
+        className={cn(
+          'relative overflow-x-auto rounded-b-xl p-4 text-[13px] leading-relaxed',
+          {
+            'wrap-break-word whitespace-pre-wrap': wrap,
+            'whitespace-pre': !wrap,
+          },
+        )}
         role='region'
         aria-label={filename || 'Fragment kodu'}
       >
@@ -68,7 +73,11 @@ export default function CodeBlock({
             const n = i + 1;
             const isHl = highlightLines.includes(n);
             return (
-              <span key={i} className={cn('contents', { 'bg-white/[0.04]': isHl })} data-line={n}>
+              <span
+                key={i}
+                className={cn('contents', { 'bg-white/4': isHl })}
+                data-line={n}
+              >
                 {showLineNumbers ? (
                   <span aria-hidden='true'>
                     <span className='min-w-6 pr-1 text-right text-xs text-white/40 tabular-nums select-none'>
@@ -76,7 +85,12 @@ export default function CodeBlock({
                     </span>
                   </span>
                 ) : null}
-                <span className={cn('font-mono', { '': wrap, 'inline-block min-w-full': !wrap })}>
+                <span
+                  className={cn('font-mono', {
+                    '': wrap,
+                    'inline-block min-w-full': !wrap,
+                  })}
+                >
                   {ln || ' '}
                 </span>
               </span>

@@ -34,8 +34,16 @@ const categoryCache = new Map<string, Article[]>();
 function loadCategory(categorySlug: string): Article[] {
   if (categoryCache.has(categorySlug)) return categoryCache.get(categorySlug)!;
 
-  const filePath = join(process.cwd(), 'data', 'pl', 'blog', `${categorySlug}.json`);
-  const data = JSON.parse(readFileSync(filePath, 'utf8')) as { articles: Article[] };
+  const filePath = join(
+    process.cwd(),
+    'data',
+    'pl',
+    'blog',
+    `${categorySlug}.json`,
+  );
+  const data = JSON.parse(readFileSync(filePath, 'utf8')) as {
+    articles: Article[];
+  };
   categoryCache.set(categorySlug, data.articles);
   return data.articles;
 }
@@ -44,9 +52,14 @@ export function getAllArticlePreviews(): ArticlePreview[] {
   return previews;
 }
 
-export function getArticlePreviewsByCategory(categorySlug: string, max = 6): ArticlePreview[] {
+export function getArticlePreviewsByCategory(
+  categorySlug: string,
+  max = 6,
+): ArticlePreview[] {
   return previews
-    .filter(a => a.primaryCategory && slugify(a.primaryCategory) === categorySlug)
+    .filter(
+      a => a.primaryCategory && slugify(a.primaryCategory) === categorySlug,
+    )
     .slice(0, max);
 }
 
@@ -64,7 +77,9 @@ export function getCategoriesWithCount() {
       });
     }
   }
-  return Array.from(map.values()).sort((a, b) => a.label.localeCompare(b.label));
+  return Array.from(map.values()).sort((a, b) =>
+    a.label.localeCompare(b.label),
+  );
 }
 
 export function getPrimaryCategorySlug(a: ArticlePreview): string {

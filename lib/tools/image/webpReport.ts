@@ -1,9 +1,9 @@
-import { formatBytes } from '@/utils/formatBytes';
 import type {
   WebpConversionReportItem,
   WebpConversionReportLabels,
   WebpConversionCsvReportItem,
 } from '@/types/tools/image';
+import { formatBytes } from '@/utils/formatBytes';
 export type {
   WebpConversionReportItem,
   WebpConversionReportLabels,
@@ -22,8 +22,18 @@ function escapeCsvValue(value: string): string {
   return value;
 }
 
-export function buildWebpConversionReportCsv(items: WebpConversionCsvReportItem[]): string {
-  const header = ['nazwa', 'inputSize', 'outputSize', 'ratio', 'usedQuality', 'status', 'error'];
+export function buildWebpConversionReportCsv(
+  items: WebpConversionCsvReportItem[],
+): string {
+  const header = [
+    'nazwa',
+    'inputSize',
+    'outputSize',
+    'ratio',
+    'usedQuality',
+    'status',
+    'error',
+  ];
   const lines = [header.join(',')];
 
   for (const item of items) {
@@ -49,7 +59,8 @@ export function buildWebpConversionReportText(
   const totalInput = items.reduce((sum, f) => sum + f.inputSize, 0);
   const totalOutput = items.reduce((sum, f) => sum + (f.outputSize ?? 0), 0);
   const saved = totalInput - totalOutput;
-  const savedPercent = totalInput > 0 ? Math.round((Math.abs(saved) / totalInput) * 100) : 0;
+  const savedPercent =
+    totalInput > 0 ? Math.round((Math.abs(saved) / totalInput) * 100) : 0;
 
   const trendLabel =
     saved >= 0

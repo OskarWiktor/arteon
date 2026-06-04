@@ -1,6 +1,6 @@
-import ProjectsCarouselClient from './ProjectsCarouselClient';
 import { getAllProjectPreviews } from '@/lib/projectsDataService';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
+import ProjectsCarouselClient from './ProjectsCarouselClient';
 
 type Props = {
   projects?: ProjectPreview[];

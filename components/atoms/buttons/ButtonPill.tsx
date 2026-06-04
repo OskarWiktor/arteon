@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
+import { disabledInteractiveClasses, focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import { disabledInteractiveClasses, focusRingClasses } from '@/lib/ui-classes';
 
 interface ButtonPillProps<T extends string | number> {
   value: T;
@@ -32,7 +32,9 @@ export default function ButtonPill<T extends string | number>({
       className={cn(
         buttonPillClasses,
         focusRingClasses,
-        isActive ? 'bg-primary text-white' : 'border-neutral-200 bg-white hover:bg-neutral-100',
+        isActive
+          ? 'bg-primary text-white'
+          : 'border-neutral-200 bg-white hover:bg-neutral-100',
         disabled && disabledInteractiveClasses,
         className,
       )}

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Konvertera WebP-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.",
-      "featureList": ["WebP to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert WebP to PDF", "WebP to PDF", "Free WebP to PDF converter"]
+      "featureList": [
+        "WebP to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert WebP to PDF",
+        "WebP to PDF",
+        "Free WebP to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Hur man konverterar WebP till PDF",
@@ -151,7 +159,10 @@
         },
         {
           "label": "Webbläsarstöd",
-          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Inbyggd PDF-visare"]
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Inbyggd PDF-visare"
+          ]
         },
         {
           "label": "Kompakt filstorlek",

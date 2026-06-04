@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Převeďte JSON do formátu XML. Automatické parsování a formátování. Zdarma.",
-      "featureList": ["JSON to XML conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert JSON to XML", "JSON to XML", "Free JSON to XML converter"]
+      "featureList": [
+        "JSON to XML conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert JSON to XML",
+        "JSON to XML",
+        "Free JSON to XML converter"
+      ]
     },
     "howTo": {
       "name": "Jak převést JSON na XML",

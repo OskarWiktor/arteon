@@ -1,6 +1,6 @@
 import LocaleLayout from '@/components/templates/LocaleLayout';
 import RootLayout from '@/components/templates/RootLayout';
-import { baseMetadata } from '@/lib/shared-metadata';
+import { baseMetadata } from '@/lib/seo/sharedMetadata';
 
 export const metadata = baseMetadata;
 

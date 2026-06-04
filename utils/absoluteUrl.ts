@@ -11,7 +11,9 @@ export function toAbsoluteUrl(path: string): string {
 
 export const siteUrl = SITE_URL;
 
-export function toAbsoluteImageUrl(imagePath: string | undefined): string | undefined {
+export function toAbsoluteImageUrl(
+  imagePath: string | undefined,
+): string | undefined {
   if (!imagePath) return undefined;
   return toAbsoluteUrl(imagePath);
 }

@@ -25,7 +25,9 @@
   "schemas": {
     "software": {
       "name": "Extractor de culori din imagine – paletă de culori din foto",
-      "alternateName": ["Extrageți paleta de culori dintr-o fotografie sau un logo"],
+      "alternateName": [
+        "Extrageți paleta de culori dintr-o fotografie sau un logo"
+      ],
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "ColorExtractor",
       "description": "Extractor gratuit de culori din imagine. Încărcați o fotografie, un logo sau un grafic și obțineți o paletă de până la 12 culori dominante cu coduri HEX și RGB. Procesarea se face în browser – fișierele nu sunt trimise pe server.",

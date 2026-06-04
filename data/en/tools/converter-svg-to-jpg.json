@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "SVG to JPG converter – free, unlimited files",
-      "alternateName": ["SVG to JPEG converter", "Convert SVG to JPG", "Rasterize SVG to JPG"],
+      "alternateName": [
+        "SVG to JPEG converter",
+        "Convert SVG to JPG",
+        "Rasterize SVG to JPG"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Free SVG to JPG converter. Rasterize SVG graphics to compact JPG in your browser. No uploads, no limits.",

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Konvertera BMP-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.",
-      "featureList": ["BMP to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert BMP to PDF", "BMP to PDF", "Free BMP to PDF converter"]
+      "featureList": [
+        "BMP to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert BMP to PDF",
+        "BMP to PDF",
+        "Free BMP to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Hur man konverterar BMP till PDF",

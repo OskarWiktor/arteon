@@ -205,7 +205,10 @@
         },
         {
           "label": "Suport în browsere",
-          "values": ["Toate browserele", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+          "values": [
+            "Toate browserele",
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          ]
         },
         {
           "label": "Adâncime de culoare",

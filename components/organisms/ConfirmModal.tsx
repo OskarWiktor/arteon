@@ -3,9 +3,13 @@
 import { createPortal } from 'react-dom';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
-import Button from '@/components/atoms/buttons/Button';
-import { flexCenterClasses, modalBackdropClasses, modalContentClasses } from '@/lib/ui-classes';
+import {
+  flexCenterClasses,
+  modalBackdropClasses,
+  modalContentClasses,
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import Button from '../atoms/buttons/Button';
 
 type ConfirmModalProps = {
   isOpen: boolean;
@@ -17,6 +21,22 @@ type ConfirmModalProps = {
   cancelLabel?: string;
 };
 
+/**
+ * Render a confirmation modal that prompts the user to confirm or cancel an action.
+ *
+ * The modal is mounted into document.body via a portal and is only rendered when the component
+ * is mounted and `isOpen` is true. It closes when the backdrop is clicked, the Escape key is
+ * pressed, the cancel button is clicked, or after confirming.
+ *
+ * @param isOpen - Controls whether the modal is visible
+ * @param onClose - Callback invoked to close the modal
+ * @param onConfirm - Callback invoked when the confirm action is triggered
+ * @param title - Heading text displayed at the top of the modal
+ * @param description - Optional supporting text displayed below the title
+ * @param confirmLabel - Label for the confirm button (default: `'Tak'`)
+ * @param cancelLabel - Label for the cancel button (default: `'Anuluj'`)
+ * @returns A React element rendering the modal portal when visible, or `null` otherwise
+ */
 export default function ConfirmModal({
   isOpen,
   onClose,
@@ -66,7 +86,7 @@ export default function ConfirmModal({
         <h3 id='confirm-modal-title' className='h3 mb-2'>
           {title}
         </h3>
-        {description && <p className='mb-6 text-sm text-mid'>{description}</p>}
+        {description && <p className='mb-6 text-sm'>{description}</p>}
         <div className='flex gap-3'>
           <Button variant='accent' size='small' onClick={handleConfirm}>
             {confirmLabel}

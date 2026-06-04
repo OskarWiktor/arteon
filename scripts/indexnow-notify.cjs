@@ -88,7 +88,9 @@ function sendToIndexNow(urls) {
       res.on('data', chunk => (data += chunk));
       res.on('end', () => {
         if (res.statusCode >= 200 && res.statusCode < 300) {
-          console.log(`✓ IndexNow: Submitted ${batch.length} URLs (status: ${res.statusCode})`);
+          console.log(
+            `✓ IndexNow: Submitted ${batch.length} URLs (status: ${res.statusCode})`,
+          );
           resolve();
         } else {
           console.log(`⚠ IndexNow response: ${res.statusCode} - ${data}`);

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Muunna HEIC-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.",
-      "featureList": ["HEIC to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert HEIC to PDF", "HEIC to PDF", "Free HEIC to PDF converter"]
+      "featureList": [
+        "HEIC to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert HEIC to PDF",
+        "HEIC to PDF",
+        "Free HEIC to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Kuinka muuntaa HEIC PDF-muotoon",
@@ -151,7 +159,10 @@
         },
         {
           "label": "Selaintuki",
-          "values": ["Safari 13+ (macOS / iOS)", "Sisäänrakennettu PDF-katselin"]
+          "values": [
+            "Safari 13+ (macOS / iOS)",
+            "Sisäänrakennettu PDF-katselin"
+          ]
         },
         {
           "label": "Pieni tiedostokoko",

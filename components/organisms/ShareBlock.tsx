@@ -1,10 +1,15 @@
 'use client';
 
-import { RiFacebookFill, RiLinkedinBoxFill, RiMailLine, RiTwitterXFill } from 'react-icons/ri';
+import {
+  RiFacebookFill,
+  RiLinkedinBoxFill,
+  RiMailLine,
+  RiTwitterXFill,
+} from 'react-icons/ri';
+import { focusRingClasses, normalIconSizeClasses } from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
 import Card from './Card';
 import ButtonCopy from '../atoms/buttons/ButtonCopy';
-import { cn } from '@/lib/utils';
-import { focusRingClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 type ShareBlockProps = {
   url: string;
@@ -15,6 +20,13 @@ type ShareBlockProps = {
 const shareBlockLinkClasses =
   'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-white transition hover:opacity-90';
 
+/**
+ * Render a share panel with buttons for Facebook, X (Twitter), LinkedIn, e-mail, and a copy-link action.
+ *
+ * @param url - The target URL to share and to copy to the clipboard
+ * @param title - The text used for social share text and as the e-mail subject
+ * @returns The rendered share panel JSX element
+ */
 export default function ShareBlock({ url, title }: ShareBlockProps) {
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
@@ -25,13 +37,21 @@ export default function ShareBlock({ url, title }: ShareBlockProps) {
   const mailHref = `mailto:?subject=${encodedTitle}&body=${encodedUrl}`;
 
   return (
-    <Card as='aside' className='mb-12 w-fit' aria-label='Udostępnij ten materiał'>
+    <Card
+      as='aside'
+      className='mb-12 w-fit'
+      aria-label='Udostępnij ten materiał'
+    >
       <div className='flex flex-wrap items-center gap-2'>
         <a
           href={facebookHref}
           target='_blank'
           rel='noopener noreferrer'
-          className={cn('bg-brand-facebook', shareBlockLinkClasses, focusRingClasses)}
+          className={cn(
+            'bg-brand-facebook',
+            shareBlockLinkClasses,
+            focusRingClasses,
+          )}
         >
           <RiFacebookFill className={normalIconSizeClasses} />
           Facebook
@@ -50,7 +70,11 @@ export default function ShareBlock({ url, title }: ShareBlockProps) {
           href={linkedinHref}
           target='_blank'
           rel='noopener noreferrer'
-          className={cn('bg-brand-linkedin', shareBlockLinkClasses, focusRingClasses)}
+          className={cn(
+            'bg-brand-linkedin',
+            shareBlockLinkClasses,
+            focusRingClasses,
+          )}
         >
           <RiLinkedinBoxFill className={normalIconSizeClasses} />
           LinkedIn
@@ -71,7 +95,7 @@ export default function ShareBlock({ url, title }: ShareBlockProps) {
           text={url}
           label='Kopiuj link'
           copiedLabel='Skopiowano'
-          onError={() => window.prompt('Skopiuj adres strony (Ctrl+C, Enter):', url)}
+          onError={() => prompt('Skopiuj adres strony (Ctrl+C, Enter):', url)}
         />
       </div>
     </Card>

@@ -205,7 +205,10 @@
         },
         {
           "label": "Suport în browsere",
-          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Doar Safari"]
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Doar Safari"
+          ]
         },
         {
           "label": "Adâncime de culoare",

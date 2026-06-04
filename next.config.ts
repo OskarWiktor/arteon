@@ -1,6 +1,6 @@
+import bundleAnalyzer from '@next/bundle-analyzer';
 import type { NextConfig } from 'next';
 import type { Redirect } from 'next/dist/lib/load-custom-routes';
-import bundleAnalyzer from '@next/bundle-analyzer';
 import { ALL_STATIC_REDIRECTS } from './lib/redirects';
 
 const withBundleAnalyzer = bundleAnalyzer({
@@ -34,7 +34,8 @@ const securityHeaders = [
   { key: 'X-DNS-Prefetch-Control', value: 'on' },
   {
     key: 'Permissions-Policy',
-    value: 'camera=(), microphone=(), geolocation=(), browsing-topics=(), attribution-reporting=()',
+    value:
+      'camera=(), microphone=(), geolocation=(), browsing-topics=(), attribution-reporting=()',
   },
   { key: 'Content-Security-Policy', value: cspDirectives },
   { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
@@ -78,7 +79,13 @@ const nextConfig: NextConfig = {
     optimizeCss: true,
   },
   // Externalize native dependencies from server bundle
-  serverExternalPackages: ['sharp', 'pdfjs-dist', 'heic2any', 'gifenc', 'utif2'],
+  serverExternalPackages: [
+    'sharp',
+    'pdfjs-dist',
+    'heic2any',
+    'gifenc',
+    'utif2',
+  ],
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 1080, 1920],
@@ -92,13 +99,21 @@ const nextConfig: NextConfig = {
       {
         source: '/assets/:path*',
         headers: [
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
           { key: 'X-Robots-Tag', value: 'noindex' },
         ],
       },
       {
         source: '/fonts/:path*',
-        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
       },
     ];
 
@@ -107,7 +122,10 @@ const nextConfig: NextConfig = {
       {
         source: '/:path*',
         headers: [
-          { key: 'Cache-Control', value: 'no-cache, no-store, must-revalidate' },
+          {
+            key: 'Cache-Control',
+            value: 'no-cache, no-store, must-revalidate',
+          },
           { key: 'Pragma', value: 'no-cache' },
           { key: 'Expires', value: '0' },
         ],
@@ -125,16 +143,20 @@ const nextConfig: NextConfig = {
       : [...devHeaders, ...staticAssetHeaders];
   },
   async redirects() {
-    const staticRedirects: Redirect[] = Object.entries(ALL_STATIC_REDIRECTS).map(
-      ([source, destination]) => ({
-        source,
-        destination,
-        statusCode: 301,
-      }),
-    );
+    const staticRedirects: Redirect[] = Object.entries(
+      ALL_STATIC_REDIRECTS,
+    ).map(([source, destination]) => ({
+      source,
+      destination,
+      statusCode: 301,
+    }));
 
     const patternRedirects: Redirect[] = [
-      { source: '/projects/:slug', destination: '/realizacje/:slug', statusCode: 301 },
+      {
+        source: '/projects/:slug',
+        destination: '/realizacje/:slug',
+        statusCode: 301,
+      },
       {
         source: '/edukacja/design/:path*',
         destination: '/edukacja/grafika/:path*',
@@ -165,10 +187,19 @@ const nextConfig: NextConfig = {
     // is handled by middleware.ts at the edge level in a single 301 hop.
 
     const sitemapRedirects: Redirect[] = [
-      { source: '/sitemap-0.xml', destination: '/sitemap.xml', statusCode: 301 },
+      {
+        source: '/sitemap-0.xml',
+        destination: '/sitemap.xml',
+        statusCode: 301,
+      },
     ];
 
-    return [...staticRedirects, ...patternRedirects, ...localeRootRedirects, ...sitemapRedirects];
+    return [
+      ...staticRedirects,
+      ...patternRedirects,
+      ...localeRootRedirects,
+      ...sitemapRedirects,
+    ];
   },
 };
 

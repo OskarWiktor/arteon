@@ -207,7 +207,10 @@
         },
         {
           "label": "Web browser support",
-          "values": ["Safari only", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+          "values": [
+            "Safari only",
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          ]
         },
         {
           "label": "Color depth",

@@ -1,11 +1,11 @@
+import Link from 'next/link';
+import type { ReactNode } from 'react';
 import {
   buttonAccentVariantClasses,
   buttonNormalVariantClasses,
   focusRingClasses,
-} from '@/lib/ui-classes';
+} from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import Link from 'next/link';
-import type { ReactNode } from 'react';
 import ArrowIcon from '../ArrowIcon';
 
 type ButtonVariant = 'normal' | 'accent';
@@ -40,7 +40,12 @@ export default function ButtonLink({
   ariaLabel,
   variant = 'normal',
 }: ButtonLinkProps) {
-  const classes = cn(buttonLinkClasses, focusRingClasses, variantClasses[variant], className);
+  const classes = cn(
+    buttonLinkClasses,
+    focusRingClasses,
+    variantClasses[variant],
+    className,
+  );
 
   if (isExternalHref(href)) {
     return (
@@ -59,7 +64,12 @@ export default function ButtonLink({
   }
 
   return (
-    <Link href={href} prefetch={false} className={classes} aria-label={ariaLabel}>
+    <Link
+      href={href}
+      prefetch={false}
+      className={classes}
+      aria-label={ariaLabel}
+    >
       <span>{children}</span>
 
       {arrow && <ArrowIcon />}

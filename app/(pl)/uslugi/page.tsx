@@ -1,27 +1,45 @@
-﻿import HeroBanner from '@/components/organisms/HeroBanner';
-import CTABanner from '@/components/organisms/CTABanner';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+﻿import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import CTABanner from '@/components/organisms/CTABanner';
+import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { siteUrl } from '@/utils/absoluteUrl';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
 const SERVICES = [
   { name: 'Strony WordPress', path: '/uslugi/tworzenie-stron-wordpress' },
   { name: 'Sklepy internetowe', path: '/uslugi/sklepy-internetowe' },
   { name: 'Blogi internetowe', path: '/uslugi/blogi-internetowe' },
-  { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne/projekt-wizytowki' },
+  {
+    name: 'Projekt wizytówki',
+    path: '/uslugi/projekty-graficzne/projekt-wizytowki',
+  },
   { name: 'Projekt ulotki', path: '/uslugi/projekty-graficzne/projekt-ulotki' },
-  { name: 'Teczka ofertowa', path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej' },
-  { name: 'Papier firmowy', path: '/uslugi/projekty-graficzne/projekt-papieru-firmowego' },
-  { name: 'Odzież firmowa', path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej' },
+  {
+    name: 'Teczka ofertowa',
+    path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+  },
+  {
+    name: 'Papier firmowy',
+    path: '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+  },
+  {
+    name: 'Odzież firmowa',
+    path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
+  },
   { name: 'Projekt logo', path: '/uslugi/projekty-graficzne/projekt-logo' },
-  { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
+  {
+    name: 'Projekt katalogu',
+    path: '/uslugi/projekty-graficzne/projekt-katalogu',
+  },
   {
     name: 'Identyfikacja wizualna',
     path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
   },
-  { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
+  {
+    name: 'Projekt graficzny strony',
+    path: '/uslugi/projekty-graficzne/projekt-graficzny-strony',
+  },
   {
     name: 'Szablony postów do mediów społecznościowych',
     path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
@@ -30,12 +48,24 @@ const SERVICES = [
     name: 'Kupony rabatowe i vouchery',
     path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
   },
-  { name: 'Projekt cennika', path: '/uslugi/projekty-graficzne/projekt-cennika' },
-  { name: 'Karty lojalnościowe', path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
-  { name: 'Projekt menu restauracji', path: '/uslugi/projekty-graficzne/projekt-menu-restauracji' },
+  {
+    name: 'Projekt cennika',
+    path: '/uslugi/projekty-graficzne/projekt-cennika',
+  },
+  {
+    name: 'Karty lojalnościowe',
+    path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
+  },
+  {
+    name: 'Projekt menu restauracji',
+    path: '/uslugi/projekty-graficzne/projekt-menu-restauracji',
+  },
   { name: 'Audyt SEO', path: '/uslugi/marketing/audyt-seo' },
   { name: 'Optymalizacja SEO', path: '/uslugi/marketing/optymalizacja-seo' },
-  { name: 'Pozycjonowanie stron', path: '/uslugi/marketing/pozycjonowanie-stron' },
+  {
+    name: 'Pozycjonowanie stron',
+    path: '/uslugi/marketing/pozycjonowanie-stron',
+  },
   { name: 'Tworzenie treści', path: '/uslugi/tworzenie-tresci' },
 ] as const;
 
@@ -69,8 +99,9 @@ export default function OfferPage() {
         title='Usługi dla Twojej firmy'
         description={
           <>
-            Projektujemy strony internetowe, sklepy, materiały graficzne i prowadzimy działania
-            marketingowe. Wszystko w jednym miejscu, z naciskiem na jakość i wyniki.
+            Projektujemy strony internetowe, sklepy, materiały graficzne i
+            prowadzimy działania marketingowe. Wszystko w jednym miejscu, z
+            naciskiem na jakość i wyniki.
           </>
         }
       />
@@ -83,16 +114,18 @@ export default function OfferPage() {
           title='Witryny internetowe'
           items={[
             {
-              topImageSrc: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
+              topImageSrc:
+                '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
               topImageAlt:
                 'Strona internetowa dla gabinetu psychologicznego MSC Psychotherapy - realizacja Arteon',
               title: 'Strony internetowe',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3'>
-                    Tworzymy nowoczesne strony internetowe w oparciu o sprawdzone technologie. Każdy
-                    projekt obejmuje dedykowany wygląd oraz treści dopasowane do Twoich potrzeb i
-                    oczekiwań Twoich klientów.
+                    Tworzymy nowoczesne strony internetowe w oparciu o
+                    sprawdzone technologie. Każdy projekt obejmuje dedykowany
+                    wygląd oraz treści dopasowane do Twoich potrzeb i oczekiwań
+                    Twoich klientów.
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/tworzenie-stron-wordpress'>
@@ -103,14 +136,17 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
-              topImageAlt: 'Sklep internetowy dla marki odzieżowej Trilllizo - realizacja Arteon',
+              topImageSrc:
+                '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              topImageAlt:
+                'Sklep internetowy dla marki odzieżowej Trilllizo - realizacja Arteon',
               title: 'Sklepy internetowe',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3'>
-                    Tworzymy dedykowane platformy sprzedażowe nastawione na szybkie działanie,
-                    przepisy unijne i widoczność w wynikach wyszukiwarki Google.
+                    Tworzymy dedykowane platformy sprzedażowe nastawione na
+                    szybkie działanie, przepisy unijne i widoczność w wynikach
+                    wyszukiwarki Google.
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/sklepy-internetowe'>
@@ -123,13 +159,15 @@ export default function OfferPage() {
             {
               topImageSrc:
                 '/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp',
-              topImageAlt: 'Strona z blogiem dla firmy budowlanej Izoluk - realizacja Arteon',
+              topImageAlt:
+                'Strona z blogiem dla firmy budowlanej Izoluk - realizacja Arteon',
               title: 'Blogi internetowe',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3'>
-                    Tworzymy blogi internetowe, na których z łatwością dodasz swoje treści. Stawiamy
-                    na optymalizację techniczną tak, aby zwiększyć widoczność każdego Twojego wpisu.
+                    Tworzymy blogi internetowe, na których z łatwością dodasz
+                    swoje treści. Stawiamy na optymalizację techniczną tak, aby
+                    zwiększyć widoczność każdego Twojego wpisu.
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/blogi-internetowe'>
@@ -151,19 +189,24 @@ export default function OfferPage() {
           grid='three'
           items={[
             {
-              topImageSrc: '/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp',
+              topImageSrc:
+                '/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp',
               topImageAlt:
                 'Projekt wizytówki dla kancelarii adwokackiej LUX NOVA - realizacja Arteon',
               title: 'Projekt wizytówki',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Wizytówka wyjaśnia czym się zajmujesz w kilka sekund. Tworzymy projekty
-                    wizytówek, które łączą czytelność, elegancję i profesjonalny układ. Otrzymujesz
-                    gotowe pliki źródłowe oraz do druku.
+                    Wizytówka wyjaśnia czym się zajmujesz w kilka sekund.
+                    Tworzymy projekty wizytówek, które łączą czytelność,
+                    elegancję i profesjonalny układ. Otrzymujesz gotowe pliki
+                    źródłowe oraz do druku.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-wizytowki'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-wizytowki'
+                    >
                       Przejdź do oferty
                     </ButtonLink>
                   </div>
@@ -171,19 +214,24 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp',
+              topImageSrc:
+                '/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp',
               topImageAlt:
                 'Folder reklamowy dla firmy wykańczającej wnętrza Simba Group - realizacja Arteon',
               title: 'Projekt ulotki',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Ulotka to najprostszy sposób, by dotrzeć lokalnie do nowych klientów.
-                    Zaprojektujemy ją tak, by jasno przedstawiała ofertę, przyciągała wzrok i
-                    kierowała prosto do zakupu lub kontaktu.
+                    Ulotka to najprostszy sposób, by dotrzeć lokalnie do nowych
+                    klientów. Zaprojektujemy ją tak, by jasno przedstawiała
+                    ofertę, przyciągała wzrok i kierowała prosto do zakupu lub
+                    kontaktu.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-ulotki'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-ulotki'
+                    >
                       Przejdź do oferty
                     </ButtonLink>
                   </div>
@@ -191,19 +239,24 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
+              topImageSrc:
+                '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
               topImageAlt:
                 'Teczka ofertowa dla kancelarii adwokackiej LUX NOVA - realizacja Arteon',
               title: 'Teczka ofertowa',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Teczka ofertowa podnosi prestiż firmy i zwiększa wiarygodność w oczach klientów.
-                    Projekt teczki dopasowujemy do Twojej identyfikacji wizualnej, tworząc spójny i
+                    Teczka ofertowa podnosi prestiż firmy i zwiększa
+                    wiarygodność w oczach klientów. Projekt teczki dopasowujemy
+                    do Twojej identyfikacji wizualnej, tworząc spójny i
                     elegancki materiał firmowy.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-teczki-ofertowej'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-teczki-ofertowej'
+                    >
                       Przejdź do oferty
                     </ButtonLink>
                   </div>
@@ -211,17 +264,23 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
-              topImageAlt: 'Papier firmowy dla kancelarii adwokackiej LUX NOVA - realizacja Arteon',
+              topImageSrc:
+                '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
+              topImageAlt:
+                'Papier firmowy dla kancelarii adwokackiej LUX NOVA - realizacja Arteon',
               title: 'Papier firmowy',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Papier firmowy wzmacnia profesjonalny wizerunek w każdej korespondencji.
-                    Przygotowujemy szablony Word i PDF i wersję gotową do druku.
+                    Papier firmowy wzmacnia profesjonalny wizerunek w każdej
+                    korespondencji. Przygotowujemy szablony Word i PDF i wersję
+                    gotową do druku.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-papieru-firmowego'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-papieru-firmowego'
+                    >
                       Przejdź do oferty
                     </ButtonLink>
                   </div>
@@ -231,17 +290,21 @@ export default function OfferPage() {
             {
               topImageSrc:
                 '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp',
-              topImageAlt: 'Spójna identyfikacja wizualna firmy - elementy brandingu',
+              topImageAlt:
+                'Spójna identyfikacja wizualna firmy - elementy brandingu',
               title: 'Odzież firmowa',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Odzież z logo zwiększa rozpoznawalność marki. Projektujemy nadruki i hafty dla
-                    zespołów, eventów i punktów sprzedaży - w wersjach pod sitodruk, DTF lub haft
-                    komputerowy.
+                    Odzież z logo zwiększa rozpoznawalność marki. Projektujemy
+                    nadruki i hafty dla zespołów, eventów i punktów sprzedaży -
+                    w wersjach pod sitodruk, DTF lub haft komputerowy.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-odziezy-firmowej'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-odziezy-firmowej'
+                    >
                       Przejdź do oferty
                     </ButtonLink>
                   </div>
@@ -251,17 +314,22 @@ export default function OfferPage() {
             {
               topImageSrc:
                 '/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp',
-              topImageAlt: 'Logo dla firmy wykończeniowej Finish Masters - realizacja Arteon',
+              topImageAlt:
+                'Logo dla firmy wykończeniowej Finish Masters - realizacja Arteon',
               title: 'Projekt logo',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Logo to fundament identyfikacji wizualnej. Tworzymy znak, który oddaje charakter
-                    marki i pozostaje czytelny w każdym formacie. Otrzymujesz wersje wektorowe,
-                    kolorystyczne i mini-księgę znaku.
+                    Logo to fundament identyfikacji wizualnej. Tworzymy znak,
+                    który oddaje charakter marki i pozostaje czytelny w każdym
+                    formacie. Otrzymujesz wersje wektorowe, kolorystyczne i
+                    mini-księgę znaku.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-logo'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-logo'
+                    >
                       Przejdź do oferty
                     </ButtonLink>
                   </div>
@@ -269,18 +337,24 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/restoquality/mockup-gazetka-restoquality.webp',
-              topImageAlt: 'Katalog produktów dla gastronomii RestoQuality - realizacja Arteon',
+              topImageSrc:
+                '/assets/projects/restoquality/mockup-gazetka-restoquality.webp',
+              topImageAlt:
+                'Katalog produktów dla gastronomii RestoQuality - realizacja Arteon',
               title: 'Projekt katalogu',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Katalog firmowy to wizualna prezentacja Twojej oferty. Zadbamy o skład, zdjęcia
-                    i typografię, dzięki czemu każdy produkt będzie przedstawiony czytelnie i
-                    estetycznie - w wersji drukowanej lub .
+                    Katalog firmowy to wizualna prezentacja Twojej oferty.
+                    Zadbamy o skład, zdjęcia i typografię, dzięki czemu każdy
+                    produkt będzie przedstawiony czytelnie i estetycznie - w
+                    wersji drukowanej lub .
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-katalogu'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-katalogu'
+                    >
                       Przejdź do oferty
                     </ButtonLink>
                   </div>
@@ -288,16 +362,17 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
+              topImageSrc:
+                '/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp',
               topImageAlt:
                 'Identyfikacja wizualna dla kancelarii LUX NOVA - teczka, wizytówki, papier firmowy',
               title: 'Identyfikacja wizualna',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe.
-                    Projektujemy identyfikację, która buduje zaufanie i spójność w każdym punkcie
-                    styku z klientem.
+                    Kompletny system wizualny marki: logo, kolory, typografia i
+                    materiały firmowe. Projektujemy identyfikację, która buduje
+                    zaufanie i spójność w każdym punkcie styku z klientem.
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink
@@ -311,19 +386,23 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
+              topImageSrc:
+                '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
               topImageAlt:
                 'Projekt graficzny strony internetowej dla gabinetu psychologicznego MSC Psychotherapy',
               title: 'Projekt graficzny strony',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Makiety i layouty stron internetowych tworzone z myślą o konwersji i
-                    doświadczeniu użytkownika. Łączymy estetykę, UX i SEO, aby Twoja witryna
-                    wyróżniała się w sieci.
+                    Makiety i layouty stron internetowych tworzone z myślą o
+                    konwersji i doświadczeniu użytkownika. Łączymy estetykę, UX
+                    i SEO, aby Twoja witryna wyróżniała się w sieci.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-graficzny-strony'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-graficzny-strony'
+                    >
                       Przejdź do oferty
                     </ButtonLink>
                   </div>
@@ -331,17 +410,19 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
+              topImageSrc:
+                '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               topImageAlt:
                 'Szablony postów na media społecznościowe dla gabinetu psychologicznego MSC Psychotherapy',
               title: 'Szablony postów do mediów społecznościowych',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn,
-                    ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej
-                    marki. Otrzymujesz pliki gotowe do edycji i eksportu z czytelną hierarchią
-                    treści i miejscem na wezwanie do działania.
+                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy
+                    LinkedIn, ułatwiające regularne publikowanie i pomagające
+                    utrzymać spójny styl Twojej marki. Otrzymujesz pliki gotowe
+                    do edycji i eksportu z czytelną hierarchią treści i miejscem
+                    na wezwanie do działania.
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink
@@ -357,14 +438,15 @@ export default function OfferPage() {
             {
               topImageSrc:
                 '/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp',
-              topImageAlt: 'Bon walentynkowy dla salonu kosmetycznego Kasia - realizacja Arteon',
+              topImageAlt:
+                'Bon walentynkowy dla salonu kosmetycznego Kasia - realizacja Arteon',
               title: 'Kupony rabatowe i vouchery',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Kupony rabatowe i vouchery, które zachęcają Twoich klientów do powrotu i
-                    wspierają sprzedaż. Dostarczamy gotowe pliki do druku, spójne z wizerunkiem
-                    Twojej marki.
+                    Kupony rabatowe i vouchery, które zachęcają Twoich klientów
+                    do powrotu i wspierają sprzedaż. Dostarczamy gotowe pliki do
+                    druku, spójne z wizerunkiem Twojej marki.
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink
@@ -378,19 +460,23 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
+              topImageSrc:
+                '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
               topImageAlt:
                 'Projekt papieru firmowego dla kancelarii LUX NOVA - przykład materiału drukowanego',
               title: 'Projekt cennika',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Profesjonalne cenniki, które porządkują Twoją ofertę i budują profesjonalny
-                    wizerunek. Dostarczamy pliki gotowe do druku oraz dodania na stronę czy media
-                    społecznościowe.
+                    Profesjonalne cenniki, które porządkują Twoją ofertę i
+                    budują profesjonalny wizerunek. Dostarczamy pliki gotowe do
+                    druku oraz dodania na stronę czy media społecznościowe.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-cennika'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-cennika'
+                    >
                       Przejdź do oferty
                     </ButtonLink>
                   </div>
@@ -400,14 +486,16 @@ export default function OfferPage() {
             {
               topImageSrc:
                 '/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp',
-              topImageAlt: 'Budowanie lojalności klientów - social proof i zaufanie',
+              topImageAlt:
+                'Budowanie lojalności klientów - social proof i zaufanie',
               title: 'Karty lojalnościowe',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Tworzymy projekty kart lojalnościowych, które zachęcają do regularnych powrotów
-                    Twoich klientów. Projektujemy czytelne układy z miejscem na pieczątki.
-                    Otrzymujesz gotowe pliki do druku.
+                    Tworzymy projekty kart lojalnościowych, które zachęcają do
+                    regularnych powrotów Twoich klientów. Projektujemy czytelne
+                    układy z miejscem na pieczątki. Otrzymujesz gotowe pliki do
+                    druku.
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink
@@ -421,18 +509,23 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/nocturna/nocturna-menu-mockup.webp',
-              topImageAlt: 'Ekskluzywna karta koktajli dla baru Nocturna - realizacja Arteon',
+              topImageSrc:
+                '/assets/projects/nocturna/nocturna-menu-mockup.webp',
+              topImageAlt:
+                'Ekskluzywna karta koktajli dla baru Nocturna - realizacja Arteon',
               title: 'Projekt menu restauracji',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Menu dla restauracji, baru czy kawiarni. Tworzymy czytelne układy, ze spójną
-                    typografią zgodnie z wizerunkiem Twojej firmy. Otrzymujesz pliki do druku oraz
-                    wersję online.
+                    Menu dla restauracji, baru czy kawiarni. Tworzymy czytelne
+                    układy, ze spójną typografią zgodnie z wizerunkiem Twojej
+                    firmy. Otrzymujesz pliki do druku oraz wersję online.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/projekty-graficzne/projekt-menu-restauracji'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/projekty-graficzne/projekt-menu-restauracji'
+                    >
                       Przejdź do oferty
                     </ButtonLink>
                   </div>
@@ -449,15 +542,16 @@ export default function OfferPage() {
           items={[
             {
               topImageSrc: '/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp',
-              topImageAlt: 'Ekran Google Search Console podczas audytu SEO strony internetowej',
+              topImageAlt:
+                'Ekran Google Search Console podczas audytu SEO strony internetowej',
               title: 'Audyt SEO',
               subtitle: 'Diagnoza i priorytety działań',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3'>
-                    Przeprowadzamy audyt SEO, a następnie ustalamy cele i zakres na trzy najbliższe
-                    miesiące: tematy treści, podstrony do dopracowania i działania wspierające Twoją
-                    pozycję.
+                    Przeprowadzamy audyt SEO, a następnie ustalamy cele i zakres
+                    na trzy najbliższe miesiące: tematy treści, podstrony do
+                    dopracowania i działania wspierające Twoją pozycję.
                   </p>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/marketing/audyt-seo'>
@@ -468,18 +562,24 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/arteon-baners-camper-albania-mockup.webp',
-              topImageAlt: 'Strona Camper Albania po optymalizacji SEO - wynik 95/100 w PageSpeed',
+              topImageSrc:
+                '/assets/projects/arteon-baners-camper-albania-mockup.webp',
+              topImageAlt:
+                'Strona Camper Albania po optymalizacji SEO - wynik 95/100 w PageSpeed',
               title: 'Optymalizacja SEO',
               subtitle: 'Wdrożenia po audycie',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3'>
-                    Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak, aby
-                    Google uznał ją za wartościową i lepszą od Twojej konkurencji.
+                    Optymalizujemy prędkość strony i poprawiamy ją od strony
+                    technicznej tak, aby Google uznał ją za wartościową i lepszą
+                    od Twojej konkurencji.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/marketing/optymalizacja-seo'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/marketing/optymalizacja-seo'
+                    >
                       Przejdź do optymalizacji SEO
                     </ButtonLink>
                   </div>
@@ -487,18 +587,24 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
-              topImageAlt: 'Pozycjonowanie stron internetowych - strategia SEO dla firm',
+              topImageSrc:
+                '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              topImageAlt:
+                'Pozycjonowanie stron internetowych - strategia SEO dla firm',
               title: 'Pozycjonowanie stron',
               subtitle: 'Stały wzrost widoczności',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3'>
-                    Budujemy widoczność strategicznym działaniem co miesiąc. Wprowadzamy treści,
-                    które odpowiadają na potrzeby Twoich klientów.
+                    Budujemy widoczność strategicznym działaniem co miesiąc.
+                    Wprowadzamy treści, które odpowiadają na potrzeby Twoich
+                    klientów.
                   </p>
                   <div className='mt-auto'>
-                    <ButtonLink arrow href='/uslugi/marketing/pozycjonowanie-stron'>
+                    <ButtonLink
+                      arrow
+                      href='/uslugi/marketing/pozycjonowanie-stron'
+                    >
                       Przejdź do pozycjonowania stron
                     </ButtonLink>
                   </div>
@@ -514,7 +620,8 @@ export default function OfferPage() {
           title='Tworzenie treści'
           items={[
             {
-              topImageSrc: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
+              topImageSrc:
+                '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
               topImageAlt:
                 'Treści na stronę internetową dla gabinetu psychologicznego MSC Psychotherapy',
               title: 'Strony www',
@@ -522,7 +629,10 @@ export default function OfferPage() {
                 <div className='flex h-full flex-col'>
                   <ul className='mb-3 list-disc space-y-1 pl-4'>
                     <li>Piszemy treści, które jasno przedstawiają ofertę</li>
-                    <li>Układamy strukturę, by prowadziła odbiorcę przez kolejne etapy</li>
+                    <li>
+                      Układamy strukturę, by prowadziła odbiorcę przez kolejne
+                      etapy
+                    </li>
                     <li>Dostosowujemy język do Twojej branży i klientów</li>
                   </ul>
                   <div className='mt-auto'>
@@ -534,7 +644,8 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
+              topImageSrc:
+                '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
               topImageAlt: 'Artykuły eksperckie - realizacja strony Perły Mocy',
               title: 'Artykuły eksperckie',
               description: (
@@ -542,7 +653,10 @@ export default function OfferPage() {
                   <ul className='mb-3 list-disc space-y-1 pl-4'>
                     <li>Przygotowujemy artykuły eksperckie i edukacyjne</li>
                     <li>Optymalizujemy je pod SEO, by wzmacniały widoczność</li>
-                    <li>Planujemy publikacje, by utrzymać regularność i wspomóc SEO</li>
+                    <li>
+                      Planujemy publikacje, by utrzymać regularność i wspomóc
+                      SEO
+                    </li>
                   </ul>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/tworzenie-tresci'>
@@ -553,15 +667,22 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
-              topImageAlt: 'Opisy produktów e-commerce dla sklepu odzieżowego Trilllizo',
+              topImageSrc:
+                '/assets/projects/trilllizo/moskup-strony-trilllizo.webp',
+              topImageAlt:
+                'Opisy produktów e-commerce dla sklepu odzieżowego Trilllizo',
               title: 'E-commerce: opisy',
               description: (
                 <div className='flex h-full flex-col'>
                   <ul className='mb-3 list-disc space-y-1 pl-4'>
                     <li>Piszemy opisy produktów pokazujące korzyści</li>
-                    <li>Tworzymy krótkie treści do szybkich decyzji zakupowych</li>
-                    <li>Przygotowujemy rozbudowane opisy premium dla produktów wyższej klasy</li>
+                    <li>
+                      Tworzymy krótkie treści do szybkich decyzji zakupowych
+                    </li>
+                    <li>
+                      Przygotowujemy rozbudowane opisy premium dla produktów
+                      wyższej klasy
+                    </li>
                   </ul>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/tworzenie-tresci'>
@@ -572,14 +693,17 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
+              topImageSrc:
+                '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               topImageAlt:
                 'Treści do mediów społecznościowych dla gabinetu psychologicznego MSC Psychotherapy',
               title: 'Media społecznościowe: treści',
               description: (
                 <div className='flex h-full flex-col'>
                   <ul className='mb-3 list-disc space-y-1 pl-4'>
-                    <li>Przygotowujemy posty, które zatrzymują uwagę i reakcje</li>
+                    <li>
+                      Przygotowujemy posty, które zatrzymują uwagę i reakcje
+                    </li>
                     <li>Piszemy scenariusze z jasnym wezwaniem do działania</li>
                     <li>Układamy scenariusze rolek pod większe zasięgi</li>
                   </ul>
@@ -592,14 +716,21 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp',
-              topImageAlt: 'Folder ofertowy dla firmy wykańczającej wnętrza Simba Group',
+              topImageSrc:
+                '/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp',
+              topImageAlt:
+                'Folder ofertowy dla firmy wykańczającej wnętrza Simba Group',
               title: 'Oferty i case studies',
               description: (
                 <div className='flex h-full flex-col'>
                   <ul className='mb-3 list-disc space-y-1 pl-4'>
-                    <li>Projektujemy oferty sprzedażowe podkreślające Twoją wartość</li>
-                    <li>Opracowujemy case studies pokazujące efekty współpracy</li>
+                    <li>
+                      Projektujemy oferty sprzedażowe podkreślające Twoją
+                      wartość
+                    </li>
+                    <li>
+                      Opracowujemy case studies pokazujące efekty współpracy
+                    </li>
                   </ul>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/tworzenie-tresci'>
@@ -610,7 +741,8 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
+              topImageSrc:
+                '/assets/projects/msc/moskup-strony-msc-psychotherapy.webp',
               topImageAlt: 'Korekta i redakcja treści na stronę internetową',
               title: 'Korekta i redakcja',
               description: (
@@ -618,7 +750,9 @@ export default function OfferPage() {
                   <ul className='mb-3 list-disc space-y-1 pl-4'>
                     <li>Poprawiamy błędy językowe i stylistyczne</li>
                     <li>Ujednolicamy format, ton i układ treści</li>
-                    <li>Dostosowujemy teksty pod SEO dla lepszej widoczności</li>
+                    <li>
+                      Dostosowujemy teksty pod SEO dla lepszej widoczności
+                    </li>
                   </ul>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='/uslugi/tworzenie-tresci'>

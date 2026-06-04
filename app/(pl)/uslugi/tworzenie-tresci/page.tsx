@@ -13,27 +13,26 @@ import {
   RiPencilLine,
   RiShoppingCartLine,
 } from 'react-icons/ri';
-
-import BenefitBelt from '@/components/organisms/BenefitBelt';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import Divider from '@/components/atoms/Divider';
+import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionBento from '@/components/organisms/sections/SectionBento';
-import WorkSteps from '@/components/organisms/WorkSteps';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import Divider from '@/components/atoms/Divider';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import Wrapper from '@/components/atoms/Wrapper';
-import { buildServiceSchema } from '@/lib/serviceSchema';
-import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import { siteUrl } from '@/utils/absoluteUrl';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { buildServiceSchema } from '@/lib/seo/serviceSchema';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import { siteUrl } from '@/utils/absoluteUrl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({
@@ -56,7 +55,9 @@ export const metadata = {
   title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
   description:
     'Klarowne teksty dopasowane do odbiorcy. Artykuły blogowe, opisy produktów i treści na strony z redakcją pod SEO.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/tworzenie-tresci' },
+  alternates: {
+    canonical: 'https://www.arteonagency.pl/uslugi/tworzenie-tresci',
+  },
   openGraph: {
     title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
     description:
@@ -80,8 +81,8 @@ export default function OfferContentPage() {
         title='Tworzenie treści'
         description={
           <>
-            Tworzymy artykuły, opisy produktów i treści na strony. Redakcja pod SEO i spójny język
-            marki.
+            Tworzymy artykuły, opisy produktów i treści na strony. Redakcja pod
+            SEO i spójny język marki.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -108,35 +109,67 @@ export default function OfferContentPage() {
           items={[
             {
               title: 'Treści pod SEO - widoczność w Google',
-              icon: <RiFileSearchLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileSearchLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Redakcja treści sprzedażowych i marketingowych',
-              icon: <RiArticleLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiArticleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Język marki - spójny ton komunikacji',
-              icon: <RiChatQuoteLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiChatQuoteLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Treści budujące emocje i transformację klienta',
-              icon: <IoSparkles className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <IoSparkles
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Artykuły i wpisy eksperckie na bloga',
-              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBookOpenLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Scenariusze do rolek i social mediów',
-              icon: <RiShareForwardLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiShareForwardLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Opisy produktów wspierające SEO',
-              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiPencilRuler2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Treści dopasowane do archetypu i wartości marki',
-              icon: <RiTeamLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiTeamLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
           ]}
         />
@@ -154,7 +187,10 @@ export default function OfferContentPage() {
                 <div className='flex h-full flex-col'>
                   <ul className='mb-3 list-disc space-y-1 pl-4 text-sm'>
                     <li>Piszemy treści, które jasno przedstawiają ofertę</li>
-                    <li>Układamy strukturę, by prowadziła odbiorcę przez kolejne etapy</li>
+                    <li>
+                      Układamy strukturę, by prowadziła odbiorcę przez kolejne
+                      etapy
+                    </li>
                     <li>Dostosowujemy język do Twojej branży i klientów</li>
                   </ul>
                   <div className='mt-auto'>
@@ -174,7 +210,10 @@ export default function OfferContentPage() {
                   <ul className='mb-3 list-disc space-y-1 pl-4 text-sm'>
                     <li>Przygotowujemy artykuły eksperckie i edukacyjne</li>
                     <li>Optymalizujemy je pod SEO, by wzmacniały widoczność</li>
-                    <li>Planujemy publikacje, by utrzymać regularność i wspomóc SEO</li>
+                    <li>
+                      Planujemy publikacje, by utrzymać regularność i wspomóc
+                      SEO
+                    </li>
                   </ul>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='#kontakt'>
@@ -192,8 +231,13 @@ export default function OfferContentPage() {
                 <div className='flex h-full flex-col'>
                   <ul className='mb-3 list-disc space-y-1 pl-4 text-sm'>
                     <li>Piszemy opisy produktów pokazujące korzyści</li>
-                    <li>Tworzymy krótkie treści do szybkich decyzji zakupowych</li>
-                    <li>Przygotowujemy rozbudowane opisy premium dla produktów wyższej klasy</li>
+                    <li>
+                      Tworzymy krótkie treści do szybkich decyzji zakupowych
+                    </li>
+                    <li>
+                      Przygotowujemy rozbudowane opisy premium dla produktów
+                      wyższej klasy
+                    </li>
                   </ul>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='#kontakt'>
@@ -210,7 +254,9 @@ export default function OfferContentPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <ul className='mb-3 list-disc space-y-1 pl-4 text-sm'>
-                    <li>Przygotowujemy posty, które zatrzymują uwagę i reakcje</li>
+                    <li>
+                      Przygotowujemy posty, które zatrzymują uwagę i reakcje
+                    </li>
                     <li>Piszemy scenariusze z jasnym wezwaniem do działania</li>
                     <li>Układamy scenariusze rolek pod większe zasięgi</li>
                   </ul>
@@ -229,8 +275,13 @@ export default function OfferContentPage() {
               description: (
                 <div className='flex h-full flex-col'>
                   <ul className='mb-3 list-disc space-y-1 pl-4 text-sm'>
-                    <li>Projektujemy oferty sprzedażowe podkreślające Twoją wartość</li>
-                    <li>Opracowujemy case studies pokazujące efekty współpracy</li>
+                    <li>
+                      Projektujemy oferty sprzedażowe podkreślające Twoją
+                      wartość
+                    </li>
+                    <li>
+                      Opracowujemy case studies pokazujące efekty współpracy
+                    </li>
                   </ul>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='#kontakt'>
@@ -249,7 +300,9 @@ export default function OfferContentPage() {
                   <ul className='mb-3 list-disc space-y-1 pl-4 text-sm'>
                     <li>Poprawiamy błędy językowe i stylistyczne</li>
                     <li>Ujednolicamy format, ton i układ treści</li>
-                    <li>Dostosowujemy teksty pod SEO dla lepszej widoczności</li>
+                    <li>
+                      Dostosowujemy teksty pod SEO dla lepszej widoczności
+                    </li>
                   </ul>
                   <div className='mt-auto'>
                     <ButtonLink arrow href='#kontakt'>
@@ -302,7 +355,8 @@ export default function OfferContentPage() {
                 'Tak. Na początku wspólnie ustalamy ton komunikacji i dostosowujemy treści do Twojej marki oraz grupy docelowej.',
             },
             {
-              question: 'Czy oferujecie też korektę i redakcję istniejących treści?',
+              question:
+                'Czy oferujecie też korektę i redakcję istniejących treści?',
               answer:
                 'Tak, poprawiamy i przekształcamy obecne treści tak, aby były bardziej przekonujące, poprawne językowo i dopasowane do celów marketingowych.',
             },
@@ -312,7 +366,8 @@ export default function OfferContentPage() {
                 'Tak, tworzymy je z uwzględnieniem fraz kluczowych, struktury nagłówków i zasad SEO copywritingu - tak, aby dobrze wypadały w Google.',
             },
             {
-              question: 'Czy mogę zlecić regularne przygotowanie treści (np. co miesiąc)?',
+              question:
+                'Czy mogę zlecić regularne przygotowanie treści (np. co miesiąc)?',
               answer:
                 'Tak, możliwa jest stała współpraca abonamentowa - np. comiesięczne artykuły, newslettery lub pakiety treści.',
             },
@@ -335,23 +390,27 @@ export default function OfferContentPage() {
             {
               title: 'Strony internetowe',
               size: 'medium',
-              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              backgroundImage:
+                '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Blogi internetowe',
               size: 'small',
-              backgroundImage: '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
+              backgroundImage:
+                '/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/blogi-internetowe',
             },
             {
               title: 'Szablony media społecznościowe',
               size: 'small',
-              backgroundImage: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
+              backgroundImage:
+                '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
+              btnLink:
+                '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
             },
           ]}
         />

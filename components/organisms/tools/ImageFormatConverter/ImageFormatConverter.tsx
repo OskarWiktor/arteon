@@ -1,7 +1,6 @@
 'use client';
 
-import { useRef, useState, type FormEvent } from 'react';
-
+import { useRef, useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
@@ -21,10 +20,10 @@ import {
   FORMAT_LABELS,
   hasQualitySlider,
 } from '@/lib/tools/image/imageFormatConverter';
-import type { ImageFormatConverterProps } from '@/types/tools/image-format-converter';
-import Card from '../../Card';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import { ImageFormatConverterProps } from '@/types/tools/image-format-converter';
+import Card from '../../Card';
 
 function tpl(str: string, vars: Record<string, string>): string {
   return Object.entries(vars).reduce(
@@ -107,7 +106,9 @@ export default function ImageFormatConverter({
       'image/heif': ['.heif'],
       'image/tiff': ['.tiff', '.tif'],
     };
-    const directExts = mimeList.filter(m => m.startsWith('.')).map(m => m.toLowerCase());
+    const directExts = mimeList
+      .filter(m => m.startsWith('.'))
+      .map(m => m.toLowerCase());
     const allowedExts = [
       ...directExts,
       ...mimeList.filter(m => !m.startsWith('.')).flatMap(m => extMap[m] ?? []),
@@ -124,7 +125,7 @@ export default function ImageFormatConverter({
     if (valid.length > 0) addFiles(valid);
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!files.length) {
       setGlobalError(tpl(t.errorNoFiles, { format: sourceLabel }));
@@ -150,12 +151,16 @@ export default function ImageFormatConverter({
   };
 
   const total = files.length;
-  const completed = files.filter(f => f.status === 'done' || f.status === 'error').length;
+  const completed = files.filter(
+    f => f.status === 'done' || f.status === 'error',
+  ).length;
   const progress = total ? Math.round((completed / total) * 100) : 0;
   const anyDone = doneCount > 0;
   const totalSaved = totalInputSize - totalOutputSize;
   const totalSavedPercent =
-    totalInputSize > 0 ? Math.round((Math.abs(totalSaved) / totalInputSize) * 100) : 0;
+    totalInputSize > 0
+      ? Math.round((Math.abs(totalSaved) / totalInputSize) * 100)
+      : 0;
 
   return (
     <div className='overflow-hidden'>
@@ -170,7 +175,11 @@ export default function ImageFormatConverter({
           <form onSubmit={handleSubmit} className='space-y-4'>
             <div>
               <h2 className='h6 mb-2'>{t.addFiles}</h2>
-              <FileDropzone accept={acceptMime} multiple onFiles={handleAddFiles}>
+              <FileDropzone
+                accept={acceptMime}
+                multiple
+                onFiles={handleAddFiles}
+              >
                 <ToolUploadContent
                   dragLabel={tpl(t.dragDrop, { format: sourceLabel })}
                   clickLabel={t.clickToSelect}
@@ -186,7 +195,9 @@ export default function ImageFormatConverter({
 
             {showQuality && (
               <div>
-                <h3 className='h6 mt-8 mb-2'>{tpl(t.setQuality, { format: targetLabel })}</h3>
+                <h3 className='h6 mt-8 mb-2'>
+                  {tpl(t.setQuality, { format: targetLabel })}
+                </h3>
                 <InputRangeWithLabel
                   value={quality}
                   min={60}
@@ -210,7 +221,10 @@ export default function ImageFormatConverter({
                       {t.completed}: {completed} / {total}
                     </span>
                   </div>
-                  <ToolProgressBar value={progress} ariaLabel={`${completed} / ${total}`} />
+                  <ToolProgressBar
+                    value={progress}
+                    ariaLabel={`${completed} / ${total}`}
+                  />
                 </div>
               )}
 
@@ -245,26 +259,30 @@ export default function ImageFormatConverter({
               {totalInputSize > 0 && (
                 <div className='mt-6'>
                   <p className='tool-meta'>
-                    {t.totalInput} <strong>{formatBytes(totalInputSize)}</strong>
+                    {t.totalInput}{' '}
+                    <strong>{formatBytes(totalInputSize)}</strong>
                   </p>
                   {totalOutputSize > 0 && (
                     <>
                       <p className='tool-meta'>
-                        {t.totalOutput} <strong>{formatBytes(totalOutputSize)}</strong>
+                        {t.totalOutput}{' '}
+                        <strong>{formatBytes(totalOutputSize)}</strong>
                       </p>
                       <p className='tool-meta'>
                         {totalSaved >= 0 ? (
                           <>
                             {t.saved}{' '}
                             <strong>
-                              {formatBytes(totalSaved)} (~{totalSavedPercent}% {t.less})
+                              {formatBytes(totalSaved)} (~{totalSavedPercent}%{' '}
+                              {t.less})
                             </strong>
                           </>
                         ) : (
                           <>
                             {t.increased}{' '}
                             <strong>
-                              {formatBytes(Math.abs(totalSaved))} (~{totalSavedPercent}% {t.more})
+                              {formatBytes(Math.abs(totalSaved))} (~
+                              {totalSavedPercent}% {t.more})
                             </strong>
                           </>
                         )}
@@ -290,7 +308,10 @@ export default function ImageFormatConverter({
           {files.length === 0 && (
             <div className='rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-6 text-center'>
               <p className='tool-meta'>
-                {tpl(t.emptyState, { source: sourceLabel, target: targetLabel })}
+                {tpl(t.emptyState, {
+                  source: sourceLabel,
+                  target: targetLabel,
+                })}
               </p>
             </div>
           )}
@@ -309,7 +330,10 @@ export default function ImageFormatConverter({
 
                 const diffPercent =
                   item.outputSize > 0 && item.inputSize > 0
-                    ? Math.round(((item.inputSize - item.outputSize) / item.inputSize) * 100)
+                    ? Math.round(
+                        ((item.inputSize - item.outputSize) / item.inputSize) *
+                          100,
+                      )
                     : null;
 
                 return (
@@ -326,14 +350,17 @@ export default function ImageFormatConverter({
                             {diffPercent !== null && (
                               <>
                                 {' ('}
-                                {Math.abs(diffPercent)}% {diffPercent >= 0 ? t.less : t.more}
+                                {Math.abs(diffPercent)}%{' '}
+                                {diffPercent >= 0 ? t.less : t.more}
                                 {')'}
                               </>
                             )}
                           </>
                         )}
                         {item.errorMessage && (
-                          <span className='ml-1 text-error-text'>{item.errorMessage}</span>
+                          <span className='ml-1 text-error-text'>
+                            {item.errorMessage}
+                          </span>
                         )}
                       </>
                     }

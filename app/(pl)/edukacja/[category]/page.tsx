@@ -1,23 +1,25 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import HeroBanner from '@/components/organisms/HeroBanner';
+import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import ArticlesList from '@/components/organisms/ArticlesList';
 import FilterBar from '@/components/organisms/FilterBar';
+import HeroBanner from '@/components/organisms/HeroBanner';
 import {
   getAllArticlePreviews,
   getCategoriesWithCount,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
-import { slugify } from '@/utils/slugify';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
-import Divider from '@/components/atoms/Divider';
+import { slugify } from '@/utils/slugify';
 
-const DEFAULT_META_DESCRIPTION = (label: string) => `Artykuły i poradniki: ${label}.`;
+const DEFAULT_META_DESCRIPTION = (label: string) =>
+  `Artykuły i poradniki: ${label}.`;
 
 const DEFAULT_OPEN_GRAPH_DESCRIPTION = (label: string) => `Artykuły: ${label}.`;
 
-const DEFAULT_HERO_DESCRIPTION = (label: string) => `Artykuły i poradniki: ${label}.`;
+const DEFAULT_HERO_DESCRIPTION = (label: string) =>
+  `Artykuły i poradniki: ${label}.`;
 
 const CATEGORY_CONTENT_BY_SLUG: Record<
   string,
@@ -65,10 +67,12 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
       '/assets/blog/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow.webp',
   },
   strony: {
-    heroDescription: 'Artykuły o stronach internetowych, ich tworzeniu i optymalizacji.',
+    heroDescription:
+      'Artykuły o stronach internetowych, ich tworzeniu i optymalizacji.',
     metaDescription:
       'Sprawdź, co powinna zawierać dobra strona internetowa. Sprawdź dostępne artykuły o tworzeniu, optymalizacji i utrzymaniu stron .',
-    openGraphDescription: 'Artykuły o tworzeniu, optymalizacji i utrzymaniu stron internetowych.',
+    openGraphDescription:
+      'Artykuły o tworzeniu, optymalizacji i utrzymaniu stron internetowych.',
     heroImage:
       '/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp',
   },
@@ -87,7 +91,8 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
       'Dowiedz się, jak skutecznie promować firmę w internecie. Sprawdź dostępne artykuły o marketingu, reklamie i strategiach pozyskiwania klientów online.',
     openGraphDescription:
       'Artykuły o marketingu, reklamie i strategiach pozyskiwania klientów online.',
-    heroImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
+    heroImage:
+      '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
   },
 };
 
@@ -108,7 +113,8 @@ export async function generateMetadata({
   const url = `${siteUrl}/edukacja/${category}`;
 
   const content = CATEGORY_CONTENT_BY_SLUG[category];
-  const description = content?.metaDescription ?? DEFAULT_META_DESCRIPTION(label);
+  const description =
+    content?.metaDescription ?? DEFAULT_META_DESCRIPTION(label);
   const openGraphDescription =
     content?.openGraphDescription ?? DEFAULT_OPEN_GRAPH_DESCRIPTION(label);
   const ogImage = content?.heroImage
@@ -158,10 +164,12 @@ export default async function EdukacjaCategoryPage({
     notFound();
   }
 
-  const label = cats.find(c => c.slug === category)?.label ?? category.replace(/-/g, ' ');
+  const label =
+    cats.find(c => c.slug === category)?.label ?? category.replace(/-/g, ' ');
 
   const content = CATEGORY_CONTENT_BY_SLUG[category];
-  const heroDescription = content?.heroDescription ?? DEFAULT_HERO_DESCRIPTION(label);
+  const heroDescription =
+    content?.heroDescription ?? DEFAULT_HERO_DESCRIPTION(label);
   const heroImage = content?.heroImage ?? '/assets/bg/abstract-bg13.webp';
 
   return (
@@ -190,7 +198,9 @@ export default async function EdukacjaCategoryPage({
               '@type': 'ItemList',
               itemListElement: getAllArticlePreviews()
                 .filter(a => {
-                  return a.primaryCategory && slugify(a.primaryCategory) === category;
+                  return (
+                    a.primaryCategory && slugify(a.primaryCategory) === category
+                  );
                 })
                 .map((a, i) => ({
                   '@type': 'ListItem',

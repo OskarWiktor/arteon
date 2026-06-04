@@ -20,5 +20,11 @@ export function JsonLd({ schema, id, strategy }: JsonLdProps) {
     );
   }
 
-  return <script id={id} type='application/ld+json' dangerouslySetInnerHTML={{ __html: json }} />;
+  return (
+    <script
+      id={id}
+      type='application/ld+json'
+      dangerouslySetInnerHTML={{ __html: json }}
+    />
+  );
 }

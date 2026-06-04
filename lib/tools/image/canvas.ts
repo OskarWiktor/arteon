@@ -1,5 +1,5 @@
-import { loadImage } from '@/utils/loadImage';
 import type { GetImageDataOptions } from '@/types/tools/image';
+import { loadImage } from '@/utils/loadImage';
 export type { GetImageDataOptions } from '@/types/tools/image';
 
 export async function getDownscaledImageDataFromUrl(
@@ -19,7 +19,10 @@ export async function getDownscaledImageDataFromUrl(
   }
 
   const maxDimension = options?.maxDimension ?? 240;
-  const scale = Math.min(1, maxDimension / Math.max(naturalWidth, naturalHeight));
+  const scale = Math.min(
+    1,
+    maxDimension / Math.max(naturalWidth, naturalHeight),
+  );
   const targetWidth = Math.max(1, Math.round(naturalWidth * scale));
   const targetHeight = Math.max(1, Math.round(naturalHeight * scale));
 

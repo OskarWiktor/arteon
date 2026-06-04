@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Převodník BMP na JPG",
-      "alternateName": ["Převést BMP na JPG", "Konverze BMP do JPG", "Převodník BMP na JPG zdarma"],
+      "alternateName": [
+        "Převést BMP na JPG",
+        "Konverze BMP do JPG",
+        "Převodník BMP na JPG zdarma"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte soubory BMP na lehké JPG. Drastické zmenšení velikosti. Zpracování probíhá v prohlížeči - soubory neopouštějí vaše zařízení.",

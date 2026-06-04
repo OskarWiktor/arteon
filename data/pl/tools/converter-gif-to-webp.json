@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter GIF na WebP – darmowy, bez limitu plików",
-      "alternateName": ["Zamiana GIF na WebP", "Konwersja GIF do WebP", "GIF to WebP converter"],
+      "alternateName": [
+        "Zamiana GIF na WebP",
+        "Konwersja GIF do WebP",
+        "GIF to WebP converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Darmowy konwerter GIF na WebP. Wyeksportuj pierwszą klatkę animacji GIF jako lekki WebP - pliki nie są wysyłane na serwer.",
@@ -184,7 +188,10 @@
         },
         {
           "label": "Obsługa w przeglądarkach",
-          "values": ["Wszystkie przeglądarki", "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"]
+          "values": [
+            "Wszystkie przeglądarki",
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          ]
         },
         {
           "label": "Głębia kolorów",

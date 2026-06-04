@@ -1,14 +1,18 @@
 'use client';
 
 import { useState } from 'react';
+import type { ProjectCategory, ProjectPreview } from '@/types/project';
 import Filters from '../molecules/Filters';
 import ProjectsGrid from '../molecules/ProjectsGrid';
-import type { ProjectCategory, ProjectPreview } from '@/types/project';
 
-export default function ProjectsWithFilters({ projects }: { projects: ProjectPreview[] }) {
-  const [selectedCategoriesSet, setSelectedCategoriesSet] = useState<Set<ProjectCategory>>(
-    new Set(),
-  );
+export default function ProjectsWithFilters({
+  projects,
+}: {
+  projects: ProjectPreview[];
+}) {
+  const [selectedCategoriesSet, setSelectedCategoriesSet] = useState<
+    Set<ProjectCategory>
+  >(new Set());
 
   const selectedCategories = Array.from(selectedCategoriesSet);
 
@@ -31,7 +35,10 @@ export default function ProjectsWithFilters({ projects }: { projects: ProjectPre
         onToggle={onToggle}
         onClear={onClear}
       />
-      <ProjectsGrid projects={projects} selectedCategories={selectedCategories} />
+      <ProjectsGrid
+        projects={projects}
+        selectedCategories={selectedCategories}
+      />
     </>
   );
 }

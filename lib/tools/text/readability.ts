@@ -46,7 +46,10 @@ function scoreToGrade(score: number): number {
  * - SV/DA/NO/FI: LIX (Björnsson Readability Index) mapped to 0-100 scale
  * - EN: standard Flesch formula
  */
-export function calculateReadability(text: string, locale: Locale = 'en'): ReadabilityResult {
+export function calculateReadability(
+  text: string,
+  locale: Locale = 'en',
+): ReadabilityResult {
   const words = countWords(text);
   const sentences = countSentences(text);
   const syllables = countSyllables(text, locale);
@@ -89,7 +92,8 @@ export function calculateReadability(text: string, locale: Locale = 'en'): Reada
       const gulpease = 89 + (300 * sentences - 10 * chars) / words;
       fleschScore = Math.min(100, Math.max(0, gulpease));
       // Gulpease grade: approximate education level (elementary=3, middle=7, high=11, university=15)
-      fleschGrade = gulpease >= 80 ? 3 : gulpease >= 60 ? 7 : gulpease >= 40 ? 11 : 15;
+      fleschGrade =
+        gulpease >= 80 ? 3 : gulpease >= 60 ? 7 : gulpease >= 40 ? 11 : 15;
       break;
     }
     case 'fr': {
@@ -133,12 +137,14 @@ export function calculateReadability(text: string, locale: Locale = 'en'): Reada
       // LIX = ASL + (percentage of words longer than 6 characters)
       const wordList = text.match(/\p{L}+/gu) || [];
       const longWords = wordList.filter(w => w.length > 6).length;
-      const longPct = wordList.length > 0 ? (longWords / wordList.length) * 100 : 0;
+      const longPct =
+        wordList.length > 0 ? (longWords / wordList.length) * 100 : 0;
       const lix = ASL + longPct;
       // Map LIX (typically 20-60) to Flesch-like 0-100 scale (inverted: low LIX = easy)
       fleschScore = Math.max(0, Math.min(100, 100 - (lix - 20) * 1.67));
       // LIX grade mapping: <25=children, 25-35=easy, 35-45=average, 45-55=difficult, >55=very difficult
-      fleschGrade = lix < 25 ? 3 : lix < 35 ? 6 : lix < 45 ? 9 : lix < 55 ? 13 : 16;
+      fleschGrade =
+        lix < 25 ? 3 : lix < 35 ? 6 : lix < 45 ? 9 : lix < 55 ? 13 : 16;
       break;
     }
     default: {
@@ -162,7 +168,13 @@ export function calculateReadability(text: string, locale: Locale = 'en'): Reada
 
 const READABILITY_LABELS: Record<
   Locale,
-  { veryEasy: string; easy: string; moderate: string; difficult: string; veryDifficult: string }
+  {
+    veryEasy: string;
+    easy: string;
+    moderate: string;
+    difficult: string;
+    veryDifficult: string;
+  }
 > = {
   en: {
     veryEasy: 'Very easy',
@@ -281,7 +293,9 @@ const READABILITY_LABELS: Record<
 // Locale-aware thresholds for readability labels.
 // Most locales use the standard Flesch thresholds (90/70/50/30).
 // Italian Gulpease has its own education-level-based scale.
-const READABILITY_THRESHOLDS: Partial<Record<Locale, [number, number, number, number]>> = {
+const READABILITY_THRESHOLDS: Partial<
+  Record<Locale, [number, number, number, number]>
+> = {
   it: [80, 60, 40, 20], // Gulpease: 80+ elementary, 60+ middle school, 40+ high school, <40 university
   pl: [80, 60, 40, 20], // Polish adapted formula: shifted thresholds for inflectional language
   cs: [80, 60, 40, 20], // Czech adapted formula: Slavic, similar to Polish
@@ -308,7 +322,10 @@ const DEFAULT_THRESHOLDS: [number, number, number, number] = [90, 70, 50, 30];
  *  20-39   Difficult (university)
  *   0-19   Very difficult (specialist)
  */
-export function getReadabilityLabel(score: number | null, locale: Locale = 'en'): string {
+export function getReadabilityLabel(
+  score: number | null,
+  locale: Locale = 'en',
+): string {
   if (score === null) return '-';
   const labels = READABILITY_LABELS[locale];
   const [veryEasy, easy, moderate, difficult] =
@@ -324,9 +341,13 @@ export function getReadabilityLabel(score: number | null, locale: Locale = 'en')
  * Get a CSS-friendly color class for the readability score.
  * Uses locale-aware thresholds to match getReadabilityLabel.
  */
-export function getReadabilityColor(score: number | null, locale: Locale = 'en'): string {
+export function getReadabilityColor(
+  score: number | null,
+  locale: Locale = 'en',
+): string {
   if (score === null) return 'text-neutral-400';
-  const [, easy, moderate, difficult] = READABILITY_THRESHOLDS[locale] ?? DEFAULT_THRESHOLDS;
+  const [, easy, moderate, difficult] =
+    READABILITY_THRESHOLDS[locale] ?? DEFAULT_THRESHOLDS;
   if (score >= easy) return 'text-green-600';
   if (score >= moderate) return 'text-yellow-600';
   if (score >= difficult) return 'text-orange-500';
@@ -347,7 +368,10 @@ export interface KeywordDensityEntry {
  * Calculate keyword density for all words in the text.
  * Returns top N entries sorted by frequency.
  */
-export function calculateKeywordDensity(text: string, topN: number = 10): KeywordDensityEntry[] {
+export function calculateKeywordDensity(
+  text: string,
+  topN: number = 10,
+): KeywordDensityEntry[] {
   if (!text.trim()) return [];
 
   const words = text

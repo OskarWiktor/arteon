@@ -205,7 +205,10 @@
         },
         {
           "label": "Podpora webových prohlížečů",
-          "values": ["Pouze Safari", "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"]
+          "values": [
+            "Pouze Safari",
+            "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          ]
         },
         {
           "label": "Hloubka barev",

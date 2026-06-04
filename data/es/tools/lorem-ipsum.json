@@ -270,7 +270,16 @@
       "rows": [
         {
           "label": "Idioma",
-          "values": ["Latín", "Inglés", "Inglés", "Local", "Inglés", "Inglés", "Inglés", "Inglés"]
+          "values": [
+            "Latín",
+            "Inglés",
+            "Inglés",
+            "Local",
+            "Inglés",
+            "Inglés",
+            "Inglés",
+            "Inglés"
+          ]
         },
         {
           "label": "Tema",
@@ -299,7 +308,16 @@
         },
         {
           "label": "Humor / carácter",
-          "values": ["Neutral", "Medio", "Bajo", "Bajo", "Alto", "Alto", "Alto", "Bajo"]
+          "values": [
+            "Neutral",
+            "Medio",
+            "Bajo",
+            "Bajo",
+            "Alto",
+            "Alto",
+            "Alto",
+            "Bajo"
+          ]
         }
       ]
     },

@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Convertește imagini WebP în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.",
-      "featureList": ["WebP to PDF conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert WebP to PDF", "WebP to PDF", "Free WebP to PDF converter"]
+      "featureList": [
+        "WebP to PDF conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert WebP to PDF",
+        "WebP to PDF",
+        "Free WebP to PDF converter"
+      ]
     },
     "howTo": {
       "name": "Cum convertiți WebP în PDF",
@@ -151,7 +159,10 @@
         },
         {
           "label": "Suport în browsere",
-          "values": ["Chrome 32+, Firefox 65+, Edge 18+, Safari 14+", "Vizualizator PDF integrat"]
+          "values": [
+            "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "Vizualizator PDF integrat"
+          ]
         },
         {
           "label": "Dimensiune compactă",

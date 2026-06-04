@@ -25,7 +25,11 @@
   "schemas": {
     "software": {
       "name": "Konwerter TIFF na PDF - darmowy, bez limitu",
-      "alternateName": ["Zamiana TIFF na PDF", "Konwersja TIFF do PDF", "TIFF to PDF converter"],
+      "alternateName": [
+        "Zamiana TIFF na PDF",
+        "Konwersja TIFF do PDF",
+        "TIFF to PDF converter"
+      ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
       "description": "Darmowy konwerter TIFF na PDF. Zamień pliki TIFF na dokument PDF w przeglądarce - pliki nie są wysyłane na serwer.",

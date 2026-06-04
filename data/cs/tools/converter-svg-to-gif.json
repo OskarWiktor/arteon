@@ -34,7 +34,11 @@
         "Dávková konverze",
         "Lokální zpracování v prohlížeči"
       ],
-      "alternateName": ["Převést SVG na GIF", "Konverze SVG do GIF", "Převodník SVG na GIF zdarma"]
+      "alternateName": [
+        "Převést SVG na GIF",
+        "Konverze SVG do GIF",
+        "Převodník SVG na GIF zdarma"
+      ]
     },
     "howTo": {
       "name": "Jak převést SVG na GIF",

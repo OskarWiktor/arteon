@@ -1,10 +1,5 @@
-import WorkSteps from '@/components/organisms/WorkSteps';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import CTABanner from '@/components/organisms/CTABanner';
-import Divider from '@/components/atoms/Divider';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
-import SectionBento from '@/components/organisms/sections/SectionBento';
+import Script from 'next/script';
+import { GoLaw } from 'react-icons/go';
 import {
   RiArticleLine,
   RiBookOpenLine,
@@ -18,27 +13,34 @@ import {
   RiSpeedLine,
   RiBrushLine,
 } from 'react-icons/ri';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
-import SectionPrices from '@/components/organisms/sections/SectionPrices';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import { GoLaw } from 'react-icons/go';
-import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { buildServiceSchema } from '@/lib/seo/serviceSchema';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 export const metadata = {
   title: 'Sklepy internetowe - projekt i realizacja | Arteon',
   description:
     'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe' },
+  alternates: {
+    canonical: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe',
+  },
   openGraph: {
     title: 'Sklepy internetowe - projekt i realizacja | Arteon',
     description:
@@ -72,6 +74,12 @@ function ServiceSchema() {
   );
 }
 
+/**
+ * Renders the service marketing page for "Sklepy internetowe", including hero, benefits,
+ * pricing, features, FAQ, contact form, articles carousel, call-to-action, and JSON-LD structured data.
+ *
+ * @returns The page's JSX element
+ */
 export default function OfferWebPage() {
   return (
     <>
@@ -94,23 +102,31 @@ export default function OfferWebPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/sklepy-internetowe`, label: 'Sklepy internetowe' }}
+        third={{
+          href: `/uslugi/sklepy-internetowe`,
+          label: 'Sklepy internetowe',
+        }}
         includeJsonLd
       />
 
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Realizacje sklepów internetowych' category='sklep' />
+        <ProjectsCarousel
+          title='Realizacje sklepów internetowych'
+          category='sklep'
+        />
 
         <Divider line />
 
         <SectionInfo title='Co zyskujesz tworząc sklep internetowy?'>
           <p>
-            <strong>Własny sklep internetowy daje Twojej firmie realną niezależność.</strong>{' '}
+            <strong>
+              Własny sklep internetowy daje Twojej firmie realną niezależność.
+            </strong>{' '}
             Sprzedajesz na własnej platformie bez pośredników, więc
-            <strong> więcej pieniędzy zostaje u Ciebie</strong>. Platformy sprzedażowe pobierają
-            prowizje rzędu <strong>8-15%+</strong>{' '}
+            <strong> więcej pieniędzy zostaje u Ciebie</strong>. Platformy
+            sprzedażowe pobierają prowizje rzędu <strong>8-15%+</strong>{' '}
             <a
               className='inline-link'
               href='https://sell.amazon.com/pricing'
@@ -128,7 +144,8 @@ export default function OfferWebPage() {
             >
               (Etsy - fees)
             </a>
-            , a na Allegro zależnie od kategorii, to zwykle przedział kilkunastu procent
+            , a na Allegro zależnie od kategorii, to zwykle przedział kilkunastu
+            procent
             <a
               className='inline-link ml-2'
               href='https://allegro.pl/pomoc/dla-sprzedajacych/oplaty-i-prowizje'
@@ -143,10 +160,11 @@ export default function OfferWebPage() {
           <br />
 
           <p>
-            <strong>Sklep online prowadzi sprzedaż 24/7.</strong> Klienci chętnie kupują produkty w
-            sklepach, na własnych telefonach - dziś to już <strong>ponad połowa</strong> transakcji
-            online (np. sezon 2024: <strong>~53%</strong>, prognoza 2025: <strong>~56%</strong>{' '}
-            udziału mobile w przychodach e-commerce){' '}
+            <strong>Sklep online prowadzi sprzedaż 24/7.</strong> Klienci
+            chętnie kupują produkty w sklepach, na własnych telefonach - dziś to
+            już <strong>ponad połowa</strong> transakcji online (np. sezon 2024:{' '}
+            <strong>~53%</strong>, prognoza 2025: <strong>~56%</strong> udziału
+            mobile w przychodach e-commerce){' '}
             <a
               target='_blank'
               rel='noopener noreferrer'
@@ -163,16 +181,16 @@ export default function OfferWebPage() {
             >
               (źródło 2)
             </a>
-            . Każda wizyta użytkownika w Twoim sklepie internetowym to dodatkowa szansa na
-            zamówienie.
+            . Każda wizyta użytkownika w Twoim sklepie internetowym to dodatkowa
+            szansa na zamówienie.
           </p>
 
           <br />
 
           <p>
-            <strong>Masz klientów u siebie, nie na cudzej platformie.</strong> Budujesz własną bazę
-            kontaktów i relacje. Kanały direct (np. e-mail) potrafią zwracać nawet{' '}
-            <strong>~36:1</strong>{' '}
+            <strong>Masz klientów u siebie, nie na cudzej platformie.</strong>{' '}
+            Budujesz własną bazę kontaktów i relacje. Kanały direct (np. e-mail)
+            potrafią zwracać nawet <strong>~36:1</strong>{' '}
             <a
               target='_blank'
               rel='noopener noreferrer'
@@ -204,14 +222,16 @@ export default function OfferWebPage() {
             >
               (źródło)
             </a>
-            . We własnym sklepie internetowym możesz uprościć ścieżkę zakupu oraz odzyskać te
-            transakcje.
+            . We własnym sklepie internetowym możesz uprościć ścieżkę zakupu
+            oraz odzyskać te transakcje.
           </p>
 
           <br />
 
           <p>
-            <strong>Dobra platforma sprzedażowa robi za Ciebie trzy rzeczy naraz:</strong>
+            <strong>
+              Dobra platforma sprzedażowa robi za Ciebie trzy rzeczy naraz:
+            </strong>
           </p>
 
           <ul className='ml-5 list-disc'>
@@ -231,92 +251,150 @@ export default function OfferWebPage() {
               title: 'Indywidualny projekt graficzny sklepu',
               description: (
                 <>
-                  Wygląd, który od pierwszych sekund pokazuje profesjonalizm i wyróżnia Twój sklep
+                  Wygląd, który od pierwszych sekund pokazuje profesjonalizm i
+                  wyróżnia Twój sklep
                 </>
               ),
-              icon: <RiPencilRuler2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiPencilRuler2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
-              title: 'Redakcję treści sprzedażowych dla lepszej pozycji w Google',
-              description: <>Opisy, które jasno mówią o korzyściach i prowadzą do zakupu</>,
-              icon: <RiArticleLine className={cn('text-primary', normalIconSizeClasses)} />,
+              title:
+                'Redakcję treści sprzedażowych dla lepszej pozycji w Google',
+              description: (
+                <>Opisy, które jasno mówią o korzyściach i prowadzą do zakupu</>
+              ),
+              icon: (
+                <RiArticleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Dobór i obróbka zdjęć produktów',
               description: (
                 <>
-                  Pomagamy wybrać spójne zdjęcia oraz dopasowujemy je do sklepu: kadry, tło,
-                  rozmiary, waga.
+                  Pomagamy wybrać spójne zdjęcia oraz dopasowujemy je do sklepu:
+                  kadry, tło, rozmiary, waga.
                 </>
               ),
-              icon: <RiBrushLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBrushLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Wsparcie prawne przy politykach i regulaminach',
               description: <>Przeprowadzamy Cię przez wszelkie wymogi prawne</>,
-              icon: <GoLaw className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <GoLaw className={cn('text-primary', normalIconSizeClasses)} />
+              ),
             },
             {
               title: 'Sklep online dostosowany do różnych urządzeń',
               description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
-              icon: <RiDeviceLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiDeviceLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Szybkość i stabilność',
               description: <>Sklep online który działa szybko, bez awarii</>,
-              icon: <RiSpeedLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiSpeedLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Pełną własność i dostępy',
               description: (
-                <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>
+                <>
+                  Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po
+                  zakończeniu prac
+                </>
               ),
-              icon: <RiKey2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiKey2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Zero ukrytych kosztów',
               description: (
                 <>
-                  Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje
+                  Dostajesz wycenę z jasnym zakresem, informujemy Cię na
+                  bieżąco, ile coś kosztuje
                 </>
               ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
             {
               title: 'Termin i plan z kamieniami milowymi',
               description: (
-                <>Tworzymy harmonogram i trzymamy się go. Wiesz, co będzie gotowe i kiedy</>
+                <>
+                  Tworzymy harmonogram i trzymamy się go. Wiesz, co będzie
+                  gotowe i kiedy
+                </>
               ),
-              icon: <RiCalendarCheckLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiCalendarCheckLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Transparentna współpraca na bieżąco',
               description: (
-                <>Informujemy Cię regularnie o postępach naszych prac nad Twoim sklepem</>
+                <>
+                  Informujemy Cię regularnie o postępach naszych prac nad Twoim
+                  sklepem
+                </>
               ),
-              icon: <RiMessage2Line className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiMessage2Line
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Dedykowane szkolenie PDF z obsługi sklepu',
               description: (
                 <>
-                  Proste instrukcje, stworzone tak, abyś samodzielnie mógł dodać produkty, ceny i
-                  promocje
+                  Proste instrukcje, stworzone tak, abyś samodzielnie mógł dodać
+                  produkty, ceny i promocje
                 </>
               ),
-              icon: <RiBookOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBookOpenLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
               description: (
                 <>
-                  Po publikacji pomagamy w dalszym rozwoju i skalowaniu sklepu internetowego.
-                  Ewentualne błędy poprawiamy w ramach gwarancji
+                  Po publikacji pomagamy w dalszym rozwoju i skalowaniu sklepu
+                  internetowego. Ewentualne błędy poprawiamy w ramach gwarancji
                 </>
               ),
-              icon: <RiLifebuoyLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiLifebuoyLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
           ]}
         />
@@ -393,9 +471,12 @@ export default function OfferWebPage() {
           note={{
             text: (
               <p className='text-light'>
-                <strong className='text-dark'>Potrzebujesz czegoś więcej? </strong>
-                Tworzymy zaawansowane sklepy i aplikacje w Next.js - rozwiązania szyte na miarę,
-                gotowe na zaawansowane integracje, funkcje oraz duży ruch.
+                <strong className='text-dark'>
+                  Potrzebujesz czegoś więcej?{' '}
+                </strong>
+                Tworzymy zaawansowane sklepy i aplikacje w Next.js - rozwiązania
+                szyte na miarę, gotowe na zaawansowane integracje, funkcje oraz
+                duży ruch.
               </p>
             ),
             ctaLabel: 'Porozmawiajmy o Twoim projekcie',
@@ -445,7 +526,8 @@ export default function OfferWebPage() {
                 'Jasną ofertę produktów, sekcje z korzyściami, opinie klientów, prostą ścieżkę zakupową oraz wygodną wersję na telefon. Dodatkowo: podstawy prawne (politykę prywatności, pliki cookie, regulaminy), wysoką prędkość ładowania oraz optymalizację pod wyszukiwarki.',
             },
             {
-              question: 'Jakie metody płatności mogę mieć w sklepie internetowym?',
+              question:
+                'Jakie metody płatności mogę mieć w sklepie internetowym?',
               answer:
                 'Sklep może być zintegrowany z PayU, Przelewy24, Stripe, Blikiem lub klasycznym przelewem bankowym. Dobieramy metody płatności do Twoich potrzeb i oczekiwań Twoich klientów.',
             },
@@ -478,7 +560,8 @@ export default function OfferWebPage() {
                 'Tak, po stworzeniu i uruchomieniu sklepu otrzymasz szkolenie w formie PDF z instrukcją obsługi.',
             },
             {
-              question: 'Nie znam się na technologii - czy przeprowadzicie mnie przez cały proces?',
+              question:
+                'Nie znam się na technologii - czy przeprowadzicie mnie przez cały proces?',
               answer:
                 'Tak, uwielbiamy pomagać i edukować - prowadzimy cały proces w przystępny oraz transparentny sposób, objaśniając wszystkie kroki bez technologicznego żargonu.',
             },
@@ -493,14 +576,16 @@ export default function OfferWebPage() {
             {
               title: 'Strony internetowe',
               size: 'large',
-              backgroundImage: '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
+              backgroundImage:
+                '/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
               title: 'Pozycjonowanie stron',
               size: 'medium',
-              backgroundImage: '/assets/projects/napilota/mockup-strony-napilota.webp',
+              backgroundImage:
+                '/assets/projects/napilota/mockup-strony-napilota.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
@@ -514,9 +599,11 @@ export default function OfferWebPage() {
             {
               title: 'Szablony media społecznościowe',
               size: 'small',
-              backgroundImage: '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
+              backgroundImage:
+                '/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
+              btnLink:
+                '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
             },
           ]}
         />

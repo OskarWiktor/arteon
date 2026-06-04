@@ -1,30 +1,30 @@
-import WorkSteps from '@/components/organisms/WorkSteps';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import CTABanner from '@/components/organisms/CTABanner';
-import Divider from '@/components/atoms/Divider';
-import SectionBento from '@/components/organisms/sections/SectionBento';
+import Script from 'next/script';
+import { IoColorPalette } from 'react-icons/io5';
 import {
   RiBrushLine,
   RiFileTextLine,
   RiFolderOpenLine,
   RiMoneyDollarCircleLine,
 } from 'react-icons/ri';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import { IoColorPalette } from 'react-icons/io5';
-import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { buildServiceSchema } from '@/lib/seo/serviceSchema';
+import { normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 
 export const metadata = {
@@ -32,7 +32,8 @@ export const metadata = {
   description:
     'Teczka ofertowa na dokumenty i materiały sprzedażowe. Projekt spójny z identyfikacją wizualną, pliki do druku.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+    canonical:
+      'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
   },
   openGraph: {
     title: 'Projekt teczki ofertowej | Arteon',
@@ -61,7 +62,10 @@ function ServiceSchema() {
   });
 
   return (
-    <Script id='schema-service-projekt-teczki-ofertowej' type='application/ld+json'>
+    <Script
+      id='schema-service-projekt-teczki-ofertowej'
+      type='application/ld+json'
+    >
       {JSON.stringify(json)}
     </Script>
   );
@@ -74,8 +78,9 @@ export default function OfferDesignPresentationFolderPage() {
         title='Projekt teczki ofertowej'
         description={
           <>
-            Spotkania sprzedażowe wymagają porządku i klasy. Projektujemy teczki ofertowe spójne z
-            identyfikacją - trwałe, eleganckie i funkcjonalne na prezentacje, dokumenty i umowy.
+            Spotkania sprzedażowe wymagają porządku i klasy. Projektujemy teczki
+            ofertowe spójne z identyfikacją - trwałe, eleganckie i funkcjonalne
+            na prezentacje, dokumenty i umowy.
           </>
         }
         secondaryCtaLabel='Bezpłatna wycena'
@@ -89,7 +94,10 @@ export default function OfferDesignPresentationFolderPage() {
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
+        third={{
+          href: `/uslugi/projekty-graficzne`,
+          label: 'Projekty graficzne',
+        }}
         fourth={{
           href: `/uslugi/projekty-graficzne/projekt-teczki-ofertowej`,
           label: 'Projekt teczki ofertowej',
@@ -100,27 +108,35 @@ export default function OfferDesignPresentationFolderPage() {
       <Wrapper>
         <Divider size='xs' />
 
-        <ProjectsCarousel title='Realizacje projektów graficznych' category='grafika' />
+        <ProjectsCarousel
+          title='Realizacje projektów graficznych'
+          category='grafika'
+        />
 
         <Divider line />
 
         <SectionInfo title='Co zyskujesz zamawiając projekt teczki ofertowej?'>
           <p>
             <strong>
-              Własna firmowa teczka porządkuje dokumenty i utrzymuje spójność materiałów.
+              Własna firmowa teczka porządkuje dokumenty i utrzymuje spójność
+              materiałów.
             </strong>{' '}
-            Klient dostaje Twoje materiały w jednej, eleganckiej formie - to ułatwia zapamiętanie
-            marki oraz buduje jej autorytet. Materiały drukowane zostają w pamięci dłużej niż
-            przekaz cyfrowy - mniejsze obciążenie poznawcze i wyższa zapamiętywalność (badanie
-            Temple University / Canada Post, 2015).
+            Klient dostaje Twoje materiały w jednej, eleganckiej formie - to
+            ułatwia zapamiętanie marki oraz buduje jej autorytet. Materiały
+            drukowane zostają w pamięci dłużej niż przekaz cyfrowy - mniejsze
+            obciążenie poznawcze i wyższa zapamiętywalność (badanie Temple
+            University / Canada Post, 2015).
           </p>
 
           <br />
 
           <p>
-            <strong>Profesjonalna teczka ofertowa wzmacnia wiarygodność w kilka sekund.</strong>{' '}
-            Estetyka i czytelność oprawy silnie wpływają na ocenę firmy - odbiorcy przypisują
-            zaufanie na podstawie jakości materiałów
+            <strong>
+              Profesjonalna teczka ofertowa wzmacnia wiarygodność w kilka
+              sekund.
+            </strong>{' '}
+            Estetyka i czytelność oprawy silnie wpływają na ocenę firmy -
+            odbiorcy przypisują zaufanie na podstawie jakości materiałów
             <a
               href='https://credibility.stanford.edu/guidelines/index.html'
               target='_blank'
@@ -129,8 +145,8 @@ export default function OfferDesignPresentationFolderPage() {
             >
               (Stanford - web credibility)
             </a>
-            . Spójna estetyka, kolory i typografia wzmacniają rozpoznawalność w każdym kontakcie z
-            Twoją marką.
+            . Spójna estetyka, kolory i typografia wzmacniają rozpoznawalność w
+            każdym kontakcie z Twoją marką.
           </p>
 
           <br />
@@ -140,8 +156,14 @@ export default function OfferDesignPresentationFolderPage() {
           </p>
           <ul className='ml-5 list-disc'>
             <li>Porządkuje dokumenty i ułatwia proces spotkania,</li>
-            <li>Podkreśla profesjonalizm w trakcie prezentacji i po wyjściu klienta,</li>
-            <li>Zostawia fizyczny ślad - klient łatwiej wraca do Twojej firmy i oferty.</li>
+            <li>
+              Podkreśla profesjonalizm w trakcie prezentacji i po wyjściu
+              klienta,
+            </li>
+            <li>
+              Zostawia fizyczny ślad - klient łatwiej wraca do Twojej firmy i
+              oferty.
+            </li>
           </ul>
         </SectionInfo>
 
@@ -155,47 +177,70 @@ export default function OfferDesignPresentationFolderPage() {
               title: 'Prestiż na każdym spotkaniu',
               description: (
                 <>
-                  Projekt teczki podkreśla profesjonalizm Twojej firmy - już samo wręczenie
-                  materiałów robi dobre wrażenie.
+                  Projekt teczki podkreśla profesjonalizm Twojej firmy - już
+                  samo wręczenie materiałów robi dobre wrażenie.
                 </>
               ),
-              icon: <RiFolderOpenLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFolderOpenLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: (
                 <>
-                  Kolory, typografia i detale nawiązują do Twojej identyfikacji wizualnej, aby
-                  wszystkie materiały mówiły jednym językiem.
+                  Kolory, typografia i detale nawiązują do Twojej identyfikacji
+                  wizualnej, aby wszystkie materiały mówiły jednym językiem.
                 </>
               ),
-              icon: <IoColorPalette className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <IoColorPalette
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Przemyślane rozwiązania konstrukcyjne',
               description: (
                 <>
-                  Proponujemy układ kieszeni, bigów i skrzydełek tak, aby teczka była trwała,
-                  wygodna i funkcjonalna w codziennym użyciu.
+                  Proponujemy układ kieszeni, bigów i skrzydełek tak, aby teczka
+                  była trwała, wygodna i funkcjonalna w codziennym użyciu.
                 </>
               ),
-              icon: <RiBrushLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiBrushLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Pliki gotowe do druku',
               description: (
                 <>
-                  Dostarczamy finalne pliki z poprawnymi spadami i makietami pod drukarnię - możesz
-                  od razu przekazać je do produkcji.
+                  Dostarczamy finalne pliki z poprawnymi spadami i makietami pod
+                  drukarnię - możesz od razu przekazać je do produkcji.
                 </>
               ),
-              icon: <RiFileTextLine className={cn('text-primary', normalIconSizeClasses)} />,
+              icon: (
+                <RiFileTextLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
+              ),
             },
             {
               title: 'Faktura po realizacji',
-              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              description: (
+                <>
+                  Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
+                  formie.
+                </>
+              ),
               icon: (
-                <RiMoneyDollarCircleLine className={cn('text-primary', normalIconSizeClasses)} />
+                <RiMoneyDollarCircleLine
+                  className={cn('text-primary', normalIconSizeClasses)}
+                />
               ),
             },
           ]}
@@ -209,21 +254,24 @@ export default function OfferDesignPresentationFolderPage() {
         >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Dla kancelarii, doradców i firm usługowych,</strong> które wręczają oferty,
-              umowy lub raporty podczas spotkań z klientami.
+              <strong>Dla kancelarii, doradców i firm usługowych,</strong> które
+              wręczają oferty, umowy lub raporty podczas spotkań z klientami.
             </li>
             <li>
-              <strong>Dla firm B2B,</strong> które prezentują oferty wielostronicowe i chcą, aby
-              wszystkie dokumenty były uporządkowane w jednym miejscu.
+              <strong>Dla firm B2B,</strong> które prezentują oferty
+              wielostronicowe i chcą, aby wszystkie dokumenty były uporządkowane
+              w jednym miejscu.
             </li>
             <li>
-              <strong>Dla szkół, uczelni, instytucji i organizatorów szkoleń,</strong> którzy
-              przekazują materiały edukacyjne i informacje o programach.
+              <strong>
+                Dla szkół, uczelni, instytucji i organizatorów szkoleń,
+              </strong>{' '}
+              którzy przekazują materiały edukacyjne i informacje o programach.
             </li>
             <li>
-              <strong>Dla marek budujących prestiż offline,</strong> które chcą, aby doświadczenie
-              klienta „na żywo” było równie dopracowane, jak strona internetowa czy profil w mediach
-              społecznościowych.
+              <strong>Dla marek budujących prestiż offline,</strong> które chcą,
+              aby doświadczenie klienta „na żywo” było równie dopracowane, jak
+              strona internetowa czy profil w mediach społecznościowych.
             </li>
           </ul>
         </SectionInfo>
@@ -236,20 +284,26 @@ export default function OfferDesignPresentationFolderPage() {
         >
           <ul className='ml-5 list-disc space-y-2'>
             <li>
-              <strong>Bardziej uporządkowane spotkania,</strong> bo wszystkie materiały - oferta,
-              umowa, wizytówka - trafiają do jednej, spójnej teczki.
+              <strong>Bardziej uporządkowane spotkania,</strong> bo wszystkie
+              materiały - oferta, umowa, wizytówka - trafiają do jednej, spójnej
+              teczki.
             </li>
             <li>
-              <strong>Wyższy poziom zaufania i postrzeganego profesjonalizmu,</strong> szczególnie
-              przy pierwszym kontakcie i prezentacjach dla nowych klientów.
+              <strong>
+                Wyższy poziom zaufania i postrzeganego profesjonalizmu,
+              </strong>{' '}
+              szczególnie przy pierwszym kontakcie i prezentacjach dla nowych
+              klientów.
             </li>
             <li>
-              <strong>Lepsza zapamiętywalność marki,</strong> ponieważ klient wychodzi ze spotkania
-              z fizycznym nośnikiem, który przypomina o Twojej firmie nawet po kilku dniach.
+              <strong>Lepsza zapamiętywalność marki,</strong> ponieważ klient
+              wychodzi ze spotkania z fizycznym nośnikiem, który przypomina o
+              Twojej firmie nawet po kilku dniach.
             </li>
             <li>
-              <strong>Silniejsza spójność materiałów offline i online,</strong> gdy teczka jest
-              dopasowana do strony, wizytówek i innych elementów identyfikacji.
+              <strong>Silniejsza spójność materiałów offline i online,</strong>{' '}
+              gdy teczka jest dopasowana do strony, wizytówek i innych elementów
+              identyfikacji.
             </li>
           </ul>
         </SectionInfo>
@@ -367,12 +421,14 @@ export default function OfferDesignPresentationFolderPage() {
               backgroundImage:
                 '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp',
               btnLabel: 'Sprawdź ofertę',
-              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+              btnLink:
+                '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
               title: 'Projekt wizytówki',
               size: 'medium',
-              backgroundImage: '/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp',
+              backgroundImage:
+                '/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },

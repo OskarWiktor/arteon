@@ -1,11 +1,11 @@
-import Wrapper from '@/components/atoms/Wrapper';
+import InlineLink from '@/components/atoms/InlineLink';
 import { JsonLd } from '@/components/atoms/JsonLd';
+import Wrapper from '@/components/atoms/Wrapper';
 
 import SectionHeader from '@/components/molecules/SectionHeader';
 
 export type NavItem = { title: string; href: string; children?: NavItem[] };
 
-import InlineLink from '@/components/atoms/InlineLink';
 type SitemapPageClientProps = {
   services: NavItem[];
   portfolioIndex: NavItem;
@@ -70,7 +70,10 @@ export default function SitemapPageClient({
         <h1 className='h2 mb-8'>Mapa strony</h1>
 
         <SitemapSection title='Usługi' items={services} />
-        <SitemapSection title='Realizacje' items={[portfolioIndex, ...portfolioItems]} />
+        <SitemapSection
+          title='Realizacje'
+          items={[portfolioIndex, ...portfolioItems]}
+        />
         <SitemapSection title='Edukacja' items={blogArticleItems} />
         <SitemapSection title='Narzędzia' items={tools} />
         <SitemapSection title='Informacje' items={infoPages} />

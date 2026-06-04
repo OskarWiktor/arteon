@@ -58,9 +58,11 @@
 
 @theme inline {
   --font-sans:
-    var(--font-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-heading: var(--font-heading), ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+    var(--font-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-heading:
+    var(--font-heading), ui-serif, Georgia, Cambria, 'Times New Roman', Times,
+    serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -204,7 +206,7 @@ p,
 li,
 .p,
 label {
-  @apply leading-relaxed font-normal;
+  @apply leading-relaxed font-normal text-pretty text-mid;
   font-size: clamp(14px, calc(14px + 2 * ((100vw - 360px) / 1080)), 16px);
 }
 
@@ -391,7 +393,8 @@ strong {
   contain: layout style;
 }
 
-.ad-slot-wrapper:has(ins.adsbygoogle[data-ad-status='unfilled']) .ad-placeholder {
+.ad-slot-wrapper:has(ins.adsbygoogle[data-ad-status='unfilled'])
+  .ad-placeholder {
   background: transparent;
 }
 

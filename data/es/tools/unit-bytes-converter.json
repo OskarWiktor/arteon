@@ -194,7 +194,10 @@
         },
         {
           "label": "Usado por",
-          "values": ["Fabricantes de almacenamiento", "Sistemas operativos, RAM"]
+          "values": [
+            "Fabricantes de almacenamiento",
+            "Sistemas operativos, RAM"
+          ]
         },
         {
           "label": "1 TB equivale a",

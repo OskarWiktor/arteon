@@ -1,12 +1,14 @@
 import { cn } from '@/lib/utils';
-import Card from '../Card';
 import Shimmer from '../../atoms/skeletons/Shimmer';
+import Card from '../Card';
 
 interface SectionStepsSkeletonProps {
   cols?: 2 | 3 | 4;
 }
 
-export default function SectionStepsSkeleton({ cols = 3 }: SectionStepsSkeletonProps) {
+export default function SectionStepsSkeleton({
+  cols = 3,
+}: SectionStepsSkeletonProps) {
   const gridClass =
     cols === 2
       ? 'sm:grid-cols-2'
@@ -24,14 +26,14 @@ export default function SectionStepsSkeleton({ cols = 3 }: SectionStepsSkeletonP
         {Array.from({ length: cols }).map((_, i) => (
           <Card key={i} interactive={false} variant='outlined'>
             {hasImages && (
-              <Shimmer className='aspect-[16/9] w-full !rounded-none !bg-neutral-300' />
+              <Shimmer className='aspect-video w-full rounded-none! bg-neutral-300!' />
             )}
             <div className='space-y-3 p-6'>
-              {!hasImages && <Shimmer className='h-10 w-10 !rounded-lg' />}
+              {!hasImages && <Shimmer className='h-10 w-10 rounded-lg!' />}
               <Shimmer className='h-5 w-3/4' />
               <Shimmer className='h-3.5 w-full' />
               <Shimmer className='h-3.5 w-5/6' />
-              {hasImages && <Shimmer className='mt-2 h-9 w-40 !rounded-lg' />}
+              {hasImages && <Shimmer className='mt-2 h-9 w-40 rounded-lg!' />}
             </div>
           </Card>
         ))}

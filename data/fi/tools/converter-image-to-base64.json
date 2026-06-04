@@ -28,8 +28,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "DataConverter",
       "description": "Koodaa kuvat Base64-muotoon. Kopioi valmis koodi CSS:ää tai HTML:ää varten. Ilmainen.",
-      "featureList": ["kuva to Base64 conversion", "Batch conversion", "Local browser processing"],
-      "alternateName": ["Convert kuva to Base64", "kuva to Base64", "Free kuva to Base64 converter"]
+      "featureList": [
+        "kuva to Base64 conversion",
+        "Batch conversion",
+        "Local browser processing"
+      ],
+      "alternateName": [
+        "Convert kuva to Base64",
+        "kuva to Base64",
+        "Free kuva to Base64 converter"
+      ]
     },
     "howTo": {
       "name": "Kuinka muuntaa kuva Base64-muotoon",

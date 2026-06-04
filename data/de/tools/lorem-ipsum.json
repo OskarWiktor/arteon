@@ -308,7 +308,16 @@
         },
         {
           "label": "Humor / Charakter",
-          "values": ["Neutral", "Mittel", "Niedrig", "Niedrig", "Hoch", "Hoch", "Hoch", "Niedrig"]
+          "values": [
+            "Neutral",
+            "Mittel",
+            "Niedrig",
+            "Niedrig",
+            "Hoch",
+            "Hoch",
+            "Hoch",
+            "Niedrig"
+          ]
         }
       ]
     },
