@@ -29,15 +29,15 @@ export default function TestimonialCard({ item }: Props) {
       className='flex h-full w-full flex-col justify-between border-neutral-300 text-center'
     >
       <figcaption>
-        <span className='text-dark text-xl font-semibold'>{item.author}</span>
-        {item.role && <p className='text-light text-sm'>{item.role}</p>}
+        <span className='text-xl font-semibold text-dark'>{item.author}</span>
+        {item.role && <p className='text-sm text-light'>{item.role}</p>}
         <div className='flex justify-center'>
           <StarRating value={item.rating} />
         </div>
       </figcaption>
 
       <blockquote>
-        <p className='text-dark text-base'>"{displayedQuote}"</p>
+        <p className='text-base text-dark'>"{displayedQuote}"</p>
       </blockquote>
 
       {item.link && (

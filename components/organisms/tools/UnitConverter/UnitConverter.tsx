@@ -171,7 +171,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
               }
             />
             {srcFieldConfig.suffix && (
-              <span className='text-primary-mid pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 font-mono text-sm'>
+              <span className='pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 font-mono text-sm text-primary-mid'>
                 {srcFieldConfig.suffix}
               </span>
             )}
@@ -188,7 +188,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
                 max={config.extraField.max}
                 step={config.extraField.step}
               />
-              <span className='text-primary-mid text-sm'>{config.extraField.suffix}</span>
+              <span className='text-sm text-primary-mid'>{config.extraField.suffix}</span>
             </div>
           )}
 
@@ -237,7 +237,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
               readOnly={isSpecial}
             />
             {tgtFieldConfig.suffix && (
-              <span className='text-primary-mid pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 font-mono text-sm'>
+              <span className='pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 font-mono text-sm text-primary-mid'>
                 {tgtFieldConfig.suffix}
               </span>
             )}

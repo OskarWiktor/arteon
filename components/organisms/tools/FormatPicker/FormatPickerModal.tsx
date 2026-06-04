@@ -323,7 +323,7 @@ export default function FormatPickerModal({
                           <span
                             key={item.id}
                             className={cn(
-                              'bg-primary rounded-md px-2 py-2.5 text-center text-xs font-semibold text-white',
+                              'rounded-md bg-primary px-2 py-2.5 text-center text-xs font-semibold text-white',
                               flexCenterClasses,
                             )}
                             aria-current='true'
@@ -353,7 +353,7 @@ export default function FormatPickerModal({
                           scroll={false}
                           onClick={e => handleLinkClick(e, item.href)}
                           className={cn(
-                            'border-primary/20 hover:bg-primary/5 hover:border-primary/40 rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors',
+                            'rounded-md border border-primary/20 bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors hover:border-primary/40 hover:bg-primary/5',
                             flexCenterClasses,
                           )}
                           prefetch={false}
@@ -387,7 +387,7 @@ export default function FormatPickerModal({
                           <span
                             key={fmt}
                             className={cn(
-                              'bg-primary rounded-md px-2 py-2.5 text-center text-xs font-semibold text-white',
+                              'rounded-md bg-primary px-2 py-2.5 text-center text-xs font-semibold text-white',
                               flexCenterClasses,
                             )}
                             aria-current='true'
@@ -419,7 +419,7 @@ export default function FormatPickerModal({
                           scroll={false}
                           onClick={e => handleLinkClick(e, href)}
                           className={cn(
-                            'border-primary/20 hover:bg-primary/5 hover:border-primary/40 rounded-md border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors',
+                            'rounded-md border border-primary/20 bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors hover:border-primary/40 hover:bg-primary/5',
                             flexCenterClasses,
                           )}
                           prefetch={false}

@@ -31,16 +31,16 @@ export default function TextStyleRow({
 }: TextStyleRowProps) {
   return (
     <div className='space-y-2 border-t border-neutral-200 pt-3'>
-      <p className='text-light text-xs! font-medium uppercase'>{label}</p>
+      <p className='text-xs! font-medium text-light uppercase'>{label}</p>
       <div className='flex items-center gap-2'>
-        <span className='text-light w-12 text-xs!'>{colorLabel}:</span>
+        <span className='w-12 text-xs! text-light'>{colorLabel}:</span>
         <button
           type='button'
           onClick={() => onColorChange(elementKey, null)}
           className='rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100'
           title='Reset'
         >
-          <RiRefreshLine className='text-primary h-3.5 w-3.5' />
+          <RiRefreshLine className='h-3.5 w-3.5 text-primary' />
         </button>
         <div
           className={cn(
@@ -73,19 +73,19 @@ export default function TextStyleRow({
               flexCenterClasses,
             )}
           >
-            <RiAddLine className='text-light h-3.5 w-3.5' />
+            <RiAddLine className='h-3.5 w-3.5 text-light' />
           </div>
         </div>
       </div>
       <div className='flex items-center gap-2'>
-        <span className='text-light w-12 text-xs!'>{sizeLabel}:</span>
+        <span className='w-12 text-xs! text-light'>{sizeLabel}:</span>
         <button
           type='button'
           onClick={() => onSizeChange(elementKey, -2)}
           className='rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100'
           aria-label='Zmniejsz rozmiar'
         >
-          <RiSubtractLine className='text-primary h-3.5 w-3.5' />
+          <RiSubtractLine className='h-3.5 w-3.5 text-primary' />
         </button>
         <span className='w-10 text-center text-xs! font-medium'>
           {sizeOffset > 0 ? '+' : ''}
@@ -97,7 +97,7 @@ export default function TextStyleRow({
           className='rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100'
           aria-label='Zwiększ rozmiar'
         >
-          <RiAddLine className='text-primary h-3.5 w-3.5' />
+          <RiAddLine className='h-3.5 w-3.5 text-primary' />
         </button>
       </div>
     </div>

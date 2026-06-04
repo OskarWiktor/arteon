@@ -7,7 +7,7 @@ export default function SkipToContent({ label }: { label: string }) {
       <a
         href='#main-content'
         className={cn(
-          'text-dark fixed top-3 left-3 z-[80] translate-x-[-110%] rounded-lg bg-white px-3 py-2 text-sm font-medium shadow ring-1 ring-black/10 transition-transform duration-200 outline-none focus:translate-x-0',
+          'fixed top-3 left-3 z-80 translate-x-[-110%] rounded-lg bg-white px-3 py-2 text-sm font-medium text-dark shadow ring-1 ring-black/10 transition-transform duration-200 outline-none focus:translate-x-0',
           focusRingClasses,
         )}
       >

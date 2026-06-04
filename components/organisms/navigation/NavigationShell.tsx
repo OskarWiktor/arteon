@@ -93,7 +93,7 @@ export default function NavigationShell() {
               type='button'
               onClick={() => startTransition(() => setIsSearchOpen(true))}
               className={cn(
-                'text-primary hover:bg-primary-light focus-visible:ring-primary rounded-md transition-colors',
+                'rounded-md text-primary transition-colors hover:bg-primary-light focus-visible:ring-primary',
                 flexCenterClasses,
                 largeIconSizeClasses,
                 focusRingClasses,
@@ -107,7 +107,7 @@ export default function NavigationShell() {
               href='https://nextjs.org/'
               target='_blank'
               rel='noopener noreferrer'
-              className='text-light mr-3 cursor-pointer text-sm font-normal'
+              className='mr-3 cursor-pointer text-sm font-normal text-light'
             >
               #MadeWithNext.js
             </a>
@@ -121,7 +121,7 @@ export default function NavigationShell() {
               type='button'
               onClick={() => startTransition(() => setIsSearchOpen(true))}
               className={cn(
-                'text-primary hover:bg-primary-light hover:text-primary h-10 w-10 rounded-md transition-colors',
+                'h-10 w-10 rounded-md text-primary transition-colors hover:bg-primary-light hover:text-primary',
                 flexCenterClasses,
                 focusRingClasses,
               )}

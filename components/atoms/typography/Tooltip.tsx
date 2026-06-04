@@ -81,7 +81,7 @@ export default function Tooltip({
     <span ref={rootRef} className='relative inline' onMouseLeave={hideImmediately}>
       <abbr
         className={cn(
-          'hover:text-dark focus-visible:text-dark cursor-help rounded underline decoration-dotted underline-offset-2 transition-colors',
+          'cursor-help rounded underline decoration-dotted underline-offset-2 transition-colors hover:text-dark focus-visible:text-dark',
           focusRingClasses,
           className,
         )}
@@ -103,10 +103,10 @@ export default function Tooltip({
           id={bubbleId}
           role='tooltip'
           className={cn(
-            'absolute z-[60] max-w-xs rounded-lg bg-black px-3 py-2 text-sm text-white shadow-lg',
+            'absolute z-60 max-w-xs rounded-lg bg-black px-3 py-2 text-sm text-white shadow-lg',
             placement === 'top'
-              ? 'animate-tooltip top-full left-1/2 mt-2'
-              : 'animate-tooltip-bottom bottom-full left-1/2 mb-2',
+              ? 'top-full left-1/2 mt-2 animate-[tooltip-in_0.18s_ease-out_both]'
+              : 'bottom-full left-1/2 mb-2 animate-[tooltip-in-bottom_0.18s_ease-out_both]',
           )}
           onMouseEnter={() => setOpen(true)}
           onMouseLeave={hideImmediately}

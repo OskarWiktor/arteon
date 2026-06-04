@@ -12,7 +12,7 @@ import type { SearchCategory, SearchItem } from '@/lib/search/searchIndex';
 import InlineLink from '../atoms/InlineLink';
 import Input from '../atoms/form/Input';
 import { cn } from '@/lib/utils';
-import { smallIconSizeClasses } from '@/lib/ui-classes';
+import { modalBackdropClasses, modalContentClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 
 type SearchDialogProps = {
   isOpen: boolean;
@@ -100,13 +100,13 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
 
   const renderResults = () => {
     if (!query.trim()) {
-      return <div className='text-light px-4 py-8 text-center text-sm'>{t.emptyHint}</div>;
+      return <div className='px-4 py-8 text-center text-sm text-light'>{t.emptyHint}</div>;
     }
 
     if (!hasResults) {
       return (
         <div className='px-4 py-8 text-center'>
-          <p className='text-light text-sm'>
+          <p className='text-sm text-light'>
             {t.noResults} „{query}”
           </p>
           <InlineLink
@@ -130,7 +130,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
 
           return (
             <div key={category} className='mb-2'>
-              <div className='text-light px-4 py-1.5 text-xs font-semibold tracking-wide uppercase'>
+              <div className='px-4 py-1.5 text-xs font-semibold tracking-wide text-light uppercase'>
                 {categoryLabels[category]}
               </div>
               {items.slice(0, 5).map(item => {
@@ -158,16 +158,24 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
 
   return createPortal(
     <div
-      className='animate-modal-backdrop fixed inset-0 z-[100] flex items-start justify-center bg-black/40 px-4 pt-[10vh]'
+      className={cn(
+        'fixed inset-0 z-100 flex items-start justify-center bg-black/40 px-4 pt-[10vh]',
+        modalBackdropClasses,
+      )}
       onClick={handleBackdropClick}
       role='dialog'
       aria-modal='true'
       aria-label={t.ariaLabel}
     >
-      <div className='animate-modal-content w-full max-w-xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black/5'>
+      <div
+        className={cn(
+          'w-full max-w-xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black/5',
+          modalContentClasses,
+        )}
+      >
         <div className='flex items-center gap-2 border-b border-neutral-200 px-4 py-1'>
           <RiSearchLine
-            className={cn('text-primary shrink-0', smallIconSizeClasses)}
+            className={cn('shrink-0 text-primary', smallIconSizeClasses)}
             aria-hidden='true'
           />
           <Input
@@ -182,7 +190,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
           <button
             type='button'
             onClick={onClose}
-            className='text-primary hover:bg-primary-light rounded p-0.5'
+            className='rounded p-0.5 text-primary hover:bg-primary-light'
             aria-label={t.ariaClose}
           >
             <RiCloseLine className={smallIconSizeClasses} />
@@ -215,11 +223,11 @@ function SearchResultItem({ item, isActive, dataIndex, onClick }: SearchResultIt
       })}
     >
       <div className='min-w-0 flex-1'>
-        <div className='text-dark truncate text-sm font-medium'>{item.title}</div>
-        {item.description && <div className='text-light truncate text-xs'>{item.description}</div>}
+        <div className='truncate text-sm font-medium text-dark'>{item.title}</div>
+        {item.description && <div className='truncate text-xs text-light'>{item.description}</div>}
       </div>
       <RiArrowRightSLine
-        className={cn('text-primary shrink-0 transition', smallIconSizeClasses, {
+        className={cn('shrink-0 text-primary transition', smallIconSizeClasses, {
           'translate-x-0.5 opacity-100': isActive,
           'opacity-0 group-hover:opacity-50': !isActive,
         })}

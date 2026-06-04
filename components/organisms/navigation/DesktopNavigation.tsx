@@ -71,14 +71,11 @@ export default function DesktopNavigation() {
   useOutsideClick([offerLiRef, offerPanelRef], () => setIsOfferOpen(false), isOfferOpen);
   useOutsideClick([toolsLiRef, toolsPanelRef], () => setIsToolsOpen(false), isToolsOpen);
 
-  useEscapeKey(
-    () => {
-      setIsOfferOpen(false);
-      setIsToolsOpen(false);
-      (offerBtnRef.current ?? toolsBtnRef.current)?.focus();
-    },
-    isOfferOpen || isToolsOpen,
-  );
+  useEscapeKey(() => {
+    setIsOfferOpen(false);
+    setIsToolsOpen(false);
+    (offerBtnRef.current ?? toolsBtnRef.current)?.focus();
+  }, isOfferOpen || isToolsOpen);
 
   useEffect(() => {
     setIsOfferOpen(false);
@@ -150,7 +147,7 @@ export default function DesktopNavigation() {
               href={toolsHref}
               variant='navigation'
               aria-current={isToolsActive ? 'page' : undefined}
-              className={isToolsActive ? 'text-dark font-semibold' : ''}
+              className={isToolsActive ? 'font-semibold text-dark' : ''}
             >
               {t.toolsLabel}
             </InlineLink>
@@ -165,7 +162,7 @@ export default function DesktopNavigation() {
               aria-controls={toolsMenuId}
               ref={toolsBtnRef}
               className={cn(
-                'text-primary hover:bg-primary-light mr-[-14px] h-7 w-7 cursor-pointer rounded transition-colors',
+                '-mr-3.5 h-7 w-7 cursor-pointer rounded text-primary transition-colors hover:bg-primary-light',
                 flexCenterClasses,
                 focusRingClasses,
               )}
@@ -188,7 +185,7 @@ export default function DesktopNavigation() {
               variant='navigation'
               aria-current={pathname.startsWith(localeConfig.aboutHref) ? 'page' : undefined}
               className={
-                pathname.startsWith(localeConfig.aboutHref) ? 'text-dark font-semibold' : ''
+                pathname.startsWith(localeConfig.aboutHref) ? 'font-semibold text-dark' : ''
               }
             >
               {t.aboutLabel}
@@ -203,7 +200,7 @@ export default function DesktopNavigation() {
               variant='navigation'
               aria-current={pathname.startsWith(localeConfig.contactHref) ? 'page' : undefined}
               className={
-                pathname.startsWith(localeConfig.contactHref) ? 'text-dark font-semibold' : ''
+                pathname.startsWith(localeConfig.contactHref) ? 'font-semibold text-dark' : ''
               }
             >
               {t.contactLabel}
@@ -222,7 +219,7 @@ export default function DesktopNavigation() {
                   href={toolsHref}
                   variant='navigation'
                   aria-current={isToolsActive ? 'page' : undefined}
-                  className={isToolsActive ? 'text-dark font-semibold' : ''}
+                  className={isToolsActive ? 'font-semibold text-dark' : ''}
                 >
                   {t.toolsLabel}
                 </InlineLink>
@@ -237,7 +234,7 @@ export default function DesktopNavigation() {
                   aria-controls={toolsMenuId}
                   ref={toolsBtnRef}
                   className={cn(
-                    'text-primary hover:bg-primary-light mr-[-14px] h-7 w-7 cursor-pointer rounded transition-colors',
+                    '-mr-3.5 h-7 w-7 cursor-pointer rounded text-primary transition-colors hover:bg-primary-light',
                     flexCenterClasses,
                     focusRingClasses,
                   )}
@@ -262,7 +259,7 @@ export default function DesktopNavigation() {
                   href={href}
                   variant='navigation'
                   aria-current={isActive ? 'page' : undefined}
-                  className={isActive ? 'text-dark font-semibold' : ''}
+                  className={isActive ? 'font-semibold text-dark' : ''}
                 >
                   {label}
                 </InlineLink>
@@ -277,7 +274,7 @@ export default function DesktopNavigation() {
                   aria-controls={menuId}
                   ref={offerBtnRef}
                   className={cn(
-                    'text-primary hover:bg-primary-light mr-[-14px] h-7 w-7 cursor-pointer rounded transition-colors',
+                    '-mr-3.5 h-7 w-7 cursor-pointer rounded text-primary transition-colors hover:bg-primary-light',
                     flexCenterClasses,
                     focusRingClasses,
                   )}
@@ -300,7 +297,7 @@ export default function DesktopNavigation() {
                 href={href}
                 variant='navigation'
                 aria-current={isActivePage ? 'page' : undefined}
-                className={isActivePage ? 'text-dark font-semibold' : ''}
+                className={isActivePage ? 'font-semibold text-dark' : ''}
               >
                 {label}
               </InlineLink>
@@ -324,7 +321,7 @@ export default function DesktopNavigation() {
           >
             <Wrapper>
               <div ref={menuRef} onKeyDown={handleMenuKeyDown} className='grid grid-cols-5 gap-0'>
-                <div className='border-primary-light border-r pr-4'>
+                <div className='border-r border-primary-light pr-4'>
                   <div className='flex flex-col gap-1'>
                     {OFFER_SECTIONS_PL.map(section => {
                       const isActiveCategory = activeOfferCategory === section.key;
@@ -338,8 +335,8 @@ export default function DesktopNavigation() {
                           className={cn(
                             'group/cat w-full justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200',
                             {
-                              'text-primary bg-white': isActiveCategory,
-                              'text-primary-mid hover:text-primary hover:bg-white':
+                              'bg-white text-primary': isActiveCategory,
+                              'text-primary-mid hover:bg-white hover:text-primary':
                                 !isActiveCategory,
                             },
                           )}
@@ -363,7 +360,7 @@ export default function DesktopNavigation() {
                           </span>
                           <RiArrowRightSLine
                             className={cn('transition-all duration-200', smallIconSizeClasses, {
-                              'text-primary translate-x-0.5': isActiveCategory,
+                              'translate-x-0.5 text-primary': isActiveCategory,
                               'text-primary-mid': !isActiveCategory,
                             })}
                             aria-hidden='true'
@@ -375,7 +372,10 @@ export default function DesktopNavigation() {
                 </div>
 
                 <div className='col-span-4 pl-6'>
-                  <div key={activeOfferCategory} className='animate-fade-slide-in'>
+                  <div
+                    key={activeOfferCategory}
+                    className='animate-[fade-slide-in_0.15s_ease-out_both]'
+                  >
                     <div className='grid grid-cols-4 gap-2'>
                       {activeSection.items.map(item => {
                         const ItemIcon = item.icon;
@@ -388,15 +388,15 @@ export default function DesktopNavigation() {
                             {ItemIcon ? (
                               <ItemIcon
                                 className={cn(
-                                  'text-primary-mid group-hover/link:text-primary shrink-0 transition-colors',
+                                  'shrink-0 text-primary-mid transition-colors group-hover/link:text-primary',
                                   normalIconSizeClasses,
                                 )}
                                 aria-hidden='true'
                               />
                             ) : (
-                              <span className='bg-primary-light h-2 w-2 shrink-0 rounded-lg' />
+                              <span className='h-2 w-2 shrink-0 rounded-lg bg-primary-light' />
                             )}
-                            <span className='text-mid group-hover/link:text-primary text-sm font-medium transition-colors'>
+                            <span className='text-sm font-medium text-mid transition-colors group-hover/link:text-primary'>
                               {item.title}
                             </span>
                           </InlineLink>
@@ -429,7 +429,7 @@ export default function DesktopNavigation() {
                 className='grid gap-0'
                 style={{ gridTemplateColumns: 'minmax(180px, auto) 1fr' }}
               >
-                <div className='border-primary-light border-r pr-4'>
+                <div className='border-r border-primary-light pr-4'>
                   <div className='flex flex-col gap-1'>
                     {toolsSections.map(section => {
                       const isActiveCategory = activeToolsCategory === section.key;
@@ -443,8 +443,8 @@ export default function DesktopNavigation() {
                           className={cn(
                             'group/cat flex w-full items-center justify-between gap-3 rounded-lg px-4 py-3 text-left transition-all duration-200',
                             {
-                              'text-primary bg-white': isActiveCategory,
-                              'text-primary-mid hover:text-primary hover:bg-white':
+                              'bg-white text-primary': isActiveCategory,
+                              'text-primary-mid hover:bg-white hover:text-primary':
                                 !isActiveCategory,
                             },
                           )}
@@ -468,7 +468,7 @@ export default function DesktopNavigation() {
                           </span>
                           <RiArrowRightSLine
                             className={cn('transition-all duration-200', smallIconSizeClasses, {
-                              'text-primary translate-x-0.5': isActiveCategory,
+                              'translate-x-0.5 text-primary': isActiveCategory,
                               'text-primary-mid': !isActiveCategory,
                             })}
                             aria-hidden='true'
@@ -480,7 +480,10 @@ export default function DesktopNavigation() {
                 </div>
 
                 <div className='pl-6'>
-                  <div key={activeToolsCategory} className='animate-fade-slide-in'>
+                  <div
+                    key={activeToolsCategory}
+                    className='animate-[fade-slide-in_0.15s_ease-out_both]'
+                  >
                     <div
                       className={
                         activeToolsCategory === 'konwertery' ||
@@ -511,15 +514,15 @@ export default function DesktopNavigation() {
                             {ItemIcon ? (
                               <ItemIcon
                                 className={cn(
-                                  'text-primary-mid group-hover/link:text-primary shrink-0 transition-colors',
+                                  'shrink-0 text-primary-mid transition-colors group-hover/link:text-primary',
                                   normalIconSizeClasses,
                                 )}
                                 aria-hidden='true'
                               />
                             ) : (
-                              <span className='bg-primary-light h-2 w-2 shrink-0 rounded-lg' />
+                              <span className='h-2 w-2 shrink-0 rounded-lg bg-primary-light' />
                             )}
-                            <span className='text-primary group-hover/link:text-primary text-sm font-medium transition-colors'>
+                            <span className='text-sm font-medium text-primary transition-colors group-hover/link:text-primary'>
                               {item.title}
                             </span>
                           </InlineLink>
@@ -533,7 +536,6 @@ export default function DesktopNavigation() {
           </div>,
           document.body,
         )}
-
     </div>
   );
 }

@@ -53,12 +53,12 @@ export default function SectionPrices({
     <section id={id} aria-labelledby={headingId} aria-describedby={describedBy} className='w-full'>
       <div className='mb-4 lg:mb-6'>
         {subtitle && (
-          <span id={subtitleId} className='text-light text-sm tracking-wider uppercase'>
+          <span id={subtitleId} className='text-sm tracking-wider text-light uppercase'>
             {subtitle}
           </span>
         )}
         {title && (
-          <h3 className='text-dark text-2xl font-semibold tracking-tight' id={headingId}>
+          <h3 className='text-2xl font-semibold tracking-tight text-dark' id={headingId}>
             {title}
           </h3>
         )}
@@ -98,7 +98,7 @@ export default function SectionPrices({
               )}
 
               <div>
-                <h4 id={itemHeadingId} className='h5 text-dark text-xl font-semibold'>
+                <h4 id={itemHeadingId} className='h5 text-xl font-semibold text-dark'>
                   {plan.name}
                 </h4>
 
@@ -109,7 +109,7 @@ export default function SectionPrices({
                 )}
 
                 <p id={itemPriceId} className='mt-4'>
-                  <span className='text-dark text-xl font-semibold tracking-tight'>
+                  <span className='text-xl font-semibold tracking-tight text-dark'>
                     {plan.price}
                   </span>
                 </p>
@@ -165,7 +165,7 @@ export default function SectionPrices({
           role='note'
           aria-label='Informacja'
         >
-          <div className='text-mid text-[15px] leading-relaxed'>{note.text}</div>
+          <div className='text-[15px] leading-relaxed text-mid'>{note.text}</div>
           {note.ctaLink && note.ctaLabel && (
             <div className='mt-4'>
               <ButtonLink href={note.ctaLink} variant='accent' arrow>
@@ -176,7 +176,7 @@ export default function SectionPrices({
         </div>
       )}
 
-      {legalNote && <p className='text-light pt-4 text-sm leading-relaxed'>{legalNote}</p>}
+      {legalNote && <p className='pt-4 text-sm leading-relaxed text-light'>{legalNote}</p>}
     </section>
   );
 }

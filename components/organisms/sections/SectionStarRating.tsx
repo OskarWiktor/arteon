@@ -32,7 +32,7 @@ export default function SectionStarRating({
 
   return (
     <div className='inline-flex flex-col items-center gap-2'>
-      {label && <span className='text-primary text-sm font-medium'>{label}</span>}
+      {label && <span className='text-sm font-medium text-primary'>{label}</span>}
 
       <div
         className='flex gap-1'
@@ -66,7 +66,7 @@ export default function SectionStarRating({
       </div>
 
       {value > 0 && (
-        <span className='text-light text-sm'>
+        <span className='text-sm text-light'>
           {value} z {max}
         </span>
       )}

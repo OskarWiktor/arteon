@@ -10,7 +10,7 @@ import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 
 import testimonialsPl from '@/data/pl/testimonials.json';
 import { cn } from '@/lib/utils';
-import { focusRingClasses } from '@/lib/ui-classes';
+import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
 
@@ -62,9 +62,8 @@ export default function TestimonialsCarousel({
         <div
           ref={scrollRef}
           className={cn(
-            'flex gap-4 overflow-x-auto',
-            'no-scrollbar snap-x snap-mandatory scroll-smooth',
-            'pb-8',
+            'flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8',
+            noScrollbarClasses,
             focusRingClasses,
           )}
           role='region'
@@ -84,7 +83,7 @@ export default function TestimonialsCarousel({
                     }
                   : null
               }
-              className='w-[320px] shrink-0 snap-start md:w-[420px] lg:w-[520px]'
+              className='w-[320px] shrink-0 snap-start md:w-105 lg:w-130'
               role='group'
               aria-label={`Opinia ${i + 1} z ${items.length}`}
             >

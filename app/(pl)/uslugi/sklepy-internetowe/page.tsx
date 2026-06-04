@@ -330,81 +330,77 @@ export default function OfferWebPage() {
         <SectionPrices
           id='pricing-shops'
           title='Cennik sklepów internetowych'
-          plans={
-            [
-              {
-                name: 'Sklep mały',
-                price: '2 000 - 3 000',
-                description:
-                  'Bezpieczny start sprzedaży online. Prosty w obsłudze, szybki i przygotowany pod SEO - gotowy, by zacząć sprzedawać od pierwszego dnia.',
-                features: [
-                  'Do 20 produktów',
-                  'Płatności online i dostawy skonfigurowane pod Twój rynek',
-                  'SEO techniczne i redakcja treści',
-                  'Przejrzyste kategorie i wygodne wyszukiwanie',
-                  'Spójna architektura informacji oraz wygląd',
-                  'Wsparcie prawne - polityka prywatności, regulaminy',
-                  'Panel do samodzielnej edycji produktów i treści',
-                  'Szkolenie PDF z obsługi sklepu',
-                ],
-                btnOne: 'Zamów mały sklep',
-                btnOneHref: '#kontakt',
-              },
-              {
-                name: 'Sklep średni',
-                price: '3 000 - 4 000 zł',
-                description:
-                  'Sklep internetowy dla rosnącej marki. Promocje, kody rabatowe i zaplecze marketingowe, które napędza wyniki.',
-                features: [
-                  'Do 60 produktów',
-                  'Zaawansowane filtry i wyszukiwarka produktów',
-                  'Zestawy, kupony, promocje i listy życzeń',
-                  'Integracje płatności i dostaw dopasowane do branży',
-                  'SEO techniczne i redakcja treści',
-                  'Spójna architektura informacji oraz wygląd',
-                  'Wsparcie prawne - polityka prywatności, regulaminy',
-                  'Panel do samodzielnej edycji produktów i treści',
-                  'Szkolenie PDF z obsługi sklepu',
-                ],
-                btnOne: 'Zamów średni sklep',
-                btnOneHref: '#kontakt',
-              },
-              {
-                name: 'Sklep premium',
-                price: '4 000 - 6 000 zł',
-                description:
-                  'Wygląd premium i płynne doświadczenie zakupowe. Szybki, elastyczny, gotowy na rozwój międzynarodowy.',
-                features: [
-                  'Od 60 produktów',
-                  'Projekt graficzny premium - więcej możliwości dzięki technologii',
-                  'Najwyższy poziom SEO technicznego',
-                  'Koszyk, checkout i integracje płatności skonfigurowane pod sprzedaż',
-                  'Sekcje kolekcji, bestsellery i rekomendacje produktów',
-                  'Blog i treści edukacyjne wspierające ruch organiczny',
-                  'WCAG 2.1 AA + Deklaracja Dostępności',
-                  'Wsparcie prawne - polityka prywatności, regulaminy',
-                  'Panel do samodzielnej edycji produktów i treści',
-                  'Szkolenie PDF z obsługi sklepu',
-                ],
-                btnOne: 'Zamów sklep premium',
-                btnOneHref: '#kontakt',
-                lastPlan: true,
-              },
-            ]
-          }
-          note={
+          plans={[
             {
-              text: (
-                <p className='text-light'>
-                  <strong className='text-dark'>Potrzebujesz czegoś więcej? </strong>
-                  Tworzymy zaawansowane sklepy i aplikacje w Next.js - rozwiązania szyte na miarę,
-                  gotowe na zaawansowane integracje, funkcje oraz duży ruch.
-                </p>
-              ),
-              ctaLabel: 'Porozmawiajmy o Twoim projekcie',
-              ctaLink: '#kontakt',
-            }
-          }
+              name: 'Sklep mały',
+              price: '2 000 - 3 000',
+              description:
+                'Bezpieczny start sprzedaży online. Prosty w obsłudze, szybki i przygotowany pod SEO - gotowy, by zacząć sprzedawać od pierwszego dnia.',
+              features: [
+                'Do 20 produktów',
+                'Płatności online i dostawy skonfigurowane pod Twój rynek',
+                'SEO techniczne i redakcja treści',
+                'Przejrzyste kategorie i wygodne wyszukiwanie',
+                'Spójna architektura informacji oraz wygląd',
+                'Wsparcie prawne - polityka prywatności, regulaminy',
+                'Panel do samodzielnej edycji produktów i treści',
+                'Szkolenie PDF z obsługi sklepu',
+              ],
+              btnOne: 'Zamów mały sklep',
+              btnOneHref: '#kontakt',
+            },
+            {
+              name: 'Sklep średni',
+              price: '3 000 - 4 000 zł',
+              description:
+                'Sklep internetowy dla rosnącej marki. Promocje, kody rabatowe i zaplecze marketingowe, które napędza wyniki.',
+              features: [
+                'Do 60 produktów',
+                'Zaawansowane filtry i wyszukiwarka produktów',
+                'Zestawy, kupony, promocje i listy życzeń',
+                'Integracje płatności i dostaw dopasowane do branży',
+                'SEO techniczne i redakcja treści',
+                'Spójna architektura informacji oraz wygląd',
+                'Wsparcie prawne - polityka prywatności, regulaminy',
+                'Panel do samodzielnej edycji produktów i treści',
+                'Szkolenie PDF z obsługi sklepu',
+              ],
+              btnOne: 'Zamów średni sklep',
+              btnOneHref: '#kontakt',
+            },
+            {
+              name: 'Sklep premium',
+              price: '4 000 - 6 000 zł',
+              description:
+                'Wygląd premium i płynne doświadczenie zakupowe. Szybki, elastyczny, gotowy na rozwój międzynarodowy.',
+              features: [
+                'Od 60 produktów',
+                'Projekt graficzny premium - więcej możliwości dzięki technologii',
+                'Najwyższy poziom SEO technicznego',
+                'Koszyk, checkout i integracje płatności skonfigurowane pod sprzedaż',
+                'Sekcje kolekcji, bestsellery i rekomendacje produktów',
+                'Blog i treści edukacyjne wspierające ruch organiczny',
+                'WCAG 2.1 AA + Deklaracja Dostępności',
+                'Wsparcie prawne - polityka prywatności, regulaminy',
+                'Panel do samodzielnej edycji produktów i treści',
+                'Szkolenie PDF z obsługi sklepu',
+              ],
+              btnOne: 'Zamów sklep premium',
+              btnOneHref: '#kontakt',
+              lastPlan: true,
+            },
+          ]}
+          note={{
+            text: (
+              <p className='text-light'>
+                <strong className='text-dark'>Potrzebujesz czegoś więcej? </strong>
+                Tworzymy zaawansowane sklepy i aplikacje w Next.js - rozwiązania szyte na miarę,
+                gotowe na zaawansowane integracje, funkcje oraz duży ruch.
+              </p>
+            ),
+            ctaLabel: 'Porozmawiajmy o Twoim projekcie',
+            ctaLink: '#kontakt',
+          }}
         />
 
         <Divider />

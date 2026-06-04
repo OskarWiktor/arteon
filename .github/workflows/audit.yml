@@ -10,7 +10,7 @@ on:
   schedule:
     # Weekly catch-all (Mondays 06:00 UTC) for advisories published
     # after a dependency was already merged.
-    - cron: "0 6 * * 1"
+    - cron: '0 6 * * 1'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: "20"
+          node-version: '20'
 
       # Audits only production dependencies (--omit=dev): this is a static site,
       # so dev-only tooling (eslint plugins, build tools) never ships to users.

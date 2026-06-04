@@ -49,7 +49,7 @@ export default function SectionContactForm({
         />
 
         <div className='flex flex-col justify-center'>
-          <div className='relative mb-6 aspect-[4/3] overflow-hidden'>
+          <div className='relative mb-6 aspect-4/3 overflow-hidden'>
             <Image
               src={imageSrc}
               alt={imageAlt}
@@ -64,7 +64,7 @@ export default function SectionContactForm({
                 <li key={i} className='flex items-center gap-3'>
                   <div
                     className={cn(
-                      'bg-accent/10 rounded-lg',
+                      'rounded-lg bg-accent/10',
                       flexCenterClasses,
                       normalIconSizeClasses,
                     )}

@@ -272,7 +272,7 @@ export default function FaviconGenerator() {
                         className={cn(
                           'inline-flex cursor-pointer items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium',
                           checked
-                            ? 'bg-primary border-black text-white'
+                            ? 'border-black bg-primary text-white'
                             : 'border-neutral-200 bg-white hover:bg-neutral-100',
                         )}
                       >

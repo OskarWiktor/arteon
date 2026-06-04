@@ -21,7 +21,7 @@ export default function ToolFileRow({ name, meta, actions, preview, className }:
         {preview}
         <div className='min-w-0 flex-1'>
           <div title={name}>
-            <p className='tool-value text-dark truncate'>{name}</p>
+            <p className='tool-value truncate text-dark'>{name}</p>
           </div>
           <div className='tool-meta'>{meta}</div>
         </div>

@@ -31,12 +31,12 @@ export default function SectionMetrics({ title, metrics }: SectionMetricsProps) 
 
             return (
               <Card key={index} padding='md'>
-                <p className='text-light mb-2 text-sm'>{metric.label}</p>
+                <p className='mb-2 text-sm text-light'>{metric.label}</p>
                 <div className='mb-3 flex items-baseline gap-1'>
                   <span className='h3'>{metric.value}</span>
-                  <span className='text-light text-sm'>{metric.unit}</span>
+                  <span className='text-sm text-light'>{metric.unit}</span>
                 </div>
-                <div className='bg-primary-light h-2 overflow-hidden rounded-lg'>
+                <div className='h-2 overflow-hidden rounded-lg bg-primary-light'>
                   <div
                     className={cn('h-full rounded-lg', metric.color)}
                     style={{ width: `${percentage}%` }}

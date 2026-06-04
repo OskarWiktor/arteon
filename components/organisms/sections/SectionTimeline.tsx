@@ -46,11 +46,11 @@ export default function SectionTimeline({
 
       <div className='relative'>
         <div
-          className='bg-primary-light absolute top-0 left-6 hidden h-full w-0.5 md:left-1/2 md:block md:-translate-x-1/2'
+          className='absolute top-0 left-6 hidden h-full w-0.5 bg-primary-light md:left-1/2 md:block md:-translate-x-1/2'
           aria-hidden='true'
         />
         <div
-          className='bg-primary-light absolute top-0 left-6 block h-full w-0.5 md:hidden'
+          className='absolute top-0 left-6 block h-full w-0.5 bg-primary-light md:hidden'
           aria-hidden='true'
         />
 
@@ -63,7 +63,7 @@ export default function SectionTimeline({
                 'md:flex-row-reverse': index % 2 !== 0,
               })}
             >
-              <div className='md:bg-primary hidden md:absolute md:left-1/2 md:flex md:h-12 md:w-12 md:-translate-x-1/2 md:items-center md:justify-center md:rounded-lg md:text-white md:shadow-lg'>
+              <div className='hidden md:absolute md:left-1/2 md:flex md:h-12 md:w-12 md:-translate-x-1/2 md:items-center md:justify-center md:rounded-lg md:bg-primary md:text-white md:shadow-lg'>
                 {step.icon}
               </div>
 
@@ -76,7 +76,7 @@ export default function SectionTimeline({
                 <Card padding='lg' className='ml-16 md:ml-0'>
                   <div
                     className={cn(
-                      'bg-primary absolute top-6 left-0 h-12 w-12 rounded-lg text-white shadow-lg md:hidden',
+                      'absolute top-6 left-0 h-12 w-12 rounded-lg bg-primary text-white shadow-lg md:hidden',
                       flexCenterClasses,
                     )}
                   >

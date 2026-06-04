@@ -197,7 +197,7 @@ export default function PaletteExtractor() {
                 />
               </div>
               <div className='min-w-0 overflow-hidden'>
-                <p className='tool-value text-dark truncate' title={file?.name}>
+                <p className='tool-value truncate text-dark' title={file?.name}>
                   {file?.name}
                 </p>
                 <ToolHelper className='text-xs!'>{t.copyHint}</ToolHelper>

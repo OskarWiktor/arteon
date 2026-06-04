@@ -463,7 +463,7 @@ export default function ImageResizeTool() {
             )}
           </div>
 
-          <div className='text-light mt-4 rounded-lg border border-neutral-200 bg-white/90 p-4 text-xs!'>
+          <div className='mt-4 rounded-lg border border-neutral-200 bg-white/90 p-4 text-xs! text-light'>
             <h3 className='h6 mb-2'>{t.imageParams}</h3>
             {!state.imageUrl && <p>{t.noData}</p>}
             {state.imageUrl && (

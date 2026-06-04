@@ -12,3 +12,9 @@ export const largeIconSizeClasses = 'h-8 w-8';
 
 export const flexCenterClasses = 'flex items-center justify-center';
 export const flexCenterBetweenClasses = 'flex items-center justify-between';
+
+export const modalBackdropClasses = 'animate-[modal-backdrop-in_0.15s_ease-out_both]';
+export const modalContentClasses = 'animate-[modal-content-in_0.15s_ease-out_both]';
+
+export const noScrollbarClasses =
+  '[scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden';

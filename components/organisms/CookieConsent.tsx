@@ -136,14 +136,14 @@ export default function CookieConsent({
       aria-describedby={descId}
       className='fixed inset-x-0 bottom-0 z-[70] bg-transparent'
     >
-      <div className='text-dark mx-auto mb-4 w-[min(92vw,1280px)] rounded bg-white p-5 shadow-lg ring-1 ring-black/5'>
+      <div className='mx-auto mb-4 w-[min(92vw,1280px)] rounded bg-white p-5 text-dark shadow-lg ring-1 ring-black/5'>
         {!panel ? (
           <div className='flex flex-col gap-4 md:flex-row md:items-center md:justify-between'>
             <div className='space-y-1'>
               <span id='cookie-title' className='h6'>
                 {t.title}
               </span>
-              <p id='cookie-desc' className='text-dark text-sm'>
+              <p id='cookie-desc' className='text-sm text-dark'>
                 {t.description}{' '}
                 <a
                   className='text-dark underline underline-offset-2'
@@ -161,7 +161,7 @@ export default function CookieConsent({
                 ref={firstNativeBtnRef}
                 onClick={() => saveAndClose({ analytics: true, ads: true })}
                 className={cn(
-                  'bg-primary inline-flex w-fit cursor-pointer items-center rounded-lg px-3 py-1.5 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-4 md:py-2 md:text-base',
+                  'inline-flex w-fit cursor-pointer items-center rounded-lg bg-primary px-3 py-1.5 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-4 md:py-2 md:text-base',
                   focusRingClasses,
                 )}
               >
@@ -173,7 +173,7 @@ export default function CookieConsent({
                   focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
                 }}
                 className={cn(
-                  'text-dark inline-flex w-fit items-center rounded-lg border border-neutral-200 bg-white px-3 py-1 text-sm font-medium transition hover:bg-neutral-50',
+                  'inline-flex w-fit items-center rounded-lg border border-neutral-200 bg-white px-3 py-1 text-sm font-medium text-dark transition hover:bg-neutral-50',
                   focusRingClasses,
                 )}
               >
@@ -196,11 +196,11 @@ export default function CookieConsent({
               <div className='flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2'>
                 <div>
                   <span className='text-base font-medium'>{t.essentialTitle}</span>
-                  <span className='text-dark ml-2 text-sm font-medium'>
+                  <span className='ml-2 text-sm font-medium text-dark'>
                     {t.essentialDescription}
                   </span>
                 </div>
-                <span className='text-dark bg-primary-light rounded-lg px-3 py-1 text-xs font-semibold'>
+                <span className='rounded-lg bg-primary-light px-3 py-1 text-xs font-semibold text-dark'>
                   {t.essentialStatus}
                 </span>
               </div>
@@ -208,7 +208,7 @@ export default function CookieConsent({
               <div className='flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2'>
                 <div>
                   <span className='text-base font-medium'>{t.analyticsTitle}</span>
-                  <span className='text-dark ml-2 text-sm font-medium'>
+                  <span className='ml-2 text-sm font-medium text-dark'>
                     {t.analyticsDescription}
                   </span>
                 </div>
@@ -226,7 +226,7 @@ export default function CookieConsent({
               <div className='flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2'>
                 <div>
                   <span className='text-base font-medium'>{t.adsTitle}</span>
-                  <span className='text-dark ml-2 text-sm font-medium'>{t.adsDescription}</span>
+                  <span className='ml-2 text-sm font-medium text-dark'>{t.adsDescription}</span>
                 </div>
                 <div className={cn('w-[24px]', flexCenterClasses)}>
                   <InputCheckboxWithLabel
@@ -241,13 +241,13 @@ export default function CookieConsent({
             </fieldset>
 
             <div className='flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between'>
-              <span className='text-dark text-sm font-medium'>{t.changeDecision}</span>
+              <span className='text-sm font-medium text-dark'>{t.changeDecision}</span>
 
               <div className='flex gap-2'>
                 <button
                   onClick={() => saveAndClose({ analytics: false, ads: false })}
                   className={cn(
-                    'text-dark border-primary-light inline-flex w-fit items-center rounded-lg border bg-white px-3 py-1 text-sm font-medium shadow transition hover:-translate-y-0.5 hover:shadow-lg',
+                    'inline-flex w-fit items-center rounded-lg border border-primary-light bg-white px-3 py-1 text-sm font-medium text-dark shadow transition hover:-translate-y-0.5 hover:shadow-lg',
                     focusRingClasses,
                   )}
                 >

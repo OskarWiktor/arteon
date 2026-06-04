@@ -336,7 +336,7 @@ export default function OfferOptimizationWordPressPage() {
                       className='h-auto w-full object-contain'
                     />
                   </div>
-                  <figcaption className='text-light mt-2 text-sm'>Przed optymalizacją</figcaption>
+                  <figcaption className='mt-2 text-sm text-light'>Przed optymalizacją</figcaption>
                 </figure>
                 <figure>
                   <div className='overflow-hidden rounded-lg border border-neutral-200'>
@@ -349,7 +349,7 @@ export default function OfferOptimizationWordPressPage() {
                       className='h-auto w-full object-contain'
                     />
                   </div>
-                  <figcaption className='text-light mt-2 text-sm font-semibold'>
+                  <figcaption className='mt-2 text-sm font-semibold text-light'>
                     Po optymalizacji
                   </figcaption>
                 </figure>
@@ -370,7 +370,7 @@ export default function OfferOptimizationWordPressPage() {
                       className='h-auto w-full object-contain'
                     />
                   </div>
-                  <figcaption className='text-light mt-2 text-sm'>Przed optymalizacją</figcaption>
+                  <figcaption className='mt-2 text-sm text-light'>Przed optymalizacją</figcaption>
                 </figure>
                 <figure>
                   <div className='overflow-hidden rounded-lg border border-neutral-200'>
@@ -383,7 +383,7 @@ export default function OfferOptimizationWordPressPage() {
                       className='h-auto w-full object-contain'
                     />
                   </div>
-                  <figcaption className='text-light mt-2 text-sm font-semibold'>
+                  <figcaption className='mt-2 text-sm font-semibold text-light'>
                     Po optymalizacji
                   </figcaption>
                 </figure>

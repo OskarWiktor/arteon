@@ -352,7 +352,7 @@ export default function WcagContrastChecker() {
 
             {matchError && (
               <ToolHelper variant='error' className='mt-1'>
-                <span className='text-dark text-xs!'>{matchError}</span>
+                <span className='text-xs! text-dark'>{matchError}</span>
               </ToolHelper>
             )}
 
@@ -365,7 +365,7 @@ export default function WcagContrastChecker() {
                       style={{ backgroundColor: matchedForeground }}
                       aria-hidden='true'
                     />
-                    <p className='tool-value text-dark truncate'>{matchedForeground}</p>
+                    <p className='tool-value truncate text-dark'>{matchedForeground}</p>
                   </div>
 
                   <div className='flex flex-wrap items-center gap-2'>
@@ -389,11 +389,11 @@ export default function WcagContrastChecker() {
             <div>
               <div className='space-y-1'>
                 <p className='tool-value uppercase'>{t.contrastRatio}</p>
-                <p className='text-dark text-xl font-semibold'>{formatRatio(result.ratio)}</p>
+                <p className='text-xl font-semibold text-dark'>{formatRatio(result.ratio)}</p>
               </div>
               {hasError ? (
                 <ToolHelper variant='error' className='mt-1'>
-                  <span className='text-dark text-xs!'>
+                  <span className='text-xs! text-dark'>
                     {t.colorReadError} <code className='rounded bg-black/5 px-1'>#rrggbb</code>,{' '}
                     <code className='rounded bg-black/5 px-1'>rgb(r,g,b)</code>,{' '}
                     <code className='rounded bg-black/5 px-1'>rgba(r,g,b,a)</code>,{' '}

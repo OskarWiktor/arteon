@@ -13,7 +13,7 @@ export default async function NotFoundPage({ locale }: { locale: Locale }) {
   return (
     <div className={cn('min-h-screen flex-col px-6 text-center', flexCenterClasses)}>
       <h1 className='mb-4'>{t.title}</h1>
-      <p className='text-light mb-2 text-6xl font-bold'>{t.code}</p>
+      <p className='mb-2 text-6xl font-bold text-light'>{t.code}</p>
       <p className='mb-8 max-w-md text-lg leading-relaxed'>{t.description}</p>
       <ButtonLink href={href} variant='accent'>
         {t.backHome}

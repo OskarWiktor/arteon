@@ -35,7 +35,7 @@ export default function BenefitBelt({
       <Wrapper className='py-4'>
         <ul className='flex flex-wrap items-center justify-between gap-y-4'>
           {data.map((item, i) => (
-            <li key={i} className='text-primary flex items-center gap-2'>
+            <li key={i} className='flex items-center gap-2 text-primary'>
               <span className='[&_svg]:h-6 [&_svg]:w-6'>{item.icon}</span>
               <span className='text-sm font-medium'>{item.label}</span>
             </li>

@@ -402,83 +402,78 @@ export default function TworzenieStronWordPressPage() {
         <SectionPrices
           id='pricing-web'
           title='Ile kosztuje strona internetowa WordPress?'
-          plans={
-            [
-              {
-                name: 'Strona firmowa',
-                price: '2 200 - 2 800 zł',
-                description: 'Dla firm z kilkoma usługami. Idealna na start.',
-                features: [
-                  '5-8 podstron (strona główna, oferta, o nas, kontakt)',
-                  'Projekt w Figma do akceptacji',
-                  'Licencja Elementor Pro w cenie',
-                  'Wydajność 90+/100 dla mobile',
-                  'Optymalizacja obrazów i SEO techniczne',
-                  'Formularze, mapy, ikony mediów społecznościowych',
-                  'Polityka prywatności i cookies (RODO)',
-                  'Panel do samodzielnej edycji',
-                  'Automatyzacja aktualizacji i backupów',
-                  'Wsparcie po realizacji',
-                ],
-                btnOne: 'Wyceń stronę firmową',
-                btnOneHref: '#kontakt',
-              },
-              {
-                name: 'Strona rozbudowana',
-                price: '2 800 - 3 400 zł',
-                description: 'Dla firm z większą ofertą i wieloma usługami.',
-                features: [
-                  '9-13 podstron z rozbudowaną strukturą',
-                  'Projekt w Figma do akceptacji',
-                  'Licencja Elementor Pro w cenie',
-                  'Wydajność 90+/100 dla mobile',
-                  'Optymalizacja obrazów i SEO techniczne',
-                  'Formularze, mapy, ikony mediów społecznościowych',
-                  'Polityka prywatności i cookies (RODO)',
-                  'Panel do samodzielnej edycji',
-                  'Automatyzacja aktualizacji i backupów',
-                  'Wsparcie po realizacji',
-                ],
-                btnOne: 'Wyceń stronę rozbudowaną',
-                btnOneHref: '#kontakt',
-              },
-              {
-                name: 'Strona kompleksowa',
-                price: '3 600 - 4 200 zł',
-                description: 'Dla firm z wieloma działami i rozbudowaną ofertą.',
-                features: [
-                  '14-18 podstron z pełną architekturą',
-                  'Projekt w Figma do akceptacji',
-                  'Licencja Elementor Pro w cenie',
-                  'Wydajność 90+/100 dla mobile',
-                  'Optymalizacja obrazów i SEO techniczne',
-                  'Formularze, mapy, ikony mediów społecznościowych',
-                  'Polityka prywatności i cookies (RODO)',
-                  'Panel do samodzielnej edycji',
-                  'Automatyzacja aktualizacji i backupów',
-                  'Wsparcie po realizacji',
-                ],
-                btnOne: 'Wyceń stronę kompleksową',
-                btnOneHref: '#kontakt',
-                lastPlan: true,
-              },
-            ]
-          }
-          note={
+          plans={[
             {
-              text: (
-                <p className='text-light'>
-                  <strong className='text-dark'>
-                    Potrzebujesz 19+ podstron, bloga lub dedykowanych funkcji?{' '}
-                  </strong>
-                  Przygotujemy wycenę dopasowaną do skali projektu. Opisz swoje potrzeby w
-                  formularzu.
-                </p>
-              ),
-              ctaLabel: 'Opisz swój projekt',
-              ctaLink: '#kontakt',
-            }
-          }
+              name: 'Strona firmowa',
+              price: '2 200 - 2 800 zł',
+              description: 'Dla firm z kilkoma usługami. Idealna na start.',
+              features: [
+                '5-8 podstron (strona główna, oferta, o nas, kontakt)',
+                'Projekt w Figma do akceptacji',
+                'Licencja Elementor Pro w cenie',
+                'Wydajność 90+/100 dla mobile',
+                'Optymalizacja obrazów i SEO techniczne',
+                'Formularze, mapy, ikony mediów społecznościowych',
+                'Polityka prywatności i cookies (RODO)',
+                'Panel do samodzielnej edycji',
+                'Automatyzacja aktualizacji i backupów',
+                'Wsparcie po realizacji',
+              ],
+              btnOne: 'Wyceń stronę firmową',
+              btnOneHref: '#kontakt',
+            },
+            {
+              name: 'Strona rozbudowana',
+              price: '2 800 - 3 400 zł',
+              description: 'Dla firm z większą ofertą i wieloma usługami.',
+              features: [
+                '9-13 podstron z rozbudowaną strukturą',
+                'Projekt w Figma do akceptacji',
+                'Licencja Elementor Pro w cenie',
+                'Wydajność 90+/100 dla mobile',
+                'Optymalizacja obrazów i SEO techniczne',
+                'Formularze, mapy, ikony mediów społecznościowych',
+                'Polityka prywatności i cookies (RODO)',
+                'Panel do samodzielnej edycji',
+                'Automatyzacja aktualizacji i backupów',
+                'Wsparcie po realizacji',
+              ],
+              btnOne: 'Wyceń stronę rozbudowaną',
+              btnOneHref: '#kontakt',
+            },
+            {
+              name: 'Strona kompleksowa',
+              price: '3 600 - 4 200 zł',
+              description: 'Dla firm z wieloma działami i rozbudowaną ofertą.',
+              features: [
+                '14-18 podstron z pełną architekturą',
+                'Projekt w Figma do akceptacji',
+                'Licencja Elementor Pro w cenie',
+                'Wydajność 90+/100 dla mobile',
+                'Optymalizacja obrazów i SEO techniczne',
+                'Formularze, mapy, ikony mediów społecznościowych',
+                'Polityka prywatności i cookies (RODO)',
+                'Panel do samodzielnej edycji',
+                'Automatyzacja aktualizacji i backupów',
+                'Wsparcie po realizacji',
+              ],
+              btnOne: 'Wyceń stronę kompleksową',
+              btnOneHref: '#kontakt',
+              lastPlan: true,
+            },
+          ]}
+          note={{
+            text: (
+              <p className='text-light'>
+                <strong className='text-dark'>
+                  Potrzebujesz 19+ podstron, bloga lub dedykowanych funkcji?{' '}
+                </strong>
+                Przygotujemy wycenę dopasowaną do skali projektu. Opisz swoje potrzeby w formularzu.
+              </p>
+            ),
+            ctaLabel: 'Opisz swój projekt',
+            ctaLink: '#kontakt',
+          }}
           legalNote='Podane ceny są cenami końcowymi na fakturze. Wycena nie obejmuje kosztów domeny i hostingu (ok. 200-500 zł/rok).'
         />
 

@@ -185,7 +185,7 @@ export default function MetaTitleDescriptionTool() {
                 <p className='text-xs text-neutral-600'>Arteon</p>
 
                 <div className='flex items-center gap-1'>
-                  <p className='text-mid truncate text-[13px]!'>{url || t.urlPlaceholder}</p>
+                  <p className='truncate text-[13px]! text-mid'>{url || t.urlPlaceholder}</p>
                   <div className='ml-3 flex flex-col gap-0.5'>
                     <div className='h-0.5 w-0.5 rounded-lg bg-neutral-500'></div>
                     <div className='h-0.5 w-0.5 rounded-lg bg-neutral-500'></div>

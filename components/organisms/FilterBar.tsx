@@ -11,6 +11,8 @@ import ButtonLink from '../atoms/buttons/ButtonLink';
 import { cn } from '@/lib/utils';
 import {
   flexCenterBetweenClasses,
+  modalBackdropClasses,
+  modalContentClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/ui-classes';
@@ -193,14 +195,20 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
 
   return (
     <div
-      className='animate-modal-backdrop fixed inset-0 z-[100] flex items-start justify-center bg-black/40 px-4 pt-[10vh]'
+      className={cn(
+        'fixed inset-0 z-100 flex items-start justify-center bg-black/40 px-4 pt-[10vh]',
+        modalBackdropClasses,
+      )}
       onClick={handleBackdropClick}
       role='dialog'
       aria-modal='true'
       aria-label='Wybierz kategorię'
     >
       <div
-        className='animate-modal-content w-full max-w-lg overflow-hidden rounded-lg bg-white shadow-lg'
+        className={cn(
+          'w-full max-w-lg overflow-hidden rounded-lg bg-white shadow-lg',
+          modalContentClasses,
+        )}
         onKeyDown={handleKeyDown}
       >
         <div className={cn('border-b border-neutral-200 px-4 py-3', flexCenterBetweenClasses)}>
@@ -208,7 +216,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
           <button
             type='button'
             onClick={onClose}
-            className='text-primary hover:bg-primary-light rounded-lg p-1.5'
+            className='rounded-lg p-1.5 text-primary hover:bg-primary-light'
             aria-label='Zamknij'
           >
             <RiCloseLine className={normalIconSizeClasses} />
@@ -244,7 +252,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
               >
                 <span className='flex items-center gap-2'>
                   <span className='font-medium'>{item.label}</span>
-                  {!item.isAll && <span className='text-light text-sm'>({item.count})</span>}
+                  {!item.isAll && <span className='text-sm text-light'>({item.count})</span>}
                 </span>
                 {isActive && (
                   <RiCheckLine

@@ -60,7 +60,6 @@ export default function SectionSteps({
   grid,
   inlineIcon = false,
 }: SectionStepsProps) {
-
   const autoId = useId();
   const titleId = `steps-title-${autoId}`;
   const gridClasses = SectionStepsGridClasses[resolveGridVariant(grid, items?.length ?? 0)];
@@ -137,7 +136,7 @@ export default function SectionSteps({
                     <div className='mb-4 flex justify-start'>
                       <div
                         className={cn(
-                          'bg-primary-light text-primary h-12 w-12 rounded-lg',
+                          'h-12 w-12 rounded-lg bg-primary-light text-primary',
                           flexCenterClasses,
                         )}
                       >
@@ -147,28 +146,24 @@ export default function SectionSteps({
                   )}
 
                   {useInline ? (
-                    <h3 className='h5 text-dark mb-1 flex items-center gap-2'>
-                      {hasVisual && <span className='text-primary shrink-0'>{visualNode}</span>}
+                    <h3 className='h5 mb-1 flex items-center gap-2 text-dark'>
+                      {hasVisual && <span className='shrink-0 text-primary'>{visualNode}</span>}
                       <span>{itemTitle}</span>
                     </h3>
                   ) : (
-                    <h3 className='h5 text-dark mb-1'>{itemTitle}</h3>
+                    <h3 className='h5 mb-1 text-dark'>{itemTitle}</h3>
                   )}
 
-                  {itemSubtitle && <span className='text-light text-base'>{itemSubtitle}</span>}
+                  {itemSubtitle && <span className='text-base text-light'>{itemSubtitle}</span>}
 
-                  <div className='text-light z-10 mt-2 flex flex-1 flex-col'>{itemDesc}</div>
+                  <div className='z-10 mt-2 flex flex-1 flex-col text-light'>{itemDesc}</div>
                 </Card>
               </li>
             );
           })}
         </ol>
 
-          { buttonText && buttonHref && (
-                    <ButtonLink href={buttonHref} >
-          {buttonText}
-        </ButtonLink>
-          )}
+        {buttonText && buttonHref && <ButtonLink href={buttonHref}>{buttonText}</ButtonLink>}
       </div>
     </section>
   );

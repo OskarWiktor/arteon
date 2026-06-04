@@ -34,17 +34,17 @@ export default function SectionTable({
     <section data-section='table' aria-labelledby={title ? headingId : undefined}>
       {title && <SectionHeader title={title} />}
 
-      {description && <p className='text-mid mb-4 text-base md:mb-6'>{description}</p>}
+      {description && <p className='mb-4 text-base text-mid md:mb-6'>{description}</p>}
 
       <div className='-mx-4 overflow-x-auto sm:mx-0'>
         <table className='w-full min-w-full border-collapse text-sm tabular-nums'>
           <thead>
             <tr className='border-b border-neutral-200'>
-              <th scope='col' className='text-light p-4 text-left text-sm font-medium'>
+              <th scope='col' className='p-4 text-left text-sm font-medium text-light'>
                 {labelHeader}
               </th>
               {cols.map((col, i) => (
-                <th key={i} scope='col' className='text-light p-4 text-right text-sm font-medium'>
+                <th key={i} scope='col' className='p-4 text-right text-sm font-medium text-light'>
                   {col}
                 </th>
               ))}
@@ -58,7 +58,7 @@ export default function SectionTable({
                     <th
                       scope='colgroup'
                       colSpan={totalCols}
-                      className='text-dark px-4 py-2 text-left text-sm font-semibold'
+                      className='px-4 py-2 text-left text-sm font-semibold text-dark'
                     >
                       {row.groupLabel}
                     </th>
@@ -71,7 +71,7 @@ export default function SectionTable({
                     scope='row'
                     className={cn(
                       'p-4 text-left text-sm',
-                      row.emphasis ? 'text-dark font-medium' : 'font-normal',
+                      row.emphasis ? 'font-medium text-dark' : 'font-normal',
                     )}
                   >
                     {row.label}
@@ -93,7 +93,7 @@ export default function SectionTable({
         </table>
       </div>
 
-      {caption && <p className='text-light mt-3 text-xs'>{caption}</p>}
+      {caption && <p className='mt-3 text-xs text-light'>{caption}</p>}
     </section>
   );
 }

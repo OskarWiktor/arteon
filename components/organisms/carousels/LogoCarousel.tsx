@@ -281,12 +281,12 @@ export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps)
           {[...LogoCarouselDefaultItems, ...LogoCarouselDefaultItems].map(
             ({ label, icon: Icon }, index) => (
               <li key={`${label}-${index}`} className='shrink-0'>
-                <div className={cn('min-w-[120px] flex-col opacity-65', flexCenterClasses)}>
+                <div className={cn('min-w-30 flex-col opacity-65', flexCenterClasses)}>
                   <IconText
-                    icon={<Icon className='text-primary h-auto w-12' aria-hidden='true' />}
+                    icon={<Icon className='h-auto w-12 text-primary' aria-hidden='true' />}
                     children={undefined}
                   />
-                  <span className='text-primary mt-1 text-2xl'>{label}</span>
+                  <span className='mt-1 text-2xl text-primary'>{label}</span>
                 </div>
               </li>
             ),

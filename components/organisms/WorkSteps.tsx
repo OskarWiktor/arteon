@@ -9,7 +9,7 @@ const stepsHome = [
   {
     title: (
       <>
-        <span className='text-primary font-extrabold'>1 </span>Rozmowa
+        <span className='font-extrabold text-primary'>1 </span>Rozmowa
       </>
     ),
     description: (
@@ -22,7 +22,7 @@ const stepsHome = [
   {
     title: (
       <>
-        <span className='text-primary font-extrabold'>2 </span>Plan
+        <span className='font-extrabold text-primary'>2 </span>Plan
       </>
     ),
     description: (
@@ -32,7 +32,7 @@ const stepsHome = [
   {
     title: (
       <>
-        <span className='text-primary font-extrabold'>3 </span>Realizacja
+        <span className='font-extrabold text-primary'>3 </span>Realizacja
       </>
     ),
     description: (
@@ -45,7 +45,7 @@ const stepsHome = [
   {
     title: (
       <>
-        <span className='text-primary font-extrabold'>4 </span>Publikacja i wsparcie
+        <span className='font-extrabold text-primary'>4 </span>Publikacja i wsparcie
       </>
     ),
     description: (
@@ -61,7 +61,7 @@ const stepsWeb = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>1 </span>Rozmowa
+        <span className='font-extrabold text-light'>1 </span>Rozmowa
       </>
     ),
     description: (
@@ -74,7 +74,7 @@ const stepsWeb = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>2 </span>Plan
+        <span className='font-extrabold text-light'>2 </span>Plan
       </>
     ),
     description: (
@@ -87,7 +87,7 @@ const stepsWeb = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>3 </span>Projekt i realizacja
+        <span className='font-extrabold text-light'>3 </span>Projekt i realizacja
       </>
     ),
     description: (
@@ -100,7 +100,7 @@ const stepsWeb = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>4 </span>Publikacja i wzrost
+        <span className='font-extrabold text-light'>4 </span>Publikacja i wzrost
       </>
     ),
     description: (
@@ -124,7 +124,7 @@ const stepsMarketing = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>1 </span>Analiza
+        <span className='font-extrabold text-light'>1 </span>Analiza
       </>
     ),
     description: (
@@ -137,7 +137,7 @@ const stepsMarketing = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>2 </span>Plan
+        <span className='font-extrabold text-light'>2 </span>Plan
       </>
     ),
     description: (
@@ -147,7 +147,7 @@ const stepsMarketing = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>3 </span>Kreacje
+        <span className='font-extrabold text-light'>3 </span>Kreacje
       </>
     ),
     description: <p>Konfigurujemy reklamy, tworzymy treści, optymalizujemy strony.</p>,
@@ -155,7 +155,7 @@ const stepsMarketing = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>4 </span>Pomiar i wzrost
+        <span className='font-extrabold text-light'>4 </span>Pomiar i wzrost
       </>
     ),
     description: <p>Pokazujemy efekty i planujemy następne kroki.</p>,
@@ -166,7 +166,7 @@ const stepsContent = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>1 </span>Analiza
+        <span className='font-extrabold text-light'>1 </span>Analiza
       </>
     ),
     description: <p>Definiujemy tematy, pytania klientów i ton komunikacji.</p>,
@@ -174,7 +174,7 @@ const stepsContent = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>2 </span>Plan
+        <span className='font-extrabold text-light'>2 </span>Plan
       </>
     ),
     description: <p>Układamy mapę tematów. Uzgadniamy priorytety: co tworzymy najpierw i gdzie.</p>,
@@ -182,7 +182,7 @@ const stepsContent = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>3 </span>Tworzenie
+        <span className='font-extrabold text-light'>3 </span>Tworzenie
       </>
     ),
     description: (
@@ -194,7 +194,7 @@ const stepsContent = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>4 </span>Publikacja
+        <span className='font-extrabold text-light'>4 </span>Publikacja
       </>
     ),
     description: <p>Wprowadzamy treści w wybranej formie i monitorujemy wyniki.</p>,
@@ -205,7 +205,7 @@ const stepsDesign = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>1 </span>Analiza
+        <span className='font-extrabold text-light'>1 </span>Analiza
       </>
     ),
     description: (
@@ -215,7 +215,7 @@ const stepsDesign = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>2 </span>Koncepcje
+        <span className='font-extrabold text-light'>2 </span>Koncepcje
       </>
     ),
     description: (
@@ -225,7 +225,7 @@ const stepsDesign = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>3 </span>Realizacja
+        <span className='font-extrabold text-light'>3 </span>Realizacja
       </>
     ),
     description: (
@@ -235,7 +235,7 @@ const stepsDesign = [
   {
     title: (
       <>
-        <span className='text-light font-extrabold'>4 </span>Dostarczenie
+        <span className='font-extrabold text-light'>4 </span>Dostarczenie
       </>
     ),
     description: (
