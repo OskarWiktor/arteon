@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { buildWebpConversionReportText } from '@/lib/tools/image/webpReport';
 import type { WebpQueueItem } from '@/lib/tools/image/webpQueue';
+import { buildWebpConversionReportText } from '@/lib/tools/image/webpReport';
 
 type UseWebpReportCopyLabels = {
   clipboardNotSupported: string;

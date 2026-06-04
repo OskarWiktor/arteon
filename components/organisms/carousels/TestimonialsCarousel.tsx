@@ -3,14 +3,13 @@
 import { useRef } from 'react';
 import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
 import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
-import type { Testimonial } from '@/types/testimonial';
 import TestimonialCard from '@/components/organisms/carousels/TestimonialCard';
-import SectionHeader from '../../molecules/SectionHeader';
-import { useCarouselScroller } from '@/hooks/useCarouselScroller';
-
 import testimonialsPl from '@/data/pl/testimonials.json';
-import { cn } from '@/lib/utils';
+import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import type { Testimonial } from '@/types/testimonial';
+import SectionHeader from '../../molecules/SectionHeader';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
 

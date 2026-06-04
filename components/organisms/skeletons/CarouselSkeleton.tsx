@@ -1,7 +1,7 @@
 import { flexCenterBetweenClasses, noScrollbarClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import Card from '../Card';
 import Shimmer from '../../atoms/skeletons/Shimmer';
+import Card from '../Card';
 
 type CarouselVariant = 'project' | 'tool' | 'article' | 'testimonial';
 

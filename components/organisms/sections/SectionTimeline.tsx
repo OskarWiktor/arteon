@@ -1,9 +1,9 @@
 import { useId, type ReactNode } from 'react';
+import { flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 import ButtonGroup from '../../molecules/ButtonGroup';
 import SectionHeader from '../../molecules/SectionHeader';
 import Card from '../Card';
-import { cn } from '@/lib/utils';
-import { flexCenterClasses } from '@/lib/ui-classes';
 
 interface TimelineItem {
   icon: ReactNode;

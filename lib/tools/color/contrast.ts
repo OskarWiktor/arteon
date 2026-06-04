@@ -1,5 +1,5 @@
-import type { RGB, RGBA } from '@/types/tools/color';
 import { hexToRgb, hslToRgb, parseHsl } from '@/lib/tools/color/convert';
+import type { RGB, RGBA } from '@/types/tools/color';
 
 export function parseColor(color: string): RGBA | null {
   const trimmed = color.trim();

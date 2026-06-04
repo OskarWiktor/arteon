@@ -1,5 +1,5 @@
-import type { RGB, ExtractedColor, ExtractPaletteOptions } from '@/types/tools/color';
 import { clamp, rgbToHex } from '@/lib/tools/color/convert';
+import type { RGB, ExtractedColor, ExtractPaletteOptions } from '@/types/tools/color';
 
 export type { ExtractedColor, ExtractPaletteOptions } from '@/types/tools/color';
 

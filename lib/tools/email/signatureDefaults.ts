@@ -1,3 +1,5 @@
+import { ui } from '@/lib/i18n/tools/email-signature';
+import type { Locale } from '@/lib/LocaleContext';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import type {
   LayoutType,
@@ -8,8 +10,6 @@ import type {
   TextStyleConfig,
   ThemePreset,
 } from '@/types/tools/email';
-import type { Locale } from '@/lib/LocaleContext';
-import { ui } from '@/lib/i18n/tools/email-signature';
 
 export const STORAGE_KEY_BASE = 'arteon-email-signature-generator';
 

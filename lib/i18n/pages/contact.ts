@@ -1,6 +1,5 @@
 import type { Locale } from '@/types/locale';
 import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
-import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 // ---------------------------------------------------------------------------
 // Non-PL "Contact" page – centralised locale data (loaded from JSON)
@@ -35,21 +34,22 @@ export type ContactPageData = {
   };
 };
 
-import en from '@/data/en/pages/contact.json';
-import de from '@/data/de/pages/contact.json';
-import es from '@/data/es/pages/contact.json';
-import fr from '@/data/fr/pages/contact.json';
-import pt from '@/data/pt/pages/contact.json';
-import it from '@/data/it/pages/contact.json';
-import ro from '@/data/ro/pages/contact.json';
-import nl from '@/data/nl/pages/contact.json';
-import hu from '@/data/hu/pages/contact.json';
 import cs from '@/data/cs/pages/contact.json';
 import sv from '@/data/sv/pages/contact.json';
 import da from '@/data/da/pages/contact.json';
+import de from '@/data/de/pages/contact.json';
 import no from '@/data/no/pages/contact.json';
-import fi from '@/data/fi/pages/contact.json';
 import el from '@/data/el/pages/contact.json';
+import en from '@/data/en/pages/contact.json';
+import es from '@/data/es/pages/contact.json';
+import fi from '@/data/fi/pages/contact.json';
+import fr from '@/data/fr/pages/contact.json';
+import hu from '@/data/hu/pages/contact.json';
+import it from '@/data/it/pages/contact.json';
+import nl from '@/data/nl/pages/contact.json';
+import pt from '@/data/pt/pages/contact.json';
+import ro from '@/data/ro/pages/contact.json';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
   en,

@@ -1,11 +1,11 @@
-﻿import HeroBanner from '@/components/organisms/HeroBanner';
-import CTABanner from '@/components/organisms/CTABanner';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+﻿import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import CTABanner from '@/components/organisms/CTABanner';
+import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { siteUrl } from '@/utils/absoluteUrl';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
 const SERVICES = [
   { name: 'Strony WordPress', path: '/uslugi/tworzenie-stron-wordpress' },
   { name: 'Sklepy internetowe', path: '/uslugi/sklepy-internetowe' },

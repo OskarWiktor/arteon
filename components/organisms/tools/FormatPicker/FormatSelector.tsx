@@ -1,7 +1,6 @@
 'use client';
 
 import { useDictionary } from '@/lib/LocaleContext';
-
 import type { UniversalFormat } from '@/lib/tools/conversionRoutes';
 import FormatPickerModal from './FormatPickerModal';
 

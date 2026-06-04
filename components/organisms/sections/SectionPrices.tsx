@@ -1,12 +1,12 @@
+import type { ReactNode } from 'react';
 import { RiCheckFill } from 'react-icons/ri';
-import ButtonLink from '../../atoms/buttons/ButtonLink';
-import ButtonGroup from '../../molecules/ButtonGroup';
-import Badge from '../../atoms/Badge';
-import Card from '../Card';
-import IconText from '../../atoms/IconText';
-import { cn } from '@/lib/utils';
 import { normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
-import { ReactNode } from 'react';
+import { cn } from '@/lib/utils';
+import Badge from '../../atoms/Badge';
+import ButtonLink from '../../atoms/buttons/ButtonLink';
+import IconText from '../../atoms/IconText';
+import ButtonGroup from '../../molecules/ButtonGroup';
+import Card from '../Card';
 
 type Note = {
   text: ReactNode;

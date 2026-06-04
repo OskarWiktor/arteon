@@ -1,8 +1,8 @@
-import TableOfContents from '@/components/organisms/TableOfContent';
 import ButtonToTop from '@/components/atoms/buttons/ButtonToTop';
 import Divider from '@/components/atoms/Divider';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import Wrapper from '@/components/atoms/Wrapper';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import TableOfContents from '@/components/organisms/TableOfContent';
 import { getPrivacyPageMeta, getPrivacyAlternates } from '@/lib/i18n/pages/privacy';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 

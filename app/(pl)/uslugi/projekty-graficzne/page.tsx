@@ -1,18 +1,5 @@
-import WorkSteps from '@/components/organisms/WorkSteps';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import CTABanner from '@/components/organisms/CTABanner';
-import Divider from '@/components/atoms/Divider';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
-import Wrapper from '@/components/atoms/Wrapper';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
-import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
+import Script from 'next/script';
 import { IoAccessibilityOutline, IoColorPalette } from 'react-icons/io5';
-import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import {
   RiBrushLine,
   RiImageLine,
@@ -32,12 +19,24 @@ import {
   RiPriceTag3Line,
   RiRestaurant2Line,
 } from 'react-icons/ri';
-
-import Script from 'next/script';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import Divider from '@/components/atoms/Divider';
+import Wrapper from '@/components/atoms/Wrapper';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import CTABanner from '@/components/organisms/CTABanner';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import { siteUrl } from '@/utils/absoluteUrl';
+import WorkSteps from '@/components/organisms/WorkSteps';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import { siteUrl } from '@/utils/absoluteUrl';
 
 const SERVICES = [
   { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne/projekt-wizytowki' },

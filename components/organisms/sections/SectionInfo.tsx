@@ -1,6 +1,6 @@
 import { useId, type ReactNode } from 'react';
-import SectionHeader from '../../molecules/SectionHeader';
 import ButtonGroup from '../../molecules/ButtonGroup';
+import SectionHeader from '../../molecules/SectionHeader';
 
 interface SectionInfoProps {
   title: string;

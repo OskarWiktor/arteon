@@ -1,10 +1,10 @@
+import SkipToContent from '@/components/atoms/SkipToContent';
 import ConsentListener from '@/components/organisms/ConsentListener';
 import Footer from '@/components/organisms/Footer';
 import NavigationShell from '@/components/organisms/navigation/NavigationShell';
-import SkipToContent from '@/components/atoms/SkipToContent';
-import { LocaleProvider } from '@/lib/LocaleContext';
 import { getClientDictionary, getLocaleConfigFor } from '@/lib/i18n/client-dictionary';
 import { getDictionary } from '@/lib/i18n/get-dictionary';
+import { LocaleProvider } from '@/lib/LocaleContext';
 import type { Locale } from '@/types/locale';
 
 interface LocaleLayoutProps {

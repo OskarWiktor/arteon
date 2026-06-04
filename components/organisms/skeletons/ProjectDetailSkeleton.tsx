@@ -1,11 +1,11 @@
-import HeroBannerSkeleton from './HeroBannerSkeleton';
 import BreadcrumbsSkeleton from './BreadcrumbsSkeleton';
 import CarouselSkeleton from './CarouselSkeleton';
+import CTABannerSkeleton from './CTABannerSkeleton';
 import FaqSkeleton from './FaqSkeleton';
 import DividerSkeleton from './GapSkeleton';
-import CTABannerSkeleton from './CTABannerSkeleton';
-import Card from '../Card';
+import HeroBannerSkeleton from './HeroBannerSkeleton';
 import Shimmer from '../../atoms/skeletons/Shimmer';
+import Card from '../Card';
 
 export default function ProjectDetailSkeleton() {
   return (

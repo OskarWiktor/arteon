@@ -1,25 +1,23 @@
 'use client';
 
 import { useRef, useState, type FormEvent } from 'react';
-
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
-import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import { useDictionary } from '@/lib/LocaleContext';
-import { downloadBlob } from '@/utils/download';
-import { formatBytes } from '@/utils/formatBytes';
-
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
+import { useDictionary } from '@/lib/LocaleContext';
 import { FORMAT_EXT, FORMAT_LABELS, FORMAT_MIME } from '@/lib/tools/image/pdfToImage';
-import type { PdfPageFile, PdfToImageConverterProps } from '@/types/tools/pdf-to-image-converter';
-import Card from '../../Card';
 import { flexCenterBetweenClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import type { PdfPageFile, PdfToImageConverterProps } from '@/types/tools/pdf-to-image-converter';
+import { downloadBlob } from '@/utils/download';
+import { formatBytes } from '@/utils/formatBytes';
+import Card from '../../Card';
 
 let fileIdCounter = 0;
 

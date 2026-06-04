@@ -1,10 +1,9 @@
-import HeroBanner from '@/components/organisms/HeroBanner';
-import CTABanner from '@/components/organisms/CTABanner';
 import Wrapper from '@/components/atoms/Wrapper';
-
-import type { Locale } from '@/types/locale';
+import CTABanner from '@/components/organisms/CTABanner';
+import HeroBanner from '@/components/organisms/HeroBanner';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { getTermsPageData } from '@/lib/i18n/pages/terms';
+import type { Locale } from '@/types/locale';
 import Divider from '../atoms/Divider';
 import SectionInfo from '../organisms/sections/SectionInfo';
 

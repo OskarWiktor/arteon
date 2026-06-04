@@ -1,8 +1,8 @@
-import HeroBannerSkeleton from './HeroBannerSkeleton';
 import BreadcrumbsSkeleton from './BreadcrumbsSkeleton';
+import CTABannerSkeleton from './CTABannerSkeleton';
 import FaqSkeleton from './FaqSkeleton';
 import DividerSkeleton from './GapSkeleton';
-import CTABannerSkeleton from './CTABannerSkeleton';
+import HeroBannerSkeleton from './HeroBannerSkeleton';
 
 export default function FaqPageSkeleton() {
   return (

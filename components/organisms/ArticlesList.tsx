@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import Card from '@/components/organisms/Card';
 import { getAllArticlePreviews, getPrimaryCategorySlug } from '@/lib/blogDataService';
 import { slugify } from '@/utils/slugify';
-import Card from '@/components/organisms/Card';
 
 const articles = getAllArticlePreviews();
 

@@ -1,9 +1,9 @@
-import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
 import BenefitBeltSkeleton from '../../organisms/skeletons/BenefitBeltSkeleton';
 import CarouselSkeleton from '../../organisms/skeletons/CarouselSkeleton';
-import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
-import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
 import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
+import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
+import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
+import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
 
 export default function GenericPageSkeleton() {
   return (

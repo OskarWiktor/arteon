@@ -1,13 +1,11 @@
-import type { Locale } from '@/types/locale';
-
+import { RiHomeLine } from 'react-icons/ri';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import { BREADCRUMBS_UI } from '@/lib/i18n/locales';
+import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import { RiHomeLine } from 'react-icons/ri';
-
+import type { Locale } from '@/types/locale';
 import InlineLink from '../atoms/InlineLink';
 import Wrapper from '../atoms/Wrapper';
-import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 
 const DEFAULT_SITE_URL = 'https://www.arteonagency.pl';
 

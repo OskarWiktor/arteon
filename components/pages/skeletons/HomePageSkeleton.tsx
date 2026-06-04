@@ -1,12 +1,12 @@
-import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
+import Card from '@/components/organisms/Card';
+import { normalIconSizeClasses } from '@/lib/ui-classes';
+import Shimmer from '../../atoms/skeletons/Shimmer';
 import BenefitBeltSkeleton from '../../organisms/skeletons/BenefitBeltSkeleton';
 import CarouselSkeleton from '../../organisms/skeletons/CarouselSkeleton';
-import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
-import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
 import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
-import Shimmer from '../../atoms/skeletons/Shimmer';
-import { normalIconSizeClasses } from '@/lib/ui-classes';
-import Card from '@/components/organisms/Card';
+import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
+import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
+import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
 
 function FeatureGridSkeleton() {
   return (

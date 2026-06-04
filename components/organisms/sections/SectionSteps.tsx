@@ -1,12 +1,12 @@
 'use client';
 
-import { useId, type ReactNode } from 'react';
 import Image from 'next/image';
+import { useId, type ReactNode } from 'react';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import { flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 import SectionHeader from '../../molecules/SectionHeader';
 import Card from '../Card';
-import { cn } from '@/lib/utils';
-import { flexCenterClasses } from '@/lib/ui-classes';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 
 interface SectionStepItem {
   icon?: ReactNode;

@@ -1,6 +1,6 @@
-import Card from '@/components/organisms/Card';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import Card from '@/components/organisms/Card';
 
 interface CarouselCardShellProps {
   children: React.ReactNode;

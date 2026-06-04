@@ -2,11 +2,11 @@
 
 import { useEffect, useId, useRef, useState } from 'react';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
-import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useEventListener } from '@/hooks/useEventListener';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useTimeout } from '@/hooks/useTimeout';
-import { cn } from '@/lib/utils';
 import { focusRingClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 const PASSIVE_SCROLL: AddEventListenerOptions = { passive: true };
 

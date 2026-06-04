@@ -2,17 +2,17 @@
 
 import { useState, type FormEvent } from 'react';
 import Button from '@/components/atoms/buttons/Button';
-import ToolInfo from '@/components/atoms/ToolInfo';
-import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolAlert from '@/components/atoms/ToolAlert';
-import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
+import ToolInfo from '@/components/atoms/ToolInfo';
 import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
+import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
+import Card from '@/components/organisms/Card';
 import { useTimeout } from '@/hooks/useTimeout';
+import { ui } from '@/lib/i18n/tools/color-palette';
+import { useLocale } from '@/lib/LocaleContext';
 import { formatHsl, normalizeHex, randomHexColor, rgbToHex } from '@/lib/tools/color/convert';
 import { createPaletteFromHex, type PaletteGroupId } from '@/lib/tools/color/palette';
-import { useLocale } from '@/lib/LocaleContext';
-import { ui } from '@/lib/i18n/tools/color-palette';
-import Card from '@/components/organisms/Card';
 import { flexCenterBetweenClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 

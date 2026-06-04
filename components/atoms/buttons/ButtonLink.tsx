@@ -1,11 +1,11 @@
+import Link from 'next/link';
+import type { ReactNode } from 'react';
 import {
   buttonAccentVariantClasses,
   buttonNormalVariantClasses,
   focusRingClasses,
 } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import Link from 'next/link';
-import type { ReactNode } from 'react';
 import ArrowIcon from '../ArrowIcon';
 
 type ButtonVariant = 'normal' | 'accent';

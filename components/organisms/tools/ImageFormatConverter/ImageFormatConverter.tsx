@@ -1,30 +1,28 @@
 'use client';
 
 import { useRef, useState, type FormEvent } from 'react';
-
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
-import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import { useDictionary } from '@/lib/LocaleContext';
-import { downloadBlob } from '@/utils/download';
-import { formatBytes } from '@/utils/formatBytes';
-
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useConversionQueue } from '@/hooks/useConversionQueue';
+import { useDictionary } from '@/lib/LocaleContext';
 import {
   FORMAT_EXTENSION,
   FORMAT_LABELS,
   hasQualitySlider,
 } from '@/lib/tools/image/imageFormatConverter';
-import type { ImageFormatConverterProps } from '@/types/tools/image-format-converter';
-import Card from '../../Card';
 import { flexCenterBetweenClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import type { ImageFormatConverterProps } from '@/types/tools/image-format-converter';
+import { downloadBlob } from '@/utils/download';
+import { formatBytes } from '@/utils/formatBytes';
+import Card from '../../Card';
 
 function tpl(str: string, vars: Record<string, string>): string {
   return Object.entries(vars).reduce(

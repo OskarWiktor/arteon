@@ -1,5 +1,5 @@
-import { loadImage } from '@/utils/loadImage';
 import type { GetImageDataOptions } from '@/types/tools/image';
+import { loadImage } from '@/utils/loadImage';
 export type { GetImageDataOptions } from '@/types/tools/image';
 
 export async function getDownscaledImageDataFromUrl(

@@ -1,6 +1,6 @@
+import type { RefObject } from 'react';
 import { flexCenterBetweenClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import type { RefObject } from 'react';
 
 type CropRect = {
   left: string;

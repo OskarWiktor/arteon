@@ -1,7 +1,7 @@
-import HeroBannerSkeleton from './HeroBannerSkeleton';
 import CardGridSkeleton from './CardGridSkeleton';
-import DividerSkeleton from './GapSkeleton';
 import CTABannerSkeleton from './CTABannerSkeleton';
+import DividerSkeleton from './GapSkeleton';
+import HeroBannerSkeleton from './HeroBannerSkeleton';
 
 interface ListPageSkeletonProps {
   variant?: 'article' | 'project';

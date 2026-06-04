@@ -1,10 +1,10 @@
 'use client';
 
 import { RiFacebookFill, RiLinkedinBoxFill, RiMailLine, RiTwitterXFill } from 'react-icons/ri';
+import { focusRingClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 import Card from './Card';
 import ButtonCopy from '../atoms/buttons/ButtonCopy';
-import { cn } from '@/lib/utils';
-import { focusRingClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 type ShareBlockProps = {
   url: string;

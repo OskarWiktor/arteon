@@ -1,20 +1,19 @@
+import Divider from '@/components/atoms/Divider';
+import InlineLink from '@/components/atoms/InlineLink';
+import { JsonLd } from '@/components/atoms/JsonLd';
+import Wrapper from '@/components/atoms/Wrapper';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
-import CTABanner from '@/components/organisms/CTABanner';
-import HeroBanner from '@/components/organisms/HeroBanner';
+import LogoCarousel from '@/components/organisms/carousels/LogoCarousel';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import WorkSteps from '@/components/organisms/WorkSteps';
+import CTABanner from '@/components/organisms/CTABanner';
+import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import Wrapper from '@/components/atoms/Wrapper';
-import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import WorkSteps from '@/components/organisms/WorkSteps';
 import { getAboutAlternates } from '@/lib/i18n/pages/about';
-import LogoCarousel from '@/components/organisms/carousels/LogoCarousel';
-import { JsonLd } from '@/components/atoms/JsonLd';
-
-import InlineLink from '@/components/atoms/InlineLink';
-import Divider from '@/components/atoms/Divider';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 const profilePageJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfilePage',

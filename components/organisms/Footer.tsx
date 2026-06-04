@@ -1,12 +1,11 @@
-import Wrapper from '../atoms/Wrapper';
-import ButtonCookieSettings from '../atoms/buttons/ButtonCookieSettings';
 import Image from 'next/image';
-import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
-import { getFooterTools } from '@/lib/i18n/tool-registry';
 import { JsonLd } from '@/components/atoms/JsonLd';
+import { getFooterTools } from '@/lib/i18n/tool-registry';
 import type { Locale, FooterUi, LegalLink } from '@/types/locale';
-
+import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
+import ButtonCookieSettings from '../atoms/buttons/ButtonCookieSettings';
 import InlineLink from '../atoms/InlineLink';
+import Wrapper from '../atoms/Wrapper';
 const ORG = {
   name: 'Arteon',
   phoneE164: '+48516466255',

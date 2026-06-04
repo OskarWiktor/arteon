@@ -1,5 +1,5 @@
-import { cn } from '@/lib/utils';
 import type { ComponentPropsWithoutRef, ElementType, ReactNode } from 'react';
+import { cn } from '@/lib/utils';
 
 type CardVariant = 'default' | 'outlined';
 type CardPadding = 'sm' | 'md' | 'lg';

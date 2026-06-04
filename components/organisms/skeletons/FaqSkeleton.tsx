@@ -1,7 +1,7 @@
-import { cn } from '@/lib/utils';
-import Card from '../Card';
-import Shimmer from '../../atoms/skeletons/Shimmer';
 import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import Shimmer from '../../atoms/skeletons/Shimmer';
+import Card from '../Card';
 
 interface FaqSkeletonProps {
   count?: number;

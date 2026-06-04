@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
-import { cn } from '@/lib/utils';
 import { disabledInteractiveClasses, focusRingClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 interface ButtonPillProps<T extends string | number> {
   value: T;

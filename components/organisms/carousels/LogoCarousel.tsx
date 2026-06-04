@@ -3,10 +3,6 @@
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import type { IconType } from 'react-icons';
-import IconText from '@/components/atoms/IconText';
-import { useEventListener } from '@/hooks/useEventListener';
-import { useTimeout } from '@/hooks/useTimeout';
-import useMediaQuery from '@/hooks/useMediaQuery';
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -25,7 +21,11 @@ import {
   SiGoogleanalytics,
   SiGoogleads,
 } from 'react-icons/si';
+import IconText from '@/components/atoms/IconText';
 import SectionHeader from '@/components/molecules/SectionHeader';
+import { useEventListener } from '@/hooks/useEventListener';
+import useMediaQuery from '@/hooks/useMediaQuery';
+import { useTimeout } from '@/hooks/useTimeout';
 import { flexCenterClasses, focusRingClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 

@@ -1,6 +1,6 @@
 import { useId, type ReactNode } from 'react';
-import InputColor from '@/components/atoms/form/InputColor';
 import Input from '@/components/atoms/form/Input';
+import InputColor from '@/components/atoms/form/InputColor';
 import Label from '@/components/atoms/form/Label';
 
 interface InputColorWithLabelProps {

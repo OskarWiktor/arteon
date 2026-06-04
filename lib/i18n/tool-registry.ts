@@ -14,7 +14,6 @@ import {
   RiRulerLine,
   RiSearchLine,
 } from 'react-icons/ri';
-
 import type { Locale } from '@/types/locale';
 import type {
   ToolItemKey,

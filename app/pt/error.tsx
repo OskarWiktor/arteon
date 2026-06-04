@@ -1,7 +1,7 @@
 'use client';
 
-import dict from '@/data/pt/dictionary.json';
 import ErrorPage from '@/components/pages/ErrorPage';
+import dict from '@/data/pt/dictionary.json';
 
 export default function Error({
   error,

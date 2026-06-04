@@ -1,5 +1,4 @@
 import { RiUploadCloud2Line } from 'react-icons/ri';
-
 import Badge from '@/components/atoms/Badge';
 
 interface ToolUploadContentProps {

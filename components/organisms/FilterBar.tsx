@@ -1,14 +1,12 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { RiCloseLine, RiCheckLine, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
-import ButtonLink from '../atoms/buttons/ButtonLink';
-import { cn } from '@/lib/utils';
 import {
   flexCenterBetweenClasses,
   modalBackdropClasses,
@@ -16,6 +14,8 @@ import {
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import ButtonLink from '../atoms/buttons/ButtonLink';
 
 type Cat = { label: string; slug: string; count: number };
 

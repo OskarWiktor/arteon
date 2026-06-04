@@ -1,6 +1,6 @@
 import { cache } from 'react';
-import type { ToolsSectionDefinition, ToolsSectionLocaleText } from '@/types/tools/common';
 import type { Locale } from '@/types/locale';
+import type { ToolsSectionDefinition, ToolsSectionLocaleText } from '@/types/tools/common';
 
 // Cache Components for static data optimization (Next.js 16.1.6)
 export const getToolSections = cache(async (): Promise<ToolsSectionDefinition[]> => {

@@ -1,11 +1,11 @@
-import { cn } from '@/lib/utils';
-import Shimmer from '../../atoms/skeletons/Shimmer';
+import Card from '@/components/organisms/Card';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
   largeIconSizeClasses,
 } from '@/lib/ui-classes';
-import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/utils';
+import Shimmer from '../../atoms/skeletons/Shimmer';
 
 export type ToolPanelVariant =
   | 'default'

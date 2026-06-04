@@ -1,6 +1,6 @@
+import { flexCenterClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 import Shimmer from '../../atoms/skeletons/Shimmer';
-import { flexCenterClasses } from '@/lib/ui-classes';
 
 export default function BenefitBeltSkeleton() {
   return (

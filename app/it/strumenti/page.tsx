@@ -1,10 +1,3 @@
-import HeroBanner from '@/components/organisms/HeroBanner';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
-import Divider from '@/components/atoms/Divider';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import Wrapper from '@/components/atoms/Wrapper';
 import Script from 'next/script';
 import {
   RiCropLine,
@@ -22,9 +15,16 @@ import {
   RiLockLine,
   RiLoopLeftLine,
 } from 'react-icons/ri';
-import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import Divider from '@/components/atoms/Divider';
+import Wrapper from '@/components/atoms/Wrapper';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
   title: 'Strumenti gratuiti | Convertitori, SEO, colori, favicon',

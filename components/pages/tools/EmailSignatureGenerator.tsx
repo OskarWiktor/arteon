@@ -1,15 +1,28 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+import {
+  RiUser3Line,
+  RiMailLine,
+  RiShareLine,
+  RiPaletteLine,
+  RiFileTextLine,
+  RiLayout3Line,
+  RiSpace,
+  RiFontSize2,
+  RiDeleteBinLine,
+  RiDownloadLine,
+  RiCodeLine,
+  RiSunLine,
+  RiMoonLine,
+  RiGridLine,
+  RiEyeLine,
+  RiCloseLine,
+  RiUploadLine,
+  RiShareForwardLine,
+} from 'react-icons/ri';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import InputColor from '@/components/atoms/form/InputColor';
-import { downloadBlob } from '@/utils/download';
-import { buildSignatureHtml } from '@/lib/tools/email/buildSignatureHtml';
-import { exportSignatureAsHtml } from '@/lib/tools/email/exportSignature';
-import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import TextStyleRow from '@/components/organisms/tools/EmailSignatureGenerator/TextStyleRow';
-import IdentityPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/IdentityPanel';
-import ButtonsPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/ButtonsPanel';
 import SocialPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/SocialPanel';
 import AppearancePanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/AppearancePanel';
 import SpacingPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/SpacingPanel';
@@ -36,31 +49,16 @@ import {
   getThemePresets,
 } from '@/lib/tools/email/signatureDefaults';
 import ButtonTool from '@/components/atoms/buttons/ButtonTool';
-import { useEffect, useState } from 'react';
+import InputColor from '@/components/atoms/form/InputColor';
 import ConfirmModal from '@/components/organisms/ConfirmModal';
-import {
-  RiUser3Line,
-  RiMailLine,
-  RiShareLine,
-  RiPaletteLine,
-  RiFileTextLine,
-  RiLayout3Line,
-  RiSpace,
-  RiFontSize2,
-  RiDeleteBinLine,
-  RiDownloadLine,
-  RiCodeLine,
-  RiSunLine,
-  RiMoonLine,
-  RiGridLine,
-  RiEyeLine,
-  RiCloseLine,
-  RiUploadLine,
-  RiShareForwardLine,
-} from 'react-icons/ri';
-import { useLocale } from '@/lib/LocaleContext';
 import Card from '@/components/organisms/Card';
-import { cn } from '@/lib/utils';
+import ButtonsPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/ButtonsPanel';
+import IdentityPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/IdentityPanel';
+import TextStyleRow from '@/components/organisms/tools/EmailSignatureGenerator/TextStyleRow';
+import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { useLocale } from '@/lib/LocaleContext';
+import { buildSignatureHtml } from '@/lib/tools/email/buildSignatureHtml';
+import { exportSignatureAsHtml } from '@/lib/tools/email/exportSignature';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
@@ -68,6 +66,8 @@ import {
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import { downloadBlob } from '@/utils/download';
 
 export default function EmailSignatureGenerator() {
   const locale = useLocale();

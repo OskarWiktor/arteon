@@ -1,7 +1,7 @@
 import { useId, type ReactNode } from 'react';
-import SectionHeader from '../../molecules/SectionHeader';
-import { cn } from '@/lib/utils';
 import { flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import SectionHeader from '../../molecules/SectionHeader';
 
 type Variant = 'left' | 'right';
 

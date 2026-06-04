@@ -1,8 +1,8 @@
 import 'server-only';
 
-import type { Locale } from '@/types/locale';
-import type { ClientDictionary } from '@/lib/LocaleContext';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
+import type { ClientDictionary } from '@/lib/LocaleContext';
+import type { Locale } from '@/types/locale';
 
 const dictLoaders: Record<Locale, () => Promise<ClientDictionary>> = {
   pl: () => import('@/data/pl/dictionary.json').then(m => m.default as unknown as ClientDictionary),

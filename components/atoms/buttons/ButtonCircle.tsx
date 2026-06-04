@@ -1,6 +1,6 @@
+import type { ReactNode } from 'react';
 import { disabledInteractiveClasses, focusRingClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import type { ReactNode } from 'react';
 
 interface ButtonCircleProps {
   children: ReactNode;

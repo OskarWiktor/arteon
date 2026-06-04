@@ -1,3 +1,5 @@
+import Script from 'next/script';
+import { GoLaw } from 'react-icons/go';
 import {
   RiSpeedFill,
   RiArticleLine,
@@ -10,27 +12,25 @@ import {
   RiCheckDoubleLine,
   RiMailSendLine,
 } from 'react-icons/ri';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import CTABanner from '@/components/organisms/CTABanner';
 import Divider from '@/components/atoms/Divider';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
-import SectionBento from '@/components/organisms/sections/SectionBento';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
+import SectionBento from '@/components/organisms/sections/SectionBento';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
-import { GoLaw } from 'react-icons/go';
-import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import SectionBasic from '@/components/organisms/sections/SectionBasic';
-import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import SectionTimeline from '@/components/organisms/sections/SectionTimeline';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import { normalIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 

@@ -2,13 +2,17 @@
 
 import { useState } from 'react';
 import Button from '@/components/atoms/buttons/Button';
-import ToolInfo from '@/components/atoms/ToolInfo';
-import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolAlert from '@/components/atoms/ToolAlert';
-import InputWithLabel from '@/components/molecules/form/InputWithLabel';
-import ToolSelect from '@/components/molecules/tools/ToolSelect';
+import ToolInfo from '@/components/atoms/ToolInfo';
 import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
+import TextareaWithLabel from '@/components/molecules/form/TextareaWithLabel';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
+import ToolSelect from '@/components/molecules/tools/ToolSelect';
+import Card from '@/components/organisms/Card';
 import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
+import { ui } from '@/lib/i18n/tools/qr-code';
+import { useLocale } from '@/lib/LocaleContext';
 import {
   generateQrPng,
   generateQrSvg,
@@ -18,14 +22,10 @@ import {
   isContrastSufficient,
   calculateContrast,
 } from '@/lib/tools/qr/generateQr';
+import { flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 import type { QrDataType, VCardData, EmailData } from '@/types/tools/qr';
 import { downloadFromUrl } from '@/utils/download';
-import { useLocale } from '@/lib/LocaleContext';
-import { ui } from '@/lib/i18n/tools/qr-code';
-import TextareaWithLabel from '@/components/molecules/form/TextareaWithLabel';
-import Card from '@/components/organisms/Card';
-import { cn } from '@/lib/utils';
-import { flexCenterClasses } from '@/lib/ui-classes';
 
 const DEFAULT_SIZE = 300;
 const DEFAULT_MARGIN = 2;

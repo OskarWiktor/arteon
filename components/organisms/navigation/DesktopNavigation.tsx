@@ -1,33 +1,32 @@
 'use client';
 
-import { startTransition, useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { startTransition, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
+import {
+  NavArrowDownSLine as RiArrowDownSLine,
+  NavArrowRightSLine as RiArrowRightSLine,
+} from '@/components/atoms/NavIcons';
 import Wrapper from '@/components/atoms/Wrapper';
 import {
   DESKTOP_NAV_ITEMS_PL,
   OFFER_SECTIONS_PL,
   type OfferSectionKey,
 } from '@/data/pl/navigation-data-pl';
-import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import { useIsMounted } from '@/hooks/useIsMounted';
-import { getDesktopToolsSections, type ToolsSectionKey } from '@/lib/i18n/tool-registry';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
-import { useOutsideClick } from '@/hooks/useOutsideClick';
+import { useIsMounted } from '@/hooks/useIsMounted';
 import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
-import {
-  NavArrowDownSLine as RiArrowDownSLine,
-  NavArrowRightSLine as RiArrowRightSLine,
-} from '@/components/atoms/NavIcons';
-
-import InlineLink from '../../atoms/InlineLink';
-import { cn } from '@/lib/utils';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
+import { getDesktopToolsSections, type ToolsSectionKey } from '@/lib/i18n/tool-registry';
+import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import {
   flexCenterClasses,
   focusRingClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import InlineLink from '../../atoms/InlineLink';
 const plUi = {
   closeServicesList: 'Zamknij listę usług',
   openServicesList: 'Otwórz listę usług',

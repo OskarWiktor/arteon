@@ -1,5 +1,5 @@
-import type { Locale } from '@/types/locale';
 import { SUPPORTED_LOCALES } from '@/lib/i18n/locales';
+import type { Locale } from '@/types/locale';
 
 /**
  * Locale prefixes used in URL paths.

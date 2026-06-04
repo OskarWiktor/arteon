@@ -1,4 +1,5 @@
-import type { Locale } from '@/types/locale';
+import Divider from '@/components/atoms/Divider';
+import { getDictionary } from '@/lib/i18n/get-dictionary';
 import {
   getConversionByToolKey,
   getConvertersToSameTarget,
@@ -6,10 +7,9 @@ import {
   FORMAT_DISPLAY_LABELS,
   type ResolvedRoute,
 } from '@/lib/tools/conversionRoutes';
-import Divider from '@/components/atoms/Divider';
-import { cn } from '@/lib/utils';
 import { flexCenterClasses } from '@/lib/ui-classes';
-import { getDictionary } from '@/lib/i18n/get-dictionary';
+import { cn } from '@/lib/utils';
+import type { Locale } from '@/types/locale';
 
 function LinkGrid({ routes, connector }: { routes: ResolvedRoute[]; connector: string }) {
   return (

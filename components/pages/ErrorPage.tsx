@@ -4,9 +4,9 @@ import { useEffect } from 'react';
 import Button from '@/components/atoms/buttons/Button';
 import Wrapper from '@/components/atoms/Wrapper';
 import type { ErrorPagesDictionary } from '@/lib/i18n/get-dictionary';
-import ButtonLink from '../atoms/buttons/ButtonLink';
 import { flexCenterClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import ButtonLink from '../atoms/buttons/ButtonLink';
 
 type ErrorPageProps = {
   error: Error & { digest?: string };

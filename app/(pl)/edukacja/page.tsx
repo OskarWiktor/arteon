@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
-import HeroBanner from '@/components/organisms/HeroBanner';
+import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import ArticlesList from '@/components/organisms/ArticlesList';
 import FilterBar from '@/components/organisms/FilterBar';
+import HeroBanner from '@/components/organisms/HeroBanner';
 import {
   getAllArticlePreviews,
   getCategoriesWithCount,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
 import { siteUrl } from '@/utils/absoluteUrl';
-import { JsonLd } from '@/components/atoms/JsonLd';
-import Divider from '@/components/atoms/Divider';
 
 export const metadata: Metadata = {
   title: 'Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym - Arteon',

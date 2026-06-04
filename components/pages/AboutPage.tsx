@@ -1,9 +1,3 @@
-import HeroBanner from '@/components/organisms/HeroBanner';
-import CTABanner from '@/components/organisms/CTABanner';
-import Divider from '@/components/atoms/Divider';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import Wrapper from '@/components/atoms/Wrapper';
 import {
   RiLockLine,
   RiInfinityFill,
@@ -15,12 +9,17 @@ import {
   RiPaletteLine,
   RiQrCodeLine,
 } from 'react-icons/ri';
-
-import type { Locale } from '@/types/locale';
+import Divider from '@/components/atoms/Divider';
+import Wrapper from '@/components/atoms/Wrapper';
+import CTABanner from '@/components/organisms/CTABanner';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { getAboutPageData } from '@/lib/i18n/pages/about';
 import { normalIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import type { Locale } from '@/types/locale';
 
 const WHY_FREE_ICONS = [RiInfinityFill, RiLockLine, RiToolsFill, RiRocketLine];
 const OUR_TOOLS_ICONS = [RiImageEditLine, RiSearchLine, RiMailLine, RiPaletteLine, RiQrCodeLine];

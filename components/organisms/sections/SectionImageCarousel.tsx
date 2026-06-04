@@ -1,12 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 import { RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
-import Wrapper from '../../atoms/Wrapper';
 import SectionHeader from '@/components/molecules/SectionHeader';
-import { cn } from '@/lib/utils';
 import { flexCenterClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import Wrapper from '../../atoms/Wrapper';
 
 interface CarouselSlide {
   imageSrc: string;

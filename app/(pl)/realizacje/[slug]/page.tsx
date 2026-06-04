@@ -1,6 +1,6 @@
-import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 import {
   RiCheckLine,
   RiArrowRightSLine,
@@ -29,32 +29,30 @@ import {
   RiBookOpenLine,
   RiMessageLine,
 } from 'react-icons/ri';
-
+import Badge from '@/components/atoms/Badge';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
-import HeroBanner from '@/components/organisms/HeroBanner';
-
-import projectsData from '@/data/pl/projects.json';
-import type { Project, ContentBlock } from '@/types/project';
-import { toAbsoluteUrl } from '@/utils/absoluteUrl';
-import TableOfContents from '@/components/organisms/TableOfContent';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import Badge from '@/components/atoms/Badge';
+import Card from '@/components/organisms/Card';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import CTABanner from '@/components/organisms/CTABanner';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import ShareBlock from '@/components/organisms/ShareBlock';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import { JsonLd } from '@/components/atoms/JsonLd';
 import SectionMetrics from '@/components/organisms/sections/SectionMetrics';
 import SectionFeatureList from '@/components/organisms/sections/SectionFeatureList';
 import SectionProcess from '@/components/organisms/sections/SectionProcess';
 import SectionImageGallery from '@/components/organisms/sections/SectionImageGallery';
-import { cn } from '@/lib/utils';
+import TableOfContents from '@/components/organisms/TableOfContent';
+import projectsData from '@/data/pl/projects.json';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
-import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/utils';
+import type { Project, ContentBlock } from '@/types/project';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 interface ProjectsData {
   projects: Project[];

@@ -1,7 +1,7 @@
-import type { Locale } from '@/types/locale';
-import type { ToolItemKey } from '@/types/tools/common';
 import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
 import { TOOL_REGISTRY, getToolHref } from '@/lib/i18n/tool-registry';
+import type { Locale } from '@/types/locale';
+import type { ToolItemKey } from '@/types/tools/common';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 
 // ---------------------------------------------------------------------------

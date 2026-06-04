@@ -1,10 +1,10 @@
-import TableOfContents from '@/components/organisms/TableOfContent';
 import ButtonToTop from '@/components/atoms/buttons/ButtonToTop';
 import Divider from '@/components/atoms/Divider';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import Wrapper from '@/components/atoms/Wrapper';
-import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import TableOfContents from '@/components/organisms/TableOfContent';
 import { getPrivacyAlternates } from '@/lib/i18n/pages/privacy';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
   title: 'Polityka prywatności - Arteon',

@@ -1,7 +1,7 @@
 import 'server-only';
 
-import type { Locale } from '@/types/locale';
 import { z } from 'zod';
+import type { Locale } from '@/types/locale';
 
 const NavSchema = z.object({
   mainNavigation: z.string(),

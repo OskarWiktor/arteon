@@ -1,6 +1,6 @@
+import bundleAnalyzer from '@next/bundle-analyzer';
 import type { NextConfig } from 'next';
 import type { Redirect } from 'next/dist/lib/load-custom-routes';
-import bundleAnalyzer from '@next/bundle-analyzer';
 import { ALL_STATIC_REDIRECTS } from './lib/redirects';
 
 const withBundleAnalyzer = bundleAnalyzer({

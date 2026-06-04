@@ -1,8 +1,8 @@
 import { RiRefreshLine, RiAddLine, RiSubtractLine } from 'react-icons/ri';
-import type { TextElementKey } from '@/types/tools/email';
 import InputColor from '@/components/atoms/form/InputColor';
-import { cn } from '@/lib/utils';
 import { flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import type { TextElementKey } from '@/types/tools/email';
 
 interface TextStyleRowProps {
   elementKey: TextElementKey;

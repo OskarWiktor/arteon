@@ -1,13 +1,13 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
+import { useState } from 'react';
 import { RiExpandLeftRightLine } from 'react-icons/ri';
-import Wrapper from '../../atoms/Wrapper';
-import SectionHeader from '@/components/molecules/SectionHeader';
 import InputRange from '@/components/atoms/form/InputRange';
-import { cn } from '@/lib/utils';
+import SectionHeader from '@/components/molecules/SectionHeader';
 import { flexCenterClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import Wrapper from '../../atoms/Wrapper';
 
 interface SectionBeforeAfterProps {
   title?: string;

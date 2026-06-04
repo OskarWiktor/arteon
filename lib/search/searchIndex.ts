@@ -1,11 +1,10 @@
 import { OFFER_SECTIONS_PL } from '@/data/pl/navigation-data-pl';
 import searchBlog from '@/data/pl/search-blog.json';
 import searchProjects from '@/data/pl/search-projects.json';
-import { slugify } from '@/utils/slugify';
-import { getToolsList } from '@/lib/i18n/tool-registry';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
-
+import { getToolsList } from '@/lib/i18n/tool-registry';
 import type { Locale } from '@/types/locale';
+import { slugify } from '@/utils/slugify';
 export type SearchCategory = 'uslugi' | 'narzedzia' | 'edukacja' | 'realizacje' | 'inne';
 
 export type SearchItem = {

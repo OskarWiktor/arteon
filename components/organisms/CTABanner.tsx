@@ -1,9 +1,9 @@
-import type { ReactNode } from 'react';
 import Image from 'next/image';
-import Wrapper from '../atoms/Wrapper';
-import SectionHeader from '../molecules/SectionHeader';
-import ButtonGroup from '../molecules/ButtonGroup';
+import type { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
+import Wrapper from '../atoms/Wrapper';
+import ButtonGroup from '../molecules/ButtonGroup';
+import SectionHeader from '../molecules/SectionHeader';
 
 interface CTABannerProps {
   title?: ReactNode;

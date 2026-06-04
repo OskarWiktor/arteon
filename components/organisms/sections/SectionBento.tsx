@@ -1,9 +1,9 @@
-import type { ReactNode } from 'react';
 import Image from 'next/image';
-import ButtonLink from '../../atoms/buttons/ButtonLink';
+import type { ReactNode } from 'react';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { flexCenterClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import ButtonLink from '../../atoms/buttons/ButtonLink';
 
 type BentoItemSize = 'small' | 'medium' | 'large';
 

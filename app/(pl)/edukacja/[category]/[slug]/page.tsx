@@ -1,30 +1,29 @@
-import { notFound, permanentRedirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Wrapper from '@/components/atoms/Wrapper';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import TableOfContents from '@/components/organisms/TableOfContent';
+import { notFound, permanentRedirect } from 'next/navigation';
+import AbbrTouchHandler from '@/components/atoms/AbbrTouchHandler';
 import Badge from '@/components/atoms/Badge';
+import ColorPalette from '@/components/atoms/ColorPalette';
+import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
+import TableBlock from '@/components/atoms/TableBlock';
+import Wrapper from '@/components/atoms/Wrapper';
+import AdSense from '@/components/molecules/AdSense';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import CodeBlock from '@/components/organisms/CodeBlock';
 import CTABanner from '@/components/organisms/CTABanner';
-
-import type { Article } from '@/types/article';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import TableOfContents from '@/components/organisms/TableOfContent';
 import {
   getAllArticlePreviews,
   findArticleBySlug,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
+import { cn } from '@/lib/utils';
+import type { Article } from '@/types/article';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
-import CodeBlock from '@/components/organisms/CodeBlock';
-import TableBlock from '@/components/atoms/TableBlock';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import ShareBlock from '@/components/organisms/ShareBlock';
-import ColorPalette from '@/components/atoms/ColorPalette';
-import AbbrTouchHandler from '@/components/atoms/AbbrTouchHandler';
-import AdSense from '@/components/molecules/AdSense';
-import { JsonLd } from '@/components/atoms/JsonLd';
-import Divider from '@/components/atoms/Divider';
-import { cn } from '@/lib/utils';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 
 const defaultCTA = {

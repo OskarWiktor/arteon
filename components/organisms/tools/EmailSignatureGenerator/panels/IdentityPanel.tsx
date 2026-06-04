@@ -1,7 +1,7 @@
-import type { SignatureConfig, StyleConfig } from '@/types/tools/email';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import TextareaWithLabel from '@/components/molecules/form/TextareaWithLabel';
+import type { SignatureConfig, StyleConfig } from '@/types/tools/email';
 
 type Props = {
   config: SignatureConfig;

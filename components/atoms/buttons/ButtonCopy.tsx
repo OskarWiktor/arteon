@@ -2,8 +2,8 @@
 
 import { RiCheckLine, RiClipboardLine } from 'react-icons/ri';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { cn } from '@/lib/utils';
 import { focusRingClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 type ButtonCopyVariant = 'default' | 'dark';
 

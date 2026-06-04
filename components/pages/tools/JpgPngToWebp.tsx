@@ -1,28 +1,28 @@
 'use client';
 
-import Button from '@/components/atoms/buttons/Button';
 import { useEffect, useRef, useState, type FormEvent } from 'react';
-import ToolAlert from '@/components/atoms/ToolAlert';
 import Badge from '@/components/atoms/Badge';
-import FileDropzone from '@/components/molecules/FileDropzone';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
-import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
+import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import ToolAlert from '@/components/atoms/ToolAlert';
+import FileDropzone from '@/components/molecules/FileDropzone';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
+import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
+import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
+import Card from '@/components/organisms/Card';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { downloadFromUrl } from '@/utils/download';
-import { formatBytes } from '@/utils/formatBytes';
-import { useWebpQueue } from '@/hooks/useWebpQueue';
 import { useWebpConversion } from '@/hooks/useWebpConversion';
 import { useWebpDownloads } from '@/hooks/useWebpDownloads';
+import { useWebpQueue } from '@/hooks/useWebpQueue';
 import { useWebpReportCopy } from '@/hooks/useWebpReportCopy';
-import { useLocale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/jpg-png-webp';
-import Card from '@/components/organisms/Card';
+import { useLocale } from '@/lib/LocaleContext';
 import { flexCenterBetweenClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import { downloadFromUrl } from '@/utils/download';
+import { formatBytes } from '@/utils/formatBytes';
 
 export default function JpgPngToWebp() {
   const locale = useLocale();

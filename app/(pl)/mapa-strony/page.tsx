@@ -1,17 +1,16 @@
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import Wrapper from '@/components/atoms/Wrapper';
 import type { Metadata } from 'next';
+import Divider from '@/components/atoms/Divider';
+import InlineLink from '@/components/atoms/InlineLink';
+import { JsonLd } from '@/components/atoms/JsonLd';
+import Wrapper from '@/components/atoms/Wrapper';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import projectsData from '@/data/pl/projects.json';
+import { getAllArticlePreviews, getPrimaryCategorySlug } from '@/lib/blogDataService';
+import type { ArticlePreview } from '@/types/article';
+import { siteUrl } from '@/utils/absoluteUrl';
+import { slugify } from '@/utils/slugify';
 import type { NavItem } from './SitemapPageClient';
 
-import { getAllArticlePreviews, getPrimaryCategorySlug } from '@/lib/blogDataService';
-import { slugify } from '@/utils/slugify';
-import { siteUrl } from '@/utils/absoluteUrl';
-import type { ArticlePreview } from '@/types/article';
-import projectsData from '@/data/pl/projects.json';
-import { JsonLd } from '@/components/atoms/JsonLd';
-
-import InlineLink from '@/components/atoms/InlineLink';
-import Divider from '@/components/atoms/Divider';
 export const metadata: Metadata = {
   title: 'Mapa strony | Arteon',
   description:

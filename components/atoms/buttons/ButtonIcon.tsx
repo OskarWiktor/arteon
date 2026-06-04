@@ -1,6 +1,6 @@
+import type { ButtonHTMLAttributes, ReactNode } from 'react';
 import { focusRingClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
 type ButtonIconSize = 'small' | 'medium';
 

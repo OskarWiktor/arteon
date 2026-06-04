@@ -3,14 +3,13 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Inter, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
 import { Suspense } from 'react';
-
 import FocusManager from '@/components/atoms/FocusManager';
-import RouteAnnouncer from '@/components/atoms/RouteAnnouncer';
 import { JsonLd } from '@/components/atoms/JsonLd';
+import RouteAnnouncer from '@/components/atoms/RouteAnnouncer';
+import { cn } from '@/lib/utils';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 import '@/app/globals.css';
-import { cn } from '@/lib/utils';
 
 const inter = Inter({
   subsets: ['latin', 'latin-ext'],

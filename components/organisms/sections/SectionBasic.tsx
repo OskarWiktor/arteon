@@ -1,8 +1,8 @@
-import { useId, type ReactNode } from 'react';
 import Image from 'next/image';
-import SectionHeader from '../../molecules/SectionHeader';
-import ButtonGroup from '../../molecules/ButtonGroup';
+import { useId, type ReactNode } from 'react';
 import { cn } from '@/lib/utils';
+import ButtonGroup from '../../molecules/ButtonGroup';
+import SectionHeader from '../../molecules/SectionHeader';
 
 interface SectionBasicProps {
   id?: string;

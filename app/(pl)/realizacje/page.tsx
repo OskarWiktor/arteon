@@ -1,13 +1,12 @@
-import HeroBanner from '@/components/organisms/HeroBanner';
-import CTABanner from '@/components/organisms/CTABanner';
-import ProjectWithFilters from '@/components/organisms/ProjectsWithFilters';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
-
+import CTABanner from '@/components/organisms/CTABanner';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import ProjectWithFilters from '@/components/organisms/ProjectsWithFilters';
 import projectsData from '@/data/pl/projects.json';
 import type { ProjectPreview } from '@/types/project';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
-import { JsonLd } from '@/components/atoms/JsonLd';
 
 type ProjectsData = {
   projects: ProjectPreview[];

@@ -1,9 +1,9 @@
 'use client';
 
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
-import ButtonCircle from '../../atoms/buttons/ButtonCircle';
 import { largeIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import ButtonCircle from '../../atoms/buttons/ButtonCircle';
 
 type CarouselNavButtonsProps = {
   isScrollable: boolean;

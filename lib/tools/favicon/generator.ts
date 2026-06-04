@@ -1,5 +1,5 @@
-import { canvasToBlob } from '@/utils/canvasToBlob';
 import type { FaviconOutputFile } from '@/types/tools/image';
+import { canvasToBlob } from '@/utils/canvasToBlob';
 export type { FaviconOutputFile } from '@/types/tools/image';
 
 export function suggestFaviconFileName(size: number | 'ico', type: 'png' | 'ico'): string {

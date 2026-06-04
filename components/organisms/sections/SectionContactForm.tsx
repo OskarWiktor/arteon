@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { RiMailSendLine, RiTimeLine, RiFileList2Line } from 'react-icons/ri';
-import ContactForm from '../ContactForm';
 import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import ContactForm from '../ContactForm';
 
 type SectionContactFormProps = {
   title: string;

@@ -1,9 +1,9 @@
+import Shimmer from '../../atoms/skeletons/Shimmer';
+import Card from '../../organisms/Card';
+import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
+import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
 import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
 import SectionInfoSkeleton from '../../organisms/skeletons/SectionInfoSkeleton';
-import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
-import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
-import Card from '../../organisms/Card';
-import Shimmer from '../../atoms/skeletons/Shimmer';
 
 export default function ContactPageSkeleton() {
   return (

@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import HeroBanner from '@/components/organisms/HeroBanner';
+import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import ArticlesList from '@/components/organisms/ArticlesList';
 import FilterBar from '@/components/organisms/FilterBar';
+import HeroBanner from '@/components/organisms/HeroBanner';
 import {
   getAllArticlePreviews,
   getCategoriesWithCount,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
-import { slugify } from '@/utils/slugify';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
-import Divider from '@/components/atoms/Divider';
+import { slugify } from '@/utils/slugify';
 
 const DEFAULT_META_DESCRIPTION = (label: string) => `Artykuły i poradniki: ${label}.`;
 

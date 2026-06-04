@@ -1,3 +1,4 @@
+import { rgbToHex } from '@/lib/tools/color/convert';
 import {
   escapeHtml,
   formatMultiline,
@@ -5,6 +6,7 @@ import {
   sanitizeHrefUrl,
   sanitizeSrcUrl,
 } from '@/lib/tools/email/sanitize';
+import { getSocialIcon, type SocialPlatform, type IconSize } from '@/lib/tools/email/socialIcons';
 import type {
   BorderSides,
   FontSizeOption,
@@ -17,8 +19,6 @@ import type {
   StyleConfig,
   TextStyleConfig,
 } from '@/types/tools/email';
-import { rgbToHex } from '@/lib/tools/color/convert';
-import { getSocialIcon, type SocialPlatform, type IconSize } from '@/lib/tools/email/socialIcons';
 
 type BuildSignatureLabels = {
   tel: string;

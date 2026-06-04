@@ -1,31 +1,31 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
-import Button from '@/components/atoms/buttons/Button';
-import ToolInfo from '@/components/atoms/ToolInfo';
-import ToolAlert from '@/components/atoms/ToolAlert';
 import Badge from '@/components/atoms/Badge';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
+import Button from '@/components/atoms/buttons/Button';
+import InputColor from '@/components/atoms/form/InputColor';
+import ToolAlert from '@/components/atoms/ToolAlert';
+import ToolInfo from '@/components/atoms/ToolInfo';
+import FileDropzone from '@/components/molecules/FileDropzone';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
-import type { ToolStatus } from '@/types/tools/common';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
+import Card from '@/components/organisms/Card';
+import { ui } from '@/lib/i18n/tools/favicon';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
 import { rgbToHex } from '@/lib/tools/color/convert';
-import { downloadFromUrl } from '@/utils/download';
 import { type FaviconOutputFile, generateFaviconOutputs } from '@/lib/tools/favicon/generator';
-import { formatBytes } from '@/utils/formatBytes';
 import {
   isSupportedImageUploadType,
   SUPPORTED_IMAGE_UPLOAD_TYPES,
 } from '@/lib/tools/image/uploadTypes';
+import { cn } from '@/lib/utils';
+import type { ToolStatus } from '@/types/tools/common';
+import { downloadFromUrl } from '@/utils/download';
+import { formatBytes } from '@/utils/formatBytes';
 import { loadImage } from '@/utils/loadImage';
 import { revokeObjectUrl } from '@/utils/objectUrl';
 import { createZipBlob, type ZipFileInput } from '@/utils/zip';
-import { useLocale, type Locale } from '@/lib/LocaleContext';
-import { ui } from '@/lib/i18n/tools/favicon';
-import InputColor from '@/components/atoms/form/InputColor';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import FileDropzone from '@/components/molecules/FileDropzone';
-import Card from '@/components/organisms/Card';
-import { cn } from '@/lib/utils';
 import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/ui-classes';
 
 function createWebmanifest(
@@ -441,7 +441,7 @@ export default function FaviconGenerator() {
                         flexCenterClasses,
                       )}
                     >
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      {}
                       {sourcePreviewUrl && (
                         <img
                           src={sourcePreviewUrl}
@@ -460,7 +460,7 @@ export default function FaviconGenerator() {
                         flexCenterClasses,
                       )}
                     >
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      {}
                       {sourcePreviewUrl && (
                         <img
                           src={sourcePreviewUrl}

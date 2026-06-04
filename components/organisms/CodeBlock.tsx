@@ -1,6 +1,6 @@
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 import ButtonCopy from '../atoms/buttons/ButtonCopy';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
 
 type CodeBlockProps = {
   code: string;

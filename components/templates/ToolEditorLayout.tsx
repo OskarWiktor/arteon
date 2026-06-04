@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react';
-
 import AdSense from '@/components/molecules/AdSense';
 import { cn } from '@/lib/utils';
 

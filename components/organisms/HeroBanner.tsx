@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import type { ReactNode } from 'react';
-import ButtonGroup from '../molecules/ButtonGroup';
+import { cn } from '@/lib/utils';
 import Subtitle from '../atoms/typography/Subtitle';
 import Wrapper from '../atoms/Wrapper';
-import { cn } from '@/lib/utils';
+import ButtonGroup from '../molecules/ButtonGroup';
 
 interface HeroBannerProps {
   id?: string;

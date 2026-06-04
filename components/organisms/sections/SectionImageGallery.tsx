@@ -1,11 +1,11 @@
 'use client';
-import { useState } from 'react';
 import Image from 'next/image';
+import { useState } from 'react';
 import { RiCloseLine, RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
-import Wrapper from '../../atoms/Wrapper';
 import SectionHeader from '@/components/molecules/SectionHeader';
-import { cn } from '@/lib/utils';
 import { flexCenterClasses, focusRingClasses, largeIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import Wrapper from '../../atoms/Wrapper';
 
 interface GalleryImage {
   src: string;

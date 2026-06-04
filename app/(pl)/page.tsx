@@ -1,27 +1,27 @@
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
-import CTABanner from '@/components/organisms/CTABanner';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
-import WorkSteps from '@/components/organisms/WorkSteps';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
-import Divider from '@/components/atoms/Divider';
-import Wrapper from '@/components/atoms/Wrapper';
 import { GoLaw } from 'react-icons/go';
 import { MdSupportAgent } from 'react-icons/md';
 import { RiArticleLine, RiBarChart2Line, RiBookOpenLine, RiBrushLine } from 'react-icons/ri';
-import { getHomepageAlternates } from '@/lib/i18n/pages/tool-meta';
-import testimonialsPl from '@/data/pl/testimonials.json';
-import type { Testimonial } from '@/types/testimonial';
-import { getAllArticlePreviews } from '@/lib/blogDataService';
-import LogoCarousel from '@/components/organisms/carousels/LogoCarousel';
-import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import ToolsCarousel from '@/components/organisms/carousels/ToolsCarousel';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import Divider from '@/components/atoms/Divider';
 import { JsonLd } from '@/components/atoms/JsonLd';
+import Wrapper from '@/components/atoms/Wrapper';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import LogoCarousel from '@/components/organisms/carousels/LogoCarousel';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
+import FeatureGrid from '@/components/organisms/FeatureGrid';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import WorkSteps from '@/components/organisms/WorkSteps';
+import testimonialsPl from '@/data/pl/testimonials.json';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
+import { getHomepageAlternates } from '@/lib/i18n/pages/tool-meta';
 import { normalIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import type { Testimonial } from '@/types/testimonial';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import ToolsCarousel from '@/components/organisms/carousels/ToolsCarousel';
 
 export const metadata = {
   title: 'Strony internetowe, sklepy, treści i projekty graficzne - Arteon',

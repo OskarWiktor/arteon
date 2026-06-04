@@ -1,22 +1,22 @@
 'use client';
 
 import { useState } from 'react';
+import Input from '@/components/atoms/form/Input';
+import Textarea from '@/components/atoms/form/Textarea';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
+import Card from '@/components/organisms/Card';
+import { ui } from '@/lib/i18n/tools/meta-title';
+import { useLocale } from '@/lib/LocaleContext';
 import {
   analyzeMetaDescription,
   analyzeMetaTitle,
   truncateForPreview,
   type FieldMetrics,
 } from '@/lib/tools/seo/metaLength';
-import { getStatusClasses } from '@/utils/statusClasses';
-import { useLocale } from '@/lib/LocaleContext';
-import { ui } from '@/lib/i18n/tools/meta-title';
-import Textarea from '@/components/atoms/form/Textarea';
-import Input from '@/components/atoms/form/Input';
-import Card from '@/components/organisms/Card';
-import { cn } from '@/lib/utils';
 import { flexCenterClasses, largeIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import { getStatusClasses } from '@/utils/statusClasses';
 
 type UiTexts = { [K in keyof (typeof ui)['pl']]: string };
 

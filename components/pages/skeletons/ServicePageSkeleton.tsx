@@ -1,14 +1,14 @@
-import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
+import Card from '@/components/organisms/Card';
+import Shimmer from '../../atoms/skeletons/Shimmer';
 import BenefitBeltSkeleton from '../../organisms/skeletons/BenefitBeltSkeleton';
 import BreadcrumbsSkeleton from '../../organisms/skeletons/BreadcrumbsSkeleton';
 import CarouselSkeleton from '../../organisms/skeletons/CarouselSkeleton';
-import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
-import SectionInfoSkeleton from '../../organisms/skeletons/SectionInfoSkeleton';
+import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
 import FaqSkeleton from '../../organisms/skeletons/FaqSkeleton';
 import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
-import CTABannerSkeleton from '../../organisms/skeletons/CTABannerSkeleton';
-import Shimmer from '../../atoms/skeletons/Shimmer';
-import Card from '@/components/organisms/Card';
+import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
+import SectionInfoSkeleton from '../../organisms/skeletons/SectionInfoSkeleton';
+import SectionStepsSkeleton from '../../organisms/skeletons/SectionStepsSkeleton';
 
 function FeatureGridSkeleton() {
   return (

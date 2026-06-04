@@ -1,30 +1,30 @@
 'use client';
 
-import { startTransition, useEffect, useRef, useState, type JSX } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { startTransition, useEffect, useRef, useState, type JSX } from 'react';
 import { createPortal } from 'react-dom';
-import { useIsMounted } from '@/hooks/useIsMounted';
-import Subtitle from '../../atoms/typography/Subtitle';
-import IconText from '../../atoms/IconText';
-import { MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL } from '@/data/pl/navigation-data-pl';
-import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import { getMobileToolsSections } from '@/lib/i18n/tool-registry';
+import { NavArrowDownSLine as RiArrowDownSLine } from '@/components/atoms/NavIcons';
 import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
+import { MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL } from '@/data/pl/navigation-data-pl';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useEventListener } from '@/hooks/useEventListener';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
+import { useIsMounted } from '@/hooks/useIsMounted';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useScrollLock } from '@/hooks/useScrollLock';
-import { useEventListener } from '@/hooks/useEventListener';
 import { useTimeout } from '@/hooks/useTimeout';
-import { NavArrowDownSLine as RiArrowDownSLine } from '@/components/atoms/NavIcons';
-import { cn } from '@/lib/utils';
+import { getMobileToolsSections } from '@/lib/i18n/tool-registry';
+import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
   modalBackdropClasses,
   normalIconSizeClasses,
 } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import IconText from '../../atoms/IconText';
+import Subtitle from '../../atoms/typography/Subtitle';
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {

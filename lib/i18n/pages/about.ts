@@ -1,6 +1,5 @@
 import type { Locale } from '@/types/locale';
 import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
-import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 // ---------------------------------------------------------------------------
 // Non-PL "About" page – centralised locale data (loaded from JSON)
@@ -47,21 +46,22 @@ export type AboutPageData = {
   };
 };
 
-import en from '@/data/en/pages/about.json';
-import de from '@/data/de/pages/about.json';
-import es from '@/data/es/pages/about.json';
-import fr from '@/data/fr/pages/about.json';
-import pt from '@/data/pt/pages/about.json';
-import it from '@/data/it/pages/about.json';
-import ro from '@/data/ro/pages/about.json';
-import nl from '@/data/nl/pages/about.json';
-import hu from '@/data/hu/pages/about.json';
 import cs from '@/data/cs/pages/about.json';
 import sv from '@/data/sv/pages/about.json';
 import da from '@/data/da/pages/about.json';
+import de from '@/data/de/pages/about.json';
 import no from '@/data/no/pages/about.json';
-import fi from '@/data/fi/pages/about.json';
 import el from '@/data/el/pages/about.json';
+import en from '@/data/en/pages/about.json';
+import es from '@/data/es/pages/about.json';
+import fi from '@/data/fi/pages/about.json';
+import fr from '@/data/fr/pages/about.json';
+import hu from '@/data/hu/pages/about.json';
+import it from '@/data/it/pages/about.json';
+import nl from '@/data/nl/pages/about.json';
+import pt from '@/data/pt/pages/about.json';
+import ro from '@/data/ro/pages/about.json';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   en,

@@ -1,8 +1,8 @@
 import { RiCheckLine } from 'react-icons/ri';
-import Wrapper from '../../atoms/Wrapper';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import Wrapper from '../../atoms/Wrapper';
 
 interface SectionFeatureListProps {
   title?: string;

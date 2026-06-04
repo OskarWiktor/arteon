@@ -1,8 +1,8 @@
+import ArrowIcon from '@/components/atoms/ArrowIcon';
+import CarouselCardShell from '@/components/molecules/carousels/CarouselCardShell';
 import type { ArticlePreview } from '@/types/article';
 import type { ProjectPreview } from '@/types/project';
 import InlineLink from '../../atoms/InlineLink';
-import ArrowIcon from '@/components/atoms/ArrowIcon';
-import CarouselCardShell from '@/components/molecules/carousels/CarouselCardShell';
 
 type CarouselCardProps =
   | {

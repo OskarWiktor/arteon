@@ -1,7 +1,7 @@
-import SectionInfoSkeleton from './SectionInfoSkeleton';
-import SectionStepsSkeleton from './SectionStepsSkeleton';
 import FaqSkeleton from './FaqSkeleton';
 import DividerSkeleton from './GapSkeleton';
+import SectionInfoSkeleton from './SectionInfoSkeleton';
+import SectionStepsSkeleton from './SectionStepsSkeleton';
 
 export default function ContentSkeleton() {
   return (

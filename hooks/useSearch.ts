@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
+import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
 import {
   searchItems,
   groupSearchResults,
   type SearchItem,
   type SearchCategory,
 } from '@/lib/search/searchIndex';
-import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
-
 import type { Locale } from '@/types/locale';
 
 type UseSearchOptions = {

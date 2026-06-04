@@ -2,10 +2,16 @@
 
 import { useState } from 'react';
 import { RiFileCopyLine, RiCheckLine, RiDeleteBinLine } from 'react-icons/ri';
+import Button from '@/components/atoms/buttons/Button';
+import Textarea from '@/components/atoms/form/Textarea';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolStatRow from '@/components/molecules/tools/ToolStatRow';
-import Button from '@/components/atoms/buttons/Button';
+import Card from '@/components/organisms/Card';
+import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { ui } from '@/lib/i18n/tools/word-count';
+import { useLocale } from '@/lib/LocaleContext';
+import { getReadabilityLabel, getReadabilityColor } from '@/lib/tools/text/readability';
 import {
   analyzeText,
   formatReadingTime,
@@ -20,12 +26,6 @@ import {
   sortLinesAsc,
   sortLinesDesc,
 } from '@/lib/tools/text/wordCount';
-import { getReadabilityLabel, getReadabilityColor } from '@/lib/tools/text/readability';
-import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { useLocale } from '@/lib/LocaleContext';
-import { ui } from '@/lib/i18n/tools/word-count';
-import Textarea from '@/components/atoms/form/Textarea';
-import Card from '@/components/organisms/Card';
 import { smallIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 

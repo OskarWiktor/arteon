@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
+import { cn } from '@/lib/utils';
 import FeatureCard from './FeatureCard';
 import SectionHeader from '../molecules/SectionHeader';
-import { cn } from '@/lib/utils';
 
 type FeatureItem = {
   title: string;

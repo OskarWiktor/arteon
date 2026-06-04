@@ -1,9 +1,9 @@
 import type { ReactNode } from 'react';
 import { useId } from 'react';
 import { JsonLd } from '@/components/atoms/JsonLd';
+import FaqPanel from '@/components/molecules/FaqPanel';
 import { cn } from '@/lib/utils';
 import SectionHeader from '../../molecules/SectionHeader';
-import FaqPanel from '@/components/molecules/FaqPanel';
 
 interface FaqPanelProps {
   question: string;

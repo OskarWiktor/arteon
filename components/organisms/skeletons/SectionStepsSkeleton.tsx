@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
-import Card from '../Card';
 import Shimmer from '../../atoms/skeletons/Shimmer';
+import Card from '../Card';
 
 interface SectionStepsSkeletonProps {
   cols?: 2 | 3 | 4;

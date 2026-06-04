@@ -1,3 +1,8 @@
+import { RiAddLine, RiSubtractLine } from 'react-icons/ri';
+import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import { LAYOUT_SPACING_MAP } from '@/lib/tools/email/signatureDefaults';
+import { flexCenterBetweenClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 import type {
   SignatureConfig,
   StyleConfig,
@@ -6,11 +11,6 @@ import type {
   MarginOption,
   LayoutType,
 } from '@/types/tools/email';
-import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import { LAYOUT_SPACING_MAP } from '@/lib/tools/email/signatureDefaults';
-import { RiAddLine, RiSubtractLine } from 'react-icons/ri';
-import { flexCenterBetweenClasses, smallIconSizeClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 
 type Props = {
   config: SignatureConfig;

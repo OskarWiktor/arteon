@@ -8,10 +8,15 @@ import {
   RiCodeSSlashLine,
   RiPaletteLine,
 } from 'react-icons/ri';
+import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import Input from '@/components/atoms/form/Input';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolStatRow from '@/components/molecules/tools/ToolStatRow';
-import Button from '@/components/atoms/buttons/Button';
+import Card from '@/components/organisms/Card';
+import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { ui } from '@/lib/i18n/tools/lorem-ipsum';
+import { useLocale } from '@/lib/LocaleContext';
 import {
   generateLoremIpsum,
   getLoremStats,
@@ -22,13 +27,8 @@ import {
   type LoremFormat,
   type LoremOptions,
 } from '@/lib/tools/text/loremIpsum';
-import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { useLocale } from '@/lib/LocaleContext';
-import { ui } from '@/lib/i18n/tools/lorem-ipsum';
-import Input from '@/components/atoms/form/Input';
-import Card from '@/components/organisms/Card';
-import { cn } from '@/lib/utils';
 import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 const MODES: LoremMode[] = [
   'paragraphs',

@@ -1,5 +1,5 @@
-import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { ORG_NAME } from '@/lib/seo/schema';
+import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 interface ServiceSchema {
   '@context': string;

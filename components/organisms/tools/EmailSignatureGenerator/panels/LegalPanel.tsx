@@ -1,10 +1,10 @@
-import type { SignatureConfig, StyleConfig } from '@/types/tools/email';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import Textarea from '@/components/atoms/form/Textarea';
 import InputColor from '@/components/atoms/form/InputColor';
+import Textarea from '@/components/atoms/form/Textarea';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import { cn } from '@/lib/utils';
 import { flexCenterClasses, largeIconSizeClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import type { SignatureConfig, StyleConfig } from '@/types/tools/email';
 
 type Props = {
   config: SignatureConfig;

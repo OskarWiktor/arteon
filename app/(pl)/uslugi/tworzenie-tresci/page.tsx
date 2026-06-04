@@ -13,27 +13,26 @@ import {
   RiPencilLine,
   RiShoppingCartLine,
 } from 'react-icons/ri';
-
-import BenefitBelt from '@/components/organisms/BenefitBelt';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import Divider from '@/components/atoms/Divider';
+import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import { buildServiceSchema } from '@/lib/serviceSchema';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import CTABanner from '@/components/organisms/CTABanner';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionBento from '@/components/organisms/sections/SectionBento';
-import WorkSteps from '@/components/organisms/WorkSteps';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import Divider from '@/components/atoms/Divider';
-import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import Wrapper from '@/components/atoms/Wrapper';
-import { buildServiceSchema } from '@/lib/serviceSchema';
-import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
-import { siteUrl } from '@/utils/absoluteUrl';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import { siteUrl } from '@/utils/absoluteUrl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

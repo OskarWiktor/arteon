@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
-import Subtitle from '../atoms/typography/Subtitle';
-import ButtonLink from '../atoms/buttons/ButtonLink';
 import { cn } from '@/lib/utils';
+import ButtonLink from '../atoms/buttons/ButtonLink';
+import Subtitle from '../atoms/typography/Subtitle';
 
 interface SectionHeaderProps {
   subtitle?: ReactNode;

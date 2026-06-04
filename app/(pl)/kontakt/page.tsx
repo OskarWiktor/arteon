@@ -1,14 +1,14 @@
+import { RiPhoneLine, RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
+import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
+import Wrapper from '@/components/atoms/Wrapper';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
 import ContactForm from '@/components/organisms/ContactForm';
 import HeroBanner from '@/components/organisms/HeroBanner';
-import Wrapper from '@/components/atoms/Wrapper';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import { RiPhoneLine, RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
-import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { getContactAlternates } from '@/lib/i18n/pages/contact';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import { JsonLd } from '@/components/atoms/JsonLd';
-import Divider from '@/components/atoms/Divider';
 import { normalIconSizeClasses } from '@/lib/ui-classes';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
   title: 'Kontakt - wycena Twojego planu - Arteon',

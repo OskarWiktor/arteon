@@ -1,9 +1,9 @@
 'use client';
 
 import { useId, useState, type ReactNode } from 'react';
-import SectionHeader from '../../molecules/SectionHeader';
-import { cn } from '@/lib/utils';
 import { flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
+import SectionHeader from '../../molecules/SectionHeader';
 
 interface Tab {
   title: string;

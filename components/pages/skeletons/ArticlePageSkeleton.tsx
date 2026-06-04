@@ -1,7 +1,7 @@
-import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
-import BreadcrumbsSkeleton from '../../organisms/skeletons/BreadcrumbsSkeleton';
 import Shimmer from '../../atoms/skeletons/Shimmer';
+import BreadcrumbsSkeleton from '../../organisms/skeletons/BreadcrumbsSkeleton';
 import DividerSkeleton from '../../organisms/skeletons/GapSkeleton';
+import HeroBannerSkeleton from '../../organisms/skeletons/HeroBannerSkeleton';
 
 export default function ArticlePageSkeleton() {
   return (

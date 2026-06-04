@@ -1,6 +1,6 @@
-import type { SignatureConfig, StyleConfig, CtaRadiusOption } from '@/types/tools/email';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
+import type { SignatureConfig, StyleConfig, CtaRadiusOption } from '@/types/tools/email';
 
 type Props = {
   config: SignatureConfig;

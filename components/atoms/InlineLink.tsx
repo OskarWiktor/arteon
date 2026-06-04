@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { ComponentProps } from 'react';
-import { cn } from '@/lib/utils';
 import { focusRingClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 type InlineLinkProps = ComponentProps<typeof Link> & {
   variant?: 'default' | 'navigation';

@@ -1,18 +1,17 @@
-import HeroBanner from '@/components/organisms/HeroBanner';
-import CTABanner from '@/components/organisms/CTABanner';
+import Script from 'next/script';
+import { RiShieldCheckLine, RiInfinityFill, RiLockLine, RiGlobalLine } from 'react-icons/ri';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import Divider from '@/components/atoms/Divider';
+import InlineLink from '@/components/atoms/InlineLink';
+import Wrapper from '@/components/atoms/Wrapper';
+import CTABanner from '@/components/organisms/CTABanner';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
-import Wrapper from '@/components/atoms/Wrapper';
-import Script from 'next/script';
-import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
-
-import InlineLink from '@/components/atoms/InlineLink';
-import Divider from '@/components/atoms/Divider';
 import { normalIconSizeClasses } from '@/lib/ui-classes';
-import { RiShieldCheckLine, RiInfinityFill, RiLockLine, RiGlobalLine } from 'react-icons/ri';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 export const metadata = {
   title:
     'Darmowe narzędzia bez rejestracji, limity użycia z pełnym zabezpieczeniem Twoich danych - Arteon',
