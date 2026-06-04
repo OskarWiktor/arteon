@@ -1,9 +1,9 @@
 'use client';
 
 import { useId, useState, type ReactNode } from 'react';
-import { flexCenterClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import SectionHeader from '../../molecules/SectionHeader';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 interface Tab {
   title: string;
@@ -16,6 +16,14 @@ interface SectionTabsProps {
   tabs: Tab[];
 }
 
+/**
+ * Renders a tabbed section with an optional header and manages the active tab.
+ *
+ * Displays a segmented control of tabs (icon always visible, title visible on small screens and up) and the currently selected tab's content. Associates tab buttons and their panel with stable ARIA ids and updates the active tab when a tab button is clicked.
+ *
+ * @param title - Optional section title; when provided a header is rendered and used as the section's accessible label.
+ * @param tabs - Array of tabs, each providing `title`, `icon`, and `content` for its tab button and panel.
+ */
 export default function SectionTabs({ title, tabs }: SectionTabsProps) {
   const [activeTab, setActiveTab] = useState(0);
   const autoId = useId();

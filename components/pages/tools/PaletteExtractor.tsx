@@ -1,28 +1,36 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import ToolAlert from '@/components/atoms/ToolAlert';
 import ToolInfo from '@/components/atoms/ToolInfo';
+import ToolAlert from '@/components/atoms/ToolAlert';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
-import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import Card from '@/components/organisms/Card';
-import { ui } from '@/lib/i18n/tools/palette-extractor';
-import { useLocale } from '@/lib/LocaleContext';
-import { extractPalette, type ExtractedColor } from '@/lib/tools/color/extractPalette';
+import type { ToolStatus } from '@/types/tools/common';
+import { revokeObjectUrl } from '@/utils/objectUrl';
+import { formatBytes } from '@/utils/formatBytes';
+import { getFileFormatLabel } from '@/utils/fileFormat';
 import { getDownscaledImageDataFromUrl } from '@/lib/tools/image/canvas';
 import {
   isSupportedImageUploadType,
   SUPPORTED_IMAGE_UPLOAD_TYPES,
 } from '@/lib/tools/image/uploadTypes';
+import { extractPalette, type ExtractedColor } from '@/lib/tools/color/extractPalette';
+import { useLocale } from '@/lib/LocaleContext';
+import { ui } from '@/lib/i18n/tools/palette-extractor';
+import Card from '@/components/organisms/Card';
 import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import type { ToolStatus } from '@/types/tools/common';
-import { getFileFormatLabel } from '@/utils/fileFormat';
-import { formatBytes } from '@/utils/formatBytes';
-import { revokeObjectUrl } from '@/utils/objectUrl';
 
+/**
+ * Render a tool UI for selecting an image, previewing it, and extracting a color palette.
+ *
+ * The component manages image validation, object-URL preview lifecycle, extraction status,
+ * and displays extracted color swatches or helpful messages when appropriate.
+ *
+ * @returns A React element containing the upload dropzone, image preview, status/error alerts, and extracted color swatches.
+ */
 export default function PaletteExtractor() {
   const locale = useLocale();
   const t = ui[locale];

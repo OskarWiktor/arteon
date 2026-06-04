@@ -1,8 +1,8 @@
-import ArrowIcon from '@/components/atoms/ArrowIcon';
-import CarouselCardShell from '@/components/molecules/carousels/CarouselCardShell';
 import type { ArticlePreview } from '@/types/article';
 import type { ProjectPreview } from '@/types/project';
 import InlineLink from '../../atoms/InlineLink';
+import ArrowIcon from '@/components/atoms/ArrowIcon';
+import CarouselCardShell from '@/components/molecules/carousels/CarouselCardShell';
 
 type CarouselCardProps =
   | {
@@ -24,6 +24,11 @@ type CarouselCardProps =
       project: ProjectPreview;
     };
 
+/**
+ * Renders a carousel card for a tool, article, or project based on the `variant` prop.
+ *
+ * @returns A JSX element representing the carousel card for the provided `props.variant`.
+ */
 export default function CarouselCard(props: CarouselCardProps) {
   if (props.variant === 'tool') {
     const { title, href, description, image, buttonLabel = 'Otwórz narzędzie' } = props;

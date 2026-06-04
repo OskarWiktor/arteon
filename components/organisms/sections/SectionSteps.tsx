@@ -1,12 +1,12 @@
 'use client';
 
-import Image from 'next/image';
 import { useId, type ReactNode } from 'react';
-import ButtonLink from '@/components/atoms/buttons/ButtonLink';
-import { flexCenterClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
+import Image from 'next/image';
 import SectionHeader from '../../molecules/SectionHeader';
 import Card from '../Card';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
+import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 
 interface SectionStepItem {
   icon?: ReactNode;
@@ -50,6 +50,22 @@ function resolveGridVariant(
   return 'one';
 }
 
+/**
+ * Render a responsive "steps" section with a header, a grid of step cards, and an optional call-to-action.
+ *
+ * Each step card may display an inline or block visual (icon or small image), an optional top cover image, a title,
+ * optional subtitle, and a description. If `grid` is omitted, the grid variant is chosen based on the number of items.
+ *
+ * @param title - Section title shown in the header
+ * @param subtitle - Section subtitle shown in the header
+ * @param description - Section description shown in the header
+ * @param buttonText - Text for the footer CTA; rendered only when both `buttonText` and `buttonHref` are provided
+ * @param buttonHref - Href for the footer CTA; rendered only when both `buttonText` and `buttonHref` are provided
+ * @param items - Array of step items (see `SectionStepItem`) to render as cards; required
+ * @param grid - Optional grid variant override (`'one' | 'two' | 'three' | 'four'`); when omitted the variant is inferred from `items.length`
+ * @param inlineIcon - When true, render the step visual inline with the title (only applies when no `topImageSrc` is present)
+ * @returns The rendered steps section as a JSX element
+ */
 export default function SectionSteps({
   title,
   subtitle,

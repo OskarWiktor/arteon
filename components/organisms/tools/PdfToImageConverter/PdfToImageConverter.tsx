@@ -1,26 +1,36 @@
 'use client';
 
 import { useRef, useState, type FormEvent } from 'react';
+
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
-import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useDictionary } from '@/lib/LocaleContext';
-import { FORMAT_EXT, FORMAT_LABELS, FORMAT_MIME } from '@/lib/tools/image/pdfToImage';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
-import type { PdfPageFile, PdfToImageConverterProps } from '@/types/tools/pdf-to-image-converter';
 import { downloadBlob } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
+
+import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
+import { FORMAT_EXT, FORMAT_LABELS, FORMAT_MIME } from '@/lib/tools/image/pdfToImage';
+import type { PdfPageFile, PdfToImageConverterProps } from '@/types/tools/pdf-to-image-converter';
 import Card from '../../Card';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 let fileIdCounter = 0;
 
+/**
+ * Renders a UI for converting PDF pages to images and managing the conversion queue.
+ *
+ * The component accepts PDF files, lists each PDF page as a queueable item, lets the user adjust quality for lossy formats, converts queued pages to the selected image format, and provides per-page and bulk download/clear controls.
+ *
+ * @param targetFormat - Target image format (`'png' | 'jpg' | 'webp'`) used to derive output MIME type, file extension, and whether quality controls are shown
+ * @returns The React element for the PdfToImageConverter interface
+ */
 export default function PdfToImageConverter({ targetFormat }: PdfToImageConverterProps) {
   const { imageConverter: t } = useDictionary();
   const [pages, setPages] = useState<PdfPageFile[]>([]);

@@ -1,10 +1,13 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+
 import Button from '@/components/atoms/buttons/Button';
-import InputWithLabel from '@/components/molecules/form/InputWithLabel';
-import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useDictionary, useLocale } from '@/lib/LocaleContext';
+import { getUnitLabel } from '@/utils/locale-utils';
+
+import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
+
 import { getUnitConversion } from '@/lib/tools/units/conversions';
 import {
   hexToRgb,
@@ -19,13 +22,22 @@ import {
   dateToUnix,
 } from '@/lib/tools/units/specialConverters';
 import type { ToolItemKey } from '@/types/tools/common';
-import { getUnitLabel } from '@/utils/locale-utils';
 
 interface UnitConverterProps {
   toolKey: ToolItemKey;
 }
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import Card from '../../Card';
 
+/**
+ * Render a two-field unit conversion UI for the provided conversion tool key.
+ *
+ * The component looks up conversion configuration for `toolKey` and renders source/target inputs,
+ * optional extra numeric input, swap/clear/copy controls, and localized labels/placeholders.
+ *
+ * @param toolKey - The conversion tool identifier used to resolve conversion logic and field configuration
+ * @returns A React element containing the conversion UI, or `null` when no conversion configuration is available
+ */
 export default function UnitConverter({ toolKey }: UnitConverterProps) {
   const { imageConverter: t } = useDictionary();
   const locale = useLocale();

@@ -1,12 +1,12 @@
-import type { ReactNode } from 'react';
 import { RiCheckFill } from 'react-icons/ri';
-import { normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
-import Badge from '../../atoms/Badge';
 import ButtonLink from '../../atoms/buttons/ButtonLink';
-import IconText from '../../atoms/IconText';
 import ButtonGroup from '../../molecules/ButtonGroup';
+import Badge from '../../atoms/Badge';
 import Card from '../Card';
+import IconText from '../../atoms/IconText';
+import { cn } from '@/lib/utils';
+import { normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { ReactNode } from 'react';
 
 type Note = {
   text: ReactNode;
@@ -37,6 +37,20 @@ type SectionPricesProps = {
   legalNote?: string;
 };
 
+/**
+ * Render a responsive, accessible pricing section composed of plan cards, an optional informational note, and optional legal text.
+ *
+ * The component generates ARIA ids for the section heading/subtitle and for each plan card (heading, platform, price, description)
+ * to provide accessible relationships between labels and content.
+ *
+ * @param id - Root DOM id for the section; used as the base for generated ARIA ids. Defaults to `'pricing'`.
+ * @param title - Main heading text for the section.
+ * @param subtitle - Optional subtitle displayed above the heading; when present it is exposed via `aria-describedby`.
+ * @param plans - Array of plan objects rendered as individual cards (name, optional platform, price, description, features, optional badges and action buttons).
+ * @param note - Optional informational note shown below the plans; may include `text`, `ctaLabel`, and `ctaLink`.
+ * @param legalNote - Optional legal or explanatory text shown below the note; defaults to a message about individualized pricing.
+ * @returns A JSX element representing the complete pricing section.
+ */
 export default function SectionPrices({
   id = 'pricing',
   title = 'Przykładowe ceny',

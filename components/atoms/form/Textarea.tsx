@@ -1,6 +1,16 @@
 import { focusRingClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 
+/**
+ * Render a styled native textarea element.
+ *
+ * Composes a default set of utility classes with focus ring classes and any additional
+ * classes provided via `className`, then forwards all other textarea props to the element.
+ *
+ * @param className - Additional CSS class names to merge with the component's base classes
+ * @param props - All other standard textarea props which are forwarded to the underlying element
+ * @returns A textarea JSX element with the composed `className` and forwarded props
+ */
 export default function Textarea({ className, ...props }: React.ComponentProps<'textarea'>) {
   return (
     <textarea

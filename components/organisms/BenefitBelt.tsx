@@ -13,6 +13,17 @@ interface BenefitBeltProps {
   variant?: 'default' | 'carousel';
 }
 
+/**
+ * Render a horizontal belt of benefit items or a logo carousel variant.
+ *
+ * Displays up to six provided benefit items in a responsive list by default,
+ * or renders a logo carousel when `variant` is set to `'carousel'`.
+ *
+ * @param items - Optional list of benefits to display; only the first six items are rendered
+ * @param ariaLabel - Accessible label for the section; defaults to `'Kluczowe benefity'`
+ * @param variant - Layout variant; `'default'` renders the items list, `'carousel'` renders the logo carousel
+ * @returns A React element containing the benefit belt section
+ */
 export default function BenefitBelt({
   items,
   ariaLabel = 'Kluczowe benefity',

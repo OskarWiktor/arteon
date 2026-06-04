@@ -8,6 +8,16 @@ type Props = {
   selectedCategories: ProjectCategory[];
 };
 
+/**
+ * Render a responsive grid of project cards filtered by the provided categories.
+ *
+ * Filters `projects` to include only those that contain every category in `selectedCategories`.
+ * When no projects remain after filtering, renders a localized paragraph message instead.
+ *
+ * @param projects - The list of project previews to display.
+ * @param selectedCategories - Categories used to filter the projects; when empty, no filtering is applied.
+ * @returns A section containing a responsive grid of filtered project cards, or a paragraph message when no projects match.
+ */
 export default function ProjectsGrid({ projects, selectedCategories }: Props) {
   const filteredProjects = (() => {
     if (!selectedCategories.length) return projects;

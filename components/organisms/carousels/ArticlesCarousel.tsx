@@ -3,14 +3,15 @@
 import { useRef } from 'react';
 import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
 import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
-import SectionHeader from '@/components/molecules/SectionHeader';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
+import SectionHeader from '@/components/molecules/SectionHeader';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
+
+import type { ArticlePreview } from '@/types/article';
+import { slugify } from '@/utils/slugify';
+import { getPrimaryCategorySlug } from '@/utils/blogCategory';
 import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import type { ArticlePreview } from '@/types/article';
-import { getPrimaryCategorySlug } from '@/utils/blogCategory';
-import { slugify } from '@/utils/slugify';
 
 const AUTO_PLAY_INTERVAL_MS = 6000;
 
@@ -24,6 +25,18 @@ type Props = {
   excludeSlug?: string;
 };
 
+/**
+ * Renders a horizontally scrollable, snap-based carousel of article preview cards with a section header, navigation controls, and pagination dots.
+ *
+ * @param articles - Source list of article previews; defaults to an empty list when omitted.
+ * @param max - Maximum number of articles to display.
+ * @param title - Section title shown in the header.
+ * @param subtitle - Optional section subtitle shown in the header.
+ * @param categorySlug - When provided, filters articles to those whose primary category slug matches this value.
+ * @param slugs - When provided (string or array), selects articles matching these slugs in the given order.
+ * @param excludeSlug - When provided, excludes the article with this slug from the final list.
+ * @returns The rendered carousel section element, or `null` if no articles are available to display.
+ */
 export default function ArticlesCarousel({
   articles,
   max = 10,

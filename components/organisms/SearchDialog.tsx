@@ -1,18 +1,18 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
-import { createPortal } from 'react-dom';
+import { useRouter } from 'next/navigation';
 import { RiSearchLine, RiCloseLine, RiArrowRightSLine } from 'react-icons/ri';
+import { createPortal } from 'react-dom';
+import { useSearch } from '@/hooks/useSearch';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
-import { useSearch } from '@/hooks/useSearch';
 import { useDictionary, useLocale, useLocaleConfig } from '@/lib/LocaleContext';
 import type { SearchCategory, SearchItem } from '@/lib/search/searchIndex';
-import { modalBackdropClasses, modalContentClasses, smallIconSizeClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
-import Input from '../atoms/form/Input';
 import InlineLink from '../atoms/InlineLink';
+import Input from '../atoms/form/Input';
+import { cn } from '@/lib/utils';
+import { modalBackdropClasses, modalContentClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 
 type SearchDialogProps = {
   isOpen: boolean;
@@ -21,6 +21,15 @@ type SearchDialogProps = {
 
 const CATEGORY_ORDER: SearchCategory[] = ['uslugi', 'narzedzia', 'edukacja', 'realizacje', 'inne'];
 
+/**
+ * Modal search dialog that queries and displays grouped results, supports keyboard navigation, and navigates to a selected result.
+ *
+ * Renders nothing until mounted or when `isOpen` is false. When open, focuses the search input, lists matching results grouped by category, allows navigation with ArrowUp/ArrowDown/Enter, closes on Escape or backdrop click, and calls `onClose` after navigation or when dismissed.
+ *
+ * @param isOpen - Whether the dialog is visible
+ * @param onClose - Callback invoked to close the dialog
+ * @returns The modal dialog element when open and mounted, otherwise `null`
+ */
 export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
   const router = useRouter();
   const locale = useLocale();
@@ -211,6 +220,18 @@ type SearchResultItemProps = {
   onClick: () => void;
 };
 
+/**
+ * Renders a single clickable search result row with active styling.
+ *
+ * Displays the item's title and optional description, shows an arrow icon whose visibility and transform reflect the active state,
+ * and exposes a data-index attribute for keyboard navigation and scrolling.
+ *
+ * @param item - The search item to display; its `title` is required and `description` is optional.
+ * @param isActive - If `true`, applies the active visual state to the row and arrow icon.
+ * @param dataIndex - The flattened index of this item within the full results list (used for keyboard navigation/scrolling).
+ * @param onClick - Callback invoked when the row is activated.
+ * @returns The rendered result row element.
+ */
 function SearchResultItem({ item, isActive, dataIndex, onClick }: SearchResultItemProps) {
   return (
     <button

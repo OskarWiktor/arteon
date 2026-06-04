@@ -8,15 +8,10 @@ import {
   RiCodeSSlashLine,
   RiPaletteLine,
 } from 'react-icons/ri';
-import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import Input from '@/components/atoms/form/Input';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolStatRow from '@/components/molecules/tools/ToolStatRow';
-import Card from '@/components/organisms/Card';
-import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { ui } from '@/lib/i18n/tools/lorem-ipsum';
-import { useLocale } from '@/lib/LocaleContext';
+import Button from '@/components/atoms/buttons/Button';
 import {
   generateLoremIpsum,
   getLoremStats,
@@ -27,8 +22,13 @@ import {
   type LoremFormat,
   type LoremOptions,
 } from '@/lib/tools/text/loremIpsum';
-import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
+import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { useLocale } from '@/lib/LocaleContext';
+import { ui } from '@/lib/i18n/tools/lorem-ipsum';
+import Input from '@/components/atoms/form/Input';
+import Card from '@/components/organisms/Card';
 import { cn } from '@/lib/utils';
+import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 
 const MODES: LoremMode[] = [
   'paragraphs',
@@ -54,6 +54,18 @@ const STYLES: LoremStyle[] = [
 ];
 const FORMATS: LoremFormat[] = ['plain', 'html'];
 
+/**
+ * Renders a localized Lorem Ipsum generator UI with controls for mode, count,
+ * paragraph length, output format, and style, plus preview, statistics,
+ * copy-to-clipboard, and download actions.
+ *
+ * The component maintains generation state (mode, count, paragraphLength,
+ * outputFormat, style, output, and a deterministic seed) and exposes controls
+ * to produce plain-text or HTML lorem ipsum output, view stats, copy results,
+ * and download the output as a text file.
+ *
+ * @returns The rendered generator UI as a React element.
+ */
 export default function LoremIpsumGenerator() {
   const locale = useLocale();
   const t = ui[locale];

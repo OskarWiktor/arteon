@@ -1,11 +1,11 @@
-import Divider from '@/components/atoms/Divider';
-import { getToolHref, getToolByKey } from '@/lib/i18n/tool-registry';
-import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
-import { flexCenterClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import type { Locale } from '@/types/locale';
 import type { ToolItemKey } from '@/types/tools/common';
+import Divider from '@/components/atoms/Divider';
+import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
+import { getToolHref, getToolByKey } from '@/lib/i18n/tool-registry';
 import { getUnitLabel } from '@/utils/locale-utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 const TITLE_CONVERT_TO: Record<string, (unit: string) => string> = {
   pl: u => `Konwertuj inne jednostki do ${u}`,
@@ -173,6 +173,13 @@ export default function RelatedUnitConverters({ toolKey, locale }: RelatedUnitCo
   );
 }
 
+/**
+ * Render a responsive grid of links for related unit converters.
+ *
+ * @param converters - List of converters to render; each item must include `toolKey`, `sourceField`, and `targetField`.
+ * @param locale - Locale used to select localized tool titles, unit labels, and connector text.
+ * @returns A grid element containing one link per converter (skipping entries whose tool href is `'#'`). Each link uses the tool's localized title when available, otherwise the constructed "`source` {connector} `target`" label.
+ */
 function ConverterGrid({
   converters,
   locale,

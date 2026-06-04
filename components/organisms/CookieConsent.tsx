@@ -1,18 +1,18 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Button from '../atoms/buttons/Button';
+import { loadAhrefs } from '@/lib/consent/ahrefs';
+import { loadGA, sendGAPageView } from '@/lib/consent/ga';
+import { updateGtagConsent } from '@/lib/consent/gtag';
+import { readConsent, writeConsent } from '@/lib/consent/consentCookie';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useTimeout } from '@/hooks/useTimeout';
-import { loadAhrefs } from '@/lib/consent/ahrefs';
-import { readConsent, writeConsent } from '@/lib/consent/consentCookie';
-import { loadGA, sendGAPageView } from '@/lib/consent/ga';
-import { updateGtagConsent } from '@/lib/consent/gtag';
-import { flexCenterClasses, focusRingClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
-import Button from '../atoms/buttons/Button';
 import InputCheckboxWithLabel from '../molecules/form/InputCheckboxWithLabel';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses, focusRingClasses } from '@/lib/ui-classes';
 
 export type CookieConsentTranslations = {
   title: string;
@@ -43,6 +43,15 @@ function updateGtag(analytics: boolean, ads: boolean) {
   updateGtagConsent({ analytics, ads });
 }
 
+/**
+ * Render a cookie consent dialog that manages user cookie preferences, persists selections, and updates analytics/ads integrations.
+ *
+ * The component shows either a quick accept view or a preferences panel, reads saved consent on mount, exposes an external `open` handler
+ * via `window.ArteonConsent`, and dispatches an `arteon:consent-updated` event when choices are saved.
+ *
+ * @param translations - UI strings, labels, ARIA text, and the privacy policy link used throughout the dialog
+ * @returns The rendered cookie consent dialog element, or `null` when the dialog is hidden
+ */
 export default function CookieConsent({
   translations: t,
 }: {

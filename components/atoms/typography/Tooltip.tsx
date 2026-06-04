@@ -2,11 +2,11 @@
 
 import { useEffect, useId, useRef, useState } from 'react';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
-import { useEventListener } from '@/hooks/useEventListener';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
+import { useEventListener } from '@/hooks/useEventListener';
 import { useTimeout } from '@/hooks/useTimeout';
-import { focusRingClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import { focusRingClasses } from '@/lib/ui-classes';
 
 const PASSIVE_SCROLL: AddEventListenerOptions = { passive: true };
 
@@ -20,6 +20,22 @@ interface TooltipProps {
   nativeTitle?: string;
 }
 
+/**
+ * Render a keyboard- and touch-accessible tooltip trigger and its positioned tooltip bubble.
+ *
+ * The trigger is an `abbr` element that shows a styled tooltip with an optional description
+ * on mouse hover, focus, or touch. The tooltip is closed on Escape, outside interactions,
+ * scroll, or when the pointer leaves the component.
+ *
+ * @param children - Content rendered inside the tooltip trigger element
+ * @param title - Main text shown in the tooltip bubble
+ * @param description - Optional secondary text shown below the title inside the bubble
+ * @param placement - Preferred tooltip placement relative to the trigger; `'top'` or `'bottom'` (default: `'top'`)
+ * @param delay - Milliseconds to wait before showing the tooltip after an open-triggering event (default: `80`)
+ * @param className - Additional classes applied to the trigger element
+ * @param nativeTitle - If provided, used for the trigger's HTML `title` attribute instead of `title`
+ * @returns The rendered Tooltip React element
+ */
 export default function Tooltip({
   children,
   title,

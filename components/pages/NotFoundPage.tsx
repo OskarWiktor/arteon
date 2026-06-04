@@ -5,6 +5,12 @@ import { flexCenterClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 import type { Locale } from '@/types/locale';
 
+/**
+ * Renders a localized 404 Not Found page for the given locale.
+ *
+ * @param locale - Locale code used to load translations and determine the back-home link
+ * @returns The Not Found page element localized to `locale`
+ */
 export default async function NotFoundPage({ locale }: { locale: Locale }) {
   const dict = await getDictionary(locale);
   const t = dict.errorPages.notFound;

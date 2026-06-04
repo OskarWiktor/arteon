@@ -1,27 +1,27 @@
 'use client';
 
-import dynamic from 'next/dynamic';
-import Image from 'next/image';
 import { startTransition, useEffect, useState } from 'react';
-import ButtonIcon from '@/components/atoms/buttons/ButtonIcon';
+import dynamic from 'next/dynamic';
 import {
   NavMenuLine as RiMenuLine,
   NavCloseLine as RiCloseLine,
   NavSearchLine as RiSearchLine,
 } from '@/components/atoms/NavIcons';
-import Wrapper from '@/components/atoms/Wrapper';
-import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
+import Image from 'next/image';
 import { DesktopNavSkeleton } from '@/components/organisms/skeletons/NavSkeleton';
+import InlineLink from '../../atoms/InlineLink';
+import Wrapper from '@/components/atoms/Wrapper';
+import ButtonIcon from '@/components/atoms/buttons/ButtonIcon';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
+import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
+import { cn } from '@/lib/utils';
 import {
   flexCenterClasses,
   focusRingClasses,
   largeIconSizeClasses,
   normalIconSizeClasses,
 } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
-import InlineLink from '../../atoms/InlineLink';
 
 const MobileNavigation = dynamic(() => import('./MobileNavigation'), { ssr: false });
 const DesktopNavigation = dynamic(() => import('./DesktopNavigation'), {
@@ -31,6 +31,13 @@ const DesktopNavigation = dynamic(() => import('./DesktopNavigation'), {
 
 const SearchDialog = dynamic(() => import('@/components/organisms/SearchDialog'), { ssr: false });
 
+/**
+ * Render the site header and navigation shell with responsive desktop and mobile controls, language switching, and an integrated search dialog.
+ *
+ * The component manages local state for the mobile menu and search dialog, closes the mobile menu on Escape, and opens the search dialog when the user presses Ctrl/Cmd+K or interacts with the search controls.
+ *
+ * @returns The navigation header element containing logo, desktop and mobile navigation controls, language switcher, and the search dialog.
+ */
 export default function NavigationShell() {
   const locale = useLocale();
   const isPl = locale === 'pl';

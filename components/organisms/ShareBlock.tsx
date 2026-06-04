@@ -1,10 +1,10 @@
 'use client';
 
 import { RiFacebookFill, RiLinkedinBoxFill, RiMailLine, RiTwitterXFill } from 'react-icons/ri';
-import { focusRingClasses, normalIconSizeClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import Card from './Card';
 import ButtonCopy from '../atoms/buttons/ButtonCopy';
+import { cn } from '@/lib/utils';
+import { focusRingClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 type ShareBlockProps = {
   url: string;
@@ -15,6 +15,13 @@ type ShareBlockProps = {
 const shareBlockLinkClasses =
   'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-white transition hover:opacity-90';
 
+/**
+ * Render a share panel with buttons for Facebook, X (Twitter), LinkedIn, e-mail, and a copy-link action.
+ *
+ * @param url - The target URL to share and to copy to the clipboard
+ * @param title - The text used for social share text and as the e-mail subject
+ * @returns The rendered share panel JSX element
+ */
 export default function ShareBlock({ url, title }: ShareBlockProps) {
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);

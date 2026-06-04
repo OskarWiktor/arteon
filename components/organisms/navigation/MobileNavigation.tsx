@@ -1,30 +1,30 @@
 'use client';
 
+import { startTransition, useEffect, useRef, useState, type JSX } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { startTransition, useEffect, useRef, useState, type JSX } from 'react';
 import { createPortal } from 'react-dom';
-import { NavArrowDownSLine as RiArrowDownSLine } from '@/components/atoms/NavIcons';
-import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
-import { MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL } from '@/data/pl/navigation-data-pl';
-import { useEscapeKey } from '@/hooks/useEscapeKey';
-import { useEventListener } from '@/hooks/useEventListener';
-import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useIsMounted } from '@/hooks/useIsMounted';
+import Subtitle from '../../atoms/typography/Subtitle';
+import IconText from '../../atoms/IconText';
+import { MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL } from '@/data/pl/navigation-data-pl';
+import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
+import { getMobileToolsSections } from '@/lib/i18n/tool-registry';
+import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useScrollLock } from '@/hooks/useScrollLock';
+import { useEventListener } from '@/hooks/useEventListener';
 import { useTimeout } from '@/hooks/useTimeout';
-import { getMobileToolsSections } from '@/lib/i18n/tool-registry';
-import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
+import { NavArrowDownSLine as RiArrowDownSLine } from '@/components/atoms/NavIcons';
+import { cn } from '@/lib/utils';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
   modalBackdropClasses,
   normalIconSizeClasses,
 } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
-import IconText from '../../atoms/IconText';
-import Subtitle from '../../atoms/typography/Subtitle';
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {
@@ -47,6 +47,17 @@ function Portal({ children }: { children: React.ReactNode }) {
   return createPortal(children, document.body);
 }
 
+/**
+ * Renders the mobile slide-over navigation panel and its interactive behaviours.
+ *
+ * The panel includes locale-aware sections, collapsible subsections, focus trapping,
+ * scroll locking, keyboard navigation for lists, and closes on backdrop click, route change,
+ * or Escape. It returns `null` when the panel is closed.
+ *
+ * @param isOpen - Controls whether the mobile navigation is visible
+ * @param setIsOpen - Setter used to open or close the mobile navigation
+ * @returns The navigation JSX when `isOpen` is true, `null` otherwise
+ */
 export default function MobileNavigation({
   isOpen,
   setIsOpen,

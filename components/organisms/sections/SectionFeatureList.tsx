@@ -1,14 +1,24 @@
 import { RiCheckLine } from 'react-icons/ri';
+import Wrapper from '../../atoms/Wrapper';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { flexCenterClasses, normalIconSizeClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import Wrapper from '../../atoms/Wrapper';
 
 interface SectionFeatureListProps {
   title?: string;
   features: string[];
 }
 
+/**
+ * Render a titled checklist of features inside a styled, bordered container.
+ *
+ * The section includes an optional centered header when `title` is provided and sets `aria-labelledby`
+ * to `feature-list-title` in that case. Each entry in `features` is displayed as a list item with a check icon.
+ *
+ * @param title - Optional heading text; when present it is rendered above the feature list and used for `aria-labelledby`.
+ * @param features - Array of feature strings to display as individual checklist items.
+ * @returns The rendered section element containing the feature checklist.
+ */
 export default function SectionFeatureList({ title, features }: SectionFeatureListProps) {
   return (
     <section data-section='feature-list' aria-labelledby={title ? 'feature-list-title' : undefined}>

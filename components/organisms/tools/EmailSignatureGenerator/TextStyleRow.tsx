@@ -1,8 +1,8 @@
 import { RiRefreshLine, RiAddLine, RiSubtractLine } from 'react-icons/ri';
-import InputColor from '@/components/atoms/form/InputColor';
-import { flexCenterClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import type { TextElementKey } from '@/types/tools/email';
+import InputColor from '@/components/atoms/form/InputColor';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 interface TextStyleRowProps {
   elementKey: TextElementKey;
@@ -17,6 +17,23 @@ interface TextStyleRowProps {
   onSizeChange: (key: TextElementKey, delta: number) => void;
 }
 
+/**
+ * Renders a row with controls to pick/reset a text color and to adjust a text size offset.
+ *
+ * Renders: a label, a reset button, a swatch showing the current or default color, a set of preset color buttons, an overlay color picker for custom colors, and decrease/increase buttons with the current size offset.
+ *
+ * @param elementKey - Identifier passed to the callbacks to indicate which text element is being modified
+ * @param label - Row label shown above the controls
+ * @param colorLabel - Label displayed for the color control group
+ * @param sizeLabel - Label displayed for the size control group
+ * @param currentColor - Currently selected custom color, or `null` to indicate use of the default color
+ * @param defaultColor - Default color used when `currentColor` is `null`
+ * @param sizeOffset - Current numeric size offset shown between the decrease/increase controls
+ * @param customColors - Array of preset color values rendered as selectable swatches
+ * @param onColorChange - Callback invoked as `onColorChange(elementKey, colorOrNull)` when a color is selected or reset; pass `null` to clear a custom color
+ * @param onSizeChange - Callback invoked as `onSizeChange(elementKey, delta)` where `delta` is added to the current size offset
+ * @returns The rendered JSX element for the text style row
+ */
 export default function TextStyleRow({
   elementKey,
   label,

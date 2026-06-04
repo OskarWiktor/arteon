@@ -1,13 +1,13 @@
 'use client';
 
-import Image from 'next/image';
 import { useState } from 'react';
+import Image from 'next/image';
 import { RiExpandLeftRightLine } from 'react-icons/ri';
-import InputRange from '@/components/atoms/form/InputRange';
-import SectionHeader from '@/components/molecules/SectionHeader';
-import { flexCenterClasses, normalIconSizeClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import Wrapper from '../../atoms/Wrapper';
+import SectionHeader from '@/components/molecules/SectionHeader';
+import InputRange from '@/components/atoms/form/InputRange';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 
 interface SectionBeforeAfterProps {
   title?: string;
@@ -17,6 +17,16 @@ interface SectionBeforeAfterProps {
   afterLabel?: string;
 }
 
+/**
+ * Renders an interactive before/after image comparison with a draggable slider.
+ *
+ * @param beforeImage - Image source for the "before" view.
+ * @param afterImage - Image source for the "after" view.
+ * @param title - Optional section title.
+ * @param beforeLabel - Label displayed on the before image.
+ * @param afterLabel - Label displayed on the after image.
+ * @returns The rendered section.
+ */
 export default function SectionBeforeAfter({
   title,
   beforeImage,

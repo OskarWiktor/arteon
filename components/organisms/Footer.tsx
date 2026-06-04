@@ -1,11 +1,12 @@
-import Image from 'next/image';
-import { JsonLd } from '@/components/atoms/JsonLd';
-import { getFooterTools } from '@/lib/i18n/tool-registry';
-import type { Locale, FooterUi, LegalLink } from '@/types/locale';
-import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
-import ButtonCookieSettings from '../atoms/buttons/ButtonCookieSettings';
-import InlineLink from '../atoms/InlineLink';
 import Wrapper from '../atoms/Wrapper';
+import ButtonCookieSettings from '../atoms/buttons/ButtonCookieSettings';
+import Image from 'next/image';
+import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
+import { getFooterTools } from '@/lib/i18n/tool-registry';
+import { JsonLd } from '@/components/atoms/JsonLd';
+import type { Locale, FooterUi, LegalLink } from '@/types/locale';
+
+import InlineLink from '../atoms/InlineLink';
 const ORG = {
   name: 'Arteon',
   phoneE164: '+48516466255',
@@ -120,6 +121,17 @@ interface FooterProps {
   toolsIndexHref: string;
 }
 
+/**
+ * Render the site footer tailored to the provided locale, UI labels, and link collections.
+ *
+ * Renders a full Polish footer when `locale` is `'pl'`; for other locales it renders a simplified tools-focused footer.
+ *
+ * @param locale - Locale code used to choose footer variant (e.g., `'pl'` for Polish)
+ * @param footerUi - UI labels and text fragments used throughout the footer
+ * @param legalLinks - Locale-specific legal links to display in the footer (used for non-PL variant)
+ * @param toolsIndexHref - Href for the tools index logo/link in the non-PL footer
+ * @returns The footer element (JSX) appropriate for the given locale and props
+ */
 export default function Footer({ locale, footerUi, legalLinks, toolsIndexHref }: FooterProps) {
   const isPl = locale === 'pl';
   const ft = footerUi;

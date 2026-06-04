@@ -1,11 +1,17 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import Card from '@/components/organisms/Card';
+import Image from 'next/image';
 import { getAllArticlePreviews, getPrimaryCategorySlug } from '@/lib/blogDataService';
 import { slugify } from '@/utils/slugify';
+import Card from '@/components/organisms/Card';
 
 const articles = getAllArticlePreviews();
 
+/**
+ * Render a responsive grid of article cards, optionally filtered by a category slug.
+ *
+ * @param filterCategorySlug - Optional slug used to show only articles whose primary category matches this slug
+ * @returns A section element containing a responsive grid of article cards. Each card links to the article using its primary category slug and article slug, and displays an optional cover image, title, excerpt, reading time, and publication date.
+ */
 export default function ArticlesList({ filterCategorySlug }: { filterCategorySlug?: string }) {
   const items = filterCategorySlug
     ? articles.filter(a => {

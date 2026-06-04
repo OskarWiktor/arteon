@@ -1,20 +1,20 @@
 'use client';
 
 import { useEffect, useState, type FormEvent } from 'react';
-import { RiContrast2Line } from 'react-icons/ri';
-import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonCopy from '@/components/atoms/buttons/ButtonCopy';
-import Input from '@/components/atoms/form/Input';
-import ToolInfo from '@/components/atoms/ToolInfo';
-import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
+import { RiContrast2Line } from 'react-icons/ri';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
-import Card from '@/components/organisms/Card';
-import { ui } from '@/lib/i18n/tools/wcag-contrast';
-import { useLocale } from '@/lib/LocaleContext';
+import ToolInfo from '@/components/atoms/ToolInfo';
+import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
+import Badge from '@/components/atoms/Badge';
 import { getContrastRatio, parseColor } from '@/lib/tools/color/contrast';
 import { hslToRgb, rgbToHex, rgbToHsl } from '@/lib/tools/color/convert';
+import { useLocale } from '@/lib/LocaleContext';
+import { ui } from '@/lib/i18n/tools/wcag-contrast';
+import Input from '@/components/atoms/form/Input';
+import Card from '@/components/organisms/Card';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
@@ -150,6 +150,16 @@ function adjustColorToWcag({
   return best?.color ?? null;
 }
 
+/**
+ * Render the WCAG Contrast Checker user interface for comparing foreground and background colors,
+ * selecting a WCAG target, and generating suggested foreground colors that meet the chosen contrast.
+ *
+ * The component manages its own state for color inputs, color pickers, match target, suggested color,
+ * and sample text; computes contrast results and suggestions; and exposes controls to swap, reset,
+ * match, and apply suggested colors.
+ *
+ * @returns The React element for the WCAG contrast checker interface.
+ */
 export default function WcagContrastChecker() {
   const locale = useLocale();
   const t = ui[locale];
