@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { RiStarFill, RiStarLine } from 'react-icons/ri';
 import { focusRingClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import { useState } from 'react';
+import { RiStarFill, RiStarLine } from 'react-icons/ri';
 
 type SectionStarRatingSize = 'small' | 'medium' | 'large';
 
@@ -19,6 +19,19 @@ interface SectionStarRatingProps {
   label?: string;
 }
 
+/**
+ * Renders an interactive star rating control that lets users view and set a rating.
+ *
+ * Renders up to `max` stars, highlights stars up to the current `value` (or the hovered star while hovering),
+ * and calls `onChange` with the selected rating when a star is clicked.
+ *
+ * @param value - Current selected rating (0 to `max`)
+ * @param onChange - Callback invoked with the new rating when a star is clicked
+ * @param max - Number of stars to render (default `5`)
+ * @param size - Visual size of the star icons: `'small' | 'medium' | 'large'` (default `'medium'`)
+ * @param label - Optional label displayed above the stars and used as the group's accessible name
+ * @returns The rendered star rating element
+ */
 export default function SectionStarRating({
   value,
   onChange,

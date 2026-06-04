@@ -1,29 +1,30 @@
+import { notFound, permanentRedirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { notFound, permanentRedirect } from 'next/navigation';
-import AbbrTouchHandler from '@/components/atoms/AbbrTouchHandler';
-import Badge from '@/components/atoms/Badge';
-import ColorPalette from '@/components/atoms/ColorPalette';
-import Divider from '@/components/atoms/Divider';
-import { JsonLd } from '@/components/atoms/JsonLd';
-import TableBlock from '@/components/atoms/TableBlock';
 import Wrapper from '@/components/atoms/Wrapper';
-import AdSense from '@/components/molecules/AdSense';
-import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import CodeBlock from '@/components/organisms/CodeBlock';
-import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import TableOfContents from '@/components/organisms/TableOfContent';
+import Badge from '@/components/atoms/Badge';
+import CTABanner from '@/components/organisms/CTABanner';
+
+import type { Article } from '@/types/article';
 import {
   getAllArticlePreviews,
   findArticleBySlug,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
-import { cn } from '@/lib/utils';
-import type { Article } from '@/types/article';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import CodeBlock from '@/components/organisms/CodeBlock';
+import TableBlock from '@/components/atoms/TableBlock';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import ShareBlock from '@/components/organisms/ShareBlock';
+import ColorPalette from '@/components/atoms/ColorPalette';
+import AbbrTouchHandler from '@/components/atoms/AbbrTouchHandler';
+import AdSense from '@/components/molecules/AdSense';
+import { JsonLd } from '@/components/atoms/JsonLd';
+import Divider from '@/components/atoms/Divider';
+import { cn } from '@/lib/utils';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 
 const defaultCTA = {
@@ -128,6 +129,12 @@ function isFlowBlock(b: Article['contentBlocks'][number]): b is FlowBlock {
   );
 }
 
+/**
+ * Render a sequence of article "flow" content blocks (richtext, code, table, quote, color palette) inside a prose container.
+ *
+ * @param items - An ordered array of FlowBlock items to render
+ * @returns A JSX element containing the rendered flow blocks
+ */
 function FlowGroup({ items }: { items: FlowBlock[] }) {
   return (
     <div className='prose prose-lg max-w-none'>
@@ -194,6 +201,14 @@ function FlowGroup({ items }: { items: FlowBlock[] }) {
   );
 }
 
+/**
+ * Render an article's content blocks, grouping consecutive flow blocks and rendering individual non-flow blocks.
+ *
+ * Renders supported block types: flow blocks (`richtext`, `code`, `table`, `quote`, `colorPalette`) are grouped and rendered together; single non-flow blocks such as `image`, `imageText`, and `ad` are rendered with their respective layout and captions. Unknown block types produce an empty placeholder.
+ *
+ * @param blocks - The article's content blocks; may be omitted or empty.
+ * @returns A JSX fragment with the rendered blocks, or `null` if `blocks` is empty or not provided.
+ */
 function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
   if (!blocks?.length) return null;
 
@@ -391,6 +406,14 @@ export async function generateMetadata({
   };
 }
 
+/**
+ * Renders the article page for the given route parameters, including hero banner, breadcrumbs,
+ * article content (blocks, FAQ, JSON-LD), sidebar (share and table of contents), related-articles
+ * carousel, and CTA banner.
+ *
+ * @param params - A promise resolving to an object with `category` and `slug` route parameters
+ * @returns The fully composed article page content for the specified `slug` and `category`. May cause a 404 when the article is not found or a permanent redirect to the canonical category URL when the provided `category` does not match the article's primary category.
+ */
 export default async function ArticlePage({
   params,
 }: {

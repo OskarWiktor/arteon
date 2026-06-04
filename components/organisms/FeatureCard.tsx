@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
-import { flexCenterClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import Card from './Card';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses } from '@/lib/ui-classes';
 
 type FeatureCardProps = {
   idx?: number;
@@ -12,6 +12,17 @@ type FeatureCardProps = {
   variant?: 'default' | 'centered';
 };
 
+/**
+ * Render a feature card section with a title, optional description, optional point list, and optional icon.
+ *
+ * @param idx - Index appended to generated IDs to ensure uniqueness (default: `0`)
+ * @param title - Heading text for the feature; used to generate the element IDs
+ * @param description - Optional descriptive content displayed under the title
+ * @param points - Optional list of short feature points rendered as list items
+ * @param icon - Optional override for the icon displayed; when omitted a small dot is used
+ * @param variant - Layout variant: `'centered'` renders a vertically centered card, `'default'` renders a horizontal card (default: `'default'`)
+ * @returns A React element representing the feature card section with appropriate accessibility attributes and microdata
+ */
 export default function FeatureCard({
   idx = 0,
   title,

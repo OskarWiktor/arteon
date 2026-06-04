@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState, type FormEvent } from 'react';
+
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
@@ -8,19 +9,20 @@ import FileDropzone from '@/components/molecules/FileDropzone';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useDictionary } from '@/lib/LocaleContext';
+import { downloadBlob, downloadFromUrl } from '@/utils/download';
+import { formatBytes } from '@/utils/formatBytes';
+
+import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { FORMAT_LABELS } from '@/lib/tools/image/imageToPdf';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import type {
   ImageFormat,
   ImageToPdfConverterProps,
   PdfQueueFile,
 } from '@/types/tools/image-to-pdf-converter';
-import { downloadBlob, downloadFromUrl } from '@/utils/download';
-import { formatBytes } from '@/utils/formatBytes';
 import Card from '../../Card';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
 let fileIdCounter = 0;
 
@@ -88,6 +90,16 @@ async function decodeToCanvas(file: File, sourceFormat: ImageFormat): Promise<HT
   }
 }
 
+/**
+ * Render a UI that lets users upload image files, convert them to PDF, and download the generated PDFs.
+ *
+ * The component manages an internal queue of files, validates uploads against `acceptMime`, performs per-file
+ * image-to-PDF conversion, and exposes controls to convert, download one or all results, remove items, and clear the queue.
+ *
+ * @param sourceFormat - The source image format key used for labels and conversion behavior (e.g., "jpeg", "png").
+ * @param acceptMime - A comma-separated string of accepted MIME types and/or file extensions (e.g., "image/png,.jpg") used to validate uploaded files.
+ * @returns A React element containing the image-to-PDF conversion UI.
+ */
 export default function ImageToPdfConverter({
   sourceFormat,
   acceptMime,

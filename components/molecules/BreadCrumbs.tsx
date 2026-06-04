@@ -1,11 +1,13 @@
-import { RiHomeLine } from 'react-icons/ri';
+import type { Locale } from '@/types/locale';
+
 import { JsonLd } from '@/components/atoms/JsonLd';
 import { BREADCRUMBS_UI } from '@/lib/i18n/locales';
-import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import type { Locale } from '@/types/locale';
+import { RiHomeLine } from 'react-icons/ri';
+
 import InlineLink from '../atoms/InlineLink';
 import Wrapper from '../atoms/Wrapper';
+import { flexCenterClasses, smallIconSizeClasses } from '@/lib/ui-classes';
 
 const DEFAULT_SITE_URL = 'https://www.arteonagency.pl';
 
@@ -24,6 +26,21 @@ interface BreadcrumbsProps {
   locale?: Locale;
 }
 
+/**
+ * Render a breadcrumb navigation bar with an accessible home link, intermediate crumbs, and optional JSON-LD.
+ *
+ * Renders a home icon followed by the provided second, third, and optional fourth crumbs. When `includeJsonLd` is `true`,
+ * a `BreadcrumbList` schema is emitted with item positions and absolute URLs based on `siteUrl`.
+ *
+ * @param second - The second breadcrumb (first after home) containing `href` and `label`
+ * @param third - The third breadcrumb containing `href` and `label`
+ * @param fourth - An optional fourth breadcrumb containing `href` and `label`
+ * @param includeJsonLd - If `true`, include schema.org BreadcrumbList JSON-LD in the rendered output
+ * @param siteUrl - Base site URL used to form absolute URLs in the JSON-LD
+ * @param size - Visual size mode; `'default'` or `'compact'`
+ * @param locale - Locale key used to select localized UI strings for labels and aria attributes
+ * @returns The rendered breadcrumb navigation element (JSX) containing links, current-page labeling, and optional JSON-LD
+ */
 export default function Breadcrumbs({
   second,
   third,

@@ -1,5 +1,9 @@
-import Script from 'next/script';
-import { GoLaw } from 'react-icons/go';
+import WorkSteps from '@/components/organisms/WorkSteps';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import CTABanner from '@/components/organisms/CTABanner';
+import Divider from '@/components/atoms/Divider';
+import SectionBento from '@/components/organisms/sections/SectionBento';
 import {
   RiBarChart2Line,
   RiBookOpenLine,
@@ -11,22 +15,18 @@ import {
   RiLifebuoyLine,
   RiMessage2Line,
 } from 'react-icons/ri';
-import Divider from '@/components/atoms/Divider';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import CTABanner from '@/components/organisms/CTABanner';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import WorkSteps from '@/components/organisms/WorkSteps';
-import SectionBento from '@/components/organisms/sections/SectionBento';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
+import { GoLaw } from 'react-icons/go';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
-import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import { normalIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
@@ -70,6 +70,12 @@ function ServiceSchema() {
   );
 }
 
+/**
+ * Renders the marketing offer page for "Blogi internetowe", composing hero, benefits,
+ * breadcrumbs, feature sections, pricing, contact form, FAQ, related services, articles, and structured data.
+ *
+ * @returns The React element for the "Blogi internetowe" offer page.
+ */
 export default function OfferBlogPage() {
   return (
     <>

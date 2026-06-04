@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import Card from './Card';
+import { cn } from '@/lib/utils';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
 
 type Entry = { id: string; text: string; level: 2 | 3 };
 
@@ -19,6 +19,17 @@ const widthClass = {
   large: 'lg:w-[300px]',
 };
 
+/**
+ * Render a table of contents built from headings found under the specified root element.
+ *
+ * Scans the DOM for H2 headings, ensures each has a stable id (generating unique slugs when needed),
+ * tracks the currently visible heading to highlight its link, and renders a responsive TOC UI
+ * with a collapsible mobile list and a sticky desktop sidebar.
+ *
+ * @param rootSelector - CSS selector used to locate the article root. Defaults to `#article-root`.
+ * @param size - Layout size variant; `'small'` or `'large'` to control width classes. Defaults to `'small'`.
+ * @returns The rendered table of contents element, or `null` when no headings are found.
+ */
 export default function TableOfContents({
   rootSelector = '#article-root',
   size = 'small',

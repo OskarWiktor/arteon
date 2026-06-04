@@ -1,22 +1,22 @@
 'use client';
 
 import { useState } from 'react';
-import Input from '@/components/atoms/form/Input';
-import Textarea from '@/components/atoms/form/Textarea';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
-import Card from '@/components/organisms/Card';
-import { ui } from '@/lib/i18n/tools/meta-title';
-import { useLocale } from '@/lib/LocaleContext';
 import {
   analyzeMetaDescription,
   analyzeMetaTitle,
   truncateForPreview,
   type FieldMetrics,
 } from '@/lib/tools/seo/metaLength';
-import { flexCenterClasses, largeIconSizeClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import { getStatusClasses } from '@/utils/statusClasses';
+import { useLocale } from '@/lib/LocaleContext';
+import { ui } from '@/lib/i18n/tools/meta-title';
+import Textarea from '@/components/atoms/form/Textarea';
+import Input from '@/components/atoms/form/Input';
+import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/utils';
+import { flexCenterClasses, largeIconSizeClasses } from '@/lib/ui-classes';
 
 type UiTexts = { [K in keyof (typeof ui)['pl']]: string };
 
@@ -61,6 +61,15 @@ function analyzeDescription(text: string, t: UiTexts): FieldAnalysis {
   return { ...metrics, statusLabel: t.goodLength, helperText: t.descriptionGoodLength };
 }
 
+/**
+ * Renders a client-side UI for editing and previewing a page meta title and description.
+ *
+ * Maintains local state for title, description, and URL, displays editable inputs with live
+ * length/width metrics and status badges, and shows a styled search-engine preview that updates
+ * as the user types. Text is localized based on the current locale.
+ *
+ * @returns The component's rendered JSX for the meta title/description editor and preview.
+ */
 export default function MetaTitleDescriptionTool() {
   const locale = useLocale();
   const t = ui[locale];

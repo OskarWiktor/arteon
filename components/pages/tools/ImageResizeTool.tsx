@@ -1,5 +1,23 @@
-﻿'use client';
+'use client';
 
+import Button from '@/components/atoms/buttons/Button';
+import ToolAlert from '@/components/atoms/ToolAlert';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
+import { exportCroppedImage } from '@/lib/tools/image/exportCroppedImage';
+import { getCropRect, getGridStroke } from '@/lib/tools/image/cropMath';
+import { useCropDrag } from '@/hooks/useCropDrag';
+import type {
+  ActiveTool,
+  GridColor,
+  OutputFormat,
+  ResizeMode,
+  ShapeAspect,
+  ShapeType,
+} from '@/types/tools/image';
+import ButtonTool from '@/components/atoms/buttons/ButtonTool';
+import { formatBytes } from '@/utils/formatBytes';
+import { getFileFormatLabel } from '@/utils/fileFormat';
+import { revokeObjectUrl } from '@/utils/objectUrl';
 import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import {
@@ -11,34 +29,16 @@ import {
   RiCropLine,
   RiImageLine,
 } from 'react-icons/ri';
-import Button from '@/components/atoms/buttons/Button';
-import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import ButtonTool from '@/components/atoms/buttons/ButtonTool';
-import ToolAlert from '@/components/atoms/ToolAlert';
-import FileDropzone from '@/components/molecules/FileDropzone';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
-import InputWithLabel from '@/components/molecules/form/InputWithLabel';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import { getCropRect, getGridStroke } from '@/lib/tools/image/cropMath';
-import { exportCroppedImage } from '@/lib/tools/image/exportCroppedImage';
-import { useCropDrag } from '@/hooks/useCropDrag';
-import { cn } from '@/lib/utils';
-import type {
-  ActiveTool,
-  GridColor,
-  OutputFormat,
-  ResizeMode,
-  ShapeAspect,
-  ShapeType,
-} from '@/types/tools/image';
-import { formatBytes } from '@/utils/formatBytes';
-import { getFileFormatLabel } from '@/utils/fileFormat';
-import { revokeObjectUrl } from '@/utils/objectUrl';
 import { useLocale } from '@/lib/LocaleContext';
 import { ui, type UiLocale } from '@/lib/i18n/tools/image-resize';
+import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import CropPreview from '@/components/organisms/tools/ImageResizeTool/CropPreview';
+import FileDropzone from '@/components/molecules/FileDropzone';
 import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/utils';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
@@ -119,6 +119,15 @@ function getToolbarItems(t: UiLocale): { id: ActiveTool; label: string; icon: Re
   ];
 }
 
+/**
+ * Image upload and interactive resize/crop UI that lets users pick target dimensions or presets,
+ * choose shape and grid options, adjust crop position and zoom, and export a cropped image file.
+ *
+ * The component manages image loading, dimension/shape presets, crop state and drag interactions,
+ * output format/quality selection, and invokes image export to produce the final file.
+ *
+ * @returns The rendered ImageResizeTool UI as a JSX element
+ */
 export default function ImageResizeTool() {
   const locale = useLocale();
   const t = ui[locale];

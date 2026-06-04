@@ -1,5 +1,4 @@
-import Divider from '@/components/atoms/Divider';
-import { getDictionary } from '@/lib/i18n/get-dictionary';
+import type { Locale } from '@/types/locale';
 import {
   getConversionByToolKey,
   getConvertersToSameTarget,
@@ -7,10 +6,20 @@ import {
   FORMAT_DISPLAY_LABELS,
   type ResolvedRoute,
 } from '@/lib/tools/conversionRoutes';
-import { flexCenterClasses } from '@/lib/ui-classes';
+import Divider from '@/components/atoms/Divider';
 import { cn } from '@/lib/utils';
-import type { Locale } from '@/types/locale';
+import { flexCenterClasses } from '@/lib/ui-classes';
+import { getDictionary } from '@/lib/i18n/get-dictionary';
 
+/**
+ * Render a responsive grid of links for the given conversion routes.
+ *
+ * Each route is shown as an anchor whose text is `FORMAT_DISPLAY_LABELS[source] + connector + FORMAT_DISPLAY_LABELS[target]`.
+ *
+ * @param routes - Array of resolved routes; each route must provide `toolKey`, `href`, `source`, and `target`
+ * @param connector - String inserted between source and target labels in each link
+ * @returns A JSX element containing a responsive grid of anchors for the provided routes
+ */
 function LinkGrid({ routes, connector }: { routes: ResolvedRoute[]; connector: string }) {
   return (
     <div className='grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4'>

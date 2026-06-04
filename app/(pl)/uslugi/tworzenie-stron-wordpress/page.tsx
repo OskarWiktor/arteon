@@ -1,5 +1,3 @@
-import Script from 'next/script';
-import { GoLaw } from 'react-icons/go';
 import {
   RiSpeedFill,
   RiArticleLine,
@@ -12,25 +10,27 @@ import {
   RiCheckDoubleLine,
   RiMailSendLine,
 } from 'react-icons/ri';
-import Divider from '@/components/atoms/Divider';
-import Wrapper from '@/components/atoms/Wrapper';
-import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
-import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
-import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
-import SectionBasic from '@/components/organisms/sections/SectionBasic';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import CTABanner from '@/components/organisms/CTABanner';
+import Divider from '@/components/atoms/Divider';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
+import Wrapper from '@/components/atoms/Wrapper';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import { GoLaw } from 'react-icons/go';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import SectionBasic from '@/components/organisms/sections/SectionBasic';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import SectionTimeline from '@/components/organisms/sections/SectionTimeline';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
+import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import { normalIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 
@@ -134,6 +134,15 @@ function ServiceSchema() {
   );
 }
 
+/**
+ * Page component that renders the WordPress website creation service landing page.
+ *
+ * Renders hero, benefits, breadcrumbs, project and testimonials carousels, feature and timeline
+ * sections, pricing, contact form, FAQs, related services, articles, a CTA banner, and the service
+ * JSON-LD schema.
+ *
+ * @returns The page's React element containing the complete service landing page layout.
+ */
 export default function TworzenieStronWordPressPage() {
   return (
     <>

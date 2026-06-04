@@ -1,29 +1,36 @@
 'use client';
 
-import { useEffect, useRef, useState, type FormEvent } from 'react';
-import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
-import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import { useEffect, useRef, useState, type FormEvent } from 'react';
 import ToolAlert from '@/components/atoms/ToolAlert';
+import Badge from '@/components/atoms/Badge';
 import FileDropzone from '@/components/molecules/FileDropzone';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
-import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
-import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import Card from '@/components/organisms/Card';
+import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
+import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
+import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { useWebpConversion } from '@/hooks/useWebpConversion';
-import { useWebpDownloads } from '@/hooks/useWebpDownloads';
-import { useWebpQueue } from '@/hooks/useWebpQueue';
-import { useWebpReportCopy } from '@/hooks/useWebpReportCopy';
-import { ui } from '@/lib/i18n/tools/jpg-png-webp';
-import { useLocale } from '@/lib/LocaleContext';
-import { flexCenterBetweenClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import { downloadFromUrl } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
+import { useWebpQueue } from '@/hooks/useWebpQueue';
+import { useWebpConversion } from '@/hooks/useWebpConversion';
+import { useWebpDownloads } from '@/hooks/useWebpDownloads';
+import { useWebpReportCopy } from '@/hooks/useWebpReportCopy';
+import { useLocale } from '@/lib/LocaleContext';
+import { ui } from '@/lib/i18n/tools/jpg-png-webp';
+import Card from '@/components/organisms/Card';
+import { flexCenterBetweenClasses } from '@/lib/ui-classes';
+import { cn } from '@/lib/utils';
 
+/**
+ * Renders the WebP conversion UI for JPEG/PNG files, including file dropzone, conversion controls, auto-download and zip behavior, progress summary, and a managed conversion/download queue.
+ *
+ * The component maintains conversion settings (quality, auto-download, CSV report), manages a queue of files and their conversion states, triggers conversions and downloads (individual, all, or zip), and auto-initiates a zip download when configured. It also provides copyable conversion summaries and per-file actions (preview, reconvert, remove, download).
+ *
+ * @returns The React element that renders the conversion interface and file queue.
+ */
 export default function JpgPngToWebp() {
   const locale = useLocale();
   const t = ui[locale];

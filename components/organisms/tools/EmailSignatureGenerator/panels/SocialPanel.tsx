@@ -1,7 +1,7 @@
-import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import type { SignatureConfig, StyleConfig, SocialKey } from '@/types/tools/email';
+import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 
 type Props = {
   config: SignatureConfig;
@@ -36,6 +36,20 @@ function pairs<T>(arr: T[]): [T, T][] {
   return result;
 }
 
+/**
+ * Renders the social links inputs and controls for social icon display and styling.
+ *
+ * Renders paired URL inputs for each social field, helper text, and a section to toggle
+ * social icons and choose their size and color mode. Icon size/color controls are shown
+ * only when social icons are enabled in `styleConfig`.
+ *
+ * @param config - Component configuration containing `socials`, a mapping of social keys to URLs
+ * @param styleConfig - Styling configuration containing `socialIcons` settings (e.g., `showIcons`, `iconSize`, `colorMode`)
+ * @param onSocialChange - Callback invoked with `(key, value)` when a social URL input changes
+ * @param onStyleChange - Callback invoked with `(section, updatedValues)` when a style section is updated
+ * @param t - Translation object with `social` strings used for labels, helper text, and button text
+ * @returns The React element for the social settings panel
+ */
 export default function SocialPanel({
   config,
   styleConfig,

@@ -1,5 +1,10 @@
-import Script from 'next/script';
-import { GoLaw } from 'react-icons/go';
+import WorkSteps from '@/components/organisms/WorkSteps';
+import HeroBanner from '@/components/organisms/HeroBanner';
+import BenefitBelt from '@/components/organisms/BenefitBelt';
+import CTABanner from '@/components/organisms/CTABanner';
+import Divider from '@/components/atoms/Divider';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import SectionBento from '@/components/organisms/sections/SectionBento';
 import {
   RiArticleLine,
   RiBookOpenLine,
@@ -13,24 +18,19 @@ import {
   RiSpeedLine,
   RiBrushLine,
 } from 'react-icons/ri';
-import Divider from '@/components/atoms/Divider';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import BenefitBelt from '@/components/organisms/BenefitBelt';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
-import CTABanner from '@/components/organisms/CTABanner';
-import HeroBanner from '@/components/organisms/HeroBanner';
-import SectionBento from '@/components/organisms/sections/SectionBento';
-import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import FeatureGrid from '@/components/organisms/FeatureGrid';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
-import WorkSteps from '@/components/organisms/WorkSteps';
-import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import { GoLaw } from 'react-icons/go';
+import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { normalIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 
@@ -72,6 +72,12 @@ function ServiceSchema() {
   );
 }
 
+/**
+ * Renders the service marketing page for "Sklepy internetowe", including hero, benefits,
+ * pricing, features, FAQ, contact form, articles carousel, call-to-action, and JSON-LD structured data.
+ *
+ * @returns The page's JSX element
+ */
 export default function OfferWebPage() {
   return (
     <>

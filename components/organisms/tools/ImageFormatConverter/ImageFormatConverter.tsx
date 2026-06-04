@@ -1,28 +1,30 @@
 'use client';
 
 import { useRef, useState, type FormEvent } from 'react';
+
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
-import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
+import { useDictionary } from '@/lib/LocaleContext';
+import { downloadBlob } from '@/utils/download';
+import { formatBytes } from '@/utils/formatBytes';
+
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useConversionQueue } from '@/hooks/useConversionQueue';
-import { useDictionary } from '@/lib/LocaleContext';
 import {
   FORMAT_EXTENSION,
   FORMAT_LABELS,
   hasQualitySlider,
 } from '@/lib/tools/image/imageFormatConverter';
+import type { ImageFormatConverterProps } from '@/types/tools/image-format-converter';
+import Card from '../../Card';
 import { flexCenterBetweenClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import type { ImageFormatConverterProps } from '@/types/tools/image-format-converter';
-import { downloadBlob } from '@/utils/download';
-import { formatBytes } from '@/utils/formatBytes';
-import Card from '../../Card';
 
 function tpl(str: string, vars: Record<string, string>): string {
   return Object.entries(vars).reduce(
@@ -31,6 +33,15 @@ function tpl(str: string, vars: Record<string, string>): string {
   );
 }
 
+/**
+ * Renders an image conversion UI that lets users add images, set output quality, start conversions, monitor per-file progress, and download converted results.
+ *
+ * @param props.sourceFormat - Source image format identifier used for labels and validation.
+ * @param props.targetFormat - Target image format identifier used for conversion and output extension.
+ * @param props.acceptMime - Comma-separated list of accepted MIME types and/or extensions for file uploads (e.g. "image/jpeg,.png").
+ * @param props.defaultQuality - Optional initial quality percentage for conversions; if omitted a sensible default is chosen based on the target format.
+ * @returns The ImageFormatConverter React element.
+ */
 export default function ImageFormatConverter({
   sourceFormat,
   targetFormat,

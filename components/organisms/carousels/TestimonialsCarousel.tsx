@@ -3,13 +3,14 @@
 import { useRef } from 'react';
 import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
 import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
-import TestimonialCard from '@/components/organisms/carousels/TestimonialCard';
-import testimonialsPl from '@/data/pl/testimonials.json';
-import { useCarouselScroller } from '@/hooks/useCarouselScroller';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
 import type { Testimonial } from '@/types/testimonial';
+import TestimonialCard from '@/components/organisms/carousels/TestimonialCard';
 import SectionHeader from '../../molecules/SectionHeader';
+import { useCarouselScroller } from '@/hooks/useCarouselScroller';
+
+import testimonialsPl from '@/data/pl/testimonials.json';
+import { cn } from '@/lib/utils';
+import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
 
@@ -20,6 +21,17 @@ interface TestimonialsCarouselProps {
   ids?: string[];
 }
 
+/**
+ * Renders a responsive, horizontally scrollable testimonials carousel section with navigation controls and dot indicators.
+ *
+ * The component selects its source testimonials from the provided `testimonials` prop (if non-empty) or a default dataset, and optionally filters/reorders items according to `ids`. If no items remain after selection, nothing is rendered.
+ *
+ * @param title - Section title displayed above the carousel
+ * @param subtitle - Optional subtitle displayed above the title
+ * @param testimonials - Optional array of testimonials to render; when omitted or empty a default dataset is used
+ * @param ids - Optional ordered list of testimonial `id`s to select and order a subset of the source testimonials
+ * @returns The testimonials carousel section element, or `null` when there are no items to display
+ */
 export default function TestimonialsCarousel({
   title = 'Opinie od naszych klientów',
   subtitle,

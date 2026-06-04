@@ -1,15 +1,16 @@
 'use client';
 
 import { useRef } from 'react';
+
+import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
+import { getToolsSections } from '@/lib/i18n/tool-registry';
 import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
 import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
-import SectionHeader from '@/components/molecules/SectionHeader';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
+import SectionHeader from '@/components/molecules/SectionHeader';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
-import { getToolsSections } from '@/lib/i18n/tool-registry';
-import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
+import { focusRingClasses, noScrollbarClasses } from '@/lib/ui-classes';
 
 const AUTO_PLAY_INTERVAL_MS = 6000;
 
@@ -19,6 +20,18 @@ type Props = {
   subtitle?: string;
 };
 
+/**
+ * Render a localized, accessible tools carousel section with navigation and pagination.
+ *
+ * The component collects tools for the current locale, orders them by `carouselOrder`, and
+ * displays up to `max` items as a horizontally scrollable, auto-playing carousel. If no tools
+ * are available for the locale, nothing is rendered.
+ *
+ * @param max - Maximum number of tool items to display (default 10)
+ * @param title - Optional override for the section title
+ * @param subtitle - Optional subtitle for the section header
+ * @returns The section element containing the carousel, or `null` when there are no tools to display
+ */
 export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
   const locale = useLocale();
   const t = useDictionary().toolsCarousel;

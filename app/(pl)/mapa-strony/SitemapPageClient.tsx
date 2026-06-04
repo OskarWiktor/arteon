@@ -1,5 +1,6 @@
-import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
+import { JsonLd } from '@/components/atoms/JsonLd';
+
 import SectionHeader from '@/components/molecules/SectionHeader';
 
 export type NavItem = { title: string; href: string; children?: NavItem[] };
@@ -39,6 +40,18 @@ function SitemapSection({ title, items }: { title: string; items: NavItem[] }) {
   );
 }
 
+/**
+ * Renders the sitemap page including JSON-LD metadata, a breadcrumb, and five sitemap sections.
+ *
+ * @param services - Navigation items for the "Usługi" (Services) section
+ * @param portfolioIndex - The index navigation item representing the portfolio root
+ * @param portfolioItems - Navigation items for individual portfolio entries, appended after `portfolioIndex`
+ * @param blogArticleItems - Navigation items for the "Edukacja" (Education/Blog) section
+ * @param tools - Navigation items for the "Narzędzia" (Tools) section
+ * @param infoPages - Navigation items for the "Informacje" (Information) section
+ * @param jsonLd - Structured data object injected as JSON-LD into the page
+ * @returns The sitemap page React element composed of metadata, navigation, and sitemap sections
+ */
 export default function SitemapPageClient({
   services,
   portfolioIndex,

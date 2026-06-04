@@ -1,11 +1,11 @@
-import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/utils';
+import Shimmer from '../../atoms/skeletons/Shimmer';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
   largeIconSizeClasses,
 } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
-import Shimmer from '../../atoms/skeletons/Shimmer';
+import Card from '@/components/organisms/Card';
 
 export type ToolPanelVariant =
   | 'default'
@@ -17,6 +17,11 @@ export type ToolPanelVariant =
   | 'contrast-checker'
   | 'upload-tool';
 
+/**
+ * Renders a centered horizontal shimmer banner placeholder.
+ *
+ * @returns A JSX element containing a centered shimmer used as a banner placeholder.
+ */
 function AdBannerShimmer() {
   return (
     <div className='my-3 flex justify-center'>
@@ -48,7 +53,11 @@ function ButtonShimmer({ width = 'w-28' }: { width?: string }) {
   return <Shimmer className={cn('h-9', width)} />;
 }
 
-/* ── Variant: default (QR Code - 2:3 grid, inputs + preview) ── */
+/**
+ * Renders the default tool panel skeleton with input placeholders on the left and a preview area on the right.
+ *
+ * @returns The JSX element for the default (QR code) tool panel skeleton.
+ */
 
 function DefaultPanel() {
   return (
@@ -75,7 +84,11 @@ function DefaultPanel() {
   );
 }
 
-/* ── Variant: meta-counter (2 field rows + Google preview) ── */
+/**
+ * Skeleton UI for the Meta Counter tool panel, rendering two field rows and a Google preview placeholder.
+ *
+ * @returns A React element containing the meta-counter skeleton layout: two repeated field groups of input-like shimmers and an outlined preview card of shimmering lines.
+ */
 
 function MetaCounterPanel() {
   return (
@@ -100,7 +113,11 @@ function MetaCounterPanel() {
   );
 }
 
-/* ── Variant: contrast-checker (2 color pickers + results table) ── */
+/**
+ * Renders the loading skeleton for the contrast-checker tool panel, showing two color picker placeholders and a list of result rows.
+ *
+ * @returns A JSX element containing shimmer placeholders for two color pickers, a large preview block, a header, and three outlined result cards.
+ */
 
 function ContrastCheckerPanel() {
   return (
@@ -143,7 +160,14 @@ function ContrastCheckerPanel() {
   );
 }
 
-/* ── Variant: upload-tool (Favicon, WebP, Extractor - dropzone + results) ── */
+/**
+ * Renders the upload-tool skeleton panel with a dropzone placeholder and result tiles.
+ *
+ * The panel is layout-only and uses shimmer placeholders to represent a file dropzone, action buttons,
+ * and a grid of result previews.
+ *
+ * @returns A JSX element containing the upload-tool skeleton: a dashed dropzone shimmer, two action button shimmers, and a 2×2 grid of result shimmers.
+ */
 
 function UploadToolPanel() {
   return (
@@ -170,7 +194,11 @@ function UploadToolPanel() {
   );
 }
 
-/* ── Variant: word-count (1:2 grid - stats left, textarea right) ── */
+/**
+ * Render a skeleton layout for the Word Count tool.
+ *
+ * @returns A JSX element containing the word-count panel skeleton with a left column of statistic placeholders and a right column with input/textarea placeholders.
+ */
 
 function WordCountPanel() {
   return (
@@ -210,7 +238,11 @@ function WordCountPanel() {
   );
 }
 
-/* ── Variant: image-editor (1.3:2.5 grid - upload left, canvas right) ── */
+/**
+ * Renders the Image Editor tool panel skeleton with upload controls on the left and a canvas preview on the right.
+ *
+ * @returns A JSX element containing the image editor loading placeholder layout composed of shimmered inputs, controls, and a preview area.
+ */
 
 function ImageEditorPanel() {
   return (
@@ -295,7 +327,13 @@ function ColorPalettePanel() {
   );
 }
 
-/* ── Variant: email-signature (toolbar bars + form/preview grid) ── */
+/**
+ * Render the "email-signature" tool panel skeleton comprising toolbar bars, a form grid of input placeholders, and a preview area.
+ *
+ * The layout includes two toolbar sections of small shimmers, a left column with multiple grouped input shimmers, and a right column with a title shimmer, two large icon shimmers, a large preview shimmer, and action button shimmers.
+ *
+ * @returns A JSX element containing the email-signature variant skeleton composed of toolbar shimmers, form/input shimmers, and a preview placeholder.
+ */
 
 function EmailSignaturePanel() {
   return (
@@ -364,6 +402,13 @@ interface ToolPanelSkeletonProps {
   variant?: ToolPanelVariant;
 }
 
+/**
+ * Renders a vertically sticky side-ad placeholder using a shimmer block.
+ *
+ * This component provides a non-interactive visual placeholder intended for side advertisements in large layouts.
+ *
+ * @returns A JSX element containing a vertically sticky shimmer used as a side ad placeholder.
+ */
 function SideAdShimmer() {
   return (
     <div className='sticky top-4'>
@@ -372,6 +417,14 @@ function SideAdShimmer() {
   );
 }
 
+/**
+ * Render a skeleton (loading) UI for a selected tool panel variant.
+ *
+ * Renders the overall responsive layout including optional XL side ad shimmers, a top and bottom banner shimmer, and exactly one variant-specific skeleton panel determined by `variant`.
+ *
+ * @param variant - Which panel skeleton to display. One of: `'default' | 'word-count' | 'image-editor' | 'color-palette' | 'email-signature' | 'meta-counter' | 'contrast-checker' | 'upload-tool'`.
+ * @returns The JSX element containing the composed skeleton layout and the selected variant panel.
+ */
 export default function ToolPanelSkeleton({ variant = 'default' }: ToolPanelSkeletonProps) {
   return (
     <div

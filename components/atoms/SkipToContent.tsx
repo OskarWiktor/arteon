@@ -1,6 +1,14 @@
 import { focusRingClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 
+/**
+ * Renders a keyboard-accessible "skip to content" link that targets the element with id "main-content".
+ *
+ * The link is visually hidden off-screen until focused, and includes focus-ring styling for keyboard and screen-reader navigation.
+ *
+ * @param label - The visible text displayed inside the skip link
+ * @returns The rendered skip-to-content link element
+ */
 export default function SkipToContent({ label }: { label: string }) {
   return (
     <div id='skip-link'>

@@ -1,6 +1,6 @@
+import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { notFound } from 'next/navigation';
 import {
   RiCheckLine,
   RiArrowRightSLine,
@@ -29,30 +29,32 @@ import {
   RiBookOpenLine,
   RiMessageLine,
 } from 'react-icons/ri';
-import Badge from '@/components/atoms/Badge';
+
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
-import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
-import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import Card from '@/components/organisms/Card';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
-import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
+
+import projectsData from '@/data/pl/projects.json';
+import type { Project, ContentBlock } from '@/types/project';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import TableOfContents from '@/components/organisms/TableOfContent';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import Badge from '@/components/atoms/Badge';
+import CTABanner from '@/components/organisms/CTABanner';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import ShareBlock from '@/components/organisms/ShareBlock';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import SectionMetrics from '@/components/organisms/sections/SectionMetrics';
 import SectionFeatureList from '@/components/organisms/sections/SectionFeatureList';
 import SectionProcess from '@/components/organisms/sections/SectionProcess';
 import SectionImageGallery from '@/components/organisms/sections/SectionImageGallery';
-import TableOfContents from '@/components/organisms/TableOfContent';
-import projectsData from '@/data/pl/projects.json';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import type { Project, ContentBlock } from '@/types/project';
-import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/ui-classes';
+import Card from '@/components/organisms/Card';
 
 interface ProjectsData {
   projects: Project[];
@@ -204,6 +206,15 @@ function getIcon(iconName?: string) {
   return IconComponent && <IconComponent className={normalIconSizeClasses} />;
 }
 
+/**
+ * Render a sequence of structured content blocks into corresponding presentation sections.
+ *
+ * Each block in `blocks` produces a specific UI fragment (rich text, images, callouts, steps,
+ * metrics, galleries, etc.) and may insert small dividers based on block break flags.
+ *
+ * @param blocks - An optional array of structured `ContentBlock` objects describing the sections to render.
+ * @returns A React fragment containing the rendered block elements, or `null` when `blocks` is empty or undefined.
+ */
 function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
   if (!blocks?.length) return null;
 
@@ -579,6 +590,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+/**
+ * Render the project detail page for the supplied route parameters.
+ *
+ * Loads a project by `params.slug`, renders its full detail view (hero, metadata, content blocks,
+ * sidebars, share/TOC, carousel, and CTA). If no project matches the slug, triggers a 404 via `notFound()`.
+ *
+ * @param params - Route parameters object containing `slug`, the project identifier.
+ * @returns The React elements composing the project detail page.
+ */
 export default async function ProjectPage({ params }: PageProps) {
   const { slug } = await params;
   const project = getProject(slug);

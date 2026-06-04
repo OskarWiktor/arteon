@@ -1,9 +1,9 @@
 'use client';
 
 import { createPortal } from 'react-dom';
-import Button from '@/components/atoms/buttons/Button';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
+import Button from '@/components/atoms/buttons/Button';
 import { flexCenterClasses, modalBackdropClasses, modalContentClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 
@@ -17,6 +17,22 @@ type ConfirmModalProps = {
   cancelLabel?: string;
 };
 
+/**
+ * Render a confirmation modal that prompts the user to confirm or cancel an action.
+ *
+ * The modal is mounted into document.body via a portal and is only rendered when the component
+ * is mounted and `isOpen` is true. It closes when the backdrop is clicked, the Escape key is
+ * pressed, the cancel button is clicked, or after confirming.
+ *
+ * @param isOpen - Controls whether the modal is visible
+ * @param onClose - Callback invoked to close the modal
+ * @param onConfirm - Callback invoked when the confirm action is triggered
+ * @param title - Heading text displayed at the top of the modal
+ * @param description - Optional supporting text displayed below the title
+ * @param confirmLabel - Label for the confirm button (default: `'Tak'`)
+ * @param cancelLabel - Label for the cancel button (default: `'Anuluj'`)
+ * @returns A React element rendering the modal portal when visible, or `null` otherwise
+ */
 export default function ConfirmModal({
   isOpen,
   onClose,

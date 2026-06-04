@@ -18,6 +18,23 @@ type TableBlockProps = {
   className?: string;
 };
 
+/**
+ * Renders a responsive HTML table inside a <figure> with optional top caption and bottom note.
+ *
+ * The table uses `columns` to build the header and `rows` to populate the body. Controls `striped`
+ * for alternating row backgrounds and `compact` for reduced vertical padding. The surrounding
+ * container applies overflow handling, border, and shadow; its accessible region label comes from
+ * `caption` when provided or a default localized label.
+ *
+ * @param caption - Optional caption text rendered in a header bar above the table and used as the region label.
+ * @param note - Optional note text rendered inside a <figcaption> below the table.
+ * @param columns - Array of column descriptors `{ header, align? }` used to build the table head.
+ * @param rows - Two-dimensional array of cell values (string | number) used to build the table body.
+ * @param striped - When true, applies alternating row background colors; defaults to `true`.
+ * @param compact - When true, reduces vertical padding for header cells and body cells; defaults to `false`.
+ * @param className - Additional CSS classes merged onto the table container.
+ * @returns The rendered table element wrapped in a figure with optional caption and figcaption.
+ */
 export default function TableBlock({
   caption,
   note,

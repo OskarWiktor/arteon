@@ -3,6 +3,10 @@
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import type { IconType } from 'react-icons';
+import IconText from '@/components/atoms/IconText';
+import { useEventListener } from '@/hooks/useEventListener';
+import { useTimeout } from '@/hooks/useTimeout';
+import useMediaQuery from '@/hooks/useMediaQuery';
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -21,11 +25,7 @@ import {
   SiGoogleanalytics,
   SiGoogleads,
 } from 'react-icons/si';
-import IconText from '@/components/atoms/IconText';
 import SectionHeader from '@/components/molecules/SectionHeader';
-import { useEventListener } from '@/hooks/useEventListener';
-import useMediaQuery from '@/hooks/useMediaQuery';
-import { useTimeout } from '@/hooks/useTimeout';
 import { flexCenterClasses, focusRingClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
 
@@ -133,6 +133,16 @@ const LogoCarouselLogoItems: LogoCarouselLogoImage[] = [
   },
 ];
 
+/**
+ * Renders a horizontally scrolling, continuously looping carousel of logos or technology icons.
+ *
+ * The carousel pauses on hover, focus, or touch, and does not animate when the user prefers reduced motion
+ * or the carousel is outside the viewport. Items are duplicated to create a seamless loop and the component
+ * provides accessible region semantics and focusability.
+ *
+ * @param variant - Display mode: `'logo'` shows company logo images, any other value shows technology icons with a section header.
+ * @returns The rendered carousel React element.
+ */
 export default function LogoCarousel({ variant = 'default' }: LogoCarouselProps) {
   const baseVelocity = 30;
   const containerRef = useRef<HTMLDivElement>(null);

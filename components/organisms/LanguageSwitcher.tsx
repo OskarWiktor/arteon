@@ -1,7 +1,7 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import { startTransition, useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
 import {
   NavTranslate2 as RiTranslate2,
@@ -9,13 +9,15 @@ import {
   NavArrowDownSLine as RiArrowDownSLine,
 } from '@/components/atoms/NavIcons';
 import Wrapper from '@/components/atoms/Wrapper';
-import { useEscapeKey } from '@/hooks/useEscapeKey';
-import { useIsMounted } from '@/hooks/useIsMounted';
-import { useOutsideClick } from '@/hooks/useOutsideClick';
-import { useScrollLock } from '@/hooks/useScrollLock';
-import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locales';
-import { getAlternateToolHref } from '@/lib/i18n/tool-registry';
 import { useLocale, useDictionary, useLocaleConfig, type Locale } from '@/lib/LocaleContext';
+import { getAlternateToolHref } from '@/lib/i18n/tool-registry';
+import { useIsMounted } from '@/hooks/useIsMounted';
+import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locales';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useScrollLock } from '@/hooks/useScrollLock';
+
+import InlineLink from '../atoms/InlineLink';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
@@ -26,7 +28,6 @@ import {
   smallIconSizeClasses,
 } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import InlineLink from '../atoms/InlineLink';
 type AlternateLink = {
   locale: Locale;
   href: string;
@@ -73,6 +74,12 @@ function getAlternateLinks(pathname: string, currentLocale: Locale): AlternateLi
   return links;
 }
 
+/**
+ * Render a language selection control that displays either a desktop dropdown or a mobile modal.
+ *
+ * @param variant - Chooses the presentation: `'desktop'` shows a header-anchored dropdown, `'mobile'` shows a full-screen modal dialog. Defaults to `'desktop'`.
+ * @returns The language switcher UI as a React element, or `null` when there are no alternate locale links.
+ */
 export default function LanguageSwitcher({
   variant = 'desktop',
 }: {

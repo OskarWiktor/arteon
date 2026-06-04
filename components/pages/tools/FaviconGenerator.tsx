@@ -1,31 +1,31 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
-import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
-import InputColor from '@/components/atoms/form/InputColor';
-import ToolAlert from '@/components/atoms/ToolAlert';
 import ToolInfo from '@/components/atoms/ToolInfo';
-import FileDropzone from '@/components/molecules/FileDropzone';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
+import ToolAlert from '@/components/atoms/ToolAlert';
+import Badge from '@/components/atoms/Badge';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import Card from '@/components/organisms/Card';
-import { ui } from '@/lib/i18n/tools/favicon';
-import { useLocale, type Locale } from '@/lib/LocaleContext';
+import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
+import type { ToolStatus } from '@/types/tools/common';
 import { rgbToHex } from '@/lib/tools/color/convert';
+import { downloadFromUrl } from '@/utils/download';
 import { type FaviconOutputFile, generateFaviconOutputs } from '@/lib/tools/favicon/generator';
+import { formatBytes } from '@/utils/formatBytes';
 import {
   isSupportedImageUploadType,
   SUPPORTED_IMAGE_UPLOAD_TYPES,
 } from '@/lib/tools/image/uploadTypes';
-import { cn } from '@/lib/utils';
-import type { ToolStatus } from '@/types/tools/common';
-import { downloadFromUrl } from '@/utils/download';
-import { formatBytes } from '@/utils/formatBytes';
 import { loadImage } from '@/utils/loadImage';
 import { revokeObjectUrl } from '@/utils/objectUrl';
 import { createZipBlob, type ZipFileInput } from '@/utils/zip';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
+import { ui } from '@/lib/i18n/tools/favicon';
+import InputColor from '@/components/atoms/form/InputColor';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
+import FileDropzone from '@/components/molecules/FileDropzone';
+import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/utils';
 import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/ui-classes';
 
 function createWebmanifest(
@@ -57,6 +57,17 @@ const PNG_SIZES = [16, 32, 180, 192, 512];
 
 const DEFAULT_BACKGROUND_COLOR = rgbToHex({ r: 255, g: 255, b: 255 });
 
+/**
+ * Interactive UI for creating, previewing, and downloading favicons from a user-provided image.
+ *
+ * Renders a form to upload a source image, choose PNG sizes and options (ICO, transparent/background color,
+ * include webmanifest, auto-download), generate favicon files, preview results, download individual files or a ZIP,
+ * and clear state.
+ *
+ * The component creates temporary object URLs for image previews and generated files and revokes them when no longer needed.
+ *
+ * @returns The component's rendered JSX element tree.
+ */
 export default function FaviconGenerator() {
   const locale = useLocale();
   const t = ui[locale];
@@ -441,7 +452,7 @@ export default function FaviconGenerator() {
                         flexCenterClasses,
                       )}
                     >
-                      {}
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && (
                         <img
                           src={sourcePreviewUrl}
@@ -460,7 +471,7 @@ export default function FaviconGenerator() {
                         flexCenterClasses,
                       )}
                     >
-                      {}
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && (
                         <img
                           src={sourcePreviewUrl}

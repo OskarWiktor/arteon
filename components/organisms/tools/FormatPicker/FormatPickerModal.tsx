@@ -3,8 +3,13 @@
 import Link from 'next/link';
 import { useEffect, useRef, useState, cache } from 'react';
 import { RiArrowDownSLine, RiCloseLine } from 'react-icons/ri';
-import { getToolHref } from '@/lib/i18n/tool-registry';
+
 import { useLocale } from '@/lib/LocaleContext';
+import { getToolHref } from '@/lib/i18n/tool-registry';
+import type { Locale } from '@/types/locale';
+import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
+import { getUnitLabel, getCategoryLabel } from '@/utils/locale-utils';
+
 import {
   FORMAT_CATEGORIES,
   FORMAT_DISPLAY_LABELS,
@@ -13,7 +18,7 @@ import {
   type FormatCategory,
   type UniversalFormat,
 } from '@/lib/tools/conversionRoutes';
-import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
+import { cn } from '@/lib/utils';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
@@ -21,9 +26,6 @@ import {
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
-import type { Locale } from '@/types/locale';
-import { getUnitLabel, getCategoryLabel } from '@/utils/locale-utils';
 
 type PickerSide = 'source' | 'target';
 
@@ -139,7 +141,19 @@ interface FormatPickerModalProps {
 
 // ---------------------------------------------------------------------------
 // Component
-// ---------------------------------------------------------------------------
+/**
+ * Render a modal picker for choosing a format or unit for the given side.
+ *
+ * Renders a trigger button and a modal dialog that lets the user pick a target/source format or, when `unitToolKey` is provided, a unit. The modal handles keyboard and outside-click dismissal, body scroll locking while open, and optional confirmation when navigating away with unsaved files.
+ *
+ * @param side - Which side the picker controls: `'source'` or `'target'`
+ * @param currentSource - Currently selected source format key (if any)
+ * @param currentTarget - Currently selected target format key (if any)
+ * @param hasFiles - When true, navigation actions will prompt the user for confirmation if `confirmMessage` is provided
+ * @param confirmMessage - Confirmation message shown to the user when `hasFiles` is true and a navigation action is initiated
+ * @param unitToolKey - When provided, switch the picker to unit-selection mode using the specified tool key
+ * @returns The FormatPickerModal React element
+ */
 
 export default function FormatPickerModal({
   side,

@@ -4,9 +4,9 @@ import { useEffect } from 'react';
 import Button from '@/components/atoms/buttons/Button';
 import Wrapper from '@/components/atoms/Wrapper';
 import type { ErrorPagesDictionary } from '@/lib/i18n/get-dictionary';
+import ButtonLink from '../atoms/buttons/ButtonLink';
 import { flexCenterClasses } from '@/lib/ui-classes';
 import { cn } from '@/lib/utils';
-import ButtonLink from '../atoms/buttons/ButtonLink';
 
 type ErrorPageProps = {
   error: Error & { digest?: string };
@@ -16,6 +16,18 @@ type ErrorPageProps = {
   contactHref: string;
 };
 
+/**
+ * Render an error UI showing localized title/description, optional error digest, and actions to retry or navigate.
+ *
+ * Displays the provided localized strings and buttons to retry (calls `reset` and then hard-reloads), go home, or contact support. If `error.digest` is present, it is shown as an error code.
+ *
+ * @param error - The thrown `Error` object; may include an optional `digest` property to show an error code
+ * @param reset - Callback invoked to attempt recovery before triggering a full page reload
+ * @param t - Localized text for the error page (e.g., `title`, `description`, `tryAgain`, `backHome`, `contact`, `errorCode`)
+ * @param homeHref - URL used for the "back home" navigation button
+ * @param contactHref - URL used for the "contact" navigation button
+ * @returns The rendered React element for the error page
+ */
 export default function ErrorPage({ error, reset, t, homeHref, contactHref }: ErrorPageProps) {
   useEffect(() => {
     if (process.env.NODE_ENV === 'development') {

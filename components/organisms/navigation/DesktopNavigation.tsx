@@ -1,37 +1,47 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import { startTransition, useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
-import {
-  NavArrowDownSLine as RiArrowDownSLine,
-  NavArrowRightSLine as RiArrowRightSLine,
-} from '@/components/atoms/NavIcons';
 import Wrapper from '@/components/atoms/Wrapper';
 import {
   DESKTOP_NAV_ITEMS_PL,
   OFFER_SECTIONS_PL,
   type OfferSectionKey,
 } from '@/data/pl/navigation-data-pl';
-import { useEscapeKey } from '@/hooks/useEscapeKey';
-import { useIsMounted } from '@/hooks/useIsMounted';
-import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
-import { useOutsideClick } from '@/hooks/useOutsideClick';
-import { getDesktopToolsSections, type ToolsSectionKey } from '@/lib/i18n/tool-registry';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
+import { useIsMounted } from '@/hooks/useIsMounted';
+import { getDesktopToolsSections, type ToolsSectionKey } from '@/lib/i18n/tool-registry';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
+import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
+import {
+  NavArrowDownSLine as RiArrowDownSLine,
+  NavArrowRightSLine as RiArrowRightSLine,
+} from '@/components/atoms/NavIcons';
+
+import InlineLink from '../../atoms/InlineLink';
+import { cn } from '@/lib/utils';
 import {
   flexCenterClasses,
   focusRingClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/ui-classes';
-import { cn } from '@/lib/utils';
-import InlineLink from '../../atoms/InlineLink';
 const plUi = {
   closeServicesList: 'Zamknij listę usług',
   openServicesList: 'Otwórz listę usług',
 } as const;
 
+/**
+ * Render the desktop navigation bar with localized links and two dropdown menus: Offer and Tools.
+ *
+ * The component manages dropdown open state, active categories, keyboard navigation, and focus handling.
+ * Dropdowns close on outside click, Escape key, or route changes. For the Polish (`pl`) locale dropdown
+ * panels are rendered into document.body via portals; otherwise Tools is integrated into the main nav.
+ *
+ * @returns A JSX element representing the responsive desktop navigation bar with its dropdown panels.
+ */
 export default function DesktopNavigation() {
   const locale = useLocale();
   const isPl = locale === 'pl';

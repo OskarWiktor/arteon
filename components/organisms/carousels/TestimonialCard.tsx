@@ -1,8 +1,8 @@
-import ArrowIcon from '@/components/atoms/ArrowIcon';
 import type { Testimonial } from '@/types/testimonial';
 import InlineLink from '../../atoms/InlineLink';
-import { StarRating } from '../../atoms/StarRating';
 import Card from '../Card';
+import { StarRating } from '../../atoms/StarRating';
+import ArrowIcon from '@/components/atoms/ArrowIcon';
 
 type Props = { item: Testimonial };
 
@@ -19,6 +19,12 @@ function getDisplayedQuote(quote: string, maxWords: number) {
   return words.slice(0, maxWords).join(' ') + '...';
 }
 
+/**
+ * Render a testimonial card that displays the author, optional role, star rating, a quote truncated to 32 words, and an optional external link.
+ *
+ * @param item - Testimonial data: `author`, optional `role`, `rating`, `quote`, and optional `link`
+ * @returns A Card `figure` containing the testimonial's caption (author, role, rating), the truncated quote in a `blockquote`, and an optional `InlineLink` to the original source
+ */
 export default function TestimonialCard({ item }: Props) {
   const displayedQuote = getDisplayedQuote(item.quote, MAX_WORDS);
 
