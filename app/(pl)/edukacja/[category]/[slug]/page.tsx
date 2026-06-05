@@ -1,31 +1,30 @@
-import { notFound, permanentRedirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { notFound, permanentRedirect } from 'next/navigation';
+import AbbrTouchHandler from '@/components/atoms/AbbrTouchHandler';
+import Badge from '@/components/atoms/Badge';
+import ColorPalette from '@/components/atoms/ColorPalette';
+import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
+import TableBlock from '@/components/atoms/TableBlock';
 import Wrapper from '@/components/atoms/Wrapper';
+import AdSense from '@/components/molecules/AdSense';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
 import CodeBlock from '@/components/organisms/CodeBlock';
+import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import ShareBlock from '@/components/organisms/ShareBlock';
 import TableOfContents from '@/components/organisms/TableOfContent';
-import Badge from '@/components/atoms/Badge';
-import CTABanner from '@/components/organisms/CTABanner';
-
-import type { Article } from '@/types/article';
 import {
   getAllArticlePreviews,
   findArticleBySlug,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
-import { toAbsoluteUrl } from '@/utils/absoluteUrl';
-import AbbrTouchHandler from '@/components/atoms/AbbrTouchHandler';
-import ColorPalette from '@/components/atoms/ColorPalette';
-import Divider from '@/components/atoms/Divider';
-import { JsonLd } from '@/components/atoms/JsonLd';
-import TableBlock from '@/components/atoms/TableBlock';
-import AdSense from '@/components/molecules/AdSense';
 import { cn } from '@/lib/utils';
+import type { Article } from '@/types/article';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 const defaultCTA = {
   title: 'Rozwiń z nami swoją firmę',

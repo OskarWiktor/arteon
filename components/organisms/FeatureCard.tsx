@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
-import Card from './Card';
-import { cn } from '@/lib/utils';
 import { flexCenterClasses } from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
+import Card from './Card';
 
 type FeatureCardProps = {
   idx?: number;

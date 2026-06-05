@@ -5,11 +5,11 @@ import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
 import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
 import TestimonialCard from '@/components/organisms/carousels/TestimonialCard';
 import testimonialsPl from '@/data/pl/testimonials.json';
+import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
 import type { Testimonial } from '@/types/testimonial';
 import SectionHeader from '../../molecules/SectionHeader';
-import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
 

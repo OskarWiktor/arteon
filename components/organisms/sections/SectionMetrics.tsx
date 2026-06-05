@@ -1,7 +1,7 @@
 import SectionHeader from '@/components/molecules/SectionHeader';
+import { cn } from '@/lib/utils';
 import Wrapper from '../../atoms/Wrapper';
 import Card from '../Card';
-import { cn } from '@/lib/utils';
 
 interface Metric {
   label: string;

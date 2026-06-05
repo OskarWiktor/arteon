@@ -1,18 +1,18 @@
 'use client';
 
-import { startTransition, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import { startTransition, useEffect, useState } from 'react';
+import ButtonIcon from '@/components/atoms/buttons/ButtonIcon';
 import {
   NavMenuLine as RiMenuLine,
   NavCloseLine as RiCloseLine,
   NavSearchLine as RiSearchLine,
 } from '@/components/atoms/NavIcons';
-import Image from 'next/image';
-import { DesktopNavSkeleton } from '@/components/organisms/skeletons/NavSkeleton';
 import Wrapper from '@/components/atoms/Wrapper';
-import ButtonIcon from '@/components/atoms/buttons/ButtonIcon';
-import { useEscapeKey } from '@/hooks/useEscapeKey';
 import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
+import { DesktopNavSkeleton } from '@/components/organisms/skeletons/NavSkeleton';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import {
   flexCenterClasses,

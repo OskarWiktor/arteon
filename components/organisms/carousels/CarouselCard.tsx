@@ -1,8 +1,8 @@
+import ArrowIcon from '@/components/atoms/ArrowIcon';
+import CarouselCardShell from '@/components/molecules/carousels/CarouselCardShell';
 import type { ArticlePreview } from '@/types/article';
 import type { ProjectPreview } from '@/types/project';
 import InlineLink from '../../atoms/InlineLink';
-import ArrowIcon from '@/components/atoms/ArrowIcon';
-import CarouselCardShell from '@/components/molecules/carousels/CarouselCardShell';
 
 type CarouselCardProps =
   | {
@@ -66,20 +66,14 @@ export default function CarouselCard(props: CarouselCardProps) {
         image={article.cover}
         title={article.title}
       >
-        {article.readingTime ? (
+        {article.readingTime && article.datePublished && (
           <span className='inline-flex pt-2 text-sm text-light'>
-            {article.readingTime} {readingTimeLabel}
+            {article.readingTime} {readingTimeLabel} • {article.datePublished}
           </span>
-        ) : null}
-        {article.datePublished ? (
-          <span className='inline-flex pt-2 text-sm text-light'>
-            <span className='mx-1'>•</span>
-            {article.datePublished.split('-').reverse().join('.')}
-          </span>
-        ) : null}
-        {article.excerpt ? (
+        )}
+        {article.excerpt && (
           <p className='mt-2 line-clamp-3 text-light'>{article.excerpt}</p>
-        ) : null}
+        )}
         <div
           className='mt-4 mb-2 h-px w-full bg-neutral-200'
           aria-hidden='true'

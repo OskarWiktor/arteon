@@ -3,13 +3,12 @@
 import { useRef } from 'react';
 import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
 import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
-import CarouselCard from '@/components/organisms/carousels/CarouselCard';
-
 import SectionHeader from '@/components/molecules/SectionHeader';
+import CarouselCard from '@/components/organisms/carousels/CarouselCard';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
-import type { ProjectCategory, ProjectPreview } from '@/types/project';
-import { cn } from '@/lib/utils';
 import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
+import type { ProjectCategory, ProjectPreview } from '@/types/project';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
 

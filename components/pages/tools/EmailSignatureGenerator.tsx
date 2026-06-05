@@ -1,5 +1,26 @@
 'use client';
 
+import { useState, useEffect } from 'react';
+import {
+  RiLayout3Line,
+  RiUser3Line,
+  RiShareLine,
+  RiMailLine,
+  RiPaletteLine,
+  RiFontSize2,
+  RiSpace,
+  RiFileTextLine,
+  RiDeleteBinLine,
+  RiSunLine,
+  RiMoonLine,
+  RiGridLine,
+  RiCodeLine,
+  RiDownloadLine,
+  RiEyeLine,
+  RiShareForwardLine,
+  RiUploadLine,
+  RiCloseLine,
+} from 'react-icons/ri';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import ButtonTool from '@/components/atoms/buttons/ButtonTool';
@@ -47,27 +68,6 @@ import type {
   TextStyleConfig,
 } from '@/types/tools/email';
 import { downloadBlob } from '@/utils/download';
-import { useState, useEffect } from 'react';
-import {
-  RiLayout3Line,
-  RiUser3Line,
-  RiShareLine,
-  RiMailLine,
-  RiPaletteLine,
-  RiFontSize2,
-  RiSpace,
-  RiFileTextLine,
-  RiDeleteBinLine,
-  RiSunLine,
-  RiMoonLine,
-  RiGridLine,
-  RiCodeLine,
-  RiDownloadLine,
-  RiEyeLine,
-  RiShareForwardLine,
-  RiUploadLine,
-  RiCloseLine,
-} from 'react-icons/ri';
 
 /**
  * Renders the EmailSignatureGenerator UI for building, previewing, exporting, importing, and copying email signatures.

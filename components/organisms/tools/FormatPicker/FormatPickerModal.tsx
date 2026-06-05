@@ -5,9 +5,6 @@ import { useEffect, useRef, useState, cache } from 'react';
 import { RiArrowDownSLine, RiCloseLine } from 'react-icons/ri';
 import { getToolHref } from '@/lib/i18n/toolRegistry';
 import { useLocale } from '@/lib/LocaleContext';
-import type { Locale } from '@/types/locale';
-import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
-
 import {
   FORMAT_CATEGORIES,
   FORMAT_DISPLAY_LABELS,
@@ -16,7 +13,8 @@ import {
   type FormatCategory,
   type UniversalFormat,
 } from '@/lib/tools/conversionRoutes';
-
+import { getUnitLabel, getCategoryLabel } from '@/lib/tools/unitLabels';
+import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
@@ -25,7 +23,7 @@ import {
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import { getUnitLabel, getCategoryLabel } from '@/lib/tools/unitLabels';
+import type { Locale } from '@/types/locale';
 
 type PickerSide = 'source' | 'target';
 

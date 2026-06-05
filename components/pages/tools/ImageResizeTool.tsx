@@ -12,7 +12,13 @@ import {
   RiImageLine,
 } from 'react-icons/ri';
 import Button from '@/components/atoms/buttons/Button';
+import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import ButtonTool from '@/components/atoms/buttons/ButtonTool';
 import ToolAlert from '@/components/atoms/ToolAlert';
+import FileDropzone from '@/components/molecules/FileDropzone';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
+import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import Card from '@/components/organisms/Card';
 import CropPreview from '@/components/organisms/tools/ImageResizeTool/CropPreview';
@@ -38,12 +44,6 @@ import type {
 import { getFileFormatLabel } from '@/utils/fileFormat';
 import { formatBytes } from '@/utils/formatBytes';
 import { revokeObjectUrl } from '@/utils/objectUrl';
-import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import ButtonTool from '@/components/atoms/buttons/ButtonTool';
-import FileDropzone from '@/components/molecules/FileDropzone';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
-import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 
 function getImagePresets(t: UiLocale) {
   return {

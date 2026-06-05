@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
-import Wrapper from '../../atoms/Wrapper';
 import InlineLink from '../../atoms/InlineLink';
+import Wrapper from '../../atoms/Wrapper';
 
 interface InfoBannerItem {
   icon?: ReactNode;

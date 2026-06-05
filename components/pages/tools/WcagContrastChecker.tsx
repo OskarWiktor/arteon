@@ -5,10 +5,11 @@ import { RiContrast2Line } from 'react-icons/ri';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonCopy from '@/components/atoms/buttons/ButtonCopy';
-import ToolFieldRow from '@/components/molecules/ToolFieldRow';
-import ToolHelper from '@/components/molecules/tools/ToolHelper';
+import Input from '@/components/atoms/form/Input';
 import ToolInfo from '@/components/atoms/ToolInfo';
 import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
+import ToolFieldRow from '@/components/molecules/ToolFieldRow';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
 import { ui } from '@/lib/i18n/tools/wcagContrast';
 import { useLocale } from '@/lib/LocaleContext';
@@ -20,7 +21,6 @@ import {
   largeIconSizeClasses,
 } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import Input from '@/components/atoms/form/Input';
 
 const DEFAULT_FOREGROUND = rgbToHex({ r: 0, g: 0, b: 0 });
 const DEFAULT_BACKGROUND = rgbToHex({ r: 255, g: 255, b: 255 });

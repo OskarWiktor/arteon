@@ -1,7 +1,7 @@
 'use client';
 
-import { startTransition, useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { startTransition, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import {
   NavTranslate2 as RiTranslate2,
@@ -9,19 +9,18 @@ import {
   NavArrowDownSLine as RiArrowDownSLine,
 } from '@/components/atoms/NavIcons';
 import Wrapper from '@/components/atoms/Wrapper';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useIsMounted } from '@/hooks/useIsMounted';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
+import { useScrollLock } from '@/hooks/useScrollLock';
+import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locales';
+import { getAlternateToolHref } from '@/lib/i18n/toolRegistry';
 import {
   useLocale,
   useDictionary,
   useLocaleConfig,
   type Locale,
 } from '@/lib/LocaleContext';
-import { useIsMounted } from '@/hooks/useIsMounted';
-import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locales';
-import { useOutsideClick } from '@/hooks/useOutsideClick';
-import { useEscapeKey } from '@/hooks/useEscapeKey';
-import { useScrollLock } from '@/hooks/useScrollLock';
-
-import InlineLink from '../atoms/InlineLink';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
@@ -32,7 +31,7 @@ import {
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import { getAlternateToolHref } from '@/lib/i18n/toolRegistry';
+import InlineLink from '../atoms/InlineLink';
 type AlternateLink = {
   locale: Locale;
   href: string;

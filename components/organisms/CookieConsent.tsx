@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
@@ -10,10 +9,10 @@ import { loadAhrefs } from '@/lib/consent/ahrefs';
 import { readConsent, writeConsent } from '@/lib/consent/consentCookie';
 import { loadGA, sendGAPageView } from '@/lib/consent/ga';
 import { updateGtagConsent } from '@/lib/consent/gtag';
-import Button from '../atoms/buttons/Button';
-import InputCheckboxWithLabel from '../molecules/form/InputCheckboxWithLabel';
 import { focusRingClasses, flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import Button from '../atoms/buttons/Button';
+import InputCheckboxWithLabel from '../molecules/form/InputCheckboxWithLabel';
 
 export type CookieConsentTranslations = {
   title: string;

@@ -1,24 +1,24 @@
 'use client';
 
-import { startTransition, useEffect, useRef, useState, type JSX } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { startTransition, useEffect, useRef, useState, type JSX } from 'react';
 import { createPortal } from 'react-dom';
-import { useIsMounted } from '@/hooks/useIsMounted';
-import Subtitle from '../../atoms/typography/Subtitle';
-import IconText from '../../atoms/IconText';
+import { RiArrowDownSLine } from 'react-icons/ri';
+import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
 import {
   MOBILE_NAV_ITEMS_PL,
   OFFER_SECTIONS_PL,
 } from '@/data/pl/navigation-data-pl';
-import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useEventListener } from '@/hooks/useEventListener';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
+import { useIsMounted } from '@/hooks/useIsMounted';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useScrollLock } from '@/hooks/useScrollLock';
-import { useEventListener } from '@/hooks/useEventListener';
 import { useTimeout } from '@/hooks/useTimeout';
+import { getMobileToolsSections } from '@/lib/i18n/toolRegistry';
+import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import {
   flexCenterBetweenClasses,
   flexCenterClasses,
@@ -26,8 +26,8 @@ import {
   normalIconSizeClasses,
 } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import { getMobileToolsSections } from '@/lib/i18n/toolRegistry';
-import { RiArrowDownSLine } from 'react-icons/ri';
+import IconText from '../../atoms/IconText';
+import Subtitle from '../../atoms/typography/Subtitle';
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {

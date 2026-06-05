@@ -1,11 +1,11 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import Card from '@/components/organisms/Card';
 import {
   getAllArticlePreviews,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
 import { slugify } from '@/utils/slugify';
-import Card from '@/components/organisms/Card';
 
 const articles = getAllArticlePreviews();
 
@@ -21,9 +21,10 @@ export default function ArticlesList({
   filterCategorySlug?: string;
 }) {
   const items = filterCategorySlug
-    ? articles.filter(a => {
+    ? articles.filter(article => {
         return (
-          a.primaryCategory && slugify(a.primaryCategory) === filterCategorySlug
+          article.primaryCategory &&
+          slugify(article.primaryCategory) === filterCategorySlug
         );
       })
     : articles;
@@ -33,17 +34,17 @@ export default function ArticlesList({
       aria-label='Lista artykułów'
       className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'
     >
-      {items.map(a => {
-        const catSlug = getPrimaryCategorySlug(a);
-        const href = `/edukacja/${catSlug}/${a.slug}`;
+      {items.map(article => {
+        const catSlug = getPrimaryCategorySlug(article);
+        const href = `/edukacja/${catSlug}/${article.slug}`;
         return (
-          <Card key={a.slug} as='article' padding='md'>
+          <Card key={article.slug} as='article' padding='md'>
             <Link href={href} prefetch={false} className='block'>
-              {a.cover && (
+              {article.cover && (
                 <div className='relative aspect-video w-full overflow-hidden border-b border-neutral-200'>
                   <Image
-                    src={a.cover}
-                    alt={a.title}
+                    src={article.cover}
+                    alt={article.title}
                     fill
                     className='object-cover'
                     sizes='(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw'
@@ -51,26 +52,18 @@ export default function ArticlesList({
                 </div>
               )}
               <div className='p-4'>
-                <h3 className='h6'>{a.title}</h3>
-                <p className='mt-2 line-clamp-5 text-sm! text-light md:line-clamp-4'>
-                  {a.excerpt}
-                </p>
+                <h3 className='h6'>{article.title}</h3>
                 <div className='mt-3 flex flex-wrap items-center gap-2'>
-                  {a.readingTime && (
-                    <span className='text-sm text-light'>
-                      {a.readingTime} min czytania
-                    </span>
-                  )}
-                  {a.datePublished && (
-                    <span
-                      className='text-sm text-light'
-                      aria-label='Data publikacji'
-                    >
-                      <span className='mx-1'>• </span>
-                      {a.datePublished.split('-').reverse().join('.')}
+                  {article.readingTime && article.datePublished && (
+                    <span className='inline-flex pt-2 text-sm text-light'>
+                      {article.readingTime} min czytania •{' '}
+                      {article.datePublished}
                     </span>
                   )}
                 </div>
+                <p className='mt-2 line-clamp-5 text-sm! text-light md:line-clamp-4'>
+                  {article.excerpt}
+                </p>
               </div>
             </Link>
           </Card>
