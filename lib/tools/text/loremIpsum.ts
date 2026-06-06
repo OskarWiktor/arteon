@@ -2304,6 +2304,7 @@ function buildParagraph(
  * @param options - Configuration controlling mode (`paragraphs`, `sentences`, `words`, `lists`, `headings`, `links`, `table`, `blockquotes`, `definitions`), `count`, `paragraphLength`, `startWithLorem`, `outputFormat` (`plain` or `html`), `style`, and optional `locale`.
  * @param seed - Optional deterministic seed for the internal random generator; when omitted a time-based seed is used.
  * @returns The generated lorem ipsum text formatted according to `options`. If `outputFormat` is `'html'`, the result contains appropriate HTML elements; otherwise it is plain text.
+ */
 
 export function generateLoremIpsum(
   options: LoremOptions,
