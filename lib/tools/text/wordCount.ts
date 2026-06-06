@@ -30,6 +30,11 @@ export function countParagraphs(text: string): number {
   return text.split(/\n\s*\n/).filter(p => p.trim().length > 0).length;
 }
 
+/**
+ * Counts distinct whitespace-separated words in a string using locale-aware case folding.
+ *
+ * @returns The number of unique whitespace-separated tokens in `text`, compared case-insensitively using locale-aware rules
+ */
 export function countUniqueWords(text: string): number {
   if (!text.trim()) return 0;
   const words = text.trim().toLocaleLowerCase().split(/\s+/);
@@ -108,16 +113,31 @@ export function formatReadingTime(
 
 // ---------------------------------------------------------------------------
 // Text transformation functions
-// ---------------------------------------------------------------------------
+/**
+ * Convert all letters in `text` to their locale-aware uppercase form.
+ *
+ * @returns The input string with characters converted to uppercase according to the current locale
+ */
 
 export function toLocaleUpperCase(text: string): string {
   return text.toLocaleUpperCase();
 }
 
+/**
+ * Converts all alphabetic characters in the input string to lowercase using locale-aware rules.
+ *
+ * @returns The input string with letters converted to lowercase according to the current locale.
+ */
 export function toLocaleLowerCase(text: string): string {
   return text.toLocaleLowerCase();
 }
 
+/**
+ * Capitalizes the first letter of the string and the first letter following `.`, `!`, or `?`.
+ *
+ * @param text - The input text to transform
+ * @returns The input text with each sentence's initial letter converted to uppercase
+ */
 export function toSentenceCase(text: string): string {
   const lower = text.toLocaleLowerCase();
   return lower.replace(
@@ -126,12 +146,30 @@ export function toSentenceCase(text: string): string {
   );
 }
 
+/**
+ * Converts a string to title case using locale-aware casing.
+ *
+ * Each word's first Unicode letter is uppercased and all other letters are lowercased.
+ *
+ * @param text - The input string to convert
+ * @returns The input string with each word capitalized according to locale-sensitive rules
+ */
 export function toTitleCase(text: string): string {
   return text
     .toLocaleLowerCase()
     .replace(/(^|\s)\p{L}/gu, c => c.toLocaleUpperCase());
 }
 
+/**
+ * Toggles the case of each character in the input string.
+ *
+ * Uppercase characters become lowercase and lowercase characters become uppercase;
+ * characters without case are left unchanged. Casing conversions are performed
+ * using locale-aware APIs.
+ *
+ * @param text - The string whose characters' case will be toggled
+ * @returns The input string with each character's case toggled (uppercase → lowercase, lowercase → uppercase); characters without case are unchanged
+ */
 export function toToggleCase(text: string): string {
   return text
     .split('')
