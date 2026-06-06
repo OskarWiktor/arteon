@@ -375,7 +375,7 @@ export function calculateKeywordDensity(
   if (!text.trim()) return [];
 
   const words = text
-    .toLowerCase()
+    .toLocaleLowerCase()
     .replace(/[^\p{L}\p{N}\s]/gu, '')
     .split(/\s+/)
     .filter(w => w.length > 2); // skip very short words

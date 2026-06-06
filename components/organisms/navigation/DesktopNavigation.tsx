@@ -8,11 +8,13 @@ import {
   NavArrowRightSLine as RiArrowRightSLine,
 } from '@/components/atoms/NavIcons';
 import Wrapper from '@/components/atoms/Wrapper';
-import type {
-  ToolsSectionKey,
+import {
   DESKTOP_NAV_ITEMS_PL,
   OFFER_SECTIONS_PL,
-  type OfferSectionKey,
+} from '@/data/pl/navigation-data-pl';
+import type {
+  ToolsSectionKey,
+  OfferSectionKey,
 } from '@/data/pl/navigation-data-pl';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';

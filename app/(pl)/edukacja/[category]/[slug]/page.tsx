@@ -27,9 +27,9 @@ import type { Article } from '@/types/article';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 const defaultCTA = {
-  title: 'Rozwiń z nami swoją firmę',
+  title: 'Rozwiń swoją firmę',
   description:
-    'Tworzymy strony, sklepy, blogi, SEO, treści, grafiki oraz marketing cyfrowy. U nas znajdziesz rozwiązania, dla każdej firmy, na każdy budżet',
+    'Tworzymy strony, sklepy, blogi, SEO, treści, grafiki oraz marketing cyfrowy.',
   btnOne: 'Skontaktuj się',
   btnOneHref: '/kontakt',
   btnTwo: 'Sprawdź naszą ofertę',

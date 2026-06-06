@@ -32,7 +32,7 @@ export function countParagraphs(text: string): number {
 
 export function countUniqueWords(text: string): number {
   if (!text.trim()) return 0;
-  const words = text.trim().toLowerCase().split(/\s+/);
+  const words = text.trim().toLocaleLowerCase().split(/\s+/);
   return new Set(words).size;
 }
 
@@ -110,30 +110,36 @@ export function formatReadingTime(
 // Text transformation functions
 // ---------------------------------------------------------------------------
 
-export function toUpperCase(text: string): string {
-  return text.toUpperCase();
+export function toLocaleUpperCase(text: string): string {
+  return text.toLocaleUpperCase();
 }
 
-export function toLowerCase(text: string): string {
-  return text.toLowerCase();
+export function toLocaleLowerCase(text: string): string {
+  return text.toLocaleLowerCase();
 }
 
 export function toSentenceCase(text: string): string {
-  const lower = text.toLowerCase();
+  const lower = text.toLocaleLowerCase();
   return lower.replace(
     /(^\s*|[.!?]\s+)(\p{L})/gu,
-    (_m, sep, char: string) => sep + char.toUpperCase(),
+    (_m, sep, char: string) => sep + char.toLocaleUpperCase(),
   );
 }
 
 export function toTitleCase(text: string): string {
-  return text.toLowerCase().replace(/(^|\s)\p{L}/gu, c => c.toUpperCase());
+  return text
+    .toLocaleLowerCase()
+    .replace(/(^|\s)\p{L}/gu, c => c.toLocaleUpperCase());
 }
 
 export function toToggleCase(text: string): string {
   return text
     .split('')
-    .map(c => (c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase()))
+    .map(c =>
+      c === c.toLocaleUpperCase()
+        ? c.toLocaleLowerCase()
+        : c.toLocaleUpperCase(),
+    )
     .join('');
 }
 
