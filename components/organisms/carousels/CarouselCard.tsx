@@ -25,9 +25,10 @@ type CarouselCardProps =
     };
 
 /**
- * Renders a carousel card for a tool, article, or project based on the `variant` prop.
+ * Render a carousel card for a tool, article, or project based on the provided props.
  *
- * @returns A JSX element representing the carousel card for the provided `props.variant`.
+ * @param props - The `CarouselCardProps` that determine the variant and content to render.
+ * @returns The rendered carousel card for the given props.
  */
 export default function CarouselCard(props: CarouselCardProps) {
   if (props.variant === 'tool') {

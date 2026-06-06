@@ -24,6 +24,11 @@ import { cn } from '@/lib/utils';
 import { downloadFromUrl } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
 
+/**
+ * Render the JPG/PNG to WebP conversion tool UI, including file upload, quality and auto-download controls, conversion actions, progress/summary, clipboard report, and per-file queue management.
+ *
+ * @returns The JSX element for the JPG/PNG to WebP conversion tool.
+ */
 export default function JpgPngToWebp() {
   const locale = useLocale();
   const t = ui[locale];

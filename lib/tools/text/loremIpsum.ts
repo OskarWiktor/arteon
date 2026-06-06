@@ -2212,14 +2212,35 @@ function seededRandom(seed: number): () => number {
   };
 }
 
+/**
+ * Selects a single element from `arr` using the provided random number generator.
+ *
+ * @param arr - The array to choose an element from
+ * @param rng - A function that returns a pseudo-random number in the range [0, 1)
+ * @returns A single element chosen from `arr`
+ */
 function pick<T>(arr: T[], rng: () => number): T {
   return arr[Math.floor(rng() * arr.length)];
 }
 
+/**
+ * Capitalizes the first character of a string using locale-aware casing.
+ *
+ * @param s - The input string to capitalize
+ * @returns The input string with its first character converted to uppercase according to locale; returns an empty string unchanged
+ */
 function capitalize(s: string): string {
   return s.charAt(0).toLocaleUpperCase() + s.slice(1);
 }
 
+/**
+ * Selects a pseudorandom integer between min and max, inclusive.
+ *
+ * @param min - Lowest integer in the inclusive range.
+ * @param max - Highest integer in the inclusive range.
+ * @param rng - Random number generator that produces a float in [0, 1).
+ * @returns An integer between `min` and `max`, inclusive.
+ */
 function randBetween(min: number, max: number, rng: () => number): number {
   return Math.floor(rng() * (max - min + 1)) + min;
 }
@@ -2277,7 +2298,12 @@ function buildParagraph(
 
 // ---------------------------------------------------------------------------
 // Public API
-// ---------------------------------------------------------------------------
+/**
+ * Generate lorem ipsum content in the requested structure and format.
+ *
+ * @param options - Configuration controlling mode (`paragraphs`, `sentences`, `words`, `lists`, `headings`, `links`, `table`, `blockquotes`, `definitions`), `count`, `paragraphLength`, `startWithLorem`, `outputFormat` (`plain` or `html`), `style`, and optional `locale`.
+ * @param seed - Optional deterministic seed for the internal random generator; when omitted a time-based seed is used.
+ * @returns The generated lorem ipsum text formatted according to `options`. If `outputFormat` is `'html'`, the result contains appropriate HTML elements; otherwise it is plain text.
 
 export function generateLoremIpsum(
   options: LoremOptions,

@@ -24,6 +24,13 @@ import { downloadBlob } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
 import Card from '../../Card';
 
+/**
+ * Replace all `{{key}}` placeholders in a string with corresponding values.
+ *
+ * @param str - Template string containing placeholders in the form `{{key}}`
+ * @param vars - Mapping from placeholder keys (without braces) to replacement strings
+ * @returns The input string with every occurrence of each `{{key}}` replaced by `vars[key]`
+ */
 function tpl(str: string, vars: Record<string, string>): string {
   return Object.entries(vars).reduce(
     (s, [k, v]) => s.replace(new RegExp(`\\{\\{${k}\\}\\}`, 'g'), v),

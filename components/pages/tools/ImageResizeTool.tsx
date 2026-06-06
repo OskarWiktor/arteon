@@ -45,6 +45,12 @@ import { getFileFormatLabel } from '@/utils/fileFormat';
 import { formatBytes } from '@/utils/formatBytes';
 import { revokeObjectUrl } from '@/utils/objectUrl';
 
+/**
+ * Get localized image size presets grouped by category.
+ *
+ * @param t - Localization object providing preset labels
+ * @returns An object with `social` and `web` arrays of ordered preset objects. Each preset contains `key` (string), `label` (localized string), `width` (pixels), and `height` (pixels)
+ */
 function getImagePresets(t: UiLocale) {
   return {
     social: [

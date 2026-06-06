@@ -32,6 +32,14 @@ import { loadImage } from '@/utils/loadImage';
 import { revokeObjectUrl } from '@/utils/objectUrl';
 import { createZipBlob, type ZipFileInput } from '@/utils/zip';
 
+/**
+ * Builds a web app manifest JSON string from generated favicon outputs.
+ *
+ * @param outputs - Generated favicon output entries; only entries with `type === 'png'` and a numeric `size` are included in the manifest's `icons` array.
+ * @param backgroundColor - Color used for `theme_color` and `background_color` in the manifest.
+ * @param locale - Locale selector for `name` and `short_name` (`'pl'` => Polish, `'de'` => German, any other value => English).
+ * @returns A pretty-printed JSON string representing a web app manifest with `icons`, localized `name` and `short_name`, `theme_color`, `background_color`, and `display: 'standalone'`.
+ */
 function createWebmanifest(
   outputs: FaviconOutputFile[],
   backgroundColor: string,
@@ -67,13 +75,9 @@ const PNG_SIZES = [16, 32, 180, 192, 512];
 const DEFAULT_BACKGROUND_COLOR = rgbToHex({ r: 255, g: 255, b: 255 });
 
 /**
- * Interactive UI for creating, previewing, and downloading favicons from a user-provided image.
+ * Interactive component for creating, previewing, and downloading favicons from an uploaded image.
  *
- * Renders a form to upload a source image, choose PNG sizes and options (ICO, transparent/background color,
- * include webmanifest, auto-download), generate favicon files, preview results, download individual files or a ZIP,
- * and clear state.
- *
- * The component creates temporary object URLs for image previews and generated files and revokes them when no longer needed.
+ * Creates temporary object URLs for the source preview and generated files and revokes them when no longer needed.
  *
  * @returns The component's rendered JSX element tree.
  */
