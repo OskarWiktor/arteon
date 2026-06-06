@@ -4,8 +4,8 @@ import {
   type FocusEvent,
   type ReactNode,
 } from 'react';
-import Label from '@/components/atoms/form/Label';
 import Input from '@/components/atoms/form/Input';
+import Label from '@/components/atoms/form/Label';
 
 type InputWithLabelType =
   | 'text'

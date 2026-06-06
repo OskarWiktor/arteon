@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Card from './Card';
-import { cn } from '@/lib/utils';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
+import Card from './Card';
 
 type Entry = { id: string; text: string; level: 2 | 3 };
 

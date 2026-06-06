@@ -1,6 +1,6 @@
-import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 import {
   RiCheckLine,
   RiArrowRightSLine,
@@ -29,10 +29,15 @@ import {
   RiBookOpenLine,
   RiMessageLine,
 } from 'react-icons/ri';
-
+import Badge from '@/components/atoms/Badge';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import Divider from '@/components/atoms/Divider';
+import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
+import Breadcrumbs from '@/components/molecules/BreadCrumbs';
+import Card from '@/components/organisms/Card';
+import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
+import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionFeatureList from '@/components/organisms/sections/SectionFeatureList';
@@ -44,15 +49,9 @@ import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import ShareBlock from '@/components/organisms/ShareBlock';
 import TableOfContents from '@/components/organisms/TableOfContent';
 import projectsData from '@/data/pl/projects.json';
-import { cn } from '@/lib/utils';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
-import Card from '@/components/organisms/Card';
-import Badge from '@/components/atoms/Badge';
-import { JsonLd } from '@/components/atoms/JsonLd';
-import Breadcrumbs from '@/components/molecules/BreadCrumbs';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
-import CTABanner from '@/components/organisms/CTABanner';
-import { Project, ContentBlock } from '@/types/project';
+import { cn } from '@/lib/utils';
+import type { Project, ContentBlock } from '@/types/project';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 interface ProjectsData {

@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import type { IconType } from 'react-icons';
-import IconText from '@/components/atoms/IconText';
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -22,6 +21,7 @@ import {
   SiGoogleanalytics,
   SiGoogleads,
 } from 'react-icons/si';
+import IconText from '@/components/atoms/IconText';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { useEventListener } from '@/hooks/useEventListener';
 import useMediaQuery from '@/hooks/useMediaQuery';

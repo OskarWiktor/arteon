@@ -1,11 +1,11 @@
+import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
+import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import type {
   SignatureConfig,
   StyleConfig,
   SocialKey,
 } from '@/types/tools/email';
-import ButtonPill from '@/components/atoms/buttons/ButtonPill';
-import InputWithLabel from '@/components/molecules/form/InputWithLabel';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 
 type Props = {
   config: SignatureConfig;

@@ -18,8 +18,8 @@ import {
 import {
   analyzeText,
   formatReadingTime,
-  toUpperCase,
-  toLowerCase,
+  toLocaleUpperCase,
+  toLocaleLowerCase,
   toSentenceCase,
   toTitleCase,
   toToggleCase,
@@ -48,8 +48,8 @@ export default function WordCountTool() {
     label: string;
     fn: (t: string) => string;
   }[] = [
-    { key: 'uppercase', label: t.uppercase, fn: toUpperCase },
-    { key: 'lowercase', label: t.lowercase, fn: toLowerCase },
+    { key: 'uppercase', label: t.uppercase, fn: toLocaleUpperCase },
+    { key: 'lowercase', label: t.lowercase, fn: toLocaleLowerCase },
     { key: 'sentenceCase', label: t.sentenceCase, fn: toSentenceCase },
     { key: 'titleCase', label: t.titleCase, fn: toTitleCase },
     { key: 'toggleCase', label: t.toggleCase, fn: toToggleCase },

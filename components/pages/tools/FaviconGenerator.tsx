@@ -1,12 +1,18 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
-import Button from '@/components/atoms/buttons/Button';
-import ToolInfo from '@/components/atoms/ToolInfo';
-import ToolAlert from '@/components/atoms/ToolAlert';
 import Badge from '@/components/atoms/Badge';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
+import Button from '@/components/atoms/buttons/Button';
+import InputColor from '@/components/atoms/form/InputColor';
+import ToolAlert from '@/components/atoms/ToolAlert';
+import ToolInfo from '@/components/atoms/ToolInfo';
+import FileDropzone from '@/components/molecules/FileDropzone';
+import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
+import Card from '@/components/organisms/Card';
+import { ui } from '@/lib/i18n/tools/favicon';
+import { useLocale } from '@/lib/LocaleContext';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import {
   type FaviconOutputFile,
@@ -18,19 +24,13 @@ import {
 } from '@/lib/tools/image/uploadTypes';
 import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
+import type { Locale } from '@/types/locale';
 import type { ToolStatus } from '@/types/tools/common';
 import { downloadFromUrl } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
 import { loadImage } from '@/utils/loadImage';
 import { revokeObjectUrl } from '@/utils/objectUrl';
 import { createZipBlob, type ZipFileInput } from '@/utils/zip';
-import InputColor from '@/components/atoms/form/InputColor';
-import FileDropzone from '@/components/molecules/FileDropzone';
-import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import Card from '@/components/organisms/Card';
-import { ui } from '@/lib/i18n/tools/favicon';
-import { useLocale } from '@/lib/LocaleContext';
-import { Locale } from '@/types/locale';
 
 function createWebmanifest(
   outputs: FaviconOutputFile[],
@@ -488,7 +488,7 @@ export default function FaviconGenerator() {
                         flexCenterClasses,
                       )}
                     >
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      {}
                       {sourcePreviewUrl && (
                         <Image
                           src={sourcePreviewUrl}
@@ -507,7 +507,7 @@ export default function FaviconGenerator() {
                         flexCenterClasses,
                       )}
                     >
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      {}
                       {sourcePreviewUrl && (
                         <Image
                           src={sourcePreviewUrl}

@@ -1,11 +1,11 @@
+import Image from 'next/image';
 import { getFooterTools } from '@/lib/i18n/toolRegistry';
-import { Locale, FooterUi, LegalLink } from '@/types/locale';
+import type { Locale, FooterUi, LegalLink } from '@/types/locale';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 import ButtonCookieSettings from '../atoms/buttons/ButtonCookieSettings';
 import InlineLink from '../atoms/InlineLink';
 import { JsonLd } from '../atoms/JsonLd';
 import Wrapper from '../atoms/Wrapper';
-import Image from 'next/image';
 
 const ORG = {
   name: 'Arteon',

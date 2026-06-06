@@ -1,11 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import ToolInfo from '@/components/atoms/ToolInfo';
 import ToolAlert from '@/components/atoms/ToolAlert';
-import ToolHelper from '@/components/molecules/tools/ToolHelper';
+import ToolInfo from '@/components/atoms/ToolInfo';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import Card from '@/components/organisms/Card';
 import { ui } from '@/lib/i18n/tools/paletteExtractor';
@@ -21,7 +21,7 @@ import {
 } from '@/lib/tools/image/uploadTypes';
 import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import { ToolStatus } from '@/types/tools/common';
+import type { ToolStatus } from '@/types/tools/common';
 import { getFileFormatLabel } from '@/utils/fileFormat';
 import { formatBytes } from '@/utils/formatBytes';
 import { revokeObjectUrl } from '@/utils/objectUrl';

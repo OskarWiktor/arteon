@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { RiSearchLine, RiCloseLine, RiArrowRightSLine } from 'react-icons/ri';
+import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { useSearch } from '@/hooks/useSearch';
+import { RiSearchLine, RiCloseLine, RiArrowRightSLine } from 'react-icons/ri';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
+import { useSearch } from '@/hooks/useSearch';
 import { useDictionary, useLocale, useLocaleConfig } from '@/lib/LocaleContext';
 import type { SearchCategory, SearchItem } from '@/lib/searchIndex';
 import {
@@ -15,9 +15,9 @@ import {
   modalContentClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import InlineLink from '../atoms/InlineLink';
-import Input from '../atoms/form/Input';
 import { cn } from '@/lib/utils';
+import Input from '../atoms/form/Input';
+import InlineLink from '../atoms/InlineLink';
 
 type SearchDialogProps = {
   isOpen: boolean;

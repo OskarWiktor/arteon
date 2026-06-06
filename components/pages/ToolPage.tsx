@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Fragment, type ReactNode } from 'react';
 import Divider from '@/components/atoms/Divider';
 import { JsonLd } from '@/components/atoms/JsonLd';
@@ -24,14 +25,13 @@ import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 import SectionBasic from '../organisms/sections/SectionBasic';
 import SectionContactForm from '../organisms/sections/SectionContactForm';
 import SectionDemo from '../organisms/sections/SectionDemo';
-import SectionTable from '../organisms/sections/SectionTable';
 import SectionInfo from '../organisms/sections/SectionInfo';
 import SectionSteps from '../organisms/sections/SectionSteps';
+import SectionTable from '../organisms/sections/SectionTable';
 import SectionTabs from '../organisms/sections/SectionTabs';
 import SectionTimeline from '../organisms/sections/SectionTimeline';
 import RelatedConverters from '../organisms/tools/RelatedConverters';
 import RelatedUnitConverters from '../organisms/tools/RelatedUnitConverters';
-import { Metadata } from 'next';
 
 const AD_SECTION_INTERVAL = 3;
 const AD_SKIP_AFTER = new Set(['faq', 'toolsCarousel']);

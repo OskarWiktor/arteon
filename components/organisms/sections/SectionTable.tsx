@@ -1,6 +1,6 @@
+import { useId } from 'react';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { cn } from '@/lib/utils';
-import { useId } from 'react';
 
 export interface SectionTableRow {
   label?: string;

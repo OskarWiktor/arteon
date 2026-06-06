@@ -3,26 +3,26 @@
 import { useEffect, useRef, useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
+import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
-import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
-import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
-import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
+import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
+import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
+import Card from '@/components/organisms/Card';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { downloadFromUrl } from '@/utils/download';
-import { formatBytes } from '@/utils/formatBytes';
-import { useWebpQueue } from '@/hooks/useWebpQueue';
 import { useWebpConversion } from '@/hooks/useWebpConversion';
 import { useWebpDownloads } from '@/hooks/useWebpDownloads';
+import { useWebpQueue } from '@/hooks/useWebpQueue';
 import { useWebpReportCopy } from '@/hooks/useWebpReportCopy';
 import { ui } from '@/lib/i18n/tools/jpgPngWebp';
 import { useLocale } from '@/lib/LocaleContext';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';
-import Card from '@/components/organisms/Card';
+import { downloadFromUrl } from '@/utils/download';
+import { formatBytes } from '@/utils/formatBytes';
 
 export default function JpgPngToWebp() {
   const locale = useLocale();

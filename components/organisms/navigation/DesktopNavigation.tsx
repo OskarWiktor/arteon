@@ -1,34 +1,35 @@
 'use client';
 
-import { startTransition, useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { startTransition, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import Wrapper from '@/components/atoms/Wrapper';
-import {
-  DESKTOP_NAV_ITEMS_PL,
-  OFFER_SECTIONS_PL,
-  ToolsSectionKey,
-  type OfferSectionKey,
-} from '@/data/pl/navigation-data-pl';
-import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import { useIsMounted } from '@/hooks/useIsMounted';
-import { useEscapeKey } from '@/hooks/useEscapeKey';
-import { useOutsideClick } from '@/hooks/useOutsideClick';
-import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
 import {
   NavArrowDownSLine as RiArrowDownSLine,
   NavArrowRightSLine as RiArrowRightSLine,
 } from '@/components/atoms/NavIcons';
-
-import InlineLink from '../../atoms/InlineLink';
-import { cn } from '@/lib/utils';
+import Wrapper from '@/components/atoms/Wrapper';
+import {
+  DESKTOP_NAV_ITEMS_PL,
+  OFFER_SECTIONS_PL,
+} from '@/data/pl/navigation-data-pl';
+import type {
+  ToolsSectionKey,
+  OfferSectionKey,
+} from '@/data/pl/navigation-data-pl';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useIsMounted } from '@/hooks/useIsMounted';
+import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
+import { getDesktopToolsSections } from '@/lib/i18n/toolRegistry';
+import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import {
   flexCenterClasses,
   focusRingClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { getDesktopToolsSections } from '@/lib/i18n/toolRegistry';
+import { cn } from '@/lib/utils';
+import InlineLink from '../../atoms/InlineLink';
 const plUi = {
   closeServicesList: 'Zamknij listę usług',
   openServicesList: 'Otwórz listę usług',

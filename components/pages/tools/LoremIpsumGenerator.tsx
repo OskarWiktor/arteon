@@ -8,7 +8,9 @@ import {
   RiCodeSSlashLine,
   RiPaletteLine,
 } from 'react-icons/ri';
+import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import Input from '@/components/atoms/form/Input';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolStatRow from '@/components/molecules/tools/ToolStatRow';
 import Card from '@/components/organisms/Card';
@@ -26,8 +28,6 @@ import {
   type LoremOptions,
 } from '@/lib/tools/text/loremIpsum';
 import { flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
-import Button from '@/components/atoms/buttons/Button';
-import Input from '@/components/atoms/form/Input';
 import { cn } from '@/lib/utils';
 
 const MODES: LoremMode[] = [

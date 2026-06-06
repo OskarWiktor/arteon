@@ -2217,7 +2217,7 @@ function pick<T>(arr: T[], rng: () => number): T {
 }
 
 function capitalize(s: string): string {
-  return s.charAt(0).toUpperCase() + s.slice(1);
+  return s.charAt(0).toLocaleUpperCase() + s.slice(1);
 }
 
 function randBetween(min: number, max: number, rng: () => number): number {
@@ -2386,7 +2386,7 @@ export function generateLoremIpsum(
         const linkText = capitalize(words.join(' '));
         const domain =
           pick(bank, rng)
-            .toLowerCase()
+            .toLocaleLowerCase()
             .replace(/[^a-z]/g, '') || 'example';
         const tld = pick(tlds, rng);
         const url = `https://${domain}.${tld}`;

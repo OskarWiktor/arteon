@@ -2,8 +2,8 @@
 
 import { useEffect, useId, useRef, useState } from 'react';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
-import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useEventListener } from '@/hooks/useEventListener';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useTimeout } from '@/hooks/useTimeout';
 import { focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/utils';

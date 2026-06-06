@@ -1,8 +1,8 @@
+import ArrowIcon from '@/components/atoms/ArrowIcon';
 import type { Testimonial } from '@/types/testimonial';
 import InlineLink from '../../atoms/InlineLink';
-import Card from '../Card';
 import { StarRating } from '../../atoms/StarRating';
-import ArrowIcon from '@/components/atoms/ArrowIcon';
+import Card from '../Card';
 
 type Props = { item: Testimonial };
 

@@ -1,16 +1,15 @@
 'use client';
 
 import { useRef } from 'react';
-
 import { CarouselDots } from '@/components/molecules/carousels/CarouselDots';
 import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNavButtons';
-import CarouselCard from '@/components/organisms/carousels/CarouselCard';
 import SectionHeader from '@/components/molecules/SectionHeader';
+import CarouselCard from '@/components/organisms/carousels/CarouselCard';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import { getToolsSections } from '@/lib/i18n/toolRegistry';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import { cn } from '@/lib/utils';
 import { noScrollbarClasses, focusRingClasses } from '@/lib/uiClasses';
+import { cn } from '@/lib/utils';
 
 const AUTO_PLAY_INTERVAL_MS = 6000;
 
