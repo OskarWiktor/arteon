@@ -26,7 +26,7 @@ import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 export const metadata = {
   title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',

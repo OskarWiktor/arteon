@@ -19,7 +19,6 @@ import FileDropzone from '@/components/molecules/FileDropzone';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import Card from '@/components/organisms/Card';
 import CropPreview from '@/components/organisms/tools/ImageResizeTool/CropPreview';
 import { useCropDrag } from '@/hooks/useCropDrag';
@@ -32,7 +31,7 @@ import {
   flexCenterClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type {
   ActiveTool,
   GridColor,
@@ -508,13 +507,10 @@ export default function ImageResizeTool() {
               accept='image/*'
               dropEffect='copy'
               onFiles={files => handleFileChange(files?.[0] ?? null)}
-            >
-              <ToolUploadContent
-                dragLabel={t.dragDropImage}
-                clickLabel={t.clickToSelect}
-                formatsLabel={t.supportedFormats}
-              />
-            </FileDropzone>
+              dragLabel={t.dragDropImage}
+              clickLabel={t.clickToSelect}
+              formatsLabel={t.supportedFormats}
+            />
             {state.file && (
               <p className='tool-meta mt-2'>
                 {t.currentFile} <strong>{state.file.name}</strong>

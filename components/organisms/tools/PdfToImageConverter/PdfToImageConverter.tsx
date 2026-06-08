@@ -8,7 +8,6 @@ import FileDropzone from '@/components/molecules/FileDropzone';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useDictionary } from '@/lib/LocaleContext';
 import {
@@ -17,7 +16,7 @@ import {
   FORMAT_MIME,
 } from '@/lib/tools/image/pdfToImage';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type {
   PdfToImageConverterProps,
   PdfPageFile,
@@ -245,13 +244,10 @@ export default function PdfToImageConverter({
                 accept='application/pdf,.pdf'
                 multiple
                 onFiles={handleAddFiles}
-              >
-                <ToolUploadContent
-                  dragLabel={t.dragDrop.replace('{{format}}', 'PDF')}
-                  clickLabel={t.clickToSelect}
-                  formatsLabel={t.supported.replace('{{format}}', 'PDF')}
-                />
-              </FileDropzone>
+                dragLabel={t.dragDrop.replace('{{format}}', 'PDF')}
+                clickLabel={t.clickToSelect}
+                formatsLabel={t.supported.replace('{{format}}', 'PDF')}
+              />
               {globalError && (
                 <ToolAlert variant='error' className='mt-2'>
                   {globalError}

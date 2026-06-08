@@ -30,7 +30,7 @@ import {
   sortLinesDesc,
 } from '@/lib/tools/text/wordCount';
 import { smallIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 /**
  * Render the word count tool UI that analyzes editable text, displays statistics and readability,

@@ -75,11 +75,8 @@ export default function PrivacyPolicyPage() {
                 enhetsinformation, kakor),
               </li>
               <li>
-                analysdata fran Google Analytics 4, Ahrefs Web Analytics, Vercel
-                Analytics och Vercel Speed Insights,
-              </li>
-              <li>
-                analysdata fran Metricool (besoksstatistik, trafikkallor),
+                analysdata fran Google Analytics 4, Vercel Analytics och Vercel
+                Speed Insights,
               </li>
               <li>
                 uppgifter som samlas in av Google AdSense for att visa annonser
@@ -128,10 +125,7 @@ export default function PrivacyPolicyPage() {
             <p>Webbplatsen anvander kakor for foljande andamal:</p>
             <ul className='list-disc space-y-1 pl-6'>
               <li>sakerstalla korrekt funktion av webbplatsen,</li>
-              <li>
-                trafikanalys (Google Analytics 4, Ahrefs Web Analytics, Vercel
-                Analytics, Metricool),
-              </li>
+              <li>trafikanalys (Google Analytics 4, Vercel Analytics),</li>
               <li>marknadsforingsandamal,</li>
               <li>
                 visning av intressebaserade annonser (Google AdSense /
@@ -209,8 +203,8 @@ export default function PrivacyPolicyPage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>hosting-/applikationsleverantor (t.ex. Vercel),</li>
               <li>
-                leverantorer av analysverktyg (Google Ireland Ltd., Ahrefs Pte.
-                Ltd., Vercel Inc., Metricool S.L.),
+                leverantorer av analysverktyg (Google Ireland Ltd., Vercel
+                Inc.),
               </li>
               <li>
                 leverantor av annonstjanster (Google Ireland Ltd. -- Google

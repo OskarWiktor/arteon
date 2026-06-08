@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 type IconTextGap = '0' | '1' | '2' | '3' | '4';
 type IconTextAlign = 'start' | 'center';

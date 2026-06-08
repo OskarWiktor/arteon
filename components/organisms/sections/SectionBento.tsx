@@ -2,7 +2,7 @@ import Image from 'next/image';
 import type { ReactNode } from 'react';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { flexCenterClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import ButtonLink from '../../atoms/buttons/ButtonLink';
 
 type BentoItemSize = 'small' | 'medium' | 'large';

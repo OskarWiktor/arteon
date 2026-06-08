@@ -3,7 +3,7 @@ import InputColor from '@/components/atoms/form/InputColor';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import { FONT_OPTIONS } from '@/lib/tools/email/signatureDefaults';
 import { flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type {
   StyleConfig,
   FontSizeOption,

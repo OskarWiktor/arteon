@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import type { ReactNode } from 'react';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import Wrapper from '../atoms/Wrapper';
 import ButtonGroup from '../molecules/ButtonGroup';
 import SectionHeader from '../molecules/SectionHeader';

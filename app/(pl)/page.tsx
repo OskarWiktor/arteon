@@ -24,8 +24,9 @@ import WorkSteps from '@/components/organisms/WorkSteps';
 import testimonialsPl from '@/data/pl/testimonials.json';
 import { getAllArticlePreviews } from '@/lib/blogDataService';
 import { getHomepageAlternates } from '@/lib/i18n/pages/toolMeta';
+import { getCarouselImages } from '@/lib/tools/carouselImages';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type { Testimonial } from '@/types/testimonial';
 
 export const metadata = {
@@ -322,7 +323,7 @@ export default function HomePage() {
 
         <Divider line />
 
-        <ToolsCarousel />
+        <ToolsCarousel images={getCarouselImages('pl')} />
 
         <Divider line />
 

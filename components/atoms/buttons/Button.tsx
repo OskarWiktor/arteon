@@ -6,7 +6,7 @@ import {
   flexCenterClasses,
   focusRingClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import ArrowIcon from '../ArrowIcon';
 
 type ButtonSize = 'small' | 'medium';

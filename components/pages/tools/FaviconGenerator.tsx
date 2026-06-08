@@ -9,7 +9,6 @@ import ToolInfo from '@/components/atoms/ToolInfo';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import Card from '@/components/organisms/Card';
 import { ui } from '@/lib/i18n/tools/favicon';
 import { useLocale } from '@/lib/LocaleContext';
@@ -23,7 +22,7 @@ import {
   SUPPORTED_IMAGE_UPLOAD_TYPES,
 } from '@/lib/tools/image/uploadTypes';
 import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type { Locale } from '@/types/locale';
 import type { ToolStatus } from '@/types/tools/common';
 import { downloadFromUrl } from '@/utils/download';
@@ -268,13 +267,10 @@ export default function FaviconGenerator() {
               <FileDropzone
                 accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')}
                 onFiles={handleFiles}
-              >
-                <ToolUploadContent
-                  dragLabel={t.dragDropImage}
-                  clickLabel={t.clickToSelect}
-                  formatsLabel={t.supportedFormats}
-                />
-              </FileDropzone>
+                dragLabel={t.dragDropImage}
+                clickLabel={t.clickToSelect}
+                formatsLabel={t.supportedFormats}
+              />
               {sourceFile && (
                 <p className='tool-meta mt-2'>
                   {t.selectedFile} <strong>{sourceFile.name}</strong> (

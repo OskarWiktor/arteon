@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import ButtonLink from '../atoms/buttons/ButtonLink';
 import Subtitle from '../atoms/typography/Subtitle';
 

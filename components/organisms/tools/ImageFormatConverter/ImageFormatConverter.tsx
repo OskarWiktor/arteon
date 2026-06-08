@@ -8,7 +8,6 @@ import FileDropzone from '@/components/molecules/FileDropzone';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useConversionQueue } from '@/hooks/useConversionQueue';
 import { useDictionary } from '@/lib/LocaleContext';
@@ -18,7 +17,7 @@ import {
   hasQualitySlider,
 } from '@/lib/tools/image/imageFormatConverter';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type { ImageFormatConverterProps } from '@/types/tools/image-format-converter';
 import { downloadBlob } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
@@ -185,13 +184,10 @@ export default function ImageFormatConverter({
                 accept={acceptMime}
                 multiple
                 onFiles={handleAddFiles}
-              >
-                <ToolUploadContent
-                  dragLabel={tpl(t.dragDrop, { format: sourceLabel })}
-                  clickLabel={t.clickToSelect}
-                  formatsLabel={tpl(t.supported, { format: sourceLabel })}
-                />
-              </FileDropzone>
+                dragLabel={tpl(t.dragDrop, { format: sourceLabel })}
+                clickLabel={t.clickToSelect}
+                formatsLabel={tpl(t.supported, { format: sourceLabel })}
+              />
               {globalError && (
                 <ToolAlert variant='error' className='mt-2'>
                   {globalError}

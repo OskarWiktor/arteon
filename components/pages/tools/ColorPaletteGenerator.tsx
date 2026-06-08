@@ -22,7 +22,7 @@ import {
   type PaletteGroupId,
 } from '@/lib/tools/color/palette';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 function getPaletteMeta(
   t: (typeof ui)[keyof typeof ui],

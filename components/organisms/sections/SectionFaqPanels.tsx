@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { useId } from 'react';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import FaqPanel from '@/components/molecules/FaqPanel';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import SectionHeader from '../../molecules/SectionHeader';
 
 interface FaqPanelProps {

@@ -28,7 +28,7 @@ import {
   type LoremOptions,
 } from '@/lib/tools/text/loremIpsum';
 import { flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 const MODES: LoremMode[] = [
   'paragraphs',

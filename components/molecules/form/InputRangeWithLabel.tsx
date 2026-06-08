@@ -1,7 +1,7 @@
 import { useId, type ReactNode } from 'react';
 import InputRange from '@/components/atoms/form/InputRange';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 interface InputRangeWithLabelProps {
   id?: string;

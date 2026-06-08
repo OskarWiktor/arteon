@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import AdSense from '@/components/molecules/AdSense';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 interface ToolEditorLayoutProps {
   children: ReactNode;

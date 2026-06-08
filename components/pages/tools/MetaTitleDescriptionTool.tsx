@@ -15,7 +15,7 @@ import {
   type FieldMetrics,
 } from '@/lib/tools/metaLength';
 import { flexCenterClasses, largeIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 type LengthStatus = 'empty' | 'too-short' | 'ideal' | 'too-long';
 

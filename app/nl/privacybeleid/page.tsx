@@ -80,12 +80,8 @@ export default function PrivacybeleidPage() {
                 apparaatinformatie, cookies),
               </li>
               <li>
-                analytische gegevens van Google Analytics 4, Ahrefs Web
-                Analytics, Vercel Analytics en Vercel Speed Insights,
-              </li>
-              <li>
-                analytische gegevens van Metricool (bezoekstatistieken,
-                verkeersbronnen),
+                analytische gegevens van Google Analytics 4, Vercel Analytics en
+                Vercel Speed Insights,
               </li>
               <li>
                 gegevens verzameld door Google AdSense voor het weergeven van
@@ -143,10 +139,7 @@ export default function PrivacybeleidPage() {
             </p>
             <ul className='list-disc space-y-1 pl-6'>
               <li>het waarborgen van de goede werking van de website,</li>
-              <li>
-                verkeersanalyse (Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics, Metricool),
-              </li>
+              <li>verkeersanalyse (Google Analytics 4, Vercel Analytics),</li>
               <li>marketingdoeleinden,</li>
               <li>
                 weergave van op interesses gebaseerde advertenties (Google
@@ -229,8 +222,7 @@ export default function PrivacybeleidPage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>hosting-/applicatieproviders (bijv. Vercel),</li>
               <li>
-                aanbieders van analysetools (Google Ireland Ltd., Ahrefs Pte.
-                Ltd., Vercel Inc., Metricool S.L.),
+                aanbieders van analysetools (Google Ireland Ltd., Vercel Inc.),
               </li>
               <li>
                 aanbieders van advertentiediensten (Google Ireland Ltd. - Google

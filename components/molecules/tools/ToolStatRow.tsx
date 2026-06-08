@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 interface ToolStatRowProps {
   label: string;

@@ -1,5 +1,5 @@
 import { focusRingClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 const inputClasses =
   'w-full text-dark rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm transition h-11';

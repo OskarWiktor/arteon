@@ -20,7 +20,7 @@ import {
   largeIconSizeClasses,
   normalIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import InlineLink from '../../atoms/InlineLink';
 
 const MobileNavigation = dynamic(() => import('./MobileNavigation'), {

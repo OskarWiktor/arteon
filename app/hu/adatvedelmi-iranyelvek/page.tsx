@@ -79,12 +79,8 @@ export default function AdatvedelmiIranyelvekPage() {
                 eszközinformáció, cookie-k),
               </li>
               <li>
-                elemzési adatok a Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics és Vercel Speed Insights szolgáltatásokból,
-              </li>
-              <li>
-                elemzési adatok a Metricool-ból (látogatási statisztikák,
-                forgalmi források),
+                elemzési adatok a Google Analytics 4, Vercel Analytics és Vercel
+                Speed Insights szolgáltatásokból,
               </li>
               <li>
                 a Google AdSense által hirdetések megjelenítése céljából
@@ -140,10 +136,7 @@ export default function AdatvedelmiIranyelvekPage() {
             <p>A weboldal az alábbi célokra használ cookie-kat:</p>
             <ul className='list-disc space-y-1 pl-6'>
               <li>a weboldal megfelelő működésének biztosítása,</li>
-              <li>
-                forgalomelemzés (Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics, Metricool),
-              </li>
+              <li>forgalomelemzés (Google Analytics 4, Vercel Analytics),</li>
               <li>marketing célok,</li>
               <li>
                 érdeklődésen alapuló hirdetések megjelenítése (Google AdSense /
@@ -200,8 +193,7 @@ export default function AdatvedelmiIranyelvekPage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>hosting-/alkalmazásszolgáltatók (pl. Vercel),</li>
               <li>
-                elemzőeszköz-szolgáltatók (Google Ireland Ltd., Ahrefs Pte.
-                Ltd., Vercel Inc., Metricool S.L.),
+                elemzőeszköz-szolgáltatók (Google Ireland Ltd., Vercel Inc.),
               </li>
               <li>
                 hirdetési szolgáltatók (Google Ireland Ltd. – Google AdSense),

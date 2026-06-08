@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import Card from './Card';
 
 type Entry = { id: string; text: string; level: 2 | 3 };

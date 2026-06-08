@@ -10,7 +10,6 @@ import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWit
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import Card from '@/components/organisms/Card';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { useWebpConversion } from '@/hooks/useWebpConversion';
@@ -20,7 +19,7 @@ import { useWebpReportCopy } from '@/hooks/useWebpReportCopy';
 import { ui } from '@/lib/i18n/tools/jpgPngWebp';
 import { useLocale } from '@/lib/LocaleContext';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import { downloadFromUrl } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
 
@@ -173,13 +172,10 @@ export default function JpgPngToWebp() {
               accept='image/jpeg,image/png'
               multiple
               onFiles={addFiles}
-            >
-              <ToolUploadContent
-                dragLabel={t.dragDropImages}
-                clickLabel={t.clickToSelect}
-                formatsLabel={t.supportedFormats}
-              />
-            </FileDropzone>
+              dragLabel={t.dragDropImages}
+              clickLabel={t.clickToSelect}
+              formatsLabel={t.supportedFormats}
+            />
             {globalError && (
               <ToolAlert variant='error' className='mt-2'>
                 {globalError}

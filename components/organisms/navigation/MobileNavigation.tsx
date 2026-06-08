@@ -25,7 +25,7 @@ import {
   modalBackdropClasses,
   normalIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import IconText from '../../atoms/IconText';
 import Subtitle from '../../atoms/typography/Subtitle';
 

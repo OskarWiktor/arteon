@@ -1,5 +1,5 @@
 import type { ElementType, HTMLAttributes, ReactNode } from 'react';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 interface WrapperProps extends HTMLAttributes<HTMLElement> {
   children: ReactNode;

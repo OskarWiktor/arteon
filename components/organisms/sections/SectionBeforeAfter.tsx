@@ -6,7 +6,7 @@ import { RiExpandLeftRightLine } from 'react-icons/ri';
 import InputRange from '@/components/atoms/form/InputRange';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { flexCenterClasses, normalIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import Wrapper from '../../atoms/Wrapper';
 
 interface SectionBeforeAfterProps {

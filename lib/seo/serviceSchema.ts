@@ -61,12 +61,7 @@ export function buildServiceSchema(params: {
     },
     areaServed: 'Worldwide',
     availableLanguage: availableLanguages,
-    offers: [
-      { '@type': 'Offer', priceCurrency: 'PLN', url },
-      { '@type': 'Offer', priceCurrency: 'EUR', url },
-      { '@type': 'Offer', priceCurrency: 'GBP', url },
-      { '@type': 'Offer', priceCurrency: 'USD', url },
-    ],
+    offers: [{ '@type': 'Offer', priceCurrency: 'PLN', url }],
   };
 
   if (includeServiceChannel) {

@@ -5,11 +5,10 @@ import Button from '@/components/atoms/buttons/Button';
 import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import TextareaWithLabel from '@/components/molecules/form/TextareaWithLabel';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useDictionary } from '@/lib/LocaleContext';
 import { flexCenterClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import { downloadBlob } from '@/utils/download';
 import Card from '../../Card';
 
@@ -155,13 +154,13 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
         <div className='grid gap-4 md:grid-cols-2'>
           <Card interactive={false} padding='lg'>
             <h2 className='h6'>{t.imageHeading}</h2>
-            <FileDropzone accept='image/*' onFiles={handleAddFiles}>
-              <ToolUploadContent
-                dragLabel={t.dragImageHere}
-                clickLabel={t.clickToSelect}
-                formatsLabel='JPG, PNG, WebP, SVG, GIF, BMP'
-              />
-            </FileDropzone>
+            <FileDropzone
+              accept='image/*'
+              onFiles={handleAddFiles}
+              dragLabel={t.dragImageHere}
+              clickLabel={t.clickToSelect}
+              formatsLabel='JPG, PNG, WebP, SVG, GIF, BMP'
+            />
             {fileName && (
               <p className='tool-meta'>
                 {t.fileLabel} <strong>{fileName}</strong>

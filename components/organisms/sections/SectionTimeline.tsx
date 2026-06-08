@@ -1,6 +1,6 @@
 import { useId, type ReactNode } from 'react';
 import { flexCenterClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import ButtonGroup from '../../molecules/ButtonGroup';
 import SectionHeader from '../../molecules/SectionHeader';
 import Card from '../Card';

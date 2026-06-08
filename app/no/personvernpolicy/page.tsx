@@ -76,11 +76,8 @@ export default function PrivacyPolicyPage() {
                 enhetsinformasjon, informasjonskapsler),
               </li>
               <li>
-                analysedata fra Google Analytics 4, Ahrefs Web Analytics, Vercel
-                Analytics og Vercel Speed Insights,
-              </li>
-              <li>
-                analysedata fra Metricool (besoksstatistikk, trafikkkilder),
+                analysedata fra Google Analytics 4, Vercel Analytics og Vercel
+                Speed Insights,
               </li>
               <li>
                 data samlet inn av Google AdSense for visning av annonser
@@ -129,10 +126,7 @@ export default function PrivacyPolicyPage() {
             <p>Nettstedet bruker informasjonskapsler til folgende formal:</p>
             <ul className='list-disc space-y-1 pl-6'>
               <li>sikring av korrekt funksjon av nettstedet,</li>
-              <li>
-                trafikkanalyse (Google Analytics 4, Ahrefs Web Analytics, Vercel
-                Analytics, Metricool),
-              </li>
+              <li>trafikkanalyse (Google Analytics 4, Vercel Analytics),</li>
               <li>markedsforingsformaal,</li>
               <li>
                 visning av interessebaserte annonser (Google AdSense /
@@ -210,8 +204,8 @@ export default function PrivacyPolicyPage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>hosting-/applikasjonsleverandor (f.eks. Vercel),</li>
               <li>
-                leverandorer av analyseverktoy (Google Ireland Ltd., Ahrefs Pte.
-                Ltd., Vercel Inc., Metricool S.L.),
+                leverandorer av analyseverktoy (Google Ireland Ltd., Vercel
+                Inc.),
               </li>
               <li>
                 leverandor av annonsetjenester (Google Ireland Ltd. - Google

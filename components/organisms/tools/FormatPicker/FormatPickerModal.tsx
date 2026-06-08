@@ -22,7 +22,7 @@ import {
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type { Locale } from '@/types/locale';
 
 type PickerSide = 'source' | 'target';

@@ -1,8 +1,12 @@
-import type { ConsentState } from '@/types/consent';
-export type { ConsentState } from '@/types/consent';
-
 const COOKIE_NAME = 'arteon_consent';
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 180;
+
+type ConsentState = {
+  v: number;
+  analytics: boolean;
+  ads: boolean;
+  updatedAt: string;
+};
 
 export function readConsent(): ConsentState | null {
   if (typeof document === 'undefined') return null;

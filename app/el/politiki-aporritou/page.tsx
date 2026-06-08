@@ -75,12 +75,8 @@ export default function PrivacyPolicyPage() {
                 cookies),
               </li>
               <li>
-                αναλυτικά δεδομένα από Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics και Vercel Speed Insights,
-              </li>
-              <li>
-                αναλυτικά δεδομένα από Metricool (στατιστικά επισκέψεων, πηγές
-                κίνησης),
+                αναλυτικά δεδομένα από Google Analytics 4, Vercel Analytics και
+                Vercel Speed Insights,
               </li>
               <li>
                 δεδομένα που συλλέγει το Google AdSense για προβολή διαφημίσεων
@@ -128,10 +124,7 @@ export default function PrivacyPolicyPage() {
             <p>Η ιστοσελίδα χρησιμοποιεί cookies για:</p>
             <ul className='list-disc space-y-1 pl-6'>
               <li>σωστή λειτουργία,</li>
-              <li>
-                ανάλυση κίνησης (Google Analytics 4, Ahrefs, Vercel Analytics,
-                Metricool),
-              </li>
+              <li>ανάλυση κίνησης (Google Analytics 4, Vercel Analytics),</li>
               <li>σκοπούς μάρκετινγκ,</li>
               <li>προβολή διαφημίσεων (Google AdSense / DoubleClick).</li>
             </ul>
@@ -198,10 +191,7 @@ export default function PrivacyPolicyPage() {
             <p>Τα δεδομένα μπορεί να κοινοποιηθούν σε:</p>
             <ul className='list-disc space-y-1 pl-6'>
               <li>πάροχο φιλοξενίας (π.χ. Vercel),</li>
-              <li>
-                παρόχους αναλυτικών (Google Ireland Ltd., Ahrefs Pte. Ltd.,
-                Vercel Inc., Metricool S.L.),
-              </li>
+              <li>παρόχους αναλυτικών (Google Ireland Ltd., Vercel Inc.),</li>
               <li>
                 πάροχο διαφημίσεων (Google Ireland Ltd. - Google AdSense),
               </li>

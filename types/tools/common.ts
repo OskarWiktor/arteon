@@ -120,8 +120,6 @@ export type ToolDefinition = {
   key: ToolItemKey;
   section: ToolsSectionKey;
   icon: IconType;
-  image: string;
-  images?: Partial<Record<Locale, string>>;
   desktopOnly: boolean;
   carouselOrder?: number;
   locales: Partial<Record<Locale, ToolLocaleText>>;
@@ -142,7 +140,6 @@ export type ToolSectionItem = {
   href: string;
   title: string;
   description: string;
-  image: string;
   icon?: IconType;
   desktopOnly?: boolean;
   carouselOrder?: number;

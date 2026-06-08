@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
