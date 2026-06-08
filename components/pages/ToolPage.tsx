@@ -17,6 +17,7 @@ import {
   getToolWebPageSchema,
 } from '@/lib/i18n/pages/toolMeta';
 import { getToolHref } from '@/lib/i18n/toolRegistry';
+import { getCarouselImages } from '@/lib/tools/carouselImages';
 import { getToolIcon } from '@/lib/tools/iconRegistry';
 import type { Locale, DesktopOnlyUi } from '@/types/locale';
 import type { ToolPageData, ToolContentBlock } from '@/types/tool-page';
@@ -99,6 +100,7 @@ function renderBlock(
   block: ToolContentBlock,
   idx: number,
   pageUrl: string,
+  carouselImages: Partial<Record<ToolItemKey, string>>,
 ): ReactNode {
   switch (block.type) {
     case 'gap':
@@ -197,7 +199,13 @@ function renderBlock(
       );
 
     case 'toolsCarousel':
-      return <ToolsCarousel key={`carousel-${idx}`} title={block.title} />;
+      return (
+        <ToolsCarousel
+          key={`carousel-${idx}`}
+          title={block.title}
+          images={carouselImages}
+        />
+      );
 
     case 'sectionBasic':
       return (
@@ -237,6 +245,7 @@ interface ToolPageProps {
 
 export default function ToolPage({ data, tool }: ToolPageProps) {
   const pageUrl = toAbsoluteUrl(data.metadata.path);
+  const carouselImages = getCarouselImages(data.locale as Locale);
   const isDesktopOnly = DESKTOP_ONLY_TOOLS.has(data.toolKey);
   const desktopOnlyT = DESKTOP_ONLY_UI[data.locale as Locale];
 
@@ -336,7 +345,7 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
               const insertRelated = !relatedInserted && block.type === 'faq';
               if (insertRelated) relatedInserted = true;
 
-              const node = renderBlock(block, idx, pageUrl);
+              const node = renderBlock(block, idx, pageUrl, carouselImages);
               const adNode = adPositions.has(idx) ? (
                 <div
                   key={`ad-after-${idx}`}

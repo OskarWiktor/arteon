@@ -80,12 +80,8 @@ export default function PolitiqueDeConfidentialitePage() {
                 informations sur l&apos;appareil, cookies),
               </li>
               <li>
-                données analytiques de Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics et Vercel Speed Insights,
-              </li>
-              <li>
-                données analytiques de Metricool (statistiques de visites,
-                sources de trafic),
+                données analytiques de Google Analytics 4, Vercel Analytics et
+                Vercel Speed Insights,
               </li>
               <li>
                 données collectées par Google AdSense pour l&apos;affichage de
@@ -140,10 +136,7 @@ export default function PolitiqueDeConfidentialitePage() {
             <p>Le site utilise des cookies aux fins suivantes&nbsp;:</p>
             <ul className='list-disc space-y-1 pl-6'>
               <li>assurer le bon fonctionnement du site,</li>
-              <li>
-                analyse du trafic (Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics, Metricool),
-              </li>
+              <li>analyse du trafic (Google Analytics 4, Vercel Analytics),</li>
               <li>fins marketing,</li>
               <li>
                 affichage de publicités basées sur les centres d&apos;intérêt
@@ -230,7 +223,7 @@ export default function PolitiqueDeConfidentialitePage() {
               </li>
               <li>
                 fournisseurs d&apos;outils d&apos;analyse (Google Ireland Ltd.,
-                Ahrefs Pte. Ltd., Vercel Inc., Metricool S.L.),
+                Vercel Inc.),
               </li>
               <li>
                 fournisseurs de services publicitaires (Google Ireland Ltd. -

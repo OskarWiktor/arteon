@@ -7,7 +7,7 @@ import SectionHeader from '@/components/molecules/SectionHeader';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type { ArticlePreview } from '@/types/article';
 import { getPrimaryCategorySlug } from '@/utils/blogCategory';
 

@@ -9,7 +9,8 @@ import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import { getToolsSections } from '@/lib/i18n/toolRegistry';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { noScrollbarClasses, focusRingClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
+import type { ToolItemKey } from '@/types/tools/common';
 
 const AUTO_PLAY_INTERVAL_MS = 6000;
 
@@ -17,6 +18,8 @@ type Props = {
   max?: number;
   title?: string;
   subtitle?: string;
+  /** Preview images keyed by tool key, sourced from each tool page's own data. */
+  images?: Partial<Record<ToolItemKey, string>>;
 };
 
 /**
@@ -31,7 +34,12 @@ type Props = {
  * @param subtitle - Optional subtitle for the section header
  * @returns The section element containing the carousel, or `null` when there are no tools to display
  */
-export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
+export default function ToolsCarousel({
+  max = 10,
+  title,
+  subtitle,
+  images,
+}: Props) {
   const locale = useLocale();
   const t = useDictionary().toolsCarousel;
   const toolsHref = useLocaleConfig().toolsIndexHref;
@@ -44,6 +52,10 @@ export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
     const all = toolsSections.flatMap(section => section.items);
     return all
       .sort((a, b) => (a.carouselOrder ?? 999) - (b.carouselOrder ?? 999))
+      .map(tool => ({ ...tool, image: images?.[tool.key] }))
+      .filter((tool): tool is typeof tool & { image: string } =>
+        Boolean(tool.image),
+      )
       .slice(0, max);
   })();
 

@@ -1,5 +1,5 @@
 import { focusRingClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 /**
  * Renders a keyboard-accessible "skip to content" link that targets the element with id "main-content".

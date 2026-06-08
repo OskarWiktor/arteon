@@ -1,25 +1,4 @@
 ﻿import 'server-only';
-
-/**
- * Blog Data Service
- *
- * ZASADY ZERO DOPISAŃ - ZERO NIEPRAWDY (docs/INSTRUCTIONS.md)
- * ----------------------------------------------------------
- * Wszystkie artykuły w blog.json MUSZĄ spełniać następujące wymagania:
- *
- * 1. ŹRÓDŁA: Każda liczba/statystyka musi mieć źródło (nazwa, rok, działający URL)
- * 2. PRAWO: Treści o cenach/promocjach zgodne z Omnibus (30 dni),
- *    treści o prywatności zgodne z RODO/GDPR
- * 3. PRZYKŁADY HIPOTETYCZNE: Muszą być oznaczone jako takie
- * 4. ZAKAZ DOPISYWANIA: Żadnych nieprawdziwych/niesprawdzonych twierdzeń
- *
- * Przed dodaniem nowego artykułu sprawdź checklistę w INSTRUCTIONS.md
- *
- * ARCHITEKTURA DANYCH:
- * - data/pl/blog/{cat}.json   - źródło prawdy, pełne artykuły per primaryCategory
- * - data/pl/blog/_index.json  - lekki indeks (~50 KB) z ArticlePreview[] (generowany przez scripts/split-blog.cjs)
- */
-
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import blogIndex from '@/data/pl/blog/_index.json';

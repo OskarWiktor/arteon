@@ -7,17 +7,14 @@ const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 });
 
-// All deployments go directly to production — no preview/staging environments.
-// Treat as production unless explicitly running local dev (NODE_ENV=development).
 const IS_PROD = process.env.NODE_ENV !== 'development';
-
 const cspDirectives = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${IS_PROD ? '' : " 'unsafe-eval'"} https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.adtrafficquality.google https://*.doubleclick.net https://fundingchoicesmessages.google.com https://fundingchoices.google.com https://analytics.ahrefs.com https://tracker.metricool.com https://va.vercel-scripts.com`,
+  `script-src 'self' 'unsafe-inline'${IS_PROD ? '' : " 'unsafe-eval'"} https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.adtrafficquality.google https://*.doubleclick.net https://fundingchoicesmessages.google.com https://fundingchoices.google.com https://va.vercel-scripts.com`,
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com https://*.google.com https://*.doubleclick.net https://*.googlesyndication.com https:",
   "font-src 'self' https://fonts.gstatic.com",
-  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.googlesyndication.com https://*.adtrafficquality.google https://*.doubleclick.net https://fundingchoicesmessages.google.com https://fundingchoices.google.com https://formspree.io https://analytics.ahrefs.com https://tracker.metricool.com https://vitals.vercel-insights.com https://va.vercel-scripts.com",
+  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.googlesyndication.com https://*.adtrafficquality.google https://*.doubleclick.net https://fundingchoicesmessages.google.com https://fundingchoices.google.com https://formspree.io https://vitals.vercel-insights.com https://va.vercel-scripts.com",
   'frame-src https://*.google.com https://*.doubleclick.net https://googleads.g.doubleclick.net https://*.googlesyndication.com https://*.adtrafficquality.google https://fundingchoicesmessages.google.com',
   "worker-src 'self' blob:",
   "frame-ancestors 'self' https://*.google.com https://*.googlesyndication.com https://*.doubleclick.net",
@@ -27,7 +24,6 @@ const cspDirectives = [
   'upgrade-insecure-requests',
 ].join('; ');
 
-// HSTS is set globally via vercel.json (CDN-level) — do not duplicate here.
 const securityHeaders = [
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
@@ -50,13 +46,9 @@ const nextConfig: NextConfig = {
   compiler: {
     removeConsole: IS_PROD ? { exclude: ['error', 'warn'] } : false,
   },
-  // Cache Components (Next.js 16.1.6 - top-level)
   cacheComponents: true,
-  // React Compiler — auto-memoization, removes need for most useMemo/useCallback/memo.
-  // Promoted out of experimental in Next 16; top-level option.
   reactCompiler: true,
   experimental: {
-    // Build performance optimizations (Next.js 16.1.6)
     optimizePackageImports: [
       'react-icons/ri',
       'react-icons/si',
@@ -69,16 +61,13 @@ const nextConfig: NextConfig = {
       'react-icons/hi2',
       'react-icons/lu',
       'react-icons/go',
-      // Client-side dependencies optimization
       'jspdf',
       'marked',
       'turndown',
       'qrcode',
     ],
-    // Optimize CSS
     optimizeCss: true,
   },
-  // Externalize native dependencies from server bundle
   serverExternalPackages: [
     'sharp',
     'pdfjs-dist',
@@ -93,8 +82,6 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000,
   },
   async headers() {
-    // Cache-Control for pages/tools is managed exclusively in vercel.json to avoid duplicate headers.
-    // Only static asset headers that vercel.json does not cover are defined here.
     const staticAssetHeaders = [
       {
         source: '/assets/:path*',
@@ -117,7 +104,6 @@ const nextConfig: NextConfig = {
       },
     ];
 
-    // Development headers - disable caching completely
     const devHeaders = [
       {
         source: '/:path*',
@@ -164,7 +150,6 @@ const nextConfig: NextConfig = {
       },
     ];
 
-    // Locale root pages — redirect to tools index (replaces permanentRedirect() stubs)
     const localeRootRedirects: Redirect[] = [
       { source: '/en', destination: '/en/tools', statusCode: 301 },
       { source: '/de', destination: '/de/werkzeuge', statusCode: 301 },
@@ -182,9 +167,6 @@ const nextConfig: NextConfig = {
       { source: '/fi', destination: '/fi/tyokalut', statusCode: 301 },
       { source: '/el', destination: '/el/ergaleia', statusCode: 301 },
     ];
-
-    // Canonical host redirect (HTTP→HTTPS, non-www→www, trailing slash)
-    // is handled by middleware.ts at the edge level in a single 301 hop.
 
     const sitemapRedirects: Redirect[] = [
       {

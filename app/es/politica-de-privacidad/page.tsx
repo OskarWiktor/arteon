@@ -80,12 +80,8 @@ export default function PoliticaDePrivacidadPage() {
                 información del dispositivo, cookies),
               </li>
               <li>
-                datos analíticos de Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics y Vercel Speed Insights,
-              </li>
-              <li>
-                datos analíticos de Metricool (estadísticas de visitas, fuentes
-                de tráfico),
+                datos analíticos de Google Analytics 4, Vercel Analytics y
+                Vercel Speed Insights,
               </li>
               <li>
                 datos recopilados por Google AdSense para mostrar anuncios
@@ -141,8 +137,7 @@ export default function PoliticaDePrivacidadPage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>garantizar el correcto funcionamiento del sitio web,</li>
               <li>
-                análisis de tráfico (Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics, Metricool),
+                análisis de tráfico (Google Analytics 4, Vercel Analytics),
               </li>
               <li>fines de marketing,</li>
               <li>
@@ -227,7 +222,7 @@ export default function PoliticaDePrivacidadPage() {
               <li>proveedores de alojamiento/aplicaciones (p. ej., Vercel),</li>
               <li>
                 proveedores de herramientas de análisis (Google Ireland Ltd.,
-                Ahrefs Pte. Ltd., Vercel Inc., Metricool S.L.),
+                Vercel Inc.),
               </li>
               <li>
                 proveedores de servicios publicitarios (Google Ireland Ltd. -

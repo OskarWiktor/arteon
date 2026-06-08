@@ -1,5 +1,7 @@
-import type { ConsentUpdate } from '@/types/consent';
-export type { ConsentUpdate } from '@/types/consent';
+interface ConsentUpdate {
+  analytics: boolean;
+  ads: boolean;
+}
 
 export function updateGtagConsent({ analytics, ads }: ConsentUpdate) {
   if (typeof window === 'undefined') return;

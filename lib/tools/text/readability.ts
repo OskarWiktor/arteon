@@ -365,8 +365,14 @@ export interface KeywordDensityEntry {
 }
 
 /**
- * Calculate keyword density for all words in the text.
- * Returns top N entries sorted by frequency.
+ * Computes the most frequent keywords in the given text and their percentage density.
+ *
+ * Tokenizes and normalizes words, excludes tokens of length two or less, then returns up to `topN` entries
+ * sorted by frequency.
+ *
+ * @param text - Input text to analyze
+ * @param topN - Maximum number of entries to return (default: 10)
+ * @returns An array of keyword entries containing `word`, `count`, and `density` (percentage with one decimal). Returns an empty array if the input has no valid words.
  */
 export function calculateKeywordDensity(
   text: string,

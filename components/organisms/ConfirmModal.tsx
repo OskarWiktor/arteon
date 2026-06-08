@@ -8,7 +8,7 @@ import {
   modalBackdropClasses,
   modalContentClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import Button from '../atoms/buttons/Button';
 
 type ConfirmModalProps = {

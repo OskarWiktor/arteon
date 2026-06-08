@@ -74,12 +74,8 @@ export default function PrivacyPolicyPage() {
                 urządzeniu, pliki cookie),
               </li>
               <li>
-                dane analityczne z Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics i Vercel Speed Insights,
-              </li>
-              <li>
-                dane analityczne z Metricool (statystyki odwiedzin, źródła
-                ruchu),
+                dane analityczne z Google Analytics 4, Vercel Analytics i Vercel
+                Speed Insights,
               </li>
               <li>
                 dane zbierane przez Google AdSense w celu wyświetlania reklam
@@ -133,10 +129,7 @@ export default function PrivacyPolicyPage() {
             <p>Strona wykorzystuje pliki cookie w celu:</p>
             <ul className='list-disc space-y-1 pl-6'>
               <li>zapewnienia prawidłowego działania serwisu,</li>
-              <li>
-                analizy ruchu (Google Analytics 4, Ahrefs Web Analytics, Vercel
-                Analytics, Metricool),
-              </li>
+              <li>analizy ruchu (Google Analytics 4, Vercel Analytics),</li>
               <li>celów marketingowych,</li>
               <li>
                 wyświetlania reklam dopasowanych do zainteresowań użytkowników
@@ -219,8 +212,8 @@ export default function PrivacyPolicyPage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>dostawcy hostingu/aplikacji (np. Vercel),</li>
               <li>
-                dostawcy narzędzi analitycznych (Google Ireland Ltd., Ahrefs
-                Pte. Ltd., Vercel Inc., Metricool S.L.),
+                dostawcy narzędzi analitycznych (Google Ireland Ltd., Vercel
+                Inc.),
               </li>
               <li>
                 dostawcy usług reklamowych (Google Ireland Ltd. - Google

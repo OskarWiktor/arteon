@@ -50,7 +50,7 @@ import ShareBlock from '@/components/organisms/ShareBlock';
 import TableOfContents from '@/components/organisms/TableOfContent';
 import projectsData from '@/data/pl/projects.json';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type { Project, ContentBlock } from '@/types/project';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 

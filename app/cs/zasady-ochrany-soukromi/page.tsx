@@ -75,12 +75,8 @@ export default function PrivacyPolicyPage() {
                 o zarizeni, soubory cookie),
               </li>
               <li>
-                analyticke udaje z Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics a Vercel Speed Insights,
-              </li>
-              <li>
-                analyticke udaje z Metricool (statistiky navstev, zdroje
-                provozu),
+                analyticke udaje z Google Analytics 4, Vercel Analytics a Vercel
+                Speed Insights,
               </li>
               <li>
                 udaje shromazdovane sluzbou Google AdSense za ucelem zobrazeni
@@ -133,10 +129,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul className='list-disc space-y-1 pl-6'>
               <li>zajisteni spravneho fungovani webovych stranek,</li>
-              <li>
-                analyza provozu (Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics, Metricool),
-              </li>
+              <li>analyza provozu (Google Analytics 4, Vercel Analytics),</li>
               <li>marketingove ucely,</li>
               <li>
                 zobrazeni reklam na zaklade zajmu (Google AdSense /
@@ -211,8 +204,8 @@ export default function PrivacyPolicyPage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>poskytovatel hostingu/aplikaci (napr. Vercel),</li>
               <li>
-                poskytovatele analytickych nastroju (Google Ireland Ltd., Ahrefs
-                Pte. Ltd., Vercel Inc., Metricool S.L.),
+                poskytovatele analytickych nastroju (Google Ireland Ltd., Vercel
+                Inc.),
               </li>
               <li>
                 poskytovatel reklamnich sluzeb (Google Ireland Ltd. -- Google

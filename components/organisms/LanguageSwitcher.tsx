@@ -30,7 +30,7 @@ import {
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import InlineLink from '../atoms/InlineLink';
 type AlternateLink = {
   locale: Locale;

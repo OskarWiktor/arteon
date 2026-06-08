@@ -22,7 +22,7 @@ import {
   findArticleBySlug,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type { Article } from '@/types/article';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 

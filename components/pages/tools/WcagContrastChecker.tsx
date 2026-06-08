@@ -20,7 +20,7 @@ import {
   flexCenterClasses,
   largeIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 const DEFAULT_FOREGROUND = rgbToHex({ r: 0, g: 0, b: 0 });
 const DEFAULT_BACKGROUND = rgbToHex({ r: 255, g: 255, b: 255 });

@@ -25,7 +25,7 @@ import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {

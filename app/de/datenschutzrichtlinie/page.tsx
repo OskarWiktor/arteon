@@ -80,12 +80,8 @@ export default function DatenschutzrichtliniePage() {
                 Geräteinformationen, Cookies),
               </li>
               <li>
-                Analysedaten von Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics und Vercel Speed Insights,
-              </li>
-              <li>
-                Analysedaten von Metricool (Besuchsstatistiken,
-                Traffic-Quellen),
+                Analysedaten von Google Analytics 4, Vercel Analytics und Vercel
+                Speed Insights,
               </li>
               <li>
                 von Google AdSense erhobene Daten zur Anzeigenausspielung
@@ -140,10 +136,7 @@ export default function DatenschutzrichtliniePage() {
             <p>Die Website verwendet Cookies zu folgenden Zwecken:</p>
             <ul className='list-disc space-y-1 pl-6'>
               <li>Sicherstellung der ordnungsgemäßen Funktion der Website,</li>
-              <li>
-                Traffic-Analyse (Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics, Metricool),
-              </li>
+              <li>Traffic-Analyse (Google Analytics 4, Vercel Analytics),</li>
               <li>Marketingzwecke,</li>
               <li>
                 Anzeige interessenbasierter Werbung (Google AdSense /
@@ -226,8 +219,7 @@ export default function DatenschutzrichtliniePage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>Hosting-/Anwendungsanbieter (z.{'\u00a0'}B. Vercel),</li>
               <li>
-                Anbieter von Analysetools (Google Ireland Ltd., Ahrefs Pte.
-                Ltd., Vercel Inc., Metricool S.L.),
+                Anbieter von Analysetools (Google Ireland Ltd., Vercel Inc.),
               </li>
               <li>
                 Anbieter von Werbediensten (Google Ireland Ltd. - Google

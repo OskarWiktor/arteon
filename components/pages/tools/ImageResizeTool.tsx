@@ -19,7 +19,6 @@ import FileDropzone from '@/components/molecules/FileDropzone';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import Card from '@/components/organisms/Card';
 import CropPreview from '@/components/organisms/tools/ImageResizeTool/CropPreview';
 import { useCropDrag } from '@/hooks/useCropDrag';
@@ -32,7 +31,7 @@ import {
   flexCenterClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type {
   ActiveTool,
   GridColor,
@@ -45,6 +44,12 @@ import { getFileFormatLabel } from '@/utils/fileFormat';
 import { formatBytes } from '@/utils/formatBytes';
 import { revokeObjectUrl } from '@/utils/objectUrl';
 
+/**
+ * Get localized image size presets grouped by category.
+ *
+ * @param t - Localization object providing preset labels
+ * @returns An object with `social` and `web` arrays of ordered preset objects. Each preset contains `key` (string), `label` (localized string), `width` (pixels), and `height` (pixels)
+ */
 function getImagePresets(t: UiLocale) {
   return {
     social: [
@@ -502,13 +507,10 @@ export default function ImageResizeTool() {
               accept='image/*'
               dropEffect='copy'
               onFiles={files => handleFileChange(files?.[0] ?? null)}
-            >
-              <ToolUploadContent
-                dragLabel={t.dragDropImage}
-                clickLabel={t.clickToSelect}
-                formatsLabel={t.supportedFormats}
-              />
-            </FileDropzone>
+              dragLabel={t.dragDropImage}
+              clickLabel={t.clickToSelect}
+              formatsLabel={t.supportedFormats}
+            />
             {state.file && (
               <p className='tool-meta mt-2'>
                 {t.currentFile} <strong>{state.file.name}</strong>

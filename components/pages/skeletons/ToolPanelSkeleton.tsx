@@ -4,7 +4,7 @@ import {
   flexCenterClasses,
   largeIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import Shimmer from '../../atoms/skeletons/Shimmer';
 
 export type ToolPanelVariant =

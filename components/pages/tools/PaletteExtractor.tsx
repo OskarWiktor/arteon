@@ -6,7 +6,6 @@ import ToolInfo from '@/components/atoms/ToolInfo';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import Card from '@/components/organisms/Card';
 import { ui } from '@/lib/i18n/tools/paletteExtractor';
 import { useLocale } from '@/lib/LocaleContext';
@@ -20,7 +19,7 @@ import {
   SUPPORTED_IMAGE_UPLOAD_TYPES,
 } from '@/lib/tools/image/uploadTypes';
 import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type { ToolStatus } from '@/types/tools/common';
 import { getFileFormatLabel } from '@/utils/fileFormat';
 import { formatBytes } from '@/utils/formatBytes';
@@ -127,13 +126,10 @@ export default function PaletteExtractor() {
             accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')}
             disabled={isProcessing}
             onFiles={handleFiles}
-          >
-            <ToolUploadContent
-              dragLabel={t.dragDropImage}
-              clickLabel={t.clickToSelect}
-              formatsLabel={t.supportedFormats}
-            />
-          </FileDropzone>
+            dragLabel={t.dragDropImage}
+            clickLabel={t.clickToSelect}
+            formatsLabel={t.supportedFormats}
+          />
 
           {file && (
             <p className='tool-meta mt-2 truncate'>

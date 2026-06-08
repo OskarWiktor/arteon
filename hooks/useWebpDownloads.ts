@@ -5,8 +5,11 @@ import { getWebpFileName } from '@/lib/tools/image/webp';
 import type { WebpQueueItem } from '@/lib/tools/image/webpQueue';
 import { buildWebpConversionReportCsv } from '@/lib/tools/image/webpReport';
 import { downloadBlob } from '@/utils/download';
-import { sleep } from '@/utils/sleep';
 import { createZipBlob, type ZipFileInput } from '@/utils/zip';
+
+function sleep(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 type UseWebpDownloadsOptions = {
   files: WebpQueueItem[];

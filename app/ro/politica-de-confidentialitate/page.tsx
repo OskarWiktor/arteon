@@ -79,12 +79,8 @@ export default function PoliticaDeConfidentialitatePage() {
                 dispozitiv, cookie-uri),
               </li>
               <li>
-                date analitice de la Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics și Vercel Speed Insights,
-              </li>
-              <li>
-                date analitice de la Metricool (statistici de vizite, surse de
-                trafic),
+                date analitice de la Google Analytics 4, Vercel Analytics și
+                Vercel Speed Insights,
               </li>
               <li>
                 date colectate de Google AdSense în scopul afișării reclamelor
@@ -141,8 +137,7 @@ export default function PoliticaDeConfidentialitatePage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>asigurarea funcționării corecte a site-ului web,</li>
               <li>
-                analiza traficului (Google Analytics 4, Ahrefs Web Analytics,
-                Vercel Analytics, Metricool),
+                analiza traficului (Google Analytics 4, Vercel Analytics),
               </li>
               <li>scopuri de marketing,</li>
               <li>
@@ -226,8 +221,8 @@ export default function PoliticaDeConfidentialitatePage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>furnizori de hosting/aplicații (de ex. Vercel),</li>
               <li>
-                furnizori de instrumente analitice (Google Ireland Ltd., Ahrefs
-                Pte. Ltd., Vercel Inc., Metricool S.L.),
+                furnizori de instrumente analitice (Google Ireland Ltd., Vercel
+                Inc.),
               </li>
               <li>
                 furnizori de servicii publicitare (Google Ireland Ltd. - Google

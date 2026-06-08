@@ -7,12 +7,11 @@ import ToolAlert from '@/components/atoms/ToolAlert';
 import FileDropzone from '@/components/molecules/FileDropzone';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useDictionary } from '@/lib/LocaleContext';
 import { FORMAT_LABELS } from '@/lib/tools/image/imageToPdf';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type {
   ImageFormat,
   ImageToPdfConverterProps,
@@ -315,19 +314,16 @@ export default function ImageToPdfConverter({
                 accept={acceptMime}
                 multiple
                 onFiles={handleAddFiles}
-              >
-                <ToolUploadContent
-                  dragLabel={
-                    t.dragDrop?.replace('{{format}}', sourceLabel) ??
-                    `Drop ${sourceLabel} files here`
-                  }
-                  clickLabel={t.clickToSelect}
-                  formatsLabel={
-                    t.supported?.replace('{{format}}', sourceLabel) ??
-                    `Supported: ${sourceLabel}`
-                  }
-                />
-              </FileDropzone>
+                dragLabel={
+                  t.dragDrop?.replace('{{format}}', sourceLabel) ??
+                  `Drop ${sourceLabel} files here`
+                }
+                clickLabel={t.clickToSelect}
+                formatsLabel={
+                  t.supported?.replace('{{format}}', sourceLabel) ??
+                  `Supported: ${sourceLabel}`
+                }
+              />
               {globalError && (
                 <ToolAlert variant='error' className='mt-2'>
                   {globalError}

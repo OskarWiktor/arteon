@@ -75,12 +75,8 @@ export default function PrivacyPolicyPage() {
                 evästeet),
               </li>
               <li>
-                analytiikkatiedot Google Analytics 4:stä, Ahrefs Web
-                Analyticsistä, Vercel Analyticsistä ja Vercel Speed
-                Insightsistä,
-              </li>
-              <li>
-                Metricool-analytiikkatiedot (kävijätilastot, liikennelähteet),
+                analytiikkatiedot Google Analytics 4:stä, Vercel Analyticsistä
+                ja Vercel Speed Insightsistä,
               </li>
               <li>
                 Google AdSensen keräämät tiedot mainosten näyttämiseksi
@@ -136,8 +132,7 @@ export default function PrivacyPolicyPage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>verkkosivuston asianmukaisen toiminnan varmistaminen,</li>
               <li>
-                liikenteen analysointi (Google Analytics 4, Ahrefs Web
-                Analytics, Vercel Analytics, Metricool),
+                liikenteen analysointi (Google Analytics 4, Vercel Analytics),
               </li>
               <li>markkinointitarkoitukset,</li>
               <li>
@@ -215,8 +210,8 @@ export default function PrivacyPolicyPage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>hosting-/sovelluspalveluntarjoaja (esim. Vercel),</li>
               <li>
-                analytiikkatyökalujen tarjoajat (Google Ireland Ltd., Ahrefs
-                Pte. Ltd., Vercel Inc., Metricool S.L.),
+                analytiikkatyökalujen tarjoajat (Google Ireland Ltd., Vercel
+                Inc.),
               </li>
               <li>
                 mainospalveluntarjoaja (Google Ireland Ltd. - Google AdSense),

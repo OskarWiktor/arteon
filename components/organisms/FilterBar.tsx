@@ -19,7 +19,7 @@ import {
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import ButtonLink from '../atoms/buttons/ButtonLink';
 
 type Cat = { label: string; slug: string; count: number };

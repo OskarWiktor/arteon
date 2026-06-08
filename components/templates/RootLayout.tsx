@@ -6,7 +6,7 @@ import { Suspense } from 'react';
 import FocusManager from '@/components/atoms/FocusManager';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import RouteAnnouncer from '@/components/atoms/RouteAnnouncer';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 import '@/app/globals.css';

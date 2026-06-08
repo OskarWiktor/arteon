@@ -1,5 +1,4 @@
 import SkipToContent from '@/components/atoms/SkipToContent';
-import ConsentListener from '@/components/organisms/ConsentListener';
 import Footer from '@/components/organisms/Footer';
 import NavigationShell from '@/components/organisms/navigation/NavigationShell';
 import {
@@ -27,7 +26,6 @@ export default async function LocaleLayout({
 
   return (
     <LocaleProvider value={locale} config={config} dict={clientDict}>
-      <ConsentListener />
       <SkipToContent label={fullDict.skipToContent} />
 
       <NavigationShell />

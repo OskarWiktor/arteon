@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useId, type ReactNode } from 'react';
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
 import { flexCenterClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import SectionHeader from '../../molecules/SectionHeader';
 import Card from '../Card';
 

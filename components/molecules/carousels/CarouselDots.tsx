@@ -1,7 +1,7 @@
 'use client';
 
 import { focusRingClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
 type CarouselDotsProps = {
   isScrollable: boolean;

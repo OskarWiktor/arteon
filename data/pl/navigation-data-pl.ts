@@ -282,8 +282,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Edytor zdjęć',
         description:
           'Przygotuj idealny kadr pod media społecznościowe lub stronę WWW. Wybierz gotowy format lub wpisz własne wymiary.',
-        image:
-          '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
         icon: RiCropLine,
       },
       {
@@ -292,7 +290,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Generator favicon',
         description:
           'Z jednego obrazu wygeneruj favicon.ico oraz ikony PNG zgodne z wymaganiami przeglądarek i Lighthouse.',
-        image: '/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp',
         icon: RiAppsLine,
       },
     ],
@@ -308,8 +305,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Licznik meta title i description',
         description:
           'Sprawdź liczbę znaków i podgląd wyniku w Google. Uniknij uciętych tytułów i opisów w wynikach wyszukiwania.',
-        image:
-          '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
         icon: RiFileTextLine,
       },
       {
@@ -318,7 +313,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Licznik słów i znaków',
         description:
           'Sprawdź długość tekstu i oceń, czy jest odpowiednia dla strony głównej, opisu usługi, artykułu czy opisu produktu.',
-        image: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
         icon: RiArticleLine,
       },
     ],
@@ -334,7 +328,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Generator stopki mailowej',
         description:
           'Zbuduj profesjonalny podpis e-mail w kilka minut. Skopiuj gotowy kod HTML do Gmaila lub Outlooka.',
-        image: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
         icon: RiMailLine,
       },
     ],
@@ -350,7 +343,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Kontrast i czytelność kolorów',
         description:
           'Sprawdź czy kolory tekstu i tła są czytelne. Narzędzie oblicza kontrast według WCAG i pomoże dobrać odpowiedni kolor.',
-        image: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
         icon: RiContrast2Line,
       },
       {
@@ -359,7 +351,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Ekstraktor kolorów z obrazu',
         description:
           'Wgraj zdjęcie lub logo, a narzędzie wyciągnie dominujące kolory. Skopiuj kody wygenerowanych kolorów jednym kliknięciem.',
-        image: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
         icon: RiPantoneLine,
       },
       {
@@ -368,7 +359,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Generator palet kolorów',
         description:
           'Wybierz jeden kolor i wygeneruj 9 palet kolorów: monochromatyczną, komplementarną, triadyczną i inne.',
-        image: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
         icon: RiPaletteLine,
       },
     ],
@@ -384,7 +374,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Darmowy generator kodów QR',
         description:
           'Stwórz kod QR do strony, wizytówki vCard, menu lub ulotki. Eksport PNG i SVG, bez logowania, bez limitu.',
-        image: '/assets/tools/narzedzia-generator-kodu-qr.webp',
         icon: RiQrCodeLine,
       },
     ],
@@ -400,8 +389,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Konwerter JPG na WebP',
         description:
           'Zamień zdjęcia JPG na lekki WebP. Zmniejsz wagę obrazów nawet o 35%.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -410,8 +397,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Konwerter PNG na WebP',
         description:
           'Zamień grafiki PNG na WebP. Mniejsze pliki przy zachowaniu przezroczystości.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -420,8 +405,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Konwerter WebP na JPG',
         description:
           'Zamień pliki WebP na JPG. Kompatybilność z każdym programem i platformą.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -430,8 +413,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Konwerter WebP na PNG',
         description:
           'Zamień pliki WebP na bezstratny PNG. Konwersja lokalna, bez wysyłania na serwer.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -440,8 +421,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Konwerter PNG na JPG',
         description:
           'Zamień pliki PNG na JPG. Konwersja w przeglądarce, bez limitu plików i rejestracji.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -450,8 +429,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Konwerter JPG na PNG',
         description:
           'Zamień pliki JPG na bezstratny PNG. Konwersja w przeglądarce, bez limitu.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -459,8 +436,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-svg-na-png',
         title: 'Konwerter SVG na PNG',
         description: 'Zamień grafikę wektorową SVG na rastrowy PNG.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -468,8 +443,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-bmp-na-jpg',
         title: 'Konwerter BMP na JPG',
         description: 'Zamień nieskompresowane pliki BMP na lekki JPG.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -478,8 +451,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Konwerter JPG na AVIF',
         description:
           'Zamień zdjęcia JPG na nowoczesny AVIF. Kompresja nawet 50% lepsza niż JPG.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -488,8 +459,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Konwerter JPG na PDF',
         description:
           'Zamień zdjęcia JPG na PDF. Połącz wiele obrazów w jeden dokument.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -497,8 +466,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-png-na-pdf',
         title: 'Konwerter PNG na PDF',
         description: 'Zamień grafiki PNG na PDF z zachowaniem jakości.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -506,8 +473,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-webp-na-pdf',
         title: 'Konwerter WebP na PDF',
         description: 'Zamień obrazy WebP na PDF. Konwersja w przeglądarce.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -515,8 +480,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-pdf-na-jpg',
         title: 'Konwerter PDF na JPG',
         description: 'Zamień strony PDF na obrazy JPG.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -524,8 +487,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-pdf-na-png',
         title: 'Konwerter PDF na PNG',
         description: 'Zamień strony PDF na obrazy PNG w wysokiej jakości.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -533,8 +494,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-pdf-na-webp',
         title: 'Konwerter PDF na WebP',
         description: 'Zamień strony PDF na lekkie obrazy WebP.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -542,8 +501,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-obraz-na-base64',
         title: 'Konwerter obraz na Base64',
         description: 'Zakoduj obraz do formatu Base64 do CSS lub HTML.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
       {
@@ -551,8 +508,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-base64-na-obraz',
         title: 'Konwerter Base64 na obraz',
         description: 'Odkoduj ciąg Base64 na obraz z podglądem.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiLoopLeftLine,
       },
     ],
@@ -567,8 +522,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-csv-na-json',
         title: 'Konwerter CSV na JSON',
         description: 'Zamień plik CSV na poprawny JSON z formatowaniem.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiFileTextLine,
       },
       {
@@ -576,8 +529,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-json-na-csv',
         title: 'Konwerter JSON na CSV',
         description: 'Zamień dane JSON na plik CSV.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiFileTextLine,
       },
       {
@@ -585,8 +536,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-xml-na-json',
         title: 'Konwerter XML na JSON',
         description: 'Zamień dane XML na JSON z walidacją.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiFileTextLine,
       },
       {
@@ -594,8 +543,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-json-na-xml',
         title: 'Konwerter JSON na XML',
         description: 'Zamień dane JSON na sformatowany XML.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiFileTextLine,
       },
       {
@@ -603,8 +550,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-yaml-na-json',
         title: 'Konwerter YAML na JSON',
         description: 'Zamień konfigurację YAML na JSON.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiFileTextLine,
       },
       {
@@ -612,8 +557,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-json-na-yaml',
         title: 'Konwerter JSON na YAML',
         description: 'Zamień dane JSON na czytelny YAML.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiFileTextLine,
       },
       {
@@ -621,8 +564,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-markdown-na-html',
         title: 'Konwerter Markdown na HTML',
         description: 'Zamień tekst Markdown na czysty HTML.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiFileTextLine,
       },
       {
@@ -630,8 +571,6 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         href: '/narzedzia/konwerter-html-na-markdown',
         title: 'Konwerter HTML na Markdown',
         description: 'Zamień kod HTML na czytelny Markdown.',
-        image:
-          '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
         icon: RiFileTextLine,
       },
     ],

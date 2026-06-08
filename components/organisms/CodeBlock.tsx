@@ -1,5 +1,5 @@
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import ButtonCopy from '../atoms/buttons/ButtonCopy';
 
 type CodeBlockProps = {

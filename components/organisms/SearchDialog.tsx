@@ -15,7 +15,7 @@ import {
   modalContentClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import Input from '../atoms/form/Input';
 import InlineLink from '../atoms/InlineLink';
 

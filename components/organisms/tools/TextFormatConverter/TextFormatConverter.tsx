@@ -10,7 +10,7 @@ import { useDictionary } from '@/lib/LocaleContext';
 import type { UniversalFormat } from '@/lib/tools/formats';
 import { convertText } from '@/lib/tools/text/convert';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type { TextFormatConverterProps } from '@/types/tools/text-format-converter';
 import Card from '../../Card';
 

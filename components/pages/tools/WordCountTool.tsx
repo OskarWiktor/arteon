@@ -30,8 +30,19 @@ import {
   sortLinesDesc,
 } from '@/lib/tools/text/wordCount';
 import { smallIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 
+/**
+ * Render the word count tool UI that analyzes editable text, displays statistics and readability,
+ * provides copy/clear actions, and exposes a toolbar of locale-aware text transformation actions.
+ *
+ * The component tracks editable `text` state, computes `metrics` via `analyzeText(text, locale)`,
+ * and derives readability label/color. Toolbar actions transform the current text (case changes,
+ * whitespace/line operations, sorting, deduplication). Copy and clear controls are disabled when
+ * the input is empty; toolbar buttons are disabled when there is no text.
+ *
+ * @returns A JSX element rendering the complete word count tool interface.
+ */
 export default function WordCountTool() {
   const locale = useLocale();
   const t = ui[locale];

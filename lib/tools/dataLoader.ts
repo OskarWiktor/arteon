@@ -50,3 +50,17 @@ export function getToolDataBySlug(
   const map = getSlugMap(locale);
   return map[slug]?.data ?? null;
 }
+
+/**
+ * Build a `toolKey → ogImage` map for a locale, sourced from each tool's page data.
+ * Reuses the per-locale slug map cache, so it adds no extra file reads.
+ */
+export function getToolImagesByKey(locale: string): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const { data } of Object.values(getSlugMap(locale))) {
+    if (data.toolKey && data.metadata.ogImage) {
+      out[data.toolKey] = data.metadata.ogImage;
+    }
+  }
+  return out;
+}

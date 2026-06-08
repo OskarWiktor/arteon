@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { flexCenterClasses, normalIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import Wrapper from '../../atoms/Wrapper';
 
 interface CarouselSlide {

@@ -5,8 +5,14 @@ import type { Locale } from '@/types/locale';
 // ---------------------------------------------------------------------------
 
 /**
- * Count syllables in a single word using language-specific rules.
- * Falls back to a generic vowel-group heuristic for unsupported languages.
+ * Determine the number of syllables in a single word using locale-specific heuristics.
+ *
+ * The input word is normalized and non-letter characters are removed; returns `0` if no letters remain.
+ * For supported locales a language-specific heuristic is applied, otherwise a generic vowel-group heuristic is used.
+ *
+ * @param word - The input word to analyze
+ * @param locale - Locale code selecting the language rules (default: `'en'`)
+ * @returns The number of syllables in `word`; `0` if the normalized word contains no letters
  */
 export function countSyllablesInWord(
   word: string,

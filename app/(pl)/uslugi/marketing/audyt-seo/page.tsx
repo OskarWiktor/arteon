@@ -25,7 +25,7 @@ import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
@@ -49,15 +49,7 @@ export const metadata = {
         height: 630,
       },
     ],
-    //images: [{ url: `${siteUrl}/assets/og/audyt-seo.webp`, width: 1200, height: 630, alt: 'Audyt SEO - Arteon' }],
   },
-  //twitter: {
-  //  card: 'summary_large_image',
-  //  title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
-  //  description:
-  //    'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
-  //  images: [`${siteUrl}/assets/og/audyt-seo.webp`],
-  //},
 } as const;
 
 function ServiceSchema() {

@@ -8,7 +8,6 @@ import FileDropzone from '@/components/molecules/FileDropzone';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
-import ToolUploadContent from '@/components/molecules/tools/ToolUploadContent';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useConversionQueue } from '@/hooks/useConversionQueue';
 import { useDictionary } from '@/lib/LocaleContext';
@@ -18,12 +17,19 @@ import {
   hasQualitySlider,
 } from '@/lib/tools/image/imageFormatConverter';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type { ImageFormatConverterProps } from '@/types/tools/image-format-converter';
 import { downloadBlob } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
 import Card from '../../Card';
 
+/**
+ * Replace all `{{key}}` placeholders in a string with corresponding values.
+ *
+ * @param str - Template string containing placeholders in the form `{{key}}`
+ * @param vars - Mapping from placeholder keys (without braces) to replacement strings
+ * @returns The input string with every occurrence of each `{{key}}` replaced by `vars[key]`
+ */
 function tpl(str: string, vars: Record<string, string>): string {
   return Object.entries(vars).reduce(
     (s, [k, v]) => s.replace(new RegExp(`\\{\\{${k}\\}\\}`, 'g'), v),
@@ -178,13 +184,10 @@ export default function ImageFormatConverter({
                 accept={acceptMime}
                 multiple
                 onFiles={handleAddFiles}
-              >
-                <ToolUploadContent
-                  dragLabel={tpl(t.dragDrop, { format: sourceLabel })}
-                  clickLabel={t.clickToSelect}
-                  formatsLabel={tpl(t.supported, { format: sourceLabel })}
-                />
-              </FileDropzone>
+                dragLabel={tpl(t.dragDrop, { format: sourceLabel })}
+                clickLabel={t.clickToSelect}
+                formatsLabel={tpl(t.supported, { format: sourceLabel })}
+              />
               {globalError && (
                 <ToolAlert variant='error' className='mt-2'>
                   {globalError}

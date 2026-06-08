@@ -206,26 +206,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'jpgToWebp',
     section: 'obrazy',
     icon: RiImageEditLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-    },
     desktopOnly: true,
     // DEPRECATED: replaced by jpgToWebpSimple + pngToWebpSimple.
     // Locale entries removed - old pages still build and are 301-redirected by middleware.
@@ -236,26 +216,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     section: 'obrazy',
     icon: RiCropLine,
     carouselOrder: 2,
-    image:
-      '/assets/tools/free-image-editor-crop-resize-and-convert/online-image-editor-en.webp',
-    images: {
-      pl: '/assets/tools/free-image-editor-crop-resize-and-convert/edytor-zdjec-online-pl.webp',
-      en: '/assets/tools/free-image-editor-crop-resize-and-convert/online-image-editor-en.webp',
-      cs: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-obrazku-cs.webp',
-      da: '/assets/tools/free-image-editor-crop-resize-and-convert/billedrediger-da.webp',
-      de: '/assets/tools/free-image-editor-crop-resize-and-convert/online-bildeditor-de.webp',
-      el: '/assets/tools/free-image-editor-crop-resize-and-convert/epexergasia-eikonas-el.webp',
-      es: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagenes-en-linea-es.webp',
-      fi: '/assets/tools/free-image-editor-crop-resize-and-convert/kuvaeditori-fi.webp',
-      fr: '/assets/tools/free-image-editor-crop-resize-and-convert/editeur-d-images-en-ligne-fr.webp',
-      hu: '/assets/tools/free-image-editor-crop-resize-and-convert/kepszerkeszto-hu.webp',
-      it: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-di-immagini-online-it.webp',
-      ro: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagini-ro.webp',
-      nl: '/assets/tools/free-image-editor-crop-resize-and-convert/afbeeldingeneditor-nl.webp',
-      no: '/assets/tools/free-image-editor-crop-resize-and-convert/bilderedigerer-no.webp',
-      pt: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagens-online-pt.webp',
-      sv: '/assets/tools/free-image-editor-crop-resize-and-convert/bildredigerare-sv.webp',
-    },
     desktopOnly: true,
     locales: {
       pl: {
@@ -361,25 +321,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     section: 'obrazy',
     icon: RiAppsLine,
     carouselOrder: 5,
-    image: '/assets/tools/favicon-generator/free-favicon-generator-en.webp',
-    images: {
-      pl: '/assets/tools/favicon-generator/darmowy-generator-favicon-ico-pl.webp',
-      en: '/assets/tools/favicon-generator/free-favicon-generator-en.webp',
-      cs: '/assets/tools/favicon-generator/generator-favicon-zdarma-cs.webp',
-      da: '/assets/tools/favicon-generator/gratis-favicon-generator-da.webp',
-      de: '/assets/tools/favicon-generator/kostenloser-favicon-generator-de.webp',
-      el: '/assets/tools/favicon-generator/dorean-dimiourgia-favicon-el.webp',
-      es: '/assets/tools/favicon-generator/generador-de-favicon-gratuito-es.webp',
-      fi: '/assets/tools/favicon-generator/ilmainen-favicon-generaattori-fi.webp',
-      fr: '/assets/tools/favicon-generator/generateur-de-favicon-gratuit-fr.webp',
-      hu: '/assets/tools/favicon-generator/ingyenes-favicon-generator-hu.webp',
-      it: '/assets/tools/favicon-generator/generatore-di-favicon-gratuito-it.webp',
-      ro: '/assets/tools/favicon-generator/generator-favicon-gratuit-ro.webp',
-      nl: '/assets/tools/favicon-generator/gratis-favicon-generator-nl.webp',
-      no: '/assets/tools/favicon-generator/gratis-favicon-generator-no.webp',
-      pt: '/assets/tools/favicon-generator/gerador-de-favicon-gratuito-pt.webp',
-      sv: '/assets/tools/favicon-generator/gratis-favicon-generator-sv.webp',
-    },
     desktopOnly: true,
     locales: {
       pl: {
@@ -485,26 +426,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     section: 'seo',
     icon: RiFileTextLine,
     carouselOrder: 3,
-    image:
-      '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-title-description-length-checker-en.webp',
-    images: {
-      pl: '/assets/tools/free-meta-title-and-description-checker-pixel-width/licznik-dlugosci-meta-title-i-description-pl.webp',
-      en: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-title-description-length-checker-en.webp',
-      cs: '/assets/tools/free-meta-title-and-description-checker-pixel-width/kontrola-meta-titulku-a-popisu-cs.webp',
-      da: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-og-beskrivelse-kontrol-da.webp',
-      de: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschreibung-laengenpruefer-de.webp',
-      el: '/assets/tools/free-meta-title-and-description-checker-pixel-width/elegkhos-meta-titlou-kai-perigrafis-el.webp',
-      es: '/assets/tools/free-meta-title-and-description-checker-pixel-width/verificador-de-meta-titulo-y-descripcion-es.webp',
-      fi: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-otsikko-ja-kuvaus-tarkistus-fi.webp',
-      fr: '/assets/tools/free-meta-title-and-description-checker-pixel-width/verificateur-meta-titre-et-description-fr.webp',
-      hu: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-cim-es-leiras-ellenorzo-hu.webp',
-      it: '/assets/tools/free-meta-title-and-description-checker-pixel-width/verificatore-meta-titolo-e-descrizione-it.webp',
-      ro: '/assets/tools/free-meta-title-and-description-checker-pixel-width/verificator-meta-titlu-si-descriere-ro.webp',
-      nl: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschrijving-checker-nl.webp',
-      no: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-tittel-og-beskrivelse-sjekker-no.webp',
-      pt: '/assets/tools/free-meta-title-and-description-checker-pixel-width/verificador-de-meta-titulo-e-descricao-pt.webp',
-      sv: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-och-beskrivning-kontroll-sv.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -610,26 +531,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     section: 'seo',
     icon: RiArticleLine,
     carouselOrder: 10,
-    image:
-      '/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp',
-    images: {
-      pl: '/assets/tools/word-and-character-counter-with-text-formatting-tools/licznik-slow-i-znakow-pl.webp',
-      en: '/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp',
-      cs: '/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp',
-      da: '/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegntaeller-da.webp',
-      de: '/assets/tools/word-and-character-counter-with-text-formatting-tools/wort-und-zeichenzaehler-de.webp',
-      el: '/assets/tools/word-and-character-counter-with-text-formatting-tools/metritis-lexeon-kai-charaktiron-el.webp',
-      es: '/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palabras-y-caracteres-es.webp',
-      fi: '/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp',
-      fr: '/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp',
-      hu: '/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp',
-      it: '/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp',
-      ro: '/assets/tools/word-and-character-counter-with-text-formatting-tools/contor-cuvinte-si-caractere-ro.webp',
-      nl: '/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp',
-      no: '/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp',
-      pt: '/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp',
-      sv: '/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -735,25 +636,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     section: 'seo',
     icon: RiFileTextLine,
     carouselOrder: 11,
-    image: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-en.webp',
-    images: {
-      pl: '/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-pl.webp',
-      en: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-en.webp',
-      de: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-de.webp',
-      es: '/assets/tools/lorem-ipsum-generator/generador-lorem-ipsum-es.webp',
-      fr: '/assets/tools/lorem-ipsum-generator/generateur-lorem-ipsum-fr.webp',
-      pt: '/assets/tools/lorem-ipsum-generator/gerador-lorem-ipsum-pt.webp',
-      it: '/assets/tools/lorem-ipsum-generator/generatore-lorem-ipsum-it.webp',
-      ro: '/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-ro.webp',
-      nl: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-nl.webp',
-      hu: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-hu.webp',
-      cs: '/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-cs.webp',
-      sv: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-sv.webp',
-      da: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-da.webp',
-      no: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-no.webp',
-      fi: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generaattori-fi.webp',
-      el: '/assets/tools/lorem-ipsum-generator/gennitra-lorem-ipsum-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -858,26 +740,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'emailSignature',
     section: 'email',
     icon: RiMailLine,
-    image:
-      '/assets/tools/free-html-email-signature-generator/free-email-signature-generator-en.webp',
-    images: {
-      pl: '/assets/tools/free-html-email-signature-generator/darmowy-generator-stopki-mailowej-pl.webp',
-      en: '/assets/tools/free-html-email-signature-generator/free-email-signature-generator-en.webp',
-      cs: '/assets/tools/free-html-email-signature-generator/generator-podpisu-emailu-zdarma-cs.webp',
-      da: '/assets/tools/free-html-email-signature-generator/gratis-e-mail-signatur-generator-da.webp',
-      de: '/assets/tools/free-html-email-signature-generator/kostenloser-e-mail-signatur-generator-de.webp',
-      el: '/assets/tools/free-html-email-signature-generator/dorean-dimiourgia-ypografis-email-el.webp',
-      es: '/assets/tools/free-html-email-signature-generator/generador-de-firma-de-correo-gratuito-es.webp',
-      fi: '/assets/tools/free-html-email-signature-generator/ilmainen-sahkopostiallekirjoitus-generaattori-fi.webp',
-      fr: '/assets/tools/free-html-email-signature-generator/generateur-de-signature-email-gratuit-fr.webp',
-      hu: '/assets/tools/free-html-email-signature-generator/ingyenes-email-alairas-generator-hu.webp',
-      it: '/assets/tools/free-html-email-signature-generator/generatore-di-firma-email-gratuito-it.webp',
-      ro: '/assets/tools/free-html-email-signature-generator/generator-semnatura-email-gratuit-ro.webp',
-      nl: '/assets/tools/free-html-email-signature-generator/gratis-e-mailhandtekening-generator-nl.webp',
-      no: '/assets/tools/free-html-email-signature-generator/gratis-e-postsignatur-generator-no.webp',
-      pt: '/assets/tools/free-html-email-signature-generator/gerador-de-assinatura-de-email-gratuito-pt.webp',
-      sv: '/assets/tools/free-html-email-signature-generator/gratis-e-postsignatur-generator-sv.webp',
-    },
     desktopOnly: true,
     locales: {
       pl: {
@@ -983,26 +845,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     section: 'kolory',
     icon: RiContrast2Line,
     carouselOrder: 8,
-    image:
-      '/assets/tools/color-contrast-and-readability-checker/color-contrast-checker-en.webp',
-    images: {
-      pl: '/assets/tools/color-contrast-and-readability-checker/kontrast-i-czytelnosc-kolorow-pl.webp',
-      en: '/assets/tools/color-contrast-and-readability-checker/color-contrast-checker-en.webp',
-      cs: '/assets/tools/color-contrast-and-readability-checker/kontrola-kontrastu-barev-cs.webp',
-      da: '/assets/tools/color-contrast-and-readability-checker/farvekontrastkontrol-da.webp',
-      de: '/assets/tools/color-contrast-and-readability-checker/farbkontrast-checker-de.webp',
-      el: '/assets/tools/color-contrast-and-readability-checker/elegkhos-kontrast-chromaton-el.webp',
-      es: '/assets/tools/color-contrast-and-readability-checker/comprobador-de-contraste-de-colores-es.webp',
-      fi: '/assets/tools/color-contrast-and-readability-checker/varikontrasti-tarkistus-fi.webp',
-      fr: '/assets/tools/color-contrast-and-readability-checker/verificateur-de-contraste-des-couleurs-fr.webp',
-      hu: '/assets/tools/color-contrast-and-readability-checker/szinkontraszt-ellenorzo-hu.webp',
-      it: '/assets/tools/color-contrast-and-readability-checker/verificatore-contrasto-colori-it.webp',
-      ro: '/assets/tools/color-contrast-and-readability-checker/verificator-contrast-culori-ro.webp',
-      nl: '/assets/tools/color-contrast-and-readability-checker/kleurcontrast-checker-nl.webp',
-      no: '/assets/tools/color-contrast-and-readability-checker/fargekontrastsjekker-no.webp',
-      pt: '/assets/tools/color-contrast-and-readability-checker/verificador-de-contraste-de-cores-pt.webp',
-      sv: '/assets/tools/color-contrast-and-readability-checker/fargkontrastkontroll-sv.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -1107,25 +949,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'paletteExtractor',
     section: 'kolory',
     icon: RiPantoneLine,
-    image: '/assets/tools/image-color-extractor/image-color-extractor-en.webp',
-    images: {
-      pl: '/assets/tools/image-color-extractor/ekstraktor-kolorow-z-obrazu-pl.webp',
-      en: '/assets/tools/image-color-extractor/image-color-extractor-en.webp',
-      cs: '/assets/tools/image-color-extractor/extraktor-barev-z-obrazku-cs.webp',
-      da: '/assets/tools/image-color-extractor/farveudtraekker-fra-billede-da.webp',
-      de: '/assets/tools/image-color-extractor/bild-farbextraktor-de.webp',
-      el: '/assets/tools/image-color-extractor/exagogi-chromaton-apo-eikona-el.webp',
-      es: '/assets/tools/image-color-extractor/extractor-de-colores-de-imagen-es.webp',
-      fi: '/assets/tools/image-color-extractor/varien-poiminta-kuvasta-fi.webp',
-      fr: '/assets/tools/image-color-extractor/extracteur-de-couleurs-d-image-fr.webp',
-      hu: '/assets/tools/image-color-extractor/szinkinyero-kepbol-hu.webp',
-      it: '/assets/tools/image-color-extractor/estrattore-di-colori-da-immagine-it.webp',
-      ro: '/assets/tools/image-color-extractor/extractor-culori-din-imagine-ro.webp',
-      nl: '/assets/tools/image-color-extractor/kleurextractor-uit-afbeelding-nl.webp',
-      no: '/assets/tools/image-color-extractor/fargeutrekker-fra-bilde-no.webp',
-      pt: '/assets/tools/image-color-extractor/extrator-de-cores-de-imagem-pt.webp',
-      sv: '/assets/tools/image-color-extractor/fargextraktor-fran-bild-sv.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -1231,26 +1054,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     section: 'kolory',
     icon: RiPaletteLine,
     carouselOrder: 6,
-    image:
-      '/assets/tools/color-palette-generator/color-palette-generator-en.webp',
-    images: {
-      pl: '/assets/tools/color-palette-generator/generator-palet-kolorow-pl.webp',
-      en: '/assets/tools/color-palette-generator/color-palette-generator-en.webp',
-      cs: '/assets/tools/color-palette-generator/generator-barevnych-palet-cs.webp',
-      da: '/assets/tools/color-palette-generator/farvepaletgenerator-da.webp',
-      de: '/assets/tools/color-palette-generator/farbpaletten-generator-de.webp',
-      el: '/assets/tools/color-palette-generator/dimiourgia-paletas-chromaton-el.webp',
-      es: '/assets/tools/color-palette-generator/generador-de-paletas-de-colores-es.webp',
-      fi: '/assets/tools/color-palette-generator/varipaletti-generaattori-fi.webp',
-      fr: '/assets/tools/color-palette-generator/generateur-de-palettes-de-couleurs-fr.webp',
-      hu: '/assets/tools/color-palette-generator/szinpaletta-generator-hu.webp',
-      it: '/assets/tools/color-palette-generator/generatore-di-palette-di-colori-it.webp',
-      ro: '/assets/tools/color-palette-generator/generator-de-palete-de-culori-ro.webp',
-      nl: '/assets/tools/color-palette-generator/kleurpalettengenerator-nl.webp',
-      no: '/assets/tools/color-palette-generator/fargepalettgenerator-no.webp',
-      pt: '/assets/tools/color-palette-generator/gerador-de-paletas-de-cores-pt.webp',
-      sv: '/assets/tools/color-palette-generator/fargpalettgenerator-sv.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -1356,25 +1159,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     section: 'druk',
     icon: RiQrCodeLine,
     carouselOrder: 9,
-    image: '/assets/tools/qr-code-generator/free-qr-code-generator-en.webp',
-    images: {
-      pl: '/assets/tools/qr-code-generator/darmowy-generator-kodow-qr-pl.webp',
-      en: '/assets/tools/qr-code-generator/free-qr-code-generator-en.webp',
-      cs: '/assets/tools/qr-code-generator/generator-qr-kodu-zdarma-cs.webp',
-      da: '/assets/tools/qr-code-generator/gratis-qr-kode-generator-da.webp',
-      de: '/assets/tools/qr-code-generator/kostenloser-qr-code-generator-de.webp',
-      el: '/assets/tools/qr-code-generator/dorean-dimiourgia-kodikou-qr-el.webp',
-      es: '/assets/tools/qr-code-generator/generador-de-codigos-qr-gratuito-es.webp',
-      fi: '/assets/tools/qr-code-generator/ilmainen-qr-koodi-generaattori-fi.webp',
-      fr: '/assets/tools/qr-code-generator/generateur-de-codes-qr-gratuit-fr.webp',
-      hu: '/assets/tools/qr-code-generator/ingyenes-qr-kod-generator-hu.webp',
-      it: '/assets/tools/qr-code-generator/generatore-di-codici-qr-gratuito-it.webp',
-      ro: '/assets/tools/qr-code-generator/generator-coduri-qr-gratuit-ro.webp',
-      nl: '/assets/tools/qr-code-generator/gratis-qr-code-generator-nl.webp',
-      no: '/assets/tools/qr-code-generator/gratis-qr-kode-generator-no.webp',
-      pt: '/assets/tools/qr-code-generator/gerador-de-codigos-qr-gratuito-pt.webp',
-      sv: '/assets/tools/qr-code-generator/gratis-qr-kodgenerator-sv.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -1483,26 +1267,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     section: 'konwertery',
     icon: RiLoopLeftLine,
     carouselOrder: 4,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -1607,26 +1371,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'jpgToPng',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -1732,26 +1476,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     section: 'konwertery',
     icon: RiLoopLeftLine,
     carouselOrder: 7,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -1850,26 +1574,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'webpToPng',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -1974,26 +1678,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'svgToPng',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -2098,26 +1782,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'svgToJpg',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -2222,26 +1886,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'bmpToJpg',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -2346,26 +1990,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'bmpToPng',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -2470,26 +2094,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'gifToPng',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -2594,26 +2198,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'gifToJpg',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -2719,26 +2303,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     section: 'konwertery',
     icon: RiLoopLeftLine,
     carouselOrder: 1,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: true,
     locales: {
       pl: {
@@ -2843,26 +2407,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'pngToWebpSimple',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: true,
     locales: {
       pl: {
@@ -2970,26 +2514,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'svgToWebp',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -3094,26 +2618,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'gifToWebp',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -3218,26 +2722,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'bmpToWebp',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -3338,33 +2822,10 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
       },
     },
   },
-  // -------------------------------------------------------------------------
-  // AVIF converters (Canvas API - browser-native)
-  // -------------------------------------------------------------------------
   {
     key: 'avifToJpg',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -3469,26 +2930,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'avifToPng',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -3593,26 +3034,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'avifToWebp',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -3720,26 +3141,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'heicToJpg',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -3844,26 +3245,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'heicToPng',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -3968,26 +3349,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'heicToWebp',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -4095,26 +3456,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'tiffToJpg',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -4219,26 +3560,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'tiffToPng',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -4343,26 +3664,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'tiffToWebp',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -4467,26 +3768,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'jpgToAvif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -4591,26 +3872,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'pngToAvif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -4715,26 +3976,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'webpToAvif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -4839,26 +4080,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'svgToAvif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -4963,26 +4184,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'bmpToAvif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -5082,26 +4283,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'gifToAvif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -5206,26 +4387,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'heicToAvif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -5318,26 +4479,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'tiffToAvif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -5442,26 +4583,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'jpgToGif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -5566,26 +4687,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'pngToGif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -5690,26 +4791,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'webpToGif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -5814,26 +4895,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'svgToGif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -5925,26 +4986,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'bmpToGif',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -6036,26 +5077,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'jpgToTiff',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -6160,26 +5181,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'pngToTiff',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -6272,26 +5273,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'webpToTiff',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -6396,26 +5377,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'svgToTiff',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -6519,26 +5480,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'bmpToTiff',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -6643,26 +5584,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'avifToTiff',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -6768,26 +5689,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'heicToTiff',
     section: 'konwertery',
     icon: RiLoopLeftLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -6893,26 +5794,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'jpgToPdf',
     section: 'konwertery',
     icon: RiFilePdf2Line,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -7018,26 +5899,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'pngToPdf',
     section: 'konwertery',
     icon: RiFilePdf2Line,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -7143,26 +6004,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'webpToPdf',
     section: 'konwertery',
     icon: RiFilePdf2Line,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -7268,26 +6109,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'heicToPdf',
     section: 'konwertery',
     icon: RiFilePdf2Line,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: true,
     locales: {
       pl: {
@@ -7393,26 +6214,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'bmpToPdf',
     section: 'konwertery',
     icon: RiFilePdf2Line,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -7518,26 +6319,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'tiffToPdf',
     section: 'konwertery',
     icon: RiFilePdf2Line,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: true,
     locales: {
       pl: {
@@ -7643,26 +6424,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'svgToPdf',
     section: 'konwertery',
     icon: RiFilePdf2Line,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -7771,26 +6532,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'pdfToJpg',
     section: 'konwertery',
     icon: RiFilePdf2Line,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -7896,26 +6637,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'pdfToPng',
     section: 'konwertery',
     icon: RiFilePdf2Line,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -8021,26 +6742,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'pdfToWebp',
     section: 'konwertery',
     icon: RiFilePdf2Line,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -8149,26 +6850,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'csvToJson',
     section: 'dokumenty',
     icon: RiFileTextLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -8274,26 +6955,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'jsonToCsv',
     section: 'dokumenty',
     icon: RiFileTextLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -8399,26 +7060,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'xmlToJson',
     section: 'dokumenty',
     icon: RiFileTextLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -8524,26 +7165,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'jsonToXml',
     section: 'dokumenty',
     icon: RiFileTextLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -8649,26 +7270,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'yamlToJson',
     section: 'dokumenty',
     icon: RiFileTextLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -8774,26 +7375,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'jsonToYaml',
     section: 'dokumenty',
     icon: RiFileTextLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -8899,26 +7480,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'markdownToHtml',
     section: 'dokumenty',
     icon: RiFileTextLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -9024,26 +7585,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'htmlToMarkdown',
     section: 'dokumenty',
     icon: RiFileTextLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -9152,26 +7693,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'imageToBase64',
     section: 'konwertery',
     icon: RiFileTextLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -9277,26 +7798,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'base64ToImage',
     section: 'konwertery',
     icon: RiFileTextLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-    images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },
     desktopOnly: false,
     locales: {
       pl: {
@@ -9405,8 +7906,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'ptToPx',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -9497,8 +7996,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'remToPx',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -9589,8 +8086,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'emToPx',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -9681,8 +8176,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'cmToPxDpi',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -9773,8 +8266,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'pxToCmDpi',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -9865,8 +8356,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'mmToPxDpi',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -9957,8 +8446,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'inchesToPxDpi',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -10049,8 +8536,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'dpiToPpi',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -10144,8 +8629,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'hexToRgb',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -10237,8 +8720,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'rgbToCmyk',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -10342,8 +8823,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'bytesConverter',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -10434,8 +8913,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'unixTimestamp',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -10526,8 +9003,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'decToBin',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -10618,8 +9093,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'decToHex',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {
@@ -10713,8 +9186,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     key: 'mbpsToMBs',
     section: 'jednostki',
     icon: RiRulerLine,
-    image:
-      '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
     desktopOnly: false,
     locales: {
       pl: {

@@ -18,7 +18,7 @@ import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { getAboutPageData } from '@/lib/i18n/pages/about';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/clsx';
 import type { Locale } from '@/types/locale';
 
 const WHY_FREE_ICONS = [RiInfinityFill, RiLockLine, RiToolsFill, RiRocketLine];
