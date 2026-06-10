@@ -6,6 +6,7 @@ import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonCopy from '@/components/atoms/buttons/ButtonCopy';
 import Input from '@/components/atoms/form/Input';
+import Select from '@/components/atoms/form/Select';
 import ToolInfo from '@/components/atoms/ToolInfo';
 import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
@@ -363,8 +364,8 @@ export default function WcagContrastChecker() {
               label={<span className='tool-value'>{t.matchTargetLabel}</span>}
             >
               <div className='flex flex-col gap-2 sm:flex-row sm:items-center'>
-                <select
-                  className='tool-input h-10'
+                <Select
+                  className='h-10'
                   value={matchTarget}
                   onChange={e => setMatchTarget(e.target.value as MatchTarget)}
                 >
@@ -383,7 +384,7 @@ export default function WcagContrastChecker() {
                   <option value='iconAA'>
                     {t.icon} - {t.badges.iconAA}
                   </option>
-                </select>
+                </Select>
 
                 <Button
                   type='button'

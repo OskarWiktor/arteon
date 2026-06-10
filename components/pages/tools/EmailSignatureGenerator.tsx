@@ -310,10 +310,10 @@ export default function EmailSignatureGenerator() {
     <div className='space-y-4'>
       <Card
         interactive={false}
-        padding='lg'
-        className='flex flex-wrap items-center justify-between'
+        padding='sm'
+        className='flex flex-row items-center justify-between'
       >
-        <div className='flex flex-wrap items-center gap-3'>
+        <div className='flex flex-col flex-wrap items-center gap-3'>
           <div className='flex flex-wrap items-center gap-2'>
             <RiLayout3Line className='text-base text-primary' />
             <span className='tool-value'>{t.layoutLabel}</span>
@@ -374,8 +374,8 @@ export default function EmailSignatureGenerator() {
 
       <Card
         interactive={false}
-        padding='lg'
-        className='flex flex-wrap items-center'
+        padding='sm'
+        className='flex flex-row flex-wrap items-center'
       >
         <div className='flex items-center gap-2'>
           <span className='tool-value'>{t.editorTitle}</span>

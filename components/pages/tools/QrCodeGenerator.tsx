@@ -6,9 +6,9 @@ import ToolAlert from '@/components/atoms/ToolAlert';
 import ToolInfo from '@/components/atoms/ToolInfo';
 import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
+import SelectWithLabel from '@/components/molecules/form/SelectWithLabel';
 import TextareaWithLabel from '@/components/molecules/form/TextareaWithLabel';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
-import ToolSelect from '@/components/molecules/tools/ToolSelect';
 import Card from '@/components/organisms/Card';
 import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
 import { ui } from '@/lib/i18n/tools/qrCode';
@@ -162,7 +162,8 @@ export default function QrCodeGenerator() {
   return (
     <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
       <Card interactive={false} padding='lg'>
-        <ToolSelect
+        <SelectWithLabel
+          variant='tool'
           label={t.dataType}
           value={dataType}
           onChange={v => setDataType(v as QrDataType)}
@@ -172,7 +173,7 @@ export default function QrCodeGenerator() {
           <option value='vcard'>{t.types.vcard}</option>
           <option value='email'>{t.types.email}</option>
           <option value='phone'>{t.types.phone}</option>
-        </ToolSelect>
+        </SelectWithLabel>
 
         {dataType === 'url' && (
           <InputWithLabel
@@ -297,7 +298,8 @@ export default function QrCodeGenerator() {
         )}
 
         <div className='grid gap-3 sm:grid-cols-2'>
-          <ToolSelect
+          <SelectWithLabel
+            variant='tool'
             label={t.size}
             value={size}
             onChange={v => setSize(Number(v))}
@@ -310,8 +312,9 @@ export default function QrCodeGenerator() {
             <option value={600}>600 px</option>
             <option value={800}>800 px</option>
             <option value={1000}>1000 px</option>
-          </ToolSelect>
-          <ToolSelect
+          </SelectWithLabel>
+          <SelectWithLabel
+            variant='tool'
             label={t.margin}
             value={margin}
             onChange={v => setMargin(Number(v))}
@@ -321,7 +324,7 @@ export default function QrCodeGenerator() {
             <option value={2}>2</option>
             <option value={3}>3</option>
             <option value={4}>4</option>
-          </ToolSelect>
+          </SelectWithLabel>
         </div>
 
         <div className='grid gap-3 sm:grid-cols-2'>
@@ -344,7 +347,8 @@ export default function QrCodeGenerator() {
         </div>
 
         <div>
-          <ToolSelect
+          <SelectWithLabel
+            variant='tool'
             label={t.errorCorrection}
             value={errorLevel}
             onChange={v => setErrorLevel(v as ErrorCorrectionLevel)}
@@ -353,7 +357,7 @@ export default function QrCodeGenerator() {
             <option value='M'>{t.errorCorrectionLevels.M}</option>
             <option value='Q'>{t.errorCorrectionLevels.Q}</option>
             <option value='H'>{t.errorCorrectionLevels.H}</option>
-          </ToolSelect>
+          </SelectWithLabel>
           <ToolHelper className='mt-1'>{t.printTip}</ToolHelper>
         </div>
       </Card>

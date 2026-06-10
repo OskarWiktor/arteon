@@ -1,6 +1,7 @@
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import InputColor from '@/components/atoms/form/InputColor';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
+import SelectWithLabel from '@/components/molecules/form/SelectWithLabel';
 import { FONT_OPTIONS } from '@/lib/tools/email/signatureDefaults';
 import { flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
@@ -108,20 +109,18 @@ export default function AppearancePanel({
       </div>
 
       <div className='grid grid-cols-1 gap-3'>
-        <div>
-          <p className='tool-label mb-1'>{t.appearance.fontFamily}</p>
-          <select
-            value={styleConfig.fontFamily}
-            onChange={e => onStyleChange('fontFamily', e.target.value)}
-            className='tool-input'
-          >
-            {FONT_OPTIONS.map(font => (
-              <option key={font.value} value={font.value}>
-                {font.label}
-              </option>
-            ))}
-          </select>
-        </div>
+        <SelectWithLabel
+          label={t.appearance.fontFamily}
+          labelClassName='tool-label'
+          value={styleConfig.fontFamily}
+          onChange={value => onStyleChange('fontFamily', value)}
+        >
+          {FONT_OPTIONS.map(font => (
+            <option key={font.value} value={font.value}>
+              {font.label}
+            </option>
+          ))}
+        </SelectWithLabel>
         <div>
           <p className='tool-label mb-1'>{t.appearance.fontSize}</p>
           <div className='flex flex-wrap gap-2'>

@@ -19,6 +19,7 @@ import FileDropzone from '@/components/molecules/FileDropzone';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
+import SelectWithLabel from '@/components/molecules/form/SelectWithLabel';
 import Card from '@/components/organisms/Card';
 import CropPreview from '@/components/organisms/tools/ImageResizeTool/CropPreview';
 import { useCropDrag } from '@/hooks/useCropDrag';
@@ -758,40 +759,34 @@ export default function ImageResizeTool() {
               {activeTool === 'presets' && (
                 <div className='space-y-3'>
                   <div className='grid gap-3 md:grid-cols-2'>
-                    <div>
-                      <label className='tool-value'>{t.category}</label>
-                      <select
-                        className='tool-input mt-1'
-                        value={state.selectedCategory}
-                        onChange={e =>
-                          setState(prev => ({
-                            ...prev,
-                            selectedCategory: e.target.value as
-                              | 'social'
-                              | 'web',
-                            selectedPresetKey: null,
-                          }))
-                        }
-                      >
-                        <option value='social'>{t.categories.social}</option>
-                        <option value='web'>{t.categories.web}</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label className='tool-value'>{t.format}</label>
-                      <select
-                        className='tool-input mt-1'
-                        value={state.selectedPresetKey ?? ''}
-                        onChange={e => handlePresetChange(e.target.value)}
-                      >
-                        <option value=''>{t.selectPreset}</option>
-                        {presetList.map(preset => (
-                          <option key={preset.key} value={preset.key}>
-                            {preset.label}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
+                    <SelectWithLabel
+                      label={t.category}
+                      labelClassName='tool-value'
+                      value={state.selectedCategory}
+                      onChange={value =>
+                        setState(prev => ({
+                          ...prev,
+                          selectedCategory: value as 'social' | 'web',
+                          selectedPresetKey: null,
+                        }))
+                      }
+                    >
+                      <option value='social'>{t.categories.social}</option>
+                      <option value='web'>{t.categories.web}</option>
+                    </SelectWithLabel>
+                    <SelectWithLabel
+                      label={t.format}
+                      labelClassName='tool-value'
+                      value={state.selectedPresetKey ?? ''}
+                      onChange={handlePresetChange}
+                    >
+                      <option value=''>{t.selectPreset}</option>
+                      {presetList.map(preset => (
+                        <option key={preset.key} value={preset.key}>
+                          {preset.label}
+                        </option>
+                      ))}
+                    </SelectWithLabel>
                   </div>
                 </div>
               )}
