@@ -86,7 +86,7 @@ export default function WordCountTool() {
   return (
     <div className='space-y-4 overflow-hidden'>
       <div className='grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]'>
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <div>
             <h2 className='h6 pb-2'>{t.statistics}</h2>
             <ToolHelper>{metrics.words === 0 ? t.empty : ''}</ToolHelper>
@@ -173,7 +173,7 @@ export default function WordCountTool() {
           </div>
         </Card>
 
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <ToolFieldRow label={t.pasteText}>
             <Textarea
               value={text}
@@ -187,8 +187,9 @@ export default function WordCountTool() {
 
       <Card
         interactive={false}
-        padding='md'
-        className='flex flex-wrap items-center'
+        padding='sm'
+        className='flex flex-row flex-wrap'
+        variant='outlined'
       >
         <span className='tool-value'>{t.toolbarTitle}</span>
         <div className='flex flex-wrap gap-2'>

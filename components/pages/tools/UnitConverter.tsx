@@ -24,7 +24,7 @@ import type { ToolItemKey } from '@/types/tools/common';
 interface UnitConverterProps {
   toolKey: ToolItemKey;
 }
-import Card from '../../Card';
+import Card from '@/components/organisms/Card';
 
 /**
  * Render a two-field unit conversion UI for the provided conversion tool key.
@@ -165,7 +165,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
       <FormatSelector unitToolKey={toolKey} />
 
       <div className='grid gap-4 md:grid-cols-2'>
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <div className='relative'>
             <InputWithLabel
               label={srcLabel}
@@ -232,7 +232,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
           </div>
         </Card>
 
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <div className='relative'>
             <InputWithLabel
               label={tgtLabel}

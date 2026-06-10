@@ -19,7 +19,7 @@ import type {
 } from '@/types/tools/image-to-pdf-converter';
 import { downloadBlob, downloadFromUrl } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
-import Card from '../../Card';
+import Card from '@/components/organisms/Card';
 
 let fileIdCounter = 0;
 
@@ -306,7 +306,7 @@ export default function ImageToPdfConverter({
       />
 
       <div className='grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <form onSubmit={handleConvert} className='space-y-4'>
             <div>
               <h2 className='h6 mb-2'>{t.addFiles}</h2>
@@ -381,7 +381,12 @@ export default function ImageToPdfConverter({
           </form>
         </Card>
 
-        <Card interactive={false} padding='lg' aria-label={t.queueAriaLabel}>
+        <Card
+          interactive={false}
+          padding='lg'
+          aria-label={t.queueAriaLabel}
+          variant='outlined'
+        >
           <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <h2 className='h6'>{t.queueHeading}</h2>
             {files.length > 0 && (

@@ -52,37 +52,30 @@ const STANDALONE = {
   }),
 } as const;
 
-const LazyImageConverter = dynamic(
-  () =>
-    import('../../organisms/tools/ImageFormatConverter/ImageFormatConverter'),
-  { ssr: false, loading: L },
-);
-const LazyImageToPdf = dynamic(
-  () => import('../../organisms/tools/ImageToPdfConverter/ImageToPdfConverter'),
-  { ssr: false, loading: L },
-);
-const LazyPdfToImage = dynamic(
-  () => import('../../organisms/tools/PdfToImageConverter/PdfToImageConverter'),
-  { ssr: false, loading: L },
-);
-const LazyTextConverter = dynamic(
-  () => import('../../organisms/tools/TextFormatConverter/TextFormatConverter'),
-  { ssr: false, loading: L },
-);
-const LazyBase64 = dynamic(
-  () => import('../../organisms/tools/Base64Converter/Base64Converter'),
-  {
-    ssr: false,
-    loading: L,
-  },
-);
-const LazyUnit = dynamic(
-  () => import('../../organisms/tools/UnitConverter/UnitConverter'),
-  {
-    ssr: false,
-    loading: L,
-  },
-);
+const LazyImageConverter = dynamic(() => import('./ImageFormatConverter'), {
+  ssr: false,
+  loading: L,
+});
+const LazyImageToPdf = dynamic(() => import('./ImageToPdfConverter'), {
+  ssr: false,
+  loading: L,
+});
+const LazyPdfToImage = dynamic(() => import('./PdfToImageConverter'), {
+  ssr: false,
+  loading: L,
+});
+const LazyTextConverter = dynamic(() => import('./TextFormatConverter'), {
+  ssr: false,
+  loading: L,
+});
+const LazyBase64 = dynamic(() => import('./Base64Converter'), {
+  ssr: false,
+  loading: L,
+});
+const LazyUnit = dynamic(() => import('./UnitConverter'), {
+  ssr: false,
+  loading: L,
+});
 
 interface ImgCfg {
   s: string;

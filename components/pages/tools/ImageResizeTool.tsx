@@ -500,7 +500,7 @@ export default function ImageResizeTool() {
 
   return (
     <div className='grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,2.5fr)]'>
-      <Card interactive={false} padding='lg'>
+      <Card interactive={false} padding='lg' variant='outlined'>
         <form onSubmit={handleSubmit} className='space-y-6'>
           <div>
             <h2 className='h6 mb-2'>{t.addImage}</h2>
@@ -634,7 +634,7 @@ export default function ImageResizeTool() {
         </form>
       </Card>
 
-      <Card interactive={false} padding='lg'>
+      <Card interactive={false} padding='lg' variant='outlined'>
         <div className={cn('mb-2', flexCenterBetweenClasses)}>
           <h2 className='h6'>{t.cropTools}</h2>
           {dims && (

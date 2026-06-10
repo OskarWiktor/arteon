@@ -19,7 +19,13 @@ export default function ToolHelper({
   variant = 'default',
 }: ToolHelperProps) {
   return (
-    <p className={cn('text-sm', ToolHelperVariantClasses[variant], className)}>
+    <p
+      className={cn(
+        'mt-2! text-xs!',
+        ToolHelperVariantClasses[variant],
+        className,
+      )}
+    >
       {children}
     </p>
   );

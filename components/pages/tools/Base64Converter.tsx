@@ -10,7 +10,7 @@ import { useDictionary } from '@/lib/LocaleContext';
 import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
 import { downloadBlob } from '@/utils/download';
-import Card from '../../Card';
+import Card from '@/components/organisms/Card';
 
 type Base64Mode = 'encode' | 'decode';
 
@@ -152,7 +152,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
           hasFiles={!!base64}
         />
         <div className='grid gap-4 md:grid-cols-2'>
-          <Card interactive={false} padding='lg'>
+          <Card interactive={false} padding='lg' variant='outlined'>
             <h2 className='h6'>{t.imageHeading}</h2>
             <FileDropzone
               accept='image/*'
@@ -177,7 +177,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
             </Button>
           </Card>
 
-          <Card interactive={false} padding='lg'>
+          <Card interactive={false} padding='lg' variant='outlined'>
             <TextareaWithLabel
               label='Base64'
               className='min-h-75 resize-y'
@@ -209,7 +209,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
         hasFiles={!!base64}
       />
       <div className='grid gap-4 md:grid-cols-2'>
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <TextareaWithLabel
             label='Base64'
             className='min-h-75 w-full resize-y'
@@ -239,7 +239,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
           </div>
         </Card>
 
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <h2 className='h6'>{t.imagePreview}</h2>
           {previewUrl ? (
             <div className='space-y-3'>
