@@ -86,7 +86,7 @@ export default function ColorPaletteGenerator() {
 
   return (
     <div className='space-y-4 overflow-hidden'>
-      <Card interactive={false} padding='lg'>
+      <Card interactive={false} padding='lg' variant='outlined'>
         <form onSubmit={handleSubmit} className='space-y-4'>
           <div className='flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between'>
             <InputColorWithLabel
@@ -131,7 +131,12 @@ export default function ColorPaletteGenerator() {
         </form>
       </Card>
 
-      <Card interactive={false} padding='lg' aria-label={t.generatedPalettes}>
+      <Card
+        interactive={false}
+        padding='lg'
+        aria-label={t.generatedPalettes}
+        variant='outlined'
+      >
         {!normalizedBase && (
           <ToolAlert variant='error'>
             {t.colorReadError}{' '}

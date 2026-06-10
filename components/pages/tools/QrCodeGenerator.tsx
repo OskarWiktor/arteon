@@ -161,7 +161,7 @@ export default function QrCodeGenerator() {
 
   return (
     <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-      <Card interactive={false} padding='lg'>
+      <Card interactive={false} padding='lg' variant='outlined'>
         <SelectWithLabel
           variant='tool'
           label={t.dataType}
@@ -362,7 +362,7 @@ export default function QrCodeGenerator() {
         </div>
       </Card>
 
-      <Card interactive={false} padding='lg'>
+      <Card interactive={false} padding='lg' variant='outlined'>
         {!contrastOk && (
           <ToolAlert variant='warning'>
             {t.contrastWarning}
@@ -374,7 +374,6 @@ export default function QrCodeGenerator() {
         )}
 
         <div className='flex flex-col items-center'>
-          <p className='tool-label mb-3'>{t.preview}</p>
           <div
             className={cn(
               'max-w-full rounded-md border border-neutral-200 p-4',
@@ -405,7 +404,7 @@ export default function QrCodeGenerator() {
           </div>
         </div>
 
-        <div className='flex flex-wrap gap-3'>
+        <div className='mt-5 flex flex-wrap justify-center gap-3'>
           <Button
             onClick={handleDownloadPng}
             disabled={!qrDataUrl || isGenerating}

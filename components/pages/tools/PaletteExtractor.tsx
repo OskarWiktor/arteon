@@ -119,7 +119,7 @@ export default function PaletteExtractor() {
 
   return (
     <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-      <Card interactive={false} padding='lg'>
+      <Card interactive={false} padding='lg' variant='outlined'>
         <div>
           <h2 className='h6 mb-2'>{t.addImageLabel}</h2>
           <FileDropzone
@@ -151,7 +151,7 @@ export default function PaletteExtractor() {
         </div>
       </Card>
 
-      <Card interactive={false} padding='lg'>
+      <Card interactive={false} padding='lg' variant='outlined'>
         <div className={cn('gap-2', flexCenterBetweenClasses)}>
           <h2 className='h6'>{t.preview}</h2>
           {file && (

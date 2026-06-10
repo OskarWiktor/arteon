@@ -124,7 +124,7 @@ export default function MetaTitleDescriptionTool() {
   return (
     <>
       <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <ToolFieldRow label={t.addUrl} helper={t.urlHelper}>
             <Input
               type='text'
@@ -209,7 +209,7 @@ export default function MetaTitleDescriptionTool() {
           </ToolFieldRow>
         </Card>
 
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <div>
             <h2 className='h6 pb-2'>{t.previewTitle}</h2>
             <ToolHelper>{t.previewHelper}</ToolHelper>

@@ -12,7 +12,7 @@ import { convertText } from '@/lib/tools/text/convert';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
 import type { TextFormatConverterProps } from '@/types/tools/text-format-converter';
-import Card from '../../Card';
+import Card from '@/components/organisms/Card';
 
 const LABEL_TO_FORMAT: Record<string, UniversalFormat> = {
   CSV: 'csv',
@@ -156,7 +156,7 @@ export default function TextFormatConverter({
       />
 
       <div className='grid gap-4 md:grid-cols-2'>
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <h2 className='h6'>{sourceLabel}</h2>
             <label className='cursor-pointer text-xs font-medium text-primary-mid transition-colors hover:text-primary'>
@@ -173,7 +173,7 @@ export default function TextFormatConverter({
             </label>
           </div>
           <Textarea
-            className='min-h-[300px] resize-y'
+            className='min-h-75 resize-y'
             value={input}
             onChange={e => setInput(e.target.value)}
             placeholder={
@@ -203,10 +203,10 @@ export default function TextFormatConverter({
           </div>
         </Card>
 
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <h2 className='h6'>{targetLabel}</h2>
           <Textarea
-            className='min-h-[300px] resize-y'
+            className='min-h-75 resize-y'
             value={output}
             readOnly
             placeholder={t.conversionResult.replace('{{format}}', targetLabel)}

@@ -260,7 +260,7 @@ export default function FaviconGenerator() {
   return (
     <>
       <div className='grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <form onSubmit={handleGenerate} className='space-y-6'>
             <div>
               <h2 className='h6 mb-2'>{t.addBaseImageLabel}</h2>
@@ -418,7 +418,7 @@ export default function FaviconGenerator() {
           </form>
         </Card>
 
-        <Card interactive={false} padding='lg'>
+        <Card interactive={false} padding='lg' variant='outlined'>
           <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <h2 className='h6'>{t.previewAndFiles}</h2>
             {anyOutputs && (

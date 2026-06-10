@@ -312,6 +312,7 @@ export default function EmailSignatureGenerator() {
         interactive={false}
         padding='sm'
         className='flex flex-row items-center justify-between'
+        variant='outlined'
       >
         <div className='flex flex-col flex-wrap items-center gap-3'>
           <div className='flex flex-wrap items-center gap-2'>
@@ -376,6 +377,7 @@ export default function EmailSignatureGenerator() {
         interactive={false}
         padding='sm'
         className='flex flex-row flex-wrap items-center'
+        variant='outlined'
       >
         <div className='flex items-center gap-2'>
           <span className='tool-value'>{t.editorTitle}</span>
@@ -438,6 +440,7 @@ export default function EmailSignatureGenerator() {
           interactive={false}
           padding='lg'
           className='flex min-h-155 flex-col'
+          variant='outlined'
         >
           <div className='space-y-4 text-sm!'>
             {activePanel === 'identity' && (
@@ -670,6 +673,7 @@ export default function EmailSignatureGenerator() {
           interactive={false}
           padding='lg'
           className='flex min-h-155 flex-col lg:sticky lg:top-24 lg:self-start'
+          variant='outlined'
         >
           <div className={cn('gap-2', flexCenterBetweenClasses)}>
             <div>
