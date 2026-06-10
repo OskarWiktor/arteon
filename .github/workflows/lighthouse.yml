@@ -1,0 +1,43 @@
+name: Lighthouse CI
+
+# Runs Lighthouse against the Vercel PREVIEW deployment for each PR, on
+# Vercel's real edge network — so the scores reflect production, not a slow
+# CI machine serving a cold localhost build.
+#
+# It triggers when Vercel reports a successful, non-production deployment.
+# The staging preview is behind Vercel Authentication, so Lighthouse passes a
+# "Protection Bypass for Automation" secret as a request header to get in.
+#
+# NOTE: deployment_status workflows always run from the DEFAULT branch's copy
+# of this file. So this only starts working AFTER it is merged into main.
+on:
+  deployment_status:
+
+permissions:
+  contents: read
+
+jobs:
+  lighthouse:
+    name: Lighthouse
+    if: github.event.deployment_status.state == 'success' && github.event.deployment_status.environment != 'Production'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Lighthouse against the Vercel preview
+        env:
+          PREVIEW_URL: ${{ github.event.deployment_status.environment_url }}
+          BYPASS: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
+        run: |
+          npm install -g @lhci/cli@0.14.x
+          lhci autorun \
+            --collect.url="$PREVIEW_URL/" \
+            --collect.url="$PREVIEW_URL/narzedzia" \
+            --collect.url="$PREVIEW_URL/narzedzia/kontrast-i-czytelnosc-kolorow" \
+            --collect.settings.extraHeaders="{\"x-vercel-protection-bypass\":\"$BYPASS\"}"
