@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es2024",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "bundler",
@@ -16,7 +16,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": false,
+    "noUnusedParameters": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
@@ -35,5 +35,5 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules", ".next", ".claude/skills"]
+  "exclude": ["node_modules", ".next"]
 }

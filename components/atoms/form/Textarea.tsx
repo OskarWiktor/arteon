@@ -18,7 +18,7 @@ export default function Textarea({
   return (
     <textarea
       className={cn(
-        'w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm! text-dark transition',
+        'w-full rounded-sm border border-neutral-300 bg-white px-3 py-2 text-sm! text-dark transition',
         focusRingClasses,
         className,
       )}
