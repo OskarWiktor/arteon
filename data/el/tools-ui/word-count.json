@@ -22,11 +22,8 @@
   "lowercase": "πεζά",
   "sentenceCase": "Αρχή πρότασης",
   "titleCase": "Κάθε Λέξη Κεφαλαία",
-  "toggleCase": "αΝΤΙΣΤΡΟΦΗ κΕΦΑΛΑΙΩΝ",
   "removeExtraSpaces": "Αφαίρεση επιπλέον κενών",
   "removeEmptyLines": "Αφαίρεση κενών γραμμών",
   "removeDuplicateLines": "Αφαίρεση διπλότυπων",
-  "sortAsc": "Ταξινόμηση Α→Ω",
-  "sortDesc": "Ταξινόμηση Ω→Α",
   "readabilityHint": "Για διαδικτυακό περιεχόμενο στα ελληνικά στοχεύστε 50–70."
 }

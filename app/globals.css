@@ -1,5 +1,10 @@
 @import 'tailwindcss';
+/*
+white może - #23201f
+bg ##101010
+text jasny #d0cbc8
 
+*/
 @theme {
   --shadow-sm: 0 1px 2px 0px #130f0d1a;
   --shadow-md: 0 3px 3px 0px #130f0d1a;

@@ -22,11 +22,8 @@
   "lowercase": "minuscule",
   "sentenceCase": "Prima literă mare",
   "titleCase": "Fiecare Cuvânt Mare",
-  "toggleCase": "iNVERSARE mAJUSCULE",
   "removeExtraSpaces": "Eliminați spațiile suplimentare",
   "removeEmptyLines": "Eliminați rândurile goale",
   "removeDuplicateLines": "Eliminați duplicatele",
-  "sortAsc": "Sortare A→Z",
-  "sortDesc": "Sortare Z→A",
   "readabilityHint": "Pentru conținut web în română, țintește 60–70."
 }

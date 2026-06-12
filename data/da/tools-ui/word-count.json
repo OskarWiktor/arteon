@@ -22,11 +22,8 @@
   "lowercase": "små bogstaver",
   "sentenceCase": "Sætningsstart",
   "titleCase": "Hvert Ord Stort",
-  "toggleCase": "sKIFT sTØRRELSE",
   "removeExtraSpaces": "Fjern ekstra mellemrum",
   "removeEmptyLines": "Fjern tomme linjer",
   "removeDuplicateLines": "Fjern duplikater",
-  "sortAsc": "Sortér A→Z",
-  "sortDesc": "Sortér Z→A",
   "readabilityHint": "Til webindhold på dansk, sigt efter 50–70."
 }

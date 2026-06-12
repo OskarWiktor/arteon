@@ -22,11 +22,8 @@
   "lowercase": "minúsculas",
   "sentenceCase": "Início de frase",
   "titleCase": "Cada Palavra Maiúscula",
-  "toggleCase": "iNVERTER mAIÚSCULAS",
   "removeExtraSpaces": "Remover espaços extra",
   "removeEmptyLines": "Remover linhas vazias",
   "removeDuplicateLines": "Remover linhas duplicadas",
-  "sortAsc": "Ordenar A→Z",
-  "sortDesc": "Ordenar Z→A",
   "readabilityHint": "Para conteúdo web em português, mire em 60–70."
 }

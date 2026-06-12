@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Conta parole e caratteri – verifica tempo di lettura e formatta",
-    "description": "Incolla il testo e lo strumento conterà parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Cambia maiuscole, rimuovi duplicati o ordina righe",
+    "description": "Incolla il testo e lo strumento conterà parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Cambia maiuscole o rimuovi duplicati",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp"
   },
   "breadcrumbs": {
@@ -38,7 +38,7 @@
         "Rimuovi righe duplicate"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Contatore gratuito di parole e caratteri con strumenti di formattazione del testo. Conta parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Offre 10 strumenti: conversione maiuscole, rimozione spazi, righe vuote, duplicati e ordinamento.",
+      "description": "Contatore gratuito di parole e caratteri con strumenti di formattazione del testo. Conta parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Offre 7 strumenti: conversione maiuscole, rimozione spazi, righe vuote e duplicati.",
       "featureList": [
         "Conteggio parole",
         "Conteggio caratteri con e senza spazi",
@@ -52,10 +52,8 @@
         "Formule di leggibilità adattate (16 lingue)",
         "Convertire in maiuscolo o minuscolo",
         "Convertire in formato frase o titolo",
-        "Invertire maiuscole/minuscole",
         "Rimuovere spazi extra",
         "Rimuovere righe vuote e duplicati",
-        "Ordinare righe A–Z e Z–A",
         "Copiare testo negli appunti"
       ]
     },
@@ -74,7 +72,7 @@
         },
         {
           "name": "Trasforma il testo",
-          "text": "Sotto il campo di testo troverai 10 strumenti di trasformazione."
+          "text": "Sotto il campo di testo troverai 7 strumenti di trasformazione."
         },
         {
           "name": "Copia il risultato",
@@ -91,7 +89,7 @@
     {
       "type": "sectionBasic",
       "title": "Contatore di parole e caratteri con strumenti di testo",
-      "html": "<p class=\"text-mid\">Questo strumento combina un contatore di parole e caratteri con analisi di leggibilità e funzioni di formattazione testo. Incolla il tuo testo per vedere parole, caratteri, sillabe, frasi, paragrafi, parole uniche, tempo di lettura, tempo di parlato e un punteggio di leggibilità colorato.</p><p class=\"text-mid mt-3\">Per i testi in italiano lo strumento utilizza l’<strong>indice Gulpease</strong>: 89 + (300 × frasi − 10 × caratteri) / parole. A differenza del Flesch-Kincaid standard, il Gulpease è stato sviluppato specificamente per la lingua italiana. Un punteggio superiore a 80 indica un testo facile per chi ha la licenza elementare; inferiore a 40 è leggibile solo per laureati.</p><p class=\"text-mid mt-3\">Sotto il campo di testo troverai 10 strumenti: conversione maiuscole/minuscole, rimozione spazi, righe vuote, duplicati e ordinamento. Tutto avviene localmente nel browser.</p>",
+      "html": "<p class=\"text-mid\">Questo strumento combina un contatore di parole e caratteri con analisi di leggibilità e funzioni di formattazione testo. Incolla il tuo testo per vedere parole, caratteri, sillabe, frasi, paragrafi, parole uniche, tempo di lettura, tempo di parlato e un punteggio di leggibilità colorato.</p><p class=\"text-mid mt-3\">Per i testi in italiano lo strumento utilizza l’<strong>indice Gulpease</strong>: 89 + (300 × frasi − 10 × caratteri) / parole. A differenza del Flesch-Kincaid standard, il Gulpease è stato sviluppato specificamente per la lingua italiana. Un punteggio superiore a 80 indica un testo facile per chi ha la licenza elementare; inferiore a 40 è leggibile solo per laureati.</p><p class=\"text-mid mt-3\">Sotto il campo di testo troverai 7 strumenti: conversione maiuscole/minuscole, rimozione spazi, righe vuote e duplicati. Tutto avviene localmente nel browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp",
       "imageAlt": "Contatore di parole e caratteri – Arteon"
     },
@@ -118,7 +116,7 @@
         {
           "icon": "RiTextWrap",
           "title": "3. Trasforma il testo",
-          "description": "Sotto il campo di testo troverai 10 strumenti di trasformazione."
+          "description": "Sotto il campo di testo troverai 7 strumenti di trasformazione."
         },
         {
           "icon": "RiFileCopyLine",
@@ -213,7 +211,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "10 strumenti di formattazione",
+      "title": "7 strumenti di formattazione",
       "description": "Sotto il campo di testo troverai pulsanti di trasformazione:",
       "grid": "two",
       "items": [
@@ -238,11 +236,6 @@
           "description": "Ogni parola inizia con maiuscola. Per titoli e nomi propri."
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "iNVERTI",
-          "description": "Scambia maiuscole e minuscole."
-        },
-        {
           "icon": "RiSpace",
           "title": "Rimuovi spazi extra",
           "description": "Riduce spazi multipli a uno solo."
@@ -256,16 +249,6 @@
           "icon": "RiFilterLine",
           "title": "Rimuovi duplicati",
           "description": "Mantiene solo righe uniche."
-        },
-        {
-          "icon": "RiSortAsc",
-          "title": "Ordina A→Z",
-          "description": "Ordina le righe in ordine alfabetico crescente."
-        },
-        {
-          "icon": "RiSortDesc",
-          "title": "Ordina Z→A",
-          "description": "Ordina le righe in ordine alfabetico decrescente."
         }
       ]
     },
@@ -345,8 +328,8 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 strumenti di formattazione",
-          "description": "Conversione maiuscole, rimozione spazi, righe vuote, duplicati e ordinamento – senza software aggiuntivo."
+          "title": "7 strumenti di formattazione",
+          "description": "Conversione maiuscole, rimozione spazi, righe vuote e duplicati – senza software aggiuntivo."
         },
         {
           "icon": "RiUserLine",

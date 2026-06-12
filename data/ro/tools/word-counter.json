@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Numără cuvinte și caractere – verifică timpul de citire și formatează",
-    "description": "Lipiți textul și instrumentul va număra cuvinte, caractere, propoziții, paragrafe, cuvinte unice și timp de citire. Schimbați majusculele, eliminați duplicatele sau sortați liniile",
+    "description": "Lipiți textul și instrumentul va număra cuvinte, caractere, propoziții, paragrafe, cuvinte unice și timp de citire. Schimbați majusculele sau eliminați duplicatele",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -36,11 +36,10 @@
         "Calculator timp de vorbire",
         "Instrument lizibilitate text",
         "Elimină linii duplicate din text",
-        "Sortare linii text alfabetic",
         "Numărător de cuvinte și caractere gratuit"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Contor gratuit de cuvinte și caractere cu instrumente de formatare a textului. Numără cuvinte, caractere, propoziții, paragrafe, cuvinte unice și timp de citire. Oferă 10 instrumente: conversie litere, eliminare spații, linii goale, duplicate și sortare.",
+      "description": "Contor gratuit de cuvinte și caractere cu instrumente de formatare a textului. Numără cuvinte, caractere, propoziții, paragrafe, cuvinte unice și timp de citire. Oferă 7 instrumente: conversie litere, eliminare spații, linii goale și duplicate.",
       "featureList": [
         "Numărare cuvinte",
         "Numărare caractere cu și fără spații",
@@ -54,10 +53,8 @@
         "Formule de lizibilitate adaptate (16 limbi)",
         "Conversie în majuscule sau minuscule",
         "Conversie în stil de propoziție sau de titlu",
-        "Inversarea majusculelor/minusculelor",
         "Eliminarea spațiilor inutile",
         "Eliminarea liniilor goale și a duplicatelor",
-        "Sortare linii A–Z și Z–A",
         "Copierea textului în clipboard"
       ]
     },
@@ -76,7 +73,7 @@
         },
         {
           "name": "Transformați textul",
-          "text": "Sub câmpul de text veți găsi 10 instrumente de transformare."
+          "text": "Sub câmpul de text veți găsi 7 instrumente de transformare."
         },
         {
           "name": "Copiați rezultatul",
@@ -93,7 +90,7 @@
     {
       "type": "sectionBasic",
       "title": "Contor de cuvinte și caractere cu instrumente text",
-      "html": "<p class=\"text-mid\">Acest instrument combină un contor de cuvinte și caractere cu analiza lizibilității Flesch-Kincaid și funcții de formatare text. Lipește textul pentru a vedea cuvinte, caractere, silabe, propoziții, paragrafe, cuvinte unice, timp de citire, timp de vorbire și un scor de lizibilitate colorat.</p><p class=\"text-mid mt-3\"><strong>Scorul Flesch-Kincaid</strong> (0–100) arată cât de ușor este de citit textul. Scoruri peste 70 înseamnă text ușor, sub 30 nivel academic. Instrumentul folosește formule adaptate pentru 16 limbi.</p><p class=\"text-mid mt-3\">Sub câmpul de text vei găsi 10 instrumente: conversie majuscule/minuscule, eliminare spații, linii goale, duplicate și sortare. Toată procesarea are loc local în browser.</p>",
+      "html": "<p class=\"text-mid\">Acest instrument combină un contor de cuvinte și caractere cu analiza lizibilității Flesch-Kincaid și funcții de formatare text. Lipește textul pentru a vedea cuvinte, caractere, silabe, propoziții, paragrafe, cuvinte unice, timp de citire, timp de vorbire și un scor de lizibilitate colorat.</p><p class=\"text-mid mt-3\"><strong>Scorul Flesch-Kincaid</strong> (0–100) arată cât de ușor este de citit textul. Scoruri peste 70 înseamnă text ușor, sub 30 nivel academic. Instrumentul folosește formule adaptate pentru 16 limbi.</p><p class=\"text-mid mt-3\">Sub câmpul de text vei găsi 7 instrumente: conversie majuscule/minuscule, eliminare spații, linii goale și duplicate. Toată procesarea are loc local în browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contor-cuvinte-si-caractere-ro.webp",
       "imageAlt": "Contor de cuvinte și caractere – Arteon"
     },
@@ -120,7 +117,7 @@
         {
           "icon": "RiTextWrap",
           "title": "3. Transformați textul",
-          "description": "Sub câmpul de text veți găsi 10 instrumente de transformare."
+          "description": "Sub câmpul de text veți găsi 7 instrumente de transformare."
         },
         {
           "icon": "RiFileCopyLine",
@@ -215,7 +212,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "10 instrumente de formatare",
+      "title": "7 instrumente de formatare",
       "description": "Sub câmpul de text veți găsi butoane de transformare:",
       "grid": "two",
       "items": [
@@ -240,11 +237,6 @@
           "description": "Fiecare cuvânt începe cu majusculă. Ideal pentru titluri, anteturi și nume proprii."
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "iNVERSARE",
-          "description": "Schimbă majusculele cu minuscule și invers. Util când textul a fost scris cu Caps Lock activat."
-        },
-        {
           "icon": "RiSpace",
           "title": "Elimină spațiile extra",
           "description": "Reduce spațiile multiple la unul singur și elimină spațiile de la începutul și sfârșitul fiecărei linii."
@@ -258,16 +250,6 @@
           "icon": "RiFilterLine",
           "title": "Elimină liniile duplicate",
           "description": "Păstrează doar liniile unice, eliminând repetițiile. Util pentru curățarea listelor și datelor."
-        },
-        {
-          "icon": "RiSortAsc",
-          "title": "Sortare A→Z",
-          "description": "Sortează liniile alfabetic în ordine crescătoare. Util pentru organizarea listelor și datelor."
-        },
-        {
-          "icon": "RiSortDesc",
-          "title": "Sortare Z→A",
-          "description": "Sortează liniile alfabetic în ordine descrescătoare. Ordine inversă."
         }
       ]
     },
@@ -289,7 +271,7 @@
         {
           "icon": "RiBloggerLine",
           "title": "Bloggeri și creatori de conținut",
-          "description": "Monitorizarea lungimii postărilor, verificarea timpului de citire, eliminarea liniilor duplicate și sortarea listelor."
+          "description": "Monitorizarea lungimii postărilor, verificarea timpului de citire, eliminarea liniilor duplicate."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -347,8 +329,8 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 instrumente de formatare",
-          "description": "Conversie majuscule, eliminare spații, linii goale, duplicate și sortare - fără a instala software suplimentar."
+          "title": "7 instrumente de formatare",
+          "description": "Conversie majuscule, eliminare spații, linii goale și duplicate - fără a instala software suplimentar."
         },
         {
           "icon": "RiUserLine",

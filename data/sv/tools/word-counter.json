@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Räkna ord och tecken – kontrollera lästid och formatera text",
-    "description": "Klistra in din text och verktyget räknar ord, tecken, meningar, stycken, unika ord och lästid. Ändra versaler, ta bort dubbletter eller sortera rader",
+    "description": "Klistra in din text och verktyget räknar ord, tecken, meningar, stycken, unika ord och lästid. Ändra versaler eller ta bort dubbletter",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -36,11 +36,10 @@
         "Taltidskalkylator",
         "Läsbarhetsverktyg",
         "Ta bort dubbletter från text",
-        "Sortera textrader alfabetiskt",
         "Gratis ord- och teckenräknare"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis ord- och teckenräknare med textformateringsverktyg. Räknar ord, tecken, meningar, stycken, unika ord och lästid. Erbjuder 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering.",
+      "description": "Gratis ord- och teckenräknare med textformateringsverktyg. Räknar ord, tecken, meningar, stycken, unika ord och lästid. Erbjuder 7 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader och dubbletter.",
       "featureList": [
         "Räkning av ord",
         "Räkning av tecken med och utan mellanslag",
@@ -54,10 +53,8 @@
         "Språkspecifika läsbarhetsformler (16 språk)",
         "Konvertera till versaler eller gemener",
         "Konvertera till menings- eller titelstil",
-        "Invertera versaler/gemener",
         "Ta bort överflödiga mellanslag",
         "Ta bort tomma rader och dubbletter",
-        "Sortera rader A–Z och Z–A",
         "Kopiera text till urklipp"
       ]
     },
@@ -76,7 +73,7 @@
         },
         {
           "name": "Transformera text",
-          "text": "Under textfältet hittar du 10 transformationsverktyg."
+          "text": "Under textfältet hittar du 7 transformationsverktyg."
         },
         {
           "name": "Kopiera resultatet",
@@ -93,7 +90,7 @@
     {
       "type": "sectionBasic",
       "title": "Gratis ord- och teckenräknare med textverktyg",
-      "html": "<p class=\"text-mid\">Det här verktyget kombinerar en ord- och teckenräknare med Flesch-Kincaid läsbarhetsanalys och textformateringsverktyg. Klistra in din text för att se ord, tecken, stavelser, meningar, stycken, unika ord, lästid, taltid och en färgkodad läsbarhetspoäng.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid läsbarhetspoäng</strong> (0–100) visar hur lätt texten är att läsa. Poäng över 70 innebär lättläst text, under 30 akademisk nivå.</p><p class=\"text-mid mt-3\">Under textfältet finns 10 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering. All bearbetning sker lokalt i webbläsaren.</p>",
+      "html": "<p class=\"text-mid\">Det här verktyget kombinerar en ord- och teckenräknare med Flesch-Kincaid läsbarhetsanalys och textformateringsverktyg. Klistra in din text för att se ord, tecken, stavelser, meningar, stycken, unika ord, lästid, taltid och en färgkodad läsbarhetspoäng.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid läsbarhetspoäng</strong> (0–100) visar hur lätt texten är att läsa. Poäng över 70 innebär lättläst text, under 30 akademisk nivå.</p><p class=\"text-mid mt-3\">Under textfältet finns 7 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader och dubbletter. All bearbetning sker lokalt i webbläsaren.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp",
       "imageAlt": "Ord- och teckenräknare – Arteon"
     },
@@ -120,7 +117,7 @@
         {
           "icon": "RiTextWrap",
           "title": "3. Transformera text",
-          "description": "Under textfältet hittar du 10 transformationsverktyg."
+          "description": "Under textfältet hittar du 7 transformationsverktyg."
         },
         {
           "icon": "RiFileCopyLine",
@@ -215,7 +212,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "10 textformateringsverktyg",
+      "title": "7 textformateringsverktyg",
       "description": "Under textfältet hittar du knappar för snabb transformation:",
       "grid": "two",
       "items": [
@@ -240,11 +237,6 @@
           "description": "Varje ord börjar med versal. Perfekt för titlar, rubriker och egennamn."
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "iNVERTERA",
-          "description": "Växlar versaler till gemener och tvärtom. Användbart när text skrevs med Caps Lock aktiverat."
-        },
-        {
           "icon": "RiSpace",
           "title": "Ta bort extra mellanslag",
           "description": "Reducerar flera mellanslag till ett och tar bort mellanslag i början och slutet av varje rad."
@@ -258,16 +250,6 @@
           "icon": "RiFilterLine",
           "title": "Ta bort dubbletter",
           "description": "Behåller bara unika rader och tar bort upprepningar. Användbart för att rensa listor och data."
-        },
-        {
-          "icon": "RiSortAsc",
-          "title": "Sortera A→Z",
-          "description": "Sorterar rader alfabetiskt i stigande ordning. Användbart för att organisera listor och data."
-        },
-        {
-          "icon": "RiSortDesc",
-          "title": "Sortera Z→A",
-          "description": "Sorterar rader alfabetiskt i fallande ordning. Omvänd sorteringsordning."
         }
       ]
     },
@@ -289,7 +271,7 @@
         {
           "icon": "RiBloggerLine",
           "title": "Bloggare och innehållsskapare",
-          "description": "Övervaka inläggslängd, kontrollera lästid, ta bort dubbletter och sortera listor."
+          "description": "Övervaka inläggslängd, kontrollera lästid och ta bort dubbletter."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -347,8 +329,8 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formateringsverktyg",
-          "description": "Versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering - utan extra programvara."
+          "title": "7 formateringsverktyg",
+          "description": "Versalkonvertering, borttagning av mellanslag, tomma rader och dubbletter - utan extra programvara."
         },
         {
           "icon": "RiUserLine",

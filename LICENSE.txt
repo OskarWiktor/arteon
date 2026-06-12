@@ -1,0 +1,16 @@
+Copyright (c) 2026 Arteon
+Wszelkie prawa zastrzeżone. / All rights reserved.
+
+Zezwala się na przeglądanie kodu źródłowego tego repozytorium wyłącznie w celach edukacyjnych i informacyjnych bezpośrednio na platformie GitHub. 
+
+Niedozwolone jest kopiowanie, modyfikowanie, rozpowszechnianie, sublicencjonowanie, sprzedaż, wypożyczanie ani jakiekolwiek inne wykorzystywanie kodu źródłowego, plików oraz powiązanej dokumentacji (w całości lub w części) bez uprzedniej, wyraźnej i pisemnej zgody autora.
+
+Kod jest dostarczany w stanie, w jakim się znajduje ("as is"), bez jakichkolwiek gwarancji.
+
+---
+
+Permission is hereby granted to view the source code of this repository solely for educational and informational purposes directly on the GitHub platform.
+
+Copying, modifying, distributing, sublicensing, selling, renting, or any other use of the source code, files, and associated documentation (in whole or in part) is strictly prohibited without the prior, express, and written consent of the author.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.

@@ -85,7 +85,7 @@ export default function Breadcrumbs({
             <InlineLink href='/' variant='default' aria-label={t.home}>
               <RiHomeLine
                 className={cn(
-                  'text-medium mt-2 text-primary-mid',
+                  'text-medium text-primary-mid',
                   smallIconSizeClasses,
                 )}
               />

@@ -22,11 +22,8 @@
   "lowercase": "malá písmena",
   "sentenceCase": "Začátek věty",
   "titleCase": "Každé Slovo Velké",
-  "toggleCase": "pŘEPNOUT vELKOST",
   "removeExtraSpaces": "Odstranit nadbytečné mezery",
   "removeEmptyLines": "Odstranit prázdné řádky",
   "removeDuplicateLines": "Odstranit duplicitní řádky",
-  "sortAsc": "Seřadit A→Z",
-  "sortDesc": "Seřadit Z→A",
   "readabilityHint": "Pro webový obsah v češtině miřte na 50–70."
 }

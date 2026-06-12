@@ -22,11 +22,8 @@
   "lowercase": "gemener",
   "sentenceCase": "Meningsstart",
   "titleCase": "Varje Ord Stort",
-  "toggleCase": "vÄXLA sTORLEK",
   "removeExtraSpaces": "Ta bort extra mellanslag",
   "removeEmptyLines": "Ta bort tomma rader",
   "removeDuplicateLines": "Ta bort dubbletter",
-  "sortAsc": "Sortera A→Ö",
-  "sortDesc": "Sortera Ö→A",
   "readabilityHint": "För webbinnehåll på svenska, sikta på 50–70."
 }

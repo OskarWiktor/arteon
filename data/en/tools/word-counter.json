@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Count words and characters – check reading time and format text",
-    "description": "Paste your text and the tool will count words, characters, sentences, paragraphs, unique words and reading time. Change letter case, remove duplicates or sort lines with one click",
+    "description": "Paste your text and the tool will count words, characters, sentences, paragraphs, unique words and reading time. Change letter case or remove duplicates with one click",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp"
   },
   "breadcrumbs": {
@@ -38,7 +38,7 @@
         "Remove duplicate lines from text"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 10 tools: letter case conversion, removing spaces, empty lines, duplicates, and sorting.",
+      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 7 tools: letter case conversion, removing spaces, empty lines, and duplicates.",
       "featureList": [
         "Word count",
         "Character count with and without spaces",
@@ -52,16 +52,14 @@
         "Language-adapted readability formulas (16 languages)",
         "Convert to uppercase or lowercase",
         "Convert to sentence case or title case",
-        "Toggle letter case",
         "Remove extra spaces",
         "Remove empty lines and duplicates",
-        "Sort lines A-Z and Z-A",
         "Copy text to clipboard"
       ]
     },
     "howTo": {
       "name": "How to use the word and character counter",
-      "description": "Count words, characters, syllables and sentences in your text. Check Flesch-Kincaid readability, reading time and speaking time. Use tools to change letter case, remove duplicates or sort lines.",
+      "description": "Count words, characters, syllables and sentences in your text. Check Flesch-Kincaid readability, reading time and speaking time. Use tools to change letter case or remove duplicates.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -74,7 +72,7 @@
         },
         {
           "name": "Use text tools",
-          "text": "Below the text field you will find a toolbar with 10 tools: letter case conversion, removing spaces, empty lines, duplicates and sorting lines."
+          "text": "Below the text field you will find a toolbar with 7 tools: letter case conversion, removing spaces, empty lines and duplicates."
         },
         {
           "name": "Copy the result",
@@ -91,7 +89,7 @@
     {
       "type": "sectionBasic",
       "title": "Free word and character counter with text tools",
-      "html": "<p class=\"text-mid\">This tool combines a word and character counter with Flesch-Kincaid readability analysis and a set of text formatting functions. Paste your text and you will see the word count, characters, syllables, sentences, paragraphs, unique words, estimated reading time, speaking time, and a color-coded readability score.</p><p class=\"text-mid mt-3\">The <strong>Flesch-Kincaid readability score</strong> (0–100) tells you how easy your text is to read. Scores above 70 indicate easy reading (suitable for a broad audience), while scores below 30 indicate academic-level complexity. The tool uses language-adapted formulas for 16 languages, including Amstad (German), Fernandez-Huerta (Spanish), and Gulpease (Italian).</p><p class=\"text-mid mt-3\">Below the text field you will find a toolbar with 10 tools: letter case conversion (UPPERCASE, lowercase, Sentence case, Title Case), removing extra spaces, empty lines and duplicates, and alphabetical sorting. All analysis and processing happens locally in your browser.</p>",
+      "html": "<p class=\"text-mid\">This tool combines a word and character counter with Flesch-Kincaid readability analysis and a set of text formatting functions. Paste your text and you will see the word count, characters, syllables, sentences, paragraphs, unique words, estimated reading time, speaking time, and a color-coded readability score.</p><p class=\"text-mid mt-3\">The <strong>Flesch-Kincaid readability score</strong> (0–100) tells you how easy your text is to read. Scores above 70 indicate easy reading (suitable for a broad audience), while scores below 30 indicate academic-level complexity. The tool uses language-adapted formulas for 16 languages, including Amstad (German), Fernandez-Huerta (Spanish), and Gulpease (Italian).</p><p class=\"text-mid mt-3\">Below the text field you will find a toolbar with 7 tools: letter case conversion (UPPERCASE, lowercase, Sentence case, Title Case), removing extra spaces, empty lines and duplicates. All analysis and processing happens locally in your browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp",
       "imageAlt": "Word and character counter – Arteon"
     },
@@ -118,7 +116,7 @@
         {
           "icon": "RiTextWrap",
           "title": "3. Transform text",
-          "description": "Below the text field you will find a toolbar with 10 tools: letter case conversion, removing spaces, empty lines, duplicates and sorting lines."
+          "description": "Below the text field you will find a toolbar with 7 tools: letter case conversion, removing spaces, empty lines and duplicates."
         },
         {
           "icon": "RiFileCopyLine",
@@ -200,7 +198,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "10 text formatting tools",
+      "title": "7 text formatting tools",
       "description": "Below the text field you will find a toolbar with buttons for quick text transformation:",
       "grid": "two",
       "items": [
@@ -225,11 +223,6 @@
           "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "tOGGLE cASE",
-          "description": "Swaps uppercase to lowercase and vice versa. Useful when text was typed with Caps Lock on."
-        },
-        {
           "icon": "RiSpace",
           "title": "Remove extra spaces",
           "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
@@ -243,16 +236,6 @@
           "icon": "RiFilterLine",
           "title": "Remove duplicate lines",
           "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
-        },
-        {
-          "icon": "RiSortAsc",
-          "title": "Sort A→Z",
-          "description": "Sorts text lines alphabetically in ascending order. Useful for organizing lists, keywords and data."
-        },
-        {
-          "icon": "RiSortDesc",
-          "title": "Sort Z→A",
-          "description": "Sorts text lines alphabetically in descending order. Reverse sort order."
         }
       ]
     },
@@ -274,7 +257,7 @@
         {
           "icon": "RiBloggerLine",
           "title": "Bloggers and content creators",
-          "description": "Monitor post length, check reading time, remove duplicate lines and sort lists."
+          "description": "Monitor post length, check reading time and remove duplicate lines."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -341,8 +324,8 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formatting tools",
-          "description": "Letter case conversion, removing spaces, empty lines, duplicates and sorting - without installing additional software."
+          "title": "7 formatting tools",
+          "description": "Letter case conversion, removing spaces, empty lines and duplicates - without installing additional software."
         },
         {
           "icon": "RiUserLine",
@@ -432,8 +415,8 @@
         },
         {
           "question": "How does the letter case conversion work?",
-          "answer": "The tool offers 5 conversion modes: UPPERCASE (all text to uppercase), lowercase (all to lowercase), Sentence case (first letter of each sentence capitalized), Title Case (first letter of each word capitalized) and tOGGLE cASE (swaps uppercase to lowercase and vice versa). Click the appropriate button on the toolbar below the text field.",
-          "answerSchemaText": "The tool has 5 letter case conversion modes: uppercase, lowercase, sentence case, title case and toggle case."
+          "answer": "The tool offers 4 conversion modes: UPPERCASE (all text to uppercase), lowercase (all to lowercase), Sentence case (first letter of each sentence capitalized) and Title Case (first letter of each word capitalized). Click the appropriate button on the toolbar below the text field.",
+          "answerSchemaText": "The tool has 4 letter case conversion modes: uppercase, lowercase, sentence case and title case."
         },
         {
           "question": "What does the 'unique words' metric mean?",

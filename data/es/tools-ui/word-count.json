@@ -22,11 +22,8 @@
   "lowercase": "minúsculas",
   "sentenceCase": "Como en oración",
   "titleCase": "Cada Palabra En Mayúscula",
-  "toggleCase": "iNVERTIR mAYÚSCULAS",
   "removeExtraSpaces": "Eliminar espacios extra",
   "removeEmptyLines": "Eliminar líneas vacías",
   "removeDuplicateLines": "Eliminar líneas duplicadas",
-  "sortAsc": "Ordenar A→Z",
-  "sortDesc": "Ordenar Z→A",
   "readabilityHint": "Para contenido web en español, apunta a 60–70."
 }

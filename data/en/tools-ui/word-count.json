@@ -23,10 +23,7 @@
   "lowercase": "lowercase",
   "sentenceCase": "Sentence case",
   "titleCase": "Title Case",
-  "toggleCase": "tOGGLE cASE",
   "removeExtraSpaces": "Remove extra spaces",
   "removeEmptyLines": "Remove empty lines",
-  "removeDuplicateLines": "Remove duplicate lines",
-  "sortAsc": "Sort A→Z",
-  "sortDesc": "Sort Z→A"
+  "removeDuplicateLines": "Remove duplicate lines"
 }

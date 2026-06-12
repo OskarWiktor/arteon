@@ -22,12 +22,9 @@ import {
   toLocaleLowerCase,
   toSentenceCase,
   toTitleCase,
-  toToggleCase,
   removeExtraSpaces,
   removeEmptyLines,
   removeDuplicateLines,
-  sortLinesAsc,
-  sortLinesDesc,
 } from '@/lib/tools/text/wordCount';
 import { smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
@@ -38,7 +35,7 @@ import { cn } from '@/lib/clsx';
  *
  * The component tracks editable `text` state, computes `metrics` via `analyzeText(text, locale)`,
  * and derives readability label/color. Toolbar actions transform the current text (case changes,
- * whitespace/line operations, sorting, deduplication). Copy and clear controls are disabled when
+ * whitespace/line operations, deduplication). Copy and clear controls are disabled when
  * the input is empty; toolbar buttons are disabled when there is no text.
  *
  * @returns A JSX element rendering the complete word count tool interface.
@@ -63,7 +60,6 @@ export default function WordCountTool() {
     { key: 'lowercase', label: t.lowercase, fn: toLocaleLowerCase },
     { key: 'sentenceCase', label: t.sentenceCase, fn: toSentenceCase },
     { key: 'titleCase', label: t.titleCase, fn: toTitleCase },
-    { key: 'toggleCase', label: t.toggleCase, fn: toToggleCase },
     {
       key: 'removeExtraSpaces',
       label: t.removeExtraSpaces,
@@ -79,8 +75,6 @@ export default function WordCountTool() {
       label: t.removeDuplicateLines,
       fn: removeDuplicateLines,
     },
-    { key: 'sortAsc', label: t.sortAsc, fn: sortLinesAsc },
-    { key: 'sortDesc', label: t.sortDesc, fn: sortLinesDesc },
   ];
 
   return (

@@ -22,11 +22,8 @@
   "lowercase": "små bokstaver",
   "sentenceCase": "Setningsstart",
   "titleCase": "Hvert Ord Stort",
-  "toggleCase": "bYTT sTØRRELSE",
   "removeExtraSpaces": "Fjern ekstra mellomrom",
   "removeEmptyLines": "Fjern tomme linjer",
   "removeDuplicateLines": "Fjern duplikater",
-  "sortAsc": "Sorter A→Z",
-  "sortDesc": "Sorter Z→A",
   "readabilityHint": "For nettinnhold på norsk, sikt mot 50–70."
 }

@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Tel woorden en tekens – controleer leestijd en formatteer tekst",
-    "description": "Plak uw tekst en de tool telt woorden, tekens, zinnen, alinea's, unieke woorden en leestijd. Wijzig hoofdletters, verwijder duplicaten of sorteer regels",
+    "description": "Plak uw tekst en de tool telt woorden, tekens, zinnen, alinea's, unieke woorden en leestijd. Wijzig hoofdletters of verwijder duplicaten",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp"
   },
   "breadcrumbs": {
@@ -38,7 +38,7 @@
         "Dubbele regels verwijderen"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis woord- en tekenteller met tekstopmaaktools. Telt woorden, tekens, zinnen, alinea's, unieke woorden en leestijd. Biedt 10 tools: hoofdletterconversie, spaties verwijderen, lege regels, duplicaten en sortering.",
+      "description": "Gratis woord- en tekenteller met tekstopmaaktools. Telt woorden, tekens, zinnen, alinea's, unieke woorden en leestijd. Biedt 7 tools: hoofdletterconversie, spaties verwijderen, lege regels en duplicaten.",
       "featureList": [
         "Woorden tellen",
         "Tekens met en zonder spaties",
@@ -52,10 +52,8 @@
         "Taalspecifieke formules (16 talen)",
         "Naar hoofdletters of kleine letters",
         "Zinsstijl of titelstijl",
-        "Hoofdletters omdraaien",
         "Extra spaties verwijderen",
         "Lege regels en duplicaten verwijderen",
-        "Regels A–Z en Z–A sorteren",
         "Tekst kopiëren naar klembord"
       ]
     },
@@ -74,7 +72,7 @@
         },
         {
           "name": "Transformeer tekst",
-          "text": "Onder het tekstveld vindt u 10 transformatietools."
+          "text": "Onder het tekstveld vindt u 7 transformatietools."
         },
         {
           "name": "Kopieer het resultaat",
@@ -91,7 +89,7 @@
     {
       "type": "sectionBasic",
       "title": "Gratis woorden- en tekenteller met teksttools",
-      "html": "<p class=\"text-mid\">Deze tool combineert een woord- en tekenteller met Flesch-Douma leesbaarheidanalyse en tekstopmaakfuncties. Plak je tekst en bekijk woorden, tekens, lettergrepen, zinnen, alinea’s, unieke woorden, leestijd, spreektijd en een kleurgecodeerde leesbaarheidsscore.</p><p class=\"text-mid mt-3\">De <strong>Flesch-Douma leesbaarheidsscore</strong> (0–100) is specifiek ontwikkeld voor het Nederlands: 206,835 − 0,93 × ASL − 77 × ASW. Scores boven 70 duiden op makkelijk leesbare tekst, onder 30 op academisch niveau. De tool past zich automatisch aan de taal aan.</p><p class=\"text-mid mt-3\">Onder het tekstveld vind je 10 tools: hoofdletterconversie, spaties, lege regels en duplicaten verwijderen en sorteren. Alles draait lokaal in je browser.</p>",
+      "html": "<p class=\"text-mid\">Deze tool combineert een woord- en tekenteller met Flesch-Douma leesbaarheidanalyse en tekstopmaakfuncties. Plak je tekst en bekijk woorden, tekens, lettergrepen, zinnen, alinea’s, unieke woorden, leestijd, spreektijd en een kleurgecodeerde leesbaarheidsscore.</p><p class=\"text-mid mt-3\">De <strong>Flesch-Douma leesbaarheidsscore</strong> (0–100) is specifiek ontwikkeld voor het Nederlands: 206,835 − 0,93 × ASL − 77 × ASW. Scores boven 70 duiden op makkelijk leesbare tekst, onder 30 op academisch niveau. De tool past zich automatisch aan de taal aan.</p><p class=\"text-mid mt-3\">Onder het tekstveld vind je 7 tools: hoofdletterconversie, spaties, lege regels en duplicaten verwijderen. Alles draait lokaal in je browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp",
       "imageAlt": "Woord- en tekenteller – Arteon"
     },
@@ -118,7 +116,7 @@
         {
           "icon": "RiTextWrap",
           "title": "3. Transformeer tekst",
-          "description": "Onder het tekstveld vindt u 10 transformatietools."
+          "description": "Onder het tekstveld vindt u 7 transformatietools."
         },
         {
           "icon": "RiFileCopyLine",
@@ -213,7 +211,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "10 tekstopmaaktools",
+      "title": "7 tekstopmaaktools",
       "description": "Onder het tekstveld vindt u knoppen voor snelle transformatie:",
       "grid": "two",
       "items": [
@@ -238,11 +236,6 @@
           "description": "Elk woord begint met een hoofdletter."
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "oMDRAAIEN",
-          "description": "Wisselt hoofdletters en kleine letters om."
-        },
-        {
           "icon": "RiSpace",
           "title": "Extra spaties verwijderen",
           "description": "Reduceert meerdere spaties tot één."
@@ -256,16 +249,6 @@
           "icon": "RiFilterLine",
           "title": "Duplicaten verwijderen",
           "description": "Behoudt alleen unieke regels."
-        },
-        {
-          "icon": "RiSortAsc",
-          "title": "Sorteren A→Z",
-          "description": "Sorteert regels alfabetisch oplopend."
-        },
-        {
-          "icon": "RiSortDesc",
-          "title": "Sorteren Z→A",
-          "description": "Sorteert regels alfabetisch aflopend."
         }
       ]
     },
@@ -345,8 +328,8 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 opmaaktools",
-          "description": "Hoofdletterconversie, spaties, lege regels, duplicaten en sorteren – zonder extra software."
+          "title": "7 opmaaktools",
+          "description": "Hoofdletterconversie, spaties, lege regels en duplicaten – zonder extra software."
         },
         {
           "icon": "RiUserLine",

@@ -22,11 +22,8 @@
   "lowercase": "kleine letters",
   "sentenceCase": "Zinsbegin hoofdletter",
   "titleCase": "Elk Woord Hoofdletter",
-  "toggleCase": "hOOFDLETTERS oMKEREN",
   "removeExtraSpaces": "Extra spaties verwijderen",
   "removeEmptyLines": "Lege regels verwijderen",
   "removeDuplicateLines": "Dubbele regels verwijderen",
-  "sortAsc": "Sorteren A→Z",
-  "sortDesc": "Sorteren Z→A",
   "readabilityHint": "Voor webcontent in het Nederlands, mik op 60–70."
 }

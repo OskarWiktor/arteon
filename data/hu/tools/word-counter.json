@@ -36,11 +36,10 @@
         "Beszédidő kalkulátor",
         "Szöveg olvashatósági eszköz",
         "Ismétlődő sorok eltávolítása",
-        "Sorok rendezése ábécérendben",
         "Ingyenes szó- és karakterszámláló"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Ingyenes szó- és karakterszámláló szövegformázó eszközökkel. Megszámolja a szavakat, karaktereket, mondatokat, bekezdéseket, egyedi szavakat és az olvasási időt. 10 eszközt kínál: kis-/nagybetű-konverzió, szóközök, üres sorok, duplikátumok eltávolítása és rendezés.",
+      "description": "Ingyenes szó- és karakterszámláló szövegformázó eszközökkel. Megszámolja a szavakat, karaktereket, mondatokat, bekezdéseket, egyedi szavakat és az olvasási időt. 7 eszközt kínál: kis-/nagybetű-konverzió, szóközök, üres sorok és duplikátumok eltávolítása.",
       "featureList": [
         "Szavak számlálása",
         "Karakterek számlálása szóközökkel és anélkül",
@@ -54,10 +53,8 @@
         "Nyelvspecifikus olvashatósági képletek (16 nyelv)",
         "Nagybetűsre vagy kisbetűsre konvertálás",
         "Mondatstílusra vagy címstílusra konvertálás",
-        "Kis-/nagybetűk megfordítása",
         "Felesleges szóközök eltávolítása",
         "Üres sorok és duplikátumok eltávolítása",
-        "Sorok rendezése A–Z és Z–A",
         "Szöveg vágólapra másolása"
       ]
     },
@@ -76,7 +73,7 @@
         },
         {
           "name": "Alakítsa át a szöveget",
-          "text": "A szövegmező alatt 10 átalakító eszközt talál."
+          "text": "A szövegmező alatt 7 átalakító eszközt talál."
         },
         {
           "name": "Másolja az eredményt",
@@ -93,7 +90,7 @@
     {
       "type": "sectionBasic",
       "title": "Ingyenes szó- és karakterszámláló szövegeszközökkel",
-      "html": "<p class=\"text-mid\">Ez az eszkoz otvozi a szo- es karakterszamlalot a Flesch-Kincaid olvashatosagi elemzessel es szovegformazo funkciokkal. Illeszd be a szoveget, es megjelenik a szavak, karakterek, szotagok, mondatok, bekezdések, egyedi szavak, olvasasi ido, beszedido es a szinkodolt olvashatosagi pontszam.</p><p class=\"text-mid mt-3\">A <strong>Flesch-Kincaid olvashatosagi pontszam</strong> (0–100) megmutatja, mennyire konnyu olvasni a szoveget. 70 feletti pontszam konnyu olvasast, 30 alatti akademiai szintet jelent.</p><p class=\"text-mid mt-3\">A szovegmezo alatt 10 eszkozt talalsz: kis-nagybetu atalakitas, szokozok, ures sorok, duplikatumok eltavolitasa es rendezes. Minden feldolgozas helyben, a bongeszoben tortenik.</p>",
+      "html": "<p class=\"text-mid\">Ez az eszkoz otvozi a szo- es karakterszamlalot a Flesch-Kincaid olvashatosagi elemzessel es szovegformazo funkciokkal. Illeszd be a szoveget, es megjelenik a szavak, karakterek, szotagok, mondatok, bekezdések, egyedi szavak, olvasasi ido, beszedido es a szinkodolt olvashatosagi pontszam.</p><p class=\"text-mid mt-3\">A <strong>Flesch-Kincaid olvashatosagi pontszam</strong> (0–100) megmutatja, mennyire konnyu olvasni a szoveget. 70 feletti pontszam konnyu olvasast, 30 alatti akademiai szintet jelent.</p><p class=\"text-mid mt-3\">A szovegmezo alatt 7 eszkozt talalsz: kis-nagybetu atalakitas, szokozok, ures sorok, duplikatumok eltavolitasa. Minden feldolgozas helyben, a bongeszoben tortenik.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp",
       "imageAlt": "Szó- és karakterszámláló – Arteon"
     },
@@ -120,7 +117,7 @@
         {
           "icon": "RiTextWrap",
           "title": "3. Alakítsa át a szöveget",
-          "description": "A szövegmező alatt 10 átalakító eszközt talál."
+          "description": "A szövegmező alatt 7 átalakító eszközt talál."
         },
         {
           "icon": "RiFileCopyLine",
@@ -215,7 +212,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "10 szövegformázó eszköz",
+      "title": "7 szövegformázó eszköz",
       "description": "A szövegmező alatt átalakító gombokat talál:",
       "grid": "two",
       "items": [
@@ -240,11 +237,6 @@
           "description": "Minden szó nagybetűvel kezdődik. Ideális címekhez, fejlécekhez és tulajdonnevekhez."
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "fORDÍTOTT",
-          "description": "A nagybetűket kisbetűkre cseréli és fordítva. Hasznos, ha a szöveget bekapcsolt Caps Lock-kal írták."
-        },
-        {
           "icon": "RiSpace",
           "title": "Extra szóközök eltávolítása",
           "description": "A többszörös szóközöket egyre csökkenti, és eltávolítja a sorok elején és végén lévő szóközöket."
@@ -258,16 +250,6 @@
           "icon": "RiFilterLine",
           "title": "Ismétlődő sorok eltávolítása",
           "description": "Csak az egyedi sorokat tartja meg, eltávolítva az ismétléseket. Hasznos listák és adatok tisztításához."
-        },
-        {
-          "icon": "RiSortAsc",
-          "title": "Rendezés A→Z",
-          "description": "A sorokat ábécérendbe rendezi növekvően. Hasznos listák és adatok rendezéséhez."
-        },
-        {
-          "icon": "RiSortDesc",
-          "title": "Rendezés Z→A",
-          "description": "A sorokat ábécérendbe rendezi csökkenően. Fordított rendezési sorrend."
         }
       ]
     },
@@ -289,7 +271,7 @@
         {
           "icon": "RiBloggerLine",
           "title": "Bloggerek és tartalomkészítők",
-          "description": "Bejegyzéshossz figyelemmel kísérése, olvasási idő ellenőrzése, ismétlődő sorok eltávolítása és listák rendezése."
+          "description": "Bejegyzéshossz figyelemmel kísérése, olvasási idő ellenőrzése, ismétlődő sorok eltávolítása."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -347,8 +329,8 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formázó eszköz",
-          "description": "Betűméret-átalakítás, szóközök, üres sorok, ismétlődések eltávolítása és rendezés - további szoftver telepítése nélkül."
+          "title": "7 formázó eszköz",
+          "description": "Betűméret-átalakítás, szóközök, üres sorok, ismétlődések eltávolítása - további szoftver telepítése nélkül."
         },
         {
           "icon": "RiUserLine",
