@@ -43,7 +43,7 @@
         "Konwerter wielkości liter"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Darmowy licznik słów i znaków po polsku z narzędziami do formatowania tekstu. Liczy słowa, znaki, zdania, akapity, unikalne wyrazy i czas czytania. Oferuje 10 narzędzi: zamiana wielkości liter, usuwanie spacji, pustych linii, duplikatów oraz sortowanie.",
+      "description": "Darmowy licznik słów i znaków po polsku z narzędziami do formatowania tekstu. Liczy słowa, znaki, zdania, akapity, unikalne wyrazy i czas czytania. Oferuje 7 narzędzi: zamiana wielkości liter, usuwanie spacji, pustych linii i duplikatów.",
       "featureList": [
         "Liczenie słów w tekście",
         "Liczenie znaków ze spacjami i bez spacji",
@@ -57,10 +57,8 @@
         "Formuły czytelności dostosowane do języka (16 języków)",
         "Zamiana na wielkie lub małe litery",
         "Zamiana na styl zdania lub tytułu",
-        "Odwracanie wielkości liter",
         "Usuwanie nadmiarowych spacji",
         "Usuwanie pustych linii i duplikatów",
-        "Sortowanie linii A-Z i Z-A",
         "Kopiowanie tekstu do schowka"
       ]
     },
@@ -79,7 +77,7 @@
         },
         {
           "name": "Użyj narzędzi tekstowych",
-          "text": "Pod polem tekstowym znajdziesz pasek z 10 narzędziami: zamiana wielkości liter, usuwanie spacji, pustych linii, duplikatów oraz sortowanie linii."
+          "text": "Pod polem tekstowym znajdziesz pasek z 7 narzędziami: zamiana wielkości liter, usuwanie spacji, pustych linii i duplikatów."
         },
         {
           "name": "Skopiuj wynik",
@@ -96,7 +94,7 @@
     {
       "type": "sectionBasic",
       "title": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu",
-      "html": "<p class=\"text-mid\">Narzędzie łączy licznik słów i znaków z analizą czytelności Flesch-Kincaid i zestawem funkcji do formatowania tekstu. Wklej tekst, a zobaczysz liczbę słów, znaków, sylab, zdań, akapitów, unikalnych wyrazów, szacowany czas czytania, czas mówienia i kolorowy wskaźnik czytelności.</p><p class=\"text-mid mt-3\"><strong>Wynik czytelności Flesch-Kincaid</strong> (0–100) mówi, jak łatwy do czytania jest tekst. Wynik powyżej 70 oznacza łatwy tekst (dla szerokiej publiczności), a poniżej 30 – poziom akademicki. Narzędzie używa formuł dostosowanych do 16 języków, w tym Amstad (niemiecki), Fernández-Huerta (hiszpański) i Gulpease (włoski).</p><p class=\"text-mid mt-3\">Pod polem tekstowym znajdziesz pasek z 10 narzędziami: zamiana wielkości liter (WIELKIE, małe, Jak w zdaniu, Każde Słowo Wielką), usuwanie nadmiarowych spacji, pustych linii i duplikatów oraz sortowanie linii alfabetycznie. Cała analiza i przetwarzanie tekstu odbywają się lokalnie w przeglądarce.</p>",
+      "html": "<p class=\"text-mid\">Narzędzie łączy licznik słów i znaków z analizą czytelności Flesch-Kincaid i zestawem funkcji do formatowania tekstu. Wklej tekst, a zobaczysz liczbę słów, znaków, sylab, zdań, akapitów, unikalnych wyrazów, szacowany czas czytania, czas mówienia i kolorowy wskaźnik czytelności.</p><p class=\"text-mid mt-3\"><strong>Wynik czytelności Flesch-Kincaid</strong> (0–100) mówi, jak łatwy do czytania jest tekst. Wynik powyżej 70 oznacza łatwy tekst (dla szerokiej publiczności), a poniżej 30 – poziom akademicki. Narzędzie używa formuł dostosowanych do 16 języków, w tym Amstad (niemiecki), Fernández-Huerta (hiszpański) i Gulpease (włoski).</p><p class=\"text-mid mt-3\">Pod polem tekstowym znajdziesz pasek z 7 narzędziami: zamiana wielkości liter (WIELKIE, małe, Jak w zdaniu, Każde Słowo Wielką), usuwanie nadmiarowych spacji, pustych linii i duplikatów. Cała analiza i przetwarzanie tekstu odbywają się lokalnie w przeglądarce.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/licznik-slow-i-znakow-pl.webp",
       "imageAlt": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu – Arteon"
     },
@@ -123,7 +121,7 @@
         {
           "icon": "RiTextWrap",
           "title": "3. Przekształć tekst",
-          "description": "Pod polem tekstowym znajdziesz pasek z 10 narzędziami: zamiana wielkości liter, usuwanie spacji, pustych linii, duplikatów i sortowanie linii."
+          "description": "Pod polem tekstowym znajdziesz pasek z 7 narzędziami: zamiana wielkości liter, usuwanie spacji, pustych linii i duplikatów."
         },
         {
           "icon": "RiFileCopyLine",
@@ -214,7 +212,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "10 narzędzi do formatowania tekstu",
+      "title": "7 narzędzi do formatowania tekstu",
       "description": "Pod polem tekstowym znajdziesz pasek z przyciskami do szybkiego przekształcania tekstu:",
       "grid": "two",
       "items": [
@@ -239,11 +237,6 @@
           "description": "Każde słowo zaczyna się wielką literą. Idealny do tytułów, nagłówków i nazw własnych."
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "Odwróć wielkość",
-          "description": "Zamienia wielkie litery na małe i odwrotnie. Przydatne, gdy przypadkowo napisano tekst z włączonym Caps Lock."
-        },
-        {
           "icon": "RiSpace",
           "title": "Usuń nadmiarowe spacje",
           "description": "Redukuje wielokrotne spacje do jednej i usuwa spacje na początku i końcu linii."
@@ -257,16 +250,6 @@
           "icon": "RiFilterLine",
           "title": "Usuń duplikaty linii",
           "description": "Pozostawia tylko unikalne linie, usuwając powtórzenia. Przydatne do czyszczenia list i danych."
-        },
-        {
-          "icon": "RiSortAsc",
-          "title": "Sortuj A→Z",
-          "description": "Sortuje linie tekstu alfabetycznie rosnąco. Przydatne do porządkowania list, słów kluczowych i danych."
-        },
-        {
-          "icon": "RiSortDesc",
-          "title": "Sortuj Z→A",
-          "description": "Sortuje linie tekstu alfabetycznie malejąco. Odwrotna kolejność sortowania."
         }
       ]
     },
@@ -288,7 +271,7 @@
         {
           "icon": "RiBloggerLine",
           "title": "Blogerzy i autorzy treści",
-          "description": "Kontrola długości wpisów, sprawdzanie czytelności i czasu czytania, usuwanie duplikatów linii i sortowanie list."
+          "description": "Kontrola długości wpisów, sprawdzanie czytelności i czasu czytania, usuwanie duplikatów linii."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -346,8 +329,8 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 narzędzi do formatowania",
-          "description": "Zamiana wielkości liter, usuwanie spacji, pustych linii, duplikatów i sortowanie – bez instalowania dodatkowych programów."
+          "title": "7 narzędzi do formatowania",
+          "description": "Zamiana wielkości liter, usuwanie spacji, pustych linii i duplikatów – bez instalowania dodatkowych programów."
         },
         {
           "icon": "RiUserLine",
@@ -419,8 +402,8 @@
         },
         {
           "question": "Jak działa zamiana wielkości liter?",
-          "answer": "Narzędzie oferuje 5 trybów zamiany: WIELKIE LITERY (cały tekst na wielkie), małe litery (cały na małe), Jak w zdaniu (pierwsza litera zdania wielka), Każde Słowo Wielką (pierwsza litera każdego słowa wielka) i Odwróć wielkość (zamiana wielkich na małe i odwrotnie). Kliknij odpowiedni przycisk na pasku narzędzi pod polem tekstowym.",
-          "answerSchemaText": "Narzędzie ma 5 trybów zamiany wielkości liter: wielkie, małe, jak w zdaniu, każde słowo wielką i odwracanie wielkości."
+          "answer": "Narzędzie oferuje 4 tryby zamiany: WIELKIE LITERY (cały tekst na wielkie), małe litery (cały na małe), Jak w zdaniu (pierwsza litera zdania wielka) i Każde Słowo Wielką (pierwsza litera każdego słowa wielka). Kliknij odpowiedni przycisk na pasku narzędzi pod polem tekstowym.",
+          "answerSchemaText": "Narzędzie ma 4 tryby zamiany wielkości liter: wielkie, małe, jak w zdaniu i każde słowo wielką."
         },
         {
           "question": "Co oznacza metryka unikalne słowa?",

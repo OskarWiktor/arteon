@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Laske sanat ja merkit – tarkista lukuaika ja muotoile teksti",
-    "description": "Liitä teksti ja työkalu laskee sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan. Muuta kirjainkoko, poista duplikaatit tai lajittele rivit",
+    "description": "Liitä teksti ja työkalu laskee sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan. Muuta kirjainkoko tai poista duplikaatit",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -36,11 +36,10 @@
         "Puheaikalaskin",
         "Luettavuustyökalu",
         "Poista kaksoisrivit tekstistä",
-        "Lajittele tekstirivit aakkosjärjestykseen",
         "Ilmainen sana- ja merkkilaskuri"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Ilmainen sana- ja merkkilaskuri tekstin muotoilutyökaluilla. Laskee sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan. Tarjoaa 10 työkalua: kirjainkoon muunnos, välilyöntien, tyhjien rivien ja kaksoiskappaleiden poisto sekä lajittelu.",
+      "description": "Ilmainen sana- ja merkkilaskuri tekstin muotoilutyökaluilla. Laskee sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan. Tarjoaa 7 työkalua: kirjainkoon muunnos sekä välilyöntien, tyhjien rivien ja kaksoiskappaleiden poisto.",
       "featureList": [
         "Sanojen laskenta",
         "Merkkien laskenta välilyönneillä ja ilman",
@@ -54,10 +53,8 @@
         "Kielikohtaiset luettavuuskaavat (16 kieltä)",
         "Muunna isoiksi tai pieniksi kirjaimiksi",
         "Muunna lause- tai otsikkotyyliin",
-        "Käännä kirjainkoko",
         "Poista ylimääräiset välilyönnit",
         "Poista tyhjät rivit ja kaksoiskappaleet",
-        "Lajittele rivit A–Z ja Z–A",
         "Kopioi teksti leikepöydälle"
       ]
     },
@@ -76,7 +73,7 @@
         },
         {
           "name": "Muunna teksti",
-          "text": "Tekstikentän alla löydät 10 muunnostyökalua."
+          "text": "Tekstikentän alla löydät 7 muunnostyökalua."
         },
         {
           "name": "Kopioi tulos",
@@ -93,7 +90,7 @@
     {
       "type": "sectionBasic",
       "title": "Ilmainen sana- ja merkkilaskuri tekstityökaluilla",
-      "html": "<p class=\"text-mid\">Tämä työkalu yhdistää sana- ja merkkilaskurin Flesch-Kincaid-luettavuusanalyysiin ja tekstin muotoilutyökaluihin. Liitä teksti nähdäksesi sanat, merkit, tavut, lauseet, kappaleet, uniikit sanat, lukuajan, puheajan ja värikoodatun luettavuuspistemäärän.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid-luettavuuspistemäärä</strong> (0–100) kertoo, kuinka helppoa teksti on lukea. Yli 70 tarkoittaa helppoa, alle 30 akateemista tasoa. Suomen <strong>laki digitaalisten palvelujen tarjoamisesta (306/2019)</strong> edellyttää saavutettavuutta julkisilta palveluilta – hyvä luettavuus on osa saavutettavuutta.</p><p class=\"text-mid mt-3\">Tekstikentän alla on 10 työkalua: kirjainkoon muunnos, välilyöntien, tyhjien rivien, kaksoiskappalerivien poisto ja lajittelu. Kaikki käsittely tapahtuu paikallisesti selaimessa.</p>",
+      "html": "<p class=\"text-mid\">Tämä työkalu yhdistää sana- ja merkkilaskurin Flesch-Kincaid-luettavuusanalyysiin ja tekstin muotoilutyökaluihin. Liitä teksti nähdäksesi sanat, merkit, tavut, lauseet, kappaleet, uniikit sanat, lukuajan, puheajan ja värikoodatun luettavuuspistemäärän.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid-luettavuuspistemäärä</strong> (0–100) kertoo, kuinka helppoa teksti on lukea. Yli 70 tarkoittaa helppoa, alle 30 akateemista tasoa. Suomen <strong>laki digitaalisten palvelujen tarjoamisesta (306/2019)</strong> edellyttää saavutettavuutta julkisilta palveluilta – hyvä luettavuus on osa saavutettavuutta.</p><p class=\"text-mid mt-3\">Tekstikentän alla on 7 työkalua: kirjainkoon muunnos sekä välilyöntien, tyhjien rivien ja kaksoiskappalerivien poisto. Kaikki käsittely tapahtuu paikallisesti selaimessa.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp",
       "imageAlt": "Sana- ja merkkimäärälaskuri – Arteon"
     },
@@ -120,7 +117,7 @@
         {
           "icon": "RiTextWrap",
           "title": "3. Muunna teksti",
-          "description": "Tekstikentän alla löydät 10 muunnostyökalua."
+          "description": "Tekstikentän alla löydät 7 muunnostyökalua."
         },
         {
           "icon": "RiFileCopyLine",
@@ -215,7 +212,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "10 tekstinmuokkaustyökalua",
+      "title": "7 tekstinmuokkaustyökalua",
       "description": "Tekstikentän alla löydät painikkeet nopeaan muuntamiseen:",
       "grid": "two",
       "items": [
@@ -240,11 +237,6 @@
           "description": "Jokainen sana alkaa isolla kirjaimella. Ihanteellinen otsikoille ja erisnimille."
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "kÄÄNTEINEN",
-          "description": "Vaihtaa isot kirjaimet pieniksi ja päinvastoin. Hyödyllinen, kun teksti kirjoitettiin Caps Lock päällä."
-        },
-        {
           "icon": "RiSpace",
           "title": "Poista ylimääräiset välit",
           "description": "Vähentää useat välilyönnit yhteen ja poistaa välit rivien alusta ja lopusta."
@@ -258,16 +250,6 @@
           "icon": "RiFilterLine",
           "title": "Poista kaksoiskappalerivit",
           "description": "Säilyttää vain uniikit rivit ja poistaa toistot. Hyödyllinen listojen ja datan puhdistamiseen."
-        },
-        {
-          "icon": "RiSortAsc",
-          "title": "Lajittele A→Ö",
-          "description": "Lajittelee rivit aakkosjärjestykseen nousevasti. Hyödyllinen listojen ja datan järjestämiseen."
-        },
-        {
-          "icon": "RiSortDesc",
-          "title": "Lajittele Ö→A",
-          "description": "Lajittelee rivit aakkosjärjestykseen laskevasti. Käänteinen lajittelujärjestys."
         }
       ]
     },
@@ -289,7 +271,7 @@
         {
           "icon": "RiBloggerLine",
           "title": "Bloggaajat ja sisällöntuottajat",
-          "description": "Seuraa julkaisun pituutta, tarkista lukuaika, poista kaksoiskappalerivit ja lajittele listoja."
+          "description": "Seuraa julkaisun pituutta, tarkista lukuaika ja poista kaksoiskappalerivit."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -347,8 +329,8 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 muokkaustyökalua",
-          "description": "Kirjainkoon muunnos, välilyöntien, tyhjien rivien ja kaksoiskappalerivien poisto sekä lajittelu - ilman lisäohjelmistoa."
+          "title": "7 muokkaustyökalua",
+          "description": "Kirjainkoon muunnos sekä välilyöntien, tyhjien rivien ja kaksoiskappalerivien poisto - ilman lisäohjelmistoa."
         },
         {
           "icon": "RiUserLine",

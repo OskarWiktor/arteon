@@ -22,11 +22,8 @@
   "lowercase": "kisbetűs",
   "sentenceCase": "Mondatkezdő nagybetű",
   "titleCase": "Minden Szó Nagybetűvel",
-  "toggleCase": "nAGY/kIS cSERE",
   "removeExtraSpaces": "Felesleges szóközök eltávolítása",
   "removeEmptyLines": "Üres sorok eltávolítása",
   "removeDuplicateLines": "Ismétlődő sorok eltávolítása",
-  "sortAsc": "Rendezés A→Z",
-  "sortDesc": "Rendezés Z→A",
   "readabilityHint": "Webes tartalmakhoz magyarul célozz 50–70-re."
 }

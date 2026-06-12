@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Tæl ord og tegn – kontrollér læsetid og formatér tekst",
-    "description": "Indsæt din tekst, og værktøjet tæller ord, tegn, sætninger, afsnit, unikke ord og læsetid. Skift store bogstaver, fjern duplikater eller sortér linjer",
+    "description": "Indsæt din tekst, og værktøjet tæller ord, tegn, sætninger, afsnit, unikke ord og læsetid. Skift store bogstaver eller fjern duplikater",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -36,11 +36,10 @@
         "Taletidskalkulator",
         "Læsbarheds-værktøj",
         "Fjern duplikerede linjer fra tekst",
-        "Sorter tekstlinjer alfabetisk",
         "Gratis ord- og tegntæller"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis ord- og tegntæller med tekstformateringsværktøjer. Tæller ord, tegn, sætninger, afsnit, unikke ord og læsetid. Tilbyder 10 værktøjer: ændring af store/små bogstaver, fjernelse af mellemrum, tomme linjer, duplikater og sortering.",
+      "description": "Gratis ord- og tegntæller med tekstformateringsværktøjer. Tæller ord, tegn, sætninger, afsnit, unikke ord og læsetid. Tilbyder 7 værktøjer: ændring af store/små bogstaver, fjernelse af mellemrum, tomme linjer og duplikater.",
       "featureList": [
         "Optælling af ord",
         "Optælling af tegn med og uden mellemrum",
@@ -54,10 +53,8 @@
         "Sprogspecifikke læsbarhedsformler (16 sprog)",
         "Konvertér til store eller små bogstaver",
         "Konvertér til sætnings- eller titelstil",
-        "Invertér store/små bogstaver",
         "Fjern overflødige mellemrum",
         "Fjern tomme linjer og duplikater",
-        "Sortér linjer A–Z og Z–A",
         "Kopiér tekst til udklipsholder"
       ]
     },
@@ -76,7 +73,7 @@
         },
         {
           "name": "Transformer tekst",
-          "text": "Under tekstfeltet finder du 10 transformationsværktøjer."
+          "text": "Under tekstfeltet finder du 7 transformationsværktøjer."
         },
         {
           "name": "Kopiér resultatet",
@@ -93,7 +90,7 @@
     {
       "type": "sectionBasic",
       "title": "Gratis ord- og tegntæller med tekstværktøjer",
-      "html": "<p class=\"text-mid\">Dette værktøj kombinerer en ord- og tegntæller med Flesch-Kincaid læsbarheds­analyse og tekstformateringsværktøjer. Indsæt din tekst for at se ord, tegn, stavelser, sætninger, afsnit, unikke ord, læsetid, taletid og en farvekodet læsbarhedsscore.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid læsbarhedsscore</strong> (0–100) viser, hvor let teksten er at læse. Score over 70 betyder letlæselig tekst, under 30 akademisk niveau. Værktøjet tilpasser formlen efter tekstens sprog.</p><p class=\"text-mid mt-3\">Under tekstfeltet finder du 10 værktøjer: bogstavkonvertering, fjernelse af mellemrum, tomme linjer, duplikater og sortering. Alt kører lokalt i browseren.</p>",
+      "html": "<p class=\"text-mid\">Dette værktøj kombinerer en ord- og tegntæller med Flesch-Kincaid læsbarheds­analyse og tekstformateringsværktøjer. Indsæt din tekst for at se ord, tegn, stavelser, sætninger, afsnit, unikke ord, læsetid, taletid og en farvekodet læsbarhedsscore.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid læsbarhedsscore</strong> (0–100) viser, hvor let teksten er at læse. Score over 70 betyder letlæselig tekst, under 30 akademisk niveau. Værktøjet tilpasser formlen efter tekstens sprog.</p><p class=\"text-mid mt-3\">Under tekstfeltet finder du 7 værktøjer: bogstavkonvertering, fjernelse af mellemrum, tomme linjer og duplikater. Alt kører lokalt i browseren.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegntaeller-da.webp",
       "imageAlt": "Ord- og tegntæller – Arteon"
     },
@@ -120,7 +117,7 @@
         {
           "icon": "RiTextWrap",
           "title": "3. Transformer tekst",
-          "description": "Under tekstfeltet finder du 10 transformationsværktøjer."
+          "description": "Under tekstfeltet finder du 7 transformationsværktøjer."
         },
         {
           "icon": "RiFileCopyLine",
@@ -215,7 +212,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "10 tekstformateringsværktøjer",
+      "title": "7 tekstformateringsværktøjer",
       "description": "Under tekstfeltet finder du knapper til hurtig transformation:",
       "grid": "two",
       "items": [
@@ -240,11 +237,6 @@
           "description": "Hvert ord starter med stort bogstav. Ideel til titler, overskrifter og egennavne."
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "oMVENDT",
-          "description": "Skifter store bogstaver til små og omvendt. Nyttigt når tekst blev skrevet med Caps Lock tændt."
-        },
-        {
           "icon": "RiSpace",
           "title": "Fjern ekstra mellemrum",
           "description": "Reducerer flere mellemrum til ét og fjerner mellemrum i begyndelsen og slutningen af hver linje."
@@ -258,16 +250,6 @@
           "icon": "RiFilterLine",
           "title": "Fjern duplikerede linjer",
           "description": "Beholder kun unikke linjer og fjerner gentagelser. Nyttigt til rensning af lister og data."
-        },
-        {
-          "icon": "RiSortAsc",
-          "title": "Sorter A→Z",
-          "description": "Sorterer linjer alfabetisk i stigende rækkefølge. Nyttigt til organisering af lister og data."
-        },
-        {
-          "icon": "RiSortDesc",
-          "title": "Sorter Z→A",
-          "description": "Sorterer linjer alfabetisk i faldende rækkefølge. Omvendt sorteringsrækkefølge."
         }
       ]
     },
@@ -289,7 +271,7 @@
         {
           "icon": "RiBloggerLine",
           "title": "Bloggere og indholdsskabere",
-          "description": "Overvåg indlægslængde, tjek læsetid, fjern duplikerede linjer og sorter lister."
+          "description": "Overvåg indlægslængde, tjek læsetid og fjern duplikerede linjer."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -347,8 +329,8 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formateringsværktøjer",
-          "description": "Bogstavstørrelsekonvertering, fjernelse af mellemrum, tomme linjer, duplikater og sortering - uden ekstra software."
+          "title": "7 formateringsværktøjer",
+          "description": "Bogstavstørrelsekonvertering, fjernelse af mellemrum, tomme linjer og duplikater - uden ekstra software."
         },
         {
           "icon": "RiUserLine",

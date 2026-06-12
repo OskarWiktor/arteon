@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Conte palavras e caracteres – verifique tempo de leitura e formate",
-    "description": "Cole o texto e a ferramenta contará palavras, caracteres, frases, parágrafos, palavras únicas e tempo de leitura. Altere maiúsculas, remova duplicados ou ordene linhas",
+    "description": "Cole o texto e a ferramenta contará palavras, caracteres, frases, parágrafos, palavras únicas e tempo de leitura. Altere maiúsculas ou remova duplicados",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp"
   },
   "breadcrumbs": {
@@ -38,7 +38,7 @@
         "Remover linhas duplicadas"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Contador gratuito de palavras e caracteres com ferramentas de formatação de texto. Conta palavras, caracteres, frases, parágrafos, palavras únicas e tempo de leitura. Oferece 10 ferramentas: conversão de maiúsculas, remoção de espaços, linhas vazias, duplicados e ordenação.",
+      "description": "Contador gratuito de palavras e caracteres com ferramentas de formatação de texto. Conta palavras, caracteres, frases, parágrafos, palavras únicas e tempo de leitura. Oferece 7 ferramentas: conversão de maiúsculas, remoção de espaços, linhas vazias e duplicados.",
       "featureList": [
         "Contagem de palavras",
         "Contagem de caracteres com e sem espaços",
@@ -52,10 +52,8 @@
         "Fórmulas de legibilidade adaptadas (16 idiomas)",
         "Converter para maiúsculas ou minúsculas",
         "Converter para formato de frase ou título",
-        "Inverter maiúsculas/minúsculas",
         "Remover espaços extra",
         "Remover linhas vazias e duplicadas",
-        "Ordenar linhas A–Z e Z–A",
         "Copiar texto para a área de transferência"
       ]
     },
@@ -74,7 +72,7 @@
         },
         {
           "name": "Transforme o texto",
-          "text": "Abaixo do campo de texto encontrará 10 ferramentas de transformação."
+          "text": "Abaixo do campo de texto encontrará 7 ferramentas de transformação."
         },
         {
           "name": "Copie o resultado",
@@ -91,7 +89,7 @@
     {
       "type": "sectionBasic",
       "title": "Contador de palavras e caracteres com ferramentas de texto",
-      "html": "<p class=\"text-mid\">Esta ferramenta combina um contador de palavras e caracteres com análise de legibilidade Flesch-Kincaid e funções de formatação. Cole o seu texto para ver palavras, caracteres, sílabas, frases, parágrafos, palavras únicas, tempo de leitura, tempo de fala e uma pontuação de legibilidade colorida.</p><p class=\"text-mid mt-3\">A <strong>pontuação Flesch-Kincaid</strong> (0–100) indica a facilidade de leitura. Para textos em português é usada a <strong>fórmula Fernández-Huerta</strong>, adaptada às línguas românicas. Pontuações acima de 70 indicam leitura fácil; abaixo de 30 indicam nível académico. No Brasil, a ferramenta é particularmente útil para avaliar textos segundo os princípios da Linguagem Simples.</p><p class=\"text-mid mt-3\">Abaixo do campo de texto encontrará 10 ferramentas: conversão de maiúsculas/minúsculas, remoção de espaços, linhas vazias, duplicados e ordenação. Todo o processamento ocorre localmente no navegador.</p>",
+      "html": "<p class=\"text-mid\">Esta ferramenta combina um contador de palavras e caracteres com análise de legibilidade Flesch-Kincaid e funções de formatação. Cole o seu texto para ver palavras, caracteres, sílabas, frases, parágrafos, palavras únicas, tempo de leitura, tempo de fala e uma pontuação de legibilidade colorida.</p><p class=\"text-mid mt-3\">A <strong>pontuação Flesch-Kincaid</strong> (0–100) indica a facilidade de leitura. Para textos em português é usada a <strong>fórmula Fernández-Huerta</strong>, adaptada às línguas românicas. Pontuações acima de 70 indicam leitura fácil; abaixo de 30 indicam nível académico. No Brasil, a ferramenta é particularmente útil para avaliar textos segundo os princípios da Linguagem Simples.</p><p class=\"text-mid mt-3\">Abaixo do campo de texto encontrará 7 ferramentas: conversão de maiúsculas/minúsculas, remoção de espaços, linhas vazias e duplicados. Todo o processamento ocorre localmente no navegador.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp",
       "imageAlt": "Contador de palavras e caracteres – Arteon"
     },
@@ -118,7 +116,7 @@
         {
           "icon": "RiTextWrap",
           "title": "3. Transforme o texto",
-          "description": "Abaixo do campo de texto encontrará 10 ferramentas de transformação."
+          "description": "Abaixo do campo de texto encontrará 7 ferramentas de transformação."
         },
         {
           "icon": "RiFileCopyLine",
@@ -213,7 +211,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "10 ferramentas de formatação",
+      "title": "7 ferramentas de formatação",
       "description": "Abaixo do campo de texto encontrará botões de transformação:",
       "grid": "two",
       "items": [
@@ -238,11 +236,6 @@
           "description": "Cada palavra começa com maiúscula. Ideal para títulos e nomes."
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "iNVERTER",
-          "description": "Troca maiúsculas por minúsculas e vice-versa."
-        },
-        {
           "icon": "RiSpace",
           "title": "Remover espaços",
           "description": "Reduz espaços múltiplos a um e remove espaços no início e fim de cada linha."
@@ -256,16 +249,6 @@
           "icon": "RiFilterLine",
           "title": "Remover duplicados",
           "description": "Mantém apenas linhas únicas, removendo repetições."
-        },
-        {
-          "icon": "RiSortAsc",
-          "title": "Ordenar A→Z",
-          "description": "Ordena linhas alfabeticamente em ordem crescente."
-        },
-        {
-          "icon": "RiSortDesc",
-          "title": "Ordenar Z→A",
-          "description": "Ordena linhas alfabeticamente em ordem decrescente."
         }
       ]
     },
@@ -345,8 +328,8 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 ferramentas de formatação",
-          "description": "Conversão de maiúsculas, remoção de espaços, linhas vazias, duplicados e ordenação – sem instalar software."
+          "title": "7 ferramentas de formatação",
+          "description": "Conversão de maiúsculas, remoção de espaços, linhas vazias e duplicados – sem instalar software."
         },
         {
           "icon": "RiUserLine",

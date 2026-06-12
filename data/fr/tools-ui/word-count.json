@@ -22,11 +22,8 @@
   "lowercase": "minuscules",
   "sentenceCase": "Phrase",
   "titleCase": "Chaque Mot En Majuscule",
-  "toggleCase": "iNVERSER mAJUSCULES",
   "removeExtraSpaces": "Supprimer les espaces superflus",
   "removeEmptyLines": "Supprimer les lignes vides",
   "removeDuplicateLines": "Supprimer les doublons",
-  "sortAsc": "Trier A→Z",
-  "sortDesc": "Trier Z→A",
   "readabilityHint": "Pour du contenu web en français, visez 60–70."
 }

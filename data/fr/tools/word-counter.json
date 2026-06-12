@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Comptez mots et caractères – vérifiez le temps de lecture et formatez",
-    "description": "Collez votre texte et l'outil comptera les mots, caractères, phrases, paragraphes, mots uniques et temps de lecture. Changez la casse, supprimez les doublons ou triez les lignes",
+    "description": "Collez votre texte et l'outil comptera les mots, caractères, phrases, paragraphes, mots uniques et temps de lecture. Changez la casse ou supprimez les doublons",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp"
   },
   "breadcrumbs": {
@@ -38,7 +38,7 @@
         "Supprimer les lignes en double"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Compteur gratuit de mots et caractères avec outils de mise en forme du texte. Compte les mots, caractères, phrases, paragraphes, mots uniques et temps de lecture. Propose 10 outils : conversion de casse, suppression des espaces, lignes vides, doublons et tri.",
+      "description": "Compteur gratuit de mots et caractères avec outils de mise en forme du texte. Compte les mots, caractères, phrases, paragraphes, mots uniques et temps de lecture. Propose 7 outils : conversion de casse, suppression des espaces, lignes vides et doublons.",
       "featureList": [
         "Comptage de mots",
         "Comptage de caractères avec et sans espaces",
@@ -52,16 +52,14 @@
         "Formules de lisibilité adaptées (16 langues)",
         "Convertir en majuscules ou minuscules",
         "Convertir en style phrase ou titre",
-        "Inverser la casse",
         "Supprimer les espaces superflus",
         "Supprimer les lignes vides et doublons",
-        "Trier les lignes A–Z et Z–A",
         "Copier le texte dans le presse-papiers"
       ]
     },
     "howTo": {
       "name": "Comment utiliser le compteur de mots",
-      "description": "Comptez mots, caractères, syllabes et phrases. Vérifiez la lisibilité Flesch-Kincaid, le temps de lecture et le temps de parole. Formatez le texte avec 10 outils.",
+      "description": "Comptez mots, caractères, syllabes et phrases. Vérifiez la lisibilité Flesch-Kincaid, le temps de lecture et le temps de parole. Formatez le texte avec 7 outils.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -74,7 +72,7 @@
         },
         {
           "name": "Transformez le texte",
-          "text": "Sous le champ de texte, vous trouverez 10 outils de transformation."
+          "text": "Sous le champ de texte, vous trouverez 7 outils de transformation."
         },
         {
           "name": "Copiez le résultat",
@@ -91,7 +89,7 @@
     {
       "type": "sectionBasic",
       "title": "Compteur de mots et caractères avec outils de texte",
-      "html": "<p class=\"text-mid\">Cet outil combine un compteur de mots et caractères avec une analyse de lisibilité Flesch-Kincaid et des fonctions de formatage de texte. Collez votre texte pour voir le nombre de mots, caractères, syllabes, phrases, paragraphes, mots uniques, temps de lecture, temps de parole et un score de lisibilité coloré.</p><p class=\"text-mid mt-3\">Le <strong>score Flesch-Kincaid</strong> (0–100) indique la facilité de lecture de votre texte. Pour les textes en français, l’outil utilise la <strong>formule Kandel-Moles</strong> adaptée aux spécificités de la langue française. Un score supérieur à 70 indique un texte facile ; inférieur à 30, un niveau académique.</p><p class=\"text-mid mt-3\">Sous le champ de texte, vous trouverez 10 outils : conversion de casse (MAJUSCULES, minuscules, Phrase, Titre), suppression des espaces superflus, lignes vides et doublons, et tri alphabétique. Tout le traitement se fait localement dans votre navigateur.</p>",
+      "html": "<p class=\"text-mid\">Cet outil combine un compteur de mots et caractères avec une analyse de lisibilité Flesch-Kincaid et des fonctions de formatage de texte. Collez votre texte pour voir le nombre de mots, caractères, syllabes, phrases, paragraphes, mots uniques, temps de lecture, temps de parole et un score de lisibilité coloré.</p><p class=\"text-mid mt-3\">Le <strong>score Flesch-Kincaid</strong> (0–100) indique la facilité de lecture de votre texte. Pour les textes en français, l’outil utilise la <strong>formule Kandel-Moles</strong> adaptée aux spécificités de la langue française. Un score supérieur à 70 indique un texte facile ; inférieur à 30, un niveau académique.</p><p class=\"text-mid mt-3\">Sous le champ de texte, vous trouverez 7 outils : conversion de casse (MAJUSCULES, minuscules, Phrase, Titre), suppression des espaces superflus, lignes vides et doublons. Tout le traitement se fait localement dans votre navigateur.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp",
       "imageAlt": "Compteur de mots et caractères – Arteon"
     },
@@ -118,7 +116,7 @@
         {
           "icon": "RiTextWrap",
           "title": "3. Transformez le texte",
-          "description": "Sous le champ de texte, vous trouverez 10 outils de transformation."
+          "description": "Sous le champ de texte, vous trouverez 7 outils de transformation."
         },
         {
           "icon": "RiFileCopyLine",
@@ -213,7 +211,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "10 outils de formatage",
+      "title": "7 outils de formatage",
       "description": "Sous le champ de texte, vous trouverez des boutons de transformation :",
       "grid": "two",
       "items": [
@@ -238,11 +236,6 @@
           "description": "Chaque mot commence par une majuscule. Idéal pour les titres, en-têtes et noms propres."
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "iNVERSER",
-          "description": "Intervertit majuscules et minuscules. Utile quand le texte a été tapé avec Verr Maj activé."
-        },
-        {
           "icon": "RiSpace",
           "title": "Supprimer les espaces",
           "description": "Réduit les espaces multiples à un seul et supprime les espaces en début et fin de ligne."
@@ -256,16 +249,6 @@
           "icon": "RiFilterLine",
           "title": "Supprimer les doublons",
           "description": "Conserve uniquement les lignes uniques en supprimant les répétitions. Utile pour nettoyer des listes."
-        },
-        {
-          "icon": "RiSortAsc",
-          "title": "Trier A→Z",
-          "description": "Trie les lignes alphabétiquement par ordre croissant. Utile pour organiser listes et données."
-        },
-        {
-          "icon": "RiSortDesc",
-          "title": "Trier Z→A",
-          "description": "Trie les lignes alphabétiquement par ordre décroissant. Ordre inverse."
         }
       ]
     },
@@ -345,8 +328,8 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 outils de formatage",
-          "description": "Conversion de casse, suppression d’espaces, lignes vides, doublons et tri – sans installer de logiciel."
+          "title": "7 outils de formatage",
+          "description": "Conversion de casse, suppression d’espaces, lignes vides et doublons – sans installer de logiciel."
         },
         {
           "icon": "RiUserLine",

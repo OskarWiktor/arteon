@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Tell ord og tegn – sjekk lesetid og formater tekst",
-    "description": "Lim inn teksten din, og verktøyet teller ord, tegn, setninger, avsnitt, unike ord og lesetid. Endre store bokstaver, fjerne duplikater eller sortere linjer",
+    "description": "Lim inn teksten din, og verktøyet teller ord, tegn, setninger, avsnitt, unike ord og lesetid. Endre store bokstaver eller fjerne duplikater",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -36,11 +36,10 @@
         "Taletidskalkulator",
         "Lesbarhetsverktøy",
         "Fjern duplikater fra tekst",
-        "Sorter tekstlinjer alfabetisk",
         "Gratis ord- og tegnteller"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis ord- og tegnteller med tekstformateringsverktøy. Teller ord, tegn, setninger, avsnitt, unike ord og lesetid. Tilbyr 10 verktøy: endring av store/små bokstaver, fjerning av mellomrom, tomme linjer, duplikater og sortering.",
+      "description": "Gratis ord- og tegnteller med tekstformateringsverktøy. Teller ord, tegn, setninger, avsnitt, unike ord og lesetid. Tilbyr 7 verktøy: endring av store/små bokstaver, fjerning av mellomrom, tomme linjer og duplikater.",
       "featureList": [
         "Telling av ord",
         "Telling av tegn med og uten mellomrom",
@@ -54,10 +53,8 @@
         "Språkspesifikke lesbarhetsformler (16 språk)",
         "Konverter til store eller små bokstaver",
         "Konverter til setnings- eller tittelstil",
-        "Inverter store/små bokstaver",
         "Fjern overflødige mellomrom",
         "Fjern tomme linjer og duplikater",
-        "Sorter linjer A–Z og Z–A",
         "Kopier tekst til utklippstavlen"
       ]
     },
@@ -76,7 +73,7 @@
         },
         {
           "name": "Transformer tekst",
-          "text": "Under tekstfeltet finner du 10 transformasjonsverktøy."
+          "text": "Under tekstfeltet finner du 7 transformasjonsverktøy."
         },
         {
           "name": "Kopier resultatet",
@@ -93,7 +90,7 @@
     {
       "type": "sectionBasic",
       "title": "Gratis ord- og tegnteller med tekstverktøy",
-      "html": "<p class=\"text-mid\">Dette verktøyet kombinerer en ord- og tegnteller med Flesch-Kincaid lesbarhetsanalyse og tekstformateringsverktøy. Lim inn teksten for å se ord, tegn, stavelser, setninger, avsnitt, unike ord, lesetid, taletid og en fargekodet lesbarhetspoeng.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid lesbarhetspoeng</strong> (0–100) viser hvor lett teksten er å lese. Poeng over 70 betyr lettlest tekst, under 30 akademisk nivå. Norge har gjennom <strong>Forskrift om universell utforming av IKT</strong> strengere tilgjengelighetskrav enn EU – god lesbarhet er en del av universell utforming.</p><p class=\"text-mid mt-3\">Under tekstfeltet finner du 10 verktøy: bokstavkonvertering, fjerning av mellomrom, tomme linjer, duplikater og sortering. Alt kjøres lokalt i nettleseren.</p>",
+      "html": "<p class=\"text-mid\">Dette verktøyet kombinerer en ord- og tegnteller med Flesch-Kincaid lesbarhetsanalyse og tekstformateringsverktøy. Lim inn teksten for å se ord, tegn, stavelser, setninger, avsnitt, unike ord, lesetid, taletid og en fargekodet lesbarhetspoeng.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid lesbarhetspoeng</strong> (0–100) viser hvor lett teksten er å lese. Poeng over 70 betyr lettlest tekst, under 30 akademisk nivå. Norge har gjennom <strong>Forskrift om universell utforming av IKT</strong> strengere tilgjengelighetskrav enn EU – god lesbarhet er en del av universell utforming.</p><p class=\"text-mid mt-3\">Under tekstfeltet finner du 7 verktøy: bokstavkonvertering, fjerning av mellomrom, tomme linjer og duplikater. Alt kjøres lokalt i nettleseren.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp",
       "imageAlt": "Ord- og tegnteller – Arteon"
     },
@@ -120,7 +117,7 @@
         {
           "icon": "RiTextWrap",
           "title": "3. Transformer tekst",
-          "description": "Under tekstfeltet finner du 10 transformasjonsverktøy."
+          "description": "Under tekstfeltet finner du 7 transformasjonsverktøy."
         },
         {
           "icon": "RiFileCopyLine",
@@ -215,7 +212,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "10 tekstformateringsverktøy",
+      "title": "7 tekstformateringsverktøy",
       "description": "Under tekstfeltet finner du knapper for rask transformasjon:",
       "grid": "two",
       "items": [
@@ -240,11 +237,6 @@
           "description": "Hvert ord begynner med stor bokstav. Ideelt for titler, overskrifter og egennavn."
         },
         {
-          "icon": "RiArrowLeftRightLine",
-          "title": "oMVENDT",
-          "description": "Bytter store bokstaver til små og omvendt. Nyttig når tekst ble skrevet med Caps Lock på."
-        },
-        {
           "icon": "RiSpace",
           "title": "Fjern ekstra mellomrom",
           "description": "Reduserer flere mellomrom til ett og fjerner mellomrom i begynnelsen og slutten av hver linje."
@@ -258,16 +250,6 @@
           "icon": "RiFilterLine",
           "title": "Fjern duplikater",
           "description": "Beholder bare unike linjer og fjerner gjentagelser. Nyttig for rengjering av lister og data."
-        },
-        {
-          "icon": "RiSortAsc",
-          "title": "Sorter A→Å",
-          "description": "Sorterer linjer alfabetisk i stigende rekkefølge. Nyttig for organisering av lister og data."
-        },
-        {
-          "icon": "RiSortDesc",
-          "title": "Sorter Å→A",
-          "description": "Sorterer linjer alfabetisk i synkende rekkefølge. Omvendt sorteringsrekkefølge."
         }
       ]
     },
@@ -289,7 +271,7 @@
         {
           "icon": "RiBloggerLine",
           "title": "Bloggere og innholdsskapere",
-          "description": "Overvåk innleggslengde, sjekk lesetid, fjern duplikater og sorter lister."
+          "description": "Overvåk innleggslengde, sjekk lesetid og fjern duplikater."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -347,8 +329,8 @@
         },
         {
           "icon": "RiTextWrap",
-          "title": "10 formateringsverktøy",
-          "description": "Bokstavstørrelsekonvertering, fjerning av mellomrom, tomme linjer, duplikater og sortering - uten ekstra programvare."
+          "title": "7 formateringsverktøy",
+          "description": "Bokstavstørrelsekonvertering, fjerning av mellomrom, tomme linjer og duplikater - uten ekstra programvare."
         },
         {
           "icon": "RiUserLine",

@@ -170,17 +170,6 @@ export function toTitleCase(text: string): string {
  * @param text - The string whose characters' case will be toggled
  * @returns The input string with each character's case toggled (uppercase → lowercase, lowercase → uppercase); characters without case are unchanged
  */
-export function toToggleCase(text: string): string {
-  return text
-    .split('')
-    .map(c =>
-      c === c.toLocaleUpperCase()
-        ? c.toLocaleLowerCase()
-        : c.toLocaleUpperCase(),
-    )
-    .join('');
-}
-
 export function removeExtraSpaces(text: string): string {
   return text
     .split('\n')
@@ -204,19 +193,5 @@ export function removeDuplicateLines(text: string): string {
       seen.add(line);
       return true;
     })
-    .join('\n');
-}
-
-export function sortLinesAsc(text: string): string {
-  return text
-    .split('\n')
-    .sort((a, b) => a.localeCompare(b))
-    .join('\n');
-}
-
-export function sortLinesDesc(text: string): string {
-  return text
-    .split('\n')
-    .sort((a, b) => b.localeCompare(a))
     .join('\n');
 }

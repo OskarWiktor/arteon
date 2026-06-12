@@ -23,10 +23,7 @@
   "lowercase": "małe litery",
   "sentenceCase": "Jak w zdaniu",
   "titleCase": "Każde Słowo Wielką Literą",
-  "toggleCase": "oDWRÓĆ wIELKOŚĆ",
   "removeExtraSpaces": "Usuń nadmiarowe spacje",
   "removeEmptyLines": "Usuń puste linie",
-  "removeDuplicateLines": "Usuń duplikaty linii",
-  "sortAsc": "Sortuj A→Z",
-  "sortDesc": "Sortuj Z→A"
+  "removeDuplicateLines": "Usuń duplikaty linii"
 }

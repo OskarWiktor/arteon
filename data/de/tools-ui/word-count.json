@@ -22,11 +22,8 @@
   "lowercase": "kleinbuchstaben",
   "sentenceCase": "Satzanfang groß",
   "titleCase": "Jedes Wort Groß",
-  "toggleCase": "gROSS/kLEIN tAUSCHEN",
   "removeExtraSpaces": "Überflüssige Leerzeichen entfernen",
   "removeEmptyLines": "Leerzeilen entfernen",
   "removeDuplicateLines": "Duplikate entfernen",
-  "sortAsc": "Sortieren A→Z",
-  "sortDesc": "Sortieren Z→A",
   "readabilityHint": "Für Webinhalte auf Deutsch 50–70 anstreben."
 }

@@ -22,11 +22,8 @@
   "lowercase": "pienet kirjaimet",
   "sentenceCase": "Lauseen alku",
   "titleCase": "Jokainen Sana Isolla",
-  "toggleCase": "vAIHDA kOKO",
   "removeExtraSpaces": "Poista ylimääräiset välit",
   "removeEmptyLines": "Poista tyhjät rivit",
   "removeDuplicateLines": "Poista kaksoiskappaleet",
-  "sortAsc": "Lajittele A→Ö",
-  "sortDesc": "Lajittele Ö→A",
   "readabilityHint": "Verkkosisällölle suomeksi tavoittele 50–70."
 }
