@@ -28,7 +28,7 @@
     "js-yaml": "^4.2.0",
     "jspdf": "^4.2.1",
     "marked": "^17.0.3",
-    "next": "^16.2.7",
+    "next": "^16.2.9",
     "pdfjs-dist": "^5.5.207",
     "qrcode": "^1.5.4",
     "react": "19.2.7",
@@ -83,6 +83,12 @@
   },
   "overrides": {
     "@types/react": "19.2.16",
-    "@types/react-dom": "19.2.3"
+    "@types/react-dom": "19.2.3",
+    "eslint-plugin-sonarjs": {
+      "minimatch": "^10.2.5"
+    },
+    "next": {
+      "postcss": "$postcss"
+    }
   }
 }
