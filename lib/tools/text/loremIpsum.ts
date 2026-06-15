@@ -2,6 +2,8 @@
 // Lorem Ipsum generator – pure functions, no React dependency
 // ---------------------------------------------------------------------------
 
+import { stripHtmlTags } from '@/utils/stripHtmlTags';
+
 export type LoremMode =
   | 'paragraphs'
   | 'sentences'
@@ -2519,7 +2521,7 @@ export interface LoremStats {
 }
 
 export function getLoremStats(text: string): LoremStats {
-  const clean = text.replace(/<[^>]+>/g, '');
+  const clean = stripHtmlTags(text);
   const trimmed = clean.trim();
   if (!trimmed) {
     return {
