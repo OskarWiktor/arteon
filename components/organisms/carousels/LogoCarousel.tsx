@@ -301,27 +301,29 @@ export default function LogoCarousel({
         <ul
           ref={trackRef}
           style={{ willChange: 'transform' }}
-          className='flex gap-12 whitespace-nowrap md:gap-16 lg:gap-20'
+          className='flex gap-8 whitespace-nowrap md:gap-16 lg:gap-20'
         >
           {[...LogoCarouselDefaultItems, ...LogoCarouselDefaultItems].map(
             ({ label, icon: Icon }, index) => (
               <li key={`${label}-${index}`} className='shrink-0'>
                 <div
                   className={cn(
-                    'min-w-30 flex-col opacity-65',
+                    'mt-4 min-w-24 flex-col opacity-70',
                     flexCenterClasses,
                   )}
                 >
                   <IconText
                     icon={
                       <Icon
-                        className='h-auto w-12 text-primary'
+                        className='h-auto w-10 text-primary md:w-12'
                         aria-hidden='true'
                       />
                     }
                     children={undefined}
                   />
-                  <span className='mt-1 text-2xl text-primary'>{label}</span>
+                  <span className='mt-1 text-lg text-primary md:text-2xl'>
+                    {label}
+                  </span>
                 </div>
               </li>
             ),
