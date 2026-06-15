@@ -29,6 +29,7 @@ import {
 } from '@/lib/tools/text/loremIpsum';
 import { flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { stripHtmlTags } from '@/utils/stripHtmlTags';
 
 const MODES: LoremMode[] = [
   'paragraphs',
@@ -129,7 +130,7 @@ export default function LoremIpsumGenerator() {
     URL.revokeObjectURL(url);
   };
 
-  const plainOutput = output.replace(/<[^>]+>/g, '');
+  const plainOutput = stripHtmlTags(output);
 
   return (
     <div className='space-y-4 overflow-hidden'>
