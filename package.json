@@ -82,7 +82,13 @@
     "vitest": "^4.1.8"
   },
   "overrides": {
-    "@types/react": "19.2.17",
-    "@types/react-dom": "19.2.3"
+    "@types/react": "19.2.16",
+    "@types/react-dom": "19.2.3",
+    "eslint-plugin-sonarjs": {
+      "minimatch": "^10.2.5"
+    },
+    "next": {
+      "postcss": "$postcss"
+    }
   }
 }
