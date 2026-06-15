@@ -51,8 +51,8 @@ export default function CTABanner({
     isGradient || isSolid || overlay === 'black' ? 'text-white' : 'text-dark';
   const toneMutedClass =
     isGradient || isSolid || overlay === 'black'
-      ? 'text-white/90'
-      : 'text-light';
+      ? 'text-white!'
+      : 'text-light!';
 
   return (
     <section

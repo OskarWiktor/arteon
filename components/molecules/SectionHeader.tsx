@@ -53,10 +53,12 @@ export default function SectionHeader({
   if (!hasButton) return content;
 
   return (
-    <div className='flex flex-row justify-between'>
+    <div className='flex flex-col justify-between md:flex-row'>
       {content}
       <div>
-        <ButtonLink href={buttonLink!}>{buttonText}</ButtonLink>
+        <ButtonLink className='mb-4 md:mb-0' href={buttonLink!}>
+          {buttonText}
+        </ButtonLink>
       </div>
     </div>
   );
