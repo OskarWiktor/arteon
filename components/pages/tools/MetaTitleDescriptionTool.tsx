@@ -148,15 +148,9 @@ export default function MetaTitleDescriptionTool() {
             />
             <div className='tool-meta mt-2 flex flex-wrap items-center gap-2'>
               <span>
-                {t.chars}: <strong>{titleAnalysis.chars}</strong>
-              </span>
-              <span>·</span>
-              <span>
-                {t.words}: <strong>{titleAnalysis.words}</strong>
-              </span>
-              <span>·</span>
-              <span>
-                {t.width}: <strong>~{titleAnalysis.pixels} px</strong>
+                {t.chars}: <strong>{titleAnalysis.chars}</strong> · {t.words}:{' '}
+                <strong>{titleAnalysis.words}</strong> · {t.width}:{' '}
+                <strong>~{titleAnalysis.pixels} px</strong>
               </span>
               <span
                 className={cn(
@@ -185,14 +179,8 @@ export default function MetaTitleDescriptionTool() {
             />
             <div className='tool-meta mt-2 flex flex-wrap items-center gap-2'>
               <span>
-                {t.chars}: <strong>{descriptionAnalysis.chars}</strong>
-              </span>
-              <span>·</span>
-              <span>
-                {t.words}: <strong>{descriptionAnalysis.words}</strong>
-              </span>
-              <span>·</span>
-              <span>
+                {t.chars}: <strong>{descriptionAnalysis.chars}</strong> ·{' '}
+                {t.words}: <strong>{descriptionAnalysis.words}</strong> ·{' '}
                 {t.width}: <strong>~{descriptionAnalysis.pixels} px</strong>
               </span>
               <span
