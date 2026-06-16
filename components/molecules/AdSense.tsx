@@ -277,7 +277,7 @@ export default function AdSense({
 
   const label = locale && (AD_LABEL[locale] ?? AD_LABEL.en);
   const labelNode = label && (
-    <span className='block text-center text-[10px] tracking-widest text-neutral-400'>
+    <span className='block text-center text-[10px] tracking-widest text-light'>
       {label}
     </span>
   );

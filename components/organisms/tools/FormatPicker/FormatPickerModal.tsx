@@ -276,7 +276,7 @@ export default function FormatPickerModal({
         type='button'
         onClick={handleToggle}
         className={cn(
-          'inline-flex items-center gap-1.5 rounded border border-neutral-300 bg-white px-3 py-2 text-xs font-medium transition-colors hover:border-neutral-400',
+          'inline-flex items-center gap-1.5 rounded border border-neutral-300 bg-white px-3 py-2 text-xs font-medium transition-colors hover:border-light',
           focusRingClasses,
         )}
         aria-expanded={open}

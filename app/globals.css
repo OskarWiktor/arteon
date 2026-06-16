@@ -45,11 +45,9 @@
   --error-bg: #fee2e2;
   --error-border: #fecaca;
   --error-icon: #ef4444;
-  --error-mid: #dc2626;
   --error-text: #b91c1c;
 
   --info-bg: #dbeafe;
-  --info-icon: #2563eb;
   --info-mid: #1d4ed8;
   --info-text: #1e40af;
 
@@ -57,7 +55,6 @@
   --brand-linkedin: #0a66c2;
 
   --accent-orange: #f97316;
-  --crop-green: #10b981;
 }
 
 .dark {
@@ -97,11 +94,9 @@
   --error-bg: #2e0c0c;
   --error-border: #3d1212;
   --error-icon: #f87171;
-  --error-mid: #ef4444;
   --error-text: #fca5a5;
 
   --info-bg: #0c1e3a;
-  --info-icon: #60a5fa;
   --info-mid: #3b82f6;
   --info-text: #93c5fd;
 }
@@ -114,8 +109,6 @@
     var(--font-heading), ui-serif, Georgia, Cambria, 'Times New Roman', Times,
     serif;
 
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --color-dark: var(--foreground);
   --color-mid: var(--text-mid);
   --color-light: var(--text-light);
@@ -148,11 +141,9 @@
   --color-error-bg: var(--error-bg);
   --color-error-border: var(--error-border);
   --color-error-icon: var(--error-icon);
-  --color-error-mid: var(--error-mid);
   --color-error-text: var(--error-text);
 
   --color-info-bg: var(--info-bg);
-  --color-info-icon: var(--info-icon);
   --color-info-mid: var(--info-mid);
   --color-info-text: var(--info-text);
 
@@ -160,7 +151,6 @@
   --color-brand-linkedin: var(--brand-linkedin);
 
   --color-accent-orange: var(--accent-orange);
-  --color-crop-green: var(--crop-green);
 }
 
 @keyframes dropdown-in {
