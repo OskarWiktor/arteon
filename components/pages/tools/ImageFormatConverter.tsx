@@ -8,8 +8,10 @@ import FileDropzone from '@/components/molecules/FileDropzone';
 import InputRangeWithLabel from '@/components/molecules/form/InputRangeWithLabel';
 import ToolFileRow from '@/components/molecules/tools/ToolFileRow';
 import ToolProgressBar from '@/components/molecules/tools/ToolProgressBar';
+import Card from '@/components/organisms/Card';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { useConversionQueue } from '@/hooks/useConversionQueue';
+import { cn } from '@/lib/clsx';
 import { useDictionary } from '@/lib/LocaleContext';
 import {
   FORMAT_EXTENSION,
@@ -17,11 +19,9 @@ import {
   hasQualitySlider,
 } from '@/lib/tools/image/imageFormatConverter';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import type { ImageFormatConverterProps } from '@/types/tools/image-format-converter';
 import { downloadBlob } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
-import Card from '@/components/organisms/Card';
 
 /**
  * Replace all `{{key}}` placeholders in a string with corresponding values.

@@ -9,6 +9,7 @@ import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
 import { useTimeout } from '@/hooks/useTimeout';
+import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/colorPalette';
 import { useLocale } from '@/lib/LocaleContext';
 import {
@@ -22,7 +23,6 @@ import {
   type PaletteGroupId,
 } from '@/lib/tools/color/palette';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 
 function getPaletteMeta(
   t: (typeof ui)[keyof typeof ui],

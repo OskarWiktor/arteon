@@ -3,9 +3,9 @@
 import { useEffect } from 'react';
 import Button from '@/components/atoms/buttons/Button';
 import Wrapper from '@/components/atoms/Wrapper';
+import { cn } from '@/lib/clsx';
 import type { ErrorPageComponentsDictionary } from '@/lib/i18n/getDictionary';
 import { flexCenterClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import ButtonLink from '../atoms/buttons/ButtonLink';
 
 type ErrorPageComponentProps = {

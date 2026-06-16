@@ -16,10 +16,10 @@ import { useWebpConversion } from '@/hooks/useWebpConversion';
 import { useWebpDownloads } from '@/hooks/useWebpDownloads';
 import { useWebpQueue } from '@/hooks/useWebpQueue';
 import { useWebpReportCopy } from '@/hooks/useWebpReportCopy';
+import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/jpgPngWebp';
 import { useLocale } from '@/lib/LocaleContext';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import { downloadFromUrl } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
 

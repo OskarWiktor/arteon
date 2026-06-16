@@ -3,10 +3,7 @@
 import { usePathname } from 'next/navigation';
 import { startTransition, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import {
-  NavArrowDownSLine as RiArrowDownSLine,
-  NavArrowRightSLine as RiArrowRightSLine,
-} from '@/components/atoms/NavIcons';
+import { RiArrowDownSLine, RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '@/components/atoms/Wrapper';
 import {
   DESKTOP_NAV_ITEMS_PL,
@@ -20,6 +17,7 @@ import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
+import { cn } from '@/lib/clsx';
 import { getDesktopToolsSections } from '@/lib/i18n/toolRegistry';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import {
@@ -28,7 +26,6 @@ import {
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import InlineLink from '../../atoms/InlineLink';
 const plUi = {
   closeServicesList: 'Zamknij listę usług',

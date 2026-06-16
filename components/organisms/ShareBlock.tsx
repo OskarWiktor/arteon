@@ -6,8 +6,8 @@ import {
   RiMailLine,
   RiTwitterXFill,
 } from 'react-icons/ri';
-import { focusRingClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { focusRingClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import Card from './Card';
 import ButtonCopy from '../atoms/buttons/ButtonCopy';
 
@@ -17,8 +17,10 @@ type ShareBlockProps = {
   label?: string;
 };
 
+// These buttons sit on fixed brand/black backgrounds, so the label must stay
+// light in both themes - `on-dark` (not `white`, which darkens as a surface token).
 const shareBlockLinkClasses =
-  'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-white transition hover:opacity-90';
+  'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-on-dark transition hover:opacity-90';
 
 /**
  * Render a share panel with buttons for Facebook, X (Twitter), LinkedIn, e-mail, and a copy-link action.

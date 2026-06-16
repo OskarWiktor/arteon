@@ -1,8 +1,8 @@
 import ButtonLink from '@/components/atoms/buttons/ButtonLink';
+import { cn } from '@/lib/clsx';
 import { getDictionary } from '@/lib/i18n/getDictionary';
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { flexCenterClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import type { Locale } from '@/types/locale';
 
 /**

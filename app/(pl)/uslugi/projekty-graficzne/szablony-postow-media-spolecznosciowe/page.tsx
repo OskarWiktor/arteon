@@ -22,9 +22,9 @@ import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { cn } from '@/lib/clsx';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 
 export const metadata = {
   title: 'Szablony postów do mediów społecznościowych | Arteon',
@@ -85,7 +85,6 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp'
         overlay='black'
       />

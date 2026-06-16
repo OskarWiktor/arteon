@@ -143,13 +143,15 @@ export function parseHsl(color: string): HSLA | null {
 
   const inner = wrapperMatch[1].trim();
 
-  const commaMatch = inner.match(
-    /^([+-]?\d*\.?\d+)(?:deg)?\s*,\s*([+-]?\d*\.?\d+)%\s*,\s*([+-]?\d*\.?\d+)%\s*(?:,\s*([+-]?\d*\.?\d+%?)\s*)?$/i,
-  );
+  const commaMatch =
+    /^([+-]?\d*\.?\d+)(?:deg)?\s*,\s*([+-]?\d*\.?\d+)%\s*,\s*([+-]?\d*\.?\d+)%\s*(?:,\s*([+-]?\d*\.?\d+%?)\s*)?$/i.exec(
+      inner,
+    );
 
-  const spaceMatch = inner.match(
-    /^([+-]?\d*\.?\d+)(?:deg)?\s+([+-]?\d*\.?\d+)%\s+([+-]?\d*\.?\d+)%\s*(?:\/\s*([+-]?\d*\.?\d+%?)\s*)?$/i,
-  );
+  const spaceMatch =
+    /^([+-]?\d*\.?\d+)(?:deg)?\s+([+-]?\d*\.?\d+)%\s+([+-]?\d*\.?\d+)%\s*(?:\/\s*([+-]?\d*\.?\d+%?)\s*)?$/i.exec(
+      inner,
+    );
 
   const match = commaMatch ?? spaceMatch;
   if (!match) return null;
@@ -163,7 +165,7 @@ export function parseHsl(color: string): HSLA | null {
 
   let a = 1;
   const alphaRaw = match[4];
-  if (alphaRaw !== undefined) {
+  if (alphaRaw) {
     if (alphaRaw.endsWith('%')) {
       a = Number(alphaRaw.slice(0, -1)) / 100;
     } else {

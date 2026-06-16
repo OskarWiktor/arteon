@@ -1,5 +1,5 @@
-import { flexCenterBetweenClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { flexCenterBetweenClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import Shimmer from '../../atoms/skeletons/Shimmer';
 import Card from '../Card';
 

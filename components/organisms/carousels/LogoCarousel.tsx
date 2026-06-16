@@ -26,8 +26,8 @@ import SectionHeader from '@/components/molecules/SectionHeader';
 import { useEventListener } from '@/hooks/useEventListener';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { useTimeout } from '@/hooks/useTimeout';
-import { flexCenterClasses, focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { flexCenterClasses, focusRingClasses } from '@/lib/uiClasses';
 
 interface LogoCarouselDefaultItem {
   label: string;
@@ -39,7 +39,6 @@ interface LogoCarouselLogoImage {
   src: string;
   width: number;
   height: number;
-  filter?: string;
   heightClass?: string;
 }
 
@@ -73,7 +72,6 @@ const LogoCarouselLogoItems: LogoCarouselLogoImage[] = [
     width: 335,
     height: 80,
     heightClass: 'h-8 md:h-10',
-    filter: 'brightness(0)',
   },
   {
     alt: 'StepArd',
@@ -81,7 +79,6 @@ const LogoCarouselLogoItems: LogoCarouselLogoImage[] = [
     width: 271,
     height: 72,
     heightClass: 'h-7 md:h-9',
-    filter: 'brightness(0)',
   },
   {
     alt: 'Finish Masters',
@@ -89,7 +86,6 @@ const LogoCarouselLogoItems: LogoCarouselLogoImage[] = [
     width: 210,
     height: 72,
     heightClass: 'h-7 md:h-9',
-    filter: 'brightness(0)',
   },
   {
     alt: 'Izoluk',
@@ -97,7 +93,6 @@ const LogoCarouselLogoItems: LogoCarouselLogoImage[] = [
     width: 348,
     height: 104,
     heightClass: 'h-11 md:h-13',
-    filter: 'brightness(0)',
   },
   {
     alt: 'KM2',
@@ -105,7 +100,6 @@ const LogoCarouselLogoItems: LogoCarouselLogoImage[] = [
     width: 89,
     height: 64,
     heightClass: 'h-6 md:h-8',
-    filter: 'brightness(0)',
   },
   {
     alt: 'LuxNova',
@@ -113,7 +107,6 @@ const LogoCarouselLogoItems: LogoCarouselLogoImage[] = [
     width: 256,
     height: 112,
     heightClass: 'h-12 md:h-14',
-    filter: 'brightness(0)',
   },
   {
     alt: 'Eliza Wrońska',
@@ -121,7 +114,6 @@ const LogoCarouselLogoItems: LogoCarouselLogoImage[] = [
     width: 213,
     height: 112,
     heightClass: 'h-12 md:h-14',
-    filter: 'brightness(0)',
   },
   {
     alt: 'NaPilota',
@@ -129,7 +121,6 @@ const LogoCarouselLogoItems: LogoCarouselLogoImage[] = [
     width: 203,
     height: 96,
     heightClass: 'h-10 md:h-12',
-    filter: 'brightness(0)',
   },
 ];
 
@@ -237,10 +228,8 @@ export default function LogoCarousel({
           className={cn('overflow-hidden rounded-lg', focusRingClasses)}
           role='region'
           aria-label='Przewijana lista logo firm.'
-          tabIndex={0}
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
-          onFocus={() => setIsPaused(true)}
           onBlur={() => setIsPaused(false)}
           onTouchStart={() => setIsPaused(true)}
           onTouchEnd={() => setIsPaused(false)}
@@ -251,7 +240,7 @@ export default function LogoCarousel({
             className='flex items-center gap-10 whitespace-nowrap md:gap-14 lg:gap-20'
           >
             {[...LogoCarouselLogoItems, ...LogoCarouselLogoItems].map(
-              ({ alt, src, width, height, filter, heightClass }, index) => (
+              ({ alt, src, width, height, heightClass }, index) => (
                 <li key={`${alt}-${index}`} className='shrink-0'>
                   <Image
                     src={src}
@@ -259,10 +248,9 @@ export default function LogoCarousel({
                     width={width}
                     height={height}
                     className={cn(
-                      'w-auto object-contain opacity-60 transition-opacity hover:opacity-100',
+                      'w-auto object-contain opacity-60 brightness-0 transition-opacity hover:opacity-100 dark:invert',
                       heightClass ?? 'h-12 md:h-14',
                     )}
-                    style={filter ? { filter } : undefined}
                     onLoad={measure}
                     unoptimized
                   />
@@ -293,7 +281,6 @@ export default function LogoCarousel({
         tabIndex={0}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
-        onFocus={() => setIsPaused(true)}
         onBlur={() => setIsPaused(false)}
         onTouchStart={() => setIsPaused(true)}
         onTouchEnd={() => setIsPaused(false)}

@@ -1,4 +1,35 @@
 import type { IconType } from 'react-icons';
+import {
+  RiAppsLine,
+  RiArticleLine,
+  RiBookletLine,
+  RiBrushLine,
+  RiCodeSSlashFill,
+  RiContrast2Line,
+  RiCoupon2Line,
+  RiCropLine,
+  RiFileEditLine,
+  RiFileList2Line,
+  RiFileTextLine,
+  RiFolderOpenLine,
+  RiGlobalLine,
+  RiIdCardLine,
+  RiImageEditLine,
+  RiLayoutLine,
+  RiLineChartLine,
+  RiLoopLeftLine,
+  RiMailLine,
+  RiMegaphoneLine,
+  RiPaletteLine,
+  RiPantoneLine,
+  RiPriceTag3Line,
+  RiQrCodeLine,
+  RiQuillPenLine,
+  RiRestaurant2Line,
+  RiSearchLine,
+  RiShoppingCartLine,
+  RiTShirt2Line,
+} from 'react-icons/ri';
 import type { ToolsSection } from '@/types/tools/common';
 export type {
   ToolsSectionKey,
@@ -62,38 +93,6 @@ export type OfferSection = {
   icon?: IconType;
   items: OfferSectionItem[];
 };
-
-import {
-  NavAppsLine as RiAppsLine,
-  NavArticleLine as RiArticleLine,
-  NavBookletLine as RiBookletLine,
-  NavBrushLine as RiBrushLine,
-  NavCodeSSlashFill as RiCodeSSlashFill,
-  NavContrast2Line as RiContrast2Line,
-  NavCoupon2Line as RiCoupon2Line,
-  NavCropLine as RiCropLine,
-  NavFileEditLine as RiFileEditLine,
-  NavFileList2Line as RiFileList2Line,
-  NavFileTextLine as RiFileTextLine,
-  NavFolderOpenLine as RiFolderOpenLine,
-  NavGlobalLine as RiGlobalLine,
-  NavIdCardLine as RiIdCardLine,
-  NavImageEditLine as RiImageEditLine,
-  NavLayoutLine as RiLayoutLine,
-  NavLineChartLine as RiLineChartLine,
-  NavLoopLeftLine as RiLoopLeftLine,
-  NavMailLine as RiMailLine,
-  NavMegaphoneLine as RiMegaphoneLine,
-  NavPaletteLine as RiPaletteLine,
-  NavPantoneLine as RiPantoneLine,
-  NavPriceTag3Line as RiPriceTag3Line,
-  NavQrCodeLine as RiQrCodeLine,
-  NavQuillPenLine as RiQuillPenLine,
-  NavRestaurant2Line as RiRestaurant2Line,
-  NavSearchLine as RiSearchLine,
-  NavShoppingCartLine as RiShoppingCartLine,
-  NavTShirt2Line as RiTShirt2Line,
-} from '@/components/atoms/NavIcons';
 
 export const DESKTOP_NAV_ITEMS_PL: HeaderNavItem[] = [
   { key: 'realizacje', href: '/realizacje', label: 'Realizacje', exact: true },

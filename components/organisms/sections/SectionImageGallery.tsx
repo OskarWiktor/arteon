@@ -7,12 +7,12 @@ import {
   RiArrowRightSLine,
 } from 'react-icons/ri';
 import SectionHeader from '@/components/molecules/SectionHeader';
+import { cn } from '@/lib/clsx';
 import {
   flexCenterClasses,
   focusRingClasses,
   largeIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import Wrapper from '../../atoms/Wrapper';
 
 interface GalleryImage {

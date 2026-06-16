@@ -1,9 +1,9 @@
+import { cn } from '@/lib/clsx';
 import {
   flexCenterClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 
 const ArrowIcon = () => (
   <span

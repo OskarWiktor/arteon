@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { NavArrowDownSLine } from '@/components/atoms/NavIcons';
-import { focusRingClasses, smallIconSizeClasses } from '@/lib/uiClasses';
+import { RiArrowDownSLine } from 'react-icons/ri';
 import { cn } from '@/lib/clsx';
+import { focusRingClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 
 const selectClasses =
   'h-11 w-full cursor-pointer appearance-none rounded-sm border border-neutral-300 bg-white py-2 pr-9 pl-3 text-sm text-dark transition';
@@ -13,7 +13,7 @@ const selectClasses =
  * with a custom dropdown arrow that mirrors the navigation submenu chevron.
  *
  * The native arrow is removed (`appearance-none`) and replaced with the shared
- * `NavArrowDownSLine` icon, which rotates 180deg while the dropdown is open. Open
+ * `RiArrowDownSLine` icon, which rotates 180deg while the dropdown is open. Open
  * state is tracked from the select's pointer/keyboard/focus interactions. All other
  * select props (including `children` for the option elements) are forwarded.
  *
@@ -63,7 +63,7 @@ export default function Select({
           className='inline-flex transition-transform duration-200'
           style={{ transform: open ? 'rotate(180deg)' : undefined }}
         >
-          <NavArrowDownSLine className={smallIconSizeClasses} />
+          <RiArrowDownSLine className={smallIconSizeClasses} />
         </span>
       </span>
     </div>

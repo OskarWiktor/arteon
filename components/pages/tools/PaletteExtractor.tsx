@@ -7,6 +7,7 @@ import FileDropzone from '@/components/molecules/FileDropzone';
 import ToolColorSwatch from '@/components/molecules/ToolColorSwatch';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/paletteExtractor';
 import { useLocale } from '@/lib/LocaleContext';
 import {
@@ -19,7 +20,6 @@ import {
   SUPPORTED_IMAGE_UPLOAD_TYPES,
 } from '@/lib/tools/image/uploadTypes';
 import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import type { ToolStatus } from '@/types/tools/common';
 import { getFileFormatLabel } from '@/utils/fileFormat';
 import { formatBytes } from '@/utils/formatBytes';

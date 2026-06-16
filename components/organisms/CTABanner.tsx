@@ -7,62 +7,44 @@ import SectionHeader from '../molecules/SectionHeader';
 
 interface CTABannerProps {
   title?: ReactNode;
-  subtitle?: ReactNode;
   description?: ReactNode;
   btnOne?: string;
   btnOneHref?: string;
   btnTwo?: string;
   btnTwoHref?: string;
   backgroundImage?: string;
-  backgroundStyle?: 'image' | 'gradient' | 'solid';
   overlay?: 'none' | 'black' | 'white';
 }
 
+/**
+ * Closing call-to-action banner over a background image.
+ * - `overlay='black'`: dark section (fixed black overlay + light text), visually
+ *   dark in both themes by design.
+ * - `overlay='white'` / `'none'`: a themed surface (overlay and text follow the
+ *   active light/dark theme).
+ */
 export default function CTABanner({
   title,
-  subtitle,
   description,
   btnOne,
   btnOneHref,
   btnTwo,
   btnTwoHref,
   backgroundImage,
-  backgroundStyle = 'image',
   overlay = 'none',
 }: CTABannerProps) {
   const hasBg = Boolean(backgroundImage);
-  const isGradient = backgroundStyle === 'gradient';
-  const isSolid = backgroundStyle === 'solid';
-  const overlayClass =
-    overlay === 'black'
-      ? 'bg-black/70'
-      : overlay === 'white'
-        ? 'bg-white/80'
-        : '';
-  const baseBg = isGradient
-    ? 'bg-gradient-to-r from-primary to-primary'
-    : isSolid
-      ? 'bg-primary'
-      : overlay === 'black'
-        ? 'bg-neutral-900'
-        : 'bg-white';
-
-  const toneTextClass =
-    isGradient || isSolid || overlay === 'black' ? 'text-white' : 'text-dark';
-  const toneMutedClass =
-    isGradient || isSolid || overlay === 'black'
-      ? 'text-white!'
-      : 'text-light!';
+  const isBlack = overlay === 'black';
 
   return (
     <section
       className={cn(
         'relative flex h-auto min-h-90 overflow-hidden md:min-h-110',
-        baseBg,
+        isBlack ? 'bg-black' : 'bg-white',
       )}
       data-section='final-cta'
     >
-      {hasBg && !isGradient && !isSolid && backgroundImage && (
+      {hasBg && backgroundImage && (
         <Image
           src={backgroundImage}
           alt={typeof title === 'string' ? title : 'CTA background'}
@@ -71,12 +53,12 @@ export default function CTABanner({
           className='object-cover object-center'
         />
       )}
-      {hasBg && !isGradient && !isSolid && overlay !== 'none' && (
+      {hasBg && overlay !== 'none' && (
         <div
           aria-hidden='true'
           className={cn(
             'pointer-events-none absolute inset-0 z-0',
-            overlayClass,
+            isBlack ? 'bg-black/70' : 'bg-white/80',
           )}
         />
       )}
@@ -84,27 +66,18 @@ export default function CTABanner({
       <Wrapper className='relative flex h-auto justify-center md:items-center'>
         <div
           className={cn(
-            'mt-6 mb-6 max-w-[100vw] rounded-lg p-2 md:m-0 md:max-w-[65%] md:p-5 md:text-center lg:p-7',
-            toneTextClass,
-            {
-              'bg-transparent': isGradient || isSolid,
-              'bg-black/50': overlay === 'black',
-              'bg-white/70': overlay === 'white',
-            },
+            'max-w-[100vw] rounded-lg px-6 py-4 md:max-w-[65%] md:p-8 md:text-center lg:p-10',
+            isBlack && 'bg-black/50 text-on-dark',
+            overlay === 'white' && 'bg-white/70 text-dark',
+            overlay === 'none' && 'text-dark',
           )}
         >
           <SectionHeader
-            subtitle={subtitle}
             title={title}
             description={description}
-            SubtitleVariant='dynamic'
-            SubtitleClassName={cn('text-base tracking-wider uppercase', {
-              'text-white!': overlay === 'black',
-              'text-dark!': overlay !== 'black',
-            })}
             descriptionClassName={cn(
               'mx-auto text-base leading-relaxed md:text-lg',
-              toneMutedClass,
+              isBlack ? 'text-on-dark!' : 'text-light!',
             )}
           />
 

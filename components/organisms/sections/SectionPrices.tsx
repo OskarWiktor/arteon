@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { RiCheckFill } from 'react-icons/ri';
-import { normalIconSizeClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { normalIconSizeClasses, smallIconSizeClasses } from '@/lib/uiClasses';
 import Badge from '../../atoms/Badge';
 import ButtonLink from '../../atoms/buttons/ButtonLink';
 import IconText from '../../atoms/IconText';

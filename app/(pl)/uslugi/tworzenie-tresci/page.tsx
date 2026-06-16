@@ -29,9 +29,9 @@ import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import WorkSteps from '@/components/organisms/WorkSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { cn } from '@/lib/clsx';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import { siteUrl } from '@/utils/absoluteUrl';
 
 function ServiceSchema() {
@@ -87,7 +87,6 @@ export default function OfferContentPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp'
         overlay='black'
       />

@@ -1,5 +1,5 @@
-import { focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { focusRingClasses } from '@/lib/uiClasses';
 
 type InputRangeProps = Omit<React.ComponentProps<'input'>, 'type'>;
 

@@ -12,6 +12,7 @@ import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/wcagContrast';
 import { useLocale } from '@/lib/LocaleContext';
 import { getContrastRatio, parseColor } from '@/lib/tools/color/contrast';
@@ -21,10 +22,18 @@ import {
   flexCenterClasses,
   largeIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 
 const DEFAULT_FOREGROUND = rgbToHex({ r: 0, g: 0, b: 0 });
 const DEFAULT_BACKGROUND = rgbToHex({ r: 255, g: 255, b: 255 });
+
+function getThemeDefaults(): { fg: string; bg: string } {
+  const isDark =
+    typeof document !== 'undefined' &&
+    document.documentElement.classList.contains('dark');
+  return isDark
+    ? { fg: DEFAULT_BACKGROUND, bg: DEFAULT_FOREGROUND }
+    : { fg: DEFAULT_FOREGROUND, bg: DEFAULT_BACKGROUND };
+}
 
 type WcagResult = {
   ratio: number | null;
@@ -186,6 +195,15 @@ export default function WcagContrastChecker() {
   })();
 
   useEffect(() => {
+    const { fg, bg } = getThemeDefaults();
+    if (fg === DEFAULT_FOREGROUND) return;
+    setForeground(fg);
+    setBackground(bg);
+    setForegroundPicker(fg);
+    setBackgroundPicker(bg);
+  }, []);
+
+  useEffect(() => {
     const parsed = parseColor(foreground);
     if (!parsed) return;
     setForegroundPicker(rgbToHex({ r: parsed.r, g: parsed.g, b: parsed.b }));
@@ -210,10 +228,11 @@ export default function WcagContrastChecker() {
   };
 
   const handleReset = () => {
-    setForeground(DEFAULT_FOREGROUND);
-    setBackground(DEFAULT_BACKGROUND);
-    setForegroundPicker(DEFAULT_FOREGROUND);
-    setBackgroundPicker(DEFAULT_BACKGROUND);
+    const { fg, bg } = getThemeDefaults();
+    setForeground(fg);
+    setBackground(bg);
+    setForegroundPicker(fg);
+    setBackgroundPicker(bg);
   };
 
   const handleMatch = () => {
