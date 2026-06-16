@@ -188,7 +188,6 @@ export default function Footer({
   const gfxLeft = offerLinksThree.slice(0, midGfx);
   const gfxRight = offerLinksThree.slice(midGfx);
 
-  // For PL: use hardcoded toolsLinks; for other locales: generate from registry
   const localeToolsLinks = isPl
     ? toolsLinks
     : getFooterTools(locale).map(tool => ({
@@ -201,14 +200,12 @@ export default function Footer({
   const toolsLeft = localeToolsLinks.slice(0, midTools);
   const toolsRight = localeToolsLinks.slice(midTools);
 
-  // Non-PL: 4 columns of tools
   const colSize = Math.ceil(localeToolsLinks.length / 4);
   const toolsCol1 = localeToolsLinks.slice(0, colSize);
   const toolsCol2 = localeToolsLinks.slice(colSize, colSize * 2);
   const toolsCol3 = localeToolsLinks.slice(colSize * 2, colSize * 3);
   const toolsCol4 = localeToolsLinks.slice(colSize * 3);
 
-  // Non-PL: simplified footer
   if (!isPl) {
     return (
       <footer
@@ -325,7 +322,6 @@ export default function Footer({
     );
   }
 
-  // PL: full footer
   return (
     <>
       <footer
@@ -334,7 +330,6 @@ export default function Footer({
       >
         <Wrapper>
           <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:auto-rows-min lg:grid-cols-5'>
-            {/* 1.1 Dane firmy + Logo + Social */}
             <section
               aria-label='Dane firmy i lokalizacja'
               className='lg:col-start-1 lg:row-start-1'
@@ -345,6 +340,7 @@ export default function Footer({
                   width={140}
                   height={50}
                   alt='Logo Arteon'
+                  className='dark:invert'
                 />
               </div>
               <address className='mb-4 text-base text-dark not-italic'>

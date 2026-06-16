@@ -20,7 +20,7 @@ export default function InputCheckboxWithLabel({
   const id = providedId ?? autoId;
 
   return (
-    <div className='mt-2 flex items-center gap-2'>
+    <div className='flex items-center gap-2'>
       <InputCheckbox
         id={id}
         checked={checked}

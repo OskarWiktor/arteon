@@ -237,7 +237,7 @@ export default function LoremIpsumGenerator() {
             </div>
           </ToolFieldRow>
 
-          <Button variant='accent' onClick={generate} className='w-full'>
+          <Button variant='accent' onClick={generate}>
             {t.generate}
           </Button>
 

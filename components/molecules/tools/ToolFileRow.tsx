@@ -33,7 +33,7 @@ export default function ToolFileRow({
         className,
       )}
     >
-      <div className='flex min-w-0 flex-1 items-center gap-3'>
+      <div className='flex w-1/2 min-w-0 flex-1 items-center gap-3'>
         {preview}
         <div className='min-w-0 flex-1'>
           <div title={name}>
@@ -42,7 +42,9 @@ export default function ToolFileRow({
           <div className='tool-meta'>{meta}</div>
         </div>
       </div>
-      {actions && <div className='flex items-center gap-1'>{actions}</div>}
+      {actions && (
+        <div className='flex w-1/2 items-center gap-1'>{actions}</div>
+      )}
     </div>
   );
 }

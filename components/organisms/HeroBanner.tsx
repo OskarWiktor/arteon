@@ -76,7 +76,7 @@ export default function HeroBanner({
           className={cn(
             'max-w-[100vw] hyphens-auto',
             isCompact
-              ? 'text-center text-on-dark! md:w-full'
+              ? 'text-center md:w-full'
               : 'w-full rounded-lg p-5 pt-4 text-on-dark md:max-w-[75%] md:p-7 lg:max-w-[65%]',
             showOverlay && 'bg-black/60',
           )}
