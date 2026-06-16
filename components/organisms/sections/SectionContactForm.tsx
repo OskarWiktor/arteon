@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { RiMailSendLine, RiTimeLine, RiFileList2Line } from 'react-icons/ri';
+import { cn } from '@/lib/clsx';
 import {
   flexCenterClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import ContactForm from '../ContactForm';
 
 type SectionContactFormProps = {

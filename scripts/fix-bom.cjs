@@ -20,6 +20,6 @@ for (const rel of FILES_TO_CHECK) {
       console.log('Fixed BOM:', rel);
     }
   } catch (e) {
-    // ignore
+    console.error('Error fixing BOM in', rel, e);
   }
 }

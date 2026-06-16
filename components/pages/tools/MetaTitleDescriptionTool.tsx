@@ -6,6 +6,7 @@ import Textarea from '@/components/atoms/form/Textarea';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/metaTitle';
 import { useLocale } from '@/lib/LocaleContext';
 import {
@@ -15,7 +16,6 @@ import {
   type FieldMetrics,
 } from '@/lib/tools/metaLength';
 import { flexCenterClasses, largeIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 
 type LengthStatus = 'empty' | 'too-short' | 'ideal' | 'too-long';
 

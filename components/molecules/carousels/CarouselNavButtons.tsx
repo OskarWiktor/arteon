@@ -1,8 +1,8 @@
 'use client';
 
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
-import { largeIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { largeIconSizeClasses } from '@/lib/uiClasses';
 import ButtonCircle from '../../atoms/buttons/ButtonCircle';
 
 type CarouselNavButtonsProps = {

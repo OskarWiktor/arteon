@@ -228,10 +228,8 @@ export default function LogoCarousel({
           className={cn('overflow-hidden rounded-lg', focusRingClasses)}
           role='region'
           aria-label='Przewijana lista logo firm.'
-          tabIndex={0}
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
-          onFocus={() => setIsPaused(true)}
           onBlur={() => setIsPaused(false)}
           onTouchStart={() => setIsPaused(true)}
           onTouchEnd={() => setIsPaused(false)}
@@ -283,7 +281,6 @@ export default function LogoCarousel({
         tabIndex={0}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
-        onFocus={() => setIsPaused(true)}
         onBlur={() => setIsPaused(false)}
         onTouchStart={() => setIsPaused(true)}
         onTouchEnd={() => setIsPaused(false)}

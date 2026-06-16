@@ -1,11 +1,11 @@
 import { RiAddLine, RiSubtractLine } from 'react-icons/ri';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
+import { cn } from '@/lib/clsx';
 import { LAYOUT_SPACING_MAP } from '@/lib/tools/email/signatureDefaults';
 import {
   flexCenterBetweenClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import type {
   SignatureConfig,
   StyleConfig,

@@ -12,6 +12,7 @@ import {
 } from 'react-icons/ri';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
+import { cn } from '@/lib/clsx';
 import {
   flexCenterBetweenClasses,
   modalBackdropClasses,
@@ -19,7 +20,6 @@ import {
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import ButtonLink from '../atoms/buttons/ButtonLink';
 
 type Cat = { label: string; slug: string; count: number };

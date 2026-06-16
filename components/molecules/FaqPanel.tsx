@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
-import { focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { focusRingClasses } from '@/lib/uiClasses';
 
 interface FaqPanelProps {
   question: string;

@@ -95,7 +95,7 @@ export function buildSignatureHtml(
   const legalColor = textStyle?.legal.color || textColor;
   const legalFontSize = textStyle
     ? getElementFontSize(textStyle.legal.sizeOffset - 2)
-    : '11px'; // -2 for legal default
+    : '11px';
   const backgroundColor = style.backgroundColor || SIGNATURE_COLOR_WHITE;
 
   const paddingAll = PADDING_MAP[style.padding] ?? '16px';

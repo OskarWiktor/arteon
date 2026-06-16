@@ -35,6 +35,7 @@ import SocialPanel from '@/components/organisms/tools/EmailSignatureGenerator/pa
 import SpacingPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/SpacingPanel';
 import TextStyleRow from '@/components/organisms/tools/EmailSignatureGenerator/TextStyleRow';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/emailSignature';
 import { useLocale } from '@/lib/LocaleContext';
 import { buildSignatureHtml } from '@/lib/tools/email/buildSignatureHtml';
@@ -55,7 +56,6 @@ import {
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import type {
   ActivePanel,
   LayoutType,

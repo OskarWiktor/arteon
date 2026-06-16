@@ -6,8 +6,8 @@ import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNav
 import TestimonialCard from '@/components/organisms/carousels/TestimonialCard';
 import testimonialsPl from '@/data/pl/testimonials.json';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import type { Testimonial } from '@/types/testimonial';
 import SectionHeader from '../../molecules/SectionHeader';
 

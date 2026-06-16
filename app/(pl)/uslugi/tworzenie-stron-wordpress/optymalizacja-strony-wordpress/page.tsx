@@ -23,9 +23,9 @@ import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
+import { cn } from '@/lib/clsx';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {

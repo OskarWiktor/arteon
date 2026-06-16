@@ -9,6 +9,7 @@ import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolStatRow from '@/components/molecules/tools/ToolStatRow';
 import Card from '@/components/organisms/Card';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/wordCount';
 import { useLocale } from '@/lib/LocaleContext';
 import {
@@ -27,7 +28,6 @@ import {
   removeDuplicateLines,
 } from '@/lib/tools/text/wordCount';
 import { smallIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 
 /**
  * Render the word count tool UI that analyzes editable text, displays statistics and readability,

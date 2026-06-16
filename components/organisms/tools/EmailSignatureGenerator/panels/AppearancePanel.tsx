@@ -2,9 +2,9 @@ import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import InputColor from '@/components/atoms/form/InputColor';
 import InputCheckboxWithLabel from '@/components/molecules/form/InputCheckboxWithLabel';
 import SelectWithLabel from '@/components/molecules/form/SelectWithLabel';
+import { cn } from '@/lib/clsx';
 import { FONT_OPTIONS } from '@/lib/tools/email/signatureDefaults';
 import { flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import type {
   StyleConfig,
   FontSizeOption,

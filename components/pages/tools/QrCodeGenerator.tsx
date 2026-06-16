@@ -11,6 +11,7 @@ import TextareaWithLabel from '@/components/molecules/form/TextareaWithLabel';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
 import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
+import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/qrCode';
 import { useLocale } from '@/lib/LocaleContext';
 import {
@@ -23,7 +24,6 @@ import {
   calculateContrast,
 } from '@/lib/tools/generateQr';
 import { flexCenterClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import type { QrDataType, VCardData, EmailData } from '@/types/tools/qr';
 import { downloadFromUrl } from '@/utils/download';
 

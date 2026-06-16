@@ -1,11 +1,11 @@
 import { RiCheckLine } from 'react-icons/ri';
 import SectionHeader from '@/components/molecules/SectionHeader';
+import { cn } from '@/lib/clsx';
 import {
   flexCenterClasses,
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import Wrapper from '../../atoms/Wrapper';
 
 interface SectionFeatureListProps {

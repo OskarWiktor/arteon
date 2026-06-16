@@ -21,7 +21,7 @@ export function countSyllablesInWord(
   const w = word
     .toLocaleLowerCase()
     .replace(
-      /[^a-zA-Z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF\u00E0-\u00FF]/g,
+      /[^a-z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF\u00E0-\u00FF]/gi,
       '',
     );
   if (!w) return 0;

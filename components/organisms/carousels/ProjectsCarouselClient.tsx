@@ -6,8 +6,8 @@ import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNav
 import SectionHeader from '@/components/molecules/SectionHeader';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
-import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { focusRingClasses, noScrollbarClasses } from '@/lib/uiClasses';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;

@@ -23,8 +23,8 @@ import SectionBento from '@/components/organisms/sections/SectionBento';
 import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import WorkSteps from '@/components/organisms/WorkSteps';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {

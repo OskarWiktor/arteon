@@ -15,9 +15,10 @@ export function parseColor(color: string): RGBA | null {
     return { ...rgb, a: hsl.a };
   }
 
-  const rgbMatch = trimmed.match(
-    /^rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*([0-9.]+%?))?\s*\)$/i,
-  );
+  const rgbMatch =
+    /^rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*([0-9.]+%?))?\s*\)$/i.exec(
+      trimmed,
+    );
 
   if (rgbMatch) {
     const r = Number(rgbMatch[1]);

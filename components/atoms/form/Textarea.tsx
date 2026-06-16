@@ -1,5 +1,5 @@
-import { focusRingClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { focusRingClasses } from '@/lib/uiClasses';
 
 /**
  * Render a styled native textarea element.

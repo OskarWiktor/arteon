@@ -12,6 +12,7 @@ import InputColorWithLabel from '@/components/molecules/form/InputColorWithLabel
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
+import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/wcagContrast';
 import { useLocale } from '@/lib/LocaleContext';
 import { getContrastRatio, parseColor } from '@/lib/tools/color/contrast';
@@ -21,7 +22,6 @@ import {
   flexCenterClasses,
   largeIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 
 const DEFAULT_FOREGROUND = rgbToHex({ r: 0, g: 0, b: 0 });
 const DEFAULT_BACKGROUND = rgbToHex({ r: 255, g: 255, b: 255 });

@@ -16,6 +16,7 @@ import { useIsMounted } from '@/hooks/useIsMounted';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useScrollLock } from '@/hooks/useScrollLock';
 import { useTimeout } from '@/hooks/useTimeout';
+import { cn } from '@/lib/clsx';
 import { getMobileToolsSections } from '@/lib/i18n/toolRegistry';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import {
@@ -24,7 +25,6 @@ import {
   modalBackdropClasses,
   normalIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import IconText from '../../atoms/IconText';
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };

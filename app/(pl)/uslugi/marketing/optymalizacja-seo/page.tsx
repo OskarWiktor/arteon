@@ -23,9 +23,9 @@ import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
+import { cn } from '@/lib/clsx';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 
 export const metadata = {
   title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',

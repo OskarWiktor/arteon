@@ -6,10 +6,10 @@ import { CarouselNavButtons } from '@/components/molecules/carousels/CarouselNav
 import SectionHeader from '@/components/molecules/SectionHeader';
 import CarouselCard from '@/components/organisms/carousels/CarouselCard';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
+import { cn } from '@/lib/clsx';
 import { getToolsSections } from '@/lib/i18n/toolRegistry';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import { noScrollbarClasses, focusRingClasses } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import type { ToolItemKey } from '@/types/tools/common';
 
 const AUTO_PLAY_INTERVAL_MS = 6000;
