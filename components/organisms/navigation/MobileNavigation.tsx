@@ -26,6 +26,7 @@ import {
   normalIconSizeClasses,
 } from '@/lib/uiClasses';
 import IconText from '../../atoms/IconText';
+import { useEventListener } from '@/hooks/useEventListener';
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {
@@ -137,6 +138,20 @@ export default function MobileNavigation({
 
   const { start: focusFirst } = useTimeout();
 
+  const [panelWidth, setPanelWidth] = useState(0);
+
+  const updatePanelWidth = () =>
+    setPanelWidth(Math.min(innerWidth * 0.88, 300));
+  useEventListener(
+    typeof window !== 'undefined' ? window : null,
+    'resize',
+    updatePanelWidth,
+  );
+
+  useEffect(() => {
+    updatePanelWidth();
+  }, []);
+
   useEffect(() => {
     setIsOpen(false);
   }, [pathname, setIsOpen]);
@@ -221,9 +236,10 @@ export default function MobileNavigation({
       <Portal>
         <div
           className={cn(
-            'fixed inset-y-0 right-[44vw] left-0 z-999 bg-black/40',
+            'fixed inset-y-0 left-0 z-999 bg-black/40',
             modalBackdropClasses,
           )}
+          style={{ right: `${panelWidth}px` }}
           onClick={() => setIsOpen(false)}
           aria-hidden='true'
         />
