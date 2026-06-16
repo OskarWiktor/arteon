@@ -28,7 +28,7 @@ export default function CodeBlock({
   return (
     <figure
       className={cn(
-        'group rounded-lg border border-neutral-200 bg-linear-to-b from-(--foreground) to-neutral-900 text-(--text-on-dark) shadow-sm',
+        'group rounded-lg border border-neutral-200 bg-linear-to-b from-(--foreground) to-neutral-900 text-on-dark shadow-sm',
         className,
       )}
     >

@@ -87,7 +87,6 @@ export default function OfferContentPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp'
         overlay='black'
       />

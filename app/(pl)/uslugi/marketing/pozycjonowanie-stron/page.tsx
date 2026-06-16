@@ -83,7 +83,6 @@ export default function OfferSeoSubscription() {
         }
         secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp'
         overlay='black'
       />

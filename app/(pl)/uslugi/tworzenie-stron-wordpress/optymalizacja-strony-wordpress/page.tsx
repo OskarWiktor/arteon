@@ -100,7 +100,6 @@ export default function OfferOptimizationWordPressPage() {
         }
         secondaryCtaLabel='Sprawdź swoją stronę'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/arteon-baners-camper-albania-mockup.webp'
         overlay='black'
         subtitle='Oferta specjalna: optymalizacja WordPress'

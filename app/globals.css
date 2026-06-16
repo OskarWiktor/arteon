@@ -1,10 +1,7 @@
 @import 'tailwindcss';
-/*
-white może - #23201f
-bg ##101010
-text jasny #d0cbc8
 
-*/
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --shadow-sm: 0 1px 2px 0px #130f0d1a;
   --shadow-md: 0 3px 3px 0px #130f0d1a;
@@ -12,6 +9,8 @@ text jasny #d0cbc8
 }
 
 :root {
+  color-scheme: light;
+
   --primary: #1b1512;
   --primary-light: #e0d6ce;
   --primary-mid: #493b30;
@@ -61,6 +60,52 @@ text jasny #d0cbc8
   --crop-green: #10b981;
 }
 
+.dark {
+  color-scheme: dark;
+
+  --primary: #ece3db;
+  --primary-light: #2a2420;
+  --primary-mid: #c3b2a2;
+
+  --accent: #2a2420;
+
+  --background: #101010;
+  --foreground: #e7e3df;
+  --text-light: #918c87;
+  --text-mid: #bbb5af;
+  --text-on-dark: #f7f5f4;
+
+  --white: #1a1714;
+  --black: #050403;
+
+  --neutral-50: #18181a;
+  --neutral-100: #1f1f22;
+  --neutral-200: #2a2a2e;
+  --neutral-300: #3a3a40;
+  --neutral-900: #ededf0;
+
+  --success-bg: #06281c;
+  --success-border: #0c3a29;
+  --success-icon: #34d399;
+  --success-text: #6ee7b7;
+
+  --warning-bg: #2e2206;
+  --warning-border: #3d2e0c;
+  --warning-icon: #fbbf24;
+  --warning-text: #fcd34d;
+
+  --error-bg: #2e0c0c;
+  --error-border: #3d1212;
+  --error-icon: #f87171;
+  --error-mid: #ef4444;
+  --error-text: #fca5a5;
+
+  --info-bg: #0c1e3a;
+  --info-icon: #60a5fa;
+  --info-mid: #3b82f6;
+  --info-text: #93c5fd;
+}
+
 @theme inline {
   --font-sans:
     var(--font-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
@@ -74,6 +119,7 @@ text jasny #d0cbc8
   --color-dark: var(--foreground);
   --color-mid: var(--text-mid);
   --color-light: var(--text-light);
+  --color-on-dark: var(--text-on-dark);
 
   --color-primary: var(--primary);
   --color-primary-light: var(--primary-light);
@@ -309,7 +355,7 @@ strong {
 
 .hover-underline {
   position: relative;
-  display: flex;
+  display: inline-flex;
 }
 
 .hover-underline::after {
@@ -401,6 +447,18 @@ strong {
 .ad-slot-wrapper:has(ins.adsbygoogle[data-ad-status='unfilled'])
   .ad-placeholder {
   background: transparent;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .theme-transition,
+  .theme-transition *,
+  .theme-transition *::before,
+  .theme-transition *::after {
+    transition-property:
+      color, background-color, border-color, fill, stroke, box-shadow;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

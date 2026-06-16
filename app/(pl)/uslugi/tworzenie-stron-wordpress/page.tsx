@@ -160,7 +160,6 @@ export default function TworzenieStronWordPressPage() {
             telefonów, zgodność ze standardami Google i SEO.
           </>
         }
-        variant='left'
         backgroundImage='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp'
         overlay='black'
       />

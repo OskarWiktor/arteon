@@ -81,7 +81,6 @@ export default function OfferDesignFlyerPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp'
         overlay='black'
       />

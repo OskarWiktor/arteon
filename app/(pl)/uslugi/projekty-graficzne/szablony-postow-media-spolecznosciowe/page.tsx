@@ -85,7 +85,6 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp'
         overlay='black'
       />

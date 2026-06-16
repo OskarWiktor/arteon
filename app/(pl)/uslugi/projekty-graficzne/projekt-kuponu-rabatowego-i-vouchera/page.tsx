@@ -85,7 +85,6 @@ export default function OfferDesignCouponsAndVouchersPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp'
         overlay='black'
       />

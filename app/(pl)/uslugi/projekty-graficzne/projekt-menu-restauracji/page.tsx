@@ -80,7 +80,6 @@ export default function OfferDesignMenuPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/nocturna/nocturna-menu-mockup.webp'
         overlay='black'
       />

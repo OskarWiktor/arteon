@@ -150,7 +150,6 @@ export default function OfferDesignPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp'
         overlay='black'
       />

@@ -3,16 +3,14 @@
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { startTransition, useEffect, useState } from 'react';
+import { RiCloseLine, RiMenuLine, RiSearchLine } from 'react-icons/ri';
 import ButtonIcon from '@/components/atoms/buttons/ButtonIcon';
-import {
-  NavMenuLine as RiMenuLine,
-  NavCloseLine as RiCloseLine,
-  NavSearchLine as RiSearchLine,
-} from '@/components/atoms/NavIcons';
 import Wrapper from '@/components/atoms/Wrapper';
 import LanguageSwitcher from '@/components/organisms/LanguageSwitcher';
 import { DesktopNavSkeleton } from '@/components/organisms/skeletons/NavSkeleton';
+import ThemeToggle from '@/components/atoms/ThemeToggle';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { cn } from '@/lib/clsx';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
 import {
   flexCenterClasses,
@@ -20,7 +18,6 @@ import {
   largeIconSizeClasses,
   normalIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import InlineLink from '../../atoms/InlineLink';
 
 const MobileNavigation = dynamic(() => import('./MobileNavigation'), {
@@ -98,12 +95,13 @@ export default function NavigationShell() {
               height={30}
               alt={t.logoAlt}
               sizes='100px'
+              className='dark:invert'
             />
           </InlineLink>
 
           <DesktopNavigation />
 
-          <div className='hidden items-center gap-2 md:flex'>
+          <div className='hidden items-center gap-2 lg:flex'>
             <button
               type='button'
               onClick={() => startTransition(() => setIsSearchOpen(true))}
@@ -130,10 +128,13 @@ export default function NavigationShell() {
               #MadeWithNext.js
             </a>
 
+            <ThemeToggle />
+
             <LanguageSwitcher variant='desktop' />
           </div>
 
           <div className='flex items-center gap-1 lg:hidden'>
+            <ThemeToggle />
             <LanguageSwitcher variant='mobile' />
             <button
               type='button'

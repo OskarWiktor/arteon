@@ -82,7 +82,6 @@ export default function OfferMarketingPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp'
         overlay='black'
       />

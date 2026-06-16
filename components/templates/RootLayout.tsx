@@ -181,8 +181,20 @@ interface RootLayoutProps {
 
 export default function RootLayout({ lang, children }: RootLayoutProps) {
   return (
-    <html lang={lang} className={cn(inter.variable, playfairDisplay.variable)}>
+    <html
+      lang={lang}
+      suppressHydrationWarning
+      className={cn(inter.variable, playfairDisplay.variable)}
+    >
       <head>
+        <script
+          id='theme-bootstrap'
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{var t=localStorage.getItem('theme');var m=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||((!t||t==='system')&&m)){document.documentElement.classList.add('dark')}}catch(e){}})();",
+          }}
+        />
+
         <script
           id='google-consent-default'
           dangerouslySetInnerHTML={{

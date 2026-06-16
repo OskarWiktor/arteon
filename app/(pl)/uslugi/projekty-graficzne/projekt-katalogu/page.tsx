@@ -83,7 +83,6 @@ export default function OfferDesignCatalogPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/restoquality/mockup-gazetka-restoquality.webp'
         overlay='black'
       />

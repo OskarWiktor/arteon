@@ -88,7 +88,6 @@ export default function OfferMarketingHubPage() {
             Przyciągnij nowych klientów, przemyślanym działaniem marketingowym
           </>
         }
-        variant='left'
         backgroundImage='/assets/projects/msc/moskup-strony-msc-psychotherapy.webp'
         overlay='black'
       />

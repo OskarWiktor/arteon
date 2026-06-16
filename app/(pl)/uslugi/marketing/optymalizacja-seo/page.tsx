@@ -81,7 +81,6 @@ export default function OfferOptimizationSEO() {
         }
         secondaryCtaLabel='Bezpłatna konsultacja'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/arteon-baners-camper-albania-mockup.webp'
         overlay='black'
       />

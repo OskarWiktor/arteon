@@ -83,7 +83,6 @@ export default function OfferDesignLogoPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/finish-masters/logo/logo-finish-masters-case-study.webp'
         overlay='black'
       />

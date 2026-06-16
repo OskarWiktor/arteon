@@ -80,7 +80,6 @@ export default function OfferDesignBusinessCardPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp'
         overlay='black'
       />

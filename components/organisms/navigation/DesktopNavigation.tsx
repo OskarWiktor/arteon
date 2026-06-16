@@ -3,10 +3,7 @@
 import { usePathname } from 'next/navigation';
 import { startTransition, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import {
-  NavArrowDownSLine as RiArrowDownSLine,
-  NavArrowRightSLine as RiArrowRightSLine,
-} from '@/components/atoms/NavIcons';
+import { RiArrowDownSLine, RiArrowRightSLine } from 'react-icons/ri';
 import Wrapper from '@/components/atoms/Wrapper';
 import {
   DESKTOP_NAV_ITEMS_PL,

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound, permanentRedirect } from 'next/navigation';
-import AbbrTouchHandler from '@/components/atoms/AbbrTouchHandler';
 import Badge from '@/components/atoms/Badge';
 import ColorPalette from '@/components/atoms/ColorPalette';
 import Divider from '@/components/atoms/Divider';
@@ -455,7 +454,6 @@ export default async function ArticlePage({
 
   return (
     <>
-      <AbbrTouchHandler />
       <HeroBanner
         backgroundImage={article.cover || '/assets/bg/abstract-bg13.webp'}
       />

@@ -93,7 +93,6 @@ export default function OfferWebPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/trilllizo/moskup-strony-trilllizo.webp'
         overlay='black'
       />

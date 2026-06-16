@@ -3,16 +3,13 @@
 import { usePathname } from 'next/navigation';
 import { startTransition, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import {
-  NavTranslate2 as RiTranslate2,
-  NavCloseLine as RiCloseLine,
-  NavArrowDownSLine as RiArrowDownSLine,
-} from '@/components/atoms/NavIcons';
+import { RiArrowDownSLine, RiCloseLine, RiTranslate2 } from 'react-icons/ri';
 import Wrapper from '@/components/atoms/Wrapper';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useScrollLock } from '@/hooks/useScrollLock';
+import { cn } from '@/lib/clsx';
 import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { getAlternateToolHref } from '@/lib/i18n/toolRegistry';
 import {
@@ -30,7 +27,6 @@ import {
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
-import { cn } from '@/lib/clsx';
 import InlineLink from '../atoms/InlineLink';
 type AlternateLink = {
   locale: Locale;

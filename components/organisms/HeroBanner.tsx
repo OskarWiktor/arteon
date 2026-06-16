@@ -6,80 +6,59 @@ import Wrapper from '../atoms/Wrapper';
 import ButtonGroup from '../molecules/ButtonGroup';
 
 interface HeroBannerProps {
-  id?: string;
   title?: ReactNode;
   subtitle?: ReactNode;
   description?: ReactNode;
   backgroundImage?: string;
-  backgroundImageAlt?: string;
   primaryCtaLabel?: string;
   primaryCtaHref?: string;
   secondaryCtaLabel?: string;
   secondaryCtaHref?: string;
-  variant?: 'left' | 'center' | 'right';
-  overlay?: 'none' | 'black' | 'white';
+  overlay?: 'none' | 'black';
   size?: 'default' | 'compact';
 }
 
+/**
+ * Page hero. Two shapes:
+ * - `default`: a dark banner (optional background image + optional black overlay)
+ *   with light text. Visually dark in both themes by design.
+ * - `compact`: transparent, themed text that follows the active light/dark theme.
+ */
 export default function HeroBanner({
-  id = 'hero',
   title,
   subtitle,
   description,
   backgroundImage,
-  backgroundImageAlt,
   primaryCtaLabel,
   primaryCtaHref,
   secondaryCtaLabel,
   secondaryCtaHref,
-  variant = 'left',
   overlay = 'none',
   size = 'default',
 }: HeroBannerProps) {
   const isCompact = size === 'compact';
   const hasBg = !isCompact && Boolean(backgroundImage);
-  const isLightText = !isCompact && overlay !== 'white';
+  const showOverlay = hasBg && overlay === 'black';
 
-  const baseBg = isCompact
-    ? 'bg-transparent'
-    : overlay === 'white'
-      ? 'bg-white'
-      : 'bg-black';
-  const toneTextClass = isLightText ? 'text-white' : 'text-dark';
-  const toneMutedClass = isLightText ? 'text-white' : 'text-dark opacity-80';
-
-  const textAlign =
-    variant === 'center'
-      ? 'text-left md:text-center'
-      : variant === 'right'
-        ? 'text-right'
-        : 'text-left';
-  const contentAnchor =
-    variant === 'right' ? 'ml-auto' : variant === 'center' ? 'mx-auto' : '';
-  const contentWidthClass = isCompact
-    ? 'text-center md:w-[100%]'
-    : variant === 'left'
-      ? 'w-full md:max-w-[75%] lg:max-w-[65%]'
-      : 'md:max-w-[75%]';
-
-  const titleId = title ? `${id}-title` : undefined;
-  const descId = description ? `${id}-description` : undefined;
-
-  const sectionClass = isCompact
-    ? `relative ${baseBg} flex h-auto items-center overflow-hidden pt-4 pb-2 md:pt-7`
-    : `relative ${baseBg} flex h-auto min-h-[400px] items-center overflow-hidden py-10 md:min-h-[460px] md:py-0 lg:min-h-[480px]`;
+  const titleId = title ? 'hero-title' : undefined;
+  const descId = description ? 'hero-description' : undefined;
 
   return (
     <section
-      id={id}
+      id='hero'
       aria-labelledby={titleId}
       aria-describedby={descId}
-      className={sectionClass}
+      className={cn(
+        'relative flex h-auto items-center overflow-hidden',
+        isCompact
+          ? 'bg-transparent pt-4 pb-2 md:pt-7'
+          : 'min-h-100 bg-black py-10 md:min-h-115 md:py-0 lg:min-h-120',
+      )}
     >
       {hasBg && backgroundImage && (
         <Image
           src={backgroundImage}
-          alt={backgroundImageAlt ?? ''}
+          alt=''
           fill
           priority
           fetchPriority='high'
@@ -88,41 +67,32 @@ export default function HeroBanner({
           className='object-cover object-center'
         />
       )}
-      {hasBg && overlay !== 'none' && (
-        <div
-          aria-hidden='true'
-          className={cn(
-            'absolute inset-0',
-            overlay === 'black' ? 'bg-black/70' : 'bg-white/80',
-          )}
-        />
+      {showOverlay && (
+        <div aria-hidden='true' className='absolute inset-0 bg-black/70' />
       )}
+
       <Wrapper className='relative flex h-auto items-center'>
         <div
           className={cn(
-            'max-w-[100vw]',
-            contentWidthClass,
-            contentAnchor,
-            textAlign,
-            toneTextClass,
-            isCompact ? '' : 'rounded-lg p-5 pt-4 md:p-7',
-            hasBg && overlay === 'black'
-              ? 'bg-black/60'
-              : hasBg && overlay === 'white'
-                ? 'bg-white/50'
-                : '',
-            'hyphens-auto',
+            'max-w-[100vw] hyphens-auto',
+            isCompact
+              ? 'text-center text-on-dark! md:w-full'
+              : 'w-full rounded-lg p-5 pt-4 text-on-dark md:max-w-[75%] md:p-7 lg:max-w-[65%]',
+            showOverlay && 'bg-black/60',
           )}
         >
           {subtitle && (
-            <Subtitle variant='hero' className={cn(' ', toneMutedClass)}>
+            <Subtitle
+              variant='hero'
+              className={isCompact ? 'text-mid' : 'text-on-dark'}
+            >
               {subtitle}
             </Subtitle>
           )}
           {title && (
             <h1
               id={titleId}
-              className={cn('text-pretty', isCompact ? 'h4 text-center' : '')}
+              className={cn('text-pretty', isCompact && 'h4 text-center')}
             >
               {title}
             </h1>
@@ -131,10 +101,10 @@ export default function HeroBanner({
             <p
               id={descId}
               className={cn(
-                'text-pretty',
-                isCompact ? 'mt-2 text-center md:mt-3' : 'mt-3 md:mt-5',
-                'text-base leading-relaxed',
-                isLightText ? 'text-white!' : 'text-mid!',
+                'text-base leading-relaxed text-pretty',
+                isCompact
+                  ? 'mt-2 text-center text-mid! md:mt-3'
+                  : 'mt-3 text-on-dark! md:mt-5',
               )}
             >
               {description}
@@ -146,13 +116,7 @@ export default function HeroBanner({
               btnOneHref={secondaryCtaHref}
               btnTwo={primaryCtaLabel}
               btnTwoHref={primaryCtaHref}
-              align={
-                variant === 'center'
-                  ? 'center'
-                  : variant === 'right'
-                    ? 'right'
-                    : 'left'
-              }
+              align='left'
             />
           )}
         </div>

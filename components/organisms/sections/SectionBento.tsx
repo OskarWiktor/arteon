@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import type { ReactNode } from 'react';
 import SectionHeader from '@/components/molecules/SectionHeader';
-import { flexCenterClasses } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
+import { flexCenterClasses } from '@/lib/uiClasses';
 import ButtonLink from '../../atoms/buttons/ButtonLink';
 
 type BentoItemSize = 'small' | 'medium' | 'large';
@@ -65,7 +65,7 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
                 {item.icon && (
                   <div
                     className={cn(
-                      'mb-2 h-9 w-9 rounded-md bg-white/20 text-white',
+                      'mb-2 h-9 w-9 rounded-md bg-on-dark/20 text-on-dark',
                       flexCenterClasses,
                     )}
                   >
@@ -73,14 +73,14 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
                   </div>
                 )}
                 <h3
-                  className={cn('mb-1 text-white', {
+                  className={cn('mb-1 text-on-dark', {
                     h5: item.size === 'large',
                     h6: item.size !== 'large',
                   })}
                 >
                   {item.title}
                 </h3>
-                <p className='text-sm text-white/80'>{item.description}</p>
+                <p className='text-sm text-on-dark/80'>{item.description}</p>
                 {item.btnLabel && item.btnLink && (
                   <ButtonLink
                     href={item.btnLink}

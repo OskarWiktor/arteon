@@ -11,7 +11,6 @@ import {
   OFFER_SECTIONS_PL,
 } from '@/data/pl/navigation-data-pl';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
-import { useEventListener } from '@/hooks/useEventListener';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
@@ -27,7 +26,6 @@ import {
 } from '@/lib/uiClasses';
 import { cn } from '@/lib/clsx';
 import IconText from '../../atoms/IconText';
-import Subtitle from '../../atoms/typography/Subtitle';
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {
@@ -139,19 +137,6 @@ export default function MobileNavigation({
 
   const { start: focusFirst } = useTimeout();
 
-  const [panelWidth, setPanelWidth] = useState(0);
-  const updatePanelWidth = () =>
-    setPanelWidth(Math.min(innerWidth * 0.88, 300));
-  useEventListener(
-    typeof window !== 'undefined' ? window : null,
-    'resize',
-    updatePanelWidth,
-  );
-
-  useEffect(() => {
-    updatePanelWidth();
-  }, []);
-
   useEffect(() => {
     setIsOpen(false);
   }, [pathname, setIsOpen]);
@@ -236,10 +221,9 @@ export default function MobileNavigation({
       <Portal>
         <div
           className={cn(
-            'fixed inset-y-0 left-0 z-999 bg-black/40',
+            'fixed inset-y-0 right-[44vw] left-0 z-999 bg-black/40',
             modalBackdropClasses,
           )}
-          style={{ right: `${panelWidth}px` }}
           onClick={() => setIsOpen(false)}
           aria-hidden='true'
         />
@@ -264,12 +248,6 @@ export default function MobileNavigation({
         </div>
 
         <div className='flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3'>
-          {isPl && (
-            <Subtitle className='px-3 pb-1 text-xs tracking-wider'>
-              {mobileNavUi.services}
-            </Subtitle>
-          )}
-
           {isPl && (
             <div className='flex flex-col'>
               {SECTIONS.map(sec => {

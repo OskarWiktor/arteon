@@ -84,7 +84,6 @@ export default function OfferDesignLetterheadPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp'
         overlay='black'
       />

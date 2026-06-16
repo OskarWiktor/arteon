@@ -88,7 +88,6 @@ export default function OfferBlogPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        variant='left'
         backgroundImage='/assets/projects/jstax/moskup-strony-jstax.webp'
         overlay='black'
       />
