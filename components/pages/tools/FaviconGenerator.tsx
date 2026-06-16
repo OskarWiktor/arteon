@@ -259,7 +259,7 @@ export default function FaviconGenerator() {
 
   return (
     <>
-      <div className='grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
+      <div className='grid gap-4 md:grid-cols-[minmax(0,3fr)_minmax(0,3fr)]'>
         <Card interactive={false} padding='lg' variant='outlined'>
           <form onSubmit={handleGenerate} className='space-y-6'>
             <div>
