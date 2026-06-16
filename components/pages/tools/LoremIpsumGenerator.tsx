@@ -282,7 +282,7 @@ export default function LoremIpsumGenerator() {
           ) : (
             <div
               className={cn(
-                'tool-input min-h-100 text-neutral-400',
+                'tool-input min-h-100 text-light',
                 flexCenterClasses,
               )}
             >

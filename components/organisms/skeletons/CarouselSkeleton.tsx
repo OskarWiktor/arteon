@@ -102,7 +102,7 @@ function TestimonialCardSkeleton() {
         <Shimmer className='mt-2 h-4 w-28' />
         <div className='mt-2 flex gap-1'>
           {[1, 2, 3, 4, 5].map(i => (
-            <Shimmer key={i} className='h-5 w-5 rounded-sm! bg-amber-100!' />
+            <Shimmer key={i} className='h-5 w-5 rounded-sm! bg-warning-bg!' />
           ))}
         </div>
         <div className='mt-4 w-full space-y-2'>

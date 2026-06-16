@@ -652,7 +652,7 @@ export default function ImageResizeTool() {
             <div className='flex flex-wrap gap-2'>
               {TOOLBAR_ITEMS.map(item => (
                 <div key={item.id} className='tool-button tool-button-inactive'>
-                  <span className='text-neutral-400'>{item.icon}</span>
+                  <span className='text-light'>{item.icon}</span>
                   <span className='text-light'>{item.label}</span>
                 </div>
               ))}
@@ -664,7 +664,7 @@ export default function ImageResizeTool() {
                 flexCenterClasses,
               )}
             >
-              <div className='flex flex-col items-center gap-2 text-neutral-400'>
+              <div className='flex flex-col items-center gap-2 text-light'>
                 <RiImageLine className='text-5xl' aria-hidden='true' />
                 <span className='text-sm! font-medium'>{t.demoPreset}</span>
               </div>

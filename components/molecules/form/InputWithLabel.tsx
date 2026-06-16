@@ -157,7 +157,7 @@ export default function InputWithLabel({
         onBlur={onBlur}
       />
       {errorMessage && (
-        <p id={errorId} role='alert' className='mt-1 text-sm text-red-500'>
+        <p id={errorId} role='alert' className='mt-1 text-sm text-error-text'>
           {errorMessage}
         </p>
       )}

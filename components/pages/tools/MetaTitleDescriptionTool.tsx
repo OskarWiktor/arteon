@@ -226,16 +226,16 @@ export default function MetaTitleDescriptionTool() {
                     {url || t.urlPlaceholder}
                   </p>
                   <div className='ml-3 flex flex-col gap-0.5'>
-                    <div className='h-0.5 w-0.5 rounded-lg bg-neutral-500'></div>
-                    <div className='h-0.5 w-0.5 rounded-lg bg-neutral-500'></div>
-                    <div className='h-0.5 w-0.5 rounded-lg bg-neutral-500'></div>
+                    <div className='h-0.5 w-0.5 rounded-lg bg-light'></div>
+                    <div className='h-0.5 w-0.5 rounded-lg bg-light'></div>
+                    <div className='h-0.5 w-0.5 rounded-lg bg-light'></div>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className='mt-2'>
-              <p className='line-clamp-2 text-[22px]! leading-tight font-medium! text-blue-900'>
+              <p className='line-clamp-2 text-[22px]! leading-tight font-medium! text-info-text'>
                 {previewTitle}
               </p>
 

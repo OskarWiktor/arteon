@@ -345,13 +345,13 @@ export function getReadabilityColor(
   score: number | null,
   locale: Locale = 'en',
 ): string {
-  if (score === null) return 'text-neutral-400';
+  if (score === null) return 'text-light';
   const [, easy, moderate, difficult] =
     READABILITY_THRESHOLDS[locale] ?? DEFAULT_THRESHOLDS;
-  if (score >= easy) return 'text-green-600';
-  if (score >= moderate) return 'text-yellow-600';
-  if (score >= difficult) return 'text-orange-500';
-  return 'text-red-500';
+  if (score >= easy) return 'text-success-icon';
+  if (score >= moderate) return 'text-warning-icon';
+  if (score >= difficult) return 'text-accent-orange';
+  return 'text-error-icon';
 }
 
 // ---------------------------------------------------------------------------
