@@ -77,7 +77,11 @@
     "messagePlaceholder": "Describa su pregunta o sugerencia...",
     "send": "Enviar",
     "error": "Algo salió mal. Verifique sus datos e inténtelo de nuevo.",
-    "success": "¡Mensaje enviado! Responderemos lo antes posible."
+    "success": "¡Mensaje enviado! Responderemos lo antes posible.",
+    "consentPrefix": "He leído la",
+    "consentLinkText": "Política de Privacidad",
+    "consentSuffix": "y acepto el tratamiento de mis datos personales para responder a mi consulta.",
+    "consentRequiredError": "Confirme su consentimiento para el tratamiento de datos antes de enviar el formulario."
   },
   "toolsCarousel": {
     "defaultTitle": "Herramientas en línea gratuitas",

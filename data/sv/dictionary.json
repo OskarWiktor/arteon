@@ -77,7 +77,11 @@
     "messagePlaceholder": "Beskriv din fråga eller ditt förslag...",
     "send": "Skicka",
     "error": "Något gick fel. Kontrollera dina uppgifter och försök igen.",
-    "success": "Meddelande skickat! Vi svarar så snart som möjligt."
+    "success": "Meddelande skickat! Vi svarar så snart som möjligt.",
+    "consentPrefix": "Jag har läst",
+    "consentLinkText": "integritetspolicyn",
+    "consentSuffix": "och godkänner behandlingen av mina personuppgifter för att få ett svar.",
+    "consentRequiredError": "Bekräfta samtycke till databehandling innan du skickar formuläret."
   },
   "toolsCarousel": {
     "defaultTitle": "Gratis verktyg",

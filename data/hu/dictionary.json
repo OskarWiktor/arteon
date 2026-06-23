@@ -77,7 +77,11 @@
     "messagePlaceholder": "Írja le kérdését vagy javaslatát...",
     "send": "Küldés",
     "error": "Valami hiba történt. Ellenőrizze az adatokat és próbálkozzon újra.",
-    "success": "Üzenet elküldve! A lehető leghamarabb válaszolunk."
+    "success": "Üzenet elküldve! A lehető leghamarabb válaszolunk.",
+    "consentPrefix": "Elolvastam az",
+    "consentLinkText": "Adatvédelmi tájékoztatót",
+    "consentSuffix": "és hozzájárulok személyes adataim kezeléséhez a válaszadás céljából.",
+    "consentRequiredError": "Az űrlap elküldése előtt erősítse meg az adatkezeléshez való hozzájárulását."
   },
   "toolsCarousel": {
     "defaultTitle": "Ingyenes eszközök",

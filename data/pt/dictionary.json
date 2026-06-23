@@ -77,7 +77,11 @@
     "messagePlaceholder": "Descreva a sua pergunta ou sugestão...",
     "send": "Enviar",
     "error": "Algo correu mal. Verifique os seus dados e tente novamente.",
-    "success": "Mensagem enviada! Responderemos o mais brevemente possível."
+    "success": "Mensagem enviada! Responderemos o mais brevemente possível.",
+    "consentPrefix": "Li a",
+    "consentLinkText": "Política de Privacidade",
+    "consentSuffix": "e aceito o tratamento dos meus dados pessoais para responder ao meu pedido.",
+    "consentRequiredError": "Confirme o consentimento para o tratamento de dados antes de enviar o formulário."
   },
   "toolsCarousel": {
     "defaultTitle": "Ferramentas gratuitas",
