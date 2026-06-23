@@ -77,7 +77,11 @@
     "messagePlaceholder": "Kuvaile kysymyksesi tai ehdotuksesi...",
     "send": "Lähetä",
     "error": "Jokin meni pieleen. Tarkista tietosi ja yritä uudelleen.",
-    "success": "Viesti lähetetty! Vastaamme mahdollisimman pian."
+    "success": "Viesti lähetetty! Vastaamme mahdollisimman pian.",
+    "consentPrefix": "Olen lukenut",
+    "consentLinkText": "tietosuojaselosteen",
+    "consentSuffix": "ja hyväksyn henkilötietojeni käsittelyn vastauksen saamiseksi.",
+    "consentRequiredError": "Vahvista suostumus tietojenkäsittelyyn ennen lomakkeen lähettämistä."
   },
   "toolsCarousel": {
     "defaultTitle": "Ilmaiset työkalut",

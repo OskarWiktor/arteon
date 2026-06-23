@@ -77,7 +77,11 @@
     "messagePlaceholder": "Descrieți întrebarea sau sugestia dvs...",
     "send": "Trimite",
     "error": "Ceva nu a funcționat. Verificați datele și încercați din nou.",
-    "success": "Mesaj trimis! Vom răspunde cât mai curând posibil."
+    "success": "Mesaj trimis! Vom răspunde cât mai curând posibil.",
+    "consentPrefix": "Am citit",
+    "consentLinkText": "Politica de confidențialitate",
+    "consentSuffix": "și sunt de acord cu prelucrarea datelor mele personale pentru a primi un răspuns.",
+    "consentRequiredError": "Confirmați acordul pentru prelucrarea datelor înainte de a trimite formularul."
   },
   "toolsCarousel": {
     "defaultTitle": "Instrumente gratuite",

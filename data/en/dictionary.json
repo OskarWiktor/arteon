@@ -77,7 +77,11 @@
     "messagePlaceholder": "Describe your question or suggestion...",
     "send": "Send",
     "error": "Something went wrong. Please check your data and try again.",
-    "success": "Message sent! We will respond as soon as possible."
+    "success": "Message sent! We will respond as soon as possible.",
+    "consentPrefix": "I have read the",
+    "consentLinkText": "Privacy Policy",
+    "consentSuffix": "and I agree to the processing of my personal data in order to receive a reply.",
+    "consentRequiredError": "Please confirm you agree to the processing of your personal data before sending the form."
   },
   "toolsCarousel": {
     "defaultTitle": "Free tools",

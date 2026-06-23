@@ -29,6 +29,10 @@ export interface ClientDictionary {
     send: string;
     error: string;
     success: string;
+    consentPrefix: string;
+    consentLinkText: string;
+    consentSuffix: string;
+    consentRequiredError: string;
   };
   toolsCarousel: {
     defaultTitle: string;

@@ -77,7 +77,11 @@
     "messagePlaceholder": "Popište svůj dotaz nebo návrh...",
     "send": "Odeslat",
     "error": "Něco se pokazilo. Zkontrolujte svá data a zkuste to znovu.",
-    "success": "Zpráva odeslána! Odpovíme co nejdříve."
+    "success": "Zpráva odeslána! Odpovíme co nejdříve.",
+    "consentPrefix": "Přečetl jsem si",
+    "consentLinkText": "Zásady ochrany osobních údajů",
+    "consentSuffix": "a souhlasím se zpracováním svých osobních údajů za účelem odpovědi na dotaz.",
+    "consentRequiredError": "Před odesláním formuláře potvrďte souhlas se zpracováním údajů."
   },
   "toolsCarousel": {
     "defaultTitle": "Bezplatné nástroje",

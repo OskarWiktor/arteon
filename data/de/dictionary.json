@@ -77,7 +77,11 @@
     "messagePlaceholder": "Beschreiben Sie Ihre Frage oder Ihren Vorschlag...",
     "send": "Senden",
     "error": "Etwas ist schiefgelaufen. Bitte überprüfen Sie Ihre Daten und versuchen Sie es erneut.",
-    "success": "Nachricht gesendet! Wir antworten so schnell wie möglich."
+    "success": "Nachricht gesendet! Wir antworten so schnell wie möglich.",
+    "consentPrefix": "Ich habe die",
+    "consentLinkText": "Datenschutzerklärung",
+    "consentSuffix": "gelesen und stimme der Verarbeitung meiner personenbezogenen Daten zur Beantwortung meiner Anfrage zu.",
+    "consentRequiredError": "Bitte bestätigen Sie die Zustimmung zur Datenverarbeitung, um das Formular zu senden."
   },
   "toolsCarousel": {
     "defaultTitle": "Kostenlose Online-Tools",

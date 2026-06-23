@@ -80,6 +80,10 @@ const ContactFormSchema = z.object({
   send: z.string(),
   error: z.string(),
   success: z.string(),
+  consentPrefix: z.string(),
+  consentLinkText: z.string(),
+  consentSuffix: z.string(),
+  consentRequiredError: z.string(),
 });
 
 const ToolsCarouselSchema = z.object({

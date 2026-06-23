@@ -1,9 +1,11 @@
 'use client';
 
+import Link from 'next/link';
 import { useRef, useState } from 'react';
 import { useDictionary } from '@/lib/LocaleContext';
 import type { Locale } from '@/types/locale';
 import Button from '../atoms/buttons/Button';
+import InputCheckbox from '../atoms/form/InputCheckbox';
 import ToolAlert from '../atoms/ToolAlert';
 import InputWithLabel from '../molecules/form/InputWithLabel';
 import TextareaWithLabel from '../molecules/form/TextareaWithLabel';
@@ -26,7 +28,11 @@ export default function ContactForm({
   messagePlaceholder,
   locale: _locale = 'pl',
 }: ContactFormProps) {
-  const t = useDictionary().contactForm;
+  const dict = useDictionary();
+  const t = dict.contactForm;
+  const privacyPolicyHref =
+    dict.legal.find(link => link.key === 'privacy')?.href ??
+    '/polityka-prywatnosci';
   const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>(
     'idle',
   );
@@ -105,6 +111,32 @@ export default function ContactForm({
           required
           className='h-48 resize-none'
         />
+
+        <div className='flex items-start gap-2'>
+          <InputCheckbox
+            id='privacyConsent'
+            name='Zgoda na przetwarzanie danych'
+            value='Tak'
+            required
+            className='mt-0.5 shrink-0'
+            onInvalid={e =>
+              e.currentTarget.setCustomValidity(t.consentRequiredError)
+            }
+            onChange={e => e.currentTarget.setCustomValidity('')}
+          />
+          <label htmlFor='privacyConsent' className='tool-value cursor-pointer'>
+            {t.consentPrefix}{' '}
+            <Link
+              href={privacyPolicyHref}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-current underline underline-offset-2'
+            >
+              {t.consentLinkText}
+            </Link>{' '}
+            {t.consentSuffix}
+          </label>
+        </div>
 
         <Button
           variant='accent'

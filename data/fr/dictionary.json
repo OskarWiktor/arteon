@@ -77,7 +77,11 @@
     "messagePlaceholder": "Décrivez votre question ou suggestion...",
     "send": "Envoyer",
     "error": "Une erreur s’est produite. Vérifiez vos données et réessayez.",
-    "success": "Message envoyé ! Nous répondrons dès que possible."
+    "success": "Message envoyé ! Nous répondrons dès que possible.",
+    "consentPrefix": "J’ai lu la",
+    "consentLinkText": "Politique de confidentialité",
+    "consentSuffix": "et j’accepte le traitement de mes données personnelles afin de répondre à ma demande.",
+    "consentRequiredError": "Veuillez confirmer votre consentement au traitement des données avant d’envoyer le formulaire."
   },
   "toolsCarousel": {
     "defaultTitle": "Outils en ligne gratuits",

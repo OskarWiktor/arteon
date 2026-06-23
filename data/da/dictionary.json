@@ -77,7 +77,11 @@
     "messagePlaceholder": "Beskriv dit spørgsmål eller forslag...",
     "send": "Send",
     "error": "Noget gik galt. Tjek dine data og prøv igen.",
-    "success": "Besked sendt! Vi svarer hurtigst muligt."
+    "success": "Besked sendt! Vi svarer hurtigst muligt.",
+    "consentPrefix": "Jeg har læst",
+    "consentLinkText": "privatlivspolitikken",
+    "consentSuffix": "og accepterer behandlingen af mine personoplysninger for at få et svar.",
+    "consentRequiredError": "Bekræft samtykke til databehandling, før du sender formularen."
   },
   "toolsCarousel": {
     "defaultTitle": "Gratis værktøjer",

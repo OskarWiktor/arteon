@@ -77,7 +77,11 @@
     "messagePlaceholder": "Descrivi la tua domanda o il tuo suggerimento...",
     "send": "Invia",
     "error": "Qualcosa è andato storto. Controlla i tuoi dati e riprova.",
-    "success": "Messaggio inviato! Risponderemo il prima possibile."
+    "success": "Messaggio inviato! Risponderemo il prima possibile.",
+    "consentPrefix": "Ho letto l’",
+    "consentLinkText": "Informativa sulla privacy",
+    "consentSuffix": "e acconsento al trattamento dei miei dati personali per rispondere alla mia richiesta.",
+    "consentRequiredError": "Confermi il consenso al trattamento dei dati prima di inviare il modulo."
   },
   "toolsCarousel": {
     "defaultTitle": "Strumenti gratuiti",

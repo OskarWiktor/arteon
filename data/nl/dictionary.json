@@ -77,7 +77,11 @@
     "messagePlaceholder": "Beschrijf uw vraag of suggestie...",
     "send": "Verzenden",
     "error": "Er is iets misgegaan. Controleer uw gegevens en probeer het opnieuw.",
-    "success": "Bericht verzonden! We reageren zo snel mogelijk."
+    "success": "Bericht verzonden! We reageren zo snel mogelijk.",
+    "consentPrefix": "Ik heb het",
+    "consentLinkText": "privacybeleid",
+    "consentSuffix": "gelezen en ga akkoord met de verwerking van mijn persoonsgegevens om een antwoord te ontvangen.",
+    "consentRequiredError": "Bevestig uw toestemming voor gegevensverwerking voordat u het formulier verzendt."
   },
   "toolsCarousel": {
     "defaultTitle": "Gratis tools",
