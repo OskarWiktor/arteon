@@ -179,7 +179,10 @@
     "viewSourceCopied": "Gekopieerd",
     "viewSourceClose": "Sluiten",
     "exportConfig": "Configuratie exporteren",
-    "importConfig": "Configuratie importeren"
+    "importConfig": "Configuratie importeren",
+    "importError": "Het bestand kon niet worden geïmporteerd. Controleer of het een configuratiebestand (.json) is dat met deze tool is geëxporteerd.",
+    "importSuccess": "Instellingen geïmporteerd",
+    "saveHint": "\"Downloaden als HTML\" slaat de kant-en-klare handtekening op om in je e-mailprogramma te plakken. \"Configuratie exporteren\" slaat een .json-bestand op dat je later via \"Configuratie importeren\" weer kunt laden om verder te bewerken."
   },
   "labels": {
     "tel": "Tel.",

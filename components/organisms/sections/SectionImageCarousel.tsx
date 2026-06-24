@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { RiArrowLeftLine, RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeader from '@/components/molecules/SectionHeader';
 import { cn } from '@/lib/clsx';
@@ -48,9 +48,9 @@ export default function SectionImageCarousel({
     setCurrentSlide(prev => (prev === 0 ? slides.length - 1 : prev - 1));
   };
 
-  const goToNext = () => {
+  const goToNext = useCallback(() => {
     setCurrentSlide(prev => (prev === slides.length - 1 ? 0 : prev + 1));
-  };
+  }, [slides.length]);
 
   useEffect(() => {
     if (!autoPlay || slides.length <= 1) return;

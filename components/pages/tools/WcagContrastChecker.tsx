@@ -13,6 +13,7 @@ import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
 import { cn } from '@/lib/clsx';
+import { getA11y } from '@/lib/i18n/a11y';
 import { ui } from '@/lib/i18n/tools/wcagContrast';
 import { useLocale } from '@/lib/LocaleContext';
 import { getContrastRatio, parseColor } from '@/lib/tools/color/contrast';
@@ -81,14 +82,6 @@ function getWcagResult(foreground: string, background: string): WcagResult {
 function formatRatio(ratio: number | null): string {
   if (ratio === null || Number.isNaN(ratio)) return '-';
   return `${ratio.toFixed(2)} : 1`;
-}
-
-function ResultBadge({ ok, label }: { ok: boolean; label: string }) {
-  return (
-    <Badge variant={ok ? 'success' : 'error'} size='md'>
-      {label}
-    </Badge>
-  );
 }
 
 type MatchTarget = 'normalAA' | 'normalAAA' | 'largeAA' | 'largeAAA' | 'iconAA';
@@ -176,6 +169,20 @@ function adjustColorToWcag({
 export default function WcagContrastChecker() {
   const locale = useLocale();
   const t = ui[locale];
+  const a11y = getA11y(locale);
+
+  // Stan zaliczenia przekazany nie tylko kolorem (zielony/czerwony), ale też
+  // tekstem w dostępnej nazwie (WCAG 1.4.1). Widoczny tekst „AA" pozostaje.
+  const ResultBadge = ({ ok, label }: { ok: boolean; label: string }) => (
+    <Badge
+      variant={ok ? 'success' : 'error'}
+      size='md'
+      aria-label={`${label}: ${ok ? a11y.meets : a11y.doesNotMeet}`}
+    >
+      {label}
+    </Badge>
+  );
+
   const [foreground, setForeground] = useState(DEFAULT_FOREGROUND);
   const [background, setBackground] = useState(DEFAULT_BACKGROUND);
   const [textSample, setTextSample] = useState<string>(t.exampleText);
@@ -269,6 +276,7 @@ export default function WcagContrastChecker() {
         <Card interactive={false} padding='lg' variant='outlined'>
           <form onSubmit={handleSubmit} className='space-y-6'>
             <ToolFieldRow
+              htmlFor='text-sample'
               label={<span className='tool-value'>{t.sampleTextLabel}</span>}
             >
               <Input
@@ -419,7 +427,9 @@ export default function WcagContrastChecker() {
 
             {matchError && (
               <ToolHelper variant='error' className='mt-1'>
-                <span className='text-xs! text-dark'>{matchError}</span>
+                <span role='alert' className='text-xs! text-dark'>
+                  {matchError}
+                </span>
               </ToolHelper>
             )}
 
@@ -467,7 +477,7 @@ export default function WcagContrastChecker() {
         <Card interactive={false} padding='lg' variant='outlined'>
           <div className='flex items-start justify-between gap-3'>
             <div>
-              <div className='space-y-1'>
+              <div className='space-y-1' role='status' aria-live='polite'>
                 <p className='tool-value uppercase'>{t.contrastRatio}</p>
                 <p className='text-xl font-semibold text-dark'>
                   {formatRatio(result.ratio)}

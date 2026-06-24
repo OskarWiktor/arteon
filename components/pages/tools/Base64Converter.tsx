@@ -10,6 +10,7 @@ import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSele
 import { cn } from '@/lib/clsx';
 import { useDictionary } from '@/lib/LocaleContext';
 import { flexCenterClasses } from '@/lib/uiClasses';
+import { copyTextToClipboard } from '@/utils/clipboard';
 import { downloadBlob } from '@/utils/download';
 
 type Base64Mode = 'encode' | 'decode';
@@ -61,7 +62,6 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
       try {
         const header = atob(dataUrl.slice(0, 24));
         if (header.startsWith('\xFF\xD8')) mime = 'image/jpeg';
-        else if (header.startsWith('\x89PNG')) mime = 'image/png';
         else if (header.startsWith('GIF')) mime = 'image/gif';
         else if (header.startsWith('RIFF') && header.includes('WEBP'))
           mime = 'image/webp';
@@ -93,26 +93,15 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
 
   const handleCopy = async () => {
     if (!base64) return;
-    try {
-      await navigator.clipboard.writeText(base64);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      const textarea = document.createElement('textarea');
-      textarea.value = base64;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textarea);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
+    await copyTextToClipboard(base64);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   const handleDownload = () => {
     if (!previewUrl) return;
     // Extract mime from data URL
-    const match = previewUrl.match(/^data:([^;]+);/);
+    const match = /^data:([^;]+);/.exec(previewUrl);
     const mime = match?.[1] ?? 'image/png';
     const extMap: Record<string, string> = {
       'image/jpeg': '.jpg',

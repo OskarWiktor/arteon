@@ -179,7 +179,10 @@
     "viewSourceCopied": "Másolva",
     "viewSourceClose": "Bezárás",
     "exportConfig": "Konfiguráció exportálása",
-    "importConfig": "Konfiguráció importálása"
+    "importConfig": "Konfiguráció importálása",
+    "importError": "A fájlt nem sikerült importálni. Ellenőrizd, hogy ez az eszközből exportált beállítási fájl (.json).",
+    "importSuccess": "Beállítások importálva",
+    "saveHint": "A „Letöltés HTML-ként” elmenti az aláírást, hogy beilleszthesd az e-mail kliensedbe. A „Konfiguráció exportálása” egy .json fájlt ment, amelyet később a „Konfiguráció importálása” gombbal újra betölthetsz a szerkesztés folytatásához."
   },
   "labels": {
     "tel": "Tel.",

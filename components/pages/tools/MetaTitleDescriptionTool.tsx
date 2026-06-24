@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 import Input from '@/components/atoms/form/Input';
 import Textarea from '@/components/atoms/form/Textarea';
@@ -211,9 +212,11 @@ export default function MetaTitleDescriptionTool() {
                   flexCenterClasses,
                 )}
               >
-                <img
+                <Image
                   src='/favicon-32x32.png'
                   alt='Arteon'
+                  width={32}
+                  height={32}
                   className={cn(largeIconSizeClasses, 'rounded-sm')}
                 />
               </div>

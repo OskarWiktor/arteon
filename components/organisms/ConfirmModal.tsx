@@ -1,6 +1,8 @@
 'use client';
 
+import { useRef } from 'react';
 import { createPortal } from 'react-dom';
+import { useDialogFocus } from '@/hooks/useDialogFocus';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import { cn } from '@/lib/clsx';
@@ -9,6 +11,7 @@ import {
   modalBackdropClasses,
   modalContentClasses,
 } from '@/lib/uiClasses';
+import Backdrop from '../atoms/Backdrop';
 import Button from '../atoms/buttons/Button';
 
 type ConfirmModalProps = {
@@ -47,14 +50,10 @@ export default function ConfirmModal({
   cancelLabel = 'Anuluj',
 }: ConfirmModalProps) {
   const mounted = useIsMounted();
+  const dialogRef = useRef<HTMLDivElement>(null);
 
   useEscapeKey(onClose, isOpen);
-
-  const handleBackdropClick = (e: React.MouseEvent) => {
-    if (e.target === e.currentTarget) {
-      onClose();
-    }
-  };
+  useDialogFocus(dialogRef, isOpen);
 
   const handleConfirm = () => {
     onConfirm();
@@ -66,20 +65,16 @@ export default function ConfirmModal({
   if (!isOpen) return null;
 
   return createPortal(
-    <div
-      className={cn(
-        'fixed inset-0 z-100 bg-black/40 px-4',
-        modalBackdropClasses,
-        flexCenterClasses,
-      )}
-      onClick={handleBackdropClick}
-      role='dialog'
-      aria-modal='true'
-      aria-labelledby='confirm-modal-title'
-    >
+    <div className={cn('fixed inset-0 z-100 px-4', flexCenterClasses)}>
+      <Backdrop onClose={onClose} className={modalBackdropClasses} />
       <div
+        ref={dialogRef}
+        role='dialog'
+        aria-modal='true'
+        aria-labelledby='confirm-modal-title'
+        tabIndex={-1}
         className={cn(
-          'w-full max-w-md overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5',
+          'relative w-full max-w-md overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5',
           modalContentClasses,
         )}
       >

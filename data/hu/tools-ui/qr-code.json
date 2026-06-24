@@ -29,6 +29,7 @@
   "contrastRatio": "Kontrasztarány",
   "recommended": "Ajánlott minimum: 3:1",
   "enterData": "Adjon meg adatokat a QR-kód generálásához.",
+  "dataTooLong": "A megadott adat túl hosszú egy QR-kódhoz. Rövidítsd a szöveget, vagy válassz alacsonyabb hibajavítási szintet.",
   "vcard": {
     "firstName": "Keresztnév",
     "lastName": "Vezetéknév",

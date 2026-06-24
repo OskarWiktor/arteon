@@ -2299,6 +2299,210 @@ function buildParagraph(
 }
 
 // ---------------------------------------------------------------------------
+// Per-mode generators (extracted so the dispatcher stays simple)
+// ---------------------------------------------------------------------------
+
+type LoremCtx = {
+  bank: string[];
+  rng: () => number;
+  clampedCount: number;
+  isHtml: boolean;
+  startWithLorem: boolean;
+  isClassic: boolean;
+};
+
+function genParagraphsMode(
+  ctx: LoremCtx,
+  paragraphLength: LoremLength,
+): string {
+  const { bank, rng, clampedCount, isHtml, startWithLorem, isClassic } = ctx;
+  const paragraphs: string[] = [];
+  for (let i = 0; i < clampedCount; i++) {
+    let p = buildParagraph(bank, rng, paragraphLength);
+    if (i === 0 && startWithLorem && isClassic) {
+      p = LOREM_OPENER + ' ' + p;
+    }
+    paragraphs.push(isHtml ? `<p>${p}</p>` : p);
+  }
+  return isHtml ? paragraphs.join('\n') : paragraphs.join('\n\n');
+}
+
+function genSentencesMode(ctx: LoremCtx): string {
+  const { bank, rng, clampedCount, isHtml, startWithLorem, isClassic } = ctx;
+  const sentences: string[] = [];
+  for (let i = 0; i < clampedCount; i++) {
+    sentences.push(buildSentence(bank, rng, 5, 15));
+  }
+  if (startWithLorem && isClassic) {
+    sentences[0] = LOREM_OPENER;
+  }
+  const result = sentences.join(' ');
+  return isHtml ? `<p>${result}</p>` : result;
+}
+
+function genWordsMode(ctx: LoremCtx): string {
+  const { bank, rng, clampedCount, isHtml, startWithLorem, isClassic } = ctx;
+  const words: string[] = [];
+  for (let i = 0; i < clampedCount; i++) {
+    words.push(pick(bank, rng));
+  }
+  if (startWithLorem && isClassic && clampedCount >= 2) {
+    words[0] = 'lorem';
+    words[1] = 'ipsum';
+  }
+  const result = words.join(' ');
+  return isHtml ? `<p>${result}</p>` : result;
+}
+
+function genListsMode(ctx: LoremCtx): string {
+  const { bank, rng, clampedCount, isHtml, startWithLorem, isClassic } = ctx;
+  const items: string[] = [];
+  for (let i = 0; i < clampedCount; i++) {
+    items.push(buildSentence(bank, rng, 4, 10));
+  }
+  if (startWithLorem && isClassic) {
+    items[0] = LOREM_OPENER;
+  }
+  if (isHtml) {
+    return (
+      '<ul>\n' + items.map(item => `  <li>${item}</li>`).join('\n') + '\n</ul>'
+    );
+  }
+  return items.map((item, i) => `${i + 1}. ${item}`).join('\n');
+}
+
+function genHeadingsMode(ctx: LoremCtx): string {
+  const { bank, rng, clampedCount, isHtml } = ctx;
+  const headings: string[] = [];
+  for (let i = 0; i < clampedCount; i++) {
+    const level = randBetween(1, 6, rng);
+    const len = randBetween(3, 8, rng);
+    const words: string[] = [];
+    for (let w = 0; w < len; w++) words.push(pick(bank, rng));
+    const text = capitalize(words.join(' '));
+    headings.push(
+      isHtml
+        ? `<h${level}>${text}</h${level}>`
+        : `${'#'.repeat(level)} ${text}`,
+    );
+  }
+  return headings.join('\n');
+}
+
+function genLinksMode(ctx: LoremCtx): string {
+  const { bank, rng, clampedCount, isHtml } = ctx;
+  const links: string[] = [];
+  const tlds = ['com', 'org', 'net', 'io', 'co', 'dev', 'app'];
+  for (let i = 0; i < clampedCount; i++) {
+    const textLen = randBetween(2, 5, rng);
+    const words: string[] = [];
+    for (let w = 0; w < textLen; w++) words.push(pick(bank, rng));
+    const linkText = capitalize(words.join(' '));
+    const domain =
+      pick(bank, rng)
+        .toLocaleLowerCase()
+        .replace(/[^a-z]/g, '') || 'example';
+    const tld = pick(tlds, rng);
+    const url = `https://${domain}.${tld}`;
+    links.push(
+      isHtml ? `<a href="${url}">${linkText}</a>` : `[${linkText}](${url})`,
+    );
+  }
+  return links.join('\n');
+}
+
+function genTableCellText(bank: string[], rng: () => number): string {
+  const cellLen = randBetween(1, 3, rng);
+  const w: string[] = [];
+  for (let k = 0; k < cellLen; k++) w.push(pick(bank, rng));
+  return capitalize(w.join(' '));
+}
+
+function genTableHtml(
+  bank: string[],
+  rng: () => number,
+  clampedCount: number,
+  cols: number,
+  headerWords: string[],
+): string {
+  const thRow = headerWords.map(h => `    <th>${h}</th>`).join('\n');
+  const bodyRows: string[] = [];
+  for (let r = 0; r < clampedCount; r++) {
+    const cells: string[] = [];
+    for (let c = 0; c < cols; c++) {
+      cells.push(`    <td>${genTableCellText(bank, rng)}</td>`);
+    }
+    bodyRows.push(`  <tr>\n${cells.join('\n')}\n  </tr>`);
+  }
+  return `<table>\n  <thead>\n  <tr>\n${thRow}\n  </tr>\n  </thead>\n  <tbody>\n${bodyRows.join('\n')}\n  </tbody>\n</table>`;
+}
+
+function genTableMarkdown(
+  bank: string[],
+  rng: () => number,
+  clampedCount: number,
+  cols: number,
+  headerWords: string[],
+): string {
+  const separator = headerWords.map(() => '---');
+  const rows: string[] = [];
+  rows.push('| ' + headerWords.join(' | ') + ' |');
+  rows.push('| ' + separator.join(' | ') + ' |');
+  for (let r = 0; r < clampedCount; r++) {
+    const cells: string[] = [];
+    for (let c = 0; c < cols; c++) {
+      cells.push(genTableCellText(bank, rng));
+    }
+    rows.push('| ' + cells.join(' | ') + ' |');
+  }
+  return rows.join('\n');
+}
+
+function genTableMode(ctx: LoremCtx): string {
+  const { bank, rng, clampedCount, isHtml } = ctx;
+  const cols = Math.min(randBetween(3, 5, rng), 6);
+  const headerWords: string[] = [];
+  for (let c = 0; c < cols; c++) headerWords.push(capitalize(pick(bank, rng)));
+
+  return isHtml
+    ? genTableHtml(bank, rng, clampedCount, cols, headerWords)
+    : genTableMarkdown(bank, rng, clampedCount, cols, headerWords);
+}
+
+function genBlockquotesMode(ctx: LoremCtx): string {
+  const { bank, rng, clampedCount, isHtml } = ctx;
+  const quotes: string[] = [];
+  for (let i = 0; i < clampedCount; i++) {
+    const sentenceCount = randBetween(1, 3, rng);
+    const sentences: string[] = [];
+    for (let s = 0; s < sentenceCount; s++) {
+      sentences.push(buildSentence(bank, rng, 5, 12));
+    }
+    const text = sentences.join(' ');
+    quotes.push(
+      isHtml ? `<blockquote><p>${text}</p></blockquote>` : `> ${text}`,
+    );
+  }
+  return isHtml ? quotes.join('\n') : quotes.join('\n\n');
+}
+
+function genDefinitionsMode(ctx: LoremCtx): string {
+  const { bank, rng, clampedCount, isHtml } = ctx;
+  const defs: string[] = [];
+  for (let i = 0; i < clampedCount; i++) {
+    const termLen = randBetween(1, 3, rng);
+    const termWords: string[] = [];
+    for (let w = 0; w < termLen; w++) termWords.push(pick(bank, rng));
+    const term = capitalize(termWords.join(' '));
+    const desc = buildSentence(bank, rng, 8, 18);
+    defs.push(
+      isHtml ? `<dt>${term}</dt>\n<dd>${desc}</dd>` : `${term}\n  ${desc}`,
+    );
+  }
+  return isHtml ? `<dl>\n${defs.join('\n')}\n</dl>` : defs.join('\n\n');
+}
+
+// ---------------------------------------------------------------------------
 // Public API
 /**
  * Generate lorem ipsum content in the requested structure and format.
@@ -2307,7 +2511,6 @@ function buildParagraph(
  * @param seed - Optional deterministic seed for the internal random generator; when omitted a time-based seed is used.
  * @returns The generated lorem ipsum text formatted according to `options`. If `outputFormat` is `'html'`, the result contains appropriate HTML elements; otherwise it is plain text.
  */
-
 export function generateLoremIpsum(
   options: LoremOptions,
   seed?: number,
@@ -2321,189 +2524,38 @@ export function generateLoremIpsum(
       : WORD_BANKS[options.style];
   const { mode, count, paragraphLength, startWithLorem, outputFormat } =
     options;
-  const isHtml = outputFormat === 'html';
 
-  const clampedCount = Math.max(1, Math.min(count, 9999));
-
-  let result = '';
+  const ctx: LoremCtx = {
+    bank,
+    rng,
+    clampedCount: Math.max(1, Math.min(count, 9999)),
+    isHtml: outputFormat === 'html',
+    startWithLorem,
+    isClassic: options.style === 'classic',
+  };
 
   switch (mode) {
-    case 'paragraphs': {
-      const paragraphs: string[] = [];
-      for (let i = 0; i < clampedCount; i++) {
-        let p = buildParagraph(bank, rng, paragraphLength);
-        if (i === 0 && startWithLorem && options.style === 'classic') {
-          p = LOREM_OPENER + ' ' + p;
-        }
-        paragraphs.push(isHtml ? `<p>${p}</p>` : p);
-      }
-      result = isHtml ? paragraphs.join('\n') : paragraphs.join('\n\n');
-      break;
-    }
-
-    case 'sentences': {
-      const sentences: string[] = [];
-      for (let i = 0; i < clampedCount; i++) {
-        sentences.push(buildSentence(bank, rng, 5, 15));
-      }
-      if (startWithLorem && options.style === 'classic') {
-        sentences[0] = LOREM_OPENER;
-      }
-      result = sentences.join(' ');
-      if (isHtml) result = `<p>${result}</p>`;
-      break;
-    }
-
-    case 'words': {
-      const words: string[] = [];
-      for (let i = 0; i < clampedCount; i++) {
-        words.push(pick(bank, rng));
-      }
-      if (startWithLorem && options.style === 'classic' && clampedCount >= 2) {
-        words[0] = 'lorem';
-        words[1] = 'ipsum';
-      }
-      result = words.join(' ');
-      if (isHtml) result = `<p>${result}</p>`;
-      break;
-    }
-
-    case 'lists': {
-      const items: string[] = [];
-      for (let i = 0; i < clampedCount; i++) {
-        items.push(buildSentence(bank, rng, 4, 10));
-      }
-      if (startWithLorem && options.style === 'classic') {
-        items[0] = LOREM_OPENER;
-      }
-      if (isHtml) {
-        result =
-          '<ul>\n' +
-          items.map(item => `  <li>${item}</li>`).join('\n') +
-          '\n</ul>';
-      } else {
-        result = items.map((item, i) => `${i + 1}. ${item}`).join('\n');
-      }
-      break;
-    }
-
-    case 'headings': {
-      const headings: string[] = [];
-      for (let i = 0; i < clampedCount; i++) {
-        const level = randBetween(1, 6, rng);
-        const len = randBetween(3, 8, rng);
-        const words: string[] = [];
-        for (let w = 0; w < len; w++) words.push(pick(bank, rng));
-        const text = capitalize(words.join(' '));
-        headings.push(
-          isHtml
-            ? `<h${level}>${text}</h${level}>`
-            : `${'#'.repeat(level)} ${text}`,
-        );
-      }
-      result = headings.join('\n');
-      break;
-    }
-
-    case 'links': {
-      const links: string[] = [];
-      const tlds = ['com', 'org', 'net', 'io', 'co', 'dev', 'app'];
-      for (let i = 0; i < clampedCount; i++) {
-        const textLen = randBetween(2, 5, rng);
-        const words: string[] = [];
-        for (let w = 0; w < textLen; w++) words.push(pick(bank, rng));
-        const linkText = capitalize(words.join(' '));
-        const domain =
-          pick(bank, rng)
-            .toLocaleLowerCase()
-            .replace(/[^a-z]/g, '') || 'example';
-        const tld = pick(tlds, rng);
-        const url = `https://${domain}.${tld}`;
-        links.push(
-          isHtml ? `<a href="${url}">${linkText}</a>` : `[${linkText}](${url})`,
-        );
-      }
-      result = links.join('\n');
-      break;
-    }
-
-    case 'table': {
-      const cols = Math.min(randBetween(3, 5, rng), 6);
-      const headerWords: string[] = [];
-      for (let c = 0; c < cols; c++)
-        headerWords.push(capitalize(pick(bank, rng)));
-
-      if (isHtml) {
-        const thRow = headerWords.map(h => `    <th>${h}</th>`).join('\n');
-        const bodyRows: string[] = [];
-        for (let r = 0; r < clampedCount; r++) {
-          const cells = [];
-          for (let c = 0; c < cols; c++) {
-            const cellLen = randBetween(1, 3, rng);
-            const w: string[] = [];
-            for (let k = 0; k < cellLen; k++) w.push(pick(bank, rng));
-            cells.push(`    <td>${capitalize(w.join(' '))}</td>`);
-          }
-          bodyRows.push(`  <tr>\n${cells.join('\n')}\n  </tr>`);
-        }
-        result = `<table>\n  <thead>\n  <tr>\n${thRow}\n  </tr>\n  </thead>\n  <tbody>\n${bodyRows.join('\n')}\n  </tbody>\n</table>`;
-      } else {
-        const separator = headerWords.map(() => '---');
-        const rows: string[] = [];
-        rows.push('| ' + headerWords.join(' | ') + ' |');
-        rows.push('| ' + separator.join(' | ') + ' |');
-        for (let r = 0; r < clampedCount; r++) {
-          const cells: string[] = [];
-          for (let c = 0; c < cols; c++) {
-            const cellLen = randBetween(1, 3, rng);
-            const w: string[] = [];
-            for (let k = 0; k < cellLen; k++) w.push(pick(bank, rng));
-            cells.push(capitalize(w.join(' ')));
-          }
-          rows.push('| ' + cells.join(' | ') + ' |');
-        }
-        result = rows.join('\n');
-      }
-      break;
-    }
-
-    case 'blockquotes': {
-      const quotes: string[] = [];
-      for (let i = 0; i < clampedCount; i++) {
-        const sentenceCount = randBetween(1, 3, rng);
-        const sentences: string[] = [];
-        for (let s = 0; s < sentenceCount; s++) {
-          sentences.push(buildSentence(bank, rng, 5, 12));
-        }
-        const text = sentences.join(' ');
-        quotes.push(
-          isHtml ? `<blockquote><p>${text}</p></blockquote>` : `> ${text}`,
-        );
-      }
-      result = isHtml ? quotes.join('\n') : quotes.join('\n\n');
-      break;
-    }
-
-    case 'definitions': {
-      const defs: string[] = [];
-      for (let i = 0; i < clampedCount; i++) {
-        const termLen = randBetween(1, 3, rng);
-        const termWords: string[] = [];
-        for (let w = 0; w < termLen; w++) termWords.push(pick(bank, rng));
-        const term = capitalize(termWords.join(' '));
-        const desc = buildSentence(bank, rng, 8, 18);
-        if (isHtml) {
-          defs.push(`<dt>${term}</dt>\n<dd>${desc}</dd>`);
-        } else {
-          defs.push(`${term}\n  ${desc}`);
-        }
-      }
-      result = isHtml ? `<dl>\n${defs.join('\n')}\n</dl>` : defs.join('\n\n');
-      break;
-    }
+    case 'paragraphs':
+      return genParagraphsMode(ctx, paragraphLength);
+    case 'sentences':
+      return genSentencesMode(ctx);
+    case 'words':
+      return genWordsMode(ctx);
+    case 'lists':
+      return genListsMode(ctx);
+    case 'headings':
+      return genHeadingsMode(ctx);
+    case 'links':
+      return genLinksMode(ctx);
+    case 'table':
+      return genTableMode(ctx);
+    case 'blockquotes':
+      return genBlockquotesMode(ctx);
+    case 'definitions':
+      return genDefinitionsMode(ctx);
+    default:
+      return '';
   }
-
-  return result;
 }
 
 // ---------------------------------------------------------------------------

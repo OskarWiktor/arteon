@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { JSX } from 'react';
 import {
   RiAlertLine,
   RiAppsLine,
@@ -102,7 +102,7 @@ import {
 } from 'react-icons/ri';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
 
-const ICON_MAP: Record<string, ReactNode> = {
+const ICON_MAP: Record<string, JSX.Element> = {
   RiAlertLine: <RiAlertLine className={normalIconSizeClasses} />,
   RiAppsLine: <RiAppsLine className={normalIconSizeClasses} />,
   RiArticleLine: <RiArticleLine className={normalIconSizeClasses} />,
@@ -214,6 +214,6 @@ const ICON_MAP: Record<string, ReactNode> = {
   RiZoomInLine: <RiZoomInLine className={normalIconSizeClasses} />,
 };
 
-export function getToolIcon(key: string): ReactNode {
+export function getToolIcon(key: string): JSX.Element | null {
   return ICON_MAP[key] ?? null;
 }

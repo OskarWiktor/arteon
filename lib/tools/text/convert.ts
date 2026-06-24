@@ -121,18 +121,22 @@ function detectSeparator(firstLine: string): string {
 }
 
 function csvToJson(csv: string): string {
-  const lines = csv.trim().split(/\r?\n/);
-  if (lines.length === 0 || !lines[0].trim())
-    throw new Error('CSV input is empty');
-  const sep = detectSeparator(lines[0]);
-  const headers = parseCsvLine(lines[0], sep);
+  const trimmed = csv.trim();
+  if (!trimmed) throw new Error('CSV input is empty');
+  const firstLine = trimmed.split(/\r?\n/, 1)[0];
+  const sep = detectSeparator(firstLine);
+  const rows = parseCsv(trimmed, sep);
+  if (rows.length === 0) throw new Error('CSV input is empty');
+
+  const headers = rows[0];
   if (headers.length === 0 || headers.every(h => !h))
     throw new Error('CSV has no valid headers');
-  const dataLines = lines.slice(1).filter(l => l.trim());
+
+  const dataRows = rows.slice(1).filter(r => r.some(v => v !== ''));
   // Header-only CSV returns empty array
-  if (dataLines.length === 0) return JSON.stringify([], null, 2);
-  const result = dataLines.map(line => {
-    const values = parseCsvLine(line, sep);
+  if (dataRows.length === 0) return JSON.stringify([], null, 2);
+
+  const result = dataRows.map(values => {
     const obj: Record<string, string> = {};
     headers.forEach((h, i) => {
       obj[h] = values[i] ?? '';
@@ -142,34 +146,89 @@ function csvToJson(csv: string): string {
   return JSON.stringify(result, null, 2);
 }
 
-function parseCsvLine(line: string, sep: string): string[] {
-  const result: string[] = [];
-  let current = '';
-  let inQuotes = false;
-  for (let i = 0; i < line.length; i++) {
-    const ch = line[i];
-    if (inQuotes) {
-      if (ch === '"' && line[i + 1] === '"') {
-        current += '"';
-        i++;
-      } else if (ch === '"') {
-        inQuotes = false;
-      } else {
-        current += ch;
-      }
+interface CsvParseState {
+  rows: string[][];
+  row: string[];
+  current: string;
+  inQuotes: boolean;
+}
+
+function endCsvField(state: CsvParseState): void {
+  state.row.push(state.current.trim());
+  state.current = '';
+}
+
+function endCsvRow(state: CsvParseState): void {
+  endCsvField(state);
+  state.rows.push(state.row);
+  state.row = [];
+}
+
+/** Returns the number of extra characters consumed (0 or 1, for `""`). */
+function consumeQuotedCsvChar(
+  state: CsvParseState,
+  ch: string,
+  next: string | undefined,
+): number {
+  if (ch === '"' && next === '"') {
+    state.current += '"';
+    return 1;
+  }
+  if (ch === '"') {
+    state.inQuotes = false;
+  } else {
+    state.current += ch;
+  }
+  return 0;
+}
+
+function consumeUnquotedCsvChar(
+  state: CsvParseState,
+  ch: string,
+  next: string | undefined,
+  sep: string,
+): void {
+  if (ch === '"') {
+    state.inQuotes = true;
+  } else if (ch === sep) {
+    endCsvField(state);
+  } else if (ch === '\r') {
+    // Bare \r (old Mac line endings) ends the row; \r\n defers to \n below.
+    if (next !== '\n') endCsvRow(state);
+  } else if (ch === '\n') {
+    endCsvRow(state);
+  } else {
+    state.current += ch;
+  }
+}
+
+/**
+ * Parse a full CSV document into rows of fields, honoring RFC4180 quoting
+ * rules (including newlines and escaped `""` quotes embedded inside a
+ * quoted field) instead of splitting on newlines before quotes are known.
+ */
+function parseCsv(csv: string, sep: string): string[][] {
+  const state: CsvParseState = {
+    rows: [],
+    row: [],
+    current: '',
+    inQuotes: false,
+  };
+
+  let i = 0;
+  while (i < csv.length) {
+    const ch = csv[i];
+    const next = csv[i + 1];
+    if (state.inQuotes) {
+      i += 1 + consumeQuotedCsvChar(state, ch, next);
     } else {
-      if (ch === '"') {
-        inQuotes = true;
-      } else if (ch === sep) {
-        result.push(current.trim());
-        current = '';
-      } else {
-        current += ch;
-      }
+      consumeUnquotedCsvChar(state, ch, next, sep);
+      i += 1;
     }
   }
-  result.push(current.trim());
-  return result;
+
+  endCsvRow(state);
+  return state.rows;
 }
 
 function jsonToCsv(json: string): string {
@@ -190,8 +249,12 @@ function jsonToCsv(json: string): string {
   const headers = Array.from(headerSet);
   const lines = [headers.map(escapeCsvField).join(',')];
   for (const row of data) {
+    const isPlainObjectRow =
+      typeof row === 'object' && row !== null && !Array.isArray(row);
     const values = headers.map(h => {
-      const raw = row[h];
+      const raw = isPlainObjectRow
+        ? (row as Record<string, unknown>)[h]
+        : undefined;
       // Nested objects/arrays → JSON string; null/undefined → empty
       let v: string;
       if (raw === null || raw === undefined) v = '';
@@ -231,20 +294,35 @@ function xmlToJson(xml: string): string {
   return JSON.stringify(result, null, 2);
 }
 
+function parseXmlAttributes(node: Element): Record<string, string> {
+  const attrs: Record<string, string> = {};
+  for (let i = 0; i < node.attributes.length; i++) {
+    const attr = node.attributes[i];
+    attrs[`@${attr.name}`] = attr.value;
+  }
+  return attrs;
+}
+
+function buildXmlChildMap(children: ChildNode[]): Record<string, unknown[]> {
+  const childMap: Record<string, unknown[]> = {};
+  for (const child of children) {
+    if (child.nodeType !== Node.ELEMENT_NODE) continue;
+    const childObj = xmlNodeToObj(child as Element);
+    const key = (child as Element).tagName;
+    const val = childObj[key];
+    if (!childMap[key]) childMap[key] = [];
+    childMap[key].push(val);
+  }
+  return childMap;
+}
+
 function xmlNodeToObj(node: Element): Record<string, unknown> {
   const obj: Record<string, unknown> = {};
 
-  // Attributes
   if (node.attributes.length > 0) {
-    const attrs: Record<string, string> = {};
-    for (let i = 0; i < node.attributes.length; i++) {
-      const attr = node.attributes[i];
-      attrs[`@${attr.name}`] = attr.value;
-    }
-    Object.assign(obj, attrs);
+    Object.assign(obj, parseXmlAttributes(node));
   }
 
-  // Children
   const children = Array.from(node.childNodes);
   const textOnly = children.every(
     c =>
@@ -253,25 +331,14 @@ function xmlNodeToObj(node: Element): Record<string, unknown> {
 
   if (textOnly) {
     const text = node.textContent?.trim() ?? '';
-    if (Object.keys(obj).length > 0) {
-      if (text) obj['#text'] = text;
-    } else {
+    if (Object.keys(obj).length === 0) {
       return { [node.tagName]: text } as Record<string, unknown>;
     }
+    if (text) obj['#text'] = text;
     return { [node.tagName]: obj };
   }
 
-  const childMap: Record<string, unknown[]> = {};
-  for (const child of children) {
-    if (child.nodeType === Node.ELEMENT_NODE) {
-      const childObj = xmlNodeToObj(child as Element);
-      const key = (child as Element).tagName;
-      const val = childObj[key];
-      if (!childMap[key]) childMap[key] = [];
-      childMap[key].push(val);
-    }
-  }
-
+  const childMap = buildXmlChildMap(children);
   for (const [key, vals] of Object.entries(childMap)) {
     obj[key] = vals.length === 1 ? vals[0] : vals;
   }
@@ -294,6 +361,101 @@ function jsonToXml(json: string): string {
   return `<?xml version="1.0" encoding="UTF-8"?>\n${xml}`;
 }
 
+function xmlChildEntryToString(
+  ck: string,
+  cv: unknown,
+  pad: string,
+  indent: number,
+): string {
+  if (Array.isArray(cv)) {
+    const lines: string[] = [];
+    for (const item of cv) {
+      lines.push(
+        `${pad}  <${ck}>`,
+        objToXml(item, indent + 2),
+        `${pad}  </${ck}>`,
+      );
+    }
+    return lines.join('\n');
+  }
+  if (typeof cv === 'object' && cv !== null) {
+    return [
+      `${pad}  <${ck}>`,
+      objToXml(cv, indent + 2),
+      `${pad}  </${ck}>`,
+    ].join('\n');
+  }
+  return `${pad}  <${ck}>${escapeXml(String(cv))}</${ck}>`;
+}
+
+function xmlObjectEntryToString(
+  key: string,
+  value: Record<string, unknown>,
+  pad: string,
+  indent: number,
+): string {
+  const attrs = Object.entries(value)
+    .filter(([k]) => k.startsWith('@'))
+    .map(([k, v]) => ` ${k.slice(1)}="${String(v)}"`)
+    .join('');
+  const textContent = value['#text'];
+  const childEntries = Object.entries(value).filter(
+    ([k]) => !k.startsWith('@') && k !== '#text',
+  );
+
+  if (childEntries.length === 0) {
+    return `${pad}<${key}${attrs}>${escapeXml(String(textContent ?? ''))}</${key}>`;
+  }
+
+  const lines = [`${pad}<${key}${attrs}>`];
+  for (const [ck, cv] of childEntries) {
+    lines.push(xmlChildEntryToString(ck, cv, pad, indent));
+  }
+  lines.push(`${pad}</${key}>`);
+  return lines.join('\n');
+}
+
+function xmlArrayEntryToString(
+  key: string,
+  value: unknown[],
+  pad: string,
+  indent: number,
+): string {
+  const lines: string[] = [];
+  for (const item of value) {
+    if (typeof item === 'object' && item !== null) {
+      lines.push(
+        `${pad}<${key}>`,
+        objToXml(item, indent + 1),
+        `${pad}</${key}>`,
+      );
+    } else {
+      lines.push(`${pad}<${key}>${escapeXml(String(item))}</${key}>`);
+    }
+  }
+  return lines.join('\n');
+}
+
+function xmlEntryToString(
+  key: string,
+  value: unknown,
+  pad: string,
+  indent: number,
+): string {
+  if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+    return xmlObjectEntryToString(
+      key,
+      value as Record<string, unknown>,
+      pad,
+      indent,
+    );
+  }
+  if (Array.isArray(value)) {
+    return xmlArrayEntryToString(key, value, pad, indent);
+  }
+  return `${pad}<${key}>${escapeXml(String(value))}</${key}>`;
+}
+
 function objToXml(obj: unknown, indent: number): string {
   const pad = '  '.repeat(indent);
   if (typeof obj !== 'object' || obj === null)
@@ -305,55 +467,8 @@ function objToXml(obj: unknown, indent: number): string {
   const lines: string[] = [];
 
   for (const [key, value] of entries) {
-    if (key.startsWith('@')) continue;
-    if (key === '#text') continue;
-
-    if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
-      const attrs = Object.entries(value as Record<string, unknown>)
-        .filter(([k]) => k.startsWith('@'))
-        .map(([k, v]) => ` ${k.slice(1)}="${String(v)}"`)
-        .join('');
-      const textContent = (value as Record<string, unknown>)['#text'];
-      const childEntries = Object.entries(
-        value as Record<string, unknown>,
-      ).filter(([k]) => !k.startsWith('@') && k !== '#text');
-
-      if (childEntries.length === 0) {
-        lines.push(
-          `${pad}<${key}${attrs}>${escapeXml(String(textContent ?? ''))}</${key}>`,
-        );
-      } else {
-        lines.push(`${pad}<${key}${attrs}>`);
-        for (const [ck, cv] of childEntries) {
-          if (Array.isArray(cv)) {
-            for (const item of cv) {
-              lines.push(`${pad}  <${ck}>`);
-              lines.push(objToXml(item, indent + 2));
-              lines.push(`${pad}  </${ck}>`);
-            }
-          } else if (typeof cv === 'object' && cv !== null) {
-            lines.push(`${pad}  <${ck}>`);
-            lines.push(objToXml(cv, indent + 2));
-            lines.push(`${pad}  </${ck}>`);
-          } else {
-            lines.push(`${pad}  <${ck}>${escapeXml(String(cv))}</${ck}>`);
-          }
-        }
-        lines.push(`${pad}</${key}>`);
-      }
-    } else if (Array.isArray(value)) {
-      for (const item of value) {
-        if (typeof item === 'object' && item !== null) {
-          lines.push(`${pad}<${key}>`);
-          lines.push(objToXml(item, indent + 1));
-          lines.push(`${pad}</${key}>`);
-        } else {
-          lines.push(`${pad}<${key}>${escapeXml(String(item))}</${key}>`);
-        }
-      }
-    } else {
-      lines.push(`${pad}<${key}>${escapeXml(String(value))}</${key}>`);
-    }
+    if (key.startsWith('@') || key === '#text') continue;
+    lines.push(xmlEntryToString(key, value, pad, indent));
   }
 
   return lines.join('\n');

@@ -9,12 +9,12 @@ interface SectionStepsSkeletonProps {
 export default function SectionStepsSkeleton({
   cols = 3,
 }: SectionStepsSkeletonProps) {
-  const gridClass =
-    cols === 2
-      ? 'sm:grid-cols-2'
-      : cols === 4
-        ? 'sm:grid-cols-2 lg:grid-cols-4'
-        : 'sm:grid-cols-2 lg:grid-cols-3';
+  const GRID_CLASS_MAP = {
+    2: 'sm:grid-cols-2',
+    3: 'sm:grid-cols-2 lg:grid-cols-3',
+    4: 'sm:grid-cols-2 lg:grid-cols-4',
+  } as const;
+  const gridClass = GRID_CLASS_MAP[cols];
   const hasImages = cols === 2;
 
   return (

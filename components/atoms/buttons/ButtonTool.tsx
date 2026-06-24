@@ -25,6 +25,7 @@ export default function ButtonTool<T extends string>({
     <button
       type='button'
       onClick={() => onClick(id)}
+      aria-pressed={isActive}
       className={cn(
         buttonToolClasses,
         isActive

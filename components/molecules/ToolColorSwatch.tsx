@@ -22,6 +22,7 @@ export default function ToolColorSwatch({
       <div
         className='h-9 w-9 rounded-md border border-neutral-200'
         style={{ backgroundColor: hex }}
+        role='img'
         aria-label={ariaLabelPrefix ? `${ariaLabelPrefix} ${hex}` : hex}
       />
       <div className='min-w-0 flex-1'>

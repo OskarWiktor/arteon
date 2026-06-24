@@ -29,6 +29,7 @@
   "contrastRatio": "Kontrastní poměr",
   "recommended": "Doporučené minimum: 3:1",
   "enterData": "Zadejte data pro vygenerování QR kódu.",
+  "dataTooLong": "Zadané údaje jsou pro QR kód příliš dlouhé. Zkraťte text nebo zvolte nižší úroveň korekce chyb.",
   "vcard": {
     "firstName": "Jméno",
     "lastName": "Příjmení",

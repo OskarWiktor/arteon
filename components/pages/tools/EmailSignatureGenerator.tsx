@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import {
   RiLayout3Line,
   RiUser3Line,
@@ -21,10 +21,13 @@ import {
   RiUploadLine,
   RiCloseLine,
 } from 'react-icons/ri';
+import Backdrop from '@/components/atoms/Backdrop';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import ButtonTool from '@/components/atoms/buttons/ButtonTool';
 import InputColor from '@/components/atoms/form/InputColor';
+import ToolAlert from '@/components/atoms/ToolAlert';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
 import ConfirmModal from '@/components/organisms/ConfirmModal';
 import AppearancePanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/AppearancePanel';
@@ -35,11 +38,22 @@ import SocialPanel from '@/components/organisms/tools/EmailSignatureGenerator/pa
 import SpacingPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/SpacingPanel';
 import TextStyleRow from '@/components/organisms/tools/EmailSignatureGenerator/TextStyleRow';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { useDialogFocus } from '@/hooks/useDialogFocus';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useTimeout } from '@/hooks/useTimeout';
 import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/emailSignature';
 import { useLocale } from '@/lib/LocaleContext';
 import { buildSignatureHtml } from '@/lib/tools/email/buildSignatureHtml';
 import { exportSignatureAsHtml } from '@/lib/tools/email/exportSignature';
+import {
+  isValidLayoutType,
+  mergeSignatureConfig,
+  mergeSpacingConfig,
+  mergeStyleConfig,
+  mergeTextStyleConfig,
+  parseSignatureExportJson,
+} from '@/lib/tools/email/importSignatureConfig';
 import {
   STORAGE_KEY_BASE,
   DEFAULT_STYLE,
@@ -76,6 +90,13 @@ import { downloadBlob } from '@/utils/download';
  *
  * @returns The React element for the email signature generator interface.
  */
+const PREVIEW_BG_CLASSES: Record<'light' | 'dark' | 'checker', string> = {
+  light: 'bg-neutral-50',
+  dark: 'bg-neutral-800',
+  checker:
+    'bg-white bg-[linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%),linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%)] bg-size-[20px_20px] bg-position-[0_0,10px_10px]',
+};
+
 export default function EmailSignatureGenerator() {
   const locale = useLocale();
   const t = ui[locale];
@@ -100,6 +121,14 @@ export default function EmailSignatureGenerator() {
   const [themeId, setThemeId] = useState<string>('classic-dark');
   const [showResetModal, setShowResetModal] = useState(false);
   const [showSourceModal, setShowSourceModal] = useState(false);
+  const [importStatus, setImportStatus] = useState<
+    'idle' | 'success' | 'error'
+  >('idle');
+  const { start: startImportStatusReset } = useTimeout();
+  const sourceModalRef = useRef<HTMLDivElement>(null);
+
+  useEscapeKey(() => setShowSourceModal(false), showSourceModal);
+  useDialogFocus(sourceModalRef, showSourceModal);
   const { status: sourceModalCopyStatus, copy: copySource } =
     useCopyToClipboard(3000);
   const [isHydrated, setIsHydrated] = useState(false);
@@ -110,12 +139,14 @@ export default function EmailSignatureGenerator() {
       const saved = localStorage.getItem(storageKey);
       if (saved) {
         const data = JSON.parse(saved);
-        if (data.config) setConfig(data.config);
-        if (data.styleConfig) setStyleConfig(data.styleConfig);
-        if (data.spacingConfig) setSpacingConfig(data.spacingConfig);
-        if (data.textStyleConfig) setTextStyleConfig(data.textStyleConfig);
-        if (data.layout) setLayout(data.layout);
-        if (data.themeId) setThemeId(data.themeId);
+        setConfig(prev => mergeSignatureConfig(data.config, prev));
+        setStyleConfig(prev => mergeStyleConfig(data.styleConfig, prev));
+        setSpacingConfig(prev => mergeSpacingConfig(data.spacingConfig, prev));
+        setTextStyleConfig(prev =>
+          mergeTextStyleConfig(data.textStyleConfig, prev),
+        );
+        if (isValidLayoutType(data.layout)) setLayout(data.layout);
+        if (typeof data.themeId === 'string') setThemeId(data.themeId);
       }
     } catch {
       // Ignore localStorage errors
@@ -271,6 +302,34 @@ export default function EmailSignatureGenerator() {
     downloadBlob(blob, 'email-signature-config.json');
   }
 
+  function applyImportedSignatureData(record: Record<string, unknown>) {
+    setConfig(prev => mergeSignatureConfig(record.config, prev));
+    setStyleConfig(prev => mergeStyleConfig(record.styleConfig, prev));
+    setSpacingConfig(prev => mergeSpacingConfig(record.spacingConfig, prev));
+    setTextStyleConfig(prev =>
+      mergeTextStyleConfig(record.textStyleConfig, prev),
+    );
+    if (isValidLayoutType(record.layout)) setLayout(record.layout);
+  }
+
+  function reportImportResult(success: boolean) {
+    setImportStatus(success ? 'success' : 'error');
+    startImportStatusReset(
+      () => setImportStatus('idle'),
+      success ? 3000 : 5000,
+    );
+  }
+
+  function handleImportFileLoad(ev: ProgressEvent<FileReader>) {
+    const parsed = parseSignatureExportJson(ev.target?.result as string);
+    if (!parsed) {
+      reportImportResult(false);
+      return;
+    }
+    applyImportedSignatureData(parsed);
+    reportImportResult(true);
+  }
+
   function handleImportConfig() {
     const input = document.createElement('input');
     input.type = 'file';
@@ -279,18 +338,8 @@ export default function EmailSignatureGenerator() {
       const file = (e.target as HTMLInputElement).files?.[0];
       if (!file) return;
       const reader = new FileReader();
-      reader.onload = ev => {
-        try {
-          const data = JSON.parse(ev.target?.result as string);
-          if (data.config) setConfig(data.config);
-          if (data.styleConfig) setStyleConfig(data.styleConfig);
-          if (data.spacingConfig) setSpacingConfig(data.spacingConfig);
-          if (data.textStyleConfig) setTextStyleConfig(data.textStyleConfig);
-          if (data.layout) setLayout(data.layout);
-        } catch {
-          /* ignore invalid JSON */
-        }
-      };
+      reader.onload = handleImportFileLoad;
+      reader.onerror = () => reportImportResult(false);
       reader.readAsText(file);
     };
     input.click();
@@ -726,11 +775,7 @@ export default function EmailSignatureGenerator() {
           <div
             className={cn(
               'rounded-lg border border-neutral-200 p-4',
-              previewBg === 'dark'
-                ? 'bg-neutral-800'
-                : previewBg === 'checker'
-                  ? 'bg-white bg-[linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%),linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%)] bg-size-[20px_20px] bg-position-[0_0,10px_10px]'
-                  : 'bg-neutral-50',
+              PREVIEW_BG_CLASSES[previewBg],
             )}
           >
             <div className='mx-auto max-w-full overflow-x-auto'>
@@ -739,6 +784,8 @@ export default function EmailSignatureGenerator() {
               </div>
             </div>
           </div>
+
+          <ToolHelper className='mb-2'>{t.preview.saveHint}</ToolHelper>
 
           <div className='flex flex-wrap gap-2'>
             <Button
@@ -749,11 +796,13 @@ export default function EmailSignatureGenerator() {
               onClick={handleCopyToGmail}
               className='disabled:opacity-60'
             >
-              {copyStatus === 'success'
-                ? t.preview.copySuccess
-                : copyStatus === 'error'
-                  ? t.preview.copyError
-                  : t.preview.ButtonCopy}
+              {
+                {
+                  idle: t.preview.ButtonCopy,
+                  success: t.preview.copySuccess,
+                  error: t.preview.copyError,
+                }[copyStatus]
+              }
             </Button>
             <Button
               type='button'
@@ -818,19 +867,27 @@ export default function EmailSignatureGenerator() {
             </Button>
           </div>
 
+          {importStatus === 'error' && (
+            <ToolAlert variant='error' className='mt-2'>
+              {t.preview.importError}
+            </ToolAlert>
+          )}
+          {importStatus === 'success' && (
+            <ToolAlert variant='success' className='mt-2'>
+              {t.preview.importSuccess}
+            </ToolAlert>
+          )}
+
           {showSourceModal && (
-            <div
-              className={cn(
-                'fixed inset-0 z-100 bg-black/40 px-4',
-                flexCenterClasses,
-              )}
-              onClick={e => {
-                if (e.target === e.currentTarget) setShowSourceModal(false);
-              }}
-              role='dialog'
-              aria-modal='true'
-            >
-              <div className='w-full max-w-2xl overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5'>
+            <div className={cn('fixed inset-0 z-100 px-4', flexCenterClasses)}>
+              <Backdrop onClose={() => setShowSourceModal(false)} />
+              <div
+                ref={sourceModalRef}
+                role='dialog'
+                aria-modal='true'
+                tabIndex={-1}
+                className='relative w-full max-w-2xl overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5'
+              >
                 <div className={cn('mb-4', flexCenterBetweenClasses)}>
                   <h3 className='h6'>{t.preview.viewSourceTitle}</h3>
                   <button

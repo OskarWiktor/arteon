@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Button from '@/components/atoms/buttons/Button';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import Card from '@/components/organisms/Card';
@@ -8,6 +8,7 @@ import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSele
 import { useDictionary, useLocale } from '@/lib/LocaleContext';
 import { getUnitLabel } from '@/lib/tools/unitLabels';
 import { getUnitConversion } from '@/lib/tools/units/conversions';
+import { parseLocaleNumber } from '@/lib/tools/units/parseLocaleNumber';
 import {
   hexToRgb,
   rgbToHex,
@@ -21,6 +22,7 @@ import {
   dateToUnix,
 } from '@/lib/tools/units/specialConverters';
 import type { ToolItemKey } from '@/types/tools/common';
+import { copyTextToClipboard } from '@/utils/clipboard';
 
 interface UnitConverterProps {
   toolKey: ToolItemKey;
@@ -61,10 +63,8 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
     'decToHex',
   ].includes(toolKey);
 
-  const doConvert = (input: string, reverse: boolean) => {
-    if (!config || !input.trim()) return '';
-
-    if (isSpecial) {
+  const convertSpecial = useCallback(
+    (input: string, reverse: boolean) => {
       try {
         switch (toolKey) {
           case 'hexToRgb':
@@ -83,20 +83,38 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
       } catch {
         return '';
       }
-    }
+    },
+    [toolKey],
+  );
 
-    const num = parseFloat(input.replace(',', '.'));
-    if (isNaN(num)) return '';
+  const convertNumeric = useCallback(
+    (input: string, reverse: boolean) => {
+      if (!config) return '';
 
-    const result = reverse
-      ? config.reverseConvert(num, extraValue ?? undefined)
-      : config.convert(num, extraValue ?? undefined);
+      const num = parseLocaleNumber(input, locale);
+      if (isNaN(num)) return '';
 
-    if (isNaN(result) || !isFinite(result)) return '';
-    return config.precision === 0
-      ? Math.round(result).toString()
-      : result.toFixed(config.precision);
-  };
+      const result = reverse
+        ? config.reverseConvert(num, extraValue ?? undefined)
+        : config.convert(num, extraValue ?? undefined);
+
+      if (isNaN(result) || !isFinite(result)) return '';
+      return config.precision === 0
+        ? Math.round(result).toString()
+        : result.toFixed(config.precision);
+    },
+    [config, extraValue, locale],
+  );
+
+  const doConvert = useCallback(
+    (input: string, reverse: boolean) => {
+      if (!config || !input.trim()) return '';
+      return isSpecial
+        ? convertSpecial(input, reverse)
+        : convertNumeric(input, reverse);
+    },
+    [config, isSpecial, convertSpecial, convertNumeric],
+  );
 
   useEffect(() => {
     if (!sourceValue.trim()) {
@@ -130,20 +148,9 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
   const handleCopy = async () => {
     const valueToCopy = targetValue;
     if (!valueToCopy) return;
-    try {
-      await navigator.clipboard.writeText(valueToCopy);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      const textarea = document.createElement('textarea');
-      textarea.value = valueToCopy;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textarea);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
+    await copyTextToClipboard(valueToCopy);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   const handleClear = () => {

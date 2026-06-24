@@ -11,7 +11,7 @@ export type {
 } from '@/types/tools/image';
 
 function escapeCsvValue(value: string): string {
-  if (/["]/.test(value)) {
+  if (/"/.test(value)) {
     value = value.replace(/"/g, '""');
   }
 

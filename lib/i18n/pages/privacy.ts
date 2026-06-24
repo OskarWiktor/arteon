@@ -1,17 +1,3 @@
-import type { Locale } from '@/types/locale';
-import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
-
-// ---------------------------------------------------------------------------
-// Non-PL "Privacy Policy" page – centralised metadata (loaded from JSON)
-// (Legal body content stays in per-locale page files due to complexity)
-// ---------------------------------------------------------------------------
-
-export type PrivacyPageMeta = {
-  slug: string;
-  title: string;
-  description: string;
-};
-
 import cs from '@/data/cs/pages/privacy.json';
 import da from '@/data/da/pages/privacy.json';
 import de from '@/data/de/pages/privacy.json';
@@ -27,7 +13,20 @@ import no from '@/data/no/pages/privacy.json';
 import pt from '@/data/pt/pages/privacy.json';
 import ro from '@/data/ro/pages/privacy.json';
 import sv from '@/data/sv/pages/privacy.json';
+import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
+import type { Locale } from '@/types/locale';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+
+// ---------------------------------------------------------------------------
+// Non-PL "Privacy Policy" page – centralised metadata (loaded from JSON)
+// (Legal body content stays in per-locale page files due to complexity)
+// ---------------------------------------------------------------------------
+
+export type PrivacyPageMeta = {
+  slug: string;
+  title: string;
+  description: string;
+};
 
 const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   en,

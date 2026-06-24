@@ -62,6 +62,7 @@ export default function InputColorWithLabel({
             onChange={e => onChange(e.target.value)}
             placeholder={placeholder}
             className={textFieldClassName}
+            aria-label={ariaLabel}
           />
         )}
       </div>

@@ -157,7 +157,10 @@ export default async function EdukacjaCategoryPage({
   const { category } = await params;
   const cats = getCategoriesWithCount();
   const hasAny = getAllArticlePreviews().some(a => {
-    return a.primaryCategory && slugify(a.primaryCategory) === category;
+    return (
+      typeof a.primaryCategory === 'string' &&
+      slugify(a.primaryCategory) === category
+    );
   });
 
   if (!hasAny) {
@@ -199,7 +202,8 @@ export default async function EdukacjaCategoryPage({
               itemListElement: getAllArticlePreviews()
                 .filter(a => {
                   return (
-                    a.primaryCategory && slugify(a.primaryCategory) === category
+                    typeof a.primaryCategory === 'string' &&
+                    slugify(a.primaryCategory) === category
                   );
                 })
                 .map((a, i) => ({

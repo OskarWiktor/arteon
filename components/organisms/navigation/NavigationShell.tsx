@@ -111,6 +111,7 @@ export default function NavigationShell() {
                 largeIconSizeClasses,
                 focusRingClasses,
               )}
+              aria-haspopup='dialog'
               aria-label={`${dict.search.ariaSearch} (Ctrl+K)`}
             >
               <RiSearchLine
@@ -144,6 +145,7 @@ export default function NavigationShell() {
                 flexCenterClasses,
                 focusRingClasses,
               )}
+              aria-haspopup='dialog'
               aria-label={dict.search.ariaSearch}
             >
               <RiSearchLine

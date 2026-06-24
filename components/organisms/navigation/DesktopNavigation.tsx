@@ -32,6 +32,144 @@ const plUi = {
   openServicesList: 'Otwórz listę usług',
 } as const;
 
+type ToolsNavItemProps = {
+  liRef: React.RefObject<HTMLLIElement | null>;
+  btnRef: React.RefObject<HTMLButtonElement | null>;
+  href: string;
+  isActive: boolean;
+  label: string;
+  isOpen: boolean;
+  buttonId: string;
+  menuId: string;
+  onToggle: () => void;
+  onButtonKeyDown: (e: React.KeyboardEvent<HTMLButtonElement>) => void;
+  openLabel: string;
+  closeLabel: string;
+};
+
+/** The "Tools" nav item with its dropdown trigger button (shared between PL inline and non-PL standalone layouts) */
+function ToolsNavItem({
+  liRef,
+  btnRef,
+  href,
+  isActive,
+  label,
+  isOpen,
+  buttonId,
+  menuId,
+  onToggle,
+  onButtonKeyDown,
+  openLabel,
+  closeLabel,
+}: ToolsNavItemProps) {
+  return (
+    <li ref={liRef} className='group relative flex items-center gap-0.5'>
+      <InlineLink
+        href={href}
+        variant='navigation'
+        aria-current={isActive ? 'page' : undefined}
+        className={isActive ? 'font-semibold text-dark' : ''}
+      >
+        {label}
+      </InlineLink>
+
+      <button
+        id={buttonId}
+        type='button'
+        onClick={onToggle}
+        onKeyDown={onButtonKeyDown}
+        aria-haspopup='menu'
+        aria-expanded={isOpen}
+        aria-controls={menuId}
+        ref={btnRef}
+        className={cn(
+          '-mr-3.5 h-7 w-7 cursor-pointer rounded text-primary transition-colors hover:bg-primary-light',
+          flexCenterClasses,
+          focusRingClasses,
+        )}
+        aria-label={isOpen ? closeLabel : openLabel}
+      >
+        <span
+          className='inline-flex transition-transform duration-200'
+          style={{ transform: isOpen ? 'rotate(180deg)' : undefined }}
+        >
+          <RiArrowDownSLine
+            className={smallIconSizeClasses}
+            aria-hidden='true'
+          />
+        </span>
+      </button>
+    </li>
+  );
+}
+
+type OfferNavItemProps = {
+  liRef: React.RefObject<HTMLLIElement | null>;
+  btnRef: React.RefObject<HTMLButtonElement | null>;
+  href: string;
+  isActive: boolean;
+  label: string;
+  isOpen: boolean;
+  buttonId: string;
+  menuId: string;
+  onToggle: () => void;
+  onButtonKeyDown: (e: React.KeyboardEvent<HTMLButtonElement>) => void;
+};
+
+/** The "Offer" (usługi) nav item with its dropdown trigger button */
+function OfferNavItem({
+  liRef,
+  btnRef,
+  href,
+  isActive,
+  label,
+  isOpen,
+  buttonId,
+  menuId,
+  onToggle,
+  onButtonKeyDown,
+}: OfferNavItemProps) {
+  return (
+    <li ref={liRef} className='group relative flex items-center gap-0.5'>
+      <InlineLink
+        href={href}
+        variant='navigation'
+        aria-current={isActive ? 'page' : undefined}
+        className={isActive ? 'font-semibold text-dark' : ''}
+      >
+        {label}
+      </InlineLink>
+
+      <button
+        id={buttonId}
+        type='button'
+        onClick={onToggle}
+        onKeyDown={onButtonKeyDown}
+        aria-haspopup='menu'
+        aria-expanded={isOpen}
+        aria-controls={menuId}
+        ref={btnRef}
+        className={cn(
+          '-mr-3.5 h-7 w-7 cursor-pointer rounded text-primary transition-colors hover:bg-primary-light',
+          flexCenterClasses,
+          focusRingClasses,
+        )}
+        aria-label={isOpen ? plUi.closeServicesList : plUi.openServicesList}
+      >
+        <span
+          className='inline-flex transition-transform duration-200'
+          style={{ transform: isOpen ? 'rotate(180deg)' : undefined }}
+        >
+          <RiArrowDownSLine
+            className={smallIconSizeClasses}
+            aria-hidden='true'
+          />
+        </span>
+      </button>
+    </li>
+  );
+}
+
 /**
  * Render the desktop navigation bar with localized links and two dropdown menus: Offer and Tools.
  *
@@ -55,6 +193,9 @@ export default function DesktopNavigation() {
   const [activeToolsCategory, setActiveToolsCategory] =
     useState<ToolsSectionKey>('obrazy');
 
+  const toggleOffer = () => startTransition(() => setIsOfferOpen(p => !p));
+  const toggleTools = () => startTransition(() => setIsToolsOpen(p => !p));
+
   const offerLiRef = useRef<HTMLLIElement>(null);
   const offerBtnRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -69,8 +210,25 @@ export default function DesktopNavigation() {
   const mounted = useIsMounted();
   const [headerBottom, setHeaderBottom] = useState(0);
 
-  const offerMenuKeyboard = useMenuKeyboardNavigation(menuRef);
-  const toolsMenuKeyboard = useMenuKeyboardNavigation(toolsMenuRef);
+  // Zamknięcie menu z powrotem focusu na wyzwalacz (wzorzec menu: Tab/Escape
+  // zamyka, a focus nie ucieka do portalu/przeglądarki).
+  const closeOfferMenu = () => {
+    setIsOfferOpen(false);
+    offerBtnRef.current?.focus();
+  };
+  const closeToolsMenu = () => {
+    setIsToolsOpen(false);
+    toolsBtnRef.current?.focus();
+  };
+
+  const offerMenuKeyboard = useMenuKeyboardNavigation(menuRef, {
+    onClose: closeOfferMenu,
+  });
+  const toolsMenuKeyboard = useMenuKeyboardNavigation(toolsMenuRef, {
+    onClose: closeToolsMenu,
+    // Lewa kolumna „Narzędzi" to <button> (przełączniki kategorii), prawa to linki.
+    itemSelector: 'a[href], button',
+  });
 
   const buttonId = 'offer-button';
   const menuId = 'offer-submenu';
@@ -165,48 +323,20 @@ export default function DesktopNavigation() {
       <ul className='relative flex items-center gap-4 lg:gap-6'>
         {/* Tools link + dropdown rendered at correct position for non-PL (standalone) */}
         {!isPl && (
-          <li
-            ref={toolsLiRef}
-            className='group relative flex items-center gap-0.5'
-          >
-            <InlineLink
-              href={toolsHref}
-              variant='navigation'
-              aria-current={isToolsActive ? 'page' : undefined}
-              className={isToolsActive ? 'font-semibold text-dark' : ''}
-            >
-              {t.toolsLabel}
-            </InlineLink>
-
-            <button
-              id={toolsButtonId}
-              type='button'
-              onClick={() => startTransition(() => setIsToolsOpen(p => !p))}
-              onKeyDown={handleToolsButtonKeyDown}
-              aria-haspopup='menu'
-              aria-expanded={isToolsOpen}
-              aria-controls={toolsMenuId}
-              ref={toolsBtnRef}
-              className={cn(
-                '-mr-3.5 h-7 w-7 cursor-pointer rounded text-primary transition-colors hover:bg-primary-light',
-                flexCenterClasses,
-                focusRingClasses,
-              )}
-              aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
-            >
-              <span
-                className='inline-flex transition-transform duration-200'
-                style={{
-                  transform: isToolsOpen ? 'rotate(180deg)' : undefined,
-                }}
-              >
-                <RiArrowDownSLine
-                  className={smallIconSizeClasses}
-                  aria-hidden='true'
-                />
-              </span>
-            </button>
-          </li>
+          <ToolsNavItem
+            liRef={toolsLiRef}
+            btnRef={toolsBtnRef}
+            href={toolsHref}
+            isActive={isToolsActive}
+            label={t.toolsLabel}
+            isOpen={isToolsOpen}
+            buttonId={toolsButtonId}
+            menuId={toolsMenuId}
+            onToggle={toggleTools}
+            onButtonKeyDown={handleToolsButtonKeyDown}
+            openLabel={t.openToolsList}
+            closeLabel={t.closeToolsList}
+          />
         )}
 
         {!isPl && localeConfig.aboutHref && (
@@ -257,100 +387,39 @@ export default function DesktopNavigation() {
 
           if (itemKey === 'narzedzia') {
             return (
-              <li
-                ref={toolsLiRef}
-                className='group relative flex items-center gap-0.5'
+              <ToolsNavItem
                 key={label}
-              >
-                <InlineLink
-                  href={toolsHref}
-                  variant='navigation'
-                  aria-current={isToolsActive ? 'page' : undefined}
-                  className={isToolsActive ? 'font-semibold text-dark' : ''}
-                >
-                  {t.toolsLabel}
-                </InlineLink>
-
-                <button
-                  id={toolsButtonId}
-                  type='button'
-                  onClick={() => startTransition(() => setIsToolsOpen(p => !p))}
-                  onKeyDown={handleToolsButtonKeyDown}
-                  aria-haspopup='menu'
-                  aria-expanded={isToolsOpen}
-                  aria-controls={toolsMenuId}
-                  ref={toolsBtnRef}
-                  className={cn(
-                    '-mr-3.5 h-7 w-7 cursor-pointer rounded text-primary transition-colors hover:bg-primary-light',
-                    flexCenterClasses,
-                    focusRingClasses,
-                  )}
-                  aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
-                >
-                  <span
-                    className='inline-flex transition-transform duration-200'
-                    style={{
-                      transform: isToolsOpen ? 'rotate(180deg)' : undefined,
-                    }}
-                  >
-                    <RiArrowDownSLine
-                      className={smallIconSizeClasses}
-                      aria-hidden='true'
-                    />
-                  </span>
-                </button>
-              </li>
+                liRef={toolsLiRef}
+                btnRef={toolsBtnRef}
+                href={toolsHref}
+                isActive={isToolsActive}
+                label={t.toolsLabel}
+                isOpen={isToolsOpen}
+                buttonId={toolsButtonId}
+                menuId={toolsMenuId}
+                onToggle={toggleTools}
+                onButtonKeyDown={handleToolsButtonKeyDown}
+                openLabel={t.openToolsList}
+                closeLabel={t.closeToolsList}
+              />
             );
           }
 
           if (itemKey === 'uslugi') {
-            const isActive = pathname.startsWith('/uslugi');
             return (
-              <li
-                ref={offerLiRef}
-                className='group relative flex items-center gap-0.5'
+              <OfferNavItem
                 key={label}
-              >
-                <InlineLink
-                  href={href}
-                  variant='navigation'
-                  aria-current={isActive ? 'page' : undefined}
-                  className={isActive ? 'font-semibold text-dark' : ''}
-                >
-                  {label}
-                </InlineLink>
-
-                <button
-                  id={buttonId}
-                  type='button'
-                  onClick={() => startTransition(() => setIsOfferOpen(p => !p))}
-                  onKeyDown={handleOfferButtonKeyDown}
-                  aria-haspopup='menu'
-                  aria-expanded={isOfferOpen}
-                  aria-controls={menuId}
-                  ref={offerBtnRef}
-                  className={cn(
-                    '-mr-3.5 h-7 w-7 cursor-pointer rounded text-primary transition-colors hover:bg-primary-light',
-                    flexCenterClasses,
-                    focusRingClasses,
-                  )}
-                  aria-label={
-                    isOfferOpen ? plUi.closeServicesList : plUi.openServicesList
-                  }
-                >
-                  <span
-                    className='inline-flex transition-transform duration-200'
-                    style={{
-                      transform: isOfferOpen ? 'rotate(180deg)' : undefined,
-                    }}
-                  >
-                    <RiArrowDownSLine
-                      className={smallIconSizeClasses}
-                      aria-hidden='true'
-                    />
-                  </span>
-                </button>
-              </li>
+                liRef={offerLiRef}
+                btnRef={offerBtnRef}
+                href={href}
+                isActive={pathname.startsWith('/uslugi')}
+                label={label}
+                isOpen={isOfferOpen}
+                buttonId={buttonId}
+                menuId={menuId}
+                onToggle={toggleOffer}
+                onButtonKeyDown={handleOfferButtonKeyDown}
+              />
             );
           }
 
@@ -379,16 +448,17 @@ export default function DesktopNavigation() {
             id={menuId}
             role='menu'
             aria-labelledby={buttonId}
+            tabIndex={-1}
+            onKeyDown={handleMenuKeyDown}
             className='animate-dropdown-in fixed left-0 z-50 w-full bg-white/95 py-6 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm'
             style={{ top: headerBottom }}
           >
             <Wrapper>
-              <div
-                ref={menuRef}
-                onKeyDown={handleMenuKeyDown}
-                className='grid grid-cols-5 gap-0'
-              >
-                <div className='border-r border-primary-light pr-4'>
+              <div ref={menuRef} className='grid grid-cols-5 gap-0'>
+                <div
+                  className='border-r border-primary-light pr-4'
+                  data-menu-col='0'
+                >
                   <div className='flex flex-col gap-1'>
                     {OFFER_SECTIONS_PL.map(section => {
                       const isActiveCategory =
@@ -398,6 +468,8 @@ export default function DesktopNavigation() {
                         <InlineLink
                           key={section.key}
                           href={section.hubHref || '#'}
+                          role='menuitem'
+                          tabIndex={-1}
                           onMouseEnter={() => handleCategoryHover(section.key)}
                           onFocus={() => handleCategoryHover(section.key)}
                           className={cn(
@@ -446,7 +518,7 @@ export default function DesktopNavigation() {
                   </div>
                 </div>
 
-                <div className='col-span-4 pl-6'>
+                <div className='col-span-4 pl-6' data-menu-col='1'>
                   <div
                     key={activeOfferCategory}
                     className='animate-[fade-slide-in_0.15s_ease-out_both]'
@@ -458,6 +530,8 @@ export default function DesktopNavigation() {
                           <InlineLink
                             key={item.href}
                             href={item.href}
+                            role='menuitem'
+                            tabIndex={-1}
                             className='group/link gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white'
                           >
                             {ItemIcon ? (
@@ -494,17 +568,21 @@ export default function DesktopNavigation() {
             id={toolsMenuId}
             role='menu'
             aria-labelledby={toolsButtonId}
+            tabIndex={-1}
+            onKeyDown={handleToolsMenuKeyDown}
             className='animate-dropdown-in fixed left-0 z-50 w-full bg-white/95 py-6 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm'
             style={{ top: headerBottom }}
           >
             <Wrapper>
               <div
                 ref={toolsMenuRef}
-                onKeyDown={handleToolsMenuKeyDown}
                 className='grid gap-0'
                 style={{ gridTemplateColumns: 'minmax(180px, auto) 1fr' }}
               >
-                <div className='border-r border-primary-light pr-4'>
+                <div
+                  className='border-r border-primary-light pr-4'
+                  data-menu-col='0'
+                >
                   <div className='flex flex-col gap-1'>
                     {toolsSections.map(section => {
                       const isActiveCategory =
@@ -514,6 +592,8 @@ export default function DesktopNavigation() {
                         <button
                           key={section.key}
                           type='button'
+                          role='menuitem'
+                          tabIndex={-1}
                           onMouseEnter={() =>
                             handleToolsCategoryHover(section.key)
                           }
@@ -564,7 +644,7 @@ export default function DesktopNavigation() {
                   </div>
                 </div>
 
-                <div className='pl-6'>
+                <div className='pl-6' data-menu-col='1'>
                   <div
                     key={activeToolsCategory}
                     className='animate-[fade-slide-in_0.15s_ease-out_both]'
@@ -594,6 +674,8 @@ export default function DesktopNavigation() {
                           <InlineLink
                             key={item.href}
                             href={item.href}
+                            role='menuitem'
+                            tabIndex={-1}
                             className='group/link gap-3 rounded-lg px-3 py-2.5 transition-colors duration-150 hover:bg-white'
                           >
                             {ItemIcon ? (

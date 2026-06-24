@@ -179,7 +179,10 @@
     "viewSourceCopied": "Copiat",
     "viewSourceClose": "Închide",
     "exportConfig": "Exportă configurația",
-    "importConfig": "Importă configurația"
+    "importConfig": "Importă configurația",
+    "importError": "Fișierul nu a putut fi importat. Verifică dacă este un fișier de configurare (.json) exportat din acest instrument.",
+    "importSuccess": "Configurație importată",
+    "saveHint": "„Descarcă ca HTML” salvează semnătura pregătită pentru a fi lipită în clientul de e-mail. „Exportă configurația” salvează un fișier .json pe care îl poți încărca mai târziu prin „Importă configurația” pentru a continua editarea."
   },
   "labels": {
     "tel": "Tel.",

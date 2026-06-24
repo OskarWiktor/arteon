@@ -1,5 +1,5 @@
 import { LOCALE_CONFIG } from '@/lib/i18n/locales';
-import type { Locale } from '@/types/locale';
+import type { Locale, LocaleConfig } from '@/types/locale';
 import type {
   ToolItemKey,
   ToolDefinition,
@@ -58,6 +58,25 @@ export function findToolBySlug(
   return null;
 }
 
+const LEGAL_PAGE_HREF_KEYS = [
+  'aboutHref',
+  'contactHref',
+  'privacyHref',
+  'termsHref',
+] as const;
+
+/** Match `currentPath` against one locale-config href key and return its alternate, if any */
+function matchLegalPageHref(
+  currentPath: string,
+  fromConfig: LocaleConfig,
+  toConfig: LocaleConfig,
+  key: (typeof LEGAL_PAGE_HREF_KEYS)[number],
+): string | null {
+  const fromHref = fromConfig[key];
+  const toHref = toConfig[key];
+  return fromHref && currentPath === fromHref && toHref ? toHref : null;
+}
+
 /**
  * Given a path and current locale, return the alternate href for a target locale.
  * Works for both tool index and individual tool pages.
@@ -87,33 +106,9 @@ export function getAlternateToolHref(
   }
 
   // Non-tool pages: about, contact, privacy, terms
-  if (
-    fromConfig.aboutHref &&
-    currentPath === fromConfig.aboutHref &&
-    toConfig.aboutHref
-  ) {
-    return toConfig.aboutHref;
-  }
-  if (
-    fromConfig.contactHref &&
-    currentPath === fromConfig.contactHref &&
-    toConfig.contactHref
-  ) {
-    return toConfig.contactHref;
-  }
-  if (
-    fromConfig.privacyHref &&
-    currentPath === fromConfig.privacyHref &&
-    toConfig.privacyHref
-  ) {
-    return toConfig.privacyHref;
-  }
-  if (
-    fromConfig.termsHref &&
-    currentPath === fromConfig.termsHref &&
-    toConfig.termsHref
-  ) {
-    return toConfig.termsHref;
+  for (const key of LEGAL_PAGE_HREF_KEYS) {
+    const match = matchLegalPageHref(currentPath, fromConfig, toConfig, key);
+    if (match) return match;
   }
 
   // Homepage

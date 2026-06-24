@@ -11,8 +11,8 @@ type ConsentState = {
 export function readConsent(): ConsentState | null {
   if (typeof document === 'undefined') return null;
 
-  const m = document.cookie.match(
-    new RegExp('(?:^|; )' + COOKIE_NAME + '=([^;]+)'),
+  const m = new RegExp('(?:^|; )' + COOKIE_NAME + '=([^;]+)').exec(
+    document.cookie,
   );
   if (!m) return null;
 

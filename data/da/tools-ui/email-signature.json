@@ -172,7 +172,10 @@
     "viewSourceCopied": "Kopieret",
     "viewSourceClose": "Luk",
     "exportConfig": "Eksportér indstillinger",
-    "importConfig": "Importér indstillinger"
+    "importConfig": "Importér indstillinger",
+    "importError": "Filen kunne ikke importeres. Kontrollér, at det er en indstillingsfil (.json) eksporteret fra dette værktøj.",
+    "importSuccess": "Indstillinger importeret",
+    "saveHint": "\"Download som HTML\" gemmer den færdige signatur til indsættelse i din mailklient. \"Eksportér indstillinger\" gemmer en .json-fil, du senere kan indlæse via \"Importér indstillinger\" for at fortsætte redigeringen."
   },
   "labels": {
     "tel": "Tlf.",

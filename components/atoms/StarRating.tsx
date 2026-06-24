@@ -75,7 +75,11 @@ export function StarRating({
   );
 
   return (
-    <span className={cn('text-accent', className)} aria-hidden='true'>
+    <span
+      className={cn('text-accent', className)}
+      role='img'
+      aria-label={`${v}/5`}
+    >
       {Array.from({ length: full }).map((_, i) => (
         <span key={`f-${i}`}>{FullStar}</span>
       ))}

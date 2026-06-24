@@ -1,6 +1,38 @@
 import { hexToRgb, hslToRgb, parseHsl } from '@/lib/tools/color/convert';
 import type { RGB, RGBA } from '@/types/tools/color';
 
+function parseAlpha(alphaRaw: string | undefined): number | null {
+  if (alphaRaw === undefined) return 1;
+
+  const a = alphaRaw.endsWith('%')
+    ? Number(alphaRaw.slice(0, -1)) / 100
+    : Number(alphaRaw);
+
+  return Number.isNaN(a) || a < 0 || a > 1 ? null : a;
+}
+
+function parseRgbaString(trimmed: string): RGBA | null {
+  const rgbMatch =
+    /^rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*([0-9.]+%?))?\s*\)$/i.exec(
+      trimmed,
+    );
+  if (!rgbMatch) return null;
+
+  const r = Number(rgbMatch[1]);
+  const g = Number(rgbMatch[2]);
+  const b = Number(rgbMatch[3]);
+  if ([r, g, b].some(v => v < 0 || v > 255 || Number.isNaN(v))) {
+    return null;
+  }
+
+  // Optional capture group: TS types it as `string`, but it is `undefined`
+  // at runtime when the alpha part isn't present in the match.
+  const a = parseAlpha(rgbMatch[4] as string | undefined);
+  if (a === null) return null;
+
+  return { r, g, b, a };
+}
+
 export function parseColor(color: string): RGBA | null {
   const trimmed = color.trim();
 
@@ -15,36 +47,7 @@ export function parseColor(color: string): RGBA | null {
     return { ...rgb, a: hsl.a };
   }
 
-  const rgbMatch =
-    /^rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*([0-9.]+%?))?\s*\)$/i.exec(
-      trimmed,
-    );
-
-  if (rgbMatch) {
-    const r = Number(rgbMatch[1]);
-    const g = Number(rgbMatch[2]);
-    const b = Number(rgbMatch[3]);
-
-    if ([r, g, b].some(v => v < 0 || v > 255 || Number.isNaN(v))) {
-      return null;
-    }
-
-    let a = 1;
-    const alphaRaw = rgbMatch[4];
-    if (alphaRaw !== undefined) {
-      if (alphaRaw.endsWith('%')) {
-        a = Number(alphaRaw.slice(0, -1)) / 100;
-      } else {
-        a = Number(alphaRaw);
-      }
-
-      if (Number.isNaN(a) || a < 0 || a > 1) return null;
-    }
-
-    return { r, g, b, a };
-  }
-
-  return null;
+  return parseRgbaString(trimmed);
 }
 
 function compositeOver(foreground: RGBA, background: RGB): RGB {

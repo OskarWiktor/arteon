@@ -11,6 +11,10 @@ import Card from '@/components/organisms/Card';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
 import { cn } from '@/lib/clsx';
 import { useDictionary } from '@/lib/LocaleContext';
+import {
+  getConversionStatusBadgeVariant,
+  getConversionStatusLabel,
+} from '@/lib/tools/conversionStatus';
 import { FORMAT_LABELS } from '@/lib/tools/image/imageToPdf';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import type {
@@ -254,6 +258,7 @@ export default function ImageToPdfConverter({
       .then(blob => {
         const baseName = file.file.name.replace(/\.[^.]+$/, '');
         downloadBlob(blob, `${baseName}.pdf`);
+        return undefined;
       })
       .catch(err => {
         console.error('Download failed:', err);
@@ -274,6 +279,7 @@ export default function ImageToPdfConverter({
         .then(blob => {
           const baseName = file.file.name.replace(/\.[^.]+$/, '');
           downloadBlob(blob, `${baseName}.pdf`);
+          return undefined;
         })
         .catch(err => {
           console.error('Download failed:', err);
@@ -410,14 +416,12 @@ export default function ImageToPdfConverter({
           {files.length > 0 && (
             <div className='space-y-2 text-sm!'>
               {files.map(item => {
-                const statusLabel =
-                  item.status === 'idle'
-                    ? t.statusPending
-                    : item.status === 'processing'
-                      ? t.statusProcessing
-                      : item.status === 'done'
-                        ? t.statusDone
-                        : t.statusError;
+                const statusLabel = getConversionStatusLabel(item.status, {
+                  idle: t.statusPending,
+                  processing: t.statusProcessing,
+                  done: t.statusDone,
+                  error: t.statusError,
+                });
 
                 return (
                   <ToolFileRow
@@ -436,13 +440,7 @@ export default function ImageToPdfConverter({
                     actions={
                       <div className='flex items-center gap-1'>
                         <Badge
-                          variant={
-                            item.status === 'done'
-                              ? 'success'
-                              : item.status === 'error'
-                                ? 'error'
-                                : 'neutral'
-                          }
+                          variant={getConversionStatusBadgeVariant(item.status)}
                           size='md'
                         >
                           {statusLabel}

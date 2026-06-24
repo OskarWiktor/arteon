@@ -48,19 +48,26 @@ export default function ButtonCopy({
   const Icon = copied ? RiCheckLine : RiClipboardLine;
 
   return (
-    <button
-      type='button'
-      onClick={handleCopy}
-      className={cn(
-        buttonCopyClasses,
-        focusRingClasses,
-        variantClasses[variant],
-        className,
-      )}
-      aria-label={currentLabel}
-    >
-      <Icon className='h-3.5 w-3.5' aria-hidden='true' />
-      {currentLabel}
-    </button>
+    <>
+      <button
+        type='button'
+        onClick={handleCopy}
+        className={cn(
+          buttonCopyClasses,
+          focusRingClasses,
+          variantClasses[variant],
+          className,
+        )}
+        aria-label={currentLabel}
+      >
+        <Icon className='h-3.5 w-3.5' aria-hidden='true' />
+        {currentLabel}
+      </button>
+      {/* Dyskretne ogłoszenie sukcesu kopiowania dla czytników ekranu —
+          sama zmiana etykiety przycisku nie jest wiarygodnie ogłaszana. */}
+      <span role='status' className='sr-only'>
+        {copied ? copiedLabel : ''}
+      </span>
+    </>
   );
 }

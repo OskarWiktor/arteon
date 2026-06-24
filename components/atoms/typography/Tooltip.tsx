@@ -99,7 +99,7 @@ export default function Tooltip({
       className='relative inline'
       onMouseLeave={hideImmediately}
     >
-      <abbr
+      <span
         className={cn(
           'cursor-help rounded underline decoration-dotted underline-offset-2 transition-colors hover:text-dark focus-visible:text-dark',
           focusRingClasses,
@@ -116,7 +116,7 @@ export default function Tooltip({
         onTouchStart={toggleTouch}
       >
         {children}
-      </abbr>
+      </span>
 
       {open && (
         <div

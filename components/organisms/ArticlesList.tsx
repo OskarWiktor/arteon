@@ -23,7 +23,7 @@ export default function ArticlesList({
   const items = filterCategorySlug
     ? articles.filter(article => {
         return (
-          article.primaryCategory &&
+          typeof article.primaryCategory === 'string' &&
           slugify(article.primaryCategory) === filterCategorySlug
         );
       })

@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { IconType } from 'react-icons';
 import {
   SiNextdotjs,
@@ -156,11 +156,11 @@ export default function LogoCarousel({
     isPausedRef.current = isPaused;
   }, [isPaused]);
 
-  const measure = () => {
+  const measure = useCallback(() => {
     if (!trackRef.current) return;
     const total = trackRef.current.scrollWidth;
     loopWidthRef.current = total / 2;
-  };
+  }, []);
 
   useEventListener(
     typeof window !== 'undefined' ? window : null,
@@ -278,7 +278,6 @@ export default function LogoCarousel({
         className={cn('overflow-hidden rounded-lg', focusRingClasses)}
         role='region'
         aria-label='Przewijana lista technologii.'
-        tabIndex={0}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
         onBlur={() => setIsPaused(false)}

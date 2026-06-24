@@ -1,17 +1,15 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
-
-type TimeoutId = number;
+import { useCallback, useEffect, useRef } from 'react';
 
 export function useTimeout() {
-  const timerRef = useRef<TimeoutId | null>(null);
+  const timerRef = useRef<number | null>(null);
 
-  const clear = () => {
+  const clear = useCallback(() => {
     if (timerRef.current == null) return;
     window.clearTimeout(timerRef.current);
     timerRef.current = null;
-  };
+  }, []);
 
   const start = (callback: () => void, delayMs: number) => {
     clear();

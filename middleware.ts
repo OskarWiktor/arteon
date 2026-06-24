@@ -90,9 +90,13 @@ export function middleware(request: NextRequest) {
     needsRedirect = true;
   }
 
-  // 4. Remove trailing slash (except root "/")
+  // 4. Remove trailing slash(es) (except root "/")
   if (url.pathname.length > 1 && url.pathname.endsWith('/')) {
-    url.pathname = url.pathname.replace(/\/+$/, '');
+    let pathname = url.pathname;
+    while (pathname.length > 1 && pathname.endsWith('/')) {
+      pathname = pathname.slice(0, -1);
+    }
+    url.pathname = pathname;
     needsRedirect = true;
   }
 

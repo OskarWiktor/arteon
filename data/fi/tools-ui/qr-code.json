@@ -29,6 +29,7 @@
   "contrastRatio": "Kontrastisuhde",
   "recommended": "Suositeltu minimi: 3:1",
   "enterData": "Syötä tiedot luodaksesi QR-koodin.",
+  "dataTooLong": "Syötetty tieto on liian pitkä QR-koodiin. Lyhennä tekstiä tai valitse alempi virheenkorjaustaso.",
   "vcard": {
     "firstName": "Etunimi",
     "lastName": "Sukunimi",

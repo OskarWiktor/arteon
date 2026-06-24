@@ -13,6 +13,10 @@ import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSele
 import { cn } from '@/lib/clsx';
 import { useDictionary } from '@/lib/LocaleContext';
 import {
+  getConversionStatusBadgeVariant,
+  getConversionStatusLabel,
+} from '@/lib/tools/conversionStatus';
+import {
   FORMAT_EXT,
   FORMAT_LABELS,
   FORMAT_MIME,
@@ -89,7 +93,8 @@ export default function PdfToImageConverter({
           setPages(prev => [...prev, ...newPages]);
         }
       } catch (err) {
-        setGlobalError(err instanceof Error ? err.message : t.failedToLoadPdf);
+        console.error(err);
+        setGlobalError(t.failedToLoadPdf);
       }
     })();
   };
@@ -349,14 +354,12 @@ export default function PdfToImageConverter({
           {pages.length > 0 && (
             <div className='space-y-2 text-sm!'>
               {pages.map(item => {
-                const statusLabel =
-                  item.status === 'idle'
-                    ? t.statusPending
-                    : item.status === 'processing'
-                      ? t.statusProcessing
-                      : item.status === 'done'
-                        ? t.statusDone
-                        : t.statusError;
+                const statusLabel = getConversionStatusLabel(item.status, {
+                  idle: t.statusPending,
+                  processing: t.statusProcessing,
+                  done: t.statusDone,
+                  error: t.statusError,
+                });
 
                 return (
                   <ToolFileRow
@@ -377,13 +380,7 @@ export default function PdfToImageConverter({
                     actions={
                       <div className='flex items-center gap-1'>
                         <Badge
-                          variant={
-                            item.status === 'done'
-                              ? 'success'
-                              : item.status === 'error'
-                                ? 'error'
-                                : 'neutral'
-                          }
+                          variant={getConversionStatusBadgeVariant(item.status)}
                           size='md'
                         >
                           {statusLabel}

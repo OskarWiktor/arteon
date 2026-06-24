@@ -1,12 +1,14 @@
 'use client';
 
 import {
+  useCallback,
   useEffect,
   useRef,
   useState,
   type KeyboardEvent,
   type RefObject,
 } from 'react';
+import useMediaQuery from './useMediaQuery';
 
 type Params = {
   itemCount: number;
@@ -29,6 +31,9 @@ export function useCarouselScroller({
   const [isScrollable, setIsScrollable] = useState(false);
   const [autoPlayActive, setAutoPlayActive] = useState(autoPlay);
   const [isVisible, setIsVisible] = useState(false);
+  const prefersReducedMotion = useMediaQuery(
+    '(prefers-reduced-motion: reduce)',
+  );
 
   const currentSlideRef = useRef(0);
 
@@ -36,9 +41,9 @@ export function useCarouselScroller({
     currentSlideRef.current = currentSlide;
   }, [currentSlide]);
 
-  const stopAutoPlay = () => {
+  const stopAutoPlay = useCallback(() => {
     setAutoPlayActive(false);
-  };
+  }, []);
 
   useEffect(() => {
     const container = scrollRef.current;
@@ -139,7 +144,8 @@ export function useCarouselScroller({
   }, [autoPlay, scrollRef]);
 
   useEffect(() => {
-    if (!autoPlayActive || !isScrollable || !isVisible) return;
+    if (!autoPlayActive || !isScrollable || !isVisible || prefersReducedMotion)
+      return;
 
     const id = setInterval(() => {
       const container = scrollRef.current;
@@ -159,7 +165,14 @@ export function useCarouselScroller({
     }, autoPlayIntervalMs);
 
     return () => clearInterval(id);
-  }, [autoPlayActive, autoPlayIntervalMs, isScrollable, isVisible, scrollRef]);
+  }, [
+    autoPlayActive,
+    autoPlayIntervalMs,
+    isScrollable,
+    isVisible,
+    scrollRef,
+    prefersReducedMotion,
+  ]);
 
   const scrollByCards = (dir: 'left' | 'right') => {
     if (!scrollRef.current || !cardWidth) return;

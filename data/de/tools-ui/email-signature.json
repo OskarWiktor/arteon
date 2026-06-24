@@ -172,7 +172,10 @@
     "viewSourceCopied": "Kopiert",
     "viewSourceClose": "Schließen",
     "exportConfig": "Einstellungen exportieren",
-    "importConfig": "Einstellungen importieren"
+    "importConfig": "Einstellungen importieren",
+    "importError": "Die Datei konnte nicht importiert werden. Stelle sicher, dass es sich um eine Einstellungsdatei (.json) aus diesem Tool handelt.",
+    "importSuccess": "Einstellungen importiert",
+    "saveHint": "„Als HTML herunterladen“ speichert die fertige Signatur zum Einfügen in dein E-Mail-Programm. „Einstellungen exportieren“ speichert eine .json-Datei, die du später über „Einstellungen importieren“ laden kannst, um weiterzubearbeiten."
   },
   "labels": {
     "tel": "Tel.",

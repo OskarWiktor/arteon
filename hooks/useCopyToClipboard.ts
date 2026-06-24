@@ -71,6 +71,7 @@ export function useCopyToClipboard(defaultResetMs = 1200) {
           setStatus('success');
           options?.onCopy?.();
           resetAfter(ms);
+          return undefined;
         })
         .catch(() => {
           setStatus('error');

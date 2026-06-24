@@ -439,6 +439,13 @@ strong {
   background: transparent;
 }
 
+/* Przyklejony nagłówek nie może zasłaniać elementu, który otrzymał focus
+   (WCAG 2.4.11). scroll-padding rezerwuje miejsce na nagłówek przy przewijaniu
+   do kotwic i przy przenoszeniu focusu klawiaturą — bez wpływu na wygląd. */
+html {
+  scroll-padding-top: 4rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .theme-transition,
   .theme-transition *,

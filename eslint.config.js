@@ -140,6 +140,18 @@ export default [
     },
   },
   {
+    // Karuzele to celowo dostępne, fokusowalne regiony przewijania (wzorzec WAI-ARIA
+    // APG): kontener ma role="region"/"group" + aria-label + aria-roledescription
+    // + tabIndex={0} + onKeyDown do nawigacji strzałkami. Te dwie reguły dają tu
+    // false-positive (nie modelują przewijalnych regionów). Wyłączamy je WYŁĄCZNIE
+    // dla karuzel — w modalach, nawigacji i galeriach pozostają aktywne.
+    files: ['components/organisms/carousels/**/*.tsx'],
+    rules: {
+      'jsx-a11y/no-noninteractive-tabindex': 'off',
+      'jsx-a11y/no-noninteractive-element-interactions': 'off',
+    },
+  },
+  {
     files: ['**/*.d.ts'],
     rules: {
       'no-unused-vars': 'off',

@@ -62,25 +62,6 @@ export default function Badge({
   rel,
   disabled,
 }: BadgeProps) {
-  const isLegacyTextBadge =
-    typeof text === 'string' &&
-    children === undefined &&
-    variant === undefined &&
-    size === undefined &&
-    Component === undefined &&
-    onClick === undefined &&
-    href === undefined &&
-    disabled === undefined &&
-    className === '';
-
-  if (isLegacyTextBadge) {
-    return (
-      <span className='inline-block rounded-lg bg-white px-3 py-1 text-xs tracking-wide uppercase shadow-sm'>
-        {text}
-      </span>
-    );
-  }
-
   const resolvedVariant = variant ?? 'default';
   const resolvedSize = size ?? 'md';
   const ResolvedComponent = Component ?? 'span';

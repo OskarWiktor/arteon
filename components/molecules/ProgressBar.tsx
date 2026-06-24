@@ -17,16 +17,22 @@ export default function ProgressBar({
   totalSteps,
 }: ProgressBarProps) {
   const percent = Math.round(((currentStep + 1) / totalSteps) * 100);
+  const stepLabel = `Krok ${currentStep + 1}/${totalSteps}`;
 
   return (
-    <div className='relative m-auto mb-12 h-0.5 w-full bg-neutral-200'>
+    <div
+      className='relative m-auto mb-12 h-0.5 w-full bg-neutral-200'
+      role='progressbar'
+      aria-valuemin={1}
+      aria-valuemax={totalSteps}
+      aria-valuenow={currentStep + 1}
+      aria-label={stepLabel}
+    >
       <div
         className='h-full bg-primary transition-all'
         style={{ width: `${percent}%` }}
       />
-      <span className='absolute -top-6 text-xs text-light'>
-        Krok {currentStep + 1}/{totalSteps}
-      </span>
+      <span className='absolute -top-6 text-xs text-light'>{stepLabel}</span>
     </div>
   );
 }

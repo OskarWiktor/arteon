@@ -10,6 +10,7 @@ import {
   RiArrowDownSLine,
   RiArrowUpSLine,
 } from 'react-icons/ri';
+import { useDialogFocus } from '@/hooks/useDialogFocus';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import { cn } from '@/lib/clsx';
@@ -20,6 +21,7 @@ import {
   normalIconSizeClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
+import Backdrop from '../atoms/Backdrop';
 import ButtonLink from '../atoms/buttons/ButtonLink';
 
 type Cat = { label: string; slug: string; count: number };
@@ -187,7 +189,10 @@ function FilterModal({
   isRoot,
 }: FilterModalProps) {
   const listRef = useRef<HTMLDivElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(-1);
+
+  useDialogFocus(dialogRef, isOpen);
 
   useEffect(() => {
     if (isOpen) {
@@ -222,29 +227,26 @@ function FilterModal({
     }
   }, [activeIndex]);
 
-  const handleBackdropClick = (e: React.MouseEvent) => {
-    if (e.target === e.currentTarget) onClose();
-  };
-
   if (!isOpen) return null;
 
   return (
-    <div
-      className={cn(
-        'fixed inset-0 z-100 flex items-start justify-center bg-black/40 px-4 pt-[10vh]',
-        modalBackdropClasses,
-      )}
-      onClick={handleBackdropClick}
-      role='dialog'
-      aria-modal='true'
-      aria-label='Wybierz kategorię'
-    >
+    <div className='fixed inset-0 z-100 flex items-start justify-center px-4 pt-[10vh]'>
+      <Backdrop onClose={onClose} className={modalBackdropClasses} />
+      {/* Dialog obsługuje klawiaturę (Escape + strzałki do nawigacji po
+          kategoriach) — to zamierzone i dostępne; reguła daje tu false-positive
+          dla roli "dialog". */}
+      {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
       <div
+        ref={dialogRef}
+        role='dialog'
+        aria-modal='true'
+        aria-label='Wybierz kategorię'
+        tabIndex={-1}
+        onKeyDown={handleKeyDown}
         className={cn(
-          'w-full max-w-lg overflow-hidden rounded-lg bg-white shadow-lg',
+          'relative w-full max-w-lg overflow-hidden rounded-lg bg-white shadow-lg',
           modalContentClasses,
         )}
-        onKeyDown={handleKeyDown}
       >
         <div
           className={cn(

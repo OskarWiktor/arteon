@@ -3,15 +3,9 @@
 import { RiMoonLine, RiSunLine } from 'react-icons/ri';
 import { useTheme } from '@/hooks/useTheme';
 import { cn } from '@/lib/clsx';
+import { getA11y } from '@/lib/i18n/a11y';
 import { useLocale } from '@/lib/LocaleContext';
 import { focusRingClasses, normalIconSizeClasses } from '@/lib/uiClasses';
-
-// ToDo locale
-function getLabel(locale: string): string {
-  return locale === 'pl'
-    ? 'Przełącz tryb jasny lub ciemny'
-    : 'Toggle light or dark mode';
-}
 
 export default function ThemeToggle() {
   const { toggle } = useTheme();
@@ -21,7 +15,7 @@ export default function ThemeToggle() {
     <button
       type='button'
       onClick={toggle}
-      aria-label={getLabel(locale)}
+      aria-label={getA11y(locale).themeToggle}
       className={cn(
         'flex h-8 w-8 cursor-pointer items-center justify-center rounded-md text-primary transition-colors hover:bg-primary-light',
         focusRingClasses,

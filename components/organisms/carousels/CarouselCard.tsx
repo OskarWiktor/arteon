@@ -49,6 +49,7 @@ export default function CarouselCard(props: CarouselCardProps) {
         <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
           <InlineLink
             href={href}
+            aria-label={`${buttonLabel}: ${title}`}
             className="inline-flex rounded-lg transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
           >
             <span>{buttonLabel}</span>
@@ -82,6 +83,7 @@ export default function CarouselCard(props: CarouselCardProps) {
         <div className='flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium'>
           <InlineLink
             href={href}
+            aria-label={`Przeczytaj artykuł: ${article.title}`}
             className="inline-flex rounded-lg transition before:absolute before:inset-0 before:rounded-lg before:content-['']"
           >
             Przeczytaj artykuł
