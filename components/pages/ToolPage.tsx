@@ -34,7 +34,7 @@ import SectionTimeline from '../organisms/sections/SectionTimeline';
 import RelatedConverters from '../organisms/tools/RelatedConverters';
 import RelatedUnitConverters from '../organisms/tools/RelatedUnitConverters';
 
-const AD_SECTION_INTERVAL = 3;
+const AD_SECTION_INTERVAL = 2;
 const AD_SKIP_AFTER = new Set(['faq', 'toolsCarousel']);
 
 const DESKTOP_ONLY_TOOLS = new Set([
@@ -318,12 +318,12 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
         ) : (
           (tool ?? <DynamicToolRenderer toolKey={data.toolKey} />)
         )}
-        {/* <div className='hidden lg:block mt-42'>
+        <div className='mt-12 hidden lg:block'>
           <AdSense variant='tool-banner' locale={data.locale} />
         </div>
-        <div className='mt-24 block lg:hidden'>
+        <div className='mt-12 block lg:hidden'>
           <AdSense variant='responsive' locale={data.locale} />
-        </div> */}
+        </div>
         <div className='mx-auto w-full max-w-355 px-[3%]'>
           {(() => {
             const adPositions = new Set<number>();
