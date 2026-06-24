@@ -13,6 +13,7 @@ import type { UniversalFormat } from '@/lib/tools/formats';
 import { convertText } from '@/lib/tools/text/convert';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import type { TextFormatConverterProps } from '@/types/tools/text-format-converter';
+import { copyTextToClipboard } from '@/utils/clipboard';
 
 const LABEL_TO_FORMAT: Record<string, UniversalFormat> = {
   CSV: 'csv',
@@ -89,20 +90,9 @@ export default function TextFormatConverter({
 
   const handleCopy = async () => {
     if (!output) return;
-    try {
-      await navigator.clipboard.writeText(output);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      const textarea = document.createElement('textarea');
-      textarea.value = output;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textarea);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
+    await copyTextToClipboard(output);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   const handleDownload = () => {

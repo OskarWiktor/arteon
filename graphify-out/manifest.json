@@ -1,0 +1,2852 @@
+{
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\edukacja\\[category]\\[slug]\\loading.tsx": {
+    "mtime": 1779568815.5807028,
+    "ast_hash": "45dcc0b750eab03f4ab8e966d8a51641",
+    "semantic_hash": "45dcc0b750eab03f4ab8e966d8a51641"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\edukacja\\[category]\\[slug]\\page.tsx": {
+    "mtime": 1781685123.5614822,
+    "ast_hash": "4a6741fe13514a15c1818e1e4daf1350",
+    "semantic_hash": "4a6741fe13514a15c1818e1e4daf1350"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\edukacja\\[category]\\loading.tsx": {
+    "mtime": 1778399754.251994,
+    "ast_hash": "a8532e998d042a3adee4dfbd19cc63e2",
+    "semantic_hash": "a8532e998d042a3adee4dfbd19cc63e2"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\edukacja\\[category]\\page.tsx": {
+    "mtime": 1780775000.3505342,
+    "ast_hash": "0b5c4f59466d76236a9d22af6fe58e4a",
+    "semantic_hash": "0b5c4f59466d76236a9d22af6fe58e4a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\edukacja\\loading.tsx": {
+    "mtime": 1778399754.251994,
+    "ast_hash": "a8532e998d042a3adee4dfbd19cc63e2",
+    "semantic_hash": "a8532e998d042a3adee4dfbd19cc63e2"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\edukacja\\page.tsx": {
+    "mtime": 1780775000.3505342,
+    "ast_hash": "87da3f63efa7fc39c3e5f6bf478f3428",
+    "semantic_hash": "87da3f63efa7fc39c3e5f6bf478f3428"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\error.tsx": {
+    "mtime": 1780775000.3543127,
+    "ast_hash": "7bb81cf031a8838721dace8925919757",
+    "semantic_hash": "7bb81cf031a8838721dace8925919757"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\kontakt\\loading.tsx": {
+    "mtime": 1779568815.5827117,
+    "ast_hash": "ef15bb1620649c1a99cbc35780c6f7a6",
+    "semantic_hash": "ef15bb1620649c1a99cbc35780c6f7a6"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\kontakt\\page.tsx": {
+    "mtime": 1780775000.357661,
+    "ast_hash": "bd947021bb7bacc9f417baeb910d59ff",
+    "semantic_hash": "bd947021bb7bacc9f417baeb910d59ff"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\layout.tsx": {
+    "mtime": 1780775000.3605013,
+    "ast_hash": "264402da291d3fe02e6f5d92cceb20d2",
+    "semantic_hash": "264402da291d3fe02e6f5d92cceb20d2"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\loading.tsx": {
+    "mtime": 1779568815.6010041,
+    "ast_hash": "1b6088a257d2627cd25d9b1c937a566a",
+    "semantic_hash": "1b6088a257d2627cd25d9b1c937a566a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\mapa-strony\\SitemapPageClient.tsx": {
+    "mtime": 1780775000.3629692,
+    "ast_hash": "00ff312e64970a4e5eda66dc9af35700",
+    "semantic_hash": "00ff312e64970a4e5eda66dc9af35700"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\mapa-strony\\page.tsx": {
+    "mtime": 1780775000.3649416,
+    "ast_hash": "e7cad326862d5a7be333b2d8af42185b",
+    "semantic_hash": "e7cad326862d5a7be333b2d8af42185b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\narzedzia\\(tools)\\[slug]\\page.tsx": {
+    "mtime": 1780775000.3662026,
+    "ast_hash": "054b173534a492650d0cc73f43e75fa2",
+    "semantic_hash": "054b173534a492650d0cc73f43e75fa2"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\narzedzia\\loading.tsx": {
+    "mtime": 1779823068.3371203,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\narzedzia\\page.tsx": {
+    "mtime": 1780775000.3662026,
+    "ast_hash": "63bf1160bd3562465fe4a5e4626c2c19",
+    "semantic_hash": "63bf1160bd3562465fe4a5e4626c2c19"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\not-found.tsx": {
+    "mtime": 1779980051.760565,
+    "ast_hash": "a815de95c9c1717b8aab31f64b7a70bd",
+    "semantic_hash": "a815de95c9c1717b8aab31f64b7a70bd"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\o-nas\\loading.tsx": {
+    "mtime": 1779568815.4067402,
+    "ast_hash": "c4251cb53fc0ece4ec4d607eb41d6ee8",
+    "semantic_hash": "c4251cb53fc0ece4ec4d607eb41d6ee8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\o-nas\\page.tsx": {
+    "mtime": 1780775000.3726616,
+    "ast_hash": "6ba3845b1541ed9f697b49d8e3b8cae9",
+    "semantic_hash": "6ba3845b1541ed9f697b49d8e3b8cae9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\page.tsx": {
+    "mtime": 1781596331.6781726,
+    "ast_hash": "3671c69317443aa94e45b21fab3b4e47",
+    "semantic_hash": "3671c69317443aa94e45b21fab3b4e47"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\polityka-prywatnosci\\loading.tsx": {
+    "mtime": 1779568815.6010041,
+    "ast_hash": "f5a0b092e472893b1d9075d357656a22",
+    "semantic_hash": "f5a0b092e472893b1d9075d357656a22"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\polityka-prywatnosci\\page.tsx": {
+    "mtime": 1780924878.0314653,
+    "ast_hash": "eaf13db298c3011128d565d489ab1b96",
+    "semantic_hash": "eaf13db298c3011128d565d489ab1b96"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\realizacje\\[slug]\\loading.tsx": {
+    "mtime": 1778399754.3096848,
+    "ast_hash": "b20f0a75dd0bd1f369fa87dfbd427a35",
+    "semantic_hash": "b20f0a75dd0bd1f369fa87dfbd427a35"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\realizacje\\[slug]\\page.tsx": {
+    "mtime": 1781596331.6823983,
+    "ast_hash": "2647352e5165b6ba981dc62433a7d6c9",
+    "semantic_hash": "2647352e5165b6ba981dc62433a7d6c9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\realizacje\\loading.tsx": {
+    "mtime": 1779054167.8728147,
+    "ast_hash": "a64e42e6dfb11ce62605d4ccca82cada",
+    "semantic_hash": "a64e42e6dfb11ce62605d4ccca82cada"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\realizacje\\page.tsx": {
+    "mtime": 1780775000.38158,
+    "ast_hash": "3dd994811aad9a6700549ab5c17ca873",
+    "semantic_hash": "3dd994811aad9a6700549ab5c17ca873"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\regulamin\\loading.tsx": {
+    "mtime": 1779568815.6010041,
+    "ast_hash": "f5a0b092e472893b1d9075d357656a22",
+    "semantic_hash": "f5a0b092e472893b1d9075d357656a22"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\regulamin\\page.tsx": {
+    "mtime": 1780775000.384013,
+    "ast_hash": "8557885287cba6f671fbe0c0dedfc6ea",
+    "semantic_hash": "8557885287cba6f671fbe0c0dedfc6ea"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\blogi-internetowe\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\blogi-internetowe\\page.tsx": {
+    "mtime": 1781596331.6853826,
+    "ast_hash": "1d2daa224da5b89cf3ee31f8a31bef5f",
+    "semantic_hash": "1d2daa224da5b89cf3ee31f8a31bef5f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\loading.tsx": {
+    "mtime": 1779888660.1935465,
+    "ast_hash": "fd81c0a71ed46f3b30e73f1728c2ad77",
+    "semantic_hash": "fd81c0a71ed46f3b30e73f1728c2ad77"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\marketing\\audyt-seo\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\marketing\\audyt-seo\\page.tsx": {
+    "mtime": 1781596331.6853826,
+    "ast_hash": "a8969153e43a53a1ed219a0b4b81cf29",
+    "semantic_hash": "a8969153e43a53a1ed219a0b4b81cf29"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\marketing\\loading.tsx": {
+    "mtime": 1779888660.1935465,
+    "ast_hash": "fd81c0a71ed46f3b30e73f1728c2ad77",
+    "semantic_hash": "fd81c0a71ed46f3b30e73f1728c2ad77"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\marketing\\optymalizacja-seo\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\marketing\\optymalizacja-seo\\page.tsx": {
+    "mtime": 1781596331.6881547,
+    "ast_hash": "59a3f569559541efc7095e188afd4a3d",
+    "semantic_hash": "59a3f569559541efc7095e188afd4a3d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\marketing\\page.tsx": {
+    "mtime": 1781596331.690161,
+    "ast_hash": "8d47c01c3060d87a7d810245ed3a5774",
+    "semantic_hash": "8d47c01c3060d87a7d810245ed3a5774"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\marketing\\pozycjonowanie-stron\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\marketing\\pozycjonowanie-stron\\page.tsx": {
+    "mtime": 1781596331.692129,
+    "ast_hash": "5d3e0240ba703ed94f09055804d65a32",
+    "semantic_hash": "5d3e0240ba703ed94f09055804d65a32"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\page.tsx": {
+    "mtime": 1780775000.4014783,
+    "ast_hash": "a2f38b8f7eff88201cfe3ed75df521da",
+    "semantic_hash": "a2f38b8f7eff88201cfe3ed75df521da"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\loading.tsx": {
+    "mtime": 1779888660.1957946,
+    "ast_hash": "fd81c0a71ed46f3b30e73f1728c2ad77",
+    "semantic_hash": "fd81c0a71ed46f3b30e73f1728c2ad77"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\page.tsx": {
+    "mtime": 1781596331.692129,
+    "ast_hash": "723730edcfb77cdf1bbe79ee3d56af22",
+    "semantic_hash": "723730edcfb77cdf1bbe79ee3d56af22"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-cennika\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-cennika\\page.tsx": {
+    "mtime": 1781596331.692129,
+    "ast_hash": "d120ec0a46dd2c9a8b5bdb33a49fb4ac",
+    "semantic_hash": "d120ec0a46dd2c9a8b5bdb33a49fb4ac"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-graficzny-strony\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-graficzny-strony\\page.tsx": {
+    "mtime": 1781596331.6985998,
+    "ast_hash": "5c11b126fd8f6dd1b9e5e88b3dbb8d39",
+    "semantic_hash": "5c11b126fd8f6dd1b9e5e88b3dbb8d39"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-identyfikacji-wizualnej\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-identyfikacji-wizualnej\\page.tsx": {
+    "mtime": 1781596331.6992838,
+    "ast_hash": "ba593d0a41a85e3527af64abd4432a8f",
+    "semantic_hash": "ba593d0a41a85e3527af64abd4432a8f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-karty-lojalnosciowej\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-karty-lojalnosciowej\\page.tsx": {
+    "mtime": 1781596331.7015433,
+    "ast_hash": "d928aaca9e9c4b40a1bef6b65da25bbf",
+    "semantic_hash": "d928aaca9e9c4b40a1bef6b65da25bbf"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-katalogu\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-katalogu\\page.tsx": {
+    "mtime": 1781596331.7035508,
+    "ast_hash": "6a29228c41d3649641ddf09bc1acf012",
+    "semantic_hash": "6a29228c41d3649641ddf09bc1acf012"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-kuponu-rabatowego-i-vouchera\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-kuponu-rabatowego-i-vouchera\\page.tsx": {
+    "mtime": 1781596331.70608,
+    "ast_hash": "a919455dc374d4ef13702625d56b5cca",
+    "semantic_hash": "a919455dc374d4ef13702625d56b5cca"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-logo\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-logo\\page.tsx": {
+    "mtime": 1781596331.70608,
+    "ast_hash": "612d70f0754d379a1ed9eb800704277b",
+    "semantic_hash": "612d70f0754d379a1ed9eb800704277b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-menu-restauracji\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-menu-restauracji\\page.tsx": {
+    "mtime": 1781596331.7084236,
+    "ast_hash": "13fa73372fde6efd646abc1811dee6ab",
+    "semantic_hash": "13fa73372fde6efd646abc1811dee6ab"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-odziezy-firmowej\\loading.tsx": {
+    "mtime": 1779568816.2238858,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-odziezy-firmowej\\page.tsx": {
+    "mtime": 1781596331.711003,
+    "ast_hash": "9f6c82691dc5ccd9e8f3b917aa88fb44",
+    "semantic_hash": "9f6c82691dc5ccd9e8f3b917aa88fb44"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-papieru-firmowego\\loading.tsx": {
+    "mtime": 1779568816.2238858,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-papieru-firmowego\\page.tsx": {
+    "mtime": 1781596331.7136023,
+    "ast_hash": "e370fe3a68d9ee0486fc8adefeb056ce",
+    "semantic_hash": "e370fe3a68d9ee0486fc8adefeb056ce"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-teczki-ofertowej\\loading.tsx": {
+    "mtime": 1779568816.2238858,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-teczki-ofertowej\\page.tsx": {
+    "mtime": 1781596331.7136023,
+    "ast_hash": "8dd599d44770dc06b8274d3993b295a6",
+    "semantic_hash": "8dd599d44770dc06b8274d3993b295a6"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-ulotki\\loading.tsx": {
+    "mtime": 1779568816.2238858,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-ulotki\\page.tsx": {
+    "mtime": 1781596331.716113,
+    "ast_hash": "56f520eadabbaeee7828525af2138058",
+    "semantic_hash": "56f520eadabbaeee7828525af2138058"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-wizytowki\\loading.tsx": {
+    "mtime": 1779568816.2238858,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\projekt-wizytowki\\page.tsx": {
+    "mtime": 1781596331.719401,
+    "ast_hash": "7763952faf2a6d2288cff3ec33df8436",
+    "semantic_hash": "7763952faf2a6d2288cff3ec33df8436"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\szablony-postow-media-spolecznosciowe\\loading.tsx": {
+    "mtime": 1779568816.2238858,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\projekty-graficzne\\szablony-postow-media-spolecznosciowe\\page.tsx": {
+    "mtime": 1781596331.720069,
+    "ast_hash": "4f2e20e7e3a2326419d4ffb3a8a51521",
+    "semantic_hash": "4f2e20e7e3a2326419d4ffb3a8a51521"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\sklepy-internetowe\\loading.tsx": {
+    "mtime": 1779568816.2238858,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\sklepy-internetowe\\page.tsx": {
+    "mtime": 1781596331.720069,
+    "ast_hash": "cce98ef1b8040053fbf87e5775d4e8a7",
+    "semantic_hash": "cce98ef1b8040053fbf87e5775d4e8a7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\tworzenie-stron-wordpress\\loading.tsx": {
+    "mtime": 1779568816.2238858,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\tworzenie-stron-wordpress\\optymalizacja-strony-wordpress\\loading.tsx": {
+    "mtime": 1779568816.2238858,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\tworzenie-stron-wordpress\\optymalizacja-strony-wordpress\\page.tsx": {
+    "mtime": 1781596331.720069,
+    "ast_hash": "9401e8954ad6dc6ed6d76d62efe3d01a",
+    "semantic_hash": "9401e8954ad6dc6ed6d76d62efe3d01a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\tworzenie-stron-wordpress\\page.tsx": {
+    "mtime": 1781596331.726473,
+    "ast_hash": "5dce46946a833622e025732c61665f04",
+    "semantic_hash": "5dce46946a833622e025732c61665f04"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\tworzenie-tresci\\loading.tsx": {
+    "mtime": 1779568816.2238858,
+    "ast_hash": "814fdd34ec529c35fe68b087b2b39fe7",
+    "semantic_hash": "814fdd34ec529c35fe68b087b2b39fe7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\(pl)\\uslugi\\tworzenie-tresci\\page.tsx": {
+    "mtime": 1781596331.7274582,
+    "ast_hash": "9e89d10fbac2704275288d51b99e630b",
+    "semantic_hash": "9e89d10fbac2704275288d51b99e630b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\cs\\error.tsx": {
+    "mtime": 1780775000.459663,
+    "ast_hash": "091ac4753c6a0f8258633baaec76f0d2",
+    "semantic_hash": "091ac4753c6a0f8258633baaec76f0d2"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\cs\\kontakt\\page.tsx": {
+    "mtime": 1780775000.4606743,
+    "ast_hash": "31f0ec95071e12c0d7dd40628576f31a",
+    "semantic_hash": "31f0ec95071e12c0d7dd40628576f31a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\cs\\layout.tsx": {
+    "mtime": 1780775000.4631739,
+    "ast_hash": "0c4fd567c33a6fa1ee28c3f066c291b3",
+    "semantic_hash": "0c4fd567c33a6fa1ee28c3f066c291b3"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\cs\\nastroje\\[slug]\\page.tsx": {
+    "mtime": 1780775000.4672976,
+    "ast_hash": "a5810483a5d3b5aab3104ad8b4a626f6",
+    "semantic_hash": "a5810483a5d3b5aab3104ad8b4a626f6"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\cs\\nastroje\\loading.tsx": {
+    "mtime": 1779823068.3453789,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\cs\\nastroje\\page.tsx": {
+    "mtime": 1780775000.4672976,
+    "ast_hash": "a671c543eff9e39f68858b5ae29589d9",
+    "semantic_hash": "a671c543eff9e39f68858b5ae29589d9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\cs\\not-found.tsx": {
+    "mtime": 1779980688.1741986,
+    "ast_hash": "786ffffea82f583d2b4f5afd4c6f012d",
+    "semantic_hash": "786ffffea82f583d2b4f5afd4c6f012d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\cs\\o-nas\\page.tsx": {
+    "mtime": 1780775000.4724393,
+    "ast_hash": "c8cc6e3bc61f1d06f5765c7ba8db4edb",
+    "semantic_hash": "c8cc6e3bc61f1d06f5765c7ba8db4edb"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\cs\\podminky-pouzivani\\page.tsx": {
+    "mtime": 1780775000.4724393,
+    "ast_hash": "e217678a3fc3be195fb912c06ca49364",
+    "semantic_hash": "e217678a3fc3be195fb912c06ca49364"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\cs\\zasady-ochrany-soukromi\\page.tsx": {
+    "mtime": 1780924878.0725248,
+    "ast_hash": "678fb04a8f48697efbe54716981d2079",
+    "semantic_hash": "678fb04a8f48697efbe54716981d2079"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\da\\brugsvilkar\\page.tsx": {
+    "mtime": 1780775000.4761076,
+    "ast_hash": "77cd723d043695fc71c6951eae31b452",
+    "semantic_hash": "77cd723d043695fc71c6951eae31b452"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\da\\error.tsx": {
+    "mtime": 1780775000.4822767,
+    "ast_hash": "5927be7f49a8c90e8d9830558fc5de9a",
+    "semantic_hash": "5927be7f49a8c90e8d9830558fc5de9a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\da\\kontakt\\page.tsx": {
+    "mtime": 1780775000.4844623,
+    "ast_hash": "5d00f765b301fa1e1afb7d7414d034b8",
+    "semantic_hash": "5d00f765b301fa1e1afb7d7414d034b8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\da\\layout.tsx": {
+    "mtime": 1780775000.4844623,
+    "ast_hash": "5305ffa5478a5108602de3f0609269e3",
+    "semantic_hash": "5305ffa5478a5108602de3f0609269e3"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\da\\not-found.tsx": {
+    "mtime": 1779980688.1754827,
+    "ast_hash": "42cfebe959d30aaf2c8e32c51615f93e",
+    "semantic_hash": "42cfebe959d30aaf2c8e32c51615f93e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\da\\om-os\\page.tsx": {
+    "mtime": 1780775000.4888368,
+    "ast_hash": "cb0d668b8549035576410fe0764d289c",
+    "semantic_hash": "cb0d668b8549035576410fe0764d289c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\da\\privatlivspolitik\\page.tsx": {
+    "mtime": 1780924878.0725248,
+    "ast_hash": "2e4c2490aca7834296fe8d5348d1dfca",
+    "semantic_hash": "2e4c2490aca7834296fe8d5348d1dfca"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\da\\vaerktojer\\[slug]\\page.tsx": {
+    "mtime": 1780775000.4926112,
+    "ast_hash": "33ef97b920f4f5830278251b20eab7af",
+    "semantic_hash": "33ef97b920f4f5830278251b20eab7af"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\da\\vaerktojer\\loading.tsx": {
+    "mtime": 1779823068.3473897,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\da\\vaerktojer\\page.tsx": {
+    "mtime": 1780775000.495088,
+    "ast_hash": "301552ad725866da1bfc56d732892d8e",
+    "semantic_hash": "301552ad725866da1bfc56d732892d8e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\datenschutzrichtlinie\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "f5a0b092e472893b1d9075d357656a22",
+    "semantic_hash": "f5a0b092e472893b1d9075d357656a22"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\datenschutzrichtlinie\\page.tsx": {
+    "mtime": 1780924878.0725248,
+    "ast_hash": "ebbb4bd2fb8a228d448a34752c6f959e",
+    "semantic_hash": "ebbb4bd2fb8a228d448a34752c6f959e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\error.tsx": {
+    "mtime": 1780775000.5002418,
+    "ast_hash": "47812cece35c9905830df88a62a868b7",
+    "semantic_hash": "47812cece35c9905830df88a62a868b7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\kontakt\\loading.tsx": {
+    "mtime": 1779568815.6010041,
+    "ast_hash": "ef15bb1620649c1a99cbc35780c6f7a6",
+    "semantic_hash": "ef15bb1620649c1a99cbc35780c6f7a6"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\kontakt\\page.tsx": {
+    "mtime": 1780775000.5038435,
+    "ast_hash": "cc02bac649e37cbc97f6d28661ee3d4f",
+    "semantic_hash": "cc02bac649e37cbc97f6d28661ee3d4f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\layout.tsx": {
+    "mtime": 1780775000.504885,
+    "ast_hash": "de691fae5da867d9fe82952b8f79c8b4",
+    "semantic_hash": "de691fae5da867d9fe82952b8f79c8b4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\not-found.tsx": {
+    "mtime": 1779980051.7295344,
+    "ast_hash": "b5f5c66da0a1ade9f27d0d3b35d81e67",
+    "semantic_hash": "b5f5c66da0a1ade9f27d0d3b35d81e67"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\nutzungsbedingungen\\page.tsx": {
+    "mtime": 1780775000.504885,
+    "ast_hash": "eae37c52e86f00ae9ce0baca370dab01",
+    "semantic_hash": "eae37c52e86f00ae9ce0baca370dab01"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\ueber-uns\\loading.tsx": {
+    "mtime": 1779568815.4067402,
+    "ast_hash": "c4251cb53fc0ece4ec4d607eb41d6ee8",
+    "semantic_hash": "c4251cb53fc0ece4ec4d607eb41d6ee8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\ueber-uns\\page.tsx": {
+    "mtime": 1780775000.504885,
+    "ast_hash": "65ce38543b25b6da476454833343375c",
+    "semantic_hash": "65ce38543b25b6da476454833343375c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\werkzeuge\\[slug]\\page.tsx": {
+    "mtime": 1780775000.5129926,
+    "ast_hash": "d363d93ec38eae4e64feb85abf78a5a7",
+    "semantic_hash": "d363d93ec38eae4e64feb85abf78a5a7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\werkzeuge\\loading.tsx": {
+    "mtime": 1779823068.4062736,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\de\\werkzeuge\\page.tsx": {
+    "mtime": 1780775000.5159278,
+    "ast_hash": "12a3916caa33713b569736225d701d95",
+    "semantic_hash": "12a3916caa33713b569736225d701d95"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\el\\epikoinonia\\page.tsx": {
+    "mtime": 1780775000.5159278,
+    "ast_hash": "0668be44e4682fa3eb24716df3c78c17",
+    "semantic_hash": "0668be44e4682fa3eb24716df3c78c17"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\el\\ergaleia\\[slug]\\page.tsx": {
+    "mtime": 1780775000.5208886,
+    "ast_hash": "188cd340a448e2490948ca4dfd053b77",
+    "semantic_hash": "188cd340a448e2490948ca4dfd053b77"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\el\\ergaleia\\loading.tsx": {
+    "mtime": 1779823068.4062736,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\el\\ergaleia\\page.tsx": {
+    "mtime": 1780775000.522942,
+    "ast_hash": "05fd31cd317359900bf4ba5d742386cd",
+    "semantic_hash": "05fd31cd317359900bf4ba5d742386cd"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\el\\error.tsx": {
+    "mtime": 1780775000.5250742,
+    "ast_hash": "8a25f413ada9c77a2264f17fc16bda37",
+    "semantic_hash": "8a25f413ada9c77a2264f17fc16bda37"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\el\\layout.tsx": {
+    "mtime": 1780775000.52792,
+    "ast_hash": "876d20db0822947605477d8cc62ec4ff",
+    "semantic_hash": "876d20db0822947605477d8cc62ec4ff"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\el\\not-found.tsx": {
+    "mtime": 1779980688.1776886,
+    "ast_hash": "4ddada4c521a67752fe30f7587320ca4",
+    "semantic_hash": "4ddada4c521a67752fe30f7587320ca4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\el\\oroi-chrisis\\page.tsx": {
+    "mtime": 1780775000.5297916,
+    "ast_hash": "2eba20b461b30e8ff9f8e5d0be202a78",
+    "semantic_hash": "2eba20b461b30e8ff9f8e5d0be202a78"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\el\\politiki-aporritou\\page.tsx": {
+    "mtime": 1780924878.0725248,
+    "ast_hash": "f5a254113c644ae48821b158e465044b",
+    "semantic_hash": "f5a254113c644ae48821b158e465044b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\el\\sxetika-me-emas\\page.tsx": {
+    "mtime": 1780775000.5357163,
+    "ast_hash": "278a8e292f443d25959ea0495c6f1585",
+    "semantic_hash": "278a8e292f443d25959ea0495c6f1585"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\about\\loading.tsx": {
+    "mtime": 1779568815.4067402,
+    "ast_hash": "c4251cb53fc0ece4ec4d607eb41d6ee8",
+    "semantic_hash": "c4251cb53fc0ece4ec4d607eb41d6ee8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\about\\page.tsx": {
+    "mtime": 1780775000.5368333,
+    "ast_hash": "c988bc29e37663806782145bf63482a9",
+    "semantic_hash": "c988bc29e37663806782145bf63482a9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\contact\\loading.tsx": {
+    "mtime": 1779568815.6010041,
+    "ast_hash": "ef15bb1620649c1a99cbc35780c6f7a6",
+    "semantic_hash": "ef15bb1620649c1a99cbc35780c6f7a6"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\contact\\page.tsx": {
+    "mtime": 1780775000.5368333,
+    "ast_hash": "f045b5db15acda7de8e2fdddc0168813",
+    "semantic_hash": "f045b5db15acda7de8e2fdddc0168813"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\error.tsx": {
+    "mtime": 1780775000.543053,
+    "ast_hash": "9bb792b379bab208e6a06a218e31e5a4",
+    "semantic_hash": "9bb792b379bab208e6a06a218e31e5a4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\layout.tsx": {
+    "mtime": 1780775000.543053,
+    "ast_hash": "1c6eaf57735219d8f420f4870472be6e",
+    "semantic_hash": "1c6eaf57735219d8f420f4870472be6e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\not-found.tsx": {
+    "mtime": 1779980051.8003688,
+    "ast_hash": "591739473f45ef41265f1dbdae3d2212",
+    "semantic_hash": "591739473f45ef41265f1dbdae3d2212"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\privacy-policy\\loading.tsx": {
+    "mtime": 1779568815.6010041,
+    "ast_hash": "f5a0b092e472893b1d9075d357656a22",
+    "semantic_hash": "f5a0b092e472893b1d9075d357656a22"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\privacy-policy\\page.tsx": {
+    "mtime": 1780924878.0725248,
+    "ast_hash": "bc83f612121d186a4d8cbda5078a9b52",
+    "semantic_hash": "bc83f612121d186a4d8cbda5078a9b52"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\terms-of-service\\page.tsx": {
+    "mtime": 1780775000.54863,
+    "ast_hash": "e99b7a05c0cdbe148509eca65b8b6a73",
+    "semantic_hash": "e99b7a05c0cdbe148509eca65b8b6a73"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\tools\\[slug]\\page.tsx": {
+    "mtime": 1780775000.5508585,
+    "ast_hash": "caa5effc4b14fa6321d900d11e5321ae",
+    "semantic_hash": "caa5effc4b14fa6321d900d11e5321ae"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\tools\\loading.tsx": {
+    "mtime": 1779823068.4082894,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\en\\tools\\page.tsx": {
+    "mtime": 1780775000.5508585,
+    "ast_hash": "40f19e52dbd1e942fe04ab246430b16c",
+    "semantic_hash": "40f19e52dbd1e942fe04ab246430b16c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\contacto\\loading.tsx": {
+    "mtime": 1779568815.6010041,
+    "ast_hash": "ef15bb1620649c1a99cbc35780c6f7a6",
+    "semantic_hash": "ef15bb1620649c1a99cbc35780c6f7a6"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\contacto\\page.tsx": {
+    "mtime": 1780775000.5577087,
+    "ast_hash": "56c10e1537e6ef0543370daa5d101697",
+    "semantic_hash": "56c10e1537e6ef0543370daa5d101697"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\error.tsx": {
+    "mtime": 1780775000.5577087,
+    "ast_hash": "b9cf63fbbbc911e6df6019b29b1d1b85",
+    "semantic_hash": "b9cf63fbbbc911e6df6019b29b1d1b85"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\herramientas\\[slug]\\page.tsx": {
+    "mtime": 1780775000.5634396,
+    "ast_hash": "aabc8b6288f852f5b3fc0b3b08f85b93",
+    "semantic_hash": "aabc8b6288f852f5b3fc0b3b08f85b93"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\herramientas\\loading.tsx": {
+    "mtime": 1779823068.4456513,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\herramientas\\page.tsx": {
+    "mtime": 1780775000.5634396,
+    "ast_hash": "e64c2f0c66df44670586f6c4cb72fa35",
+    "semantic_hash": "e64c2f0c66df44670586f6c4cb72fa35"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\layout.tsx": {
+    "mtime": 1780775000.5674436,
+    "ast_hash": "833e57beec08a28d2bf43c8f9e5beb04",
+    "semantic_hash": "833e57beec08a28d2bf43c8f9e5beb04"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\not-found.tsx": {
+    "mtime": 1779980688.169565,
+    "ast_hash": "7415d80486388d816a4e299491fb2b2b",
+    "semantic_hash": "7415d80486388d816a4e299491fb2b2b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\politica-de-privacidad\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "f5a0b092e472893b1d9075d357656a22",
+    "semantic_hash": "f5a0b092e472893b1d9075d357656a22"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\politica-de-privacidad\\page.tsx": {
+    "mtime": 1780924878.0793078,
+    "ast_hash": "f536acefcf18f5e1437c62b555f47cdd",
+    "semantic_hash": "f536acefcf18f5e1437c62b555f47cdd"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\sobre-nosotros\\loading.tsx": {
+    "mtime": 1779568815.5096557,
+    "ast_hash": "c4251cb53fc0ece4ec4d607eb41d6ee8",
+    "semantic_hash": "c4251cb53fc0ece4ec4d607eb41d6ee8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\sobre-nosotros\\page.tsx": {
+    "mtime": 1780775000.5715694,
+    "ast_hash": "4587c28929de35d21ccdbcd618f04193",
+    "semantic_hash": "4587c28929de35d21ccdbcd618f04193"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\es\\terminos-de-servicio\\page.tsx": {
+    "mtime": 1780775000.575552,
+    "ast_hash": "aa12cc11eb5ea0e818f6d2cd2fd7c79c",
+    "semantic_hash": "aa12cc11eb5ea0e818f6d2cd2fd7c79c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fi\\error.tsx": {
+    "mtime": 1780775000.5798533,
+    "ast_hash": "f9a56c8a6c12b5417b9749d5776a18ab",
+    "semantic_hash": "f9a56c8a6c12b5417b9749d5776a18ab"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fi\\kayttoehdot\\page.tsx": {
+    "mtime": 1780775000.581866,
+    "ast_hash": "6190fa708359d442aafadf55f573f096",
+    "semantic_hash": "6190fa708359d442aafadf55f573f096"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fi\\layout.tsx": {
+    "mtime": 1780775000.581866,
+    "ast_hash": "837d950742616861b20ea10ddecf56a3",
+    "semantic_hash": "837d950742616861b20ea10ddecf56a3"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fi\\not-found.tsx": {
+    "mtime": 1779980688.17654,
+    "ast_hash": "5a45c94616b17ff65aaecf47e2c0e7f4",
+    "semantic_hash": "5a45c94616b17ff65aaecf47e2c0e7f4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fi\\tietoa-meista\\page.tsx": {
+    "mtime": 1780775000.5865617,
+    "ast_hash": "6512df94e38a75a51d401368df31e0ab",
+    "semantic_hash": "6512df94e38a75a51d401368df31e0ab"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fi\\tietosuojakaytanto\\page.tsx": {
+    "mtime": 1780924878.0793078,
+    "ast_hash": "ed432f678ff7ce796139e454cbe0a3fb",
+    "semantic_hash": "ed432f678ff7ce796139e454cbe0a3fb"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fi\\tyokalut\\[slug]\\page.tsx": {
+    "mtime": 1780775000.5924075,
+    "ast_hash": "c8bb65f9990cb5107f3888fb35064bf9",
+    "semantic_hash": "c8bb65f9990cb5107f3888fb35064bf9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fi\\tyokalut\\loading.tsx": {
+    "mtime": 1779823068.4456513,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fi\\tyokalut\\page.tsx": {
+    "mtime": 1780775000.5945652,
+    "ast_hash": "476dd97ff36ea498a9a44aa58d80e419",
+    "semantic_hash": "476dd97ff36ea498a9a44aa58d80e419"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fi\\yhteystiedot\\page.tsx": {
+    "mtime": 1780775000.596583,
+    "ast_hash": "dbe186ebd8458cd0ca6ae550377286e9",
+    "semantic_hash": "dbe186ebd8458cd0ca6ae550377286e9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\a-propos\\loading.tsx": {
+    "mtime": 1779568815.513566,
+    "ast_hash": "c4251cb53fc0ece4ec4d607eb41d6ee8",
+    "semantic_hash": "c4251cb53fc0ece4ec4d607eb41d6ee8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\a-propos\\page.tsx": {
+    "mtime": 1780775000.6000443,
+    "ast_hash": "08ac09e84097a1956dc2d5cb8a1b73f4",
+    "semantic_hash": "08ac09e84097a1956dc2d5cb8a1b73f4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\conditions-utilisation\\page.tsx": {
+    "mtime": 1780775000.600459,
+    "ast_hash": "340006d8522625d93ba60b5b60f93af0",
+    "semantic_hash": "340006d8522625d93ba60b5b60f93af0"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\contact\\loading.tsx": {
+    "mtime": 1779568815.6010041,
+    "ast_hash": "ef15bb1620649c1a99cbc35780c6f7a6",
+    "semantic_hash": "ef15bb1620649c1a99cbc35780c6f7a6"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\contact\\page.tsx": {
+    "mtime": 1780775000.6031804,
+    "ast_hash": "a42976278351913631bbf18de531a99c",
+    "semantic_hash": "a42976278351913631bbf18de531a99c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\error.tsx": {
+    "mtime": 1780775000.606267,
+    "ast_hash": "2b5b125ae673e280ee87a442c1ce0ef9",
+    "semantic_hash": "2b5b125ae673e280ee87a442c1ce0ef9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\layout.tsx": {
+    "mtime": 1780775000.606267,
+    "ast_hash": "97ecff85e3eaa7b4b0c36beb0dce9ee9",
+    "semantic_hash": "97ecff85e3eaa7b4b0c36beb0dce9ee9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\not-found.tsx": {
+    "mtime": 1779980688.169565,
+    "ast_hash": "4da0b84bb6c60c4a43ede79fd962377e",
+    "semantic_hash": "4da0b84bb6c60c4a43ede79fd962377e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\outils\\[slug]\\page.tsx": {
+    "mtime": 1780775000.6102822,
+    "ast_hash": "fc95e4b88f4ba0a4bf92e19fe7050590",
+    "semantic_hash": "fc95e4b88f4ba0a4bf92e19fe7050590"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\outils\\loading.tsx": {
+    "mtime": 1779823068.4456513,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\outils\\page.tsx": {
+    "mtime": 1780775000.614024,
+    "ast_hash": "7b3f5953e187aaf5ad5d5bcf9a1e648e",
+    "semantic_hash": "7b3f5953e187aaf5ad5d5bcf9a1e648e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\politique-de-confidentialite\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "f5a0b092e472893b1d9075d357656a22",
+    "semantic_hash": "f5a0b092e472893b1d9075d357656a22"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\fr\\politique-de-confidentialite\\page.tsx": {
+    "mtime": 1780924878.0793078,
+    "ast_hash": "569ff13099c28dd39b190f09a55516f9",
+    "semantic_hash": "569ff13099c28dd39b190f09a55516f9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\hu\\adatvedelmi-iranyelvek\\page.tsx": {
+    "mtime": 1780924878.0793078,
+    "ast_hash": "f2740afa24c1c278a992b1f898dd6d70",
+    "semantic_hash": "f2740afa24c1c278a992b1f898dd6d70"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\hu\\error.tsx": {
+    "mtime": 1780775000.623399,
+    "ast_hash": "4949b5f51c621a5da2400d49a143e80b",
+    "semantic_hash": "4949b5f51c621a5da2400d49a143e80b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\hu\\eszkozok\\[slug]\\page.tsx": {
+    "mtime": 1780775000.626192,
+    "ast_hash": "cc77cc37328375a99d2b21020ec02f63",
+    "semantic_hash": "cc77cc37328375a99d2b21020ec02f63"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\hu\\eszkozok\\loading.tsx": {
+    "mtime": 1779823068.4456513,
+    "ast_hash": "e13654ee8ae401d02e3b7fa1513d60eb",
+    "semantic_hash": "e13654ee8ae401d02e3b7fa1513d60eb"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\hu\\eszkozok\\page.tsx": {
+    "mtime": 1780775000.6282117,
+    "ast_hash": "19e33e8561734a7eb4e305ed919ce45b",
+    "semantic_hash": "19e33e8561734a7eb4e305ed919ce45b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\hu\\felhasznalasi-feltetelek\\page.tsx": {
+    "mtime": 1780775000.6282117,
+    "ast_hash": "0032ee28a52257bf480a426be99a9956",
+    "semantic_hash": "0032ee28a52257bf480a426be99a9956"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\hu\\kapcsolat\\page.tsx": {
+    "mtime": 1780775000.631672,
+    "ast_hash": "be5c25a0e7f81f39f9b7f28fad793c24",
+    "semantic_hash": "be5c25a0e7f81f39f9b7f28fad793c24"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\hu\\layout.tsx": {
+    "mtime": 1780775000.635359,
+    "ast_hash": "6bda044e018c36a600c4df00e0ed32bf",
+    "semantic_hash": "6bda044e018c36a600c4df00e0ed32bf"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\hu\\not-found.tsx": {
+    "mtime": 1779980688.1732006,
+    "ast_hash": "c1a8c8e6080091ff6bed003a4a81cdf8",
+    "semantic_hash": "c1a8c8e6080091ff6bed003a4a81cdf8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\hu\\rolunk\\page.tsx": {
+    "mtime": 1780775000.635359,
+    "ast_hash": "f31583c5c2296a6db8eb2ead3ec0b501",
+    "semantic_hash": "f31583c5c2296a6db8eb2ead3ec0b501"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\it\\chi-siamo\\page.tsx": {
+    "mtime": 1780775000.64093,
+    "ast_hash": "d92e7eb0c24c62cc1e8c9f7953d24c49",
+    "semantic_hash": "d92e7eb0c24c62cc1e8c9f7953d24c49"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\it\\contatto\\page.tsx": {
+    "mtime": 1780775000.642126,
+    "ast_hash": "d82e8bf4c23c3eca7d94726db68d16d5",
+    "semantic_hash": "d82e8bf4c23c3eca7d94726db68d16d5"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\it\\error.tsx": {
+    "mtime": 1780775000.644234,
+    "ast_hash": "8837680363bb26ca58933241e0f1c602",
+    "semantic_hash": "8837680363bb26ca58933241e0f1c602"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\it\\informativa-sulla-privacy\\page.tsx": {
+    "mtime": 1780924878.0845888,
+    "ast_hash": "04960b385ce8e10aeb67ed417c00745c",
+    "semantic_hash": "04960b385ce8e10aeb67ed417c00745c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\it\\layout.tsx": {
+    "mtime": 1780775000.6500945,
+    "ast_hash": "a6c0a325b194ef3bfe4375cc09e5913e",
+    "semantic_hash": "a6c0a325b194ef3bfe4375cc09e5913e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\it\\not-found.tsx": {
+    "mtime": 1779980688.1706862,
+    "ast_hash": "223fe9a2383e481aec2fa5744c6850b9",
+    "semantic_hash": "223fe9a2383e481aec2fa5744c6850b9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\it\\strumenti\\[slug]\\page.tsx": {
+    "mtime": 1780775000.6526196,
+    "ast_hash": "8252f8ce9d58c85bf8da8b9d537450f1",
+    "semantic_hash": "8252f8ce9d58c85bf8da8b9d537450f1"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\it\\strumenti\\loading.tsx": {
+    "mtime": 1779823068.569518,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\it\\strumenti\\page.tsx": {
+    "mtime": 1780775000.6536644,
+    "ast_hash": "96209c3418cb1cb5b5d39c2fb6617f78",
+    "semantic_hash": "96209c3418cb1cb5b5d39c2fb6617f78"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\it\\termini-di-servizio\\page.tsx": {
+    "mtime": 1780775000.6566305,
+    "ast_hash": "481ae31da39857ad8f2fc102caf1fa6f",
+    "semantic_hash": "481ae31da39857ad8f2fc102caf1fa6f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\nl\\contact\\page.tsx": {
+    "mtime": 1780775000.6566305,
+    "ast_hash": "569d6bee9d6ed3d997241a91877db37c",
+    "semantic_hash": "569d6bee9d6ed3d997241a91877db37c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\nl\\error.tsx": {
+    "mtime": 1780775000.661811,
+    "ast_hash": "64c40caf74da073226a35d328112db5d",
+    "semantic_hash": "64c40caf74da073226a35d328112db5d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\nl\\gebruiksvoorwaarden\\page.tsx": {
+    "mtime": 1780775000.6636033,
+    "ast_hash": "c837d3e614840bdc31942303cf5186ae",
+    "semantic_hash": "c837d3e614840bdc31942303cf5186ae"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\nl\\layout.tsx": {
+    "mtime": 1780775000.6636033,
+    "ast_hash": "5c7b5ae223cd064e3558371d138e6efb",
+    "semantic_hash": "5c7b5ae223cd064e3558371d138e6efb"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\nl\\not-found.tsx": {
+    "mtime": 1779980688.1732006,
+    "ast_hash": "af1775bdb389593917a70c2a19a54a49",
+    "semantic_hash": "af1775bdb389593917a70c2a19a54a49"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\nl\\over-ons\\page.tsx": {
+    "mtime": 1780775000.6671298,
+    "ast_hash": "503133c22011c0ca0cbab1447f1e1afc",
+    "semantic_hash": "503133c22011c0ca0cbab1447f1e1afc"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\nl\\privacybeleid\\page.tsx": {
+    "mtime": 1780924878.0845888,
+    "ast_hash": "17cd9d91d342e86f19e6235d56cb6244",
+    "semantic_hash": "17cd9d91d342e86f19e6235d56cb6244"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\nl\\tools\\[slug]\\page.tsx": {
+    "mtime": 1780775000.6729648,
+    "ast_hash": "16e5e9a0f35a154acd1b6fb2301766b1",
+    "semantic_hash": "16e5e9a0f35a154acd1b6fb2301766b1"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\nl\\tools\\loading.tsx": {
+    "mtime": 1779823068.569518,
+    "ast_hash": "e13654ee8ae401d02e3b7fa1513d60eb",
+    "semantic_hash": "e13654ee8ae401d02e3b7fa1513d60eb"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\nl\\tools\\page.tsx": {
+    "mtime": 1780775000.6739757,
+    "ast_hash": "61c97e81e6733ffccf89f7d5b0db5fea",
+    "semantic_hash": "61c97e81e6733ffccf89f7d5b0db5fea"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\no\\bruksvilkar\\page.tsx": {
+    "mtime": 1780775000.6739757,
+    "ast_hash": "7a2afda2e463c74fb68c134cd4de069f",
+    "semantic_hash": "7a2afda2e463c74fb68c134cd4de069f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\no\\error.tsx": {
+    "mtime": 1780775000.6806808,
+    "ast_hash": "b243f1987a0bbcc9d3f817f513adf194",
+    "semantic_hash": "b243f1987a0bbcc9d3f817f513adf194"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\no\\kontakt\\page.tsx": {
+    "mtime": 1780775000.6826253,
+    "ast_hash": "57306d247dff43dbd93de4fb57c3b9f0",
+    "semantic_hash": "57306d247dff43dbd93de4fb57c3b9f0"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\no\\layout.tsx": {
+    "mtime": 1780775000.6846387,
+    "ast_hash": "f2c5a8b3bbd6e509ac16e1b1c0eb392a",
+    "semantic_hash": "f2c5a8b3bbd6e509ac16e1b1c0eb392a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\no\\not-found.tsx": {
+    "mtime": 1779980688.176237,
+    "ast_hash": "a7cd550cf17a546b83787394565e229a",
+    "semantic_hash": "a7cd550cf17a546b83787394565e229a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\no\\om-oss\\page.tsx": {
+    "mtime": 1780775000.6846387,
+    "ast_hash": "3fa692fe4338fc4e980c333f27ab2207",
+    "semantic_hash": "3fa692fe4338fc4e980c333f27ab2207"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\no\\personvernpolicy\\page.tsx": {
+    "mtime": 1780924878.087115,
+    "ast_hash": "c3d349cab1c1b382dec3c4bf21e3ed2f",
+    "semantic_hash": "c3d349cab1c1b382dec3c4bf21e3ed2f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\no\\verktoy\\[slug]\\page.tsx": {
+    "mtime": 1780775000.689555,
+    "ast_hash": "a395bed5fa6ca39bea912e795f0055c4",
+    "semantic_hash": "a395bed5fa6ca39bea912e795f0055c4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\no\\verktoy\\loading.tsx": {
+    "mtime": 1779823068.569518,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\no\\verktoy\\page.tsx": {
+    "mtime": 1780775000.693444,
+    "ast_hash": "6d2ae04e7b57d28e0af7603a53fa4d7c",
+    "semantic_hash": "6d2ae04e7b57d28e0af7603a53fa4d7c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\contacto\\loading.tsx": {
+    "mtime": 1779568815.6010041,
+    "ast_hash": "ef15bb1620649c1a99cbc35780c6f7a6",
+    "semantic_hash": "ef15bb1620649c1a99cbc35780c6f7a6"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\contacto\\page.tsx": {
+    "mtime": 1780775000.697018,
+    "ast_hash": "023d5efaf9b4d7775a451cd79cfac74c",
+    "semantic_hash": "023d5efaf9b4d7775a451cd79cfac74c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\error.tsx": {
+    "mtime": 1780775000.700197,
+    "ast_hash": "7bc438a28591da879dee7e3dd9070470",
+    "semantic_hash": "7bc438a28591da879dee7e3dd9070470"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\ferramentas\\[slug]\\page.tsx": {
+    "mtime": 1780775000.700197,
+    "ast_hash": "d7600a2eb42b45a76294c23c86008577",
+    "semantic_hash": "d7600a2eb42b45a76294c23c86008577"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\ferramentas\\loading.tsx": {
+    "mtime": 1779823068.569518,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\ferramentas\\page.tsx": {
+    "mtime": 1780775000.700197,
+    "ast_hash": "957639325694b78dbb16f714d818a9e8",
+    "semantic_hash": "957639325694b78dbb16f714d818a9e8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\layout.tsx": {
+    "mtime": 1780775000.7061665,
+    "ast_hash": "868499868ac424e5f145f5f2621dfa77",
+    "semantic_hash": "868499868ac424e5f145f5f2621dfa77"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\not-found.tsx": {
+    "mtime": 1779980688.1706862,
+    "ast_hash": "38329bcb0572836f98a5e0e4b559bd67",
+    "semantic_hash": "38329bcb0572836f98a5e0e4b559bd67"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\politica-de-privacidade\\loading.tsx": {
+    "mtime": 1779568815.6018767,
+    "ast_hash": "f5a0b092e472893b1d9075d357656a22",
+    "semantic_hash": "f5a0b092e472893b1d9075d357656a22"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\politica-de-privacidade\\page.tsx": {
+    "mtime": 1780924878.087115,
+    "ast_hash": "6c26a68a5d1a550b417a05f2ff384e8e",
+    "semantic_hash": "6c26a68a5d1a550b417a05f2ff384e8e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\sobre-nos\\loading.tsx": {
+    "mtime": 1779568815.513566,
+    "ast_hash": "c4251cb53fc0ece4ec4d607eb41d6ee8",
+    "semantic_hash": "c4251cb53fc0ece4ec4d607eb41d6ee8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\sobre-nos\\page.tsx": {
+    "mtime": 1780775000.712284,
+    "ast_hash": "d532d1e71158f5821dd04629faa08fe1",
+    "semantic_hash": "d532d1e71158f5821dd04629faa08fe1"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\pt\\termos-de-servico\\page.tsx": {
+    "mtime": 1780775000.714298,
+    "ast_hash": "ffbc4315c2c0d696605387154050a7f4",
+    "semantic_hash": "ffbc4315c2c0d696605387154050a7f4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\ro\\contact\\page.tsx": {
+    "mtime": 1780775000.718165,
+    "ast_hash": "3b6789957b7115520253095607efed40",
+    "semantic_hash": "3b6789957b7115520253095607efed40"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\ro\\despre-noi\\page.tsx": {
+    "mtime": 1780775000.7187936,
+    "ast_hash": "1ad8302a8f7b1c15636f74dad7ac760e",
+    "semantic_hash": "1ad8302a8f7b1c15636f74dad7ac760e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\ro\\error.tsx": {
+    "mtime": 1780775000.7187936,
+    "ast_hash": "68c046f6f81db3a17dbea945d1c15811",
+    "semantic_hash": "68c046f6f81db3a17dbea945d1c15811"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\ro\\instrumente\\[slug]\\page.tsx": {
+    "mtime": 1780775000.724291,
+    "ast_hash": "768eef685b9e27ece3dbed3b2ccbe5c9",
+    "semantic_hash": "768eef685b9e27ece3dbed3b2ccbe5c9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\ro\\instrumente\\loading.tsx": {
+    "mtime": 1779823068.569518,
+    "ast_hash": "e13654ee8ae401d02e3b7fa1513d60eb",
+    "semantic_hash": "e13654ee8ae401d02e3b7fa1513d60eb"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\ro\\instrumente\\page.tsx": {
+    "mtime": 1780775000.727382,
+    "ast_hash": "a19ed8d0052b8341da4572727bd163e1",
+    "semantic_hash": "a19ed8d0052b8341da4572727bd163e1"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\ro\\layout.tsx": {
+    "mtime": 1780775000.727382,
+    "ast_hash": "e0a0a2bd63528cff0dd9f5e7ea11aa6c",
+    "semantic_hash": "e0a0a2bd63528cff0dd9f5e7ea11aa6c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\ro\\not-found.tsx": {
+    "mtime": 1779980688.1721878,
+    "ast_hash": "d8035e233433e26db46fbf5eb895e793",
+    "semantic_hash": "d8035e233433e26db46fbf5eb895e793"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\ro\\politica-de-confidentialitate\\page.tsx": {
+    "mtime": 1780924878.0889845,
+    "ast_hash": "4ffba3f5824aa9576845cde57b41fdd7",
+    "semantic_hash": "4ffba3f5824aa9576845cde57b41fdd7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\ro\\termeni-si-conditii\\page.tsx": {
+    "mtime": 1780775000.7312593,
+    "ast_hash": "013f4f6e2292d1d330efdc325bc66fbc",
+    "semantic_hash": "013f4f6e2292d1d330efdc325bc66fbc"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\sv\\anvandarvillkor\\page.tsx": {
+    "mtime": 1780775000.7354496,
+    "ast_hash": "0c3b524e5ffd211647c89e4a82b6afde",
+    "semantic_hash": "0c3b524e5ffd211647c89e4a82b6afde"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\sv\\error.tsx": {
+    "mtime": 1780775000.738395,
+    "ast_hash": "65058b66242f51e187d166dbd4bb2fc1",
+    "semantic_hash": "65058b66242f51e187d166dbd4bb2fc1"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\sv\\integritetspolicy\\page.tsx": {
+    "mtime": 1780924878.0889845,
+    "ast_hash": "3f898c6b2f6252632e4237eceb3106ce",
+    "semantic_hash": "3f898c6b2f6252632e4237eceb3106ce"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\sv\\kontakt\\page.tsx": {
+    "mtime": 1780775000.74015,
+    "ast_hash": "a4a87e8c6d9563e1d14d64a70d9250f6",
+    "semantic_hash": "a4a87e8c6d9563e1d14d64a70d9250f6"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\sv\\layout.tsx": {
+    "mtime": 1780775000.7466307,
+    "ast_hash": "13af9bb9c9261c5bd99ec60bca0b8d88",
+    "semantic_hash": "13af9bb9c9261c5bd99ec60bca0b8d88"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\sv\\not-found.tsx": {
+    "mtime": 1779980688.1741986,
+    "ast_hash": "5521b16d934cab5e8a5efcdd1fd81665",
+    "semantic_hash": "5521b16d934cab5e8a5efcdd1fd81665"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\sv\\om-oss\\page.tsx": {
+    "mtime": 1780775000.748753,
+    "ast_hash": "f47159ad4db52919b437ecd90db6ef72",
+    "semantic_hash": "f47159ad4db52919b437ecd90db6ef72"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\sv\\verktyg\\[slug]\\page.tsx": {
+    "mtime": 1780775000.7518446,
+    "ast_hash": "169d5c3b1137c66f58733072df9ba0b8",
+    "semantic_hash": "169d5c3b1137c66f58733072df9ba0b8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\sv\\verktyg\\loading.tsx": {
+    "mtime": 1779823068.569518,
+    "ast_hash": "bb95c6dab8db82bc0fa8b95892b0e23e",
+    "semantic_hash": "bb95c6dab8db82bc0fa8b95892b0e23e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\sv\\verktyg\\page.tsx": {
+    "mtime": 1780775000.7543032,
+    "ast_hash": "4fe5bcf3e87241358622ea87be52cb4d",
+    "semantic_hash": "4fe5bcf3e87241358622ea87be52cb4d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\ArrowIcon.tsx": {
+    "mtime": 1781596331.7295055,
+    "ast_hash": "dfff7136f7a6e867d4c589273453c924",
+    "semantic_hash": "dfff7136f7a6e867d4c589273453c924"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\Backdrop.tsx": {
+    "mtime": 1781687166.8388786,
+    "ast_hash": "a97b93245bf69d601bb9412f16c4c061",
+    "semantic_hash": "a97b93245bf69d601bb9412f16c4c061"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\Badge.tsx": {
+    "mtime": 1782241053.572186,
+    "ast_hash": "9f16e9bdb64df71495db8f03b4d0d3dc",
+    "semantic_hash": "9f16e9bdb64df71495db8f03b4d0d3dc"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\ColorPalette.tsx": {
+    "mtime": 1781778331.4104626,
+    "ast_hash": "9f65c3b0c3ef3da46b38ff85741a444d",
+    "semantic_hash": "9f65c3b0c3ef3da46b38ff85741a444d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\Divider.tsx": {
+    "mtime": 1781594472.4353218,
+    "ast_hash": "d363e4253263a1138c009101e9575610",
+    "semantic_hash": "d363e4253263a1138c009101e9575610"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\FocusManager.tsx": {
+    "mtime": 1778403504.5035048,
+    "ast_hash": "dfff60a46e4e519eda3d839327df18f5",
+    "semantic_hash": "dfff60a46e4e519eda3d839327df18f5"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\IconText.tsx": {
+    "mtime": 1780924878.0889845,
+    "ast_hash": "db79ee970f597fc3fe7c1658e7f5a387",
+    "semantic_hash": "db79ee970f597fc3fe7c1658e7f5a387"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\InlineLink.tsx": {
+    "mtime": 1781596331.7295055,
+    "ast_hash": "cac0c35bebdb55a9ffa36b2463179159",
+    "semantic_hash": "cac0c35bebdb55a9ffa36b2463179159"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\JsonLd.tsx": {
+    "mtime": 1780775000.7699292,
+    "ast_hash": "50c8fafc7ea387dfefb3802ae777d6f4",
+    "semantic_hash": "50c8fafc7ea387dfefb3802ae777d6f4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\RouteAnnouncer.tsx": {
+    "mtime": 1780775000.7764235,
+    "ast_hash": "aeae3f6e9fa51e36cd029ea78c59fe90",
+    "semantic_hash": "aeae3f6e9fa51e36cd029ea78c59fe90"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\SkipToContent.tsx": {
+    "mtime": 1781596331.733305,
+    "ast_hash": "88df234706ba9b6fff171d96590ea16e",
+    "semantic_hash": "88df234706ba9b6fff171d96590ea16e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\StarRating.tsx": {
+    "mtime": 1781778349.738728,
+    "ast_hash": "643d0c5383fd3a310a451acd901acddc",
+    "semantic_hash": "643d0c5383fd3a310a451acd901acddc"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\TableBlock.tsx": {
+    "mtime": 1781685196.9635956,
+    "ast_hash": "0ec1201331577ea5856801362a1294bb",
+    "semantic_hash": "0ec1201331577ea5856801362a1294bb"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\ThemeToggle.tsx": {
+    "mtime": 1781685089.1988323,
+    "ast_hash": "7ba84b257250d694f7e88a0f304b298a",
+    "semantic_hash": "7ba84b257250d694f7e88a0f304b298a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\ToolAlert.tsx": {
+    "mtime": 1781724908.7622452,
+    "ast_hash": "0dd509fb7f601bc2d796d24de442cb8f",
+    "semantic_hash": "0dd509fb7f601bc2d796d24de442cb8f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\ToolInfo.tsx": {
+    "mtime": 1780924878.095261,
+    "ast_hash": "0b86f5205e4c860fe88ce63a62146fd2",
+    "semantic_hash": "0b86f5205e4c860fe88ce63a62146fd2"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\Wrapper.tsx": {
+    "mtime": 1780924878.1004212,
+    "ast_hash": "da949a604dc8b50e7cbabda00015f1b3",
+    "semantic_hash": "da949a604dc8b50e7cbabda00015f1b3"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\buttons\\Button.tsx": {
+    "mtime": 1781596331.7339604,
+    "ast_hash": "eb901bf0753e898a00a08565b5c044ae",
+    "semantic_hash": "eb901bf0753e898a00a08565b5c044ae"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\buttons\\ButtonCircle.tsx": {
+    "mtime": 1781596331.7339604,
+    "ast_hash": "ed3c944c0e60e1e93fb15401cf075fb9",
+    "semantic_hash": "ed3c944c0e60e1e93fb15401cf075fb9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\buttons\\ButtonCookieSettings.tsx": {
+    "mtime": 1780775000.7947092,
+    "ast_hash": "3aeb5b607d5aa0e79d0cc2db5d931a37",
+    "semantic_hash": "3aeb5b607d5aa0e79d0cc2db5d931a37"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\buttons\\ButtonCopy.tsx": {
+    "mtime": 1781688558.6559875,
+    "ast_hash": "47e67ed972c210211ac5a704d20e6f90",
+    "semantic_hash": "47e67ed972c210211ac5a704d20e6f90"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\buttons\\ButtonIcon.tsx": {
+    "mtime": 1781596331.7407713,
+    "ast_hash": "908258d845a9834cf97e0684d931ab6b",
+    "semantic_hash": "908258d845a9834cf97e0684d931ab6b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\buttons\\ButtonLink.tsx": {
+    "mtime": 1781596331.7407713,
+    "ast_hash": "71e166b6a6007378e2d9b290f832afe3",
+    "semantic_hash": "71e166b6a6007378e2d9b290f832afe3"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\buttons\\ButtonPill.tsx": {
+    "mtime": 1781596331.7407713,
+    "ast_hash": "7da1aa6ea70299fd4fe64d174b0a0b1f",
+    "semantic_hash": "7da1aa6ea70299fd4fe64d174b0a0b1f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\buttons\\ButtonToTop.tsx": {
+    "mtime": 1782241065.221889,
+    "ast_hash": "2234f91626e3ebce7dd053e6f1f4e721",
+    "semantic_hash": "2234f91626e3ebce7dd053e6f1f4e721"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\buttons\\ButtonTool.tsx": {
+    "mtime": 1781778358.698872,
+    "ast_hash": "231f0635b551432dfe26a2016bef939f",
+    "semantic_hash": "231f0635b551432dfe26a2016bef939f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\form\\Input.tsx": {
+    "mtime": 1781596331.7407713,
+    "ast_hash": "8169b512ac1d6a08c38bea608494d42c",
+    "semantic_hash": "8169b512ac1d6a08c38bea608494d42c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\form\\InputCheckbox.tsx": {
+    "mtime": 1781605732.0069015,
+    "ast_hash": "362bbe727ad4dc76c3c09323fb9b84ef",
+    "semantic_hash": "362bbe727ad4dc76c3c09323fb9b84ef"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\form\\InputColor.tsx": {
+    "mtime": 1781596331.7478497,
+    "ast_hash": "4f359394abbb2cfd53f7660286d3fd03",
+    "semantic_hash": "4f359394abbb2cfd53f7660286d3fd03"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\form\\InputRange.tsx": {
+    "mtime": 1781596331.750435,
+    "ast_hash": "caf56fa8b22305ea74955cdeabed9398",
+    "semantic_hash": "caf56fa8b22305ea74955cdeabed9398"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\form\\Label.tsx": {
+    "mtime": 1781607628.3799732,
+    "ast_hash": "f760c1aa2ce14b83a0077a473d208cdf",
+    "semantic_hash": "f760c1aa2ce14b83a0077a473d208cdf"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\form\\Select.tsx": {
+    "mtime": 1781594513.381294,
+    "ast_hash": "8166a57a1147d3465b9fa43a7ccb36eb",
+    "semantic_hash": "8166a57a1147d3465b9fa43a7ccb36eb"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\form\\Textarea.tsx": {
+    "mtime": 1781596331.750435,
+    "ast_hash": "5e931ddb3ad3db5d9da173956332a4ba",
+    "semantic_hash": "5e931ddb3ad3db5d9da173956332a4ba"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\skeletons\\Shimmer.tsx": {
+    "mtime": 1780924878.1112368,
+    "ast_hash": "2476134ff9b75991850dd514fd553895",
+    "semantic_hash": "2476134ff9b75991850dd514fd553895"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\typography\\Subtitle.tsx": {
+    "mtime": 1780924878.1112368,
+    "ast_hash": "f99b320c2ec8fe58f9aa6211994d3947",
+    "semantic_hash": "f99b320c2ec8fe58f9aa6211994d3947"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\atoms\\typography\\Tooltip.tsx": {
+    "mtime": 1781687453.7238913,
+    "ast_hash": "604e9296bf805fe784619e2d85e3ad06",
+    "semantic_hash": "604e9296bf805fe784619e2d85e3ad06"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\AdSense.tsx": {
+    "mtime": 1781686004.0317335,
+    "ast_hash": "61d3b6dec8aa6e701d97fa187f4234f1",
+    "semantic_hash": "61d3b6dec8aa6e701d97fa187f4234f1"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\BreadCrumbs.tsx": {
+    "mtime": 1781596331.7579548,
+    "ast_hash": "ebee8aeaca2aafe0386e8ed75cc86401",
+    "semantic_hash": "ebee8aeaca2aafe0386e8ed75cc86401"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\ButtonGroup.tsx": {
+    "mtime": 1780924878.1206915,
+    "ast_hash": "0c08334a91ec3fca1b0cca8e5534a2e8",
+    "semantic_hash": "0c08334a91ec3fca1b0cca8e5534a2e8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\FaqPanel.tsx": {
+    "mtime": 1781596331.7579548,
+    "ast_hash": "36690d9004c650b8944f2ce461ed827c",
+    "semantic_hash": "36690d9004c650b8944f2ce461ed827c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\FileDropzone.tsx": {
+    "mtime": 1781778322.739735,
+    "ast_hash": "64d93aa33f642fd57afcea00fd1e0d17",
+    "semantic_hash": "64d93aa33f642fd57afcea00fd1e0d17"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\Filters.tsx": {
+    "mtime": 1780775000.8448405,
+    "ast_hash": "6dc726924ef391e3b66acdedff56d0e7",
+    "semantic_hash": "6dc726924ef391e3b66acdedff56d0e7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\ProgressBar.tsx": {
+    "mtime": 1781724926.543245,
+    "ast_hash": "816a37b181c855690360f509246cfa9d",
+    "semantic_hash": "816a37b181c855690360f509246cfa9d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\ProjectsGrid.tsx": {
+    "mtime": 1780775000.8521674,
+    "ast_hash": "61f81ac97461b7d35df1758b9ef5688b",
+    "semantic_hash": "61f81ac97461b7d35df1758b9ef5688b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\SectionHeader.tsx": {
+    "mtime": 1781514755.4831965,
+    "ast_hash": "ca93cd722c800deb919e01d46a87f65b",
+    "semantic_hash": "ca93cd722c800deb919e01d46a87f65b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\ToolColorSwatch.tsx": {
+    "mtime": 1781778339.2665596,
+    "ast_hash": "6053e8097cae7390d9b38024e4bc5556",
+    "semantic_hash": "6053e8097cae7390d9b38024e4bc5556"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\ToolFieldRow.tsx": {
+    "mtime": 1781778453.3159616,
+    "ast_hash": "ebbe2881d4f1d6a0ed5371e6273fc665",
+    "semantic_hash": "ebbe2881d4f1d6a0ed5371e6273fc665"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\carousels\\CarouselCardShell.tsx": {
+    "mtime": 1781514682.7273967,
+    "ast_hash": "c66f3ef0b3b2f17273b85f6451453655",
+    "semantic_hash": "c66f3ef0b3b2f17273b85f6451453655"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\carousels\\CarouselDots.tsx": {
+    "mtime": 1781596331.7616878,
+    "ast_hash": "437b8185cee188ca4f9b072bdafffa0b",
+    "semantic_hash": "437b8185cee188ca4f9b072bdafffa0b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\carousels\\CarouselNavButtons.tsx": {
+    "mtime": 1781596331.7616878,
+    "ast_hash": "4f1a56083e76b433b70ce23f147b7498",
+    "semantic_hash": "4f1a56083e76b433b70ce23f147b7498"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\form\\InputCheckboxWithLabel.tsx": {
+    "mtime": 1781605660.9099488,
+    "ast_hash": "2d25295669f4a92cbae14a84b932411d",
+    "semantic_hash": "2d25295669f4a92cbae14a84b932411d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\form\\InputColorWithLabel.tsx": {
+    "mtime": 1781778489.23102,
+    "ast_hash": "0b52252cb704df9376f7a221559416b4",
+    "semantic_hash": "0b52252cb704df9376f7a221559416b4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\form\\InputRangeWithLabel.tsx": {
+    "mtime": 1781596331.765352,
+    "ast_hash": "bb8546c577f00585b575a260f7f23baf",
+    "semantic_hash": "bb8546c577f00585b575a260f7f23baf"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\form\\InputWithLabel.tsx": {
+    "mtime": 1781607629.6881907,
+    "ast_hash": "61a840123c61b7a8346500cd77d9ff3a",
+    "semantic_hash": "61a840123c61b7a8346500cd77d9ff3a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\form\\SelectWithLabel.tsx": {
+    "mtime": 1781087842.4830995,
+    "ast_hash": "48de016825ede50f04b0e77cda6bf505",
+    "semantic_hash": "48de016825ede50f04b0e77cda6bf505"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\form\\TextareaWithLabel.tsx": {
+    "mtime": 1780775000.8696413,
+    "ast_hash": "2464da6ca84e870c1bdb055df06be7bb",
+    "semantic_hash": "2464da6ca84e870c1bdb055df06be7bb"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\tools\\ToolFileRow.tsx": {
+    "mtime": 1781606413.1112158,
+    "ast_hash": "1ee26d36b0bd406692fc868825022054",
+    "semantic_hash": "1ee26d36b0bd406692fc868825022054"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\tools\\ToolHelper.tsx": {
+    "mtime": 1781105884.592156,
+    "ast_hash": "03eb5dcaf6bd9306a23beae6b52505e9",
+    "semantic_hash": "03eb5dcaf6bd9306a23beae6b52505e9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\tools\\ToolProgressBar.tsx": {
+    "mtime": 1780924878.1299174,
+    "ast_hash": "32944b5a2d9265720242a987c5e14e13",
+    "semantic_hash": "32944b5a2d9265720242a987c5e14e13"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\molecules\\tools\\ToolStatRow.tsx": {
+    "mtime": 1781596331.7678037,
+    "ast_hash": "fd325eb7e6f7d9717937466bbb3f7c99",
+    "semantic_hash": "fd325eb7e6f7d9717937466bbb3f7c99"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\ArticlesList.tsx": {
+    "mtime": 1780775000.8874428,
+    "ast_hash": "ab145406be83df7fae138146c059db96",
+    "semantic_hash": "ab145406be83df7fae138146c059db96"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\BenefitBelt.tsx": {
+    "mtime": 1780775000.892162,
+    "ast_hash": "afb9add6e0a95bd35932d2997a162ed8",
+    "semantic_hash": "afb9add6e0a95bd35932d2997a162ed8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\CTABanner.tsx": {
+    "mtime": 1781594513.381294,
+    "ast_hash": "ca67d570348d76462a43a44b7575546c",
+    "semantic_hash": "ca67d570348d76462a43a44b7575546c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\Card.tsx": {
+    "mtime": 1780924878.1333392,
+    "ast_hash": "9c93abfc0439cc189ef5a65b5cc3864c",
+    "semantic_hash": "9c93abfc0439cc189ef5a65b5cc3864c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\CodeBlock.tsx": {
+    "mtime": 1781596331.7685993,
+    "ast_hash": "45cf2dc6160820060a3f3a754cd99f8b",
+    "semantic_hash": "45cf2dc6160820060a3f3a754cd99f8b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\ConfirmModal.tsx": {
+    "mtime": 1781688220.5739636,
+    "ast_hash": "040094bfc098bd5ecc29fa5d26d8c1e0",
+    "semantic_hash": "040094bfc098bd5ecc29fa5d26d8c1e0"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\ContactForm.tsx": {
+    "mtime": 1780775000.908935,
+    "ast_hash": "87c41a86926722d3e343811e92bddb2e",
+    "semantic_hash": "87c41a86926722d3e343811e92bddb2e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\CookieConsent.tsx": {
+    "mtime": 1780924878.1372352,
+    "ast_hash": "c2d3f9a06c9fc5be09e1c6571798668d",
+    "semantic_hash": "c2d3f9a06c9fc5be09e1c6571798668d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\ErrorPageComponent.tsx": {
+    "mtime": 1781596331.77163,
+    "ast_hash": "435a3bbfa99e0fa8c2cbe3a9cc4ba03a",
+    "semantic_hash": "435a3bbfa99e0fa8c2cbe3a9cc4ba03a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\FeatureCard.tsx": {
+    "mtime": 1781686905.637143,
+    "ast_hash": "64d89b7cb8d6d147003afce1e5e916fa",
+    "semantic_hash": "64d89b7cb8d6d147003afce1e5e916fa"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\FeatureGrid.tsx": {
+    "mtime": 1780924878.1425366,
+    "ast_hash": "24022d9e5eb99b302594ca76d345ab61",
+    "semantic_hash": "24022d9e5eb99b302594ca76d345ab61"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\FilterBar.tsx": {
+    "mtime": 1781688321.0914407,
+    "ast_hash": "9dcc4ffdb1a81ad6972f321513218ba8",
+    "semantic_hash": "9dcc4ffdb1a81ad6972f321513218ba8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\Footer.tsx": {
+    "mtime": 1781604960.0553768,
+    "ast_hash": "7458851070edf112b413b674421ee12d",
+    "semantic_hash": "7458851070edf112b413b674421ee12d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\HeroBanner.tsx": {
+    "mtime": 1781604960.0553768,
+    "ast_hash": "77ac945b2379de7caaf3307e2a508f6a",
+    "semantic_hash": "77ac945b2379de7caaf3307e2a508f6a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\LanguageSwitcher.tsx": {
+    "mtime": 1781867361.4276254,
+    "ast_hash": "a60940021ecc93b658d7ea17218b661b",
+    "semantic_hash": "a60940021ecc93b658d7ea17218b661b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\LazyCookieConsent.tsx": {
+    "mtime": 1778414741.3116345,
+    "ast_hash": "0aa34969e33da14a5a1087852f1f7885",
+    "semantic_hash": "0aa34969e33da14a5a1087852f1f7885"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\ProjectsWithFilters.tsx": {
+    "mtime": 1780775000.935589,
+    "ast_hash": "19665c820aad17790159f7b7708e108a",
+    "semantic_hash": "19665c820aad17790159f7b7708e108a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\SearchDialog.tsx": {
+    "mtime": 1781688260.4247205,
+    "ast_hash": "5016a70816e675280d28b84d3a497e9f",
+    "semantic_hash": "5016a70816e675280d28b84d3a497e9f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\ShareBlock.tsx": {
+    "mtime": 1781596331.775764,
+    "ast_hash": "7120b14dc7690c002f26a43444653eae",
+    "semantic_hash": "7120b14dc7690c002f26a43444653eae"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\TableOfContent.tsx": {
+    "mtime": 1781596331.7808113,
+    "ast_hash": "11f57e170ee73da8c2bfa02bec59ba8e",
+    "semantic_hash": "11f57e170ee73da8c2bfa02bec59ba8e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\WorkSteps.tsx": {
+    "mtime": 1780775000.9488106,
+    "ast_hash": "ffb0e8ec7ca8f1448d35d2eaeea53bba",
+    "semantic_hash": "ffb0e8ec7ca8f1448d35d2eaeea53bba"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\carousels\\ArticlesCarousel.tsx": {
+    "mtime": 1781596331.7826037,
+    "ast_hash": "f47da2a7cc0cf7a7e001899f71a5a1dc",
+    "semantic_hash": "f47da2a7cc0cf7a7e001899f71a5a1dc"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\carousels\\CarouselCard.tsx": {
+    "mtime": 1781778780.0154555,
+    "ast_hash": "1c66cd069d5e75255866f98a2206176b",
+    "semantic_hash": "1c66cd069d5e75255866f98a2206176b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\carousels\\LogoCarousel.tsx": {
+    "mtime": 1781867379.503306,
+    "ast_hash": "4ba722b3fb1d962157eea456cbdc1df4",
+    "semantic_hash": "4ba722b3fb1d962157eea456cbdc1df4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\carousels\\ProjectsCarousel.tsx": {
+    "mtime": 1780775000.959189,
+    "ast_hash": "3820b5aa30377c9a2ecdd13873955a09",
+    "semantic_hash": "3820b5aa30377c9a2ecdd13873955a09"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\carousels\\ProjectsCarouselClient.tsx": {
+    "mtime": 1781596331.7868893,
+    "ast_hash": "e549c6f2dc88f2c9ebcd732e8707517f",
+    "semantic_hash": "e549c6f2dc88f2c9ebcd732e8707517f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\carousels\\TestimonialCard.tsx": {
+    "mtime": 1780775000.9662693,
+    "ast_hash": "3390e6358041580a38c2813954c47ccd",
+    "semantic_hash": "3390e6358041580a38c2813954c47ccd"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\carousels\\TestimonialsCarousel.tsx": {
+    "mtime": 1781596331.7895658,
+    "ast_hash": "1e3f594035f3bd1c29af149d53f9ff3c",
+    "semantic_hash": "1e3f594035f3bd1c29af149d53f9ff3c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\carousels\\ToolsCarousel.tsx": {
+    "mtime": 1781596331.7895658,
+    "ast_hash": "7c8f06c072ed23d049667689150dad6f",
+    "semantic_hash": "7c8f06c072ed23d049667689150dad6f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\navigation\\DesktopNavigation.tsx": {
+    "mtime": 1781867229.4915905,
+    "ast_hash": "4a0b919c25b2d535e222c271b59ea91b",
+    "semantic_hash": "4a0b919c25b2d535e222c271b59ea91b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\navigation\\MobileNavigation.tsx": {
+    "mtime": 1781687783.7181892,
+    "ast_hash": "d4f401951f0cd2cc66bbde9d32f59726",
+    "semantic_hash": "d4f401951f0cd2cc66bbde9d32f59726"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\navigation\\NavigationShell.tsx": {
+    "mtime": 1781778908.4500895,
+    "ast_hash": "f5bf2db8e3a01db541b69463b185fabc",
+    "semantic_hash": "f5bf2db8e3a01db541b69463b185fabc"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionBasic.tsx": {
+    "mtime": 1780924878.1586566,
+    "ast_hash": "001c5f11ef0e6282d421acb8e9d7e06f",
+    "semantic_hash": "001c5f11ef0e6282d421acb8e9d7e06f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionBeforeAfter.tsx": {
+    "mtime": 1781596331.7963026,
+    "ast_hash": "ef9ebd9d7b57e5a21e56d303f6d68d44",
+    "semantic_hash": "ef9ebd9d7b57e5a21e56d303f6d68d44"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionBento.tsx": {
+    "mtime": 1781594513.3989873,
+    "ast_hash": "1f73d3f53e5db351fa0e593f166e98b5",
+    "semantic_hash": "1f73d3f53e5db351fa0e593f166e98b5"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionContactForm.tsx": {
+    "mtime": 1781596331.7989583,
+    "ast_hash": "3004ca58af84c1904ff0c50b6597f8e1",
+    "semantic_hash": "3004ca58af84c1904ff0c50b6597f8e1"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionDemo.tsx": {
+    "mtime": 1781596331.7989583,
+    "ast_hash": "bdd1e358f3e6cb37c7aafec22b3cafc8",
+    "semantic_hash": "bdd1e358f3e6cb37c7aafec22b3cafc8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionFaqPanels.tsx": {
+    "mtime": 1780924878.162838,
+    "ast_hash": "d939f2d0170f5b00c2e2e99869ab793b",
+    "semantic_hash": "d939f2d0170f5b00c2e2e99869ab793b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionFeatureList.tsx": {
+    "mtime": 1781596331.8034556,
+    "ast_hash": "352ee6379280bdfce4275ad40de3c5d0",
+    "semantic_hash": "352ee6379280bdfce4275ad40de3c5d0"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionImageCarousel.tsx": {
+    "mtime": 1781596331.8034556,
+    "ast_hash": "b6191d3d9f3c06e4ff6c74cfb7920ad4",
+    "semantic_hash": "b6191d3d9f3c06e4ff6c74cfb7920ad4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionImageGallery.tsx": {
+    "mtime": 1781688366.7667649,
+    "ast_hash": "cc1b77d6f4120b692d4b475efb808c99",
+    "semantic_hash": "cc1b77d6f4120b692d4b475efb808c99"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionInfo.tsx": {
+    "mtime": 1780775001.00483,
+    "ast_hash": "49e1fb61ca36650000bcf9b800f9d322",
+    "semantic_hash": "49e1fb61ca36650000bcf9b800f9d322"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionInfoBanner.tsx": {
+    "mtime": 1780775001.0091324,
+    "ast_hash": "4a66fbd1dd390d4218e200a8b3683cdf",
+    "semantic_hash": "4a66fbd1dd390d4218e200a8b3683cdf"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionMetrics.tsx": {
+    "mtime": 1780924878.162838,
+    "ast_hash": "a810a74865245d6dd981860c2ea687cb",
+    "semantic_hash": "a810a74865245d6dd981860c2ea687cb"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionPrices.tsx": {
+    "mtime": 1781686916.9051142,
+    "ast_hash": "b43df5f056eb6d819f83390f237d79ee",
+    "semantic_hash": "b43df5f056eb6d819f83390f237d79ee"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionProcess.tsx": {
+    "mtime": 1781596331.8096962,
+    "ast_hash": "b4cd55f174344f1a3c84b28a001fe1f2",
+    "semantic_hash": "b4cd55f174344f1a3c84b28a001fe1f2"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionStarRating.tsx": {
+    "mtime": 1781596331.8109155,
+    "ast_hash": "c069a4999d5c31fac51cce3f3aac69f8",
+    "semantic_hash": "c069a4999d5c31fac51cce3f3aac69f8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionSteps.tsx": {
+    "mtime": 1781596331.8109155,
+    "ast_hash": "e2bf48af0d609049e589b8ebf85daf44",
+    "semantic_hash": "e2bf48af0d609049e589b8ebf85daf44"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionTable.tsx": {
+    "mtime": 1780924878.162838,
+    "ast_hash": "0b5b102d188cb087b4cbd7f84654ff2a",
+    "semantic_hash": "0b5b102d188cb087b4cbd7f84654ff2a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionTabs.tsx": {
+    "mtime": 1781596331.8109155,
+    "ast_hash": "76d57d0ecb56f1c294648fd4189e3d31",
+    "semantic_hash": "76d57d0ecb56f1c294648fd4189e3d31"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\sections\\SectionTimeline.tsx": {
+    "mtime": 1781596331.8165,
+    "ast_hash": "6a4d470a02c57e3d661c398446b58d14",
+    "semantic_hash": "6a4d470a02c57e3d661c398446b58d14"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\BenefitBeltSkeleton.tsx": {
+    "mtime": 1781596331.817156,
+    "ast_hash": "1779b806b35b4a416b56ccb1e0398a64",
+    "semantic_hash": "1779b806b35b4a416b56ccb1e0398a64"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\BreadcrumbsSkeleton.tsx": {
+    "mtime": 1781596331.819163,
+    "ast_hash": "85ed10df32c41077f75b681727799f81",
+    "semantic_hash": "85ed10df32c41077f75b681727799f81"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\CTABannerSkeleton.tsx": {
+    "mtime": 1780775001.2341726,
+    "ast_hash": "0043b65f783f1f61b2094e2c6e3d20db",
+    "semantic_hash": "0043b65f783f1f61b2094e2c6e3d20db"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\CardGridSkeleton.tsx": {
+    "mtime": 1780924878.1746025,
+    "ast_hash": "cb4e1bd1b444ae3aa03a580f8b40961f",
+    "semantic_hash": "cb4e1bd1b444ae3aa03a580f8b40961f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\CarouselSkeleton.tsx": {
+    "mtime": 1781608199.4537063,
+    "ast_hash": "dc8675b4db6e7d434fb4c3b831cffec4",
+    "semantic_hash": "dc8675b4db6e7d434fb4c3b831cffec4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\ContentSkeleton.tsx": {
+    "mtime": 1780775001.2439935,
+    "ast_hash": "dbfe4754712b101eee789265ea692791",
+    "semantic_hash": "dbfe4754712b101eee789265ea692791"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\FaqPageSkeleton.tsx": {
+    "mtime": 1780775001.246555,
+    "ast_hash": "101e725be23ac22e97e8f4bd7077d954",
+    "semantic_hash": "101e725be23ac22e97e8f4bd7077d954"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\FaqSkeleton.tsx": {
+    "mtime": 1781596331.8235867,
+    "ast_hash": "0014cb0add794a95700a56bb37f9d135",
+    "semantic_hash": "0014cb0add794a95700a56bb37f9d135"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\GapSkeleton.tsx": {
+    "mtime": 1779054173.6092823,
+    "ast_hash": "e6dea946b4a24a30b3d0f62a3921cd30",
+    "semantic_hash": "e6dea946b4a24a30b3d0f62a3921cd30"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\HeroBannerSkeleton.tsx": {
+    "mtime": 1780775001.257536,
+    "ast_hash": "de951ecf795af588a8730b2a4daefee2",
+    "semantic_hash": "de951ecf795af588a8730b2a4daefee2"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\ListPageSkeleton.tsx": {
+    "mtime": 1780775001.2610586,
+    "ast_hash": "b135600864ba31a2890798a7d064bcb6",
+    "semantic_hash": "b135600864ba31a2890798a7d064bcb6"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\NavSkeleton.tsx": {
+    "mtime": 1779054173.6708176,
+    "ast_hash": "a02ddd5a35cd8000ab57b2ba950514a1",
+    "semantic_hash": "a02ddd5a35cd8000ab57b2ba950514a1"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\ProjectDetailSkeleton.tsx": {
+    "mtime": 1780775001.2648587,
+    "ast_hash": "cd1586480018e0854ef3305722640c94",
+    "semantic_hash": "cd1586480018e0854ef3305722640c94"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\SectionInfoSkeleton.tsx": {
+    "mtime": 1779888863.7029293,
+    "ast_hash": "a85e21d60115b1a0e43f0f1319728b8b",
+    "semantic_hash": "a85e21d60115b1a0e43f0f1319728b8b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\skeletons\\SectionStepsSkeleton.tsx": {
+    "mtime": 1780924878.1746025,
+    "ast_hash": "106efd23599397aa7591508639593cae",
+    "semantic_hash": "106efd23599397aa7591508639593cae"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\tools\\EmailSignatureGenerator\\TextStyleRow.tsx": {
+    "mtime": 1781596331.8241942,
+    "ast_hash": "e98cca2953fa2aa2f09e87c089e9b9c3",
+    "semantic_hash": "e98cca2953fa2aa2f09e87c089e9b9c3"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\tools\\EmailSignatureGenerator\\panels\\AppearancePanel.tsx": {
+    "mtime": 1781596331.8241942,
+    "ast_hash": "b442e15e1c542a37e5b89c92e4f964ba",
+    "semantic_hash": "b442e15e1c542a37e5b89c92e4f964ba"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\tools\\EmailSignatureGenerator\\panels\\ButtonsPanel.tsx": {
+    "mtime": 1780775001.2926774,
+    "ast_hash": "06a626edd6065432e1904e7fda7131fe",
+    "semantic_hash": "06a626edd6065432e1904e7fda7131fe"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\tools\\EmailSignatureGenerator\\panels\\IdentityPanel.tsx": {
+    "mtime": 1780775001.30326,
+    "ast_hash": "7ef9c73d19e52416208a98a17783fb71",
+    "semantic_hash": "7ef9c73d19e52416208a98a17783fb71"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\tools\\EmailSignatureGenerator\\panels\\LegalPanel.tsx": {
+    "mtime": 1781596331.8241942,
+    "ast_hash": "ea3da9f8dcf92ce96123ca4908e745e4",
+    "semantic_hash": "ea3da9f8dcf92ce96123ca4908e745e4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\tools\\EmailSignatureGenerator\\panels\\SocialPanel.tsx": {
+    "mtime": 1780775001.3147345,
+    "ast_hash": "0965c65621e2e129fd4549fdac3f7041",
+    "semantic_hash": "0965c65621e2e129fd4549fdac3f7041"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\tools\\EmailSignatureGenerator\\panels\\SpacingPanel.tsx": {
+    "mtime": 1781596331.8304968,
+    "ast_hash": "3a120c1bd5863958512ec3f46b7d2dc1",
+    "semantic_hash": "3a120c1bd5863958512ec3f46b7d2dc1"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\tools\\FormatPicker\\FormatPickerModal.tsx": {
+    "mtime": 1781687333.70041,
+    "ast_hash": "389a6ac21e8fcfc8cdf7df3fcb70c8c0",
+    "semantic_hash": "389a6ac21e8fcfc8cdf7df3fcb70c8c0"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\tools\\FormatPicker\\FormatSelector.tsx": {
+    "mtime": 1780775001.335628,
+    "ast_hash": "e9e3999a2799123c2fe7f1a1b1fed7ec",
+    "semantic_hash": "e9e3999a2799123c2fe7f1a1b1fed7ec"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\tools\\ImageResizeTool\\CropPreview.tsx": {
+    "mtime": 1781596331.8341131,
+    "ast_hash": "d685b829d87a75b7e676e24e82d491a5",
+    "semantic_hash": "d685b829d87a75b7e676e24e82d491a5"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\tools\\RelatedConverters.tsx": {
+    "mtime": 1781596331.83612,
+    "ast_hash": "1db9dbb4a4df5e973e78e58361caa954",
+    "semantic_hash": "1db9dbb4a4df5e973e78e58361caa954"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\organisms\\tools\\RelatedUnitConverters.tsx": {
+    "mtime": 1781685899.5421758,
+    "ast_hash": "f92616b52c98c7ada440ee1a814f0d17",
+    "semantic_hash": "f92616b52c98c7ada440ee1a814f0d17"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\AboutPage.tsx": {
+    "mtime": 1781596331.8379083,
+    "ast_hash": "0b02f09791623fbb539c3cf26bdbc085",
+    "semantic_hash": "0b02f09791623fbb539c3cf26bdbc085"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\ContactPage.tsx": {
+    "mtime": 1780775001.3801787,
+    "ast_hash": "3aadfdf004ce81cc6e698d5a57ce5a85",
+    "semantic_hash": "3aadfdf004ce81cc6e698d5a57ce5a85"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\NotFoundPage.tsx": {
+    "mtime": 1781596331.8379083,
+    "ast_hash": "abb9413736a3e98be905bd6ea0422a80",
+    "semantic_hash": "abb9413736a3e98be905bd6ea0422a80"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\TermsPage.tsx": {
+    "mtime": 1780775001.3907473,
+    "ast_hash": "444e891850d9d74ed94bcd9a17fbcbaa",
+    "semantic_hash": "444e891850d9d74ed94bcd9a17fbcbaa"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\ToolPage.tsx": {
+    "mtime": 1780924878.2005684,
+    "ast_hash": "fa0b230bf2d19edc87c1597e997c6bd5",
+    "semantic_hash": "fa0b230bf2d19edc87c1597e997c6bd5"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\skeletons\\AboutPageSkeleton.tsx": {
+    "mtime": 1780775001.4208286,
+    "ast_hash": "4d99d9817d974d5e99584b49ab65e0aa",
+    "semantic_hash": "4d99d9817d974d5e99584b49ab65e0aa"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\skeletons\\ArticlePageSkeleton.tsx": {
+    "mtime": 1780775001.4284663,
+    "ast_hash": "a85b3adf15662eca29915a805130eb0e",
+    "semantic_hash": "a85b3adf15662eca29915a805130eb0e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\skeletons\\ContactPageSkeleton.tsx": {
+    "mtime": 1780775001.4338121,
+    "ast_hash": "a7b40cb31e9c364b679a0dd1ff014cd2",
+    "semantic_hash": "a7b40cb31e9c364b679a0dd1ff014cd2"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\skeletons\\GenericPageSkeleton.tsx": {
+    "mtime": 1780775001.4378774,
+    "ast_hash": "428eff334ec51af4fa0583c1f532937e",
+    "semantic_hash": "428eff334ec51af4fa0583c1f532937e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\skeletons\\HomePageSkeleton.tsx": {
+    "mtime": 1780775001.4403827,
+    "ast_hash": "edd78e6123e9ecfade08cb01ee2f35a0",
+    "semantic_hash": "edd78e6123e9ecfade08cb01ee2f35a0"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\skeletons\\PrivacyPageSkeleton.tsx": {
+    "mtime": 1780775001.444552,
+    "ast_hash": "ae5d168d7e9618aa33bb5bd1710e8f93",
+    "semantic_hash": "ae5d168d7e9618aa33bb5bd1710e8f93"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\skeletons\\ServiceHubSkeleton.tsx": {
+    "mtime": 1780775001.4485798,
+    "ast_hash": "bc9634a58398e7ea674cb4d153db483b",
+    "semantic_hash": "bc9634a58398e7ea674cb4d153db483b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\skeletons\\ServicePageSkeleton.tsx": {
+    "mtime": 1780775001.4506466,
+    "ast_hash": "31f0e8f6a0e37c9d00d080342f6b7d2c",
+    "semantic_hash": "31f0e8f6a0e37c9d00d080342f6b7d2c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\skeletons\\ToolEditorSkeleton.tsx": {
+    "mtime": 1779971314.3599825,
+    "ast_hash": "3faafb7d8b87da1c82c4a3d852f45818",
+    "semantic_hash": "3faafb7d8b87da1c82c4a3d852f45818"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\skeletons\\ToolPageSkeleton.tsx": {
+    "mtime": 1780775001.4546332,
+    "ast_hash": "b075df73793470fe7ca51a6916e676cd",
+    "semantic_hash": "b075df73793470fe7ca51a6916e676cd"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\skeletons\\ToolPanelSkeleton.tsx": {
+    "mtime": 1781596331.8379083,
+    "ast_hash": "b25fc15d09eb2cf533d57ad461620677",
+    "semantic_hash": "b25fc15d09eb2cf533d57ad461620677"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\skeletons\\ToolsIndexSkeleton.tsx": {
+    "mtime": 1780775001.463699,
+    "ast_hash": "8e3251d96e678fe309fc3da64623f169",
+    "semantic_hash": "8e3251d96e678fe309fc3da64623f169"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\Base64Converter.tsx": {
+    "mtime": 1781596331.8379083,
+    "ast_hash": "1c50efe90e708246cc1749cd674ca0ec",
+    "semantic_hash": "1c50efe90e708246cc1749cd674ca0ec"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\ColorPaletteGenerator.tsx": {
+    "mtime": 1781596331.8448596,
+    "ast_hash": "c974ddafe572c56f8de9649c585310da",
+    "semantic_hash": "c974ddafe572c56f8de9649c585310da"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\DynamicToolRenderer.tsx": {
+    "mtime": 1782238700.3444052,
+    "ast_hash": "ced8968a3f9d7b70b32b29439b886439",
+    "semantic_hash": "ced8968a3f9d7b70b32b29439b886439"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\EmailSignatureGenerator.tsx": {
+    "mtime": 1781688414.9635382,
+    "ast_hash": "490c4608857f8e617a6f1484428ff672",
+    "semantic_hash": "490c4608857f8e617a6f1484428ff672"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\FaviconGenerator.tsx": {
+    "mtime": 1781606016.1843991,
+    "ast_hash": "fd82af07068491eefcf6ecba253c6e73",
+    "semantic_hash": "fd82af07068491eefcf6ecba253c6e73"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\ImageFormatConverter.tsx": {
+    "mtime": 1781596331.8513067,
+    "ast_hash": "0c1cd8d8394a01844931b988c1afe0fe",
+    "semantic_hash": "0c1cd8d8394a01844931b988c1afe0fe"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\ImageResizeTool.tsx": {
+    "mtime": 1781607625.6656904,
+    "ast_hash": "433fce8c4cd83ad815feafd4795481f4",
+    "semantic_hash": "433fce8c4cd83ad815feafd4795481f4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\ImageToPdfConverter.tsx": {
+    "mtime": 1781596331.851984,
+    "ast_hash": "a7d98fecf06f19fd43b2d15b8e3ae420",
+    "semantic_hash": "a7d98fecf06f19fd43b2d15b8e3ae420"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\JpgPngToWebp.tsx": {
+    "mtime": 1781596331.851984,
+    "ast_hash": "272a1573a08d721cc89fe76a40c4b70e",
+    "semantic_hash": "272a1573a08d721cc89fe76a40c4b70e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\LoremIpsumGenerator.tsx": {
+    "mtime": 1781607622.9016328,
+    "ast_hash": "8e7278e7227fc26c66562bd672aa46e8",
+    "semantic_hash": "8e7278e7227fc26c66562bd672aa46e8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\MetaTitleDescriptionTool.tsx": {
+    "mtime": 1781608212.4051874,
+    "ast_hash": "7a4e847447430369c625500fa25b8a80",
+    "semantic_hash": "7a4e847447430369c625500fa25b8a80"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\PaletteExtractor.tsx": {
+    "mtime": 1781596331.8588088,
+    "ast_hash": "2081d66708d5ab7e4fa452b516a0006c",
+    "semantic_hash": "2081d66708d5ab7e4fa452b516a0006c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\PdfToImageConverter.tsx": {
+    "mtime": 1781596331.86199,
+    "ast_hash": "2e0988935abc2c38c7bcaee35043ade8",
+    "semantic_hash": "2e0988935abc2c38c7bcaee35043ade8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\QrCodeGenerator.tsx": {
+    "mtime": 1781596331.8652427,
+    "ast_hash": "f929f03dc57977b05ebe4a723c57be2d",
+    "semantic_hash": "f929f03dc57977b05ebe4a723c57be2d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\TextFormatConverter.tsx": {
+    "mtime": 1781596331.86579,
+    "ast_hash": "d4a91b81bf0b4fc0bd8f8a515cfef9d8",
+    "semantic_hash": "d4a91b81bf0b4fc0bd8f8a515cfef9d8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\UnitConverter.tsx": {
+    "mtime": 1781596331.86579,
+    "ast_hash": "bd7fa5e490eead1ddd517e413a19e655",
+    "semantic_hash": "bd7fa5e490eead1ddd517e413a19e655"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\WcagContrastChecker.tsx": {
+    "mtime": 1781778675.2381825,
+    "ast_hash": "726888a02a8a8ed8baf78354a3c8b14b",
+    "semantic_hash": "726888a02a8a8ed8baf78354a3c8b14b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\pages\\tools\\WordCountTool.tsx": {
+    "mtime": 1781778474.3597975,
+    "ast_hash": "c97048daa9d245d572e1b50409c24df7",
+    "semantic_hash": "c97048daa9d245d572e1b50409c24df7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\templates\\LocaleLayout.tsx": {
+    "mtime": 1780924878.2160923,
+    "ast_hash": "80d830af37638dab3f0e4285d592647c",
+    "semantic_hash": "80d830af37638dab3f0e4285d592647c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\templates\\RootLayout.tsx": {
+    "mtime": 1781594513.4025612,
+    "ast_hash": "59102f8d49db0e5286d2ca51bf6bfac9",
+    "semantic_hash": "59102f8d49db0e5286d2ca51bf6bfac9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\components\\templates\\ToolEditorLayout.tsx": {
+    "mtime": 1780924878.2160923,
+    "ast_hash": "6f1b18510267255fcc8a034222ee9b00",
+    "semantic_hash": "6f1b18510267255fcc8a034222ee9b00"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useCarouselScroller.ts": {
+    "mtime": 1781778752.4444282,
+    "ast_hash": "f5de0d044fe5babaea6fab7384d3b295",
+    "semantic_hash": "f5de0d044fe5babaea6fab7384d3b295"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useConversionQueue.ts": {
+    "mtime": 1780775004.4608233,
+    "ast_hash": "023eda305c1096b6b42b732a38521611",
+    "semantic_hash": "023eda305c1096b6b42b732a38521611"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useCopyToClipboard.ts": {
+    "mtime": 1778414765.4639485,
+    "ast_hash": "894aef767e69a4907be4400687b54cfa",
+    "semantic_hash": "894aef767e69a4907be4400687b54cfa"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useCropDrag.ts": {
+    "mtime": 1780775004.4608233,
+    "ast_hash": "8e208d2b9be6e5655f8b6a239ea20e87",
+    "semantic_hash": "8e208d2b9be6e5655f8b6a239ea20e87"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useDebouncedEffect.ts": {
+    "mtime": 1778414765.5222678,
+    "ast_hash": "fe16be5d615cde0c50b1e96af24b54e2",
+    "semantic_hash": "fe16be5d615cde0c50b1e96af24b54e2"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useDialogFocus.ts": {
+    "mtime": 1781688201.8926022,
+    "ast_hash": "cc1b60999ad3d07fc68b1e900b2da26c",
+    "semantic_hash": "cc1b60999ad3d07fc68b1e900b2da26c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useEscapeKey.ts": {
+    "mtime": 1778414765.5295286,
+    "ast_hash": "12ad726c5472046930679032adb59f30",
+    "semantic_hash": "12ad726c5472046930679032adb59f30"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useEventListener.ts": {
+    "mtime": 1778414765.546526,
+    "ast_hash": "c594c9453176c96a0f3004b1d04b9e83",
+    "semantic_hash": "c594c9453176c96a0f3004b1d04b9e83"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useFileDropzone.ts": {
+    "mtime": 1780775004.464744,
+    "ast_hash": "14183b6fd3e9b240502b5cd565397d6f",
+    "semantic_hash": "14183b6fd3e9b240502b5cd565397d6f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useFocusTrap.ts": {
+    "mtime": 1780775004.4667554,
+    "ast_hash": "95d4fa2be9ca5b39dc149b1d5befa72f",
+    "semantic_hash": "95d4fa2be9ca5b39dc149b1d5befa72f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useIsMounted.ts": {
+    "mtime": 1778333445.517973,
+    "ast_hash": "c2402e56337727278da35631193b6918",
+    "semantic_hash": "c2402e56337727278da35631193b6918"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useMediaQuery.ts": {
+    "mtime": 1780775004.4667554,
+    "ast_hash": "b2910ecd280f7681e1fd9ec3856930f0",
+    "semantic_hash": "b2910ecd280f7681e1fd9ec3856930f0"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useMenuKeyboardNavigation.ts": {
+    "mtime": 1781867109.4192975,
+    "ast_hash": "495b68d16b29db1f13264ff0f62d3d73",
+    "semantic_hash": "495b68d16b29db1f13264ff0f62d3d73"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useOutsideClick.ts": {
+    "mtime": 1780775004.4667554,
+    "ast_hash": "23d3e29020d109ddbaa5531c3cf61d59",
+    "semantic_hash": "23d3e29020d109ddbaa5531c3cf61d59"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useRestoreFocus.ts": {
+    "mtime": 1766001494.7288668,
+    "ast_hash": "05d1e149857c6564453edce3f880442c",
+    "semantic_hash": "05d1e149857c6564453edce3f880442c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useRouteFocus.ts": {
+    "mtime": 1780775004.4715931,
+    "ast_hash": "62771eda0b316aadd76b8bba3cc5207f",
+    "semantic_hash": "62771eda0b316aadd76b8bba3cc5207f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useScrollLock.ts": {
+    "mtime": 1780775004.4744923,
+    "ast_hash": "9a7dd03d411792e80413482530f68867",
+    "semantic_hash": "9a7dd03d411792e80413482530f68867"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useSearch.ts": {
+    "mtime": 1780775004.4771547,
+    "ast_hash": "33879030cb9a3948b275eb278acbafad",
+    "semantic_hash": "33879030cb9a3948b275eb278acbafad"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useTheme.ts": {
+    "mtime": 1781589396.677298,
+    "ast_hash": "7e8135cace1f26f77b6843b60ee2dddb",
+    "semantic_hash": "7e8135cace1f26f77b6843b60ee2dddb"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useTimeout.ts": {
+    "mtime": 1782241088.9073093,
+    "ast_hash": "b07b8c27c149e10019a7a918c7e8ea7e",
+    "semantic_hash": "b07b8c27c149e10019a7a918c7e8ea7e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useWebpConversion.ts": {
+    "mtime": 1780775004.4771547,
+    "ast_hash": "3dc7edb814d08bd7b964b9f6c575b1a3",
+    "semantic_hash": "3dc7edb814d08bd7b964b9f6c575b1a3"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useWebpDownloads.ts": {
+    "mtime": 1780924878.2214682,
+    "ast_hash": "e5e37d0e9bdfeaf01e64e18f2feb903c",
+    "semantic_hash": "e5e37d0e9bdfeaf01e64e18f2feb903c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useWebpQueue.ts": {
+    "mtime": 1780775004.4831066,
+    "ast_hash": "819f13bbc01f112b710ffcabfae0bcc0",
+    "semantic_hash": "819f13bbc01f112b710ffcabfae0bcc0"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\hooks\\useWebpReportCopy.ts": {
+    "mtime": 1780775004.4831066,
+    "ast_hash": "d250ee3ce6c02f336913af5a88e5d610",
+    "semantic_hash": "d250ee3ce6c02f336913af5a88e5d610"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\LocaleContext.tsx": {
+    "mtime": 1780775004.4831066,
+    "ast_hash": "09fc299574e6fe6692962cb56d15b5fd",
+    "semantic_hash": "09fc299574e6fe6692962cb56d15b5fd"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\blogDataService.ts": {
+    "mtime": 1780924878.2214682,
+    "ast_hash": "148c8c427d6626b157b9d82165dc4e2e",
+    "semantic_hash": "148c8c427d6626b157b9d82165dc4e2e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\clsx.ts": {
+    "mtime": 1780924878.2214682,
+    "ast_hash": "8595c2f874aa1ff8c7cc28df2999f354",
+    "semantic_hash": "8595c2f874aa1ff8c7cc28df2999f354"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\consent\\consentCookie.ts": {
+    "mtime": 1780924969.7820742,
+    "ast_hash": "96b47be1b36e77f6eccef745aa568d04",
+    "semantic_hash": "96b47be1b36e77f6eccef745aa568d04"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\consent\\ga.ts": {
+    "mtime": 1780775004.4929004,
+    "ast_hash": "04827d95aa656a2205da798055ad8879",
+    "semantic_hash": "04827d95aa656a2205da798055ad8879"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\consent\\gtag.ts": {
+    "mtime": 1780924878.2249286,
+    "ast_hash": "1443476bbe9e143078adaa7246844938",
+    "semantic_hash": "1443476bbe9e143078adaa7246844938"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\a11y.ts": {
+    "mtime": 1781778598.8376248,
+    "ast_hash": "e6cac530cb038f14b0f5581d798b070f",
+    "semantic_hash": "e6cac530cb038f14b0f5581d798b070f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\adLabel.ts": {
+    "mtime": 1781685847.5315475,
+    "ast_hash": "f7bc3c60a589616592d401acdf0aa7db",
+    "semantic_hash": "f7bc3c60a589616592d401acdf0aa7db"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\clientDictionary.ts": {
+    "mtime": 1780775004.4949515,
+    "ast_hash": "c6986abebcb39efe5ed6a96654781901",
+    "semantic_hash": "c6986abebcb39efe5ed6a96654781901"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\getDictionary.ts": {
+    "mtime": 1780775004.4949515,
+    "ast_hash": "0d5c70a3e79b5f5b092b6f07f121ec73",
+    "semantic_hash": "0d5c70a3e79b5f5b092b6f07f121ec73"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\locales.ts": {
+    "mtime": 1780775004.4949515,
+    "ast_hash": "afe18d432f60868787f689f3e2fe4743",
+    "semantic_hash": "afe18d432f60868787f689f3e2fe4743"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\pages\\about.ts": {
+    "mtime": 1780775004.5001583,
+    "ast_hash": "72062dfbea45e23f0cfd65e62cd31dc1",
+    "semantic_hash": "72062dfbea45e23f0cfd65e62cd31dc1"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\pages\\contact.ts": {
+    "mtime": 1780775004.503396,
+    "ast_hash": "9d45dc095fbf9cf34a430bd07650543c",
+    "semantic_hash": "9d45dc095fbf9cf34a430bd07650543c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\pages\\privacy.ts": {
+    "mtime": 1780775004.503396,
+    "ast_hash": "5aff4dade96f6e6ccc6f0ef43ecfd8ed",
+    "semantic_hash": "5aff4dade96f6e6ccc6f0ef43ecfd8ed"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\pages\\terms.ts": {
+    "mtime": 1780775004.503396,
+    "ast_hash": "7b8383987c1f51a5879594ca3f86c913",
+    "semantic_hash": "7b8383987c1f51a5879594ca3f86c913"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\pages\\toolMeta.ts": {
+    "mtime": 1780775004.503396,
+    "ast_hash": "46fb4b9b3e98c862a0a31cc71c3b8e4e",
+    "semantic_hash": "46fb4b9b3e98c862a0a31cc71c3b8e4e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\toolRegistry.ts": {
+    "mtime": 1780924878.2249286,
+    "ast_hash": "b56d5a6692ca72fd76f90ad0ce35ab8c",
+    "semantic_hash": "b56d5a6692ca72fd76f90ad0ce35ab8c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\toolRegistryData.ts": {
+    "mtime": 1780924878.2249286,
+    "ast_hash": "46a009eaeecf5a8df07f0d38f9fb651a",
+    "semantic_hash": "46a009eaeecf5a8df07f0d38f9fb651a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\tools\\colorPalette.ts": {
+    "mtime": 1780775004.5142283,
+    "ast_hash": "9600886b827962ce949710f537d111ed",
+    "semantic_hash": "9600886b827962ce949710f537d111ed"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\tools\\emailSignature.ts": {
+    "mtime": 1780775004.5163689,
+    "ast_hash": "7d8f671f5c1dc92576f6170a4be53a27",
+    "semantic_hash": "7d8f671f5c1dc92576f6170a4be53a27"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\tools\\favicon.ts": {
+    "mtime": 1780775004.5190341,
+    "ast_hash": "2c0a2ac73315b3a09dc4deae0622afc6",
+    "semantic_hash": "2c0a2ac73315b3a09dc4deae0622afc6"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\tools\\imageResize.ts": {
+    "mtime": 1780775004.5190341,
+    "ast_hash": "7d825b6cf69c3c588563f8c56b9bc9fc",
+    "semantic_hash": "7d825b6cf69c3c588563f8c56b9bc9fc"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\tools\\jpgPngWebp.ts": {
+    "mtime": 1780775004.5190341,
+    "ast_hash": "ef91187ae44e7bda234c4e49d9d6086f",
+    "semantic_hash": "ef91187ae44e7bda234c4e49d9d6086f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\tools\\loremIpsum.ts": {
+    "mtime": 1780775004.5228064,
+    "ast_hash": "90aa6447033ff4159c362510a5cea401",
+    "semantic_hash": "90aa6447033ff4159c362510a5cea401"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\tools\\metaTitle.ts": {
+    "mtime": 1780775004.5248191,
+    "ast_hash": "489b9fac98ae63120fca269d01b53b19",
+    "semantic_hash": "489b9fac98ae63120fca269d01b53b19"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\tools\\paletteExtractor.ts": {
+    "mtime": 1780775004.525844,
+    "ast_hash": "2f97dba5949794cdc0ed7e3a039e7dfa",
+    "semantic_hash": "2f97dba5949794cdc0ed7e3a039e7dfa"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\tools\\qrCode.ts": {
+    "mtime": 1780775004.525844,
+    "ast_hash": "c704ab691d1b72eff8824ad986520307",
+    "semantic_hash": "c704ab691d1b72eff8824ad986520307"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\tools\\wcagContrast.ts": {
+    "mtime": 1780775004.5655112,
+    "ast_hash": "e5cd6ba92e8d9549f27cb457d2365e1b",
+    "semantic_hash": "e5cd6ba92e8d9549f27cb457d2365e1b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\tools\\wordCount.ts": {
+    "mtime": 1780775004.5661867,
+    "ast_hash": "ed08b771ed7beb6bceec7701581d02b8",
+    "semantic_hash": "ed08b771ed7beb6bceec7701581d02b8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\i18n\\unitConverter.ts": {
+    "mtime": 1781685834.8792267,
+    "ast_hash": "a876236a6452b7d15626c3dc590d89cf",
+    "semantic_hash": "a876236a6452b7d15626c3dc590d89cf"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\projectsDataService.ts": {
+    "mtime": 1779539295.9044712,
+    "ast_hash": "3c0cde9f404d32d3cdf53a41660fc416",
+    "semantic_hash": "3c0cde9f404d32d3cdf53a41660fc416"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\redirects.ts": {
+    "mtime": 1780924878.2301626,
+    "ast_hash": "b8c730d6dfc7b8fa123d1c8aea0266e6",
+    "semantic_hash": "b8c730d6dfc7b8fa123d1c8aea0266e6"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\searchIndex.ts": {
+    "mtime": 1780775004.5676973,
+    "ast_hash": "f34195b6d451f676e6647168634bfd76",
+    "semantic_hash": "f34195b6d451f676e6647168634bfd76"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\seo\\serviceSchema.ts": {
+    "mtime": 1780924970.1456795,
+    "ast_hash": "61539170b1d26f48ffa8800a7ea8d202",
+    "semantic_hash": "61539170b1d26f48ffa8800a7ea8d202"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\seo\\sharedMetadata.ts": {
+    "mtime": 1780775004.592306,
+    "ast_hash": "f96d7e0decb867d1ca3d1298c0735c19",
+    "semantic_hash": "f96d7e0decb867d1ca3d1298c0735c19"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\carouselImages.ts": {
+    "mtime": 1780924878.2301626,
+    "ast_hash": "07ccfd2fcf5db5bb4d7acaa51805e2fd",
+    "semantic_hash": "07ccfd2fcf5db5bb4d7acaa51805e2fd"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\color\\contrast.ts": {
+    "mtime": 1781596359.9345682,
+    "ast_hash": "d5f994df0d8fea54fce9fbcf9f8b0fc3",
+    "semantic_hash": "d5f994df0d8fea54fce9fbcf9f8b0fc3"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\color\\convert.ts": {
+    "mtime": 1781596359.9976802,
+    "ast_hash": "ed2678e19deedc067f278579e814a477",
+    "semantic_hash": "ed2678e19deedc067f278579e814a477"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\color\\extractPalette.ts": {
+    "mtime": 1780775004.594455,
+    "ast_hash": "6e439973417fae5fcd09f8559d8d62ba",
+    "semantic_hash": "6e439973417fae5fcd09f8559d8d62ba"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\color\\palette.ts": {
+    "mtime": 1780775004.5993416,
+    "ast_hash": "eea0345dd76380d123511a61d68fc8da",
+    "semantic_hash": "eea0345dd76380d123511a61d68fc8da"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\conversionRoutes.ts": {
+    "mtime": 1780775004.600483,
+    "ast_hash": "6d8a203df7de0667c588028219caa036",
+    "semantic_hash": "6d8a203df7de0667c588028219caa036"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\dataLoader.ts": {
+    "mtime": 1780924878.2301626,
+    "ast_hash": "cd8509926e7963ef05a7448a1ff2b5c3",
+    "semantic_hash": "cd8509926e7963ef05a7448a1ff2b5c3"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\email\\buildSignatureHtml.ts": {
+    "mtime": 1781596331.875237,
+    "ast_hash": "c639c9b2d544f108a83a53738eb81ffb",
+    "semantic_hash": "c639c9b2d544f108a83a53738eb81ffb"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\email\\exportSignature.ts": {
+    "mtime": 1780775004.6070085,
+    "ast_hash": "dd2e9a675254ef44e83444f79f3fde81",
+    "semantic_hash": "dd2e9a675254ef44e83444f79f3fde81"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\email\\sanitize.ts": {
+    "mtime": 1779539297.3951533,
+    "ast_hash": "30fb98e0027cb94882803fac730f4127",
+    "semantic_hash": "30fb98e0027cb94882803fac730f4127"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\email\\signatureDefaults.ts": {
+    "mtime": 1780775004.6070085,
+    "ast_hash": "76659055335a9a0f8f309c28f5b33c20",
+    "semantic_hash": "76659055335a9a0f8f309c28f5b33c20"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\email\\socialIcons.ts": {
+    "mtime": 1778414767.4921405,
+    "ast_hash": "24517867b954cdc707643ef496f4f119",
+    "semantic_hash": "24517867b954cdc707643ef496f4f119"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\faviconGenerator.ts": {
+    "mtime": 1780775004.6101878,
+    "ast_hash": "e6cdf538e1cc8177e7e08cbb5d505a6e",
+    "semantic_hash": "e6cdf538e1cc8177e7e08cbb5d505a6e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\formats.ts": {
+    "mtime": 1780775004.6101878,
+    "ast_hash": "73ee4b1ed7b70532b619ace3ead4c851",
+    "semantic_hash": "73ee4b1ed7b70532b619ace3ead4c851"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\generateQr.ts": {
+    "mtime": 1780775004.613184,
+    "ast_hash": "bc20660f81f890b3225e1c368f8a0690",
+    "semantic_hash": "bc20660f81f890b3225e1c368f8a0690"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\iconRegistry.tsx": {
+    "mtime": 1780775004.6143732,
+    "ast_hash": "acfd78d2b9184640cf17b01e7645194f",
+    "semantic_hash": "acfd78d2b9184640cf17b01e7645194f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\image\\canvas.ts": {
+    "mtime": 1780775004.6143732,
+    "ast_hash": "55e308a5a184a38c6db27eaf4284fcd7",
+    "semantic_hash": "55e308a5a184a38c6db27eaf4284fcd7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\image\\convert.ts": {
+    "mtime": 1780775004.6172578,
+    "ast_hash": "6ab72553eefd4ca4e9d45daac5979c9d",
+    "semantic_hash": "6ab72553eefd4ca4e9d45daac5979c9d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\image\\cropMath.ts": {
+    "mtime": 1778414767.6393468,
+    "ast_hash": "0b1fdae51eff0028a073fdc21185bb1a",
+    "semantic_hash": "0b1fdae51eff0028a073fdc21185bb1a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\image\\exportCroppedImage.ts": {
+    "mtime": 1780775004.6207328,
+    "ast_hash": "62a2ece64e3346a0e5627487ace0d6b1",
+    "semantic_hash": "62a2ece64e3346a0e5627487ace0d6b1"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\image\\imageFormatConverter.ts": {
+    "mtime": 1780775004.6207328,
+    "ast_hash": "23dd150ba126356e4bc1f0cb3ea05ff4",
+    "semantic_hash": "23dd150ba126356e4bc1f0cb3ea05ff4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\image\\imageToPdf.ts": {
+    "mtime": 1778401473.02877,
+    "ast_hash": "be039a22185a4f3e26b7def6e3ae4176",
+    "semantic_hash": "be039a22185a4f3e26b7def6e3ae4176"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\image\\pdfToImage.ts": {
+    "mtime": 1778401310.829571,
+    "ast_hash": "822090b07083b79dd694b3abe6f2ac2c",
+    "semantic_hash": "822090b07083b79dd694b3abe6f2ac2c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\image\\uploadTypes.ts": {
+    "mtime": 1780775004.6236527,
+    "ast_hash": "e81d2abbfbed9dc52020fb35caee9bc7",
+    "semantic_hash": "e81d2abbfbed9dc52020fb35caee9bc7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\image\\webp.ts": {
+    "mtime": 1780775004.6236527,
+    "ast_hash": "a0c2cdc221c08d0b8d1bc5a2f377bc96",
+    "semantic_hash": "a0c2cdc221c08d0b8d1bc5a2f377bc96"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\image\\webpQueue.ts": {
+    "mtime": 1780775004.6270375,
+    "ast_hash": "cdf53759c9f3a5dd5da3c12bbe36e9fa",
+    "semantic_hash": "cdf53759c9f3a5dd5da3c12bbe36e9fa"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\image\\webpReport.ts": {
+    "mtime": 1782241179.2031684,
+    "ast_hash": "53a9a49b4a2dcbb1e7f6d7d6875358b7",
+    "semantic_hash": "53a9a49b4a2dcbb1e7f6d7d6875358b7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\metaLength.ts": {
+    "mtime": 1780775004.6314328,
+    "ast_hash": "21422c5223741f24f85ca1284b00ade7",
+    "semantic_hash": "21422c5223741f24f85ca1284b00ade7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\text\\convert.ts": {
+    "mtime": 1780775004.6314328,
+    "ast_hash": "8d34fbcabdca6ed4c58f9af2f5b29145",
+    "semantic_hash": "8d34fbcabdca6ed4c58f9af2f5b29145"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\text\\loremIpsum.ts": {
+    "mtime": 1781562895.0996385,
+    "ast_hash": "2a017416775527e2f8c5d1a6645ed4ba",
+    "semantic_hash": "2a017416775527e2f8c5d1a6645ed4ba"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\text\\readability.ts": {
+    "mtime": 1781607598.063681,
+    "ast_hash": "43439576a10cec96b4841efca6cebaca",
+    "semantic_hash": "43439576a10cec96b4841efca6cebaca"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\text\\syllables.ts": {
+    "mtime": 1782241190.6135292,
+    "ast_hash": "24ff8848ec5ac89c4e55850578e1ecbe",
+    "semantic_hash": "24ff8848ec5ac89c4e55850578e1ecbe"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\text\\wordCount.ts": {
+    "mtime": 1781269991.8567104,
+    "ast_hash": "ca5e9f3bc7bd1ea5b17ea6f2886cc05d",
+    "semantic_hash": "ca5e9f3bc7bd1ea5b17ea6f2886cc05d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\unitLabels.ts": {
+    "mtime": 1780775004.6442811,
+    "ast_hash": "cba2f7fa0e16c3b8ca8449fd3dbfa5b8",
+    "semantic_hash": "cba2f7fa0e16c3b8ca8449fd3dbfa5b8"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\units\\conversions.ts": {
+    "mtime": 1780924970.2047565,
+    "ast_hash": "e3251cd8452d010163861b6c2d7245de",
+    "semantic_hash": "e3251cd8452d010163861b6c2d7245de"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\tools\\units\\specialConverters.ts": {
+    "mtime": 1780775004.6499617,
+    "ast_hash": "9ca15bd04415a3d7ddfa03f8f6a9a589",
+    "semantic_hash": "9ca15bd04415a3d7ddfa03f8f6a9a589"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\lib\\uiClasses.ts": {
+    "mtime": 1780775004.6499617,
+    "ast_hash": "2afb235cdc34fb239be13c8c259be745",
+    "semantic_hash": "2afb235cdc34fb239be13c8c259be745"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\tests\\a11y-keyboard.spec.ts": {
+    "mtime": 1781867443.4156978,
+    "ast_hash": "b80ba0f461615b5154a60dbcb397fe17",
+    "semantic_hash": "b80ba0f461615b5154a60dbcb397fe17"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\tests\\a11y.spec.ts": {
+    "mtime": 1781725256.9837356,
+    "ast_hash": "9d2ef9aefd6c35d5be4c4c7bae293c1f",
+    "semantic_hash": "9d2ef9aefd6c35d5be4c4c7bae293c1f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\tests\\example.spec.ts": {
+    "mtime": 1780775004.732601,
+    "ast_hash": "e1d19411526439238f2a147a469ce73d",
+    "semantic_hash": "e1d19411526439238f2a147a469ce73d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\tests\\readability.test.ts": {
+    "mtime": 1781609677.5611732,
+    "ast_hash": "cbabb3d222502f7d91f9cab4d23a4dee",
+    "semantic_hash": "cbabb3d222502f7d91f9cab4d23a4dee"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\article.ts": {
+    "mtime": 1780775004.7356727,
+    "ast_hash": "21f6f431220048e7b6bbb5e4b5f8a1ea",
+    "semantic_hash": "21f6f431220048e7b6bbb5e4b5f8a1ea"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\global.d.ts": {
+    "mtime": 1778414768.741892,
+    "ast_hash": "1e733660f6ce06c1efc0ca6e4a87ab36",
+    "semantic_hash": "1e733660f6ce06c1efc0ca6e4a87ab36"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\locale.ts": {
+    "mtime": 1778414768.7623897,
+    "ast_hash": "a975d799b58fc004535eeae36e6ad923",
+    "semantic_hash": "a975d799b58fc004535eeae36e6ad923"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\project.ts": {
+    "mtime": 1780775004.7356727,
+    "ast_hash": "e8bfbc43a16ca574a9005dee6e507e9b",
+    "semantic_hash": "e8bfbc43a16ca574a9005dee6e507e9b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\testimonial.ts": {
+    "mtime": 1780775004.7387679,
+    "ast_hash": "48668179271333695245fb6488db425f",
+    "semantic_hash": "48668179271333695245fb6488db425f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\tool-page.ts": {
+    "mtime": 1780775004.7387679,
+    "ast_hash": "03bffc0322ecfb442d284e2a33406685",
+    "semantic_hash": "03bffc0322ecfb442d284e2a33406685"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\tools\\color.ts": {
+    "mtime": 1779545100.79572,
+    "ast_hash": "71540138362d295930cdb903558d72b0",
+    "semantic_hash": "71540138362d295930cdb903558d72b0"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\tools\\common.ts": {
+    "mtime": 1780924878.2373407,
+    "ast_hash": "376f6f93d0ead43aabed94d023b0eca0",
+    "semantic_hash": "376f6f93d0ead43aabed94d023b0eca0"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\tools\\email.ts": {
+    "mtime": 1780775004.7449658,
+    "ast_hash": "2ec421a91b9684850c31ad4d334e2e19",
+    "semantic_hash": "2ec421a91b9684850c31ad4d334e2e19"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\tools\\image-format-converter.ts": {
+    "mtime": 1780775004.7449658,
+    "ast_hash": "1acb9d03b258253edc92c6485eff598a",
+    "semantic_hash": "1acb9d03b258253edc92c6485eff598a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\tools\\image-to-pdf-converter.ts": {
+    "mtime": 1780775004.7488666,
+    "ast_hash": "1f9098e0e3ec84c87be9e198e28a76e7",
+    "semantic_hash": "1f9098e0e3ec84c87be9e198e28a76e7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\tools\\image.ts": {
+    "mtime": 1780775004.7488666,
+    "ast_hash": "b7cd76b421d2543a1aba8464ddc7123c",
+    "semantic_hash": "b7cd76b421d2543a1aba8464ddc7123c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\tools\\pdf-to-image-converter.ts": {
+    "mtime": 1778401302.218633,
+    "ast_hash": "7bf38d9990069c80a1edc24a91de48c9",
+    "semantic_hash": "7bf38d9990069c80a1edc24a91de48c9"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\tools\\qr.ts": {
+    "mtime": 1770841803.3786886,
+    "ast_hash": "307f5cdff8872bcbdcc560121a1b377d",
+    "semantic_hash": "307f5cdff8872bcbdcc560121a1b377d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\tools\\text-format-converter.ts": {
+    "mtime": 1778414769.017133,
+    "ast_hash": "376dda14432dd21caaaf33c1a97661a3",
+    "semantic_hash": "376dda14432dd21caaaf33c1a97661a3"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\types\\tools\\text.ts": {
+    "mtime": 1772038596.4877021,
+    "ast_hash": "166668445210d17453d7b2f9183d4e3f",
+    "semantic_hash": "166668445210d17453d7b2f9183d4e3f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\absoluteUrl.ts": {
+    "mtime": 1780775004.7527657,
+    "ast_hash": "37e3a4434f6351ccbcce41af97b36117",
+    "semantic_hash": "37e3a4434f6351ccbcce41af97b36117"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\blogCategory.ts": {
+    "mtime": 1767125808.7740388,
+    "ast_hash": "37f491865dc569b454a602dfb095a1e3",
+    "semantic_hash": "37f491865dc569b454a602dfb095a1e3"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\canvasToBlob.ts": {
+    "mtime": 1779539299.589844,
+    "ast_hash": "bab54ec6191e97cbfa7f5475a647f6d7",
+    "semantic_hash": "bab54ec6191e97cbfa7f5475a647f6d7"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\clipboard.ts": {
+    "mtime": 1780775004.7534301,
+    "ast_hash": "3eebc355f4a09dcfe901162f2a8846d5",
+    "semantic_hash": "3eebc355f4a09dcfe901162f2a8846d5"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\conversionConstants.ts": {
+    "mtime": 1780924878.2373407,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\download.ts": {
+    "mtime": 1780775004.7571876,
+    "ast_hash": "9e5842345e8b62b6558432648e4c412f",
+    "semantic_hash": "9e5842345e8b62b6558432648e4c412f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\fileFormat.ts": {
+    "mtime": 1780775004.7596173,
+    "ast_hash": "5a6941e76f912e557be5c1d92e36b246",
+    "semantic_hash": "5a6941e76f912e557be5c1d92e36b246"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\formatBytes.ts": {
+    "mtime": 1770904433.6061342,
+    "ast_hash": "f22bc5e15c2d2385140ca0500a78aa87",
+    "semantic_hash": "f22bc5e15c2d2385140ca0500a78aa87"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\loadImage.ts": {
+    "mtime": 1780775004.7596173,
+    "ast_hash": "61ade9a577296a374ba4e744b311ee9f",
+    "semantic_hash": "61ade9a577296a374ba4e744b311ee9f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\objectUrl.ts": {
+    "mtime": 1770904444.017362,
+    "ast_hash": "518ff46ddc40dec63dcddf803d524b86",
+    "semantic_hash": "518ff46ddc40dec63dcddf803d524b86"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\readFileAsDataUrl.ts": {
+    "mtime": 1780775004.7629957,
+    "ast_hash": "2aab650e6746df8bbba69b2a8fe0b460",
+    "semantic_hash": "2aab650e6746df8bbba69b2a8fe0b460"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\slugify.ts": {
+    "mtime": 1760630784.167874,
+    "ast_hash": "7aa5b0cd133138310849cdc2fe2ea00c",
+    "semantic_hash": "7aa5b0cd133138310849cdc2fe2ea00c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\stripHtmlTags.ts": {
+    "mtime": 1781571387.623216,
+    "ast_hash": "827c21ae5012275fe579d2492580f36a",
+    "semantic_hash": "827c21ae5012275fe579d2492580f36a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\utils\\zip.ts": {
+    "mtime": 1780775004.7650318,
+    "ast_hash": "36d80baa7ab71448b18468f62bb4fb8a",
+    "semantic_hash": "36d80baa7ab71448b18468f62bb4fb8a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\CONVERSION_MATRIX.md": {
+    "mtime": 1780578482.3659973,
+    "ast_hash": "5cb07063538353f3ae894608ddfbe97a",
+    "semantic_hash": "5cb07063538353f3ae894608ddfbe97a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\DARK_THEME_PLAN.md": {
+    "mtime": 1781592927.4621391,
+    "ast_hash": "00bd44591be55942a527bec7a8aea83e",
+    "semantic_hash": "00bd44591be55942a527bec7a8aea83e"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\README_STRATEGIA.md": {
+    "mtime": 1781688156.362249,
+    "ast_hash": "6c842933d1d58402c8f309fb5e6f8248",
+    "semantic_hash": "6c842933d1d58402c8f309fb5e6f8248"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\SKILLE_TRESCI_JEZYKOWE.md": {
+    "mtime": 1781865893.097515,
+    "ast_hash": "a2da8d7b56b4399eb5a28e69a52f5fbe",
+    "semantic_hash": "a2da8d7b56b4399eb5a28e69a52f5fbe"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\SKILLS_AUDIT.md": {
+    "mtime": 1781868262.3224962,
+    "ast_hash": "6bf33d29f6c3512d385eb791de1bc2ba",
+    "semantic_hash": "6bf33d29f6c3512d385eb791de1bc2ba"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\STYL_PISARSKI.md": {
+    "mtime": 1781687446.4960876,
+    "ast_hash": "7aae33a1162ae97a0894d73715b27fdd",
+    "semantic_hash": "7aae33a1162ae97a0894d73715b27fdd"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\WCAG_ACCESSIBILITY_REFACTOR_PLAN.md": {
+    "mtime": 1781725350.6268678,
+    "ast_hash": "0d344a8607efa14c0c0a3ced6471fea5",
+    "semantic_hash": "0d344a8607efa14c0c0a3ced6471fea5"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\a11y-audit\\01-atoms.md": {
+    "mtime": 1781726303.5391355,
+    "ast_hash": "e7aa2892d80f40a4ae56cbc98070b6b1",
+    "semantic_hash": "e7aa2892d80f40a4ae56cbc98070b6b1"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\a11y-audit\\02-molecules.md": {
+    "mtime": 1781728047.9363227,
+    "ast_hash": "9ca473f43ccc7b98d263a264b946c263",
+    "semantic_hash": "9ca473f43ccc7b98d263a264b946c263"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\a11y-audit\\03-organisms-sections.md": {
+    "mtime": 1781777251.780141,
+    "ast_hash": "7f21b770b457f43e5ad3bff6eedcdc46",
+    "semantic_hash": "7f21b770b457f43e5ad3bff6eedcdc46"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\a11y-audit\\04-organisms-navigation.md": {
+    "mtime": 1781777351.5728064,
+    "ast_hash": "88201dcb6a0bdafb26044909df78e52d",
+    "semantic_hash": "88201dcb6a0bdafb26044909df78e52d"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\a11y-audit\\05-organisms-carousels.md": {
+    "mtime": 1781777501.8309479,
+    "ast_hash": "c8283a6612cecd8e15601b5e30f1f69b",
+    "semantic_hash": "c8283a6612cecd8e15601b5e30f1f69b"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\a11y-audit\\06-organisms-tools.md": {
+    "mtime": 1781777641.1195116,
+    "ast_hash": "7d138ca31c2ac83aa13f137f09306179",
+    "semantic_hash": "7d138ca31c2ac83aa13f137f09306179"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\a11y-audit\\07-organisms-misc.md": {
+    "mtime": 1781777812.182473,
+    "ast_hash": "75e33fa43849d0491c3a2571a2c31344",
+    "semantic_hash": "75e33fa43849d0491c3a2571a2c31344"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\a11y-audit\\08-pages.md": {
+    "mtime": 1781777947.2430758,
+    "ast_hash": "8195efad0b911ec70b4a684d9e5fd05a",
+    "semantic_hash": "8195efad0b911ec70b4a684d9e5fd05a"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\a11y-audit\\09-templates.md": {
+    "mtime": 1781778016.8406827,
+    "ast_hash": "691f10c5dfccbe3488844c24b8177ee4",
+    "semantic_hash": "691f10c5dfccbe3488844c24b8177ee4"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\a11y-audit\\10-backlog.md": {
+    "mtime": 1781787191.2018807,
+    "ast_hash": "a2f2cd23c6f38f4c629edd98b673cb1f",
+    "semantic_hash": "a2f2cd23c6f38f4c629edd98b673cb1f"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\a11y-audit\\11-keyboard-findings.md": {
+    "mtime": 1781867666.4876056,
+    "ast_hash": "86935405b80d38221c454c489141963c",
+    "semantic_hash": "86935405b80d38221c454c489141963c"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\docs\\a11y-audit\\README.md": {
+    "mtime": 1781778100.384498,
+    "ast_hash": "a5763065a7ce2195faadb659c66c1a49",
+    "semantic_hash": "a5763065a7ce2195faadb659c66c1a49"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\apple-touch-icon.png": {
+    "mtime": 1757934102.2154076,
+    "ast_hash": "3f3fc917954552d550f5afdd98d3ed54",
+    "semantic_hash": "3f3fc917954552d550f5afdd98d3ed54"
+  },
+  "C:\\Users\\proje\\Documents\\GitHub\\arteon\\app\\icon-512x512.png": {
+    "mtime": 1757934102.2533686,
+    "ast_hash": "600d3c1ce73413f44375059d5d4a8a64",
+    "semantic_hash": "600d3c1ce73413f44375059d5d4a8a64"
+  }
+}

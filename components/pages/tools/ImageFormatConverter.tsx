@@ -14,6 +14,10 @@ import { useConversionQueue } from '@/hooks/useConversionQueue';
 import { cn } from '@/lib/clsx';
 import { useDictionary } from '@/lib/LocaleContext';
 import {
+  getConversionStatusBadgeVariant,
+  getConversionStatusLabel,
+} from '@/lib/tools/conversionStatus';
+import {
   FORMAT_EXTENSION,
   FORMAT_LABELS,
   hasQualitySlider,
@@ -326,14 +330,12 @@ export default function ImageFormatConverter({
           {files.length > 0 && (
             <div className='space-y-2 text-sm!'>
               {files.map(item => {
-                const statusLabel =
-                  item.status === 'pending'
-                    ? t.statusPending
-                    : item.status === 'processing'
-                      ? t.statusProcessing
-                      : item.status === 'done'
-                        ? t.statusDone
-                        : t.statusError;
+                const statusLabel = getConversionStatusLabel(item.status, {
+                  pending: t.statusPending,
+                  processing: t.statusProcessing,
+                  done: t.statusDone,
+                  error: t.statusError,
+                });
 
                 const diffPercent =
                   item.outputSize > 0 && item.inputSize > 0
@@ -374,13 +376,7 @@ export default function ImageFormatConverter({
                     actions={
                       <div className='flex items-center gap-1'>
                         <Badge
-                          variant={
-                            item.status === 'done'
-                              ? 'success'
-                              : item.status === 'error'
-                                ? 'error'
-                                : 'neutral'
-                          }
+                          variant={getConversionStatusBadgeVariant(item.status)}
                           size='md'
                         >
                           {statusLabel}

@@ -27,24 +27,106 @@ function scoreToGrade(score: number): number {
   return 16; // graduate / specialist
 }
 
+/** Gulpease grade: approximate education level (elementary=3, middle=7, high=11, university=15) */
+function gulpeaseGrade(gulpease: number): number {
+  if (gulpease >= 80) return 3;
+  if (gulpease >= 60) return 7;
+  if (gulpease >= 40) return 11;
+  return 15;
+}
+
+/** LIX grade mapping: <25=children, 25-35=easy, 35-45=average, 45-55=difficult, >55=very difficult */
+function lixGrade(lix: number): number {
+  if (lix < 25) return 3;
+  if (lix < 35) return 6;
+  if (lix < 45) return 9;
+  if (lix < 55) return 13;
+  return 16;
+}
+
+type FleschContext = { text: string; words: number; sentences: number };
+type FleschFormula = (
+  ASL: number,
+  ASW: number,
+  ctx: FleschContext,
+) => { score: number; grade: number };
+
+const standardFlesch =
+  (coefficient: number): FleschFormula =>
+  (ASL, ASW) => {
+    const score = 206.835 - 1.015 * ASL - coefficient * ASW;
+    return { score, grade: scoreToGrade(score) };
+  };
+
+/** Fernández-Huerta formula (Spanish/Portuguese/Romanian) — Romanian is a Romance
+ * language with similar syllable structure */
+const fernandezHuerta: FleschFormula = (ASL, ASW) => {
+  const score = 206.84 - 60 * ASW - 1.02 * ASL;
+  return { score, grade: scoreToGrade(score) };
+};
+
+/** LIX - Björnsson Readability Index (Scandinavian + Finnish). Finnish is
+ * agglutinative with very long compound words; LIX (word-length-based) is a
+ * better fit than syllable-based Flesch. LIX = ASL + (% of words > 6 chars) */
+const lixFormula: FleschFormula = (ASL, _ASW, { text }) => {
+  const wordList = text.match(/\p{L}+/gu) || [];
+  const longWords = wordList.filter(w => w.length > 6).length;
+  const longPct = wordList.length > 0 ? (longWords / wordList.length) * 100 : 0;
+  const lix = ASL + longPct;
+  // Map LIX (typically 20-60) to Flesch-like 0-100 scale (inverted: low LIX = easy)
+  const score = Math.max(0, Math.min(100, 100 - (lix - 20) * 1.67));
+  return { score, grade: lixGrade(lix) };
+};
+
+const FLESCH_FORMULAS: Partial<Record<Locale, FleschFormula>> = {
+  // Amstad formula for German
+  de: (ASL, ASW) => {
+    const score = 180 - ASL - 58.5 * ASW;
+    return { score, grade: scoreToGrade(score) };
+  },
+  es: fernandezHuerta,
+  pt: fernandezHuerta,
+  ro: fernandezHuerta,
+  // Flesch-Douma formula (Dutch)
+  nl: (ASL, ASW) => {
+    const score = 206.835 - 0.93 * ASL - 77 * ASW;
+    return { score, grade: scoreToGrade(score) };
+  },
+  // Gulpease index (Italian) - native scale 0-100, character-based
+  it: (_ASL, _ASW, { text, sentences, words }) => {
+    const chars = text.replace(/\s/g, '').length;
+    const gulpease = 89 + (300 * sentences - 10 * chars) / words;
+    const score = Math.min(100, Math.max(0, gulpease));
+    return { score, grade: gulpeaseGrade(gulpease) };
+  },
+  // Kandel-Moles adaptation (French)
+  fr: (ASL, ASW) => {
+    const score = 207 - 1.015 * ASL - 73.6 * ASW;
+    return { score, grade: scoreToGrade(score) };
+  },
+  // Polish adaptation - reduced ASW coefficient (84.6 → 60) to account for
+  // Polish inflectional morphology producing longer words (~1.9 syl/word vs EN ~1.3)
+  pl: standardFlesch(60),
+  // Czech adaptation - Slavic inflectional language; higher ASW than Polish
+  cs: standardFlesch(52),
+  // Hungarian adaptation - agglutinative language with very long words (~2.0+ syl/word)
+  hu: standardFlesch(55),
+  // Greek adaptation - inflectional, longer words than EN but less extreme than PL/HU
+  el: standardFlesch(66),
+  sv: lixFormula,
+  da: lixFormula,
+  no: lixFormula,
+  fi: lixFormula,
+};
+
 /**
  * Calculate Flesch Reading Ease and Flesch-Kincaid Grade Level.
  *
  * Requires at least 1 sentence and 1 word to produce a meaningful result.
  * Returns null scores when the text is too short.
  *
- * Language-adapted formulas are used where available:
- * - DE: Amstad formula
- * - ES/PT/RO: Fernández-Huerta formula (Romance languages)
- * - NL: Flesch-Douma formula
- * - IT: Gulpease index (native Italian, character-based)
- * - FR: Kandel-Moles adaptation
- * - PL: Flesch with reduced ASW coefficient (60) for inflectional morphology
- * - CS: Flesch with reduced ASW coefficient (52) for Slavic morphology
- * - HU: Flesch with reduced ASW coefficient (55) for agglutinative morphology
- * - EL: Flesch with reduced ASW coefficient (66) for Greek morphology
- * - SV/DA/NO/FI: LIX (Björnsson Readability Index) mapped to 0-100 scale
- * - EN: standard Flesch formula
+ * Language-adapted formulas are used where available (see `FLESCH_FORMULAS`);
+ * locales without an adapted formula fall back to the standard EN Flesch formula.
  */
 export function calculateReadability(
   text: string,
@@ -61,103 +143,18 @@ export function calculateReadability(
   const ASL = words / sentences; // average sentence length
   const ASW = syllables / words; // average syllables per word
 
-  let fleschScore: number;
-  let fleschGrade: number;
-
-  switch (locale) {
-    case 'de': {
-      // Amstad formula for German
-      fleschScore = 180 - ASL - 58.5 * ASW;
-      fleschGrade = scoreToGrade(fleschScore);
-      break;
-    }
-    case 'es':
-    case 'pt':
-    case 'ro': {
-      // Fernández-Huerta formula (Spanish/Portuguese/Romanian)
-      // Romanian is a Romance language with similar syllable structure
-      fleschScore = 206.84 - 60 * ASW - 1.02 * ASL;
-      fleschGrade = scoreToGrade(fleschScore);
-      break;
-    }
-    case 'nl': {
-      // Flesch-Douma formula (Dutch)
-      fleschScore = 206.835 - 0.93 * ASL - 77 * ASW;
-      fleschGrade = scoreToGrade(fleschScore);
-      break;
-    }
-    case 'it': {
-      // Gulpease index (Italian) - native scale 0-100, character-based
-      const chars = text.replace(/\s/g, '').length;
-      const gulpease = 89 + (300 * sentences - 10 * chars) / words;
-      fleschScore = Math.min(100, Math.max(0, gulpease));
-      // Gulpease grade: approximate education level (elementary=3, middle=7, high=11, university=15)
-      fleschGrade =
-        gulpease >= 80 ? 3 : gulpease >= 60 ? 7 : gulpease >= 40 ? 11 : 15;
-      break;
-    }
-    case 'fr': {
-      // Kandel-Moles adaptation (French)
-      fleschScore = 207 - 1.015 * ASL - 73.6 * ASW;
-      fleschGrade = scoreToGrade(fleschScore);
-      break;
-    }
-    case 'pl': {
-      // Polish adaptation - reduced ASW coefficient (84.6 → 60) to account for
-      // Polish inflectional morphology producing longer words (~1.9 syl/word vs EN ~1.3)
-      fleschScore = 206.835 - 1.015 * ASL - 60 * ASW;
-      fleschGrade = scoreToGrade(fleschScore);
-      break;
-    }
-    case 'cs': {
-      // Czech adaptation - Slavic inflectional language; higher ASW than Polish
-      fleschScore = 206.835 - 1.015 * ASL - 52 * ASW;
-      fleschGrade = scoreToGrade(fleschScore);
-      break;
-    }
-    case 'hu': {
-      // Hungarian adaptation - agglutinative language with very long words (~2.0+ syl/word)
-      fleschScore = 206.835 - 1.015 * ASL - 55 * ASW;
-      fleschGrade = scoreToGrade(fleschScore);
-      break;
-    }
-    case 'el': {
-      // Greek adaptation - inflectional, longer words than EN but less extreme than PL/HU
-      fleschScore = 206.835 - 1.015 * ASL - 66 * ASW;
-      fleschGrade = scoreToGrade(fleschScore);
-      break;
-    }
-    case 'sv':
-    case 'da':
-    case 'no':
-    case 'fi': {
-      // LIX - Björnsson Readability Index (Scandinavian + Finnish)
-      // Finnish is agglutinative with very long compound words;
-      // LIX (word-length-based) is a better fit than syllable-based Flesch.
-      // LIX = ASL + (percentage of words longer than 6 characters)
-      const wordList = text.match(/\p{L}+/gu) || [];
-      const longWords = wordList.filter(w => w.length > 6).length;
-      const longPct =
-        wordList.length > 0 ? (longWords / wordList.length) * 100 : 0;
-      const lix = ASL + longPct;
-      // Map LIX (typically 20-60) to Flesch-like 0-100 scale (inverted: low LIX = easy)
-      fleschScore = Math.max(0, Math.min(100, 100 - (lix - 20) * 1.67));
-      // LIX grade mapping: <25=children, 25-35=easy, 35-45=average, 45-55=difficult, >55=very difficult
-      fleschGrade =
-        lix < 25 ? 3 : lix < 35 ? 6 : lix < 45 ? 9 : lix < 55 ? 13 : 16;
-      break;
-    }
-    default: {
-      // Standard Flesch formulas (EN only)
-      fleschScore = 206.835 - 1.015 * ASL - 84.6 * ASW;
-      fleschGrade = 0.39 * ASL + 11.8 * ASW - 15.59;
-      break;
-    }
-  }
+  const formula = FLESCH_FORMULAS[locale];
+  const { score, grade } = formula
+    ? formula(ASL, ASW, { text, words, sentences })
+    : {
+        // Standard Flesch formulas (EN only)
+        score: 206.835 - 1.015 * ASL - 84.6 * ASW,
+        grade: 0.39 * ASL + 11.8 * ASW - 15.59,
+      };
 
   // Clamp values to reasonable ranges
-  fleschScore = Math.round(Math.max(0, Math.min(100, fleschScore)) * 10) / 10;
-  fleschGrade = Math.round(Math.max(0, fleschGrade) * 10) / 10;
+  const fleschScore = Math.round(Math.max(0, Math.min(100, score)) * 10) / 10;
+  const fleschGrade = Math.round(Math.max(0, grade) * 10) / 10;
 
   return { fleschScore, fleschGrade, syllables };
 }

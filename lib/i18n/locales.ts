@@ -1,19 +1,3 @@
-import type {
-  Locale,
-  LocaleConfig,
-  LegalLink,
-  NavigationUi,
-  FooterUi,
-  DesktopOnlyUi,
-} from '@/types/locale';
-export type {
-  LocaleConfig,
-  LegalLink,
-  NavigationUi,
-  FooterUi,
-  DesktopOnlyUi,
-} from '@/types/locale';
-
 import csDict from '@/data/cs/dictionary.json';
 import daDict from '@/data/da/dictionary.json';
 import deDict from '@/data/de/dictionary.json';
@@ -38,6 +22,22 @@ import type {
   MobileNavDictionary,
   InfoBannerDictionary,
 } from '@/lib/i18n/getDictionary';
+import type {
+  Locale,
+  LocaleConfig,
+  LegalLink,
+  NavigationUi,
+  FooterUi,
+  DesktopOnlyUi,
+} from '@/types/locale';
+
+export type {
+  LocaleConfig,
+  LegalLink,
+  NavigationUi,
+  FooterUi,
+  DesktopOnlyUi,
+} from '@/types/locale';
 
 const dicts = {
   pl: plDict,

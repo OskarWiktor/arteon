@@ -340,8 +340,13 @@ export function searchItems(
 
       for (const term of terms) {
         if (titleLower.includes(term)) {
-          score +=
-            titleLower === term ? 100 : titleLower.startsWith(term) ? 50 : 20;
+          if (titleLower === term) {
+            score += 100;
+          } else if (titleLower.startsWith(term)) {
+            score += 50;
+          } else {
+            score += 20;
+          }
         }
         if (descLower.includes(term)) {
           score += 10;

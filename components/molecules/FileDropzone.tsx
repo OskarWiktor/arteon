@@ -16,7 +16,7 @@ interface FileDropzoneProps {
 }
 
 const FileDropzoneClasses =
-  'hover:border-light flex cursor-pointer flex-col items-center justify-center rounded-lg border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center transition hover:bg-neutral-100';
+  'hover:border-light flex cursor-pointer flex-col items-center justify-center rounded-lg border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center transition hover:bg-neutral-100 focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2';
 
 /**
  * File upload dropzone: a clickable, drag-and-drop label wrapping a hidden file input,
@@ -59,8 +59,9 @@ export default function FileDropzone({
         accept={accept}
         multiple={multiple}
         onChange={handleFileChange}
-        className='hidden'
+        className='sr-only'
         disabled={disabled}
+        aria-label={`${dragLabel} ${clickLabel}`}
       />
     </Label>
   );

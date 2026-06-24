@@ -189,9 +189,6 @@ function articleAssetsLastmod(article) {
 const ROUTE_LASTMOD = buildRouteLastmodMap();
 const PROJECTS = readProjects();
 const ARTICLES = readBlog();
-const IS_PROD =
-  process.env.VERCEL_ENV === 'production' ||
-  process.env.NODE_ENV === 'production';
 
 // ---------------------------------------------------------------------------
 // Locale data imported from single source of truth: lib/sitemap-locale-config.cjs
@@ -294,23 +291,6 @@ function getAlternateRefs(loc) {
 // ---------------------------------------------------------------------------
 // Priority & changefreq classification
 // ---------------------------------------------------------------------------
-const LOCALE_PREFIXES = [
-  'en',
-  'de',
-  'es',
-  'fr',
-  'pt',
-  'it',
-  'ro',
-  'nl',
-  'hu',
-  'cs',
-  'sv',
-  'da',
-  'no',
-  'fi',
-  'el',
-];
 const TOOLS_BASE_PATHS = Object.values(LOCALE_TOOLS_BASE);
 
 function isToolPage(loc) {
@@ -553,7 +533,7 @@ module.exports = {
     // Add ALL tool pages explicitly from TOOL_LOCALE_PATHS — do not rely on
     // next-sitemap auto-discovery which can silently drop pages (e.g. favicon tool).
     for (const [, localePaths] of TOOL_LOCALE_PATHS.entries()) {
-      for (const [lang, toolPath] of Object.entries(localePaths)) {
+      for (const toolPath of Object.values(localePaths)) {
         const loc = toolPath;
         // Skip if already added from ROUTE_LASTMOD
         if (add.some(e => e.loc === loc)) continue;

@@ -2,84 +2,63 @@
 
 import dynamic from 'next/dynamic';
 import ToolEditorSkeleton from '@/components/pages/skeletons/ToolEditorSkeleton';
+import type { ToolItemKey } from '@/types/tools/common';
+import type {
+  ImageFormat,
+  OutputFormat,
+} from '@/types/tools/image-format-converter';
+import type { ImageFormat as PdfSourceImageFormat } from '@/types/tools/image-to-pdf-converter';
+import type { OutputImageFormat } from '@/types/tools/pdf-to-image-converter';
+import type { TextConversionType } from '@/types/tools/text-format-converter';
 
 const L = () => <ToolEditorSkeleton />;
 
 const STANDALONE = {
-  favicon: dynamic(() => import('./FaviconGenerator'), {
-    ssr: false,
-    loading: L,
-  }),
-  qrCode: dynamic(() => import('./QrCodeGenerator'), {
-    ssr: false,
-    loading: L,
-  }),
+  favicon: dynamic(() => import('./FaviconGenerator'), { loading: L }),
+  qrCode: dynamic(() => import('./QrCodeGenerator'), { loading: L }),
   emailSignature: dynamic(() => import('./EmailSignatureGenerator'), {
-    ssr: false,
     loading: L,
   }),
   colorPalette: dynamic(() => import('./ColorPaletteGenerator'), {
-    ssr: false,
     loading: L,
   }),
   contrastChecker: dynamic(() => import('./WcagContrastChecker'), {
-    ssr: false,
     loading: L,
   }),
-  wordCounter: dynamic(() => import('./WordCountTool'), {
-    ssr: false,
-    loading: L,
-  }),
-  loremIpsum: dynamic(() => import('./LoremIpsumGenerator'), {
-    ssr: false,
-    loading: L,
-  }),
+  wordCounter: dynamic(() => import('./WordCountTool'), { loading: L }),
+  loremIpsum: dynamic(() => import('./LoremIpsumGenerator'), { loading: L }),
   metaCounter: dynamic(() => import('./MetaTitleDescriptionTool'), {
-    ssr: false,
     loading: L,
   }),
-  jpgToWebp: dynamic(() => import('./JpgPngToWebp'), {
-    ssr: false,
-    loading: L,
-  }),
-  imageResize: dynamic(() => import('./ImageResizeTool'), {
-    ssr: false,
-    loading: L,
-  }),
+  jpgToWebp: dynamic(() => import('./JpgPngToWebp'), { loading: L }),
+  imageResize: dynamic(() => import('./ImageResizeTool'), { loading: L }),
   paletteExtractor: dynamic(() => import('./PaletteExtractor'), {
-    ssr: false,
     loading: L,
   }),
 } as const;
 
 const LazyImageConverter = dynamic(() => import('./ImageFormatConverter'), {
-  ssr: false,
   loading: L,
 });
 const LazyImageToPdf = dynamic(() => import('./ImageToPdfConverter'), {
-  ssr: false,
   loading: L,
 });
 const LazyPdfToImage = dynamic(() => import('./PdfToImageConverter'), {
-  ssr: false,
   loading: L,
 });
 const LazyTextConverter = dynamic(() => import('./TextFormatConverter'), {
-  ssr: false,
   loading: L,
 });
 const LazyBase64 = dynamic(() => import('./Base64Converter'), {
-  ssr: false,
   loading: L,
 });
 const LazyUnit = dynamic(() => import('./UnitConverter'), {
-  ssr: false,
   loading: L,
 });
 
 interface ImgCfg {
-  s: string;
-  t: string;
+  s: ImageFormat;
+  t: OutputFormat;
   a: string;
   q?: number;
 }
@@ -161,7 +140,7 @@ const IMG: Record<string, ImgCfg> = {
 };
 
 interface ImgPdfCfg {
-  s: string;
+  s: PdfSourceImageFormat;
   a: string;
 }
 
@@ -175,14 +154,14 @@ const IMG_PDF: Record<string, ImgPdfCfg> = {
   svgToPdf: { s: 'svg', a: 'image/svg+xml,.svg' },
 };
 
-const PDF_IMG: Record<string, string> = {
+const PDF_IMG: Record<string, OutputImageFormat> = {
   pdfToJpg: 'jpg',
   pdfToPng: 'png',
   pdfToWebp: 'webp',
 };
 
 interface TextCfg {
-  c: string;
+  c: TextConversionType;
   s: string;
   t: string;
 }
@@ -230,8 +209,8 @@ export default function DynamicToolRenderer({ toolKey }: { toolKey: string }) {
   if (img)
     return (
       <LazyImageConverter
-        sourceFormat={img.s as any}
-        targetFormat={img.t as any}
+        sourceFormat={img.s}
+        targetFormat={img.t}
         acceptMime={img.a}
         {...(img.q != null && { defaultQuality: img.q })}
       />
@@ -239,18 +218,16 @@ export default function DynamicToolRenderer({ toolKey }: { toolKey: string }) {
 
   const imgPdf = IMG_PDF[key];
   if (imgPdf)
-    return (
-      <LazyImageToPdf sourceFormat={imgPdf.s as any} acceptMime={imgPdf.a} />
-    );
+    return <LazyImageToPdf sourceFormat={imgPdf.s} acceptMime={imgPdf.a} />;
 
   const pdfTarget = PDF_IMG[key];
-  if (pdfTarget) return <LazyPdfToImage targetFormat={pdfTarget as any} />;
+  if (pdfTarget) return <LazyPdfToImage targetFormat={pdfTarget} />;
 
   const text = TEXT[key];
   if (text)
     return (
       <LazyTextConverter
-        conversionType={text.c as any}
+        conversionType={text.c}
         sourceLabel={text.s}
         targetLabel={text.t}
       />
@@ -259,7 +236,7 @@ export default function DynamicToolRenderer({ toolKey }: { toolKey: string }) {
   const b64Mode = B64[key];
   if (b64Mode) return <LazyBase64 mode={b64Mode} />;
 
-  if (UNIT_KEYS.has(key)) return <LazyUnit toolKey={key as any} />;
+  if (UNIT_KEYS.has(key)) return <LazyUnit toolKey={key as ToolItemKey} />;
 
   return null;
 }

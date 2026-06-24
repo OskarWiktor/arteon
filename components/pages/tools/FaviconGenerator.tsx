@@ -52,14 +52,18 @@ function createWebmanifest(
       type: 'image/png',
     }));
 
+  const MANIFEST_NAME: Partial<Record<Locale, string>> = {
+    pl: 'Twoja strona',
+    de: 'Ihre Website',
+  };
+  const MANIFEST_SHORT_NAME: Partial<Record<Locale, string>> = {
+    pl: 'Strona',
+    de: 'Seite',
+  };
+
   const manifest = {
-    name:
-      locale === 'pl'
-        ? 'Twoja strona'
-        : locale === 'de'
-          ? 'Ihre Website'
-          : 'Your website',
-    short_name: locale === 'pl' ? 'Strona' : locale === 'de' ? 'Seite' : 'Site',
+    name: MANIFEST_NAME[locale] ?? 'Your website',
+    short_name: MANIFEST_SHORT_NAME[locale] ?? 'Site',
     icons,
     theme_color: backgroundColor,
     background_color: backgroundColor,

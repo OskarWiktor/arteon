@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { RiSearchLine, RiCloseLine, RiArrowRightSLine } from 'react-icons/ri';
+import { useDialogFocus } from '@/hooks/useDialogFocus';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import { useSearch } from '@/hooks/useSearch';
@@ -16,6 +17,7 @@ import {
   modalContentClasses,
   smallIconSizeClasses,
 } from '@/lib/uiClasses';
+import Backdrop from '../atoms/Backdrop';
 import Input from '../atoms/form/Input';
 import InlineLink from '../atoms/InlineLink';
 
@@ -49,8 +51,11 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
   const localeConfig = useLocaleConfig();
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(-1);
   const mounted = useIsMounted();
+
+  useDialogFocus(dialogRef, isOpen);
 
   const categoryLabels: Record<SearchCategory, string> = {
     uslugi: t.categoryServices,
@@ -113,12 +118,6 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
     }
   }, [activeIndex]);
 
-  const handleBackdropClick = (e: React.MouseEvent) => {
-    if (e.target === e.currentTarget) {
-      onClose();
-    }
-  };
-
   const renderResults = () => {
     if (!query.trim()) {
       return (
@@ -146,33 +145,27 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
     }
 
     let globalIndex = 0;
+    const categoryBlocks = CATEGORY_ORDER.map(category => {
+      const items = groupedResults[category];
+      const startIndex = globalIndex;
+      globalIndex += Math.min(items.length, 5);
+      return { category, items, startIndex };
+    });
 
     return (
       <div ref={listRef} className='max-h-[60vh] overflow-y-auto py-2'>
-        {CATEGORY_ORDER.map(category => {
-          const items = groupedResults[category];
-          if (items.length === 0) return null;
-
-          return (
-            <div key={category} className='mb-2'>
-              <div className='px-4 py-3 text-xs font-semibold tracking-wide text-light uppercase'>
-                {categoryLabels[category]}
-              </div>
-              {items.slice(0, 5).map(item => {
-                const currentIndex = globalIndex++;
-                return (
-                  <SearchResultItem
-                    key={item.href}
-                    item={item}
-                    isActive={currentIndex === activeIndex}
-                    dataIndex={currentIndex}
-                    onClick={() => handleNavigate(item.href)}
-                  />
-                );
-              })}
-            </div>
-          );
-        })}
+        {categoryBlocks.map(({ category, items, startIndex }) =>
+          items.length === 0 ? null : (
+            <CategoryResultsBlock
+              key={category}
+              label={categoryLabels[category]}
+              items={items.slice(0, 5)}
+              startIndex={startIndex}
+              activeIndex={activeIndex}
+              onNavigate={handleNavigate}
+            />
+          ),
+        )}
       </div>
     );
   };
@@ -182,19 +175,16 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
   if (!isOpen) return null;
 
   return createPortal(
-    <div
-      className={cn(
-        'fixed inset-0 z-100 flex items-start justify-center bg-black/40 px-4 pt-[10vh]',
-        modalBackdropClasses,
-      )}
-      onClick={handleBackdropClick}
-      role='dialog'
-      aria-modal='true'
-      aria-label={t.ariaLabel}
-    >
+    <div className='fixed inset-0 z-100 flex items-start justify-center px-4 pt-[10vh]'>
+      <Backdrop onClose={onClose} className={modalBackdropClasses} />
       <div
+        ref={dialogRef}
+        role='dialog'
+        aria-modal='true'
+        aria-label={t.ariaLabel}
+        tabIndex={-1}
         className={cn(
-          'w-full max-w-xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black/5',
+          'relative w-full max-w-xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black/5',
           modalContentClasses,
         )}
       >
@@ -230,6 +220,46 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
       </div>
     </div>,
     document.body,
+  );
+}
+
+type CategoryResultsBlockProps = {
+  label: string;
+  items: SearchItem[];
+  startIndex: number;
+  activeIndex: number;
+  onNavigate: (href: string) => void;
+};
+
+/**
+ * Renders a labeled group of search result rows, continuing the flattened
+ * keyboard-navigation index from `startIndex`.
+ */
+function CategoryResultsBlock({
+  label,
+  items,
+  startIndex,
+  activeIndex,
+  onNavigate,
+}: CategoryResultsBlockProps) {
+  return (
+    <div className='mb-2'>
+      <div className='px-4 py-3 text-xs font-semibold tracking-wide text-light uppercase'>
+        {label}
+      </div>
+      {items.map((item, i) => {
+        const currentIndex = startIndex + i;
+        return (
+          <SearchResultItem
+            key={item.href}
+            item={item}
+            isActive={currentIndex === activeIndex}
+            dataIndex={currentIndex}
+            onClick={() => onNavigate(item.href)}
+          />
+        );
+      })}
+    </div>
   );
 }
 

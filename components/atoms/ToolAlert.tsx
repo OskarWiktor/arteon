@@ -16,6 +16,16 @@ const variantClasses: Record<ToolAlertVariant, string> = {
   warning: 'border-warning-border bg-warning-bg text-warning-text',
 };
 
+// Błędy i ostrzeżenia przerywają czytnik ekranu (role="alert" = assertive),
+// sukces i info ogłaszane są grzecznie (role="status" = polite) — zgodnie z
+// wagą komunikatu (WCAG 4.1.3 Status Messages).
+const variantRole: Record<ToolAlertVariant, 'alert' | 'status'> = {
+  error: 'alert',
+  warning: 'alert',
+  success: 'status',
+  info: 'status',
+};
+
 export default function ToolAlert({
   children,
   variant = 'info',
@@ -28,7 +38,7 @@ export default function ToolAlert({
         variantClasses[variant],
         className,
       )}
-      role='alert'
+      role={variantRole[variant]}
     >
       {children}
     </div>

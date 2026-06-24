@@ -73,7 +73,7 @@ export default function FeatureCard({
         )}
 
         {Array.isArray(points) && points.length > 0 && (
-          <ul className='mt-2 space-y-2' role='list'>
+          <ul className='mt-2 space-y-2'>
             {points.map((pt, i) => (
               <li key={i} className={cn('gap-1', flexCenterClasses)}>
                 <span className='text-base text-light'>{pt}</span>
@@ -117,7 +117,7 @@ export default function FeatureCard({
         )}
 
         {Array.isArray(points) && points.length > 0 && (
-          <ul className='mt-2 space-y-2' role='list'>
+          <ul className='mt-2 space-y-2'>
             {points.map((pt, i) => (
               <li key={i} className={cn('gap-1', flexCenterClasses)}>
                 <span className='text-base text-light'>{pt}</span>

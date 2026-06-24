@@ -34,7 +34,7 @@ export function hexToRgb(hex: string): string {
 }
 
 export function rgbToHex(rgb: string): string {
-  const match = /(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/.exec(rgb);
+  const match = /(\d{1,4})\s*,\s*(\d{1,4})\s*,\s*(\d{1,4})/.exec(rgb);
   if (!match) return '';
   const [, rs, gs, bs] = match;
   const r = Math.min(255, Math.max(0, parseInt(rs)));
@@ -46,7 +46,7 @@ export function rgbToHex(rgb: string): string {
 // ── RGB ↔ HSL ──────────────────────────────────────────────────────────────
 
 export function rgbToHsl(rgb: string): string {
-  const match = /(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/.exec(rgb);
+  const match = /(\d{1,4})\s*,\s*(\d{1,4})\s*,\s*(\d{1,4})/.exec(rgb);
   if (!match) return '';
   const r = parseInt(match[1]) / 255;
   const g = parseInt(match[2]) / 255;
@@ -78,7 +78,7 @@ export function rgbToHsl(rgb: string): string {
 }
 
 export function hslToRgb(hsl: string): string {
-  const match = /(\d+)\s*,\s*(\d+)%?\s*,\s*(\d+)%?/.exec(hsl);
+  const match = /(\d{1,4})\s*,\s*(\d{1,4})%?\s*,\s*(\d{1,4})%?/.exec(hsl);
   if (!match) return '';
   const h = parseInt(match[1]) / 360;
   const s = parseInt(match[2]) / 100;
@@ -108,7 +108,7 @@ export function hslToRgb(hsl: string): string {
 // ── RGB ↔ CMYK ─────────────────────────────────────────────────────────────
 
 export function rgbToCmyk(rgb: string): string {
-  const match = /(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/.exec(rgb);
+  const match = /(\d{1,4})\s*,\s*(\d{1,4})\s*,\s*(\d{1,4})/.exec(rgb);
   if (!match) return '';
   const r = parseInt(match[1]) / 255;
   const g = parseInt(match[2]) / 255;
@@ -125,7 +125,10 @@ export function rgbToCmyk(rgb: string): string {
 }
 
 export function cmykToRgb(cmyk: string): string {
-  const match = /(\d+)%?\s*,\s*(\d+)%?\s*,\s*(\d+)%?\s*,\s*(\d+)%?/.exec(cmyk);
+  const match =
+    /(\d{1,4})%?\s*,\s*(\d{1,4})%?\s*,\s*(\d{1,4})%?\s*,\s*(\d{1,4})%?/.exec(
+      cmyk,
+    );
   if (!match) return '';
   const c = parseInt(match[1]) / 100;
   const m = parseInt(match[2]) / 100;

@@ -1,87 +1,12 @@
 import Divider from '@/components/atoms/Divider';
 import { cn } from '@/lib/clsx';
 import { getToolHref, getToolByKey } from '@/lib/i18n/toolRegistry';
+import { getUnitConverterI18n } from '@/lib/i18n/unitConverter';
 import { getUnitLabel } from '@/lib/tools/unitLabels';
 import { UNIT_CONVERSIONS } from '@/lib/tools/units/conversions';
 import { flexCenterClasses } from '@/lib/uiClasses';
 import type { Locale } from '@/types/locale';
 import type { ToolItemKey } from '@/types/tools/common';
-
-const TITLE_CONVERT_TO: Record<string, (unit: string) => string> = {
-  pl: u => `Konwertuj inne jednostki do ${u}`,
-  en: u => `Convert other units to ${u}`,
-  de: u => `Andere Einheiten in ${u} umrechnen`,
-  es: u => `Convertir otras unidades a ${u}`,
-  fr: u => `Convertir d'autres unités en ${u}`,
-  pt: u => `Converter outras unidades para ${u}`,
-  it: u => `Converti altre unità in ${u}`,
-  ro: u => `Convertește alte unități în ${u}`,
-  nl: u => `Andere eenheden naar ${u} converteren`,
-  hu: u => `Más egységek átváltása ${u} egységre`,
-  cs: u => `Převést jiné jednotky na ${u}`,
-  sv: u => `Konvertera andra enheter till ${u}`,
-  da: u => `Konverter andre enheder til ${u}`,
-  no: u => `Konverter andre enheter til ${u}`,
-  fi: u => `Muunna muut yksiköt yksiköksi ${u}`,
-  el: u => `Μετατρέψτε άλλες μονάδες σε ${u}`,
-};
-
-const TITLE_CONVERT_FROM: Record<string, (unit: string) => string> = {
-  pl: u => `Konwertuj ${u} do innych jednostek`,
-  en: u => `Convert ${u} to other units`,
-  de: u => `${u} in andere Einheiten umrechnen`,
-  es: u => `Convertir ${u} a otras unidades`,
-  fr: u => `Convertir ${u} en d'autres unités`,
-  pt: u => `Converter ${u} para outras unidades`,
-  it: u => `Converti ${u} in altre unità`,
-  ro: u => `Convertește ${u} în alte unități`,
-  nl: u => `${u} naar andere eenheden converteren`,
-  hu: u => `${u} átváltása más egységekre`,
-  cs: u => `Převést ${u} na jiné jednotky`,
-  sv: u => `Konvertera ${u} till andra enheter`,
-  da: u => `Konverter ${u} til andre enheder`,
-  no: u => `Konverter ${u} til andre enheter`,
-  fi: u => `Muunna ${u} muiksi yksiköiksi`,
-  el: u => `Μετατρέψτε ${u} σε άλλες μονάδες`,
-};
-
-const TITLE_OTHER_CONVERTERS: Record<string, string> = {
-  pl: 'Sprawdź konwertery innych jednostek',
-  en: 'Explore other unit converters',
-  de: 'Weitere Einheitenkonverter entdecken',
-  es: 'Explorar otros conversores de unidades',
-  fr: "Découvrir d'autres convertisseurs d'unités",
-  pt: 'Explorar outros conversores de unidades',
-  it: 'Esplora altri convertitori di unità',
-  ro: 'Explorează alte convertoare de unități',
-  nl: 'Ontdek andere eenhedenconverters',
-  hu: 'További mértékegység-átváltók',
-  cs: 'Další převodníky jednotek',
-  sv: 'Utforska andra enhetskonverterare',
-  da: 'Udforsk andre enhedskonvertere',
-  no: 'Utforsk andre enhetskonverterere',
-  fi: 'Tutustu muihin yksikkömuuntimeen',
-  el: 'Εξερευνήστε άλλους μετατροπείς μονάδων',
-};
-
-const UNIT_CONNECTOR: Record<string, string> = {
-  pl: 'na',
-  en: 'to',
-  de: 'in',
-  es: 'a',
-  fr: 'en',
-  pt: 'para',
-  it: 'in',
-  ro: 'în',
-  nl: 'naar',
-  hu: '→',
-  cs: 'na',
-  sv: 'till',
-  da: 'til',
-  no: 'til',
-  fi: '→',
-  el: 'σε',
-};
 
 type UnitFieldRef = { label?: string; labelKey?: string; suffix: string };
 
@@ -144,14 +69,10 @@ export default function RelatedUnitConverters({
   const targetUnitLabel = unitLabel(current.targetField, locale);
   const sourceUnitLabel = unitLabel(current.sourceField, locale);
 
-  const titleTo = (TITLE_CONVERT_TO[locale] ?? TITLE_CONVERT_TO.en)(
-    targetUnitLabel,
-  );
-  const titleFrom = (TITLE_CONVERT_FROM[locale] ?? TITLE_CONVERT_FROM.en)(
-    sourceUnitLabel,
-  );
-  const titleOther =
-    TITLE_OTHER_CONVERTERS[locale] ?? TITLE_OTHER_CONVERTERS.en;
+  const ui = getUnitConverterI18n(locale);
+  const titleTo = ui.titleConvertTo(targetUnitLabel);
+  const titleFrom = ui.titleConvertFrom(sourceUnitLabel);
+  const titleOther = ui.titleOtherConverters;
 
   return (
     <>
@@ -207,7 +128,7 @@ function ConverterGrid({
   }[];
   locale: Locale;
 }) {
-  const connector = UNIT_CONNECTOR[locale] ?? 'to';
+  const connector = getUnitConverterI18n(locale).connector;
 
   return (
     <div className='grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4'>

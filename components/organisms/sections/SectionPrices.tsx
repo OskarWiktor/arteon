@@ -150,7 +150,7 @@ export default function SectionPrices({
                   {plan.description}
                 </p>
 
-                <ul className='mt-6 space-y-3' role='list'>
+                <ul className='mt-6 space-y-3'>
                   {(plan.features ?? []).map((f, i) => (
                     <li key={`${itemId}-f-${i}`}>
                       <IconText

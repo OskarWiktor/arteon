@@ -5,6 +5,7 @@ import { useEffect, useRef, useState, cache } from 'react';
 import { RiArrowDownSLine, RiCloseLine } from 'react-icons/ri';
 import { cn } from '@/lib/clsx';
 import { getToolHref } from '@/lib/i18n/toolRegistry';
+import { getUnitConverterI18n } from '@/lib/i18n/unitConverter';
 import { useLocale } from '@/lib/LocaleContext';
 import {
   FORMAT_CATEGORIES,
@@ -46,44 +47,22 @@ const unitDisplayLabel = (field: UnitField, locale: Locale): string => {
   return field.suffix || field.label || '';
 };
 
-const PICKER_HEADER: Record<PickerSide, Record<string, string>> = {
-  source: {
-    pl: 'Konwertuj z',
-    en: 'Convert from',
-    de: 'Konvertieren von',
-    es: 'Convertir de',
-    fr: 'Convertir de',
-    pt: 'Converter de',
-    it: 'Converti da',
-    ro: 'Convertește din',
-    nl: 'Converteer van',
-    hu: 'Konvertálás forrás',
-    cs: 'Převést z',
-    sv: 'Konvertera från',
-    da: 'Konvertér fra',
-    no: 'Konverter fra',
-    fi: 'Muunna muodosta',
-    el: 'Μετατροπή από',
-  },
-  target: {
-    pl: 'Konwertuj na',
-    en: 'Convert to',
-    de: 'Konvertieren nach',
-    es: 'Convertir a',
-    fr: 'Convertir vers',
-    pt: 'Converter para',
-    it: 'Converti in',
-    ro: 'Convertește în',
-    nl: 'Converteer naar',
-    hu: 'Konvertálás cél',
-    cs: 'Převést na',
-    sv: 'Konvertera till',
-    da: 'Konvertér til',
-    no: 'Konverter til',
-    fi: 'Muunna muotoon',
-    el: 'Μετατροπή σε',
-  },
-};
+function hasMatchingUnitPair(
+  side: 'source' | 'target',
+  id: string,
+  otherSideId: string,
+  locale: Locale,
+): boolean {
+  return UNIT_CONVERSIONS.some(c => {
+    const cField = side === 'source' ? c.sourceField : c.targetField;
+    const cOther = side === 'source' ? c.targetField : c.sourceField;
+    return (
+      unitId(cField) === id &&
+      unitId(cOther) === otherSideId &&
+      getToolHref(c.toolKey, locale) !== '#'
+    );
+  });
+}
 
 const getUnitOptions = cache(
   (
@@ -99,9 +78,12 @@ const getUnitOptions = cache(
     const current = currentToolKey
       ? UNIT_CONVERSIONS.find(c => c.toolKey === currentToolKey)
       : undefined;
-    const otherSideId = current
-      ? unitId(side === 'source' ? current.targetField : current.sourceField)
-      : undefined;
+    let otherSideId: string | undefined;
+    if (current) {
+      const matchingField =
+        side === 'source' ? current.targetField : current.sourceField;
+      otherSideId = unitId(matchingField);
+    }
 
     for (const conv of UNIT_CONVERSIONS) {
       const href = getToolHref(conv.toolKey, locale);
@@ -113,24 +95,13 @@ const getUnitOptions = cache(
       if (seen.has(id)) continue;
       seen.add(id);
 
-      if (otherSideId) {
-        const hasPair = UNIT_CONVERSIONS.some(c => {
-          const cField = side === 'source' ? c.sourceField : c.targetField;
-          const cOther = side === 'source' ? c.targetField : c.sourceField;
-          return (
-            unitId(cField) === id &&
-            unitId(cOther) === otherSideId &&
-            getToolHref(c.toolKey, locale) !== '#'
-          );
-        });
-        items.push({
-          id,
-          label: unitDisplayLabel(field, locale),
-          href: hasPair ? href : '',
-        });
-      } else {
-        items.push({ id, label: unitDisplayLabel(field, locale), href });
-      }
+      const isPaired =
+        !otherSideId || hasMatchingUnitPair(side, id, otherSideId, locale);
+      items.push({
+        id,
+        label: unitDisplayLabel(field, locale),
+        href: isPaired ? href : '',
+      });
     }
 
     return items;
@@ -176,7 +147,7 @@ export default function FormatPickerModal({
     useState<FormatCategory>('images');
   const triggerRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
-  const overlayRef = useRef<HTMLDivElement>(null);
+  const overlayRef = useRef<HTMLButtonElement>(null);
 
   const currentFormat = side === 'source' ? currentSource : currentTarget;
 
@@ -295,8 +266,11 @@ export default function FormatPickerModal({
 
       {open && (
         <>
-          <div
+          <button
             ref={overlayRef}
+            type='button'
+            aria-hidden='true'
+            tabIndex={-1}
             className='fixed inset-0 z-50 bg-black/40 md:hidden'
             onClick={() => setOpen(false)}
           />
@@ -315,7 +289,9 @@ export default function FormatPickerModal({
               )}
             >
               <span className='text-sm font-semibold'>
-                {PICKER_HEADER[side][locale] ?? PICKER_HEADER[side].en}
+                {side === 'source'
+                  ? getUnitConverterI18n(locale).pickerSource
+                  : getUnitConverterI18n(locale).pickerTarget}
               </span>
               <button
                 type='button'

@@ -1,18 +1,21 @@
 'use client';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import {
   RiCloseLine,
   RiArrowLeftLine,
   RiArrowRightSLine,
 } from 'react-icons/ri';
 import SectionHeader from '@/components/molecules/SectionHeader';
+import { useDialogFocus } from '@/hooks/useDialogFocus';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { cn } from '@/lib/clsx';
 import {
   flexCenterClasses,
   focusRingClasses,
   largeIconSizeClasses,
 } from '@/lib/uiClasses';
+import Backdrop from '../../atoms/Backdrop';
 import Wrapper from '../../atoms/Wrapper';
 
 interface GalleryImage {
@@ -44,9 +47,14 @@ export default function SectionImageGallery({
   noWrapper = false,
 }: SectionImageGalleryProps) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const lightboxRef = useRef<HTMLDivElement>(null);
+  const isLightboxOpen = lightboxIndex !== null;
 
   const openLightbox = (index: number) => setLightboxIndex(index);
   const closeLightbox = () => setLightboxIndex(null);
+
+  useEscapeKey(closeLightbox, isLightboxOpen);
+  useDialogFocus(lightboxRef, isLightboxOpen);
 
   const goToPrev = () => {
     if (lightboxIndex === null) return;
@@ -106,15 +114,14 @@ export default function SectionImageGallery({
 
       {lightboxIndex !== null && (
         <div
-          className={cn(
-            'fixed inset-0 z-50 bg-black/90 p-4',
-            flexCenterClasses,
-          )}
-          onClick={closeLightbox}
+          ref={lightboxRef}
+          className={cn('fixed inset-0 z-50 p-4', flexCenterClasses)}
           role='dialog'
           aria-modal='true'
           aria-label='Podgląd zdjęcia'
+          tabIndex={-1}
         >
+          <Backdrop onClose={closeLightbox} className='bg-black/90' />
           <button
             type='button'
             onClick={closeLightbox}
@@ -136,10 +143,7 @@ export default function SectionImageGallery({
             <RiArrowLeftLine className={largeIconSizeClasses} />
           </button>
 
-          <div
-            className='relative max-h-[80vh] max-w-[90vw]'
-            onClick={e => e.stopPropagation()}
-          >
+          <div className='relative max-h-[80vh] max-w-[90vw]'>
             <Image
               src={images[lightboxIndex].src}
               alt={images[lightboxIndex].alt}

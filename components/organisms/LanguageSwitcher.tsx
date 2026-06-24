@@ -5,8 +5,10 @@ import { startTransition, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { RiArrowDownSLine, RiCloseLine, RiTranslate2 } from 'react-icons/ri';
 import Wrapper from '@/components/atoms/Wrapper';
+import { useDialogFocus } from '@/hooks/useDialogFocus';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
+import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useScrollLock } from '@/hooks/useScrollLock';
 import { cn } from '@/lib/clsx';
@@ -129,6 +131,18 @@ export default function LanguageSwitcher({
 
   useScrollLock(variant === 'mobile' && isOpen);
 
+  // Pułapka focusu + przywrócenie focusu tylko dla wariantu modalnego (mobile);
+  // desktopowy dropdown nie jest modalny, więc trap pozostaje wyłączony.
+  useDialogFocus(panelRef, variant === 'mobile' && isOpen);
+
+  // Klawiaturowa nawigacja menu języków (desktop): strzałki + Tab/Escape zamyka.
+  const langMenuKeyboard = useMenuKeyboardNavigation(panelRef, {
+    onClose: () => {
+      setIsOpen(false);
+      btnRef.current?.focus();
+    },
+  });
+
   const {
     popularCols,
     otherCols,
@@ -163,6 +177,7 @@ export default function LanguageSwitcher({
       key={link.locale}
       href={link.href}
       role='menuitem'
+      tabIndex={-1}
       hrefLang={link.hreflang}
       title={link.title}
       onClick={close}
@@ -185,6 +200,13 @@ export default function LanguageSwitcher({
             ref={btnRef}
             type='button'
             onClick={() => startTransition(() => setIsOpen(p => !p))}
+            onKeyDown={e => {
+              if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                setIsOpen(true);
+                requestAnimationFrame(() => langMenuKeyboard.focusFirst());
+              }
+            }}
             aria-haspopup='menu'
             aria-expanded={isOpen}
             aria-label={t.toggleLabel}
@@ -218,6 +240,8 @@ export default function LanguageSwitcher({
             <div
               ref={panelRef}
               role='menu'
+              tabIndex={-1}
+              onKeyDown={langMenuKeyboard.onKeyDown}
               className='animate-dropdown-in fixed left-0 z-50 w-full bg-white/95 py-6 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm'
               style={{ top: headerBottom }}
             >
@@ -335,6 +359,7 @@ export default function LanguageSwitcher({
               role='dialog'
               aria-modal='true'
               aria-label={t.chooseLabel}
+              tabIndex={-1}
               className='animate-dropdown-in fixed inset-x-4 top-1/2 z-1101 max-h-[80dvh] -translate-y-1/2 overflow-y-auto rounded-lg bg-white p-5 shadow-2xl sm:inset-x-auto sm:left-1/2 sm:w-105 sm:-translate-x-1/2'
             >
               <div className={cn('mb-4', flexCenterBetweenClasses)}>

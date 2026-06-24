@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Fragment, type ReactNode } from 'react';
+import { Fragment, type JSX, type ReactNode } from 'react';
 import Divider from '@/components/atoms/Divider';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import AdSense from '@/components/molecules/AdSense';
@@ -101,7 +101,7 @@ function renderBlock(
   idx: number,
   pageUrl: string,
   carouselImages: Partial<Record<ToolItemKey, string>>,
-): ReactNode {
+): JSX.Element | null {
   switch (block.type) {
     case 'gap':
       return <Divider key={`gap-${idx}`} line size='md' />;
@@ -383,7 +383,7 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
                   </Fragment>
                 );
               }
-              return node;
+              return <Fragment key={`block-${idx}`}>{node}</Fragment>;
             });
           })()}
         </div>

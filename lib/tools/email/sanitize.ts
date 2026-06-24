@@ -16,6 +16,8 @@ export function sanitizeHrefUrl(url: string): string {
   if (!trimmed) return '';
 
   const lowered = trimmed.toLowerCase();
+  // These protocol prefixes are denylisted here, never executed — this function blocks them.
+  // eslint-disable-next-line sonarjs/code-eval
   const forbiddenProtocols = ['javascript:', 'data:', 'vbscript:', 'file:'];
 
   if (forbiddenProtocols.some(proto => lowered.startsWith(proto))) {
@@ -32,6 +34,8 @@ export function sanitizeSrcUrl(url: string): string {
   if (!trimmed) return '';
 
   const lowered = trimmed.toLowerCase();
+  // These protocol prefixes are denylisted here, never executed — this function blocks them.
+  // eslint-disable-next-line sonarjs/code-eval
   const forbiddenProtocols = ['javascript:', 'vbscript:', 'file:'];
 
   if (forbiddenProtocols.some(proto => lowered.startsWith(proto))) {

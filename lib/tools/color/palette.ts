@@ -1,9 +1,3 @@
-import type { HSL, PaletteColor, PaletteGroup } from '@/types/tools/color';
-export type {
-  PaletteColor,
-  PaletteGroupId,
-  PaletteGroup,
-} from '@/types/tools/color';
 import {
   clamp,
   hexToRgb,
@@ -12,6 +6,13 @@ import {
   rgbToHex,
   rgbToHsl,
 } from '@/lib/tools/color/convert';
+import type { HSL, PaletteColor, PaletteGroup } from '@/types/tools/color';
+
+export type {
+  PaletteColor,
+  PaletteGroupId,
+  PaletteGroup,
+} from '@/types/tools/color';
 
 function rotateHue(h: number, delta: number): number {
   const value = (h + delta) % 360;

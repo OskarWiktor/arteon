@@ -60,7 +60,7 @@ export default function ArticlesCarousel({
     } else if (categorySlug) {
       list = source.filter(a => {
         return (
-          a.primaryCategory &&
+          typeof a.primaryCategory === 'string' &&
           a.primaryCategory
             .toLowerCase()
             .normalize('NFD')

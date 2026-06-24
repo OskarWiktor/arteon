@@ -6,7 +6,7 @@ import { useEventListener } from '@/hooks/useEventListener';
 import { normalIconSizeClasses } from '@/lib/uiClasses';
 import ButtonCircle from './ButtonCircle';
 
-interface ButtonToTop {
+interface ButtonToTopProps {
   targetId?: string;
   showAfter?: number;
   label?: string;
@@ -18,7 +18,7 @@ export default function ButtonToTop({
   targetId = 'article-root',
   showAfter = 400,
   label = 'Do góry',
-}: ButtonToTop) {
+}: ButtonToTopProps) {
   const [visible, setVisible] = useState(false);
 
   useEventListener(

@@ -168,8 +168,9 @@ export default function WordCountTool() {
         </Card>
 
         <Card interactive={false} padding='lg' variant='outlined'>
-          <ToolFieldRow label={t.pasteText}>
+          <ToolFieldRow htmlFor='wordcount-input' label={t.pasteText}>
             <Textarea
+              id='wordcount-input'
               value={text}
               onChange={e => setText(e.target.value)}
               className='min-h-100 resize-y'

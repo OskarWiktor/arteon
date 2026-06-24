@@ -1,10 +1,6 @@
 import { cn } from '@/lib/clsx';
-
-const tableBlockUi = {
-  pl: {
-    defaultTableLabel: 'Tabela',
-  },
-} as const;
+import { getA11y } from '@/lib/i18n/a11y';
+import type { Locale } from '@/types/locale';
 
 type Align = 'left' | 'center' | 'right';
 
@@ -16,6 +12,7 @@ type TableBlockProps = {
   striped?: boolean;
   compact?: boolean;
   className?: string;
+  locale: Locale;
 };
 
 /**
@@ -43,8 +40,9 @@ export default function TableBlock({
   striped = true,
   compact = false,
   className,
+  locale,
 }: TableBlockProps) {
-  const t = tableBlockUi.pl;
+  const t = getA11y(locale);
   return (
     <figure className='not-prose'>
       <div
@@ -53,7 +51,7 @@ export default function TableBlock({
           className,
         )}
         role='region'
-        aria-label={caption || t.defaultTableLabel}
+        aria-label={caption || t.tableRegion}
       >
         {caption && (
           <div className='border-b border-neutral-200 px-4 py-3'>
@@ -80,33 +78,32 @@ export default function TableBlock({
             </tr>
           </thead>
           <tbody>
-            {rows.map((r, i) => (
-              <tr
-                key={i}
-                className={cn(
-                  'border-t border-black/5',
-                  striped
-                    ? i % 2 === 0
-                      ? 'bg-white'
-                      : 'bg-neutral-50'
-                    : 'bg-white',
-                )}
-              >
-                {r.map((cell, j) => (
-                  <td
-                    key={j}
-                    className={cn(
-                      'px-4',
-                      compact ? 'py-2' : 'py-3',
-                      'align-top',
-                      alignCls(columns[j]?.align),
-                    )}
-                  >
-                    <div className='text-base text-dark'>{String(cell)}</div>
-                  </td>
-                ))}
-              </tr>
-            ))}
+            {rows.map((r, i) => {
+              const isStripedRow = striped && i % 2 !== 0;
+              return (
+                <tr
+                  key={i}
+                  className={cn(
+                    'border-t border-black/5',
+                    isStripedRow ? 'bg-neutral-50' : 'bg-white',
+                  )}
+                >
+                  {r.map((cell, j) => (
+                    <td
+                      key={j}
+                      className={cn(
+                        'px-4',
+                        compact ? 'py-2' : 'py-3',
+                        'align-top',
+                        alignCls(columns[j]?.align),
+                      )}
+                    >
+                      <div className='text-base text-dark'>{String(cell)}</div>
+                    </td>
+                  ))}
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>

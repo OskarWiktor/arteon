@@ -51,7 +51,7 @@ export default function ToolsCarousel({
   const items = (() => {
     const all = toolsSections.flatMap(section => section.items);
     return all
-      .sort((a, b) => (a.carouselOrder ?? 999) - (b.carouselOrder ?? 999))
+      .toSorted((a, b) => (a.carouselOrder ?? 999) - (b.carouselOrder ?? 999))
       .map(tool => ({ ...tool, image: images?.[tool.key] }))
       .filter((tool): tool is typeof tool & { image: string } =>
         Boolean(tool.image),

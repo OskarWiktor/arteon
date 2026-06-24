@@ -186,6 +186,10 @@ export default function RootLayout({ lang, children }: RootLayoutProps) {
       suppressHydrationWarning
       className={cn(inter.variable, playfairDisplay.variable)}
     >
+      {/* App Router root layout — <head> here is correct and required to inject
+          blocking inline scripts (theme bootstrap, consent defaults) before hydration.
+          `next/head` is a Pages Router API and doesn't apply here. */}
+      {/* eslint-disable-next-line @next/next/no-head-element */}
       <head>
         <script
           id='theme-bootstrap'

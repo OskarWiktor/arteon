@@ -51,7 +51,6 @@ export const metadata = {
       'Poznaj Arteon: łączymy strategię, branding, technologię i marketing w jeden proces. Zobacz, jak pracujemy i dlaczego klienci nam ufają.',
     url: toAbsoluteUrl('/o-nas'),
     type: 'website',
-    // TODO: Add unique OpenGraph image for about page: /assets/og/o-nas.webp (1200x630px)
     images: [
       {
         url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),

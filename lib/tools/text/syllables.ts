@@ -20,10 +20,7 @@ export function countSyllablesInWord(
 ): number {
   const w = word
     .toLocaleLowerCase()
-    .replace(
-      /[^a-z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF\u00E0-\u00FF]/gi,
-      '',
-    );
+    .replace(/[^a-z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF]/gi, '');
   if (!w) return 0;
 
   switch (locale) {
@@ -205,7 +202,7 @@ function countSyllablesRomance(word: string): number {
     .replace(/au/g, 'X')
     .replace(/eu/g, 'X');
 
-  const vowelGroups = /[aeiouyàáâãéèêíîóôõúùûäëïöüăîâșțX]+/gi.exec(w);
+  const vowelGroups = /[aeiouyàáâãéèêíîóôõúùûäëïöüășțX]+/gi.exec(w);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
 }
 

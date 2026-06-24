@@ -30,5 +30,8 @@ export function useDebouncedEffect(
     }, delayMs);
 
     return () => window.clearTimeout(timer);
+    // `deps` is a caller-supplied dependency list (by design, like useEffect's own
+    // deps array) — eslint-plugin-react-hooks cannot statically analyze a spread here.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [...deps, delayMs, enabled]);
 }

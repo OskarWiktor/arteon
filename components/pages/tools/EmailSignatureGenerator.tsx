@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import {
   RiLayout3Line,
   RiUser3Line,
@@ -21,6 +21,7 @@ import {
   RiUploadLine,
   RiCloseLine,
 } from 'react-icons/ri';
+import Backdrop from '@/components/atoms/Backdrop';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import ButtonTool from '@/components/atoms/buttons/ButtonTool';
@@ -35,6 +36,8 @@ import SocialPanel from '@/components/organisms/tools/EmailSignatureGenerator/pa
 import SpacingPanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/SpacingPanel';
 import TextStyleRow from '@/components/organisms/tools/EmailSignatureGenerator/TextStyleRow';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { useDialogFocus } from '@/hooks/useDialogFocus';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/emailSignature';
 import { useLocale } from '@/lib/LocaleContext';
@@ -76,6 +79,13 @@ import { downloadBlob } from '@/utils/download';
  *
  * @returns The React element for the email signature generator interface.
  */
+const PREVIEW_BG_CLASSES: Record<'light' | 'dark' | 'checker', string> = {
+  light: 'bg-neutral-50',
+  dark: 'bg-neutral-800',
+  checker:
+    'bg-white bg-[linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%),linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%)] bg-size-[20px_20px] bg-position-[0_0,10px_10px]',
+};
+
 export default function EmailSignatureGenerator() {
   const locale = useLocale();
   const t = ui[locale];
@@ -100,6 +110,10 @@ export default function EmailSignatureGenerator() {
   const [themeId, setThemeId] = useState<string>('classic-dark');
   const [showResetModal, setShowResetModal] = useState(false);
   const [showSourceModal, setShowSourceModal] = useState(false);
+  const sourceModalRef = useRef<HTMLDivElement>(null);
+
+  useEscapeKey(() => setShowSourceModal(false), showSourceModal);
+  useDialogFocus(sourceModalRef, showSourceModal);
   const { status: sourceModalCopyStatus, copy: copySource } =
     useCopyToClipboard(3000);
   const [isHydrated, setIsHydrated] = useState(false);
@@ -726,11 +740,7 @@ export default function EmailSignatureGenerator() {
           <div
             className={cn(
               'rounded-lg border border-neutral-200 p-4',
-              previewBg === 'dark'
-                ? 'bg-neutral-800'
-                : previewBg === 'checker'
-                  ? 'bg-white bg-[linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%),linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%)] bg-size-[20px_20px] bg-position-[0_0,10px_10px]'
-                  : 'bg-neutral-50',
+              PREVIEW_BG_CLASSES[previewBg],
             )}
           >
             <div className='mx-auto max-w-full overflow-x-auto'>
@@ -749,11 +759,13 @@ export default function EmailSignatureGenerator() {
               onClick={handleCopyToGmail}
               className='disabled:opacity-60'
             >
-              {copyStatus === 'success'
-                ? t.preview.copySuccess
-                : copyStatus === 'error'
-                  ? t.preview.copyError
-                  : t.preview.ButtonCopy}
+              {
+                {
+                  idle: t.preview.ButtonCopy,
+                  success: t.preview.copySuccess,
+                  error: t.preview.copyError,
+                }[copyStatus]
+              }
             </Button>
             <Button
               type='button'
@@ -819,18 +831,15 @@ export default function EmailSignatureGenerator() {
           </div>
 
           {showSourceModal && (
-            <div
-              className={cn(
-                'fixed inset-0 z-100 bg-black/40 px-4',
-                flexCenterClasses,
-              )}
-              onClick={e => {
-                if (e.target === e.currentTarget) setShowSourceModal(false);
-              }}
-              role='dialog'
-              aria-modal='true'
-            >
-              <div className='w-full max-w-2xl overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5'>
+            <div className={cn('fixed inset-0 z-100 px-4', flexCenterClasses)}>
+              <Backdrop onClose={() => setShowSourceModal(false)} />
+              <div
+                ref={sourceModalRef}
+                role='dialog'
+                aria-modal='true'
+                tabIndex={-1}
+                className='relative w-full max-w-2xl overflow-hidden rounded-lg bg-white p-6 shadow-lg ring-1 ring-black/5'
+              >
                 <div className={cn('mb-4', flexCenterBetweenClasses)}>
                   <h3 className='h6'>{t.preview.viewSourceTitle}</h3>
                   <button

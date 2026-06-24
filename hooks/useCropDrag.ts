@@ -44,6 +44,179 @@ type UseCropDragOptions<State extends CropStateLike> = {
   setActiveTool: Dispatch<SetStateAction<ActiveTool>>;
 };
 
+type MoveUpdateParams = {
+  originalWidth: number;
+  originalHeight: number;
+  effectiveDims: Dims;
+  cropZoom: number;
+  startCropX: number;
+  startCropY: number;
+  startX: number;
+  startY: number;
+  clientX: number;
+  clientY: number;
+  rectWidth: number;
+  rectHeight: number;
+};
+
+function computeMoveCropUpdate(params: MoveUpdateParams): {
+  cropX: number;
+  cropY: number;
+} {
+  const {
+    originalWidth,
+    originalHeight,
+    effectiveDims,
+    cropZoom,
+    startCropX,
+    startCropY,
+    startX,
+    startY,
+    clientX,
+    clientY,
+    rectWidth,
+    rectHeight,
+  } = params;
+
+  const targetAspect = effectiveDims.width / effectiveDims.height;
+  const cropRect = getCropRect(
+    originalWidth,
+    originalHeight,
+    targetAspect,
+    startCropX,
+    startCropY,
+    cropZoom,
+  );
+
+  const rangeX = Math.max(originalWidth - cropRect.cropW, 1);
+  const rangeY = Math.max(originalHeight - cropRect.cropH, 1);
+
+  const deltaX = clientX - startX;
+  const deltaY = clientY - startY;
+
+  const factorX = originalWidth / (rangeX * rectWidth);
+  const factorY = originalHeight / (rangeY * rectHeight);
+
+  const nextCropX = Math.min(1, Math.max(0, startCropX + deltaX * factorX));
+  const nextCropY = Math.min(1, Math.max(0, startCropY + deltaY * factorY));
+
+  return { cropX: nextCropX, cropY: nextCropY };
+}
+
+type ResizeUpdateParams = {
+  originalWidth: number;
+  originalHeight: number;
+  effectiveDims: Dims;
+  anchorX: number;
+  anchorY: number;
+  clientX: number;
+  clientY: number;
+  rectLeft: number;
+  rectTop: number;
+  rectWidth: number;
+  rectHeight: number;
+};
+
+function computeResizeCropUpdate(
+  params: ResizeUpdateParams,
+): { cropX: number; cropY: number; cropZoom: number } | null {
+  const {
+    originalWidth: ow,
+    originalHeight: oh,
+    effectiveDims,
+    anchorX,
+    anchorY,
+    clientX,
+    clientY,
+    rectLeft,
+    rectTop,
+    rectWidth,
+    rectHeight,
+  } = params;
+
+  const aspect = effectiveDims.width / effectiveDims.height;
+
+  const relX = (clientX - rectLeft) / rectWidth;
+  const relY = (clientY - rectTop) / rectHeight;
+  const px = Math.min(1, Math.max(0, relX)) * ow;
+  const py = Math.min(1, Math.max(0, relY)) * oh;
+
+  const dx = px - anchorX;
+  const dy = py - anchorY;
+
+  if (dx === 0 && dy === 0) return null;
+
+  const signX = dx >= 0 ? 1 : -1;
+  const signY = dy >= 0 ? 1 : -1;
+
+  const absDx = Math.abs(dx);
+  const absDy = Math.abs(dy);
+
+  const wByDx = absDx;
+  const hByDx = wByDx / aspect;
+
+  const hByDy = absDy;
+  const wByDy = hByDy * aspect;
+
+  let w = wByDx;
+  let h = hByDx;
+
+  if (hByDx > absDy) {
+    w = wByDy;
+    h = hByDy;
+  }
+
+  const minSize = Math.max(4, Math.min(ow, oh) * 0.01);
+  if (w < minSize || h < minSize) {
+    w = minSize;
+    h = minSize / aspect;
+  }
+
+  let maxH = signY > 0 ? oh - anchorY : anchorY;
+  let maxW = signX > 0 ? ow - anchorX : anchorX;
+  maxW = Math.max(maxW, minSize);
+  maxH = Math.max(maxH, minSize);
+
+  const limitedW = Math.min(w, maxW);
+  const limitedH = Math.min(h, maxH);
+
+  let width = limitedW;
+  let height = width / aspect;
+  if (height > limitedH) {
+    height = limitedH;
+    width = height * aspect;
+  }
+
+  const x0 = signX > 0 ? anchorX : anchorX - width;
+  const y0 = signY > 0 ? anchorY : anchorY - height;
+
+  const centerX = x0 + width / 2;
+  const centerY = y0 + height / 2;
+
+  const originalAspect = ow / oh;
+  const baseW = originalAspect > aspect ? oh * aspect : ow;
+
+  let zoom = baseW / width;
+  zoom = Math.max(1, Math.min(10, zoom));
+
+  const halfW = width / 2;
+  const halfH = height / 2;
+  const minCenterX = halfW;
+  const maxCenterX = ow - halfW;
+  const minCenterY = halfH;
+  const maxCenterY = oh - halfH;
+
+  const clampedCenterX = Math.min(maxCenterX, Math.max(minCenterX, centerX));
+  const clampedCenterY = Math.min(maxCenterY, Math.max(minCenterY, centerY));
+
+  const nextCropX =
+    (clampedCenterX - minCenterX) / (maxCenterX - minCenterX || 1);
+  const nextCropY =
+    (clampedCenterY - minCenterY) / (maxCenterY - minCenterY || 1);
+
+  return { cropX: nextCropX, cropY: nextCropY, cropZoom: zoom };
+}
+
 export function useCropDrag<State extends CropStateLike>(
   options: UseCropDragOptions<State>,
 ) {
@@ -162,147 +335,46 @@ export function useCropDrag<State extends CropStateLike>(
     const rect = previewRef.current.getBoundingClientRect();
     if (!rect.width || !rect.height) return;
 
+    if (!effectiveDims) return;
+
     const mode = dragRef.current.mode;
+    const d = dragRef.current;
 
     if (mode === 'move') {
-      if (!effectiveDims) return;
-      const targetAspect = effectiveDims.width / effectiveDims.height;
-
-      const cropRect = getCropRect(
+      const update = computeMoveCropUpdate({
         originalWidth,
         originalHeight,
-        targetAspect,
-        dragRef.current.startCropX,
-        dragRef.current.startCropY,
+        effectiveDims,
         cropZoom,
-      );
+        startCropX: d.startCropX,
+        startCropY: d.startCropY,
+        startX: d.startX,
+        startY: d.startY,
+        clientX: e.clientX,
+        clientY: e.clientY,
+        rectWidth: rect.width,
+        rectHeight: rect.height,
+      });
+      setState(prev => ({ ...prev, ...update }));
+      return;
+    }
 
-      const rangeX = Math.max(originalWidth - cropRect.cropW, 1);
-      const rangeY = Math.max(originalHeight - cropRect.cropH, 1);
-
-      const deltaX = e.clientX - dragRef.current.startX;
-      const deltaY = e.clientY - dragRef.current.startY;
-
-      const factorX = originalWidth / (rangeX * rect.width);
-      const factorY = originalHeight / (rangeY * rect.height);
-
-      let nextCropX = dragRef.current.startCropX + deltaX * factorX;
-      let nextCropY = dragRef.current.startCropY + deltaY * factorY;
-
-      nextCropX = Math.min(1, Math.max(0, nextCropX));
-      nextCropY = Math.min(1, Math.max(0, nextCropY));
-
-      setState(prev => ({
-        ...prev,
-        cropX: nextCropX,
-        cropY: nextCropY,
-      }));
-    } else if (mode === 'resize') {
-      if (!effectiveDims) return;
-
-      const ow = originalWidth;
-      const oh = originalHeight;
-      const aspect = effectiveDims.width / effectiveDims.height;
-
-      const relX = (e.clientX - rect.left) / rect.width;
-      const relY = (e.clientY - rect.top) / rect.height;
-      const px = Math.min(1, Math.max(0, relX)) * ow;
-      const py = Math.min(1, Math.max(0, relY)) * oh;
-
-      const anchorX = dragRef.current.anchorX;
-      const anchorY = dragRef.current.anchorY;
-
-      const dx = px - anchorX;
-      const dy = py - anchorY;
-
-      if (dx === 0 && dy === 0) return;
-
-      const signX = dx >= 0 ? 1 : -1;
-      const signY = dy >= 0 ? 1 : -1;
-
-      const absDx = Math.abs(dx);
-      const absDy = Math.abs(dy);
-
-      const wByDx = absDx;
-      const hByDx = wByDx / aspect;
-
-      const hByDy = absDy;
-      const wByDy = hByDy * aspect;
-
-      let w = wByDx;
-      let h = hByDx;
-
-      if (hByDx > absDy) {
-        w = wByDy;
-        h = hByDy;
-      }
-
-      const minSize = Math.max(4, Math.min(ow, oh) * 0.01);
-      if (w < minSize || h < minSize) {
-        w = minSize;
-        h = minSize / aspect;
-      }
-
-      let maxH = signY > 0 ? oh - anchorY : anchorY;
-      let maxW = signX > 0 ? ow - anchorX : anchorX;
-      maxW = Math.max(maxW, minSize);
-      maxH = Math.max(maxH, minSize);
-
-      const limitedW = Math.min(w, maxW);
-      const limitedH = Math.min(h, maxH);
-
-      let width = limitedW;
-      let height = width / aspect;
-      if (height > limitedH) {
-        height = limitedH;
-        width = height * aspect;
-      }
-
-      const x0 = signX > 0 ? anchorX : anchorX - width;
-      const y0 = signY > 0 ? anchorY : anchorY - height;
-
-      const centerX = x0 + width / 2;
-      const centerY = y0 + height / 2;
-
-      const originalAspect = ow / oh;
-      let baseW: number;
-
-      if (originalAspect > aspect) {
-        baseW = oh * aspect;
-      } else {
-        baseW = ow;
-      }
-
-      let zoom = baseW / width;
-      zoom = Math.max(1, Math.min(10, zoom));
-
-      const halfW = width / 2;
-      const halfH = height / 2;
-      const minCenterX = halfW;
-      const maxCenterX = ow - halfW;
-      const minCenterY = halfH;
-      const maxCenterY = oh - halfH;
-
-      const clampedCenterX = Math.min(
-        maxCenterX,
-        Math.max(minCenterX, centerX),
-      );
-      const clampedCenterY = Math.min(
-        maxCenterY,
-        Math.max(minCenterY, centerY),
-      );
-
-      const nextCropX =
-        (clampedCenterX - minCenterX) / (maxCenterX - minCenterX || 1);
-      const nextCropY =
-        (clampedCenterY - minCenterY) / (maxCenterY - minCenterY || 1);
-
-      setState(prev => ({
-        ...prev,
-        cropX: nextCropX,
-        cropY: nextCropY,
-        cropZoom: zoom,
-      }));
+    if (mode === 'resize') {
+      const update = computeResizeCropUpdate({
+        originalWidth,
+        originalHeight,
+        effectiveDims,
+        anchorX: d.anchorX,
+        anchorY: d.anchorY,
+        clientX: e.clientX,
+        clientY: e.clientY,
+        rectLeft: rect.left,
+        rectTop: rect.top,
+        rectWidth: rect.width,
+        rectHeight: rect.height,
+      });
+      if (!update) return;
+      setState(prev => ({ ...prev, ...update }));
     }
   };
 

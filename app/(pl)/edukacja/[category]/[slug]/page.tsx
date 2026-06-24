@@ -172,6 +172,7 @@ function FlowGroup({ items }: { items: FlowBlock[] }) {
                 rows={b.rows}
                 striped={b.striped ?? true}
                 compact={b.compact ?? false}
+                locale='pl'
               />
             </div>
           );
@@ -196,7 +197,7 @@ function FlowGroup({ items }: { items: FlowBlock[] }) {
         if (b.type === 'colorPalette') {
           return (
             <div key={`f-cp-${i}`} className='not-prose mt-3 mb-1'>
-              <ColorPalette colors={b.colors} />
+              <ColorPalette colors={b.colors} locale='pl' />
             </div>
           );
         }

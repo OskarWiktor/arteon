@@ -143,15 +143,19 @@ export function parseHsl(color: string): HSLA | null {
 
   const inner = wrapperMatch[1].trim();
 
-  const commaMatch =
-    /^([+-]?\d*\.?\d+)(?:deg)?\s*,\s*([+-]?\d*\.?\d+)%\s*,\s*([+-]?\d*\.?\d+)%\s*(?:,\s*([+-]?\d*\.?\d+%?)\s*)?$/i.exec(
-      inner,
-    );
+  // Numeric token without ambiguous backtracking: an optional sign, then either
+  // digits with an optional decimal part, or a leading-dot decimal.
+  const NUM = '[+-]?(?:\\d+(?:\\.\\d+)?|\\.\\d+)';
 
-  const spaceMatch =
-    /^([+-]?\d*\.?\d+)(?:deg)?\s+([+-]?\d*\.?\d+)%\s+([+-]?\d*\.?\d+)%\s*(?:\/\s*([+-]?\d*\.?\d+%?)\s*)?$/i.exec(
-      inner,
-    );
+  const commaMatch = new RegExp(
+    `^(${NUM})(?:deg)?\\s*,\\s*(${NUM})%\\s*,\\s*(${NUM})%\\s*(?:,\\s*(${NUM}%?)\\s*)?$`,
+    'i',
+  ).exec(inner);
+
+  const spaceMatch = new RegExp(
+    `^(${NUM})(?:deg)?\\s+(${NUM})%\\s+(${NUM})%\\s*(?:/\\s*(${NUM}%?)\\s*)?$`,
+    'i',
+  ).exec(inner);
 
   const match = commaMatch ?? spaceMatch;
   if (!match) return null;
@@ -184,6 +188,8 @@ export function parseHsl(color: string): HSLA | null {
 }
 
 export function randomHexColor(): string {
+  // Cosmetic color generator, not security-sensitive — Math.random is fine here.
+  // eslint-disable-next-line sonarjs/pseudo-random
   const value = Math.floor(Math.random() * 0xffffff);
   return `#${value.toString(16).padStart(6, '0')}`;
 }

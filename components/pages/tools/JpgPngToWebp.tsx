@@ -19,6 +19,10 @@ import { useWebpReportCopy } from '@/hooks/useWebpReportCopy';
 import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/jpgPngWebp';
 import { useLocale } from '@/lib/LocaleContext';
+import {
+  getConversionStatusBadgeVariant,
+  getConversionStatusLabel,
+} from '@/lib/tools/conversionStatus';
 import { flexCenterBetweenClasses } from '@/lib/uiClasses';
 import { downloadFromUrl } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
@@ -391,14 +395,12 @@ export default function JpgPngToWebp() {
         {files.length > 0 && (
           <div className='space-y-2 text-sm!'>
             {files.map(item => {
-              const statusLabel =
-                item.status === 'pending'
-                  ? t.status.pending
-                  : item.status === 'processing'
-                    ? t.status.processing
-                    : item.status === 'done'
-                      ? t.status.done
-                      : t.status.error;
+              const statusLabel = getConversionStatusLabel(item.status, {
+                pending: t.status.pending,
+                processing: t.status.processing,
+                done: t.status.done,
+                error: t.status.error,
+              });
 
               const isBigger =
                 item.outputSize != null && item.outputSize > item.inputSize;
@@ -476,13 +478,7 @@ export default function JpgPngToWebp() {
 
                   <div className='flex items-center gap-1'>
                     <Badge
-                      variant={
-                        item.status === 'done'
-                          ? 'success'
-                          : item.status === 'error'
-                            ? 'error'
-                            : 'neutral'
-                      }
+                      variant={getConversionStatusBadgeVariant(item.status)}
                       size='md'
                     >
                       {statusLabel}

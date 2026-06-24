@@ -553,14 +553,7 @@ export default function ImageResizeTool() {
                   <strong>{state.outputFormat.toUpperCase()}</strong>
                 </p>
                 <p className='text-xs!'>
-                  {t.shape}{' '}
-                  <strong>
-                    {state.shape === 'rect'
-                      ? t.shapes.rect
-                      : state.shape === 'square'
-                        ? t.shapes.square
-                        : t.shapes.circle}
-                  </strong>
+                  {t.shape} <strong>{t.shapes[state.shape]}</strong>
                 </p>
                 {state.file && (
                   <p className='text-xs!'>

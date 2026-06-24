@@ -25,6 +25,8 @@ export function copyTextWithTextareaExecCommand(text: string): void {
 
   document.body.appendChild(textArea);
   textArea.select();
+  // No replacement exists for synchronous clipboard writes outside the async Clipboard API.
+  // eslint-disable-next-line sonarjs/deprecation -- required fallback for browsers without navigator.clipboard
   document.execCommand('copy');
   document.body.removeChild(textArea);
 }
@@ -58,6 +60,7 @@ export function copyHtmlWithExecCommand(html: string): boolean {
     selection?.removeAllRanges();
     selection?.addRange(range);
 
+    // eslint-disable-next-line sonarjs/deprecation -- required fallback for browsers without navigator.clipboard
     return document.execCommand('copy');
   } finally {
     getSelection()?.removeAllRanges();
