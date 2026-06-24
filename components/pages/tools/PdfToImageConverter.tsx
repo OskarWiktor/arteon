@@ -93,7 +93,8 @@ export default function PdfToImageConverter({
           setPages(prev => [...prev, ...newPages]);
         }
       } catch (err) {
-        setGlobalError(err instanceof Error ? err.message : t.failedToLoadPdf);
+        console.error(err);
+        setGlobalError(t.failedToLoadPdf);
       }
     })();
   };

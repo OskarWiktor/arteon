@@ -29,6 +29,7 @@
   "contrastRatio": "Kontrastforhold",
   "recommended": "Anbefalt minimum: 3:1",
   "enterData": "Skriv inn data for å generere en QR-kode.",
+  "dataTooLong": "De angitte dataene er for lange for en QR-kode. Korte ned teksten eller velg et lavere feilkorrigeringsnivå.",
   "vcard": {
     "firstName": "Fornavn",
     "lastName": "Etternavn",

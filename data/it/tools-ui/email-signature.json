@@ -179,7 +179,10 @@
     "viewSourceCopied": "Copiato",
     "viewSourceClose": "Chiudi",
     "exportConfig": "Esporta configurazione",
-    "importConfig": "Importa configurazione"
+    "importConfig": "Importa configurazione",
+    "importError": "Impossibile importare il file. Verifica che sia un file di configurazione (.json) esportato da questo strumento.",
+    "importSuccess": "Configurazione importata",
+    "saveHint": "\"Scarica come HTML\" salva la firma pronta da incollare nel client di posta. \"Esporta configurazione\" salva un file .json che puoi ricaricare in seguito tramite \"Importa configurazione\" per continuare a modificare."
   },
   "labels": {
     "tel": "Tel.",

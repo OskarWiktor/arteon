@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { useState } from 'react';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/buttons/Button';
@@ -492,9 +491,9 @@ export default function FaviconGenerator() {
                         flexCenterClasses,
                       )}
                     >
-                      {}
                       {sourcePreviewUrl && (
-                        <Image
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
                           src={sourcePreviewUrl}
                           alt={t.previewFavicon}
                           className='h-full w-full object-cover'
@@ -511,9 +510,9 @@ export default function FaviconGenerator() {
                         flexCenterClasses,
                       )}
                     >
-                      {}
                       {sourcePreviewUrl && (
-                        <Image
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
                           src={sourcePreviewUrl}
                           alt={t.largeIconPreview}
                           className='h-full w-full object-cover'

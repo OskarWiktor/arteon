@@ -8,6 +8,7 @@ import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSele
 import { useDictionary, useLocale } from '@/lib/LocaleContext';
 import { getUnitLabel } from '@/lib/tools/unitLabels';
 import { getUnitConversion } from '@/lib/tools/units/conversions';
+import { parseLocaleNumber } from '@/lib/tools/units/parseLocaleNumber';
 import {
   hexToRgb,
   rgbToHex,
@@ -90,7 +91,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
     (input: string, reverse: boolean) => {
       if (!config) return '';
 
-      const num = parseFloat(input.replace(',', '.'));
+      const num = parseLocaleNumber(input, locale);
       if (isNaN(num)) return '';
 
       const result = reverse
@@ -102,7 +103,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
         ? Math.round(result).toString()
         : result.toFixed(config.precision);
     },
-    [config, extraValue],
+    [config, extraValue, locale],
   );
 
   const doConvert = useCallback(

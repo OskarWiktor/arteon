@@ -29,6 +29,7 @@
   "contrastRatio": "Rácio de contraste",
   "recommended": "Mínimo recomendado: 3:1",
   "enterData": "Introduza dados para gerar um código QR.",
+  "dataTooLong": "Os dados inseridos são muito longos para um código QR. Reduza o texto ou escolha um nível de correção de erros mais baixo.",
   "vcard": {
     "firstName": "Nome",
     "lastName": "Apelido",

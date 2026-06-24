@@ -172,7 +172,10 @@
     "viewSourceCopied": "Kopioitu",
     "viewSourceClose": "Sulje",
     "exportConfig": "Vie asetukset",
-    "importConfig": "Tuo asetukset"
+    "importConfig": "Tuo asetukset",
+    "importError": "Tiedostoa ei voitu tuoda. Tarkista, että kyseessä on tästä työkalusta viety asetustiedosto (.json).",
+    "importSuccess": "Asetukset tuotu",
+    "saveHint": "\"Lataa HTML-tiedostona\" tallentaa valmiin allekirjoituksen liitettäväksi sähköpostiohjelmaan. \"Vie asetukset\" tallentaa .json-tiedoston, jonka voit myöhemmin tuoda \"Tuo asetukset\" -painikkeella muokkauksen jatkamiseksi."
   },
   "labels": {
     "tel": "Puh.",

@@ -86,7 +86,7 @@ function countSyllablesEN(word: string): number {
   }
 
   // Count vowel groups
-  const vowelGroups = /[aeiouy]+/gi.exec(w);
+  const vowelGroups = w.match(/[aeiouy]+/gi);
   let count = vowelGroups ? vowelGroups.length : 1;
 
   // Adjustments for common patterns
@@ -134,7 +134,7 @@ function countSyllablesDE(word: string): number {
     .replace(/äu/g, 'X')
     .replace(/ie/g, 'X');
 
-  const vowelGroups = /[aeiouyäöüX]+/gi.exec(w);
+  const vowelGroups = w.match(/[aeiouyäöüX]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
 }
 
@@ -172,7 +172,7 @@ function countSyllablesFR(word: string): number {
     .replace(/eau/g, 'X')
     .replace(/oi/g, 'X');
 
-  const vowelGroups = /[aeiouyàâéèêëïîôùûüæœX]+/gi.exec(w);
+  const vowelGroups = w.match(/[aeiouyàâéèêëïîôùûüæœX]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
 }
 
@@ -202,7 +202,7 @@ function countSyllablesRomance(word: string): number {
     .replace(/au/g, 'X')
     .replace(/eu/g, 'X');
 
-  const vowelGroups = /[aeiouyàáâãéèêíîóôõúùûäëïöüășțX]+/gi.exec(w);
+  const vowelGroups = w.match(/[aeiouyàáâãéèêíîóôõúùûäëïöüășțX]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
 }
 
@@ -225,7 +225,7 @@ function countSyllablesNL(word: string): number {
     .replace(/ie/g, 'X')
     .replace(/ui/g, 'X');
 
-  const vowelGroups = /[aeiouyëïöüX]+/gi.exec(w);
+  const vowelGroups = w.match(/[aeiouyëïöüX]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
 }
 
@@ -239,7 +239,7 @@ function countSyllablesSlavic(word: string): number {
   // In Polish/Czech, vowel groups like "ie", "ia", "io" typically form one syllable.
   // The vowel-group approach (matching consecutive vowels) handles this correctly.
   // Vowels: a, e, i, o, u, y, ą, ę, ó (PL) + á, é, í, ú, ů, ý, ě (CS)
-  const vowels = /[aeiouyąęóáéíúůýě]+/gi.exec(word);
+  const vowels = word.match(/[aeiouyąęóáéíúůýě]+/gi);
   return Math.max(1, vowels ? vowels.length : 1);
 }
 
@@ -263,7 +263,7 @@ function countSyllablesNordic(word: string, locale: Locale = 'sv'): number {
   }
 
   // Nordic vowels including å, ä, ö (SV), æ, ø, å (DA/NO), ä, ö, y (FI)
-  const vowelGroups = /[aeiouyåäöæøX]+/gi.exec(w);
+  const vowelGroups = w.match(/[aeiouyåäöæøX]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
 }
 
@@ -275,7 +275,7 @@ function countSyllablesHU(word: string): number {
   if (word.length <= 1) return 1;
 
   // Hungarian: each vowel = one syllable (no diphthongs in standard Hungarian)
-  const vowels = /[aáeéiíoóöőuúüű]/gi.exec(word);
+  const vowels = word.match(/[aáeéiíoóöőuúüű]/gi);
   return Math.max(1, vowels ? vowels.length : 1);
 }
 
@@ -295,7 +295,7 @@ function countSyllablesEL(word: string): number {
     .replace(/ου/g, 'X');
   w = w.replace(/αυ/g, 'X').replace(/ευ/g, 'X').replace(/ηυ/g, 'X');
 
-  const vowels = /[αεηιοωυάέήίόώύϊϋΐΰX]/gi.exec(w);
+  const vowels = w.match(/[αεηιοωυάέήίόώύϊϋΐΰX]/gi);
   return Math.max(1, vowels ? vowels.length : 1);
 }
 
@@ -307,6 +307,6 @@ function countSyllablesGeneric(word: string): number {
   if (word.length <= 2) return 1;
 
   // Generic: count groups of characters that look like vowels
-  const vowelGroups = /[aeiouyàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ]+/gi.exec(word);
+  const vowelGroups = word.match(/[aeiouyàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
 }

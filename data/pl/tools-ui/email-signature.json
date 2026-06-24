@@ -172,7 +172,10 @@
     "viewSourceCopied": "Skopiowano",
     "viewSourceClose": "Zamknij",
     "exportConfig": "Eksportuj ustawienia",
-    "importConfig": "Importuj ustawienia"
+    "importConfig": "Importuj ustawienia",
+    "importError": "Nie udało się zaimportować pliku. Sprawdź, czy to plik ustawień (.json) wyeksportowany z tego narzędzia.",
+    "importSuccess": "Ustawienia zaimportowane",
+    "saveHint": "„Pobierz jako HTML” zapisuje gotową stopkę do wklejenia w programie pocztowym. „Eksportuj ustawienia” zapisuje plik .json, który możesz później wczytać przez „Importuj ustawienia”, aby wrócić do edycji."
   },
   "labels": {
     "tel": "Tel.",

@@ -29,6 +29,7 @@
   "contrastRatio": "Raport de contrast",
   "recommended": "Minim recomandat: 3:1",
   "enterData": "Introduceți date pentru a genera un cod QR.",
+  "dataTooLong": "Datele introduse sunt prea lungi pentru un cod QR. Scurtează textul sau alege un nivel de corecție a erorilor mai mic.",
   "vcard": {
     "firstName": "Prenume",
     "lastName": "Nume",

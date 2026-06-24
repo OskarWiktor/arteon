@@ -172,7 +172,10 @@
     "viewSourceCopied": "Zkopírováno",
     "viewSourceClose": "Zavřít",
     "exportConfig": "Exportovat nastavení",
-    "importConfig": "Importovat nastavení"
+    "importConfig": "Importovat nastavení",
+    "importError": "Soubor se nepodařilo importovat. Zkontrolujte, zda jde o soubor s nastavením (.json) exportovaný z tohoto nástroje.",
+    "importSuccess": "Nastavení importováno",
+    "saveHint": "„Stáhnout jako HTML“ uloží hotový podpis pro vložení do e-mailového klienta. „Exportovat nastavení“ uloží soubor .json, který můžete později načíst přes „Importovat nastavení“ a pokračovat v úpravách."
   },
   "labels": {
     "tel": "Tel.",

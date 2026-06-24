@@ -69,6 +69,7 @@ export default function QrCodeGenerator() {
   const [qrDataUrl, setQrDataUrl] = useState<string | null>(null);
   const [qrSvg, setQrSvg] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
+  const [qrError, setQrError] = useState(false);
 
   const qrData = (() => {
     switch (dataType) {
@@ -101,6 +102,7 @@ export default function QrCodeGenerator() {
     if (!qrData) {
       setQrDataUrl(null);
       setQrSvg(null);
+      setQrError(false);
       return;
     }
 
@@ -122,9 +124,11 @@ export default function QrCodeGenerator() {
 
       setQrDataUrl(pngUrl);
       setQrSvg(svgStr);
+      setQrError(false);
     } catch {
       setQrDataUrl(null);
       setQrSvg(null);
+      setQrError(true);
     } finally {
       setIsGenerating(false);
     }
@@ -398,7 +402,9 @@ export default function QrCodeGenerator() {
               />
             ) : (
               <ToolInfo className='text-center'>
-                <ToolHelper>{t.enterData}</ToolHelper>
+                <ToolHelper variant={qrError ? 'error' : 'default'}>
+                  {qrError ? t.dataTooLong : t.enterData}
+                </ToolHelper>
               </ToolInfo>
             )}
           </div>

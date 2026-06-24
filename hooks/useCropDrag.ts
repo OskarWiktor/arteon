@@ -44,7 +44,7 @@ type UseCropDragOptions<State extends CropStateLike> = {
   setActiveTool: Dispatch<SetStateAction<ActiveTool>>;
 };
 
-type MoveUpdateParams = {
+export type MoveUpdateParams = {
   originalWidth: number;
   originalHeight: number;
   effectiveDims: Dims;
@@ -59,7 +59,7 @@ type MoveUpdateParams = {
   rectHeight: number;
 };
 
-function computeMoveCropUpdate(params: MoveUpdateParams): {
+export function computeMoveCropUpdate(params: MoveUpdateParams): {
   cropX: number;
   cropY: number;
 } {
@@ -103,7 +103,7 @@ function computeMoveCropUpdate(params: MoveUpdateParams): {
   return { cropX: nextCropX, cropY: nextCropY };
 }
 
-type ResizeUpdateParams = {
+export type ResizeUpdateParams = {
   originalWidth: number;
   originalHeight: number;
   effectiveDims: Dims;
@@ -117,7 +117,7 @@ type ResizeUpdateParams = {
   rectHeight: number;
 };
 
-function computeResizeCropUpdate(
+export function computeResizeCropUpdate(
   params: ResizeUpdateParams,
 ): { cropX: number; cropY: number; cropZoom: number } | null {
   const {

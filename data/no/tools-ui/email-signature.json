@@ -172,7 +172,10 @@
     "viewSourceCopied": "Kopiert",
     "viewSourceClose": "Lukk",
     "exportConfig": "Eksporter innstillinger",
-    "importConfig": "Importer innstillinger"
+    "importConfig": "Importer innstillinger",
+    "importError": "Filen kunne ikke importeres. Kontroller at det er en innstillingsfil (.json) eksportert fra dette verktøyet.",
+    "importSuccess": "Innstillinger importert",
+    "saveHint": "\"Last ned som HTML\" lagrer den ferdige signaturen for innliming i e-postprogrammet. \"Eksporter innstillinger\" lagrer en .json-fil du senere kan laste inn via \"Importer innstillinger\" for å fortsette redigeringen."
   },
   "labels": {
     "tel": "Tlf.",

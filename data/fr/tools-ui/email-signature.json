@@ -172,7 +172,10 @@
     "viewSourceCopied": "Copié",
     "viewSourceClose": "Fermer",
     "exportConfig": "Exporter la configuration",
-    "importConfig": "Importer la configuration"
+    "importConfig": "Importer la configuration",
+    "importError": "Impossible d'importer le fichier. Vérifiez qu'il s'agit d'un fichier de configuration (.json) exporté depuis cet outil.",
+    "importSuccess": "Configuration importée",
+    "saveHint": "« Télécharger en HTML » enregistre la signature prête à coller dans votre client de messagerie. « Exporter la configuration » enregistre un fichier .json que vous pouvez recharger via « Importer la configuration » pour continuer à modifier."
   },
   "labels": {
     "tel": "Tél.",

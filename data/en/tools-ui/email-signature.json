@@ -172,7 +172,10 @@
     "viewSourceCopied": "Copied",
     "viewSourceClose": "Close",
     "exportConfig": "Export settings",
-    "importConfig": "Import settings"
+    "importConfig": "Import settings",
+    "importError": "Couldn't import the file. Make sure it's a settings file (.json) exported from this tool.",
+    "importSuccess": "Settings imported",
+    "saveHint": "\"Download as HTML\" saves the ready-to-use signature for pasting into your email client. \"Export settings\" saves a .json file you can later load via \"Import settings\" to resume editing."
   },
   "labels": {
     "tel": "Tel.",

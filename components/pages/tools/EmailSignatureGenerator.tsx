@@ -26,6 +26,8 @@ import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import ButtonTool from '@/components/atoms/buttons/ButtonTool';
 import InputColor from '@/components/atoms/form/InputColor';
+import ToolAlert from '@/components/atoms/ToolAlert';
+import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
 import ConfirmModal from '@/components/organisms/ConfirmModal';
 import AppearancePanel from '@/components/organisms/tools/EmailSignatureGenerator/panels/AppearancePanel';
@@ -38,11 +40,20 @@ import TextStyleRow from '@/components/organisms/tools/EmailSignatureGenerator/T
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { useDialogFocus } from '@/hooks/useDialogFocus';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useTimeout } from '@/hooks/useTimeout';
 import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/emailSignature';
 import { useLocale } from '@/lib/LocaleContext';
 import { buildSignatureHtml } from '@/lib/tools/email/buildSignatureHtml';
 import { exportSignatureAsHtml } from '@/lib/tools/email/exportSignature';
+import {
+  isValidLayoutType,
+  mergeSignatureConfig,
+  mergeSpacingConfig,
+  mergeStyleConfig,
+  mergeTextStyleConfig,
+  parseSignatureExportJson,
+} from '@/lib/tools/email/importSignatureConfig';
 import {
   STORAGE_KEY_BASE,
   DEFAULT_STYLE,
@@ -110,6 +121,10 @@ export default function EmailSignatureGenerator() {
   const [themeId, setThemeId] = useState<string>('classic-dark');
   const [showResetModal, setShowResetModal] = useState(false);
   const [showSourceModal, setShowSourceModal] = useState(false);
+  const [importStatus, setImportStatus] = useState<
+    'idle' | 'success' | 'error'
+  >('idle');
+  const { start: startImportStatusReset } = useTimeout();
   const sourceModalRef = useRef<HTMLDivElement>(null);
 
   useEscapeKey(() => setShowSourceModal(false), showSourceModal);
@@ -124,12 +139,14 @@ export default function EmailSignatureGenerator() {
       const saved = localStorage.getItem(storageKey);
       if (saved) {
         const data = JSON.parse(saved);
-        if (data.config) setConfig(data.config);
-        if (data.styleConfig) setStyleConfig(data.styleConfig);
-        if (data.spacingConfig) setSpacingConfig(data.spacingConfig);
-        if (data.textStyleConfig) setTextStyleConfig(data.textStyleConfig);
-        if (data.layout) setLayout(data.layout);
-        if (data.themeId) setThemeId(data.themeId);
+        setConfig(prev => mergeSignatureConfig(data.config, prev));
+        setStyleConfig(prev => mergeStyleConfig(data.styleConfig, prev));
+        setSpacingConfig(prev => mergeSpacingConfig(data.spacingConfig, prev));
+        setTextStyleConfig(prev =>
+          mergeTextStyleConfig(data.textStyleConfig, prev),
+        );
+        if (isValidLayoutType(data.layout)) setLayout(data.layout);
+        if (typeof data.themeId === 'string') setThemeId(data.themeId);
       }
     } catch {
       // Ignore localStorage errors
@@ -285,6 +302,34 @@ export default function EmailSignatureGenerator() {
     downloadBlob(blob, 'email-signature-config.json');
   }
 
+  function applyImportedSignatureData(record: Record<string, unknown>) {
+    setConfig(prev => mergeSignatureConfig(record.config, prev));
+    setStyleConfig(prev => mergeStyleConfig(record.styleConfig, prev));
+    setSpacingConfig(prev => mergeSpacingConfig(record.spacingConfig, prev));
+    setTextStyleConfig(prev =>
+      mergeTextStyleConfig(record.textStyleConfig, prev),
+    );
+    if (isValidLayoutType(record.layout)) setLayout(record.layout);
+  }
+
+  function reportImportResult(success: boolean) {
+    setImportStatus(success ? 'success' : 'error');
+    startImportStatusReset(
+      () => setImportStatus('idle'),
+      success ? 3000 : 5000,
+    );
+  }
+
+  function handleImportFileLoad(ev: ProgressEvent<FileReader>) {
+    const parsed = parseSignatureExportJson(ev.target?.result as string);
+    if (!parsed) {
+      reportImportResult(false);
+      return;
+    }
+    applyImportedSignatureData(parsed);
+    reportImportResult(true);
+  }
+
   function handleImportConfig() {
     const input = document.createElement('input');
     input.type = 'file';
@@ -293,18 +338,8 @@ export default function EmailSignatureGenerator() {
       const file = (e.target as HTMLInputElement).files?.[0];
       if (!file) return;
       const reader = new FileReader();
-      reader.onload = ev => {
-        try {
-          const data = JSON.parse(ev.target?.result as string);
-          if (data.config) setConfig(data.config);
-          if (data.styleConfig) setStyleConfig(data.styleConfig);
-          if (data.spacingConfig) setSpacingConfig(data.spacingConfig);
-          if (data.textStyleConfig) setTextStyleConfig(data.textStyleConfig);
-          if (data.layout) setLayout(data.layout);
-        } catch {
-          /* ignore invalid JSON */
-        }
-      };
+      reader.onload = handleImportFileLoad;
+      reader.onerror = () => reportImportResult(false);
       reader.readAsText(file);
     };
     input.click();
@@ -750,6 +785,8 @@ export default function EmailSignatureGenerator() {
             </div>
           </div>
 
+          <ToolHelper className='mb-2'>{t.preview.saveHint}</ToolHelper>
+
           <div className='flex flex-wrap gap-2'>
             <Button
               type='button'
@@ -829,6 +866,17 @@ export default function EmailSignatureGenerator() {
               {t.preview.resetButton}
             </Button>
           </div>
+
+          {importStatus === 'error' && (
+            <ToolAlert variant='error' className='mt-2'>
+              {t.preview.importError}
+            </ToolAlert>
+          )}
+          {importStatus === 'success' && (
+            <ToolAlert variant='success' className='mt-2'>
+              {t.preview.importSuccess}
+            </ToolAlert>
+          )}
 
           {showSourceModal && (
             <div className={cn('fixed inset-0 z-100 px-4', flexCenterClasses)}>
