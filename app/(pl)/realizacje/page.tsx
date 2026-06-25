@@ -20,7 +20,7 @@ const schema = {
   '@id': `${toAbsoluteUrl('/realizacje')}#collection`,
   name: 'Realizacje - strony internetowe, sklepy i projekty graficzne - Arteon',
   description:
-    'Zobacz nasze realizacje: strony WWW, sklepy internetowe, identyfikacje wizualne i materiały reklamowe. Każdy projekt to konkretne rozwiązanie dopasowane do potrzeb klienta.',
+    'Specjalizujemy się w tworzeniu projektów graficznych oraz stronach i sklepach www. Sprawdź nasze ostatnie realizacje',
   url: toAbsoluteUrl('/realizacje'),
   mainEntity: {
     '@type': 'ItemList',
@@ -39,13 +39,13 @@ export const metadata = {
   title:
     'Realizacje stron internetowych, sklepów oraz projektów graficznych - Arteon',
   description:
-    'Specjalizujemy się na projektowaniu graficznym projektów do druku oraz stron internetowych wraz z realizacją. Sprawdź opisy realizacji i zobacz jakie dajemy efekty',
+    'Specjalizujemy się w tworzeniu projektów graficznych oraz stronach i sklepach www. Sprawdź nasze ostatnie realizacje',
   alternates: { canonical: toAbsoluteUrl('/realizacje') },
   openGraph: {
     title:
       'Realizacje stron internetowych, sklepów oraz projektów graficznych - Arteon',
     description:
-      'Specjalizujemy się na projektowaniu graficznym projektów do druku oraz stron internetowych wraz z realizacją. Sprawdź opisy realizacji i zobacz jakie dajemy efekty',
+      'Specjalizujemy się w tworzeniu projektów graficznych oraz stronach i sklepach www. Sprawdź nasze ostatnie realizacje',
     url: toAbsoluteUrl('/realizacje'),
     type: 'website',
     images: [
@@ -66,7 +66,7 @@ export default function ProjectsPage() {
     <>
       <HeroBanner
         title='Realizacje stron internetowych, sklepów oraz projektów graficznych'
-        description='Specjalizujemy się na projektowaniu graficznym projektów do druku oraz stron internetowych wraz z realizacją. Sprawdź opisy realizacji i zobacz jakie dajemy efekty'
+        description='Specjalizujemy się w tworzeniu projektów graficznych oraz stronach i sklepach www. Sprawdź nasze ostatnie realizacje'
         backgroundImage='/assets/bg/arteon-zbior-realizacji.webp'
         overlay='black'
       />
@@ -81,7 +81,7 @@ export default function ProjectsPage() {
 
       <CTABanner
         title='Zrealizuj swój pomysł'
-        description='Skontaktuj się z nami i opowiedz o tym co chcesz stworzyć w ramach swojej działalności. Powiemy co możemy dla Ciebie zrobić i doradzimy najlepsze rozwiązanie dla Twoich potrzeb i Twojego biznesu.'
+        description='Potrzebujesz strony internetowej, sklepu, projektu graficznego, optymalizacji SEO lub prędkości ładowania witryny? Skontaktuj się z nami, przygotujemy dla Ciebie darmową wycenę i jasny plan działania.'
         btnOne='Kontakt'
         btnOneHref='/kontakt'
         btnTwo='Poznaj wszystkie usługi'

@@ -1,22 +1,22 @@
-import { RiPhoneLine, RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
-import ContactForm from '@/components/organisms/ContactForm';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { getContactAlternates } from '@/lib/i18n/pages/contact';
-import { normalIconSizeClasses } from '@/lib/uiClasses';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import SectionContactForm from '@/components/organisms/sections/SectionContactForm';
 
 export const metadata = {
-  title: 'Kontakt - wycena Twojego planu - Arteon',
+  title:
+    'Kontakt - realizacja stron internetowych, sklepów i projektów graficznych - Arteon',
   description:
     'Strona kontaktowa Arteon. Napisz, co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
   alternates: getContactAlternates('pl'),
   openGraph: {
-    title: 'Kontakt - wycena Twojego planu - Arteon',
+    title:
+      'Kontakt - realizacja stron internetowych, sklepów i projektów graficznych - Arteon',
     description:
       'Strona kontaktowa Arteon. Napisz, co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
     url: toAbsoluteUrl('/kontakt'),
@@ -102,7 +102,7 @@ export default function ContactPage() {
     <>
       <HeroBanner
         title='Kontakt - realizacja stron internetowych, sklepów i projektów graficznych'
-        description='Opowiedz nam o tym czym się zajmujesz i co chciałbyś zrealizować, pomożemy doradzić najlepsze rozwiązanie, które przyciągnie Twoich wymarzonych klientów'
+        description='Potrzebujesz strony internetowej, sklepu, projektu graficznego, optymalizacji SEO lub prędkości ładowania witryny? Skontaktuj się z nami, przygotujemy dla Ciebie darmową wycenę i jasny plan działania.'
         backgroundImage='/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp'
         overlay='black'
       />
@@ -111,40 +111,35 @@ export default function ContactPage() {
       <Wrapper>
         <Divider size='sm' />
 
-        <ContactForm
-          title='Rozwiń swoją firmę'
-          description='Opisz co chcesz zrealizować - przygotujemy jasny plan realizacji i powiemy co sprawdzi się najlepiej'
+        <SectionContactForm
+          imageSrc='/assets/projects/jstax/moskup-strony-jstax.webp'
+          imageAlt='Mockup projektu strony internetowej dla kancelarii podatkowej'
         />
 
-        <Divider size='sm' />
+        <Divider line />
 
         <SectionSteps
           items={[
             {
-              title: <>Kontaktujesz się</>,
-              description: (
-                <>
-                  Opisujesz co chciałbym zrealizować poprzez formularz, email
-                  lub telefonicznie
-                </>
-              ),
+              title: <>Rozmowa</>,
+              description: <>Opisujesz co chciałbym stworzyć lub poprawić</>,
             },
             {
-              title: <>Analizujemy potrzeby</>,
+              title: <>Analiza</>,
               description: (
                 <>Sprawdzamy Twoją branżę, analizujemy cele i tworzymy plan</>
               ),
             },
             {
-              title: <>Otrzymujesz ofertę</>,
+              title: <>Oferta</>,
               description: (
-                <>Wysyłamy ofertę z wyceną i wszelkimi etapami realizacji</>
+                <>Wysyłamy ofertę z wyceną i jasnym planem działania</>
               ),
             },
             {
-              title: <>Dopracowujemy szczegóły</>,
+              title: <>Realizacja</>,
               description: (
-                <>Wspólnie dopracowujemy idealny plan i ruszamy z realizacją</>
+                <>Wspólnie dopracowujemy szczegóły i ruszamy z realizacją</>
               ),
             },
           ]}
@@ -157,7 +152,6 @@ export default function ContactPage() {
           items={[
             {
               title: 'Telefon',
-              icon: <RiPhoneLine className={normalIconSizeClasses} />,
               description: (
                 <p>
                   <a href='tel:+48516466255'>+48 516 466 255</a>
@@ -165,13 +159,13 @@ export default function ContactPage() {
               ),
             },
             {
-              title: 'Email',
-              icon: <RiMailLine className={normalIconSizeClasses} />,
+              title: 'E-mail',
               description: (
                 <>
                   <p>
                     Dla polskojęzycznych:
                     <a href='mailto:kontakt@arteonagency.pl'>
+                      {' '}
                       kontakt@arteonagency.pl
                     </a>
                   </p>
@@ -179,6 +173,7 @@ export default function ContactPage() {
                     For english speaker:
                     <strong>
                       <a href='mailto:contact@arteonagency.com'>
+                        {' '}
                         contact@arteonagency.com
                       </a>
                     </strong>
@@ -187,12 +182,11 @@ export default function ContactPage() {
               ),
             },
             {
-              title: 'Godziny otwarcia',
-              icon: <RiMapPinTimeLine className={normalIconSizeClasses} />,
+              title: 'Godziny pracy',
               description: (
                 <p>
-                  Jesteśmy do Twojej dyspozycji od poniedziałku do piątku od 9
-                  do 20
+                  Jesteśmy do Twojej dyspozycji od poniedziałku do piątku od
+                  9:00 do 17:00
                 </p>
               ),
             },

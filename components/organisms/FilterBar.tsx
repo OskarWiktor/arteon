@@ -23,6 +23,7 @@ import {
 } from '@/lib/uiClasses';
 import Backdrop from '../atoms/Backdrop';
 import ButtonLink from '../atoms/buttons/ButtonLink';
+import Button from '../atoms/buttons/Button';
 
 type Cat = { label: string; slug: string; count: number };
 
@@ -81,16 +82,15 @@ export default function FilterBar({
       <h2 className='mb-4'>Filtry artykułów</h2>
 
       <div className='pb-6 md:hidden'>
-        <button
+        <Button
           type='button'
           onClick={openModal}
-          className='inline-flex items-center gap-2 rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md'
           aria-haspopup='dialog'
           aria-expanded={isModalOpen}
         >
           <span>{mobileButtonLabel}</span>
           <span className='text-light'>({cats.length + 1})</span>
-        </button>
+        </Button>
       </div>
 
       <div className='hidden pb-6 md:block md:pb-8 lg:pb-10'>
@@ -107,6 +107,7 @@ export default function FilterBar({
               variant={isRoot ? 'accent' : 'normal'}
               href='/edukacja'
               aria-current={isRoot ? 'page' : undefined}
+              size='small'
             >
               Wszystkie
             </ButtonLink>
@@ -119,6 +120,7 @@ export default function FilterBar({
                   variant={isActive ? 'accent' : 'normal'}
                   href={`/edukacja/${c.slug}`}
                   aria-current={isActive ? 'page' : undefined}
+                  size='small'
                 >
                   {c.label} <span className='opacity-60'>({c.count})</span>
                 </ButtonLink>

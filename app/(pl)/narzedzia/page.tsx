@@ -379,7 +379,7 @@ const schema = {
         operatingSystem: 'Any',
         alternateName: [
           'Generator podpisu e-mail',
-          'Email signature generator',
+          'E-mail signature generator',
         ],
       },
       {

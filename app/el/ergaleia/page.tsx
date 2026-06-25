@@ -109,7 +109,7 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 6,
-        name: 'Δημιουργία υπογραφής email',
+        name: 'Δημιουργία υπογραφής e-mail',
         url: toAbsoluteUrl('/el/ergaleia/dorean-dimiourgia-ypografis-email'),
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Any',
@@ -725,20 +725,20 @@ export default function ToolsIndexPage() {
         />
         <Divider size='sm' />
         <SectionSteps
-          title='Email και επικοινωνία'
-          description='Εργαλεία για επαγγελματική επικοινωνία μέσω email και ενιαία οπτική ταυτότητα.'
+          title='E-mail και επικοινωνία'
+          description='Εργαλεία για επαγγελματική επικοινωνία μέσω e-mail και ενιαία οπτική ταυτότητα.'
           grid='three'
           items={[
             {
               icon: <RiMailLine className={largeIconSizeClasses} />,
-              title: 'Δημιουργία υπογραφής email',
-              topImageAlt: 'Δημιουργία υπογραφής email Arteon',
+              title: 'Δημιουργία υπογραφής e-mail',
+              topImageAlt: 'Δημιουργία υπογραφής e-mail Arteon',
               topImageSrc:
                 '/assets/tools/free-html-email-signature-generator/dorean-dimiourgia-ypografis-email-el.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Δημιουργήστε επαγγελματική υπογραφή email σε λίγα λεπτά.
+                    Δημιουργήστε επαγγελματική υπογραφή e-mail σε λίγα λεπτά.
                     Εισάγετε τα στοιχεία σας, επιλέξτε χρώματα και αντιγράψτε
                     τον έτοιμο κώδικα HTML στο Gmail, Outlook ή άλλη εφαρμογή.
                   </p>

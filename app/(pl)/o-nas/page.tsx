@@ -4,12 +4,10 @@ import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
 import LogoCarousel from '@/components/organisms/carousels/LogoCarousel';
-import ProjectsCarousel from '@/components/organisms/carousels/ProjectsCarousel';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import CTABanner from '@/components/organisms/CTABanner';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
-import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import WorkSteps from '@/components/organisms/WorkSteps';
 import { getAboutAlternates } from '@/lib/i18n/pages/about';
@@ -22,7 +20,7 @@ const profilePageJsonLd = {
     '@id': `${siteUrl}#organization`,
     name: 'Arteon',
     url: siteUrl,
-    foundingDate: '2020',
+    foundingDate: '2024',
     knowsAbout: [
       'Web Development',
       'Web Design',
@@ -41,12 +39,14 @@ const profilePageJsonLd = {
 };
 
 export const metadata = {
-  title: 'O nas - strategia, kreacja i widoczność - Arteon',
+  title:
+    'Parter dla Twojego biznesu: projekty graficzne, strony www, seo - Arteon',
   description:
     'Poznaj Arteon: łączymy strategię, branding, technologię i marketing w jeden proces. Zobacz, jak pracujemy i dlaczego klienci nam ufają.',
   alternates: getAboutAlternates('pl'),
   openGraph: {
-    title: 'O nas - strategia, kreacja i widoczność - Arteon',
+    title:
+      'Parter dla Twojego biznesu: projekty graficzne, strony www, seo - Arteon',
     description:
       'Poznaj Arteon: łączymy strategię, branding, technologię i marketing w jeden proces. Zobacz, jak pracujemy i dlaczego klienci nam ufają.',
     url: toAbsoluteUrl('/o-nas'),
@@ -67,8 +67,8 @@ export default function AboutPage() {
     <>
       <JsonLd schema={profilePageJsonLd} id='schema-about-profilepage' />
       <HeroBanner
-        title='O nas'
-        description='Arteon - strategia, kreacja i widoczność, które przynoszą rezultaty'
+        title='Arteon - parter dla Twojego biznesu: grafika, technologia i widoczność'
+        description='Jesteśmy nowoczesną agencją interaktywną, która pomaga małym i średnim przedsiębiorstwom budować silną i spójną obecność w świecie cyfrowym.'
         backgroundImage='/assets/arteon-logo-on-mockup.webp'
         overlay='black'
       />
@@ -84,32 +84,17 @@ export default function AboutPage() {
           title='Kim jesteśmy'
         >
           <p>
-            W Arteon łączymy strategię, design i technologię w jeden proces.
-            Wdrażamy doświadczenie z pracy dla globalnych marek w małych i
-            średnich biznesach - tak, żeby Twoja marka była spójna, a działania
-            przynosiły konkretne rezultaty.
+            Jesteśmy agencją interaktywną w której możesz zrealizować zarówno
+            mały projekt wizytówki jak i kompleksową aplikację webową. Tworzymy
+            rozwiązania, które są nowoczesne, bezpieczne i dopasowane do Twojego
+            budżetu.
           </p>
           <p className='mt-2'>
-            Nie sprzedajemy „samej strony”. Zaczynamy od celu (zapytania,
-            sprzedaż, rekrutacja, wizerunek), a dopiero potem dobieramy
-            narzędzia: ofertę, identyfikację, treści, wdrożenie i kanały
-            dotarcia.
+            Dbamy o detale: nasze strony są błyskawiczne (co potwierdzają wyniki
+            w PageSpeed Insights), a materiały drukowane idealnie współgrają z
+            wizerunkiem online.
           </p>
-          <ul className='mt-4 list-disc space-y-1 pl-6'>
-            <li>Strategia i architektura oferty</li>
-            <li>Branding i projekty graficzne</li>
-            <li>Strony, sklepy i aplikacje webowe</li>
-            <li>Treści, SEO i widoczność</li>
-            <li>Kampanie, analityka i optymalizacja</li>
-          </ul>
         </SectionBasic>
-
-        <Divider line />
-
-        <SectionInfo
-          title='Dlaczego powstaliśmy?'
-          description='Widzimy powtarzający się problem: firmy inwestują w pojedyncze elementy (strona, reklamy, logo), ale bez spójnej oferty, treści i planu te działania nie składają się na wynik. Dlatego pracujemy w modelu: diagnoza → plan → realizacja → pomiar → optymalizacja.'
-        ></SectionInfo>
 
         <Divider line />
 
@@ -118,32 +103,31 @@ export default function AboutPage() {
           grid='two'
           items={[
             {
-              title: 'Komplet usług wokół Twojej oferty i komunikacji',
+              title: 'Wszystko w jednym miejscu',
               description: (
                 <p>
-                  Jedna odpowiedzialność, jeden plan: strategia, kreacja,
-                  wdrożenie i widoczność. Bez rozbijania pracy na kilku
-                  wykonawców.
+                  Od pomysłu, przez logo i stronę WWW, aż po pozycjonowanie w
+                  Google czy własne narzędzia. Z nami zrealizujesz wszystko w
+                  jednym miejscu
                 </p>
               ),
             },
             {
-              title: 'Dobór technologii do celu',
+              title: 'Jasna komunikacja',
               description: (
                 <p>
-                  Najpierw cel. Potem narzędzia. Dobieramy technologię tak, by
-                  szybciej dojść do wyniku, w ramach Twojego budżetu i skali.
-                  Tłumaczymy każdą decyzję prosto, bez technicznego żargonu.
+                  Wiemy, że nie każdy rozumie techniczne aspekty, dlatego zawsze
+                  staramy się mówić jak najprościej i na każdym etapie
+                  informujemy Cie o postępach.
                 </p>
               ),
             },
             {
-              title: 'Widoczność i pomiar od startu',
+              title: 'Nowoczesne standardy',
               description: (
                 <p>
-                  SEO i analityka od pierwszego dnia: struktura, treści i
-                  techniczne podstawy. Po wdrożeniu dostajesz propozycję „co
-                  dalej”, żeby rosnąć szybciej.
+                  Nie używamy powielanych szablonów, do każdego podchodzimy
+                  indywidualnie i stawiamy na jakość i detale.
                 </p>
               ),
             },
@@ -152,10 +136,8 @@ export default function AboutPage() {
               title: 'Gwarancja i proste rozliczenia',
               description: (
                 <p>
-                  Jasne zasady: faktura po realizacji (małe projekty), przy
-                  większych niska zaliczka i kamienie milowe. Gwarancja opisana
-                  w <InlineLink href='/regulamin'>regulaminie</InlineLink>. Po
-                  wdrożeniu dwa miesiące wsparcia w cenie.
+                  Posiadamy jasne gwarancje i rozliczamy się z Tobą dopiero po
+                  realizacji i Twojej pełnej akceptacji powierzonej nam pracy.
                 </p>
               ),
             },
@@ -165,10 +147,6 @@ export default function AboutPage() {
         <Divider line />
 
         <WorkSteps />
-
-        <Divider line />
-
-        <ProjectsCarousel title='Wybrane realizacje' projects={[]} />
 
         <Divider line />
 
@@ -182,8 +160,8 @@ export default function AboutPage() {
       </Wrapper>
 
       <CTABanner
-        title='Zacznijmy od rozmowy'
-        description='Jasny plan i odpowiedzialność po naszej stronie. Niezależnie od wymagań znajdziemy najlepszą drogę do osiągnięcia zamierzonych celów.'
+        title='Skontaktuj się'
+        description='Potrzebujesz strony internetowej, sklepu, projektu graficznego, optymalizacji SEO lub prędkości ładowania witryny? Skontaktuj się z nami, przygotujemy dla Ciebie darmową wycenę i jasny plan działania.'
         btnOne='Skontaktuj się'
         btnOneHref='/kontakt'
         btnTwo='Poznaj ofertę'

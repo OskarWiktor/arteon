@@ -9,6 +9,7 @@ import {
 import ArrowIcon from '../ArrowIcon';
 
 type ButtonVariant = 'normal' | 'accent';
+type ButtonSize = 'small' | 'medium';
 
 interface ButtonLinkProps {
   href: string;
@@ -17,10 +18,16 @@ interface ButtonLinkProps {
   className?: string;
   ariaLabel?: string;
   variant?: ButtonVariant;
+  size?: ButtonSize;
 }
 
 const buttonLinkClasses =
   'inline-flex w-fit items-center px-3.25 py-1.75 md:px-5 md:py-2.5 rounded-sm text-sm font-medium md:text-base transition hover:-translate-y-0.5 text-dark border border-neutral-200 bg-white shadow-sm hover:shadow-md';
+
+const sizeClasses: Record<ButtonSize, string> = {
+  small: 'px-2.5 py-1.5 md:px-3 md:py-1.5',
+  medium: 'px-4 py-2 md:px-5 md:py-2.5',
+};
 
 const variantClasses: Record<ButtonVariant, string> = {
   normal: buttonNormalVariantClasses,
@@ -39,10 +46,12 @@ export default function ButtonLink({
   className,
   ariaLabel,
   variant = 'normal',
+  size = 'medium',
 }: ButtonLinkProps) {
   const classes = cn(
     buttonLinkClasses,
     focusRingClasses,
+    sizeClasses[size],
     variantClasses[variant],
     className,
   );

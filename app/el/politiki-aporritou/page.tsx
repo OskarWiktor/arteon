@@ -55,8 +55,8 @@ export default function PrivacyPolicyPage() {
               στον Δήμο Czernichów, Zagacie, ul. Jasminowa 36, 32-070, Πολωνία.
             </p>
             <p>
-              ΑΦΜ: <strong>9442284430</strong>, REGON:{' '}
-              <strong>528888241</strong>
+              ΑΦΜ: <strong>6772156998</strong>, REGON:{' '}
+              <strong>521832645</strong>
             </p>
             <p>
               Επικοινωνία: <strong>contact@arteonagency.com</strong>, τηλ.:{' '}
@@ -67,7 +67,7 @@ export default function PrivacyPolicyPage() {
           <SectionInfo title='2. Εύρος δεδομένων'>
             <ul className='list-disc space-y-1 pl-6'>
               <li>
-                δεδομένα από τη φόρμα επικοινωνίας (όνομα, επώνυμο, email,
+                δεδομένα από τη φόρμα επικοινωνίας (όνομα, επώνυμο, e-mail,
                 περιεχόμενο μηνύματος),
               </li>
               <li>

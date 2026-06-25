@@ -16,13 +16,13 @@ export const metadata: Metadata = {
   title:
     'Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym - Arteon',
   description:
-    'Lubimy pomagać i dzielić się wiedzą ze wszystkimi. Znajdziesz tutaj poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych',
+    'Lubimy pomagać i dzielić się wiedzą. Znajdziesz tutaj poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych',
   alternates: { canonical: 'https://www.arteonagency.pl/edukacja' },
   openGraph: {
     title:
       'Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym - Arteon',
     description:
-      'Lubimy pomagać i dzielić się wiedzą ze wszystkimi. Znajdziesz tutaj poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych',
+      'Lubimy pomagać i dzielić się wiedzą. Znajdziesz tutaj poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych',
     url: `${siteUrl}/edukacja`,
     type: 'website',
     images: [
@@ -39,7 +39,7 @@ const schema = {
   '@id': `${siteUrl}/edukacja#collection`,
   name: 'Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym - Arteon',
   description:
-    'Lubimy pomagać i dzielić się wiedzą ze wszystkimi. Znajdziesz tutaj poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych',
+    'Lubimy pomagać i dzielić się wiedzą. Znajdziesz tutaj poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych',
   url: `${siteUrl}/edukacja`,
   mainEntity: {
     '@type': 'ItemList',
@@ -61,7 +61,7 @@ export default function EdukacjaPage() {
     <>
       <HeroBanner
         title='Baza wiedzy o stronach internetowych, sklepach, seo i projektowaniu graficznym'
-        description='Lubimy pomagać i dzielić się wiedzą ze wszystkimi. Poniżej znajdziesz artykuły na tematy związane z programowaniem, projektowaniem, psychologią w biznesie, pozycjonowaniem stron a nawet psychologią kolorów'
+        description='Lubimy pomagać i dzielić się wiedzą. Poniżej znajdziesz artykuły związane z programowaniem, projektowaniem, pozycjonowaniem stron a nawet psychologią kolorów'
         backgroundImage='/assets/blog/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty.webp'
         overlay='black'
       />

@@ -57,8 +57,8 @@ export default function AdatvedelmiIranyelvekPage() {
               község, Zagacie, ul. Jaśminowa 36, 32-070, Lengyelország.
             </p>
             <p>
-              Adószám (NIP): <strong>9442284430</strong>, REGON:{' '}
-              <strong>528888241</strong>
+              Adószám (NIP): <strong>6772156998</strong>, REGON:{' '}
+              <strong>521832645</strong>
             </p>
             <p>
               Kapcsolat: <strong>contact@arteonagency.com</strong>, tel.:{' '}

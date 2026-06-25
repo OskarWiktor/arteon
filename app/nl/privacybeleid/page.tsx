@@ -58,8 +58,8 @@ export default function PrivacybeleidPage() {
               32-070, Polen.
             </p>
             <p>
-              Belastingnummer (NIP): <strong>9442284430</strong>, REGON:{' '}
-              <strong>528888241</strong>
+              Belastingnummer (NIP): <strong>6772156998</strong>, REGON:{' '}
+              <strong>521832645</strong>
             </p>
             <p>
               Contact: <strong>contact@arteonagency.com</strong>, tel.:{' '}

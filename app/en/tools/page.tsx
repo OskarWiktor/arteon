@@ -266,7 +266,7 @@ const schema = {
     },
     {
       '@type': 'Thing',
-      name: 'Favicon, QR, email signature generator',
+      name: 'Favicon, QR, e-mail signature generator',
     },
   ],
   mainEntity: {
@@ -316,9 +316,9 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 5,
-        name: 'HTML email signature generator',
+        name: 'HTML e-mail signature generator',
         description:
-          'Free HTML email signature generator. Add contact details, CTA link, and social media profiles, then copy the ready HTML code into Gmail or Outlook.',
+          'Free HTML e-mail signature generator. Add contact details, CTA link, and social media profiles, then copy the ready HTML code into Gmail or Outlook.',
         url: toAbsoluteUrl('/en/tools/free-email-signature-generator'),
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Any',
@@ -795,22 +795,22 @@ export default function ToolsIndexPage() {
         <Divider size='sm' />
 
         <SectionSteps
-          title='Email & communication'
-          description='Tools that help organize email communication and brand image.'
+          title='E-mail & communication'
+          description='Tools that help organize e-mail communication and brand image.'
           grid='three'
           items={[
             {
               icon: <RiMailLine className={largeIconSizeClasses} />,
-              title: 'Free HTML email signature generator',
-              topImageAlt: 'Free HTML email signature generator Arteon',
+              title: 'Free HTML e-mail signature generator',
+              topImageAlt: 'Free HTML e-mail signature generator Arteon',
               topImageSrc:
                 '/assets/tools/free-html-email-signature-generator/free-email-signature-generator-en.webp',
               description: (
                 <div className='flex h-full flex-col'>
                   <p>
-                    Build a professional email signature in minutes. Enter your
+                    Build a professional e-mail signature in minutes. Enter your
                     details, choose colors, and copy the ready HTML code into
-                    Gmail, Outlook, and other email clients.
+                    Gmail, Outlook, and other e-mail clients.
                   </p>
                   <div className='mt-4'>
                     <ButtonLink

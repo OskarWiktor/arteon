@@ -58,8 +58,8 @@ export default function PoliticaDePrivacidadePage() {
               32-070, Polónia.
             </p>
             <p>
-              NIF (NIP)&nbsp;: <strong>9442284430</strong>, REGON&nbsp;:{' '}
-              <strong>528888241</strong>
+              NIF (NIP)&nbsp;: <strong>6772156998</strong>, REGON&nbsp;:{' '}
+              <strong>521832645</strong>
             </p>
             <p>
               Contacto&nbsp;: <strong>contact@arteonagency.com</strong>,
