@@ -24,6 +24,7 @@ const DEFAULT_HERO_DESCRIPTION = (label: string) =>
 const CATEGORY_CONTENT_BY_SLUG: Record<
   string,
   {
+    heroTitle: string;
     heroDescription: string;
     metaDescription: string;
     openGraphDescription: string;
@@ -31,7 +32,9 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
   }
 > = {
   seo: {
-    heroDescription: 'Artykuły o pozycjonowaniu i widoczności w Google.',
+    heroTitle: 'Artykuły dotyczące działać seo',
+    heroDescription:
+      'Artykuły o pozycjonowaniu i widoczności w Google. Dowiedz się, co wpływa na widoczność stron w Google.',
     metaDescription:
       'Dowiedz się, jak poprawić widoczność strony w Google. Sprawdź dostępne praktyczne artykuły o SEO, pozycjonowaniu i optymalizacji .',
     openGraphDescription:
@@ -40,6 +43,7 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
       '/assets/blog/meta-title-i-description-jak-je-napisac/meta-title-i-description-jak-je-napisac.webp',
   },
   tresci: {
+    heroTitle: 'Artykuły dotyczące tworzenia treści',
     heroDescription: 'Artykuły o tworzeniu treści i copywritingu.',
     metaDescription:
       'Zobacz, jak pisać treści, które przyciągają klientów i wspierają SEO. Sprawdź dostępne poradniki o copywritingu, nagłówkach i strukturze tekstów na stronę.',
@@ -49,7 +53,9 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
       '/assets/blog/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony.webp',
   },
   grafika: {
-    heroDescription: 'Poradniki o grafice i projektach wizualnych.',
+    heroTitle: 'Artykuły dotyczące projektów graficznych',
+    heroDescription:
+      'Poradniki o grafice i projektach wizualnych. Dowiedz się, jak dobierać kolory, tworzyć spójne projekty i przygotowywać grafiki dla firmy.',
     metaDescription:
       'Dowiedz się, jak dobierać kolory, tworzyć spójne projekty i przygotowywać grafiki dla firmy. Sprawdź dostępne praktyczne poradniki o grafice i designie.',
     openGraphDescription:
@@ -58,7 +64,9 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
       '/assets/blog/jak-dobrac-kolory-do-strony-internetowej/jak-dobrac-kolory-do-strony-internetowej.webp',
   },
   psychologia: {
-    heroDescription: 'Artykuły o psychologii decyzji i zachowaniach klientów.',
+    heroTitle: 'Artykuły dotyczące psychologii w biznesie',
+    heroDescription:
+      'Artykuły o psychologii decyzji i zachowaniach klientów. Dowiedz się, jak kolory, układ strony i treści wpływają na decyzje klientów.',
     metaDescription:
       'Dowiedz się, jak kolory, układ strony i treści wpływają na decyzje klientów. Sprawdź dostępne artykuły o psychologii sprzedaży i zachowaniach użytkowników.',
     openGraphDescription:
@@ -67,8 +75,9 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
       '/assets/blog/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow.webp',
   },
   strony: {
+    heroTitle: 'Artykuły dotyczące stron internetowych',
     heroDescription:
-      'Artykuły o stronach internetowych, ich tworzeniu i optymalizacji.',
+      'Artykuły o stronach internetowych, ich tworzeniu i optymalizacji. Sprawdź, co powinna zawierać dobra strona internetowa.',
     metaDescription:
       'Sprawdź, co powinna zawierać dobra strona internetowa. Sprawdź dostępne artykuły o tworzeniu, optymalizacji i utrzymaniu stron .',
     openGraphDescription:
@@ -77,7 +86,9 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
       '/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp',
   },
   sklepy: {
-    heroDescription: 'Artykuły o sklepach internetowych i e-commerce.',
+    heroTitle: 'Artykuły dotyczące sklepów internetowych',
+    heroDescription:
+      'Artykuły o sklepach internetowych i e-commerce. Dowiedz się, jak prowadzić skuteczny sklep internetowy.',
     metaDescription:
       'Dowiedz się, jak prowadzić skuteczny sklep internetowy. Sprawdź dostępne artykuły o e-commerce, płatnościach, dostawach i optymalizacji sprzedaży online.',
     openGraphDescription:
@@ -86,7 +97,9 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
       '/assets/blog/jak-przygotowac-sklep-internetowy-do-pozycjonowania/jak-przygotowac-sklep-internetowy-do-pozycjonowania.webp',
   },
   marketing: {
-    heroDescription: 'Artykuły o marketingu i promocji firmy.',
+    heroTitle: 'Artykuły dotyczące promocji firmy',
+    heroDescription:
+      'Artykuły o marketingu i promocji firmy. Dowiedz się, jak skutecznie promować firmę w internecie.',
     metaDescription:
       'Dowiedz się, jak skutecznie promować firmę w internecie. Sprawdź dostępne artykuły o marketingu, reklamie i strategiach pozyskiwania klientów online.',
     openGraphDescription:
@@ -123,8 +136,12 @@ export async function generateMetadata({
 
   const expandedTitles: Record<string, string> = {
     seo: 'Artykuły o SEO i pozycjonowaniu stron - Arteon',
-    druk: 'Artykuły o druku i materiałach reklamowych - Arteon',
     ux: 'Artykuły o UX i użyteczności stron - Arteon',
+    marketing: 'Artykuły dotyczące promocji firmy',
+    sklepy: 'Artykuły dotyczące sklepów internetowych',
+    psychologia: 'Artykuły dotyczące psychologii w biznesie',
+    strony: 'Artykuły dotyczące stron internetowych',
+    grafika: 'Artykuły dotyczące projektów graficznych',
   };
   const finalTitle = expandedTitles[category] || `${label} - Arteon`;
 
@@ -174,11 +191,12 @@ export default async function EdukacjaCategoryPage({
   const heroDescription =
     content?.heroDescription ?? DEFAULT_HERO_DESCRIPTION(label);
   const heroImage = content?.heroImage ?? '/assets/bg/abstract-bg13.webp';
+  const heroTitle = content?.heroTitle;
 
   return (
     <>
       <HeroBanner
-        title={label}
+        title={heroTitle}
         description={heroDescription}
         backgroundImage={heroImage}
         overlay='black'

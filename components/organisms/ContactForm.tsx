@@ -12,7 +12,7 @@ import TextareaWithLabel from '../molecules/form/TextareaWithLabel';
 import SectionHeader from '../molecules/SectionHeader';
 
 type ContactFormProps = {
-  title: string;
+  title?: string;
   description?: React.ReactNode;
   defaultSubject?: string;
   action?: string;
@@ -84,11 +84,11 @@ export default function ContactForm({
         />
 
         <InputWithLabel
-          id='email'
+          id='e-mail'
           label={t.emailLabel}
-          name='Email'
+          name='E-mail'
           placeholder={t.emailPlaceholder}
-          type='email'
+          type='e-mail'
           autoComplete='email'
           required
         />

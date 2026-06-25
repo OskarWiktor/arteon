@@ -55,8 +55,8 @@ export default function PrivacyPolicyPage() {
               Czernichówin kunta, Zagacie, ul. Jasminowa 36, 32-070, Puola.
             </p>
             <p>
-              NIP: <strong>9442284430</strong>, REGON:{' '}
-              <strong>528888241</strong>
+              NIP: <strong>6772156998</strong>, REGON:{' '}
+              <strong>521832645</strong>
             </p>
             <p>
               Yhteystiedot: <strong>contact@arteonagency.com</strong>, puh.:{' '}

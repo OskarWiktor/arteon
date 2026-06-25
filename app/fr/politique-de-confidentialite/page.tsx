@@ -58,8 +58,8 @@ export default function PolitiqueDeConfidentialitePage() {
               ul. Jaśminowa 36, 32-070, Pologne.
             </p>
             <p>
-              Numéro fiscal (NIP)&nbsp;: <strong>9442284430</strong>,
-              REGON&nbsp;: <strong>528888241</strong>
+              Numéro fiscal (NIP)&nbsp;: <strong>6772156998</strong>,
+              REGON&nbsp;: <strong>521832645</strong>
             </p>
             <p>
               Contact&nbsp;: <strong>contact@arteonagency.com</strong>,

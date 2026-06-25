@@ -58,8 +58,8 @@ export default function DatenschutzrichtliniePage() {
               32-070, Polen.
             </p>
             <p>
-              Steuernummer (NIP): <strong>9442284430</strong>, REGON:{' '}
-              <strong>528888241</strong>
+              Steuernummer (NIP): <strong>6772156998</strong>, REGON:{' '}
+              <strong>521832645</strong>
             </p>
             <p>
               Kontakt: <strong>contact@arteonagency.com</strong>, Tel.:{' '}

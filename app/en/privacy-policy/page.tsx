@@ -57,8 +57,8 @@ export default function PrivacyPolicyPage() {
               Czernichów, Zagacie, ul. Jaśminowa 36, 32-070, Poland.
             </p>
             <p>
-              Tax ID (NIP): <strong>9442284430</strong>, REGON:{' '}
-              <strong>528888241</strong>
+              Tax ID (NIP): <strong>6772156998</strong>, REGON:{' '}
+              <strong>521832645</strong>
             </p>
             <p>
               Contact: <strong>contact@arteonagency.com</strong>, phone:{' '}
@@ -72,7 +72,7 @@ export default function PrivacyPolicyPage() {
             <ul className='list-disc space-y-1 pl-6'>
               <li>
                 data submitted via the contact form (first name, last name,
-                email, message content),
+                e-mail, message content),
               </li>
               <li>
                 technical data collected automatically (IP address, device

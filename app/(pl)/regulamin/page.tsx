@@ -53,7 +53,7 @@ export default function TermsPage() {
 
           <SectionInfo id='postanowienia' title='1. Postanowienia ogólne'>
             <p>1.1. Usługodawca: Arteon </p>
-            <p>1.2. NIP / REGON: 9442284430 / 528888241</p>
+            <p>1.2. NIP / REGON: 6772156998 / 521832645</p>
             <p>
               1.3. Adres do korespondencji: Zagacie, ul. Jaśminowa, nr 36,
               32-070

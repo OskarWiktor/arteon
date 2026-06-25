@@ -1,14 +1,13 @@
 import type { ReactNode } from 'react';
-
 export type ProjectCategory =
-  | 'strona'
-  | 'blog'
-  | 'sklep'
-  | 'grafika'
-  | 'treść'
-  | 'wizytówka'
-  | 'logo'
-  | 'aplikacja'
+  | 'strony'
+  | 'blogi'
+  | 'sklepy'
+  | 'projekty graficzne'
+  | 'treści'
+  | 'wizytówki'
+  | 'loga'
+  | 'aplikacje'
   | 'marketing';
 
 export type Stat = { label: string; value: string; note?: string };

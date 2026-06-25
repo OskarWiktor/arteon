@@ -12,11 +12,11 @@ type Props = {
 };
 
 const ORDER: readonly ProjectCategory[] = [
-  'strona',
-  'sklep',
-  'blog',
-  'grafika',
-  'treść',
+  'strony',
+  'sklepy',
+  'blogi',
+  'projekty graficzne',
+  'treści',
 ] as const;
 
 export default function Filters({

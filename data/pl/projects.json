@@ -6,7 +6,7 @@
       "short": "Projekt i realizacja strony internetowej dla kancelarii doradztwa podatkowego JSTax",
       "description": "<p>Realizacja strony internetowej dla kancelarii doradztwa podatkowego <strong>JSTax</strong> działającego w trzech miastach: <strong>Krakowie, Warszawie oraz Białymstoku</strong>. Projekt obejmował delikatną zmianę logo firmy, indywidualny projekt wyglądu strony ( stworzony w programie Figma ) bazujący na potrzebach klienta, nastawiony na wzbudzenie zaufania oraz estetykę usług premium a także samą realizację witryny wraz z strukturą strony wzmacniającą widoczność w Google i startowym pakietem pozycjonowania.</p><br /><p>Projekt strony obejmuję <strong>9 głównych stron usług</strong>, które prowadzą do kolejnych podkategorii usług, co zapewni pokrycie bardzo wielu słów kluczowych związanych z doradztwem podatkowym i pozwoli klientowi łatwo odnaleźć, zarówno na stronie jak i w Google, dokładnej usługi, której szuka.</p></br></p> Na stronie znajdzie się również <strong>kalendarz z opcją rezerwacji spotkań</strong>, zarówno online jak i stacjonarnie, oraz płatnościami za samą rezerwację. Strona zostanie stworzona w Wordpress z użyciem Elementora Pro do którego dajemy dożywotnią licencję zawsze gdy realizujemy stronę od zera. Prace nad stroną jeszcze trwają. Link do gotowej wersji dodamy po jej pełnej publikacji.</p>",
       "image": "/assets/projects/jstax/moskup-strony-jstax.webp",
-      "category": ["strona"],
+      "category": ["strony"],
       "process_steps": [
         "Wstępna rozmowa o potrzebach i celach klienta,",
         "Edycja logo firmy - zmiana JS na JStax,",
@@ -47,7 +47,7 @@
       "short": "Realizacja logo dla firmy zajmującej się wykończeniem mieszkań, domów i lokali oraz instalacjami elektrycznymi i wodno-kanalizacyjnymi Finish Masters.",
       "description": "<p>Realizacja logo dla firmy zajmującej się kompleksowym wykańczaniem pod klucz mieszkań, domów oraz lokali usługowych i przestrzeni komercyjnych a także instalacjami elektrycznymi, wodnymi i kanalizacyjnymi na terenie Krakowa oraz okolic. Realizacja jest częścią większego projektu, który obejmował również <strong>realizację strony internetowej oraz projekt wizytówek</strong> wraz z przygotowaniem do druku. Logo stanowiło pierwszy etap całej pracy.</p></br><p> W ramach usługi tworzenia projektu logo zostało wykonane kilka propozycji znaku w różnych stylach, następnie na podstawie informacji zwrotnej od klienta oraz wszelkich ustaleń i poprawek, klient zdecydował się na tą wersję znaku. W znaku znajduję się ikona nawiązująca bezpośrednio do dachu, co automatycznie kojarzy się w firmą budowlaną. Znak ten zawiera również wpisane w ikonę dachu, litery F oraz M, które są bezpośrednim nawiązaniem do samej nazwy firmy - Finish Masters. Aby dodatkowo nawiązać do nazwy oraz typu działalności, litery zostały przycięte w wybranych miejscach.</p><br /><p>Po zaakceptowaniu znaku przygotowaliśmy kilka wersji kolorystycznych, uwzględniając psychologię kolorów w taki sposób aby logo wzbudzało zaufanie. Przygotowaliśmy propozycje kolorystyczne, uwzględniające psychologię kolorów w biznesie. Klient wybrał paletę niebieską. Następnie ta sama kolorystyka została użyta na <a class='inline-link' href=\"/realizacje/strona-internetowa-dla-firmy-wykonczeniowej-finish-masters\">stronie internetowej</a> firmy oraz w <a class='inline-link' href=\"/realizacje/wizytowki-dla-firmy-wykonczeniowej-finish-masters\">projekcie wizytówki</a>.</p>",
       "image": "/assets/projects/finish-masters/logo/mockup-logo-finish-masters.webp",
-      "category": ["grafika", "logo"],
+      "category": ["projekty graficzne", "loga"],
       "process_steps": [
         "Rozmowa o potrzebach oraz celach klienta,",
         "Ustalenie planu kompleksowej realizacji,",
@@ -116,7 +116,7 @@
       "short": "Indywidualny projekt graficzny strony, ponad 8 podstron ofertowych, treści pod SEO oraz katalog produktów.",
       "description": "<p>Projekty graficzny nowej wersji strony internetowej oraz realizacja dla firmy NaPilota, będącą dystrybutorem RogerTechnology, zajmującej się automatyką bram na terenie Chełmna, okolic oraz całego województwa kujawsko-pomorskiego. Firma NaPilota wcześniej posiadała stronę-wizytówkę ( jednostronicową ), której pozycja w Google była mocno ograniczona przez jej strukturę. Z tego powodu właściciel zdecydował się rozbudować witrynę o konkretne strony usług, katalog z produktami z nastawieniem na widoczność witryny w Google.</p></br><p> Projekt rozpoczął się od rozmowy na temat tego jaki cel strona ma osiągnąć oraz co ma zawierać. Po rozmowie został przygotowany wygląd strony głównej w programie Figma, do którego został udostępniony link w celu umożliwienia naniesienia wszelkich uwag w formie komentarzy w każdym miejscu. Po ustaleniu struktury strony oraz jej końcowego wyglądu rozpoczeła się realizacja. W celu zapewnienia większej widoczności strona została zbudowana na domenie wcześniejszej strony, na Wordpress przy użyciu Elementora Pro do którego dajemy dożywotnią licencję w ramach każdej realizacji. Strona zawiera 8 podstron z szczegółową ofertą firmy, formularz serwisowy oraz katalog z 25 produktami, które posiadają dwa typu formularza z zapytaniem o cenę oraz montaż, dopasowane do typu samego produktu. Strona zawiera również treści pisane przez nas na bazie wszelkich informacji o działalności firmy i jej ofercie. Po realizacji strona została zoptymalizowana naszym sprawdzonym sposobem, zapewniając ponad 98 punktów wydajności dla urządzeń mobilnych według PageSpeed.</p>",
       "image": "/assets/projects/napilota/mockup-strony-napilota.webp",
-      "category": ["strona", "treść", "sklep"],
+      "category": ["strony", "treści", "sklepy"],
       "link": "https://napilota.com.pl/",
       "process_steps": [
         "Rozmowa o potrzebach oraz celach klienta,",
@@ -155,7 +155,7 @@
       "short": "Projekt nowego wyglądu strony dla firmy cateringowej KoloroweTalerze. Ciepłe odcienie i ramki nawiązujące do obrusu - klasyczna polska kuchnia. Prace nad wdrożeniem trwają.",
       "description": "<p>Projekt nowego wyglądu strony dla firmy cateringowej <strong>KoloroweTalerze</strong>. Celem było stworzenie bardziej profesjonalnego wizerunku oraz mocniejsze podkreślenie potraw.</p><br /><p>Wykorzystaliśmy <strong>ciepłe odcienie</strong> i delikatne akcenty - ramki z wzorami ala obrus - jako nawiązanie do klasycznej, lekko staromodnej polskiej kuchni.</p><br /><p>Wdrożenie projektu jeszcze trwa. Aktualna strona klienta: <a href=\"https://cateringkolorowetalerze.pl/\" target=\"_blank\" rel=\"noopener noreferrer\">cateringkolorowetalerze.pl</a>.</p>",
       "image": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
-      "category": ["strona"],
+      "category": ["strony"],
       "task": "Zaprojektować nowy wygląd strony cateringowej z naciskiem na profesjonalizm i ekspozycję potraw.",
       "goals": "<p>Założenia projektu:</p><ul><li>Bardziej profesjonalny wizerunek,</li><li>Delikatne nawiązania do tradycyjnej polskiej kuchni.</li></ul>",
       "contentBlocks": [
@@ -189,7 +189,7 @@
       "short": "Projekt wizytówki dla firmy zajmującej się wykańczaniem wnętrz Finish Masters spójny z logo oraz stroną internetową. Dane firmy, krótki opis działalności oraz kod QR prowadzący do strony.",
       "description": "<p>Finalny element kompleksowego projektu obejmującego również realizację <a href=\"/realizacje/logo-dla-firmy-wykonczeniowej-finish-masters\">logo</a> i <a href=\"/realizacje/strona-internetowa-dla-firmy-wykonczeniowej-finish-masters\">strony internetowej</a>.</p><br /><p>Wizytówki zawierają <strong>dane firmy, krótki opis działalności i kod QR prowadzący do strony</strong></p>",
       "image": "/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp",
-      "category": ["grafika", "wizytówka"],
+      "category": ["projekty graficzne", "wizytówki"],
       "task": "Zaprojektować wizytówki spójne z logo i stroną Finish Masters.",
       "goals": "<p>Założenia projektu:</p><ul><li>Spójność z logo i stroną - odpowiednia kolorystyka</li><li>Dane firmy i krótki opis działalności</li><li>Kod QR prowadzący do strony</li></ul>",
       "process_steps": [
@@ -227,7 +227,7 @@
       "short": "Strona dla Finish Masters - firmy wykończeniowej z Krakowa. Niebieska kolorystyka spójna z logo. Wynik 96/100 w PageSpeed Insights na mobile.",
       "description": "<p>Realizacja dla <strong>Finish Masters sp. z o.o.</strong> - krakowskiej firmy zajmującej się wykończeniem wnętrz i domów. Klient świadczy też usługi z zakresu <strong>instalacji elektrycznych, wodnych i kanalizacyjnych</strong>.</p><br /><p>Projekt rozpoczął się od logo, następnie powstał wygląd strony, a po jej wdrożeniu zrealizowaliśmy też wizytówki. Kolorystyka strony została utrzymana zgodnie z <a href=\"/realizacje/logo-dla-firmy-wykonczeniowej-finish-masters\">logo</a> - dominuje niebieski. Strona została zoptymalizowana do <strong>96/100 w PageSpeed Insights na urządzeniach mobilnych</strong>.</p><br /><p>Strona dostępna pod <a href=\"https://www.finishmasters.pl/\" target=\"_blank\" rel=\"noopener noreferrer\">finishmasters.pl</a>. Zobacz też <a href=\"/realizacje/wizytowki-dla-firmy-wykonczeniowej-finish-masters\">wizytówki</a> z tej realizacji.</p>",
       "image": "/assets/projects/finish-masters/strona/moskup-strony-finish-masters.webp",
-      "category": ["strona", "blog"],
+      "category": ["strony", "blogi"],
       "task": "Zaprojektować i wdrożyć stronę dla firmy wykończeniowej.",
       "goals": "<p>Założenia projektu:</p><ul><li>Niebieska kolorystyka spójna z logo</li><li>Optymalizacja wydajności na urządzeniach mobilnych</li></ul>",
       "process_steps": [
@@ -267,7 +267,7 @@
       "short": "Minimalistyczny plakat promocyjny dla kawiarni Brewerynka - część większej kampanii zimowej obejmującej materiały w lokalu i posty do mediów społecznościowych",
       "description": "<p>Projekt <strong>plakatu sezonowego</strong> dla koncepcyjnej kawiarni <strong>Brewerynka Coffee Roasters</strong> - niewielkiej, rzemieślniczej palarni inspirowanej estetyką slow coffee i klimatem skandynawskich kawiarni. Celem było stworzenie <strong>plakatu</strong> dla limitowanej oferty grudniowej, który będzie spójnie funkcjonował zarówno w przestrzeni lokalu, jak i w komunikacji online.</p><br /><p>Plakat oparto na połączeniu stonowanych beży i chłodnego błękitu oraz na powtarzalnym motywie typograficznym. Centralnym elementem stała się minimalistyczna kompozycja produktowa - napój zimowy w szklance, z miękkim światłem i delikatną siatką błękitu i beżu w tle. Zabieg ten miał podkreślić charakter marki: rzemieślniczy, uporządkowany i świadomy wizualnie.</p><br /><p>Projekt jest <strong>pierwszym elementem rozwijanej kampanii</strong> - przygotowane zostaną również materiały w formatach do Instagrama i Facebooka, a całość będzie stopniowo rozbudowywana o kolejne plakaty sezonowe.</p><br /><p>Plakat został przygotowany w wysokiej rozdzielczości oraz umieszczony na <strong>mockupie witryny kawiarni</strong>, aby zilustrować sposób jego realnego wykorzystania w przestrzeni miejskiej.</p>",
       "image": "/assets/projects/brewerynka/brewerynka-plakat-z-limitowana-oferta-mockup.webp",
-      "category": ["grafika"],
+      "category": ["projekty graficzne"],
       "contentBlocks": [
         {
           "type": "image",
@@ -343,7 +343,7 @@
       "short": "Strona dla producenta schodów metalowych w Trójmieście. Indywisualny projekt graficzny, 10 podstron ofertowych i pełna optymalizacja witryny wraz z pomocą przy tworzeniu treści. Część kompleksowego projektu obejmującego logo i wizytówki.",
       "description": "<p>Kompleksowa realizacja dla <strong>StepArd</strong> - producenta schodów metalowych, balustrad stalowych i stopni drewnianych z Trójmiasta (Gdańsk, Gdynia, Sopot). Projekt rozpoczął się od logo, następnie powstał wygląd strony, a po realizacji witryny zrealizowaliśmy również wizytówki wraz z przygotowaniem do druku.</p><br /><p>Na stronie wykorzystaliśmy <strong>ciemne kolory, brąz i ciemne odcienie niebieskiego</strong> dla kontrastu i komplementarności palety. Strona zawiera <strong>10 podstron ofertowych</strong> dla lepszej widoczności w Google oraz została w pełni zoptymalizowana.</p>",
       "image": "/assets/projects/stepard/strona/moskup-strony-stepard.webp",
-      "category": ["strona"],
+      "category": ["strony"],
       "link": "https://stepard.pl/",
       "task": "Zaprojektować stronę internetową dla producenta schodów.",
       "goals": "<p>Założenia projektu:</p><ul><li>Spójność z wcześniej zaprojektowanym <a href=\"/realizacje/logo-dla-stepard\">logo</a></li><li>10 podstron ofertowych dla lepszej widoczności w Google</li><li>Ciemne kolory z brązem i niebieskim dla kontrastu i komplementarności</li></ul>",
@@ -383,7 +383,7 @@
       "short": "Realizacja logo dla producenta schodów metalowych w Trójmieście. Minimalizm, elegancja i jasne nawiązanie do typu działalności firmy. Pierwszy etap kompleksowego projektu.",
       "description": "<p>Pierwszy etap kompleksowego projektu dla <strong>StepArd</strong> - producenta schodów metalowych w Trójmieście. Logo stawia na <strong>minimalizm i elegancję</strong> oraz jasne w przekazie nawiązanie do typu działalności firmy.</p>",
       "image": "/assets/projects/stepard/logo/mockup-logo-stepard.webp",
-      "category": ["grafika", "logo"],
+      "category": ["projekty graficzne", "loga"],
       "task": "Zaprojektować logo, które łączy minimalizm i elegancję z jasnym nawiązaniem do typu działalności firmy.",
       "goals": "<p>Założenia projektu:</p><ul><li>Minimalizm i elegancja</li><li>Jasne nawiązanie do typu działalności (producent schodów)</li></ul>",
       "process_steps": [
@@ -422,7 +422,7 @@
       "short": "Projekt wizytówki dla marki StepArd, spójne z logo oraz stroną internetową, z kodem QR.",
       "description": "<p>Wizytówki to finalny element kompleksowego projektu obejmującego również <a href=\"/realizacje/logo-dla-stepard\">logo</a> i <a href=\"/realizacje/strona-internetowa-dla-stepard\">stronę</a> StepArd.</p><br /><p>Projekt został stworzony tak aby był spójny z całą identyfikacją - ta sama paleta kolorów oraz typografia. Na rewersie umieściliśmy <strong>kod QR prowadzący do strony stepard.pl</strong>. Na koniec przygotowaliśmy projekt wizytówek do druku.</p>",
       "image": "/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp",
-      "category": ["grafika", "wizytówka"],
+      "category": ["projekty graficzne", "wizytówki"],
       "task": "Zaprojektować wizytówki spójne z logo i stroną StepArd.",
       "process_steps": [
         "Projekt graficzny w nawiązaniu do logo i strony.",
@@ -459,7 +459,7 @@
       "short": "Optymalizacja strony Elizy Wrońskiej. Zobacz wynik w Google PageSpeed Insights przed i po.",
       "description": "<p>Realizacja optymalizacji witryny dla <strong>Elizy Wrońskiej</strong>. Przeprowadziliśmy optymalizację naszym sprawdzonym sposobem, całkowicie bez zmiany wyglądu strony oraz jej funkcjonalności.</p>",
       "image": "/assets/projects/eliza-wronska/moskup-strony-eliza-wronska.webp",
-      "category": ["strona"],
+      "category": ["strony"],
       "link": "https://elizawronska.com/",
       "task": "Poprawić wydajność strony bez zmiany wyglądu i treści.",
       "goals": "<p>Cele optymalizacji:</p><ul><li>Lepsza pozycja witryny w Google/li><li>Poprawa wygody korzystania z witryny</li><li>Przygotowanie witryny do jej rozbudowy</li></ul>",
@@ -513,7 +513,7 @@
       "short": "Ekskluzywna karta koktajli dla baru Nocturna - nastrojowego cocktail baru w klimacie speakeasy.",
       "description": "<p>Projekt koncepcyjnej <strong>karty koktajli</strong> dla Nocturna - ekskluzywnego cocktail baru, w którym estetyka, światło i smak tworzą spójną atmosferę. Celem było stworzenie <strong>menu premium</strong>: czytelnego, klimatycznego i budującego charakter miejsca przy pierwszym spojrzeniu.</p><br /><p>Karta opiera się na połączeniu głębokiej czerwieni i <strong>beżowo-złotych akcentów</strong>, inspirowanych światłem świec i klasycznymi barami typu speakeasy. Delikatne <strong>ilustracje drinków</strong> podkreślają rzemieślniczy charakter lokalu.</p><br /><p>W menu znalazły się autorskie koktajle, klasyki w reinterpretacjach oraz sekcja low-alcohol. Projekt przygotowaliśmy w pełnej rozdzielczości i w dwóch wariantach kolorystycznych. Całość prezentujemy na <strong>profesjonalnym mockupie</strong>.</p>",
       "image": "/assets/projects/nocturna/nocturna-menu-mockup.webp",
-      "category": ["grafika"],
+      "category": ["projekty graficzne"],
       "contentBlocks": [
         {
           "type": "image",
@@ -590,7 +590,7 @@
       "short": "Rozbudowana strona internetowa dla firmy z branży izolacji budowlanych. Strona zbudowana na WordPress zawiera blog, dedykowany formularz wyceny oraz osobne podstrony ofertowe dla każdej usługi — od piany PUR po posadzki żywiczne.",
       "description": "<p>Strona internetowa dla <strong>firmy z branży izolacji natryskowych</strong>. Klient potrzebował witryny widocznej w Google z osobnymi podstronami dla każdej usługi (piana PUR, membrany, izolacja wdmuchiwana, posadzki).</p><br /><p>Stronę zbudowaliśmy na <strong>WordPress z Elementorem Pro</strong>. Dostosowaliśmy kolory do wymogów WCAG, dodaliśmy blog z gotowym szablonem wpisów oraz formularz wyceny ułatwiający kontakt.</p>",
       "image": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp",
-      "category": ["strona", "blog", "treść"],
+      "category": ["strony", "blogi", "treści"],
       "link": "https://izoluk.pl/",
       "task": "Zaprojektowanie i wdrożenie strony internetowej z myślą o widoczności w Google, z rozbudowaną strukturą ofertową, blogiem i formularzem wyceny.",
       "goals": "<p>Klient potrzebował strony:</p><ul><li><strong>Widocznej w Google</strong> na frazy związane z izolacjami</li><li>Z <strong>osobnymi podstronami</strong> dla każdej usługi</li><li>Z <strong>blogiem</strong> wspierającym pozycjonowanie</li><li><strong>Szybkiej na mobile</strong></li></ul>",
@@ -700,7 +700,7 @@
       "short": "Projekt wizytówki dla kancelarii adwokackiej LUX NOVA w układzie poziomym. Sygnet gryfa, paleta bordo i beżu, czytelny układ danych z kodem QR do strony firmowej.",
       "description": "<p>Projekt koncepcyjny wizytówki dla kancelarii adwokackiej, w którym stawiamy na czytelny układ danych oraz spójną identyfikację opartą o sygnet gryfa i zestaw kolorów podkreślających autorytet marki.</p>",
       "image": "/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp",
-      "category": ["grafika", "wizytówka"],
+      "category": ["projekty graficzne", "wizytówki"],
       "deliverables": [
         "Wizytówka w układzie poziomym (front i tył)",
         "Logo z gryfem jako element identyfikacji wizualnej",
@@ -783,7 +783,7 @@
       "short": "Składany folder reklamowy w formacie A3 (składany na A4) dla polskiej firmy wykańczającej wnętrza domów i mieszkań.",
       "description": "<p>Projekt składanego folderu reklamowego dla firmy <strong>wykańczającej wnętrza domów i mieszkań</strong>. Folder opisuje ofertę firmy, korzyści ze współpracy (projekt, dobór materiałów i realizacja u jednego wykonawcy) oraz zawiera kod QR do wirtualnego spaceru po ostatniej realizacji.</p><br /><p>Kolorystyka oparta na delikatnych odcieniach brązu i beżu, spójnych ze zdjęciami realizacji. Na pierwszej stronie: zdjęcie wykończonej łazienki, zachęta do kontaktu i cena za metr kwadratowy. W środku: jasno przedstawione korzyści z ikonami oraz szczegółowy opis realizacji.</p><br /><p>Projekt przygotowany do druku i jako PDF do wysyłki mailowej. Realizacja obejmowała <strong>3 kierunki wizualne</strong> oraz pomoc przy stworzeniu tekstu.</p>",
       "image": "/assets/projects/simba-group/simba-group-folder-reklamowy-mockup.webp",
-      "category": ["grafika"],
+      "category": ["projekty graficzne"],
       "contentBlocks": [
         {
           "type": "image",
@@ -877,7 +877,7 @@
       "short": "Optymalizacja strony internetowej wypożyczalni samochodów AutoKorfu. Zobacz wynik w Google PageSpeed Insights przed i po optymalizacji.",
       "description": "<p>projekt ten obejmował optymalizację prędkości oraz wydajności strony internetowej dla wypożyczalni samochodów <strong>AutoKorfu</strong>. Przeprowadziliśmy optymalizację naszym sprawdzonym sposobem, całkowicie bez zmiany wyglądu strony oraz jej funkcjonalności.</p>",
       "image": "/assets/projects/autokorfu/mockup-strony-auto-korfu.webp",
-      "category": ["strona"],
+      "category": ["strony"],
       "link": "https://autonakorfu.pl/",
       "task": "Poprawić wydajność strony bez zmiany wyglądu i treści.",
       "goals": "<p>Cele optymalizacji:</p><ul><li>Lepsza pozycja witryny w Google/li><li>Poprawa wygody korzystania z witryny</li></ul>",
@@ -931,7 +931,7 @@
       "short": "Projekt papieru firmowego dla kancelarii adwokackiej LUX NOVA. Klarowny nagłówek z logotypem, subtelny motyw gryfa w tle i czytelna stopka z kodem QR do strony firmowej.",
       "description": "<p>Projekt koncepcyjny - dane przykładowe. Papier firmowy dla kancelarii <strong>LUX NOVA</strong> wzmacnia wizerunek marki: klarowny nagłówek z logotypem, subtelny motyw gryfa w tle i czytelny blok kontaktu z <strong>kodem QR</strong>. Całość zachowuje równowagę między <em>elegancją</em> i <em>praktycznością</em> - gotowe do druku i do użycia cyfrowego (PDF).</p>",
       "image": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
-      "category": ["grafika"],
+      "category": ["projekty graficzne"],
       "deliverables": [
         "Projekt papieru firmowego A4 (nagłówek + tło + stopka)",
         "Motyw gryfa w niskiej intensywności jako wzór tła",
@@ -1002,7 +1002,7 @@
       "short": "Kompleksowa rozbudowa strony na Wix dla ośrodka psychoterapii dzieci i młodzieży ze Skierniewic. W ramach projektu stworzyliśmy 11 podstron dla specjalistów, uruchomiliśmy sklep z produktami cyfrowymi i przygotowaliśmy 40-stronicową instrukcję obsługi.",
       "description": "<p>Ośrodek psychoterapii <strong>Perły Mocy</strong> ze Skierniewic potrzebował rozbudowy istniejącej strony na Wix. Klientka miała już funkcjonującą witrynę, ale brakowało podstron dla poszczególnych specjalistów, możliwości sprzedaży produktów cyfrowych i spójnej nawigacji.</p><br /><p>Rozbudowaliśmy stronę o <strong>sekcję zespołu z 11 osobnymi podstronami</strong>, przeprojektowaliśmy stronę główną i dodaliśmy zakładkę Ośrodek. Zintegrowaliśmy <strong>płatności BLIK i Przelewy24</strong>, poprawiliśmy kontrast kolorów pod kątem dostępności WCAG i przekierowaliśmy domenę — stara zawierała polską literę Ł, co utrudniało jej wpisywanie.</p>",
       "image": "/assets/projects/perly-mocy/mockup-strony-perly-mocy.webp",
-      "category": ["strona", "sklep"],
+      "category": ["strony", "sklepy"],
       "link": "https://www.perlymocyskierniewice.com/",
       "task": "Rozbudowa strony na Wix o podstrony dla zespołu, sklep z produktami cyfrowymi, integrację płatności i przekierowanie domeny.",
       "goals": "<p>Klientka potrzebowała:</p><ul><li>Miejsca, gdzie każdy specjalista z zespołu ma <strong>własną podstronę</strong> z opisem kwalifikacji</li><li>Możliwości <strong>sprzedaży produktów cyfrowych</strong> (pliki audio, wideo, PDF) bezpośrednio przez stronę</li><li><strong>Płatności online</strong> — pacjenci mieli móc płacić BLIK-iem i przelewem</li><li>Uporządkowanej nawigacji i <strong>nowej strony głównej</strong> odzwierciedlającej rozwój ośrodka</li></ul>",
@@ -1111,7 +1111,7 @@
       "short": "Projekt logo dla firmy zajmującej się aranżacją wnętrz - KM2. Litery K i M wpisane w znak domu z dachem.",
       "description": "<p>Projekt logo dla firmy zajmującej się aranżacją wnętrz<strong>KM2</strong>./p><br /><p>W znak firmy a dokładnie w dach, zostałty wpisane litery K oraz M</strong>.</p>",
       "image": "/assets/projects/km2/mockup-logo-km2.webp",
-      "category": ["grafika", "logo"],
+      "category": ["projekty graficzne", "loga"],
       "goals": "<p>Założenia projektu:</p><ul><li>Litery K i M wpisane w znak domu (dach)</li><li>Bezpośrednie nawiązanie do nazwy firmy i branży aranżacji wnętrz</li></ul>",
       "process_steps": [
         "Analiza potrzeb oraz branży.",
@@ -1149,7 +1149,7 @@
       "short": "Projekt wizytówki dla SPA TALIA inspirowanej naturą. Malarskie tło lasu na froncie, czytelne dane właścicielki na rewersie i paleta zieleni z ciepłym beżem.",
       "description": "<p>Projekt koncepcyjny <strong>wizytówki dla SPA</strong> inspirowanej naturą. Na froncie umieściliśmy malarskie tło lasu w technice akrylowej, logotyp i typografię <em>Warbler Display</em>. Na rewersie znajdują się czytelne dane właścicielki i adres strony internetowej.</p><p>Paleta kolorów łączy głęboką zieleń (<strong>#182519</strong>) z ciepłym beżem (<strong>#e1d2c2</strong>) i bielą.</p>",
       "image": "/assets/projects/talia/mockup-wizytówki-talia.webp",
-      "category": ["grafika", "wizytówka"],
+      "category": ["projekty graficzne", "wizytówki"],
       "process_steps": [
         "Wizytówka w układzie poziomym (front i tył)",
         "Dobór palety kolorów i typografii (Warbler Display)",
@@ -1198,7 +1198,7 @@
       "short": "Elegancki bon walentynkowy w formacie DL dla gabinetu kosmetycznego w Krakowie. Motyw róż, klasyczna typografia i czytelne pola do wypełnienia na rewersie. Gotowe pliki do druku.",
       "description": "<p>Projekt bonu walentynkowego w formacie DL dla <strong>salonu kosmetycznego w Krakowie</strong>. Celem było stworzenie eleganckiego vouchera nawiązującego do walentynek.</p><p>Motyw róż połączony z delikatnymi pasami i klasyczną typografią. Na froncie: spokojna kompozycja z tytułem i nazwą salonu. Na rewersie: <strong>czytelne pola do wypełnienia</strong> (dla kogo, na jaki zabieg, ważny do) oraz dane gabinetu.</p>",
       "image": "/assets/projects/gabinet-kosmetyczny-kasia/mockup-voucher-gabinet-kasia.webp",
-      "category": ["grafika"],
+      "category": ["projekty graficzne"],
       "contentBlocks": [
         {
           "type": "image",
@@ -1266,7 +1266,7 @@
       "short": "Redesign i optymalizacja strony internetowej dla wypożyczalni kamperów Camper Albania. Odświeżyliśmy wygląd, poprawiliśmy kontrast kolorów pod kątem dostępności WCAG 2.1 AA i zoptymalizowaliśmy prędkość ładowania na urządzeniach mobilnych.",
       "description": "<p>Projekt dla wypożyczalni kamperów na terenie Albanii <strong>Camper Albania</strong>. Celem projektu było odświeżenie wyglądu strony, poprawa czytelności oraz optymalizacja prędkości ładowania. Efekt: ulepszony, kontrastowy układ zgodny z założeniami <strong>WCAG 2.1 AA</strong> i skok wyniku wydajności mobilnej w Google PageSpeed Insights z ok. 65 do <strong>95 punktów</strong>.</p>",
       "image": "/assets/projects/arteon-baners-camper-albania-mockup.webp",
-      "category": ["strona"],
+      "category": ["strony"],
       "link": "https://camper-albania.eu",
       "process_steps": [
         "Audyt istniejącej strony - analiza układu, kontrastu, czytelności i wyniku w Google PageSpeed Insights.",
@@ -1328,7 +1328,7 @@
       "short": "Projekt teczki ofertowej dla kancelarii adwokackiej LUX NOVA. Sygnet gryfa na froncie, paleta bordo i beżu, dane kontaktowe z kodem QR we wnętrzu — spójnie z wizytówką i papierem firmowym.",
       "description": "<p>Projekt koncepcyjny teczki ofertowej dla kancelarii adwokackiej <strong>LUX NOVA</strong>. Celem było stworzenie spójnego elementu identyfikacji wizualnej, który wzmacnia wizerunek kancelarii jako marki nowoczesnej i godnej zaufania. Teczka jest uzupełnieniem zestawu firmowych materiałów drukowanych - wizytówek i papieru firmowego.</p>",
       "image": "/assets/projects/luxnova/mockup-teczka-ofertowa-luxnova.webp",
-      "category": ["grafika"],
+      "category": ["projekty graficzne"],
       "deliverables": [
         "Projekt teczki ofertowej w wariancie zewnętrznym i wewnętrznym",
         "Zastosowanie sygnetu gryfa jako motywu przewodniego",
@@ -1415,7 +1415,7 @@
       "description": "<p>Mental Support Centre to gabinet prowadzony przez mgr Sylwię Paciuch. Naszym celem było zbudowanie <strong>spójnej, prostej w odbiorze strony dla psychoterapeuty</strong> po polsku oraz wzmocnienie <strong>widoczności w Google</strong> w Camberley oraz okolicach Londynu. Projekt łączy <strong>marketing dla psychologa</strong>, <strong>pozycjonowanie lokalne</strong> i przygotowanie do <strong>promocji książki psychologicznej</strong> \"Spokojnie, to tylko nerwica\".</p>",
       "image": "/assets/projects/msc/moskup-strony-msc-psychotherapy.webp",
       "link": "https://msc-psychotherapy.co.uk/",
-      "category": ["strona", "sklep", "blog", "treść"],
+      "category": ["strony", "sklepy", "blogi", "treści"],
       "deliverables": [
         "Nowy układ i styl - lekki, czytelny, dopasowany do <strong>gabinetu psychologicznego</strong>",
         "Treści prostym językiem - korzyści dla pacjenta, akcent na <strong>lęk i nerwicę</strong>",
@@ -1492,7 +1492,7 @@
       "short": "Szablon wizytówek dla handlowców firmy RestoQuality z branży gastronomicznej. Powtarzalny układ danych spójny z identyfikacją marki, gotowy do szybkiego wdrożenia dla całego zespołu sprzedaży.",
       "description": "<p><strong>Wizytówki dla gastronomii</strong> - projekt koncepcyjny przygotowany dla RestoQuality. Cel: ujednolicony szablon dla działu handlowego. Styl <em>techniczny i solidny</em>; kolory i typografia dopasowane do identyfikacji marki.</p><p>Układ obejmuje <strong>imię i nazwisko handlowca</strong>, <strong>stanowisko</strong>, <strong>telefon</strong>, <strong>adres firmy</strong> oraz znak marki. Szablon kompozycji umożliwia szybkie wdrożenie dla całego zespołu.</p>",
       "image": "/assets/projects/restoquality/mockup-wizytowki-restoquality.webp",
-      "category": ["grafika", "wizytówka"],
+      "category": ["projekty graficzne", "wizytówki"],
       "deliverables": [
         "Projekt koncepcyjny wizytówek dla handlowców",
         "Dopasowanie kolorów i typografii do wizerunku marki",
@@ -1551,7 +1551,7 @@
       "short": "Szablony postów i stories na Instagram dla gabinetu psychologicznego MSC Psychotherapy w UK. Stonowana paleta granatu i beżu, warianty pod wpisy blogowe, webinary i przypomnienia o terapii.",
       "description": "<p>Projekt szablonów postów i stories na Instagram oraz Facebook dla <strong>gabinetu psychologicznego MSC Psychotherapy</strong> w UK. Celem było przygotowanie spójnego wizualnie zestawu grafik, które ułatwią regularną komunikację z pacjentami.</p><p>Stworzyliśmy serię szablonów pod <strong>nowe wpisy na blogu</strong>, przypomnienia o terapii online, webinary oraz tygodniowe podsumowania. Stonowana paleta granatu, beżu i złamanej bieli buduje wrażenie bezpieczeństwa i profesjonalizmu.</p>",
       "image": "/assets/projects/msc/mockup-szablon-social-media-msc-mockup.webp",
-      "category": ["grafika"],
+      "category": ["projekty graficzne"],
       "contentBlocks": [
         {
           "type": "image",
@@ -1637,7 +1637,7 @@
       ],
       "image": "/assets/projects/trilllizo/moskup-strony-trilllizo.webp",
       "link": "https://trilllizo.com",
-      "category": ["sklep"],
+      "category": ["sklepy"],
       "cta": {
         "title": "Potrzebujesz sklepu internetowego z płatnościami i dostawami?",
         "description": "Wdrożymy sklep na WooCommerce z płatnościami, InPost i przygotowaniem pod SEO.",
@@ -1659,7 +1659,7 @@
       "short": "Projekt katalogu sprzedażowego dla gastronomii w formacie A5 dla firmy RestoQuality. Karty produktów z parametrami technicznymi, cenami i dedykowanymi ikonami pochodzenia.",
       "description": "<p>Projekt koncepcyjny <strong>katalogu sprzedażowego produktów</strong> dla gastronomii, przygotowany dla firmy RestoQuality, spójny z identyfikacją tej marki. Naszym celem było stworzenie katalogu ze sprzętami gastronomicznymi, pozwalającego na szybkie porównanie modeli i parametrów przez właścicieli restauracji oraz szefów kuchni.</p><p>W katalogu znajdują się piece do pizzy, urządzenia kuchenne oraz akcesoria. Każda karta produktu zawiera <em>opis, kluczowe parametry techniczne, cenę i kraj produkcji</em>. Dedykowane <strong>ikony pochodzenia</strong> ułatwiają skanowanie oferty.</p>",
       "image": "/assets/projects/restoquality/mockup-gazetka-restoquality.webp",
-      "category": ["grafika"],
+      "category": ["projekty graficzne"],
       "deliverables": [
         "Projekt koncepcyjny katalogu sprzedażowego (A5, poziom)",
         "Siatka kart produktu: opisy, parametry, cena, kraj produkcji",

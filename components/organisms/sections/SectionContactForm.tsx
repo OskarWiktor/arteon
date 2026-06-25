@@ -9,29 +9,27 @@ import {
 import ContactForm from '../ContactForm';
 
 type SectionContactFormProps = {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   imageSrc: string;
   imageAlt: string;
-  defaultSubject: string;
+  defaultSubject?: string;
   messagePlaceholder?: string;
   variant?: 'default-page' | 'tool-page';
 };
 
 const benefits = [
   {
-    icon: (
-      <RiMailSendLine className={cn('text-accent', smallIconSizeClasses)} />
-    ),
+    icon: <RiMailSendLine className={cn('text-light', smallIconSizeClasses)} />,
     label: 'Bezpłatna wycena bez zobowiązań',
   },
   {
-    icon: <RiTimeLine className={cn('text-accent', smallIconSizeClasses)} />,
+    icon: <RiTimeLine className={cn('text-light', smallIconSizeClasses)} />,
     label: 'Odpowiedź w ciągu 24 godzin',
   },
   {
     icon: (
-      <RiFileList2Line className={cn('text-accent', smallIconSizeClasses)} />
+      <RiFileList2Line className={cn('text-light', smallIconSizeClasses)} />
     ),
     label: 'Faktura dopiero po realizacji',
   },
@@ -79,16 +77,10 @@ export default function SectionContactForm({
             />
           </div>
           {variant === 'default-page' && (
-            <ul className='space-y-3'>
+            <ul className='flex justify-between gap-2'>
               {benefits.map((item, i) => (
-                <li key={i} className='flex items-center gap-3'>
-                  <div
-                    className={cn(
-                      'rounded-lg bg-accent/10',
-                      flexCenterClasses,
-                      normalIconSizeClasses,
-                    )}
-                  >
+                <li key={i} className='inline-flex flex-wrap items-center'>
+                  <div className={cn(flexCenterClasses, normalIconSizeClasses)}>
                     {item.icon}
                   </div>
                   <span className='text-sm'>{item.label}</span>

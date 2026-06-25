@@ -58,9 +58,9 @@ export default function InformativaSullaPrivacyPage() {
               Polonia.
             </p>
             <p>
-              Codice fiscale (NIP):&nbsp;<strong>9442284430</strong>,
+              Codice fiscale (NIP):&nbsp;<strong>6772156998</strong>,
               REGON:&nbsp;
-              <strong>528888241</strong>
+              <strong>521832645</strong>
             </p>
             <p>
               Contatto:&nbsp;<strong>contact@arteonagency.com</strong>,

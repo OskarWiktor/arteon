@@ -271,7 +271,7 @@ h2,
   font-size: clamp(26px, calc(26px + 14 * ((100vw - 360px) / 1080)), 40px);
   line-height: 1.03;
   text-wrap: balance;
-  letter-spacing: -2.25px;
+  letter-spacing: -1.5px;
 }
 
 h3,
@@ -280,7 +280,7 @@ h3,
   font-size: clamp(23px, calc(23px + 13 * ((100vw - 360px) / 1080)), 36px);
   line-height: 1.06;
   text-wrap: balance;
-  letter-spacing: -1.5px;
+  letter-spacing: -1.25px;
 }
 
 h4,

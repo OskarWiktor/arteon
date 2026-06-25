@@ -57,8 +57,8 @@ export default function PoliticaDeConfidentialitatePage() {
               comuna Czernichów, Zagacie, ul. Jaśminowa 36, 32-070, Polonia.
             </p>
             <p>
-              NIP: <strong>9442284430</strong>, REGON:{' '}
-              <strong>528888241</strong>
+              NIP: <strong>6772156998</strong>, REGON:{' '}
+              <strong>521832645</strong>
             </p>
             <p>
               Contact: <strong>contact@arteonagency.com</strong>, tel.:{' '}
