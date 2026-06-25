@@ -108,7 +108,7 @@ export default function OfferBlogPage() {
 
         <ProjectsCarousel
           title='Realizacje stron internetowych i blogów'
-          category='strona'
+          category='strony'
         />
 
         <Divider line />

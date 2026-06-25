@@ -88,7 +88,7 @@ export default function ContactForm({
           label={t.emailLabel}
           name='E-mail'
           placeholder={t.emailPlaceholder}
-          type='e-mail'
+          type='email'
           autoComplete='email'
           required
         />

@@ -1,5 +1,4 @@
 import Divider from '@/components/atoms/Divider';
-import InlineLink from '@/components/atoms/InlineLink';
 import { JsonLd } from '@/components/atoms/JsonLd';
 import Wrapper from '@/components/atoms/Wrapper';
 import BenefitBelt from '@/components/organisms/BenefitBelt';

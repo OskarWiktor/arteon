@@ -109,7 +109,7 @@ export default function OfferDesignPresentationFolderPage() {
 
         <ProjectsCarousel
           title='Realizacje projektów graficznych'
-          category='grafika'
+          category='projekty graficzne'
         />
 
         <Divider line />

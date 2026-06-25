@@ -109,7 +109,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
         <ProjectsCarousel
           title='Realizacje projektów graficznych stron internetowych'
-          category='strona'
+          category='strony'
         />
 
         <Divider line />

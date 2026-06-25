@@ -109,7 +109,7 @@ export default function OfferDesignCorporateApparelPage() {
 
         <ProjectsCarousel
           title='Realizacje projektów graficznych'
-          category='grafika'
+          category='projekty graficzne'
         />
 
         <Divider line />

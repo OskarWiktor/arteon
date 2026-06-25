@@ -109,7 +109,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
 
         <ProjectsCarousel
           title='Przykładowe realizacje projektów graficznych'
-          category='grafika'
+          category='projekty graficzne'
         />
 
         <Divider line />

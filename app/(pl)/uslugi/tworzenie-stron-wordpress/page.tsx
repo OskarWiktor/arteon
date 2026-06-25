@@ -180,7 +180,7 @@ export default function TworzenieStronWordPressPage() {
 
         <ProjectsCarousel
           title='Realizacje stron internetowych'
-          category='strona'
+          category='strony'
         />
 
         <Divider line />

@@ -113,7 +113,7 @@ export default function OfferWebPage() {
 
         <ProjectsCarousel
           title='Realizacje sklepów internetowych'
-          category='sklep'
+          category='sklepy'
         />
 
         <Divider line />

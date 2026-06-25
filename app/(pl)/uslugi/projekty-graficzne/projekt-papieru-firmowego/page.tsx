@@ -108,7 +108,7 @@ export default function OfferDesignLetterheadPage() {
 
         <ProjectsCarousel
           title='Realizacje projektów graficznych'
-          category='grafika'
+          category='projekty graficzne'
         />
 
         <Divider line />
