@@ -1,20 +1,10 @@
-import Image from 'next/image';
 import Script from 'next/script';
-import {
-  RiSpeedFill,
-  RiToolsLine,
-  RiShieldCheckLine,
-  RiDeviceLine,
-  RiBarChart2Fill,
-  RiFileList2Line,
-} from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
 import Breadcrumbs from '@/components/molecules/BreadCrumbs';
 import BenefitBelt from '@/components/organisms/BenefitBelt';
 import TestimonialsCarousel from '@/components/organisms/carousels/TestimonialsCarousel';
 import CTABanner from '@/components/organisms/CTABanner';
-import FeatureGrid from '@/components/organisms/FeatureGrid';
 import HeroBanner from '@/components/organisms/HeroBanner';
 import SectionBasic from '@/components/organisms/sections/SectionBasic';
 import SectionBento from '@/components/organisms/sections/SectionBento';
@@ -23,25 +13,24 @@ import SectionFaqPanels from '@/components/organisms/sections/SectionFaqPanels';
 import SectionInfo from '@/components/organisms/sections/SectionInfo';
 import SectionPrices from '@/components/organisms/sections/SectionPrices';
 import SectionSteps from '@/components/organisms/sections/SectionSteps';
-import { cn } from '@/lib/clsx';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
-import { largeIconSizeClasses, normalIconSizeClasses } from '@/lib/uiClasses';
 import { siteUrl } from '@/utils/absoluteUrl';
+import SectionImageGallery from '@/components/organisms/sections/SectionImageGallery';
 
 export const metadata = {
   title:
-    'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
+    'Optymalizacja prędkości ładowania strony internetowych WordPress - gwarancja wydajności 90+/100 | Arteon',
   description:
-    'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 w PageSpeed. Szybsze ładowanie, lepsze Core Web Vitals.',
+    'Dedykowana oferta optymalizacji stron www stworzonych w WordPress z gwarancją wydajności 90+/100 według PageSpeed. Szybsze ładowanie = więcej klientów.',
   alternates: {
     canonical:
       'https://www.arteonagency.pl/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
   },
   openGraph: {
     title:
-      'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
+      'Optymalizacja prędkości ładowania strony internetowych WordPress - gwarancja wydajności 90+/100 | Arteon',
     description:
-      'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 w PageSpeed. Szybsze ładowanie, lepsze Core Web Vitals.',
+      'Dedykowana oferta optymalizacji stron www stworzonych w WordPress z gwarancją wydajności 90+/100 według PageSpeed. Szybsze ładowanie = więcej klientów.',
     url: `${siteUrl}/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress`,
     type: 'website',
     siteName: 'Arteon',
@@ -58,9 +47,10 @@ export const metadata = {
 function ServiceSchema() {
   const json = buildServiceSchema({
     path: '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
-    serviceName: 'Optymalizacja strony WordPress',
+    serviceName:
+      'Optymalizacja wydajności strony internetowych stworzonych w WordPress',
     description:
-      'Optymalizacja stron WordPress z naciskiem na wydajność, stabilność i wersję mobilną. Strona zyskuje lepsze wyniki w testach szybkości i solidne podstawy pod SEO.',
+      'Dedykowana oferta optymalizacji stron www stworzonych w WordPress z gwarancją wydajności 90+/100 według PageSpeed. Szybsze ładowanie = więcej klientów.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
@@ -88,21 +78,19 @@ export default function OfferOptimizationWordPressPage() {
   return (
     <>
       <HeroBanner
-        title='Wydajniejsza strona WordPress = więcej klientów'
+        title='Szybsze ładowanie strony = więcej klientów'
         description={
           <>
-            Strona, która szybko się ładuje i działa stabilnie, daje lepsze
-            wyniki w Google i więcej zapytań od klientów. W ramach tej usługi
-            WordPress zyskuje wynik <strong>90+/100 w PageSpeed</strong> albo
-            nie ponosisz kosztu optymalizacji. Faktura wystawiana jest dopiero
-            po realizacji prac.
+            Wynik wydajności witryny jest czynnikiem rankingowym w Google.
+            Strona, która ładuje się szybko przekłada się bezpośrednio na więcej
+            więcej klientów. Sprawdź nasz sprawdzony proces optymalizacji
+            WordPress z gwarancją wyniku 90+/100 według PageSpeed Insights.
           </>
         }
-        secondaryCtaLabel='Sprawdź swoją stronę'
+        secondaryCtaLabel='Przyśpiesz swoją stronę'
         secondaryCtaHref='#kontakt'
         backgroundImage='/assets/projects/arteon-baners-camper-albania-mockup.webp'
         overlay='black'
-        subtitle='Oferta specjalna: optymalizacja WordPress'
       />
 
       <BenefitBelt variant='carousel' />
@@ -128,23 +116,85 @@ export default function OfferOptimizationWordPressPage() {
           subtitle='Wydajność, stabilność i gotowość na ruch'
         >
           <p>
-            Wolna lub niestabilna strona WordPress utrudnia pozyskiwanie
-            klientów. Długi czas ładowania, problemy na telefonach i
-            przeładowanie wtyczkami powodują, że użytkownicy szybciej zamykają
-            kartę, a systemy reklamowe i Google mniej chętnie kierują na taką
-            witrynę ruch.
+            Wolno ładująca się strona internetowa utrudnia pozyskiwanie
+            klientów. Nawet jeśli treść na Twojej stronie jest świetna i bardzo
+            przydatna dla Twoich klientów, to długi czas ładowania sprawi, że
+            wielu z nich wróci do wyszukiwarki i przejdzie do strony konkurencji
+            aby szybciej znaleźć potrzebne informacje. W efekcie strona, która
+            działa wolno, ogranicza rozwój biznesu i zmniejsza skuteczność
+            wszelkich działań marketingowych.
           </p>
-
           <br />
-
           <p>
-            Optymalizacja strony WordPress porządkuje warstwę techniczną tak,
-            aby witryna ładowała się wyraźnie szybciej, była czytelna na
-            urządzeniach mobilnych i stanowiła stabilną bazę pod SEO oraz
-            kampanie reklamowe. Efektem jest wygodniejsza ścieżka użytkownika i
-            większa gotowość biznesu na intensywniejszy ruch.
+            Testowaliśmy wiele sposobów przyspieszania stron internetowych
+            stworzonych w WordPress i wypracowaliśmy proces optymalizacji, który
+            pozwala osiągnąć realny wynik 90+/100 w PageSpeed Insights, bez
+            zmiany wyglądu witryny czy utraty funkcjonalności. W ramach
+            optymalizacji skupiamy się na technicznych aspektach WordPressa,
+            które mają największy wpływ na szybkość ładowania strony i
+            stabilność działania, dzięki temu wszystkie strony które posiadasz
+            obecnie jak i wszystkie przyszłe strony ładują się według
+            nowoczesnych standardów.
           </p>
         </SectionInfo>
+
+        <Divider line />
+
+        <SectionImageGallery
+          title='Wyniki przed i po naszych optymalizacji oraz stworzonych przez nas stron w WordPress'
+          grid='six'
+          noWrapper
+          images={[
+            {
+              alt: 'Autokorfu - wynik wydajności witryny przed optymalizacją',
+              src: '/assets/projects/autokorfu/autokorfu-optymalizacja-strony-wynik-przed.webp',
+            },
+            {
+              alt: 'Autokorfu - wynik wydajności witryny po optymalizacji',
+              src: '/assets/projects/autokorfu/autokorfu-optymalizacja-strony-wynik-po.webp',
+            },
+            {
+              alt: 'Camper Albania - wynik wydajności witryny przed optymalizacją',
+              src: '/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-przed.webp',
+            },
+            {
+              alt: 'Camper Albania - wynik wydajności witryny po optymalizacji',
+              src: '/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-po.webp',
+            },
+            {
+              alt: 'MSC Psychotherapy - wynik wydajności witryny przed optymalizacją',
+              src: '/assets/projects/msc/msc-optymalizacja-strony-wynik-przed.webp',
+            },
+            {
+              alt: 'MSC Psychotherapy - wynik wydajności witryny po optymalizacji',
+              src: '/assets/projects/msc/msc-optymalizacja-strony-wynik-po.webp',
+            },
+            {
+              alt: 'Eliza Wrońska - wynik wydajności witryny przed optymalizacją',
+              src: '/assets/projects/eliza-wronska/eliza-wronska-optymalizacja-strony-wynik-przed.webp',
+            },
+            {
+              alt: 'Eliza Wrońska - wynik wydajności witryny po optymalizacji',
+              src: '/assets/projects/eliza-wronska/eliza-wronska-optymalizacja-strony-wynik-po.webp',
+            },
+            {
+              alt: 'NaPilota - wynik wydajności stworzonej przez nas strony WordPress',
+              src: '/assets/projects/napilota/napilota-wynik-wydajnosci-witryny.webp',
+            },
+            {
+              alt: 'StepArd - wynik wydajności stworzonej przez nas strony WordPress',
+              src: '/assets/projects/stepard/strona/stepard-wynik-wydajnosci-witryny.webp',
+            },
+            {
+              alt: 'Izoluk - wynik wydajności stworzonej przez nas strony WordPress',
+              src: '/assets/projects/izoluk/izoluk-optymalizacja-strony-wynik.webp',
+            },
+            {
+              alt: 'Finish Masters - wynik wydajności stworzonej przez nas strony WordPress',
+              src: '/assets/projects/finish-masters/strona/finish-masters-optymalizacja-strony-wynik.webp',
+            },
+          ]}
+        />
 
         <Divider line />
 
@@ -153,302 +203,75 @@ export default function OfferOptimizationWordPressPage() {
           imageSrc='/assets/projects/finish-masters/strona/finish-masters-optymalizacja-strony-wynik.webp'
           imageAlt='Wynik optymalizacji strony WordPress - raport PageSpeed Insights firmy Finish Masters'
           subtitle='Dla kogo'
-          title='Kiedy optymalizacja WordPress ma największy sens?'
-          description='Największe korzyści pojawiają się wtedy, gdy strona już działa, ale jej szybkość lub stabilność ogranicza rozwój. Z takiej usługi najczęściej korzystają:'
-          btnOne='Sprawdź, czy warto optymalizować'
-          btnOneHref='#kontakt'
+          title='Kiedy optymalizacja witryny ma największy sens?'
+          description='Optymalizacja WordPress jest szczególnie przydatna dla:'
         >
           <ul className='mt-4 list-disc space-y-2 pl-5 text-sm'>
             <li>
-              firmy posiadające stronę WordPress, która działa wolno lub
-              niestabilnie,
+              Firm posiadających stronę internetową z rozbudowaną ofertą lub
+              blogiem, które stawiają na pozyskiwanie nowych klientów
+              bezpośrednio z Google,
             </li>
             <li>
-              biznesy planujące działania SEO lub kampanie reklamowe i
-              potrzebujące solidnej bazy technicznej,
+              Firm, które prowadzą kampanie reklamowe lub działania marketingowe
+              i chcą aby zwiększyć skuteczność tych działań poprzez szybszą
+              stronę internetową,
             </li>
             <li>
-              marki, których witryny przez lata rozbudowano o wiele wtyczek,
-              motywów i dodatków.
+              Firm, które posiadają wiele funkcjonalności na stronie, które
+              spowalniają jej ładowanie,
             </li>
           </ul>
         </SectionBasic>
-
-        <Divider line />
-
-        <FeatureGrid
-          title='Co robimy w ramach optymalizacji WordPress?'
-          subtitle='Zakres działań i efekty'
-          items={[
-            {
-              title: 'Szybsze ładowanie i lepsze Core Web Vitals',
-              description: (
-                <>
-                  Optymalizujemy kod, konfigurację oraz zasoby, aby skrócić czas
-                  ładowania strony i poprawić wyniki w PageSpeed Insights.
-                  Efekt: lepsze doświadczenie użytkownika i wyższa widoczność w
-                  Google, szczególnie na urządzeniach mobilnych.
-                </>
-              ),
-              icon: (
-                <RiSpeedFill
-                  className={cn('text-primary', normalIconSizeClasses)}
-                />
-              ),
-            },
-            {
-              title: 'Porządki we wtyczkach i motywie',
-              description: (
-                <>
-                  Usuwamy zbędne wtyczki, porządkujemy konfigurację i wskazujemy
-                  elementy, które spowalniają stronę lub powodują konflikty.
-                  Efekt: stabilniejsza strona i mniej problemów technicznych
-                  przy dalszych aktualizacjach.
-                </>
-              ),
-              icon: (
-                <RiToolsLine
-                  className={cn('text-primary', normalIconSizeClasses)}
-                />
-              ),
-            },
-            {
-              title: 'Obrazy dopasowane do urządzeń',
-              description: (
-                <>
-                  Kompresujemy grafiki, ustawiamy właściwe rozmiary i formaty
-                  (np. WebP) oraz wdrażamy poprawne ładowanie. Efekt: mniejsze
-                  zużycie transferu i znacznie lepsza szybkość działania
-                  witryny.
-                </>
-              ),
-              icon: (
-                <RiFileList2Line
-                  className={cn('text-primary', normalIconSizeClasses)}
-                />
-              ),
-            },
-            {
-              title: 'Wersja mobilna i wygoda korzystania',
-              description: (
-                <>
-                  Korygowane są marginesy, czcionki i przyciski na telefonach.
-                  Efekt: strona jest czytelna, łatwa w obsłudze i lepiej
-                  przygotowana na ruch z urządzeń mobilnych.
-                </>
-              ),
-              icon: (
-                <RiDeviceLine
-                  className={cn('text-primary', normalIconSizeClasses)}
-                />
-              ),
-            },
-          ]}
-        />
-
-        <Divider line />
-
-        <SectionInfo
-          title='Jakie efekty mierzone są po optymalizacji WordPress?'
-          subtitle='KPI i raport po wdrożeniu'
-        >
-          <ul className='ml-5 list-disc space-y-2'>
-            <li>
-              <strong>Wyniki testów szybkości:</strong> porównanie parametrów
-              PageSpeed/Lighthouse oraz odczuwalnego czasu ładowania strony
-              przed i po optymalizacji.
-            </li>
-            <li>
-              <strong>Zachowanie użytkowników:</strong> obserwacja, czy po
-              wprowadzeniu zmian użytkownikom łatwiej jest dotrzeć do oferty,
-              formularza kontaktowego lub koszyka.
-            </li>
-            <li>
-              <strong>Stabilność i wygoda dalszego rozwoju:</strong> po
-              uporządkowaniu wtyczek i motywu łatwiej jest rozbudowywać stronę
-              bez kolejnych spowolnień i konfliktów technicznych.
-            </li>
-          </ul>
-        </SectionInfo>
 
         <Divider line />
 
         <SectionSteps
           title='Jak przebiega optymalizacja strony WordPress?'
-          subtitle='Etapy współpracy'
           items={[
             {
-              title: '1. Krótkie rozpoznanie i dostęp do strony',
+              title: '1. Analiza strony',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Na początku ustalane są główne problemy: szybkość,
-                    zachowanie strony na telefonach, błędy lub niestabilność.
-                    Następnie przekazywany jest dostęp administratora do panelu
-                    WordPress oraz, w razie potrzeby, do hostingu.
+                    Na początku sprawdzamy dokładnie co generuje na Twojej
+                    stronie problemy według wyniku w PageSpeed Insights.
+                    Następnie prosimy o dostęp administratora do panelu
+                    WordPress, aby móc przeprowadzić optymalizację.
                   </p>
                 </div>
               ),
             },
             {
-              title: '2. Audyt techniczny WordPress',
+              title: '2. Optymalizacja',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Sprawdzane są wtyczki, motyw, sposób ładowania zasobów i
-                    zachowanie strony na różnych urządzeniach. Na tej podstawie
-                    powstaje plan zmian, który pozwala osiągnąć docelowy wynik w
-                    PageSpeed.
+                    Następnie sprawdzamy sposób ładowania stron, potencjalne
+                    konflikty lub dublikacje wtyczek, sposób ładowania obrazów
+                    oraz wszelkich elementów. Po dokładnym sprawdzeniu,
+                    przechodzimy od razu do działania - optymalizujemy grafiki,
+                    konfigurujemy cache, sposób ładowania skryptów i
+                    porządkujemy wtyczki.
                   </p>
                 </div>
               ),
             },
             {
-              title: '3. Wdrożenie zmian i testy „przed i po"',
+              title: '3. Podsumowanie i rozliczenie',
               description: (
                 <div className='flex h-full flex-col'>
                   <p className='mb-3 text-sm'>
-                    Wprowadzane są uzgodnione zmiany, konfiguracja cache oraz
-                    optymalizacja grafik. Następnie wykonywane są testy
-                    szybkości i stabilności, a wyniki prezentowane są w formie
-                    porównania „przed i po".
-                  </p>
-                </div>
-              ),
-            },
-            {
-              title: '4. Podsumowanie, rekomendacje i rozliczenie',
-              description: (
-                <div className='flex h-full flex-col'>
-                  <p className='mb-3 text-sm'>
-                    Na koniec przygotowywane jest krótkie podsumowanie prac oraz
-                    rekomendacje dalszych działań technicznych lub SEO. Jeśli
-                    wynik 90+/100 nie jest możliwy z powodów niezależnych (np.
-                    ograniczenia hostingu lub motywu), zasady rozliczenia są
-                    omawiane jeszcze przed startem prac.
+                    Na koniec przedstawiamy Ci wynik testów prędkości przed i
+                    po, na wybranych podstronach i dopiero po tym, wystawiamy
+                    fakturę za wykonane prace. Dzięki temu masz pewność, że
+                    optymalizacja przyniosła efekt.
                   </p>
                 </div>
               ),
             },
           ]}
         />
-
-        <Divider line />
-
-        <SectionBasic
-          variant='left'
-          imageSrc='/assets/projects/izoluk/izoluk-optymalizacja-strony-wynik.webp'
-          imageAlt='Wynik optymalizacji strony WordPress - raport PageSpeed Insights firmy Izoluk'
-          subtitle='Typowe rezultaty'
-          title='Jakie zmiany najczęściej widać po optymalizacji strony WordPress?'
-          description='Zakres efektów zależy od punktu wyjścia i hostingu, ale w większości realizacji po optymalizacji widoczne są:'
-        >
-          <ul className='mt-4 grid grid-cols-1 gap-3 pl-0 text-sm md:grid-cols-3'>
-            <li className='list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200'>
-              Wyraźnie szybsze ładowanie strony - szczególnie na urządzeniach
-              mobilnych.
-            </li>
-            <li className='list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200'>
-              Stabilniejsza praca WordPressa dzięki mniejszej liczbie konfliktów
-              między wtyczkami i motywami.
-            </li>
-            <li className='list-none rounded-lg bg-white p-4 ring-1 ring-neutral-200'>
-              Czytelniejsza wersja mobilna i prostsza ścieżka do kontaktu,
-              rezerwacji lub zakupu.
-            </li>
-          </ul>
-        </SectionBasic>
-
-        <Divider line />
-
-        <SectionInfo
-          title='Realne wyniki optymalizacji - przed i po'
-          subtitle='Porównanie stanu stron klientów'
-        >
-          <p className='mb-6'>
-            Każda optymalizacja kończy się raportem porównującym stan strony
-            przed wdrożeniem i po zakończeniu prac. Poniżej kilka realnych
-            przykładów z wdrożeń dla naszych klientów.
-          </p>
-
-          <div className='grid gap-8'>
-            <div>
-              <h3 className='h5 mb-3'>
-                Camper Albania - wypożyczalnia kamperów
-              </h3>
-              <div className='grid grid-cols-2 gap-4 md:grid-cols-4'>
-                <figure>
-                  <div className='overflow-hidden rounded-lg border border-neutral-200'>
-                    <Image
-                      src='/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-przed.webp'
-                      alt='Camper Albania - wynik PageSpeed przed optymalizacją'
-                      width={1010}
-                      height={875}
-                      sizes='(min-width:768px) 50vw, 100vw'
-                      className='h-auto w-full object-contain'
-                    />
-                  </div>
-                  <figcaption className='mt-2 text-sm text-light'>
-                    Przed optymalizacją
-                  </figcaption>
-                </figure>
-                <figure>
-                  <div className='overflow-hidden rounded-lg border border-neutral-200'>
-                    <Image
-                      src='/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-po.webp'
-                      alt='Camper Albania - wynik PageSpeed po optymalizacji'
-                      width={1010}
-                      height={875}
-                      sizes='(min-width:768px) 50vw, 100vw'
-                      className='h-auto w-full object-contain'
-                    />
-                  </div>
-                  <figcaption className='mt-2 text-sm font-semibold text-light'>
-                    Po optymalizacji
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div>
-              <h3 className='h5 mb-3'>
-                MSC Psychotherapy - gabinet psychologiczny
-              </h3>
-              <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
-                <figure>
-                  <div className='overflow-hidden rounded-lg border border-neutral-200'>
-                    <Image
-                      src='/assets/projects/msc/msc-optymalizacja-strony-wynik-przed.webp'
-                      alt='MSC Psychotherapy - wynik PageSpeed przed optymalizacją'
-                      width={1009}
-                      height={832}
-                      sizes='(min-width:768px) 50vw, 100vw'
-                      className='h-auto w-full object-contain'
-                    />
-                  </div>
-                  <figcaption className='mt-2 text-sm text-light'>
-                    Przed optymalizacją
-                  </figcaption>
-                </figure>
-                <figure>
-                  <div className='overflow-hidden rounded-lg border border-neutral-200'>
-                    <Image
-                      src='/assets/projects/msc/msc-optymalizacja-strony-wynik-po.webp'
-                      alt='MSC Psychotherapy - wynik PageSpeed po optymalizacji'
-                      width={1009}
-                      height={832}
-                      sizes='(min-width:768px) 50vw, 100vw'
-                      className='h-auto w-full object-contain'
-                    />
-                  </div>
-                  <figcaption className='mt-2 text-sm font-semibold text-light'>
-                    Po optymalizacji
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </SectionInfo>
 
         <Divider line />
 
@@ -456,37 +279,31 @@ export default function OfferOptimizationWordPressPage() {
           title='Cennik optymalizacji strony WordPress'
           plans={[
             {
-              name: 'Optymalizacja WordPress: strona firmowa',
+              name: 'Optymalizacja dla małej strony',
               price: 'od 650 do 850 zł',
               description:
-                'Dla prostych stron firmowych i landing page, gdzie potrzebne jest przyspieszenie ładowania oraz porządki we wtyczkach.',
+                'Dla prostych stron firmowych, które mają kilka podstron i nie posiadają rozbudowanych funkcjonalności.',
               features: [
-                'Analiza stanu technicznego WordPressa i hostingu',
-                'Konfiguracja cache i optymalizacja kluczowych zasobów',
-                'Porządki we wtyczkach (usunięcie zbędnych dodatków)',
-                'Optymalizacja wybranych grafik i podstawowe poprawki wersji mobilnej',
-                'Raport „przed i po" z wynikami testów szybkości',
+                'Analiza stanu technicznego witryny,',
+                'Konfiguracja cache i optymalizacja ładowania skryptów,',
+                'Porządkowanie wtyczek,',
+                'Optymalizacja grafik,',
+                'Raport „przed i po”,',
               ],
-              btnOne: 'Poproś o wycenę w tym przedziale',
-              btnOneHref: '#kontakt',
             },
             {
-              name: 'Optymalizacja WordPress: rozbudowana witryna',
-              price: 'od 850 do 1050 zł',
+              name: 'Optymalizacja dla rozbudowanej witryny',
+              price: 'od 900 do 1450 zł',
               description:
-                'Dla stron z większą liczbą podstron lub rozbudowaną strukturą, gdzie liczy się wydajność, wersja mobilna i dalszy rozwój.',
+                'Dla stron z większą liczbą podstron, które posiadają rozbudowane funkcjonalności i integracje.',
               features: [
-                'Wszystko z pakietu dla stron firmowych, a dodatkowo:',
-                'Optymalizacja większej liczby podstron i szablonów',
-                'Szersze porządki we wtyczkach i integracjach',
-                'Dopasowanie wersji mobilnej kluczowych podstron',
-                'Rekomendacje pod kolejne działania SEO i rozwój witryny',
+                'Wszystko z pakietu dla prostych stron,',
+                'Optymalizacja ładowania treści dynamicznych,',
+                'Optymalizacja integracji z zewnętrznymi systemami,',
+                'Konfiguracja kolejności ładowania,',
               ],
-              btnOne: 'Zamów szczegółową wycenę',
-              btnOneHref: '#kontakt',
             },
           ]}
-          legalNote='Większość realizacji mieści się w przedziale 650-1050 zł. Ostateczna wycena zależy od wielkości strony, hostingu oraz stanu wyjściowego WordPressa. Przed rozpoczęciem prac przedstawiamy jasny zakres działań, szacowany wynik oraz zasady rozliczenia przy braku możliwości osiągnięcia 90+/100.'
         />
 
         <Divider line />
@@ -495,65 +312,12 @@ export default function OfferOptimizationWordPressPage() {
 
         <Divider line />
 
-        <SectionSteps
-          title='Zobacz też'
-          subtitle='Usługi powiązane z optymalizacją WordPress'
-          description='Optymalizacja WordPress często łączy się z działaniami SEO oraz stałą opieką techniczną nad stroną.'
-          items={[
-            {
-              icon: <RiBarChart2Fill className={largeIconSizeClasses} />,
-              title: 'Optymalizacja SEO (wdrożenia)',
-              description: (
-                <div className='flex h-full flex-col'>
-                  <p className='mb-3 text-sm'>
-                    Po uporządkowaniu WordPressa można przejść do wdrożeń SEO:
-                    dopracowania tytułów, opisów i struktury treści, aby lepiej
-                    wykorzystać poprawioną wydajność.
-                  </p>
-                  <div className='mt-auto'>
-                    <a
-                      href='/uslugi/marketing/optymalizacja-seo'
-                      className='inline-link text-sm'
-                    >
-                      Przejdź do optymalizacji SEO
-                    </a>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiShieldCheckLine className={largeIconSizeClasses} />,
-              title: 'Audyt SEO',
-              description: (
-                <div className='flex h-full flex-col'>
-                  <p className='mb-3 text-sm'>
-                    Pełna diagnoza widoczności strony w Google oraz plan działań
-                    na kolejne miesiące. Dobry krok po optymalizacji technicznej
-                    WordPressa.
-                  </p>
-                  <div className='mt-auto'>
-                    <a
-                      href='/uslugi/marketing/audyt-seo'
-                      className='inline-link text-sm'
-                    >
-                      Zobacz audyt SEO
-                    </a>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid='two'
-        />
-
-        <Divider size='sm' />
-
         <SectionContactForm
-          title='Sprawdź koszt optymalizacji strony WordPress'
-          description='Podaj adres swojej strony WordPress i napisz co najbardziej przeszkadza w jej działaniu (szybkość, wersja mobilna, błędy) - otrzymasz darmową wycenę realizacji.'
+          title='Sprawdź cenę optymalizacji strony WordPress'
+          description='Podaj adres swojej strony WordPress a my przygotujemy wycenę jej optymalizacji.'
           imageSrc='/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-wynik-optymalizacji-witryny-w-pagespeed-dla-urzadzen-mobilnych.webp'
           imageAlt='Wynik optymalizacji strony WordPress w PageSpeed Insights'
-          defaultSubject='Kampania - optymalizacja strony WordPress'
+          defaultSubject='Optymalizacja strony WordPress'
         />
 
         <Divider line />
@@ -565,89 +329,25 @@ export default function OfferOptimizationWordPressPage() {
           items={[
             {
               question:
-                'Czy w każdym przypadku da się osiągnąć wynik 90+/100 w PageSpeed?',
-              answer:
-                'Nie zawsze jest to możliwe w stu procentach. Wpływ na wynik mają m.in. wybrany motyw, konstrukcja strony i ograniczenia hostingu. Przed rozpoczęciem prac sygnalizujemy, jaki poziom wyniku jest realny do osiągnięcia oraz na jakich zasadach obowiązuje gwarancja braku opłaty.',
-            },
-            {
-              question:
-                'Co się dzieje, jeśli wynik 90+/100 nie zostanie osiągnięty?',
-              answer:
-                'Jeżeli mimo wdrożenia optymalizacji wynik nie osiąga założonego poziomu z powodów technicznych niezależnych od prac (np. specyfika motywu lub serwera), sposób rozliczenia ustalany jest jeszcze przed startem. Zasada jest prosta: klient zna warunki i nie ponosi kosztu za obietnicę, której nie da się spełnić.',
-            },
-            {
-              question:
                 'Jakie dostępy są potrzebne do optymalizacji strony WordPress?',
               answer:
-                'Do przeprowadzenia prac potrzebny jest dostęp administratora do panelu WordPress. Przy głębszych zmianach lub konieczności modyfikacji ustawień serwera wymagany może być także dostęp do hostingu.',
+                'Do przeprowadzenia prac potrzebny jest dostęp do systemu WordPress. Przy głębszych zmianach lub konieczności modyfikacji ustawień serwera wymagany może być także dostęp do hostingu.',
             },
             {
               question:
-                'Czy optymalizacja WordPress sama w sobie poprawi pozycje w Google?',
+                'Czy optymalizacja prędkości ładowania sama w sobie poprawi pozycje witryny w Google?',
               answer:
-                'Optymalizacja techniczna wspiera SEO, ponieważ poprawia szybkość i komfort korzystania ze strony, co jest jednym z elementów ocenianych przez wyszukiwarkę. Same pozycje zależą jednak także od treści, linków i wielu innych czynników, dlatego optymalizacja WordPress często łączona jest z działaniami SEO.',
+                'Tak, Google wprost przyznaje, że wynik wydajności witryny, w szczególności na telefonach, wpływa na pozycję w Google. Szybsza strona jest wygodniejsza również dla użytkowników i ogranicza potencjalny powrót do wyszukiwarki i Twojej konkurencji. Sama pozycja zależy także od treści, linków i wielu innych czynników, dlatego optymalizacja WordPress często łączona jest z działaniami SEO.',
             },
             {
-              question:
-                'Czy po optymalizacji będzie można dalej swobodnie rozwijać stronę?',
+              question: 'Czy po optymalizacji nowe strony też będą szybsze?',
               answer:
-                'Tak. Celem jest uporządkowanie systemu tak, aby dalsza rozbudowa była wygodniejsza i mniej obciążała WordPressa. Po zakończeniu prac strona pozostaje w pełni edytowalna, a dobre praktyki ustalone podczas optymalizacji ułatwiają kolejne kroki.',
+                'Tak, mamy sprawdzony sposób, który pozwala, bez zmian wizualnych i usuwania funkcjonalności, przyśpieszyć ładowanie wszystkich istniejących jak i nowych podstron. Optymalizujemy samo działanie systemu i sposób ładowania wszelkich treści, bez optymalizacji pojedynczych podstron lecz tego, co te podstrony tworzy.',
             },
           ]}
         />
 
         <Divider line />
-
-        {/*      <SectionImageGallery
-        grid='six'
-        images={[
-          {
-            alt: 'Autokorfu',
-            src: '/assets/projects/autokorfu/autokorfu-optymalizacja-strony-wynik-przed.webp',
-          },
-          {
-            alt: 'Autokorfu',
-            src: '/assets/projects/autokorfu/autokorfu-optymalizacja-strony-wynik-po.webp',
-          },
-          {
-            alt: 'Camper Albania',
-            src: '/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-przed.webp',
-          },
-          {
-            alt: 'Camper Albania',
-            src: '/assets/projects/camper-albania/camper-albania-optymalizacja-strony-wynik-po.webp',
-          },
-          {
-            alt: 'MSC Psychotherapy',
-            src: '/assets/projects/msc/msc-optymalizacja-strony-wynik-przed.webp',
-          },
-          {
-            alt: 'MSC Psychotherapy',
-            src: '/assets/projects/msc/msc-optymalizacja-strony-wynik-po.webp',
-          },
-          {
-            alt: 'Eliza Wrońska',
-            src: '/assets/projects/eliza-wronska/eliza-wronska-optymalizacja-strony-wynik-przed.webp',
-          },
-          {
-            alt: 'Eliza Wrońska',
-            src: '/assets/projects/eliza-wronska/eliza-wronska-optymalizacja-strony-wynik-po.webp',
-          },
-          {
-            alt: 'NaPilota',
-            src: '/assets/projects/napilota/napilota-wynik-wydajnosci-witryny.webp',
-          },
-          {
-            alt: 'StepArd',
-            src: '/assets/projects/stepard/strona/stepard-wynik-wydajnosci-witryny.webp',
-          },
-          { alt: 'Izoluk', src: '/assets/projects/izoluk/izoluk-optymalizacja-strony-wynik.webp' },
-          {
-            alt: 'Finish Masters',
-            src: '/assets/projects/finish-masters/strona/finish-masters-optymalizacja-strony-wynik.webp',
-          },
-        ]}
-      />*/}
 
         <SectionBento
           title='Poznaj inne usługi'
@@ -661,7 +361,7 @@ export default function OfferOptimizationWordPressPage() {
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
-              title: 'Strony WordPress',
+              title: 'Tworzenie stron w WordPress',
               size: 'medium',
               backgroundImage:
                 '/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp',
@@ -692,8 +392,8 @@ export default function OfferOptimizationWordPressPage() {
 
       <CTABanner
         title='Zadbaj o wydajność swojej strony WordPress'
-        description='Szybsza, stabilniejsza strona ułatwia pozyskiwanie klientów, wspiera SEO i pozwala bez obaw kierować większy ruch z kampanii.'
-        btnOne='Sprawdź, co można poprawić'
+        description='Szybsza, stabilniejsza strona ułatwia pozyskiwanie klientów, wspiera pozycję w Google i pozwala bez obaw zwiększyć ruch na stronie.'
+        btnOne='Sprawdź co możemy dla Ciebie zrobić'
         btnOneHref='#kontakt'
         backgroundImage='/assets/projects/arteon-baners-camper-albania-mockup.webp'
         overlay='black'

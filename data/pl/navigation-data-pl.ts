@@ -76,6 +76,7 @@ export type OfferItemKey =
   | 'offerFolder'
   | 'flyers'
   | 'businessCards'
+  | 'wordpressOptimization'
   | 'contentCreation';
 
 export type OfferSectionItem = {
@@ -116,19 +117,25 @@ export const OFFER_SECTIONS_PL: OfferSection[] = [
       {
         key: 'websites',
         href: '/uslugi/tworzenie-stron-wordpress',
-        title: 'Strony WordPress',
+        title: 'Tworzenie stron WordPress',
+        icon: RiCodeSSlashFill,
+      },
+      {
+        key: 'wordpressOptimization',
+        href: '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
+        title: 'Optymalizacja strony WordPress',
         icon: RiCodeSSlashFill,
       },
       {
         key: 'shops',
         href: '/uslugi/sklepy-internetowe',
-        title: 'Sklepy internetowe',
+        title: 'Tworzenie sklepów internetowych',
         icon: RiShoppingCartLine,
       },
       {
         key: 'blogs',
         href: '/uslugi/blogi-internetowe',
-        title: 'Blogi internetowe',
+        title: 'Tworzenie blogów internetowych',
         icon: RiArticleLine,
       },
     ],
