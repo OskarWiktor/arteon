@@ -107,7 +107,7 @@ export default function OfferDesignLogoPage() {
 
         <ProjectsCarousel
           title='Wybrane realizacje projektów logo dla firm'
-          category='logo'
+          category='loga'
         />
 
         <Divider line />

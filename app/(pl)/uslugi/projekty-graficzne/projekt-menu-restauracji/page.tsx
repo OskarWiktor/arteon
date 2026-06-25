@@ -104,7 +104,7 @@ export default function OfferDesignMenuPage() {
 
         <ProjectsCarousel
           title='Realizacje projektów graficznych'
-          category='grafika'
+          category='projekty graficzne'
         />
 
         <Divider line />

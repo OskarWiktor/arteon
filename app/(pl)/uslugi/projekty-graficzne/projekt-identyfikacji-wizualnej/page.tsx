@@ -110,7 +110,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
 
         <ProjectsCarousel
           title='Realizacje projektów graficznych'
-          category='grafika'
+          category='projekty graficzne'
         />
 
         <Divider line />

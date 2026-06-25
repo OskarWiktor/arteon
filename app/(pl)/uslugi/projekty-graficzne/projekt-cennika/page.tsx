@@ -106,7 +106,7 @@ export default function OfferDesignPriceListPage() {
 
         <ProjectsCarousel
           title='Przykładowe realizacje projektów graficznych'
-          category='grafika'
+          category='projekty graficzne'
         />
 
         <Divider line />

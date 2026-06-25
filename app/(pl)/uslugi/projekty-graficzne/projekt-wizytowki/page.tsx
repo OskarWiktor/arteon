@@ -104,7 +104,7 @@ export default function OfferDesignBusinessCardPage() {
 
         <ProjectsCarousel
           title='Realizacje projektów wizytówek'
-          category='wizytówka'
+          category='wizytówki'
         />
 
         <Divider line />

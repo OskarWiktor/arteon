@@ -109,7 +109,7 @@ export default function OfferDesignLoyaltyCardPage() {
 
         <ProjectsCarousel
           title='Przykładowe projekty graficzne'
-          category='grafika'
+          category='projekty graficzne'
         />
 
         <Divider line />
