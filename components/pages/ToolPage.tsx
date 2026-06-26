@@ -318,10 +318,7 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
         ) : (
           (tool ?? <DynamicToolRenderer toolKey={data.toolKey} />)
         )}
-        <div className='mt-12 hidden lg:block'>
-          <AdSense variant='tool-banner' locale={data.locale} />
-        </div>
-        <div className='mt-12 block lg:hidden'>
+        <div className='not-prose m-auto mt-12 flex justify-center py-4'>
           <AdSense variant='responsive' locale={data.locale} />
         </div>
         <div className='mx-auto w-full max-w-355 px-[3%]'>
@@ -352,7 +349,7 @@ export default function ToolPage({ data, tool }: ToolPageProps) {
                   className='ad-slot-wrapper min-h-70'
                 >
                   <Divider line />
-                  <div className='not-prose mx-[-3%] flex justify-center py-4'>
+                  <div className='not-prose m-auto flex justify-center py-4'>
                     <AdSense variant='responsive' locale={data.locale} />
                   </div>
                 </div>
