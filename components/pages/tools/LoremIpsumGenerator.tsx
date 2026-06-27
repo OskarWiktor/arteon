@@ -5,14 +5,12 @@ import {
   RiFileCopyLine,
   RiCheckLine,
   RiDownloadLine,
-  RiCodeSSlashLine,
   RiPaletteLine,
 } from 'react-icons/ri';
 import Button from '@/components/atoms/buttons/Button';
 import ButtonPill from '@/components/atoms/buttons/ButtonPill';
 import Input from '@/components/atoms/form/Input';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
-import ToolStatRow from '@/components/molecules/tools/ToolStatRow';
 import Card from '@/components/organisms/Card';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { cn } from '@/lib/clsx';
@@ -20,29 +18,13 @@ import { ui } from '@/lib/i18n/tools/loremIpsum';
 import { useLocale } from '@/lib/LocaleContext';
 import {
   generateLoremIpsum,
-  getLoremStats,
-  formatBytes,
-  type LoremMode,
-  type LoremLength,
   type LoremStyle,
-  type LoremFormat,
   type LoremOptions,
 } from '@/lib/tools/text/loremIpsum';
 import { flexCenterClasses, smallIconSizeClasses } from '@/lib/uiClasses';
-import { stripHtmlTags } from '@/utils/stripHtmlTags';
 
-const MODES: LoremMode[] = [
-  'paragraphs',
-  'sentences',
-  'words',
-  'lists',
-  'headings',
-  'links',
-  'table',
-  'blockquotes',
-  'definitions',
-];
-const LENGTHS: LoremLength[] = ['short', 'medium', 'long'];
+type SimpleLoremMode = 'paragraphs' | 'sentences' | 'words';
+const MODES: SimpleLoremMode[] = ['paragraphs', 'sentences', 'words'];
 const STYLES: LoremStyle[] = [
   'classic',
   'hipster',
@@ -53,17 +35,10 @@ const STYLES: LoremStyle[] = [
   'pirate',
   'legal',
 ];
-const FORMATS: LoremFormat[] = ['plain', 'html'];
 
 /**
- * Renders a localized Lorem Ipsum generator UI with controls for mode, count,
- * paragraph length, output format, and style, plus preview, statistics,
- * copy-to-clipboard, and download actions.
- *
- * The component maintains generation state (mode, count, paragraphLength,
- * outputFormat, style, output, and a deterministic seed) and exposes controls
- * to produce plain-text or HTML lorem ipsum output, view stats, copy results,
- * and download the output as a text file.
+ * Renders a localized Lorem Ipsum generator UI with controls for mode, count, and style,
+ * plus preview, copy-to-clipboard, and download actions.
  *
  * @returns The rendered generator UI as a React element.
  */
@@ -71,48 +46,28 @@ export default function LoremIpsumGenerator() {
   const locale = useLocale();
   const t = ui[locale];
 
-  const [mode, setMode] = useState<LoremMode>('paragraphs');
+  const [mode, setMode] = useState<SimpleLoremMode>('paragraphs');
   const [count, setCount] = useState(5);
-  const [paragraphLength, setParagraphLength] = useState<LoremLength>('medium');
-  const [outputFormat, setOutputFormat] = useState<LoremFormat>('plain');
   const [style, setStyle] = useState<LoremStyle>('classic');
   const [output, setOutput] = useState('');
   const seedRef = useRef(Date.now());
 
   const { copy, copied } = useCopyToClipboard();
-  const { copy: copyHtml, copied: copiedHtml } = useCopyToClipboard();
 
-  const modeLabels: Record<LoremMode, string> = {
+  const modeLabels: Record<SimpleLoremMode, string> = {
     paragraphs: t.paragraphs,
     sentences: t.sentences,
     words: t.words,
-    lists: t.lists,
-    headings: t.headings,
-    links: t.links,
-    table: t.table,
-    blockquotes: t.blockquotes,
-    definitions: t.definitions,
   };
-  const lengthLabels: Record<LoremLength, string> = {
-    short: t.short,
-    medium: t.medium,
-    long: t.long,
-  };
-  const formatLabels: Record<LoremFormat, string> = {
-    plain: t.plainText,
-    html: t.htmlFormat,
-  };
-
-  const stats = getLoremStats(output);
 
   const generate = () => {
     seedRef.current = Date.now();
     const options: LoremOptions = {
       mode,
       count,
-      paragraphLength,
+      paragraphLength: 'medium',
       startWithLorem: style === 'classic',
-      outputFormat,
+      outputFormat: 'plain',
       style,
       locale,
     };
@@ -129,8 +84,6 @@ export default function LoremIpsumGenerator() {
     a.click();
     URL.revokeObjectURL(url);
   };
-
-  const plainOutput = stripHtmlTags(output);
 
   return (
     <div className='space-y-4 overflow-hidden'>
@@ -192,84 +145,13 @@ export default function LoremIpsumGenerator() {
                   Math.max(1, Math.min(9999, Number(e.target.value) || 1)),
                 )
               }
+              className='w-20'
             />
-          </ToolFieldRow>
-
-          {mode === 'paragraphs' && (
-            <ToolFieldRow label={t.paragraphLength}>
-              <div className='flex flex-wrap gap-2'>
-                {LENGTHS.map(l => (
-                  <button
-                    key={l}
-                    type='button'
-                    onClick={() => setParagraphLength(l)}
-                    className={cn(
-                      'tool-button',
-                      paragraphLength === l
-                        ? 'bg-primary text-white'
-                        : 'tool-button-inactive',
-                    )}
-                  >
-                    {lengthLabels[l]}
-                  </button>
-                ))}
-              </div>
-            </ToolFieldRow>
-          )}
-
-          <ToolFieldRow label={t.outputFormat}>
-            <div className='flex flex-wrap gap-2'>
-              {FORMATS.map(f => (
-                <button
-                  key={f}
-                  type='button'
-                  onClick={() => setOutputFormat(f)}
-                  className={cn(
-                    'tool-button',
-                    outputFormat === f
-                      ? 'bg-primary text-white'
-                      : 'tool-button-inactive',
-                  )}
-                >
-                  {formatLabels[f]}
-                </button>
-              ))}
-            </div>
           </ToolFieldRow>
 
           <Button variant='accent' onClick={generate}>
             {t.generate}
           </Button>
-
-          {output && (
-            <div className='border-t border-neutral-200 pt-4'>
-              <h3 className='tool-value mb-3'>{t.statistics}</h3>
-              <div className='space-y-2'>
-                <ToolStatRow label={t.statWords} value={stats.words} />
-                <ToolStatRow
-                  label={t.statCharsWithSpaces}
-                  value={stats.charsWithSpaces}
-                />
-                <ToolStatRow
-                  label={t.statCharsWithoutSpaces}
-                  value={stats.charsWithoutSpaces}
-                />
-                <ToolStatRow label={t.statSentences} value={stats.sentences} />
-                <ToolStatRow
-                  label={t.statParagraphs}
-                  value={stats.paragraphs}
-                />
-                <ToolStatRow
-                  label={t.statReadingTime}
-                  value={stats.readingTime}
-                />
-                <ToolStatRow
-                  label={t.statBytes}
-                  value={formatBytes(stats.bytes)}
-                />
-              </div>
-            </div>
-          )}
         </Card>
 
         <Card interactive={false} padding='lg' variant='outlined'>
@@ -294,7 +176,7 @@ export default function LoremIpsumGenerator() {
             <div className='flex flex-wrap gap-2'>
               <Button
                 variant='normal'
-                onClick={() => copy(plainOutput)}
+                onClick={() => copy(output)}
                 aria-label={copied ? t.copied : t.copyText}
               >
                 <span className='inline-flex items-center gap-2'>
@@ -306,23 +188,6 @@ export default function LoremIpsumGenerator() {
                   {copied ? t.copied : t.copyText}
                 </span>
               </Button>
-
-              {outputFormat === 'html' && (
-                <Button
-                  variant='normal'
-                  onClick={() => copyHtml(output)}
-                  aria-label={copiedHtml ? t.copied : t.copyHtml}
-                >
-                  <span className='inline-flex items-center gap-2'>
-                    {copiedHtml ? (
-                      <RiCheckLine className={smallIconSizeClasses} />
-                    ) : (
-                      <RiCodeSSlashLine className={smallIconSizeClasses} />
-                    )}
-                    {copiedHtml ? t.copied : t.copyHtml}
-                  </span>
-                </Button>
-              )}
 
               <Button
                 variant='normal'

@@ -2,14 +2,14 @@
   "toolKey": "loremIpsum",
   "locale": "ro",
   "metadata": {
-    "title": "Generator Lorem Ipsum — text de exemplu, paragrafe, propoziții și cuvinte aleatorii",
-    "description": "Generator Lorem Ipsum gratuit — 8 stiluri: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business și altele. 9 moduri de generare. Copiați ca text sau HTML.",
+    "title": "Generator Lorem Ipsum gratuit. Copiați text de exemplu pentru machete, prototipuri și designuri grafice",
+    "description": "Generator Lorem Ipsum gratuit cu 8 stiluri de text de exemplu, printre care Bacon Ipsum, Cupcake Ipsum sau Legal Ipsum. Copiați textul de exemplu sub formă de paragrafe, propoziții sau cuvinte.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-ro.webp",
     "path": "/instrumente/generator-lorem-ipsum"
   },
   "hero": {
-    "title": "Generator Lorem Ipsum — text de exemplu, paragrafe, propoziții și cuvinte aleatorii",
-    "description": "8 stiluri de text: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal și cuvinte de umpletură în română. 9 moduri: paragrafe, propoziții, cuvinte, liste, titluri, linkuri, tabele, citate, definiții.",
+    "title": "Generator Lorem Ipsum gratuit. Copiați text de exemplu pentru machete, prototipuri și designuri grafice",
+    "description": "Generator Lorem Ipsum gratuit cu 8 stiluri de text de exemplu, printre care Bacon Ipsum, Cupcake Ipsum sau Legal Ipsum. Copiați textul de exemplu sub formă de paragrafe, propoziții sau cuvinte.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-ro.webp"
   },
   "breadcrumbs": {
@@ -26,64 +26,55 @@
     "software": {
       "name": "Generator Lorem Ipsum — text de exemplu, paragrafe, propoziții și cuvinte aleatorii",
       "alternateName": [
-        "Lorem Ipsum Generator",
+        "Generator de text de exemplu",
+        "Dummy text generator",
+        "Generator de paragrafe aleatorii",
+        "Placeholder text generator",
+        "Cuvinte de umplutură",
+        "Blind text generator",
+        "Generator de text înlocuitor",
         "Bacon Ipsum generator",
         "Cupcake Ipsum generator",
         "Pirate Ipsum generator",
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
-        "Business Ipsum generator",
-        "Dummy text generator"
+        "Business Ipsum generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Generator Lorem Ipsum gratuit — 8 stiluri: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business și altele. 9 moduri de generare. Copiați ca text sau HTML.",
+      "description": "Generator Lorem Ipsum gratuit cu 8 stiluri de text. Generați paragrafe, propoziții sau cuvinte, copiați în clipboard sau descărcați ca fișier .txt.",
       "featureList": [
         "Generare paragrafe Lorem Ipsum",
         "Generare propoziții individuale",
         "Generare cuvinte aleatorii",
-        "Generare liste numerotate și cu marcatori",
-        "Generare titluri H1–H6",
-        "Generare linkuri cu URL-uri exemplu",
-        "Generare tabele cu date aleatorii",
-        "Generare citate",
-        "Generare liste de definiții",
         "Lorem Ipsum — latină din De Finibus",
         "Hipster Ipsum — vocabular hipster",
         "Business Ipsum — jargon corporativ",
-        "Cuvinte de umplutură — cuvinte în limba locală",
-        "Bacon Ipsum — carne și grătar",
-        "Cupcake Ipsum — patiserie și dulciuri",
-        "Pirate Ipsum — vocabular pirat",
+        "Cuvinte de umplutură — cuvinte aleatorii în limba locală",
+        "Bacon Ipsum — vocabular culinar și de grătar",
+        "Cupcake Ipsum — vocabular de patiserie",
+        "Pirate Ipsum — text în stil pirat",
         "Legal Ipsum — terminologie juridică",
-        "Format de ieșire: text simplu sau HTML",
-        "Control lungime paragraf (scurt, mediu, lung)",
-        "Statistici: cuvinte, caractere, propoziții, paragrafe, timp de citire",
         "Copiere text în clipboard",
-        "Copiere cod HTML în clipboard",
-        "Descărcare ca fișier .txt",
+        "Descărcare rezultat ca fișier .txt",
         "Procesare locală în browser"
       ]
     },
     "howTo": {
       "name": "Cum să utilizați Generatorul Lorem Ipsum",
-      "description": "Generați text Lorem Ipsum în câteva secunde. Alegeți modul, stilul și formatul, apoi copiați sau descărcați rezultatul.",
+      "description": "Generați text de exemplu Lorem Ipsum în câteva secunde. Alegeți modul și stilul, apoi copiați sau descărcați rezultatul.",
       "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Alegeți un mod de generare",
-          "text": "Selectați unul din 9 moduri: paragrafe, propoziții, cuvinte, liste, titluri, linkuri, tabel, citate sau definiții. Setați cantitatea."
+          "name": "Alegeți modul de generare",
+          "text": "Alegeți paragrafe, propoziții sau cuvinte și setați cantitatea."
         },
         {
-          "name": "Alegeți un stil de text",
+          "name": "Alegeți stilul de text",
           "text": "Alegeți unul din 8 stiluri: Lorem Ipsum, Hipster, Business, Cuvinte de umplutură, Bacon, Cupcake, Pirate sau Legal Ipsum."
         },
         {
-          "name": "Setați formatul de ieșire",
-          "text": "Alegeți text simplu sau HTML cu taguri. Ajustați lungimea paragrafului după necesitate."
-        },
-        {
           "name": "Copiați sau descărcați rezultatul",
-          "text": "Apăsați Generează, apoi copiați textul, codul HTML sau descărcați un fișier .txt."
+          "text": "Apăsați Generează, apoi copiați textul în clipboard sau descărcați un fișier .txt."
         }
       ]
     }
@@ -96,7 +87,7 @@
     {
       "type": "sectionBasic",
       "title": "Ce este Lorem Ipsum și la ce se folosește",
-      "html": "<p class=\"text-mid\">Lorem Ipsum este textul de umplutură standard utilizat în industriile de tipografie, design grafic și dezvoltare web de peste 500 de ani. Textul provine din <em>De Finibus Bonorum et Malorum</em> (Despre limitele binelui și răului) scris de Marcus Tullius Cicero în 45 î.Hr. Pasajul original a fost modificat deliberat — cuvinte au fost adăugate, eliminate și rearanjate — astfel încât textul nu are sens, dar păstrează un ritm natural și o distribuție a literelor similară cu o limbă reală.</p><p class=\"text-mid mt-3\">Generatorul Lorem Ipsum vă permite să creați rapid orice cantitate de text de umplutură pentru machete, prototipuri de interfață, designuri grafice și teste de aranjare tipografică. Instrumentul oferă 9 moduri de generare (paragrafe, propoziții, cuvinte, liste, titluri, linkuri, tabele, citate, definiții), 8 stiluri de text și statistici în timp real.</p>",
+      "html": "<p class=\"text-mid\">Lorem Ipsum este textul de umplutură standard utilizat în industriile de tipografie, design grafic și dezvoltare web de peste 500 de ani. Textul provine din <em>De Finibus Bonorum et Malorum</em> (Despre limitele binelui și răului) scris de Marcus Tullius Cicero în 45 î.Hr. Pasajul original a fost modificat deliberat — cuvinte au fost adăugate, eliminate și rearanjate — astfel încât textul nu are sens, dar păstrează un ritm natural și o distribuție a literelor similară cu o limbă reală.</p><p class=\"text-mid mt-3\">Generatorul Lorem Ipsum vă permite să creați rapid orice cantitate de text de exemplu pentru machete, prototipuri de interfață, designuri grafice și teste de aranjare tipografică. Instrumentul generează paragrafe, propoziții sau cuvinte în 8 stiluri de text.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-ro.webp",
       "imageAlt": "Generator Lorem Ipsum — Arteon"
     },
@@ -107,28 +98,23 @@
     {
       "type": "sectionSteps",
       "title": "Cum să utilizați Generatorul Lorem Ipsum",
-      "description": "Generați text de umplutură în patru pași:",
-      "grid": "four",
+      "description": "Generați text de exemplu în trei pași:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "1. Alegeți un mod",
-          "description": "Selectați unul din 9 moduri: paragrafe, propoziții, cuvinte, liste, titluri, linkuri, tabel, citate sau definiții."
+          "title": "1. Alegeți modul și cantitatea",
+          "description": "Alegeți paragrafe, propoziții sau cuvinte și setați cantitatea."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "2. Alegeți un stil",
+          "title": "2. Alegeți stilul",
           "description": "8 stiluri: Lorem Ipsum, Hipster, Business, Cuvinte de umplutură, Bacon, Cupcake, Pirate și Legal — fiecare cu propriul dicționar."
         },
         {
-          "icon": "RiSettings3Line",
-          "title": "3. Ajustați opțiunile",
-          "description": "Setați lungimea paragrafului (scurt, mediu, lung) și formatul de ieșire (text simplu sau HTML cu taguri)."
-        },
-        {
           "icon": "RiFileCopyLine",
-          "title": "4. Copiați rezultatul",
-          "description": "Apăsați Generează, apoi copiați textul, HTML-ul sau descărcați un fișier .txt. Statisticile arată numărul de cuvinte și caractere."
+          "title": "3. Copiați rezultatul",
+          "description": "Apăsați Generează, apoi copiați textul în clipboard sau descărcați un fișier .txt."
         }
       ]
     },
@@ -147,14 +133,14 @@
     },
     {
       "type": "sectionSteps",
-      "title": "9 moduri de generare a conținutului",
-      "description": "Generatorul oferă 9 tipuri diferite de conținut — de la paragrafe clasice la tabele și definiții:",
+      "title": "3 moduri de generare a conținutului",
+      "description": "Generatorul oferă 3 tipuri de conținut:",
       "grid": "three",
       "items": [
         {
           "icon": "RiParagraph",
           "title": "Paragrafe",
-          "description": "Blocuri de text clasice cu lungime controlată (scurt, mediu, lung). Ideal pentru machete web, șabloane CMS și prototipuri de interfață."
+          "description": "Blocuri de text clasice. Ideal pentru machete web, șabloane CMS și prototipuri de interfață."
         },
         {
           "icon": "RiTextSnippet",
@@ -165,36 +151,6 @@
           "icon": "RiFontSize",
           "title": "Cuvinte",
           "description": "Cuvinte aleatorii individuale din dicționarul selectat. Ideal pentru etichete, categorii și testarea lungimii textului în componentele UI."
-        },
-        {
-          "icon": "RiListUnordered",
-          "title": "Liste",
-          "description": "Liste numerotate (text) sau &lt;ul&gt;&lt;li&gt; (HTML). Pentru meniuri de navigare, liste de funcționalități, specificații de produs și FAQ."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Titluri",
-          "description": "Titluri H1–H6 aleatorii în format Markdown sau HTML. Pentru testarea ierarhiei tipografice și structurii conținutului."
-        },
-        {
-          "icon": "RiLink",
-          "title": "Linkuri",
-          "description": "Linkuri cu text aleatoriu și URL-uri exemplu. În format Markdown sau &lt;a href&gt; HTML. Pentru prototiparea navigării și meniurilor."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Tabel",
-          "description": "Tabel cu anteturi și date aleatorii pe 3–5 coloane. Format Markdown sau &lt;table&gt; HTML. Pentru machete de prețuri și fișe tehnice."
-        },
-        {
-          "icon": "RiDoubleQuotesL",
-          "title": "Citate",
-          "description": "Blocuri de citat (blockquote) cu 1–3 propoziții. Pentru testarea stilurilor de citat, testimoniale și secțiuni de text evidențiat."
-        },
-        {
-          "icon": "RiBookOpenLine",
-          "title": "Definiții",
-          "description": "Perechi termen + descriere în &lt;dl&gt;&lt;dt&gt;&lt;dd&gt; HTML sau text. Pentru glosare, secțiuni FAQ și documentație."
         }
       ]
     },
@@ -350,23 +306,13 @@
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "9 moduri de generare",
-          "description": "Paragrafe, propoziții, cuvinte, liste, titluri, linkuri, tabele, citate și definiții — control total asupra cantității și formatului."
+          "title": "3 moduri de generare",
+          "description": "Paragrafe, propoziții și cuvinte — control total asupra cantității generate."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 stiluri unice de text",
           "description": "Lorem Ipsum, Hipster, Business, Cuvinte de umplutură, Bacon, Cupcake, Pirate și Legal. Fiecare stil are peste 90 de cuvinte."
-        },
-        {
-          "icon": "RiCodeSSlashLine",
-          "title": "Cod HTML gata de utilizare",
-          "description": "Generați text cu taguri HTML și copiați codul gata. Economisește timp la crearea prototipurilor web."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "Statistici de text",
-          "description": "Cuvinte, caractere, propoziții, paragrafe, timp de citire și dimensiune în bytes — vizibile imediat după generare."
         },
         {
           "icon": "RiUserLine",
@@ -425,19 +371,14 @@
           "answerSchemaText": "Variante tematice — Hipster folosește vocabular lifestyle, Business folosește jargon corporativ."
         },
         {
-          "question": "Cum generez Lorem Ipsum cu taguri HTML?",
-          "answer": "În setări, schimbați formatul din Text în HTML. Generatorul încadrează paragrafele cu &lt;p&gt; și listele cu &lt;ul&gt;&lt;li&gt;. Apăsați Copiază HTML. Codul poate fi lipit direct într-un editor HTML sau CMS.",
-          "answerSchemaText": "Schimbați formatul în HTML din setări, generați textul și apăsați Copiază HTML."
-        },
-        {
           "question": "Generatorul este gratuit și sigur?",
           "answer": "Da. Complet gratuit, fără înregistrare și fără limite. Totul este generat local în browser — nimic nu este trimis la un server. Fără tracking, fără cookie-uri, funcționează offline după încărcare.",
           "answerSchemaText": "Da — gratuit, fără înregistrare, procesare locală în browser, fără colectare de date."
         },
         {
           "question": "Câte cuvinte are un paragraf standard?",
-          "answer": "Depinde de setare: scurt (2–4 propoziții, aprox. 20–50 cuvinte), mediu (4–7 propoziții, aprox. 40–90 cuvinte), lung (7–12 propoziții, aprox. 70–150 cuvinte). Primul paragraf original al lui Cicero are aproximativ 69 de cuvinte.",
-          "answerSchemaText": "Scurt 20–50 cuvinte, mediu 40–90 cuvinte, lung 70–150 cuvinte."
+          "answer": "Paragraful generat are de obicei 4–7 propoziții, adică aproximativ 40–90 de cuvinte. Primul paragraf original al lui Cicero are aproximativ 69 de cuvinte și începe cu Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "answerSchemaText": "Paragraful generat are de obicei 4–7 propoziții, adică aproximativ 40–90 de cuvinte."
         }
       ]
     },

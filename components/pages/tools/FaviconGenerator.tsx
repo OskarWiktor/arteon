@@ -22,55 +22,11 @@ import {
   SUPPORTED_IMAGE_UPLOAD_TYPES,
 } from '@/lib/tools/image/uploadTypes';
 import { flexCenterBetweenClasses, flexCenterClasses } from '@/lib/uiClasses';
-import type { Locale } from '@/types/locale';
 import type { ToolStatus } from '@/types/tools/common';
 import { downloadFromUrl } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
 import { loadImage } from '@/utils/loadImage';
 import { revokeObjectUrl } from '@/utils/objectUrl';
-import { createZipBlob, type ZipFileInput } from '@/utils/zip';
-
-/**
- * Builds a web app manifest JSON string from generated favicon outputs.
- *
- * @param outputs - Generated favicon output entries; only entries with `type === 'png'` and a numeric `size` are included in the manifest's `icons` array.
- * @param backgroundColor - Color used for `theme_color` and `background_color` in the manifest.
- * @param locale - Locale selector for `name` and `short_name` (`'pl'` => Polish, `'de'` => German, any other value => English).
- * @returns A pretty-printed JSON string representing a web app manifest with `icons`, localized `name` and `short_name`, `theme_color`, `background_color`, and `display: 'standalone'`.
- */
-function createWebmanifest(
-  outputs: FaviconOutputFile[],
-  backgroundColor: string,
-  locale: Locale = 'pl',
-) {
-  const icons = outputs
-    .filter(o => o.type === 'png' && typeof o.size === 'number')
-    .map(o => ({
-      src: o.fileName,
-      sizes: `${o.size}x${o.size}`,
-      type: 'image/png',
-    }));
-
-  const MANIFEST_NAME: Partial<Record<Locale, string>> = {
-    pl: 'Twoja strona',
-    de: 'Ihre Website',
-  };
-  const MANIFEST_SHORT_NAME: Partial<Record<Locale, string>> = {
-    pl: 'Strona',
-    de: 'Seite',
-  };
-
-  const manifest = {
-    name: MANIFEST_NAME[locale] ?? 'Your website',
-    short_name: MANIFEST_SHORT_NAME[locale] ?? 'Site',
-    icons,
-    theme_color: backgroundColor,
-    background_color: backgroundColor,
-    display: 'standalone',
-  };
-
-  return JSON.stringify(manifest, null, 2);
-}
 
 const PNG_SIZES = [16, 32, 180, 192, 512];
 
@@ -91,17 +47,10 @@ export default function FaviconGenerator() {
   const [status, setStatus] = useState<ToolStatus>('idle');
   const [error, setError] = useState<string | null>(null);
 
-  const [selectedSizes, setSelectedSizes] = useState<number[]>([
-    16, 32, 180, 192, 512,
-  ]);
-  const [includeIco, setIncludeIco] = useState(true);
   const [transparentBackground, setTransparentBackground] = useState(false);
   const [backgroundColor, setBackgroundColor] = useState(
     DEFAULT_BACKGROUND_COLOR,
   );
-  const [includeWebmanifest, setIncludeWebmanifest] = useState(false);
-  const [autoDownload, setAutoDownload] = useState(false);
-  const [isZipping, setIsZipping] = useState(false);
 
   const [outputs, setOutputs] = useState<FaviconOutputFile[]>([]);
 
@@ -137,26 +86,12 @@ export default function FaviconGenerator() {
     setSourcePreviewUrl(preview);
   }
 
-  function toggleSize(size: number) {
-    setSelectedSizes(prev => {
-      if (prev.includes(size)) {
-        return prev.filter(s => s !== size);
-      }
-      return [...prev, size].sort((a, b) => a - b);
-    });
-  }
-
   async function handleGenerate(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
     setError(null);
 
     if (!sourceFile || !sourcePreviewUrl) {
       setError(t.addBaseImage);
-      return;
-    }
-
-    if (!selectedSizes.length && !includeIco) {
-      setError(t.selectAtLeastOne);
       return;
     }
 
@@ -174,18 +109,13 @@ export default function FaviconGenerator() {
 
       const newOutputs = await generateFaviconOutputs({
         img,
-        pngSizes: selectedSizes,
-        includeIco,
+        pngSizes: PNG_SIZES,
+        includeIco: true,
         backgroundColor,
         transparentBackground,
         faviconIcoLabel: t.faviconIcoLabel,
         canvasNotSupportedErrorMessage: t.canvasNotSupported,
         pngGenerationErrorMessage: t.pngGenerationError,
-        onOutput: output => {
-          if (autoDownload) {
-            downloadFromUrl(output.url, output.fileName);
-          }
-        },
       });
 
       setOutputs(newOutputs);
@@ -194,40 +124,6 @@ export default function FaviconGenerator() {
       console.error(err);
       setStatus('error');
       setError(err instanceof Error ? err.message : t.unexpectedError);
-    }
-  }
-
-  async function handleDownloadZip() {
-    if (!outputs.length) return;
-
-    setError(null);
-    setIsZipping(true);
-
-    try {
-      const files: ZipFileInput[] = [];
-
-      for (const output of outputs) {
-        const res = await fetch(output.url);
-        const blob = await res.blob();
-        const buffer = await blob.arrayBuffer();
-        files.push({ path: output.fileName, data: new Uint8Array(buffer) });
-      }
-
-      if (includeWebmanifest) {
-        const manifest = createWebmanifest(outputs, backgroundColor, locale);
-        const manifestBytes = new TextEncoder().encode(manifest);
-        files.push({ path: 'site.webmanifest', data: manifestBytes });
-      }
-
-      const zipBlob = createZipBlob(files);
-      const zipUrl = URL.createObjectURL(zipBlob);
-      downloadFromUrl(zipUrl, 'favicons.zip');
-      setTimeout(() => revokeObjectUrl(zipUrl), 2000);
-    } catch (err) {
-      console.error(err);
-      setError(t.zipGenerationError);
-    } finally {
-      setIsZipping(false);
     }
   }
 
@@ -290,36 +186,7 @@ export default function FaviconGenerator() {
             <div>
               <h3 className='h6 mt-8 mb-2'>{t.setSizesAndBackground}</h3>
 
-              <ToolInfo>
-                <p className='tool-value mb-2!'>{t.pngSizes}</p>
-                <div className='flex flex-wrap gap-2'>
-                  {PNG_SIZES.map(size => {
-                    const checked = selectedSizes.includes(size);
-                    return (
-                      <label
-                        key={size}
-                        htmlFor={`size-${size}`}
-                        className={cn(
-                          'inline-flex cursor-pointer items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium',
-                          checked
-                            ? 'border-black bg-primary text-white'
-                            : 'border-neutral-200 bg-white hover:bg-neutral-100',
-                        )}
-                      >
-                        <InputCheckboxWithLabel
-                          id={`size-${size}`}
-                          checked={checked}
-                          onChange={() => toggleSize(size)}
-                          label={''}
-                        />
-                        {size}x{size}
-                      </label>
-                    );
-                  })}
-                </div>
-              </ToolInfo>
-
-              <ToolInfo className='mt-4 gap-2'>
+              <ToolInfo className='gap-2'>
                 <InputCheckboxWithLabel
                   id='transparent-bg'
                   checked={transparentBackground}
@@ -336,27 +203,6 @@ export default function FaviconGenerator() {
                     className='h-8! w-7!'
                   />
                 </div>
-              </ToolInfo>
-
-              <ToolInfo className='mt-4 flex flex-wrap items-center gap-2'>
-                <InputCheckboxWithLabel
-                  id='include-ico'
-                  checked={includeIco}
-                  onChange={setIncludeIco}
-                  label={t.generateFaviconIco}
-                />
-                <InputCheckboxWithLabel
-                  id='include-webmanifest'
-                  checked={includeWebmanifest}
-                  onChange={setIncludeWebmanifest}
-                  label={t.includeWebmanifest}
-                />
-                <InputCheckboxWithLabel
-                  id='auto-download'
-                  checked={autoDownload}
-                  onChange={setAutoDownload}
-                  label={t.autoDownload}
-                />
               </ToolInfo>
             </div>
 
@@ -383,15 +229,6 @@ export default function FaviconGenerator() {
                   {t.downloadAll}
                 </Button>
                 <Button
-                  onClick={handleDownloadZip}
-                  type='button'
-                  size='small'
-                  disabled={!anyOutputs || isProcessing || isZipping}
-                  className='disabled:opacity-40'
-                >
-                  {t.downloadZip}
-                </Button>
-                <Button
                   onClick={handleClear}
                   type='button'
                   size='small'
@@ -405,11 +242,6 @@ export default function FaviconGenerator() {
               {status === 'processing' && (
                 <ToolAlert variant='info' className='mt-2'>
                   {t.processing}
-                </ToolAlert>
-              )}
-              {isZipping && (
-                <ToolAlert variant='info' className='mt-2'>
-                  {t.zipping}
                 </ToolAlert>
               )}
               {status === 'done' && !error && (

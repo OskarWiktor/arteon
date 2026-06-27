@@ -3,13 +3,13 @@
   "locale": "en",
   "metadata": {
     "title": "Lorem Ipsum Generator — dummy text, paragraphs, sentences & random words",
-    "description": "Free Lorem Ipsum generator — 8 styles: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business & more. 9 generation modes. Copy as text or HTML.",
+    "description": "Free Lorem Ipsum generator — 8 styles: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business & more. Generate paragraphs, sentences or words and copy or download the result.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-en.webp",
     "path": "/tools/lorem-ipsum-generator"
   },
   "hero": {
     "title": "Lorem Ipsum Generator — dummy text, paragraphs, sentences & random words",
-    "description": "8 text styles: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal and English filler. 9 modes: paragraphs, sentences, words, lists, headings, links, tables, blockquotes, definitions. Copy or download in one click.",
+    "description": "8 text styles: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal and English filler. Generate paragraphs, sentences or words and copy or download the result in one click.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-en.webp"
   },
   "breadcrumbs": {
@@ -36,17 +36,11 @@
         "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free Lorem Ipsum generator — 8 styles: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business & more. 9 generation modes. Copy as text or HTML.",
+      "description": "Free Lorem Ipsum generator with 8 text styles. Generate paragraphs, sentences or words, copy to clipboard or download as a .txt file.",
       "featureList": [
         "Generate lorem ipsum paragraphs",
         "Generate individual sentences",
         "Generate random words",
-        "Generate numbered and bulleted lists",
-        "Generate H1–H6 headings",
-        "Generate links with placeholder URLs",
-        "Generate tables with random data",
-        "Generate blockquotes",
-        "Generate definition lists",
         "Lorem Ipsum — Latin from De Finibus",
         "Hipster Ipsum — hipster culture vocabulary",
         "Business Ipsum — corporate jargon",
@@ -55,35 +49,27 @@
         "Cupcake Ipsum — bakery & sweets",
         "Pirate Ipsum — pirate vocabulary",
         "Legal Ipsum — legal terminology",
-        "Output format: plain text or HTML",
-        "Paragraph length control (short, medium, long)",
-        "Statistics: words, characters, sentences, paragraphs, reading time",
         "Copy text to clipboard",
-        "Copy HTML code to clipboard",
         "Download as .txt file",
         "Local processing in the browser"
       ]
     },
     "howTo": {
       "name": "How to use the Lorem Ipsum Generator",
-      "description": "Generate Lorem Ipsum dummy text in seconds. Choose mode, style and format, then copy or download the result.",
+      "description": "Generate Lorem Ipsum dummy text in seconds. Choose mode and style, then copy or download the result.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Choose a generation mode",
-          "text": "Select one of 9 modes: paragraphs, sentences, words, lists, headings, links, table, blockquotes or definitions. Set the count."
+          "text": "Select paragraphs, sentences or words and set the count."
         },
         {
           "name": "Choose a text style",
           "text": "Pick one of 8 styles: Lorem Ipsum, Hipster, Business, English filler, Bacon, Cupcake, Pirate or Legal Ipsum."
         },
         {
-          "name": "Set the output format",
-          "text": "Choose plain text or HTML with tags. Adjust paragraph length as needed."
-        },
-        {
           "name": "Copy or download the result",
-          "text": "Click Generate, then copy text to clipboard, copy HTML code or download a .txt file."
+          "text": "Click Generate, then copy the text to clipboard or download a .txt file."
         }
       ]
     }
@@ -96,7 +82,7 @@
     {
       "type": "sectionBasic",
       "title": "What is Lorem Ipsum and what is it used for",
-      "html": "<p class=\"text-mid\">Lorem Ipsum is the standard placeholder text used in the printing, graphic design and web development industries for over 500 years. The text originates from <em>De Finibus Bonorum et Malorum</em> (On the Ends of Good and Evil) written by Marcus Tullius Cicero in 45 BC. The original passage was deliberately altered — words were added, removed and rearranged — so the text has no meaning but retains a natural rhythm and letter distribution similar to real language.</p><p class=\"text-mid mt-3\">The Lorem Ipsum Generator lets you quickly create any amount of dummy text for mockups, UI prototypes, graphic designs and typographic layout testing. The tool offers 9 generation modes (paragraphs, sentences, words, lists, headings, links, tables, blockquotes, definitions), 8 text styles and real-time statistics.</p>",
+      "html": "<p class=\"text-mid\">Lorem Ipsum is the standard placeholder text used in the printing, graphic design and web development industries for over 500 years. The text originates from <em>De Finibus Bonorum et Malorum</em> (On the Ends of Good and Evil) written by Marcus Tullius Cicero in 45 BC. The original passage was deliberately altered — words were added, removed and rearranged — so the text has no meaning but retains a natural rhythm and letter distribution similar to real language.</p><p class=\"text-mid mt-3\">The Lorem Ipsum Generator lets you quickly create any amount of dummy text for mockups, UI prototypes, graphic designs and typographic layout testing. The tool generates paragraphs, sentences or words in 8 text styles.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-en.webp",
       "imageAlt": "Lorem Ipsum Generator — Arteon"
     },
@@ -107,13 +93,13 @@
     {
       "type": "sectionSteps",
       "title": "How to use the Lorem Ipsum Generator",
-      "description": "Generate placeholder text in four steps:",
-      "grid": "four",
+      "description": "Generate placeholder text in three steps:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "1. Choose a mode",
-          "description": "Select one of 9 modes: paragraphs, sentences, words, lists, headings, links, table, blockquotes or definitions."
+          "title": "1. Choose a mode and count",
+          "description": "Select paragraphs, sentences or words and set the count."
         },
         {
           "icon": "RiPaletteLine",
@@ -121,14 +107,9 @@
           "description": "8 styles: Lorem Ipsum, Hipster, Business, English filler, Bacon, Cupcake, Pirate and Legal — each with its own word bank."
         },
         {
-          "icon": "RiSettings3Line",
-          "title": "3. Adjust options",
-          "description": "Set paragraph length (short, medium, long) and output format (plain text or HTML with tags)."
-        },
-        {
           "icon": "RiFileCopyLine",
-          "title": "4. Copy the result",
-          "description": "Click Generate, then copy text, copy HTML or download a .txt file. Statistics show word and character counts."
+          "title": "3. Copy the result",
+          "description": "Click Generate, then copy the text to clipboard or download a .txt file."
         }
       ]
     },
@@ -147,14 +128,14 @@
     },
     {
       "type": "sectionSteps",
-      "title": "9 content generation modes",
-      "description": "The generator offers 9 different content types — from classic paragraphs to tables and definitions:",
+      "title": "3 modes of content generation",
+      "description": "The generator offers 3 content types:",
       "grid": "three",
       "items": [
         {
           "icon": "RiParagraph",
           "title": "Paragraphs",
-          "description": "Classic text blocks with controlled length (short, medium, long). Ideal for website mockups, CMS templates and UI prototypes."
+          "description": "Classic text blocks. Ideal for website mockups, CMS templates and UI prototypes."
         },
         {
           "icon": "RiTextSnippet",
@@ -165,36 +146,6 @@
           "icon": "RiFontSize",
           "title": "Words",
           "description": "Random individual words from the selected bank. Ideal for tags, labels, category names and testing text length in UI components."
-        },
-        {
-          "icon": "RiListUnordered",
-          "title": "Lists",
-          "description": "Numbered lists (text) or &lt;ul&gt;&lt;li&gt; (HTML). For navigation menus, feature lists, product specs and FAQ items."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Headings",
-          "description": "Random H1–H6 headings in Markdown or HTML format. For testing typographic hierarchy and content structure."
-        },
-        {
-          "icon": "RiLink",
-          "title": "Links",
-          "description": "Links with random text and sample URLs. In Markdown or &lt;a href&gt; HTML format. For prototyping navigation and menus."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Table",
-          "description": "Table with random headers and data in 3–5 columns. Markdown or &lt;table&gt; HTML format. For pricing mockups and spec sheets."
-        },
-        {
-          "icon": "RiDoubleQuotesL",
-          "title": "Blockquotes",
-          "description": "Quote blocks (blockquote) with 1–3 sentences. For testing quote styles, testimonials and highlighted text sections."
-        },
-        {
-          "icon": "RiBookOpenLine",
-          "title": "Definitions",
-          "description": "Term + description pairs in &lt;dl&gt;&lt;dt&gt;&lt;dd&gt; HTML or text. For glossaries, FAQ sections and documentation."
         }
       ]
     },
@@ -350,23 +301,13 @@
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "9 content generation modes",
-          "description": "Paragraphs, sentences, words, lists, headings, links, tables, blockquotes and definitions — full control over count and format."
+          "title": "3 content generation modes",
+          "description": "Paragraphs, sentences and words — full control over the count."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 unique text styles",
           "description": "Lorem Ipsum, Hipster, Business, English filler, Bacon, Cupcake, Pirate and Legal. Each style has its own bank of 90+ words."
-        },
-        {
-          "icon": "RiCodeSSlashLine",
-          "title": "Ready-made HTML code",
-          "description": "Generate text with HTML tags and copy the ready code. Saves time when building website prototypes."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "Text statistics",
-          "description": "Words, characters, sentences, paragraphs, reading time and size in bytes — visible immediately after generation."
         },
         {
           "icon": "RiUserLine",
@@ -425,19 +366,14 @@
           "answerSchemaText": "Thematic Lorem Ipsum variants — Hipster uses lifestyle vocabulary, Business uses corporate jargon."
         },
         {
-          "question": "How do I generate Lorem Ipsum with HTML tags?",
-          "answer": "In the generator settings, change the output format from Text to HTML. The generator will automatically wrap paragraphs in &lt;p&gt; tags and lists in &lt;ul&gt;&lt;li&gt;. Then click Copy HTML to copy the tagged code to clipboard. The ready code can be pasted directly into an HTML editor or CMS.",
-          "answerSchemaText": "Change the format to HTML in settings, generate text and click Copy HTML."
-        },
-        {
           "question": "Is the generator free and safe?",
           "answer": "Yes. The Lorem Ipsum Generator is completely free, with no registration and no limits. All text is generated locally in your browser — nothing is sent to a server. The tool does not collect personal data, does not use tracking cookies and works offline after the page loads.",
           "answerSchemaText": "Yes — free, no registration, local browser processing, no data collection."
         },
         {
           "question": "How many words does a standard Lorem Ipsum paragraph have?",
-          "answer": "In our generator, paragraph length depends on the chosen setting: short (2–4 sentences, approx. 20–50 words), medium (4–7 sentences, approx. 40–90 words), long (7–12 sentences, approx. 70–150 words). The original first paragraph of Lorem Ipsum from Cicero has about 69 words and starts with Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "answerSchemaText": "Depends on setting: short 20–50 words, medium 40–90 words, long 70–150 words."
+          "answer": "The generated paragraph usually has 4–7 sentences, around 40–90 words. The original first paragraph of Lorem Ipsum from Cicero has about 69 words and starts with Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "answerSchemaText": "The generated paragraph usually has 4–7 sentences, around 40–90 words."
         }
       ]
     },

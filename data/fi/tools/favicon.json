@@ -41,8 +41,7 @@
         "PWA-kuvakkeiden 192x192 ja 512x512 luominen",
         "PNG-, JPG- ja SVG-lähdekuvien tuki",
         "Taustavärin määritys",
-        "Manifest.json-tiedoston luominen PWA:lle",
-        "Kaikkien tiedostojen lataus ZIP-pakettina",
+        "Kaikkien tiedostojen lataus yhdellä painikkeella",
         "Yksittäisten tiedostojen lataus",
         "Lighthouse-yhteensopiva",
         "Käsittely selaimessa (tiedostoja ei lähetetä palvelimelle)",
@@ -56,19 +55,15 @@
       "steps": [
         {
           "name": "Lataa kuva",
-          "text": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi. Tuetut muodot ovat JPG, PNG, SVG ja WebP."
+          "text": "Vedä ja pudota tiedosto merkittyyn alueeseen tai valitse se laitteeltasi. Tuetut muodot ovat JPG, PNG ja SVG."
         },
         {
-          "name": "Rajaa kuva",
-          "text": "Säädä rajausaluetta valitaksesi kuvan sopivan osan faviconiksi."
+          "name": "Aseta tausta",
+          "text": "Valitse kuvakkeen taustaväri tai jätä tausta läpinäkyväksi."
         },
         {
-          "name": "Tarkista esikatselu",
-          "text": "Katso, miltä favicon näyttää selaimen välilehdessä ja eri ko'oissa."
-        },
-        {
-          "name": "Lataa kuvakkeet",
-          "text": "Lataa favicon.ico ja täydellinen PNG-kuvakesarja ZIP-tiedostona."
+          "name": "Luo ja lataa kuvakkeet",
+          "text": "Työkalu luo favicon.ico-tiedoston ja täydellisen PNG-kuvakesarjan (16x16, 32x32, 180x180, 192x192, 512x512). Lataa kaikki tiedostot yhdellä painikkeella tai erikseen."
         }
       ]
     }
@@ -101,13 +96,13 @@
           "icon": "RiImageLine"
         },
         {
-          "title": "2. Rajaa ja säädä",
-          "description": "Säädä rajausaluetta valitaksesi kuvan sopivan osan. Katso, miltä se näyttää eri ko'oissa.",
+          "title": "2. Aseta taustaväri",
+          "description": "Valitse kuvakkeen taustaväri tai jätä tausta läpinäkyväksi.",
           "icon": "RiAspectRatioLine"
         },
         {
           "title": "3. Lataa kuvakkeet",
-          "description": "Lataa favicon.ico ja täydellinen PNG-kuvakesarja ZIP-tiedostona. Kaikki kuvakkeet ovat valmiita käytettäviksi.",
+          "description": "Lataa favicon.ico ja täydellinen PNG-kuvakesarja yhdellä painikkeella tai erikseen. Kaikki kuvakkeet ovat valmiita käytettäviksi.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -119,7 +114,7 @@
     {
       "type": "sectionInfo",
       "title": "Mitkä kuvakkeet generaattori luo?",
-      "html": "<p class=\"text-mid mb-6\">Jokaisella koolla on oma käyttötarkoituksensa:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Klassinen muoto, jonka kaikki selaimet tunnistavat. Näkyy selaimen välilehdessä.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 ja 32×32 PNG</p><p class=\"text-mid text-sm\">Vakiokoot nykyaikaisille selaimille. Näkyvät välilehdissä ja kirjanmerkeissä.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Kuvake Apple-laitteille (iPhone, iPad). Näkyy aloitusnäytöllä, kun sivu lisätään.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 ja 512×512 PNG</p><p class=\"text-mid text-sm\">Kuvakkeet verkkosovelluksille (PWA). Manifestin vaatimia ja sovelluskauppojen käyttämiä.</p></div></div><p class=\"text-light mt-6\">Jos et rakenna PWA:ta, riittävät: favicon.ico, 32×32 PNG ja 180×180 PNG. Nämä kolme tiedostoa kattavat useimmat käyttötapausten.</p>"
+      "html": "<p class=\"text-mid mb-6\">Jokaisella koolla on oma käyttötarkoituksensa:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Klassinen muoto, jonka kaikki selaimet tunnistavat. Näkyy selaimen välilehdessä.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 ja 32×32 PNG</p><p class=\"text-mid text-sm\">Vakiokoot nykyaikaisille selaimille. Näkyvät välilehdissä ja kirjanmerkeissä.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Kuvake Apple-laitteille (iPhone, iPad). Näkyy aloitusnäytöllä, kun sivu lisätään.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 ja 512×512 PNG</p><p class=\"text-mid text-sm\">Kuvakkeet verkkosovelluksille (PWA), käytetään myös sovelluskaupoissa.</p></div></div><p class=\"text-light mt-6\">Jos et rakenna PWA:ta, riittävät: favicon.ico, 32×32 PNG ja 180×180 PNG. Nämä kolme tiedostoa kattavat useimmat käyttötapausten.</p>"
     },
     {
       "type": "gap",
@@ -159,7 +154,7 @@
     {
       "type": "sectionSteps",
       "title": "Miten favicon-generaattoria käytetään?",
-      "description": "Generaattori ohjaa sinut koko prosessin läpi vaihe vaiheelta:",
+      "description": "Faviconin luominen sujuu muutamassa yksinkertaisessa vaiheessa:",
       "grid": "two",
       "items": [
         {
@@ -168,19 +163,14 @@
           "description": "<div><p class=\"mb-2\">Vedä tiedosto merkitylle alueelle tai valitse kuva tietokoneeltasi.</p><p class=\"text-light\">Tuetut muodot: PNG, JPG, SVG. Yksinkertainen logo tai kuvake vähintään 512×512 pikseliä toimii parhaiten.</p></div>"
         },
         {
-          "icon": "RiLayoutGridLine",
-          "title": "2. Valitse kuvakekoot",
-          "description": "<div><p class=\"mb-2\">Valitse tarvitsemasi kuvakekoot.</p><p class=\"text-light\">Voit valita kaikki tai vain osan. Tavalliselle verkkosivulle riittää: favicon.ico, 32×32 ja 180×180.</p></div>"
-        },
-        {
           "icon": "RiSettings3Line",
-          "title": "3. Aseta luontiasetukset",
-          "description": "<div><p class=\"mb-2\">Määritä lisäasetukset:</p><ul class=\"text-light list-disc pl-5\"><li><strong>Tausta</strong> – läpinäkyvä tai valittu väri</li><li><strong>Manifesti</strong> – PWA-konfiguraatiotiedosto</li><li><strong>Automaattinen lataus</strong> – tiedostot ladataan heti luonnin jälkeen</li></ul></div>"
+          "title": "2. Aseta taustaväri",
+          "description": "<div><p class=\"mb-2\">Valitse kuvakkeen tausta.</p><p class=\"text-light\"><strong>Tausta</strong> – läpinäkyvä tai valittu väri.</p></div>"
         },
         {
           "icon": "RiDownloadLine",
-          "title": "4. Luo ja lataa tiedostot",
-          "description": "<div><p class=\"mb-2\">Luonnin jälkeen työkalu käsittelee kuvan paikallisesti – mitään ei lähetetä palvelimelle.</p><p class=\"text-light\">Lataa kaikki tiedostot ZIP-arkistona tai lataa yksittäiset kuvakkeet erikseen.</p></div>"
+          "title": "3. Luo ja lataa tiedostot",
+          "description": "<div><p class=\"mb-2\">Luonnin jälkeen työkalu käsittelee kuvan paikallisesti – mitään ei lähetetä palvelimelle.</p><p class=\"text-light\">Lataa kaikki tiedostot yhdellä painikkeella tai lataa yksittäiset kuvakkeet erikseen.</p></div>"
         }
       ]
     },
@@ -190,9 +180,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "Luontiasetukset – mitä kukin tekee?",
-      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG-koot</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Läpinäkyvä tausta (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Taustaväri:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
-      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Tausta (läpinäkyvä tai väri)</h3><p class=\"text-mid\">Oletusarvoisesti generaattori säilyttää läpinäkyvyyden. Voit myös valita tietyn taustavärin.</p></div><div><h3 class=\"h5 mb-2\">Luo manifesti (site.webmanifest)</h3><p class=\"text-mid\">JSON-konfiguraatiotiedosto verkkosovelluksille (PWA). Jos et luo PWA:ta, tämä asetus ei ole tarpeen.</p></div></div>"
+      "title": "Luontiasetus – mitä se tekee?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Läpinäkyvä tausta (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Taustaväri:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Tausta (läpinäkyvä tai väri)</h3><p class=\"text-mid\">Oletusarvoisesti generaattori säilyttää läpinäkyvyyden. Voit myös valita tietyn taustavärin.</p></div></div>"
     },
     {
       "type": "gap",
@@ -206,8 +196,8 @@
       "items": [
         {
           "icon": "RiFolderZipLine",
-          "title": "Lataa kaikki ZIP-tiedostona",
-          "description": "Lataa kaikki -painike pakkaa kaikki luodut tiedostot yhteen ZIP-arkistoon. Kätevin vaihtoehto, kun tarvitset täydellisen kuvakesarjan."
+          "title": "Lataa kaikki yhdellä painikkeella",
+          "description": "Lataa-painike tallentaa koneellesi kaikki luodut tiedostot kerralla. Kätevin vaihtoehto, kun tarvitset täydellisen kuvakesarjan."
         },
         {
           "icon": "RiFileDownloadLine",
@@ -326,8 +316,13 @@
         },
         {
           "question": "Miten favicon lisätään verkkosivulle?",
-          "answer": "Sijoita kuvaketiedostot verkkosivuston juurikansioon ja lisää asianmukaiset HTML-tunnisteet sivun &lt;head&gt;-osioon. Ladattu ZIP-tiedosto sisältää käyttöönotto-ohjeet.",
+          "answer": "Sijoita kuvaketiedostot verkkosivuston juurikansioon ja lisää asianmukaiset HTML-tunnisteet sivun &lt;head&gt;-osioon.",
           "answerSchemaText": "Sijoita kuvaketiedostot juurikansioon ja lisää HTML-tunnisteet head-osioon."
+        },
+        {
+          "question": "Voinko luoda vain favicon.ico-tiedoston ilman muita kuvakkeita?",
+          "answer": "Työkalu luo aina täydellisen sarjan: favicon.ico ja PNG-kuvakkeet 16x16, 32x32, 180x180, 192x192 ja 512x512. Luomisen jälkeen voit ladata vain tarvitsemasi tiedostot - jokaisella kuvakkeella on oma latauspainikkeensa.",
+          "answerSchemaText": "Työkalu luo aina koko sarjan, mutta voit ladata vain tarvitsemasi tiedostot erikseen."
         }
       ]
     },

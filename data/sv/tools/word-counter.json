@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "sv",
   "metadata": {
-    "title": "Ord-, tecken- och läsetidsräknare med textformatering",
-    "description": "Gratis räknare för ord, tecken, meningar, stycken och lästid med versalkonverterare. Kontrollera textlängden och ändra bokstäver.",
+    "title": "Gratis räknare för ord och tecken, meningar, stavelser och lästid",
+    "description": "Klistra in text och verktyget räknar ord, tecken, meningar, stavelser, lästid och bedömer textens läsbarhet. Gratis ord- och teckenräknare.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp",
     "path": "/sv/verktyg/ord-och-teckenraknare"
   },
   "hero": {
-    "title": "Räkna ord och tecken – kontrollera lästid och formatera text",
-    "description": "Klistra in din text och verktyget räknar ord, tecken, meningar, stycken, unika ord och lästid. Ändra versaler eller ta bort dubbletter",
+    "title": "Gratis räknare för ord och tecken, meningar, stavelser och lästid",
+    "description": "Klistra in text och verktyget räknar ord, tecken, meningar, stavelser, lästid och bedömer textens läsbarhet. Gratis ord- och teckenräknare.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,60 +24,48 @@
   },
   "schemas": {
     "software": {
-      "name": "Ord-, tecken- och läsetidsräknare med textformatering",
+      "name": "Ord-, tecken- och läsetidsräknare",
       "alternateName": [
         "Ordräknare",
         "Teckenräknare med och utan mellanslag",
         "Ordräkningsverktyg för copywriters",
         "Lästidskalkylator",
-        "Versalkonverterare",
         "Flesch-Kincaid läsbarhetskontroll",
         "Stavelseräknare",
         "Taltidskalkylator",
         "Läsbarhetsverktyg",
-        "Ta bort dubbletter från text",
         "Gratis ord- och teckenräknare"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis ord- och teckenräknare med textformateringsverktyg. Räknar ord, tecken, meningar, stycken, unika ord och lästid. Erbjuder 7 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader och dubbletter.",
+      "description": "Gratis ord- och teckenräknare. Räknar ord, tecken, meningar, stavelser och lästid, samt bedömer textens läsbarhet.",
       "featureList": [
         "Räkning av ord",
         "Räkning av tecken med och utan mellanslag",
-        "Räkning av meningar och stycken",
-        "Räkning av unika ord",
-        "Genomsnittlig ordlängd",
+        "Räkning av meningar",
         "Uppskattad lästid",
         "Uppskattad taltid",
         "Stavelseräkning",
         "Flesch-Kincaid läsbarhetspoäng",
         "Språkspecifika läsbarhetsformler (16 språk)",
-        "Konvertera till versaler eller gemener",
-        "Konvertera till menings- eller titelstil",
-        "Ta bort överflödiga mellanslag",
-        "Ta bort tomma rader och dubbletter",
         "Kopiera text till urklipp"
       ]
     },
     "howTo": {
       "name": "Hur du använder ord- och teckenräknaren",
-      "description": "Analysera och formatera text i tre steg:",
+      "description": "Räkna ord, tecken, stavelser och meningar. Kontrollera Flesch-Kincaid läsbarhet, lästid och taltid.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Klistra in text",
-          "text": "Klistra in eller skriv text. Verktyget räknar direkt ord, tecken, meningar, stycken och unika ord."
+          "text": "Klistra in eller skriv text i textfältet. Verktyget räknar direkt ord, tecken, meningar och uppskattar lästiden."
         },
         {
           "name": "Kontrollera statistik",
-          "text": "I vansterpanelen ser du 11 matvarden: ord, tecken med och utan mellanslag, meningar, stycken, unika ord, ordlangd, lastid, taltid, stavelser och Flesch-Kincaid poang."
-        },
-        {
-          "name": "Transformera text",
-          "text": "Under textfältet hittar du 7 transformationsverktyg."
+          "text": "I vänsterpanelen ser du 8 textmätvärden: ord, tecken med och utan mellanslag, meningar, lästid, taltid, stavelser och Flesch-Kincaid läsbarhetspoäng."
         },
         {
           "name": "Kopiera resultatet",
-          "text": "Klicka på Kopiera text. Använd Rensa för att börja om."
+          "text": "Klicka på Kopiera text för att föra över texten till urklipp. Använd Rensa för att börja om."
         }
       ]
     }
@@ -89,8 +77,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Gratis ord- och teckenräknare med textverktyg",
-      "html": "<p class=\"text-mid\">Det här verktyget kombinerar en ord- och teckenräknare med Flesch-Kincaid läsbarhetsanalys och textformateringsverktyg. Klistra in din text för att se ord, tecken, stavelser, meningar, stycken, unika ord, lästid, taltid och en färgkodad läsbarhetspoäng.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid läsbarhetspoäng</strong> (0–100) visar hur lätt texten är att läsa. Poäng över 70 innebär lättläst text, under 30 akademisk nivå.</p><p class=\"text-mid mt-3\">Under textfältet finns 7 verktyg: versalkonvertering, borttagning av mellanslag, tomma rader och dubbletter. All bearbetning sker lokalt i webbläsaren.</p>",
+      "title": "Gratis ord- och teckenräknare",
+      "html": "<p class=\"text-mid\">Det här verktyget kombinerar en ord- och teckenräknare med Flesch-Kincaid läsbarhetsanalys. Klistra in din text för att se ord, tecken, stavelser, meningar, lästid, taltid och en färgkodad läsbarhetspoäng.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid läsbarhetspoäng</strong> (0–100) visar hur lätt texten är att läsa. Poäng över 70 innebär lättläst text, under 30 akademisk nivå. Verktyget använder formler anpassade till 16 språk.</p><p class=\"text-mid mt-3\">All analys och bearbetning sker lokalt i webbläsaren.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-och-teckenraknare-sv.webp",
       "imageAlt": "Ord- och teckenräknare – Arteon"
     },
@@ -101,28 +89,23 @@
     {
       "type": "sectionSteps",
       "title": "Hur du använder ord- och teckenräknaren",
-      "description": "Analysera och formatera text i tre steg:",
-      "grid": "four",
+      "description": "Analysera text i tre steg:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Klistra in text",
-          "description": "Klistra in eller skriv text. Verktyget räknar direkt ord, tecken, meningar, stycken och unika ord."
+          "description": "Klistra in eller skriv text i fältet. Verktyget räknar direkt ord, tecken, meningar och uppskattar lästiden."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Kontrollera statistik",
-          "description": "I vänsterpanelen ser du 11 mätvärden: ord, tecken med och utan mellanslag, meningar, stycken, unika ord, ordlängd, lästid, taltid, stavelser och Flesch-Kincaid poäng."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Transformera text",
-          "description": "Under textfältet hittar du 7 transformationsverktyg."
+          "description": "I vänsterpanelen ser du 8 textmätvärden: ord, tecken med och utan mellanslag, meningar, lästid, taltid, stavelser och Flesch-Kincaid läsbarhetspoäng."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Kopiera resultatet",
-          "description": "Klicka på Kopiera text. Använd Rensa för att börja om."
+          "title": "3. Kopiera resultatet",
+          "description": "Klicka på Kopiera text för att föra över texten till urklipp. Använd Rensa för att börja om."
         }
       ]
     },
@@ -145,8 +128,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 textmätvärden – vad räknaren mäter",
-      "description": "Räknaren analyserar din text med elva indikatorer:",
+      "title": "8 textmätvärden – vad räknaren mäter",
+      "description": "Räknaren analyserar din text med åtta indikatorer:",
       "grid": "two",
       "items": [
         {
@@ -168,21 +151,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Meningar",
           "description": "Antal meningar i texten. Hjälper till att bedöma komplexitet och läsbarhet - kortare meningar är lättare att ta till sig."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Stycken",
-          "description": "Textblock separerade med tomma rader. Välstrukturerade stycken förbättrar läsbarheten på skärmar."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Unika ord",
-          "description": "Antal icke-upprepade ord. En högre andel unika ord tyder på ett rikare ordförråd."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Genomsnittlig ordlängd",
-          "description": "Genomsnittligt antal tecken per ord. En indikator på textkomplexitet - tekniska texter har längre ord."
         },
         {
           "icon": "RiTimeLine",
@@ -212,53 +180,6 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 textformateringsverktyg",
-      "description": "Under textfältet hittar du knappar för snabb transformation:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "VERSALER",
-          "description": "Konverterar all text till versaler. Användbart för rubriker, förkortningar och markering av textfragment."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "gemener",
-          "description": "Konverterar all text till gemener. Användbart för att normalisera text kopierad från olika källor."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Meningsstil",
-          "description": "Första bokstaven i varje mening är versal, resten gemener. Standardformat för löpande text."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Titelstil",
-          "description": "Varje ord börjar med versal. Perfekt för titlar, rubriker och egennamn."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Ta bort extra mellanslag",
-          "description": "Reducerar flera mellanslag till ett och tar bort mellanslag i början och slutet av varje rad."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Ta bort tomma rader",
-          "description": "Tar bort tomma och överflödiga rader från texten. Användbart för att rensa text kopierad från webbsidor."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Ta bort dubbletter",
-          "description": "Behåller bara unika rader och tar bort upprepningar. Användbart för att rensa listor och data."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
       "title": "Vem är ordräknaren för?",
       "description": "Verktyget är användbart för alla som arbetar med text:",
       "grid": "three",
@@ -266,12 +187,12 @@
         {
           "icon": "RiEditLine",
           "title": "Copywriters och redaktörer",
-          "description": "Räkna ord och tecken, kontrollera plattformsgränser, ändra versaler snabbt och rensa text innan publicering."
+          "description": "Räkna ord och tecken, kontrollera plattformsgränser och textens läsbarhet innan publicering."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Bloggare och innehållsskapare",
-          "description": "Övervaka inläggslängd, kontrollera lästid och ta bort dubbletter."
+          "description": "Övervaka inläggslängd och kontrollera lästid."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -281,7 +202,7 @@
         {
           "icon": "RiSearchLine",
           "title": "SEO-specialister",
-          "description": "Analysera innehållslängd, räkna unika ord och bedöma textkomplexitet baserat på genomsnittlig ordlängd."
+          "description": "Analysera innehållslängd, Flesch-Kincaid läsbarhetspoäng och bedöma textens komplexitet."
         },
         {
           "icon": "RiGraduationCapLine",
@@ -324,13 +245,8 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 mätvärden + läsbarhetspoäng",
-          "description": "Ord, tecken, stavelser, meningar, stycken, unika ord, lästid, taltid och LIX-läsbarhetspoäng - allt i en panel."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 formateringsverktyg",
-          "description": "Versalkonvertering, borttagning av mellanslag, tomma rader och dubbletter - utan extra programvara."
+          "title": "8 mätvärden + läsbarhetspoäng",
+          "description": "Ord, tecken, stavelser, meningar, lästid, taltid och Flesch-Kincaid läsbarhetspoäng - allt i en panel."
         },
         {
           "icon": "RiUserLine",
@@ -340,7 +256,7 @@
         {
           "icon": "RiFileCopyLine",
           "title": "Kopiera och rensa text",
-          "description": "Kopiera den ändrade texten till urklipp med ett klick eller rensa fältet för att börja om."
+          "description": "Kopiera den inklistrade texten till urklipp med ett klick eller rensa fältet för att börja om."
         },
         {
           "icon": "RiTimerLine",

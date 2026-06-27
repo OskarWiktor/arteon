@@ -11,9 +11,7 @@
   "descriptionTooShort": "La descrizione è molto corta. Aggiungi più testo per spiegare cosa troverà l’utente nella pagina e perché dovrebbe cliccare.",
   "descriptionTooLong": "La descrizione supera l’intervallo che Google di solito mostra per intero (circa 150-160 caratteri o ~920 pixel). Potrebbe essere troncata o sostituita da un altro estratto.",
   "descriptionGoodLength": "La descrizione rientra nell’intervallo tipico per i risultati di ricerca (circa 120-160 caratteri e fino a ~920 pixel), sufficiente per 2-3 frasi brevi.",
-  "addUrl": "Aggiungi URL (opzionale)",
-  "urlPlaceholder": "www.iltuodominio.it/pagina",
-  "urlHelper": "L’URL viene utilizzato solo nell’anteprima  non influisce sul calcolo della lunghezza del meta titolo e della descrizione.",
+  "exampleUrl": "https://www.iltuodominio.it/pagina",
   "enterTitleLabel": "Inserisci meta titolo",
   "titlePlaceholder": "Es. Servizi SEO per siti web  Arteon",
   "chars": "Caratteri",
@@ -23,8 +21,6 @@
   "enterDescriptionLabel": "Inserisci meta descrizione",
   "descriptionPlaceholder": "Descrivi in 2-3 frasi cosa troverà l’utente nella pagina e quale vantaggio otterrà. Inserisci naturalmente le parole chiave principali.",
   "noDescription": "Nessuna descrizione",
-  "previewTitle": "Anteprima del risultato su Google",
-  "previewHelper": "L’anteprima è approssimativa  Google potrebbe adattare il titolo e la descrizione in base alla larghezza dello schermo e al testo",
   "exampleTitle": "Titolo pagina di esempio  Offerta / Servizio",
   "exampleDescription": "Qui apparirà un’anteprima della descrizione della tua pagina. Descrivi brevemente cosa offri, come aiuti il cliente e perché questa pagina merita una visita."
 }

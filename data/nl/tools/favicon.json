@@ -36,8 +36,7 @@
         "Generatie van PWA-pictogrammen 192x192 en 512x512",
         "Ondersteuning voor PNG-, JPG- en SVG-bronafbeeldingen",
         "Configuratie van achtergrondkleur",
-        "Generatie van manifest.json-bestand voor PWA",
-        "Alle bestanden als ZIP downloaden",
+        "Alle bestanden downloaden met één klik",
         "Individuele bestanden downloaden",
         "Lighthouse-conform",
         "Verwerking in de browser (bestanden worden niet naar server verzonden)",
@@ -53,16 +52,12 @@
           "text": "Sleep een bestand naar het aangewezen gebied of selecteer een afbeelding van uw apparaat. Een eenvoudig logo of pictogram in PNG-, JPG- of SVG-formaat werkt het beste."
         },
         {
-          "name": "Kies pictogramformaten",
-          "text": "Selecteer welke pictogramformaten u nodig heeft: favicon.ico (32x32), PNG-pictogrammen (16x16, 32x32, 180x180, 192x192, 512x512)."
-        },
-        {
-          "name": "Configureer opties",
-          "text": "Stel de achtergrondkleur in (of houd transparant), beslis of u een manifestbestand wilt genereren en of bestanden automatisch moeten downloaden."
+          "name": "Configureer de achtergrond",
+          "text": "Stel de achtergrondkleur van het pictogram in of houd deze transparant."
         },
         {
           "name": "Genereer en download bestanden",
-          "text": "Na het genereren kunnen bestanden als ZIP-archief of elk pictogram apart worden gedownload."
+          "text": "De tool genereert favicon.ico en de complete set PNG-pictogrammen (16x16, 32x32, 180x180, 192x192, 512x512). U kunt alle bestanden in één keer downloaden of elk pictogram apart."
         }
       ]
     }
@@ -75,7 +70,7 @@
     {
       "type": "sectionBasic",
       "title": "Wat is een favicon en waarom zou u er een moeten hebben?",
-      "html": "<p class=\"mb-4\">Een favicon is een klein pictogram dat op het browsertabblad verschijnt naast de paginatitel. U ziet het ook in bladwijzers, browsegeschiedenis en op het startscherm van de telefoon wanneer iemand de site als snelkoppeling toevoegt.</p><p class=\"mb-4\">Deze kleine afbeelding vervult een belangrijke functie - het helpt gebruikers een site snel te herkennen tussen vele open tabbladen. Wanneer iemand een dozijn tabbladen open heeft in de browser, is het favicon vaak het enige zichtbare element dat de site identificeert.</p><p>De generator maakt een complete pictogrammenset: een klassiek favicon.ico-bestand voor browsers, PNG-pictogrammen in verschillende formaten en een apple-touch-icon voor Apple-apparaten. Als u een webapp (PWA) bouwt, kunt u ook 192x192- en 512x512-pictogrammen genereren samen met een manifestbestand.</p>",
+      "html": "<p class=\"mb-4\">Een favicon is een klein pictogram dat op het browsertabblad verschijnt naast de paginatitel. U ziet het ook in bladwijzers, browsegeschiedenis en op het startscherm van de telefoon wanneer iemand de site als snelkoppeling toevoegt.</p><p class=\"mb-4\">Deze kleine afbeelding vervult een belangrijke functie - het helpt gebruikers een site snel te herkennen tussen vele open tabbladen. Wanneer iemand een dozijn tabbladen open heeft in de browser, is het favicon vaak het enige zichtbare element dat de site identificeert.</p><p>De generator maakt een complete pictogrammenset: een klassiek favicon.ico-bestand voor browsers, PNG-pictogrammen in verschillende formaten en een apple-touch-icon voor Apple-apparaten. De tool genereert ook 192x192- en 512x512-pictogrammen, bruikbaar voor webapps (PWA).</p>",
       "imageSrc": "/assets/tools/favicon-generator/gratis-favicon-generator-nl.webp",
       "imageAlt": "Favicon generator – Arteon"
     },
@@ -95,13 +90,13 @@
           "icon": "RiImageLine"
         },
         {
-          "title": "2. Kies formaten",
-          "description": "Selecteer de pictogramformaten die u nodig heeft. Voor een reguliere website: favicon.ico, 32×32 en 180×180. Voor PWA voegt u 192×192 en 512×512 toe.",
+          "title": "2. Stel de achtergrond in",
+          "description": "Kies een achtergrondkleur voor het pictogram of houd deze transparant.",
           "icon": "RiAspectRatioLine"
         },
         {
           "title": "3. Download bestanden",
-          "description": "Na het genereren downloadt u alle bestanden als ZIP of elk pictogram apart. Onder de tool vindt u instructies over hoe u het favicon aan uw site toevoegt.",
+          "description": "Na het genereren downloadt u alle bestanden met één klik of elk pictogram apart. Onder de tool vindt u instructies over hoe u het favicon aan uw site toevoegt.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -132,7 +127,7 @@
         {
           "icon": "RiDownloadLine",
           "title": "Complete set op één plek",
-          "description": "Favicon.ico, PNG-pictogrammen, apple-touch-icon, PWA-pictogrammen en manifest - alles vanuit één afbeelding, in één tool."
+          "description": "Favicon.ico, PNG-pictogrammen, apple-touch-icon en PWA-pictogrammen - alles vanuit één afbeelding, in één tool."
         },
         {
           "icon": "RiImageLine",
@@ -142,7 +137,7 @@
         {
           "icon": "RiSmartphoneLine",
           "title": "Klaar voor website en PWA",
-          "description": "De tool genereert een manifest.json-bestand voor webapps. Hieronder vindt u instructies voor integratie."
+          "description": "De gegenereerde pictogrammen van 192×192 en 512×512 pixels kunt u direct gebruiken in een webapp (PWA). Hieronder vindt u instructies voor integratie."
         }
       ]
     },
@@ -162,19 +157,14 @@
           "description": "Sleep een bestand naar het aangewezen gebied of selecteer een afbeelding van uw apparaat. Ondersteunde formaten: PNG, JPG, SVG. Een eenvoudig logo of pictogram van minimaal 512×512 pixels werkt het beste."
         },
         {
-          "icon": "RiLayoutGridLine",
-          "title": "2. Kies pictogramformaten",
-          "description": "Selecteer welke pictogramformaten u nodig heeft. U kunt alles selecteren of slechts enkele. Voor een reguliere website: favicon.ico, 32×32 en 180×180."
-        },
-        {
           "icon": "RiSettings3Line",
-          "title": "3. Configureer generatieopties",
-          "description": "Stel extra opties in: achtergrond (transparant of gekozen kleur), manifest (PWA-configuratiebestand) en automatisch downloaden."
+          "title": "2. Stel de achtergrond in",
+          "description": "Kies een achtergrond voor het pictogram. <strong>Achtergrond</strong> - transparant of een gekozen kleur."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "4. Genereer en download bestanden",
-          "description": "Na het starten van de generatie verwerkt de tool de afbeelding lokaal - niets wordt naar een server gestuurd. Download alle bestanden als ZIP-archief of individuele pictogrammen apart."
+          "title": "3. Genereer en download bestanden",
+          "description": "Na het starten van de generatie verwerkt de tool de afbeelding lokaal - niets wordt naar een server gestuurd. Download alle bestanden met één klik of elk pictogram apart."
         }
       ]
     },
@@ -184,9 +174,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "Generatieopties - wat doet elke optie?",
-      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG-formaten</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Transparante achtergrond (PNG/ICO)</span></div></div></div>",
-      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Achtergrond (transparant of kleur)</h3><p class=\"text-mid\">Standaard behoudt de generator transparantie. U kunt ook een specifieke achtergrondkleur kiezen.</p></div><div><h3 class=\"h5 mb-2\">Genereer manifest (site.webmanifest)</h3><p class=\"text-mid\">Een JSON-bestand voor webapps (PWA). Als u geen PWA bouwt, is deze optie niet nodig.</p></div></div>"
+      "title": "Generatieoptie - wat doet deze?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Transparante achtergrond (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Achtergrondkleur:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Achtergrond (transparant of kleur)</h3><p class=\"text-mid\">Standaard behoudt de generator transparantie. U kunt ook een specifieke achtergrondkleur kiezen.</p></div></div>"
     },
     {
       "type": "gap",
@@ -200,8 +190,8 @@
       "items": [
         {
           "icon": "RiFolderZipLine",
-          "title": "Download alles als ZIP",
-          "description": "De knop &quot;Download alles&quot; pakt alle gegenereerde bestanden in een enkel ZIP-archief. Dit is de handigste optie wanneer u de complete pictogrammenset nodig heeft."
+          "title": "Download alles met één klik",
+          "description": "De knop &quot;Downloaden&quot; slaat alle gegenereerde bestanden in één keer op. Dit is de handigste optie wanneer u de complete pictogrammenset nodig heeft."
         },
         {
           "icon": "RiFileDownloadLine",
@@ -315,8 +305,8 @@
         },
         {
           "question": "Kan ik alleen favicon.ico genereren zonder de andere pictogrammen?",
-          "answer": "Ja. Voor het genereren kunt u precies selecteren welke formaten u nodig heeft - bijv. alleen favicon.ico of alleen bepaalde PNG-formaten.",
-          "answerSchemaText": "Ja, u kunt individuele formaten selecteren voor het genereren."
+          "answer": "De tool genereert altijd de complete set: favicon.ico en de PNG-pictogrammen 16x16, 32x32, 180x180, 192x192 en 512x512. Na het genereren kunt u alleen de bestanden downloaden die u nodig heeft - elk pictogram heeft een eigen downloadknop.",
+          "answerSchemaText": "De tool genereert altijd de volledige set. U kunt na het genereren losse bestanden downloaden."
         },
         {
           "question": "Welke afbeeldingsformaten ondersteunt de favicon-generator?",
@@ -330,13 +320,8 @@
         },
         {
           "question": "Welke pictogramformaten zijn essentieel voor een reguliere website?",
-          "answer": "Voor een typische website zijn drie bestanden voldoende: favicon.ico (32×32), een 32×32 PNG-pictogram en apple-touch-icon 180×180. Als de site als webapp (PWA) moet werken, heeft u ook 192×192- en 512×512-pictogrammen plus een manifestbestand nodig.",
+          "answer": "Voor een typische website zijn drie bestanden voldoende: favicon.ico (32×32), een 32×32 PNG-pictogram en apple-touch-icon 180×180. Als de site als webapp (PWA) moet werken, zijn ook de pictogrammen van 192×192 en 512×512 nuttig.",
           "answerSchemaText": "favicon.ico, 32×32 PNG en apple-touch-icon 180×180. Voor PWA voeg 192×192 en 512×512 toe."
-        },
-        {
-          "question": "Wat is een site.webmanifest-bestand en wanneer is het nodig?",
-          "answer": "Het is een configuratiebestand voor webapps (PWA) dat informatie bevat over het pictogram, de naam en kleuren van de applicatie. Het is vereist wanneer de site als app op het startscherm van de telefoon moet werken. Voor reguliere websites is het niet nodig.",
-          "answerSchemaText": "PWA-configuratiebestand. Vereist voor startscherm-apps, niet nodig voor reguliere websites."
         },
         {
           "question": "Wordt het favicon in alle browsers hetzelfde weergegeven?",

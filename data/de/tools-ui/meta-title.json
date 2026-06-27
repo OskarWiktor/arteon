@@ -11,9 +11,7 @@
   "descriptionTooShort": "Die Beschreibung ist sehr kurz. Fügen Sie mehr Text hinzu, der besser erklärt, was der Nutzer auf der Seite findet und warum er klicken sollte.",
   "descriptionTooLong": "Die Beschreibung überschreitet den Bereich, den Google meist vollständig anzeigt (ca. 150-160 Zeichen oder ~920 Pixel). Sie könnte abgeschnitten oder durch einen anderen Textausschnitt ersetzt werden.",
   "descriptionGoodLength": "Die Beschreibung liegt im typischen Bereich für Suchergebnisse (ca. 120-160 Zeichen und bis zu ~920 Pixel), was normalerweise für 2-3 kurze Sätze ausreicht.",
-  "addUrl": "URL hinzufügen (optional)",
-  "urlPlaceholder": "www.ihredomain.de/seite",
-  "urlHelper": "Die URL wird nur in der Vorschau verwendet - sie hat keinen Einfluss auf die Berechnung der Meta-Titel- und Beschreibungslänge.",
+  "exampleUrl": "https://www.ihre-domain.de/seite",
   "enterTitleLabel": "Meta-Titel eingeben",
   "titlePlaceholder": "Z.B. SEO-Dienstleistungen für Websites - Arteon",
   "chars": "Zeichen",
@@ -23,8 +21,6 @@
   "enterDescriptionLabel": "Meta-Beschreibung eingeben",
   "descriptionPlaceholder": "Beschreiben Sie in 2-3 Sätzen, was der Nutzer auf der Seite findet und welchen Vorteil er erhält. Fügen Sie natürlich Ihre wichtigsten Keywords ein.",
   "noDescription": "Keine Beschreibung",
-  "previewTitle": "Vorschau des Google-Suchergebnisses",
-  "previewHelper": "Die Vorschau ist annähernd - Google kann den Titel und die Beschreibung je nach Bildschirmbreite und Text anpassen",
   "exampleTitle": "Beispiel-Seitentitel - Angebot / Dienstleistung",
   "exampleDescription": "Hier erscheint eine Vorschau Ihrer Seitenbeschreibung. Schreiben Sie kurz darüber, was Sie anbieten, wie Sie dem Kunden helfen und warum diese Seite einen Besuch wert ist."
 }

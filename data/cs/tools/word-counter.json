@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "cs",
   "metadata": {
-    "title": "Počítadlo slov, znaků a času čtení s formátováním textu",
-    "description": "Bezplatné počítadlo slov, znaků, vět, odstavců a času čtení s konvertorem velikosti písmen. Zkontrolujte délku textu a změňte písmena.",
+    "title": "Počítadlo slov, znaků a času čtení",
+    "description": "Bezplatné počítadlo slov, znaků, vět, slabik a času čtení. Vložte text a nástroj ohodnotí i jeho čitelnost.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp",
     "path": "/cs/nastroje/pocitadlo-slov-a-znaku"
   },
   "hero": {
-    "title": "Spočítejte slova a znaky – zkontrolujte čas čtení a formátujte",
-    "description": "Vložte text a nástroj spočítá slova, znaky, věty, odstavce, unikátní slova a čas čtení. Změňte velikost písmen nebo odstraňte duplikáty",
+    "title": "Spočítejte slova a znaky – zkontrolujte čas čtení a čitelnost",
+    "description": "Vložte text a nástroj spočítá slova, znaky, věty, slabiky a čas čtení. Zjistíte také čitelnost textu podle skóre Flesch-Kincaid.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,56 +24,44 @@
   },
   "schemas": {
     "software": {
-      "name": "Počítadlo slov, znaků a času čtení s formátováním textu",
+      "name": "Počítadlo slov, znaků a času čtení",
       "alternateName": [
         "Počítadlo slov",
         "Počítadlo znaků s mezerami a bez mezer",
         "Nástroj pro počítání slov pro copywritery",
         "Kalkulačka doby čtení",
-        "Převod velikosti písmen",
         "Kontrola čitelnosti Flesch-Kincaid",
         "Počítadlo slabik",
         "Kalkulačka doby mluvení",
         "Nástroj čitelnosti textu",
-        "Odstranění duplicitních řádků",
         "Bezplatné počítadlo slov a znaků"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Bezplatné počítadlo slov a znaků s nástroji pro formátování textu. Počítá slova, znaky, věty, odstavce, unikátní slova a čas čtení. Nabízí 7 nástrojů: převod velikosti písmen, odstranění mezer, prázdných řádků a duplikátů.",
+      "description": "Bezplatné počítadlo slov a znaků. Počítá slova, znaky, věty, slabiky a čas čtení, a navíc ohodnotí čitelnost textu.",
       "featureList": [
         "Počítání slov",
         "Počítání znaků s mezerami a bez mezer",
-        "Počítání vět a odstavců",
-        "Počítání unikátních slov",
-        "Průměrná délka slova",
+        "Počítání vět",
         "Odhadovaný čas čtení",
         "Odhadovaná doba mluvení",
         "Počítání slabik",
         "Flesch-Kincaid skóre čitelnosti",
         "Jazykově specifické vzorce čitelnosti (16 jazyků)",
-        "Převod na velká nebo malá písmena",
-        "Převod na styl věty nebo nadpisu",
-        "Odstranění nadbytečných mezer",
-        "Odstranění prázdných řádků a duplikátů",
         "Kopírování textu do schránky"
       ]
     },
     "howTo": {
       "name": "Jak používat počítadlo slov",
-      "description": "Analyzujte a formátujte text ve třech krocích:",
+      "description": "Analyzujte text ve třech krocích:",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Vložte text",
-          "text": "Vložte nebo napište text. Nástroj okamžitě spočítá slova, znaky, věty, odstavce a unikátní slova."
+          "text": "Vložte nebo napište text do textového pole. Nástroj okamžitě spočítá slova, znaky, věty a odhadne čas čtení."
         },
         {
           "name": "Zkontrolujte statistiky",
-          "text": "V levem panelu uvidite 11 metrik: slova, znaky s mezerami a bez, vety, odstavce, unikatni slova, prumerna delka, doba cteni, doba mluveni, slabiky a skore Flesch-Kincaid."
-        },
-        {
-          "name": "Transformujte text",
-          "text": "Pod textovým polem najdete 7 transformačních nástrojů."
+          "text": "V levém panelu uvidíte 8 metrik: slova, znaky s mezerami a bez mezer, věty, čas čtení, dobu mluvení, slabiky a skóre Flesch-Kincaid."
         },
         {
           "name": "Zkopírujte výsledek",
@@ -89,8 +77,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Bezplatné počítadlo slov a znaků s textovými nástroji",
-      "html": "<p class=\"text-mid\">Tento nastroj kombinuje pocitadlo slov a znaku s analyzou citelnosti Flesch-Kincaid a funkcemi formatovani textu. Vlozte text a uvidite pocet slov, znaku, slabik, vet, odstavcu, unikatnich slov, dobu cteni, dobu mluveni a barevne kodovane skore citelnosti.</p><p class=\"text-mid mt-3\"><strong>Skore Flesch-Kincaid</strong> (0–100) ukazuje, jak snadno se text cte. Hodnoty nad 70 znamenaji snadne cteni, pod 30 akademickou uroven.</p><p class=\"text-mid mt-3\">Pod textovym polem najdete 7 nastroju: prevod velkych/malych pismen, odstraneni mezer, prazdnych radku a duplicit. Vse probiha lokalne v prohlizeci.</p>",
+      "title": "Bezplatné počítadlo slov a znaků",
+      "html": "<p class=\"text-mid\">Tento nastroj kombinuje pocitadlo slov a znaku s analyzou citelnosti Flesch-Kincaid. Vlozte text a uvidite pocet slov, znaku, slabik, vet, dobu cteni, dobu mluveni a barevne kodovane skore citelnosti.</p><p class=\"text-mid mt-3\"><strong>Skore Flesch-Kincaid</strong> (0–100) ukazuje, jak snadno se text cte. Hodnoty nad 70 znamenaji snadne cteni, pod 30 akademickou uroven.</p><p class=\"text-mid mt-3\">Cela analyza a zpracovani textu probiha lokalne v prohlizeci.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/pocitadlo-slov-a-znaku-cs.webp",
       "imageAlt": "Počítadlo slov a znaků – Arteon"
     },
@@ -101,27 +89,22 @@
     {
       "type": "sectionSteps",
       "title": "Jak používat počítadlo slov",
-      "description": "Analyzujte a formátujte text ve třech krocích:",
-      "grid": "four",
+      "description": "Analyzujte text ve třech krocích:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Vložte text",
-          "description": "Vložte nebo napište text. Nástroj okamžitě spočítá slova, znaky, věty, odstavce a unikátní slova."
+          "description": "Vložte nebo napište text do pole. Nástroj okamžitě spočítá slova, znaky, věty a odhadne čas čtení."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Zkontrolujte statistiky",
-          "description": "V levem panelu uvidite 11 metrik: slova, znaky s mezerami a bez, vety, odstavce, unikatni slova, prumerna delka, doba cteni, doba mluveni, slabiky a skore Flesch-Kincaid."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Transformujte text",
-          "description": "Pod textovým polem najdete 7 transformačních nástrojů."
+          "description": "V levém panelu uvidíte 8 metrik: slova, znaky s mezerami a bez mezer, věty, čas čtení, dobu mluvení, slabiky a skóre Flesch-Kincaid."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Zkopírujte výsledek",
+          "title": "3. Zkopírujte výsledek",
           "description": "Klikněte na Kopírovat text. Použijte Smazat pro nový začátek."
         }
       ]
@@ -145,8 +128,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 textových metrik – co počítadlo měří",
-      "description": "Počítadlo analyzuje text pomocí jedenácti ukazatelů:",
+      "title": "8 textových metrik – co počítadlo měří",
+      "description": "Počítadlo analyzuje text pomocí osmi ukazatelů:",
       "grid": "two",
       "items": [
         {
@@ -168,21 +151,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Věty",
           "description": "Počet vět v textu. Pomáhá posoudit složitost a čitelnost - kratší věty se lépe vstřebávají."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Odstavce",
-          "description": "Textové bloky oddělené prázdnými řádky. Dobře strukturované odstavce zlepšují čitelnost na obrazovkách."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Unikátní slova",
-          "description": "Počet neopakujících se slov. Vyšší podíl unikátních slov naznačuje bohatší slovní zásobu."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Průměrná délka slova",
-          "description": "Průměrný počet znaků na slovo. Ukazatel složitosti textu - odborné texty obsahují delší slova."
         },
         {
           "icon": "RiTimeLine",
@@ -212,53 +180,6 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 nástrojů pro formátování",
-      "description": "Pod textovým polem najdete tlačítka pro transformaci:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "VELKÁ PÍSMENA",
-          "description": "Převede veškerý text na velká písmena. Užitečné pro nadpisy, zkratky a zvýraznění textu."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "malá písmena",
-          "description": "Převede veškerý text na malá písmena. Užitečné pro normalizaci textu zkopírovaného z různých zdrojů."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Větný styl",
-          "description": "První písmeno každé věty je velké, zbytek malý. Standardní formát pro průběžný text."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Styl nadpisu",
-          "description": "Každé slovo začíná velkým písmenem. Ideální pro nadpisy a vlastní jména."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Odstranit nadbytečné mezery",
-          "description": "Sníží vícenásobné mezery na jednu a odstraní mezery na začátku a konci řádků."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Odstranit prázdné řádky",
-          "description": "Odstraní prázdné a nadbytečné řádky z textu. Užitečné pro čištění textu zkopírovaného z webů."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Odstranit duplicitní řádky",
-          "description": "Ponechá pouze unikátní řádky a odstraní opakování. Užitečné pro čištění seznamů a dat."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
       "title": "Pro koho je počítadlo slov?",
       "description": "Nástroj je užitečný pro každého, kdo pracuje s textem:",
       "grid": "three",
@@ -266,12 +187,12 @@
         {
           "icon": "RiEditLine",
           "title": "Copywriteři a redaktoři",
-          "description": "Počítání slov a znaků, kontrola limitů platforem, rychlá změna velikosti písmen a čištění textu před publikováním."
+          "description": "Počítání slov a znaků, kontrola limitů platforem a čitelnosti textu před publikováním."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Blogeři a tvůrci obsahu",
-          "description": "Sledování délky příspěvků, kontrola doby čtení, odstraňování duplicitních řádků."
+          "description": "Sledování délky příspěvků a kontrola doby čtení."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -281,7 +202,7 @@
         {
           "icon": "RiSearchLine",
           "title": "SEO specialisté",
-          "description": "Analýza délky obsahu, počítání unikátních slov a posouzení složitosti textu na základě průměrné délky slova."
+          "description": "Analýza délky obsahu a skóre čitelnosti Flesch-Kincaid."
         },
         {
           "icon": "RiGraduationCapLine",
@@ -324,13 +245,8 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 metrik + skóre čitelnosti",
-          "description": "Slova, znaky, slabiky, věty, odstavce, unikátní slova, doba čtení, mluvení a Flesch-Kincaid."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 formátovacích nástrojů",
-          "description": "Převod velikosti písmen, odstranění mezer, prázdných řádků a duplikátů - bez instalace dalšího softwaru."
+          "title": "8 metrik + skóre čitelnosti",
+          "description": "Slova, znaky, slabiky, věty, doba čtení, doba mluvení a Flesch-Kincaid - vše v jednom panelu."
         },
         {
           "icon": "RiUserLine",

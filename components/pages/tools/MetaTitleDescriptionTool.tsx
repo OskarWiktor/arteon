@@ -5,7 +5,6 @@ import { useState } from 'react';
 import Input from '@/components/atoms/form/Input';
 import Textarea from '@/components/atoms/form/Textarea';
 import ToolFieldRow from '@/components/molecules/ToolFieldRow';
-import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import Card from '@/components/organisms/Card';
 import { cn } from '@/lib/clsx';
 import { ui } from '@/lib/i18n/tools/metaTitle';
@@ -100,7 +99,7 @@ function analyzeDescription(text: string, t: UiTexts): FieldAnalysis {
 /**
  * Renders a client-side UI for editing and previewing a page meta title and description.
  *
- * Maintains local state for title, description, and URL, displays editable inputs with live
+ * Maintains local state for title and description, displays editable inputs with live
  * length/width metrics and status badges, and shows a styled search-engine preview that updates
  * as the user types. Text is localized based on the current locale.
  *
@@ -111,7 +110,6 @@ export default function MetaTitleDescriptionTool() {
   const t = ui[locale];
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [url, setUrl] = useState('arteonagency.pl/podstrona');
 
   const titleAnalysis = analyzeTitle(title, t);
   const descriptionAnalysis = analyzeDescription(description, t);
@@ -126,20 +124,8 @@ export default function MetaTitleDescriptionTool() {
     <>
       <div className='grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
         <Card interactive={false} padding='lg' variant='outlined'>
-          <ToolFieldRow label={t.addUrl} helper={t.urlHelper}>
-            <Input
-              type='text'
-              value={url}
-              onChange={e => setUrl(e.target.value)}
-              placeholder={t.urlPlaceholder}
-            />
-          </ToolFieldRow>
-
-          <ToolFieldRow
-            label={t.enterTitleLabel}
-            className='mt-8'
-            helper={titleAnalysis.helperText}
-          >
+          <h2 className='h6 mb-2'>{t.enterTitleLabel}</h2>
+          <ToolFieldRow helper={titleAnalysis.helperText}>
             <Input
               type='text'
               value={title}
@@ -166,11 +152,8 @@ export default function MetaTitleDescriptionTool() {
             </div>
           </ToolFieldRow>
 
-          <ToolFieldRow
-            label={t.enterDescriptionLabel}
-            className='mt-8'
-            helper={descriptionAnalysis.helperText}
-          >
+          <h2 className='h6 mt-8 mb-2'>{t.enterDescriptionLabel}</h2>
+          <ToolFieldRow helper={descriptionAnalysis.helperText}>
             <Textarea
               value={description}
               onChange={e => setDescription(e.target.value)}
@@ -199,11 +182,6 @@ export default function MetaTitleDescriptionTool() {
         </Card>
 
         <Card interactive={false} padding='lg' variant='outlined'>
-          <div>
-            <h2 className='h6 pb-2'>{t.previewTitle}</h2>
-            <ToolHelper>{t.previewHelper}</ToolHelper>
-          </div>
-
           <div className='rounded-lg border border-neutral-200 bg-white p-4 text-sm shadow-inner'>
             <div className='flex gap-3'>
               <div
@@ -225,9 +203,7 @@ export default function MetaTitleDescriptionTool() {
                 <p className='text-xs'>Arteon</p>
 
                 <div className='flex items-center gap-1'>
-                  <p className='truncate text-[13px]!'>
-                    {url || t.urlPlaceholder}
-                  </p>
+                  <p className='truncate text-[13px]!'>{t.exampleUrl}</p>
                   <div className='ml-3 flex flex-col gap-0.5'>
                     <div className='h-0.5 w-0.5 rounded-lg bg-light'></div>
                     <div className='h-0.5 w-0.5 rounded-lg bg-light'></div>

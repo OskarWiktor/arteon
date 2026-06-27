@@ -42,8 +42,7 @@
         "Geração de ícones PWA 192x192 e 512x512",
         "Suporte para imagens PNG, JPG e SVG como fonte",
         "Configuração da cor de fundo",
-        "Geração do ficheiro manifest.json para PWA",
-        "Download de todos os ficheiros como ZIP",
+        "Download de todos os ficheiros com um clique",
         "Download de ficheiros individuais",
         "Conformidade com o Lighthouse",
         "Processamento no navegador (os ficheiros não são enviados para o servidor)",
@@ -56,15 +55,15 @@
       "steps": [
         {
           "name": "Importar uma imagem",
-          "text": "Importe uma imagem quadrada (pelo menos 512x512 px). Formatos suportados: PNG, JPG, WebP."
+          "text": "Importe uma imagem quadrada (pelo menos 512x512 px). Formatos suportados: PNG, JPG, SVG."
         },
         {
-          "name": "Escolher as opções",
-          "text": "Selecione os tamanhos desejados e se um site.webmanifest deve ser gerado."
+          "name": "Definir o fundo",
+          "text": "Escolha a cor de fundo do ícone ou mantenha-o transparente."
         },
         {
-          "name": "Transferir o ZIP",
-          "text": "Transfira todos os ficheiros gerados num arquivo ZIP e adicione-os ao seu site."
+          "name": "Gerar e transferir os ficheiros",
+          "text": "A ferramenta gera favicon.ico e o conjunto completo de ícones PNG. Transfira todos de uma vez ou cada ícone individualmente."
         }
       ]
     }
@@ -94,17 +93,17 @@
         {
           "icon": "RiUploadLine",
           "title": "1. Importar uma imagem",
-          "description": "Importe uma imagem quadrada (pelo menos 512x512 px). Formatos suportados: PNG, JPG, WebP."
+          "description": "Importe uma imagem quadrada (pelo menos 512x512 px). Formatos suportados: PNG, JPG, SVG."
         },
         {
           "icon": "RiAppsLine",
-          "title": "2. Escolher as opções",
-          "description": "Selecione os tamanhos desejados e se um site.webmanifest deve ser gerado."
+          "title": "2. Definir o fundo",
+          "description": "Escolha a cor de fundo do ícone ou mantenha-o transparente."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "3. Transferir o ZIP",
-          "description": "Transfira todos os ficheiros gerados num arquivo ZIP e adicione-os ao seu site."
+          "title": "3. Transferir os ficheiros",
+          "description": "Depois de gerados, transfira todos os ficheiros com um clique ou cada ícone individualmente."
         }
       ]
     },
@@ -115,7 +114,7 @@
     {
       "type": "sectionDemo",
       "title": "Que ficheiros são gerados?",
-      "demoHtml": "<div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Ficheiro</th><th class=\"py-2 pr-4 font-semibold\">Tamanho</th><th class=\"py-2 font-semibold\">Utilização</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon.ico</td><td class=\"py-2 pr-4\">16x16 + 32x32</td><td class=\"text-primary-light0 py-2\">Separador do navegador (padrão)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-16x16.png</td><td class=\"py-2 pr-4\">16x16</td><td class=\"text-primary-light0 py-2\">Separador do navegador (pequeno)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-32x32.png</td><td class=\"py-2 pr-4\">32x32</td><td class=\"text-primary-light0 py-2\">Separador do navegador (Retina)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">apple-touch-icon.png</td><td class=\"py-2 pr-4\">180x180</td><td class=\"text-primary-light0 py-2\">Ecrã inicial iOS, Safari</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-192x192.png</td><td class=\"py-2 pr-4\">192x192</td><td class=\"text-primary-light0 py-2\">Android, instalação PWA</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-512x512.png</td><td class=\"py-2 pr-4\">512x512</td><td class=\"text-primary-light0 py-2\">Splashscreen PWA, resultados Google</td></tr><tr><td class=\"py-2 pr-4 font-medium\">site.webmanifest</td><td class=\"py-2 pr-4\">-</td><td class=\"text-primary-light0 py-2\">Configuração PWA (opcional)</td></tr></tbody></table></div>",
+      "demoHtml": "<div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Ficheiro</th><th class=\"py-2 pr-4 font-semibold\">Tamanho</th><th class=\"py-2 font-semibold\">Utilização</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon.ico</td><td class=\"py-2 pr-4\">16x16 + 32x32</td><td class=\"text-primary-light0 py-2\">Separador do navegador (padrão)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-16x16.png</td><td class=\"py-2 pr-4\">16x16</td><td class=\"text-primary-light0 py-2\">Separador do navegador (pequeno)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-32x32.png</td><td class=\"py-2 pr-4\">32x32</td><td class=\"text-primary-light0 py-2\">Separador do navegador (Retina)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">apple-touch-icon.png</td><td class=\"py-2 pr-4\">180x180</td><td class=\"text-primary-light0 py-2\">Ecrã inicial iOS, Safari</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-192x192.png</td><td class=\"py-2 pr-4\">192x192</td><td class=\"text-primary-light0 py-2\">Android, instalação PWA</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-512x512.png</td><td class=\"py-2 pr-4\">512x512</td><td class=\"text-primary-light0 py-2\">Splashscreen PWA, resultados Google</td></tr></tbody></table></div>",
       "html": "<p class=\"text-mid\">A ferramenta gera todos os ficheiros favicon exigidos pelos navegadores modernos e pelo Lighthouse. Cada ficheiro tem uma função específica:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>favicon.ico</strong> – o formato clássico, suportado por todos os navegadores. Contém 16x16 e 32x32 num único ficheiro.</li><li><strong>Apple Touch Icon</strong> – apresentado no ecrã inicial iOS quando um utilizador adiciona o site aos favoritos.</li><li><strong>Ícones PWA</strong> – para dispositivos Android e Progressive Web Apps. Utilizados na instalação no ecrã inicial.</li></ul>"
     },
     {
@@ -167,13 +166,13 @@
     {
       "type": "sectionSteps",
       "title": "Como transferir os ficheiros gerados",
-      "description": "Após a geração dos ícones, tem várias opções de transferência:",
+      "description": "Após a geração dos ícones, tem duas opções de transferência:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFolderZipLine",
-          "title": "Transferir tudo em ZIP",
-          "description": "O botão Transferir tudo agrupa todos os ficheiros gerados num único arquivo ZIP. A opção mais prática quando precisa do conjunto completo de ícones."
+          "title": "Transferir tudo com um clique",
+          "description": "O botão Transferir guarda no seu computador todos os ficheiros gerados de uma só vez. A opção mais prática quando precisa do conjunto completo de ícones."
         },
         {
           "icon": "RiFileDownloadLine",
@@ -250,8 +249,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Opções de geração: o que faz cada uma?",
-      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Fundo (transparente ou cor)</h3><p class=\"text-mid\">Por predefinição, o gerador mantém a transparência. Também pode escolher uma cor de fundo específica.</p></div><div><h3 class=\"h5 mb-2\">Gerar o manifest (site.webmanifest)</h3><p class=\"text-mid\">Ficheiro JSON para aplicações web (PWA). Se não está a criar uma PWA, esta opção não é necessária.</p></div></div>"
+      "title": "Opção de geração: o que faz?",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Fundo (transparente ou cor)</h3><p class=\"text-mid\">Por predefinição, o gerador mantém a transparência. Também pode escolher uma cor de fundo específica.</p></div></div>"
     },
     {
       "type": "gap",
@@ -269,8 +268,8 @@
         },
         {
           "icon": "RiDownloadLine",
-          "title": "Todos os formatos numa única etapa",
-          "description": "favicon.ico, ícones PNG e site.webmanifest opcional – tudo a partir de uma única imagem."
+          "title": "Conjunto completo numa única etapa",
+          "description": "favicon.ico e ícones PNG – tudo a partir de uma única imagem, sem etapas extra."
         },
         {
           "icon": "RiImageLine",
@@ -280,7 +279,7 @@
         {
           "icon": "RiSmartphoneLine",
           "title": "Pronto para o site e para PWA",
-          "description": "A ferramenta gera o ficheiro manifest.json para aplicações web. Abaixo encontra as instruções de integração dos ícones."
+          "description": "Os ícones 192x192 e 512x512 gerados podem ser usados de imediato numa aplicação web (PWA). Abaixo encontra as instruções de integração dos ícones."
         }
       ]
     },
@@ -336,19 +335,14 @@
           "answerSchemaText": "Imagem quadrada (PNG/JPG/WebP) com pelo menos 512x512 px."
         },
         {
-          "question": "O site.webmanifest também é gerado?",
-          "answer": "Sim. Pode opcionalmente gerar um ficheiro site.webmanifest que referencia os ícones PWA (192x192 e 512x512). O ficheiro é incluído no arquivo ZIP com os ícones.",
-          "answerSchemaText": "Sim, opcionalmente. Referencia os ícones PWA e é incluído no ZIP."
-        },
-        {
           "question": "As minhas imagens são enviadas para um servidor?",
           "answer": "Não. Todo o processamento é feito localmente no seu navegador através da API Canvas. Os seus ficheiros nunca saem do seu computador e não são armazenados em lado nenhum.",
           "answerSchemaText": "Não. Processamento local no navegador. Os ficheiros não saem do seu dispositivo."
         },
         {
           "question": "O que é que o Lighthouse verifica em relação aos favicons?",
-          "answer": "O Lighthouse verifica se uma página possui um favicon válido. Espera no mínimo um ficheiro favicon.ico ou um elemento link rel icon. Verifica também a presença de um Apple Touch Icon (180x180) e de ícones PWA no site.webmanifest. Esta ferramenta gera todos os ficheiros necessários.",
-          "answerSchemaText": "O Lighthouse verifica favicon.ico, Apple Touch Icon e ícones PWA no manifest."
+          "answer": "O Lighthouse verifica se uma página possui um favicon válido. Espera no mínimo um ficheiro favicon.ico ou um elemento link rel icon. Verifica também a presença de um Apple Touch Icon (180x180) e dos ícones PWA (192x192, 512x512). Esta ferramenta gera todos os ficheiros necessários.",
+          "answerSchemaText": "O Lighthouse verifica favicon.ico, Apple Touch Icon e ícones PWA."
         },
         {
           "question": "Como integrar os favicons no meu site?",

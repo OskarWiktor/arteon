@@ -25,34 +25,6 @@ export function countSentences(text: string): number {
   return text.split(/[.!?]+/).filter(s => s.trim().length > 0).length;
 }
 
-export function countParagraphs(text: string): number {
-  if (!text.trim()) return 0;
-  return text.split(/\n\s*\n/).filter(p => p.trim().length > 0).length;
-}
-
-/**
- * Counts distinct whitespace-separated words in a string using locale-aware case folding.
- *
- * @returns The number of unique whitespace-separated tokens in `text`, compared case-insensitively using locale-aware rules
- */
-export function countUniqueWords(text: string): number {
-  if (!text.trim()) return 0;
-  const words = text.trim().toLocaleLowerCase().split(/\s+/);
-  return new Set(words).size;
-}
-
-export function calculateAvgWordLength(text: string): number {
-  if (!text.trim()) return 0;
-  const words = text.trim().split(/\s+/);
-  const totalChars = words.reduce(
-    (sum, w) =>
-      sum +
-      w.replace(/[^a-zA-Z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF]/g, '').length,
-    0,
-  );
-  return Math.round((totalChars / words.length) * 10) / 10;
-}
-
 export function calculateReadingTime(words: number): number {
   const WORDS_PER_MINUTE = 200;
   return Math.max(1, Math.ceil(words / WORDS_PER_MINUTE));
@@ -66,9 +38,6 @@ export function analyzeText(text: string, locale: Locale = 'en'): TextMetrics {
     charsWithSpaces: countCharsWithSpaces(text),
     charsWithoutSpaces: countCharsWithoutSpaces(text),
     sentences: countSentences(text),
-    paragraphs: countParagraphs(text),
-    uniqueWords: countUniqueWords(text),
-    avgWordLength: calculateAvgWordLength(text),
     readingTimeMinutes: calculateReadingTime(words),
     syllables: readability.syllables,
     fleschScore: readability.fleschScore,
@@ -115,89 +84,4 @@ export function formatReadingTime(
   locale: Locale = 'pl',
 ): string {
   return READING_TIME_FMT[locale](minutes);
-}
-
-// ---------------------------------------------------------------------------
-// Text transformation functions
-/**
- * Convert all letters in `text` to their locale-aware uppercase form.
- *
- * @returns The input string with characters converted to uppercase according to the current locale
- */
-
-export function toLocaleUpperCase(text: string): string {
-  return text.toLocaleUpperCase();
-}
-
-/**
- * Converts all alphabetic characters in the input string to lowercase using locale-aware rules.
- *
- * @returns The input string with letters converted to lowercase according to the current locale.
- */
-export function toLocaleLowerCase(text: string): string {
-  return text.toLocaleLowerCase();
-}
-
-/**
- * Capitalizes the first letter of the string and the first letter following `.`, `!`, or `?`.
- *
- * @param text - The input text to transform
- * @returns The input text with each sentence's initial letter converted to uppercase
- */
-export function toSentenceCase(text: string): string {
-  const lower = text.toLocaleLowerCase();
-  return lower.replace(
-    /(^\s*|[.!?]\s+)(\p{L})/gu,
-    (_m, sep, char: string) => sep + char.toLocaleUpperCase(),
-  );
-}
-
-/**
- * Converts a string to title case using locale-aware casing.
- *
- * Each word's first Unicode letter is uppercased and all other letters are lowercased.
- *
- * @param text - The input string to convert
- * @returns The input string with each word capitalized according to locale-sensitive rules
- */
-export function toTitleCase(text: string): string {
-  return text
-    .toLocaleLowerCase()
-    .replace(/(^|\s)\p{L}/gu, c => c.toLocaleUpperCase());
-}
-
-/**
- * Toggles the case of each character in the input string.
- *
- * Uppercase characters become lowercase and lowercase characters become uppercase;
- * characters without case are left unchanged. Casing conversions are performed
- * using locale-aware APIs.
- *
- * @param text - The string whose characters' case will be toggled
- * @returns The input string with each character's case toggled (uppercase → lowercase, lowercase → uppercase); characters without case are unchanged
- */
-export function removeExtraSpaces(text: string): string {
-  return text
-    .split('\n')
-    .map(line => line.replace(/[ \t]+/g, ' ').trim())
-    .join('\n');
-}
-
-export function removeEmptyLines(text: string): string {
-  return text
-    .split('\n')
-    .filter(line => line.trim().length > 0)
-    .join('\n');
-}
-
-export function removeDuplicateLines(text: string): string {
-  const seen = new Set<string>();
-  return text
-    .split('\n')
-    .filter(line => {
-      if (seen.has(line)) return false;
-      seen.add(line);
-      return true;
-    })
-    .join('\n');
 }

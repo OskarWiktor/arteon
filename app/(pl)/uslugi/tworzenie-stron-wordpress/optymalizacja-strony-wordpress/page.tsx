@@ -16,6 +16,8 @@ import SectionSteps from '@/components/organisms/sections/SectionSteps';
 import { buildServiceSchema } from '@/lib/seo/serviceSchema';
 import { siteUrl } from '@/utils/absoluteUrl';
 import SectionImageGallery from '@/components/organisms/sections/SectionImageGallery';
+import ArticlesCarousel from '@/components/organisms/carousels/ArticlesCarousel';
+import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 
 export const metadata = {
   title:
@@ -385,6 +387,13 @@ export default function OfferOptimizationWordPressPage() {
               btnLink: '/uslugi/marketing/optymalizacja-seo',
             },
           ]}
+        />
+        <Divider line />
+
+        <ArticlesCarousel
+          title='Przydatne artykuły dotyczące stron internetowych'
+          categorySlug='strony'
+          articles={getArticlePreviewsByCategory('strony', 6)}
         />
 
         <Divider size='sm' />

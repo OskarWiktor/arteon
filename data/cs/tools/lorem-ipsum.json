@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Generátor Lorem Ipsum — ukázkový text, odstavce, věty a náhodná slova",
-    "description": "Bezplatný generátor Lorem Ipsum — 8 stylů: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business a další. 9 režimů generování. Zkopírujte jako text nebo HTML.",
+    "description": "Bezplatný generátor Lorem Ipsum — 8 stylů: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business a další. Vygenerujte odstavce, věty nebo slova a zkopírujte výsledek.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-cs.webp",
     "path": "/nastroje/generator-lorem-ipsum"
   },
   "hero": {
     "title": "Generátor Lorem Ipsum — ukázkový text, odstavce, věty a náhodná slova",
-    "description": "8 textových stylů: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal a česká výplňová slova. 9 režimů: odstavce, věty, slova, seznamy, nadpisy, odkazy, tabulky, citáty, definice.",
+    "description": "8 textových stylů: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal a česká výplňová slova. Vygenerujte odstavce, věty nebo slova a zkopírujte výsledek.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-cs.webp"
   },
   "breadcrumbs": {
@@ -36,17 +36,11 @@
         "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Bezplatný generátor Lorem Ipsum — 8 stylů: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business a další. 9 režimů generování. Zkopírujte jako text nebo HTML.",
+      "description": "Bezplatný generátor Lorem Ipsum s 8 styly textu. Generujte odstavce, věty nebo slova, kopírujte do schránky nebo stáhněte jako soubor .txt.",
       "featureList": [
         "Generování odstavců Lorem Ipsum",
         "Generování jednotlivých vět",
         "Generování náhodných slov",
-        "Generování číslovaných a nečíslovaných seznamů",
-        "Generování nadpisů H1–H6",
-        "Generování odkazů s ukázkovými URL",
-        "Generování tabulek s náhodnými daty",
-        "Generování citací",
-        "Generování seznamů definic",
         "Lorem Ipsum — latina z De Finibus",
         "Hipster Ipsum — hipsterský slovník",
         "Business Ipsum — firemní žargon",
@@ -55,35 +49,27 @@
         "Cupcake Ipsum — cukrářství a sladkosti",
         "Pirate Ipsum — pirátský slovník",
         "Legal Ipsum — právní terminologie",
-        "Výstupní formát: prostý text nebo HTML",
-        "Délka odstavce (krátký, střední, dlouhý)",
-        "Statistiky: slova, znaky, věty, odstavce, doba čtení",
         "Kopírování textu do schránky",
-        "Kopírování HTML kódu do schránky",
         "Stažení jako .txt soubor",
         "Lokální zpracování v prohlížeči"
       ]
     },
     "howTo": {
       "name": "Jak používat Generátor Lorem Ipsum",
-      "description": "Vygenerujte text Lorem Ipsum během několika sekund. Vyberte režim, styl a formát, pak zkopírujte nebo stáhněte výsledek.",
+      "description": "Vygenerujte text Lorem Ipsum během několika sekund. Vyberte režim a styl, pak zkopírujte nebo stáhněte výsledek.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Vyberte režim generování",
-          "text": "Vyberte jeden z 9 režimů: odstavce, věty, slova, seznamy, nadpisy, odkazy, tabulka, citace nebo definice. Nastavte počet."
+          "text": "Vyberte odstavce, věty nebo slova a nastavte počet."
         },
         {
           "name": "Vyberte styl textu",
           "text": "Vyberte jeden z 8 stylů: Lorem Ipsum, Hipster, Business, Česká výplňová slova, Bacon, Cupcake, Pirate nebo Legal Ipsum."
         },
         {
-          "name": "Nastavte výstupní formát",
-          "text": "Vyberte prostý text nebo HTML se značkami. Upravte délku odstavce dle potřeby."
-        },
-        {
           "name": "Zkopírujte nebo stáhněte výsledek",
-          "text": "Klikněte na Generovat, pak zkopírujte text, HTML kód nebo stáhněte .txt soubor."
+          "text": "Klikněte na Generovat, pak zkopírujte text do schránky nebo stáhněte .txt soubor."
         }
       ]
     }
@@ -96,7 +82,7 @@
     {
       "type": "sectionBasic",
       "title": "Co je Lorem Ipsum a k čemu slouží",
-      "html": "<p class=\"text-mid\">Lorem Ipsum je standardní výplňový text používaný v tiskařském, grafickém a webovém průmyslu již více než 500 let. Text pochází z díla <em>De Finibus Bonorum et Malorum</em> (O mezích dobra a zla) napsaného Markem Tulliem Ciceronem v roce 45 př. n. l. Původní pasáž byla záměrně pozměněna — slova byla přidána, odstraněna a přeskupena — takže text nemá žádný význam, ale zachovává přirozený rytmus a rozložení písmen podobné skutečnému jazyku.</p><p class=\"text-mid mt-3\">Generátor Lorem Ipsum vám umožňuje rychle vytvořit libovolné množství výplňového textu pro návrhy, prototypy rozhraní, grafické návrhy a typografické testy rozvržení. Nástroj nabízí 9 režimů generování (odstavce, věty, slova, seznamy, nadpisy, odkazy, tabulky, citace, definice), 8 textových stylů a statistiky v reálném čase.</p>",
+      "html": "<p class=\"text-mid\">Lorem Ipsum je standardní výplňový text používaný v tiskařském, grafickém a webovém průmyslu již více než 500 let. Text pochází z díla <em>De Finibus Bonorum et Malorum</em> (O mezích dobra a zla) napsaného Markem Tulliem Ciceronem v roce 45 př. n. l. Původní pasáž byla záměrně pozměněna — slova byla přidána, odstraněna a přeskupena — takže text nemá žádný význam, ale zachovává přirozený rytmus a rozložení písmen podobné skutečnému jazyku.</p><p class=\"text-mid mt-3\">Generátor Lorem Ipsum vám umožňuje rychle vytvořit libovolné množství výplňového textu pro návrhy, prototypy rozhraní, grafické návrhy a typografické testy rozvržení. Nástroj generuje odstavce, věty nebo slova v 8 textových stylech.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-cs.webp",
       "imageAlt": "Generátor Lorem Ipsum — Arteon"
     },
@@ -107,13 +93,13 @@
     {
       "type": "sectionSteps",
       "title": "Jak používat Generátor Lorem Ipsum",
-      "description": "Vygenerujte výplňový text ve čtyřech krocích:",
-      "grid": "four",
+      "description": "Vygenerujte výplňový text ve třech krocích:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "1. Vyberte režim",
-          "description": "Vyberte jeden z 9 režimů: odstavce, věty, slova, seznamy, nadpisy, odkazy, tabulka, citace nebo definice."
+          "title": "1. Vyberte režim a počet",
+          "description": "Vyberte odstavce, věty nebo slova a nastavte počet."
         },
         {
           "icon": "RiPaletteLine",
@@ -121,14 +107,9 @@
           "description": "8 stylů: Lorem Ipsum, Hipster, Business, Česká výplňová slova, Bacon, Cupcake, Pirate a Legal — každý s vlastní slovní zásobou."
         },
         {
-          "icon": "RiSettings3Line",
-          "title": "3. Upravte možnosti",
-          "description": "Nastavte délku odstavce (krátký, střední, dlouhý) a výstupní formát (prostý text nebo HTML se značkami)."
-        },
-        {
           "icon": "RiFileCopyLine",
-          "title": "4. Zkopírujte výsledek",
-          "description": "Klikněte na Generovat, pak zkopírujte text, HTML nebo stáhněte .txt soubor. Statistiky zobrazují počet slov a znaků."
+          "title": "3. Zkopírujte výsledek",
+          "description": "Klikněte na Generovat, pak zkopírujte text do schránky nebo stáhněte .txt soubor."
         }
       ]
     },
@@ -147,14 +128,14 @@
     },
     {
       "type": "sectionSteps",
-      "title": "9 režimů generování obsahu",
-      "description": "Generátor nabízí 9 různých typů obsahu — od klasických odstavců po tabulky a definice:",
+      "title": "3 režimy generování obsahu",
+      "description": "Generátor nabízí 3 typy obsahu:",
       "grid": "three",
       "items": [
         {
           "icon": "RiParagraph",
           "title": "Odstavce",
-          "description": "Klasické textové bloky s řízenou délkou (krátký, střední, dlouhý). Ideální pro webové návrhy, CMS šablony a prototypy rozhraní."
+          "description": "Klasické textové bloky. Ideální pro webové návrhy, CMS šablony a prototypy rozhraní."
         },
         {
           "icon": "RiTextSnippet",
@@ -165,36 +146,6 @@
           "icon": "RiFontSize",
           "title": "Slova",
           "description": "Náhodná jednotlivá slova z vybrané slovní zásoby. Ideální pro štítky, názvy kategorií a testování délky textu v UI komponentech."
-        },
-        {
-          "icon": "RiListUnordered",
-          "title": "Seznamy",
-          "description": "Číslované seznamy (text) nebo &lt;ul&gt;&lt;li&gt; (HTML). Pro navigační menu, seznamy funkcí, specifikace produktů a FAQ položky."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Nadpisy",
-          "description": "Náhodné nadpisy H1–H6 ve formátu Markdown nebo HTML. Pro testování typografické hierarchie a struktury obsahu."
-        },
-        {
-          "icon": "RiLink",
-          "title": "Odkazy",
-          "description": "Odkazy s náhodným textem a ukázkovými URL. Ve formátu Markdown nebo &lt;a href&gt; HTML. Pro prototypování navigace a menu."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Tabulka",
-          "description": "Tabulka s náhodnými záhlavími a daty ve 3–5 sloupcích. Formát Markdown nebo &lt;table&gt; HTML. Pro cenové přehledy a specifikace."
-        },
-        {
-          "icon": "RiDoubleQuotesL",
-          "title": "Citace",
-          "description": "Bloky citací (blockquote) s 1–3 větami. Pro testování stylů citací, referencí a zvýrazněných textových sekcí."
-        },
-        {
-          "icon": "RiBookOpenLine",
-          "title": "Definice",
-          "description": "Páry termín + popis ve &lt;dl&gt;&lt;dt&gt;&lt;dd&gt; HTML nebo textu. Pro glosáře, FAQ sekce a dokumentaci."
         }
       ]
     },
@@ -350,23 +301,13 @@
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "9 režimů generování obsahu",
-          "description": "Odstavce, věty, slova, seznamy, nadpisy, odkazy, tabulky, citace a definice — plná kontrola nad počtem a formátem."
+          "title": "3 režimy generování obsahu",
+          "description": "Odstavce, věty a slova — plná kontrola nad počtem."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 jedinečných textových stylů",
           "description": "Lorem Ipsum, Hipster, Business, Česká výplňová slova, Bacon, Cupcake, Pirate a Legal. Každý styl má 90+ slov."
-        },
-        {
-          "icon": "RiCodeSSlashLine",
-          "title": "Hotový HTML kód",
-          "description": "Generujte text s HTML značkami a zkopírujte hotový kód. Šetří čas při tvorbě prototypů webů."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "Statistiky textu",
-          "description": "Slova, znaky, věty, odstavce, doba čtení a velikost v bajtech — viditelné ihned po generování."
         },
         {
           "icon": "RiUserLine",
@@ -425,19 +366,14 @@
           "answerSchemaText": "Tematické varianty — Hipster používá lifestyle slovník, Business firemní žargon."
         },
         {
-          "question": "Jak generuji Lorem Ipsum s HTML značkami?",
-          "answer": "V nastavení změňte formát z Text na HTML. Generátor automaticky obalí odstavce &lt;p&gt; značkami a seznamy &lt;ul&gt;&lt;li&gt;. Klikněte na Kopírovat HTML. Kód lze přímo vložit do HTML editoru nebo CMS.",
-          "answerSchemaText": "Změňte formát na HTML v nastavení, vygenerujte text a klikněte na Kopírovat HTML."
-        },
-        {
           "question": "Je generátor zdarma a bezpečný?",
           "answer": "Ano. Zcela zdarma, bez registrace a bez omezení. Vše se generuje lokálně v prohlížeči — nic se neodesílá na server. Žádné sledování, žádné cookies, funguje offline po načtení.",
           "answerSchemaText": "Ano — zdarma, bez registrace, lokální zpracování v prohlížeči, žádný sběr dat."
         },
         {
-          "question": "Kolik slov má standardní odstavec?",
-          "answer": "Záleží na nastavení: krátký (2–4 věty, cca 20–50 slov), střední (4–7 vět, cca 40–90 slov), dlouhý (7–12 vět, cca 70–150 slov). Původní první odstavec od Cicerona má přibližně 69 slov.",
-          "answerSchemaText": "Krátký 20–50 slov, střední 40–90 slov, dlouhý 70–150 slov."
+          "question": "Kolik slov má standardní odstavec Lorem Ipsum?",
+          "answer": "Generovaný odstavec má obvykle 4–7 vět, tedy přibližně 40–90 slov. Původní první odstavec od Cicerona má přibližně 69 slov a začíná slovy Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "answerSchemaText": "Generovaný odstavec má obvykle 4–7 vět, tedy přibližně 40–90 slov."
         }
       ]
     },

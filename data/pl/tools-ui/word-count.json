@@ -5,9 +5,6 @@
   "charsWithSpaces": "Znaki (ze spacjami)",
   "charsWithoutSpaces": "Znaki (bez spacji)",
   "sentences": "Zdania",
-  "paragraphs": "Akapity",
-  "uniqueWords": "Unikalne słowa",
-  "avgWordLength": "Śr. długość słowa",
   "readingTime": "Czas czytania",
   "speakingTime": "Czas mówienia",
   "syllables": "Sylaby",
@@ -17,13 +14,5 @@
   "copied": "Skopiowano",
   "clearText": "Wyczyść",
   "statistics": "Statystyki tekstu",
-  "empty": "Wpisz tekst, aby zobaczyć statystyki.",
-  "toolbarTitle": "Narzędzia tekstowe",
-  "uppercase": "WIELKIE LITERY",
-  "lowercase": "małe litery",
-  "sentenceCase": "Jak w zdaniu",
-  "titleCase": "Każde Słowo Wielką Literą",
-  "removeExtraSpaces": "Usuń nadmiarowe spacje",
-  "removeEmptyLines": "Usuń puste linie",
-  "removeDuplicateLines": "Usuń duplikaty linii"
+  "empty": "Wpisz tekst, aby zobaczyć statystyki."
 }

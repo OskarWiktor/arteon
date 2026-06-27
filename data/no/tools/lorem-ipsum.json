@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "Lorem Ipsum-generator — eksempeltekst, avsnitt, setninger og tilfeldige ord",
-    "description": "Gratis Lorem Ipsum-generator — 8 stiler: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business og mer. 9 genereringsmodi. Kopier som tekst eller HTML.",
+    "description": "Gratis Lorem Ipsum-generator — 8 stiler: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business og mer. Generer avsnitt, setninger eller ord, og kopier eller last ned resultatet.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-no.webp",
     "path": "/verktoy/lorem-ipsum-generator"
   },
   "hero": {
     "title": "Lorem Ipsum-generator — eksempeltekst, avsnitt, setninger og tilfeldige ord",
-    "description": "8 tekststiler: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal og norske fyllord. 9 modi: avsnitt, setninger, ord, lister, overskrifter, lenker, tabeller, sitater, definisjoner.",
+    "description": "8 tekststiler: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal og norske fyllord. Generer avsnitt, setninger eller ord, og kopier eller last ned eksempelteksten.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-no.webp"
   },
   "breadcrumbs": {
@@ -36,17 +36,11 @@
         "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis Lorem Ipsum-generator — 8 stiler: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business og mer. 9 genereringsmodi. Kopier som tekst eller HTML.",
+      "description": "Gratis Lorem Ipsum-generator med 8 tekststiler. Generer avsnitt, setninger eller ord, kopier til utklippstavlen eller last ned som .txt-fil.",
       "featureList": [
         "Generere Lorem Ipsum-avsnitt",
         "Generere enkeltsetninger",
         "Generere tilfeldige ord",
-        "Generere nummererte og punktlister",
-        "Generere H1–H6-overskrifter",
-        "Generere lenker med eksempel-URL-er",
-        "Generere tabeller med tilfeldige data",
-        "Generere sitater",
-        "Generere definisjonslister",
         "Lorem Ipsum — latin fra De Finibus",
         "Hipster Ipsum — hipstervokabular",
         "Business Ipsum — bedriftsjargong",
@@ -55,35 +49,27 @@
         "Cupcake Ipsum — bakeri og søtsaker",
         "Pirate Ipsum — piratvokabular",
         "Legal Ipsum — juridisk terminologi",
-        "Utdataformat: ren tekst eller HTML",
-        "Avsnittslengde (kort, middels, lang)",
-        "Statistikk: ord, tegn, setninger, avsnitt, lesetid",
         "Kopiere tekst til utklippstavlen",
-        "Kopiere HTML-kode til utklippstavlen",
         "Laste ned som .txt-fil",
         "Lokal behandling i nettleseren"
       ]
     },
     "howTo": {
       "name": "Slik bruker du Lorem Ipsum-generatoren",
-      "description": "Generer Lorem Ipsum-fylltekst på sekunder. Velg modus, stil og format, kopier eller last ned resultatet.",
+      "description": "Generer Lorem Ipsum-fylltekst på sekunder. Velg modus og stil, kopier eller last ned resultatet.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Velg en genereringsmodus",
-          "text": "Velg en av 9 moduser: avsnitt, setninger, ord, lister, overskrifter, lenker, tabell, sitater eller definisjoner. Angi antall."
+          "text": "Velg avsnitt, setninger eller ord, og angi antall."
         },
         {
           "name": "Velg en tekststil",
           "text": "Velg en av 8 stiler: Lorem Ipsum, Hipster, Business, Norske fyllord, Bacon, Cupcake, Pirate eller Legal Ipsum."
         },
         {
-          "name": "Angi utdataformatet",
-          "text": "Velg ren tekst eller HTML med tagger. Juster avsnittslengden etter behov."
-        },
-        {
           "name": "Kopier eller last ned resultatet",
-          "text": "Klikk på Generer, kopier deretter teksten, HTML-koden eller last ned en .txt-fil."
+          "text": "Klikk på Generer, kopier deretter teksten til utklippstavlen eller last ned en .txt-fil."
         }
       ]
     }
@@ -96,7 +82,7 @@
     {
       "type": "sectionBasic",
       "title": "Hva er Lorem Ipsum og hva brukes det til",
-      "html": "<p class=\"text-mid\">Lorem Ipsum er standardfyllteksten som har blitt brukt i trykkeribransjen, grafisk design og webutvikling i over 500 år. Teksten stammer fra <em>De Finibus Bonorum et Malorum</em> (Om grensene for det gode og det onde) skrevet av Marcus Tullius Cicero i 45 f.Kr. Den opprinnelige passasjen ble bevisst endret — ord ble lagt til, fjernet og omorganisert — slik at teksten ikke har noen mening, men beholder en naturlig rytme og bokstavfordeling som ligner et ekte språk.</p><p class=\"text-mid mt-3\">Lorem Ipsum-generatoren lar deg raskt opprette enhver mengde fylltekst for mockups, UI-prototyper, grafiske design og typografiske layouttester. Verktøyet tilbyr 9 genereringsmoduser (avsnitt, setninger, ord, lister, overskrifter, lenker, tabeller, sitater, definisjoner), 8 tekststiler og sanntidsstatistikk.</p>",
+      "html": "<p class=\"text-mid\">Lorem Ipsum er standardfyllteksten som har blitt brukt i trykkeribransjen, grafisk design og webutvikling i over 500 år. Teksten stammer fra <em>De Finibus Bonorum et Malorum</em> (Om grensene for det gode og det onde) skrevet av Marcus Tullius Cicero i 45 f.Kr. Den opprinnelige passasjen ble bevisst endret — ord ble lagt til, fjernet og omorganisert — slik at teksten ikke har noen mening, men beholder en naturlig rytme og bokstavfordeling som ligner et ekte språk.</p><p class=\"text-mid mt-3\">Lorem Ipsum-generatoren lar deg raskt opprette enhver mengde fylltekst for mockups, UI-prototyper, grafiske design og typografiske layouttester. Verktøyet genererer avsnitt, setninger eller ord i 8 tekststiler.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-no.webp",
       "imageAlt": "Lorem Ipsum-generator — Arteon"
     },
@@ -107,13 +93,13 @@
     {
       "type": "sectionSteps",
       "title": "Slik bruker du Lorem Ipsum-generatoren",
-      "description": "Generer fylltekst i fire trinn:",
-      "grid": "four",
+      "description": "Generer fylltekst i tre trinn:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "1. Velg en modus",
-          "description": "Velg en av 9 moduser: avsnitt, setninger, ord, lister, overskrifter, lenker, tabell, sitater eller definisjoner."
+          "title": "1. Velg modus og antall",
+          "description": "Velg avsnitt, setninger eller ord, og angi antall."
         },
         {
           "icon": "RiPaletteLine",
@@ -121,14 +107,9 @@
           "description": "8 stiler: Lorem Ipsum, Hipster, Business, Norske fyllord, Bacon, Cupcake, Pirate og Legal — hver med sin egen ordbank."
         },
         {
-          "icon": "RiSettings3Line",
-          "title": "3. Juster alternativene",
-          "description": "Angi avsnittslengde (kort, middels, lang) og utdataformat (ren tekst eller HTML med tagger)."
-        },
-        {
           "icon": "RiFileCopyLine",
-          "title": "4. Kopier resultatet",
-          "description": "Klikk på Generer, kopier teksten, HTML-koden eller last ned en .txt-fil. Statistikken viser ord- og tegnantall."
+          "title": "3. Kopier resultatet",
+          "description": "Klikk på Generer, kopier deretter teksten til utklippstavlen eller last ned en .txt-fil."
         }
       ]
     },
@@ -147,14 +128,14 @@
     },
     {
       "type": "sectionSteps",
-      "title": "9 moduser for innholdsgenerering",
-      "description": "Generatoren tilbyr 9 forskjellige innholdstyper — fra klassiske avsnitt til tabeller og definisjoner:",
+      "title": "3 moduser for innholdsgenerering",
+      "description": "Generatoren tilbyr 3 typer innhold:",
       "grid": "three",
       "items": [
         {
           "icon": "RiParagraph",
           "title": "Avsnitt",
-          "description": "Klassiske tekstblokker med kontrollert lengde (kort, middels, lang). Ideelt for webmockups, CMS-maler og UI-prototyper."
+          "description": "Klassiske tekstblokker. Ideelt for webmockups, CMS-maler og UI-prototyper."
         },
         {
           "icon": "RiTextSnippet",
@@ -165,36 +146,6 @@
           "icon": "RiFontSize",
           "title": "Ord",
           "description": "Tilfeldige enkeltord fra den valgte ordbanken. Ideelt for tagger, etiketter, kategorinavn og testing av tekstlengde i UI-komponenter."
-        },
-        {
-          "icon": "RiListUnordered",
-          "title": "Lister",
-          "description": "Nummererte lister (tekst) eller &lt;ul&gt;&lt;li&gt; (HTML). For navigasjonsmenyer, funksjonslister, produktspesifikasjoner og FAQ-elementer."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Overskrifter",
-          "description": "Tilfeldige H1–H6-overskrifter i Markdown- eller HTML-format. For testing av typografisk hierarki og innholdsstruktur."
-        },
-        {
-          "icon": "RiLink",
-          "title": "Lenker",
-          "description": "Lenker med tilfeldig tekst og eksempel-URL-er. I Markdown- eller &lt;a href&gt;-HTML-format. For prototyping av navigasjon og menyer."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Tabell",
-          "description": "Tabell med tilfeldige kolonneoverskrifter og data i 3–5 kolonner. Markdown- eller &lt;table&gt;-HTML-format. For prismockups og spesifikasjonsark."
-        },
-        {
-          "icon": "RiDoubleQuotesL",
-          "title": "Sitater",
-          "description": "Sitatblokker (blockquote) med 1–3 setninger. For testing av sitatstiler, anbefalinger og uthevede tekstseksjoner."
-        },
-        {
-          "icon": "RiBookOpenLine",
-          "title": "Definisjoner",
-          "description": "Term + beskrivelse-par i &lt;dl&gt;&lt;dt&gt;&lt;dd&gt;-HTML eller tekst. For ordlister, FAQ-seksjoner og dokumentasjon."
         }
       ]
     },
@@ -350,23 +301,13 @@
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "9 genereringsmoduser",
-          "description": "Avsnitt, setninger, ord, lister, overskrifter, lenker, tabeller, sitater og definisjoner — full kontroll over antall og format."
+          "title": "3 genereringsmoduser",
+          "description": "Avsnitt, setninger og ord — full kontroll over antallet."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 unike tekststiler",
           "description": "Lorem Ipsum, Hipster, Business, Norske fyllord, Bacon, Cupcake, Pirate og Legal. Hver stil har 90+ ord."
-        },
-        {
-          "icon": "RiCodeSSlashLine",
-          "title": "Ferdig HTML-kode",
-          "description": "Generer tekst med HTML-tagger og kopier den ferdige koden. Sparer tid ved oppretting av nettstedsprototyper."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "Tekststatistikk",
-          "description": "Ord, tegn, setninger, avsnitt, lesetid og størrelse i bytes — synlige umiddelbart etter generering."
         },
         {
           "icon": "RiUserLine",
@@ -425,19 +366,14 @@
           "answerSchemaText": "Tematiske varianter — Hipster bruker livsstilsvokabular, Business bruker bedriftsjargong."
         },
         {
-          "question": "Hvordan genererer jeg Lorem Ipsum med HTML-tagger?",
-          "answer": "I innstillingene, endre formatet fra Tekst til HTML. Generatoren pakker avsnitt med &lt;p&gt; og lister med &lt;ul&gt;&lt;li&gt;. Klikk på Kopier HTML. Koden kan limes inn direkte i en HTML-editor eller CMS.",
-          "answerSchemaText": "Endre formatet til HTML i innstillingene, generer tekst og klikk på Kopier HTML."
-        },
-        {
           "question": "Er generatoren gratis og sikker?",
           "answer": "Ja. Helt gratis, uten registrering og uten begrensninger. Alt genereres lokalt i nettleseren din — ingenting sendes til en server. Ingen sporing, ingen informasjonskapsler, fungerer frakoblet etter lasting.",
           "answerSchemaText": "Ja — gratis, uten registrering, lokal nettleserbehandling, ingen datainnsamling."
         },
         {
           "question": "Hvor mange ord har et standardavsnitt?",
-          "answer": "Avhenger av innstillingen: kort (2–4 setninger, ca. 20–50 ord), middels (4–7 setninger, ca. 40–90 ord), lang (7–12 setninger, ca. 70–150 ord). Ciceros opprinnelige første avsnitt har omtrent 69 ord.",
-          "answerSchemaText": "Kort 20–50 ord, middels 40–90 ord, lang 70–150 ord."
+          "answer": "Det genererte avsnittet har vanligvis 4–7 setninger, altså rundt 40–90 ord. Ciceros opprinnelige første avsnitt har omtrent 69 ord og begynner med Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "answerSchemaText": "Det genererte avsnittet har vanligvis 4–7 setninger, altså rundt 40–90 ord."
         }
       ]
     },

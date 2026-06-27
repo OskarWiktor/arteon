@@ -11,9 +11,7 @@
   "descriptionTooShort": "De beschrijving is erg kort. Voeg meer tekst toe om uit te leggen wat de gebruiker op de pagina zal vinden en waarom hij moet klikken.",
   "descriptionTooLong": "De beschrijving overschrijdt het bereik dat Google meestal volledig toont (ongeveer 150-160 tekens of ~920 pixels). Het kan worden afgekapt of vervangen door een ander fragment.",
   "descriptionGoodLength": "De beschrijving valt binnen het typische bereik voor zoekresultaten (ongeveer 120-160 tekens en tot ~920 pixels), voldoende voor 2-3 korte zinnen.",
-  "addUrl": "URL toevoegen (optioneel)",
-  "urlPlaceholder": "www.uwdomein.nl/pagina",
-  "urlHelper": "De URL wordt alleen gebruikt in het voorbeeld – het heeft geen invloed op de berekening van de lengte van de metatitel en beschrijving.",
+  "exampleUrl": "https://www.uwdomein.nl/pagina",
   "enterTitleLabel": "Metatitel invoeren",
   "titlePlaceholder": "Bijv. SEO-diensten voor websites – Arteon",
   "chars": "Tekens",
@@ -23,8 +21,6 @@
   "enterDescriptionLabel": "Metabeschrijving invoeren",
   "descriptionPlaceholder": "Beschrijf in 2-3 zinnen wat de gebruiker op de pagina zal vinden en welk voordeel hij zal behalen. Verwerk uw belangrijkste zoekwoorden op natuurlijke wijze.",
   "noDescription": "Geen beschrijving",
-  "previewTitle": "Voorbeeld van het Google-resultaat",
-  "previewHelper": "Het voorbeeld is bij benadering – Google kan de titel en beschrijving aanpassen op basis van schermbreedte en tekst",
   "exampleTitle": "Voorbeeldpaginatitel – Aanbod / Dienst",
   "exampleDescription": "Hier verschijnt een voorbeeld van de beschrijving van uw pagina. Beschrijf kort wat u biedt, hoe u de klant helpt en waarom deze pagina een bezoek waard is."
 }

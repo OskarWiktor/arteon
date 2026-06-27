@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { RiFileCopyLine, RiCheckLine, RiDeleteBinLine } from 'react-icons/ri';
 import Button from '@/components/atoms/buttons/Button';
 import Textarea from '@/components/atoms/form/Textarea';
-import ToolFieldRow from '@/components/molecules/ToolFieldRow';
 import ToolHelper from '@/components/molecules/tools/ToolHelper';
 import ToolStatRow from '@/components/molecules/tools/ToolStatRow';
 import Card from '@/components/organisms/Card';
@@ -16,27 +15,11 @@ import {
   getReadabilityLabel,
   getReadabilityColor,
 } from '@/lib/tools/text/readability';
-import {
-  analyzeText,
-  formatReadingTime,
-  toLocaleUpperCase,
-  toLocaleLowerCase,
-  toSentenceCase,
-  toTitleCase,
-  removeExtraSpaces,
-  removeEmptyLines,
-  removeDuplicateLines,
-} from '@/lib/tools/text/wordCount';
+import { analyzeText, formatReadingTime } from '@/lib/tools/text/wordCount';
 import { smallIconSizeClasses } from '@/lib/uiClasses';
 
 /**
- * Render the word count tool UI that analyzes editable text, displays statistics and readability,
- * provides copy/clear actions, and exposes a toolbar of locale-aware text transformation actions.
- *
- * The component tracks editable `text` state, computes `metrics` via `analyzeText(text, locale)`,
- * and derives readability label/color. Toolbar actions transform the current text (case changes,
- * whitespace/line operations, deduplication). Copy and clear controls are disabled when
- * the input is empty; toolbar buttons are disabled when there is no text.
+ * Render the word count tool UI that analyzes editable text and displays statistics and readability.
  *
  * @returns A JSX element rendering the complete word count tool interface.
  */
@@ -51,36 +34,15 @@ export default function WordCountTool() {
   const readabilityLabel = getReadabilityLabel(metrics.fleschScore, locale);
   const readabilityColor = getReadabilityColor(metrics.fleschScore, locale);
 
-  const toolbarActions: {
-    key: string;
-    label: string;
-    fn: (t: string) => string;
-  }[] = [
-    { key: 'uppercase', label: t.uppercase, fn: toLocaleUpperCase },
-    { key: 'lowercase', label: t.lowercase, fn: toLocaleLowerCase },
-    { key: 'sentenceCase', label: t.sentenceCase, fn: toSentenceCase },
-    { key: 'titleCase', label: t.titleCase, fn: toTitleCase },
-    {
-      key: 'removeExtraSpaces',
-      label: t.removeExtraSpaces,
-      fn: removeExtraSpaces,
-    },
-    {
-      key: 'removeEmptyLines',
-      label: t.removeEmptyLines,
-      fn: removeEmptyLines,
-    },
-    {
-      key: 'removeDuplicateLines',
-      label: t.removeDuplicateLines,
-      fn: removeDuplicateLines,
-    },
-  ];
-
   return (
     <div className='space-y-4 overflow-hidden'>
       <div className='grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]'>
-        <Card interactive={false} padding='lg' variant='outlined'>
+        <Card
+          interactive={false}
+          padding='lg'
+          variant='outlined'
+          className='order-2 lg:order-1'
+        >
           <div>
             <h2 className='h6 pb-2'>{t.statistics}</h2>
             <ToolHelper>{metrics.words === 0 ? t.empty : ''}</ToolHelper>
@@ -100,12 +62,6 @@ export default function WordCountTool() {
               value={metrics.charsWithoutSpaces}
             />
             <ToolStatRow label={t.sentences} value={metrics.sentences} />
-            <ToolStatRow label={t.paragraphs} value={metrics.paragraphs} />
-            <ToolStatRow label={t.uniqueWords} value={metrics.uniqueWords} />
-            <ToolStatRow
-              label={t.avgWordLength}
-              value={metrics.avgWordLength}
-            />
             <ToolStatRow
               label={t.readingTime}
               value={formatReadingTime(metrics.readingTimeMinutes, locale)}
@@ -167,40 +123,22 @@ export default function WordCountTool() {
           </div>
         </Card>
 
-        <Card interactive={false} padding='lg' variant='outlined'>
-          <ToolFieldRow htmlFor='wordcount-input' label={t.pasteText}>
-            <Textarea
-              id='wordcount-input'
-              value={text}
-              onChange={e => setText(e.target.value)}
-              className='min-h-100 resize-y'
-              placeholder={t.textPlaceholder}
-            />
-          </ToolFieldRow>
+        <Card
+          interactive={false}
+          padding='lg'
+          variant='outlined'
+          className='order-1 lg:order-2'
+        >
+          <h2 className='h6 mb-2'>{t.pasteText}</h2>
+          <Textarea
+            id='wordcount-input'
+            value={text}
+            onChange={e => setText(e.target.value)}
+            className='min-h-100 resize-y'
+            placeholder={t.textPlaceholder}
+          />
         </Card>
       </div>
-
-      <Card
-        interactive={false}
-        padding='sm'
-        className='flex flex-row flex-wrap'
-        variant='outlined'
-      >
-        <span className='tool-value'>{t.toolbarTitle}</span>
-        <div className='flex flex-wrap gap-2'>
-          {toolbarActions.map(action => (
-            <button
-              key={action.key}
-              type='button'
-              onClick={() => setText(action.fn(text))}
-              disabled={!text}
-              className='tool-button tool-button-inactive disabled:cursor-not-allowed disabled:opacity-40'
-            >
-              {action.label}
-            </button>
-          ))}
-        </div>
-      </Card>
     </div>
   );
 }

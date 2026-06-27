@@ -41,8 +41,7 @@
         "Generování PWA ikon 192x192 a 512x512",
         "Podpora PNG, JPG a SVG zdrojových obrázků",
         "Nastavení barvy pozadí",
-        "Generování souboru manifest.json pro PWA",
-        "Stažení všech souborů jako ZIP",
+        "Stažení všech souborů jedním kliknutím",
         "Stažení jednotlivých souborů",
         "Soulad s Lighthouse",
         "Zpracování v prohlížeči (soubory se neodesílají na server)",
@@ -51,24 +50,20 @@
     },
     "howTo": {
       "name": "Jak vygenerovat favicon z obrázku",
-      "description": "Jak vygenerovat favicon.ico a PNG ikony z jednoho obrázku pro prohlížeče a mobilní zařízení.",
+      "description": "Jak vygenerovat favicon.ico a PNG ikony (16x16, 32x32, 180x180, 512x512) z jednoho obrázku pro prohlížeče a mobilní zařízení.",
       "totalTime": "PT2M",
       "steps": [
         {
           "name": "Nahrajte obrázek",
-          "text": "Přetáhněte soubor do vyznačené oblasti nebo jej vyberte ze zařízení. Podporované formáty jsou JPG, PNG, SVG a WebP."
+          "text": "Přetáhněte soubor do vyznačené oblasti nebo jej vyberte ze zařízení. Podporované formáty jsou PNG, JPG a SVG."
         },
         {
-          "name": "Ořízněte obrázek",
-          "text": "Upravte oblast ořezu pro výběr vhodné části obrázku pro favicon."
-        },
-        {
-          "name": "Zkontrolujte náhled",
-          "text": "Podívejte se, jak favicon vypadá v záložce prohlížeče a v různých velikostech."
+          "name": "Nastavte pozadí",
+          "text": "Zvolte barvu pozadí ikony nebo zachovejte průhlednost."
         },
         {
           "name": "Stáhněte ikony",
-          "text": "Stáhněte favicon.ico a kompletní sadu PNG ikon v souboru ZIP."
+          "text": "Nástroj vygeneruje favicon.ico a kompletní sadu PNG ikon. Stáhněte všechny soubory jedním kliknutím nebo každou ikonu samostatně."
         }
       ]
     }
@@ -101,13 +96,13 @@
           "icon": "RiImageLine"
         },
         {
-          "title": "2. Ořízněte a upravte",
-          "description": "Upravte oblast ořezu pro výběr vhodné části obrázku. Podívejte se, jak vypadá v různých velikostech.",
+          "title": "2. Nastavte pozadí",
+          "description": "Zvolte barvu pozadí ikony nebo zachovejte průhlednost.",
           "icon": "RiAspectRatioLine"
         },
         {
           "title": "3. Stáhněte ikony",
-          "description": "Stáhněte favicon.ico a kompletní sadu PNG ikon v souboru ZIP. Všechny ikony jsou připraveny k použití.",
+          "description": "Stáhněte favicon.ico a kompletní sadu PNG ikon jedním kliknutím nebo každý soubor samostatně. Všechny ikony jsou připraveny k použití.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -119,7 +114,7 @@
     {
       "type": "sectionInfo",
       "title": "Jaké ikony generátor vytváří?",
-      "html": "<p class=\"text-mid mb-6\">Kaźdá velikost má své využití:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Klasický formát rozpoznávaný všemi prohlížeči. Zobrazuje se na záložce prohlížeče.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 a 32×32 PNG</p><p class=\"text-mid text-sm\">Standardní velikosti pro moderní prohlížeče. Zobrazují se na záložkách a v panelech.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Ikona pro zařízení Apple (iPhone, iPad). Zobrazuje se na domovské obrazovce po přidání stránky.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 a 512×512 PNG</p><p class=\"text-mid text-sm\">Ikony pro webové aplikace (PWA). Vyžadovány manifestem a používány v obchodech s aplikacemi.</p></div></div><p class=\"text-light mt-6\">Pokud nevytváříte PWA, stačí vám: favicon.ico, 32×32 PNG a 180×180 PNG. Tyto tři soubory pokryjí většinu případů použití.</p>"
+      "html": "<p class=\"text-mid mb-6\">Kaźdá velikost má své využití:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Klasický formát rozpoznávaný všemi prohlížeči. Zobrazuje se na záložce prohlížeče.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 a 32×32 PNG</p><p class=\"text-mid text-sm\">Standardní velikosti pro moderní prohlížeče. Zobrazují se na záložkách a v panelech.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Ikona pro zařízení Apple (iPhone, iPad). Zobrazuje se na domovské obrazovce po přidání stránky.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 a 512×512 PNG</p><p class=\"text-mid text-sm\">Ikony pro webové aplikace (PWA), používané také v obchodech s aplikacemi.</p></div></div><p class=\"text-light mt-6\">Pokud nevytváříte PWA, stačí vám: favicon.ico, 32×32 PNG a 180×180 PNG. Tyto tři soubory pokryjí většinu případů použití.</p>"
     },
     {
       "type": "gap",
@@ -168,19 +163,14 @@
           "description": "<div><p class=\"mb-2\">Přetáhněte soubor na vyznačenou oblast nebo vyberte obrázek z disku.</p><p class=\"text-light\">Podporované formáty: PNG, JPG, SVG. Nejlépe funguje jednoduché logo nebo ikona o rozměrech alespoň 512×512 pixelů.</p></div>"
         },
         {
-          "icon": "RiLayoutGridLine",
-          "title": "2. Zvolte velikosti ikon",
-          "description": "<div><p class=\"mb-2\">Zaškrtněte, které velikosti ikon potřebujete.</p><p class=\"text-light\">Můžete vybrat všechny nebo jen některé. Pro běžný web stačí: favicon.ico, 32×32 a 180×180.</p></div>"
-        },
-        {
           "icon": "RiSettings3Line",
-          "title": "3. Nastavte možnosti generování",
-          "description": "<div><p class=\"mb-2\">Nastavte doplňkové možnosti:</p><ul class=\"text-light list-disc pl-5\"><li><strong>Pozadí</strong> – průhledné nebo zvolená barva</li><li><strong>Manifest</strong> – konfigurační soubor pro PWA</li><li><strong>Automatické stažení</strong> – soubory se stáhnou ihned po vygenerování</li></ul></div>"
+          "title": "2. Nastavte pozadí",
+          "description": "<div><p class=\"mb-2\">Zvolte pozadí ikony.</p><p class=\"text-light\"><strong>Pozadí</strong> – průhledné nebo zvolená barva.</p></div>"
         },
         {
           "icon": "RiDownloadLine",
-          "title": "4. Vygenerujte a stáhněte soubory",
-          "description": "<div><p class=\"mb-2\">Po spuštění generování nástroj zpracuje obrázek lokálně – nic se neodesílá na server.</p><p class=\"text-light\">Stáhněte všechny soubory jako ZIP archiv nebo stáhněte jednotlivé ikony zvlášť.</p></div>"
+          "title": "3. Vygenerujte a stáhněte soubory",
+          "description": "<div><p class=\"mb-2\">Po spuštění generování nástroj zpracuje obrázek lokálně – nic se neodesílá na server.</p><p class=\"text-light\">Stáhněte všechny soubory jedním kliknutím nebo stáhněte jednotlivé ikony zvlášť.</p></div>"
         }
       ]
     },
@@ -190,9 +180,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "Možnosti generování – co dělá každá z nich?",
-      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Velikosti PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Průhledné pozadí (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Barva pozadí:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
-      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Pozadí (průhledné nebo barva)</h3><p class=\"text-mid\">Ve výchozím nastavení generátor zachovává průhlednost. Můžete také zvolit konkrétní barvu pozadí.</p></div><div><h3 class=\"h5 mb-2\">Generovat manifest (site.webmanifest)</h3><p class=\"text-mid\">Konfigurační JSON soubor pro webové aplikace (PWA). Pokud nevytváříte PWA, tato možnost není potřeba.</p></div></div>"
+      "title": "Možnost generování – co dělá?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Průhledné pozadí (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Barva pozadí:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Pozadí (průhledné nebo barva)</h3><p class=\"text-mid\">Ve výchozím nastavení generátor zachovává průhlednost. Můžete také zvolit konkrétní barvu pozadí.</p></div></div>"
     },
     {
       "type": "gap",
@@ -206,8 +196,8 @@
       "items": [
         {
           "icon": "RiFolderZipLine",
-          "title": "Stáhnout vše jako ZIP",
-          "description": "Tlačítko Stáhnout vše zabalí všechny vygenerované soubory do jednoho ZIP archivu. To je nejpohodlnější volba, když potřebujete kompletní sadu ikon."
+          "title": "Stáhnout vše jedním kliknutím",
+          "description": "Tlačítko Stáhnout uloží všechny vygenerované soubory najednou. To je nejpohodlnější volba, když potřebujete kompletní sadu ikon."
         },
         {
           "icon": "RiFileDownloadLine",
@@ -326,8 +316,13 @@
         },
         {
           "question": "Jak přidat favicon na web?",
-          "answer": "Umístěte soubory ikon do kořenové složky webu a přidejte příslušné HTML tagy do sekce &lt;head&gt; stránky. Stažený ZIP soubor obsahuje pokyny pro implementaci.",
+          "answer": "Umístěte soubory ikon do kořenové složky webu a přidejte příslušné HTML tagy do sekce &lt;head&gt; stránky.",
           "answerSchemaText": "Umístěte soubory ikon do kořenové složky webu a přidejte HTML tagy do sekce head."
+        },
+        {
+          "question": "Mohu vygenerovat jen favicon.ico bez ostatních ikon?",
+          "answer": "Nástroj vždy vygeneruje celou sadu: favicon.ico a PNG ikony 16×16, 32×32, 180×180, 192×192 a 512×512. Po vygenerování si můžete stáhnout jen ty soubory, které potřebujete – každá ikona má vlastní tlačítko stažení.",
+          "answerSchemaText": "Nástroj vygeneruje celou sadu ikon najednou, ale stáhnout si můžete jen ty soubory, které potřebujete."
         }
       ]
     },

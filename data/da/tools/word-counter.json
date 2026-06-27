@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "Ord-, tegn- og læsetidstæller med tekstformatering",
-    "description": "Gratis tæller for ord, tegn, sætninger, afsnit og læsetid med store/små bogstaver-konverter. Kontrollér tekstlængden og ændr bogstaverne.",
+    "description": "Gratis tæller for ord, tegn, sætninger og læsetid. Kontrollér tekstlængden og vurder læsbarheden, direkte i browseren.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegntaeller-da.webp",
     "path": "/da/vaerktojer/ord-og-tegntaeller"
   },
   "hero": {
     "title": "Tæl ord og tegn – kontrollér læsetid og formatér tekst",
-    "description": "Indsæt din tekst, og værktøjet tæller ord, tegn, sætninger, afsnit, unikke ord og læsetid. Skift store bogstaver eller fjern duplikater",
+    "description": "Indsæt din tekst, og værktøjet tæller ord, tegn, sætninger og læsetid og viser en læsbarhedsscore.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -39,41 +39,31 @@
         "Gratis ord- og tegntæller"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis ord- og tegntæller med tekstformateringsværktøjer. Tæller ord, tegn, sætninger, afsnit, unikke ord og læsetid. Tilbyder 7 værktøjer: ændring af store/små bogstaver, fjernelse af mellemrum, tomme linjer og duplikater.",
+      "description": "Gratis ord- og tegntæller. Tæller ord, tegn, sætninger og læsetid og viser en Flesch-Kincaid læsbarhedsscore.",
       "featureList": [
         "Optælling af ord",
         "Optælling af tegn med og uden mellemrum",
-        "Optælling af sætninger og afsnit",
-        "Optælling af unikke ord",
-        "Gennemsnitlig ordlængde",
+        "Optælling af sætninger",
         "Estimeret læsetid",
         "Anslået taletid",
         "Stavelsestælling",
         "Flesch-Kincaid læsbarhedsscore",
         "Sprogspecifikke læsbarhedsformler (16 sprog)",
-        "Konvertér til store eller små bogstaver",
-        "Konvertér til sætnings- eller titelstil",
-        "Fjern overflødige mellemrum",
-        "Fjern tomme linjer og duplikater",
         "Kopiér tekst til udklipsholder"
       ]
     },
     "howTo": {
       "name": "Sådan bruger du ord- og tegntælleren",
-      "description": "Analyser og formater tekst i tre trin:",
+      "description": "Analyser tekst i tre trin:",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Indsæt tekst",
-          "text": "Indsæt eller skriv tekst. Værktøjet tæller straks ord, tegn, sætninger, afsnit og unikke ord."
+          "text": "Indsæt eller skriv tekst. Værktøjet tæller straks ord, tegn og sætninger."
         },
         {
           "name": "Tjek statistikken",
-          "text": "I venstre panel ser du 11 metrikker: ord, tegn med og uden mellemrum, sætninger, afsnit, unikke ord, ordlængde, læsetid, taletid, stavelser og Flesch-Kincaid score."
-        },
-        {
-          "name": "Transformer tekst",
-          "text": "Under tekstfeltet finder du 7 transformationsværktøjer."
+          "text": "I venstre panel ser du 8 metrikker: ord, tegn med og uden mellemrum, sætninger, læsetid, taletid, stavelser og Flesch-Kincaid score."
         },
         {
           "name": "Kopiér resultatet",
@@ -90,7 +80,7 @@
     {
       "type": "sectionBasic",
       "title": "Gratis ord- og tegntæller med tekstværktøjer",
-      "html": "<p class=\"text-mid\">Dette værktøj kombinerer en ord- og tegntæller med Flesch-Kincaid læsbarheds­analyse og tekstformateringsværktøjer. Indsæt din tekst for at se ord, tegn, stavelser, sætninger, afsnit, unikke ord, læsetid, taletid og en farvekodet læsbarhedsscore.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid læsbarhedsscore</strong> (0–100) viser, hvor let teksten er at læse. Score over 70 betyder letlæselig tekst, under 30 akademisk niveau. Værktøjet tilpasser formlen efter tekstens sprog.</p><p class=\"text-mid mt-3\">Under tekstfeltet finder du 7 værktøjer: bogstavkonvertering, fjernelse af mellemrum, tomme linjer og duplikater. Alt kører lokalt i browseren.</p>",
+      "html": "<p class=\"text-mid\">Dette værktøj kombinerer en ord- og tegntæller med Flesch-Kincaid læsbarheds­analyse. Indsæt din tekst for at se ord, tegn, stavelser, sætninger, læsetid, taletid og en farvekodet læsbarhedsscore.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid læsbarhedsscore</strong> (0–100) viser, hvor let teksten er at læse. Score over 70 betyder letlæselig tekst, under 30 akademisk niveau. Værktøjet tilpasser formlen efter tekstens sprog.</p><p class=\"text-mid mt-3\">Alt kører lokalt i browseren - din tekst sendes aldrig til en server.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegntaeller-da.webp",
       "imageAlt": "Ord- og tegntæller – Arteon"
     },
@@ -101,27 +91,22 @@
     {
       "type": "sectionSteps",
       "title": "Sådan bruger du ord- og tegntælleren",
-      "description": "Analyser og formater tekst i tre trin:",
-      "grid": "four",
+      "description": "Analyser tekst i tre trin:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Indsæt tekst",
-          "description": "Indsæt eller skriv tekst. Værktøjet tæller straks ord, tegn, sætninger, afsnit og unikke ord."
+          "description": "Indsæt eller skriv tekst. Værktøjet tæller straks ord, tegn og sætninger."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Tjek statistikken",
-          "description": "I venstre panel ser du 11 metrikker: ord, tegn med og uden mellemrum, sætninger, afsnit, unikke ord, ordlængde, læsetid, taletid, stavelser og Flesch-Kincaid score."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Transformer tekst",
-          "description": "Under tekstfeltet finder du 7 transformationsværktøjer."
+          "description": "I venstre panel ser du 8 metrikker: ord, tegn med og uden mellemrum, sætninger, læsetid, taletid, stavelser og Flesch-Kincaid score."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Kopiér resultatet",
+          "title": "3. Kopiér resultatet",
           "description": "Klik på Kopiér tekst. Brug Ryd for at starte forfra."
         }
       ]
@@ -145,8 +130,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 tekstmetrikker – hvad tælleren måler",
-      "description": "Tælleren analyserer din tekst med elleve indikatorer:",
+      "title": "8 tekstmetrikker – hvad tælleren måler",
+      "description": "Tælleren analyserer din tekst med otte indikatorer:",
       "grid": "two",
       "items": [
         {
@@ -168,21 +153,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Sætninger",
           "description": "Antal sætninger i teksten. Hjælper med at vurdere kompleksitet og læsbarhed - kortere sætninger er nemmere at optage."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Afsnit",
-          "description": "Tekstblokke adskilt af blanke linjer. Velstrukturerede afsnit forbedrer læsbarheden på skærme."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Unikke ord",
-          "description": "Antal ikke-gentagne ord. En højere andel af unikke ord indikerer et rigere ordforråd."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Gennemsnitlig ordlængde",
-          "description": "Gennemsnitligt antal tegn per ord. En indikator for tekstkompleksitet - tekniske tekster har længere ord."
         },
         {
           "icon": "RiTimeLine",
@@ -212,53 +182,6 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 tekstformateringsværktøjer",
-      "description": "Under tekstfeltet finder du knapper til hurtig transformation:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "STORE BOGSTAVER",
-          "description": "Konverterer al tekst til store bogstaver. Nyttigt til overskrifter, forkortelser og fremhævning af tekst."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "små bogstaver",
-          "description": "Konverterer al tekst til små bogstaver. Nyttigt til normalisering af tekst kopieret fra forskellige kilder."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Sætningsstil",
-          "description": "Første bogstav i hver sætning er stort, resten små. Standardformat for løbende tekst."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Titelstil",
-          "description": "Hvert ord starter med stort bogstav. Ideel til titler, overskrifter og egennavne."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Fjern ekstra mellemrum",
-          "description": "Reducerer flere mellemrum til ét og fjerner mellemrum i begyndelsen og slutningen af hver linje."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Fjern tomme linjer",
-          "description": "Fjerner tomme og overflødige linjer fra teksten. Nyttigt til rensning af tekst kopieret fra hjemmesider."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Fjern duplikerede linjer",
-          "description": "Beholder kun unikke linjer og fjerner gentagelser. Nyttigt til rensning af lister og data."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
       "title": "Hvem er ordtælleren til?",
       "description": "Værktøjet er nyttigt for alle, der arbejder med tekst:",
       "grid": "three",
@@ -266,12 +189,12 @@
         {
           "icon": "RiEditLine",
           "title": "Copywriters og redaktører",
-          "description": "Tæl ord og tegn, tjek platformsgrænser, skift hurtigt bogstavstørrelse og rens tekst før publicering."
+          "description": "Tæl ord og tegn, tjek platformsgrænser og vurder tekstens læsbarhed før publicering."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Bloggere og indholdsskabere",
-          "description": "Overvåg indlægslængde, tjek læsetid og fjern duplikerede linjer."
+          "description": "Overvåg indlægslængde og tjek læsetid."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -281,7 +204,7 @@
         {
           "icon": "RiSearchLine",
           "title": "SEO-specialister",
-          "description": "Analysér indholdslængde, tæl unikke ord og vurder tekstkompleksitet baseret på gennemsnitlig ordlængde."
+          "description": "Analysér indholdslængde og vurder tekstens læsbarhed med Flesch-Kincaid score."
         },
         {
           "icon": "RiGraduationCapLine",
@@ -324,13 +247,8 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 metrikker + læsbarhedsscore",
-          "description": "Ord, tegn, stavelser, sætninger, afsnit, unikke ord, læsetid, taletid og Flesch-Kincaid."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 formateringsværktøjer",
-          "description": "Bogstavstørrelsekonvertering, fjernelse af mellemrum, tomme linjer og duplikater - uden ekstra software."
+          "title": "8 metrikker + læsbarhedsscore",
+          "description": "Ord, tegn, stavelser, sætninger, læsetid, taletid og Flesch-Kincaid."
         },
         {
           "icon": "RiUserLine",

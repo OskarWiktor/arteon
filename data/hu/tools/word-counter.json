@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "hu",
   "metadata": {
-    "title": "Szó-, karakter- és olvasásiidő-számláló szövegformázással",
-    "description": "Ingyenes szó-, karakter-, mondat-, bekezdés- és olvasásiidő-számláló kis- és nagybetű-konverterrel. Ellenőrizze a szöveg hosszát és módosítsa a betűket.",
+    "title": "Ingyenes szó-, karakter- és olvasásiidő-számláló",
+    "description": "Illessze be a szöveget, és az eszköz megszámolja a szavakat, karaktereket, mondatokat, szótagokat és az olvasási időt, valamint értékeli az olvashatóságot. Ingyenes szó- és karakterszámláló.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp",
     "path": "/hu/eszkozok/szo-es-karakterszamlalo"
   },
   "hero": {
-    "title": "Számolja a szavakat és karaktereket – olvasási idő és formázás",
-    "description": "Illessze be szövegét, és az eszköz megszámolja a szavakat, karaktereket, mondatokat, bekezdéseket, egyedi szavakat és az olvasási időt",
+    "title": "Ingyenes szó-, karakter- és olvasásiidő-számláló",
+    "description": "Illessze be a szöveget, és az eszköz megszámolja a szavakat, karaktereket, mondatokat, szótagokat és az olvasási időt, valamint értékeli az olvashatóságot. Ingyenes szó- és karakterszámláló.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,56 +24,44 @@
   },
   "schemas": {
     "software": {
-      "name": "Szó-, karakter- és olvasásiidő-számláló szövegformázással",
+      "name": "Szó-, karakter- és olvasásiidő-számláló",
       "alternateName": [
         "Szószámláló",
         "Karakterszámláló szóközökkel és anélkül",
         "Szószámláló eszköz copywritereknek",
         "Olvasási idő kalkulátor",
-        "Kis-/nagybetű átalakító",
         "Flesch-Kincaid olvashatóság-ellenőrző",
         "Szótagszámláló",
         "Beszédidő kalkulátor",
         "Szöveg olvashatósági eszköz",
-        "Ismétlődő sorok eltávolítása",
         "Ingyenes szó- és karakterszámláló"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Ingyenes szó- és karakterszámláló szövegformázó eszközökkel. Megszámolja a szavakat, karaktereket, mondatokat, bekezdéseket, egyedi szavakat és az olvasási időt. 7 eszközt kínál: kis-/nagybetű-konverzió, szóközök, üres sorok és duplikátumok eltávolítása.",
+      "description": "Ingyenes szó- és karakterszámláló magyarul. Megszámolja a szavakat, karaktereket, mondatokat, szótagokat és az olvasási időt, és ráadásul értékeli a szöveg olvashatóságát.",
       "featureList": [
         "Szavak számlálása",
         "Karakterek számlálása szóközökkel és anélkül",
-        "Mondatok és bekezdések számlálása",
-        "Egyedi szavak számlálása",
-        "Átlagos szóhossz",
+        "Mondatok számlálása",
         "Becsült olvasási idő",
         "Becsült beszédidő",
         "Szótagszámlálás",
         "Flesch-Kincaid olvashatósági pontszám",
         "Nyelvspecifikus olvashatósági képletek (16 nyelv)",
-        "Nagybetűsre vagy kisbetűsre konvertálás",
-        "Mondatstílusra vagy címstílusra konvertálás",
-        "Felesleges szóközök eltávolítása",
-        "Üres sorok és duplikátumok eltávolítása",
         "Szöveg vágólapra másolása"
       ]
     },
     "howTo": {
       "name": "Hogyan használja a szószámlálót",
-      "description": "Elemezze és formázza a szöveget három lépésben:",
+      "description": "Számolja meg a szavakat, karaktereket, szótagokat és mondatokat. Ellenőrizze a Flesch-Kincaid olvashatóságot, az olvasási időt és a beszédidőt.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Illessze be a szöveget",
-          "text": "Illessze be vagy írja be a szöveget. Az eszköz azonnal megszámolja a szavakat, karaktereket, mondatokat és bekezdéseket."
+          "text": "Illessze be vagy írja be a szöveget a szövegmezőbe. Az eszköz azonnal megszámolja a szavakat, karaktereket, mondatokat és becsüli az olvasási időt."
         },
         {
           "name": "Ellenőrizze a statisztikákat",
-          "text": "A bal oldali panelen 11 metrikat latsz: szavak, karakterek szokozokkel es nelkul, mondatok, bekezdések, egyedi szavak, atlagos szohossz, olvasasi ido, beszedido, szotagok es Flesch-Kincaid pontszam."
-        },
-        {
-          "name": "Alakítsa át a szöveget",
-          "text": "A szövegmező alatt 7 átalakító eszközt talál."
+          "text": "A bal oldali panelen 8 szövegmetrikát lát: szavak, karakterek szóközökkel és nélkül, mondatok, olvasási idő, beszédidő, szótagok és Flesch-Kincaid pontszám."
         },
         {
           "name": "Másolja az eredményt",
@@ -89,8 +77,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Ingyenes szó- és karakterszámláló szövegeszközökkel",
-      "html": "<p class=\"text-mid\">Ez az eszkoz otvozi a szo- es karakterszamlalot a Flesch-Kincaid olvashatosagi elemzessel es szovegformazo funkciokkal. Illeszd be a szoveget, es megjelenik a szavak, karakterek, szotagok, mondatok, bekezdések, egyedi szavak, olvasasi ido, beszedido es a szinkodolt olvashatosagi pontszam.</p><p class=\"text-mid mt-3\">A <strong>Flesch-Kincaid olvashatosagi pontszam</strong> (0–100) megmutatja, mennyire konnyu olvasni a szoveget. 70 feletti pontszam konnyu olvasast, 30 alatti akademiai szintet jelent.</p><p class=\"text-mid mt-3\">A szovegmezo alatt 7 eszkozt talalsz: kis-nagybetu atalakitas, szokozok, ures sorok, duplikatumok eltavolitasa. Minden feldolgozas helyben, a bongeszoben tortenik.</p>",
+      "title": "Szó-, karakter- és olvasásiidő-számláló",
+      "html": "<p class=\"text-mid\">Ez az eszköz ötvözi a szó- és karakterszámlálót a Flesch-Kincaid olvashatósági elemzéssel. Illessze be a szöveget, és megjelenik a szavak, karakterek, szótagok, mondatok, olvasási idő, beszédidő és a színkódolt olvashatósági pontszám.</p><p class=\"text-mid mt-3\">A <strong>Flesch-Kincaid olvashatósági pontszám</strong> (0–100) megmutatja, mennyire könnyű olvasni a szöveget. 70 feletti pontszám könnyű olvasást jelent a széles közönség számára, 30 alatti pedig akadémiai szintet. Az eszköz 16 nyelvhez igazított képleteket használ, köztük az Amstad-féle (német), Fernández-Huerta-féle (spanyol) és Gulpease-féle (olasz) formulát.</p><p class=\"text-mid mt-3\">Minden elemzés és szövegfeldolgozás helyben, a böngészőben történik.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/szo-es-karakterszamlalo-hu.webp",
       "imageAlt": "Szó- és karakterszámláló – Arteon"
     },
@@ -101,34 +89,25 @@
     {
       "type": "sectionSteps",
       "title": "Hogyan használja a szószámlálót",
-      "description": "Elemezze és formázza a szöveget három lépésben:",
-      "grid": "four",
+      "description": "Szövegelemzés három lépésben:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Illessze be a szöveget",
-          "description": "Illessze be vagy írja be a szöveget. Az eszköz azonnal megszámolja a szavakat, karaktereket, mondatokat és bekezdéseket."
+          "description": "Illessze be vagy írja be a szöveget a jobb oldali mezőbe. Az eszköz azonnal megszámolja a szavakat, karaktereket, mondatokat és becsüli az olvasási időt."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Ellenőrizze a statisztikákat",
-          "description": "A bal oldali panelen 11 metrikat latsz: szavak, karakterek szokozokkel es nelkul, mondatok, bekezdések, egyedi szavak, atlagos szohossz, olvasasi ido, beszedido, szotagok es Flesch-Kincaid pontszam."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Alakítsa át a szöveget",
-          "description": "A szövegmező alatt 7 átalakító eszközt talál."
+          "description": "A bal oldali panelen 8 szövegmetrikát lát: szavak, karakterek szóközökkel és nélkül, mondatok, olvasási idő, beszédidő, szótagok és Flesch-Kincaid pontszám."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Másolja az eredményt",
+          "title": "3. Másolja az eredményt",
           "description": "Kattintson a Szöveg másolása gombra. Használja a Törlés gombot az újrakezdéshez."
         }
       ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
     },
     {
       "type": "gap",
@@ -145,8 +124,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 szövegmetrika – mit mér a számláló?",
-      "description": "A számláló tizenegy mutatóval elemzi a szöveget:",
+      "title": "8 szövegmetrika – mit mér a számláló?",
+      "description": "A számláló nyolc mutatóval elemzi a szöveget:",
       "grid": "two",
       "items": [
         {
@@ -170,21 +149,6 @@
           "description": "A mondatok száma a szövegben. Segít felmérni a bonyolultságot és olvashatóságot - a rövidebb mondatok könnyebben befogadhatók."
         },
         {
-          "icon": "RiParagraph",
-          "title": "Bekezdések",
-          "description": "Üres sorokkal elválasztott szövegblokkok. A jól strukturt bekezdések javítják a képernyőn való olvashatóságot."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Egyedi szavak",
-          "description": "A nem ismétlődő szavak száma. Az egyedi szavak magasabb aránya gazdagabb szókincset jelez."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Átlagos szóhossz",
-          "description": "A karakterek átlagos száma szavanként. A szöveg bonyolultságának mutatója - a technikai szövegek hosszabb szavakat tartalmaznak."
-        },
-        {
           "icon": "RiTimeLine",
           "title": "Olvasási idő",
           "description": "Becsült olvasási idő 200 szó/perc sebességgel. Közelítő érték tipikus szöveghez."
@@ -197,59 +161,12 @@
         {
           "icon": "RiInputMethodLine",
           "title": "Szótagok",
-          "description": "Összes szótagszám nyelvspecifikus heurisztikákkal."
+          "description": "Összes szótagszám nyelvspecifikus heurisztikákkal kiszámítva. Az olvashatósági képletek és a verselemzés kulcsparamétere."
         },
         {
           "icon": "RiSpeedLine",
           "title": "Olvashatóság (Flesch-Kincaid)",
-          "description": "Pontszám 0–100. 70 felett = könnyű, 50–70 = közepes, 30 alatt = akadémiai. Színkódolt."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "7 szövegformázó eszköz",
-      "description": "A szövegmező alatt átalakító gombokat talál:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "NAGYBETŰS",
-          "description": "Az egész szöveget nagybetűssé alakítja. Hasznos címekhez, rövidítésekhez és szövegrészek kiemeléséhez."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "kisbetűs",
-          "description": "Az egész szöveget kisbetűssé alakítja. Hasznos különböző forrásokból másolt szöveg normalizálásához."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Mondatstílus",
-          "description": "Minden mondat első betűje nagy, a többi kis. Szabványos formátum folyamatos szöveghez."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Címstílus",
-          "description": "Minden szó nagybetűvel kezdődik. Ideális címekhez, fejlécekhez és tulajdonnevekhez."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Extra szóközök eltávolítása",
-          "description": "A többszörös szóközöket egyre csökkenti, és eltávolítja a sorok elején és végén lévő szóközöket."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Üres sorok eltávolítása",
-          "description": "Eltávolítja az üres és felesleges sorokat a szövegből. Hasznos weboldalakról másolt szöveg tisztításához."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Ismétlődő sorok eltávolítása",
-          "description": "Csak az egyedi sorokat tartja meg, eltávolítva az ismétléseket. Hasznos listák és adatok tisztításához."
+          "description": "Pontszám 0–100. 70 felett = könnyű, 50–70 = közepes, 30 alatt = akadémiai. Színkódolt mutató a gyors értékeléshez."
         }
       ]
     },
@@ -266,12 +183,12 @@
         {
           "icon": "RiEditLine",
           "title": "Szövegírók és szerkesztők",
-          "description": "Szavak és karakterek számlálása, platformkorlátok ellenőrzése, gyors betűméret-váltás és szövegtisztítás publikálás előtt."
+          "description": "Szavak és karakterek számlálása, platformkorlátok ellenőrzése és szöveg olvashatóságának vizsgálata publikálás előtt."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Bloggerek és tartalomkészítők",
-          "description": "Bejegyzéshossz figyelemmel kísérése, olvasási idő ellenőrzése, ismétlődő sorok eltávolítása."
+          "description": "Bejegyzéshossz figyelemmel kísérése, olvashatóság és olvasási idő ellenőrzése."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -281,12 +198,12 @@
         {
           "icon": "RiSearchLine",
           "title": "SEO-szakemberek",
-          "description": "Tartalom hosszának elemzése, egyedi szavak számlálása és a szöveg bonyolultságának felmérése az átlagos szóhossz alapján."
+          "description": "Tartalom hosszának elemzése, Flesch-Kincaid olvashatósági pontszám és a szöveg bonyolultságának felmérése."
         },
         {
           "icon": "RiGraduationCapLine",
           "title": "Diákok és kutatók",
-          "description": "Szó- vagy karakterkorlátok ellenőrzése esszékben és kutatási dolgozatokban."
+          "description": "Szó- vagy karakterkorlátok ellenőrzése esszékben és kutatási dolgozatokban, a szakdolgozat olvashatóságának vizsgálata."
         },
         {
           "icon": "RiTranslate2",
@@ -324,28 +241,23 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 metrika + olvashatósági pontszám",
-          "description": "Szavak, karakterek, szótagok, mondatok, bekezdések, egyedi szavak, olvasási idő, beszédidő és Flesch-Kincaid."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 formázó eszköz",
-          "description": "Betűméret-átalakítás, szóközök, üres sorok, ismétlődések eltávolítása - további szoftver telepítése nélkül."
+          "title": "8 metrika + olvashatósági pontszám",
+          "description": "Szavak, karakterek, szótagok, mondatok, olvasási idő, beszédidő és Flesch-Kincaid pontszám - mindez egy panelen."
         },
         {
           "icon": "RiUserLine",
           "title": "Helyi feldolgozás a böngészőben",
-          "description": "A szöveged soha nem kerül semmilyen szerverre. Minden elemzés és átalakítás helyben történik az eszközödön."
+          "description": "A szöveg soha nem kerül semmilyen szerverre. Minden elemzés helyben történik az eszközön."
         },
         {
           "icon": "RiFileCopyLine",
           "title": "Másolás és törlés",
-          "description": "Másold a módosított szöveget a vágólapra egy kattintással, vagy töröld a mezőt az újrakezdéshez."
+          "description": "Másolja a beírt szöveget a vágólapra egy kattintással, vagy törölje a mezőt az újrakezdéshez."
         },
         {
           "icon": "RiTimerLine",
           "title": "Azonnali eredmények",
-          "description": "A statisztikák valós időben frissülnek, ahogy írsz vagy beilleszt szöveget. Nincs várakozás."
+          "description": "A statisztikák valós időben frissülnek, ahogy ír vagy beilleszt szöveget. Nincs várakozás."
         },
         {
           "icon": "RiLockLine",
@@ -379,7 +291,7 @@
     {
       "type": "sectionInfo",
       "title": "Olvashatóság magyarul - agglutináló nyelv hosszú ragozott szavakkal",
-      "html": "<p class=\"text-mid mb-4\">A magyar agglutináló nyelv, ahol a szavakat toldalékok (ragok, jelek, képzők) hozzáfűzésével képezik. A &quot;keresőmotor-optimalizálás&quot; 26 karakter hosszú, és még hosszabb összetett szavak is előfordulnak a hétköznapi nyelvben. Ez a magyar átlagos szóhosszúságát 7–8 karakterre emeli - jóval több, mint az angol 4–5 karakter. A Flesch-képlet ezért a magyar szövegeknek természetesen alacsonyabb pontszámot ad, mint azonos nehézségű angol szövegeknek.</p><p class=\"text-mid mb-4\">Magyar webes tartalmakhoz jó célérték a Flesch-pontszám 45–55. Rövid mondatok (15–20 szó) és rövid bekezdések (3–4 mondat) jelentősen javítják az olvashatóságot képernyőkön. A 25 szónál hosszabb mondatokat érdemes kettéosztani.</p><p class=\"text-mid\">Az egyedi szavak aránya az összszószámhoz képest jelzi a szókincs gazdagságát. Egy 1 000 szavas szövegben 400–500 egyedi szó változatos szókincsre utal. Ha az arány 30% alá csökken, a szöveg ismétlődőnek tűnhet - ilyenkor érdemes szinonimákat használni vagy a mondatokat átfogalmazni az ismétlődés csökkentéséhez.</p>"
+      "html": "<p class=\"text-mid mb-4\">A magyar agglutináló nyelv, ahol a szavakat toldalékok (ragok, jelek, képzők) hozzáfűzésével képezik. A &quot;keresőmotor-optimalizálás&quot; 26 karakter hosszú, és még hosszabb összetett szavak is előfordulnak a hétköznapi nyelvben. Ez a magyar átlagos szóhosszúságát 7–8 karakterre emeli - jóval több, mint az angol 4–5 karakter. A Flesch-képlet ezért a magyar szövegeknek természetesen alacsonyabb pontszámot ad, mint azonos nehézségű angol szövegeknek.</p><p class=\"text-mid\">Magyar webes tartalmakhoz jó célérték a Flesch-pontszám 45–55. Rövid mondatok (15–20 szó) és rövid bekezdések (3–4 mondat) jelentősen javítják az olvashatóságot képernyőkön. A 25 szónál hosszabb mondatokat érdemes kettéosztani.</p>"
     },
     {
       "type": "gap",

@@ -5,9 +5,6 @@
   "charsWithSpaces": "Caractères (avec espaces)",
   "charsWithoutSpaces": "Caractères (sans espaces)",
   "sentences": "Phrases",
-  "paragraphs": "Paragraphes",
-  "uniqueWords": "Mots uniques",
-  "avgWordLength": "Long. moy. des mots",
   "readingTime": "Temps de lecture",
   "speakingTime": "Temps de parole",
   "syllables": "Syllabes",
@@ -17,13 +14,5 @@
   "clearText": "Effacer",
   "statistics": "Statistiques du texte",
   "empty": "Saisissez un texte pour voir les statistiques.",
-  "toolbarTitle": "Outils de texte",
-  "uppercase": "MAJUSCULES",
-  "lowercase": "minuscules",
-  "sentenceCase": "Phrase",
-  "titleCase": "Chaque Mot En Majuscule",
-  "removeExtraSpaces": "Supprimer les espaces superflus",
-  "removeEmptyLines": "Supprimer les lignes vides",
-  "removeDuplicateLines": "Supprimer les doublons",
   "readabilityHint": "Pour du contenu web en français, visez 60–70."
 }

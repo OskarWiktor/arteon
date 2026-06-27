@@ -42,8 +42,7 @@
         "Generazione di icone PWA 192x192 e 512x512",
         "Supporto per immagini PNG, JPG e SVG come sorgente",
         "Configurazione del colore di sfondo",
-        "Generazione del file manifest.json per PWA",
-        "Download di tutti i file come ZIP",
+        "Download di tutti i file con un solo clic",
         "Download di file singoli",
         "Conformità con Lighthouse",
         "Elaborazione nel browser (i file non vengono inviati al server)",
@@ -56,15 +55,15 @@
       "steps": [
         {
           "name": "Caricare un'immagine",
-          "text": "Carica un'immagine quadrata (almeno 512x512 px). Formati supportati: PNG, JPG, WebP."
+          "text": "Carica un'immagine quadrata (almeno 512x512 px). Formati supportati: PNG, JPG, SVG."
         },
         {
-          "name": "Scegliere le opzioni",
-          "text": "Seleziona le dimensioni desiderate e se generare un site.webmanifest."
+          "name": "Impostare lo sfondo",
+          "text": "Scegli un colore di sfondo per l'icona oppure lascialo trasparente."
         },
         {
-          "name": "Scaricare il ZIP",
-          "text": "Scarica tutti i file generati in un archivio ZIP e aggiungili al tuo sito."
+          "name": "Generare e scaricare i file",
+          "text": "Lo strumento genera favicon.ico e l'intero set di icone PNG. Scarica tutti i file con un solo clic o ogni icona singolarmente."
         }
       ]
     }
@@ -94,17 +93,17 @@
         {
           "icon": "RiUploadLine",
           "title": "1. Carica un'immagine",
-          "description": "Carica un'immagine quadrata (almeno 512x512 px). Formati supportati: PNG, JPG, WebP."
+          "description": "Carica un'immagine quadrata (almeno 512x512 px). Formati supportati: PNG, JPG, SVG."
         },
         {
           "icon": "RiAppsLine",
-          "title": "2. Scegli le opzioni",
-          "description": "Seleziona le dimensioni desiderate e se generare un site.webmanifest."
+          "title": "2. Imposta lo sfondo",
+          "description": "Scegli un colore di sfondo per l'icona oppure lascialo trasparente."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "3. Scarica il ZIP",
-          "description": "Scarica tutti i file generati in un archivio ZIP e aggiungili al tuo sito."
+          "title": "3. Scarica i file",
+          "description": "Scarica tutti i file generati con un solo clic oppure ogni icona singolarmente."
         }
       ]
     },
@@ -115,7 +114,7 @@
     {
       "type": "sectionDemo",
       "title": "Quali file vengono generati?",
-      "demoHtml": "<div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">File</th><th class=\"py-2 pr-4 font-semibold\">Dimensione</th><th class=\"py-2 font-semibold\">Utilizzo</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon.ico</td><td class=\"py-2 pr-4\">16x16 + 32x32</td><td class=\"text-primary-light0 py-2\">Scheda del browser (standard)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-16x16.png</td><td class=\"py-2 pr-4\">16x16</td><td class=\"text-primary-light0 py-2\">Scheda del browser (piccola)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-32x32.png</td><td class=\"py-2 pr-4\">32x32</td><td class=\"text-primary-light0 py-2\">Scheda del browser (Retina)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">apple-touch-icon.png</td><td class=\"py-2 pr-4\">180x180</td><td class=\"text-primary-light0 py-2\">Schermata home iOS, Safari</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-192x192.png</td><td class=\"py-2 pr-4\">192x192</td><td class=\"text-primary-light0 py-2\">Android, installazione PWA</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-512x512.png</td><td class=\"py-2 pr-4\">512x512</td><td class=\"text-primary-light0 py-2\">Splashscreen PWA, risultati Google</td></tr><tr><td class=\"py-2 pr-4 font-medium\">site.webmanifest</td><td class=\"py-2 pr-4\">-</td><td class=\"text-primary-light0 py-2\">Configurazione PWA (opzionale)</td></tr></tbody></table></div>",
+      "demoHtml": "<div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">File</th><th class=\"py-2 pr-4 font-semibold\">Dimensione</th><th class=\"py-2 font-semibold\">Utilizzo</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon.ico</td><td class=\"py-2 pr-4\">16x16 + 32x32</td><td class=\"text-primary-light0 py-2\">Scheda del browser (standard)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-16x16.png</td><td class=\"py-2 pr-4\">16x16</td><td class=\"text-primary-light0 py-2\">Scheda del browser (piccola)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">favicon-32x32.png</td><td class=\"py-2 pr-4\">32x32</td><td class=\"text-primary-light0 py-2\">Scheda del browser (Retina)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">apple-touch-icon.png</td><td class=\"py-2 pr-4\">180x180</td><td class=\"text-primary-light0 py-2\">Schermata home iOS, Safari</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-192x192.png</td><td class=\"py-2 pr-4\">192x192</td><td class=\"text-primary-light0 py-2\">Android, installazione PWA</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4 font-medium\">android-chrome-512x512.png</td><td class=\"py-2 pr-4\">512x512</td><td class=\"text-primary-light0 py-2\">Splashscreen PWA, risultati Google</td></tr></tbody></table></div>",
       "html": "<p class=\"text-mid\">Lo strumento genera tutti i file favicon richiesti dai browser moderni e da Lighthouse. Ogni file ha un ruolo specifico:</p><ul class=\"text-mid mt-3 list-disc space-y-2 pl-5\"><li><strong>favicon.ico</strong> - il formato classico, supportato da tutti i browser. Contiene 16x16 e 32x32 in un unico file.</li><li><strong>Apple Touch Icon</strong> - mostrato sulla schermata home di iOS quando un utente aggiunge il sito ai preferiti.</li><li><strong>Icone PWA</strong> - per dispositivi Android e Progressive Web App. Utilizzate durante l'installazione sulla schermata home.</li></ul>"
     },
     {
@@ -172,8 +171,8 @@
       "items": [
         {
           "icon": "RiFolderZipLine",
-          "title": "Scaricare tutto in ZIP",
-          "description": "Il pulsante Scarica tutto raggruppa tutti i file generati in un unico archivio ZIP. L'opzione più comoda quando hai bisogno del set completo di icone."
+          "title": "Scaricare tutto con un clic",
+          "description": "Il pulsante Scarica salva sul disco tutti i file generati in una sola volta. L'opzione più comoda quando hai bisogno del set completo di icone."
         },
         {
           "icon": "RiFileDownloadLine",
@@ -250,8 +249,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Opzioni di generazione: cosa fa ciascuna?",
-      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Sfondo (trasparente o colore)</h3><p class=\"text-mid\">Per impostazione predefinita, il generatore conserva la trasparenza. Puoi anche scegliere un colore di sfondo specifico.</p></div><div><h3 class=\"h5 mb-2\">Generare il manifest (site.webmanifest)</h3><p class=\"text-mid\">File JSON per le applicazioni web (PWA). Se non stai creando una PWA, questa opzione non è necessaria.</p></div></div>"
+      "title": "Opzione di generazione: cosa fa?",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Sfondo (trasparente o colore)</h3><p class=\"text-mid\">Per impostazione predefinita, il generatore conserva la trasparenza. Puoi anche scegliere un colore di sfondo specifico.</p></div></div>"
     },
     {
       "type": "gap",
@@ -270,7 +269,7 @@
         {
           "icon": "RiDownloadLine",
           "title": "Tutti i formati in un solo passaggio",
-          "description": "favicon.ico, icone PNG e site.webmanifest opzionale - tutto da una singola immagine."
+          "description": "favicon.ico e l'intero set di icone PNG - tutto da una singola immagine."
         },
         {
           "icon": "RiImageLine",
@@ -280,7 +279,7 @@
         {
           "icon": "RiSmartphoneLine",
           "title": "Pronto per il sito e le PWA",
-          "description": "Lo strumento genera il file manifest.json per le applicazioni web. Sotto trovi le istruzioni per l'integrazione delle icone."
+          "description": "Le icone 192x192 e 512x512 generate sono pronte per essere usate in un'applicazione web (PWA). Sotto trovi le istruzioni per l'integrazione delle icone."
         }
       ]
     },
@@ -336,9 +335,9 @@
           "answerSchemaText": "Immagine quadrata (PNG/JPG/WebP) di almeno 512x512 px."
         },
         {
-          "question": "Viene generato anche un site.webmanifest?",
-          "answer": "Sì. Puoi opzionalmente generare un file site.webmanifest che fa riferimento alle icone PWA (192x192 e 512x512). Il file è incluso nell'archivio ZIP insieme alle icone.",
-          "answerSchemaText": "Sì, opzionale. Fa riferimento alle icone PWA ed è incluso nel ZIP."
+          "question": "Posso generare solo il file favicon.ico senza il resto delle icone?",
+          "answer": "Lo strumento genera sempre il set completo: favicon.ico e le icone PNG 16x16, 32x32, 180x180, 192x192 e 512x512. Dopo la generazione puoi scaricare solo i file che ti servono - ogni icona ha il proprio pulsante di download.",
+          "answerSchemaText": "Lo strumento genera sempre il set completo, ma puoi scaricare solo i file che ti servono singolarmente."
         },
         {
           "question": "Le mie immagini vengono inviate a un server?",
@@ -347,8 +346,8 @@
         },
         {
           "question": "Cosa verifica Lighthouse riguardo ai favicon?",
-          "answer": "Lighthouse verifica se una pagina possiede un favicon valido. Si aspetta come minimo un file favicon.ico o un elemento link rel icon. Verifica anche la presenza di un Apple Touch Icon (180x180) e di icone PWA nel site.webmanifest. Questo strumento genera tutti i file necessari.",
-          "answerSchemaText": "Lighthouse verifica favicon.ico, Apple Touch Icon e icone PWA nel manifest."
+          "answer": "Lighthouse verifica se una pagina possiede un favicon valido. Si aspetta come minimo un file favicon.ico o un elemento link rel icon. Verifica anche la presenza di un Apple Touch Icon (180x180) e di icone PWA 192x192 e 512x512. Questo strumento genera tutti i file necessari.",
+          "answerSchemaText": "Lighthouse verifica favicon.ico, Apple Touch Icon e icone PWA."
         },
         {
           "question": "Come integrare i favicon nel mio sito?",

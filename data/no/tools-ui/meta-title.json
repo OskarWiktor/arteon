@@ -11,9 +11,7 @@
   "descriptionTooShort": "Beskrivelsen er veldig kort. Legg til mer tekst som bedre forklarer hva brukeren finner på siden, og hvorfor de bør klikke.",
   "descriptionTooLong": "Beskrivelsen overskrider intervallet som Google normalt viser fullstendig (ca. 150–160 tegn eller ~920 piksler). Den kan bli avkortet eller erstattet med et annet utdrag.",
   "descriptionGoodLength": "Beskrivelsen ligger innenfor det typiske intervallet for søkeresultater (ca. 120–160 tegn og opptil ~920 piksler), noe som normalt er nok til 2–3 korte setninger.",
-  "addUrl": "Legg til URL (valgfritt)",
-  "urlPlaceholder": "www.dittdomene.no/side",
-  "urlHelper": "URL-en brukes bare i forhåndsvisningen – den påvirker ikke beregningen av metatittelens og beskrivelsens lengde.",
+  "exampleUrl": "https://www.dittdomene.no/side",
   "enterTitleLabel": "Skriv inn metatittel",
   "titlePlaceholder": "F.eks. SEO-tjenester for nettsider – Arteon",
   "chars": "Tegn",
@@ -23,8 +21,6 @@
   "enterDescriptionLabel": "Skriv inn metabeskrivelse",
   "descriptionPlaceholder": "Beskriv i 2–3 setninger hva brukeren finner på siden, og hvilken fordel de får. Sett inn de viktigste nøkkelordene på en naturlig måte.",
   "noDescription": "Ingen beskrivelse",
-  "previewTitle": "Forhåndsvisning av Google-søkeresultat",
-  "previewHelper": "Forhåndsvisningen er omtrentlig – Google kan tilpasse tittelen og beskrivelsen avhengig av skjermbredde og tekst",
   "exampleTitle": "Eksempel på sidetittel – tilbud / tjeneste",
   "exampleDescription": "Her vises en forhåndsvisning av sidebeskrivelsen din. Skriv kort om hva du tilbyr, hvordan du hjelper kunden, og hvorfor denne siden er verdt et besøk."
 }

@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "Woord-, teken- en leestijdteller met tekstopmaak",
-    "description": "Gratis teller voor woorden, tekens, zinnen, alinea's en leestijd met hoofdletterconverter. Controleer de tekstlengte en wijzig de letters.",
+    "description": "Gratis teller voor woorden, tekens, zinnen en leestijd. Controleer de tekstlengte en de leesbaarheid van uw tekst.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp",
     "path": "/nl/tools/woorden-en-tekenteller"
   },
   "hero": {
-    "title": "Tel woorden en tekens – controleer leestijd en formatteer tekst",
-    "description": "Plak uw tekst en de tool telt woorden, tekens, zinnen, alinea's, unieke woorden en leestijd. Wijzig hoofdletters of verwijder duplicaten",
+    "title": "Tel woorden en tekens – controleer leestijd en leesbaarheid",
+    "description": "Plak uw tekst en de tool telt woorden, tekens, zinnen en leestijd, en berekent direct de leesbaarheidsscore.",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp"
   },
   "breadcrumbs": {
@@ -33,27 +33,19 @@
         "Flesch-Douma leesbaarheidschecker",
         "Lettergreepteller",
         "Spreektijdcalculator",
-        "Hoofdletterconverter",
-        "Leesbaarheidstool",
-        "Dubbele regels verwijderen"
+        "Leesbaarheidstool"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis woord- en tekenteller met tekstopmaaktools. Telt woorden, tekens, zinnen, alinea's, unieke woorden en leestijd. Biedt 7 tools: hoofdletterconversie, spaties verwijderen, lege regels en duplicaten.",
+      "description": "Gratis woord- en tekenteller. Telt woorden, tekens, zinnen en leestijd, en berekent de Flesch-Douma leesbaarheidsscore.",
       "featureList": [
         "Woorden tellen",
         "Tekens met en zonder spaties",
-        "Zinnen en alinea’s tellen",
-        "Unieke woorden tellen",
-        "Gemiddelde woordlengte",
+        "Zinnen tellen",
         "Geschatte leestijd",
         "Geschatte spreektijd",
         "Lettergreeptelling",
         "Flesch-Douma leesbaarheidsscore",
         "Taalspecifieke formules (16 talen)",
-        "Naar hoofdletters of kleine letters",
-        "Zinsstijl of titelstijl",
-        "Extra spaties verwijderen",
-        "Lege regels en duplicaten verwijderen",
         "Tekst kopiëren naar klembord"
       ]
     },
@@ -64,15 +56,11 @@
       "steps": [
         {
           "name": "Plak uw tekst",
-          "text": "Plak of typ tekst. De tool telt direct woorden, tekens, zinnen, alinea's en unieke woorden."
+          "text": "Plak of typ tekst. De tool telt direct woorden, tekens en zinnen, en schat de leestijd."
         },
         {
           "name": "Controleer de statistieken",
-          "text": "In het linkerpaneel zie je 11 statistieken: woorden, tekens met en zonder spaties, zinnen, alinea’s, unieke woorden, gemiddelde woordlengte, leestijd, spreektijd, lettergrepen en Flesch-Douma leesbaarheidsscore."
-        },
-        {
-          "name": "Transformeer tekst",
-          "text": "Onder het tekstveld vindt u 7 transformatietools."
+          "text": "In het linkerpaneel zie je 8 statistieken: woorden, tekens met en zonder spaties, zinnen, leestijd, spreektijd, lettergrepen en Flesch-Douma leesbaarheidsscore."
         },
         {
           "name": "Kopieer het resultaat",
@@ -88,8 +76,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Gratis woorden- en tekenteller met teksttools",
-      "html": "<p class=\"text-mid\">Deze tool combineert een woord- en tekenteller met Flesch-Douma leesbaarheidanalyse en tekstopmaakfuncties. Plak je tekst en bekijk woorden, tekens, lettergrepen, zinnen, alinea’s, unieke woorden, leestijd, spreektijd en een kleurgecodeerde leesbaarheidsscore.</p><p class=\"text-mid mt-3\">De <strong>Flesch-Douma leesbaarheidsscore</strong> (0–100) is specifiek ontwikkeld voor het Nederlands: 206,835 − 0,93 × ASL − 77 × ASW. Scores boven 70 duiden op makkelijk leesbare tekst, onder 30 op academisch niveau. De tool past zich automatisch aan de taal aan.</p><p class=\"text-mid mt-3\">Onder het tekstveld vind je 7 tools: hoofdletterconversie, spaties, lege regels en duplicaten verwijderen. Alles draait lokaal in je browser.</p>",
+      "title": "Gratis woorden- en tekenteller",
+      "html": "<p class=\"text-mid\">Deze tool combineert een woord- en tekenteller met Flesch-Douma leesbaarheidanalyse. Plak je tekst en bekijk woorden, tekens, lettergrepen, zinnen, leestijd, spreektijd en een kleurgecodeerde leesbaarheidsscore.</p><p class=\"text-mid mt-3\">De <strong>Flesch-Douma leesbaarheidsscore</strong> (0–100) is specifiek ontwikkeld voor het Nederlands: 206,835 − 0,93 × ASL − 77 × ASW. Scores boven 70 duiden op makkelijk leesbare tekst, onder 30 op academisch niveau. De tool past zich automatisch aan de taal aan.</p><p class=\"text-mid mt-3\">Alles draait lokaal in je browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/woorden-en-tekenteller-nl.webp",
       "imageAlt": "Woord- en tekenteller – Arteon"
     },
@@ -100,34 +88,25 @@
     {
       "type": "sectionSteps",
       "title": "Hoe de woorden- en tekenteller te gebruiken",
-      "description": "Analyseer en formatteer tekst in drie stappen:",
-      "grid": "four",
+      "description": "Analyseer tekst in drie stappen:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Plak uw tekst",
-          "description": "Plak of typ tekst. De tool telt direct woorden, tekens, zinnen, alinea's en unieke woorden."
+          "description": "Plak of typ tekst. De tool telt direct woorden, tekens en zinnen, en schat de leestijd."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Controleer de statistieken",
-          "description": "In het linkerpaneel zie je 11 statistieken: woorden, tekens met en zonder spaties, zinnen, alinea’s, unieke woorden, gemiddelde woordlengte, leestijd, spreektijd, lettergrepen en Flesch-Douma leesbaarheidsscore."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Transformeer tekst",
-          "description": "Onder het tekstveld vindt u 7 transformatietools."
+          "description": "In het linkerpaneel zie je 8 statistieken: woorden, tekens met en zonder spaties, zinnen, leestijd, spreektijd, lettergrepen en Flesch-Douma leesbaarheidsscore."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Kopieer het resultaat",
+          "title": "3. Kopieer het resultaat",
           "description": "Klik op Tekst kopiëren. Gebruik Wissen om opnieuw te beginnen."
         }
       ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
     },
     {
       "type": "gap",
@@ -144,8 +123,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 tekststatistieken – wat de teller meet",
-      "description": "De teller analyseert je tekst op elf indicatoren:",
+      "title": "8 tekststatistieken – wat de teller meet",
+      "description": "De teller analyseert je tekst op acht indicatoren:",
       "grid": "two",
       "items": [
         {
@@ -167,21 +146,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Zinnen",
           "description": "Aantal zinnen. Kortere zinnen verbeteren de leesbaarheid."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Alinea’s",
-          "description": "Tekstblokken gescheiden door lege regels."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Unieke woorden",
-          "description": "Aantal niet-herhalende woorden. Een hogere ratio duidt op rijkere woordenschat."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Gemiddelde woordlengte",
-          "description": "Gemiddeld aantal tekens per woord. Nederlandse samenstellingen verhogen dit gemiddelde."
         },
         {
           "icon": "RiTimeLine",
@@ -211,53 +175,6 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 tekstopmaaktools",
-      "description": "Onder het tekstveld vindt u knoppen voor snelle transformatie:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "HOOFDLETTERS",
-          "description": "Zet alle tekst om naar hoofdletters."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "kleine letters",
-          "description": "Zet alle tekst om naar kleine letters."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Zinsstijl",
-          "description": "Eerste letter van elke zin als hoofdletter, rest klein."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Titelstijl",
-          "description": "Elk woord begint met een hoofdletter."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Extra spaties verwijderen",
-          "description": "Reduceert meerdere spaties tot één."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Lege regels verwijderen",
-          "description": "Verwijdert lege en overbodige regels."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Duplicaten verwijderen",
-          "description": "Behoudt alleen unieke regels."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
       "title": "Voor wie is de woordteller?",
       "description": "De tool is nuttig voor iedereen die met tekst werkt:",
       "grid": "three",
@@ -265,7 +182,7 @@
         {
           "icon": "RiEditLine",
           "title": "Copywriters en redacteuren",
-          "description": "Woorden en tekens tellen, platformlimieten controleren, hoofdletters wijzigen en tekst opschonen."
+          "description": "Woorden en tekens tellen, platformlimieten controleren en de leesbaarheid van tekst beoordelen."
         },
         {
           "icon": "RiBloggerLine",
@@ -323,13 +240,8 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 statistieken + leesbaarheidsscore",
-          "description": "Woorden, tekens, lettergrepen, zinnen, alinea’s, unieke woorden, leestijd, spreektijd en Flesch-Douma – alles in één paneel."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 opmaaktools",
-          "description": "Hoofdletterconversie, spaties, lege regels en duplicaten – zonder extra software."
+          "title": "8 statistieken + leesbaarheidsscore",
+          "description": "Woorden, tekens, lettergrepen, zinnen, leestijd, spreektijd en Flesch-Douma – alles in één paneel."
         },
         {
           "icon": "RiUserLine",

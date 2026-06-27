@@ -11,9 +11,7 @@
   "descriptionTooShort": "Beskrivningen är mycket kort. Lägg till mer text som bättre förklarar vad användaren hittar på sidan och varför de bör klicka.",
   "descriptionTooLong": "Beskrivningen överskrider det intervall som Google vanligtvis visar helt (ca 150–160 tecken eller ~920 pixlar). Den kan bli avkortad eller ersatt med ett annat utdrag.",
   "descriptionGoodLength": "Beskrivningen ligger inom det typiska intervallet för sökresultat (ca 120–160 tecken och upp till ~920 pixlar), vilket vanligtvis räcker för 2–3 korta meningar.",
-  "addUrl": "Lägg till URL (valfritt)",
-  "urlPlaceholder": "www.dindomin.se/sida",
-  "urlHelper": "URL:en används bara i förhandsgranskningen – den påverkar inte beräkningen av metatitelns och beskrivningens längd.",
+  "exampleUrl": "https://www.dindomin.se/sida",
   "enterTitleLabel": "Ange metatitel",
   "titlePlaceholder": "T.ex. SEO-tjänster för webbplatser – Arteon",
   "chars": "Tecken",
@@ -23,8 +21,6 @@
   "enterDescriptionLabel": "Ange metabeskrivning",
   "descriptionPlaceholder": "Beskriv i 2–3 meningar vad användaren hittar på sidan och vilken fördel de får. Inkludera dina viktigaste nyckelord på ett naturligt sätt.",
   "noDescription": "Ingen beskrivning",
-  "previewTitle": "Förhandsgranskning av Google-sökresultat",
-  "previewHelper": "Förhandsgranskningen är ungefärlig – Google kan anpassa titeln och beskrivningen beroende på skärmbredd och text",
   "exampleTitle": "Exempel på sidtitel – erbjudande / tjänst",
   "exampleDescription": "Här visas en förhandsgranskning av din sidbeskrivning. Skriv kort om vad du erbjuder, hur du hjälper kunden och varför denna sida är värd ett besök."
 }

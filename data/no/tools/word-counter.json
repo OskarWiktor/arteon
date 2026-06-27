@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "Ord-, tegn- og lesetidsteller med tekstformatering",
-    "description": "Gratis teller for ord, tegn, setninger, avsnitt og lesetid med konverter for store/små bokstaver. Sjekk tekstlengden og endre bokstavene.",
+    "description": "Gratis teller for ord, tegn, setninger og lesetid. Sjekk tekstlengden og vurder lesbarheten med Flesch-Kincaid poeng.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp",
     "path": "/no/verktoy/ord-og-tegnteller"
   },
   "hero": {
-    "title": "Tell ord og tegn – sjekk lesetid og formater tekst",
-    "description": "Lim inn teksten din, og verktøyet teller ord, tegn, setninger, avsnitt, unike ord og lesetid. Endre store bokstaver eller fjerne duplikater",
+    "title": "Tell ord og tegn – sjekk lesetid og lesbarhet",
+    "description": "Lim inn teksten din, og verktøyet teller ord, tegn, setninger, lesetid og stavelser, og vurderer lesbarheten.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -30,50 +30,38 @@
         "Tegnteller med og uten mellomrom",
         "Ordtellerverktøy for tekstforfattere",
         "Lesetidskalkulator",
-        "Store/små bokstaver konverter",
         "Flesch-Kincaid lesbarhetskontroll",
         "Stavelsesteller",
         "Taletidskalkulator",
         "Lesbarhetsverktøy",
-        "Fjern duplikater fra tekst",
         "Gratis ord- og tegnteller"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis ord- og tegnteller med tekstformateringsverktøy. Teller ord, tegn, setninger, avsnitt, unike ord og lesetid. Tilbyr 7 verktøy: endring av store/små bokstaver, fjerning av mellomrom, tomme linjer og duplikater.",
+      "description": "Gratis ord- og tegnteller. Teller ord, tegn, setninger og lesetid, og vurderer lesbarheten av teksten.",
       "featureList": [
         "Telling av ord",
         "Telling av tegn med og uten mellomrom",
-        "Telling av setninger og avsnitt",
-        "Telling av unike ord",
-        "Gjennomsnittlig ordlengde",
+        "Telling av setninger",
         "Estimert lesetid",
         "Estimert taletid",
         "Stavelsestelling",
         "Flesch-Kincaid lesbarhetspoeng",
         "Språkspesifikke lesbarhetsformler (16 språk)",
-        "Konverter til store eller små bokstaver",
-        "Konverter til setnings- eller tittelstil",
-        "Fjern overflødige mellomrom",
-        "Fjern tomme linjer og duplikater",
         "Kopier tekst til utklippstavlen"
       ]
     },
     "howTo": {
       "name": "Slik bruker du ord- og tegntelleren",
-      "description": "Analyser og formater tekst i tre trinn:",
+      "description": "Analyser tekst i tre trinn:",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Lim inn tekst",
-          "text": "Lim inn eller skriv tekst. Verktøyet teller umiddelbart ord, tegn, setninger, avsnitt og unike ord."
+          "text": "Lim inn eller skriv tekst. Verktøyet teller umiddelbart ord, tegn og setninger og estimerer lesetiden."
         },
         {
           "name": "Sjekk statistikken",
-          "text": "I venstre panel ser du 11 målinger: ord, tegn med og uten mellomrom, setninger, avsnitt, unike ord, ordlengde, lesetid, taletid, stavelser og Flesch-Kincaid poeng."
-        },
-        {
-          "name": "Transformer tekst",
-          "text": "Under tekstfeltet finner du 7 transformasjonsverktøy."
+          "text": "I venstre panel ser du 8 målinger: ord, tegn med og uten mellomrom, setninger, lesetid, taletid, stavelser og Flesch-Kincaid poeng."
         },
         {
           "name": "Kopier resultatet",
@@ -89,8 +77,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Gratis ord- og tegnteller med tekstverktøy",
-      "html": "<p class=\"text-mid\">Dette verktøyet kombinerer en ord- og tegnteller med Flesch-Kincaid lesbarhetsanalyse og tekstformateringsverktøy. Lim inn teksten for å se ord, tegn, stavelser, setninger, avsnitt, unike ord, lesetid, taletid og en fargekodet lesbarhetspoeng.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid lesbarhetspoeng</strong> (0–100) viser hvor lett teksten er å lese. Poeng over 70 betyr lettlest tekst, under 30 akademisk nivå. Norge har gjennom <strong>Forskrift om universell utforming av IKT</strong> strengere tilgjengelighetskrav enn EU – god lesbarhet er en del av universell utforming.</p><p class=\"text-mid mt-3\">Under tekstfeltet finner du 7 verktøy: bokstavkonvertering, fjerning av mellomrom, tomme linjer og duplikater. Alt kjøres lokalt i nettleseren.</p>",
+      "title": "Gratis ord- og tegnteller med lesbarhetsanalyse",
+      "html": "<p class=\"text-mid\">Dette verktøyet kombinerer en ord- og tegnteller med Flesch-Kincaid lesbarhetsanalyse. Lim inn teksten for å se ord, tegn, stavelser, setninger, lesetid, taletid og en fargekodet lesbarhetspoeng.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid lesbarhetspoeng</strong> (0–100) viser hvor lett teksten er å lese. Poeng over 70 betyr lettlest tekst, under 30 akademisk nivå. Norge har gjennom <strong>Forskrift om universell utforming av IKT</strong> strengere tilgjengelighetskrav enn EU – god lesbarhet er en del av universell utforming.</p><p class=\"text-mid mt-3\">All analyse kjøres lokalt i nettleseren.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/ord-og-tegnteller-no.webp",
       "imageAlt": "Ord- og tegnteller – Arteon"
     },
@@ -101,27 +89,22 @@
     {
       "type": "sectionSteps",
       "title": "Slik bruker du ord- og tegntelleren",
-      "description": "Analyser og formater tekst i tre trinn:",
-      "grid": "four",
+      "description": "Analyser tekst i tre trinn:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Lim inn tekst",
-          "description": "Lim inn eller skriv tekst. Verktøyet teller umiddelbart ord, tegn, setninger, avsnitt og unike ord."
+          "description": "Lim inn eller skriv tekst. Verktøyet teller umiddelbart ord, tegn og setninger og estimerer lesetiden."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Sjekk statistikken",
-          "description": "I venstre panel ser du 11 målinger: ord, tegn med og uten mellomrom, setninger, avsnitt, unike ord, ordlengde, lesetid, taletid, stavelser og Flesch-Kincaid poeng."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Transformer tekst",
-          "description": "Under tekstfeltet finner du 7 transformasjonsverktøy."
+          "description": "I venstre panel ser du 8 målinger: ord, tegn med og uten mellomrom, setninger, lesetid, taletid, stavelser og Flesch-Kincaid poeng."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Kopier resultatet",
+          "title": "3. Kopier resultatet",
           "description": "Klikk på Kopier tekst. Bruk Tøm for å starte på nytt."
         }
       ]
@@ -145,8 +128,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 tekstmålinger – hva telleren måler",
-      "description": "Telleren analyserer teksten din med elleve indikatorer:",
+      "title": "8 tekstmålinger – hva telleren måler",
+      "description": "Telleren analyserer teksten din med åtte indikatorer:",
       "grid": "two",
       "items": [
         {
@@ -168,21 +151,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Setninger",
           "description": "Antall setninger i teksten. Hjelper med å vurdere kompleksitet og lesbarhet - kortere setninger er lettere å ta til seg."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Avsnitt",
-          "description": "Tekstblokker adskilt med tomme linjer. Velstrukturerte avsnitt forbedrer lesbarheten på skjermer."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Unike ord",
-          "description": "Antall ikke-gjentatte ord. En høyere andel unike ord indikerer et rikere ordforråd."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Gjennomsnittlig ordlengde",
-          "description": "Gjennomsnittlig antall tegn per ord. En indikator på tekstkompleksitet - tekniske tekster har lengre ord."
         },
         {
           "icon": "RiTimeLine",
@@ -212,53 +180,6 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 tekstformateringsverktøy",
-      "description": "Under tekstfeltet finner du knapper for rask transformasjon:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "STORE BOKSTAVER",
-          "description": "Konverterer all tekst til store bokstaver. Nyttig for overskrifter, forkortelser og markering av tekst."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "små bokstaver",
-          "description": "Konverterer all tekst til små bokstaver. Nyttig for normalisering av tekst kopiert fra ulike kilder."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Setningsstil",
-          "description": "Første bokstav i hver setning er stor, resten små. Standardformat for løpende tekst."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Tittelstil",
-          "description": "Hvert ord begynner med stor bokstav. Ideelt for titler, overskrifter og egennavn."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Fjern ekstra mellomrom",
-          "description": "Reduserer flere mellomrom til ett og fjerner mellomrom i begynnelsen og slutten av hver linje."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Fjern tomme linjer",
-          "description": "Fjerner tomme og overflødige linjer fra teksten. Nyttig for rengjering av tekst kopiert fra nettsider."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Fjern duplikater",
-          "description": "Beholder bare unike linjer og fjerner gjentagelser. Nyttig for rengjering av lister og data."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
       "title": "Hvem er ordtelleren for?",
       "description": "Verktøyet er nyttig for alle som arbeider med tekst:",
       "grid": "three",
@@ -266,12 +187,12 @@
         {
           "icon": "RiEditLine",
           "title": "Tekstforfattere og redaktører",
-          "description": "Tell ord og tegn, sjekk plattformgrenser, bytt raskt bokstavstørrelse og rens tekst før publisering."
+          "description": "Tell ord og tegn, sjekk plattformgrenser og vurder lesbarheten før publisering."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Bloggere og innholdsskapere",
-          "description": "Overvåk innleggslengde, sjekk lesetid og fjern duplikater."
+          "description": "Overvåk innleggslengde og sjekk lesetiden."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -281,7 +202,7 @@
         {
           "icon": "RiSearchLine",
           "title": "SEO-spesialister",
-          "description": "Analyser innholdslengde, tell unike ord og vurder tekstkompleksitet basert på gjennomsnittlig ordlengde."
+          "description": "Analyser innholdslengde og vurder tekstkompleksitet med Flesch-Kincaid lesbarhetspoeng."
         },
         {
           "icon": "RiGraduationCapLine",
@@ -324,23 +245,18 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 målinger + lesbarhetspoeng",
-          "description": "Ord, tegn, stavelser, setninger, avsnitt, unike ord, lesetid, taletid og Flesch-Kincaid."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 formateringsverktøy",
-          "description": "Bokstavstørrelsekonvertering, fjerning av mellomrom, tomme linjer og duplikater - uten ekstra programvare."
+          "title": "8 målinger + lesbarhetspoeng",
+          "description": "Ord, tegn, stavelser, setninger, lesetid, taletid og Flesch-Kincaid - alt i ett panel."
         },
         {
           "icon": "RiUserLine",
           "title": "Lokal behandling i nettleseren",
-          "description": "Teksten din sendes aldri til noen server. All analyse og transformasjon skjer lokalt på enheten din."
+          "description": "Teksten din sendes aldri til noen server. All analyse skjer lokalt på enheten din."
         },
         {
           "icon": "RiFileCopyLine",
           "title": "Kopier og tøm tekst",
-          "description": "Kopier den endrede teksten til utklippstavlen med ett klikk eller tøm feltet for å starte på nytt."
+          "description": "Kopier teksten til utklippstavlen med ett klikk eller tøm feltet for å starte på nytt."
         },
         {
           "icon": "RiTimerLine",

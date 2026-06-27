@@ -144,7 +144,7 @@
     {
       "type": "sectionInfo",
       "title": "Pré-visualização do snippet: o que mostra?",
-      "html": "<p class=\"text-mid\">A pré-visualização (snippet preview) simula a aparência do título e da descrição da página nos resultados de pesquisa Google. É uma visualização indicativa: a aparência real pode variar ligeiramente conforme o dispositivo e o navegador.</p><h3 class=\"h5 mt-6 mb-2\">Elementos da pré-visualização</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> – o endereço da página apresentado acima do título. Pode introduzi-lo num campo opcional para um resultado mais realista.</li><li><strong>Título</strong> – o cabeçalho azul. Se for demasiado longo, a ferramenta trunca-o automaticamente e adiciona reticências.</li><li><strong>Descrição</strong> – o texto cinzento sob o título. Também é truncado se exceder o limite.</li></ul>"
+      "html": "<p class=\"text-mid\">A pré-visualização (snippet preview) simula a aparência do título e da descrição da página nos resultados de pesquisa Google. É uma visualização indicativa: a aparência real pode variar ligeiramente conforme o dispositivo e o navegador.</p><h3 class=\"h5 mt-6 mb-2\">Elementos da pré-visualização</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> – o endereço da página apresentado acima do título, mostrado como exemplo ilustrativo fixo (não editável).</li><li><strong>Título</strong> – o cabeçalho azul. Se for demasiado longo, a ferramenta trunca-o automaticamente e adiciona reticências.</li><li><strong>Descrição</strong> – o texto cinzento sob o título. Também é truncado se exceder o limite.</li></ul>"
     },
     {
       "type": "gap",

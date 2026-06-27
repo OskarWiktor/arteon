@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "Lorem Ipsum-generator — exempeltext, stycken, meningar och slumpmässiga ord",
-    "description": "Gratis Lorem Ipsum-generator — 8 stilar: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business och mer. 9 genereringslägen. Kopiera som text eller HTML.",
+    "description": "Gratis Lorem Ipsum-generator — 8 stilar: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business och mer. Generera stycken, meningar eller ord och kopiera texten direkt.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-sv.webp",
     "path": "/verktyg/lorem-ipsum-generator"
   },
   "hero": {
     "title": "Lorem Ipsum-generator — exempeltext, stycken, meningar och slumpmässiga ord",
-    "description": "8 textstilar: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal och svenska utfyllnadsord. 9 lägen: stycken, meningar, ord, listor, rubriker, länkar, tabeller, citat, definitioner.",
+    "description": "8 textstilar: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal och svenska utfyllnadsord. Generera stycken, meningar eller ord och kopiera texten.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-sv.webp"
   },
   "breadcrumbs": {
@@ -36,17 +36,11 @@
         "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis Lorem Ipsum-generator — 8 stilar: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business och mer. 9 genereringslägen. Kopiera som text eller HTML.",
+      "description": "Gratis Lorem Ipsum-generator med 8 textstilar. Generera stycken, meningar eller slumpmässiga ord, kopiera till urklipp eller ladda ner som .txt-fil.",
       "featureList": [
         "Generera Lorem Ipsum-stycken",
         "Generera enskilda meningar",
         "Generera slumpmässiga ord",
-        "Generera numrerade och punktlistor",
-        "Generera H1–H6-rubriker",
-        "Generera länkar med exempel-URL:er",
-        "Generera tabeller med slumpmässiga data",
-        "Generera citat",
-        "Generera definitionslistor",
         "Lorem Ipsum — latin från De Finibus",
         "Hipster Ipsum — hipstervokabulär",
         "Business Ipsum — företagsjargong",
@@ -55,11 +49,7 @@
         "Cupcake Ipsum — bageri och sötsaker",
         "Pirate Ipsum — piratvokabulär",
         "Legal Ipsum — juridisk terminologi",
-        "Utdataformat: ren text eller HTML",
-        "Styckeslängd (kort, medel, lång)",
-        "Statistik: ord, tecken, meningar, stycken, lästid",
         "Kopiera text till urklipp",
-        "Kopiera HTML-kod till urklipp",
         "Ladda ner som .txt-fil",
         "Lokal bearbetning i webbläsaren"
       ]
@@ -71,19 +61,15 @@
       "steps": [
         {
           "name": "Välj ett genereringsläge",
-          "text": "Välj ett av 9 lägen: stycken, meningar, ord, listor, rubriker, länkar, tabell, citat eller definitioner. Ange antal."
+          "text": "Välj stycken, meningar eller ord och ange antal."
         },
         {
           "name": "Välj en textstil",
           "text": "Välj en av 8 stilar: Lorem Ipsum, Hipster, Business, Svenska utfyllnadsord, Bacon, Cupcake, Pirate eller Legal Ipsum."
         },
         {
-          "name": "Ställ in utdataformatet",
-          "text": "Välj ren text eller HTML med taggar. Justera styckeslängden efter behov."
-        },
-        {
           "name": "Kopiera eller ladda ner resultatet",
-          "text": "Klicka på Generera, kopiera sedan texten, HTML-koden eller ladda ner en .txt-fil."
+          "text": "Klicka på Generera, kopiera sedan texten eller ladda ner en .txt-fil."
         }
       ]
     }
@@ -96,7 +82,7 @@
     {
       "type": "sectionBasic",
       "title": "Vad är Lorem Ipsum och vad används det till",
-      "html": "<p class=\"text-mid\">Lorem Ipsum är standardutfyllnadstexten som har använts inom tryckeri-, grafisk design- och webbutvecklingsbranschen i över 500 år. Texten härstammar från <em>De Finibus Bonorum et Malorum</em> (Om gränserna för det goda och det onda) skriven av Marcus Tullius Cicero år 45 f.Kr. Det ursprungliga stycket ändrades avsiktligt — ord lades till, togs bort och ordnades om — så att texten saknar mening men behåller en naturlig rytm och bokstavsfördelning som liknar ett riktigt språk.</p><p class=\"text-mid mt-3\">Lorem Ipsum-generatorn låter dig snabbt skapa valfri mängd utfyllnadstext för mockups, UI-prototyper, grafiska designer och typografiska layouttester. Verktyget erbjuder 9 genereringslägen (stycken, meningar, ord, listor, rubriker, länkar, tabeller, citat, definitioner), 8 textstilar och realtidsstatistik.</p>",
+      "html": "<p class=\"text-mid\">Lorem Ipsum är standardutfyllnadstexten som har använts inom tryckeri-, grafisk design- och webbutvecklingsbranschen i över 500 år. Texten härstammar från <em>De Finibus Bonorum et Malorum</em> (Om gränserna för det goda och det onda) skriven av Marcus Tullius Cicero år 45 f.Kr. Det ursprungliga stycket ändrades avsiktligt — ord lades till, togs bort och ordnades om — så att texten saknar mening men behåller en naturlig rytm och bokstavsfördelning som liknar ett riktigt språk.</p><p class=\"text-mid mt-3\">Lorem Ipsum-generatorn låter dig snabbt skapa valfri mängd utfyllnadstext för mockups, UI-prototyper, grafiska designer och typografiska layouttester. Verktyget erbjuder 3 genereringslägen (stycken, meningar, ord) och 8 textstilar.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-sv.webp",
       "imageAlt": "Lorem Ipsum-generator — Arteon"
     },
@@ -107,13 +93,13 @@
     {
       "type": "sectionSteps",
       "title": "Hur du använder Lorem Ipsum-generatorn",
-      "description": "Generera utfyllnadstext i fyra steg:",
-      "grid": "four",
+      "description": "Generera utfyllnadstext i tre steg:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "1. Välj ett läge",
-          "description": "Välj ett av 9 lägen: stycken, meningar, ord, listor, rubriker, länkar, tabell, citat eller definitioner."
+          "title": "1. Välj läge och antal",
+          "description": "Välj stycken, meningar eller ord och ange antal."
         },
         {
           "icon": "RiPaletteLine",
@@ -121,14 +107,9 @@
           "description": "8 stilar: Lorem Ipsum, Hipster, Business, Svenska utfyllnadsord, Bacon, Cupcake, Pirate och Legal — var och en med sin egen ordbank."
         },
         {
-          "icon": "RiSettings3Line",
-          "title": "3. Justera alternativen",
-          "description": "Ställ in styckeslängd (kort, medel, lång) och utdataformat (ren text eller HTML med taggar)."
-        },
-        {
           "icon": "RiFileCopyLine",
-          "title": "4. Kopiera resultatet",
-          "description": "Klicka på Generera, kopiera sedan texten, HTML-koden eller ladda ner en .txt-fil. Statistiken visar ord- och teckenantal."
+          "title": "3. Kopiera resultatet",
+          "description": "Klicka på Generera, kopiera sedan texten eller ladda ner en .txt-fil."
         }
       ]
     },
@@ -147,14 +128,14 @@
     },
     {
       "type": "sectionSteps",
-      "title": "9 lägen för innehållsgenerering",
-      "description": "Generatorn erbjuder 9 olika innehållstyper — från klassiska stycken till tabeller och definitioner:",
+      "title": "3 lägen för innehållsgenerering",
+      "description": "Generatorn erbjuder 3 olika innehållstyper:",
       "grid": "three",
       "items": [
         {
           "icon": "RiParagraph",
           "title": "Stycken",
-          "description": "Klassiska textblock med kontrollerad längd (kort, medel, lång). Perfekt för webbmockups, CMS-mallar och UI-prototyper."
+          "description": "Klassiska textblock. Perfekt för webbmockups, CMS-mallar och UI-prototyper."
         },
         {
           "icon": "RiTextSnippet",
@@ -165,36 +146,6 @@
           "icon": "RiFontSize",
           "title": "Ord",
           "description": "Slumpmässiga enskilda ord från den valda ordbanken. Perfekt för taggar, etiketter, kategorinamn och att testa textlängd i UI-komponenter."
-        },
-        {
-          "icon": "RiListUnordered",
-          "title": "Listor",
-          "description": "Numrerade listor (text) eller &lt;ul&gt;&lt;li&gt; (HTML). För navigationsmenyer, funktionslistor, produktspecifikationer och FAQ-poster."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Rubriker",
-          "description": "Slumpmässiga H1–H6-rubriker i Markdown- eller HTML-format. För att testa typografisk hierarki och innehållsstruktur."
-        },
-        {
-          "icon": "RiLink",
-          "title": "Länkar",
-          "description": "Länkar med slumpmässig text och exempel-URL:er. I Markdown- eller &lt;a href&gt;-HTML-format. För att prototypa navigation och menyer."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Tabell",
-          "description": "Tabell med slumpmässiga kolumnrubriker och data i 3–5 kolumner. Markdown- eller &lt;table&gt;-HTML-format. För prismockups och specifikationsblad."
-        },
-        {
-          "icon": "RiDoubleQuotesL",
-          "title": "Citat",
-          "description": "Citatblock (blockquote) med 1–3 meningar. För att testa citatstilar, rekommendationer och markerade textsektioner."
-        },
-        {
-          "icon": "RiBookOpenLine",
-          "title": "Definitioner",
-          "description": "Term + beskrivning-par i &lt;dl&gt;&lt;dt&gt;&lt;dd&gt;-HTML eller text. För ordlistor, FAQ-sektioner och dokumentation."
         }
       ]
     },
@@ -350,23 +301,13 @@
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "9 genereringslägen",
-          "description": "Stycken, meningar, ord, listor, rubriker, länkar, tabeller, citat och definitioner — full kontroll över antal och format."
+          "title": "3 genereringslägen",
+          "description": "Stycken, meningar och ord — full kontroll över antal."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 unika textstilar",
           "description": "Lorem Ipsum, Hipster, Business, Svenska utfyllnadsord, Bacon, Cupcake, Pirate och Legal. Varje stil har 90+ ord."
-        },
-        {
-          "icon": "RiCodeSSlashLine",
-          "title": "Färdig HTML-kod",
-          "description": "Generera text med HTML-taggar och kopiera den färdiga koden. Sparar tid vid skapande av webbprototyper."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "Textstatistik",
-          "description": "Ord, tecken, meningar, stycken, lästid och storlek i byte — synliga direkt efter generering."
         },
         {
           "icon": "RiUserLine",
@@ -425,19 +366,14 @@
           "answerSchemaText": "Tematiska varianter — Hipster använder livsstilsvokabulär, Business använder företagsjargong."
         },
         {
-          "question": "Hur genererar jag Lorem Ipsum med HTML-taggar?",
-          "answer": "I inställningarna, ändra formatet från Text till HTML. Generatorn omsluter stycken med &lt;p&gt; och listor med &lt;ul&gt;&lt;li&gt;. Klicka på Kopiera HTML. Koden kan klistras in direkt i en HTML-editor eller CMS.",
-          "answerSchemaText": "Ändra formatet till HTML i inställningarna, generera text och klicka på Kopiera HTML."
-        },
-        {
           "question": "Är generatorn gratis och säker?",
           "answer": "Ja. Helt gratis, utan registrering och utan begränsningar. Allt genereras lokalt i din webbläsare — inget skickas till en server. Ingen spårning, inga cookies, fungerar offline efter laddning.",
           "answerSchemaText": "Ja — gratis, utan registrering, lokal webbläsarbearbetning, ingen datainsamling."
         },
         {
           "question": "Hur många ord har ett standardstycke?",
-          "answer": "Beror på inställningen: kort (2–4 meningar, ca 20–50 ord), medel (4–7 meningar, ca 40–90 ord), lång (7–12 meningar, ca 70–150 ord). Ciceros ursprungliga första stycke har cirka 69 ord.",
-          "answerSchemaText": "Kort 20–50 ord, medel 40–90 ord, lång 70–150 ord."
+          "answer": "Det genererade stycket har vanligtvis 4–7 meningar, alltså ungefär 40–90 ord. Ciceros ursprungliga första stycke har cirka 69 ord.",
+          "answerSchemaText": "Det genererade stycket har vanligtvis 4–7 meningar, alltså ungefär 40–90 ord."
         }
       ]
     },

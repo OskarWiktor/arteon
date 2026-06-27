@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Darmowy generator Lorem Ipsum. Skopiuj przykładowy tekst do mockupów, prototypów i projektów graficznych",
-    "description": "Darmowy generator lorem ipsum wraz z 8 stylami przykładowych tekstów w tym: Bacon Ipsum, Cupcake Ipsum czy Legal Ipsum. Skopiuj przykładowy tekst dla nagłówków, zdań, akapitów, tabel czy cytatów w formie zwykłego tekstu lub HTML.",
+    "description": "Darmowy generator lorem ipsum wraz z 8 stylami przykładowych tekstów w tym: Bacon Ipsum, Cupcake Ipsum czy Legal Ipsum. Skopiuj przykładowy tekst w postaci akapitów, zdań lub słów.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-pl.webp",
     "path": "/narzedzia/generator-lorem-ipsum"
   },
   "hero": {
     "title": "Darmowy generator Lorem Ipsum. Skopiuj przykładowy tekst do mockupów, prototypów i projektów graficznych",
-    "description": "Darmowy generator lorem ipsum wraz z 8 stylami przykładowych tekstów w tym: Bacon Ipsum, Cupcake Ipsum czy Legal Ipsum. Skopiuj przykładowy tekst dla nagłówków, zdań, akapitów, tabel czy cytatów w formie zwykłego tekstu lub HTML.",
+    "description": "Darmowy generator lorem ipsum wraz z 8 stylami przykładowych tekstów w tym: Bacon Ipsum, Cupcake Ipsum czy Legal Ipsum. Skopiuj przykładowy tekst w postaci akapitów, zdań lub słów.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-pl.webp"
   },
   "breadcrumbs": {
@@ -41,17 +41,11 @@
         "Business Ipsum generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Darmowy generator lorem ipsum z 9 trybami generowania i 8 stylami tekstu. Generuj akapity, zdania, słowa, listy, nagłówki, linki, tabele, cytaty i definicje. Kopiuj jako tekst lub HTML, pobierz jako plik .txt. Statystyki w czasie rzeczywistym.",
+      "description": "Darmowy generator lorem ipsum z 8 stylami tekstu. Generuj akapity, zdania lub słowa, kopiuj do schowka albo pobierz jako plik .txt.",
       "featureList": [
         "Generowanie akapitów lorem ipsum",
         "Generowanie pojedynczych zdań",
         "Generowanie losowych słów",
-        "Generowanie list numerowanych i punktowanych",
-        "Generowanie nagłówków H1-H6",
-        "Generowanie linków z placeholder URL",
-        "Generowanie tabel z losowymi danymi",
-        "Generowanie cytatów (blockquote)",
-        "Generowanie list definicji (term + opis)",
         "Lorem Ipsum — łacina z De Finibus",
         "Hipster Ipsum — słowa z kultury hipsterskiej",
         "Business Ipsum — żargon korporacyjny",
@@ -60,11 +54,7 @@
         "Cupcake Ipsum — słownictwo cukiernicze",
         "Pirate Ipsum — tekst w stylu pirackim",
         "Legal Ipsum — terminologia prawnicza",
-        "Format wyjściowy: tekst zwykły lub HTML",
-        "Kontrola długości akapitów (krótkie, średnie, długie)",
-        "Statystyki: słowa, znaki, zdania, akapity, czas czytania",
         "Kopiowanie tekstu do schowka",
-        "Kopiowanie kodu HTML do schowka",
         "Pobieranie wyniku jako plik .txt",
         "Przetwarzanie lokalne w przeglądarce"
       ]
@@ -76,19 +66,15 @@
       "steps": [
         {
           "name": "Wybierz tryb generowania",
-          "text": "Wybierz jeden z 9 trybów: akapity, zdania, słowa, listy, nagłówki, linki, tabela, cytaty lub definicje. Ustaw ilość elementów."
+          "text": "Wybierz akapity, zdania lub słowa i ustaw ich ilość."
         },
         {
           "name": "Wybierz styl tekstu",
           "text": "Wybierz jeden z 8 stylów: Lorem Ipsum, Hipster, Business, Polski, Bacon, Cupcake, Pirate lub Legal Ipsum."
         },
         {
-          "name": "Ustaw format wyjściowy",
-          "text": "Wybierz format tekstu zwykłego lub HTML z tagami. Ustaw długość akapitów w zależności od potrzeb projektu."
-        },
-        {
           "name": "Skopiuj lub pobierz wynik",
-          "text": "Kliknij Generuj, a następnie skopiuj tekst do schowka, skopiuj kod HTML lub pobierz plik .txt."
+          "text": "Kliknij Generuj, a następnie skopiuj tekst do schowka lub pobierz plik .txt."
         }
       ]
     }
@@ -101,7 +87,7 @@
     {
       "type": "sectionBasic",
       "title": "Czym jest Lorem Ipsum i do czego służy",
-      "html": "<p class=\"text-mid\">Lorem Ipsum to standardowy tekst zastępczy używany w branży poligraficznej, projektowania graficznego i tworzenia stron internetowych od ponad 500 lat. Tekst pochodzi z dzieła <em>De Finibus Bonorum et Malorum</em> (O granicach dobra i zła) napisanego przez Marka Tulliusza Cycerona w 45 roku p.n.e. Oryginalny fragment został celowo zmodyfikowany - dodano, usunięto i zamieniono słowa - tak aby tekst nie miał sensu, ale zachował naturalny rytm i rozkład liter zbliżone do prawdziwego języka.</p><p class=\"text-mid mt-3\">Generator Lorem Ipsum pozwala szybko utworzyć dowolną ilość tekstu przykładowego do mockupów, prototypów UI, projektów graficznych i testowania układów typograficznych. Narzędzie oferuje 9 trybów generowania (akapity, zdania, słowa, listy, nagłówki, linki, tabele, cytaty, definicje), 8 stylów tekstu i statystyki w czasie rzeczywistym.</p>",
+      "html": "<p class=\"text-mid\">Lorem Ipsum to standardowy tekst zastępczy używany w branży poligraficznej, projektowania graficznego i tworzenia stron internetowych od ponad 500 lat. Tekst pochodzi z dzieła <em>De Finibus Bonorum et Malorum</em> (O granicach dobra i zła) napisanego przez Marka Tulliusza Cycerona w 45 roku p.n.e. Oryginalny fragment został celowo zmodyfikowany - dodano, usunięto i zamieniono słowa - tak aby tekst nie miał sensu, ale zachował naturalny rytm i rozkład liter zbliżone do prawdziwego języka.</p><p class=\"text-mid mt-3\">Generator Lorem Ipsum pozwala szybko utworzyć dowolną ilość tekstu przykładowego do mockupów, prototypów UI, projektów graficznych i testowania układów typograficznych. Narzędzie generuje akapity, zdania lub słowa w 8 stylach tekstu.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-pl.webp",
       "imageAlt": "Generator Lorem Ipsum - tekst przykładowy - Arteon"
     },
@@ -112,13 +98,13 @@
     {
       "type": "sectionSteps",
       "title": "Jak korzystać z generatora Lorem Ipsum?",
-      "description": "Wygeneruj tekst zastępczy w czterech krokach:",
-      "grid": "four",
+      "description": "Wygeneruj tekst zastępczy w trzech krokach:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "1. Wybierz tryb",
-          "description": "Wybierz jeden z 9 trybów: akapity, zdania, słowa, listy, nagłówki, linki, tabela, cytaty lub definicje."
+          "title": "1. Wybierz tryb i ilość",
+          "description": "Wybierz akapity, zdania lub słowa i ustaw ich ilość."
         },
         {
           "icon": "RiPaletteLine",
@@ -126,14 +112,9 @@
           "description": "8 stylów: Lorem Ipsum, Hipster, Business, Polski, Bacon, Cupcake, Pirate i Legal — każdy z własną bazę słów."
         },
         {
-          "icon": "RiSettings3Line",
-          "title": "3. Dostosuj opcje",
-          "description": "Ustaw długość akapitów (krótkie, średnie, długie) i format wyjściowy (tekst zwykły lub HTML z tagami)."
-        },
-        {
           "icon": "RiFileCopyLine",
-          "title": "4. Skopiuj wynik",
-          "description": "Kliknij Generuj, a następnie skopiuj tekst, skopiuj HTML lub pobierz plik .txt. Statystyki pokażą liczbę słów i znaków."
+          "title": "3. Skopiuj wynik",
+          "description": "Kliknij Generuj, a następnie skopiuj tekst do schowka lub pobierz plik .txt."
         }
       ]
     },
@@ -152,14 +133,14 @@
     },
     {
       "type": "sectionSteps",
-      "title": "9 trybów generowania treści",
-      "description": "Generator oferuje 9 różnych typów treści — od klasycznych akapitów po tabele i definicje:",
+      "title": "3 tryby generowania treści",
+      "description": "Generator oferuje 3 typy treści:",
       "grid": "three",
       "items": [
         {
           "icon": "RiParagraph",
           "title": "Akapity",
-          "description": "Klasyczne bloki tekstu o kontrolowanej długości (krótkie, średnie, długie). Idealne do mockupów stron, szablonów CMS i prototypów UI."
+          "description": "Klasyczne bloki tekstu. Idealne do mockupów stron, szablonów CMS i prototypów UI."
         },
         {
           "icon": "RiTextSnippet",
@@ -170,36 +151,6 @@
           "icon": "RiFontSize",
           "title": "Słowa",
           "description": "Losowe pojedyncze słowa z wybranej bazy. Idealne do tagów, etykiet, nazw kategorii i testowania długości tekstu w komponentach UI."
-        },
-        {
-          "icon": "RiListUnordered",
-          "title": "Listy",
-          "description": "Listy numerowane (tekst) lub &lt;ul&gt;&lt;li&gt; (HTML). Do menu nawigacji, list funkcji, specyfikacji produktów i punktów FAQ."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Nagłówki",
-          "description": "Losowe nagłówki H1-H6 w formacie Markdown lub HTML. Do testowania hierarchii typograficznej i struktury treści na stronie."
-        },
-        {
-          "icon": "RiLink",
-          "title": "Linki",
-          "description": "Linki z losowym tekstem i przykładowym URL. W formacie Markdown lub &lt;a href&gt; HTML. Do prototypowania nawigacji i menu."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Tabela",
-          "description": "Tabela z losowymi nagłówkami i danymi w 3-5 kolumnach. Format Markdown lub &lt;table&gt; HTML. Do mockupów cenników i specyfikacji."
-        },
-        {
-          "icon": "RiDoubleQuotesL",
-          "title": "Cytaty",
-          "description": "Bloki cytatów (blockquote) z 1-3 zdaniami. Do testowania stylów cytatów, testimoniali i wyróżnionych fragmentów tekstu."
-        },
-        {
-          "icon": "RiBookOpenLine",
-          "title": "Definicje",
-          "description": "Pary termin + opis w formacie &lt;dl&gt;&lt;dt&gt;&lt;dd&gt; HTML lub tekstu. Do słowniczków, sekcji FAQ, glosariuszy i dokumentacji."
         }
       ]
     },
@@ -355,23 +306,13 @@
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "9 trybów generowania treści",
-          "description": "Akapity, zdania, słowa, listy, nagłówki, linki, tabele, cytaty i definicje — pełna kontrola ilości i formatu."
+          "title": "3 tryby generowania treści",
+          "description": "Akapity, zdania i słowa — pełna kontrola ilości."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 unikatowych stylów tekstu",
           "description": "Lorem Ipsum, Hipster, Business, Polski, Bacon, Cupcake, Pirate i Legal. Każdy styl ma własną bazę ponad 90 słów."
-        },
-        {
-          "icon": "RiCodeSSlashLine",
-          "title": "Gotowy kod HTML",
-          "description": "Wygeneruj tekst z tagami HTML i skopiuj gotowy kod. Oszczędza czas przy tworzeniu prototypów stron internetowych."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "Statystyki tekstu",
-          "description": "Słowa, znaki, zdania, akapity, czas czytania i rozmiar w bajtach - widoczne natychmiast po wygenerowaniu."
         },
         {
           "icon": "RiUserLine",
@@ -444,19 +385,14 @@
           "answerSchemaText": "Tematyczne warianty Lorem Ipsum - Hipster używa słownictwa lifestyle'owego, Business - żargonu korporacyjnego."
         },
         {
-          "question": "Jak wygenerować Lorem Ipsum z tagami HTML?",
-          "answer": "W ustawieniach generatora zmień format wyjściowy z Tekst na HTML. Generator automatycznie opakuje akapity w tagi &lt;p&gt;, a listy w &lt;ul&gt;&lt;li&gt;. Następnie kliknij Kopiuj HTML, aby skopiować kod z tagami do schowka. Gotowy kod możesz wkleić bezpośrednio w edytor HTML lub CMS.",
-          "answerSchemaText": "Zmień format na HTML w ustawieniach, wygeneruj tekst i kliknij Kopiuj HTML."
-        },
-        {
           "question": "Czy generator jest darmowy i bezpieczny?",
           "answer": "Tak. Generator Lorem Ipsum jest w pełni darmowy, bez rejestracji i bez limitów. Cały tekst jest generowany lokalnie w przeglądarce - nic nie jest wysyłane na serwer. Narzędzie nie zbiera danych osobowych, nie używa ciasteczek śledzących i działa offline po załadowaniu strony.",
           "answerSchemaText": "Tak - darmowy, bez rejestracji, przetwarzanie lokalne w przeglądarce, brak zbierania danych."
         },
         {
           "question": "Ile słów ma standardowy akapit Lorem Ipsum?",
-          "answer": "W naszym generatorze długość akapitu zależy od wybranego ustawienia: krótki (2-4 zdania, ok. 20-50 słów), średni (4-7 zdań, ok. 40-90 słów), długi (7-12 zdań, ok. 70-150 słów). Oryginalny pierwszy akapit Lorem Ipsum z Cycerona ma około 69 słów i zaczyna się od Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "answerSchemaText": "Zależy od ustawienia: krótki 20-50 słów, średni 40-90 słów, długi 70-150 słów."
+          "answer": "Generowany akapit ma zwykle 4-7 zdań, czyli ok. 40-90 słów. Oryginalny pierwszy akapit Lorem Ipsum z Cycerona ma około 69 słów i zaczyna się od Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "answerSchemaText": "Generowany akapit ma zwykle 4-7 zdań, czyli ok. 40-90 słów."
         }
       ]
     },

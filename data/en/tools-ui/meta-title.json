@@ -11,9 +11,7 @@
   "descriptionTooShort": "The description is very short. Add more text that better explains what the user will find on the page and why they should click.",
   "descriptionTooLong": "The description exceeds the range Google most often shows in full (about 150-160 characters or ~920 pixels). It may be truncated or replaced with another snippet from the page.",
   "descriptionGoodLength": "The description fits within the typical range for search results (about 120-160 characters and up to ~920 pixels), which usually fits 2-3 short sentences.",
-  "addUrl": "Add URL (optional)",
-  "urlPlaceholder": "www.yourdomain.com/page",
-  "urlHelper": "The URL is only used in the preview - it does not affect the meta title and description length calculations.",
+  "exampleUrl": "https://www.your-domain.com/page",
   "enterTitleLabel": "Enter meta title",
   "titlePlaceholder": "E.g. Website SEO Services - Arteon",
   "chars": "Characters",
@@ -23,8 +21,6 @@
   "enterDescriptionLabel": "Enter meta description",
   "descriptionPlaceholder": "Describe in 2-3 sentences what the user will find on the page and what benefit they will get. Naturally include your main keywords.",
   "noDescription": "No description",
-  "previewTitle": "Google search result preview",
-  "previewHelper": "The preview is approximate - Google may trim or change the title and description depending on screen width and the text itself",
   "exampleTitle": "Example page title - offer / service",
   "exampleDescription": "A preview of your page description will appear here. Write briefly about what you offer, how you help the client, and why this page is worth visiting."
 }

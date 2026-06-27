@@ -140,7 +140,7 @@
     {
       "type": "sectionInfo",
       "title": "Anteprima dello snippet: cosa mostra?",
-      "html": "<p class=\"text-mid\">L'anteprima (snippet preview) simula l'aspetto del titolo e della descrizione della pagina nei risultati di ricerca Google. È una visualizzazione indicativa: l'aspetto reale può variare leggermente a seconda del dispositivo e del browser.</p><h3 class=\"h5 mt-6 mb-2\">Elementi dell'anteprima</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> - l'indirizzo della pagina mostrato sopra il titolo. Puoi inserirlo in un campo opzionale per un risultato più realistico.</li><li><strong>Titolo</strong> - l'intestazione blu. Se troppo lungo, lo strumento lo tronca automaticamente e aggiunge i puntini di sospensione.</li><li><strong>Descrizione</strong> - il testo grigio sotto il titolo. Viene anch'esso troncato se supera il limite.</li></ul>"
+      "html": "<p class=\"text-mid\">L'anteprima (snippet preview) simula l'aspetto del titolo e della descrizione della pagina nei risultati di ricerca Google. È una visualizzazione indicativa: l'aspetto reale può variare leggermente a seconda del dispositivo e del browser.</p><h3 class=\"h5 mt-6 mb-2\">Elementi dell'anteprima</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> - l'indirizzo della pagina mostrato sopra il titolo, in un formato che riproduce quello mostrato realmente da Google.</li><li><strong>Titolo</strong> - l'intestazione blu. Se troppo lungo, lo strumento lo tronca automaticamente e aggiunge i puntini di sospensione.</li><li><strong>Descrizione</strong> - il testo grigio sotto il titolo. Viene anch'esso troncato se supera il limite.</li></ul>"
     },
     {
       "type": "gap",

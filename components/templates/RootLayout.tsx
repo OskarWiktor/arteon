@@ -26,7 +26,6 @@ const playfairDisplay = Playfair_Display({
 });
 
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
-const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
 const ORG_LOGO = toAbsoluteUrl('/icon-512x512.png');
 
@@ -250,14 +249,6 @@ export default function RootLayout({ lang, children }: RootLayoutProps) {
         <link rel='dns-prefetch' href='https://www.googletagmanager.com' />
 
         <meta name='theme-color' content='#171717' />
-
-        {ADSENSE_CLIENT && (
-          <script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-            crossOrigin='anonymous'
-          />
-        )}
 
         <JsonLd schema={buildOrgJsonLd(lang)} id='schema-org-organization' />
 

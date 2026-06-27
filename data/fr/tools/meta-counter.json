@@ -144,7 +144,7 @@
     {
       "type": "sectionInfo",
       "title": "Aperçu du snippet : que montre-t-il ?",
-      "html": "<p class=\"text-mid\">L'aperçu (snippet preview) simule l'apparence du titre et de la description de la page dans les résultats de recherche Google. C'est une visualisation indicative : l'apparence réelle peut varier légèrement selon l'appareil et le navigateur.</p><h3 class=\"h5 mt-6 mb-2\">Éléments de l'aperçu</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> – l'adresse de la page affichée au-dessus du titre. Vous pouvez la saisir dans un champ optionnel pour un résultat plus réaliste.</li><li><strong>Titre</strong> – l'en-tête bleu. S'il est trop long, l'outil le tronque automatiquement et ajoute des points de suspension.</li><li><strong>Description</strong> – le texte gris sous le titre. Il est également tronqué s'il dépasse la limite.</li></ul>"
+      "html": "<p class=\"text-mid\">L'aperçu (snippet preview) simule l'apparence du titre et de la description de la page dans les résultats de recherche Google. C'est une visualisation indicative : l'apparence réelle peut varier légèrement selon l'appareil et le navigateur.</p><h3 class=\"h5 mt-6 mb-2\">Éléments de l'aperçu</h3><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>URL</strong> – l'adresse de la page affichée au-dessus du titre, sous la forme d'un exemple type, dans le format que Google utilise réellement.</li><li><strong>Titre</strong> – l'en-tête bleu. S'il est trop long, l'outil le tronque automatiquement et ajoute des points de suspension.</li><li><strong>Description</strong> – le texte gris sous le titre. Il est également tronqué s'il dépasse la limite.</li></ul>"
     },
     {
       "type": "gap",

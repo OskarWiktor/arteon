@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "it",
   "metadata": {
-    "title": "Contatore di parole, caratteri e tempo di lettura con formattazione del testo",
-    "description": "Contatore gratuito di parole, caratteri, frasi, paragrafi e tempo di lettura con convertitore di maiuscole. Controlla la lunghezza del testo e modifica le lettere.",
+    "title": "Contatore di parole, caratteri e tempo di lettura",
+    "description": "Contatore gratuito di parole, caratteri, frasi e tempo di lettura. Controlla la lunghezza del testo e valuta la leggibilità con l'indice Gulpease.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp",
     "path": "/it/strumenti/contatore-di-parole-e-caratteri"
   },
   "hero": {
-    "title": "Conta parole e caratteri – verifica tempo di lettura e formatta",
-    "description": "Incolla il testo e lo strumento conterà parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Cambia maiuscole o rimuovi duplicati",
+    "title": "Conta parole e caratteri – verifica tempo di lettura e leggibilità",
+    "description": "Incolla il testo e lo strumento conterà parole, caratteri, frasi, tempo di lettura e valuterà la leggibilità con l'indice Gulpease.",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Contatore di parole, caratteri e tempo di lettura con formattazione del testo",
+      "name": "Contatore di parole, caratteri e tempo di lettura",
       "alternateName": [
         "Contatore di parole",
         "Contatore di caratteri con e senza spazi",
@@ -33,27 +33,19 @@
         "Indice di leggibilità Gulpease",
         "Contatore di sillabe",
         "Calcolatore tempo di parlato",
-        "Convertitore maiuscole minuscole",
-        "Strumento leggibilità testo",
-        "Rimuovi righe duplicate"
+        "Strumento leggibilità testo"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Contatore gratuito di parole e caratteri con strumenti di formattazione del testo. Conta parole, caratteri, frasi, paragrafi, parole uniche e tempo di lettura. Offre 7 strumenti: conversione maiuscole, rimozione spazi, righe vuote e duplicati.",
+      "description": "Contatore gratuito di parole e caratteri. Conta parole, caratteri, frasi, tempo di lettura e sillabe, e valuta la leggibilità con l'indice Gulpease.",
       "featureList": [
         "Conteggio parole",
         "Conteggio caratteri con e senza spazi",
-        "Conteggio frasi e paragrafi",
-        "Conteggio parole uniche",
-        "Lunghezza media parola",
+        "Conteggio frasi",
         "Tempo di lettura stimato",
         "Tempo di parlato stimato",
         "Conteggio sillabe",
         "Indice Gulpease (specifico per l’italiano)",
         "Formule di leggibilità adattate (16 lingue)",
-        "Convertire in maiuscolo o minuscolo",
-        "Convertire in formato frase o titolo",
-        "Rimuovere spazi extra",
-        "Rimuovere righe vuote e duplicati",
         "Copiare testo negli appunti"
       ]
     },
@@ -64,15 +56,11 @@
       "steps": [
         {
           "name": "Incolla il testo",
-          "text": "Incolla o digita il testo. Lo strumento conterà parole, caratteri, frasi, paragrafi e parole uniche."
+          "text": "Incolla o digita il testo. Lo strumento conterà parole, caratteri e frasi."
         },
         {
           "name": "Controlla le statistiche",
-          "text": "Nel pannello sinistro vedrai 11 metriche: parole, caratteri con e senza spazi, frasi, paragrafi, parole uniche, lunghezza media, tempo di lettura, tempo di parlato, sillabe e indice di leggibilità."
-        },
-        {
-          "name": "Trasforma il testo",
-          "text": "Sotto il campo di testo troverai 7 strumenti di trasformazione."
+          "text": "Nel pannello sinistro vedrai 8 metriche: parole, caratteri con e senza spazi, frasi, tempo di lettura, tempo di parlato, sillabe e indice di leggibilità."
         },
         {
           "name": "Copia il risultato",
@@ -89,7 +77,7 @@
     {
       "type": "sectionBasic",
       "title": "Contatore di parole e caratteri con strumenti di testo",
-      "html": "<p class=\"text-mid\">Questo strumento combina un contatore di parole e caratteri con analisi di leggibilità e funzioni di formattazione testo. Incolla il tuo testo per vedere parole, caratteri, sillabe, frasi, paragrafi, parole uniche, tempo di lettura, tempo di parlato e un punteggio di leggibilità colorato.</p><p class=\"text-mid mt-3\">Per i testi in italiano lo strumento utilizza l’<strong>indice Gulpease</strong>: 89 + (300 × frasi − 10 × caratteri) / parole. A differenza del Flesch-Kincaid standard, il Gulpease è stato sviluppato specificamente per la lingua italiana. Un punteggio superiore a 80 indica un testo facile per chi ha la licenza elementare; inferiore a 40 è leggibile solo per laureati.</p><p class=\"text-mid mt-3\">Sotto il campo di testo troverai 7 strumenti: conversione maiuscole/minuscole, rimozione spazi, righe vuote e duplicati. Tutto avviene localmente nel browser.</p>",
+      "html": "<p class=\"text-mid\">Questo strumento combina un contatore di parole e caratteri con un'analisi di leggibilità. Incolla il tuo testo per vedere parole, caratteri, sillabe, frasi, tempo di lettura, tempo di parlato e un punteggio di leggibilità colorato.</p><p class=\"text-mid mt-3\">Per i testi in italiano lo strumento utilizza l’<strong>indice Gulpease</strong>: 89 + (300 × frasi − 10 × caratteri) / parole. A differenza del Flesch-Kincaid standard, il Gulpease è stato sviluppato specificamente per la lingua italiana. Un punteggio superiore a 80 indica un testo facile per chi ha la licenza elementare; inferiore a 40 è leggibile solo per laureati.</p><p class=\"text-mid mt-3\">Tutta l'analisi avviene localmente nel browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contatore-di-parole-e-caratteri-it.webp",
       "imageAlt": "Contatore di parole e caratteri – Arteon"
     },
@@ -100,27 +88,22 @@
     {
       "type": "sectionSteps",
       "title": "Come usare il contatore di parole",
-      "description": "Analizza e formatta il testo in tre passaggi:",
-      "grid": "four",
+      "description": "Analizza il testo in tre passaggi:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Incolla il testo",
-          "description": "Incolla o digita il testo. Lo strumento conterà parole, caratteri, frasi, paragrafi e parole uniche."
+          "description": "Incolla o digita il testo. Lo strumento conterà parole, caratteri e frasi."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Controlla le statistiche",
-          "description": "Nel pannello sinistro vedrai 11 metriche: parole, caratteri con e senza spazi, frasi, paragrafi, parole uniche, lunghezza media, tempo di lettura, tempo di parlato, sillabe e indice di leggibilità."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Trasforma il testo",
-          "description": "Sotto il campo di testo troverai 7 strumenti di trasformazione."
+          "description": "Nel pannello sinistro vedrai 8 metriche: parole, caratteri con e senza spazi, frasi, tempo di lettura, tempo di parlato, sillabe e indice di leggibilità."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Copia il risultato",
+          "title": "3. Copia il risultato",
           "description": "Clicca su Copia testo. Usa Cancella per ricominciare."
         }
       ]
@@ -144,8 +127,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 metriche di testo – cosa misura il contatore",
-      "description": "Il contatore analizza il tuo testo con undici indicatori:",
+      "title": "8 metriche di testo – cosa misura il contatore",
+      "description": "Il contatore analizza il tuo testo con otto indicatori:",
       "grid": "two",
       "items": [
         {
@@ -167,21 +150,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Frasi",
           "description": "Numero di frasi. Le frasi più brevi migliorano la leggibilità."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Paragrafi",
-          "description": "Blocchi di testo separati da righe vuote. Paragrafi ben strutturati migliorano la leggibilità su schermo."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Parole uniche",
-          "description": "Numero di parole non ripetute. Un rapporto più alto indica un vocabolario più ricco."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Lunghezza media parola",
-          "description": "Media di caratteri per parola. Indicatore di complessità del testo."
         },
         {
           "icon": "RiTimeLine",
@@ -211,53 +179,6 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 strumenti di formattazione",
-      "description": "Sotto il campo di testo troverai pulsanti di trasformazione:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "MAIUSCOLE",
-          "description": "Converte tutto in maiuscolo. Utile per intestazioni e acronimi."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "minuscole",
-          "description": "Converte tutto in minuscolo. Per normalizzare testo da fonti diverse."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Frase",
-          "description": "Prima lettera di ogni frase maiuscola, il resto minuscolo."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Titolo",
-          "description": "Ogni parola inizia con maiuscola. Per titoli e nomi propri."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Rimuovi spazi extra",
-          "description": "Riduce spazi multipli a uno solo."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Rimuovi righe vuote",
-          "description": "Elimina righe vuote e ridondanti."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Rimuovi duplicati",
-          "description": "Mantiene solo righe uniche."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
       "title": "A chi si rivolge il contatore di parole?",
       "description": "Lo strumento è utile per chiunque lavori con il testo:",
       "grid": "three",
@@ -265,7 +186,7 @@
         {
           "icon": "RiEditLine",
           "title": "Copywriter e redattori",
-          "description": "Contare parole e caratteri, verificare limiti piattaforme, cambiare maiuscole e pulire il testo."
+          "description": "Contare parole e caratteri, verificare limiti piattaforme e valutare la leggibilità del testo."
         },
         {
           "icon": "RiBloggerLine",
@@ -323,13 +244,8 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 metriche + indice Gulpease",
-          "description": "Parole, caratteri, sillabe, frasi, paragrafi, parole uniche, tempo di lettura, tempo di parlato e leggibilità – tutto in un pannello."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 strumenti di formattazione",
-          "description": "Conversione maiuscole, rimozione spazi, righe vuote e duplicati – senza software aggiuntivo."
+          "title": "8 metriche + indice Gulpease",
+          "description": "Parole, caratteri, sillabe, frasi, tempo di lettura, tempo di parlato e leggibilità – tutto in un pannello."
         },
         {
           "icon": "RiUserLine",
