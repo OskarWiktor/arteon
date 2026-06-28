@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "ro",
   "metadata": {
-    "title": "Contor de cuvinte, caractere și timp de citire cu formatarea textului",
-    "description": "Contor gratuit de cuvinte, caractere, propoziții, paragrafe și timp de citire cu convertor de litere mari. Verificați lungimea textului și schimbați literele.",
+    "title": "Contor gratuit de cuvinte și caractere, propoziții, silabe și timp de citire",
+    "description": "Lipiți textul, iar instrumentul va număra cuvintele, caracterele, propozițiile, silabele, timpul de citire și va evalua lizibilitatea textului. Contor gratuit de cuvinte și caractere.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contor-cuvinte-si-caractere-ro.webp",
     "path": "/ro/instrumente/contor-cuvinte-si-caractere"
   },
   "hero": {
-    "title": "Numără cuvinte și caractere – verifică timpul de citire și formatează",
-    "description": "Lipiți textul și instrumentul va număra cuvinte, caractere, propoziții, paragrafe, cuvinte unice și timp de citire. Schimbați majusculele sau eliminați duplicatele",
+    "title": "Contor gratuit de cuvinte și caractere, propoziții, silabe și timp de citire",
+    "description": "Lipiți textul, iar instrumentul va număra cuvintele, caracterele, propozițiile, silabele, timpul de citire și va evalua lizibilitatea textului. Contor gratuit de cuvinte și caractere.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,60 +24,50 @@
   },
   "schemas": {
     "software": {
-      "name": "Contor de cuvinte, caractere și timp de citire cu formatarea textului",
+      "name": "Contor de cuvinte, caractere și timp de citire",
       "alternateName": [
         "Contor de cuvinte",
+        "Contor de caractere",
         "Contor de caractere cu și fără spații",
-        "Instrument de numărare cuvinte pentru copywriteri",
-        "Calculator timp de citire",
-        "Convertor majuscule minuscule",
-        "Verificator lizibilitate Flesch-Kincaid",
+        "Contor de propoziții",
         "Contor de silabe",
+        "Calculator timp de citire",
         "Calculator timp de vorbire",
-        "Instrument lizibilitate text",
-        "Elimină linii duplicate din text",
+        "Instrument de numărare cuvinte și caractere",
+        "Instrument de evaluare a lizibilității textului",
+        "Verificator lizibilitate Flesch-Kincaid",
         "Numărător de cuvinte și caractere gratuit"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Contor gratuit de cuvinte și caractere cu instrumente de formatare a textului. Numără cuvinte, caractere, propoziții, paragrafe, cuvinte unice și timp de citire. Oferă 7 instrumente: conversie litere, eliminare spații, linii goale și duplicate.",
+      "description": "Contor gratuit de cuvinte și caractere. Numără cuvinte, caractere, propoziții, silabe și timp de citire, și evaluează lizibilitatea textului.",
       "featureList": [
         "Numărare cuvinte",
         "Numărare caractere cu și fără spații",
-        "Numărare propoziții și paragrafe",
-        "Numărare cuvinte unice",
-        "Lungimea medie a cuvintelor",
+        "Numărare propoziții",
         "Timp de citire estimat",
         "Timp de vorbire estimat",
         "Numărare silabe",
         "Scor de lizibilitate Flesch-Kincaid",
         "Formule de lizibilitate adaptate (16 limbi)",
-        "Conversie în majuscule sau minuscule",
-        "Conversie în stil de propoziție sau de titlu",
-        "Eliminarea spațiilor inutile",
-        "Eliminarea liniilor goale și a duplicatelor",
         "Copierea textului în clipboard"
       ]
     },
     "howTo": {
-      "name": "Cum se folosește contorul de cuvinte",
-      "description": "Analizați și formatați textul în trei pași:",
+      "name": "Cum se folosește contorul de cuvinte și caractere",
+      "description": "Numărați cuvinte, caractere, silabe și propoziții. Verificați lizibilitatea Flesch-Kincaid, timpul de citire și timpul de vorbire.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Lipiți textul",
-          "text": "Lipiți sau tastați textul. Instrumentul va număra cuvinte, caractere, propoziții, paragrafe și cuvinte unice."
+          "text": "Lipiți sau tastați textul în câmpul de text. Instrumentul va număra automat cuvintele, caracterele, propozițiile și va estima timpul de citire."
         },
         {
           "name": "Verificați statisticile",
-          "text": "In panoul din stanga vei vedea 11 metrici: cuvinte, caractere cu si fara spatii, propozitii, paragrafe, cuvinte unice, lungime medie, timp de citire, timp de vorbire, silabe si scor Flesch-Kincaid."
-        },
-        {
-          "name": "Transformați textul",
-          "text": "Sub câmpul de text veți găsi 7 instrumente de transformare."
+          "text": "În panoul din stânga veți vedea 8 metrici de text: cuvinte, caractere cu și fără spații, propoziții, timp de citire, timp de vorbire, silabe și scor de lizibilitate Flesch-Kincaid."
         },
         {
           "name": "Copiați rezultatul",
-          "text": "Faceți clic pe Copiați textul. Folosiți Ștergeți pentru a reîncepe."
+          "text": "Faceți clic pe Copiați textul pentru a transfera textul în clipboard. Folosiți Ștergeți pentru a reîncepe."
         }
       ]
     }
@@ -89,8 +79,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Contor de cuvinte și caractere cu instrumente text",
-      "html": "<p class=\"text-mid\">Acest instrument combină un contor de cuvinte și caractere cu analiza lizibilității Flesch-Kincaid și funcții de formatare text. Lipește textul pentru a vedea cuvinte, caractere, silabe, propoziții, paragrafe, cuvinte unice, timp de citire, timp de vorbire și un scor de lizibilitate colorat.</p><p class=\"text-mid mt-3\"><strong>Scorul Flesch-Kincaid</strong> (0–100) arată cât de ușor este de citit textul. Scoruri peste 70 înseamnă text ușor, sub 30 nivel academic. Instrumentul folosește formule adaptate pentru 16 limbi.</p><p class=\"text-mid mt-3\">Sub câmpul de text vei găsi 7 instrumente: conversie majuscule/minuscule, eliminare spații, linii goale și duplicate. Toată procesarea are loc local în browser.</p>",
+      "title": "Contor de cuvinte, caractere și timp de citire",
+      "html": "<p class=\"text-mid\">Acest instrument combină un contor de cuvinte și caractere cu analiza lizibilității Flesch-Kincaid. Lipiți textul pentru a vedea numărul de cuvinte, caractere, silabe, propoziții, timpul de citire estimat, timpul de vorbire și un scor de lizibilitate colorat.</p><p class=\"text-mid mt-3\"><strong>Scorul de lizibilitate Flesch-Kincaid</strong> (0–100) arată cât de ușor este de citit textul. Un scor peste 70 înseamnă text ușor (pentru un public larg), iar sub 30 - nivel academic. Instrumentul folosește formule adaptate pentru 16 limbi.</p><p class=\"text-mid mt-3\">Toată analiza și procesarea textului au loc local în browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contor-cuvinte-si-caractere-ro.webp",
       "imageAlt": "Contor de cuvinte și caractere – Arteon"
     },
@@ -100,35 +90,26 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Cum se folosește contorul de cuvinte",
-      "description": "Analizați și formatați textul în trei pași:",
-      "grid": "four",
+      "title": "Cum se folosește contorul de cuvinte și caractere",
+      "description": "Analiza textului în trei pași:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Lipiți textul",
-          "description": "Lipiți sau tastați textul. Instrumentul va număra cuvinte, caractere, propoziții, paragrafe și cuvinte unice."
+          "description": "Lipiți sau tastați textul în câmpul din dreapta. Instrumentul va număra imediat cuvintele, caracterele, propozițiile și va estima timpul de citire."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Verificați statisticile",
-          "description": "În panoul din stânga vei vedea 11 metrici: cuvinte, caractere cu și fără spații, propoziții, paragrafe, cuvinte unice, lungime medie, timp de citire, timp de vorbire, silabe și scor Flesch-Kincaid."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Transformați textul",
-          "description": "Sub câmpul de text veți găsi 7 instrumente de transformare."
+          "description": "În panoul din stânga veți vedea 8 metrici de text: cuvinte, caractere cu și fără spații, propoziții, timp de citire, timp de vorbire, silabe și scor de lizibilitate Flesch-Kincaid."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Copiați rezultatul",
-          "description": "Faceți clic pe Copiați textul. Folosiți Ștergeți pentru a reîncepe."
+          "title": "3. Copiați rezultatul",
+          "description": "Faceți clic pe Copiați textul pentru a transfera textul în clipboard. Folosiți Ștergeți pentru a reîncepe."
         }
       ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
     },
     {
       "type": "gap",
@@ -145,8 +126,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 metrici text – ce măsoară contorul",
-      "description": "Contorul analizează textul cu unsprezece indicatori:",
+      "title": "8 metrici text – ce măsoară contorul",
+      "description": "Contorul analizează textul cu opt indicatori:",
       "grid": "two",
       "items": [
         {
@@ -168,21 +149,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Propoziții",
           "description": "Numărul de propoziții din text. Ajută la evaluarea complexității și lizibilității - propozițiile mai scurte sunt mai ușor de absorbit."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Paragrafe",
-          "description": "Blocuri de text separate prin linii goale. Paragrafele bine structurate îmbunătățesc lizibilitatea pe ecrane."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Cuvinte unice",
-          "description": "Numărul de cuvinte care nu se repetă. O proporție mai mare de cuvinte unice indică un vocabular mai bogat."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Lungimea medie a cuvintelor",
-          "description": "Numărul mediu de caractere pe cuvânt. Un indicator al complexității textului - textele tehnice au cuvinte mai lungi."
         },
         {
           "icon": "RiTimeLine",
@@ -212,53 +178,6 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 instrumente de formatare",
-      "description": "Sub câmpul de text veți găsi butoane de transformare:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "MAJUSCULE",
-          "description": "Convertește tot textul în majuscule. Util pentru titluri, acronime și evidențierea fragmentelor."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "minuscule",
-          "description": "Convertește tot textul în minuscule. Util pentru normalizarea textului copiat din surse diferite."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Stil propoziție",
-          "description": "Prima literă a fiecărei propoziții este majusculă, restul minuscule. Format standard pentru text continuu."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Stil Titlu",
-          "description": "Fiecare cuvânt începe cu majusculă. Ideal pentru titluri, anteturi și nume proprii."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Elimină spațiile extra",
-          "description": "Reduce spațiile multiple la unul singur și elimină spațiile de la începutul și sfârșitul fiecărei linii."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Elimină liniile goale",
-          "description": "Elimină liniile goale și redundante din text. Util pentru curățarea textului copiat de pe site-uri."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Elimină liniile duplicate",
-          "description": "Păstrează doar liniile unice, eliminând repetițiile. Util pentru curățarea listelor și datelor."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
       "title": "Cui i se adresează contorul de cuvinte?",
       "description": "Instrumentul este util pentru oricine lucrează cu text:",
       "grid": "three",
@@ -266,12 +185,12 @@
         {
           "icon": "RiEditLine",
           "title": "Copywriteri și editori",
-          "description": "Numărarea cuvintelor și caracterelor, verificarea limitelor platformelor, schimbarea rapidă a majusculelor și curățarea textului înainte de publicare."
+          "description": "Numărarea cuvintelor și caracterelor, verificarea limitelor platformelor și a lizibilității textului înainte de publicare."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Bloggeri și creatori de conținut",
-          "description": "Monitorizarea lungimii postărilor, verificarea timpului de citire, eliminarea liniilor duplicate."
+          "description": "Monitorizarea lungimii postărilor și verificarea timpului de citire și a lizibilității."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -281,7 +200,7 @@
         {
           "icon": "RiSearchLine",
           "title": "Specialiști SEO",
-          "description": "Analiza lungimii conținutului, numărarea cuvintelor unice și evaluarea complexității textului."
+          "description": "Analiza lungimii conținutului, scorul de lizibilitate Flesch-Kincaid și evaluarea complexității textului."
         },
         {
           "icon": "RiGraduationCapLine",
@@ -324,13 +243,8 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 metrici + scor de lizibilitate",
-          "description": "Cuvinte, caractere, silabe, propoziții, paragrafe, cuvinte unice, timp de citire, timp de vorbire și Flesch-Kincaid - totul într-un singur panou."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 instrumente de formatare",
-          "description": "Conversie majuscule, eliminare spații, linii goale și duplicate - fără a instala software suplimentar."
+          "title": "8 metrici + scor de lizibilitate",
+          "description": "Cuvinte, caractere, silabe, propoziții, timp de citire, timp de vorbire și Flesch-Kincaid - totul într-un singur panou."
         },
         {
           "icon": "RiUserLine",

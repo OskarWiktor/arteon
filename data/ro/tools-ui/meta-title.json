@@ -11,9 +11,7 @@
   "descriptionTooShort": "Descrierea este foarte scurtă. Adăugați mai mult text pentru a explica ce va găsi utilizatorul pe pagină și de ce ar trebui să dea clic.",
   "descriptionTooLong": "Descrierea depășește intervalul pe care Google îl afișează de obicei integral (aproximativ 150-160 caractere sau ~920 pixeli). Poate fi trunchiată sau înlocuită cu un alt extras.",
   "descriptionGoodLength": "Descrierea se încadrează în intervalul tipic pentru rezultatele căutării (aproximativ 120-160 caractere și până la ~920 pixeli), suficient pentru 2-3 propoziții scurte.",
-  "addUrl": "Adăugați URL (opțional)",
-  "urlPlaceholder": "www.domeniul-dvs.ro/pagina",
-  "urlHelper": "URL-ul este folosit doar în previzualizare – nu afectează calculul lungimii meta titlului și descrierii.",
+  "exampleUrl": "https://www.domeniul-dvs.ro/pagina",
   "enterTitleLabel": "Introduceți meta titlu",
   "titlePlaceholder": "Ex. Servicii SEO pentru site-uri web – Arteon",
   "chars": "Caractere",
@@ -23,8 +21,6 @@
   "enterDescriptionLabel": "Introduceți meta descriere",
   "descriptionPlaceholder": "Descrieți în 2-3 propoziții ce va găsi utilizatorul pe pagină și ce avantaj va obține. Includeți în mod natural cuvintele cheie principale.",
   "noDescription": "Fără descriere",
-  "previewTitle": "Previzualizare rezultat în Google",
-  "previewHelper": "Previzualizarea este aproximativă – Google poate ajusta titlul și descrierea în funcție de lățimea ecranului și text",
   "exampleTitle": "Titlu pagină exemplu – Ofertă / Serviciu",
   "exampleDescription": "Aici va apărea o previzualizare a descrierii paginii dvs. Descrieți pe scurt ce oferiți, cum ajutați clientul și de ce această pagină merită o vizită."
 }

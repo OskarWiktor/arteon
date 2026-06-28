@@ -36,8 +36,7 @@
         "Generare pictograme PWA 192x192 și 512x512",
         "Suport pentru imagini PNG, JPG și SVG ca sursă",
         "Configurare culoare de fundal",
-        "Generare fișier manifest.json pentru PWA",
-        "Descărcare toate fișierele ca ZIP",
+        "Descărcare toate fișierele cu un singur clic",
         "Descărcare fișiere individuale",
         "Conformitate cu Lighthouse",
         "Procesare în browser (fișierele nu sunt trimise pe server)",
@@ -53,16 +52,12 @@
           "text": "Trageți un fișier în zona desemnată sau selectați o grafică de pe dispozitiv. Un logo simplu sau o pictogramă în format PNG, JPG sau SVG funcționează cel mai bine."
         },
         {
-          "name": "Alegeți dimensiunile pictogramelor",
-          "text": "Selectați ce dimensiuni de pictograme aveți nevoie: favicon.ico (32x32), pictograme PNG (16x16, 32x32, 180x180, 192x192, 512x512)."
-        },
-        {
-          "name": "Configurați opțiunile",
-          "text": "Setați culoarea fundalului (sau păstrați transparent), decideți dacă să generați un fișier manifest și dacă fișierele să se descarce automat."
+          "name": "Configurați fundalul",
+          "text": "Setați culoarea fundalului pictogramei sau păstrați-o transparentă."
         },
         {
           "name": "Generați și descărcați fișierele",
-          "text": "După generare, fișierele pot fi descărcate ca arhivă ZIP sau fiecare pictogramă individual."
+          "text": "Instrumentul generează favicon.ico și setul complet de pictograme PNG (16x16, 32x32, 180x180, 192x192, 512x512). Fișierele pot fi descărcate toate odată sau fiecare pictogramă individual."
         }
       ]
     }
@@ -75,7 +70,7 @@
     {
       "type": "sectionBasic",
       "title": "Ce este un favicon și de ce ar trebui să aveți unul?",
-      "html": "<p class=\"mb-4\">Un favicon este o pictogramă mică care apare pe tab-ul browserului lângă titlul paginii. O vedeți și în semne de carte, istoricul navigării și pe ecranul de start al telefonului când cineva adaugă site-ul ca shortcut.</p><p class=\"mb-4\">Această grafică mică servește o funcție importantă - ajută utilizatorii să recunoască rapid un site printre multe tab-uri deschise. Când cineva are o duzină de tab-uri deschise în browser, faviconul este adesea singurul element vizibil care identifică site-ul.</p><p>Generatorul creează un set complet de pictograme: un fișier clasic favicon.ico pentru browsere, pictograme PNG în diferite dimensiuni și un apple-touch-icon pentru dispozitivele Apple. Dacă construiți o aplicație web (PWA), puteți genera și pictograme 192x192 și 512x512 împreună cu un fișier manifest.</p>",
+      "html": "<p class=\"mb-4\">Un favicon este o pictogramă mică care apare pe tab-ul browserului lângă titlul paginii. O vedeți și în semne de carte, istoricul navigării și pe ecranul de start al telefonului când cineva adaugă site-ul ca shortcut.</p><p class=\"mb-4\">Această grafică mică servește o funcție importantă - ajută utilizatorii să recunoască rapid un site printre multe tab-uri deschise. Când cineva are o duzină de tab-uri deschise în browser, faviconul este adesea singurul element vizibil care identifică site-ul.</p><p>Generatorul creează un set complet de pictograme: un fișier clasic favicon.ico pentru browsere, pictograme PNG în diferite dimensiuni și un apple-touch-icon pentru dispozitivele Apple. Generează și pictograme 192x192 și 512x512, utile pentru aplicații web (PWA).</p>",
       "imageSrc": "/assets/tools/favicon-generator/generator-favicon-gratuit-ro.webp",
       "imageAlt": "Generator favicon – Arteon"
     },
@@ -95,13 +90,13 @@
           "icon": "RiImageLine"
         },
         {
-          "title": "2. Alegeți dimensiunile",
-          "description": "Selectați dimensiunile de pictograme necesare. Pentru un site obișnuit: favicon.ico, 32×32 și 180×180. Pentru PWA, adăugați 192×192 și 512×512.",
+          "title": "2. Alegeți culoarea fundalului",
+          "description": "Alegeți culoarea fundalului pictogramei sau păstrați-o transparentă.",
           "icon": "RiAspectRatioLine"
         },
         {
           "title": "3. Descărcați fișierele",
-          "description": "După generare, descărcați toate fișierele ca ZIP sau fiecare pictogramă individual. Sub instrument veți găsi instrucțiuni despre cum să adăugați faviconul pe site.",
+          "description": "După generare, descărcați toate fișierele cu un singur clic sau fiecare pictogramă individual. Sub instrument veți găsi instrucțiuni despre cum să adăugați faviconul pe site.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -132,7 +127,7 @@
         {
           "icon": "RiDownloadLine",
           "title": "Set complet într-un singur loc",
-          "description": "Favicon.ico, pictograme PNG, apple-touch-icon, pictograme PWA și manifest - totul dintr-o singură imagine, într-un singur instrument."
+          "description": "Favicon.ico, pictograme PNG, apple-touch-icon și pictograme PWA - totul dintr-o singură imagine, într-un singur instrument."
         },
         {
           "icon": "RiImageLine",
@@ -142,7 +137,7 @@
         {
           "icon": "RiSmartphoneLine",
           "title": "Gata pentru site web și PWA",
-          "description": "Instrumentul generează un fișier manifest.json pentru aplicații web. Mai jos veți găsi instrucțiuni de integrare."
+          "description": "Pictogramele 192x192 și 512x512 generate pot fi folosite imediat într-o aplicație web (PWA). Mai jos veți găsi instrucțiuni de integrare."
         }
       ]
     },
@@ -162,19 +157,14 @@
           "description": "Trageți un fișier în zona desemnată sau selectați o grafică de pe dispozitiv. Formate suportate: PNG, JPG, SVG. Un logo simplu sau o pictogramă de cel puțin 512×512 pixeli funcționează cel mai bine."
         },
         {
-          "icon": "RiLayoutGridLine",
-          "title": "2. Alegeți dimensiunile pictogramelor",
-          "description": "Selectați ce dimensiuni de pictograme aveți nevoie. Puteți selecta toate sau doar unele. Pentru un site obișnuit: favicon.ico, 32×32 și 180×180."
-        },
-        {
           "icon": "RiSettings3Line",
-          "title": "3. Configurați opțiunile de generare",
-          "description": "Setați opțiuni suplimentare: fundal (transparent sau culoare aleasă), manifest (fișier de configurare PWA) și descărcare automată."
+          "title": "2. Alegeți fundalul",
+          "description": "Setați fundalul pictogramei: transparent sau o culoare aleasă."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "4. Generați și descărcați fișierele",
-          "description": "După pornirea generării, instrumentul procesează imaginea local - nimic nu este trimis la un server. Descărcați toate fișierele ca arhivă ZIP sau pictogramele individual."
+          "title": "3. Generați și descărcați fișierele",
+          "description": "După pornirea generării, instrumentul procesează imaginea local - nimic nu este trimis la un server. Descărcați toate fișierele cu un singur clic sau pictogramele individual."
         }
       ]
     },
@@ -184,9 +174,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "Opțiuni de generare - ce face fiecare?",
-      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Dimensiuni PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Fundal transparent (PNG/ICO)</span></div></div></div>",
-      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Fundal (transparent sau culoare)</h3><p class=\"text-mid\">Implicit, generatorul păstrează transparența. Puteți alege și o culoare specifică de fundal.</p></div><div><h3 class=\"h5 mb-2\">Generare manifest (site.webmanifest)</h3><p class=\"text-mid\">Un fișier JSON pentru aplicații web (PWA). Dacă nu construiți un PWA, această opțiune nu este necesară.</p></div></div>"
+      "title": "Opțiunea de generare - ce face?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Fundal transparent (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Culoare fundal:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Fundal (transparent sau culoare)</h3><p class=\"text-mid\">Implicit, generatorul păstrează transparența. Puteți alege și o culoare specifică de fundal.</p></div></div>"
     },
     {
       "type": "gap",
@@ -200,8 +190,8 @@
       "items": [
         {
           "icon": "RiFolderZipLine",
-          "title": "Descărcați toate ca ZIP",
-          "description": "Butonul &quot;Descărcați toate&quot; împachetează toate fișierele generate într-o singură arhivă ZIP. Aceasta este cea mai convenabilă opțiune când aveți nevoie de setul complet de pictograme."
+          "title": "Descărcați totul cu un singur clic",
+          "description": "Butonul &quot;Descărcați&quot; salvează pe disc toate fișierele generate deodată. Aceasta este cea mai convenabilă opțiune când aveți nevoie de setul complet de pictograme."
         },
         {
           "icon": "RiFileDownloadLine",
@@ -315,8 +305,8 @@
         },
         {
           "question": "Pot genera doar favicon.ico fără celelalte pictograme?",
-          "answer": "Da. Înainte de generare, puteți selecta exact ce dimensiuni aveți nevoie - ex. doar favicon.ico sau doar anumite dimensiuni PNG.",
-          "answerSchemaText": "Da, puteți selecta dimensiuni individuale înainte de generare."
+          "answer": "Instrumentul generează întotdeauna setul complet: favicon.ico și pictograme PNG 16x16, 32x32, 180x180, 192x192 și 512x512. După generare, puteți descărca doar fișierele de care aveți nevoie - fiecare pictogramă are propriul buton de descărcare.",
+          "answerSchemaText": "Setul complet se generează automat; puteți descărca individual doar fișierele necesare."
         },
         {
           "question": "Ce formate de imagine acceptă generatorul de favicon?",
@@ -330,13 +320,8 @@
         },
         {
           "question": "Ce dimensiuni de pictograme sunt esențiale pentru un site obișnuit?",
-          "answer": "Pentru un site tipic, trei fișiere sunt suficiente: favicon.ico (32×32), o pictogramă PNG 32×32 și apple-touch-icon 180×180. Dacă site-ul trebuie să funcționeze ca aplicație web (PWA), aveți nevoie și de pictograme 192×192 și 512×512 plus un fișier manifest.",
+          "answer": "Pentru un site tipic, trei fișiere sunt suficiente: favicon.ico (32×32), o pictogramă PNG 32×32 și apple-touch-icon 180×180. Dacă site-ul trebuie să funcționeze ca aplicație web (PWA), este utilă și folosirea pictogramelor generate 192×192 și 512×512.",
           "answerSchemaText": "favicon.ico, PNG 32×32 și apple-touch-icon 180×180. Pentru PWA adăugați 192×192 și 512×512."
-        },
-        {
-          "question": "Ce este un fișier site.webmanifest și când este necesar?",
-          "answer": "Este un fișier de configurare pentru aplicații web (PWA) care conține informații despre pictogramă, numele și culorile aplicației. Este necesar când site-ul trebuie să funcționeze ca aplicație adăugată pe ecranul de start al telefonului. Pentru site-uri obișnuite, nu este necesar.",
-          "answerSchemaText": "Fișier de configurare PWA. Necesar pentru aplicații pe ecranul de start, nu pentru site-uri obișnuite."
         },
         {
           "question": "Faviconul se afișează la fel în toate browserele?",

@@ -11,9 +11,7 @@
   "descriptionTooShort": "A leírás nagyon rövid. Adjon hozzá több szöveget, hogy elmagyarázza, mit talál a felhasználó az oldalon, és miért érdemes rákattintania.",
   "descriptionTooLong": "A leírás meghaladja azt a tartományt, amelyet a Google általában teljes egészében megjelenít (körülbelül 150-160 karakter vagy ~920 pixel). Csonkolható vagy más kivonattal helyettesíthető.",
   "descriptionGoodLength": "A leírás a keresési eredményekre jellemző tartományba esik (körülbelül 120-160 karakter és legfeljebb ~920 pixel), ami elegendő 2-3 rövid mondathoz.",
-  "addUrl": "URL hozzáadása (opcionális)",
-  "urlPlaceholder": "www.azondomain.hu/oldal",
-  "urlHelper": "Az URL csak az előnézetben használatos – nem befolyásolja a meta cím és leírás hosszúságának számítását.",
+  "exampleUrl": "https://www.azondomain.hu/oldal",
   "enterTitleLabel": "Meta cím megadása",
   "titlePlaceholder": "Pl. SEO szolgáltatások weboldalakhoz – Arteon",
   "chars": "Karakterek",
@@ -23,8 +21,6 @@
   "enterDescriptionLabel": "Meta leírás megadása",
   "descriptionPlaceholder": "Írja le 2-3 mondatban, mit talál a felhasználó az oldalon és milyen előnyt kap. Természetesen építse be a fő kulcsszavakat.",
   "noDescription": "Nincs leírás",
-  "previewTitle": "Google eredmény előnézete",
-  "previewHelper": "Az előnézet hozzávetőleges – a Google a képernyő szélességétől és a szövegtől függően módosíthatja a címet és a leírást",
   "exampleTitle": "Példa oldalcím – Ajánlat / Szolgáltatás",
   "exampleDescription": "Itt jelenik meg az oldal leírásának előnézete. Röviden írja le, mit kínál, hogyan segíti az ügyfelet, és miért érdemes meglátogatni ezt az oldalt."
 }

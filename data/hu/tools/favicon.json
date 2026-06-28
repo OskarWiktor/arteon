@@ -36,8 +36,7 @@
         "PWA ikonok 192x192 és 512x512 generálása",
         "PNG, JPG és SVG forráskép támogatása",
         "Háttérszín beállítása",
-        "Manifest.json fájl generálása PWA-hoz",
-        "Összes fájl letöltése ZIP-ben",
+        "Összes fájl letöltése egy kattintással",
         "Egyedi fájlok letöltése",
         "Lighthouse-kompatibilis",
         "Feldolgozás a böngészőben (a fájlok nem kerülnek szerverre)",
@@ -53,16 +52,12 @@
           "text": "Húzzon egy fájlt a kijelölt területre, vagy válasszon grafikát az eszközéről. Egyszerű logó vagy ikon PNG, JPG vagy SVG formátumban működik a legjobban."
         },
         {
-          "name": "Válassza ki az ikonméreteket",
-          "text": "Válassza ki, milyen ikonméretekre van szüksége: favicon.ico (32x32), PNG ikonok (16x16, 32x32, 180x180, 192x192, 512x512)."
-        },
-        {
-          "name": "Beállítások konfigurálása",
-          "text": "Állítsa be a háttérszínt (vagy hagyja átlátszónak), döntse el, hogy generáljon-e manifest fájlt, és hogy a fájlok automatikusan letöltődjenek-e."
+          "name": "Állítsa be a hátteret",
+          "text": "Állítsa be az ikon háttérszínét, vagy hagyja átlátszónak."
         },
         {
           "name": "Generálás és fájlok letöltése",
-          "text": "A generálás után a fájlok ZIP archívumként vagy egyenként tölthetők le."
+          "text": "Az eszköz legenerálja a favicon.ico fájlt és a teljes PNG ikonkészletet (16x16, 32x32, 180x180, 192x192, 512x512). A fájlok letölthetők egyszerre vagy egyenként."
         }
       ]
     }
@@ -75,7 +70,7 @@
     {
       "type": "sectionBasic",
       "title": "Mi az a favicon és miért érdemes rendelkeznie eggyel?",
-      "html": "<p class=\"mb-4\">A favicon egy kis ikon, amely a böngészőfülön jelenik meg az oldal címe mellett. Láthatja a könyvjelzőkben, a böngészési előzményekben és a telefon kezdőképernyőjén is, amikor valaki parancsikónként adja hozzá az oldalt.</p><p class=\"mb-4\">Ez a kis grafika fontos funkciót tölt be - segít a felhasználóknak gyorsan felismerni egy oldalt sok nyitott fül között. Amikor valakinek tucat fül van nyitva a böngészőben, a favicon gyakran az egyetlen látható elem, amely azonosítja az oldalt.</p><p>A generátor teljes ikonkészletet hoz létre: klasszikus favicon.ico fájlt böngészőkhöz, PNG ikonokat különböző méretekben és apple-touch-icont Apple eszközökhöz. Ha webalkalmazást (PWA) épít, 192x192 és 512x512 ikonokat is generálhat manifest fájllal együtt.</p>",
+      "html": "<p class=\"mb-4\">A favicon egy kis ikon, amely a böngészőfülön jelenik meg az oldal címe mellett. Láthatja a könyvjelzőkben, a böngészési előzményekben és a telefon kezdőképernyőjén is, amikor valaki parancsikónként adja hozzá az oldalt.</p><p class=\"mb-4\">Ez a kis grafika fontos funkciót tölt be - segít a felhasználóknak gyorsan felismerni egy oldalt sok nyitott fül között. Amikor valakinek tucat fül van nyitva a böngészőben, a favicon gyakran az egyetlen látható elem, amely azonosítja az oldalt.</p><p>A generátor teljes ikonkészletet hoz létre: klasszikus favicon.ico fájlt böngészőkhöz, PNG ikonokat különböző méretekben és apple-touch-icont Apple eszközökhöz. A 192x192 és 512x512 méretű ikonok webalkalmazásokhoz (PWA) is hasznosak.</p>",
       "imageSrc": "/assets/tools/favicon-generator/ingyenes-favicon-generator-hu.webp",
       "imageAlt": "Favicon generátor – Arteon"
     },
@@ -95,13 +90,13 @@
           "icon": "RiImageLine"
         },
         {
-          "title": "2. Válasszon méreteket",
-          "description": "Válassza ki a szükséges ikonméreteket. Szokványos weboldalhoz: favicon.ico, 32×32 és 180×180. PWA-hoz adja hozzá a 192×192 és 512×512 méreteket.",
+          "title": "2. Állítsa be a háttérszínt",
+          "description": "Válasszon háttérszínt az ikonnak, vagy hagyja átlátszónak.",
           "icon": "RiAspectRatioLine"
         },
         {
           "title": "3. Töltse le a fájlokat",
-          "description": "A generálás után töltse le az összes fájlt ZIP-ként vagy minden ikont külön. Az eszköz alatt talál útmutatást a favicon hozzáadásáról.",
+          "description": "A generálás után töltse le az összes fájlt egy kattintással vagy minden ikont külön. Az eszköz alatt talál útmutatást a favicon hozzáadásáról.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -132,7 +127,7 @@
         {
           "icon": "RiDownloadLine",
           "title": "Teljes készlet egy helyen",
-          "description": "Favicon.ico, PNG ikonok, apple-touch-icon, PWA ikonok és manifest - minden egyetlen képből, egyetlen eszközben."
+          "description": "Favicon.ico, PNG ikonok, apple-touch-icon és PWA ikonok - minden egyetlen képből, egyetlen eszközben."
         },
         {
           "icon": "RiImageLine",
@@ -142,7 +137,7 @@
         {
           "icon": "RiSmartphoneLine",
           "title": "Készen áll weboldalhoz és PWA-hoz",
-          "description": "Az eszköz manifest.json fájlt generál webalkalmazásokhoz. Lentébb talál integrációs útmutatót."
+          "description": "A generált 192×192 és 512×512 méretű ikonok közvetlenül felhasználhatók webalkalmazásokhoz (PWA). Lentébb talál integrációs útmutatót."
         }
       ]
     },
@@ -162,19 +157,14 @@
           "description": "Húzzon egy fájlt a kijelölt területre, vagy válasszon grafikát az eszközéről. Támogatott formátumok: PNG, JPG, SVG. Egyszerű logó vagy ikon legalább 512×512 pixelben működik a legjobban."
         },
         {
-          "icon": "RiLayoutGridLine",
-          "title": "2. Válassza ki az ikonméreteket",
-          "description": "Válassza ki, milyen ikonméretekre van szüksége. Kiválaszthat mindent vagy csak néhányat. Szokványos weboldalhoz: favicon.ico, 32×32 és 180×180."
-        },
-        {
           "icon": "RiSettings3Line",
-          "title": "3. Generálási beállítások konfigurálása",
-          "description": "További beállítások: háttér (átlátszó vagy választott szín), manifest (PWA konfigurációs fájl) és automatikus letöltés."
+          "title": "2. Állítsa be a hátteret",
+          "description": "Válasszon háttérszínt az ikonnak, vagy hagyja átlátszónak."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "4. Generálás és fájlok letöltése",
-          "description": "A generálás indítása után az eszköz helyben dolgozza fel a képet - semmi nem kerül szerverre. Töltse le az összes fájlt ZIP archívumként vagy az egyes ikonokat külön."
+          "title": "3. Generálás és fájlok letöltése",
+          "description": "A generálás indítása után az eszköz helyben dolgozza fel a képet - semmi nem kerül szerverre. Az eszköz legenerálja a favicon.ico fájlt és a teljes PNG ikonkészletet. Töltse le az összes fájlt egy kattintással, vagy az egyes ikonokat külön."
         }
       ]
     },
@@ -184,9 +174,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "Generálási beállítások - mit csinál mindegyik?",
-      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG méretek</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-blue-100 text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Átlátszó háttér (PNG/ICO)</span></div></div></div>",
-      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Háttér (átlátszó vagy szín)</h3><p class=\"text-mid\">Alapértelmezésben a generátor megőrzi az átlátszóságot. Választhat adott háttérszínt is.</p></div><div><h3 class=\"h5 mb-2\">Manifest generálás (site.webmanifest)</h3><p class=\"text-mid\">JSON fájl webalkalmazásokhoz (PWA). Ha nem épít PWA-t, ez a beállítás nem szükséges.</p></div></div>"
+      "title": "Generálási beállítás - mit csinál?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Átlátszó háttér (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Háttérszín:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Háttér (átlátszó vagy szín)</h3><p class=\"text-mid\">Alapértelmezésben a generátor megőrzi az átlátszóságot. Választhat adott háttérszínt is.</p></div></div>"
     },
     {
       "type": "gap",
@@ -200,8 +190,8 @@
       "items": [
         {
           "icon": "RiFolderZipLine",
-          "title": "Összes letöltése ZIP-ként",
-          "description": "Az &quot;Összes letöltése&quot; gomb az összes generált fájlt egyetlen ZIP archívumba csomagolja. Ez a legkényelmesebb lehetőség, ha a teljes ikonkészletre van szüksége."
+          "title": "Összes letöltése egy kattintással",
+          "description": "A &quot;Letöltés&quot; gomb az összes generált fájlt egyszerre menti le. Ez a legkényelmesebb lehetőség, ha a teljes ikonkészletre van szüksége."
         },
         {
           "icon": "RiFileDownloadLine",
@@ -315,8 +305,8 @@
         },
         {
           "question": "Generálhatok csak favicon.ico-t a többi ikon nélkül?",
-          "answer": "Igen. A generálás előtt pontosan kiválaszthatja, milyen méretekre van szüksége - pl. csak favicon.ico vagy csak bizonyos PNG méretek.",
-          "answerSchemaText": "Igen, a generálás előtt egyedi méreteket választhat."
+          "answer": "Az eszköz mindig a teljes készletet generálja: favicon.ico-t és PNG ikonokat 16x16, 32x32, 180x180, 192x192 és 512x512 méretben. A generálás után viszont csak azokat a fájlokat töltheti le, amelyekre szüksége van - minden ikonnak saját letöltés gombja van.",
+          "answerSchemaText": "Az eszköz mindig a teljes készletet generálja, de a generálás után csak a szükséges fájlokat töltheti le egyenként."
         },
         {
           "question": "Milyen képformátumokat támogat a favicon generátor?",
@@ -330,13 +320,8 @@
         },
         {
           "question": "Mely ikonméretek nélkülözhetetlenek egy szokványos weboldalhoz?",
-          "answer": "Egy tipikus weboldalhoz három fájl elegendő: favicon.ico (32×32), egy 32×32-es PNG ikon és apple-touch-icon 180×180. Ha az oldalnak webalkalmazásként (PWA) kell működnie, 192×192 és 512×512 ikonokra plus manifest fájlra is szükség van.",
+          "answer": "Egy tipikus weboldalhoz három fájl elegendő: favicon.ico (32×32), egy 32×32-es PNG ikon és apple-touch-icon 180×180. Ha az oldalnak webalkalmazásként (PWA) kell működnie, érdemes a generált 192×192 és 512×512 méretű ikonokat is felhasználni.",
           "answerSchemaText": "favicon.ico, 32×32 PNG és apple-touch-icon 180×180. PWA-hoz adja hozzá a 192×192 és 512×512 méreteket."
-        },
-        {
-          "question": "Mi az a site.webmanifest fájl és mikor szükséges?",
-          "answer": "Ez egy konfigurációs fájl webalkalmazásokhoz (PWA), amely információkat tartalmaz az ikonról, a névről és az alkalmazás színeitől. Akkor szükséges, ha az oldalnak alkalmazásként kell működnie a telefon kezdőképernyőjén. Szokványos weboldalakhoz nem szükséges.",
-          "answerSchemaText": "PWA konfigurációs fájl. Szükséges kezdőképernyő-alkalmazásokhoz, szokványos weboldalakhoz nem."
         },
         {
           "question": "A favicon ugyanolyan jelenik meg minden böngészőben?",

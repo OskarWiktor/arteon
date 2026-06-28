@@ -11,9 +11,7 @@
   "descriptionTooShort": "Opis jest bardzo krótki. Dodaj dłuższy tekst, który lepiej tłumaczy, co użytkownik znajdzie na stronie i dlaczego warto w nią kliknąć.",
   "descriptionTooLong": "Opis przekracza zakres, który Google najczęściej pokazuje w całości (około 150-160 znaków lub ~920 pikseli). Może zostać ucięty lub zastąpiony innym fragmentem tekstu ze strony.",
   "descriptionGoodLength": "Opis mieści się w typowym zakresie dla wyników wyszukiwania (około 120-160 znaków i do ~920 pikseli), co zwykle wystarcza na 2-3 krótkie zdania.",
-  "addUrl": "Dodaj adres URL (opcjonalnie)",
-  "urlPlaceholder": "www.twojadomena.pl/podstrona",
-  "urlHelper": "Adres URL jest używany tylko w podglądzie - nie ma wpływu na obliczenia długości meta title i description.",
+  "exampleUrl": "https://www.twoja-domena.pl/podstrona",
   "enterTitleLabel": "Wpisz meta title",
   "titlePlaceholder": "Np. Pozycjonowanie stron WWW - Arteon",
   "chars": "Znaki",
@@ -23,8 +21,6 @@
   "enterDescriptionLabel": "Wpisz meta description",
   "descriptionPlaceholder": "Opisz w 2-3 zdaniach, co użytkownik znajdzie na stronie i jaką korzyść otrzyma. Dodaj naturalnie główne słowa kluczowe.",
   "noDescription": "Brak opisu",
-  "previewTitle": "Podgląd wyniku w Google",
-  "previewHelper": "Podgląd jest orientacyjny - Google może przyciąć lub zmienić tytuł i opis w zależności od szerokości ekranu i samego tekstu",
   "exampleTitle": "Przykładowy tytuł strony - oferta / usługa",
   "exampleDescription": "Tu pojawi się podgląd opisu Twojej strony. Napisz krótko o tym, co oferujesz, jak pomagasz klientowi oraz dlaczego warto odwiedzić właśnie tę podstronę."
 }

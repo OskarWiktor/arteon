@@ -3,13 +3,13 @@
   "locale": "it",
   "metadata": {
     "title": "Generatore Lorem Ipsum — testo di esempio, paragrafi, frasi e parole casuali",
-    "description": "Generatore Lorem Ipsum gratuito — 8 stili: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business e altro. 9 modalità di generazione. Copia come testo o HTML.",
+    "description": "Generatore Lorem Ipsum gratuito — 8 stili: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business e altro. Genera paragrafi, frasi o parole e copia il testo o scarica il file .txt.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/generatore-lorem-ipsum-it.webp",
     "path": "/strumenti/generatore-lorem-ipsum"
   },
   "hero": {
     "title": "Generatore Lorem Ipsum — testo di esempio, paragrafi, frasi e parole casuali",
-    "description": "8 stili di testo: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal e riempitivo italiano. 9 modalità: paragrafi, frasi, parole, elenchi, intestazioni, link, tabelle, citazioni, definizioni.",
+    "description": "8 stili di testo: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal e riempitivo italiano. Genera paragrafi, frasi o parole.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/generatore-lorem-ipsum-it.webp"
   },
   "breadcrumbs": {
@@ -36,17 +36,11 @@
         "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Generatore Lorem Ipsum gratuito — 8 stili: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business e altro. 9 modalità di generazione. Copia come testo o HTML.",
+      "description": "Generatore Lorem Ipsum gratuito con 8 stili di testo. Genera paragrafi, frasi o parole, copia il testo negli appunti oppure scarica il file .txt.",
       "featureList": [
         "Generare paragrafi Lorem Ipsum",
         "Generare frasi individuali",
         "Generare parole casuali",
-        "Generare elenchi numerati e puntati",
-        "Generare intestazioni H1–H6",
-        "Generare link con URL di esempio",
-        "Generare tabelle con dati casuali",
-        "Generare citazioni",
-        "Generare elenchi di definizioni",
         "Lorem Ipsum — latino da De Finibus",
         "Hipster Ipsum — vocabolario hipster",
         "Business Ipsum — gergo aziendale",
@@ -55,11 +49,7 @@
         "Cupcake Ipsum — pasticceria e dolci",
         "Pirate Ipsum — vocabolario pirata",
         "Legal Ipsum — terminologia giuridica",
-        "Formato di output: testo semplice o HTML",
-        "Controllo lunghezza paragrafo (corto, medio, lungo)",
-        "Statistiche: parole, caratteri, frasi, paragrafi, tempo di lettura",
         "Copiare testo negli appunti",
-        "Copiare codice HTML negli appunti",
         "Scaricare come file .txt",
         "Elaborazione locale nel browser"
       ]
@@ -71,19 +61,15 @@
       "steps": [
         {
           "name": "Scegliere una modalità di generazione",
-          "text": "Seleziona una delle 9 modalità: paragrafi, frasi, parole, elenchi, intestazioni, link, tabella, citazioni o definizioni. Imposta la quantità."
+          "text": "Seleziona paragrafi, frasi o parole e imposta la quantità."
         },
         {
           "name": "Scegliere uno stile di testo",
           "text": "Scegli uno degli 8 stili: Lorem Ipsum, Hipster, Business, Riempitivo italiano, Bacon, Cupcake, Pirate o Legal Ipsum."
         },
         {
-          "name": "Impostare il formato di output",
-          "text": "Scegli testo semplice o HTML con tag. Regola la lunghezza del paragrafo secondo necessità."
-        },
-        {
           "name": "Copiare o scaricare il risultato",
-          "text": "Clicca su Genera, poi copia il testo, il codice HTML o scarica un file .txt."
+          "text": "Clicca su Genera, poi copia il testo o scarica un file .txt."
         }
       ]
     }
@@ -96,7 +82,7 @@
     {
       "type": "sectionBasic",
       "title": "Cos'è Lorem Ipsum e a cosa serve",
-      "html": "<p class=\"text-mid\">Lorem Ipsum è il testo segnaposto standard utilizzato nei settori della stampa, del design grafico e dello sviluppo web da oltre 500 anni. Il testo proviene da <em>De Finibus Bonorum et Malorum</em> (Sui confini del bene e del male) scritto da Marco Tullio Cicerone nel 45 a.C. Il passaggio originale è stato deliberatamente alterato — sono state aggiunte, rimosse e riordinate parole — in modo che il testo non abbia significato ma mantenga un ritmo naturale e una distribuzione delle lettere simile a una lingua reale.</p><p class=\"text-mid mt-3\">Il Generatore Lorem Ipsum consente di creare rapidamente qualsiasi quantità di testo segnaposto per mockup, prototipi di interfaccia, design grafici e test di impaginazione tipografica. Lo strumento offre 9 modalità di generazione (paragrafi, frasi, parole, elenchi, intestazioni, link, tabelle, citazioni, definizioni), 8 stili di testo e statistiche in tempo reale.</p>",
+      "html": "<p class=\"text-mid\">Lorem Ipsum è il testo segnaposto standard utilizzato nei settori della stampa, del design grafico e dello sviluppo web da oltre 500 anni. Il testo proviene da <em>De Finibus Bonorum et Malorum</em> (Sui confini del bene e del male) scritto da Marco Tullio Cicerone nel 45 a.C. Il passaggio originale è stato deliberatamente alterato — sono state aggiunte, rimosse e riordinate parole — in modo che il testo non abbia significato ma mantenga un ritmo naturale e una distribuzione delle lettere simile a una lingua reale.</p><p class=\"text-mid mt-3\">Il Generatore Lorem Ipsum consente di creare rapidamente qualsiasi quantità di testo segnaposto per mockup, prototipi di interfaccia, design grafici e test di impaginazione tipografica. Lo strumento genera paragrafi, frasi o parole in 8 stili di testo.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/generatore-lorem-ipsum-it.webp",
       "imageAlt": "Generatore Lorem Ipsum — Arteon"
     },
@@ -107,13 +93,13 @@
     {
       "type": "sectionSteps",
       "title": "Come usare il Generatore Lorem Ipsum",
-      "description": "Genera testo segnaposto in quattro passaggi:",
-      "grid": "four",
+      "description": "Genera testo segnaposto in tre passaggi:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiListCheck2",
           "title": "1. Scegli una modalità",
-          "description": "Seleziona una delle 9 modalità: paragrafi, frasi, parole, elenchi, intestazioni, link, tabella, citazioni o definizioni."
+          "description": "Seleziona paragrafi, frasi o parole e imposta la quantità."
         },
         {
           "icon": "RiPaletteLine",
@@ -121,14 +107,9 @@
           "description": "8 stili: Lorem Ipsum, Hipster, Business, Riempitivo italiano, Bacon, Cupcake, Pirate e Legal — ognuno con il proprio dizionario."
         },
         {
-          "icon": "RiSettings3Line",
-          "title": "3. Regola le opzioni",
-          "description": "Imposta la lunghezza del paragrafo (corto, medio, lungo) e il formato di output (testo semplice o HTML con tag)."
-        },
-        {
           "icon": "RiFileCopyLine",
-          "title": "4. Copia il risultato",
-          "description": "Clicca su Genera, poi copia il testo, l'HTML o scarica un file .txt. Le statistiche mostrano il conteggio di parole e caratteri."
+          "title": "3. Copia il risultato",
+          "description": "Clicca su Genera, poi copia il testo negli appunti o scarica un file .txt."
         }
       ]
     },
@@ -147,14 +128,14 @@
     },
     {
       "type": "sectionSteps",
-      "title": "9 modalità di generazione dei contenuti",
-      "description": "Il generatore offre 9 tipi di contenuto diversi — dai paragrafi classici alle tabelle e definizioni:",
+      "title": "3 modalità di generazione dei contenuti",
+      "description": "Il generatore offre 3 tipi di contenuto:",
       "grid": "three",
       "items": [
         {
           "icon": "RiParagraph",
           "title": "Paragrafi",
-          "description": "Blocchi di testo classici con lunghezza controllata (corto, medio, lungo). Ideale per mockup web, modelli CMS e prototipi di interfaccia."
+          "description": "Blocchi di testo classici di lunghezza fissa. Ideale per mockup web, modelli CMS e prototipi di interfaccia."
         },
         {
           "icon": "RiTextSnippet",
@@ -165,36 +146,6 @@
           "icon": "RiFontSize",
           "title": "Parole",
           "description": "Parole casuali singole dal dizionario selezionato. Ideale per tag, etichette, nomi di categorie e test di lunghezza testo nei componenti UI."
-        },
-        {
-          "icon": "RiListUnordered",
-          "title": "Elenchi",
-          "description": "Elenchi numerati (testo) o &lt;ul&gt;&lt;li&gt; (HTML). Per menu di navigazione, elenchi funzionalità, specifiche prodotto e FAQ."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Intestazioni",
-          "description": "Intestazioni H1–H6 casuali in formato Markdown o HTML. Per testare la gerarchia tipografica e la struttura dei contenuti."
-        },
-        {
-          "icon": "RiLink",
-          "title": "Link",
-          "description": "Link con testo casuale e URL di esempio. In formato Markdown o &lt;a href&gt; HTML. Per prototipare navigazione e menu."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Tabella",
-          "description": "Tabella con intestazioni e dati casuali su 3–5 colonne. Formato Markdown o &lt;table&gt; HTML. Per mockup di prezzi e schede tecniche."
-        },
-        {
-          "icon": "RiDoubleQuotesL",
-          "title": "Citazioni",
-          "description": "Blocchi citazione (blockquote) con 1–3 frasi. Per testare stili di citazione, testimonianze e sezioni di testo evidenziato."
-        },
-        {
-          "icon": "RiBookOpenLine",
-          "title": "Definizioni",
-          "description": "Coppie termine + descrizione in &lt;dl&gt;&lt;dt&gt;&lt;dd&gt; HTML o testo. Per glossari, sezioni FAQ e documentazione."
         }
       ]
     },
@@ -230,7 +181,7 @@
         {
           "icon": "RiEditLine",
           "title": "Copywriter",
-          "description": "Prototipare la struttura del testo: quanti paragrafi, lunghezza frasi, come appaiono elenchi e intestazioni nel layout finale."
+          "description": "Prototipare la struttura del testo: quanti paragrafi e quale lunghezza di frasi nel layout finale."
         },
         {
           "icon": "RiPrinterLine",
@@ -350,23 +301,13 @@
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "9 modalità di generazione",
-          "description": "Paragrafi, frasi, parole, elenchi, intestazioni, link, tabelle, citazioni e definizioni — controllo totale su quantità e formato."
+          "title": "3 modalità di generazione",
+          "description": "Paragrafi, frasi o parole — controllo totale sulla quantità."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 stili di testo unici",
           "description": "Lorem Ipsum, Hipster, Business, Riempitivo italiano, Bacon, Cupcake, Pirate e Legal. Ogni stile ha oltre 90 parole."
-        },
-        {
-          "icon": "RiCodeSSlashLine",
-          "title": "Codice HTML pronto",
-          "description": "Genera testo con tag HTML e copia il codice pronto. Risparmia tempo nella creazione di prototipi web."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "Statistiche del testo",
-          "description": "Parole, caratteri, frasi, paragrafi, tempo di lettura e dimensione in byte — visibili immediatamente dopo la generazione."
         },
         {
           "icon": "RiUserLine",
@@ -425,19 +366,14 @@
           "answerSchemaText": "Varianti tematiche — Hipster usa vocabolario lifestyle, Business usa gergo aziendale."
         },
         {
-          "question": "Come genero Lorem Ipsum con tag HTML?",
-          "answer": "Nelle impostazioni, cambiate il formato da Testo a HTML. Il generatore avvolge i paragrafi con &lt;p&gt; e gli elenchi con &lt;ul&gt;&lt;li&gt;. Cliccate su Copia HTML. Il codice può essere incollato direttamente in un editor HTML o CMS.",
-          "answerSchemaText": "Cambiate il formato in HTML nelle impostazioni, generate il testo e cliccate su Copia HTML."
-        },
-        {
           "question": "Il generatore è gratuito e sicuro?",
           "answer": "Sì. Completamente gratuito, senza registrazione e senza limiti. Tutto viene generato localmente nel browser — nulla viene inviato a un server. Nessun tracking, nessun cookie, funziona offline dopo il caricamento.",
           "answerSchemaText": "Sì — gratuito, senza registrazione, elaborazione locale nel browser, nessuna raccolta dati."
         },
         {
           "question": "Quante parole ha un paragrafo standard?",
-          "answer": "Dipende dall'impostazione: corto (2–4 frasi, ca. 20–50 parole), medio (4–7 frasi, ca. 40–90 parole), lungo (7–12 frasi, ca. 70–150 parole). Il primo paragrafo originale di Cicerone ha circa 69 parole.",
-          "answerSchemaText": "Corto 20–50 parole, medio 40–90 parole, lungo 70–150 parole."
+          "answer": "Il paragrafo generato ha generalmente 4–7 frasi, ovvero circa 40–90 parole. Il primo paragrafo originale di Cicerone ha circa 69 parole.",
+          "answerSchemaText": "Il paragrafo generato ha generalmente 4–7 frasi, ovvero circa 40–90 parole."
         }
       ]
     },

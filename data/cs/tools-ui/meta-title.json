@@ -11,9 +11,7 @@
   "descriptionTooShort": "Popis je velmi krátký. Přidejte více textu, který lépe vysvětlí, co uživatel na stránce najde a proč by měl kliknout.",
   "descriptionTooLong": "Popis přesahuje rozsah, který Google obvykle zobrazuje celý (asi 150–160 znaků nebo ~920 pixelů). Může být oříznut nebo nahrazen jiným úryvkem.",
   "descriptionGoodLength": "Popis se nachází v typickém rozsahu pro výsledky vyhledávání (asi 120–160 znaků a do ~920 pixelů), co obvykle stačí na 2–3 krátké věty.",
-  "addUrl": "Přidat URL (volitelné)",
-  "urlPlaceholder": "www.vasedomena.cz/stranka",
-  "urlHelper": "URL se používá pouze v náhledu – neovlivňuje výpočet délky meta title a description.",
+  "exampleUrl": "https://www.vasedomena.cz/stranka",
   "enterTitleLabel": "Zadejte meta title",
   "titlePlaceholder": "Např. SEO služby pro webové stránky – Arteon",
   "chars": "Znaky",
@@ -23,8 +21,6 @@
   "enterDescriptionLabel": "Zadejte meta description",
   "descriptionPlaceholder": "Popište ve 2–3 větách, co uživatel na stránce najde a jakou výhodu získá. Přirozeně zařaďte hlavní klíčová slova.",
   "noDescription": "Žádný popis",
-  "previewTitle": "Náhled výsledku ve vyhledávání Google",
-  "previewHelper": "Náhled je orientační – Google může titul a popis upravit podle šířky obrazovky a samotného textu",
   "exampleTitle": "Příklad titulu stránky – nabídka / služba",
   "exampleDescription": "Zde se zobrazí náhled popisu vaší stránky. Stručně popište, co nabízíte, jak pomáháte zákazníkovi a proč tato stránka stojí za návštěvu."
 }

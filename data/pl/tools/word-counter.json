@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Darmowy licznik słów i znaków oraz zdań, sylab i czasu czytania",
-    "description": "Wklej tekst, a narzędzie policzy słowa, znaki, zdania, akapity, sylaby, unikalne wyrazy, czas czytania i ocenia trudność czytania tekstu. Darmowy licznik słów i znaków z formatowaniem tekstu.",
+    "description": "Wklej tekst, a narzędzie policzy słowa, znaki, zdania, sylaby, czas czytania i oceni trudność czytania tekstu. Darmowy licznik słów i znaków.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/licznik-slow-i-znakow-pl.webp",
     "path": "/narzedzia/licznik-slow-i-znakow"
   },
   "hero": {
     "title": "Darmowy licznik słów i znaków oraz zdań, sylab i czasu czytania",
-    "description": "Wklej tekst, a narzędzie policzy słowa, znaki, zdania, akapity, sylaby, unikalne wyrazy, czas czytania i ocenia trudność czytania tekstu. Darmowy licznik słów i znaków z formatowaniem tekstu.",
+    "description": "Wklej tekst, a narzędzie policzy słowa, znaki, zdania, sylaby, czas czytania i oceni trudność czytania tekstu. Darmowy licznik słów i znaków.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -29,36 +29,28 @@
         "Licznik słów",
         "Licznik znaków",
         "Licznik znaków ze spacjami i bez spacji",
-        "Licznik zdań i akapitów",
-        "Licznik unikalnych słów",
+        "Licznik zdań",
         "Licznik sylab",
         "Licznik czasu czytania",
         "Licznik czasu mówienia",
         "Narzędzie do liczenia słów i znaków",
-        "Narzędzie do liczenia zdań i akapitów",
+        "Narzędzie do liczenia zdań",
         "Narzędzie do oceny czytelności tekstu",
         "Kalkulator czasu czytania tekstu",
         "Sprawdzanie poziomu trudności czytania tekstu",
-        "Kalkulator czasu mówienia",
-        "Konwerter wielkości liter"
+        "Kalkulator czasu mówienia"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Darmowy licznik słów i znaków po polsku z narzędziami do formatowania tekstu. Liczy słowa, znaki, zdania, akapity, unikalne wyrazy i czas czytania. Oferuje 7 narzędzi: zamiana wielkości liter, usuwanie spacji, pustych linii i duplikatów.",
+      "description": "Darmowy licznik słów i znaków po polsku. Liczy słowa, znaki, zdania, sylaby i czas czytania, a do tego ocenia czytelność tekstu.",
       "featureList": [
         "Liczenie słów w tekście",
         "Liczenie znaków ze spacjami i bez spacji",
-        "Liczenie zdań i akapitów",
-        "Liczenie unikalnych słów",
-        "Średnia długość słowa",
+        "Liczenie zdań",
         "Szacowanie czasu czytania",
         "Szacowanie czasu mówienia",
         "Liczenie sylab",
         "Wynik czytelności Flesch-Kincaid",
         "Formuły czytelności dostosowane do języka (16 języków)",
-        "Zamiana na wielkie lub małe litery",
-        "Zamiana na styl zdania lub tytułu",
-        "Usuwanie nadmiarowych spacji",
-        "Usuwanie pustych linii i duplikatów",
         "Kopiowanie tekstu do schowka"
       ]
     },
@@ -69,19 +61,15 @@
       "steps": [
         {
           "name": "Wklej tekst",
-          "text": "Wklej lub wpisz tekst w pole tekstowe. Narzędzie automatycznie policzy słowa, znaki, zdania, akapity, unikalne wyrazy i oszacuje czas czytania."
+          "text": "Wklej lub wpisz tekst w pole tekstowe. Narzędzie automatycznie policzy słowa, znaki, zdania i oszacuje czas czytania."
         },
         {
           "name": "Sprawdź statystyki",
-          "text": "W panelu po lewej stronie zobaczysz 11 metryk tekstu: słowa, znaki ze spacjami i bez, zdania, akapity, unikalne słowa, średnią długość słowa, czas czytania, czas mówienia, sylaby i wynik czytelności Flesch-Kincaid."
-        },
-        {
-          "name": "Użyj narzędzi tekstowych",
-          "text": "Pod polem tekstowym znajdziesz pasek z 7 narzędziami: zamiana wielkości liter, usuwanie spacji, pustych linii i duplikatów."
+          "text": "W panelu po lewej stronie zobaczysz 8 metryk tekstu: słowa, znaki ze spacjami i bez, zdania, czas czytania, czas mówienia, sylaby i wynik czytelności Flesch-Kincaid."
         },
         {
           "name": "Skopiuj wynik",
-          "text": "Kliknij Kopiuj tekst, aby przenieść zmodyfikowany tekst do schowka. Użyj Wyczyść, aby zacząć od nowa."
+          "text": "Kliknij Kopiuj tekst, aby przenieść tekst do schowka. Użyj Wyczyść, aby zacząć od nowa."
         }
       ]
     }
@@ -94,7 +82,7 @@
     {
       "type": "sectionBasic",
       "title": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu",
-      "html": "<p class=\"text-mid\">Narzędzie łączy licznik słów i znaków z analizą czytelności Flesch-Kincaid i zestawem funkcji do formatowania tekstu. Wklej tekst, a zobaczysz liczbę słów, znaków, sylab, zdań, akapitów, unikalnych wyrazów, szacowany czas czytania, czas mówienia i kolorowy wskaźnik czytelności.</p><p class=\"text-mid mt-3\"><strong>Wynik czytelności Flesch-Kincaid</strong> (0–100) mówi, jak łatwy do czytania jest tekst. Wynik powyżej 70 oznacza łatwy tekst (dla szerokiej publiczności), a poniżej 30 – poziom akademicki. Narzędzie używa formuł dostosowanych do 16 języków, w tym Amstad (niemiecki), Fernández-Huerta (hiszpański) i Gulpease (włoski).</p><p class=\"text-mid mt-3\">Pod polem tekstowym znajdziesz pasek z 7 narzędziami: zamiana wielkości liter (WIELKIE, małe, Jak w zdaniu, Każde Słowo Wielką), usuwanie nadmiarowych spacji, pustych linii i duplikatów. Cała analiza i przetwarzanie tekstu odbywają się lokalnie w przeglądarce.</p>",
+      "html": "<p class=\"text-mid\">Narzędzie łączy licznik słów i znaków z analizą czytelności Flesch-Kincaid. Wklej tekst, a zobaczysz liczbę słów, znaków, sylab, zdań, szacowany czas czytania, czas mówienia i kolorowy wskaźnik czytelności.</p><p class=\"text-mid mt-3\"><strong>Wynik czytelności Flesch-Kincaid</strong> (0–100) mówi, jak łatwy do czytania jest tekst. Wynik powyżej 70 oznacza łatwy tekst (dla szerokiej publiczności), a poniżej 30 – poziom akademicki. Narzędzie używa formuł dostosowanych do 16 języków, w tym Amstad (niemiecki), Fernández-Huerta (hiszpański) i Gulpease (włoski).</p><p class=\"text-mid mt-3\">Cała analiza i przetwarzanie tekstu odbywają się lokalnie w przeglądarce.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/licznik-slow-i-znakow-pl.webp",
       "imageAlt": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu – Arteon"
     },
@@ -105,28 +93,23 @@
     {
       "type": "sectionSteps",
       "title": "Jak korzystać z licznika słów i znaków?",
-      "description": "Analiza i formatowanie tekstu w trzech krokach:",
-      "grid": "four",
+      "description": "Analiza tekstu w trzech krokach:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Wklej tekst",
-          "description": "Wklej lub wpisz tekst w pole po prawej stronie. Narzędzie od razu policzy słowa, znaki, zdania, akapity, unikalne wyrazy i oszacuje czas czytania."
+          "description": "Wklej lub wpisz tekst w pole po prawej stronie. Narzędzie od razu policzy słowa, znaki, zdania i oszacuje czas czytania."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Sprawdź statystyki",
-          "description": "W panelu po lewej stronie zobaczysz 11 metryk tekstu: słowa, znaki ze spacjami i bez, zdania, akapity, unikalne słowa, średnią długość słowa, czas czytania, czas mówienia, sylaby i wynik czytelności Flesch-Kincaid."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Przekształć tekst",
-          "description": "Pod polem tekstowym znajdziesz pasek z 7 narzędziami: zamiana wielkości liter, usuwanie spacji, pustych linii i duplikatów."
+          "description": "W panelu po lewej stronie zobaczysz 8 metryk tekstu: słowa, znaki ze spacjami i bez, zdania, czas czytania, czas mówienia, sylaby i wynik czytelności Flesch-Kincaid."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Skopiuj wynik",
-          "description": "Kliknij Kopiuj tekst, aby przenieść zmodyfikowany tekst do schowka. Użyj Wyczyść, aby zacząć od nowa."
+          "title": "3. Skopiuj wynik",
+          "description": "Kliknij Kopiuj tekst, aby przenieść tekst do schowka. Użyj Wyczyść, aby zacząć od nowa."
         }
       ]
     },
@@ -145,8 +128,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 metryk tekstu – co mierzy licznik?",
-      "description": "Licznik analizuje tekst pod kątem jedenastu wskaźników:",
+      "title": "8 metryk tekstu – co mierzy licznik?",
+      "description": "Licznik analizuje tekst pod kątem ośmiu wskaźników:",
       "grid": "two",
       "items": [
         {
@@ -168,21 +151,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Zdania",
           "description": "Liczba zdań w tekście. Pomaga ocenić złożoność i czytelność – krótsze zdania są łatwiejsze do przyswojenia."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Akapity",
-          "description": "Bloki tekstu oddzielone pustymi liniami. Dobrze podzielony tekst na akapity poprawia czytelność na ekranach."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Unikalne słowa",
-          "description": "Liczba niepowtarzających się słów. Im wyższy stosunek unikalnych słów do wszystkich, tym bogatsze słownictwo tekstu."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Średnia długość słowa",
-          "description": "Średnia liczba znaków na słowo. Wskaźnik złożoności tekstu – teksty techniczne mają dłuższe słowa niż potoczne."
         },
         {
           "icon": "RiTimeLine",
@@ -212,66 +180,19 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 narzędzi do formatowania tekstu",
-      "description": "Pod polem tekstowym znajdziesz pasek z przyciskami do szybkiego przekształcania tekstu:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "WIELKIE LITERY",
-          "description": "Zamienia cały tekst na wielkie litery. Przydatne do nagłówków, akronimów i wyróżnienia fragmentów tekstu."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "małe litery",
-          "description": "Zamienia cały tekst na małe litery. Użyteczne do normalizacji tekstu skopiowanego z różnych źródeł."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Jak w zdaniu",
-          "description": "Pierwsza litera każdego zdania wielka, reszta mała. Standardowy format tekstu ciągłego."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Każde Słowo Wielką",
-          "description": "Każde słowo zaczyna się wielką literą. Idealny do tytułów, nagłówków i nazw własnych."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Usuń nadmiarowe spacje",
-          "description": "Redukuje wielokrotne spacje do jednej i usuwa spacje na początku i końcu linii."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Usuń puste linie",
-          "description": "Usuwa puste i nadmiarowe linie z tekstu. Przydatne do czyszczenia tekstu skopiowanego ze stron internetowych."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Usuń duplikaty linii",
-          "description": "Pozostawia tylko unikalne linie, usuwając powtórzenia. Przydatne do czyszczenia list i danych."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Dla kogo jest licznik słów i narzędzia tekstowe?",
+      "title": "Dla kogo jest licznik słów?",
       "description": "Narzędzie przydaje się każdemu, kto pracuje z tekstem:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
           "title": "Copywriterzy i redaktorzy",
-          "description": "Liczenie słów i znaków, sprawdzanie limitów platform, szybka zmiana wielkości liter i czyszczenie tekstu przed publikacją."
+          "description": "Liczenie słów i znaków, sprawdzanie limitów platform i czytelności tekstu przed publikacją."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Blogerzy i autorzy treści",
-          "description": "Kontrola długości wpisów, sprawdzanie czytelności i czasu czytania, usuwanie duplikatów linii."
+          "description": "Kontrola długości wpisów oraz sprawdzanie czytelności i czasu czytania."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -281,7 +202,7 @@
         {
           "icon": "RiSearchLine",
           "title": "Specjaliści SEO",
-          "description": "Analiza długości treści, wynik czytelności Flesch-Kincaid, liczenie unikalnych słów i ocena złożoności tekstu."
+          "description": "Analiza długości treści, wynik czytelności Flesch-Kincaid i ocena złożoności tekstu."
         },
         {
           "icon": "RiGraduationCapLine",
@@ -324,13 +245,8 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 metryk tekstu + wynik czytelności",
-          "description": "Słowa, znaki, sylaby, zdania, akapity, unikalne słowa, czas czytania, czas mówienia i wynik Flesch-Kincaid – wszystko w jednym panelu."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 narzędzi do formatowania",
-          "description": "Zamiana wielkości liter, usuwanie spacji, pustych linii i duplikatów – bez instalowania dodatkowych programów."
+          "title": "8 metryk tekstu + wynik czytelności",
+          "description": "Słowa, znaki, sylaby, zdania, czas czytania, czas mówienia i wynik Flesch-Kincaid – wszystko w jednym panelu."
         },
         {
           "icon": "RiUserLine",
@@ -340,7 +256,7 @@
         {
           "icon": "RiFileCopyLine",
           "title": "Kopiowanie i czyszczenie tekstu",
-          "description": "Kopiuj zmodyfikowany tekst do schowka jednym kliknięciem lub wyczyść pole, aby zacząć od nowa."
+          "description": "Kopiuj wpisany tekst do schowka jednym kliknięciem lub wyczyść pole, aby zacząć od nowa."
         },
         {
           "icon": "RiTimerLine",
@@ -379,7 +295,7 @@
     {
       "type": "sectionInfo",
       "title": "Czytelność tekstu po polsku - jak interpretować wynik Flescha",
-      "html": "<p class=\"text-mid mb-4\">Polski jest językiem fleksyjnym - słowa mają końcówki odmian (przypadki, czasy, osoby), przez co są średnio dłuższe niż w angielskim. Polskie słowo ma przeciętnie 6–7 znaków, angielskie 4–5. Narzędzie stosuje adaptację wzoru Flescha ze zredukowanym współczynnikiem sylab, który uwzględnia tę różnicę. Dzięki temu wynik dla polskiego tekstu jest porównywalny z wynikiem dla angielskiego tekstu o tej samej trudności. Dobry cel dla treści webowych po polsku to wynik 50–70.</p><p class=\"text-mid mb-4\">Krótkie zdania (15–20 słów) i krótkie akapity (3–4 zdania) poprawiają czytelność na ekranach. Na urządzeniach mobilnych długie bloki tekstu są szczególnie trudne do przyswojenia. Każde zdanie powyżej 25 słów warto rozbić na dwa krótsze. Narzędzie pokazuje średnią długość zdania w metryce &quot;Zdania&quot; - jeśli masz 200 słów w 8 zdaniach, to średnia wynosi 25 słów, co jest na granicy dobrej czytelności.</p><p class=\"text-mid\">Wysoki stosunek unikalnych słów do ogólnej liczby słów wskazuje na bogate słownictwo i mniejszą powtarzalność. W tekście 1 000 słów dobry wynik to 400–500 unikalnych wyrazów. Jeśli stosunek spada poniżej 30%, tekst może brzmieć monotonnie i powtarzalnie - warto wtedy użyć synonimów lub przeformułować zdania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Polski jest językiem fleksyjnym - słowa mają końcówki odmian (przypadki, czasy, osoby), przez co są średnio dłuższe niż w angielskim. Polskie słowo ma przeciętnie 6–7 znaków, angielskie 4–5. Narzędzie stosuje adaptację wzoru Flescha ze zredukowanym współczynnikiem sylab, który uwzględnia tę różnicę. Dzięki temu wynik dla polskiego tekstu jest porównywalny z wynikiem dla angielskiego tekstu o tej samej trudności. Dobry cel dla treści webowych po polsku to wynik 50–70.</p><p class=\"text-mid\">Krótkie zdania (15–20 słów) poprawiają czytelność na ekranach. Na urządzeniach mobilnych długie bloki tekstu są szczególnie trudne do przyswojenia. Każde zdanie powyżej 25 słów warto rozbić na dwa krótsze. Narzędzie pokazuje średnią długość zdania w metryce &quot;Zdania&quot; - jeśli masz 200 słów w 8 zdaniach, to średnia wynosi 25 słów, co jest na granicy dobrej czytelności.</p>"
     },
     {
       "type": "gap",
@@ -399,21 +315,6 @@
           "question": "Czym różni się liczenie znaków ze spacjami od liczenia bez spacji?",
           "answer": "Znaki ze spacjami to wszystkie znaki w tekście łącznie ze spacjami, tabulatorami i znakami nowej linii. Znaki bez spacji to tylko litery, cyfry i interpunkcja. Platformy takie jak Allegro czy OLX mają limity w znakach ze spacjami. Biura tłumaczeń i drukarnie rozliczają się w znakach bez spacji.",
           "answerSchemaText": "Znaki ze spacjami obejmują wszystkie znaki, znaki bez spacji pomijają spacje i tabulatory."
-        },
-        {
-          "question": "Jak działa zamiana wielkości liter?",
-          "answer": "Narzędzie oferuje 4 tryby zamiany: WIELKIE LITERY (cały tekst na wielkie), małe litery (cały na małe), Jak w zdaniu (pierwsza litera zdania wielka) i Każde Słowo Wielką (pierwsza litera każdego słowa wielka). Kliknij odpowiedni przycisk na pasku narzędzi pod polem tekstowym.",
-          "answerSchemaText": "Narzędzie ma 4 tryby zamiany wielkości liter: wielkie, małe, jak w zdaniu i każde słowo wielką."
-        },
-        {
-          "question": "Co oznacza metryka unikalne słowa?",
-          "answer": "Unikalne słowa to liczba niepowtarzających się wyrazów w tekście. Jeśli słowo marketing pojawia się 5 razy, liczy się jako 1 unikalne słowo. Wysoki stosunek unikalnych słów do wszystkich słów wskazuje na bogate słownictwo i mniejszą powtarzalność tekstu.",
-          "answerSchemaText": "Unikalne słowa to liczba niepowtarzających się wyrazów. Wysoki stosunek do ogółu słów wskazuje na bogate słownictwo."
-        },
-        {
-          "question": "Jak działa usuwanie duplikatów linii?",
-          "answer": "Funkcja porównuje każdą linię tekstu z pozostałymi i zachowuje tylko pierwsze wystąpienie. Powtarzające się linie są usuwane. Przydatne do czyszczenia list słów kluczowych, adresów e-mail, danych z arkuszy kalkulacyjnych i wszelkich zbiorów, w których mogą pojawić się duplikaty.",
-          "answerSchemaText": "Narzędzie porównuje linie tekstu i zachowuje tylko unikalne, usuwając powtórzenia."
         },
         {
           "question": "Czy mój tekst jest bezpieczny?",

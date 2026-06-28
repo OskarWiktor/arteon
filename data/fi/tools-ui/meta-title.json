@@ -11,9 +11,7 @@
   "descriptionTooShort": "Kuvaus on hyvin lyhyt. Lisää tekstiä, joka selittää paremmin, mitä käyttäjä löytää sivulta ja miksi hänen kannattaa klikata.",
   "descriptionTooLong": "Kuvaus ylittää välin, jonka Google yleensä näyttää kokonaan (n. 150–160 merkkiä tai ~920 pikseliä). Se voidaan katkaista tai korvata toisella otteella.",
   "descriptionGoodLength": "Kuvaus on hakutulosten tyypillisellä välillä (n. 120–160 merkkiä ja enintään ~920 pikseliä), mikä riittää yleensä 2–3 lyhyeen lauseeseen.",
-  "addUrl": "Lisää URL (valinnainen)",
-  "urlPlaceholder": "www.verkkotunnuksesi.fi/sivu",
-  "urlHelper": "URL:a käytetään vain esikatselussa – se ei vaikuta meta-otsikon ja kuvauksen pituuden laskentaan.",
+  "exampleUrl": "https://www.verkkotunnuksesi.fi/sivu",
   "enterTitleLabel": "Kirjoita meta-otsikko",
   "titlePlaceholder": "Esim. SEO-palvelut verkkosivuille – Arteon",
   "chars": "Merkit",
@@ -23,8 +21,6 @@
   "enterDescriptionLabel": "Kirjoita metakuvaus",
   "descriptionPlaceholder": "Kuvaile 2–3 lauseessa, mitä käyttäjä löytää sivulta ja minkä hyödyn hän saa. Sisällytä tärkeimmät avainsanat luonnollisesti.",
   "noDescription": "Ei kuvausta",
-  "previewTitle": "Google-hakutuloksen esikatselu",
-  "previewHelper": "Esikatselu on likiarvo – Google voi muokata otsikkoa ja kuvausta näytön leveyden ja tekstin mukaan",
   "exampleTitle": "Esimerkkisivun otsikko – tarjous / palvelu",
   "exampleDescription": "Tässä näkyy sivukuvauksesi esikatselu. Kirjoita lyhyesti, mitä tarjoat, miten autat asiakasta ja miksi tämä sivu kannattaa avata."
 }

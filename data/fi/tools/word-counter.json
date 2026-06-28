@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "fi",
   "metadata": {
-    "title": "Sana-, merkki- ja lukuaikalaskuri tekstin muotoilulla",
-    "description": "Ilmainen sanojen, merkkien, lauseiden, kappaleiden ja lukuajan laskuri kirjainkoon muuntimella. Tarkista tekstin pituus ja muuta kirjaimet.",
+    "title": "Sana-, merkki- ja lukuaikalaskuri",
+    "description": "Ilmainen sanojen, merkkien, lauseiden ja lukuajan laskuri. Tarkista tekstin pituus ja luettavuus.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp",
     "path": "/fi/tyokalut/sana-ja-merkkilaskuri"
   },
   "hero": {
-    "title": "Laske sanat ja merkit – tarkista lukuaika ja muotoile teksti",
-    "description": "Liitä teksti ja työkalu laskee sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan. Muuta kirjainkoko tai poista duplikaatit",
+    "title": "Laske sanat ja merkit – tarkista lukuaika ja luettavuus",
+    "description": "Liitä teksti ja työkalu laskee sanat, merkit, lauseet, tavut, lukuajan, puheajan ja luettavuuspisteet.",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
   "breadcrumbs": {
@@ -24,56 +24,44 @@
   },
   "schemas": {
     "software": {
-      "name": "Sana-, merkki- ja lukuaikalaskuri tekstin muotoilulla",
+      "name": "Sana-, merkki- ja lukuaikalaskuri",
       "alternateName": [
         "Sanalaskuri verkossa",
         "Merkkilaskuri välilyönneillä ja ilman",
         "Sanalaskurityökalu copywritereille",
         "Lukuaikalaskin",
-        "Kirjainkoon muunnin verkossa",
         "Flesch-Kincaid luettavuustarkistus",
         "Tavulaskuri",
         "Puheaikalaskin",
         "Luettavuustyökalu",
-        "Poista kaksoisrivit tekstistä",
         "Ilmainen sana- ja merkkilaskuri"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Ilmainen sana- ja merkkilaskuri tekstin muotoilutyökaluilla. Laskee sanat, merkit, lauseet, kappaleet, uniikit sanat ja lukuajan. Tarjoaa 7 työkalua: kirjainkoon muunnos sekä välilyöntien, tyhjien rivien ja kaksoiskappaleiden poisto.",
+      "description": "Ilmainen sana- ja merkkilaskuri. Laskee sanat, merkit, lauseet, tavut ja lukuajan, ja arvioi tekstin luettavuuden.",
       "featureList": [
         "Sanojen laskenta",
         "Merkkien laskenta välilyönneillä ja ilman",
-        "Lauseiden ja kappaleiden laskenta",
-        "Uniikkien sanojen laskenta",
-        "Keskimääräinen sanan pituus",
+        "Lauseiden laskenta",
         "Arvioitu lukuaika",
         "Arvioitu puheaika",
         "Tavulaskenta",
         "Flesch-Kincaid luettavuuspistemäärä",
         "Kielikohtaiset luettavuuskaavat (16 kieltä)",
-        "Muunna isoiksi tai pieniksi kirjaimiksi",
-        "Muunna lause- tai otsikkotyyliin",
-        "Poista ylimääräiset välilyönnit",
-        "Poista tyhjät rivit ja kaksoiskappaleet",
         "Kopioi teksti leikepöydälle"
       ]
     },
     "howTo": {
       "name": "Näin käytät sana- ja merkkilaskuria",
-      "description": "Analysoi ja muotoile teksti kolmessa vaiheessa:",
+      "description": "Laske sanat, merkit, tavut ja lauseet. Tarkista Flesch-Kincaid-luettavuus, lukuaika ja puheaika.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Liitä teksti",
-          "text": "Liitä tai kirjoita teksti. Työkalu laskee heti sanat, merkit, lauseet, kappaleet ja uniikit sanat."
+          "text": "Liitä tai kirjoita teksti tekstikenttään. Työkalu laskee heti sanat, merkit, lauseet ja arvioi lukuajan."
         },
         {
           "name": "Tarkista tilastot",
-          "text": "Vasemmassa paneelissa näet 11 mittaria: sanat, merkit välilyönneillä ja ilman, lauseet, kappaleet, uniikit sanat, sanan pituus, lukuaika, puheaika, tavut ja Flesch-Kincaid-pisteet."
-        },
-        {
-          "name": "Muunna teksti",
-          "text": "Tekstikentän alla löydät 7 muunnostyökalua."
+          "text": "Vasemmassa paneelissa näet 8 mittaria: sanat, merkit välilyönneillä ja ilman, lauseet, lukuaika, puheaika, tavut ja Flesch-Kincaid-pisteet."
         },
         {
           "name": "Kopioi tulos",
@@ -89,8 +77,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Ilmainen sana- ja merkkilaskuri tekstityökaluilla",
-      "html": "<p class=\"text-mid\">Tämä työkalu yhdistää sana- ja merkkilaskurin Flesch-Kincaid-luettavuusanalyysiin ja tekstin muotoilutyökaluihin. Liitä teksti nähdäksesi sanat, merkit, tavut, lauseet, kappaleet, uniikit sanat, lukuajan, puheajan ja värikoodatun luettavuuspistemäärän.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid-luettavuuspistemäärä</strong> (0–100) kertoo, kuinka helppoa teksti on lukea. Yli 70 tarkoittaa helppoa, alle 30 akateemista tasoa. Suomen <strong>laki digitaalisten palvelujen tarjoamisesta (306/2019)</strong> edellyttää saavutettavuutta julkisilta palveluilta – hyvä luettavuus on osa saavutettavuutta.</p><p class=\"text-mid mt-3\">Tekstikentän alla on 7 työkalua: kirjainkoon muunnos sekä välilyöntien, tyhjien rivien ja kaksoiskappalerivien poisto. Kaikki käsittely tapahtuu paikallisesti selaimessa.</p>",
+      "title": "Ilmainen sana- ja merkkilaskuri",
+      "html": "<p class=\"text-mid\">Tämä työkalu yhdistää sana- ja merkkilaskurin Flesch-Kincaid-luettavuusanalyysiin. Liitä teksti nähdäksesi sanat, merkit, tavut, lauseet, lukuajan, puheajan ja värikoodatun luettavuuspistemäärän.</p><p class=\"text-mid mt-3\"><strong>Flesch-Kincaid-luettavuuspistemäärä</strong> (0–100) kertoo, kuinka helppoa teksti on lukea. Yli 70 tarkoittaa helppoa, alle 30 akateemista tasoa. Suomen <strong>laki digitaalisten palvelujen tarjoamisesta (306/2019)</strong> edellyttää saavutettavuutta julkisilta palveluilta – hyvä luettavuus on osa saavutettavuutta.</p><p class=\"text-mid mt-3\">Kaikki käsittely tapahtuu paikallisesti selaimessa.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/sana-ja-merkkilaskuri-fi.webp",
       "imageAlt": "Sana- ja merkkimäärälaskuri – Arteon"
     },
@@ -101,27 +89,22 @@
     {
       "type": "sectionSteps",
       "title": "Näin käytät sana- ja merkkilaskuria",
-      "description": "Analysoi ja muotoile teksti kolmessa vaiheessa:",
-      "grid": "four",
+      "description": "Tekstin analysointi kolmessa vaiheessa:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Liitä teksti",
-          "description": "Liitä tai kirjoita teksti. Työkalu laskee heti sanat, merkit, lauseet, kappaleet ja uniikit sanat."
+          "description": "Liitä tai kirjoita teksti. Työkalu laskee heti sanat, merkit ja lauseet ja arvioi lukuajan."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Tarkista tilastot",
-          "description": "Vasemmassa paneelissa näet 11 mittaria: sanat, merkit välilyönneillä ja ilman, lauseet, kappaleet, uniikit sanat, sanan pituus, lukuaika, puheaika, tavut ja Flesch-Kincaid-pisteet."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Muunna teksti",
-          "description": "Tekstikentän alla löydät 7 muunnostyökalua."
+          "description": "Vasemmassa paneelissa näet 8 mittaria: sanat, merkit välilyönneillä ja ilman, lauseet, lukuaika, puheaika, tavut ja Flesch-Kincaid-pisteet."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Kopioi tulos",
+          "title": "3. Kopioi tulos",
           "description": "Napsauta Kopioi teksti. Käytä Tyhjennä aloittaaksesi alusta."
         }
       ]
@@ -145,8 +128,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 tekstimittaria – mitä laskuri mittaa",
-      "description": "Laskuri analysoi tekstin yhdellätoista mittarilla:",
+      "title": "8 tekstimittaria – mitä laskuri mittaa",
+      "description": "Laskuri analysoi tekstin kahdeksalla mittarilla:",
       "grid": "two",
       "items": [
         {
@@ -168,21 +151,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Lauseet",
           "description": "Lauseiden määrä tekstissä. Auttaa arvioimaan monimutkaisuutta ja luettavuutta - lyhyemmät lauseet ovat helpompia omaksua."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Kappaleet",
-          "description": "Tyhjillä riveillä erotetut tekstilohkot. Hyvin jäsennetyt kappaleet parantavat luettavuutta näytöillä."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Uniikit sanat",
-          "description": "Ei-toistuvien sanojen määrä. Suurempi uniikkien sanojen osuus kertoo rikkaammasta sanastosta."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Keskimääräinen sanan pituus",
-          "description": "Keskimääräinen merkkimäärä per sana. Tekstin monimutkaisuuden mittari - tekniset tekstit sisältävät pidempiä sanoja."
         },
         {
           "icon": "RiTimeLine",
@@ -212,53 +180,6 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 tekstinmuokkaustyökalua",
-      "description": "Tekstikentän alla löydät painikkeet nopeaan muuntamiseen:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "ISOT KIRJAIMET",
-          "description": "Muuntaa kaiken tekstin isoiksi kirjaimiksi. Hyödyllinen otsikoissa, lyhenteissä ja tekstin korostamisessa."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "pienet kirjaimet",
-          "description": "Muuntaa kaiken tekstin pieniksi kirjaimiksi. Hyödyllinen eri lähteistä kopioidun tekstin normalisointiin."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Lausemuoto",
-          "description": "Jokaisen lauseen ensimmäinen kirjain on iso, loput pieniä. Vakiomuoto jatkuvalle tekstille."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Otsikkomuoto",
-          "description": "Jokainen sana alkaa isolla kirjaimella. Ihanteellinen otsikoille ja erisnimille."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Poista ylimääräiset välit",
-          "description": "Vähentää useat välilyönnit yhteen ja poistaa välit rivien alusta ja lopusta."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Poista tyhjät rivit",
-          "description": "Poistaa tyhjät ja ylimääräiset rivit tekstistä. Hyödyllinen verkkosivuilta kopioidun tekstin puhdistamiseen."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Poista kaksoiskappalerivit",
-          "description": "Säilyttää vain uniikit rivit ja poistaa toistot. Hyödyllinen listojen ja datan puhdistamiseen."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
       "title": "Kenelle sanalaskuri on?",
       "description": "Työkalu on hyödyllinen kaikille, jotka työskentelevät tekstin parissa:",
       "grid": "three",
@@ -266,12 +187,12 @@
         {
           "icon": "RiEditLine",
           "title": "Copywriterit ja editorit",
-          "description": "Laske sanat ja merkit, tarkista alustojen rajat, vaihda kirjainkokoa nopeasti ja puhdista teksti ennen julkaisua."
+          "description": "Laske sanat ja merkit, tarkista alustojen rajat ja varmista tekstin luettavuus ennen julkaisua."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Bloggaajat ja sisällöntuottajat",
-          "description": "Seuraa julkaisun pituutta, tarkista lukuaika ja poista kaksoiskappalerivit."
+          "description": "Seuraa julkaisun pituutta ja tarkista lukuaika."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -281,7 +202,7 @@
         {
           "icon": "RiSearchLine",
           "title": "SEO-asiantuntijat",
-          "description": "Analysoi sisällön pituutta, laske uniikit sanat ja arvioi tekstin monimutkaisuutta sanan keskipituuden perusteella."
+          "description": "Analysoi sisällön pituutta ja arvioi luettavuutta Flesch-Kincaid-pisteiden avulla."
         },
         {
           "icon": "RiGraduationCapLine",
@@ -324,13 +245,8 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 mittaria + luettavuuspisteet",
-          "description": "Sanat, merkit, tavut, lauseet, kappaleet, uniikit sanat, lukuaika, puheaika ja Flesch-Kincaid."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 muokkaustyökalua",
-          "description": "Kirjainkoon muunnos sekä välilyöntien, tyhjien rivien ja kaksoiskappalerivien poisto - ilman lisäohjelmistoa."
+          "title": "8 mittaria + luettavuuspisteet",
+          "description": "Sanat, merkit, tavut, lauseet, lukuaika, puheaika ja Flesch-Kincaid samassa työkalussa."
         },
         {
           "icon": "RiUserLine",
@@ -340,7 +256,7 @@
         {
           "icon": "RiFileCopyLine",
           "title": "Kopioi ja tyhjennä teksti",
-          "description": "Kopioi muokattu teksti leikepöydälle yhdellä napsautuksella tai tyhjennä kenttä aloittaaksesi alusta."
+          "description": "Kopioi kirjoitettu teksti leikepöydälle yhdellä napsautuksella tai tyhjennä kenttä aloittaaksesi alusta."
         },
         {
           "icon": "RiTimerLine",
@@ -379,7 +295,7 @@
     {
       "type": "sectionInfo",
       "title": "Luettavuus suomeksi - pitkät yhdyssanat ja agglutinatiivinen rakenne",
-      "html": "<p class=\"text-mid mb-4\">Suomi on agglutinatiivinen kieli, jossa sanoja muodostetaan liittämällä päätteitä ja johtimia peräkkäin. Sana &quot;hakukoneoptimointi&quot; on 18 merkkiä pitkä, ja pitempiä yhdyssanoja esiintyy arkikielessäkin. Tämä nostaa suomen keskimääräistä sananpituutta 7–8 merkkiin - selvästi enemmän kuin englannin 4–5 merkkiä. Flesch-kaava antaa siksi suomenkielisille teksteille luontaisesti matalammat pisteet kuin vastaavan vaikeustason englanninkielisille teksteille.</p><p class=\"text-mid mb-4\">Hyvä tavoite suomenkieliselle verkkosisällölle on Flesch-pistemäärä 45–60. Lyhyet lauseet (15–20 sanaa) ja lyhyet kappaleet (3–4 lausetta) parantavat luettavuutta näytöillä merkittävästi. Yli 25 sanan lauseet kannattaa jakaa kahdeksi lyhyemmäksi.</p><p class=\"text-mid\">Ainutlaatuisten sanojen suhde kokonaissanamäärään kertoo sanaston rikkaudesta. 1 000 sanan tekstissä 400–500 ainutlaatuista sanaa viittaa monipuoliseen sanastoon. Jos suhde laskee alle 30 %, teksti voi kuulostaa toistavalta - korvaa toistuvia sanoja synonyymeillä tai muotoile lauseita uudelleen toiston vähentämiseksi.</p>"
+      "html": "<p class=\"text-mid mb-4\">Suomi on agglutinatiivinen kieli, jossa sanoja muodostetaan liittämällä päätteitä ja johtimia peräkkäin. Sana &quot;hakukoneoptimointi&quot; on 18 merkkiä pitkä, ja pitempiä yhdyssanoja esiintyy arkikielessäkin. Tämä nostaa suomen keskimääräistä sananpituutta 7–8 merkkiin - selvästi enemmän kuin englannin 4–5 merkkiä. Flesch-kaava antaa siksi suomenkielisille teksteille luontaisesti matalammat pisteet kuin vastaavan vaikeustason englanninkielisille teksteille.</p><p class=\"text-mid mb-4\">Hyvä tavoite suomenkieliselle verkkosisällölle on Flesch-pistemäärä 45–60. Lyhyet lauseet (15–20 sanaa) ja lyhyet kappaleet (3–4 lausetta) parantavat luettavuutta näytöillä merkittävästi. Yli 25 sanan lauseet kannattaa jakaa kahdeksi lyhyemmäksi.</p>"
     },
     {
       "type": "gap",

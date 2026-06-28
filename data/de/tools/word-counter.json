@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "de",
   "metadata": {
-    "title": "Wort-, Zeichen- und Lesezeiträhler mit Textformatierung",
-    "description": "Kostenloser Zähler für Wörter, Zeichen, Sätze, Absätze und Lesezeit mit Groß-/Kleinschreibungskonverter. Textlänge prüfen und Buchstaben ändern.",
+    "title": "Wort-, Zeichen- und Lesezeitzähler mit Lesbarkeitsanalyse",
+    "description": "Kostenloser Zähler für Wörter, Zeichen, Sätze und Lesezeit mit Flesch-Kincaid-Lesbarkeitsanalyse. Textlänge prüfen und Schwierigkeitsgrad einschätzen.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/wort-und-zeichenzaehler-de.webp",
     "path": "/de/werkzeuge/wort-und-zeichenzaehler"
   },
   "hero": {
-    "title": "Wörter und Zeichen zählen – Lesezeit prüfen und Text formatieren",
-    "description": "Text einfügen – das Tool zählt Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit. Groß-/Kleinschreibung ändern oder Duplikate entfernen",
+    "title": "Wörter und Zeichen zählen – Lesezeit und Lesbarkeit prüfen",
+    "description": "Text einfügen – das Tool zählt Wörter, Zeichen, Sätze, Lesezeit, Sprechzeit, Silben und ermittelt den Flesch-Kincaid-Lesbarkeitsindex.",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/wort-und-zeichenzaehler-de.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Wort-, Zeichen- und Lesezeiträhler mit Textformatierung",
+      "name": "Wort-, Zeichen- und Lesezeitzähler mit Lesbarkeitsanalyse",
       "alternateName": [
         "Online Wortzähler",
         "Zeichenzähler mit und ohne Leerzeichen",
@@ -33,46 +33,34 @@
         "Flesch-Kincaid Lesbarkeitsprüfer",
         "Silbenzähler online",
         "Sprechzeit-Rechner",
-        "Groß-Kleinschreibung Konverter",
-        "Lesbarkeits-Tool für Texte",
-        "Duplikate aus Text entfernen"
+        "Lesbarkeits-Tool für Texte"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Kostenloser Wort- und Zeichenzähler mit Textformatierungswerkzeugen. Zählt Wörter, Zeichen, Sätze, Absätze, einzigartige Wörter und Lesezeit. Bietet 7 Werkzeuge: Groß-/Kleinschreibung, Leerzeichen entfernen, Leerzeilen und Duplikate.",
+      "description": "Kostenloser Wort- und Zeichenzähler mit Lesbarkeitsanalyse. Zählt Wörter, Zeichen, Sätze, Silben, Lesezeit und Sprechzeit und ermittelt den Flesch-Kincaid-Lesbarkeitsindex.",
       "featureList": [
         "Wörter zählen",
         "Zeichen mit und ohne Leerzeichen zählen",
-        "Sätze und Absätze zählen",
-        "Einzigartige Wörter zählen",
-        "Durchschnittliche Wortlänge",
+        "Sätze zählen",
         "Geschätzte Lesezeit",
         "Geschätzte Sprechzeit",
         "Silbenzählung",
         "Flesch-Kincaid-Lesbarkeitsindex (Amstad-Formel für Deutsch)",
         "Sprachspezifische Lesbarkeitsformeln (16 Sprachen)",
-        "In Groß- oder Kleinbuchstaben umwandeln",
-        "In Satz- oder Titelschreibweise umwandeln",
-        "Überflüssige Leerzeichen entfernen",
-        "Leerzeilen und Duplikate entfernen",
         "Text in Zwischenablage kopieren"
       ]
     },
     "howTo": {
       "name": "So verwenden Sie den Wort- und Zeichenzähler",
-      "description": "Wörter, Zeichen, Silben und Sätze zählen. Flesch-Kincaid-Lesbarkeit, Lesezeit und Sprechzeit prüfen. Text mit 7 Werkzeugen formatieren.",
+      "description": "Wörter, Zeichen, Silben und Sätze zählen. Flesch-Kincaid-Lesbarkeit, Lesezeit und Sprechzeit prüfen.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Text einfügen",
-          "text": "Text einfügen oder eingeben. Das Tool zählt sofort Wörter, Zeichen, Sätze, Absätze und einzigartige Wörter."
+          "text": "Text einfügen oder eingeben. Das Tool zählt sofort Wörter, Zeichen und Sätze."
         },
         {
           "name": "Statistiken prüfen",
-          "text": "Im linken Panel sehen Sie 11 Textmetriken: Wörter, Zeichen mit und ohne Leerzeichen, Sätze, Absätze, einzigartige Wörter, Wortlänge, Lesezeit, Sprechzeit, Silben und Flesch-Kincaid-Lesbarkeitsindex."
-        },
-        {
-          "name": "Text umwandeln",
-          "text": "Unter dem Textfeld finden Sie 7 Werkzeuge: Groß-/Kleinschreibung, Leerzeichen, Leerzeilen und Duplikate."
+          "text": "Im linken Panel sehen Sie 8 Textmetriken: Wörter, Zeichen mit und ohne Leerzeichen, Sätze, Lesezeit, Sprechzeit, Silben und Flesch-Kincaid-Lesbarkeitsindex."
         },
         {
           "name": "Ergebnis kopieren",
@@ -88,8 +76,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Kostenloser Wort- und Zeichenzähler mit Textwerkzeugen",
-      "html": "<p class=\"text-mid\">Dieses Tool kombiniert einen Wort- und Zeichenzähler mit Flesch-Kincaid-Lesbarkeitsanalyse und Textformatierungsfunktionen. Fügen Sie Text ein und sehen Sie Wörter, Zeichen, Silben, Sätze, Absätze, einzigartige Wörter, Lesezeit, Sprechzeit und einen farbcodierten Lesbarkeitsindex.</p><p class=\"text-mid mt-3\">Der <strong>Flesch-Kincaid-Lesbarkeitsindex</strong> (0–100) zeigt, wie leicht Ihr Text zu lesen ist. Für deutsche Texte wird die <strong>Amstad-Formel</strong> verwendet: 180 − ASL − 58,5 × ASW. Werte über 70 bedeuten leichte Lesbarkeit, unter 30 akademisches Niveau.</p><p class=\"text-mid mt-3\">Unter dem Textfeld finden Sie 7 Werkzeuge: Groß-/Kleinschreibung (GROSSBUCHSTABEN, kleinbuchstaben, Satzanfang, Titelschreibweise), Leerzeichen, Leerzeilen und Duplikate entfernen. Alles läuft lokal im Browser.</p>",
+      "title": "Kostenloser Wort- und Zeichenzähler mit Lesbarkeitsanalyse",
+      "html": "<p class=\"text-mid\">Dieses Tool kombiniert einen Wort- und Zeichenzähler mit Flesch-Kincaid-Lesbarkeitsanalyse. Fügen Sie Text ein und sehen Sie Wörter, Zeichen, Silben, Sätze, Lesezeit, Sprechzeit und einen farbcodierten Lesbarkeitsindex.</p><p class=\"text-mid mt-3\">Der <strong>Flesch-Kincaid-Lesbarkeitsindex</strong> (0–100) zeigt, wie leicht Ihr Text zu lesen ist. Für deutsche Texte wird die <strong>Amstad-Formel</strong> verwendet: 180 − ASL − 58,5 × ASW. Werte über 70 bedeuten leichte Lesbarkeit, unter 30 akademisches Niveau.</p><p class=\"text-mid mt-3\">Die gesamte Analyse läuft lokal im Browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/wort-und-zeichenzaehler-de.webp",
       "imageAlt": "Wort- und Zeichenzähler – Arteon"
     },
@@ -100,27 +88,22 @@
     {
       "type": "sectionSteps",
       "title": "So verwenden Sie den Wort- und Zeichenzähler",
-      "description": "Text in drei Schritten analysieren und formatieren:",
-      "grid": "four",
+      "description": "Text in drei Schritten analysieren:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Text einfügen",
-          "description": "Text einfügen oder eingeben. Das Tool zählt sofort Wörter, Zeichen, Sätze, Absätze und einzigartige Wörter."
+          "description": "Text einfügen oder eingeben. Das Tool zählt sofort Wörter, Zeichen und Sätze."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Statistiken prüfen",
-          "description": "Im linken Panel sehen Sie 11 Textmetriken: Wörter, Zeichen mit und ohne Leerzeichen, Sätze, Absätze, einzigartige Wörter, Wortlänge, Lesezeit, Sprechzeit, Silben und Flesch-Kincaid-Lesbarkeitsindex."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Text umwandeln",
-          "description": "Unter dem Textfeld finden Sie 7 Werkzeuge: Groß-/Kleinschreibung, Leerzeichen, Leerzeilen und Duplikate."
+          "description": "Im linken Panel sehen Sie 8 Textmetriken: Wörter, Zeichen mit und ohne Leerzeichen, Sätze, Lesezeit, Sprechzeit, Silben und Flesch-Kincaid-Lesbarkeitsindex."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Ergebnis kopieren",
+          "title": "3. Ergebnis kopieren",
           "description": "Klicken Sie auf Text kopieren. Verwenden Sie Löschen, um von vorne zu beginnen."
         }
       ]
@@ -144,8 +127,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 Textmetriken – was der Zähler misst",
-      "description": "Der Zähler analysiert Ihren Text anhand von elf Indikatoren:",
+      "title": "8 Textmetriken – was der Zähler misst",
+      "description": "Der Zähler analysiert Ihren Text anhand von acht Indikatoren:",
       "grid": "two",
       "items": [
         {
@@ -167,21 +150,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Sätze",
           "description": "Anzahl der Sätze im Text. Hilft bei der Bewertung von Komplexität und Lesbarkeit – kürzere Sätze sind leichter verständlich."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Absätze",
-          "description": "Textblöcke, getrennt durch Leerzeilen. Gut strukturierte Absätze verbessern die Lesbarkeit auf Bildschirmen."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Einzigartige Wörter",
-          "description": "Anzahl nicht-wiederholender Wörter. Ein höheres Verhältnis zeigt reichhaltigeres Vokabular an."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Durchschnittliche Wortlänge",
-          "description": "Durchschnittliche Zeichenzahl pro Wort. Bei deutschen Texten oft höher durch zusammengesetzte Wörter (Komposita)."
         },
         {
           "icon": "RiTimeLine",
@@ -211,53 +179,6 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 Textformatierungswerkzeuge",
-      "description": "Unter dem Textfeld finden Sie eine Werkzeugleiste:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "GROSSBUCHSTABEN",
-          "description": "Wandelt den gesamten Text in Großbuchstaben um. Nützlich für Überschriften, Akronyme und Hervorhebungen."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "kleinbuchstaben",
-          "description": "Wandelt den gesamten Text in Kleinbuchstaben um. Nützlich zum Normalisieren von Text aus verschiedenen Quellen."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Satzanfang groß",
-          "description": "Erster Buchstabe jedes Satzes groß, Rest klein. Standardformat für Fließtext."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Titelschreibweise",
-          "description": "Jedes Wort beginnt mit einem Großbuchstaben. Ideal für Titel, Überschriften und Eigennamen."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Überflüssige Leerzeichen entfernen",
-          "description": "Reduziert mehrfache Leerzeichen auf eines und entfernt Leerzeichen am Zeilenanfang und -ende."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Leerzeilen entfernen",
-          "description": "Entfernt leere und überflüssige Zeilen. Nützlich zum Bereinigen von kopierten Texten."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Duplikate entfernen",
-          "description": "Behält nur einzigartige Zeilen und entfernt Wiederholungen. Nützlich zum Bereinigen von Listen."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
       "title": "Für wen ist der Wortzähler gedacht?",
       "description": "Das Tool ist nützlich für alle, die mit Text arbeiten:",
       "grid": "three",
@@ -265,12 +186,12 @@
         {
           "icon": "RiEditLine",
           "title": "Texter und Redakteure",
-          "description": "Wörter und Zeichen zählen, Plattformlimits prüfen, Groß-/Kleinschreibung ändern und Text vor der Veröffentlichung bereinigen."
+          "description": "Wörter und Zeichen zählen, Plattformlimits prüfen und Lesbarkeit vor der Veröffentlichung prüfen."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Blogger und Content-Ersteller",
-          "description": "Beitragslänge kontrollieren, Lesbarkeit und Lesezeit prüfen, Duplikate entfernen."
+          "description": "Beitragslänge kontrollieren, Lesbarkeit und Lesezeit prüfen."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -280,7 +201,7 @@
         {
           "icon": "RiSearchLine",
           "title": "SEO-Spezialisten",
-          "description": "Textlänge analysieren, Flesch-Kincaid-Lesbarkeit prüfen, einzigartige Wörter zählen und Textkomplexität bewerten."
+          "description": "Textlänge analysieren, Flesch-Kincaid-Lesbarkeit prüfen und Textkomplexität bewerten."
         },
         {
           "icon": "RiGraduationCapLine",
@@ -323,13 +244,8 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 Textmetriken + Lesbarkeitsindex",
-          "description": "Wörter, Zeichen, Silben, Sätze, Absätze, einzigartige Wörter, Lesezeit, Sprechzeit und Flesch-Kincaid – alles in einem Panel."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 Formatierungswerkzeuge",
-          "description": "Groß-/Kleinschreibung, Leerzeichen, Leerzeilen und Duplikate – ohne zusätzliche Software."
+          "title": "8 Textmetriken + Lesbarkeitsindex",
+          "description": "Wörter, Zeichen, Sätze, Silben, Lesezeit, Sprechzeit und Flesch-Kincaid – alles in einem Panel."
         },
         {
           "icon": "RiUserLine",
@@ -398,11 +314,6 @@
           "question": "Was ist der Unterschied zwischen Zeichen mit und ohne Leerzeichen?",
           "answer": "Zeichen mit Leerzeichen umfasst alle Zeichen einschließlich Leerzeichen, Tabulatoren und Zeilenumbrüchen. Zeichen ohne Leerzeichen enthält nur Buchstaben, Ziffern und Satzzeichen. Übersetzungsbüros rechnen nach Zeichen ohne Leerzeichen ab. Plattformen wie Amazon haben Limits in Zeichen mit Leerzeichen.",
           "answerSchemaText": "Zeichen mit Leerzeichen umfasst alle Zeichen; ohne Leerzeichen nur Buchstaben und Ziffern. Relevant für Abrechnungen und Plattformlimits."
-        },
-        {
-          "question": "Wie funktioniert die Groß-/Kleinschreibung?",
-          "answer": "Das Tool bietet 4 Modi: GROSSBUCHSTABEN (alles groß), kleinbuchstaben (alles klein), Satzanfang groß (erster Buchstabe jedes Satzes) und Titelschreibweise (jedes Wort groß). Klicken Sie den gewünschten Button in der Werkzeugleiste.",
-          "answerSchemaText": "Das Tool hat 4 Modi: GROSS, klein, Satzanfang und Titelschreibweise."
         },
         {
           "question": "Ist mein Text sicher?",

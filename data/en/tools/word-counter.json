@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "en",
   "metadata": {
-    "title": "Word, Character and Reading Time Counter with Text Formatting",
-    "description": "Free word, character, sentence, paragraph and reading time counter with letter case converter. Check your text length and format it.",
+    "title": "Word, Character and Reading Time Counter",
+    "description": "Free word, character, sentence and reading time counter. Check your text length and readability score.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp",
     "path": "/en/tools/word-and-character-counter"
   },
   "hero": {
-    "title": "Count words and characters – check reading time and format text",
-    "description": "Paste your text and the tool will count words, characters, sentences, paragraphs, unique words and reading time. Change letter case or remove duplicates with one click",
+    "title": "Count words and characters – check reading time and readability",
+    "description": "Paste your text and the tool will count words, characters, sentences, reading time and syllables, and score its readability.",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Word, Character and Reading Time Counter with Text Formatting",
+      "name": "Word, Character and Reading Time Counter",
       "alternateName": [
         "Online word counter",
         "Character counter with and without spaces",
@@ -33,50 +33,38 @@
         "Flesch-Kincaid readability checker",
         "Syllable counter",
         "Speaking time calculator",
-        "Online letter case converter",
-        "Text readability score tool",
-        "Remove duplicate lines from text"
+        "Text readability score tool"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free word and character counter with text formatting tools. Counts words, characters, sentences, paragraphs, unique words and reading time. Offers 7 tools: letter case conversion, removing spaces, empty lines, and duplicates.",
+      "description": "Free word and character counter. Counts words, characters, sentences, syllables and reading time, and scores text readability.",
       "featureList": [
         "Word count",
         "Character count with and without spaces",
-        "Sentence and paragraph count",
-        "Unique word count",
-        "Average word length",
+        "Sentence count",
         "Estimated reading time",
         "Estimated speaking time",
         "Syllable count",
         "Flesch-Kincaid readability score",
         "Language-adapted readability formulas (16 languages)",
-        "Convert to uppercase or lowercase",
-        "Convert to sentence case or title case",
-        "Remove extra spaces",
-        "Remove empty lines and duplicates",
         "Copy text to clipboard"
       ]
     },
     "howTo": {
       "name": "How to use the word and character counter",
-      "description": "Count words, characters, syllables and sentences in your text. Check Flesch-Kincaid readability, reading time and speaking time. Use tools to change letter case or remove duplicates.",
+      "description": "Count words, characters, syllables and sentences in your text. Check Flesch-Kincaid readability, reading time and speaking time.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Paste your text",
-          "text": "Paste or type text into the text field. The tool will automatically count words, characters, sentences, paragraphs, unique words and estimate reading time."
+          "text": "Paste or type text into the text field. The tool will automatically count words, characters and sentences, and estimate reading time."
         },
         {
           "name": "Check the statistics",
-          "text": "In the left panel you will see 11 text metrics: words, characters with and without spaces, sentences, paragraphs, unique words, average word length, reading time, speaking time, syllables, and Flesch-Kincaid readability score."
-        },
-        {
-          "name": "Use text tools",
-          "text": "Below the text field you will find a toolbar with 7 tools: letter case conversion, removing spaces, empty lines and duplicates."
+          "text": "In the left panel you will see 8 text metrics: words, characters with and without spaces, sentences, reading time, speaking time, syllables, and Flesch-Kincaid readability score."
         },
         {
           "name": "Copy the result",
-          "text": "Click Copy text to transfer the modified text to your clipboard. Use Clear to start over."
+          "text": "Click Copy text to transfer the text to your clipboard. Use Clear to start over."
         }
       ]
     }
@@ -88,8 +76,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Free word and character counter with text tools",
-      "html": "<p class=\"text-mid\">This tool combines a word and character counter with Flesch-Kincaid readability analysis and a set of text formatting functions. Paste your text and you will see the word count, characters, syllables, sentences, paragraphs, unique words, estimated reading time, speaking time, and a color-coded readability score.</p><p class=\"text-mid mt-3\">The <strong>Flesch-Kincaid readability score</strong> (0–100) tells you how easy your text is to read. Scores above 70 indicate easy reading (suitable for a broad audience), while scores below 30 indicate academic-level complexity. The tool uses language-adapted formulas for 16 languages, including Amstad (German), Fernandez-Huerta (Spanish), and Gulpease (Italian).</p><p class=\"text-mid mt-3\">Below the text field you will find a toolbar with 7 tools: letter case conversion (UPPERCASE, lowercase, Sentence case, Title Case), removing extra spaces, empty lines and duplicates. All analysis and processing happens locally in your browser.</p>",
+      "title": "Free word and character counter",
+      "html": "<p class=\"text-mid\">This tool combines a word and character counter with Flesch-Kincaid readability analysis. Paste your text and you will see the word count, characters, syllables, sentences, estimated reading time, speaking time, and a color-coded readability score.</p><p class=\"text-mid mt-3\">The <strong>Flesch-Kincaid readability score</strong> (0–100) tells you how easy your text is to read. Scores above 70 indicate easy reading (suitable for a broad audience), while scores below 30 indicate academic-level complexity. The tool uses language-adapted formulas for 16 languages, including Amstad (German), Fernandez-Huerta (Spanish), and Gulpease (Italian).</p><p class=\"text-mid mt-3\">All analysis and processing happens locally in your browser.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/word-and-character-counter-en.webp",
       "imageAlt": "Word and character counter – Arteon"
     },
@@ -100,28 +88,23 @@
     {
       "type": "sectionSteps",
       "title": "How to use the word and character counter",
-      "description": "Analyze and format text in three steps:",
-      "grid": "four",
+      "description": "Analyze text in three steps:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Paste your text",
-          "description": "Paste or type text into the field on the right. The tool will immediately count words, characters, sentences, paragraphs, unique words and estimate reading time."
+          "description": "Paste or type text into the field on the right. The tool will immediately count words, characters and sentences, and estimate reading time."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Check the statistics",
-          "description": "In the left panel you will see 11 metrics: words, characters, sentences, paragraphs, unique words, average word length, reading time, speaking time, syllables and Flesch-Kincaid readability score."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Transform text",
-          "description": "Below the text field you will find a toolbar with 7 tools: letter case conversion, removing spaces, empty lines and duplicates."
+          "description": "In the left panel you will see 8 metrics: words, characters, sentences, reading time, speaking time, syllables and Flesch-Kincaid readability score."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Copy the result",
-          "description": "Click Copy text to transfer the modified text to your clipboard. Use Clear to start over."
+          "title": "3. Copy the result",
+          "description": "Click Copy text to transfer the text to your clipboard. Use Clear to start over."
         }
       ]
     },
@@ -131,8 +114,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 text metrics - what the counter measures",
-      "description": "The counter analyzes your text across eleven indicators:",
+      "title": "8 text metrics - what the counter measures",
+      "description": "The counter analyzes your text across eight indicators:",
       "grid": "two",
       "items": [
         {
@@ -154,21 +137,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Sentences",
           "description": "Number of sentences in the text. Helps assess complexity and readability - shorter sentences are easier to absorb."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Paragraphs",
-          "description": "Text blocks separated by blank lines. Well-structured paragraphs improve readability on screens."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Unique words",
-          "description": "Number of non-repeating words. A higher ratio of unique to total words indicates richer vocabulary."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Average word length",
-          "description": "Average number of characters per word. An indicator of text complexity - technical texts have longer words than casual ones."
         },
         {
           "icon": "RiTimeLine",
@@ -198,66 +166,19 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 text formatting tools",
-      "description": "Below the text field you will find a toolbar with buttons for quick text transformation:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "UPPERCASE",
-          "description": "Converts all text to uppercase. Useful for headings, acronyms and highlighting text fragments."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "lowercase",
-          "description": "Converts all text to lowercase. Useful for normalizing text copied from different sources."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Sentence case",
-          "description": "First letter of each sentence is capitalized, the rest lowercase. Standard format for continuous text."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Title Case",
-          "description": "Each word starts with a capital letter. Ideal for titles, headings and proper names."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Remove extra spaces",
-          "description": "Reduces multiple spaces to one and trims spaces at the beginning and end of each line."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Remove empty lines",
-          "description": "Removes empty and redundant lines from text. Useful for cleaning text copied from websites."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Remove duplicate lines",
-          "description": "Keeps only unique lines, removing repetitions. Useful for cleaning lists and data."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Who is this word counter and text tools for?",
+      "title": "Who is this word counter for?",
       "description": "The tool is useful for anyone who works with text:",
       "grid": "three",
       "items": [
         {
           "icon": "RiEditLine",
           "title": "Copywriters and editors",
-          "description": "Count words and characters, check platform limits, quickly change letter case and clean text before publishing."
+          "description": "Count words and characters, check platform limits and readability before publishing."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Bloggers and content creators",
-          "description": "Monitor post length, check reading time and remove duplicate lines."
+          "description": "Monitor post length and check reading time and readability."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -267,7 +188,7 @@
         {
           "icon": "RiSearchLine",
           "title": "SEO specialists",
-          "description": "Analyze content length, count unique words and assess text complexity based on average word length."
+          "description": "Analyze content length, check the Flesch-Kincaid readability score and assess text complexity."
         },
         {
           "icon": "RiGraduationCapLine",
@@ -319,13 +240,8 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 text metrics + readability score",
-          "description": "Words, characters, syllables, sentences, paragraphs, unique words, reading time, speaking time, and a Flesch-Kincaid readability score - all in one panel."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 formatting tools",
-          "description": "Letter case conversion, removing spaces, empty lines and duplicates - without installing additional software."
+          "title": "8 text metrics + readability score",
+          "description": "Words, characters, syllables, sentences, reading time, speaking time, and a Flesch-Kincaid readability score - all in one panel."
         },
         {
           "icon": "RiUserLine",
@@ -383,7 +299,7 @@
     {
       "type": "sectionInfo",
       "title": "Using text metrics to improve your writing",
-      "html": "<p class=\"text-mid mb-4\">The unique word ratio reveals vocabulary richness. In a 1,000-word text, 400–500 unique words indicates varied language. Below 300 unique words, the text may sound repetitive. If your ratio is low, look for repeated phrases and replace them with synonyms or restructure sentences to reduce redundancy.</p><p class=\"text-mid mb-4\">Average word length signals text complexity. General web content typically averages 4–5 characters per word in English. If your average exceeds 6, the text may contain too many technical terms or unnecessarily long words for a general audience. This does not apply to specialized content (medical, legal, scientific), where longer terminology is expected and appropriate.</p><p class=\"text-mid\">Sentence count combined with word count gives you the average sentence length. If the average exceeds 20–25 words, readability drops noticeably. The fix is straightforward: find sentences longer than 25 words and split them. A practical workflow is: paste your draft into the tool, check the readability score, identify long sentences, shorten them, then re-check the score. Two or three rounds of this process typically raise the score by 10–15 points.</p>"
+      "html": "<p class=\"text-mid\">Sentence count combined with word count gives you the average sentence length. If the average exceeds 20–25 words, readability drops noticeably. The fix is straightforward: find sentences longer than 25 words and split them. A practical workflow is: paste your draft into the tool, check the readability score, identify long sentences, shorten them, then re-check the score. Two or three rounds of this process typically raise the score by 10–15 points.</p>"
     },
     {
       "type": "gap",
@@ -412,21 +328,6 @@
           "question": "What is the difference between characters with and without spaces?",
           "answer": "Characters with spaces includes all characters in the text including spaces, tabs and newlines. Characters without spaces includes only letters, digits and punctuation. Platforms like Amazon or eBay have limits in characters with spaces. Translation agencies and print shops bill by characters without spaces.",
           "answerSchemaText": "Characters with spaces includes all characters, characters without spaces excludes spaces and tabs. The difference matters for platform limits and billing."
-        },
-        {
-          "question": "How does the letter case conversion work?",
-          "answer": "The tool offers 4 conversion modes: UPPERCASE (all text to uppercase), lowercase (all to lowercase), Sentence case (first letter of each sentence capitalized) and Title Case (first letter of each word capitalized). Click the appropriate button on the toolbar below the text field.",
-          "answerSchemaText": "The tool has 4 letter case conversion modes: uppercase, lowercase, sentence case and title case."
-        },
-        {
-          "question": "What does the 'unique words' metric mean?",
-          "answer": "Unique words is the count of non-repeating words in the text. If the word 'marketing' appears 5 times, it counts as 1 unique word. A high ratio of unique words to total words indicates richer vocabulary and less repetitive text.",
-          "answerSchemaText": "Unique words is the count of non-repeating words. A high ratio to total words indicates richer vocabulary."
-        },
-        {
-          "question": "How does removing duplicate lines work?",
-          "answer": "The function compares each line of text with the others and keeps only the first occurrence. Repeating lines are removed. Useful for cleaning keyword lists, email addresses, spreadsheet data and any collections where duplicates may appear.",
-          "answerSchemaText": "The tool compares text lines and keeps only unique ones, removing repetitions."
         },
         {
           "question": "Is my text safe?",

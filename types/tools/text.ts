@@ -5,9 +5,6 @@ export interface TextMetrics {
   charsWithSpaces: number;
   charsWithoutSpaces: number;
   sentences: number;
-  paragraphs: number;
-  uniqueWords: number;
-  avgWordLength: number;
   readingTimeMinutes: number;
   syllables: number;
   fleschScore: number | null;

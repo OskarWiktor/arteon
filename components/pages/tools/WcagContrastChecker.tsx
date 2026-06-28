@@ -161,7 +161,7 @@ function adjustColorToWcag({
  * selecting a WCAG target, and generating suggested foreground colors that meet the chosen contrast.
  *
  * The component manages its own state for color inputs, color pickers, match target, suggested color,
- * and sample text; computes contrast results and suggestions; and exposes controls to swap, reset,
+ * and sample text; computes contrast results and suggestions; and exposes controls to swap,
  * match, and apply suggested colors.
  *
  * @returns The React element for the WCAG contrast checker interface.
@@ -234,14 +234,6 @@ export default function WcagContrastChecker() {
     setBackgroundPicker(foregroundPicker);
   };
 
-  const handleReset = () => {
-    const { fg, bg } = getThemeDefaults();
-    setForeground(fg);
-    setBackground(bg);
-    setForegroundPicker(fg);
-    setBackgroundPicker(bg);
-  };
-
   const handleMatch = () => {
     const suggestion = adjustColorToWcag({
       foreground,
@@ -290,33 +282,7 @@ export default function WcagContrastChecker() {
 
             <div>
               <div className='grid gap-4 sm:grid-cols-2'>
-                <ToolFieldRow
-                  label={t.textColorLabel}
-                  helper={
-                    <span className='text-xs! text-inherit'>
-                      {t.supportedFormats}{' '}
-                      <code className='rounded bg-black/5 px-1'>#rrggbb</code>,{' '}
-                      <code className='rounded bg-black/5 px-1'>#rgb</code>,{' '}
-                      <code className='rounded bg-black/5 px-1'>
-                        rgb(r,g,b)
-                      </code>
-                      ,{' '}
-                      <code className='rounded bg-black/5 px-1'>
-                        rgba(r,g,b,a)
-                      </code>
-                      ,{' '}
-                      <code className='rounded bg-black/5 px-1'>
-                        hsl(h,s%,l%)
-                      </code>
-                      ,{' '}
-                      <code className='rounded bg-black/5 px-1'>
-                        hsla(h,s%,l%,a)
-                      </code>
-                      .
-                    </span>
-                  }
-                  helperClassName='text-xs!'
-                >
+                <ToolFieldRow label={t.textColorLabel}>
                   <InputColorWithLabel
                     withTextField
                     value={foreground}
@@ -332,30 +298,6 @@ export default function WcagContrastChecker() {
                   label={
                     <span className='tool-value'>{t.backgroundColorLabel}</span>
                   }
-                  helper={
-                    <span className='text-xs! text-inherit'>
-                      {t.supportedFormats}{' '}
-                      <code className='rounded bg-black/5 px-1'>#rrggbb</code>,{' '}
-                      <code className='rounded bg-black/5 px-1'>#rgb</code>,{' '}
-                      <code className='rounded bg-black/5 px-1'>
-                        rgb(r,g,b)
-                      </code>
-                      ,{' '}
-                      <code className='rounded bg-black/5 px-1'>
-                        rgba(r,g,b,a)
-                      </code>
-                      ,{' '}
-                      <code className='rounded bg-black/5 px-1'>
-                        hsl(h,s%,l%)
-                      </code>
-                      ,{' '}
-                      <code className='rounded bg-black/5 px-1'>
-                        hsla(h,s%,l%,a)
-                      </code>
-                      .
-                    </span>
-                  }
-                  helperClassName='text-xs!'
                 >
                   <InputColorWithLabel
                     withTextField
@@ -374,15 +316,6 @@ export default function WcagContrastChecker() {
               <div className='flex flex-wrap gap-3'>
                 <Button type='button' size='small' onClick={handleSwap}>
                   {t.swapColors}
-                </Button>
-                <Button
-                  type='button'
-                  size='small'
-                  variant='normal'
-                  onClick={handleReset}
-                  className='border-0 shadow-none hover:translate-y-0 hover:shadow-none'
-                >
-                  {t.resetColors}
                 </Button>
               </div>
             </div>
@@ -485,23 +418,7 @@ export default function WcagContrastChecker() {
               </div>
               {hasError ? (
                 <ToolHelper variant='error' className='mt-1'>
-                  <span className='text-xs! text-dark'>
-                    {t.colorReadError}{' '}
-                    <code className='rounded bg-black/5 px-1'>#rrggbb</code>,{' '}
-                    <code className='rounded bg-black/5 px-1'>rgb(r,g,b)</code>,{' '}
-                    <code className='rounded bg-black/5 px-1'>
-                      rgba(r,g,b,a)
-                    </code>
-                    ,{' '}
-                    <code className='rounded bg-black/5 px-1'>
-                      hsl(h,s%,l%)
-                    </code>
-                    ,{' '}
-                    <code className='rounded bg-black/5 px-1'>
-                      hsla(h,s%,l%,a)
-                    </code>
-                    .
-                  </span>
+                  <span className='text-xs! text-dark'>{t.colorReadError}</span>
                 </ToolHelper>
               ) : (
                 <div className='mt-1 h-4'></div>

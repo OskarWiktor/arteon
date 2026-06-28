@@ -3,13 +3,13 @@
   "locale": "fr",
   "metadata": {
     "title": "Compteur de mots, caractères et temps de lecture avec mise en forme du texte",
-    "description": "Compteur gratuit de mots, caractères, phrases, paragraphes et temps de lecture avec convertisseur de casse. Vérifiez la longueur de votre texte et modifiez les lettres.",
+    "description": "Compteur gratuit de mots, caractères, phrases et temps de lecture. Vérifiez la longueur de votre texte et sa lisibilité en un coup d'œil.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp",
     "path": "/fr/outils/compteur-de-mots-et-caracteres"
   },
   "hero": {
-    "title": "Comptez mots et caractères – vérifiez le temps de lecture et formatez",
-    "description": "Collez votre texte et l'outil comptera les mots, caractères, phrases, paragraphes, mots uniques et temps de lecture. Changez la casse ou supprimez les doublons",
+    "title": "Comptez mots et caractères – vérifiez le temps de lecture et la lisibilité",
+    "description": "Collez votre texte et l'outil comptera les mots, caractères, phrases, temps de lecture, syllabes et lisibilité.",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp"
   },
   "breadcrumbs": {
@@ -32,47 +32,34 @@
         "Calculateur de temps de lecture",
         "Vérificateur de lisibilité Flesch-Kincaid",
         "Compteur de syllabes en ligne",
-        "Calculateur de temps de parole",
-        "Convertisseur de casse en ligne",
-        "Outil de lisibilité de texte",
-        "Supprimer les lignes en double"
+        "Calculateur de temps de parole"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Compteur gratuit de mots et caractères avec outils de mise en forme du texte. Compte les mots, caractères, phrases, paragraphes, mots uniques et temps de lecture. Propose 7 outils : conversion de casse, suppression des espaces, lignes vides et doublons.",
+      "description": "Compteur gratuit de mots et caractères. Compte les mots, caractères, phrases, temps de lecture et syllabes, et évalue la lisibilité du texte.",
       "featureList": [
         "Comptage de mots",
         "Comptage de caractères avec et sans espaces",
-        "Comptage de phrases et paragraphes",
-        "Comptage de mots uniques",
-        "Longueur moyenne des mots",
+        "Comptage de phrases",
         "Temps de lecture estimé",
         "Temps de parole estimé",
         "Comptage de syllabes",
         "Score de lisibilité Flesch-Kincaid (Kandel-Moles pour le français)",
         "Formules de lisibilité adaptées (16 langues)",
-        "Convertir en majuscules ou minuscules",
-        "Convertir en style phrase ou titre",
-        "Supprimer les espaces superflus",
-        "Supprimer les lignes vides et doublons",
         "Copier le texte dans le presse-papiers"
       ]
     },
     "howTo": {
       "name": "Comment utiliser le compteur de mots",
-      "description": "Comptez mots, caractères, syllabes et phrases. Vérifiez la lisibilité Flesch-Kincaid, le temps de lecture et le temps de parole. Formatez le texte avec 7 outils.",
+      "description": "Comptez mots, caractères, syllabes et phrases. Vérifiez la lisibilité Flesch-Kincaid, le temps de lecture et le temps de parole.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Collez votre texte",
-          "text": "Collez ou saisissez du texte. L'outil comptera les mots, caractères, phrases, paragraphes et mots uniques."
+          "text": "Collez ou saisissez du texte. L'outil comptera automatiquement les mots, caractères, phrases et le temps de lecture estimé."
         },
         {
           "name": "Vérifiez les statistiques",
-          "text": "Dans le panneau gauche vous verrez 11 métriques : mots, caractères avec et sans espaces, phrases, paragraphes, mots uniques, longueur moyenne, temps de lecture, temps de parole, syllabes et score Flesch-Kincaid."
-        },
-        {
-          "name": "Transformez le texte",
-          "text": "Sous le champ de texte, vous trouverez 7 outils de transformation."
+          "text": "Dans le panneau gauche vous verrez 8 métriques : mots, caractères avec et sans espaces, phrases, temps de lecture, temps de parole, syllabes et score Flesch-Kincaid."
         },
         {
           "name": "Copiez le résultat",
@@ -88,8 +75,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Compteur de mots et caractères avec outils de texte",
-      "html": "<p class=\"text-mid\">Cet outil combine un compteur de mots et caractères avec une analyse de lisibilité Flesch-Kincaid et des fonctions de formatage de texte. Collez votre texte pour voir le nombre de mots, caractères, syllabes, phrases, paragraphes, mots uniques, temps de lecture, temps de parole et un score de lisibilité coloré.</p><p class=\"text-mid mt-3\">Le <strong>score Flesch-Kincaid</strong> (0–100) indique la facilité de lecture de votre texte. Pour les textes en français, l’outil utilise la <strong>formule Kandel-Moles</strong> adaptée aux spécificités de la langue française. Un score supérieur à 70 indique un texte facile ; inférieur à 30, un niveau académique.</p><p class=\"text-mid mt-3\">Sous le champ de texte, vous trouverez 7 outils : conversion de casse (MAJUSCULES, minuscules, Phrase, Titre), suppression des espaces superflus, lignes vides et doublons. Tout le traitement se fait localement dans votre navigateur.</p>",
+      "title": "Compteur de mots et caractères avec analyse de lisibilité",
+      "html": "<p class=\"text-mid\">Cet outil combine un compteur de mots et caractères avec une analyse de lisibilité Flesch-Kincaid. Collez votre texte pour voir le nombre de mots, caractères, syllabes, phrases, temps de lecture, temps de parole et un score de lisibilité coloré.</p><p class=\"text-mid mt-3\">Le <strong>score Flesch-Kincaid</strong> (0–100) indique la facilité de lecture de votre texte. Pour les textes en français, l’outil utilise la <strong>formule Kandel-Moles</strong> adaptée aux spécificités de la langue française. Un score supérieur à 70 indique un texte facile ; inférieur à 30, un niveau académique.</p><p class=\"text-mid mt-3\">Tout le traitement se fait localement dans votre navigateur.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/compteur-de-mots-et-caracteres-fr.webp",
       "imageAlt": "Compteur de mots et caractères – Arteon"
     },
@@ -100,34 +87,25 @@
     {
       "type": "sectionSteps",
       "title": "Comment utiliser le compteur de mots",
-      "description": "Analysez et formatez le texte en trois étapes :",
-      "grid": "four",
+      "description": "Analysez le texte en trois étapes :",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Collez votre texte",
-          "description": "Collez ou saisissez du texte. L'outil comptera les mots, caractères, phrases, paragraphes et mots uniques."
+          "description": "Collez ou saisissez du texte. L'outil comptera automatiquement les mots, caractères, phrases et le temps de lecture estimé."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Vérifiez les statistiques",
-          "description": "Dans le panneau gauche vous verrez 11 métriques : mots, caractères avec et sans espaces, phrases, paragraphes, mots uniques, longueur moyenne, temps de lecture, temps de parole, syllabes et score Flesch-Kincaid."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Transformez le texte",
-          "description": "Sous le champ de texte, vous trouverez 7 outils de transformation."
+          "description": "Dans le panneau gauche vous verrez 8 métriques : mots, caractères avec et sans espaces, phrases, temps de lecture, temps de parole, syllabes et score Flesch-Kincaid."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Copiez le résultat",
+          "title": "3. Copiez le résultat",
           "description": "Cliquez sur Copier le texte. Utilisez Effacer pour recommencer."
         }
       ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
     },
     {
       "type": "gap",
@@ -144,8 +122,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 métriques de texte – que mesure le compteur",
-      "description": "Le compteur analyse votre texte selon onze indicateurs :",
+      "title": "8 métriques de texte – que mesure le compteur",
+      "description": "Le compteur analyse votre texte selon huit indicateurs :",
       "grid": "two",
       "items": [
         {
@@ -167,21 +145,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Phrases",
           "description": "Nombre de phrases dans le texte. Aide à évaluer la complexité et la lisibilité – les phrases courtes sont plus faciles à assimiler."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Paragraphes",
-          "description": "Blocs de texte séparés par des lignes vides. Des paragraphes bien structurés améliorent la lisibilité sur écran."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Mots uniques",
-          "description": "Nombre de mots non répétés. Un ratio élevé de mots uniques indique un vocabulaire plus riche."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Longueur moyenne des mots",
-          "description": "Nombre moyen de caractères par mot. Indicateur de complexité – les textes techniques ont des mots plus longs."
         },
         {
           "icon": "RiTimeLine",
@@ -211,53 +174,6 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 outils de formatage",
-      "description": "Sous le champ de texte, vous trouverez des boutons de transformation :",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "MAJUSCULES",
-          "description": "Convertit tout le texte en majuscules. Utile pour les titres, acronymes et mise en valeur."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "minuscules",
-          "description": "Convertit tout le texte en minuscules. Utile pour normaliser du texte de sources différentes."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Phrase",
-          "description": "Première lettre de chaque phrase en majuscule, le reste en minuscule. Format standard pour le texte courant."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Titre",
-          "description": "Chaque mot commence par une majuscule. Idéal pour les titres, en-têtes et noms propres."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Supprimer les espaces",
-          "description": "Réduit les espaces multiples à un seul et supprime les espaces en début et fin de ligne."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Supprimer les lignes vides",
-          "description": "Supprime les lignes vides et redondantes. Utile pour nettoyer du texte copié de sites web."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Supprimer les doublons",
-          "description": "Conserve uniquement les lignes uniques en supprimant les répétitions. Utile pour nettoyer des listes."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
       "title": "À qui s’adresse le compteur de mots ?",
       "description": "L’outil est utile pour toute personne travaillant avec du texte :",
       "grid": "three",
@@ -265,12 +181,12 @@
         {
           "icon": "RiEditLine",
           "title": "Rédacteurs et éditeurs",
-          "description": "Compter mots et caractères, vérifier les limites des plateformes, changer la casse et nettoyer le texte avant publication."
+          "description": "Compter mots et caractères, vérifier les limites des plateformes et la lisibilité du texte avant publication."
         },
         {
           "icon": "RiBloggerLine",
           "title": "Blogueurs et créateurs de contenu",
-          "description": "Contrôler la longueur des publications, vérifier la lisibilité et le temps de lecture, supprimer les doublons."
+          "description": "Contrôler la longueur des publications, vérifier la lisibilité et le temps de lecture."
         },
         {
           "icon": "RiShoppingBagLine",
@@ -280,7 +196,7 @@
         {
           "icon": "RiSearchLine",
           "title": "Spécialistes SEO",
-          "description": "Analyser la longueur du contenu, score Flesch-Kincaid, compter les mots uniques et évaluer la complexité du texte."
+          "description": "Analyser la longueur du contenu, le score Flesch-Kincaid et évaluer la complexité du texte."
         },
         {
           "icon": "RiGraduationCapLine",
@@ -323,23 +239,18 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 métriques + score de lisibilité",
-          "description": "Mots, caractères, syllabes, phrases, paragraphes, mots uniques, temps de lecture, temps de parole et Flesch-Kincaid – tout dans un panneau."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 outils de formatage",
-          "description": "Conversion de casse, suppression d’espaces, lignes vides et doublons – sans installer de logiciel."
+          "title": "8 métriques + score de lisibilité",
+          "description": "Mots, caractères, syllabes, phrases, temps de lecture, temps de parole et Flesch-Kincaid – tout dans un panneau."
         },
         {
           "icon": "RiUserLine",
           "title": "Traitement local dans le navigateur",
-          "description": "Votre texte n’est jamais envoyé à un serveur. Analyse et transformation se font localement sur votre appareil."
+          "description": "Votre texte n’est jamais envoyé à un serveur. L'analyse se fait localement sur votre appareil."
         },
         {
           "icon": "RiFileCopyLine",
           "title": "Copier et effacer le texte",
-          "description": "Copiez le texte modifié dans le presse-papiers en un clic ou effacez le champ pour recommencer."
+          "description": "Copiez le texte dans le presse-papiers en un clic ou effacez le champ pour recommencer."
         },
         {
           "icon": "RiTimerLine",
@@ -378,7 +289,7 @@
     {
       "type": "sectionInfo",
       "title": "Lisibilité en français - comprendre la formule Kandel-Moles",
-      "html": "<p class=\"text-mid mb-4\">Le français académique et littéraire utilise traditionnellement des phrases longues avec des propositions subordonnées imbriquées. Cette construction est naturelle en français, mais elle réduit la lisibilité sur écran. La formule Kandel-Moles adapte les coefficients de Flesch pour tenir compte de cette particularité linguistique. Un score Kandel-Moles entre 60 et 70 correspond à un texte clair et accessible pour un large public.</p><p class=\"text-mid mb-4\">Pour le contenu web en français, visez des phrases de 15–20 mots et des paragraphes de 3–4 phrases. Les phrases de plus de 25 mots doivent être divisées en deux. Le français a des mots légèrement plus longs que l'anglais (moyenne de 5–6 caractères contre 4–5), ce qui signifie que les scores de lisibilité seront naturellement un peu plus bas à difficulté comparable.</p><p class=\"text-mid\">Le ratio de mots uniques est un bon indicateur de la richesse du vocabulaire. Dans un texte de 1 000 mots, 400–500 mots uniques indiquent un vocabulaire varié. Si le ratio descend sous 30 %, le texte peut sembler répétitif - remplacez les mots récurrents par des synonymes ou reformulez les phrases pour réduire la redondance.</p>"
+      "html": "<p class=\"text-mid mb-4\">Le français académique et littéraire utilise traditionnellement des phrases longues avec des propositions subordonnées imbriquées. Cette construction est naturelle en français, mais elle réduit la lisibilité sur écran. La formule Kandel-Moles adapte les coefficients de Flesch pour tenir compte de cette particularité linguistique. Un score Kandel-Moles entre 60 et 70 correspond à un texte clair et accessible pour un large public.</p><p class=\"text-mid mb-4\">Pour le contenu web en français, visez des phrases de 15–20 mots et des paragraphes de 3–4 phrases. Les phrases de plus de 25 mots doivent être divisées en deux. Le français a des mots légèrement plus longs que l'anglais (moyenne de 5–6 caractères contre 4–5), ce qui signifie que les scores de lisibilité seront naturellement un peu plus bas à difficulté comparable.</p>"
     },
     {
       "type": "gap",

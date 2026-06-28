@@ -41,8 +41,7 @@
         "Generering av PWA-ikoner 192x192 och 512x512",
         "Stöd för PNG-, JPG- och SVG-källbilder",
         "Konfiguration av bakgrundsfärg",
-        "Generering av manifest.json-fil för PWA",
-        "Ladda ner alla filer som ZIP",
+        "Ladda ner alla filer med ett klick",
         "Ladda ner enskilda filer",
         "Lighthouse-kompatibel",
         "Bearbetning i webbläsaren (filer skickas inte till server)",
@@ -56,19 +55,15 @@
       "steps": [
         {
           "name": "Ladda upp bild",
-          "text": "Dra och släpp filen i det markerade området eller välj den från din enhet. Stödda format är JPG, PNG, SVG och WebP."
+          "text": "Dra och släpp filen i det markerade området eller välj den från din enhet. Stödda format är PNG, JPG och SVG."
         },
         {
-          "name": "Beskär bilden",
-          "text": "Justera beskärningsområdet för att välja lämplig del av bilden för favicon."
+          "name": "Ställ in bakgrund",
+          "text": "Ange ikonens bakgrundsfärg eller låt den vara transparent."
         },
         {
-          "name": "Kontrollera förhandsgranskning",
-          "text": "Se hur favicon ser ut i webbläsarfliken och i olika storlekar."
-        },
-        {
-          "name": "Ladda ner ikoner",
-          "text": "Ladda ner favicon.ico och den kompletta uppsättningen PNG-ikoner i en ZIP-fil."
+          "name": "Generera och ladda ner filer",
+          "text": "Verktyget genererar favicon.ico och en komplett uppsättning PNG-ikoner (16x16, 32x32, 180x180, 192x192, 512x512). Du kan ladda ner alla filer på en gång eller varje ikon för sig."
         }
       ]
     }
@@ -101,13 +96,13 @@
           "icon": "RiImageLine"
         },
         {
-          "title": "2. Beskär och justera",
-          "description": "Justera beskärningsområdet för att välja lämplig del av bilden. Se hur den ser ut i olika storlekar.",
+          "title": "2. Ställ in bakgrundsfärg",
+          "description": "Välj ikonens bakgrundsfärg eller låt den vara transparent.",
           "icon": "RiAspectRatioLine"
         },
         {
-          "title": "3. Ladda ner ikoner",
-          "description": "Ladda ner favicon.ico och den kompletta uppsättningen PNG-ikoner i en ZIP-fil. Alla ikoner är redo att användas.",
+          "title": "3. Ladda ner filer",
+          "description": "När ikonerna har genererats laddar du ner alla filer med ett klick eller varje ikon för sig. Nedan i verktyget hittar du instruktioner för hur du lägger upp favicon på din webbplats.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -119,7 +114,7 @@
     {
       "type": "sectionInfo",
       "title": "Vilka ikoner skapar generatorn?",
-      "html": "<p class=\"text-mid mb-6\">Varje storlek har sitt användningsområde:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Klassiskt format som stöds av alla webbläsare. Visas i webbläsarfliken.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 och 32×32 PNG</p><p class=\"text-mid text-sm\">Standardstorlekar för moderna webbläsare. Visas i flikar och bokmärken.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Ikon för Apple-enheter (iPhone, iPad). Visas när någon lägger till sidan på startskärmen.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 och 512×512 PNG</p><p class=\"text-mid text-sm\">Ikoner för webbappar (PWA). Krävs av manifestet och används i appbutiker.</p></div></div><p class=\"text-light mt-6\">Om du inte bygger en PWA räcker det med: favicon.ico, 32×32 PNG och 180×180 PNG. Dessa tre filer täcker de flesta användningsfall.</p>"
+      "html": "<p class=\"text-mid mb-6\">Varje storlek har sitt användningsområde:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Klassiskt format som stöds av alla webbläsare. Visas i webbläsarfliken.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">16×16 och 32×32 PNG</p><p class=\"text-mid text-sm\">Standardstorlekar för moderna webbläsare. Visas i flikar och bokmärken.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">180×180 PNG (apple-touch-icon)</p><p class=\"text-mid text-sm\">Ikon för Apple-enheter (iPhone, iPad). Visas när någon lägger till sidan på startskärmen.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">192×192 och 512×512 PNG</p><p class=\"text-mid text-sm\">Ikoner för webbappar (PWA), används också i appbutiker.</p></div></div><p class=\"text-light mt-6\">Om du inte bygger en PWA räcker det med: favicon.ico, 32×32 PNG och 180×180 PNG. Dessa tre filer täcker de flesta användningsfall.</p>"
     },
     {
       "type": "gap",
@@ -168,19 +163,14 @@
           "description": "<div><p class=\"mb-2\">Dra en fil till det markerade fältet eller välj en bild från datorn.</p><p class=\"text-light\">Format som stöds: PNG, JPG, SVG. En enkel logotyp eller ikon på minst 512×512 pixlar fungerar bäst.</p></div>"
         },
         {
-          "icon": "RiLayoutGridLine",
-          "title": "2. Välj ikonstorlekar",
-          "description": "<div><p class=\"mb-2\">Kryssa i de ikonstorlekar du behöver.</p><p class=\"text-light\">Du kan välja alla eller bara några. För en vanlig webbplats räcker: favicon.ico, 32×32 och 180×180.</p></div>"
-        },
-        {
           "icon": "RiSettings3Line",
-          "title": "3. Ställ in genereringsalternativ",
-          "description": "<div><p class=\"mb-2\">Ställ in ytterligare alternativ:</p><ul class=\"text-light list-disc pl-5\"><li><strong>Bakgrund</strong> – transparent eller vald färg</li><li><strong>Manifest</strong> – konfigurationsfil för PWA</li><li><strong>Automatisk nedladdning</strong> – filer laddas ned direkt efter generering</li></ul></div>"
+          "title": "2. Ställ in bakgrundsfärg",
+          "description": "<div><p class=\"mb-2\">Ställ in ikonens bakgrund.</p><p class=\"text-light\"><strong>Bakgrund</strong> – transparent eller vald färg.</p></div>"
         },
         {
           "icon": "RiDownloadLine",
-          "title": "4. Generera och ladda ned filer",
-          "description": "<div><p class=\"mb-2\">Efter generering bearbetar verktyget bilden lokalt – inget skickas till en server.</p><p class=\"text-light\">Ladda ned alla filer som ZIP-arkiv eller ladda ned enskilda ikoner separat.</p></div>"
+          "title": "3. Generera och ladda ned filer",
+          "description": "<div><p class=\"mb-2\">Efter generering bearbetar verktyget bilden lokalt – inget skickas till en server.</p><p class=\"text-light\">Ladda ned alla filer med ett klick eller ladda ned enskilda ikoner separat.</p></div>"
         }
       ]
     },
@@ -190,9 +180,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "Genereringsalternativ – vad gör vart och ett?",
-      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG-storlekar</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Transparent bakgrund (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Bakgrundsfärg:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
-      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Bakgrund (transparent eller färg)</h3><p class=\"text-mid\">Som standard bevarar generatorn transparens. Du kan även välja en specifik bakgrundsfärg.</p></div><div><h3 class=\"h5 mb-2\">Generera manifest (site.webmanifest)</h3><p class=\"text-mid\">En JSON-konfigurationsfil för webbappar (PWA). Om du inte skapar en PWA behövs inte detta alternativ.</p></div></div>"
+      "title": "Genereringsalternativet – vad gör det?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Transparent bakgrund (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Bakgrundsfärg:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Bakgrund (transparent eller färg)</h3><p class=\"text-mid\">Som standard bevarar generatorn transparens. Du kan även välja en specifik bakgrundsfärg.</p></div></div>"
     },
     {
       "type": "gap",
@@ -206,8 +196,8 @@
       "items": [
         {
           "icon": "RiFolderZipLine",
-          "title": "Ladda ned allt som ZIP",
-          "description": "Knappen Ladda ned allt paketerar alla genererade filer i ett ZIP-arkiv. Det är det smidigaste alternativet när du behöver det kompletta ikonuppsättningen."
+          "title": "Ladda ned allt med ett klick",
+          "description": "Knappen Ladda ned sparar alla genererade filer på din enhet samtidigt. Det är det smidigaste alternativet när du behöver den kompletta ikonuppsättningen."
         },
         {
           "icon": "RiFileDownloadLine",
@@ -326,7 +316,7 @@
         },
         {
           "question": "Hur lägger man till favicon på webbplatsen?",
-          "answer": "Placera ikonfilerna i webbplatsens rotmapp och lägg till lämpliga HTML-taggar i sidans &lt;head&gt;-sektion. Den nedladdade ZIP-filen innehåller implementeringsinstruktioner.",
+          "answer": "Placera ikonfilerna i webbplatsens rotmapp och lägg till lämpliga HTML-taggar i sidans &lt;head&gt;-sektion. Verktyget visar exempel på dessa taggar direkt efter att filerna har genererats.",
           "answerSchemaText": "Placera ikonfilerna i rotmappen och lägg till HTML-taggar i head-sektionen."
         }
       ]

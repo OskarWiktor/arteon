@@ -537,97 +537,97 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'licznik-slow-i-znakow',
         title: 'Licznik słów i znaków',
         description:
-          'Policz słowa, znaki, zdania i czas czytania. Zmień wielkość liter i sformatuj tekst jednym kliknięciem.',
+          'Policz słowa, znaki, zdania i czas czytania. Sprawdź czytelność tekstu wskaźnikiem Flesch-Kincaid.',
       },
       en: {
         slug: 'word-and-character-counter',
         title: 'Word & character counter',
         description:
-          'Count words, characters, sentences and reading time. Change letter case and format text in one click.',
+          'Count words, characters, sentences and reading time. Check readability with the Flesch-Kincaid score.',
       },
       de: {
         slug: 'wort-und-zeichenzaehler',
         title: 'Wort- & Zeichenzähler',
         description:
-          'Wörter, Zeichen, Sätze und Lesezeit zählen. Groß-/Kleinschreibung ändern und Text mit einem Klick formatieren.',
+          'Wörter, Zeichen, Sätze und Lesezeit zählen. Lesbarkeit mit dem Flesch-Kincaid-Wert prüfen.',
       },
       es: {
         slug: 'contador-de-palabras-y-caracteres',
         title: 'Contador de palabras y caracteres',
         description:
-          'Cuente palabras, caracteres, oraciones y tiempo de lectura. Cambie las mayúsculas y formatee el texto con un clic.',
+          'Cuente palabras, caracteres, oraciones y tiempo de lectura. Compruebe la legibilidad con la puntuación Flesch-Kincaid.',
       },
       fr: {
         slug: 'compteur-de-mots-et-caracteres',
         title: 'Compteur de mots et caractères',
         description:
-          'Comptez les mots, caractères, phrases et temps de lecture. Changez la casse et mettez en forme le texte en un clic.',
+          'Comptez les mots, caractères, phrases et temps de lecture. Vérifiez la lisibilité avec le score Flesch-Kincaid.',
       },
       pt: {
         slug: 'contador-de-palavras-e-caracteres',
         title: 'Contador de palavras e caracteres',
         description:
-          'Conte palavras, caracteres, frases e tempo de leitura. Altere as maiúsculas e formate o texto com um clique.',
+          'Conte palavras, caracteres, frases e tempo de leitura. Verifique a legibilidade com a pontuação Flesch-Kincaid.',
       },
       it: {
         slug: 'contatore-di-parole-e-caratteri',
         title: 'Contatore di parole e caratteri',
         description:
-          'Conta parole, caratteri, frasi e tempo di lettura. Cambia maiuscole/minuscole e formatta il testo con un clic.',
+          'Conta parole, caratteri, frasi e tempo di lettura. Verifica la leggibilità con il punteggio Flesch-Kincaid.',
       },
       ro: {
         slug: 'contor-cuvinte-si-caractere',
         title: 'Contor de cuvinte și caractere',
         description:
-          'Numărați cuvinte, caractere, propoziții și timp de citire. Schimbați majusculele și formatați textul cu un clic.',
+          'Numărați cuvinte, caractere, propoziții și timp de citire. Verificați lizibilitatea cu scorul Flesch-Kincaid.',
       },
       nl: {
         slug: 'woorden-en-tekenteller',
         title: 'Woorden- & tekenteller',
         description:
-          'Tel woorden, tekens, zinnen en leestijd. Wijzig hoofdletters en formatteer tekst met één klik.',
+          'Tel woorden, tekens, zinnen en leestijd. Controleer de leesbaarheid met de Flesch-Kincaid-score.',
       },
       hu: {
         slug: 'szo-es-karakterszamlalo',
         title: 'Szó- és karakterszámláló',
         description:
-          'Számolja meg a szavakat, karaktereket, mondatokat és az olvasási időt. Változtassa meg a betűméretet és formázza a szöveget egy kattintással.',
+          'Számolja meg a szavakat, karaktereket, mondatokat és az olvasási időt. Ellenőrizze az olvashatóságot a Flesch-Kincaid-pontszámmal.',
       },
       cs: {
         slug: 'pocitadlo-slov-a-znaku',
         title: 'Počítadlo slov a znaků',
         description:
-          'Spočítejte slova, znaky, věty a čas čtení. Změňte velikost písmen a naformátujte text jedním kliknutím.',
+          'Spočítejte slova, znaky, věty a čas čtení. Zkontrolujte čitelnost pomocí skóre Flesch-Kincaid.',
       },
       sv: {
         slug: 'ord-och-teckenraknare',
         title: 'Ord- & teckenräknare',
         description:
-          'Räkna ord, tecken, meningar och lästid. Ändra versaler och formatera text med ett klick.',
+          'Räkna ord, tecken, meningar och lästid. Kontrollera läsbarheten med Flesch-Kincaid-poängen.',
       },
       da: {
         slug: 'ord-og-tegntaeller',
         title: 'Ord- & tegntæller',
         description:
-          'Tæl ord, tegn, sætninger og læsetid. Skift store/små bogstaver og formatér tekst med ét klik.',
+          'Tæl ord, tegn, sætninger og læsetid. Kontrollér læsbarheden med Flesch-Kincaid-scoren.',
       },
       no: {
         slug: 'ord-og-tegnteller',
         title: 'Ord- og tegnteller',
         description:
-          'Tell ord, tegn, setninger og lesetid. Endre store/små bokstaver og formater tekst med ett klikk.',
+          'Tell ord, tegn, setninger og lesetid. Kontroller lesbarheten med Flesch-Kincaid-poengsummen.',
       },
       fi: {
         slug: 'sana-ja-merkkilaskuri',
         title: 'Sana- ja merkkilaskuri',
         description:
-          'Laske sanat, merkit, lauseet ja lukuaika. Vaihda kirjainkokoa ja muotoile teksti yhdellä napsautuksella.',
+          'Laske sanat, merkit, lauseet ja lukuaika. Tarkista luettavuus Flesch-Kincaid-pisteytyksellä.',
       },
       el: {
         slug: 'metritis-lexeon-kai-charaktiron',
         title: 'Μετρητής λέξεων και χαρακτήρων',
         description:
-          'Μετρήστε λέξεις, χαρακτήρες, προτάσεις και χρόνο ανάγνωσης. Αλλάξτε κεφαλαία και μορφοποιήστε το κείμενο με ένα κλικ.',
+          'Μετρήστε λέξεις, χαρακτήρες, προτάσεις και χρόνο ανάγνωσης. Ελέγξτε την αναγνωσιμότητα με τη βαθμολογία Flesch-Kincaid.',
       },
     },
   },
@@ -642,97 +642,97 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'generator-lorem-ipsum',
         title: 'Generator Lorem Ipsum',
         description:
-          'Darmowy generator lorem ipsum — 8 stylów tekstu, 9 trybów generowania. Kopiuj jako tekst lub HTML.',
+          'Darmowy generator lorem ipsum — 8 stylów tekstu, akapity, zdania lub słowa. Kopiuj jednym kliknięciem.',
       },
       en: {
         slug: 'lorem-ipsum-generator',
         title: 'Lorem Ipsum Generator',
         description:
-          'Free Lorem Ipsum generator — 8 text styles, 9 generation modes. Copy as plain text or HTML.',
+          'Free Lorem Ipsum generator — 8 text styles, paragraphs, sentences or words. Copy in one click.',
       },
       de: {
         slug: 'lorem-ipsum-generator',
         title: 'Lorem-Ipsum-Generator',
         description:
-          'Kostenloser Lorem-Ipsum-Generator — 8 Textstile, 9 Generierungsmodi. Als Text oder HTML kopieren.',
+          'Kostenloser Lorem-Ipsum-Generator — 8 Textstile, Absätze, Sätze oder Wörter. Mit einem Klick kopieren.',
       },
       es: {
         slug: 'generador-lorem-ipsum',
         title: 'Generador Lorem Ipsum',
         description:
-          'Generador Lorem Ipsum gratuito — 8 estilos de texto, 9 modos de generación. Copie como texto o HTML.',
+          'Generador Lorem Ipsum gratuito — 8 estilos de texto, párrafos, frases o palabras. Copie con un clic.',
       },
       fr: {
         slug: 'generateur-lorem-ipsum',
         title: 'Générateur Lorem Ipsum',
         description:
-          'Générateur Lorem Ipsum gratuit — 8 styles de texte, 9 modes de génération. Copiez en texte ou HTML.',
+          'Générateur Lorem Ipsum gratuit — 8 styles de texte, paragraphes, phrases ou mots. Copiez en un clic.',
       },
       pt: {
         slug: 'gerador-lorem-ipsum',
         title: 'Gerador Lorem Ipsum',
         description:
-          'Gerador Lorem Ipsum gratuito — 8 estilos de texto, 9 modos de geração. Copie como texto ou HTML.',
+          'Gerador Lorem Ipsum gratuito — 8 estilos de texto, parágrafos, frases ou palavras. Copie com um clique.',
       },
       it: {
         slug: 'generatore-lorem-ipsum',
         title: 'Generatore Lorem Ipsum',
         description:
-          'Generatore Lorem Ipsum gratuito — 8 stili di testo, 9 modalità di generazione. Copia come testo o HTML.',
+          'Generatore Lorem Ipsum gratuito — 8 stili di testo, paragrafi, frasi o parole. Copia con un clic.',
       },
       ro: {
         slug: 'generator-lorem-ipsum',
         title: 'Generator Lorem Ipsum',
         description:
-          'Generator Lorem Ipsum gratuit — 8 stiluri de text, 9 moduri de generare. Copiați ca text sau HTML.',
+          'Generator Lorem Ipsum gratuit — 8 stiluri de text, paragrafe, propoziții sau cuvinte. Copiați cu un clic.',
       },
       nl: {
         slug: 'lorem-ipsum-generator',
         title: 'Lorem Ipsum-generator',
         description:
-          'Gratis Lorem Ipsum-generator — 8 tekststijlen, 9 generatiemodi. Kopieer als tekst of HTML.',
+          'Gratis Lorem Ipsum-generator — 8 tekststijlen, paragrafen, zinnen of woorden. Kopieer met één klik.',
       },
       hu: {
         slug: 'lorem-ipsum-generator',
         title: 'Lorem Ipsum generátor',
         description:
-          'Ingyenes Lorem Ipsum generátor — 8 szövegstílus, 9 generálási mód. Másolás szövegként vagy HTML-ként.',
+          'Ingyenes Lorem Ipsum generátor — 8 szövegstílus, bekezdések, mondatok vagy szavak. Másolás egy kattintással.',
       },
       cs: {
         slug: 'generator-lorem-ipsum',
         title: 'Generátor Lorem Ipsum',
         description:
-          'Bezplatný generátor Lorem Ipsum — 8 textových stylů, 9 režimů generování. Zkopírujte jako text nebo HTML.',
+          'Bezplatný generátor Lorem Ipsum — 8 textových stylů, odstavce, věty nebo slova. Zkopírujte jedním kliknutím.',
       },
       sv: {
         slug: 'lorem-ipsum-generator',
         title: 'Lorem Ipsum-generator',
         description:
-          'Gratis Lorem Ipsum-generator — 8 textstilar, 9 genereringslägen. Kopiera som text eller HTML.',
+          'Gratis Lorem Ipsum-generator — 8 textstilar, stycken, meningar eller ord. Kopiera med ett klick.',
       },
       da: {
         slug: 'lorem-ipsum-generator',
         title: 'Lorem Ipsum-generator',
         description:
-          'Gratis Lorem Ipsum-generator — 8 tekststilarter, 9 genereringstilstande. Kopiér som tekst eller HTML.',
+          'Gratis Lorem Ipsum-generator — 8 tekststilarter, afsnit, sætninger eller ord. Kopiér med ét klik.',
       },
       no: {
         slug: 'lorem-ipsum-generator',
         title: 'Lorem Ipsum-generator',
         description:
-          'Gratis Lorem Ipsum-generator — 8 tekststiler, 9 genereringsmodi. Kopier som tekst eller HTML.',
+          'Gratis Lorem Ipsum-generator — 8 tekststiler, avsnitt, setninger eller ord. Kopier med ett klikk.',
       },
       fi: {
         slug: 'lorem-ipsum-generaattori',
         title: 'Lorem Ipsum -generaattori',
         description:
-          'Ilmainen Lorem Ipsum -generaattori — 8 tekstityyliä, 9 luontitilaa. Kopioi tekstinä tai HTML:nä.',
+          'Ilmainen Lorem Ipsum -generaattori — 8 tekstityyliä, kappaleita, lauseita tai sanoja. Kopioi yhdellä klikkauksella.',
       },
       el: {
         slug: 'gennitra-lorem-ipsum',
         title: 'Γεννήτρια Lorem Ipsum',
         description:
-          'Δωρεάν γεννήτρια Lorem Ipsum — 8 στυλ κειμένου, 9 λειτουργίες δημιουργίας. Αντιγράψτε ως κείμενο ή HTML.',
+          'Δωρεάν γεννήτρια Lorem Ipsum — 8 στυλ κειμένου, παραγράφους, προτάσεις ή λέξεις. Αντιγραφή με ένα κλικ.',
       },
     },
   },

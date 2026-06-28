@@ -2,14 +2,14 @@
   "toolKey": "wordCounter",
   "locale": "pt",
   "metadata": {
-    "title": "Contador de palavras, caracteres e tempo de leitura com formatação de texto",
-    "description": "Contador gratuito de palavras, caracteres, frases, parágrafos e tempo de leitura com conversor de maiúsculas. Verifique o comprimento do texto e altere as letras.",
+    "title": "Contador de palavras, caracteres e tempo de leitura",
+    "description": "Contador gratuito de palavras, caracteres, frases e tempo de leitura. Verifique o comprimento do seu texto e a sua legibilidade.",
     "ogImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp",
     "path": "/pt/ferramentas/contador-de-palavras-e-caracteres"
   },
   "hero": {
-    "title": "Conte palavras e caracteres – verifique tempo de leitura e formate",
-    "description": "Cole o texto e a ferramenta contará palavras, caracteres, frases, parágrafos, palavras únicas e tempo de leitura. Altere maiúsculas ou remova duplicados",
+    "title": "Conte palavras e caracteres – verifique o tempo de leitura",
+    "description": "Cole o texto e a ferramenta contará palavras, caracteres, frases, tempo de leitura, tempo de fala, sílabas e legibilidade.",
     "backgroundImage": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Contador de palavras, caracteres e tempo de leitura com formatação de texto",
+      "name": "Contador de palavras, caracteres e tempo de leitura",
       "alternateName": [
         "Contador de palavras",
         "Contador de caracteres com e sem espaços",
@@ -33,27 +33,19 @@
         "Verificador de legibilidade Flesch-Kincaid",
         "Contador de sílabas",
         "Calculadora de tempo de fala",
-        "Conversor de maiúsculas e minúsculas",
-        "Ferramenta de legibilidade de texto",
-        "Remover linhas duplicadas"
+        "Ferramenta de legibilidade de texto"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Contador gratuito de palavras e caracteres com ferramentas de formatação de texto. Conta palavras, caracteres, frases, parágrafos, palavras únicas e tempo de leitura. Oferece 7 ferramentas: conversão de maiúsculas, remoção de espaços, linhas vazias e duplicados.",
+      "description": "Contador gratuito de palavras e caracteres. Conta palavras, caracteres, frases, sílabas e tempo de leitura, e avalia a legibilidade do texto.",
       "featureList": [
         "Contagem de palavras",
         "Contagem de caracteres com e sem espaços",
-        "Contagem de frases e parágrafos",
-        "Contagem de palavras únicas",
-        "Comprimento médio de palavra",
+        "Contagem de frases",
         "Tempo de leitura estimado",
         "Tempo de fala estimado",
         "Contagem de sílabas",
         "Pontuação Flesch-Kincaid (Fernández-Huerta para português)",
         "Fórmulas de legibilidade adaptadas (16 idiomas)",
-        "Converter para maiúsculas ou minúsculas",
-        "Converter para formato de frase ou título",
-        "Remover espaços extra",
-        "Remover linhas vazias e duplicadas",
         "Copiar texto para a área de transferência"
       ]
     },
@@ -64,15 +56,11 @@
       "steps": [
         {
           "name": "Cole o texto",
-          "text": "Cole ou escreva texto. A ferramenta contará palavras, caracteres, frases, parágrafos e palavras únicas."
+          "text": "Cole ou escreva texto no campo de texto. A ferramenta contará automaticamente palavras, caracteres, frases e estimará o tempo de leitura."
         },
         {
           "name": "Verifique as estatísticas",
-          "text": "No painel esquerdo verá 11 métricas: palavras, caracteres com e sem espaços, frases, parágrafos, palavras únicas, comprimento médio, tempo de leitura, tempo de fala, sílabas e pontuação Flesch-Kincaid."
-        },
-        {
-          "name": "Transforme o texto",
-          "text": "Abaixo do campo de texto encontrará 7 ferramentas de transformação."
+          "text": "No painel esquerdo verá 8 métricas: palavras, caracteres com e sem espaços, frases, tempo de leitura, tempo de fala, sílabas e pontuação Flesch-Kincaid."
         },
         {
           "name": "Copie o resultado",
@@ -88,8 +76,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Contador de palavras e caracteres com ferramentas de texto",
-      "html": "<p class=\"text-mid\">Esta ferramenta combina um contador de palavras e caracteres com análise de legibilidade Flesch-Kincaid e funções de formatação. Cole o seu texto para ver palavras, caracteres, sílabas, frases, parágrafos, palavras únicas, tempo de leitura, tempo de fala e uma pontuação de legibilidade colorida.</p><p class=\"text-mid mt-3\">A <strong>pontuação Flesch-Kincaid</strong> (0–100) indica a facilidade de leitura. Para textos em português é usada a <strong>fórmula Fernández-Huerta</strong>, adaptada às línguas românicas. Pontuações acima de 70 indicam leitura fácil; abaixo de 30 indicam nível académico. No Brasil, a ferramenta é particularmente útil para avaliar textos segundo os princípios da Linguagem Simples.</p><p class=\"text-mid mt-3\">Abaixo do campo de texto encontrará 7 ferramentas: conversão de maiúsculas/minúsculas, remoção de espaços, linhas vazias e duplicados. Todo o processamento ocorre localmente no navegador.</p>",
+      "title": "Contador de palavras e caracteres",
+      "html": "<p class=\"text-mid\">Esta ferramenta combina um contador de palavras e caracteres com análise de legibilidade Flesch-Kincaid. Cole o seu texto para ver palavras, caracteres, sílabas, frases, tempo de leitura, tempo de fala e uma pontuação de legibilidade colorida.</p><p class=\"text-mid mt-3\">A <strong>pontuação Flesch-Kincaid</strong> (0–100) indica a facilidade de leitura. Para textos em português é usada a <strong>fórmula Fernández-Huerta</strong>, adaptada às línguas românicas. Pontuações acima de 70 indicam leitura fácil; abaixo de 30 indicam nível académico. No Brasil, a ferramenta é particularmente útil para avaliar textos segundo os princípios da Linguagem Simples.</p><p class=\"text-mid mt-3\">Todo o processamento ocorre localmente no navegador.</p>",
       "imageSrc": "/assets/tools/word-and-character-counter-with-text-formatting-tools/contador-de-palavras-e-caracteres-pt.webp",
       "imageAlt": "Contador de palavras e caracteres – Arteon"
     },
@@ -100,27 +88,22 @@
     {
       "type": "sectionSteps",
       "title": "Como usar o contador de palavras",
-      "description": "Analise e formate texto em três passos:",
-      "grid": "four",
+      "description": "Analise o texto em três passos:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiFileTextLine",
           "title": "1. Cole o texto",
-          "description": "Cole ou escreva texto. A ferramenta contará palavras, caracteres, frases, parágrafos e palavras únicas."
+          "description": "Cole ou escreva texto no campo de texto. A ferramenta contará automaticamente palavras, caracteres, frases e estimará o tempo de leitura."
         },
         {
           "icon": "RiBarChartLine",
           "title": "2. Verifique as estatísticas",
-          "description": "No painel esquerdo verá 11 métricas: palavras, caracteres com e sem espaços, frases, parágrafos, palavras únicas, comprimento médio, tempo de leitura, tempo de fala, sílabas e pontuação Flesch-Kincaid."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "3. Transforme o texto",
-          "description": "Abaixo do campo de texto encontrará 7 ferramentas de transformação."
+          "description": "No painel esquerdo verá 8 métricas: palavras, caracteres com e sem espaços, frases, tempo de leitura, tempo de fala, sílabas e pontuação Flesch-Kincaid."
         },
         {
           "icon": "RiFileCopyLine",
-          "title": "4. Copie o resultado",
+          "title": "3. Copie o resultado",
           "description": "Clique em Copiar texto. Use Limpar para recomeçar."
         }
       ]
@@ -144,8 +127,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "11 métricas de texto – o que o contador mede",
-      "description": "O contador analisa o seu texto com onze indicadores:",
+      "title": "8 métricas de texto – o que o contador mede",
+      "description": "O contador analisa o seu texto com oito indicadores:",
       "grid": "two",
       "items": [
         {
@@ -167,21 +150,6 @@
           "icon": "RiChatQuoteLine",
           "title": "Frases",
           "description": "Número de frases. Ajuda a avaliar a complexidade – frases mais curtas são mais fáceis de absorver."
-        },
-        {
-          "icon": "RiParagraph",
-          "title": "Parágrafos",
-          "description": "Blocos de texto separados por linhas em branco. Parágrafos bem estruturados melhoram a leitura em ecrãs."
-        },
-        {
-          "icon": "RiStarLine",
-          "title": "Palavras únicas",
-          "description": "Número de palavras não repetidas. Uma proporção maior indica vocabulário mais rico."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Comprimento médio",
-          "description": "Média de caracteres por palavra. Indicador de complexidade – textos técnicos têm palavras mais longas."
         },
         {
           "icon": "RiTimeLine",
@@ -211,53 +179,6 @@
     },
     {
       "type": "sectionSteps",
-      "title": "7 ferramentas de formatação",
-      "description": "Abaixo do campo de texto encontrará botões de transformação:",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiArrowUpLine",
-          "title": "MAIÚSCULAS",
-          "description": "Converte todo o texto em maiúsculas. Útil para títulos e acrónimos."
-        },
-        {
-          "icon": "RiArrowDownLine",
-          "title": "minúsculas",
-          "description": "Converte todo o texto em minúsculas. Útil para normalizar texto de diferentes fontes."
-        },
-        {
-          "icon": "RiEditLine",
-          "title": "Frase",
-          "description": "Primeira letra de cada frase em maiúscula, o resto em minúscula."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Título",
-          "description": "Cada palavra começa com maiúscula. Ideal para títulos e nomes."
-        },
-        {
-          "icon": "RiSpace",
-          "title": "Remover espaços",
-          "description": "Reduz espaços múltiplos a um e remove espaços no início e fim de cada linha."
-        },
-        {
-          "icon": "RiDeleteRow",
-          "title": "Remover linhas vazias",
-          "description": "Remove linhas vazias e redundantes do texto."
-        },
-        {
-          "icon": "RiFilterLine",
-          "title": "Remover duplicados",
-          "description": "Mantém apenas linhas únicas, removendo repetições."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
       "title": "Para quem é o contador de palavras?",
       "description": "A ferramenta é útil para qualquer pessoa que trabalhe com texto:",
       "grid": "three",
@@ -265,7 +186,7 @@
         {
           "icon": "RiEditLine",
           "title": "Redatores e editores",
-          "description": "Contar palavras e caracteres, verificar limites de plataformas, mudar maiúsculas e limpar texto."
+          "description": "Contar palavras e caracteres, verificar limites de plataformas e a legibilidade do texto antes da publicação."
         },
         {
           "icon": "RiBloggerLine",
@@ -323,18 +244,13 @@
       "items": [
         {
           "icon": "RiBarChartLine",
-          "title": "11 métricas + pontuação de legibilidade",
-          "description": "Palavras, caracteres, sílabas, frases, parágrafos, palavras únicas, tempo de leitura, tempo de fala e Flesch-Kincaid – tudo num painel."
-        },
-        {
-          "icon": "RiTextWrap",
-          "title": "7 ferramentas de formatação",
-          "description": "Conversão de maiúsculas, remoção de espaços, linhas vazias e duplicados – sem instalar software."
+          "title": "8 métricas + pontuação de legibilidade",
+          "description": "Palavras, caracteres, sílabas, frases, tempo de leitura, tempo de fala e Flesch-Kincaid – tudo num painel."
         },
         {
           "icon": "RiUserLine",
           "title": "Processamento local no navegador",
-          "description": "O seu texto nunca é enviado a um servidor. Análise e transformação ocorrem localmente."
+          "description": "O seu texto nunca é enviado a um servidor. Toda a análise ocorre localmente."
         },
         {
           "icon": "RiFileCopyLine",

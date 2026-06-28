@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "Lorem Ipsum-generator — voorbeeldtekst, alinea's, zinnen en willekeurige woorden",
-    "description": "Gratis Lorem Ipsum-generator — 8 stijlen: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business en meer. 9 generatiemodi. Kopieer als tekst of HTML.",
+    "description": "Gratis Lorem Ipsum-generator — 8 stijlen: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business en meer. Genereer alinea's, zinnen of woorden en kopieer het resultaat.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-nl.webp",
     "path": "/tools/lorem-ipsum-generator"
   },
   "hero": {
     "title": "Lorem Ipsum-generator — voorbeeldtekst, alinea's, zinnen en willekeurige woorden",
-    "description": "8 tekststijlen: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal en Nederlandse opvulwoorden. 9 modi: alinea's, zinnen, woorden, lijsten, koppen, links, tabellen, citaten, definities.",
+    "description": "8 tekststijlen: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal en Nederlandse opvulwoorden. Genereer alinea's, zinnen of woorden.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-nl.webp"
   },
   "breadcrumbs": {
@@ -36,17 +36,11 @@
         "Dummy text generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis Lorem Ipsum-generator — 8 stijlen: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business en meer. 9 generatiemodi. Kopieer als tekst of HTML.",
+      "description": "Gratis Lorem Ipsum-generator met 8 stijlen tekst. Genereer alinea's, zinnen of woorden, kopieer naar klembord of download als .txt-bestand.",
       "featureList": [
         "Lorem Ipsum-alinea's genereren",
         "Individuele zinnen genereren",
         "Willekeurige woorden genereren",
-        "Genummerde en ongenummerde lijsten genereren",
-        "H1–H6-koppen genereren",
-        "Links met voorbeeld-URL's genereren",
-        "Tabellen met willekeurige gegevens genereren",
-        "Citaten genereren",
-        "Definitielijsten genereren",
         "Lorem Ipsum — Latijn uit De Finibus",
         "Hipster Ipsum — hipstervocabulaire",
         "Business Ipsum — bedrijfsjargon",
@@ -55,35 +49,27 @@
         "Cupcake Ipsum — banketbakkerij en snoep",
         "Pirate Ipsum — piratenvocabulaire",
         "Legal Ipsum — juridische terminologie",
-        "Uitvoerformaat: platte tekst of HTML",
-        "Alinealengte (kort, gemiddeld, lang)",
-        "Statistieken: woorden, tekens, zinnen, alinea's, leestijd",
         "Tekst naar klembord kopiëren",
-        "HTML-code naar klembord kopiëren",
         "Downloaden als .txt-bestand",
         "Lokale verwerking in de browser"
       ]
     },
     "howTo": {
       "name": "Hoe de Lorem Ipsum Generator te gebruiken",
-      "description": "Genereer Lorem Ipsum-vultext in enkele seconden. Kies modus, stijl en formaat, kopieer of download het resultaat.",
+      "description": "Genereer Lorem Ipsum-vultext in enkele seconden. Kies modus en stijl, kopieer of download het resultaat.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Kies een generatiemodus",
-          "text": "Selecteer een van de 9 modi: alinea's, zinnen, woorden, lijsten, koppen, links, tabel, citaten of definities. Stel het aantal in."
+          "text": "Selecteer alinea's, zinnen of woorden en stel het aantal in."
         },
         {
           "name": "Kies een tekststijl",
           "text": "Kies een van de 8 stijlen: Lorem Ipsum, Hipster, Business, Nederlandse opvulwoorden, Bacon, Cupcake, Pirate of Legal Ipsum."
         },
         {
-          "name": "Stel het uitvoerformaat in",
-          "text": "Kies platte tekst of HTML met tags. Pas de alinealengte aan naar behoefte."
-        },
-        {
           "name": "Kopieer of download het resultaat",
-          "text": "Klik op Genereren, kopieer vervolgens de tekst, de HTML-code of download een .txt-bestand."
+          "text": "Klik op Genereren, kopieer vervolgens de tekst of download een .txt-bestand."
         }
       ]
     }
@@ -96,7 +82,7 @@
     {
       "type": "sectionBasic",
       "title": "Wat is Lorem Ipsum en waarvoor wordt het gebruikt",
-      "html": "<p class=\"text-mid\">Lorem Ipsum is de standaard opvultekst die al meer dan 500 jaar wordt gebruikt in de drukkerij-, grafisch ontwerp- en webontwikkelingsindustrie. De tekst komt uit <em>De Finibus Bonorum et Malorum</em> (Over de grenzen van goed en kwaad) geschreven door Marcus Tullius Cicero in 45 v.Chr. De oorspronkelijke passage werd opzettelijk gewijzigd — woorden werden toegevoegd, verwijderd en herschikt — zodat de tekst geen betekenis heeft maar een natuurlijk ritme en letterverdeling behoudt die lijkt op echte taal.</p><p class=\"text-mid mt-3\">De Lorem Ipsum Generator stelt u in staat snel elke hoeveelheid vultext te maken voor mockups, UI-prototypes, grafische ontwerpen en typografische layouttests. De tool biedt 9 generatiemodi (alinea's, zinnen, woorden, lijsten, koppen, links, tabellen, citaten, definities), 8 tekststijlen en realtime statistieken.</p>",
+      "html": "<p class=\"text-mid\">Lorem Ipsum is de standaard opvultekst die al meer dan 500 jaar wordt gebruikt in de drukkerij-, grafisch ontwerp- en webontwikkelingsindustrie. De tekst komt uit <em>De Finibus Bonorum et Malorum</em> (Over de grenzen van goed en kwaad) geschreven door Marcus Tullius Cicero in 45 v.Chr. De oorspronkelijke passage werd opzettelijk gewijzigd — woorden werden toegevoegd, verwijderd en herschikt — zodat de tekst geen betekenis heeft maar een natuurlijk ritme en letterverdeling behoudt die lijkt op echte taal.</p><p class=\"text-mid mt-3\">De Lorem Ipsum Generator stelt u in staat snel elke hoeveelheid vultext te maken voor mockups, UI-prototypes, grafische ontwerpen en typografische layouttests. De tool genereert alinea's, zinnen of woorden in 8 tekststijlen.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-nl.webp",
       "imageAlt": "Lorem Ipsum Generator — Arteon"
     },
@@ -107,13 +93,13 @@
     {
       "type": "sectionSteps",
       "title": "Hoe de Lorem Ipsum Generator te gebruiken",
-      "description": "Genereer vultext in vier stappen:",
-      "grid": "four",
+      "description": "Genereer vultext in drie stappen:",
+      "grid": "three",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "1. Kies een modus",
-          "description": "Selecteer een van de 9 modi: alinea's, zinnen, woorden, lijsten, koppen, links, tabel, citaten of definities."
+          "title": "1. Kies een modus en aantal",
+          "description": "Selecteer alinea's, zinnen of woorden en stel het aantal in."
         },
         {
           "icon": "RiPaletteLine",
@@ -121,14 +107,9 @@
           "description": "8 stijlen: Lorem Ipsum, Hipster, Business, Nederlandse opvulwoorden, Bacon, Cupcake, Pirate en Legal — elk met een eigen woordenbank."
         },
         {
-          "icon": "RiSettings3Line",
-          "title": "3. Pas de opties aan",
-          "description": "Stel de alinealengte (kort, gemiddeld, lang) en het uitvoerformaat (platte tekst of HTML met tags) in."
-        },
-        {
           "icon": "RiFileCopyLine",
-          "title": "4. Kopieer het resultaat",
-          "description": "Klik op Genereren, kopieer de tekst, HTML of download een .txt-bestand. Statistieken tonen woord- en tekenaantallen."
+          "title": "3. Kopieer het resultaat",
+          "description": "Klik op Genereren, kopieer vervolgens de tekst of download een .txt-bestand."
         }
       ]
     },
@@ -147,14 +128,14 @@
     },
     {
       "type": "sectionSteps",
-      "title": "9 modi voor het genereren van inhoud",
-      "description": "De generator biedt 9 verschillende inhoudstypen — van klassieke alinea's tot tabellen en definities:",
+      "title": "3 modi voor het genereren van inhoud",
+      "description": "De generator biedt 3 typen inhoud:",
       "grid": "three",
       "items": [
         {
           "icon": "RiParagraph",
           "title": "Alinea's",
-          "description": "Klassieke tekstblokken met gecontroleerde lengte (kort, gemiddeld, lang). Ideaal voor websitemockups, CMS-sjablonen en UI-prototypes."
+          "description": "Klassieke tekstblokken. Ideaal voor websitemockups, CMS-sjablonen en UI-prototypes."
         },
         {
           "icon": "RiTextSnippet",
@@ -165,36 +146,6 @@
           "icon": "RiFontSize",
           "title": "Woorden",
           "description": "Willekeurige individuele woorden uit de geselecteerde woordenbank. Ideaal voor tags, labels, categorienamen en het testen van tekstlengte in UI-componenten."
-        },
-        {
-          "icon": "RiListUnordered",
-          "title": "Lijsten",
-          "description": "Genummerde lijsten (tekst) of &lt;ul&gt;&lt;li&gt; (HTML). Voor navigatiemenu's, functielijsten, productspecificaties en FAQ-items."
-        },
-        {
-          "icon": "RiHeading",
-          "title": "Koppen",
-          "description": "Willekeurige H1–H6-koppen in Markdown- of HTML-formaat. Voor het testen van typografische hiërarchie en inhoudsstructuur."
-        },
-        {
-          "icon": "RiLink",
-          "title": "Links",
-          "description": "Links met willekeurige tekst en voorbeeld-URL's. In Markdown- of &lt;a href&gt;-HTML-formaat. Voor het prototypen van navigatie en menu's."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Tabel",
-          "description": "Tabel met willekeurige kolomkoppen en gegevens in 3–5 kolommen. Markdown- of &lt;table&gt;-HTML-formaat. Voor prijsoverzichten en specificatiebladen."
-        },
-        {
-          "icon": "RiDoubleQuotesL",
-          "title": "Citaten",
-          "description": "Citaatblokken (blockquote) met 1–3 zinnen. Voor het testen van citaatstijlen, testimonials en gemarkeerde tekstsecties."
-        },
-        {
-          "icon": "RiBookOpenLine",
-          "title": "Definities",
-          "description": "Term + beschrijving-paren in &lt;dl&gt;&lt;dt&gt;&lt;dd&gt;-HTML of tekst. Voor woordenlijsten, FAQ-secties en documentatie."
         }
       ]
     },
@@ -350,23 +301,13 @@
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "9 generatiemodi",
-          "description": "Alinea's, zinnen, woorden, lijsten, koppen, links, tabellen, citaten en definities — volledige controle over aantal en formaat."
+          "title": "3 generatiemodi",
+          "description": "Alinea's, zinnen of woorden — volledige controle over het aantal."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 unieke tekststijlen",
           "description": "Lorem Ipsum, Hipster, Business, Nederlandse opvulwoorden, Bacon, Cupcake, Pirate en Legal. Elke stijl heeft meer dan 90 woorden."
-        },
-        {
-          "icon": "RiCodeSSlashLine",
-          "title": "Kant-en-klare HTML-code",
-          "description": "Genereer tekst met HTML-tags en kopieer de kant-en-klare code. Bespaart tijd bij het maken van websiteprototypes."
-        },
-        {
-          "icon": "RiBarChartLine",
-          "title": "Tekststatistieken",
-          "description": "Woorden, tekens, zinnen, alinea's, leestijd en grootte in bytes — direct zichtbaar na generatie."
         },
         {
           "icon": "RiUserLine",
@@ -425,19 +366,14 @@
           "answerSchemaText": "Thematische varianten — Hipster gebruikt lifestylevocabulaire, Business gebruikt bedrijfsjargon."
         },
         {
-          "question": "Hoe genereer ik Lorem Ipsum met HTML-tags?",
-          "answer": "Wijzig in de instellingen het formaat van Tekst naar HTML. De generator verpakt alinea's met &lt;p&gt; en lijsten met &lt;ul&gt;&lt;li&gt;. Klik op HTML kopiëren. De code kan direct in een HTML-editor of CMS worden geplakt.",
-          "answerSchemaText": "Wijzig het formaat naar HTML in de instellingen, genereer tekst en klik op HTML kopiëren."
-        },
-        {
           "question": "Is de generator gratis en veilig?",
           "answer": "Ja. Volledig gratis, zonder registratie en zonder limieten. Alles wordt lokaal in uw browser gegenereerd — niets wordt naar een server verzonden. Geen tracking, geen cookies, werkt offline na het laden.",
           "answerSchemaText": "Ja — gratis, zonder registratie, lokale browserverwerking, geen gegevensverzameling."
         },
         {
           "question": "Hoeveel woorden heeft een standaardalinea?",
-          "answer": "Hangt af van de instelling: kort (2–4 zinnen, ca. 20–50 woorden), gemiddeld (4–7 zinnen, ca. 40–90 woorden), lang (7–12 zinnen, ca. 70–150 woorden). De oorspronkelijke eerste alinea van Cicero heeft ongeveer 69 woorden.",
-          "answerSchemaText": "Kort 20–50 woorden, gemiddeld 40–90 woorden, lang 70–150 woorden."
+          "answer": "Een gegenereerde alinea bestaat doorgaans uit 4–7 zinnen, ongeveer 40–90 woorden. De oorspronkelijke eerste alinea van Cicero heeft ongeveer 69 woorden en begint met Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "answerSchemaText": "Een gegenereerde alinea telt doorgaans 4–7 zinnen, ongeveer 40–90 woorden."
         }
       ]
     },

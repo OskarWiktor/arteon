@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Crea favicon.ico para tu sitio web a partir de una imagen",
-    "description": "Genere favicon.ico y un conjunto completo de iconos PNG para su sitio web a partir de una sola imagen. Todo el procesamiento se realiza localmente en el navegador.",
+    "description": "Genere favicon.ico y un conjunto completo de iconos PNG para su sitio web a partir de una sola imagen, sin pasos de selección. Todo el procesamiento se realiza localmente en el navegador.",
     "backgroundImage": "/assets/tools/favicon-generator/generador-de-favicon-gratuito-es.webp"
   },
   "breadcrumbs": {
@@ -36,8 +36,7 @@
         "Generación de iconos PWA 192x192 y 512x512",
         "Soporte para imágenes PNG, JPG y SVG como fuente",
         "Configuración del color de fondo",
-        "Generación del archivo manifest.json para PWA",
-        "Descargar todos los archivos como ZIP",
+        "Descargar todos los archivos con un solo clic",
         "Descargar archivos individuales",
         "Conformidad con Lighthouse",
         "Procesamiento en el navegador (los archivos no se envían al servidor)",
@@ -53,16 +52,12 @@
           "text": "Arrastre un archivo sobre el área designada o seleccione un gráfico desde su dispositivo. Un logotipo simple o icono en formato PNG, JPG o SVG funciona mejor."
         },
         {
-          "name": "Elija los tamaños de icono",
-          "text": "Seleccione qué tamaños de icono necesita: favicon.ico (32x32), iconos PNG (16x16, 32x32, 180x180, 192x192, 512x512)."
-        },
-        {
-          "name": "Configure las opciones",
-          "text": "Establezca el color de fondo (o mantenga transparente), decida si generar un archivo manifest y si los archivos deben descargarse automáticamente."
+          "name": "Configure el fondo",
+          "text": "Establezca el color de fondo de los iconos o manténgalo transparente."
         },
         {
           "name": "Genere y descargue los archivos",
-          "text": "Después de la generación, los archivos pueden descargarse como archivo ZIP o cada icono individualmente."
+          "text": "La herramienta genera favicon.ico y el conjunto completo de iconos PNG (16x16, 32x32, 180x180, 192x192, 512x512). Puede descargar todos los archivos con un solo clic o cada icono individualmente."
         }
       ]
     }
@@ -75,7 +70,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Qué es un favicon y por qué debería tener uno?",
-      "html": "<p class=\"text-mid mb-4\">Un favicon es un pequeño icono que aparece en la pestaña del navegador junto al título de la página. También lo ve en los marcadores, el historial de navegación y en la pantalla de inicio del teléfono cuando alguien añade el sitio como acceso directo.</p><p class=\"text-mid mb-4\">Este pequeño gráfico cumple una función importante: ayuda a los usuarios a reconocer rápidamente un sitio entre muchas pestañas abiertas. Cuando alguien tiene una docena de pestañas abiertas en el navegador, el favicon suele ser el único elemento visible que identifica el sitio.</p><p class=\"text-mid\">El generador crea un conjunto completo de iconos: un archivo favicon.ico clásico para navegadores, iconos PNG en varios tamaños y un apple-touch-icon para dispositivos Apple. Si está construyendo una aplicación web (PWA), también puede generar iconos de 192x192 y 512x512 junto con un archivo manifest.</p>",
+      "html": "<p class=\"text-mid mb-4\">Un favicon es un pequeño icono que aparece en la pestaña del navegador junto al título de la página. También lo ve en los marcadores, el historial de navegación y en la pantalla de inicio del teléfono cuando alguien añade el sitio como acceso directo.</p><p class=\"text-mid mb-4\">Este pequeño gráfico cumple una función importante: ayuda a los usuarios a reconocer rápidamente un sitio entre muchas pestañas abiertas. Cuando alguien tiene una docena de pestañas abiertas en el navegador, el favicon suele ser el único elemento visible que identifica el sitio.</p><p class=\"text-mid\">El generador crea un conjunto completo de iconos: un archivo favicon.ico clásico para navegadores, iconos PNG en varios tamaños y un apple-touch-icon para dispositivos Apple. También genera iconos de 192x192 y 512x512 útiles para aplicaciones web (PWA).</p>",
       "imageSrc": "/assets/tools/favicon-generator/generador-de-favicon-gratuito-es.webp",
       "imageAlt": "Generador de favicon – Arteon"
     },
@@ -95,13 +90,13 @@
           "icon": "RiImageLine"
         },
         {
-          "title": "2. Elija los tamaños",
-          "description": "Seleccione los tamaños de icono que necesita. Para un sitio web normal: favicon.ico, 32×32 y 180×180. Para PWA, añada 192×192 y 512×512.",
+          "title": "2. Ajuste el fondo",
+          "description": "Elija el color de fondo del icono o manténgalo transparente.",
           "icon": "RiAspectRatioLine"
         },
         {
           "title": "3. Descargue los archivos",
-          "description": "Después de generar, descargue todos los archivos como ZIP o cada icono individualmente. Debajo de la herramienta encontrará instrucciones para añadir el favicon a su sitio.",
+          "description": "Después de generar, descargue todos los archivos con un solo clic o cada icono individualmente. Debajo de la herramienta encontrará instrucciones para añadir el favicon a su sitio.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -113,7 +108,7 @@
     {
       "type": "sectionInfo",
       "title": "¿Qué tamaños de icono genera la herramienta?",
-      "html": "<p class=\"text-mid mb-6\">Cada tamaño tiene su uso:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Formato clásico reconocido por todos los navegadores. Se muestra en la pestaña del navegador.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">PNG 16×16 y 32×32</p><p class=\"text-mid text-sm\">Tamaños estándar para navegadores modernos. Se muestran en pestañas y marcadores.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">PNG 180×180 (apple-touch-icon)</p><p class=\"text-mid text-sm\">Icono para dispositivos Apple (iPhone, iPad). Se muestra cuando alguien añade el sitio a su pantalla de inicio.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">PNG 192×192 y 512×512</p><p class=\"text-mid text-sm\">Iconos para aplicaciones web (PWA). Requeridos por el manifest y usados en tiendas de aplicaciones.</p></div></div><p class=\"text-light mt-6\">Si no está construyendo una PWA, solo necesita: favicon.ico, PNG 32×32 y PNG 180×180. Estos tres archivos cubren la mayoría de los casos de uso.</p>"
+      "html": "<p class=\"text-mid mb-6\">Cada tamaño tiene su uso:</p><div class=\"grid gap-4 md:grid-cols-2\"><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">favicon.ico (32×32)</p><p class=\"text-mid text-sm\">Formato clásico reconocido por todos los navegadores. Se muestra en la pestaña del navegador.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">PNG 16×16 y 32×32</p><p class=\"text-mid text-sm\">Tamaños estándar para navegadores modernos. Se muestran en pestañas y marcadores.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">PNG 180×180 (apple-touch-icon)</p><p class=\"text-mid text-sm\">Icono para dispositivos Apple (iPhone, iPad). Se muestra cuando alguien añade el sitio a su pantalla de inicio.</p></div><div class=\"rounded-md border border-neutral-200 p-4\"><p class=\"mb-2 font-semibold\">PNG 192×192 y 512×512</p><p class=\"text-mid text-sm\">Iconos para aplicaciones web (PWA), usados también en tiendas de aplicaciones.</p></div></div><p class=\"text-light mt-6\">Si no está construyendo una PWA, solo necesita: favicon.ico, PNG 32×32 y PNG 180×180. Estos tres archivos cubren la mayoría de los casos de uso.</p>"
     },
     {
       "type": "gap",
@@ -132,7 +127,7 @@
         {
           "icon": "RiDownloadLine",
           "title": "Conjunto completo en un solo lugar",
-          "description": "Favicon.ico, iconos PNG, apple-touch-icon, iconos PWA y manifest: todo desde una imagen, en una herramienta."
+          "description": "Favicon.ico, iconos PNG, apple-touch-icon e iconos PWA: todo desde una imagen, en una herramienta."
         },
         {
           "icon": "RiImageLine",
@@ -142,7 +137,7 @@
         {
           "icon": "RiSmartphoneLine",
           "title": "Listo para sitio web y PWA",
-          "description": "La herramienta genera un archivo manifest.json para aplicaciones web. Debajo encontrará instrucciones para integrar los iconos."
+          "description": "Los iconos generados de 192×192 y 512×512 puede usarlos directamente en una aplicación web (PWA). Debajo encontrará instrucciones para integrar los iconos."
         }
       ]
     },
@@ -162,19 +157,14 @@
           "description": "Arrastre un archivo sobre el área designada o seleccione un gráfico desde su dispositivo. Formatos admitidos: PNG, JPG, SVG. Un logotipo simple o icono de al menos 512×512 píxeles funciona mejor."
         },
         {
-          "icon": "RiLayoutGridLine",
-          "title": "2. Elija los tamaños de icono",
-          "description": "Seleccione qué tamaños de icono necesita. Puede seleccionar todos o solo algúnos. Para un sitio web normal: favicon.ico, 32×32 y 180×180."
-        },
-        {
           "icon": "RiSettings3Line",
-          "title": "3. Configure las opciones de generación",
-          "description": "Establezca opciones adicionales: fondo (transparente o color elegido), manifest (archivo de configuración PWA) y descarga automática."
+          "title": "2. Configure el fondo",
+          "description": "Elija el fondo del icono: transparente o un color concreto."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "4. Genere y descargue los archivos",
-          "description": "Después de iniciar la generación, la herramienta procesa la imagen localmente: nada se envía a un servidor. Descargue todos los archivos como archivo ZIP o los iconos individuales por separado."
+          "title": "3. Genere y descargue los archivos",
+          "description": "Después de iniciar la generación, la herramienta procesa la imagen localmente: nada se envía a un servidor. Descargue todos los archivos con un solo clic o los iconos individuales por separado."
         }
       ]
     },
@@ -184,9 +174,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "Opciones de generación: ¿qué hace cada una?",
-      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">Tamaños PNG</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800\">16×16</span><span class=\"inline-flex items-center rounded-lg bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800\">32×32</span><span class=\"inline-flex items-center rounded-lg bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-800\">180×180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><input type=\"checkbox\" checked disabled class=\"h-4 w-4! rounded border-neutral-300 p-0!\"><span class=\"text-mid text-sm!\">Fondo transparente (PNG/ICO)</span></div></div></div>",
-      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Fondo (transparente o color)</h3><p class=\"text-mid\">Por defecto, el generador preserva la transparencia. También puede elegir un color de fondo específico.</p></div><div><h3 class=\"h5 mb-2\">Generar manifest (site.webmanifest)</h3><p class=\"text-mid\">Un archivo JSON para aplicaciones web (PWA). Si no está construyendo una PWA, esta opción no es necesaria.</p></div></div>"
+      "title": "Opción de generación: ¿qué hace?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Fondo transparente (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Color de fondo:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Fondo (transparente o color)</h3><p class=\"text-mid\">Por defecto, el generador preserva la transparencia. También puede elegir un color de fondo específico.</p></div></div>"
     },
     {
       "type": "gap",
@@ -200,8 +190,8 @@
       "items": [
         {
           "icon": "RiFolderZipLine",
-          "title": "Descargar todo como ZIP",
-          "description": "El botón &quot;Descargar todo&quot; empaqueta todos los archivos generados en un solo archivo ZIP. Esta es la opción más cómoda cuando necesita el conjunto completo de iconos."
+          "title": "Descargar todo con un clic",
+          "description": "El botón &quot;Descargar&quot; guarda en el dispositivo todos los archivos generados a la vez. Esta es la opción más cómoda cuando necesita el conjunto completo de iconos."
         },
         {
           "icon": "RiFileDownloadLine",
@@ -315,12 +305,12 @@
         },
         {
           "question": "¿Puedo generar solo favicon.ico sin los demás iconos?",
-          "answer": "Sí. Antes de generar, puede seleccionar exactamente qué tamaños necesita, p. ej., solo favicon.ico o solo tamaños PNG seleccionados.",
-          "answerSchemaText": "Sí, puede seleccionar tamaños individuales antes de generar."
+          "answer": "La herramienta siempre genera el conjunto completo: favicon.ico e iconos PNG 16×16, 32×32, 180×180, 192×192 y 512×512. Después de generar, puede descargar solo los archivos que necesite: cada icono tiene su propio botón de descarga.",
+          "answerSchemaText": "El generador crea siempre el conjunto completo, pero puede descargar solo los archivos que necesite."
         },
         {
           "question": "¿Qué formatos de imagen admite el generador de favicon?",
-          "answer": "El generador acepta imágenes en formatos PNG, JPG y SVG. Como salida, genera un archivo favicon.ico e iconos PNG en los tamaños seleccionados, listos para subir a su sitio web.",
+          "answer": "El generador acepta imágenes en formatos PNG, JPG y SVG. Como salida, genera un archivo favicon.ico e iconos PNG en todos los tamaños estándar, listos para subir a su sitio web.",
           "answerSchemaText": "Entrada: PNG, JPG, SVG. Salida: favicon.ico e iconos PNG."
         },
         {
@@ -330,13 +320,8 @@
         },
         {
           "question": "¿Qué tamaños de icono son esenciales para un sitio web normal?",
-          "answer": "Para un sitio web típico, tres archivos son suficientes: favicon.ico (32×32), un icono PNG de 32×32 y apple-touch-icon de 180×180. Si el sitio debe funcionar como aplicación web (PWA), también necesita iconos de 192×192 y 512×512 más un archivo manifest.",
+          "answer": "Para un sitio web típico, tres archivos son suficientes: favicon.ico (32×32), un icono PNG de 32×32 y apple-touch-icon de 180×180. Si el sitio debe funcionar como aplicación web (PWA), también necesita los iconos de 192×192 y 512×512 que genera la herramienta.",
           "answerSchemaText": "favicon.ico, PNG 32×32 y apple-touch-icon 180×180. Para PWA añada 192×192 y 512×512."
-        },
-        {
-          "question": "¿Qué es un archivo site.webmanifest y cuándo se necesita?",
-          "answer": "Es un archivo de configuración para aplicaciones web (PWA) que contiene información sobre el icono, nombre y colores de la aplicación. Se requiere cuando el sitio debe funcionar como una app añadida a la pantalla de inicio del teléfono. Para sitios web normales no es necesario.",
-          "answerSchemaText": "Archivo de configuración PWA. Necesario para apps en pantalla de inicio, no para sitios web normales."
         },
         {
           "question": "¿El favicon se muestra igual en todos los navegadores?",

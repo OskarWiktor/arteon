@@ -41,8 +41,7 @@
         "Generering av PWA-ikoner 192x192 og 512x512",
         "Støtte for PNG-, JPG- og SVG-kildebilder",
         "Konfigurasjon av bakgrunnsfarge",
-        "Generering av manifest.json-fil for PWA",
-        "Nedlasting av alle filer som ZIP",
+        "Nedlasting av alle filer med ett klikk",
         "Nedlasting av individuelle filer",
         "Lighthouse-kompatibel",
         "Behandling i nettleseren (filer sendes ikke til server)",
@@ -56,19 +55,15 @@
       "steps": [
         {
           "name": "Last opp bilde",
-          "text": "Dra og slipp filen i det markerte området, eller velg den fra enheten din. Støttede formater er JPG, PNG, SVG og WebP."
+          "text": "Dra og slipp filen i det markerte området, eller velg den fra enheten din. Støttede formater er PNG, JPG og SVG."
         },
         {
-          "name": "Beskjær bildet",
-          "text": "Juster beskjæringsområdet for å velge den passende delen av bildet til favicon."
-        },
-        {
-          "name": "Sjekk forhåndsvisning",
-          "text": "Se hvordan favicon ser ut i nettleserfanen og i forskjellige størrelser."
+          "name": "Still inn bakgrunn",
+          "text": "Velg bakgrunnsfargen for ikonet, eller la den være gjennomsiktig."
         },
         {
           "name": "Last ned ikoner",
-          "text": "Last ned favicon.ico og det komplette settet med PNG-ikoner i en ZIP-fil."
+          "text": "Verktøyet genererer favicon.ico og det komplette settet med PNG-ikoner. Last ned alle filer med ett klikk eller hver ikon for seg."
         }
       ]
     }
@@ -107,7 +102,7 @@
         },
         {
           "title": "3. Last ned ikoner",
-          "description": "Last ned favicon.ico og det komplette settet med PNG-ikoner i en ZIP-fil. Alle ikoner er klare til bruk.",
+          "description": "Last ned favicon.ico og det komplette settet med PNG-ikoner med ett klikk, eller hver fil for seg. Alle ikoner er klare til bruk.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -168,19 +163,14 @@
           "description": "<div><p class=\"mb-2\">Dra en fil til det markerte feltet, eller velg et bilde fra datamaskinen.</p><p class=\"text-light\">Støttede formater: PNG, JPG, SVG. En enkel logo eller et ikon på minst 512×512 piksler fungerer best.</p></div>"
         },
         {
-          "icon": "RiLayoutGridLine",
-          "title": "2. Velg ikonstørrelser",
-          "description": "<div><p class=\"mb-2\">Kryss av for ikonstørrelsene du trenger.</p><p class=\"text-light\">Du kan velge alle eller bare noen. For en vanlig nettside holder det med: favicon.ico, 32×32 og 180×180.</p></div>"
-        },
-        {
           "icon": "RiSettings3Line",
-          "title": "3. Still inn genereringsalternativer",
-          "description": "<div><p class=\"mb-2\">Still inn tilleggsalternativer:</p><ul class=\"text-light list-disc pl-5\"><li><strong>Bakgrunn</strong> – gjennomsiktig eller valgt farge</li><li><strong>Manifest</strong> – konfigurasjonsfil for PWA</li><li><strong>Automatisk nedlasting</strong> – filer lastes ned umiddelbart etter generering</li></ul></div>"
+          "title": "2. Still inn bakgrunn",
+          "description": "<div><p class=\"mb-2\">Velg bakgrunnen for ikonet.</p><p class=\"text-light\"><strong>Bakgrunn</strong> – gjennomsiktig eller valgt farge.</p></div>"
         },
         {
           "icon": "RiDownloadLine",
-          "title": "4. Generer og last ned filer",
-          "description": "<div><p class=\"mb-2\">Etter generering behandler verktøyet bildet lokalt – ingenting sendes til en server.</p><p class=\"text-light\">Last ned alle filer som ZIP-arkiv, eller last ned enkeltikoner separat.</p></div>"
+          "title": "3. Generer og last ned filer",
+          "description": "<div><p class=\"mb-2\">Etter generering behandler verktøyet bildet lokalt – ingenting sendes til en server.</p><p class=\"text-light\">Last ned alle filer med ett klikk, eller last ned enkeltikoner separat.</p></div>"
         }
       ]
     },
@@ -190,9 +180,9 @@
     },
     {
       "type": "sectionDemo",
-      "title": "Genereringsalternativer – hva gjør hvert av dem?",
-      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box\"><p class=\"text-light mb-2! text-sm! font-medium tracking-wide uppercase\">PNG-størrelser</p><div class=\"flex flex-wrap gap-2\"><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">16x16</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-primary/10 text-primary\">32x32</span><span class=\"inline-flex items-center rounded-lg font-medium px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700\">180x180</span></div></div><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Gjennomsiktig bakgrunn (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Bakgrunnsfarge:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
-      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Bakgrunn (gjennomsiktig eller farge)</h3><p class=\"text-mid\">Som standard bevarer generatoren gjennomsiktighet. Du kan også velge en bestemt bakgrunnsfarge.</p></div><div><h3 class=\"h5 mb-2\">Generer manifest (site.webmanifest)</h3><p class=\"text-mid\">En JSON-konfigurasjonsfil for webapper (PWA). Hvis du ikke lager en PWA, er dette alternativet ikke nødvendig.</p></div></div>"
+      "title": "Genereringsalternativet – hva gjør det?",
+      "demoHtml": "<div class=\"tool-section space-y-4\"><div class=\"tool-info-box flex flex-wrap items-center gap-4\"><div class=\"flex items-center gap-2\"><span class=\"text-mid text-sm!\">Gjennomsiktig bakgrunn (PNG/ICO)</span></div><div class=\"flex items-center gap-2\"><span class=\"text-light text-sm\">Bakgrunnsfarge:</span><span class=\"inline-block h-6 w-6 rounded border border-neutral-200\" style=\"background-color: #ffffff\"></span></div></div></div>",
+      "html": "<div class=\"space-y-4\"><div><h3 class=\"h5 mb-2\">Bakgrunn (gjennomsiktig eller farge)</h3><p class=\"text-mid\">Som standard bevarer generatoren gjennomsiktighet. Du kan også velge en bestemt bakgrunnsfarge.</p></div></div>"
     },
     {
       "type": "gap",
@@ -206,8 +196,8 @@
       "items": [
         {
           "icon": "RiFolderZipLine",
-          "title": "Last ned alt som ZIP",
-          "description": "Knappen Last ned alt pakker alle genererte filer i ett ZIP-arkiv. Det er det mest praktiske alternativet når du trenger det komplette ikonsettet."
+          "title": "Last ned alt med ett klikk",
+          "description": "Knappen Last ned lagrer alle genererte filer samtidig. Det er det mest praktiske alternativet når du trenger det komplette ikonsettet."
         },
         {
           "icon": "RiFileDownloadLine",
@@ -326,7 +316,7 @@
         },
         {
           "question": "Hvordan legger man til favicon på nettsiden?",
-          "answer": "Plasser ikonfilene i nettsidens rotmappe og legg til de passende HTML-taggene i sidens &lt;head&gt;-seksjon. Den nedlastede ZIP-filen inneholder implementeringsinstruksjoner.",
+          "answer": "Plasser ikonfilene i nettsidens rotmappe og legg til de passende HTML-taggene i sidens &lt;head&gt;-seksjon. De nedlastede filene er klare til bruk direkte.",
           "answerSchemaText": "Plasser ikonfilene i rotmappen og legg til HTML-tagger i head-seksjonen."
         }
       ]
