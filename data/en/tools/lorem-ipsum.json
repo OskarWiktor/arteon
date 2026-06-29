@@ -2,14 +2,14 @@
   "toolKey": "loremIpsum",
   "locale": "en",
   "metadata": {
-    "title": "Lorem Ipsum Generator — dummy text, paragraphs, sentences & random words",
-    "description": "Free Lorem Ipsum generator — 8 styles: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business & more. Generate paragraphs, sentences or words and copy or download the result.",
+    "title": "Generate Lorem Ipsum - free placeholder text generator",
+    "description": "Generate any amount of Lorem Ipsum text or copy the classic, full paragraph without generating anything. Also check what Lorem Ipsum means and where this text comes from.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-en.webp",
     "path": "/tools/lorem-ipsum-generator"
   },
   "hero": {
-    "title": "Lorem Ipsum Generator — dummy text, paragraphs, sentences & random words",
-    "description": "8 text styles: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal and English filler. Generate paragraphs, sentences or words and copy or download the result in one click.",
+    "title": "Generate Lorem Ipsum text in 8 styles or copy the full, original passage",
+    "description": "Choose the number of paragraphs, sentences or words and click Generate - the placeholder text appears instantly. You can also copy the classic, most widely used paragraph, available below the tool.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-en.webp"
   },
   "breadcrumbs": {
@@ -24,39 +24,40 @@
   },
   "schemas": {
     "software": {
-      "name": "Lorem Ipsum Generator — dummy text, paragraphs, sentences & random words",
+      "name": "Lorem Ipsum Generator - free placeholder text with a classic paragraph and 8 styles",
       "alternateName": [
-        "Lorem Ipsum Generator",
+        "Sample text generator",
+        "Dummy text generator",
+        "Random paragraph generator",
+        "Placeholder text generator",
+        "Text filler",
+        "Blind text generator",
+        "Placeholder text generator",
+        "What does lorem ipsum mean",
+        "Lorem ipsum full text",
         "Bacon Ipsum generator",
         "Cupcake Ipsum generator",
         "Pirate Ipsum generator",
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
-        "Business Ipsum generator",
-        "Dummy text generator"
+        "Business Ipsum generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Free Lorem Ipsum generator with 8 text styles. Generate paragraphs, sentences or words, copy to clipboard or download as a .txt file.",
+      "description": "Free Lorem Ipsum generator with 8 text styles and a classic paragraph ready to copy. Generate paragraphs, sentences or words, check the meaning and history of the text, copy to clipboard or download as a .txt file.",
       "featureList": [
-        "Generate lorem ipsum paragraphs",
-        "Generate individual sentences",
-        "Generate random words",
-        "Lorem Ipsum — Latin from De Finibus",
-        "Hipster Ipsum — hipster culture vocabulary",
-        "Business Ipsum — corporate jargon",
-        "English filler — local language words",
-        "Bacon Ipsum — meat & grilling",
-        "Cupcake Ipsum — bakery & sweets",
-        "Pirate Ipsum — pirate vocabulary",
-        "Legal Ipsum — legal terminology",
-        "Copy text to clipboard",
-        "Download as .txt file",
-        "Local processing in the browser"
+        "Generate paragraphs, sentences or random words in any chosen amount",
+        "8 text styles: classic Latin, Hipster, Business, English filler, Bacon, Cupcake, Pirate and Legal Ipsum",
+        "A ready, classic Lorem Ipsum paragraph to copy without generating anything",
+        "A table with the etymology of the most common words in the Lorem Ipsum text",
+        "Guidance on how to insert Lorem Ipsum in Word and Adobe InDesign",
+        "Copy the generated text to clipboard with one click",
+        "Download the result as a .txt file",
+        "Fully local processing in the browser"
       ]
     },
     "howTo": {
-      "name": "How to use the Lorem Ipsum Generator",
-      "description": "Generate Lorem Ipsum dummy text in seconds. Choose mode and style, then copy or download the result.",
+      "name": "How to generate Lorem Ipsum text",
+      "description": "Generate Lorem Ipsum placeholder text in seconds. Choose a mode, a style and a count, then copy or download the result.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -81,14 +82,23 @@
     },
     {
       "type": "sectionBasic",
-      "title": "What is Lorem Ipsum and what is it used for",
-      "html": "<p class=\"text-mid\">Lorem Ipsum is the standard placeholder text used in the printing, graphic design and web development industries for over 500 years. The text originates from <em>De Finibus Bonorum et Malorum</em> (On the Ends of Good and Evil) written by Marcus Tullius Cicero in 45 BC. The original passage was deliberately altered — words were added, removed and rearranged — so the text has no meaning but retains a natural rhythm and letter distribution similar to real language.</p><p class=\"text-mid mt-3\">The Lorem Ipsum Generator lets you quickly create any amount of dummy text for mockups, UI prototypes, graphic designs and typographic layout testing. The tool generates paragraphs, sentences or words in 8 text styles.</p>",
+      "title": "Why use a Lorem Ipsum generator?",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum is the standard placeholder text used in graphic design and on websites. The text comes from <em>De Finibus Bonorum et Malorum</em> (On the Ends of Good and Evil), written by Marcus Tullius Cicero in 45 BC. The original passage was deliberately altered - words were added, removed and rearranged - so that the text has no meaning, but keeps a natural rhythm and letter distribution close to a real language.</p><p class=\"text-mid mb-4\">A generator is useful whenever a layout has to be presented or tested but the final copy is not ready yet - for example for website mockups, UI prototypes or graphic design projects. The tool creates paragraphs, sentences or words in 8 styles.</p><p class=\"text-mid\">Further down you will also find a classic, ready-to-copy Lorem Ipsum paragraph, a table with the meaning of the most common words, and guidance on inserting this text in popular programs.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-en.webp",
-      "imageAlt": "Lorem Ipsum Generator — Arteon"
+      "imageAlt": "Lorem Ipsum Generator - Arteon"
     },
     {
       "type": "gap",
       "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Copy the classic Lorem Ipsum text without generating anything",
+      "html": "<p class=\"text-mid mb-4\">This is the most widely copied placeholder paragraph on the internet - the same passage has shipped by default in Word, Adobe InDesign and countless design templates for decades:</p><blockquote class=\"rounded-md border border-neutral-200 bg-neutral-50 p-4 text-mid italic\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote><p class=\"text-mid mt-4\">Need more text than this one paragraph? Use the generator above - choose the number of paragraphs, sentences or words and copy exactly the amount you need, instead of repeating this same passage by hand.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionSteps",
@@ -104,7 +114,7 @@
         {
           "icon": "RiPaletteLine",
           "title": "2. Choose a style",
-          "description": "8 styles: Lorem Ipsum, Hipster, Business, English filler, Bacon, Cupcake, Pirate and Legal — each with its own word bank."
+          "description": "Pick one of 8 available placeholder text styles: classic Lorem Ipsum, Hipster, Business, English filler, Bacon, Cupcake, Pirate or Legal - each with its own word bank."
         },
         {
           "icon": "RiFileCopyLine",
@@ -119,8 +129,17 @@
     },
     {
       "type": "sectionInfo",
-      "title": "The history of Lorem Ipsum — from Cicero to modern design",
-      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum has over 2,000 years of history. The original passage comes from section 1.10.32 of <em>De Finibus Bonorum et Malorum</em> by Cicero, written in 45 BC. The work is a philosophical treatise on ethics — Cicero analysed hedonism and stoicism, arguing for a balanced approach to pleasure and pain.</p><p class=\"text-mid mb-4\">The use of this text as filler in printing dates to the 1500s, when an unknown printer used Cicero's passage to create a type specimen book. The text survived five centuries, passing through the eras of hand typesetting, Linotype and phototypesetting.</p><p class=\"text-mid mb-4\">The modern popularity of Lorem Ipsum began in the 1960s when Letraset placed the text on transfer-lettering sheets used in graphic studios. The definitive breakthrough came in 1985 when Aldus Corporation included Lorem Ipsum as the default placeholder text in PageMaker — one of the first DTP (Desktop Publishing) programs. From that moment on, Lorem Ipsum became the industry standard.</p><p class=\"text-mid\">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, identified the source of the text in the 1980s, discovering that the words lorem ipsum are a corrupted fragment of Latin from Cicero's work. His research confirmed that Lorem Ipsum is not a random collection of words but has genuine literary roots.</p>"
+      "title": "Where does Lorem Ipsum come from? History from Cicero to today",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum is over 2,000 years old. The original passage comes from section 1.10.32 of <em>De Finibus Bonorum et Malorum</em> by Cicero, written in 45 BC. The work is a philosophical treatise on ethics - Cicero analysed hedonism and stoicism, arguing for a balanced approach to pleasure and pain.</p><p class=\"text-mid mb-4\">Using this text as filler in printing dates to around the year 1500, when an unidentified printer used Cicero's passage to create a type specimen book. The text survived five centuries, passing through the eras of hand typesetting, Linotype and phototypesetting.</p><p class=\"text-mid mb-4\">The modern popularity of Lorem Ipsum began in the 1960s, when Letraset put the text on transfer-lettering sheets used in graphic studios. The decisive breakthrough came in 1985, when Aldus Corporation built Lorem Ipsum into PageMaker as its default placeholder text - one of the first desktop publishing programs. From that moment on, Lorem Ipsum became the industry standard.</p><p class=\"text-mid\">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, identified the source of the text in the 1980s, discovering that the words lorem ipsum are a corrupted fragment of Latin from Cicero's work. His research confirmed that Lorem Ipsum is not a random string of words but has genuine literary roots.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What do the words in Lorem Ipsum dolor sit amet mean?",
+      "html": "<p class=\"text-mid mb-4\">The Lorem Ipsum text is deliberately scrambled - it is not a grammatically correct Latin sentence, so it cannot be translated as a whole. The individual words, however, come from real Latin and have documented meanings or etymological roots:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Word</th><th class=\"py-2 font-semibold\">Meaning / origin</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Lorem</td><td class=\"text-primary-light0 py-2 text-sm\">Not a standalone word - it is the trailing fragment of &quot;dolorem&quot; (a form of &quot;dolor&quot;, pain).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Ipsum</td><td class=\"text-primary-light0 py-2 text-sm\">From &quot;ipse&quot; - itself, the very same.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Dolor</td><td class=\"text-primary-light0 py-2 text-sm\">Pain, suffering.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Sit</td><td class=\"text-primary-light0 py-2 text-sm\">Is, let it be (from &quot;esse&quot;, to be).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amet</td><td class=\"text-primary-light0 py-2 text-sm\">From &quot;amare&quot; - to love, to like.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Consectetur</td><td class=\"text-primary-light0 py-2 text-sm\">A distorted form related to &quot;consequi&quot; - to follow, to pursue.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Adipiscing</td><td class=\"text-primary-light0 py-2 text-sm\">From &quot;adipisci&quot; - to attain, to strive for.</td></tr><tr><td class=\"py-2 pr-4\">Elit</td><td class=\"text-primary-light0 py-2 text-sm\">The trailing fragment of &quot;velit&quot; (would want, a form of &quot;velle&quot;, to want).</td></tr></tbody></table></div><p class=\"text-mid mt-4\">That is where the popular, tongue-in-cheek &quot;translation&quot; of the opening words as &quot;pain itself&quot; (dolorem ipsum) comes from - but that is an interpretation of isolated fragments pulled from a longer, scrambled text, not a translation of the whole sentence, which makes no sense in Latin.</p>"
     },
     {
       "type": "gap",
@@ -128,7 +147,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "3 modes of content generation",
+      "title": "Choose whether you need paragraphs, sentences or words",
       "description": "The generator offers 3 content types:",
       "grid": "three",
       "items": [
@@ -140,7 +159,7 @@
         {
           "icon": "RiTextSnippet",
           "title": "Sentences",
-          "description": "Individual sentences of random length (5–15 words). Useful for testing form fields, product descriptions and short text blocks."
+          "description": "Individual sentences of random length, 5 to 15 words. Useful for testing form fields, product descriptions and short text blocks."
         },
         {
           "icon": "RiFontSize",
@@ -155,8 +174,40 @@
     },
     {
       "type": "sectionInfo",
-      "title": "When to use Lorem Ipsum and when to use real text",
-      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum works well wherever content is not yet ready but the layout needs to be presented or tested:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>UI prototypes and wireframes</strong> — designing page or app structure without waiting for final copy from the client.</li><li><strong>Graphic mockups</strong> — presenting a design with realistic-looking text instead of empty rectangles.</li><li><strong>Font and typography testing</strong> — evaluating readability, line height, kerning and heading hierarchy on a real text block.</li><li><strong>CMS templates and themes</strong> — demonstrating the appearance of a WordPress, Shopify or other CMS template with sample content.</li><li><strong>Print materials</strong> — flyers, brochures, business cards and catalogues in the design phase.</li></ul><p class=\"text-mid mb-4\"><strong>When NOT to use Lorem Ipsum:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Production websites</strong> — Google indexes placeholder text and may consider the page low quality. Publishing lorem ipsum harms SEO.</li><li><strong>Final SEO content</strong> — meta titles, descriptions and H1 headings must contain real keywords, not filler.</li><li><strong>Email marketing</strong> — sending messages with lorem ipsum is unprofessional and risks landing in spam.</li><li><strong>Usability testing with users</strong> — users focus on content. Placeholder text distorts UX research results.</li></ul>"
+      "title": "When to use Lorem Ipsum, and when to use real text?",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum works well wherever content is not yet ready but a layout needs to be presented or tested:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>UI prototypes and wireframes</strong> - designing page or app structure without waiting for final copy from the client.</li><li><strong>Graphic mockups</strong> - presenting a design with realistic-looking text instead of empty rectangles.</li><li><strong>Font and typography testing</strong> - evaluating readability, line height, kerning and heading hierarchy on a real block of text.</li><li><strong>CMS templates and themes</strong> - demonstrating how a WordPress, Shopify or other CMS template looks with sample content.</li><li><strong>Print materials</strong> - flyers, brochures, business cards and catalogues during the design phase.</li></ul><p class=\"text-mid mb-4\"><strong>When NOT to use Lorem Ipsum:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Live websites</strong> - Google indexes placeholder text and may treat the page as low quality. Publishing lorem ipsum harms SEO.</li><li><strong>Final SEO copy</strong> - meta titles, meta descriptions and H1 headings need real keywords, not filler.</li><li><strong>Email marketing</strong> - sending messages with lorem ipsum looks unprofessional and risks landing in spam.</li><li><strong>Usability testing with real users</strong> - users focus on the content. Placeholder text skews UX research results.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to insert Lorem Ipsum in popular programs?",
+      "description": "Some programs have their own built-in way of inserting placeholder text:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileWordLine",
+          "title": "Microsoft Word",
+          "description": "Type =lorem() in a document and press Enter - Word inserts the standard Lorem Ipsum paragraph. Typing =lorem(3,2) inserts 3 paragraphs of 2 sentences each."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Adobe InDesign",
+          "description": "From the Type menu, choose Fill with Placeholder Text to automatically fill a text frame with placeholder copy."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Websites, HTML and code",
+          "description": "The generator produces clean text with no HTML markup, so you can paste it straight into your code, a JSON test file or an editor like VS Code - there is nothing to strip out."
+        },
+        {
+          "icon": "RiPuzzleLine",
+          "title": "Figma, Google Docs and others",
+          "description": "These tools do not have a built-in Lorem Ipsum feature - they need a plugin or add-on, or text pasted in from elsewhere. Our generator works instantly in the browser, with nothing to install."
+        }
+      ]
     },
     {
       "type": "gap",
@@ -181,17 +232,17 @@
         {
           "icon": "RiEditLine",
           "title": "Copywriters",
-          "description": "Prototype text structure: how many paragraphs, sentence lengths, what lists and headings look like in the final layout."
+          "description": "Prototype text structure: how many paragraphs, what sentence lengths, how lists and headings will look in the final layout."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Printers & publishers",
-          "description": "Fill flyer, brochure and catalogue templates with dummy text for client approval before final copy arrives."
+          "description": "Fill flyer, brochure and catalogue templates with placeholder text for client approval before the final copy arrives."
         },
         {
           "icon": "RiGlobalLine",
           "title": "Website owners",
-          "description": "Test the look of a new CMS template or theme with sample content. Evaluate how much text is needed per page."
+          "description": "Test the look of a new CMS template or theme with sample content. Work out how much text each page actually needs."
         },
         {
           "icon": "RiGraduationCapLine",
@@ -206,13 +257,13 @@
     },
     {
       "type": "sectionTable",
-      "title": "Text style comparison",
+      "title": "How do the available placeholder text styles in our generator differ?",
       "labelHeader": "Feature",
       "cols": [
         "Lorem Ipsum",
         "Hipster",
         "Business",
-        "Local",
+        "English",
         "Bacon",
         "Cupcake",
         "Pirate",
@@ -225,7 +276,7 @@
             "Latin",
             "English",
             "English",
-            "Local",
+            "English",
             "English",
             "English",
             "English",
@@ -278,8 +329,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "8 placeholder text styles — all available in the generator",
-      "html": "<p class=\"text-mid mb-4\">Our generator offers 8 unique placeholder text styles — from classical Latin to legal jargon. Each style has its own bank of 90+ words and generates text with a natural rhythm:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — the classic Latin placeholder text from Cicero's work. The industry standard for over 500 years.</li><li><strong>Hipster Ipsum</strong> — hipster culture vocabulary: craft, avocado, vintage, mindfulness. Ideal for lifestyle projects.</li><li><strong>Business Ipsum</strong> — corporate jargon: synergy, leverage, stakeholder, KPI. For presentation and corporate website mockups.</li><li><strong>English filler</strong> — random words in the local language from various fields. Shows the client what text will look like in the design.</li><li><strong>Bacon Ipsum</strong> — meat and grilling vocabulary: steak, brisket, barbecue. Popular among developers.</li><li><strong>Cupcake Ipsum</strong> — bakery vocabulary: muffin, chocolate, caramel, frosting. For food industry projects.</li><li><strong>Pirate Ipsum</strong> — pirate-themed text: ahoy, treasure, galleon, rum. For entertainment and game projects.</li><li><strong>Legal Ipsum</strong> — legal terminology: jurisdiction, plaintiff, statute, liability. For law firm website mockups.</li></ul><p class=\"text-mid mb-4\">Fun variants (Bacon, Cupcake, Pirate) work well in internal presentations and projects where humour improves team communication. For professional client presentations, use classic Lorem Ipsum or Legal Ipsum — they are neutral and don't distract from the design.</p><p class=\"text-mid\">English filler is a unique option in our generator — local language words preserve the natural letter proportions and word lengths characteristic of the target language. Ideal for showing clients a realistic preview of text in their project.</p>"
+      "title": "What placeholder text styles will you find in the generator?",
+      "html": "<p class=\"text-mid mb-4\">Our generator offers 8 unique placeholder text styles - from classical Latin to legal jargon. Each style has its own bank of 90+ words and generates text with a natural rhythm:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> - the classic Latin placeholder text from Cicero's work. The industry standard for over 500 years.</li><li><strong>Hipster Ipsum</strong> - hipster culture vocabulary: craft, avocado, vintage, mindfulness. Ideal for lifestyle projects.</li><li><strong>Business Ipsum</strong> - corporate jargon: synergy, leverage, stakeholder, KPI. For presentation decks and corporate website mockups.</li><li><strong>English filler</strong> - random English words from various fields. Shows the client what the text will actually look like in the project.</li><li><strong>Bacon Ipsum</strong> - meat and grilling vocabulary: steak, brisket, barbecue. Popular among developers.</li><li><strong>Cupcake Ipsum</strong> - bakery vocabulary: muffin, chocolate, caramel, frosting. For food and hospitality projects.</li><li><strong>Pirate Ipsum</strong> - pirate-themed text: ahoy, treasure, galleon, rum. For entertainment and game projects.</li><li><strong>Legal Ipsum</strong> - legal terminology: jurisdiction, plaintiff, statute, liability. For law firm website mockups.</li></ul><p class=\"text-mid mb-4\">The fun variants (Bacon, Cupcake, Pirate) work well in internal presentations and projects where humour improves team communication. For professional client presentations, use classic Lorem Ipsum or Legal Ipsum instead - they stay neutral and don't distract from the design.</p><p class=\"text-mid\">English filler is a distinctive option in our generator - it draws on its own word bank to keep the letter proportions and word lengths natural for English. Pick this style when you want to show a client a realistic preview of the text in the project.</p>"
     },
     {
       "type": "gap",
@@ -287,8 +338,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Lorem Ipsum and SEO — does placeholder text harm rankings",
-      "html": "<p class=\"text-mid mb-4\">Yes — publishing Lorem Ipsum on a production website can negatively affect search rankings. Google analyses the content of every indexed page and recognises placeholder text. Here is why it matters:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Thin content</strong> — a page with placeholder text offers no value to users. Google classifies such pages as &quot;thin content&quot; and lowers their position.</li><li><strong>Junk indexing</strong> — Google's bots index Lorem Ipsum as page content. It may appear in search results, affecting brand image.</li><li><strong>Crawl budget waste</strong> — Google allocates a limited crawl budget for each site. Pages with lorem ipsum consume that budget without benefit.</li><li><strong>Core Web Vitals</strong> — placeholder text does not directly affect performance metrics, but low-quality pages may be ranked lower overall.</li></ul><p class=\"text-mid mb-4\">How to avoid the problem: before publishing, search your entire site for the phrase &quot;lorem ipsum&quot; or &quot;dolor sit amet&quot;. In Google Search Console, check that no indexed page contains placeholder text. Use the command <code>site:yourdomain.com &quot;lorem ipsum&quot;</code> in Google search.</p><p class=\"text-mid\">The Lorem Ipsum Generator is a tool for the design phase. Placeholder text should be replaced with real content before publishing the website.</p>"
+      "title": "Does publishing Lorem Ipsum harm SEO?",
+      "html": "<p class=\"text-mid mb-4\">Yes - publishing Lorem Ipsum on a live website can negatively affect search rankings. Google analyses the content of every indexed page and recognises placeholder text. Here is why that is a problem:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Thin content</strong> - a page with placeholder text offers no value to visitors. Google classifies such pages as &quot;thin content&quot; and ranks them lower.</li><li><strong>Junk indexing</strong> - Google's crawlers index Lorem Ipsum as page content. It can surface in search results, which affects brand perception.</li><li><strong>Wasted crawl budget</strong> - Google allocates a limited crawl budget to every site. Pages full of lorem ipsum consume that budget with no benefit.</li></ul><p class=\"text-mid mb-4\">How to avoid the problem: before publishing, search your entire site for the phrase &quot;lorem ipsum&quot; or &quot;dolor sit amet&quot;. In Google Search Console, check that no indexed page still contains placeholder text. Use the command <code>site:yourdomain.com &quot;lorem ipsum&quot;</code> in Google search.</p><p class=\"text-mid\">The Lorem Ipsum Generator is a tool for the design phase. Placeholder text should always be replaced with real content before a page goes live.</p>"
     },
     {
       "type": "gap",
@@ -296,13 +347,13 @@
     },
     {
       "type": "sectionSteps",
-      "title": "What makes this Lorem Ipsum Generator special?",
+      "title": "What makes this Lorem Ipsum Generator different?",
       "grid": "two",
       "items": [
         {
           "icon": "RiListCheck2",
           "title": "3 content generation modes",
-          "description": "Paragraphs, sentences and words — full control over the count."
+          "description": "Paragraphs, sentences and words - full control over the count."
         },
         {
           "icon": "RiPaletteLine",
@@ -312,12 +363,52 @@
         {
           "icon": "RiUserLine",
           "title": "Local processing",
-          "description": "Text is generated in your browser. Nothing is sent to a server. The tool works offline after the page loads."
+          "description": "Text is generated in your browser. Nothing is sent to a server. The tool works offline once the page has loaded."
         },
         {
           "icon": "RiLockLine",
-          "title": "No registration or limits",
+          "title": "No sign-up or limits",
           "description": "The tool is completely free. No registration, login or personal data required. No ads in the generated text."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "How much placeholder text do you need for a specific project?",
+      "labelHeader": "Project type",
+      "cols": ["Recommended amount", "Notes"],
+      "rows": [
+        {
+          "label": "H1 heading",
+          "values": ["5-10 words", "A short, tight page or section title."]
+        },
+        {
+          "label": "Meta description",
+          "values": ["20-25 words", "Aim for 150-160 characters."]
+        },
+        {
+          "label": "Product card",
+          "values": ["2-3 paragraphs", "Short description plus specs."]
+        },
+        {
+          "label": "Service page",
+          "values": ["4-6 paragraphs", "Service description, benefits, CTA."]
+        },
+        {
+          "label": "Blog article",
+          "values": ["8-15 paragraphs", "1,500-2,500 words for SEO."]
+        },
+        {
+          "label": "Landing page",
+          "values": ["5-8 paragraphs", "Hero, benefits, social proof, CTA."]
+        },
+        {
+          "label": "Flyer / brochure",
+          "values": ["3-5 paragraphs", "Short text blocks with headings."]
         }
       ]
     },
@@ -332,48 +423,78 @@
       "items": [
         {
           "question": "What is Lorem Ipsum?",
-          "answer": "Lorem Ipsum is the standard placeholder text used in the printing, graphic design and web development industries. It is used to fill layouts with realistic-looking text when the final content is not yet ready. The text has a natural rhythm and letter distribution similar to real language, making the design look credible.",
+          "answer": "Lorem Ipsum is the standard placeholder text used in the printing, graphic design and web development industries. It fills a layout with realistic-looking text when the final content is not ready yet. The text has a natural rhythm and letter distribution similar to real language, which makes a design look credible.",
           "answerSchemaText": "Lorem Ipsum is the standard placeholder text used in the printing, graphic design and web development industries."
         },
         {
-          "question": "Where does Lorem Ipsum come from?",
-          "answer": "Lorem Ipsum originates from De Finibus Bonorum et Malorum (On the Ends of Good and Evil) written by Marcus Tullius Cicero in 45 BC. It is a philosophical treatise on ethics. The original passage from section 1.10.32 was deliberately altered by an unknown printer in the 16th century — words were added, removed and rearranged so the text had no meaning but retained the natural look of Latin.",
-          "answerSchemaText": "Lorem Ipsum originates from De Finibus Bonorum et Malorum by Cicero, written in 45 BC."
+          "question": "How do you make Lorem Ipsum?",
+          "answer": "The easiest way is to use the generator above: choose paragraphs, sentences or words, set the count, pick a text style and click Generate. The text appears instantly and you can copy it to clipboard or download it as a .txt file. Some programs (such as Microsoft Word) also have their own built-in shortcut for inserting Lorem Ipsum.",
+          "answerSchemaText": "Choose a mode and count in the generator above, click Generate, then copy the result."
+        },
+        {
+          "question": "What is the full text of classic Lorem Ipsum?",
+          "answer": "The most widely used version is one paragraph starting with Lorem ipsum dolor sit amet, consectetur adipiscing elit - you'll find it ready to copy in the section above. There is no single, official longer version - most generators (including this one) create additional text from the same word bank, so for an exact length it's better to ask the generator than to look for a ready-made, longer text.",
+          "answerSchemaText": "The most popular version is one paragraph starting with Lorem ipsum dolor sit amet - available in the section above."
+        },
+        {
+          "question": "Where does the Lorem Ipsum text come from?",
+          "answer": "Lorem Ipsum comes from De Finibus Bonorum et Malorum (On the Ends of Good and Evil), written by Marcus Tullius Cicero in 45 BC. It is a philosophical treatise on ethics. The original passage from section 1.10.32 was deliberately altered by an unidentified printer in the 16th century - words were added, removed and rearranged so that the text had no meaning but kept the natural look of Latin.",
+          "answerSchemaText": "Lorem Ipsum comes from De Finibus Bonorum et Malorum by Cicero, written in 45 BC."
         },
         {
           "question": "Is Lorem Ipsum real Latin?",
-          "answer": "Partially. Lorem Ipsum contains real Latin words from Cicero's work, but the text was deliberately corrupted. Words are mixed up, some lack endings and others were added. Therefore the text makes no sense in Latin — but individual words like dolor (pain), amet (loves) and ipsum (itself) are genuine Latin terms.",
-          "answerSchemaText": "Partially — it contains real Latin words from Cicero but the text was deliberately corrupted and has no meaning."
+          "answer": "Partly. Lorem Ipsum contains real Latin words from Cicero's work, but the text was deliberately scrambled. Words are mixed up, some are missing endings, and others were added. That's why the text makes no sense in Latin - but individual words such as dolor (pain), amet (loves) or ipsum (itself) are genuine Latin words.",
+          "answerSchemaText": "Partly - it contains real Latin words from Cicero, but the text was deliberately scrambled and makes no sense."
         },
         {
-          "question": "How many paragraphs of Lorem Ipsum do I need for a mockup?",
-          "answer": "It depends on the page type. For a landing page, 5–8 paragraphs usually suffice (hero, benefits, social proof, CTA). A service page needs 4–6 paragraphs. A blog article requires 8–15 paragraphs (1,500–2,500 words). A product card needs 2–3 paragraphs. The generator lets you create exactly the amount you need.",
-          "answerSchemaText": "Depends on page type: landing page 5–8, service page 4–6, blog article 8–15, product card 2–3 paragraphs."
+          "question": "Does Lorem Ipsum mean pain?",
+          "answer": "The opening words point toward pain, but that is not an exact translation. Lorem is the trailing fragment of dolorem (a form of dolor, pain), and ipsum means itself/the same. That's where the playful shorthand dolorem ipsum, pain itself, comes from. This is an interpretation of isolated fragments pulled from a longer, scrambled text, though, not a translation of the whole sentence - which makes no sense in Latin.",
+          "answerSchemaText": "Partly - the opening words relate to dolor (pain) and ipsum (itself), but this is not a full translation."
+        },
+        {
+          "question": "How do you pronounce Lorem Ipsum?",
+          "answer": "The text is read the way it's written, breaking words into syllables in classical Latin style: LO-rem IP-sum DO-lor SIT a-MET, con-sec-TE-tur a-di-PIS-cing E-lit. There is no single official pronunciation, since this is not a living language - most people simply read it phonetically, following the standard rules for reading Latin.",
+          "answerSchemaText": "Read phonetically, breaking words into syllables according to classical Latin reading rules: LO-rem IP-sum DO-lor SIT a-MET."
+        },
+        {
+          "question": "Can I generate Lorem Ipsum as HTML or a PDF file?",
+          "answer": "The generator produces plain text, with no HTML markup and no PDF export. That is actually convenient when pasting into website code, a JSON test file or an editor, since there is no formatting to strip out. If you need a PDF file, paste the copied text into a text editor (such as Word or Google Docs) and save the document as a PDF.",
+          "answerSchemaText": "No - the generator produces plain text with no HTML markup. For a PDF, paste the text into an editor and save as PDF."
+        },
+        {
+          "question": "How many paragraphs of Lorem Ipsum do I need for a page mockup?",
+          "answer": "It depends on the page type. For a landing page, 5-8 paragraphs are usually enough (hero, benefits, social proof, CTA). A service page needs 4-6 paragraphs. A blog article runs 8-15 paragraphs (1,500-2,500 words). A product card needs only 2-3 paragraphs. The generator lets you create exactly the amount you need.",
+          "answerSchemaText": "Depends on the page type: landing page 5-8 paragraphs, service page 4-6, blog article 8-15, product card 2-3."
         },
         {
           "question": "Can I use Lorem Ipsum on a live website?",
-          "answer": "No. Lorem Ipsum is intended for the design phase only. Publishing placeholder text on a production website harms SEO (Google classifies it as thin content), negatively affects brand image and may be indexed in search results. Always replace placeholder text with real content before publishing.",
-          "answerSchemaText": "No — placeholder text harms SEO and brand image. Always replace it with real content before publishing."
+          "answer": "No. Lorem Ipsum is intended for the design phase only. Publishing placeholder text on a live website harms SEO (Google classifies it as thin content), negatively affects brand perception, and may get indexed in search results. Always replace placeholder text with real content before publishing.",
+          "answerSchemaText": "No - placeholder text harms SEO and brand perception. Always replace it with real content before publishing."
         },
         {
-          "question": "Does Lorem Ipsum harm SEO?",
-          "answer": "Yes, if published on a production website. Google recognises placeholder text and may consider the page low quality (thin content). To check whether your site contains lorem ipsum, use the command site:yourdomain.com lorem ipsum in Google or search your entire site for the phrase dolor sit amet.",
-          "answerSchemaText": "Yes, if published on a live site — Google recognises placeholder text and classifies it as thin content."
+          "question": "What is the difference between Lorem Ipsum and dummy text?",
+          "answer": "They are synonyms. Lorem Ipsum, dummy text, placeholder text, blind text, filler text and sample text - all of these terms describe text used temporarily in place of the final content. Lorem Ipsum is a specific text that traces back to Cicero, while dummy text is a broader term covering any placeholder text.",
+          "answerSchemaText": "They are synonyms - Lorem Ipsum is a specific text from Cicero, while dummy text is a general term for placeholder text."
         },
         {
           "question": "What are Hipster Ipsum and Business Ipsum?",
-          "answer": "These are thematic variants of placeholder text. Hipster Ipsum uses hipster culture vocabulary (craft, avocado, vintage, mindfulness). Business Ipsum is corporate jargon (synergy, leverage, stakeholder, KPI). Both generate text with a natural rhythm but with industry-specific vocabulary. They work well in internal presentations where humour improves communication.",
-          "answerSchemaText": "Thematic Lorem Ipsum variants — Hipster uses lifestyle vocabulary, Business uses corporate jargon."
+          "answer": "These are themed variants of placeholder text. Hipster Ipsum uses hipster culture vocabulary (craft, avocado, vintage, mindfulness). Business Ipsum is corporate jargon (synergy, leverage, stakeholder, KPI). Both generate text with a natural rhythm, but with industry-specific vocabulary. They work well in internal presentations where a bit of humour helps team communication.",
+          "answerSchemaText": "Themed Lorem Ipsum variants - Hipster uses lifestyle vocabulary, Business uses corporate jargon."
         },
         {
-          "question": "Is the generator free and safe?",
-          "answer": "Yes. The Lorem Ipsum Generator is completely free, with no registration and no limits. All text is generated locally in your browser — nothing is sent to a server. The tool does not collect personal data, does not use tracking cookies and works offline after the page loads.",
-          "answerSchemaText": "Yes — free, no registration, local browser processing, no data collection."
+          "question": "Is there an English-language version of Lorem Ipsum?",
+          "answer": "Lorem Ipsum is a Latin phrase, so there is no official English version of it - translating a deliberately scrambled text wouldn't make sense in any language. Our generator does have a dedicated English filler style, though, which uses random English words instead of Latin ones, keeping proportions of word and letter length that feel natural in English. It's the closest equivalent to Lorem Ipsum for an English-language project.",
+          "answerSchemaText": "Lorem Ipsum is in Latin and has no official English version - use the English filler style in the generator instead."
+        },
+        {
+          "question": "Is the generator free and safe to use?",
+          "answer": "Yes. The Lorem Ipsum Generator is completely free, with no sign-up and no limits. All text is generated locally in your browser - nothing is sent to a server. The tool does not collect personal data, does not use tracking cookies, and keeps working offline once the page has loaded.",
+          "answerSchemaText": "Yes - free, no sign-up, local browser processing, no data collection."
         },
         {
           "question": "How many words does a standard Lorem Ipsum paragraph have?",
-          "answer": "The generated paragraph usually has 4–7 sentences, around 40–90 words. The original first paragraph of Lorem Ipsum from Cicero has about 69 words and starts with Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "answerSchemaText": "The generated paragraph usually has 4–7 sentences, around 40–90 words."
+          "answer": "A generated paragraph usually runs 4-7 sentences, around 40-90 words. The classic Lorem Ipsum paragraph available to copy in the section above has about 69 words and starts with Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "answerSchemaText": "A generated paragraph usually runs 4-7 sentences, around 40-90 words."
         }
       ]
     },
@@ -384,9 +505,9 @@
     {
       "type": "contactForm",
       "title": "Help us improve our tools",
-      "description": "Have an idea for a new feature, found a bug or want to suggest another tool? Write to us — we respond within 24 hours.",
+      "description": "Have an idea for a new feature, found a bug or want to suggest another tool? Write to us - we respond within 24 hours.",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-en.webp",
-      "imageAlt": "Lorem Ipsum Generator — Arteon",
+      "imageAlt": "Lorem Ipsum Generator - Arteon",
       "defaultSubject": "Feedback: Lorem Ipsum Generator"
     },
     {

@@ -2,14 +2,14 @@
   "toolKey": "loremIpsum",
   "locale": "de",
   "metadata": {
-    "title": "Lorem-Ipsum-Generator — Blindtext, Absätze, Sätze und zufällige Wörter",
-    "description": "Kostenloser Lorem-Ipsum-Generator — 8 Stile: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business und mehr. Generieren Sie Absätze, Sätze oder Wörter und kopieren Sie das Ergebnis.",
+    "title": "Lorem Ipsum generieren - kostenloser Generator für Blindtext",
+    "description": "Erstellen Sie beliebig viel Lorem-Ipsum-Text oder kopieren Sie den klassischen, vollständigen Absatz, ohne etwas zu generieren. Erfahren Sie außerdem, was Lorem Ipsum bedeutet und woher der Text stammt.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-de.webp",
     "path": "/werkzeuge/lorem-ipsum-generator"
   },
   "hero": {
-    "title": "Lorem-Ipsum-Generator — Blindtext, Absätze, Sätze und zufällige Wörter",
-    "description": "8 Textstile: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal und Deutsche Füllwörter. Generieren Sie Absätze, Sätze oder einzelne Wörter.",
+    "title": "Lorem-Ipsum-Text in 8 Stilen generieren oder den klassischen Absatz kopieren",
+    "description": "Wählen Sie Absätze, Sätze oder Wörter, legen Sie die Anzahl fest und klicken Sie auf Generieren - der Blindtext erscheint sofort. Sie können auch den klassischen, am häufigsten verwendeten Absatz weiter unten kopieren, ohne etwas zu generieren. Alles läuft lokal in Ihrem Browser, ohne Anmeldung und ohne Limit.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-de.webp"
   },
   "breadcrumbs": {
@@ -24,39 +24,37 @@
   },
   "schemas": {
     "software": {
-      "name": "Lorem-Ipsum-Generator — Blindtext, Absätze, Sätze und zufällige Wörter",
+      "name": "Lorem-Ipsum-Generator - kostenloser Blindtext mit klassischem Absatz und 8 Stilen",
       "alternateName": [
         "Lorem Ipsum Generator",
-        "Bacon Ipsum generator",
-        "Cupcake Ipsum generator",
-        "Pirate Ipsum generator",
-        "Legal Ipsum generator",
-        "Hipster Ipsum generator",
-        "Business Ipsum generator",
-        "Dummy text generator online"
+        "Blindtextgenerator",
+        "Platzhaltertext generieren",
+        "Generator für zufällige Absätze",
+        "Was bedeutet Lorem Ipsum",
+        "Lorem Ipsum vollständiger Text",
+        "Bacon Ipsum Generator",
+        "Cupcake Ipsum Generator",
+        "Pirate Ipsum Generator",
+        "Legal Ipsum Generator",
+        "Hipster Ipsum Generator",
+        "Business Ipsum Generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Kostenloser Lorem-Ipsum-Generator mit 8 Textstilen. Generieren Sie Absätze, Sätze oder Wörter, kopieren Sie das Ergebnis oder laden Sie es als .txt-Datei herunter.",
+      "description": "Kostenloser Lorem-Ipsum-Generator mit 8 Textstilen und einem klassischen Absatz, der ohne Generieren direkt kopiert werden kann. Erstellen Sie Absätze, Sätze oder Wörter, lesen Sie die Bedeutung und Geschichte des Textes nach, kopieren Sie das Ergebnis in die Zwischenablage oder laden Sie es als .txt-Datei herunter.",
       "featureList": [
-        "Lorem-Ipsum-Absätze generieren",
-        "Einzelne Sätze generieren",
-        "Zufällige Wörter generieren",
-        "Lorem Ipsum — Latein aus De Finibus",
-        "Hipster Ipsum — Hipster-Kultur-Vokabular",
-        "Business Ipsum — Unternehmenssprache",
-        "Deutsche Füllwörter — Wörter in Landessprache",
-        "Bacon Ipsum — Fleisch & Grillen",
-        "Cupcake Ipsum — Bäckerei & Süßes",
-        "Pirate Ipsum — Piratenvokabular",
-        "Legal Ipsum — Juristische Fachbegriffe",
-        "Text in Zwischenablage kopieren",
-        "Als .txt-Datei herunterladen",
-        "Lokale Verarbeitung im Browser"
+        "Absätze, Sätze oder zufällige Wörter in beliebiger Anzahl generieren",
+        "8 Textstile: klassisches Latein, Hipster, Business, Deutsche Füllwörter, Bacon, Cupcake, Pirate und Legal Ipsum",
+        "Fertiger, klassischer Lorem-Ipsum-Absatz zum Kopieren ohne zu generieren",
+        "Tabelle mit der Wortherkunft der häufigsten Begriffe aus dem Lorem-Ipsum-Text",
+        "Hinweise zum Einfügen von Lorem Ipsum in Word und Adobe InDesign",
+        "Generierten Text mit einem Klick in die Zwischenablage kopieren",
+        "Ergebnis als .txt-Datei herunterladen",
+        "Vollständig lokale Verarbeitung im Browser"
       ]
     },
     "howTo": {
-      "name": "So verwenden Sie den Lorem-Ipsum-Generator",
-      "description": "Generieren Sie Lorem-Ipsum-Blindtext in Sekunden. Wählen Sie Modus und Stil, dann kopieren oder laden Sie das Ergebnis herunter.",
+      "name": "So generieren Sie Lorem-Ipsum-Text",
+      "description": "Erstellen Sie Lorem-Ipsum-Blindtext in wenigen Sekunden. Wählen Sie Modus, Stil und Anzahl, kopieren oder laden Sie das Ergebnis anschließend herunter.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -69,7 +67,7 @@
         },
         {
           "name": "Ergebnis kopieren oder herunterladen",
-          "text": "Klicken Sie auf Generieren, dann kopieren Sie den Text oder laden Sie eine .txt-Datei herunter."
+          "text": "Klicken Sie auf Generieren und kopieren Sie den Text in die Zwischenablage oder laden Sie eine .txt-Datei herunter."
         }
       ]
     }
@@ -81,8 +79,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Was ist Lorem Ipsum und wofür wird es verwendet",
-      "html": "<p class=\"text-mid\">Lorem Ipsum ist der Standard-Platzhaltertext, der seit über 500 Jahren in der Druck-, Grafikdesign- und Webentwicklungsbranche verwendet wird. Der Text stammt aus <em>De Finibus Bonorum et Malorum</em> (Über die Grenzen von Gut und Böse) von Marcus Tullius Cicero aus dem Jahr 45 v. Chr. Der Originaltext wurde absichtlich verändert — Wörter wurden hinzugefügt, entfernt und umgestellt — sodass der Text keine Bedeutung hat, aber einen natürlichen Rhythmus und eine Buchstabenverteilung ähnlich echter Sprache beibehält.</p><p class=\"text-mid mt-3\">Der Lorem-Ipsum-Generator ermöglicht es Ihnen, schnell beliebig viel Blindtext für Mockups, UI-Prototypen, Grafikdesigns und typografische Layouttests zu erstellen. Das Tool generiert Absätze, Sätze oder Wörter in 8 Textstilen.</p>",
+      "title": "Wofür braucht man einen Lorem-Ipsum-Generator?",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum ist der gebräuchliche Blindtext im Grafikdesign und in der Druckvorstufe. Der Text stammt aus <em>De Finibus Bonorum et Malorum</em> (Über die Grenzen von Gut und Böse), einem Werk von Marcus Tullius Cicero aus dem Jahr 45 vor Christus. Die ursprüngliche Textstelle wurde bewusst verändert - Wörter wurden hinzugefügt, entfernt und umgestellt -, sodass der Text keine Bedeutung mehr ergibt, aber einen natürlichen Rhythmus und eine Buchstabenverteilung beibehält, die echter Sprache ähnelt.</p><p class=\"text-mid mb-4\">Ein Generator hilft immer dann, wenn ein Layout präsentiert oder getestet werden muss, der endgültige Inhalt aber noch nicht vorliegt - etwa bei Mockups für Webseiten, UI-Prototypen oder grafischen Entwürfen. Das Tool erstellt Absätze, Sätze oder Wörter in 8 Textstilen.</p><p class=\"text-mid\">Weiter unten finden Sie außerdem einen klassischen, sofort kopierbaren Lorem-Ipsum-Absatz, eine Tabelle mit der Bedeutung der häufigsten Wörter sowie Hinweise zum Einfügen dieses Textes in gängigen Programmen.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-de.webp",
       "imageAlt": "Lorem-Ipsum-Generator — Arteon"
     },
@@ -91,9 +89,18 @@
       "size": "sm"
     },
     {
+      "type": "sectionInfo",
+      "title": "Klassischen Lorem-Ipsum-Text kopieren, ohne etwas zu generieren",
+      "html": "<p class=\"text-mid mb-4\">Das ist der am häufigsten kopierte Blindtext-Absatz im Internet - dieselbe Passage erscheint seit Jahrzehnten standardmäßig in Word, Adobe InDesign und unzähligen Designvorlagen:</p><blockquote class=\"rounded-md border border-neutral-200 bg-neutral-50 p-4 text-mid italic\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote><p class=\"text-mid mt-4\">Brauchen Sie mehr Text als diesen einen Absatz? Nutzen Sie den Generator oben - wählen Sie die Anzahl der Absätze, Sätze oder Wörter und kopieren Sie genau die Menge, die Sie benötigen, statt diese eine Passage händisch zu vervielfachen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
-      "title": "So verwenden Sie den Lorem-Ipsum-Generator",
-      "description": "Generieren Sie Platzhaltertext in drei Schritten:",
+      "title": "Wie funktioniert der Lorem-Ipsum-Generator?",
+      "description": "Erstellen Sie Blindtext in drei Schritten:",
       "grid": "three",
       "items": [
         {
@@ -104,12 +111,12 @@
         {
           "icon": "RiPaletteLine",
           "title": "2. Stil wählen",
-          "description": "8 Stile: Lorem Ipsum, Hipster, Business, Deutsche Füllwörter, Bacon, Cupcake, Pirate und Legal — jeder mit eigenem Wortschatz."
+          "description": "Wählen Sie einen von 8 verfügbaren Textstilen: klassisches Lorem Ipsum, Hipster, Business, Deutsche Füllwörter, Bacon, Cupcake, Pirate oder Legal - jeder mit eigener Wortbank."
         },
         {
           "icon": "RiFileCopyLine",
           "title": "3. Ergebnis kopieren",
-          "description": "Klicken Sie auf Generieren, dann kopieren Sie den Text oder laden Sie eine .txt-Datei herunter."
+          "description": "Klicken Sie auf Generieren und kopieren Sie den Text in die Zwischenablage oder laden Sie eine .txt-Datei herunter."
         }
       ]
     },
@@ -119,8 +126,17 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Die Geschichte von Lorem Ipsum — von Cicero bis zum modernen Design",
-      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum hat über 2.000 Jahre Geschichte. Der Originaltext stammt aus Abschnitt 1.10.32 von <em>De Finibus Bonorum et Malorum</em> von Cicero, geschrieben 45 v. Chr. Das Werk ist eine philosophische Abhandlung über Ethik — Cicero analysierte Hedonismus und Stoizismus und plädierte für einen ausgewogenen Umgang mit Freude und Schmerz.</p><p class=\"text-mid mb-4\">Die Verwendung dieses Textes als Fülltext im Druck geht auf das 16. Jahrhundert zurück, als ein unbekannter Drucker Ciceros Passage verwendete, um ein Schriftmusterbuch zu erstellen. Der Text überlebte fünf Jahrhunderte und durchlief die Epochen des Handsatzes, des Linotype und des Fotosatzes.</p><p class=\"text-mid mb-4\">Die moderne Popularität von Lorem Ipsum begann in den 1960er Jahren, als Letraset den Text auf Abreibebuchstaben platzierte, die in Grafikstudios verwendet wurden. Der entscheidende Durchbruch kam 1985, als Aldus Corporation Lorem Ipsum als Standard-Platzhaltertext in PageMaker aufnahm — eines der ersten DTP-Programme. Ab diesem Moment wurde Lorem Ipsum zum Branchenstandard.</p><p class=\"text-mid\">Richard McClintock, ein Lateinprofessor am Hampden-Sydney College in Virginia, identifizierte die Quelle des Textes in den 1980er Jahren und entdeckte, dass die Wörter lorem ipsum ein verfälschtes Fragment aus Ciceros Werk sind. Seine Forschung bestätigte, dass Lorem Ipsum keine zufällige Wortsammlung ist, sondern echte literarische Wurzeln hat.</p>"
+      "title": "Woher kommt der Lorem-Ipsum-Text? Die Geschichte von Cicero bis heute",
+      "html": "<p class=\"text-mid mb-4\">Der Lorem-Ipsum-Text ist über 2000 Jahre alt. Die ursprüngliche Textstelle stammt aus Abschnitt 1.10.32 der Abhandlung <em>De Finibus Bonorum et Malorum</em> von Cicero, verfasst im Jahr 45 vor Christus. Das Werk ist eine philosophische Schrift über Ethik - Cicero setzte sich darin mit Hedonismus und Stoizismus auseinander und plädierte für einen ausgewogenen Umgang mit Freude und Schmerz.</p><p class=\"text-mid mb-4\">Die Verwendung dieses Textes als Füllmaterial im Druckgewerbe geht auf das Jahr 1500 zurück, als ein nicht identifizierter Drucker die Cicero-Passage nutzte, um ein Schriftmusterbuch zu erstellen. Der Text überstand fünf Jahrhunderte und durchlief dabei die Epochen des Handsatzes, des Linotype-Verfahrens und des Fotosatzes.</p><p class=\"text-mid mb-4\">Die moderne Popularität von Lorem Ipsum begann in den 1960er-Jahren, als die Firma Letraset den Text auf Bögen mit Reibebuchstaben druckte, die in Grafikstudios verwendet wurden. Den entscheidenden Durchbruch brachte das Jahr 1985, als die Aldus Corporation Lorem Ipsum als Standard-Platzhaltertext in das Programm PageMaker einbaute - eines der ersten DTP-Programme (Desktop Publishing). Seitdem gilt Lorem Ipsum als Branchenstandard.</p><p class=\"text-mid\">Richard McClintock, ein Lateinprofessor am Hampden-Sydney College in Virginia, identifizierte die Quelle des Textes in den 1980er-Jahren. Er entdeckte, dass die Worte lorem ipsum ein verfälschtes Fragment aus Ciceros Werk sind. Seine Untersuchung bestätigte, dass Lorem Ipsum keine zufällige Wortansammlung ist, sondern echte literarische Wurzeln hat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Was bedeuten die Wörter in Lorem Ipsum dolor sit amet?",
+      "html": "<p class=\"text-mid mb-4\">Der Lorem-Ipsum-Text ist bewusst verfälscht - es handelt sich nicht um einen grammatisch korrekten lateinischen Satz, weshalb er sich nicht als Ganzes übersetzen lässt. Die einzelnen Wörter stammen jedoch aus echtem Latein und haben dokumentierte Bedeutungen oder etymologische Wurzeln:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Wort</th><th class=\"py-2 font-semibold\">Bedeutung / Herkunft</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Lorem</td><td class=\"text-primary-light0 py-2 text-sm\">Kein eigenständiges Wort - das abgeschnittene Ende von &quot;dolorem&quot; (einer Form von &quot;dolor&quot;, Schmerz).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Ipsum</td><td class=\"text-primary-light0 py-2 text-sm\">Von &quot;ipse&quot; - selbst, derselbe.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Dolor</td><td class=\"text-primary-light0 py-2 text-sm\">Schmerz, Leid.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Sit</td><td class=\"text-primary-light0 py-2 text-sm\">Ist, möge sein (von &quot;esse&quot; - sein).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amet</td><td class=\"text-primary-light0 py-2 text-sm\">Von &quot;amare&quot; - lieben, mögen.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Consectetur</td><td class=\"text-primary-light0 py-2 text-sm\">Verfälschte Form, verwandt mit &quot;consequi&quot; - folgen, verfolgen.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Adipiscing</td><td class=\"text-primary-light0 py-2 text-sm\">Von &quot;adipisci&quot; - erlangen, nach etwas streben.</td></tr><tr><td class=\"py-2 pr-4\">Elit</td><td class=\"text-primary-light0 py-2 text-sm\">Das abgeschnittene Ende von &quot;velit&quot; (würde wollen, eine Form von &quot;velle&quot; - wollen).</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Daher stammt die populäre, scherzhafte &quot;Übersetzung&quot; der ersten Worte als &quot;der Schmerz selbst&quot; (dolorem ipsum) - dabei handelt es sich jedoch um eine Interpretation einzelner Fragmente, nicht um die Übersetzung des ganzen Satzes, der im Lateinischen keinen Sinn ergibt.</p>"
     },
     {
       "type": "gap",
@@ -128,7 +144,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "3 Modi zur Inhaltsgenerierung",
+      "title": "Wählen Sie, ob Sie Absätze, Sätze oder Wörter brauchen",
       "description": "Der Generator bietet 3 Inhaltstypen:",
       "grid": "three",
       "items": [
@@ -140,12 +156,12 @@
         {
           "icon": "RiTextSnippet",
           "title": "Sätze",
-          "description": "Einzelne Sätze zufälliger Länge (5–15 Wörter). Nützlich zum Testen von Formularfeldern, Produktbeschreibungen und kurzen Textblöcken."
+          "description": "Einzelne Sätze mit zufälliger Länge von 5 bis 15 Wörtern. Nützlich zum Testen von Formularfeldern, Produktbeschreibungen und kurzen Textblöcken."
         },
         {
           "icon": "RiFontSize",
           "title": "Wörter",
-          "description": "Zufällige einzelne Wörter aus der gewählten Wortbank. Ideal für Tags, Labels, Kategorienamen und zum Testen der Textlänge in UI-Komponenten."
+          "description": "Zufällige einzelne Wörter aus der gewählten Wortbank. Ideal für Tags, Labels, Kategorienamen und das Testen der Textlänge in UI-Komponenten."
         }
       ]
     },
@@ -155,8 +171,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Wann Lorem Ipsum verwenden und wann echten Text",
-      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum eignet sich überall dort, wo der Inhalt noch nicht fertig ist, aber das Layout präsentiert oder getestet werden muss:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>UI-Prototypen und Wireframes</strong> — Seitenstruktur entwerfen, ohne auf den finalen Text des Kunden zu warten.</li><li><strong>Grafische Mockups</strong> — ein Design mit realistisch aussehendem Text statt leerer Rechtecke präsentieren.</li><li><strong>Schrift- und Typografietests</strong> — Lesbarkeit, Zeilenhöhe, Kerning und Überschriftenhierarchie an einem realen Textblock bewerten.</li><li><strong>CMS-Vorlagen und Themes</strong> — das Erscheinungsbild einer WordPress-, Shopify- oder anderen CMS-Vorlage mit Beispielinhalt demonstrieren.</li><li><strong>Druckmaterialien</strong> — Flyer, Broschüren, Visitenkarten und Kataloge in der Entwurfsphase.</li></ul><p class=\"text-mid mb-4\"><strong>Wann NICHT Lorem Ipsum verwenden:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Produktionswebsites</strong> — Google indexiert Platzhaltertext und kann die Seite als minderwertig einstufen.</li><li><strong>Finale SEO-Inhalte</strong> — Meta-Titel, Beschreibungen und H1-Überschriften müssen echte Keywords enthalten.</li><li><strong>E-Mail-Marketing</strong> — Nachrichten mit Lorem Ipsum zu versenden ist unprofessionell und riskiert Spam.</li><li><strong>Usability-Tests mit Nutzern</strong> — Nutzer konzentrieren sich auf Inhalte. Platzhaltertext verfälscht UX-Ergebnisse.</li></ul>"
+      "title": "Wann verwendet man Lorem Ipsum und wann echten Text?",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum eignet sich überall dort, wo der Inhalt noch nicht fertig ist, das Layout aber präsentiert oder getestet werden muss:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>UI-Prototypen und Wireframes</strong> - die Struktur einer Seite oder App entwerfen, ohne auf die finalen Texte vom Kunden zu warten.</li><li><strong>Grafische Mockups</strong> - ein Design mit realistisch wirkendem Text statt leerer Rechtecke präsentieren.</li><li><strong>Schrift- und Typografietests</strong> - Lesbarkeit, Zeilenabstand, Kerning und Überschriftenhierarchie an einem echten Textblock prüfen.</li><li><strong>CMS-Vorlagen und Themes</strong> - das Erscheinungsbild einer WordPress-, Shopify- oder anderen CMS-Vorlage mit Beispielinhalt zeigen.</li><li><strong>Druckmaterialien</strong> - Flyer, Broschüren, Visitenkarten und Kataloge in der Entwurfsphase.</li></ul><p class=\"text-mid mb-4\"><strong>Wann Lorem Ipsum NICHT verwendet werden sollte:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Live-Websites</strong> - Google indexiert Platzhaltertext und kann die Seite als minderwertig einstufen. Das Veröffentlichen von Lorem Ipsum schadet der SEO.</li><li><strong>Finale SEO-Texte</strong> - Meta-Titel, Meta-Beschreibungen und H1-Überschriften müssen echte Schlüsselwörter enthalten, keinen Füllstoff.</li><li><strong>E-Mail-Marketing</strong> - Nachrichten mit Lorem Ipsum zu versenden wirkt unprofessionell und riskiert eine Einstufung als Spam.</li><li><strong>Usability-Tests mit echten Nutzern</strong> - Nutzer konzentrieren sich auf den Inhalt. Platzhaltertext verzerrt die Ergebnisse von UX-Untersuchungen.</li></ul>"
     },
     {
       "type": "gap",
@@ -164,39 +180,71 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Für wen ist der Lorem-Ipsum-Generator?",
-      "description": "Das Tool ist nützlich für alle, die mit Textlayout arbeiten:",
+      "title": "Wie fügt man Lorem Ipsum in gängigen Programmen ein?",
+      "description": "Manche Programme haben eine eigene, eingebaute Funktion zum Einfügen von Blindtext:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileWordLine",
+          "title": "Microsoft Word",
+          "description": "Geben Sie =lorem() im Dokument ein und drücken Sie die Eingabetaste - Word fügt den Standard-Lorem-Ipsum-Absatz ein. Mit =lorem(3,2) fügen Sie 3 Absätze mit je 2 Sätzen ein."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Adobe InDesign",
+          "description": "Wählen Sie im Menü Type die Option Fill with Placeholder Text, um einen Textrahmen automatisch mit Blindtext zu befüllen."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Websites, HTML und Code",
+          "description": "Der Generator erzeugt reinen Text ohne HTML-Auszeichnung, daher lässt sich das Ergebnis direkt in Ihren Code, eine JSON-Testdatei oder einen Editor wie VS Code einfügen - es muss nichts entfernt werden."
+        },
+        {
+          "icon": "RiPuzzleLine",
+          "title": "Figma, Google Docs und andere",
+          "description": "Diese Programme haben keine eingebaute Lorem-Ipsum-Funktion - hier braucht es ein Plugin oder Add-on, oder den Text wird von außen eingefügt. Unser Generator funktioniert sofort im Browser, ohne dass etwas installiert werden muss."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Für wen ist dieser Lorem-Ipsum-Generator gedacht?",
+      "description": "Das Tool ist für alle nützlich, die mit Textlayout arbeiten:",
       "grid": "three",
       "items": [
         {
           "icon": "RiPaintBrushLine",
-          "title": "Designer & UI-Designer",
-          "description": "Mockups und Prototypen schnell mit realistisch aussehendem Text füllen. Typografische Hierarchie und Spaltenlayouts testen."
+          "title": "Grafiker und UI-Designer",
+          "description": "Mockups und Prototypen schnell mit realistisch wirkendem Text füllen. Typografische Hierarchie und Spaltenlayouts testen."
         },
         {
           "icon": "RiCodeLine",
           "title": "Frontend-Entwickler",
-          "description": "Platzhaltertext generieren, um Komponenten, Layout-Responsivität und CSS-Verhalten bei unterschiedlichen Inhaltslängen zu testen."
+          "description": "Blindtext generieren, um Komponenten, die Reaktionsfähigkeit des Layouts und das CSS-Verhalten bei unterschiedlichen Textlängen zu testen."
         },
         {
           "icon": "RiEditLine",
           "title": "Texter",
-          "description": "Textstruktur prototypisieren: wie viele Absätze, Satzlängen, wie Listen und Überschriften im finalen Layout aussehen."
+          "description": "Die Textstruktur durchspielen: wie viele Absätze, welche Satzlängen, wie Listen und Überschriften im finalen Layout aussehen werden."
         },
         {
           "icon": "RiPrinterLine",
-          "title": "Drucker & Verleger",
-          "description": "Flyer-, Broschüren- und Katalogvorlagen mit Blindtext für die Kundenfreigabe füllen."
+          "title": "Druckereien und Verlage",
+          "description": "Vorlagen für Flyer, Broschüren und Kataloge mit Blindtext füllen, um die Freigabe des Kunden einzuholen, bevor der finale Text vorliegt."
         },
         {
           "icon": "RiGlobalLine",
           "title": "Website-Betreiber",
-          "description": "Das Aussehen einer neuen CMS-Vorlage oder eines Themes mit Beispielinhalt testen. Bewerten, wie viel Text pro Seite benötigt wird."
+          "description": "Das Erscheinungsbild einer neuen CMS-Vorlage oder eines Themes mit Beispielinhalt testen. Einschätzen, wie viel Text die einzelnen Unterseiten brauchen."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Designstudenten",
-          "description": "Grafisches Layout, Typografie und Komposition mit professionellem Platzhaltertext statt zufälligen Zeichen lernen."
+          "title": "Design-Studierende",
+          "description": "Grafisches Layout, Typografie und Komposition mit professionellem Blindtext statt zufälligen Zeichen üben."
         }
       ]
     },
@@ -206,13 +254,13 @@
     },
     {
       "type": "sectionTable",
-      "title": "Vergleich der Textstile",
+      "title": "Wie unterscheiden sich die verfügbaren Stile für Blindtext in unserem Generator?",
       "labelHeader": "Merkmal",
       "cols": [
         "Lorem Ipsum",
         "Hipster",
         "Business",
-        "Lokal",
+        "Deutsche Füllwörter",
         "Bacon",
         "Cupcake",
         "Pirate",
@@ -225,7 +273,7 @@
             "Latein",
             "Englisch",
             "Englisch",
-            "Lokal",
+            "Deutsch",
             "Englisch",
             "Englisch",
             "Englisch",
@@ -278,8 +326,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "8 Platzhaltertext-Stile — alle im Generator verfügbar",
-      "html": "<p class=\"text-mid mb-4\">Unser Generator bietet 8 einzigartige Platzhaltertext-Stile — vom klassischen Latein bis zur juristischen Fachsprache. Jeder Stil hat eine eigene Wortbank mit über 90 Wörtern und generiert Text mit natürlichem Rhythmus:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — der klassische lateinische Platzhaltertext aus Ciceros Werk. Seit über 500 Jahren Branchenstandard.</li><li><strong>Hipster Ipsum</strong> — Vokabular der Hipster-Kultur: Craft, Avocado, Vintage, Achtsamkeit. Ideal für Lifestyle-Projekte.</li><li><strong>Business Ipsum</strong> — Unternehmenssprache: Synergie, Leverage, Stakeholder, KPI. Für Präsentations- und Firmenwebsite-Mockups.</li><li><strong>Deutsche Füllwörter</strong> — zufällige Wörter in der Landessprache aus verschiedenen Bereichen. Zeigt dem Kunden, wie Text im Design aussehen wird.</li><li><strong>Bacon Ipsum</strong> — Fleisch- und Grillvokabular: Steak, Brisket, Barbecue. Bei Entwicklern beliebt.</li><li><strong>Cupcake Ipsum</strong> — Bäckereivokabular: Muffin, Schokolade, Karamell, Glasur. Für Projekte der Lebensmittelbranche.</li><li><strong>Pirate Ipsum</strong> — Piratentext: Ahoi, Schatz, Galeone, Rum. Für Unterhaltungs- und Spieleprojekte.</li><li><strong>Legal Ipsum</strong> — juristische Fachbegriffe: Gerichtsbarkeit, Kläger, Gesetz, Haftung. Für Kanzlei-Website-Mockups.</li></ul><p class=\"text-mid mb-4\">Lustige Varianten (Bacon, Cupcake, Pirate) eignen sich gut für interne Präsentationen und Projekte, bei denen Humor die Teamkommunikation verbessert. Für professionelle Kundenpräsentationen verwenden Sie klassisches Lorem Ipsum oder Legal Ipsum — sie sind neutral und lenken nicht vom Design ab.</p><p class=\"text-mid\">Deutsche Füllwörter sind eine einzigartige Option in unserem Generator — Wörter in der Landessprache bewahren die natürlichen Buchstabenproportionen und Wortlängen der Zielsprache. Ideal, um Kunden eine realistische Textvorschau in ihrem Projekt zu zeigen.</p>"
+      "title": "Welche Stile für Blindtext bietet der Generator?",
+      "html": "<p class=\"text-mid mb-4\">Unser Generator bietet 8 einzigartige Stile für Blindtext - vom klassischen Latein bis zum juristischen Fachjargon. Jeder Stil hat eine eigene Wortbank mit über 90 Begriffen und erzeugt Text mit natürlichem Rhythmus:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> - der klassische lateinische Blindtext aus Ciceros Werk. Seit über 500 Jahren der Branchenstandard im Druckgewerbe.</li><li><strong>Hipster Ipsum</strong> - Vokabular aus der Hipster-Kultur: craft, avocado, vintage, mindfulness. Ideal für Lifestyle-Projekte.</li><li><strong>Business Ipsum</strong> - Unternehmensjargon: synergy, leverage, stakeholder, KPI. Für Mockups von Präsentationen und Firmenwebsites.</li><li><strong>Deutsche Füllwörter</strong> - zufällige deutsche Wörter aus unterschiedlichen Bereichen. Zeigt dem Kunden, wie deutscher Text im Projekt tatsächlich aussehen wird.</li><li><strong>Bacon Ipsum</strong> - Wörter rund um Fleisch und Grillen: steak, brisket, barbecue. Beliebt bei Entwicklern.</li><li><strong>Cupcake Ipsum</strong> - Vokabular aus der Bäckerei: muffin, chocolate, caramel, frosting. Für Projekte aus der Gastronomiebranche.</li><li><strong>Pirate Ipsum</strong> - Text im Piratenstil: ahoy, treasure, galleon, rum. Für Unterhaltungs- und Spieleprojekte.</li><li><strong>Legal Ipsum</strong> - juristische Terminologie: jurisdiction, plaintiff, statute, liability. Für Mockups von Kanzlei-Websites.</li></ul><p class=\"text-mid mb-4\">Die humorvollen Varianten (Bacon, Cupcake, Pirate) eignen sich gut für interne Präsentationen und Projekte, in denen Humor die Kommunikation im Team erleichtert. Für professionelle Kundenpräsentationen ist klassisches Lorem Ipsum oder Legal Ipsum die bessere Wahl - beide bleiben neutral und lenken nicht vom Design ab.</p><p class=\"text-mid\">Deutsche Füllwörter sind eine eigenständige Option in unserem Generator - die zufälligen deutschen Wörter behalten die für die deutsche Sprache typischen Buchstabenverhältnisse und Wortlängen bei. Wählen Sie diesen Stil, wenn Sie dem Kunden eine realistische Vorschau des Textes im Projekt zeigen möchten.</p>"
     },
     {
       "type": "gap",
@@ -287,8 +335,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Lorem Ipsum und SEO — schadet Platzhaltertext dem Ranking",
-      "html": "<p class=\"text-mid mb-4\">Ja — die Veröffentlichung von Lorem Ipsum auf einer Produktionswebsite kann sich negativ auf das Suchranking auswirken. Google analysiert den Inhalt jeder indexierten Seite und erkennt Platzhaltertext:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Thin Content</strong> — eine Seite mit Platzhaltertext bietet keinen Mehrwert. Google stuft solche Seiten als Thin Content ein und senkt ihre Position.</li><li><strong>Junk-Indexierung</strong> — Googles Bots indexieren Lorem Ipsum als Seiteninhalt. Es kann in Suchergebnissen erscheinen und das Markenimage beeinträchtigen.</li><li><strong>Crawl-Budget-Verschwendung</strong> — Google weist jeder Website ein begrenztes Crawl-Budget zu. Seiten mit Lorem Ipsum verbrauchen dieses Budget ohne Nutzen.</li><li><strong>Core Web Vitals</strong> — Platzhaltertext beeinflusst Leistungsmetriken nicht direkt, aber qualitativ minderwertige Seiten können insgesamt niedriger eingestuft werden.</li></ul><p class=\"text-mid mb-4\">So vermeiden Sie das Problem: Durchsuchen Sie vor der Veröffentlichung Ihre gesamte Website nach &quot;lorem ipsum&quot; oder &quot;dolor sit amet&quot;. Prüfen Sie in der Google Search Console, ob keine indexierte Seite Platzhaltertext enthält. Verwenden Sie <code>site:ihredomain.com &quot;lorem ipsum&quot;</code> in der Google-Suche.</p><p class=\"text-mid\">Der Lorem-Ipsum-Generator ist ein Werkzeug für die Designphase. Platzhaltertext sollte vor der Veröffentlichung durch echten Inhalt ersetzt werden.</p>"
+      "title": "Schadet das Veröffentlichen von Lorem Ipsum der SEO?",
+      "html": "<p class=\"text-mid mb-4\">Ja - das Veröffentlichen von Lorem Ipsum auf einer Live-Website kann sich negativ auf das Suchranking auswirken. Google analysiert den Inhalt jeder indexierten Seite und erkennt Blindtext. Hier sind die Gründe, warum das ein Problem ist:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Thin Content</strong> - eine Seite mit Blindtext bietet dem Nutzer keinen Mehrwert. Google stuft solche Seiten als &quot;thin content&quot; ein und setzt ihre Position herab.</li><li><strong>Indexierung von Datenmüll</strong> - die Crawler von Google indexieren Lorem Ipsum als Seiteninhalt. Das kann in den Suchergebnissen erscheinen und das Markenimage beeinträchtigen.</li><li><strong>Verschwendetes Crawl-Budget</strong> - Google stellt jeder Website ein begrenztes Crawl-Budget zur Verfügung. Seiten mit Lorem Ipsum verbrauchen dieses Budget ohne Nutzen.</li></ul><p class=\"text-mid mb-4\">So vermeiden Sie das Problem: Durchsuchen Sie vor der Veröffentlichung die gesamte Website nach der Formulierung &quot;lorem ipsum&quot; oder &quot;dolor sit amet&quot;. Prüfen Sie in der Google Search Console, ob keine indexierte Seite noch Blindtext enthält. Nutzen Sie den Befehl <code>site:ihredomain.de &quot;lorem ipsum&quot;</code> in der Google-Suche.</p><p class=\"text-mid\">Der Lorem-Ipsum-Generator ist ein Werkzeug für die Entwurfsphase. Blindtext sollte vor der Veröffentlichung einer Seite immer durch echten Inhalt ersetzt werden.</p>"
     },
     {
       "type": "gap",
@@ -302,22 +350,71 @@
         {
           "icon": "RiListCheck2",
           "title": "3 Modi zur Inhaltsgenerierung",
-          "description": "Absätze, Sätze und Wörter — volle Kontrolle über die Anzahl."
+          "description": "Absätze, Sätze und Wörter - volle Kontrolle über die Anzahl."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 einzigartige Textstile",
-          "description": "Lorem Ipsum, Hipster, Business, Deutsche Füllwörter, Bacon, Cupcake, Pirate und Legal. Jeder Stil hat über 90 Wörter."
+          "description": "Lorem Ipsum, Hipster, Business, Deutsche Füllwörter, Bacon, Cupcake, Pirate und Legal. Jeder Stil hat eine eigene Wortbank mit über 90 Begriffen."
         },
         {
           "icon": "RiUserLine",
           "title": "Lokale Verarbeitung",
-          "description": "Text wird in Ihrem Browser generiert. Nichts wird an einen Server gesendet. Das Tool funktioniert offline nach dem Laden."
+          "description": "Der Text wird im Browser generiert. Es wird nichts an einen Server gesendet. Das Tool funktioniert nach dem Laden der Seite auch offline."
         },
         {
           "icon": "RiLockLine",
-          "title": "Keine Registrierung oder Limits",
-          "description": "Komplett kostenlos. Keine Registrierung, kein Login, keine persönlichen Daten. Keine Werbung im generierten Text."
+          "title": "Keine Registrierung und keine Limits",
+          "description": "Das Tool ist vollständig kostenlos. Es erfordert keine Registrierung, keine Anmeldung und keine persönlichen Daten. Keine Werbung im generierten Text."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Wie viel Blindtext brauchen Sie für ein bestimmtes Projekt?",
+      "labelHeader": "Projekttyp",
+      "cols": ["Empfohlene Menge", "Hinweise"],
+      "rows": [
+        {
+          "label": "H1-Überschrift",
+          "values": [
+            "5-10 Wörter",
+            "Ein kurzer, prägnanter Titel für Seite oder Abschnitt."
+          ]
+        },
+        {
+          "label": "Meta-Beschreibung",
+          "values": ["20-25 Wörter", "Optimal 150-160 Zeichen."]
+        },
+        {
+          "label": "Produktkarte",
+          "values": ["2-3 Absätze", "Kurzbeschreibung plus Spezifikation."]
+        },
+        {
+          "label": "Dienstleistungsseite",
+          "values": [
+            "4-6 Absätze",
+            "Leistungsbeschreibung, Vorteile, Call-to-Action."
+          ]
+        },
+        {
+          "label": "Blogartikel",
+          "values": ["8-15 Absätze", "1500-2500 Wörter für SEO."]
+        },
+        {
+          "label": "Landingpage",
+          "values": [
+            "5-8 Absätze",
+            "Hero, Vorteile, Social Proof, Call-to-Action."
+          ]
+        },
+        {
+          "label": "Flyer / Broschüre",
+          "values": ["3-5 Absätze", "Kurze Textblöcke mit Überschriften."]
         }
       ]
     },
@@ -332,48 +429,78 @@
       "items": [
         {
           "question": "Was ist Lorem Ipsum?",
-          "answer": "Lorem Ipsum ist der Standard-Platzhaltertext der Druck-, Grafikdesign- und Webentwicklungsbranche. Er dient dazu, Layouts mit realistisch aussehendem Text zu füllen, wenn der endgültige Inhalt noch nicht bereit ist. Der Text hat einen natürlichen Rhythmus und eine Buchstabenverteilung ähnlich echter Sprache.",
-          "answerSchemaText": "Lorem Ipsum ist der Standard-Platzhaltertext der Druck-, Grafikdesign- und Webentwicklungsbranche."
+          "answer": "Lorem Ipsum ist der gebräuchliche Blindtext aus der Druckvorstufe, dem Grafikdesign und der Webentwicklung. Er füllt ein Layout mit realistisch wirkendem Text, wenn der finale Inhalt noch nicht fertig ist. Der Text hat einen natürlichen Rhythmus und eine Buchstabenverteilung, die echter Sprache ähnelt, wodurch ein Entwurf glaubwürdig wirkt.",
+          "answerSchemaText": "Lorem Ipsum ist der gebräuchliche Blindtext aus der Druckvorstufe und dem Webdesign zum Füllen von Layouts."
         },
         {
-          "question": "Woher kommt Lorem Ipsum?",
-          "answer": "Lorem Ipsum stammt aus De Finibus Bonorum et Malorum von Marcus Tullius Cicero, geschrieben 45 v. Chr. Es ist eine philosophische Abhandlung über Ethik. Der Originaltext aus Abschnitt 1.10.32 wurde im 16. Jahrhundert von einem unbekannten Drucker absichtlich verändert.",
-          "answerSchemaText": "Lorem Ipsum stammt aus De Finibus Bonorum et Malorum von Cicero, geschrieben 45 v. Chr."
+          "question": "Wie erstellt man Lorem Ipsum?",
+          "answer": "Am einfachsten nutzen Sie den Generator oben: Wählen Sie Absätze, Sätze oder Wörter, legen Sie die Anzahl fest, wählen Sie einen Textstil und klicken Sie auf Generieren. Der Text erscheint sofort und lässt sich in die Zwischenablage kopieren oder als .txt-Datei herunterladen. Manche Programme, etwa Microsoft Word, haben außerdem eine eigene eingebaute Abkürzung zum Einfügen von Lorem Ipsum.",
+          "answerSchemaText": "Wählen Sie Modus und Anzahl im Generator oben, klicken Sie auf Generieren und kopieren Sie das Ergebnis."
         },
         {
-          "question": "Ist Lorem Ipsum echtes Latein?",
-          "answer": "Teilweise. Lorem Ipsum enthält echte lateinische Wörter aus Ciceros Werk, aber der Text wurde absichtlich verfälscht. Wörter sind durcheinandergebracht, einigen fehlen Endungen. Einzelne Wörter wie dolor (Schmerz), amet (liebt) und ipsum (selbst) sind echte lateinische Begriffe.",
-          "answerSchemaText": "Teilweise — echte lateinische Wörter aus Cicero, aber absichtlich verfälscht und ohne Bedeutung."
+          "question": "Wie lautet der vollständige klassische Lorem-Ipsum-Text?",
+          "answer": "Die am weitesten verbreitete Version ist ein einzelner Absatz, der mit Lorem ipsum dolor sit amet, consectetur adipiscing elit beginnt - Sie finden ihn in der Sektion oben, fertig zum Kopieren. Es gibt keine einzige offizielle längere Version - die meisten Generatoren, auch dieser, erzeugen zusätzlichen Text aus derselben Wortbank. Für eine genaue Länge ist der Generator daher die bessere Wahl als die Suche nach einem fertigen, längeren Text.",
+          "answerSchemaText": "Die gängigste Version ist ein Absatz, der mit Lorem ipsum dolor sit amet beginnt - verfügbar in der Sektion oben."
         },
         {
-          "question": "Wie viele Absätze brauche ich für ein Mockup?",
-          "answer": "Das hängt vom Seitentyp ab. Landingpage: 5–8 Absätze. Dienstleistungsseite: 4–6 Absätze. Blogartikel: 8–15 Absätze (1.500–2.500 Wörter). Produktkarte: 2–3 Absätze. Der Generator erstellt genau die benötigte Menge.",
-          "answerSchemaText": "Hängt vom Seitentyp ab: Landingpage 5–8, Dienstleistungsseite 4–6, Blogartikel 8–15, Produktkarte 2–3 Absätze."
+          "question": "Woher stammt der Lorem-Ipsum-Text?",
+          "answer": "Lorem Ipsum stammt aus dem Werk De Finibus Bonorum et Malorum (Über die Grenzen von Gut und Böse) von Marcus Tullius Cicero, verfasst im Jahr 45 vor Christus. Es handelt sich um eine philosophische Abhandlung über Ethik. Die ursprüngliche Textstelle aus Abschnitt 1.10.32 wurde im 16. Jahrhundert von einem nicht identifizierten Drucker bewusst verändert - Wörter wurden hinzugefügt, entfernt und umgestellt, sodass der Text keinen Sinn mehr ergab, aber das natürliche Erscheinungsbild des Lateinischen beibehielt.",
+          "answerSchemaText": "Lorem Ipsum stammt aus De Finibus Bonorum et Malorum von Cicero, geschrieben im Jahr 45 vor Christus."
+        },
+        {
+          "question": "Ist Lorem Ipsum echtes Latein oder eine erfundene Sprache?",
+          "answer": "Es handelt sich um echtes lateinisches Vokabular, aber keinen echten lateinischen Satz. Lorem Ipsum enthält tatsächliche lateinische Wörter aus Ciceros Werk, doch der Text wurde bewusst verfälscht - Wörter stehen in der falschen Reihenfolge, manchen fehlen Endungen, und andere wurden eingefügt, die dort nicht hingehören. Es ist also keine erfundene Sprache, sondern eine erfundene, bedeutungslose Anordnung einer echten Sprache.",
+          "answerSchemaText": "Es nutzt echte lateinische Wörter aus Ciceros Werk, die jedoch bewusst zu einer bedeutungslosen Anordnung verfälscht wurden."
+        },
+        {
+          "question": "Bedeutet Lorem Ipsum der Schmerz selbst?",
+          "answer": "Die ersten Worte deuten auf Schmerz hin, das ist aber keine exakte Übersetzung. Lorem ist das abgeschnittene Ende von dolorem (eine Form von dolor, Schmerz), und ipsum bedeutet selbst. Daher stammt die scherzhafte Kurzform dolorem ipsum, der Schmerz selbst. Dabei handelt es sich um die Interpretation zweier isolierter Wortfragmente, nicht um die Übersetzung des ganzen Satzes, der im Lateinischen keinen Sinn ergibt.",
+          "answerSchemaText": "Teilweise - die ersten Worte beziehen sich auf dolor (Schmerz) und ipsum (selbst), das ist aber keine vollständige Übersetzung."
+        },
+        {
+          "question": "Wie spricht man Lorem Ipsum aus?",
+          "answer": "Der Text wird so gelesen, wie er geschrieben ist, wobei die Wörter im Stil des klassischen Lateins in Silben zerlegt werden: LO-rem IP-sum DO-lor SIT a-MET, kon-sek-TE-tur a-di-PIS-cing E-lit. Es gibt keine einzige verbindliche Aussprache, da es sich nicht um eine lebende Sprache handelt - die meisten Menschen lesen ihn einfach phonetisch, nach den Regeln des Lateinlesens.",
+          "answerSchemaText": "Wird phonetisch gelesen, in Silben zerlegt nach den Regeln des klassischen Lateins: LO-rem IP-sum DO-lor SIT a-MET."
+        },
+        {
+          "question": "Lässt sich Lorem Ipsum ins Deutsche übersetzen?",
+          "answer": "Nein, es gibt keine sinnvolle deutsche Übersetzung, weil das zugrunde liegende Latein bewusst verfälscht und von vornherein nicht grammatisch korrekt ist. Einzelne Wörter lassen sich isoliert übersetzen - dolor bedeutet Schmerz, amet bezieht sich auf lieben oder mögen, ipsum bedeutet selbst -, doch das Zusammenfügen dieser Einzelbedeutungen ergibt keinen sinnvollen deutschen Satz.",
+          "answerSchemaText": "Es gibt keine sinnvolle deutsche Übersetzung - das zugrunde liegende Latein ist bewusst verfälscht und kein gültiger Satz."
+        },
+        {
+          "question": "Kann ich Lorem Ipsum als HTML- oder PDF-Datei generieren?",
+          "answer": "Der Generator erzeugt reinen Text, ohne HTML-Auszeichnung und ohne PDF-Export. Das ist beim Einfügen in Code, eine JSON-Testdatei oder einen Code-Editor sogar praktisch, da keine Formatierung entfernt werden muss. Wenn Sie eine PDF-Datei benötigen, fügen Sie den kopierten Text in einen Texteditor wie Word oder Google Docs ein und speichern Sie das Dokument als PDF.",
+          "answerSchemaText": "Nein - der Generator erzeugt reinen Text ohne HTML-Auszeichnung. Für eine PDF fügen Sie den Text in einen Editor ein und speichern als PDF."
+        },
+        {
+          "question": "Wie viele Absätze Lorem Ipsum brauche ich für ein Mockup?",
+          "answer": "Das hängt vom Seitentyp ab. Für eine Landingpage reichen meist 5 bis 8 Absätze (Hero, Vorteile, Social Proof, Call-to-Action). Eine Dienstleistungsseite braucht 4 bis 6 Absätze. Ein Blogartikel umfasst 8 bis 15 Absätze, etwa 1500 bis 2500 Wörter. Eine Produktkarte braucht nur 2 bis 3 Absätze. Der Generator erstellt genau die Menge, die Sie benötigen.",
+          "answerSchemaText": "Hängt vom Seitentyp ab: Landingpage 5-8 Absätze, Dienstleistungsseite 4-6, Blogartikel 8-15, Produktkarte 2-3."
         },
         {
           "question": "Darf ich Lorem Ipsum auf einer Live-Website verwenden?",
-          "answer": "Nein. Lorem Ipsum ist nur für die Designphase gedacht. Die Veröffentlichung schadet der SEO (Google stuft es als Thin Content ein), beeinträchtigt das Markenimage und kann in Suchergebnissen indexiert werden. Ersetzen Sie Platzhaltertext immer vor der Veröffentlichung.",
-          "answerSchemaText": "Nein — Platzhaltertext schadet SEO und Markenimage. Immer vor Veröffentlichung durch echten Inhalt ersetzen."
+          "answer": "Nein. Lorem Ipsum ist ausschließlich für die Entwurfsphase gedacht. Das Veröffentlichen von Blindtext auf einer Live-Website schadet der SEO, da Google solche Seiten als thin content einstuft, und beschädigt zugleich das Markenimage bei Besuchern. Ersetzen Sie Blindtext immer durch echten Inhalt, bevor eine Seite veröffentlicht wird.",
+          "answerSchemaText": "Nein - Blindtext schadet der SEO und dem Markenimage. Immer vor der Veröffentlichung durch echten Inhalt ersetzen."
         },
         {
-          "question": "Schadet Lorem Ipsum der SEO?",
-          "answer": "Ja, wenn es auf einer Produktionswebsite veröffentlicht wird. Google erkennt Platzhaltertext und kann die Seite als minderwertig einstufen. Verwenden Sie site:ihredomain.com lorem ipsum in Google, um zu prüfen.",
-          "answerSchemaText": "Ja, auf Live-Websites — Google erkennt Platzhaltertext und stuft ihn als Thin Content ein."
+          "question": "Was ist der Unterschied zwischen Lorem Ipsum und Dummy Text?",
+          "answer": "Es sind Synonyme. Lorem Ipsum, Dummy Text, Platzhaltertext, Blindtext, Fülltext - all diese Begriffe bezeichnen Text, der vorübergehend an der Stelle des endgültigen Inhalts verwendet wird. Lorem Ipsum ist ein konkreter Text, der auf Cicero zurückgeht, während Dummy Text ein weiterer Begriff ist, der jeden beliebigen Platzhaltertext umfasst.",
+          "answerSchemaText": "Es sind Synonyme - Lorem Ipsum ist ein konkreter Text von Cicero, Dummy Text ist der allgemeine Begriff für Platzhaltertext."
         },
         {
           "question": "Was sind Hipster Ipsum und Business Ipsum?",
-          "answer": "Thematische Varianten von Platzhaltertext. Hipster Ipsum verwendet Hipster-Kultur-Vokabular (Craft, Avocado, Vintage). Business Ipsum ist Unternehmenssprache (Synergie, Leverage, Stakeholder, KPI). Beide generieren Text mit natürlichem Rhythmus und branchenspezifischem Vokabular.",
-          "answerSchemaText": "Thematische Lorem-Ipsum-Varianten — Hipster verwendet Lifestyle-Vokabular, Business Unternehmenssprache."
+          "answer": "Das sind thematische Varianten von Blindtext. Hipster Ipsum nutzt Vokabular aus der Hipster-Kultur - craft, avocado, vintage, mindfulness. Business Ipsum ist Unternehmensjargon - synergy, leverage, stakeholder, KPI. Beide behalten denselben natürlichen Rhythmus wie klassisches Lorem Ipsum bei, ersetzen aber das Vokabular durch branchentypische Begriffe. Das eignet sich gut für interne Präsentationen, in denen etwas Humor die Teamkommunikation erleichtert.",
+          "answerSchemaText": "Thematische Lorem-Ipsum-Varianten - Hipster nutzt Lifestyle-Vokabular, Business Unternehmensjargon."
         },
         {
           "question": "Ist der Generator kostenlos und sicher?",
-          "answer": "Ja. Komplett kostenlos, ohne Registrierung und ohne Limits. Text wird lokal im Browser generiert — nichts wird an einen Server gesendet. Kein Tracking, keine Cookies, funktioniert offline nach dem Laden.",
-          "answerSchemaText": "Ja — kostenlos, ohne Registrierung, lokale Browser-Verarbeitung, keine Datenerhebung."
+          "answer": "Ja. Der Lorem-Ipsum-Generator ist vollständig kostenlos, ohne Registrierung und ohne Limits. Der gesamte Text wird lokal im Browser generiert - es wird nichts an einen Server gesendet. Das Tool sammelt keine persönlichen Daten, nutzt keine Tracking-Cookies und funktioniert nach dem Laden der Seite auch offline weiter.",
+          "answerSchemaText": "Ja - kostenlos, ohne Registrierung, lokale Verarbeitung im Browser, keine Datenerhebung."
         },
         {
-          "question": "Wie viele Wörter hat ein Standard-Absatz?",
-          "answer": "Der generierte Absatz hat in der Regel 4–7 Sätze, also etwa 40–90 Wörter. Der originale erste Absatz von Cicero hat etwa 69 Wörter und beginnt mit Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "answerSchemaText": "Der generierte Absatz hat in der Regel 4–7 Sätze, also etwa 40–90 Wörter."
+          "question": "Wie viele Wörter hat ein Standard-Lorem-Ipsum-Absatz?",
+          "answer": "Ein generierter Absatz umfasst in der Regel 4 bis 7 Sätze, also etwa 40 bis 90 Wörter. Der klassische Lorem-Ipsum-Absatz, der in der Sektion oben zum Kopieren bereitsteht, hat rund 69 Wörter und beginnt mit Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "answerSchemaText": "Ein generierter Absatz umfasst in der Regel 4-7 Sätze, also etwa 40-90 Wörter."
         }
       ]
     },
@@ -384,7 +511,7 @@
     {
       "type": "contactForm",
       "title": "Helfen Sie uns, unsere Tools zu verbessern",
-      "description": "Haben Sie eine Idee für ein neues Feature, einen Fehler gefunden oder möchten Sie ein anderes Tool vorschlagen? Schreiben Sie uns — wir antworten innerhalb von 24 Stunden.",
+      "description": "Haben Sie eine Idee für ein neues Feature, einen Fehler gefunden oder möchten Sie ein anderes Tool vorschlagen, das die Arbeit erleichtern würde? Schreiben Sie uns - wir antworten innerhalb von 24 Stunden.",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-de.webp",
       "imageAlt": "Lorem-Ipsum-Generator — Arteon",
       "defaultSubject": "Feedback: Lorem-Ipsum-Generator"
@@ -395,7 +522,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Entdecken Sie weitere Tools"
+      "title": "Entdecke weitere Tools"
     },
     {
       "type": "gap",

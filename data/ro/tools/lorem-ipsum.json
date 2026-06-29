@@ -2,14 +2,14 @@
   "toolKey": "loremIpsum",
   "locale": "ro",
   "metadata": {
-    "title": "Generator Lorem Ipsum gratuit. Copiați text de exemplu pentru machete, prototipuri și designuri grafice",
-    "description": "Generator Lorem Ipsum gratuit cu 8 stiluri de text de exemplu, printre care Bacon Ipsum, Cupcake Ipsum sau Legal Ipsum. Copiați textul de exemplu sub formă de paragrafe, propoziții sau cuvinte.",
+    "title": "Generează Lorem Ipsum - generator gratuit de text de umplutură cu 8 stiluri",
+    "description": "Generează orice cantitate de text Lorem Ipsum sau copiază paragraful clasic complet fără să generezi nimic. Află și ce înseamnă Lorem Ipsum și de unde vine acest text.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-ro.webp",
     "path": "/instrumente/generator-lorem-ipsum"
   },
   "hero": {
-    "title": "Generator Lorem Ipsum gratuit. Copiați text de exemplu pentru machete, prototipuri și designuri grafice",
-    "description": "Generator Lorem Ipsum gratuit cu 8 stiluri de text de exemplu, printre care Bacon Ipsum, Cupcake Ipsum sau Legal Ipsum. Copiați textul de exemplu sub formă de paragrafe, propoziții sau cuvinte.",
+    "title": "Generează text Lorem Ipsum în 8 stiluri sau copiază paragraful clasic",
+    "description": "Alege paragrafe, propoziții sau cuvinte, stabilește numărul și apasă Generează - textul de umplutură apare imediat. Poți copia și paragraful clasic, cel mai folosit, disponibil mai jos, fără să generezi nimic. Totul se procesează local, în browser, fără cont și fără limite.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-ro.webp"
   },
   "breadcrumbs": {
@@ -24,15 +24,17 @@
   },
   "schemas": {
     "software": {
-      "name": "Generator Lorem Ipsum — text de exemplu, paragrafe, propoziții și cuvinte aleatorii",
+      "name": "Generator Lorem Ipsum — text de umplutură gratuit, cu paragraful clasic și 8 stiluri",
       "alternateName": [
         "Generator de text de exemplu",
-        "Dummy text generator",
+        "Dummy text generator în română",
         "Generator de paragrafe aleatorii",
         "Placeholder text generator",
-        "Cuvinte de umplutură",
+        "Text de umplutură",
         "Blind text generator",
         "Generator de text înlocuitor",
+        "Ce înseamnă lorem ipsum",
+        "Lorem ipsum text complet",
         "Bacon Ipsum generator",
         "Cupcake Ipsum generator",
         "Pirate Ipsum generator",
@@ -41,32 +43,26 @@
         "Business Ipsum generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Generator Lorem Ipsum gratuit cu 8 stiluri de text. Generați paragrafe, propoziții sau cuvinte, copiați în clipboard sau descărcați ca fișier .txt.",
+      "description": "Generator Lorem Ipsum gratuit cu 8 stiluri de text și paragraful clasic, pregătit pentru copiere. Generați paragrafe, propoziții sau cuvinte, verificați sensul și istoria textului, copiați în clipboard sau descărcați ca fișier .txt.",
       "featureList": [
-        "Generare paragrafe Lorem Ipsum",
-        "Generare propoziții individuale",
-        "Generare cuvinte aleatorii",
-        "Lorem Ipsum — latină din De Finibus",
-        "Hipster Ipsum — vocabular hipster",
-        "Business Ipsum — jargon corporativ",
-        "Cuvinte de umplutură — cuvinte aleatorii în limba locală",
-        "Bacon Ipsum — vocabular culinar și de grătar",
-        "Cupcake Ipsum — vocabular de patiserie",
-        "Pirate Ipsum — text în stil pirat",
-        "Legal Ipsum — terminologie juridică",
-        "Copiere text în clipboard",
-        "Descărcare rezultat ca fișier .txt",
-        "Procesare locală în browser"
+        "Generarea de paragrafe, propoziții sau cuvinte aleatorii, în cantitatea aleasă",
+        "8 stiluri de text: latină clasică, Hipster, Business, cuvinte de umplutură în limba română, Bacon, Cupcake, Pirate și Legal Ipsum",
+        "Paragraful clasic Lorem Ipsum, pregătit pentru copiere fără a genera nimic",
+        "Un tabel cu etimologia celor mai frecvente cuvinte din textul Lorem Ipsum",
+        "Indicații pentru inserarea textului Lorem Ipsum în Word și Adobe InDesign",
+        "Copierea textului generat în clipboard cu un singur clic",
+        "Descărcarea rezultatului ca fișier .txt",
+        "Procesare integral locală, direct în browser"
       ]
     },
     "howTo": {
-      "name": "Cum să utilizați Generatorul Lorem Ipsum",
-      "description": "Generați text de exemplu Lorem Ipsum în câteva secunde. Alegeți modul și stilul, apoi copiați sau descărcați rezultatul.",
+      "name": "Cum să generați text Lorem Ipsum",
+      "description": "Generați text de exemplu Lorem Ipsum în câteva secunde. Alegeți modul, stilul și cantitatea, apoi copiați sau descărcați rezultatul.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Alegeți modul de generare",
-          "text": "Alegeți paragrafe, propoziții sau cuvinte și setați cantitatea."
+          "text": "Alegeți paragrafe, propoziții sau cuvinte și setați cantitatea acestora."
         },
         {
           "name": "Alegeți stilul de text",
@@ -74,7 +70,7 @@
         },
         {
           "name": "Copiați sau descărcați rezultatul",
-          "text": "Apăsați Generează, apoi copiați textul în clipboard sau descărcați un fișier .txt."
+          "text": "Apăsați Generează, apoi copiați textul în clipboard sau descărcați-l ca fișier .txt."
         }
       ]
     }
@@ -86,8 +82,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Ce este Lorem Ipsum și la ce se folosește",
-      "html": "<p class=\"text-mid\">Lorem Ipsum este textul de umplutură standard utilizat în industriile de tipografie, design grafic și dezvoltare web de peste 500 de ani. Textul provine din <em>De Finibus Bonorum et Malorum</em> (Despre limitele binelui și răului) scris de Marcus Tullius Cicero în 45 î.Hr. Pasajul original a fost modificat deliberat — cuvinte au fost adăugate, eliminate și rearanjate — astfel încât textul nu are sens, dar păstrează un ritm natural și o distribuție a literelor similară cu o limbă reală.</p><p class=\"text-mid mt-3\">Generatorul Lorem Ipsum vă permite să creați rapid orice cantitate de text de exemplu pentru machete, prototipuri de interfață, designuri grafice și teste de aranjare tipografică. Instrumentul generează paragrafe, propoziții sau cuvinte în 8 stiluri de text.</p>",
+      "title": "De ce să folosiți un generator Lorem Ipsum?",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum este textul de umplutură standard, folosit în tipografie și design grafic. Textul provine din <em>De Finibus Bonorum et Malorum</em> (Despre limitele binelui și răului), scris de Marcus Tullius Cicero în anul 45 î.Hr. Pasajul original a fost modificat deliberat — cuvinte au fost adăugate, eliminate și rearanjate — astfel încât textul nu mai are sens, dar păstrează un ritm natural și o distribuție a literelor asemănătoare unei limbi reale.</p><p class=\"text-mid mb-4\">Un generator este util atunci când o machetă trebuie prezentată sau testată, iar conținutul final nu este încă pregătit — de exemplu la prezentări de site-uri, prototipuri de interfață sau proiecte grafice. Instrumentul creează paragrafe, propoziții sau cuvinte în 8 stiluri de text.</p><p class=\"text-mid\">Mai jos pe această pagină găsiți și paragraful clasic Lorem Ipsum, pregătit pentru copiere, un tabel care explică sensul celor mai frecvente cuvinte, precum și indicații pentru inserarea acestui text în programele populare.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-ro.webp",
       "imageAlt": "Generator Lorem Ipsum — Arteon"
     },
@@ -96,25 +92,34 @@
       "size": "sm"
     },
     {
+      "type": "sectionInfo",
+      "title": "Copiați paragraful clasic Lorem Ipsum fără să generați nimic",
+      "html": "<p class=\"text-mid mb-4\">Acesta este paragraful de umplutură cel mai des copiat pe internet — același pasaj apare implicit, de decenii, în Word, Adobe InDesign și în nenumărate șabloane grafice:</p><blockquote class=\"rounded-md border border-neutral-200 bg-neutral-50 p-4 text-mid italic\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote><p class=\"text-mid mt-4\">Aveți nevoie de mai mult text decât acest paragraf? Folosiți generatorul de mai sus — alegeți numărul de paragrafe, propoziții sau cuvinte și copiați exact cantitatea de care aveți nevoie, fără să repetați manual același pasaj.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
-      "title": "Cum să utilizați Generatorul Lorem Ipsum",
-      "description": "Generați text de exemplu în trei pași:",
+      "title": "Cum să utilizați Generatorul Lorem Ipsum?",
+      "description": "Generați text de umplutură în trei pași:",
       "grid": "three",
       "items": [
         {
           "icon": "RiListCheck2",
           "title": "1. Alegeți modul și cantitatea",
-          "description": "Alegeți paragrafe, propoziții sau cuvinte și setați cantitatea."
+          "description": "Alegeți paragrafe, propoziții sau cuvinte și setați cantitatea acestora."
         },
         {
           "icon": "RiPaletteLine",
           "title": "2. Alegeți stilul",
-          "description": "8 stiluri: Lorem Ipsum, Hipster, Business, Cuvinte de umplutură, Bacon, Cupcake, Pirate și Legal — fiecare cu propriul dicționar."
+          "description": "Alegeți unul din cele 8 stiluri disponibile de text de umplutură: Lorem Ipsum clasic, Hipster, Business, Cuvinte de umplutură, Bacon, Cupcake, Pirate sau Legal — fiecare cu propriul dicționar de cuvinte."
         },
         {
           "icon": "RiFileCopyLine",
           "title": "3. Copiați rezultatul",
-          "description": "Apăsați Generează, apoi copiați textul în clipboard sau descărcați un fișier .txt."
+          "description": "Apăsați Generează, apoi copiați textul în clipboard sau descărcați-l ca fișier .txt."
         }
       ]
     },
@@ -124,8 +129,17 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Istoria Lorem Ipsum — de la Cicero la designul modern",
-      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum are peste 2.000 de ani de istorie. Pasajul original provine din secțiunea 1.10.32 a lucrării <em>De Finibus Bonorum et Malorum</em> de Cicero, scrisă în 45 î.Hr. Lucrarea este un tratat filosofic despre etică — Cicero a analizat hedonismul și stoicismul, pledând pentru o abordare echilibrată a plăcerii și durerii.</p><p class=\"text-mid mb-4\">Utilizarea acestui text ca umplutură în tipografie datează din secolul al XVI-lea, când un tipograf necunoscut a folosit pasajul lui Cicero pentru a crea un catalog de fonturi. Textul a supraviețuit cinci secole, traversând epocile compoziției manuale, Linotype și fotocompoziției.</p><p class=\"text-mid mb-4\">Popularitatea modernă a Lorem Ipsum a început în anii 1960, când Letraset a plasat textul pe foi de litere transferabile folosite în studiourile de grafică. Descoperirea decisivă a venit în 1985, când Aldus Corporation a inclus Lorem Ipsum ca text implicit în PageMaker — unul dintre primele programe DTP (Desktop Publishing). Din acel moment, Lorem Ipsum a devenit standardul industriei.</p><p class=\"text-mid\">Richard McClintock, profesor de latină la Hampden-Sydney College din Virginia, a identificat sursa textului în anii 1980, descoperind că cuvintele lorem ipsum sunt un fragment corupt din latina operei lui Cicero. Cercetarea sa a confirmat că Lorem Ipsum nu este o colecție aleatorie de cuvinte, ci are rădăcini literare autentice.</p>"
+      "title": "De unde provine textul Lorem Ipsum? Istoria de la Cicero până astăzi",
+      "html": "<p class=\"text-mid mb-4\">Textul Lorem Ipsum are peste 2.000 de ani. Pasajul original provine din secțiunea 1.10.32 a tratatului <em>De Finibus Bonorum et Malorum</em>, scris de Cicero în anul 45 î.Hr. Lucrarea este un tratat filosofic despre etică — Cicero analiza hedonismul și stoicismul, pledând pentru o abordare echilibrată a plăcerii și durerii.</p><p class=\"text-mid mb-4\">Folosirea acestui text ca material de umplutură în tipografie datează din jurul anului 1500, când un tipograf neidentificat a folosit pasajul lui Cicero pentru a crea o carte de mostre de fonturi. Textul a supraviețuit cinci secole, traversând epocile compoziției manuale, ale linotipului și ale fotocompoziției.</p><p class=\"text-mid mb-4\">Popularitatea modernă a Lorem Ipsum a început în anii 1960, când compania Letraset a tipărit acest text pe foi de litere transferabile folosite în studiourile de grafică. Momentul decisiv a venit în 1985, când Aldus Corporation a integrat Lorem Ipsum ca text de umplutură implicit în programul PageMaker — unul dintre primele programe DTP (Desktop Publishing). De atunci, Lorem Ipsum a devenit standardul industriei.</p><p class=\"text-mid\">Richard McClintock, profesor de latină la Hampden-Sydney College din Virginia, a identificat sursa textului în anii 1980, descoperind că cuvintele lorem ipsum reprezintă un fragment denaturat de latină din opera lui Cicero. Cercetarea sa a confirmat că Lorem Ipsum nu este o colecție întâmplătoare de cuvinte, ci are rădăcini literare reale.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ce înseamnă cuvintele din textul Lorem Ipsum dolor sit amet?",
+      "html": "<p class=\"text-mid mb-4\">Textul Lorem Ipsum este denaturat în mod deliberat — nu este o propoziție corectă din punct de vedere gramatical în latină, așa că nu poate fi tradus în întregime. Cuvintele individuale provin însă din latina reală și au sensuri sau rădăcini etimologice documentate:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Cuvânt</th><th class=\"py-2 font-semibold\">Sens / origine</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Lorem</td><td class=\"text-primary-light0 py-2 text-sm\">Nu este un cuvânt de sine stătător — este fragmentul final al cuvântului &quot;dolorem&quot; (o formă a cuvântului &quot;dolor&quot;, durere).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Ipsum</td><td class=\"text-primary-light0 py-2 text-sm\">De la &quot;ipse&quot; — însuși, chiar acela.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Dolor</td><td class=\"text-primary-light0 py-2 text-sm\">Durere, suferință.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Sit</td><td class=\"text-primary-light0 py-2 text-sm\">Este, să fie (de la &quot;esse&quot; — a fi).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amet</td><td class=\"text-primary-light0 py-2 text-sm\">De la &quot;amare&quot; — a iubi, a-i plăcea.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Consectetur</td><td class=\"text-primary-light0 py-2 text-sm\">Formă denaturată, legată de &quot;consequi&quot; — a urma, a urmări.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Adipiscing</td><td class=\"text-primary-light0 py-2 text-sm\">De la &quot;adipisci&quot; — a obține, a tinde spre ceva.</td></tr><tr><td class=\"py-2 pr-4\">Elit</td><td class=\"text-primary-light0 py-2 text-sm\">Fragmentul final al cuvântului &quot;velit&quot; (ar vrea, o formă a verbului &quot;velle&quot; — a vrea).</td></tr></tbody></table></div><p class=\"text-mid mt-4\">De aici provine și &quot;traducerea&quot; glumeață a primelor cuvinte ca &quot;durerea însăși&quot; (dolorem ipsum) — este însă o interpretare a unor fragmente izolate, nu o traducere a întregii propoziții, care nu are sens în latină.</p>"
     },
     {
       "type": "gap",
@@ -133,24 +147,24 @@
     },
     {
       "type": "sectionSteps",
-      "title": "3 moduri de generare a conținutului",
+      "title": "Alegeți dacă aveți nevoie de paragrafe, propoziții sau cuvinte",
       "description": "Generatorul oferă 3 tipuri de conținut:",
       "grid": "three",
       "items": [
         {
           "icon": "RiParagraph",
           "title": "Paragrafe",
-          "description": "Blocuri de text clasice. Ideal pentru machete web, șabloane CMS și prototipuri de interfață."
+          "description": "Blocuri clasice de text. Ideale pentru machete de site-uri, șabloane CMS și prototipuri de interfață."
         },
         {
           "icon": "RiTextSnippet",
           "title": "Propoziții",
-          "description": "Propoziții individuale de lungime aleatorie (5–15 cuvinte). Utile pentru testarea câmpurilor de formular, descrierilor de produse și blocurilor scurte de text."
+          "description": "Propoziții individuale, cu o lungime aleatorie de 5-15 cuvinte. Utile pentru testarea câmpurilor de formular, a descrierilor de produse și a blocurilor scurte de text."
         },
         {
           "icon": "RiFontSize",
           "title": "Cuvinte",
-          "description": "Cuvinte aleatorii individuale din dicționarul selectat. Ideal pentru etichete, categorii și testarea lungimii textului în componentele UI."
+          "description": "Cuvinte individuale, alese aleatoriu din dicționarul selectat. Ideale pentru etichete, denumiri de categorii și testarea lungimii textului în componentele de interfață."
         }
       ]
     },
@@ -160,8 +174,40 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Când să utilizați Lorem Ipsum și când text real",
-      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum funcționează bine oriunde conținutul nu este încă gata dar layoutul trebuie prezentat sau testat:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Prototipuri UI și wireframe-uri</strong> — proiectarea structurii paginii fără a aștepta textul final de la client.</li><li><strong>Machete grafice</strong> — prezentarea unui design cu text de aspect realist în loc de dreptunghiuri goale.</li><li><strong>Teste de fonturi și tipografie</strong> — evaluarea lizibilității, înălțimii liniei, kerning-ului și ierarhiei titlurilor pe un bloc de text real.</li><li><strong>Șabloane CMS și teme</strong> — demonstrarea aspectului unui șablon WordPress, Shopify sau alt CMS cu conținut exemplu.</li><li><strong>Materiale tipărite</strong> — pliante, broșuri, cărți de vizită și cataloage în faza de design.</li></ul><p class=\"text-mid mb-4\"><strong>Când NU se folosește Lorem Ipsum:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Site-uri în producție</strong> — Google indexează textul de umplutură și poate considera pagina de calitate scăzută.</li><li><strong>Conținut SEO final</strong> — meta titlurile, descrierile și titlurile H1 trebuie să conțină cuvinte cheie reale.</li><li><strong>Email marketing</strong> — trimiterea mesajelor cu Lorem Ipsum este neprofesionistă și riscă să ajungă în spam.</li><li><strong>Teste de utilizabilitate cu utilizatori</strong> — utilizatorii se concentrează pe conținut. Textul de umplutură distorsionează rezultatele cercetării UX.</li></ul>"
+      "title": "Când să folosiți Lorem Ipsum și când să folosiți text real?",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum este util oriunde conținutul nu este încă pregătit, dar macheta grafică trebuie prezentată sau testată:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Prototipuri de interfață și wireframe-uri</strong> — proiectarea structurii unei pagini sau aplicații, fără să așteptați textele finale de la client.</li><li><strong>Machete grafice</strong> — prezentarea unui proiect grafic cu text de aspect realist în locul unor dreptunghiuri goale.</li><li><strong>Testarea fonturilor și a tipografiei</strong> — evaluarea lizibilității, a spațierii dintre linii, a kerningului și a hierarhiei titlurilor pe un bloc real de text.</li><li><strong>Șabloane și teme CMS</strong> — demonstrarea aspectului unui șablon WordPress, Shopify sau al altui CMS, cu conținut de exemplu.</li><li><strong>Materiale tipărite</strong> — pliante, broșuri, cărți de vizită și cataloage, în faza de proiectare.</li></ul><p class=\"text-mid mb-4\"><strong>Când NU folosiți Lorem Ipsum:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Site-uri active</strong> — Google indexează textul de umplutură și poate considera pagina de calitate scăzută. Publicarea Lorem Ipsum dăunează SEO-ului.</li><li><strong>Conținut SEO final</strong> — titlurile meta, descrierile meta și titlurile H1 trebuie să conțină cuvinte cheie reale, nu text de umplutură.</li><li><strong>Marketing prin email</strong> — trimiterea unor mesaje cu Lorem Ipsum arată neprofesionist și crește riscul de a ajunge la spam.</li><li><strong>Teste de utilizabilitate cu utilizatori reali</strong> — utilizatorii se concentrează pe conținut. Textul de umplutură distorsionează rezultatele cercetării UX.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum se inserează Lorem Ipsum în programele populare?",
+      "description": "Unele programe au propriile metode integrate de inserare a textului de umplutură:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileWordLine",
+          "title": "Microsoft Word",
+          "description": "Scrieți =lorem() în document și apăsați Enter — Word inserează paragraful standard Lorem Ipsum. Scriind =lorem(3,2) inserați 3 paragrafe de câte 2 propoziții."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Adobe InDesign",
+          "description": "Din meniul Type, alegeți Fill with Placeholder Text pentru a completa automat un cadru de text cu text de umplutură."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Site-uri web, HTML și cod",
+          "description": "Generatorul produce text simplu, fără marcaje HTML, așa că îl puteți lipi direct în codul site-ului, într-un fișier JSON cu date de test sau într-un editor precum VS Code — nu trebuie eliminat nimic."
+        },
+        {
+          "icon": "RiPuzzleLine",
+          "title": "Figma, Google Docs și altele",
+          "description": "Aceste programe nu au o funcție integrată pentru Lorem Ipsum — necesită un plugin sau lipirea textului din altă sursă. Generatorul nostru funcționează direct în browser, fără nimic de instalat."
+        }
+      ]
     },
     {
       "type": "gap",
@@ -175,33 +221,33 @@
       "items": [
         {
           "icon": "RiPaintBrushLine",
-          "title": "Designeri și UI designeri",
-          "description": "Completați rapid machetele și prototipurile cu text de aspect realist. Testați ierarhia tipografică și layouturile pe coloane."
+          "title": "Designeri grafici și UI designeri",
+          "description": "Completarea rapidă a machetelor și prototipurilor cu text de aspect realist. Testarea hierarhiei tipografice și a layout-urilor pe coloane."
         },
         {
           "icon": "RiCodeLine",
           "title": "Dezvoltatori frontend",
-          "description": "Generați text de umplutură pentru testarea componentelor, responsivității layoutului și comportamentului CSS cu diferite lungimi de conținut."
+          "description": "Generarea textului de umplutură pentru testarea componentelor, a responsivității layout-ului și a comportamentului CSS la lungimi diferite de conținut."
         },
         {
           "icon": "RiEditLine",
           "title": "Copywriteri",
-          "description": "Prototipați structura textului: câte paragrafe, lungimea propozițiilor, cum arată listele și titlurile în layoutul final."
+          "description": "Prototiparea structurii textului: câte paragrafe sunt necesare, ce lungime au propozițiile, cum vor apărea listele și titlurile în layout-ul final."
         },
         {
           "icon": "RiPrinterLine",
-          "title": "Tipografi și editori",
-          "description": "Completați șabloanele de pliante, broșuri și cataloage cu text exemplu pentru aprobarea clientului."
+          "title": "Tipografi și poligrafi",
+          "description": "Completarea șabloanelor de pliante, broșuri și cataloage cu text de umplutură, pentru aprobarea clientului înainte de livrarea conținutului final."
         },
         {
           "icon": "RiGlobalLine",
           "title": "Proprietari de site-uri",
-          "description": "Testați aspectul unui nou șablon CMS sau temă cu conținut exemplu. Evaluați cât text este necesar pe pagină."
+          "description": "Testarea aspectului unui șablon nou sau al unei teme CMS, cu conținut de exemplu. Estimarea cantității de text necesare pe fiecare pagină."
         },
         {
           "icon": "RiGraduationCapLine",
           "title": "Studenți la design",
-          "description": "Învățați aranjare grafică, tipografie și compoziție cu text de umplutură profesionist în loc de caractere aleatorii."
+          "description": "Învățarea proiectării layout-urilor grafice, a tipografiei și a compoziției cu un text de umplutură profesionist, în locul unor caractere aleatorii."
         }
       ]
     },
@@ -211,13 +257,13 @@
     },
     {
       "type": "sectionTable",
-      "title": "Compararea stilurilor de text",
+      "title": "Prin ce diferă stilurile de text de umplutură disponibile în generatorul nostru?",
       "labelHeader": "Caracteristică",
       "cols": [
         "Lorem Ipsum",
         "Hipster",
         "Business",
-        "Local",
+        "Cuvinte de umplutură",
         "Bacon",
         "Cupcake",
         "Pirate",
@@ -225,12 +271,12 @@
       ],
       "rows": [
         {
-          "label": "Limba",
+          "label": "Limbă",
           "values": [
             "Latină",
             "Engleză",
             "Engleză",
-            "Locală",
+            "Română",
             "Engleză",
             "Engleză",
             "Engleză",
@@ -242,7 +288,7 @@
           "values": [
             "Filozofie",
             "Stil de viață",
-            "Corporativ",
+            "Mediul corporativ",
             "General",
             "Gastronomie",
             "Patiserie",
@@ -263,7 +309,7 @@
           "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "label": "Umor / caracter",
+          "label": "Nivel de umor",
           "values": [
             "Neutru",
             "Mediu",
@@ -283,8 +329,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "8 stiluri de text de umplutură — toate disponibile în generator",
-      "html": "<p class=\"text-mid mb-4\">Generatorul nostru oferă 8 stiluri unice de text de umplutură — de la latina clasică la jargonul juridic. Fiecare stil are propriul dicționar de peste 90 de cuvinte și generează text cu ritm natural:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — textul clasic de umplutură în latină din opera lui Cicero. Standard al industriei de peste 500 de ani.</li><li><strong>Hipster Ipsum</strong> — vocabular al culturii hipster: artizanal, avocado, vintage, mindfulness. Ideal pentru proiecte lifestyle.</li><li><strong>Business Ipsum</strong> — jargon corporativ: sinergie, leverage, stakeholder, KPI. Pentru machete de prezentări și site-uri corporate.</li><li><strong>Cuvinte de umplutură</strong> — cuvinte aleatorii în limba locală din diverse domenii. Arată clientului cum va arăta textul în design.</li><li><strong>Bacon Ipsum</strong> — vocabular de carne și grătar: steak, brisket, barbecue. Popular printre dezvoltatori.</li><li><strong>Cupcake Ipsum</strong> — vocabular de patiserie: muffin, ciocolată, caramel, glazură. Pentru proiecte din industria alimentară.</li><li><strong>Pirate Ipsum</strong> — text pirat: ahoy, comoară, galion, rom. Pentru proiecte de divertisment și jocuri.</li><li><strong>Legal Ipsum</strong> — terminologie juridică: jurisdicție, reclamant, statut, răspundere. Pentru machete de site-uri de avocatură.</li></ul><p class=\"text-mid mb-4\">Variantele amuzante (Bacon, Cupcake, Pirate) funcționează bine în prezentările interne unde umorul îmbunătățește comunicarea echipei. Pentru prezentări profesionale folosiți Lorem Ipsum clasic sau Legal Ipsum — sunt neutre și nu distrag de la design.</p><p class=\"text-mid\">Cuvintele de umplutură sunt o opțiune unică — cuvintele în limba locală păstrează proporțiile naturale ale literelor și lungimile de cuvânt ale limbii țintă. Ideal pentru a arăta clienților o previzualizare realistă a textului.</p>"
+      "title": "Ce stiluri de text de umplutură găsiți în generator?",
+      "html": "<p class=\"text-mid mb-4\">Generatorul nostru oferă 8 stiluri unice de text de umplutură — de la latina clasică la jargonul juridic. Fiecare stil are propriul dicționar cu peste 90 de cuvinte și generează text cu un ritm natural:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — textul clasic de umplutură în latină, provenit din opera lui Cicero. Standard al industriei de peste 500 de ani.</li><li><strong>Hipster Ipsum</strong> — vocabular din cultura hipster: craft, avocado, vintage, mindfulness. Ideal pentru proiecte de stil de viață.</li><li><strong>Business Ipsum</strong> — jargon corporativ: synergy, leverage, stakeholder, KPI. Pentru machete de prezentări și site-uri ale companiilor.</li><li><strong>Cuvinte de umplutură</strong> — cuvinte românești aleatorii din diverse domenii. Îi arată clientului cum va apărea textul în limba română în cadrul proiectului.</li><li><strong>Bacon Ipsum</strong> — vocabular legat de carne și grătar: steak, brisket, barbecue. Popular printre dezvoltatori.</li><li><strong>Cupcake Ipsum</strong> — vocabular de patiserie: muffin, chocolate, caramel, frosting. Pentru proiecte din domeniul gastronomic.</li><li><strong>Pirate Ipsum</strong> — text în stil pirat: ahoy, treasure, galleon, rum. Pentru proiecte de divertisment și jocuri.</li><li><strong>Legal Ipsum</strong> — terminologie juridică: jurisdiction, plaintiff, statute, liability. Pentru machete de site-uri ale cabinetelor de avocatură.</li></ul><p class=\"text-mid mb-4\">Variantele amuzante (Bacon, Cupcake, Pirate) sunt potrivite pentru prezentări interne și proiecte în care umorul îmbunătățește comunicarea în echipă. Pentru prezentări profesionale destinate clienților, este de preferat Lorem Ipsum clasic sau Legal Ipsum — sunt neutre și nu distrag atenția de la design.</p><p class=\"text-mid\">Cuvintele de umplutură reprezintă o opțiune unică a generatorului nostru — cuvintele românești alese aleatoriu păstrează proporțiile naturale ale literelor și lungimile de cuvânt specifice limbii române. Alegeți acest stil atunci când vreți să arătați clientului un aspect realist al textului în proiect.</p>"
     },
     {
       "type": "gap",
@@ -292,8 +338,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Lorem Ipsum și SEO — textul de umplutură dăunează poziționării?",
-      "html": "<p class=\"text-mid mb-4\">Da — publicarea Lorem Ipsum pe un site în producție poate afecta negativ poziționarea în motoarele de căutare. Google analizează conținutul fiecărei pagini indexate și recunoaște textul de umplutură:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Conținut slab</strong> — o pagină cu text de umplutură nu oferă valoare utilizatorilor. Google o clasifică drept conținut slab și îi reduce poziția.</li><li><strong>Indexare nedorită</strong> — roboții Google indexează Lorem Ipsum ca și conținut de pagină. Poate apărea în rezultatele căutărilor, afectând imaginea brandului.</li><li><strong>Risipă de buget de crawling</strong> — Google alocă un buget de crawling limitat. Paginile cu Lorem Ipsum îl consumă fără beneficiu.</li><li><strong>Core Web Vitals</strong> — textul de umplutură nu afectează direct metricile, dar paginile de calitate scăzută se pot poziționa mai slab.</li></ul><p class=\"text-mid mb-4\">Cum să evitați problema: înainte de publicare, căutați pe site &quot;lorem ipsum&quot; sau &quot;dolor sit amet&quot;. În Google Search Console verificați că nicio pagină indexată nu conține text de umplutură. Folosiți <code>site:domeniulvostru.com &quot;lorem ipsum&quot;</code> în Google.</p><p class=\"text-mid\">Generatorul Lorem Ipsum este un instrument pentru faza de design. Textul de umplutură trebuie înlocuit cu conținut real înainte de publicare.</p>"
+      "title": "Publicarea Lorem Ipsum dăunează SEO-ului?",
+      "html": "<p class=\"text-mid mb-4\">Da — publicarea Lorem Ipsum pe un site activ poate afecta negativ poziționarea în motoarele de căutare. Google analizează conținutul fiecărei pagini indexate și recunoaște textul de umplutură. Iată de ce este o problemă:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Conținut sărac (thin content)</strong> — o pagină cu text de umplutură nu oferă valoare utilizatorului. Google clasifică astfel de pagini drept &quot;thin content&quot; și le reduce poziția.</li><li><strong>Indexare de conținut inutil</strong> — roboții Google indexează Lorem Ipsum ca și conținut al paginii. Acesta poate apărea în rezultatele căutărilor, afectând imaginea brandului.</li><li><strong>Risipă de buget de crawling</strong> — Google alocă fiecărui site un buget limitat pentru parcurgere. Paginile cu Lorem Ipsum consumă acest buget fără niciun beneficiu.</li></ul><p class=\"text-mid mb-4\">Cum evitați problema: înainte de publicare, căutați pe întregul site fraza &quot;lorem ipsum&quot; sau &quot;dolor sit amet&quot;. În Google Search Console, verificați dacă vreo pagină indexată mai conține text de umplutură. Folosiți comanda <code>site:domeniulvostru.ro &quot;lorem ipsum&quot;</code> în motorul de căutare Google.</p><p class=\"text-mid\">Generatorul Lorem Ipsum este un instrument pentru faza de proiectare. Textul de umplutură trebuie înlocuit cu conținut real înainte ca pagina să fie publicată.</p>"
     },
     {
       "type": "gap",
@@ -301,28 +347,77 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Ce face special acest Generator Lorem Ipsum?",
+      "title": "Ce diferențiază acest Generator Lorem Ipsum?",
       "grid": "two",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "3 moduri de generare",
-          "description": "Paragrafe, propoziții și cuvinte — control total asupra cantității generate."
+          "title": "3 moduri de generare a conținutului",
+          "description": "Paragrafe, propoziții și cuvinte — control deplin asupra cantității."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 stiluri unice de text",
-          "description": "Lorem Ipsum, Hipster, Business, Cuvinte de umplutură, Bacon, Cupcake, Pirate și Legal. Fiecare stil are peste 90 de cuvinte."
+          "description": "Lorem Ipsum, Hipster, Business, Cuvinte de umplutură, Bacon, Cupcake, Pirate și Legal. Fiecare stil are propriul dicționar cu peste 90 de cuvinte."
         },
         {
           "icon": "RiUserLine",
           "title": "Procesare locală",
-          "description": "Textul este generat în browserul dumneavoastră. Nimic nu este trimis la un server. Funcționează offline după încărcarea paginii."
+          "description": "Textul este generat direct în browser. Nimic nu este trimis pe server. Instrumentul funcționează offline după încărcarea paginii."
         },
         {
           "icon": "RiLockLine",
-          "title": "Fără înregistrare sau limite",
-          "description": "Complet gratuit. Fără înregistrare, fără autentificare, fără date personale. Fără publicitate în textul generat."
+          "title": "Fără înregistrare și fără limite",
+          "description": "Instrumentul este complet gratuit. Nu necesită înregistrare, autentificare sau date personale. Fără reclame în textul generat."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Câtă cantitate de text de umplutură vă este necesară pentru un proiect concret?",
+      "labelHeader": "Tip de proiect",
+      "cols": ["Cantitate recomandată", "Observații"],
+      "rows": [
+        {
+          "label": "Titlu H1",
+          "values": [
+            "5-10 cuvinte",
+            "Un titlu scurt și concis pentru pagină sau secțiune."
+          ]
+        },
+        {
+          "label": "Meta description",
+          "values": ["20-25 cuvinte", "Optim 150-160 de caractere."]
+        },
+        {
+          "label": "Fișă de produs",
+          "values": ["2-3 paragrafe", "Descriere scurtă plus specificații."]
+        },
+        {
+          "label": "Pagină de servicii",
+          "values": [
+            "4-6 paragrafe",
+            "Descrierea serviciului, beneficii, apel la acțiune."
+          ]
+        },
+        {
+          "label": "Articol de blog",
+          "values": ["8-15 paragrafe", "1.500-2.500 de cuvinte pentru SEO."]
+        },
+        {
+          "label": "Landing page",
+          "values": [
+            "5-8 paragrafe",
+            "Secțiune hero, beneficii, dovezi sociale, apel la acțiune."
+          ]
+        },
+        {
+          "label": "Pliant / broșură",
+          "values": ["3-5 paragrafe", "Blocuri scurte de text cu titluri."]
         }
       ]
     },
@@ -337,48 +432,78 @@
       "items": [
         {
           "question": "Ce este Lorem Ipsum?",
-          "answer": "Lorem Ipsum este textul de umplutură standard al industriilor de tipografie, design grafic și dezvoltare web. Servește la completarea layouturilor cu text de aspect realist când conținutul final nu este încă gata. Textul are un ritm natural și o distribuție a literelor similară cu o limbă reală.",
-          "answerSchemaText": "Lorem Ipsum este textul de umplutură standard al industriilor de tipografie, design grafic și dezvoltare web."
+          "answer": "Lorem Ipsum este textul de umplutură standard, folosit în industria tipografică, în design-ul grafic și în dezvoltarea de site-uri web. Servește la completarea unei machete cu text de aspect realist, atunci când conținutul final nu este încă pregătit. Textul are un ritm natural și o distribuție a literelor asemănătoare unei limbi reale, ceea ce face ca proiectul să pară credibil.",
+          "answerSchemaText": "Lorem Ipsum este textul de umplutură standard, folosit în tipografie și în design-ul web pentru a completa machetele."
         },
         {
-          "question": "De unde provine Lorem Ipsum?",
-          "answer": "Lorem Ipsum provine din De Finibus Bonorum et Malorum de Marcus Tullius Cicero, scrisă în 45 î.Hr. Este un tratat filosofic despre etică. Pasajul original din secțiunea 1.10.32 a fost modificat de un tipograf necunoscut în secolul al XVI-lea.",
-          "answerSchemaText": "Lorem Ipsum provine din De Finibus Bonorum et Malorum de Cicero, scrisă în 45 î.Hr."
+          "question": "Cum se generează Lorem Ipsum?",
+          "answer": "Cel mai simplu este să folosiți generatorul de mai sus: alegeți paragrafe, propoziții sau cuvinte, setați cantitatea, alegeți stilul de text și apăsați Generează. Textul apare imediat și îl puteți copia în clipboard sau descărca ca fișier .txt. Alternativ, unele programe, precum Microsoft Word, au propria comandă rapidă, integrată, pentru inserarea Lorem Ipsum.",
+          "answerSchemaText": "Alegeți modul și cantitatea în generatorul de mai sus, apăsați Generează, apoi copiați rezultatul."
         },
         {
-          "question": "Lorem Ipsum este latină reală?",
-          "answer": "Parțial. Conține cuvinte latine reale din opera lui Cicero, dar textul a fost modificat deliberat. Cuvintele sunt amestecate și unora le lipsesc terminațiile. Cuvinte individuale precum dolor (durere), amet (iubește) și ipsum (însuși) sunt termeni latini autentici.",
-          "answerSchemaText": "Parțial — conține cuvinte latine reale din Cicero dar textul a fost modificat și nu are sens."
+          "question": "Care este textul complet al Lorem Ipsum clasic?",
+          "answer": "Versiunea cea mai răspândită este un singur paragraf, care începe cu Lorem ipsum dolor sit amet, consectetur adipiscing elit — îl găsiți pregătit pentru copiere în secțiunea de mai sus. Nu există o singură versiune oficială, mai lungă - majoritatea generatoarelor, inclusiv acesta, creează text adițional din același dicționar de cuvinte, așa că pentru o lungime exactă este mai potrivit să folosiți generatorul decât să căutați un text fix, mai lung.",
+          "answerSchemaText": "Versiunea cea mai răspândită este un singur paragraf care începe cu Lorem ipsum dolor sit amet - disponibil în secțiunea de mai sus."
         },
         {
-          "question": "Câte paragrafe am nevoie pentru o machetă?",
-          "answer": "Depinde de tipul paginii. Landing page: 5–8. Pagină de servicii: 4–6. Articol de blog: 8–15 (1.500–2.500 cuvinte). Fișă de produs: 2–3. Generatorul creează exact cantitatea necesară.",
-          "answerSchemaText": "Depinde de tip: landing page 5–8, servicii 4–6, blog 8–15, produs 2–3 paragrafe."
+          "question": "De unde provine textul Lorem Ipsum?",
+          "answer": "Lorem Ipsum provine din De Finibus Bonorum et Malorum (Despre limitele binelui și răului), scris de Marcus Tullius Cicero în anul 45 î.Hr. Este un tratat filosofic despre etică. Pasajul original din secțiunea 1.10.32 a fost modificat deliberat de un tipograf neidentificat, în secolul al XVI-lea — cuvinte au fost adăugate, eliminate și rearanjate, astfel încât textul nu mai are sens, dar a păstrat aspectul natural al limbii latine.",
+          "answerSchemaText": "Lorem Ipsum provine din De Finibus Bonorum et Malorum, scris de Cicero în anul 45 î.Hr."
         },
         {
-          "question": "Pot folosi Lorem Ipsum pe un site în producție?",
-          "answer": "Nu. Lorem Ipsum este doar pentru faza de design. Publicarea textului de umplutură dăunează SEO-ului (Google îl clasifică drept conținut slab), afectează imaginea brandului și poate fi indexat. Înlocuiți întotdeauna înainte de publicare.",
-          "answerSchemaText": "Nu — dăunează SEO-ului și imaginii brandului. Înlocuiți întotdeauna cu conținut real înainte de publicare."
+          "question": "Lorem Ipsum este latină reală sau o limbă inventată?",
+          "answer": "Sunt cuvinte latine reale, dar nu o propoziție latină reală. Lorem Ipsum conține cuvinte latine autentice, luate din opera lui Cicero, dar textul a fost denaturat în mod deliberat - cuvintele sunt amestecate, unora le lipsesc terminațiile, iar altele au fost introduse fără să aibă vreo legătură. Așadar nu este o limbă inventată, ci o aranjare lipsită de sens a unei limbi reale.",
+          "answerSchemaText": "Folosește cuvinte latine reale din opera lui Cicero, dar acestea sunt amestecate în mod deliberat într-o aranjare fără sens."
         },
         {
-          "question": "Lorem Ipsum dăunează SEO-ului?",
-          "answer": "Da, dacă este publicat pe un site în producție. Google recunoaște textul de umplutură și poate considera pagina de calitate scăzută. Folosiți site:domeniulvostru.com lorem ipsum în Google pentru verificare.",
-          "answerSchemaText": "Da, pe site-uri în producție — Google recunoaște textul de umplutură și îl clasifică drept conținut slab."
+          "question": "Lorem Ipsum înseamnă durerea însăși?",
+          "answer": "Primele cuvinte se referă la durere, dar nu este o traducere exactă. Lorem este fragmentul final al cuvântului dolorem (o formă a lui dolor, durere), iar ipsum înseamnă însuși. De aici provine gluma dolorem ipsum, durerea însăși. Este, totuși, o interpretare a două fragmente izolate, nu o traducere a întregii propoziții, care nu are sens în latină.",
+          "answerSchemaText": "Parțial - primele cuvinte se referă la dolor (durere) și ipsum (însuși), dar nu este o traducere completă."
+        },
+        {
+          "question": "Cum se pronunță Lorem Ipsum?",
+          "answer": "Textul se citește așa cum este scris, împărțind cuvintele în silabe în stilul latinei clasice: LO-rem IP-sum DO-lor SIT a-MET, con-sec-te-TUR a-di-pis-CING E-lit. Nu există o pronunție oficială unică, întrucât nu este o limbă vie - majoritatea oamenilor îl citesc simplu, fonetic, conform regulilor de citire a latinei.",
+          "answerSchemaText": "Se citește fonetic, împărțit în silabe conform regulilor latinei clasice: LO-rem IP-sum DO-lor SIT a-MET."
+        },
+        {
+          "question": "Lorem Ipsum se poate traduce în limba română?",
+          "answer": "Nu, pentru că textul nu este o propoziție corectă în latină, ci o secvență denaturată deliberat - o traducere a întregului fragment nu ar avea sens în nicio limbă. Generatorul nostru oferă, în schimb, stilul dedicat Cuvinte de umplutură, care alege cuvinte românești în locul celor latine, păstrând proporțiile naturale ale lungimii literelor și cuvintelor specifice limbii române. Este cel mai apropiat echivalent al Lorem Ipsum în limba română.",
+          "answerSchemaText": "Nu - textul latin este denaturat deliberat și nu are o traducere oficială. Folosiți stilul Cuvinte de umplutură din generator."
+        },
+        {
+          "question": "Pot genera Lorem Ipsum ca fișier HTML sau PDF?",
+          "answer": "Generatorul produce text simplu (plain text), fără marcaje HTML și fără export către PDF. Acest lucru este, de fapt, convenabil atunci când lipiți textul în cod, într-un fișier JSON cu date de test sau într-un editor de cod, pentru că nu trebuie eliminată nicio formatare. Dacă aveți nevoie de un fișier PDF, lipiți textul copiat într-un editor de text, precum Word sau Google Docs, și salvați documentul ca PDF.",
+          "answerSchemaText": "Nu - generatorul produce text simplu, fără marcaje HTML. Pentru PDF, lipiți textul într-un editor și salvați ca PDF."
+        },
+        {
+          "question": "De câte paragrafe Lorem Ipsum am nevoie pentru o machetă?",
+          "answer": "Depinde de tipul paginii. Pentru un landing page, de regulă sunt suficiente 5-8 paragrafe (secțiune hero, beneficii, dovezi sociale, apel la acțiune). O pagină de servicii necesită 4-6 paragrafe. Un articol de blog înseamnă 8-15 paragrafe (1.500-2.500 de cuvinte). O fișă de produs are nevoie de doar 2-3 paragrafe. Generatorul vă permite să creați exact cantitatea de care aveți nevoie.",
+          "answerSchemaText": "Depinde de tipul paginii: landing page 5-8 paragrafe, pagină de servicii 4-6, articol de blog 8-15, fișă de produs 2-3."
+        },
+        {
+          "question": "Pot folosi Lorem Ipsum pe un site activ?",
+          "answer": "Nu. Lorem Ipsum este destinat exclusiv fazei de proiectare. Publicarea textului de umplutură pe un site activ dăunează SEO-ului, pentru că Google îl clasifică drept conținut sărac (thin content), și afectează negativ și imaginea brandului în percepția vizitatorilor. Înlocuiți întotdeauna textul de umplutură cu conținut real, înainte ca pagina să fie publicată.",
+          "answerSchemaText": "Nu - textul de umplutură dăunează SEO-ului și imaginii brandului. Înlocuiți-l mereu cu conținut real înainte de publicare."
+        },
+        {
+          "question": "Care este diferența dintre Lorem Ipsum și dummy text?",
+          "answer": "Sunt sinonime. Lorem Ipsum, dummy text, placeholder text, blind text, filler text și text de umplutură - toți acești termeni denumesc un text folosit temporar în locul conținutului final. Lorem Ipsum este un text concret care provine de la Cicero, în timp ce dummy text este un concept mai larg care include orice text de umplutură.",
+          "answerSchemaText": "Sunt sinonime - Lorem Ipsum este un text concret de la Cicero, dummy text este conceptul general de text de umplutură."
         },
         {
           "question": "Ce sunt Hipster Ipsum și Business Ipsum?",
-          "answer": "Sunt variante tematice de text de umplutură. Hipster Ipsum folosește vocabular hipster (artizanal, avocado, vintage). Business Ipsum este jargon corporativ (sinergie, leverage, stakeholder, KPI). Ambele generează text cu ritm natural și vocabular sectorial.",
-          "answerSchemaText": "Variante tematice — Hipster folosește vocabular lifestyle, Business folosește jargon corporativ."
+          "answer": "Sunt variante tematice ale textului de umplutură. Hipster Ipsum folosește vocabular din cultura hipster - craft, avocado, vintage, mindfulness. Business Ipsum este jargon corporativ - synergy, leverage, stakeholder, KPI. Ambele păstrează același ritm natural ca Lorem Ipsum clasic, dar folosesc un vocabular specific unui domeniu, fiind potrivite pentru prezentări interne, unde puțin umor ajută comunicarea în echipă.",
+          "answerSchemaText": "Variante tematice ale Lorem Ipsum - Hipster folosește vocabular de stil de viață, Business folosește jargon corporativ."
         },
         {
           "question": "Generatorul este gratuit și sigur?",
-          "answer": "Da. Complet gratuit, fără înregistrare și fără limite. Totul este generat local în browser — nimic nu este trimis la un server. Fără tracking, fără cookie-uri, funcționează offline după încărcare.",
-          "answerSchemaText": "Da — gratuit, fără înregistrare, procesare locală în browser, fără colectare de date."
+          "answer": "Da. Generatorul Lorem Ipsum este complet gratuit, fără înregistrare și fără limite. Întregul text este generat local, în browser - nimic nu este trimis pe server. Instrumentul nu colectează date personale, nu folosește cookie-uri de urmărire și continuă să funcționeze offline după încărcarea paginii.",
+          "answerSchemaText": "Da - gratuit, fără înregistrare, procesare locală în browser, fără colectare de date."
         },
         {
-          "question": "Câte cuvinte are un paragraf standard?",
-          "answer": "Paragraful generat are de obicei 4–7 propoziții, adică aproximativ 40–90 de cuvinte. Primul paragraf original al lui Cicero are aproximativ 69 de cuvinte și începe cu Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "answerSchemaText": "Paragraful generat are de obicei 4–7 propoziții, adică aproximativ 40–90 de cuvinte."
+          "question": "Câte cuvinte are un paragraf standard de Lorem Ipsum?",
+          "answer": "Un paragraf generat are de obicei 4-7 propoziții, adică în jur de 40-90 de cuvinte. Paragraful clasic Lorem Ipsum, disponibil pentru copiere în secțiunea de mai sus, are aproximativ 69 de cuvinte și începe cu Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "answerSchemaText": "Un paragraf generat are de obicei 4-7 propoziții, adică în jur de 40-90 de cuvinte."
         }
       ]
     },
@@ -389,7 +514,7 @@
     {
       "type": "contactForm",
       "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
-      "description": "Aveți o idee pentru o funcționalitate nouă, ați găsit un bug sau doriți să sugerați alt instrument? Scrieți-ne — răspundem în 24 de ore.",
+      "description": "Aveți o idee pentru o funcționalitate nouă, ați găsit o eroare sau doriți să propuneți alt instrument care v-ar ușura munca? Scrieți-ne — răspundem în 24 de ore.",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-ro.webp",
       "imageAlt": "Generator Lorem Ipsum — Arteon",
       "defaultSubject": "Feedback: Generator Lorem Ipsum"
