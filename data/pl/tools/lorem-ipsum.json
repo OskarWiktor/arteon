@@ -2,14 +2,14 @@
   "toolKey": "loremIpsum",
   "locale": "pl",
   "metadata": {
-    "title": "Darmowy generator Lorem Ipsum. Skopiuj przykładowy tekst do mockupów, prototypów i projektów graficznych",
-    "description": "Darmowy generator lorem ipsum wraz z 8 stylami przykładowych tekstów w tym: Bacon Ipsum, Cupcake Ipsum czy Legal Ipsum. Skopiuj przykładowy tekst w postaci akapitów, zdań lub słów.",
+    "title": "Wygeneruj Lorem Ipsum - darmowy generator tekstu zastępczego",
+    "description": "Wygeneruj dowolną ilość tekstu Lorem Ipsum lub skopiuj klasyczny, pełny akapit bez generowania. Sprawdź też, co znaczy Lorem Ipsum i skąd pochodzi ten tekst.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-pl.webp",
     "path": "/narzedzia/generator-lorem-ipsum"
   },
   "hero": {
-    "title": "Darmowy generator Lorem Ipsum. Skopiuj przykładowy tekst do mockupów, prototypów i projektów graficznych",
-    "description": "Darmowy generator lorem ipsum wraz z 8 stylami przykładowych tekstów w tym: Bacon Ipsum, Cupcake Ipsum czy Legal Ipsum. Skopiuj przykładowy tekst w postaci akapitów, zdań lub słów.",
+    "title": "Wygeneruj tekst Lorem Ipsum w 8 stylach lub skopiuj pełny, oryginalny fragment Lorem Ipsum",
+    "description": "Wybierz ilość akapitów, zdań lub słów i kliknij Generuj - zastępczy tekst Lorem Ipsum pojawi się natychmiast. Możesz również skopiować klasyczny, najczęściej używany akapit, dostępny pod narzędziem.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-pl.webp"
   },
   "breadcrumbs": {
@@ -24,7 +24,7 @@
   },
   "schemas": {
     "software": {
-      "name": "Generator Lorem Ipsum - tekst przykładowy, akapity, zdania i losowe słowa",
+      "name": "Generator Lorem Ipsum - darmowy tekst zastępczy z klasycznym akapitem i 8 stylami",
       "alternateName": [
         "Generator tekstu przykładowego",
         "Dummy text generator po polsku",
@@ -33,6 +33,8 @@
         "Wypełniacz tekstu",
         "Blind text generator",
         "Generator tekstu zastępczego",
+        "Co znaczy lorem ipsum",
+        "Lorem ipsum pełny tekst",
         "Bacon Ipsum generator",
         "Cupcake Ipsum generator",
         "Pirate Ipsum generator",
@@ -41,32 +43,26 @@
         "Business Ipsum generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Darmowy generator lorem ipsum z 8 stylami tekstu. Generuj akapity, zdania lub słowa, kopiuj do schowka albo pobierz jako plik .txt.",
+      "description": "Darmowy generator lorem ipsum z 8 stylami tekstu i klasycznym akapitem gotowym do skopiowania. Wygeneruj akapity, zdania lub słowa, sprawdź znaczenie i historię tekstu, skopiuj do schowka albo pobierz jako plik txt.",
       "featureList": [
-        "Generowanie akapitów lorem ipsum",
-        "Generowanie pojedynczych zdań",
-        "Generowanie losowych słów",
-        "Lorem Ipsum — łacina z De Finibus",
-        "Hipster Ipsum — słowa z kultury hipsterskiej",
-        "Business Ipsum — żargon korporacyjny",
-        "Polski wypełniacz — losowe polskie słowa",
-        "Bacon Ipsum — słownictwo kulinarne i grillowe",
-        "Cupcake Ipsum — słownictwo cukiernicze",
-        "Pirate Ipsum — tekst w stylu pirackim",
-        "Legal Ipsum — terminologia prawnicza",
-        "Kopiowanie tekstu do schowka",
+        "Generowanie akapitów, zdań lub losowych słów w wybranej liczbie",
+        "8 stylów tekstu: klasyczna łacina, Hipster, Business, Polski wypełniacz, Bacon, Cupcake, Pirate i Legal Ipsum",
+        "Gotowy, klasyczny akapit Lorem Ipsum do skopiowania bez generowania niczego",
+        "Tabela z etymologią najczęstszych słów z tekstu Lorem Ipsum",
+        "Wskazówki, jak wstawić Lorem Ipsum w Wordzie i Adobe InDesign",
+        "Kopiowanie wygenerowanego tekstu do schowka jednym kliknięciem",
         "Pobieranie wyniku jako plik .txt",
-        "Przetwarzanie lokalne w przeglądarce"
+        "Przetwarzanie w całości lokalne w przeglądarce"
       ]
     },
     "howTo": {
-      "name": "Jak używać generatora Lorem Ipsum",
-      "description": "Wygeneruj tekst przykładowy lorem ipsum w kilka sekund. Wybierz tryb, styl i format, a następnie skopiuj lub pobierz wynik.",
+      "name": "Jak wygenerować tekst Lorem Ipsum",
+      "description": "Wygeneruj tekst przykładowy lorem ipsum w kilka sekund. Wybierz tryb, styl i liczbę, a następnie skopiuj lub pobierz wynik.",
       "totalTime": "PT1M",
       "steps": [
         {
           "name": "Wybierz tryb generowania",
-          "text": "Wybierz akapity, zdania lub słowa i ustaw ich ilość."
+          "text": "Wybierz akapity, zdania lub słowa i ustaw ich liczbę."
         },
         {
           "name": "Wybierz styl tekstu",
@@ -86,14 +82,23 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Czym jest Lorem Ipsum i do czego służy",
-      "html": "<p class=\"text-mid\">Lorem Ipsum to standardowy tekst zastępczy używany w branży poligraficznej, projektowania graficznego i tworzenia stron internetowych od ponad 500 lat. Tekst pochodzi z dzieła <em>De Finibus Bonorum et Malorum</em> (O granicach dobra i zła) napisanego przez Marka Tulliusza Cycerona w 45 roku p.n.e. Oryginalny fragment został celowo zmodyfikowany - dodano, usunięto i zamieniono słowa - tak aby tekst nie miał sensu, ale zachował naturalny rytm i rozkład liter zbliżone do prawdziwego języka.</p><p class=\"text-mid mt-3\">Generator Lorem Ipsum pozwala szybko utworzyć dowolną ilość tekstu przykładowego do mockupów, prototypów UI, projektów graficznych i testowania układów typograficznych. Narzędzie generuje akapity, zdania lub słowa w 8 stylach tekstu.</p>",
+      "title": "Po co używać generatora Lorem Ipsum?",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum to standardowy tekst zastępczy używany w projektowaniu graficznym czy stronach internetowych. Tekst pochodzi z dzieła <em>De Finibus Bonorum et Malorum</em> (O granicach dobra i zła) napisanego przez Marka Tulliusza Cycerona w 45 roku p.n.e. Oryginalny fragment został celowo zmodyfikowany - dodano, usunięto i zamieniono słowa - tak aby tekst nie miał sensu, ale zachował naturalny rytm i rozkład liter zbliżony do prawdziwego języka.</p><p class=\"text-mid mb-4\">Generatora używa się wtedy, gdy układ graficzny musi zostać zaprezentowany lub przetestowany, a finalna treść nie jest jeszcze gotowa np. przy wizualizacjach stron, prototypach UI czy projektach graficznych. Narzędzie tworzy akapity, zdania lub słowa w 8 stylach.</p><p class=\"text-mid\">Niżej znajdziesz też klasyczny, gotowy do skopiowania akapit Lorem Ipsum, tabelę ze znaczeniem najczęstszych słów oraz wskazówki, jak wstawić ten tekst w popularnych programach.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-pl.webp",
       "imageAlt": "Generator Lorem Ipsum - tekst przykładowy - Arteon"
     },
     {
       "type": "gap",
       "size": "sm"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Skopiuj klasyczny tekst Lorem Ipsum bez generowania",
+      "html": "<p class=\"text-mid mb-4\">To najczęściej powielany akapit tekstu zastępczego w internecie - ten sam fragment od dekad pojawia się domyślnie w Wordzie, Adobe InDesign i niezliczonych szablonach graficznych:</p><blockquote class=\"rounded-md border border-neutral-200 bg-neutral-50 p-4 text-mid italic\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote><p class=\"text-mid mt-4\">Potrzebujesz więcej tekstu niż ten jeden akapit? Użyj generatora powyżej - wybierz liczbę akapitów, zdań lub słów i skopiuj dokładnie taką ilość, jakiej potrzebujesz, bez ręcznego powielania tego samego fragmentu.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionSteps",
@@ -109,7 +114,7 @@
         {
           "icon": "RiPaletteLine",
           "title": "2. Wybierz styl",
-          "description": "8 stylów: Lorem Ipsum, Hipster, Business, Polski, Bacon, Cupcake, Pirate i Legal — każdy z własną bazę słów."
+          "description": "Wybierz jeden z 8 dostępnych stylów zastępczego tekstu: klasyczny Lorem Ipsum, Hipster, Business, Polski, Bacon, Cupcake, Pirate czy Legal — każdy z własną bazą słów."
         },
         {
           "icon": "RiFileCopyLine",
@@ -124,8 +129,17 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Historia Lorem Ipsum - od Cycerona do współczesnego designu",
-      "html": "<p class=\"text-mid mb-4\">Tekst Lorem Ipsum ma ponad 2000 lat historii. Oryginalny fragment pochodzi z rozdziału 1.10.32 traktatu <em>De Finibus Bonorum et Malorum</em> autorstwa Cycerona, napisanego w 45 roku p.n.e. Dzieło to jest rozprawa filozoficzna o etyce - Cyceron analizował hedonizm i stoicyzm, argumentując za umiarkowanym podejściem do przyjemności i bólu.</p><p class=\"text-mid mb-4\">Użycie tego tekstu jako wypełniacza w drukarstwie datuje się na lata 1500, kiedy niezidentyfikowany drukarz wykorzystał fragment Cycerona do stworzenia próbnej książki czcionek. Tekst przetrwał pięć wieków, przechodząc przez erę druku ręcznego, linotypu i fotoskładu.</p><p class=\"text-mid mb-4\">Współczesna popularność Lorem Ipsum zaczęła się w latach 60. XX wieku, gdy firma Letraset umieściła ten tekst na arkuszach z literami transferowymi używanymi w studio graficznym. Ostateczny przełom nastąpił w 1985 roku, gdy Aldus Corporation wbudował Lorem Ipsum jako domyślny tekst zastępczy w programie PageMaker - jednym z pierwszych programów DTP (Desktop Publishing). Od tego momentu Lorem Ipsum stał się branżowym standardem.</p><p class=\"text-mid\">Richard McClintock, profesor łaciny z Hampden-Sydney College w Wirginii, zidentyfikował źródło tekstu w latach 80., odkrywając, że słowa lorem ipsum to zniekształcony fragment łaciny z dzieła Cycerona. Jego badanie potwierdziło, że Lorem Ipsum nie jest przypadkowym zbiorem słów, lecz ma realne korzenie literackie.</p>"
+      "title": "Skąd pochodzi tekst Lorem Ipsum? Historia od Cycerona do dzisiaj",
+      "html": "<p class=\"text-mid mb-4\">Tekst Lorem Ipsum ma ponad 2000 lat. Oryginalny fragment pochodzi z rozdziału 1.10.32 traktatu <em>De Finibus Bonorum et Malorum</em> autorstwa Cycerona, napisanego w 45 roku p.n.e. Dzieło to jest rozprawą filozoficzną o etyce - Cyceron analizował hedonizm i stoicyzm, argumentując za umiarkowanym podejściem do przyjemności i bólu.</p><p class=\"text-mid mb-4\">Użycie tego tekstu jako wypełniacza w drukarstwie datuje się na rok około 1500, kiedy niezidentyfikowany drukarz wykorzystał fragment Cycerona do stworzenia próbnej książki czcionek. Tekst przetrwał pięć wieków, przechodząc przez erę druku ręcznego, linotypu i fotoskładu.</p><p class=\"text-mid mb-4\">Współczesna popularność Lorem Ipsum zaczęła się w latach 60. XX wieku, gdy firma Letraset umieściła ten tekst na arkuszach z literami transferowymi używanymi w studiach graficznych. Ostateczny przełom nastąpił w 1985 roku, gdy Aldus Corporation wbudował Lorem Ipsum jako domyślny tekst zastępczy w programie PageMaker - jednym z pierwszych programów DTP (Desktop Publishing). Od tego momentu Lorem Ipsum stał się branżowym standardem.</p><p class=\"text-mid\">Richard McClintock, profesor łaciny z Hampden-Sydney College w Wirginii, zidentyfikował źródło tekstu w latach 80., odkrywając, że słowa lorem ipsum to zniekształcony fragment łaciny z dzieła Cycerona. Jego badanie potwierdziło, że Lorem Ipsum nie jest przypadkowym zbiorem słów, lecz ma realne korzenie literackie.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Co znaczą słowa w tekście Lorem Ipsum dolor sit amet?",
+      "html": "<p class=\"text-mid mb-4\">Tekst Lorem Ipsum jest celowo zniekształcony - to nie jest gramatycznie poprawne zdanie po łacinie, więc nie da się go w całości przetłumaczyć. Poszczególne słowa pochodzą jednak z prawdziwej łaciny i mają udokumentowane znaczenia lub korzenie etymologiczne:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Słowo</th><th class=\"py-2 font-semibold\">Znaczenie / pochodzenie</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Lorem</td><td class=\"text-primary-light0 py-2 text-sm\">Nie jest samodzielnym słowem - to obcięty koniec słowa &quot;dolorem&quot; (forma słowa &quot;dolor&quot;, ból).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Ipsum</td><td class=\"text-primary-light0 py-2 text-sm\">Od &quot;ipse&quot; - sam, samo, ten sam.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Dolor</td><td class=\"text-primary-light0 py-2 text-sm\">Ból, cierpienie.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Sit</td><td class=\"text-primary-light0 py-2 text-sm\">Jest, niech będzie (od &quot;esse&quot; - być).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amet</td><td class=\"text-primary-light0 py-2 text-sm\">Od &quot;amare&quot; - kochać, lubić.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Consectetur</td><td class=\"text-primary-light0 py-2 text-sm\">Zniekształcona forma związana z &quot;consequi&quot; - następować, ścigać.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Adipiscing</td><td class=\"text-primary-light0 py-2 text-sm\">Od &quot;adipisci&quot; - osiągać, dążyć do czegoś.</td></tr><tr><td class=\"py-2 pr-4\">Elit</td><td class=\"text-primary-light0 py-2 text-sm\">Obcięty koniec słowa &quot;velit&quot; (chciałby, forma od &quot;velle&quot; - chcieć).</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Stąd popularny, żartobliwy &quot;przekład&quot; pierwszych słów jako &quot;ból sam w sobie&quot; (dolorem ipsum) - to jednak interpretacja pojedynczych fragmentów, nie tłumaczenie całego zdania, które po łacinie nie ma sensu.</p>"
     },
     {
       "type": "gap",
@@ -133,7 +147,7 @@
     },
     {
       "type": "sectionSteps",
-      "title": "3 tryby generowania treści",
+      "title": "Wybierz, czy potrzebujesz akapitów, zdań czy słów",
       "description": "Generator oferuje 3 typy treści:",
       "grid": "three",
       "items": [
@@ -160,8 +174,40 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kiedy używać Lorem Ipsum, a kiedy prawdziwego tekstu",
+      "title": "Kiedy używać Lorem Ipsum, a kiedy prawdziwego tekstu?",
       "html": "<p class=\"text-mid mb-4\">Lorem Ipsum sprawdza się wszędzie tam, gdzie treść nie jest jeszcze gotowa, ale układ graficzny musi być zaprezentowany lub przetestowany:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Prototypy UI i wireframe'y</strong> - projektowanie struktury strony lub aplikacji bez oczekiwania na finalne teksty od klienta.</li><li><strong>Mockupy graficzne</strong> - prezentacja projektu graficznego z realistycznie wyglądającym tekstem zamiast pustych prostokątów.</li><li><strong>Testowanie czcionek i typografii</strong> - ocena czytelności, interlinii, kerningu i hierarchii nagłówków na rzeczywistym bloku tekstu.</li><li><strong>Szablony i motywy CMS</strong> - demonstracja wyglądu szablonu WordPress, Shopify lub innego CMS z przykładową treścią.</li><li><strong>Materiały drukowane</strong> - ulotki, broszury, wizytówki i katalogi w fazie projektowej.</li></ul><p class=\"text-mid mb-4\"><strong>Kiedy NIE używać Lorem Ipsum:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Strony produkcyjne</strong> - Google indeksuje tekst zastępczy i może uznać stronę za niskiej jakości. Opublikowanie lorem ipsum na stronie szkodzi SEO.</li><li><strong>Finalne treści SEO</strong> - meta title, meta description i nagłówki H1 muszą zawierać prawdziwe słowa kluczowe, nie wypełniacz.</li><li><strong>E-mail marketing</strong> - wysyłanie wiadomości z lorem ipsum to brak profesjonalizmu i ryzyko trafienia do spamu.</li><li><strong>Testy użyteczności z użytkownikami</strong> - użytkownicy skupiają się na treści. Tekst zastępczy zniekształca wyniki badań UX.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak wstawić Lorem Ipsum w popularnych programach?",
+      "description": "Część programów ma własne, wbudowane sposoby wstawienia tekstu zastępczego:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileWordLine",
+          "title": "Microsoft Word",
+          "description": "Wpisz =lorem() w dokumencie i naciśnij Enter - Word wstawi standardowy akapit Lorem Ipsum. Wpisując =lorem(3,2) wstawisz 3 akapity po 2 zdania."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Adobe InDesign",
+          "description": "Z menu Type wybierz Fill with Placeholder Text, aby automatycznie wypełnić ramkę tekstową tekstem zastępczym."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Strony WWW, HTML i kod",
+          "description": "Generator tworzy czysty tekst bez znaczników HTML, więc możesz go wkleić wprost do swojego kodu, pliku JSON z danymi testowymi albo edytora w VS Code - bez niczego do usuwania."
+        },
+        {
+          "icon": "RiPuzzleLine",
+          "title": "Figma, Google Docs i inne",
+          "description": "Te programy nie mają wbudowanej funkcji Lorem Ipsum - wymagają dodatku albo wklejenia tekstu z zewnątrz. Nasz generator działa od razu w przeglądarce, bez instalowania niczego."
+        }
+      ]
     },
     {
       "type": "gap",
@@ -211,7 +257,7 @@
     },
     {
       "type": "sectionTable",
-      "title": "Porównanie stylów tekstu zastępczego",
+      "title": "Czym różnią się poszczególne dostępne style tekstu zastępczego w naszym generatorze?",
       "labelHeader": "Cecha",
       "cols": [
         "Lorem Ipsum",
@@ -283,8 +329,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "8 stylów tekstu zastępczego — każdy dostępny w generatorze",
-      "html": "<p class=\"text-mid mb-4\">Nasz generator oferuje 8 unikatowych stylów tekstu zastępczego — od klasycznej łaciny po żargon prawniczy. Każdy styl ma własną bazę ponad 90 słów i generuje tekst o naturalnym rytmie:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — klasyczny tekst zastępczy z łaciny, pochodzący z dzieła Cycerona. Branżowy standard od ponad 500 lat.</li><li><strong>Hipster Ipsum</strong> — słownictwo z kultury hipsterskiej: craft, avocado, vintage, mindfulness. Idealny do projektów lifestyle.</li><li><strong>Business Ipsum</strong> — żargon korporacyjny: synergy, leverage, stakeholder, KPI. Do mockupów prezentacji i stron firmowych.</li><li><strong>Polski wypełniacz</strong> — losowe polskie słowa z różnych dziedzin. Pokazuje klientowi, jak tekst po polsku będzie wyglądał w projekcie.</li><li><strong>Bacon Ipsum</strong> — słowa związane z mięsem i grillowaniem: steak, brisket, barbecue. Popularny wśród developerów.</li><li><strong>Cupcake Ipsum</strong> — słownictwo cukiernicze: muffin, chocolate, caramel, frosting. Do projektów branży gastronomicznej.</li><li><strong>Pirate Ipsum</strong> — tekst w stylu pirackim: ahoy, treasure, galleon, rum. Do projektów rozrywkowych i gier.</li><li><strong>Legal Ipsum</strong> — terminologia prawnicza: jurisdiction, plaintiff, statute, liability. Do mockupów stron kancelarii.</li></ul><p class=\"text-mid mb-4\">Zabawne warianty (Bacon, Cupcake, Pirate) sprawdzają się w prezentacjach wewnętrznych i projektach, gdzie humor poprawia komunikację w zespole. Do profesjonalnych prezentacji klienckich lepiej używać klasycznego Lorem Ipsum lub Legal Ipsum — są neutralne i nie odciągają uwagi od projektu.</p><p class=\"text-mid\">Polski wypełniacz to unikalna opcja naszego generatora — losowe polskie słowa zachowują naturalne proporcje liter i długości słów charakterystyczne dla języka polskiego. Idealny, gdy chcesz pokazać klientowi realistyczny wygląd tekstu w projekcie.</p>"
+      "title": "Jakie style tekstu zastępczego znajdziesz w generatorze?",
+      "html": "<p class=\"text-mid mb-4\">Nasz generator oferuje 8 unikatowych stylów tekstu zastępczego — od klasycznej łaciny po żargon prawniczy. Każdy styl ma własną bazę ponad 90 słów i generuje tekst o naturalnym rytmie:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — klasyczny tekst zastępczy z łaciny, pochodzący z dzieła Cycerona. Branżowy standard od ponad 500 lat.</li><li><strong>Hipster Ipsum</strong> — słownictwo z kultury hipsterskiej: craft, avocado, vintage, mindfulness. Idealny do projektów lifestyle.</li><li><strong>Business Ipsum</strong> — żargon korporacyjny: synergy, leverage, stakeholder, KPI. Do mockupów prezentacji i stron firmowych.</li><li><strong>Polski wypełniacz</strong> — losowe polskie słowa z różnych dziedzin. Pokazuje klientowi, jak tekst po polsku będzie wyglądał w projekcie.</li><li><strong>Bacon Ipsum</strong> — słowa związane z mięsem i grillowaniem: steak, brisket, barbecue. Popularny wśród developerów.</li><li><strong>Cupcake Ipsum</strong> — słownictwo cukiernicze: muffin, chocolate, caramel, frosting. Do projektów branży gastronomicznej.</li><li><strong>Pirate Ipsum</strong> — tekst w stylu pirackim: ahoy, treasure, galleon, rum. Do projektów rozrywkowych i gier.</li><li><strong>Legal Ipsum</strong> — terminologia prawnicza: jurisdiction, plaintiff, statute, liability. Do mockupów stron kancelarii.</li></ul><p class=\"text-mid mb-4\">Zabawne warianty (Bacon, Cupcake, Pirate) sprawdzają się w prezentacjach wewnętrznych i projektach, gdzie humor poprawia komunikację w zespole. Do profesjonalnych prezentacji klienckich lepiej użyć klasycznego Lorem Ipsum lub Legal Ipsum — są neutralne i nie odciągają uwagi od projektu.</p><p class=\"text-mid\">Polski wypełniacz to unikalna opcja naszego generatora — losowe polskie słowa zachowują naturalne proporcje liter i długości słów charakterystyczne dla języka polskiego. Wybierz ten styl, gdy chcesz pokazać klientowi realistyczny wygląd tekstu w projekcie.</p>"
     },
     {
       "type": "gap",
@@ -292,8 +338,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Lorem Ipsum a SEO - czy tekst zastępczy szkodzi pozycjonowaniu",
-      "html": "<p class=\"text-mid mb-4\">Tak - opublikowanie Lorem Ipsum na stronie produkcyjnej może negatywnie wpłynąć na pozycjonowanie. Google analizuje treść każdej zindeksowanej strony i rozpoznaje tekst zastępczy. Oto dlaczego to problem:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Thin content</strong> - strona z tekstem zastępczym nie oferuje wartości użytkownikowi. Google klasyfikuje takie strony jako &quot;thin content&quot; i obniża ich pozycję.</li><li><strong>Indeksowanie śmieci</strong> - roboty Google indeksują Lorem Ipsum jako treść strony. Może to pojawić się w wynikach wyszukiwania, co wpływa na wizerunek marki.</li><li><strong>Utrata budżetu crawlowania</strong> - Google przeznacza ograniczony budżet na crawlowanie każdej witryny. Strony z lorem ipsum zużywają ten budżet bez korzyści.</li><li><strong>Core Web Vitals</strong> - tekst zastępczy nie wpływa bezpośrednio na metryki wydajności, ale strony niskiej jakości mogą być gorzej oceniane w rankingu ogólnym.</li></ul><p class=\"text-mid mb-4\">Jak uniknąć problemu: przed opublikowaniem strony przeszukaj cały serwis pod kątem frazy &quot;lorem ipsum&quot; lub &quot;dolor sit amet&quot;. W Google Search Console sprawdź, czy żadna zindeksowana strona nie zawiera tekstu zastępczego. Użyj komendy <code>site:twojadomena.pl &quot;lorem ipsum&quot;</code> w wyszukiwarce Google.</p><p class=\"text-mid\">Generator Lorem Ipsum to narzędzie do etapu projektowania. Tekst zastępczy powinien zostać zastąpiony prawdziwą treścią przed publikacją strony.</p>"
+      "title": "Czy publikowanie Lorem Ipsum szkodzi SEO?",
+      "html": "<p class=\"text-mid mb-4\">Tak - opublikowanie Lorem Ipsum na stronie produkcyjnej może negatywnie wpłynąć na pozycjonowanie. Google analizuje treść każdej zindeksowanej strony i rozpoznaje tekst zastępczy. Oto dlaczego to problem:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Thin content</strong> - strona z tekstem zastępczym nie oferuje wartości użytkownikowi. Google klasyfikuje takie strony jako &quot;thin content&quot; i obniża ich pozycję.</li><li><strong>Indeksowanie śmieci</strong> - roboty Google indeksują Lorem Ipsum jako treść strony. Może to pojawić się w wynikach wyszukiwania, co wpływa na wizerunek marki.</li><li><strong>Utrata budżetu crawlowania</strong> - Google przeznacza ograniczony budżet na crawlowanie każdej witryny. Strony z lorem ipsum zużywają ten budżet bez korzyści.</li></ul><p class=\"text-mid mb-4\">Jak uniknąć problemu: przed opublikowaniem strony przeszukaj cały serwis pod kątem frazy &quot;lorem ipsum&quot; lub &quot;dolor sit amet&quot;. W Google Search Console sprawdź, czy żadna zindeksowana strona nie zawiera tekstu zastępczego. Użyj komendy <code>site:twojadomena.pl &quot;lorem ipsum&quot;</code> w wyszukiwarce Google.</p><p class=\"text-mid\">Generator Lorem Ipsum to narzędzie do etapu projektowania. Tekst zastępczy powinien zostać zastąpiony prawdziwą treścią przed publikacją strony.</p>"
     },
     {
       "type": "gap",
@@ -331,9 +377,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Ile tekstu zastępczego potrzebujesz - poradnik długości",
-      "html": "<p class=\"text-mid mb-4\">Ilość Lorem Ipsum zależy od typu projektu. Oto orientacyjne wartości:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Typ projektu</th><th class=\"py-2 pr-4 font-semibold\">Zalecana ilość</th><th class=\"py-2 font-semibold\">Uwagi</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Nagłówek H1</td><td class=\"py-2 pr-4 whitespace-nowrap\">5-10 słów</td><td class=\"text-primary-light0 py-2 text-sm\">Krótki, zwięzły tytuł strony lub sekcji.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Meta description</td><td class=\"py-2 pr-4 whitespace-nowrap\">20-25 słów</td><td class=\"text-primary-light0 py-2 text-sm\">Optymalnie 150-160 znaków.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Karta produktu</td><td class=\"py-2 pr-4 whitespace-nowrap\">2-3 akapity</td><td class=\"text-primary-light0 py-2 text-sm\">Krótki opis + specyfikacja.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Strona usługowa</td><td class=\"py-2 pr-4 whitespace-nowrap\">4-6 akapitów</td><td class=\"text-primary-light0 py-2 text-sm\">Opis usługi, korzyści, CTA.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Artykuł blogowy</td><td class=\"py-2 pr-4 whitespace-nowrap\">8-15 akapitów</td><td class=\"text-primary-light0 py-2 text-sm\">1500-2500 słów dla SEO.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Landing page</td><td class=\"py-2 pr-4 whitespace-nowrap\">5-8 akapitów</td><td class=\"text-primary-light0 py-2 text-sm\">Hero, korzyści, social proof, CTA.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Ulotka / broszura</td><td class=\"py-2 pr-4 whitespace-nowrap\">3-5 akapitów</td><td class=\"text-primary-light0 py-2 text-sm\">Krótkie bloki tekstu z nagłówkami.</td></tr></tbody></table></div>"
+      "type": "sectionTable",
+      "title": "Ile tekstu zastępczego potrzebujesz do konkretnego projektu?",
+      "labelHeader": "Typ projektu",
+      "cols": ["Zalecana ilość", "Uwagi"],
+      "rows": [
+        {
+          "label": "Nagłówek H1",
+          "values": ["5-10 słów", "Krótki, zwięzły tytuł strony lub sekcji."]
+        },
+        {
+          "label": "Meta description",
+          "values": ["20-25 słów", "Optymalnie 150-160 znaków."]
+        },
+        {
+          "label": "Karta produktu",
+          "values": ["2-3 akapity", "Krótki opis + specyfikacja."]
+        },
+        {
+          "label": "Strona usługowa",
+          "values": ["4-6 akapitów", "Opis usługi, korzyści, CTA."]
+        },
+        {
+          "label": "Artykuł blogowy",
+          "values": ["8-15 akapitów", "1500-2500 słów dla SEO."]
+        },
+        {
+          "label": "Landing page",
+          "values": ["5-8 akapitów", "Hero, korzyści, social proof, CTA."]
+        },
+        {
+          "label": "Ulotka / broszura",
+          "values": ["3-5 akapitów", "Krótkie bloki tekstu z nagłówkami."]
+        }
+      ]
     },
     {
       "type": "gap",
@@ -350,6 +427,16 @@
           "answerSchemaText": "Lorem Ipsum to standardowy tekst zastępczy używany w branży poligraficznej i webdesignu do wypełniania układów graficznych."
         },
         {
+          "question": "Jak zrobić Lorem Ipsum?",
+          "answer": "Najprościej użyć generatora powyżej: wybierz akapity, zdania lub słowa, ustaw ich liczbę, wybierz styl tekstu i kliknij Generuj. Tekst pojawi się natychmiast i możesz go skopiować do schowka lub pobrać jako plik .txt. Alternatywnie część programów (np. Microsoft Word) ma własne wbudowane skróty do wstawiania Lorem Ipsum.",
+          "answerSchemaText": "Wybierz tryb i ilość w generatorze powyżej, kliknij Generuj, a następnie skopiuj wynik."
+        },
+        {
+          "question": "Jaka jest pełna treść klasycznego Lorem Ipsum?",
+          "answer": "Najbardziej rozpowszechniona wersja to jeden akapit zaczynający się od Lorem ipsum dolor sit amet, consectetur adipiscing elit - znajdziesz go w sekcji wyżej, gotowy do skopiowania. Nie istnieje jedna, oficjalna dłuższa wersja - większość generatorów (również ten) tworzy dodatkowy tekst z tej samej bazy słów, dlatego o dokładną długość lepiej zapytać generator niż szukać gotowego, dłuższego tekstu.",
+          "answerSchemaText": "Najpopularniejsza wersja to jeden akapit zaczynający się od Lorem ipsum dolor sit amet - dostępny w sekcji wyżej."
+        },
+        {
           "question": "Skąd pochodzi tekst Lorem Ipsum?",
           "answer": "Lorem Ipsum pochodzi z dzieła De Finibus Bonorum et Malorum (O granicach dobra i zła) napisanego przez Marka Tulliusza Cycerona w 45 roku p.n.e. To rozprawa filozoficzna o etyce. Oryginalny fragment z rozdziału 1.10.32 został celowo zmodyfikowany przez niezidentyfikowanego drukarza w XVI wieku - dodano, usunięto i zamieniono słowa, aby tekst nie miał sensu, ale zachował naturalny wygląd łaciny.",
           "answerSchemaText": "Lorem Ipsum pochodzi z dzieła De Finibus Bonorum et Malorum Cycerona z 45 roku p.n.e."
@@ -358,6 +445,21 @@
           "question": "Czy Lorem Ipsum to prawdziwa łacina?",
           "answer": "Częściowo. Lorem Ipsum zawiera prawdziwe łacińskie słowa z dzieła Cycerona, ale tekst został celowo zniekształcony. Słowa są pomieszane, niektórym brakuje końcówek, a inne zostały dodane. Dlatego tekst nie ma sensu po łacińsku - ale poszczególne słowa jak dolor (ból), amet (kocha) czy ipsum (samo) to prawdziwe łacińskie wyrazy.",
           "answerSchemaText": "Częściowo - zawiera prawdziwe łacińskie słowa z Cycerona, ale tekst został celowo zniekształcony i nie ma sensu."
+        },
+        {
+          "question": "Czy Lorem Ipsum znaczy ból?",
+          "answer": "Pierwsze słowa nawiązują do bólu, ale to nie jest dokładne tłumaczenie. Lorem to obcięty koniec słowa dolorem (forma słowa dolor - ból), a ipsum znaczy sam/samo. Stąd żartobliwe uproszczenie dolorem ipsum jako ból sam w sobie. To jednak interpretacja pojedynczych fragmentów wyrwanych z dłuższego, zniekształconego tekstu, nie tłumaczenie całego zdania - po łacinie ono nie ma sensu.",
+          "answerSchemaText": "Częściowo - pierwsze słowa nawiązują do dolor (ból) i ipsum (sam), ale to nie jest pełne tłumaczenie."
+        },
+        {
+          "question": "Jak wymawia się Lorem Ipsum?",
+          "answer": "Tekst czyta się tak jak się pisze, dzieląc słowa na sylaby w stylu klasycznej łaciny: LO-rem IP-sum DO-lor SIT a-MET, kon-sek-TE-tur a-di-PIS-cing E-lit. Nie ma jednej obowiązującej wymowy, bo to nie jest żywy język - większość osób czyta go po prostu fonetycznie, zgodnie z zasadami czytania łaciny.",
+          "answerSchemaText": "Czyta się fonetycznie, dzieląc na sylaby zgodnie z zasadami klasycznej łaciny: LO-rem IP-sum DO-lor SIT a-MET."
+        },
+        {
+          "question": "Czy mogę wygenerować Lorem Ipsum w formacie HTML albo PDF?",
+          "answer": "Generator tworzy czysty tekst (plain text), bez znaczników HTML i bez eksportu do PDF. To w praktyce wygodne przy wklejaniu do kodu strony, plików JSON z danymi testowymi czy edytorów - nie trzeba czyścić żadnego formatowania. Jeśli potrzebujesz pliku PDF, wklej skopiowany tekst do edytora tekstu (np. Word czy Google Docs) i zapisz dokument jako PDF.",
+          "answerSchemaText": "Nie - generator tworzy czysty tekst bez znaczników HTML. Do PDF wklej tekst do edytora i zapisz jako PDF."
         },
         {
           "question": "Ile akapitów Lorem Ipsum potrzebuję do mockupu strony?",
@@ -375,14 +477,14 @@
           "answerSchemaText": "To synonimy - Lorem Ipsum to konkretny tekst od Cycerona, a dummy text to ogólne pojęcie tekstu zastępczego."
         },
         {
-          "question": "Czy Lorem Ipsum szkodzi SEO?",
-          "answer": "Tak, jeśli zostanie opublikowany na stronie produkcyjnej. Google rozpoznaje tekst zastępczy i może uznać stronę za niskiej jakości (thin content). Aby sprawdzić, czy na stronie nie ma lorem ipsum, użyj komendy site:twojadomena.pl lorem ipsum w Google lub przeszukaj cały serwis pod kątem frazy dolor sit amet.",
-          "answerSchemaText": "Tak, jeśli opublikowany na stronie - Google rozpoznaje placeholder text i klasyfikuje jako thin content."
-        },
-        {
           "question": "Co to jest Hipster Ipsum i Business Ipsum?",
           "answer": "To tematyczne warianty tekstu zastępczego. Hipster Ipsum używa słów z kultury hipsterskiej (craft, avocado, vintage, mindfulness). Business Ipsum to żargon korporacyjny (synergy, leverage, stakeholder, KPI). Oba generują tekst o naturalnym rytmie, ale z branżowym słownictwem. Sprawdzają się w prezentacjach wewnętrznych i projektach, gdzie humor poprawia komunikację.",
           "answerSchemaText": "Tematyczne warianty Lorem Ipsum - Hipster używa słownictwa lifestyle'owego, Business - żargonu korporacyjnego."
+        },
+        {
+          "question": "Jaki jest tekst Lorem Ipsum po polsku?",
+          "answer": "Lorem Ipsum to fraza łacińska, więc nie istnieje jego oficjalna polska wersja - tłumaczenie zniekształconego tekstu nie miałoby sensu w żadnym języku. Nasz generator ma jednak dedykowany styl Polski wypełniacz, który losuje polskie słowa zamiast łacińskich, zachowując naturalne dla polskiego proporcje długości słów i liter. To najbliższy odpowiednik Lorem Ipsum w języku polskim.",
+          "answerSchemaText": "Lorem Ipsum jest po łacinie i nie ma oficjalnej polskiej wersji - użyj stylu Polski wypełniacz w generatorze."
         },
         {
           "question": "Czy generator jest darmowy i bezpieczny?",
@@ -391,7 +493,7 @@
         },
         {
           "question": "Ile słów ma standardowy akapit Lorem Ipsum?",
-          "answer": "Generowany akapit ma zwykle 4-7 zdań, czyli ok. 40-90 słów. Oryginalny pierwszy akapit Lorem Ipsum z Cycerona ma około 69 słów i zaczyna się od Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "answer": "Generowany akapit ma zwykle 4-7 zdań, czyli ok. 40-90 słów. Klasyczny akapit Lorem Ipsum dostępny do skopiowania w sekcji wyżej ma około 69 słów i zaczyna się od Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           "answerSchemaText": "Generowany akapit ma zwykle 4-7 zdań, czyli ok. 40-90 słów."
         }
       ]

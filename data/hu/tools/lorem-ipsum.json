@@ -2,14 +2,14 @@
   "toolKey": "loremIpsum",
   "locale": "hu",
   "metadata": {
-    "title": "Lorem Ipsum generátor — mintatextus, bekezdések, mondatok és véletlenszerű szavak",
-    "description": "Ingyenes Lorem Ipsum generátor 8 stílussal: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business és több. Másolja a szöveget bekezdésként, mondatként vagy szavanként.",
+    "title": "Lorem Ipsum generálása - ingyenes mintaszöveg-generátor 8 stílussal",
+    "description": "Generáljon annyi Lorem Ipsum szöveget, amennyire szüksége van, vagy másolja a klasszikus, teljes bekezdést generálás nélkül. Tudja meg azt is, mit jelent a Lorem Ipsum, és honnan származik ez a szöveg.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-hu.webp",
     "path": "/eszkozok/lorem-ipsum-generator"
   },
   "hero": {
-    "title": "Lorem Ipsum generátor — mintatextus, bekezdések, mondatok és véletlenszerű szavak",
-    "description": "Ingyenes Lorem Ipsum generátor 8 stílussal: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business és magyar kitöltőszavak. Másolja a szöveget bekezdésként, mondatként vagy szavanként.",
+    "title": "Generáljon Lorem Ipsum szöveget 8 stílusban, vagy másolja a klasszikus bekezdést",
+    "description": "Válasszon bekezdéseket, mondatokat vagy szavakat, állítsa be a mennyiséget, és kattintson a Generálás gombra - a mintaszöveg azonnal megjelenik. A klasszikus, leggyakrabban használt bekezdést is másolhatja lejjebb, generálás nélkül. Minden a böngészőjében, helyileg történik, regisztráció és korlátozás nélkül.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-hu.webp"
   },
   "breadcrumbs": {
@@ -24,39 +24,37 @@
   },
   "schemas": {
     "software": {
-      "name": "Lorem Ipsum generátor — mintatextus, bekezdések, mondatok és véletlenszerű szavak",
+      "name": "Lorem Ipsum generátor - ingyenes mintaszöveg klasszikus bekezdéssel és 8 stílussal",
       "alternateName": [
         "Lorem Ipsum Generator",
+        "Dummy text generator magyarul",
+        "Placeholder text generator",
+        "Blind text generator",
+        "Mit jelent a lorem ipsum",
+        "Lorem ipsum teljes szöveg",
         "Bacon Ipsum generator",
         "Cupcake Ipsum generator",
         "Pirate Ipsum generator",
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
-        "Business Ipsum generator",
-        "Dummy text generator"
+        "Business Ipsum generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Ingyenes Lorem Ipsum generátor 8 stílussal. Generáljon bekezdéseket, mondatokat vagy szavakat, másolja a vágólapra vagy töltse le .txt fájlként.",
+      "description": "Ingyenes Lorem Ipsum generátor 8 szövegstílussal és egy kész, klasszikus bekezdéssel. Generáljon bekezdéseket, mondatokat vagy szavakat, nézze meg a szöveg jelentését és történetét, másolja a vágólapra vagy töltse le .txt fájlként.",
       "featureList": [
-        "Lorem Ipsum bekezdések generálása",
-        "Egyedi mondatok generálása",
-        "Véletlenszerű szavak generálása",
-        "Lorem Ipsum — latin a De Finibusból",
-        "Hipster Ipsum — hipster szókincs",
-        "Business Ipsum — vállalati zsargon",
-        "Magyar kitöltőszavak — szavak a helyi nyelven",
-        "Bacon Ipsum — hús és grill",
-        "Cupcake Ipsum — cukrászat és édességek",
-        "Pirate Ipsum — kalóz szókincs",
-        "Legal Ipsum — jogi szaknyelv",
-        "Szöveg másolása a vágólapra",
-        "Letöltés .txt fájlként",
-        "Helyi feldolgozás a böngészőben"
+        "Bekezdések, mondatok vagy véletlenszerű szavak generálása tetszőleges mennyiségben",
+        "8 szövegstílus: klasszikus latin, Hipster, Business, magyar kitöltőszavak, Bacon, Cupcake, Pirate és Legal Ipsum",
+        "Kész, klasszikus Lorem Ipsum bekezdés másolása generálás nélkül",
+        "Táblázat a leggyakoribb Lorem Ipsum szavak jelentéséről",
+        "Útmutató a Lorem Ipsum beillesztéséhez Wordben és Adobe InDesignban",
+        "A generált szöveg másolása a vágólapra egy kattintással",
+        "Az eredmény letöltése .txt fájlként",
+        "Teljesen helyi feldolgozás a böngészőben"
       ]
     },
     "howTo": {
-      "name": "Hogyan használja a Lorem Ipsum Generátort",
-      "description": "Generáljon Lorem Ipsum kitöltőszöveget másodpercek alatt. Válasszon módot és stílust, majd másolja vagy töltse le az eredményt.",
+      "name": "Hogyan generáljon Lorem Ipsum szöveget",
+      "description": "Generáljon Lorem Ipsum kitöltőszöveget másodpercek alatt. Válasszon módot, stílust és mennyiséget, majd másolja vagy töltse le az eredményt.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -81,8 +79,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Mi az a Lorem Ipsum és mire használják",
-      "html": "<p class=\"text-mid\">A Lorem Ipsum a nyomdaipar, a grafikai tervezés és a webfejlesztés szabványos kitöltőszövege, amelyet több mint 500 éve használnak. A szöveg Marcus Tullius Cicero <em>De Finibus Bonorum et Malorum</em> (A jó és a rossz határairól) című művéből származik, amelyet Kr. e. 45-ben írt. Az eredeti szövegrészt szándékosan megváltoztatták — szavakat adtak hozzá, távolítottak el és rendeztek át — így a szövegnek nincs jelentése, de megőrzi a természetes ritmust és a valódi nyelvhez hasonló betűeloszlást.</p><p class=\"text-mid mt-3\">A Lorem Ipsum Generátor lehetővé teszi, hogy gyorsan hozzon létre bármennyi kitöltőszöveget látványtervekhez, UI-prototípusokhoz, grafikai tervekhez és tipográfiai elrendezési tesztekhez. Az eszköz bekezdéseket, mondatokat vagy szavakat generál 8 szövegstílusban.</p>",
+      "title": "Miért érdemes Lorem Ipsum generátort használni?",
+      "html": "<p class=\"text-mid mb-4\">A Lorem Ipsum a grafikai tervezésben és a webfejlesztésben használt szabványos kitöltőszöveg. A szöveg Marcus Tullius Cicero <em>De Finibus Bonorum et Malorum</em> (A jó és a rossz határairól) című művéből származik, amelyet Kr. e. 45-ben írt. Az eredeti szövegrészt szándékosan megváltoztatták — szavakat adtak hozzá, távolítottak el és rendeztek át —, így a szövegnek nincs jelentése, de megőrzi a természetes ritmust és a valódi nyelvhez hasonló betűeloszlást.</p><p class=\"text-mid mb-4\">A generátort akkor érdemes használni, amikor egy elrendezést bemutatni vagy tesztelni kell, de a végleges szöveg még nem áll készen — például weboldal-látványterveknél, UI-prototípusoknál vagy grafikai terveknél. Az eszköz bekezdéseket, mondatokat vagy szavakat hoz létre 8 szövegstílusban.</p><p class=\"text-mid\">Lejjebb talál egy klasszikus, másolásra kész Lorem Ipsum bekezdést, egy táblázatot a leggyakoribb szavak jelentéséről, valamint útmutatót a szöveg népszerű programokba történő beillesztéséhez.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-hu.webp",
       "imageAlt": "Lorem Ipsum Generátor — Arteon"
     },
@@ -91,8 +89,17 @@
       "size": "sm"
     },
     {
+      "type": "sectionInfo",
+      "title": "Másolja a klasszikus Lorem Ipsum bekezdést generálás nélkül",
+      "html": "<p class=\"text-mid mb-4\">Ez az interneten leggyakrabban másolt kitöltőszöveg-bekezdés — ugyanez a szövegrész évtizedek óta alapértelmezetten megjelenik a Wordben, az Adobe InDesignban és számtalan grafikai sablonban:</p><blockquote class=\"rounded-md border border-neutral-200 bg-neutral-50 p-4 text-mid italic\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote><p class=\"text-mid mt-4\">Több szövegre van szüksége, mint ez az egy bekezdés? Használja a fenti generátort — válassza ki a bekezdések, mondatok vagy szavak számát, és másolja pontosan azt a mennyiséget, amire szüksége van, anélkül hogy ugyanazt a szövegrészt kézzel kellene többszöröznie.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
-      "title": "Hogyan használja a Lorem Ipsum Generátort",
+      "title": "Hogyan használja a Lorem Ipsum generátort?",
       "description": "Generáljon kitöltőszöveget három lépésben:",
       "grid": "three",
       "items": [
@@ -104,7 +111,7 @@
         {
           "icon": "RiPaletteLine",
           "title": "2. Válasszon stílust",
-          "description": "8 stílus: Lorem Ipsum, Hipster, Business, Magyar kitöltőszavak, Bacon, Cupcake, Pirate és Legal — mindegyik saját szóbankkal."
+          "description": "Válasszon a 8 elérhető kitöltőszöveg-stílus közül: klasszikus Lorem Ipsum, Hipster, Business, Magyar kitöltőszavak, Bacon, Cupcake, Pirate vagy Legal — mindegyik saját szóbankkal."
         },
         {
           "icon": "RiFileCopyLine",
@@ -119,8 +126,17 @@
     },
     {
       "type": "sectionInfo",
-      "title": "A Lorem Ipsum története — Cicerótól a modern dizájnig",
-      "html": "<p class=\"text-mid mb-4\">A Lorem Ipsum több mint 2000 éves történelemmel rendelkezik. Az eredeti szövegrész Cicero <em>De Finibus Bonorum et Malorum</em> című művének 1.10.32 szakaszából származik, amelyet Kr. e. 45-ben írt. A mű egy filozófiai értekezés az etikáról — Cicero a hedonizmust és a sztoicizmust elemezte, az öröm és a fájdalom kiegyensúlyozott megközelítése mellett érvelve.</p><p class=\"text-mid mb-4\">Ennek a szövegnek a kitöltőként való használata a nyomdászatban a 16. századra nyúlik vissza, amikor egy ismeretlen nyomdász Cicero szövegrészét használta betűmintakönyv készítéséhez. A szöveg öt évszázadot élt túl, áthaladva a kézi szedés, a Linotype és a fotószedés korszakain.</p><p class=\"text-mid mb-4\">A Lorem Ipsum modern népszerűsége az 1960-as években kezdődött, amikor a Letraset áthelyezhető betűkre helyezte a szöveget, amelyeket grafikai stúdiókban használtak. A döntő áttörés 1985-ben jött, amikor az Aldus Corporation a Lorem Ipsum szöveget alapértelmezett kitöltőszövegként illesztette be a PageMakerbe — az egyik első DTP (asztali kiadványszerkesztő) programba. Ettől a pillanattól kezdve a Lorem Ipsum iparági szabvánnyá vált.</p><p class=\"text-mid\">Richard McClintock, a virginiai Hampden-Sydney College latin professzora az 1980-as években azonosította a szöveg forrását, felfedezve, hogy a lorem ipsum szavak Cicero művéből származó torzított latin töredékek. Kutatása megerősítette, hogy a Lorem Ipsum nem véletlenszerű szógyűjtemény, hanem valódi irodalmi gyökerekkel rendelkezik.</p>"
+      "title": "Honnan származik a Lorem Ipsum szöveg? Története Cicerótól napjainkig",
+      "html": "<p class=\"text-mid mb-4\">A Lorem Ipsum több mint 2000 éves múltra tekint vissza. Az eredeti szövegrész Cicero <em>De Finibus Bonorum et Malorum</em> című művének 1.10.32 szakaszából származik, amelyet Kr. e. 45-ben írt. A mű egy filozófiai értekezés az etikáról — Cicero a hedonizmust és a sztoicizmust elemezte, az öröm és a fájdalom kiegyensúlyozott megközelítése mellett érvelve.</p><p class=\"text-mid mb-4\">A szöveg kitöltőként való nyomdai felhasználása körülbelül 1500-ra tehető, amikor egy ismeretlen nyomdász Cicero szövegrészét használta fel egy betűmintakönyv elkészítéséhez. A szöveg öt évszázadot élt túl, áthaladva a kézi szedés, a Linotype és a fotószedés korszakain.</p><p class=\"text-mid mb-4\">A Lorem Ipsum modern népszerűsége az 1960-as években kezdődött, amikor a Letraset a szöveget áthelyezhető betűkkel ellátott lapokra helyezte, amelyeket grafikai stúdiókban használtak. A döntő áttörés 1985-ben következett, amikor az Aldus Corporation a Lorem Ipsumot alapértelmezett kitöltőszövegként építette be a PageMakerbe — az egyik első DTP (asztali kiadványszerkesztő) programba. Ettől a pillanattól kezdve a Lorem Ipsum iparági szabvánnyá vált.</p><p class=\"text-mid\">Richard McClintock, a virginiai Hampden-Sydney College latin professzora az 1980-as években azonosította a szöveg forrását, felfedezve, hogy a lorem ipsum szavak Cicero művéből származó, torzított latin töredékek. Kutatása megerősítette, hogy a Lorem Ipsum nem véletlenszerű szóhalmaz, hanem valódi irodalmi gyökerekkel rendelkezik.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Mit jelentenek a szavak a Lorem Ipsum dolor sit amet szövegben?",
+      "html": "<p class=\"text-mid mb-4\">A Lorem Ipsum szöveg szándékosan torzított — nem nyelvtanilag helyes latin mondat, ezért egészében nem fordítható le. Az egyes szavak ugyanakkor valódi latinból származnak, és dokumentált jelentéssel vagy etimológiai gyökerekkel rendelkeznek:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Szó</th><th class=\"py-2 font-semibold\">Jelentés / eredet</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Lorem</td><td class=\"text-primary-light0 py-2 text-sm\">Nem önálló szó — a &quot;dolorem&quot; (a &quot;dolor&quot;, fájdalom szó egy alakja) levágott vége.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Ipsum</td><td class=\"text-primary-light0 py-2 text-sm\">Az &quot;ipse&quot; szóból — maga, önmaga, ugyanaz.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Dolor</td><td class=\"text-primary-light0 py-2 text-sm\">Fájdalom, szenvedés.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Sit</td><td class=\"text-primary-light0 py-2 text-sm\">Van, legyen (az &quot;esse&quot;, lenni szóból).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amet</td><td class=\"text-primary-light0 py-2 text-sm\">Az &quot;amare&quot; szóból — szeretni, kedvelni.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Consectetur</td><td class=\"text-primary-light0 py-2 text-sm\">Torzított forma, a &quot;consequi&quot; szóhoz kapcsolódik — követni, üldözni.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Adipiscing</td><td class=\"text-primary-light0 py-2 text-sm\">Az &quot;adipisci&quot; szóból — elérni, törekedni valamire.</td></tr><tr><td class=\"py-2 pr-4\">Elit</td><td class=\"text-primary-light0 py-2 text-sm\">A &quot;velit&quot; (akarná, a &quot;velle&quot;, akarni szó egy alakja) levágott vége.</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Innen ered a népszerű, játékos &quot;fordítás&quot;, amely a nyitó szavakat &quot;a fájdalom önmagában&quot; (dolorem ipsum) jelentéssel illeti — ez azonban elszigetelt töredékek értelmezése, nem a teljes mondat fordítása, amely latinul nem ad értelmet.</p>"
     },
     {
       "type": "gap",
@@ -128,24 +144,24 @@
     },
     {
       "type": "sectionSteps",
-      "title": "3 generálási mód",
+      "title": "Válassza ki, bekezdésre, mondatra vagy szavakra van szüksége",
       "description": "A generátor 3 tartalomtípust kínál:",
       "grid": "three",
       "items": [
         {
           "icon": "RiParagraph",
           "title": "Bekezdések",
-          "description": "Klasszikus szövegblokkok. Ideális webes látványtervekhez, CMS-sablonokhoz és UI-prototípusokhoz."
+          "description": "Klasszikus szövegblokkok. Ideálisak weboldal-látványtervekhez, CMS-sablonokhoz és UI-prototípusokhoz."
         },
         {
           "icon": "RiTextSnippet",
           "title": "Mondatok",
-          "description": "Egyedi mondatok véletlenszerű hosszúsággal (5–15 szó). Hasznos űrlapmezők, termékleírások és rövid szövegblokkok teszteléséhez."
+          "description": "Egyedi mondatok véletlenszerű, 5–15 szavas hosszúsággal. Hasznosak űrlapmezők, termékleírások és rövid szövegblokkok teszteléséhez."
         },
         {
           "icon": "RiFontSize",
           "title": "Szavak",
-          "description": "Véletlenszerű egyedi szavak a kiválasztott szóbankból. Ideális címkékhez, kategórianevekhez és szöveghossz-teszteléshez UI-komponensekben."
+          "description": "Véletlenszerű egyedi szavak a kiválasztott szóbankból. Ideálisak címkékhez, kategórianevekhez és a szöveghossz teszteléséhez UI-komponensekben."
         }
       ]
     },
@@ -155,8 +171,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Mikor használjunk Lorem Ipsumot és mikor valódi szöveget",
-      "html": "<p class=\"text-mid mb-4\">A Lorem Ipsum jól működik mindenhol, ahol a tartalom még nem áll készen, de az elrendezést be kell mutatni vagy tesztelni kell:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>UI-prototípusok és wireframe-ek</strong> — oldalstruktúra tervezése anélkül, hogy meg kellene várni az ügyfél végleges szövegét.</li><li><strong>Grafikai látványtervek</strong> — dizájn bemutatása valósághű szöveggel üres téglalapok helyett.</li><li><strong>Betűtípus- és tipográfiai tesztek</strong> — olvashatóság, sormagasság, betűköz és címsorhierarchia értékelése valódi szövegblokkon.</li><li><strong>CMS-sablonok és témák</strong> — WordPress, Shopify vagy más CMS sablon megjelenésének bemutatása mintadarabokkal.</li><li><strong>Nyomtatott anyagok</strong> — szórólapok, brosúrák, névjegykártyák és katalógusok a tervezési fázisban.</li></ul><p class=\"text-mid mb-4\"><strong>Mikor NE használjunk Lorem Ipsumot:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Éles webhelyek</strong> — a Google indexeli a kitöltőszöveget és gyenge minőségűnek ítélheti az oldalt.</li><li><strong>Végleges SEO-tartalom</strong> — a meta címeknek, leírásoknak és H1 címsoroknak valódi kulcsszavakat kell tartalmazniuk.</li><li><strong>E-mail marketing</strong> — Lorem Ipsummal küldött üzenetek szakszerűtlenek és spambe kerülhetnek.</li><li><strong>Felhasználói használhatósági tesztek</strong> — a felhasználók a tartalomra összpontosítanak. A kitöltőszöveg torzítja az UX-kutatási eredményeket.</li></ul>"
+      "title": "Mikor használjon Lorem Ipsumot, és mikor valódi szöveget?",
+      "html": "<p class=\"text-mid mb-4\">A Lorem Ipsum jól működik mindenhol, ahol a tartalom még nem áll készen, de az elrendezést be kell mutatni vagy tesztelni kell:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>UI-prototípusok és wireframe-ek</strong> — az oldal vagy alkalmazás struktúrájának megtervezése anélkül, hogy meg kellene várni az ügyfél végleges szövegét.</li><li><strong>Grafikai látványtervek</strong> — a dizájn bemutatása valósághű szöveggel üres téglalapok helyett.</li><li><strong>Betűtípus- és tipográfiai tesztelés</strong> — olvashatóság, sormagasság, betűköz és címsorhierarchia értékelése valódi szövegblokkon.</li><li><strong>CMS-sablonok és témák</strong> — egy WordPress, Shopify vagy más CMS sablon megjelenésének bemutatása mintatartalommal.</li><li><strong>Nyomtatott anyagok</strong> — szórólapok, brosúrák, névjegykártyák és katalógusok a tervezési fázisban.</li></ul><p class=\"text-mid mb-4\"><strong>Mikor NE használjon Lorem Ipsumot:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Éles weboldalak</strong> — a Google indexeli a kitöltőszöveget, és gyenge minőségűnek ítélheti az oldalt. A lorem ipsum közzététele árt a SEO-nak.</li><li><strong>Végleges SEO-tartalom</strong> — a meta címeknek, leírásoknak és H1 címsoroknak valódi kulcsszavakat kell tartalmazniuk, nem kitöltőszöveget.</li><li><strong>E-mail marketing</strong> — a lorem ipsumot tartalmazó üzenetek küldése szakszerűtlen, és növeli a spambe kerülés kockázatát.</li><li><strong>Felhasználói használhatósági tesztek</strong> — a felhasználók a tartalomra figyelnek. A kitöltőszöveg torzítja az UX-kutatás eredményeit.</li></ul>"
     },
     {
       "type": "gap",
@@ -164,8 +180,40 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Kinek szól a Lorem Ipsum Generátor?",
-      "description": "Az eszköz hasznos mindenki számára, aki szövegelrendezéssel dolgozik:",
+      "title": "Hogyan illessze be a Lorem Ipsumot népszerű programokba?",
+      "description": "Néhány programnak saját, beépített módja van a kitöltőszöveg beillesztésére:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileWordLine",
+          "title": "Microsoft Word",
+          "description": "Írja be a =lorem() kódot a dokumentumba, és nyomja meg az Entert — a Word beilleszti a szabványos Lorem Ipsum bekezdést. A =lorem(3,2) beírásával 3 bekezdést illeszt be, egyenként 2 mondattal."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Adobe InDesign",
+          "description": "A Type menüben válassza a Fill with Placeholder Text parancsot, hogy automatikusan kitöltse a szövegkeretet kitöltőszöveggel."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Weboldalak, HTML és kód",
+          "description": "A generátor tiszta szöveget hoz létre HTML-jelölés nélkül, így közvetlenül beillesztheti a kódjába, egy teszteléshez használt JSON-fájlba vagy egy szerkesztőbe — nincs mit eltávolítani belőle."
+        },
+        {
+          "icon": "RiPuzzleLine",
+          "title": "Figma, Google Docs és mások",
+          "description": "Ezek a programok nem rendelkeznek beépített Lorem Ipsum funkcióval — bővítményre vagy máshonnan beillesztett szövegre van szükség. Generátorunk azonnal működik a böngészőben, semmit nem kell telepíteni."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kinek hasznos a Lorem Ipsum generátor?",
+      "description": "Az eszköz bárkinek hasznos, aki szövegelrendezéssel dolgozik:",
       "grid": "three",
       "items": [
         {
@@ -176,26 +224,26 @@
         {
           "icon": "RiCodeLine",
           "title": "Frontend fejlesztők",
-          "description": "Kitöltőszöveg generálása komponensek, elrendezés-reszponzivitás és CSS-viselkedés teszteléséhez különböző tartalomhosszakkal."
+          "description": "Kitöltőszöveg generálása komponensek, az elrendezés reszponzivitásának és a CSS viselkedésének teszteléséhez különböző tartalomhosszak mellett."
         },
         {
           "icon": "RiEditLine",
           "title": "Szövegírók",
-          "description": "Szövegstruktúra prototípus-készítése: hány bekezdés, mondathossz, hogyan néznek ki a listák és címsorok a végleges elrendezésben."
+          "description": "A szöveg struktúrájának megtervezése: hány bekezdés, milyen mondathosszak, és hogyan néznek majd ki a listák és címsorok a végleges elrendezésben."
         },
         {
           "icon": "RiPrinterLine",
-          "title": "Nyomdák és kiadók",
-          "description": "Szórólap-, brosúra- és katalógussablonok kitöltése mintaszöveggel az ügyfél jóváhagyásához."
+          "title": "Nyomdák és nyomdaipari szakemberek",
+          "description": "Szórólap-, brosúra- és katalógussablonok kitöltése kitöltőszöveggel az ügyfél jóváhagyásához, mielőtt megérkezik a végleges tartalom."
         },
         {
           "icon": "RiGlobalLine",
-          "title": "Webhelytulajdonosok",
-          "description": "Új CMS-sablon vagy téma megjelenésének tesztelése mintadarabokkal. Annak felmérése, mennyi szöveg szükséges oldalanként."
+          "title": "Weboldal-tulajdonosok",
+          "description": "Egy új CMS-sablon vagy téma megjelenésének tesztelése mintatartalommal. Annak felmérése, mennyi szövegre van szükség az egyes aloldalakon."
         },
         {
           "icon": "RiGraduationCapLine",
-          "title": "Dizájn hallgatók",
+          "title": "Dizájnhallgatók",
           "description": "Grafikai elrendezés, tipográfia és kompozíció tanulása professzionális kitöltőszöveggel véletlenszerű karakterek helyett."
         }
       ]
@@ -206,13 +254,13 @@
     },
     {
       "type": "sectionTable",
-      "title": "Szövegstílusok összehasonlítása",
+      "title": "Miben különböznek egymástól a generátorban elérhető kitöltőszöveg-stílusok?",
       "labelHeader": "Jellemző",
       "cols": [
         "Lorem Ipsum",
         "Hipster",
         "Business",
-        "Helyi",
+        "Magyar",
         "Bacon",
         "Cupcake",
         "Pirate",
@@ -225,7 +273,7 @@
             "Latin",
             "Angol",
             "Angol",
-            "Helyi",
+            "Magyar",
             "Angol",
             "Angol",
             "Angol",
@@ -258,7 +306,7 @@
           "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "label": "Humor / karakter",
+          "label": "Humor / jelleg",
           "values": [
             "Semleges",
             "Közepes",
@@ -278,8 +326,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "8 kitöltőszöveg-stílus — mind elérhető a generátorban",
-      "html": "<p class=\"text-mid mb-4\">Generátorunk 8 egyedi kitöltőszöveg-stílust kínál — a klasszikus latintól a jogi szaknyelvig. Minden stílus saját, 90+ szavas szóbankkal rendelkezik és természetes ritmusú szöveget generál:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — a klasszikus latin kitöltőszöveg Cicero művéből. Több mint 500 éve iparági szabvány.</li><li><strong>Hipster Ipsum</strong> — hipster kultúra szókincse: kézműves, avokádó, vintage, tudatosság. Ideális életstílus-projektekhez.</li><li><strong>Business Ipsum</strong> — vállalati zsargon: szinergia, tőkeáttétel, érintett fél, KPI. Prezentációs és vállalati weboldal-látványtervekhez.</li><li><strong>Magyar kitöltőszavak</strong> — véletlenszerű szavak a helyi nyelven különböző területekről. Megmutatja az ügyfélnek, hogyan fog kinézni a szöveg a dizájnban.</li><li><strong>Bacon Ipsum</strong> — hús és grill szókincs: steak, brisket, barbecue. Fejlesztők körében népszerű.</li><li><strong>Cupcake Ipsum</strong> — cukrászati szókincs: muffin, csokoládé, karamell, máz. Élelmiszeripari projektekhez.</li><li><strong>Pirate Ipsum</strong> — kalózszöveg: ahoy, kincs, gálya, rum. Szórakoztató és játékprojektekhez.</li><li><strong>Legal Ipsum</strong> — jogi szaknyelv: joghatóság, felperes, törvény, felelősség. Ügyvédi iroda weboldal-látványtervekhez.</li></ul><p class=\"text-mid mb-4\">A szórakoztató változatok (Bacon, Cupcake, Pirate) jól működnek belső prezentációkban, ahol a humor javítja a csapatkommunikációt. Professzionális ügyfélprezentációkhoz használjon klasszikus Lorem Ipsumot vagy Legal Ipsumot — semlegesek és nem vonják el a figyelmet a dizájnról.</p><p class=\"text-mid\">A magyar kitöltőszavak egyedülálló lehetőség — a helyi nyelvi szavak megőrzik a célnyelv természetes betűarányait és szóhosszait. Ideális az ügyfeleknek a szöveg valósághű előnézetének bemutatásához.</p>"
+      "title": "Milyen kitöltőszöveg-stílusokat talál a generátorban?",
+      "html": "<p class=\"text-mid mb-4\">Generátorunk 8 egyedi kitöltőszöveg-stílust kínál — a klasszikus latintól a jogi szaknyelvig. Minden stílus saját, 90 feletti szóból álló szóbankkal rendelkezik, és természetes ritmusú szöveget hoz létre:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — a klasszikus, latin nyelvű kitöltőszöveg, Cicero művéből. Több mint 500 éve iparági szabvány.</li><li><strong>Hipster Ipsum</strong> — a hipszter kultúra szókincse: craft, avocado, vintage, mindfulness. Ideális életstílus-projektekhez.</li><li><strong>Business Ipsum</strong> — vállalati zsargon: synergy, leverage, stakeholder, KPI. Bemutatók és vállalati weboldal-látványtervek mockupjaihoz.</li><li><strong>Magyar kitöltőszavak</strong> — véletlenszerű magyar szavak különböző területekről. Megmutatja az ügyfélnek, hogyan fog kinézni a magyar nyelvű szöveg a tervben.</li><li><strong>Bacon Ipsum</strong> — húsokhoz és grillezéshez kapcsolódó szavak: steak, brisket, barbecue. Fejlesztők körében népszerű.</li><li><strong>Cupcake Ipsum</strong> — cukrászati szókincs: muffin, chocolate, caramel, frosting. Élelmiszeripari és gasztronómiai projektekhez.</li><li><strong>Pirate Ipsum</strong> — kalóz stílusú szöveg: ahoy, treasure, galleon, rum. Szórakoztató és játékos projektekhez.</li><li><strong>Legal Ipsum</strong> — jogi terminológia: jurisdiction, plaintiff, statute, liability. Ügyvédi iroda weboldal-mockupjaihoz.</li></ul><p class=\"text-mid mb-4\">A szórakoztató változatok (Bacon, Cupcake, Pirate) jól működnek belső bemutatókon és olyan projekteknél, ahol a humor segíti a csapaton belüli kommunikációt. Professzionális ügyfélprezentációkhoz célszerűbb a klasszikus Lorem Ipsumot vagy a Legal Ipsumot választani — ezek semlegesek, és nem vonják el a figyelmet a tervről.</p><p class=\"text-mid\">A Magyar kitöltőszavak generátorunk egyedi lehetősége — a véletlenszerű magyar szavak megőrzik a magyar nyelvre jellemző, természetes betű- és szóhosszúság-arányokat. Ezt a stílust válassza, ha valósághű előnézetet szeretne mutatni az ügyfélnek a szöveg megjelenéséről a tervben.</p>"
     },
     {
       "type": "gap",
@@ -287,8 +335,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Lorem Ipsum és SEO — árt-e a kitöltőszöveg a rangsorolásnak",
-      "html": "<p class=\"text-mid mb-4\">Igen — Lorem Ipsum közzététele éles webhelyen negatívan befolyásolhatja a keresési rangsorolást. A Google elemzi minden indexelt oldal tartalmát és felismeri a kitöltőszöveget:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Gyenge tartalom</strong> — a kitöltőszöveget tartalmazó oldal nem nyújt értéket a felhasználóknak. A Google gyenge tartalomnak minősíti és csökkenti pozícióját.</li><li><strong>Nemkívánatos indexelés</strong> — a Google robotjai indexelik a Lorem Ipsumot mint oldaltartalmat. Megjelenhet a keresési eredményekben, károsítva a márka imázsát.</li><li><strong>Feltérképezési költségkeret pazarlása</strong> — a Google korlátozott feltérképezési költségkeretet oszt ki. A Lorem Ipsumot tartalmazó oldalak haszon nélkül fogyasztják el.</li><li><strong>Core Web Vitals</strong> — a kitöltőszöveg közvetlenül nem befolyásolja a teljesítménymutatókat, de a gyenge minőségű oldalak összességében alacsonyabb rangsorolást kaphatnak.</li></ul><p class=\"text-mid mb-4\">Hogyan kerülje el a problémát: közzététel előtt keresse az egész webhelyén a &quot;lorem ipsum&quot; vagy &quot;dolor sit amet&quot; kifejezést. A Google Search Console-ban ellenőrizze, hogy egyetlen indexelt oldal sem tartalmaz kitöltőszöveget. Használja a <code>site:azondomain.com &quot;lorem ipsum&quot;</code> parancsot a Google-ban.</p><p class=\"text-mid\">A Lorem Ipsum Generátor a tervezési fázis eszköze. A kitöltőszöveget valódi tartalomra kell cserélni a webhely közzététele előtt.</p>"
+      "title": "Árt a SEO-nak a Lorem Ipsum közzététele?",
+      "html": "<p class=\"text-mid mb-4\">Igen — a Lorem Ipsum közzététele egy éles weboldalon negatívan befolyásolhatja a keresési rangsorolást. A Google elemzi minden indexelt oldal tartalmát, és felismeri a kitöltőszöveget. Ezért jelent ez problémát:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Gyenge tartalom (thin content)</strong> — a kitöltőszöveget tartalmazó oldal nem nyújt értéket a felhasználónak. A Google gyenge tartalomnak minősíti az ilyen oldalakat, és csökkenti azok pozícióját.</li><li><strong>Felesleges tartalom indexelése</strong> — a Google robotjai a Lorem Ipsumot az oldal tartalmaként indexelik. Megjelenhet a keresési eredmények között, ami befolyásolja a márka megítélését.</li><li><strong>A feltérképezési költségkeret elvesztése</strong> — a Google korlátozott feltérképezési költségkeretet biztosít minden weboldalnak. A lorem ipsumot tartalmazó oldalak ezt a költségkeretet haszon nélkül fogyasztják el.</li></ul><p class=\"text-mid mb-4\">Így kerülheti el a problémát: a közzététel előtt keresse végig a teljes weboldalát a &quot;lorem ipsum&quot; vagy &quot;dolor sit amet&quot; kifejezésre. A Google Search Console-ban ellenőrizze, hogy egyetlen indexelt oldal sem tartalmaz kitöltőszöveget. Használja a <code>site:sajatdomain.hu &quot;lorem ipsum&quot;</code> parancsot a Google keresőben.</p><p class=\"text-mid\">A Lorem Ipsum generátor a tervezési fázishoz készült eszköz. A kitöltőszöveget mindig valódi tartalomra kell cserélni az oldal közzététele előtt.</p>"
     },
     {
       "type": "gap",
@@ -296,28 +344,28 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Mi teszi különlegessé ezt a Lorem Ipsum Generátort?",
+      "title": "Mi különbözteti meg ezt a Lorem Ipsum generátort?",
       "grid": "two",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "3 generálási mód",
+          "title": "3 tartalomgenerálási mód",
           "description": "Bekezdések, mondatok és szavak — teljes kontroll a mennyiség felett."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 egyedi szövegstílus",
-          "description": "Lorem Ipsum, Hipster, Business, Magyar kitöltőszavak, Bacon, Cupcake, Pirate és Legal. Minden stílus 90+ szavas szóbankkal."
+          "description": "Lorem Ipsum, Hipster, Business, Magyar kitöltőszavak, Bacon, Cupcake, Pirate és Legal. Minden stílus saját, 90 feletti szóból álló szóbankkal."
         },
         {
           "icon": "RiUserLine",
           "title": "Helyi feldolgozás",
-          "description": "A szöveg a böngészőben generálódik. Semmi nem kerül szerverre. Az eszköz offline is működik az oldal betöltése után."
+          "description": "A szöveg a böngészőben generálódik. Semmi nem kerül a szerverre. Az eszköz a betöltés után offline is működik."
         },
         {
           "icon": "RiLockLine",
           "title": "Regisztráció és korlátozás nélkül",
-          "description": "Teljesen ingyenes. Nincs regisztráció, bejelentkezés vagy személyes adat szükséges. Nincs reklám a generált szövegben."
+          "description": "Az eszköz teljesen ingyenes. Nincs szükség regisztrációra, bejelentkezésre vagy személyes adatok megadására. A generált szövegben nincs reklám."
         }
       ]
     },
@@ -326,9 +374,40 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Mennyi kitöltőszöveg kell egy projekthez — hossz-útmutató",
-      "html": "<p class=\"text-mid mb-4\">A Lorem Ipsum mennyisége a projekt típusától függ. Iránymutató értékek:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Projekttípus</th><th class=\"py-2 pr-4 font-semibold\">Ajánlott mennyiség</th><th class=\"py-2 font-semibold\">Megjegyzés</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">H1 címsor</td><td class=\"py-2 pr-4 whitespace-nowrap\">5–10 szó</td><td class=\"text-primary-light0 py-2 text-sm\">Rövid, tömör oldal- vagy szekciócím.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Meta leírás</td><td class=\"py-2 pr-4 whitespace-nowrap\">20–25 szó</td><td class=\"text-primary-light0 py-2 text-sm\">Optimálisan 150–160 karakter.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Termékkártya</td><td class=\"py-2 pr-4 whitespace-nowrap\">2–3 bekezdés</td><td class=\"text-primary-light0 py-2 text-sm\">Rövid leírás + specifikáció.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Szolgáltatás oldal</td><td class=\"py-2 pr-4 whitespace-nowrap\">4–6 bekezdés</td><td class=\"text-primary-light0 py-2 text-sm\">Szolgáltatásleírás, előnyök, CTA.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Blogcikk</td><td class=\"py-2 pr-4 whitespace-nowrap\">8–15 bekezdés</td><td class=\"text-primary-light0 py-2 text-sm\">1500–2500 szó az SEO-hoz.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Céloldal</td><td class=\"py-2 pr-4 whitespace-nowrap\">5–8 bekezdés</td><td class=\"text-primary-light0 py-2 text-sm\">Hero, előnyök, ajánlások, CTA.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Szórólap / brosúra</td><td class=\"py-2 pr-4 whitespace-nowrap\">3–5 bekezdés</td><td class=\"text-primary-light0 py-2 text-sm\">Rövid szövegblokkok címsorokkal.</td></tr></tbody></table></div>"
+      "type": "sectionTable",
+      "title": "Mennyi kitöltőszöveg szükséges egy adott projekthez?",
+      "labelHeader": "Projekttípus",
+      "cols": ["Ajánlott mennyiség", "Megjegyzés"],
+      "rows": [
+        {
+          "label": "H1 címsor",
+          "values": ["5–10 szó", "Rövid, tömör oldal- vagy szekciócím."]
+        },
+        {
+          "label": "Meta leírás",
+          "values": ["20–25 szó", "Optimálisan 150–160 karakter."]
+        },
+        {
+          "label": "Termékkártya",
+          "values": ["2–3 bekezdés", "Rövid leírás és specifikáció."]
+        },
+        {
+          "label": "Szolgáltatás oldal",
+          "values": ["4–6 bekezdés", "Szolgáltatásleírás, előnyök, CTA."]
+        },
+        {
+          "label": "Blogcikk",
+          "values": ["8–15 bekezdés", "1500–2500 szó a SEO-hoz."]
+        },
+        {
+          "label": "Céloldal",
+          "values": ["5–8 bekezdés", "Hero, előnyök, ajánlások, CTA."]
+        },
+        {
+          "label": "Szórólap / brosúra",
+          "values": ["3–5 bekezdés", "Rövid szövegblokkok címsorokkal."]
+        }
+      ]
     },
     {
       "type": "gap",
@@ -336,53 +415,83 @@
     },
     {
       "type": "faq",
-      "title": "Gyakran ismételt kérdések a Lorem Ipsum Generátorról",
+      "title": "Gyakran ismételt kérdések a Lorem Ipsum generátorról",
       "openByDefault": 1,
       "items": [
         {
           "question": "Mi az a Lorem Ipsum?",
-          "answer": "A Lorem Ipsum a nyomdaipar, a grafikai tervezés és a webfejlesztés szabványos kitöltőszövege. Arra szolgál, hogy az elrendezéseket valósághű szöveggel töltse ki, amikor a végleges tartalom még nem áll készen. A szöveg természetes ritmussal és a valódi nyelvhez hasonló betűeloszlással rendelkezik.",
-          "answerSchemaText": "A Lorem Ipsum a nyomdaipar, a grafikai tervezés és a webfejlesztés szabványos kitöltőszövege."
+          "answer": "A Lorem Ipsum a nyomdaipar, a grafikai tervezés és a webfejlesztés szabványos kitöltőszövege (placeholder text). Arra szolgál, hogy az elrendezést valósághű szöveggel töltse ki, amikor a végleges tartalom még nem áll készen. A szöveg a valódi nyelvhez hasonló természetes ritmussal és betűeloszlással rendelkezik, ami hitelessé teszi a tervet.",
+          "answerSchemaText": "A Lorem Ipsum a nyomdaipar és a webdizájn szabványos kitöltőszövege, amelyet az elrendezések kitöltésére használnak."
         },
         {
-          "question": "Honnan származik a Lorem Ipsum?",
-          "answer": "A Lorem Ipsum Marcus Tullius Cicero De Finibus Bonorum et Malorum című művéből származik, amelyet Kr. e. 45-ben írt. Ez egy filozófiai értekezés az etikáról. Az 1.10.32 szakasz eredeti szövegrészét a 16. században egy ismeretlen nyomdász változtatta meg.",
-          "answerSchemaText": "A Lorem Ipsum Cicero De Finibus Bonorum et Malorum című művéből származik, Kr. e. 45-ből."
+          "question": "Hogyan készítsen Lorem Ipsumot?",
+          "answer": "A legegyszerűbb a fenti generátor használata: válasszon bekezdéseket, mondatokat vagy szavakat, állítsa be a mennyiséget, válasszon szövegstílust, és kattintson a Generálás gombra. A szöveg azonnal megjelenik, és másolhatja a vágólapra, vagy letöltheti .txt fájlként. Egyes programoknak, például a Microsoft Wordnek, saját, beépített parancsa is van a Lorem Ipsum beillesztésére.",
+          "answerSchemaText": "Válasszon módot és mennyiséget a fenti generátorban, kattintson a Generálás gombra, majd másolja az eredményt."
         },
         {
-          "question": "Valódi latin a Lorem Ipsum?",
-          "answer": "Részben. Valódi latin szavakat tartalmaz Cicero művéből, de a szöveget szándékosan megváltoztatták. A szavak össze vannak keverve, néhánynak hiányoznak a végződései. Az egyes szavak, mint a dolor (fájdalom), amet (szeret) és ipsum (maga) valódi latin kifejezések.",
-          "answerSchemaText": "Részben — valódi latin szavakat tartalmaz Cicerótól, de a szöveget szándékosan megváltoztatták."
+          "question": "Mi a klasszikus Lorem Ipsum teljes szövege?",
+          "answer": "A legszélesebb körben használt változat egy bekezdés, amely a Lorem ipsum dolor sit amet, consectetur adipiscing elit szavakkal kezdődik — a fenti szekcióban megtalálja, készen a másolásra. Nincs egyetlen, hivatalos hosszabb változat — a legtöbb generátor, ez is, ugyanabból a szóbankból hoz létre további szöveget, így pontos hosszúság esetén jobb a generátort használni, mint egy kész, hosszabb szöveget keresni.",
+          "answerSchemaText": "A legnépszerűbb változat egy bekezdés, amely a Lorem ipsum dolor sit amet szavakkal kezdődik — a fenti szekcióban elérhető."
         },
         {
-          "question": "Hány bekezdés kell egy látványtervhez?",
-          "answer": "Az oldaltípustól függ. Céloldal: 5–8. Szolgáltatás oldal: 4–6. Blogcikk: 8–15 (1500–2500 szó). Termékkártya: 2–3. A generátor pontosan a szükséges mennyiséget hozza létre.",
-          "answerSchemaText": "Az oldaltípustól függ: céloldal 5–8, szolgáltatás 4–6, blog 8–15, termék 2–3 bekezdés."
+          "question": "Honnan származik a Lorem Ipsum szöveg?",
+          "answer": "A Lorem Ipsum Marcus Tullius Cicero De Finibus Bonorum et Malorum (A jó és a rossz határairól) című művéből származik, amelyet Kr. e. 45-ben írt. Ez egy filozófiai értekezés az etikáról. Az 1.10.32 szakasz eredeti szövegrészét egy ismeretlen nyomdász a 16. században szándékosan megváltoztatta — szavakat adott hozzá, távolított el és rendezett át, hogy a szövegnek ne legyen jelentése, de megőrizze a latin nyelv természetes megjelenését.",
+          "answerSchemaText": "A Lorem Ipsum Cicero De Finibus Bonorum et Malorum című művéből származik, amelyet Kr. e. 45-ben írt."
         },
         {
-          "question": "Használhatom a Lorem Ipsumot éles webhelyen?",
-          "answer": "Nem. A Lorem Ipsum csak a tervezési fázisra való. A közzététel árt az SEO-nak (a Google gyenge tartalomnak minősíti), a márka imázsának, és indexelhető a keresési eredményekben. Mindig cserélje ki közzététel előtt.",
-          "answerSchemaText": "Nem — árt az SEO-nak és a márka imázsának. Mindig cserélje valódi tartalomra közzététel előtt."
+          "question": "Valódi latin nyelv a Lorem Ipsum, vagy kitalált nyelv?",
+          "answer": "Valódi latin szókincsről van szó, de nem valódi latin mondatról. A Lorem Ipsum Cicero művéből származó, valódi latin szavakat tartalmaz, de a szöveget szándékosan összekeverték — a szavak sorrendje felborult, néhánynak hiányzik a végződése, máshová pedig olyan szavak kerültek, amelyek nem illenek oda. Tehát nem kitalált nyelvről van szó, hanem egy valódi nyelv kitalált, jelentés nélküli elrendezéséről.",
+          "answerSchemaText": "Valódi latin szavakat használ Cicero művéből, de ezeket szándékosan jelentés nélküli elrendezésbe keverték."
         },
         {
-          "question": "Árt a Lorem Ipsum az SEO-nak?",
-          "answer": "Igen, ha éles webhelyen teszik közzé. A Google felismeri a kitöltőszöveget és gyenge minőségűnek ítélheti az oldalt. Használja a site:azondomain.com lorem ipsum parancsot a Google-ban az ellenőrzéshez.",
-          "answerSchemaText": "Igen, éles webhelyeken — a Google felismeri a kitöltőszöveget és gyenge tartalomnak minősíti."
+          "question": "Azt jelenti a Lorem Ipsum, hogy a fájdalom önmagában?",
+          "answer": "A nyitó szavak a fájdalomra utalnak, de ez nem pontos fordítás. A Lorem a dolorem (a dolor, fájdalom szó egy alakja) levágott vége, az ipsum pedig önmagát jelenti. Innen ered a játékos rövidítés, a dolorem ipsum, azaz a fájdalom önmagában. Ez azonban két elszigetelt szótöredék értelmezése, nem a teljes mondat fordítása — amely latinul nem ad értelmet.",
+          "answerSchemaText": "Részben — a nyitó szavak a dolor (fájdalom) és az ipsum (önmaga) szavakhoz kapcsolódnak, de ez nem teljes fordítás."
         },
         {
-          "question": "Mik azok a Hipster Ipsum és Business Ipsum?",
-          "answer": "Tematikus kitöltőszöveg-változatok. A Hipster Ipsum hipster szókincset használ (kézműves, avokádó, vintage). A Business Ipsum vállalati zsargon (szinergia, tőkeáttétel, érintett fél, KPI). Mindkettő természetes ritmusú szöveget generál szakterület-specifikus szókinccsel.",
-          "answerSchemaText": "Tematikus változatok — a Hipster életstílus-szókincset, a Business vállalati zsargont használ."
+          "question": "Hogyan ejtjük ki a Lorem Ipsumot?",
+          "answer": "A szöveget úgy olvassuk, ahogyan írva van, a szavakat a klasszikus latin stílusában szótagokra bontva: LO-rem IP-sum DO-lor SIT a-MET, kon-szek-te-TUR a-di-pisz-CING E-lit. Nincs egyetlen kötelező kiejtés, mivel ez nem élő nyelv - a legtöbben egyszerűen fonetikusan olvassák, a latin olvasási szabályai szerint.",
+          "answerSchemaText": "Fonetikusan olvassák, szótagokra bontva a klasszikus latin szabályai szerint: LO-rem IP-sum DO-lor SIT a-MET."
+        },
+        {
+          "question": "Lefordítható magyarra a Lorem Ipsum?",
+          "answer": "A Lorem Ipsum szándékosan torzított latin mondat, így egészében semmilyen nyelvre nem fordítható le érthető formában. Az egyes szavak külön-külön lefordíthatók — a dolor fájdalmat, az amet a szeretéshez kapcsolódó alakot, az ipsum pedig önmagát jelenti —, de ezek összefűzése nem ad értelmes magyar mondatot. Ha valódi magyar szöveget szeretne a terv bemutatásához, válassza a generátor Magyar kitöltőszavak stílusát, amely véletlenszerű magyar szavakat használ, nem a latin szöveg fordítását.",
+          "answerSchemaText": "Egészében nem fordítható le érthető mondatra, mert a latin szöveget szándékosan összekeverték. Magyar szöveghez használja a Magyar kitöltőszavak stílust."
+        },
+        {
+          "question": "Generálhatok Lorem Ipsumot HTML vagy PDF formátumban?",
+          "answer": "A generátor tiszta szöveget (plain text) hoz létre, HTML-jelölés és PDF-exportálás nélkül. Ez a gyakorlatban kényelmes, ha a szöveget kódba, teszteléshez használt JSON-fájlba vagy szerkesztőbe illeszti be — nincs mit eltávolítani belőle. Ha PDF-fájlra van szüksége, illessze be a másolt szöveget egy szövegszerkesztőbe (például Wordbe vagy Google Docsba), és mentse a dokumentumot PDF-ként.",
+          "answerSchemaText": "Nem — a generátor tiszta szöveget hoz létre HTML-jelölés nélkül. PDF-hez illessze be a szöveget egy szerkesztőbe, és mentse PDF-ként."
+        },
+        {
+          "question": "Hány bekezdés Lorem Ipsumra van szüksége egy látványtervhez?",
+          "answer": "Az oldal típusától függ. Egy céloldalhoz általában 5–8 bekezdés elég (hero, előnyök, ajánlások, CTA). A szolgáltatás oldal 4–6 bekezdést igényel. Egy blogcikk 8–15 bekezdés (1500–2500 szó). A termékkártyához 2–3 bekezdés szükséges. A generátor lehetővé teszi, hogy pontosan a szükséges mennyiséget hozza létre.",
+          "answerSchemaText": "Az oldaltípustól függ: céloldal 5–8 bekezdés, szolgáltatás oldal 4–6, blogcikk 8–15, termékkártya 2–3."
+        },
+        {
+          "question": "Használhatom a Lorem Ipsumot éles weboldalon?",
+          "answer": "Nem. A Lorem Ipsum kizárólag a tervezési fázishoz készült. A kitöltőszöveg éles weboldalon történő közzététele árt a SEO-nak (a Google gyenge tartalomnak minősíti), negatívan hat a márka megítélésére, és indexelhető a keresési eredmények között. A közzététel előtt mindig cserélje ki a kitöltőszöveget valódi tartalomra.",
+          "answerSchemaText": "Nem — a kitöltőszöveg árt a SEO-nak és a márka megítélésének. A közzététel előtt mindig cserélje valódi tartalomra."
+        },
+        {
+          "question": "Mi a különbség a Lorem Ipsum és a dummy text között?",
+          "answer": "Szinonimák. A Lorem Ipsum, dummy text, placeholder text, blind text, filler text és kitöltőszöveg kifejezések mind olyan szöveget jelölnek, amelyet ideiglenesen használnak a végleges tartalom helyén. A Lorem Ipsum egy konkrét szöveg, amely Cicerótól származik, míg a dummy text egy tágabb fogalom, amely bármilyen kitöltőszöveget magában foglal.",
+          "answerSchemaText": "Szinonimák - a Lorem Ipsum Cicero konkrét szövege, a dummy text a kitöltőszöveg általános fogalma."
+        },
+        {
+          "question": "Mi az a Hipster Ipsum és a Business Ipsum?",
+          "answer": "Ezek a kitöltőszöveg tematikus változatai. A Hipster Ipsum a hipszter kultúra szókincsét használja (craft, avocado, vintage, mindfulness). A Business Ipsum vállalati zsargon (synergy, leverage, stakeholder, KPI). Mindkettő ugyanazt a természetes ritmust adja, mint a klasszikus Lorem Ipsum, de iparág-specifikus szókinccsel, ami jól működik belső bemutatókon, ahol egy kis humor segíti a csapaton belüli kommunikációt.",
+          "answerSchemaText": "Tematikus Lorem Ipsum változatok — a Hipster életstílus-szókincset, a Business vállalati zsargont használ."
         },
         {
           "question": "Ingyenes és biztonságos a generátor?",
-          "answer": "Igen. Teljesen ingyenes, regisztráció és korlátozás nélkül. Minden a böngészőben generálódik — semmi nem kerül szerverre. Nincs nyomkövetés, nincs süti, offline is működik a betöltés után.",
+          "answer": "Igen. A Lorem Ipsum generátor teljesen ingyenes, regisztráció és korlátozás nélkül. Minden szöveg a böngészőben generálódik lokálisan — semmi nem kerül a szerverre. Az eszköz nem gyűjt személyes adatokat, nem használ nyomkövető sütiket, és a betöltés után offline is tovább működik.",
           "answerSchemaText": "Igen — ingyenes, regisztráció nélkül, helyi böngészőfeldolgozás, nincs adatgyűjtés."
         },
         {
-          "question": "Hány szó van egy szabványos bekezdésben?",
-          "answer": "A generált bekezdés általában 4–7 mondatból áll, ami kb. 40–90 szót jelent. Cicero eredeti első bekezdése körülbelül 69 szóból áll.",
-          "answerSchemaText": "A generált bekezdés általában 4–7 mondatból áll, ami kb. 40–90 szót jelent."
+          "question": "Hány szóból áll egy szabványos Lorem Ipsum bekezdés?",
+          "answer": "A generált bekezdés általában 4–7 mondatból áll, ami körülbelül 40–90 szót jelent. A fenti szekcióban másolásra elérhető klasszikus Lorem Ipsum bekezdés körülbelül 69 szóból áll, és a Lorem ipsum dolor sit amet, consectetur adipiscing elit szavakkal kezdődik.",
+          "answerSchemaText": "A generált bekezdés általában 4–7 mondatból áll, ami körülbelül 40–90 szót jelent."
         }
       ]
     },

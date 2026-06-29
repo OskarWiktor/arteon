@@ -2,14 +2,14 @@
   "toolKey": "loremIpsum",
   "locale": "it",
   "metadata": {
-    "title": "Generatore Lorem Ipsum — testo di esempio, paragrafi, frasi e parole casuali",
-    "description": "Generatore Lorem Ipsum gratuito — 8 stili: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business e altro. Genera paragrafi, frasi o parole e copia il testo o scarica il file .txt.",
+    "title": "Genera Lorem Ipsum - generatore gratuito di testo segnaposto con 8 stili",
+    "description": "Genera tutto il testo Lorem Ipsum che ti serve o copia il paragrafo classico completo senza generare nulla. Scopri anche cosa significa Lorem Ipsum e da dove viene questo testo.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/generatore-lorem-ipsum-it.webp",
     "path": "/strumenti/generatore-lorem-ipsum"
   },
   "hero": {
-    "title": "Generatore Lorem Ipsum — testo di esempio, paragrafi, frasi e parole casuali",
-    "description": "8 stili di testo: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal e riempitivo italiano. Genera paragrafi, frasi o parole.",
+    "title": "Genera testo Lorem Ipsum in 8 stili oppure copia il paragrafo classico originale",
+    "description": "Scegli paragrafi, frasi o parole, imposta la quantità e clicca su Genera: il testo segnaposto appare subito. Puoi anche copiare il paragrafo classico più usato al mondo, disponibile sotto il generatore senza generare nulla.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/generatore-lorem-ipsum-it.webp"
   },
   "breadcrumbs": {
@@ -24,39 +24,37 @@
   },
   "schemas": {
     "software": {
-      "name": "Generatore Lorem Ipsum — testo di esempio, paragrafi, frasi e parole casuali",
+      "name": "Generatore Lorem Ipsum — testo segnaposto gratuito con paragrafo classico e 8 stili",
       "alternateName": [
         "Lorem Ipsum Generator",
+        "Generatore di testo segnaposto",
+        "Generatore di paragrafi casuali",
+        "Placeholder text generator",
+        "Cosa significa lorem ipsum",
+        "Lorem ipsum testo completo",
         "Bacon Ipsum generator",
         "Cupcake Ipsum generator",
         "Pirate Ipsum generator",
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
-        "Business Ipsum generator",
-        "Dummy text generator"
+        "Business Ipsum generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Generatore Lorem Ipsum gratuito con 8 stili di testo. Genera paragrafi, frasi o parole, copia il testo negli appunti oppure scarica il file .txt.",
+      "description": "Generatore Lorem Ipsum gratuito con 8 stili di testo e un paragrafo classico pronto da copiare. Genera paragrafi, frasi o parole, scopri il significato e la storia del testo, copia negli appunti oppure scarica un file .txt.",
       "featureList": [
-        "Generare paragrafi Lorem Ipsum",
-        "Generare frasi individuali",
-        "Generare parole casuali",
-        "Lorem Ipsum — latino da De Finibus",
-        "Hipster Ipsum — vocabolario hipster",
-        "Business Ipsum — gergo aziendale",
-        "Riempitivo italiano — parole nella lingua locale",
-        "Bacon Ipsum — carne e grigliata",
-        "Cupcake Ipsum — pasticceria e dolci",
-        "Pirate Ipsum — vocabolario pirata",
-        "Legal Ipsum — terminologia giuridica",
-        "Copiare testo negli appunti",
-        "Scaricare come file .txt",
-        "Elaborazione locale nel browser"
+        "Generazione di paragrafi, frasi o parole casuali nella quantità scelta",
+        "8 stili di testo: latino classico, Hipster, Business, riempitivo italiano, Bacon, Cupcake, Pirate e Legal Ipsum",
+        "Paragrafo classico di Lorem Ipsum pronto da copiare senza generare nulla",
+        "Tabella con l'etimologia delle parole più comuni del testo Lorem Ipsum",
+        "Indicazioni su come inserire Lorem Ipsum in Word e Adobe InDesign",
+        "Copia del testo generato negli appunti con un clic",
+        "Download del risultato come file .txt",
+        "Elaborazione interamente locale nel browser"
       ]
     },
     "howTo": {
-      "name": "Come usare il Generatore Lorem Ipsum",
-      "description": "Genera testo Lorem Ipsum in pochi secondi. Scegli modalità, stile e formato, poi copia o scarica il risultato.",
+      "name": "Come generare testo Lorem Ipsum",
+      "description": "Genera testo segnaposto Lorem Ipsum in pochi secondi. Scegli modalità, stile e quantità, poi copia o scarica il risultato.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -69,7 +67,7 @@
         },
         {
           "name": "Copiare o scaricare il risultato",
-          "text": "Clicca su Genera, poi copia il testo o scarica un file .txt."
+          "text": "Clicca su Genera, poi copia il testo negli appunti o scarica un file .txt."
         }
       ]
     }
@@ -81,30 +79,39 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Cos'è Lorem Ipsum e a cosa serve",
-      "html": "<p class=\"text-mid\">Lorem Ipsum è il testo segnaposto standard utilizzato nei settori della stampa, del design grafico e dello sviluppo web da oltre 500 anni. Il testo proviene da <em>De Finibus Bonorum et Malorum</em> (Sui confini del bene e del male) scritto da Marco Tullio Cicerone nel 45 a.C. Il passaggio originale è stato deliberatamente alterato — sono state aggiunte, rimosse e riordinate parole — in modo che il testo non abbia significato ma mantenga un ritmo naturale e una distribuzione delle lettere simile a una lingua reale.</p><p class=\"text-mid mt-3\">Il Generatore Lorem Ipsum consente di creare rapidamente qualsiasi quantità di testo segnaposto per mockup, prototipi di interfaccia, design grafici e test di impaginazione tipografica. Lo strumento genera paragrafi, frasi o parole in 8 stili di testo.</p>",
+      "title": "Perché usare un generatore di Lorem Ipsum?",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum è il testo segnaposto standard usato nel design grafico e nelle pagine web. Il testo proviene da <em>De Finibus Bonorum et Malorum</em> (Sui confini del bene e del male), opera scritta da Marco Tullio Cicerone nel 45 a.C. Il passaggio originale è stato deliberatamente alterato - sono state aggiunte, rimosse e scambiate alcune parole - in modo che il testo non abbia senso ma conservi un ritmo naturale e una distribuzione delle lettere simile a una lingua reale.</p><p class=\"text-mid mb-4\">Il generatore si usa quando un layout grafico deve essere presentato o testato ma il contenuto definitivo non è ancora pronto, ad esempio per mockup di siti web, prototipi di interfaccia o progetti grafici. Lo strumento crea paragrafi, frasi o parole in 8 stili diversi.</p><p class=\"text-mid\">Più sotto trovi anche il paragrafo classico di Lorem Ipsum pronto da copiare, una tabella con il significato delle parole più frequenti e alcune indicazioni su come inserire questo testo nei programmi più diffusi.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/generatore-lorem-ipsum-it.webp",
-      "imageAlt": "Generatore Lorem Ipsum — Arteon"
+      "imageAlt": "Generatore Lorem Ipsum — testo segnaposto — Arteon"
     },
     {
       "type": "gap",
       "size": "sm"
     },
     {
+      "type": "sectionInfo",
+      "title": "Copia il paragrafo classico di Lorem Ipsum senza generare nulla",
+      "html": "<p class=\"text-mid mb-4\">È il paragrafo di testo segnaposto più copiato su internet - lo stesso passaggio compare di default da decenni in Word, Adobe InDesign e in innumerevoli modelli grafici:</p><blockquote class=\"rounded-md border border-neutral-200 bg-neutral-50 p-4 text-mid italic\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote><p class=\"text-mid mt-4\">Ti serve più testo di questo singolo paragrafo? Usa il generatore qui sopra - scegli il numero di paragrafi, frasi o parole e copia esattamente la quantità di cui hai bisogno, senza ripetere a mano lo stesso passaggio.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
-      "title": "Come usare il Generatore Lorem Ipsum",
+      "title": "Come si usa il Generatore Lorem Ipsum?",
       "description": "Genera testo segnaposto in tre passaggi:",
       "grid": "three",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "1. Scegli una modalità",
-          "description": "Seleziona paragrafi, frasi o parole e imposta la quantità."
+          "title": "1. Scegli modalità e quantità",
+          "description": "Seleziona paragrafi, frasi o parole e imposta la quantità desiderata."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "2. Scegli uno stile",
-          "description": "8 stili: Lorem Ipsum, Hipster, Business, Riempitivo italiano, Bacon, Cupcake, Pirate e Legal — ognuno con il proprio dizionario."
+          "title": "2. Scegli lo stile",
+          "description": "Scegli uno degli 8 stili disponibili di testo segnaposto: Lorem Ipsum classico, Hipster, Business, Riempitivo italiano, Bacon, Cupcake, Pirate o Legal - ognuno con il proprio dizionario di parole."
         },
         {
           "icon": "RiFileCopyLine",
@@ -119,8 +126,17 @@
     },
     {
       "type": "sectionInfo",
-      "title": "La storia del Lorem Ipsum — da Cicerone al design moderno",
-      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum ha oltre 2.000 anni di storia. Il passaggio originale proviene dalla sezione 1.10.32 del <em>De Finibus Bonorum et Malorum</em> di Cicerone, scritto nel 45 a.C. L'opera è un trattato filosofico sull'etica — Cicerone analizzò l'edonismo e lo stoicismo, sostenendo un approccio equilibrato al piacere e al dolore.</p><p class=\"text-mid mb-4\">L'uso di questo testo come riempitivo nella stampa risale al XVI secolo, quando uno stampatore sconosciuto utilizzò il passaggio di Cicerone per creare un campionario tipografico. Il testo è sopravvissuto cinque secoli, attraversando le ere della composizione manuale, del Linotype e della fotocomposizione.</p><p class=\"text-mid mb-4\">La popolarità moderna del Lorem Ipsum è iniziata negli anni '60, quando Letraset inserì il testo su fogli di caratteri trasferibili usati negli studi grafici. La svolta definitiva arrivò nel 1985, quando Aldus Corporation incluse Lorem Ipsum come testo predefinito in PageMaker — uno dei primi programmi di desktop publishing (DTP). Da quel momento, Lorem Ipsum divenne lo standard del settore.</p><p class=\"text-mid\">Richard McClintock, professore di latino all'Hampden-Sydney College in Virginia, identificò la fonte del testo negli anni '80, scoprendo che le parole lorem ipsum sono un frammento corrotto del latino di Cicerone. La sua ricerca confermò che Lorem Ipsum non è una raccolta casuale di parole, ma ha genuine radici letterarie.</p>"
+      "title": "Da dove viene il testo Lorem Ipsum? La storia da Cicerone a oggi",
+      "html": "<p class=\"text-mid mb-4\">Il testo Lorem Ipsum ha più di 2000 anni. Il passaggio originale proviene dalla sezione 1.10.32 del trattato <em>De Finibus Bonorum et Malorum</em> di Cicerone, scritto nel 45 a.C. L'opera è un trattato filosofico sull'etica - Cicerone analizzava l'edonismo e lo stoicismo, sostenendo un approccio equilibrato al piacere e al dolore.</p><p class=\"text-mid mb-4\">L'uso di questo testo come riempitivo nella stampa risale al 1500 circa, quando uno stampatore non identificato utilizzò il passaggio di Cicerone per creare un libro campione di caratteri tipografici. Il testo è sopravvissuto cinque secoli, attraversando l'epoca della composizione manuale, del linotype e della fotocomposizione.</p><p class=\"text-mid mb-4\">La popolarità moderna di Lorem Ipsum nasce negli anni '60 del Novecento, quando l'azienda Letraset inserì il testo sui fogli di caratteri trasferibili usati negli studi grafici. La svolta decisiva arrivò nel 1985, quando Aldus Corporation integrò Lorem Ipsum come testo segnaposto predefinito in PageMaker, uno dei primi programmi di desktop publishing (DTP). Da quel momento Lorem Ipsum è diventato lo standard del settore.</p><p class=\"text-mid\">Richard McClintock, docente di latino all'Hampden-Sydney College in Virginia, individuò la fonte del testo negli anni '80, scoprendo che le parole lorem ipsum sono un frammento corrotto del latino tratto dall'opera di Cicerone. La sua ricerca confermò che Lorem Ipsum non è un insieme casuale di parole, ma ha radici letterarie reali.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cosa significano le parole del testo Lorem Ipsum dolor sit amet?",
+      "html": "<p class=\"text-mid mb-4\">Il testo Lorem Ipsum è deliberatamente alterato - non è una frase grammaticalmente corretta in latino, quindi non si può tradurre nella sua interezza. Le singole parole, però, provengono dal latino vero e hanno significati o radici etimologiche documentate:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Parola</th><th class=\"py-2 font-semibold\">Significato / origine</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Lorem</td><td class=\"text-primary-light0 py-2 text-sm\">Non è una parola autonoma - è la parte finale troncata di &quot;dolorem&quot; (forma di &quot;dolor&quot;, dolore).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Ipsum</td><td class=\"text-primary-light0 py-2 text-sm\">Da &quot;ipse&quot; - stesso, proprio quello.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Dolor</td><td class=\"text-primary-light0 py-2 text-sm\">Dolore, sofferenza.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Sit</td><td class=\"text-primary-light0 py-2 text-sm\">È, sia (dal verbo &quot;esse&quot;, essere).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amet</td><td class=\"text-primary-light0 py-2 text-sm\">Da &quot;amare&quot; - amare, apprezzare.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Consectetur</td><td class=\"text-primary-light0 py-2 text-sm\">Forma alterata collegata a &quot;consequi&quot; - seguire, perseguire.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Adipiscing</td><td class=\"text-primary-light0 py-2 text-sm\">Da &quot;adipisci&quot; - raggiungere, conseguire.</td></tr><tr><td class=\"py-2 pr-4\">Elit</td><td class=\"text-primary-light0 py-2 text-sm\">Parte finale troncata di &quot;velit&quot; (vorrebbe, forma di &quot;velle&quot;, volere).</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Da qui nasce la traduzione scherzosa e diffusa delle prime parole come &quot;il dolore stesso&quot; (dolorem ipsum) - si tratta però dell'interpretazione di singoli frammenti isolati, non della traduzione della frase intera, che in latino non ha alcun senso.</p>"
     },
     {
       "type": "gap",
@@ -128,24 +144,24 @@
     },
     {
       "type": "sectionSteps",
-      "title": "3 modalità di generazione dei contenuti",
+      "title": "Scegli se ti servono paragrafi, frasi o parole",
       "description": "Il generatore offre 3 tipi di contenuto:",
       "grid": "three",
       "items": [
         {
           "icon": "RiParagraph",
           "title": "Paragrafi",
-          "description": "Blocchi di testo classici di lunghezza fissa. Ideale per mockup web, modelli CMS e prototipi di interfaccia."
+          "description": "Blocchi di testo classici. Ideali per mockup di siti web, modelli CMS e prototipi di interfaccia."
         },
         {
           "icon": "RiTextSnippet",
           "title": "Frasi",
-          "description": "Frasi individuali di lunghezza casuale (5–15 parole). Utili per testare campi modulo, descrizioni prodotto e blocchi di testo brevi."
+          "description": "Frasi singole di lunghezza casuale tra 5 e 15 parole. Utili per testare campi modulo, descrizioni prodotto e blocchi di testo brevi."
         },
         {
           "icon": "RiFontSize",
           "title": "Parole",
-          "description": "Parole casuali singole dal dizionario selezionato. Ideale per tag, etichette, nomi di categorie e test di lunghezza testo nei componenti UI."
+          "description": "Parole singole casuali dal dizionario scelto. Ideali per tag, etichette, nomi di categorie e test sulla lunghezza del testo nei componenti dell'interfaccia."
         }
       ]
     },
@@ -155,8 +171,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Quando usare Lorem Ipsum e quando usare testo reale",
-      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum funziona bene ovunque il contenuto non sia ancora pronto ma il layout debba essere presentato o testato:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Prototipi UI e wireframe</strong> — progettare la struttura della pagina senza attendere il testo finale dal cliente.</li><li><strong>Mockup grafici</strong> — presentare un design con testo dall'aspetto realistico invece di rettangoli vuoti.</li><li><strong>Test di font e tipografia</strong> — valutare leggibilità, interlinea, crenatura e gerarchia dei titoli su un blocco di testo reale.</li><li><strong>Modelli CMS e temi</strong> — dimostrare l'aspetto di un modello WordPress, Shopify o altro CMS con contenuto di esempio.</li><li><strong>Materiali stampati</strong> — volantini, brochure, biglietti da visita e cataloghi in fase di progettazione.</li></ul><p class=\"text-mid mb-4\"><strong>Quando NON usare Lorem Ipsum:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Siti web in produzione</strong> — Google indicizza il testo segnaposto e può considerare la pagina di bassa qualità.</li><li><strong>Contenuto SEO finale</strong> — meta titoli, descrizioni e intestazioni H1 devono contenere parole chiave reali.</li><li><strong>Email marketing</strong> — inviare messaggi con Lorem Ipsum è poco professionale e rischia di finire nello spam.</li><li><strong>Test di usabilità con utenti</strong> — gli utenti si concentrano sul contenuto. Il testo segnaposto distorce i risultati della ricerca UX.</li></ul>"
+      "title": "Quando usare Lorem Ipsum e quando usare testo reale?",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum funziona bene ovunque il contenuto non sia ancora pronto, ma il layout grafico debba essere presentato o testato:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Prototipi di interfaccia e wireframe</strong> - progettare la struttura di una pagina o di un'app senza attendere i testi definitivi del cliente.</li><li><strong>Mockup grafici</strong> - presentare un progetto grafico con testo dall'aspetto realistico invece di rettangoli vuoti.</li><li><strong>Test di font e tipografia</strong> - valutare leggibilità, interlinea, spaziatura tra lettere e gerarchia dei titoli su un blocco di testo reale.</li><li><strong>Modelli e temi CMS</strong> - mostrare l'aspetto di un modello WordPress, Shopify o di un altro CMS con un contenuto di esempio.</li><li><strong>Materiali stampati</strong> - volantini, brochure, biglietti da visita e cataloghi nella fase di progettazione.</li></ul><p class=\"text-mid mb-4\"><strong>Quando NON usare Lorem Ipsum:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Siti già pubblicati</strong> - Google indicizza il testo segnaposto e può considerare la pagina di scarsa qualità. Pubblicare lorem ipsum su un sito attivo danneggia la SEO.</li><li><strong>Contenuti SEO definitivi</strong> - meta title, meta description e titoli H1 devono contenere parole chiave reali, non un riempitivo.</li><li><strong>Email marketing</strong> - inviare messaggi con lorem ipsum è poco professionale e rischia di far finire l'email nello spam.</li><li><strong>Test di usabilità con utenti reali</strong> - gli utenti si concentrano sul contenuto. Il testo segnaposto falsa i risultati delle ricerche UX.</li></ul>"
     },
     {
       "type": "gap",
@@ -164,39 +180,71 @@
     },
     {
       "type": "sectionSteps",
-      "title": "A chi è destinato il Generatore Lorem Ipsum?",
-      "description": "Lo strumento è utile per chiunque lavori con l'impaginazione del testo:",
+      "title": "Come inserire Lorem Ipsum nei programmi più diffusi?",
+      "description": "Alcuni programmi hanno una propria funzione integrata per inserire testo segnaposto:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileWordLine",
+          "title": "Microsoft Word",
+          "description": "Scrivi =lorem() nel documento e premi Invio - Word inserirà il paragrafo standard di Lorem Ipsum. Scrivendo =lorem(3,2) inserirai 3 paragrafi di 2 frasi ciascuno."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Adobe InDesign",
+          "description": "Dal menu Type seleziona Fill with Placeholder Text per riempire automaticamente una cornice di testo con testo segnaposto."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Siti web, HTML e codice",
+          "description": "Il generatore crea testo semplice senza tag HTML, quindi puoi incollarlo direttamente nel tuo codice, in un file JSON di prova o in un editor come VS Code, senza nulla da rimuovere."
+        },
+        {
+          "icon": "RiPuzzleLine",
+          "title": "Figma, Google Docs e altri",
+          "description": "Questi programmi non hanno una funzione integrata per Lorem Ipsum - serve un'estensione oppure incollare il testo da fonti esterne. Il nostro generatore funziona subito nel browser, senza installare nulla."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "A chi è utile il Generatore Lorem Ipsum?",
+      "description": "Lo strumento è utile a chiunque lavori con l'impaginazione del testo:",
       "grid": "three",
       "items": [
         {
           "icon": "RiPaintBrushLine",
-          "title": "Designer e UI designer",
-          "description": "Riempire rapidamente mockup e prototipi con testo dall'aspetto realistico. Testare gerarchia tipografica e layout a colonne."
+          "title": "Grafici e UI designer",
+          "description": "Riempire rapidamente mockup e prototipi con testo dall'aspetto realistico. Testare la gerarchia tipografica e i layout a colonne."
         },
         {
           "icon": "RiCodeLine",
           "title": "Sviluppatori frontend",
-          "description": "Generare testo segnaposto per testare componenti, reattività del layout e comportamento CSS con diverse lunghezze di contenuto."
+          "description": "Generare testo segnaposto per testare componenti, reattività del layout e comportamento del CSS con contenuti di lunghezza diversa."
         },
         {
           "icon": "RiEditLine",
           "title": "Copywriter",
-          "description": "Prototipare la struttura del testo: quanti paragrafi e quale lunghezza di frasi nel layout finale."
+          "description": "Prototipare la struttura del testo: quanti paragrafi servono, quanto lunghe saranno le frasi e come appariranno liste e titoli nel layout finale."
         },
         {
           "icon": "RiPrinterLine",
-          "title": "Tipografi ed editori",
-          "description": "Riempire modelli di volantini, brochure e cataloghi con testo di esempio per l'approvazione del cliente."
+          "title": "Tipografi e addetti alla stampa",
+          "description": "Riempire modelli di volantini, brochure e cataloghi con testo segnaposto per l'approvazione del cliente prima della consegna dei contenuti definitivi."
         },
         {
           "icon": "RiGlobalLine",
           "title": "Proprietari di siti web",
-          "description": "Testare l'aspetto di un nuovo modello CMS o tema con contenuto di esempio. Valutare quanto testo è necessario per pagina."
+          "description": "Testare l'aspetto di un nuovo modello o tema CMS con un contenuto di esempio. Valutare quanto testo serve per ogni singola pagina."
         },
         {
           "icon": "RiGraduationCapLine",
           "title": "Studenti di design",
-          "description": "Imparare impaginazione grafica, tipografia e composizione con testo segnaposto professionale invece di caratteri casuali."
+          "description": "Imparare a progettare layout grafici, tipografia e composizione con testo segnaposto professionale invece di caratteri casuali."
         }
       ]
     },
@@ -206,13 +254,13 @@
     },
     {
       "type": "sectionTable",
-      "title": "Confronto degli stili di testo",
+      "title": "In cosa si differenziano gli stili di testo segnaposto disponibili nel nostro generatore?",
       "labelHeader": "Caratteristica",
       "cols": [
         "Lorem Ipsum",
         "Hipster",
         "Business",
-        "Locale",
+        "Riempitivo italiano",
         "Bacon",
         "Cupcake",
         "Pirate",
@@ -225,7 +273,7 @@
             "Latino",
             "Inglese",
             "Inglese",
-            "Locale",
+            "Italiano",
             "Inglese",
             "Inglese",
             "Inglese",
@@ -236,7 +284,7 @@
           "label": "Tema",
           "values": [
             "Filosofia",
-            "Stile di vita",
+            "Lifestyle",
             "Aziendale",
             "Generale",
             "Gastronomia",
@@ -258,7 +306,7 @@
           "values": ["✓", "—", "—", "—", "—", "—", "—", "—"]
         },
         {
-          "label": "Umorismo / carattere",
+          "label": "Livello di umorismo",
           "values": [
             "Neutro",
             "Medio",
@@ -278,8 +326,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "8 stili di testo segnaposto — tutti disponibili nel generatore",
-      "html": "<p class=\"text-mid mb-4\">Il nostro generatore offre 8 stili unici di testo segnaposto — dal latino classico al gergo giuridico. Ogni stile ha il proprio dizionario di oltre 90 parole e genera testo con ritmo naturale:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — il classico testo segnaposto in latino dall'opera di Cicerone. Standard del settore da oltre 500 anni.</li><li><strong>Hipster Ipsum</strong> — vocabolario della cultura hipster: artigianale, avocado, vintage, mindfulness. Ideale per progetti lifestyle.</li><li><strong>Business Ipsum</strong> — gergo aziendale: sinergia, leva, stakeholder, KPI. Per mockup di presentazioni e siti corporate.</li><li><strong>Riempitivo italiano</strong> — parole casuali nella lingua locale da vari settori. Mostra al cliente come apparirà il testo nel design.</li><li><strong>Bacon Ipsum</strong> — vocabolario carne e grigliata: steak, brisket, barbecue. Popolare tra gli sviluppatori.</li><li><strong>Cupcake Ipsum</strong> — vocabolario pasticceria: muffin, cioccolato, caramello, glassa. Per progetti del settore alimentare.</li><li><strong>Pirate Ipsum</strong> — testo piratesco: ahoy, tesoro, galeone, rum. Per progetti di intrattenimento e videogiochi.</li><li><strong>Legal Ipsum</strong> — terminologia giuridica: giurisdizione, attore, statuto, responsabilità. Per mockup di siti di studi legali.</li></ul><p class=\"text-mid mb-4\">Le varianti divertenti (Bacon, Cupcake, Pirate) funzionano bene nelle presentazioni interne dove l'umorismo migliora la comunicazione del team. Per presentazioni professionali usate Lorem Ipsum classico o Legal Ipsum — sono neutri e non distraggono dal design.</p><p class=\"text-mid\">Il riempitivo italiano è un'opzione unica — le parole nella lingua locale preservano le proporzioni naturali delle lettere e le lunghezze di parola della lingua di destinazione. Ideale per mostrare ai clienti un'anteprima realistica del testo.</p>"
+      "title": "Quali stili di testo segnaposto trovi nel generatore?",
+      "html": "<p class=\"text-mid mb-4\">Il nostro generatore offre 8 stili unici di testo segnaposto - dal latino classico al gergo giuridico. Ogni stile ha un proprio dizionario di oltre 90 parole e genera testo con un ritmo naturale:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> - il testo segnaposto classico in latino, tratto dall'opera di Cicerone. Standard del settore da oltre 500 anni.</li><li><strong>Hipster Ipsum</strong> - vocabolario della cultura hipster: craft, avocado, vintage, mindfulness. Ideale per progetti lifestyle.</li><li><strong>Business Ipsum</strong> - gergo aziendale: synergy, leverage, stakeholder, KPI. Per mockup di presentazioni e siti aziendali.</li><li><strong>Riempitivo italiano</strong> - parole italiane casuali da diversi ambiti. Mostra al cliente come apparirà il testo in italiano nel progetto.</li><li><strong>Bacon Ipsum</strong> - parole legate alla carne e al barbecue: steak, brisket, barbecue. Popolare tra gli sviluppatori.</li><li><strong>Cupcake Ipsum</strong> - vocabolario della pasticceria: muffin, chocolate, caramel, frosting. Per progetti del settore gastronomico.</li><li><strong>Pirate Ipsum</strong> - testo in stile piratesco: ahoy, treasure, galleon, rum. Per progetti di intrattenimento e videogiochi.</li><li><strong>Legal Ipsum</strong> - terminologia giuridica: jurisdiction, plaintiff, statute, liability. Per mockup di siti di studi legali.</li></ul><p class=\"text-mid mb-4\">Le varianti più scherzose (Bacon, Cupcake, Pirate) funzionano bene nelle presentazioni interne e nei progetti dove un po' di umorismo aiuta la comunicazione nel team. Per le presentazioni professionali ai clienti è meglio usare il Lorem Ipsum classico o il Legal Ipsum - sono neutri e non distraggono dal progetto.</p><p class=\"text-mid\">Il riempitivo italiano è un'opzione esclusiva del nostro generatore - le parole italiane casuali mantengono le proporzioni naturali di lettere e lunghezza delle parole tipiche della nostra lingua. Scegli questo stile quando vuoi mostrare al cliente un'anteprima realistica dell'aspetto del testo nel progetto.</p>"
     },
     {
       "type": "gap",
@@ -287,8 +335,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Lorem Ipsum e SEO — il testo segnaposto danneggia il posizionamento?",
-      "html": "<p class=\"text-mid mb-4\">Sì — pubblicare Lorem Ipsum su un sito in produzione può influire negativamente sul posizionamento nei motori di ricerca. Google analizza il contenuto di ogni pagina indicizzata e riconosce il testo segnaposto:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Contenuto scarso</strong> — una pagina con testo segnaposto non offre valore agli utenti. Google la classifica come contenuto scarso e ne abbassa la posizione.</li><li><strong>Indicizzazione indesiderata</strong> — i bot di Google indicizzano Lorem Ipsum come contenuto di pagina. Può apparire nei risultati di ricerca, danneggiando l'immagine del brand.</li><li><strong>Spreco del budget di scansione</strong> — Google assegna un budget di scansione limitato. Le pagine con Lorem Ipsum lo consumano senza beneficio.</li><li><strong>Core Web Vitals</strong> — il testo segnaposto non influisce direttamente sulle metriche, ma le pagine di bassa qualità possono posizionarsi peggio.</li></ul><p class=\"text-mid mb-4\">Come evitare il problema: prima di pubblicare, cercate nel vostro sito &quot;lorem ipsum&quot; o &quot;dolor sit amet&quot;. In Google Search Console, verificate che nessuna pagina indicizzata contenga testo segnaposto. Usate <code>site:vostrodominio.com &quot;lorem ipsum&quot;</code> su Google.</p><p class=\"text-mid\">Il Generatore Lorem Ipsum è uno strumento per la fase di progettazione. Il testo segnaposto va sostituito con contenuto reale prima della pubblicazione.</p>"
+      "title": "La pubblicazione di Lorem Ipsum danneggia la SEO?",
+      "html": "<p class=\"text-mid mb-4\">Sì - pubblicare Lorem Ipsum su un sito già attivo può influire negativamente sul posizionamento. Google analizza il contenuto di ogni pagina indicizzata e riconosce il testo segnaposto. Ecco perché è un problema:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Contenuto scarso (thin content)</strong> - una pagina con testo segnaposto non offre alcun valore all'utente. Google classifica queste pagine come &quot;thin content&quot; e ne abbassa il posizionamento.</li><li><strong>Indicizzazione di contenuti inutili</strong> - i bot di Google indicizzano Lorem Ipsum come contenuto della pagina. Può comparire nei risultati di ricerca, con effetti negativi sull'immagine del brand.</li><li><strong>Spreco del budget di scansione</strong> - Google destina a ogni sito un budget di scansione limitato. Le pagine con lorem ipsum consumano questo budget senza alcun beneficio.</li></ul><p class=\"text-mid mb-4\">Come evitare il problema: prima di pubblicare una pagina, cerca in tutto il sito la frase &quot;lorem ipsum&quot; o &quot;dolor sit amet&quot;. In Google Search Console verifica che nessuna pagina indicizzata contenga ancora testo segnaposto. Usa il comando <code>site:tuodominio.it &quot;lorem ipsum&quot;</code> nella ricerca di Google.</p><p class=\"text-mid\">Il Generatore Lorem Ipsum è uno strumento pensato per la fase di progettazione. Il testo segnaposto deve essere sostituito con contenuto reale prima della pubblicazione del sito.</p>"
     },
     {
       "type": "gap",
@@ -296,28 +344,74 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Cosa rende speciale questo Generatore Lorem Ipsum?",
+      "title": "Cosa distingue questo Generatore Lorem Ipsum?",
       "grid": "two",
       "items": [
         {
           "icon": "RiListCheck2",
-          "title": "3 modalità di generazione",
-          "description": "Paragrafi, frasi o parole — controllo totale sulla quantità."
+          "title": "3 modalità di generazione del contenuto",
+          "description": "Paragrafi, frasi e parole - controllo completo sulla quantità."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 stili di testo unici",
-          "description": "Lorem Ipsum, Hipster, Business, Riempitivo italiano, Bacon, Cupcake, Pirate e Legal. Ogni stile ha oltre 90 parole."
+          "description": "Lorem Ipsum, Hipster, Business, Riempitivo italiano, Bacon, Cupcake, Pirate e Legal. Ogni stile ha un proprio dizionario di oltre 90 parole."
         },
         {
           "icon": "RiUserLine",
           "title": "Elaborazione locale",
-          "description": "Il testo viene generato nel browser. Nulla viene inviato a un server. Funziona offline dopo il caricamento della pagina."
+          "description": "Il testo viene generato nel browser. Nulla viene inviato a un server. Lo strumento funziona offline dopo il caricamento della pagina."
         },
         {
           "icon": "RiLockLine",
-          "title": "Senza registrazione né limiti",
-          "description": "Completamente gratuito. Nessuna registrazione, nessun login, nessun dato personale. Nessuna pubblicità nel testo generato."
+          "title": "Senza registrazione e senza limiti",
+          "description": "Lo strumento è completamente gratuito. Non richiede registrazione, accesso né dati personali. Nessuna pubblicità nel testo generato."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Quanto testo segnaposto serve per un determinato progetto?",
+      "labelHeader": "Tipo di progetto",
+      "cols": ["Quantità consigliata", "Note"],
+      "rows": [
+        {
+          "label": "Titolo H1",
+          "values": [
+            "5-10 parole",
+            "Titolo breve e diretto per pagina o sezione."
+          ]
+        },
+        {
+          "label": "Meta description",
+          "values": ["20-25 parole", "Ottimale tra 150 e 160 caratteri."]
+        },
+        {
+          "label": "Scheda prodotto",
+          "values": ["2-3 paragrafi", "Descrizione breve più specifiche."]
+        },
+        {
+          "label": "Pagina di servizio",
+          "values": [
+            "4-6 paragrafi",
+            "Descrizione del servizio, vantaggi, CTA."
+          ]
+        },
+        {
+          "label": "Articolo del blog",
+          "values": ["8-15 paragrafi", "1500-2500 parole per la SEO."]
+        },
+        {
+          "label": "Landing page",
+          "values": ["5-8 paragrafi", "Hero, vantaggi, social proof, CTA."]
+        },
+        {
+          "label": "Volantino / brochure",
+          "values": ["3-5 paragrafi", "Blocchi di testo brevi con titoli."]
         }
       ]
     },
@@ -332,48 +426,78 @@
       "items": [
         {
           "question": "Cos'è Lorem Ipsum?",
-          "answer": "Lorem Ipsum è il testo segnaposto standard dei settori della stampa, del design grafico e dello sviluppo web. Serve a riempire i layout con testo dall'aspetto realistico quando il contenuto finale non è ancora pronto. Ha un ritmo naturale e una distribuzione delle lettere simile a una lingua reale.",
-          "answerSchemaText": "Lorem Ipsum è il testo segnaposto standard dei settori della stampa, del design grafico e dello sviluppo web."
+          "answer": "Lorem Ipsum è il testo segnaposto standard usato nel settore della stampa, nel design grafico e nello sviluppo di siti web. Serve a riempire un layout grafico con testo dall'aspetto realistico quando il contenuto definitivo non è ancora pronto. Il testo ha un ritmo naturale e una distribuzione delle lettere simile a quella di una lingua reale, il che rende il progetto credibile.",
+          "answerSchemaText": "Lorem Ipsum è il testo segnaposto standard usato nella stampa e nel webdesign per riempire i layout grafici."
         },
         {
-          "question": "Da dove viene Lorem Ipsum?",
-          "answer": "Lorem Ipsum proviene dal De Finibus Bonorum et Malorum di Marco Tullio Cicerone, scritto nel 45 a.C. È un trattato filosofico sull'etica. Il passaggio originale della sezione 1.10.32 fu alterato da uno stampatore sconosciuto nel XVI secolo.",
-          "answerSchemaText": "Lorem Ipsum proviene dal De Finibus Bonorum et Malorum di Cicerone, scritto nel 45 a.C."
+          "question": "Come si genera il Lorem Ipsum?",
+          "answer": "Il modo più semplice è usare il generatore qui sopra: scegli paragrafi, frasi o parole, imposta la quantità, scegli lo stile di testo e clicca su Genera. Il testo appare immediatamente e puoi copiarlo negli appunti o scaricarlo come file .txt. In alternativa, alcuni programmi (come Microsoft Word) hanno una propria scorciatoia integrata per inserire Lorem Ipsum.",
+          "answerSchemaText": "Scegli modalità e quantità nel generatore qui sopra, clicca su Genera, poi copia il risultato."
         },
         {
-          "question": "Lorem Ipsum è vero latino?",
-          "answer": "Parzialmente. Contiene parole latine reali dall'opera di Cicerone, ma il testo è stato deliberatamente alterato. Le parole sono mescolate e ad alcune mancano le desinenze. Parole singole come dolor (dolore), amet (ama) e ipsum (stesso) sono termini latini genuini.",
-          "answerSchemaText": "Parzialmente — contiene parole latine reali da Cicerone ma il testo è stato alterato e non ha significato."
+          "question": "Qual è il testo completo del Lorem Ipsum classico?",
+          "answer": "La versione più diffusa è un singolo paragrafo che inizia con Lorem ipsum dolor sit amet, consectetur adipiscing elit - lo trovi nella sezione più in alto, pronto da copiare. Non esiste una versione ufficiale più lunga: la maggior parte dei generatori, incluso questo, crea testo aggiuntivo a partire dallo stesso dizionario di parole. Per una lunghezza precisa è quindi meglio usare il generatore piuttosto che cercare un testo più lungo già pronto.",
+          "answerSchemaText": "La versione più diffusa è un paragrafo che inizia con Lorem ipsum dolor sit amet, disponibile nella sezione più in alto."
         },
         {
-          "question": "Quanti paragrafi servono per un mockup?",
-          "answer": "Dipende dal tipo di pagina. Landing page: 5–8. Pagina servizi: 4–6. Articolo blog: 8–15 (1.500–2.500 parole). Scheda prodotto: 2–3. Il generatore crea esattamente la quantità necessaria.",
-          "answerSchemaText": "Dipende dal tipo: landing page 5–8, servizi 4–6, blog 8–15, prodotto 2–3 paragrafi."
+          "question": "Da dove viene il testo Lorem Ipsum?",
+          "answer": "Lorem Ipsum proviene dall'opera De Finibus Bonorum et Malorum (Sui confini del bene e del male), scritta da Marco Tullio Cicerone nel 45 a.C. È un trattato filosofico sull'etica. Il passaggio originale della sezione 1.10.32 è stato deliberatamente modificato da uno stampatore non identificato nel XVI secolo - sono state aggiunte, rimosse e scambiate alcune parole, in modo che il testo non avesse senso ma conservasse l'aspetto naturale del latino.",
+          "answerSchemaText": "Lorem Ipsum proviene dall'opera De Finibus Bonorum et Malorum di Cicerone, scritta nel 45 a.C."
         },
         {
-          "question": "Posso usare Lorem Ipsum su un sito in produzione?",
-          "answer": "No. Lorem Ipsum è solo per la fase di progettazione. Pubblicare testo segnaposto danneggia la SEO (Google lo classifica come contenuto scarso), l'immagine del brand e può essere indicizzato. Sostituite sempre prima di pubblicare.",
-          "answerSchemaText": "No — danneggia la SEO e l'immagine del brand. Sostituire sempre con contenuto reale prima della pubblicazione."
+          "question": "Lorem Ipsum è vero latino o è una lingua inventata?",
+          "answer": "È vocabolario latino autentico, ma non è una vera frase latina. Lorem Ipsum contiene parole latine reali tratte dall'opera di Cicerone, ma il testo è stato deliberatamente alterato: le parole sono fuori ordine, ad alcune mancano le desinenze e altre sono state inserite senza appartenere al testo originale. Non è quindi una lingua inventata, ma è una disposizione inventata e senza senso di una lingua reale.",
+          "answerSchemaText": "Usa parole latine reali tratte da Cicerone, ma sono disposte deliberatamente in modo casuale e privo di senso."
         },
         {
-          "question": "Lorem Ipsum danneggia la SEO?",
-          "answer": "Sì, se pubblicato su un sito in produzione. Google riconosce il testo segnaposto e può considerare la pagina di bassa qualità. Usate site:vostrodominio.com lorem ipsum su Google per verificare.",
-          "answerSchemaText": "Sì, su siti in produzione — Google riconosce il testo segnaposto e lo classifica come contenuto scarso."
+          "question": "Lorem Ipsum significa il dolore stesso?",
+          "answer": "Le prime parole rimandano al dolore, ma non è una traduzione esatta. Lorem è la parte finale troncata di dolorem (forma di dolor, dolore), mentre ipsum significa stesso. Da qui nasce la traduzione scherzosa dolorem ipsum, il dolore stesso. È comunque l'interpretazione di due frammenti isolati, non la traduzione della frase intera, che in latino non ha alcun senso.",
+          "answerSchemaText": "In parte - le prime parole richiamano dolor (dolore) e ipsum (stesso), ma non è una traduzione completa."
+        },
+        {
+          "question": "Come si pronuncia Lorem Ipsum?",
+          "answer": "Il testo si legge come è scritto, dividendo le parole in sillabe come nel latino classico: LO-rem IP-sum DO-lor SIT a-MET, con-sec-te-TUR a-di-pi-SCING E-lit. Non esiste un'unica pronuncia ufficiale, dato che non è una lingua viva - la maggior parte delle persone lo legge semplicemente in modo fonetico, seguendo le regole di lettura del latino.",
+          "answerSchemaText": "Si legge in modo fonetico, diviso in sillabe secondo le regole del latino classico: LO-rem IP-sum DO-lor SIT a-MET."
+        },
+        {
+          "question": "Lorem Ipsum si traduce in italiano?",
+          "answer": "No, non esiste una traduzione coerente in italiano, perché il latino di partenza è stato deliberatamente alterato e non è già di per sé una frase grammaticalmente valida. Le singole parole si possono tradurre separatamente - dolor significa dolore, amet richiama amare o apprezzare, ipsum significa stesso - ma unire questi significati isolati non produce una frase italiana di senso compiuto.",
+          "answerSchemaText": "No - non ha una traduzione italiana coerente, perché il latino di partenza è deliberatamente alterato e privo di senso."
+        },
+        {
+          "question": "Posso generare Lorem Ipsum in formato HTML o PDF?",
+          "answer": "Il generatore produce testo semplice, senza tag HTML e senza esportazione in PDF. In pratica è comodo per incollarlo nel codice, in un file JSON di prova o in un editor di testo, perché non c'è alcuna formattazione da rimuovere. Se ti serve un file PDF, incolla il testo copiato in un editor di testo come Word o Google Docs e salva il documento come PDF.",
+          "answerSchemaText": "No - il generatore produce testo semplice senza tag HTML. Per un PDF, incolla il testo in un editor e salvalo come PDF."
+        },
+        {
+          "question": "Quanti paragrafi di Lorem Ipsum servono per un mockup?",
+          "answer": "Dipende dal tipo di pagina. Per una landing page bastano in genere 5-8 paragrafi (hero, vantaggi, social proof, CTA). Una pagina di servizio richiede 4-6 paragrafi. Un articolo del blog è composto da 8-15 paragrafi (1500-2500 parole). Una scheda prodotto necessita di 2-3 paragrafi. Il generatore permette di creare esattamente la quantità di cui hai bisogno.",
+          "answerSchemaText": "Dipende dal tipo di pagina: landing page 5-8 paragrafi, pagina di servizio 4-6, articolo del blog 8-15, scheda prodotto 2-3."
+        },
+        {
+          "question": "Posso usare Lorem Ipsum su un sito già pubblicato?",
+          "answer": "No. Lorem Ipsum è pensato esclusivamente per la fase di progettazione. Pubblicare testo segnaposto su un sito attivo danneggia la SEO (Google lo classifica come thin content), peggiora l'immagine del brand e può finire indicizzato nei risultati di ricerca. Prima della pubblicazione, sostituisci sempre il testo segnaposto con contenuto reale.",
+          "answerSchemaText": "No - il testo segnaposto danneggia la SEO e l'immagine del brand. Sostituiscilo sempre con contenuto reale prima della pubblicazione."
+        },
+        {
+          "question": "Qual è la differenza tra Lorem Ipsum e dummy text?",
+          "answer": "Sono sinonimi. Lorem Ipsum, dummy text, placeholder text, blind text, filler text e testo segnaposto - tutti questi termini indicano un testo usato temporaneamente al posto del contenuto finale. Lorem Ipsum è un testo specifico che risale a Cicerone, mentre dummy text è un concetto più ampio che comprende qualsiasi testo segnaposto.",
+          "answerSchemaText": "Sono sinonimi - Lorem Ipsum è un testo specifico di Cicerone, dummy text è il concetto generale di testo segnaposto."
         },
         {
           "question": "Cosa sono Hipster Ipsum e Business Ipsum?",
-          "answer": "Sono varianti tematiche di testo segnaposto. Hipster Ipsum usa vocabolario hipster (artigianale, avocado, vintage). Business Ipsum è gergo aziendale (sinergia, leva, stakeholder, KPI). Entrambi generano testo con ritmo naturale e vocabolario settoriale.",
-          "answerSchemaText": "Varianti tematiche — Hipster usa vocabolario lifestyle, Business usa gergo aziendale."
+          "answer": "Sono varianti a tema del testo segnaposto. Hipster Ipsum usa parole della cultura hipster (craft, avocado, vintage, mindfulness). Business Ipsum è gergo aziendale (synergy, leverage, stakeholder, KPI). Entrambi generano testo con un ritmo naturale, ma con vocabolario settoriale. Funzionano bene nelle presentazioni interne e nei progetti dove un po' di umorismo aiuta la comunicazione del team.",
+          "answerSchemaText": "Varianti a tema di Lorem Ipsum - Hipster usa vocabolario lifestyle, Business usa gergo aziendale."
         },
         {
           "question": "Il generatore è gratuito e sicuro?",
-          "answer": "Sì. Completamente gratuito, senza registrazione e senza limiti. Tutto viene generato localmente nel browser — nulla viene inviato a un server. Nessun tracking, nessun cookie, funziona offline dopo il caricamento.",
-          "answerSchemaText": "Sì — gratuito, senza registrazione, elaborazione locale nel browser, nessuna raccolta dati."
+          "answer": "Sì. Il Generatore Lorem Ipsum è completamente gratuito, senza registrazione e senza limiti. Tutto il testo viene generato localmente nel tuo browser - nulla viene inviato a un server. Lo strumento non raccoglie dati personali, non usa cookie di tracciamento e continua a funzionare offline dopo il caricamento della pagina.",
+          "answerSchemaText": "Sì - gratuito, senza registrazione, elaborazione locale nel browser, nessuna raccolta di dati."
         },
         {
-          "question": "Quante parole ha un paragrafo standard?",
-          "answer": "Il paragrafo generato ha generalmente 4–7 frasi, ovvero circa 40–90 parole. Il primo paragrafo originale di Cicerone ha circa 69 parole.",
-          "answerSchemaText": "Il paragrafo generato ha generalmente 4–7 frasi, ovvero circa 40–90 parole."
+          "question": "Quante parole ha un paragrafo standard di Lorem Ipsum?",
+          "answer": "Un paragrafo generato ha in genere 4-7 frasi, cioè circa 40-90 parole. Il paragrafo classico di Lorem Ipsum disponibile da copiare nella sezione più in alto ha circa 69 parole e inizia con Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "answerSchemaText": "Un paragrafo generato ha in genere 4-7 frasi, cioè circa 40-90 parole."
         }
       ]
     },
@@ -383,10 +507,10 @@
     },
     {
       "type": "contactForm",
-      "title": "Aiutateci a migliorare i nostri strumenti",
-      "description": "Avete un'idea per una nuova funzionalità, trovato un bug o volete suggerire un altro strumento? Scriveteci — rispondiamo entro 24 ore.",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea per una nuova funzionalità, hai trovato un errore o vuoi suggerire un altro strumento utile al tuo lavoro? Scrivici - rispondiamo entro 24 ore.",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/generatore-lorem-ipsum-it.webp",
-      "imageAlt": "Generatore Lorem Ipsum — Arteon",
+      "imageAlt": "Generatore Lorem Ipsum — testo segnaposto — Arteon",
       "defaultSubject": "Feedback: Generatore Lorem Ipsum"
     },
     {
@@ -395,7 +519,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Scoprite altri strumenti"
+      "title": "Scopri altri strumenti"
     },
     {
       "type": "gap",

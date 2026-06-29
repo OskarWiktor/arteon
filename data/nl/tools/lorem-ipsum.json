@@ -2,14 +2,14 @@
   "toolKey": "loremIpsum",
   "locale": "nl",
   "metadata": {
-    "title": "Lorem Ipsum-generator — voorbeeldtekst, alinea's, zinnen en willekeurige woorden",
-    "description": "Gratis Lorem Ipsum-generator — 8 stijlen: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business en meer. Genereer alinea's, zinnen of woorden en kopieer het resultaat.",
+    "title": "Lorem Ipsum genereren - gratis generator voor vultekst met 8 stijlen",
+    "description": "Genereer zo veel Lorem Ipsum-tekst als u nodig hebt, of kopieer de klassieke, volledige alinea zonder iets te genereren. Ontdek ook wat Lorem Ipsum betekent en waar deze tekst vandaan komt.",
     "ogImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-nl.webp",
     "path": "/tools/lorem-ipsum-generator"
   },
   "hero": {
-    "title": "Lorem Ipsum-generator — voorbeeldtekst, alinea's, zinnen en willekeurige woorden",
-    "description": "8 tekststijlen: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal en Nederlandse opvulwoorden. Genereer alinea's, zinnen of woorden.",
+    "title": "Genereer Lorem Ipsum-tekst in 8 stijlen of kopieer de klassieke alinea",
+    "description": "Kies alinea's, zinnen of woorden, stel het aantal in en klik op Genereren — de vultext verschijnt meteen. U kunt ook de klassieke, meest gebruikte alinea hieronder kopiëren zonder iets te genereren.",
     "backgroundImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-nl.webp"
   },
   "breadcrumbs": {
@@ -24,39 +24,38 @@
   },
   "schemas": {
     "software": {
-      "name": "Lorem Ipsum-generator — voorbeeldtekst, alinea's, zinnen en willekeurige woorden",
+      "name": "Lorem Ipsum-generator — gratis vultext met een klassieke alinea en 8 stijlen",
       "alternateName": [
         "Lorem Ipsum Generator",
+        "Dummy text generator",
+        "Placeholder text generator",
+        "Blind text generator",
+        "Wat betekent lorem ipsum",
+        "Lorem ipsum volledige tekst",
+        "Lorem ipsum in het Nederlands",
         "Bacon Ipsum generator",
         "Cupcake Ipsum generator",
         "Pirate Ipsum generator",
         "Legal Ipsum generator",
         "Hipster Ipsum generator",
-        "Business Ipsum generator",
-        "Dummy text generator"
+        "Business Ipsum generator"
       ],
       "applicationSubCategory": "TextApplication",
-      "description": "Gratis Lorem Ipsum-generator met 8 stijlen tekst. Genereer alinea's, zinnen of woorden, kopieer naar klembord of download als .txt-bestand.",
+      "description": "Gratis Lorem Ipsum-generator met 8 tekststijlen en een klassieke alinea die direct te kopiëren is. Genereer alinea's, zinnen of woorden, bekijk de betekenis en geschiedenis van de tekst, kopieer naar het klembord of download als .txt-bestand.",
       "featureList": [
-        "Lorem Ipsum-alinea's genereren",
-        "Individuele zinnen genereren",
-        "Willekeurige woorden genereren",
-        "Lorem Ipsum — Latijn uit De Finibus",
-        "Hipster Ipsum — hipstervocabulaire",
-        "Business Ipsum — bedrijfsjargon",
-        "Nederlandse opvulwoorden — woorden in de lokale taal",
-        "Bacon Ipsum — vlees en grillen",
-        "Cupcake Ipsum — banketbakkerij en snoep",
-        "Pirate Ipsum — piratenvocabulaire",
-        "Legal Ipsum — juridische terminologie",
-        "Tekst naar klembord kopiëren",
-        "Downloaden als .txt-bestand",
-        "Lokale verwerking in de browser"
+        "Alinea's, zinnen of willekeurige woorden genereren in een zelf gekozen aantal",
+        "8 tekststijlen: klassiek Latijn, Hipster, Business, Nederlandse opvulwoorden, Bacon, Cupcake, Pirate en Legal Ipsum",
+        "Kant-en-klare klassieke Lorem Ipsum-alinea om te kopiëren zonder iets te genereren",
+        "Tabel met de betekenis van de meest voorkomende Lorem Ipsum-woorden",
+        "Uitleg over het invoegen van Lorem Ipsum in Word en Adobe InDesign",
+        "Gegenereerde tekst met één klik kopiëren naar het klembord",
+        "Resultaat downloaden als .txt-bestand",
+        "Volledig lokale verwerking in de browser"
       ]
     },
     "howTo": {
-      "name": "Hoe de Lorem Ipsum Generator te gebruiken",
-      "description": "Genereer Lorem Ipsum-vultext in enkele seconden. Kies modus en stijl, kopieer of download het resultaat.",
+      "name": "Hoe u Lorem Ipsum-tekst genereert",
+      "description": "Genereer Lorem Ipsum-vultext in een paar seconden. Kies een modus, een stijl en een aantal, en kopieer of download daarna het resultaat.",
       "totalTime": "PT1M",
       "steps": [
         {
@@ -69,7 +68,7 @@
         },
         {
           "name": "Kopieer of download het resultaat",
-          "text": "Klik op Genereren, kopieer vervolgens de tekst of download een .txt-bestand."
+          "text": "Klik op Genereren en kopieer de tekst vervolgens naar het klembord of download een .txt-bestand."
         }
       ]
     }
@@ -81,8 +80,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Wat is Lorem Ipsum en waarvoor wordt het gebruikt",
-      "html": "<p class=\"text-mid\">Lorem Ipsum is de standaard opvultekst die al meer dan 500 jaar wordt gebruikt in de drukkerij-, grafisch ontwerp- en webontwikkelingsindustrie. De tekst komt uit <em>De Finibus Bonorum et Malorum</em> (Over de grenzen van goed en kwaad) geschreven door Marcus Tullius Cicero in 45 v.Chr. De oorspronkelijke passage werd opzettelijk gewijzigd — woorden werden toegevoegd, verwijderd en herschikt — zodat de tekst geen betekenis heeft maar een natuurlijk ritme en letterverdeling behoudt die lijkt op echte taal.</p><p class=\"text-mid mt-3\">De Lorem Ipsum Generator stelt u in staat snel elke hoeveelheid vultext te maken voor mockups, UI-prototypes, grafische ontwerpen en typografische layouttests. De tool genereert alinea's, zinnen of woorden in 8 tekststijlen.</p>",
+      "title": "Waarom gebruikt u een Lorem Ipsum-generator?",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum is de standaard vultext die wordt gebruikt in de drukkerij en het grafisch ontwerp. De tekst komt uit <em>De Finibus Bonorum et Malorum</em> (Over de grenzen van goed en kwaad), geschreven door Marcus Tullius Cicero in 45 v.Chr. De oorspronkelijke passage is opzettelijk gewijzigd - woorden zijn toegevoegd, verwijderd en herschikt - zodat de tekst geen betekenis heeft, maar wel een natuurlijk ritme en letterverdeling behoudt die op echte taal lijkt.</p><p class=\"text-mid mb-4\">Een generator is nuttig wanneer een layout gepresenteerd of getest moet worden terwijl de definitieve tekst nog niet klaar is, bijvoorbeeld bij websitemockups, UI-prototypes en grafische ontwerpen. De tool maakt alinea's, zinnen of woorden in 8 tekststijlen.</p><p class=\"text-mid\">Verder op deze pagina vindt u ook een klassieke, direct te kopiëren Lorem Ipsum-alinea, een tabel met de betekenis van de meest voorkomende woorden en uitleg over het invoegen van deze tekst in populaire programma's.</p>",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-nl.webp",
       "imageAlt": "Lorem Ipsum Generator — Arteon"
     },
@@ -91,8 +90,17 @@
       "size": "sm"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kopieer de klassieke Lorem Ipsum-alinea zonder iets te genereren",
+      "html": "<p class=\"text-mid mb-4\">Dit is de meest gekopieerde vultextalinea op het internet - dezelfde passage staat al decennia standaard in Word, Adobe InDesign en talloze ontwerpsjablonen:</p><blockquote class=\"rounded-md border border-neutral-200 bg-neutral-50 p-4 text-mid italic\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote><p class=\"text-mid mt-4\">Heeft u meer tekst nodig dan deze ene alinea? Gebruik de generator hierboven - kies het aantal alinea's, zinnen of woorden en kopieer precies de hoeveelheid die u nodig heeft, zonder hetzelfde fragment handmatig te herhalen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
-      "title": "Hoe de Lorem Ipsum Generator te gebruiken",
+      "title": "Hoe gebruikt u de Lorem Ipsum-generator?",
       "description": "Genereer vultext in drie stappen:",
       "grid": "three",
       "items": [
@@ -104,12 +112,12 @@
         {
           "icon": "RiPaletteLine",
           "title": "2. Kies een stijl",
-          "description": "8 stijlen: Lorem Ipsum, Hipster, Business, Nederlandse opvulwoorden, Bacon, Cupcake, Pirate en Legal — elk met een eigen woordenbank."
+          "description": "Kies een van de 8 beschikbare tekststijlen: klassiek Lorem Ipsum, Hipster, Business, Nederlandse opvulwoorden, Bacon, Cupcake, Pirate of Legal — elk met een eigen woordenbank."
         },
         {
           "icon": "RiFileCopyLine",
           "title": "3. Kopieer het resultaat",
-          "description": "Klik op Genereren, kopieer vervolgens de tekst of download een .txt-bestand."
+          "description": "Klik op Genereren en kopieer de tekst vervolgens naar het klembord of download een .txt-bestand."
         }
       ]
     },
@@ -119,8 +127,17 @@
     },
     {
       "type": "sectionInfo",
-      "title": "De geschiedenis van Lorem Ipsum — van Cicero tot modern design",
-      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum heeft meer dan 2.000 jaar geschiedenis. De oorspronkelijke passage komt uit sectie 1.10.32 van <em>De Finibus Bonorum et Malorum</em> van Cicero, geschreven in 45 v.Chr. Het werk is een filosofisch traktaat over ethiek — Cicero analyseerde hedonisme en stoïcisme en pleitte voor een evenwichtige benadering van genot en pijn.</p><p class=\"text-mid mb-4\">Het gebruik van deze tekst als opvulling in de drukkerij dateert uit de 16e eeuw, toen een onbekende drukker de passage van Cicero gebruikte om een letterproefboek te maken. De tekst overleefde vijf eeuwen en doorliep de tijdperken van handzetten, Linotype en fotozetten.</p><p class=\"text-mid mb-4\">De moderne populariteit van Lorem Ipsum begon in de jaren 1960, toen Letraset de tekst op transfervellen plaatste die in grafische studio's werden gebruikt. De doorbraak kwam in 1985 toen Aldus Corporation Lorem Ipsum als standaard opvultekst opnam in PageMaker — een van de eerste DTP-programma's. Vanaf dat moment werd Lorem Ipsum de industriestandaard.</p><p class=\"text-mid\">Richard McClintock, professor Latijn aan het Hampden-Sydney College in Virginia, identificeerde de bron van de tekst in de jaren 1980 en ontdekte dat de woorden lorem ipsum een gecorrumpeerd fragment zijn uit het Latijn van Cicero's werk. Zijn onderzoek bevestigde dat Lorem Ipsum geen willekeurige woordenverzameling is maar echte literaire wortels heeft.</p>"
+      "title": "Waar komt Lorem Ipsum vandaan? De geschiedenis van Cicero tot vandaag",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum bestaat al meer dan 2000 jaar. De oorspronkelijke passage komt uit sectie 1.10.32 van <em>De Finibus Bonorum et Malorum</em> van Cicero, geschreven in 45 v.Chr. Het werk is een filosofisch traktaat over ethiek - Cicero analyseerde hedonisme en stoïcisme en pleitte voor een evenwichtige benadering van genot en pijn.</p><p class=\"text-mid mb-4\">Het gebruik van deze tekst als vulling in de drukkunst gaat terug tot rond het jaar 1500, toen een onbekende drukker de passage van Cicero gebruikte om een letterproefboek samen te stellen. De tekst overleefde vijf eeuwen en doorstond de tijdperken van handzetwerk, Linotype en fotozetwerk.</p><p class=\"text-mid mb-4\">De moderne populariteit van Lorem Ipsum begon in de jaren zestig van de twintigste eeuw, toen Letraset de tekst afdrukte op overdrukvellen die in grafische studio's werden gebruikt. De definitieve doorbraak kwam in 1985, toen Aldus Corporation Lorem Ipsum als standaard vultext inbouwde in PageMaker, een van de eerste DTP-programma's (Desktop Publishing). Vanaf dat moment werd Lorem Ipsum de industriestandaard.</p><p class=\"text-mid\">Richard McClintock, hoogleraar Latijn aan het Hampden-Sydney College in Virginia, identificeerde de bron van de tekst in de jaren tachtig en ontdekte dat de woorden lorem ipsum een verminkt fragment Latijn zijn uit het werk van Cicero. Zijn onderzoek bevestigde dat Lorem Ipsum geen willekeurige verzameling woorden is, maar echte literaire wortels heeft.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wat betekenen de woorden in Lorem Ipsum dolor sit amet?",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum is opzettelijk verminkt - het is geen grammaticaal correcte Latijnse zin en kan dus niet als geheel worden vertaald. De afzonderlijke woorden komen echter wel uit echt Latijn en hebben gedocumenteerde betekenissen of etymologische wortels:</p><div class=\"overflow-x-auto\"><table class=\"text-mid w-full text-left\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"py-2 pr-4 font-semibold\">Woord</th><th class=\"py-2 font-semibold\">Betekenis / oorsprong</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Lorem</td><td class=\"text-primary-light0 py-2 text-sm\">Geen zelfstandig woord - het is het afgekapte einde van &quot;dolorem&quot; (een vorm van &quot;dolor&quot;, pijn).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Ipsum</td><td class=\"text-primary-light0 py-2 text-sm\">Van &quot;ipse&quot; - zelf, datzelfde.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Dolor</td><td class=\"text-primary-light0 py-2 text-sm\">Pijn, lijden.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Sit</td><td class=\"text-primary-light0 py-2 text-sm\">Is, laat het zijn (van &quot;esse&quot;, zijn).</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Amet</td><td class=\"text-primary-light0 py-2 text-sm\">Van &quot;amare&quot; - liefhebben, graag hebben.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Consectetur</td><td class=\"text-primary-light0 py-2 text-sm\">Een verminkte vorm verwant aan &quot;consequi&quot; - volgen, achtervolgen.</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"py-2 pr-4\">Adipiscing</td><td class=\"text-primary-light0 py-2 text-sm\">Van &quot;adipisci&quot; - bereiken, naar iets streven.</td></tr><tr><td class=\"py-2 pr-4\">Elit</td><td class=\"text-primary-light0 py-2 text-sm\">Het afgekapte einde van &quot;velit&quot; (zou willen, een vorm van &quot;velle&quot;, willen).</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Vandaar de populaire, grappig bedoelde &quot;vertaling&quot; van de eerste woorden als &quot;de pijn zelf&quot; (dolorem ipsum) - dit is echter een interpretatie van losse fragmenten, geen vertaling van de hele zin, die in het Latijn geen betekenis heeft.</p>"
     },
     {
       "type": "gap",
@@ -128,8 +145,8 @@
     },
     {
       "type": "sectionSteps",
-      "title": "3 modi voor het genereren van inhoud",
-      "description": "De generator biedt 3 typen inhoud:",
+      "title": "Kiest u alinea's, zinnen of woorden?",
+      "description": "De generator biedt 3 soorten inhoud:",
       "grid": "three",
       "items": [
         {
@@ -140,12 +157,12 @@
         {
           "icon": "RiTextSnippet",
           "title": "Zinnen",
-          "description": "Individuele zinnen van willekeurige lengte (5–15 woorden). Handig voor het testen van formuliervelden, productbeschrijvingen en korte tekstblokken."
+          "description": "Losse zinnen met een willekeurige lengte van 5 tot 15 woorden. Handig om formuliervelden, productbeschrijvingen en korte tekstblokken te testen."
         },
         {
           "icon": "RiFontSize",
           "title": "Woorden",
-          "description": "Willekeurige individuele woorden uit de geselecteerde woordenbank. Ideaal voor tags, labels, categorienamen en het testen van tekstlengte in UI-componenten."
+          "description": "Losse, willekeurige woorden uit de gekozen woordenbank. Ideaal voor tags, labels, categorienamen en het testen van tekstlengte in UI-componenten."
         }
       ]
     },
@@ -155,8 +172,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Wanneer Lorem Ipsum gebruiken en wanneer echte tekst",
-      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum werkt goed overal waar de inhoud nog niet klaar is maar de layout gepresenteerd of getest moet worden:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>UI-prototypes en wireframes</strong> — paginastructuur ontwerpen zonder te wachten op de definitieve tekst van de klant.</li><li><strong>Grafische mockups</strong> — een ontwerp presenteren met realistisch ogende tekst in plaats van lege rechthoeken.</li><li><strong>Lettertype- en typografietests</strong> — leesbaarheid, regelhoogte, kerning en koppenhiërarchie beoordelen op een echt tekstblok.</li><li><strong>CMS-sjablonen en thema's</strong> — het uiterlijk van een WordPress-, Shopify- of ander CMS-sjabloon demonstreren met voorbeeldinhoud.</li><li><strong>Drukwerk</strong> — flyers, brochures, visitekaartjes en catalogi in de ontwerpfase.</li></ul><p class=\"text-mid mb-4\"><strong>Wanneer NIET Lorem Ipsum gebruiken:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Productiewebsites</strong> — Google indexeert vultext en kan de pagina als van lage kwaliteit beschouwen.</li><li><strong>Definitieve SEO-inhoud</strong> — metatitels, beschrijvingen en H1-koppen moeten echte zoekwoorden bevatten.</li><li><strong>E-mailmarketing</strong> — berichten met Lorem Ipsum verzenden is onprofessioneel en riskeert in spam te belanden.</li><li><strong>Usability-tests met gebruikers</strong> — gebruikers focussen op inhoud. Vultext verstoort UX-onderzoeksresultaten.</li></ul>"
+      "title": "Wanneer gebruikt u Lorem Ipsum en wanneer echte tekst?",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum is geschikt overal waar de inhoud nog niet klaar is, maar de layout al gepresenteerd of getest moet worden:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>UI-prototypes en wireframes</strong> - de structuur van een pagina of app ontwerpen zonder te wachten op de definitieve tekst van de klant.</li><li><strong>Grafische mockups</strong> - een ontwerp presenteren met realistisch ogende tekst in plaats van lege rechthoeken.</li><li><strong>Lettertype- en typografietests</strong> - leesbaarheid, regelafstand, kerning en koppenhiërarchie beoordelen op een echt tekstblok.</li><li><strong>CMS-sjablonen en thema's</strong> - laten zien hoe een sjabloon van WordPress, Shopify of een ander CMS eruitziet met voorbeeldinhoud.</li><li><strong>Drukwerk</strong> - flyers, brochures, visitekaartjes en catalogi tijdens de ontwerpfase.</li></ul><p class=\"text-mid mb-4\"><strong>Wanneer gebruikt u Lorem Ipsum NIET:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Live websites</strong> - Google indexeert vultext en kan de pagina daardoor als laagwaardig beoordelen. Het publiceren van lorem ipsum schaadt de SEO.</li><li><strong>Definitieve SEO-tekst</strong> - metatitels, metabeschrijvingen en H1-koppen moeten echte zoekwoorden bevatten, geen vultext.</li><li><strong>E-mailmarketing</strong> - een bericht met lorem ipsum versturen oogt onprofessioneel en vergroot het risico dat de mail als spam wordt aangemerkt.</li><li><strong>Gebruikerstests</strong> - gebruikers letten op de inhoud. Vultext vertekent de resultaten van UX-onderzoek.</li></ul>"
     },
     {
       "type": "gap",
@@ -164,39 +181,71 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Voor wie is de Lorem Ipsum Generator?",
+      "title": "Hoe voegt u Lorem Ipsum in bij populaire programma's?",
+      "description": "Sommige programma's hebben een eigen, ingebouwde manier om vultext in te voegen:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileWordLine",
+          "title": "Microsoft Word",
+          "description": "Typ =lorem() in een document en druk op Enter - Word voegt automatisch de standaard Lorem Ipsum-alinea in. Met =lorem(3,2) voegt u 3 alinea's van 2 zinnen in."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Adobe InDesign",
+          "description": "Kies in het menu Type de optie Fill with Placeholder Text om een tekstkader automatisch te vullen met vultext."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Websites, HTML en code",
+          "description": "De generator maakt platte tekst zonder HTML-opmaak, zodat u die rechtstreeks kunt plakken in uw code, een JSON-testbestand of een editor zoals VS Code - er is niets om te verwijderen."
+        },
+        {
+          "icon": "RiPuzzleLine",
+          "title": "Figma, Google Documenten en andere programma's",
+          "description": "Deze programma's hebben geen ingebouwde Lorem Ipsum-functie - daarvoor is een plug-in nodig of moet u tekst van elders plakken. Onze generator werkt meteen in de browser, zonder dat u iets hoeft te installeren."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Voor wie is deze Lorem Ipsum-generator bedoeld?",
       "description": "De tool is nuttig voor iedereen die met tekstopmaak werkt:",
       "grid": "three",
       "items": [
         {
           "icon": "RiPaintBrushLine",
-          "title": "Ontwerpers en UI-ontwerpers",
+          "title": "Grafisch ontwerpers en UI-ontwerpers",
           "description": "Mockups en prototypes snel vullen met realistisch ogende tekst. Typografische hiërarchie en kolomlayouts testen."
         },
         {
           "icon": "RiCodeLine",
           "title": "Frontend-ontwikkelaars",
-          "description": "Vultext genereren om componenten, layoutresponsiviteit en CSS-gedrag met verschillende inhoudslengtes te testen."
+          "description": "Vultext genereren om componenten, de responsiviteit van een layout en het gedrag van CSS bij verschillende tekstlengtes te testen."
         },
         {
           "icon": "RiEditLine",
           "title": "Copywriters",
-          "description": "Tekststructuur prototypen: hoeveel alinea's, zinslengte, hoe lijsten en koppen eruitzien in de definitieve layout."
+          "description": "De structuur van een tekst uitproberen: hoeveel alinea's, welke zinslengtes en hoe lijsten en koppen eruitzien in de definitieve layout."
         },
         {
           "icon": "RiPrinterLine",
-          "title": "Drukkerijen en uitgevers",
-          "description": "Sjablonen van flyers, brochures en catalogi vullen met voorbeeldtekst voor goedkeuring door de klant."
+          "title": "Drukkers",
+          "description": "Sjablonen voor flyers, brochures en catalogi vullen met vultext, zodat de klant het ontwerp kan goedkeuren voordat de definitieve tekst klaar is."
         },
         {
           "icon": "RiGlobalLine",
           "title": "Website-eigenaren",
-          "description": "Het uiterlijk van een nieuw CMS-sjabloon of thema testen met voorbeeldinhoud. Beoordelen hoeveel tekst per pagina nodig is."
+          "description": "Het uiterlijk van een nieuw sjabloon of CMS-thema testen met voorbeeldinhoud. Inschatten hoeveel tekst elke pagina nodig heeft."
         },
         {
           "icon": "RiGraduationCapLine",
           "title": "Designstudenten",
-          "description": "Grafische opmaak, typografie en compositie leren met professionele vultext in plaats van willekeurige tekens."
+          "description": "Het ontwerpen van grafische layouts, typografie en composities leren met professionele vultext in plaats van willekeurige tekens."
         }
       ]
     },
@@ -206,13 +255,13 @@
     },
     {
       "type": "sectionTable",
-      "title": "Vergelijking van tekststijlen",
+      "title": "Waarin verschillen de beschikbare stijlen vultext in onze generator?",
       "labelHeader": "Kenmerk",
       "cols": [
         "Lorem Ipsum",
         "Hipster",
         "Business",
-        "Lokaal",
+        "Nederlandse opvulwoorden",
         "Bacon",
         "Cupcake",
         "Pirate",
@@ -225,7 +274,7 @@
             "Latijn",
             "Engels",
             "Engels",
-            "Lokaal",
+            "Nederlands",
             "Engels",
             "Engels",
             "Engels",
@@ -237,7 +286,7 @@
           "values": [
             "Filosofie",
             "Levensstijl",
-            "Zakelijk",
+            "Bedrijfsleven",
             "Algemeen",
             "Gastronomie",
             "Banketbakkerij",
@@ -278,8 +327,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "8 stijlen vultext — allemaal beschikbaar in de generator",
-      "html": "<p class=\"text-mid mb-4\">Onze generator biedt 8 unieke vulteststijlen — van klassiek Latijn tot juridisch jargon. Elke stijl heeft een eigen woordenbank van meer dan 90 woorden en genereert tekst met een natuurlijk ritme:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — de klassieke Latijnse vultext uit het werk van Cicero. Al meer dan 500 jaar de industriestandaard.</li><li><strong>Hipster Ipsum</strong> — hipstercultuurvocabulaire: ambachtelijk, avocado, vintage, mindfulness. Ideaal voor lifestyleprojecten.</li><li><strong>Business Ipsum</strong> — bedrijfsjargon: synergie, leverage, stakeholder, KPI. Voor presentatie- en bedrijfswebsitemockups.</li><li><strong>Nederlandse opvulwoorden</strong> — willekeurige woorden in de lokale taal uit diverse vakgebieden. Laat de klant zien hoe tekst eruitziet in het ontwerp.</li><li><strong>Bacon Ipsum</strong> — vlees- en grillvocabulaire: steak, brisket, barbecue. Populair onder ontwikkelaars.</li><li><strong>Cupcake Ipsum</strong> — banketbakkerijvocabulaire: muffin, chocolade, karamel, glazuur. Voor projecten in de voedingsindustrie.</li><li><strong>Pirate Ipsum</strong> — piratentekst: ahoy, schat, galjoen, rum. Voor entertainment- en gameprojecten.</li><li><strong>Legal Ipsum</strong> — juridische terminologie: jurisdictie, eiser, statuut, aansprakelijkheid. Voor advocatenkantoormockups.</li></ul><p class=\"text-mid mb-4\">De grappige varianten (Bacon, Cupcake, Pirate) werken goed in interne presentaties waar humor de teamcommunicatie verbetert. Voor professionele klantpresentaties gebruikt u klassiek Lorem Ipsum of Legal Ipsum — ze zijn neutraal en leiden niet af van het ontwerp.</p><p class=\"text-mid\">Nederlandse opvulwoorden zijn een unieke optie — woorden in de lokale taal behouden de natuurlijke letterproporties en woordlengtes van de doeltaal. Ideaal om klanten een realistische tekstpreview te tonen.</p>"
+      "title": "Welke stijlen vultext vindt u in de generator?",
+      "html": "<p class=\"text-mid mb-4\">Onze generator biedt 8 unieke stijlen vultext - van klassiek Latijn tot juridisch jargon. Elke stijl heeft een eigen woordenbank van meer dan 90 woorden en genereert tekst met een natuurlijk ritme:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> - de klassieke vultext in het Latijn, afkomstig uit het werk van Cicero. Al meer dan 500 jaar de industriestandaard.</li><li><strong>Hipster Ipsum</strong> - woordenschat uit de hipstercultuur: craft, avocado, vintage, mindfulness. Ideaal voor lifestyleprojecten.</li><li><strong>Business Ipsum</strong> - bedrijfsjargon: synergy, leverage, stakeholder, KPI. Voor mockups van presentaties en bedrijfswebsites.</li><li><strong>Nederlandse opvulwoorden</strong> - willekeurige Nederlandse woorden uit verschillende vakgebieden. Laat de klant zien hoe de tekst er in het Nederlands in het ontwerp uitziet.</li><li><strong>Bacon Ipsum</strong> - woorden rond vlees en barbecueën: steak, brisket, barbecue. Populair onder ontwikkelaars.</li><li><strong>Cupcake Ipsum</strong> - woordenschat uit de banketbakkerij: muffin, chocolate, caramel, frosting. Voor projecten in de horeca en voedingssector.</li><li><strong>Pirate Ipsum</strong> - tekst in piratenstijl: ahoy, treasure, galleon, rum. Voor entertainment- en gameprojecten.</li><li><strong>Legal Ipsum</strong> - juridische terminologie: jurisdiction, plaintiff, statute, liability. Voor mockups van advocatenkantoren.</li></ul><p class=\"text-mid mb-4\">De speelse varianten (Bacon, Cupcake, Pirate) zijn geschikt voor interne presentaties en projecten waarin humor de teamcommunicatie ten goede komt. Voor professionele presentaties aan klanten kiest u beter voor klassiek Lorem Ipsum of Legal Ipsum - die zijn neutraal en leiden de aandacht niet af van het ontwerp.</p><p class=\"text-mid\">Nederlandse opvulwoorden zijn een unieke optie van onze generator - willekeurige Nederlandse woorden behouden de letterverdeling en woordlengtes die karakteristiek zijn voor het Nederlands. Kies deze stijl wanneer u de klant een realistisch beeld wilt geven van hoe de tekst in het ontwerp zal ogen.</p>"
     },
     {
       "type": "gap",
@@ -287,8 +336,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Lorem Ipsum en SEO — schaadt vultext de ranking?",
-      "html": "<p class=\"text-mid mb-4\">Ja — het publiceren van Lorem Ipsum op een productiewebsite kan de zoekrangschikking negatief beïnvloeden. Google analyseert de inhoud van elke geïndexeerde pagina en herkent vultext:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Dunne inhoud</strong> — een pagina met vultext biedt geen waarde voor gebruikers. Google classificeert dergelijke pagina's als dunne inhoud en verlaagt hun positie.</li><li><strong>Ongewenste indexering</strong> — Google's bots indexeren Lorem Ipsum als pagina-inhoud. Het kan in zoekresultaten verschijnen en het merkimago schaden.</li><li><strong>Verspilling van crawlbudget</strong> — Google wijst een beperkt crawlbudget toe. Pagina's met Lorem Ipsum verbruiken dat budget zonder voordeel.</li><li><strong>Core Web Vitals</strong> — vultext beïnvloedt prestatiemetrieken niet direct, maar pagina's van lage kwaliteit kunnen lager gerangschikt worden.</li></ul><p class=\"text-mid mb-4\">Hoe het probleem te voorkomen: zoek voor publicatie op uw hele site naar &quot;lorem ipsum&quot; of &quot;dolor sit amet&quot;. Controleer in Google Search Console dat geen geïndexeerde pagina vultext bevat. Gebruik <code>site:uwdomein.com &quot;lorem ipsum&quot;</code> in Google.</p><p class=\"text-mid\">De Lorem Ipsum Generator is een tool voor de ontwerpfase. Vultext moet worden vervangen door echte inhoud vóór publicatie.</p>"
+      "title": "Schaadt het publiceren van Lorem Ipsum de SEO?",
+      "html": "<p class=\"text-mid mb-4\">Ja - het publiceren van Lorem Ipsum op een live website kan de positie in zoekresultaten negatief beïnvloeden. Google analyseert de inhoud van elke geïndexeerde pagina en herkent vultext. Daarom is dit een probleem:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Dunne inhoud</strong> - een pagina met vultext biedt geen waarde aan de bezoeker. Google classificeert zulke pagina's als &quot;thin content&quot; en geeft ze een lagere positie.</li><li><strong>Indexering van ruis</strong> - de crawlers van Google indexeren Lorem Ipsum als paginainhoud. Dit kan in de zoekresultaten verschijnen, wat het beeld van het merk schaadt.</li><li><strong>Verspild crawlbudget</strong> - Google besteedt een beperkt budget aan het crawlen van elke website. Pagina's met lorem ipsum verbruiken dat budget zonder dat dit iets oplevert.</li></ul><p class=\"text-mid mb-4\">Zo voorkomt u het probleem: doorzoek vóór publicatie de hele website op de zin &quot;lorem ipsum&quot; of &quot;dolor sit amet&quot;. Controleer in Google Search Console of geen enkele geïndexeerde pagina nog vultext bevat. Gebruik in Google de zoekopdracht <code>site:uwdomein.nl &quot;lorem ipsum&quot;</code>.</p><p class=\"text-mid\">De Lorem Ipsum-generator is een hulpmiddel voor de ontwerpfase. Vultext moet vóór publicatie van de pagina altijd worden vervangen door echte inhoud.</p>"
     },
     {
       "type": "gap",
@@ -296,28 +345,77 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Wat maakt deze Lorem Ipsum Generator bijzonder?",
+      "title": "Wat maakt deze Lorem Ipsum-generator anders?",
       "grid": "two",
       "items": [
         {
           "icon": "RiListCheck2",
           "title": "3 generatiemodi",
-          "description": "Alinea's, zinnen of woorden — volledige controle over het aantal."
+          "description": "Alinea's, zinnen en woorden - volledige controle over het aantal."
         },
         {
           "icon": "RiPaletteLine",
           "title": "8 unieke tekststijlen",
-          "description": "Lorem Ipsum, Hipster, Business, Nederlandse opvulwoorden, Bacon, Cupcake, Pirate en Legal. Elke stijl heeft meer dan 90 woorden."
+          "description": "Lorem Ipsum, Hipster, Business, Nederlandse opvulwoorden, Bacon, Cupcake, Pirate en Legal. Elke stijl heeft een eigen woordenbank van meer dan 90 woorden."
         },
         {
           "icon": "RiUserLine",
           "title": "Lokale verwerking",
-          "description": "Tekst wordt in uw browser gegenereerd. Niets wordt naar een server verzonden. Werkt offline na het laden van de pagina."
+          "description": "De tekst wordt in uw browser gegenereerd. Er wordt niets naar een server verzonden. De tool werkt offline nadat de pagina is geladen."
         },
         {
           "icon": "RiLockLine",
-          "title": "Geen registratie of limieten",
-          "description": "Volledig gratis. Geen registratie, geen login, geen persoonlijke gegevens. Geen advertenties in de gegenereerde tekst."
+          "title": "Geen registratie en geen limieten",
+          "description": "De tool is volledig gratis. Geen registratie, geen inloggen en geen persoonsgegevens nodig. Geen advertenties in de gegenereerde tekst."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Hoeveel vultext heeft u nodig voor een bepaald project?",
+      "labelHeader": "Type project",
+      "cols": ["Aanbevolen hoeveelheid", "Opmerkingen"],
+      "rows": [
+        {
+          "label": "H1-kop",
+          "values": [
+            "5-10 woorden",
+            "Een korte, bondige titel voor de pagina of sectie."
+          ]
+        },
+        {
+          "label": "Metabeschrijving",
+          "values": ["20-25 woorden", "Optimaal 150-160 tekens."]
+        },
+        {
+          "label": "Productkaart",
+          "values": ["2-3 alinea's", "Korte beschrijving plus specificaties."]
+        },
+        {
+          "label": "Dienstenpagina",
+          "values": [
+            "4-6 alinea's",
+            "Beschrijving van de dienst, voordelen, call-to-action."
+          ]
+        },
+        {
+          "label": "Blogartikel",
+          "values": ["8-15 alinea's", "1500-2500 woorden voor SEO."]
+        },
+        {
+          "label": "Landingspagina",
+          "values": [
+            "5-8 alinea's",
+            "Hero, voordelen, social proof, call-to-action."
+          ]
+        },
+        {
+          "label": "Flyer / brochure",
+          "values": ["3-5 alinea's", "Korte tekstblokken met koppen."]
         }
       ]
     },
@@ -327,53 +425,83 @@
     },
     {
       "type": "faq",
-      "title": "Veelgestelde vragen over de Lorem Ipsum Generator",
+      "title": "Veelgestelde vragen over de Lorem Ipsum-generator",
       "openByDefault": 1,
       "items": [
         {
           "question": "Wat is Lorem Ipsum?",
-          "answer": "Lorem Ipsum is de standaard vultext van de drukkerij-, grafisch ontwerp- en webontwikkelingsindustrie. Het dient om layouts te vullen met realistisch ogende tekst wanneer de definitieve inhoud nog niet klaar is. De tekst heeft een natuurlijk ritme en letterverdeling vergelijkbaar met echte taal.",
-          "answerSchemaText": "Lorem Ipsum is de standaard vultext van de drukkerij-, grafisch ontwerp- en webontwikkelingsindustrie."
+          "answer": "Lorem Ipsum is de standaard vultext (placeholder text) die wordt gebruikt in de drukkerij, het grafisch ontwerp en de webontwikkeling. De tekst vult een layout met realistisch ogende tekst wanneer de definitieve inhoud nog niet klaar is. De tekst heeft een natuurlijk ritme en letterverdeling die op echte taal lijkt, waardoor een ontwerp geloofwaardig overkomt.",
+          "answerSchemaText": "Lorem Ipsum is de standaard vultext die wordt gebruikt in de drukkerij en het webdesign om layouts te vullen."
+        },
+        {
+          "question": "Hoe maakt u Lorem Ipsum?",
+          "answer": "Het eenvoudigst is om de generator hierboven te gebruiken: kies alinea's, zinnen of woorden, stel het aantal in, kies een tekststijl en klik op Genereren. De tekst verschijnt meteen en u kunt die kopiëren naar het klembord of downloaden als .txt-bestand. Sommige programma's, zoals Microsoft Word, hebben ook een eigen ingebouwde snelkoppeling om Lorem Ipsum in te voegen.",
+          "answerSchemaText": "Kies een modus en aantal in de generator hierboven, klik op Genereren en kopieer vervolgens het resultaat."
+        },
+        {
+          "question": "Wat is de volledige tekst van de klassieke Lorem Ipsum?",
+          "answer": "De meest verspreide versie is één alinea die begint met Lorem ipsum dolor sit amet, consectetur adipiscing elit - u vindt die hierboven, klaar om te kopiëren. Er bestaat geen enkele officiële langere versie - de meeste generators, ook deze, maken extra tekst uit dezelfde woordenbank. Voor een exacte lengte gebruikt u daarom beter de generator dan dat u op zoek gaat naar een vaste, langere tekst.",
+          "answerSchemaText": "De populairste versie is één alinea die begint met Lorem ipsum dolor sit amet - beschikbaar in de sectie hierboven."
         },
         {
           "question": "Waar komt Lorem Ipsum vandaan?",
-          "answer": "Lorem Ipsum komt uit De Finibus Bonorum et Malorum van Marcus Tullius Cicero, geschreven in 45 v.Chr. Het is een filosofisch traktaat over ethiek. De oorspronkelijke passage uit sectie 1.10.32 werd in de 16e eeuw door een onbekende drukker gewijzigd.",
+          "answer": "Lorem Ipsum komt uit het werk De Finibus Bonorum et Malorum (Over de grenzen van goed en kwaad), geschreven door Marcus Tullius Cicero in 45 v.Chr. Het is een filosofisch traktaat over ethiek. De oorspronkelijke passage uit sectie 1.10.32 werd in de zestiende eeuw opzettelijk gewijzigd door een onbekende drukker - er werden woorden toegevoegd, verwijderd en herschikt, zodat de tekst geen betekenis meer had maar wel het natuurlijke uiterlijk van het Latijn behield.",
           "answerSchemaText": "Lorem Ipsum komt uit De Finibus Bonorum et Malorum van Cicero, geschreven in 45 v.Chr."
         },
         {
-          "question": "Is Lorem Ipsum echt Latijn?",
-          "answer": "Gedeeltelijk. Het bevat echte Latijnse woorden uit het werk van Cicero, maar de tekst is opzettelijk gecorrumpeerd. Woorden zijn door elkaar gegooid en sommige missen uitgangen. Individuele woorden zoals dolor (pijn), amet (bemint) en ipsum (zelf) zijn echte Latijnse termen.",
-          "answerSchemaText": "Gedeeltelijk — echte Latijnse woorden uit Cicero maar opzettelijk gecorrumpeerd en zonder betekenis."
+          "question": "Is Lorem Ipsum echt Latijn of een verzonnen taal?",
+          "answer": "Het is echte Latijnse woordenschat, maar geen echte Latijnse zin. Lorem Ipsum bevat authentieke Latijnse woorden uit het werk van Cicero, maar de tekst is opzettelijk dooreengehusseld - woorden staan in de verkeerde volgorde, sommige missen een uitgang en andere zijn toegevoegd zonder dat ze ergens bij horen. Het is dus geen verzonnen taal, maar wel een betekenisloze, verzonnen rangschikking van een echte taal.",
+          "answerSchemaText": "Het gebruikt echte Latijnse woorden uit het werk van Cicero, maar die zijn opzettelijk dooreengehusseld tot een betekenisloze tekst."
         },
         {
-          "question": "Hoeveel alinea's heb ik nodig voor een mockup?",
-          "answer": "Hangt af van het paginatype. Landingspagina: 5–8. Dienstenpagina: 4–6. Blogartikel: 8–15 (1.500–2.500 woorden). Productkaart: 2–3. De generator maakt precies de benodigde hoeveelheid.",
-          "answerSchemaText": "Hangt af van het type: landingspagina 5–8, diensten 4–6, blog 8–15, product 2–3 alinea's."
+          "question": "Betekent Lorem Ipsum 'de pijn zelf'?",
+          "answer": "De openingswoorden verwijzen naar pijn, maar dat is geen exacte vertaling. Lorem is het afgekapte einde van dolorem (een vorm van dolor, pijn), en ipsum betekent zelf. Vandaar de speelse, korte uitleg dolorem ipsum als de pijn zelf. Dit is echter een interpretatie van twee losse woordfragmenten, geen vertaling van de hele zin - die in het Latijn geen betekenis heeft.",
+          "answerSchemaText": "Deels - de openingswoorden verwijzen naar dolor (pijn) en ipsum (zelf), maar dat is geen volledige vertaling."
         },
         {
-          "question": "Mag ik Lorem Ipsum op een live website gebruiken?",
-          "answer": "Nee. Lorem Ipsum is alleen voor de ontwerpfase. Publicatie schaadt SEO (Google classificeert het als dunne inhoud), merkimago en kan worden geïndexeerd. Vervang altijd vóór publicatie.",
-          "answerSchemaText": "Nee — schaadt SEO en merkimago. Altijd vervangen door echte inhoud vóór publicatie."
+          "question": "Hoe spreek je Lorem Ipsum uit?",
+          "answer": "De tekst wordt gelezen zoals hij geschreven is, waarbij de woorden in lettergrepen worden verdeeld op de manier van het klassiek Latijn: LO-rem IP-sum DO-lor SIT a-MET, con-sec-te-TUR a-di-pis-CING E-lit. Er bestaat geen enkele officiële uitspraak, omdat het geen levende taal is - de meeste mensen lezen het gewoon fonetisch, volgens de regels voor het lezen van Latijn.",
+          "answerSchemaText": "Wordt fonetisch gelezen, verdeeld in lettergrepen volgens de regels van het klassiek Latijn: LO-rem IP-sum DO-lor SIT a-MET."
         },
         {
-          "question": "Schaadt Lorem Ipsum SEO?",
-          "answer": "Ja, als het op een productiewebsite wordt gepubliceerd. Google herkent vultext en kan de pagina als van lage kwaliteit beschouwen. Gebruik site:uwdomein.com lorem ipsum in Google om te controleren.",
-          "answerSchemaText": "Ja, op live websites — Google herkent vultext en classificeert het als dunne inhoud."
+          "question": "Wat betekent Lorem Ipsum in het Nederlands?",
+          "answer": "Het laat zich niet vertalen in een lopende Nederlandse zin, omdat het onderliggende Latijn opzettelijk is dooreengehusseld en sowieso geen geldige zin vormt. Losse woorden kunnen wel apart vertaald worden - dolor betekent pijn, amet hangt samen met liefhebben of graag hebben, ipsum betekent zelf - maar die afzonderlijke betekenissen samen leveren geen lopende Nederlandse zin op. Onze generator heeft daarom een aparte stijl Nederlandse opvulwoorden, die willekeurige Nederlandse woorden gebruikt in plaats van Latijn en zo de letterverdeling en woordlengtes van het Nederlands aanhoudt. Dat is de dichtstbijzijnde tegenhanger van Lorem Ipsum in het Nederlands.",
+          "answerSchemaText": "Het laat zich niet vertalen in een lopende zin - gebruik de stijl Nederlandse opvulwoorden in de generator voor een Nederlandse tegenhanger."
+        },
+        {
+          "question": "Kan ik Lorem Ipsum genereren als HTML of als PDF-bestand?",
+          "answer": "De generator maakt platte tekst, zonder HTML-opmaak en zonder export naar PDF. Dat is in de praktijk juist handig bij het plakken in code, een JSON-testbestand of een code-editor, want er is niets aan opmaak om te verwijderen. Heeft u een PDF nodig? Plak de gekopieerde tekst dan in een tekstverwerker zoals Word of Google Documenten en sla het document op als PDF.",
+          "answerSchemaText": "Nee - de generator maakt platte tekst zonder HTML-opmaak. Voor een PDF plakt u de tekst in een editor en slaat u die op als PDF."
+        },
+        {
+          "question": "Hoeveel alinea's Lorem Ipsum heeft u nodig voor een mockup?",
+          "answer": "Dat hangt af van het type pagina. Voor een landingspagina zijn doorgaans 5 tot 8 alinea's voldoende (hero, voordelen, social proof, call-to-action). Een dienstenpagina vraagt 4 tot 6 alinea's. Een blogartikel beslaat 8 tot 15 alinea's, ongeveer 1500 tot 2500 woorden. Een productkaart heeft maar 2 tot 3 alinea's nodig. Met de generator maakt u precies de hoeveelheid die u nodig heeft.",
+          "answerSchemaText": "Dat hangt af van het type pagina: landingspagina 5-8 alinea's, dienstenpagina 4-6, blogartikel 8-15, productkaart 2-3."
+        },
+        {
+          "question": "Mag ik Lorem Ipsum gebruiken op een live website?",
+          "answer": "Nee. Lorem Ipsum is uitsluitend bedoeld voor de ontwerpfase. Het publiceren van vultext op een live website schaadt de SEO, omdat Google dit als dunne inhoud classificeert, en het schaadt ook hoe bezoekers het merk ervaren. Vervang vultext altijd door echte inhoud voordat een pagina online gaat.",
+          "answerSchemaText": "Nee - vultext schaadt de SEO en het merkimago. Vervang die altijd door echte inhoud vóór publicatie."
+        },
+        {
+          "question": "Wat is het verschil tussen Lorem Ipsum en dummy text?",
+          "answer": "Het zijn synoniemen. Lorem Ipsum, dummy text, placeholder text, blind text, filler text en vultekst - al deze termen duiden op tekst die tijdelijk wordt gebruikt in plaats van de uiteindelijke inhoud. Lorem Ipsum is een specifieke tekst die teruggaat op Cicero, terwijl dummy text een breder begrip is dat elke vultekst omvat.",
+          "answerSchemaText": "Het zijn synoniemen - Lorem Ipsum is een specifieke tekst van Cicero, dummy text is het algemene begrip voor vultekst."
         },
         {
           "question": "Wat zijn Hipster Ipsum en Business Ipsum?",
-          "answer": "Thematische varianten van vultext. Hipster Ipsum gebruikt hipstervocabulaire (ambachtelijk, avocado, vintage). Business Ipsum is bedrijfsjargon (synergie, leverage, stakeholder, KPI). Beide genereren tekst met natuurlijk ritme en sectorspecifiek vocabulaire.",
-          "answerSchemaText": "Thematische varianten — Hipster gebruikt lifestylevocabulaire, Business gebruikt bedrijfsjargon."
+          "answer": "Dit zijn thematische varianten van vultext. Hipster Ipsum gebruikt woordenschat uit de hipstercultuur - craft, avocado, vintage, mindfulness. Business Ipsum is bedrijfsjargon - synergy, leverage, stakeholder, KPI. Beide behouden hetzelfde natuurlijke ritme als klassiek Lorem Ipsum, maar met sectorspecifieke woordenschat, wat goed werkt in interne presentaties waar een vleugje humor de teamcommunicatie ten goede komt.",
+          "answerSchemaText": "Thematische Lorem Ipsum-varianten - Hipster gebruikt lifestylewoordenschat, Business gebruikt bedrijfsjargon."
         },
         {
-          "question": "Is de generator gratis en veilig?",
-          "answer": "Ja. Volledig gratis, zonder registratie en zonder limieten. Alles wordt lokaal in uw browser gegenereerd — niets wordt naar een server verzonden. Geen tracking, geen cookies, werkt offline na het laden.",
-          "answerSchemaText": "Ja — gratis, zonder registratie, lokale browserverwerking, geen gegevensverzameling."
+          "question": "Is de generator gratis en veilig in gebruik?",
+          "answer": "Ja. De Lorem Ipsum-generator is volledig gratis, zonder registratie en zonder limieten. Alle tekst wordt lokaal in uw browser gegenereerd - er wordt niets naar een server verzonden. De tool verzamelt geen persoonsgegevens, gebruikt geen trackingcookies en blijft offline werken nadat de pagina is geladen.",
+          "answerSchemaText": "Ja - gratis, zonder registratie, lokale verwerking in de browser, geen gegevensverzameling."
         },
         {
-          "question": "Hoeveel woorden heeft een standaardalinea?",
-          "answer": "Een gegenereerde alinea bestaat doorgaans uit 4–7 zinnen, ongeveer 40–90 woorden. De oorspronkelijke eerste alinea van Cicero heeft ongeveer 69 woorden en begint met Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "answerSchemaText": "Een gegenereerde alinea telt doorgaans 4–7 zinnen, ongeveer 40–90 woorden."
+          "question": "Hoeveel woorden heeft een standaard Lorem Ipsum-alinea?",
+          "answer": "Een gegenereerde alinea bestaat doorgaans uit 4 tot 7 zinnen, ongeveer 40 tot 90 woorden. De klassieke Lorem Ipsum-alinea die hierboven klaarstaat om te kopiëren, telt ongeveer 69 woorden en begint met Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "answerSchemaText": "Een gegenereerde alinea bestaat doorgaans uit 4-7 zinnen, ongeveer 40-90 woorden."
         }
       ]
     },
@@ -384,7 +512,7 @@
     {
       "type": "contactForm",
       "title": "Help ons onze tools te verbeteren",
-      "description": "Heeft u een idee voor een nieuwe functie, een bug gevonden of wilt u een andere tool voorstellen? Schrijf ons — we reageren binnen 24 uur.",
+      "description": "Heeft u een idee voor een nieuwe functie, een fout gevonden of wilt u een andere tool voorstellen die het werk zou vereenvoudigen? Schrijf ons - we reageren binnen 24 uur.",
       "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-nl.webp",
       "imageAlt": "Lorem Ipsum Generator — Arteon",
       "defaultSubject": "Feedback: Lorem Ipsum Generator"

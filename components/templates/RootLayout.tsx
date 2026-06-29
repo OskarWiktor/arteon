@@ -224,21 +224,6 @@ export default function RootLayout({ lang, children }: RootLayoutProps) {
           }}
         />
 
-        <link
-          rel='preconnect'
-          href='https://pagead2.googlesyndication.com'
-          crossOrigin='anonymous'
-        />
-        <link
-          rel='preconnect'
-          href='https://fundingchoicesmessages.google.com'
-          crossOrigin='anonymous'
-        />
-        <link
-          rel='preconnect'
-          href='https://tpc.googlesyndication.com'
-          crossOrigin='anonymous'
-        />
         <link rel='dns-prefetch' href='https://pagead2.googlesyndication.com' />
         <link
           rel='dns-prefetch'

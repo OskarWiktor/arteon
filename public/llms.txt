@@ -1,120 +1,119 @@
 # Arteon Agency
 
-> Arteon Agency is a web development, design, and marketing agency based in Poland. We provide 74 free browser-based tools for designers, developers, marketers, and content creators. All tools run locally in the browser — no data is sent to any server.
+> Arteon Agency is a web development, design, and marketing agency based in Poland. We provide nearly 90 free browser-based tools for designers, developers, marketers, and content creators. All tools run locally in the browser — no data is sent to any server.
 
 - Website: https://www.arteonagency.pl
 - Contact: kontakt@arteonagency.pl
-- Full tool documentation: https://www.arteonagency.pl/llms-full.txt
 
 ## Services
 
-- Web development (Next.js, WordPress)
-- E-commerce / online stores
-- Graphic design & brand identity
-- SEO & online marketing
-- Content creation & copywriting
+- [Web development](https://www.arteonagency.pl/uslugi): Next.js and WordPress websites
+- [E-commerce / online stores](https://www.arteonagency.pl/uslugi/sklepy-internetowe)
+- [Graphic design & brand identity](https://www.arteonagency.pl/uslugi/projekty-graficzne)
+- [SEO & online marketing](https://www.arteonagency.pl/uslugi/marketing)
+- [Content creation & copywriting](https://www.arteonagency.pl/uslugi/tworzenie-tresci)
 
 ## Design & Media Tools
 
-- Online Image Editor: https://www.arteonagency.pl/en/tools/online-image-editor
-- Favicon Generator: https://www.arteonagency.pl/en/tools/free-favicon-generator
-- Email Signature Generator: https://www.arteonagency.pl/en/tools/free-email-signature-generator
-- QR Code Generator: https://www.arteonagency.pl/en/tools/free-qr-code-generator
-- Color Palette Generator: https://www.arteonagency.pl/en/tools/color-palette-generator
-- Image Color Extractor: https://www.arteonagency.pl/en/tools/image-color-extractor
-- Color Contrast Checker (WCAG): https://www.arteonagency.pl/en/tools/color-contrast-checker
+- [Online Image Editor](https://www.arteonagency.pl/en/tools/online-image-editor)
+- [Favicon Generator](https://www.arteonagency.pl/en/tools/free-favicon-generator)
+- [Email Signature Generator](https://www.arteonagency.pl/en/tools/free-email-signature-generator)
+- [QR Code Generator](https://www.arteonagency.pl/en/tools/free-qr-code-generator)
+- [Color Palette Generator](https://www.arteonagency.pl/en/tools/color-palette-generator)
+- [Image Color Extractor](https://www.arteonagency.pl/en/tools/image-color-extractor)
+- [Color Contrast Checker (WCAG)](https://www.arteonagency.pl/en/tools/color-contrast-checker)
 
 ## SEO & Text Tools
 
-- Word & Character Counter: https://www.arteonagency.pl/en/tools/word-and-character-counter
-- Meta Title & Description Checker: https://www.arteonagency.pl/en/tools/meta-title-description-length-checker
-- Lorem Ipsum Generator: https://www.arteonagency.pl/en/tools/lorem-ipsum-generator
+- [Word & Character Counter](https://www.arteonagency.pl/en/tools/word-and-character-counter)
+- [Meta Title & Description Checker](https://www.arteonagency.pl/en/tools/meta-title-description-length-checker)
+- [Lorem Ipsum Generator](https://www.arteonagency.pl/en/tools/lorem-ipsum-generator)
 
 ## Image Converters (56 tools)
 
-- JPG to WebP: https://www.arteonagency.pl/en/tools/jpg-to-webp-converter
-- PNG to WebP: https://www.arteonagency.pl/en/tools/png-to-webp-converter
-- JPG to PNG: https://www.arteonagency.pl/en/tools/jpg-to-png-converter
-- PNG to JPG: https://www.arteonagency.pl/en/tools/png-to-jpg-converter
-- WebP to JPG: https://www.arteonagency.pl/en/tools/webp-to-jpg-converter
-- WebP to PNG: https://www.arteonagency.pl/en/tools/webp-to-png-converter
-- JPG to AVIF: https://www.arteonagency.pl/en/tools/jpg-to-avif-converter
-- PNG to AVIF: https://www.arteonagency.pl/en/tools/png-to-avif-converter
-- WebP to AVIF: https://www.arteonagency.pl/en/tools/webp-to-avif-converter
-- AVIF to JPG: https://www.arteonagency.pl/en/tools/avif-to-jpg-converter
-- AVIF to PNG: https://www.arteonagency.pl/en/tools/avif-to-png-converter
-- AVIF to WebP: https://www.arteonagency.pl/en/tools/avif-to-webp-converter
-- HEIC to JPG: https://www.arteonagency.pl/en/tools/heic-to-jpg-converter
-- HEIC to PNG: https://www.arteonagency.pl/en/tools/heic-to-png-converter
-- HEIC to WebP: https://www.arteonagency.pl/en/tools/heic-to-webp-converter
-- HEIC to AVIF: https://www.arteonagency.pl/en/tools/heic-to-avif-converter
-- TIFF to JPG: https://www.arteonagency.pl/en/tools/tiff-to-jpg-converter
-- TIFF to PNG: https://www.arteonagency.pl/en/tools/tiff-to-png-converter
-- TIFF to WebP: https://www.arteonagency.pl/en/tools/tiff-to-webp-converter
-- TIFF to AVIF: https://www.arteonagency.pl/en/tools/tiff-to-avif-converter
-- SVG to PNG: https://www.arteonagency.pl/en/tools/svg-to-png-converter
-- SVG to JPG: https://www.arteonagency.pl/en/tools/svg-to-jpg-converter
-- SVG to WebP: https://www.arteonagency.pl/en/tools/svg-to-webp-converter
-- SVG to AVIF: https://www.arteonagency.pl/en/tools/svg-to-avif-converter
-- BMP to JPG: https://www.arteonagency.pl/en/tools/bmp-to-jpg-converter
-- BMP to PNG: https://www.arteonagency.pl/en/tools/bmp-to-png-converter
-- BMP to WebP: https://www.arteonagency.pl/en/tools/bmp-to-webp-converter
-- BMP to AVIF: https://www.arteonagency.pl/en/tools/bmp-to-avif-converter
-- GIF to PNG: https://www.arteonagency.pl/en/tools/gif-to-png-converter
-- GIF to JPG: https://www.arteonagency.pl/en/tools/gif-to-jpg-converter
-- GIF to WebP: https://www.arteonagency.pl/en/tools/gif-to-webp-converter
-- GIF to AVIF: https://www.arteonagency.pl/en/tools/gif-to-avif-converter
-- JPG to GIF: https://www.arteonagency.pl/en/tools/jpg-to-gif-converter
-- PNG to GIF: https://www.arteonagency.pl/en/tools/png-to-gif-converter
-- WebP to GIF: https://www.arteonagency.pl/en/tools/webp-to-gif-converter
-- SVG to GIF: https://www.arteonagency.pl/en/tools/svg-to-gif-converter
-- BMP to GIF: https://www.arteonagency.pl/en/tools/bmp-to-gif-converter
-- JPG to TIFF: https://www.arteonagency.pl/en/tools/jpg-to-tiff-converter
-- PNG to TIFF: https://www.arteonagency.pl/en/tools/png-to-tiff-converter
-- WebP to TIFF: https://www.arteonagency.pl/en/tools/webp-to-tiff-converter
-- SVG to TIFF: https://www.arteonagency.pl/en/tools/svg-to-tiff-converter
-- BMP to TIFF: https://www.arteonagency.pl/en/tools/bmp-to-tiff-converter
-- AVIF to TIFF: https://www.arteonagency.pl/en/tools/avif-to-tiff-converter
-- HEIC to TIFF: https://www.arteonagency.pl/en/tools/heic-to-tiff-converter
-- JPG to PDF: https://www.arteonagency.pl/en/tools/jpg-to-pdf-converter
-- PNG to PDF: https://www.arteonagency.pl/en/tools/png-to-pdf-converter
-- WebP to PDF: https://www.arteonagency.pl/en/tools/webp-to-pdf-converter
-- HEIC to PDF: https://www.arteonagency.pl/en/tools/heic-to-pdf-converter
-- BMP to PDF: https://www.arteonagency.pl/en/tools/bmp-to-pdf-converter
-- TIFF to PDF: https://www.arteonagency.pl/en/tools/tiff-to-pdf-converter
-- SVG to PDF: https://www.arteonagency.pl/en/tools/svg-to-pdf-converter
-- PDF to JPG: https://www.arteonagency.pl/en/tools/pdf-to-jpg-converter
-- PDF to PNG: https://www.arteonagency.pl/en/tools/pdf-to-png-converter
-- PDF to WebP: https://www.arteonagency.pl/en/tools/pdf-to-webp-converter
-- Image to Base64: https://www.arteonagency.pl/en/tools/image-to-base64-converter
-- Base64 to Image: https://www.arteonagency.pl/en/tools/base64-to-image-converter
+- [JPG to WebP](https://www.arteonagency.pl/en/tools/jpg-to-webp-converter)
+- [PNG to WebP](https://www.arteonagency.pl/en/tools/png-to-webp-converter)
+- [JPG to PNG](https://www.arteonagency.pl/en/tools/jpg-to-png-converter)
+- [PNG to JPG](https://www.arteonagency.pl/en/tools/png-to-jpg-converter)
+- [WebP to JPG](https://www.arteonagency.pl/en/tools/webp-to-jpg-converter)
+- [WebP to PNG](https://www.arteonagency.pl/en/tools/webp-to-png-converter)
+- [JPG to AVIF](https://www.arteonagency.pl/en/tools/jpg-to-avif-converter)
+- [PNG to AVIF](https://www.arteonagency.pl/en/tools/png-to-avif-converter)
+- [WebP to AVIF](https://www.arteonagency.pl/en/tools/webp-to-avif-converter)
+- [AVIF to JPG](https://www.arteonagency.pl/en/tools/avif-to-jpg-converter)
+- [AVIF to PNG](https://www.arteonagency.pl/en/tools/avif-to-png-converter)
+- [AVIF to WebP](https://www.arteonagency.pl/en/tools/avif-to-webp-converter)
+- [HEIC to JPG](https://www.arteonagency.pl/en/tools/heic-to-jpg-converter)
+- [HEIC to PNG](https://www.arteonagency.pl/en/tools/heic-to-png-converter)
+- [HEIC to WebP](https://www.arteonagency.pl/en/tools/heic-to-webp-converter)
+- [HEIC to AVIF](https://www.arteonagency.pl/en/tools/heic-to-avif-converter)
+- [TIFF to JPG](https://www.arteonagency.pl/en/tools/tiff-to-jpg-converter)
+- [TIFF to PNG](https://www.arteonagency.pl/en/tools/tiff-to-png-converter)
+- [TIFF to WebP](https://www.arteonagency.pl/en/tools/tiff-to-webp-converter)
+- [TIFF to AVIF](https://www.arteonagency.pl/en/tools/tiff-to-avif-converter)
+- [SVG to PNG](https://www.arteonagency.pl/en/tools/svg-to-png-converter)
+- [SVG to JPG](https://www.arteonagency.pl/en/tools/svg-to-jpg-converter)
+- [SVG to WebP](https://www.arteonagency.pl/en/tools/svg-to-webp-converter)
+- [SVG to AVIF](https://www.arteonagency.pl/en/tools/svg-to-avif-converter)
+- [BMP to JPG](https://www.arteonagency.pl/en/tools/bmp-to-jpg-converter)
+- [BMP to PNG](https://www.arteonagency.pl/en/tools/bmp-to-png-converter)
+- [BMP to WebP](https://www.arteonagency.pl/en/tools/bmp-to-webp-converter)
+- [BMP to AVIF](https://www.arteonagency.pl/en/tools/bmp-to-avif-converter)
+- [GIF to PNG](https://www.arteonagency.pl/en/tools/gif-to-png-converter)
+- [GIF to JPG](https://www.arteonagency.pl/en/tools/gif-to-jpg-converter)
+- [GIF to WebP](https://www.arteonagency.pl/en/tools/gif-to-webp-converter)
+- [GIF to AVIF](https://www.arteonagency.pl/en/tools/gif-to-avif-converter)
+- [JPG to GIF](https://www.arteonagency.pl/en/tools/jpg-to-gif-converter)
+- [PNG to GIF](https://www.arteonagency.pl/en/tools/png-to-gif-converter)
+- [WebP to GIF](https://www.arteonagency.pl/en/tools/webp-to-gif-converter)
+- [SVG to GIF](https://www.arteonagency.pl/en/tools/svg-to-gif-converter)
+- [BMP to GIF](https://www.arteonagency.pl/en/tools/bmp-to-gif-converter)
+- [JPG to TIFF](https://www.arteonagency.pl/en/tools/jpg-to-tiff-converter)
+- [PNG to TIFF](https://www.arteonagency.pl/en/tools/png-to-tiff-converter)
+- [WebP to TIFF](https://www.arteonagency.pl/en/tools/webp-to-tiff-converter)
+- [SVG to TIFF](https://www.arteonagency.pl/en/tools/svg-to-tiff-converter)
+- [BMP to TIFF](https://www.arteonagency.pl/en/tools/bmp-to-tiff-converter)
+- [AVIF to TIFF](https://www.arteonagency.pl/en/tools/avif-to-tiff-converter)
+- [HEIC to TIFF](https://www.arteonagency.pl/en/tools/heic-to-tiff-converter)
+- [JPG to PDF](https://www.arteonagency.pl/en/tools/jpg-to-pdf-converter)
+- [PNG to PDF](https://www.arteonagency.pl/en/tools/png-to-pdf-converter)
+- [WebP to PDF](https://www.arteonagency.pl/en/tools/webp-to-pdf-converter)
+- [HEIC to PDF](https://www.arteonagency.pl/en/tools/heic-to-pdf-converter)
+- [BMP to PDF](https://www.arteonagency.pl/en/tools/bmp-to-pdf-converter)
+- [TIFF to PDF](https://www.arteonagency.pl/en/tools/tiff-to-pdf-converter)
+- [SVG to PDF](https://www.arteonagency.pl/en/tools/svg-to-pdf-converter)
+- [PDF to JPG](https://www.arteonagency.pl/en/tools/pdf-to-jpg-converter)
+- [PDF to PNG](https://www.arteonagency.pl/en/tools/pdf-to-png-converter)
+- [PDF to WebP](https://www.arteonagency.pl/en/tools/pdf-to-webp-converter)
+- [Image to Base64](https://www.arteonagency.pl/en/tools/image-to-base64-converter)
+- [Base64 to Image](https://www.arteonagency.pl/en/tools/base64-to-image-converter)
 
 ## Document & Data Converters
 
-- CSV to JSON: https://www.arteonagency.pl/en/tools/csv-to-json-converter
-- JSON to CSV: https://www.arteonagency.pl/en/tools/json-to-csv-converter
-- XML to JSON: https://www.arteonagency.pl/en/tools/xml-to-json-converter
-- JSON to XML: https://www.arteonagency.pl/en/tools/json-to-xml-converter
-- YAML to JSON: https://www.arteonagency.pl/en/tools/yaml-to-json-converter
-- JSON to YAML: https://www.arteonagency.pl/en/tools/json-to-yaml-converter
-- Markdown to HTML: https://www.arteonagency.pl/en/tools/markdown-to-html-converter
-- HTML to Markdown: https://www.arteonagency.pl/en/tools/html-to-markdown-converter
+- [CSV to JSON](https://www.arteonagency.pl/en/tools/csv-to-json-converter)
+- [JSON to CSV](https://www.arteonagency.pl/en/tools/json-to-csv-converter)
+- [XML to JSON](https://www.arteonagency.pl/en/tools/xml-to-json-converter)
+- [JSON to XML](https://www.arteonagency.pl/en/tools/json-to-xml-converter)
+- [YAML to JSON](https://www.arteonagency.pl/en/tools/yaml-to-json-converter)
+- [JSON to YAML](https://www.arteonagency.pl/en/tools/json-to-yaml-converter)
+- [Markdown to HTML](https://www.arteonagency.pl/en/tools/markdown-to-html-converter)
+- [HTML to Markdown](https://www.arteonagency.pl/en/tools/html-to-markdown-converter)
 
 ## Available in 16 Languages
 
-- Polish (PL): https://www.arteonagency.pl/narzedzia
-- English (EN): https://www.arteonagency.pl/en/tools
-- German (DE): https://www.arteonagency.pl/de/werkzeuge
-- Spanish (ES): https://www.arteonagency.pl/es/herramientas
-- French (FR): https://www.arteonagency.pl/fr/outils
-- Portuguese (PT): https://www.arteonagency.pl/pt/ferramentas
-- Italian (IT): https://www.arteonagency.pl/it/strumenti
-- Romanian (RO): https://www.arteonagency.pl/ro/instrumente
-- Dutch (NL): https://www.arteonagency.pl/nl/tools
-- Hungarian (HU): https://www.arteonagency.pl/hu/eszkozok
-- Czech (CS): https://www.arteonagency.pl/cs/nastroje
-- Swedish (SV): https://www.arteonagency.pl/sv/verktyg
-- Danish (DA): https://www.arteonagency.pl/da/vaerktojer
-- Norwegian (NO): https://www.arteonagency.pl/no/verktoy
-- Finnish (FI): https://www.arteonagency.pl/fi/tyokalut
-- Greek (EL): https://www.arteonagency.pl/el/ergaleia
+- [Polish (PL)](https://www.arteonagency.pl/narzedzia)
+- [English (EN)](https://www.arteonagency.pl/en/tools)
+- [German (DE)](https://www.arteonagency.pl/de/werkzeuge)
+- [Spanish (ES)](https://www.arteonagency.pl/es/herramientas)
+- [French (FR)](https://www.arteonagency.pl/fr/outils)
+- [Portuguese (PT)](https://www.arteonagency.pl/pt/ferramentas)
+- [Italian (IT)](https://www.arteonagency.pl/it/strumenti)
+- [Romanian (RO)](https://www.arteonagency.pl/ro/instrumente)
+- [Dutch (NL)](https://www.arteonagency.pl/nl/tools)
+- [Hungarian (HU)](https://www.arteonagency.pl/hu/eszkozok)
+- [Czech (CS)](https://www.arteonagency.pl/cs/nastroje)
+- [Swedish (SV)](https://www.arteonagency.pl/sv/verktyg)
+- [Danish (DA)](https://www.arteonagency.pl/da/vaerktojer)
+- [Norwegian (NO)](https://www.arteonagency.pl/no/verktoy)
+- [Finnish (FI)](https://www.arteonagency.pl/fi/tyokalut)
+- [Greek (EL)](https://www.arteonagency.pl/el/ergaleia)
