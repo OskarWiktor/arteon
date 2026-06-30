@@ -20,7 +20,7 @@ export default function FormatSelector({
   const { imageConverter: t } = useDictionary();
 
   return (
-    <div className='mb-5 flex justify-center'>
+    <div className='mt-4 flex justify-center'>
       <div className='inline-flex items-center gap-4 rounded-md border border-neutral-200 bg-white px-4 py-3'>
         <FormatPickerModal
           side='source'
