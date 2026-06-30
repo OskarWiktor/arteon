@@ -51,8 +51,6 @@ export interface ClientDictionary {
     switchTitle: string;
     toggleLabel: string;
     chooseLabel: string;
-    popularLabel: string;
-    otherLabel: string;
     closeModalLabel: string;
   };
   mobileNav: { close: string; services: string; contact: string };

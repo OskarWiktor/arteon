@@ -39,8 +39,6 @@ type AlternateLink = {
   name: string;
 };
 
-const POPULAR_LOCALES: Locale[] = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it'];
-
 function splitIntoColumns<T>(items: T[], cols: number): T[][] {
   const result: T[][] = Array.from({ length: cols }, () => []);
   const perCol = Math.ceil(items.length / cols);
@@ -143,25 +141,11 @@ export default function LanguageSwitcher({
     },
   });
 
-  const {
-    popularCols,
-    otherCols,
-    popularMobileCols,
-    otherMobileCols,
-    popularSorted,
-    otherSorted,
-  } = (() => {
-    const popular = links.filter(l => POPULAR_LOCALES.includes(l.locale));
-    const other = links.filter(l => !POPULAR_LOCALES.includes(l.locale));
-    const pSorted = [...popular].sort((a, b) => a.name.localeCompare(b.name));
-    const oSorted = [...other].sort((a, b) => a.name.localeCompare(b.name));
+  const { desktopCols, mobileCols } = (() => {
+    const sorted = [...links].sort((a, b) => a.name.localeCompare(b.name));
     return {
-      popularSorted: pSorted,
-      otherSorted: oSorted,
-      popularCols: splitIntoColumns(pSorted, 2),
-      otherCols: splitIntoColumns(oSorted, 3),
-      popularMobileCols: splitIntoColumns(pSorted, 2),
-      otherMobileCols: splitIntoColumns(oSorted, 2),
+      desktopCols: splitIntoColumns(sorted, 6),
+      mobileCols: splitIntoColumns(sorted, 2),
     };
   })();
 
@@ -246,7 +230,7 @@ export default function LanguageSwitcher({
               style={{ top: headerBottom }}
             >
               <Wrapper>
-                <div className='grid grid-cols-6 gap-0'>
+                <div className='grid grid-cols-7 gap-0'>
                   <div className='border-r border-primary-light pr-4'>
                     <div className='flex items-center gap-3 rounded-lg bg-white px-4 py-3 text-primary'>
                       <RiTranslate2
@@ -264,52 +248,11 @@ export default function LanguageSwitcher({
                     </div>
                   </div>
 
-                  {popularSorted.length > 0 && (
-                    <>
-                      <div className='border-r border-primary-light pr-4 pl-6'>
-                        <span className='mb-2 block px-3 text-[11px] font-semibold tracking-wider text-light uppercase'>
-                          {t.popularLabel}
-                        </span>
-                        <div className='flex flex-col'>
-                          {popularCols[0].map(linkItem)}
-                        </div>
-                      </div>
-                      {popularCols[1]?.length > 0 && (
-                        <div className='border-r border-primary-light pt-5 pr-4'>
-                          <div className='flex flex-col'>
-                            {popularCols[1].map(linkItem)}
-                          </div>
-                        </div>
-                      )}
-                    </>
-                  )}
-
-                  {otherSorted.length > 0 && (
-                    <>
-                      <div className='pl-6'>
-                        <span className='mb-2 block px-3 text-[11px] font-semibold tracking-wider text-light uppercase'>
-                          {t.otherLabel}
-                        </span>
-                        <div className='flex flex-col'>
-                          {otherCols[0].map(linkItem)}
-                        </div>
-                      </div>
-                      {otherCols[1]?.length > 0 && (
-                        <div className='pt-5'>
-                          <div className='flex flex-col'>
-                            {otherCols[1].map(linkItem)}
-                          </div>
-                        </div>
-                      )}
-                      {otherCols[2]?.length > 0 && (
-                        <div className='pt-5'>
-                          <div className='flex flex-col'>
-                            {otherCols[2].map(linkItem)}
-                          </div>
-                        </div>
-                      )}
-                    </>
-                  )}
+                  {desktopCols.map((col, i) => (
+                    <div key={i} className='pl-6'>
+                      <div className='flex flex-col'>{col.map(linkItem)}</div>
+                    </div>
+                  ))}
                 </div>
               </Wrapper>
             </div>,
@@ -394,97 +337,27 @@ export default function LanguageSwitcher({
                 </span>
               </div>
 
-              {popularSorted.length > 0 && (
-                <>
-                  <span className='mb-1.5 block px-2 text-[10px] font-semibold tracking-wider text-light uppercase'>
-                    {t.popularLabel}
-                  </span>
-                  <div className='mb-3 grid grid-cols-2 gap-x-2'>
-                    <div className='flex flex-col'>
-                      {popularMobileCols[0].map(link => (
-                        <InlineLink
-                          key={link.locale}
-                          href={link.href}
-                          hrefLang={link.hreflang}
-                          title={link.title}
-                          onClick={close}
-                          className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
-                        >
-                          <span className='w-5 text-center text-[11px] font-semibold text-light uppercase'>
-                            {link.label}
-                          </span>
-                          <span>{link.name}</span>
-                        </InlineLink>
-                      ))}
-                    </div>
-                    {popularMobileCols[1]?.length > 0 && (
-                      <div className='flex flex-col'>
-                        {popularMobileCols[1].map(link => (
-                          <InlineLink
-                            key={link.locale}
-                            href={link.href}
-                            hrefLang={link.hreflang}
-                            title={link.title}
-                            onClick={close}
-                            className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
-                          >
-                            <span className='w-5 text-center text-[11px] font-semibold text-light uppercase'>
-                              {link.label}
-                            </span>
-                            <span>{link.name}</span>
-                          </InlineLink>
-                        ))}
-                      </div>
-                    )}
+              <div className='grid grid-cols-2 gap-x-2'>
+                {mobileCols.map((col, i) => (
+                  <div key={i} className='flex flex-col'>
+                    {col.map(link => (
+                      <InlineLink
+                        key={link.locale}
+                        href={link.href}
+                        hrefLang={link.hreflang}
+                        title={link.title}
+                        onClick={close}
+                        className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
+                      >
+                        <span className='w-5 text-center text-[11px] font-semibold text-light uppercase'>
+                          {link.label}
+                        </span>
+                        <span>{link.name}</span>
+                      </InlineLink>
+                    ))}
                   </div>
-                </>
-              )}
-
-              {otherSorted.length > 0 && (
-                <>
-                  <span className='mb-1.5 block px-2 text-[10px] font-semibold tracking-wider text-light uppercase'>
-                    {t.otherLabel}
-                  </span>
-                  <div className='grid grid-cols-2 gap-x-2'>
-                    <div className='flex flex-col'>
-                      {otherMobileCols[0].map(link => (
-                        <InlineLink
-                          key={link.locale}
-                          href={link.href}
-                          hrefLang={link.hreflang}
-                          title={link.title}
-                          onClick={close}
-                          className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
-                        >
-                          <span className='w-5 text-center text-[11px] font-semibold text-light uppercase'>
-                            {link.label}
-                          </span>
-                          <span>{link.name}</span>
-                        </InlineLink>
-                      ))}
-                    </div>
-                    {otherMobileCols[1]?.length > 0 && (
-                      <div className='flex flex-col'>
-                        {otherMobileCols[1].map(link => (
-                          <InlineLink
-                            key={link.locale}
-                            href={link.href}
-                            hrefLang={link.hreflang}
-                            title={link.title}
-                            onClick={close}
-                            className='gap-2 rounded-md px-2 py-2 text-[13px] transition hover:bg-neutral-100'
-                          >
-                            <span className='w-5 text-center text-[11px] font-semibold text-light uppercase'>
-                              {link.label}
-                            </span>
-                            <span>{link.name}</span>
-                          </InlineLink>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </>
-              )}
+                ))}
+              </div>
             </div>
           </>,
           document.body,

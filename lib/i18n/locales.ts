@@ -1,18 +1,15 @@
 import csDict from '@/data/cs/dictionary.json';
-import daDict from '@/data/da/dictionary.json';
 import deDict from '@/data/de/dictionary.json';
 import elDict from '@/data/el/dictionary.json';
 import enDict from '@/data/en/dictionary.json';
 import esDict from '@/data/es/dictionary.json';
 import fiDict from '@/data/fi/dictionary.json';
 import frDict from '@/data/fr/dictionary.json';
-import huDict from '@/data/hu/dictionary.json';
 import itDict from '@/data/it/dictionary.json';
 import nlDict from '@/data/nl/dictionary.json';
 import noDict from '@/data/no/dictionary.json';
 import plDict from '@/data/pl/dictionary.json';
 import ptDict from '@/data/pt/dictionary.json';
-import roDict from '@/data/ro/dictionary.json';
 import svDict from '@/data/sv/dictionary.json';
 import type {
   BreadcrumbsDictionary,
@@ -47,12 +44,9 @@ const dicts = {
   fr: frDict,
   pt: ptDict,
   it: itDict,
-  ro: roDict,
   nl: nlDict,
-  hu: huDict,
   cs: csDict,
   sv: svDict,
-  da: daDict,
   no: noDict,
   fi: fiDict,
   el: elDict,
@@ -143,18 +137,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     privacyHref: '/it/informativa-sulla-privacy',
     termsHref: '/it/termini-di-servizio',
   },
-  ro: {
-    lang: 'ro',
-    hreflang: 'ro',
-    label: 'RO',
-    name: 'Română',
-    toolsBasePath: '/ro/instrumente',
-    toolsIndexHref: '/ro/instrumente',
-    aboutHref: '/ro/despre-noi',
-    contactHref: '/ro/contact',
-    privacyHref: '/ro/politica-de-confidentialitate',
-    termsHref: '/ro/termeni-si-conditii',
-  },
   nl: {
     lang: 'nl',
     hreflang: 'nl',
@@ -166,18 +148,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/nl/contact',
     privacyHref: '/nl/privacybeleid',
     termsHref: '/nl/gebruiksvoorwaarden',
-  },
-  hu: {
-    lang: 'hu',
-    hreflang: 'hu',
-    label: 'HU',
-    name: 'Magyar',
-    toolsBasePath: '/hu/eszkozok',
-    toolsIndexHref: '/hu/eszkozok',
-    aboutHref: '/hu/rolunk',
-    contactHref: '/hu/kapcsolat',
-    privacyHref: '/hu/adatvedelmi-iranyelvek',
-    termsHref: '/hu/felhasznalasi-feltetelek',
   },
   cs: {
     lang: 'cs',
@@ -202,18 +172,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/sv/kontakt',
     privacyHref: '/sv/integritetspolicy',
     termsHref: '/sv/anvandarvillkor',
-  },
-  da: {
-    lang: 'da',
-    hreflang: 'da',
-    label: 'DA',
-    name: 'Dansk',
-    toolsBasePath: '/da/vaerktojer',
-    toolsIndexHref: '/da/vaerktojer',
-    aboutHref: '/da/om-os',
-    contactHref: '/da/kontakt',
-    privacyHref: '/da/privatlivspolitik',
-    termsHref: '/da/brugsvilkar',
   },
   no: {
     lang: 'no',

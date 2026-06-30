@@ -31,12 +31,9 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       fr: { title: 'Images et favicons' },
       pt: { title: 'Imagens e favicons' },
       it: { title: 'Immagini e favicon' },
-      ro: { title: 'Imagini și favicon-uri' },
       nl: { title: 'Afbeeldingen & favicons' },
-      hu: { title: 'Képek és faviconok' },
       cs: { title: 'Obrázky a favicony' },
       sv: { title: 'Bilder & faviconer' },
-      da: { title: 'Billeder & faviconer' },
       no: { title: 'Bilder og faviconer' },
       fi: { title: 'Kuvat ja faviconit' },
       el: { title: 'Εικόνες και favicon' },
@@ -53,12 +50,9 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       fr: { title: 'Texte et SEO' },
       pt: { title: 'Texto e SEO' },
       it: { title: 'Testo e SEO' },
-      ro: { title: 'Text și SEO' },
       nl: { title: 'Tekst & SEO' },
-      hu: { title: 'Szöveg és SEO' },
       cs: { title: 'Text a SEO' },
       sv: { title: 'Text & SEO' },
-      da: { title: 'Tekst & SEO' },
       no: { title: 'Tekst & SEO' },
       fi: { title: 'Teksti & SEO' },
       el: { title: 'Κείμενο & SEO' },
@@ -75,12 +69,9 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       fr: { title: 'E-mail et communication' },
       pt: { title: 'E-mail e comunicação' },
       it: { title: 'E-mail e comunicazione' },
-      ro: { title: 'E-mail și comunicare' },
       nl: { title: 'E-mail & communicatie' },
-      hu: { title: 'E-mail és kommunikáció' },
       cs: { title: 'E-mail a komunikace' },
       sv: { title: 'E-post & kommunikation' },
-      da: { title: 'E-mail & kommunikation' },
       no: { title: 'E-post og kommunikasjon' },
       fi: { title: 'Sähköposti ja viestintä' },
       el: { title: 'Email & επικοινωνία' },
@@ -97,12 +88,9 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       fr: { title: 'Couleurs et accessibilité' },
       pt: { title: 'Cores e acessibilidade' },
       it: { title: 'Colori e accessibilità' },
-      ro: { title: 'Culori și accesibilitate' },
       nl: { title: 'Kleuren & toegankelijkheid' },
-      hu: { title: 'Színek és akadálymentesség' },
       cs: { title: 'Barvy a přístupnost' },
       sv: { title: 'Färger & tillgänglighet' },
-      da: { title: 'Farver & tilgængelighed' },
       no: { title: 'Farger og tilgjengelighet' },
       fi: { title: 'Värit ja saavutettavuus' },
       el: { title: 'Χρώματα & παλέτες' },
@@ -119,12 +107,9 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       fr: { title: 'Impression et supports' },
       pt: { title: 'Impressão e materiais' },
       it: { title: 'Stampa e materiali' },
-      ro: { title: 'Tipărire și materiale' },
       nl: { title: 'Drukwerk & materialen' },
-      hu: { title: 'Nyomtatás és anyagok' },
       cs: { title: 'Tisk a materiály' },
       sv: { title: 'Tryck & material' },
-      da: { title: 'Tryk & materialer' },
       no: { title: 'Trykk og materialer' },
       fi: { title: 'Painatus ja materiaalit' },
       el: { title: 'Εκτύπωση & QR' },
@@ -143,11 +128,8 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       it: { title: 'Convertitori di formato' },
       nl: { title: 'Beeldformaat-converters' },
       el: { title: 'Μετατροπείς μορφής' },
-      ro: { title: 'Convertoare de format' },
-      hu: { title: 'Képformátum-konverterek' },
       cs: { title: 'Konvertory formátů' },
       sv: { title: 'Bildformatkonverterare' },
-      da: { title: 'Billedformatkonvertere' },
       no: { title: 'Bildformatkonverterere' },
       fi: { title: 'Kuvaformaattimuuntimet' },
     },
@@ -163,12 +145,9 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       fr: { title: 'Convertisseurs de données' },
       pt: { title: 'Conversores de dados' },
       it: { title: 'Convertitori di dati' },
-      ro: { title: 'Convertoare de date' },
       nl: { title: 'Dataconverters' },
-      hu: { title: 'Adatkonverterek' },
       cs: { title: 'Datové převodníky' },
       sv: { title: 'Datakonverterare' },
-      da: { title: 'Datakonvertere' },
       no: { title: 'Datakonverterere' },
       fi: { title: 'Datamuuntimet' },
       el: { title: 'Μετατροπείς δεδομένων' },
@@ -185,12 +164,9 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       fr: { title: "Convertisseurs d'unités" },
       pt: { title: 'Conversores de unidades' },
       it: { title: 'Convertitori di unità' },
-      ro: { title: 'Convertoare de unități' },
       nl: { title: 'Eenhedenconverters' },
-      hu: { title: 'Mértékegység-átváltók' },
       cs: { title: 'Převodníky jednotek' },
       sv: { title: 'Enhetskonverterare' },
-      da: { title: 'Enhedskonvertere' },
       no: { title: 'Enhetskonverterere' },
       fi: { title: 'Yksikkömuuntimet' },
       el: { title: 'Μετατροπείς μονάδων' },
@@ -260,23 +236,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Ridimensiona, ritaglia e converti la tua immagine. Formati pronti per i social media, avatar circolari, esportazione JPG/PNG/WebP.',
       },
-      ro: {
-        slug: 'editor-de-imagini',
-        title: 'Editor de imagini',
-        description:
-          'Redimensionați, decupați și convertiți imaginea. Formate predefinite pentru rețelele sociale, avataruri circulare, export JPG/PNG/WebP.',
-      },
       nl: {
         slug: 'afbeeldingeneditor',
         title: 'Afbeeldingeneditor',
         description:
           'Wijzig het formaat, snij bij en converteer uw afbeelding. Kant-en-klare formaten voor social media, ronde avatars, export JPG/PNG/WebP.',
-      },
-      hu: {
-        slug: 'kepszerkeszto',
-        title: 'Képszerkesztő',
-        description:
-          'Méretezze át, vágja ki és konvertálja képét. Kész formátumok közösségi médiához, kör alakú avatarok, export JPG/PNG/WebP.',
       },
       cs: {
         slug: 'editor-obrazku',
@@ -289,12 +253,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Bildredigerare',
         description:
           'Ändra storlek, beskär och konvertera din bild. Färdiga format för sociala medier, runda avatarer, export JPG/PNG/WebP.',
-      },
-      da: {
-        slug: 'billedrediger',
-        title: 'Billedredigering',
-        description:
-          'Ændr størrelse, beskær og konvertér dit billede. Færdige formater til sociale medier, runde avatarer, eksport JPG/PNG/WebP.',
       },
       no: {
         slug: 'bilderedigerer',
@@ -365,23 +323,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Crea un set completo di favicon.ico per il tuo sito web da una immagine. Tutte le dimensioni richieste, senza registrazione.',
       },
-      ro: {
-        slug: 'generator-favicon-gratuit',
-        title: 'Generator de favicon',
-        description:
-          'Creați un set complet de favicon.ico pentru site-ul dvs. dintr-o imagine. Toate dimensiunile necesare, fără înregistrare.',
-      },
       nl: {
         slug: 'gratis-favicon-generator',
         title: 'Favicon-generator',
         description:
           'Maak een complete favicon.ico-set voor uw website vanuit één afbeelding. Alle vereiste formaten, zonder registratie.',
-      },
-      hu: {
-        slug: 'ingyenes-favicon-generator',
-        title: 'Favicon generátor',
-        description:
-          'Hozzon létre teljes favicon.ico készletet weboldalához egyetlen képből. Minden szükséges méret, bejelentkezés nélkül.',
       },
       cs: {
         slug: 'generator-favicon-zdarma',
@@ -394,12 +340,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Favicon-generator',
         description:
           'Skapa en komplett favicon.ico-uppsättning för din webbplats från en bild. Alla nödvändiga storlekar, utan inloggning.',
-      },
-      da: {
-        slug: 'gratis-favicon-generator',
-        title: 'Favicon-generator',
-        description:
-          'Opret et komplet favicon.ico-sæt til din hjemmeside fra et billede. Alle nødvendige størrelser, uden login.',
       },
       no: {
         slug: 'gratis-favicon-generator',
@@ -470,23 +410,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Verifica la lunghezza del titolo e della descrizione in pixel. Anteprima Google dal vivo e suggerimenti di ottimizzazione.',
       },
-      ro: {
-        slug: 'verificator-meta-titlu-si-descriere',
-        title: 'Verificator meta titlu și descriere',
-        description:
-          'Verificați lungimea titlului și descrierii în pixeli. Previzualizare Google live și sfaturi de optimizare.',
-      },
       nl: {
         slug: 'meta-titel-beschrijving-checker',
         title: 'Meta-titel & beschrijving checker',
         description:
           'Controleer de titel- en beschrijvingslengte in pixels. Live Google-voorbeeld en optimalisatietips.',
-      },
-      hu: {
-        slug: 'meta-cim-es-leiras-ellenorzo',
-        title: 'Meta cím és leírás ellenőrző',
-        description:
-          'Ellenőrizze a cím és leírás hosszát pixelben. Élő Google-előnézet és optimalizálási tippek.',
       },
       cs: {
         slug: 'kontrola-meta-titulku-a-popisu',
@@ -499,12 +427,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Meta-titel & beskrivningskontroll',
         description:
           'Kontrollera titel- och beskrivningslängd i pixlar. Live Google-förhandsgranskning och optimeringstips.',
-      },
-      da: {
-        slug: 'meta-titel-og-beskrivelse-kontrol',
-        title: 'Meta-titel & beskrivelseskontrol',
-        description:
-          'Kontrollér titel- og beskrivelseslaengde i pixels. Live Google-forhåndsvisning og optimeringstips.',
       },
       no: {
         slug: 'meta-tittel-og-beskrivelse-sjekker',
@@ -575,23 +497,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Conta parole, caratteri, frasi e tempo di lettura. Verifica la leggibilità con il punteggio Flesch-Kincaid.',
       },
-      ro: {
-        slug: 'contor-cuvinte-si-caractere',
-        title: 'Contor de cuvinte și caractere',
-        description:
-          'Numărați cuvinte, caractere, propoziții și timp de citire. Verificați lizibilitatea cu scorul Flesch-Kincaid.',
-      },
       nl: {
         slug: 'woorden-en-tekenteller',
         title: 'Woorden- & tekenteller',
         description:
           'Tel woorden, tekens, zinnen en leestijd. Controleer de leesbaarheid met de Flesch-Kincaid-score.',
-      },
-      hu: {
-        slug: 'szo-es-karakterszamlalo',
-        title: 'Szó- és karakterszámláló',
-        description:
-          'Számolja meg a szavakat, karaktereket, mondatokat és az olvasási időt. Ellenőrizze az olvashatóságot a Flesch-Kincaid-pontszámmal.',
       },
       cs: {
         slug: 'pocitadlo-slov-a-znaku',
@@ -604,12 +514,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Ord- & teckenräknare',
         description:
           'Räkna ord, tecken, meningar och lästid. Kontrollera läsbarheten med Flesch-Kincaid-poängen.',
-      },
-      da: {
-        slug: 'ord-og-tegntaeller',
-        title: 'Ord- & tegntæller',
-        description:
-          'Tæl ord, tegn, sætninger og læsetid. Kontrollér læsbarheden med Flesch-Kincaid-scoren.',
       },
       no: {
         slug: 'ord-og-tegnteller',
@@ -680,23 +584,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Generatore Lorem Ipsum gratuito — 8 stili di testo, paragrafi, frasi o parole. Copia con un clic.',
       },
-      ro: {
-        slug: 'generator-lorem-ipsum',
-        title: 'Generator Lorem Ipsum',
-        description:
-          'Generator Lorem Ipsum gratuit — 8 stiluri de text, paragrafe, propoziții sau cuvinte. Copiați cu un clic.',
-      },
       nl: {
         slug: 'lorem-ipsum-generator',
         title: 'Lorem Ipsum-generator',
         description:
           'Gratis Lorem Ipsum-generator — 8 tekststijlen, paragrafen, zinnen of woorden. Kopieer met één klik.',
-      },
-      hu: {
-        slug: 'lorem-ipsum-generator',
-        title: 'Lorem Ipsum generátor',
-        description:
-          'Ingyenes Lorem Ipsum generátor — 8 szövegstílus, bekezdések, mondatok vagy szavak. Másolás egy kattintással.',
       },
       cs: {
         slug: 'generator-lorem-ipsum',
@@ -709,12 +601,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Lorem Ipsum-generator',
         description:
           'Gratis Lorem Ipsum-generator — 8 textstilar, stycken, meningar eller ord. Kopiera med ett klick.',
-      },
-      da: {
-        slug: 'lorem-ipsum-generator',
-        title: 'Lorem Ipsum-generator',
-        description:
-          'Gratis Lorem Ipsum-generator — 8 tekststilarter, afsnit, sætninger eller ord. Kopiér med ét klik.',
       },
       no: {
         slug: 'lorem-ipsum-generator',
@@ -784,23 +670,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Crea una firma e-mail HTML con personalizzazione completa. Layout pronti, icone social media e codice per Gmail/Outlook.',
       },
-      ro: {
-        slug: 'generator-semnatura-email-gratuit',
-        title: 'Generator de semnătură e-mail',
-        description:
-          'Creați o semnătură e-mail HTML cu personalizare completă. Machete gata, pictograme rețele sociale și cod pentru Gmail/Outlook.',
-      },
       nl: {
         slug: 'gratis-e-mailhandtekening-generator',
         title: 'E-mailhandtekening generator',
         description:
           'Maak een HTML e-mailhandtekening met volledige aanpassing. Kant-en-klare layouts, social media-iconen en code voor Gmail/Outlook.',
-      },
-      hu: {
-        slug: 'ingyenes-email-alairas-generator',
-        title: 'E-mail aláírás generátor',
-        description:
-          'Hozzon létre HTML e-mail aláírást teljes testreszabással. Kész elrendezések, közösségi média ikonok és kód Gmail/Outlook számára.',
       },
       cs: {
         slug: 'generator-podpisu-emailu-zdarma',
@@ -813,12 +687,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'E-postsignatur-generator',
         description:
           'Skapa en HTML e-postsignatur med full anpassning. Färdiga layouter, sociala medier-ikoner och kod för Gmail/Outlook.',
-      },
-      da: {
-        slug: 'gratis-e-mail-signatur-generator',
-        title: 'E-mail-signatur-generator',
-        description:
-          'Opret en HTML e-mail-signatur med fuld tilpasning. Færdige layouts, sociale medie-ikoner og kode til Gmail/Outlook.',
       },
       no: {
         slug: 'gratis-e-postsignatur-generator',
@@ -889,23 +757,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Verifica il contrasto testo e sfondo secondo WCAG 2.1 AA e AAA. Correzione automatica dei colori.',
       },
-      ro: {
-        slug: 'verificator-contrast-culori',
-        title: 'Verificator contrast culori',
-        description:
-          'Verificați contrastul textului și fundalului conform WCAG 2.1 AA și AAA. Corecție automată a culorilor.',
-      },
       nl: {
         slug: 'kleurcontrast-checker',
         title: 'Kleurcontrast checker',
         description:
           'Controleer tekst- en achtergrondcontrast volgens WCAG 2.1 AA en AAA. Automatische kleurcorrectie.',
-      },
-      hu: {
-        slug: 'szinkontraszt-ellenorzo',
-        title: 'Színkontraszt ellenőrző',
-        description:
-          'Ellenőrizze a szöveg és háttér kontrasztját a WCAG 2.1 AA és AAA szerint. Automatikus színkorrekció.',
       },
       cs: {
         slug: 'kontrola-kontrastu-barev',
@@ -918,12 +774,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Färgkontrastkontroll',
         description:
           'Kontrollera text- och bakgrundskontrast enligt WCAG 2.1 AA och AAA. Automatisk färgkorrigering.',
-      },
-      da: {
-        slug: 'farvekontrastkontrol',
-        title: 'Farvekontrastkontrol',
-        description:
-          'Kontrollér tekst- og baggrundskontrast ifølge WCAG 2.1 AA og AAA. Automatisk farvekorrektion.',
       },
       no: {
         slug: 'fargekontrastsjekker',
@@ -993,23 +843,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Estrai i colori dominanti da una foto o un logo. Codici HEX e RGB pronti da copiare.',
       },
-      ro: {
-        slug: 'extractor-culori-din-imagine',
-        title: 'Extractor de culori din imagine',
-        description:
-          'Extrageți culorile dominante dintr-o fotografie sau logo. Coduri HEX și RGB gata de copiat.',
-      },
       nl: {
         slug: 'kleurextractor-uit-afbeelding',
         title: 'Kleurextractor uit afbeelding',
         description:
           'Extraheer dominante kleuren uit een foto of logo. Kant-en-klare HEX- en RGB-codes om te kopiëren.',
-      },
-      hu: {
-        slug: 'szinkinyero-kepbol',
-        title: 'Színkinyerő képből',
-        description:
-          'Nyerje ki a domináns színeket egy fényképből vagy logóból. Kész HEX és RGB kódok másolásra.',
       },
       cs: {
         slug: 'extraktor-barev-z-obrazku',
@@ -1022,12 +860,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Färgextraktor från bild',
         description:
           'Extrahera dominerande färger från ett foto eller logotyp. Färdiga HEX- och RGB-koder att kopiera.',
-      },
-      da: {
-        slug: 'farveudtraekker-fra-billede',
-        title: 'Farveudtrækker fra billede',
-        description:
-          'Udtræk dominerende farver fra et foto eller logo. Færdige HEX- og RGB-koder til kopiering.',
       },
       no: {
         slug: 'fargeutrekker-fra-bilde',
@@ -1098,23 +930,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Genera 9 palette da un colore: monocromatica, complementare, triadica e altre. Codici HEX.',
       },
-      ro: {
-        slug: 'generator-de-palete-de-culori',
-        title: 'Generator de palete de culori',
-        description:
-          'Generați 9 palete dintr-o culoare: monocromatică, complementară, triadică și altele. Coduri HEX.',
-      },
       nl: {
         slug: 'kleurpalettengenerator',
         title: 'Kleurpalettengenerator',
         description:
           'Genereer 9 paletten vanuit één kleur: monochromatisch, complementair, triadisch en meer. HEX-codes.',
-      },
-      hu: {
-        slug: 'szinpaletta-generator',
-        title: 'Színpaletta generátor',
-        description:
-          'Generáljon 9 palettát egy színből: monokromatikus, komplementer, triádikus és más. HEX kódok.',
       },
       cs: {
         slug: 'generator-barevnych-palet',
@@ -1127,12 +947,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Färgpalettgenerator',
         description:
           'Generera 9 paletter från en färg: monokromatisk, komplementär, triadisk och fler. HEX-koder.',
-      },
-      da: {
-        slug: 'farvepaletgenerator',
-        title: 'Farvepaletgenerator',
-        description:
-          'Generér 9 paletter fra én farve: monokromatisk, komplementær, triadisk og flere. HEX-koder.',
       },
       no: {
         slug: 'fargepalettgenerator',
@@ -1203,23 +1017,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Crea un codice QR per sito web, biglietto vCard o stampa. Esporta PNG e SVG, senza registrazione.',
       },
-      ro: {
-        slug: 'generator-coduri-qr-gratuit',
-        title: 'Generator de coduri QR gratuit',
-        description:
-          'Creați un cod QR pentru site web, carte de vizită vCard sau tipărire. Export PNG și SVG, fără înregistrare.',
-      },
       nl: {
         slug: 'gratis-qr-code-generator',
         title: 'Gratis QR-code generator',
         description:
           'Maak een QR-code voor website, vCard-visitekaartje of drukwerk. Export PNG en SVG, zonder registratie.',
-      },
-      hu: {
-        slug: 'ingyenes-qr-kod-generator',
-        title: 'Ingyenes QR-kód generátor',
-        description:
-          'Hozzon létre QR-kódot weboldalhoz, vCard-névjegyhez vagy nyomtatáshoz. Export PNG és SVG, regisztráció nélkül.',
       },
       cs: {
         slug: 'generator-qr-kodu-zdarma',
@@ -1232,12 +1034,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Gratis QR-kodgenerator',
         description:
           'Skapa en QR-kod för webbplats, vCard-visitkort eller utskrift. Export PNG och SVG, utan registrering.',
-      },
-      da: {
-        slug: 'gratis-qr-kode-generator',
-        title: 'Gratis QR-kode-generator',
-        description:
-          'Opret en QR-kode til hjemmeside, vCard-visitkort eller tryk. Eksport PNG og SVG, uden registrering.',
       },
       no: {
         slug: 'gratis-qr-kode-generator',
@@ -1317,12 +1113,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.',
       },
-      ro: {
-        slug: 'convertor-png-in-jpg',
-        title: 'PNG în JPG',
-        description:
-          'Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare.',
-      },
       sv: {
         slug: 'png-till-jpg-konverterare',
         title: 'PNG till JPG',
@@ -1335,23 +1125,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Μετατρέψτε αρχεία PNG σε JPG στο πρόγραμμα περιήγησης. Χωρίς όριο, χωρίς εγγραφή.',
       },
-      hu: {
-        slug: 'png-jpg-konverter',
-        title: 'PNG JPG',
-        description:
-          'PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül.',
-      },
       cs: {
         slug: 'prevodnik-png-na-jpg',
         title: 'PNG na JPG',
         description:
           'Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace.',
-      },
-      da: {
-        slug: 'png-til-jpg-konverter',
-        title: 'PNG til JPG',
-        description:
-          'Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.',
       },
       no: {
         slug: 'png-til-jpg-konverterer',
@@ -1421,12 +1199,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converteer JPG-afbeeldingen naar verliesvrij PNG. Lokale verwerking in de browser.',
       },
-      ro: {
-        slug: 'convertor-jpg-in-png',
-        title: 'JPG în PNG',
-        description:
-          'Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser.',
-      },
       sv: {
         slug: 'jpg-till-png-konverterare',
         title: 'JPG till PNG',
@@ -1439,23 +1211,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.',
       },
-      hu: {
-        slug: 'jpg-png-konverter',
-        title: 'JPG PNG',
-        description:
-          'JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.',
-      },
       cs: {
         slug: 'prevodnik-jpg-na-png',
         title: 'JPG na PNG',
         description:
           'Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.',
-      },
-      da: {
-        slug: 'jpg-til-png-konverter',
-        title: 'JPG til PNG',
-        description:
-          'Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren.',
       },
       no: {
         slug: 'jpg-til-png-konverterer',
@@ -1526,11 +1286,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converteer WebP-bestanden naar universeel compatibel JPG.',
       },
-      ro: {
-        slug: 'convertor-webp-in-jpg',
-        title: 'WebP în JPG',
-        description: 'Convertește fișiere WebP în JPG compatibil universal.',
-      },
       sv: {
         slug: 'webp-till-jpg-konverterare',
         title: 'WebP till JPG',
@@ -1541,21 +1296,10 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'WebP σε JPG',
         description: 'Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.',
       },
-      hu: {
-        slug: 'webp-jpg-konverter',
-        title: 'WebP JPG',
-        description:
-          'WebP fájlok konvertálása univerzálisan kompatibilis JPG-re.',
-      },
       cs: {
         slug: 'prevodnik-webp-na-jpg',
         title: 'WebP na JPG',
         description: 'Převeďte soubory WebP na univerzálně kompatibilní JPG.',
-      },
-      da: {
-        slug: 'webp-til-jpg-konverter',
-        title: 'WebP til JPG',
-        description: 'Konvertér WebP-filer til universelt kompatibelt JPG.',
       },
       no: {
         slug: 'webp-til-jpg-konverterer',
@@ -1624,12 +1368,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converteer WebP-afbeeldingen naar verliesvrij PNG. Lokale verwerking.',
       },
-      ro: {
-        slug: 'convertor-webp-in-png',
-        title: 'WebP în PNG',
-        description:
-          'Convertește imagini WebP în PNG fără pierderi. Conversie locală.',
-      },
       sv: {
         slug: 'webp-till-png-konverterare',
         title: 'WebP till PNG',
@@ -1642,23 +1380,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή.',
       },
-      hu: {
-        slug: 'webp-png-konverter',
-        title: 'WebP PNG',
-        description:
-          'WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás.',
-      },
       cs: {
         slug: 'prevodnik-webp-na-png',
         title: 'WebP na PNG',
         description:
           'Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.',
-      },
-      da: {
-        slug: 'webp-til-png-konverter',
-        title: 'WebP til PNG',
-        description:
-          'Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering.',
       },
       no: {
         slug: 'webp-til-png-konverterer',
@@ -1728,12 +1454,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converteer SVG-vectorafbeeldingen naar PNG. Ideaal voor documenten en social media.',
       },
-      ro: {
-        slug: 'convertor-svg-in-png',
-        title: 'SVG în PNG',
-        description:
-          'Convertește grafice vectoriale SVG în PNG. Ideal pentru documente și social media.',
-      },
       sv: {
         slug: 'svg-till-png-konverterare',
         title: 'SVG till PNG',
@@ -1746,23 +1466,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Μετατρέψτε διανυσματικά SVG σε PNG. Ιδανικό για έγγραφα και κοινωνικά δίκτυα.',
       },
-      hu: {
-        slug: 'svg-png-konverter',
-        title: 'SVG PNG',
-        description:
-          'SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.',
-      },
       cs: {
         slug: 'prevodnik-svg-na-png',
         title: 'SVG na PNG',
         description:
           'Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě.',
-      },
-      da: {
-        slug: 'svg-til-png-konverter',
-        title: 'SVG til PNG',
-        description:
-          'Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier.',
       },
       no: {
         slug: 'svg-til-png-konverterer',
@@ -1832,12 +1540,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converteer SVG-afbeeldingen naar compact JPG. Kleiner bestand, volledige compatibiliteit.',
       },
-      ro: {
-        slug: 'convertor-svg-in-jpg',
-        title: 'SVG în JPG',
-        description:
-          'Convertește grafice SVG în JPG compact. Fișier mai mic, compatibilitate totală.',
-      },
       sv: {
         slug: 'svg-till-jpg-konverterare',
         title: 'SVG till JPG',
@@ -1850,23 +1552,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.',
       },
-      hu: {
-        slug: 'svg-jpg-konverter',
-        title: 'SVG JPG',
-        description:
-          'SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás.',
-      },
       cs: {
         slug: 'prevodnik-svg-na-jpg',
         title: 'SVG na JPG',
         description:
           'Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.',
-      },
-      da: {
-        slug: 'svg-til-jpg-konverter',
-        title: 'SVG til JPG',
-        description:
-          'Konvertér SVG-grafik til kompakt JPG. Mindre fil, fuld kompatibilitet.',
       },
       no: {
         slug: 'svg-til-jpg-konverterer',
@@ -1936,12 +1626,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.',
       },
-      ro: {
-        slug: 'convertor-bmp-in-jpg',
-        title: 'BMP în JPG',
-        description:
-          'Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.',
-      },
       sv: {
         slug: 'bmp-till-jpg-konverterare',
         title: 'BMP till JPG',
@@ -1954,23 +1638,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Μετατρέψτε αρχεία BMP σε ελαφρύ JPG. Δραστική μείωση μεγέθους.',
       },
-      hu: {
-        slug: 'bmp-jpg-konverter',
-        title: 'BMP JPG',
-        description:
-          'BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.',
-      },
       cs: {
         slug: 'prevodnik-bmp-na-jpg',
         title: 'BMP na JPG',
         description:
           'Převeďte soubory BMP na lehké JPG. Drastické zmenšení velikosti.',
-      },
-      da: {
-        slug: 'bmp-til-jpg-konverter',
-        title: 'BMP til JPG',
-        description:
-          'Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion.',
       },
       no: {
         slug: 'bmp-til-jpg-konverterer',
@@ -2040,12 +1712,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converteer BMP-afbeeldingen naar verliesvrij PNG. Kwaliteit behouden, kleiner bestand.',
       },
-      ro: {
-        slug: 'convertor-bmp-in-png',
-        title: 'BMP în PNG',
-        description:
-          'Convertește imagini BMP în PNG fără pierderi. Calitate păstrată, dimensiune redusă.',
-      },
       sv: {
         slug: 'bmp-till-png-konverterare',
         title: 'BMP till PNG',
@@ -2058,23 +1724,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο.',
       },
-      hu: {
-        slug: 'bmp-png-konverter',
-        title: 'BMP PNG',
-        description:
-          'BMP képek konvertálása veszteségmentes PNG-re. Minőség megőrzése, méret csökkentése.',
-      },
       cs: {
         slug: 'prevodnik-bmp-na-png',
         title: 'BMP na PNG',
         description:
           'Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena.',
-      },
-      da: {
-        slug: 'bmp-til-png-konverter',
-        title: 'BMP til PNG',
-        description:
-          'Konvertér BMP-billeder til tabsfrit PNG. Kvalitet bevaret, størrelse reduceret.',
       },
       no: {
         slug: 'bmp-til-png-konverterer',
@@ -2144,12 +1798,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Exporteer het eerste frame van een GIF als statisch PNG. Zonder kwaliteitsverlies.',
       },
-      ro: {
-        slug: 'convertor-gif-in-png',
-        title: 'GIF în PNG',
-        description:
-          'Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate.',
-      },
       sv: {
         slug: 'gif-till-png-konverterare',
         title: 'GIF till PNG',
@@ -2162,23 +1810,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Εξαγωγή του πρώτου καρέ ενός GIF ως στατικό PNG. Χωρίς απώλεια ποιότητας.',
       },
-      hu: {
-        slug: 'gif-png-konverter',
-        title: 'GIF PNG',
-        description:
-          'Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.',
-      },
       cs: {
         slug: 'prevodnik-gif-na-png',
         title: 'GIF na PNG',
         description:
           'Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.',
-      },
-      da: {
-        slug: 'gif-til-png-konverter',
-        title: 'GIF til PNG',
-        description:
-          'Eksportér den første frame af en GIF som statisk PNG. Uden kvalitetstab.',
       },
       no: {
         slug: 'gif-til-png-konverterer',
@@ -2248,12 +1884,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Exporteer het eerste frame van een GIF als compact JPG. Kleiner bestand.',
       },
-      ro: {
-        slug: 'convertor-gif-in-jpg',
-        title: 'GIF în JPG',
-        description:
-          'Exportă primul cadru al unui GIF ca JPG compact. Fișier mai mic.',
-      },
       sv: {
         slug: 'gif-till-jpg-konverterare',
         title: 'GIF till JPG',
@@ -2266,23 +1896,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Εξαγωγή του πρώτου καρέ ενός GIF ως συμπαγές JPG. Μικρότερο αρχείο.',
       },
-      hu: {
-        slug: 'gif-jpg-konverter',
-        title: 'GIF JPG',
-        description:
-          'Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.',
-      },
       cs: {
         slug: 'prevodnik-gif-na-jpg',
         title: 'GIF na JPG',
         description:
           'Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.',
-      },
-      da: {
-        slug: 'gif-til-jpg-konverter',
-        title: 'GIF til JPG',
-        description:
-          'Eksportér den første frame af en GIF som kompakt JPG. Mindre fil.',
       },
       no: {
         slug: 'gif-til-jpg-konverterer',
@@ -2353,12 +1971,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           "Converteer JPG-foto's naar lichtgewicht WebP. Bespaar tot 35% bestandsgrootte.",
       },
-      ro: {
-        slug: 'convertor-jpg-in-webp',
-        title: 'JPG în WebP',
-        description:
-          'Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.',
-      },
       sv: {
         slug: 'jpg-till-webp-konverterare',
         title: 'JPG till WebP',
@@ -2371,23 +1983,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Μετατρέψτε φωτογραφίες JPG σε ελαφρύ WebP. Μείωση βάρους έως 35%.',
       },
-      hu: {
-        slug: 'jpg-webp-konverter',
-        title: 'JPG WebP',
-        description:
-          'JPG fotók konvertálása könnyű WebP-re. Képméret csökkentése akár 35%-kal.',
-      },
       cs: {
         slug: 'prevodnik-jpg-na-webp',
         title: 'JPG na WebP',
         description:
           'Převeďte fotky JPG na lehké WebP. Snižte váhu obrázků až o 35%.',
-      },
-      da: {
-        slug: 'jpg-til-webp-konverter',
-        title: 'JPG til WebP',
-        description:
-          'Konvertér JPG-fotos til let WebP. Spar op til 35% filstørrelse.',
       },
       no: {
         slug: 'jpg-til-webp-konverterer',
@@ -2457,12 +2057,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie.',
       },
-      ro: {
-        slug: 'convertor-png-in-webp',
-        title: 'PNG în WebP',
-        description:
-          'Convertește grafice PNG în WebP. Fișiere mai mici păstrând transparența.',
-      },
       sv: {
         slug: 'png-till-webp-konverterare',
         title: 'PNG till WebP',
@@ -2475,23 +2069,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Μετατρέψτε γραφικά PNG σε WebP. Μικρότερα αρχεία διατηρώντας τη διαφάνεια.',
       },
-      hu: {
-        slug: 'png-webp-konverter',
-        title: 'PNG WebP',
-        description:
-          'PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.',
-      },
       cs: {
         slug: 'prevodnik-png-na-webp',
         title: 'PNG na WebP',
         description:
           'Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.',
-      },
-      da: {
-        slug: 'png-til-webp-konverter',
-        title: 'PNG til WebP',
-        description:
-          'Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed.',
       },
       no: {
         slug: 'png-til-webp-konverterer',
@@ -2558,23 +2140,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti grafiche SVG in WebP leggero. Ideale per siti web e social media.',
       },
-      ro: {
-        slug: 'convertor-svg-in-webp',
-        title: 'SVG in WebP',
-        description:
-          'Convertește grafice SVG in WebP usor. Ideal pentru site-uri si retele sociale.',
-      },
       nl: {
         slug: 'svg-naar-webp-converter',
         title: 'SVG naar WebP',
         description:
           'Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media.',
-      },
-      hu: {
-        slug: 'svg-webp-konverter',
-        title: 'SVG WebP',
-        description:
-          'SVG grafika konvertálása konnyu WebP-re. Idealis weboldalakon es kozossegi mediaban.',
       },
       cs: {
         slug: 'prevodnik-svg-na-webp',
@@ -2587,12 +2157,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG till WebP',
         description:
           'Konvertera SVG-grafik till lattvikts-WebP. Idealiskt för webbplatser och sociala medier.',
-      },
-      da: {
-        slug: 'svg-til-webp-konverter',
-        title: 'SVG til WebP',
-        description:
-          'Konverter SVG-grafik til let WebP. Ideel til websites og sociale medier.',
       },
       no: {
         slug: 'svg-til-webp-konverterer',
@@ -2662,23 +2226,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Esporta il primo fotogramma GIF in WebP leggero. File più piccolo, caricamento rapido.',
       },
-      ro: {
-        slug: 'convertor-gif-in-webp',
-        title: 'GIF in WebP',
-        description:
-          'Exporta primul cadru GIF ca WebP usor. Fisier mai mic, incarcare mai rapida.',
-      },
       nl: {
         slug: 'gif-naar-webp-converter',
         title: 'GIF naar WebP',
         description:
           'Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden.',
-      },
-      hu: {
-        slug: 'gif-webp-konverter',
-        title: 'GIF WebP',
-        description:
-          'GIF elso kepkockajanak exportalasa konnyu WebP-re. Kisebb fajl, gyorsabb betoltes.',
       },
       cs: {
         slug: 'prevodnik-gif-na-webp',
@@ -2691,12 +2243,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'GIF till WebP',
         description:
           'Exportera första GIF-bildrutan som lättvikts-WebP. Mindre fil, snabbare laddning.',
-      },
-      da: {
-        slug: 'gif-til-webp-konverter',
-        title: 'GIF til WebP',
-        description:
-          'Eksporter forste GIF-frame som let WebP. Mindre fil, hurtigere indlasning.',
       },
       no: {
         slug: 'gif-til-webp-konverterer',
@@ -2766,23 +2312,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file BMP in WebP leggero. Riduzione delle dimensioni fino al 95%.',
       },
-      ro: {
-        slug: 'convertor-bmp-in-webp',
-        title: 'BMP in WebP',
-        description:
-          'Convertește fisiere BMP in WebP usor. Reducere de pana la 95%.',
-      },
       nl: {
         slug: 'bmp-naar-webp-converter',
         title: 'BMP naar WebP',
         description:
           'Converteer BMP-bestanden naar lichtgewicht WebP. Tot 95% kleiner bestandsgrootte.',
-      },
-      hu: {
-        slug: 'bmp-webp-konverter',
-        title: 'BMP WebP',
-        description:
-          'BMP fájlok konvertálása konnyu WebP-re. Akár 95%-os meretcsokkentes.',
       },
       cs: {
         slug: 'prevodnik-bmp-na-webp',
@@ -2795,12 +2329,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP till WebP',
         description:
           'Konvertera BMP-filer till lattvikts-WebP. Upp till 95% storleksminskning.',
-      },
-      da: {
-        slug: 'bmp-til-webp-konverter',
-        title: 'BMP til WebP',
-        description:
-          'Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion.',
       },
       no: {
         slug: 'bmp-til-webp-konverterer',
@@ -2870,23 +2398,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file AVIF in JPG universale. Compatibile con ogni programma e piattaforma.',
       },
-      ro: {
-        slug: 'convertor-avif-in-jpg',
-        title: 'AVIF în JPG',
-        description:
-          'Convertește fișiere AVIF în JPG universal. Compatibil cu orice program si platforma.',
-      },
       nl: {
         slug: 'avif-naar-jpg-converter',
         title: 'AVIF naar JPG',
         description:
           'Converteer AVIF-bestanden naar universeel JPG. Compatibel met elk programma en platform.',
-      },
-      hu: {
-        slug: 'avif-jpg-konverter',
-        title: 'AVIF JPG',
-        description:
-          'AVIF fájlok konvertálása univerzális JPG-re. Kompatibilis minden programmal.',
       },
       cs: {
         slug: 'prevodnik-avif-na-jpg',
@@ -2899,12 +2415,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'AVIF till JPG',
         description:
           'Konvertera AVIF-filer till universell JPG. Kompatibel med alla program och plattformar.',
-      },
-      da: {
-        slug: 'avif-til-jpg-konverter',
-        title: 'AVIF til JPG',
-        description:
-          'Konverter AVIF-filer til universel JPG. Kompatibel med alle programmer og platforme.',
       },
       no: {
         slug: 'avif-til-jpg-konverterer',
@@ -2974,23 +2484,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file AVIF in PNG lossless. Qualita e trasparenza preservate.',
       },
-      ro: {
-        slug: 'convertor-avif-in-png',
-        title: 'AVIF în PNG',
-        description:
-          'Convertește fișiere AVIF în PNG fără pierderi. Calitate si transparenta pastrate.',
-      },
       nl: {
         slug: 'avif-naar-png-converter',
         title: 'AVIF naar PNG',
         description:
           'Converteer AVIF-bestanden naar verliesvrij PNG. Volledige kwaliteit en transparantie behouden.',
-      },
-      hu: {
-        slug: 'avif-png-konverter',
-        title: 'AVIF PNG',
-        description:
-          'AVIF fájlok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese.',
       },
       cs: {
         slug: 'prevodnik-avif-na-png',
@@ -3003,12 +2501,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'AVIF till PNG',
         description:
           'Konvertera AVIF-filer till förlustfri PNG. Behall full kvalitet och transparens.',
-      },
-      da: {
-        slug: 'avif-til-png-konverter',
-        title: 'AVIF til PNG',
-        description:
-          'Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed.',
       },
       no: {
         slug: 'avif-til-png-konverterer',
@@ -3078,23 +2570,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file AVIF in WebP. Ampia compatibilità con dimensioni ridotte.',
       },
-      ro: {
-        slug: 'convertor-avif-in-webp',
-        title: 'AVIF în WebP',
-        description:
-          'Convertește fișiere AVIF în WebP. Compatibilitate larga la dimensiuni mici.',
-      },
       nl: {
         slug: 'avif-naar-webp-converter',
         title: 'AVIF naar WebP',
         description:
           'Converteer AVIF-bestanden naar WebP. Brede compatibiliteit bij klein bestandsformaat.',
-      },
-      hu: {
-        slug: 'avif-webp-konverter',
-        title: 'AVIF WebP',
-        description:
-          'AVIF fájlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel.',
       },
       cs: {
         slug: 'prevodnik-avif-na-webp',
@@ -3107,12 +2587,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'AVIF till WebP',
         description:
           'Konvertera AVIF-filer till WebP. Bred kompatibilitet vid liten filstorlek.',
-      },
-      da: {
-        slug: 'avif-til-webp-konverter',
-        title: 'AVIF til WebP',
-        description:
-          'Konverter AVIF-filer til WebP. Bred kompatibilitet ved lille filstorrelse.',
       },
       no: {
         slug: 'avif-til-webp-konverterer',
@@ -3185,23 +2659,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti foto HEIC da iPhone in JPG universale. Senza registrazione, senza upload.',
       },
-      ro: {
-        slug: 'convertor-heic-in-jpg',
-        title: 'HEIC in JPG',
-        description:
-          'Convertește fotografii HEIC de pe iPhone in JPG universal. Fara inregistrare, fără upload.',
-      },
       nl: {
         slug: 'heic-naar-jpg-converter',
         title: 'HEIC naar JPG',
         description:
           'Converteer iPhone HEIC-fotos naar universeel JPG. Zonder registratie, zonder upload.',
-      },
-      hu: {
-        slug: 'heic-jpg-konverter',
-        title: 'HEIC JPG',
-        description:
-          'iPhone HEIC fotók konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul.',
       },
       cs: {
         slug: 'prevodnik-heic-na-jpg',
@@ -3214,12 +2676,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEIC till JPG',
         description:
           'Konvertera iPhone HEIC-foton till universell JPG. Ingen registrering, ingen uppladdning.',
-      },
-      da: {
-        slug: 'heic-til-jpg-konverter',
-        title: 'HEIC til JPG',
-        description:
-          'Konverter iPhone HEIC-fotos til universel JPG. Ingen registrering, ingen upload.',
       },
       no: {
         slug: 'heic-til-jpg-konverterer',
@@ -3289,23 +2745,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti foto HEIC da iPhone in PNG lossless. Qualita e trasparenza complete.',
       },
-      ro: {
-        slug: 'convertor-heic-in-png',
-        title: 'HEIC in PNG',
-        description:
-          'Convertește fotografii HEIC de pe iPhone in PNG fără pierderi. Calitate si transparenta.',
-      },
       nl: {
         slug: 'heic-naar-png-converter',
         title: 'HEIC naar PNG',
         description:
           'Converteer iPhone HEIC-fotos naar verliesvrij PNG. Volledige kwaliteit en transparantie.',
-      },
-      hu: {
-        slug: 'heic-png-konverter',
-        title: 'HEIC PNG',
-        description:
-          'iPhone HEIC fotók konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag.',
       },
       cs: {
         slug: 'prevodnik-heic-na-png',
@@ -3318,12 +2762,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEIC till PNG',
         description:
           'Konvertera iPhone HEIC-foton till förlustfri PNG. Full kvalitet och transparens.',
-      },
-      da: {
-        slug: 'heic-til-png-konverter',
-        title: 'HEIC til PNG',
-        description:
-          'Konverter iPhone HEIC-fotos til tabsfri PNG. Fuld kvalitet og gennemsigtighed.',
       },
       no: {
         slug: 'heic-til-png-konverterer',
@@ -3393,23 +2831,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti foto HEIC da iPhone in WebP leggero. Dimensioni ridotte, caricamento rapido.',
       },
-      ro: {
-        slug: 'convertor-heic-in-webp',
-        title: 'HEIC in WebP',
-        description:
-          'Convertește fotografii HEIC de pe iPhone in WebP usor. Dimensiuni mai mici.',
-      },
       nl: {
         slug: 'heic-naar-webp-converter',
         title: 'HEIC naar WebP',
         description:
           'Converteer iPhone HEIC-fotos naar lichtgewicht WebP. Kleiner bestand, sneller laden.',
-      },
-      hu: {
-        slug: 'heic-webp-konverter',
-        title: 'HEIC WebP',
-        description:
-          'iPhone HEIC fotók konvertálása konnyu WebP-re. Kisebb meret, gyorsabb betoltes.',
       },
       cs: {
         slug: 'prevodnik-heic-na-webp',
@@ -3422,12 +2848,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEIC till WebP',
         description:
           'Konvertera iPhone HEIC-foton till lattvikts-WebP. Mindre storlek, snabbare laddning.',
-      },
-      da: {
-        slug: 'heic-til-webp-konverter',
-        title: 'HEIC til WebP',
-        description:
-          'Konverter iPhone HEIC-fotos til let WebP. Mindre storrelse, hurtigere indlasning.',
       },
       no: {
         slug: 'heic-til-webp-konverterer',
@@ -3500,23 +2920,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file TIFF in JPG compatto. Ideale per scansioni, documenti e archivi foto.',
       },
-      ro: {
-        slug: 'convertor-tiff-in-jpg',
-        title: 'TIFF in JPG',
-        description:
-          'Convertește fisiere TIFF in JPG compact. Ideal pentru scanari si arhive foto.',
-      },
       nl: {
         slug: 'tiff-naar-jpg-converter',
         title: 'TIFF naar JPG',
         description:
           'Converteer TIFF-bestanden naar compact JPG. Ideaal voor scans en fotoarchieven.',
-      },
-      hu: {
-        slug: 'tiff-jpg-konverter',
-        title: 'TIFF JPG',
-        description:
-          'TIFF fájlok konvertálása kompakt JPG-re. Idealis szkenekhez es fotoarchivumokhoz.',
       },
       cs: {
         slug: 'prevodnik-tiff-na-jpg',
@@ -3529,12 +2937,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'TIFF till JPG',
         description:
           'Konvertera TIFF-filer till kompakt JPG. Idealiskt för skanningar och fotoarkiv.',
-      },
-      da: {
-        slug: 'tiff-til-jpg-konverter',
-        title: 'TIFF til JPG',
-        description:
-          'Konverter TIFF-filer til kompakt JPG. Ideel til scanninger og fotoarkiver.',
       },
       no: {
         slug: 'tiff-til-jpg-konverterer',
@@ -3604,23 +3006,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file TIFF in PNG lossless. Preserva la qualità di scansioni e grafiche.',
       },
-      ro: {
-        slug: 'convertor-tiff-in-png',
-        title: 'TIFF in PNG',
-        description:
-          'Convertește fisiere TIFF in PNG fără pierderi. Pastreaza calitatea scanarilor.',
-      },
       nl: {
         slug: 'tiff-naar-png-converter',
         title: 'TIFF naar PNG',
         description:
           'Converteer TIFF-bestanden naar verliesvrij PNG. Behoud volledige kwaliteit van scans.',
-      },
-      hu: {
-        slug: 'tiff-png-konverter',
-        title: 'TIFF PNG',
-        description:
-          'TIFF fájlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese.',
       },
       cs: {
         slug: 'prevodnik-tiff-na-png',
@@ -3633,12 +3023,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'TIFF till PNG',
         description:
           'Konvertera TIFF-filer till förlustfri PNG. Behall full kvalitet pa skanningar.',
-      },
-      da: {
-        slug: 'tiff-til-png-konverter',
-        title: 'TIFF til PNG',
-        description:
-          'Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger.',
       },
       no: {
         slug: 'tiff-til-png-konverterer',
@@ -3708,23 +3092,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file TIFF in WebP leggero. Enorme riduzione con qualità preservata.',
       },
-      ro: {
-        slug: 'convertor-tiff-in-webp',
-        title: 'TIFF in WebP',
-        description:
-          'Convertește fisiere TIFF in WebP usor. Reducere masiva cu calitate pastrata.',
-      },
       nl: {
         slug: 'tiff-naar-webp-converter',
         title: 'TIFF naar WebP',
         description:
           'Converteer TIFF-bestanden naar lichtgewicht WebP. Enorme reductie met behoud van kwaliteit.',
-      },
-      hu: {
-        slug: 'tiff-webp-konverter',
-        title: 'TIFF WebP',
-        description:
-          'TIFF fájlok konvertálása konnyu WebP-re. Hatalmas meretcsokkentes minoseg megorzesevel.',
       },
       cs: {
         slug: 'prevodnik-tiff-na-webp',
@@ -3737,12 +3109,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'TIFF till WebP',
         description:
           'Konvertera TIFF-filer till lattvikts-WebP. Massiv storleksminskning med bevarad kvalitet.',
-      },
-      da: {
-        slug: 'tiff-til-webp-konverter',
-        title: 'TIFF til WebP',
-        description:
-          'Konverter TIFF-filer til let WebP. Massiv reduktion med bevaret kvalitet.',
       },
       no: {
         slug: 'tiff-til-webp-konverterer',
@@ -3812,23 +3178,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti foto JPG in AVIF moderno. Compressione fino al 50% migliore di JPG mantenendo la qualità.',
       },
-      ro: {
-        slug: 'convertor-jpg-in-avif',
-        title: 'JPG în AVIF',
-        description:
-          'Convertește fotografii JPG in AVIF modern. Compresie cu pana la 50% mai buna decat JPG.',
-      },
       nl: {
         slug: 'jpg-naar-avif-converter',
         title: 'JPG naar AVIF',
         description:
           "Converteer JPG-foto's naar modern AVIF. Tot 50% betere compressie dän JPG met behoud van kwaliteit.",
-      },
-      hu: {
-        slug: 'jpg-avif-konverter',
-        title: 'JPG AVIF',
-        description:
-          'JPG fotók konvertálása modern AVIF formátumra. Akár 50%-kal jobb tömörítést mint JPG.',
       },
       cs: {
         slug: 'prevodnik-jpg-na-avif',
@@ -3841,12 +3195,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JPG till AVIF',
         description:
           'Konvertera JPG-foton till modernt AVIF. Upp till 50% bättre komprimering än JPG.',
-      },
-      da: {
-        slug: 'jpg-til-avif-konverter',
-        title: 'JPG til AVIF',
-        description:
-          'Konverter JPG-fotos til moderne AVIF. Op til 50% bedre komprimering end JPG.',
       },
       no: {
         slug: 'jpg-til-avif-konverterer',
@@ -3916,23 +3264,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti grafiche PNG in AVIF con supporto trasparenza. File notevolmente più piccoli.',
       },
-      ro: {
-        slug: 'convertor-png-in-avif',
-        title: 'PNG în AVIF',
-        description:
-          'Convertește grafice PNG in AVIF cu suport transparenta. Fisiere semnificativ mai mici.',
-      },
       nl: {
         slug: 'png-naar-avif-converter',
         title: 'PNG naar AVIF',
         description:
           'Converteer PNG-afbeeldingen naar AVIF met transparantie-ondersteuning. Aanzienlijk kleinere bestanden.',
-      },
-      hu: {
-        slug: 'png-avif-konverter',
-        title: 'PNG AVIF',
-        description:
-          'PNG grafika konvertálása AVIF-re atlatszosag megtartasaval. Jelentosen kisebb fajlok.',
       },
       cs: {
         slug: 'prevodnik-png-na-avif',
@@ -3945,12 +3281,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PNG till AVIF',
         description:
           'Konvertera PNG-grafik till AVIF med transparensstod. Betydligt mindre filer.',
-      },
-      da: {
-        slug: 'png-til-avif-konverter',
-        title: 'PNG til AVIF',
-        description:
-          'Konverter PNG-grafik til AVIF med gennemsigtighedsunderstottelse. Markant mindre filer.',
       },
       no: {
         slug: 'png-til-avif-konverterer',
@@ -4020,23 +3350,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file WebP in AVIF. Compressione ancora migliore in un formato moderno.',
       },
-      ro: {
-        slug: 'convertor-webp-in-avif',
-        title: 'WebP în AVIF',
-        description:
-          'Convertește fisiere WebP in AVIF. Compresie si mai buna intr-un format modern.',
-      },
       nl: {
         slug: 'webp-naar-avif-converter',
         title: 'WebP naar AVIF',
         description:
           'Converteer WebP-bestanden naar AVIF. Nog betere compressie in een modern formaat.',
-      },
-      hu: {
-        slug: 'webp-avif-konverter',
-        title: 'WebP AVIF',
-        description:
-          'WebP fájlok konvertálása AVIF-re. Meg jobb tömörítést modern formátumban.',
       },
       cs: {
         slug: 'prevodnik-webp-na-avif',
@@ -4049,12 +3367,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'WebP till AVIF',
         description:
           'Konvertera WebP-filer till AVIF. Annu bättre komprimering i ett modernt format.',
-      },
-      da: {
-        slug: 'webp-til-avif-konverter',
-        title: 'WebP til AVIF',
-        description:
-          'Konverter WebP-filer til AVIF. Endnu bedre komprimering i et moderne format.',
       },
       no: {
         slug: 'webp-til-avif-konverterer',
@@ -4124,23 +3436,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti grafiche vettoriali SVG in formato raster AVIF compatto.',
       },
-      ro: {
-        slug: 'convertor-svg-in-avif',
-        title: 'SVG în AVIF',
-        description:
-          'Convertește grafice vectoriale SVG in format raster AVIF compact.',
-      },
       nl: {
         slug: 'svg-naar-avif-converter',
         title: 'SVG naar AVIF',
         description:
           'Converteer vector SVG-afbeeldingen naar compact AVIF-rasterformaat.',
-      },
-      hu: {
-        slug: 'svg-avif-konverter',
-        title: 'SVG AVIF',
-        description:
-          'Vektor SVG grafika konvertálása kompakt AVIF raszter formátumra.',
       },
       cs: {
         slug: 'prevodnik-svg-na-avif',
@@ -4153,12 +3453,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG till AVIF',
         description:
           'Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat.',
-      },
-      da: {
-        slug: 'svg-til-avif-konverter',
-        title: 'SVG til AVIF',
-        description:
-          'Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat.',
       },
       no: {
         slug: 'svg-til-avif-konverterer',
@@ -4226,23 +3520,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP in AVIF',
         description: 'Converti file BMP non compressi in AVIF ultracompatto.',
       },
-      ro: {
-        slug: 'convertor-bmp-in-avif',
-        title: 'BMP în AVIF',
-        description:
-          'Convertește fișiere BMP necomprimate în AVIF ultracompact.',
-      },
       nl: {
         slug: 'bmp-naar-avif-converter',
         title: 'BMP naar AVIF',
         description:
           'Converteer ongecomprimeerde BMP-bestanden naar ultracompact AVIF.',
-      },
-      hu: {
-        slug: 'bmp-avif-konverter',
-        title: 'BMP AVIF',
-        description:
-          'Tömörítetlen BMP fájlok konvertálása ultrakompakt AVIF-re.',
       },
       cs: {
         slug: 'prevodnik-bmp-na-avif',
@@ -4255,11 +3537,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP till AVIF',
         description:
           'Konvertera okomprimerade BMP-filer till ultrakompakt AVIF.',
-      },
-      da: {
-        slug: 'bmp-til-avif-konverter',
-        title: 'BMP til AVIF',
-        description: 'Konverter ukomprimerede BMP-filer til ultrakompakt AVIF.',
       },
       no: {
         slug: 'bmp-til-avif-konverterer',
@@ -4327,23 +3604,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti il primo fotogramma GIF in immagine AVIF statica con compressione eccellente.',
       },
-      ro: {
-        slug: 'convertor-gif-in-avif',
-        title: 'GIF în AVIF',
-        description:
-          'Convertește primul cadru GIF in imagine AVIF statica cu compresie excelenta.',
-      },
       nl: {
         slug: 'gif-naar-avif-converter',
         title: 'GIF naar AVIF',
         description:
           'Converteer het eerste GIF-frame naar statisch AVIF-beeld met uitstekende compressie.',
-      },
-      hu: {
-        slug: 'gif-avif-konverter',
-        title: 'GIF AVIF',
-        description:
-          'GIF elso kepkocka konvertálása statikus AVIF keppe kivaloan tömörítést.',
       },
       cs: {
         slug: 'prevodnik-gif-na-avif',
@@ -4356,12 +3621,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'GIF till AVIF',
         description:
           'Konvertera första GIF-bildrutan till statisk AVIF-bild med utmärkt komprimering.',
-      },
-      da: {
-        slug: 'gif-til-avif-konverter',
-        title: 'GIF til AVIF',
-        description:
-          'Konverter forste GIF-billede til statisk AVIF-billede med fremragende komprimering.',
       },
       no: {
         slug: 'gif-til-avif-konverterer',
@@ -4426,21 +3685,10 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEIC in AVIF',
         description: "Converti foto HEIC dell'iPhone in formato AVIF moderno.",
       },
-      ro: {
-        slug: 'convertor-heic-in-avif',
-        title: 'HEIC în AVIF',
-        description:
-          'Convertește fotografii HEIC de pe iPhone in format AVIF modern.',
-      },
       nl: {
         slug: 'heic-naar-avif-converter',
         title: 'HEIC naar AVIF',
         description: "Converteer iPhone HEIC-foto's naar modern AVIF-formaat.",
-      },
-      hu: {
-        slug: 'heic-avif-konverter',
-        title: 'HEIC AVIF',
-        description: 'iPhone HEIC fotók konvertálása modern AVIF formátumra.',
       },
       cs: {
         slug: 'prevodnik-heic-na-avif',
@@ -4451,11 +3699,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'heic-till-avif-konverterare',
         title: 'HEIC till AVIF',
         description: 'Konvertera iPhone HEIC-foton till modernt AVIF-format.',
-      },
-      da: {
-        slug: 'heic-til-avif-konverter',
-        title: 'HEIC til AVIF',
-        description: 'Konverter iPhone HEIC-fotos til moderne AVIF-format.',
       },
       no: {
         slug: 'heic-til-avif-konverterer',
@@ -4523,23 +3766,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file TIFF in AVIF moderno. Riduzione massiva delle dimensioni del file.',
       },
-      ro: {
-        slug: 'convertor-tiff-in-avif',
-        title: 'TIFF în AVIF',
-        description:
-          'Convertește fisiere TIFF in AVIF modern. Reducere masiva a dimensiunii fisierului.',
-      },
       nl: {
         slug: 'tiff-naar-avif-converter',
         title: 'TIFF naar AVIF',
         description:
           'Converteer TIFF-bestanden naar modern AVIF. Enorme bestandsgrootte-reductie.',
-      },
-      hu: {
-        slug: 'tiff-avif-konverter',
-        title: 'TIFF AVIF',
-        description:
-          'TIFF fájlok konvertálása modern AVIF-re. Hatalmas fajlmeret csokkenes.',
       },
       cs: {
         slug: 'prevodnik-tiff-na-avif',
@@ -4552,12 +3783,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'TIFF till AVIF',
         description:
           'Konvertera TIFF-filer till modernt AVIF. Massiv filstorleksreducering.',
-      },
-      da: {
-        slug: 'tiff-til-avif-konverter',
-        title: 'TIFF til AVIF',
-        description:
-          'Konverter TIFF-filer til moderne AVIF. Massiv filstorrelsesreduktion.',
       },
       no: {
         slug: 'tiff-til-avif-konverterer',
@@ -4627,23 +3852,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti foto JPG in formato GIF. Perfetto per grafiche semplici e icone.',
       },
-      ro: {
-        slug: 'convertor-jpg-in-gif',
-        title: 'JPG în GIF',
-        description:
-          'Convertește fotografii JPG in format GIF. Perfect pentru grafice simple si pictograme.',
-      },
       nl: {
         slug: 'jpg-naar-gif-converter',
         title: 'JPG naar GIF',
         description:
           "Converteer JPG-foto's naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen.",
-      },
-      hu: {
-        slug: 'jpg-gif-konverter',
-        title: 'JPG GIF',
-        description:
-          'JPG fotók konvertálása GIF formátumra. Tökéletes egyszerű grafikákhoz es ikonokhoz.',
       },
       cs: {
         slug: 'prevodnik-jpg-na-gif',
@@ -4656,12 +3869,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JPG till GIF',
         description:
           'Konvertera JPG-foton till GIF-format. Perfekt för enkel grafik och ikoner.',
-      },
-      da: {
-        slug: 'jpg-til-gif-konverter',
-        title: 'JPG til GIF',
-        description:
-          'Konverter JPG-fotos til GIF-format. Perfekt til simpel grafik og ikoner.',
       },
       no: {
         slug: 'jpg-til-gif-konverterer',
@@ -4731,23 +3938,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti grafiche PNG in GIF. Ideale per icone semplici e grafiche.',
       },
-      ro: {
-        slug: 'convertor-png-in-gif',
-        title: 'PNG în GIF',
-        description:
-          'Convertește grafice PNG in GIF. Ideal pentru pictograme simple si grafice.',
-      },
       nl: {
         slug: 'png-naar-gif-converter',
         title: 'PNG naar GIF',
         description:
           'Converteer PNG-afbeeldingen naar GIF. Ideaal voor eenvoudige iconen en afbeeldingen.',
-      },
-      hu: {
-        slug: 'png-gif-konverter',
-        title: 'PNG GIF',
-        description:
-          'PNG grafika konvertálása GIF-re. Idealis egyszerű ikonokhoz es grafikákhoz.',
       },
       cs: {
         slug: 'prevodnik-png-na-gif',
@@ -4760,12 +3955,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PNG till GIF',
         description:
           'Konvertera PNG-grafik till GIF. Idealiskt för enkla ikoner och grafik.',
-      },
-      da: {
-        slug: 'png-til-gif-konverter',
-        title: 'PNG til GIF',
-        description:
-          'Konverter PNG-grafik til GIF. Ideel til simple ikoner og grafik.',
       },
       no: {
         slug: 'png-til-gif-konverterer',
@@ -4835,23 +4024,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti immagini WebP in formato GIF per massima compatibilità.',
       },
-      ro: {
-        slug: 'convertor-webp-in-gif',
-        title: 'WebP în GIF',
-        description:
-          'Convertește imagini WebP in format GIF pentru compatibilitate maxima.',
-      },
       nl: {
         slug: 'webp-naar-gif-converter',
         title: 'WebP naar GIF',
         description:
           'Converteer WebP-afbeeldingen naar GIF-formaat voor maximale compatibiliteit.',
-      },
-      hu: {
-        slug: 'webp-gif-konverter',
-        title: 'WebP GIF',
-        description:
-          'WebP kepek konvertálása GIF formátumra maximalis kompatibilitassal.',
       },
       cs: {
         slug: 'prevodnik-webp-na-gif',
@@ -4864,12 +4041,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'WebP till GIF',
         description:
           'Konvertera WebP-bilder till GIF-format för maximal kompatibilitet.',
-      },
-      da: {
-        slug: 'webp-til-gif-konverter',
-        title: 'WebP til GIF',
-        description:
-          'Konverter WebP-billeder til GIF-format for maksimal kompatibilitet.',
       },
       no: {
         slug: 'webp-til-gif-konverterer',
@@ -4934,21 +4105,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG in GIF',
         description: 'Converti grafiche vettoriali SVG in formato raster GIF.',
       },
-      ro: {
-        slug: 'convertor-svg-in-gif',
-        title: 'SVG în GIF',
-        description: 'Convertește grafice vectoriale SVG in format raster GIF.',
-      },
       nl: {
         slug: 'svg-naar-gif-converter',
         title: 'SVG naar GIF',
         description:
           'Converteer vector SVG-afbeeldingen naar GIF-rasterformaat.',
-      },
-      hu: {
-        slug: 'svg-gif-konverter',
-        title: 'SVG GIF',
-        description: 'Vektor SVG grafika konvertálása GIF raszter formátumra.',
       },
       cs: {
         slug: 'prevodnik-svg-na-gif',
@@ -4959,11 +4120,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'svg-till-gif-konverterare',
         title: 'SVG till GIF',
         description: 'Konvertera vektor-SVG-grafik till GIF-rasterformat.',
-      },
-      da: {
-        slug: 'svg-til-gif-konverter',
-        title: 'SVG til GIF',
-        description: 'Konverter vektor-SVG-grafik til GIF-rasterformat.',
       },
       no: {
         slug: 'svg-til-gif-konverterer',
@@ -5025,21 +4181,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP in GIF',
         description: 'Converti file BMP non compressi in GIF leggero.',
       },
-      ro: {
-        slug: 'convertor-bmp-in-gif',
-        title: 'BMP în GIF',
-        description: 'Convertește fișiere BMP necomprimate în GIF usor.',
-      },
       nl: {
         slug: 'bmp-naar-gif-converter',
         title: 'BMP naar GIF',
         description:
           'Converteer ongecomprimeerde BMP-bestanden naar lichtgewicht GIF.',
-      },
-      hu: {
-        slug: 'bmp-gif-konverter',
-        title: 'BMP GIF',
-        description: 'Tömörítetlen BMP fájlok konvertálása konnyu GIF-re.',
       },
       cs: {
         slug: 'prevodnik-bmp-na-gif',
@@ -5050,11 +4196,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'bmp-till-gif-konverterare',
         title: 'BMP till GIF',
         description: 'Konvertera okomprimerade BMP-filer till lattvikts-GIF.',
-      },
-      da: {
-        slug: 'bmp-til-gif-konverter',
-        title: 'BMP til GIF',
-        description: 'Konverter ukomprimerede BMP-filer til let GIF.',
       },
       no: {
         slug: 'bmp-til-gif-konverterer',
@@ -5121,23 +4262,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti foto JPG in TIFF lossless. Per stampa e archiviazione.',
       },
-      ro: {
-        slug: 'convertor-jpg-in-tiff',
-        title: 'JPG în TIFF',
-        description:
-          'Convertește fotografii JPG in TIFF fără pierderi. Pentru tiparire si arhivare.',
-      },
       nl: {
         slug: 'jpg-naar-tiff-converter',
         title: 'JPG naar TIFF',
         description:
           "Converteer JPG-foto's naar lossless TIFF. Voor afdrukken en archivering.",
-      },
-      hu: {
-        slug: 'jpg-tiff-konverter',
-        title: 'JPG TIFF',
-        description:
-          'JPG fotók konvertálása veszteségmentes TIFF-re. Nyomtatáshoz es archiváláshoz.',
       },
       cs: {
         slug: 'prevodnik-jpg-na-tiff',
@@ -5150,12 +4279,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JPG till TIFF',
         description:
           'Konvertera JPG-foton till förlustfritt TIFF. For utskrift och arkivering.',
-      },
-      da: {
-        slug: 'jpg-til-tiff-konverter',
-        title: 'JPG til TIFF',
-        description:
-          'Konverter JPG-fotos til tabsfrit TIFF. Til udskrivning og arkivering.',
       },
       no: {
         slug: 'jpg-til-tiff-konverterer',
@@ -5220,22 +4343,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PNG in TIFF',
         description: 'Converti grafiche PNG in formato TIFF professionale.',
       },
-      ro: {
-        slug: 'convertor-png-in-tiff',
-        title: 'PNG în TIFF',
-        description: 'Convertește grafice PNG in format TIFF profesional.',
-      },
       nl: {
         slug: 'png-naar-tiff-converter',
         title: 'PNG naar TIFF',
         description:
           'Converteer PNG-afbeeldingen naar professioneel TIFF-formaat.',
-      },
-      hu: {
-        slug: 'png-tiff-konverter',
-        title: 'PNG TIFF',
-        description:
-          'PNG grafika konvertálása professzionális TIFF formátumra.',
       },
       cs: {
         slug: 'prevodnik-png-na-tiff',
@@ -5246,11 +4358,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'png-till-tiff-konverterare',
         title: 'PNG till TIFF',
         description: 'Konvertera PNG-grafik till professionellt TIFF-format.',
-      },
-      da: {
-        slug: 'png-til-tiff-konverter',
-        title: 'PNG til TIFF',
-        description: 'Konverter PNG-grafik til professionelt TIFF-format.',
       },
       no: {
         slug: 'png-til-tiff-konverterer',
@@ -5317,23 +4424,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti immagini WebP in TIFF professionale per stampa e archiviazione.',
       },
-      ro: {
-        slug: 'convertor-webp-in-tiff',
-        title: 'WebP în TIFF',
-        description:
-          'Convertește imagini WebP in TIFF profesional pentru tiparire si arhivare.',
-      },
       nl: {
         slug: 'webp-naar-tiff-converter',
         title: 'WebP naar TIFF',
         description:
           'Converteer WebP-afbeeldingen naar professioneel TIFF voor afdrukken en archivering.',
-      },
-      hu: {
-        slug: 'webp-tiff-konverter',
-        title: 'WebP TIFF',
-        description:
-          'WebP kepek konvertálása professzionális TIFF-re nyomtatashoz es archiváláshoz.',
       },
       cs: {
         slug: 'prevodnik-webp-na-tiff',
@@ -5346,12 +4441,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'WebP till TIFF',
         description:
           'Konvertera WebP-bilder till professionellt TIFF för utskrift och arkivering.',
-      },
-      da: {
-        slug: 'webp-til-tiff-konverter',
-        title: 'WebP til TIFF',
-        description:
-          'Konverter WebP-billeder til professionelt TIFF til udskrivning og arkivering.',
       },
       no: {
         slug: 'webp-til-tiff-konverterer',
@@ -5420,23 +4509,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti grafiche vettoriali SVG in raster TIFF di alta qualità.',
       },
-      ro: {
-        slug: 'convertor-svg-in-tiff',
-        title: 'SVG în TIFF',
-        description:
-          'Convertește grafice vectoriale SVG in raster TIFF de inalta calitate.',
-      },
       nl: {
         slug: 'svg-naar-tiff-converter',
         title: 'SVG naar TIFF',
         description:
           'Converteer vector SVG-afbeeldingen naar hoogwaardig TIFF-raster.',
-      },
-      hu: {
-        slug: 'svg-tiff-konverter',
-        title: 'SVG TIFF',
-        description:
-          'Vektor SVG grafika konvertálása kiváló minosegu TIFF raszterre.',
       },
       cs: {
         slug: 'prevodnik-svg-na-tiff',
@@ -5449,12 +4526,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG till TIFF',
         description:
           'Konvertera vektor-SVG-grafik till hogkvalitativt TIFF-raster.',
-      },
-      da: {
-        slug: 'svg-til-tiff-konverter',
-        title: 'SVG til TIFF',
-        description:
-          'Konverter vektor-SVG-grafik til hojkvalitets TIFF-raster.',
       },
       no: {
         slug: 'svg-til-tiff-konverterer',
@@ -5524,23 +4595,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file BMP in formato TIFF professionale per la stampa.',
       },
-      ro: {
-        slug: 'convertor-bmp-in-tiff',
-        title: 'BMP în TIFF',
-        description:
-          'Convertește fisiere BMP in format TIFF profesional pentru tiparire.',
-      },
       nl: {
         slug: 'bmp-naar-tiff-converter',
         title: 'BMP naar TIFF',
         description:
           'Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken.',
-      },
-      hu: {
-        slug: 'bmp-tiff-konverter',
-        title: 'BMP TIFF',
-        description:
-          'BMP fájlok konvertálása professzionális TIFF formátumra nyomtatashoz.',
       },
       cs: {
         slug: 'prevodnik-bmp-na-tiff',
@@ -5553,12 +4612,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP till TIFF',
         description:
           'Konvertera BMP-filer till professionellt TIFF-format för utskrift.',
-      },
-      da: {
-        slug: 'bmp-til-tiff-konverter',
-        title: 'BMP til TIFF',
-        description:
-          'Konverter BMP-filer til professionelt TIFF-format til udskrivning.',
       },
       no: {
         slug: 'bmp-til-tiff-konverterer',
@@ -5629,23 +4682,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti file AVIF in formato TIFF. Gratuito, privato e illimitato.',
       },
-      ro: {
-        slug: 'convertor-avif-in-tiff',
-        title: 'AVIF în TIFF',
-        description:
-          'Convertește fișiere AVIF în format TIFF. Gratuit, privat și nelimitat.',
-      },
       nl: {
         slug: 'avif-naar-tiff-converter',
         title: 'AVIF naar TIFF',
         description:
           'Converteer AVIF-bestanden naar TIFF-formaat. Gratis, privé en onbeperkt.',
-      },
-      hu: {
-        slug: 'avif-tiff-konverter',
-        title: 'AVIF TIFF',
-        description:
-          'AVIF fájlok konvertálása TIFF formátumba. Ingyenes, privát, korlátlan.',
       },
       cs: {
         slug: 'prevodnik-avif-na-tiff',
@@ -5658,12 +4699,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'AVIF till TIFF',
         description:
           'Konvertera AVIF-filer till TIFF-format. Gratis, privat och obegränsat.',
-      },
-      da: {
-        slug: 'avif-til-tiff-konverter',
-        title: 'AVIF til TIFF',
-        description:
-          'Konverter AVIF-filer til TIFF-format. Gratis, privat og ubegrænset.',
       },
       no: {
         slug: 'avif-til-tiff-konverterer',
@@ -5732,23 +4767,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           "Converti foto HEIC dell'iPhone in formato TIFF professionale.",
       },
-      ro: {
-        slug: 'convertor-heic-in-tiff',
-        title: 'HEIC în TIFF',
-        description:
-          'Convertește fotografii HEIC de pe iPhone in format TIFF profesional.',
-      },
       nl: {
         slug: 'heic-naar-tiff-converter',
         title: 'HEIC naar TIFF',
         description:
           "Converteer iPhone HEIC-foto's naar professioneel TIFF-formaat.",
-      },
-      hu: {
-        slug: 'heic-tiff-konverter',
-        title: 'HEIC TIFF',
-        description:
-          'iPhone HEIC fotók konvertálása professzionális TIFF formátumra.',
       },
       cs: {
         slug: 'prevodnik-heic-na-tiff',
@@ -5761,12 +4784,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEIC till TIFF',
         description:
           'Konvertera iPhone HEIC-foton till professionellt TIFF-format.',
-      },
-      da: {
-        slug: 'heic-til-tiff-konverter',
-        title: 'HEIC til TIFF',
-        description:
-          'Konverter iPhone HEIC-fotos til professionelt TIFF-format.',
       },
       no: {
         slug: 'heic-til-tiff-konverterer',
@@ -5839,23 +4856,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti immagini JPG in documenti PDF. Combina più file in un unico PDF. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-jpg-in-pdf',
-        title: 'JPG în PDF',
-        description:
-          'Convertește imagini JPG în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.',
-      },
       nl: {
         slug: 'jpg-naar-pdf-converter',
         title: 'JPG naar PDF',
         description:
           'Converteer JPG-afbeeldingen naar PDF-documenten. Combineer meerdere bestanden in één PDF. Gratis.',
-      },
-      hu: {
-        slug: 'jpg-pdf-konverter',
-        title: 'JPG PDF',
-        description:
-          'JPG képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-jpg-na-pdf',
@@ -5868,12 +4873,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JPG till PDF',
         description:
           'Konvertera JPG-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
-      },
-      da: {
-        slug: 'jpg-til-pdf-konverter',
-        title: 'JPG til PDF',
-        description:
-          'Konverter JPG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
       },
       no: {
         slug: 'jpg-til-pdf-konverterer',
@@ -5944,23 +4943,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti immagini PNG in documenti PDF. Combina più file in un unico PDF. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-png-in-pdf',
-        title: 'PNG în PDF',
-        description:
-          'Convertește imagini PNG în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.',
-      },
       nl: {
         slug: 'png-naar-pdf-converter',
         title: 'PNG naar PDF',
         description:
           'Converteer PNG-afbeeldingen naar PDF-documenten. Combineer meerdere bestanden in één PDF. Gratis.',
-      },
-      hu: {
-        slug: 'png-pdf-konverter',
-        title: 'PNG PDF',
-        description:
-          'PNG képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-png-na-pdf',
@@ -5973,12 +4960,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PNG till PDF',
         description:
           'Konvertera PNG-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
-      },
-      da: {
-        slug: 'png-til-pdf-konverter',
-        title: 'PNG til PDF',
-        description:
-          'Konverter PNG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
       },
       no: {
         slug: 'png-til-pdf-konverterer',
@@ -6049,23 +5030,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti immagini WebP in documenti PDF. Combina più file in un unico PDF. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-webp-in-pdf',
-        title: 'WebP în PDF',
-        description:
-          'Convertește imagini WebP în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.',
-      },
       nl: {
         slug: 'webp-naar-pdf-converter',
         title: 'WebP naar PDF',
         description:
           'Converteer WebP-afbeeldingen naar PDF-documenten. Combineer meerdere bestanden in één PDF. Gratis.',
-      },
-      hu: {
-        slug: 'webp-pdf-konverter',
-        title: 'WebP PDF',
-        description:
-          'WebP képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-webp-na-pdf',
@@ -6078,12 +5047,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'WebP till PDF',
         description:
           'Konvertera WebP-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
-      },
-      da: {
-        slug: 'webp-til-pdf-konverter',
-        title: 'WebP til PDF',
-        description:
-          'Konverter WebP-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
       },
       no: {
         slug: 'webp-til-pdf-konverterer',
@@ -6154,23 +5117,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti immagini HEIC in documenti PDF. Combina più file in un unico PDF. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-heic-in-pdf',
-        title: 'HEIC în PDF',
-        description:
-          'Convertește imagini HEIC în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.',
-      },
       nl: {
         slug: 'heic-naar-pdf-converter',
         title: 'HEIC naar PDF',
         description:
           'Converteer HEIC-afbeeldingen naar PDF-documenten. Combineer meerdere bestanden in één PDF. Gratis.',
-      },
-      hu: {
-        slug: 'heic-pdf-konverter',
-        title: 'HEIC PDF',
-        description:
-          'HEIC képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-heic-na-pdf',
@@ -6183,12 +5134,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEIC till PDF',
         description:
           'Konvertera HEIC-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
-      },
-      da: {
-        slug: 'heic-til-pdf-konverter',
-        title: 'HEIC til PDF',
-        description:
-          'Konverter HEIC-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
       },
       no: {
         slug: 'heic-til-pdf-konverterer',
@@ -6259,23 +5204,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti immagini BMP in documenti PDF. Combina più file in un unico PDF. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-bmp-in-pdf',
-        title: 'BMP în PDF',
-        description:
-          'Convertește imagini BMP în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.',
-      },
       nl: {
         slug: 'bmp-naar-pdf-converter',
         title: 'BMP naar PDF',
         description:
           'Converteer BMP-afbeeldingen naar PDF-documenten. Combineer meerdere bestanden in één PDF. Gratis.',
-      },
-      hu: {
-        slug: 'bmp-pdf-konverter',
-        title: 'BMP PDF',
-        description:
-          'BMP képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-bmp-na-pdf',
@@ -6288,12 +5221,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP till PDF',
         description:
           'Konvertera BMP-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
-      },
-      da: {
-        slug: 'bmp-til-pdf-konverter',
-        title: 'BMP til PDF',
-        description:
-          'Konverter BMP-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
       },
       no: {
         slug: 'bmp-til-pdf-konverterer',
@@ -6364,23 +5291,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti immagini TIFF in documenti PDF. Combina più file in un unico PDF. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-tiff-in-pdf',
-        title: 'TIFF în PDF',
-        description:
-          'Convertește imagini TIFF în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.',
-      },
       nl: {
         slug: 'tiff-naar-pdf-converter',
         title: 'TIFF naar PDF',
         description:
           'Converteer TIFF-afbeeldingen naar PDF-documenten. Combineer meerdere bestanden in één PDF. Gratis.',
-      },
-      hu: {
-        slug: 'tiff-pdf-konverter',
-        title: 'TIFF PDF',
-        description:
-          'TIFF képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-tiff-na-pdf',
@@ -6393,12 +5308,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'TIFF till PDF',
         description:
           'Konvertera TIFF-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
-      },
-      da: {
-        slug: 'tiff-til-pdf-konverter',
-        title: 'TIFF til PDF',
-        description:
-          'Konverter TIFF-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
       },
       no: {
         slug: 'tiff-til-pdf-konverterer',
@@ -6469,23 +5378,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti immagini SVG in documenti PDF. Combina più file in un unico PDF. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-svg-in-pdf',
-        title: 'SVG în PDF',
-        description:
-          'Convertește imagini SVG în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.',
-      },
       nl: {
         slug: 'svg-naar-pdf-converter',
         title: 'SVG naar PDF',
         description:
           'Converteer SVG-afbeeldingen naar PDF-documenten. Combineer meerdere bestanden in één PDF. Gratis.',
-      },
-      hu: {
-        slug: 'svg-pdf-konverter',
-        title: 'SVG PDF',
-        description:
-          'SVG képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-svg-na-pdf',
@@ -6498,12 +5395,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG till PDF',
         description:
           'Konvertera SVG-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
-      },
-      da: {
-        slug: 'svg-til-pdf-konverter',
-        title: 'SVG til PDF',
-        description:
-          'Konverter SVG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
       },
       no: {
         slug: 'svg-til-pdf-konverterer',
@@ -6577,23 +5468,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti pagine PDF in immagini JPG. Alta qualità, senza limiti. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-pdf-in-jpg',
-        title: 'PDF în JPG',
-        description:
-          'Convertește pagini PDF în imagini JPG. Calitate înaltă, fără limite. Gratuit.',
-      },
       nl: {
         slug: 'pdf-naar-jpg-converter',
         title: 'PDF naar JPG',
         description:
           "Converteer PDF-pagina's naar JPG-afbeeldingen. Hoge kwaliteit, geen limieten. Gratis.",
-      },
-      hu: {
-        slug: 'pdf-jpg-konverter',
-        title: 'PDF JPG',
-        description:
-          'PDF oldalak konvertálása JPG képekké. Kiváló minőség, korlátok nélkül. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-pdf-na-jpg',
@@ -6606,12 +5485,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PDF till JPG',
         description:
           'Konvertera PDF-sidor till JPG-bilder. Hög kvalitet, inga begränsningar. Gratis.',
-      },
-      da: {
-        slug: 'pdf-til-jpg-konverter',
-        title: 'PDF til JPG',
-        description:
-          'Konverter PDF-sider til JPG-billeder. Høj kvalitet, ingen begrænsninger. Gratis.',
       },
       no: {
         slug: 'pdf-til-jpg-konverterer',
@@ -6682,23 +5555,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti pagine PDF in immagini PNG. Alta qualità, senza limiti. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-pdf-in-png',
-        title: 'PDF în PNG',
-        description:
-          'Convertește pagini PDF în imagini PNG. Calitate înaltă, fără limite. Gratuit.',
-      },
       nl: {
         slug: 'pdf-naar-png-converter',
         title: 'PDF naar PNG',
         description:
           "Converteer PDF-pagina's naar PNG-afbeeldingen. Hoge kwaliteit, geen limieten. Gratis.",
-      },
-      hu: {
-        slug: 'pdf-png-konverter',
-        title: 'PDF PNG',
-        description:
-          'PDF oldalak konvertálása PNG képekké. Kiváló minőség, korlátok nélkül. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-pdf-na-png',
@@ -6711,12 +5572,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PDF till PNG',
         description:
           'Konvertera PDF-sidor till PNG-bilder. Hög kvalitet, inga begränsningar. Gratis.',
-      },
-      da: {
-        slug: 'pdf-til-png-konverter',
-        title: 'PDF til PNG',
-        description:
-          'Konverter PDF-sider til PNG-billeder. Høj kvalitet, ingen begrænsninger. Gratis.',
       },
       no: {
         slug: 'pdf-til-png-konverterer',
@@ -6787,23 +5642,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti pagine PDF in immagini WebP. Alta qualità, senza limiti. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-pdf-in-webp',
-        title: 'PDF în WebP',
-        description:
-          'Convertește pagini PDF în imagini WebP. Calitate înaltă, fără limite. Gratuit.',
-      },
       nl: {
         slug: 'pdf-naar-webp-converter',
         title: 'PDF naar WebP',
         description:
           "Converteer PDF-pagina's naar WebP-afbeeldingen. Hoge kwaliteit, geen limieten. Gratis.",
-      },
-      hu: {
-        slug: 'pdf-webp-konverter',
-        title: 'PDF WebP',
-        description:
-          'PDF oldalak konvertálása WebP képekké. Kiváló minőség, korlátok nélkül. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-pdf-na-webp',
@@ -6816,12 +5659,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PDF till WebP',
         description:
           'Konvertera PDF-sidor till WebP-bilder. Hög kvalitet, inga begränsningar. Gratis.',
-      },
-      da: {
-        slug: 'pdf-til-webp-konverter',
-        title: 'PDF til WebP',
-        description:
-          'Konverter PDF-sider til WebP-billeder. Høj kvalitet, ingen begrænsninger. Gratis.',
       },
       no: {
         slug: 'pdf-til-webp-konverterer',
@@ -6895,23 +5732,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti CSV in formato JSON. Analisi e formattazione automatiche. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-csv-in-json',
-        title: 'CSV în JSON',
-        description:
-          'Convertește CSV în format JSON. Parsare și formatare automată. Gratuit.',
-      },
       nl: {
         slug: 'csv-naar-json-converter',
         title: 'CSV naar JSON',
         description:
           'Converteer CSV naar JSON-formaat. Automatisch parsen en formatteren. Gratis.',
-      },
-      hu: {
-        slug: 'csv-json-konverter',
-        title: 'CSV JSON',
-        description:
-          'CSV konvertálása JSON formátumba. Automatikus elemzés és formázás. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-csv-na-json',
@@ -6924,12 +5749,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'CSV till JSON',
         description:
           'Konvertera CSV till JSON-format. Automatisk parsning och formatering. Gratis.',
-      },
-      da: {
-        slug: 'csv-til-json-konverter',
-        title: 'CSV til JSON',
-        description:
-          'Konverter CSV til JSON-format. Automatisk parsing og formatering. Gratis.',
       },
       no: {
         slug: 'csv-til-json-konverterer',
@@ -7000,23 +5819,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti JSON in formato CSV. Analisi e formattazione automatiche. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-json-in-csv',
-        title: 'JSON în CSV',
-        description:
-          'Convertește JSON în format CSV. Parsare și formatare automată. Gratuit.',
-      },
       nl: {
         slug: 'json-naar-csv-converter',
         title: 'JSON naar CSV',
         description:
           'Converteer JSON naar CSV-formaat. Automatisch parsen en formatteren. Gratis.',
-      },
-      hu: {
-        slug: 'json-csv-konverter',
-        title: 'JSON CSV',
-        description:
-          'JSON konvertálása CSV formátumba. Automatikus elemzés és formázás. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-json-na-csv',
@@ -7029,12 +5836,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JSON till CSV',
         description:
           'Konvertera JSON till CSV-format. Automatisk parsning och formatering. Gratis.',
-      },
-      da: {
-        slug: 'json-til-csv-konverter',
-        title: 'JSON til CSV',
-        description:
-          'Konverter JSON til CSV-format. Automatisk parsing og formatering. Gratis.',
       },
       no: {
         slug: 'json-til-csv-konverterer',
@@ -7105,23 +5906,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti XML in formato JSON. Analisi e formattazione automatiche. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-xml-in-json',
-        title: 'XML în JSON',
-        description:
-          'Convertește XML în format JSON. Parsare și formatare automată. Gratuit.',
-      },
       nl: {
         slug: 'xml-naar-json-converter',
         title: 'XML naar JSON',
         description:
           'Converteer XML naar JSON-formaat. Automatisch parsen en formatteren. Gratis.',
-      },
-      hu: {
-        slug: 'xml-json-konverter',
-        title: 'XML JSON',
-        description:
-          'XML konvertálása JSON formátumba. Automatikus elemzés és formázás. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-xml-na-json',
@@ -7134,12 +5923,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'XML till JSON',
         description:
           'Konvertera XML till JSON-format. Automatisk parsning och formatering. Gratis.',
-      },
-      da: {
-        slug: 'xml-til-json-konverter',
-        title: 'XML til JSON',
-        description:
-          'Konverter XML til JSON-format. Automatisk parsing og formatering. Gratis.',
       },
       no: {
         slug: 'xml-til-json-konverterer',
@@ -7210,23 +5993,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti JSON in formato XML. Analisi e formattazione automatiche. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-json-in-xml',
-        title: 'JSON în XML',
-        description:
-          'Convertește JSON în format XML. Parsare și formatare automată. Gratuit.',
-      },
       nl: {
         slug: 'json-naar-xml-converter',
         title: 'JSON naar XML',
         description:
           'Converteer JSON naar XML-formaat. Automatisch parsen en formatteren. Gratis.',
-      },
-      hu: {
-        slug: 'json-xml-konverter',
-        title: 'JSON XML',
-        description:
-          'JSON konvertálása XML formátumba. Automatikus elemzés és formázás. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-json-na-xml',
@@ -7239,12 +6010,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JSON till XML',
         description:
           'Konvertera JSON till XML-format. Automatisk parsning och formatering. Gratis.',
-      },
-      da: {
-        slug: 'json-til-xml-konverter',
-        title: 'JSON til XML',
-        description:
-          'Konverter JSON til XML-format. Automatisk parsing og formatering. Gratis.',
       },
       no: {
         slug: 'json-til-xml-konverterer',
@@ -7315,23 +6080,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti YAML in formato JSON. Analisi e formattazione automatiche. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-yaml-in-json',
-        title: 'YAML în JSON',
-        description:
-          'Convertește YAML în format JSON. Parsare și formatare automată. Gratuit.',
-      },
       nl: {
         slug: 'yaml-naar-json-converter',
         title: 'YAML naar JSON',
         description:
           'Converteer YAML naar JSON-formaat. Automatisch parsen en formatteren. Gratis.',
-      },
-      hu: {
-        slug: 'yaml-json-konverter',
-        title: 'YAML JSON',
-        description:
-          'YAML konvertálása JSON formátumba. Automatikus elemzés és formázás. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-yaml-na-json',
@@ -7344,12 +6097,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'YAML till JSON',
         description:
           'Konvertera YAML till JSON-format. Automatisk parsning och formatering. Gratis.',
-      },
-      da: {
-        slug: 'yaml-til-json-konverter',
-        title: 'YAML til JSON',
-        description:
-          'Konverter YAML til JSON-format. Automatisk parsing og formatering. Gratis.',
       },
       no: {
         slug: 'yaml-til-json-konverterer',
@@ -7420,23 +6167,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti JSON in formato YAML. Analisi e formattazione automatiche. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-json-in-yaml',
-        title: 'JSON în YAML',
-        description:
-          'Convertește JSON în format YAML. Parsare și formatare automată. Gratuit.',
-      },
       nl: {
         slug: 'json-naar-yaml-converter',
         title: 'JSON naar YAML',
         description:
           'Converteer JSON naar YAML-formaat. Automatisch parsen en formatteren. Gratis.',
-      },
-      hu: {
-        slug: 'json-yaml-konverter',
-        title: 'JSON YAML',
-        description:
-          'JSON konvertálása YAML formátumba. Automatikus elemzés és formázás. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-json-na-yaml',
@@ -7449,12 +6184,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JSON till YAML',
         description:
           'Konvertera JSON till YAML-format. Automatisk parsning och formatering. Gratis.',
-      },
-      da: {
-        slug: 'json-til-yaml-konverter',
-        title: 'JSON til YAML',
-        description:
-          'Konverter JSON til YAML-format. Automatisk parsing og formatering. Gratis.',
       },
       no: {
         slug: 'json-til-yaml-konverterer',
@@ -7525,23 +6254,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti Markdown in formato HTML. Analisi e formattazione automatiche. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-markdown-in-html',
-        title: 'Markdown în HTML',
-        description:
-          'Convertește Markdown în format HTML. Parsare și formatare automată. Gratuit.',
-      },
       nl: {
         slug: 'markdown-naar-html-converter',
         title: 'Markdown naar HTML',
         description:
           'Converteer Markdown naar HTML-formaat. Automatisch parsen en formatteren. Gratis.',
-      },
-      hu: {
-        slug: 'markdown-html-konverter',
-        title: 'Markdown HTML',
-        description:
-          'Markdown konvertálása HTML formátumba. Automatikus elemzés és formázás. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-markdown-na-html',
@@ -7554,12 +6271,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Markdown till HTML',
         description:
           'Konvertera Markdown till HTML-format. Automatisk parsning och formatering. Gratis.',
-      },
-      da: {
-        slug: 'markdown-til-html-konverter',
-        title: 'Markdown til HTML',
-        description:
-          'Konverter Markdown til HTML-format. Automatisk parsing og formatering. Gratis.',
       },
       no: {
         slug: 'markdown-til-html-konverterer',
@@ -7630,23 +6341,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Converti HTML in formato Markdown. Analisi e formattazione automatiche. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-html-in-markdown',
-        title: 'HTML în Markdown',
-        description:
-          'Convertește HTML în format Markdown. Parsare și formatare automată. Gratuit.',
-      },
       nl: {
         slug: 'html-naar-markdown-converter',
         title: 'HTML naar Markdown',
         description:
           'Converteer HTML naar Markdown-formaat. Automatisch parsen en formatteren. Gratis.',
-      },
-      hu: {
-        slug: 'html-markdown-konverter',
-        title: 'HTML Markdown',
-        description:
-          'HTML konvertálása Markdown formátumba. Automatikus elemzés és formázás. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-html-na-markdown',
@@ -7659,12 +6358,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HTML till Markdown',
         description:
           'Konvertera HTML till Markdown-format. Automatisk parsning och formatering. Gratis.',
-      },
-      da: {
-        slug: 'html-til-markdown-konverter',
-        title: 'HTML til Markdown',
-        description:
-          'Konverter HTML til Markdown-format. Automatisk parsing og formatering. Gratis.',
       },
       no: {
         slug: 'html-til-markdown-konverterer',
@@ -7738,23 +6431,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Codifica immagini in formato Base64. Copia il codice pronto per CSS o HTML. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-imagine-in-base64',
-        title: 'Imagine în Base64',
-        description:
-          'Codifică imagini în format Base64. Copiază codul gata pentru CSS sau HTML. Gratuit.',
-      },
       nl: {
         slug: 'afbeelding-naar-base64-converter',
         title: 'Afbeelding naar Base64',
         description:
           'Codeer afbeeldingen naar Base64-formaat. Kopieer kant-en-klare code voor CSS of HTML. Gratis.',
-      },
-      hu: {
-        slug: 'kep-base64-konverter',
-        title: 'Kép Base64',
-        description:
-          'Képek kódolása Base64 formátumba. Másolja a kész kódot CSS-hez vagy HTML-hez. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-obrazek-na-base64',
@@ -7767,12 +6448,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Bild till Base64',
         description:
           'Koda bilder till Base64-format. Kopiera färdig kod för CSS eller HTML. Gratis.',
-      },
-      da: {
-        slug: 'billede-til-base64-konverter',
-        title: 'Billede til Base64',
-        description:
-          'Kod billeder til Base64-format. Kopier færdig kode til CSS eller HTML. Gratis.',
       },
       no: {
         slug: 'bilde-til-base64-konverterer',
@@ -7843,23 +6518,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Decodifica stringhe Base64 in immagini. Anteprima e download nel browser. Gratuito.',
       },
-      ro: {
-        slug: 'convertor-base64-in-imagine',
-        title: 'Base64 în Imagine',
-        description:
-          'Decodifică șiruri Base64 în imagini. Previzualizare și descărcare în browser. Gratuit.',
-      },
       nl: {
         slug: 'base64-naar-afbeelding-converter',
         title: 'Base64 naar Afbeelding',
         description:
           'Decodeer Base64-strings naar afbeeldingen. Bekijk en download in je browser. Gratis.',
-      },
-      hu: {
-        slug: 'base64-kep-konverter',
-        title: 'Base64 Kép',
-        description:
-          'Base64 karakterláncok dekódolása képekké. Előnézet és letöltés a böngészőben. Ingyenes.',
       },
       cs: {
         slug: 'prevodnik-base64-na-obrazek',
@@ -7872,12 +6535,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Base64 till Bild',
         description:
           'Avkoda Base64-strängar till bilder. Förhandsgranska och ladda ner i webbläsaren. Gratis.',
-      },
-      da: {
-        slug: 'base64-til-billede-konverter',
-        title: 'Base64 til Billede',
-        description:
-          'Afkod Base64-strenge til billeder. Forhåndsvisning og download i browseren. Gratis.',
       },
       no: {
         slug: 'base64-til-bilde-konverterer',
@@ -7955,11 +6612,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'pt na px',
         description: 'Převeďte body na pixely a naopak.',
       },
-      da: {
-        slug: 'pt-til-px-konverter',
-        title: 'pt til px',
-        description: 'Omregn punkter til pixels og omvendt.',
-      },
       sv: {
         slug: 'pt-till-px-omvandlare',
         title: 'pt till px',
@@ -7974,16 +6626,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'pt-px-muunnin',
         title: 'pt px:ksi',
         description: 'Muunna pisteet pikseleiksi ja päinvastoin.',
-      },
-      hu: {
-        slug: 'pt-px-atvalto',
-        title: 'pt px-re',
-        description: 'Pont átváltása pixelre és fordítva.',
-      },
-      ro: {
-        slug: 'convertor-pt-in-px',
-        title: 'pt în px',
-        description: 'Convertiți puncte în pixeli și invers.',
       },
       el: {
         slug: 'metatropeas-pt-se-px',
@@ -8045,11 +6687,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'rem na px',
         description: 'Převeďte CSS rem na pixely a naopak.',
       },
-      da: {
-        slug: 'rem-til-px-konverter',
-        title: 'rem til px',
-        description: 'Omregn CSS rem til pixels og omvendt.',
-      },
       sv: {
         slug: 'rem-till-px-omvandlare',
         title: 'rem till px',
@@ -8064,16 +6701,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'rem-px-muunnin',
         title: 'rem px:ksi',
         description: 'Muunna CSS rem pikseleiksi ja päinvastoin.',
-      },
-      hu: {
-        slug: 'rem-px-atvalto',
-        title: 'rem px-re',
-        description: 'CSS rem átváltása pixelre és fordítva.',
-      },
-      ro: {
-        slug: 'convertor-rem-in-px',
-        title: 'rem în px',
-        description: 'Convertiți CSS rem în pixeli și invers.',
       },
       el: {
         slug: 'metatropeas-rem-se-px',
@@ -8135,11 +6762,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'em na px',
         description: 'Převeďte CSS em na pixely a naopak.',
       },
-      da: {
-        slug: 'em-til-px-konverter',
-        title: 'em til px',
-        description: 'Omregn CSS em til pixels og omvendt.',
-      },
       sv: {
         slug: 'em-till-px-omvandlare',
         title: 'em till px',
@@ -8154,16 +6776,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'em-px-muunnin',
         title: 'em px:ksi',
         description: 'Muunna CSS em pikseleiksi ja päinvastoin.',
-      },
-      hu: {
-        slug: 'em-px-atvalto',
-        title: 'em px-re',
-        description: 'CSS em átváltása pixelre és fordítva.',
-      },
-      ro: {
-        slug: 'convertor-em-in-px',
-        title: 'em în px',
-        description: 'Convertiți CSS em în pixeli și invers.',
       },
       el: {
         slug: 'metatropeas-em-se-px',
@@ -8225,11 +6837,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'cm na px',
         description: 'Převeďte cm na pixely s podporou DPI.',
       },
-      da: {
-        slug: 'cm-til-px-konverter',
-        title: 'cm til px',
-        description: 'Omregn cm til pixels med DPI-understøttelse.',
-      },
       sv: {
         slug: 'cm-till-px-omvandlare',
         title: 'cm till px',
@@ -8244,16 +6851,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'cm-px-muunnin',
         title: 'cm px:ksi',
         description: 'Muunna cm pikseleiksi DPI-tuella.',
-      },
-      hu: {
-        slug: 'cm-px-atvalto',
-        title: 'cm px-re',
-        description: 'Centiméter átváltása pixelre DPI támogatással.',
-      },
-      ro: {
-        slug: 'convertor-cm-in-px',
-        title: 'cm în px',
-        description: 'Convertiți cm în pixeli cu suport DPI.',
       },
       el: {
         slug: 'metatropeas-cm-se-px',
@@ -8315,11 +6912,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'px na cm',
         description: 'Převeďte pixely na cm s podporou DPI.',
       },
-      da: {
-        slug: 'px-til-cm-konverter',
-        title: 'px til cm',
-        description: 'Omregn pixels til cm med DPI-understøttelse.',
-      },
       sv: {
         slug: 'px-till-cm-omvandlare',
         title: 'px till cm',
@@ -8334,16 +6926,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'px-cm-muunnin',
         title: 'px cm:ksi',
         description: 'Muunna pikselit senttimetreiksi DPI-tuella.',
-      },
-      hu: {
-        slug: 'px-cm-atvalto',
-        title: 'px cm-re',
-        description: 'Pixel átváltása centiméterre DPI támogatással.',
-      },
-      ro: {
-        slug: 'convertor-px-in-cm',
-        title: 'px în cm',
-        description: 'Convertiți pixeli în cm cu suport DPI.',
       },
       el: {
         slug: 'metatropeas-px-se-cm',
@@ -8405,11 +6987,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'mm na px',
         description: 'Převeďte mm na pixely s podporou DPI.',
       },
-      da: {
-        slug: 'mm-til-px-konverter',
-        title: 'mm til px',
-        description: 'Omregn mm til pixels med DPI-understøttelse.',
-      },
       sv: {
         slug: 'mm-till-px-omvandlare',
         title: 'mm till px',
@@ -8424,16 +7001,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'mm-px-muunnin',
         title: 'mm px:ksi',
         description: 'Muunna mm pikseleiksi DPI-tuella.',
-      },
-      hu: {
-        slug: 'mm-px-atvalto',
-        title: 'mm px-re',
-        description: 'Milliméter átváltása pixelre DPI támogatással.',
-      },
-      ro: {
-        slug: 'convertor-mm-in-px',
-        title: 'mm în px',
-        description: 'Convertiți mm în pixeli cu suport DPI.',
       },
       el: {
         slug: 'metatropeas-mm-se-px',
@@ -8495,11 +7062,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'palce na px',
         description: 'Převeďte palce na pixely s podporou DPI.',
       },
-      da: {
-        slug: 'tommer-til-px-konverter',
-        title: 'tommer til px',
-        description: 'Omregn tommer til pixels med DPI-understøttelse.',
-      },
       sv: {
         slug: 'tum-till-px-omvandlare',
         title: 'tum till px',
@@ -8514,16 +7076,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'tuumat-px-muunnin',
         title: 'tuumat px:ksi',
         description: 'Muunna tuumat pikseleiksi DPI-tuella.',
-      },
-      hu: {
-        slug: 'huvely-px-atvalto',
-        title: 'hüvelyk px-re',
-        description: 'Hüvelyk átváltása pixelre DPI támogatással.',
-      },
-      ro: {
-        slug: 'convertor-inci-in-px',
-        title: 'inci în px',
-        description: 'Convertiți inci în pixeli cu suport DPI.',
       },
       el: {
         slug: 'metatropeas-intses-se-px',
@@ -8586,11 +7138,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'DPI na PPI',
         description: 'Porovnejte DPI a PPI — tiskové vs obrazovkové rozlišení.',
       },
-      da: {
-        slug: 'dpi-til-ppi-konverter',
-        title: 'DPI til PPI',
-        description: 'Sammenlign DPI og PPI — print- vs skærmopløsning.',
-      },
       sv: {
         slug: 'dpi-till-ppi-omvandlare',
         title: 'DPI till PPI',
@@ -8606,17 +7153,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'DPI PPI:ksi',
         description:
           'Vertaa DPI:tä ja PPI:tä — tulostustarkkuus vs näyttötarkkuus.',
-      },
-      hu: {
-        slug: 'dpi-ppi-atvalto',
-        title: 'DPI PPI-re',
-        description:
-          'DPI és PPI összehasonlítása — nyomtatási vs képernyőfelbontás.',
-      },
-      ro: {
-        slug: 'convertor-dpi-in-ppi',
-        title: 'DPI în PPI',
-        description: 'Comparați DPI și PPI — rezoluție de tipărire vs ecran.',
       },
       el: {
         slug: 'metatropeas-dpi-se-ppi',
@@ -8679,11 +7215,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEX na RGB',
         description: 'Převeďte HEX kódy barev na RGB a naopak.',
       },
-      da: {
-        slug: 'hex-til-rgb-konverter',
-        title: 'HEX til RGB',
-        description: 'Omregn HEX-farvekoder til RGB og omvendt.',
-      },
       sv: {
         slug: 'hex-till-rgb-omvandlare',
         title: 'HEX till RGB',
@@ -8698,16 +7229,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'hex-rgb-muunnin',
         title: 'HEX RGB:ksi',
         description: 'Muunna HEX-värikoodit RGB:ksi ja päinvastoin.',
-      },
-      hu: {
-        slug: 'hex-rgb-atvalto',
-        title: 'HEX RGB-re',
-        description: 'HEX színkód átváltása RGB-re és fordítva.',
-      },
-      ro: {
-        slug: 'convertor-hex-in-rgb',
-        title: 'HEX în RGB',
-        description: 'Convertiți coduri de culoare HEX în RGB și invers.',
       },
       el: {
         slug: 'metatropeas-hex-se-rgb',
@@ -8775,11 +7296,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'RGB na CMYK',
         description: 'Převeďte RGB na CMYK a naopak. Pro přípravu tisku.',
       },
-      da: {
-        slug: 'rgb-til-cmyk-konverter',
-        title: 'RGB til CMYK',
-        description: 'Omregn RGB til CMYK og omvendt. Til trykforberedelse.',
-      },
       sv: {
         slug: 'rgb-till-cmyk-omvandlare',
         title: 'RGB till CMYK',
@@ -8795,18 +7311,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'rgb-cmyk-muunnin',
         title: 'RGB CMYK:ksi',
         description: 'Muunna RGB CMYK:ksi ja päinvastoin. Painovalmisteluun.',
-      },
-      hu: {
-        slug: 'rgb-cmyk-atvalto',
-        title: 'RGB CMYK-ra',
-        description:
-          'RGB átváltása CMYK-ra és fordítva. Nyomdai előkészítéshez.',
-      },
-      ro: {
-        slug: 'convertor-rgb-in-cmyk',
-        title: 'RGB în CMYK',
-        description:
-          'Convertiți RGB în CMYK și invers. Pentru pregătirea tipăririi.',
       },
       el: {
         slug: 'metatropeas-rgb-se-cmyk',
@@ -8872,11 +7376,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'bajty na KB/MB/GB',
         description: 'Převeďte bajty na KB, MB, GB a naopak.',
       },
-      da: {
-        slug: 'bytes-konverter',
-        title: 'bytes til KB/MB/GB',
-        description: 'Omregn bytes til KB, MB, GB og omvendt.',
-      },
       sv: {
         slug: 'bytes-omvandlare',
         title: 'bytes till KB/MB/GB',
@@ -8891,16 +7390,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'tavut-muunnin',
         title: 'tavut KB/MB/GB:ksi',
         description: 'Muunna tavut KB, MB, GB ja päinvastoin.',
-      },
-      hu: {
-        slug: 'bajt-atvalto',
-        title: 'bájt KB/MB/GB-ra',
-        description: 'Bájt átváltása KB, MB, GB-ra és fordítva.',
-      },
-      ro: {
-        slug: 'convertor-bytes',
-        title: 'bytes în KB/MB/GB',
-        description: 'Convertiți bytes în KB, MB, GB și invers.',
       },
       el: {
         slug: 'metatropeas-bytes',
@@ -8962,11 +7451,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Unix na datum',
         description: 'Převeďte Unix časové razítko na datum a čas.',
       },
-      da: {
-        slug: 'unix-timestamp-konverter',
-        title: 'Unix til dato',
-        description: 'Omregn Unix-tidsstempel til dato og tid.',
-      },
       sv: {
         slug: 'unix-timestamp-omvandlare',
         title: 'Unix till datum',
@@ -8981,16 +7465,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'unix-aikaleima-muunnin',
         title: 'Unix päiväksi',
         description: 'Muunna Unix-aikaleima päivämääräksi ja ajaksi.',
-      },
-      hu: {
-        slug: 'unix-idopont-atvalto',
-        title: 'Unix dátumra',
-        description: 'Unix időbélyeg átváltása dátumra és időre.',
-      },
-      ro: {
-        slug: 'convertor-unix-timestamp',
-        title: 'Unix în dată',
-        description: 'Convertiți marca temporală Unix în dată și oră.',
       },
       el: {
         slug: 'metatropeas-unix-timestamp',
@@ -9052,11 +7526,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'DEC na BIN',
         description: 'Převeďte desítková čísla na binární a naopak.',
       },
-      da: {
-        slug: 'decimal-til-binaer-konverter',
-        title: 'DEC til BIN',
-        description: 'Omregn decimaltal til binære tal og omvendt.',
-      },
       sv: {
         slug: 'decimal-till-binaer-omvandlare',
         title: 'DEC till BIN',
@@ -9071,16 +7540,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'desimaali-binaari-muunnin',
         title: 'DEC BIN:ksi',
         description: 'Muunna desimaaliluvut binääriluvuiksi ja päinvastoin.',
-      },
-      hu: {
-        slug: 'decimalis-binaris-atvalto',
-        title: 'DEC BIN-re',
-        description: 'Decimális számok átváltása binárisra és fordítva.',
-      },
-      ro: {
-        slug: 'convertor-zecimal-in-binar',
-        title: 'DEC în BIN',
-        description: 'Convertiți numere zecimale în binare și invers.',
       },
       el: {
         slug: 'metatropeas-dekadiko-se-dyad',
@@ -9144,11 +7603,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'DEC na HEX',
         description: 'Převeďte desítková čísla na hexadecimální a naopak.',
       },
-      da: {
-        slug: 'decimal-til-hex-konverter',
-        title: 'DEC til HEX',
-        description: 'Omregn decimaltal til hexadecimale tal og omvendt.',
-      },
       sv: {
         slug: 'decimal-till-hex-omvandlare',
         title: 'DEC till HEX',
@@ -9164,16 +7618,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'DEC HEX:ksi',
         description:
           'Muunna desimaaliluvut heksadesimaaliluvuiksi ja päinvastoin.',
-      },
-      hu: {
-        slug: 'decimalis-hex-atvalto',
-        title: 'DEC HEX-re',
-        description: 'Decimális számok átváltása hexadecimálisra és fordítva.',
-      },
-      ro: {
-        slug: 'convertor-zecimal-in-hex',
-        title: 'DEC în HEX',
-        description: 'Convertiți numere zecimale în hexazecimale și invers.',
       },
       el: {
         slug: 'metatropeas-dekadiko-se-hex',
@@ -9235,11 +7679,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Mbps na MB/s',
         description: 'Převeďte Mbps na MB/s a naopak.',
       },
-      da: {
-        slug: 'mbps-til-mbs-konverter',
-        title: 'Mbps til MB/s',
-        description: 'Omregn Mbps til MB/s og omvendt.',
-      },
       sv: {
         slug: 'mbps-till-mbs-omvandlare',
         title: 'Mbps till MB/s',
@@ -9254,16 +7693,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'mbps-mbs-muunnin',
         title: 'Mbps MB/s:ksi',
         description: 'Muunna Mbps MB/s:ksi ja päinvastoin.',
-      },
-      hu: {
-        slug: 'mbps-mbs-atvalto',
-        title: 'Mbps MB/s-ra',
-        description: 'Mbps átváltása MB/s-ra és fordítva.',
-      },
-      ro: {
-        slug: 'convertor-mbps-in-mbs',
-        title: 'Mbps în MB/s',
-        description: 'Convertiți Mbps în MB/s și invers.',
       },
       el: {
         slug: 'metatropeas-mbps-se-mbs',

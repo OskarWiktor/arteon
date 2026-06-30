@@ -78,26 +78,12 @@ export const A11Y_UI: Record<Locale, A11yStrings> = {
     meets: 'soddisfa',
     doesNotMeet: 'non soddisfa',
   },
-  ro: {
-    colorSwatch: (i, v) => `Culoare ${i}: ${v}`,
-    tableRegion: 'Tabel',
-    themeToggle: 'Comută între modul luminos și întunecat',
-    meets: 'îndeplinește',
-    doesNotMeet: 'nu îndeplinește',
-  },
   nl: {
     colorSwatch: (i, v) => `Kleur ${i}: ${v}`,
     tableRegion: 'Tabel',
     themeToggle: 'Schakel tussen lichte en donkere modus',
     meets: 'voldoet',
     doesNotMeet: 'voldoet niet',
-  },
-  hu: {
-    colorSwatch: (i, v) => `Szín ${i}: ${v}`,
-    tableRegion: 'Táblázat',
-    themeToggle: 'Váltás világos és sötét mód között',
-    meets: 'megfelel',
-    doesNotMeet: 'nem felel meg',
   },
   cs: {
     colorSwatch: (i, v) => `Barva ${i}: ${v}`,
@@ -112,13 +98,6 @@ export const A11Y_UI: Record<Locale, A11yStrings> = {
     themeToggle: 'Växla mellan ljust och mörkt läge',
     meets: 'uppfyller',
     doesNotMeet: 'uppfyller inte',
-  },
-  da: {
-    colorSwatch: (i, v) => `Farve ${i}: ${v}`,
-    tableRegion: 'Tabel',
-    themeToggle: 'Skift mellem lys og mørk tilstand',
-    meets: 'opfylder',
-    doesNotMeet: 'opfylder ikke',
   },
   no: {
     colorSwatch: (i, v) => `Farge ${i}: ${v}`,

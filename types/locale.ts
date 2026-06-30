@@ -6,12 +6,9 @@ export type Locale =
   | 'fr'
   | 'pt'
   | 'it'
-  | 'ro'
   | 'nl'
-  | 'hu'
   | 'cs'
   | 'sv'
-  | 'da'
   | 'no'
   | 'fi'
   | 'el';

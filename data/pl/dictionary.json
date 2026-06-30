@@ -98,8 +98,6 @@
     "switchTitle": "Przejdź na polski",
     "toggleLabel": "Zmień język",
     "chooseLabel": "Wybierz język",
-    "popularLabel": "Popularne",
-    "otherLabel": "Inne",
     "closeModalLabel": "Zamknij"
   },
   "mobileNav": {
@@ -113,7 +111,7 @@
   },
   "search": {
     "placeholder": "Szukaj narzędzi, usług, artykułów...",
-    "emptyHint": "Wpisz frazę, np. \u201Egenerator favicon\u201D, \u201Estrony internetowe\u201D albo \u201Erealizacje\u201D, a zobaczysz powiązane wyniki.",
+    "emptyHint": "Wpisz frazę, np. „generator favicon”, „strony internetowe” albo „realizacje”, a zobaczysz powiązane wyniki.",
     "noResults": "Brak wyników dla",
     "contactUs": "Skontaktuj się",
     "ariaLabel": "Wyszukiwarka",

@@ -104,8 +104,6 @@ const LanguageSwitcherSchema = z.object({
   switchTitle: z.string(),
   toggleLabel: z.string(),
   chooseLabel: z.string(),
-  popularLabel: z.string(),
-  otherLabel: z.string(),
   closeModalLabel: z.string(),
 });
 
@@ -213,16 +211,8 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
     import('@/data/it/dictionary.json').then(m =>
       DictionarySchema.parse(m.default),
     ),
-  ro: () =>
-    import('@/data/ro/dictionary.json').then(m =>
-      DictionarySchema.parse(m.default),
-    ),
   nl: () =>
     import('@/data/nl/dictionary.json').then(m =>
-      DictionarySchema.parse(m.default),
-    ),
-  hu: () =>
-    import('@/data/hu/dictionary.json').then(m =>
       DictionarySchema.parse(m.default),
     ),
   cs: () =>
@@ -231,10 +221,6 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
     ),
   sv: () =>
     import('@/data/sv/dictionary.json').then(m =>
-      DictionarySchema.parse(m.default),
-    ),
-  da: () =>
-    import('@/data/da/dictionary.json').then(m =>
       DictionarySchema.parse(m.default),
     ),
   no: () =>

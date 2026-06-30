@@ -82,14 +82,6 @@ export const UNIT_CONVERTER_I18N: Record<Locale, UnitConverterI18n> = {
     pickerSource: 'Converti da',
     pickerTarget: 'Converti in',
   },
-  ro: {
-    titleConvertTo: u => `Convertește alte unități în ${u}`,
-    titleConvertFrom: u => `Convertește ${u} în alte unități`,
-    titleOtherConverters: 'Explorează alte convertoare de unități',
-    connector: 'în',
-    pickerSource: 'Convertește din',
-    pickerTarget: 'Convertește în',
-  },
   nl: {
     titleConvertTo: u => `Andere eenheden naar ${u} converteren`,
     titleConvertFrom: u => `${u} naar andere eenheden converteren`,
@@ -97,14 +89,6 @@ export const UNIT_CONVERTER_I18N: Record<Locale, UnitConverterI18n> = {
     connector: 'naar',
     pickerSource: 'Converteer van',
     pickerTarget: 'Converteer naar',
-  },
-  hu: {
-    titleConvertTo: u => `Más egységek átváltása ${u} egységre`,
-    titleConvertFrom: u => `${u} átváltása más egységekre`,
-    titleOtherConverters: 'További mértékegység-átváltók',
-    connector: '→',
-    pickerSource: 'Konvertálás forrás',
-    pickerTarget: 'Konvertálás cél',
   },
   cs: {
     titleConvertTo: u => `Převést jiné jednotky na ${u}`,
@@ -121,14 +105,6 @@ export const UNIT_CONVERTER_I18N: Record<Locale, UnitConverterI18n> = {
     connector: 'till',
     pickerSource: 'Konvertera från',
     pickerTarget: 'Konvertera till',
-  },
-  da: {
-    titleConvertTo: u => `Konverter andre enheder til ${u}`,
-    titleConvertFrom: u => `Konverter ${u} til andre enheder`,
-    titleOtherConverters: 'Udforsk andre enhedskonvertere',
-    connector: 'til',
-    pickerSource: 'Konvertér fra',
-    pickerTarget: 'Konvertér til',
   },
   no: {
     titleConvertTo: u => `Konverter andre enheter til ${u}`,

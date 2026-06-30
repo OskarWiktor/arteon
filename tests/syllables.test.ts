@@ -20,11 +20,6 @@ describe('countSyllablesInWord', () => {
     expect(countSyllablesInWord('Geschwindigkeit', 'de')).toBeGreaterThan(2);
   });
 
-  it('counts each vowel separately for Hungarian (no diphthongs)', () => {
-    // "alma" = a-l-m-a -> 2 vowels -> 2 syllables.
-    expect(countSyllablesInWord('alma', 'hu')).toBe(2);
-  });
-
   it('returns 0 for input with no letters', () => {
     expect(countSyllablesInWord('123', 'en')).toBe(0);
   });

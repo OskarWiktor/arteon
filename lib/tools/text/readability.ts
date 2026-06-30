@@ -86,7 +86,6 @@ const FLESCH_FORMULAS: Partial<Record<Locale, FleschFormula>> = {
   },
   es: fernandezHuerta,
   pt: fernandezHuerta,
-  ro: fernandezHuerta,
   // Flesch-Douma formula (Dutch)
   nl: (ASL, ASW) => {
     const score = 206.835 - 0.93 * ASL - 77 * ASW;
@@ -110,11 +109,9 @@ const FLESCH_FORMULAS: Partial<Record<Locale, FleschFormula>> = {
   // Czech adaptation - Slavic inflectional language; higher ASW than Polish
   cs: standardFlesch(52),
   // Hungarian adaptation - agglutinative language with very long words (~2.0+ syl/word)
-  hu: standardFlesch(55),
   // Greek adaptation - inflectional, longer words than EN but less extreme than PL/HU
   el: standardFlesch(66),
   sv: lixFormula,
-  da: lixFormula,
   no: lixFormula,
   fi: lixFormula,
 };
@@ -222,26 +219,12 @@ const READABILITY_LABELS: Record<
     difficult: 'Difficile',
     veryDifficult: 'Molto difficile',
   },
-  ro: {
-    veryEasy: 'Foarte ușor',
-    easy: 'Ușor',
-    moderate: 'Moderat',
-    difficult: 'Dificil',
-    veryDifficult: 'Foarte dificil',
-  },
   nl: {
     veryEasy: 'Zeer eenvoudig',
     easy: 'Eenvoudig',
     moderate: 'Gemiddeld',
     difficult: 'Moeilijk',
     veryDifficult: 'Zeer moeilijk',
-  },
-  hu: {
-    veryEasy: 'Nagyon könnyű',
-    easy: 'Könnyű',
-    moderate: 'Közepes',
-    difficult: 'Nehéz',
-    veryDifficult: 'Nagyon nehéz',
   },
   cs: {
     veryEasy: 'Velmi snadné',
@@ -256,13 +239,6 @@ const READABILITY_LABELS: Record<
     moderate: 'Medel',
     difficult: 'Svår',
     veryDifficult: 'Mycket svår',
-  },
-  da: {
-    veryEasy: 'Meget let',
-    easy: 'Let',
-    moderate: 'Middel',
-    difficult: 'Svær',
-    veryDifficult: 'Meget svær',
   },
   no: {
     veryEasy: 'Veldig lett',
@@ -296,7 +272,6 @@ const READABILITY_THRESHOLDS: Partial<
   it: [80, 60, 40, 20], // Gulpease: 80+ elementary, 60+ middle school, 40+ high school, <40 university
   pl: [80, 60, 40, 20], // Polish adapted formula: shifted thresholds for inflectional language
   cs: [80, 60, 40, 20], // Czech adapted formula: Slavic, similar to Polish
-  hu: [80, 60, 40, 20], // Hungarian adapted formula: agglutinative, long words
   el: [80, 60, 45, 25], // Greek adapted formula: inflectional, moderate correction
 };
 
