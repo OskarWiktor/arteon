@@ -169,8 +169,6 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
 
   return (
     <div>
-      <FormatSelector unitToolKey={toolKey} />
-
       <div className='grid gap-4 md:grid-cols-2'>
         <Card interactive={false} padding='lg' variant='outlined'>
           <div className='relative'>
@@ -186,7 +184,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
               }
             />
             {srcFieldConfig.suffix && (
-              <span className='pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 font-mono text-sm text-primary-mid'>
+              <span className='pointer-events-none absolute top-10 right-8 font-mono text-sm text-primary-mid'>
                 {srcFieldConfig.suffix}
               </span>
             )}
@@ -254,7 +252,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
               readOnly={isSpecial}
             />
             {tgtFieldConfig.suffix && (
-              <span className='pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 font-mono text-sm text-primary-mid'>
+              <span className='pointer-events-none absolute top-10 right-8 font-mono text-sm text-primary-mid'>
                 {tgtFieldConfig.suffix}
               </span>
             )}
@@ -272,6 +270,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
           </div>
         </Card>
       </div>
+      <FormatSelector unitToolKey={toolKey} />
     </div>
   );
 }
