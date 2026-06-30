@@ -1,5 +1,4 @@
 import cs from '@/data/cs/tools-ui/favicon.json';
-import da from '@/data/da/tools-ui/favicon.json';
 import de from '@/data/de/tools-ui/favicon.json';
 import el from '@/data/el/tools-ui/favicon.json';
 import en from '@/data/en/tools-ui/favicon.json';
@@ -29,7 +28,6 @@ export const ui = {
   hu,
   cs,
   sv,
-  da,
   no,
   fi,
   el,

@@ -69,11 +69,6 @@
       "permanent": true
     },
     {
-      "source": "/da/vaerktojer/rgb-til-hsl-konverter",
-      "destination": "/da/vaerktojer",
-      "permanent": true
-    },
-    {
       "source": "/no/verktoy/rgb-til-hsl-kalkulator",
       "destination": "/no/verktoy",
       "permanent": true
@@ -141,11 +136,6 @@
     {
       "source": "/sv/verktyg/tailwind-css-spacing-till-px-omvandlare",
       "destination": "/sv/verktyg",
-      "permanent": true
-    },
-    {
-      "source": "/da/vaerktojer/tailwind-css-spacing-til-px-konverter",
-      "destination": "/da/vaerktojer",
       "permanent": true
     },
     {
@@ -221,11 +211,6 @@
     {
       "source": "/sv/verktyg/vw-till-px-omvandlare",
       "destination": "/sv/verktyg",
-      "permanent": true
-    },
-    {
-      "source": "/da/vaerktojer/vw-til-px-konverter",
-      "destination": "/da/vaerktojer",
       "permanent": true
     },
     {

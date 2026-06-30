@@ -217,9 +217,6 @@ export const CONVERTER_REDIRECTS: Record<string, string> = {
   // SV
   '/sv/verktyg/jpg-png-till-webp-konverterare':
     '/sv/verktyg/jpg-till-webp-konverterare',
-  // DA
-  '/da/vaerktojer/jpg-png-til-webp-konverter':
-    '/da/vaerktojer/jpg-til-webp-konverter',
   // NO
   '/no/verktoy/jpg-png-til-webp-konverterer':
     '/no/verktoy/jpg-til-webp-konverterer',

@@ -36,7 +36,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       hu: { title: 'Képek és faviconok' },
       cs: { title: 'Obrázky a favicony' },
       sv: { title: 'Bilder & faviconer' },
-      da: { title: 'Billeder & faviconer' },
       no: { title: 'Bilder og faviconer' },
       fi: { title: 'Kuvat ja faviconit' },
       el: { title: 'Εικόνες και favicon' },
@@ -58,7 +57,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       hu: { title: 'Szöveg és SEO' },
       cs: { title: 'Text a SEO' },
       sv: { title: 'Text & SEO' },
-      da: { title: 'Tekst & SEO' },
       no: { title: 'Tekst & SEO' },
       fi: { title: 'Teksti & SEO' },
       el: { title: 'Κείμενο & SEO' },
@@ -80,7 +78,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       hu: { title: 'E-mail és kommunikáció' },
       cs: { title: 'E-mail a komunikace' },
       sv: { title: 'E-post & kommunikation' },
-      da: { title: 'E-mail & kommunikation' },
       no: { title: 'E-post og kommunikasjon' },
       fi: { title: 'Sähköposti ja viestintä' },
       el: { title: 'Email & επικοινωνία' },
@@ -102,7 +99,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       hu: { title: 'Színek és akadálymentesség' },
       cs: { title: 'Barvy a přístupnost' },
       sv: { title: 'Färger & tillgänglighet' },
-      da: { title: 'Farver & tilgængelighed' },
       no: { title: 'Farger og tilgjengelighet' },
       fi: { title: 'Värit ja saavutettavuus' },
       el: { title: 'Χρώματα & παλέτες' },
@@ -124,7 +120,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       hu: { title: 'Nyomtatás és anyagok' },
       cs: { title: 'Tisk a materiály' },
       sv: { title: 'Tryck & material' },
-      da: { title: 'Tryk & materialer' },
       no: { title: 'Trykk og materialer' },
       fi: { title: 'Painatus ja materiaalit' },
       el: { title: 'Εκτύπωση & QR' },
@@ -147,7 +142,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       hu: { title: 'Képformátum-konverterek' },
       cs: { title: 'Konvertory formátů' },
       sv: { title: 'Bildformatkonverterare' },
-      da: { title: 'Billedformatkonvertere' },
       no: { title: 'Bildformatkonverterere' },
       fi: { title: 'Kuvaformaattimuuntimet' },
     },
@@ -168,7 +162,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       hu: { title: 'Adatkonverterek' },
       cs: { title: 'Datové převodníky' },
       sv: { title: 'Datakonverterare' },
-      da: { title: 'Datakonvertere' },
       no: { title: 'Datakonverterere' },
       fi: { title: 'Datamuuntimet' },
       el: { title: 'Μετατροπείς δεδομένων' },
@@ -190,7 +183,6 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       hu: { title: 'Mértékegység-átváltók' },
       cs: { title: 'Převodníky jednotek' },
       sv: { title: 'Enhetskonverterare' },
-      da: { title: 'Enhedskonvertere' },
       no: { title: 'Enhetskonverterere' },
       fi: { title: 'Yksikkömuuntimet' },
       el: { title: 'Μετατροπείς μονάδων' },
@@ -289,12 +281,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Bildredigerare',
         description:
           'Ändra storlek, beskär och konvertera din bild. Färdiga format för sociala medier, runda avatarer, export JPG/PNG/WebP.',
-      },
-      da: {
-        slug: 'billedrediger',
-        title: 'Billedredigering',
-        description:
-          'Ændr størrelse, beskær og konvertér dit billede. Færdige formater til sociale medier, runde avatarer, eksport JPG/PNG/WebP.',
       },
       no: {
         slug: 'bilderedigerer',
@@ -395,12 +381,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Skapa en komplett favicon.ico-uppsättning för din webbplats från en bild. Alla nödvändiga storlekar, utan inloggning.',
       },
-      da: {
-        slug: 'gratis-favicon-generator',
-        title: 'Favicon-generator',
-        description:
-          'Opret et komplet favicon.ico-sæt til din hjemmeside fra et billede. Alle nødvendige størrelser, uden login.',
-      },
       no: {
         slug: 'gratis-favicon-generator',
         title: 'Favicon-generator',
@@ -499,12 +479,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Meta-titel & beskrivningskontroll',
         description:
           'Kontrollera titel- och beskrivningslängd i pixlar. Live Google-förhandsgranskning och optimeringstips.',
-      },
-      da: {
-        slug: 'meta-titel-og-beskrivelse-kontrol',
-        title: 'Meta-titel & beskrivelseskontrol',
-        description:
-          'Kontrollér titel- og beskrivelseslaengde i pixels. Live Google-forhåndsvisning og optimeringstips.',
       },
       no: {
         slug: 'meta-tittel-og-beskrivelse-sjekker',
@@ -605,12 +579,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Räkna ord, tecken, meningar och lästid. Kontrollera läsbarheten med Flesch-Kincaid-poängen.',
       },
-      da: {
-        slug: 'ord-og-tegntaeller',
-        title: 'Ord- & tegntæller',
-        description:
-          'Tæl ord, tegn, sætninger og læsetid. Kontrollér læsbarheden med Flesch-Kincaid-scoren.',
-      },
       no: {
         slug: 'ord-og-tegnteller',
         title: 'Ord- og tegnteller',
@@ -710,12 +678,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Gratis Lorem Ipsum-generator — 8 textstilar, stycken, meningar eller ord. Kopiera med ett klick.',
       },
-      da: {
-        slug: 'lorem-ipsum-generator',
-        title: 'Lorem Ipsum-generator',
-        description:
-          'Gratis Lorem Ipsum-generator — 8 tekststilarter, afsnit, sætninger eller ord. Kopiér med ét klik.',
-      },
       no: {
         slug: 'lorem-ipsum-generator',
         title: 'Lorem Ipsum-generator',
@@ -813,12 +775,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'E-postsignatur-generator',
         description:
           'Skapa en HTML e-postsignatur med full anpassning. Färdiga layouter, sociala medier-ikoner och kod för Gmail/Outlook.',
-      },
-      da: {
-        slug: 'gratis-e-mail-signatur-generator',
-        title: 'E-mail-signatur-generator',
-        description:
-          'Opret en HTML e-mail-signatur med fuld tilpasning. Færdige layouts, sociale medie-ikoner og kode til Gmail/Outlook.',
       },
       no: {
         slug: 'gratis-e-postsignatur-generator',
@@ -919,12 +875,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Kontrollera text- och bakgrundskontrast enligt WCAG 2.1 AA och AAA. Automatisk färgkorrigering.',
       },
-      da: {
-        slug: 'farvekontrastkontrol',
-        title: 'Farvekontrastkontrol',
-        description:
-          'Kontrollér tekst- og baggrundskontrast ifølge WCAG 2.1 AA og AAA. Automatisk farvekorrektion.',
-      },
       no: {
         slug: 'fargekontrastsjekker',
         title: 'Fargekontrastsjekker',
@@ -1022,12 +972,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Färgextraktor från bild',
         description:
           'Extrahera dominerande färger från ett foto eller logotyp. Färdiga HEX- och RGB-koder att kopiera.',
-      },
-      da: {
-        slug: 'farveudtraekker-fra-billede',
-        title: 'Farveudtrækker fra billede',
-        description:
-          'Udtræk dominerende farver fra et foto eller logo. Færdige HEX- og RGB-koder til kopiering.',
       },
       no: {
         slug: 'fargeutrekker-fra-bilde',
@@ -1128,12 +1072,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Generera 9 paletter från en färg: monokromatisk, komplementär, triadisk och fler. HEX-koder.',
       },
-      da: {
-        slug: 'farvepaletgenerator',
-        title: 'Farvepaletgenerator',
-        description:
-          'Generér 9 paletter fra én farve: monokromatisk, komplementær, triadisk og flere. HEX-koder.',
-      },
       no: {
         slug: 'fargepalettgenerator',
         title: 'Fargepalettgenerator',
@@ -1232,12 +1170,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Gratis QR-kodgenerator',
         description:
           'Skapa en QR-kod för webbplats, vCard-visitkort eller utskrift. Export PNG och SVG, utan registrering.',
-      },
-      da: {
-        slug: 'gratis-qr-kode-generator',
-        title: 'Gratis QR-kode-generator',
-        description:
-          'Opret en QR-kode til hjemmeside, vCard-visitkort eller tryk. Eksport PNG og SVG, uden registrering.',
       },
       no: {
         slug: 'gratis-qr-kode-generator',
@@ -1347,12 +1279,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace.',
       },
-      da: {
-        slug: 'png-til-jpg-konverter',
-        title: 'PNG til JPG',
-        description:
-          'Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.',
-      },
       no: {
         slug: 'png-til-jpg-konverterer',
         title: 'PNG til JPG',
@@ -1451,12 +1377,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.',
       },
-      da: {
-        slug: 'jpg-til-png-konverter',
-        title: 'JPG til PNG',
-        description:
-          'Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren.',
-      },
       no: {
         slug: 'jpg-til-png-konverterer',
         title: 'JPG til PNG',
@@ -1551,11 +1471,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-webp-na-jpg',
         title: 'WebP na JPG',
         description: 'Převeďte soubory WebP na univerzálně kompatibilní JPG.',
-      },
-      da: {
-        slug: 'webp-til-jpg-konverter',
-        title: 'WebP til JPG',
-        description: 'Konvertér WebP-filer til universelt kompatibelt JPG.',
       },
       no: {
         slug: 'webp-til-jpg-konverterer',
@@ -1653,12 +1568,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'WebP na PNG',
         description:
           'Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.',
-      },
-      da: {
-        slug: 'webp-til-png-konverter',
-        title: 'WebP til PNG',
-        description:
-          'Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering.',
       },
       no: {
         slug: 'webp-til-png-konverterer',
@@ -1758,12 +1667,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě.',
       },
-      da: {
-        slug: 'svg-til-png-konverter',
-        title: 'SVG til PNG',
-        description:
-          'Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier.',
-      },
       no: {
         slug: 'svg-til-png-konverterer',
         title: 'SVG til PNG',
@@ -1861,12 +1764,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG na JPG',
         description:
           'Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.',
-      },
-      da: {
-        slug: 'svg-til-jpg-konverter',
-        title: 'SVG til JPG',
-        description:
-          'Konvertér SVG-grafik til kompakt JPG. Mindre fil, fuld kompatibilitet.',
       },
       no: {
         slug: 'svg-til-jpg-konverterer',
@@ -1966,12 +1863,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte soubory BMP na lehké JPG. Drastické zmenšení velikosti.',
       },
-      da: {
-        slug: 'bmp-til-jpg-konverter',
-        title: 'BMP til JPG',
-        description:
-          'Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion.',
-      },
       no: {
         slug: 'bmp-til-jpg-konverterer',
         title: 'BMP til JPG',
@@ -2069,12 +1960,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP na PNG',
         description:
           'Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena.',
-      },
-      da: {
-        slug: 'bmp-til-png-konverter',
-        title: 'BMP til PNG',
-        description:
-          'Konvertér BMP-billeder til tabsfrit PNG. Kvalitet bevaret, størrelse reduceret.',
       },
       no: {
         slug: 'bmp-til-png-konverterer',
@@ -2174,12 +2059,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.',
       },
-      da: {
-        slug: 'gif-til-png-konverter',
-        title: 'GIF til PNG',
-        description:
-          'Eksportér den første frame af en GIF som statisk PNG. Uden kvalitetstab.',
-      },
       no: {
         slug: 'gif-til-png-konverterer',
         title: 'GIF til PNG',
@@ -2277,12 +2156,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'GIF na JPG',
         description:
           'Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.',
-      },
-      da: {
-        slug: 'gif-til-jpg-konverter',
-        title: 'GIF til JPG',
-        description:
-          'Eksportér den første frame af en GIF som kompakt JPG. Mindre fil.',
       },
       no: {
         slug: 'gif-til-jpg-konverterer',
@@ -2383,12 +2256,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte fotky JPG na lehké WebP. Snižte váhu obrázků až o 35%.',
       },
-      da: {
-        slug: 'jpg-til-webp-konverter',
-        title: 'JPG til WebP',
-        description:
-          'Konvertér JPG-fotos til let WebP. Spar op til 35% filstørrelse.',
-      },
       no: {
         slug: 'jpg-til-webp-konverterer',
         title: 'JPG til WebP',
@@ -2487,12 +2354,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.',
       },
-      da: {
-        slug: 'png-til-webp-konverter',
-        title: 'PNG til WebP',
-        description:
-          'Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed.',
-      },
       no: {
         slug: 'png-til-webp-konverterer',
         title: 'PNG til WebP',
@@ -2587,12 +2448,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG till WebP',
         description:
           'Konvertera SVG-grafik till lattvikts-WebP. Idealiskt för webbplatser och sociala medier.',
-      },
-      da: {
-        slug: 'svg-til-webp-konverter',
-        title: 'SVG til WebP',
-        description:
-          'Konverter SVG-grafik til let WebP. Ideel til websites og sociale medier.',
       },
       no: {
         slug: 'svg-til-webp-konverterer',
@@ -2692,12 +2547,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Exportera första GIF-bildrutan som lättvikts-WebP. Mindre fil, snabbare laddning.',
       },
-      da: {
-        slug: 'gif-til-webp-konverter',
-        title: 'GIF til WebP',
-        description:
-          'Eksporter forste GIF-frame som let WebP. Mindre fil, hurtigere indlasning.',
-      },
       no: {
         slug: 'gif-til-webp-konverterer',
         title: 'GIF til WebP',
@@ -2795,12 +2644,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP till WebP',
         description:
           'Konvertera BMP-filer till lattvikts-WebP. Upp till 95% storleksminskning.',
-      },
-      da: {
-        slug: 'bmp-til-webp-konverter',
-        title: 'BMP til WebP',
-        description:
-          'Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion.',
       },
       no: {
         slug: 'bmp-til-webp-konverterer',
@@ -2900,12 +2743,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera AVIF-filer till universell JPG. Kompatibel med alla program och plattformar.',
       },
-      da: {
-        slug: 'avif-til-jpg-konverter',
-        title: 'AVIF til JPG',
-        description:
-          'Konverter AVIF-filer til universel JPG. Kompatibel med alle programmer og platforme.',
-      },
       no: {
         slug: 'avif-til-jpg-konverterer',
         title: 'AVIF til JPG',
@@ -3004,12 +2841,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera AVIF-filer till förlustfri PNG. Behall full kvalitet och transparens.',
       },
-      da: {
-        slug: 'avif-til-png-konverter',
-        title: 'AVIF til PNG',
-        description:
-          'Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed.',
-      },
       no: {
         slug: 'avif-til-png-konverterer',
         title: 'AVIF til PNG',
@@ -3107,12 +2938,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'AVIF till WebP',
         description:
           'Konvertera AVIF-filer till WebP. Bred kompatibilitet vid liten filstorlek.',
-      },
-      da: {
-        slug: 'avif-til-webp-konverter',
-        title: 'AVIF til WebP',
-        description:
-          'Konverter AVIF-filer til WebP. Bred kompatibilitet ved lille filstorrelse.',
       },
       no: {
         slug: 'avif-til-webp-konverterer',
@@ -3215,12 +3040,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera iPhone HEIC-foton till universell JPG. Ingen registrering, ingen uppladdning.',
       },
-      da: {
-        slug: 'heic-til-jpg-konverter',
-        title: 'HEIC til JPG',
-        description:
-          'Konverter iPhone HEIC-fotos til universel JPG. Ingen registrering, ingen upload.',
-      },
       no: {
         slug: 'heic-til-jpg-konverterer',
         title: 'HEIC til JPG',
@@ -3319,12 +3138,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera iPhone HEIC-foton till förlustfri PNG. Full kvalitet och transparens.',
       },
-      da: {
-        slug: 'heic-til-png-konverter',
-        title: 'HEIC til PNG',
-        description:
-          'Konverter iPhone HEIC-fotos til tabsfri PNG. Fuld kvalitet og gennemsigtighed.',
-      },
       no: {
         slug: 'heic-til-png-konverterer',
         title: 'HEIC til PNG',
@@ -3422,12 +3235,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEIC till WebP',
         description:
           'Konvertera iPhone HEIC-foton till lattvikts-WebP. Mindre storlek, snabbare laddning.',
-      },
-      da: {
-        slug: 'heic-til-webp-konverter',
-        title: 'HEIC til WebP',
-        description:
-          'Konverter iPhone HEIC-fotos til let WebP. Mindre storrelse, hurtigere indlasning.',
       },
       no: {
         slug: 'heic-til-webp-konverterer',
@@ -3530,12 +3337,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera TIFF-filer till kompakt JPG. Idealiskt för skanningar och fotoarkiv.',
       },
-      da: {
-        slug: 'tiff-til-jpg-konverter',
-        title: 'TIFF til JPG',
-        description:
-          'Konverter TIFF-filer til kompakt JPG. Ideel til scanninger og fotoarkiver.',
-      },
       no: {
         slug: 'tiff-til-jpg-konverterer',
         title: 'TIFF til JPG',
@@ -3633,12 +3434,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'TIFF till PNG',
         description:
           'Konvertera TIFF-filer till förlustfri PNG. Behall full kvalitet pa skanningar.',
-      },
-      da: {
-        slug: 'tiff-til-png-konverter',
-        title: 'TIFF til PNG',
-        description:
-          'Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger.',
       },
       no: {
         slug: 'tiff-til-png-konverterer',
@@ -3738,12 +3533,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera TIFF-filer till lattvikts-WebP. Massiv storleksminskning med bevarad kvalitet.',
       },
-      da: {
-        slug: 'tiff-til-webp-konverter',
-        title: 'TIFF til WebP',
-        description:
-          'Konverter TIFF-filer til let WebP. Massiv reduktion med bevaret kvalitet.',
-      },
       no: {
         slug: 'tiff-til-webp-konverterer',
         title: 'TIFF til WebP',
@@ -3841,12 +3630,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JPG till AVIF',
         description:
           'Konvertera JPG-foton till modernt AVIF. Upp till 50% bättre komprimering än JPG.',
-      },
-      da: {
-        slug: 'jpg-til-avif-konverter',
-        title: 'JPG til AVIF',
-        description:
-          'Konverter JPG-fotos til moderne AVIF. Op til 50% bedre komprimering end JPG.',
       },
       no: {
         slug: 'jpg-til-avif-konverterer',
@@ -3946,12 +3729,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera PNG-grafik till AVIF med transparensstod. Betydligt mindre filer.',
       },
-      da: {
-        slug: 'png-til-avif-konverter',
-        title: 'PNG til AVIF',
-        description:
-          'Konverter PNG-grafik til AVIF med gennemsigtighedsunderstottelse. Markant mindre filer.',
-      },
       no: {
         slug: 'png-til-avif-konverterer',
         title: 'PNG til AVIF',
@@ -4049,12 +3826,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'WebP till AVIF',
         description:
           'Konvertera WebP-filer till AVIF. Annu bättre komprimering i ett modernt format.',
-      },
-      da: {
-        slug: 'webp-til-avif-konverter',
-        title: 'WebP til AVIF',
-        description:
-          'Konverter WebP-filer til AVIF. Endnu bedre komprimering i et moderne format.',
       },
       no: {
         slug: 'webp-til-avif-konverterer',
@@ -4154,12 +3925,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat.',
       },
-      da: {
-        slug: 'svg-til-avif-konverter',
-        title: 'SVG til AVIF',
-        description:
-          'Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat.',
-      },
       no: {
         slug: 'svg-til-avif-konverterer',
         title: 'SVG til AVIF',
@@ -4255,11 +4020,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP till AVIF',
         description:
           'Konvertera okomprimerade BMP-filer till ultrakompakt AVIF.',
-      },
-      da: {
-        slug: 'bmp-til-avif-konverter',
-        title: 'BMP til AVIF',
-        description: 'Konverter ukomprimerede BMP-filer til ultrakompakt AVIF.',
       },
       no: {
         slug: 'bmp-til-avif-konverterer',
@@ -4357,12 +4117,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera första GIF-bildrutan till statisk AVIF-bild med utmärkt komprimering.',
       },
-      da: {
-        slug: 'gif-til-avif-konverter',
-        title: 'GIF til AVIF',
-        description:
-          'Konverter forste GIF-billede til statisk AVIF-billede med fremragende komprimering.',
-      },
       no: {
         slug: 'gif-til-avif-konverterer',
         title: 'GIF til AVIF',
@@ -4451,11 +4205,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'heic-till-avif-konverterare',
         title: 'HEIC till AVIF',
         description: 'Konvertera iPhone HEIC-foton till modernt AVIF-format.',
-      },
-      da: {
-        slug: 'heic-til-avif-konverter',
-        title: 'HEIC til AVIF',
-        description: 'Konverter iPhone HEIC-fotos til moderne AVIF-format.',
       },
       no: {
         slug: 'heic-til-avif-konverterer',
@@ -4552,12 +4301,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'TIFF till AVIF',
         description:
           'Konvertera TIFF-filer till modernt AVIF. Massiv filstorleksreducering.',
-      },
-      da: {
-        slug: 'tiff-til-avif-konverter',
-        title: 'TIFF til AVIF',
-        description:
-          'Konverter TIFF-filer til moderne AVIF. Massiv filstorrelsesreduktion.',
       },
       no: {
         slug: 'tiff-til-avif-konverterer',
@@ -4657,12 +4400,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera JPG-foton till GIF-format. Perfekt för enkel grafik och ikoner.',
       },
-      da: {
-        slug: 'jpg-til-gif-konverter',
-        title: 'JPG til GIF',
-        description:
-          'Konverter JPG-fotos til GIF-format. Perfekt til simpel grafik og ikoner.',
-      },
       no: {
         slug: 'jpg-til-gif-konverterer',
         title: 'JPG til GIF',
@@ -4760,12 +4497,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PNG till GIF',
         description:
           'Konvertera PNG-grafik till GIF. Idealiskt för enkla ikoner och grafik.',
-      },
-      da: {
-        slug: 'png-til-gif-konverter',
-        title: 'PNG til GIF',
-        description:
-          'Konverter PNG-grafik til GIF. Ideel til simple ikoner og grafik.',
       },
       no: {
         slug: 'png-til-gif-konverterer',
@@ -4865,12 +4596,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera WebP-bilder till GIF-format för maximal kompatibilitet.',
       },
-      da: {
-        slug: 'webp-til-gif-konverter',
-        title: 'WebP til GIF',
-        description:
-          'Konverter WebP-billeder til GIF-format for maksimal kompatibilitet.',
-      },
       no: {
         slug: 'webp-til-gif-konverterer',
         title: 'WebP til GIF',
@@ -4960,11 +4685,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG till GIF',
         description: 'Konvertera vektor-SVG-grafik till GIF-rasterformat.',
       },
-      da: {
-        slug: 'svg-til-gif-konverter',
-        title: 'SVG til GIF',
-        description: 'Konverter vektor-SVG-grafik til GIF-rasterformat.',
-      },
       no: {
         slug: 'svg-til-gif-konverterer',
         title: 'SVG til GIF',
@@ -5050,11 +4770,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'bmp-till-gif-konverterare',
         title: 'BMP till GIF',
         description: 'Konvertera okomprimerade BMP-filer till lattvikts-GIF.',
-      },
-      da: {
-        slug: 'bmp-til-gif-konverter',
-        title: 'BMP til GIF',
-        description: 'Konverter ukomprimerede BMP-filer til let GIF.',
       },
       no: {
         slug: 'bmp-til-gif-konverterer',
@@ -5151,12 +4866,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera JPG-foton till förlustfritt TIFF. For utskrift och arkivering.',
       },
-      da: {
-        slug: 'jpg-til-tiff-konverter',
-        title: 'JPG til TIFF',
-        description:
-          'Konverter JPG-fotos til tabsfrit TIFF. Til udskrivning og arkivering.',
-      },
       no: {
         slug: 'jpg-til-tiff-konverterer',
         title: 'JPG til TIFF',
@@ -5246,11 +4955,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'png-till-tiff-konverterare',
         title: 'PNG till TIFF',
         description: 'Konvertera PNG-grafik till professionellt TIFF-format.',
-      },
-      da: {
-        slug: 'png-til-tiff-konverter',
-        title: 'PNG til TIFF',
-        description: 'Konverter PNG-grafik til professionelt TIFF-format.',
       },
       no: {
         slug: 'png-til-tiff-konverterer',
@@ -5346,12 +5050,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'WebP till TIFF',
         description:
           'Konvertera WebP-bilder till professionellt TIFF för utskrift och arkivering.',
-      },
-      da: {
-        slug: 'webp-til-tiff-konverter',
-        title: 'WebP til TIFF',
-        description:
-          'Konverter WebP-billeder til professionelt TIFF til udskrivning og arkivering.',
       },
       no: {
         slug: 'webp-til-tiff-konverterer',
@@ -5450,12 +5148,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera vektor-SVG-grafik till hogkvalitativt TIFF-raster.',
       },
-      da: {
-        slug: 'svg-til-tiff-konverter',
-        title: 'SVG til TIFF',
-        description:
-          'Konverter vektor-SVG-grafik til hojkvalitets TIFF-raster.',
-      },
       no: {
         slug: 'svg-til-tiff-konverterer',
         title: 'SVG til TIFF',
@@ -5553,12 +5245,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'BMP till TIFF',
         description:
           'Konvertera BMP-filer till professionellt TIFF-format för utskrift.',
-      },
-      da: {
-        slug: 'bmp-til-tiff-konverter',
-        title: 'BMP til TIFF',
-        description:
-          'Konverter BMP-filer til professionelt TIFF-format til udskrivning.',
       },
       no: {
         slug: 'bmp-til-tiff-konverterer',
@@ -5659,12 +5345,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera AVIF-filer till TIFF-format. Gratis, privat och obegränsat.',
       },
-      da: {
-        slug: 'avif-til-tiff-konverter',
-        title: 'AVIF til TIFF',
-        description:
-          'Konverter AVIF-filer til TIFF-format. Gratis, privat og ubegrænset.',
-      },
       no: {
         slug: 'avif-til-tiff-konverterer',
         title: 'AVIF til TIFF',
@@ -5761,12 +5441,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEIC till TIFF',
         description:
           'Konvertera iPhone HEIC-foton till professionellt TIFF-format.',
-      },
-      da: {
-        slug: 'heic-til-tiff-konverter',
-        title: 'HEIC til TIFF',
-        description:
-          'Konverter iPhone HEIC-fotos til professionelt TIFF-format.',
       },
       no: {
         slug: 'heic-til-tiff-konverterer',
@@ -5869,12 +5543,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera JPG-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
       },
-      da: {
-        slug: 'jpg-til-pdf-konverter',
-        title: 'JPG til PDF',
-        description:
-          'Konverter JPG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
-      },
       no: {
         slug: 'jpg-til-pdf-konverterer',
         title: 'JPG til PDF',
@@ -5973,12 +5641,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PNG till PDF',
         description:
           'Konvertera PNG-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
-      },
-      da: {
-        slug: 'png-til-pdf-konverter',
-        title: 'PNG til PDF',
-        description:
-          'Konverter PNG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
       },
       no: {
         slug: 'png-til-pdf-konverterer',
@@ -6079,12 +5741,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera WebP-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
       },
-      da: {
-        slug: 'webp-til-pdf-konverter',
-        title: 'WebP til PDF',
-        description:
-          'Konverter WebP-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
-      },
       no: {
         slug: 'webp-til-pdf-konverterer',
         title: 'WebP til PDF',
@@ -6183,12 +5839,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HEIC till PDF',
         description:
           'Konvertera HEIC-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
-      },
-      da: {
-        slug: 'heic-til-pdf-konverter',
-        title: 'HEIC til PDF',
-        description:
-          'Konverter HEIC-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
       },
       no: {
         slug: 'heic-til-pdf-konverterer',
@@ -6289,12 +5939,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera BMP-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
       },
-      da: {
-        slug: 'bmp-til-pdf-konverter',
-        title: 'BMP til PDF',
-        description:
-          'Konverter BMP-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
-      },
       no: {
         slug: 'bmp-til-pdf-konverterer',
         title: 'BMP til PDF',
@@ -6394,12 +6038,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera TIFF-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
       },
-      da: {
-        slug: 'tiff-til-pdf-konverter',
-        title: 'TIFF til PDF',
-        description:
-          'Konverter TIFF-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
-      },
       no: {
         slug: 'tiff-til-pdf-konverterer',
         title: 'TIFF til PDF',
@@ -6498,12 +6136,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'SVG till PDF',
         description:
           'Konvertera SVG-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.',
-      },
-      da: {
-        slug: 'svg-til-pdf-konverter',
-        title: 'SVG til PDF',
-        description:
-          'Konverter SVG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.',
       },
       no: {
         slug: 'svg-til-pdf-konverterer',
@@ -6607,12 +6239,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera PDF-sidor till JPG-bilder. Hög kvalitet, inga begränsningar. Gratis.',
       },
-      da: {
-        slug: 'pdf-til-jpg-konverter',
-        title: 'PDF til JPG',
-        description:
-          'Konverter PDF-sider til JPG-billeder. Høj kvalitet, ingen begrænsninger. Gratis.',
-      },
       no: {
         slug: 'pdf-til-jpg-konverterer',
         title: 'PDF til JPG',
@@ -6712,12 +6338,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera PDF-sidor till PNG-bilder. Hög kvalitet, inga begränsningar. Gratis.',
       },
-      da: {
-        slug: 'pdf-til-png-konverter',
-        title: 'PDF til PNG',
-        description:
-          'Konverter PDF-sider til PNG-billeder. Høj kvalitet, ingen begrænsninger. Gratis.',
-      },
       no: {
         slug: 'pdf-til-png-konverterer',
         title: 'PDF til PNG',
@@ -6816,12 +6436,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'PDF till WebP',
         description:
           'Konvertera PDF-sidor till WebP-bilder. Hög kvalitet, inga begränsningar. Gratis.',
-      },
-      da: {
-        slug: 'pdf-til-webp-konverter',
-        title: 'PDF til WebP',
-        description:
-          'Konverter PDF-sider til WebP-billeder. Høj kvalitet, ingen begrænsninger. Gratis.',
       },
       no: {
         slug: 'pdf-til-webp-konverterer',
@@ -6925,12 +6539,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera CSV till JSON-format. Automatisk parsning och formatering. Gratis.',
       },
-      da: {
-        slug: 'csv-til-json-konverter',
-        title: 'CSV til JSON',
-        description:
-          'Konverter CSV til JSON-format. Automatisk parsing og formatering. Gratis.',
-      },
       no: {
         slug: 'csv-til-json-konverterer',
         title: 'CSV til JSON',
@@ -7029,12 +6637,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JSON till CSV',
         description:
           'Konvertera JSON till CSV-format. Automatisk parsning och formatering. Gratis.',
-      },
-      da: {
-        slug: 'json-til-csv-konverter',
-        title: 'JSON til CSV',
-        description:
-          'Konverter JSON til CSV-format. Automatisk parsing og formatering. Gratis.',
       },
       no: {
         slug: 'json-til-csv-konverterer',
@@ -7135,12 +6737,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera XML till JSON-format. Automatisk parsning och formatering. Gratis.',
       },
-      da: {
-        slug: 'xml-til-json-konverter',
-        title: 'XML til JSON',
-        description:
-          'Konverter XML til JSON-format. Automatisk parsing og formatering. Gratis.',
-      },
       no: {
         slug: 'xml-til-json-konverterer',
         title: 'XML til JSON',
@@ -7239,12 +6835,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JSON till XML',
         description:
           'Konvertera JSON till XML-format. Automatisk parsning och formatering. Gratis.',
-      },
-      da: {
-        slug: 'json-til-xml-konverter',
-        title: 'JSON til XML',
-        description:
-          'Konverter JSON til XML-format. Automatisk parsing og formatering. Gratis.',
       },
       no: {
         slug: 'json-til-xml-konverterer',
@@ -7345,12 +6935,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera YAML till JSON-format. Automatisk parsning och formatering. Gratis.',
       },
-      da: {
-        slug: 'yaml-til-json-konverter',
-        title: 'YAML til JSON',
-        description:
-          'Konverter YAML til JSON-format. Automatisk parsing og formatering. Gratis.',
-      },
       no: {
         slug: 'yaml-til-json-konverterer',
         title: 'YAML til JSON',
@@ -7449,12 +7033,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JSON till YAML',
         description:
           'Konvertera JSON till YAML-format. Automatisk parsning och formatering. Gratis.',
-      },
-      da: {
-        slug: 'json-til-yaml-konverter',
-        title: 'JSON til YAML',
-        description:
-          'Konverter JSON til YAML-format. Automatisk parsing og formatering. Gratis.',
       },
       no: {
         slug: 'json-til-yaml-konverterer',
@@ -7555,12 +7133,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Konvertera Markdown till HTML-format. Automatisk parsning och formatering. Gratis.',
       },
-      da: {
-        slug: 'markdown-til-html-konverter',
-        title: 'Markdown til HTML',
-        description:
-          'Konverter Markdown til HTML-format. Automatisk parsing og formatering. Gratis.',
-      },
       no: {
         slug: 'markdown-til-html-konverterer',
         title: 'Markdown til HTML',
@@ -7659,12 +7231,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'HTML till Markdown',
         description:
           'Konvertera HTML till Markdown-format. Automatisk parsning och formatering. Gratis.',
-      },
-      da: {
-        slug: 'html-til-markdown-konverter',
-        title: 'HTML til Markdown',
-        description:
-          'Konverter HTML til Markdown-format. Automatisk parsing og formatering. Gratis.',
       },
       no: {
         slug: 'html-til-markdown-konverterer',
@@ -7768,12 +7334,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Koda bilder till Base64-format. Kopiera färdig kod för CSS eller HTML. Gratis.',
       },
-      da: {
-        slug: 'billede-til-base64-konverter',
-        title: 'Billede til Base64',
-        description:
-          'Kod billeder til Base64-format. Kopier færdig kode til CSS eller HTML. Gratis.',
-      },
       no: {
         slug: 'bilde-til-base64-konverterer',
         title: 'Bilde til Base64',
@@ -7873,12 +7433,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         description:
           'Avkoda Base64-strängar till bilder. Förhandsgranska och ladda ner i webbläsaren. Gratis.',
       },
-      da: {
-        slug: 'base64-til-billede-konverter',
-        title: 'Base64 til Billede',
-        description:
-          'Afkod Base64-strenge til billeder. Forhåndsvisning og download i browseren. Gratis.',
-      },
       no: {
         slug: 'base64-til-bilde-konverterer',
         title: 'Base64 til Bilde',
@@ -7954,11 +7508,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-pt-na-px',
         title: 'pt na px',
         description: 'Převeďte body na pixely a naopak.',
-      },
-      da: {
-        slug: 'pt-til-px-konverter',
-        title: 'pt til px',
-        description: 'Omregn punkter til pixels og omvendt.',
       },
       sv: {
         slug: 'pt-till-px-omvandlare',
@@ -8045,11 +7594,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'rem na px',
         description: 'Převeďte CSS rem na pixely a naopak.',
       },
-      da: {
-        slug: 'rem-til-px-konverter',
-        title: 'rem til px',
-        description: 'Omregn CSS rem til pixels og omvendt.',
-      },
       sv: {
         slug: 'rem-till-px-omvandlare',
         title: 'rem till px',
@@ -8134,11 +7678,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-em-na-px',
         title: 'em na px',
         description: 'Převeďte CSS em na pixely a naopak.',
-      },
-      da: {
-        slug: 'em-til-px-konverter',
-        title: 'em til px',
-        description: 'Omregn CSS em til pixels og omvendt.',
       },
       sv: {
         slug: 'em-till-px-omvandlare',
@@ -8225,11 +7764,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'cm na px',
         description: 'Převeďte cm na pixely s podporou DPI.',
       },
-      da: {
-        slug: 'cm-til-px-konverter',
-        title: 'cm til px',
-        description: 'Omregn cm til pixels med DPI-understøttelse.',
-      },
       sv: {
         slug: 'cm-till-px-omvandlare',
         title: 'cm till px',
@@ -8314,11 +7848,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-px-na-cm',
         title: 'px na cm',
         description: 'Převeďte pixely na cm s podporou DPI.',
-      },
-      da: {
-        slug: 'px-til-cm-konverter',
-        title: 'px til cm',
-        description: 'Omregn pixels til cm med DPI-understøttelse.',
       },
       sv: {
         slug: 'px-till-cm-omvandlare',
@@ -8405,11 +7934,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'mm na px',
         description: 'Převeďte mm na pixely s podporou DPI.',
       },
-      da: {
-        slug: 'mm-til-px-konverter',
-        title: 'mm til px',
-        description: 'Omregn mm til pixels med DPI-understøttelse.',
-      },
       sv: {
         slug: 'mm-till-px-omvandlare',
         title: 'mm till px',
@@ -8494,11 +8018,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-palce-na-px',
         title: 'palce na px',
         description: 'Převeďte palce na pixely s podporou DPI.',
-      },
-      da: {
-        slug: 'tommer-til-px-konverter',
-        title: 'tommer til px',
-        description: 'Omregn tommer til pixels med DPI-understøttelse.',
       },
       sv: {
         slug: 'tum-till-px-omvandlare',
@@ -8585,11 +8104,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-dpi-na-ppi',
         title: 'DPI na PPI',
         description: 'Porovnejte DPI a PPI — tiskové vs obrazovkové rozlišení.',
-      },
-      da: {
-        slug: 'dpi-til-ppi-konverter',
-        title: 'DPI til PPI',
-        description: 'Sammenlign DPI og PPI — print- vs skærmopløsning.',
       },
       sv: {
         slug: 'dpi-till-ppi-omvandlare',
@@ -8678,11 +8192,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-hex-na-rgb',
         title: 'HEX na RGB',
         description: 'Převeďte HEX kódy barev na RGB a naopak.',
-      },
-      da: {
-        slug: 'hex-til-rgb-konverter',
-        title: 'HEX til RGB',
-        description: 'Omregn HEX-farvekoder til RGB og omvendt.',
       },
       sv: {
         slug: 'hex-till-rgb-omvandlare',
@@ -8774,11 +8283,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-rgb-na-cmyk',
         title: 'RGB na CMYK',
         description: 'Převeďte RGB na CMYK a naopak. Pro přípravu tisku.',
-      },
-      da: {
-        slug: 'rgb-til-cmyk-konverter',
-        title: 'RGB til CMYK',
-        description: 'Omregn RGB til CMYK og omvendt. Til trykforberedelse.',
       },
       sv: {
         slug: 'rgb-till-cmyk-omvandlare',
@@ -8872,11 +8376,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'bajty na KB/MB/GB',
         description: 'Převeďte bajty na KB, MB, GB a naopak.',
       },
-      da: {
-        slug: 'bytes-konverter',
-        title: 'bytes til KB/MB/GB',
-        description: 'Omregn bytes til KB, MB, GB og omvendt.',
-      },
       sv: {
         slug: 'bytes-omvandlare',
         title: 'bytes till KB/MB/GB',
@@ -8962,11 +8461,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Unix na datum',
         description: 'Převeďte Unix časové razítko na datum a čas.',
       },
-      da: {
-        slug: 'unix-timestamp-konverter',
-        title: 'Unix til dato',
-        description: 'Omregn Unix-tidsstempel til dato og tid.',
-      },
       sv: {
         slug: 'unix-timestamp-omvandlare',
         title: 'Unix till datum',
@@ -9051,11 +8545,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-desitkovy-na-binarni',
         title: 'DEC na BIN',
         description: 'Převeďte desítková čísla na binární a naopak.',
-      },
-      da: {
-        slug: 'decimal-til-binaer-konverter',
-        title: 'DEC til BIN',
-        description: 'Omregn decimaltal til binære tal og omvendt.',
       },
       sv: {
         slug: 'decimal-till-binaer-omvandlare',
@@ -9144,11 +8633,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'DEC na HEX',
         description: 'Převeďte desítková čísla na hexadecimální a naopak.',
       },
-      da: {
-        slug: 'decimal-til-hex-konverter',
-        title: 'DEC til HEX',
-        description: 'Omregn decimaltal til hexadecimale tal og omvendt.',
-      },
       sv: {
         slug: 'decimal-till-hex-omvandlare',
         title: 'DEC till HEX',
@@ -9234,11 +8718,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'prevodnik-mbps-na-mbs',
         title: 'Mbps na MB/s',
         description: 'Převeďte Mbps na MB/s a naopak.',
-      },
-      da: {
-        slug: 'mbps-til-mbs-konverter',
-        title: 'Mbps til MB/s',
-        description: 'Omregn Mbps til MB/s og omvendt.',
       },
       sv: {
         slug: 'mbps-till-mbs-omvandlare',

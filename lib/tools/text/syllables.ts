@@ -41,7 +41,6 @@ export function countSyllablesInWord(
     case 'cs':
       return countSyllablesSlavic(w);
     case 'sv':
-    case 'da':
     case 'no':
     case 'fi':
       return countSyllablesNordic(w, locale);

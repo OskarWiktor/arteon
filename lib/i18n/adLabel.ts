@@ -21,7 +21,6 @@ export const AD_LABEL: Record<Locale, string> = {
   hu: 'HIRDETÉS',
   cs: 'REKLAMA',
   sv: 'ANNONS',
-  da: 'REKLAME',
   no: 'ANNONSE',
   fi: 'MAINOS',
   el: 'ΔΙΑΦΗΜΙΣΗ',

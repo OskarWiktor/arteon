@@ -1,5 +1,4 @@
 import cs from '@/data/cs/pages/contact.json';
-import da from '@/data/da/pages/contact.json';
 import de from '@/data/de/pages/contact.json';
 import el from '@/data/el/pages/contact.json';
 import en from '@/data/en/pages/contact.json';
@@ -62,7 +61,6 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
   hu,
   cs,
   sv,
-  da,
   no,
   fi,
   el,

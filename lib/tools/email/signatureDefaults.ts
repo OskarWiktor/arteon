@@ -527,42 +527,6 @@ export function getDefaultSignature(locale: Locale): SignatureConfig {
       avatarUrl: '',
     };
   }
-  if (locale === 'da') {
-    return {
-      fullName: 'Lars Nielsen',
-      jobTitle: 'Webudvikler',
-      company: 'Arteon Agency',
-      topLine: '',
-      nameTag: '',
-      email: 'lars.nielsen@eksempel.dk',
-      phone: '+45 12 34 56 78',
-      website: 'https://www.dinhjemmeside.dk',
-      address: 'Str\u00f8get 1, 1000 K\u00f8benhavn',
-      extraLine: 'Jeg bygger hurtige og funktionelle hjemmesider.',
-      ctaLabel: 'Book en gratis konsultation',
-      ctaUrl: 'https://www.dinhjemmeside.dk',
-      cta2Label: '',
-      cta2Url: '',
-      socials: {
-        linkedin: 'https://www.linkedin.com/in/larsnielsen',
-        instagram: '',
-        facebook: '',
-        tiktok: '',
-        youtube: '',
-        x: '',
-        github: '',
-        dribbble: '',
-        behance: '',
-        whatsapp: '',
-        telegram: '',
-        pinterest: '',
-      },
-      legalNote:
-        'Denne besked kan indeholde fortrolige oplysninger. Hvis du ikke er den tilsigtede modtager, bedes du informere afsenderen og slette denne besked.',
-      formalLine: '',
-      avatarUrl: '',
-    };
-  }
   if (locale === 'fi') {
     return {
       fullName: 'Matti Meik\u00e4l\u00e4inen',

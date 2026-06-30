@@ -122,14 +122,6 @@ export const UNIT_CONVERTER_I18N: Record<Locale, UnitConverterI18n> = {
     pickerSource: 'Konvertera från',
     pickerTarget: 'Konvertera till',
   },
-  da: {
-    titleConvertTo: u => `Konverter andre enheder til ${u}`,
-    titleConvertFrom: u => `Konverter ${u} til andre enheder`,
-    titleOtherConverters: 'Udforsk andre enhedskonvertere',
-    connector: 'til',
-    pickerSource: 'Konvertér fra',
-    pickerTarget: 'Konvertér til',
-  },
   no: {
     titleConvertTo: u => `Konverter andre enheter til ${u}`,
     titleConvertFrom: u => `Konverter ${u} til andre enheter`,

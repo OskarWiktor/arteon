@@ -1,5 +1,4 @@
 import cs from '@/data/cs/tools-ui/color-palette.json';
-import da from '@/data/da/tools-ui/color-palette.json';
 import de from '@/data/de/tools-ui/color-palette.json';
 import el from '@/data/el/tools-ui/color-palette.json';
 import en from '@/data/en/tools-ui/color-palette.json';
@@ -29,7 +28,6 @@ export const ui = {
   hu,
   cs,
   sv,
-  da,
   no,
   fi,
   el,

@@ -1,5 +1,4 @@
 import csDict from '@/data/cs/dictionary.json';
-import daDict from '@/data/da/dictionary.json';
 import deDict from '@/data/de/dictionary.json';
 import elDict from '@/data/el/dictionary.json';
 import enDict from '@/data/en/dictionary.json';
@@ -52,7 +51,6 @@ const dicts = {
   hu: huDict,
   cs: csDict,
   sv: svDict,
-  da: daDict,
   no: noDict,
   fi: fiDict,
   el: elDict,
@@ -202,18 +200,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/sv/kontakt',
     privacyHref: '/sv/integritetspolicy',
     termsHref: '/sv/anvandarvillkor',
-  },
-  da: {
-    lang: 'da',
-    hreflang: 'da',
-    label: 'DA',
-    name: 'Dansk',
-    toolsBasePath: '/da/vaerktojer',
-    toolsIndexHref: '/da/vaerktojer',
-    aboutHref: '/da/om-os',
-    contactHref: '/da/kontakt',
-    privacyHref: '/da/privatlivspolitik',
-    termsHref: '/da/brugsvilkar',
   },
   no: {
     lang: 'no',

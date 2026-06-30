@@ -1,5 +1,4 @@
 import cs from '@/data/cs/tools-ui/qr-code.json';
-import da from '@/data/da/tools-ui/qr-code.json';
 import de from '@/data/de/tools-ui/qr-code.json';
 import el from '@/data/el/tools-ui/qr-code.json';
 import en from '@/data/en/tools-ui/qr-code.json';
@@ -29,7 +28,6 @@ export const ui = {
   hu,
   cs,
   sv,
-  da,
   no,
   fi,
   el,

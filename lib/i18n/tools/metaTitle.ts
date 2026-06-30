@@ -1,5 +1,4 @@
 import cs from '@/data/cs/tools-ui/meta-title.json';
-import da from '@/data/da/tools-ui/meta-title.json';
 import de from '@/data/de/tools-ui/meta-title.json';
 import el from '@/data/el/tools-ui/meta-title.json';
 import en from '@/data/en/tools-ui/meta-title.json';
@@ -29,7 +28,6 @@ export const ui = {
   hu,
   cs,
   sv,
-  da,
   no,
   fi,
   el,

@@ -1,5 +1,4 @@
 import cs from '@/data/cs/tools-ui/image-resize.json';
-import da from '@/data/da/tools-ui/image-resize.json';
 import de from '@/data/de/tools-ui/image-resize.json';
 import el from '@/data/el/tools-ui/image-resize.json';
 import en from '@/data/en/tools-ui/image-resize.json';
@@ -29,7 +28,6 @@ export const ui = {
   hu,
   cs,
   sv,
-  da,
   no,
   fi,
   el,

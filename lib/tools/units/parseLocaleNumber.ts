@@ -18,7 +18,6 @@ const COMMA_DECIMAL_LOCALES: ReadonlySet<Locale> = new Set([
   'hu',
   'cs',
   'sv',
-  'da',
   'no',
   'fi',
   'el',

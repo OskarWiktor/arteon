@@ -11,7 +11,6 @@ export type Locale =
   | 'hu'
   | 'cs'
   | 'sv'
-  | 'da'
   | 'no'
   | 'fi'
   | 'el';

@@ -114,7 +114,6 @@ const FLESCH_FORMULAS: Partial<Record<Locale, FleschFormula>> = {
   // Greek adaptation - inflectional, longer words than EN but less extreme than PL/HU
   el: standardFlesch(66),
   sv: lixFormula,
-  da: lixFormula,
   no: lixFormula,
   fi: lixFormula,
 };
@@ -256,13 +255,6 @@ const READABILITY_LABELS: Record<
     moderate: 'Medel',
     difficult: 'Svår',
     veryDifficult: 'Mycket svår',
-  },
-  da: {
-    veryEasy: 'Meget let',
-    easy: 'Let',
-    moderate: 'Middel',
-    difficult: 'Svær',
-    veryDifficult: 'Meget svær',
   },
   no: {
     veryEasy: 'Veldig lett',

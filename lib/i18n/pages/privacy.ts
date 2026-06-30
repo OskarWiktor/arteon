@@ -1,5 +1,4 @@
 import cs from '@/data/cs/pages/privacy.json';
-import da from '@/data/da/pages/privacy.json';
 import de from '@/data/de/pages/privacy.json';
 import el from '@/data/el/pages/privacy.json';
 import en from '@/data/en/pages/privacy.json';
@@ -40,7 +39,6 @@ const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   hu,
   cs,
   sv,
-  da,
   no,
   fi,
   el,

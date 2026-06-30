@@ -1,5 +1,4 @@
 import cs from '@/data/cs/tools-ui/jpg-png-webp.json';
-import da from '@/data/da/tools-ui/jpg-png-webp.json';
 import de from '@/data/de/tools-ui/jpg-png-webp.json';
 import el from '@/data/el/tools-ui/jpg-png-webp.json';
 import en from '@/data/en/tools-ui/jpg-png-webp.json';
@@ -29,7 +28,6 @@ export const ui = {
   hu,
   cs,
   sv,
-  da,
   no,
   fi,
   el,

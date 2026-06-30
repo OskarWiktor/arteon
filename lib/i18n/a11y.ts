@@ -113,13 +113,6 @@ export const A11Y_UI: Record<Locale, A11yStrings> = {
     meets: 'uppfyller',
     doesNotMeet: 'uppfyller inte',
   },
-  da: {
-    colorSwatch: (i, v) => `Farve ${i}: ${v}`,
-    tableRegion: 'Tabel',
-    themeToggle: 'Skift mellem lys og mørk tilstand',
-    meets: 'opfylder',
-    doesNotMeet: 'opfylder ikke',
-  },
   no: {
     colorSwatch: (i, v) => `Farge ${i}: ${v}`,
     tableRegion: 'Tabell',

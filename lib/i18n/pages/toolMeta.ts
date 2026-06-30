@@ -123,7 +123,6 @@ export function getToolSoftwareSchema(opts: {
           cs: 'CZK',
           sv: 'SEK',
           sq: 'ALL',
-          da: 'DKK',
           no: 'NOK',
           fi: 'EUR',
           sk: 'EUR',

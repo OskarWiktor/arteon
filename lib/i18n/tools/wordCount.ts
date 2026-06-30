@@ -1,5 +1,4 @@
 import cs from '@/data/cs/tools-ui/word-count.json';
-import da from '@/data/da/tools-ui/word-count.json';
 import de from '@/data/de/tools-ui/word-count.json';
 import el from '@/data/el/tools-ui/word-count.json';
 import en from '@/data/en/tools-ui/word-count.json';
@@ -29,7 +28,6 @@ export const ui = {
   hu,
   cs,
   sv,
-  da,
   no,
   fi,
   el,
