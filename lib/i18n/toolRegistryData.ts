@@ -6057,6 +6057,71 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'pxToMmDpi',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-px-na-mm',
+        title: 'px na mm',
+        description:
+          'Przelicz piksele na milimetry z uwzglednieniem DPI. Dla grafiki i druku.',
+      },
+      en: {
+        slug: 'px-to-mm-converter',
+        title: 'px to mm',
+        description:
+          'Convert pixels to millimeters with DPI support. For graphics and print.',
+      },
+      de: {
+        slug: 'px-in-mm-umrechner',
+        title: 'px in mm',
+        description: 'Pixel in Millimeter umrechnen mit DPI-Unterstützung.',
+      },
+      fr: {
+        slug: 'convertisseur-px-en-mm',
+        title: 'px en mm',
+        description: 'Convertissez pixels en mm avec support DPI.',
+      },
+      es: {
+        slug: 'convertidor-px-a-mm',
+        title: 'px a mm',
+        description: 'Convierte píxeles a mm con soporte DPI.',
+      },
+      pt: {
+        slug: 'conversor-px-para-mm',
+        title: 'px para mm',
+        description: 'Converta píxeis em mm com suporte DPI.',
+      },
+      it: {
+        slug: 'convertitore-px-in-mm',
+        title: 'px in mm',
+        description: 'Converti pixel in mm con supporto DPI.',
+      },
+      nl: {
+        slug: 'px-naar-mm-converter',
+        title: 'px naar mm',
+        description: 'Reken pixels om naar mm met DPI-ondersteuning.',
+      },
+      cs: {
+        slug: 'prevodnik-px-na-mm',
+        title: 'px na mm',
+        description: 'Převeďte pixely na mm s podporou DPI.',
+      },
+      fi: {
+        slug: 'px-mm-muunnin',
+        title: 'px mm:ksi',
+        description: 'Muunna pikselit millimetreiksi DPI-tuella.',
+      },
+      el: {
+        slug: 'metatropeas-px-se-mm',
+        title: 'px σε mm',
+        description: 'Μετατρέψτε pixel σε mm με υποστήριξη DPI.',
+      },
+    },
+  },
+  {
     key: 'inchesToPxDpi',
     section: 'jednostki',
     icon: RiRulerLine,
@@ -6118,73 +6183,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'metatropeas-intses-se-px',
         title: 'ίντσες σε px',
         description: 'Μετατρέψτε ίντσες σε pixel με υποστήριξη DPI.',
-      },
-    },
-  },
-  {
-    key: 'dpiToPpi',
-    section: 'jednostki',
-    icon: RiRulerLine,
-    desktopOnly: false,
-    locales: {
-      pl: {
-        slug: 'konwerter-dpi-na-ppi',
-        title: 'DPI na PPI',
-        description:
-          'Porownaj DPI i PPI - poznaj roznice miedzy rozdzielczoscia druku a ekranu.',
-      },
-      en: {
-        slug: 'dpi-to-ppi-converter',
-        title: 'DPI to PPI',
-        description:
-          'Compare DPI and PPI — understand the difference between print and screen resolution.',
-      },
-      de: {
-        slug: 'dpi-in-ppi-umrechner',
-        title: 'DPI in PPI',
-        description:
-          'DPI und PPI vergleichen — Druck- vs. Bildschirmauflösung.',
-      },
-      fr: {
-        slug: 'convertisseur-dpi-en-ppi',
-        title: 'DPI en PPI',
-        description: "Comparez DPI et PPI — résolution d'impression vs écran.",
-      },
-      es: {
-        slug: 'convertidor-dpi-a-ppi',
-        title: 'DPI a PPI',
-        description: 'Compare DPI y PPI — resolución de impresión vs pantalla.',
-      },
-      pt: {
-        slug: 'conversor-dpi-para-ppi',
-        title: 'DPI para PPI',
-        description: 'Compare DPI e PPI — resolução de impressão vs ecrã.',
-      },
-      it: {
-        slug: 'convertitore-dpi-in-ppi',
-        title: 'DPI in PPI',
-        description: 'Confronta DPI e PPI — risoluzione stampa vs schermo.',
-      },
-      nl: {
-        slug: 'dpi-naar-ppi-converter',
-        title: 'DPI naar PPI',
-        description: 'Vergelijk DPI en PPI — afdruk- vs schermresolutie.',
-      },
-      cs: {
-        slug: 'prevodnik-dpi-na-ppi',
-        title: 'DPI na PPI',
-        description: 'Porovnejte DPI a PPI — tiskové vs obrazovkové rozlišení.',
-      },
-      fi: {
-        slug: 'dpi-ppi-muunnin',
-        title: 'DPI PPI:ksi',
-        description:
-          'Vertaa DPI:tä ja PPI:tä — tulostustarkkuus vs näyttötarkkuus.',
-      },
-      el: {
-        slug: 'metatropeas-dpi-se-ppi',
-        title: 'DPI σε PPI',
-        description: 'Συγκρίνετε DPI και PPI — ανάλυση εκτύπωσης vs οθόνης.',
       },
     },
   },

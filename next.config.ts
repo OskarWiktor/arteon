@@ -288,7 +288,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/da/vaerktojer/dpi-til-ppi-konverter',
-        destination: '/en/tools/dpi-to-ppi-converter',
+        destination: '/en/tools/px-to-cm-converter',
         statusCode: 301,
       },
       {
@@ -738,7 +738,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/ro/instrumente/convertor-dpi-in-ppi',
-        destination: '/en/tools/dpi-to-ppi-converter',
+        destination: '/en/tools/px-to-cm-converter',
         statusCode: 301,
       },
       {
@@ -1208,7 +1208,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/hu/eszkozok/dpi-ppi-atvalto',
-        destination: '/en/tools/dpi-to-ppi-converter',
+        destination: '/en/tools/px-to-cm-converter',
         statusCode: 301,
       },
       {
@@ -1683,7 +1683,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/no/verktoy/dpi-til-ppi-kalkulator',
-        destination: '/en/tools/dpi-to-ppi-converter',
+        destination: '/en/tools/px-to-cm-converter',
         statusCode: 301,
       },
       {
@@ -2148,7 +2148,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/sv/verktyg/dpi-till-ppi-omvandlare',
-        destination: '/en/tools/dpi-to-ppi-converter',
+        destination: '/en/tools/px-to-cm-converter',
         statusCode: 301,
       },
       {

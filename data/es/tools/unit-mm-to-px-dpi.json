@@ -2,15 +2,15 @@
   "toolKey": "mmToPxDpi",
   "locale": "es",
   "metadata": {
-    "title": "Convertidor de mm a píxeles (DPI)",
-    "description": "Convierte milímetros a píxeles a cualquier resolución DPI. Para diseño de empaques y gráficos.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "title": "Conversor mm a px (DPI) – convierte milímetros a píxeles",
+    "description": "Convierte milímetros a píxeles con DPI ajustable. Imprescindible en artes gráficas, diseño de packaging y preparación de archivos en Illustrator, InDesign y CorelDRAW.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/es/herramientas/convertidor-mm-a-px"
   },
   "hero": {
-    "title": "Convertir mm a píxeles",
-    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+    "title": "Convierte milímetros a píxeles con el DPI que necesites",
+    "description": "Introduce un valor en milímetros, configura la resolución DPI y consulta el resultado en píxeles. Comprueba cuántos píxeles corresponden a un valor dado en milímetros, por ejemplo las medidas de una tarjeta de visita, un folleto, un cartel o una hoja A4. El conversor te ayuda a elegir la resolución de archivo correcta antes de enviarlo a la imprenta.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -24,34 +24,56 @@
   },
   "schemas": {
     "software": {
-      "name": "Convertidor de mm a píxeles (DPI)",
-      "alternateName": ["Convertir mm a píxeles"],
+      "name": "Conversor de milímetros a píxeles con DPI ajustable – mm a px",
+      "alternateName": [
+        "Conversor mm a px",
+        "Calculadora mm a píxeles",
+        "Convertidor de milímetros a píxeles",
+        "Milímetros a píxeles",
+        "Convertir mm a px",
+        "Píxeles a partir de milímetros",
+        "Calculadora de milímetros a píxeles",
+        "Conversor mm px DPI",
+        "px desde mm",
+        "mm a px 300 dpi",
+        "Calculadora de resolución de impresión",
+        "Píxeles desde mm",
+        "Calculadora DPI para imprimir",
+        "Calculadora mm píxeles",
+        "Convertir milímetros a píxeles"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Convierte milímetros a píxeles a cualquier resolución DPI. Para diseño de empaques y gráficos.",
+      "description": "Conversor de milímetros a píxeles con un valor de DPI ajustable. Al introducir una medida verás al instante cuántos píxeles corresponden, incluyendo formatos habituales de tarjetas de visita, folletos y papel formato A. El conversor está pensado para preparar archivos listos para imprimir y diseño de packaging, y funciona enteramente en el navegador, sin registro.",
       "featureList": [
-        "Conversión bidireccional en tiempo real",
-        "Todos los convertidores en un solo lugar",
-        "Copiar resultado al portapapeles",
-        "Cálculo local en el navegador"
+        "Resolución DPI ajustable",
+        "La conversión funciona en ambos sentidos, así que puedes convertir milímetros a píxeles y píxeles a milímetros",
+        "El resultado aparece al instante mientras escribes, sin necesidad de pulsar ningún botón",
+        "Copia el resultado al portapapeles con un solo clic",
+        "Una tabla detallada para valores de 1 a 1.000 milímetros con cinco resoluciones DPI",
+        "Una tabla de formatos aparte cubre tarjetas de visita, folletos DL, papel A0–A7 y carteles de gran formato",
+        "Una sección con guías explica cómo configurar mm a px en Illustrator, InDesign, CorelDRAW, Photoshop, Figma y Canva",
+        "Una breve nota técnica sobre la unidad mm en CSS, SVG y código web",
+        "Todos los cálculos se ejecutan localmente en tu navegador, tus datos nunca salen de tu dispositivo y no se almacenan en ningún sitio",
+        "La fórmula exacta de conversión es px = mm × DPI ÷ 25,4, basada en la longitud fija de una pulgada (25,4 mm)"
       ]
     },
     "howTo": {
-      "name": "Cómo usar el convertidor",
-      "description": "Guía rápida para usar el convertidor.",
+      "name": "Cómo convertir milímetros a píxeles",
+      "description": "Instrucciones rápidas para usar el conversor mm a px con DPI ajustable.",
       "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Introducir valor",
-          "text": "Escriba un número en el campo de entrada de la izquierda."
+          "name": "Introduce un valor en milímetros",
+          "text": "Escribe en el campo izquierdo el número de milímetros que quieres convertir a píxeles."
         },
         {
-          "name": "Leer el resultado",
-          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+          "name": "Configura la resolución DPI",
+          "text": "Elige un valor de DPI. Las pantallas suelen usar 96 DPI, y la impresión, 300 DPI."
         },
         {
-          "name": "Copiar o invertir",
-          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+          "name": "Consulta el resultado o invierte la dirección",
+          "text": "El resultado en píxeles aparece al instante en el campo de al lado. Puedes copiarlo o usar el botón Invertir orden para convertir píxeles a milímetros."
         }
       ]
     }
@@ -63,116 +85,19 @@
     },
     {
       "type": "sectionBasic",
-      "title": "¿Cuándo necesitas convertir mm a píxeles?",
-      "html": "<p class=\"text-mid mb-4\">En trabajo de precisión las medidas se dan en milímetros. Para imágenes digitales: Píxeles = mm × DPI / 25,4.</p><p class=\"text-mid mb-4\">Esta conversión es importante para diseño de envases, impresión de etiquetas, fotografía de producto y mapeo preciso de mm a píxeles.</p><p class=\"text-mid mb-4\">A 300 DPI: 1 mm = 11,81 píxeles, 85 mm (ancho de tarjeta de visita) = 1.004 píxeles.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "Convertidor de mm a píxeles (DPI) – Arteon"
+      "title": "¿Por qué convertir milímetros a píxeles?",
+      "html": "<p class=\"text-mid mb-4\">El milímetro es la unidad física más precisa usada en artes gráficas, diseño de packaging e ingeniería: las imprentas indican las medidas de tarjetas de visita, folletos y sangrados en milímetros. El píxel, en cambio, describe un único punto en una pantalla o en un archivo de imagen. Para convertir uno en otro, necesitas conocer la resolución DPI, es decir, el número de píxeles que caben en una pulgada de material.</p><p class=\"text-mid mb-4\">Esta conversión la usan sobre todo los diseñadores que preparan archivos para una imprenta, los diseñadores de packaging que comprueban medidas de etiquetas, y cualquiera que trabaje en Illustrator, InDesign o CorelDRAW, que piensa en milímetros pero debe entregar un archivo con un número exacto de píxeles. El conversor te ahorra calcular a mano y memorizar la fórmula.</p><p class=\"text-mid\">Más abajo en esta página encontrarás una tabla detallada con valores habituales en milímetros, una tabla inversa de píxeles a milímetros, medidas listas para usar de tarjetas de visita, folletos y formatos A0–A7, y guías breves para cambiar de milímetros a píxeles en Illustrator, InDesign, CorelDRAW, Photoshop, Figma y Canva.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Conversor gratuito de milímetros a píxeles – Arteon"
     },
     {
       "type": "gap",
       "size": "xs"
     },
     {
-      "type": "sectionSteps",
-      "title": "¿Cómo usar el convertidor?",
-      "grid": "three",
-      "items": [
-        {
-          "title": "1. Introduce un valor",
-          "description": "Escribe un número en el campo de entrada.",
-          "icon": "RiInputMethodLine"
-        },
-        {
-          "title": "2. Lee el resultado",
-          "description": "El resultado aparece instantáneamente.",
-          "icon": "RiLoopLeftLine"
-        },
-        {
-          "title": "3. Copia o invierte",
-          "description": "Copia el resultado o invierte la dirección de conversión.",
-          "icon": "RiClipboardLine"
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "¿Cuándo es útil este convertidor?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiPrinterLine",
-          "title": "Diseño de envases",
-          "description": "Las medidas de envases en mm necesitan datos de impresión en píxeles. Etiqueta de 100 mm a 300 DPI = 1.181 px."
-        },
-        {
-          "icon": "RiFileTextLine",
-          "title": "Tarjetas de visita",
-          "description": "Estándar: 85 × 55 mm a 300 DPI = 1.004 × 650 px (más sangrado)."
-        },
-        {
-          "icon": "RiCropLine",
-          "title": "Etiquetas y pegatinas",
-          "description": "Las etiquetas de producto requieren medidas precisas en mm a píxeles."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "Impresión 3D",
-          "description": "Convierte medidas de impresión 3D (mm) en resolución de textura (píxeles)."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "¿Qué hace diferente a este convertidor?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiShieldCheckLine",
-          "title": "Privacidad total",
-          "description": "Todos los cálculos se ejecutan localmente en tu navegador."
-        },
-        {
-          "icon": "RiTimeLine",
-          "title": "Resultados en tiempo real",
-          "description": "El resultado se actualiza mientras escribes."
-        },
-        {
-          "icon": "RiArrowLeftRightLine",
-          "title": "Conversión bidireccional",
-          "description": "Convierte en ambas direcciones con un solo clic."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Tabla de referencia",
-          "description": "Tabla con valores comunes y descripciones contextuales."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionInfo",
-      "title": "¿Cómo funciona la conversión?",
-      "html": "<p class=\"text-mid mb-4\">Fórmula: Píxeles = mm × DPI / 25,4. Ya que 1 pulgada = 25,4 mm exactamente.</p><p class=\"text-mid mb-4\">A 300 DPI: 1 mm = 11,811 píxeles. A 600 DPI: 1 mm = 23,622 píxeles.</p><p class=\"text-mid\">Sangrado: añadir 3 mm (estándar) en cada borde.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "¿Cómo funciona la conversión?",
-      "html": "<p class=\"text-mid mb-4\">Fórmula: Píxeles = mm × DPI / 25,4. Ya que 1 pulgada = 25,4 mm exactamente.</p><p class=\"text-mid mb-4\">A 300 DPI: 1 mm = 11,811 píxeles. A 600 DPI: 1 mm = 23,622 píxeles.</p><p class=\"text-mid\">Sangrado: añadir 3 mm (estándar) en cada borde.</p>"
+      "title": "¿Cómo funciona la conversión de mm a px? Fórmula y ejemplo",
+      "html": "<p class=\"text-mid mb-4\">Toda la conversión se reduce a una sola fórmula, basada en la relación fija entre la pulgada y el milímetro: una pulgada equivale exactamente a 25,4 mm. Así que solo tienes que multiplicar el número de milímetros por la resolución DPI elegida y dividir entre 25,4.</p><p class=\"text-mid mb-4\">La fórmula completa es: <strong>número de píxeles = número de milímetros × DPI ÷ 25,4</strong>. El conversor hace este cálculo al instante, así que nunca tendrás que calcular ni buscar una calculadora.</p><p class=\"text-mid mb-4\">Ejemplo: quieres saber cuántos píxeles tiene una tarjeta de visita de 90 mm de ancho a una resolución de impresión de 300 DPI. Sustituyendo los valores en la fórmula obtienes 90 × 300 ÷ 25,4, que da exactamente 1.063 píxeles. Esa misma tarjeta mostrada en una pantalla de 96 DPI solo ocuparía 340 píxeles, porque caben menos puntos por pulgada.</p><p class=\"text-mid\">En el sentido contrario funciona igual: número de milímetros = número de píxeles × 25,4 ÷ DPI. Así puedes comprobar el tamaño físico exacto de un archivo de, por ejemplo, 1.181 píxeles de ancho, o si una imagen de internet basta para un formato de impresión concreto.</p>"
     },
     {
       "type": "gap",
@@ -180,29 +105,436 @@
     },
     {
       "type": "sectionTable",
-      "title": "mm a píxeles a diferentes DPI",
-      "labelHeader": "Característica",
-      "cols": ["300 DPI", "600 DPI"],
+      "title": "¿Cuántos píxeles dan distintos valores en milímetros según el DPI?",
+      "description": "La siguiente tabla muestra cómo las mismas medidas en milímetros se traducen en píxeles con las cinco resoluciones más habituales. Algunos valores merece la pena recordarlos, porque coinciden exactamente con formatos reales: 35 mm a 300 DPI es el lado corto de una foto de carnet, 90 mm es el ancho de una tarjeta de visita estándar, y 210 mm es el ancho de una hoja A4.",
+      "labelHeader": "Milímetros",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
       "rows": [
         {
           "label": "1 mm",
-          "values": ["11,81 px", "23,62 px"]
+          "values": ["3 px", "4 px", "6 px", "12 px", "24 px"]
+        },
+        {
+          "label": "5 mm",
+          "values": ["14 px", "19 px", "30 px", "59 px", "118 px"]
         },
         {
           "label": "10 mm",
-          "values": ["118 px", "236 px"]
+          "values": ["28 px", "38 px", "59 px", "118 px", "236 px"],
+          "emphasis": true
         },
         {
-          "label": "85 mm (tarjeta)",
-          "values": ["1.004 px", "2.008 px"]
+          "label": "15 mm",
+          "values": ["43 px", "57 px", "89 px", "177 px", "354 px"]
         },
         {
-          "label": "Aplicación",
-          "values": ["Impresión estándar", "Arte / medicina"]
+          "label": "20 mm",
+          "values": ["57 px", "76 px", "118 px", "236 px", "472 px"]
         },
         {
-          "label": "Tamaño de archivo",
-          "values": ["Estándar", "4× más grande"]
+          "label": "25 mm",
+          "values": ["71 px", "94 px", "148 px", "295 px", "591 px"]
+        },
+        {
+          "label": "30 mm",
+          "values": ["85 px", "113 px", "177 px", "354 px", "709 px"]
+        },
+        {
+          "label": "35 mm",
+          "values": ["99 px", "132 px", "207 px", "413 px", "827 px"],
+          "emphasis": true
+        },
+        {
+          "label": "40 mm",
+          "values": ["113 px", "151 px", "236 px", "472 px", "945 px"]
+        },
+        {
+          "label": "45 mm",
+          "values": ["128 px", "170 px", "266 px", "531 px", "1063 px"],
+          "emphasis": true
+        },
+        {
+          "label": "50 mm",
+          "values": ["142 px", "189 px", "295 px", "591 px", "1181 px"],
+          "emphasis": true
+        },
+        {
+          "label": "51 mm",
+          "values": ["145 px", "193 px", "301 px", "602 px", "1205 px"]
+        },
+        {
+          "label": "54 mm",
+          "values": ["153 px", "204 px", "319 px", "638 px", "1276 px"]
+        },
+        {
+          "label": "55 mm",
+          "values": ["156 px", "208 px", "325 px", "650 px", "1299 px"],
+          "emphasis": true
+        },
+        {
+          "label": "60 mm",
+          "values": ["170 px", "227 px", "354 px", "709 px", "1417 px"]
+        },
+        {
+          "label": "70 mm",
+          "values": ["198 px", "265 px", "413 px", "827 px", "1654 px"]
+        },
+        {
+          "label": "85 mm",
+          "values": ["241 px", "321 px", "502 px", "1004 px", "2008 px"],
+          "emphasis": true
+        },
+        {
+          "label": "90 mm",
+          "values": ["255 px", "340 px", "531 px", "1063 px", "2126 px"],
+          "emphasis": true
+        },
+        {
+          "label": "99 mm",
+          "values": ["281 px", "374 px", "585 px", "1169 px", "2339 px"],
+          "emphasis": true
+        },
+        {
+          "label": "100 mm",
+          "values": ["283 px", "378 px", "591 px", "1181 px", "2362 px"]
+        },
+        {
+          "label": "105 mm",
+          "values": ["298 px", "397 px", "620 px", "1240 px", "2480 px"]
+        },
+        {
+          "label": "148 mm",
+          "values": ["420 px", "559 px", "874 px", "1748 px", "3496 px"],
+          "emphasis": true
+        },
+        {
+          "label": "150 mm",
+          "values": ["425 px", "567 px", "886 px", "1772 px", "3543 px"]
+        },
+        {
+          "label": "200 mm",
+          "values": ["567 px", "756 px", "1181 px", "2362 px", "4724 px"]
+        },
+        {
+          "label": "210 mm",
+          "values": ["595 px", "794 px", "1240 px", "2480 px", "4961 px"],
+          "emphasis": true
+        },
+        {
+          "label": "250 mm",
+          "values": ["709 px", "945 px", "1476 px", "2953 px", "5906 px"]
+        },
+        {
+          "label": "297 mm",
+          "values": ["842 px", "1123 px", "1754 px", "3508 px", "7016 px"],
+          "emphasis": true
+        },
+        {
+          "label": "300 mm",
+          "values": ["850 px", "1134 px", "1772 px", "3543 px", "7087 px"]
+        },
+        {
+          "label": "420 mm",
+          "values": ["1191 px", "1587 px", "2480 px", "4961 px", "9921 px"],
+          "emphasis": true
+        },
+        {
+          "label": "500 mm",
+          "values": ["1417 px", "1890 px", "2953 px", "5906 px", "11.811 px"]
+        },
+        {
+          "label": "594 mm",
+          "values": ["1684 px", "2245 px", "3508 px", "7016 px", "14.031 px"],
+          "emphasis": true
+        },
+        {
+          "label": "700 mm",
+          "values": ["1984 px", "2646 px", "4134 px", "8268 px", "16.535 px"]
+        },
+        {
+          "label": "841 mm",
+          "values": ["2384 px", "3179 px", "4967 px", "9933 px", "19.866 px"],
+          "emphasis": true
+        },
+        {
+          "label": "1000 mm",
+          "values": ["2835 px", "3780 px", "5906 px", "11.811 px", "23.622 px"]
+        }
+      ],
+      "caption": "Todos los valores están redondeados al número entero más cercano, según la fórmula px = mm × DPI ÷ 25,4."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "¿Cuántos milímetros dan distintos valores en píxeles según el DPI?",
+      "description": "A veces partimos de un número de píxeles, por ejemplo una resolución de pantalla conocida, y necesitamos comprobar a cuántos milímetros equivale. La siguiente tabla muestra esa conversión para las cuatro resoluciones más habituales, incluida la pantalla Full HD completa.",
+      "labelHeader": "Píxeles",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
+      "rows": [
+        {
+          "label": "50 px",
+          "values": ["17,64 mm", "13,23 mm", "8,47 mm", "4,23 mm"]
+        },
+        {
+          "label": "100 px",
+          "values": ["35,28 mm", "26,46 mm", "16,93 mm", "8,47 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "200 px",
+          "values": ["70,56 mm", "52,92 mm", "33,87 mm", "16,93 mm"]
+        },
+        {
+          "label": "300 px",
+          "values": ["105,83 mm", "79,38 mm", "50,80 mm", "25,40 mm"]
+        },
+        {
+          "label": "500 px",
+          "values": ["176,39 mm", "132,29 mm", "84,67 mm", "42,33 mm"]
+        },
+        {
+          "label": "600 px",
+          "values": ["211,67 mm", "158,75 mm", "101,60 mm", "50,80 mm"]
+        },
+        {
+          "label": "800 px",
+          "values": ["282,22 mm", "211,67 mm", "135,47 mm", "67,73 mm"]
+        },
+        {
+          "label": "1000 px",
+          "values": ["352,78 mm", "264,58 mm", "169,33 mm", "84,67 mm"]
+        },
+        {
+          "label": "1080 px",
+          "values": ["381,00 mm", "285,75 mm", "182,88 mm", "91,44 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "1169 px",
+          "values": ["412,40 mm", "309,30 mm", "197,95 mm", "98,98 mm"]
+        },
+        {
+          "label": "1240 px",
+          "values": ["437,44 mm", "328,08 mm", "209,97 mm", "104,99 mm"]
+        },
+        {
+          "label": "1920 px",
+          "values": ["677,33 mm", "508,00 mm", "325,12 mm", "162,56 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "2480 px",
+          "values": ["874,89 mm", "656,17 mm", "419,95 mm", "209,97 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "3508 px",
+          "values": ["1237,54 mm", "928,16 mm", "594,02 mm", "297,01 mm"],
+          "emphasis": true
+        }
+      ],
+      "caption": "El par 1.920 y 1.080 píxeles es una pantalla Full HD completa: a escala 1:1 y 96 DPI mide físicamente 508 × 285,75 mm, aproximadamente medio metro de ancho. Si conviertes más a menudo en este sentido, tenemos una calculadora dedicada px a mm con un rango de valores aún más amplio."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Los formatos de impresión más populares y sus medidas en píxeles",
+      "description": "Si en lugar de un solo valor en milímetros necesitas las medidas de un formato terminado (por ejemplo una tarjeta de visita, un folleto DL o una hoja A4), la siguiente tabla da los valores con las dos resoluciones más habituales. Las medidas siempre se indican como ancho × alto.",
+      "labelHeader": "Formato",
+      "cols": [
+        "An. × Alt. (mm)",
+        "An. × Alt. (150 DPI)",
+        "An. × Alt. (300 DPI)"
+      ],
+      "rows": [
+        {
+          "groupLabel": "Tarjetas de visita y carnés"
+        },
+        {
+          "label": "Tarjeta de visita polaca",
+          "values": ["90 × 50 mm", "531 × 295 px", "1063 × 591 px"],
+          "emphasis": true
+        },
+        {
+          "label": "Tarjeta de visita europea",
+          "values": ["85 × 55 mm", "502 × 325 px", "1004 × 650 px"]
+        },
+        {
+          "label": "Tarjeta bancaria / SIM (ISO ID-1)",
+          "values": ["85,60 × 53,98 mm", "506 × 319 px", "1011 × 638 px"]
+        },
+        {
+          "groupLabel": "Folletos e impresos"
+        },
+        {
+          "label": "Folleto DL",
+          "values": ["99 × 210 mm", "585 × 1240 px", "1169 × 2480 px"],
+          "emphasis": true
+        },
+        {
+          "label": "Postal / A6",
+          "values": ["105 × 148 mm", "620 × 874 px", "1240 × 1748 px"]
+        },
+        {
+          "groupLabel": "Papel formato A"
+        },
+        {
+          "label": "A5",
+          "values": ["148 × 210 mm", "874 × 1240 px", "1748 × 2480 px"]
+        },
+        {
+          "label": "A4",
+          "values": ["210 × 297 mm", "1240 × 1754 px", "2480 × 3508 px"],
+          "emphasis": true
+        },
+        {
+          "label": "A3",
+          "values": ["297 × 420 mm", "1754 × 2480 px", "3508 × 4961 px"]
+        },
+        {
+          "label": "A2",
+          "values": ["420 × 594 mm", "2480 × 3508 px", "4961 × 7016 px"]
+        },
+        {
+          "label": "A1",
+          "values": ["594 × 841 mm", "3508 × 4967 px", "7016 × 9933 px"]
+        },
+        {
+          "label": "A0",
+          "values": ["841 × 1189 mm", "4967 × 7022 px", "9933 × 14.043 px"]
+        },
+        {
+          "groupLabel": "Documentos y gran formato"
+        },
+        {
+          "label": "Foto de pasaporte / DNI (UE)",
+          "values": ["35 × 45 mm", "207 × 266 px", "413 × 531 px"],
+          "emphasis": true
+        },
+        {
+          "label": "Cartel B1",
+          "values": ["707 × 1000 mm", "4175 × 5906 px", "8350 × 11.811 px"]
+        },
+        {
+          "label": "Roll-up",
+          "values": ["850 × 2000 mm", "5020 × 11.811 px", "10.039 × 23.622 px"]
+        }
+      ],
+      "caption": "Una tarjeta bancaria con el estándar ISO ID-1 mide oficialmente 85,60 × 53,98 mm, un valor más preciso que el redondeo habitual de 85 × 55 mm usado para tarjetas de visita europeas."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo se convierten milímetros a píxeles en los programas más populares?",
+      "inlineIcon": true,
+      "grid": "one",
+      "items": [
+        {
+          "title": "Illustrator",
+          "icon": "RiPencilLine",
+          "description": "Adobe Illustrator trabaja por defecto en la unidad que hayas configurado al crear el documento. Cámbiala en <strong>Edición &rsaquo; Preferencias &rsaquo; Unidades</strong>, eligiendo Milímetros para materiales de impresión. El resultado en píxeles depende de la resolución de la mesa de trabajo configurada al inicio del proyecto: si el archivo va a una imprenta, configura 300 DPI. Si trabajas en un folleto en mm pero necesitas medidas en píxeles para una vista previa en pantalla, lo más sencillo es copiar la medida desde nuestro conversor y escribirla en el panel Transformar."
+        },
+        {
+          "title": "InDesign",
+          "icon": "RiLayoutLine",
+          "description": "Adobe InDesign es la herramienta estándar para maquetar publicaciones de varias páginas y trabaja en milímetros por defecto. Cambia la unidad en <strong>Edición &rsaquo; Preferencias &rsaquo; Unidades e incrementos</strong>. Al exportar a PDF para imprimir, el programa convierte automáticamente las medidas de la página a píxeles según la resolución configurada, 300 DPI por defecto para impresión offset. No olvides añadir el sangrado (normalmente 3 mm), que configuras directamente en la ventana de exportación."
+        },
+        {
+          "title": "CorelDRAW",
+          "icon": "RiPaintBrushLine",
+          "description": "CorelDRAW es el estándar en muchas imprentas y agencias de publicidad. Cambia la unidad del documento en la barra de propiedades, en la parte superior de la pantalla, eligiendo milímetros en la lista desplegable junto al icono de la regla. Configura la resolución de exportación en la ventana <strong>Exportar</strong> (Ctrl+E) al guardar como JPG, PNG o TIFF: esa misma ventana muestra cuántos píxeles tendrá el archivo final con el DPI elegido."
+        },
+        {
+          "title": "Photoshop",
+          "icon": "RiImageEditLine",
+          "description": "En Adobe Photoshop, configura las medidas del lienzo en la ventana <strong>Imagen &rsaquo; Tamaño de imagen</strong> (Image &rsaquo; Image Size). Elige Milímetros en la lista desplegable de unidades, introduce la medida física y el DPI objetivo en el campo Resolución: Photoshop convierte el valor a píxeles automáticamente. Desmarca Remuestrear si solo quieres cambiar cómo se muestran las medidas sin afectar al número real de píxeles."
+        },
+        {
+          "title": "Figma",
+          "icon": "RiLayoutGridLine",
+          "description": "Figma trabaja exclusivamente en píxeles con un DPI fijo de 96, así que no hay opción para cambiar la unidad a milímetros. Para diseñar algo destinado a impresión, primero convierte la medida física a píxeles en nuestro conversor al DPI objetivo (normalmente 300), y solo entonces introduce ese valor al crear un nuevo frame."
+        },
+        {
+          "title": "Canva",
+          "icon": "RiPaletteLine",
+          "description": "En Canva, tras pulsar en <strong>Crear un diseño &rsaquo; Tamaño personalizado</strong>, puedes elegir la unidad mm e introducir directamente la medida física: Canva la convierte automáticamente a píxeles al exportar. Si el archivo va a una imprenta, activa en las opciones de descarga el formato PDF para impresión junto con sangrado y marcas de corte. Canva exporta estos archivos por defecto a 300 DPI."
+        },
+        {
+          "title": "CSS, SVG y código web",
+          "icon": "RiHtml5Line",
+          "description": "En las hojas de estilo CSS, la unidad <code>mm</code> se convierte con la fórmula fija <code>1mm = 96px ÷ 25,4 ≈ 3,78px</code> y no cambia según el dispositivo. Lo mismo aplica a los archivos SVG, donde las medidas pueden indicarse directamente en milímetros en el atributo <code>width</code>/<code>height</code>: el navegador las convierte a píxeles con la misma constante. En la práctica, las interfaces web usan unidades <code>px</code>, <code>rem</code> o <code>em</code>, y <code>mm</code> se reserva para hojas de estilo de impresión (<code>@media print</code>) o archivos vectoriales destinados a edición posterior en programas de diseño."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo merece la pena usar este conversor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Preparar archivos para la imprenta",
+          "description": "Compruebas que un folleto DL (99 × 210 mm) para impresión digital a 300 DPI mide exactamente 1.169 × 2.480 px, y que una tarjeta de visita de 90 × 50 mm mide 1.063 × 591 px. El conversor te ayuda a evitar que una imprenta rechace tu archivo por resolución insuficiente."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Calcular el sangrado",
+          "description": "Las imprentas suelen exigir 3 mm de sangrado en cada lado. A 300 DPI, eso son 35 px adicionales por lado: introduce en el conversor la suma de la medida y el sangrado duplicado para obtener al instante el número de píxeles objetivo."
+        },
+        {
+          "icon": "RiArchiveLine",
+          "title": "Diseño de packaging y etiquetas",
+          "description": "Una etiqueta de tarro de 120 mm de ancho equivale a 1.417 px a 300 DPI. El conversor ayuda a comprobar rápidamente medidas de etiquetas, pegatinas y packaging antes de enviar archivos a una imprenta offset o digital."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Foto para documentos",
+          "description": "Una foto de pasaporte o DNI de la UE mide 35 × 45 mm, lo que equivale exactamente a 413 × 531 px a 300 DPI. Puedes usar el mismo enfoque para comprobar medidas en píxeles de fotos biométricas requeridas en otros trámites oficiales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Comparación de las unidades milímetro y píxel",
+      "labelHeader": "Característica",
+      "cols": ["Milímetro (mm)", "Píxel (px)"],
+      "rows": [
+        {
+          "label": "Tipo de unidad",
+          "values": ["Física, tangible", "Digital, en pantalla"]
+        },
+        {
+          "label": "Depende del dispositivo",
+          "values": ["Siempre igual", "Depende del DPI o PPI"]
+        },
+        {
+          "label": "Impresión 300 DPI",
+          "values": ["1 mm = 11,81 px", "1 px = 0,085 mm"]
+        },
+        {
+          "label": "Pantalla 96 DPI",
+          "values": ["1 mm = 3,78 px", "1 px = 0,265 mm"]
+        },
+        {
+          "label": "Estándar del sector",
+          "values": ["Impresión, packaging, CAD", "Pantallas, diseño web, UI"]
         }
       ]
     },
@@ -212,20 +544,72 @@
     },
     {
       "type": "faq",
-      "title": "Preguntas frecuentes",
+      "title": "Preguntas frecuentes sobre la conversión de mm a px",
       "openByDefault": 1,
       "items": [
         {
-          "question": "¿Cuántos píxeles es 1 mm a 300 DPI?",
-          "answer": "1 mm a 300 DPI = 11,811 píxeles."
+          "question": "¿1 píxel equivale a 1 milímetro?",
+          "answer": "No, es un error muy común. El píxel y el milímetro son dos unidades distintas, una digital y otra física, y su relación cambia con la resolución DPI. Con el estándar de pantalla de 96 DPI, un milímetro equivale a unos 3,78 píxeles, mientras que en impresión a 300 DPI ya son casi 11,81 píxeles. No existe un valor fijo único \"1 mm = 1 px\" aplicable de forma universal."
         },
         {
-          "question": "¿Qué es el sangrado y cómo lo calculo?",
-          "answer": "El sangrado es área adicional (típicamente 3 mm) más allá del borde. Añade 3 mm en cada borde."
+          "question": "¿Cuántos píxeles tiene 1 milímetro?",
+          "answer": "Depende totalmente de la resolución que configures. Con el estándar de pantalla de 96 DPI, un milímetro equivale a unos 3,78 píxeles, y con los 300 DPI usados en impresión, a 11,81 píxeles. Para convertir cualquier número de milímetros a píxeles, multiplícalo por el DPI y divide entre 25,4."
         },
         {
-          "question": "¿Los cálculos se realizan localmente?",
-          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+          "question": "¿Cuál es la fórmula para convertir mm a px?",
+          "answer": "La fórmula sale de una relación fija: una pulgada equivale exactamente a 25,4 mm. La fórmula completa es número de píxeles = número de milímetros × DPI ÷ 25,4. También funciona al revés: número de milímetros = número de píxeles × 25,4 ÷ DPI. Solo necesitas conocer dos valores, la medida y la resolución objetivo, para calcular el tercero al instante."
+        },
+        {
+          "question": "¿Cómo convierto milímetros a píxeles?",
+          "answer": "Lo más sencillo es escribir la medida en milímetros en el campo del conversor y elegir el DPI que necesites: el resultado aparece al instante. Si prefieres calcularlo a mano, usa la fórmula: número de píxeles = número de milímetros × DPI ÷ 25,4. Para 20 mm a 96 DPI obtienes 20 × 96 ÷ 25,4, unos 76 píxeles."
+        },
+        {
+          "question": "¿Cuántos píxeles tiene 20 mm?",
+          "answer": "Veinte milímetros en una pantalla de 96 DPI son unos 76 píxeles. En impresión a 300 DPI, el mismo valor sube a 236 píxeles, y a 600 DPI, usado en impresión fotográfica de alta calidad, llega a 472 píxeles."
+        },
+        {
+          "question": "¿Cuántos píxeles tiene 100 milímetros?",
+          "answer": "Cien milímetros (10 cm) a 96 DPI son unos 378 píxeles. En impresión a 300 DPI, esos mismos 100 mm son exactamente 1.181 píxeles, un valor que merece la pena recordar porque es el lado corto de una copia fotográfica clásica de 10×15 cm."
+        },
+        {
+          "question": "¿Qué es px en milímetros y qué mide?",
+          "answer": "El píxel (px) es una unidad digital, no una medida física de longitud: no tiene un equivalente fijo en milímetros hasta que defines una resolución DPI o PPI. En la práctica, 1 píxel a 96 DPI (estándar de pantalla) es unos 0,265 mm, y a 300 DPI (estándar de impresión), solo 0,085 mm."
+        },
+        {
+          "question": "¿Cuántos milímetros son 40 píxeles?",
+          "answer": "Cuarenta píxeles en una pantalla de 96 DPI son unos 10,58 mm, poco más de 1 cm. En impresión a 300 DPI, el mismo número de píxeles solo ocupa 3,39 mm. Cuanto más alto es el DPI, menos espacio físico ocupa un número determinado de píxeles."
+        },
+        {
+          "question": "¿Puedo convertir píxeles de nuevo a milímetros?",
+          "answer": "Sí, nuestro conversor funciona en ambos sentidos. Escribe el número de píxeles en el campo derecho o usa el botón Invertir orden para cambiar la dirección de conversión: el resultado en milímetros aparece al instante. La fórmula en este sentido es número de milímetros = número de píxeles × 25,4 ÷ DPI."
+        },
+        {
+          "question": "¿Qué medidas en píxeles tiene una tarjeta de visita?",
+          "answer": "Una tarjeta de visita polaca de 90 × 50 mm equivale a 1.063 × 591 px a 300 DPI. Una tarjeta de visita europea de 85 × 55 mm equivale a 1.004 × 650 px a la misma resolución. Tras añadir el sangrado estándar de 3 mm en cada lado, las medidas crecen a 96 × 56 mm, unos 1.134 × 661 px."
+        },
+        {
+          "question": "¿Qué es el sangrado y cuántos píxeles tengo que añadir?",
+          "answer": "El sangrado es un margen adicional, normalmente de 3 a 5 mm, alrededor de tu diseño que se recorta después de imprimir. Evita bordes blancos si la máquina de corte se desvía ligeramente. A 300 DPI, el sangrado estándar de 3 mm son 35 píxeles adicionales por lado: eso es lo que tu archivo debería ser más grande que el formato final."
+        },
+        {
+          "question": "¿Cuántos píxeles tiene una hoja A4 en milímetros?",
+          "answer": "Una hoja A4 mide 210 × 297 mm, que a 300 DPI es exactamente 2.480 × 3.508 píxeles. A 150 DPI, las mismas medidas son 1.240 × 1.754 píxeles, y a una resolución de pantalla de 96 DPI, solo 794 × 1.123 píxeles."
+        },
+        {
+          "question": "¿Qué DPI debería usar para imprimir folletos y tarjetas de visita?",
+          "answer": "300 DPI es el estándar tanto para impresión offset como digital: es el valor que exige la mayoría de imprentas online. Para grandes formatos como carteles A1 o A0, suele bastar con 150 DPI, ya que se ven desde más lejos. Las lonas de gran formato y vallas publicitarias a veces se imprimen con solo 30–72 DPI."
+        },
+        {
+          "question": "¿Cómo configuro mm a px en Illustrator o InDesign?",
+          "answer": "En Adobe Illustrator, ve a Edición › Preferencias › Unidades y elige Milímetros: la unidad cambia de inmediato en todos los paneles y reglas. InDesign funciona de forma parecida y trabaja en milímetros por defecto. En ambos programas, el resultado en píxeles depende de la resolución configurada al exportar el archivo, normalmente 300 DPI para impresión. Encontrarás guías detalladas para Illustrator, InDesign, CorelDRAW, Photoshop, Figma y Canva en la sección anterior."
+        },
+        {
+          "question": "¿Cuál es la diferencia entre DPI y PPI?",
+          "answer": "El DPI (dots per inch) es el número de puntos de tinta por pulgada de material y es una característica de la impresora. El PPI (pixels per inch) es el número de píxeles por pulgada de pantalla y describe un monitor o display. En el uso diario, los diseñadores usan ambos términos de forma intercambiable, pero técnicamente el DPI se refiere a la impresión y el PPI a las pantallas."
+        },
+        {
+          "question": "¿Cuál es el tamaño exacto de una tarjeta bancaria en píxeles?",
+          "answer": "El estándar ISO ID-1, que aplica a tarjetas bancarias, tarjetas SIM y carnés de identidad, mide exactamente 85,60 × 53,98 mm. A 300 DPI, eso da 1.011 × 638 píxeles, un valor más preciso que el redondeo habitual de 85 × 55 mm que a veces se usa para tarjetas de visita europeas."
         }
       ]
     },
@@ -235,11 +619,11 @@
     },
     {
       "type": "contactForm",
-      "title": "Ayúdanos a mejorar nuestras herramientas",
-      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
-      "imageAlt": "mm na px – Arteon",
-      "defaultSubject": "Feedback: mm-to-px-dpi"
+      "title": "Ayúdanos a mejorar este conversor",
+      "description": "¿Falta algún valor en las tablas, encontraste un error de cálculo o quieres proponer una nueva función? Escríbenos: leemos cada mensaje personalmente y respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Conversor mm a px – Arteon",
+      "defaultSubject": "Comentarios: conversor mm a px"
     },
     {
       "type": "gap",
@@ -247,7 +631,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Más herramientas gratuitas"
+      "title": "Otras herramientas que pueden serte útiles"
     },
     {
       "type": "gap",

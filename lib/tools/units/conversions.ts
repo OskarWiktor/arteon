@@ -62,6 +62,13 @@ export interface UnitConversionConfig {
   reverseConvert: (value: number, extra?: number) => number;
   precision: number;
   swappable: boolean;
+  /**
+   * Dedicated reciprocal tool (e.g. cmToPxDpi → pxToCmDpi). When set and a
+   * page for it exists in the current locale, the swap button navigates
+   * there instead of just flipping the fields in place — the reciprocal
+   * page has its own slug/SEO content with the units in the opposite order.
+   */
+  reverseToolKey?: ToolItemKey;
 }
 
 export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
@@ -134,6 +141,7 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     reverseConvert: (v, extra) => (v * 2.54) / (extra ?? 96),
     precision: 0,
     swappable: true,
+    reverseToolKey: 'pxToCmDpi',
   },
 
   {
@@ -154,6 +162,7 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     reverseConvert: (v, extra) => (v * (extra ?? 96)) / 2.54,
     precision: 2,
     swappable: true,
+    reverseToolKey: 'cmToPxDpi',
   },
 
   {
@@ -174,6 +183,28 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     reverseConvert: (v, extra) => (v * 25.4) / (extra ?? 96),
     precision: 0,
     swappable: true,
+    reverseToolKey: 'pxToMmDpi',
+  },
+
+  {
+    toolKey: 'pxToMmDpi',
+    category: 'css',
+    sourceField: { labelKey: 'pixels', suffix: 'px' },
+    targetField: { labelKey: 'millimeters', suffix: 'mm' },
+    extraField: {
+      key: 'dpi',
+      labelKey: 'dpiPpi',
+      suffix: 'dpi',
+      defaultValue: 96,
+      min: 1,
+      max: 2400,
+      step: 1,
+    },
+    convert: (v, extra) => (v * 25.4) / (extra ?? 96),
+    reverseConvert: (v, extra) => (v * (extra ?? 96)) / 25.4,
+    precision: 2,
+    swappable: true,
+    reverseToolKey: 'mmToPxDpi',
   },
 
   {
@@ -192,17 +223,6 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
     },
     convert: (v, extra) => v * (extra ?? 96),
     reverseConvert: (v, extra) => v / (extra ?? 96),
-    precision: 0,
-    swappable: true,
-  },
-
-  {
-    toolKey: 'dpiToPpi',
-    category: 'css',
-    sourceField: { labelKey: 'dpi', suffix: 'dpi' },
-    targetField: { labelKey: 'ppi', suffix: 'ppi' },
-    convert: v => v,
-    reverseConvert: v => v,
     precision: 0,
     swappable: true,
   },

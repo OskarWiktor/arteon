@@ -679,6 +679,27 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
 };
 
 /**
+ * Redirecty dla usuniętego narzędzia "DPI na PPI" (2026-06-30)
+ * Narzędzie usunięte we wszystkich lokalizacjach - przekierowanie na konwerter px na cm.
+ */
+export const DPI_TO_PPI_REMOVAL_REDIRECTS: Record<string, string> = {
+  '/narzedzia/konwerter-dpi-na-ppi': '/narzedzia/konwerter-px-na-cm',
+  '/en/tools/dpi-to-ppi-converter': '/en/tools/px-to-cm-converter',
+  '/de/werkzeuge/dpi-in-ppi-umrechner': '/de/werkzeuge/px-in-cm-umrechner',
+  '/fr/outils/convertisseur-dpi-en-ppi': '/fr/outils/convertisseur-px-en-cm',
+  '/es/herramientas/convertidor-dpi-a-ppi':
+    '/es/herramientas/convertidor-px-a-cm',
+  '/pt/ferramentas/conversor-dpi-para-ppi':
+    '/pt/ferramentas/conversor-px-para-cm',
+  '/it/strumenti/convertitore-dpi-in-ppi':
+    '/it/strumenti/convertitore-px-in-cm',
+  '/nl/tools/dpi-naar-ppi-converter': '/nl/tools/px-naar-cm-converter',
+  '/cs/nastroje/prevodnik-dpi-na-ppi': '/cs/nastroje/prevodnik-px-na-cm',
+  '/fi/tyokalut/dpi-ppi-muunnin': '/fi/tyokalut/px-cm-muunnin',
+  '/el/ergaleia/metatropeas-dpi-se-ppi': '/el/ergaleia/metatropeas-px-se-cm',
+};
+
+/**
  * Wszystkie statyczne redirecty (bez wzorców)
  * Używane przez middleware do szybkiego lookup
  */
@@ -695,4 +716,5 @@ export const ALL_STATIC_REDIRECTS: Record<string, string> = {
   ...ABOUT_REDIRECTS,
   ...REMOVED_LOCALE_REDIRECTS_EU,
   ...REMOVED_LOCALE_REDIRECTS,
+  ...DPI_TO_PPI_REMOVAL_REDIRECTS,
 };
