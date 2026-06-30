@@ -7,10 +7,8 @@ import fiDict from '@/data/fi/dictionary.json';
 import frDict from '@/data/fr/dictionary.json';
 import itDict from '@/data/it/dictionary.json';
 import nlDict from '@/data/nl/dictionary.json';
-import noDict from '@/data/no/dictionary.json';
 import plDict from '@/data/pl/dictionary.json';
 import ptDict from '@/data/pt/dictionary.json';
-import svDict from '@/data/sv/dictionary.json';
 import type {
   BreadcrumbsDictionary,
   ContactFormDictionary,
@@ -46,8 +44,6 @@ const dicts = {
   it: itDict,
   nl: nlDict,
   cs: csDict,
-  sv: svDict,
-  no: noDict,
   fi: fiDict,
   el: elDict,
 } as const;
@@ -160,30 +156,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/cs/kontakt',
     privacyHref: '/cs/zasady-ochrany-soukromi',
     termsHref: '/cs/podminky-pouzivani',
-  },
-  sv: {
-    lang: 'sv',
-    hreflang: 'sv',
-    label: 'SV',
-    name: 'Svenska',
-    toolsBasePath: '/sv/verktyg',
-    toolsIndexHref: '/sv/verktyg',
-    aboutHref: '/sv/om-oss',
-    contactHref: '/sv/kontakt',
-    privacyHref: '/sv/integritetspolicy',
-    termsHref: '/sv/anvandarvillkor',
-  },
-  no: {
-    lang: 'no',
-    hreflang: 'no',
-    label: 'NO',
-    name: 'Norsk',
-    toolsBasePath: '/no/verktoy',
-    toolsIndexHref: '/no/verktoy',
-    aboutHref: '/no/om-oss',
-    contactHref: '/no/kontakt',
-    privacyHref: '/no/personvernpolicy',
-    termsHref: '/no/bruksvilkar',
   },
   fi: {
     lang: 'fi',

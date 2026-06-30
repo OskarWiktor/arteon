@@ -152,8 +152,6 @@ export const TOOLS_REDIRECTS: Record<string, string> = {
     '/narzedzia/kontrast-i-czytelnosc-kolorow',
   // Stare slugi edytora zdjęć w lokalach (zmienione ~2026-02)
   '/nl/tools/online-afbeeldingseditor': '/nl/tools/afbeeldingeneditor',
-  '/sv/verktyg/bildredigerare-online': '/sv/verktyg/bildredigerare',
-  '/no/verktoy/bildeeditor-online': '/no/verktoy/bilderedigerer',
   // Połączenie stron instrukcji z narzędziami (2026-02) - treść przeniesiona na stronę narzędzia
   '/narzedzia/darmowy-generator-stopki-mailowej/instrukcja':
     '/narzedzia/darmowy-generator-stopki-mailowej',
@@ -204,25 +202,11 @@ export const CONVERTER_REDIRECTS: Record<string, string> = {
   // CS
   '/cs/nastroje/konvertor-jpg-png-na-webp':
     '/cs/nastroje/prevodnik-jpg-na-webp',
-  // SV
-  '/sv/verktyg/jpg-png-till-webp-konverterare':
-    '/sv/verktyg/jpg-till-webp-konverterare',
-  // NO
-  '/no/verktoy/jpg-png-til-webp-konverterer':
-    '/no/verktoy/jpg-til-webp-konverterer',
   // FI
   '/fi/tyokalut/jpg-png-webp-muunnin': '/fi/tyokalut/jpg-webp-muunnin',
   // EL
   '/el/ergaleia/metatropeas-jpg-png-se-webp':
     '/el/ergaleia/metatropeas-jpg-se-webp',
-};
-
-/**
- * Redirecty dla norweskich narzędzi (poprawki literówek w slugach, 2026-02-16)
- */
-export const NO_TOOLS_REDIRECTS: Record<string, string> = {
-  '/no/verktoy/fargeuttrrekker-fra-bilde':
-    '/no/verktoy/fargeutrekker-fra-bilde',
 };
 
 /**
@@ -706,7 +690,6 @@ export const ALL_STATIC_REDIRECTS: Record<string, string> = {
   ...EDUCATION_REDIRECTS,
   ...TOOLS_REDIRECTS,
   ...CONVERTER_REDIRECTS,
-  ...NO_TOOLS_REDIRECTS,
   ...DE_TOOLS_REDIRECTS,
   ...SERVICES_REDIRECTS,
   ...ABOUT_REDIRECTS,

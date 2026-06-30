@@ -67,8 +67,6 @@ const READING_TIME_FMT: Record<Locale, (m: number) => string> = {
     if (m >= 2 && m <= 4) return `${m} minuty`;
     return `${m} minut`;
   },
-  sv: m => (m === 1 ? '1 minut' : `${m} minuter`),
-  no: m => (m === 1 ? '1 minutt' : `${m} minutter`),
   fi: m => (m === 1 ? '1 minuutti' : `${m} minuuttia`),
   el: m =>
     m === 1

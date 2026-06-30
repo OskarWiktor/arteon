@@ -15,8 +15,6 @@ const COMMA_DECIMAL_LOCALES: ReadonlySet<Locale> = new Set([
   'it',
   'nl',
   'cs',
-  'sv',
-  'no',
   'fi',
   'el',
 ]);

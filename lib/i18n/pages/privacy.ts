@@ -7,9 +7,7 @@ import fi from '@/data/fi/pages/privacy.json';
 import fr from '@/data/fr/pages/privacy.json';
 import it from '@/data/it/pages/privacy.json';
 import nl from '@/data/nl/pages/privacy.json';
-import no from '@/data/no/pages/privacy.json';
 import pt from '@/data/pt/pages/privacy.json';
-import sv from '@/data/sv/pages/privacy.json';
 import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
 import type { Locale } from '@/types/locale';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
@@ -34,8 +32,6 @@ const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   it,
   nl,
   cs,
-  sv,
-  no,
   fi,
   el,
 };

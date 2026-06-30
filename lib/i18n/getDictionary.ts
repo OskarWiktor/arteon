@@ -219,14 +219,6 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
     import('@/data/cs/dictionary.json').then(m =>
       DictionarySchema.parse(m.default),
     ),
-  sv: () =>
-    import('@/data/sv/dictionary.json').then(m =>
-      DictionarySchema.parse(m.default),
-    ),
-  no: () =>
-    import('@/data/no/dictionary.json').then(m =>
-      DictionarySchema.parse(m.default),
-    ),
   fi: () =>
     import('@/data/fi/dictionary.json').then(m =>
       DictionarySchema.parse(m.default),

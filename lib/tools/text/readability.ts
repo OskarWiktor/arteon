@@ -111,8 +111,6 @@ const FLESCH_FORMULAS: Partial<Record<Locale, FleschFormula>> = {
   // Hungarian adaptation - agglutinative language with very long words (~2.0+ syl/word)
   // Greek adaptation - inflectional, longer words than EN but less extreme than PL/HU
   el: standardFlesch(66),
-  sv: lixFormula,
-  no: lixFormula,
   fi: lixFormula,
 };
 
@@ -232,20 +230,6 @@ const READABILITY_LABELS: Record<
     moderate: 'Střední',
     difficult: 'Obtížné',
     veryDifficult: 'Velmi obtížné',
-  },
-  sv: {
-    veryEasy: 'Mycket lätt',
-    easy: 'Lätt',
-    moderate: 'Medel',
-    difficult: 'Svår',
-    veryDifficult: 'Mycket svår',
-  },
-  no: {
-    veryEasy: 'Veldig lett',
-    easy: 'Lett',
-    moderate: 'Middels',
-    difficult: 'Vanskelig',
-    veryDifficult: 'Veldig vanskelig',
   },
   fi: {
     veryEasy: 'Erittäin helppo',

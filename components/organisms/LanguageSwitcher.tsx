@@ -144,7 +144,7 @@ export default function LanguageSwitcher({
   const { desktopCols, mobileCols } = (() => {
     const sorted = [...links].sort((a, b) => a.name.localeCompare(b.name));
     return {
-      desktopCols: splitIntoColumns(sorted, 6),
+      desktopCols: splitIntoColumns(sorted, 5),
       mobileCols: splitIntoColumns(sorted, 2),
     };
   })();
@@ -230,7 +230,7 @@ export default function LanguageSwitcher({
               style={{ top: headerBottom }}
             >
               <Wrapper>
-                <div className='grid grid-cols-7 gap-0'>
+                <div className='grid grid-cols-6 gap-0'>
                   <div className='border-r border-primary-light pr-4'>
                     <div className='flex items-center gap-3 rounded-lg bg-white px-4 py-3 text-primary'>
                       <RiTranslate2
