@@ -7,9 +7,7 @@ import fi from '@/data/fi/pages/terms.json';
 import fr from '@/data/fr/pages/terms.json';
 import it from '@/data/it/pages/terms.json';
 import nl from '@/data/nl/pages/terms.json';
-import no from '@/data/no/pages/terms.json';
 import pt from '@/data/pt/pages/terms.json';
-import sv from '@/data/sv/pages/terms.json';
 import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
 import type { Locale } from '@/types/locale';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
@@ -52,8 +50,6 @@ const TERMS_DATA: Partial<Record<Locale, TermsPageData>> = {
   it,
   nl,
   cs,
-  sv,
-  no,
   fi,
   el,
 };

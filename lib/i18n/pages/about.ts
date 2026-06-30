@@ -7,9 +7,7 @@ import fi from '@/data/fi/pages/about.json';
 import fr from '@/data/fr/pages/about.json';
 import it from '@/data/it/pages/about.json';
 import nl from '@/data/nl/pages/about.json';
-import no from '@/data/no/pages/about.json';
 import pt from '@/data/pt/pages/about.json';
-import sv from '@/data/sv/pages/about.json';
 import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
 import type { Locale } from '@/types/locale';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
@@ -68,8 +66,6 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   it,
   nl,
   cs,
-  sv,
-  no,
   fi,
   el,
 };

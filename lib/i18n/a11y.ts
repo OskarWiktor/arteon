@@ -92,20 +92,6 @@ export const A11Y_UI: Record<Locale, A11yStrings> = {
     meets: 'splňuje',
     doesNotMeet: 'nesplňuje',
   },
-  sv: {
-    colorSwatch: (i, v) => `Färg ${i}: ${v}`,
-    tableRegion: 'Tabell',
-    themeToggle: 'Växla mellan ljust och mörkt läge',
-    meets: 'uppfyller',
-    doesNotMeet: 'uppfyller inte',
-  },
-  no: {
-    colorSwatch: (i, v) => `Farge ${i}: ${v}`,
-    tableRegion: 'Tabell',
-    themeToggle: 'Bytt mellom lyst og mørkt modus',
-    meets: 'oppfyller',
-    doesNotMeet: 'oppfyller ikke',
-  },
   fi: {
     colorSwatch: (i, v) => `Väri ${i}: ${v}`,
     tableRegion: 'Taulukko',

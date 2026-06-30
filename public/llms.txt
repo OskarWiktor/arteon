@@ -99,7 +99,7 @@
 - [Markdown to HTML](https://www.arteonagency.pl/en/tools/markdown-to-html-converter)
 - [HTML to Markdown](https://www.arteonagency.pl/en/tools/html-to-markdown-converter)
 
-## Available in 13 Languages
+## Available in 11 Languages
 
 - [Polish (PL)](https://www.arteonagency.pl/narzedzia)
 - [English (EN)](https://www.arteonagency.pl/en/tools)
@@ -110,7 +110,5 @@
 - [Italian (IT)](https://www.arteonagency.pl/it/strumenti)
 - [Dutch (NL)](https://www.arteonagency.pl/nl/tools)
 - [Czech (CS)](https://www.arteonagency.pl/cs/nastroje)
-- [Swedish (SV)](https://www.arteonagency.pl/sv/verktyg)
-- [Norwegian (NO)](https://www.arteonagency.pl/no/verktoy)
 - [Finnish (FI)](https://www.arteonagency.pl/fi/tyokalut)
 - [Greek (EL)](https://www.arteonagency.pl/el/ergaleia)

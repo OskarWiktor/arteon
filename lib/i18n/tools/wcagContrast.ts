@@ -7,10 +7,8 @@ import fi from '@/data/fi/tools-ui/wcag-contrast.json';
 import fr from '@/data/fr/tools-ui/wcag-contrast.json';
 import it from '@/data/it/tools-ui/wcag-contrast.json';
 import nl from '@/data/nl/tools-ui/wcag-contrast.json';
-import no from '@/data/no/tools-ui/wcag-contrast.json';
 import pl from '@/data/pl/tools-ui/wcag-contrast.json';
 import pt from '@/data/pt/tools-ui/wcag-contrast.json';
-import sv from '@/data/sv/tools-ui/wcag-contrast.json';
 import type { Locale } from '@/lib/LocaleContext';
 
 export const ui = {
@@ -23,8 +21,6 @@ export const ui = {
   it,
   nl,
   cs,
-  sv,
-  no,
   fi,
   el,
 } as const satisfies Record<Locale, unknown>;

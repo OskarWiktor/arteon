@@ -54,16 +54,6 @@
       "permanent": true
     },
     {
-      "source": "/sv/verktyg/rgb-till-hsl-omvandlare",
-      "destination": "/sv/verktyg",
-      "permanent": true
-    },
-    {
-      "source": "/no/verktoy/rgb-til-hsl-kalkulator",
-      "destination": "/no/verktoy",
-      "permanent": true
-    },
-    {
       "source": "/fi/tyokalut/rgb-hsl-muunnin",
       "destination": "/fi/tyokalut",
       "permanent": true
@@ -111,16 +101,6 @@
     {
       "source": "/cs/nastroje/prevodnik-tailwind-css-spacing-na-px",
       "destination": "/cs/nastroje",
-      "permanent": true
-    },
-    {
-      "source": "/sv/verktyg/tailwind-css-spacing-till-px-omvandlare",
-      "destination": "/sv/verktyg",
-      "permanent": true
-    },
-    {
-      "source": "/no/verktoy/tailwind-css-spacing-til-px-kalkulator",
-      "destination": "/no/verktoy",
       "permanent": true
     },
     {
@@ -176,16 +156,6 @@
     {
       "source": "/cs/nastroje/prevodnik-vw-na-px",
       "destination": "/cs/nastroje",
-      "permanent": true
-    },
-    {
-      "source": "/sv/verktyg/vw-till-px-omvandlare",
-      "destination": "/sv/verktyg",
-      "permanent": true
-    },
-    {
-      "source": "/no/verktoy/vw-til-px-kalkulator",
-      "destination": "/no/verktoy",
       "permanent": true
     },
     {

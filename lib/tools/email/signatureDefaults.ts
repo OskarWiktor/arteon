@@ -419,42 +419,6 @@ export function getDefaultSignature(locale: Locale): SignatureConfig {
       avatarUrl: '',
     };
   }
-  if (locale === 'sv') {
-    return {
-      fullName: 'Erik Johansson',
-      jobTitle: 'Webbutvecklare',
-      company: 'Arteon Agency',
-      topLine: '',
-      nameTag: '',
-      email: 'erik.johansson@exempel.se',
-      phone: '+46 70 123 45 67',
-      website: 'https://www.dinwebbplats.se',
-      address: 'Kungsgatan 10, 111 43 Stockholm',
-      extraLine: 'Jag bygger snabba och funktionella webbplatser.',
-      ctaLabel: 'Boka en gratis konsultation',
-      ctaUrl: 'https://www.dinwebbplats.se',
-      cta2Label: '',
-      cta2Url: '',
-      socials: {
-        linkedin: 'https://www.linkedin.com/in/erikjohansson',
-        instagram: '',
-        facebook: '',
-        tiktok: '',
-        youtube: '',
-        x: '',
-        github: '',
-        dribbble: '',
-        behance: '',
-        whatsapp: '',
-        telegram: '',
-        pinterest: '',
-      },
-      legalNote:
-        'Detta meddelande kan inneh\u00e5lla konfidentiell information. Om du inte \u00e4r den avsedda mottagaren, v\u00e4nligen meddela avs\u00e4ndaren och radera detta meddelande.',
-      formalLine: '',
-      avatarUrl: '',
-    };
-  }
   if (locale === 'fi') {
     return {
       fullName: 'Matti Meik\u00e4l\u00e4inen',
@@ -487,42 +451,6 @@ export function getDefaultSignature(locale: Locale): SignatureConfig {
       },
       legalNote:
         'T\u00e4m\u00e4 viesti voi sis\u00e4lt\u00e4\u00e4 luottamuksellista tietoa. Jos et ole tarkoitettu vastaanottaja, ilmoita l\u00e4hett\u00e4j\u00e4lle ja poista t\u00e4m\u00e4 viesti.',
-      formalLine: '',
-      avatarUrl: '',
-    };
-  }
-  if (locale === 'no') {
-    return {
-      fullName: 'Ola Nordmann',
-      jobTitle: 'Webutvikler',
-      company: 'Arteon Agency',
-      topLine: '',
-      nameTag: '',
-      email: 'ola.nordmann@eksempel.no',
-      phone: '+47 40 12 34 56',
-      website: 'https://www.dinside.no',
-      address: 'Karl Johans gate 10, 0154 Oslo',
-      extraLine: 'Jeg lager raske og funksjonelle nettsider.',
-      ctaLabel: 'Book en gratis konsultasjon',
-      ctaUrl: 'https://www.dinside.no',
-      cta2Label: '',
-      cta2Url: '',
-      socials: {
-        linkedin: 'https://www.linkedin.com/in/olanordmann',
-        instagram: '',
-        facebook: '',
-        tiktok: '',
-        youtube: '',
-        x: '',
-        github: '',
-        dribbble: '',
-        behance: '',
-        whatsapp: '',
-        telegram: '',
-        pinterest: '',
-      },
-      legalNote:
-        'Denne meldingen kan inneholde konfidensiell informasjon. Hvis du ikke er den tiltenkte mottakeren, vennligst informer avsenderen og slett denne meldingen.',
       formalLine: '',
       avatarUrl: '',
     };

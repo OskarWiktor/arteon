@@ -7,9 +7,7 @@ import fi from '@/data/fi/pages/contact.json';
 import fr from '@/data/fr/pages/contact.json';
 import it from '@/data/it/pages/contact.json';
 import nl from '@/data/nl/pages/contact.json';
-import no from '@/data/no/pages/contact.json';
 import pt from '@/data/pt/pages/contact.json';
-import sv from '@/data/sv/pages/contact.json';
 import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
 import type { Locale } from '@/types/locale';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
@@ -56,8 +54,6 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
   it,
   nl,
   cs,
-  sv,
-  no,
   fi,
   el,
 };

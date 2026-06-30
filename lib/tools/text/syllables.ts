@@ -39,10 +39,8 @@ export function countSyllablesInWord(
     case 'pl':
     case 'cs':
       return countSyllablesSlavic(w);
-    case 'sv':
-    case 'no':
     case 'fi':
-      return countSyllablesNordic(w, locale);
+      return countSyllablesNordic(w);
     case 'el':
       return countSyllablesEL(w);
     default:
@@ -240,26 +238,21 @@ function countSyllablesSlavic(word: string): number {
 }
 
 // ---------------------------------------------------------------------------
-// Nordic languages (SV, DA, NO, FI) syllable counter
+// Finnish syllable counter
 // ---------------------------------------------------------------------------
 
-function countSyllablesNordic(word: string, locale: Locale = 'sv'): number {
+function countSyllablesNordic(word: string): number {
   if (word.length <= 2) return 1;
 
-  let w = word;
+  // Finnish diphthongs - these are single syllables, not two.
+  // Finnish has 18 diphthongs: ai, ei, oi, ui, yi, äi, öi, au, eu, ou, iu,
+  // ey, äy, öy, ie, uo, yö + iy
+  const w = word.replace(
+    /ai|ei|oi|ui|yi|äi|öi|au|eu|ou|iu|ey|äy|öy|ie|uo|yö|iy/gi,
+    'X',
+  );
 
-  if (locale === 'fi') {
-    // Finnish diphthongs - these are single syllables, not two.
-    // Finnish has 18 diphthongs: ai, ei, oi, ui, yi, äi, öi, au, eu, ou, iu,
-    // ey, äy, öy, ie, uo, yö + iy
-    w = w.replace(
-      /ai|ei|oi|ui|yi|äi|öi|au|eu|ou|iu|ey|äy|öy|ie|uo|yö|iy/gi,
-      'X',
-    );
-  }
-
-  // Nordic vowels including å, ä, ö (SV), æ, ø, å (DA/NO), ä, ö, y (FI)
-  const vowelGroups = w.match(/[aeiouyåäöæøX]+/gi);
+  const vowelGroups = w.match(/[aeiouyäöX]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
 }
 

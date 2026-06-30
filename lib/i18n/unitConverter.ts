@@ -98,22 +98,6 @@ export const UNIT_CONVERTER_I18N: Record<Locale, UnitConverterI18n> = {
     pickerSource: 'Převést z',
     pickerTarget: 'Převést na',
   },
-  sv: {
-    titleConvertTo: u => `Konvertera andra enheter till ${u}`,
-    titleConvertFrom: u => `Konvertera ${u} till andra enheter`,
-    titleOtherConverters: 'Utforska andra enhetskonverterare',
-    connector: 'till',
-    pickerSource: 'Konvertera från',
-    pickerTarget: 'Konvertera till',
-  },
-  no: {
-    titleConvertTo: u => `Konverter andre enheter til ${u}`,
-    titleConvertFrom: u => `Konverter ${u} til andre enheter`,
-    titleOtherConverters: 'Utforsk andre enhetskonverterere',
-    connector: 'til',
-    pickerSource: 'Konverter fra',
-    pickerTarget: 'Konverter til',
-  },
   fi: {
     titleConvertTo: u => `Muunna muut yksiköt yksiköksi ${u}`,
     titleConvertFrom: u => `Muunna ${u} muiksi yksiköiksi`,
