@@ -44,18 +44,8 @@
       "permanent": true
     },
     {
-      "source": "/ro/instrumente/convertor-rgb-in-hsl",
-      "destination": "/ro/instrumente",
-      "permanent": true
-    },
-    {
       "source": "/nl/tools/rgb-naar-hsl-converter",
       "destination": "/nl/tools",
-      "permanent": true
-    },
-    {
-      "source": "/hu/eszkozok/rgb-hsl-atvalto",
-      "destination": "/hu/eszkozok",
       "permanent": true
     },
     {
@@ -114,18 +104,8 @@
       "permanent": true
     },
     {
-      "source": "/ro/instrumente/convertor-tailwind-css-spacing-in-px",
-      "destination": "/ro/instrumente",
-      "permanent": true
-    },
-    {
       "source": "/nl/tools/tailwind-css-spacing-naar-px-converter",
       "destination": "/nl/tools",
-      "permanent": true
-    },
-    {
-      "source": "/hu/eszkozok/tailwind-css-spacing-px-atvalto",
-      "destination": "/hu/eszkozok",
       "permanent": true
     },
     {
@@ -189,18 +169,8 @@
       "permanent": true
     },
     {
-      "source": "/ro/instrumente/convertor-vw-in-px",
-      "destination": "/ro/instrumente",
-      "permanent": true
-    },
-    {
       "source": "/nl/tools/vw-naar-px-converter",
       "destination": "/nl/tools",
-      "permanent": true
-    },
-    {
-      "source": "/hu/eszkozok/vw-px-atvalto",
-      "destination": "/hu/eszkozok",
       "permanent": true
     },
     {

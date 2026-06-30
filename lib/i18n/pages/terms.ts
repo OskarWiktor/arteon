@@ -5,12 +5,10 @@ import en from '@/data/en/pages/terms.json';
 import es from '@/data/es/pages/terms.json';
 import fi from '@/data/fi/pages/terms.json';
 import fr from '@/data/fr/pages/terms.json';
-import hu from '@/data/hu/pages/terms.json';
 import it from '@/data/it/pages/terms.json';
 import nl from '@/data/nl/pages/terms.json';
 import no from '@/data/no/pages/terms.json';
 import pt from '@/data/pt/pages/terms.json';
-import ro from '@/data/ro/pages/terms.json';
 import sv from '@/data/sv/pages/terms.json';
 import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
 import type { Locale } from '@/types/locale';
@@ -52,9 +50,7 @@ const TERMS_DATA: Partial<Record<Locale, TermsPageData>> = {
   fr,
   pt,
   it,
-  ro,
   nl,
-  hu,
   cs,
   sv,
   no,

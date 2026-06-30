@@ -5,12 +5,10 @@ import en from '@/data/en/pages/privacy.json';
 import es from '@/data/es/pages/privacy.json';
 import fi from '@/data/fi/pages/privacy.json';
 import fr from '@/data/fr/pages/privacy.json';
-import hu from '@/data/hu/pages/privacy.json';
 import it from '@/data/it/pages/privacy.json';
 import nl from '@/data/nl/pages/privacy.json';
 import no from '@/data/no/pages/privacy.json';
 import pt from '@/data/pt/pages/privacy.json';
-import ro from '@/data/ro/pages/privacy.json';
 import sv from '@/data/sv/pages/privacy.json';
 import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
 import type { Locale } from '@/types/locale';
@@ -34,9 +32,7 @@ const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   fr,
   pt,
   it,
-  ro,
   nl,
-  hu,
   cs,
   sv,
   no,

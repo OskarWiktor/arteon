@@ -33,7 +33,6 @@ export function countSyllablesInWord(
     case 'es':
     case 'pt':
     case 'it':
-    case 'ro':
       return countSyllablesRomance(w);
     case 'nl':
       return countSyllablesNL(w);
@@ -44,8 +43,6 @@ export function countSyllablesInWord(
     case 'no':
     case 'fi':
       return countSyllablesNordic(w, locale);
-    case 'hu':
-      return countSyllablesHU(w);
     case 'el':
       return countSyllablesEL(w);
     default:
@@ -264,18 +261,6 @@ function countSyllablesNordic(word: string, locale: Locale = 'sv'): number {
   // Nordic vowels including å, ä, ö (SV), æ, ø, å (DA/NO), ä, ö, y (FI)
   const vowelGroups = w.match(/[aeiouyåäöæøX]+/gi);
   return Math.max(1, vowelGroups ? vowelGroups.length : 1);
-}
-
-// ---------------------------------------------------------------------------
-// Hungarian syllable counter
-// ---------------------------------------------------------------------------
-
-function countSyllablesHU(word: string): number {
-  if (word.length <= 1) return 1;
-
-  // Hungarian: each vowel = one syllable (no diphthongs in standard Hungarian)
-  const vowels = word.match(/[aáeéiíoóöőuúüű]/gi);
-  return Math.max(1, vowels ? vowels.length : 1);
 }
 
 // ---------------------------------------------------------------------------

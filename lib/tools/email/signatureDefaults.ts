@@ -346,42 +346,6 @@ export function getDefaultSignature(locale: Locale): SignatureConfig {
       avatarUrl: '',
     };
   }
-  if (locale === 'ro') {
-    return {
-      fullName: 'Ion Popescu',
-      jobTitle: 'Dezvoltator Web',
-      company: 'Arteon Agency',
-      topLine: '',
-      nameTag: '',
-      email: 'ion.popescu@example.com',
-      phone: '+40 721 234 567',
-      website: 'https://www.site-ul-dvs.ro',
-      address: 'Str. Exemplu 1, București',
-      extraLine: 'Creez site-uri web rapide și funcționale.',
-      ctaLabel: 'Rezervați consultanță gratuită',
-      ctaUrl: 'https://www.site-ul-dvs.ro',
-      cta2Label: '',
-      cta2Url: '',
-      socials: {
-        linkedin: 'https://www.linkedin.com/in/ionpopescu',
-        instagram: '',
-        facebook: '',
-        tiktok: '',
-        youtube: '',
-        x: '',
-        github: '',
-        dribbble: '',
-        behance: '',
-        whatsapp: '',
-        telegram: '',
-        pinterest: '',
-      },
-      legalNote:
-        'Acest mesaj poate conține informații confidențiale. Dacă nu sunteți destinatarul prevăzut, vă rugăm să informați expeditorul și să ștergeți acest mesaj.',
-      formalLine: '',
-      avatarUrl: '',
-    };
-  }
   if (locale === 'nl') {
     return {
       fullName: 'Jan de Vries',
@@ -414,42 +378,6 @@ export function getDefaultSignature(locale: Locale): SignatureConfig {
       },
       legalNote:
         'Dit bericht kan vertrouwelijke informatie bevatten. Als u niet de beoogde ontvanger bent, informeer dan de afzender en verwijder dit bericht.',
-      formalLine: '',
-      avatarUrl: '',
-    };
-  }
-  if (locale === 'hu') {
-    return {
-      fullName: 'Kovács János',
-      jobTitle: 'Webfejlesztő',
-      company: 'Arteon Agency',
-      topLine: '',
-      nameTag: '',
-      email: 'kovacs.janos@example.com',
-      phone: '+36 30 123 4567',
-      website: 'https://www.azweboldala.hu',
-      address: 'Példa utca 1, 1000 Budapest',
-      extraLine: 'Gyors és funkcionális weboldalakat készítek.',
-      ctaLabel: 'Ingyenes konzultáció foglalása',
-      ctaUrl: 'https://www.azweboldala.hu',
-      cta2Label: '',
-      cta2Url: '',
-      socials: {
-        linkedin: 'https://www.linkedin.com/in/kovacsjanos',
-        instagram: '',
-        facebook: '',
-        tiktok: '',
-        youtube: '',
-        x: '',
-        github: '',
-        dribbble: '',
-        behance: '',
-        whatsapp: '',
-        telegram: '',
-        pinterest: '',
-      },
-      legalNote:
-        'Ez az üzenet bizalmas információkat tartalmazhat. Ha nem Ön a címzett, kérjük, értesítse a feladót és törölje ezt az üzenetet.',
       formalLine: '',
       avatarUrl: '',
     };

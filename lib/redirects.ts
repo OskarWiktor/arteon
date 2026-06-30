@@ -152,13 +152,8 @@ export const TOOLS_REDIRECTS: Record<string, string> = {
     '/narzedzia/kontrast-i-czytelnosc-kolorow',
   // Stare slugi edytora zdjęć w lokalach (zmienione ~2026-02)
   '/nl/tools/online-afbeeldingseditor': '/nl/tools/afbeeldingeneditor',
-  '/hu/eszkozok/online-kepszerkeszto': '/hu/eszkozok/kepszerkeszto',
   '/sv/verktyg/bildredigerare-online': '/sv/verktyg/bildredigerare',
-  '/ro/instrumente/editor-de-imagini-online':
-    '/ro/instrumente/editor-de-imagini',
   '/no/verktoy/bildeeditor-online': '/no/verktoy/bilderedigerer',
-  // Błędny czeski slug w węgierskim locale (prevodnik = CS, nie HU)
-  '/hu/eszkozok/prevodnik-png-na-jpg': '/hu/eszkozok/png-jpg-konverter',
   // Połączenie stron instrukcji z narzędziami (2026-02) - treść przeniesiona na stronę narzędzia
   '/narzedzia/darmowy-generator-stopki-mailowej/instrukcja':
     '/narzedzia/darmowy-generator-stopki-mailowej',
@@ -204,13 +199,8 @@ export const CONVERTER_REDIRECTS: Record<string, string> = {
   // IT
   '/it/strumenti/convertitore-jpg-png-in-webp':
     '/it/strumenti/convertitore-jpg-in-webp',
-  // RO
-  '/ro/instrumente/convertor-jpg-png-in-webp':
-    '/ro/instrumente/convertor-jpg-in-webp',
   // NL
   '/nl/tools/jpg-png-naar-webp-converter': '/nl/tools/jpg-naar-webp-converter',
-  // HU
-  '/hu/eszkozok/jpg-png-webp-konverter': '/hu/eszkozok/jpg-webp-konverter',
   // CS
   '/cs/nastroje/konvertor-jpg-png-na-webp':
     '/cs/nastroje/prevodnik-jpg-na-webp',
