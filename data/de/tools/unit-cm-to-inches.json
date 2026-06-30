@@ -1,0 +1,408 @@
+{
+  "toolKey": "cmToInches",
+  "locale": "de",
+  "metadata": {
+    "title": "CM in Zoll Rechner – Zentimeter in Zoll umrechnen",
+    "description": "Rechnen Sie Zentimeter in Zoll um. Körpergröße, Kleidergrößen, TV-Diagonale und Gepäckmaße schnell prüfen. Umrechnungstabelle cm in Zoll und Zoll in cm.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/de/werkzeuge/cm-in-zoll-umrechner"
+  },
+  "hero": {
+    "title": "Zentimeter in Zoll umrechnen",
+    "description": "Geben Sie einen beliebigen Wert in Zentimetern ein und sehen Sie das Ergebnis sofort in Zoll. Der Umrechner ist überall dort hilfreich, wo Maße im imperialen System angegeben werden: bei der Körpergröße, beim Kauf von Elektronik, beim Bestellen von Kleidung in US- oder UK-Shops oder beim Überprüfen von Gepäckmaßen.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/cm-in-zoll-umrechner",
+      "label": "cm in Zoll"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Zentimeter in Zoll Umrechner – cm in Zoll Rechner",
+      "alternateName": [
+        "cm in Zoll Umrechner",
+        "cm in Zoll Rechner",
+        "Zentimeter in Zoll",
+        "cm zu Zoll",
+        "Zentimeter zu Zoll",
+        "cm in inch",
+        "cm in inches",
+        "Umrechnung cm Zoll",
+        "Zoll Umrechner cm",
+        "Wie viel Zoll sind ein cm",
+        "cm in Zoll umrechnen",
+        "Tabelle cm Zoll",
+        "Zentimeter Zoll Tabelle",
+        "cm zu inch",
+        "Maße cm in Zoll"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Kostenloser Zentimeter-in-Zoll-Umrechner, der im Browser ohne Registrierung funktioniert. Geben Sie einen Wert in cm ein und erhalten Sie sofort das Ergebnis in Zoll. Nützlich bei der Körpergröße, Kleidergrößen aus englischsprachigen Shops, TV-Diagonalen oder Fluggepäckmaßen.",
+      "featureList": [
+        "Die Umrechnung funktioniert in beide Richtungen, Sie können also sowohl Zentimeter in Zoll als auch Zoll in Zentimeter umrechnen",
+        "Das Ergebnis erscheint sofort während der Eingabe, ohne dass eine Schaltfläche geklickt werden muss",
+        "Das Ergebnis kann mit einem Klick in die Zwischenablage kopiert werden",
+        "Die Umrechnungstabelle umfasst Werte von 0,5 cm bis 200 cm",
+        "Die Körpergrößentabelle zeigt die gängigsten Werte von 150 cm bis 200 cm mit Umrechnung in Fuß und Zoll",
+        "Die Bildschirmdiagonalentabelle umfasst die beliebtesten TV- und Monitorgrößen von 24 bis 85 Zoll",
+        "Die umgekehrte Tabelle zeigt, wie viele Zentimeter einem bestimmten Zollwert entsprechen, für Werte von 0,5 bis 72 Zoll",
+        "Alle Berechnungen erfolgen lokal im Browser, keine Daten verlassen Ihr Gerät",
+        "Die genaue Umrechnungsformel lautet Zoll = Zentimeter ÷ 2,54 und basiert auf der festen Beziehung zwischen Zoll und Zentimeter",
+        "Funktioniert auf Smartphone, Tablet und Computer ohne Installation"
+      ]
+    },
+    "howTo": {
+      "name": "Wie rechnet man Zentimeter in Zoll um?",
+      "description": "Kurze Anleitung zur Verwendung des cm-in-Zoll-Umrechners.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert in Zentimetern eingeben",
+          "text": "Geben Sie im linken Feld die Anzahl der Zentimeter ein, die Sie in Zoll umrechnen möchten."
+        },
+        {
+          "name": "Ergebnis in Zoll ablesen",
+          "text": "Das Ergebnis in Zoll erscheint sofort im Feld daneben. Mit einem Klick können Sie es in die Zwischenablage kopieren."
+        },
+        {
+          "name": "Bei Bedarf Richtung wechseln",
+          "text": "Klicken Sie auf Reihenfolge ändern, um den Umrechner auf Zoll-in-Zentimeter umzuschalten."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Warum Zentimeter in Zoll umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Der Zentimeter ist die alltägliche Längeneinheit in Deutschland, Österreich und der Schweiz sowie im Rest Europas. Der Zoll hingegen ist in den USA und wird nach wie vor in Großbritannien verwendet. Die Notwendigkeit zur Umrechnung entsteht immer dann, wenn Sie Maße aus einer anglophonen Quelle erhalten: ein Fernseher mit Diagonale in Zoll, Gepäckmaße einer amerikanischen Fluggesellschaft oder Kleidergrößen eines US-Onlineshops.</p><p class=\"text-mid mb-4\">Ein Zoll entspricht genau 2,54 cm. Dieses Verhältnis ist fest und gilt überall, sodass jede Umrechnung auf eine einzige Division hinausläuft. Der Umrechner erledigt das sofort nach der Eingabe.</p><p class=\"text-mid mb-4\">Weiter unten auf der Seite finden Sie eine Umrechnungstabelle für Werte von 0,5 bis 200 cm, eine gesonderte Körpergrößentabelle mit Fuß-und-Zoll-Angaben, eine Tabelle mit gängigen Bildschirmdiagonalen sowie eine umgekehrte Tabelle für Zoll in Zentimeter.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Kostenloser Zentimeter-in-Zoll-Umrechner – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung cm in Zoll? Formel und Beispiel",
+      "html": "<p class=\"text-mid mb-4\">Die Umrechnung von Zentimetern in Zoll beruht auf einer festen Konstante: ein Zoll entspricht genau 2,54 cm. Um Zentimeter in Zoll umzurechnen, teilen Sie den Wert durch 2,54.</p><p class=\"text-mid mb-4\">Vollständige Formel: <strong>Zoll = Zentimeter ÷ 2,54</strong>. Umgekehrt: <strong>Zentimeter = Zoll × 2,54</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Sie möchten wissen, wie viel Zoll 170 cm sind (eine häufige Körpergröße). Berechnung: 170 ÷ 2,54 = 66,93 Zoll. Umgerechnet in Fuß und Zoll ergibt das 5 ft 7 in (fünf Fuß und sieben Zoll), da ein Fuß 12 Zoll entspricht: 66,93 ÷ 12 = 5 Fuß mit einem Rest von 6,93 Zoll.</p><p class=\"text-mid\">Ein anderes Beispiel: ein 55-Zoll-Fernseher hat eine Bildschirmdiagonale von 55 × 2,54 = 139,70 cm. Der Umrechner führt beide Rechenrichtungen sofort nach der Eingabe aus.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Umrechnungstabelle cm in Zoll",
+      "description": "Die folgende Tabelle zeigt die Umrechnung gängiger Zentimeterwerte in Zoll, gerundet auf zwei Dezimalstellen. Für genaue Umrechnungen oder seltenere Maße nutzen Sie den Umrechner oben.",
+      "labelHeader": "Zentimeter",
+      "cols": ["Zoll"],
+      "rows": [
+        { "label": "0,5 cm", "values": ["0,20 in"] },
+        { "label": "1 cm", "values": ["0,39 in"], "emphasis": true },
+        { "label": "1,5 cm", "values": ["0,59 in"] },
+        { "label": "2 cm", "values": ["0,79 in"] },
+        { "label": "2,5 cm", "values": ["0,98 in"] },
+        { "label": "3 cm", "values": ["1,18 in"] },
+        { "label": "4 cm", "values": ["1,57 in"] },
+        { "label": "5 cm", "values": ["1,97 in"], "emphasis": true },
+        { "label": "6 cm", "values": ["2,36 in"] },
+        { "label": "7 cm", "values": ["2,76 in"] },
+        { "label": "8 cm", "values": ["3,15 in"] },
+        { "label": "9 cm", "values": ["3,54 in"] },
+        { "label": "10 cm", "values": ["3,94 in"], "emphasis": true },
+        { "label": "12 cm", "values": ["4,72 in"] },
+        { "label": "15 cm", "values": ["5,91 in"] },
+        { "label": "20 cm", "values": ["7,87 in"], "emphasis": true },
+        { "label": "25 cm", "values": ["9,84 in"] },
+        { "label": "30 cm", "values": ["11,81 in"] },
+        { "label": "35 cm", "values": ["13,78 in"] },
+        { "label": "40 cm", "values": ["15,75 in"] },
+        { "label": "45 cm", "values": ["17,72 in"] },
+        { "label": "50 cm", "values": ["19,69 in"], "emphasis": true },
+        { "label": "60 cm", "values": ["23,62 in"] },
+        { "label": "70 cm", "values": ["27,56 in"] },
+        { "label": "80 cm", "values": ["31,50 in"] },
+        { "label": "90 cm", "values": ["35,43 in"] },
+        { "label": "100 cm", "values": ["39,37 in"], "emphasis": true },
+        { "label": "120 cm", "values": ["47,24 in"] },
+        { "label": "150 cm", "values": ["59,06 in"], "emphasis": true },
+        { "label": "160 cm", "values": ["62,99 in"] },
+        { "label": "170 cm", "values": ["66,93 in"], "emphasis": true },
+        { "label": "180 cm", "values": ["70,87 in"] },
+        { "label": "190 cm", "values": ["74,80 in"] },
+        { "label": "200 cm", "values": ["78,74 in"], "emphasis": true }
+      ],
+      "caption": "Möchten Sie in die andere Richtung umrechnen? Nutzen Sie unseren <a href=\"/de/werkzeuge/zoll-in-cm-umrechner\">Zoll-in-cm-Umrechner</a> mit eigener Tabelle und ausführlichem Inhalt zu diesem Umrechnungsweg."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Körpergröße in Zentimetern umgerechnet in Zoll und Fuß",
+      "description": "Körpergrößentabelle mit Umrechnung der gängigsten Werte von 150 cm bis 200 cm in Zoll (in) sowie in Fuß und Zoll (ft in), also die in englischsprachigen Ländern übliche Schreibweise. Die Werte sind bei der Fuß-Zoll-Angabe auf ganze Zoll gerundet.",
+      "labelHeader": "Körpergröße",
+      "cols": ["Zoll (in)", "Fuß und Zoll (ft in)"],
+      "rows": [
+        { "label": "150 cm", "values": ["59,06 in", "4 ft 11 in"] },
+        { "label": "155 cm", "values": ["61,02 in", "5 ft 1 in"] },
+        { "label": "158 cm", "values": ["62,20 in", "5 ft 2 in"] },
+        {
+          "label": "160 cm",
+          "values": ["62,99 in", "5 ft 3 in"],
+          "emphasis": true
+        },
+        { "label": "162 cm", "values": ["63,78 in", "5 ft 4 in"] },
+        { "label": "163 cm", "values": ["64,17 in", "5 ft 4 in"] },
+        {
+          "label": "165 cm",
+          "values": ["64,96 in", "5 ft 5 in"],
+          "emphasis": true
+        },
+        { "label": "167 cm", "values": ["65,75 in", "5 ft 6 in"] },
+        { "label": "168 cm", "values": ["66,14 in", "5 ft 6 in"] },
+        {
+          "label": "170 cm",
+          "values": ["66,93 in", "5 ft 7 in"],
+          "emphasis": true
+        },
+        { "label": "172 cm", "values": ["67,72 in", "5 ft 8 in"] },
+        { "label": "173 cm", "values": ["68,11 in", "5 ft 8 in"] },
+        {
+          "label": "175 cm",
+          "values": ["68,90 in", "5 ft 9 in"],
+          "emphasis": true
+        },
+        { "label": "177 cm", "values": ["69,69 in", "5 ft 10 in"] },
+        { "label": "178 cm", "values": ["70,08 in", "5 ft 10 in"] },
+        {
+          "label": "180 cm",
+          "values": ["70,87 in", "5 ft 11 in"],
+          "emphasis": true
+        },
+        { "label": "182 cm", "values": ["71,65 in", "6 ft 0 in"] },
+        { "label": "183 cm", "values": ["72,05 in", "6 ft 0 in"] },
+        {
+          "label": "185 cm",
+          "values": ["72,83 in", "6 ft 1 in"],
+          "emphasis": true
+        },
+        { "label": "188 cm", "values": ["74,02 in", "6 ft 2 in"] },
+        {
+          "label": "190 cm",
+          "values": ["74,80 in", "6 ft 3 in"],
+          "emphasis": true
+        },
+        { "label": "193 cm", "values": ["75,98 in", "6 ft 4 in"] },
+        { "label": "195 cm", "values": ["76,77 in", "6 ft 5 in"] },
+        { "label": "200 cm", "values": ["78,74 in", "6 ft 7 in"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Umgekehrte Tabelle – Zoll in Zentimeter",
+      "description": "Die folgende Tabelle zeigt die Umrechnung gängiger Zollwerte in Zentimeter, gerundet auf zwei Dezimalstellen.",
+      "labelHeader": "Zoll",
+      "cols": ["Zentimeter"],
+      "rows": [
+        { "label": "0,5 in", "values": ["1,27 cm"] },
+        { "label": "1 in", "values": ["2,54 cm"], "emphasis": true },
+        { "label": "2 in", "values": ["5,08 cm"] },
+        { "label": "3 in", "values": ["7,62 cm"] },
+        { "label": "4 in", "values": ["10,16 cm"] },
+        { "label": "5 in", "values": ["12,70 cm"] },
+        { "label": "6 in", "values": ["15,24 cm"], "emphasis": true },
+        { "label": "7 in", "values": ["17,78 cm"] },
+        { "label": "8 in", "values": ["20,32 cm"] },
+        { "label": "9 in", "values": ["22,86 cm"] },
+        { "label": "10 in", "values": ["25,40 cm"], "emphasis": true },
+        { "label": "11 in", "values": ["27,94 cm"] },
+        { "label": "12 in", "values": ["30,48 cm"], "emphasis": true },
+        { "label": "15 in", "values": ["38,10 cm"] },
+        { "label": "18 in", "values": ["45,72 cm"] },
+        { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
+        { "label": "30 in", "values": ["76,20 cm"] },
+        { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
+        { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "48 in", "values": ["121,92 cm"] },
+        { "label": "54 in", "values": ["137,16 cm"] },
+        { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "TV- und Monitordiagonale in Zoll – wie viele Zentimeter?",
+      "description": "Elektronikhersteller geben die Bildschirmdiagonale immer in Zoll an. Die folgende Tabelle zeigt, wie viele Zentimeter jede gängige Größe misst, vom Büromonitor bis zum großen Fernseher. Der angegebene Wert ist die Diagonale, nicht die Breite.",
+      "labelHeader": "Diagonale (Zoll)",
+      "cols": ["Diagonale (cm)"],
+      "rows": [
+        { "label": "24 in (Büromonitor)", "values": ["60,96 cm"] },
+        { "label": "27 in (Büromonitor)", "values": ["68,58 cm"] },
+        {
+          "label": "32 in (Fernseher / großer Monitor)",
+          "values": ["81,28 cm"],
+          "emphasis": true
+        },
+        { "label": "40 in (Fernseher)", "values": ["101,60 cm"] },
+        { "label": "43 in (Fernseher)", "values": ["109,22 cm"] },
+        { "label": "50 in (Fernseher)", "values": ["127,00 cm"] },
+        {
+          "label": "55 in (Fernseher)",
+          "values": ["139,70 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "65 in (Fernseher)",
+          "values": ["165,10 cm"],
+          "emphasis": true
+        },
+        { "label": "75 in (Fernseher)", "values": ["190,50 cm"] },
+        { "label": "85 in (Fernseher)", "values": ["215,90 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann rechnet man Zentimeter in Zoll um?",
+      "description": "Die Umrechnung von cm in Zoll tritt in einigen konkreten Situationen auf. Jede hat ihre eigene Besonderheit.",
+      "items": [
+        {
+          "title": "Körpergröße und Körpermaße",
+          "description": "In den USA und Großbritannien wird die Körpergröße in Fuß und Zoll angegeben. Wenn Sie ein englischsprachiges Formular ausfüllen, sich bei einem ausländischen Sportportal anmelden oder einfach wissen möchten, wie Ihre Körpergröße im imperialen System aussieht, liefert dieser Umrechner das Ergebnis sofort. 170 cm entsprechen 5 Fuß 7 Zoll, 180 cm sind 5 Fuß 11 Zoll und 183 cm entsprechen genau 6 Fuß."
+        },
+        {
+          "title": "Kleidergrößen aus US- und UK-Shops",
+          "description": "Amerikanische und britische Bekleidungsgeschäfte geben Größen für BH, Taille und Brustumfang oft in Zoll an. Die Umrechnung ist unkompliziert: ein Brustumfang von 80 cm entspricht 31,5 Zoll, 90 cm sind 35,4 Zoll und 100 cm sind 39,4 Zoll. Es empfiehlt sich, die eigenen Maße vor der Bestellung umzurechnen, da Größentabellen je nach Marke variieren."
+        },
+        {
+          "title": "Fernseher, Monitore und Bildschirme",
+          "description": "Die Bildschirmdiagonale wird immer in Zoll angegeben, unabhängig davon, ob Sie in Deutschland oder im Ausland kaufen. Ein populärer 55-Zoll-Fernseher hat eine Diagonale von 139,7 cm, bei 65 Zoll sind es 165,1 cm. Den Zentimeterwert zu kennen hilft Ihnen zu beurteilen, ob das Gerät an den vorgesehenen Platz passt."
+        },
+        {
+          "title": "Gepäckmaße",
+          "description": "Viele Fluggesellschaften, insbesondere amerikanische und einige Billigfluglinien, geben die zulässigen Gepäckmaße in Zoll an. Das verbreitete lineare Limit von 158 Zoll (Summe aus Höhe, Breite und Tiefe) entspricht 401,32 cm. Ein Standard-Handgepäckstück mit den Maßen 55 × 40 × 20 cm hat eine Maßsumme von 115 cm, was etwa 45,3 linearen Zoll entspricht."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zur Umrechnung cm in Zoll",
+      "items": [
+        {
+          "question": "Wie viel Zoll hat 1 Zentimeter?",
+          "answer": "Ein Zentimeter entspricht etwa 0,3937 Zoll. Das ergibt sich aus der festen Beziehung 1 Zoll = 2,54 cm, also 1 cm = 1 ÷ 2,54 ≈ 0,3937 in. Auf zwei Dezimalstellen gerundet: 1 cm = 0,39 in."
+        },
+        {
+          "question": "Wie lautet die Formel für die Umrechnung cm in Zoll?",
+          "answer": "Die Formel lautet: Zoll = Zentimeter ÷ 2,54. Ein Zoll entspricht genau 2,54 cm. Um cm in Zoll umzurechnen, teilt man den Zentimeterwert durch 2,54. Beispiel: 30 cm ÷ 2,54 = 11,81 Zoll."
+        },
+        {
+          "question": "Wie viel Zoll hat 170 cm?",
+          "answer": "170 cm entsprechen 66,93 Zoll, was in Fuß und Zoll 5 ft 7 in ergibt. Diese Schreibweise wird in englischsprachigen Ländern verwendet. Berechnung: 170 ÷ 2,54 = 66,93 in; 66,93 ÷ 12 = 5 Fuß mit einem Rest von 6,93 Zoll, gerundet auf 7."
+        },
+        {
+          "question": "Wie viel Zoll hat 160 cm?",
+          "answer": "160 cm entsprechen 62,99 Zoll, also in Fuß und Zoll: 5 ft 3 in. Berechnung: 160 ÷ 2,54 = 62,99; 62 ÷ 12 = 5 Fuß mit einem Rest von 2,99 Zoll, gerundet auf 3."
+        },
+        {
+          "question": "Wie viel Zoll hat 180 cm?",
+          "answer": "180 cm entsprechen 70,87 Zoll, was in Fuß und Zoll 5 ft 11 in ergibt. Diese Körpergröße gilt in englischsprachigen Ländern oft als Grenze zwischen durchschnittlicher und großer Statur."
+        },
+        {
+          "question": "Wie viel Zoll hat 100 cm?",
+          "answer": "100 cm entsprechen 39,37 Zoll. Das ist ein leicht zu merkender Referenzwert: ein Meter entspricht ungefähr 39,5 Zoll. Berechnung: 100 ÷ 2,54 = 39,37 in."
+        },
+        {
+          "question": "Wie viele Zentimeter hat ein Zoll?",
+          "answer": "Ein Zoll entspricht genau 2,54 cm. Dies ist eine seit 1959 geltende internationale Norm. Die Umrechnung ist daher immer exakt und erfordert keine Rundung."
+        },
+        {
+          "question": "Wie viel Zoll hat 50 cm?",
+          "answer": "50 cm entsprechen 19,69 Zoll, also fast 20 Zoll. Berechnung: 50 ÷ 2,54 = 19,69 in."
+        },
+        {
+          "question": "Wie groß ist ein 55-Zoll-Fernseher in Zentimetern?",
+          "answer": "Ein 55-Zoll-Fernseher hat eine Bildschirmdiagonale von 55 × 2,54 = 139,70 cm. Zu beachten ist, dass dieser Wert die Diagonale und nicht die Breite ist. Die Breite eines 16:9-Bildschirms mit 55 Zoll beträgt etwa 122 cm, die Höhe etwa 69 cm."
+        },
+        {
+          "question": "Wie rechnet man cm ohne Taschenrechner in Zoll um?",
+          "answer": "Schnelle Näherung: Zentimeter durch 2,5 statt durch 2,54 dividieren. Der Fehler beträgt etwa 1,6 %, was für grobe Vergleiche ausreicht. Beispiel: 20 cm ÷ 2,5 = 8 Zoll (genauer Wert: 7,87). Für präzise Umrechnungen immer den Umrechner verwenden."
+        },
+        {
+          "question": "Wie viel Zoll hat ein 30-cm-Lineal?",
+          "answer": "Ein 30-cm-Lineal ist 11,81 Zoll lang. Aufgerundet entsprechen 30 cm fast genau 12 Zoll, also einem Fuß. Im imperialen System gilt 12 Zoll = 1 Fuß = 30,48 cm, der Unterschied beträgt also nur 0,48 cm."
+        },
+        {
+          "question": "Gilt die Umrechnungsformel in den USA und in Deutschland gleich?",
+          "answer": "Ja, die Formel ist weltweit identisch: 1 Zoll = 2,54 cm. Seit 1959 gilt der internationale Zoll, der die Definition in den USA, Großbritannien und allen anderen Ländern vereinheitlicht hat. Zuvor gab es geringfügige Unterschiede zwischen dem britischen und dem amerikanischen Zoll, heute verwenden alle Rechner und Tabellen den Wert 2,54."
+        },
+        {
+          "question": "Wie rechnet man Kleidergrößen von Zoll in cm um?",
+          "answer": "Die meisten englischsprachigen Shops geben Körpermaße (Brust, Taille, Hüfte) in Zoll an. Umrechnung: den Zollwert mit 2,54 multiplizieren. Ein BH-Unterbrustmaß von 34 Zoll = 86,36 cm (entspricht europäischer Größe 85 oder 90, je nach Marke). Es empfiehlt sich, die Größentabelle des jeweiligen Shops zu nutzen, da die Normierung je nach Hersteller unterschiedlich ist."
+        },
+        {
+          "question": "Wie viel Zoll hat ein Handgepäck mit den Maßen 55 × 40 × 20 cm?",
+          "answer": "Ein Standard-Handgepäckstück mit den Maßen 55 × 40 × 20 cm hat in Zoll die Abmessungen 21,7 × 15,7 × 7,9 Zoll. Die Maßsumme (linear inches) beträgt 45,3 Zoll. Viele Fluggesellschaften lassen Handgepäck bis 45 linear inches zu, sodass dieses Stück innerhalb des Limits liegt."
+        },
+        {
+          "question": "Woher kommt der Wert 2,54 cm in der Zolldefinition?",
+          "answer": "Der Wert 2,54 cm pro Zoll geht auf historische Standardisierungsentscheidungen zurück. Großbritannien übernahm diesen Wert 1930, und 1959 schlossen die USA, Kanada, Australien und weitere englischsprachige Länder eine Vereinbarung, die den sogenannten internationalen Zoll festlegte: genau 25,4 mm, also 2,54 cm. Zuvor gab es geringfügig abweichende Werte, heute gilt ausschließlich 2,54."
+        },
+        {
+          "question": "Kann man mit diesem Rechner die Körpergröße von cm in Fuß und Zoll umrechnen?",
+          "answer": "Der Umrechner gibt das Ergebnis in Dezimalzoll aus (z. B. 170 cm = 66,93 in). Um das Ergebnis in Fuß und Zoll umzurechnen, teilen Sie die Zollzahl durch 12: die ganze Zahl sind die Fuß, der Rest sind die Zoll. Beispiel: 66,93 ÷ 12 = 5 Fuß mit 6,93 Zoll Rest, gerundet 5 ft 7 in. Die Körpergrößentabelle auf dieser Seite zeigt fertige Umrechnungen für Werte von 150 bis 200 cm."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Haben Sie eine Frage oder einen Verbesserungsvorschlag?",
+      "description": "Wenn Sie einen Fehler in den Tabellen entdecken oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
+      "imageAlt": "Kontakt mit Arteon Agency",
+      "subject": "cm-in-Zoll-Umrechner"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere nützliche Einheitenrechner"
+    }
+  ]
+}

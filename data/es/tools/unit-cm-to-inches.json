@@ -1,0 +1,400 @@
+{
+  "toolKey": "cmToInches",
+  "locale": "es",
+  "metadata": {
+    "title": "Calculadora cm a pulgadas – convertir centímetros a pulgadas",
+    "description": "Convierte centímetros a pulgadas al instante. Comprueba la estatura, tallas de ropa, diagonal de TV y medidas del equipaje. Tabla de conversión cm a pulgadas y pulgadas a cm.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/es/herramientas/convertidor-cm-a-pulgadas"
+  },
+  "hero": {
+    "title": "Convierte centímetros a pulgadas",
+    "description": "Introduce cualquier valor en centímetros y obtén el resultado en pulgadas al instante. Este conversor es útil en todos los contextos donde las medidas se expresan en el sistema imperial: al comprobar la estatura, comprar electrónica, pedir ropa en tiendas de Estados Unidos o Reino Unido, o verificar las dimensiones permitidas del equipaje.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-cm-a-pulgadas",
+      "label": "cm a pulgadas"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de centímetros a pulgadas – calculadora cm a pulgadas",
+      "alternateName": [
+        "convertidor cm a pulgadas",
+        "calculadora cm a pulgadas",
+        "centímetros a pulgadas",
+        "cm a pulgadas",
+        "convertir cm a pulgadas",
+        "cm en pulgadas",
+        "tabla cm pulgadas",
+        "conversión cm pulgadas",
+        "cuántas pulgadas tiene un cm",
+        "fórmula cm a pulgadas",
+        "cm a inches",
+        "conversor cm pulgadas",
+        "calculadora centímetros pulgadas",
+        "cm a pulgadas conversión",
+        "cm a pies y pulgadas"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertidor gratuito de centímetros a pulgadas que funciona en el navegador sin registro. Introduce un valor en cm y obtén el resultado en pulgadas al instante. Útil para la estatura, tallas de ropa de tiendas anglófonas, la diagonal de un televisor o las medidas del equipaje de avión.",
+      "featureList": [
+        "La conversión funciona en ambos sentidos: puedes convertir tanto centímetros a pulgadas como pulgadas a centímetros",
+        "El resultado aparece al instante mientras escribes, sin necesidad de hacer clic en ningún botón",
+        "El resultado puede copiarse al portapapeles con un solo clic",
+        "La tabla de conversión cubre valores de 0,5 cm a 200 cm",
+        "La tabla de estatura muestra los valores más comunes de 150 cm a 200 cm con conversión a pies y pulgadas",
+        "La tabla de diagonales de pantalla incluye los tamaños más populares de televisores y monitores de 24 a 85 pulgadas",
+        "La tabla inversa muestra cuántos centímetros corresponden a un valor en pulgadas, de 0,5 a 72 pulgadas",
+        "Todos los cálculos se realizan localmente en el navegador, ningún dato sale de tu dispositivo",
+        "La fórmula exacta es pulgadas = centímetros ÷ 2,54, basada en la relación fija entre la pulgada y el centímetro",
+        "Funciona en móvil, tableta y ordenador sin instalación"
+      ]
+    },
+    "howTo": {
+      "name": "¿Cómo convertir centímetros a pulgadas?",
+      "description": "Guía rápida de uso del convertidor cm a pulgadas.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduce el valor en centímetros",
+          "text": "En el campo de la izquierda, escribe el número de centímetros que quieres convertir a pulgadas."
+        },
+        {
+          "name": "Lee el resultado en pulgadas",
+          "text": "El resultado en pulgadas aparece al instante en el campo de al lado. Puedes copiarlo al portapapeles con un solo clic."
+        },
+        {
+          "name": "Invierte la dirección si es necesario",
+          "text": "Haz clic en Cambiar orden para cambiar el convertidor al modo pulgadas a centímetros."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Por qué convertir centímetros a pulgadas?",
+      "html": "<p class=\"text-mid mb-4\">El centímetro es la unidad de longitud cotidiana en España y en toda América Latina. La pulgada, en cambio, domina en Estados Unidos y sigue siendo habitual en el Reino Unido. La necesidad de convertir surge cuando compras un televisor cuya diagonal se expresa en pulgadas, verificas las medidas permitidas del equipaje en la web de una aerolínea estadounidense o comparas tu estatura con una tabla de tallas de una tienda británica.</p><p class=\"text-mid mb-4\">Una pulgada equivale exactamente a 2,54 cm. Esta relación es fija y universal, por lo que cualquier conversión se reduce a una sola división. El convertidor lo hace por ti en cuanto introduces un valor.</p><p class=\"text-mid mb-4\">Más abajo encontrarás una tabla de conversión cm a pulgadas para valores de 0,5 a 200 cm, una tabla de estatura con el equivalente en pies y pulgadas, una tabla de diagonales de pantalla populares y una tabla inversa de pulgadas a centímetros.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor gratuito de centímetros a pulgadas – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión cm a pulgadas? Fórmula y ejemplo",
+      "html": "<p class=\"text-mid mb-4\">La conversión de centímetros a pulgadas se basa en una constante fija: una pulgada equivale exactamente a 2,54 cm. Para convertir centímetros a pulgadas, divide el valor entre 2,54.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>pulgadas = centímetros ÷ 2,54</strong>. A la inversa: <strong>centímetros = pulgadas × 2,54</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: quieres saber cuántas pulgadas son 170 cm (una estatura habitual). Cálculo: 170 ÷ 2,54 = 66,93 pulgadas. Convertido a pies y pulgadas da 5 ft 7 in (cinco pies y siete pulgadas), porque un pie equivale a 12 pulgadas: 66,93 ÷ 12 = 5 pies con un resto de 6,93 pulgadas.</p><p class=\"text-mid\">Otro ejemplo: un televisor de 55 pulgadas tiene una diagonal de pantalla de 55 × 2,54 = 139,70 cm. El convertidor realiza ambas direcciones de cálculo en cuanto introduces un valor.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabla de conversión cm a pulgadas",
+      "description": "La siguiente tabla muestra la conversión de los valores más comunes en centímetros a pulgadas, redondeada a dos decimales. Para conversiones exactas o medidas menos habituales, usa el convertidor de arriba.",
+      "labelHeader": "Centímetros",
+      "cols": ["Pulgadas"],
+      "rows": [
+        { "label": "0,5 cm", "values": ["0,20 in"] },
+        { "label": "1 cm", "values": ["0,39 in"], "emphasis": true },
+        { "label": "1,5 cm", "values": ["0,59 in"] },
+        { "label": "2 cm", "values": ["0,79 in"] },
+        { "label": "2,5 cm", "values": ["0,98 in"] },
+        { "label": "3 cm", "values": ["1,18 in"] },
+        { "label": "4 cm", "values": ["1,57 in"] },
+        { "label": "5 cm", "values": ["1,97 in"], "emphasis": true },
+        { "label": "6 cm", "values": ["2,36 in"] },
+        { "label": "7 cm", "values": ["2,76 in"] },
+        { "label": "8 cm", "values": ["3,15 in"] },
+        { "label": "9 cm", "values": ["3,54 in"] },
+        { "label": "10 cm", "values": ["3,94 in"], "emphasis": true },
+        { "label": "12 cm", "values": ["4,72 in"] },
+        { "label": "15 cm", "values": ["5,91 in"] },
+        { "label": "20 cm", "values": ["7,87 in"], "emphasis": true },
+        { "label": "25 cm", "values": ["9,84 in"] },
+        { "label": "30 cm", "values": ["11,81 in"] },
+        { "label": "35 cm", "values": ["13,78 in"] },
+        { "label": "40 cm", "values": ["15,75 in"] },
+        { "label": "45 cm", "values": ["17,72 in"] },
+        { "label": "50 cm", "values": ["19,69 in"], "emphasis": true },
+        { "label": "60 cm", "values": ["23,62 in"] },
+        { "label": "70 cm", "values": ["27,56 in"] },
+        { "label": "80 cm", "values": ["31,50 in"] },
+        { "label": "90 cm", "values": ["35,43 in"] },
+        { "label": "100 cm", "values": ["39,37 in"], "emphasis": true },
+        { "label": "120 cm", "values": ["47,24 in"] },
+        { "label": "150 cm", "values": ["59,06 in"], "emphasis": true },
+        { "label": "160 cm", "values": ["62,99 in"] },
+        { "label": "170 cm", "values": ["66,93 in"], "emphasis": true },
+        { "label": "180 cm", "values": ["70,87 in"] },
+        { "label": "190 cm", "values": ["74,80 in"] },
+        { "label": "200 cm", "values": ["78,74 in"], "emphasis": true }
+      ],
+      "caption": "¿Quieres convertir en el sentido contrario? Usa nuestro <a href=\"/es/herramientas/convertidor-pulgadas-a-cm\">convertidor de pulgadas a cm</a>, que tiene su propia tabla y contenido dedicado a esa dirección."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Estatura en centímetros convertida a pulgadas y pies",
+      "description": "Tabla de estatura con conversión de los valores más habituales de 150 cm a 200 cm a pulgadas (in) y a pies y pulgadas (ft in), la notación usada en los países anglófonos. Los valores están redondeados a la pulgada entera más cercana en la columna de pies y pulgadas.",
+      "labelHeader": "Estatura",
+      "cols": ["Pulgadas (in)", "Pies y pulgadas (ft in)"],
+      "rows": [
+        { "label": "150 cm", "values": ["59,06 in", "4 ft 11 in"] },
+        { "label": "155 cm", "values": ["61,02 in", "5 ft 1 in"] },
+        { "label": "158 cm", "values": ["62,20 in", "5 ft 2 in"] },
+        {
+          "label": "160 cm",
+          "values": ["62,99 in", "5 ft 3 in"],
+          "emphasis": true
+        },
+        { "label": "162 cm", "values": ["63,78 in", "5 ft 4 in"] },
+        { "label": "163 cm", "values": ["64,17 in", "5 ft 4 in"] },
+        {
+          "label": "165 cm",
+          "values": ["64,96 in", "5 ft 5 in"],
+          "emphasis": true
+        },
+        { "label": "167 cm", "values": ["65,75 in", "5 ft 6 in"] },
+        { "label": "168 cm", "values": ["66,14 in", "5 ft 6 in"] },
+        {
+          "label": "170 cm",
+          "values": ["66,93 in", "5 ft 7 in"],
+          "emphasis": true
+        },
+        { "label": "172 cm", "values": ["67,72 in", "5 ft 8 in"] },
+        { "label": "173 cm", "values": ["68,11 in", "5 ft 8 in"] },
+        {
+          "label": "175 cm",
+          "values": ["68,90 in", "5 ft 9 in"],
+          "emphasis": true
+        },
+        { "label": "177 cm", "values": ["69,69 in", "5 ft 10 in"] },
+        { "label": "178 cm", "values": ["70,08 in", "5 ft 10 in"] },
+        {
+          "label": "180 cm",
+          "values": ["70,87 in", "5 ft 11 in"],
+          "emphasis": true
+        },
+        { "label": "182 cm", "values": ["71,65 in", "6 ft 0 in"] },
+        { "label": "183 cm", "values": ["72,05 in", "6 ft 0 in"] },
+        {
+          "label": "185 cm",
+          "values": ["72,83 in", "6 ft 1 in"],
+          "emphasis": true
+        },
+        { "label": "188 cm", "values": ["74,02 in", "6 ft 2 in"] },
+        {
+          "label": "190 cm",
+          "values": ["74,80 in", "6 ft 3 in"],
+          "emphasis": true
+        },
+        { "label": "193 cm", "values": ["75,98 in", "6 ft 4 in"] },
+        { "label": "195 cm", "values": ["76,77 in", "6 ft 5 in"] },
+        { "label": "200 cm", "values": ["78,74 in", "6 ft 7 in"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabla inversa – pulgadas a centímetros",
+      "description": "La siguiente tabla muestra la conversión de los valores más comunes en pulgadas a centímetros, redondeada a dos decimales.",
+      "labelHeader": "Pulgadas",
+      "cols": ["Centímetros"],
+      "rows": [
+        { "label": "0,5 in", "values": ["1,27 cm"] },
+        { "label": "1 in", "values": ["2,54 cm"], "emphasis": true },
+        { "label": "2 in", "values": ["5,08 cm"] },
+        { "label": "3 in", "values": ["7,62 cm"] },
+        { "label": "4 in", "values": ["10,16 cm"] },
+        { "label": "5 in", "values": ["12,70 cm"] },
+        { "label": "6 in", "values": ["15,24 cm"], "emphasis": true },
+        { "label": "7 in", "values": ["17,78 cm"] },
+        { "label": "8 in", "values": ["20,32 cm"] },
+        { "label": "9 in", "values": ["22,86 cm"] },
+        { "label": "10 in", "values": ["25,40 cm"], "emphasis": true },
+        { "label": "11 in", "values": ["27,94 cm"] },
+        { "label": "12 in", "values": ["30,48 cm"], "emphasis": true },
+        { "label": "15 in", "values": ["38,10 cm"] },
+        { "label": "18 in", "values": ["45,72 cm"] },
+        { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
+        { "label": "30 in", "values": ["76,20 cm"] },
+        { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
+        { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "48 in", "values": ["121,92 cm"] },
+        { "label": "54 in", "values": ["137,16 cm"] },
+        { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Diagonal de TV y monitor en pulgadas – ¿cuántos centímetros son?",
+      "description": "Los fabricantes de electrónica siempre expresan la diagonal de pantalla en pulgadas. La siguiente tabla muestra cuántos centímetros mide cada tamaño popular, desde el monitor de escritorio hasta el gran televisor. El valor indicado es la diagonal, no el ancho.",
+      "labelHeader": "Diagonal (pulgadas)",
+      "cols": ["Diagonal (cm)"],
+      "rows": [
+        { "label": "24 in (monitor de escritorio)", "values": ["60,96 cm"] },
+        { "label": "27 in (monitor de escritorio)", "values": ["68,58 cm"] },
+        {
+          "label": "32 in (TV / monitor grande)",
+          "values": ["81,28 cm"],
+          "emphasis": true
+        },
+        { "label": "40 in (TV)", "values": ["101,60 cm"] },
+        { "label": "43 in (TV)", "values": ["109,22 cm"] },
+        { "label": "50 in (TV)", "values": ["127,00 cm"] },
+        { "label": "55 in (TV)", "values": ["139,70 cm"], "emphasis": true },
+        { "label": "65 in (TV)", "values": ["165,10 cm"], "emphasis": true },
+        { "label": "75 in (TV)", "values": ["190,50 cm"] },
+        { "label": "85 in (TV)", "values": ["215,90 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo se necesita convertir centímetros a pulgadas?",
+      "description": "La conversión de cm a pulgadas aparece en varias situaciones concretas, cada una con sus particularidades.",
+      "items": [
+        {
+          "title": "Estatura y medidas corporales",
+          "description": "En Estados Unidos y Reino Unido la estatura se expresa en pies y pulgadas. Si rellenas un formulario en una web anglófona, te registras en un portal deportivo extranjero o simplemente quieres saber cómo queda tu estatura en el sistema imperial, este convertidor te da el resultado al instante. 170 cm son 5 pies 7 pulgadas, 180 cm son 5 pies 11 pulgadas y 183 cm son exactamente 6 pies."
+        },
+        {
+          "title": "Tallas de ropa de tiendas estadounidenses y británicas",
+          "description": "Las tiendas de EE. UU. y el Reino Unido suelen indicar la talla de sujetador, la cintura o el contorno de pecho en pulgadas. La conversión es sencilla: un contorno de pecho de 80 cm equivale a 31,5 pulgadas, 90 cm son 35,4 pulgadas y 100 cm son 39,4 pulgadas. Vale la pena calcular las medidas propias antes de hacer el pedido, ya que las tablas de tallas varían entre marcas."
+        },
+        {
+          "title": "Televisores, monitores y pantallas",
+          "description": "La diagonal de pantalla siempre se expresa en pulgadas, independientemente de dónde compres. Un televisor popular de 55 pulgadas tiene una diagonal de 139,7 cm y 65 pulgadas equivalen a 165,1 cm. Conocer el valor en centímetros ayuda a saber si el equipo cabe en el espacio previsto."
+        },
+        {
+          "title": "Medidas del equipaje",
+          "description": "Muchas aerolíneas, especialmente las estadounidenses y algunas de bajo coste, expresan las dimensiones permitidas del equipaje en pulgadas. El límite lineal habitual de 158 pulgadas (suma de alto, ancho y largo) equivale a 401,32 cm. Una maleta de cabina estándar de 55 × 40 × 20 cm tiene una suma de dimensiones de 115 cm, que corresponde a unos 45,3 pulgadas lineales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre la conversión de cm a pulgadas",
+      "items": [
+        {
+          "question": "¿Cuántas pulgadas tiene 1 centímetro?",
+          "answer": "Un centímetro equivale aproximadamente a 0,3937 pulgadas. Esto se deduce de la relación fija 1 pulgada = 2,54 cm, por lo que 1 cm = 1 ÷ 2,54 ≈ 0,3937 in. Redondeado a dos decimales: 1 cm = 0,39 in."
+        },
+        {
+          "question": "¿Cuál es la fórmula para convertir cm a pulgadas?",
+          "answer": "La fórmula es: pulgadas = centímetros ÷ 2,54. Una pulgada vale exactamente 2,54 cm, así que para convertir cm a pulgadas basta con dividir entre 2,54. Ejemplo: 30 cm ÷ 2,54 = 11,81 pulgadas."
+        },
+        {
+          "question": "¿Cuántas pulgadas son 170 cm?",
+          "answer": "170 cm son 66,93 pulgadas, que en pies y pulgadas equivale a 5 ft 7 in. Cálculo: 170 ÷ 2,54 = 66,93 in; 66,93 ÷ 12 = 5 pies con un resto de 6,93 pulgadas, redondeado a 7."
+        },
+        {
+          "question": "¿Cuántas pulgadas son 160 cm?",
+          "answer": "160 cm son 62,99 pulgadas, es decir en pies y pulgadas: 5 ft 3 in. Cálculo: 160 ÷ 2,54 = 62,99; 62 ÷ 12 = 5 pies con un resto de 2,99 pulgadas, redondeado a 3."
+        },
+        {
+          "question": "¿Cuántas pulgadas son 180 cm?",
+          "answer": "180 cm son 70,87 pulgadas, que en pies y pulgadas equivale a 5 ft 11 in. Esta estatura se considera en los países anglófonos como el límite entre una altura media y alta."
+        },
+        {
+          "question": "¿Cuántas pulgadas son 100 cm?",
+          "answer": "100 cm son 39,37 pulgadas, un valor de referencia fácil de recordar: un metro equivale a poco más de 39 pulgadas y media. Cálculo: 100 ÷ 2,54 = 39,37 in."
+        },
+        {
+          "question": "¿Cuántos centímetros tiene una pulgada?",
+          "answer": "Una pulgada vale exactamente 2,54 cm. Es una constante internacional establecida en 1959. La conversión es siempre exacta y no requiere redondeo."
+        },
+        {
+          "question": "¿Cuántas pulgadas son 50 cm?",
+          "answer": "50 cm son 19,69 pulgadas, casi 20 pulgadas. Cálculo: 50 ÷ 2,54 = 19,69 in."
+        },
+        {
+          "question": "¿Cuántos cm tiene un televisor de 55 pulgadas?",
+          "answer": "Un televisor de 55 pulgadas tiene una diagonal de pantalla de 55 × 2,54 = 139,70 cm. Este valor es la diagonal, no el ancho. El ancho de una pantalla 16:9 de 55 pulgadas es de unos 122 cm y la altura de unos 69 cm."
+        },
+        {
+          "question": "¿Cómo convertir cm a pulgadas sin calculadora?",
+          "answer": "Aproximación rápida: divide los centímetros entre 2,5 en lugar de 2,54. El error es mínimo (unos 1,6 %), suficiente para comparaciones orientativas. Ejemplo: 20 cm ÷ 2,5 = 8 pulgadas (valor exacto: 7,87). Para conversiones precisas usa siempre el convertidor."
+        },
+        {
+          "question": "¿Cuántas pulgadas tiene una regla de 30 cm?",
+          "answer": "Una regla escolar de 30 cm tiene 11,81 pulgadas. Redondeando, 30 cm equivalen casi exactamente a 12 pulgadas, es decir un pie. En el sistema imperial, 12 pulgadas = 1 pie = 30,48 cm, por lo que la diferencia es solo de 0,48 cm."
+        },
+        {
+          "question": "¿La fórmula de conversión es la misma en España y en Estados Unidos?",
+          "answer": "Sí, la fórmula es idéntica en todo el mundo: 1 pulgada = 2,54 cm. Desde 1959 rige la pulgada internacional, que unificó la definición en EE. UU., el Reino Unido y todos los demás países. Antes existían diferencias mínimas, pero hoy todos los calculadores usan el valor 2,54."
+        },
+        {
+          "question": "¿Cómo convertir tallas de ropa de pulgadas a cm?",
+          "answer": "La mayoría de las tiendas anglófonas indican las medidas (pecho, cintura, cadera) en pulgadas. Conversión: multiplica el valor en pulgadas por 2,54. Por ejemplo, una copa de sujetador talla 34 B equivale a un contorno de pecho de 34 pulgadas = 86,36 cm (talla europea 85B o 90B según la marca). Conviene consultar la tabla de tallas de cada tienda, ya que los estándares varían."
+        },
+        {
+          "question": "¿Cuántas pulgadas tiene un equipaje de mano de 55 × 40 × 20 cm?",
+          "answer": "Una maleta de cabina estándar de 55 × 40 × 20 cm tiene en pulgadas las dimensiones 21,7 × 15,7 × 7,9 in. La suma de dimensiones (linear inches) es de 45,3 pulgadas. Muchas aerolíneas permiten equipaje de cabina de hasta 45 pulgadas lineales, por lo que esta maleta entra dentro del límite."
+        },
+        {
+          "question": "¿De dónde viene la constante 2,54 cm en la definición de pulgada?",
+          "answer": "El valor de 2,54 cm por pulgada proviene de decisiones históricas de estandarización. En 1930, el Reino Unido adoptó este valor y en 1959, EE. UU., Canadá, Australia y otros países anglófonos firmaron un acuerdo que estableció la pulgada internacional: exactamente 25,4 mm, es decir 2,54 cm. Antes existía la pulgada geodésica de EE. UU. (2,540005 cm), que fue retirada oficialmente en 2023."
+        },
+        {
+          "question": "¿Se puede convertir la estatura de cm a pies y pulgadas con esta herramienta?",
+          "answer": "El convertidor da el resultado en pulgadas decimales (p. ej., 170 cm = 66,93 in). Para convertir ese resultado a pies y pulgadas, divide el número de pulgadas entre 12: la parte entera son los pies y el resto son las pulgadas. Ejemplo: 66,93 ÷ 12 = 5 pies con 6,93 pulgadas de resto, redondeado a 5 ft 7 in. La tabla de estatura en esta página muestra conversiones listas para valores de 150 a 200 cm."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "¿Tienes una pregunta o sugerencia?",
+      "description": "Si detectas un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
+      "imageAlt": "Contacto con Arteon Agency",
+      "subject": "Convertidor cm a pulgadas"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Otros convertidores de unidades útiles"
+    }
+  ]
+}

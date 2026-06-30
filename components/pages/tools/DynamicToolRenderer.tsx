@@ -190,6 +190,8 @@ const UNIT_KEYS = new Set([
   'mmToPxDpi',
   'pxToMmDpi',
   'inchesToPxDpi',
+  'cmToInches',
+  'inchesToCm',
   'hexToRgb',
   'rgbToCmyk',
   'bytesConverter',

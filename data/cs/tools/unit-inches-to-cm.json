@@ -1,0 +1,353 @@
+{
+  "toolKey": "inchesToCm",
+  "locale": "cs",
+  "metadata": {
+    "title": "Kalkulačka palce na CM – převod palců na centimetry",
+    "description": "Převeď palce na centimetry okamžitě. Zkontroluj velikost televizoru v cm, výšku v metrické soustavě, velikosti oblečení z evropských obchodů a rozměry zavazadel. Převodní tabulka palce na cm.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-palcu-na-cm"
+  },
+  "hero": {
+    "title": "Převeď palce na centimetry",
+    "description": "Zadej libovolnou hodnotu v palcích a okamžitě uvidíš výsledek v centimetrech. Převodník se hodí všude tam, kde potřebuješ rozumět imperiálním mírám v metrické soustavě: při kontrole velikosti televizoru, čtení rozměrů evropského produktu, porovnávání velikostí oblečení nebo převodu výšky.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-palcu-na-cm",
+      "label": "palce na cm"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník palců na centimetry – kalkulačka palce na cm",
+      "alternateName": [
+        "převodník palce na cm",
+        "kalkulačka palce na cm",
+        "palce na centimetry",
+        "palce na cm",
+        "převod palců na cm",
+        "palec na centimetr",
+        "tabulka palce cm",
+        "převod palce centimetry",
+        "kolik cm má palec",
+        "vzorec palce na cm",
+        "inches na cm",
+        "převodník palce centimetry",
+        "kalkulačka palce centimetry",
+        "1 palec na cm",
+        "stopy a palce na cm"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Bezplatný převodník palců na centimetry fungující v prohlížeči bez registrace. Zadej hodnotu v palcích a okamžitě získej výsledek v centimetrech. Užitečný pro úhlopříčky televizorů, velikosti monitorů, velikosti oblečení z anglosaských obchodů nebo převod výšky.",
+      "featureList": [
+        "Převod funguje oběma směry: lze převádět jak palce na centimetry, tak centimetry na palce",
+        "Výsledek se zobrazuje okamžitě při psaní bez nutnosti klikat na jakékoli tlačítko",
+        "Výsledek lze zkopírovat do schránky jedním kliknutím",
+        "Převodní tabulka zahrnuje hodnoty od 0,5 do 72 palců",
+        "Tabulka úhlopříček obrazovek zahrnuje nejpopulárnější velikosti televizorů a monitorů od 24 do 85 palců",
+        "Tabulka výšky zobrazuje převod stop a palců na centimetry pro hodnoty od 4 ft 11 in do 6 ft 7 in",
+        "Obrácená tabulka ukazuje, kolik palců odpovídá hodnotě v centimetrech, pro rozsah 0,5 cm až 200 cm",
+        "Všechny výpočty probíhají lokálně v prohlížeči, žádná data neopouštějí tvoje zařízení",
+        "Přesný vzorec převodu je centimetry = palce × 2,54 a vychází z pevného vztahu mezi palcem a centimetrem",
+        "Funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést palce na centimetry?",
+      "description": "Krátký návod k použití převodníku palce na cm.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej hodnotu v palcích",
+          "text": "Do levého pole zadej počet palců, které chceš převést na centimetry. Jsou podporovány desetinné hodnoty jako 5,5 nebo 12,75."
+        },
+        {
+          "name": "Přečti výsledek v centimetrech",
+          "text": "Výsledek v centimetrech se okamžitě zobrazí v sousedním poli. Jedním kliknutím ho zkopíruješ do schránky."
+        },
+        {
+          "name": "V případě potřeby obrať směr",
+          "text": "Klikni na Změnit pořadí a přepni převodník do režimu centimetry na palce."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kdy je potřeba převádět palce na centimetry?",
+      "html": "<p class=\"text-mid mb-4\">Palec je délková jednotka imperiálního systému, používaná hlavně v USA a stále rozšířená ve Velké Británii. V Česku a v celé Evropě používáme metrický systém, takže palce se objevují zejména při kontaktu s produkty nebo informacemi z anglosaských zemí.</p><p class=\"text-mid mb-4\">Nejčastější situace: chceš vědět, kolik centimetrů má televizor 55 palců, porovnáváš svou výšku s americkou tabulkou velikostí oblečení, kupuješ boty v britském obchodě, kde je číslo uvedeno v palcích, nebo zjišťuješ rozměry nábytku v americkém katalogu.</p><p class=\"text-mid mb-4\">Vzorec je jednoduchý: jeden palec je přesně 2,54 cm. Pro převod palců na centimetry stačí hodnotu vynásobit 2,54. Převodník to udělá ihned po zadání hodnoty.</p><p class=\"text-mid\">Na této stránce najdeš převodní tabulku palce na cm, tabulku populárních úhlopříček obrazovek, tabulku výšky s převodem stop a palců na centimetry a obrácenou tabulku centimetry na palce.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Bezplatný převodník palců na centimetry – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod palce na cm? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod palců na centimetry vychází z pevné konstanty: jeden palec je přesně 2,54 cm. Abys převedl palce na centimetry, vynásob počet palců číslem 2,54.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>centimetry = palce × 2,54</strong>. Obráceně: <strong>palce = centimetry ÷ 2,54</strong>.</p><p class=\"text-mid mb-4\">Příklad: chceš vědět, kolik centimetrů má televizor 55 palců. Výpočet: 55 × 2,54 = 139,70 cm. To je úhlopříčka, nikoli šířka. Šířka obrazovky 16:9 o úhlopříčce 55 palců je přibližně 122 cm.</p><p class=\"text-mid\">Jiný příklad: kontakt z USA uvádí svou výšku jako 6 ft 2 in. Nejdříve převedeš na samotné palce: 6 × 12 + 2 = 74 palců. Pak vynásobíš: 74 × 2,54 = 187,96 cm, tedy přibližně 188 cm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Převodní tabulka palce na centimetry",
+      "description": "Níže uvedená tabulka zobrazuje převod běžných hodnot v palcích na centimetry, zaokrouhlenou na dvě desetinná místa. Pro přesné převody použij převodník výše.",
+      "labelHeader": "Palce",
+      "cols": ["Centimetry"],
+      "rows": [
+        { "label": "0,5 in", "values": ["1,27 cm"] },
+        { "label": "1 in", "values": ["2,54 cm"], "emphasis": true },
+        { "label": "2 in", "values": ["5,08 cm"] },
+        { "label": "3 in", "values": ["7,62 cm"] },
+        { "label": "4 in", "values": ["10,16 cm"] },
+        { "label": "5 in", "values": ["12,70 cm"] },
+        { "label": "6 in", "values": ["15,24 cm"], "emphasis": true },
+        { "label": "7 in", "values": ["17,78 cm"] },
+        { "label": "8 in", "values": ["20,32 cm"] },
+        { "label": "9 in", "values": ["22,86 cm"] },
+        { "label": "10 in", "values": ["25,40 cm"], "emphasis": true },
+        { "label": "11 in", "values": ["27,94 cm"] },
+        { "label": "12 in", "values": ["30,48 cm"], "emphasis": true },
+        { "label": "15 in", "values": ["38,10 cm"] },
+        { "label": "18 in", "values": ["45,72 cm"] },
+        { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
+        { "label": "30 in", "values": ["76,20 cm"] },
+        { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
+        { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "48 in", "values": ["121,92 cm"] },
+        { "label": "54 in", "values": ["137,16 cm"] },
+        { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+      ],
+      "caption": "Chceš převést opačným směrem? Použij náš <a href=\"/cs/nastroje/prevodnik-cm-na-palce\">převodník cm na palce</a> s vlastní tabulkou a podrobným obsahem pro tento směr převodu."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Úhlopříčka televizoru a monitoru – palce na centimetry",
+      "description": "Výrobci elektroniky vždy uvádějí úhlopříčku obrazovky v palcích. Níže uvedená tabulka ukazuje, kolik centimetrů měří každá populární velikost. Uvedená hodnota je úhlopříčka, nikoli šířka.",
+      "labelHeader": "Úhlopříčka (palce)",
+      "cols": ["Úhlopříčka (cm)"],
+      "rows": [
+        { "label": "24 in (stolní monitor)", "values": ["60,96 cm"] },
+        { "label": "27 in (stolní monitor)", "values": ["68,58 cm"] },
+        {
+          "label": "32 in (televizor / velký monitor)",
+          "values": ["81,28 cm"],
+          "emphasis": true
+        },
+        { "label": "40 in (televizor)", "values": ["101,60 cm"] },
+        { "label": "43 in (televizor)", "values": ["109,22 cm"] },
+        { "label": "50 in (televizor)", "values": ["127,00 cm"] },
+        {
+          "label": "55 in (televizor)",
+          "values": ["139,70 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "65 in (televizor)",
+          "values": ["165,10 cm"],
+          "emphasis": true
+        },
+        { "label": "75 in (televizor)", "values": ["190,50 cm"] },
+        { "label": "85 in (televizor)", "values": ["215,90 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Výška ve stopách a palcích převedená na centimetry",
+      "description": "Tato tabulka převádí běžné výšky ve stopách a palcích (ft in) na centimetry. Jedna stopa je 12 palců a jeden palec je 2,54 cm.",
+      "labelHeader": "Výška (ft in)",
+      "cols": ["Centimetry"],
+      "rows": [
+        { "label": "4 ft 11 in (59 in)", "values": ["149,86 cm"] },
+        { "label": "5 ft 0 in (60 in)", "values": ["152,40 cm"] },
+        { "label": "5 ft 1 in (61 in)", "values": ["154,94 cm"] },
+        { "label": "5 ft 2 in (62 in)", "values": ["157,48 cm"] },
+        {
+          "label": "5 ft 3 in (63 in)",
+          "values": ["160,02 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 4 in (64 in)", "values": ["162,56 cm"] },
+        {
+          "label": "5 ft 5 in (65 in)",
+          "values": ["165,10 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 6 in (66 in)", "values": ["167,64 cm"] },
+        {
+          "label": "5 ft 7 in (67 in)",
+          "values": ["170,18 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 8 in (68 in)", "values": ["172,72 cm"] },
+        {
+          "label": "5 ft 9 in (69 in)",
+          "values": ["175,26 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 10 in (70 in)", "values": ["177,80 cm"] },
+        {
+          "label": "5 ft 11 in (71 in)",
+          "values": ["180,34 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 0 in (72 in)", "values": ["182,88 cm"] },
+        {
+          "label": "6 ft 1 in (73 in)",
+          "values": ["185,42 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 2 in (74 in)", "values": ["187,96 cm"] },
+        {
+          "label": "6 ft 3 in (75 in)",
+          "values": ["190,50 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 4 in (76 in)", "values": ["193,04 cm"] },
+        { "label": "6 ft 5 in (77 in)", "values": ["195,58 cm"] },
+        { "label": "6 ft 7 in (79 in)", "values": ["200,66 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy je potřeba převádět palce na centimetry?",
+      "description": "Převod palců na cm se vyskytuje v několika typických každodenních situacích.",
+      "items": [
+        {
+          "title": "Televizory, monitory a obrazovky",
+          "description": "Úhlopříčka obrazovky se vždy uvádí v palcích, bez ohledu na zemi nákupu. Televizor 55 palců má úhlopříčku 139,70 cm a model 65 palců dosahuje 165,10 cm. Znát hodnotu v centimetrech ti pomůže naplánovat prostor a odhadnout optimální vzdálenost sledování, když jsou rozměry místnosti v metrické soustavě."
+        },
+        {
+          "title": "Výška a mezinárodní srovnání",
+          "description": "Při porovnávání výškových dat z amerických nebo britských zdrojů s metrickými tabulkami — v zdravotnických studiích, sportovních statistikách nebo fitness aplikacích — je užitečné znát ekvivalent v centimetrech. 5 ft 7 in je 170,18 cm, 6 ft 0 in je 182,88 cm a 6 ft 3 in je 190,50 cm."
+        },
+        {
+          "title": "Oblečení a obuv z mezinárodních obchodů",
+          "description": "Americké a britské obchody uvádějí rozměry v palcích. Límcová míra 40 cm odpovídá přibližně 15,7 palce. Pro boty, košile a jiné oblečení platí převod násobením hodnotou 2,54. Doporučuje se zkontrolovat tabulku velikostí konkrétního výrobce."
+        },
+        {
+          "title": "Nábytek a stavební materiály",
+          "description": "Americké katalogy nábytku, nářadí a stavební materiály dovážené ze Severní Ameriky uvádějí rozměry v palcích. Standardní dřevěná lišta 2×4 má skutečné rozměry 1,5 × 3,5 palce, tedy přibližně 3,8 × 8,9 cm po opracování. Přepočet ti pomůže přesně naplánovat projekty a vyhnout se chybám v rozměrech."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Časté otázky o převodu palců na centimetry",
+      "items": [
+        {
+          "question": "Kolik centimetrů má jeden palec?",
+          "answer": "Jeden palec je přesně 2,54 cm. Jde o pevnou hodnotu stanovenou v roce 1959 jako mezinárodní standard, převod je proto vždy přesný."
+        },
+        {
+          "question": "Jaký je vzorec pro převod palců na cm?",
+          "answer": "Vzorec je: centimetry = palce × 2,54. Příklad: 10 palců × 2,54 = 25,40 cm. Obráceně: palce = centimetry ÷ 2,54."
+        },
+        {
+          "question": "Kolik cm je 5 palců?",
+          "answer": "5 palců je 5 × 2,54 = 12,70 cm. Jde o běžnou referenční hodnotu, například pro úhlopříčku displeje smartphonu."
+        },
+        {
+          "question": "Kolik cm je 6 palců?",
+          "answer": "6 palců je 6 × 2,54 = 15,24 cm, přesně půl stopy. To je typická velikost displeje velkého smartphonu."
+        },
+        {
+          "question": "Kolik cm je 12 palců?",
+          "answer": "12 palců je 30,48 cm, tedy přesně jedna stopa. Jde o důležitou referenční hodnotu: 1 stopa = 12 palců = 30,48 cm."
+        },
+        {
+          "question": "Kolik cm má televizor 55 palců?",
+          "answer": "Televizor 55 palců má úhlopříčku obrazovky 55 × 2,54 = 139,70 cm. Šířka obrazovky 16:9 o úhlopříčce 55 palců je přibližně 122 cm a výška přibližně 69 cm. Výrobci někdy uvádějí vnější rozměry s rámečkem, které jsou o něco větší."
+        },
+        {
+          "question": "Kolik cm má televizor 65 palců?",
+          "answer": "Televizor 65 palců má úhlopříčku obrazovky 65 × 2,54 = 165,10 cm. Šířka obrazovky 16:9 o úhlopříčce 65 palců je přibližně 144 cm a výška přibližně 81 cm. Jde o jednu z nejpopulárnějších velikostí velkých obývákových televizorů."
+        },
+        {
+          "question": "Kolik cm je 5 ft 7 in?",
+          "answer": "5 stop 7 palců se nejdříve převede na samotné palce: 5 × 12 + 7 = 67 palců. Pak: 67 × 2,54 = 170,18 cm. 5 ft 7 in tedy odpovídá přibližně 170 cm."
+        },
+        {
+          "question": "Kolik cm je 6 ft 0 in?",
+          "answer": "6 stop 0 palců je 6 × 12 = 72 palců a 72 × 2,54 = 182,88 cm. Výška přesně 6 stop odpovídá přibližně 183 cm."
+        },
+        {
+          "question": "Jak převést palce na cm bez kalkulačky?",
+          "answer": "Rychlé přiblížení: palce vynásob číslem 2,5 místo 2,54. Chyba je přibližně 1,6 %, což pro orientační odhady stačí. Příklad: 10 palců × 2,5 = 25 cm (přesná hodnota: 25,40 cm). Pro přesné převody vždy použij převodník."
+        },
+        {
+          "question": "Kolik cm má příruční zavazadlo 22 × 14 × 9 palců?",
+          "answer": "Standardní příruční zavazadlo 22 × 14 × 9 palců odpovídá: 22 × 2,54 = 55,88 cm, 14 × 2,54 = 35,56 cm, 9 × 2,54 = 22,86 cm, tedy přibližně 56 × 36 × 23 cm. Součet rozměrů je 22 + 14 + 9 = 45 palců, přibližně 114,3 cm."
+        },
+        {
+          "question": "Je vždy 1 palec = 2,54 cm, nebo existují výjimky?",
+          "answer": "V každodenním použití a obchodě platí vždy 1 palec = 2,54 cm (mezinárodní palec od roku 1959). Jedinou výjimkou byl americký geodetický palec (2,5400050800 cm), používaný při geodetických měřeních. Byl v USA oficiálně zrušen v roce 2023, takže dnes se používá výhradně hodnota 2,54."
+        },
+        {
+          "question": "Jak převést čísla obuvi z palců na cm?",
+          "answer": "Čísla obuvi nemají přímý převod palce na cm, protože každý výrobce a země má vlastní stupnici. V USA se dámské velikosti pohybují od 4 (asi 21,6 cm stélky) do 12 (asi 28,6 cm) a pánské od 6 (asi 24,1 cm) do 16 (asi 32 cm). Délka stélky v palcích neodpovídá číslu velikosti. Doporučuje se zkontrolovat tabulku velikostí konkrétního výrobce."
+        },
+        {
+          "question": "Kolik cm má pravítko 12 palců?",
+          "answer": "Pravítko 12 palců je 30,48 cm dlouhé, tedy přesně jedna stopa. Je to téměř stejné jako školní pravítko 30 cm, rozdíl je pouhých 0,48 cm."
+        },
+        {
+          "question": "Jak převést stopy a palce na centimetry?",
+          "answer": "Převod stop a palců na centimetry probíhá ve dvou krocích: nejdříve převedeš vše na samotné palce (stopy × 12 + zbývající palce), pak vynásobíš 2,54. Příklad: 5 ft 9 in = 5 × 12 + 9 = 69 palců; 69 × 2,54 = 175,26 cm. Tabulka výšky na této stránce zobrazuje hotové převody pro hodnoty od 4 ft 11 in do 6 ft 7 in."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Máš otázku nebo návrh?",
+      "description": "Pokud najdeš chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "subject": "Převodník palců na cm"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    }
+  ]
+}

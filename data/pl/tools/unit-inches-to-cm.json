@@ -1,0 +1,357 @@
+{
+  "toolKey": "inchesToCm",
+  "locale": "pl",
+  "metadata": {
+    "title": "Kalkulator cale na cm – przelicz cale na centymetry",
+    "description": "Przelicz cale na centymetry. Sprawdź rozmiar telewizora, wzrost w systemie imperialnym, rozmiary ubrań czy wymiary bagażu. Tabela przeliczeniowa cale na cm.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-cali-na-cm"
+  },
+  "hero": {
+    "title": "Przelicz cale na centymetry",
+    "description": "Wpisz dowolną wartość w calach i od razu zobaczysz wynik w centymetrach. Konwerter sprawdza się wszędzie tam, gdzie wymiary podano w systemie imperialnym: przy kupowaniu telewizora, sprawdzaniu rozmiaru ekranu laptopa, zamawianiu ubrań ze sklepów anglojęzycznych czy porównywaniu wzrostu z tabelami z USA i Wielkiej Brytanii.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-cali-na-cm",
+      "label": "cale na cm"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Przelicznik cali na centymetry – konwerter cale na cm",
+      "alternateName": [
+        "Konwerter cale na cm",
+        "Kalkulator cale na cm",
+        "Przelicznik cali na centymetry",
+        "Cale na centymetry",
+        "cale na cm",
+        "Przelicz cale na cm",
+        "Zamiana cali na cm",
+        "Przelicznik cal na cm",
+        "Konwerter cali na centymetry",
+        "Kalkulator cali na centymetry",
+        "inches na cm",
+        "inch na cm",
+        "Ile cm ma cal",
+        "Tabela cale cm",
+        "Przelicz cale na centymetry"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicznik cali na centymetry działający w przeglądarce bez rejestracji. Wpisz wartość w calach i natychmiast otrzymaj wynik w centymetrach. Przydatny przy sprawdzaniu przekątnej telewizora lub monitora, rozmiarów ubrań i butów z anglojęzycznych sklepów, wzrostu w systemie imperialnym czy wymiarów bagażu lotniczego.",
+      "featureList": [
+        "Konwersja działa w obie strony, więc przeliczysz zarówno cale na centymetry, jak i centymetry na cale",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez potrzeby klikania jakiegokolwiek przycisku",
+        "Gotowy wynik można skopiować do schowka jednym kliknięciem",
+        "Tabela przeliczeniowa obejmuje wartości od 0,5 do 72 cali",
+        "Tabela przekątnych ekranów pokazuje najpopularniejsze rozmiary telewizorów i monitorów od 24 do 85 cali",
+        "Tabela wzrostu zawiera przeliczenie wzrostu z cali i stóp na centymetry dla wartości od 4 ft 11 in do 6 ft 7 in",
+        "Tabela odwrotna pokazuje, ile cali mają wartości od 0,5 cm do 200 cm",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór konwersji to centymetry = cale × 2,54 i wykorzystuje stałą zależność między calem a centymetrem",
+        "Narzędzie działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć cale na centymetry?",
+      "description": "Krótka instrukcja użycia konwertera cale na cm.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość w calach",
+          "text": "W lewym polu wpisz liczbę cali, którą chcesz przeliczyć na centymetry. Możesz wpisywać wartości dziesiętne, np. 5,5 lub 12,75."
+        },
+        {
+          "name": "Odczytaj wynik w centymetrach",
+          "text": "Wynik w centymetrach pojawi się od razu w polu obok. Możesz go skopiować do schowka jednym kliknięciem."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przełączyć konwerter na przeliczanie centymetrów na cale."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy przelicza się cale na centymetry?",
+      "html": "<p class=\"text-mid mb-4\">Cal to jednostka długości z systemu imperialnego, powszechnie używana w USA, Wielkiej Brytanii, Kanadzie i Australii. W Polsce i całej Europie posługujemy się centymetrami, więc cale pojawiają się głównie wtedy, gdy mamy do czynienia z produktami lub informacjami pochodzącymi z krajów anglojęzycznych.</p><p class=\"text-mid mb-4\">Najczęstsze sytuacje: chcesz sprawdzić, ile centymetrów ma telewizor opisany jako 55 cali, porównujesz swój wzrost z amerykańską tabelą rozmiarów odzieży, kupujesz buty w sklepie z Wielkiej Brytanii i rozmiar podany jest w calach albo sprawdzasz wymiary mebla z katalogu IKEA US.</p><p class=\"text-mid mb-4\">Wzór jest prosty: jeden cal to dokładnie 2,54 cm. Żeby przeliczyć cale na centymetry, wystarczy pomnożyć liczbę cali przez 2,54. Konwerter robi to natychmiast po wpisaniu wartości.</p><p class=\"text-mid\">Na tej stronie znajdziesz tabelę przeliczeniową cale na cm, tabelę popularnych przekątnych ekranów, tabelę wzrostu z przeliczeniem stóp i cali na centymetry oraz tabelę odwrotną dla centymetrów na cale.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter cali na centymetry – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja cali na cm? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie cali na centymetry opiera się na jednej stałej: jeden cal to dokładnie 2,54 cm. Wystarczy więc liczbę cali pomnożyć przez 2,54, aby otrzymać wynik w centymetrach.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>centymetry = cale × 2,54</strong>. W drugą stronę: <strong>cale = centymetry ÷ 2,54</strong>.</p><p class=\"text-mid mb-4\">Przykład: chcesz sprawdzić, ile centymetrów ma telewizor 55 cali. Podstawiasz: 55 × 2,54 = 139,70 cm. To przekątna ekranu, a nie jego szerokość. Szerokość ekranu 16:9 o przekątnej 55 cali wynosi ok. 122 cm.</p><p class=\"text-mid\">Inny przykład: znajomy ze Stanów podaje swój wzrost jako 6 ft 2 in. Przeliczasz stopy i cale na same cale: 6 × 12 + 2 = 74 cale. Następnie mnożysz przez 2,54: 74 × 2,54 = 187,96 cm, czyli ok. 188 cm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa cale na centymetry",
+      "description": "Poniższa tabela zawiera przeliczenie popularnych wartości w calach na centymetry. Wartości zaokrąglono do dwóch miejsc po przecinku. Aby przeliczyć dokładną wartość, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Cale",
+      "cols": ["Centymetry"],
+      "rows": [
+        { "label": "0,5 in", "values": ["1,27 cm"] },
+        { "label": "1 in", "values": ["2,54 cm"], "emphasis": true },
+        { "label": "2 in", "values": ["5,08 cm"] },
+        { "label": "3 in", "values": ["7,62 cm"] },
+        { "label": "4 in", "values": ["10,16 cm"] },
+        { "label": "5 in", "values": ["12,70 cm"] },
+        { "label": "6 in", "values": ["15,24 cm"], "emphasis": true },
+        { "label": "7 in", "values": ["17,78 cm"] },
+        { "label": "8 in", "values": ["20,32 cm"] },
+        { "label": "9 in", "values": ["22,86 cm"] },
+        { "label": "10 in", "values": ["25,40 cm"], "emphasis": true },
+        { "label": "11 in", "values": ["27,94 cm"] },
+        { "label": "12 in", "values": ["30,48 cm"], "emphasis": true },
+        { "label": "15 in", "values": ["38,10 cm"] },
+        { "label": "18 in", "values": ["45,72 cm"] },
+        { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
+        { "label": "30 in", "values": ["76,20 cm"] },
+        { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
+        { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "48 in", "values": ["121,92 cm"] },
+        { "label": "54 in", "values": ["137,16 cm"] },
+        { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+      ],
+      "caption": "Chcesz przeliczyć w drugą stronę? Skorzystaj z naszego konwertera <a href=\"/narzedzia/konwerter-cm-na-cale\">cm na cale</a>, który ma własną tabelę i szczegółową treść poświęconą temu kierunkowi konwersji."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Przekątna telewizora i monitora – cale na centymetry",
+      "description": "Producenci elektroniki podają przekątną ekranu w calach. Poniższa tabela pokazuje, ile centymetrów ma każdy popularny rozmiar od monitora biurkowego po duży telewizor. Podana wartość to przekątna ekranu, a nie jego szerokość.",
+      "labelHeader": "Przekątna (cale)",
+      "cols": ["Przekątna (cm)"],
+      "rows": [
+        { "label": "24 in (monitor biurkowy)", "values": ["60,96 cm"] },
+        { "label": "27 in (monitor biurkowy)", "values": ["68,58 cm"] },
+        {
+          "label": "32 in (telewizor / duży monitor)",
+          "values": ["81,28 cm"],
+          "emphasis": true
+        },
+        { "label": "40 in (telewizor)", "values": ["101,60 cm"] },
+        { "label": "43 in (telewizor)", "values": ["109,22 cm"] },
+        { "label": "50 in (telewizor)", "values": ["127,00 cm"] },
+        {
+          "label": "55 in (telewizor)",
+          "values": ["139,70 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "65 in (telewizor)",
+          "values": ["165,10 cm"],
+          "emphasis": true
+        },
+        { "label": "75 in (telewizor)", "values": ["190,50 cm"] },
+        { "label": "85 in (telewizor)", "values": ["215,90 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Wzrost w stopach i calach przeliczony na centymetry",
+      "description": "W USA i Wielkiej Brytanii wzrost podaje się w stopach i calach (ft in). Poniższa tabela przelicza popularne wartości na centymetry. Jedna stopa to 12 cali, a jeden cal to 2,54 cm.",
+      "labelHeader": "Wzrost (ft in)",
+      "cols": ["Centymetry"],
+      "rows": [
+        { "label": "4 ft 11 in (59 in)", "values": ["149,86 cm"] },
+        { "label": "5 ft 0 in (60 in)", "values": ["152,40 cm"] },
+        { "label": "5 ft 1 in (61 in)", "values": ["154,94 cm"] },
+        { "label": "5 ft 2 in (62 in)", "values": ["157,48 cm"] },
+        {
+          "label": "5 ft 3 in (63 in)",
+          "values": ["160,02 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 4 in (64 in)", "values": ["162,56 cm"] },
+        {
+          "label": "5 ft 5 in (65 in)",
+          "values": ["165,10 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 6 in (66 in)", "values": ["167,64 cm"] },
+        {
+          "label": "5 ft 7 in (67 in)",
+          "values": ["170,18 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 8 in (68 in)", "values": ["172,72 cm"] },
+        {
+          "label": "5 ft 9 in (69 in)",
+          "values": ["175,26 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 10 in (70 in)", "values": ["177,80 cm"] },
+        {
+          "label": "5 ft 11 in (71 in)",
+          "values": ["180,34 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 0 in (72 in)", "values": ["182,88 cm"] },
+        {
+          "label": "6 ft 1 in (73 in)",
+          "values": ["185,42 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 2 in (74 in)", "values": ["187,96 cm"] },
+        {
+          "label": "6 ft 3 in (75 in)",
+          "values": ["190,50 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 4 in (76 in)", "values": ["193,04 cm"] },
+        { "label": "6 ft 5 in (77 in)", "values": ["195,58 cm"] },
+        { "label": "6 ft 7 in (79 in)", "values": ["200,66 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się cale na centymetry?",
+      "description": "Przeliczenie cali na cm pojawia się w kilku typowych sytuacjach z życia codziennego.",
+      "items": [
+        {
+          "title": "Telewizory, monitory i ekrany",
+          "description": "Przekątna ekranu zawsze podawana jest w calach, niezależnie od kraju zakupu. Telewizor 55 cali to 139,70 cm przekątnej, a 65 cali to 165,10 cm. Znając wartość w centymetrach, możesz ocenić, czy sprzęt zmieści się w konkretnym miejscu i jaka powinna być minimalna odległość oglądania."
+        },
+        {
+          "title": "Wzrost i porównywanie z tabelami angielskimi",
+          "description": "Amerykańskie i brytyjskie tabele rozmiarów odzieży, aplikacje fitness i portale randkowe podają wzrost w stopach i calach. Żeby przeliczyć 5 ft 7 in na centymetry: 5 × 12 = 60 cali plus 7 = 67 cali, a następnie 67 × 2,54 = 170,18 cm. Konwerter robi to za Ciebie automatycznie po wpisaniu wartości dziesiętnej."
+        },
+        {
+          "title": "Rozmiary ubrań i butów ze sklepów USA i UK",
+          "description": "Tabele rozmiarów biustonoszy, koszul, pasów i butów w sklepach anglojęzycznych często podają wymiary w calach. Rozmiar buta US 9 odpowiada długości stopy ok. 27 cm (ale przeliczniki różnią się między markami). Obwód klatki piersiowej 40 cali to 101,6 cm. Konwerter pozwala sprawdzić te wartości natychmiast."
+        },
+        {
+          "title": "Wymiary mebli i materiałów budowlanych",
+          "description": "Katalogi IKEA US, narzędzia i materiały budowlane sprowadzane z Ameryki czy skrawki drewna ze sklepów anglojęzycznych podają wymiary w calach. Popularna deska 2×4 (dwa na cztery cale) ma faktyczne wymiary 1,5 × 3,5 cala, czyli ok. 3,8 × 8,9 cm po przycięciu. Przeliczenie pomaga zaplanować projekty bez błędów wymiarowych."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie cali na centymetry",
+      "items": [
+        {
+          "question": "Ile centymetrów ma jeden cal?",
+          "answer": "Jeden cal to dokładnie 2,54 cm. Jest to zdefiniowana wartość stała, obowiązująca od 1959 roku jako tzw. cal międzynarodowy. Dzięki temu przeliczenie jest zawsze dokładne: 1 in = 2,54 cm."
+        },
+        {
+          "question": "Jaki jest wzór na przeliczenie cali na cm?",
+          "answer": "Wzór to: centymetry = cale × 2,54. Na przykład 10 cali × 2,54 = 25,40 cm. W drugą stronę: cale = centymetry ÷ 2,54."
+        },
+        {
+          "question": "Ile cm ma 5 cali?",
+          "answer": "5 cali to 5 × 2,54 = 12,70 cm. Jest to popularna wartość np. przy rozmiarach telefonów – przekątna 5 cali to ekran o przekątnej 12,7 cm."
+        },
+        {
+          "question": "Ile cm ma 6 cali?",
+          "answer": "6 cali to 6 × 2,54 = 15,24 cm, czyli dokładnie pół stopy. To typowy rozmiar ekranu dużego smartfona."
+        },
+        {
+          "question": "Ile cm ma 12 cali?",
+          "answer": "12 cali to 30,48 cm, czyli dokładnie jedna stopa. To ważna wartość referencyjna: 1 stopa = 12 cali = 30,48 cm."
+        },
+        {
+          "question": "Ile cm ma 55 cali (telewizor)?",
+          "answer": "55 cali to 55 × 2,54 = 139,70 cm przekątnej ekranu. Szerokość telewizora 55 cali (format 16:9) wynosi ok. 122 cm, a wysokość ok. 69 cm. Producenci czasem podają wymiar zewnętrzny z ramką, który jest nieco większy."
+        },
+        {
+          "question": "Ile cm ma 65 cali (telewizor)?",
+          "answer": "65 cali to 65 × 2,54 = 165,10 cm przekątnej. Szerokość takiego telewizora (16:9) to ok. 144 cm, a wysokość ok. 81 cm. To jeden z najpopularniejszych rozmiarów dużych telewizorów."
+        },
+        {
+          "question": "Ile cm to 5 ft 7 in?",
+          "answer": "5 stóp 7 cali to najpierw przeliczenie na same cale: 5 × 12 + 7 = 67 cali. Następnie 67 × 2,54 = 170,18 cm. Wzrost 5 ft 7 in odpowiada więc ok. 170 cm."
+        },
+        {
+          "question": "Ile cm to 6 ft 0 in?",
+          "answer": "6 stóp 0 cali to 6 × 12 = 72 cale, a 72 × 2,54 = 182,88 cm. Wzrost 6 ft to ok. 183 cm."
+        },
+        {
+          "question": "Jak przeliczyć cale na centymetry bez kalkulatora?",
+          "answer": "Szybkie przybliżenie: cale pomnóż przez 2,5 zamiast 2,54. Błąd wynosi ok. 1,6%, co w praktyce wystarczy do orientacyjnego porównania. Na przykład 10 cali × 2,5 = 25 cm (dokładna wartość to 25,40 cm). Do precyzyjnych przeliczeń zawsze używaj konwertera."
+        },
+        {
+          "question": "Ile cm ma bagaż podręczny 22 × 14 × 9 cali?",
+          "answer": "Standardowy limit bagażu podręcznego na wielu liniach lotniczych to 22 × 14 × 9 cali. Przeliczenie: 22 × 2,54 = 55,88 cm, 14 × 2,54 = 35,56 cm, 9 × 2,54 = 22,86 cm. Wymiary wynoszą więc ok. 56 × 36 × 23 cm. Suma (linear inches) to 22 + 14 + 9 = 45 cali, czyli ok. 114,3 cm."
+        },
+        {
+          "question": "Czy cal to zawsze 2,54 cm, czy zdarzają się wyjątki?",
+          "answer": "W codziennych zastosowaniach i handlu zawsze obowiązuje 1 cal = 2,54 cm (cal międzynarodowy z 1959 roku). Jedynym wyjątkiem jest tzw. cal geodezyjny USA (U.S. survey inch), który wynosi 2,5400050800 cm i był stosowany w pomiarach geodezyjnych USA. W 2023 roku Stany Zjednoczone oficjalnie wycofały ten standard, więc dziś obowiązuje wyłącznie wartość 2,54."
+        },
+        {
+          "question": "Jak przeliczać rozmiary butów z cali na cm?",
+          "answer": "Rozmiary butów nie mają prostego przeliczenia cal na cm – każdy producent i kraj ma własną skalę. W USA rozmiary damskie zaczynają się od 4 (ok. 21,6 cm) do 12 (ok. 28,6 cm), a męskie od 6 (ok. 24,1 cm) do 16 (ok. 32 cm). Długość wkładki w calach nie jest tym samym, co numer rozmiaru. Warto korzystać z tabeli rozmiarów konkretnego producenta lub sklepu."
+        },
+        {
+          "question": "Ile cm ma linijka 12-calowa?",
+          "answer": "Linijka 12-calowa, popularny rozmiar w krajach anglojęzycznych, ma 30,48 cm długości. 12 cali to dokładnie 1 stopa, a 30,48 cm to niemal identyczna długość jak popularna polska linijka szkolna 30 cm (różnica wynosi 0,48 cm)."
+        },
+        {
+          "question": "Ile cm ma iPad o przekątnej 11 cali?",
+          "answer": "iPad o przekątnej 11 cali ma ekran o przekątnej 11 × 2,54 = 27,94 cm. Fizyczne wymiary urządzenia (z ramką) są nieco większe. W przypadku iPada Pro 11 cali (M4) to ok. 249,7 × 177,5 mm dla całej obudowy."
+        },
+        {
+          "question": "Jak przeliczyć stopy i cale na centymetry?",
+          "answer": "Przeliczenie stóp i cali na centymetry przebiega w dwóch krokach: najpierw zamieniasz wszystko na same cale (stopy × 12 + pozostałe cale), a następnie mnożysz przez 2,54. Przykład: 5 ft 9 in = 5 × 12 + 9 = 69 cali; 69 × 2,54 = 175,26 cm. Tabela wzrostu na tej stronie zawiera gotowe przeliczenia dla wartości od 4 ft 11 in do 6 ft 7 in."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabelach lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "subject": "Konwerter cale na cm"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    }
+  ]
+}

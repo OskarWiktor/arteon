@@ -1,0 +1,400 @@
+{
+  "toolKey": "cmToInches",
+  "locale": "pt",
+  "metadata": {
+    "title": "Calculadora cm para polegadas – converter centímetros em polegadas",
+    "description": "Converta centímetros em polegadas instantaneamente. Verifique a altura, tamanhos de roupa, diagonal de TV e medidas de bagagem. Tabela de conversão cm para polegadas e polegadas para cm.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/pt/ferramentas/conversor-cm-para-polegadas"
+  },
+  "hero": {
+    "title": "Converter centímetros em polegadas",
+    "description": "Introduza qualquer valor em centímetros e obtenha imediatamente o resultado em polegadas. Este conversor é útil em todos os contextos onde as medidas são expressas no sistema imperial: ao verificar a altura, ao comprar eletrónica, ao encomendar roupa em lojas americanas ou britânicas, ou ao confirmar as dimensões permitidas da bagagem.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-cm-para-polegadas",
+      "label": "cm para polegadas"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de centímetros para polegadas – calculadora cm para polegadas",
+      "alternateName": [
+        "conversor cm para polegadas",
+        "calculadora cm para polegadas",
+        "centímetros para polegadas",
+        "cm para polegadas",
+        "converter cm em polegadas",
+        "cm em polegadas",
+        "tabela cm polegadas",
+        "conversão cm polegadas",
+        "quantas polegadas tem um cm",
+        "fórmula cm para polegadas",
+        "cm para inches",
+        "conversor centímetros polegadas",
+        "calculadora centímetros polegadas",
+        "cm para polegadas conversão",
+        "cm para pés e polegadas"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Conversor gratuito de centímetros para polegadas que funciona no browser sem registo. Introduza um valor em cm e obtenha imediatamente o resultado em polegadas. Útil para verificar a altura, tamanhos de roupa de lojas anglófonas, a diagonal de uma televisão ou as medidas da bagagem de avião.",
+      "featureList": [
+        "A conversão funciona nos dois sentidos: pode converter tanto centímetros em polegadas como polegadas em centímetros",
+        "O resultado aparece instantaneamente enquanto escreve, sem necessidade de clicar em qualquer botão",
+        "O resultado pode ser copiado para a área de transferência com um único clique",
+        "A tabela de conversão abrange valores de 0,5 cm a 200 cm",
+        "A tabela de altura apresenta os valores mais comuns de 150 cm a 200 cm com conversão para pés e polegadas",
+        "A tabela de diagonais de ecrã inclui os tamanhos mais populares de televisões e monitores, de 24 a 85 polegadas",
+        "A tabela inversa mostra quantos centímetros correspondem a um valor em polegadas, de 0,5 a 72 polegadas",
+        "Todos os cálculos são efetuados localmente no browser, nenhum dado sai do seu dispositivo",
+        "A fórmula exata é polegadas = centímetros ÷ 2,54, baseada na relação fixa entre a polegada e o centímetro",
+        "Funciona em telemóvel, tablet e computador sem instalação"
+      ]
+    },
+    "howTo": {
+      "name": "Como converter centímetros em polegadas?",
+      "description": "Guia rápido de utilização do conversor cm para polegadas.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduza o valor em centímetros",
+          "text": "No campo da esquerda, introduza o número de centímetros que pretende converter em polegadas."
+        },
+        {
+          "name": "Leia o resultado em polegadas",
+          "text": "O resultado em polegadas aparece imediatamente no campo ao lado. Pode copiá-lo para a área de transferência com um único clique."
+        },
+        {
+          "name": "Inverta a direção se necessário",
+          "text": "Clique em Alterar ordem para mudar o conversor para o modo polegadas para centímetros."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Porquê converter centímetros em polegadas?",
+      "html": "<p class=\"text-mid mb-4\">O centímetro é a unidade de comprimento do quotidiano em Portugal e em todo o mundo lusófono. A polegada, por sua vez, domina nos Estados Unidos e ainda é amplamente utilizada no Reino Unido. A necessidade de converter surge quando compra uma televisão cuja diagonal é expressa em polegadas, verifica as medidas permitidas da bagagem no sítio de uma companhia aérea americana ou compara a sua altura com uma tabela de tamanhos de uma loja britânica.</p><p class=\"text-mid mb-4\">Uma polegada equivale exatamente a 2,54 cm. Esta relação é fixa e universal, pelo que qualquer conversão se resume a uma única divisão. O conversor faz isso por si assim que introduz um valor.</p><p class=\"text-mid mb-4\">Mais abaixo encontrará uma tabela de conversão cm para polegadas para valores de 0,5 a 200 cm, uma tabela de altura com o equivalente em pés e polegadas, uma tabela de diagonais de ecrã populares e uma tabela inversa de polegadas para centímetros.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Conversor gratuito de centímetros para polegadas – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão cm para polegadas? Fórmula e exemplo",
+      "html": "<p class=\"text-mid mb-4\">A conversão de centímetros para polegadas baseia-se numa constante fixa: uma polegada equivale exatamente a 2,54 cm. Para converter centímetros em polegadas, divida o valor por 2,54.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>polegadas = centímetros ÷ 2,54</strong>. No sentido inverso: <strong>centímetros = polegadas × 2,54</strong>.</p><p class=\"text-mid mb-4\">Exemplo: quer saber quantas polegadas são 170 cm (uma altura habitual). Cálculo: 170 ÷ 2,54 = 66,93 polegadas. Convertido em pés e polegadas dá 5 ft 7 in (cinco pés e sete polegadas), pois um pé equivale a 12 polegadas: 66,93 ÷ 12 = 5 pés com um resto de 6,93 polegadas.</p><p class=\"text-mid\">Outro exemplo: uma televisão de 55 polegadas tem uma diagonal de ecrã de 55 × 2,54 = 139,70 cm. O conversor realiza ambas as direções de cálculo assim que introduz um valor.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabela de conversão cm para polegadas",
+      "description": "A tabela abaixo apresenta a conversão dos valores mais comuns em centímetros para polegadas, arredondada a duas casas decimais. Para conversões exatas ou medidas menos habituais, utilize o conversor acima.",
+      "labelHeader": "Centímetros",
+      "cols": ["Polegadas"],
+      "rows": [
+        { "label": "0,5 cm", "values": ["0,20 in"] },
+        { "label": "1 cm", "values": ["0,39 in"], "emphasis": true },
+        { "label": "1,5 cm", "values": ["0,59 in"] },
+        { "label": "2 cm", "values": ["0,79 in"] },
+        { "label": "2,5 cm", "values": ["0,98 in"] },
+        { "label": "3 cm", "values": ["1,18 in"] },
+        { "label": "4 cm", "values": ["1,57 in"] },
+        { "label": "5 cm", "values": ["1,97 in"], "emphasis": true },
+        { "label": "6 cm", "values": ["2,36 in"] },
+        { "label": "7 cm", "values": ["2,76 in"] },
+        { "label": "8 cm", "values": ["3,15 in"] },
+        { "label": "9 cm", "values": ["3,54 in"] },
+        { "label": "10 cm", "values": ["3,94 in"], "emphasis": true },
+        { "label": "12 cm", "values": ["4,72 in"] },
+        { "label": "15 cm", "values": ["5,91 in"] },
+        { "label": "20 cm", "values": ["7,87 in"], "emphasis": true },
+        { "label": "25 cm", "values": ["9,84 in"] },
+        { "label": "30 cm", "values": ["11,81 in"] },
+        { "label": "35 cm", "values": ["13,78 in"] },
+        { "label": "40 cm", "values": ["15,75 in"] },
+        { "label": "45 cm", "values": ["17,72 in"] },
+        { "label": "50 cm", "values": ["19,69 in"], "emphasis": true },
+        { "label": "60 cm", "values": ["23,62 in"] },
+        { "label": "70 cm", "values": ["27,56 in"] },
+        { "label": "80 cm", "values": ["31,50 in"] },
+        { "label": "90 cm", "values": ["35,43 in"] },
+        { "label": "100 cm", "values": ["39,37 in"], "emphasis": true },
+        { "label": "120 cm", "values": ["47,24 in"] },
+        { "label": "150 cm", "values": ["59,06 in"], "emphasis": true },
+        { "label": "160 cm", "values": ["62,99 in"] },
+        { "label": "170 cm", "values": ["66,93 in"], "emphasis": true },
+        { "label": "180 cm", "values": ["70,87 in"] },
+        { "label": "190 cm", "values": ["74,80 in"] },
+        { "label": "200 cm", "values": ["78,74 in"], "emphasis": true }
+      ],
+      "caption": "Pretende converter no sentido inverso? Utilize o nosso <a href=\"/pt/ferramentas/conversor-polegadas-para-cm\">conversor de polegadas para cm</a>, que tem a sua própria tabela e conteúdo dedicado a essa direção."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Altura em centímetros convertida em polegadas e pés",
+      "description": "Tabela de altura com a conversão dos valores mais comuns de 150 cm a 200 cm para polegadas (in) e para pés e polegadas (ft in), a notação utilizada nos países anglófonos. Os valores estão arredondados à polegada inteira mais próxima na coluna de pés e polegadas.",
+      "labelHeader": "Altura",
+      "cols": ["Polegadas (in)", "Pés e polegadas (ft in)"],
+      "rows": [
+        { "label": "150 cm", "values": ["59,06 in", "4 ft 11 in"] },
+        { "label": "155 cm", "values": ["61,02 in", "5 ft 1 in"] },
+        { "label": "158 cm", "values": ["62,20 in", "5 ft 2 in"] },
+        {
+          "label": "160 cm",
+          "values": ["62,99 in", "5 ft 3 in"],
+          "emphasis": true
+        },
+        { "label": "162 cm", "values": ["63,78 in", "5 ft 4 in"] },
+        { "label": "163 cm", "values": ["64,17 in", "5 ft 4 in"] },
+        {
+          "label": "165 cm",
+          "values": ["64,96 in", "5 ft 5 in"],
+          "emphasis": true
+        },
+        { "label": "167 cm", "values": ["65,75 in", "5 ft 6 in"] },
+        { "label": "168 cm", "values": ["66,14 in", "5 ft 6 in"] },
+        {
+          "label": "170 cm",
+          "values": ["66,93 in", "5 ft 7 in"],
+          "emphasis": true
+        },
+        { "label": "172 cm", "values": ["67,72 in", "5 ft 8 in"] },
+        { "label": "173 cm", "values": ["68,11 in", "5 ft 8 in"] },
+        {
+          "label": "175 cm",
+          "values": ["68,90 in", "5 ft 9 in"],
+          "emphasis": true
+        },
+        { "label": "177 cm", "values": ["69,69 in", "5 ft 10 in"] },
+        { "label": "178 cm", "values": ["70,08 in", "5 ft 10 in"] },
+        {
+          "label": "180 cm",
+          "values": ["70,87 in", "5 ft 11 in"],
+          "emphasis": true
+        },
+        { "label": "182 cm", "values": ["71,65 in", "6 ft 0 in"] },
+        { "label": "183 cm", "values": ["72,05 in", "6 ft 0 in"] },
+        {
+          "label": "185 cm",
+          "values": ["72,83 in", "6 ft 1 in"],
+          "emphasis": true
+        },
+        { "label": "188 cm", "values": ["74,02 in", "6 ft 2 in"] },
+        {
+          "label": "190 cm",
+          "values": ["74,80 in", "6 ft 3 in"],
+          "emphasis": true
+        },
+        { "label": "193 cm", "values": ["75,98 in", "6 ft 4 in"] },
+        { "label": "195 cm", "values": ["76,77 in", "6 ft 5 in"] },
+        { "label": "200 cm", "values": ["78,74 in", "6 ft 7 in"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabela inversa – polegadas para centímetros",
+      "description": "A tabela abaixo apresenta a conversão dos valores mais comuns em polegadas para centímetros, arredondada a duas casas decimais.",
+      "labelHeader": "Polegadas",
+      "cols": ["Centímetros"],
+      "rows": [
+        { "label": "0,5 in", "values": ["1,27 cm"] },
+        { "label": "1 in", "values": ["2,54 cm"], "emphasis": true },
+        { "label": "2 in", "values": ["5,08 cm"] },
+        { "label": "3 in", "values": ["7,62 cm"] },
+        { "label": "4 in", "values": ["10,16 cm"] },
+        { "label": "5 in", "values": ["12,70 cm"] },
+        { "label": "6 in", "values": ["15,24 cm"], "emphasis": true },
+        { "label": "7 in", "values": ["17,78 cm"] },
+        { "label": "8 in", "values": ["20,32 cm"] },
+        { "label": "9 in", "values": ["22,86 cm"] },
+        { "label": "10 in", "values": ["25,40 cm"], "emphasis": true },
+        { "label": "11 in", "values": ["27,94 cm"] },
+        { "label": "12 in", "values": ["30,48 cm"], "emphasis": true },
+        { "label": "15 in", "values": ["38,10 cm"] },
+        { "label": "18 in", "values": ["45,72 cm"] },
+        { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
+        { "label": "30 in", "values": ["76,20 cm"] },
+        { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
+        { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "48 in", "values": ["121,92 cm"] },
+        { "label": "54 in", "values": ["137,16 cm"] },
+        { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Diagonal de TV e monitor em polegadas – quantos centímetros são?",
+      "description": "Os fabricantes de eletrónica expressam sempre a diagonal do ecrã em polegadas. A tabela abaixo mostra quantos centímetros mede cada tamanho popular, desde o monitor de secretária até à grande televisão. O valor indicado é a diagonal, não a largura.",
+      "labelHeader": "Diagonal (polegadas)",
+      "cols": ["Diagonal (cm)"],
+      "rows": [
+        { "label": "24 in (monitor de secretária)", "values": ["60,96 cm"] },
+        { "label": "27 in (monitor de secretária)", "values": ["68,58 cm"] },
+        {
+          "label": "32 in (TV / monitor grande)",
+          "values": ["81,28 cm"],
+          "emphasis": true
+        },
+        { "label": "40 in (TV)", "values": ["101,60 cm"] },
+        { "label": "43 in (TV)", "values": ["109,22 cm"] },
+        { "label": "50 in (TV)", "values": ["127,00 cm"] },
+        { "label": "55 in (TV)", "values": ["139,70 cm"], "emphasis": true },
+        { "label": "65 in (TV)", "values": ["165,10 cm"], "emphasis": true },
+        { "label": "75 in (TV)", "values": ["190,50 cm"] },
+        { "label": "85 in (TV)", "values": ["215,90 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando é necessário converter centímetros em polegadas?",
+      "description": "A conversão de cm para polegadas surge em várias situações concretas, cada uma com as suas particularidades.",
+      "items": [
+        {
+          "title": "Altura e medidas corporais",
+          "description": "Nos Estados Unidos e no Reino Unido, a altura é expressa em pés e polegadas. Se preencher um formulário num sítio anglófono, se se registar num portal desportivo estrangeiro ou se simplesmente quiser saber como fica a sua altura no sistema imperial, este conversor fornece o resultado imediatamente. 170 cm são 5 pés 7 polegadas, 180 cm são 5 pés 11 polegadas e 183 cm são exatamente 6 pés."
+        },
+        {
+          "title": "Tamanhos de roupa de lojas americanas e britânicas",
+          "description": "As lojas dos EUA e do Reino Unido indicam frequentemente o tamanho de soutien, a cintura ou o contorno do peito em polegadas. A conversão é simples: um contorno de peito de 80 cm equivale a 31,5 polegadas, 90 cm são 35,4 polegadas e 100 cm são 39,4 polegadas. Convém calcular as suas medidas antes de efetuar a encomenda, pois as tabelas de tamanhos variam entre marcas."
+        },
+        {
+          "title": "Televisões, monitores e ecrãs",
+          "description": "A diagonal do ecrã é sempre expressa em polegadas, independentemente do país de compra. Uma televisão popular de 55 polegadas tem uma diagonal de 139,7 cm, e 65 polegadas equivalem a 165,1 cm. Conhecer o valor em centímetros ajuda a verificar se o equipamento cabe no espaço previsto."
+        },
+        {
+          "title": "Medidas de bagagem",
+          "description": "Muitas companhias aéreas, especialmente as americanas e algumas de baixo custo, expressam as dimensões permitidas da bagagem em polegadas. O limite linear habitual de 158 polegadas (soma da altura, largura e profundidade) equivale a 401,32 cm. Uma mala de cabine padrão com as dimensões 55 × 40 × 20 cm tem uma soma de dimensões de 115 cm, que corresponde a cerca de 45,3 polegadas lineares."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre a conversão de cm para polegadas",
+      "items": [
+        {
+          "question": "Quantas polegadas tem 1 centímetro?",
+          "answer": "Um centímetro equivale a aproximadamente 0,3937 polegadas. Isto resulta da relação fixa 1 polegada = 2,54 cm, pelo que 1 cm = 1 ÷ 2,54 ≈ 0,3937 in. Arredondado a duas casas decimais: 1 cm = 0,39 in."
+        },
+        {
+          "question": "Qual é a fórmula para converter cm em polegadas?",
+          "answer": "A fórmula é: polegadas = centímetros ÷ 2,54. Uma polegada vale exatamente 2,54 cm, pelo que para converter cm em polegadas basta dividir por 2,54. Exemplo: 30 cm ÷ 2,54 = 11,81 polegadas."
+        },
+        {
+          "question": "Quantas polegadas são 170 cm?",
+          "answer": "170 cm são 66,93 polegadas, que em pés e polegadas equivale a 5 ft 7 in. Cálculo: 170 ÷ 2,54 = 66,93 in; 66,93 ÷ 12 = 5 pés com um resto de 6,93 polegadas, arredondado para 7."
+        },
+        {
+          "question": "Quantas polegadas são 160 cm?",
+          "answer": "160 cm são 62,99 polegadas, ou seja em pés e polegadas: 5 ft 3 in. Cálculo: 160 ÷ 2,54 = 62,99; 62 ÷ 12 = 5 pés com um resto de 2,99 polegadas, arredondado para 3."
+        },
+        {
+          "question": "Quantas polegadas são 180 cm?",
+          "answer": "180 cm são 70,87 polegadas, que em pés e polegadas equivale a 5 ft 11 in. Esta altura é frequentemente considerada nos países anglófonos como o limite entre a estatura média e a alta."
+        },
+        {
+          "question": "Quantas polegadas são 100 cm?",
+          "answer": "100 cm são 39,37 polegadas. É um valor de referência fácil de memorizar: um metro equivale a pouco mais de 39 polegadas e meia. Cálculo: 100 ÷ 2,54 = 39,37 in."
+        },
+        {
+          "question": "Quantos centímetros tem uma polegada?",
+          "answer": "Uma polegada vale exatamente 2,54 cm. É um valor fixo estabelecido em 1959 como norma internacional, pelo que a conversão é sempre exata e não requer arredondamento."
+        },
+        {
+          "question": "Quantas polegadas são 50 cm?",
+          "answer": "50 cm são 19,69 polegadas, quase 20 polegadas. Cálculo: 50 ÷ 2,54 = 19,69 in."
+        },
+        {
+          "question": "Quantos cm tem uma televisão de 55 polegadas?",
+          "answer": "Uma televisão de 55 polegadas tem uma diagonal de ecrã de 55 × 2,54 = 139,70 cm. Este valor é a diagonal, não a largura. A largura de um ecrã 16:9 de 55 polegadas é de cerca de 122 cm e a altura de cerca de 69 cm."
+        },
+        {
+          "question": "Como converter cm em polegadas sem calculadora?",
+          "answer": "Aproximação rápida: divida os centímetros por 2,5 em vez de 2,54. O erro é mínimo (cerca de 1,6 %), suficiente para comparações orientativas. Exemplo: 20 cm ÷ 2,5 = 8 polegadas (valor exato: 7,87). Para conversões precisas, utilize sempre o conversor."
+        },
+        {
+          "question": "Quantas polegadas tem uma régua de 30 cm?",
+          "answer": "Uma régua escolar de 30 cm tem 11,81 polegadas. Arredondando, 30 cm equivalem quase exatamente a 12 polegadas, ou seja um pé. No sistema imperial, 12 polegadas = 1 pé = 30,48 cm, pelo que a diferença é apenas de 0,48 cm."
+        },
+        {
+          "question": "A fórmula de conversão é a mesma em Portugal e nos Estados Unidos?",
+          "answer": "Sim, a fórmula é idêntica em todo o mundo: 1 polegada = 2,54 cm. Desde 1959, a polegada internacional unificou a definição nos EUA, no Reino Unido e em todos os outros países. Anteriormente existiam diferenças mínimas entre a polegada britânica e outras variantes, mas hoje todos os calculadores utilizam o valor 2,54."
+        },
+        {
+          "question": "Como converter tamanhos de roupa de polegadas para cm?",
+          "answer": "A maioria das lojas anglófonas indica as medidas (peito, cintura, ancas) em polegadas. Conversão: multiplique o valor em polegadas por 2,54. Por exemplo, um soutien de tamanho 34 B corresponde a um contorno de peito de 34 polegadas = 86,36 cm (tamanho europeu 85B ou 90B, dependendo da marca). Convém consultar a tabela de tamanhos de cada loja, pois os padrões variam."
+        },
+        {
+          "question": "Quantas polegadas tem uma mala de cabine de 55 × 40 × 20 cm?",
+          "answer": "Uma mala de cabine padrão de 55 × 40 × 20 cm tem em polegadas as dimensões 21,7 × 15,7 × 7,9 in. A soma das dimensões (linear inches) é de 45,3 polegadas. Muitas companhias aéreas permitem bagagem de cabine até 45 polegadas lineares, pelo que esta mala está dentro do limite."
+        },
+        {
+          "question": "De onde vem a constante 2,54 cm na definição de polegada?",
+          "answer": "O valor de 2,54 cm por polegada resulta de decisões históricas de normalização. Em 1930, o Reino Unido adotou este valor e, em 1959, os EUA, o Canadá, a Austrália e outros países anglófonos assinaram um acordo que estabeleceu a polegada internacional: exatamente 25,4 mm, ou seja 2,54 cm. Anteriormente, a polegada geodésica dos EUA (2,540005 cm) era utilizada em medições geodésicas, mas foi oficialmente abolida em 2023."
+        },
+        {
+          "question": "É possível converter a altura de cm para pés e polegadas com esta ferramenta?",
+          "answer": "O conversor fornece o resultado em polegadas decimais (por ex., 170 cm = 66,93 in). Para converter o resultado em pés e polegadas, divida o número de polegadas por 12: a parte inteira são os pés e o resto são as polegadas. Exemplo: 66,93 ÷ 12 = 5 pés com 6,93 polegadas de resto, arredondado para 5 ft 7 in. A tabela de altura nesta página apresenta conversões prontas para valores de 150 a 200 cm."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Tem alguma pergunta ou sugestão?",
+      "description": "Se detetar um erro nas tabelas ou tiver uma ideia para melhorar o conversor, contacte-nos. Respondemos a todas as mensagens.",
+      "imageAlt": "Contacto com Arteon Agency",
+      "subject": "Conversor cm para polegadas"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Outros conversores de unidades úteis"
+    }
+  ]
+}

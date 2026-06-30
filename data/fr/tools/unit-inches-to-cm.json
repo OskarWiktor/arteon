@@ -1,0 +1,345 @@
+{
+  "toolKey": "inchesToCm",
+  "locale": "fr",
+  "metadata": {
+    "title": "Calculateur pouces en CM – convertir les pouces en centimètres",
+    "description": "Convertissez les pouces en centimètres instantanément. Taille de TV en cm, taille corporelle en système métrique, vêtements de boutiques européennes et dimensions des bagages. Tableau de conversion pouces en cm.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-pouces-en-cm"
+  },
+  "hero": {
+    "title": "Convertir les pouces en centimètres",
+    "description": "Saisissez une valeur en pouces et obtenez instantanément le résultat en centimètres. Ce convertisseur est utile partout où vous devez comprendre des mesures impériales en système métrique : vérifier la taille d'un téléviseur, lire les dimensions d'un produit européen, comparer des tailles vestimentaires ou convertir une taille corporelle.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-pouces-en-cm",
+      "label": "pouces en cm"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur pouces en centimètres – calculateur pouces en cm",
+      "alternateName": [
+        "convertisseur pouces en cm",
+        "calculateur pouces en cm",
+        "pouces en centimètres",
+        "pouces en cm",
+        "convertir pouces en cm",
+        "pouce en cm",
+        "tableau pouces cm",
+        "conversion pouces cm",
+        "inches en cm",
+        "combien de cm dans un pouce",
+        "formule pouces en cm",
+        "pouces en cm conversion",
+        "convertisseur pouces centimètres",
+        "1 pouce en cm",
+        "pieds et pouces en cm"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertisseur gratuit de pouces en centimètres fonctionnant dans le navigateur sans inscription. Saisissez une valeur en pouces et obtenez immédiatement le résultat en centimètres. Utile pour les diagonales de TV, les tailles de moniteur, les tailles de vêtements de boutiques anglophones ou la conversion de tailles corporelles.",
+      "featureList": [
+        "La conversion fonctionne dans les deux sens, vous pouvez donc convertir les pouces en centimètres et les centimètres en pouces",
+        "Le résultat s'affiche instantanément pendant la saisie, sans qu'il soit nécessaire de cliquer sur un bouton",
+        "Le résultat peut être copié dans le presse-papiers en un seul clic",
+        "Le tableau de conversion couvre les valeurs de 0,5 à 72 pouces",
+        "Le tableau des diagonales d'écrans couvre les tailles les plus populaires de téléviseurs et moniteurs de 24 à 85 pouces",
+        "Le tableau de taille présente la conversion des pieds et pouces en centimètres pour les valeurs de 4 ft 11 in à 6 ft 7 in",
+        "Le tableau inverse indique combien de pouces correspondent à une valeur en centimètres, de 0,5 cm à 200 cm",
+        "Tous les calculs s'effectuent localement dans le navigateur, aucune donnée ne quitte votre appareil",
+        "La formule exacte est centimètres = pouces × 2,54, basée sur la relation fixe entre le pouce et le centimètre",
+        "Fonctionne sur téléphone, tablette et ordinateur sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir les pouces en centimètres ?",
+      "description": "Guide rapide d'utilisation du convertisseur pouces en cm.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir la valeur en pouces",
+          "text": "Dans le champ de gauche, saisissez le nombre de pouces que vous souhaitez convertir en centimètres. Les valeurs décimales comme 5,5 ou 12,75 sont acceptées."
+        },
+        {
+          "name": "Lire le résultat en centimètres",
+          "text": "Le résultat en centimètres s'affiche immédiatement dans le champ adjacent. Vous pouvez le copier dans le presse-papiers en un seul clic."
+        },
+        {
+          "name": "Inverser la direction si nécessaire",
+          "text": "Cliquez sur Changer l'ordre pour basculer le convertisseur en mode centimètres vers pouces."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand convertit-on les pouces en centimètres ?",
+      "html": "<p class=\"text-mid mb-4\">Le pouce est l'unité de longueur du système impérial, principalement utilisée aux États-Unis et encore courante au Royaume-Uni. En France et dans toute l'Europe, on utilise le système métrique, de sorte que les pouces apparaissent surtout lors de contacts avec des produits ou des informations provenant de pays anglophones.</p><p class=\"text-mid mb-4\">Les situations les plus fréquentes : vous souhaitez savoir combien de centimètres fait un téléviseur de 55 pouces, vous comparez votre taille avec un tableau de tailles vestimentaires américain, vous achetez des chaussures dans une boutique britannique dont les pointures sont en pouces, ou vous consultez un catalogue de meubles américain.</p><p class=\"text-mid mb-4\">La formule est simple : un pouce vaut exactement 2,54 cm. Pour convertir des pouces en centimètres, il suffit de multiplier par 2,54. Le convertisseur effectue ce calcul dès la saisie d'une valeur.</p><p class=\"text-mid\">Sur cette page vous trouverez un tableau de conversion pouces en cm, un tableau des diagonales d'écrans populaires, un tableau de taille avec conversion pieds et pouces en centimètres, ainsi qu'un tableau inverse centimètres en pouces.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur gratuit pouces en centimètres – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion pouces en cm ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion des pouces en centimètres repose sur une constante fixe : un pouce vaut exactement 2,54 cm. Pour convertir des pouces en centimètres, il suffit de multiplier le nombre de pouces par 2,54.</p><p class=\"text-mid mb-4\">Formule complète : <strong>centimètres = pouces × 2,54</strong>. Dans l'autre sens : <strong>pouces = centimètres ÷ 2,54</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous souhaitez savoir combien de centimètres fait un téléviseur de 55 pouces. Calcul : 55 × 2,54 = 139,70 cm. Il s'agit de la diagonale, pas de la largeur. La largeur d'un écran 16:9 de 55 pouces est d'environ 122 cm.</p><p class=\"text-mid\">Autre exemple : un contact américain indique sa taille en 6 ft 2 in. On convertit d'abord en pouces : 6 × 12 + 2 = 74 pouces. Puis on multiplie : 74 × 2,54 = 187,96 cm, soit environ 188 cm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion pouces en centimètres",
+      "description": "Le tableau ci-dessous présente la conversion des valeurs courantes en pouces en centimètres, arrondie à deux décimales. Pour des conversions précises, utilisez le convertisseur ci-dessus.",
+      "labelHeader": "Pouces",
+      "cols": ["Centimètres"],
+      "rows": [
+        { "label": "0,5 in", "values": ["1,27 cm"] },
+        { "label": "1 in", "values": ["2,54 cm"], "emphasis": true },
+        { "label": "2 in", "values": ["5,08 cm"] },
+        { "label": "3 in", "values": ["7,62 cm"] },
+        { "label": "4 in", "values": ["10,16 cm"] },
+        { "label": "5 in", "values": ["12,70 cm"] },
+        { "label": "6 in", "values": ["15,24 cm"], "emphasis": true },
+        { "label": "7 in", "values": ["17,78 cm"] },
+        { "label": "8 in", "values": ["20,32 cm"] },
+        { "label": "9 in", "values": ["22,86 cm"] },
+        { "label": "10 in", "values": ["25,40 cm"], "emphasis": true },
+        { "label": "11 in", "values": ["27,94 cm"] },
+        { "label": "12 in", "values": ["30,48 cm"], "emphasis": true },
+        { "label": "15 in", "values": ["38,10 cm"] },
+        { "label": "18 in", "values": ["45,72 cm"] },
+        { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
+        { "label": "30 in", "values": ["76,20 cm"] },
+        { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
+        { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "48 in", "values": ["121,92 cm"] },
+        { "label": "54 in", "values": ["137,16 cm"] },
+        { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+      ],
+      "caption": "Vous souhaitez convertir dans l'autre sens ? Utilisez notre <a href=\"/fr/outils/convertisseur-cm-en-pouces\">convertisseur cm en pouces</a> avec son propre tableau et contenu dédié à cette direction."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Diagonale TV et moniteur – pouces en centimètres",
+      "description": "Les fabricants d'électronique expriment toujours la diagonale d'écran en pouces. Le tableau ci-dessous indique combien de centimètres mesure chaque taille populaire. La valeur indiquée est la diagonale, pas la largeur.",
+      "labelHeader": "Diagonale (pouces)",
+      "cols": ["Diagonale (cm)"],
+      "rows": [
+        { "label": "24 in (moniteur de bureau)", "values": ["60,96 cm"] },
+        { "label": "27 in (moniteur de bureau)", "values": ["68,58 cm"] },
+        {
+          "label": "32 in (TV / grand moniteur)",
+          "values": ["81,28 cm"],
+          "emphasis": true
+        },
+        { "label": "40 in (TV)", "values": ["101,60 cm"] },
+        { "label": "43 in (TV)", "values": ["109,22 cm"] },
+        { "label": "50 in (TV)", "values": ["127,00 cm"] },
+        { "label": "55 in (TV)", "values": ["139,70 cm"], "emphasis": true },
+        { "label": "65 in (TV)", "values": ["165,10 cm"], "emphasis": true },
+        { "label": "75 in (TV)", "values": ["190,50 cm"] },
+        { "label": "85 in (TV)", "values": ["215,90 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Taille en pieds et pouces convertie en centimètres",
+      "description": "Ce tableau convertit les tailles courantes en pieds et pouces (ft in) en centimètres. Un pied équivaut à 12 pouces, un pouce à 2,54 cm.",
+      "labelHeader": "Taille (ft in)",
+      "cols": ["Centimètres"],
+      "rows": [
+        { "label": "4 ft 11 in (59 in)", "values": ["149,86 cm"] },
+        { "label": "5 ft 0 in (60 in)", "values": ["152,40 cm"] },
+        { "label": "5 ft 1 in (61 in)", "values": ["154,94 cm"] },
+        { "label": "5 ft 2 in (62 in)", "values": ["157,48 cm"] },
+        {
+          "label": "5 ft 3 in (63 in)",
+          "values": ["160,02 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 4 in (64 in)", "values": ["162,56 cm"] },
+        {
+          "label": "5 ft 5 in (65 in)",
+          "values": ["165,10 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 6 in (66 in)", "values": ["167,64 cm"] },
+        {
+          "label": "5 ft 7 in (67 in)",
+          "values": ["170,18 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 8 in (68 in)", "values": ["172,72 cm"] },
+        {
+          "label": "5 ft 9 in (69 in)",
+          "values": ["175,26 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 10 in (70 in)", "values": ["177,80 cm"] },
+        {
+          "label": "5 ft 11 in (71 in)",
+          "values": ["180,34 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 0 in (72 in)", "values": ["182,88 cm"] },
+        {
+          "label": "6 ft 1 in (73 in)",
+          "values": ["185,42 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 2 in (74 in)", "values": ["187,96 cm"] },
+        {
+          "label": "6 ft 3 in (75 in)",
+          "values": ["190,50 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 4 in (76 in)", "values": ["193,04 cm"] },
+        { "label": "6 ft 5 in (77 in)", "values": ["195,58 cm"] },
+        { "label": "6 ft 7 in (79 in)", "values": ["200,66 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on les pouces en centimètres ?",
+      "description": "La conversion pouces en cm intervient dans quelques situations typiques du quotidien.",
+      "items": [
+        {
+          "title": "Téléviseurs, moniteurs et écrans",
+          "description": "La diagonale d'écran est toujours exprimée en pouces, quel que soit le pays d'achat. Un téléviseur de 55 pouces a une diagonale de 139,70 cm, et un modèle de 65 pouces atteint 165,10 cm. Connaître la valeur en centimètres vous aide à planifier l'emplacement et à estimer la distance de visionnage optimale lorsque les dimensions de la pièce sont en métrique."
+        },
+        {
+          "title": "Taille et comparaisons internationales",
+          "description": "Lors de la comparaison de données de taille issues de sources américaines ou britanniques avec des tableaux métriques — dans des études de santé, des statistiques sportives ou des applications de fitness — il est utile de connaître l'équivalent en centimètres. 5 ft 7 in correspondent à 170,18 cm, 6 ft 0 in à 182,88 cm, et 6 ft 3 in à 190,50 cm."
+        },
+        {
+          "title": "Vêtements et chaussures de boutiques internationales",
+          "description": "Les boutiques américaines et britanniques indiquent les mensurations en pouces. Une mesure de col de 40 cm équivaut à environ 15,7 pouces. Pour les chaussures, chemises et autres vêtements, la conversion s'effectue en multipliant par 2,54. Il vaut mieux consulter le tableau des tailles du fabricant spécifique."
+        },
+        {
+          "title": "Meubles et matériaux de construction",
+          "description": "Les catalogues de meubles américains, les outils et matériaux de construction importés d'Amérique du Nord expriment les dimensions en pouces. Une planche de bois 2×4 standard a des dimensions réelles de 1,5 × 3,5 pouces, soit environ 3,8 × 8,9 cm après rabotage. Convertir permet de planifier vos projets avec précision."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion pouces en centimètres",
+      "items": [
+        {
+          "question": "Combien de centimètres fait un pouce ?",
+          "answer": "Un pouce vaut exactement 2,54 cm. C'est une valeur fixe établie en 1959 comme norme internationale, la conversion est donc toujours exacte."
+        },
+        {
+          "question": "Quelle est la formule pour convertir les pouces en cm ?",
+          "answer": "La formule est : centimètres = pouces × 2,54. Exemple : 10 pouces × 2,54 = 25,40 cm. Dans l'autre sens : pouces = centimètres ÷ 2,54."
+        },
+        {
+          "question": "Combien de cm font 5 pouces ?",
+          "answer": "5 pouces correspondent à 5 × 2,54 = 12,70 cm. C'est une valeur de référence courante, par exemple pour la diagonale d'un écran de smartphone."
+        },
+        {
+          "question": "Combien de cm font 6 pouces ?",
+          "answer": "6 pouces correspondent à 6 × 2,54 = 15,24 cm, soit exactement un demi-pied. C'est la taille typique d'un écran de grand smartphone."
+        },
+        {
+          "question": "Combien de cm font 12 pouces ?",
+          "answer": "12 pouces correspondent à 30,48 cm, soit exactement un pied. C'est une valeur de référence importante : 1 pied = 12 pouces = 30,48 cm."
+        },
+        {
+          "question": "Quelle est la taille en cm d'un téléviseur de 55 pouces ?",
+          "answer": "Un téléviseur de 55 pouces a une diagonale d'écran de 55 × 2,54 = 139,70 cm. La largeur d'un écran 16:9 de 55 pouces est d'environ 122 cm et la hauteur d'environ 69 cm. Les fabricants indiquent parfois les dimensions extérieures avec le cadre, légèrement plus grandes."
+        },
+        {
+          "question": "Quelle est la taille en cm d'un téléviseur de 65 pouces ?",
+          "answer": "Un téléviseur de 65 pouces a une diagonale d'écran de 65 × 2,54 = 165,10 cm. La largeur d'un écran 16:9 de 65 pouces est d'environ 144 cm et la hauteur d'environ 81 cm. C'est l'une des tailles les plus populaires pour les grands téléviseurs de salon."
+        },
+        {
+          "question": "Combien de cm font 5 ft 7 in ?",
+          "answer": "5 pieds 7 pouces se convertissent d'abord en pouces : 5 × 12 + 7 = 67 pouces. Puis : 67 × 2,54 = 170,18 cm. 5 ft 7 in correspondent donc à environ 170 cm."
+        },
+        {
+          "question": "Combien de cm font 6 ft 0 in ?",
+          "answer": "6 pieds 0 pouces correspondent à 6 × 12 = 72 pouces, et 72 × 2,54 = 182,88 cm. Une taille de exactement 6 pieds équivaut à environ 183 cm."
+        },
+        {
+          "question": "Comment convertir les pouces en cm sans calculatrice ?",
+          "answer": "Approximation rapide : multiplier les pouces par 2,5 au lieu de 2,54. L'erreur est d'environ 1,6 %, suffisante pour des estimations grossières. Exemple : 10 pouces × 2,5 = 25 cm (valeur exacte : 25,40 cm). Pour des conversions précises, utilisez le convertisseur."
+        },
+        {
+          "question": "Quelle est la taille en cm d'un bagage cabine de 22 × 14 × 9 pouces ?",
+          "answer": "Un bagage cabine standard de 22 × 14 × 9 pouces correspond à : 22 × 2,54 = 55,88 cm, 14 × 2,54 = 35,56 cm, 9 × 2,54 = 22,86 cm, soit environ 56 × 36 × 23 cm. La somme des dimensions est de 22 + 14 + 9 = 45 pouces, soit environ 114,3 cm."
+        },
+        {
+          "question": "1 pouce vaut-il toujours 2,54 cm, ou y a-t-il des exceptions ?",
+          "answer": "Dans l'usage courant et le commerce, 1 pouce = 2,54 cm s'applique toujours (pouce international depuis 1959). La seule exception était le pouce de relevé des États-Unis (2,5400050800 cm), utilisé pour les mesures géodésiques. Il a été officiellement abandonné par les États-Unis en 2023, et aujourd'hui seule la valeur 2,54 est en usage."
+        },
+        {
+          "question": "Comment convertir les pointures de chaussures des pouces en cm ?",
+          "answer": "Les pointures de chaussures n'ont pas de conversion simple pouces-cm, chaque fabricant et pays ayant sa propre échelle. Aux États-Unis, les tailles femme vont de 4 (environ 21,6 cm de semelle) à 12 (environ 28,6 cm), et les tailles homme de 6 (environ 24,1 cm) à 16 (environ 32 cm). La longueur de semelle en pouces n'est pas identique au numéro de pointure. Il vaut mieux consulter le tableau de pointures du fabricant."
+        },
+        {
+          "question": "Combien de cm fait une règle de 12 pouces ?",
+          "answer": "Une règle de 12 pouces mesure 30,48 cm de long, soit exactement un pied. C'est presque identique à la règle scolaire de 30 cm, la différence n'étant que de 0,48 cm."
+        },
+        {
+          "question": "Comment convertir les pieds et pouces en centimètres ?",
+          "answer": "La conversion de pieds et pouces en centimètres se fait en deux étapes : d'abord tout convertir en pouces (pieds × 12 + pouces restants), puis multiplier par 2,54. Exemple : 5 ft 9 in = 5 × 12 + 9 = 69 pouces ; 69 × 2,54 = 175,26 cm. Le tableau de taille sur cette page propose des conversions prêtes à l'emploi de 4 ft 11 in à 6 ft 7 in."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Vous avez une question ou une suggestion ?",
+      "description": "Si vous constatez une erreur dans les tableaux ou si vous avez une idée pour améliorer le convertisseur, contactez-nous. Nous répondons à chaque message.",
+      "imageAlt": "Contacter Arteon Agency",
+      "subject": "Convertisseur pouces en cm"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités utiles"
+    }
+  ]
+}
