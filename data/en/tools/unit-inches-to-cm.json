@@ -1,0 +1,345 @@
+{
+  "toolKey": "inchesToCm",
+  "locale": "en",
+  "metadata": {
+    "title": "Inches to CM Calculator – Convert Inches to Centimeters",
+    "description": "Convert inches to centimeters instantly. Check TV size in cm, height in metric, clothing sizes from European stores, and luggage dimensions. Conversion table from inches to cm.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/inches-to-cm-converter"
+  },
+  "hero": {
+    "title": "Convert inches to centimeters",
+    "description": "Enter any value in inches and instantly see the result in centimeters. This converter is useful wherever you need to understand imperial measurements in metric: checking a TV screen size, reading European product dimensions, ordering from international stores, or comparing height with metric standards.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/inches-to-cm-converter",
+      "label": "inches to cm"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Inches to centimeters converter – inches to cm calculator",
+      "alternateName": [
+        "inches to cm converter",
+        "inches to cm calculator",
+        "inch to cm converter",
+        "convert inches to cm",
+        "inches to centimeters",
+        "in to cm converter",
+        "inches to centimeters calculator",
+        "how many cm in an inch",
+        "inches to cm chart",
+        "inches to cm table",
+        "inches to cm conversion",
+        "inch to centimeter",
+        "inches to cm formula",
+        "how many centimeters in an inch",
+        "inches to cm conversion chart"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Free inches to centimeters converter that runs in your browser with no sign-up required. Enter a value in inches and instantly get the result in centimeters. Useful for checking TV and monitor screen sizes, reading product dimensions from European listings, understanding clothing sizes, or converting height measurements.",
+      "featureList": [
+        "Conversion works both ways, so you can convert inches to centimeters and centimeters to inches",
+        "Result appears instantly as you type, no button click needed",
+        "Copy the result to clipboard with a single click",
+        "Conversion table covers values from 0.5 to 72 inches",
+        "Screen size table covers the most popular TV and monitor sizes from 24 to 85 inches",
+        "Height table shows feet-and-inches values from 4 ft 11 in to 6 ft 7 in converted to centimeters",
+        "Reverse table shows how many inches each centimeter value equals, from 0.5 cm to 200 cm",
+        "All calculations happen locally in your browser — no data leaves your device",
+        "The exact conversion formula is centimeters = inches × 2.54, based on the fixed relationship between the inch and the centimeter",
+        "Works on mobile, tablet, and desktop with no installation required"
+      ]
+    },
+    "howTo": {
+      "name": "How to convert inches to centimeters?",
+      "description": "Quick guide to using the inches to cm converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter the value in inches",
+          "text": "Type the number of inches you want to convert into centimeters in the left field. Decimal values like 5.5 or 12.75 are supported."
+        },
+        {
+          "name": "Read the result in centimeters",
+          "text": "The result in centimeters appears instantly in the field next to it. Click once to copy it to the clipboard."
+        },
+        {
+          "name": "Swap direction if needed",
+          "text": "Click Swap to switch the converter to centimeters-to-inches mode."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert inches to centimeters?",
+      "html": "<p class=\"text-mid mb-4\">The inch is the standard unit of length in the United States and is still widely used in the United Kingdom. Most of the rest of the world uses centimeters, so you need to convert whenever you are dealing with products or information from a metric context: a European store listing product dimensions in centimeters, a foreign contact stating their measurements in metric, or a technical specification that uses SI units.</p><p class=\"text-mid mb-4\">The most common situations: you want to know how big a 55-inch TV actually is in centimeters, you are comparing your height with a European sizing chart, you are buying shoes from a UK store and want to double-check the fit, or you are reading a furniture catalog that lists dimensions in centimeters.</p><p class=\"text-mid mb-4\">The formula is simple: one inch is exactly 2.54 cm. To convert inches to centimeters, multiply the number of inches by 2.54. The converter does this the moment you type a value.</p><p class=\"text-mid\">On this page you will find an inches-to-cm conversion table, a screen size table for popular TV and monitor diagonals, a height table converting feet-and-inches to centimeters, and a reverse table for centimeters to inches.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Free inches to centimeters converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does inches to cm conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">The conversion between inches and centimeters is based on one fixed constant: one inch is exactly 2.54 cm. To convert inches to centimeters, multiply the number of inches by 2.54.</p><p class=\"text-mid mb-4\">Full formula: <strong>centimeters = inches × 2.54</strong>. The reverse: <strong>inches = centimeters ÷ 2.54</strong>.</p><p class=\"text-mid mb-4\">Example: you want to know how many centimeters a 55-inch TV screen is. Calculation: 55 × 2.54 = 139.70 cm. That is the diagonal, not the width. The width of a 16:9 screen at 55 inches is about 122 cm.</p><p class=\"text-mid\">Another example: a contact gives their height as 6 ft 2 in. Convert to inches first: 6 × 12 + 2 = 74 inches. Then multiply: 74 × 2.54 = 187.96 cm, which is approximately 188 cm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Inches to centimeters conversion table",
+      "description": "The table below shows popular inch values converted to centimeters, rounded to two decimal places. For exact conversions, use the converter above.",
+      "labelHeader": "Inches",
+      "cols": ["Centimeters"],
+      "rows": [
+        { "label": "0.5 in", "values": ["1.27 cm"] },
+        { "label": "1 in", "values": ["2.54 cm"], "emphasis": true },
+        { "label": "2 in", "values": ["5.08 cm"] },
+        { "label": "3 in", "values": ["7.62 cm"] },
+        { "label": "4 in", "values": ["10.16 cm"] },
+        { "label": "5 in", "values": ["12.70 cm"] },
+        { "label": "6 in", "values": ["15.24 cm"], "emphasis": true },
+        { "label": "7 in", "values": ["17.78 cm"] },
+        { "label": "8 in", "values": ["20.32 cm"] },
+        { "label": "9 in", "values": ["22.86 cm"] },
+        { "label": "10 in", "values": ["25.40 cm"], "emphasis": true },
+        { "label": "11 in", "values": ["27.94 cm"] },
+        { "label": "12 in", "values": ["30.48 cm"], "emphasis": true },
+        { "label": "15 in", "values": ["38.10 cm"] },
+        { "label": "18 in", "values": ["45.72 cm"] },
+        { "label": "20 in", "values": ["50.80 cm"] },
+        { "label": "24 in", "values": ["60.96 cm"], "emphasis": true },
+        { "label": "30 in", "values": ["76.20 cm"] },
+        { "label": "36 in", "values": ["91.44 cm"], "emphasis": true },
+        { "label": "42 in", "values": ["106.68 cm"] },
+        { "label": "48 in", "values": ["121.92 cm"] },
+        { "label": "54 in", "values": ["137.16 cm"] },
+        { "label": "60 in", "values": ["152.40 cm"], "emphasis": true },
+        { "label": "72 in", "values": ["182.88 cm"], "emphasis": true }
+      ],
+      "caption": "Need to convert the other way? Use our <a href=\"/en/tools/cm-to-inches-converter\">cm to inches converter</a>, which has its own table and content dedicated to that direction."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "TV and monitor screen size – inches to centimeters",
+      "description": "Electronics manufacturers always list screen diagonal in inches. The table below shows how many centimeters each popular size measures. The value refers to the diagonal, not the width.",
+      "labelHeader": "Diagonal (inches)",
+      "cols": ["Diagonal (cm)"],
+      "rows": [
+        { "label": "24 in (desktop monitor)", "values": ["60.96 cm"] },
+        { "label": "27 in (desktop monitor)", "values": ["68.58 cm"] },
+        {
+          "label": "32 in (TV / large monitor)",
+          "values": ["81.28 cm"],
+          "emphasis": true
+        },
+        { "label": "40 in (TV)", "values": ["101.60 cm"] },
+        { "label": "43 in (TV)", "values": ["109.22 cm"] },
+        { "label": "50 in (TV)", "values": ["127.00 cm"] },
+        { "label": "55 in (TV)", "values": ["139.70 cm"], "emphasis": true },
+        { "label": "65 in (TV)", "values": ["165.10 cm"], "emphasis": true },
+        { "label": "75 in (TV)", "values": ["190.50 cm"] },
+        { "label": "85 in (TV)", "values": ["215.90 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Height in feet and inches converted to centimeters",
+      "description": "This table converts common heights from feet and inches (ft in) to centimeters. One foot equals 12 inches, and one inch equals 2.54 cm.",
+      "labelHeader": "Height (ft in)",
+      "cols": ["Centimeters"],
+      "rows": [
+        { "label": "4 ft 11 in (59 in)", "values": ["149.86 cm"] },
+        { "label": "5 ft 0 in (60 in)", "values": ["152.40 cm"] },
+        { "label": "5 ft 1 in (61 in)", "values": ["154.94 cm"] },
+        { "label": "5 ft 2 in (62 in)", "values": ["157.48 cm"] },
+        {
+          "label": "5 ft 3 in (63 in)",
+          "values": ["160.02 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 4 in (64 in)", "values": ["162.56 cm"] },
+        {
+          "label": "5 ft 5 in (65 in)",
+          "values": ["165.10 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 6 in (66 in)", "values": ["167.64 cm"] },
+        {
+          "label": "5 ft 7 in (67 in)",
+          "values": ["170.18 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 8 in (68 in)", "values": ["172.72 cm"] },
+        {
+          "label": "5 ft 9 in (69 in)",
+          "values": ["175.26 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 10 in (70 in)", "values": ["177.80 cm"] },
+        {
+          "label": "5 ft 11 in (71 in)",
+          "values": ["180.34 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 0 in (72 in)", "values": ["182.88 cm"] },
+        {
+          "label": "6 ft 1 in (73 in)",
+          "values": ["185.42 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 2 in (74 in)", "values": ["187.96 cm"] },
+        {
+          "label": "6 ft 3 in (75 in)",
+          "values": ["190.50 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 4 in (76 in)", "values": ["193.04 cm"] },
+        { "label": "6 ft 5 in (77 in)", "values": ["195.58 cm"] },
+        { "label": "6 ft 7 in (79 in)", "values": ["200.66 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When do you need to convert inches to centimeters?",
+      "description": "Converting inches to cm comes up in a few typical everyday situations.",
+      "items": [
+        {
+          "title": "TVs, monitors, and screens",
+          "description": "Screen diagonals are always listed in inches, regardless of where you buy. A 55-inch TV has a diagonal of 139.70 cm, and a 65-inch model comes to 165.10 cm. Knowing the centimeter value helps you plan the space and estimate the ideal viewing distance when the room measurements are in metric."
+        },
+        {
+          "title": "Height and international comparisons",
+          "description": "When comparing height data from US or UK sources with metric-based charts — for example, reading a health study, looking at sports stats, or checking a fitness app — it helps to know the centimeter equivalent. 5 ft 7 in is 170.18 cm, 6 ft 0 in is 182.88 cm, and 6 ft 3 in is 190.50 cm."
+        },
+        {
+          "title": "Clothing and shoe sizes from international stores",
+          "description": "European clothing and shoe stores list measurements in centimeters. A shirt collar listed as 40 cm is about 15.7 inches. Shoe size length in Europe is often given in millimeters, but any centimeter value converts directly. Multiply by 2.54 for shoes, shirts, and other garment dimensions."
+        },
+        {
+          "title": "Furniture and building materials",
+          "description": "IKEA US catalogs, tools, and building supplies imported from North America list dimensions in inches. A standard 2×4 lumber piece has actual dimensions of 1.5 × 3.5 inches, which is about 3.8 × 8.9 cm. Converting helps you plan projects accurately and avoid measurement errors."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about converting inches to centimeters",
+      "items": [
+        {
+          "question": "How many centimeters is one inch?",
+          "answer": "One inch is exactly 2.54 cm. This is a defined constant established in 1959 as the international inch standard, so the conversion is always exact."
+        },
+        {
+          "question": "What is the formula to convert inches to cm?",
+          "answer": "The formula is: centimeters = inches × 2.54. For example, 10 inches × 2.54 = 25.40 cm. The reverse is: inches = centimeters ÷ 2.54."
+        },
+        {
+          "question": "How many cm is 5 inches?",
+          "answer": "5 inches is 5 × 2.54 = 12.70 cm. This is a common reference value — for example, a 5-inch smartphone screen has a 12.7 cm diagonal."
+        },
+        {
+          "question": "How many cm is 6 inches?",
+          "answer": "6 inches is 6 × 2.54 = 15.24 cm, which is exactly half a foot. This is a typical screen size for large smartphones."
+        },
+        {
+          "question": "How many cm is 12 inches?",
+          "answer": "12 inches is 30.48 cm, which is exactly one foot. This is a key reference: 1 foot = 12 inches = 30.48 cm."
+        },
+        {
+          "question": "How many cm is a 55-inch TV?",
+          "answer": "A 55-inch TV has a screen diagonal of 55 × 2.54 = 139.70 cm. The width of a 16:9 screen at 55 inches is about 122 cm, and the height is about 69 cm. Manufacturers sometimes list the outer dimensions with bezel, which are slightly larger."
+        },
+        {
+          "question": "How many cm is a 65-inch TV?",
+          "answer": "A 65-inch TV has a screen diagonal of 65 × 2.54 = 165.10 cm. The width of a 16:9 screen at 65 inches is about 144 cm, and the height is about 81 cm. This is one of the most popular sizes for large living room TVs."
+        },
+        {
+          "question": "How many cm is 5 ft 7 in?",
+          "answer": "5 feet 7 inches converts to inches first: 5 × 12 + 7 = 67 inches. Then 67 × 2.54 = 170.18 cm. So 5 ft 7 in is approximately 170 cm."
+        },
+        {
+          "question": "How many cm is 6 ft 0 in?",
+          "answer": "6 feet 0 inches is 6 × 12 = 72 inches, and 72 × 2.54 = 182.88 cm. A height of exactly 6 ft is approximately 183 cm."
+        },
+        {
+          "question": "How do I convert inches to cm without a calculator?",
+          "answer": "Quick approximation: multiply inches by 2.5 instead of 2.54. The error is about 1.6%, which is fine for rough estimates. For example, 10 inches × 2.5 = 25 cm (exact value is 25.40 cm). For precise conversions, use the converter."
+        },
+        {
+          "question": "How many cm is a 22 × 14 × 9-inch carry-on bag?",
+          "answer": "A standard carry-on at 22 × 14 × 9 inches converts to: 22 × 2.54 = 55.88 cm, 14 × 2.54 = 35.56 cm, 9 × 2.54 = 22.86 cm — approximately 56 × 36 × 23 cm. The linear sum is 22 + 14 + 9 = 45 inches, which is about 114.3 cm."
+        },
+        {
+          "question": "Is 1 inch always 2.54 cm, or are there exceptions?",
+          "answer": "In everyday use and commerce, 1 inch = 2.54 cm always applies (the international inch established in 1959). The only exception was the US survey inch (2.5400050800 cm), used in geodetic surveys. It was officially retired by the United States in 2023, so today only the value of 2.54 is in use."
+        },
+        {
+          "question": "How do I convert shoe sizes from inches to cm?",
+          "answer": "Shoe sizes do not have a simple inch-to-cm conversion — each brand and country uses its own scale. In the US, women's sizes run from 4 (about 21.6 cm insole) to 12 (about 28.6 cm), and men's from 6 (about 24.1 cm) to 16 (about 32 cm). The insole length in inches is not the same as the size number. Always check the specific manufacturer's size chart."
+        },
+        {
+          "question": "How many cm is a 12-inch ruler?",
+          "answer": "A 12-inch ruler is 30.48 cm long — exactly one foot. This is almost the same length as the standard 30 cm ruler used in Europe, with a difference of just 0.48 cm."
+        },
+        {
+          "question": "How do I convert feet and inches to centimeters?",
+          "answer": "Convert feet and inches to centimeters in two steps: first convert everything to inches (feet × 12 + remaining inches), then multiply by 2.54. Example: 5 ft 9 in = 5 × 12 + 9 = 69 inches; 69 × 2.54 = 175.26 cm. The height table on this page shows ready conversions from 4 ft 11 in to 6 ft 7 in."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Have a question or suggestion?",
+      "description": "If you spot an error in the tables or have an idea for improving the converter, get in touch. We reply to every message.",
+      "imageAlt": "Contact Arteon Agency",
+      "subject": "Inches to cm converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Other useful unit converters"
+    }
+  ]
+}

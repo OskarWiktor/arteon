@@ -208,6 +208,30 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
   },
 
   {
+    toolKey: 'cmToInches',
+    category: 'length',
+    sourceField: { labelKey: 'centimeters', suffix: 'cm' },
+    targetField: { labelKey: 'inches', suffix: 'in' },
+    convert: v => v / 2.54,
+    reverseConvert: v => v * 2.54,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'inchesToCm',
+  },
+
+  {
+    toolKey: 'inchesToCm',
+    category: 'length',
+    sourceField: { labelKey: 'inches', suffix: 'in' },
+    targetField: { labelKey: 'centimeters', suffix: 'cm' },
+    convert: v => v * 2.54,
+    reverseConvert: v => v / 2.54,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'cmToInches',
+  },
+
+  {
     toolKey: 'inchesToPxDpi',
     category: 'css',
     sourceField: { labelKey: 'inches', suffix: 'in' },

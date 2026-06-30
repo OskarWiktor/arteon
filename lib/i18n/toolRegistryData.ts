@@ -6187,6 +6187,154 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'cmToInches',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-cm-na-cale',
+        title: 'cm na cale',
+        description:
+          'Przelicz centymetry na cale. Wzrost, rozmiary ubrań, ekrany TV, wymiary bagażu.',
+      },
+      en: {
+        slug: 'cm-to-inches-converter',
+        title: 'cm to inches',
+        description:
+          'Convert centimeters to inches. Height, clothing sizes, TV screen size, luggage dimensions.',
+      },
+      de: {
+        slug: 'cm-in-zoll-umrechner',
+        title: 'cm in Zoll',
+        description:
+          'Zentimeter in Zoll umrechnen. Körpergröße, Kleidergrößen, TV-Diagonale, Gepäckmaße.',
+      },
+      fr: {
+        slug: 'convertisseur-cm-en-pouces',
+        title: 'cm en pouces',
+        description:
+          'Convertissez les centimètres en pouces. Taille, vêtements, TV, bagages.',
+      },
+      es: {
+        slug: 'convertidor-cm-a-pulgadas',
+        title: 'cm a pulgadas',
+        description:
+          'Convierte centímetros a pulgadas. Estatura, ropa, televisores, equipaje.',
+      },
+      pt: {
+        slug: 'conversor-cm-para-polegadas',
+        title: 'cm para polegadas',
+        description:
+          'Converta centímetros em polegadas. Altura, roupa, televisão, bagagem.',
+      },
+      it: {
+        slug: 'convertitore-cm-in-pollici',
+        title: 'cm in pollici',
+        description:
+          'Converti centimetri in pollici. Altezza, taglie, televisori, bagagli.',
+      },
+      nl: {
+        slug: 'cm-naar-inches-converter',
+        title: 'cm naar inches',
+        description:
+          'Reken centimeters om naar inches. Lengte, kleding, tv-maat, bagage.',
+      },
+      cs: {
+        slug: 'prevodnik-cm-na-palce',
+        title: 'cm na palce',
+        description:
+          'Převeď centimetry na palce. Výška, velikosti oblečení, televizory, zavazadla.',
+      },
+      fi: {
+        slug: 'cm-tuumiksi-muunnin',
+        title: 'cm tuumiksi',
+        description:
+          'Muunna senttimetrit tuumiksi. Pituus, vaatekoot, TV-halkaisija, matkatavarat.',
+      },
+      el: {
+        slug: 'metatropeas-cm-se-intses',
+        title: 'cm σε ίντσες',
+        description:
+          'Μετατρέψτε εκατοστά σε ίντσες. Ύψος, ρούχα, τηλεοράσεις, αποσκευές.',
+      },
+    },
+  },
+  {
+    key: 'inchesToCm',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-cali-na-cm',
+        title: 'cale na cm',
+        description:
+          'Przelicz cale na centymetry. Wzrost, telewizory, rozmiary ubrań z anglojęzycznych sklepów.',
+      },
+      en: {
+        slug: 'inches-to-cm-converter',
+        title: 'inches to cm',
+        description:
+          'Convert inches to centimeters. TV size, height in metric, clothing sizes, luggage.',
+      },
+      de: {
+        slug: 'zoll-in-cm-umrechner',
+        title: 'Zoll in cm',
+        description:
+          'Zoll in Zentimeter umrechnen. TV-Größe, Körpergröße, Kleidergrößen, Gepäckmaße.',
+      },
+      fr: {
+        slug: 'convertisseur-pouces-en-cm',
+        title: 'pouces en cm',
+        description:
+          'Convertissez les pouces en centimètres. TV, taille, vêtements, bagages.',
+      },
+      es: {
+        slug: 'convertidor-pulgadas-a-cm',
+        title: 'pulgadas a cm',
+        description:
+          'Convierte pulgadas a centímetros. TV, estatura, ropa, equipaje.',
+      },
+      pt: {
+        slug: 'conversor-polegadas-para-cm',
+        title: 'polegadas para cm',
+        description:
+          'Converta polegadas em centímetros. TV, altura, roupa, bagagem.',
+      },
+      it: {
+        slug: 'convertitore-pollici-in-cm',
+        title: 'pollici in cm',
+        description:
+          'Converti pollici in centimetri. TV, altezza, taglie, bagagli.',
+      },
+      nl: {
+        slug: 'inches-naar-cm-converter',
+        title: 'inches naar cm',
+        description:
+          'Reken inches om naar centimeters. Tv-maat, lengte, kleding, bagage.',
+      },
+      cs: {
+        slug: 'prevodnik-palcu-na-cm',
+        title: 'palce na cm',
+        description:
+          'Převeď palce na centimetry. Televizory, výška, velikosti oblečení, zavazadla.',
+      },
+      fi: {
+        slug: 'tuumaa-cm-muunnin',
+        title: 'tuumat cm:ksi',
+        description:
+          'Muunna tuumat senttimetreiksi. TV-koko, pituus, vaatekoot, matkatavarat.',
+      },
+      el: {
+        slug: 'metatropeas-intsOn-se-cm',
+        title: 'ίντσες σε cm',
+        description:
+          'Μετατρέψτε ίντσες σε εκατοστά. Τηλεόραση, ύψος, ρούχα, αποσκευές.',
+      },
+    },
+  },
+  {
     key: 'hexToRgb',
     section: 'jednostki',
     icon: RiRulerLine,

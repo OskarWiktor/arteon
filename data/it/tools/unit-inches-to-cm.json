@@ -1,0 +1,345 @@
+{
+  "toolKey": "inchesToCm",
+  "locale": "it",
+  "metadata": {
+    "title": "Calcolatore pollici in CM – convertire pollici in centimetri",
+    "description": "Converti pollici in centimetri all'istante. Verifica la dimensione della TV in cm, l'altezza in sistema metrico, le taglie da negozi europei e le misure del bagaglio. Tabella di conversione pollici in cm.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-pollici-in-cm"
+  },
+  "hero": {
+    "title": "Converti pollici in centimetri",
+    "description": "Inserisci qualsiasi valore in pollici e ottieni subito il risultato in centimetri. Questo convertitore è utile ovunque tu debba comprendere misure imperiali nel sistema metrico: per verificare la dimensione di un televisore, leggere le dimensioni di un prodotto europeo, confrontare taglie di abbigliamento o convertire un'altezza.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-pollici-in-cm",
+      "label": "pollici in cm"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore pollici in centimetri – calcolatore pollici in cm",
+      "alternateName": [
+        "convertitore pollici in cm",
+        "calcolatore pollici in cm",
+        "pollici in centimetri",
+        "pollici in cm",
+        "convertire pollici in cm",
+        "pollici in centimetro",
+        "tabella pollici cm",
+        "conversione pollici cm",
+        "quanti cm ha un pollice",
+        "formula pollici in cm",
+        "inches in cm",
+        "convertitore pollici centimetri",
+        "calcolatore pollici centimetri",
+        "1 pollice in cm",
+        "piedi e pollici in cm"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertitore gratuito da pollici a centimetri che funziona nel browser senza registrazione. Inserisci un valore in pollici e ottieni subito il risultato in centimetri. Utile per le diagonali dei televisori, le dimensioni dei monitor, le taglie di abbigliamento dei negozi anglofoni o la conversione dell'altezza.",
+      "featureList": [
+        "La conversione funziona in entrambe le direzioni: puoi convertire sia pollici in centimetri sia centimetri in pollici",
+        "Il risultato appare immediatamente mentre digiti, senza bisogno di cliccare alcun pulsante",
+        "Il risultato può essere copiato negli appunti con un solo clic",
+        "La tabella di conversione copre valori da 0,5 a 72 pollici",
+        "La tabella delle diagonali degli schermi include le dimensioni più popolari di televisori e monitor da 24 a 85 pollici",
+        "La tabella dell'altezza mostra la conversione di piedi e pollici in centimetri per valori da 4 ft 11 in a 6 ft 7 in",
+        "La tabella inversa mostra quanti pollici corrispondono a un valore in centimetri, da 0,5 cm a 200 cm",
+        "Tutti i calcoli vengono eseguiti localmente nel browser, nessun dato lascia il tuo dispositivo",
+        "La formula esatta è centimetri = pollici × 2,54, basata sulla relazione fissa tra pollice e centimetro",
+        "Funziona su smartphone, tablet e computer senza installazione"
+      ]
+    },
+    "howTo": {
+      "name": "Come convertire pollici in centimetri?",
+      "description": "Guida rapida all'uso del convertitore pollici in cm.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserisci il valore in pollici",
+          "text": "Nel campo a sinistra, inserisci il numero di pollici che vuoi convertire in centimetri. Sono accettati valori decimali come 5,5 o 12,75."
+        },
+        {
+          "name": "Leggi il risultato in centimetri",
+          "text": "Il risultato in centimetri appare immediatamente nel campo accanto. Puoi copiarlo negli appunti con un solo clic."
+        },
+        {
+          "name": "Inverti la direzione se necessario",
+          "text": "Clicca su Cambia ordine per passare il convertitore alla modalità centimetri in pollici."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando è necessario convertire pollici in centimetri?",
+      "html": "<p class=\"text-mid mb-4\">Il pollice è l'unità di misura della lunghezza del sistema imperiale, usato principalmente negli Stati Uniti e ancora comune nel Regno Unito. In Italia e in tutta Europa si usa il sistema metrico, quindi i pollici compaiono soprattutto quando si ha a che fare con prodotti o informazioni provenienti da paesi anglofoni.</p><p class=\"text-mid mb-4\">Le situazioni più comuni: vuoi sapere quanti centimetri ha un televisore da 55 pollici, confronti la tua altezza con una tabella taglie americana, acquisti scarpe in un negozio britannico dove la taglia è espressa in pollici oppure consulti le misure di un mobile in un catalogo americano.</p><p class=\"text-mid mb-4\">La formula è semplice: un pollice equivale esattamente a 2,54 cm. Per convertire pollici in centimetri, basta moltiplicare per 2,54. Il convertitore lo fa non appena inserisci un valore.</p><p class=\"text-mid\">In questa pagina troverai una tabella di conversione pollici in cm, una tabella delle diagonali degli schermi più diffuse, una tabella dell'altezza con la conversione di piedi e pollici in centimetri e una tabella inversa di centimetri in pollici.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore gratuito da pollici a centimetri – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione pollici in cm? Formula ed esempio",
+      "html": "<p class=\"text-mid mb-4\">La conversione da pollici a centimetri si basa su una costante fissa: un pollice equivale esattamente a 2,54 cm. Per convertire pollici in centimetri, moltiplica il numero di pollici per 2,54.</p><p class=\"text-mid mb-4\">Formula completa: <strong>centimetri = pollici × 2,54</strong>. Nel senso inverso: <strong>pollici = centimetri ÷ 2,54</strong>.</p><p class=\"text-mid mb-4\">Esempio: vuoi sapere quanti centimetri ha un televisore da 55 pollici. Calcolo: 55 × 2,54 = 139,70 cm. Questo è il valore della diagonale, non della larghezza. La larghezza di uno schermo 16:9 da 55 pollici è di circa 122 cm.</p><p class=\"text-mid\">Altro esempio: un contatto dagli Stati Uniti indica la sua altezza come 6 ft 2 in. Prima converti in pollici: 6 × 12 + 2 = 74 pollici. Poi moltiplica: 74 × 2,54 = 187,96 cm, ossia circa 188 cm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabella di conversione pollici in centimetri",
+      "description": "La tabella seguente mostra la conversione dei valori più comuni in pollici in centimetri, arrotondata a due decimali. Per conversioni esatte, usa il convertitore in alto.",
+      "labelHeader": "Pollici",
+      "cols": ["Centimetri"],
+      "rows": [
+        { "label": "0,5 in", "values": ["1,27 cm"] },
+        { "label": "1 in", "values": ["2,54 cm"], "emphasis": true },
+        { "label": "2 in", "values": ["5,08 cm"] },
+        { "label": "3 in", "values": ["7,62 cm"] },
+        { "label": "4 in", "values": ["10,16 cm"] },
+        { "label": "5 in", "values": ["12,70 cm"] },
+        { "label": "6 in", "values": ["15,24 cm"], "emphasis": true },
+        { "label": "7 in", "values": ["17,78 cm"] },
+        { "label": "8 in", "values": ["20,32 cm"] },
+        { "label": "9 in", "values": ["22,86 cm"] },
+        { "label": "10 in", "values": ["25,40 cm"], "emphasis": true },
+        { "label": "11 in", "values": ["27,94 cm"] },
+        { "label": "12 in", "values": ["30,48 cm"], "emphasis": true },
+        { "label": "15 in", "values": ["38,10 cm"] },
+        { "label": "18 in", "values": ["45,72 cm"] },
+        { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
+        { "label": "30 in", "values": ["76,20 cm"] },
+        { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
+        { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "48 in", "values": ["121,92 cm"] },
+        { "label": "54 in", "values": ["137,16 cm"] },
+        { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+      ],
+      "caption": "Vuoi convertire nell'altro senso? Usa il nostro <a href=\"/it/strumenti/convertitore-cm-in-pollici\">convertitore cm in pollici</a> con la sua propria tabella e contenuto dedicato a quella direzione."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Diagonale TV e monitor – pollici in centimetri",
+      "description": "I produttori di elettronica esprimono sempre la diagonale dello schermo in pollici. La tabella seguente mostra quanti centimetri misura ogni dimensione popolare. Il valore indicato è la diagonale, non la larghezza.",
+      "labelHeader": "Diagonale (pollici)",
+      "cols": ["Diagonale (cm)"],
+      "rows": [
+        { "label": "24 in (monitor da scrivania)", "values": ["60,96 cm"] },
+        { "label": "27 in (monitor da scrivania)", "values": ["68,58 cm"] },
+        {
+          "label": "32 in (TV / monitor grande)",
+          "values": ["81,28 cm"],
+          "emphasis": true
+        },
+        { "label": "40 in (TV)", "values": ["101,60 cm"] },
+        { "label": "43 in (TV)", "values": ["109,22 cm"] },
+        { "label": "50 in (TV)", "values": ["127,00 cm"] },
+        { "label": "55 in (TV)", "values": ["139,70 cm"], "emphasis": true },
+        { "label": "65 in (TV)", "values": ["165,10 cm"], "emphasis": true },
+        { "label": "75 in (TV)", "values": ["190,50 cm"] },
+        { "label": "85 in (TV)", "values": ["215,90 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Altezza in piedi e pollici convertita in centimetri",
+      "description": "Questa tabella converte le altezze più comuni in piedi e pollici (ft in) in centimetri. Un piede equivale a 12 pollici e un pollice equivale a 2,54 cm.",
+      "labelHeader": "Altezza (ft in)",
+      "cols": ["Centimetri"],
+      "rows": [
+        { "label": "4 ft 11 in (59 in)", "values": ["149,86 cm"] },
+        { "label": "5 ft 0 in (60 in)", "values": ["152,40 cm"] },
+        { "label": "5 ft 1 in (61 in)", "values": ["154,94 cm"] },
+        { "label": "5 ft 2 in (62 in)", "values": ["157,48 cm"] },
+        {
+          "label": "5 ft 3 in (63 in)",
+          "values": ["160,02 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 4 in (64 in)", "values": ["162,56 cm"] },
+        {
+          "label": "5 ft 5 in (65 in)",
+          "values": ["165,10 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 6 in (66 in)", "values": ["167,64 cm"] },
+        {
+          "label": "5 ft 7 in (67 in)",
+          "values": ["170,18 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 8 in (68 in)", "values": ["172,72 cm"] },
+        {
+          "label": "5 ft 9 in (69 in)",
+          "values": ["175,26 cm"],
+          "emphasis": true
+        },
+        { "label": "5 ft 10 in (70 in)", "values": ["177,80 cm"] },
+        {
+          "label": "5 ft 11 in (71 in)",
+          "values": ["180,34 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 0 in (72 in)", "values": ["182,88 cm"] },
+        {
+          "label": "6 ft 1 in (73 in)",
+          "values": ["185,42 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 2 in (74 in)", "values": ["187,96 cm"] },
+        {
+          "label": "6 ft 3 in (75 in)",
+          "values": ["190,50 cm"],
+          "emphasis": true
+        },
+        { "label": "6 ft 4 in (76 in)", "values": ["193,04 cm"] },
+        { "label": "6 ft 5 in (77 in)", "values": ["195,58 cm"] },
+        { "label": "6 ft 7 in (79 in)", "values": ["200,66 cm"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando è necessario convertire pollici in centimetri?",
+      "description": "La conversione da pollici a cm si presenta in alcune situazioni tipiche della vita quotidiana.",
+      "items": [
+        {
+          "title": "Televisori, monitor e schermi",
+          "description": "La diagonale dello schermo è sempre espressa in pollici, indipendentemente dal paese d'acquisto. Un televisore da 55 pollici ha una diagonale di 139,70 cm e un modello da 65 pollici arriva a 165,10 cm. Conoscere il valore in centimetri aiuta a pianificare lo spazio e a stimare la distanza di visione ottimale quando le misure della stanza sono in metrico."
+        },
+        {
+          "title": "Altezza e confronti internazionali",
+          "description": "Quando confronti dati sull'altezza da fonti americane o britanniche con tabelle metriche — in studi sulla salute, statistiche sportive o app di fitness — è utile conoscere l'equivalente in centimetri. 5 ft 7 in corrispondono a 170,18 cm, 6 ft 0 in sono 182,88 cm e 6 ft 3 in sono 190,50 cm."
+        },
+        {
+          "title": "Abbigliamento e calzature da negozi internazionali",
+          "description": "I negozi americani e britannici indicano le misure in pollici. Una taglia di colletto di 40 cm equivale a circa 15,7 pollici. Per scarpe, camicie e altri capi, la conversione si esegue moltiplicando per 2,54. Si consiglia di consultare la tabella delle taglie del produttore specifico."
+        },
+        {
+          "title": "Mobili e materiali da costruzione",
+          "description": "I cataloghi di mobili americani, gli attrezzi e i materiali da costruzione importati dal Nord America esprimono le dimensioni in pollici. Una trave di legno 2×4 standard ha dimensioni reali di 1,5 × 3,5 pollici, ossia circa 3,8 × 8,9 cm. Convertire aiuta a pianificare i progetti con precisione ed evitare errori di misura."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione da pollici a centimetri",
+      "items": [
+        {
+          "question": "Quanti centimetri ha un pollice?",
+          "answer": "Un pollice equivale esattamente a 2,54 cm. È un valore fisso stabilito nel 1959 come standard internazionale, quindi la conversione è sempre esatta."
+        },
+        {
+          "question": "Qual è la formula per convertire pollici in cm?",
+          "answer": "La formula è: centimetri = pollici × 2,54. Esempio: 10 pollici × 2,54 = 25,40 cm. Nel senso inverso: pollici = centimetri ÷ 2,54."
+        },
+        {
+          "question": "Quanti cm sono 5 pollici?",
+          "answer": "5 pollici sono 5 × 2,54 = 12,70 cm. È un valore di riferimento comune, ad esempio per la diagonale dello schermo di uno smartphone."
+        },
+        {
+          "question": "Quanti cm sono 6 pollici?",
+          "answer": "6 pollici sono 6 × 2,54 = 15,24 cm, cioè esattamente mezzo piede. È la dimensione tipica dello schermo di un grande smartphone."
+        },
+        {
+          "question": "Quanti cm sono 12 pollici?",
+          "answer": "12 pollici sono 30,48 cm, ossia esattamente un piede. È un valore di riferimento importante: 1 piede = 12 pollici = 30,48 cm."
+        },
+        {
+          "question": "Quanti cm ha un televisore da 55 pollici?",
+          "answer": "Un televisore da 55 pollici ha una diagonale dello schermo di 55 × 2,54 = 139,70 cm. La larghezza di uno schermo 16:9 da 55 pollici è di circa 122 cm e l'altezza di circa 69 cm. I produttori indicano talvolta le dimensioni esterne con la cornice, leggermente più grandi."
+        },
+        {
+          "question": "Quanti cm ha un televisore da 65 pollici?",
+          "answer": "Un televisore da 65 pollici ha una diagonale dello schermo di 65 × 2,54 = 165,10 cm. La larghezza di uno schermo 16:9 da 65 pollici è di circa 144 cm e l'altezza di circa 81 cm. È una delle dimensioni più popolari per i grandi televisori da salotto."
+        },
+        {
+          "question": "Quanti cm sono 5 ft 7 in?",
+          "answer": "5 piedi e 7 pollici si convertono prima in pollici: 5 × 12 + 7 = 67 pollici. Poi: 67 × 2,54 = 170,18 cm. 5 ft 7 in corrispondono quindi a circa 170 cm."
+        },
+        {
+          "question": "Quanti cm sono 6 ft 0 in?",
+          "answer": "6 piedi e 0 pollici sono 6 × 12 = 72 pollici e 72 × 2,54 = 182,88 cm. Un'altezza di esattamente 6 piedi equivale a circa 183 cm."
+        },
+        {
+          "question": "Come convertire pollici in cm senza calcolatrice?",
+          "answer": "Approssimazione rapida: moltiplica i pollici per 2,5 invece di 2,54. L'errore è di circa 1,6 %, sufficiente per stime orientative. Esempio: 10 pollici × 2,5 = 25 cm (valore esatto: 25,40 cm). Per conversioni precise usa sempre il convertitore."
+        },
+        {
+          "question": "Quanti cm ha un bagaglio a mano di 22 × 14 × 9 pollici?",
+          "answer": "Un trolley cabina standard di 22 × 14 × 9 pollici corrisponde a: 22 × 2,54 = 55,88 cm, 14 × 2,54 = 35,56 cm, 9 × 2,54 = 22,86 cm, cioè circa 56 × 36 × 23 cm. La somma delle dimensioni è di 22 + 14 + 9 = 45 pollici, circa 114,3 cm."
+        },
+        {
+          "question": "1 pollice è sempre 2,54 cm, o ci sono eccezioni?",
+          "answer": "Nell'uso quotidiano e nel commercio, 1 pollice = 2,54 cm si applica sempre (pollice internazionale dal 1959). L'unica eccezione era il pollice geodetico degli USA (2,5400050800 cm), usato nelle misurazioni geodetiche. È stato ufficialmente abolito dagli Stati Uniti nel 2023, quindi oggi si usa solo il valore 2,54."
+        },
+        {
+          "question": "Come convertire le taglie di scarpe da pollici in cm?",
+          "answer": "Le taglie di scarpe non hanno una semplice conversione pollici-cm, poiché ogni produttore e paese ha la propria scala. Negli USA le taglie donna vanno da 4 (circa 21,6 cm di soletta) a 12 (circa 28,6 cm), e quelle uomo da 6 (circa 24,1 cm) a 16 (circa 32 cm). La lunghezza della soletta in pollici non coincide con il numero di taglia. Conviene consultare la tabella delle taglie del produttore."
+        },
+        {
+          "question": "Quanti cm ha un righello da 12 pollici?",
+          "answer": "Un righello da 12 pollici è lungo 30,48 cm, cioè esattamente un piede. È quasi identico al classico righello scolastico da 30 cm, con una differenza di soli 0,48 cm."
+        },
+        {
+          "question": "Come convertire piedi e pollici in centimetri?",
+          "answer": "La conversione da piedi e pollici a centimetri avviene in due passi: prima converti tutto in pollici (piedi × 12 + pollici rimanenti), poi moltiplica per 2,54. Esempio: 5 ft 9 in = 5 × 12 + 9 = 69 pollici; 69 × 2,54 = 175,26 cm. La tabella dell'altezza in questa pagina mostra conversioni pronte per valori da 4 ft 11 in a 6 ft 7 in."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hai una domanda o un suggerimento?",
+      "description": "Se noti un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
+      "imageAlt": "Contatta Arteon Agency",
+      "subject": "Convertitore pollici in cm"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri convertitori di unità utili"
+    }
+  ]
+}
