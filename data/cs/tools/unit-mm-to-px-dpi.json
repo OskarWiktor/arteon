@@ -2,15 +2,15 @@
   "toolKey": "mmToPxDpi",
   "locale": "cs",
   "metadata": {
-    "title": "Převodník mm na pixels (DPI)",
-    "description": "Převést mm na pixels (DPI) a naopak. Užitečné pro balení a grafiku. Bez registrace.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "title": "Převodník mm na px (DPI) – milimetry na pixely",
+    "description": "Převeď milimetry na pixely s nastavitelným DPI. Nezbytné v polygrafii, při návrhu obalů a přípravě souborů v Illustratoru, InDesignu a CorelDRAW.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-mm-na-px"
   },
   "hero": {
-    "title": "Převést mm na pixels (DPI)",
-    "description": "Tento převodník převádí okamžitě. Zadejte hodnotu a výsledek se zobrazí ihned.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+    "title": "Převeď milimetry na pixely s libovolným DPI",
+    "description": "Zadej hodnotu v milimetrech, nastav rozlišení DPI a přečti si výsledek v pixelech. Zjisti, kolik pixelů odpovídá dané hodnotě v milimetrech, například rozměrům vizitky, letáku, plakátu nebo listu A4. Převodník ti pomůže vybrat správné rozlišení souboru před odesláním do tiskárny.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -24,34 +24,56 @@
   },
   "schemas": {
     "software": {
-      "name": "Převodník mm na pixels (DPI)",
-      "alternateName": ["Převést mm na pixels (DPI)"],
+      "name": "Převodník milimetrů na pixely s nastavitelným DPI – mm na px",
+      "alternateName": [
+        "Převodník mm na px",
+        "Kalkulačka mm na pixely",
+        "Konvertor milimetrů na pixely",
+        "Milimetry na pixely",
+        "Převést mm na px",
+        "Pixely z milimetrů",
+        "Kalkulačka milimetrů na pixely",
+        "Převodník mm px DPI",
+        "px z mm",
+        "mm na px 300 dpi",
+        "Kalkulačka tiskového rozlišení",
+        "Pixely z mm",
+        "Kalkulačka DPI pro tisk",
+        "Kalkulačka mm pixely",
+        "Konverze milimetrů na pixely"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Převést mm na pixels (DPI) a naopak. Užitečné pro balení a grafiku. Bez registrace.",
+      "description": "Převodník milimetrů na pixely s nastavitelnou hodnotou DPI. Po zadání rozměru hned uvidíš, kolika pixelům odpovídá, včetně běžných formátů vizitek, letáků a papíru řady A. Převodník je určen k přípravě tiskových souborů a návrhu obalů a funguje celý v prohlížeči, bez registrace.",
       "featureList": [
-        "Obousměrná konverze v reálném čase",
-        "Všechny převodníky na jednom místě",
-        "Kopírování výsledku do schránky",
-        "Lokální výpočet v prohlížeči"
+        "Nastavitelné rozlišení DPI",
+        "Převod funguje oběma směry, takže převedeš milimetry na pixely i pixely na milimetry",
+        "Výsledek se zobrazí okamžitě během psaní, bez nutnosti klikat na tlačítko",
+        "Výsledek zkopíruješ do schránky jedním kliknutím",
+        "Rozsáhlá tabulka pro hodnoty od 1 do 1 000 milimetrů při pěti rozlišeních DPI",
+        "Samostatná tabulka formátů zahrnuje vizitky, letáky DL, papír A0–A7 a velkoformátové plakáty",
+        "Sekce s návody vysvětluje, jak nastavit mm na px v Illustratoru, InDesignu, CorelDRAW, Photoshopu, Figmě a Canvě",
+        "Krátká technická poznámka o jednotce mm v CSS, SVG a webovém kódu",
+        "Všechny výpočty probíhají lokálně v tvém prohlížeči, tvá data nikdy neopustí zařízení a nikde se neukládají",
+        "Přesný převodní vzorec je px = mm × DPI ÷ 25,4 a vychází z pevné délky palce (25,4 mm)"
       ]
     },
     "howTo": {
-      "name": "Jak používat převodník",
-      "description": "Rychlý průvodce použitím převodníku.",
+      "name": "Jak převést milimetry na pixely",
+      "description": "Krátký návod k použití převodníku mm na px s nastavitelným DPI.",
       "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Zadat hodnotu",
-          "text": "Zadejte číslo do vstupního pole vlevo."
+          "name": "Zadej hodnotu v milimetrech",
+          "text": "Do levého pole napiš počet milimetrů, které chceš převést na pixely."
         },
         {
-          "name": "Přečíst výsledek",
-          "text": "Výsledek konverze se okamžitě zobrazí v sousedním poli."
+          "name": "Nastav rozlišení DPI",
+          "text": "Vyber hodnotu DPI. Pro obrazovky se obvykle používá 96 DPI, pro tisk 300 DPI."
         },
         {
-          "name": "Kopírovat nebo obrátit",
-          "text": "Klikněte na Kopírovat výsledek nebo na Obrátit pro konverzi v opačném směru."
+          "name": "Přečti si výsledek nebo otoč směr",
+          "text": "Výsledek v pixelech se hned zobrazí v sousedním poli. Můžeš ho zkopírovat nebo tlačítkem Změnit pořadí převádět pixely na milimetry."
         }
       ]
     }
@@ -63,116 +85,19 @@
     },
     {
       "type": "sectionBasic",
-      "title": "Kdy je potřeba převádět mm na pixely?",
-      "html": "<p class=\"text-mid mb-4\">Při precizní práci se měří v mm. Pro digitální obrázky: Pixely = mm × DPI / 25,4.</p><p class=\"text-mid mb-4\">Při 300 DPI: 1 mm = 11,81 px, 85 mm (vizitka) = 1 004 px.</p><p class=\"text-mid\">Veškeré výpočty probíhají lokálně.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "Převodník mm na pixels (DPI) – Arteon"
+      "title": "Proč převádět milimetry na pixely?",
+      "html": "<p class=\"text-mid mb-4\">Milimetr je nejpřesnější fyzická jednotka používaná v polygrafii, návrhu obalů a technice – tiskárny uvádějí rozměry vizitek, letáků i spadávky v milimetrech. Pixel naopak popisuje jeden bod na obrazovce nebo v obrazovém souboru. Pro převod jednoho na druhý musíš znát rozlišení DPI, tedy počet pixelů na jeden palec materiálu.</p><p class=\"text-mid mb-4\">Tento převod nejčastěji potřebují grafici připravující soubory pro tiskárnu, designéři obalů kontrolující rozměry etiket a každý, kdo pracuje v Illustratoru, InDesignu nebo CorelDRAW, přemýšlí v milimetrech, ale musí dodat soubor s přesným počtem pixelů. Převodník ti ušetří ruční počítání a pamatování vzorce.</p><p class=\"text-mid\">Dále na této stránce najdeš rozsáhlou tabulku pro běžné hodnoty v milimetrech, obrácenou tabulku z pixelů na milimetry, hotové rozměry vizitek, letáků a formátů A0–A7 a krátké návody, jak přepnout milimetry na pixely v Illustratoru, InDesignu, CorelDRAW, Photoshopu, Figmě a Canvě.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Bezplatný převodník milimetrů na pixely – Arteon"
     },
     {
       "type": "gap",
       "size": "xs"
     },
     {
-      "type": "sectionSteps",
-      "title": "Jak použít převodník?",
-      "grid": "three",
-      "items": [
-        {
-          "title": "1. Zadejte hodnotu",
-          "description": "Zadejte číslo do vstupního pole.",
-          "icon": "RiInputMethodLine"
-        },
-        {
-          "title": "2. Přečtěte výsledek",
-          "description": "Výsledek se zobrazí okamžitě.",
-          "icon": "RiLoopLeftLine"
-        },
-        {
-          "title": "3. Zkopírujte nebo obraťte",
-          "description": "Zkopírujte výsledek nebo obraťte směr převodu.",
-          "icon": "RiClipboardLine"
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Kdy je tento převodník užitečný?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiPrinterLine",
-          "title": "Obalový design",
-          "description": "Obalové rozměry v mm. Etiketa 100 mm = 1 181 px."
-        },
-        {
-          "icon": "RiFileTextLine",
-          "title": "Vizitky",
-          "description": "85 × 55 mm při 300 DPI = 1 004 × 650 px (+ spadávka)."
-        },
-        {
-          "icon": "RiCropLine",
-          "title": "Etikety",
-          "description": "Přesné převody mm na px."
-        },
-        {
-          "icon": "RiRulerLine",
-          "title": "3D tisk",
-          "description": "Převeďte 3D rozměry (mm) na rozlišení textur (px)."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "Čím se tento převodník liší?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiShieldCheckLine",
-          "title": "Plné soukromí",
-          "description": "Všechny výpočty probíhají lokálně ve vašem prohlížeči."
-        },
-        {
-          "icon": "RiTimeLine",
-          "title": "Výsledky v reálném čase",
-          "description": "Výsledek se aktualizuje během zadávání."
-        },
-        {
-          "icon": "RiArrowLeftRightLine",
-          "title": "Obousměrný převod",
-          "description": "Převádějte oběma směry jedním kliknutím."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Referenční tabulka",
-          "description": "Tabulka s běžnými hodnotami a kontextovými popisy."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionInfo",
-      "title": "Jak funguje převod?",
-      "html": "<p class=\"text-mid mb-4\">Pixely = mm × DPI / 25,4. Při 300 DPI: 1 mm = 11,811 px.</p><p class=\"text-mid\">Spadávka: přidejte 3 mm na každé straně.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Jak funguje převod?",
-      "html": "<p class=\"text-mid mb-4\">Pixely = mm × DPI / 25,4. Při 300 DPI: 1 mm = 11,811 px.</p><p class=\"text-mid\">Spadávka: přidejte 3 mm na každé straně.</p>"
+      "title": "Jak funguje převod mm na px? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Celý převod stojí na jediném vzorci, který vychází z pevného vztahu mezi palcem a milimetrem: jeden palec se rovná přesně 25,4 mm. Stačí tedy počet milimetrů vynásobit zvoleným rozlišením DPI a vydělit 25,4.</p><p class=\"text-mid mb-4\">Úplný vzorec zní: <strong>počet pixelů = počet milimetrů × DPI ÷ 25,4</strong>. Převodník tento výpočet provede okamžitě, takže nikdy nemusíš počítat ani hledat kalkulačku.</p><p class=\"text-mid mb-4\">Příklad: chceš zjistit, kolik pixelů má vizitka o šířce 90 mm při tiskovém rozlišení 300 DPI. Dosazením hodnot do vzorce dostaneš 90 × 300 ÷ 25,4, což je přesně 1 063 pixelů. Stejná vizitka zobrazená na obrazovce s 96 DPI by zabírala jen 340 pixelů, protože na palec se vejde méně bodů.</p><p class=\"text-mid\">Opačným směrem to funguje obdobně: počet milimetrů = počet pixelů × 25,4 ÷ DPI. Tak zjistíš, jak velký by byl soubor o šířce například 1 181 pixelů, nebo jestli obrázek z internetu stačí na konkrétní tiskový formát.</p>"
     },
     {
       "type": "gap",
@@ -180,29 +105,472 @@
     },
     {
       "type": "sectionTable",
-      "title": "mm na px při různých DPI",
-      "labelHeader": "Vlastnost",
-      "cols": ["300 DPI", "600 DPI"],
+      "title": "Kolik pixelů dávají různé hodnoty v milimetrech při různém DPI?",
+      "description": "Tabulka níže ukazuje, jak se stejné rozměry v milimetrech převádějí na pixely při pěti nejčastěji používaných rozlišeních. Některé hodnoty se vyplatí zapamatovat, protože přesně odpovídají reálným formátům: 35 mm při 300 DPI je kratší strana fotografie na doklady, 90 mm je šířka standardní vizitky a 210 mm je šířka listu A4.",
+      "labelHeader": "Milimetry",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
       "rows": [
         {
           "label": "1 mm",
-          "values": ["11,81 px", "23,62 px"]
+          "values": ["3 px", "4 px", "6 px", "12 px", "24 px"]
+        },
+        {
+          "label": "5 mm",
+          "values": ["14 px", "19 px", "30 px", "59 px", "118 px"]
         },
         {
           "label": "10 mm",
-          "values": ["118 px", "236 px"]
+          "values": ["28 px", "38 px", "59 px", "118 px", "236 px"],
+          "emphasis": true
+        },
+        {
+          "label": "15 mm",
+          "values": ["43 px", "57 px", "89 px", "177 px", "354 px"]
+        },
+        {
+          "label": "20 mm",
+          "values": ["57 px", "76 px", "118 px", "236 px", "472 px"]
+        },
+        {
+          "label": "25 mm",
+          "values": ["71 px", "94 px", "148 px", "295 px", "591 px"]
+        },
+        {
+          "label": "30 mm",
+          "values": ["85 px", "113 px", "177 px", "354 px", "709 px"]
+        },
+        {
+          "label": "35 mm",
+          "values": ["99 px", "132 px", "207 px", "413 px", "827 px"],
+          "emphasis": true
+        },
+        {
+          "label": "40 mm",
+          "values": ["113 px", "151 px", "236 px", "472 px", "945 px"]
+        },
+        {
+          "label": "45 mm",
+          "values": ["128 px", "170 px", "266 px", "531 px", "1 063 px"],
+          "emphasis": true
+        },
+        {
+          "label": "50 mm",
+          "values": ["142 px", "189 px", "295 px", "591 px", "1 181 px"],
+          "emphasis": true
+        },
+        {
+          "label": "51 mm",
+          "values": ["145 px", "193 px", "301 px", "602 px", "1 205 px"]
+        },
+        {
+          "label": "54 mm",
+          "values": ["153 px", "204 px", "319 px", "638 px", "1 276 px"]
+        },
+        {
+          "label": "55 mm",
+          "values": ["156 px", "208 px", "325 px", "650 px", "1 299 px"],
+          "emphasis": true
+        },
+        {
+          "label": "60 mm",
+          "values": ["170 px", "227 px", "354 px", "709 px", "1 417 px"]
+        },
+        {
+          "label": "70 mm",
+          "values": ["198 px", "265 px", "413 px", "827 px", "1 654 px"]
         },
         {
           "label": "85 mm",
-          "values": ["1 004 px", "2 008 px"]
+          "values": ["241 px", "321 px", "502 px", "1 004 px", "2 008 px"],
+          "emphasis": true
         },
         {
-          "label": "Použití",
-          "values": ["Standardní tisk", "Umění / medicína"]
+          "label": "90 mm",
+          "values": ["255 px", "340 px", "531 px", "1 063 px", "2 126 px"],
+          "emphasis": true
         },
         {
-          "label": "Velikost souboru",
-          "values": ["Standardní", "4× větší"]
+          "label": "99 mm",
+          "values": ["281 px", "374 px", "585 px", "1 169 px", "2 339 px"],
+          "emphasis": true
+        },
+        {
+          "label": "100 mm",
+          "values": ["283 px", "378 px", "591 px", "1 181 px", "2 362 px"]
+        },
+        {
+          "label": "105 mm",
+          "values": ["298 px", "397 px", "620 px", "1 240 px", "2 480 px"]
+        },
+        {
+          "label": "148 mm",
+          "values": ["420 px", "559 px", "874 px", "1 748 px", "3 496 px"],
+          "emphasis": true
+        },
+        {
+          "label": "150 mm",
+          "values": ["425 px", "567 px", "886 px", "1 772 px", "3 543 px"]
+        },
+        {
+          "label": "200 mm",
+          "values": ["567 px", "756 px", "1 181 px", "2 362 px", "4 724 px"]
+        },
+        {
+          "label": "210 mm",
+          "values": ["595 px", "794 px", "1 240 px", "2 480 px", "4 961 px"],
+          "emphasis": true
+        },
+        {
+          "label": "250 mm",
+          "values": ["709 px", "945 px", "1 476 px", "2 953 px", "5 906 px"]
+        },
+        {
+          "label": "297 mm",
+          "values": ["842 px", "1 123 px", "1 754 px", "3 508 px", "7 016 px"],
+          "emphasis": true
+        },
+        {
+          "label": "300 mm",
+          "values": ["850 px", "1 134 px", "1 772 px", "3 543 px", "7 087 px"]
+        },
+        {
+          "label": "420 mm",
+          "values": [
+            "1 191 px",
+            "1 587 px",
+            "2 480 px",
+            "4 961 px",
+            "9 921 px"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "500 mm",
+          "values": [
+            "1 417 px",
+            "1 890 px",
+            "2 953 px",
+            "5 906 px",
+            "11 811 px"
+          ]
+        },
+        {
+          "label": "594 mm",
+          "values": [
+            "1 684 px",
+            "2 245 px",
+            "3 508 px",
+            "7 016 px",
+            "14 031 px"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "700 mm",
+          "values": [
+            "1 984 px",
+            "2 646 px",
+            "4 134 px",
+            "8 268 px",
+            "16 535 px"
+          ]
+        },
+        {
+          "label": "841 mm",
+          "values": [
+            "2 384 px",
+            "3 179 px",
+            "4 967 px",
+            "9 933 px",
+            "19 866 px"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "1 000 mm",
+          "values": [
+            "2 835 px",
+            "3 780 px",
+            "5 906 px",
+            "11 811 px",
+            "23 622 px"
+          ]
+        }
+      ],
+      "caption": "Všechny hodnoty jsou zaokrouhlené na nejbližší celé číslo podle vzorce px = mm × DPI ÷ 25,4."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Kolik milimetrů dávají různé hodnoty v pixelech při různém DPI?",
+      "description": "Někdy začínáme počtem pixelů, například známým rozlišením obrazovky, a potřebujeme zjistit, kolik je to milimetrů. Tabulka níže ukazuje tento převod pro čtyři nejčastěji používaná rozlišení, včetně celé obrazovky Full HD.",
+      "labelHeader": "Pixely",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
+      "rows": [
+        {
+          "label": "50 px",
+          "values": ["17,64 mm", "13,23 mm", "8,47 mm", "4,23 mm"]
+        },
+        {
+          "label": "100 px",
+          "values": ["35,28 mm", "26,46 mm", "16,93 mm", "8,47 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "200 px",
+          "values": ["70,56 mm", "52,92 mm", "33,87 mm", "16,93 mm"]
+        },
+        {
+          "label": "300 px",
+          "values": ["105,83 mm", "79,38 mm", "50,80 mm", "25,40 mm"]
+        },
+        {
+          "label": "500 px",
+          "values": ["176,39 mm", "132,29 mm", "84,67 mm", "42,33 mm"]
+        },
+        {
+          "label": "600 px",
+          "values": ["211,67 mm", "158,75 mm", "101,60 mm", "50,80 mm"]
+        },
+        {
+          "label": "800 px",
+          "values": ["282,22 mm", "211,67 mm", "135,47 mm", "67,73 mm"]
+        },
+        {
+          "label": "1 000 px",
+          "values": ["352,78 mm", "264,58 mm", "169,33 mm", "84,67 mm"]
+        },
+        {
+          "label": "1 080 px",
+          "values": ["381,00 mm", "285,75 mm", "182,88 mm", "91,44 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "1 169 px",
+          "values": ["412,40 mm", "309,30 mm", "197,95 mm", "98,98 mm"]
+        },
+        {
+          "label": "1 240 px",
+          "values": ["437,44 mm", "328,08 mm", "209,97 mm", "104,99 mm"]
+        },
+        {
+          "label": "1 920 px",
+          "values": ["677,33 mm", "508,00 mm", "325,12 mm", "162,56 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "2 480 px",
+          "values": ["874,89 mm", "656,17 mm", "419,95 mm", "209,97 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "3 508 px",
+          "values": ["1 237,54 mm", "928,16 mm", "594,02 mm", "297,01 mm"],
+          "emphasis": true
+        }
+      ],
+      "caption": "Dvojice 1 920 a 1 080 pixelů je celá obrazovka Full HD – v měřítku 1:1 a při 96 DPI měří fyzicky 508 × 285,75 mm, tedy zhruba půl metru na šířku. Pokud převádíš častěji tímto směrem, máme samostatnou kalkulačku px na mm s ještě širším rozsahem hodnot."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Nejoblíbenější tiskové formáty a jejich rozměry v pixelech",
+      "description": "Pokud místo jednoho milimetru potřebuješ rozměry hotového formátu (například vizitky, letáku DL nebo listu A4), tabulka níže uvádí hodnoty při dvou nejčastěji používaných rozlišeních. Rozměry uvádíme vždy jako šířka × výška.",
+      "labelHeader": "Formát",
+      "cols": ["Š × V (mm)", "Š × V (150 DPI)", "Š × V (300 DPI)"],
+      "rows": [
+        {
+          "groupLabel": "Vizitky a doklady"
+        },
+        {
+          "label": "Polská vizitka",
+          "values": ["90 × 50 mm", "531 × 295 px", "1 063 × 591 px"],
+          "emphasis": true
+        },
+        {
+          "label": "Evropská vizitka",
+          "values": ["85 × 55 mm", "502 × 325 px", "1 004 × 650 px"]
+        },
+        {
+          "label": "Platební / SIM karta (ISO ID-1)",
+          "values": ["85,60 × 53,98 mm", "506 × 319 px", "1 011 × 638 px"]
+        },
+        {
+          "groupLabel": "Letáky a tisk"
+        },
+        {
+          "label": "Leták DL",
+          "values": ["99 × 210 mm", "585 × 1 240 px", "1 169 × 2 480 px"],
+          "emphasis": true
+        },
+        {
+          "label": "Pohlednice / A6",
+          "values": ["105 × 148 mm", "620 × 874 px", "1 240 × 1 748 px"]
+        },
+        {
+          "groupLabel": "Papír řady A"
+        },
+        {
+          "label": "A5",
+          "values": ["148 × 210 mm", "874 × 1 240 px", "1 748 × 2 480 px"]
+        },
+        {
+          "label": "A4",
+          "values": ["210 × 297 mm", "1 240 × 1 754 px", "2 480 × 3 508 px"],
+          "emphasis": true
+        },
+        {
+          "label": "A3",
+          "values": ["297 × 420 mm", "1 754 × 2 480 px", "3 508 × 4 961 px"]
+        },
+        {
+          "label": "A2",
+          "values": ["420 × 594 mm", "2 480 × 3 508 px", "4 961 × 7 016 px"]
+        },
+        {
+          "label": "A1",
+          "values": ["594 × 841 mm", "3 508 × 4 967 px", "7 016 × 9 933 px"]
+        },
+        {
+          "label": "A0",
+          "values": ["841 × 1 189 mm", "4 967 × 7 022 px", "9 933 × 14 043 px"]
+        },
+        {
+          "groupLabel": "Doklady a velký formát"
+        },
+        {
+          "label": "Pasová / občanská fotografie (EU)",
+          "values": ["35 × 45 mm", "207 × 266 px", "413 × 531 px"],
+          "emphasis": true
+        },
+        {
+          "label": "Plakát B1",
+          "values": ["707 × 1 000 mm", "4 175 × 5 906 px", "8 350 × 11 811 px"]
+        },
+        {
+          "label": "Roll-up banner",
+          "values": [
+            "850 × 2 000 mm",
+            "5 020 × 11 811 px",
+            "10 039 × 23 622 px"
+          ]
+        }
+      ],
+      "caption": "Platební karta ve standardu ISO ID-1 má oficiální rozměr 85,60 × 53,98 mm – přesnější hodnotu než běžné zaokrouhlení 85 × 55 mm používané u evropských vizitek."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak převést milimetry na pixely v oblíbených programech?",
+      "inlineIcon": true,
+      "grid": "one",
+      "items": [
+        {
+          "title": "Illustrator",
+          "icon": "RiPencilLine",
+          "description": "Adobe Illustrator pracuje ve výchozí jednotce, kterou jsi nastavil při vytváření dokumentu. Změníš ji v <strong>Úpravy &rsaquo; Předvolby &rsaquo; Jednotky</strong>, kde vybereš Milimetry pro tiskové materiály. Výsledek v pixelech závisí na rozlišení kreslicí plochy nastaveném na začátku projektu – pokud soubor míří do tiskárny, nastav 300 DPI. Pracuješ-li na letáku v mm, ale potřebuješ rozměry v pixelech pro náhled na obrazovce, nejjednodušší je zkopírovat rozměr z našeho převodníku a zadat ho v panelu Transformovat."
+        },
+        {
+          "title": "InDesign",
+          "icon": "RiLayoutLine",
+          "description": "Adobe InDesign je standardní nástroj pro sazbu vícestránkových publikací a ve výchozím nastavení pracuje v milimetrech. Jednotku změníš v <strong>Úpravy &rsaquo; Předvolby &rsaquo; Jednotky a přírůstky</strong>. Při exportu do PDF pro tisk program automaticky převede rozměry stránky na pixely podle nastaveného rozlišení, ve výchozím nastavení 300 DPI pro ofsetový tisk. Nezapomeň přidat spadávku (obvykle 3 mm), kterou nastavíš přímo v okně exportu."
+        },
+        {
+          "title": "CorelDRAW",
+          "icon": "RiPaintBrushLine",
+          "description": "CorelDRAW je standardem v mnoha tiskárnách a reklamních agenturách. Jednotku dokumentu změníš na panelu vlastností v horní části obrazovky výběrem milimetrů z rozbalovacího seznamu vedle ikony pravítka. Rozlišení exportu nastavíš v okně <strong>Exportovat</strong> (Ctrl+E) při ukládání do JPG, PNG nebo TIFF – stejné okno ukáže, kolik pixelů bude mít výsledný soubor při zvoleném DPI."
+        },
+        {
+          "title": "Photoshop",
+          "icon": "RiImageEditLine",
+          "description": "V Adobe Photoshopu nastavíš rozměry plátna v okně <strong>Obrázek &rsaquo; Velikost obrázku</strong> (Image &rsaquo; Image Size). Z rozbalovacího seznamu jednotek vyber Milimetry, zadej fyzický rozměr a cílové DPI do pole Rozlišení – Photoshop hodnotu automaticky přepočítá na pixely. Zaškrtnutí Převzorkovat zruš, pokud chceš změnit jen zobrazení rozměrů, aniž by se změnil skutečný počet pixelů."
+        },
+        {
+          "title": "Figma",
+          "icon": "RiLayoutGridLine",
+          "description": "Figma pracuje výhradně v pixelech s pevně daným rozlišením 96 DPI, takže není možnost přepnout jednotku na milimetry. Chceš-li navrhnout něco určeného k tisku, nejprve přepočti fyzický rozměr na pixely v našem převodníku při cílovém DPI (obvykle 300) a teprve poté zadej tuto hodnotu při vytváření nového rámu."
+        },
+        {
+          "title": "Canva",
+          "icon": "RiPaletteLine",
+          "description": "V Canvě po kliknutí na <strong>Vytvořit design &rsaquo; Vlastní velikost</strong> můžeš vybrat jednotku mm a zadat přímo fyzický rozměr – Canva ho při exportu automaticky převede na pixely. Pokud soubor míří do tiskárny, zapni v možnostech stahování formát PDF pro tisk spolu se spadávkou a ořezovými značkami. Canva tyto soubory ve výchozím nastavení exportuje s 300 DPI."
+        },
+        {
+          "title": "CSS, SVG a webový kód",
+          "icon": "RiHtml5Line",
+          "description": "V CSS stylech se jednotka <code>mm</code> převádí pevným vzorcem <code>1mm = 96px ÷ 25,4 ≈ 3,78px</code> a nemění se podle zařízení. Totéž platí pro soubory SVG, kde lze rozměry zadat přímo v milimetrech v atributu <code>width</code>/<code>height</code> – prohlížeč je převede na pixely podle stejné konstanty. V praxi se pro webová rozhraní používají jednotky <code>px</code>, <code>rem</code> nebo <code>em</code>, zatímco <code>mm</code> je vyhrazena pro tiskové styly (<code>@media print</code>) nebo vektorové soubory určené k další úpravě v grafických programech."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se tento převodník hodí?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Příprava souborů pro tiskárnu",
+          "description": "Ověříš, že leták DL (99 × 210 mm) pro digitální tisk při 300 DPI má přesně 1 169 × 2 480 px a vizitka 90 × 50 mm má 1 063 × 591 px. Převodník pomáhá předejít tomu, aby tiskárna soubor odmítla kvůli nedostatečnému rozlišení."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Výpočet spadávky",
+          "description": "Tiskárny obvykle vyžadují 3 mm spadávky z každé strany. Při 300 DPI je to dalších 35 px na stranu – zadej do převodníku součet rozměru a zdvojnásobené spadávky, abys hned znal cílový počet pixelů."
+        },
+        {
+          "icon": "RiArchiveLine",
+          "title": "Návrh obalů a etiket",
+          "description": "Etiketa na sklenici o šířce 120 mm odpovídá při 300 DPI 1 417 px. Převodník pomáhá rychle zkontrolovat rozměry etiket, samolepek a obalů před odesláním souborů do ofsetové nebo digitální tiskárny."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Fotografie na doklady",
+          "description": "Fotografie na pas nebo občanský průkaz EU měří 35 × 45 mm, což při 300 DPI dává přesně 413 × 531 px. Stejným způsobem ověříš rozměry v pixelech pro biometrické fotografie vyžadované u jiných úředních úkonů."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Porovnání jednotek milimetr a pixel",
+      "labelHeader": "Vlastnost",
+      "cols": ["Milimetr (mm)", "Pixel (px)"],
+      "rows": [
+        {
+          "label": "Typ jednotky",
+          "values": ["Fyzická, hmatatelná", "Digitální, na obrazovce"]
+        },
+        {
+          "label": "Závislost na zařízení",
+          "values": ["Vždy stejná", "Závisí na DPI nebo PPI"]
+        },
+        {
+          "label": "Tisk 300 DPI",
+          "values": ["1 mm = 11,81 px", "1 px = 0,085 mm"]
+        },
+        {
+          "label": "Obrazovka 96 DPI",
+          "values": ["1 mm = 3,78 px", "1 px = 0,265 mm"]
+        },
+        {
+          "label": "Standard odvětví",
+          "values": ["Tisk, obaly, CAD", "Obrazovky, web design, UI"]
         }
       ]
     },
@@ -212,16 +580,72 @@
     },
     {
       "type": "faq",
-      "title": "Často kladené otázky",
+      "title": "Často kladené otázky o převodu mm na px",
       "openByDefault": 1,
       "items": [
         {
-          "question": "Kolik px je 1 mm při 300 DPI?",
-          "answer": "1 mm při 300 DPI = 11,811 px."
+          "question": "Je 1 pixel totéž co 1 milimetr?",
+          "answer": "Ne, jde o častý omyl. Pixel a milimetr jsou dvě odlišné jednotky – jedna digitální, druhá fyzická – a jejich vztah se mění s rozlišením DPI. Při standardním rozlišení obrazovky 96 DPI odpovídá jeden milimetr asi 3,78 pixelu, zatímco při tisku s 300 DPI už je to skoro 11,81 pixelu. Neexistuje jediná pevná hodnota „1 mm = 1 px“, kterou by šlo použít univerzálně."
         },
         {
-          "question": "Probíhají výpočty lokálně?",
-          "answer": "Ano. Veškeré výpočty probíhají ve vašem prohlížeči."
+          "question": "Kolik pixelů má 1 milimetr?",
+          "answer": "Závisí to zcela na nastaveném rozlišení. Při standardním rozlišení obrazovky 96 DPI odpovídá jeden milimetr asi 3,78 pixelu, při 300 DPI používaném v tisku už 11,81 pixelu. Pro převod libovolného počtu milimetrů na pixely ho vynásob DPI a vyděl 25,4."
+        },
+        {
+          "question": "Jaký je vzorec pro převod mm na px?",
+          "answer": "Vzorec vychází z pevného vztahu: jeden palec se rovná přesně 25,4 mm. Úplný vzorec je počet pixelů = počet milimetrů × DPI ÷ 25,4. Funguje i obráceně: počet milimetrů = počet pixelů × 25,4 ÷ DPI. Stačí znát dvě hodnoty – rozměr a cílové rozlišení – a třetí spočítáš okamžitě."
+        },
+        {
+          "question": "Jak převedu milimetry na pixely?",
+          "answer": "Nejjednodušší je zadat rozměr v milimetrech do pole převodníku a vybrat požadované DPI – výsledek se zobrazí okamžitě. Pokud raději počítáš ručně, použij vzorec: počet pixelů = počet milimetrů × DPI ÷ 25,4. Pro 20 mm při 96 DPI dostaneš 20 × 96 ÷ 25,4, tedy asi 76 pixelů."
+        },
+        {
+          "question": "Kolik pixelů má 20 mm?",
+          "answer": "Dvacet milimetrů na obrazovce s 96 DPI je asi 76 pixelů. Při tisku s 300 DPI stejná hodnota stoupne na 236 pixelů a při 600 DPI používaném pro kvalitní fototisk dosáhne 472 pixelů."
+        },
+        {
+          "question": "Kolik pixelů má 100 milimetrů?",
+          "answer": "Sto milimetrů (10 cm) při 96 DPI je asi 378 pixelů. Při tisku s 300 DPI je stejných 100 mm přesně 1 181 pixelů – hodnota, kterou se vyplatí zapamatovat, protože je to kratší strana klasické fotografie 10×15 cm."
+        },
+        {
+          "question": "Co je px v milimetrech a co měří?",
+          "answer": "Pixel (px) je digitální jednotka, ne fyzická míra délky – nemá pevný ekvivalent v milimetrech, dokud nestanovíš rozlišení DPI nebo PPI. V praxi je 1 pixel při 96 DPI (standard obrazovky) asi 0,265 mm a při 300 DPI (standard tisku) jen 0,085 mm."
+        },
+        {
+          "question": "Kolik milimetrů je 40 pixelů?",
+          "answer": "Čtyřicet pixelů na obrazovce s 96 DPI je asi 10,58 mm, tedy o něco více než 1 cm. Při tisku s 300 DPI zabírá stejný počet pixelů jen 3,39 mm. Čím vyšší DPI, tím méně fyzického místa daný počet pixelů zabírá."
+        },
+        {
+          "question": "Můžu pixely převést zpět na milimetry?",
+          "answer": "Ano, náš převodník funguje oběma směry. Zadej počet pixelů do pravého pole nebo použij tlačítko Změnit pořadí k otočení směru převodu – výsledek v milimetrech se zobrazí okamžitě. Vzorec tímto směrem je počet milimetrů = počet pixelů × 25,4 ÷ DPI."
+        },
+        {
+          "question": "Jaké rozměry v pixelech má vizitka?",
+          "answer": "Polská vizitka 90 × 50 mm odpovídá při 300 DPI 1 063 × 591 px. Evropská vizitka 85 × 55 mm odpovídá při stejném rozlišení 1 004 × 650 px. Po přidání standardní spadávky 3 mm z každé strany rozměry vzrostou na 96 × 56 mm, tedy asi 1 134 × 661 px."
+        },
+        {
+          "question": "Co je spadávka a kolik pixelů přidat?",
+          "answer": "Spadávka je dodatečný okraj, obvykle 3–5 mm, kolem návrhu, který se po tisku ořízne. Zabraňuje bílým okrajům při nepřesném seřízení řezacího stroje. Při 300 DPI je standardní spadávka 3 mm navíc 35 pixelů na stranu – o tolik by měl být tvůj soubor větší než finální formát."
+        },
+        {
+          "question": "Kolik pixelů má list A4 v milimetrech?",
+          "answer": "List A4 má rozměry 210 × 297 mm, což při 300 DPI dává přesně 2 480 × 3 508 pixelů. Při 150 DPI jsou stejné rozměry 1 240 × 1 754 pixelů a při obrazovkovém rozlišení 96 DPI jen 794 × 1 123 pixelů."
+        },
+        {
+          "question": "Jaké DPI nastavit pro tisk letáků a vizitek?",
+          "answer": "300 DPI je standard jak pro ofsetový, tak pro digitální tisk – tuto hodnotu vyžaduje většina online tiskáren. Pro velké formáty, jako jsou plakáty A1 nebo A0, často stačí 150 DPI, protože se sledují z větší vzdálenosti. Velkoformátové bannery a billboardy se někdy tisknou i jen při 30–72 DPI."
+        },
+        {
+          "question": "Jak nastavím mm na px v Illustratoru nebo InDesignu?",
+          "answer": "V Adobe Illustratoru přejdi do Úpravy › Předvolby › Jednotky a vyber Milimetry – jednotka se okamžitě změní ve všech panelech a pravítkách. InDesign funguje podobně a ve výchozím nastavení pracuje v milimetrech. V obou programech závisí výsledek v pixelech na rozlišení nastaveném při exportu souboru, obvykle 300 DPI pro tisk. Podrobné návody pro Illustrator, InDesign, CorelDRAW, Photoshop, Figmu a Canvu najdeš v sekci výše."
+        },
+        {
+          "question": "Jaký je rozdíl mezi DPI a PPI?",
+          "answer": "DPI (dots per inch) je počet bodů barvy na palec materiálu a jde o vlastnost tiskárny. PPI (pixels per inch) je počet pixelů na palec obrazovky a popisuje monitor nebo displej. V běžné praxi grafici oba pojmy často zaměňují, technicky se ale DPI týká tisku a PPI obrazovek."
+        },
+        {
+          "question": "Jaká je přesná velikost platební karty v pixelech?",
+          "answer": "Standard ISO ID-1, který platí pro platební karty, SIM karty a občanské průkazy, má přesně 85,60 × 53,98 mm. Při 300 DPI to dává 1 011 × 638 pixelů – přesnější hodnotu než běžné zaokrouhlení 85 × 55 mm, které se někdy používá u evropských vizitek."
         }
       ]
     },
@@ -231,11 +655,11 @@
     },
     {
       "type": "contactForm",
-      "title": "Pomozte nám vylepšit naše nástroje",
-      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "mm na px – Arteon",
-      "defaultSubject": "Feedback: mm-to-px-dpi"
+      "title": "Pomoz nám tento převodník vylepšit",
+      "description": "Chybí ti v tabulkách nějaká hodnota, našel jsi chybu ve výpočtu nebo chceš navrhnout novou funkci? Napiš nám – každou zprávu čteme osobně a odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník mm na px – Arteon",
+      "defaultSubject": "Zpětná vazba: převodník mm na px"
     },
     {
       "type": "gap",
@@ -243,7 +667,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Další bezplatné nástroje"
+      "title": "Další nástroje, které se ti mohou hodit"
     },
     {
       "type": "gap",

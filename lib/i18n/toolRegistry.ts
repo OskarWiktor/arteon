@@ -298,7 +298,7 @@ const NAV_IMAGE_CONVERTER_KEYS: ToolItemKey[] = [
   'base64ToImage',
 ];
 
-/** All 17 unit converters for desktop nav */
+/** All 15 unit converters for desktop nav */
 const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'ptToPx',
   'remToPx',
@@ -306,8 +306,8 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'cmToPxDpi',
   'pxToCmDpi',
   'mmToPxDpi',
+  'pxToMmDpi',
   'inchesToPxDpi',
-  'dpiToPpi',
   'hexToRgb',
   'rgbToCmyk',
   'bytesConverter',

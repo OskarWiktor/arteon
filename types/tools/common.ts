@@ -89,8 +89,8 @@ export type ToolItemKey =
   | 'cmToPxDpi'
   | 'pxToCmDpi'
   | 'mmToPxDpi'
+  | 'pxToMmDpi'
   | 'inchesToPxDpi'
-  | 'dpiToPpi'
   | 'hexToRgb'
   | 'rgbToCmyk'
   // Unit converters - programming/technical

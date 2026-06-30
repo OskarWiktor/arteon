@@ -2,14 +2,14 @@
   "toolKey": "mmToPxDpi",
   "locale": "en",
   "metadata": {
-    "title": "MM to pixels (DPI) converter — millimeters to px for print",
-    "description": "Convert millimeters to pixels at any DPI. A4 = 2480×3508px, business card 85mm = 1004px at 300 DPI — free, works in browser.",
+    "title": "mm to px (DPI) converter – convert millimeters to pixels",
+    "description": "Convert millimeters to pixels at any DPI. Essential for print design, packaging, and preparing files in Illustrator, InDesign, and CorelDRAW.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/mm-to-px-converter"
   },
   "hero": {
-    "title": "Convert mm to px – A4, business cards, print dimensions",
-    "description": "1mm at 300 DPI = 11.81px. Enter any millimeter dimension and target DPI to get print-ready pixel counts for your document or design.",
+    "title": "Convert millimeters to pixels at any DPI",
+    "description": "Enter a value in millimeters, set the DPI resolution, and read the result in pixels. Check how many pixels a given value in millimeters corresponds to, e.g. the dimensions of a business card, flyer, poster, or A4 sheet. The converter helps you pick the right file resolution before sending it to a print shop.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -24,43 +24,56 @@
   },
   "schemas": {
     "software": {
-      "name": "MM to pixels (DPI) converter",
+      "name": "Millimeter to pixel converter with adjustable DPI – mm to px",
       "alternateName": [
-        "MM to pixel calculator",
-        "Millimeter to pixel converter",
-        "Print resolution calculator"
+        "mm to px converter",
+        "Millimeter to pixel calculator",
+        "mm to pixel converter",
+        "Millimeters to pixels",
+        "Convert mm to px",
+        "mm to pixels converter",
+        "Millimeter to pixels calculator",
+        "mm to px DPI calculator",
+        "px from mm",
+        "mm to px 300 dpi",
+        "Print resolution calculator",
+        "Pixels from millimeters",
+        "DPI print calculator",
+        "mm to pixel calculator",
+        "Convert millimeters to pixels"
       ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Convert millimeters to pixels at any DPI resolution. Essential for print design, packaging, and precise graphic work.",
+      "description": "Convert millimeters to pixels with an adjustable DPI value. As soon as you enter a dimension, you instantly see how many pixels it corresponds to, including standard business card, flyer, and A-series paper sizes. The converter is built for preparing print-ready files and packaging design, and runs entirely in the browser with no sign-up.",
       "featureList": [
-        "Real-time bidirectional mm ↔ px conversion",
-        "Configurable DPI input (72, 96, 150, 300, 600)",
-        "A4 / US Letter / business card size reference",
-        "Bleed area calculation (adds 3mm per edge)",
-        "Receipt paper width reference (80mm thermal)",
-        "Label and sticker dimensions in mm and px",
-        "Copy result to clipboard in one click",
-        "Works entirely in browser — no server calls",
-        "InDesign document setup use cases"
+        "Adjustable DPI resolution",
+        "Conversion works both ways, so you can convert millimeters to pixels and pixels to millimeters",
+        "The result appears instantly as you type, no button to click",
+        "Copy the result to your clipboard in one click",
+        "An extensive reference table for values from 1 to 1,000 millimeters at five DPI resolutions",
+        "A separate format table covers business cards, DL flyers, A0–A7 paper, and large-format posters",
+        "A how-to section explains setting mm to px in Illustrator, InDesign, CorelDRAW, Photoshop, Figma, and Canva",
+        "A short technical note on the mm unit in CSS, SVG, and web code",
+        "All calculations run locally in your browser; your data never leaves your device and is never stored",
+        "The exact conversion formula is px = mm × DPI ÷ 25.4, based on the fixed length of an inch (25.4 mm)"
       ]
     },
     "howTo": {
-      "name": "How to use the mm to px converter",
-      "description": "Instructions: mm to pixels at DPI.",
+      "name": "How to convert millimeters to pixels",
+      "description": "Quick instructions for using the mm to px converter with adjustable DPI.",
       "totalTime": "PT1M",
       "steps": [
         {
-          "name": "Enter dimensions",
-          "text": "Type a value in millimeters."
+          "name": "Enter a value in millimeters",
+          "text": "Type the number of millimeters you want to convert to pixels in the left field."
         },
         {
-          "name": "Set DPI",
-          "text": "Choose your target DPI resolution."
+          "name": "Set the DPI resolution",
+          "text": "Choose a DPI value. Screens typically use 96 DPI, while print uses 300 DPI."
         },
         {
-          "name": "Read pixels",
-          "text": "The pixel count appears instantly."
+          "name": "Read the result or reverse the direction",
+          "text": "The result in pixels appears instantly in the field next to it. You can copy it or use the Reverse button to convert pixels to millimeters instead."
         }
       ]
     }
@@ -72,34 +85,429 @@
     },
     {
       "type": "sectionBasic",
-      "title": "When do you need to convert mm to pixels?",
-      "html": "<p class=\"text-mid mb-4\">In precision design work, dimensions are often specified in millimeters. To prepare digital images, you need to convert mm to pixels at the target DPI: pixels = mm × DPI / 25.4.</p><p class=\"text-mid mb-4\">This conversion is essential for packaging design, label printing, product photography, and any work requiring precise mm-to-pixel mapping.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 mm = 11.81 pixels, 85 mm (business card width) = 1,004 pixels.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "title": "Why convert millimeters to pixels?",
+      "html": "<p class=\"text-mid mb-4\">The millimeter is the most precise physical unit used in print, packaging design, and engineering — print shops specify business card, flyer, and bleed dimensions in millimeters. The pixel, on the other hand, describes a single point on a screen or in an image file. To convert one to the other, you need to know the DPI resolution: the number of pixels packed into one inch of material.</p><p class=\"text-mid mb-4\">This conversion is used most often by designers preparing files for a print shop, packaging designers checking label dimensions, and anyone working in Illustrator, InDesign, or CorelDRAW, who works in millimeters but has to deliver a file with an exact pixel count. The converter saves you from doing the math by hand and remembering the formula.</p><p class=\"text-mid\">Further down this page you will find an extensive reference table for popular millimeter values, a reverse table from pixels to millimeters, ready-made dimensions for business cards, flyers, and A0–A7 paper sizes, and short guides on switching millimeters to pixels in Illustrator, InDesign, CorelDRAW, Photoshop, Figma, and Canva.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "MM to pixels (DPI) converter – Arteon"
+      "imageAlt": "Free millimeter to pixel converter – Arteon"
     },
     {
       "type": "gap",
       "size": "xs"
     },
     {
+      "type": "sectionInfo",
+      "title": "How does mm to px conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">The whole conversion comes down to one formula, based on the fixed relationship between an inch and a millimeter: one inch is exactly 25.4 mm. So you just multiply the number of millimeters by your chosen DPI resolution and divide by 25.4.</p><p class=\"text-mid mb-4\">The full formula is: <strong>pixels = millimeters × DPI ÷ 25.4</strong>. The converter performs this calculation instantly, so you never have to do the math or hunt for a calculator.</p><p class=\"text-mid mb-4\">Example: say you want to know how many pixels a 90 mm wide business card has at a print resolution of 300 DPI. Plugging the values into the formula gives 90 × 300 ÷ 25.4, which is exactly 1,063 pixels. The same card displayed on a 96 DPI screen would only take up 340 pixels, because fewer points fit per inch.</p><p class=\"text-mid\">The reverse direction works the same way: millimeters = pixels × 25.4 ÷ DPI. That lets you check exactly how large a file with a width of, say, 1,181 pixels would be physically, or whether an image from the web is large enough for a specific print size.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "How many pixels do different millimeter values produce at different DPI?",
+      "description": "The table below shows how the same dimensions in millimeters translate to pixels at the five most commonly used resolutions. A few values are worth remembering, since they match real formats exactly: 35 mm at 300 DPI is the short edge of a passport photo, 90 mm is the width of a standard business card, and 210 mm is the width of an A4 sheet.",
+      "labelHeader": "Millimeters",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
+      "rows": [
+        {
+          "label": "1 mm",
+          "values": ["3 px", "4 px", "6 px", "12 px", "24 px"]
+        },
+        {
+          "label": "5 mm",
+          "values": ["14 px", "19 px", "30 px", "59 px", "118 px"]
+        },
+        {
+          "label": "10 mm",
+          "values": ["28 px", "38 px", "59 px", "118 px", "236 px"],
+          "emphasis": true
+        },
+        {
+          "label": "15 mm",
+          "values": ["43 px", "57 px", "89 px", "177 px", "354 px"]
+        },
+        {
+          "label": "20 mm",
+          "values": ["57 px", "76 px", "118 px", "236 px", "472 px"]
+        },
+        {
+          "label": "25 mm",
+          "values": ["71 px", "94 px", "148 px", "295 px", "591 px"]
+        },
+        {
+          "label": "30 mm",
+          "values": ["85 px", "113 px", "177 px", "354 px", "709 px"]
+        },
+        {
+          "label": "35 mm",
+          "values": ["99 px", "132 px", "207 px", "413 px", "827 px"],
+          "emphasis": true
+        },
+        {
+          "label": "40 mm",
+          "values": ["113 px", "151 px", "236 px", "472 px", "945 px"]
+        },
+        {
+          "label": "45 mm",
+          "values": ["128 px", "170 px", "266 px", "531 px", "1,063 px"],
+          "emphasis": true
+        },
+        {
+          "label": "50 mm",
+          "values": ["142 px", "189 px", "295 px", "591 px", "1,181 px"],
+          "emphasis": true
+        },
+        {
+          "label": "51 mm",
+          "values": ["145 px", "193 px", "301 px", "602 px", "1,205 px"]
+        },
+        {
+          "label": "54 mm",
+          "values": ["153 px", "204 px", "319 px", "638 px", "1,276 px"]
+        },
+        {
+          "label": "55 mm",
+          "values": ["156 px", "208 px", "325 px", "650 px", "1,299 px"],
+          "emphasis": true
+        },
+        {
+          "label": "60 mm",
+          "values": ["170 px", "227 px", "354 px", "709 px", "1,417 px"]
+        },
+        {
+          "label": "70 mm",
+          "values": ["198 px", "265 px", "413 px", "827 px", "1,654 px"]
+        },
+        {
+          "label": "85 mm",
+          "values": ["241 px", "321 px", "502 px", "1,004 px", "2,008 px"],
+          "emphasis": true
+        },
+        {
+          "label": "90 mm",
+          "values": ["255 px", "340 px", "531 px", "1,063 px", "2,126 px"],
+          "emphasis": true
+        },
+        {
+          "label": "99 mm",
+          "values": ["281 px", "374 px", "585 px", "1,169 px", "2,339 px"],
+          "emphasis": true
+        },
+        {
+          "label": "100 mm",
+          "values": ["283 px", "378 px", "591 px", "1,181 px", "2,362 px"]
+        },
+        {
+          "label": "105 mm",
+          "values": ["298 px", "397 px", "620 px", "1,240 px", "2,480 px"]
+        },
+        {
+          "label": "148 mm",
+          "values": ["420 px", "559 px", "874 px", "1,748 px", "3,496 px"],
+          "emphasis": true
+        },
+        {
+          "label": "150 mm",
+          "values": ["425 px", "567 px", "886 px", "1,772 px", "3,543 px"]
+        },
+        {
+          "label": "200 mm",
+          "values": ["567 px", "756 px", "1,181 px", "2,362 px", "4,724 px"]
+        },
+        {
+          "label": "210 mm",
+          "values": ["595 px", "794 px", "1,240 px", "2,480 px", "4,961 px"],
+          "emphasis": true
+        },
+        {
+          "label": "250 mm",
+          "values": ["709 px", "945 px", "1,476 px", "2,953 px", "5,906 px"]
+        },
+        {
+          "label": "297 mm",
+          "values": ["842 px", "1,123 px", "1,754 px", "3,508 px", "7,016 px"],
+          "emphasis": true
+        },
+        {
+          "label": "300 mm",
+          "values": ["850 px", "1,134 px", "1,772 px", "3,543 px", "7,087 px"]
+        },
+        {
+          "label": "420 mm",
+          "values": [
+            "1,191 px",
+            "1,587 px",
+            "2,480 px",
+            "4,961 px",
+            "9,921 px"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "500 mm",
+          "values": [
+            "1,417 px",
+            "1,890 px",
+            "2,953 px",
+            "5,906 px",
+            "11,811 px"
+          ]
+        },
+        {
+          "label": "594 mm",
+          "values": [
+            "1,684 px",
+            "2,245 px",
+            "3,508 px",
+            "7,016 px",
+            "14,031 px"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "700 mm",
+          "values": [
+            "1,984 px",
+            "2,646 px",
+            "4,134 px",
+            "8,268 px",
+            "16,535 px"
+          ]
+        },
+        {
+          "label": "841 mm",
+          "values": [
+            "2,384 px",
+            "3,179 px",
+            "4,967 px",
+            "9,933 px",
+            "19,866 px"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "1,000 mm",
+          "values": [
+            "2,835 px",
+            "3,780 px",
+            "5,906 px",
+            "11,811 px",
+            "23,622 px"
+          ]
+        }
+      ],
+      "caption": "All values are rounded to the nearest whole number, following the formula px = mm × DPI ÷ 25.4."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "How many millimeters do different pixel values produce at different DPI?",
+      "description": "Sometimes you start from a pixel count, for example a known screen resolution, and need to check how many millimeters that is. The table below shows that conversion for the four most commonly used resolutions, including the full Full HD screen.",
+      "labelHeader": "Pixels",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
+      "rows": [
+        {
+          "label": "50 px",
+          "values": ["17.64 mm", "13.23 mm", "8.47 mm", "4.23 mm"]
+        },
+        {
+          "label": "100 px",
+          "values": ["35.28 mm", "26.46 mm", "16.93 mm", "8.47 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "200 px",
+          "values": ["70.56 mm", "52.92 mm", "33.87 mm", "16.93 mm"]
+        },
+        {
+          "label": "300 px",
+          "values": ["105.83 mm", "79.38 mm", "50.80 mm", "25.40 mm"]
+        },
+        {
+          "label": "500 px",
+          "values": ["176.39 mm", "132.29 mm", "84.67 mm", "42.33 mm"]
+        },
+        {
+          "label": "600 px",
+          "values": ["211.67 mm", "158.75 mm", "101.60 mm", "50.80 mm"]
+        },
+        {
+          "label": "800 px",
+          "values": ["282.22 mm", "211.67 mm", "135.47 mm", "67.73 mm"]
+        },
+        {
+          "label": "1,000 px",
+          "values": ["352.78 mm", "264.58 mm", "169.33 mm", "84.67 mm"]
+        },
+        {
+          "label": "1,080 px",
+          "values": ["381.00 mm", "285.75 mm", "182.88 mm", "91.44 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "1,169 px",
+          "values": ["412.40 mm", "309.30 mm", "197.95 mm", "98.98 mm"]
+        },
+        {
+          "label": "1,240 px",
+          "values": ["437.44 mm", "328.08 mm", "209.97 mm", "104.99 mm"]
+        },
+        {
+          "label": "1,920 px",
+          "values": ["677.33 mm", "508.00 mm", "325.12 mm", "162.56 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "2,480 px",
+          "values": ["874.89 mm", "656.17 mm", "419.95 mm", "209.97 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "3,508 px",
+          "values": ["1,237.54 mm", "928.16 mm", "594.02 mm", "297.01 mm"],
+          "emphasis": true
+        }
+      ],
+      "caption": "The pair 1,920 and 1,080 pixels is a full Full HD screen — at a 1:1 scale and 96 DPI it physically measures 508 × 285.75 mm, or roughly half a meter wide. If you convert this direction more often, we have a dedicated px to mm calculator with an even wider range of values."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "The most popular print formats and their pixel dimensions",
+      "description": "If instead of a single millimeter value you need the dimensions of a finished format (for example a business card, a DL flyer, or an A4 sheet), the table below lists the values at the two most commonly used resolutions. Dimensions are always given as width × height.",
+      "labelHeader": "Format",
+      "cols": ["W × H (mm)", "W × H (150 DPI)", "W × H (300 DPI)"],
+      "rows": [
+        {
+          "groupLabel": "Business cards & ID"
+        },
+        {
+          "label": "Polish business card",
+          "values": ["90 × 50 mm", "531 × 295 px", "1,063 × 591 px"],
+          "emphasis": true
+        },
+        {
+          "label": "European business card",
+          "values": ["85 × 55 mm", "502 × 325 px", "1,004 × 650 px"]
+        },
+        {
+          "label": "Payment / SIM card (ISO ID-1)",
+          "values": ["85.60 × 53.98 mm", "506 × 319 px", "1,011 × 638 px"]
+        },
+        {
+          "groupLabel": "Flyers & print"
+        },
+        {
+          "label": "DL flyer",
+          "values": ["99 × 210 mm", "585 × 1,240 px", "1,169 × 2,480 px"],
+          "emphasis": true
+        },
+        {
+          "label": "Postcard / A6",
+          "values": ["105 × 148 mm", "620 × 874 px", "1,240 × 1,748 px"]
+        },
+        {
+          "groupLabel": "ISO A-series paper"
+        },
+        {
+          "label": "A5",
+          "values": ["148 × 210 mm", "874 × 1,240 px", "1,748 × 2,480 px"]
+        },
+        {
+          "label": "A4",
+          "values": ["210 × 297 mm", "1,240 × 1,754 px", "2,480 × 3,508 px"],
+          "emphasis": true
+        },
+        {
+          "label": "A3",
+          "values": ["297 × 420 mm", "1,754 × 2,480 px", "3,508 × 4,961 px"]
+        },
+        {
+          "label": "A2",
+          "values": ["420 × 594 mm", "2,480 × 3,508 px", "4,961 × 7,016 px"]
+        },
+        {
+          "label": "A1",
+          "values": ["594 × 841 mm", "3,508 × 4,967 px", "7,016 × 9,933 px"]
+        },
+        {
+          "label": "A0",
+          "values": ["841 × 1,189 mm", "4,967 × 7,022 px", "9,933 × 14,043 px"]
+        },
+        {
+          "groupLabel": "Documents & large format"
+        },
+        {
+          "label": "EU passport / ID photo",
+          "values": ["35 × 45 mm", "207 × 266 px", "413 × 531 px"],
+          "emphasis": true
+        },
+        {
+          "label": "B1 poster",
+          "values": ["707 × 1,000 mm", "4,175 × 5,906 px", "8,350 × 11,811 px"]
+        },
+        {
+          "label": "Roll-up banner",
+          "values": [
+            "850 × 2,000 mm",
+            "5,020 × 11,811 px",
+            "10,039 × 23,622 px"
+          ]
+        }
+      ],
+      "caption": "A payment card in the ISO ID-1 standard has an official size of 85.60 × 53.98 mm — a more precise figure than the common 85 × 55 mm rounding used for European business cards."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
-      "title": "How to use the converter?",
-      "grid": "three",
+      "title": "How do you convert millimeters to pixels in popular apps?",
+      "inlineIcon": true,
+      "grid": "one",
       "items": [
         {
-          "title": "1. Enter a value",
-          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
-          "icon": "RiInputMethodLine"
+          "title": "Illustrator",
+          "icon": "RiPencilLine",
+          "description": "Adobe Illustrator works in whatever unit you set when creating the document. Change it under <strong>Edit &rsaquo; Preferences &rsaquo; Units</strong>, picking Millimeters for print materials. The pixel result depends on the artboard resolution set at the start of the project — if the file is headed to a print shop, set it to 300 DPI. If you are working on a flyer in mm but need pixel dimensions for an on-screen preview, the easiest way is to copy the dimension from our converter and type it into the Transform panel."
         },
         {
-          "title": "2. Read the result",
-          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
-          "icon": "RiLoopLeftLine"
+          "title": "InDesign",
+          "icon": "RiLayoutLine",
+          "description": "Adobe InDesign is the standard tool for laying out multi-page publications and works in millimeters by default. Change the unit under <strong>Edit &rsaquo; Preferences &rsaquo; Units & Increments</strong>. When exporting a PDF for print, the program automatically converts the page dimensions to pixels based on the set resolution — 300 DPI by default for offset printing. Remember to add bleed (usually 3 mm), which you set directly in the export dialog."
         },
         {
-          "title": "3. Copy or reverse",
-          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
-          "icon": "RiClipboardLine"
+          "title": "CorelDRAW",
+          "icon": "RiPaintBrushLine",
+          "description": "CorelDRAW is the standard tool in many print shops and ad agencies. Change the document unit on the property bar at the top of the screen by picking millimeters from the dropdown next to the ruler icon. Set the export resolution in the <strong>Export</strong> dialog (Ctrl+E) when saving to JPG, PNG, or TIFF — that same dialog shows how many pixels the resulting file will have at the chosen DPI."
+        },
+        {
+          "title": "Photoshop",
+          "icon": "RiImageEditLine",
+          "description": "In Adobe Photoshop, set the canvas dimensions in the <strong>Image &rsaquo; Image Size</strong> dialog. Choose Millimeters from the unit dropdown, enter the physical dimension, and set the target DPI in the Resolution field — Photoshop converts the value to pixels automatically. Uncheck Resample if you only want to change how the dimensions are displayed without affecting the actual pixel count."
+        },
+        {
+          "title": "Figma",
+          "icon": "RiLayoutGridLine",
+          "description": "Figma works exclusively in pixels at a fixed 96 DPI, so there is no option to switch the unit to millimeters. To design something destined for print, first convert the physical dimension to pixels in our converter at your target DPI (usually 300), and only then enter that value when creating a new frame."
+        },
+        {
+          "title": "Canva",
+          "icon": "RiPaletteLine",
+          "description": "In Canva, click <strong>Create a design &rsaquo; Custom size</strong> and pick the mm unit to enter a physical dimension — Canva converts it to pixels automatically on export. If the file is going to a print shop, enable the print PDF format plus bleed and crop marks in the download options. Canva exports print files at 300 DPI by default."
+        },
+        {
+          "title": "CSS, SVG, and web code",
+          "icon": "RiHtml5Line",
+          "description": "In CSS, the <code>mm</code> unit is converted with the fixed formula <code>1mm = 96px ÷ 25.4 ≈ 3.78px</code> and does not change based on the device. The same applies to SVG files, where dimensions can be set directly in millimeters in the <code>width</code>/<code>height</code> attribute — the browser converts them to pixels with the same constant. In practice, web interfaces use <code>px</code>, <code>rem</code>, or <code>em</code>, and <code>mm</code> is reserved for print stylesheets (<code>@media print</code>) or vector files headed for further editing in design apps."
         }
       ]
     },
@@ -114,74 +522,25 @@
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "Business cards, flyers, and DL envelopes",
-          "description": "Standard business card size is 85 × 55mm. At 300 DPI with 3mm bleed: 91 × 61mm = 1,075 × 720px canvas. A DL flyer (99 × 210mm) at 300 DPI = 1,169 × 2,480px. A DL envelope window is typically 45 × 90mm = 532 × 1,063px at 300 DPI. Getting these dimensions right prevents reprints due to incorrect canvas sizes."
-        },
-        {
-          "icon": "RiFileTextLine",
-          "title": "Receipt printers and thermal paper",
-          "description": "Thermal receipt printers use 80mm paper width as the global standard. At 203 DPI (common for Zebra and Epson receipt printers): 80mm = 638px wide. At 300 DPI: 80mm = 944px. If you are generating receipt images or PDF templates, this converter gives you the correct pixel width for any thermal printer DPI."
+          "title": "Preparing files for a print shop",
+          "description": "You can check that a DL flyer (99 × 210 mm) for digital print at 300 DPI is exactly 1,169 × 2,480 px, and that a 90 × 50 mm business card is 1,063 × 591 px. The converter helps you avoid a print shop rejecting your file for insufficient resolution."
         },
         {
           "icon": "RiCropLine",
-          "title": "Bleed and safe zone calculations",
-          "description": "Print files require a bleed area — typically 3mm on each edge — to prevent white borders after trimming. For a 210 × 148mm A5 flyer: add 3mm to each side to get 216 × 154mm. At 300 DPI: 2,551 × 1,819px. This tool lets you calculate both the trim size and the full bleed canvas size in one step."
+          "title": "Calculating bleed",
+          "description": "Most print shops require a 3 mm bleed on every edge. At 300 DPI, that is an extra 35 px per side — enter the sum of the dimension and twice the bleed into the converter to immediately get the target pixel count."
         },
         {
-          "icon": "RiRulerLine",
-          "title": "Label printing and InDesign document setup",
-          "description": "Label printing for products requires precise mm-to-px mapping. A standard shipping label (100 × 150mm) at 300 DPI = 1,181 × 1,772px. In Adobe InDesign, document pages are set in mm, but placed images must be at the correct pixel resolution. This converter bridges the gap between InDesign's mm canvas and Photoshop's pixel canvas."
+          "icon": "RiArchiveLine",
+          "title": "Packaging and label design",
+          "description": "A jar label 120 mm wide at 300 DPI is 1,417 px. The converter helps you quickly check label, sticker, and packaging dimensions before sending files to an offset or digital print shop."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "ID photos",
+          "description": "An EU passport or ID photo is 35 × 45 mm, which is exactly 413 × 531 px at 300 DPI. You can use the same approach to check pixel dimensions for biometric photos required for other official documents."
         }
       ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionSteps",
-      "title": "What makes this converter different?",
-      "grid": "two",
-      "items": [
-        {
-          "icon": "RiShieldCheckLine",
-          "title": "Complete privacy",
-          "description": "All calculations run locally in your browser. No data is sent to any server."
-        },
-        {
-          "icon": "RiTimeLine",
-          "title": "Real-time results",
-          "description": "The result updates instantly as you type – no need to click any button."
-        },
-        {
-          "icon": "RiArrowLeftRightLine",
-          "title": "Bidirectional conversion",
-          "description": "The Reverse button lets you convert in both directions with one click."
-        },
-        {
-          "icon": "RiTableLine",
-          "title": "Reference table",
-          "description": "A ready-made table with commonly converted values and contextual descriptions."
-        }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "How does mm to pixel conversion work?",
-      "html": "<p class=\"text-mid mb-4\">The formula is: pixels = mm × DPI / 25.4. Since 1 inch = 25.4 mm exactly.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 mm = 11.811 pixels. At 600 DPI: 1 mm = 23.622 pixels.</p><p class=\"text-mid\">For bleed area: add 3 mm (standard) to each edge. A 100 × 50 mm design with 3 mm bleed = 106 × 56 mm = 1,252 × 661 px at 300 DPI.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionInfo",
-      "title": "Practical tips",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Business card: 85 × 55 mm + 3 mm bleed = 91 × 61 mm = 1,075 × 720 px at 300 DPI.</li><li>Standard label: 50 × 25 mm at 300 DPI = 591 × 295 px.</li><li>Wine label: 90 × 120 mm at 300 DPI = 1,063 × 1,417 px.</li><li>Minimum text: 8pt font needs at least 150 DPI to be readable.</li></ul>"
     },
     {
       "type": "gap",
@@ -189,29 +548,29 @@
     },
     {
       "type": "sectionTable",
-      "title": "MM to pixels at various DPI",
-      "labelHeader": "Feature",
-      "cols": ["300 DPI", "600 DPI"],
+      "title": "Comparison of millimeter and pixel units",
+      "labelHeader": "Property",
+      "cols": ["Millimeter (mm)", "Pixel (px)"],
       "rows": [
         {
-          "label": "1 mm",
-          "values": ["11.81 px", "23.62 px"]
+          "label": "Unit type",
+          "values": ["Physical, tangible", "Digital, screen-based"]
         },
         {
-          "label": "10 mm",
-          "values": ["118 px", "236 px"]
+          "label": "Depends on device",
+          "values": ["Always the same", "Depends on DPI or PPI"]
         },
         {
-          "label": "85 mm (card)",
-          "values": ["1,004 px", "2,008 px"]
+          "label": "Print 300 DPI",
+          "values": ["1 mm = 11.81 px", "1 px = 0.085 mm"]
         },
         {
-          "label": "Use case",
-          "values": ["Standard print", "Fine art / medical"]
+          "label": "Screen 96 DPI",
+          "values": ["1 mm = 3.78 px", "1 px = 0.265 mm"]
         },
         {
-          "label": "File size",
-          "values": ["Standard", "4× larger"]
+          "label": "Industry standard",
+          "values": ["Print, packaging, CAD", "Screens, web design, UI"]
         }
       ]
     },
@@ -221,40 +580,72 @@
     },
     {
       "type": "faq",
-      "title": "Frequently asked questions",
+      "title": "Frequently asked questions about mm to px conversion",
       "openByDefault": 1,
       "items": [
         {
-          "question": "How many pixels is 1 mm at 300 DPI?",
-          "answer": "1mm at 300 DPI = 11.811 pixels. Formula: pixels = mm × DPI / 25.4. At 150 DPI: 1mm = 5.906px. At 96 DPI (screen): 1mm = 3.779px. At 600 DPI: 1mm = 23.622px."
+          "question": "Is 1 pixel the same as 1 millimeter?",
+          "answer": "No, that is a common misconception. A pixel and a millimeter are two different units — one digital, one physical — and the relationship between them changes with the DPI resolution. At the standard 96 DPI screen, one millimeter is about 3.78 pixels, while at 300 DPI print resolution it is nearly 11.81 pixels. There is no single fixed value of \"1 mm = 1 px\" that applies universally."
         },
         {
-          "question": "What is print bleed and how do I calculate it in pixels?",
-          "answer": "Bleed is extra artwork area (typically 3mm) beyond the trim edge to prevent white borders after cutting. For a 210 × 297mm A4 page: add 3mm to each edge to get 216 × 303mm. At 300 DPI: 2,551 × 3,579px. Always provide the full bleed canvas to your print shop."
+          "question": "How many pixels is 1 millimeter?",
+          "answer": "It depends entirely on the resolution you set. At the standard 96 DPI screen resolution, one millimeter is about 3.78 pixels, and at the 300 DPI used for print, 11.81 pixels. To convert any number of millimeters to pixels, multiply it by the DPI and divide by 25.4."
         },
         {
-          "question": "What DPI should I use for business cards?",
-          "answer": "300 DPI is the standard minimum for business cards. Premium printers may request 600 DPI for very fine text or detailed logos. The standard business card size is 85 × 55mm: at 300 DPI = 1,004 × 650px, at 600 DPI = 2,008 × 1,299px."
+          "question": "What is the formula for converting mm to px?",
+          "answer": "The formula comes from a fixed relationship: one inch is exactly 25.4 mm. The full formula is pixels = millimeters × DPI ÷ 25.4. It also works in reverse: millimeters = pixels × 25.4 ÷ DPI. You only need two values — the dimension and the target resolution — to instantly calculate the third."
         },
         {
-          "question": "What is the pixel width of 80mm thermal receipt paper?",
-          "answer": "Standard thermal receipt paper is 80mm wide. At 203 DPI (common Epson/Zebra setting): 80mm = 638px. At 300 DPI: 80mm = 944px. The printable width is slightly less — typically 72mm (the paper minus margins), which at 203 DPI = 575px."
+          "question": "How do I convert millimeters to pixels?",
+          "answer": "The simplest way is to type the dimension in millimeters into the converter field and pick the DPI you need — the result appears instantly. If you would rather calculate it by hand, use the formula: pixels = millimeters × DPI ÷ 25.4. For 20 mm at 96 DPI, you get 20 × 96 ÷ 25.4, or about 76 pixels."
         },
         {
-          "question": "How do I set up a document in InDesign for print using mm?",
-          "answer": "In Adobe InDesign, create a new document with Millimeters as the unit. Enter your trim size (e.g. 210 × 297mm for A4), add 3mm bleed on all sides. Place images at their native pixel resolution — a 2,480px wide image in a 210mm column prints at exactly 300 DPI."
+          "question": "How many pixels is 20 mm?",
+          "answer": "Twenty millimeters on a 96 DPI screen is about 76 pixels. At 300 DPI print resolution, the same value grows to 236 pixels, and at 600 DPI used for high-quality photo printing it reaches 472 pixels."
         },
         {
-          "question": "What mm dimensions correspond to standard paper sizes?",
-          "answer": "A4 = 210 × 297mm, A5 = 148 × 210mm, A3 = 297 × 420mm, Letter (US) = 215.9 × 279.4mm, Legal (US) = 215.9 × 355.6mm, Business card = 85 × 55mm, DL envelope = 99 × 210mm."
+          "question": "How many pixels is 100 millimeters?",
+          "answer": "One hundred millimeters (10 cm) at 96 DPI is about 378 pixels. At 300 DPI print resolution, the same 100 mm is exactly 1,181 pixels — a value worth remembering, since it is the short edge of a classic 10×15 cm photo print."
         },
         {
-          "question": "Can I use mm in CSS?",
-          "answer": "Yes, CSS accepts mm as a unit. 1mm in CSS = 3.779 CSS pixels (at 96 DPI). This is only meaningful in @media print stylesheets — on screen, mm does not correspond to physical millimeters because browsers do not know the physical screen size."
+          "question": "What is px in millimeters and what does it measure?",
+          "answer": "A pixel (px) is a digital unit, not a physical length measurement — it has no fixed millimeter equivalent until you set a DPI or PPI resolution. In practice, 1 pixel at 96 DPI (screen standard) is about 0.265 mm, while at 300 DPI (print standard) it is only 0.085 mm."
         },
         {
-          "question": "Are calculations done locally?",
-          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+          "question": "How many millimeters is 40 pixels?",
+          "answer": "Forty pixels on a 96 DPI screen is about 10.58 mm, just over 1 cm. At 300 DPI print resolution, the same number of pixels only takes up 3.39 mm. The higher the DPI, the less physical space a given number of pixels occupies."
+        },
+        {
+          "question": "Can I convert pixels back to millimeters?",
+          "answer": "Yes, our converter works in both directions. Type the number of pixels into the right field, or use the Reverse button to flip the conversion direction — the result in millimeters appears instantly. The formula for this direction is millimeters = pixels × 25.4 ÷ DPI."
+        },
+        {
+          "question": "What pixel dimensions does a business card have?",
+          "answer": "A Polish business card at 90 × 50 mm is 1,063 × 591 px at 300 DPI. A European business card at 85 × 55 mm is 1,004 × 650 px at the same resolution. After adding the standard 3 mm bleed on every edge, the dimensions grow to 96 × 56 mm, or about 1,134 × 661 px."
+        },
+        {
+          "question": "What is bleed and how many pixels do I add?",
+          "answer": "Bleed is extra margin, usually 3–5 mm, around your design that gets trimmed off after printing. It prevents white edges if the cutting machine is slightly off. At 300 DPI, the standard 3 mm bleed is an extra 35 pixels per side — that is how much bigger your file should be than the final trimmed format."
+        },
+        {
+          "question": "How many pixels does an A4 sheet have in millimeters?",
+          "answer": "An A4 sheet is 210 × 297 mm, which is exactly 2,480 × 3,508 pixels at 300 DPI. At 150 DPI, the same dimensions are 1,240 × 1,754 pixels, and at a screen resolution of 96 DPI just 794 × 1,123 pixels."
+        },
+        {
+          "question": "What DPI should I use for printing flyers and business cards?",
+          "answer": "300 DPI is the standard for both offset and digital printing — most online print shops require this value. For large formats like A1 or A0 posters, 150 DPI is often enough, since they are viewed from a greater distance. Large-format banners and billboards are sometimes printed at just 30–72 DPI."
+        },
+        {
+          "question": "How do I set mm to px in Illustrator or InDesign?",
+          "answer": "In Adobe Illustrator, go to Edit › Preferences › Units and choose Millimeters — the unit changes across all panels and rulers immediately. InDesign works similarly and uses millimeters by default. In both programs, the resulting pixel count depends on the resolution set when exporting the file, usually 300 DPI for print. You will find detailed guides for Illustrator, InDesign, CorelDRAW, Photoshop, Figma, and Canva in the section above."
+        },
+        {
+          "question": "What is the difference between DPI and PPI?",
+          "answer": "DPI (dots per inch) is the number of ink dots per inch of material and is a printer specification. PPI (pixels per inch) is the number of pixels per inch of screen and describes a monitor or display. In everyday use, designers use both terms interchangeably, but technically DPI applies to print and PPI to screens."
+        },
+        {
+          "question": "What is the exact size of a payment card in pixels?",
+          "answer": "The ISO ID-1 standard, which applies to payment cards, SIM cards, and ID cards, is exactly 85.60 × 53.98 mm. At 300 DPI, that comes out to 1,011 × 638 pixels. This is a more precise figure than the common 85 × 55 mm rounding sometimes used for European business cards."
         }
       ]
     },
@@ -264,11 +655,11 @@
     },
     {
       "type": "contactForm",
-      "title": "Help us improve our tools",
-      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "title": "Help us improve this converter",
+      "description": "Missing a value in the tables, found a calculation error, or have a feature suggestion? Send us a message — we read every message personally and reply within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "mm to px converter – Arteon",
-      "defaultSubject": "Feedback: mm-to-px-dpi"
+      "defaultSubject": "Feedback: mm to px converter"
     },
     {
       "type": "gap",
@@ -276,7 +667,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Explore more free tools"
+      "title": "Other tools you might find useful"
     },
     {
       "type": "gap",

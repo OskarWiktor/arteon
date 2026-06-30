@@ -1,0 +1,795 @@
+{
+  "toolKey": "pxToMmDpi",
+  "locale": "fi",
+  "metadata": {
+    "title": "px mm:ksi (DPI) -muunnin – pikselit millimetreiksi",
+    "description": "Muunna pikselit millimetreiksi säädettävällä DPI-arvolla. Välttämätön työkalu painotuotteissa, pakkaussuunnittelussa ja tarkistettaessa riittääkö kameratiedosto tai web-kuva tiettyyn tulostuskokoon.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/px-mm-muunnin"
+  },
+  "hero": {
+    "title": "Muunna pikselit millimetreiksi haluamallasi DPI-arvolla",
+    "description": "Syötä arvo pikseleinä, aseta DPI-resoluutio ja lue tulos millimetreinä. Tarkista, kuinka suuri kameratiedosto, web-kuva tai Figma-vienti olisi fyysisesti tulostuksen jälkeen. Muunnin auttaa sinua valitsemaan oikean mitan ennen tiedoston lähettämistä painoon.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/px-mm-muunnin",
+      "label": "px mm:ksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Pikselien muuntaminen millimetreiksi säädettävällä DPI-arvolla – px mm:ksi",
+      "alternateName": [
+        "px mm-muunnin",
+        "Pikseli-millimetri-laskuri",
+        "px millimetriksi-muunnin",
+        "Pikselit millimetreiksi",
+        "Muunna px mm:ksi",
+        "Millimetrit pikseleistä",
+        "Pikselien millimetrilaskuri",
+        "px mm DPI-laskuri",
+        "mm px:stä",
+        "px mm 300 dpi",
+        "Tulostusresoluution laskuri",
+        "Millimetrit px:stä",
+        "DPI-tulostuslaskuri",
+        "px-millimetrilaskuri",
+        "Pikselien muuntaminen millimetreiksi"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Pikselien muuntaminen millimetreiksi säädettävällä DPI-arvolla. Heti kun syötät pikselimäärän, näet välittömästi kuinka monta millimetriä se vastaa ja minkä tulostusformaatin se olisi. Muunnin on suunniteltu tarkistamaan riittääkö kameratiedosto, sovellusvienti tai web-kuva tiettyyn tulostuskokoon, ja se toimii kokonaan selaimessa ilman rekisteröitymistä.",
+      "featureList": [
+        "Säädettävä DPI-resoluutio",
+        "Muunnos toimii molempiin suuntiin, joten voit muuntaa sekä pikselit millimetreiksi että millimetrit pikseleiksi",
+        "Tulos näkyy heti kirjoittaessasi, ilman että sinun tarvitsee painaa mitään painiketta",
+        "Kopioi tulos leikepöydälle yhdellä klikkauksella",
+        "Laaja taulukko arvoille 50–8 000 pikseliä, mukaan lukien yleiset näyttöresoluutiot",
+        "Erillinen käänteinen taulukko näyttää, kuinka monta pikseliä tietty mitta millimetreinä vastaa",
+        "Formaattitaulukko kattaa käyntikortit, DL-esitteet, A0–A7-paperin ja suurkokoiset julisteet",
+        "Ohjeosio selittää, miten px mm:ksi asetetaan Illustratorissa, InDesignissa, CorelDRAW:ssa, Photoshopissa, Figmassa ja Canvassa",
+        "Kaikki laskelmat tehdään paikallisesti selaimessasi, tietosi eivät koskaan poistu laitteeltasi eikä niitä tallenneta minnekään",
+        "Tarkka muuntokaava on mm = px × 25,4 ÷ DPI, joka perustuu tuuman kiinteään pituuteen (25,4 mm)"
+      ]
+    },
+    "howTo": {
+      "name": "Miten pikselit muunnetaan millimetreiksi",
+      "description": "Nopea ohje px mm:ksi -muuntimen käyttöön säädettävällä DPI-arvolla.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo pikseleinä",
+          "text": "Kirjoita vasempaan kenttään pikselien määrä, jonka haluat muuntaa millimetreiksi."
+        },
+        {
+          "name": "Aseta DPI-resoluutio",
+          "text": "Valitse DPI-arvo. Näytöille käytetään yleensä 96 DPI, tulostukseen 300 DPI."
+        },
+        {
+          "name": "Lue tulos tai vaihda suunta",
+          "text": "Tulos millimetreinä näkyy heti vieressä olevassa kentässä. Voit kopioida sen tai käyttää Vaihda järjestys -painiketta muuntaaksesi millimetrit pikseleiksi."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Miksi muuntaa pikseleitä millimetreiksi?",
+      "html": "<p class=\"text-mid mb-4\">Pikseli on digitaalinen yksikkö, joka kuvaa yksittäistä pistettä näytöllä tai kuvatiedostossa. Millimetri puolestaan hallitsee fyysistä maailmaa – painotalot ilmoittavat käyntikorttien, esitteiden ja leikkuuvaran mitat millimetreinä. Muuntaaksesi toisen toiseksi, sinun täytyy tietää DPI-resoluutio, eli kuinka monta pikseliä mahtuu yhteen tuumaan materiaalia tai näyttöä.</p><p class=\"text-mid mb-4\">Tätä muunnosta tarvitsevat eniten suunnittelijat, jotka tarkistavat kuinka suuri heidän projektinsa on fyysisesti tulostuksen jälkeen, valokuvaajat, jotka arvioivat riittääkö kameratiedosto tiettyyn formaattiin, sekä kaikki, jotka työskentelevät Figmassa tai Photoshopissa, ajattelevat pikseleinä mutta heidän on toimitettava tiedosto tarkalla fyysisellä mitalla. Muunnin säästää sinut käsin laskemiselta ja kaavan muistamiselta.</p><p class=\"text-mid\">Tämän sivun alaosasta löydät laajan taulukon yleisistä pikseliarvoista, käänteisen taulukon millimetreistä pikseleihin, valmiit mitat käyntikorteille, esitteille ja A0–A7-formaateille sekä lyhyet oppaat pikselien muuntamiseen millimetreiksi Illustratorissa, InDesignissa, CorelDRAW:ssa, Photoshopissa, Figmassa ja Canvassa.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Ilmainen pikseli-millimetrimuunnin – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten px mm:ksi -muunnos toimii? Kaava ja esimerkki",
+      "html": "<p class=\"text-mid mb-4\">Koko muunnos perustuu yhteen kaavaan, joka pohjautuu tuuman ja millimetrin kiinteään suhteeseen: yksi tuuma on tarkalleen 25,4 mm. Sinun tarvitsee siis vain kertoa pikselien määrä 25,4:llä ja jakaa valitulla DPI-resoluutiolla.</p><p class=\"text-mid mb-4\">Täydellinen kaava on: <strong>millimetrien määrä = pikselien määrä × 25,4 ÷ DPI</strong>. Muunnin tekee tämän laskelman heti, joten sinun ei koskaan tarvitse laskea itse tai etsiä laskinta.</p><p class=\"text-mid mb-4\">Esimerkki: haluat tietää, kuinka monta millimetriä on 1 063 pikseliä 300 DPI:n tulostusresoluutiolla. Sijoittamalla arvot kaavaan saat 1 063 × 25,4 ÷ 300, mikä on tarkalleen 90 mm – tarkalleen tavallisen käyntikortin leveys. Samat 1 063 pikseliä 96 DPI:n näytöllä veisivät jo 281 mm, koska tuumaan mahtuu vähemmän pisteitä.</p><p class=\"text-mid\">Toiseen suuntaan se toimii samalla tavalla: pikselien määrä = millimetrien määrä × DPI ÷ 25,4. Näin voit tarkistaa tarkalleen, kuinka monta pikseliä kuva tarvitsee tulostuakseen tietyssä koossa, esimerkiksi esitteen tai etiketin formaatissa.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Kuinka monta millimetriä eri pikseliarvot tuottavat eri DPI-arvoilla?",
+      "description": "Alla oleva taulukko näyttää, miten samat pikseliarvot muuttuvat millimetreiksi viidellä yleisimmin käytetyllä resoluutiolla. Joitakin arvoja kannattaa muistaa, koska ne vastaavat tarkalleen todellisia formaatteja: 413 px 300 DPI:llä on passikuvan lyhyt sivu, ja 1 063 px on tavallisen käyntikortin leveys.",
+      "labelHeader": "Pikselit",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
+      "rows": [
+        {
+          "label": "50 px",
+          "values": ["17,64 mm", "13,23 mm", "8,47 mm", "4,23 mm", "2,12 mm"]
+        },
+        {
+          "label": "90 px",
+          "values": ["31,75 mm", "23,81 mm", "15,24 mm", "7,62 mm", "3,81 mm"]
+        },
+        {
+          "label": "100 px",
+          "values": ["35,28 mm", "26,46 mm", "16,93 mm", "8,47 mm", "4,23 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "150 px",
+          "values": ["52,92 mm", "39,69 mm", "25,40 mm", "12,70 mm", "6,35 mm"]
+        },
+        {
+          "label": "200 px",
+          "values": ["70,56 mm", "52,92 mm", "33,87 mm", "16,93 mm", "8,47 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "250 px",
+          "values": ["88,19 mm", "66,15 mm", "42,33 mm", "21,17 mm", "10,58 mm"]
+        },
+        {
+          "label": "300 px",
+          "values": [
+            "105,83 mm",
+            "79,38 mm",
+            "50,80 mm",
+            "25,40 mm",
+            "12,70 mm"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "400 px",
+          "values": [
+            "141,11 mm",
+            "105,83 mm",
+            "67,73 mm",
+            "33,87 mm",
+            "16,93 mm"
+          ]
+        },
+        {
+          "label": "413 px",
+          "values": [
+            "145,70 mm",
+            "109,27 mm",
+            "69,93 mm",
+            "34,97 mm",
+            "17,48 mm"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "500 px",
+          "values": [
+            "176,39 mm",
+            "132,29 mm",
+            "84,67 mm",
+            "42,33 mm",
+            "21,17 mm"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "591 px",
+          "values": [
+            "208,49 mm",
+            "156,37 mm",
+            "100,08 mm",
+            "50,04 mm",
+            "25,02 mm"
+          ]
+        },
+        {
+          "label": "600 px",
+          "values": [
+            "211,67 mm",
+            "158,75 mm",
+            "101,60 mm",
+            "50,80 mm",
+            "25,40 mm"
+          ]
+        },
+        {
+          "label": "640 px",
+          "values": [
+            "225,78 mm",
+            "169,33 mm",
+            "108,37 mm",
+            "54,19 mm",
+            "27,09 mm"
+          ]
+        },
+        {
+          "label": "720 px",
+          "values": [
+            "254,00 mm",
+            "190,50 mm",
+            "121,92 mm",
+            "60,96 mm",
+            "30,48 mm"
+          ]
+        },
+        {
+          "label": "800 px",
+          "values": [
+            "282,22 mm",
+            "211,67 mm",
+            "135,47 mm",
+            "67,73 mm",
+            "33,87 mm"
+          ]
+        },
+        {
+          "label": "827 px",
+          "values": [
+            "291,75 mm",
+            "218,81 mm",
+            "140,04 mm",
+            "70,02 mm",
+            "35,01 mm"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "900 px",
+          "values": [
+            "317,50 mm",
+            "238,13 mm",
+            "152,40 mm",
+            "76,20 mm",
+            "38,10 mm"
+          ]
+        },
+        {
+          "label": "1 000 px",
+          "values": [
+            "352,78 mm",
+            "264,58 mm",
+            "169,33 mm",
+            "84,67 mm",
+            "42,33 mm"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "1 063 px",
+          "values": [
+            "375,00 mm",
+            "281,25 mm",
+            "180,00 mm",
+            "90,00 mm",
+            "45,00 mm"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "1 080 px",
+          "values": [
+            "381,00 mm",
+            "285,75 mm",
+            "182,88 mm",
+            "91,44 mm",
+            "45,72 mm"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "1 181 px",
+          "values": [
+            "416,63 mm",
+            "312,47 mm",
+            "199,98 mm",
+            "99,99 mm",
+            "50,00 mm"
+          ]
+        },
+        {
+          "label": "1 200 px",
+          "values": [
+            "423,33 mm",
+            "317,50 mm",
+            "203,20 mm",
+            "101,60 mm",
+            "50,80 mm"
+          ]
+        },
+        {
+          "label": "1 500 px",
+          "values": [
+            "529,17 mm",
+            "396,88 mm",
+            "254,00 mm",
+            "127,00 mm",
+            "63,50 mm"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "1 920 px",
+          "values": [
+            "677,33 mm",
+            "508,00 mm",
+            "325,12 mm",
+            "162,56 mm",
+            "81,28 mm"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "2 000 px",
+          "values": [
+            "705,56 mm",
+            "529,17 mm",
+            "338,67 mm",
+            "169,33 mm",
+            "84,67 mm"
+          ]
+        },
+        {
+          "label": "2 048 px",
+          "values": [
+            "722,49 mm",
+            "541,87 mm",
+            "346,79 mm",
+            "173,40 mm",
+            "86,70 mm"
+          ]
+        },
+        {
+          "label": "2 400 px",
+          "values": [
+            "846,67 mm",
+            "635,00 mm",
+            "406,40 mm",
+            "203,20 mm",
+            "101,60 mm"
+          ]
+        },
+        {
+          "label": "2 480 px",
+          "values": [
+            "874,89 mm",
+            "656,17 mm",
+            "419,95 mm",
+            "209,97 mm",
+            "104,99 mm"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "3 000 px",
+          "values": [
+            "1 058,33 mm",
+            "793,75 mm",
+            "508,00 mm",
+            "254,00 mm",
+            "127,00 mm"
+          ]
+        },
+        {
+          "label": "3 508 px",
+          "values": [
+            "1 237,54 mm",
+            "928,16 mm",
+            "594,02 mm",
+            "297,01 mm",
+            "148,51 mm"
+          ],
+          "emphasis": true
+        },
+        {
+          "label": "4 000 px",
+          "values": [
+            "1 411,11 mm",
+            "1 058,33 mm",
+            "677,33 mm",
+            "338,67 mm",
+            "169,33 mm"
+          ]
+        },
+        {
+          "label": "5 000 px",
+          "values": [
+            "1 763,89 mm",
+            "1 322,92 mm",
+            "846,67 mm",
+            "423,33 mm",
+            "211,67 mm"
+          ]
+        },
+        {
+          "label": "6 000 px",
+          "values": [
+            "2 116,67 mm",
+            "1 587,50 mm",
+            "1 016,00 mm",
+            "508,00 mm",
+            "254,00 mm"
+          ]
+        },
+        {
+          "label": "8 000 px",
+          "values": [
+            "2 822,22 mm",
+            "2 116,67 mm",
+            "1 354,67 mm",
+            "677,33 mm",
+            "338,67 mm"
+          ]
+        }
+      ],
+      "caption": "Kaikki arvot on pyöristetty kahteen desimaaliin kaavan mm = px × 25,4 ÷ DPI mukaisesti."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Kuinka monta pikseliä suositut millimetrimitat tuottavat?",
+      "description": "Joskus lähdetään liikkeelle fyysisestä puolesta ja halutaan tietää, kuinka monta pikseliä suunnitelma tarvitsee tulostuakseen tietyssä koossa. Alla oleva taulukko näyttää käänteisen muunnoksen viidelle yleisimmin käytetylle resoluutiolle.",
+      "labelHeader": "Mitta",
+      "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
+      "rows": [
+        {
+          "label": "5 mm",
+          "values": ["14 px", "19 px", "30 px", "59 px", "118 px"]
+        },
+        {
+          "label": "10 mm",
+          "values": ["28 px", "38 px", "59 px", "118 px", "236 px"],
+          "emphasis": true
+        },
+        {
+          "label": "20 mm",
+          "values": ["57 px", "76 px", "118 px", "236 px", "472 px"]
+        },
+        {
+          "label": "35 mm",
+          "values": ["99 px", "132 px", "207 px", "413 px", "827 px"],
+          "emphasis": true
+        },
+        {
+          "label": "50 mm",
+          "values": ["142 px", "189 px", "295 px", "591 px", "1 181 px"],
+          "emphasis": true
+        },
+        {
+          "label": "55 mm",
+          "values": ["156 px", "208 px", "325 px", "650 px", "1 299 px"]
+        },
+        {
+          "label": "70 mm",
+          "values": ["198 px", "265 px", "413 px", "827 px", "1 654 px"]
+        },
+        {
+          "label": "85 mm",
+          "values": ["241 px", "321 px", "502 px", "1 004 px", "2 008 px"]
+        },
+        {
+          "label": "90 mm",
+          "values": ["255 px", "340 px", "531 px", "1 063 px", "2 126 px"],
+          "emphasis": true
+        },
+        {
+          "label": "100 mm",
+          "values": ["283 px", "378 px", "591 px", "1 181 px", "2 362 px"]
+        },
+        {
+          "label": "210 mm",
+          "values": ["595 px", "794 px", "1 240 px", "2 480 px", "4 961 px"],
+          "emphasis": true
+        },
+        {
+          "label": "297 mm",
+          "values": ["842 px", "1 123 px", "1 754 px", "3 508 px", "7 016 px"],
+          "emphasis": true
+        }
+      ],
+      "caption": "Jos muunnat useammin tähän suuntaan, meillä on erillinen mm px:ksi -laskuri vieläkin laajemmalla arvoalueella."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Suosituimmat painoformaatit ja niiden pikselimitat",
+      "description": "Jos yksittäisen pikseliarvon sijaan tarvitset valmiin formaatin mitat (esimerkiksi käyntikortin, DL-esitteen tai A4-arkin), alla oleva taulukko antaa arvot kahdella yleisimmin käytetyllä resoluutiolla. Mitat ilmoitetaan aina muodossa leveys × korkeus.",
+      "labelHeader": "Formaatti",
+      "cols": ["L × K (mm)", "L × K (150 DPI)", "L × K (300 DPI)"],
+      "rows": [
+        {
+          "groupLabel": "Käyntikortit ja henkilöllisyystodistukset"
+        },
+        {
+          "label": "Puolalainen käyntikortti",
+          "values": ["90 × 50 mm", "531 × 295 px", "1 063 × 591 px"],
+          "emphasis": true
+        },
+        {
+          "label": "Eurooppalainen käyntikortti",
+          "values": ["85 × 55 mm", "502 × 325 px", "1 004 × 650 px"]
+        },
+        {
+          "label": "Maksukortti / SIM-kortti (ISO ID-1)",
+          "values": ["85,60 × 53,98 mm", "506 × 319 px", "1 011 × 638 px"]
+        },
+        {
+          "groupLabel": "Esitteet ja painotuotteet"
+        },
+        {
+          "label": "DL-esite",
+          "values": ["99 × 210 mm", "585 × 1 240 px", "1 169 × 2 480 px"],
+          "emphasis": true
+        },
+        {
+          "label": "Postikortti / A6",
+          "values": ["105 × 148 mm", "620 × 874 px", "1 240 × 1 748 px"]
+        },
+        {
+          "groupLabel": "A-sarjan paperi"
+        },
+        {
+          "label": "A5",
+          "values": ["148 × 210 mm", "874 × 1 240 px", "1 748 × 2 480 px"]
+        },
+        {
+          "label": "A4",
+          "values": ["210 × 297 mm", "1 240 × 1 754 px", "2 480 × 3 508 px"],
+          "emphasis": true
+        },
+        {
+          "label": "A3",
+          "values": ["297 × 420 mm", "1 754 × 2 480 px", "3 508 × 4 961 px"]
+        },
+        {
+          "label": "A2",
+          "values": ["420 × 594 mm", "2 480 × 3 508 px", "4 961 × 7 016 px"]
+        },
+        {
+          "label": "A1",
+          "values": ["594 × 841 mm", "3 508 × 4 967 px", "7 016 × 9 933 px"]
+        },
+        {
+          "label": "A0",
+          "values": ["841 × 1 189 mm", "4 967 × 7 022 px", "9 933 × 14 043 px"]
+        },
+        {
+          "groupLabel": "Asiakirjat ja suurkoot"
+        },
+        {
+          "label": "EU-passi- / henkilökortin valokuva",
+          "values": ["35 × 45 mm", "207 × 266 px", "413 × 531 px"],
+          "emphasis": true
+        },
+        {
+          "label": "B1-juliste",
+          "values": ["707 × 1 000 mm", "4 175 × 5 906 px", "8 350 × 11 811 px"]
+        },
+        {
+          "label": "Roll-up-banneri",
+          "values": [
+            "850 × 2 000 mm",
+            "5 020 × 11 811 px",
+            "10 039 × 23 622 px"
+          ]
+        }
+      ],
+      "caption": "Nämä arvot ovat mm px:ksi -muuntimemme taulukon peilikuva – voit aina lähteä kummasta tahansa suunnasta, kunhan tiedät pikselimäärän ja tavoite-DPI:n."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Miten pikselit muunnetaan millimetreiksi suosituissa ohjelmissa?",
+      "inlineIcon": true,
+      "grid": "one",
+      "items": [
+        {
+          "title": "Illustrator",
+          "icon": "RiPencilLine",
+          "description": "Adobe Illustrator käyttää oletuksena yksikköä, jonka asetit dokumenttia luotaessa. Vaihda se kohdasta <strong>Muokkaa &rsaquo; Asetukset &rsaquo; Yksiköt</strong> valitsemalla Millimetrit, jos haluat nähdä kuinka suuri projektisi on tulostuksen jälkeen. Millimetreinä saatu tulos riippuu projektin alussa asetetusta piirtoalueen resoluutiosta. Jos työskentelet pikseleinä saadun tiedoston parissa mutta tarvitset mittoja painoa varten, helpointa on kopioida pikselimäärä Muunna-paneelista ja syöttää se muuntimeemme oikealla DPI:llä."
+        },
+        {
+          "title": "InDesign",
+          "icon": "RiLayoutLine",
+          "description": "Adobe InDesign käyttää oletuksena millimetrejä ja on monisivuisten julkaisujen taittoon tarkoitettu vakiotyökalu. Jos saat asiakkaalta graafisen tiedoston pikseleinä (esimerkiksi kuvakaappauksen tai Figma-viennin) ja sinun täytyy sijoittaa se millimetreinä mitattuun projektiin, muunna mitta muuntimessamme tavoite-DPI:llä – oletuksena 300 offsetpainatukseen – ja syötä tulos suoraan Muunna-paneeliin."
+        },
+        {
+          "title": "CorelDRAW",
+          "icon": "RiPaintBrushLine",
+          "description": "CorelDRAW on monien painotalojen ja mainostoimistojen vakiotyökalu. Vaihda dokumentin yksikkö ruudun yläosassa olevasta ominaisuuspalkista valitsemalla millimetrit viivaimen kuvakkeen vieressä olevasta pudotusvalikosta. Jos tuot bittikarttatiedoston, jonka pikselimitat tunnet, ohjelma näyttää automaattisesti sen fyysisen koon tiedostoon tallennetun resoluution mukaan – muuntimemme avulla voit tarkistaa sen etukäteen."
+        },
+        {
+          "title": "Photoshop",
+          "icon": "RiImageEditLine",
+          "description": "Adobe Photoshopissa voit tarkistaa kankaan mitat ja tuloksen millimetreinä <strong>Kuva &rsaquo; Kuvan koko</strong> -ikkunassa (Image &rsaquo; Image Size). Valitse Millimetrit yksikön pudotusvalikosta, ja syötä tavoite-DPI Resoluutio-kenttään – Photoshop näyttää heti, kuinka monta millimetriä tiedostosi mitat vastaavat. Poista Uudelleennäytteistys-valinta, jos haluat muuttaa vain mittojen näyttötapaa vaikuttamatta todelliseen pikselimäärään."
+        },
+        {
+          "title": "Figma",
+          "icon": "RiLayoutGridLine",
+          "description": "Figma toimii yksinomaan pikseleissä kiinteällä 96 DPI:llä. Tämä tarkoittaa, että tietääksesi kuinka suuri projektisi on millimetreinä tulostuksen jälkeen, sinun täytyy ensin muuntaa pikselimitta tavoitetulostusresoluutiolla. Esimerkki: 1 063 × 591 px piirtoalue, muunnettuna 300 DPI:llä, vastaa tarkalleen 90 × 50 mm käyntikorttia. Syötä Figman arvo muuntimeemme, aseta 300 DPI, ja näet heti fyysisen koon paperilla."
+        },
+        {
+          "title": "Canva",
+          "icon": "RiPaletteLine",
+          "description": "Canvassa voit klikattuasi <strong>Luo suunnittelu &rsaquo; Mukautettu koko</strong> valita mm-yksikön ja nähdä heti fyysisen mitan millimetreinä. Jos työskentelet olemassa olevan pikseleinä olevan grafiikan parissa, avaa projektin mittapaneeli ja muunna ne muuntimessamme 300 DPI:llä tarkistaaksesi kuinka suuri se on tulostuksen jälkeen. Canva vie tulostustiedostot oletuksena 300 DPI:llä, joten formaattitaulukkomme vastaa sitä, mitä saat viennissä."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tästä muuntimesta on hyötyä?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCameraLine",
+          "title": "Kamerakuvien arviointi tulostusta varten",
+          "description": "Tiedät, että kamerasi anturi tuottaa tiedostoja, jotka ovat 6 000 × 4 000 px. Muunnin näyttää, että 300 DPI:llä se on tarkalleen 508 × 338,67 mm – riittää mukavasti A2-julisteeseen. Tarkistat myös alarajan, eli minkä mitan pienempi tiedosto puhelimesta tai web-kuva tuottaa."
+        },
+        {
+          "icon": "RiLayoutGridLine",
+          "title": "Vienti Figmasta tai Photoshopista tulostukseen",
+          "description": "Suunnittelit esitteen Figmassa 1 169 × 2 480 px piirtoalueena ja haluat tietää, vastaako se standardia DL-formaattia. Muunnin näyttää, että 300 DPI:llä se on tarkalleen 99 × 210 mm – sopii täydellisesti C5-kirjekuoreen."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Grafiikan tarkistaminen ennen lähettämistä painoon",
+          "description": "Sait asiakkaalta tiedoston, joka on 2 480 px leveä, etkä tiedä mikä formaatti se on. Muunnin näyttää heti, että 300 DPI:llä se on tarkalleen 210 mm, eli A4-arkin leveys. Näin vältät tilanteen, jossa painotalo hylkää tiedoston väärän resoluution vuoksi."
+        },
+        {
+          "icon": "RiContactsBookLine",
+          "title": "Valokuva asiakirjoja ja käyntikortteja varten",
+          "description": "Kamerasi tuotti 413 × 531 px valokuvan, ja mietit onko se oikea formaatti. Muunnin näyttää, että 300 DPI:llä se on tarkalleen 35 × 45 mm – EU:n standardi passin ja henkilökortin biometrisille valokuville. Samalla tavalla tarkistat käyntikortit: 1 063 × 591 px tiedosto on tavallinen 90 × 50 mm käyntikorttimme 300 DPI:llä."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Pikseli- ja millimetriyksiköiden vertailu",
+      "labelHeader": "Ominaisuus",
+      "cols": ["Pikseli (px)", "Millimetri (mm)"],
+      "rows": [
+        {
+          "label": "Yksikön tyyppi",
+          "values": ["Digitaalinen, näytöllä", "Fyysinen, kosketeltava"]
+        },
+        {
+          "label": "Riippuu laitteesta",
+          "values": ["Riippuu DPI- tai PPI-arvosta", "Aina sama"]
+        },
+        {
+          "label": "Näyttö 96 DPI",
+          "values": ["1 px = 0,265 mm", "1 mm = 3,78 px"]
+        },
+        {
+          "label": "Tulostus 300 DPI",
+          "values": ["1 px = 0,085 mm", "1 mm = 11,81 px"]
+        },
+        {
+          "label": "Alan standardi",
+          "values": [
+            "Näytöt, web-suunnittelu, UI",
+            "Painotuotteet, pakkaukset, CAD"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset px mm:ksi -muunnoksesta",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Onko 1 pikseli sama kuin 1 millimetri?",
+          "answer": "Ei, tämä on yleinen virhekäsitys. Pikseli ja millimetri ovat kaksi eri yksikköä – toinen digitaalinen, toinen fyysinen – ja niiden suhde muuttuu DPI-resoluution mukaan. Näytön vakiostandardilla 96 DPI yksi pikseli on noin 0,265 mm, kun taas tulostuksessa 300 DPI:llä se on vain 0,085 mm. Ei ole olemassa yhtä kiinteää yleispätevää arvoa."
+        },
+        {
+          "question": "Kuinka monta millimetriä on 1 pikseli?",
+          "answer": "Se riippuu täysin asetetusta resoluutiosta. Näytön vakiostandardilla 96 DPI yksi pikseli on noin 0,265 mm, ja tulostuksessa käytettävällä 300 DPI:llä vain 0,085 mm. Muuntaaksesi minkä tahansa pikselimäärän millimetreiksi, kerro se 25,4:llä ja jaa DPI:llä."
+        },
+        {
+          "question": "Mikä on kaava px:n muuntamiseen mm:ksi?",
+          "answer": "Kaava perustuu kiinteään suhteeseen: yksi tuuma on tarkalleen 25,4 mm. Täydellinen kaava on millimetrien määrä = pikselien määrä × 25,4 ÷ DPI. Se toimii myös toisin päin: pikselien määrä = millimetrien määrä × DPI ÷ 25,4. Sinun tarvitsee tietää vain kaksi arvoa, pikselimäärä ja tavoiteresoluutio, laskeaksesi kolmannen heti."
+        },
+        {
+          "question": "Miten muunnan pikselit millimetreiksi?",
+          "answer": "Helpointa on kirjoittaa pikselimäärä muuntimen kenttään ja valita haluamasi DPI – tulos näkyy heti. Jos haluat mieluummin laskea käsin, käytä kaavaa: millimetrien määrä = pikselien määrä × 25,4 ÷ DPI. 500 px:lle 300 DPI:llä saat 500 × 25,4 ÷ 300, eli noin 42,33 mm."
+        },
+        {
+          "question": "Kuinka monta millimetriä on 100 pikseliä?",
+          "answer": "Sata pikseliä 96 DPI:n näytöllä on tarkalleen 26,46 mm. Tulostuksessa 300 DPI:llä samat 100 pikseliä vie vain 8,47 mm, ja 600 DPI:llä vain 4,23 mm. Tämä arvo kannattaa muistaa, koska se esiintyy usein nappien ja kuvakkeiden kokoina verkkosivuilla."
+        },
+        {
+          "question": "Kuinka monta millimetriä on 500 pikseliä?",
+          "answer": "Viisisataa pikseliä vastaa noin 132,29 mm 96 DPI:n näytöllä ja 42,33 mm tulostuksessa 300 DPI:llä. 500 px on suosittu leveys mainosbannereille ja avatareille, joten tämä arvo kannattaa muistaa nopeaan kokojen arviointiin."
+        },
+        {
+          "question": "Kuinka monta millimetriä on 1 000 pikseliä?",
+          "answer": "Tuhat pikseliä 96 DPI:llä on noin 264,58 mm. Tulostuksessa 300 DPI:llä samat 1 000 pikseliä on 84,67 mm – riittää isoon etikettiin tai pieneen valokuvaan. 150 DPI:llä, jota käytetään julisteisiin ja esitteisiin, tuloksena on 169,33 mm, postikorttia muistuttava formaatti."
+        },
+        {
+          "question": "Mitkä mitat millimetreinä on tiedostolla, joka on 2 480 pikseliä leveä?",
+          "answer": "Tiedosto, joka on 2 480 pikseliä leveä, on tarkalleen 210 mm 300 DPI:llä, eli A4-arkin leveys. Painotalo hyväksyy tiedoston ilman varauksia, jos korkeus on 3 508 px (297 mm). Sama tiedosto 96 DPI:n näytöllä veisi 656,17 mm, mikä ylittää reilusti tavallisen näytön näkyvän alueen."
+        },
+        {
+          "question": "Mitkä pikselimitat käyntikortilla on, ja kuinka monta millimetriä se on?",
+          "answer": "Puolalainen 1 063 × 591 px käyntikortti vastaa tarkalleen 90 × 50 mm:ä 300 DPI:llä. Eurooppalainen 1 004 × 650 px käyntikortti vastaa 85 × 55 mm:ä samalla resoluutiolla. Standardin 3 mm leikkuuvaran lisäämisen jälkeen joka puolelle mitat kasvavat 96 × 56 mm:iin, eli noin 1 134 × 661 px:ään."
+        },
+        {
+          "question": "Kuinka monta millimetriä on 6 000 pikselin kameravalokuva?",
+          "answer": "Kuusituhatta pikseliä on tyypillinen leveys digitaalisen järjestelmäkameran tai keskitason peilittömän kameran valokuvalle. 300 DPI:llä, jota käytetään valokuvatulostukseen, tämä on 508 mm – riittää mukavasti A2-julisteeseen tai leveään galleriavedokseen. Jos kuvan kuvasuhde on 3:2, toinen sivu on 4 000 px, eli 338,67 mm."
+        },
+        {
+          "question": "Mikä on leikkuuvara ja kuinka monta millimetriä se vastaa pikseleinä?",
+          "answer": "Leikkuuvara on ylimääräinen reuna, yleensä 3–5 mm, suunnittelusi ympärillä, joka leikataan pois tulostuksen jälkeen. Se estää valkoiset reunat, jos leikkuukone ei osu täysin tarkasti. 300 DPI:llä standardi 3 mm leikkuuvara on 35 pikseliä lisää per puoli – sen verran tiedostosi tulisi olla isompi kuin lopullinen formaatti."
+        },
+        {
+          "question": "Miten asetan pikselit millimetreiksi Illustratorissa tai InDesignissa?",
+          "answer": "Mene Adobe Illustratorissa kohtaan Muokkaa › Asetukset › Yksiköt ja valitse Millimetrit – yksikkö vaihtuu välittömästi kaikissa paneeleissa ja viivaimissa. InDesign käyttää oletuksena millimetrejä. Molemmissa ohjelmissa tulos riippuu tiedostoa vietäessä asetetusta resoluutiosta, yleensä 300 DPI tulostukseen. Löydät yksityiskohtaiset oppaat Illustratorille, InDesignille, CorelDRAW:lle, Photoshopille, Figmalle ja Canvalle yllä olevasta osiosta."
+        },
+        {
+          "question": "Miten asetan px mm:ksi Figmassa?",
+          "answer": "Figma toimii yksinomaan pikseleissä kiinteällä 96 DPI:llä – yksikön vaihtamiseen millimetreiksi ei ole vaihtoehtoa. Tarkistaaksesi Figma-projektin fyysiset mitat, kopioi pikselimäärä Design-paneelista ja syötä se muuntimeemme, asettaen tavoite-DPI:n (96 näytölle, 300 tulostukselle)."
+        },
+        {
+          "question": "Mikä on ero DPI:n ja PPI:n välillä?",
+          "answer": "DPI (dots per inch) on mustepisteiden määrä tuumaa kohti materiaalissa ja on tulostimen ominaisuus. PPI (pixels per inch) on pikselien määrä tuumaa kohti näytöllä ja kuvaa monitoria tai näyttöä. Jokapäiväisessä käytössä suunnittelijat käyttävät usein molempia termejä toistensa synonyymeinä, mutta teknisesti DPI koskee tulostusta ja PPI näyttöjä."
+        },
+        {
+          "question": "Mikä on maksukortin tarkka koko millimetreinä?",
+          "answer": "ISO ID-1 -standardi, jota sovelletaan maksukortteihin, SIM-kortteihin ja henkilökortteihin, on tarkalleen 85,60 × 53,98 mm. 1 011 × 638 px tiedosto vastaa tarkalleen tätä mittaa 300 DPI:llä – tarkempi arvo kuin eurooppalaisissa käyntikorteissa joskus käytetty yleinen pyöristys 85 × 55 mm."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan tätä muunninta",
+      "description": "Puuttuuko taulukoista arvo, löysitkö laskuvirheen vai haluatko ehdottaa uutta ominaisuutta? Kirjoita meille – luemme jokaisen viestin henkilökohtaisesti ja vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "px mm:ksi -muunnin – Arteon",
+      "defaultSubject": "Palaute: px mm:ksi -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muita työkaluja, joista voi olla sinulle hyötyä"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

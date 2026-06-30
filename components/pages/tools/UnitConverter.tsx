@@ -1,10 +1,12 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 import Button from '@/components/atoms/buttons/Button';
 import InputWithLabel from '@/components/molecules/form/InputWithLabel';
 import Card from '@/components/organisms/Card';
 import FormatSelector from '@/components/organisms/tools/FormatPicker/FormatSelector';
+import { getToolHref } from '@/lib/i18n/toolRegistry';
 import { useDictionary, useLocale } from '@/lib/LocaleContext';
 import { getUnitLabel } from '@/lib/tools/unitLabels';
 import { getUnitConversion } from '@/lib/tools/units/conversions';
@@ -40,6 +42,7 @@ interface UnitConverterProps {
 export default function UnitConverter({ toolKey }: UnitConverterProps) {
   const { imageConverter: t } = useDictionary();
   const locale = useLocale();
+  const router = useRouter();
   const config = getUnitConversion(toolKey);
 
   // Helper to resolve label from labelKey or fallback to label
@@ -139,6 +142,18 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
 
   const handleSwap = () => {
     if (!config?.swappable) return;
+
+    // If a dedicated reciprocal page exists for this locale (its own slug
+    // and SEO content with the units in the opposite order), navigate
+    // there instead of just flipping the fields in place.
+    if (config.reverseToolKey) {
+      const reverseHref = getToolHref(config.reverseToolKey, locale);
+      if (reverseHref !== '#') {
+        router.push(reverseHref);
+        return;
+      }
+    }
+
     setIsReversed(prev => !prev);
     const temp = sourceValue;
     setSourceValue(targetValue);
