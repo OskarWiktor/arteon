@@ -10,7 +10,7 @@ export default function ToolEditorLayout({ children }: ToolEditorLayoutProps) {
   return (
     <div
       className={cn(
-        'mx-auto mt-8 w-full max-w-355',
+        'mx-auto mt-4 w-full max-w-355 md:mt-8',
         'xl:grid xl:w-full xl:max-w-none xl:grid-cols-[1fr_200px_minmax(0,1420px)_200px_1fr] xl:gap-x-4',
       )}
     >
