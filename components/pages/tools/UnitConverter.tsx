@@ -206,7 +206,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
           </div>
 
           {config.extraField && (
-            <div className='flex items-center gap-3 rounded-md border border-neutral-100 bg-white p-3'>
+            <div className='flex flex-row'>
               <InputWithLabel
                 label={extraLabel}
                 type='number'
@@ -216,9 +216,6 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
                 max={config.extraField.max}
                 step={config.extraField.step}
               />
-              <span className='text-sm text-primary-mid'>
-                {config.extraField.suffix}
-              </span>
             </div>
           )}
 
