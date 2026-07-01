@@ -77,15 +77,15 @@ export default function Breadcrumbs({
       <nav
         aria-label={t.ariaLabel}
         className={cn(
-          size === 'compact' ? cn('py-3', flexCenterClasses) : 'py-6',
+          size === 'compact' ? cn(flexCenterClasses) : 'py-2 md:py-6',
         )}
       >
-        <ol className='flex flex-wrap items-center gap-2 text-sm!'>
+        <ol className='flex flex-wrap items-center gap-2'>
           <li>
             <InlineLink href='/' variant='default' aria-label={t.home}>
               <RiHomeLine
                 className={cn(
-                  'text-medium text-primary-mid',
+                  'text-medium mt-1 text-primary-mid',
                   smallIconSizeClasses,
                 )}
               />
@@ -98,15 +98,18 @@ export default function Breadcrumbs({
             return (
               <li
                 key={`${item.href}-${index}`}
-                className='text-medium flex items-center gap-2 text-sm! text-primary-mid'
+                className='text-medium flex items-center gap-2 text-xs! text-primary-mid md:text-sm!'
               >
-                <span aria-hidden='true' className='text-sm! text-primary-mid'>
+                <span
+                  aria-hidden='true'
+                  className='text-xs! text-primary-mid md:text-sm!'
+                >
                   /
                 </span>
 
                 {isLast ? (
                   <span
-                    className='text-medium text-sm! text-primary'
+                    className='text-medium text-xs! text-primary md:text-sm!'
                     aria-current='page'
                   >
                     {item.label}
@@ -115,7 +118,7 @@ export default function Breadcrumbs({
                   <InlineLink
                     href={item.href}
                     variant='default'
-                    className='text-primary-mid'
+                    className='text-xs! text-primary-mid md:text-sm!'
                   >
                     {item.label}
                   </InlineLink>
