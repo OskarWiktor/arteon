@@ -3,7 +3,7 @@
   "locale": "pl",
   "metadata": {
     "title": "Kalkulator px na mm (DPI) – zamień piksele na milimetry",
-    "description": "Przelicz piksele na milimetry z regulowanym DPI. Niezbędne narzędzie w poligrafii, przy projektowaniu opakowań i sprawdzaniu, czy plik z aparatu albo grafika z internetu wystarczy na konkretny wymiar wydruku.",
+    "description": "Przelicz piksele na milimetry z regulowanym DPI i sprawdź, czy grafika z aparatu lub internetu wystarczy na konkretny format wydruku. Przydatne w poligrafii i przy projektowaniu opakowań.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-px-na-mm"
   },

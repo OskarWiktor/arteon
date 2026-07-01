@@ -1,0 +1,389 @@
+{
+  "toolKey": "kgToLb",
+  "locale": "de",
+  "metadata": {
+    "title": "Kilogramm in Pfund umrechnen – kg in lb Umrechner",
+    "description": "Rechnen Sie Kilogramm in Pfund um. Nützlich für Körpergewicht, Fitness, Freigepäck und Babygewicht. Umrechnungstabelle von 0,5 bis 200 kg mit Stone-Spalte (UK).",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/de/werkzeuge/kg-in-pfund-umrechner"
+  },
+  "hero": {
+    "title": "Kilogramm in Pfund umrechnen",
+    "description": "Geben Sie einen beliebigen Wert in Kilogramm ein und lesen Sie das Ergebnis sofort in Pfund ab. Der Umrechner ist hilfreich beim Prüfen des Körpergewichts im imperialen System, beim Ablesen von Gepäcklimits in Pfund, beim Vergleich sportlicher Leistungen mit US-amerikanischen oder britischen Tabellen oder beim Umrechnen des Geburtsgewichts eines Kindes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/kg-in-pfund-umrechner",
+      "label": "kg in Pfund"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kilogramm in Pfund Umrechner – kg in lb Rechner",
+      "alternateName": [
+        "kg in Pfund umrechnen",
+        "Kilogramm in Pfund Rechner",
+        "kg in lb Umrechner",
+        "kg zu Pfund",
+        "Pfund Umrechner",
+        "kg in pounds",
+        "Kilogramm Pfund Tabelle",
+        "kg lb Umrechnung",
+        "wie viel Pfund sind ein Kilogramm",
+        "kg in Stone und Pfund",
+        "Pfund Kalkulator",
+        "Kilogramm zu Pfund Formel",
+        "kg in lbs",
+        "Pfund Rechner",
+        "kg Pfund Konverter"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Kostenloser Kilogramm-in-Pfund-Umrechner, der im Browser ohne Registrierung funktioniert. Geben Sie einen Wert in kg ein und erhalten Sie sofort das Ergebnis in Pfund. Nützlich beim Prüfen des Körpergewichts, beim Vergleich von Sporttabellen aus den USA oder Großbritannien, beim Berechnen von Gepäcklimits oder beim Ablesen des Babygewichts in angelsächsischen Einheiten.",
+      "featureList": [
+        "Die Umrechnung funktioniert in beide Richtungen – Sie können sowohl Kilogramm in Pfund als auch Pfund in Kilogramm umrechnen",
+        "Das Ergebnis erscheint sofort beim Tippen, ohne dass Sie eine Schaltfläche drücken müssen",
+        "Das Ergebnis kann mit einem Klick in die Zwischenablage kopiert werden",
+        "Die Umrechnungstabelle deckt Werte von 0,5 kg bis 200 kg ab",
+        "Die Körpergewichtstabelle zeigt gängige Werte von 40 kg bis 120 kg mit Umrechnung in Pfund und Stone (britisches System)",
+        "Die Fitnessstudio-Gewichtstabelle rechnet gängige Lasten von 2,5 kg bis 100 kg um",
+        "Die umgekehrte Tabelle rechnet Pfund in Kilogramm für Werte von 1 bis 300 lb um",
+        "Alle Berechnungen erfolgen lokal im Browser – keine Daten verlassen Ihr Gerät",
+        "Die genaue Umrechnungsformel lautet Pfund = Kilogramm × 2,2046, basierend auf der Definition 1 Pfund = 0,45359237 kg",
+        "Funktioniert auf Smartphone, Tablet und Computer ohne Installation"
+      ]
+    },
+    "howTo": {
+      "name": "Wie rechnet man Kilogramm in Pfund um?",
+      "description": "Kurze Anleitung zur Nutzung des kg-in-Pfund-Umrechners.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert in Kilogramm eingeben",
+          "text": "Geben Sie im linken Feld die Anzahl der Kilogramm ein, die Sie in Pfund umrechnen möchten."
+        },
+        {
+          "name": "Ergebnis in Pfund ablesen",
+          "text": "Das Ergebnis in Pfund erscheint sofort im benachbarten Feld. Sie können es mit einem Klick in die Zwischenablage kopieren."
+        },
+        {
+          "name": "Richtung bei Bedarf umkehren",
+          "text": "Klicken Sie auf Tauschen, um den Umrechner auf Pfund in Kilogramm umzuschalten."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wann rechnet man Kilogramm in Pfund um?",
+      "html": "<p class=\"text-mid mb-4\">Das Kilogramm ist die Standardgewichtseinheit in Deutschland, Österreich, der Schweiz und dem größten Teil der Welt. Das Pfund (lb) dominiert in den Vereinigten Staaten und wird im Vereinigten Königreich weiterhin verwendet – besonders für das Körpergewicht, wo Briten zusätzlich die Stone-Einheit nutzen (1 Stone = 14 Pfund = ca. 6,35 kg).</p><p class=\"text-mid mb-4\">Eine Umrechnung von kg in Pfund ist nötig, wenn Sie Ihr Gewicht auf einer US-amerikanischen oder britischen Gesundheitswebsite prüfen, Sportgeräte kaufen, die in Pfund angegeben sind, ein Freigepäcklimit in Pfund interpretieren oder das Geburtsgewicht eines Kindes aus ausländischen Unterlagen lesen möchten.</p><p class=\"text-mid mb-4\">Ein Pfund entspricht genau 0,45359237 kg – dieser Wert ist seit 1959 als Konstante festgelegt. Umgekehrt gilt: 1 kg = 2,2046 Pfund. Der Umrechner berechnet das Ergebnis, sobald Sie einen Wert eingeben.</p><p class=\"text-mid\">Auf dieser Seite finden Sie eine kg-in-Pfund-Tabelle für Werte von 0,5 bis 200 kg, eine Körpergewichtstabelle mit Umrechnung in Pfund und Stone, eine Tabelle für Fitnessgewichte sowie eine umgekehrte Tabelle von Pfund in kg.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Kostenloser Kilogramm-in-Pfund-Umrechner – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die kg-in-Pfund-Umrechnung? Formel und Beispiel",
+      "html": "<p class=\"text-mid mb-4\">Die Umrechnung von Kilogramm in Pfund basiert auf einer festen Definition: Ein Pfund entspricht genau 0,45359237 kg. Um Kilogramm in Pfund umzurechnen, multiplizieren Sie die Kilogrammzahl mit 2,2046.</p><p class=\"text-mid mb-4\">Vollständige Formel: <strong>Pfund = Kilogramm × 2,2046</strong>. Umgekehrt: <strong>Kilogramm = Pfund × 0,4536</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Sie möchten wissen, wie viele Pfund eine Person mit 70 kg wiegt. Rechnung: 70 × 2,2046 = 154,32 lb. Im britischen System sind das 11 Stone 0,3 lb, da ein Stone 14 Pfund entspricht: 154,32 ÷ 14 = 11 Stone mit Rest 0,32 lb.</p><p class=\"text-mid\">Schnelle Schätzung ohne Taschenrechner: 1 kg ≈ 2,2 lb – multiplizieren Sie Kilogramm mit 2 und addieren Sie ein Fünftel des Ergebnisses. Beispiel: 80 kg × 2 = 160, plus 16 (20 % von 80) = 176 lb. Der genaue Wert beträgt 176,37 lb – ein Fehler von nur 0,2 %.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Umrechnungstabelle Kilogramm in Pfund",
+      "description": "Die folgende Tabelle zeigt die Umrechnung gängiger Kilogrammwerte in Pfund, auf zwei Dezimalstellen gerundet. Für genaue Werte oder seltenere Gewichte nutzen Sie den Umrechner oben.",
+      "labelHeader": "Kilogramm",
+      "cols": ["Pfund (lb)"],
+      "rows": [
+        { "label": "0,5 kg", "values": ["1,10 lb"] },
+        { "label": "1 kg", "values": ["2,20 lb"], "emphasis": true },
+        { "label": "2 kg", "values": ["4,41 lb"] },
+        { "label": "3 kg", "values": ["6,61 lb"] },
+        { "label": "4 kg", "values": ["8,82 lb"] },
+        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
+        { "label": "6 kg", "values": ["13,23 lb"] },
+        { "label": "7 kg", "values": ["15,43 lb"] },
+        { "label": "8 kg", "values": ["17,64 lb"] },
+        { "label": "9 kg", "values": ["19,84 lb"] },
+        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
+        { "label": "12 kg", "values": ["26,46 lb"] },
+        { "label": "15 kg", "values": ["33,07 lb"] },
+        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "25 kg", "values": ["55,12 lb"] },
+        { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "35 kg", "values": ["77,16 lb"] },
+        { "label": "40 kg", "values": ["88,18 lb"] },
+        { "label": "45 kg", "values": ["99,21 lb"] },
+        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
+        { "label": "55 kg", "values": ["121,25 lb"] },
+        { "label": "60 kg", "values": ["132,28 lb"] },
+        { "label": "65 kg", "values": ["143,30 lb"] },
+        { "label": "70 kg", "values": ["154,32 lb"], "emphasis": true },
+        { "label": "75 kg", "values": ["165,35 lb"] },
+        { "label": "80 kg", "values": ["176,37 lb"], "emphasis": true },
+        { "label": "85 kg", "values": ["187,39 lb"] },
+        { "label": "90 kg", "values": ["198,42 lb"] },
+        { "label": "95 kg", "values": ["209,44 lb"] },
+        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true },
+        { "label": "110 kg", "values": ["242,51 lb"] },
+        { "label": "120 kg", "values": ["264,55 lb"] },
+        { "label": "130 kg", "values": ["286,60 lb"] },
+        { "label": "140 kg", "values": ["308,65 lb"] },
+        { "label": "150 kg", "values": ["330,69 lb"], "emphasis": true },
+        { "label": "175 kg", "values": ["385,81 lb"] },
+        { "label": "200 kg", "values": ["440,92 lb"] }
+      ],
+      "caption": "Möchten Sie in die andere Richtung umrechnen? Nutzen Sie unseren <a href=\"/de/werkzeuge/pfund-in-kg-umrechner\">Pfund-in-kg-Umrechner</a> mit eigener Tabelle und ausführlichen Inhalten."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Körpergewicht in kg – Umrechnung in Pfund und Stone",
+      "description": "Die Tabelle rechnet gängige Körpergewichtswerte von 40 kg bis 120 kg in Pfund (lb) und Stone und Pfund (st lb) um – das in Großbritannien verwendete Format. Ein Stone entspricht 14 Pfund. Die Stone-Spalte ist auf eine Dezimalstelle gerundet.",
+      "labelHeader": "Körpergewicht",
+      "cols": ["Pfund (lb)", "Stone und Pfund (st lb)"],
+      "rows": [
+        { "label": "40 kg", "values": ["88,18 lb", "6 st 4,2 lb"] },
+        { "label": "45 kg", "values": ["99,21 lb", "7 st 1,2 lb"] },
+        {
+          "label": "50 kg",
+          "values": ["110,23 lb", "7 st 12,2 lb"],
+          "emphasis": true
+        },
+        { "label": "55 kg", "values": ["121,25 lb", "8 st 9,3 lb"] },
+        {
+          "label": "60 kg",
+          "values": ["132,28 lb", "9 st 6,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "65 kg",
+          "values": ["143,30 lb", "10 st 3,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "70 kg",
+          "values": ["154,32 lb", "11 st 0,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "75 kg",
+          "values": ["165,35 lb", "11 st 11,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "80 kg",
+          "values": ["176,37 lb", "12 st 8,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "85 kg",
+          "values": ["187,39 lb", "13 st 5,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "90 kg",
+          "values": ["198,42 lb", "14 st 2,4 lb"],
+          "emphasis": true
+        },
+        { "label": "95 kg", "values": ["209,44 lb", "14 st 13,4 lb"] },
+        {
+          "label": "100 kg",
+          "values": ["220,46 lb", "15 st 10,5 lb"],
+          "emphasis": true
+        },
+        { "label": "110 kg", "values": ["242,51 lb", "17 st 4,5 lb"] },
+        { "label": "120 kg", "values": ["264,55 lb", "18 st 12,6 lb"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Umgekehrte Tabelle – Pfund in Kilogramm",
+      "description": "Die folgende Tabelle rechnet gängige Pfundwerte in Kilogramm um, auf zwei Dezimalstellen gerundet.",
+      "labelHeader": "Pfund (lb)",
+      "cols": ["Kilogramm"],
+      "rows": [
+        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
+        { "label": "2 lb", "values": ["0,91 kg"] },
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
+        { "label": "20 lb", "values": ["9,07 kg"] },
+        { "label": "30 lb", "values": ["13,61 kg"] },
+        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
+        { "label": "70 lb", "values": ["31,75 kg"] },
+        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
+        { "label": "170 lb", "values": ["77,11 kg"] },
+        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
+        { "label": "220 lb", "values": ["99,79 kg"] },
+        { "label": "250 lb", "values": ["113,40 kg"] },
+        { "label": "300 lb", "values": ["136,08 kg"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Fitnessgewichte – gängige Lasten in kg und lb",
+      "description": "Fitnessgeräte aus den USA sind in Pfund beschriftet. Die Tabelle rechnet Standardgewichte um – von Kurzhanteln bis zur olympischen Langhantel.",
+      "labelHeader": "Gewicht (kg)",
+      "cols": ["Gewicht (lb)"],
+      "rows": [
+        { "label": "2,5 kg", "values": ["5,51 lb"] },
+        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
+        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
+        { "label": "12,5 kg", "values": ["27,56 lb"] },
+        { "label": "15 kg", "values": ["33,07 lb"] },
+        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "25 kg", "values": ["55,12 lb"] },
+        { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "40 kg", "values": ["88,18 lb"] },
+        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
+        { "label": "60 kg", "values": ["132,28 lb"] },
+        { "label": "80 kg", "values": ["176,37 lb"] },
+        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann rechnet man typischerweise Kilogramm in Pfund um?",
+      "description": "Die Umrechnung von kg in lb taucht in mehreren konkreten Situationen auf.",
+      "items": [
+        {
+          "title": "Körpergewicht und Diät",
+          "description": "Fitness-Apps, Gesundheitsportale und Wearables aus den USA und Großbritannien zeigen das Gewicht in Pfund oder Stone an. Wenn ein amerikanischer Personal Trainer ein Zielgewicht von 180 lb nennt, sind das 180 × 0,4536 = 81,65 kg. Umgekehrt: 80 kg × 2,2046 = 176,37 lb. Die Körpergewichtstabelle oben enthält fertige Umrechnungen für 40 bis 120 kg."
+        },
+        {
+          "title": "Training und Fitnessstudio",
+          "description": "Englischsprachige Trainingsprogramme aus den USA geben alle Gewichte ausschließlich in Pfund an. Eine olympische Langhantel wiegt 45 lb (ca. 20 kg), typische 25-lb-Kurzhanteln sind etwas mehr als 11 kg. Kraftsport-Weltrekorde werden in den USA ebenfalls in Pfund angegeben – die Fitnessstudio-Tabelle oben zeigt die gängigsten Lasten."
+        },
+        {
+          "title": "Babygewicht",
+          "description": "In den USA und Großbritannien wird das Geburtsgewicht eines Neugeborenen in Pfund und Unzen angegeben. Ein gesundes Neugeborenes mit 3,5 kg entspricht etwa 7 lb 11 oz (7,716 lb). Umrechnung: 3,5 × 2,2046 = 7,72 lb; der Nachkommateil 0,72 lb × 16 Unzen = 11,5 oz. Der Umrechner liefert das Ergebnis in Dezimalpfund – der Rest wird mit 16 multipliziert, um Unzen zu erhalten."
+        },
+        {
+          "title": "Reisegepäck und Pakete",
+          "description": "Viele Fluggesellschaften, besonders US-amerikanische Carrier, geben Freigepäcklimits in Pfund an. Das Standardlimit von 50 lb entspricht 22,68 kg, ein Limit von 70 lb ist 31,75 kg. US-Paketdienste wie UPS und FedEx berechnen Versandkosten pro Pfund – hilfreich beim Bestellen von Geräten aus den USA."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zur Umrechnung von kg in Pfund",
+      "items": [
+        {
+          "question": "Wie viele Pfund sind 1 Kilogramm?",
+          "answer": "Ein Kilogramm entspricht 2,2046 Pfund (lb). Das ergibt sich aus der Definition: 1 Pfund = 0,45359237 kg, also 1 kg = 1 ÷ 0,45359237 ≈ 2,2046 lb. Gerundet: 1 kg ≈ 2,2 lb."
+        },
+        {
+          "question": "Wie lautet die Formel zur Umrechnung von kg in Pfund?",
+          "answer": "Die Formel lautet: Pfund = Kilogramm × 2,2046. Umgekehrt: Kilogramm = Pfund × 0,4536. Beispiel: 70 kg × 2,2046 = 154,32 lb."
+        },
+        {
+          "question": "Wie viele Pfund sind 70 kg?",
+          "answer": "70 kg sind 154,32 Pfund (lb), was im britischen System 11 Stone 0,3 lb entspricht. Rechnung: 70 × 2,2046 = 154,32; 154,32 ÷ 14 = 11 Stone mit Rest 0,32 lb."
+        },
+        {
+          "question": "Wie viele Pfund sind 80 kg?",
+          "answer": "80 kg sind 176,37 lb bzw. 12 Stone 8,4 lb im britischen System. Das ist ein Gewicht, das in englischsprachigen Ländern oft mit einem athletischen oder normalgewichtigen Mann assoziiert wird."
+        },
+        {
+          "question": "Wie viele Pfund sind 100 kg?",
+          "answer": "100 kg sind 220,46 lb. Gerundet: 100 kg sind etwas mehr als 220 Pfund – ein leicht zu merkender Richtwert. Im britischen System sind das 15 Stone 10,5 lb."
+        },
+        {
+          "question": "Wie viele Pfund sind 50 kg?",
+          "answer": "50 kg sind 110,23 lb. Als Merkhilfe: 50 kg sind etwas mehr als 110 Pfund. Im britischen System: 7 Stone 12,2 lb."
+        },
+        {
+          "question": "Wie viele Kilogramm hat ein Pfund?",
+          "answer": "Ein Pfund entspricht genau 0,45359237 kg. Dieser Wert ist seit 1959 als internationales avoirdupois-Pfund festgelegt. Gerundet: 1 lb ≈ 0,454 kg."
+        },
+        {
+          "question": "Wie rechne ich kg ohne Taschenrechner in Pfund um?",
+          "answer": "Schnelle Näherung: Kilogramm mit 2 multiplizieren und 10 % des Ergebnisses addieren. Beispiel: 80 kg × 2 = 160, plus 10 % von 160 = 16, zusammen 176 lb. Der genaue Wert beträgt 176,37 lb – Fehler nur 0,2 %."
+        },
+        {
+          "question": "Was ist ein Stone und wie rechnet man kg in Stone um?",
+          "answer": "Ein Stone ist eine britische Masseeinheit: 1 Stone = 14 Pfund = 6,3503 kg. In Großbritannien wird das Körpergewicht häufig in Stone und Pfund angegeben (z. B. '11 stone 4 lb'). Umrechnung kg in Stone: kg durch 6,3503 teilen. Beispiel: 70 kg ÷ 6,3503 = 11,02 Stone = 11 Stone 0,3 lb."
+        },
+        {
+          "question": "Wie viel Pfund und Unzen sind 3,5 kg?",
+          "answer": "3,5 kg sind 7,716 lb. In Pfund und Unzen: 7 Pfund und 0,716 × 16 = 11,5 Unzen, also ca. 7 lb 11 oz. Ein gesundes Neugeborenes wiegt in der Regel zwischen 3 und 4 kg, das entspricht etwa 6,6 bis 8,8 lb."
+        },
+        {
+          "question": "Wie viel kg sind 50 lb Freigepäck?",
+          "answer": "50 lb sind 50 × 0,45359237 = 22,68 kg. Das ist das Standardgepäcklimit vieler Fluggesellschaften für aufgegebenes Gepäck. Das häufige Limit von 70 lb (z. B. in der Business Class) entspricht 31,75 kg."
+        },
+        {
+          "question": "Wie viele Pfund sind 60 kg?",
+          "answer": "60 kg sind 132,28 lb bzw. 9 Stone 6,3 lb im britischen System. 60 kg ist ein typisches Gewicht für eine Frau mit durchschnittlicher Statur in Deutschland und Europa."
+        },
+        {
+          "question": "Wie viele Pfund sind 90 kg?",
+          "answer": "90 kg sind 198,42 lb. Gerundet sind das fast genau 200 Pfund – ein praktischer Referenzwert. Im britischen System: 14 Stone 2,4 lb."
+        },
+        {
+          "question": "Wie viele kg sind 200 Pfund?",
+          "answer": "200 lb sind 200 × 0,45359 = 90,72 kg. Eine gängige Näherung: 200 Pfund sind knapp unter 91 kg."
+        },
+        {
+          "question": "Wie viele Pfund sind 45 kg?",
+          "answer": "45 kg sind 99,21 lb – fast genau 100 Pfund. Das ist auch das Gewicht einer olympischen Langhantelstange in Pfund (45 lb = 20,41 kg), ein im Kraftsport bekannter Referenzwert."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Haben Sie eine Frage oder einen Vorschlag?",
+      "description": "Wenn Sie einen Fehler in den Tabellen entdecken oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
+      "imageAlt": "Kontakt mit Arteon Agency",
+      "subject": "Kg-in-Pfund-Umrechner"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere nützliche Einheitenumrechner"
+    }
+  ]
+}

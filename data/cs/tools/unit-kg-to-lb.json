@@ -1,0 +1,302 @@
+{
+  "toolKey": "kgToLb",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník kilogramů na libry – kalkulačka kg na lb",
+    "description": "Převeď kilogramy na libry okamžitě. Hodí se pro tělesnou hmotnost, váhy v posilovně, limity zavazadel a váhu novorozenců. Tabulka od 0,5 do 200 kg včetně sloupce stone.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-kg-na-libry"
+  },
+  "hero": {
+    "title": "Převeď kilogramy na libry",
+    "description": "Zadej hodnotu v kilogramech a výsledek v librách se zobrazí okamžitě. Převodník se hodí ke kontrole tělesné hmotnosti v imperiálním systému, ke čtení limitů zavazadel v librách, k porovnání sportovních výsledků s americkými tabulkami nebo k převodu porodní váhy novorozence.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-kg-na-libry",
+      "label": "kg na libry"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník kilogramů na libry – kalkulačka kg na lb",
+      "alternateName": [
+        "převodník kg na libry",
+        "kalkulačka kg na lb",
+        "kilogramy na libry",
+        "kg v librách",
+        "převod kg libry",
+        "kg na pounds",
+        "tabulka kg libry",
+        "kolik liber je kilogram",
+        "kg na stone a libry",
+        "vzorec kg na libry",
+        "přepočet kg na libry",
+        "kila na libry",
+        "kg na lbs",
+        "převodník kilo libra"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Bezplatný převodník kilogramů na libry fungující v prohlížeči bez registrace. Zadej hodnotu v kg a výsledek v librách se zobrazí okamžitě. Hodí se ke kontrole tělesné hmotnosti v amerických nebo britských zdravotních aplikacích, k porovnání tréninkových vah s americkými programy, k výpočtu limitů zavazadel nebo ke čtení porodní váhy novorozence v imperiálních jednotkách.",
+      "featureList": [
+        "Převod funguje oběma směry: kilogramy na libry i libry na kilogramy",
+        "Výsledek se zobrazuje okamžitě při psaní, bez nutnosti mačkat jakékoli tlačítko",
+        "Výsledek lze zkopírovat do schránky jedním kliknutím",
+        "Tabulka převodu pokrývá hodnoty od 0,5 kg do 200 kg",
+        "Tabulka tělesné hmotnosti zobrazuje běžné hodnoty od 40 kg do 120 kg s převodem na libry a stone (britský systém)",
+        "Tabulka vah do posilovny převádí běžné zátěže od 2,5 kg do 100 kg",
+        "Všechny výpočty probíhají lokálně v prohlížeči: žádná data neopouštějí tvé zařízení",
+        "Přesný vzorec je libry = kilogramy × 2,2046, vycházející z definice 1 libra = 0,45359237 kg",
+        "Funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést kilogramy na libry?",
+      "description": "Rychlý návod k použití převodníku kg na libry.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej hodnotu v kilogramech",
+          "text": "Do pole vlevo zadej počet kilogramů, které chceš převést na libry."
+        },
+        {
+          "name": "Přečti výsledek v librách",
+          "text": "Výsledek v librách se zobrazí okamžitě v poli vedle. Zkopírovat ho do schránky můžeš jedním kliknutím."
+        },
+        {
+          "name": "Vyměň směr, pokud potřebuješ",
+          "text": "Klikni na Přehodit a převodník přepneš do režimu libry na kilogramy."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kdy převádíš kilogramy na libry?",
+      "html": "<p class=\"text-mid mb-4\">Kilogram je standardní jednotka hmotnosti v Česku i na Slovensku. Libra (lb) dominuje ve Spojených státech a zůstává běžná ve Velké Británii, zejména pro tělesnou hmotnost — kde Britové používají také stone (1 stone = 14 liber = přibližně 6,35 kg).</p><p class=\"text-mid mb-4\">Převod kilogramů na libry je potřeba, když si kontroluješ váhu v americké zdravotní aplikaci, kupuješ sportovní vybavení popsané v librách, interpretuješ limit zavazadla v librách nebo chceš vědět porodní váhu miminka v dokumentaci cizojazyčné nemocnice.</p><p class=\"text-mid mb-4\">Jedna libra odpovídá přesně 0,45359237 kg — hodnota platná jako konstanta od roku 1959. Opačně: 1 kg = 2,2046 liber. Převodník vypočítá výsledek, jakmile začneš psát.</p><p class=\"text-mid\">Na této stránce najdeš tabulku kg na libry pro hodnoty od 0,5 do 200 kg, tabulku tělesné hmotnosti s převodem na libry a stone, tabulku vah do posilovny a zpětnou tabulku liber na kg.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Bezplatný převodník kilogramů na libry – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod kg na libry? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod kilogramů na libry vychází z pevné definice: jedna libra odpovídá přesně 0,45359237 kg. Pro získání liber vynásob kilogramy číslem 2,2046.</p><p class=\"text-mid mb-4\">Celý vzorec: <strong>libry = kilogramy × 2,2046</strong>. Opačně: <strong>kilogramy = libry × 0,4536</strong>.</p><p class=\"text-mid mb-4\">Příklad: člověk váží 70 kg a chce vědět, kolik je to liber. Výpočet: 70 × 2,2046 = 154,32 lb. V britském systému je to 11 stone 0,3 lb, protože 1 stone = 14 liber: 154,32 ÷ 14 = 11 stone se zbytkem 0,32 lb.</p><p class=\"text-mid\">Rychlý odhad bez kalkulačky: vynásob kilogramy dvěma a přidej 10 % výsledku. Například: 80 kg × 2 = 160, plus 16 (10 % ze 160) = 176 lb. Přesná hodnota je 176,37 lb — chyba pouhých 0,2 %.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabulka převodu kilogramů na libry",
+      "description": "Následující tabulka ukazuje převod nejčastějších hodnot v kilogramech na libry, zaokrouhlený na dvě desetinná místa. Pro přesnou hodnotu použij převodník výše.",
+      "labelHeader": "Kilogramy",
+      "cols": ["Libry (lb)"],
+      "rows": [
+        { "label": "0,5 kg", "values": ["1,10 lb"] },
+        { "label": "1 kg", "values": ["2,20 lb"], "emphasis": true },
+        { "label": "2 kg", "values": ["4,41 lb"] },
+        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
+        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
+        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "40 kg", "values": ["88,18 lb"] },
+        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
+        { "label": "60 kg", "values": ["132,28 lb"] },
+        { "label": "70 kg", "values": ["154,32 lb"], "emphasis": true },
+        { "label": "80 kg", "values": ["176,37 lb"], "emphasis": true },
+        { "label": "90 kg", "values": ["198,42 lb"] },
+        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true },
+        { "label": "120 kg", "values": ["264,55 lb"] },
+        { "label": "150 kg", "values": ["330,69 lb"], "emphasis": true },
+        { "label": "200 kg", "values": ["440,92 lb"] }
+      ],
+      "caption": "Chceš převádět opačným směrem? Použij náš <a href=\"/cs/nastroje/prevodnik-liber-na-kg\">převodník liber na kg</a> s vlastní tabulkou a podrobným obsahem."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tělesná hmotnost v kg – převod na libry a stone",
+      "description": "Tabulka převádí nejčastější hodnoty tělesné hmotnosti od 40 kg do 120 kg na libry (lb) a stone a libry (st lb), formát používaný ve Velké Británii. Jeden stone je 14 liber.",
+      "labelHeader": "Tělesná hmotnost",
+      "cols": ["Libry (lb)", "Stone a libry (st lb)"],
+      "rows": [
+        { "label": "40 kg", "values": ["88,18 lb", "6 st 4,2 lb"] },
+        {
+          "label": "50 kg",
+          "values": ["110,23 lb", "7 st 12,2 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "60 kg",
+          "values": ["132,28 lb", "9 st 6,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "70 kg",
+          "values": ["154,32 lb", "11 st 0,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "75 kg",
+          "values": ["165,35 lb", "11 st 11,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "80 kg",
+          "values": ["176,37 lb", "12 st 8,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "85 kg",
+          "values": ["187,39 lb", "13 st 5,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "90 kg",
+          "values": ["198,42 lb", "14 st 2,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "100 kg",
+          "values": ["220,46 lb", "15 st 10,5 lb"],
+          "emphasis": true
+        },
+        { "label": "110 kg", "values": ["242,51 lb", "17 st 4,5 lb"] },
+        { "label": "120 kg", "values": ["264,55 lb", "18 st 12,6 lb"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Zpětná tabulka – libry na kilogramy",
+      "description": "Následující tabulka převádí běžné hodnoty v librách na kilogramy, zaokrouhlené na dvě desetinná místa.",
+      "labelHeader": "Libry (lb)",
+      "cols": ["Kilogramy"],
+      "rows": [
+        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
+        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
+        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
+        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
+        { "label": "300 lb", "values": ["136,08 kg"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Váhy do posilovny – běžné zátěže v kg a lb",
+      "description": "Fitness vybavení vyráběné v USA je označeno v librách. Tabulka převádí standardní váhy — od činek až po olympickou osu.",
+      "labelHeader": "Váha (kg)",
+      "cols": ["Váha (lb)"],
+      "rows": [
+        { "label": "2,5 kg", "values": ["5,51 lb"] },
+        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
+        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
+        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "25 kg", "values": ["55,12 lb"] },
+        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
+        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Časté otázky k převodu kg na libry",
+      "items": [
+        {
+          "question": "Kolik liber je 1 kilogram?",
+          "answer": "Jeden kilogram je 2,2046 liber (lb). Plyne to z definice: 1 libra = 0,45359237 kg, takže 1 kg = 1 ÷ 0,45359237 ≈ 2,2046 lb. Zaokrouhleno na jedno desetinné místo: 1 kg ≈ 2,2 lb."
+        },
+        {
+          "question": "Jaký je vzorec pro převod kg na libry?",
+          "answer": "Vzorec je: libry = kilogramy × 2,2046. Opačně: kilogramy = libry × 0,4536. Příklad: 70 kg × 2,2046 = 154,32 lb."
+        },
+        {
+          "question": "Kolik liber je 70 kg?",
+          "answer": "70 kg je 154,32 liber (lb), což v britském systému odpovídá 11 stone 0,3 lb. Výpočet: 70 × 2,2046 = 154,32; 154,32 ÷ 14 = 11 stone se zbytkem 0,32 lb."
+        },
+        {
+          "question": "Kolik liber je 80 kg?",
+          "answer": "80 kg je 176,37 lb, v britském systému 12 stone 8,4 lb."
+        },
+        {
+          "question": "Kolik liber je 100 kg?",
+          "answer": "100 kg je 220,46 lb. Pro zapamatování: 100 kg je o trochu více než 220 liber, snadno zapamatovatelná referenční hodnota. V britském systému: 15 stone 10,5 lb."
+        },
+        {
+          "question": "Kolik liber je 60 kg?",
+          "answer": "60 kg je 132,28 lb, v britském systému 9 stone 6,3 lb."
+        },
+        {
+          "question": "Kolik kilogramů je libra?",
+          "answer": "Jedna libra odpovídá přesně 0,45359237 kg. Tato hodnota je jako konstanta platná od roku 1959 pod názvem mezinárodní avoirdupoisová libra. Zaokrouhleno: 1 lb ≈ 0,454 kg."
+        },
+        {
+          "question": "Jak převést kg na libry bez kalkulačky?",
+          "answer": "Rychlý odhad: vynásob kilogramy dvěma a přidej 10 % výsledku. Příklad: 80 kg × 2 = 160, plus 16 (10 % ze 160) = 176 lb. Přesná hodnota je 176,37 lb — chyba pouze 0,2 %."
+        },
+        {
+          "question": "Co je stone a jak se převádí kg na stone?",
+          "answer": "Stone je britská jednotka hmotnosti: 1 stone = 14 liber = 6,3503 kg. Ve Velké Británii se tělesná hmotnost uvádí obvykle ve stonech a librách (např. '11 stone 4 lb'). Převod kg na stone: vyděl kg číslem 6,3503. Příklad: 70 kg ÷ 6,3503 = 11,02 stone = 11 stone 0,3 lb."
+        },
+        {
+          "question": "Kolik liber a uncí je 3,5 kg?",
+          "answer": "3,5 kg je 7,716 lb. V librách a uncích: 7 liber a 0,716 × 16 = 11,5 unce, tedy přibližně 7 lb 11 oz. Zdravé novorozeně obvykle váží 3 až 4 kg, tedy přibližně 6,6–8,8 lb."
+        },
+        {
+          "question": "Kolik liber je 90 kg?",
+          "answer": "90 kg je 198,42 lb — téměř přesně 200 liber, velmi praktická referenční hodnota. V britském systému: 14 stone 2,4 lb."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Máš otázku nebo nápad na zlepšení?",
+      "description": "Pokud najdeš chybu v tabulkách nebo máš nápad jak převodník vylepšit, napiš nám. Odpovídáme na každou zprávu.",
+      "imageAlt": "Kontaktovat Arteon Agency",
+      "subject": "Převodník kg na libry"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    }
+  ]
+}

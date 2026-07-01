@@ -192,6 +192,8 @@ const UNIT_KEYS = new Set([
   'inchesToPxDpi',
   'cmToInches',
   'inchesToCm',
+  'kgToLb',
+  'lbToKg',
   'hexToRgb',
   'rgbToCmyk',
   'bytesConverter',

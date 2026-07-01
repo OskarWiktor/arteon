@@ -1,0 +1,260 @@
+{
+  "toolKey": "lbToKg",
+  "locale": "fi",
+  "metadata": {
+    "title": "Naulojen muunnin kilogrammoiksi – laskuri lb kg",
+    "description": "Muunna nauloja kilogrammoiksi välittömästi. Hyödyllinen yhdysvaltalaisten sovellusten painolukuihin, kuntosalikuormituksiin ja matkatavararajoihin. Taulukko 1–300 lb.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/naulaa-kiloksi-muunnin"
+  },
+  "hero": {
+    "title": "Muunna nauloja kilogrammoiksi",
+    "description": "Kirjoita naulanarvo ja tulos kilogrammoina näkyy välittömästi. Muunnin on hyödyllinen, kun luet painoasi yhdysvaltalaisesta tai brittiläisestä terveys- tai fitnesssovelluksesta, ostat urheiluvälineitä, jotka on merkitty naulana, tulkitset amerikkalaisen lentoyhtiön matkatavararajaa tai muunnat vastasyntyneen painon englanninkielisestä sairaaladokumentista.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/naulaa-kiloksi-muunnin",
+      "label": "naulaa kiloksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Naulojen muunnin kilogrammoiksi – laskuri lb kg",
+      "alternateName": [
+        "naula kilogramma muunnin",
+        "lb kg laskuri",
+        "nauloja kilogrammoiksi",
+        "paljonko kg on X naulaa",
+        "lb kg",
+        "taulukko naula kilogramma",
+        "muunna lb kg",
+        "naulat kilogrammoiksi",
+        "naulan muunnos",
+        "kaava lb kg",
+        "pounds kg",
+        "pounds kilogrammoiksi",
+        "lbs kg",
+        "muunnin pounds kilo"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Ilmainen naulojen muunnin kilogrammoiksi, joka toimii selaimessa ilman rekisteröitymistä. Kirjoita arvo naulana ja tulos kilogrammoina näkyy välittömästi. Hyödyllinen kehonpainon lukemiseen amerikkalaisista terveyssovelluksista, harjoitusohjelmien painojen muuntamiseen, matkatavararajojen tarkistamiseen tai vastasyntyneen painon tulkitsemiseen.",
+      "featureList": [
+        "Muunnos toimii molempiin suuntiin: naulasta kilogrammoiksi ja kilogrammoista naulaksi",
+        "Tulos näkyy välittömästi kirjoittaessasi, eikä mitään painiketta tarvitse painaa",
+        "Tulos voidaan kopioida leikepöydälle yhdellä napsautuksella",
+        "Muunnostaulukko kattaa arvot 1–300 lb",
+        "Kehonpainotaulukko sisältää tyypilliset arvot 88–265 lb kilogrammoiksi muunnettuna",
+        "Kuntosali- ja powerliftingtaulukko muuntaa vakiopainot 5–225 lb",
+        "Kaikki laskut tehdään paikallisesti selaimessa: mikään tieto ei poistu laitteeltasi",
+        "Tarkka kaava on kg = naula × 0,45359237, perustuu vuoden 1959 kansainväliseen määritelmään",
+        "Toimii puhelimella, tabletilla ja tietokoneella ilman asennusta"
+      ]
+    },
+    "howTo": {
+      "name": "Kuinka muuntaa nauloja kilogrammoiksi?",
+      "description": "Pikaohje naula–kilogramma-muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Kirjoita arvo naulana",
+          "text": "Kirjoita vasemmalle kentälle naulamäärä, jonka haluat muuntaa kilogrammoiksi."
+        },
+        {
+          "name": "Lue tulos kilogrammoina",
+          "text": "Tulos kilogrammoina näkyy välittömästi viereisessä kentässä. Voit kopioida sen leikepöydälle yhdellä napsautuksella."
+        },
+        {
+          "name": "Vaihda suunta tarvittaessa",
+          "text": "Napsauta Vaihda vaihtaaksesi muuntimen kilogramma–naula-tilaan."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin nauloja muunnetaan kilogrammoiksi?",
+      "html": "<p class=\"text-mid mb-4\">Suomessa kilogramma on massayksikkö, jota käytetään kehonpainoon, elintarvikkeisiin, tavaraan ja urheiluvälineisiin. Yhdysvaltalaiset terveys- ja fitnesssovellukset — kuten MyFitnessPal, Apple Health tai Fitbit — näyttävät kuitenkin painon oletusasetuksena naulana (lb). Suositut amerikkalaiset harjoitusohjelmat käyttävät myös nauloja: olympiatanko painaa 45 lb (20 kg) ja vakiolevyt 45, 35, 25, 10 ja 5 lb.</p><p class=\"text-mid mb-4\">Naulojen muuntaminen kilogrammoiksi on tarpeen myös, kun luet amerikkalaisten lentoyhtiöiden matkatavararajoja, käytät naulana kalibroitua vaakaa tai tulkitset englanninkielisen sairaalan lääketieteellisiä asiakirjoja, joissa vastasyntyneen paino on merkitty naulana ja unsseina.</p><p class=\"text-mid\">Yksi naula on tarkalleen 0,45359237 kg. Käänteisesti: 1 kg = 2,2046 naulaa. Muunnin laskee tuloksen heti kun kirjoitat luvun, ja voit kopioida tuloksen yhdellä napsautuksella.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Ilmainen naula–kilogramma-muunnin – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kuinka naula–kilogramma-muunnos toimii? Kaava ja esimerkki",
+      "html": "<p class=\"text-mid mb-4\">Kaava on: <strong>kilogramma = naula × 0,45359237</strong>. Käänteisesti: <strong>naula = kilogramma × 2,2046</strong>. Nämä arvot perustuvat kansainvälisen avoirdupois-naulan tarkkaan määritelmään vuodelta 1959: 1 naula = 0,45359237 kg.</p><p class=\"text-mid mb-4\">Esimerkki: henkilö painaa 154 lb amerikkalaisessa sovelluksessa. Lasku: 154 × 0,4536 = 69,85 kg — eli noin 70 kg.</p><p class=\"text-mid\">Nopea arvio ilman laskinta: jaa naulat luvulla 2,2. Esimerkki: 154 lb ÷ 2,2 = 70 kg. Tarkka arvo on 69,85 kg — virhe vain 0,2 %.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Naula–kilogramma-muunnostaulukko",
+      "description": "Seuraava taulukko näyttää yleisimpien naulaiarvojen muunnoksen kilogrammoiksi pyöristettynä kahteen desimaaliin. Tarkkaa arvoa varten käytä yllä olevaa muunninta.",
+      "labelHeader": "Naulaa (lb)",
+      "cols": ["Kilogrammaa (kg)"],
+      "rows": [
+        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
+        { "label": "20 lb", "values": ["9,07 kg"] },
+        { "label": "30 lb", "values": ["13,61 kg"] },
+        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
+        { "label": "70 lb", "values": ["31,75 kg"] },
+        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
+        { "label": "180 lb", "values": ["81,65 kg"], "emphasis": true },
+        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
+        { "label": "220 lb", "values": ["99,79 kg"] },
+        { "label": "250 lb", "values": ["113,40 kg"] },
+        { "label": "300 lb", "values": ["136,08 kg"] }
+      ],
+      "caption": "Haluatko muuntaa vastakkaiseen suuntaan? Käytä <a href=\"/fi/tyokalut/kg-naulaksi-muunnin\">kilogramma–naula-muunnintamme</a>, jossa on oma taulukko ja yksityiskohtainen sisältö."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Kehonpaino naulana – muunnos kilogrammoiksi",
+      "description": "Taulukko muuntaa yleisimmät kehonpainoarvot naulana kilogrammoiksi. Arvot kattavat välillä 88 lb (noin 40 kg) ja 265 lb (noin 120 kg).",
+      "labelHeader": "Kehonpaino (lb)",
+      "cols": ["Kilogrammaa (kg)"],
+      "rows": [
+        { "label": "88 lb", "values": ["39,92 kg"] },
+        { "label": "99 lb", "values": ["44,91 kg"] },
+        { "label": "110 lb", "values": ["49,90 kg"], "emphasis": true },
+        { "label": "121 lb", "values": ["54,88 kg"] },
+        { "label": "132 lb", "values": ["59,87 kg"] },
+        { "label": "143 lb", "values": ["64,86 kg"] },
+        { "label": "154 lb", "values": ["69,85 kg"], "emphasis": true },
+        { "label": "165 lb", "values": ["74,84 kg"], "emphasis": true },
+        { "label": "176 lb", "values": ["79,83 kg"], "emphasis": true },
+        { "label": "187 lb", "values": ["84,82 kg"], "emphasis": true },
+        { "label": "198 lb", "values": ["89,81 kg"], "emphasis": true },
+        { "label": "220 lb", "values": ["99,79 kg"], "emphasis": true },
+        { "label": "242 lb", "values": ["109,77 kg"] },
+        { "label": "265 lb", "values": ["120,20 kg"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Kuntosali- ja powerliftingpainot naulana – muunnos kilogrammoiksi",
+      "description": "Suosituimmat amerikkalaiset harjoitusohjelmat ilmoittavat kaikki kuormat naulana. Taulukko muuntaa yleisimmät tanko- ja levypainot.",
+      "labelHeader": "Paino (lb)",
+      "cols": ["Kilogrammaa (kg)"],
+      "rows": [
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"] },
+        { "label": "25 lb", "values": ["11,34 kg"] },
+        { "label": "35 lb", "values": ["15,88 kg"] },
+        {
+          "label": "45 lb (olympiatanko)",
+          "values": ["20,41 kg"],
+          "emphasis": true
+        },
+        { "label": "95 lb", "values": ["43,09 kg"] },
+        {
+          "label": "135 lb (penkkipunnerrus, viitearvo)",
+          "values": ["61,23 kg"],
+          "emphasis": true
+        },
+        { "label": "185 lb", "values": ["83,91 kg"] },
+        {
+          "label": "225 lb (penkkipunnerrus, edistynyt)",
+          "values": ["102,06 kg"],
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysyttyjä kysymyksiä naula–kilogramma-muunnoksesta",
+      "items": [
+        {
+          "question": "Paljonko kiloja on yksi naula?",
+          "answer": "Yksi naula on tarkalleen 0,45359237 kg. Tämä arvo on ollut vakio vuodesta 1959 nimellä kansainvälinen avoirdupois-naula. Pyöristettynä: 1 lb ≈ 0,454 kg."
+        },
+        {
+          "question": "Paljonko kiloja on 100 naulaa?",
+          "answer": "100 lb on 45,36 kg. Käytännön viitearvo: 100 naulaa on hieman alle 50 kg."
+        },
+        {
+          "question": "Paljonko kiloja on 150 naulaa?",
+          "answer": "150 lb on 68,04 kg. Tämä on tyypillinen kehonpaino keskiverrolle suomalaiselle henkilölle."
+        },
+        {
+          "question": "Paljonko kiloja on 200 naulaa?",
+          "answer": "200 lb on 90,72 kg — eli noin 91 kg, tukevahkon tai urheilullisen henkilön paino."
+        },
+        {
+          "question": "Mikä on kaava naulojen muuntamiseksi kilogrammoiksi?",
+          "answer": "Kaava on: kg = naula × 0,45359237. Nopeisiin laskuihin käytetään 0,4536. Käänteisesti: naula = kg × 2,2046."
+        },
+        {
+          "question": "Paljonko nauloja on 70 kg?",
+          "answer": "70 kg on 154,32 lb. Muunnos tähän suuntaan (kg naulaksi) tehdään kertomalla luvulla 2,2046: 70 × 2,2046 = 154,32 lb."
+        },
+        {
+          "question": "Paljonko kiloja on 50 naulaa?",
+          "answer": "50 lb on 22,68 kg. Tämä on myös yleisin amerikkalaisten lentoyhtiöiden ruumaan menevän matkatavaran painoraja economy-luokassa."
+        },
+        {
+          "question": "Miten nauloja muunnetaan kilogrammoiksi ilman laskinta?",
+          "answer": "Nopea arvio: jaa naulat luvulla 2,2. Esimerkki: 154 lb ÷ 2,2 = 70 kg. Tarkka arvo on 69,85 kg — virhe vain 0,2 %."
+        },
+        {
+          "question": "Paljonko kiloja on 130 naulaa?",
+          "answer": "130 lb on 58,97 kg — eli melkein tasan 59 kg. Lasku: 130 × 0,4536 = 58,97 kg."
+        },
+        {
+          "question": "Paljonko kiloja on 180 naulaa?",
+          "answer": "180 lb on 81,65 kg. Tämä on tyypillinen paino miehelle, jolla on normaali tai lievästi urheilullinen rakenne Suomessa."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Onko sinulla kysymys tai kehitysehdotus?",
+      "description": "Jos löydät virheen taulukoista tai sinulla on idea muuntimen parantamiseksi, kirjoita meille. Vastaamme jokaiseen viestiin.",
+      "imageAlt": "Ota yhteyttä Arteon Agencyyn",
+      "subject": "Naula–kilogramma-muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muita hyödyllisiä yksikkömuuntimia"
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "toolKey": "lbToKg",
+  "locale": "pl",
+  "metadata": {
+    "title": "Kalkulator funty na kg – przelicz funty (lb) na kilogramy",
+    "description": "Przelicz funty na kilogramy i odczytaj wynik natychmiast. Przydatny przy odczytywaniu wagi ciała z aplikacji USA, przeliczaniu obciążeń treningowych i limitów bagażowych linii lotniczych. Tabela od 1 do 300 lb.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-funtow-na-kg"
+  },
+  "hero": {
+    "title": "Przelicz funty na kilogramy",
+    "description": "Wpisz dowolną wartość w funtach i odczytaj wynik w kilogramach. Konwerter sprawdza się wszędzie tam, gdzie masa jest wyrażona w funtach: w aplikacjach treningowych z USA, przy zakupie sprzętu sportowego, interpretowaniu limitów bagażowych linii lotniczych czy odczytaniu wagi noworodka podanej w angielskiej dokumentacji medycznej.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-funtow-na-kg",
+      "label": "funty na kg"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Przelicznik funtów na kilogramy – konwerter lb na kg",
+      "alternateName": [
+        "Konwerter funty na kg",
+        "Kalkulator lb na kg",
+        "Przelicznik funtów na kilogramy",
+        "Funty na kilogramy",
+        "lb na kg",
+        "Przelicz funty na kg",
+        "Zamiana lb na kg",
+        "Przelicznik lb na kilogramy",
+        "Konwerter funtów na kilogramy",
+        "Ile kg ma funt",
+        "Tabela lb kg",
+        "pounds na kg",
+        "Przelicz lb na kg",
+        "funt na kilogram",
+        "funty na kilogramy kalkulator"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicznik funtów na kilogramy działający w przeglądarce bez rejestracji. Wpisz wartość w funtach i natychmiast otrzymaj wynik w kilogramach. Przydatny przy odczytywaniu wagi ciała z anglosaskich tabel, przeliczaniu obciążeń siłownianych, sprawdzaniu wagi bagażu czy interpretowaniu wagi niemowlęcia w funtach.",
+      "featureList": [
+        "Konwersja działa w obie strony, więc przeliczysz zarówno funty na kilogramy, jak i kilogramy na funty",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez potrzeby klikania jakiegokolwiek przycisku",
+        "Gotowy wynik można skopiować do schowka jednym kliknięciem",
+        "Tabela przeliczeniowa obejmuje wartości od 1 do 300 lb",
+        "Tabela wagi ciała przelicza popularne zakresy od 88 do 265 lb na kilogramy",
+        "Tabela ciężarków siłownianych przelicza popularne obciążenia od 5 do 225 lb na kilogramy",
+        "Tabela odwrotna przelicza kilogramy na funty dla wartości od 0,5 do 200 kg",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór konwersji to kilogramy = funty × 0,45359237, bazujący na definicji funta z 1959 roku",
+        "Narzędzie działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć funty na kilogramy?",
+      "description": "Krótka instrukcja użycia konwertera funty na kg.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość w funtach",
+          "text": "W lewym polu wpisz liczbę funtów, którą chcesz przeliczyć na kilogramy. Możesz wpisywać wartości dziesiętne, np. 150,5 lb."
+        },
+        {
+          "name": "Odczytaj wynik w kilogramach",
+          "text": "Wynik w kilogramach pojawi się od razu w polu obok. Możesz go skopiować do schowka jednym kliknięciem."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przełączyć konwerter na przeliczanie kilogramów na funty."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy przelicza się funty na kilogramy?",
+      "html": "<p class=\"text-mid mb-4\">Funt (lb) to jednostka masy z anglosaskiego systemu miar, powszechna w USA i nadal używana w Wielkiej Brytanii. W Polsce i Europie na co dzień używamy kilogramów, więc funty pojawiają się głównie wtedy, gdy korzystamy z produktów, aplikacji lub informacji z krajów anglojęzycznych.</p><p class=\"text-mid mb-4\">Najczęstsze sytuacje: aplikacja fitness z USA podaje cel wagowy w funtach, limit wagowy bagażu rejestrowanego wynosi 50 lb, kupujesz hantle na Amazon US opisane w funtach albo program treningowy z YouTube mówi o podniesieniu 135 lb na ławce.</p><p class=\"text-mid mb-4\">Wzór jest prosty: jeden funt to dokładnie 0,45359237 kg. Żeby przeliczyć funty na kilogramy, wystarczy pomnożyć przez 0,4536. Konwerter robi to natychmiast po wpisaniu wartości.</p><p class=\"text-mid\">Na tej stronie znajdziesz tabelę lb na kg, tabelę wagi ciała z przeliczeniem popularnych wartości, tabelę ciężarków siłownianych oraz tabelę odwrotną kg na funty.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter funtów na kilogramy – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja funtów na kilogramy? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie funtów na kilogramy opiera się na stałej definicji: jeden funt to dokładnie 0,45359237 kg. Żeby przeliczyć funty na kilogramy, wystarczy pomnożyć liczbę funtów przez 0,45359237.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>kilogramy = funty × 0,4536</strong>. W drugą stronę: <strong>funty = kilogramy × 2,2046</strong>.</p><p class=\"text-mid mb-4\">Przykład: chcesz wiedzieć, ile kilogramów to 150 lb (waga podana w amerykańskiej aplikacji). Obliczenie: 150 × 0,4536 = 68,04 kg. Inny przykład: limit bagażu 50 lb to 50 × 0,4536 = 22,68 kg.</p><p class=\"text-mid\">Szybkie przybliżenie bez kalkulatora: funty podziel przez 2,2. Na przykład 150 lb ÷ 2,2 ≈ 68,2 kg — błąd wynosi mniej niż 0,2%. Inny sposób: funty pomnóż przez 0,45, co daje dokładność do 0,1%.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa funty na kilogramy",
+      "description": "Poniższa tabela zawiera przeliczenie popularnych wartości w funtach na kilogramy. Wartości zaokrąglono do dwóch miejsc po przecinku. Aby przeliczyć dokładną wartość, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Funty (lb)",
+      "cols": ["Kilogramy"],
+      "rows": [
+        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
+        { "label": "2 lb", "values": ["0,91 kg"] },
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
+        { "label": "15 lb", "values": ["6,80 kg"] },
+        { "label": "20 lb", "values": ["9,07 kg"] },
+        { "label": "25 lb", "values": ["11,34 kg"] },
+        { "label": "30 lb", "values": ["13,61 kg"] },
+        { "label": "40 lb", "values": ["18,14 kg"] },
+        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
+        { "label": "60 lb", "values": ["27,22 kg"] },
+        { "label": "70 lb", "values": ["31,75 kg"] },
+        { "label": "80 lb", "values": ["36,29 kg"] },
+        { "label": "90 lb", "values": ["40,82 kg"] },
+        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "110 lb", "values": ["49,90 kg"] },
+        { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "130 lb", "values": ["58,97 kg"] },
+        { "label": "140 lb", "values": ["63,50 kg"] },
+        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
+        { "label": "160 lb", "values": ["72,57 kg"] },
+        { "label": "170 lb", "values": ["77,11 kg"] },
+        { "label": "180 lb", "values": ["81,65 kg"] },
+        { "label": "190 lb", "values": ["86,18 kg"] },
+        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
+        { "label": "220 lb", "values": ["99,79 kg"] },
+        { "label": "250 lb", "values": ["113,40 kg"] },
+        { "label": "300 lb", "values": ["136,08 kg"] }
+      ],
+      "caption": "Chcesz przeliczyć w drugą stronę? Skorzystaj z naszego konwertera <a href=\"/narzedzia/konwerter-kg-na-funty\">kg na funty</a>, który ma własną tabelę i szczegółową treść poświęconą temu kierunkowi konwersji."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Waga ciała – popularne wartości w funtach przeliczone na kg",
+      "description": "Poniższa tabela przelicza typowe zakresy wagi ciała z funtów na kilogramy. Wartości obejmują zakres od 88 lb do 265 lb, czyli odpowiadają przybliżeniu od 40 kg do 120 kg.",
+      "labelHeader": "Waga ciała (lb)",
+      "cols": ["Kilogramy"],
+      "rows": [
+        { "label": "88 lb", "values": ["39,92 kg"] },
+        { "label": "99 lb", "values": ["44,91 kg"] },
+        { "label": "110 lb", "values": ["49,90 kg"], "emphasis": true },
+        { "label": "121 lb", "values": ["54,88 kg"] },
+        { "label": "132 lb", "values": ["59,87 kg"] },
+        { "label": "143 lb", "values": ["64,86 kg"], "emphasis": true },
+        { "label": "154 lb", "values": ["69,85 kg"] },
+        { "label": "165 lb", "values": ["74,84 kg"] },
+        { "label": "176 lb", "values": ["79,83 kg"], "emphasis": true },
+        { "label": "187 lb", "values": ["84,82 kg"] },
+        { "label": "198 lb", "values": ["89,81 kg"] },
+        { "label": "209 lb", "values": ["94,80 kg"] },
+        { "label": "220 lb", "values": ["99,79 kg"], "emphasis": true },
+        { "label": "231 lb", "values": ["104,78 kg"] },
+        { "label": "242 lb", "values": ["109,77 kg"] },
+        { "label": "265 lb", "values": ["120,20 kg"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Ciężarki na siłowni – popularne obciążenia w funtach i kg",
+      "description": "Sprzęt fitness produkowany w USA jest opisywany w funtach. Poniższa tabela przelicza standardowe obciążenia — od lekkich hantelków po sztangę olimpijską i popularne ciężary w treningu siłowym.",
+      "labelHeader": "Ciężar (lb)",
+      "cols": ["Kilogramy"],
+      "rows": [
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
+        { "label": "15 lb", "values": ["6,80 kg"] },
+        { "label": "20 lb", "values": ["9,07 kg"] },
+        { "label": "25 lb", "values": ["11,34 kg"], "emphasis": true },
+        { "label": "30 lb", "values": ["13,61 kg"] },
+        { "label": "35 lb", "values": ["15,88 kg"] },
+        { "label": "40 lb", "values": ["18,14 kg"] },
+        { "label": "45 lb", "values": ["20,41 kg"], "emphasis": true },
+        { "label": "50 lb", "values": ["22,68 kg"] },
+        { "label": "55 lb", "values": ["24,95 kg"] },
+        { "label": "65 lb", "values": ["29,48 kg"] },
+        { "label": "95 lb", "values": ["43,09 kg"] },
+        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "135 lb", "values": ["61,24 kg"] },
+        { "label": "185 lb", "values": ["83,91 kg"] },
+        { "label": "225 lb", "values": ["102,06 kg"], "emphasis": true }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się funty na kilogramy?",
+      "description": "Przeliczenie funtów na kg pojawia się w kilku typowych sytuacjach z życia codziennego.",
+      "items": [
+        {
+          "title": "Waga ciała i BMI z anglosaskich aplikacji",
+          "description": "Aplikacje treningowe z USA, kalkulatory BMI z anglosaskich stron medycznych i portale dietetyczne podają wagę w funtach. Jeśli cel wagowy to 154 lb, wpisz 154 w konwerter, żeby zobaczyć, że to 69,85 kg. Tabela wagi ciała powyżej zawiera gotowe przeliczenia dla typowych zakresów."
+        },
+        {
+          "title": "Trening siłowy i programy z YouTube",
+          "description": "Popularne programy treningowe z USA — Starting Strength, 5/3/1, StrongLifts — podają obciążenia wyłącznie w funtach. 135 lb to ok. 61 kg, 225 lb to ok. 102 kg, a marzenie wielu osób — 'benching 225' (wyciskanie 225 lb) — to ok. 102 kg na ławce. Tabelę popularnych ciężarków siłownianych znajdziesz powyżej."
+        },
+        {
+          "title": "Limit bagażowy i przesyłki",
+          "description": "Limity wagowe bagażu wielu linii lotniczych (szczególnie amerykańskich) podawane są w funtach. 50 lb to 22,68 kg — standardowy limit walizki rejestrowanej. Przy zamówieniu paczki z Amazon US warto wiedzieć, ile waży produkt opisany w funtach, żeby oszacować koszt wysyłki."
+        },
+        {
+          "title": "Waga niemowlęcia i dokumentacja medyczna",
+          "description": "Dokumentacja medyczna z USA i UK podaje wagę noworodka w funtach i uncjach. Zdrowy noworodek waży ok. 7–8 lb (3,2–3,6 kg). Jeden funt to 16 uncji, więc 7 lb 11 oz to 7 + 11/16 = 7,6875 lb × 0,4536 = 3,49 kg. Konwerter działa z wartościami dziesiętnymi, więc wpisz 7,69 lb, żeby uzyskać przybliżony wynik w kg."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie funtów na kilogramy",
+      "items": [
+        {
+          "question": "Ile kilogramów ma jeden funt?",
+          "answer": "Jeden funt to dokładnie 0,45359237 kg. Jest to zdefiniowana wartość stała, ustalona w 1959 roku jako międzynarodowy funt avoirdupois. Zaokrąglając: 1 lb = 0,454 kg."
+        },
+        {
+          "question": "Jaki jest wzór na przeliczenie funtów na kg?",
+          "answer": "Wzór to: kilogramy = funty × 0,45359237. Zaokrąglając: kg = lb × 0,4536. Na przykład 150 lb × 0,4536 = 68,04 kg. W drugą stronę: lb = kg × 2,2046."
+        },
+        {
+          "question": "Ile kg to 150 lb?",
+          "answer": "150 lb to 68,04 kg. Obliczenie: 150 × 0,45359 = 68,04. To popularna waga ciała w USA często podawana w kobiecych kalkulatorach zdrowotnych."
+        },
+        {
+          "question": "Ile kg to 100 lb?",
+          "answer": "100 lb to 45,36 kg. Przydatna wskazówka: 100 funtów to nieco mniej niż 50 kg."
+        },
+        {
+          "question": "Ile kg to 200 lb?",
+          "answer": "200 lb to 90,72 kg. W USA 200 funtów to często wspominany punkt odniesienia dla wagi mężczyzny o atletycznej budowie."
+        },
+        {
+          "question": "Ile kg to 50 lb?",
+          "answer": "50 lb to 22,68 kg. To standardowy limit wagowy walizki rejestrowanej w wielu liniach lotniczych USA."
+        },
+        {
+          "question": "Ile kg to 70 lb?",
+          "answer": "70 lb to 31,75 kg. To wyższy limit wagowy bagażu stosowany przez niektóre linie lotnicze dla pierwszej klasy lub pasażerów elite."
+        },
+        {
+          "question": "Ile kg to 1 funt?",
+          "answer": "1 funt (lb) to 0,45359237 kg. Zapamiętaj, że 1 lb ≈ 0,45 kg, czyli mniej niż pół kilograma."
+        },
+        {
+          "question": "Jak przeliczyć funty na kilogramy bez kalkulatora?",
+          "answer": "Szybka metoda: podziel funty przez 2,2. Na przykład 150 lb ÷ 2,2 ≈ 68,2 kg (dokładna wartość: 68,04 kg). Błąd wynosi mniej niż 0,3%. Inna metoda: pomnóż przez 0,45, co daje błąd mniej niż 0,1%."
+        },
+        {
+          "question": "Ile kg to 135 lb (sztanga na ławce)?",
+          "answer": "135 lb to 61,24 kg. W kulturze siłowni anglosaskiej '135 on the bench' to popularne ćwiczenie i ważna wartość progowa. Odpowiada to sztandze olimpijskiej 20 kg plus dwa talerze 20 kg (łącznie 60 kg) — niemal dokładnie 135 lb."
+        },
+        {
+          "question": "Czy funt to to samo co uncja?",
+          "answer": "Nie — funt (lb) i uncja (oz) to dwie różne jednostki. 1 funt = 16 uncji. Jedna uncja to ok. 28,35 g, a jeden funt to ok. 453,6 g (0,4536 kg). Przy wadze niemowląt często podaje się wynik w funtach i uncjach, np. '7 lb 11 oz'."
+        },
+        {
+          "question": "Ile kg to 160 lb?",
+          "answer": "160 lb to 72,57 kg. W USA 160 funtów to często podawana waga mężczyzny o smukłej budowie lub waga docelowa w planach odchudzania."
+        },
+        {
+          "question": "Ile kg to 225 lb (legendarny wynik na ławce)?",
+          "answer": "225 lb to 102,06 kg. W anglosaskiej kulturze siłowni '225 on the bench' to symbol siłowej dojrzałości i popularny cel treningowy. Odpowiada to czterem tarczom po 45 lb (plus sztanga 45 lb) lub przybliżeniu do trzycyfrowego ciężaru w kilogramach."
+        },
+        {
+          "question": "Czy funt angielski różni się od funta historycznego?",
+          "answer": "Dziś używa się wyłącznie funta avoirdupois (avoirdupois pound), który od 1959 roku jest zdefiniowany jako dokładnie 0,45359237 kg. Historycznie istniały inne rodzaje funtów: funt aptekarzy (ok. 373 g), funt troy (ok. 373 g, nadal używany dla metali szlachetnych) czy funt angielski kupieccy. W codziennym użyciu i handlu obowiązuje jednak wyłącznie funt avoirdupois."
+        },
+        {
+          "question": "Ile kg to limit bagażu 23 kg w funtach?",
+          "answer": "23 kg to 23 × 2,2046 = 50,71 lb, czyli ok. 50 lb. To właśnie dlatego europejskie linie lotnicze często podają limit 23 kg, a amerykańskie 50 lb — to prawie to samo. Różnica wynosi 0,71 lb = ok. 320 gramów."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabelach lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "subject": "Konwerter funty na kg"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    }
+  ]
+}
