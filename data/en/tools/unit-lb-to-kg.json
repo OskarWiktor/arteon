@@ -1,0 +1,320 @@
+{
+  "toolKey": "lbToKg",
+  "locale": "en",
+  "metadata": {
+    "title": "Pounds to Kilograms Converter – lb to kg Calculator",
+    "description": "Convert pounds to kilograms instantly. Useful for reading body weight from US apps, gym weights, airline baggage limits and baby weight. Conversion table from 1 to 300 lb.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/lb-to-kg-converter"
+  },
+  "hero": {
+    "title": "Convert pounds to kilograms",
+    "description": "Enter any value in pounds and read the result in kilograms immediately. The converter is useful wherever weight is expressed in pounds: in fitness apps from the US, when buying sports equipment, interpreting airline baggage limits, or reading a newborn's weight from English-language medical records.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/lb-to-kg-converter",
+      "label": "lb to kg"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Pounds to Kilograms Converter – lb to kg Calculator",
+      "alternateName": [
+        "lb to kg converter",
+        "pounds to kilograms calculator",
+        "lbs to kg converter",
+        "convert pounds to kg",
+        "pounds in kg",
+        "lb kg converter",
+        "pounds to kilos",
+        "lbs to kilograms",
+        "pounds to kg formula",
+        "lb to kg chart",
+        "pound to kilogram table",
+        "how many kg is a pound",
+        "how many kg is 150 lb",
+        "pounds to kg conversion",
+        "pounds and ounces to kg"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Free pounds to kilograms converter that works in your browser without registration. Enter a value in pounds and get the result in kilograms immediately. Useful for reading body weight from US apps, converting gym loads from English-language training programmes, checking baggage limits, or reading a baby's weight from imperial medical records.",
+      "featureList": [
+        "Conversion works both ways — you can convert both pounds to kilograms and kilograms to pounds",
+        "The result appears instantly as you type, without clicking any button",
+        "The result can be copied to the clipboard with a single click",
+        "The conversion table covers values from 1 to 300 lb",
+        "The body weight table converts common ranges from 88 to 265 lb to kilograms",
+        "The gym weights table converts common loads from 5 to 225 lb to kilograms",
+        "The reverse table converts kilograms to pounds for values from 0.5 to 200 kg",
+        "All calculations are performed locally in your browser — no data leaves your device",
+        "The exact conversion formula is kilograms = pounds × 0.45359237, based on the pound definition from 1959",
+        "Works on phone, tablet and desktop without installation"
+      ]
+    },
+    "howTo": {
+      "name": "How to convert pounds to kilograms?",
+      "description": "Quick guide to using the lb to kg converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter the value in pounds",
+          "text": "In the left field, enter the number of pounds you want to convert to kilograms. Decimal values such as 150.5 lb are supported."
+        },
+        {
+          "name": "Read the result in kilograms",
+          "text": "The result in kilograms appears immediately in the field next to it. You can copy it to the clipboard with one click."
+        },
+        {
+          "name": "Reverse the direction if needed",
+          "text": "Click Swap to switch the converter to kilograms to pounds."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert pounds to kilograms?",
+      "html": "<p class=\"text-mid mb-4\">The pound (lb) is the unit of mass in the imperial system, common in the US and still widely used in the UK. In continental Europe and most of the world, the kilogram is the everyday unit, so pounds appear mainly when you use products, apps or information from English-speaking countries.</p><p class=\"text-mid mb-4\">The most common situations: a fitness app from the US shows your weight goal in pounds, the checked baggage limit is 50 lb, you are buying dumbbells on Amazon US labelled in pounds, or a YouTube training programme tells you to bench 135 lb.</p><p class=\"text-mid mb-4\">The formula is simple: one pound is exactly 0.45359237 kg. To convert pounds to kilograms, multiply by 0.4536. The converter does this the moment you type a value.</p><p class=\"text-mid\">On this page you will find a lb to kg table, a body weight table with conversions of common values, a gym weights table, and a reverse kg to pounds table.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Free pounds to kilograms converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does the lb to kg conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">Converting pounds to kilograms is based on a fixed definition: one pound equals exactly 0.45359237 kg. To convert pounds to kilograms, multiply the number of pounds by 0.45359237.</p><p class=\"text-mid mb-4\">Full formula: <strong>kilograms = pounds × 0.4536</strong>. The other way: <strong>pounds = kilograms × 2.2046</strong>.</p><p class=\"text-mid mb-4\">Example: you want to know how many kilograms 150 lb is (a weight shown in a US app). Calculation: 150 × 0.4536 = 68.04 kg. Another example: a 50 lb baggage limit is 50 × 0.4536 = 22.68 kg.</p><p class=\"text-mid\">Quick estimate without a calculator: divide pounds by 2.2. For example: 150 lb ÷ 2.2 ≈ 68.2 kg — the error is less than 0.2%. Another method: multiply by 0.45, which gives an error of less than 0.1%.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Pounds to kilograms conversion table",
+      "description": "The table below converts common pound values to kilograms, rounded to two decimal places. To convert an exact value, use the converter above.",
+      "labelHeader": "Pounds (lb)",
+      "cols": ["Kilograms"],
+      "rows": [
+        { "label": "1 lb", "values": ["0.45 kg"], "emphasis": true },
+        { "label": "2 lb", "values": ["0.91 kg"] },
+        { "label": "5 lb", "values": ["2.27 kg"] },
+        { "label": "10 lb", "values": ["4.54 kg"], "emphasis": true },
+        { "label": "15 lb", "values": ["6.80 kg"] },
+        { "label": "20 lb", "values": ["9.07 kg"] },
+        { "label": "25 lb", "values": ["11.34 kg"] },
+        { "label": "30 lb", "values": ["13.61 kg"] },
+        { "label": "40 lb", "values": ["18.14 kg"] },
+        { "label": "50 lb", "values": ["22.68 kg"], "emphasis": true },
+        { "label": "60 lb", "values": ["27.22 kg"] },
+        { "label": "70 lb", "values": ["31.75 kg"] },
+        { "label": "80 lb", "values": ["36.29 kg"] },
+        { "label": "90 lb", "values": ["40.82 kg"] },
+        { "label": "100 lb", "values": ["45.36 kg"], "emphasis": true },
+        { "label": "110 lb", "values": ["49.90 kg"] },
+        { "label": "120 lb", "values": ["54.43 kg"] },
+        { "label": "130 lb", "values": ["58.97 kg"] },
+        { "label": "140 lb", "values": ["63.50 kg"] },
+        { "label": "150 lb", "values": ["68.04 kg"], "emphasis": true },
+        { "label": "160 lb", "values": ["72.57 kg"] },
+        { "label": "170 lb", "values": ["77.11 kg"] },
+        { "label": "180 lb", "values": ["81.65 kg"] },
+        { "label": "190 lb", "values": ["86.18 kg"] },
+        { "label": "200 lb", "values": ["90.72 kg"], "emphasis": true },
+        { "label": "220 lb", "values": ["99.79 kg"] },
+        { "label": "250 lb", "values": ["113.40 kg"] },
+        { "label": "300 lb", "values": ["136.08 kg"] }
+      ],
+      "caption": "Want to convert the other way? Use our <a href=\"/en/tools/kg-to-lb-converter\">kg to lb converter</a>, which has its own table and detailed content for that direction."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Body weight – common values in pounds converted to kg",
+      "description": "The table below converts typical body weight ranges from pounds to kilograms, covering values from 88 lb to 265 lb, which corresponds to approximately 40 kg to 120 kg.",
+      "labelHeader": "Body weight (lb)",
+      "cols": ["Kilograms"],
+      "rows": [
+        { "label": "88 lb", "values": ["39.92 kg"] },
+        { "label": "99 lb", "values": ["44.91 kg"] },
+        { "label": "110 lb", "values": ["49.90 kg"], "emphasis": true },
+        { "label": "121 lb", "values": ["54.88 kg"] },
+        { "label": "132 lb", "values": ["59.87 kg"] },
+        { "label": "143 lb", "values": ["64.86 kg"], "emphasis": true },
+        { "label": "154 lb", "values": ["69.85 kg"] },
+        { "label": "165 lb", "values": ["74.84 kg"] },
+        { "label": "176 lb", "values": ["79.83 kg"], "emphasis": true },
+        { "label": "187 lb", "values": ["84.82 kg"] },
+        { "label": "198 lb", "values": ["89.81 kg"] },
+        { "label": "209 lb", "values": ["94.80 kg"] },
+        { "label": "220 lb", "values": ["99.79 kg"], "emphasis": true },
+        { "label": "231 lb", "values": ["104.78 kg"] },
+        { "label": "242 lb", "values": ["109.77 kg"] },
+        { "label": "265 lb", "values": ["120.20 kg"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Gym weights – common loads in pounds and kg",
+      "description": "Gym equipment made in the US is labelled in pounds. The table below converts standard loads — from light dumbbells to an Olympic barbell and popular powerlifting benchmarks.",
+      "labelHeader": "Weight (lb)",
+      "cols": ["Kilograms"],
+      "rows": [
+        { "label": "5 lb", "values": ["2.27 kg"] },
+        { "label": "10 lb", "values": ["4.54 kg"], "emphasis": true },
+        { "label": "15 lb", "values": ["6.80 kg"] },
+        { "label": "20 lb", "values": ["9.07 kg"] },
+        { "label": "25 lb", "values": ["11.34 kg"], "emphasis": true },
+        { "label": "30 lb", "values": ["13.61 kg"] },
+        { "label": "35 lb", "values": ["15.88 kg"] },
+        { "label": "40 lb", "values": ["18.14 kg"] },
+        { "label": "45 lb", "values": ["20.41 kg"], "emphasis": true },
+        { "label": "50 lb", "values": ["22.68 kg"] },
+        { "label": "55 lb", "values": ["24.95 kg"] },
+        { "label": "65 lb", "values": ["29.48 kg"] },
+        { "label": "95 lb", "values": ["43.09 kg"] },
+        { "label": "100 lb", "values": ["45.36 kg"], "emphasis": true },
+        { "label": "135 lb", "values": ["61.24 kg"] },
+        { "label": "185 lb", "values": ["83.91 kg"] },
+        { "label": "225 lb", "values": ["102.06 kg"], "emphasis": true }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When do you typically convert pounds to kilograms?",
+      "description": "Converting pounds to kg comes up in several everyday situations.",
+      "items": [
+        {
+          "title": "Body weight and BMI from US apps",
+          "description": "US fitness apps, BMI calculators from English-language medical sites and diet portals show weight in pounds. If your weight goal is 154 lb, enter 154 in the converter to see that it is 69.85 kg. The body weight table above has ready conversions for common ranges."
+        },
+        {
+          "title": "Strength training and YouTube programmes",
+          "description": "Popular US training programmes — Starting Strength, 5/3/1, StrongLifts — list all weights in pounds. 135 lb is about 61 kg, 225 lb is about 102 kg, and the goal many lifters chase — 'benching 225' — is roughly 102 kg on the bar. The gym weights table above covers the most common loads."
+        },
+        {
+          "title": "Baggage limits and parcels",
+          "description": "Weight limits on many airlines (especially US carriers) are stated in pounds. 50 lb is 22.68 kg — the standard checked bag limit. When ordering from Amazon US, knowing how much a product weighs in kg helps you estimate shipping costs."
+        },
+        {
+          "title": "Baby weight and medical records",
+          "description": "US and UK medical records give a newborn's weight in pounds and ounces. A healthy newborn typically weighs around 7–8 lb (3.2–3.6 kg). One pound is 16 ounces, so 7 lb 11 oz is 7 + 11/16 = 7.6875 lb × 0.4536 = 3.49 kg. The converter works with decimal values — type 7.69 lb to get the approximate result in kg."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about converting pounds to kilograms",
+      "items": [
+        {
+          "question": "How many kilograms is one pound?",
+          "answer": "One pound is exactly 0.45359237 kg. This is a fixed constant, established in 1959 as the international avoirdupois pound. Rounded: 1 lb = 0.454 kg."
+        },
+        {
+          "question": "What is the formula to convert pounds to kg?",
+          "answer": "The formula is: kilograms = pounds × 0.45359237. Rounded: kg = lb × 0.4536. For example: 150 lb × 0.4536 = 68.04 kg. The other way: lb = kg × 2.2046."
+        },
+        {
+          "question": "How many kg is 150 lb?",
+          "answer": "150 lb is 68.04 kg. Calculation: 150 × 0.45359 = 68.04. This is a common body weight in the US, frequently quoted in women's health calculators."
+        },
+        {
+          "question": "How many kg is 100 lb?",
+          "answer": "100 lb is 45.36 kg. A handy fact: 100 pounds is just under half of 100 kg."
+        },
+        {
+          "question": "How many kg is 200 lb?",
+          "answer": "200 lb is 90.72 kg. In the US, 200 pounds is often mentioned as a reference point for an athletic male body weight."
+        },
+        {
+          "question": "How many kg is 50 lb?",
+          "answer": "50 lb is 22.68 kg. This is the standard checked baggage weight limit on many US airlines."
+        },
+        {
+          "question": "How many kg is 70 lb?",
+          "answer": "70 lb is 31.75 kg. This is the higher baggage limit used by some airlines for first class or elite-status passengers."
+        },
+        {
+          "question": "How many kg is 1 pound?",
+          "answer": "1 pound (lb) is 0.45359237 kg. A useful approximation: 1 lb ≈ 0.45 kg, which is just under half a kilogram."
+        },
+        {
+          "question": "How can I convert pounds to kilograms without a calculator?",
+          "answer": "Quick method: divide pounds by 2.2. For example: 150 lb ÷ 2.2 ≈ 68.2 kg (exact value: 68.04 kg). The error is less than 0.3%. Another method: multiply by 0.45, giving an error of less than 0.1%."
+        },
+        {
+          "question": "How many kg is 135 lb (a bench press benchmark)?",
+          "answer": "135 lb is 61.24 kg. In gym culture, '135 on the bench' is a popular milestone. It corresponds to an Olympic barbell (20 kg) plus two 20 kg plates — almost exactly 135 lb."
+        },
+        {
+          "question": "Is a pound the same as an ounce?",
+          "answer": "No — a pound (lb) and an ounce (oz) are two different units. 1 pound = 16 ounces. One ounce is about 28.35 g, and one pound is about 453.6 g (0.4536 kg). Baby weights are often given in pounds and ounces, e.g. '7 lb 11 oz'."
+        },
+        {
+          "question": "How many kg is 160 lb?",
+          "answer": "160 lb is 72.57 kg. In the US, 160 pounds is often quoted as a lean male body weight or a target weight in weight-loss plans."
+        },
+        {
+          "question": "How many kg is 225 lb (a legendary bench press)?",
+          "answer": "225 lb is 102.06 kg. In gym culture, '225 on the bench' is a symbol of serious strength and a popular training milestone. It corresponds to four 45 lb plates plus the 45 lb barbell."
+        },
+        {
+          "question": "Is the English pound the same as the historical pound?",
+          "answer": "Today, only the avoirdupois pound is used, defined since 1959 as exactly 0.45359237 kg. Historically there were other types: the apothecaries' pound (about 373 g), the troy pound (about 373 g, still used for precious metals) and the merchant's pound. In everyday use and trade, only the avoirdupois pound applies."
+        },
+        {
+          "question": "How many pounds is a 23 kg baggage limit?",
+          "answer": "23 kg is 23 × 2.2046 = 50.71 lb, approximately 50 lb. That is why European airlines often state a 23 kg limit while US carriers say 50 lb — they are almost the same. The difference is 0.71 lb, or about 320 grams."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Got a question or suggestion?",
+      "description": "If you notice an error in the tables or have an idea for improving the converter, write to us. We reply to every message.",
+      "imageAlt": "Contact Arteon Agency",
+      "subject": "Lb to kg converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Other useful unit converters"
+    }
+  ]
+}

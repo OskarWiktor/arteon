@@ -1,0 +1,260 @@
+{
+  "toolKey": "lbToKg",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník liber na kilogramy – kalkulačka lb na kg",
+    "description": "Převeď libry na kilogramy okamžitě. Hodí se pro čtení váhy z amerických aplikací, převod zátěží v posilovně a kontrolu limitů zavazadel. Tabulka od 1 do 300 lb.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-liber-na-kg"
+  },
+  "hero": {
+    "title": "Převeď libry na kilogramy",
+    "description": "Zadej hodnotu v librách a výsledek v kilogramech se zobrazí okamžitě. Převodník se hodí, když čteš hmotnost ve zdravotní nebo fitness aplikaci z USA, kupuješ sportovní vybavení označené v librách, interpretuješ limit zavazadla americké letecké společnosti nebo převádíš porodní váhu miminka z anglicky psané dokumentace.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-liber-na-kg",
+      "label": "libry na kg"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník liber na kilogramy – kalkulačka lb na kg",
+      "alternateName": [
+        "převodník liber na kg",
+        "kalkulačka lb na kg",
+        "libry na kilogramy",
+        "kolik kg je X liber",
+        "lb v kg",
+        "tabulka libry kilogramy",
+        "přepočet lb na kg",
+        "libry na kila",
+        "převod liber kg",
+        "vzorec lb kg",
+        "pounds na kg",
+        "pounds na kilogramy",
+        "lbs na kg",
+        "převodník pounds kilo"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Bezplatný převodník liber na kilogramy fungující v prohlížeči bez registrace. Zadej hodnotu v librách a výsledek v kilogramech se zobrazí okamžitě. Hodí se ke čtení tělesné hmotnosti v amerických zdravotních aplikacích, k převodu tréninkových vah z amerických programů, k výpočtu limitů zavazadel v librách nebo k interpretaci porodní váhy novorozence.",
+      "featureList": [
+        "Převod funguje oběma směry: libry na kilogramy i kilogramy na libry",
+        "Výsledek se zobrazuje okamžitě při psaní, bez nutnosti mačkat jakékoli tlačítko",
+        "Výsledek lze zkopírovat do schránky jedním kliknutím",
+        "Tabulka převodu pokrývá hodnoty od 1 do 300 lb",
+        "Tabulka tělesné hmotnosti zobrazuje běžné hodnoty od 88 do 265 lb s převodem na kg",
+        "Tabulka vah pro posilovnu a powerlifting převádí standardní zátěže od 5 do 225 lb",
+        "Všechny výpočty probíhají lokálně v prohlížeči: žádná data neopouštějí tvé zařízení",
+        "Přesný vzorec je kg = libry × 0,45359237, vycházející z mezinárodní definice z roku 1959",
+        "Funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést libry na kilogramy?",
+      "description": "Rychlý návod k použití převodníku liber na kg.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej hodnotu v librách",
+          "text": "Do pole vlevo zadej počet liber, které chceš převést na kilogramy."
+        },
+        {
+          "name": "Přečti výsledek v kilogramech",
+          "text": "Výsledek v kg se zobrazí okamžitě v poli vedle. Zkopírovat ho do schránky můžeš jedním kliknutím."
+        },
+        {
+          "name": "Vyměň směr, pokud potřebuješ",
+          "text": "Klikni na Přehodit a převodník přepneš do režimu kilogramy na libry."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kdy potřebuješ převádět libry na kilogramy?",
+      "html": "<p class=\"text-mid mb-4\">V Česku a na Slovensku je kilogram standardní jednotkou hmotnosti pro tělesnou váhu, potraviny, zboží i sportovní vybavení. Americké zdravotní a fitness aplikace — jako MyFitnessPal, Apple Health nebo Fitbit — zobrazují ale hmotnost ve výchozím nastavení v librách (lb). Stejně tak populární americké tréninkové programy: olympická osa váží 45 lb (20 kg) a standardní kotouče jsou 45, 35, 25, 10 a 5 lb.</p><p class=\"text-mid mb-4\">Převod liber na kg je potřeba také při čtení limitů zavazadel amerických aerolinek, při vážení na váze kalibrované v librách nebo při interpretaci lékařské dokumentace cizojazyčné nemocnice, kde je porodní váha miminka zapsána v librách a uncích.</p><p class=\"text-mid\">Jedna libra odpovídá přesně 0,45359237 kg. Opačně: 1 kg = 2,2046 liber. Převodník vypočítá výsledek, jakmile začneš psát, a výsledek zkopíruješ jedním kliknutím.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Bezplatný převodník liber na kilogramy – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod liber na kilogramy? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Vzorec je: <strong>kilogramy = libry × 0,45359237</strong>. Opačně: <strong>libry = kilogramy × 2,2046</strong>. Tyto hodnoty vycházejí z přesné definice mezinárodní avoirdupoisové libry stanovené v roce 1959: 1 libra = 0,45359237 kg.</p><p class=\"text-mid mb-4\">Příklad: člověk váží 154 lb na americké váze. Výpočet: 154 × 0,4536 = 69,85 kg — tedy přibližně 70 kg.</p><p class=\"text-mid\">Rychlý odhad bez kalkulačky: vyděl libry číslem 2,2. Příklad: 154 lb ÷ 2,2 = 70 kg. Přesná hodnota je 69,85 kg — chyba pouhých 0,2 %.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabulka převodu liber na kilogramy",
+      "description": "Následující tabulka ukazuje převod nejčastějších hodnot v librách na kilogramy, zaokrouhlený na dvě desetinná místa. Pro přesnou hodnotu použij převodník výše.",
+      "labelHeader": "Libry (lb)",
+      "cols": ["Kilogramy (kg)"],
+      "rows": [
+        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
+        { "label": "20 lb", "values": ["9,07 kg"] },
+        { "label": "30 lb", "values": ["13,61 kg"] },
+        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
+        { "label": "70 lb", "values": ["31,75 kg"] },
+        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
+        { "label": "180 lb", "values": ["81,65 kg"], "emphasis": true },
+        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
+        { "label": "220 lb", "values": ["99,79 kg"] },
+        { "label": "250 lb", "values": ["113,40 kg"] },
+        { "label": "300 lb", "values": ["136,08 kg"] }
+      ],
+      "caption": "Chceš převádět opačným směrem? Použij náš <a href=\"/cs/nastroje/prevodnik-kg-na-libry\">převodník kg na libry</a> s vlastní tabulkou a podrobným obsahem."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tělesná hmotnost v librách – převod na kilogramy",
+      "description": "Tabulka převádí nejčastější hodnoty tělesné hmotnosti v librách na kilogramy. Hodnoty pokrývají rozsah od 88 lb (přibližně 40 kg) do 265 lb (přibližně 120 kg).",
+      "labelHeader": "Tělesná hmotnost (lb)",
+      "cols": ["Kilogramy (kg)"],
+      "rows": [
+        { "label": "88 lb", "values": ["39,92 kg"] },
+        { "label": "99 lb", "values": ["44,91 kg"] },
+        { "label": "110 lb", "values": ["49,90 kg"], "emphasis": true },
+        { "label": "121 lb", "values": ["54,88 kg"] },
+        { "label": "132 lb", "values": ["59,87 kg"] },
+        { "label": "143 lb", "values": ["64,86 kg"] },
+        { "label": "154 lb", "values": ["69,85 kg"], "emphasis": true },
+        { "label": "165 lb", "values": ["74,84 kg"], "emphasis": true },
+        { "label": "176 lb", "values": ["79,83 kg"], "emphasis": true },
+        { "label": "187 lb", "values": ["84,82 kg"], "emphasis": true },
+        { "label": "198 lb", "values": ["89,81 kg"], "emphasis": true },
+        { "label": "220 lb", "values": ["99,79 kg"], "emphasis": true },
+        { "label": "242 lb", "values": ["109,77 kg"] },
+        { "label": "265 lb", "values": ["120,20 kg"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Váhy do posilovny a powerlifting v librách – převod na kg",
+      "description": "Nejpopulárnější americké tréninkové programy uvádějí všechny zátěže v librách. Tabulka převádí nejběžnější váhy os a kotoučů.",
+      "labelHeader": "Váha (lb)",
+      "cols": ["Kilogramy (kg)"],
+      "rows": [
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"] },
+        { "label": "25 lb", "values": ["11,34 kg"] },
+        { "label": "35 lb", "values": ["15,88 kg"] },
+        {
+          "label": "45 lb (olympická osa)",
+          "values": ["20,41 kg"],
+          "emphasis": true
+        },
+        { "label": "95 lb", "values": ["43,09 kg"] },
+        {
+          "label": "135 lb (referenční tlak na lavičce)",
+          "values": ["61,23 kg"],
+          "emphasis": true
+        },
+        { "label": "185 lb", "values": ["83,91 kg"] },
+        {
+          "label": "225 lb (pokročilý tlak na lavičce)",
+          "values": ["102,06 kg"],
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Časté otázky k převodu liber na kg",
+      "items": [
+        {
+          "question": "Kolik kilogramů je libra?",
+          "answer": "Jedna libra odpovídá přesně 0,45359237 kg. Tato hodnota je jako konstanta platná od roku 1959 pod názvem mezinárodní avoirdupoisová libra. Zaokrouhleno: 1 lb ≈ 0,454 kg."
+        },
+        {
+          "question": "Kolik kg je 100 liber?",
+          "answer": "100 lb je 45,36 kg. Jako praktická pomůcka: 100 liber je o trochu méně než 50 kg."
+        },
+        {
+          "question": "Kolik kg je 150 liber?",
+          "answer": "150 lb je 68,04 kg. Jde o hmotnost typickou pro osobu průměrné postavy v Česku i na Slovensku."
+        },
+        {
+          "question": "Kolik kg je 200 liber?",
+          "answer": "200 lb je 90,72 kg — tedy přibližně 91 kg, hmotnost odpovídající robustnější nebo atletické postavě."
+        },
+        {
+          "question": "Jaký je vzorec pro převod liber na kg?",
+          "answer": "Vzorec je: kg = libry × 0,45359237. Pro rychlé výpočty se používá 0,4536. Opačně: libry = kg × 2,2046."
+        },
+        {
+          "question": "Kolik liber je 70 kg?",
+          "answer": "70 kg je 154,32 lb. Převod tímto směrem (kg na libry) se provede vynásobením číslem 2,2046: 70 × 2,2046 = 154,32 lb."
+        },
+        {
+          "question": "Kolik kg je 50 liber?",
+          "answer": "50 lb je 22,68 kg. Zároveň jde o nejčastější limit odbaveného zavazadla v ekonomické třídě amerických aerolinií."
+        },
+        {
+          "question": "Jak převést libry na kg bez kalkulačky?",
+          "answer": "Rychlý odhad: vyděl libry číslem 2,2. Příklad: 154 lb ÷ 2,2 = 70 kg. Přesná hodnota je 69,85 kg — chyba pouhých 0,2 %."
+        },
+        {
+          "question": "Kolik kg je 130 liber?",
+          "answer": "130 lb je 58,97 kg — tedy téměř přesně 59 kg. Výpočet: 130 × 0,4536 = 58,97 kg."
+        },
+        {
+          "question": "Kolik kg je 180 liber?",
+          "answer": "180 lb je 81,65 kg. Jde o hmotnost typickou pro muže průměrné nebo lehce atletické postavy v Česku a na Slovensku."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Máš otázku nebo nápad na zlepšení?",
+      "description": "Pokud najdeš chybu v tabulkách nebo máš nápad jak převodník vylepšit, napiš nám. Odpovídáme na každou zprávu.",
+      "imageAlt": "Kontaktovat Arteon Agency",
+      "subject": "Převodník liber na kg"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    }
+  ]
+}

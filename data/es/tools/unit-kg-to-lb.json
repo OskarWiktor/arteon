@@ -1,0 +1,377 @@
+{
+  "toolKey": "kgToLb",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de kilogramos a libras – calculadora kg a lb",
+    "description": "Convierte kilogramos a libras al instante. Útil para el peso corporal, equipos de gimnasio, límites de equipaje y peso de bebés. Tabla de 0,5 a 200 kg con columna stone.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/es/herramientas/convertidor-kg-a-libras"
+  },
+  "hero": {
+    "title": "Convierte kilogramos a libras",
+    "description": "Escribe cualquier valor en kilogramos y obtén el resultado en libras de inmediato. El convertidor es útil para comprobar el peso corporal en el sistema imperial, leer límites de equipaje en libras, comparar resultados deportivos con tablas estadounidenses o convertir el peso de nacimiento de un bebé.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-kg-a-libras",
+      "label": "kg a libras"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de kilogramos a libras – calculadora kg a lb",
+      "alternateName": [
+        "convertidor kg a libras",
+        "calculadora kg a lb",
+        "kilogramos a libras",
+        "kg en libras",
+        "conversión kg libras",
+        "kg a pounds",
+        "tabla kg libras",
+        "cuántas libras tiene un kilogramo",
+        "kg a stone y libras",
+        "fórmula kg a libras",
+        "convertir kg a libras",
+        "calculadora kilos libras",
+        "kilos a libras",
+        "kg a lbs",
+        "conversion kilogramos libras"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertidor gratuito de kilogramos a libras que funciona en el navegador sin registro. Escribe un valor en kg y obtén el resultado en libras al instante. Útil para comprobar el peso corporal, comparar con tablas deportivas anglosajones, calcular límites de equipaje o leer el peso de nacimiento de un bebé en unidades imperiales.",
+      "featureList": [
+        "La conversión funciona en ambas direcciones: puedes convertir tanto kilogramos a libras como libras a kilogramos",
+        "El resultado aparece al instante mientras escribes, sin necesidad de pulsar ningún botón",
+        "El resultado se puede copiar al portapapeles con un solo clic",
+        "La tabla de conversión cubre valores de 0,5 kg a 200 kg",
+        "La tabla de peso corporal muestra valores habituales de 40 kg a 120 kg con conversión a libras y stone (sistema británico)",
+        "La tabla de pesos de gimnasio convierte cargas habituales de 2,5 kg a 100 kg",
+        "La tabla inversa convierte libras a kilogramos para valores de 1 a 300 lb",
+        "Todos los cálculos se realizan localmente en el navegador: ningún dato sale de tu dispositivo",
+        "La fórmula exacta es libras = kilogramos × 2,2046, basada en la definición 1 libra = 0,45359237 kg",
+        "Funciona en teléfono, tablet y ordenador sin instalación"
+      ]
+    },
+    "howTo": {
+      "name": "¿Cómo convertir kilogramos a libras?",
+      "description": "Guía rápida para usar el convertidor de kg a libras.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Escribe el valor en kilogramos",
+          "text": "En el campo de la izquierda, escribe el número de kilogramos que quieres convertir a libras."
+        },
+        {
+          "name": "Lee el resultado en libras",
+          "text": "El resultado en libras aparece inmediatamente en el campo de al lado. Puedes copiarlo al portapapeles con un clic."
+        },
+        {
+          "name": "Invierte la dirección si lo necesitas",
+          "text": "Haz clic en Intercambiar para cambiar el convertidor al modo libras a kilogramos."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo se convierten kilogramos a libras?",
+      "html": "<p class=\"text-mid mb-4\">El kilogramo es la unidad de masa estándar en España, México, Argentina y prácticamente todo el mundo hispanohablante. La libra (lb) domina en Estados Unidos y sigue siendo habitual en el Reino Unido, especialmente para el peso corporal, donde los británicos también usan el stone (1 stone = 14 libras = aprox. 6,35 kg).</p><p class=\"text-mid mb-4\">Convertir kg a libras es necesario cuando consultas tu peso en una página médica estadounidense, compras material deportivo descrito en libras, interpretas un límite de equipaje en lb o quieres conocer el peso de nacimiento de un bebé en documentación de un hospital extranjero.</p><p class=\"text-mid mb-4\">Una libra equivale exactamente a 0,45359237 kg, valor fijado como constante desde 1959. Al revés: 1 kg = 2,2046 libras. El convertidor realiza el cálculo en cuanto escribes un valor.</p><p class=\"text-mid\">En esta página encontrarás una tabla de kg a libras para valores de 0,5 a 200 kg, una tabla de peso corporal con conversión a libras y stone, una tabla de pesos de gimnasio y una tabla inversa de libras a kg.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor gratuito de kilogramos a libras – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión de kg a libras? Fórmula y ejemplo",
+      "html": "<p class=\"text-mid mb-4\">La conversión de kilogramos a libras se basa en una definición fija: una libra equivale exactamente a 0,45359237 kg. Para obtener libras, multiplica los kilogramos por 2,2046.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>libras = kilogramos × 2,2046</strong>. Al revés: <strong>kilogramos = libras × 0,4536</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: quieres saber cuántas libras pesa una persona de 70 kg. Cálculo: 70 × 2,2046 = 154,32 lb. En el sistema británico son 11 stone 0,3 lb, porque un stone = 14 libras: 154,32 ÷ 14 = 11 stone con un resto de 0,32 lb.</p><p class=\"text-mid\">Estimación rápida sin calculadora: 1 kg ≈ 2,2 lb — multiplica los kilogramos por 2 y añade una quinta parte del resultado. Por ejemplo: 80 kg × 2 = 160, más 16 (20 % de 80) = 176 lb. El valor exacto es 176,37 lb — un error de solo el 0,2 %.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabla de conversión de kilogramos a libras",
+      "description": "La siguiente tabla muestra la conversión de los valores más habituales en kilogramos a libras, redondeada a dos decimales. Para convertir un valor exacto, usa el convertidor de arriba.",
+      "labelHeader": "Kilogramos",
+      "cols": ["Libras (lb)"],
+      "rows": [
+        { "label": "0,5 kg", "values": ["1,10 lb"] },
+        { "label": "1 kg", "values": ["2,20 lb"], "emphasis": true },
+        { "label": "2 kg", "values": ["4,41 lb"] },
+        { "label": "3 kg", "values": ["6,61 lb"] },
+        { "label": "4 kg", "values": ["8,82 lb"] },
+        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
+        { "label": "6 kg", "values": ["13,23 lb"] },
+        { "label": "7 kg", "values": ["15,43 lb"] },
+        { "label": "8 kg", "values": ["17,64 lb"] },
+        { "label": "9 kg", "values": ["19,84 lb"] },
+        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
+        { "label": "12 kg", "values": ["26,46 lb"] },
+        { "label": "15 kg", "values": ["33,07 lb"] },
+        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "25 kg", "values": ["55,12 lb"] },
+        { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "35 kg", "values": ["77,16 lb"] },
+        { "label": "40 kg", "values": ["88,18 lb"] },
+        { "label": "45 kg", "values": ["99,21 lb"] },
+        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
+        { "label": "55 kg", "values": ["121,25 lb"] },
+        { "label": "60 kg", "values": ["132,28 lb"] },
+        { "label": "65 kg", "values": ["143,30 lb"] },
+        { "label": "70 kg", "values": ["154,32 lb"], "emphasis": true },
+        { "label": "75 kg", "values": ["165,35 lb"] },
+        { "label": "80 kg", "values": ["176,37 lb"], "emphasis": true },
+        { "label": "85 kg", "values": ["187,39 lb"] },
+        { "label": "90 kg", "values": ["198,42 lb"] },
+        { "label": "95 kg", "values": ["209,44 lb"] },
+        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true },
+        { "label": "110 kg", "values": ["242,51 lb"] },
+        { "label": "120 kg", "values": ["264,55 lb"] },
+        { "label": "130 kg", "values": ["286,60 lb"] },
+        { "label": "140 kg", "values": ["308,65 lb"] },
+        { "label": "150 kg", "values": ["330,69 lb"], "emphasis": true },
+        { "label": "175 kg", "values": ["385,81 lb"] },
+        { "label": "200 kg", "values": ["440,92 lb"] }
+      ],
+      "caption": "¿Quieres convertir en sentido inverso? Usa nuestro <a href=\"/es/herramientas/convertidor-libras-a-kg\">convertidor de libras a kg</a>, que tiene su propia tabla y contenido detallado para esa dirección."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Peso corporal en kg – conversión a libras y stone",
+      "description": "La tabla convierte los valores más habituales de peso corporal de 40 kg a 120 kg a libras (lb) y stone y libras (st lb), el formato usado en el Reino Unido. Un stone equivale a 14 libras. La columna stone está redondeada a un decimal.",
+      "labelHeader": "Peso corporal",
+      "cols": ["Libras (lb)", "Stone y libras (st lb)"],
+      "rows": [
+        { "label": "40 kg", "values": ["88,18 lb", "6 st 4,2 lb"] },
+        { "label": "45 kg", "values": ["99,21 lb", "7 st 1,2 lb"] },
+        {
+          "label": "50 kg",
+          "values": ["110,23 lb", "7 st 12,2 lb"],
+          "emphasis": true
+        },
+        { "label": "55 kg", "values": ["121,25 lb", "8 st 9,3 lb"] },
+        {
+          "label": "60 kg",
+          "values": ["132,28 lb", "9 st 6,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "65 kg",
+          "values": ["143,30 lb", "10 st 3,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "70 kg",
+          "values": ["154,32 lb", "11 st 0,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "75 kg",
+          "values": ["165,35 lb", "11 st 11,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "80 kg",
+          "values": ["176,37 lb", "12 st 8,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "85 kg",
+          "values": ["187,39 lb", "13 st 5,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "90 kg",
+          "values": ["198,42 lb", "14 st 2,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "100 kg",
+          "values": ["220,46 lb", "15 st 10,5 lb"],
+          "emphasis": true
+        },
+        { "label": "110 kg", "values": ["242,51 lb", "17 st 4,5 lb"] },
+        { "label": "120 kg", "values": ["264,55 lb", "18 st 12,6 lb"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabla inversa – libras a kilogramos",
+      "description": "La siguiente tabla convierte los valores habituales en libras a kilogramos, redondeada a dos decimales.",
+      "labelHeader": "Libras (lb)",
+      "cols": ["Kilogramos"],
+      "rows": [
+        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
+        { "label": "20 lb", "values": ["9,07 kg"] },
+        { "label": "30 lb", "values": ["13,61 kg"] },
+        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
+        { "label": "70 lb", "values": ["31,75 kg"] },
+        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
+        { "label": "180 lb", "values": ["81,65 kg"] },
+        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
+        { "label": "250 lb", "values": ["113,40 kg"] },
+        { "label": "300 lb", "values": ["136,08 kg"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Pesos de gimnasio – cargas habituales en kg y lb",
+      "description": "Los equipos de fitness fabricados en EE. UU. están etiquetados en libras. La tabla convierte cargas estándar, desde mancuernas hasta la barra olímpica.",
+      "labelHeader": "Peso (kg)",
+      "cols": ["Peso (lb)"],
+      "rows": [
+        { "label": "2,5 kg", "values": ["5,51 lb"] },
+        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
+        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
+        { "label": "15 kg", "values": ["33,07 lb"] },
+        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "25 kg", "values": ["55,12 lb"] },
+        { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "40 kg", "values": ["88,18 lb"] },
+        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
+        { "label": "60 kg", "values": ["132,28 lb"] },
+        { "label": "80 kg", "values": ["176,37 lb"] },
+        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo se convierten kilogramos a libras habitualmente?",
+      "description": "La conversión de kg a lb aparece en varias situaciones concretas.",
+      "items": [
+        {
+          "title": "Peso corporal y dieta",
+          "description": "Las apps de fitness, fitness trackers y portales médicos de EE. UU. y el Reino Unido muestran el peso en libras o stone. Si un entrenador personal americano fija un objetivo de 180 lb, son 180 × 0,4536 = 81,65 kg. La tabla de peso corporal de arriba incluye conversiones listas para valores de 40 a 120 kg."
+        },
+        {
+          "title": "Entrenamiento y gimnasio",
+          "description": "Los programas de entrenamiento más populares de EE. UU. — Starting Strength, 5/3/1, StrongLifts — indican todas las cargas en libras. Una barra olímpica pesa 45 lb (unos 20 kg), unas mancuernas de 25 lb son poco más de 11 kg. La tabla de pesos de gimnasio de arriba cubre las cargas más habituales."
+        },
+        {
+          "title": "Peso del recién nacido",
+          "description": "En EE. UU. y el Reino Unido, el peso del recién nacido se registra en libras y onzas. Un bebé sano de 3,5 kg equivale a unos 7 lb 11 oz (7,716 lb). Cálculo: 3,5 × 2,2046 = 7,72 lb; la parte decimal 0,72 lb × 16 onzas = 11,5 oz. El convertidor da el resultado en libras decimales: multiplica el resto por 16 para obtener las onzas."
+        },
+        {
+          "title": "Equipaje y paquetería",
+          "description": "Muchas aerolíneas, especialmente las estadounidenses, expresan los límites de equipaje en libras. El límite estándar de 50 lb equivale a 22,68 kg, y 70 lb a 31,75 kg. Los servicios de mensajería de EE. UU. también calculan el precio por libra, lo que resulta útil al pedir artículos desde tiendas americanas."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre la conversión de kg a libras",
+      "items": [
+        {
+          "question": "¿Cuántas libras son 1 kilogramo?",
+          "answer": "Un kilogramo equivale a 2,2046 libras (lb). Esto se desprende de la definición: 1 libra = 0,45359237 kg, así que 1 kg = 1 ÷ 0,45359237 ≈ 2,2046 lb. Redondeado a un decimal: 1 kg ≈ 2,2 lb."
+        },
+        {
+          "question": "¿Cuál es la fórmula para convertir kg a libras?",
+          "answer": "La fórmula es: libras = kilogramos × 2,2046. Al revés: kilogramos = libras × 0,4536. Por ejemplo: 70 kg × 2,2046 = 154,32 lb."
+        },
+        {
+          "question": "¿Cuántas libras son 70 kg?",
+          "answer": "70 kg son 154,32 libras (lb), lo que en el sistema británico equivale a 11 stone 0,3 lb. Cálculo: 70 × 2,2046 = 154,32; 154,32 ÷ 14 = 11 stone con un resto de 0,32 lb."
+        },
+        {
+          "question": "¿Cuántas libras son 80 kg?",
+          "answer": "80 kg son 176,37 lb, equivalentes a 12 stone 8,4 lb en el sistema británico. Este es un peso frecuentemente asociado a una constitución atlética en los países anglosajones."
+        },
+        {
+          "question": "¿Cuántas libras son 100 kg?",
+          "answer": "100 kg son 220,46 lb. Redondeando: 100 kg son poco más de 220 libras, un valor de referencia fácil de recordar. En el sistema británico: 15 stone 10,5 lb."
+        },
+        {
+          "question": "¿Cuántas libras son 50 kg?",
+          "answer": "50 kg son 110,23 lb. Como referencia rápida: 50 kg son algo más de 110 libras. En el sistema británico: 7 stone 12,2 lb."
+        },
+        {
+          "question": "¿Cuántos kilogramos tiene una libra?",
+          "answer": "Una libra equivale exactamente a 0,45359237 kg. Este valor está fijado como constante desde 1959 con el nombre de libra avoirdupois internacional. Redondeado: 1 lb ≈ 0,454 kg."
+        },
+        {
+          "question": "¿Cómo convertir kg a libras sin calculadora?",
+          "answer": "Estimación rápida: multiplica los kilogramos por 2 y añade el 10 % del resultado. Por ejemplo: 80 kg × 2 = 160, más el 10 % de 160 = 16, en total 176 lb. El valor exacto es 176,37 lb: un error de solo el 0,2 %."
+        },
+        {
+          "question": "¿Qué es un stone y cómo se convierten kg a stone?",
+          "answer": "El stone es una unidad de masa británica: 1 stone = 14 libras = 6,3503 kg. En el Reino Unido, el peso corporal se suele indicar en stone y libras (p. ej. '11 stone 4 lb'). Para convertir kg a stone: divide los kg entre 6,3503. Por ejemplo: 70 kg ÷ 6,3503 = 11,02 stone = 11 stone 0,3 lb."
+        },
+        {
+          "question": "¿Cuántas libras y onzas son 3,5 kg?",
+          "answer": "3,5 kg son 7,716 lb. En libras y onzas: 7 libras y 0,716 × 16 = 11,5 onzas, es decir, aproximadamente 7 lb 11 oz. Un recién nacido sano suele pesar entre 3 y 4 kg, lo que equivale a unos 6,6–8,8 lb."
+        },
+        {
+          "question": "¿Cuántos kg son 50 lb de límite de equipaje?",
+          "answer": "50 lb son 50 × 0,45359237 = 22,68 kg. Es el límite de equipaje facturado estándar de muchas aerolíneas. El límite de 70 lb (frecuente en primera clase) equivale a 31,75 kg."
+        },
+        {
+          "question": "¿Cuántas libras son 60 kg?",
+          "answer": "60 kg son 132,28 lb, equivalentes a 9 stone 6,3 lb en el sistema británico. Es un peso típico para una mujer de constitución media en España o Latinoamérica."
+        },
+        {
+          "question": "¿Cuántas libras son 90 kg?",
+          "answer": "90 kg son 198,42 lb. Redondeando, son casi exactamente 200 libras, un valor de referencia muy práctico. En el sistema británico: 14 stone 2,4 lb."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "¿Tienes alguna pregunta o sugerencia?",
+      "description": "Si detectas un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
+      "imageAlt": "Contactar con Arteon Agency",
+      "subject": "Convertidor kg a libras"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Otros convertidores de unidades útiles"
+    }
+  ]
+}

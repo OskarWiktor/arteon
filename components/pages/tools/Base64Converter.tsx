@@ -135,11 +135,6 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
   if (mode === 'encode') {
     return (
       <div className='overflow-hidden'>
-        <FormatSelector
-          currentSource='jpg'
-          currentTarget='base64'
-          hasFiles={!!base64}
-        />
         <div className='grid gap-4 md:grid-cols-2'>
           <Card interactive={false} padding='lg' variant='outlined'>
             <h2 className='h6'>{t.imageHeading}</h2>
@@ -186,6 +181,11 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
             </div>
           </Card>
         </div>
+        <FormatSelector
+          currentSource='jpg'
+          currentTarget='base64'
+          hasFiles={!!base64}
+        />
       </div>
     );
   }

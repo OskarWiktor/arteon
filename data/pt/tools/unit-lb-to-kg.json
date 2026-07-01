@@ -1,0 +1,266 @@
+{
+  "toolKey": "lbToKg",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de libras para quilogramas – calculadora lb para kg",
+    "description": "Converta libras para quilogramas instantaneamente. Útil para ler o peso corporal em apps dos EUA, converter cargas de academia e verificar limites de bagagem. Tabela de 1 a 300 lb.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/pt/ferramentas/conversor-libras-para-kg"
+  },
+  "hero": {
+    "title": "Converta libras para quilogramas",
+    "description": "Digite qualquer valor em libras e obtenha o resultado em quilogramas imediatamente. O conversor é útil quando lê o peso em apps de saúde ou fitness dos EUA, compra equipamento desportivo etiquetado em libras, interpreta limites de bagagem de companhias aéreas americanas ou converte o peso de nascimento de um bebé em documentação de hospitais anglófonos.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-libras-para-kg",
+      "label": "libras para kg"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de libras para quilogramas – calculadora lb para kg",
+      "alternateName": [
+        "conversor libras para kg",
+        "calculadora lb para kg",
+        "libras para quilogramas",
+        "quantos kg são X libras",
+        "lb em kg",
+        "tabela libras quilogramas",
+        "converter lb em kg",
+        "libras para quilos",
+        "conversão libras kg",
+        "fórmula lb kg",
+        "pounds para kg",
+        "pounds para quilogramas",
+        "lbs para kg",
+        "conversor pounds quilos"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Conversor gratuito de libras para quilogramas que funciona no browser sem registo. Digite um valor em libras e obtenha o resultado em quilogramas imediatamente. Útil para ler o peso corporal em apps de saúde americanas e britânicas, converter cargas de treino de programas dos EUA, calcular limites de bagagem em libras ou interpretar o peso de nascimento de um bebé em unidades imperiais.",
+      "featureList": [
+        "A conversão funciona nos dois sentidos: é possível converter libras para quilogramas e quilogramas para libras",
+        "O resultado aparece instantaneamente enquanto digita, sem necessidade de clicar em nenhum botão",
+        "O resultado pode ser copiado para a área de transferência com um clique",
+        "A tabela de conversão cobre valores de 1 a 300 lb",
+        "A tabela de peso corporal mostra valores habituais de 88 a 265 lb com conversão para kg",
+        "A tabela de pesos de academia e powerlifting convierte cargas padrão de 5 a 225 lb",
+        "Todos os cálculos são feitos localmente no browser: nenhum dado sai do dispositivo",
+        "A fórmula exata é kg = libras × 0,45359237, baseada na definição internacional de 1959",
+        "Funciona em telemóvel, tablet e computador sem instalação"
+      ]
+    },
+    "howTo": {
+      "name": "Como converter libras para quilogramas?",
+      "description": "Guia rápido para usar o conversor de libras para kg.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Digite o valor em libras",
+          "text": "No campo da esquerda, digite o número de libras que quer converter para quilogramas."
+        },
+        {
+          "name": "Leia o resultado em quilogramas",
+          "text": "O resultado em kg aparece imediatamente no campo ao lado. Pode copiá-lo para a área de transferência com um clique."
+        },
+        {
+          "name": "Inverta a direção se necessário",
+          "text": "Clique em Trocar para mudar o conversor para o modo quilogramas para libras."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando precisa de converter libras para quilogramas?",
+      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, o quilograma é a unidade de massa padrão para peso corporal, alimentos, mercadoria e equipamento desportivo. Contudo, as apps e sites de saúde e fitness dos EUA — como MyFitnessPal, Apple Health ou Fitbit — mostram o peso em libras (lb) por predefinição. Os planos de treino populares dos EUA também usam libras: os pesos das barras olímpicas são dados em 45 lb (20 kg), e os discos padrão em 45, 35, 25, 10 e 5 lb.</p><p class=\"text-mid mb-4\">Converter libras para kg é também necessário ao ler os limites de bagagem de companhias aéreas americanas, ao verificar o peso numa balança em libras ou ao interpretar documentação médica de um hospital anglófono onde o peso de um bebé é registado em libras e onças.</p><p class=\"text-mid\">Uma libra equivale exatamente a 0,45359237 kg. Ao contrário: 1 kg = 2,2046 lb. O conversor calcula o resultado assim que digita um valor, e pode copiá-lo para a área de transferência com um único clique.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Conversor gratuito de libras para quilogramas – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão de libras para quilogramas? Fórmula e exemplo",
+      "html": "<p class=\"text-mid mb-4\">A fórmula é: <strong>quilogramas = libras × 0,45359237</strong>. Ao contrário: <strong>libras = quilogramas × 2,2046</strong>. Estes valores derivam da definição exata da libra avoirdupois internacional fixada em 1959: 1 libra = 0,45359237 kg.</p><p class=\"text-mid mb-4\">Exemplo: uma pessoa pesa 154 lb na balança americana. Cálculo: 154 × 0,4536 = 69,85 kg — ou seja, cerca de 70 kg.</p><p class=\"text-mid\">Estimativa rápida sem calculadora: divida as libras por 2,2. Por exemplo: 154 lb ÷ 2,2 = 70 kg. O valor exato é 69,85 kg — erro de apenas 0,2 %.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabela de conversão de libras para quilogramas",
+      "description": "A tabela seguinte mostra a conversão dos valores mais habituais em libras para quilogramas, arredondada a dois decimais. Para um valor exato, use o conversor acima.",
+      "labelHeader": "Libras (lb)",
+      "cols": ["Quilogramas (kg)"],
+      "rows": [
+        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
+        { "label": "2 lb", "values": ["0,91 kg"] },
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
+        { "label": "15 lb", "values": ["6,80 kg"] },
+        { "label": "20 lb", "values": ["9,07 kg"] },
+        { "label": "25 lb", "values": ["11,34 kg"] },
+        { "label": "30 lb", "values": ["13,61 kg"] },
+        { "label": "40 lb", "values": ["18,14 kg"] },
+        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
+        { "label": "60 lb", "values": ["27,22 kg"] },
+        { "label": "70 lb", "values": ["31,75 kg"] },
+        { "label": "80 lb", "values": ["36,29 kg"] },
+        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
+        { "label": "180 lb", "values": ["81,65 kg"], "emphasis": true },
+        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
+        { "label": "220 lb", "values": ["99,79 kg"] },
+        { "label": "250 lb", "values": ["113,40 kg"] },
+        { "label": "300 lb", "values": ["136,08 kg"] }
+      ],
+      "caption": "Quer converter no sentido inverso? Use o nosso <a href=\"/pt/ferramentas/conversor-kg-para-libras\">conversor de kg para libras</a>, com tabela e conteúdo detalhado."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Peso corporal em libras – conversão para quilogramas",
+      "description": "A tabela converte os valores mais habituais de peso corporal em libras para quilogramas. Os valores abrangem desde 88 lb (cerca de 40 kg) até 265 lb (cerca de 120 kg).",
+      "labelHeader": "Peso corporal (lb)",
+      "cols": ["Quilogramas (kg)"],
+      "rows": [
+        { "label": "88 lb", "values": ["39,92 kg"] },
+        { "label": "99 lb", "values": ["44,91 kg"] },
+        { "label": "110 lb", "values": ["49,90 kg"], "emphasis": true },
+        { "label": "121 lb", "values": ["54,88 kg"] },
+        { "label": "132 lb", "values": ["59,87 kg"] },
+        { "label": "143 lb", "values": ["64,86 kg"] },
+        { "label": "154 lb", "values": ["69,85 kg"], "emphasis": true },
+        { "label": "165 lb", "values": ["74,84 kg"], "emphasis": true },
+        { "label": "176 lb", "values": ["79,83 kg"], "emphasis": true },
+        { "label": "187 lb", "values": ["84,82 kg"], "emphasis": true },
+        { "label": "198 lb", "values": ["89,81 kg"], "emphasis": true },
+        { "label": "220 lb", "values": ["99,79 kg"], "emphasis": true },
+        { "label": "242 lb", "values": ["109,77 kg"] },
+        { "label": "265 lb", "values": ["120,20 kg"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Pesos de academia e powerlifting em libras – conversão para kg",
+      "description": "Os programas de treino mais populares dos EUA indicam todas as cargas em libras. A tabela converte os pesos mais habituais de barras e discos.",
+      "labelHeader": "Peso (lb)",
+      "cols": ["Quilogramas (kg)"],
+      "rows": [
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"] },
+        { "label": "25 lb", "values": ["11,34 kg"] },
+        { "label": "35 lb", "values": ["15,88 kg"] },
+        {
+          "label": "45 lb (barra olímpica)",
+          "values": ["20,41 kg"],
+          "emphasis": true
+        },
+        { "label": "95 lb", "values": ["43,09 kg"] },
+        {
+          "label": "135 lb (referência supino)",
+          "values": ["61,23 kg"],
+          "emphasis": true
+        },
+        { "label": "185 lb", "values": ["83,91 kg"] },
+        {
+          "label": "225 lb (supino avançado)",
+          "values": ["102,06 kg"],
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre a conversão de libras para kg",
+      "items": [
+        {
+          "question": "Quantos quilogramas tem uma libra?",
+          "answer": "Uma libra equivale exatamente a 0,45359237 kg. Este valor está fixado como constante desde 1959 com o nome de libra avoirdupois internacional. Arredondado: 1 lb ≈ 0,454 kg."
+        },
+        {
+          "question": "Quantos kg são 100 libras?",
+          "answer": "100 lb são 45,36 kg. Como referência prática: 100 libras são pouco menos de 50 kg."
+        },
+        {
+          "question": "Quantos kg são 150 libras?",
+          "answer": "150 lb são 68,04 kg. É um peso frequente para uma pessoa de constituição média em Portugal ou no Brasil."
+        },
+        {
+          "question": "Quantos kg são 200 libras?",
+          "answer": "200 lb são 90,72 kg. Arredondando: 200 libras equivalem a cerca de 91 kg."
+        },
+        {
+          "question": "Qual é a fórmula para converter libras em kg?",
+          "answer": "A fórmula é: kg = libras × 0,45359237. Para cálculos rápidos usa-se 0,4536. Ao contrário: libras = kg × 2,2046."
+        },
+        {
+          "question": "Quantas libras são 70 kg?",
+          "answer": "70 kg são 154,32 lb. A conversão neste sentido (kg para lb) faz-se multiplicando por 2,2046: 70 × 2,2046 = 154,32 lb."
+        },
+        {
+          "question": "Quantos kg são 50 libras?",
+          "answer": "50 lb são 22,68 kg. É também o limite de bagagem despachada mais habitual em classe económica nas companhias aéreas americanas."
+        },
+        {
+          "question": "Como converter libras para kg sem calculadora?",
+          "answer": "Estimativa rápida: divida as libras por 2,2. Por exemplo: 154 lb ÷ 2,2 = 70 kg. O valor exato é 69,85 kg — erro de apenas 0,2 %."
+        },
+        {
+          "question": "Quantos kg são 130 libras?",
+          "answer": "130 lb são 58,97 kg — ou seja, quase exatamente 59 kg. Cálculo: 130 × 0,4536 = 58,97 kg."
+        },
+        {
+          "question": "Quantos kg são 180 libras?",
+          "answer": "180 lb são 81,65 kg. É um peso frequente em homens de constituição média ou ligeiramente atlética em Portugal e no Brasil."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Tem alguma questão ou sugestão?",
+      "description": "Se detetar um erro nas tabelas ou tiver uma ideia para melhorar o conversor, escreva-nos. Respondemos a cada mensagem.",
+      "imageAlt": "Contactar Arteon Agency",
+      "subject": "Conversor libras para kg"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Outros conversores de unidades úteis"
+    }
+  ]
+}

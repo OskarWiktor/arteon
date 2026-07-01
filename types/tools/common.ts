@@ -93,6 +93,8 @@ export type ToolItemKey =
   | 'inchesToPxDpi'
   | 'cmToInches'
   | 'inchesToCm'
+  | 'kgToLb'
+  | 'lbToKg'
   | 'hexToRgb'
   | 'rgbToCmyk'
   // Unit converters - programming/technical

@@ -139,12 +139,6 @@ export default function TextFormatConverter({
 
   return (
     <div className='overflow-hidden'>
-      <FormatSelector
-        currentSource={LABEL_TO_FORMAT[sourceLabel] ?? 'csv'}
-        currentTarget={LABEL_TO_FORMAT[targetLabel] ?? 'json'}
-        hasFiles={!!input.trim()}
-      />
-
       <div className='grid gap-4 md:grid-cols-2'>
         <Card interactive={false} padding='lg' variant='outlined'>
           <div className={cn('gap-2', flexCenterBetweenClasses)}>
@@ -221,6 +215,11 @@ export default function TextFormatConverter({
           </div>
         </Card>
       </div>
+      <FormatSelector
+        currentSource={LABEL_TO_FORMAT[sourceLabel] ?? 'csv'}
+        currentTarget={LABEL_TO_FORMAT[targetLabel] ?? 'json'}
+        hasFiles={!!input.trim()}
+      />
     </div>
   );
 }

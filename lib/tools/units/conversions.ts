@@ -232,6 +232,30 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
   },
 
   {
+    toolKey: 'kgToLb',
+    category: 'weight',
+    sourceField: { labelKey: 'kilograms', suffix: 'kg' },
+    targetField: { labelKey: 'pounds', suffix: 'lb' },
+    convert: v => v * 2.20462262185,
+    reverseConvert: v => v * 0.45359237,
+    precision: 2,
+    swappable: true,
+    reverseToolKey: 'lbToKg',
+  },
+
+  {
+    toolKey: 'lbToKg',
+    category: 'weight',
+    sourceField: { labelKey: 'pounds', suffix: 'lb' },
+    targetField: { labelKey: 'kilograms', suffix: 'kg' },
+    convert: v => v * 0.45359237,
+    reverseConvert: v => v * 2.20462262185,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'kgToLb',
+  },
+
+  {
     toolKey: 'inchesToPxDpi',
     category: 'css',
     sourceField: { labelKey: 'inches', suffix: 'in' },

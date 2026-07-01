@@ -1,0 +1,378 @@
+{
+  "toolKey": "kgToLb",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur kilogrammes en livres – calculatrice kg en lb",
+    "description": "Convertissez des kilogrammes en livres instantanément. Utile pour le poids corporel, les équipements sportifs, les limites de bagage et le poids des bébés. Tableau de 0,5 à 200 kg avec colonne stone.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-kg-en-livres"
+  },
+  "hero": {
+    "title": "Convertissez des kilogrammes en livres",
+    "description": "Saisissez une valeur en kilogrammes et obtenez immédiatement le résultat en livres. Le convertisseur est utile pour vérifier son poids corporel dans le système impérial, lire les limites de bagages en livres, comparer ses performances sportives avec des tableaux américains ou britanniques, ou convertir le poids de naissance d'un bébé.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-kg-en-livres",
+      "label": "kg en livres"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur kilogrammes en livres – calculatrice kg en lb",
+      "alternateName": [
+        "convertisseur kg en livres",
+        "calculatrice kg en lb",
+        "kilogrammes en livres",
+        "kg en lb",
+        "conversion kg livres",
+        "kg en pounds",
+        "tableau kg livres",
+        "combien de livres dans un kilogramme",
+        "kg en stone et livres",
+        "formule kg en livres",
+        "convertir kg en livres",
+        "kg livres calculatrice",
+        "kilo en livre",
+        "conversion kilogramme livre",
+        "kg en lbs"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertisseur gratuit de kilogrammes en livres fonctionnant dans le navigateur sans inscription. Saisissez une valeur en kg et obtenez immédiatement le résultat en livres. Utile pour vérifier le poids corporel, comparer avec des tableaux sportifs anglo-saxons, calculer les limites de bagages ou lire le poids de naissance d'un bébé en unités impériales.",
+      "featureList": [
+        "La conversion fonctionne dans les deux sens — vous pouvez convertir aussi bien des kilogrammes en livres que des livres en kilogrammes",
+        "Le résultat s'affiche instantanément pendant la saisie, sans cliquer sur aucun bouton",
+        "Le résultat peut être copié dans le presse-papiers en un seul clic",
+        "Le tableau de conversion couvre des valeurs de 0,5 kg à 200 kg",
+        "Le tableau de poids corporel affiche les valeurs courantes de 40 kg à 120 kg avec conversion en livres et en stone (système britannique)",
+        "Le tableau de poids de salle de sport convertit les charges courantes de 2,5 kg à 100 kg",
+        "Le tableau inversé convertit les livres en kilogrammes pour des valeurs de 1 à 300 lb",
+        "Tous les calculs s'effectuent localement dans le navigateur — aucune donnée ne quitte votre appareil",
+        "La formule exacte est livres = kilogrammes × 2,2046, basée sur la définition 1 livre = 0,45359237 kg",
+        "Fonctionne sur téléphone, tablette et ordinateur sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir des kilogrammes en livres ?",
+      "description": "Guide rapide pour utiliser le convertisseur kg en livres.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir la valeur en kilogrammes",
+          "text": "Dans le champ de gauche, saisissez le nombre de kilogrammes que vous souhaitez convertir en livres."
+        },
+        {
+          "name": "Lire le résultat en livres",
+          "text": "Le résultat en livres s'affiche immédiatement dans le champ adjacent. Vous pouvez le copier dans le presse-papiers en un clic."
+        },
+        {
+          "name": "Inverser le sens si nécessaire",
+          "text": "Cliquez sur Inverser pour basculer le convertisseur en mode livres vers kilogrammes."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand convertit-on des kilogrammes en livres ?",
+      "html": "<p class=\"text-mid mb-4\">Le kilogramme est l'unité de masse standard en France, en Belgique, en Suisse et dans la grande majorité du monde. La livre (lb) domine aux États-Unis et reste très utilisée au Royaume-Uni — notamment pour le poids corporel, où les Britanniques utilisent également le stone (1 stone = 14 livres = environ 6,35 kg).</p><p class=\"text-mid mb-4\">Convertir des kg en livres est utile quand vous consultez votre poids sur un site médical américain ou britannique, achetez des équipements sportifs décrits en livres, interprétez une limite de bagage en livres ou souhaitez connaître le poids de naissance d'un bébé en unités anglo-saxonnes.</p><p class=\"text-mid mb-4\">Une livre correspond exactement à 0,45359237 kg — cette valeur est fixée comme constante depuis 1959. Dans l'autre sens : 1 kg = 2,2046 livres. Le convertisseur effectue le calcul dès que vous saisissez une valeur.</p><p class=\"text-mid\">Sur cette page, vous trouverez un tableau kg en livres pour des valeurs de 0,5 à 200 kg, un tableau de poids corporel avec conversion en livres et en stone, un tableau de poids de salle de sport et un tableau inversé livres en kg.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur gratuit kilogrammes en livres – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion kg en livres ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion de kilogrammes en livres repose sur une définition fixe : une livre correspond exactement à 0,45359237 kg. Pour obtenir des livres, il suffit de multiplier les kilogrammes par 2,2046.</p><p class=\"text-mid mb-4\">Formule complète : <strong>livres = kilogrammes × 2,2046</strong>. Dans l'autre sens : <strong>kilogrammes = livres × 0,4536</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous voulez savoir combien de livres pèse une personne de 70 kg. Calcul : 70 × 2,2046 = 154,32 lb. En système britannique, cela correspond à 11 stone 0,3 lb, car un stone = 14 livres : 154,32 ÷ 14 = 11 stone avec un reste de 0,32 livre.</p><p class=\"text-mid\">Estimation rapide sans calculatrice : 1 kg ≈ 2,2 lb — multipliez les kilogrammes par 2 et ajoutez un cinquième du résultat. Par exemple : 80 kg × 2 = 160, plus 16 (20 % de 80) = 176 lb. La valeur exacte est 176,37 lb — une erreur de seulement 0,2 %.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion kilogrammes en livres",
+      "description": "Le tableau ci-dessous présente la conversion des valeurs courantes en kilogrammes vers les livres, arrondie à deux décimales. Pour convertir une valeur exacte ou un poids moins courant, utilisez le convertisseur ci-dessus.",
+      "labelHeader": "Kilogrammes",
+      "cols": ["Livres (lb)"],
+      "rows": [
+        { "label": "0,5 kg", "values": ["1,10 lb"] },
+        { "label": "1 kg", "values": ["2,20 lb"], "emphasis": true },
+        { "label": "2 kg", "values": ["4,41 lb"] },
+        { "label": "3 kg", "values": ["6,61 lb"] },
+        { "label": "4 kg", "values": ["8,82 lb"] },
+        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
+        { "label": "6 kg", "values": ["13,23 lb"] },
+        { "label": "7 kg", "values": ["15,43 lb"] },
+        { "label": "8 kg", "values": ["17,64 lb"] },
+        { "label": "9 kg", "values": ["19,84 lb"] },
+        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
+        { "label": "12 kg", "values": ["26,46 lb"] },
+        { "label": "15 kg", "values": ["33,07 lb"] },
+        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "25 kg", "values": ["55,12 lb"] },
+        { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "35 kg", "values": ["77,16 lb"] },
+        { "label": "40 kg", "values": ["88,18 lb"] },
+        { "label": "45 kg", "values": ["99,21 lb"] },
+        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
+        { "label": "55 kg", "values": ["121,25 lb"] },
+        { "label": "60 kg", "values": ["132,28 lb"] },
+        { "label": "65 kg", "values": ["143,30 lb"] },
+        { "label": "70 kg", "values": ["154,32 lb"], "emphasis": true },
+        { "label": "75 kg", "values": ["165,35 lb"] },
+        { "label": "80 kg", "values": ["176,37 lb"], "emphasis": true },
+        { "label": "85 kg", "values": ["187,39 lb"] },
+        { "label": "90 kg", "values": ["198,42 lb"] },
+        { "label": "95 kg", "values": ["209,44 lb"] },
+        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true },
+        { "label": "110 kg", "values": ["242,51 lb"] },
+        { "label": "120 kg", "values": ["264,55 lb"] },
+        { "label": "130 kg", "values": ["286,60 lb"] },
+        { "label": "140 kg", "values": ["308,65 lb"] },
+        { "label": "150 kg", "values": ["330,69 lb"], "emphasis": true },
+        { "label": "175 kg", "values": ["385,81 lb"] },
+        { "label": "200 kg", "values": ["440,92 lb"] }
+      ],
+      "caption": "Vous souhaitez convertir dans l'autre sens ? Utilisez notre <a href=\"/fr/outils/convertisseur-livres-en-kg\">convertisseur livres en kg</a>, qui possède son propre tableau et des contenus dédiés à cette direction."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Poids corporel en kg – conversion en livres et en stone",
+      "description": "Le tableau convertit les valeurs courantes de poids corporel de 40 kg à 120 kg en livres (lb) et en stone et livres (st lb), le format utilisé au Royaume-Uni. Un stone vaut 14 livres. La colonne stone est arrondie à une décimale.",
+      "labelHeader": "Poids corporel",
+      "cols": ["Livres (lb)", "Stone et livres (st lb)"],
+      "rows": [
+        { "label": "40 kg", "values": ["88,18 lb", "6 st 4,2 lb"] },
+        { "label": "45 kg", "values": ["99,21 lb", "7 st 1,2 lb"] },
+        {
+          "label": "50 kg",
+          "values": ["110,23 lb", "7 st 12,2 lb"],
+          "emphasis": true
+        },
+        { "label": "55 kg", "values": ["121,25 lb", "8 st 9,3 lb"] },
+        {
+          "label": "60 kg",
+          "values": ["132,28 lb", "9 st 6,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "65 kg",
+          "values": ["143,30 lb", "10 st 3,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "70 kg",
+          "values": ["154,32 lb", "11 st 0,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "75 kg",
+          "values": ["165,35 lb", "11 st 11,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "80 kg",
+          "values": ["176,37 lb", "12 st 8,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "85 kg",
+          "values": ["187,39 lb", "13 st 5,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "90 kg",
+          "values": ["198,42 lb", "14 st 2,4 lb"],
+          "emphasis": true
+        },
+        { "label": "95 kg", "values": ["209,44 lb", "14 st 13,4 lb"] },
+        {
+          "label": "100 kg",
+          "values": ["220,46 lb", "15 st 10,5 lb"],
+          "emphasis": true
+        },
+        { "label": "110 kg", "values": ["242,51 lb", "17 st 4,5 lb"] },
+        { "label": "120 kg", "values": ["264,55 lb", "18 st 12,6 lb"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tableau inversé – livres en kilogrammes",
+      "description": "Le tableau ci-dessous convertit les valeurs courantes en livres vers les kilogrammes, arrondie à deux décimales.",
+      "labelHeader": "Livres (lb)",
+      "cols": ["Kilogrammes"],
+      "rows": [
+        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
+        { "label": "20 lb", "values": ["9,07 kg"] },
+        { "label": "30 lb", "values": ["13,61 kg"] },
+        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
+        { "label": "70 lb", "values": ["31,75 kg"] },
+        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
+        { "label": "180 lb", "values": ["81,65 kg"] },
+        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
+        { "label": "250 lb", "values": ["113,40 kg"] },
+        { "label": "300 lb", "values": ["136,08 kg"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Poids de salle de sport – charges courantes en kg et lb",
+      "description": "Les équipements de fitness fabriqués aux États-Unis sont étiquetés en livres. Le tableau convertit les charges standard, des haltères jusqu'à la barre olympique.",
+      "labelHeader": "Poids (kg)",
+      "cols": ["Poids (lb)"],
+      "rows": [
+        { "label": "2,5 kg", "values": ["5,51 lb"] },
+        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
+        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
+        { "label": "15 kg", "values": ["33,07 lb"] },
+        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "25 kg", "values": ["55,12 lb"] },
+        { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "40 kg", "values": ["88,18 lb"] },
+        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
+        { "label": "60 kg", "values": ["132,28 lb"] },
+        { "label": "80 kg", "values": ["176,37 lb"] },
+        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Dans quelles situations convertit-on des kilogrammes en livres ?",
+      "description": "La conversion de kg en lb apparaît dans plusieurs situations concrètes.",
+      "items": [
+        {
+          "title": "Poids corporel et suivi diététique",
+          "description": "Les applications fitness, les trackers d'activité et les portails médicaux américains ou britanniques affichent le poids en livres ou en stone. Si un coach américain fixe un objectif de 180 lb, cela représente 180 × 0,4536 = 81,65 kg. Le tableau de poids corporel ci-dessus contient des conversions prêtes à l'emploi de 40 à 120 kg."
+        },
+        {
+          "title": "Entraînement et salle de sport",
+          "description": "Les programmes d'entraînement américains — Starting Strength, 5/3/1, StrongLifts — indiquent toutes les charges en livres. Une barre olympique pèse 45 lb (environ 20 kg), des haltères de 25 lb représentent un peu plus de 11 kg. Le tableau de poids de salle ci-dessus couvre les charges les plus courantes."
+        },
+        {
+          "title": "Poids de naissance",
+          "description": "Aux États-Unis et au Royaume-Uni, le poids des nouveau-nés est exprimé en livres et onces. Un nouveau-né en bonne santé pesant 3,5 kg correspond à environ 7 lb 11 oz (7,716 lb). Calcul : 3,5 × 2,2046 = 7,72 lb ; la partie décimale 0,72 lb × 16 = 11,5 oz. Le convertisseur donne le résultat en livres décimales — multipliez le reste par 16 pour obtenir les onces."
+        },
+        {
+          "title": "Bagages et colis",
+          "description": "De nombreuses compagnies aériennes, notamment américaines, indiquent les limites de bagage en livres. La limite standard de 50 lb correspond à 22,68 kg, et 70 lb à 31,75 kg. Les transporteurs américains (UPS, FedEx) facturent aussi au poids en livres — utile pour estimer les frais de livraison lors d'achats sur des sites américains."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion de kg en livres",
+      "items": [
+        {
+          "question": "Combien de livres fait 1 kilogramme ?",
+          "answer": "Un kilogramme correspond à 2,2046 livres (lb). Cela découle de la définition : 1 livre = 0,45359237 kg, donc 1 kg = 1 ÷ 0,45359237 ≈ 2,2046 lb. Arrondi à une décimale : 1 kg ≈ 2,2 lb."
+        },
+        {
+          "question": "Quelle est la formule pour convertir des kg en livres ?",
+          "answer": "La formule est : livres = kilogrammes × 2,2046. Dans l'autre sens : kilogrammes = livres × 0,4536. Exemple : 70 kg × 2,2046 = 154,32 lb."
+        },
+        {
+          "question": "Combien de livres font 70 kg ?",
+          "answer": "70 kg correspondent à 154,32 livres (lb), soit 11 stone 0,3 lb dans le système britannique. Calcul : 70 × 2,2046 = 154,32 ; 154,32 ÷ 14 = 11 stone avec un reste de 0,32 lb."
+        },
+        {
+          "question": "Combien de livres font 80 kg ?",
+          "answer": "80 kg correspondent à 176,37 lb, soit 12 stone 8,4 lb dans le système britannique. C'est un poids souvent associé à un homme de corpulence athlétique dans les pays anglophones."
+        },
+        {
+          "question": "Combien de livres font 100 kg ?",
+          "answer": "100 kg correspondent à 220,46 lb. Arrondi : 100 kg représentent un peu plus de 220 livres — un repère facile à mémoriser. En système britannique : 15 stone 10,5 lb."
+        },
+        {
+          "question": "Combien de livres font 50 kg ?",
+          "answer": "50 kg correspondent à 110,23 lb. Aide-mémoire : 50 kg représentent un peu plus de 110 livres. En système britannique : 7 stone 12,2 lb."
+        },
+        {
+          "question": "Combien de kilogrammes fait une livre ?",
+          "answer": "Une livre correspond exactement à 0,45359237 kg. Cette valeur est fixée comme constante depuis 1959 sous le nom de livre avoirdupois internationale. Arrondi : 1 lb ≈ 0,454 kg."
+        },
+        {
+          "question": "Qu'est-ce qu'un stone et comment convertir des kg en stone ?",
+          "answer": "Le stone est une unité de masse britannique : 1 stone = 14 livres = 6,3503 kg. Au Royaume-Uni, le poids corporel est souvent donné en stone et livres (ex. '11 stone 4 lb'). Pour convertir des kg en stone : diviser la valeur en kg par 6,3503. Exemple : 70 kg ÷ 6,3503 = 11,02 stone = 11 stone 0,3 lb."
+        },
+        {
+          "question": "Combien de livres et d'onces font 3,5 kg ?",
+          "answer": "3,5 kg correspondent à 7,716 lb. En livres et onces : 7 livres et 0,716 × 16 = 11,5 onces, soit environ 7 lb 11 oz. Un nouveau-né en bonne santé pèse généralement entre 3 et 4 kg, soit environ 6,6 à 8,8 lb."
+        },
+        {
+          "question": "Combien de kg représente une limite de bagage de 50 lb ?",
+          "answer": "50 lb correspondent à 50 × 0,45359237 = 22,68 kg. C'est la limite de bagage enregistré standard de nombreuses compagnies aériennes. La limite fréquente de 70 lb (par exemple en première classe) correspond à 31,75 kg."
+        },
+        {
+          "question": "Combien de livres font 60 kg ?",
+          "answer": "60 kg correspondent à 132,28 lb, soit 9 stone 6,3 lb dans le système britannique. C'est un poids typique pour une femme de corpulence moyenne en France et en Europe."
+        },
+        {
+          "question": "Combien de livres font 90 kg ?",
+          "answer": "90 kg correspondent à 198,42 lb. Arrondi, c'est presque exactement 200 livres — un repère pratique. En système britannique : 14 stone 2,4 lb."
+        },
+        {
+          "question": "Combien de kg font 200 livres ?",
+          "answer": "200 lb correspondent à 200 × 0,45359 = 90,72 kg. Approximation courante : 200 livres représentent un peu moins de 91 kg."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Vous avez une question ou une suggestion ?",
+      "description": "Si vous constatez une erreur dans les tableaux ou avez une idée pour améliorer le convertisseur, écrivez-nous. Nous répondons à chaque message.",
+      "imageAlt": "Contacter Arteon Agency",
+      "subject": "Convertisseur kg en livres"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités utiles"
+    }
+  ]
+}

@@ -310,6 +310,8 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'inchesToPxDpi',
   'cmToInches',
   'inchesToCm',
+  'kgToLb',
+  'lbToKg',
   'hexToRgb',
   'rgbToCmyk',
   'bytesConverter',

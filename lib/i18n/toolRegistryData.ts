@@ -6335,6 +6335,154 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'kgToLb',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-kg-na-funty',
+        title: 'kg na funty',
+        description:
+          'Przelicz kilogramy na funty. Waga ciała, trening, bagaż, waga niemowląt.',
+      },
+      en: {
+        slug: 'kg-to-lb-converter',
+        title: 'kg to lb',
+        description:
+          'Convert kilograms to pounds. Body weight, gym loads, baggage limits and newborn weight.',
+      },
+      de: {
+        slug: 'kg-in-pfund-umrechner',
+        title: 'kg in Pfund',
+        description:
+          'Kilogramm in Pfund umrechnen. Körpergewicht, Fitnessstudio, Gepäcklimits.',
+      },
+      fr: {
+        slug: 'convertisseur-kg-en-livres',
+        title: 'kg en livres',
+        description:
+          'Convertissez des kilogrammes en livres. Poids corporel, charges de salle et bagages.',
+      },
+      es: {
+        slug: 'convertidor-kg-a-libras',
+        title: 'kg a libras',
+        description:
+          'Convierte kilogramos a libras. Peso corporal, cargas de gimnasio y límites de equipaje.',
+      },
+      pt: {
+        slug: 'conversor-kg-para-libras',
+        title: 'kg para libras',
+        description:
+          'Converta quilogramas para libras. Peso corporal, cargas de academia e limites de bagagem.',
+      },
+      it: {
+        slug: 'convertitore-kg-in-libbre',
+        title: 'kg in libbre',
+        description:
+          'Converti chilogrammi in libbre. Peso corporeo, carichi in palestra e limiti bagaglio.',
+      },
+      nl: {
+        slug: 'kg-naar-pond-converter',
+        title: 'kg naar pond',
+        description:
+          'Reken kilogram om naar pond. Lichaamsgewicht, fitnessgewichten en bagagelimieten.',
+      },
+      cs: {
+        slug: 'prevodnik-kg-na-libry',
+        title: 'kg na libry',
+        description:
+          'Převeď kilogramy na libry. Tělesná hmotnost, posilovna, limity zavazadel.',
+      },
+      fi: {
+        slug: 'kg-naulaksi-muunnin',
+        title: 'kg naulaksi',
+        description:
+          'Muunna kilogrammoja naulaksi. Kehonpaino, kuntosalisuoritukset ja matkatavararajat.',
+      },
+      el: {
+        slug: 'metatropeas-kg-se-livres',
+        title: 'kg σε λίβρες',
+        description:
+          'Μετατρέψτε κιλά σε λίβρες. Σωματικό βάρος, φορτία γυμναστηρίου και όρια αποσκευών.',
+      },
+    },
+  },
+  {
+    key: 'lbToKg',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-funtow-na-kg',
+        title: 'funty na kg',
+        description:
+          'Przelicz funty na kilogramy. Waga ciała z amerykańskich tabel, siłownia, przesyłki.',
+      },
+      en: {
+        slug: 'lb-to-kg-converter',
+        title: 'lb to kg',
+        description:
+          'Convert pounds to kilograms. Body weight from US apps, gym programs and baggage limits.',
+      },
+      de: {
+        slug: 'pfund-in-kg-umrechner',
+        title: 'Pfund in kg',
+        description:
+          'Pfund in Kilogramm umrechnen. Körpergewicht aus US-Apps, Fitnessstudio und Gepäcklimits.',
+      },
+      fr: {
+        slug: 'convertisseur-livres-en-kg',
+        title: 'livres en kg',
+        description:
+          'Convertissez des livres en kilogrammes. Poids corporel depuis des apps américaines, salle de sport.',
+      },
+      es: {
+        slug: 'convertidor-libras-a-kg',
+        title: 'libras a kg',
+        description:
+          'Convierte libras a kilogramos. Peso corporal desde apps de EE. UU., gimnasio y equipaje.',
+      },
+      pt: {
+        slug: 'conversor-libras-para-kg',
+        title: 'libras para kg',
+        description:
+          'Converta libras para quilogramas. Peso corporal de apps americanas, academia e bagagem.',
+      },
+      it: {
+        slug: 'convertitore-libbre-in-kg',
+        title: 'libbre in kg',
+        description:
+          'Converti libbre in chilogrammi. Peso corporeo da app americane, palestra e bagaglio.',
+      },
+      nl: {
+        slug: 'pond-naar-kg-converter',
+        title: 'pond naar kg',
+        description:
+          'Reken pond om naar kilogram. Lichaamsgewicht uit Amerikaanse apps, gym en bagagelimieten.',
+      },
+      cs: {
+        slug: 'prevodnik-liber-na-kg',
+        title: 'libry na kg',
+        description:
+          'Převeď libry na kilogramy. Tělesná hmotnost z amerických aplikací, posilovna, zavazadla.',
+      },
+      fi: {
+        slug: 'naulaa-kiloksi-muunnin',
+        title: 'naulaa kiloksi',
+        description:
+          'Muunna nauloja kilogrammoiksi. Kehonpaino amerikkalaisista sovelluksista ja kuntosalisuoritukset.',
+      },
+      el: {
+        slug: 'metatropeas-livres-se-kg',
+        title: 'λίβρες σε kg',
+        description:
+          'Μετατρέψτε λίβρες σε κιλά. Σωματικό βάρος από αμερικανικές εφαρμογές, γυμναστήριο.',
+      },
+    },
+  },
+  {
     key: 'hexToRgb',
     section: 'jednostki',
     icon: RiRulerLine,

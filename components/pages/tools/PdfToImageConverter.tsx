@@ -234,12 +234,6 @@ export default function PdfToImageConverter({
 
   return (
     <div className='overflow-hidden'>
-      <FormatSelector
-        currentSource='pdf'
-        currentTarget={targetFormat}
-        hasFiles={pages.length > 0}
-      />
-
       <div className='grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]'>
         <Card interactive={false} padding='lg' variant='outlined'>
           <form onSubmit={handleConvert} className='space-y-4'>
@@ -416,6 +410,11 @@ export default function PdfToImageConverter({
           )}
         </Card>
       </div>
+      <FormatSelector
+        currentSource='pdf'
+        currentTarget={targetFormat}
+        hasFiles={pages.length > 0}
+      />
     </div>
   );
 }

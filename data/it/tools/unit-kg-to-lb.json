@@ -1,0 +1,308 @@
+{
+  "toolKey": "kgToLb",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore da chilogrammi a libbre – calcolatore kg in lb",
+    "description": "Converti chilogrammi in libbre all'istante. Utile per il peso corporeo, i carichi in palestra, i limiti bagaglio e il peso dei neonati. Tabella da 0,5 a 200 kg con colonna stone.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-kg-in-libbre"
+  },
+  "hero": {
+    "title": "Converti chilogrammi in libbre",
+    "description": "Inserisci qualsiasi valore in chilogrammi e ottieni il risultato in libbre immediatamente. Il convertitore è utile per verificare il peso corporeo nel sistema imperiale, leggere i limiti bagaglio in libbre, confrontare risultati sportivi con tabelle americane o convertire il peso alla nascita di un neonato.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-kg-in-libbre",
+      "label": "kg in libbre"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore da chilogrammi a libbre – calcolatore kg in lb",
+      "alternateName": [
+        "convertitore kg in libbre",
+        "calcolatore kg in lb",
+        "chilogrammi in libbre",
+        "kg in libbre",
+        "conversione kg libbre",
+        "kg in pounds",
+        "tabella kg libbre",
+        "quante libbre sono un chilogrammo",
+        "kg in stone e libbre",
+        "formula kg in libbre",
+        "convertire kg in libbre",
+        "chili in libbre",
+        "kg in lbs",
+        "convertitore chili libbre"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertitore gratuito da chilogrammi a libbre che funziona nel browser senza registrazione. Inserisci un valore in kg e ottieni il risultato in libbre immediatamente. Utile per verificare il peso corporeo in app di salute americane e britanniche, confrontare carichi di allenamento con programmi USA, calcolare limiti bagaglio o leggere il peso di nascita di un neonato in unità imperiali.",
+      "featureList": [
+        "La conversione funziona in entrambe le direzioni: puoi convertire sia chilogrammi in libbre che libbre in chilogrammi",
+        "Il risultato appare all'istante mentre scrivi, senza bisogno di premere nessun pulsante",
+        "Il risultato può essere copiato negli appunti con un solo clic",
+        "La tabella di conversione copre valori da 0,5 kg a 200 kg",
+        "La tabella del peso corporeo mostra valori abituali da 40 kg a 120 kg con conversione in libbre e stone (sistema britannico)",
+        "La tabella dei pesi in palestra converte carichi abituali da 2,5 kg a 100 kg",
+        "Tutti i calcoli vengono eseguiti localmente nel browser: nessun dato esce dal dispositivo",
+        "La formula esatta è libbre = chilogrammi × 2,2046, basata sulla definizione 1 libbra = 0,45359237 kg",
+        "Funziona su telefono, tablet e computer senza installazione"
+      ]
+    },
+    "howTo": {
+      "name": "Come convertire chilogrammi in libbre?",
+      "description": "Guida rapida per usare il convertitore da kg in libbre.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserisci il valore in chilogrammi",
+          "text": "Nel campo a sinistra, inserisci il numero di chilogrammi che vuoi convertire in libbre."
+        },
+        {
+          "name": "Leggi il risultato in libbre",
+          "text": "Il risultato in libbre appare immediatamente nel campo accanto. Puoi copiarlo negli appunti con un clic."
+        },
+        {
+          "name": "Inverti la direzione se necessario",
+          "text": "Clicca su Scambia per passare il convertitore alla modalità libbre in chilogrammi."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando si convertono chilogrammi in libbre?",
+      "html": "<p class=\"text-mid mb-4\">Il chilogrammo è l'unità di massa standard in Italia. La libbra (lb) domina negli Stati Uniti e rimane comune nel Regno Unito, soprattutto per il peso corporeo — dove i britannici usano anche lo stone (1 stone = 14 libbre = circa 6,35 kg).</p><p class=\"text-mid mb-4\">Convertire kg in libbre è necessario quando si consulta il proprio peso su un'app di salute americana, si acquista materiale sportivo descritto in libbre, si interpreta un limite bagaglio in lb o si vuole conoscere il peso alla nascita di un neonato in documentazione di un ospedale anglofono.</p><p class=\"text-mid mb-4\">Una libbra equivale esattamente a 0,45359237 kg, valore fissato come costante dal 1959. Al contrario: 1 kg = 2,2046 libbre. Il convertitore esegue il calcolo non appena inserisci un valore.</p><p class=\"text-mid\">In questa pagina trovi una tabella da kg a libbre per valori da 0,5 a 200 kg, una tabella del peso corporeo con conversione in libbre e stone, una tabella dei pesi in palestra e una tabella inversa da libbre a kg.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore gratuito da chilogrammi a libbre – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione da kg a libbre? Formula ed esempio",
+      "html": "<p class=\"text-mid mb-4\">La conversione da chilogrammi a libbre si basa su una definizione fissa: una libbra equivale esattamente a 0,45359237 kg. Per ottenere le libbre, moltiplica i chilogrammi per 2,2046.</p><p class=\"text-mid mb-4\">Formula completa: <strong>libbre = chilogrammi × 2,2046</strong>. Al contrario: <strong>chilogrammi = libbre × 0,4536</strong>.</p><p class=\"text-mid mb-4\">Esempio: una persona pesa 70 kg e vuole sapere quante libbre sono. Calcolo: 70 × 2,2046 = 154,32 lb. Nel sistema britannico sono 11 stone 0,3 lb, perché 1 stone = 14 libbre: 154,32 ÷ 14 = 11 stone con un resto di 0,32 lb.</p><p class=\"text-mid\">Stima rapida senza calcolatrice: moltiplica i chilogrammi per 2 e aggiungi il 10 % del risultato. Per esempio: 80 kg × 2 = 160, più 16 (10 % di 160) = 176 lb. Il valore esatto è 176,37 lb — un errore di appena lo 0,2 %.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabella di conversione da chilogrammi a libbre",
+      "description": "La tabella seguente mostra la conversione dei valori più comuni in chilogrammi in libbre, arrotondata a due decimali. Per convertire un valore esatto, usa il convertitore qui sopra.",
+      "labelHeader": "Chilogrammi",
+      "cols": ["Libbre (lb)"],
+      "rows": [
+        { "label": "0,5 kg", "values": ["1,10 lb"] },
+        { "label": "1 kg", "values": ["2,20 lb"], "emphasis": true },
+        { "label": "2 kg", "values": ["4,41 lb"] },
+        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
+        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
+        { "label": "15 kg", "values": ["33,07 lb"] },
+        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "25 kg", "values": ["55,12 lb"] },
+        { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "40 kg", "values": ["88,18 lb"] },
+        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
+        { "label": "60 kg", "values": ["132,28 lb"] },
+        { "label": "70 kg", "values": ["154,32 lb"], "emphasis": true },
+        { "label": "80 kg", "values": ["176,37 lb"], "emphasis": true },
+        { "label": "90 kg", "values": ["198,42 lb"] },
+        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true },
+        { "label": "110 kg", "values": ["242,51 lb"] },
+        { "label": "120 kg", "values": ["264,55 lb"] },
+        { "label": "150 kg", "values": ["330,69 lb"], "emphasis": true },
+        { "label": "200 kg", "values": ["440,92 lb"] }
+      ],
+      "caption": "Vuoi convertire nel senso inverso? Usa il nostro <a href=\"/it/strumenti/convertitore-libbre-in-kg\">convertitore da libbre a kg</a>, con tabella e contenuto dettagliato."
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Peso corporeo in kg – conversione in libbre e stone",
+      "description": "La tabella converte i valori più comuni di peso corporeo da 40 kg a 120 kg in libbre (lb) e stone e libbre (st lb), il formato usato nel Regno Unito. Uno stone equivale a 14 libbre.",
+      "labelHeader": "Peso corporeo",
+      "cols": ["Libbre (lb)", "Stone e libbre (st lb)"],
+      "rows": [
+        { "label": "40 kg", "values": ["88,18 lb", "6 st 4,2 lb"] },
+        { "label": "45 kg", "values": ["99,21 lb", "7 st 1,2 lb"] },
+        {
+          "label": "50 kg",
+          "values": ["110,23 lb", "7 st 12,2 lb"],
+          "emphasis": true
+        },
+        { "label": "55 kg", "values": ["121,25 lb", "8 st 9,3 lb"] },
+        {
+          "label": "60 kg",
+          "values": ["132,28 lb", "9 st 6,3 lb"],
+          "emphasis": true
+        },
+        { "label": "65 kg", "values": ["143,30 lb", "10 st 3,3 lb"] },
+        {
+          "label": "70 kg",
+          "values": ["154,32 lb", "11 st 0,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "75 kg",
+          "values": ["165,35 lb", "11 st 11,3 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "80 kg",
+          "values": ["176,37 lb", "12 st 8,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "85 kg",
+          "values": ["187,39 lb", "13 st 5,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "90 kg",
+          "values": ["198,42 lb", "14 st 2,4 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "100 kg",
+          "values": ["220,46 lb", "15 st 10,5 lb"],
+          "emphasis": true
+        },
+        { "label": "110 kg", "values": ["242,51 lb", "17 st 4,5 lb"] },
+        { "label": "120 kg", "values": ["264,55 lb", "18 st 12,6 lb"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Tabella inversa – libbre in chilogrammi",
+      "description": "La tabella seguente converte i valori comuni in libbre in chilogrammi, arrotondata a due decimali.",
+      "labelHeader": "Libbre (lb)",
+      "cols": ["Chilogrammi"],
+      "rows": [
+        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
+        { "label": "5 lb", "values": ["2,27 kg"] },
+        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
+        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
+        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
+        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
+        { "label": "300 lb", "values": ["136,08 kg"] }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionTable",
+      "title": "Pesi in palestra – carichi abituali in kg e lb",
+      "description": "Le attrezzature fitness prodotte negli USA sono etichettate in libbre. La tabella converte i carichi standard, dagli alteri al bilanciere olimpico.",
+      "labelHeader": "Peso (kg)",
+      "cols": ["Peso (lb)"],
+      "rows": [
+        { "label": "2,5 kg", "values": ["5,51 lb"] },
+        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
+        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
+        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "25 kg", "values": ["55,12 lb"] },
+        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
+        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione da kg a libbre",
+      "items": [
+        {
+          "question": "Quante libbre ha 1 chilogrammo?",
+          "answer": "Un chilogrammo equivale a 2,2046 libbre (lb). Questo deriva dalla definizione: 1 libbra = 0,45359237 kg, quindi 1 kg = 1 ÷ 0,45359237 ≈ 2,2046 lb. Arrotondato a un decimale: 1 kg ≈ 2,2 lb."
+        },
+        {
+          "question": "Qual è la formula per convertire kg in libbre?",
+          "answer": "La formula è: libbre = chilogrammi × 2,2046. Al contrario: chilogrammi = libbre × 0,4536. Per esempio: 70 kg × 2,2046 = 154,32 lb."
+        },
+        {
+          "question": "Quante libbre sono 70 kg?",
+          "answer": "70 kg sono 154,32 libbre (lb), equivalenti nel sistema britannico a 11 stone 0,3 lb. Calcolo: 70 × 2,2046 = 154,32; 154,32 ÷ 14 = 11 stone con un resto di 0,32 lb."
+        },
+        {
+          "question": "Quante libbre sono 80 kg?",
+          "answer": "80 kg sono 176,37 lb, equivalenti a 12 stone 8,4 lb nel sistema britannico."
+        },
+        {
+          "question": "Quante libbre sono 100 kg?",
+          "answer": "100 kg sono 220,46 lb. Arrotondando: 100 kg sono poco più di 220 libbre, un valore di riferimento facile da ricordare. Nel sistema britannico: 15 stone 10,5 lb."
+        },
+        {
+          "question": "Quante libbre sono 60 kg?",
+          "answer": "60 kg sono 132,28 lb, equivalenti a 9 stone 6,3 lb nel sistema britannico."
+        },
+        {
+          "question": "Quanti chilogrammi ha una libbra?",
+          "answer": "Una libbra equivale esattamente a 0,45359237 kg. Questo valore è fissato come costante dal 1959 con il nome di libbra avoirdupois internazionale. Arrotondato: 1 lb ≈ 0,454 kg."
+        },
+        {
+          "question": "Come convertire kg in libbre senza calcolatrice?",
+          "answer": "Stima rapida: moltiplica i chilogrammi per 2 e aggiungi il 10 % del risultato. Per esempio: 80 kg × 2 = 160, più 16 (10 % di 160) = 176 lb. Il valore esatto è 176,37 lb — errore di appena lo 0,2 %."
+        },
+        {
+          "question": "Cos'è uno stone e come si convertono kg in stone?",
+          "answer": "Lo stone è un'unità di massa britannica: 1 stone = 14 libbre = 6,3503 kg. Nel Regno Unito il peso corporeo si indica spesso in stone e libbre (es. '11 stone 4 lb'). Per convertire kg in stone: dividi i kg per 6,3503. Per esempio: 70 kg ÷ 6,3503 = 11,02 stone = 11 stone 0,3 lb."
+        },
+        {
+          "question": "Quante libbre e once sono 3,5 kg?",
+          "answer": "3,5 kg sono 7,716 lb. In libbre e once: 7 libbre e 0,716 × 16 = 11,5 once, cioè circa 7 lb 11 oz. Un neonato sano pesa in genere tra 3 e 4 kg, equivalenti a circa 6,6–8,8 lb."
+        },
+        {
+          "question": "Quante libbre sono 90 kg?",
+          "answer": "90 kg sono 198,42 lb — quasi esattamente 200 libbre, un valore di riferimento molto pratico. Nel sistema britannico: 14 stone 2,4 lb."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hai domande o suggerimenti?",
+      "description": "Se individui un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
+      "imageAlt": "Contattare Arteon Agency",
+      "subject": "Convertitore kg in libbre"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri convertitori di unità utili"
+    }
+  ]
+}
