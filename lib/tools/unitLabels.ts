@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Locale utilities and category labels
  * Helper functions for locale-specific operations
  */
@@ -15,9 +15,7 @@ export const CATEGORY_LABELS: Record<FormatCategory, Record<string, string>> = {
     fr: 'Images',
     pt: 'Imagens',
     it: 'Immagini',
-    nl: 'Afbeeldingen',
     cs: 'Obrázky',
-    fi: 'Kuvat',
     el: 'Εικόνες',
   },
   documents: {
@@ -28,9 +26,7 @@ export const CATEGORY_LABELS: Record<FormatCategory, Record<string, string>> = {
     fr: 'Documents',
     pt: 'Documentos',
     it: 'Documenti',
-    nl: 'Documenten',
     cs: 'Dokumenty',
-    fi: 'Asiakirjat',
     el: 'Έγγραφα',
   },
   data: {
@@ -41,9 +37,7 @@ export const CATEGORY_LABELS: Record<FormatCategory, Record<string, string>> = {
     fr: 'Données',
     pt: 'Dados',
     it: 'Dati',
-    nl: 'Data',
     cs: 'Data',
-    fi: 'Data',
     el: 'Δεδομένα',
   },
   units: {
@@ -54,9 +48,7 @@ export const CATEGORY_LABELS: Record<FormatCategory, Record<string, string>> = {
     fr: 'Unités',
     pt: 'Unidades',
     it: 'Unità',
-    nl: 'Eenheden',
     cs: 'Jednotky',
-    fi: 'Yksiköt',
     el: 'Μονάδες',
   },
 } as const;
@@ -75,9 +67,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Points',
     pt: 'Pontos',
     it: 'Punti',
-    nl: 'Punten',
     cs: 'Body',
-    fi: 'Pisteet',
     el: 'Σημεία',
   },
   pixels: {
@@ -88,9 +78,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Pixels',
     pt: 'Pixels',
     it: 'Pixel',
-    nl: 'Pixels',
     cs: 'Pixely',
-    fi: 'Pikselit',
     el: 'Εικονοστοιχεία',
   },
   baseFontSize: {
@@ -101,9 +89,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Taille de police de base',
     pt: 'Tamanho de fonte base',
     it: 'Dimensione font base',
-    nl: 'Basis lettergrootte',
     cs: 'Základní velikost písma',
-    fi: 'Peruskirjasinkoko',
     el: 'Βασικό μέγεθος γραμματοσειράς',
   },
   parentFontSize: {
@@ -114,9 +100,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Taille de police parent',
     pt: 'Tamanho de fonte pai',
     it: 'Dimensione font genitore',
-    nl: 'Ouder lettergrootte',
     cs: 'Velikost písma rodiče',
-    fi: 'Ylätason kirjasinkoko',
     el: 'Μέγεθος γραμματοσειράς γονέα',
   },
   centimeters: {
@@ -127,9 +111,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Centimètres',
     pt: 'Centímetros',
     it: 'Centimetri',
-    nl: 'Centimeters',
     cs: 'Centimetry',
-    fi: 'Senttimetrit',
     el: 'Εκατοστά',
   },
   millimeters: {
@@ -140,9 +122,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Millimètres',
     pt: 'Milímetros',
     it: 'Millimetri',
-    nl: 'Millimeters',
     cs: 'Milimetry',
-    fi: 'Millimetrit',
     el: 'Χιλιοστά',
   },
   inches: {
@@ -153,9 +133,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Pouces',
     pt: 'Polegadas',
     it: 'Pollici',
-    nl: 'Inches',
     cs: 'Palce',
-    fi: 'Tuumat',
     el: 'Ίντσες',
   },
   kilograms: {
@@ -166,9 +144,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Kilogrammes',
     pt: 'Quilogramas',
     it: 'Chilogrammi',
-    nl: 'Kilogram',
     cs: 'Kilogramy',
-    fi: 'Kilogrammat',
     el: 'Χιλιόγραμμα',
   },
   pounds: {
@@ -179,9 +155,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Livres (lb)',
     pt: 'Libras (lb)',
     it: 'Libbre (lb)',
-    nl: 'Pond (lb)',
     cs: 'Libry (lb)',
-    fi: 'Naulat (lb)',
     el: 'Λίβρες (lb)',
   },
   bytes: {
@@ -192,9 +166,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Octets',
     pt: 'Bytes',
     it: 'Byte',
-    nl: 'Bytes',
     cs: 'Bajty',
-    fi: 'Tavut',
     el: 'Bytes',
   },
   kilobytes: {
@@ -205,9 +177,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Kilooctets',
     pt: 'Kilobytes',
     it: 'Kilobyte',
-    nl: 'Kilobytes',
     cs: 'Kilobajty',
-    fi: 'Kilotavut',
     el: 'Kilobytes',
   },
   dateTime: {
@@ -218,9 +188,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Date et heure',
     pt: 'Data e hora',
     it: 'Data e ora',
-    nl: 'Datum en tijd',
     cs: 'Datum a čas',
-    fi: 'Päivämäärä ja aika',
     el: 'Ημερομηνία και ώρα',
   },
   decimal: {
@@ -231,9 +199,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Décimal',
     pt: 'Decimal',
     it: 'Decimale',
-    nl: 'Decimaal',
     cs: 'Desítkový',
-    fi: 'Desimaali',
     el: 'Δεκαδικός',
   },
   binary: {
@@ -244,9 +210,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Binaire',
     pt: 'Binário',
     it: 'Binario',
-    nl: 'Binair',
     cs: 'Binární',
-    fi: 'Binääri',
     el: 'Δυαδικός',
   },
   hexadecimal: {
@@ -257,9 +221,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Hexadécimal',
     pt: 'Hexadecimal',
     it: 'Esadecimale',
-    nl: 'Hexadecimaal',
     cs: 'Šestnáctkový',
-    fi: 'Heksadesimaali',
     el: 'Δεκαεξαδικός',
   },
   megabitsPerSec: {
@@ -270,9 +232,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Mégabits/s',
     pt: 'Megabits/s',
     it: 'Megabit/s',
-    nl: 'Megabits/s',
     cs: 'Megabity/s',
-    fi: 'Megabittiä/s',
     el: 'Megabits/s',
   },
   megabytesPerSec: {
@@ -283,9 +243,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Mégaoctets/s',
     pt: 'Megabytes/s',
     it: 'Megabyte/s',
-    nl: 'Megabytes/s',
     cs: 'Megabajty/s',
-    fi: 'Megatavua/s',
     el: 'Megabytes/s',
   },
   viewportWidth: {
@@ -296,9 +254,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Largeur du viewport',
     pt: 'Largura do viewport',
     it: 'Larghezza viewport',
-    nl: 'Viewport breedte',
     cs: 'Šířka viewportu',
-    fi: 'Näkymän leveys',
     el: 'Πλάτος viewport',
   },
   dpiPpi: {
@@ -309,9 +265,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'DPI / PPI',
     pt: 'DPI / PPI',
     it: 'DPI / PPI',
-    nl: 'DPI / PPI',
     cs: 'DPI / PPI',
-    fi: 'DPI / PPI',
     el: 'DPI / PPI',
   },
   dpi: {
@@ -322,9 +276,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'DPI (Points Par Pouce)',
     pt: 'DPI (Pontos Por Polegada)',
     it: 'DPI (Punti Per Pollice)',
-    nl: 'DPI (Dots Per Inch)',
     cs: 'DPI (Body Na Palec)',
-    fi: 'DPI (Pistettä Tuumalla)',
     el: 'DPI (Κουκκίδες Ανά Ίντσα)',
   },
   ppi: {
@@ -335,9 +287,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'PPI (Pixels Par Pouce)',
     pt: 'PPI (Pixels Por Polegada)',
     it: 'PPI (Pixel Per Pollice)',
-    nl: 'PPI (Pixels Per Inch)',
     cs: 'PPI (Pixely Na Palec)',
-    fi: 'PPI (Pikseliä Tuumalla)',
     el: 'PPI (Εικονοστοιχεία Ανά Ίντσα)',
   },
   tailwindSpacing: {
@@ -348,9 +298,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Espacement Tailwind CSS',
     pt: 'Espaçamento Tailwind CSS',
     it: 'Spaziatura Tailwind CSS',
-    nl: 'Tailwind CSS spatiëring',
     cs: 'Tailwind CSS mezery',
-    fi: 'Tailwind CSS välit',
     el: 'Tailwind CSS απόσταση',
   },
   unixTimestamp: {
@@ -361,9 +309,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Horodatage Unix',
     pt: 'Timestamp Unix',
     it: 'Timestamp Unix',
-    nl: 'Unix-tijdstempel',
     cs: 'Unix časové razítko',
-    fi: 'Unix-aikaleima',
     el: 'Unix Timestamp',
   },
   vw: {
@@ -374,9 +320,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'vw (largeur viewport)',
     pt: 'vw (largura viewport)',
     it: 'vw (larghezza viewport)',
-    nl: 'vw (viewport breedte)',
     cs: 'vw (šířka viewportu)',
-    fi: 'vw (näkymän leveys)',
     el: 'vw (πλάτος viewport)',
   },
   rem: {
@@ -387,9 +331,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'rem',
     pt: 'rem',
     it: 'rem',
-    nl: 'rem',
     cs: 'rem',
-    fi: 'rem',
     el: 'rem',
   },
   em: {
@@ -400,9 +342,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'em',
     pt: 'em',
     it: 'em',
-    nl: 'em',
     cs: 'em',
-    fi: 'em',
     el: 'em',
   },
   hex: {
@@ -413,9 +353,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'HEX',
     pt: 'HEX',
     it: 'HEX',
-    nl: 'HEX',
     cs: 'HEX',
-    fi: 'HEX',
     el: 'HEX',
   },
   rgb: {
@@ -426,9 +364,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'RGB',
     pt: 'RGB',
     it: 'RGB',
-    nl: 'RGB',
     cs: 'RGB',
-    fi: 'RGB',
     el: 'RGB',
   },
   hsl: {
@@ -439,9 +375,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'HSL',
     pt: 'HSL',
     it: 'HSL',
-    nl: 'HSL',
     cs: 'HSL',
-    fi: 'HSL',
     el: 'HSL',
   },
   cmyk: {
@@ -452,9 +386,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'CMYK',
     pt: 'CMYK',
     it: 'CMYK',
-    nl: 'CMYK',
     cs: 'CMYK',
-    fi: 'CMYK',
     el: 'CMYK',
   },
   // Popular value labels
@@ -466,9 +398,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'macOS classique',
     pt: 'macOS clássico',
     it: 'macOS classico',
-    nl: 'macOS klassiek',
     cs: 'macOS klasický',
-    fi: 'macOS klassinen',
     el: 'macOS κλασικό',
   },
   windowsDefault: {
@@ -479,9 +409,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Windows par défaut',
     pt: 'Windows padrão',
     it: 'Windows predefinito',
-    nl: 'Windows standaard',
     cs: 'Windows výchozí',
-    fi: 'Windows oletus',
     el: 'Windows προεπιλογή',
   },
   economyPrint: {
@@ -492,9 +420,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Impression économique',
     pt: 'Impressão econômica',
     it: 'Stampa economica',
-    nl: 'Zuinig afdrukken',
     cs: 'Úsporný tisk',
-    fi: 'Säästötulostus',
     el: 'Οικονομική εκτύπωση',
   },
   photoPrint: {
@@ -505,9 +431,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Impression photo',
     pt: 'Impressão fotográfica',
     it: 'Stampa fotografica',
-    nl: 'Foto afdrukken',
     cs: 'Fotografický tisk',
-    fi: 'Valokuvatulostus',
     el: 'Φωτογραφική εκτύπωση',
   },
   black: {
@@ -518,9 +442,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Noir',
     pt: 'Preto',
     it: 'Nero',
-    nl: 'Zwart',
     cs: 'Černá',
-    fi: 'Musta',
     el: 'Μαύρο',
   },
   white: {
@@ -531,9 +453,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Blanc',
     pt: 'Branco',
     it: 'Bianco',
-    nl: 'Wit',
     cs: 'Bílá',
-    fi: 'Valkoinen',
     el: 'Λευκό',
   },
   red: {
@@ -544,9 +464,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Rouge',
     pt: 'Vermelho',
     it: 'Rosso',
-    nl: 'Rood',
     cs: 'Červená',
-    fi: 'Punainen',
     el: 'Κόκκινο',
   },
   green: {
@@ -557,9 +475,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Vert',
     pt: 'Verde',
     it: 'Verde',
-    nl: 'Groen',
     cs: 'Zelená',
-    fi: 'Vihreä',
     el: 'Πράσινο',
   },
   blue: {
@@ -570,9 +486,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Bleu',
     pt: 'Azul',
     it: 'Blu',
-    nl: 'Blauw',
     cs: 'Modrá',
-    fi: 'Sininen',
     el: 'Μπλε',
   },
   unixEpoch: {
@@ -583,9 +497,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Époque Unix',
     pt: 'Época Unix',
     it: 'Epoca Unix',
-    nl: 'Unix-tijdperk',
     cs: 'Unix epocha',
-    fi: 'Unix-aikakausi',
     el: 'Εποχή Unix',
   },
   oneBillion: {
@@ -596,9 +508,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: '1 milliard',
     pt: '1 bilhão',
     it: '1 miliardo',
-    nl: '1 miljard',
     cs: '1 miliarda',
-    fi: '1 miljardi',
     el: '1 δισεκατομμύριο',
   },
   twoBillion: {
@@ -609,9 +519,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: '2 milliards',
     pt: '2 bilhões',
     it: '2 miliardi',
-    nl: '2 miljard',
     cs: '2 miliardy',
-    fi: '2 miljardia',
     el: '2 δισεκατομμύρια',
   },
   newYear2025: {
@@ -622,9 +530,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Nouvel An 2025',
     pt: 'Ano Novo 2025',
     it: 'Capodanno 2025',
-    nl: 'Nieuwjaar 2025',
     cs: 'Nový rok 2025',
-    fi: 'Uusi vuosi 2025',
     el: 'Πρωτοχρονιά 2025',
   },
   maxByte: {
@@ -635,9 +541,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Octet max.',
     pt: 'Byte máx.',
     it: 'Byte max.',
-    nl: 'Max. byte',
     cs: 'Max. bajt',
-    fi: 'Maks. tavu',
     el: 'Μέγ. byte',
   },
   whiteRgb: {
@@ -648,9 +552,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Blanc (RGB)',
     pt: 'Branco (RGB)',
     it: 'Bianco (RGB)',
-    nl: 'Wit (RGB)',
     cs: 'Bílá (RGB)',
-    fi: 'Valkoinen (RGB)',
     el: 'Λευκό (RGB)',
   },
   fiber100: {
@@ -661,9 +563,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Fibre 100',
     pt: 'Fibra 100',
     it: 'Fibra 100',
-    nl: 'Glasvezel 100',
     cs: 'Optika 100',
-    fi: 'Kuitu 100',
     el: 'Οπτική ίνα 100',
   },
   fiber300: {
@@ -674,9 +574,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Fibre 300',
     pt: 'Fibra 300',
     it: 'Fibra 300',
-    nl: 'Glasvezel 300',
     cs: 'Optika 300',
-    fi: 'Kuitu 300',
     el: 'Οπτική ίνα 300',
   },
   fiber500: {
@@ -687,9 +585,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Fibre 500',
     pt: 'Fibra 500',
     it: 'Fibra 500',
-    nl: 'Glasvezel 500',
     cs: 'Optika 500',
-    fi: 'Kuitu 500',
     el: 'Οπτική ίνα 500',
   },
   fullWidth: {
@@ -700,9 +596,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Pleine largeur',
     pt: 'Largura total',
     it: 'Larghezza piena',
-    nl: 'Volledige breedte',
     cs: 'Plná šířka',
-    fi: 'Täysi leveys',
     el: 'Πλήρες πλάτος',
   },
   a4Width96dpi: {
@@ -713,9 +607,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Largeur A4 @ 96 DPI',
     pt: 'Largura A4 @ 96 DPI',
     it: 'Larghezza A4 @ 96 DPI',
-    nl: 'A4 breedte @ 96 DPI',
     cs: 'Šířka A4 @ 96 DPI',
-    fi: 'A4 leveys @ 96 DPI',
     el: 'Πλάτος A4 @ 96 DPI',
   },
   a4Height96dpi: {
@@ -726,9 +618,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: 'Hauteur A4 @ 96 DPI',
     pt: 'Altura A4 @ 96 DPI',
     it: 'Altezza A4 @ 96 DPI',
-    nl: 'A4 hoogte @ 96 DPI',
     cs: 'Výška A4 @ 96 DPI',
-    fi: 'A4 korkeus @ 96 DPI',
     el: 'Ύψος A4 @ 96 DPI',
   },
   oneInch96dpi: {
@@ -739,9 +629,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: '1 pouce @ 96 DPI',
     pt: '1 polegada @ 96 DPI',
     it: '1 pollice @ 96 DPI',
-    nl: '1 inch @ 96 DPI',
     cs: '1 palec @ 96 DPI',
-    fi: '1 tuuma @ 96 DPI',
     el: '1 ίντσα @ 96 DPI',
   },
   print300dpi: {
@@ -752,9 +640,7 @@ const UNIT_LABELS: Record<string, Record<string, string>> = {
     fr: '300 DPI (impression)',
     pt: '300 DPI (impressão)',
     it: '300 DPI (stampa)',
-    nl: '300 DPI (afdrukken)',
     cs: '300 DPI (tisk)',
-    fi: '300 DPI (tulostus)',
     el: '300 DPI (εκτύπωση)',
   },
 } as const;

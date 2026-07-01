@@ -1,4 +1,4 @@
-import type { Locale } from '@/types/locale';
+﻿import type { Locale } from '@/types/locale';
 
 /**
  * Locales that conventionally write numbers with a comma decimal separator
@@ -13,9 +13,7 @@ const COMMA_DECIMAL_LOCALES: ReadonlySet<Locale> = new Set([
   'fr',
   'pt',
   'it',
-  'nl',
   'cs',
-  'fi',
   'el',
 ]);
 

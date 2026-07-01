@@ -6,9 +6,7 @@ export type Locale =
   | 'fr'
   | 'pt'
   | 'it'
-  | 'nl'
   | 'cs'
-  | 'fi'
   | 'el';
 
 export type LocaleConfig = {

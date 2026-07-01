@@ -158,9 +158,7 @@ const nextConfig: NextConfig = {
       { source: '/fr', destination: '/fr/outils', statusCode: 301 },
       { source: '/pt', destination: '/pt/ferramentas', statusCode: 301 },
       { source: '/it', destination: '/it/strumenti', statusCode: 301 },
-      { source: '/nl', destination: '/nl/tools', statusCode: 301 },
       { source: '/cs', destination: '/cs/nastroje', statusCode: 301 },
-      { source: '/fi', destination: '/fi/tyokalut', statusCode: 301 },
       { source: '/el', destination: '/el/ergaleia', statusCode: 301 },
     ];
 
@@ -2498,6 +2496,972 @@ const nextConfig: NextConfig = {
       },
     ];
 
+    // "nl" (Dutch) locale was retired (2026-07-01): low views/clicks relative
+    // to crawl budget. Every /nl/* page redirects to its exact /en/* equivalent.
+    const retiredNlLocaleRedirects: Redirect[] = [
+      { source: '/nl', destination: '/en/tools', statusCode: 301 },
+      { source: '/nl/tools', destination: '/en/tools', statusCode: 301 },
+      { source: '/nl/over-ons', destination: '/en/about', statusCode: 301 },
+      { source: '/nl/contact', destination: '/en/contact', statusCode: 301 },
+      {
+        source: '/nl/privacybeleid',
+        destination: '/en/privacy-policy',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/gebruiksvoorwaarden',
+        destination: '/en/terms-of-service',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/gereedschappen/cm-naar-inches-converter',
+        destination: '/en/tools/cm-to-inches-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/gereedschappen/inches-naar-cm-converter',
+        destination: '/en/tools/inches-to-cm-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/hulpmiddelen/px-naar-cm-converter',
+        destination: '/en/tools/px-to-cm-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/afbeeldingeneditor',
+        destination: '/en/tools/online-image-editor',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/afbeelding-naar-base64-converter',
+        destination: '/en/tools/image-to-base64-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/avif-naar-jpg-converter',
+        destination: '/en/tools/avif-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/avif-naar-png-converter',
+        destination: '/en/tools/avif-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/avif-naar-tiff-converter',
+        destination: '/en/tools/avif-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/avif-naar-webp-converter',
+        destination: '/en/tools/avif-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/base64-naar-afbeelding-converter',
+        destination: '/en/tools/base64-to-image-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/bmp-naar-avif-converter',
+        destination: '/en/tools/bmp-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/bmp-naar-gif-converter',
+        destination: '/en/tools/bmp-to-gif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/bmp-naar-jpg-converter',
+        destination: '/en/tools/bmp-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/bmp-naar-pdf-converter',
+        destination: '/en/tools/bmp-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/bmp-naar-png-converter',
+        destination: '/en/tools/bmp-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/bmp-naar-tiff-converter',
+        destination: '/en/tools/bmp-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/bmp-naar-webp-converter',
+        destination: '/en/tools/bmp-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/bytes-converter',
+        destination: '/en/tools/bytes-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/cm-naar-px-converter',
+        destination: '/en/tools/cm-to-px-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/csv-naar-json-converter',
+        destination: '/en/tools/csv-to-json-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/decimaal-naar-binair-converter',
+        destination: '/en/tools/decimal-to-binary-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/decimaal-naar-hex-converter',
+        destination: '/en/tools/decimal-to-hex-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/em-naar-px-converter',
+        destination: '/en/tools/em-to-px-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/gif-naar-avif-converter',
+        destination: '/en/tools/gif-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/gif-naar-jpg-converter',
+        destination: '/en/tools/gif-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/gif-naar-png-converter',
+        destination: '/en/tools/gif-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/gif-naar-webp-converter',
+        destination: '/en/tools/gif-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/gratis-e-mailhandtekening-generator',
+        destination: '/en/tools/free-email-signature-generator',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/gratis-favicon-generator',
+        destination: '/en/tools/free-favicon-generator',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/gratis-qr-code-generator',
+        destination: '/en/tools/free-qr-code-generator',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/heic-naar-avif-converter',
+        destination: '/en/tools/heic-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/heic-naar-jpg-converter',
+        destination: '/en/tools/heic-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/heic-naar-pdf-converter',
+        destination: '/en/tools/heic-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/heic-naar-png-converter',
+        destination: '/en/tools/heic-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/heic-naar-tiff-converter',
+        destination: '/en/tools/heic-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/heic-naar-webp-converter',
+        destination: '/en/tools/heic-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/hex-naar-rgb-converter',
+        destination: '/en/tools/hex-to-rgb-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/html-naar-markdown-converter',
+        destination: '/en/tools/html-to-markdown-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/inches-naar-px-converter',
+        destination: '/en/tools/inches-to-px-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/jpg-naar-avif-converter',
+        destination: '/en/tools/jpg-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/jpg-naar-gif-converter',
+        destination: '/en/tools/jpg-to-gif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/jpg-naar-pdf-converter',
+        destination: '/en/tools/jpg-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/jpg-naar-png-converter',
+        destination: '/en/tools/jpg-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/jpg-naar-tiff-converter',
+        destination: '/en/tools/jpg-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/jpg-naar-webp-converter',
+        destination: '/en/tools/jpg-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/json-naar-csv-converter',
+        destination: '/en/tools/json-to-csv-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/json-naar-xml-converter',
+        destination: '/en/tools/json-to-xml-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/json-naar-yaml-converter',
+        destination: '/en/tools/json-to-yaml-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/kg-naar-pond-converter',
+        destination: '/en/tools/kg-to-lb-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/kleurcontrast-checker',
+        destination: '/en/tools/color-contrast-checker',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/kleurextractor-uit-afbeelding',
+        destination: '/en/tools/image-color-extractor',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/kleurpalettengenerator',
+        destination: '/en/tools/color-palette-generator',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/markdown-naar-html-converter',
+        destination: '/en/tools/markdown-to-html-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/mbps-naar-mbs-converter',
+        destination: '/en/tools/mbps-to-mbs-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/meta-titel-beschrijving-checker',
+        destination: '/en/tools/meta-title-description-length-checker',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/mm-naar-px-converter',
+        destination: '/en/tools/mm-to-px-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/pdf-naar-jpg-converter',
+        destination: '/en/tools/pdf-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/pdf-naar-png-converter',
+        destination: '/en/tools/pdf-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/pdf-naar-webp-converter',
+        destination: '/en/tools/pdf-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/png-naar-avif-converter',
+        destination: '/en/tools/png-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/png-naar-gif-converter',
+        destination: '/en/tools/png-to-gif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/png-naar-jpg-converter',
+        destination: '/en/tools/png-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/png-naar-pdf-converter',
+        destination: '/en/tools/png-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/png-naar-tiff-converter',
+        destination: '/en/tools/png-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/png-naar-webp-converter',
+        destination: '/en/tools/png-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/pond-naar-kg-converter',
+        destination: '/en/tools/lb-to-kg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/pt-naar-px-converter',
+        destination: '/en/tools/pt-to-px-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/px-naar-mm-converter',
+        destination: '/en/tools/px-to-mm-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/rem-naar-px-converter',
+        destination: '/en/tools/rem-to-px-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/rgb-naar-cmyk-converter',
+        destination: '/en/tools/rgb-to-cmyk-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/svg-naar-avif-converter',
+        destination: '/en/tools/svg-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/svg-naar-gif-converter',
+        destination: '/en/tools/svg-to-gif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/svg-naar-jpg-converter',
+        destination: '/en/tools/svg-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/svg-naar-pdf-converter',
+        destination: '/en/tools/svg-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/svg-naar-png-converter',
+        destination: '/en/tools/svg-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/svg-naar-tiff-converter',
+        destination: '/en/tools/svg-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/svg-naar-webp-converter',
+        destination: '/en/tools/svg-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/tiff-naar-avif-converter',
+        destination: '/en/tools/tiff-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/tiff-naar-jpg-converter',
+        destination: '/en/tools/tiff-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/tiff-naar-pdf-converter',
+        destination: '/en/tools/tiff-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/tiff-naar-png-converter',
+        destination: '/en/tools/tiff-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/tiff-naar-webp-converter',
+        destination: '/en/tools/tiff-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/unix-timestamp-converter',
+        destination: '/en/tools/unix-timestamp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/webp-naar-avif-converter',
+        destination: '/en/tools/webp-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/webp-naar-gif-converter',
+        destination: '/en/tools/webp-to-gif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/webp-naar-jpg-converter',
+        destination: '/en/tools/webp-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/webp-naar-pdf-converter',
+        destination: '/en/tools/webp-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/webp-naar-png-converter',
+        destination: '/en/tools/webp-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/webp-naar-tiff-converter',
+        destination: '/en/tools/webp-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/woorden-en-tekenteller',
+        destination: '/en/tools/word-and-character-counter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/xml-naar-json-converter',
+        destination: '/en/tools/xml-to-json-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/nl/tools/yaml-naar-json-converter',
+        destination: '/en/tools/yaml-to-json-converter',
+        statusCode: 301,
+      },
+    ];
+
+    // "fi" (Finnish) locale was retired (2026-07-01): low views/clicks relative
+    // to crawl budget. Every /fi/* page redirects to its exact /en/* equivalent.
+    const retiredFiLocaleRedirects: Redirect[] = [
+      { source: '/fi', destination: '/en/tools', statusCode: 301 },
+      { source: '/fi/tyokalut', destination: '/en/tools', statusCode: 301 },
+      {
+        source: '/fi/tietoa-meista',
+        destination: '/en/about',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/yhteystiedot',
+        destination: '/en/contact',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tietosuojakaytanto',
+        destination: '/en/privacy-policy',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/kayttoehdot',
+        destination: '/en/terms-of-service',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/avif-jpg-muunnin',
+        destination: '/en/tools/avif-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/avif-png-muunnin',
+        destination: '/en/tools/avif-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/avif-tiff-muunnin',
+        destination: '/en/tools/avif-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/avif-webp-muunnin',
+        destination: '/en/tools/avif-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/base64-kuva-muunnin',
+        destination: '/en/tools/base64-to-image-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/bmp-avif-muunnin',
+        destination: '/en/tools/bmp-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/bmp-gif-muunnin',
+        destination: '/en/tools/bmp-to-gif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/bmp-jpg-muunnin',
+        destination: '/en/tools/bmp-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/bmp-pdf-muunnin',
+        destination: '/en/tools/bmp-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/bmp-png-muunnin',
+        destination: '/en/tools/bmp-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/bmp-tiff-muunnin',
+        destination: '/en/tools/bmp-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/bmp-webp-muunnin',
+        destination: '/en/tools/bmp-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/cm-px-muunnin',
+        destination: '/en/tools/cm-to-px-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/cm-tuumiksi-muunnin',
+        destination: '/en/tools/cm-to-inches-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/csv-json-muunnin',
+        destination: '/en/tools/csv-to-json-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/desimaali-binaari-muunnin',
+        destination: '/en/tools/decimal-to-binary-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/desimaali-heksa-muunnin',
+        destination: '/en/tools/decimal-to-hex-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/em-px-muunnin',
+        destination: '/en/tools/em-to-px-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/gif-avif-muunnin',
+        destination: '/en/tools/gif-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/gif-jpg-muunnin',
+        destination: '/en/tools/gif-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/gif-png-muunnin',
+        destination: '/en/tools/gif-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/gif-webp-muunnin',
+        destination: '/en/tools/gif-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/heic-avif-muunnin',
+        destination: '/en/tools/heic-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/heic-jpg-muunnin',
+        destination: '/en/tools/heic-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/heic-pdf-muunnin',
+        destination: '/en/tools/heic-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/heic-png-muunnin',
+        destination: '/en/tools/heic-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/heic-tiff-muunnin',
+        destination: '/en/tools/heic-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/heic-webp-muunnin',
+        destination: '/en/tools/heic-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/hex-rgb-muunnin',
+        destination: '/en/tools/hex-to-rgb-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/html-markdown-muunnin',
+        destination: '/en/tools/html-to-markdown-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/ilmainen-favicon-generaattori',
+        destination: '/en/tools/free-favicon-generator',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/ilmainen-qr-koodi-generaattori',
+        destination: '/en/tools/free-qr-code-generator',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/ilmainen-sahkopostiallekirjoitus-generaattori',
+        destination: '/en/tools/free-email-signature-generator',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/jpg-avif-muunnin',
+        destination: '/en/tools/jpg-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/jpg-gif-muunnin',
+        destination: '/en/tools/jpg-to-gif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/jpg-pdf-muunnin',
+        destination: '/en/tools/jpg-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/jpg-png-muunnin',
+        destination: '/en/tools/jpg-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/jpg-tiff-muunnin',
+        destination: '/en/tools/jpg-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/jpg-webp-muunnin',
+        destination: '/en/tools/jpg-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/json-csv-muunnin',
+        destination: '/en/tools/json-to-csv-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/json-xml-muunnin',
+        destination: '/en/tools/json-to-xml-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/json-yaml-muunnin',
+        destination: '/en/tools/json-to-yaml-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/kg-naulaksi-muunnin',
+        destination: '/en/tools/kg-to-lb-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/kuva-base64-muunnin',
+        destination: '/en/tools/image-to-base64-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/kuvaeditori',
+        destination: '/en/tools/online-image-editor',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/markdown-html-muunnin',
+        destination: '/en/tools/markdown-to-html-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/mbps-mbs-muunnin',
+        destination: '/en/tools/mbps-to-mbs-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/meta-otsikko-ja-kuvaus-tarkistus',
+        destination: '/en/tools/meta-title-description-length-checker',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/mm-px-muunnin',
+        destination: '/en/tools/mm-to-px-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/naulaa-kiloksi-muunnin',
+        destination: '/en/tools/lb-to-kg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/pdf-jpg-muunnin',
+        destination: '/en/tools/pdf-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/pdf-png-muunnin',
+        destination: '/en/tools/pdf-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/pdf-webp-muunnin',
+        destination: '/en/tools/pdf-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/png-avif-muunnin',
+        destination: '/en/tools/png-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/png-gif-muunnin',
+        destination: '/en/tools/png-to-gif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/png-jpg-muunnin',
+        destination: '/en/tools/png-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/png-pdf-muunnin',
+        destination: '/en/tools/png-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/png-tiff-muunnin',
+        destination: '/en/tools/png-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/png-webp-muunnin',
+        destination: '/en/tools/png-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/pt-px-muunnin',
+        destination: '/en/tools/pt-to-px-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/px-cm-muunnin',
+        destination: '/en/tools/px-to-cm-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/px-mm-muunnin',
+        destination: '/en/tools/px-to-mm-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/rem-px-muunnin',
+        destination: '/en/tools/rem-to-px-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/rgb-cmyk-muunnin',
+        destination: '/en/tools/rgb-to-cmyk-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/sana-ja-merkkilaskuri',
+        destination: '/en/tools/word-and-character-counter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/svg-avif-muunnin',
+        destination: '/en/tools/svg-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/svg-gif-muunnin',
+        destination: '/en/tools/svg-to-gif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/svg-jpg-muunnin',
+        destination: '/en/tools/svg-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/svg-pdf-muunnin',
+        destination: '/en/tools/svg-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/svg-png-muunnin',
+        destination: '/en/tools/svg-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/svg-tiff-muunnin',
+        destination: '/en/tools/svg-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/svg-webp-muunnin',
+        destination: '/en/tools/svg-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/tavut-muunnin',
+        destination: '/en/tools/bytes-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/tiff-avif-muunnin',
+        destination: '/en/tools/tiff-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/tiff-jpg-muunnin',
+        destination: '/en/tools/tiff-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/tiff-pdf-muunnin',
+        destination: '/en/tools/tiff-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/tiff-png-muunnin',
+        destination: '/en/tools/tiff-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/tiff-webp-muunnin',
+        destination: '/en/tools/tiff-to-webp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/tuumaa-cm-muunnin',
+        destination: '/en/tools/inches-to-cm-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/tuumat-px-muunnin',
+        destination: '/en/tools/inches-to-px-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/unix-aikaleima-muunnin',
+        destination: '/en/tools/unix-timestamp-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/varien-poiminta-kuvasta',
+        destination: '/en/tools/image-color-extractor',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/varikontrasti-tarkistus',
+        destination: '/en/tools/color-contrast-checker',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/varipaletti-generaattori',
+        destination: '/en/tools/color-palette-generator',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/webp-avif-muunnin',
+        destination: '/en/tools/webp-to-avif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/webp-gif-muunnin',
+        destination: '/en/tools/webp-to-gif-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/webp-jpg-muunnin',
+        destination: '/en/tools/webp-to-jpg-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/webp-pdf-muunnin',
+        destination: '/en/tools/webp-to-pdf-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/webp-png-muunnin',
+        destination: '/en/tools/webp-to-png-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/webp-tiff-muunnin',
+        destination: '/en/tools/webp-to-tiff-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/xml-json-muunnin',
+        destination: '/en/tools/xml-to-json-converter',
+        statusCode: 301,
+      },
+      {
+        source: '/fi/tyokalut/yaml-json-muunnin',
+        destination: '/en/tools/yaml-to-json-converter',
+        statusCode: 301,
+      },
+    ];
+
     return [
       ...staticRedirects,
       ...patternRedirects,
@@ -2508,6 +3472,8 @@ const nextConfig: NextConfig = {
       ...retiredHuLocaleRedirects,
       ...retiredNoLocaleRedirects,
       ...retiredSvLocaleRedirects,
+      ...retiredNlLocaleRedirects,
+      ...retiredFiLocaleRedirects,
     ];
   },
 };

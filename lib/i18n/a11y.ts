@@ -78,26 +78,12 @@ export const A11Y_UI: Record<Locale, A11yStrings> = {
     meets: 'soddisfa',
     doesNotMeet: 'non soddisfa',
   },
-  nl: {
-    colorSwatch: (i, v) => `Kleur ${i}: ${v}`,
-    tableRegion: 'Tabel',
-    themeToggle: 'Schakel tussen lichte en donkere modus',
-    meets: 'voldoet',
-    doesNotMeet: 'voldoet niet',
-  },
   cs: {
     colorSwatch: (i, v) => `Barva ${i}: ${v}`,
     tableRegion: 'Tabulka',
     themeToggle: 'Přepnout světlý nebo tmavý režim',
     meets: 'splňuje',
     doesNotMeet: 'nesplňuje',
-  },
-  fi: {
-    colorSwatch: (i, v) => `Väri ${i}: ${v}`,
-    tableRegion: 'Taulukko',
-    themeToggle: 'Vaihda vaalean ja tumman tilan välillä',
-    meets: 'täyttää',
-    doesNotMeet: 'ei täytä',
   },
   el: {
     colorSwatch: (i, v) => `Χρώμα ${i}: ${v}`,

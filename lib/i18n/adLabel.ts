@@ -16,9 +16,7 @@ export const AD_LABEL: Record<Locale, string> = {
   fr: 'PUBLICITÉ',
   pt: 'PUBLICIDADE',
   it: 'PUBBLICITÀ',
-  nl: 'ADVERTENTIE',
   cs: 'REKLAMA',
-  fi: 'MAINOS',
   el: 'ΔΙΑΦΗΜΙΣΗ',
 };
 

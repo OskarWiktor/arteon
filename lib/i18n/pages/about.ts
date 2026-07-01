@@ -1,12 +1,10 @@
-import cs from '@/data/cs/pages/about.json';
+﻿import cs from '@/data/cs/pages/about.json';
 import de from '@/data/de/pages/about.json';
 import el from '@/data/el/pages/about.json';
 import en from '@/data/en/pages/about.json';
 import es from '@/data/es/pages/about.json';
-import fi from '@/data/fi/pages/about.json';
 import fr from '@/data/fr/pages/about.json';
 import it from '@/data/it/pages/about.json';
-import nl from '@/data/nl/pages/about.json';
 import pt from '@/data/pt/pages/about.json';
 import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
 import type { Locale } from '@/types/locale';
@@ -64,9 +62,7 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
   fr,
   pt,
   it,
-  nl,
   cs,
-  fi,
   el,
 };
 
