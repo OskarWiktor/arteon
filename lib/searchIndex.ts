@@ -120,9 +120,7 @@ const NON_PL_PAGE_TITLES: Record<string, Record<string, string>> = {
     fr: 'Outils',
     pt: 'Ferramentas',
     it: 'Strumenti',
-    nl: 'Tools',
     cs: 'Nástroje',
-    fi: 'Työkalut',
     el: 'Εργαλεία',
   },
   about: {
@@ -132,9 +130,7 @@ const NON_PL_PAGE_TITLES: Record<string, Record<string, string>> = {
     fr: 'À propos',
     pt: 'Sobre nós',
     it: 'Chi siamo',
-    nl: 'Over ons',
     cs: 'O nás',
-    fi: 'Tietoa meistä',
     el: 'Σχετικά με εμάς',
   },
   contact: {
@@ -144,9 +140,7 @@ const NON_PL_PAGE_TITLES: Record<string, Record<string, string>> = {
     fr: 'Contact',
     pt: 'Contacto',
     it: 'Contatto',
-    nl: 'Contact',
     cs: 'Kontakt',
-    fi: 'Yhteystiedot',
     el: 'Επικοινωνία',
   },
   privacy: {
@@ -156,9 +150,7 @@ const NON_PL_PAGE_TITLES: Record<string, Record<string, string>> = {
     fr: 'Politique de confidentialité',
     pt: 'Política de privacidade',
     it: 'Informativa sulla privacy',
-    nl: 'Privacybeleid',
     cs: 'Zásady ochrany soukromí',
-    fi: 'Tietosuojakäytäntö',
     el: 'Πολιτική απορρήτου',
   },
 };

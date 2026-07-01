@@ -3,10 +3,8 @@ import deDict from '@/data/de/dictionary.json';
 import elDict from '@/data/el/dictionary.json';
 import enDict from '@/data/en/dictionary.json';
 import esDict from '@/data/es/dictionary.json';
-import fiDict from '@/data/fi/dictionary.json';
 import frDict from '@/data/fr/dictionary.json';
 import itDict from '@/data/it/dictionary.json';
-import nlDict from '@/data/nl/dictionary.json';
 import plDict from '@/data/pl/dictionary.json';
 import ptDict from '@/data/pt/dictionary.json';
 import type {
@@ -42,9 +40,7 @@ const dicts = {
   fr: frDict,
   pt: ptDict,
   it: itDict,
-  nl: nlDict,
   cs: csDict,
-  fi: fiDict,
   el: elDict,
 } as const;
 
@@ -133,18 +129,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     privacyHref: '/it/informativa-sulla-privacy',
     termsHref: '/it/termini-di-servizio',
   },
-  nl: {
-    lang: 'nl',
-    hreflang: 'nl',
-    label: 'NL',
-    name: 'Nederlands',
-    toolsBasePath: '/nl/tools',
-    toolsIndexHref: '/nl/tools',
-    aboutHref: '/nl/over-ons',
-    contactHref: '/nl/contact',
-    privacyHref: '/nl/privacybeleid',
-    termsHref: '/nl/gebruiksvoorwaarden',
-  },
   cs: {
     lang: 'cs',
     hreflang: 'cs',
@@ -156,18 +140,6 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     contactHref: '/cs/kontakt',
     privacyHref: '/cs/zasady-ochrany-soukromi',
     termsHref: '/cs/podminky-pouzivani',
-  },
-  fi: {
-    lang: 'fi',
-    hreflang: 'fi',
-    label: 'FI',
-    name: 'Suomi',
-    toolsBasePath: '/fi/tyokalut',
-    toolsIndexHref: '/fi/tyokalut',
-    aboutHref: '/fi/tietoa-meista',
-    contactHref: '/fi/yhteystiedot',
-    privacyHref: '/fi/tietosuojakaytanto',
-    termsHref: '/fi/kayttoehdot',
   },
   el: {
     lang: 'el',

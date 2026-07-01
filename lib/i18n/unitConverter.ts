@@ -82,14 +82,6 @@ export const UNIT_CONVERTER_I18N: Record<Locale, UnitConverterI18n> = {
     pickerSource: 'Converti da',
     pickerTarget: 'Converti in',
   },
-  nl: {
-    titleConvertTo: u => `Andere eenheden naar ${u} converteren`,
-    titleConvertFrom: u => `${u} naar andere eenheden converteren`,
-    titleOtherConverters: 'Ontdek andere eenhedenconverters',
-    connector: 'naar',
-    pickerSource: 'Converteer van',
-    pickerTarget: 'Converteer naar',
-  },
   cs: {
     titleConvertTo: u => `Převést jiné jednotky na ${u}`,
     titleConvertFrom: u => `Převést ${u} na jiné jednotky`,
@@ -97,14 +89,6 @@ export const UNIT_CONVERTER_I18N: Record<Locale, UnitConverterI18n> = {
     connector: 'na',
     pickerSource: 'Převést z',
     pickerTarget: 'Převést na',
-  },
-  fi: {
-    titleConvertTo: u => `Muunna muut yksiköt yksiköksi ${u}`,
-    titleConvertFrom: u => `Muunna ${u} muiksi yksiköiksi`,
-    titleOtherConverters: 'Tutustu muihin yksikkömuuntimeen',
-    connector: '→',
-    pickerSource: 'Muunna muodosta',
-    pickerTarget: 'Muunna muotoon',
   },
   el: {
     titleConvertTo: u => `Μετατρέψτε άλλες μονάδες σε ${u}`,

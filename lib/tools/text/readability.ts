@@ -35,15 +35,6 @@ function gulpeaseGrade(gulpease: number): number {
   return 15;
 }
 
-/** LIX grade mapping: <25=children, 25-35=easy, 35-45=average, 45-55=difficult, >55=very difficult */
-function lixGrade(lix: number): number {
-  if (lix < 25) return 3;
-  if (lix < 35) return 6;
-  if (lix < 45) return 9;
-  if (lix < 55) return 13;
-  return 16;
-}
-
 type FleschContext = { text: string; words: number; sentences: number };
 type FleschFormula = (
   ASL: number,
@@ -65,19 +56,6 @@ const fernandezHuerta: FleschFormula = (ASL, ASW) => {
   return { score, grade: scoreToGrade(score) };
 };
 
-/** LIX - Björnsson Readability Index (Scandinavian + Finnish). Finnish is
- * agglutinative with very long compound words; LIX (word-length-based) is a
- * better fit than syllable-based Flesch. LIX = ASL + (% of words > 6 chars) */
-const lixFormula: FleschFormula = (ASL, _ASW, { text }) => {
-  const wordList = text.match(/\p{L}+/gu) || [];
-  const longWords = wordList.filter(w => w.length > 6).length;
-  const longPct = wordList.length > 0 ? (longWords / wordList.length) * 100 : 0;
-  const lix = ASL + longPct;
-  // Map LIX (typically 20-60) to Flesch-like 0-100 scale (inverted: low LIX = easy)
-  const score = Math.max(0, Math.min(100, 100 - (lix - 20) * 1.67));
-  return { score, grade: lixGrade(lix) };
-};
-
 const FLESCH_FORMULAS: Partial<Record<Locale, FleschFormula>> = {
   // Amstad formula for German
   de: (ASL, ASW) => {
@@ -86,11 +64,6 @@ const FLESCH_FORMULAS: Partial<Record<Locale, FleschFormula>> = {
   },
   es: fernandezHuerta,
   pt: fernandezHuerta,
-  // Flesch-Douma formula (Dutch)
-  nl: (ASL, ASW) => {
-    const score = 206.835 - 0.93 * ASL - 77 * ASW;
-    return { score, grade: scoreToGrade(score) };
-  },
   // Gulpease index (Italian) - native scale 0-100, character-based
   it: (_ASL, _ASW, { text, sentences, words }) => {
     const chars = text.replace(/\s/g, '').length;
@@ -111,7 +84,6 @@ const FLESCH_FORMULAS: Partial<Record<Locale, FleschFormula>> = {
   // Hungarian adaptation - agglutinative language with very long words (~2.0+ syl/word)
   // Greek adaptation - inflectional, longer words than EN but less extreme than PL/HU
   el: standardFlesch(66),
-  fi: lixFormula,
 };
 
 /**
@@ -217,26 +189,12 @@ const READABILITY_LABELS: Record<
     difficult: 'Difficile',
     veryDifficult: 'Molto difficile',
   },
-  nl: {
-    veryEasy: 'Zeer eenvoudig',
-    easy: 'Eenvoudig',
-    moderate: 'Gemiddeld',
-    difficult: 'Moeilijk',
-    veryDifficult: 'Zeer moeilijk',
-  },
   cs: {
     veryEasy: 'Velmi snadné',
     easy: 'Snadné',
     moderate: 'Střední',
     difficult: 'Obtížné',
     veryDifficult: 'Velmi obtížné',
-  },
-  fi: {
-    veryEasy: 'Erittäin helppo',
-    easy: 'Helppo',
-    moderate: 'Keskitaso',
-    difficult: 'Vaikea',
-    veryDifficult: 'Erittäin vaikea',
   },
   el: {
     veryEasy: 'Πολύ εύκολο',

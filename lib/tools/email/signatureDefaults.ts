@@ -346,42 +346,6 @@ export function getDefaultSignature(locale: Locale): SignatureConfig {
       avatarUrl: '',
     };
   }
-  if (locale === 'nl') {
-    return {
-      fullName: 'Jan de Vries',
-      jobTitle: 'Webontwikkelaar',
-      company: 'Arteon Agency',
-      topLine: '',
-      nameTag: '',
-      email: 'jan.devries@example.com',
-      phone: '+31 6 12345678',
-      website: 'https://www.uwwebsite.nl',
-      address: 'Voorbeeldstraat 1, 1000 AA Amsterdam',
-      extraLine: 'Ik maak snelle en functionele websites.',
-      ctaLabel: 'Gratis adviesgesprek boeken',
-      ctaUrl: 'https://www.uwwebsite.nl',
-      cta2Label: '',
-      cta2Url: '',
-      socials: {
-        linkedin: 'https://www.linkedin.com/in/jandevries',
-        instagram: '',
-        facebook: '',
-        tiktok: '',
-        youtube: '',
-        x: '',
-        github: '',
-        dribbble: '',
-        behance: '',
-        whatsapp: '',
-        telegram: '',
-        pinterest: '',
-      },
-      legalNote:
-        'Dit bericht kan vertrouwelijke informatie bevatten. Als u niet de beoogde ontvanger bent, informeer dan de afzender en verwijder dit bericht.',
-      formalLine: '',
-      avatarUrl: '',
-    };
-  }
   if (locale === 'cs') {
     return {
       fullName: 'Jan Nov\u00e1k',
@@ -415,42 +379,6 @@ export function getDefaultSignature(locale: Locale): SignatureConfig {
       },
       legalNote:
         'Tato zpr\u00e1va m\u016f\u017ee obsahovat d\u016fv\u011brn\u00e9 informace. Pokud nejste zam\u00fd\u0161len\u00fdm p\u0159\u00edjemcem, informujte odes\u00edlatele a tuto zpr\u00e1vu sma\u017ete.',
-      formalLine: '',
-      avatarUrl: '',
-    };
-  }
-  if (locale === 'fi') {
-    return {
-      fullName: 'Matti Meik\u00e4l\u00e4inen',
-      jobTitle: 'Verkkokehitt\u00e4j\u00e4',
-      company: 'Arteon Agency',
-      topLine: '',
-      nameTag: '',
-      email: 'matti.meikalainen@esimerkki.fi',
-      phone: '+358 40 123 4567',
-      website: 'https://www.sivustosi.fi',
-      address: 'Mannerheimintie 10, 00100 Helsinki',
-      extraLine: 'Rakennan nopeita ja toimivia verkkosivuja.',
-      ctaLabel: 'Varaa ilmainen konsultaatio',
-      ctaUrl: 'https://www.sivustosi.fi',
-      cta2Label: '',
-      cta2Url: '',
-      socials: {
-        linkedin: 'https://www.linkedin.com/in/mattimeikalainen',
-        instagram: '',
-        facebook: '',
-        tiktok: '',
-        youtube: '',
-        x: '',
-        github: '',
-        dribbble: '',
-        behance: '',
-        whatsapp: '',
-        telegram: '',
-        pinterest: '',
-      },
-      legalNote:
-        'T\u00e4m\u00e4 viesti voi sis\u00e4lt\u00e4\u00e4 luottamuksellista tietoa. Jos et ole tarkoitettu vastaanottaja, ilmoita l\u00e4hett\u00e4j\u00e4lle ja poista t\u00e4m\u00e4 viesti.',
       formalLine: '',
       avatarUrl: '',
     };

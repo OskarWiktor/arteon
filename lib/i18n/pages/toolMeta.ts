@@ -1,4 +1,4 @@
-import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
+﻿import { LOCALE_CONFIG, SUPPORTED_LOCALES } from '@/lib/i18n/locales';
 import { TOOL_REGISTRY, getToolHref } from '@/lib/i18n/toolRegistry';
 import type { Locale } from '@/types/locale';
 import type { ToolItemKey } from '@/types/tools/common';
@@ -111,7 +111,6 @@ export function getToolSoftwareSchema(opts: {
           fr: 'EUR',
           pt: 'EUR',
           it: 'EUR',
-          nl: 'EUR',
           id: 'IDR',
           vi: 'VND',
           tr: 'TRY',
@@ -120,7 +119,6 @@ export function getToolSoftwareSchema(opts: {
           ms: 'MYR',
           cs: 'CZK',
           sq: 'ALL',
-          fi: 'EUR',
           sk: 'EUR',
           hr: 'EUR',
           lt: 'EUR',

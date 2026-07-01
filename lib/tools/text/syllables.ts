@@ -34,13 +34,9 @@ export function countSyllablesInWord(
     case 'pt':
     case 'it':
       return countSyllablesRomance(w);
-    case 'nl':
-      return countSyllablesNL(w);
     case 'pl':
     case 'cs':
       return countSyllablesSlavic(w);
-    case 'fi':
-      return countSyllablesNordic(w);
     case 'el':
       return countSyllablesEL(w);
     default:
@@ -201,29 +197,6 @@ function countSyllablesRomance(word: string): number {
 }
 
 // ---------------------------------------------------------------------------
-// Dutch syllable counter
-// ---------------------------------------------------------------------------
-
-function countSyllablesNL(word: string): number {
-  if (word.length <= 2) return 1;
-
-  let w = word;
-  // Dutch diphthongs
-  w = w
-    .replace(/ij/g, 'X')
-    .replace(/ei/g, 'X')
-    .replace(/au/g, 'X')
-    .replace(/ou/g, 'X')
-    .replace(/eu/g, 'X')
-    .replace(/oe/g, 'X')
-    .replace(/ie/g, 'X')
-    .replace(/ui/g, 'X');
-
-  const vowelGroups = w.match(/[aeiouyëïöüX]+/gi);
-  return Math.max(1, vowelGroups ? vowelGroups.length : 1);
-}
-
-// ---------------------------------------------------------------------------
 // Slavic languages (PL, CS) syllable counter
 // ---------------------------------------------------------------------------
 
@@ -235,25 +208,6 @@ function countSyllablesSlavic(word: string): number {
   // Vowels: a, e, i, o, u, y, ą, ę, ó (PL) + á, é, í, ú, ů, ý, ě (CS)
   const vowels = word.match(/[aeiouyąęóáéíúůýě]+/gi);
   return Math.max(1, vowels ? vowels.length : 1);
-}
-
-// ---------------------------------------------------------------------------
-// Finnish syllable counter
-// ---------------------------------------------------------------------------
-
-function countSyllablesNordic(word: string): number {
-  if (word.length <= 2) return 1;
-
-  // Finnish diphthongs - these are single syllables, not two.
-  // Finnish has 18 diphthongs: ai, ei, oi, ui, yi, äi, öi, au, eu, ou, iu,
-  // ey, äy, öy, ie, uo, yö + iy
-  const w = word.replace(
-    /ai|ei|oi|ui|yi|äi|öi|au|eu|ou|iu|ey|äy|öy|ie|uo|yö|iy/gi,
-    'X',
-  );
-
-  const vowelGroups = w.match(/[aeiouyäöX]+/gi);
-  return Math.max(1, vowelGroups ? vowelGroups.length : 1);
 }
 
 // ---------------------------------------------------------------------------

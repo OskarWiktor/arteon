@@ -1,4 +1,4 @@
-import type { Locale } from '@/types/locale';
+﻿import type { Locale } from '@/types/locale';
 import type { TextMetrics } from '@/types/tools/text';
 export type { TextMetrics } from '@/types/tools/text';
 import { calculateReadability, calculateSpeakingTime } from './readability';
@@ -61,13 +61,11 @@ const READING_TIME_FMT: Record<Locale, (m: number) => string> = {
   fr: m => (m === 1 ? '1 minute' : `${m} minutes`),
   pt: m => (m === 1 ? '1 minuto' : `${m} minutos`),
   it: m => (m === 1 ? '1 minuto' : `${m} minuti`),
-  nl: m => (m === 1 ? '1 minuut' : `${m} minuten`),
   cs: m => {
     if (m === 1) return '1 minuta';
     if (m >= 2 && m <= 4) return `${m} minuty`;
     return `${m} minut`;
   },
-  fi: m => (m === 1 ? '1 minuutti' : `${m} minuuttia`),
   el: m =>
     m === 1
       ? '1 \u03bb\u03b5\u03c0\u03c4\u03cc'
