@@ -30,7 +30,7 @@ export default function Label({
     <label
       className={cn(
         'mb-1 block',
-        variant === 'tool' && 'text-xs! font-medium! text-mid! uppercase!',
+        variant === 'tool' && 'text-sm! font-medium! text-mid! uppercase!',
         className,
       )}
       {...props}

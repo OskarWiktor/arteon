@@ -245,10 +245,14 @@ body {
 
 p,
 li,
-.p,
-label {
+.p {
   @apply leading-relaxed font-normal text-pretty text-mid;
   font-size: clamp(14px, calc(14px + 2 * ((100vw - 360px) / 1080)), 16px);
+}
+
+label {
+  @apply leading-relaxed font-normal text-pretty text-mid;
+  font-size: clamp(16px, calc(16px + 2 * ((100vw - 360px) / 1080)), 18px);
 }
 
 .text-small {
