@@ -78,7 +78,10 @@
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "¿Para qué convertir píxeles a centímetros?",
@@ -86,16 +89,22 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversor gratuito de píxeles a centímetros – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionInfo",
       "title": "¿Cómo funciona la conversión px a cm? Fórmula y ejemplo",
       "html": "<p class=\"text-mid mb-4\">Toda la conversión se reduce a una sola fórmula que se basa en una relación fija entre pulgada y centímetro: una pulgada equivale exactamente a 2,54 cm. Basta con multiplicar la cantidad de píxeles por 2,54 y dividirla entre la resolución DPI elegida.</p><p class=\"text-mid mb-4\">La fórmula completa es la siguiente: <strong>número de centímetros = número de píxeles × 2,54 ÷ DPI</strong>. El convertidor realiza este cálculo al instante, por lo que no tienes que contar ni buscar una calculadora.</p><p class=\"text-mid mb-4\">Ejemplo: quieres comprobar cuántos centímetros son 1.920 píxeles en una pantalla estándar de 96 DPI. Sustituyes los valores en la fórmula y obtienes 1.920 × 2,54 ÷ 96, lo que da exactamente 50,80 cm. Los mismos 1.920 píxeles a 300 DPI utilizados en imprenta son ya solo 16,26 cm, porque caben más píxeles en una pulgada.</p><p class=\"text-mid\">En el sentido contrario funciona de forma análoga: número de píxeles = número de centímetros × DPI ÷ 2,54. Gracias a esto puedes comprobar cuántos píxeles debe tener un gráfico que quieras imprimir en un tamaño concreto, por ejemplo en formato tarjeta de visita o foto 10 × 15 cm.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
-      "title": "¿Cuántos centímetros equivalen distintos valores de píxeles según el DPI?",
+      "title": "¿A cuántos centímetros equivalen los distintos valores de píxeles según el DPI?",
       "description": "La tabla siguiente muestra cómo los mismos valores en píxeles se traducen a centímetros con las cinco resoluciones más utilizadas. Vale la pena recordar algunos valores porque corresponden exactamente a formatos concretos: 413 px a 300 DPI es el lado corto de una foto de pasaporte, 827 px son 7 cm y 945 px son exactamente 8 cm.",
       "labelHeader": "Píxeles",
       "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI", "600 DPI"],
@@ -191,7 +200,7 @@
         },
         {
           "label": "1.181 px",
-          "values": ["41,66 cm", "31,24 cm", "20,00 cm", "10,00 cm", "5,00 cm"]
+          "values": ["41,66 cm", "31,25 cm", "20,00 cm", "10,00 cm", "5,00 cm"]
         },
         {
           "label": "1.200 px",
@@ -222,9 +231,9 @@
         {
           "label": "2.480 px",
           "values": [
-            "87,47 cm",
+            "87,49 cm",
             "65,62 cm",
-            "42,00 cm",
+            "41,99 cm",
             "21,00 cm (A4)",
             "10,50 cm"
           ],
@@ -243,7 +252,7 @@
         {
           "label": "3.508 px",
           "values": [
-            "123,73 cm",
+            "123,75 cm",
             "92,82 cm",
             "59,40 cm",
             "29,70 cm (A4)",
@@ -294,15 +303,20 @@
       ],
       "caption": "Todos los valores se han redondeado a dos decimales según la fórmula cm = px × 2,54 ÷ DPI."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
-      "title": "¿Cuántos centímetros equivalen las resoluciones de pantalla y los gráficos de redes sociales más populares?",
+      "title": "¿A cuántos centímetros equivalen las resoluciones de pantalla y los gráficos de redes sociales más populares?",
       "description": "La tabla siguiente muestra las dimensiones físicas de las resoluciones más populares de monitores, smartphones y gráficos de redes sociales. La primera columna con valores en centímetros asume 96 DPI – el valor que el sistema operativo aplica a una pantalla típica. La segunda columna muestra cuántos centímetros ocuparía la misma imagen a 300 DPI usados en imprenta, es decir, qué tamaño tendría con calidad fotográfica.",
       "labelHeader": "Formato",
       "cols": ["Resolución (px)", "Tamaño @ 96 DPI", "Tamaño @ 300 DPI"],
       "rows": [
-        { "groupLabel": "Resoluciones de pantalla" },
+        {
+          "groupLabel": "Resoluciones de pantalla"
+        },
         {
           "label": "HD 720p",
           "values": ["1.280 × 720", "33,87 × 19,05 cm", "10,84 × 6,10 cm"]
@@ -333,11 +347,17 @@
           "label": "Smartphone (vertical)",
           "values": ["1.080 × 1.920", "28,58 × 50,80 cm", "9,14 × 16,26 cm"]
         },
-        { "groupLabel": "Gráficos de redes sociales" },
+        {
+          "groupLabel": "Gráficos de redes sociales"
+        },
         {
           "label": "Instagram (cuadrado)",
           "values": ["1.080 × 1.080", "28,58 × 28,58 cm", "9,14 × 9,14 cm"],
           "emphasis": true
+        },
+        {
+          "label": "Instagram (publicación vertical 4:5)",
+          "values": ["1.080 × 1.350", "28,58 × 35,72 cm", "9,14 × 11,43 cm"]
         },
         {
           "label": "Instagram story / Reel",
@@ -362,7 +382,10 @@
       ],
       "caption": "Una pantalla Full HD completa en un monitor de 24 pulgadas mide físicamente algo menos de 50,80 cm de ancho, porque los fabricantes utilizan distintas densidades de píxeles – el valor de la tabla es el ancho teórico al estándar de 96 DPI."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "¿Cuántos píxeles tienen los tamaños populares en centímetros?",
@@ -370,20 +393,32 @@
       "labelHeader": "Dimensión",
       "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
       "rows": [
-        { "label": "0,5 cm", "values": ["14 px", "19 px", "30 px", "59 px"] },
+        {
+          "label": "0,5 cm",
+          "values": ["14 px", "19 px", "30 px", "59 px"]
+        },
         {
           "label": "1 cm",
           "values": ["28 px", "38 px", "59 px", "118 px"],
           "emphasis": true
         },
-        { "label": "2 cm", "values": ["57 px", "76 px", "118 px", "236 px"] },
-        { "label": "3 cm", "values": ["85 px", "113 px", "177 px", "354 px"] },
+        {
+          "label": "2 cm",
+          "values": ["57 px", "76 px", "118 px", "236 px"]
+        },
+        {
+          "label": "3 cm",
+          "values": ["85 px", "113 px", "177 px", "354 px"]
+        },
         {
           "label": "5 cm",
           "values": ["142 px", "189 px", "295 px", "591 px"],
           "emphasis": true
         },
-        { "label": "7 cm", "values": ["198 px", "264 px", "413 px", "827 px"] },
+        {
+          "label": "7 cm",
+          "values": ["198 px", "265 px", "413 px", "827 px"]
+        },
         {
           "label": "10 cm",
           "values": ["283 px", "378 px", "591 px", "1.181 px"],
@@ -414,7 +449,10 @@
       ],
       "caption": "Si usas más a menudo la conversión en este sentido, tenemos para ti una calculadora dedicada de cm a px con un rango aún más amplio de valores."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Formatos físicos más populares y sus dimensiones en píxeles",
@@ -426,7 +464,9 @@
         "Anch. × alt. (300 DPI)"
       ],
       "rows": [
-        { "groupLabel": "Papel ISO serie A" },
+        {
+          "groupLabel": "Papel ISO serie A"
+        },
         {
           "label": "A0",
           "values": ["84,1 × 118,9", "4.967 × 7.022", "9.933 × 14.043"]
@@ -456,8 +496,13 @@
           "label": "A6",
           "values": ["10,5 × 14,8", "620 × 874", "1.240 × 1.748"]
         },
-        { "label": "A7", "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"] },
-        { "groupLabel": "Tamaños de papel EE. UU." },
+        {
+          "label": "A7",
+          "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"]
+        },
+        {
+          "groupLabel": "Tamaños de papel EE. UU."
+        },
         {
           "label": "Carta (8,5 × 11 in)",
           "values": ["21,59 × 27,94", "1.275 × 1.650", "2.550 × 3.300"],
@@ -471,7 +516,9 @@
           "label": "Tabloide (11 × 17 in)",
           "values": ["27,94 × 43,18", "1.650 × 2.550", "3.300 × 5.100"]
         },
-        { "groupLabel": "Copias fotográficas" },
+        {
+          "groupLabel": "Copias fotográficas"
+        },
         {
           "label": "Foto 10 × 15 cm",
           "values": ["10 × 15", "591 × 886", "1.181 × 1.772"],
@@ -489,7 +536,9 @@
           "label": "Foto 20 × 30 cm",
           "values": ["20 × 30", "1.181 × 1.772", "2.362 × 3.543"]
         },
-        { "groupLabel": "Documentos de identidad" },
+        {
+          "groupLabel": "Documentos de identidad"
+        },
         {
           "label": "Foto DNI/pasaporte (ES, 26 × 32 mm)",
           "values": ["2,6 × 3,2", "154 × 189", "307 × 378"],
@@ -499,7 +548,9 @@
           "label": "Foto ICAO / pasaporte (35 × 45 mm)",
           "values": ["3,5 × 4,5", "207 × 266", "413 × 531"]
         },
-        { "groupLabel": "Tarjetas de visita" },
+        {
+          "groupLabel": "Tarjetas de visita"
+        },
         {
           "label": "Tarjeta europea ISO (85 × 55 mm)",
           "values": ["8,5 × 5,5", "502 × 325", "1.004 × 650"],
@@ -512,7 +563,10 @@
       ],
       "caption": "Estos valores son el espejo de la tabla de nuestro conversor de cm a px – siempre puedes pasar de un sentido al otro conociendo solo la cantidad de píxeles y el DPI de destino."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "¿Cómo cambiar de píxeles a centímetros en los programas más populares?",
@@ -556,7 +610,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "¿Cuándo conviene usar este convertidor?",
@@ -584,7 +641,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Píxel y centímetro – breve comparación",
@@ -613,7 +673,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Preguntas frecuentes sobre la conversión de px a cm",
@@ -693,7 +756,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Ayúdanos a mejorar este convertidor",
@@ -702,11 +768,17 @@
       "imageAlt": "Convertidor px a cm – Arteon",
       "defaultSubject": "Feedback: convertidor px a cm"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "toolsCarousel",
       "title": "Otras herramientas que te pueden venir bien"
     },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

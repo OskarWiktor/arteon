@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Przelicz piksele na centymetry z dowolnym DPI",
-    "description": "Wpisz wartość w pikselach, ustaw rozdzielczość DPI i odczytaj wynik w centymetrach. Sprawdź ile centymetrów odpowiada danej liczbie pikseli, w tym popularnym rozdzielczościom ekranów takim jak 1920 × 1080. Konwerter pomoże Ci dobrać właściwy rozmiar, gdy chcesz wydrukować plik graficzny albo dopasować go do konkretnego formatu papieru."
+    "description": "Wpisz wartość w pikselach, ustaw rozdzielczość DPI i odczytaj wynik w centymetrach. Sprawdź, ile centymetrów odpowiada danej liczbie pikseli, w tym popularnym rozdzielczościom ekranów takim jak 1920 × 1080. Konwerter pomoże Ci dobrać właściwy rozmiar, gdy chcesz wydrukować plik graficzny albo dopasować go do konkretnego formatu papieru."
   },
   "breadcrumbs": {
     "second": {
@@ -43,7 +43,7 @@
       ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicznik pikseli na centymetry z regulowaną wartością DPI. Po wpisaniu liczby pikseli od razu zobaczysz dokładnie ile centymetrów odpowiada danej wartości i jaki to byłby format na papierze. Konwerter sprawdza się przy ocenie, czy plik z aparatu, screenshot albo grafika z internetu wystarczą na konkretny rozmiar wydruku, i działa w przeglądarce bez rejestracji.",
+      "description": "Przelicznik pikseli na centymetry z regulowaną wartością DPI. Po wpisaniu liczby pikseli od razu zobaczysz dokładnie, ile centymetrów odpowiada danej wartości i jaki to byłby format na papierze. Konwerter sprawdza się przy ocenie, czy plik z aparatu, screenshot albo grafika z internetu wystarczą na konkretny rozmiar wydruku, i działa w przeglądarce bez rejestracji.",
       "featureList": [
         "Regulowana rozdzielczość DPI",
         "Konwersja działa w obie strony, więc przeliczysz zarówno piksele na centymetry, jak i centymetry na piksele",
@@ -200,7 +200,7 @@
         },
         {
           "label": "1 181 px",
-          "values": ["41,66 cm", "31,24 cm", "20,00 cm", "10,00 cm", "5,00 cm"]
+          "values": ["41,66 cm", "31,25 cm", "20,00 cm", "10,00 cm", "5,00 cm"]
         },
         {
           "label": "1 200 px",
@@ -231,9 +231,9 @@
         {
           "label": "2 480 px",
           "values": [
-            "87,47 cm",
+            "87,49 cm",
             "65,62 cm",
-            "42,00 cm",
+            "41,99 cm",
             "21,00 cm (A4)",
             "10,50 cm"
           ],
@@ -252,7 +252,7 @@
         {
           "label": "3 508 px",
           "values": [
-            "123,73 cm",
+            "123,75 cm",
             "92,82 cm",
             "59,40 cm",
             "29,70 cm (A4)",
@@ -352,6 +352,10 @@
           "emphasis": true
         },
         {
+          "label": "Instagram (pionowy post 4:5)",
+          "values": ["1 080 × 1 350", "28,58 × 35,72 cm", "9,14 × 11,43 cm"]
+        },
+        {
           "label": "Instagram story / Reel",
           "values": ["1 080 × 1 920", "28,58 × 50,80 cm", "9,14 × 16,26 cm"]
         },
@@ -398,7 +402,7 @@
           "values": ["142 px", "189 px", "295 px", "591 px"],
           "emphasis": true
         },
-        { "label": "7 cm", "values": ["198 px", "264 px", "413 px", "827 px"] },
+        { "label": "7 cm", "values": ["198 px", "265 px", "413 px", "827 px"] },
         {
           "label": "10 cm",
           "values": ["283 px", "378 px", "591 px", "1 181 px"],
@@ -555,7 +559,7 @@
         {
           "title": "Procreate",
           "icon": "RiBrushLine",
-          "description": "Procreate przy tworzeniu nowego płótna pozwala wybrać jednostkę pomiędzy pikselami, milimetrami, centymetrami i calami. W zakładce Własne płótno wpisz wymiar w cm i ustaw 300 DPI, żeby zobaczyć ile pikseli będzie miał finalny plik. Jeżeli masz już gotową ilustrację w pikselach i chcesz wiedzieć, jak duża będzie po wydrukowaniu, użyj naszego konwertera – Procreate od razu pokazuje wymiary aktualnego płótna w panelu Akcje, więc wystarczy je skopiować."
+          "description": "Procreate przy tworzeniu nowego płótna pozwala wybrać jednostkę pomiędzy pikselami, milimetrami, centymetrami i calami. W zakładce Własne płótno wpisz wymiar w cm i ustaw 300 DPI, żeby zobaczyć, ile pikseli będzie miał finalny plik. Jeżeli masz już gotową ilustrację w pikselach i chcesz wiedzieć, jak duża będzie po wydrukowaniu, użyj naszego konwertera – Procreate od razu pokazuje wymiary aktualnego płótna w panelu Akcje, więc wystarczy je skopiować."
         },
         {
           "title": "Word, Excel, PowerPoint",
@@ -591,7 +595,7 @@
         {
           "icon": "RiPrinterLine",
           "title": "Sprawdzenie grafik przed wysyłką do drukarni",
-          "description": "Otrzymałeś od klienta plik o szerokości 2 480 px i nie wiesz, jaki to format. Konwerter od razu pokaże, że przy 300 DPI to dokładnie 21 cm, czyli krótszy bok arkusza A4. Dzięki temu uniknniesz sytuacji, w której drukarnia odrzuca plik z powodu niezgodnej rozdzielczości."
+          "description": "Otrzymałeś od klienta plik o szerokości 2 480 px i nie wiesz, jaki to format. Konwerter od razu pokaże, że przy 300 DPI to dokładnie 21 cm, czyli krótszy bok arkusza A4. Dzięki temu unikniesz sytuacji, w której drukarnia odrzuca plik z powodu niezgodnej rozdzielczości."
         },
         {
           "icon": "RiContactsBookLine",
@@ -679,7 +683,7 @@
         },
         {
           "question": "Ile centymetrów ma 1 920 pikseli?",
-          "answer": "Tysiąc dziewięćset dwadzieścia pikseli to równo 50,80 cm na ekranie 96 DPI – odpowiada to szerokości obrazu Full HD. W druku przy 300 DPI ta sama liczba pikseli zajmie tylko 16,26 cm, a przy 600 DPI zaledwie 8,13 cm. To wartość warta zapamiętania, bo pojawia się w niemal każdym screenshotcie z monitora."
+          "answer": "Tysiąc dziewięćset dwadzieścia pikseli to równo 50,80 cm na ekranie 96 DPI – odpowiada to szerokości obrazu Full HD. W druku przy 300 DPI ta sama liczba pikseli zajmie tylko 16,26 cm, a przy 600 DPI zaledwie 8,13 cm. To wartość warta zapamiętania, bo pojawia się w niemal każdym zrzucie ekranu z monitora."
         },
         {
           "question": "Jakie wymiary w centymetrach ma ekran Full HD 1 920 × 1 080 px?",

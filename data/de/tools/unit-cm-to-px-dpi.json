@@ -158,7 +158,7 @@
         },
         {
           "label": "7 cm",
-          "values": ["198 px", "264 px", "413 px", "827 px", "1.654 px"]
+          "values": ["198 px", "265 px", "413 px", "827 px", "1.654 px"]
         },
         {
           "label": "8 cm",
@@ -272,12 +272,12 @@
         },
         {
           "label": "2.480 px",
-          "values": ["87,47 cm", "65,62 cm", "42,00 cm", "21,00 cm (A4)"],
+          "values": ["87,49 cm", "65,62 cm", "41,99 cm", "21,00 cm (A4)"],
           "emphasis": true
         },
         {
           "label": "3.508 px",
-          "values": ["123,73 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)"]
+          "values": ["123,75 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)"]
         }
       ],
       "caption": "Die letzten beiden Werte – 2.480 und 3.508 Pixel – entsprechen der exakten Breite und Höhe eines DIN A4-Blattes bei einer Auflösung von 300 DPI."
@@ -293,7 +293,9 @@
       "labelHeader": "Format",
       "cols": ["B × H (cm)", "B × H (150 DPI)", "B × H (300 DPI)"],
       "rows": [
-        { "groupLabel": "DIN A-Reihe Papier" },
+        {
+          "groupLabel": "DIN A-Reihe Papier"
+        },
         {
           "label": "A0",
           "values": ["84,1 × 118,9", "4.967 × 7.022", "9.933 × 14.043"]
@@ -323,8 +325,13 @@
           "label": "A6",
           "values": ["10,5 × 14,8", "620 × 874", "1.240 × 1.748"]
         },
-        { "label": "A7", "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"] },
-        { "groupLabel": "US-amerikanische Papiergrößen" },
+        {
+          "label": "A7",
+          "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"]
+        },
+        {
+          "groupLabel": "US-amerikanische Papiergrößen"
+        },
         {
           "label": "Letter (8,5 × 11 in)",
           "values": ["21,59 × 27,94", "1.275 × 1.650", "2.550 × 3.300"]
@@ -337,7 +344,9 @@
           "label": "Tabloid (11 × 17 in)",
           "values": ["27,94 × 43,18", "1.650 × 2.550", "3.300 × 5.100"]
         },
-        { "groupLabel": "Fotoabzüge" },
+        {
+          "groupLabel": "Fotoabzüge"
+        },
         {
           "label": "Foto 4 × 6 in",
           "values": ["10,16 × 15,24", "600 × 900", "1.200 × 1.800"]
@@ -371,7 +380,9 @@
           "label": "Foto 20 × 30 cm",
           "values": ["20 × 30", "1.181 × 1.772", "2.362 × 3.543"]
         },
-        { "groupLabel": "Personalausweis- und Passbilder" },
+        {
+          "groupLabel": "Personalausweis- und Passbilder"
+        },
         {
           "label": "Reisepass ICAO / EU (35 × 45 mm)",
           "values": ["3,5 × 4,5", "207 × 266", "413 × 531"],
@@ -381,7 +392,9 @@
           "label": "US-Reisepass (2 × 2 in)",
           "values": ["5,08 × 5,08", "300 × 300", "600 × 600"]
         },
-        { "groupLabel": "Visitenkarten" },
+        {
+          "groupLabel": "Visitenkarten"
+        },
         {
           "label": "Europäisch ISO (85 × 55 mm)",
           "values": ["8,5 × 5,5", "502 × 325", "1.004 × 650"],
@@ -395,7 +408,9 @@
           "label": "Japanisch (91 × 55 mm)",
           "values": ["9,1 × 5,5", "538 × 325", "1.075 × 650"]
         },
-        { "groupLabel": "Großformatige Werbung" },
+        {
+          "groupLabel": "Großformatige Werbung"
+        },
         {
           "label": "Roll-up (85 × 200 cm)",
           "values": ["85 × 200", "5.020 × 11.811", "10.039 × 23.622"]
@@ -531,12 +546,16 @@
           "answer": "Am einfachsten geben Sie die Anzahl der Zentimeter in das Feld des Umrechners ein und wählen das DPI, das Sie interessiert – das Ergebnis erscheint sofort. Wenn Sie es lieber von Hand berechnen, verwenden Sie die Formel: Anzahl der Pixel = Anzahl der Zentimeter × DPI ÷ 2,54. Für 5 cm bei 300 DPI erhalten Sie 5 × 300 ÷ 2,54, also etwa 591 Pixel."
         },
         {
-          "question": "Wie viel sind 1 Pixel in Zentimetern?",
+          "question": "Wie viel ist 1 Pixel in Zentimetern?",
           "answer": "Ein Pixel auf einem Standardbildschirm mit 96 DPI misst etwa 0,0265 cm und bei den im Druck verwendeten 300 DPI nur 0,0085 cm. Um eine beliebige Pixelzahl in Zentimeter umzurechnen, teilen Sie sie durch den DPI-Wert und multiplizieren das Ergebnis mit 2,54."
         },
         {
           "question": "Wie viele Pixel haben 5 cm?",
           "answer": "Bei der Standard-Bildschirmauflösung von 96 DPI entsprechen fünf Zentimeter etwa 189 Pixeln. Wenn Sie eine Grafik für den Druck bei 300 DPI vorbereiten, wächst dieselbe Länge auf 591 Pixel an und bei 600 DPI erreicht sie bereits 1.181 Pixel."
+        },
+        {
+          "question": "Wie viele Pixel haben 7 cm?",
+          "answer": "Sieben Zentimeter entsprechen bei 96 DPI etwa 265 Pixeln. Im Druck bei 300 DPI sind es 827 Pixel, und bei 600 DPI ergeben sich 1.654 Pixel."
         },
         {
           "question": "Wie viele Pixel haben 10 cm?",

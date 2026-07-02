@@ -86,7 +86,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert centimeters to pixels?",
-      "html": "<p class=\"text-mid mb-4\">A centimeter is a physical unit that rules the world of print. A pixel, in turn, describes a single point on a phone, tablet, or laptop screen. To translate one into the other you have to know the DPI resolution, which tells you how many pixels fit on one inch of the screen.</p><p class=\"text-mid mb-4\">This kind of conversion is most often done by designers preparing files for a print shop, photographers checking whether a photo is large enough for a specific print size, or designers working on banners, social media graphics, or elements of a website. The converter saves you from doing the maths by hand and from memorising the formula.</p><p class=\"text-mid\">Further down the page you will find conversion tables in both directions, ready-made dimensions for popular formats (from an A4 sheet through 10×15 cm photos to a passport photo), and short walkthroughs that show how to convert centimeters to pixels in Photoshop, Figma, Canva, and other design tools.</p>",
+      "html": "<p class=\"text-mid mb-4\">A centimeter is a physical unit that rules the world of print. A pixel, in turn, describes a single point on a phone, tablet, or laptop screen. To translate one into the other you have to know the DPI resolution, which tells you how many pixels fit on one inch of the screen.</p><p class=\"text-mid mb-4\">This kind of conversion is most often done by designers preparing files for a print shop, photographers checking whether a photo is large enough for a specific print size, or designers working on banners, social media graphics, or elements of a website. The converter saves you from doing the math by hand and from memorizing the formula.</p><p class=\"text-mid\">Further down the page you will find conversion tables in both directions, ready-made dimensions for popular formats (from an A4 sheet through 10×15 cm photos to a passport photo), and short walkthroughs that show how to convert centimeters to pixels in Photoshop, Figma, Canva, and other design tools.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Free centimeters to pixels converter – Arteon"
     },
@@ -158,7 +158,7 @@
         },
         {
           "label": "7 cm",
-          "values": ["198 px", "264 px", "413 px", "827 px", "1,654 px"]
+          "values": ["198 px", "265 px", "413 px", "827 px", "1,654 px"]
         },
         {
           "label": "8 cm",
@@ -272,12 +272,12 @@
         },
         {
           "label": "2,480 px",
-          "values": ["87.47 cm", "65.62 cm", "42.00 cm", "21.00 cm (A4)"],
+          "values": ["87.49 cm", "65.62 cm", "41.99 cm", "21.00 cm (A4)"],
           "emphasis": true
         },
         {
           "label": "3,508 px",
-          "values": ["123.73 cm", "92.82 cm", "59.40 cm", "29.70 cm (A4)"]
+          "values": ["123.75 cm", "92.82 cm", "59.40 cm", "29.70 cm (A4)"]
         }
       ],
       "caption": "The last two values – 2,480 and 3,508 pixels – match the exact width and height of an A4 sheet at the resolution of 300 DPI."
@@ -293,7 +293,9 @@
       "labelHeader": "Format",
       "cols": ["W × H (cm)", "W × H (150 DPI)", "W × H (300 DPI)"],
       "rows": [
-        { "groupLabel": "ISO A-series paper" },
+        {
+          "groupLabel": "ISO A-series paper"
+        },
         {
           "label": "A0",
           "values": ["84.1 × 118.9", "4,967 × 7,022", "9,933 × 14,043"]
@@ -323,8 +325,13 @@
           "label": "A6",
           "values": ["10.5 × 14.8", "620 × 874", "1,240 × 1,748"]
         },
-        { "label": "A7", "values": ["7.4 × 10.5", "437 × 620", "874 × 1,240"] },
-        { "groupLabel": "US paper sizes" },
+        {
+          "label": "A7",
+          "values": ["7.4 × 10.5", "437 × 620", "874 × 1,240"]
+        },
+        {
+          "groupLabel": "US paper sizes"
+        },
         {
           "label": "Letter (8.5 × 11 in)",
           "values": ["21.59 × 27.94", "1,275 × 1,650", "2,550 × 3,300"],
@@ -338,7 +345,9 @@
           "label": "Tabloid / Ledger (11 × 17 in)",
           "values": ["27.94 × 43.18", "1,650 × 2,550", "3,300 × 5,100"]
         },
-        { "groupLabel": "Photo prints" },
+        {
+          "groupLabel": "Photo prints"
+        },
         {
           "label": "4 × 6 in",
           "values": ["10.16 × 15.24", "600 × 900", "1,200 × 1,800"],
@@ -372,7 +381,9 @@
           "label": "Photo 20 × 30 cm",
           "values": ["20 × 30", "1,181 × 1,772", "2,362 × 3,543"]
         },
-        { "groupLabel": "ID and passport photos" },
+        {
+          "groupLabel": "ID and passport photos"
+        },
         {
           "label": "US passport (2 × 2 in)",
           "values": ["5.08 × 5.08", "300 × 300", "600 × 600"]
@@ -382,7 +393,9 @@
           "values": ["3.5 × 4.5", "207 × 266", "413 × 531"],
           "emphasis": true
         },
-        { "groupLabel": "Business cards" },
+        {
+          "groupLabel": "Business cards"
+        },
         {
           "label": "US (3.5 × 2 in)",
           "values": ["8.89 × 5.08", "525 × 300", "1,050 × 600"]
@@ -396,7 +409,9 @@
           "label": "Japanese (91 × 55 mm)",
           "values": ["9.1 × 5.5", "538 × 325", "1,075 × 650"]
         },
-        { "groupLabel": "Large-format advertising" },
+        {
+          "groupLabel": "Large-format advertising"
+        },
         {
           "label": "Roll-up banner (85 × 200 cm)",
           "values": ["85 × 200", "5,020 × 11,811", "10,039 × 23,622"]
@@ -538,6 +553,10 @@
         {
           "question": "How many pixels does 5 cm contain?",
           "answer": "At the standard screen resolution of 96 DPI five centimeters equal about 189 pixels. If you are preparing a graphic for 300 DPI print, the same length grows to 591 pixels, and at 600 DPI it reaches 1,181 pixels."
+        },
+        {
+          "question": "How many pixels does 7 cm contain?",
+          "answer": "Seven centimeters at 96 DPI equal about 265 pixels. In 300 DPI print the same length corresponds to 827 pixels, and at 600 DPI it gives 1,654 pixels."
         },
         {
           "question": "How many pixels does 10 cm contain?",

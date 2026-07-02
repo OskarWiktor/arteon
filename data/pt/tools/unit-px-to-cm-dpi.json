@@ -78,7 +78,10 @@
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Para que serve converter píxeis em centímetros?",
@@ -86,13 +89,19 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversor gratuito de píxeis para centímetros – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionInfo",
       "title": "Como funciona a conversão px para cm? Fórmula e exemplo",
       "html": "<p class=\"text-mid mb-4\">Toda a conversão se reduz a uma única fórmula que assenta na relação fixa entre a polegada e o centímetro: uma polegada equivale exatamente a 2,54 cm. Basta, então, multiplicar o número de píxeis por 2,54 e dividir pela resolução DPI escolhida.</p><p class=\"text-mid mb-4\">A fórmula completa é a seguinte: <strong>número de centímetros = número de píxeis × 2,54 ÷ DPI</strong>. O conversor executa este cálculo de imediato, por isso não tens de fazer contas nem procurar uma calculadora.</p><p class=\"text-mid mb-4\">Exemplo: queres verificar quantos centímetros são 1.920 píxeis num ecrã padrão a 96 DPI. Substituis os valores na fórmula e obténs 1.920 × 2,54 ÷ 96, o que dá exatamente 50,80 cm. Os mesmos 1.920 píxeis a 300 DPI usados na impressão são já apenas 16,26 cm, porque cabem mais píxeis numa polegada.</p><p class=\"text-mid\">No sentido inverso funciona de forma análoga: número de píxeis = número de centímetros × DPI ÷ 2,54. Assim podes verificar quantos píxeis tem de ter uma imagem que queres imprimir num tamanho específico, por exemplo no formato de cartão de visita ou de fotografia 10 × 15 cm.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "A quantos centímetros correspondem diferentes valores de píxeis consoante o DPI?",
@@ -191,7 +200,7 @@
         },
         {
           "label": "1.181 px",
-          "values": ["41,66 cm", "31,24 cm", "20,00 cm", "10,00 cm", "5,00 cm"]
+          "values": ["41,66 cm", "31,25 cm", "20,00 cm", "10,00 cm", "5,00 cm"]
         },
         {
           "label": "1.200 px",
@@ -222,9 +231,9 @@
         {
           "label": "2.480 px",
           "values": [
-            "87,47 cm",
+            "87,49 cm",
             "65,62 cm",
-            "42,00 cm",
+            "41,99 cm",
             "21,00 cm (A4)",
             "10,50 cm"
           ],
@@ -243,7 +252,7 @@
         {
           "label": "3.508 px",
           "values": [
-            "123,73 cm",
+            "123,75 cm",
             "92,82 cm",
             "59,40 cm",
             "29,70 cm (A4)",
@@ -294,7 +303,10 @@
       ],
       "caption": "Todos os valores foram arredondados a duas casas decimais segundo a fórmula cm = px × 2,54 ÷ DPI."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "A quantos centímetros correspondem as resoluções de ecrã e os gráficos para redes sociais mais populares?",
@@ -302,7 +314,9 @@
       "labelHeader": "Formato",
       "cols": ["Resolução (px)", "Tamanho @ 96 DPI", "Tamanho @ 300 DPI"],
       "rows": [
-        { "groupLabel": "Resoluções de ecrã" },
+        {
+          "groupLabel": "Resoluções de ecrã"
+        },
         {
           "label": "HD 720p",
           "values": ["1.280 × 720", "33,87 × 19,05 cm", "10,84 × 6,10 cm"]
@@ -333,11 +347,17 @@
           "label": "Smartphone (vertical)",
           "values": ["1.080 × 1.920", "28,58 × 50,80 cm", "9,14 × 16,26 cm"]
         },
-        { "groupLabel": "Gráficos para redes sociais" },
+        {
+          "groupLabel": "Gráficos para redes sociais"
+        },
         {
           "label": "Instagram (quadrado)",
           "values": ["1.080 × 1.080", "28,58 × 28,58 cm", "9,14 × 9,14 cm"],
           "emphasis": true
+        },
+        {
+          "label": "Instagram (publicação vertical 4:5)",
+          "values": ["1.080 × 1.350", "28,58 × 35,72 cm", "9,14 × 11,43 cm"]
         },
         {
           "label": "Instagram story / Reel",
@@ -362,7 +382,10 @@
       ],
       "caption": "Um ecrã Full HD completo num monitor de 24 polegadas mede fisicamente pouco menos de 50,80 cm de largura, porque os fabricantes usam densidades de píxeis diferentes – o valor da tabela é a largura teórica no padrão de 96 DPI."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "A quantos píxeis correspondem as dimensões em centímetros mais populares?",
@@ -370,20 +393,32 @@
       "labelHeader": "Dimensão",
       "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
       "rows": [
-        { "label": "0,5 cm", "values": ["14 px", "19 px", "30 px", "59 px"] },
+        {
+          "label": "0,5 cm",
+          "values": ["14 px", "19 px", "30 px", "59 px"]
+        },
         {
           "label": "1 cm",
           "values": ["28 px", "38 px", "59 px", "118 px"],
           "emphasis": true
         },
-        { "label": "2 cm", "values": ["57 px", "76 px", "118 px", "236 px"] },
-        { "label": "3 cm", "values": ["85 px", "113 px", "177 px", "354 px"] },
+        {
+          "label": "2 cm",
+          "values": ["57 px", "76 px", "118 px", "236 px"]
+        },
+        {
+          "label": "3 cm",
+          "values": ["85 px", "113 px", "177 px", "354 px"]
+        },
         {
           "label": "5 cm",
           "values": ["142 px", "189 px", "295 px", "591 px"],
           "emphasis": true
         },
-        { "label": "7 cm", "values": ["198 px", "264 px", "413 px", "827 px"] },
+        {
+          "label": "7 cm",
+          "values": ["198 px", "265 px", "413 px", "827 px"]
+        },
         {
           "label": "10 cm",
           "values": ["283 px", "378 px", "591 px", "1.181 px"],
@@ -414,7 +449,10 @@
       ],
       "caption": "Se usas mais vezes a conversão neste sentido, temos para ti uma calculadora cm para px dedicada com um intervalo de valores ainda mais amplo."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Os formatos físicos mais populares e as suas dimensões em píxeis",
@@ -426,7 +464,9 @@
         "Larg. × alt. (300 DPI)"
       ],
       "rows": [
-        { "groupLabel": "Papel série ISO A" },
+        {
+          "groupLabel": "Papel série ISO A"
+        },
         {
           "label": "A0",
           "values": ["84,1 × 118,9", "4.967 × 7.022", "9.933 × 14.043"]
@@ -456,8 +496,13 @@
           "label": "A6",
           "values": ["10,5 × 14,8", "620 × 874", "1.240 × 1.748"]
         },
-        { "label": "A7", "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"] },
-        { "groupLabel": "Fotografias e impressões" },
+        {
+          "label": "A7",
+          "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"]
+        },
+        {
+          "groupLabel": "Fotografias e impressões"
+        },
         {
           "label": "Foto 9 × 13",
           "values": ["9 × 13", "531 × 768", "1.063 × 1.535"]
@@ -479,7 +524,9 @@
           "label": "Foto 20 × 30",
           "values": ["20 × 30", "1.181 × 1.772", "2.362 × 3.543"]
         },
-        { "groupLabel": "Documentos e cartões de visita" },
+        {
+          "groupLabel": "Documentos e cartões de visita"
+        },
         {
           "label": "Foto de passaporte (PT, 35 × 45 mm)",
           "values": ["3,5 × 4,5", "207 × 266", "413 × 531"],
@@ -497,7 +544,10 @@
       ],
       "caption": "Estes valores são o espelho da tabela do nosso conversor cm para px – podes sempre passar de um sentido para o outro conhecendo apenas o número de píxeis e o DPI de destino."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Como mudar de píxeis para centímetros nos programas mais populares?",
@@ -541,7 +591,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Quando vale a pena recorrer a este conversor?",
@@ -569,7 +622,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Comparação das unidades píxel e centímetro",
@@ -598,7 +654,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Perguntas frequentes sobre a conversão de px para cm",
@@ -622,7 +681,7 @@
         },
         {
           "question": "Quantos centímetros são 200 píxeis?",
-          "answer": "Duzentos píxeis num ecrã a 96 DPI equivalem a cerca de 5,29 cm. Na impressão a 300 DPI, os mesmos 200 píxeis ocupam apenas 1,69 cm, porque cabem mais pontos numa polegada. A 600 DPI usados na impressão fotográfica de alta qualidade são mal 0,85 cm."
+          "answer": "Duzentos píxeis num ecrã a 96 DPI equivalem a cerca de 5,29 cm. Na impressão a 300 DPI, os mesmos 200 píxeis ocupam apenas 1,69 cm, porque cabem mais pontos numa polegada. A 600 DPI usados na impressão fotográfica de alta qualidade são apenas 0,85 cm."
         },
         {
           "question": "Quantos centímetros são 300 píxeis?",
@@ -678,7 +737,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Ajuda-nos a melhorar este conversor",
@@ -687,11 +749,17 @@
       "imageAlt": "Conversor px para cm – Arteon",
       "defaultSubject": "Feedback: conversor px para cm"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "toolsCarousel",
       "title": "Outras ferramentas que te podem ser úteis"
     },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

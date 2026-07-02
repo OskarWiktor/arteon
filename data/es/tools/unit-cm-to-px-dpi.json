@@ -158,7 +158,7 @@
         },
         {
           "label": "7 cm",
-          "values": ["198 px", "264 px", "413 px", "827 px", "1.654 px"]
+          "values": ["198 px", "265 px", "413 px", "827 px", "1.654 px"]
         },
         {
           "label": "8 cm",
@@ -272,12 +272,12 @@
         },
         {
           "label": "2.480 px",
-          "values": ["87,47 cm", "65,62 cm", "42,00 cm", "21,00 cm (A4)"],
+          "values": ["87,49 cm", "65,62 cm", "41,99 cm", "21,00 cm (A4)"],
           "emphasis": true
         },
         {
           "label": "3.508 px",
-          "values": ["123,73 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)"]
+          "values": ["123,75 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)"]
         }
       ],
       "caption": "Los dos últimos valores: 2.480 y 3.508 píxeles, corresponden al ancho y alto exactos de un folio A4 a la resolución de 300 DPI."
@@ -297,7 +297,9 @@
         "Anch. × alt. (300 DPI)"
       ],
       "rows": [
-        { "groupLabel": "Papel ISO serie A" },
+        {
+          "groupLabel": "Papel ISO serie A"
+        },
         {
           "label": "A0",
           "values": ["84,1 × 118,9", "4.967 × 7.022", "9.933 × 14.043"]
@@ -327,8 +329,13 @@
           "label": "A6",
           "values": ["10,5 × 14,8", "620 × 874", "1.240 × 1.748"]
         },
-        { "label": "A7", "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"] },
-        { "groupLabel": "Tamaños de papel EE.UU." },
+        {
+          "label": "A7",
+          "values": ["7,4 × 10,5", "437 × 620", "874 × 1.240"]
+        },
+        {
+          "groupLabel": "Tamaños de papel EE.UU."
+        },
         {
           "label": "Carta (8,5 × 11 in)",
           "values": ["21,59 × 27,94", "1.275 × 1.650", "2.550 × 3.300"],
@@ -342,7 +349,9 @@
           "label": "Tabloide (11 × 17 in)",
           "values": ["27,94 × 43,18", "1.650 × 2.550", "3.300 × 5.100"]
         },
-        { "groupLabel": "Copias fotográficas" },
+        {
+          "groupLabel": "Copias fotográficas"
+        },
         {
           "label": "Foto 4 × 6 in",
           "values": ["10,16 × 15,24", "600 × 900", "1.200 × 1.800"]
@@ -376,7 +385,9 @@
           "label": "Foto 20 × 30 cm",
           "values": ["20 × 30", "1.181 × 1.772", "2.362 × 3.543"]
         },
-        { "groupLabel": "Fotos de identidad y pasaporte" },
+        {
+          "groupLabel": "Fotos de identidad y pasaporte"
+        },
         {
           "label": "Pasaporte ICAO / UE (35 × 45 mm)",
           "values": ["3,5 × 4,5", "207 × 266", "413 × 531"],
@@ -386,7 +397,9 @@
           "label": "Pasaporte EE.UU. (2 × 2 in)",
           "values": ["5,08 × 5,08", "300 × 300", "600 × 600"]
         },
-        { "groupLabel": "Tarjetas de visita" },
+        {
+          "groupLabel": "Tarjetas de visita"
+        },
         {
           "label": "Europea ISO (85 × 55 mm)",
           "values": ["8,5 × 5,5", "502 × 325", "1.004 × 650"],
@@ -400,7 +413,9 @@
           "label": "Japonesa (91 × 55 mm)",
           "values": ["9,1 × 5,5", "538 × 325", "1.075 × 650"]
         },
-        { "groupLabel": "Publicidad de gran formato" },
+        {
+          "groupLabel": "Publicidad de gran formato"
+        },
         {
           "label": "Roll-up (85 × 200 cm)",
           "values": ["85 × 200", "5.020 × 11.811", "10.039 × 23.622"]
@@ -542,6 +557,10 @@
         {
           "question": "¿Cuántos píxeles tienen 5 cm?",
           "answer": "A la resolución estándar de pantalla de 96 DPI, cinco centímetros equivalen a unos 189 píxeles. Si preparas un gráfico para impresión a 300 DPI, la misma longitud crece a 591 píxeles, y a 600 DPI ya alcanza 1.181 píxeles."
+        },
+        {
+          "question": "¿Cuántos píxeles tienen 7 cm?",
+          "answer": "Siete centímetros a 96 DPI son unos 265 píxeles. En impresión a 300 DPI la misma longitud corresponde a 827 píxeles, y a 600 DPI da 1.654 píxeles."
         },
         {
           "question": "¿Cuántos píxeles tienen 10 cm?",
