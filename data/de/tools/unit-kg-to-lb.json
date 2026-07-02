@@ -124,8 +124,10 @@
         { "label": "12 kg", "values": ["26,46 lb"] },
         { "label": "15 kg", "values": ["33,07 lb"] },
         { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "23 kg", "values": ["50,71 lb"], "emphasis": true },
         { "label": "25 kg", "values": ["55,12 lb"] },
         { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "32 kg", "values": ["70,55 lb"], "emphasis": true },
         { "label": "35 kg", "values": ["77,16 lb"] },
         { "label": "40 kg", "values": ["88,18 lb"] },
         { "label": "45 kg", "values": ["99,21 lb"] },
@@ -284,7 +286,7 @@
         },
         {
           "title": "Training und Fitnessstudio",
-          "description": "Englischsprachige Trainingsprogramme aus den USA geben alle Gewichte ausschließlich in Pfund an. Eine olympische Langhantel wiegt 45 lb (ca. 20 kg), typische 25-lb-Kurzhanteln sind etwas mehr als 11 kg. Kraftsport-Weltrekorde werden in den USA ebenfalls in Pfund angegeben – die Fitnessstudio-Tabelle oben zeigt die gängigsten Lasten."
+          "description": "Englischsprachige Trainingsprogramme aus den USA geben alle Gewichte ausschließlich in Pfund an. Eine olympische Langhantel wiegt 20 kg – in den USA heißt sie umgangssprachlich 45-Pfund-Stange, obwohl es genau 44,09 lb sind. Typische 25-lb-Kurzhanteln sind etwas mehr als 11 kg. Kraftsport-Weltrekorde werden in den USA ebenfalls in Pfund angegeben – die Fitnessstudio-Tabelle oben zeigt die gängigsten Lasten."
         },
         {
           "title": "Babygewicht",
@@ -309,6 +311,10 @@
           "answer": "Ein Kilogramm entspricht 2,2046 Pfund (lb). Das ergibt sich aus der Definition: 1 Pfund = 0,45359237 kg, also 1 kg = 1 ÷ 0,45359237 ≈ 2,2046 lb. Gerundet: 1 kg ≈ 2,2 lb."
         },
         {
+          "question": "Sind 2 Pfund gleich 1 Kilogramm?",
+          "answer": "Das hängt davon ab, welches Pfund gemeint ist. Das deutsche Pfund ist eine inoffizielle Bezeichnung für genau 500 g – hier stimmt die Rechnung: 1 kg = 2 deutsche Pfund. Das angloamerikanische Pfund (lb) wiegt jedoch nur 453,6 g, deshalb gilt: 1 kg = 2,2046 lb. Wenn Sie amerikanische oder britische Angaben umrechnen, rechnen Sie mit 2,2 statt mit 2 – sonst liegt das Ergebnis rund 9 % daneben."
+        },
+        {
           "question": "Wie lautet die Formel zur Umrechnung von kg in Pfund?",
           "answer": "Die Formel lautet: Pfund = Kilogramm × 2,2046. Umgekehrt: Kilogramm = Pfund × 0,4536. Beispiel: 70 kg × 2,2046 = 154,32 lb."
         },
@@ -321,16 +327,16 @@
           "answer": "80 kg sind 176,37 lb bzw. 12 Stone 8,4 lb im britischen System. Das ist ein Gewicht, das in englischsprachigen Ländern oft mit einem athletischen oder normalgewichtigen Mann assoziiert wird."
         },
         {
-          "question": "Wie viele Pfund sind 100 kg?",
-          "answer": "100 kg sind 220,46 lb. Gerundet: 100 kg sind etwas mehr als 220 Pfund – ein leicht zu merkender Richtwert. Im britischen System sind das 15 Stone 10,5 lb."
+          "question": "Wie viele Pfund sind 32 kg?",
+          "answer": "32 kg sind 70,55 lb. Diesen Wert prüfen Reisende am häufigsten: 32 kg ist das maximal zulässige Gewicht für ein einzelnes aufgegebenes Gepäckstück bei den meisten Fluggesellschaften (schwerere Koffer werden aus Arbeitsschutzgründen nicht angenommen). Amerikanische Airlines geben dasselbe Limit als 70 lb an, das sind 31,75 kg."
         },
         {
           "question": "Wie viele Pfund sind 50 kg?",
           "answer": "50 kg sind 110,23 lb. Als Merkhilfe: 50 kg sind etwas mehr als 110 Pfund. Im britischen System: 7 Stone 12,2 lb."
         },
         {
-          "question": "Wie viele Kilogramm hat ein Pfund?",
-          "answer": "Ein Pfund entspricht genau 0,45359237 kg. Dieser Wert ist seit 1959 als internationales avoirdupois-Pfund festgelegt. Gerundet: 1 lb ≈ 0,454 kg."
+          "question": "Wie viele Pfund sind 65 kg?",
+          "answer": "65 kg sind 143,30 lb bzw. 10 Stone 3,3 lb im britischen System. Rechnung: 65 × 2,2046 = 143,30."
         },
         {
           "question": "Wie rechne ich kg ohne Taschenrechner in Pfund um?",
@@ -345,24 +351,24 @@
           "answer": "3,5 kg sind 7,716 lb. In Pfund und Unzen: 7 Pfund und 0,716 × 16 = 11,5 Unzen, also ca. 7 lb 11 oz. Ein gesundes Neugeborenes wiegt in der Regel zwischen 3 und 4 kg, das entspricht etwa 6,6 bis 8,8 lb."
         },
         {
-          "question": "Wie viel kg sind 50 lb Freigepäck?",
-          "answer": "50 lb sind 50 × 0,45359237 = 22,68 kg. Das ist das Standardgepäcklimit vieler Fluggesellschaften für aufgegebenes Gepäck. Das häufige Limit von 70 lb (z. B. in der Business Class) entspricht 31,75 kg."
+          "question": "Wie viele Pfund sind 23 kg (Gepäcklimit)?",
+          "answer": "23 kg sind 50,71 lb. Das ist das häufigste Limit für aufgegebenes Gepäck bei europäischen Fluggesellschaften wie Lufthansa oder Eurowings. Amerikanische Airlines geben dasselbe Limit als 50 lb an, also 22,68 kg – der Unterschied beträgt nur rund 320 Gramm, in der Praxis sind beide Limits gleichwertig."
         },
         {
-          "question": "Wie viele Pfund sind 60 kg?",
-          "answer": "60 kg sind 132,28 lb bzw. 9 Stone 6,3 lb im britischen System. 60 kg ist ein typisches Gewicht für eine Frau mit durchschnittlicher Statur in Deutschland und Europa."
+          "question": "Wie viele Pfund sind 55 kg?",
+          "answer": "55 kg sind 121,25 lb bzw. 8 Stone 9,3 lb im britischen System. Rechnung: 55 × 2,2046 = 121,25."
         },
         {
-          "question": "Wie viele Pfund sind 90 kg?",
-          "answer": "90 kg sind 198,42 lb. Gerundet sind das fast genau 200 Pfund – ein praktischer Referenzwert. Im britischen System: 14 Stone 2,4 lb."
+          "question": "Wie viele Pfund sind 85 kg?",
+          "answer": "85 kg sind 187,39 lb bzw. 13 Stone 5,4 lb im britischen System. Rechnung: 85 × 2,2046 = 187,39."
         },
         {
-          "question": "Wie viele kg sind 200 Pfund?",
-          "answer": "200 lb sind 200 × 0,45359 = 90,72 kg. Eine gängige Näherung: 200 Pfund sind knapp unter 91 kg."
+          "question": "Wie viele Pfund sind 10, 20 und 25 kg?",
+          "answer": "10 kg sind 22,05 lb, 20 kg sind 44,09 lb und 25 kg sind 55,12 lb. Diese drei Werte begegnen Ihnen am häufigsten im Fitnessstudio und beim Packen: 10 kg ist ein verbreitetes Handgepäcklimit (z. B. bei Eurowings oder Ryanair mit Priority), 20 kg wiegt eine olympische Langhantel (in den USA umgangssprachlich 45-Pfund-Stange genannt, obwohl es genau 44,09 lb sind) und 25 kg ist die größte olympische Standard-Hantelscheibe."
         },
         {
-          "question": "Wie viele Pfund sind 45 kg?",
-          "answer": "45 kg sind 99,21 lb – fast genau 100 Pfund. Das ist auch das Gewicht einer olympischen Langhantelstange in Pfund (45 lb = 20,41 kg), ein im Kraftsport bekannter Referenzwert."
+          "question": "Wie stelle ich eine Personenwaage von kg auf lb um?",
+          "answer": "Bei den meisten digitalen Waagen gibt es dafür einen kleinen Knopf oder Schieberegler mit der Beschriftung UNIT, LB/KG oder KG-LB-ST, meist auf der Unterseite der Waage oder neben dem Display. Jeder Druck wechselt die Einheit der Reihe nach. Bei smarten Waagen mit App-Anbindung ändern Sie die Einheit in den Profileinstellungen der App."
         }
       ]
     },

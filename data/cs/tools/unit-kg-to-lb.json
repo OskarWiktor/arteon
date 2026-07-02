@@ -114,7 +114,9 @@
         { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
         { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
         { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "23 kg", "values": ["50,71 lb"], "emphasis": true },
         { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "32 kg", "values": ["70,55 lb"], "emphasis": true },
         { "label": "40 kg", "values": ["88,18 lb"] },
         { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
         { "label": "60 kg", "values": ["132,28 lb"] },
@@ -238,6 +240,10 @@
           "answer": "Jeden kilogram je 2,2046 liber (lb). Plyne to z definice: 1 libra = 0,45359237 kg, takže 1 kg = 1 ÷ 0,45359237 ≈ 2,2046 lb. Zaokrouhleno na jedno desetinné místo: 1 kg ≈ 2,2 lb."
         },
         {
+          "question": "Jsou 2 libry 1 kilogram?",
+          "answer": "Ne, je to oblíbená, ale příliš hrubá zkratka. 1 kg je 2,2046 lb. Pokud počítáš 2 libry na kilogram, výsledek je asi o 9 % nižší a u 100 kg rozdíl přesáhne 20 liber. Pro počítání z hlavy násob číslem 2,2 místo 2."
+        },
+        {
           "question": "Jaký je vzorec pro převod kg na libry?",
           "answer": "Vzorec je: libry = kilogramy × 2,2046. Opačně: kilogramy = libry × 0,4536. Příklad: 70 kg × 2,2046 = 154,32 lb."
         },
@@ -250,16 +256,16 @@
           "answer": "80 kg je 176,37 lb, v britském systému 12 stone 8,4 lb."
         },
         {
-          "question": "Kolik liber je 100 kg?",
-          "answer": "100 kg je 220,46 lb. Pro zapamatování: 100 kg je o trochu více než 220 liber, snadno zapamatovatelná referenční hodnota. V britském systému: 15 stone 10,5 lb."
+          "question": "Kolik liber je 32 kg?",
+          "answer": "32 kg je 70,55 lb. Tuto hodnotu cestující ověřují nejčastěji: 32 kg je maximální povolená hmotnost jednoho odbaveného zavazadla u většiny leteckých společností (těžší kufr nepřijmou kvůli bezpečnosti pozemního personálu). Americké aerolinky uvádějí stejný limit jako 70 lb, tedy 31,75 kg."
         },
         {
-          "question": "Kolik liber je 60 kg?",
-          "answer": "60 kg je 132,28 lb, v britském systému 9 stone 6,3 lb."
+          "question": "Kolik liber je 65 kg?",
+          "answer": "65 kg je 143,30 lb, v britském systému 10 stone 3,3 lb. Výpočet: 65 × 2,2046 = 143,30."
         },
         {
-          "question": "Kolik kilogramů je libra?",
-          "answer": "Jedna libra odpovídá přesně 0,45359237 kg. Tato hodnota je jako konstanta platná od roku 1959 pod názvem mezinárodní avoirdupoisová libra. Zaokrouhleno: 1 lb ≈ 0,454 kg."
+          "question": "Kolik liber je 55 kg?",
+          "answer": "55 kg je 121,25 lb, v britském systému 8 stone 9,3 lb. Výpočet: 55 × 2,2046 = 121,25."
         },
         {
           "question": "Jak převést kg na libry bez kalkulačky?",
@@ -274,8 +280,20 @@
           "answer": "3,5 kg je 7,716 lb. V librách a uncích: 7 liber a 0,716 × 16 = 11,5 unce, tedy přibližně 7 lb 11 oz. Zdravé novorozeně obvykle váží 3 až 4 kg, tedy přibližně 6,6–8,8 lb."
         },
         {
-          "question": "Kolik liber je 90 kg?",
-          "answer": "90 kg je 198,42 lb — téměř přesně 200 liber, velmi praktická referenční hodnota. V britském systému: 14 stone 2,4 lb."
+          "question": "Kolik liber je 85 kg?",
+          "answer": "85 kg je 187,39 lb, v britském systému 13 stone 5,4 lb. Výpočet: 85 × 2,2046 = 187,39."
+        },
+        {
+          "question": "Kolik liber je 23 kg (limit zavazadla)?",
+          "answer": "23 kg je 50,71 lb. Je to nejběžnější limit odbaveného zavazadla u evropských aerolinek. Americké společnosti uvádějí stejný limit jako 50 lb, tedy 22,68 kg — rozdíl je jen asi 320 gramů, takže v praxi jsou oba limity rovnocenné."
+        },
+        {
+          "question": "Kolik liber je 10, 20 a 25 kg?",
+          "answer": "10 kg je 22,05 lb, 20 kg je 44,09 lb a 25 kg je 55,12 lb. Tyto tři hodnoty potkáš nejčastěji v posilovně a při balení kufru: 10 kg je běžný limit kabinového zavazadla (například u Ryanairu nebo Wizz Airu s prioritou), 20 kg váží olympijská činka (v USA se jí říká 45librová osa, i když přesně jde o 44,09 lb) a 25 kg je největší standardní olympijský kotouč."
+        },
+        {
+          "question": "Jak přepnout osobní váhu z kg na libry?",
+          "answer": "Na většině digitálních vah k tomu slouží malé tlačítko nebo přepínač s označením UNIT, LB/KG nebo KG-LB-ST, umístěný na spodní straně váhy nebo vedle displeje. Každé stisknutí cyklicky mění jednotku. U chytrých vah propojených s aplikací se jednotka mění v nastavení profilu v aplikaci."
         }
       ]
     },

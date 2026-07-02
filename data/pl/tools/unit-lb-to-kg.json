@@ -126,11 +126,16 @@
         { "label": "90 lb", "values": ["40,82 kg"] },
         { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
         { "label": "110 lb", "values": ["49,90 kg"] },
+        { "label": "115 lb", "values": ["52,16 kg"] },
         { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "125 lb", "values": ["56,70 kg"] },
         { "label": "130 lb", "values": ["58,97 kg"] },
-        { "label": "140 lb", "values": ["63,50 kg"] },
+        { "label": "135 lb", "values": ["61,24 kg"] },
+        { "label": "140 lb", "values": ["63,50 kg"], "emphasis": true },
+        { "label": "145 lb", "values": ["65,77 kg"] },
         { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
         { "label": "160 lb", "values": ["72,57 kg"] },
+        { "label": "165 lb", "values": ["74,84 kg"] },
         { "label": "170 lb", "values": ["77,11 kg"] },
         { "label": "180 lb", "values": ["81,65 kg"] },
         { "label": "190 lb", "values": ["86,18 kg"] },
@@ -148,7 +153,7 @@
     {
       "type": "sectionTable",
       "title": "Waga ciała – popularne wartości w funtach przeliczone na kg",
-      "description": "Poniższa tabela przelicza typowe zakresy wagi ciała z funtów na kilogramy. Wartości obejmują zakres od 88 lb do 265 lb, czyli odpowiadają przybliżeniu od 40 kg do 120 kg.",
+      "description": "Poniższa tabela przelicza typowe zakresy wagi ciała z funtów na kilogramy. Wartości obejmują zakres od 88 lb do 265 lb, czyli w przybliżeniu od 40 kg do 120 kg.",
       "labelHeader": "Waga ciała (lb)",
       "cols": ["Kilogramy"],
       "rows": [
@@ -215,7 +220,7 @@
         },
         {
           "title": "Trening siłowy i programy z YouTube",
-          "description": "Popularne programy treningowe z USA — Starting Strength, 5/3/1, StrongLifts — podają obciążenia wyłącznie w funtach. 135 lb to ok. 61 kg, 225 lb to ok. 102 kg, a marzenie wielu osób — 'benching 225' (wyciskanie 225 lb) — to ok. 102 kg na ławce. Tabelę popularnych ciężarków siłownianych znajdziesz powyżej."
+          "description": "Popularne programy treningowe z USA — Starting Strength, 5/3/1, StrongLifts — podają obciążenia wyłącznie w funtach. 135 lb to ok. 61 kg, a 'benching 225', czyli wyciskanie 225 lb na ławce i cel treningowy wielu osób, to ok. 102 kg. Tabelę popularnych ciężarków siłownianych znajdziesz powyżej."
         },
         {
           "title": "Limit bagażowy i przesyłki",
@@ -248,24 +253,24 @@
           "answer": "150 lb to 68,04 kg. Obliczenie: 150 × 0,45359 = 68,04. To popularna waga ciała w USA często podawana w kobiecych kalkulatorach zdrowotnych."
         },
         {
-          "question": "Ile kg to 100 lb?",
-          "answer": "100 lb to 45,36 kg. Przydatna wskazówka: 100 funtów to nieco mniej niż 50 kg."
+          "question": "Ile kg to 140 lb?",
+          "answer": "140 lb to 63,50 kg. Obliczenie: 140 × 0,45359 = 63,50. To jedna z najczęściej przeliczanych wartości wagi ciała w amerykańskich kalkulatorach zdrowotnych i planach treningowych."
         },
         {
-          "question": "Ile kg to 200 lb?",
-          "answer": "200 lb to 90,72 kg. W USA 200 funtów to często wspominany punkt odniesienia dla wagi mężczyzny o atletycznej budowie."
+          "question": "Ile kg to 180 lb?",
+          "answer": "180 lb to 81,65 kg. Obliczenie: 180 × 0,45359 = 81,65. Szybkie sprawdzenie w pamięci: 180 ÷ 2,2 ≈ 81,8 kg, więc wynik się zgadza."
         },
         {
           "question": "Ile kg to 50 lb?",
           "answer": "50 lb to 22,68 kg. To standardowy limit wagowy walizki rejestrowanej w wielu liniach lotniczych USA."
         },
         {
-          "question": "Ile kg to 70 lb?",
-          "answer": "70 lb to 31,75 kg. To wyższy limit wagowy bagażu stosowany przez niektóre linie lotnicze dla pierwszej klasy lub pasażerów elite."
+          "question": "Ile kg to 130 lb?",
+          "answer": "130 lb to 58,97 kg. Obliczenie: 130 × 0,45359 = 58,97. Zaokrąglając: 130 funtów to niecałe 59 kg."
         },
         {
-          "question": "Ile kg to 1 funt?",
-          "answer": "1 funt (lb) to 0,45359237 kg. Zapamiętaj, że 1 lb ≈ 0,45 kg, czyli mniej niż pół kilograma."
+          "question": "Czy 2 funty to 1 kilogram?",
+          "answer": "Nie — 2 funty to 0,907 kg, czyli o ponad 9% mniej niż kilogram. Dokładnie 1 kg odpowiada 2,2046 lb. Przybliżenie \"2 funty = 1 kg\" bywa wygodne przy zgrubnych szacunkach, ale przy większych wartościach błąd szybko rośnie: 100 lb to nie 50 kg, tylko 45,36 kg."
         },
         {
           "question": "Jak przeliczyć funty na kilogramy bez kalkulatora?",
@@ -273,27 +278,31 @@
         },
         {
           "question": "Ile kg to 135 lb (sztanga na ławce)?",
-          "answer": "135 lb to 61,24 kg. W kulturze siłowni anglosaskiej '135 on the bench' to popularne ćwiczenie i ważna wartość progowa. Odpowiada to sztandze olimpijskiej 20 kg plus dwa talerze 20 kg (łącznie 60 kg) — niemal dokładnie 135 lb."
+          "answer": "135 lb to 61,24 kg. W anglosaskiej kulturze siłowni '135 on the bench' to popularny próg treningowy: sztanga 45 lb plus dwie tarcze po 45 lb dają dokładnie 135 lb. Najbliższy metryczny odpowiednik — sztanga 20 kg plus dwie tarcze 20 kg — to 60 kg, czyli 132,3 lb, więc nieco mniej."
         },
         {
           "question": "Czy funt to to samo co uncja?",
           "answer": "Nie — funt (lb) i uncja (oz) to dwie różne jednostki. 1 funt = 16 uncji. Jedna uncja to ok. 28,35 g, a jeden funt to ok. 453,6 g (0,4536 kg). Przy wadze niemowląt często podaje się wynik w funtach i uncjach, np. '7 lb 11 oz'."
         },
         {
-          "question": "Ile kg to 160 lb?",
-          "answer": "160 lb to 72,57 kg. W USA 160 funtów to często podawana waga mężczyzny o smukłej budowie lub waga docelowa w planach odchudzania."
+          "question": "Ile kg to 165 lb?",
+          "answer": "165 lb to 74,84 kg. Obliczenie: 165 × 0,45359 = 74,84. Zaokrąglając: 165 funtów to niecałe 75 kg."
         },
         {
           "question": "Ile kg to 225 lb (legendarny wynik na ławce)?",
-          "answer": "225 lb to 102,06 kg. W anglosaskiej kulturze siłowni '225 on the bench' to symbol siłowej dojrzałości i popularny cel treningowy. Odpowiada to czterem tarczom po 45 lb (plus sztanga 45 lb) lub przybliżeniu do trzycyfrowego ciężaru w kilogramach."
+          "answer": "225 lb to 102,06 kg. W anglosaskiej kulturze siłowni '225 on the bench' to symbol siłowej dojrzałości i popularny cel treningowy: sztanga 45 lb plus cztery tarcze po 45 lb (po dwie na stronę) dają dokładnie 225 lb. W przeliczeniu na kilogramy to nieco ponad 102 kg."
         },
         {
-          "question": "Czy funt angielski różni się od funta historycznego?",
-          "answer": "Dziś używa się wyłącznie funta avoirdupois (avoirdupois pound), który od 1959 roku jest zdefiniowany jako dokładnie 0,45359237 kg. Historycznie istniały inne rodzaje funtów: funt aptekarzy (ok. 373 g), funt troy (ok. 373 g, nadal używany dla metali szlachetnych) czy funt angielski kupieccy. W codziennym użyciu i handlu obowiązuje jednak wyłącznie funt avoirdupois."
+          "question": "W czym Amerykanie i Brytyjczycy podają wagę ciała?",
+          "answer": "Amerykanie podają wagę ciała w funtach (lb), a Brytyjczycy potocznie w stone i funtach (1 stone = 14 lb), np. \"11 stone 4\". W pozostałych krajach, w tym w Polsce, standardem są kilogramy. W medycynie kilogramy dominują nawet w krajach anglosaskich, bo dawki wielu leków przelicza się na masę ciała pacjenta w mg/kg."
         },
         {
-          "question": "Ile kg to limit bagażu 23 kg w funtach?",
+          "question": "Ile funtów to limit bagażu 23 kg?",
           "answer": "23 kg to 23 × 2,2046 = 50,71 lb, czyli ok. 50 lb. To właśnie dlatego europejskie linie lotnicze często podają limit 23 kg, a amerykańskie 50 lb — to prawie to samo. Różnica wynosi 0,71 lb = ok. 320 gramów."
+        },
+        {
+          "question": "Ile kg to 60 lb?",
+          "answer": "60 lb to 27,22 kg. Obliczenie: 60 × 0,45359 = 27,22. W USA to m.in. standardowa waga worka suchego betonu, dlatego ta wartość często pojawia się przy projektach budowlanych i remontowych."
         }
       ]
     },

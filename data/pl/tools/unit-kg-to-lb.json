@@ -124,8 +124,10 @@
         { "label": "12 kg", "values": ["26,46 lb"] },
         { "label": "15 kg", "values": ["33,07 lb"] },
         { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "23 kg", "values": ["50,71 lb"], "emphasis": true },
         { "label": "25 kg", "values": ["55,12 lb"] },
         { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "32 kg", "values": ["70,55 lb"], "emphasis": true },
         { "label": "35 kg", "values": ["77,16 lb"] },
         { "label": "40 kg", "values": ["88,18 lb"] },
         { "label": "45 kg", "values": ["99,21 lb"] },
@@ -317,7 +319,7 @@
         },
         {
           "title": "Trening i siłownia",
-          "description": "Filmy treningowe i programy z USA podają obciążenia wyłącznie w funtach. Sztanga olimpijska waży 45 lb (ok. 20 kg), typowe hantle 25 lb to nieco ponad 11 kg. Na zawodach powerlifting w USA rekordy podawane są też w funtach — dla przeliczenia wartości sprawdź tabelę ciężarków siłownianych powyżej."
+          "description": "Filmy treningowe i programy z USA podają obciążenia wyłącznie w funtach. Sztanga olimpijska waży 20 kg — Amerykanie nazywają ją sztangą 45-funtową, choć dokładnie to 44,09 lb. Typowe hantle 25 lb to nieco ponad 11 kg. Na zawodach powerliftingowych w USA rekordy również zapisuje się w funtach — gotowe przeliczenia znajdziesz w tabeli ciężarków siłownianych powyżej."
         },
         {
           "title": "Waga niemowlęcia",
@@ -342,6 +344,10 @@
           "answer": "Jeden kilogram to 2,2046 funta (lb). Wynika to z definicji: 1 funt = 0,45359237 kg, zatem 1 kg = 1 ÷ 0,45359237 ≈ 2,2046 lb. Zaokrąglając do jednego miejsca po przecinku: 1 kg ≈ 2,2 lb."
         },
         {
+          "question": "Czy 1 kg to 2 funty?",
+          "answer": "Nie — to popularne, ale zbyt duże uproszczenie. 1 kg to 2,2046 lb. Jeśli liczysz po 2 funty za kilogram, zaniżasz wynik o ok. 9%, a przy 100 kg różnica urasta już do ponad 20 funtów. Do liczenia w pamięci mnóż przez 2,2 zamiast przez 2."
+        },
+        {
           "question": "Jaki jest wzór na przeliczenie kg na funty?",
           "answer": "Wzór to: funty = kilogramy × 2,2046. W drugą stronę: kilogramy = funty × 0,4536. Na przykład 70 kg × 2,2046 = 154,32 lb. Obie wartości (2,2046 i 0,4536) wynikają z definicji funta uchwalonej w 1959 roku."
         },
@@ -354,16 +360,16 @@
           "answer": "80 kg to 176,37 lb, czyli w systemie brytyjskim 12 stone 8,4 lb. To często waga mężczyzny opisywanego jako atletyczny lub o normalnej budowie ciała w krajach anglosaskich."
         },
         {
-          "question": "Ile funtów to 100 kg?",
-          "answer": "100 kg to 220,46 lb. Zaokrąglając: 100 kg to nieco ponad 220 funtów — łatwa do zapamiętania wartość referencyjna. W systemie brytyjskim to 15 stone 10,5 lb."
+          "question": "Ile funtów to 32 kg?",
+          "answer": "32 kg to 70,55 lb. To wartość, którą najczęściej sprawdzają podróżni: 32 kg to maksymalna dopuszczalna waga pojedynczej sztuki bagażu rejestrowanego w większości linii lotniczych (powyżej tej wagi bagaż nie zostanie przyjęty ze względu na bezpieczeństwo obsługi). Amerykańskie linie podają ten sam limit jako 70 lb, czyli 31,75 kg."
         },
         {
           "question": "Ile funtów to 50 kg?",
           "answer": "50 kg to 110,23 lb. Przydatne przybliżenie: 50 kg to trochę więcej niż 110 funtów. W systemie brytyjskim: 7 stone 12,2 lb."
         },
         {
-          "question": "Ile kilogramów ma jeden funt?",
-          "answer": "Jeden funt to dokładnie 0,45359237 kg. Jest to zdefiniowana wartość stała, obowiązująca od 1959 roku jako międzynarodowy funt avoirdupois. Zaokrąglając: 1 lb ≈ 0,454 kg."
+          "question": "Ile funtów to 65 kg?",
+          "answer": "65 kg to 143,30 lb, czyli w systemie brytyjskim 10 stone 3,3 lb. Obliczenie: 65 × 2,2046 = 143,30."
         },
         {
           "question": "Jak szybko przeliczać kg na funty bez kalkulatora?",
@@ -378,28 +384,28 @@
           "answer": "3,5 kg to 7,716 lb. Przeliczając na funty i uncje: 7 funtów i 0,716 × 16 = 11,5 uncji, czyli ok. 7 lb 11 oz. Zdrowy noworodek waży zazwyczaj od 3 do 4 kg, co odpowiada ok. 6,6 do 8,8 lb."
         },
         {
-          "question": "Ile kg to limit bagażu 50 lb?",
-          "answer": "50 lb to 50 × 0,45359237 = 22,68 kg. To standardowy limit wagowy walizki rejestrowanej w wielu liniach lotniczych. Popularny limit 70 lb (np. dla pierwszej klasy) to 31,75 kg."
+          "question": "Ile funtów to 23 kg (limit bagażu)?",
+          "answer": "23 kg to 50,71 lb. To najczęściej spotykany limit bagażu rejestrowanego w europejskich liniach lotniczych. Amerykańskie linie podają ten sam limit jako 50 lb, czyli 22,68 kg — różnica wynosi tylko ok. 320 gramów, dlatego oba limity traktuje się w praktyce jako równoważne."
         },
         {
           "question": "Dlaczego USA używa funtów zamiast kilogramów?",
           "answer": "Stany Zjednoczone używają anglosaskiego systemu miar (imperial/customary), który jest spuścizną brytyjskich kolonii. Funt ma ponad tysiącletnią historię i głęboko zakorzenił się w kulturze i codziennym życiu Amerykanów. Wielka Brytania przeszła na system metryczny w latach 60–70. XX wieku, ale funt pozostał w powszechnym użyciu nieformalnym, szczególnie dla wagi ciała. USA jest jednym z trzech krajów (obok Liberii i Myanmaru), które nie przyjęły systemu metrycznego jako oficjalnego."
         },
         {
-          "question": "Ile funtów to 60 kg?",
-          "answer": "60 kg to 132,28 lb. W systemie brytyjskim to 9 stone 6,3 lb. 60 kg to typowa waga kobiety o przeciętnej budowie ciała w Europie."
+          "question": "Ile funtów to 55 kg?",
+          "answer": "55 kg to 121,25 lb, czyli w systemie brytyjskim 8 stone 9,3 lb. Obliczenie: 55 × 2,2046 = 121,25."
         },
         {
-          "question": "Ile funtów to 90 kg?",
-          "answer": "90 kg to 198,42 lb. Zaokrąglając, 90 kg to prawie dokładnie 200 funtów, co jest łatwą wartością do zapamiętania. W systemie brytyjskim to 14 stone 2,4 lb."
+          "question": "Ile funtów to 85 kg?",
+          "answer": "85 kg to 187,39 lb, czyli w systemie brytyjskim 13 stone 5,4 lb. Obliczenie: 85 × 2,2046 = 187,39."
         },
         {
-          "question": "Ile kg ma 200 funtów?",
-          "answer": "200 lb to 200 × 0,45359 = 90,72 kg. W codziennym użyciu mówi się, że 200 funtów to nieco mniej niż 91 kg."
+          "question": "Ile funtów to 10, 20 i 25 kg?",
+          "answer": "10 kg to 22,05 lb, 20 kg to 44,09 lb, a 25 kg to 55,12 lb. Te trzy wartości pojawiają się najczęściej na siłowni i przy pakowaniu: 10 kg to popularny limit bagażu podręcznego (np. Ryanair czy Wizz Air z priorytetem), 20 kg waży sztanga olimpijska (w USA nazywana potocznie sztangą 45-funtową, choć dokładnie to 44,09 lb), a 25 kg to największa standardowa tarcza olimpijska."
         },
         {
-          "question": "Ile funtów to 45 kg?",
-          "answer": "45 kg to 99,21 lb — prawie dokładnie 100 funtów. Jest to często spotykany zakres wagi hantli w zestawach i użyteczna wartość referencyjna."
+          "question": "Jak przełączyć wagę łazienkową z kilogramów na funty?",
+          "answer": "W większości wag elektronicznych służy do tego mały przycisk lub suwak z oznaczeniem UNIT, LB/KG albo KG-LB-ST, umieszczony na spodzie wagi lub obok wyświetlacza. Każde naciśnięcie zmienia jednostkę cyklicznie. W wagach smart (np. połączonych z aplikacją na telefonie) jednostkę zmienia się w ustawieniach profilu w aplikacji."
         }
       ]
     },

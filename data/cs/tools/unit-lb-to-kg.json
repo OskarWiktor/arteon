@@ -84,7 +84,7 @@
     {
       "type": "sectionBasic",
       "title": "Kdy potřebuješ převádět libry na kilogramy?",
-      "html": "<p class=\"text-mid mb-4\">V Česku a na Slovensku je kilogram standardní jednotkou hmotnosti pro tělesnou váhu, potraviny, zboží i sportovní vybavení. Americké zdravotní a fitness aplikace — jako MyFitnessPal, Apple Health nebo Fitbit — zobrazují ale hmotnost ve výchozím nastavení v librách (lb). Stejně tak populární americké tréninkové programy: olympická osa váží 45 lb (20 kg) a standardní kotouče jsou 45, 35, 25, 10 a 5 lb.</p><p class=\"text-mid mb-4\">Převod liber na kg je potřeba také při čtení limitů zavazadel amerických aerolinek, při vážení na váze kalibrované v librách nebo při interpretaci lékařské dokumentace cizojazyčné nemocnice, kde je porodní váha miminka zapsána v librách a uncích.</p><p class=\"text-mid\">Jedna libra odpovídá přesně 0,45359237 kg. Opačně: 1 kg = 2,2046 liber. Převodník vypočítá výsledek, jakmile začneš psát, a výsledek zkopíruješ jedním kliknutím.</p>",
+      "html": "<p class=\"text-mid mb-4\">V Česku a na Slovensku je kilogram standardní jednotkou hmotnosti pro tělesnou váhu, potraviny, zboží i sportovní vybavení. Americké zdravotní a fitness aplikace — jako MyFitnessPal, Apple Health nebo Fitbit — zobrazují ale hmotnost ve výchozím nastavení v librách (lb). Stejně tak populární americké tréninkové programy: olympijská osa váží 20 kg (v USA se jí říká 45librová osa, i když přesně jde o 44,09 lb) a standardní kotouče jsou 45, 35, 25, 10 a 5 lb.</p><p class=\"text-mid mb-4\">Převod liber na kg je potřeba také při čtení limitů zavazadel amerických aerolinek, při vážení na váze kalibrované v librách nebo při interpretaci lékařské dokumentace cizojazyčné nemocnice, kde je porodní váha miminka zapsána v librách a uncích.</p><p class=\"text-mid\">Jedna libra odpovídá přesně 0,45359237 kg. Opačně: 1 kg = 2,2046 liber. Převodník vypočítá výsledek, jakmile začneš psát, a výsledek zkopíruješ jedním kliknutím.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Bezplatný převodník liber na kilogramy – Arteon"
     },
@@ -116,8 +116,17 @@
         { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
         { "label": "70 lb", "values": ["31,75 kg"] },
         { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "115 lb", "values": ["52,16 kg"] },
         { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "125 lb", "values": ["56,70 kg"] },
+        { "label": "130 lb", "values": ["58,97 kg"] },
+        { "label": "135 lb", "values": ["61,24 kg"] },
+        { "label": "140 lb", "values": ["63,50 kg"], "emphasis": true },
+        { "label": "145 lb", "values": ["65,77 kg"] },
         { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
+        { "label": "160 lb", "values": ["72,57 kg"] },
+        { "label": "165 lb", "values": ["74,84 kg"] },
+        { "label": "170 lb", "values": ["77,11 kg"] },
         { "label": "180 lb", "values": ["81,65 kg"], "emphasis": true },
         { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
         { "label": "220 lb", "values": ["99,79 kg"] },
@@ -200,16 +209,20 @@
           "answer": "Jedna libra odpovídá přesně 0,45359237 kg. Tato hodnota je jako konstanta platná od roku 1959 pod názvem mezinárodní avoirdupoisová libra. Zaokrouhleno: 1 lb ≈ 0,454 kg."
         },
         {
-          "question": "Kolik kg je 100 liber?",
-          "answer": "100 lb je 45,36 kg. Jako praktická pomůcka: 100 liber je o trochu méně než 50 kg."
+          "question": "Kolik kg je 140 liber?",
+          "answer": "140 lb je 63,50 kg. Výpočet: 140 × 0,45359 = 63,50. Je to jedna z nejčastěji převáděných hodnot tělesné hmotnosti v amerických zdravotních kalkulačkách a tréninkových plánech."
         },
         {
           "question": "Kolik kg je 150 liber?",
           "answer": "150 lb je 68,04 kg. Jde o hmotnost typickou pro osobu průměrné postavy v Česku i na Slovensku."
         },
         {
-          "question": "Kolik kg je 200 liber?",
-          "answer": "200 lb je 90,72 kg — tedy přibližně 91 kg, hmotnost odpovídající robustnější nebo atletické postavě."
+          "question": "Kolik kg je 165 liber?",
+          "answer": "165 lb je 74,84 kg. Výpočet: 165 × 0,45359 = 74,84. Zaokrouhleno: 165 liber je necelých 75 kg."
+        },
+        {
+          "question": "Jsou 2 libry 1 kilogram?",
+          "answer": "Ne: 2 libry jsou 0,907 kg, tedy o více než 9 % méně než kilogram. Přesně 1 kg odpovídá 2,2046 lb. Zkratka '2 libry = 1 kg' se hodí pro hrubé odhady, ale u velkých hodnot absolutní chyba rychle roste: 100 lb není 50 kg, nýbrž 45,36 kg."
         },
         {
           "question": "Jaký je vzorec pro převod liber na kg?",
@@ -234,6 +247,14 @@
         {
           "question": "Kolik kg je 180 liber?",
           "answer": "180 lb je 81,65 kg. Jde o hmotnost typickou pro muže průměrné nebo lehce atletické postavy v Česku a na Slovensku."
+        },
+        {
+          "question": "Kolik kg je 60 liber?",
+          "answer": "60 lb je 27,22 kg. Výpočet: 60 × 0,45359 = 27,22. V USA jde mimo jiné o standardní hmotnost pytle suchého betonu, proto se tato hodnota často objevuje u stavebních a kutilských projektů."
+        },
+        {
+          "question": "V jakých jednotkách uvádějí hmotnost Američané a Britové?",
+          "answer": "Američané uvádějí tělesnou hmotnost v librách (lb), Britové hovorově ve stounech a librách (1 stone = 14 lb), například '11 stone 4'. Ve většině ostatních zemí včetně Česka se používají kilogramy. V medicíně převažují kilogramy i v anglosaských zemích, protože dávky mnoha léků se počítají na kilogram tělesné hmotnosti (mg/kg)."
         }
       ]
     },
