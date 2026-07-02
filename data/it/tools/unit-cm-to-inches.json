@@ -124,8 +124,17 @@
         { "label": "9 cm", "values": ["3,54 in"] },
         { "label": "10 cm", "values": ["3,94 in"], "emphasis": true },
         { "label": "12 cm", "values": ["4,72 in"] },
-        { "label": "15 cm", "values": ["5,91 in"] },
+        { "label": "13 cm", "values": ["5,12 in"] },
+        { "label": "14 cm", "values": ["5,51 in"] },
+        { "label": "15 cm", "values": ["5,91 in"], "emphasis": true },
+        { "label": "16 cm", "values": ["6,30 in"] },
+        { "label": "17 cm", "values": ["6,69 in"] },
+        { "label": "18 cm", "values": ["7,09 in"] },
         { "label": "20 cm", "values": ["7,87 in"], "emphasis": true },
+        { "label": "21 cm", "values": ["8,27 in"] },
+        { "label": "22 cm", "values": ["8,66 in"] },
+        { "label": "23 cm", "values": ["9,06 in"] },
+        { "label": "24 cm", "values": ["9,45 in"] },
         { "label": "25 cm", "values": ["9,84 in"] },
         { "label": "30 cm", "values": ["11,81 in"] },
         { "label": "35 cm", "values": ["13,78 in"] },
@@ -239,10 +248,13 @@
         { "label": "15 in", "values": ["38,10 cm"] },
         { "label": "18 in", "values": ["45,72 cm"] },
         { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "21 in", "values": ["53,34 cm"] },
+        { "label": "23 in", "values": ["58,42 cm"] },
         { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76,20 cm"] },
         { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "45 in", "values": ["114,30 cm"] },
         { "label": "48 in", "values": ["121,92 cm"] },
         { "label": "54 in", "values": ["137,16 cm"] },
         { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
@@ -299,7 +311,7 @@
         },
         {
           "title": "Misure del bagaglio",
-          "description": "Molte compagnie aeree, soprattutto americane e alcune low cost, esprimono le dimensioni consentite del bagaglio in pollici. Il comune limite lineare di 158 pollici (somma di altezza, larghezza e profondità) equivale a 401,32 cm. Un trolley cabina standard con le dimensioni 55 × 40 × 20 cm ha una somma delle dimensioni di 115 cm, corrispondente a circa 45,3 pollici lineari."
+          "description": "Molte compagnie aeree, soprattutto americane e alcune low cost, esprimono le dimensioni consentite del bagaglio in pollici. Il comune limite per il bagaglio da stiva è di 62 pollici lineari (somma di altezza, larghezza e profondità), esattamente 157,48 cm — per questo le compagnie europee lo indicano come 158 cm. Un trolley cabina standard con le dimensioni 55 × 40 × 20 cm ha una somma delle dimensioni di 115 cm, corrispondente a circa 45,3 pollici lineari."
         }
       ]
     },
@@ -324,16 +336,16 @@
           "answer": "170 cm sono 66,93 pollici, che in piedi e pollici equivalgono a 5 ft 7 in. Calcolo: 170 ÷ 2,54 = 66,93 in; 66,93 ÷ 12 = 5 piedi con un resto di 6,93 pollici, arrotondato a 7."
         },
         {
-          "question": "Quanti pollici sono 160 cm?",
-          "answer": "160 cm sono 62,99 pollici, ovvero in piedi e pollici: 5 ft 3 in. Calcolo: 160 ÷ 2,54 = 62,99; 62 ÷ 12 = 5 piedi con un resto di 2,99 pollici, arrotondato a 3."
+          "question": "Quanti pollici sono 15 cm?",
+          "answer": "15 cm sono 5,91 pollici. Calcolo: 15 ÷ 2,54 = 5,91 in. Per farsi un'idea: è più o meno il lato lungo di uno smartphone o metà di un righello da 30 cm."
         },
         {
-          "question": "Quanti pollici sono 180 cm?",
-          "answer": "180 cm sono 70,87 pollici, che in piedi e pollici equivalgono a 5 ft 11 in. Questa altezza è spesso considerata nei paesi anglofoni come il confine tra statura media e alta."
+          "question": "Quanti pollici sono 20 cm?",
+          "answer": "20 cm sono 7,87 pollici. Calcolo: 20 ÷ 2,54 = 7,87 in. Arrotondando: 20 cm sono poco meno di 8 pollici."
         },
         {
-          "question": "Quanti pollici sono 100 cm?",
-          "answer": "100 cm sono 39,37 pollici, un valore di riferimento facile da ricordare: un metro equivale a circa 39 pollici e mezzo. Calcolo: 100 ÷ 2,54 = 39,37 in."
+          "question": "Quanti pollici sono 40 cm?",
+          "answer": "40 cm sono 15,75 pollici. Calcolo: 40 ÷ 2,54 = 15,75 in. È, tra l'altro, la larghezza tipica di un trolley da cabina (55 × 40 × 20 cm)."
         },
         {
           "question": "Quanti centimetri ha un pollice?",
@@ -356,8 +368,12 @@
           "answer": "Un righello scolastico da 30 cm misura 11,81 pollici. Arrotondando, 30 cm equivalgono quasi esattamente a 12 pollici, cioè un piede. Nel sistema imperiale 12 pollici = 1 piede = 30,48 cm, quindi la differenza è solo di 0,48 cm."
         },
         {
-          "question": "La formula di conversione è la stessa in Italia e negli Stati Uniti?",
-          "answer": "Sì, la formula è identica in tutto il mondo: 1 pollice = 2,54 cm. Dal 1959, il pollice internazionale ha unificato la definizione in USA, Regno Unito e in tutti gli altri paesi. In precedenza esistevano differenze minime tra il pollice britannico e altri, ma oggi tutti i calcolatori usano il valore 2,54."
+          "question": "Quanti pollici sono 25 cm?",
+          "answer": "25 cm sono 9,84 pollici. Calcolo: 25 ÷ 2,54 = 9,84 in. Arrotondando: 25 cm sono poco meno di 10 pollici."
+        },
+        {
+          "question": "Quanti pollici sono 17 e 18 cm?",
+          "answer": "17 cm sono 6,69 pollici e 18 cm sono 7,09 pollici. Calcoli: 17 ÷ 2,54 = 6,69 e 18 ÷ 2,54 = 7,09. I valori di questa fascia si consultano spesso per tablet, libri e dimensioni delle confezioni."
         },
         {
           "question": "Come convertire le taglie di abbigliamento da pollici in cm?",

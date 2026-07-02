@@ -49,7 +49,7 @@
         "Conversion works both ways, so you can convert inches to centimeters and centimeters to inches",
         "Result appears instantly as you type, no button click needed",
         "Copy the result to clipboard with a single click",
-        "Conversion table covers values from 0.5 to 72 inches",
+        "Conversion table covers values from 0.5 to 90 inches",
         "Screen size table covers the most popular TV and monitor sizes from 24 to 85 inches",
         "Height table shows feet-and-inches values from 4 ft 11 in to 6 ft 7 in converted to centimeters",
         "Reverse table shows how many inches each centimeter value equals, from 0.5 cm to 200 cm",
@@ -126,14 +126,18 @@
         { "label": "15 in", "values": ["38.10 cm"] },
         { "label": "18 in", "values": ["45.72 cm"] },
         { "label": "20 in", "values": ["50.80 cm"] },
+        { "label": "21 in", "values": ["53.34 cm"] },
+        { "label": "23 in", "values": ["58.42 cm"] },
         { "label": "24 in", "values": ["60.96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76.20 cm"] },
         { "label": "36 in", "values": ["91.44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106.68 cm"] },
+        { "label": "45 in", "values": ["114.30 cm"] },
         { "label": "48 in", "values": ["121.92 cm"] },
         { "label": "54 in", "values": ["137.16 cm"] },
         { "label": "60 in", "values": ["152.40 cm"], "emphasis": true },
-        { "label": "72 in", "values": ["182.88 cm"], "emphasis": true }
+        { "label": "72 in", "values": ["182.88 cm"], "emphasis": true },
+        { "label": "90 in", "values": ["228.60 cm"] }
       ],
       "caption": "Need to convert the other way? Use our <a href=\"/en/tools/cm-to-inches-converter\">cm to inches converter</a>, which has its own table and content dedicated to that direction."
     },
@@ -269,20 +273,20 @@
           "answer": "The formula is: centimeters = inches × 2.54. For example, 10 inches × 2.54 = 25.40 cm. The reverse is: inches = centimeters ÷ 2.54."
         },
         {
-          "question": "How many cm is 5 inches?",
-          "answer": "5 inches is 5 × 2.54 = 12.70 cm. This is a common reference value — for example, a 5-inch smartphone screen has a 12.7 cm diagonal."
+          "question": "How many cm is 15 inches?",
+          "answer": "15 inches is 15 × 2.54 = 38.10 cm. This value is checked most often for laptops: the popular 15.6-inch diagonal equals 39.6 cm."
         },
         {
           "question": "How many cm is 6 inches?",
           "answer": "6 inches is 6 × 2.54 = 15.24 cm, which is exactly half a foot. This is a typical screen size for large smartphones."
         },
         {
-          "question": "How many cm is 12 inches?",
-          "answer": "12 inches is 30.48 cm, which is exactly one foot. This is a key reference: 1 foot = 12 inches = 30.48 cm."
+          "question": "How many cm is 21 inches?",
+          "answer": "21 inches is 21 × 2.54 = 53.34 cm. Values in this range come up for monitors and cabin suitcases described as 21-inch."
         },
         {
-          "question": "How many cm is a 55-inch TV?",
-          "answer": "A 55-inch TV has a screen diagonal of 55 × 2.54 = 139.70 cm. The width of a 16:9 screen at 55 inches is about 122 cm, and the height is about 69 cm. Manufacturers sometimes list the outer dimensions with bezel, which are slightly larger."
+          "question": "How many cm is 10 inches?",
+          "answer": "10 inches is 10 × 2.54 = 25.40 cm. It is an easy reference value to remember (one inch times ten) and also a typical tablet screen diagonal."
         },
         {
           "question": "How many cm is a 65-inch TV?",
@@ -293,8 +297,12 @@
           "answer": "5 feet 7 inches converts to inches first: 5 × 12 + 7 = 67 inches. Then 67 × 2.54 = 170.18 cm. So 5 ft 7 in is approximately 170 cm."
         },
         {
-          "question": "How many cm is 6 ft 0 in?",
-          "answer": "6 feet 0 inches is 6 × 12 = 72 inches, and 72 × 2.54 = 182.88 cm. A height of exactly 6 ft is approximately 183 cm."
+          "question": "How many cm is 5 ft 10 in?",
+          "answer": "5 feet 10 inches is 5 × 12 + 10 = 70 inches, and 70 × 2.54 = 177.80 cm. So a height of 5 ft 10 in is just under 178 cm."
+        },
+        {
+          "question": "How many cm is 3 inches?",
+          "answer": "3 inches is 3 × 2.54 = 7.62 cm. The reverse check: 7.62 ÷ 2.54 = 3, so the result is easy to verify."
         },
         {
           "question": "How do I convert inches to cm without a calculator?",

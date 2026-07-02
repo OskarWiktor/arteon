@@ -44,7 +44,7 @@
       ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Convertidor gratuito de kilogramos a libras que funciona en el navegador sin registro. Escribe un valor en kg y obtén el resultado en libras al instante. Útil para comprobar el peso corporal, comparar con tablas deportivas anglosajones, calcular límites de equipaje o leer el peso de nacimiento de un bebé en unidades imperiales.",
+      "description": "Convertidor gratuito de kilogramos a libras que funciona en el navegador sin registro. Escribe un valor en kg y obtén el resultado en libras al instante. Útil para comprobar el peso corporal, comparar con tablas deportivas anglosajonas, calcular límites de equipaje o leer el peso de nacimiento de un bebé en unidades imperiales.",
       "featureList": [
         "La conversión funciona en ambas direcciones: puedes convertir tanto kilogramos a libras como libras a kilogramos",
         "El resultado aparece al instante mientras escribes, sin necesidad de pulsar ningún botón",
@@ -97,7 +97,7 @@
     {
       "type": "sectionInfo",
       "title": "¿Cómo funciona la conversión de kg a libras? Fórmula y ejemplo",
-      "html": "<p class=\"text-mid mb-4\">La conversión de kilogramos a libras se basa en una definición fija: una libra equivale exactamente a 0,45359237 kg. Para obtener libras, multiplica los kilogramos por 2,2046.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>libras = kilogramos × 2,2046</strong>. Al revés: <strong>kilogramos = libras × 0,4536</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: quieres saber cuántas libras pesa una persona de 70 kg. Cálculo: 70 × 2,2046 = 154,32 lb. En el sistema británico son 11 stone 0,3 lb, porque un stone = 14 libras: 154,32 ÷ 14 = 11 stone con un resto de 0,32 lb.</p><p class=\"text-mid\">Estimación rápida sin calculadora: 1 kg ≈ 2,2 lb — multiplica los kilogramos por 2 y añade una quinta parte del resultado. Por ejemplo: 80 kg × 2 = 160, más 16 (20 % de 80) = 176 lb. El valor exacto es 176,37 lb — un error de solo el 0,2 %.</p>"
+      "html": "<p class=\"text-mid mb-4\">La conversión de kilogramos a libras se basa en una definición fija: una libra equivale exactamente a 0,45359237 kg. Para obtener libras, multiplica los kilogramos por 2,2046.</p><p class=\"text-mid mb-4\">Fórmula completa: <strong>libras = kilogramos × 2,2046</strong>. Al revés: <strong>kilogramos = libras × 0,4536</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: quieres saber cuántas libras pesa una persona de 70 kg. Cálculo: 70 × 2,2046 = 154,32 lb. En el sistema británico son 11 stone 0,3 lb, porque un stone = 14 libras: 154,32 ÷ 14 = 11 stone con un resto de 0,32 lb.</p><p class=\"text-mid\">Estimación rápida sin calculadora: 1 kg ≈ 2,2 lb — multiplica los kilogramos por 2 y añade una quinta parte del valor original. Por ejemplo: 80 kg × 2 = 160, más 16 (20 % de 80) = 176 lb. El valor exacto es 176,37 lb — un error de solo el 0,2 %.</p>"
     },
     {
       "type": "gap",

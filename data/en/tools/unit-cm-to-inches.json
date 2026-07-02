@@ -124,8 +124,17 @@
         { "label": "9 cm", "values": ["3.54 in"] },
         { "label": "10 cm", "values": ["3.94 in"], "emphasis": true },
         { "label": "12 cm", "values": ["4.72 in"] },
-        { "label": "15 cm", "values": ["5.91 in"] },
+        { "label": "13 cm", "values": ["5.12 in"] },
+        { "label": "14 cm", "values": ["5.51 in"] },
+        { "label": "15 cm", "values": ["5.91 in"], "emphasis": true },
+        { "label": "16 cm", "values": ["6.30 in"] },
+        { "label": "17 cm", "values": ["6.69 in"] },
+        { "label": "18 cm", "values": ["7.09 in"] },
         { "label": "20 cm", "values": ["7.87 in"], "emphasis": true },
+        { "label": "21 cm", "values": ["8.27 in"] },
+        { "label": "22 cm", "values": ["8.66 in"] },
+        { "label": "23 cm", "values": ["9.06 in"] },
+        { "label": "24 cm", "values": ["9.45 in"] },
         { "label": "25 cm", "values": ["9.84 in"] },
         { "label": "30 cm", "values": ["11.81 in"] },
         { "label": "35 cm", "values": ["13.78 in"] },
@@ -239,10 +248,13 @@
         { "label": "15 in", "values": ["38.10 cm"] },
         { "label": "18 in", "values": ["45.72 cm"] },
         { "label": "20 in", "values": ["50.80 cm"] },
+        { "label": "21 in", "values": ["53.34 cm"] },
+        { "label": "23 in", "values": ["58.42 cm"] },
         { "label": "24 in", "values": ["60.96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76.20 cm"] },
         { "label": "36 in", "values": ["91.44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106.68 cm"] },
+        { "label": "45 in", "values": ["114.30 cm"] },
         { "label": "48 in", "values": ["121.92 cm"] },
         { "label": "54 in", "values": ["137.16 cm"] },
         { "label": "60 in", "values": ["152.40 cm"], "emphasis": true },
@@ -299,7 +311,7 @@
         },
         {
           "title": "Luggage dimensions",
-          "description": "Many airlines, particularly US carriers, list carry-on and checked luggage limits in inches. The common 158-inch linear limit (height + width + depth combined) equals 401.32 cm. A standard carry-on measuring 55 × 40 × 20 cm has a linear sum of 115 cm, which is about 45.3 linear inches."
+          "description": "Many airlines, particularly US carriers, list carry-on and checked luggage limits in inches. The common checked baggage limit is 62 linear inches (height + width + depth combined), which is exactly 157.48 cm — that is why European airlines state it as 158 cm. A standard carry-on measuring 55 × 40 × 20 cm has a linear sum of 115 cm, which is about 45.3 linear inches."
         }
       ]
     },
@@ -324,16 +336,16 @@
           "answer": "170 cm is 66.93 inches, which in feet and inches is 5 ft 7 in. Calculation: 170 ÷ 2.54 = 66.93 in; 66.93 ÷ 12 = 5 feet with 6.93 inches remaining, rounded to 7."
         },
         {
-          "question": "How many inches is 160 cm?",
-          "answer": "160 cm is 62.99 inches, or 5 ft 3 in in feet and inches. Calculation: 160 ÷ 2.54 = 62.99; 62 ÷ 12 = 5 feet with 2.99 inches remaining, rounded to 3."
+          "question": "How many inches is 15 cm?",
+          "answer": "15 cm is 5.91 inches. Calculation: 15 ÷ 2.54 = 5.91 in. For a quick comparison: that is roughly the longer side of a smartphone or half of a standard 12-inch ruler."
         },
         {
-          "question": "How many inches is 180 cm?",
-          "answer": "180 cm is 70.87 inches, or 5 ft 11 in. This height is often considered the boundary between average and tall in the US and UK."
+          "question": "How many inches is 20 cm?",
+          "answer": "20 cm is 7.87 inches. Calculation: 20 ÷ 2.54 = 7.87 in. Rounded: 20 cm is just under 8 inches."
         },
         {
-          "question": "How many inches is 100 cm?",
-          "answer": "100 cm is 39.37 inches — a useful reference value: one meter is roughly 39 and a half inches. Calculation: 100 ÷ 2.54 = 39.37 in."
+          "question": "How many inches is 40 cm?",
+          "answer": "40 cm is 15.75 inches. Calculation: 40 ÷ 2.54 = 15.75 in. Among other things, that is the typical width of a cabin suitcase (55 × 40 × 20 cm)."
         },
         {
           "question": "How many centimeters is one inch?",
@@ -356,12 +368,16 @@
           "answer": "A 30 cm ruler is 11.81 inches. Rounded up, 30 cm is almost exactly 12 inches — one foot. In the imperial system, 12 inches = 1 foot = 30.48 cm, so the difference is just 0.48 cm."
         },
         {
-          "question": "Is the conversion formula the same worldwide?",
-          "answer": "Yes, the formula is identical everywhere: 1 inch = 2.54 cm. Since 1959, the international inch has unified the definition in the US, UK, and all other countries. Before that, minor differences existed between the British and US inch, but today all calculators and conversion tables use the same value of 2.54."
+          "question": "How many inches is 25 cm?",
+          "answer": "25 cm is 9.84 inches. Calculation: 25 ÷ 2.54 = 9.84 in. Rounded: 25 cm is just under 10 inches."
+        },
+        {
+          "question": "How many inches is 17 and 18 cm?",
+          "answer": "17 cm is 6.69 inches and 18 cm is 7.09 inches. Calculations: 17 ÷ 2.54 = 6.69 and 18 ÷ 2.54 = 7.09. Values in this range come up often for tablets, books, and packaging dimensions."
         },
         {
           "question": "How do I convert clothing sizes from centimeters to inches?",
-          "answer": "Most European stores list chest, waist, and hip measurements in centimeters. To convert, multiply by 2.54: a bra size listed as 80 cm = 31.5 inches, 90 cm = 35.4 inches, 100 cm = 39.4 inches. Always check the specific brand's size chart, since sizing standards vary between manufacturers."
+          "answer": "Most European stores list chest, waist, and hip measurements in centimeters. To convert, divide by 2.54: a bra size listed as 80 cm = 31.5 inches, 90 cm = 35.4 inches, 100 cm = 39.4 inches. Always check the specific brand's size chart, since sizing standards vary between manufacturers."
         },
         {
           "question": "What are the dimensions of a 55 × 40 × 20 cm carry-on in inches?",

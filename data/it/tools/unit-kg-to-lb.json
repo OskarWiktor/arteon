@@ -220,7 +220,7 @@
     {
       "type": "sectionTable",
       "title": "Pesi in palestra – carichi abituali in kg e lb",
-      "description": "Le attrezzature fitness prodotte negli USA sono etichettate in libbre. La tabella converte i carichi standard, dagli alteri al bilanciere olimpico.",
+      "description": "Le attrezzature fitness prodotte negli USA sono etichettate in libbre. La tabella converte i carichi standard, dai manubri al bilanciere olimpico.",
       "labelHeader": "Peso (kg)",
       "cols": ["Peso (lb)"],
       "rows": [

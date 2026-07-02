@@ -78,7 +78,10 @@
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir des pixels en centimètres ?",
@@ -86,13 +89,19 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Convertisseur gratuit de pixels en centimètres – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionInfo",
       "title": "Comment fonctionne la conversion px en cm ? Formule et exemple",
       "html": "<p class=\"text-mid mb-4\">Toute la conversion se résume à une seule formule qui repose sur la relation fixe entre le pouce et le centimètre : un pouce équivaut exactement à 2,54 cm. Il suffit donc de multiplier le nombre de pixels par 2,54 et de le diviser par la résolution DPI choisie.</p><p class=\"text-mid mb-4\">La formule complète se présente ainsi : <strong>nombre de centimètres = nombre de pixels × 2,54 ÷ DPI</strong>. Le convertisseur effectue ce calcul instantanément, vous n'avez donc ni à compter ni à chercher une calculatrice.</p><p class=\"text-mid mb-4\">Exemple : vous voulez vérifier combien de centimètres font 1 920 pixels sur un écran standard à 96 DPI. Vous remplacez les valeurs dans la formule et obtenez 1 920 × 2,54 ÷ 96, ce qui donne exactement 50,80 cm. Les mêmes 1 920 pixels à 300 DPI utilisés en impression ne font plus que 16,26 cm, car davantage de pixels tiennent sur un pouce.</p><p class=\"text-mid\">Dans l'autre sens, cela fonctionne de manière analogue : nombre de pixels = nombre de centimètres × DPI ÷ 2,54. Vous pouvez ainsi vérifier combien de pixels doit avoir une image que vous voulez imprimer dans une taille précise, par exemple au format carte de visite ou photo 10 × 15 cm.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Combien de centimètres font différentes valeurs de pixels selon le DPI ?",
@@ -191,7 +200,7 @@
         },
         {
           "label": "1 181 px",
-          "values": ["41,66 cm", "31,24 cm", "20,00 cm", "10,00 cm", "5,00 cm"]
+          "values": ["41,66 cm", "31,25 cm", "20,00 cm", "10,00 cm", "5,00 cm"]
         },
         {
           "label": "1 200 px",
@@ -222,9 +231,9 @@
         {
           "label": "2 480 px",
           "values": [
-            "87,47 cm",
+            "87,49 cm",
             "65,62 cm",
-            "42,00 cm",
+            "41,99 cm",
             "21,00 cm (A4)",
             "10,50 cm"
           ],
@@ -243,7 +252,7 @@
         {
           "label": "3 508 px",
           "values": [
-            "123,73 cm",
+            "123,75 cm",
             "92,82 cm",
             "59,40 cm",
             "29,70 cm (A4)",
@@ -294,7 +303,10 @@
       ],
       "caption": "Toutes les valeurs ont été arrondies à deux décimales selon la formule cm = px × 2,54 ÷ DPI."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Combien de centimètres font les résolutions d'écran et les visuels pour les réseaux sociaux les plus courants ?",
@@ -302,7 +314,9 @@
       "labelHeader": "Format",
       "cols": ["Résolution (px)", "Taille @ 96 DPI", "Taille @ 300 DPI"],
       "rows": [
-        { "groupLabel": "Résolutions d'écran" },
+        {
+          "groupLabel": "Résolutions d'écran"
+        },
         {
           "label": "HD 720p",
           "values": ["1 280 × 720", "33,87 × 19,05 cm", "10,84 × 6,10 cm"]
@@ -333,11 +347,17 @@
           "label": "Smartphone (portrait)",
           "values": ["1 080 × 1 920", "28,58 × 50,80 cm", "9,14 × 16,26 cm"]
         },
-        { "groupLabel": "Visuels pour les réseaux sociaux" },
+        {
+          "groupLabel": "Visuels pour les réseaux sociaux"
+        },
         {
           "label": "Instagram (carré)",
           "values": ["1 080 × 1 080", "28,58 × 28,58 cm", "9,14 × 9,14 cm"],
           "emphasis": true
+        },
+        {
+          "label": "Instagram (publication verticale 4:5)",
+          "values": ["1 080 × 1 350", "28,58 × 35,72 cm", "9,14 × 11,43 cm"]
         },
         {
           "label": "Instagram story / Reel",
@@ -362,7 +382,10 @@
       ],
       "caption": "Un écran Full HD complet sur un moniteur de 24 pouces mesure physiquement un peu moins de 50,80 cm de large, car les fabricants utilisent des densités de pixels différentes : la valeur du tableau est la largeur théorique au standard de 96 DPI."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Combien de pixels font les dimensions en centimètres les plus courantes ?",
@@ -370,20 +393,32 @@
       "labelHeader": "Dimension",
       "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
       "rows": [
-        { "label": "0,5 cm", "values": ["14 px", "19 px", "30 px", "59 px"] },
+        {
+          "label": "0,5 cm",
+          "values": ["14 px", "19 px", "30 px", "59 px"]
+        },
         {
           "label": "1 cm",
           "values": ["28 px", "38 px", "59 px", "118 px"],
           "emphasis": true
         },
-        { "label": "2 cm", "values": ["57 px", "76 px", "118 px", "236 px"] },
-        { "label": "3 cm", "values": ["85 px", "113 px", "177 px", "354 px"] },
+        {
+          "label": "2 cm",
+          "values": ["57 px", "76 px", "118 px", "236 px"]
+        },
+        {
+          "label": "3 cm",
+          "values": ["85 px", "113 px", "177 px", "354 px"]
+        },
         {
           "label": "5 cm",
           "values": ["142 px", "189 px", "295 px", "591 px"],
           "emphasis": true
         },
-        { "label": "7 cm", "values": ["198 px", "264 px", "413 px", "827 px"] },
+        {
+          "label": "7 cm",
+          "values": ["198 px", "265 px", "413 px", "827 px"]
+        },
         {
           "label": "10 cm",
           "values": ["283 px", "378 px", "591 px", "1 181 px"],
@@ -414,7 +449,10 @@
       ],
       "caption": "Si vous utilisez plus souvent la conversion dans ce sens, nous avons pour vous un calculateur cm en px dédié avec une plage de valeurs encore plus large."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Les formats physiques les plus courants et leurs dimensions en pixels",
@@ -426,7 +464,9 @@
         "Larg. × haut. (300 DPI)"
       ],
       "rows": [
-        { "groupLabel": "Papier série ISO A" },
+        {
+          "groupLabel": "Papier série ISO A"
+        },
         {
           "label": "A0",
           "values": ["84,1 × 118,9", "4 967 × 7 022", "9 933 × 14 043"]
@@ -456,8 +496,13 @@
           "label": "A6",
           "values": ["10,5 × 14,8", "620 × 874", "1 240 × 1 748"]
         },
-        { "label": "A7", "values": ["7,4 × 10,5", "437 × 620", "874 × 1 240"] },
-        { "groupLabel": "Photos et tirages" },
+        {
+          "label": "A7",
+          "values": ["7,4 × 10,5", "437 × 620", "874 × 1 240"]
+        },
+        {
+          "groupLabel": "Photos et tirages"
+        },
         {
           "label": "Photo 9 × 13",
           "values": ["9 × 13", "531 × 768", "1 063 × 1 535"]
@@ -479,7 +524,9 @@
           "label": "Photo 20 × 30",
           "values": ["20 × 30", "1 181 × 1 772", "2 362 × 3 543"]
         },
-        { "groupLabel": "Documents et cartes de visite" },
+        {
+          "groupLabel": "Documents et cartes de visite"
+        },
         {
           "label": "Photo d'identité (FR, 35 × 45 mm)",
           "values": ["3,5 × 4,5", "207 × 266", "413 × 531"],
@@ -497,7 +544,10 @@
       ],
       "caption": "Ces valeurs sont le miroir du tableau de notre convertisseur cm en px : vous pouvez toujours passer d'un sens à l'autre en connaissant uniquement le nombre de pixels et le DPI cible."
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Comment passer des pixels aux centimètres dans les logiciels les plus courants ?",
@@ -541,7 +591,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Quand vaut-il la peine d'utiliser ce convertisseur ?",
@@ -569,7 +622,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionTable",
       "title": "Comparaison des unités pixel et centimètre",
@@ -598,7 +654,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Questions fréquentes sur la conversion de px en cm",
@@ -678,7 +737,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Aidez-nous à améliorer ce convertisseur",
@@ -687,11 +749,17 @@
       "imageAlt": "Convertisseur px en cm – Arteon",
       "defaultSubject": "Retour : convertisseur px en cm"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "toolsCarousel",
       "title": "Autres outils qui pourraient vous être utiles"
     },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

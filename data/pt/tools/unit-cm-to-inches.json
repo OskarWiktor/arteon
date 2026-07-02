@@ -124,8 +124,17 @@
         { "label": "9 cm", "values": ["3,54 in"] },
         { "label": "10 cm", "values": ["3,94 in"], "emphasis": true },
         { "label": "12 cm", "values": ["4,72 in"] },
-        { "label": "15 cm", "values": ["5,91 in"] },
+        { "label": "13 cm", "values": ["5,12 in"] },
+        { "label": "14 cm", "values": ["5,51 in"] },
+        { "label": "15 cm", "values": ["5,91 in"], "emphasis": true },
+        { "label": "16 cm", "values": ["6,30 in"] },
+        { "label": "17 cm", "values": ["6,69 in"] },
+        { "label": "18 cm", "values": ["7,09 in"] },
         { "label": "20 cm", "values": ["7,87 in"], "emphasis": true },
+        { "label": "21 cm", "values": ["8,27 in"] },
+        { "label": "22 cm", "values": ["8,66 in"] },
+        { "label": "23 cm", "values": ["9,06 in"] },
+        { "label": "24 cm", "values": ["9,45 in"] },
         { "label": "25 cm", "values": ["9,84 in"] },
         { "label": "30 cm", "values": ["11,81 in"] },
         { "label": "35 cm", "values": ["13,78 in"] },
@@ -239,10 +248,13 @@
         { "label": "15 in", "values": ["38,10 cm"] },
         { "label": "18 in", "values": ["45,72 cm"] },
         { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "21 in", "values": ["53,34 cm"] },
+        { "label": "23 in", "values": ["58,42 cm"] },
         { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76,20 cm"] },
         { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "45 in", "values": ["114,30 cm"] },
         { "label": "48 in", "values": ["121,92 cm"] },
         { "label": "54 in", "values": ["137,16 cm"] },
         { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
@@ -299,7 +311,7 @@
         },
         {
           "title": "Medidas de bagagem",
-          "description": "Muitas companhias aéreas, especialmente as americanas e algumas de baixo custo, expressam as dimensões permitidas da bagagem em polegadas. O limite linear habitual de 158 polegadas (soma da altura, largura e profundidade) equivale a 401,32 cm. Uma mala de cabine padrão com as dimensões 55 × 40 × 20 cm tem uma soma de dimensões de 115 cm, que corresponde a cerca de 45,3 polegadas lineares."
+          "description": "Muitas companhias aéreas, especialmente as americanas e algumas de baixo custo, expressam as dimensões permitidas da bagagem em polegadas. O limite habitual de bagagem despachada é de 62 polegadas lineares (soma da altura, largura e profundidade), exatamente 157,48 cm — por isso as companhias europeias o indicam como 158 cm. Uma mala de cabine padrão com as dimensões 55 × 40 × 20 cm tem uma soma de dimensões de 115 cm, que corresponde a cerca de 45,3 polegadas lineares."
         }
       ]
     },
@@ -324,16 +336,16 @@
           "answer": "170 cm são 66,93 polegadas, que em pés e polegadas equivale a 5 ft 7 in. Cálculo: 170 ÷ 2,54 = 66,93 in; 66,93 ÷ 12 = 5 pés com um resto de 6,93 polegadas, arredondado para 7."
         },
         {
-          "question": "Quantas polegadas são 160 cm?",
-          "answer": "160 cm são 62,99 polegadas, ou seja em pés e polegadas: 5 ft 3 in. Cálculo: 160 ÷ 2,54 = 62,99; 62 ÷ 12 = 5 pés com um resto de 2,99 polegadas, arredondado para 3."
+          "question": "Quantas polegadas são 15 cm?",
+          "answer": "15 cm são 5,91 polegadas. Cálculo: 15 ÷ 2,54 = 5,91 in. Para comparar: é mais ou menos o lado maior de um smartphone ou metade de uma régua de 30 cm."
         },
         {
-          "question": "Quantas polegadas são 180 cm?",
-          "answer": "180 cm são 70,87 polegadas, que em pés e polegadas equivale a 5 ft 11 in. Esta altura é frequentemente considerada nos países anglófonos como o limite entre a estatura média e a alta."
+          "question": "Quantas polegadas são 20 cm?",
+          "answer": "20 cm são 7,87 polegadas. Cálculo: 20 ÷ 2,54 = 7,87 in. Arredondando: 20 cm são pouco menos de 8 polegadas."
         },
         {
-          "question": "Quantas polegadas são 100 cm?",
-          "answer": "100 cm são 39,37 polegadas. É um valor de referência fácil de memorizar: um metro equivale a pouco mais de 39 polegadas e meia. Cálculo: 100 ÷ 2,54 = 39,37 in."
+          "question": "Quantas polegadas são 40 cm?",
+          "answer": "40 cm são 15,75 polegadas. Cálculo: 40 ÷ 2,54 = 15,75 in. É, entre outras coisas, a largura típica de uma mala de cabine (55 × 40 × 20 cm)."
         },
         {
           "question": "Quantos centímetros tem uma polegada?",
@@ -356,8 +368,12 @@
           "answer": "Uma régua escolar de 30 cm tem 11,81 polegadas. Arredondando, 30 cm equivalem quase exatamente a 12 polegadas, ou seja um pé. No sistema imperial, 12 polegadas = 1 pé = 30,48 cm, pelo que a diferença é apenas de 0,48 cm."
         },
         {
-          "question": "A fórmula de conversão é a mesma em Portugal e nos Estados Unidos?",
-          "answer": "Sim, a fórmula é idêntica em todo o mundo: 1 polegada = 2,54 cm. Desde 1959, a polegada internacional unificou a definição nos EUA, no Reino Unido e em todos os outros países. Anteriormente existiam diferenças mínimas entre a polegada britânica e outras variantes, mas hoje todos os calculadores utilizam o valor 2,54."
+          "question": "Quantas polegadas são 25 cm?",
+          "answer": "25 cm são 9,84 polegadas. Cálculo: 25 ÷ 2,54 = 9,84 in. Arredondando: 25 cm são pouco menos de 10 polegadas."
+        },
+        {
+          "question": "Quantas polegadas são 17 e 18 cm?",
+          "answer": "17 cm são 6,69 polegadas e 18 cm são 7,09 polegadas. Cálculos: 17 ÷ 2,54 = 6,69 e 18 ÷ 2,54 = 7,09. Os valores desta faixa são consultados sobretudo para tablets, livros e dimensões de embalagens."
         },
         {
           "question": "Como converter tamanhos de roupa de polegadas para cm?",

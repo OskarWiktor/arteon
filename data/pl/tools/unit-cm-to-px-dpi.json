@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Przelicz centymetry na piksele z dowolnym DPI",
-    "description": "Wpisz wartość w centymetrach, ustaw rozdzielczość DPI i odczytaj wynik w pikselach. Sprawdź ile pikseli odpowiada danej wartości w centymetrach. Konwerter pomoże Ci dobrać właściwe wymiary, gdy projektujesz grafikę do druku, na ekran albo do mediów społecznościowych.",
+    "description": "Wpisz wartość w centymetrach, ustaw rozdzielczość DPI i odczytaj wynik w pikselach. Sprawdź, ile pikseli odpowiada danej wartości w centymetrach. Konwerter pomoże Ci dobrać właściwe wymiary, gdy projektujesz grafikę do druku, na ekran albo do mediów społecznościowych.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -44,7 +44,7 @@
       ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicznik centymetrów na piksele z regulowaną wartością DPI. Po wpisaniu wymiaru od razu zobaczysz dokładnie ile pikseli odpowiada danej wartości w centymetrach. Konwerter sprawdza się przy przygotowywaniu między innymi plików do druku i działa w przeglądarce bez rejestracji.",
+      "description": "Przelicznik centymetrów na piksele z regulowaną wartością DPI. Po wpisaniu wymiaru od razu zobaczysz dokładnie, ile pikseli odpowiada danej wartości w centymetrach. Konwerter sprawdza się przy przygotowywaniu między innymi plików do druku i działa w przeglądarce bez rejestracji.",
       "featureList": [
         "Regulowana rozdzielczość DPI",
         "Konwersja działa w obie strony, więc przeliczysz zarówno centymetry na piksele, jak i piksele na centymetry",
@@ -69,7 +69,7 @@
         },
         {
           "name": "Ustaw rozdzielczość DPI",
-          "text": "Wybierz wartości DPIą. Dla ekranów najczęściej ustawia się 96 DPI, a do druku 300 DPI."
+          "text": "Wybierz wartość DPI. Dla ekranów najczęściej ustawia się 96 DPI, a do druku 300 DPI."
         },
         {
           "name": "Odczytaj wynik lub odwróć kierunek",
@@ -97,7 +97,7 @@
     {
       "type": "sectionInfo",
       "title": "Jak działa konwersja cm na px? Wzór obliczenia i przykład",
-      "html": "<p class=\"text-mid mb-4\">Cała konwersja sprowadza się do jednego wzoru, który opiera się na stałej zależności pomiędzy calem a centymetrem: jeden cal to dokładnie 2,54 cm. Wystarczy więc liczbę centymetrów pomnożyć przez wybraną rozdzielczość DPI i podzielić przez 2,54.</p><p class=\"text-mid mb-4\">Pełny wzór wygląda następująco: <strong>liczba pikseli = liczba centymetrów × DPI ÷ 2,54</strong>. Konwerter wykonuje to działanie dokładnie natychmiastowo.</p><p class=\"text-mid mb-4\">Przykład: chcesz sprawdzić, ile pikseli ma 7,5 cm przy rozdzielczości druku 300 DPI. Podstawiasz wartości do wzoru i otrzymujesz 7,5 × 300 ÷ 2,54, co daje około 886 pikseli. Przy 96 DPI ta sama długość daje już tylko 284 piksele.</p><p class=\"text-mid\">W drugą stronę działa to analogicznie: liczba centymetrów = liczba pikseli × 2,54 ÷ DPI. Dzięki temu możesz sprawdzić, jak duży będzie na papierze plik o szerokości 1 500 px albo czy zdjęcie z aparatu wystarczy na konkretny format odbitki.</p>"
+      "html": "<p class=\"text-mid mb-4\">Cała konwersja sprowadza się do jednego wzoru, który opiera się na stałej zależności pomiędzy calem a centymetrem: jeden cal to dokładnie 2,54 cm. Wystarczy więc liczbę centymetrów pomnożyć przez wybraną rozdzielczość DPI i podzielić przez 2,54.</p><p class=\"text-mid mb-4\">Pełny wzór wygląda następująco: <strong>liczba pikseli = liczba centymetrów × DPI ÷ 2,54</strong>. Konwerter wykonuje to działanie natychmiast.</p><p class=\"text-mid mb-4\">Przykład: chcesz sprawdzić, ile pikseli ma 7,5 cm przy rozdzielczości druku 300 DPI. Podstawiasz wartości do wzoru i otrzymujesz 7,5 × 300 ÷ 2,54, co daje około 886 pikseli. Przy 96 DPI ta sama długość daje już tylko 284 piksele.</p><p class=\"text-mid\">W drugą stronę działa to analogicznie: liczba centymetrów = liczba pikseli × 2,54 ÷ DPI. Dzięki temu możesz sprawdzić, jak duży będzie na papierze plik o szerokości 1 500 px albo czy zdjęcie z aparatu wystarczy na konkretny format odbitki.</p>"
     },
     {
       "type": "gap",
@@ -158,7 +158,7 @@
         },
         {
           "label": "7 cm",
-          "values": ["198 px", "264 px", "413 px", "827 px", "1654 px"]
+          "values": ["198 px", "265 px", "413 px", "827 px", "1654 px"]
         },
         {
           "label": "8 cm",
@@ -212,7 +212,7 @@
     {
       "type": "sectionTable",
       "title": "Ile centymetrów mają różne wartości w pikselach przy różnych wartościach DPI?",
-      "description": "Czasem zaczynamy od liczby pikseli i potrzebujemy sprawdzić ile to centymetrów. Poniższa tabela pokazuje to przeliczenie dla czterech najczęściej spotykanych rozdzielczości.",
+      "description": "Czasem zaczynamy od liczby pikseli i potrzebujemy sprawdzić, ile to centymetrów. Poniższa tabela pokazuje to przeliczenie dla czterech najczęściej spotykanych rozdzielczości.",
       "labelHeader": "Piksele",
       "cols": ["72 DPI", "96 DPI", "150 DPI", "300 DPI"],
       "rows": [
@@ -260,12 +260,12 @@
         },
         {
           "label": "2 480 px",
-          "values": ["87,47 cm", "65,62 cm", "42,00 cm", "21,00 cm (A4)"],
+          "values": ["87,49 cm", "65,62 cm", "41,99 cm", "21,00 cm (A4)"],
           "emphasis": true
         },
         {
           "label": "3 508 px",
-          "values": ["123,73 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)"]
+          "values": ["123,75 cm", "92,82 cm", "59,40 cm", "29,70 cm (A4)"]
         }
       ],
       "caption": "Dwie ostatnie wartości: 2 480 i 3 508 pikseli, odpowiadają dokładnej szerokości i wysokości arkusza A4 przy rozdzielczości 300 DPI."
@@ -581,6 +581,10 @@
         {
           "question": "Ile pikseli ma 5 cm?",
           "answer": "Przy standardowej rozdzielczości ekranu 96 DPI pięć centymetrów to około 189 pikseli. Jeżeli przygotowujesz grafikę do druku w 300 DPI, ta sama długość rośnie do 591 pikseli, a przy 600 DPI sięga już 1 181 pikseli."
+        },
+        {
+          "question": "Ile pikseli ma 7 cm?",
+          "answer": "Siedem centymetrów przy 96 DPI to około 265 pikseli. W druku przy 300 DPI ta sama długość odpowiada 827 pikselom, a przy 600 DPI daje 1 654 piksele."
         },
         {
           "question": "Ile pikseli ma 10 cm?",

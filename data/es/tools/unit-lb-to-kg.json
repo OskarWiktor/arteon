@@ -95,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "¿Cómo funciona la conversión de libras a kilogramos? Fórmula y ejemplo",
-      "html": "<p class=\"text-mid mb-4\">La fórmula es: <strong>kilogramos = libras × 0,45359237</strong>. Al revés: <strong>libras = kilogramos × 2,2046</strong>. Estos valores derivan de la definición exacta de la libra avoirdupois internacional fijada en 1959: 1 libra = 0,45359237 kg.</p><p class=\"text-mid mb-4\">Ejemplo: una persona pesa 154 lb en su báscula americana. Cálculo: 154 × 0,4536 = 69,85 kg — es decir, unos 70 kg.</p><p class=\"text-mid\">Estimación rápida sin calculadora: divide las libras entre 2 y añade el 10 % del resultado. Por ejemplo: 154 lb ÷ 2 = 77, más el 10 % de 77 = 7,7, en total 84,7 kg. El valor exacto es 69,85 kg — este método solo funciona bien para cifras pequeñas. Para valores mayores, usa el convertidor de arriba.</p>"
+      "html": "<p class=\"text-mid mb-4\">La fórmula es: <strong>kilogramos = libras × 0,45359237</strong>. Al revés: <strong>libras = kilogramos × 2,2046</strong>. Estos valores derivan de la definición exacta de la libra avoirdupois internacional fijada en 1959: 1 libra = 0,45359237 kg.</p><p class=\"text-mid mb-4\">Ejemplo: una persona pesa 154 lb en su báscula americana. Cálculo: 154 × 0,4536 = 69,85 kg — es decir, unos 70 kg.</p><p class=\"text-mid\">Estimación rápida sin calculadora: divide las libras entre 2 y resta el 10 % del resultado. Por ejemplo: 154 lb ÷ 2 = 77, menos 7,7 (el 10 % de 77) = 69,3 kg. El valor exacto es 69,85 kg, así que el error queda por debajo del 1 %. Para un resultado preciso, usa el convertidor de arriba.</p>"
     },
     {
       "type": "gap",

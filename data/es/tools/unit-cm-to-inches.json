@@ -124,8 +124,17 @@
         { "label": "9 cm", "values": ["3,54 in"] },
         { "label": "10 cm", "values": ["3,94 in"], "emphasis": true },
         { "label": "12 cm", "values": ["4,72 in"] },
-        { "label": "15 cm", "values": ["5,91 in"] },
+        { "label": "13 cm", "values": ["5,12 in"] },
+        { "label": "14 cm", "values": ["5,51 in"] },
+        { "label": "15 cm", "values": ["5,91 in"], "emphasis": true },
+        { "label": "16 cm", "values": ["6,30 in"] },
+        { "label": "17 cm", "values": ["6,69 in"] },
+        { "label": "18 cm", "values": ["7,09 in"] },
         { "label": "20 cm", "values": ["7,87 in"], "emphasis": true },
+        { "label": "21 cm", "values": ["8,27 in"] },
+        { "label": "22 cm", "values": ["8,66 in"] },
+        { "label": "23 cm", "values": ["9,06 in"] },
+        { "label": "24 cm", "values": ["9,45 in"] },
         { "label": "25 cm", "values": ["9,84 in"] },
         { "label": "30 cm", "values": ["11,81 in"] },
         { "label": "35 cm", "values": ["13,78 in"] },
@@ -239,10 +248,13 @@
         { "label": "15 in", "values": ["38,10 cm"] },
         { "label": "18 in", "values": ["45,72 cm"] },
         { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "21 in", "values": ["53,34 cm"] },
+        { "label": "23 in", "values": ["58,42 cm"] },
         { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76,20 cm"] },
         { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "45 in", "values": ["114,30 cm"] },
         { "label": "48 in", "values": ["121,92 cm"] },
         { "label": "54 in", "values": ["137,16 cm"] },
         { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
@@ -299,7 +311,7 @@
         },
         {
           "title": "Medidas del equipaje",
-          "description": "Muchas aerolíneas, especialmente las estadounidenses y algunas de bajo coste, expresan las dimensiones permitidas del equipaje en pulgadas. El límite lineal habitual de 158 pulgadas (suma de alto, ancho y largo) equivale a 401,32 cm. Una maleta de cabina estándar de 55 × 40 × 20 cm tiene una suma de dimensiones de 115 cm, que corresponde a unos 45,3 pulgadas lineales."
+          "description": "Muchas aerolíneas, especialmente las estadounidenses y algunas de bajo coste, expresan las dimensiones permitidas del equipaje en pulgadas. El límite habitual de equipaje facturado es de 62 pulgadas lineales (suma de alto, ancho y largo), exactamente 157,48 cm; por eso las aerolíneas europeas lo indican como 158 cm. Una maleta de cabina estándar de 55 × 40 × 20 cm tiene una suma de dimensiones de 115 cm, que corresponde a unas 45,3 pulgadas lineales."
         }
       ]
     },
@@ -324,16 +336,16 @@
           "answer": "170 cm son 66,93 pulgadas, que en pies y pulgadas equivale a 5 ft 7 in. Cálculo: 170 ÷ 2,54 = 66,93 in; 66,93 ÷ 12 = 5 pies con un resto de 6,93 pulgadas, redondeado a 7."
         },
         {
-          "question": "¿Cuántas pulgadas son 160 cm?",
-          "answer": "160 cm son 62,99 pulgadas, es decir en pies y pulgadas: 5 ft 3 in. Cálculo: 160 ÷ 2,54 = 62,99; 62 ÷ 12 = 5 pies con un resto de 2,99 pulgadas, redondeado a 3."
+          "question": "¿Cuántas pulgadas son 15 cm?",
+          "answer": "15 cm son 5,91 pulgadas. Cálculo: 15 ÷ 2,54 = 5,91 in. Para comparar: es más o menos el lado largo de un smartphone o la mitad de una regla de 30 cm."
         },
         {
-          "question": "¿Cuántas pulgadas son 180 cm?",
-          "answer": "180 cm son 70,87 pulgadas, que en pies y pulgadas equivale a 5 ft 11 in. Esta estatura se considera en los países anglófonos como el límite entre una altura media y alta."
+          "question": "¿Cuántas pulgadas son 20 cm?",
+          "answer": "20 cm son 7,87 pulgadas. Cálculo: 20 ÷ 2,54 = 7,87 in. Redondeando: 20 cm son poco menos de 8 pulgadas."
         },
         {
-          "question": "¿Cuántas pulgadas son 100 cm?",
-          "answer": "100 cm son 39,37 pulgadas, un valor de referencia fácil de recordar: un metro equivale a poco más de 39 pulgadas y media. Cálculo: 100 ÷ 2,54 = 39,37 in."
+          "question": "¿Cuántas pulgadas son 40 cm?",
+          "answer": "40 cm son 15,75 pulgadas. Cálculo: 40 ÷ 2,54 = 15,75 in. Es, entre otras cosas, el ancho típico de una maleta de cabina (55 × 40 × 20 cm)."
         },
         {
           "question": "¿Cuántos centímetros tiene una pulgada?",
@@ -349,15 +361,19 @@
         },
         {
           "question": "¿Cómo convertir cm a pulgadas sin calculadora?",
-          "answer": "Aproximación rápida: divide los centímetros entre 2,5 en lugar de 2,54. El error es mínimo (unos 1,6 %), suficiente para comparaciones orientativas. Ejemplo: 20 cm ÷ 2,5 = 8 pulgadas (valor exacto: 7,87). Para conversiones precisas usa siempre el convertidor."
+          "answer": "Aproximación rápida: divide los centímetros entre 2,5 en lugar de 2,54. El error es mínimo (alrededor del 1,6 %), suficiente para comparaciones orientativas. Ejemplo: 20 cm ÷ 2,5 = 8 pulgadas (valor exacto: 7,87). Para conversiones precisas usa siempre el convertidor."
         },
         {
           "question": "¿Cuántas pulgadas tiene una regla de 30 cm?",
           "answer": "Una regla escolar de 30 cm tiene 11,81 pulgadas. Redondeando, 30 cm equivalen casi exactamente a 12 pulgadas, es decir un pie. En el sistema imperial, 12 pulgadas = 1 pie = 30,48 cm, por lo que la diferencia es solo de 0,48 cm."
         },
         {
-          "question": "¿La fórmula de conversión es la misma en España y en Estados Unidos?",
-          "answer": "Sí, la fórmula es idéntica en todo el mundo: 1 pulgada = 2,54 cm. Desde 1959 rige la pulgada internacional, que unificó la definición en EE. UU., el Reino Unido y todos los demás países. Antes existían diferencias mínimas, pero hoy todos los calculadores usan el valor 2,54."
+          "question": "¿Cuántas pulgadas son 25 cm?",
+          "answer": "25 cm son 9,84 pulgadas. Cálculo: 25 ÷ 2,54 = 9,84 in. Redondeando: 25 cm son poco menos de 10 pulgadas."
+        },
+        {
+          "question": "¿Cuántas pulgadas son 17 y 18 cm?",
+          "answer": "17 cm son 6,69 pulgadas y 18 cm son 7,09 pulgadas. Cálculos: 17 ÷ 2,54 = 6,69 y 18 ÷ 2,54 = 7,09. Los valores de este rango se consultan a menudo para tabletas, libros y dimensiones de embalajes."
         },
         {
           "question": "¿Cómo convertir tallas de ropa de pulgadas a cm?",

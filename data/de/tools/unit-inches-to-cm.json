@@ -49,7 +49,7 @@
         "Die Umrechnung funktioniert in beide Richtungen, Sie können also sowohl Zoll in Zentimeter als auch Zentimeter in Zoll umrechnen",
         "Das Ergebnis erscheint sofort während der Eingabe, ohne dass eine Schaltfläche geklickt werden muss",
         "Das Ergebnis kann mit einem Klick in die Zwischenablage kopiert werden",
-        "Die Umrechnungstabelle umfasst Werte von 0,5 bis 72 Zoll",
+        "Die Umrechnungstabelle umfasst Werte von 0,5 bis 90 Zoll",
         "Die Bildschirmdiagonalentabelle umfasst die beliebtesten TV- und Monitorgrößen von 24 bis 85 Zoll",
         "Die Körpergrößentabelle enthält die Umrechnung von Fuß-und-Zoll-Angaben in Zentimeter für Werte von 4 ft 11 in bis 6 ft 7 in",
         "Die umgekehrte Tabelle zeigt, wie viele Zoll einem bestimmten Zentimeterwert entsprechen, für Werte von 0,5 cm bis 200 cm",
@@ -126,14 +126,18 @@
         { "label": "15 in", "values": ["38,10 cm"] },
         { "label": "18 in", "values": ["45,72 cm"] },
         { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "21 in", "values": ["53,34 cm"] },
+        { "label": "23 in", "values": ["58,42 cm"] },
         { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76,20 cm"] },
         { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "45 in", "values": ["114,30 cm"] },
         { "label": "48 in", "values": ["121,92 cm"] },
         { "label": "54 in", "values": ["137,16 cm"] },
         { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
-        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true },
+        { "label": "90 in", "values": ["228,60 cm"] }
       ],
       "caption": "Möchten Sie in die andere Richtung umrechnen? Nutzen Sie unseren <a href=\"/de/werkzeuge/cm-in-zoll-umrechner\">cm-in-Zoll-Umrechner</a> mit eigener Tabelle und ausführlichem Inhalt zu diesem Umrechnungsweg."
     },
@@ -256,7 +260,7 @@
         },
         {
           "title": "Möbel und Baumaterialien",
-          "description": "US-amerikanische Möbelkataloge, Werkzeuge und Baumaterialien aus Nordamerika geben Maße in Zoll an. Eine Standard-Dachsparren-Holzleiste 2×4 hat tatsächliche Maße von 1,5 × 3,5 Zoll, also etwa 3,8 × 8,9 cm. Die Umrechnung hilft, Projekte maßgenau zu planen und Maßfehler zu vermeiden."
+          "description": "US-amerikanische Möbelkataloge, Werkzeuge und Baumaterialien aus Nordamerika geben Maße in Zoll an. Ein Standard-Kantholz im Format 2×4 (zwei mal vier Zoll) hat tatsächliche Maße von 1,5 × 3,5 Zoll, also etwa 3,8 × 8,9 cm. Die Umrechnung hilft, Projekte maßgenau zu planen und Maßfehler zu vermeiden."
         }
       ]
     },
@@ -277,20 +281,20 @@
           "answer": "Die Formel lautet: Zentimeter = Zoll × 2,54. Beispiel: 10 Zoll × 2,54 = 25,40 cm. Umgekehrt: Zoll = Zentimeter ÷ 2,54."
         },
         {
-          "question": "Wie viel cm hat 5 Zoll?",
-          "answer": "5 Zoll entsprechen 5 × 2,54 = 12,70 cm. Das ist ein gebräuchlicher Referenzwert, z. B. bei der Bildschirmdiagonale von Smartphones."
+          "question": "Wie viel cm haben 15 Zoll?",
+          "answer": "15 Zoll entsprechen 15 × 2,54 = 38,10 cm. Dieser Wert wird am häufigsten bei Laptops nachgeschlagen: Die verbreitete Diagonale von 15,6 Zoll entspricht 39,6 cm."
         },
         {
-          "question": "Wie viel cm hat 6 Zoll?",
+          "question": "Wie viel cm haben 6 Zoll?",
           "answer": "6 Zoll entsprechen 6 × 2,54 = 15,24 cm, also genau einem halben Fuß. Das ist die typische Bildschirmgröße großer Smartphones."
         },
         {
-          "question": "Wie viel cm hat 12 Zoll?",
-          "answer": "12 Zoll entsprechen 30,48 cm, also genau einem Fuß. Das ist ein wichtiger Referenzwert: 1 Fuß = 12 Zoll = 30,48 cm."
+          "question": "Wie viel cm haben 21 Zoll?",
+          "answer": "21 Zoll entsprechen 21 × 2,54 = 53,34 cm. Werte in diesem Bereich werden unter anderem bei Monitoren und bei als 21 Zoll beschriebenen Kabinenkoffern nachgeschlagen."
         },
         {
-          "question": "Wie groß ist ein 55-Zoll-Fernseher in cm?",
-          "answer": "Ein 55-Zoll-Fernseher hat eine Bildschirmdiagonale von 55 × 2,54 = 139,70 cm. Die Breite eines 16:9-Bildschirms bei 55 Zoll beträgt etwa 122 cm, die Höhe etwa 69 cm. Hersteller geben manchmal die Außenmaße mit Rahmen an, die etwas größer sind."
+          "question": "Wie viel cm haben 10 Zoll?",
+          "answer": "10 Zoll entsprechen 10 × 2,54 = 25,40 cm. Das ist ein leicht zu merkender Referenzwert (ein Zoll mal zehn) und zugleich eine typische Tablet-Diagonale."
         },
         {
           "question": "Wie groß ist ein 65-Zoll-Fernseher in cm?",
@@ -301,8 +305,12 @@
           "answer": "5 Fuß 7 Zoll werden zunächst in Zoll umgerechnet: 5 × 12 + 7 = 67 Zoll. Dann: 67 × 2,54 = 170,18 cm. 5 ft 7 in entsprechen also etwa 170 cm."
         },
         {
-          "question": "Wie viel cm sind 6 ft 0 in?",
-          "answer": "6 Fuß 0 Zoll entsprechen 6 × 12 = 72 Zoll, und 72 × 2,54 = 182,88 cm. Eine Körpergröße von genau 6 Fuß sind also etwa 183 cm."
+          "question": "Wie viel cm sind 5 ft 10 in?",
+          "answer": "5 Fuß 10 Zoll entsprechen 5 × 12 + 10 = 70 Zoll, und 70 × 2,54 = 177,80 cm. Eine Körpergröße von 5 ft 10 in liegt also knapp unter 178 cm."
+        },
+        {
+          "question": "Wie viel cm haben 3 Zoll?",
+          "answer": "3 Zoll entsprechen 3 × 2,54 = 7,62 cm. Die Gegenprobe: 7,62 ÷ 2,54 = 3, das Ergebnis lässt sich also leicht überprüfen."
         },
         {
           "question": "Wie rechnet man Zoll ohne Taschenrechner in cm um?",
