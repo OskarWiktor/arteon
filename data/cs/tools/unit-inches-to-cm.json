@@ -49,7 +49,7 @@
         "Převod funguje oběma směry: lze převádět jak palce na centimetry, tak centimetry na palce",
         "Výsledek se zobrazuje okamžitě při psaní bez nutnosti klikat na jakékoli tlačítko",
         "Výsledek lze zkopírovat do schránky jedním kliknutím",
-        "Převodní tabulka zahrnuje hodnoty od 0,5 do 72 palců",
+        "Převodní tabulka zahrnuje hodnoty od 0,5 do 90 palců",
         "Tabulka úhlopříček obrazovek zahrnuje nejpopulárnější velikosti televizorů a monitorů od 24 do 85 palců",
         "Tabulka výšky zobrazuje převod stop a palců na centimetry pro hodnoty od 4 ft 11 in do 6 ft 7 in",
         "Obrácená tabulka ukazuje, kolik palců odpovídá hodnotě v centimetrech, pro rozsah 0,5 cm až 200 cm",
@@ -126,14 +126,18 @@
         { "label": "15 in", "values": ["38,10 cm"] },
         { "label": "18 in", "values": ["45,72 cm"] },
         { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "21 in", "values": ["53,34 cm"] },
+        { "label": "23 in", "values": ["58,42 cm"] },
         { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76,20 cm"] },
         { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "45 in", "values": ["114,30 cm"] },
         { "label": "48 in", "values": ["121,92 cm"] },
         { "label": "54 in", "values": ["137,16 cm"] },
         { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
-        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true },
+        { "label": "90 in", "values": ["228,60 cm"] }
       ],
       "caption": "Chceš převést opačným směrem? Použij náš <a href=\"/cs/nastroje/prevodnik-cm-na-palce\">převodník cm na palce</a> s vlastní tabulkou a podrobným obsahem pro tento směr převodu."
     },
@@ -248,11 +252,11 @@
         },
         {
           "title": "Výška a mezinárodní srovnání",
-          "description": "Při porovnávání výškových dat z amerických nebo britských zdrojů s metrickými tabulkami — v zdravotnických studiích, sportovních statistikách nebo fitness aplikacích — je užitečné znát ekvivalent v centimetrech. 5 ft 7 in je 170,18 cm, 6 ft 0 in je 182,88 cm a 6 ft 3 in je 190,50 cm."
+          "description": "Při porovnávání výškových dat z amerických nebo britských zdrojů s metrickými tabulkami — ve zdravotnických studiích, sportovních statistikách nebo fitness aplikacích — je užitečné znát ekvivalent v centimetrech. 5 ft 7 in je 170,18 cm, 6 ft 0 in je 182,88 cm a 6 ft 3 in je 190,50 cm."
         },
         {
           "title": "Oblečení a obuv z mezinárodních obchodů",
-          "description": "Americké a britské obchody uvádějí rozměry v palcích. Límcová míra 40 cm odpovídá přibližně 15,7 palce. Pro boty, košile a jiné oblečení platí převod násobením hodnotou 2,54. Doporučuje se zkontrolovat tabulku velikostí konkrétního výrobce."
+          "description": "Americké a britské obchody uvádějí rozměry v palcích. Obvod límce 40 cm odpovídá přibližně 15,7 palce. Pro boty, košile a jiné oblečení platí převod násobením hodnotou 2,54. Doporučuje se zkontrolovat tabulku velikostí konkrétního výrobce."
         },
         {
           "title": "Nábytek a stavební materiály",
@@ -277,20 +281,20 @@
           "answer": "Vzorec je: centimetry = palce × 2,54. Příklad: 10 palců × 2,54 = 25,40 cm. Obráceně: palce = centimetry ÷ 2,54."
         },
         {
-          "question": "Kolik cm je 5 palců?",
-          "answer": "5 palců je 5 × 2,54 = 12,70 cm. Jde o běžnou referenční hodnotu, například pro úhlopříčku displeje smartphonu."
+          "question": "Kolik cm je 15 palců?",
+          "answer": "15 palců je 15 × 2,54 = 38,10 cm. Tuto hodnotu lidé hledají nejčastěji u notebooků: rozšířená úhlopříčka 15,6 palce odpovídá 39,6 cm."
         },
         {
           "question": "Kolik cm je 6 palců?",
           "answer": "6 palců je 6 × 2,54 = 15,24 cm, přesně půl stopy. To je typická velikost displeje velkého smartphonu."
         },
         {
-          "question": "Kolik cm je 12 palců?",
-          "answer": "12 palců je 30,48 cm, tedy přesně jedna stopa. Jde o důležitou referenční hodnotu: 1 stopa = 12 palců = 30,48 cm."
+          "question": "Kolik cm je 21 palců?",
+          "answer": "21 palců je 21 × 2,54 = 53,34 cm. Hodnoty z tohoto rozsahu se hledají u monitorů a kabinových kufrů označovaných jako 21palcové."
         },
         {
-          "question": "Kolik cm má televizor 55 palců?",
-          "answer": "Televizor 55 palců má úhlopříčku obrazovky 55 × 2,54 = 139,70 cm. Šířka obrazovky 16:9 o úhlopříčce 55 palců je přibližně 122 cm a výška přibližně 69 cm. Výrobci někdy uvádějí vnější rozměry s rámečkem, které jsou o něco větší."
+          "question": "Kolik cm je 10 palců?",
+          "answer": "10 palců je 10 × 2,54 = 25,40 cm. Je to snadno zapamatovatelná referenční hodnota (palec krát deset) a zároveň typická úhlopříčka tabletu."
         },
         {
           "question": "Kolik cm má televizor 65 palců?",
@@ -301,8 +305,12 @@
           "answer": "5 stop 7 palců se nejdříve převede na samotné palce: 5 × 12 + 7 = 67 palců. Pak: 67 × 2,54 = 170,18 cm. 5 ft 7 in tedy odpovídá přibližně 170 cm."
         },
         {
-          "question": "Kolik cm je 6 ft 0 in?",
-          "answer": "6 stop 0 palců je 6 × 12 = 72 palců a 72 × 2,54 = 182,88 cm. Výška přesně 6 stop odpovídá přibližně 183 cm."
+          "question": "Kolik cm je 5 ft 10 in?",
+          "answer": "5 stop 10 palců je 5 × 12 + 10 = 70 palců a 70 × 2,54 = 177,80 cm. Výška 5 ft 10 in je tedy necelých 178 cm."
+        },
+        {
+          "question": "Kolik cm jsou 3 palce?",
+          "answer": "3 palce jsou 3 × 2,54 = 7,62 cm. Zpětná kontrola: 7,62 ÷ 2,54 = 3, výsledek si tedy snadno ověříš."
         },
         {
           "question": "Jak převést palce na cm bez kalkulačky?",

@@ -3,7 +3,7 @@
   "locale": "fr",
   "metadata": {
     "title": "Calculateur pouces en CM – convertir les pouces en centimètres",
-    "description": "Convertissez les pouces en centimètres instantanément. Taille de TV en cm, taille corporelle en système métrique, vêtements de boutiques européennes et dimensions des bagages. Tableau de conversion pouces en cm.",
+    "description": "Convertissez les pouces en centimètres instantanément. Vérifiez la taille d'un téléviseur en cm, une taille corporelle ou les dimensions des bagages. Le tableau de conversion couvre les valeurs de 0,5 à 90 pouces.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fr/outils/convertisseur-pouces-en-cm"
   },
@@ -49,7 +49,7 @@
         "La conversion fonctionne dans les deux sens, vous pouvez donc convertir les pouces en centimètres et les centimètres en pouces",
         "Le résultat s'affiche instantanément pendant la saisie, sans qu'il soit nécessaire de cliquer sur un bouton",
         "Le résultat peut être copié dans le presse-papiers en un seul clic",
-        "Le tableau de conversion couvre les valeurs de 0,5 à 72 pouces",
+        "Le tableau de conversion couvre les valeurs de 0,5 à 90 pouces",
         "Le tableau des diagonales d'écrans couvre les tailles les plus populaires de téléviseurs et moniteurs de 24 à 85 pouces",
         "Le tableau de taille présente la conversion des pieds et pouces en centimètres pour les valeurs de 4 ft 11 in à 6 ft 7 in",
         "Le tableau inverse indique combien de pouces correspondent à une valeur en centimètres, de 0,5 cm à 200 cm",
@@ -126,14 +126,18 @@
         { "label": "15 in", "values": ["38,10 cm"] },
         { "label": "18 in", "values": ["45,72 cm"] },
         { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "21 in", "values": ["53,34 cm"] },
+        { "label": "23 in", "values": ["58,42 cm"] },
         { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76,20 cm"] },
         { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "45 in", "values": ["114,30 cm"] },
         { "label": "48 in", "values": ["121,92 cm"] },
         { "label": "54 in", "values": ["137,16 cm"] },
         { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
-        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true },
+        { "label": "90 in", "values": ["228,60 cm"] }
       ],
       "caption": "Vous souhaitez convertir dans l'autre sens ? Utilisez notre <a href=\"/fr/outils/convertisseur-cm-en-pouces\">convertisseur cm en pouces</a> avec son propre tableau et contenu dédié à cette direction."
     },
@@ -269,20 +273,20 @@
           "answer": "La formule est : centimètres = pouces × 2,54. Exemple : 10 pouces × 2,54 = 25,40 cm. Dans l'autre sens : pouces = centimètres ÷ 2,54."
         },
         {
-          "question": "Combien de cm font 5 pouces ?",
-          "answer": "5 pouces correspondent à 5 × 2,54 = 12,70 cm. C'est une valeur de référence courante, par exemple pour la diagonale d'un écran de smartphone."
+          "question": "Combien de cm font 15 pouces ?",
+          "answer": "15 pouces correspondent à 15 × 2,54 = 38,10 cm. C'est la valeur la plus consultée pour les ordinateurs portables : la diagonale répandue de 15,6 pouces équivaut à 39,6 cm."
         },
         {
           "question": "Combien de cm font 6 pouces ?",
           "answer": "6 pouces correspondent à 6 × 2,54 = 15,24 cm, soit exactement un demi-pied. C'est la taille typique d'un écran de grand smartphone."
         },
         {
-          "question": "Combien de cm font 12 pouces ?",
-          "answer": "12 pouces correspondent à 30,48 cm, soit exactement un pied. C'est une valeur de référence importante : 1 pied = 12 pouces = 30,48 cm."
+          "question": "Combien de cm font 21 pouces ?",
+          "answer": "21 pouces correspondent à 21 × 2,54 = 53,34 cm. Les valeurs de cette plage reviennent pour les moniteurs et les valises cabine décrites comme 21 pouces."
         },
         {
-          "question": "Quelle est la taille en cm d'un téléviseur de 55 pouces ?",
-          "answer": "Un téléviseur de 55 pouces a une diagonale d'écran de 55 × 2,54 = 139,70 cm. La largeur d'un écran 16:9 de 55 pouces est d'environ 122 cm et la hauteur d'environ 69 cm. Les fabricants indiquent parfois les dimensions extérieures avec le cadre, légèrement plus grandes."
+          "question": "Combien de cm font 10 pouces ?",
+          "answer": "10 pouces correspondent à 10 × 2,54 = 25,40 cm. C'est une valeur de référence facile à retenir (un pouce fois dix) et aussi une diagonale typique de tablette."
         },
         {
           "question": "Quelle est la taille en cm d'un téléviseur de 65 pouces ?",
@@ -293,8 +297,12 @@
           "answer": "5 pieds 7 pouces se convertissent d'abord en pouces : 5 × 12 + 7 = 67 pouces. Puis : 67 × 2,54 = 170,18 cm. 5 ft 7 in correspondent donc à environ 170 cm."
         },
         {
-          "question": "Combien de cm font 6 ft 0 in ?",
-          "answer": "6 pieds 0 pouces correspondent à 6 × 12 = 72 pouces, et 72 × 2,54 = 182,88 cm. Une taille de exactement 6 pieds équivaut à environ 183 cm."
+          "question": "Combien de cm font 5 ft 10 in ?",
+          "answer": "5 pieds 10 pouces correspondent à 5 × 12 + 10 = 70 pouces, et 70 × 2,54 = 177,80 cm. Une taille de 5 ft 10 in fait donc un peu moins de 178 cm."
+        },
+        {
+          "question": "Combien de cm font 3 pouces ?",
+          "answer": "3 pouces correspondent à 3 × 2,54 = 7,62 cm. La vérification inverse : 7,62 ÷ 2,54 = 3, le résultat est donc facile à contrôler."
         },
         {
           "question": "Comment convertir les pouces en cm sans calculatrice ?",

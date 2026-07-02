@@ -84,7 +84,7 @@
     {
       "type": "sectionBasic",
       "title": "Kdy převádíš kilogramy na libry?",
-      "html": "<p class=\"text-mid mb-4\">Kilogram je standardní jednotka hmotnosti v Česku i na Slovensku. Libra (lb) dominuje ve Spojených státech a zůstává běžná ve Velké Británii, zejména pro tělesnou hmotnost — kde Britové používají také stone (1 stone = 14 liber = přibližně 6,35 kg).</p><p class=\"text-mid mb-4\">Převod kilogramů na libry je potřeba, když si kontroluješ váhu v americké zdravotní aplikaci, kupuješ sportovní vybavení popsané v librách, interpretuješ limit zavazadla v librách nebo chceš vědět porodní váhu miminka v dokumentaci cizojazyčné nemocnice.</p><p class=\"text-mid mb-4\">Jedna libra odpovídá přesně 0,45359237 kg — hodnota platná jako konstanta od roku 1959. Opačně: 1 kg = 2,2046 liber. Převodník vypočítá výsledek, jakmile začneš psát.</p><p class=\"text-mid\">Na této stránce najdeš tabulku kg na libry pro hodnoty od 0,5 do 200 kg, tabulku tělesné hmotnosti s převodem na libry a stone, tabulku vah do posilovny a zpětnou tabulku liber na kg.</p>",
+      "html": "<p class=\"text-mid mb-4\">Kilogram je standardní jednotka hmotnosti v Česku i na Slovensku. Libra (lb) dominuje ve Spojených státech a zůstává běžná ve Velké Británii, zejména pro tělesnou hmotnost — kde Britové používají také stone (1 stone = 14 liber = přibližně 6,35 kg).</p><p class=\"text-mid mb-4\">Převod kilogramů na libry je potřeba, když si kontroluješ váhu v americké zdravotní aplikaci, kupuješ sportovní vybavení popsané v librách, interpretuješ limit zavazadla v librách nebo chceš znát porodní váhu miminka z dokumentace cizojazyčné nemocnice.</p><p class=\"text-mid mb-4\">Jedna libra odpovídá přesně 0,45359237 kg — hodnota platná jako konstanta od roku 1959. Opačně: 1 kg = 2,2046 liber. Převodník vypočítá výsledek, jakmile začneš psát.</p><p class=\"text-mid\">Na této stránce najdeš tabulku kg na libry pro hodnoty od 0,5 do 200 kg, tabulku tělesné hmotnosti s převodem na libry a stone, tabulku vah do posilovny a zpětnou tabulku liber na kg.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Bezplatný převodník kilogramů na libry – Arteon"
     },
@@ -304,7 +304,7 @@
     {
       "type": "contactForm",
       "title": "Máš otázku nebo nápad na zlepšení?",
-      "description": "Pokud najdeš chybu v tabulkách nebo máš nápad jak převodník vylepšit, napiš nám. Odpovídáme na každou zprávu.",
+      "description": "Pokud najdeš chybu v tabulkách nebo máš nápad, jak převodník vylepšit, napiš nám. Odpovídáme na každou zprávu.",
       "imageAlt": "Kontaktovat Arteon Agency",
       "subject": "Převodník kg na libry"
     },

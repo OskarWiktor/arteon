@@ -97,7 +97,7 @@
     {
       "type": "sectionInfo",
       "title": "How does the kg to lb conversion work? Formula and example",
-      "html": "<p class=\"text-mid mb-4\">Converting kilograms to pounds is based on a fixed definition: one pound equals exactly 0.45359237 kg. To get pounds, multiply kilograms by 2.2046.</p><p class=\"text-mid mb-4\">Full formula: <strong>pounds = kilograms × 2.2046</strong>. The other way: <strong>kilograms = pounds × 0.4536</strong>.</p><p class=\"text-mid mb-4\">Example: you want to know how many pounds a person weighing 70 kg is. Calculation: 70 × 2.2046 = 154.32 lb. In the British system that is 11 stone 0.3 lb, because one stone = 14 pounds: 154.32 ÷ 14 = 11 stone with a remainder of 0.32 lb.</p><p class=\"text-mid\">Quick estimate without a calculator: 1 kg ≈ 2.2 lb, so multiply kilograms by 2 and add one fifth of the result. For example: 80 kg × 2 = 160, plus 16 (20% of 80) = 176 lb. The exact value is 176.37 lb — an error of just 0.2%.</p>"
+      "html": "<p class=\"text-mid mb-4\">Converting kilograms to pounds is based on a fixed definition: one pound equals exactly 0.45359237 kg. To get pounds, multiply kilograms by 2.2046.</p><p class=\"text-mid mb-4\">Full formula: <strong>pounds = kilograms × 2.2046</strong>. The other way: <strong>kilograms = pounds × 0.4536</strong>.</p><p class=\"text-mid mb-4\">Example: you want to know how many pounds a person weighing 70 kg is. Calculation: 70 × 2.2046 = 154.32 lb. In the British system that is 11 stone 0.3 lb, because one stone = 14 pounds: 154.32 ÷ 14 = 11 stone with a remainder of 0.32 lb.</p><p class=\"text-mid\">Quick estimate without a calculator: 1 kg ≈ 2.2 lb, so multiply kilograms by 2 and add one fifth of the original value. For example: 80 kg × 2 = 160, plus 16 (20% of 80) = 176 lb. The exact value is 176.37 lb — an error of just 0.2%.</p>"
     },
     {
       "type": "gap",
@@ -345,7 +345,7 @@
         },
         {
           "question": "Is 1 kg equal to 2 pounds?",
-          "answer": "No — that is a popular but overly rough shortcut. 1 kg is 2.2046 lb. If you count 2 pounds per kilogram, you underestimate the result by about 9%, and at 100 kg the gap grows to more than 20 pounds. For mental math, multiply by 2.2 instead of 2."
+          "answer": "No — that is a popular but overly rough shortcut. 1 kg is 2.2046 lb. If you count 2 pounds per kilogram, you underestimate the result by about 9%, and at 100 kg the gap grows to more than 20 pounds. For quick mental conversions, multiply by 2.2 instead of 2."
         },
         {
           "question": "What is the formula to convert kg to pounds?",
@@ -389,7 +389,7 @@
         },
         {
           "question": "Why does the US use pounds instead of kilograms?",
-          "answer": "The United States uses the customary system of measurement, inherited from the British colonies. The pound has over a thousand years of history and is deeply embedded in American culture. The UK transitioned to the metric system in the 1960s–70s, but the pound remained in widespread informal use, especially for body weight. The US is one of three countries (alongside Liberia and Myanmar) that has not adopted the metric system as the official standard."
+          "answer": "The United States uses the customary system of measurement, inherited from the British colonies. The pound has over a thousand years of history and is deeply embedded in American culture. The UK transitioned to the metric system in the 1960s–70s, but the pound remained in widespread informal use, especially for body weight. The US is one of three countries (alongside Liberia and Myanmar) that have not adopted the metric system as the official standard."
         },
         {
           "question": "How many pounds is 55 kg?",

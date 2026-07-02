@@ -97,7 +97,7 @@
     {
       "type": "sectionInfo",
       "title": "Comment fonctionne la conversion kg en livres ? Formule et exemple",
-      "html": "<p class=\"text-mid mb-4\">La conversion de kilogrammes en livres repose sur une définition fixe : une livre correspond exactement à 0,45359237 kg. Pour obtenir des livres, il suffit de multiplier les kilogrammes par 2,2046.</p><p class=\"text-mid mb-4\">Formule complète : <strong>livres = kilogrammes × 2,2046</strong>. Dans l'autre sens : <strong>kilogrammes = livres × 0,4536</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous voulez savoir combien de livres pèse une personne de 70 kg. Calcul : 70 × 2,2046 = 154,32 lb. En système britannique, cela correspond à 11 stone 0,3 lb, car un stone = 14 livres : 154,32 ÷ 14 = 11 stone avec un reste de 0,32 livre.</p><p class=\"text-mid\">Estimation rapide sans calculatrice : 1 kg ≈ 2,2 lb — multipliez les kilogrammes par 2 et ajoutez un cinquième du résultat. Par exemple : 80 kg × 2 = 160, plus 16 (20 % de 80) = 176 lb. La valeur exacte est 176,37 lb — une erreur de seulement 0,2 %.</p>"
+      "html": "<p class=\"text-mid mb-4\">La conversion de kilogrammes en livres repose sur une définition fixe : une livre correspond exactement à 0,45359237 kg. Pour obtenir des livres, il suffit de multiplier les kilogrammes par 2,2046.</p><p class=\"text-mid mb-4\">Formule complète : <strong>livres = kilogrammes × 2,2046</strong>. Dans l'autre sens : <strong>kilogrammes = livres × 0,4536</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous voulez savoir combien de livres pèse une personne de 70 kg. Calcul : 70 × 2,2046 = 154,32 lb. En système britannique, cela correspond à 11 stone 0,3 lb, car un stone = 14 livres : 154,32 ÷ 14 = 11 stone avec un reste de 0,32 livre.</p><p class=\"text-mid\">Estimation rapide sans calculatrice : 1 kg ≈ 2,2 lb — multipliez les kilogrammes par 2 et ajoutez un cinquième de la valeur de départ. Par exemple : 80 kg × 2 = 160, plus 16 (20 % de 80) = 176 lb. La valeur exacte est 176,37 lb — une erreur de seulement 0,2 %.</p>"
     },
     {
       "type": "gap",
@@ -223,7 +223,7 @@
     {
       "type": "sectionTable",
       "title": "Tableau inversé – livres en kilogrammes",
-      "description": "Le tableau ci-dessous convertit les valeurs courantes en livres vers les kilogrammes, arrondie à deux décimales.",
+      "description": "Le tableau ci-dessous convertit les valeurs courantes en livres vers les kilogrammes, arrondies à deux décimales.",
       "labelHeader": "Livres (lb)",
       "cols": ["Kilogrammes"],
       "rows": [

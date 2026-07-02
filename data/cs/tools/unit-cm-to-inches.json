@@ -124,8 +124,17 @@
         { "label": "9 cm", "values": ["3,54 in"] },
         { "label": "10 cm", "values": ["3,94 in"], "emphasis": true },
         { "label": "12 cm", "values": ["4,72 in"] },
-        { "label": "15 cm", "values": ["5,91 in"] },
+        { "label": "13 cm", "values": ["5,12 in"] },
+        { "label": "14 cm", "values": ["5,51 in"] },
+        { "label": "15 cm", "values": ["5,91 in"], "emphasis": true },
+        { "label": "16 cm", "values": ["6,30 in"] },
+        { "label": "17 cm", "values": ["6,69 in"] },
+        { "label": "18 cm", "values": ["7,09 in"] },
         { "label": "20 cm", "values": ["7,87 in"], "emphasis": true },
+        { "label": "21 cm", "values": ["8,27 in"] },
+        { "label": "22 cm", "values": ["8,66 in"] },
+        { "label": "23 cm", "values": ["9,06 in"] },
+        { "label": "24 cm", "values": ["9,45 in"] },
         { "label": "25 cm", "values": ["9,84 in"] },
         { "label": "30 cm", "values": ["11,81 in"] },
         { "label": "35 cm", "values": ["13,78 in"] },
@@ -239,10 +248,13 @@
         { "label": "15 in", "values": ["38,10 cm"] },
         { "label": "18 in", "values": ["45,72 cm"] },
         { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "21 in", "values": ["53,34 cm"] },
+        { "label": "23 in", "values": ["58,42 cm"] },
         { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76,20 cm"] },
         { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "45 in", "values": ["114,30 cm"] },
         { "label": "48 in", "values": ["121,92 cm"] },
         { "label": "54 in", "values": ["137,16 cm"] },
         { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
@@ -307,7 +319,7 @@
         },
         {
           "title": "Rozměry zavazadel",
-          "description": "Mnohé aerolinie, zejména americké a některé nízkonákladové, uvádějí povolené rozměry zavazadel v palcích. Běžný lineární limit 158 palců (součet výšky, šířky a hloubky) je 401,32 cm. Standardní kabinové zavazadlo o rozměrech 55 × 40 × 20 cm má součet rozměrů 115 cm, což odpovídá přibližně 45,3 lineárních palcům."
+          "description": "Mnohé aerolinie, zejména americké a některé nízkonákladové, uvádějí povolené rozměry zavazadel v palcích. Běžný limit odbaveného zavazadla je 62 lineárních palců (součet výšky, šířky a hloubky), tedy přesně 157,48 cm — proto ho evropské aerolinie uvádějí jako 158 cm. Standardní kabinové zavazadlo o rozměrech 55 × 40 × 20 cm má součet rozměrů 115 cm, což odpovídá přibližně 45,3 lineárního palce."
         }
       ]
     },
@@ -332,16 +344,16 @@
           "answer": "170 cm je 66,93 palce, což ve stopách a palcích odpovídá 5 ft 7 in. Výpočet: 170 ÷ 2,54 = 66,93 in; 66,93 ÷ 12 = 5 stop se zbytkem 6,93 palce, zaokrouhleno na 7."
         },
         {
-          "question": "Kolik palců je 160 cm?",
-          "answer": "160 cm je 62,99 palce, tedy ve stopách a palcích: 5 ft 3 in. Výpočet: 160 ÷ 2,54 = 62,99; 62 ÷ 12 = 5 stop se zbytkem 2,99 palce, zaokrouhleno na 3."
+          "question": "Kolik palců je 15 cm?",
+          "answer": "15 cm je 5,91 palce. Výpočet: 15 ÷ 2,54 = 5,91 in. Pro představu: je to zhruba delší strana smartphonu nebo polovina školního pravítka 30 cm."
         },
         {
-          "question": "Kolik palců je 180 cm?",
-          "answer": "180 cm je 70,87 palce, což ve stopách a palcích je 5 ft 11 in. Tato výška je v anglosaských zemích často považována za hranici mezi průměrnou a vysokou postavou."
+          "question": "Kolik palců je 20 cm?",
+          "answer": "20 cm je 7,87 palce. Výpočet: 20 ÷ 2,54 = 7,87 in. Zaokrouhleno: 20 cm je necelých 8 palců."
         },
         {
-          "question": "Kolik palců je 100 cm?",
-          "answer": "100 cm je 39,37 palce. Jde o snadno zapamatovatelnou referenční hodnotu: metr je přibližně 39 a půl palce. Výpočet: 100 ÷ 2,54 = 39,37 in."
+          "question": "Kolik palců je 40 cm?",
+          "answer": "40 cm je 15,75 palce. Výpočet: 40 ÷ 2,54 = 15,75 in. Je to mimo jiné typická šířka kabinového kufru (55 × 40 × 20 cm)."
         },
         {
           "question": "Kolik centimetrů má jeden palec?",
@@ -364,8 +376,12 @@
           "answer": "Školní pravítko 30 cm měří 11,81 palce. Zaokrouhleně, 30 cm je téměř přesně 12 palců, tedy jedna stopa. V imperiálním systému platí 12 palců = 1 stopa = 30,48 cm, rozdíl je tedy pouhých 0,48 cm."
         },
         {
-          "question": "Je vzorec převodu stejný v ČR i v USA?",
-          "answer": "Ano, vzorec je celosvětově identický: 1 palec = 2,54 cm. Od roku 1959 platí mezinárodní palec, který sjednotil definici v USA, Velké Británii a všech ostatních zemích. Dříve existovaly minimální rozdíly mezi britským a americkým palcem, ale dnes všechny kalkulačky a tabulky používají hodnotu 2,54."
+          "question": "Kolik palců je 25 cm?",
+          "answer": "25 cm je 9,84 palce. Výpočet: 25 ÷ 2,54 = 9,84 in. Zaokrouhleno: 25 cm je necelých 10 palců."
+        },
+        {
+          "question": "Kolik palců je 17 a 18 cm?",
+          "answer": "17 cm je 6,69 palce a 18 cm je 7,09 palce. Výpočty: 17 ÷ 2,54 = 6,69 a 18 ÷ 2,54 = 7,09. Hodnoty z tohoto rozsahu se hledají nejčastěji u tabletů, knih a rozměrů balení."
         },
         {
           "question": "Jak převést velikosti oblečení z palců na cm?",
@@ -377,7 +393,7 @@
         },
         {
           "question": "Odkud pochází konstanta 2,54 cm v definici palce?",
-          "answer": "Hodnota 2,54 cm na palec vychází z historických rozhodnutí o standardizaci. Velká Británie tuto hodnotu přijala v roce 1930 a v roce 1959 ji USA, Kanada, Austrálie a další anglosaské země stanovily jako mezinárodní palec: přesně 25,4 mm, tedy 2,54 cm. Dříve platil americký geodetický palec (2,540005 cm), který byl v roce 2023 officiálně zrušen."
+          "answer": "Hodnota 2,54 cm na palec vychází z historických rozhodnutí o standardizaci. Velká Británie tuto hodnotu přijala v roce 1930 a v roce 1959 ji USA, Kanada, Austrálie a další anglosaské země stanovily jako mezinárodní palec: přesně 25,4 mm, tedy 2,54 cm. Dříve platil americký geodetický palec (2,540005 cm), který byl v roce 2023 oficiálně zrušen."
         },
         {
           "question": "Lze tímto nástrojem převést výšku z cm na stopy a palce?",

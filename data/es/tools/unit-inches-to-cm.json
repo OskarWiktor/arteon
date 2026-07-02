@@ -49,7 +49,7 @@
         "La conversión funciona en ambos sentidos: puedes convertir tanto pulgadas a centímetros como centímetros a pulgadas",
         "El resultado aparece al instante mientras escribes, sin necesidad de hacer clic en ningún botón",
         "El resultado puede copiarse al portapapeles con un solo clic",
-        "La tabla de conversión cubre valores de 0,5 a 72 pulgadas",
+        "La tabla de conversión cubre valores de 0,5 a 90 pulgadas",
         "La tabla de diagonales de pantalla incluye los tamaños más populares de televisores y monitores de 24 a 85 pulgadas",
         "La tabla de estatura muestra la conversión de pies y pulgadas a centímetros para valores de 4 ft 11 in a 6 ft 7 in",
         "La tabla inversa muestra cuántas pulgadas corresponden a un valor en centímetros, de 0,5 cm a 200 cm",
@@ -126,14 +126,18 @@
         { "label": "15 in", "values": ["38,10 cm"] },
         { "label": "18 in", "values": ["45,72 cm"] },
         { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "21 in", "values": ["53,34 cm"] },
+        { "label": "23 in", "values": ["58,42 cm"] },
         { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76,20 cm"] },
         { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "45 in", "values": ["114,30 cm"] },
         { "label": "48 in", "values": ["121,92 cm"] },
         { "label": "54 in", "values": ["137,16 cm"] },
         { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
-        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true },
+        { "label": "90 in", "values": ["228,60 cm"] }
       ],
       "caption": "¿Quieres convertir en el sentido contrario? Usa nuestro <a href=\"/es/herramientas/convertidor-cm-a-pulgadas\">convertidor cm a pulgadas</a>, que tiene su propia tabla y contenido dedicado a esa dirección."
     },
@@ -244,7 +248,7 @@
         },
         {
           "title": "Ropa y calzado de tiendas internacionales",
-          "description": "Las tiendas americanas y británicas indican medidas en pulgadas. Una talla de cuello de 40 cm equivale a unos 15,7 pulgadas. Para zapatos, camisas y otras prendas, la conversión se realiza multiplicando por 2,54. Se recomienda consultar la tabla de tallas del fabricante específico."
+          "description": "Las tiendas americanas y británicas indican medidas en pulgadas. Una talla de cuello de 40 cm equivale a unas 15,7 pulgadas. Para zapatos, camisas y otras prendas, la conversión se realiza multiplicando por 2,54. Se recomienda consultar la tabla de tallas del fabricante específico."
         },
         {
           "title": "Muebles y materiales de construcción",
@@ -269,20 +273,20 @@
           "answer": "La fórmula es: centímetros = pulgadas × 2,54. Ejemplo: 10 pulgadas × 2,54 = 25,40 cm. A la inversa: pulgadas = centímetros ÷ 2,54."
         },
         {
-          "question": "¿Cuántos cm son 5 pulgadas?",
-          "answer": "5 pulgadas son 5 × 2,54 = 12,70 cm. Es un valor de referencia habitual, por ejemplo para la diagonal de la pantalla de un smartphone."
+          "question": "¿Cuántos cm son 15 pulgadas?",
+          "answer": "15 pulgadas son 15 × 2,54 = 38,10 cm. Es el valor que más se consulta para portátiles: la popular diagonal de 15,6 pulgadas equivale a 39,6 cm."
         },
         {
           "question": "¿Cuántos cm son 6 pulgadas?",
           "answer": "6 pulgadas son 6 × 2,54 = 15,24 cm, es decir exactamente medio pie. Es el tamaño típico de la pantalla de un smartphone grande."
         },
         {
-          "question": "¿Cuántos cm son 12 pulgadas?",
-          "answer": "12 pulgadas son 30,48 cm, es decir exactamente un pie. Es un valor de referencia clave: 1 pie = 12 pulgadas = 30,48 cm."
+          "question": "¿Cuántos cm son 21 pulgadas?",
+          "answer": "21 pulgadas son 21 × 2,54 = 53,34 cm. Los valores de este rango se consultan para monitores y maletas de cabina descritas como de 21 pulgadas."
         },
         {
-          "question": "¿Cuántos cm tiene un televisor de 55 pulgadas?",
-          "answer": "Un televisor de 55 pulgadas tiene una diagonal de pantalla de 55 × 2,54 = 139,70 cm. El ancho de una pantalla 16:9 de 55 pulgadas es de unos 122 cm y la altura de unos 69 cm. Los fabricantes a veces indican las dimensiones exteriores con el marco, que son ligeramente mayores."
+          "question": "¿Cuántos cm son 10 pulgadas?",
+          "answer": "10 pulgadas son 10 × 2,54 = 25,40 cm. Es un valor de referencia fácil de recordar (una pulgada por diez) y también una diagonal típica de tableta."
         },
         {
           "question": "¿Cuántos cm tiene un televisor de 65 pulgadas?",
@@ -293,8 +297,12 @@
           "answer": "5 pies 7 pulgadas se convierten primero a pulgadas: 5 × 12 + 7 = 67 pulgadas. Luego: 67 × 2,54 = 170,18 cm. 5 ft 7 in equivalen por tanto a unos 170 cm."
         },
         {
-          "question": "¿Cuántos cm son 6 ft 0 in?",
-          "answer": "6 pies 0 pulgadas son 6 × 12 = 72 pulgadas y 72 × 2,54 = 182,88 cm. Una estatura de exactamente 6 pies equivale a unos 183 cm."
+          "question": "¿Cuántos cm son 5 ft 10 in?",
+          "answer": "5 pies 10 pulgadas son 5 × 12 + 10 = 70 pulgadas, y 70 × 2,54 = 177,80 cm. Una estatura de 5 ft 10 in es, por tanto, poco menos de 178 cm."
+        },
+        {
+          "question": "¿Cuántos cm son 3 pulgadas?",
+          "answer": "3 pulgadas son 3 × 2,54 = 7,62 cm. La comprobación inversa: 7,62 ÷ 2,54 = 3, así que el resultado es fácil de verificar."
         },
         {
           "question": "¿Cómo convertir pulgadas a cm sin calculadora?",

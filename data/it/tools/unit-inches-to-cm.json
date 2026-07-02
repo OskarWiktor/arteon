@@ -49,7 +49,7 @@
         "La conversione funziona in entrambe le direzioni: puoi convertire sia pollici in centimetri sia centimetri in pollici",
         "Il risultato appare immediatamente mentre digiti, senza bisogno di cliccare alcun pulsante",
         "Il risultato può essere copiato negli appunti con un solo clic",
-        "La tabella di conversione copre valori da 0,5 a 72 pollici",
+        "La tabella di conversione copre valori da 0,5 a 90 pollici",
         "La tabella delle diagonali degli schermi include le dimensioni più popolari di televisori e monitor da 24 a 85 pollici",
         "La tabella dell'altezza mostra la conversione di piedi e pollici in centimetri per valori da 4 ft 11 in a 6 ft 7 in",
         "La tabella inversa mostra quanti pollici corrispondono a un valore in centimetri, da 0,5 cm a 200 cm",
@@ -126,14 +126,18 @@
         { "label": "15 in", "values": ["38,10 cm"] },
         { "label": "18 in", "values": ["45,72 cm"] },
         { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "21 in", "values": ["53,34 cm"] },
+        { "label": "23 in", "values": ["58,42 cm"] },
         { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76,20 cm"] },
         { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "45 in", "values": ["114,30 cm"] },
         { "label": "48 in", "values": ["121,92 cm"] },
         { "label": "54 in", "values": ["137,16 cm"] },
         { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
-        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true },
+        { "label": "90 in", "values": ["228,60 cm"] }
       ],
       "caption": "Vuoi convertire nell'altro senso? Usa il nostro <a href=\"/it/strumenti/convertitore-cm-in-pollici\">convertitore cm in pollici</a> con la sua propria tabella e contenuto dedicato a quella direzione."
     },
@@ -269,20 +273,20 @@
           "answer": "La formula è: centimetri = pollici × 2,54. Esempio: 10 pollici × 2,54 = 25,40 cm. Nel senso inverso: pollici = centimetri ÷ 2,54."
         },
         {
-          "question": "Quanti cm sono 5 pollici?",
-          "answer": "5 pollici sono 5 × 2,54 = 12,70 cm. È un valore di riferimento comune, ad esempio per la diagonale dello schermo di uno smartphone."
+          "question": "Quanti cm sono 15 pollici?",
+          "answer": "15 pollici sono 15 × 2,54 = 38,10 cm. È il valore più consultato per i portatili: la diffusa diagonale da 15,6 pollici equivale a 39,6 cm."
         },
         {
           "question": "Quanti cm sono 6 pollici?",
           "answer": "6 pollici sono 6 × 2,54 = 15,24 cm, cioè esattamente mezzo piede. È la dimensione tipica dello schermo di un grande smartphone."
         },
         {
-          "question": "Quanti cm sono 12 pollici?",
-          "answer": "12 pollici sono 30,48 cm, ossia esattamente un piede. È un valore di riferimento importante: 1 piede = 12 pollici = 30,48 cm."
+          "question": "Quanti cm sono 21 pollici?",
+          "answer": "21 pollici sono 21 × 2,54 = 53,34 cm. I valori di questa fascia si consultano per monitor e trolley da cabina descritti come da 21 pollici."
         },
         {
-          "question": "Quanti cm ha un televisore da 55 pollici?",
-          "answer": "Un televisore da 55 pollici ha una diagonale dello schermo di 55 × 2,54 = 139,70 cm. La larghezza di uno schermo 16:9 da 55 pollici è di circa 122 cm e l'altezza di circa 69 cm. I produttori indicano talvolta le dimensioni esterne con la cornice, leggermente più grandi."
+          "question": "Quanti cm sono 10 pollici?",
+          "answer": "10 pollici sono 10 × 2,54 = 25,40 cm. È un valore di riferimento facile da ricordare (un pollice per dieci) e anche una diagonale tipica dei tablet."
         },
         {
           "question": "Quanti cm ha un televisore da 65 pollici?",
@@ -293,8 +297,12 @@
           "answer": "5 piedi e 7 pollici si convertono prima in pollici: 5 × 12 + 7 = 67 pollici. Poi: 67 × 2,54 = 170,18 cm. 5 ft 7 in corrispondono quindi a circa 170 cm."
         },
         {
-          "question": "Quanti cm sono 6 ft 0 in?",
-          "answer": "6 piedi e 0 pollici sono 6 × 12 = 72 pollici e 72 × 2,54 = 182,88 cm. Un'altezza di esattamente 6 piedi equivale a circa 183 cm."
+          "question": "Quanti cm sono 5 ft 10 in?",
+          "answer": "5 piedi e 10 pollici sono 5 × 12 + 10 = 70 pollici, e 70 × 2,54 = 177,80 cm. Un'altezza di 5 ft 10 in è quindi poco meno di 178 cm."
+        },
+        {
+          "question": "Quanti cm sono 3 pollici?",
+          "answer": "3 pollici sono 3 × 2,54 = 7,62 cm. La verifica inversa: 7,62 ÷ 2,54 = 3, quindi il risultato è facile da controllare."
         },
         {
           "question": "Come convertire pollici in cm senza calcolatrice?",

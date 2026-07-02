@@ -3,7 +3,7 @@
   "locale": "fr",
   "metadata": {
     "title": "Calculateur cm en pouces – convertir les centimètres en pouces",
-    "description": "Convertissez les centimètres en pouces instantanément. Taille, pointures, diagonale de TV et dimensions des bagages vérifiées en un clin d'œil. Tableau de conversion cm en pouces et pouces en cm.",
+    "description": "Convertissez les centimètres en pouces instantanément. Vérifiez la taille, les vêtements, la diagonale de TV et les dimensions des bagages en un clin d'œil. Le tableau couvre les deux sens de conversion.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fr/outils/convertisseur-cm-en-pouces"
   },
@@ -124,8 +124,17 @@
         { "label": "9 cm", "values": ["3,54 in"] },
         { "label": "10 cm", "values": ["3,94 in"], "emphasis": true },
         { "label": "12 cm", "values": ["4,72 in"] },
-        { "label": "15 cm", "values": ["5,91 in"] },
+        { "label": "13 cm", "values": ["5,12 in"] },
+        { "label": "14 cm", "values": ["5,51 in"] },
+        { "label": "15 cm", "values": ["5,91 in"], "emphasis": true },
+        { "label": "16 cm", "values": ["6,30 in"] },
+        { "label": "17 cm", "values": ["6,69 in"] },
+        { "label": "18 cm", "values": ["7,09 in"] },
         { "label": "20 cm", "values": ["7,87 in"], "emphasis": true },
+        { "label": "21 cm", "values": ["8,27 in"] },
+        { "label": "22 cm", "values": ["8,66 in"] },
+        { "label": "23 cm", "values": ["9,06 in"] },
+        { "label": "24 cm", "values": ["9,45 in"] },
         { "label": "25 cm", "values": ["9,84 in"] },
         { "label": "30 cm", "values": ["11,81 in"] },
         { "label": "35 cm", "values": ["13,78 in"] },
@@ -239,10 +248,13 @@
         { "label": "15 in", "values": ["38,10 cm"] },
         { "label": "18 in", "values": ["45,72 cm"] },
         { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "21 in", "values": ["53,34 cm"] },
+        { "label": "23 in", "values": ["58,42 cm"] },
         { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76,20 cm"] },
         { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "45 in", "values": ["114,30 cm"] },
         { "label": "48 in", "values": ["121,92 cm"] },
         { "label": "54 in", "values": ["137,16 cm"] },
         { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
@@ -291,7 +303,7 @@
         },
         {
           "title": "Tailles de vêtements de boutiques américaines et britanniques",
-          "description": "Les boutiques américaines et britanniques indiquent souvent la taille de soutien-gorge, la tour de taille ou le tour de poitrine en pouces. La conversion est simple : un tour de poitrine de 80 cm équivaut à 31,5 pouces, 90 cm à 35,4 pouces et 100 cm à 39,4 pouces. Il vaut mieux vérifier ses mensurations avant de passer commande, car les tableaux de tailles varient selon les marques."
+          "description": "Les boutiques américaines et britanniques indiquent souvent la taille de soutien-gorge, le tour de taille ou le tour de poitrine en pouces. La conversion est simple : un tour de poitrine de 80 cm équivaut à 31,5 pouces, 90 cm à 35,4 pouces et 100 cm à 39,4 pouces. Il vaut mieux vérifier ses mensurations avant de passer commande, car les tableaux de tailles varient selon les marques."
         },
         {
           "title": "Téléviseurs, moniteurs et écrans",
@@ -299,7 +311,7 @@
         },
         {
           "title": "Dimensions des bagages",
-          "description": "De nombreuses compagnies aériennes, notamment américaines et certaines compagnies à bas coût, expriment les dimensions autorisées des bagages en pouces. La limite linéaire courante de 158 pouces (somme de la hauteur, de la largeur et de la profondeur) correspond à 401,32 cm. Une valise cabine standard de 55 × 40 × 20 cm a une somme de dimensions de 115 cm, soit environ 45,3 pouces linéaires."
+          "description": "De nombreuses compagnies aériennes, notamment américaines et certaines compagnies à bas coût, expriment les dimensions autorisées des bagages en pouces. La limite courante pour un bagage enregistré est de 62 pouces linéaires (somme de la hauteur, de la largeur et de la profondeur), soit exactement 157,48 cm — c'est pourquoi les compagnies européennes l'indiquent comme 158 cm. Une valise cabine standard de 55 × 40 × 20 cm a une somme de dimensions de 115 cm, soit environ 45,3 pouces linéaires."
         }
       ]
     },
@@ -324,16 +336,16 @@
           "answer": "170 cm correspondent à 66,93 pouces, soit en pieds et pouces 5 ft 7 in. Calcul : 170 ÷ 2,54 = 66,93 in ; 66,93 ÷ 12 = 5 pieds avec un reste de 6,93 pouces, arrondi à 7."
         },
         {
-          "question": "Combien de pouces font 160 cm ?",
-          "answer": "160 cm correspondent à 62,99 pouces, soit en pieds et pouces : 5 ft 3 in. Calcul : 160 ÷ 2,54 = 62,99 ; 62 ÷ 12 = 5 pieds avec un reste de 2,99 pouces, arrondi à 3."
+          "question": "Combien de pouces font 15 cm ?",
+          "answer": "15 cm correspondent à 5,91 pouces. Calcul : 15 ÷ 2,54 = 5,91 in. Pour comparer : c'est à peu près le grand côté d'un smartphone ou la moitié d'une règle de 30 cm."
         },
         {
-          "question": "Combien de pouces font 180 cm ?",
-          "answer": "180 cm correspondent à 70,87 pouces, soit en pieds et pouces 5 ft 11 in. Cette taille est souvent considérée comme la limite entre une stature moyenne et grande dans les pays anglophones."
+          "question": "Combien de pouces font 20 cm ?",
+          "answer": "20 cm correspondent à 7,87 pouces. Calcul : 20 ÷ 2,54 = 7,87 in. Arrondi : 20 cm font un peu moins de 8 pouces."
         },
         {
-          "question": "Combien de pouces font 100 cm ?",
-          "answer": "100 cm correspondent à 39,37 pouces. C'est une valeur de référence facile à retenir : un mètre représente environ 39,5 pouces. Calcul : 100 ÷ 2,54 = 39,37 in."
+          "question": "Combien de pouces font 40 cm ?",
+          "answer": "40 cm correspondent à 15,75 pouces. Calcul : 40 ÷ 2,54 = 15,75 in. C'est notamment la largeur typique d'une valise cabine (55 × 40 × 20 cm)."
         },
         {
           "question": "Combien de centimètres fait un pouce ?",
@@ -356,8 +368,12 @@
           "answer": "Une règle scolaire de 30 cm mesure 11,81 pouces. En arrondissant, 30 cm correspondent presque exactement à 12 pouces, soit un pied. Dans le système impérial, 12 pouces = 1 pied = 30,48 cm, la différence n'est donc que de 0,48 cm."
         },
         {
-          "question": "La formule de conversion est-elle identique en France et aux États-Unis ?",
-          "answer": "Oui, la formule est identique partout dans le monde : 1 pouce = 2,54 cm. Depuis 1959, le pouce international uniformise la définition aux États-Unis, au Royaume-Uni et dans tous les autres pays. Auparavant, il existait de légères différences entre le pouce britannique et d'autres variantes, mais aujourd'hui tous les calculateurs utilisent la valeur 2,54."
+          "question": "Combien de pouces font 25 cm ?",
+          "answer": "25 cm correspondent à 9,84 pouces. Calcul : 25 ÷ 2,54 = 9,84 in. Arrondi : 25 cm font un peu moins de 10 pouces."
+        },
+        {
+          "question": "Combien de pouces font 17 et 18 cm ?",
+          "answer": "17 cm correspondent à 6,69 pouces et 18 cm à 7,09 pouces. Calculs : 17 ÷ 2,54 = 6,69 et 18 ÷ 2,54 = 7,09. Les valeurs de cette plage reviennent souvent pour les tablettes, les livres et les dimensions d'emballages."
         },
         {
           "question": "Comment convertir les tailles de vêtements des pouces en cm ?",
