@@ -84,7 +84,7 @@
     {
       "type": "sectionBasic",
       "title": "Quando devi convertire libbre in chilogrammi?",
-      "html": "<p class=\"text-mid mb-4\">In Italia il chilogrammo è l'unità di massa standard per il peso corporeo, gli alimenti, la merce e l'attrezzatura sportiva. Le app e i siti di salute e fitness americani — come MyFitnessPal, Apple Health o Fitbit — mostrano però il peso in libbre (lb) come impostazione predefinita. Anche i programmi di allenamento più diffusi negli USA usano le libbre: i bilancieri olimpici pesano 45 lb (20 kg), e i dischi standard sono da 45, 35, 25, 10 e 5 lb.</p><p class=\"text-mid mb-4\">Convertire libbre in kg è necessario anche quando si leggono i limiti bagaglio delle compagnie aeree americane, si usa una bilancia calibrata in libbre o si interpreta la cartella clinica di un ospedale anglofono dove il peso di un neonato è registrato in libbre e once.</p><p class=\"text-mid\">Una libbra equivale esattamente a 0,45359237 kg. Al contrario: 1 kg = 2,2046 lb. Il convertitore calcola il risultato non appena inserisci un valore, e puoi copiarlo negli appunti con un solo clic.</p>",
+      "html": "<p class=\"text-mid mb-4\">In Italia il chilogrammo è l'unità di massa standard per il peso corporeo, gli alimenti, la merce e l'attrezzatura sportiva. Le app e i siti di salute e fitness americani — come MyFitnessPal, Apple Health o Fitbit — mostrano però il peso in libbre (lb) come impostazione predefinita. Anche i programmi di allenamento più diffusi negli USA usano le libbre: il bilanciere olimpico pesa 20 kg (negli USA lo chiamano bilanciere da 45 libbre, anche se in realtà sono 44,09 lb) e i dischi standard sono da 45, 35, 25, 10 e 5 lb.</p><p class=\"text-mid mb-4\">Convertire libbre in kg è necessario anche quando si leggono i limiti bagaglio delle compagnie aeree americane, si usa una bilancia calibrata in libbre o si interpreta la cartella clinica di un ospedale anglofono dove il peso di un neonato è registrato in libbre e once.</p><p class=\"text-mid\">Una libbra equivale esattamente a 0,45359237 kg. Al contrario: 1 kg = 2,2046 lb. Il convertitore calcola il risultato non appena inserisci un valore, e puoi copiarlo negli appunti con un solo clic.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Convertitore gratuito da libbre a chilogrammi – Arteon"
     },
@@ -116,8 +116,17 @@
         { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
         { "label": "70 lb", "values": ["31,75 kg"] },
         { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "115 lb", "values": ["52,16 kg"] },
         { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "125 lb", "values": ["56,70 kg"] },
+        { "label": "130 lb", "values": ["58,97 kg"] },
+        { "label": "135 lb", "values": ["61,24 kg"] },
+        { "label": "140 lb", "values": ["63,50 kg"], "emphasis": true },
+        { "label": "145 lb", "values": ["65,77 kg"] },
         { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
+        { "label": "160 lb", "values": ["72,57 kg"] },
+        { "label": "165 lb", "values": ["74,84 kg"] },
+        { "label": "170 lb", "values": ["77,11 kg"] },
         { "label": "180 lb", "values": ["81,65 kg"], "emphasis": true },
         { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
         { "label": "220 lb", "values": ["99,79 kg"] },
@@ -200,16 +209,20 @@
           "answer": "Una libbra equivale esattamente a 0,45359237 kg. Questo valore è fissato come costante dal 1959 con il nome di libbra avoirdupois internazionale. Arrotondato: 1 lb ≈ 0,454 kg."
         },
         {
-          "question": "Quanti kg sono 100 libbre?",
-          "answer": "100 lb sono 45,36 kg. Come riferimento pratico: 100 libbre sono poco meno di 50 kg."
+          "question": "Quanti kg sono 140 libbre?",
+          "answer": "140 lb sono 63,50 kg. Calcolo: 140 × 0,45359 = 63,50. È uno dei valori di peso corporeo più convertiti nelle calcolatrici sulla salute e nei piani di allenamento americani."
         },
         {
           "question": "Quanti kg sono 150 libbre?",
           "answer": "150 lb sono 68,04 kg. È un peso frequente per una persona di corporatura media in Italia."
         },
         {
-          "question": "Quanti kg sono 200 libbre?",
-          "answer": "200 lb sono 90,72 kg — circa 91 kg, un peso tipico per una persona di corporatura robusta o atletica."
+          "question": "Quanti kg sono 165 libbre?",
+          "answer": "165 lb sono 74,84 kg. Calcolo: 165 × 0,45359 = 74,84. Arrotondando: 165 libbre sono poco meno di 75 kg."
+        },
+        {
+          "question": "2 libbre equivalgono a 1 chilogrammo?",
+          "answer": "No: 2 libbre sono 0,907 kg, oltre il 9 % in meno di un chilogrammo. Esattamente 1 kg corrisponde a 2,2046 lb. La scorciatoia '2 libbre = 1 kg' va bene per stime rapide, ma con valori grandi l'errore assoluto cresce in fretta: 100 lb non sono 50 kg, bensì 45,36 kg."
         },
         {
           "question": "Qual è la formula per convertire libbre in kg?",
@@ -234,6 +247,14 @@
         {
           "question": "Quanti kg sono 180 libbre?",
           "answer": "180 lb sono 81,65 kg. È un peso frequente per uomini di corporatura media o leggermente atletica in Italia."
+        },
+        {
+          "question": "Quanti kg sono 60 libbre?",
+          "answer": "60 lb sono 27,22 kg. Calcolo: 60 × 0,45359 = 27,22. Negli USA è, tra l'altro, il peso standard di un sacco di calcestruzzo secco, per questo il valore compare spesso nei progetti di costruzione e fai da te."
+        },
+        {
+          "question": "In quali unità americani e britannici indicano il peso?",
+          "answer": "Gli americani esprimono il peso corporeo in libbre (lb), i britannici colloquialmente in stone e libbre (1 stone = 14 lb), per esempio '11 stone 4'. Nella maggior parte degli altri Paesi, Italia compresa, si usano i chilogrammi. In medicina i chilogrammi dominano anche nei Paesi anglosassoni, perché molte dosi di farmaci si calcolano per chilogrammo di peso corporeo (mg/kg)."
         }
       ]
     },

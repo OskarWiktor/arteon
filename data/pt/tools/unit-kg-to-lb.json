@@ -116,8 +116,10 @@
         { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
         { "label": "15 kg", "values": ["33,07 lb"] },
         { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "23 kg", "values": ["50,71 lb"], "emphasis": true },
         { "label": "25 kg", "values": ["55,12 lb"] },
         { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "32 kg", "values": ["70,55 lb"], "emphasis": true },
         { "label": "40 kg", "values": ["88,18 lb"] },
         { "label": "45 kg", "values": ["99,21 lb"] },
         { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
@@ -259,6 +261,10 @@
           "answer": "Um quilograma equivale a 2,2046 libras (lb). Isso decorre da definição: 1 libra = 0,45359237 kg, portanto 1 kg = 1 ÷ 0,45359237 ≈ 2,2046 lb. Arredondado a um decimal: 1 kg ≈ 2,2 lb."
         },
         {
+          "question": "1 kg equivale a 2 libras?",
+          "answer": "Não, é um atalho popular mas demasiado impreciso. 1 kg corresponde a 2,2046 lb. Se contar 2 libras por quilograma, o resultado fica cerca de 9 % abaixo do real, e com 100 kg a diferença ultrapassa 20 libras. Para calcular de cabeça, multiplique por 2,2 em vez de 2."
+        },
+        {
           "question": "Qual é a fórmula para converter kg em libras?",
           "answer": "A fórmula é: libras = quilogramas × 2,2046. Ao contrário: quilogramas = libras × 0,4536. Por exemplo: 70 kg × 2,2046 = 154,32 lb."
         },
@@ -271,16 +277,16 @@
           "answer": "80 kg são 176,37 lb, equivalentes a 12 stone 8,4 lb no sistema britânico."
         },
         {
-          "question": "Quantas libras são 100 kg?",
-          "answer": "100 kg são 220,46 lb. Arredondando: 100 kg são pouco mais de 220 libras, um valor de referência fácil de memorizar. No sistema britânico: 15 stone 10,5 lb."
+          "question": "Quantas libras são 32 kg?",
+          "answer": "32 kg são 70,55 lb. É o valor que os viajantes mais consultam: 32 kg é o peso máximo permitido para uma única mala despachada na maioria das companhias aéreas (acima disso a bagagem é recusada por segurança do pessoal de terra). As companhias americanas indicam o mesmo limite como 70 lb, ou seja, 31,75 kg."
         },
         {
-          "question": "Quantas libras são 60 kg?",
-          "answer": "60 kg são 132,28 lb, equivalentes a 9 stone 6,3 lb no sistema britânico."
+          "question": "Quantas libras são 65 kg?",
+          "answer": "65 kg são 143,30 lb, equivalentes a 10 stone 3,3 lb no sistema britânico. Cálculo: 65 × 2,2046 = 143,30."
         },
         {
-          "question": "Quantos quilogramas tem uma libra?",
-          "answer": "Uma libra equivale exatamente a 0,45359237 kg. Este valor está fixado como constante desde 1959 com o nome de libra avoirdupois internacional. Arredondado: 1 lb ≈ 0,454 kg."
+          "question": "Quantas libras são 55 kg?",
+          "answer": "55 kg são 121,25 lb, equivalentes a 8 stone 9,3 lb no sistema britânico. Cálculo: 55 × 2,2046 = 121,25."
         },
         {
           "question": "Como converter kg para libras sem calculadora?",
@@ -295,12 +301,20 @@
           "answer": "3,5 kg são 7,716 lb. Em libras e onças: 7 libras e 0,716 × 16 = 11,5 onças, ou seja, aproximadamente 7 lb 11 oz. Um recém-nascido saudável costuma pesar entre 3 e 4 kg, o que equivale a cerca de 6,6–8,8 lb."
         },
         {
-          "question": "Quantos kg são 50 lb de limite de bagagem?",
-          "answer": "50 lb são 22,68 kg. É o limite de bagagem despachada padrão de muitas companhias aéreas. O limite de 70 lb (frequente em primeira classe) equivale a 31,75 kg."
+          "question": "Quantas libras são 23 kg (limite de bagagem)?",
+          "answer": "23 kg são 50,71 lb. É o limite de bagagem despachada mais comum nas companhias aéreas europeias, como a TAP. As companhias americanas indicam o mesmo limite como 50 lb, ou seja, 22,68 kg: a diferença é de apenas cerca de 320 gramas, pelo que na prática os dois limites são equivalentes."
         },
         {
-          "question": "Quantas libras são 90 kg?",
-          "answer": "90 kg são 198,42 lb — quase exatamente 200 libras, um valor de referência muito prático. No sistema britânico: 14 stone 2,4 lb."
+          "question": "Quantas libras são 85 kg?",
+          "answer": "85 kg são 187,39 lb, equivalentes a 13 stone 5,4 lb no sistema britânico. Cálculo: 85 × 2,2046 = 187,39."
+        },
+        {
+          "question": "Quantas libras são 10, 20 e 25 kg?",
+          "answer": "10 kg são 22,05 lb, 20 kg são 44,09 lb e 25 kg são 55,12 lb. Estes três valores surgem sobretudo no ginásio e ao fazer as malas: 10 kg é um limite comum de bagagem de mão (por exemplo na Ryanair ou na Wizz Air com prioridade), 20 kg é o peso da barra olímpica (nos EUA chamada barra de 45 libras, embora sejam exatamente 44,09 lb) e 25 kg é o maior disco olímpico padrão."
+        },
+        {
+          "question": "Como mudar a balança de kg para libras?",
+          "answer": "Na maioria das balanças digitais existe um pequeno botão ou interruptor com a etiqueta UNIT, LB/KG ou KG-LB-ST, situado na parte inferior da balança ou junto ao visor. Cada toque muda a unidade de forma cíclica. Nas balanças inteligentes ligadas a uma aplicação, a unidade muda-se nas definições do perfil dentro da app."
         }
       ]
     },

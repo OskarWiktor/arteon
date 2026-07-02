@@ -124,8 +124,10 @@
         { "label": "12 kg", "values": ["26,46 lb"] },
         { "label": "15 kg", "values": ["33,07 lb"] },
         { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "23 kg", "values": ["50,71 lb"], "emphasis": true },
         { "label": "25 kg", "values": ["55,12 lb"] },
         { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "32 kg", "values": ["70,55 lb"], "emphasis": true },
         { "label": "35 kg", "values": ["77,16 lb"] },
         { "label": "40 kg", "values": ["88,18 lb"] },
         { "label": "45 kg", "values": ["99,21 lb"] },
@@ -280,7 +282,7 @@
         },
         {
           "title": "Entrenamiento y gimnasio",
-          "description": "Los programas de entrenamiento más populares de EE. UU. — Starting Strength, 5/3/1, StrongLifts — indican todas las cargas en libras. Una barra olímpica pesa 45 lb (unos 20 kg), unas mancuernas de 25 lb son poco más de 11 kg. La tabla de pesos de gimnasio de arriba cubre las cargas más habituales."
+          "description": "Los programas de entrenamiento más populares de EE. UU. — Starting Strength, 5/3/1, StrongLifts — indican todas las cargas en libras. Una barra olímpica pesa 20 kg: en EE. UU. la llaman barra de 45 libras, aunque en realidad son 44,09 lb. Unas mancuernas de 25 lb son poco más de 11 kg. La tabla de pesos de gimnasio de arriba cubre las cargas más habituales."
         },
         {
           "title": "Peso del recién nacido",
@@ -305,6 +307,10 @@
           "answer": "Un kilogramo equivale a 2,2046 libras (lb). Esto se desprende de la definición: 1 libra = 0,45359237 kg, así que 1 kg = 1 ÷ 0,45359237 ≈ 2,2046 lb. Redondeado a un decimal: 1 kg ≈ 2,2 lb."
         },
         {
+          "question": "¿1 kg equivale a 2 libras?",
+          "answer": "No, es un atajo popular pero demasiado impreciso. 1 kg son 2,2046 lb. Si cuentas 2 libras por kilogramo, el resultado se queda corto en un 9 %, y con 100 kg la diferencia supera las 20 libras. Para calcular de cabeza, multiplica por 2,2 en lugar de por 2."
+        },
+        {
           "question": "¿Cuál es la fórmula para convertir kg a libras?",
           "answer": "La fórmula es: libras = kilogramos × 2,2046. Al revés: kilogramos = libras × 0,4536. Por ejemplo: 70 kg × 2,2046 = 154,32 lb."
         },
@@ -317,16 +323,16 @@
           "answer": "80 kg son 176,37 lb, equivalentes a 12 stone 8,4 lb en el sistema británico. Este es un peso frecuentemente asociado a una constitución atlética en los países anglosajones."
         },
         {
-          "question": "¿Cuántas libras son 100 kg?",
-          "answer": "100 kg son 220,46 lb. Redondeando: 100 kg son poco más de 220 libras, un valor de referencia fácil de recordar. En el sistema británico: 15 stone 10,5 lb."
+          "question": "¿Cuántas libras son 32 kg?",
+          "answer": "32 kg son 70,55 lb. Es el valor que más consultan los viajeros: 32 kg es el peso máximo permitido para una sola maleta facturada en la mayoría de las aerolíneas (por encima de ese peso el equipaje se rechaza por seguridad del personal de tierra). Las aerolíneas americanas indican el mismo límite como 70 lb, es decir, 31,75 kg."
         },
         {
           "question": "¿Cuántas libras son 50 kg?",
           "answer": "50 kg son 110,23 lb. Como referencia rápida: 50 kg son algo más de 110 libras. En el sistema británico: 7 stone 12,2 lb."
         },
         {
-          "question": "¿Cuántos kilogramos tiene una libra?",
-          "answer": "Una libra equivale exactamente a 0,45359237 kg. Este valor está fijado como constante desde 1959 con el nombre de libra avoirdupois internacional. Redondeado: 1 lb ≈ 0,454 kg."
+          "question": "¿Cuántas libras son 65 kg?",
+          "answer": "65 kg son 143,30 lb, equivalentes a 10 stone 3,3 lb en el sistema británico. Cálculo: 65 × 2,2046 = 143,30."
         },
         {
           "question": "¿Cómo convertir kg a libras sin calculadora?",
@@ -341,16 +347,24 @@
           "answer": "3,5 kg son 7,716 lb. En libras y onzas: 7 libras y 0,716 × 16 = 11,5 onzas, es decir, aproximadamente 7 lb 11 oz. Un recién nacido sano suele pesar entre 3 y 4 kg, lo que equivale a unos 6,6–8,8 lb."
         },
         {
-          "question": "¿Cuántos kg son 50 lb de límite de equipaje?",
-          "answer": "50 lb son 50 × 0,45359237 = 22,68 kg. Es el límite de equipaje facturado estándar de muchas aerolíneas. El límite de 70 lb (frecuente en primera clase) equivale a 31,75 kg."
+          "question": "¿Cuántas libras son 23 kg (límite de equipaje)?",
+          "answer": "23 kg son 50,71 lb. Es el límite de equipaje facturado más habitual en las aerolíneas europeas como Iberia o Air Europa. Las aerolíneas americanas indican el mismo límite como 50 lb, es decir, 22,68 kg: la diferencia es de solo unos 320 gramos, así que en la práctica ambos límites son equivalentes."
         },
         {
-          "question": "¿Cuántas libras son 60 kg?",
-          "answer": "60 kg son 132,28 lb, equivalentes a 9 stone 6,3 lb en el sistema británico. Es un peso típico para una mujer de constitución media en España o Latinoamérica."
+          "question": "¿Cuántas libras son 55 kg?",
+          "answer": "55 kg son 121,25 lb, equivalentes a 8 stone 9,3 lb en el sistema británico. Cálculo: 55 × 2,2046 = 121,25."
         },
         {
-          "question": "¿Cuántas libras son 90 kg?",
-          "answer": "90 kg son 198,42 lb. Redondeando, son casi exactamente 200 libras, un valor de referencia muy práctico. En el sistema británico: 14 stone 2,4 lb."
+          "question": "¿Cuántas libras son 85 kg?",
+          "answer": "85 kg son 187,39 lb, equivalentes a 13 stone 5,4 lb en el sistema británico. Cálculo: 85 × 2,2046 = 187,39."
+        },
+        {
+          "question": "¿Cuántas libras son 10, 20 y 25 kg?",
+          "answer": "10 kg son 22,05 lb, 20 kg son 44,09 lb y 25 kg son 55,12 lb. Estos tres valores aparecen sobre todo en el gimnasio y al hacer la maleta: 10 kg es un límite habitual de equipaje de mano (por ejemplo en Ryanair o Vueling con prioridad), 20 kg pesa la barra olímpica (en EE. UU. la llaman barra de 45 libras, aunque en realidad son 44,09 lb) y 25 kg es el disco olímpico estándar más grande."
+        },
+        {
+          "question": "¿Cómo cambio la báscula de kg a libras?",
+          "answer": "En la mayoría de las básculas digitales hay un pequeño botón o interruptor con la etiqueta UNIT, LB/KG o KG-LB-ST, situado en la parte inferior de la báscula o junto a la pantalla. Cada pulsación cambia la unidad de forma cíclica. En las básculas inteligentes conectadas a una app, la unidad se cambia en los ajustes del perfil dentro de la aplicación."
         }
       ]
     },

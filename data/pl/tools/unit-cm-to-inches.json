@@ -124,8 +124,17 @@
         { "label": "9 cm", "values": ["3,54 in"] },
         { "label": "10 cm", "values": ["3,94 in"], "emphasis": true },
         { "label": "12 cm", "values": ["4,72 in"] },
-        { "label": "15 cm", "values": ["5,91 in"] },
+        { "label": "13 cm", "values": ["5,12 in"] },
+        { "label": "14 cm", "values": ["5,51 in"] },
+        { "label": "15 cm", "values": ["5,91 in"], "emphasis": true },
+        { "label": "16 cm", "values": ["6,30 in"] },
+        { "label": "17 cm", "values": ["6,69 in"] },
+        { "label": "18 cm", "values": ["7,09 in"] },
         { "label": "20 cm", "values": ["7,87 in"], "emphasis": true },
+        { "label": "21 cm", "values": ["8,27 in"] },
+        { "label": "22 cm", "values": ["8,66 in"] },
+        { "label": "23 cm", "values": ["9,06 in"] },
+        { "label": "24 cm", "values": ["9,45 in"] },
         { "label": "25 cm", "values": ["9,84 in"] },
         { "label": "30 cm", "values": ["11,81 in"] },
         { "label": "35 cm", "values": ["13,78 in"] },
@@ -239,10 +248,13 @@
         { "label": "15 in", "values": ["38,10 cm"] },
         { "label": "18 in", "values": ["45,72 cm"] },
         { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "21 in", "values": ["53,34 cm"] },
+        { "label": "23 in", "values": ["58,42 cm"] },
         { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76,20 cm"] },
         { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "45 in", "values": ["114,30 cm"] },
         { "label": "48 in", "values": ["121,92 cm"] },
         { "label": "54 in", "values": ["137,16 cm"] },
         { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
@@ -307,7 +319,7 @@
         },
         {
           "title": "Wymiary bagażu",
-          "description": "Wiele linii lotniczych, szczególnie amerykańskich i niektórych tanich przewoźników, podaje dopuszczalne wymiary bagażu w calach. Popularny limit liniowy 158 cali (suma wysokości, szerokości i głębokości) to 401,32 cm. Standardowa walizka kabinowa o wymiarach 55 × 40 × 20 cm ma 115 cm sumy wymiarów, co odpowiada około 45,3 calach."
+          "description": "Wiele linii lotniczych, szczególnie amerykańskich i niektórych tanich przewoźników, podaje dopuszczalne wymiary bagażu w calach. Popularny limit bagażu rejestrowanego to 62 cale liniowe (suma wysokości, szerokości i głębokości), czyli dokładnie 157,48 cm — dlatego europejskie linie podają go jako 158 cm. Standardowa walizka kabinowa o wymiarach 55 × 40 × 20 cm ma 115 cm sumy wymiarów, co daje około 45,3 cala."
         }
       ]
     },
@@ -332,16 +344,16 @@
           "answer": "170 cm to 66,93 cala, co w przeliczeniu na stopy i cale wynosi 5 stóp i 7 cali (5 ft 7 in). Taki zapis stosuje się w krajach anglojęzycznych. Obliczenie: 170 ÷ 2,54 = 66,93 in; 66,93 ÷ 12 = 5 stóp z resztą 6,93 cala, którą zaokrągla się do 7."
         },
         {
-          "question": "Ile cali ma 160 cm?",
-          "answer": "160 cm to 62,99 cala, czyli w zapisie na stopy i cale: 5 ft 3 in (pięć stóp i trzy cale). Obliczenie: 160 ÷ 2,54 = 62,99; 62 ÷ 12 = 5 stóp z resztą 2,99 cala zaokrąglanym do 3."
+          "question": "Ile cali ma 15 cm?",
+          "answer": "15 cm to 5,91 cala. Obliczenie: 15 ÷ 2,54 = 5,91 in. Dla szybkiego porównania: to mniej więcej długość dłuższego boku smartfona lub połowa linijki szkolnej 30 cm."
         },
         {
-          "question": "Ile cali ma 180 cm?",
-          "answer": "180 cm to 70,87 cala, co w przeliczeniu na stopy i cale wynosi 5 ft 11 in (pięć stóp jedenaście cali). To wzrost często opisywany jako granica między przeciętnym a wysokim mężczyzną w krajach anglojęzycznych."
+          "question": "Ile cali ma 20 cm?",
+          "answer": "20 cm to 7,87 cala. Obliczenie: 20 ÷ 2,54 = 7,87 in. Zaokrąglając: 20 cm to niecałe 8 cali."
         },
         {
-          "question": "Ile cali ma 100 cm?",
-          "answer": "100 cm to 39,37 cala. Jest to łatwa do zapamiętania wartość referencyjna: metr to mniej więcej 39 i pół cala. Obliczenie: 100 ÷ 2,54 = 39,37 in."
+          "question": "Ile cali ma 40 cm?",
+          "answer": "40 cm to 15,75 cala. Obliczenie: 40 ÷ 2,54 = 15,75 in. To m.in. typowa szerokość walizki kabinowej (55 × 40 × 20 cm)."
         },
         {
           "question": "Ile centymetrów ma jeden cal?",
@@ -364,8 +376,12 @@
           "answer": "Standardowa linijka szkolna o długości 30 cm ma 11,81 cala. Zaokrąglając, 30 cm to niemal 12 cali, czyli dokładnie jedna stopa. W systemie imperialnym 12 cali = 1 stopa = 30,48 cm, więc różnica wynosi zaledwie 0,48 cm."
         },
         {
-          "question": "Czy przy przeliczeniu cm na cale obowiązuje inny wzór w USA niż w Europie?",
-          "answer": "Nie, wzór jest identyczny na całym świecie: 1 cal = 2,54 cm. Od 1959 roku obowiązuje tzw. cal międzynarodowy, który ujednolicił definicję w USA, Wielkiej Brytanii i pozostałych krajach. Wcześniej istniały minimalne różnice między calem angielskim a innymi, ale dziś wszystkie kalkulatory i tabele używają tej samej wartości 2,54."
+          "question": "Ile cali ma 25 cm?",
+          "answer": "25 cm to 9,84 cala. Obliczenie: 25 ÷ 2,54 = 9,84 in. Zaokrąglając: 25 cm to niecałe 10 cali."
+        },
+        {
+          "question": "Ile cali ma 17 i 18 cm?",
+          "answer": "17 cm to 6,69 cala, a 18 cm to 7,09 cala. Obliczenia: 17 ÷ 2,54 = 6,69 oraz 18 ÷ 2,54 = 7,09. Wartości z tego zakresu sprawdza się często przy wymiarach tabletów, książek i opakowań."
         },
         {
           "question": "Jak przeliczać rozmiary ubrań z cali na cm?",

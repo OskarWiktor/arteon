@@ -126,11 +126,16 @@
         { "label": "90 lb", "values": ["40.82 kg"] },
         { "label": "100 lb", "values": ["45.36 kg"], "emphasis": true },
         { "label": "110 lb", "values": ["49.90 kg"] },
+        { "label": "115 lb", "values": ["52.16 kg"] },
         { "label": "120 lb", "values": ["54.43 kg"] },
+        { "label": "125 lb", "values": ["56.70 kg"] },
         { "label": "130 lb", "values": ["58.97 kg"] },
-        { "label": "140 lb", "values": ["63.50 kg"] },
+        { "label": "135 lb", "values": ["61.24 kg"] },
+        { "label": "140 lb", "values": ["63.50 kg"], "emphasis": true },
+        { "label": "145 lb", "values": ["65.77 kg"] },
         { "label": "150 lb", "values": ["68.04 kg"], "emphasis": true },
         { "label": "160 lb", "values": ["72.57 kg"] },
+        { "label": "165 lb", "values": ["74.84 kg"] },
         { "label": "170 lb", "values": ["77.11 kg"] },
         { "label": "180 lb", "values": ["81.65 kg"] },
         { "label": "190 lb", "values": ["86.18 kg"] },
@@ -215,7 +220,7 @@
         },
         {
           "title": "Strength training and YouTube programmes",
-          "description": "Popular US training programmes — Starting Strength, 5/3/1, StrongLifts — list all weights in pounds. 135 lb is about 61 kg, 225 lb is about 102 kg, and the goal many lifters chase — 'benching 225' — is roughly 102 kg on the bar. The gym weights table above covers the most common loads."
+          "description": "Popular US training programmes — Starting Strength, 5/3/1, StrongLifts — list all weights in pounds. 135 lb is about 61 kg, and 'benching 225', the milestone many lifters chase, is just over 102 kg. The gym weights table above covers the most common loads."
         },
         {
           "title": "Baggage limits and parcels",
@@ -248,24 +253,24 @@
           "answer": "150 lb is 68.04 kg. Calculation: 150 × 0.45359 = 68.04. This is a common body weight in the US, frequently quoted in women's health calculators."
         },
         {
-          "question": "How many kg is 100 lb?",
-          "answer": "100 lb is 45.36 kg. A handy fact: 100 pounds is just under half of 100 kg."
+          "question": "How many kg is 140 lb?",
+          "answer": "140 lb is 63.50 kg. Calculation: 140 × 0.45359 = 63.50. This is one of the most frequently converted body weight values in US health calculators and training plans."
         },
         {
-          "question": "How many kg is 200 lb?",
-          "answer": "200 lb is 90.72 kg. In the US, 200 pounds is often mentioned as a reference point for an athletic male body weight."
+          "question": "How many kg is 180 lb?",
+          "answer": "180 lb is 81.65 kg. Calculation: 180 × 0.45359 = 81.65. Quick mental check: 180 ÷ 2.2 ≈ 81.8 kg, so the result adds up."
         },
         {
           "question": "How many kg is 50 lb?",
           "answer": "50 lb is 22.68 kg. This is the standard checked baggage weight limit on many US airlines."
         },
         {
-          "question": "How many kg is 70 lb?",
-          "answer": "70 lb is 31.75 kg. This is the higher baggage limit used by some airlines for first class or elite-status passengers."
+          "question": "How many kg is 130 lb?",
+          "answer": "130 lb is 58.97 kg. Calculation: 130 × 0.45359 = 58.97. Rounded: 130 pounds is just under 59 kg."
         },
         {
-          "question": "How many kg is 1 pound?",
-          "answer": "1 pound (lb) is 0.45359237 kg. A useful approximation: 1 lb ≈ 0.45 kg, which is just under half a kilogram."
+          "question": "Is 2 pounds equal to 1 kilogram?",
+          "answer": "No — 2 pounds is 0.907 kg, which is more than 9% short of a kilogram. Exactly 1 kg corresponds to 2.2046 lb. The '2 pounds = 1 kg' shortcut can be handy for rough estimates, but the absolute error grows quickly with larger values: 100 lb is not 50 kg but 45.36 kg."
         },
         {
           "question": "How can I convert pounds to kilograms without a calculator?",
@@ -273,27 +278,31 @@
         },
         {
           "question": "How many kg is 135 lb (a bench press benchmark)?",
-          "answer": "135 lb is 61.24 kg. In gym culture, '135 on the bench' is a popular milestone. It corresponds to an Olympic barbell (20 kg) plus two 20 kg plates — almost exactly 135 lb."
+          "answer": "135 lb is 61.24 kg. In gym culture, '135 on the bench' is a popular milestone: a 45 lb barbell plus two 45 lb plates makes exactly 135 lb. The closest metric setup — a 20 kg barbell plus two 20 kg plates — is 60 kg, or 132.3 lb, so slightly less."
         },
         {
           "question": "Is a pound the same as an ounce?",
           "answer": "No — a pound (lb) and an ounce (oz) are two different units. 1 pound = 16 ounces. One ounce is about 28.35 g, and one pound is about 453.6 g (0.4536 kg). Baby weights are often given in pounds and ounces, e.g. '7 lb 11 oz'."
         },
         {
-          "question": "How many kg is 160 lb?",
-          "answer": "160 lb is 72.57 kg. In the US, 160 pounds is often quoted as a lean male body weight or a target weight in weight-loss plans."
+          "question": "How many kg is 165 lb?",
+          "answer": "165 lb is 74.84 kg. Calculation: 165 × 0.45359 = 74.84. Rounded: 165 pounds is just under 75 kg."
         },
         {
           "question": "How many kg is 225 lb (a legendary bench press)?",
-          "answer": "225 lb is 102.06 kg. In gym culture, '225 on the bench' is a symbol of serious strength and a popular training milestone. It corresponds to four 45 lb plates plus the 45 lb barbell."
+          "answer": "225 lb is 102.06 kg. In gym culture, '225 on the bench' is a symbol of serious strength and a popular training milestone: a 45 lb barbell plus four 45 lb plates (two per side) makes exactly 225 lb. In kilograms that is just over 102 kg."
         },
         {
-          "question": "Is the English pound the same as the historical pound?",
-          "answer": "Today, only the avoirdupois pound is used, defined since 1959 as exactly 0.45359237 kg. Historically there were other types: the apothecaries' pound (about 373 g), the troy pound (about 373 g, still used for precious metals) and the merchant's pound. In everyday use and trade, only the avoirdupois pound applies."
+          "question": "What units do Americans and British people use for body weight?",
+          "answer": "Americans state body weight in pounds (lb), while British people commonly use stone and pounds (1 stone = 14 lb), for example '11 stone 4'. Most other countries use kilograms. In medicine, kilograms dominate even in English-speaking countries, because many drug doses are calculated per kilogram of body weight (mg/kg)."
         },
         {
           "question": "How many pounds is a 23 kg baggage limit?",
           "answer": "23 kg is 23 × 2.2046 = 50.71 lb, approximately 50 lb. That is why European airlines often state a 23 kg limit while US carriers say 50 lb — they are almost the same. The difference is 0.71 lb, or about 320 grams."
+        },
+        {
+          "question": "How many kg is 60 lb?",
+          "answer": "60 lb is 27.22 kg. Calculation: 60 × 0.45359 = 27.22. In the US this is also the standard weight of a bag of dry concrete mix, which is why the value often comes up in construction and DIY projects."
         }
       ]
     },

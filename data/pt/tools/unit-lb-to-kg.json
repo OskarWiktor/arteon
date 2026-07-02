@@ -84,7 +84,7 @@
     {
       "type": "sectionBasic",
       "title": "Quando precisa de converter libras para quilogramas?",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, o quilograma é a unidade de massa padrão para peso corporal, alimentos, mercadoria e equipamento desportivo. Contudo, as apps e sites de saúde e fitness dos EUA — como MyFitnessPal, Apple Health ou Fitbit — mostram o peso em libras (lb) por predefinição. Os planos de treino populares dos EUA também usam libras: os pesos das barras olímpicas são dados em 45 lb (20 kg), e os discos padrão em 45, 35, 25, 10 e 5 lb.</p><p class=\"text-mid mb-4\">Converter libras para kg é também necessário ao ler os limites de bagagem de companhias aéreas americanas, ao verificar o peso numa balança em libras ou ao interpretar documentação médica de um hospital anglófono onde o peso de um bebé é registado em libras e onças.</p><p class=\"text-mid\">Uma libra equivale exatamente a 0,45359237 kg. Ao contrário: 1 kg = 2,2046 lb. O conversor calcula o resultado assim que digita um valor, e pode copiá-lo para a área de transferência com um único clique.</p>",
+      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, o quilograma é a unidade de massa padrão para peso corporal, alimentos, mercadoria e equipamento desportivo. Contudo, as apps e sites de saúde e fitness dos EUA — como MyFitnessPal, Apple Health ou Fitbit — mostram o peso em libras (lb) por predefinição. Os planos de treino populares dos EUA também usam libras: a barra olímpica pesa 20 kg (nos EUA chamada barra de 45 libras, embora sejam exatamente 44,09 lb) e os discos padrão são de 45, 35, 25, 10 e 5 lb.</p><p class=\"text-mid mb-4\">Converter libras para kg é também necessário ao ler os limites de bagagem de companhias aéreas americanas, ao verificar o peso numa balança em libras ou ao interpretar documentação médica de um hospital anglófono onde o peso de um bebé é registado em libras e onças.</p><p class=\"text-mid\">Uma libra equivale exatamente a 0,45359237 kg. Ao contrário: 1 kg = 2,2046 lb. O conversor calcula o resultado assim que digita um valor, e pode copiá-lo para a área de transferência com um único clique.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversor gratuito de libras para quilogramas – Arteon"
     },
@@ -122,8 +122,17 @@
         { "label": "70 lb", "values": ["31,75 kg"] },
         { "label": "80 lb", "values": ["36,29 kg"] },
         { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
+        { "label": "115 lb", "values": ["52,16 kg"] },
         { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "125 lb", "values": ["56,70 kg"] },
+        { "label": "130 lb", "values": ["58,97 kg"] },
+        { "label": "135 lb", "values": ["61,24 kg"] },
+        { "label": "140 lb", "values": ["63,50 kg"], "emphasis": true },
+        { "label": "145 lb", "values": ["65,77 kg"] },
         { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
+        { "label": "160 lb", "values": ["72,57 kg"] },
+        { "label": "165 lb", "values": ["74,84 kg"] },
+        { "label": "170 lb", "values": ["77,11 kg"] },
         { "label": "180 lb", "values": ["81,65 kg"], "emphasis": true },
         { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
         { "label": "220 lb", "values": ["99,79 kg"] },
@@ -206,16 +215,20 @@
           "answer": "Uma libra equivale exatamente a 0,45359237 kg. Este valor está fixado como constante desde 1959 com o nome de libra avoirdupois internacional. Arredondado: 1 lb ≈ 0,454 kg."
         },
         {
-          "question": "Quantos kg são 100 libras?",
-          "answer": "100 lb são 45,36 kg. Como referência prática: 100 libras são pouco menos de 50 kg."
+          "question": "Quantos kg são 140 libras?",
+          "answer": "140 lb são 63,50 kg. Cálculo: 140 × 0,45359 = 63,50. É um dos valores de peso corporal mais convertidos nas calculadoras de saúde e planos de treino dos EUA."
         },
         {
           "question": "Quantos kg são 150 libras?",
           "answer": "150 lb são 68,04 kg. É um peso frequente para uma pessoa de constituição média em Portugal ou no Brasil."
         },
         {
-          "question": "Quantos kg são 200 libras?",
-          "answer": "200 lb são 90,72 kg. Arredondando: 200 libras equivalem a cerca de 91 kg."
+          "question": "Quantos kg são 165 libras?",
+          "answer": "165 lb são 74,84 kg. Cálculo: 165 × 0,45359 = 74,84. Arredondando: 165 libras são pouco menos de 75 kg."
+        },
+        {
+          "question": "2 libras equivalem a 1 quilograma?",
+          "answer": "Não: 2 libras são 0,907 kg, mais de 9 % abaixo de um quilograma. Exatamente 1 kg corresponde a 2,2046 lb. O atalho de '2 libras = 1 kg' serve para estimativas rápidas, mas com valores grandes o erro absoluto cresce depressa: 100 lb não são 50 kg, mas sim 45,36 kg."
         },
         {
           "question": "Qual é a fórmula para converter libras em kg?",
@@ -240,6 +253,14 @@
         {
           "question": "Quantos kg são 180 libras?",
           "answer": "180 lb são 81,65 kg. É um peso frequente em homens de constituição média ou ligeiramente atlética em Portugal e no Brasil."
+        },
+        {
+          "question": "Quantos kg são 60 libras?",
+          "answer": "60 lb são 27,22 kg. Cálculo: 60 × 0,45359 = 27,22. Nos EUA é, entre outras coisas, o peso padrão de um saco de betão seco, razão pela qual este valor aparece com frequência em projetos de construção e bricolage."
+        },
+        {
+          "question": "Em que unidades os americanos e os britânicos indicam o peso?",
+          "answer": "Os americanos indicam o peso corporal em libras (lb) e os britânicos, coloquialmente, em stone e libras (1 stone = 14 lb), por exemplo '11 stone 4'. Nos restantes países, incluindo Portugal e o Brasil, usam-se os quilogramas. Na medicina, os quilogramas dominam mesmo nos países anglo-saxónicos, porque muitas doses de medicamentos são calculadas por quilograma de peso corporal (mg/kg)."
         }
       ]
     },

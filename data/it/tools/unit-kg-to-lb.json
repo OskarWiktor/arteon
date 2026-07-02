@@ -115,8 +115,10 @@
         { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
         { "label": "15 kg", "values": ["33,07 lb"] },
         { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "23 kg", "values": ["50,71 lb"], "emphasis": true },
         { "label": "25 kg", "values": ["55,12 lb"] },
         { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "32 kg", "values": ["70,55 lb"], "emphasis": true },
         { "label": "40 kg", "values": ["88,18 lb"] },
         { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
         { "label": "60 kg", "values": ["132,28 lb"] },
@@ -244,6 +246,10 @@
           "answer": "Un chilogrammo equivale a 2,2046 libbre (lb). Questo deriva dalla definizione: 1 libbra = 0,45359237 kg, quindi 1 kg = 1 ÷ 0,45359237 ≈ 2,2046 lb. Arrotondato a un decimale: 1 kg ≈ 2,2 lb."
         },
         {
+          "question": "1 kg equivale a 2 libbre?",
+          "answer": "No, è una scorciatoia diffusa ma troppo imprecisa. 1 kg corrisponde a 2,2046 lb. Se conti 2 libbre per chilogrammo, il risultato resta indietro di circa il 9 %, e con 100 kg la differenza supera le 20 libbre. Per calcolare a mente, moltiplica per 2,2 invece che per 2."
+        },
+        {
           "question": "Qual è la formula per convertire kg in libbre?",
           "answer": "La formula è: libbre = chilogrammi × 2,2046. Al contrario: chilogrammi = libbre × 0,4536. Per esempio: 70 kg × 2,2046 = 154,32 lb."
         },
@@ -256,16 +262,16 @@
           "answer": "80 kg sono 176,37 lb, equivalenti a 12 stone 8,4 lb nel sistema britannico."
         },
         {
-          "question": "Quante libbre sono 100 kg?",
-          "answer": "100 kg sono 220,46 lb. Arrotondando: 100 kg sono poco più di 220 libbre, un valore di riferimento facile da ricordare. Nel sistema britannico: 15 stone 10,5 lb."
+          "question": "Quante libbre sono 32 kg?",
+          "answer": "32 kg sono 70,55 lb. È il valore che i viaggiatori controllano più spesso: 32 kg è il peso massimo consentito per una singola valigia da stiva nella maggior parte delle compagnie aeree (oltre questo peso il bagaglio viene rifiutato per la sicurezza del personale di terra). Le compagnie americane indicano lo stesso limite come 70 lb, cioè 31,75 kg."
         },
         {
-          "question": "Quante libbre sono 60 kg?",
-          "answer": "60 kg sono 132,28 lb, equivalenti a 9 stone 6,3 lb nel sistema britannico."
+          "question": "Quante libbre sono 65 kg?",
+          "answer": "65 kg sono 143,30 lb, equivalenti a 10 stone 3,3 lb nel sistema britannico. Calcolo: 65 × 2,2046 = 143,30."
         },
         {
-          "question": "Quanti chilogrammi ha una libbra?",
-          "answer": "Una libbra equivale esattamente a 0,45359237 kg. Questo valore è fissato come costante dal 1959 con il nome di libbra avoirdupois internazionale. Arrotondato: 1 lb ≈ 0,454 kg."
+          "question": "Quante libbre sono 55 kg?",
+          "answer": "55 kg sono 121,25 lb, equivalenti a 8 stone 9,3 lb nel sistema britannico. Calcolo: 55 × 2,2046 = 121,25."
         },
         {
           "question": "Come convertire kg in libbre senza calcolatrice?",
@@ -280,8 +286,20 @@
           "answer": "3,5 kg sono 7,716 lb. In libbre e once: 7 libbre e 0,716 × 16 = 11,5 once, cioè circa 7 lb 11 oz. Un neonato sano pesa in genere tra 3 e 4 kg, equivalenti a circa 6,6–8,8 lb."
         },
         {
-          "question": "Quante libbre sono 90 kg?",
-          "answer": "90 kg sono 198,42 lb — quasi esattamente 200 libbre, un valore di riferimento molto pratico. Nel sistema britannico: 14 stone 2,4 lb."
+          "question": "Quante libbre sono 85 kg?",
+          "answer": "85 kg sono 187,39 lb, equivalenti a 13 stone 5,4 lb nel sistema britannico. Calcolo: 85 × 2,2046 = 187,39."
+        },
+        {
+          "question": "Quante libbre sono 23 kg (limite bagaglio)?",
+          "answer": "23 kg sono 50,71 lb. È il limite di bagaglio da stiva più diffuso nelle compagnie aeree europee come ITA Airways. Le compagnie americane indicano lo stesso limite come 50 lb, cioè 22,68 kg: la differenza è di soli 320 grammi circa, quindi in pratica i due limiti sono equivalenti."
+        },
+        {
+          "question": "Quante libbre sono 10, 20 e 25 kg?",
+          "answer": "10 kg sono 22,05 lb, 20 kg sono 44,09 lb e 25 kg sono 55,12 lb. Questi tre valori compaiono soprattutto in palestra e quando prepari la valigia: 10 kg è un limite frequente per il bagaglio a mano (per esempio con Ryanair o Wizz Air con priorità), 20 kg è il peso del bilanciere olimpico (negli USA chiamato bilanciere da 45 libbre, anche se in realtà sono 44,09 lb) e 25 kg è il disco olimpico standard più grande."
+        },
+        {
+          "question": "Come cambio la bilancia da kg a libbre?",
+          "answer": "Sulla maggior parte delle bilance digitali c'è un piccolo pulsante o interruttore con l'etichetta UNIT, LB/KG o KG-LB-ST, situato sul fondo della bilancia o accanto al display. Ogni pressione cambia l'unità in modo ciclico. Sulle bilance smart collegate a un'app, l'unità si cambia nelle impostazioni del profilo dentro l'applicazione."
         }
       ]
     },

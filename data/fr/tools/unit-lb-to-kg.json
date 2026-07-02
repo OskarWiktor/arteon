@@ -126,11 +126,16 @@
         { "label": "90 lb", "values": ["40,82 kg"] },
         { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
         { "label": "110 lb", "values": ["49,90 kg"] },
+        { "label": "115 lb", "values": ["52,16 kg"] },
         { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "125 lb", "values": ["56,70 kg"] },
         { "label": "130 lb", "values": ["58,97 kg"] },
-        { "label": "140 lb", "values": ["63,50 kg"] },
+        { "label": "135 lb", "values": ["61,24 kg"] },
+        { "label": "140 lb", "values": ["63,50 kg"], "emphasis": true },
+        { "label": "145 lb", "values": ["65,77 kg"] },
         { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
         { "label": "160 lb", "values": ["72,57 kg"] },
+        { "label": "165 lb", "values": ["74,84 kg"] },
         { "label": "170 lb", "values": ["77,11 kg"] },
         { "label": "180 lb", "values": ["81,65 kg"] },
         { "label": "190 lb", "values": ["86,18 kg"] },
@@ -203,7 +208,7 @@
         },
         {
           "title": "Musculation et programmes YouTube",
-          "description": "Les programmes d'entraînement américains populaires — Starting Strength, 5/3/1, StrongLifts — indiquent toutes les charges en livres. 135 lb représentent environ 61 kg, 225 lb environ 102 kg, et l'objectif culte du développé couché à 225 lb correspond à environ 102 kg sur la barre. Le tableau de poids ci-dessus couvre les charges les plus courantes."
+          "description": "Les programmes d'entraînement américains populaires — Starting Strength, 5/3/1, StrongLifts — indiquent toutes les charges en livres. 135 lb représentent environ 61 kg, et l'objectif culte du développé couché à 225 lb correspond à un peu plus de 102 kg sur la barre. Le tableau de poids ci-dessus couvre les charges les plus courantes."
         },
         {
           "title": "Limites de bagages et colis",
@@ -236,12 +241,16 @@
           "answer": "150 lb correspondent à 68,04 kg. Calcul : 150 × 0,45359 = 68,04. C'est un poids corporel fréquemment cité dans les calculateurs de santé américains."
         },
         {
-          "question": "Combien de kg font 100 lb ?",
-          "answer": "100 lb correspondent à 45,36 kg. Aide-mémoire : 100 livres représentent un peu moins de la moitié de 100 kg."
+          "question": "Combien de kg font 140 lb ?",
+          "answer": "140 lb correspondent à 63,50 kg. Calcul : 140 × 0,45359 = 63,50. C'est l'une des valeurs de poids corporel les plus converties dans les calculateurs de santé et les plans d'entraînement américains."
         },
         {
-          "question": "Combien de kg font 200 lb ?",
-          "answer": "200 lb correspondent à 90,72 kg. Aux États-Unis, 200 livres est souvent cité comme le poids de référence d'un homme à la carrure athlétique."
+          "question": "Combien de kg font 180 lb ?",
+          "answer": "180 lb correspondent à 81,65 kg. Calcul : 180 × 0,45359 = 81,65. Vérification mentale rapide : 180 ÷ 2,2 ≈ 81,8 kg, le résultat est cohérent."
+        },
+        {
+          "question": "2 livres égalent-elles 1 kilogramme ?",
+          "answer": "Seulement pour la livre française traditionnelle, qui désigne 500 g. La livre anglo-saxonne (lb) pèse 453,6 g : 2 lb font donc 0,907 kg, soit plus de 9 % de moins qu'un kilogramme. Exactement 1 kg correspond à 2,2046 lb — et avec de grandes valeurs, l'écart absolu grandit vite : 100 lb ne font pas 50 kg, mais 45,36 kg."
         },
         {
           "question": "Combien de kg font 50 lb ?",
@@ -253,19 +262,27 @@
         },
         {
           "question": "Combien de kg font 135 lb (développé couché) ?",
-          "answer": "135 lb correspondent à 61,24 kg. Dans la culture du fitness, '135 au développé couché' est une étape populaire. Cela correspond à une barre olympique (20 kg) plus deux disques de 20 kg — presque exactement 135 lb."
+          "answer": "135 lb correspondent à 61,24 kg. Dans la culture du fitness, '135 au développé couché' est une étape populaire : une barre de 45 lb plus deux disques de 45 lb donnent exactement 135 lb. La combinaison métrique la plus proche — barre de 20 kg plus deux disques de 20 kg — donne 60 kg, soit 132,3 lb, donc un peu moins."
         },
         {
           "question": "La livre et l'once sont-elles la même chose ?",
           "answer": "Non — la livre (lb) et l'once (oz) sont deux unités différentes. 1 livre = 16 onces. Une once représente environ 28,35 g, et une livre environ 453,6 g (0,4536 kg). Pour le poids des bébés, on indique souvent livres et onces, par exemple '7 lb 11 oz'."
         },
         {
-          "question": "Combien de kg font 160 lb ?",
-          "answer": "160 lb correspondent à 72,57 kg. Aux États-Unis, 160 livres est souvent cité comme le poids d'un homme svelte ou un objectif dans un programme de perte de poids."
+          "question": "Combien de kg font 165 lb ?",
+          "answer": "165 lb correspondent à 74,84 kg. Calcul : 165 × 0,45359 = 74,84. Arrondi : 165 livres font un peu moins de 75 kg."
         },
         {
           "question": "Combien de livres fait un bagage de 23 kg ?",
           "answer": "23 kg correspondent à 23 × 2,2046 = 50,71 lb, soit environ 50 lb. C'est pourquoi les compagnies aériennes européennes indiquent souvent 23 kg tandis que les américaines mentionnent 50 lb — c'est presque identique. La différence est de 0,71 lb, soit environ 320 grammes."
+        },
+        {
+          "question": "Combien de kg font 60 lb ?",
+          "answer": "60 lb correspondent à 27,22 kg. Calcul : 60 × 0,45359 = 27,22. Aux États-Unis, c'est notamment le poids standard d'un sac de béton sec, raison pour laquelle cette valeur revient souvent dans les projets de construction et de bricolage."
+        },
+        {
+          "question": "Dans quelles unités les Américains et les Britanniques donnent-ils leur poids ?",
+          "answer": "Les Américains expriment le poids corporel en livres (lb) et les Britanniques, dans le langage courant, en stone et livres (1 stone = 14 lb), par exemple « 11 stone 4 ». Dans la plupart des autres pays, dont la France, on utilise les kilogrammes. En médecine, les kilogrammes dominent même dans les pays anglo-saxons, car de nombreuses doses de médicaments se calculent par kilogramme de poids corporel (mg/kg)."
         }
       ]
     },

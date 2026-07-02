@@ -126,11 +126,16 @@
         { "label": "90 lb", "values": ["40,82 kg"] },
         { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
         { "label": "110 lb", "values": ["49,90 kg"] },
+        { "label": "115 lb", "values": ["52,16 kg"] },
         { "label": "120 lb", "values": ["54,43 kg"] },
+        { "label": "125 lb", "values": ["56,70 kg"] },
         { "label": "130 lb", "values": ["58,97 kg"] },
-        { "label": "140 lb", "values": ["63,50 kg"] },
+        { "label": "135 lb", "values": ["61,24 kg"] },
+        { "label": "140 lb", "values": ["63,50 kg"], "emphasis": true },
+        { "label": "145 lb", "values": ["65,77 kg"] },
         { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
         { "label": "160 lb", "values": ["72,57 kg"] },
+        { "label": "165 lb", "values": ["74,84 kg"] },
         { "label": "170 lb", "values": ["77,11 kg"] },
         { "label": "180 lb", "values": ["81,65 kg"] },
         { "label": "190 lb", "values": ["86,18 kg"] },
@@ -206,7 +211,7 @@
         },
         {
           "title": "Krafttraining und YouTube-Programme",
-          "description": "Beliebte US-Trainingsprogramme – Starting Strength, 5/3/1, StrongLifts – geben alle Gewichte ausschließlich in Pfund an. 135 lb sind ca. 61 kg, 225 lb ca. 102 kg. Das Trainingsziel 'benching 225' (Bankdrücken mit 225 lb) entspricht etwa 102 kg auf der Stange. Die Fitnessgewichtstabelle oben deckt die gängigsten Lasten ab."
+          "description": "Beliebte US-Trainingsprogramme – Starting Strength, 5/3/1, StrongLifts – geben alle Gewichte ausschließlich in Pfund an. 135 lb sind ca. 61 kg, und das Trainingsziel 'benching 225' (Bankdrücken mit 225 lb) entspricht gut 102 kg auf der Stange. Die Fitnessgewichtstabelle oben deckt die gängigsten Lasten ab."
         },
         {
           "title": "Freigepäck und Pakete",
@@ -239,20 +244,24 @@
           "answer": "150 lb sind 68,04 kg. Rechnung: 150 × 0,45359 = 68,04. Das ist ein häufig genanntes Körpergewicht in US-amerikanischen Gesundheitsrechnern."
         },
         {
-          "question": "Wie viele kg sind 100 lb?",
-          "answer": "100 lb sind 45,36 kg. Als Merkhilfe: 100 Pfund sind knapp unter der Hälfte von 100 kg."
+          "question": "Wie viele kg sind 140 lb?",
+          "answer": "140 lb sind 63,50 kg. Rechnung: 140 × 0,45359 = 63,50. Das ist einer der am häufigsten umgerechneten Körpergewichtswerte in US-amerikanischen Gesundheitsrechnern und Trainingsplänen."
         },
         {
-          "question": "Wie viele kg sind 200 lb?",
-          "answer": "200 lb sind 90,72 kg. In den USA gilt 200 Pfund oft als Referenzgewicht für einen athletisch gebauten Mann."
+          "question": "Wie viele kg sind 180 lb?",
+          "answer": "180 lb sind 81,65 kg. Rechnung: 180 × 0,45359 = 81,65. Schnelle Kopfprobe: 180 ÷ 2,2 ≈ 81,8 kg – das Ergebnis passt."
         },
         {
           "question": "Wie viele kg sind 50 lb?",
           "answer": "50 lb sind 22,68 kg. Das ist das Standardfreigepäcklimit bei vielen US-amerikanischen Fluggesellschaften."
         },
         {
-          "question": "Wie viele kg sind 70 lb?",
-          "answer": "70 lb sind 31,75 kg. Das ist das erhöhte Gepäcklimit einiger Airlines für die Business Class oder Vielflieger."
+          "question": "Wie viele kg sind 130 lb?",
+          "answer": "130 lb sind 58,97 kg. Rechnung: 130 × 0,45359 = 58,97. Gerundet: 130 Pfund sind knapp 59 kg."
+        },
+        {
+          "question": "Sind 2 Pfund gleich 1 Kilogramm?",
+          "answer": "Nur beim deutschen Pfund, das inoffiziell für genau 500 g steht. Das angloamerikanische Pfund (lb) wiegt dagegen 453,6 g: 2 lb sind also 0,907 kg, gut 9 % weniger als ein Kilogramm. Genau 1 kg entspricht 2,2046 lb – bei größeren Werten wächst der absolute Fehler der 2-Pfund-Faustregel schnell: 100 lb sind nicht 50 kg, sondern 45,36 kg."
         },
         {
           "question": "Wie rechne ich Pfund ohne Taschenrechner in kg um?",
@@ -260,7 +269,7 @@
         },
         {
           "question": "Wie viele kg sind 135 lb (Bankdrücken-Benchmark)?",
-          "answer": "135 lb sind 61,24 kg. In der Kraftsportkultur ist '135 on the bench' eine bekannte Einstiegsmarke. Das entspricht einer Olympiastange (20 kg) plus zwei 20-kg-Scheiben – fast genau 135 lb."
+          "answer": "135 lb sind 61,24 kg. In der Kraftsportkultur ist '135 on the bench' eine bekannte Einstiegsmarke: eine 45-lb-Stange plus zwei 45-lb-Scheiben ergeben genau 135 lb. Die nächstliegende metrische Kombination – Olympiastange 20 kg plus zwei 20-kg-Scheiben – ergibt 60 kg, also 132,3 lb und damit etwas weniger."
         },
         {
           "question": "Sind Pfund und Unzen dasselbe?",
@@ -268,11 +277,23 @@
         },
         {
           "question": "Wie viele kg sind 225 lb?",
-          "answer": "225 lb sind 102,06 kg. Im Kraftsport gilt '225 on the bench' als Symbol für ernsthaftes Training und ist ein beliebtes Trainingsziel. Das entspricht vier 45-lb-Scheiben plus der 45-lb-Stange."
+          "answer": "225 lb sind 102,06 kg. Im Kraftsport gilt '225 on the bench' als Symbol für ernsthaftes Training und ist ein beliebtes Trainingsziel: eine 45-lb-Stange plus vier 45-lb-Scheiben (zwei pro Seite) ergeben genau 225 lb. In Kilogramm sind das gut 102 kg."
+        },
+        {
+          "question": "Wie viele kg sind 165 lb?",
+          "answer": "165 lb sind 74,84 kg. Rechnung: 165 × 0,45359 = 74,84. Gerundet: 165 Pfund sind knapp 75 kg."
+        },
+        {
+          "question": "In welchen Einheiten geben Amerikaner und Briten ihr Körpergewicht an?",
+          "answer": "Amerikaner geben das Körpergewicht in Pfund (lb) an, Briten umgangssprachlich in Stone und Pfund (1 Stone = 14 lb), z. B. '11 stone 4'. In den meisten anderen Ländern, auch in Deutschland und Österreich, gelten Kilogramm. In der Medizin dominieren Kilogramm sogar in englischsprachigen Ländern, weil viele Medikamentendosen pro Kilogramm Körpergewicht berechnet werden (mg/kg)."
         },
         {
           "question": "Wie viele Pfund hat ein 23-kg-Gepäcklimit?",
           "answer": "23 kg sind 23 × 2,2046 = 50,71 lb, also etwa 50 lb. Deshalb geben europäische Airlines oft 23 kg an, während US-Carrier 50 lb nennen – es ist fast dasselbe. Die Differenz beträgt 0,71 lb, das sind rund 320 Gramm."
+        },
+        {
+          "question": "Wie viele kg sind 60 lb?",
+          "answer": "60 lb sind 27,22 kg. Rechnung: 60 × 0,45359 = 27,22. In den USA ist das unter anderem das Standardgewicht eines Sacks Trockenbeton, deshalb taucht der Wert oft bei Bau- und Heimwerkerprojekten auf."
         }
       ]
     },

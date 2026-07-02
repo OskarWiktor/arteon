@@ -49,7 +49,7 @@
         "Konwersja działa w obie strony, więc przeliczysz zarówno cale na centymetry, jak i centymetry na cale",
         "Wynik pojawia się natychmiast podczas wpisywania, bez potrzeby klikania jakiegokolwiek przycisku",
         "Gotowy wynik można skopiować do schowka jednym kliknięciem",
-        "Tabela przeliczeniowa obejmuje wartości od 0,5 do 72 cali",
+        "Tabela przeliczeniowa obejmuje wartości od 0,5 do 90 cali",
         "Tabela przekątnych ekranów pokazuje najpopularniejsze rozmiary telewizorów i monitorów od 24 do 85 cali",
         "Tabela wzrostu zawiera przeliczenie wzrostu z cali i stóp na centymetry dla wartości od 4 ft 11 in do 6 ft 7 in",
         "Tabela odwrotna pokazuje, ile cali mają wartości od 0,5 cm do 200 cm",
@@ -126,14 +126,18 @@
         { "label": "15 in", "values": ["38,10 cm"] },
         { "label": "18 in", "values": ["45,72 cm"] },
         { "label": "20 in", "values": ["50,80 cm"] },
+        { "label": "21 in", "values": ["53,34 cm"] },
+        { "label": "23 in", "values": ["58,42 cm"] },
         { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
         { "label": "30 in", "values": ["76,20 cm"] },
         { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
         { "label": "42 in", "values": ["106,68 cm"] },
+        { "label": "45 in", "values": ["114,30 cm"] },
         { "label": "48 in", "values": ["121,92 cm"] },
         { "label": "54 in", "values": ["137,16 cm"] },
         { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
-        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true },
+        { "label": "90 in", "values": ["228,60 cm"] }
       ],
       "caption": "Chcesz przeliczyć w drugą stronę? Skorzystaj z naszego konwertera <a href=\"/narzedzia/konwerter-cm-na-cale\">cm na cale</a>, który ma własną tabelę i szczegółową treść poświęconą temu kierunkowi konwersji."
     },
@@ -277,20 +281,20 @@
           "answer": "Wzór to: centymetry = cale × 2,54. Na przykład 10 cali × 2,54 = 25,40 cm. W drugą stronę: cale = centymetry ÷ 2,54."
         },
         {
-          "question": "Ile cm ma 5 cali?",
-          "answer": "5 cali to 5 × 2,54 = 12,70 cm. Jest to popularna wartość np. przy rozmiarach telefonów – przekątna 5 cali to ekran o przekątnej 12,7 cm."
+          "question": "Ile cm ma 15 cali?",
+          "answer": "15 cali to 15 × 2,54 = 38,10 cm. To wartość sprawdzana najczęściej przy laptopach: popularna przekątna 15,6 cala odpowiada 39,6 cm."
         },
         {
           "question": "Ile cm ma 6 cali?",
           "answer": "6 cali to 6 × 2,54 = 15,24 cm, czyli dokładnie pół stopy. To typowy rozmiar ekranu dużego smartfona."
         },
         {
-          "question": "Ile cm ma 12 cali?",
-          "answer": "12 cali to 30,48 cm, czyli dokładnie jedna stopa. To ważna wartość referencyjna: 1 stopa = 12 cali = 30,48 cm."
+          "question": "Ile cm ma 21 cali?",
+          "answer": "21 cali to 21 × 2,54 = 53,34 cm. Wartość z tego zakresu sprawdza się m.in. przy monitorach i walizkach kabinowych opisywanych jako 21-calowe."
         },
         {
-          "question": "Ile cm ma 55 cali (telewizor)?",
-          "answer": "55 cali to 55 × 2,54 = 139,70 cm przekątnej ekranu. Szerokość telewizora 55 cali (format 16:9) wynosi ok. 122 cm, a wysokość ok. 69 cm. Producenci czasem podają wymiar zewnętrzny z ramką, który jest nieco większy."
+          "question": "Ile cm ma 10 cali?",
+          "answer": "10 cali to 10 × 2,54 = 25,40 cm. To łatwa do zapamiętania wartość referencyjna (cal razy dziesięć) i zarazem typowa przekątna tabletu."
         },
         {
           "question": "Ile cm ma 65 cali (telewizor)?",
@@ -301,8 +305,12 @@
           "answer": "5 stóp 7 cali to najpierw przeliczenie na same cale: 5 × 12 + 7 = 67 cali. Następnie 67 × 2,54 = 170,18 cm. Wzrost 5 ft 7 in odpowiada więc ok. 170 cm."
         },
         {
-          "question": "Ile cm to 6 ft 0 in?",
-          "answer": "6 stóp 0 cali to 6 × 12 = 72 cale, a 72 × 2,54 = 182,88 cm. Wzrost 6 ft to ok. 183 cm."
+          "question": "Ile cm to 5 ft 10 in?",
+          "answer": "5 stóp 10 cali to 5 × 12 + 10 = 70 cali, a 70 × 2,54 = 177,80 cm. Wzrost 5 ft 10 in to więc niecałe 178 cm."
+        },
+        {
+          "question": "Ile cm mają 3 cale?",
+          "answer": "3 cale to 3 × 2,54 = 7,62 cm. Obliczenie w drugą stronę: 7,62 ÷ 2,54 = 3, więc wynik łatwo zweryfikować."
         },
         {
           "question": "Jak przeliczyć cale na centymetry bez kalkulatora?",

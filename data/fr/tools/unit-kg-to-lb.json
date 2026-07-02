@@ -124,8 +124,10 @@
         { "label": "12 kg", "values": ["26,46 lb"] },
         { "label": "15 kg", "values": ["33,07 lb"] },
         { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
+        { "label": "23 kg", "values": ["50,71 lb"], "emphasis": true },
         { "label": "25 kg", "values": ["55,12 lb"] },
         { "label": "30 kg", "values": ["66,14 lb"] },
+        { "label": "32 kg", "values": ["70,55 lb"], "emphasis": true },
         { "label": "35 kg", "values": ["77,16 lb"] },
         { "label": "40 kg", "values": ["88,18 lb"] },
         { "label": "45 kg", "values": ["99,21 lb"] },
@@ -281,7 +283,7 @@
         },
         {
           "title": "Entraînement et salle de sport",
-          "description": "Les programmes d'entraînement américains — Starting Strength, 5/3/1, StrongLifts — indiquent toutes les charges en livres. Une barre olympique pèse 45 lb (environ 20 kg), des haltères de 25 lb représentent un peu plus de 11 kg. Le tableau de poids de salle ci-dessus couvre les charges les plus courantes."
+          "description": "Les programmes d'entraînement américains — Starting Strength, 5/3/1, StrongLifts — indiquent toutes les charges en livres. Une barre olympique pèse 20 kg — aux États-Unis, on l'appelle « barre de 45 livres », alors qu'elle fait exactement 44,09 lb. Des haltères de 25 lb représentent un peu plus de 11 kg. Le tableau de poids de salle ci-dessus couvre les charges les plus courantes."
         },
         {
           "title": "Poids de naissance",
@@ -306,6 +308,10 @@
           "answer": "Un kilogramme correspond à 2,2046 livres (lb). Cela découle de la définition : 1 livre = 0,45359237 kg, donc 1 kg = 1 ÷ 0,45359237 ≈ 2,2046 lb. Arrondi à une décimale : 1 kg ≈ 2,2 lb."
         },
         {
+          "question": "1 kg égale-t-il 2 livres ?",
+          "answer": "Cela dépend de la livre dont on parle. En France, la livre traditionnelle désigne 500 g — au marché, « une livre de beurre » fait bien un demi-kilo, donc 1 kg = 2 livres françaises. La livre anglo-saxonne (lb) ne pèse en revanche que 453,6 g : 1 kg = 2,2046 lb. Pour convertir des valeurs américaines ou britanniques, multipliez par 2,2 et non par 2, sinon le résultat est faussé d'environ 9 %."
+        },
+        {
           "question": "Quelle est la formule pour convertir des kg en livres ?",
           "answer": "La formule est : livres = kilogrammes × 2,2046. Dans l'autre sens : kilogrammes = livres × 0,4536. Exemple : 70 kg × 2,2046 = 154,32 lb."
         },
@@ -318,16 +324,16 @@
           "answer": "80 kg correspondent à 176,37 lb, soit 12 stone 8,4 lb dans le système britannique. C'est un poids souvent associé à un homme de corpulence athlétique dans les pays anglophones."
         },
         {
-          "question": "Combien de livres font 100 kg ?",
-          "answer": "100 kg correspondent à 220,46 lb. Arrondi : 100 kg représentent un peu plus de 220 livres — un repère facile à mémoriser. En système britannique : 15 stone 10,5 lb."
+          "question": "Combien de livres font 32 kg ?",
+          "answer": "32 kg correspondent à 70,55 lb. C'est la valeur que les voyageurs vérifient le plus souvent : 32 kg est le poids maximal autorisé pour une seule valise enregistrée chez la plupart des compagnies aériennes (au-delà, le bagage est refusé pour protéger le personnel au sol). Les compagnies américaines indiquent la même limite sous la forme 70 lb, soit 31,75 kg."
         },
         {
           "question": "Combien de livres font 50 kg ?",
           "answer": "50 kg correspondent à 110,23 lb. Aide-mémoire : 50 kg représentent un peu plus de 110 livres. En système britannique : 7 stone 12,2 lb."
         },
         {
-          "question": "Combien de kilogrammes fait une livre ?",
-          "answer": "Une livre correspond exactement à 0,45359237 kg. Cette valeur est fixée comme constante depuis 1959 sous le nom de livre avoirdupois internationale. Arrondi : 1 lb ≈ 0,454 kg."
+          "question": "Combien de livres font 65 kg ?",
+          "answer": "65 kg correspondent à 143,30 lb, soit 10 stone 3,3 lb dans le système britannique. Calcul : 65 × 2,2046 = 143,30."
         },
         {
           "question": "Qu'est-ce qu'un stone et comment convertir des kg en stone ?",
@@ -338,20 +344,24 @@
           "answer": "3,5 kg correspondent à 7,716 lb. En livres et onces : 7 livres et 0,716 × 16 = 11,5 onces, soit environ 7 lb 11 oz. Un nouveau-né en bonne santé pèse généralement entre 3 et 4 kg, soit environ 6,6 à 8,8 lb."
         },
         {
-          "question": "Combien de kg représente une limite de bagage de 50 lb ?",
-          "answer": "50 lb correspondent à 50 × 0,45359237 = 22,68 kg. C'est la limite de bagage enregistré standard de nombreuses compagnies aériennes. La limite fréquente de 70 lb (par exemple en première classe) correspond à 31,75 kg."
+          "question": "Combien de livres font 23 kg (limite de bagage) ?",
+          "answer": "23 kg correspondent à 50,71 lb. C'est la limite de bagage enregistré la plus répandue chez les compagnies européennes comme Air France ou Transavia. Les compagnies américaines indiquent la même limite sous la forme 50 lb, soit 22,68 kg — la différence n'est que d'environ 320 grammes, les deux limites sont donc équivalentes en pratique."
         },
         {
-          "question": "Combien de livres font 60 kg ?",
-          "answer": "60 kg correspondent à 132,28 lb, soit 9 stone 6,3 lb dans le système britannique. C'est un poids typique pour une femme de corpulence moyenne en France et en Europe."
+          "question": "Combien de livres font 55 kg ?",
+          "answer": "55 kg correspondent à 121,25 lb, soit 8 stone 9,3 lb dans le système britannique. Calcul : 55 × 2,2046 = 121,25."
         },
         {
-          "question": "Combien de livres font 90 kg ?",
-          "answer": "90 kg correspondent à 198,42 lb. Arrondi, c'est presque exactement 200 livres — un repère pratique. En système britannique : 14 stone 2,4 lb."
+          "question": "Combien de livres font 85 kg ?",
+          "answer": "85 kg correspondent à 187,39 lb, soit 13 stone 5,4 lb dans le système britannique. Calcul : 85 × 2,2046 = 187,39."
         },
         {
-          "question": "Combien de kg font 200 livres ?",
-          "answer": "200 lb correspondent à 200 × 0,45359 = 90,72 kg. Approximation courante : 200 livres représentent un peu moins de 91 kg."
+          "question": "Combien de livres font 10, 20 et 25 kg ?",
+          "answer": "10 kg correspondent à 22,05 lb, 20 kg à 44,09 lb et 25 kg à 55,12 lb. Ces trois valeurs reviennent surtout à la salle de sport et au moment de boucler la valise : 10 kg est une limite de bagage cabine courante (par exemple chez Transavia ou Ryanair avec priorité), 20 kg est le poids de la barre olympique (appelée « barre de 45 livres » aux États-Unis, alors qu'elle fait exactement 44,09 lb) et 25 kg est le plus grand disque olympique standard."
+        },
+        {
+          "question": "Comment passer un pèse-personne des kg aux livres ?",
+          "answer": "Sur la plupart des pèse-personnes électroniques, un petit bouton ou curseur marqué UNIT, LB/KG ou KG-LB-ST se trouve sous l'appareil ou à côté de l'écran. Chaque pression fait défiler les unités. Sur les balances connectées, l'unité se change dans les réglages du profil de l'application."
         }
       ]
     },

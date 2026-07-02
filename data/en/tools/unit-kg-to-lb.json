@@ -124,8 +124,10 @@
         { "label": "12 kg", "values": ["26.46 lb"] },
         { "label": "15 kg", "values": ["33.07 lb"] },
         { "label": "20 kg", "values": ["44.09 lb"], "emphasis": true },
+        { "label": "23 kg", "values": ["50.71 lb"], "emphasis": true },
         { "label": "25 kg", "values": ["55.12 lb"] },
         { "label": "30 kg", "values": ["66.14 lb"] },
+        { "label": "32 kg", "values": ["70.55 lb"], "emphasis": true },
         { "label": "35 kg", "values": ["77.16 lb"] },
         { "label": "40 kg", "values": ["88.18 lb"] },
         { "label": "45 kg", "values": ["99.21 lb"] },
@@ -317,7 +319,7 @@
         },
         {
           "title": "Gym training and fitness programmes",
-          "description": "Popular US training programmes — Starting Strength, 5/3/1, StrongLifts — list all weights in pounds. An Olympic barbell weighs 45 lb (about 20 kg), typical 25 lb dumbbells are just over 11 kg. Powerlifting records in the US are also quoted in pounds — use the gym weights table above to check the most common loads."
+          "description": "Popular US training programmes — Starting Strength, 5/3/1, StrongLifts — list all weights in pounds. An Olympic barbell weighs 20 kg — in the US it is known as the 45-pound bar, although it is exactly 44.09 lb. Typical 25 lb dumbbells are just over 11 kg. Powerlifting records in the US are also quoted in pounds — use the gym weights table above to check the most common loads."
         },
         {
           "title": "Baby weight",
@@ -342,6 +344,10 @@
           "answer": "One kilogram is 2.2046 pounds (lb). This comes from the definition: 1 pound = 0.45359237 kg, so 1 kg = 1 ÷ 0.45359237 ≈ 2.2046 lb. Rounded to one decimal place: 1 kg ≈ 2.2 lb."
         },
         {
+          "question": "Is 1 kg equal to 2 pounds?",
+          "answer": "No — that is a popular but overly rough shortcut. 1 kg is 2.2046 lb. If you count 2 pounds per kilogram, you underestimate the result by about 9%, and at 100 kg the gap grows to more than 20 pounds. For mental math, multiply by 2.2 instead of 2."
+        },
+        {
           "question": "What is the formula to convert kg to pounds?",
           "answer": "The formula is: pounds = kilograms × 2.2046. The other way: kilograms = pounds × 0.4536. For example: 70 kg × 2.2046 = 154.32 lb. Both values (2.2046 and 0.4536) come from the pound definition agreed in 1959."
         },
@@ -354,16 +360,16 @@
           "answer": "80 kg is 176.37 lb, or 12 stone 8.4 lb in the British system. This is a weight often associated with an athletic or healthy male body type in English-speaking countries."
         },
         {
-          "question": "How many pounds is 100 kg?",
-          "answer": "100 kg is 220.46 lb. Rounded up: 100 kg is just over 220 pounds — a useful reference point that is easy to remember. In the British system that is 15 stone 10.5 lb."
+          "question": "How many pounds is 32 kg?",
+          "answer": "32 kg is 70.55 lb. This is the value travellers check most often: 32 kg is the maximum allowed weight for a single piece of checked baggage on most airlines (heavier bags are refused for ground crew safety). US carriers state the same limit as 70 lb, which is 31.75 kg."
         },
         {
           "question": "How many pounds is 50 kg?",
           "answer": "50 kg is 110.23 lb. A handy approximation: 50 kg is just over 110 pounds. In the British system: 7 stone 12.2 lb."
         },
         {
-          "question": "How many kilograms is one pound?",
-          "answer": "One pound is exactly 0.45359237 kg. This is a fixed constant, established in 1959 as the international avoirdupois pound. Rounded: 1 lb ≈ 0.454 kg."
+          "question": "How many pounds is 65 kg?",
+          "answer": "65 kg is 143.30 lb, or 10 stone 3.3 lb in the British system. Calculation: 65 × 2.2046 = 143.30."
         },
         {
           "question": "How can I convert kg to pounds without a calculator?",
@@ -378,28 +384,28 @@
           "answer": "3.5 kg is 7.716 lb. Converting to pounds and ounces: 7 pounds and 0.716 × 16 = 11.5 ounces, so approximately 7 lb 11 oz. A healthy newborn typically weighs between 3 and 4 kg, which is roughly 6.6 to 8.8 lb."
         },
         {
-          "question": "How many kg is a 50 lb baggage limit?",
-          "answer": "50 lb is 50 × 0.45359237 = 22.68 kg. This is the standard checked baggage weight limit on many airlines. The common 70 lb limit (for example in first class) is 31.75 kg."
+          "question": "How many pounds is 23 kg (baggage limit)?",
+          "answer": "23 kg is 50.71 lb. This is the most common checked baggage limit on European airlines. US carriers state the same limit as 50 lb, which is 22.68 kg — the difference is only about 320 grams, so in practice the two limits are treated as equivalent."
         },
         {
           "question": "Why does the US use pounds instead of kilograms?",
           "answer": "The United States uses the customary system of measurement, inherited from the British colonies. The pound has over a thousand years of history and is deeply embedded in American culture. The UK transitioned to the metric system in the 1960s–70s, but the pound remained in widespread informal use, especially for body weight. The US is one of three countries (alongside Liberia and Myanmar) that has not adopted the metric system as the official standard."
         },
         {
-          "question": "How many pounds is 60 kg?",
-          "answer": "60 kg is 132.28 lb. In the British system that is 9 stone 6.3 lb. 60 kg is a typical weight for a woman of average build in Europe."
+          "question": "How many pounds is 55 kg?",
+          "answer": "55 kg is 121.25 lb, or 8 stone 9.3 lb in the British system. Calculation: 55 × 2.2046 = 121.25."
         },
         {
-          "question": "How many pounds is 90 kg?",
-          "answer": "90 kg is 198.42 lb. Rounded up, 90 kg is almost exactly 200 pounds — a convenient reference value. In the British system that is 14 stone 2.4 lb."
+          "question": "How many pounds is 85 kg?",
+          "answer": "85 kg is 187.39 lb, or 13 stone 5.4 lb in the British system. Calculation: 85 × 2.2046 = 187.39."
         },
         {
-          "question": "How many kg is 200 pounds?",
-          "answer": "200 lb is 200 × 0.45359 = 90.72 kg. A common approximation: 200 pounds is just under 91 kg."
+          "question": "How many pounds is 10, 20 and 25 kg?",
+          "answer": "10 kg is 22.05 lb, 20 kg is 44.09 lb, and 25 kg is 55.12 lb. These three values come up most often at the gym and when packing: 10 kg is a common cabin baggage allowance (for example on Ryanair or Wizz Air with priority), 20 kg is the weight of an Olympic barbell (known in the US as the 45-pound bar, although it is exactly 44.09 lb), and 25 kg is the largest standard Olympic plate."
         },
         {
-          "question": "How many pounds is 45 kg?",
-          "answer": "45 kg is 99.21 lb — almost exactly 100 pounds. This is also the weight of a standard Olympic barbell in pounds (45 lb = 20.41 kg), a widely used reference in gyms."
+          "question": "How do I switch my scale from kg to lb?",
+          "answer": "On most digital scales there is a small button or slider labelled UNIT, LB/KG or KG-LB-ST, located on the underside of the scale or next to the display. Each press cycles through the units. On smart scales connected to a phone app, you change the unit in the profile settings of the app."
         }
       ]
     },
