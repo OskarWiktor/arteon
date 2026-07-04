@@ -6,7 +6,7 @@ import Card from '../Card';
 
 type Props = { item: Testimonial };
 
-const MAX_WORDS = 32;
+const MAX_WORDS = 82;
 
 function getDisplayedQuote(quote: string, maxWords: number) {
   if (!quote) return '';
@@ -31,19 +31,23 @@ export default function TestimonialCard({ item }: Props) {
   return (
     <Card
       as='figure'
-      padding='md'
-      className='flex h-full w-full flex-col justify-between border-neutral-300 text-center'
+      padding='sm'
+      className='flex h-full w-full flex-col justify-between border-neutral-300'
     >
       <figcaption>
-        <span className='text-xl font-semibold text-dark'>{item.author}</span>
-        {item.role && <p className='text-sm text-light'>{item.role}</p>}
+        <p className='text-center text-xl! font-semibold! text-dark'>
+          {item.author}
+        </p>
+        {item.role && (
+          <p className='text-center text-sm text-light'>{item.role}</p>
+        )}
         <div className='flex justify-center'>
           <StarRating value={item.rating} />
         </div>
       </figcaption>
 
       <blockquote>
-        <p className='text-base text-dark'>"{displayedQuote}"</p>
+        <p className='text-sm! text-dark'>"{displayedQuote}"</p>
       </blockquote>
 
       {item.link && (
@@ -51,7 +55,7 @@ export default function TestimonialCard({ item }: Props) {
           href={item.link}
           target='_blank'
           rel='noopener noreferrer'
-          className='mx-auto mt-2 inline-flex underline-offset-4 transition'
+          className='mx-auto mt-1 inline-flex text-center underline-offset-4 transition'
         >
           Zobacz opinię u źródła
           <ArrowIcon />

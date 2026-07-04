@@ -1,4 +1,5 @@
 import { useId, type ReactNode } from 'react';
+import Reveal from '@/components/atoms/Reveal';
 import { cn } from '@/lib/clsx';
 import { flexCenterClasses } from '@/lib/uiClasses';
 import ButtonGroup from '../../molecules/ButtonGroup';
@@ -88,18 +89,20 @@ export default function SectionTimeline({
                   'md:pl-16': index % 2 !== 0,
                 })}
               >
-                <Card padding='lg' className='ml-16 md:ml-0'>
-                  <div
-                    className={cn(
-                      'absolute top-6 left-0 h-12 w-12 rounded-lg bg-primary text-white shadow-lg md:hidden',
-                      flexCenterClasses,
-                    )}
-                  >
-                    {step.icon}
-                  </div>
-                  <h3 className='h5 mb-2'>{step.title}</h3>
-                  <p className='text-light'>{step.description}</p>
-                </Card>
+                <Reveal delayMs={Math.min(index, 6) * 80}>
+                  <Card padding='lg' className='ml-16 md:ml-0'>
+                    <div
+                      className={cn(
+                        'absolute top-6 left-0 h-12 w-12 rounded-lg bg-primary text-white shadow-lg md:hidden',
+                        flexCenterClasses,
+                      )}
+                    >
+                      {step.icon}
+                    </div>
+                    <h3 className='h5 mb-2'>{step.title}</h3>
+                    <p className='text-light'>{step.description}</p>
+                  </Card>
+                </Reveal>
               </div>
 
               <div className='hidden flex-1 md:block' />

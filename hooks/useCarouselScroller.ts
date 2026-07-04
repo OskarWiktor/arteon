@@ -106,7 +106,12 @@ export function useCarouselScroller({
     if (!el) return;
 
     const onPointerDown = () => stopAutoPlay();
-    const onWheel = () => stopAutoPlay();
+    // Only stop on a deliberate horizontal wheel gesture (swiping the carousel).
+    // A vertical wheel is the user scrolling the page past the carousel — that
+    // must not permanently kill autoplay just because the pointer is over it.
+    const onWheel = (e: WheelEvent) => {
+      if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) stopAutoPlay();
+    };
 
     el.addEventListener('pointerdown', onPointerDown, { passive: true });
     el.addEventListener('wheel', onWheel, { passive: true });

@@ -7,7 +7,11 @@ import {
 
 const ArrowIcon = () => (
   <span
-    className={cn('ml-1', flexCenterClasses, normalIconSizeClasses)}
+    className={cn(
+      'ml-1 transition-transform group-hover:translate-x-0.5',
+      flexCenterClasses,
+      normalIconSizeClasses,
+    )}
     aria-hidden='true'
   >
     <svg

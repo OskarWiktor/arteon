@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { cn } from '@/lib/clsx';
 import ButtonLink from '../atoms/buttons/ButtonLink';
+import Reveal from '../atoms/Reveal';
 import Subtitle from '../atoms/typography/Subtitle';
 
 interface SectionHeaderProps {
@@ -33,19 +34,24 @@ export default function SectionHeader({
 
   const content = (
     <div className='mb-2 lg:mb-4'>
-      {subtitle && (
-        <div className='mb-2 md:mb-4'>
-          <Subtitle className={SubtitleClassName} id={subtitleId}>
-            {subtitle}
-          </Subtitle>
-        </div>
-      )}
-      <h2
-        className={cn('h3 mb-2 scroll-mt-26 lg:mb-4', titleClassName)}
-        id={titleId}
-      >
-        {title}
-      </h2>
+      {/* Reveal wraps only the subtitle + title. Descriptions are excluded on
+          purpose: some sections add further copy below, and animating the
+          description looked off where those stack. */}
+      <Reveal>
+        {subtitle && (
+          <div className='mb-2 md:mb-4'>
+            <Subtitle className={SubtitleClassName} id={subtitleId}>
+              {subtitle}
+            </Subtitle>
+          </div>
+        )}
+        <h2
+          className={cn('h3 mb-2 scroll-mt-26 lg:mb-4', titleClassName)}
+          id={titleId}
+        >
+          {title}
+        </h2>
+      </Reveal>
       {description && <p className={descriptionClassName}>{description}</p>}
     </div>
   );

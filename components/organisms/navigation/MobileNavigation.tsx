@@ -139,7 +139,10 @@ function MobileOfferSections({
             </div>
 
             {expanded && (
-              <div id={`sec-${sec.key}`} className='animate-dropdown-in'>
+              <div
+                id={`sec-${sec.key}`}
+                className='animate-[dropdown-in_0.2s_ease-out_both]'
+              >
                 <div className='ml-3 border-l border-neutral-200 pl-3'>
                   {/* Lista linków nawigacji z progresywną obsługą strzałek
                       (roving focus). Elementy są Tab-nawigowalne; strzałki
@@ -318,7 +321,10 @@ function MobilePlNav({
           </div>
 
           {isToolsOpen && (
-            <div id='tools-submenu-mobile' className='animate-dropdown-in'>
+            <div
+              id='tools-submenu-mobile'
+              className='animate-[dropdown-in_0.2s_ease-out_both]'
+            >
               <ul className='mt-1 ml-3 flex flex-col gap-1 border-l border-neutral-200 pl-3'>
                 {toolsSections
                   .flatMap(section => section.items)
@@ -461,7 +467,7 @@ function MobileToolsOnlyNav({
               {expanded && (
                 <div
                   id={`sec-${locale}-${sec.key}`}
-                  className='animate-dropdown-in'
+                  className='animate-[dropdown-in_0.2s_ease-out_both]'
                 >
                   <div className='ml-3 border-l border-neutral-200 pl-3'>
                     {/* Lista linków nawigacji z progresywną obsługą strzałek
@@ -729,7 +735,7 @@ export default function MobileNavigation({
         role='dialog'
         aria-modal='true'
         aria-label={navUi.mobileMenu}
-        className='z[1000] animate-dropdown-in fixed top-0 right-0 h-dvh w-[88vw] max-w-75 bg-white shadow-lg'
+        className='z[1000] fixed top-0 right-0 h-dvh w-[88vw] max-w-75 animate-[dropdown-in_0.2s_ease-out_both] bg-white shadow-lg'
       >
         <div className='flex items-center justify-end px-4 pt-3'>
           <button
