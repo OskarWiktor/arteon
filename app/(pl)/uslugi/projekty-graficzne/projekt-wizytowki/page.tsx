@@ -42,7 +42,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp',
+        url: 'https://www.arteonagency.pl/assets/projects/luxnova/wizytowki/mockup-wizytowki-lux-nova.webp',
         width: 1200,
         height: 630,
       },
@@ -80,7 +80,7 @@ export default function OfferDesignBusinessCardPage() {
         }
         secondaryCtaLabel='Bezpłatna wycena'
         secondaryCtaHref='#kontakt'
-        backgroundImage='/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp'
+        backgroundImage='/assets/projects/luxnova/wizytowki/mockup-wizytowki-lux-nova.webp'
         overlay='black'
       />
 
@@ -300,7 +300,7 @@ export default function OfferDesignBusinessCardPage() {
         <SectionContactForm
           title='Sprawdź koszt realizacji wizytówki'
           description='Napisz jakie dane mają znaleźć się na wizytówce, czy potrzebujesz jednego czy kilku wariantów oraz czy posiadasz logo - otrzymasz darmową wycenę realizacji.'
-          imageSrc='/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp'
+          imageSrc='/assets/projects/luxnova/wizytowki/mockup-wizytowki-lux-nova.webp'
           imageAlt='Realizacja projektu wizytówki - kancelaria Luxnova'
           defaultSubject='Projekt wizytówki'
         />
@@ -393,7 +393,7 @@ export default function OfferDesignBusinessCardPage() {
         btnOneHref='#kontakt'
         btnTwo='Poznaj inne usługi graficzne'
         btnTwoHref='/uslugi/projekty-graficzne'
-        backgroundImage='/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp'
+        backgroundImage='/assets/projects/luxnova/wizytowki/mockup-wizytowki-lux-nova.webp'
         overlay='black'
       />
 

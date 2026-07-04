@@ -189,7 +189,7 @@
       ]
     },
     {
-      "source": "/(en|de|es|fr|pt|it|ro|nl|hu|cs|sv|da|no|fi|el)/:path*",
+      "source": "/(en|de|es|fr|pt|it|cs|el)/:path*",
       "headers": [
         {
           "key": "Cache-Control",

@@ -400,7 +400,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
               title: 'Projekt wizytówki',
               size: 'small',
               backgroundImage:
-                '/assets/projects/talia/mockup-wizytówki-talia.webp',
+                '/assets/projects/talia/mockup-wizytowki-talia.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },

@@ -427,7 +427,7 @@ export default function OfferDesignPresentationFolderPage() {
               title: 'Projekt wizytówki',
               size: 'medium',
               backgroundImage:
-                '/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp',
+                '/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
