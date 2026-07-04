@@ -91,7 +91,12 @@ const nextConfig: NextConfig = {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
           },
-          { key: 'X-Robots-Tag', value: 'noindex' },
+          // NOTE: no X-Robots-Tag: noindex here. These assets are the site's
+          // portfolio/blog/tool images, referenced by og:image, twitter:image
+          // and the <image:image> entries in the sitemaps — they MUST stay
+          // indexable. A prior noindex here (2026-03-21) deindexed them from
+          // Google Images. max-image-preview:large keeps large thumbnails.
+          { key: 'X-Robots-Tag', value: 'max-image-preview:large' },
         ],
       },
       {

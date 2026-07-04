@@ -363,7 +363,7 @@ export default function OfferDesignPriceListPage() {
               title: 'Projekt wizytówki',
               size: 'small',
               backgroundImage:
-                '/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp',
+                '/assets/projects/finish-masters/wizytowki/mockup-wizytowki-finish-masters.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },

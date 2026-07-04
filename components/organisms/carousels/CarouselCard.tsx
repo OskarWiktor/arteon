@@ -104,6 +104,7 @@ export default function CarouselCard(props: CarouselCardProps) {
       href={detailsHref}
       image={project.image}
       title={project.title}
+      imageAspectClassName='aspect-3/2'
     >
       <p className='mt-2 line-clamp-2 text-light'>{project.short}</p>
 

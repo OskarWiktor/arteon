@@ -466,7 +466,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
               title: 'Projekt wizytówki',
               size: 'small',
               backgroundImage:
-                '/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp',
+                '/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },

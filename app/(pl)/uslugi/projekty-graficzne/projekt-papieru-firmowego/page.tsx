@@ -415,7 +415,7 @@ export default function OfferDesignLetterheadPage() {
               title: 'Projekt wizytówki',
               size: 'medium',
               backgroundImage:
-                '/assets/projects/talia/mockup-wizytówki-talia.webp',
+                '/assets/projects/talia/mockup-wizytowki-talia.webp',
               btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },

@@ -150,45 +150,11 @@
     },
 
     {
-      "slug": "strona-internetowa-dla-kateringu-kolorowe-talerze",
-      "title": "Projekt wyglądu strony internetowej dla firmy cateringowej - KoloroweTalerze",
-      "short": "Projekt nowego wyglądu strony dla firmy cateringowej KoloroweTalerze. Ciepłe odcienie i ramki nawiązujące do obrusu - klasyczna polska kuchnia. Prace nad wdrożeniem trwają.",
-      "description": "<p>Projekt nowego wyglądu strony dla firmy cateringowej <strong>KoloroweTalerze</strong>. Celem było stworzenie bardziej profesjonalnego wizerunku oraz mocniejsze podkreślenie potraw.</p><br /><p>Wykorzystaliśmy <strong>ciepłe odcienie</strong> i delikatne akcenty - ramki z wzorami ala obrus - jako nawiązanie do klasycznej, lekko staromodnej polskiej kuchni.</p><br /><p>Wdrożenie projektu jeszcze trwa. Aktualna strona klienta: <a href=\"https://cateringkolorowetalerze.pl/\" target=\"_blank\" rel=\"noopener noreferrer\">cateringkolorowetalerze.pl</a>.</p>",
-      "image": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
-      "category": ["strony"],
-      "task": "Zaprojektować nowy wygląd strony cateringowej z naciskiem na profesjonalizm i ekspozycję potraw.",
-      "goals": "<p>Założenia projektu:</p><ul><li>Bardziej profesjonalny wizerunek,</li><li>Delikatne nawiązania do tradycyjnej polskiej kuchni.</li></ul>",
-      "contentBlocks": [
-        {
-          "type": "image",
-          "src": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
-          "alt": "Strona KoloroweTalerze - mockup realizacji Arteon",
-          "ratio": "16/9",
-          "breakAfter": true
-        }
-      ],
-      "cta": {
-        "title": "Twoja firma też potrzebuje strony internetowej?",
-        "description": "Zajmujemy się projektowaniem stron oraz ich realizacją. Skontaktuj się z nami - stworzymy stronę dopasowaną do Twoich potrzeb.",
-        "btnTwo": "Sprawdź ofertę stron internetowych",
-        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress",
-        "backgroundImage": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
-        "overlay": "black"
-      },
-      "seo": {
-        "title": "Strona internetowa dla firmy cateringowej - KoloroweTalerze",
-        "description": "Projekt wyglądu strony internetowej dla firmy cateringowej KoloroweTalerze. Sprawdź naszą realizację i zamów stronę dla swojego kateringu.",
-        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-kolorowe-talerze"
-      },
-      "link": "https://cateringkolorowetalerze.pl/"
-    },
-
-    {
       "slug": "wizytowki-dla-firmy-wykonczeniowej-finish-masters",
       "title": "Wizytówki dla firmy wykończeniowej - Finish Masters",
       "short": "Projekt wizytówki dla firmy zajmującej się wykańczaniem wnętrz Finish Masters spójny z logo oraz stroną internetową. Dane firmy, krótki opis działalności oraz kod QR prowadzący do strony.",
       "description": "<p>Finalny element kompleksowego projektu obejmującego również realizację <a href=\"/realizacje/logo-dla-firmy-wykonczeniowej-finish-masters\">logo</a> i <a href=\"/realizacje/strona-internetowa-dla-firmy-wykonczeniowej-finish-masters\">strony internetowej</a>.</p><br /><p>Wizytówki zawierają <strong>dane firmy, krótki opis działalności i kod QR prowadzący do strony</strong></p>",
-      "image": "/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp",
+      "image": "/assets/projects/finish-masters/wizytowki/mockup-wizytowki-finish-masters.webp",
       "category": ["projekty graficzne", "wizytówki"],
       "task": "Zaprojektować wizytówki spójne z logo i stroną Finish Masters.",
       "goals": "<p>Założenia projektu:</p><ul><li>Spójność z logo i stroną - odpowiednia kolorystyka</li><li>Dane firmy i krótki opis działalności</li><li>Kod QR prowadzący do strony</li></ul>",
@@ -200,7 +166,7 @@
       "contentBlocks": [
         {
           "type": "image",
-          "src": "/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp",
+          "src": "/assets/projects/finish-masters/wizytowki/mockup-wizytowki-finish-masters.webp",
           "alt": "Wizytówki Finish Masters - mockup realizacji Arteon",
           "ratio": "16/9",
           "breakAfter": true
@@ -211,7 +177,7 @@
         "description": "Zajmujemy się projektowaniem stron oraz wszelkich materiałów graficznych.",
         "btnTwo": "Sprawdź ofertę projektowania wizytówek",
         "btnTwoHref": "/uslugi/projekty-graficzne/projekt-wizytowki",
-        "backgroundImage": "/assets/projects/finish-masters/wizytowki/mockup-wizytówki-finish-masters.webp",
+        "backgroundImage": "/assets/projects/finish-masters/wizytowki/mockup-wizytowki-finish-masters.webp",
         "overlay": "black"
       },
       "seo": {
@@ -421,7 +387,7 @@
       "title": "Wizytówki dla producenta schodów metalowych - StepArd",
       "short": "Projekt wizytówki dla marki StepArd, spójne z logo oraz stroną internetową, z kodem QR.",
       "description": "<p>Wizytówki to finalny element kompleksowego projektu obejmującego również <a href=\"/realizacje/logo-dla-stepard\">logo</a> i <a href=\"/realizacje/strona-internetowa-dla-stepard\">stronę</a> StepArd.</p><br /><p>Projekt został stworzony tak aby był spójny z całą identyfikacją - ta sama paleta kolorów oraz typografia. Na rewersie umieściliśmy <strong>kod QR prowadzący do strony stepard.pl</strong>. Na koniec przygotowaliśmy projekt wizytówek do druku.</p>",
-      "image": "/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp",
+      "image": "/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp",
       "category": ["projekty graficzne", "wizytówki"],
       "task": "Zaprojektować wizytówki spójne z logo i stroną StepArd.",
       "process_steps": [
@@ -432,7 +398,7 @@
       "contentBlocks": [
         {
           "type": "image",
-          "src": "/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp",
+          "src": "/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp",
           "alt": "Wizytówki StepArd - mockup realizacji Arteon",
           "ratio": "16/9",
           "breakAfter": true
@@ -443,7 +409,7 @@
         "description": "Zajmujemy się kompleksowym wsparciem firm online oraz offline. Realizujemy zarówno projekty graficzne jak i strony www.",
         "btnTwo": "Sprawdź ofertę projektowania wizytówek",
         "btnTwoHref": "/uslugi/projekty-graficzne/projekt-wizytowki",
-        "backgroundImage": "/assets/projects/stepard/wizytowki/mockup-wizytówki-stepard.webp",
+        "backgroundImage": "/assets/projects/stepard/wizytowki/mockup-wizytowki-stepard.webp",
         "overlay": "black"
       },
       "seo": {
@@ -699,7 +665,7 @@
       "title": "Wizytówka dla kancelarii - LUX NOVA",
       "short": "Projekt wizytówki dla kancelarii adwokackiej LUX NOVA w układzie poziomym. Sygnet gryfa, paleta bordo i beżu, czytelny układ danych z kodem QR do strony firmowej.",
       "description": "<p>Projekt koncepcyjny wizytówki dla kancelarii adwokackiej, w którym stawiamy na czytelny układ danych oraz spójną identyfikację opartą o sygnet gryfa i zestaw kolorów podkreślających autorytet marki.</p>",
-      "image": "/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp",
+      "image": "/assets/projects/luxnova/wizytowki/mockup-wizytowki-lux-nova.webp",
       "category": ["projekty graficzne", "wizytówki"],
       "deliverables": [
         "Wizytówka w układzie poziomym (front i tył)",
@@ -729,7 +695,7 @@
       "contentBlocks": [
         {
           "type": "imageText",
-          "src": "/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp",
+          "src": "/assets/projects/luxnova/wizytowki/mockup-wizytowki-lux-nova.webp",
           "alt": "Wizytówka dla kancelarii - LUX NOVA (widok ogólny)",
           "imageSide": "left",
           "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Wizytówka dla adwokata - hierarchia i porządek</h2><p>Na froncie zaakcentowaliśmy logo firmy, aby odbiorca szybko zapamiętał znak kancelarii. Na rewersie: logo z kodem QR do strony firmowej oraz uporządkowane dane kontaktowe.</p>",
@@ -767,7 +733,7 @@
         "description": "Zaprojektujemy elegancką wizytówkę z przygotowaniem do druku - spójną z identyfikacją wizualną.",
         "btnTwo": "Sprawdź ofertę projektu wizytówki",
         "btnTwoHref": "/uslugi/projekty-graficzne/projekt-wizytowki",
-        "backgroundImage": "/assets/projects/luxnova/wizytowki/mockup-wizytówki-lux-nova.webp",
+        "backgroundImage": "/assets/projects/luxnova/wizytowki/mockup-wizytowki-lux-nova.webp",
         "overlay": "black"
       },
       "seo": {
@@ -775,6 +741,40 @@
         "description": "Projekt wizytówki dla kancelarii adwokackiej LUX NOVA. Zaprojektowaliśmy układ poziomy z sygnetem gryfa na froncie i kodem QR na rewersie. Zobacz realizację.",
         "canonical": "https://www.arteonagency.pl/realizacje/wizytowka-dla-kancelarii-adwokackiej-lux-nova"
       }
+    },
+
+    {
+      "slug": "strona-internetowa-dla-kateringu-kolorowe-talerze",
+      "title": "Projekt wyglądu strony internetowej dla firmy cateringowej - KoloroweTalerze",
+      "short": "Projekt nowego wyglądu strony dla firmy cateringowej KoloroweTalerze. Ciepłe odcienie i ramki nawiązujące do obrusu - klasyczna polska kuchnia. Prace nad wdrożeniem trwają.",
+      "description": "<p>Projekt nowego wyglądu strony dla firmy cateringowej <strong>KoloroweTalerze</strong>. Celem było stworzenie bardziej profesjonalnego wizerunku oraz mocniejsze podkreślenie potraw.</p><br /><p>Wykorzystaliśmy <strong>ciepłe odcienie</strong> i delikatne akcenty - ramki z wzorami ala obrus - jako nawiązanie do klasycznej, lekko staromodnej polskiej kuchni.</p><br /><p>Wdrożenie projektu jeszcze trwa. Aktualna strona klienta: <a href=\"https://cateringkolorowetalerze.pl/\" target=\"_blank\" rel=\"noopener noreferrer\">cateringkolorowetalerze.pl</a>.</p>",
+      "image": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
+      "category": ["strony"],
+      "task": "Zaprojektować nowy wygląd strony cateringowej z naciskiem na profesjonalizm i ekspozycję potraw.",
+      "goals": "<p>Założenia projektu:</p><ul><li>Bardziej profesjonalny wizerunek,</li><li>Delikatne nawiązania do tradycyjnej polskiej kuchni.</li></ul>",
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
+          "alt": "Strona KoloroweTalerze - mockup realizacji Arteon",
+          "ratio": "16/9",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Twoja firma też potrzebuje strony internetowej?",
+        "description": "Zajmujemy się projektowaniem stron oraz ich realizacją. Skontaktuj się z nami - stworzymy stronę dopasowaną do Twoich potrzeb.",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoHref": "/uslugi/tworzenie-stron-wordpress",
+        "backgroundImage": "/assets/projects/kolorowe-talerze/moskup-strony-kolorowe-talerze.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Strona internetowa dla firmy cateringowej - KoloroweTalerze",
+        "description": "Projekt wyglądu strony internetowej dla firmy cateringowej KoloroweTalerze. Sprawdź naszą realizację i zamów stronę dla swojego kateringu.",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-kolorowe-talerze"
+      },
+      "link": "https://cateringkolorowetalerze.pl/"
     },
 
     {
@@ -1148,7 +1148,7 @@
       "title": "Wizytówka dla SPA - TALIA",
       "short": "Projekt wizytówki dla SPA TALIA inspirowanej naturą. Malarskie tło lasu na froncie, czytelne dane właścicielki na rewersie i paleta zieleni z ciepłym beżem.",
       "description": "<p>Projekt koncepcyjny <strong>wizytówki dla SPA</strong> inspirowanej naturą. Na froncie umieściliśmy malarskie tło lasu w technice akrylowej, logotyp i typografię <em>Warbler Display</em>. Na rewersie znajdują się czytelne dane właścicielki i adres strony internetowej.</p><p>Paleta kolorów łączy głęboką zieleń (<strong>#182519</strong>) z ciepłym beżem (<strong>#e1d2c2</strong>) i bielą.</p>",
-      "image": "/assets/projects/talia/mockup-wizytówki-talia.webp",
+      "image": "/assets/projects/talia/mockup-wizytowki-talia.webp",
       "category": ["projekty graficzne", "wizytówki"],
       "process_steps": [
         "Wizytówka w układzie poziomym (front i tył)",
@@ -1159,7 +1159,7 @@
       "contentBlocks": [
         {
           "type": "imageText",
-          "src": "/assets/projects/talia/mockup-wizytówki-talia.webp",
+          "src": "/assets/projects/talia/mockup-wizytowki-talia.webp",
           "alt": "Wizytówka dla SPA - TALIA (front i tył)",
           "imageSide": "left",
           "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 '>Wizytówki dla SPA - spokój i klasa</h2><p>Malarstwo natury na froncie i elegancki układ danych na rewersie. Połączenie zieleni i beżu buduje wrażenie jakości i bliskości natury.</p>",
@@ -1182,7 +1182,7 @@
         "description": "Zaprojektujemy elegancką wizytówkę z przygotowaniem do druku - dopasowaną do charakteru marki.",
         "btnTwo": "Sprawdź ofertę projektu wizytówki",
         "btnTwoHref": "/uslugi/projekty-graficzne/projekt-wizytowki",
-        "backgroundImage": "/assets/projects/talia/mockup-wizytówki-talia.webp",
+        "backgroundImage": "/assets/projects/talia/mockup-wizytowki-talia.webp",
         "overlay": "black"
       },
       "seo": {

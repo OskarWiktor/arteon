@@ -8,6 +8,12 @@ interface CarouselCardShellProps {
   image: string;
   title: string;
   multipleLinks?: boolean;
+  /**
+   * Tailwind aspect-ratio class for the card image container. Defaults to
+   * `aspect-2/1` (tool/article cards). Project cards pass `aspect-3/2` so the
+   * full 3:2 mockup — including the brand logo — is visible without cropping.
+   */
+  imageAspectClassName?: string;
 }
 
 export default function CarouselCardShell({
@@ -16,6 +22,7 @@ export default function CarouselCardShell({
   image,
   title,
   multipleLinks = true,
+  imageAspectClassName = 'aspect-2/1',
 }: CarouselCardShellProps) {
   if (multipleLinks) {
     <Card
@@ -24,7 +31,9 @@ export default function CarouselCardShell({
       padding='md'
     >
       <Link href={href} prefetch={false} className='block'>
-        <div className='relative aspect-2/1 w-full overflow-hidden'>
+        <div
+          className={`relative ${imageAspectClassName} w-full overflow-hidden`}
+        >
           <Image
             src={image}
             alt={title}
@@ -47,7 +56,9 @@ export default function CarouselCardShell({
       className='group relative flex h-full flex-col'
       padding='md'
     >
-      <div className='relative aspect-2/1 w-full overflow-hidden'>
+      <div
+        className={`relative ${imageAspectClassName} w-full overflow-hidden`}
+      >
         <Image
           src={image}
           alt={title}
