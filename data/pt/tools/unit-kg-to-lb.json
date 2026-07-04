@@ -84,7 +84,7 @@
     {
       "type": "sectionBasic",
       "title": "Quando se convertem quilogramas para libras?",
-      "html": "<p class=\"text-mid mb-4\">O quilograma é a unidade de massa padrão em Portugal e no Brasil. A libra (lb) domina nos EUA e permanece comum no Reino Unido, especialmente para o peso corporal — onde os britânicos também usam o stone (1 stone = 14 libras = aprox. 6,35 kg).</p><p class=\"text-mid mb-4\">Converter kg para libras é necessário quando consulta o peso numa aplicação de saúde americana, compra material desportivo descrito em libras, interpreta um limite de bagagem em lb ou quer saber o peso de nascimento de um bebé em documentação de um hospital anglófono.</p><p class=\"text-mid mb-4\">Uma libra equivale exatamente a 0,45359237 kg, valor fixado como constante desde 1959. Ao contrário: 1 kg = 2,2046 libras. O conversor realiza o cálculo assim que digita um valor.</p><p class=\"text-mid\">Nesta página encontrará uma tabela de kg para libras para valores de 0,5 a 200 kg, uma tabela de peso corporal com conversão para libras e stone, uma tabela de pesos de academia e uma tabela inversa de libras para kg.</p>",
+      "html": "<p class=\"text-mid mb-4\">O quilograma é a unidade de massa padrão em Portugal e no Brasil. A libra (lb) domina nos EUA e permanece comum no Reino Unido, especialmente para o peso corporal — onde os britânicos também usam o stone (1 stone = 14 libras = aprox. 6,35 kg).</p><p class=\"text-mid mb-4\">Converter kg para libras é necessário quando consulta o peso numa aplicação de saúde americana, compra material desportivo descrito em libras, interpreta um limite de bagagem em lb ou quer saber o peso de nascimento de um bebé em documentação de um hospital anglófono.</p><p class=\"text-mid mb-4\">Uma libra equivale exatamente a 0,45359237 kg, valor fixado como constante desde 1959. Ao contrário: 1 kg = 2,2046 libras. O conversor realiza o cálculo assim que digita um valor.</p><p class=\"text-mid\">Nesta página encontrará uma tabela de kg para libras para valores de 0,5 a 200 kg, uma tabela de peso corporal com conversão para libras e stone e uma tabela de pesos de academia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversor gratuito de quilogramas para libras – Arteon"
     },
@@ -108,34 +108,129 @@
       "labelHeader": "Quilogramas",
       "cols": ["Libras (lb)"],
       "rows": [
-        { "label": "0,5 kg", "values": ["1,10 lb"] },
-        { "label": "1 kg", "values": ["2,20 lb"], "emphasis": true },
-        { "label": "2 kg", "values": ["4,41 lb"] },
-        { "label": "3 kg", "values": ["6,61 lb"] },
-        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
-        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
-        { "label": "15 kg", "values": ["33,07 lb"] },
-        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
-        { "label": "23 kg", "values": ["50,71 lb"], "emphasis": true },
-        { "label": "25 kg", "values": ["55,12 lb"] },
-        { "label": "30 kg", "values": ["66,14 lb"] },
-        { "label": "32 kg", "values": ["70,55 lb"], "emphasis": true },
-        { "label": "40 kg", "values": ["88,18 lb"] },
-        { "label": "45 kg", "values": ["99,21 lb"] },
-        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
-        { "label": "55 kg", "values": ["121,25 lb"] },
-        { "label": "60 kg", "values": ["132,28 lb"] },
-        { "label": "65 kg", "values": ["143,30 lb"] },
-        { "label": "70 kg", "values": ["154,32 lb"], "emphasis": true },
-        { "label": "75 kg", "values": ["165,35 lb"] },
-        { "label": "80 kg", "values": ["176,37 lb"], "emphasis": true },
-        { "label": "85 kg", "values": ["187,39 lb"] },
-        { "label": "90 kg", "values": ["198,42 lb"] },
-        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true },
-        { "label": "110 kg", "values": ["242,51 lb"] },
-        { "label": "120 kg", "values": ["264,55 lb"] },
-        { "label": "150 kg", "values": ["330,69 lb"], "emphasis": true },
-        { "label": "200 kg", "values": ["440,92 lb"] }
+        {
+          "label": "0,5 kg",
+          "values": ["1,10 lb"]
+        },
+        {
+          "label": "1 kg",
+          "values": ["2,20 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "2 kg",
+          "values": ["4,41 lb"]
+        },
+        {
+          "label": "3 kg",
+          "values": ["6,61 lb"]
+        },
+        {
+          "label": "5 kg",
+          "values": ["11,02 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "10 kg",
+          "values": ["22,05 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "15 kg",
+          "values": ["33,07 lb"]
+        },
+        {
+          "label": "20 kg",
+          "values": ["44,09 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "23 kg",
+          "values": ["50,71 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "25 kg",
+          "values": ["55,12 lb"]
+        },
+        {
+          "label": "30 kg",
+          "values": ["66,14 lb"]
+        },
+        {
+          "label": "32 kg",
+          "values": ["70,55 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "40 kg",
+          "values": ["88,18 lb"]
+        },
+        {
+          "label": "45 kg",
+          "values": ["99,21 lb"]
+        },
+        {
+          "label": "50 kg",
+          "values": ["110,23 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "55 kg",
+          "values": ["121,25 lb"]
+        },
+        {
+          "label": "60 kg",
+          "values": ["132,28 lb"]
+        },
+        {
+          "label": "65 kg",
+          "values": ["143,30 lb"]
+        },
+        {
+          "label": "70 kg",
+          "values": ["154,32 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "75 kg",
+          "values": ["165,35 lb"]
+        },
+        {
+          "label": "80 kg",
+          "values": ["176,37 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "85 kg",
+          "values": ["187,39 lb"]
+        },
+        {
+          "label": "90 kg",
+          "values": ["198,42 lb"]
+        },
+        {
+          "label": "100 kg",
+          "values": ["220,46 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "110 kg",
+          "values": ["242,51 lb"]
+        },
+        {
+          "label": "120 kg",
+          "values": ["264,55 lb"]
+        },
+        {
+          "label": "150 kg",
+          "values": ["330,69 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "200 kg",
+          "values": ["440,92 lb"]
+        }
       ],
       "caption": "Quer converter no sentido inverso? Use o nosso <a href=\"/pt/ferramentas/conversor-libras-para-kg\">conversor de libras para kg</a>, com tabela e conteúdo detalhado para essa direção."
     },
@@ -150,14 +245,23 @@
       "labelHeader": "Peso corporal",
       "cols": ["Libras (lb)", "Stone e libras (st lb)"],
       "rows": [
-        { "label": "40 kg", "values": ["88,18 lb", "6 st 4,2 lb"] },
-        { "label": "45 kg", "values": ["99,21 lb", "7 st 1,2 lb"] },
+        {
+          "label": "40 kg",
+          "values": ["88,18 lb", "6 st 4,2 lb"]
+        },
+        {
+          "label": "45 kg",
+          "values": ["99,21 lb", "7 st 1,2 lb"]
+        },
         {
           "label": "50 kg",
           "values": ["110,23 lb", "7 st 12,2 lb"],
           "emphasis": true
         },
-        { "label": "55 kg", "values": ["121,25 lb", "8 st 9,3 lb"] },
+        {
+          "label": "55 kg",
+          "values": ["121,25 lb", "8 st 9,3 lb"]
+        },
         {
           "label": "60 kg",
           "values": ["132,28 lb", "9 st 6,3 lb"],
@@ -198,31 +302,14 @@
           "values": ["220,46 lb", "15 st 10,5 lb"],
           "emphasis": true
         },
-        { "label": "110 kg", "values": ["242,51 lb", "17 st 4,5 lb"] },
-        { "label": "120 kg", "values": ["264,55 lb", "18 st 12,6 lb"] }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionTable",
-      "title": "Tabela inversa – libras para quilogramas",
-      "description": "A tabela seguinte converte os valores habituais em libras para quilogramas, arredondada a dois decimais.",
-      "labelHeader": "Libras (lb)",
-      "cols": ["Quilogramas"],
-      "rows": [
-        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
-        { "label": "5 lb", "values": ["2,27 kg"] },
-        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
-        { "label": "20 lb", "values": ["9,07 kg"] },
-        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
-        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
-        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
-        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
-        { "label": "250 lb", "values": ["113,40 kg"] },
-        { "label": "300 lb", "values": ["136,08 kg"] }
+        {
+          "label": "110 kg",
+          "values": ["242,51 lb", "17 st 4,5 lb"]
+        },
+        {
+          "label": "120 kg",
+          "values": ["264,55 lb", "18 st 12,6 lb"]
+        }
       ]
     },
     {
@@ -236,16 +323,51 @@
       "labelHeader": "Peso (kg)",
       "cols": ["Peso (lb)"],
       "rows": [
-        { "label": "2,5 kg", "values": ["5,51 lb"] },
-        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
-        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
-        { "label": "15 kg", "values": ["33,07 lb"] },
-        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
-        { "label": "25 kg", "values": ["55,12 lb"] },
-        { "label": "30 kg", "values": ["66,14 lb"] },
-        { "label": "40 kg", "values": ["88,18 lb"] },
-        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
-        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true }
+        {
+          "label": "2,5 kg",
+          "values": ["5,51 lb"]
+        },
+        {
+          "label": "5 kg",
+          "values": ["11,02 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "10 kg",
+          "values": ["22,05 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "15 kg",
+          "values": ["33,07 lb"]
+        },
+        {
+          "label": "20 kg",
+          "values": ["44,09 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "25 kg",
+          "values": ["55,12 lb"]
+        },
+        {
+          "label": "30 kg",
+          "values": ["66,14 lb"]
+        },
+        {
+          "label": "40 kg",
+          "values": ["88,18 lb"]
+        },
+        {
+          "label": "50 kg",
+          "values": ["110,23 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "100 kg",
+          "values": ["220,46 lb"],
+          "emphasis": true
+        }
       ]
     },
     {

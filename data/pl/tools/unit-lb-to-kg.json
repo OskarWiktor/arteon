@@ -52,7 +52,6 @@
         "Tabela przeliczeniowa obejmuje wartości od 1 do 300 lb",
         "Tabela wagi ciała przelicza popularne zakresy od 88 do 265 lb na kilogramy",
         "Tabela ciężarków siłownianych przelicza popularne obciążenia od 5 do 225 lb na kilogramy",
-        "Tabela odwrotna przelicza kilogramy na funty dla wartości od 0,5 do 200 kg",
         "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
         "Dokładny wzór konwersji to kilogramy = funty × 0,45359237, bazujący na definicji funta z 1959 roku",
         "Narzędzie działa na telefonie, tablecie i komputerze bez instalacji"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "Kiedy przelicza się funty na kilogramy?",
-      "html": "<p class=\"text-mid mb-4\">Funt (lb) to jednostka masy z anglosaskiego systemu miar, powszechna w USA i nadal używana w Wielkiej Brytanii. W Polsce i Europie na co dzień używamy kilogramów, więc funty pojawiają się głównie wtedy, gdy korzystamy z produktów, aplikacji lub informacji z krajów anglojęzycznych.</p><p class=\"text-mid mb-4\">Najczęstsze sytuacje: aplikacja fitness z USA podaje cel wagowy w funtach, limit wagowy bagażu rejestrowanego wynosi 50 lb, kupujesz hantle na Amazon US opisane w funtach albo program treningowy z YouTube mówi o podniesieniu 135 lb na ławce.</p><p class=\"text-mid mb-4\">Wzór jest prosty: jeden funt to dokładnie 0,45359237 kg. Żeby przeliczyć funty na kilogramy, wystarczy pomnożyć przez 0,4536. Konwerter robi to natychmiast po wpisaniu wartości.</p><p class=\"text-mid\">Na tej stronie znajdziesz tabelę lb na kg, tabelę wagi ciała z przeliczeniem popularnych wartości, tabelę ciężarków siłownianych oraz tabelę odwrotną kg na funty.</p>",
+      "html": "<p class=\"text-mid mb-4\">Funt (lb) to jednostka masy z anglosaskiego systemu miar, powszechna w USA i nadal używana w Wielkiej Brytanii. W Polsce i Europie na co dzień używamy kilogramów, więc funty pojawiają się głównie wtedy, gdy korzystamy z produktów, aplikacji lub informacji z krajów anglojęzycznych.</p><p class=\"text-mid mb-4\">Najczęstsze sytuacje: aplikacja fitness z USA podaje cel wagowy w funtach, limit wagowy bagażu rejestrowanego wynosi 50 lb, kupujesz hantle na Amazon US opisane w funtach albo program treningowy z YouTube mówi o podniesieniu 135 lb na ławce.</p><p class=\"text-mid mb-4\">Wzór jest prosty: jeden funt to dokładnie 0,45359237 kg. Żeby przeliczyć funty na kilogramy, wystarczy pomnożyć przez 0,4536. Konwerter robi to natychmiast po wpisaniu wartości.</p><p class=\"text-mid\">Na tej stronie znajdziesz tabelę lb na kg, tabelę wagi ciała z przeliczeniem popularnych wartości oraz tabelę ciężarków siłownianych.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Darmowy konwerter funtów na kilogramy – Arteon"
     },

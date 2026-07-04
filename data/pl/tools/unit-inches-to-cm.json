@@ -52,7 +52,6 @@
         "Tabela przeliczeniowa obejmuje wartości od 0,5 do 90 cali",
         "Tabela przekątnych ekranów pokazuje najpopularniejsze rozmiary telewizorów i monitorów od 24 do 85 cali",
         "Tabela wzrostu zawiera przeliczenie wzrostu z cali i stóp na centymetry dla wartości od 4 ft 11 in do 6 ft 7 in",
-        "Tabela odwrotna pokazuje, ile cali mają wartości od 0,5 cm do 200 cm",
         "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
         "Dokładny wzór konwersji to centymetry = cale × 2,54 i wykorzystuje stałą zależność między calem a centymetrem",
         "Narzędzie działa na telefonie, tablecie i komputerze bez instalacji"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "Kiedy przelicza się cale na centymetry?",
-      "html": "<p class=\"text-mid mb-4\">Cal to jednostka długości z systemu imperialnego, powszechnie używana w USA, Wielkiej Brytanii, Kanadzie i Australii. W Polsce i całej Europie posługujemy się centymetrami, więc cale pojawiają się głównie wtedy, gdy mamy do czynienia z produktami lub informacjami pochodzącymi z krajów anglojęzycznych.</p><p class=\"text-mid mb-4\">Najczęstsze sytuacje: chcesz sprawdzić, ile centymetrów ma telewizor opisany jako 55 cali, porównujesz swój wzrost z amerykańską tabelą rozmiarów odzieży, kupujesz buty w sklepie z Wielkiej Brytanii i rozmiar podany jest w calach albo sprawdzasz wymiary mebla z katalogu IKEA US.</p><p class=\"text-mid mb-4\">Wzór jest prosty: jeden cal to dokładnie 2,54 cm. Żeby przeliczyć cale na centymetry, wystarczy pomnożyć liczbę cali przez 2,54. Konwerter robi to natychmiast po wpisaniu wartości.</p><p class=\"text-mid\">Na tej stronie znajdziesz tabelę przeliczeniową cale na cm, tabelę popularnych przekątnych ekranów, tabelę wzrostu z przeliczeniem stóp i cali na centymetry oraz tabelę odwrotną dla centymetrów na cale.</p>",
+      "html": "<p class=\"text-mid mb-4\">Cal to jednostka długości z systemu imperialnego, powszechnie używana w USA, Wielkiej Brytanii, Kanadzie i Australii. W Polsce i całej Europie posługujemy się centymetrami, więc cale pojawiają się głównie wtedy, gdy mamy do czynienia z produktami lub informacjami pochodzącymi z krajów anglojęzycznych.</p><p class=\"text-mid mb-4\">Najczęstsze sytuacje: chcesz sprawdzić, ile centymetrów ma telewizor opisany jako 55 cali, porównujesz swój wzrost z amerykańską tabelą rozmiarów odzieży, kupujesz buty w sklepie z Wielkiej Brytanii i rozmiar podany jest w calach albo sprawdzasz wymiary mebla z katalogu IKEA US.</p><p class=\"text-mid mb-4\">Wzór jest prosty: jeden cal to dokładnie 2,54 cm. Żeby przeliczyć cale na centymetry, wystarczy pomnożyć liczbę cali przez 2,54. Konwerter robi to natychmiast po wpisaniu wartości.</p><p class=\"text-mid\">Na tej stronie znajdziesz tabelę przeliczeniową cale na cm, tabelę popularnych przekątnych ekranów oraz tabelę wzrostu z przeliczeniem stóp i cali na centymetry.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Darmowy konwerter cali na centymetry – Arteon"
     },

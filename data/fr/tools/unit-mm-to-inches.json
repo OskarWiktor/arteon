@@ -1,0 +1,293 @@
+{
+  "toolKey": "mmToInches",
+  "locale": "fr",
+  "metadata": {
+    "title": "Calculateur mm en pouces – convertir les millimètres en pouces",
+    "description": "Convertissez les millimètres en pouces. Les tableaux fournis montrent aussi les fractions de pouce (1/8, 1/4, 3/8) utilisées pour les forets, les vis et les épaisseurs de matériaux. Le convertisseur fonctionne dans les deux sens et calcule instantanément.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-mm-en-pouces"
+  },
+  "hero": {
+    "title": "Convertir les millimètres en pouces",
+    "description": "Saisissez n'importe quelle valeur en millimètres et lisez immédiatement le résultat en pouces décimaux. Le tableau des fractions plus bas sur la page indique aussi la fraction de pouce la plus proche, celle utilisée pour les forets ou les vis. Le convertisseur est utile pour les mesures précises : épaisseurs de matériaux, dimensions de composants électroniques ou choix d'outils spécifiés en pouces.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-mm-en-pouces",
+      "label": "mm en pouces"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur millimètres en pouces – calculateur mm en pouces",
+      "alternateName": [
+        "Convertisseur mm en pouces",
+        "Calculateur mm en pouces",
+        "Convertisseur millimètres en pouces",
+        "Millimètres en pouces",
+        "mm en pouces",
+        "Convertir mm en pouces",
+        "Conversion mm en pouces",
+        "mm en inch",
+        "Convertisseur millimètre en pouce",
+        "Calculateur millimètres en pouces",
+        "mm en inches",
+        "mm en in",
+        "Tableau mm en pouces",
+        "Fractions de pouce en millimètres",
+        "Combien de pouces fait un millimètre"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertisseur de millimètres en pouces fonctionnant dans le navigateur sans inscription. Saisissez une valeur en mm et obtenez instantanément le résultat en pouces décimaux. Utile pour choisir des forets et des vis, vérifier des épaisseurs de matériaux ou lire des dimensions de composants électroniques données en pouces.",
+      "featureList": [
+        "La conversion fonctionne dans les deux sens, vous pouvez donc convertir les millimètres en pouces et les pouces en millimètres",
+        "Le résultat s'affiche instantanément pendant la saisie, sans qu'il soit nécessaire de cliquer sur un bouton",
+        "Le résultat peut être copié dans le presse-papiers en un seul clic",
+        "Le tableau de conversion couvre les valeurs de 1 mm à 800 mm",
+        "Un tableau distinct présente les fractions de pouce les plus courantes (de 1/16 à 1 pouce) avec leur équivalent en millimètres",
+        "Tous les calculs s'effectuent localement dans le navigateur, aucune donnée ne quitte votre appareil",
+        "La formule exacte est pouces = millimètres ÷ 25,4, basée sur la relation fixe entre le pouce et le millimètre",
+        "Fonctionne sur téléphone, tablette et ordinateur sans installation"
+      ]
+    },
+    "howTo": {
+      "name": "Comment convertir les millimètres en pouces ?",
+      "description": "Guide rapide d'utilisation du convertisseur mm en pouces.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir la valeur en millimètres",
+          "text": "Dans le champ de gauche, saisissez le nombre de millimètres que vous souhaitez convertir en pouces."
+        },
+        {
+          "name": "Lire le résultat en pouces",
+          "text": "Le résultat en pouces s'affiche immédiatement dans le champ adjacent. Vous pouvez le copier dans le presse-papiers en un seul clic."
+        },
+        {
+          "name": "Inverser la direction si nécessaire",
+          "text": "Cliquez sur Changer l'ordre pour basculer le convertisseur en mode pouces vers millimètres."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir les millimètres en pouces ?",
+      "html": "<p class=\"text-mid mb-4\">Le millimètre est l'unité de base des mesures précises en France et dans toute l'Europe. Le pouce domine en revanche dans les pays anglophones, avant tout aux États-Unis, où forets, vis, douilles et épaisseurs de matériaux de construction sont spécifiés en pouces. Le problème apparaît lorsque vous achetez un outil américain avec des caractéristiques en pouces ou que vous essayez de choisir un foret métrique pour une dimension donnée en fraction de pouce.</p><p class=\"text-mid mb-4\">Un pouce vaut exactement 25,4 mm. Cette relation est constante et s'applique partout, chaque conversion se résume donc à une seule division. Le convertisseur la fait pour vous dès la saisie d'une valeur.</p><p class=\"text-mid mb-4\">Plus bas sur cette page, vous trouverez un tableau de conversion mm en pouces pour les valeurs de 1 à 800 mm ainsi qu'un tableau des fractions de pouce les plus courantes avec leur équivalent en millimètres.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur gratuit de millimètres en pouces – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion mm en pouces ? Formule et exemple",
+      "html": "<p class=\"text-mid mb-4\">La conversion des millimètres en pouces repose sur une relation fixe : un pouce vaut exactement 25,4 mm. Il suffit donc de diviser le nombre de millimètres par 25,4 pour obtenir le résultat en pouces.</p><p class=\"text-mid mb-4\">La formule complète : <strong>pouces = millimètres ÷ 25,4</strong>. Dans l'autre sens : <strong>millimètres = pouces × 25,4</strong>.</p><p class=\"text-mid mb-4\">Exemple : vous voulez savoir combien de pouces font 14 mm. Vous remplacez : 14 ÷ 25,4 = 0,551 pouce. Ce n'est ni exactement 1/2 pouce (12,7 mm) ni 3/4 de pouce (19,05 mm) – la fraction courante la plus proche est 9/16 de pouce (14,29 mm), avec un écart d'environ 0,29 mm tout de même.</p><p class=\"text-mid\">Autre exemple : l'épaisseur standard du stratifié d'un circuit imprimé (PCB) est de 1,6 mm, ce qui donne 1,6 ÷ 25,4 = 0,063 pouce – une valeur proche de 1/16 de pouce (0,0625 pouce). Le convertisseur effectue les deux sens du calcul dès la saisie d'une valeur.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tableau de conversion mm en pouces",
+      "description": "Le tableau ci-dessous convertit les valeurs courantes en millimètres en pouces décimaux. Les valeurs sont arrondies à trois décimales. Pour convertir une valeur exacte ou des dimensions moins courantes, utilisez le convertisseur ci-dessus.",
+      "labelHeader": "Millimètres",
+      "cols": ["Pouces"],
+      "rows": [
+        { "label": "1 mm", "values": ["0,039 in"] },
+        { "label": "2 mm", "values": ["0,079 in"] },
+        { "label": "3 mm", "values": ["0,118 in"] },
+        { "label": "4 mm", "values": ["0,157 in"] },
+        { "label": "5 mm", "values": ["0,197 in"], "emphasis": true },
+        { "label": "6 mm", "values": ["0,236 in"] },
+        { "label": "7 mm", "values": ["0,276 in"] },
+        { "label": "8 mm", "values": ["0,315 in"] },
+        { "label": "9 mm", "values": ["0,354 in"] },
+        { "label": "10 mm", "values": ["0,394 in"], "emphasis": true },
+        { "label": "12 mm", "values": ["0,472 in"] },
+        { "label": "14 mm", "values": ["0,551 in"] },
+        { "label": "15 mm", "values": ["0,591 in"] },
+        { "label": "16 mm", "values": ["0,630 in"] },
+        { "label": "18 mm", "values": ["0,709 in"] },
+        { "label": "20 mm", "values": ["0,787 in"], "emphasis": true },
+        { "label": "25 mm", "values": ["0,984 in"], "emphasis": true },
+        { "label": "30 mm", "values": ["1,181 in"] },
+        { "label": "35 mm", "values": ["1,378 in"] },
+        { "label": "40 mm", "values": ["1,575 in"] },
+        { "label": "50 mm", "values": ["1,969 in"], "emphasis": true },
+        { "label": "60 mm", "values": ["2,362 in"] },
+        { "label": "70 mm", "values": ["2,756 in"] },
+        { "label": "80 mm", "values": ["3,150 in"] },
+        { "label": "90 mm", "values": ["3,543 in"] },
+        { "label": "100 mm", "values": ["3,937 in"], "emphasis": true },
+        { "label": "120 mm", "values": ["4,724 in"] },
+        { "label": "150 mm", "values": ["5,906 in"], "emphasis": true },
+        { "label": "180 mm", "values": ["7,087 in"] },
+        { "label": "200 mm", "values": ["7,874 in"], "emphasis": true },
+        { "label": "210 mm", "values": ["8,268 in"] },
+        { "label": "250 mm", "values": ["9,843 in"] },
+        { "label": "256 mm", "values": ["10,079 in"] },
+        { "label": "297 mm", "values": ["11,693 in"] },
+        { "label": "300 mm", "values": ["11,811 in"], "emphasis": true },
+        { "label": "500 mm", "values": ["19,685 in"] },
+        { "label": "800 mm", "values": ["31,496 in"], "emphasis": true }
+      ],
+      "caption": "Vous voulez convertir dans l'autre sens ? Utilisez notre convertisseur <a href=\"/fr/outils/convertisseur-pouces-en-mm\">pouces en mm</a>, qui contient le tableau complet des fractions de pouce par pas de 1/32."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Les fractions de pouce les plus courantes et leur équivalent en millimètres",
+      "description": "Dans les pays anglophones, forets, vis, douilles et profilés de construction sont désignés par des fractions de pouce, pas par des valeurs décimales. Le tableau ci-dessous présente les fractions les plus utilisées avec la valeur décimale et millimétrique. Les valeurs en millimètres sont arrondies à deux décimales.",
+      "labelHeader": "Pouce (fraction)",
+      "cols": ["Pouce (décimal)", "Millimètres"],
+      "rows": [
+        { "label": "1/16 in", "values": ["0,0625 in", "1,59 mm"] },
+        {
+          "label": "1/8 in",
+          "values": ["0,125 in", "3,18 mm"],
+          "emphasis": true
+        },
+        { "label": "5/32 in", "values": ["0,15625 in", "3,97 mm"] },
+        { "label": "3/16 in", "values": ["0,1875 in", "4,76 mm"] },
+        {
+          "label": "1/4 in",
+          "values": ["0,25 in", "6,35 mm"],
+          "emphasis": true
+        },
+        { "label": "5/16 in", "values": ["0,3125 in", "7,94 mm"] },
+        {
+          "label": "3/8 in",
+          "values": ["0,375 in", "9,53 mm"],
+          "emphasis": true
+        },
+        { "label": "7/16 in", "values": ["0,4375 in", "11,11 mm"] },
+        {
+          "label": "1/2 in",
+          "values": ["0,5 in", "12,70 mm"],
+          "emphasis": true
+        },
+        { "label": "9/16 in", "values": ["0,5625 in", "14,29 mm"] },
+        { "label": "5/8 in", "values": ["0,625 in", "15,88 mm"] },
+        { "label": "11/16 in", "values": ["0,6875 in", "17,46 mm"] },
+        {
+          "label": "3/4 in",
+          "values": ["0,75 in", "19,05 mm"],
+          "emphasis": true
+        },
+        { "label": "13/16 in", "values": ["0,8125 in", "20,64 mm"] },
+        { "label": "7/8 in", "values": ["0,875 in", "22,23 mm"] },
+        { "label": "1 in", "values": ["1 in", "25,40 mm"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quand convertit-on le plus souvent les millimètres en pouces ?",
+      "description": "La conversion mm en pouces intervient surtout là où la précision de mesure compte. Chacune des situations ci-dessous a ses spécificités.",
+      "items": [
+        {
+          "title": "Forets et outils",
+          "description": "Les jeux américains de forets et de douilles sont désignés par des fractions de pouce (par exemple 1/8, 5/32, 1/4), pas par des millimètres. Si vous possédez un jeu de forets métrique et tombez sur une notice avec des tailles en pouces, la conversion permet de choisir l'équivalent le plus proche. Un foret de 1/4 de pouce fait 6,35 mm et un foret de 3/8 de pouce, 9,53 mm."
+        },
+        {
+          "title": "Vis et éléments de fixation",
+          "description": "Les vis et écrous du système en pouces (par exemple UNC, UNF) ont des tailles exprimées en fractions de pouce. Lors de la réparation d'un équipement importé des États-Unis ou du montage d'un meuble avec une notice en pouces, vérifiez l'équivalent exact en millimètres pour choisir le bon outil."
+        },
+        {
+          "title": "Électronique et circuits imprimés",
+          "description": "L'espacement standard des broches en électronique (pas des plaques d'essai et des connecteurs à broches) est de 0,1 pouce, soit 2,54 mm. L'épaisseur typique du stratifié d'un circuit imprimé (PCB) est de 1,6 mm, ce qui correspond à environ 1/16 de pouce. Connaître ces valeurs facilite la conception de boîtiers et de modules électroniques."
+        },
+        {
+          "title": "Épaisseur des matériaux et des tôles",
+          "description": "Les catalogues de matériaux de construction, de tôles ou de plexiglas des boutiques américaines indiquent l'épaisseur en pouces ou en fractions de pouce. Une tôle de 1/8 de pouce fait 3,18 mm et une plaque de 1/4 de pouce, 6,35 mm – vérifiez-le avant de commander pour que le matériau convienne à votre projet."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion mm en pouces",
+      "items": [
+        {
+          "question": "Combien de pouces font 100 mm ?",
+          "answer": "100 mm font 3,937 pouces. Calcul : 100 ÷ 25,4 = 3,937 in. En arrondissant, cela fait un peu moins de 4 pouces."
+        },
+        {
+          "question": "Combien de pouces font 25 mm ?",
+          "answer": "25 mm font 0,984 pouce. Calcul : 25 ÷ 25,4 = 0,984 in. C'est une valeur proche de 1 pouce, mais pas égale – exactement 1 pouce fait 25,4 mm, l'écart est donc de 0,4 mm."
+        },
+        {
+          "question": "Combien de pouces font 10 mm ?",
+          "answer": "10 mm font 0,394 pouce. Calcul : 10 ÷ 25,4 = 0,394 in. Ce n'est pas 1/4 de pouce (0,25 in = 6,35 mm) – 10 mm correspondent à environ 25/64 de pouce."
+        },
+        {
+          "question": "Combien de pouces font 1, 2, 3, 20 et 30 mm ?",
+          "answer": "1 mm = 0,039 in, 2 mm = 0,079 in, 3 mm = 0,118 in, 20 mm = 0,787 in et 30 mm = 1,181 in. Vous obtenez chacune de ces valeurs en divisant le nombre de millimètres par 25,4."
+        },
+        {
+          "question": "Combien de pouces font 150 mm ?",
+          "answer": "150 mm font 5,906 pouces. Calcul : 150 ÷ 25,4 = 5,906 in. C'est une valeur proche de 6 pouces, avec un écart d'environ 2,4 mm."
+        },
+        {
+          "question": "Combien de pouces font 6, 15, 40, 50 et 180 mm ?",
+          "answer": "6 mm = 0,236 in, 15 mm = 0,591 in, 40 mm = 1,575 in, 50 mm = 1,969 in et 180 mm = 7,087 in. Toutes les valeurs s'obtiennent de la même manière : vous divisez les millimètres par 25,4."
+        },
+        {
+          "question": "Combien de pouces font 5 mm ?",
+          "answer": "5 mm font 0,197 pouce. Calcul : 5 ÷ 25,4 = 0,197 in. C'est une valeur proche de 3/16 de pouce (0,1875 in = 4,76 mm)."
+        },
+        {
+          "question": "Comment convertir les mm en pouces sous forme de fraction ?",
+          "answer": "Convertissez d'abord les millimètres en pouces décimaux (mm ÷ 25,4), puis cherchez la fraction courante la plus proche dans le tableau ci-dessus. Par exemple, 9 mm = 0,354 in, ce qui est proche de 23/64 de pouce, même si en pratique on arrondit à la taille de foret ou de clé disponible la plus proche, le plus souvent par pas de 1/32 ou 1/16 de pouce."
+        },
+        {
+          "question": "14 mm font-ils 1 pouce ?",
+          "answer": "Non. 14 mm font 0,551 pouce, soit à peu près un demi-pouce. Exactement 1 pouce fait 25,4 mm – 14 mm en représentent presque la moitié."
+        },
+        {
+          "question": "Combien de millimètres fait exactement 1 pouce ?",
+          "answer": "1 pouce fait exactement 25,4 mm. C'est une valeur constante définie, en vigueur depuis 1959 sous le nom de pouce international, adoptée par les États-Unis, le Royaume-Uni, le Canada, l'Australie et d'autres pays anglo-saxons."
+        },
+        {
+          "question": "Quelle est la formule pour convertir les mm en pouces ?",
+          "answer": "La formule est : pouces = millimètres ÷ 25,4. Par exemple, 50 mm ÷ 25,4 = 1,969 pouce. Dans l'autre sens : millimètres = pouces × 25,4."
+        },
+        {
+          "question": "12 mm font-ils 1/2 pouce ?",
+          "answer": "Pas exactement. 1/2 pouce fait 12,7 mm, tandis que 12 mm font 0,472 pouce. L'écart est de 0,7 mm, ce qui peut compter lors du choix d'un foret ou d'une vis."
+        },
+        {
+          "question": "2 mm sont-ils la même chose que 1/16 de pouce ?",
+          "answer": "Non. 1/16 de pouce fait 1,5875 mm, tandis que 2 mm font 0,079 pouce (presque 5/64 de pouce). Les valeurs sont proches, mais pas identiques – l'écart est d'environ 0,41 mm."
+        },
+        {
+          "question": "32 mm font-ils 1 pouce ?",
+          "answer": "Non. 1 pouce fait exactement 25,4 mm, tandis que 32 mm font 1,26 pouce. C'est plus de 20 % de plus qu'un pouce."
+        },
+        {
+          "question": "Comment convertir les mm en pouces sans calculatrice ?",
+          "answer": "Approximation rapide : divisez les millimètres par 25 au lieu de 25,4. L'erreur est minime (env. 1,6 %), ce qui suffit en pratique pour une comparaison approximative. Par exemple, 100 mm ÷ 25 = 4 pouces (la valeur exacte est 3,937). Pour des conversions précises, utilisez toujours le convertisseur."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Vous avez une question ou une suggestion ?",
+      "description": "Si vous constatez une erreur dans les tableaux ou si vous avez une idée pour améliorer le convertisseur, contactez-nous. Nous répondons à chaque message.",
+      "imageAlt": "Contacter Arteon Agency",
+      "subject": "Convertisseur mm en pouces"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres convertisseurs d'unités utiles"
+    }
+  ]
+}

@@ -52,7 +52,6 @@
         "Převodní tabulka zahrnuje hodnoty od 0,5 cm do 200 cm",
         "Tabulka výšky zobrazuje nejběžnější hodnoty od 150 cm do 200 cm s převodem na stopy a palce",
         "Tabulka úhlopříček obrazovek zahrnuje nejpopulárnější velikosti televizorů a monitorů od 24 do 85 palců",
-        "Obrácená tabulka ukazuje, kolik centimetrů odpovídá hodnotě v palcích, pro rozsah 0,5 až 72 palců",
         "Všechny výpočty probíhají lokálně v prohlížeči, žádná data neopouštějí tvoje zařízení",
         "Přesný vzorec převodu je palce = centimetry ÷ 2,54 a vychází z pevného vztahu mezi palcem a centimetrem",
         "Funguje na telefonu, tabletu i počítači bez instalace"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět centimetry na palce?",
-      "html": "<p class=\"text-mid mb-4\">Centimetr je délková jednotka každodenního života v Česku a v celé Evropě. Palec naopak dominuje ve Spojených státech a stále se hojně používá ve Velké Británii. Potřeba převodu nastává, když kupuješ televizor s úhlopříčkou v palcích, kontroluješ povolené rozměry zavazadel na webu americké letecké společnosti nebo porovnáváš svou výšku s tabulkou velikostí oblečení z britského obchodu.</p><p class=\"text-mid mb-4\">Jeden palec je přesně 2,54 cm. Tento vztah je pevný a platí všude, takže každý převod se redukuje na jedno dělení. Převodník to udělá za tebe ihned po zadání hodnoty.</p><p class=\"text-mid mb-4\">Níže na stránce najdeš převodní tabulku cm na palce pro hodnoty od 0,5 do 200 cm, samostatnou tabulku výšky s převodem na stopy a palce, tabulku populárních úhlopříček obrazovek a obrácenou tabulku palce na centimetry.</p>",
+      "html": "<p class=\"text-mid mb-4\">Centimetr je délková jednotka každodenního života v Česku a v celé Evropě. Palec naopak dominuje ve Spojených státech a stále se hojně používá ve Velké Británii. Potřeba převodu nastává, když kupuješ televizor s úhlopříčkou v palcích, kontroluješ povolené rozměry zavazadel na webu americké letecké společnosti nebo porovnáváš svou výšku s tabulkou velikostí oblečení z britského obchodu.</p><p class=\"text-mid mb-4\">Jeden palec je přesně 2,54 cm. Tento vztah je pevný a platí všude, takže každý převod se redukuje na jedno dělení. Převodník to udělá za tebe ihned po zadání hodnoty.</p><p class=\"text-mid mb-4\">Níže na stránce najdeš převodní tabulku cm na palce pro hodnoty od 0,5 do 200 cm, samostatnou tabulku výšky s převodem na stopy a palce a tabulku populárních úhlopříček obrazovek.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Bezplatný převodník centimetrů na palce – Arteon"
     },
@@ -110,49 +109,188 @@
       "labelHeader": "Centimetry",
       "cols": ["Palce"],
       "rows": [
-        { "label": "0,5 cm", "values": ["0,20 in"] },
-        { "label": "1 cm", "values": ["0,39 in"], "emphasis": true },
-        { "label": "1,5 cm", "values": ["0,59 in"] },
-        { "label": "2 cm", "values": ["0,79 in"] },
-        { "label": "2,5 cm", "values": ["0,98 in"] },
-        { "label": "3 cm", "values": ["1,18 in"] },
-        { "label": "4 cm", "values": ["1,57 in"] },
-        { "label": "5 cm", "values": ["1,97 in"], "emphasis": true },
-        { "label": "6 cm", "values": ["2,36 in"] },
-        { "label": "7 cm", "values": ["2,76 in"] },
-        { "label": "8 cm", "values": ["3,15 in"] },
-        { "label": "9 cm", "values": ["3,54 in"] },
-        { "label": "10 cm", "values": ["3,94 in"], "emphasis": true },
-        { "label": "12 cm", "values": ["4,72 in"] },
-        { "label": "13 cm", "values": ["5,12 in"] },
-        { "label": "14 cm", "values": ["5,51 in"] },
-        { "label": "15 cm", "values": ["5,91 in"], "emphasis": true },
-        { "label": "16 cm", "values": ["6,30 in"] },
-        { "label": "17 cm", "values": ["6,69 in"] },
-        { "label": "18 cm", "values": ["7,09 in"] },
-        { "label": "20 cm", "values": ["7,87 in"], "emphasis": true },
-        { "label": "21 cm", "values": ["8,27 in"] },
-        { "label": "22 cm", "values": ["8,66 in"] },
-        { "label": "23 cm", "values": ["9,06 in"] },
-        { "label": "24 cm", "values": ["9,45 in"] },
-        { "label": "25 cm", "values": ["9,84 in"] },
-        { "label": "30 cm", "values": ["11,81 in"] },
-        { "label": "35 cm", "values": ["13,78 in"] },
-        { "label": "40 cm", "values": ["15,75 in"] },
-        { "label": "45 cm", "values": ["17,72 in"] },
-        { "label": "50 cm", "values": ["19,69 in"], "emphasis": true },
-        { "label": "60 cm", "values": ["23,62 in"] },
-        { "label": "70 cm", "values": ["27,56 in"] },
-        { "label": "80 cm", "values": ["31,50 in"] },
-        { "label": "90 cm", "values": ["35,43 in"] },
-        { "label": "100 cm", "values": ["39,37 in"], "emphasis": true },
-        { "label": "120 cm", "values": ["47,24 in"] },
-        { "label": "150 cm", "values": ["59,06 in"], "emphasis": true },
-        { "label": "160 cm", "values": ["62,99 in"] },
-        { "label": "170 cm", "values": ["66,93 in"], "emphasis": true },
-        { "label": "180 cm", "values": ["70,87 in"] },
-        { "label": "190 cm", "values": ["74,80 in"] },
-        { "label": "200 cm", "values": ["78,74 in"], "emphasis": true }
+        {
+          "label": "0,5 cm",
+          "values": ["0,20 in"]
+        },
+        {
+          "label": "1 cm",
+          "values": ["0,39 in"],
+          "emphasis": true
+        },
+        {
+          "label": "1,5 cm",
+          "values": ["0,59 in"]
+        },
+        {
+          "label": "2 cm",
+          "values": ["0,79 in"]
+        },
+        {
+          "label": "2,5 cm",
+          "values": ["0,98 in"]
+        },
+        {
+          "label": "3 cm",
+          "values": ["1,18 in"]
+        },
+        {
+          "label": "4 cm",
+          "values": ["1,57 in"]
+        },
+        {
+          "label": "5 cm",
+          "values": ["1,97 in"],
+          "emphasis": true
+        },
+        {
+          "label": "6 cm",
+          "values": ["2,36 in"]
+        },
+        {
+          "label": "7 cm",
+          "values": ["2,76 in"]
+        },
+        {
+          "label": "8 cm",
+          "values": ["3,15 in"]
+        },
+        {
+          "label": "9 cm",
+          "values": ["3,54 in"]
+        },
+        {
+          "label": "10 cm",
+          "values": ["3,94 in"],
+          "emphasis": true
+        },
+        {
+          "label": "12 cm",
+          "values": ["4,72 in"]
+        },
+        {
+          "label": "13 cm",
+          "values": ["5,12 in"]
+        },
+        {
+          "label": "14 cm",
+          "values": ["5,51 in"]
+        },
+        {
+          "label": "15 cm",
+          "values": ["5,91 in"],
+          "emphasis": true
+        },
+        {
+          "label": "16 cm",
+          "values": ["6,30 in"]
+        },
+        {
+          "label": "17 cm",
+          "values": ["6,69 in"]
+        },
+        {
+          "label": "18 cm",
+          "values": ["7,09 in"]
+        },
+        {
+          "label": "20 cm",
+          "values": ["7,87 in"],
+          "emphasis": true
+        },
+        {
+          "label": "21 cm",
+          "values": ["8,27 in"]
+        },
+        {
+          "label": "22 cm",
+          "values": ["8,66 in"]
+        },
+        {
+          "label": "23 cm",
+          "values": ["9,06 in"]
+        },
+        {
+          "label": "24 cm",
+          "values": ["9,45 in"]
+        },
+        {
+          "label": "25 cm",
+          "values": ["9,84 in"]
+        },
+        {
+          "label": "30 cm",
+          "values": ["11,81 in"]
+        },
+        {
+          "label": "35 cm",
+          "values": ["13,78 in"]
+        },
+        {
+          "label": "40 cm",
+          "values": ["15,75 in"]
+        },
+        {
+          "label": "45 cm",
+          "values": ["17,72 in"]
+        },
+        {
+          "label": "50 cm",
+          "values": ["19,69 in"],
+          "emphasis": true
+        },
+        {
+          "label": "60 cm",
+          "values": ["23,62 in"]
+        },
+        {
+          "label": "70 cm",
+          "values": ["27,56 in"]
+        },
+        {
+          "label": "80 cm",
+          "values": ["31,50 in"]
+        },
+        {
+          "label": "90 cm",
+          "values": ["35,43 in"]
+        },
+        {
+          "label": "100 cm",
+          "values": ["39,37 in"],
+          "emphasis": true
+        },
+        {
+          "label": "120 cm",
+          "values": ["47,24 in"]
+        },
+        {
+          "label": "150 cm",
+          "values": ["59,06 in"],
+          "emphasis": true
+        },
+        {
+          "label": "160 cm",
+          "values": ["62,99 in"]
+        },
+        {
+          "label": "170 cm",
+          "values": ["66,93 in"],
+          "emphasis": true
+        },
+        {
+          "label": "180 cm",
+          "values": ["70,87 in"]
+        },
+        {
+          "label": "190 cm",
+          "values": ["74,80 in"]
+        },
+        {
+          "label": "200 cm",
+          "values": ["78,74 in"],
+          "emphasis": true
+        }
       ],
       "caption": "Chceš převést opačným směrem? Použij náš <a href=\"/cs/nastroje/prevodnik-palcu-na-cm\">převodník palců na cm</a> s vlastní tabulkou a podrobným obsahem pro tento směr převodu."
     },
@@ -167,98 +305,109 @@
       "labelHeader": "Výška",
       "cols": ["Palce (in)", "Stopy a palce (ft in)"],
       "rows": [
-        { "label": "150 cm", "values": ["59,06 in", "4 ft 11 in"] },
-        { "label": "155 cm", "values": ["61,02 in", "5 ft 1 in"] },
-        { "label": "158 cm", "values": ["62,20 in", "5 ft 2 in"] },
+        {
+          "label": "150 cm",
+          "values": ["59,06 in", "4 ft 11 in"]
+        },
+        {
+          "label": "155 cm",
+          "values": ["61,02 in", "5 ft 1 in"]
+        },
+        {
+          "label": "158 cm",
+          "values": ["62,20 in", "5 ft 2 in"]
+        },
         {
           "label": "160 cm",
           "values": ["62,99 in", "5 ft 3 in"],
           "emphasis": true
         },
-        { "label": "162 cm", "values": ["63,78 in", "5 ft 4 in"] },
-        { "label": "163 cm", "values": ["64,17 in", "5 ft 4 in"] },
+        {
+          "label": "162 cm",
+          "values": ["63,78 in", "5 ft 4 in"]
+        },
+        {
+          "label": "163 cm",
+          "values": ["64,17 in", "5 ft 4 in"]
+        },
         {
           "label": "165 cm",
           "values": ["64,96 in", "5 ft 5 in"],
           "emphasis": true
         },
-        { "label": "167 cm", "values": ["65,75 in", "5 ft 6 in"] },
-        { "label": "168 cm", "values": ["66,14 in", "5 ft 6 in"] },
+        {
+          "label": "167 cm",
+          "values": ["65,75 in", "5 ft 6 in"]
+        },
+        {
+          "label": "168 cm",
+          "values": ["66,14 in", "5 ft 6 in"]
+        },
         {
           "label": "170 cm",
           "values": ["66,93 in", "5 ft 7 in"],
           "emphasis": true
         },
-        { "label": "172 cm", "values": ["67,72 in", "5 ft 8 in"] },
-        { "label": "173 cm", "values": ["68,11 in", "5 ft 8 in"] },
+        {
+          "label": "172 cm",
+          "values": ["67,72 in", "5 ft 8 in"]
+        },
+        {
+          "label": "173 cm",
+          "values": ["68,11 in", "5 ft 8 in"]
+        },
         {
           "label": "175 cm",
           "values": ["68,90 in", "5 ft 9 in"],
           "emphasis": true
         },
-        { "label": "177 cm", "values": ["69,69 in", "5 ft 10 in"] },
-        { "label": "178 cm", "values": ["70,08 in", "5 ft 10 in"] },
+        {
+          "label": "177 cm",
+          "values": ["69,69 in", "5 ft 10 in"]
+        },
+        {
+          "label": "178 cm",
+          "values": ["70,08 in", "5 ft 10 in"]
+        },
         {
           "label": "180 cm",
           "values": ["70,87 in", "5 ft 11 in"],
           "emphasis": true
         },
-        { "label": "182 cm", "values": ["71,65 in", "6 ft 0 in"] },
-        { "label": "183 cm", "values": ["72,05 in", "6 ft 0 in"] },
+        {
+          "label": "182 cm",
+          "values": ["71,65 in", "6 ft 0 in"]
+        },
+        {
+          "label": "183 cm",
+          "values": ["72,05 in", "6 ft 0 in"]
+        },
         {
           "label": "185 cm",
           "values": ["72,83 in", "6 ft 1 in"],
           "emphasis": true
         },
-        { "label": "188 cm", "values": ["74,02 in", "6 ft 2 in"] },
+        {
+          "label": "188 cm",
+          "values": ["74,02 in", "6 ft 2 in"]
+        },
         {
           "label": "190 cm",
           "values": ["74,80 in", "6 ft 3 in"],
           "emphasis": true
         },
-        { "label": "193 cm", "values": ["75,98 in", "6 ft 4 in"] },
-        { "label": "195 cm", "values": ["76,77 in", "6 ft 5 in"] },
-        { "label": "200 cm", "values": ["78,74 in", "6 ft 7 in"] }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionTable",
-      "title": "Obrácená tabulka – palce na centimetry",
-      "description": "Níže uvedená tabulka zobrazuje převod běžných hodnot v palcích na centimetry, zaokrouhlenou na dvě desetinná místa.",
-      "labelHeader": "Palce",
-      "cols": ["Centimetry"],
-      "rows": [
-        { "label": "0,5 in", "values": ["1,27 cm"] },
-        { "label": "1 in", "values": ["2,54 cm"], "emphasis": true },
-        { "label": "2 in", "values": ["5,08 cm"] },
-        { "label": "3 in", "values": ["7,62 cm"] },
-        { "label": "4 in", "values": ["10,16 cm"] },
-        { "label": "5 in", "values": ["12,70 cm"] },
-        { "label": "6 in", "values": ["15,24 cm"], "emphasis": true },
-        { "label": "7 in", "values": ["17,78 cm"] },
-        { "label": "8 in", "values": ["20,32 cm"] },
-        { "label": "9 in", "values": ["22,86 cm"] },
-        { "label": "10 in", "values": ["25,40 cm"], "emphasis": true },
-        { "label": "11 in", "values": ["27,94 cm"] },
-        { "label": "12 in", "values": ["30,48 cm"], "emphasis": true },
-        { "label": "15 in", "values": ["38,10 cm"] },
-        { "label": "18 in", "values": ["45,72 cm"] },
-        { "label": "20 in", "values": ["50,80 cm"] },
-        { "label": "21 in", "values": ["53,34 cm"] },
-        { "label": "23 in", "values": ["58,42 cm"] },
-        { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
-        { "label": "30 in", "values": ["76,20 cm"] },
-        { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
-        { "label": "42 in", "values": ["106,68 cm"] },
-        { "label": "45 in", "values": ["114,30 cm"] },
-        { "label": "48 in", "values": ["121,92 cm"] },
-        { "label": "54 in", "values": ["137,16 cm"] },
-        { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
-        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+        {
+          "label": "193 cm",
+          "values": ["75,98 in", "6 ft 4 in"]
+        },
+        {
+          "label": "195 cm",
+          "values": ["76,77 in", "6 ft 5 in"]
+        },
+        {
+          "label": "200 cm",
+          "values": ["78,74 in", "6 ft 7 in"]
+        }
       ]
     },
     {
@@ -272,16 +421,31 @@
       "labelHeader": "Úhlopříčka (palce)",
       "cols": ["Úhlopříčka (cm)"],
       "rows": [
-        { "label": "24 in (stolní monitor)", "values": ["60,96 cm"] },
-        { "label": "27 in (stolní monitor)", "values": ["68,58 cm"] },
+        {
+          "label": "24 in (stolní monitor)",
+          "values": ["60,96 cm"]
+        },
+        {
+          "label": "27 in (stolní monitor)",
+          "values": ["68,58 cm"]
+        },
         {
           "label": "32 in (televizor / velký monitor)",
           "values": ["81,28 cm"],
           "emphasis": true
         },
-        { "label": "40 in (televizor)", "values": ["101,60 cm"] },
-        { "label": "43 in (televizor)", "values": ["109,22 cm"] },
-        { "label": "50 in (televizor)", "values": ["127,00 cm"] },
+        {
+          "label": "40 in (televizor)",
+          "values": ["101,60 cm"]
+        },
+        {
+          "label": "43 in (televizor)",
+          "values": ["109,22 cm"]
+        },
+        {
+          "label": "50 in (televizor)",
+          "values": ["127,00 cm"]
+        },
         {
           "label": "55 in (televizor)",
           "values": ["139,70 cm"],
@@ -292,8 +456,14 @@
           "values": ["165,10 cm"],
           "emphasis": true
         },
-        { "label": "75 in (televizor)", "values": ["190,50 cm"] },
-        { "label": "85 in (televizor)", "values": ["215,90 cm"] }
+        {
+          "label": "75 in (televizor)",
+          "values": ["190,50 cm"]
+        },
+        {
+          "label": "85 in (televizor)",
+          "values": ["215,90 cm"]
+        }
       ]
     },
     {

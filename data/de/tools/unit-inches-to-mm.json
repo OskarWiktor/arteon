@@ -1,0 +1,315 @@
+{
+  "toolKey": "inchesToMm",
+  "locale": "de",
+  "metadata": {
+    "title": "Zoll in MM Rechner – Zoll in Millimeter umrechnen",
+    "description": "Zoll in Millimeter umrechnen. Die vollständige Zollbruchtabelle in 1/32-Schritten zeigt mm-Entsprechungen für Bohrer, Schrauben und Steckschlüssel. Der Umrechner funktioniert in beide Richtungen und rechnet sofort.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/de/werkzeuge/zoll-in-mm-umrechner"
+  },
+  "hero": {
+    "title": "Zoll in Millimeter umrechnen",
+    "description": "Geben Sie einen Wert in Zoll ein und sehen Sie sofort das Ergebnis in Millimetern. Der Umrechner hilft überall dort, wo Werkzeuge, Schrauben oder Materialien in Zoll oder Zollbrüchen angegeben sind: bei der Auswahl eines Bohrers, eines Steckschlüssels, einer Zollschraube oder beim Prüfen einer Materialstärke aus einem amerikanischen Katalog.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/zoll-in-mm-umrechner",
+      "label": "Zoll in mm"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Zoll in Millimeter Umrechner – Zoll in mm Rechner",
+      "alternateName": [
+        "Zoll in mm Umrechner",
+        "Zoll in mm Rechner",
+        "Zoll in Millimeter Umrechner",
+        "Zoll in Millimeter",
+        "Zoll in mm",
+        "Zoll in mm umrechnen",
+        "Umrechnung Zoll in mm",
+        "inch in mm Umrechner",
+        "Zoll in Millimeter umwandeln",
+        "Zoll in Millimeter Rechner",
+        "inches in mm",
+        "inch in mm",
+        "Wie viel mm hat ein Zoll",
+        "Tabelle Zoll mm",
+        "Zollbrüche in Millimetern"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Zoll-in-Millimeter-Umrechner, der im Browser ohne Registrierung läuft. Geben Sie einen Wert in Zoll ein und erhalten Sie sofort das Ergebnis in Millimetern; Zollbrüche lesen Sie aus der vollständigen Tabelle in 1/32-Schritten ab. Nützlich bei der Auswahl von Bohrern, Schrauben und Steckschlüsseln im Zollsystem sowie beim Prüfen von Materialstärken aus amerikanischen Katalogen.",
+      "featureList": [
+        "Die Umrechnung funktioniert in beide Richtungen, Sie können also sowohl Zoll in Millimeter als auch Millimeter in Zoll umrechnen",
+        "Das Ergebnis erscheint sofort während der Eingabe, ohne dass eine Schaltfläche geklickt werden muss",
+        "Das Ergebnis kann mit einem Klick in die Zwischenablage kopiert werden",
+        "Die Umrechnungstabelle umfasst Werte von 0,5 bis 30 Zoll",
+        "Die vollständige Zollbruchtabelle in 1/32-Schritten zeigt die Millimeter-Entsprechung für typische Bohrer-, Schrauben- und Schlüsselgrößen",
+        "Alle Berechnungen erfolgen lokal im Browser, keine Daten verlassen Ihr Gerät",
+        "Die genaue Umrechnungsformel lautet Millimeter = Zoll × 25,4 und basiert auf der festen Beziehung zwischen Zoll und Millimeter",
+        "Funktioniert auf Smartphone, Tablet und Computer ohne Installation"
+      ]
+    },
+    "howTo": {
+      "name": "Wie rechnet man Zoll in Millimeter um?",
+      "description": "Kurze Anleitung zur Verwendung des Zoll-in-mm-Umrechners.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert in Zoll eingeben",
+          "text": "Geben Sie im linken Feld die Anzahl der Zoll ein, die Sie in Millimeter umrechnen möchten. Bruchwerte (z. B. 3/8) wandeln Sie zunächst in die Dezimalform um (0,375) oder nutzen die Bruchtabelle unten."
+        },
+        {
+          "name": "Ergebnis in Millimetern ablesen",
+          "text": "Das Ergebnis in Millimetern erscheint sofort im Feld daneben. Mit einem Klick können Sie es in die Zwischenablage kopieren."
+        },
+        {
+          "name": "Bei Bedarf Richtung wechseln",
+          "text": "Klicken Sie auf Reihenfolge ändern, um den Umrechner auf Millimeter-in-Zoll umzuschalten."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Wann rechnet man Zoll in Millimeter um?",
+      "html": "<p class=\"text-mid mb-4\">Der Zoll ist die Längeneinheit des imperialen Systems, die vor allem in den USA, Großbritannien, Kanada und Australien verwendet wird – besonders bei Werkzeugen, Schrauben und Baumaterialien. In Deutschland, Österreich und der Schweiz rechnen wir in Millimetern, sodass Zollangaben – oft in Bruchform – hauptsächlich dann auftauchen, wenn wir mit Werkzeugen oder Teilen aus englischsprachigen Ländern zu tun haben.</p><p class=\"text-mid mb-4\">Die häufigsten Situationen: Sie möchten wissen, wie viele Millimeter ein als 3/8 Zoll bezeichneter Bohrer misst, Sie suchen einen Steckschlüssel für eine Zollschraube oder prüfen die als 1/8 Zoll angegebene Blechstärke aus einem amerikanischen Katalog.</p><p class=\"text-mid mb-4\">Die Formel ist einfach: Ein Zoll entspricht genau 25,4 mm. Um Zoll in Millimeter umzurechnen, multiplizieren Sie die Zollzahl mit 25,4. Der Umrechner erledigt das, sobald Sie einen Wert eingeben.</p><p class=\"text-mid\">Auf dieser Seite finden Sie eine Umrechnungstabelle Zoll in mm sowie die vollständige Zollbruchtabelle in 1/32-Schritten, die alle Größen von 1/32 bis 1 Zoll abdeckt.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Kostenloser Zoll-in-Millimeter-Umrechner – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung Zoll in mm? Formel und Beispiel",
+      "html": "<p class=\"text-mid mb-4\">Die Umrechnung von Zoll in Millimeter beruht auf einer Konstante: Ein Zoll entspricht genau 25,4 mm. Es genügt also, die Zollzahl mit 25,4 zu multiplizieren, um das Ergebnis in Millimetern zu erhalten.</p><p class=\"text-mid mb-4\">Die vollständige Formel: <strong>Millimeter = Zoll × 25,4</strong>. In die andere Richtung: <strong>Zoll = Millimeter ÷ 25,4</strong>.</p><p class=\"text-mid mb-4\">Beispiel: Sie haben einen als 3/8 Zoll bezeichneten Bohrer und möchten seine metrische Entsprechung wissen. Sie setzen ein: 0,375 × 25,4 = 9,53 mm. Der nächstgelegene metrische Bohrer ist in der Regel 9,5 mm.</p><p class=\"text-mid\">Ein weiteres Beispiel: eine Schraube mit einer Länge von 3 3/8 Zoll. Sie wandeln den Bruch in die Dezimalform um (3 + 3/8 = 3,375) und multiplizieren dann: 3,375 × 25,4 = 85,73 mm. Der Umrechner beherrscht beide Richtungen, sobald Sie einen Wert eingeben.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Umrechnungstabelle Zoll in Millimeter",
+      "description": "Die folgende Tabelle rechnet gängige Zollwerte in Millimeter um. Die Werte sind auf zwei Nachkommastellen gerundet. Um einen exakten Wert umzurechnen, nutzen Sie den Umrechner oben.",
+      "labelHeader": "Zoll",
+      "cols": ["Millimeter"],
+      "rows": [
+        { "label": "0,5 in", "values": ["12,70 mm"] },
+        { "label": "1 in", "values": ["25,40 mm"], "emphasis": true },
+        { "label": "1,5 in", "values": ["38,10 mm"] },
+        { "label": "2 in", "values": ["50,80 mm"] },
+        { "label": "3 in", "values": ["76,20 mm"], "emphasis": true },
+        { "label": "4 in", "values": ["101,60 mm"] },
+        { "label": "5 in", "values": ["127,00 mm"] },
+        { "label": "6 in", "values": ["152,40 mm"], "emphasis": true },
+        { "label": "7 in", "values": ["177,80 mm"] },
+        { "label": "8 in", "values": ["203,20 mm"] },
+        { "label": "9 in", "values": ["228,60 mm"] },
+        { "label": "10 in", "values": ["254,00 mm"], "emphasis": true },
+        { "label": "12 in", "values": ["304,80 mm"] },
+        { "label": "15 in", "values": ["381,00 mm"] },
+        { "label": "18 in", "values": ["457,20 mm"], "emphasis": true },
+        { "label": "20 in", "values": ["508,00 mm"] },
+        { "label": "24 in", "values": ["609,60 mm"] },
+        { "label": "25 in", "values": ["635,00 mm"], "emphasis": true },
+        { "label": "30 in", "values": ["762,00 mm"] }
+      ],
+      "caption": "Möchten Sie in die andere Richtung umrechnen? Nutzen Sie unseren <a href=\"/de/werkzeuge/mm-in-zoll-umrechner\">mm-in-Zoll-Umrechner</a>, der eine eigene Tabelle und ausführliche Inhalte zu dieser Umrechnungsrichtung enthält."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Vollständige Zollbruchtabelle in Millimeter (1/32-Schritte)",
+      "description": "Bohrer, Schrauben, Steckschlüssel und Profile im Zollsystem werden mit Brüchen bezeichnet, meist in 1/32- oder 1/16-Zoll-Schritten. Die folgende Tabelle enthält alle Werte von 1/32 bis 1 Zoll zusammen mit der Dezimal- und der Millimeter-Entsprechung. Die Millimeterwerte sind auf zwei Nachkommastellen gerundet.",
+      "labelHeader": "Zoll (Bruch)",
+      "cols": ["Zoll (dezimal)", "Millimeter"],
+      "rows": [
+        { "label": "1/32 in", "values": ["0,03125 in", "0,79 mm"] },
+        { "label": "1/16 in", "values": ["0,0625 in", "1,59 mm"] },
+        { "label": "3/32 in", "values": ["0,09375 in", "2,38 mm"] },
+        {
+          "label": "1/8 in",
+          "values": ["0,125 in", "3,18 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "5/32 in",
+          "values": ["0,15625 in", "3,97 mm"],
+          "emphasis": true
+        },
+        { "label": "3/16 in", "values": ["0,1875 in", "4,76 mm"] },
+        { "label": "7/32 in", "values": ["0,21875 in", "5,56 mm"] },
+        {
+          "label": "1/4 in",
+          "values": ["0,25 in", "6,35 mm"],
+          "emphasis": true
+        },
+        { "label": "9/32 in", "values": ["0,28125 in", "7,14 mm"] },
+        { "label": "5/16 in", "values": ["0,3125 in", "7,94 mm"] },
+        { "label": "11/32 in", "values": ["0,34375 in", "8,73 mm"] },
+        {
+          "label": "3/8 in",
+          "values": ["0,375 in", "9,53 mm"],
+          "emphasis": true
+        },
+        { "label": "13/32 in", "values": ["0,40625 in", "10,32 mm"] },
+        { "label": "7/16 in", "values": ["0,4375 in", "11,11 mm"] },
+        { "label": "15/32 in", "values": ["0,46875 in", "11,91 mm"] },
+        {
+          "label": "1/2 in",
+          "values": ["0,5 in", "12,70 mm"],
+          "emphasis": true
+        },
+        { "label": "17/32 in", "values": ["0,53125 in", "13,49 mm"] },
+        {
+          "label": "9/16 in",
+          "values": ["0,5625 in", "14,29 mm"],
+          "emphasis": true
+        },
+        { "label": "19/32 in", "values": ["0,59375 in", "15,08 mm"] },
+        { "label": "5/8 in", "values": ["0,625 in", "15,88 mm"] },
+        { "label": "21/32 in", "values": ["0,65625 in", "16,67 mm"] },
+        {
+          "label": "11/16 in",
+          "values": ["0,6875 in", "17,46 mm"],
+          "emphasis": true
+        },
+        { "label": "23/32 in", "values": ["0,71875 in", "18,26 mm"] },
+        {
+          "label": "3/4 in",
+          "values": ["0,75 in", "19,05 mm"],
+          "emphasis": true
+        },
+        { "label": "25/32 in", "values": ["0,78125 in", "19,84 mm"] },
+        {
+          "label": "13/16 in",
+          "values": ["0,8125 in", "20,64 mm"],
+          "emphasis": true
+        },
+        { "label": "27/32 in", "values": ["0,84375 in", "21,43 mm"] },
+        { "label": "7/8 in", "values": ["0,875 in", "22,23 mm"] },
+        { "label": "29/32 in", "values": ["0,90625 in", "23,02 mm"] },
+        { "label": "15/16 in", "values": ["0,9375 in", "23,81 mm"] },
+        { "label": "31/32 in", "values": ["0,96875 in", "24,61 mm"] },
+        { "label": "1 in", "values": ["1 in", "25,40 mm"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Wann rechnet man am häufigsten Zoll in Millimeter um?",
+      "description": "Die Umrechnung Zoll in mm kommt in einigen typischen Situationen rund um Zollwerkzeuge und -materialien vor.",
+      "items": [
+        {
+          "title": "Bohrer und Zollschlüssel",
+          "description": "Amerikanische Bohrer- und Steckschlüsselsätze sind mit Zollbrüchen bezeichnet, nicht mit Millimetern. Ein 3/8-Zoll-Bohrer misst 9,53 mm, ein 1/2-Zoll-Schlüssel 12,70 mm. Die Kenntnis der metrischen Entsprechung erlaubt es, den nächstgelegenen Ersatz aus einem europäischen Satz zu wählen."
+        },
+        {
+          "title": "Zollschrauben und -muttern",
+          "description": "Aus den USA importierte Geräte, Möbel oder Elektrowerkzeuge können Schrauben im Zollsystem haben (z. B. UNC, UNF). Eine 1/4-Zoll-Schraube hat 6,35 mm Durchmesser, eine 5/16-Zoll-Schraube 7,94 mm. Die Umrechnung erleichtert den Kauf eines Ersatzteils im deutschen Fachhandel."
+        },
+        {
+          "title": "Elektronik und Platinenraster",
+          "description": "Das Standardraster von Steckbrettern und Stiftleisten beträgt 0,1 Zoll, also 2,54 mm. Eine als 1/16 Zoll angegebene PCB-Laminatstärke entspricht ungefähr 1,59 mm. Diese Werte sind beim Entwerfen von Gehäusen und Elektronikmodulen wichtig."
+        },
+        {
+          "title": "Baumaterialien und Holz",
+          "description": "Holz- und Baumaterialkataloge aus den USA geben die Maße in Zoll an. Das bekannte 2×4-Brett (zwei mal vier Zoll) misst tatsächlich 1,5 × 3,5 Zoll, also 38,1 × 88,9 mm nach dem Hobeln. Die Umrechnung hilft, Projekte ohne Maßfehler zu planen."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zur Umrechnung Zoll in Millimeter",
+      "items": [
+        {
+          "question": "Wie viele mm hat ein Zoll?",
+          "answer": "Ein Zoll entspricht genau 25,4 mm. Das ist ein festgelegter konstanter Wert, der seit 1959 als sogenannter internationaler Zoll gilt."
+        },
+        {
+          "question": "Wie lautet die Formel zur Umrechnung von Zoll in mm?",
+          "answer": "Die Formel lautet: Millimeter = Zoll × 25,4. Zum Beispiel: 3 Zoll × 25,4 = 76,20 mm. In die andere Richtung: Zoll = Millimeter ÷ 25,4."
+        },
+        {
+          "question": "Wie viele mm sind 3 Zoll?",
+          "answer": "3 Zoll sind 3 × 25,4 = 76,20 mm."
+        },
+        {
+          "question": "Wie viele mm sind 18 Zoll?",
+          "answer": "18 Zoll sind 18 × 25,4 = 457,20 mm. Das ist unter anderem eine gängige Länge von Schubladenschienen aus amerikanischen Werkzeugshops."
+        },
+        {
+          "question": "Wie viele mm sind 3 3/8 Zoll?",
+          "answer": "3 3/8 Zoll wandeln Sie zunächst in die Dezimalform um: 3 + 3/8 = 3,375 Zoll. Anschließend 3,375 × 25,4 = 85,73 mm."
+        },
+        {
+          "question": "Wie viele mm sind 3/8 Zoll?",
+          "answer": "3/8 Zoll sind 0,375 × 25,4 = 9,53 mm. Das ist eine gängige Bohrer- und Schraubengröße im Zollsystem."
+        },
+        {
+          "question": "Wie viele mm sind 1/8 Zoll?",
+          "answer": "1/8 Zoll sind 0,125 × 25,4 = 3,18 mm. Dieser Wert entspricht häufig einer in Zoll angegebenen Blech- oder Acrylglasstärke."
+        },
+        {
+          "question": "Wie viele mm sind 2, 1,5 und 4 Zoll?",
+          "answer": "2 Zoll sind 50,80 mm, 1,5 Zoll sind 38,10 mm und 4 Zoll sind 101,60 mm. Jeden Wert erhalten Sie, indem Sie die Zollzahl mit 25,4 multiplizieren."
+        },
+        {
+          "question": "Wie viele mm sind 9/16 Zoll?",
+          "answer": "9/16 Zoll sind 0,5625 × 25,4 = 14,29 mm. Das ist eine gängige Steckschlüsselgröße in Zollwerkzeugsätzen."
+        },
+        {
+          "question": "Wie viele mm sind 5 Zoll?",
+          "answer": "5 Zoll sind 5 × 25,4 = 127,00 mm."
+        },
+        {
+          "question": "Wie viele mm sind 3/4 Zoll?",
+          "answer": "3/4 Zoll sind 0,75 × 25,4 = 19,05 mm. Das ist einer der am häufigsten verwendeten Brüche bei Rohren, Fittings und Zollschrauben."
+        },
+        {
+          "question": "Wie viele mm sind 5/32 Zoll?",
+          "answer": "5/32 Zoll sind 0,15625 × 25,4 = 3,97 mm. Das ist eine typische Größe für einen dünneren Bohrer oder Innensechskantschlüssel im Zollsystem."
+        },
+        {
+          "question": "Wie viele mm sind 13/16 und 11/16 Zoll?",
+          "answer": "13/16 Zoll sind 0,8125 × 25,4 = 20,64 mm, und 11/16 Zoll sind 0,6875 × 25,4 = 17,46 mm. Beide Größen findet man am häufigsten in Steckschlüsselsätzen."
+        },
+        {
+          "question": "Wie viele mm sind 6 und 25 Zoll?",
+          "answer": "6 Zoll sind 6 × 25,4 = 152,40 mm, und 25 Zoll sind 25 × 25,4 = 635,00 mm."
+        },
+        {
+          "question": "Wie viele mm sind 8 und 12 Zoll?",
+          "answer": "8 Zoll sind 8 × 25,4 = 203,20 mm, und 12 Zoll sind 12 × 25,4 = 304,80 mm."
+        },
+        {
+          "question": "Sind 10 mm 1/4 Zoll und 2 mm 1/16 Zoll?",
+          "answer": "Nein, beide Werte liegen nahe beieinander, sind aber nicht identisch. 1/4 Zoll entspricht genau 6,35 mm, 10 mm sind also eher 25/64 Zoll. 1/16 Zoll wiederum entspricht 1,5875 mm, während 2 mm etwa 5/64 Zoll sind – der Unterschied beträgt 0,41 mm."
+        },
+        {
+          "question": "Woher stammt die Konstante 25,4 mm in der Zolldefinition?",
+          "answer": "Der Wert von 25,4 mm pro Zoll geht auf historische Standardisierungsentscheidungen zurück. 1930 übernahm Großbritannien den Wert von 2,54 cm pro Zoll, und 1959 unterzeichneten die USA, Kanada, Australien und weitere angelsächsische Länder ein Abkommen über den sogenannten internationalen Zoll: genau 25,4 mm. Zuvor galten geringfügig andere Werte (z. B. der US-Vermessungszoll, 2023 offiziell abgeschafft), heute wird jedoch ausschließlich der Wert 25,4 mm verwendet."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Haben Sie eine Frage oder einen Verbesserungsvorschlag?",
+      "description": "Wenn Sie einen Fehler in den Tabellen entdecken oder eine Idee zur Verbesserung des Umrechners haben, schreiben Sie uns. Wir antworten auf jede Nachricht.",
+      "imageAlt": "Kontakt mit Arteon Agency",
+      "subject": "Zoll-in-mm-Umrechner"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere nützliche Einheitenrechner"
+    }
+  ]
+}

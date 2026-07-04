@@ -52,7 +52,6 @@
         "A tabela de conversão abrange valores de 0,5 a 90 polegadas",
         "A tabela de diagonais de ecrã inclui os tamanhos mais populares de televisões e monitores, de 24 a 85 polegadas",
         "A tabela de altura apresenta a conversão de pés e polegadas para centímetros para valores de 4 ft 11 in a 6 ft 7 in",
-        "A tabela inversa mostra quantas polegadas correspondem a um valor em centímetros, de 0,5 cm a 200 cm",
         "Todos os cálculos são efetuados localmente no browser, nenhum dado sai do seu dispositivo",
         "A fórmula exata é centímetros = polegadas × 2,54, baseada na relação fixa entre a polegada e o centímetro",
         "Funciona em telemóvel, tablet e computador sem instalação"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "Quando é necessário converter polegadas em centímetros?",
-      "html": "<p class=\"text-mid mb-4\">A polegada é a unidade de comprimento do sistema imperial, utilizada principalmente nos Estados Unidos e ainda corrente no Reino Unido. Em Portugal e em todo o mundo lusófono utiliza-se o sistema métrico, pelo que as polegadas surgem sobretudo quando se trata de produtos ou informações provenientes de países anglófonos.</p><p class=\"text-mid mb-4\">As situações mais frequentes: quer saber quantos centímetros tem uma televisão de 55 polegadas, compara a sua altura com uma tabela de tamanhos americana, compra sapatos numa loja britânica onde o número é expresso em polegadas ou consulta as medidas de um móvel num catálogo americano.</p><p class=\"text-mid mb-4\">A fórmula é simples: uma polegada equivale exatamente a 2,54 cm. Para converter polegadas em centímetros, basta multiplicar por 2,54. O conversor faz isso assim que introduz um valor.</p><p class=\"text-mid\">Nesta página encontrará uma tabela de conversão de polegadas para cm, uma tabela de diagonais de ecrã populares, uma tabela de altura com a conversão de pés e polegadas para centímetros e uma tabela inversa de centímetros para polegadas.</p>",
+      "html": "<p class=\"text-mid mb-4\">A polegada é a unidade de comprimento do sistema imperial, utilizada principalmente nos Estados Unidos e ainda corrente no Reino Unido. Em Portugal e em todo o mundo lusófono utiliza-se o sistema métrico, pelo que as polegadas surgem sobretudo quando se trata de produtos ou informações provenientes de países anglófonos.</p><p class=\"text-mid mb-4\">As situações mais frequentes: quer saber quantos centímetros tem uma televisão de 55 polegadas, compara a sua altura com uma tabela de tamanhos americana, compra sapatos numa loja britânica onde o número é expresso em polegadas ou consulta as medidas de um móvel num catálogo americano.</p><p class=\"text-mid mb-4\">A fórmula é simples: uma polegada equivale exatamente a 2,54 cm. Para converter polegadas em centímetros, basta multiplicar por 2,54. O conversor faz isso assim que introduz um valor.</p><p class=\"text-mid\">Nesta página encontrará uma tabela de conversão de polegadas para cm, uma tabela de diagonais de ecrã populares e uma tabela de altura com a conversão de pés e polegadas para centímetros.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversor gratuito de polegadas para centímetros – Arteon"
     },

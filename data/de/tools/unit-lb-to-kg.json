@@ -52,7 +52,6 @@
         "Die Umrechnungstabelle deckt Werte von 1 bis 300 lb ab",
         "Die Körpergewichtstabelle rechnet gängige Bereiche von 88 bis 265 lb in Kilogramm um",
         "Die Fitnessgewichtstabelle rechnet gängige Lasten von 5 bis 225 lb in Kilogramm um",
-        "Die umgekehrte Tabelle rechnet Kilogramm in Pfund für Werte von 0,5 bis 200 kg um",
         "Alle Berechnungen erfolgen lokal im Browser – keine Daten verlassen Ihr Gerät",
         "Die genaue Umrechnungsformel lautet Kilogramm = Pfund × 0,45359237, basierend auf der Pfunddefinition von 1959",
         "Funktioniert auf Smartphone, Tablet und Computer ohne Installation"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "Wann rechnet man Pfund in Kilogramm um?",
-      "html": "<p class=\"text-mid mb-4\">Das Pfund (lb) ist die Masseeinheit des angelsächsischen Maßsystems und in den USA weit verbreitet. Im deutschsprachigen Raum nutzen wir täglich Kilogramm, weshalb Pfundangaben hauptsächlich dann auftauchen, wenn wir Produkte, Apps oder Informationen aus englischsprachigen Ländern verwenden.</p><p class=\"text-mid mb-4\">Die häufigsten Situationen: Eine Fitness-App aus den USA zeigt das Zielgewicht in Pfund an, das Freigepäcklimit beträgt 50 lb, Sie kaufen Kurzhanteln auf Amazon US, die in Pfund beschriftet sind, oder ein YouTube-Trainingsprogramm nennt eine Bankdrücklast von 135 lb.</p><p class=\"text-mid mb-4\">Die Formel ist einfach: Ein Pfund entspricht genau 0,45359237 kg. Um Pfund in Kilogramm umzurechnen, reicht es, mit 0,4536 zu multiplizieren. Der Umrechner erledigt das, sobald Sie einen Wert eingeben.</p><p class=\"text-mid\">Auf dieser Seite finden Sie eine lb-in-kg-Tabelle, eine Körpergewichtstabelle mit Umrechnungen gängiger Werte, eine Tabelle für Fitnessgewichte sowie eine umgekehrte kg-in-Pfund-Tabelle.</p>",
+      "html": "<p class=\"text-mid mb-4\">Das Pfund (lb) ist die Masseeinheit des angelsächsischen Maßsystems und in den USA weit verbreitet. Im deutschsprachigen Raum nutzen wir täglich Kilogramm, weshalb Pfundangaben hauptsächlich dann auftauchen, wenn wir Produkte, Apps oder Informationen aus englischsprachigen Ländern verwenden.</p><p class=\"text-mid mb-4\">Die häufigsten Situationen: Eine Fitness-App aus den USA zeigt das Zielgewicht in Pfund an, das Freigepäcklimit beträgt 50 lb, Sie kaufen Kurzhanteln auf Amazon US, die in Pfund beschriftet sind, oder ein YouTube-Trainingsprogramm nennt eine Bankdrücklast von 135 lb.</p><p class=\"text-mid mb-4\">Die Formel ist einfach: Ein Pfund entspricht genau 0,45359237 kg. Um Pfund in Kilogramm umzurechnen, reicht es, mit 0,4536 zu multiplizieren. Der Umrechner erledigt das, sobald Sie einen Wert eingeben.</p><p class=\"text-mid\">Auf dieser Seite finden Sie eine lb-in-kg-Tabelle, eine Körpergewichtstabelle mit Umrechnungen gängiger Werte sowie eine Tabelle für Fitnessgewichte.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Kostenloser Pfund-in-Kilogramm-Umrechner – Arteon"
     },

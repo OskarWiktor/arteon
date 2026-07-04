@@ -52,7 +52,6 @@
         "Conversion table covers values from 0.5 cm to 200 cm",
         "Height table shows the most common values from 150 cm to 200 cm converted to feet and inches",
         "Screen size table covers the most popular TV and monitor sizes from 24 to 85 inches",
-        "Reverse table shows how many centimeters each inch value equals, from 0.5 to 72 inches",
         "All calculations happen locally in your browser — no data leaves your device",
         "The exact conversion formula is inches = centimeters ÷ 2.54, based on the fixed relationship between the inch and the centimeter",
         "Works on mobile, tablet, and desktop with no installation required"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert centimeters to inches?",
-      "html": "<p class=\"text-mid mb-4\">Centimeters are the standard unit of length in most of the world. Inches, on the other hand, dominate in the United States and are still widely used in the United Kingdom. The need to convert arises whenever you encounter dimensions from a metric source: a product listing from a European store, a height given in centimeters by a foreign contact, or clothing size charts that use metric measurements.</p><p class=\"text-mid mb-4\">One inch is exactly 2.54 cm. This relationship is fixed and universal, so every conversion comes down to a single division. The converter does that for you the moment you type a value.</p><p class=\"text-mid mb-4\">Further down the page you will find a conversion table for values from 0.5 cm to 200 cm, a separate height table with feet-and-inches equivalents, a popular screen size table, and a reverse table for inches to centimeters.</p>",
+      "html": "<p class=\"text-mid mb-4\">Centimeters are the standard unit of length in most of the world. Inches, on the other hand, dominate in the United States and are still widely used in the United Kingdom. The need to convert arises whenever you encounter dimensions from a metric source: a product listing from a European store, a height given in centimeters by a foreign contact, or clothing size charts that use metric measurements.</p><p class=\"text-mid mb-4\">One inch is exactly 2.54 cm. This relationship is fixed and universal, so every conversion comes down to a single division. The converter does that for you the moment you type a value.</p><p class=\"text-mid mb-4\">Further down the page you will find a conversion table for values from 0.5 cm to 200 cm, a separate height table with feet-and-inches equivalents, and a popular screen size table.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Free centimeters to inches converter – Arteon"
     },
@@ -110,49 +109,188 @@
       "labelHeader": "Centimeters",
       "cols": ["Inches"],
       "rows": [
-        { "label": "0.5 cm", "values": ["0.20 in"] },
-        { "label": "1 cm", "values": ["0.39 in"], "emphasis": true },
-        { "label": "1.5 cm", "values": ["0.59 in"] },
-        { "label": "2 cm", "values": ["0.79 in"] },
-        { "label": "2.5 cm", "values": ["0.98 in"] },
-        { "label": "3 cm", "values": ["1.18 in"] },
-        { "label": "4 cm", "values": ["1.57 in"] },
-        { "label": "5 cm", "values": ["1.97 in"], "emphasis": true },
-        { "label": "6 cm", "values": ["2.36 in"] },
-        { "label": "7 cm", "values": ["2.76 in"] },
-        { "label": "8 cm", "values": ["3.15 in"] },
-        { "label": "9 cm", "values": ["3.54 in"] },
-        { "label": "10 cm", "values": ["3.94 in"], "emphasis": true },
-        { "label": "12 cm", "values": ["4.72 in"] },
-        { "label": "13 cm", "values": ["5.12 in"] },
-        { "label": "14 cm", "values": ["5.51 in"] },
-        { "label": "15 cm", "values": ["5.91 in"], "emphasis": true },
-        { "label": "16 cm", "values": ["6.30 in"] },
-        { "label": "17 cm", "values": ["6.69 in"] },
-        { "label": "18 cm", "values": ["7.09 in"] },
-        { "label": "20 cm", "values": ["7.87 in"], "emphasis": true },
-        { "label": "21 cm", "values": ["8.27 in"] },
-        { "label": "22 cm", "values": ["8.66 in"] },
-        { "label": "23 cm", "values": ["9.06 in"] },
-        { "label": "24 cm", "values": ["9.45 in"] },
-        { "label": "25 cm", "values": ["9.84 in"] },
-        { "label": "30 cm", "values": ["11.81 in"] },
-        { "label": "35 cm", "values": ["13.78 in"] },
-        { "label": "40 cm", "values": ["15.75 in"] },
-        { "label": "45 cm", "values": ["17.72 in"] },
-        { "label": "50 cm", "values": ["19.69 in"], "emphasis": true },
-        { "label": "60 cm", "values": ["23.62 in"] },
-        { "label": "70 cm", "values": ["27.56 in"] },
-        { "label": "80 cm", "values": ["31.50 in"] },
-        { "label": "90 cm", "values": ["35.43 in"] },
-        { "label": "100 cm", "values": ["39.37 in"], "emphasis": true },
-        { "label": "120 cm", "values": ["47.24 in"] },
-        { "label": "150 cm", "values": ["59.06 in"], "emphasis": true },
-        { "label": "160 cm", "values": ["62.99 in"] },
-        { "label": "170 cm", "values": ["66.93 in"], "emphasis": true },
-        { "label": "180 cm", "values": ["70.87 in"] },
-        { "label": "190 cm", "values": ["74.80 in"] },
-        { "label": "200 cm", "values": ["78.74 in"], "emphasis": true }
+        {
+          "label": "0.5 cm",
+          "values": ["0.20 in"]
+        },
+        {
+          "label": "1 cm",
+          "values": ["0.39 in"],
+          "emphasis": true
+        },
+        {
+          "label": "1.5 cm",
+          "values": ["0.59 in"]
+        },
+        {
+          "label": "2 cm",
+          "values": ["0.79 in"]
+        },
+        {
+          "label": "2.5 cm",
+          "values": ["0.98 in"]
+        },
+        {
+          "label": "3 cm",
+          "values": ["1.18 in"]
+        },
+        {
+          "label": "4 cm",
+          "values": ["1.57 in"]
+        },
+        {
+          "label": "5 cm",
+          "values": ["1.97 in"],
+          "emphasis": true
+        },
+        {
+          "label": "6 cm",
+          "values": ["2.36 in"]
+        },
+        {
+          "label": "7 cm",
+          "values": ["2.76 in"]
+        },
+        {
+          "label": "8 cm",
+          "values": ["3.15 in"]
+        },
+        {
+          "label": "9 cm",
+          "values": ["3.54 in"]
+        },
+        {
+          "label": "10 cm",
+          "values": ["3.94 in"],
+          "emphasis": true
+        },
+        {
+          "label": "12 cm",
+          "values": ["4.72 in"]
+        },
+        {
+          "label": "13 cm",
+          "values": ["5.12 in"]
+        },
+        {
+          "label": "14 cm",
+          "values": ["5.51 in"]
+        },
+        {
+          "label": "15 cm",
+          "values": ["5.91 in"],
+          "emphasis": true
+        },
+        {
+          "label": "16 cm",
+          "values": ["6.30 in"]
+        },
+        {
+          "label": "17 cm",
+          "values": ["6.69 in"]
+        },
+        {
+          "label": "18 cm",
+          "values": ["7.09 in"]
+        },
+        {
+          "label": "20 cm",
+          "values": ["7.87 in"],
+          "emphasis": true
+        },
+        {
+          "label": "21 cm",
+          "values": ["8.27 in"]
+        },
+        {
+          "label": "22 cm",
+          "values": ["8.66 in"]
+        },
+        {
+          "label": "23 cm",
+          "values": ["9.06 in"]
+        },
+        {
+          "label": "24 cm",
+          "values": ["9.45 in"]
+        },
+        {
+          "label": "25 cm",
+          "values": ["9.84 in"]
+        },
+        {
+          "label": "30 cm",
+          "values": ["11.81 in"]
+        },
+        {
+          "label": "35 cm",
+          "values": ["13.78 in"]
+        },
+        {
+          "label": "40 cm",
+          "values": ["15.75 in"]
+        },
+        {
+          "label": "45 cm",
+          "values": ["17.72 in"]
+        },
+        {
+          "label": "50 cm",
+          "values": ["19.69 in"],
+          "emphasis": true
+        },
+        {
+          "label": "60 cm",
+          "values": ["23.62 in"]
+        },
+        {
+          "label": "70 cm",
+          "values": ["27.56 in"]
+        },
+        {
+          "label": "80 cm",
+          "values": ["31.50 in"]
+        },
+        {
+          "label": "90 cm",
+          "values": ["35.43 in"]
+        },
+        {
+          "label": "100 cm",
+          "values": ["39.37 in"],
+          "emphasis": true
+        },
+        {
+          "label": "120 cm",
+          "values": ["47.24 in"]
+        },
+        {
+          "label": "150 cm",
+          "values": ["59.06 in"],
+          "emphasis": true
+        },
+        {
+          "label": "160 cm",
+          "values": ["62.99 in"]
+        },
+        {
+          "label": "170 cm",
+          "values": ["66.93 in"],
+          "emphasis": true
+        },
+        {
+          "label": "180 cm",
+          "values": ["70.87 in"]
+        },
+        {
+          "label": "190 cm",
+          "values": ["74.80 in"]
+        },
+        {
+          "label": "200 cm",
+          "values": ["78.74 in"],
+          "emphasis": true
+        }
       ],
       "caption": "Need to convert the other way? Use our <a href=\"/en/tools/inches-to-cm-converter\">inches to cm converter</a>, which has its own table and content dedicated to that direction."
     },
@@ -167,98 +305,109 @@
       "labelHeader": "Height",
       "cols": ["Inches (in)", "Feet and inches (ft in)"],
       "rows": [
-        { "label": "150 cm", "values": ["59.06 in", "4 ft 11 in"] },
-        { "label": "155 cm", "values": ["61.02 in", "5 ft 1 in"] },
-        { "label": "158 cm", "values": ["62.20 in", "5 ft 2 in"] },
+        {
+          "label": "150 cm",
+          "values": ["59.06 in", "4 ft 11 in"]
+        },
+        {
+          "label": "155 cm",
+          "values": ["61.02 in", "5 ft 1 in"]
+        },
+        {
+          "label": "158 cm",
+          "values": ["62.20 in", "5 ft 2 in"]
+        },
         {
           "label": "160 cm",
           "values": ["62.99 in", "5 ft 3 in"],
           "emphasis": true
         },
-        { "label": "162 cm", "values": ["63.78 in", "5 ft 4 in"] },
-        { "label": "163 cm", "values": ["64.17 in", "5 ft 4 in"] },
+        {
+          "label": "162 cm",
+          "values": ["63.78 in", "5 ft 4 in"]
+        },
+        {
+          "label": "163 cm",
+          "values": ["64.17 in", "5 ft 4 in"]
+        },
         {
           "label": "165 cm",
           "values": ["64.96 in", "5 ft 5 in"],
           "emphasis": true
         },
-        { "label": "167 cm", "values": ["65.75 in", "5 ft 6 in"] },
-        { "label": "168 cm", "values": ["66.14 in", "5 ft 6 in"] },
+        {
+          "label": "167 cm",
+          "values": ["65.75 in", "5 ft 6 in"]
+        },
+        {
+          "label": "168 cm",
+          "values": ["66.14 in", "5 ft 6 in"]
+        },
         {
           "label": "170 cm",
           "values": ["66.93 in", "5 ft 7 in"],
           "emphasis": true
         },
-        { "label": "172 cm", "values": ["67.72 in", "5 ft 8 in"] },
-        { "label": "173 cm", "values": ["68.11 in", "5 ft 8 in"] },
+        {
+          "label": "172 cm",
+          "values": ["67.72 in", "5 ft 8 in"]
+        },
+        {
+          "label": "173 cm",
+          "values": ["68.11 in", "5 ft 8 in"]
+        },
         {
           "label": "175 cm",
           "values": ["68.90 in", "5 ft 9 in"],
           "emphasis": true
         },
-        { "label": "177 cm", "values": ["69.69 in", "5 ft 10 in"] },
-        { "label": "178 cm", "values": ["70.08 in", "5 ft 10 in"] },
+        {
+          "label": "177 cm",
+          "values": ["69.69 in", "5 ft 10 in"]
+        },
+        {
+          "label": "178 cm",
+          "values": ["70.08 in", "5 ft 10 in"]
+        },
         {
           "label": "180 cm",
           "values": ["70.87 in", "5 ft 11 in"],
           "emphasis": true
         },
-        { "label": "182 cm", "values": ["71.65 in", "6 ft 0 in"] },
-        { "label": "183 cm", "values": ["72.05 in", "6 ft 0 in"] },
+        {
+          "label": "182 cm",
+          "values": ["71.65 in", "6 ft 0 in"]
+        },
+        {
+          "label": "183 cm",
+          "values": ["72.05 in", "6 ft 0 in"]
+        },
         {
           "label": "185 cm",
           "values": ["72.83 in", "6 ft 1 in"],
           "emphasis": true
         },
-        { "label": "188 cm", "values": ["74.02 in", "6 ft 2 in"] },
+        {
+          "label": "188 cm",
+          "values": ["74.02 in", "6 ft 2 in"]
+        },
         {
           "label": "190 cm",
           "values": ["74.80 in", "6 ft 3 in"],
           "emphasis": true
         },
-        { "label": "193 cm", "values": ["75.98 in", "6 ft 4 in"] },
-        { "label": "195 cm", "values": ["76.77 in", "6 ft 5 in"] },
-        { "label": "200 cm", "values": ["78.74 in", "6 ft 7 in"] }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionTable",
-      "title": "Reverse table – inches to centimeters",
-      "description": "The table below shows popular inch values converted to centimeters, rounded to two decimal places.",
-      "labelHeader": "Inches",
-      "cols": ["Centimeters"],
-      "rows": [
-        { "label": "0.5 in", "values": ["1.27 cm"] },
-        { "label": "1 in", "values": ["2.54 cm"], "emphasis": true },
-        { "label": "2 in", "values": ["5.08 cm"] },
-        { "label": "3 in", "values": ["7.62 cm"] },
-        { "label": "4 in", "values": ["10.16 cm"] },
-        { "label": "5 in", "values": ["12.70 cm"] },
-        { "label": "6 in", "values": ["15.24 cm"], "emphasis": true },
-        { "label": "7 in", "values": ["17.78 cm"] },
-        { "label": "8 in", "values": ["20.32 cm"] },
-        { "label": "9 in", "values": ["22.86 cm"] },
-        { "label": "10 in", "values": ["25.40 cm"], "emphasis": true },
-        { "label": "11 in", "values": ["27.94 cm"] },
-        { "label": "12 in", "values": ["30.48 cm"], "emphasis": true },
-        { "label": "15 in", "values": ["38.10 cm"] },
-        { "label": "18 in", "values": ["45.72 cm"] },
-        { "label": "20 in", "values": ["50.80 cm"] },
-        { "label": "21 in", "values": ["53.34 cm"] },
-        { "label": "23 in", "values": ["58.42 cm"] },
-        { "label": "24 in", "values": ["60.96 cm"], "emphasis": true },
-        { "label": "30 in", "values": ["76.20 cm"] },
-        { "label": "36 in", "values": ["91.44 cm"], "emphasis": true },
-        { "label": "42 in", "values": ["106.68 cm"] },
-        { "label": "45 in", "values": ["114.30 cm"] },
-        { "label": "48 in", "values": ["121.92 cm"] },
-        { "label": "54 in", "values": ["137.16 cm"] },
-        { "label": "60 in", "values": ["152.40 cm"], "emphasis": true },
-        { "label": "72 in", "values": ["182.88 cm"], "emphasis": true }
+        {
+          "label": "193 cm",
+          "values": ["75.98 in", "6 ft 4 in"]
+        },
+        {
+          "label": "195 cm",
+          "values": ["76.77 in", "6 ft 5 in"]
+        },
+        {
+          "label": "200 cm",
+          "values": ["78.74 in", "6 ft 7 in"]
+        }
       ]
     },
     {
@@ -272,20 +421,49 @@
       "labelHeader": "Diagonal (inches)",
       "cols": ["Diagonal (cm)"],
       "rows": [
-        { "label": "24 in (desktop monitor)", "values": ["60.96 cm"] },
-        { "label": "27 in (desktop monitor)", "values": ["68.58 cm"] },
+        {
+          "label": "24 in (desktop monitor)",
+          "values": ["60.96 cm"]
+        },
+        {
+          "label": "27 in (desktop monitor)",
+          "values": ["68.58 cm"]
+        },
         {
           "label": "32 in (TV / large monitor)",
           "values": ["81.28 cm"],
           "emphasis": true
         },
-        { "label": "40 in (TV)", "values": ["101.60 cm"] },
-        { "label": "43 in (TV)", "values": ["109.22 cm"] },
-        { "label": "50 in (TV)", "values": ["127.00 cm"] },
-        { "label": "55 in (TV)", "values": ["139.70 cm"], "emphasis": true },
-        { "label": "65 in (TV)", "values": ["165.10 cm"], "emphasis": true },
-        { "label": "75 in (TV)", "values": ["190.50 cm"] },
-        { "label": "85 in (TV)", "values": ["215.90 cm"] }
+        {
+          "label": "40 in (TV)",
+          "values": ["101.60 cm"]
+        },
+        {
+          "label": "43 in (TV)",
+          "values": ["109.22 cm"]
+        },
+        {
+          "label": "50 in (TV)",
+          "values": ["127.00 cm"]
+        },
+        {
+          "label": "55 in (TV)",
+          "values": ["139.70 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "65 in (TV)",
+          "values": ["165.10 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "75 in (TV)",
+          "values": ["190.50 cm"]
+        },
+        {
+          "label": "85 in (TV)",
+          "values": ["215.90 cm"]
+        }
       ]
     },
     {

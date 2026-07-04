@@ -84,7 +84,7 @@
     {
       "type": "sectionBasic",
       "title": "Quando si convertono chilogrammi in libbre?",
-      "html": "<p class=\"text-mid mb-4\">Il chilogrammo è l'unità di massa standard in Italia. La libbra (lb) domina negli Stati Uniti e rimane comune nel Regno Unito, soprattutto per il peso corporeo — dove i britannici usano anche lo stone (1 stone = 14 libbre = circa 6,35 kg).</p><p class=\"text-mid mb-4\">Convertire kg in libbre è necessario quando si consulta il proprio peso su un'app di salute americana, si acquista materiale sportivo descritto in libbre, si interpreta un limite bagaglio in lb o si vuole conoscere il peso alla nascita di un neonato in documentazione di un ospedale anglofono.</p><p class=\"text-mid mb-4\">Una libbra equivale esattamente a 0,45359237 kg, valore fissato come costante dal 1959. Al contrario: 1 kg = 2,2046 libbre. Il convertitore esegue il calcolo non appena inserisci un valore.</p><p class=\"text-mid\">In questa pagina trovi una tabella da kg a libbre per valori da 0,5 a 200 kg, una tabella del peso corporeo con conversione in libbre e stone, una tabella dei pesi in palestra e una tabella inversa da libbre a kg.</p>",
+      "html": "<p class=\"text-mid mb-4\">Il chilogrammo è l'unità di massa standard in Italia. La libbra (lb) domina negli Stati Uniti e rimane comune nel Regno Unito, soprattutto per il peso corporeo — dove i britannici usano anche lo stone (1 stone = 14 libbre = circa 6,35 kg).</p><p class=\"text-mid mb-4\">Convertire kg in libbre è necessario quando si consulta il proprio peso su un'app di salute americana, si acquista materiale sportivo descritto in libbre, si interpreta un limite bagaglio in lb o si vuole conoscere il peso alla nascita di un neonato in documentazione di un ospedale anglofono.</p><p class=\"text-mid mb-4\">Una libbra equivale esattamente a 0,45359237 kg, valore fissato come costante dal 1959. Al contrario: 1 kg = 2,2046 libbre. Il convertitore esegue il calcolo non appena inserisci un valore.</p><p class=\"text-mid\">In questa pagina trovi una tabella da kg a libbre per valori da 0,5 a 200 kg, una tabella del peso corporeo con conversione in libbre e stone e una tabella dei pesi in palestra.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Convertitore gratuito da chilogrammi a libbre – Arteon"
     },
@@ -108,28 +108,105 @@
       "labelHeader": "Chilogrammi",
       "cols": ["Libbre (lb)"],
       "rows": [
-        { "label": "0,5 kg", "values": ["1,10 lb"] },
-        { "label": "1 kg", "values": ["2,20 lb"], "emphasis": true },
-        { "label": "2 kg", "values": ["4,41 lb"] },
-        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
-        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
-        { "label": "15 kg", "values": ["33,07 lb"] },
-        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
-        { "label": "23 kg", "values": ["50,71 lb"], "emphasis": true },
-        { "label": "25 kg", "values": ["55,12 lb"] },
-        { "label": "30 kg", "values": ["66,14 lb"] },
-        { "label": "32 kg", "values": ["70,55 lb"], "emphasis": true },
-        { "label": "40 kg", "values": ["88,18 lb"] },
-        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
-        { "label": "60 kg", "values": ["132,28 lb"] },
-        { "label": "70 kg", "values": ["154,32 lb"], "emphasis": true },
-        { "label": "80 kg", "values": ["176,37 lb"], "emphasis": true },
-        { "label": "90 kg", "values": ["198,42 lb"] },
-        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true },
-        { "label": "110 kg", "values": ["242,51 lb"] },
-        { "label": "120 kg", "values": ["264,55 lb"] },
-        { "label": "150 kg", "values": ["330,69 lb"], "emphasis": true },
-        { "label": "200 kg", "values": ["440,92 lb"] }
+        {
+          "label": "0,5 kg",
+          "values": ["1,10 lb"]
+        },
+        {
+          "label": "1 kg",
+          "values": ["2,20 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "2 kg",
+          "values": ["4,41 lb"]
+        },
+        {
+          "label": "5 kg",
+          "values": ["11,02 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "10 kg",
+          "values": ["22,05 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "15 kg",
+          "values": ["33,07 lb"]
+        },
+        {
+          "label": "20 kg",
+          "values": ["44,09 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "23 kg",
+          "values": ["50,71 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "25 kg",
+          "values": ["55,12 lb"]
+        },
+        {
+          "label": "30 kg",
+          "values": ["66,14 lb"]
+        },
+        {
+          "label": "32 kg",
+          "values": ["70,55 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "40 kg",
+          "values": ["88,18 lb"]
+        },
+        {
+          "label": "50 kg",
+          "values": ["110,23 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "60 kg",
+          "values": ["132,28 lb"]
+        },
+        {
+          "label": "70 kg",
+          "values": ["154,32 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "80 kg",
+          "values": ["176,37 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "90 kg",
+          "values": ["198,42 lb"]
+        },
+        {
+          "label": "100 kg",
+          "values": ["220,46 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "110 kg",
+          "values": ["242,51 lb"]
+        },
+        {
+          "label": "120 kg",
+          "values": ["264,55 lb"]
+        },
+        {
+          "label": "150 kg",
+          "values": ["330,69 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "200 kg",
+          "values": ["440,92 lb"]
+        }
       ],
       "caption": "Vuoi convertire nel senso inverso? Usa il nostro <a href=\"/it/strumenti/convertitore-libbre-in-kg\">convertitore da libbre a kg</a>, con tabella e contenuto dettagliato."
     },
@@ -144,20 +221,32 @@
       "labelHeader": "Peso corporeo",
       "cols": ["Libbre (lb)", "Stone e libbre (st lb)"],
       "rows": [
-        { "label": "40 kg", "values": ["88,18 lb", "6 st 4,2 lb"] },
-        { "label": "45 kg", "values": ["99,21 lb", "7 st 1,2 lb"] },
+        {
+          "label": "40 kg",
+          "values": ["88,18 lb", "6 st 4,2 lb"]
+        },
+        {
+          "label": "45 kg",
+          "values": ["99,21 lb", "7 st 1,2 lb"]
+        },
         {
           "label": "50 kg",
           "values": ["110,23 lb", "7 st 12,2 lb"],
           "emphasis": true
         },
-        { "label": "55 kg", "values": ["121,25 lb", "8 st 9,3 lb"] },
+        {
+          "label": "55 kg",
+          "values": ["121,25 lb", "8 st 9,3 lb"]
+        },
         {
           "label": "60 kg",
           "values": ["132,28 lb", "9 st 6,3 lb"],
           "emphasis": true
         },
-        { "label": "65 kg", "values": ["143,30 lb", "10 st 3,3 lb"] },
+        {
+          "label": "65 kg",
+          "values": ["143,30 lb", "10 st 3,3 lb"]
+        },
         {
           "label": "70 kg",
           "values": ["154,32 lb", "11 st 0,3 lb"],
@@ -188,29 +277,14 @@
           "values": ["220,46 lb", "15 st 10,5 lb"],
           "emphasis": true
         },
-        { "label": "110 kg", "values": ["242,51 lb", "17 st 4,5 lb"] },
-        { "label": "120 kg", "values": ["264,55 lb", "18 st 12,6 lb"] }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionTable",
-      "title": "Tabella inversa – libbre in chilogrammi",
-      "description": "La tabella seguente converte i valori comuni in libbre in chilogrammi, arrotondata a due decimali.",
-      "labelHeader": "Libbre (lb)",
-      "cols": ["Chilogrammi"],
-      "rows": [
-        { "label": "1 lb", "values": ["0,45 kg"], "emphasis": true },
-        { "label": "5 lb", "values": ["2,27 kg"] },
-        { "label": "10 lb", "values": ["4,54 kg"], "emphasis": true },
-        { "label": "50 lb", "values": ["22,68 kg"], "emphasis": true },
-        { "label": "100 lb", "values": ["45,36 kg"], "emphasis": true },
-        { "label": "150 lb", "values": ["68,04 kg"], "emphasis": true },
-        { "label": "200 lb", "values": ["90,72 kg"], "emphasis": true },
-        { "label": "300 lb", "values": ["136,08 kg"] }
+        {
+          "label": "110 kg",
+          "values": ["242,51 lb", "17 st 4,5 lb"]
+        },
+        {
+          "label": "120 kg",
+          "values": ["264,55 lb", "18 st 12,6 lb"]
+        }
       ]
     },
     {
@@ -224,13 +298,39 @@
       "labelHeader": "Peso (kg)",
       "cols": ["Peso (lb)"],
       "rows": [
-        { "label": "2,5 kg", "values": ["5,51 lb"] },
-        { "label": "5 kg", "values": ["11,02 lb"], "emphasis": true },
-        { "label": "10 kg", "values": ["22,05 lb"], "emphasis": true },
-        { "label": "20 kg", "values": ["44,09 lb"], "emphasis": true },
-        { "label": "25 kg", "values": ["55,12 lb"] },
-        { "label": "50 kg", "values": ["110,23 lb"], "emphasis": true },
-        { "label": "100 kg", "values": ["220,46 lb"], "emphasis": true }
+        {
+          "label": "2,5 kg",
+          "values": ["5,51 lb"]
+        },
+        {
+          "label": "5 kg",
+          "values": ["11,02 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "10 kg",
+          "values": ["22,05 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "20 kg",
+          "values": ["44,09 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "25 kg",
+          "values": ["55,12 lb"]
+        },
+        {
+          "label": "50 kg",
+          "values": ["110,23 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "100 kg",
+          "values": ["220,46 lb"],
+          "emphasis": true
+        }
       ]
     },
     {

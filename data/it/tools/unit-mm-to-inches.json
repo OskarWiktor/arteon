@@ -1,0 +1,293 @@
+{
+  "toolKey": "mmToInches",
+  "locale": "it",
+  "metadata": {
+    "title": "Calcolatore mm in pollici – convertire millimetri in pollici",
+    "description": "Converti millimetri in pollici. Le tabelle incluse mostrano anche le frazioni di pollice (1/8, 1/4, 3/8) usate per punte da trapano, viti e spessori dei materiali. Il convertitore funziona in entrambe le direzioni e calcola all'istante.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-mm-in-pollici"
+  },
+  "hero": {
+    "title": "Converti millimetri in pollici",
+    "description": "Inserisci qualsiasi valore in millimetri e leggi subito il risultato in pollici decimali. La tabella delle frazioni più in basso nella pagina mostra anche la frazione di pollice più vicina, quella usata per punte da trapano o viti. Il convertitore è utile nelle misurazioni di precisione: spessori dei materiali, dimensioni di componenti elettronici o scelta di utensili specificati in pollici.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-mm-in-pollici",
+      "label": "mm in pollici"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore millimetri in pollici – calcolatore mm in pollici",
+      "alternateName": [
+        "Convertitore mm in pollici",
+        "Calcolatore mm in pollici",
+        "Convertitore millimetri in pollici",
+        "Millimetri in pollici",
+        "mm in pollici",
+        "Convertire mm in pollici",
+        "Conversione mm in pollici",
+        "mm in inch",
+        "Convertitore millimetro in pollice",
+        "Calcolatore millimetri in pollici",
+        "mm in inches",
+        "mm in in",
+        "Tabella mm in pollici",
+        "Frazioni di pollice in millimetri",
+        "Quanti pollici è un millimetro"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertitore di millimetri in pollici che funziona nel browser senza registrazione. Inserisci un valore in mm e ottieni all'istante il risultato in pollici decimali. Utile per scegliere punte da trapano e viti, controllare spessori dei materiali o leggere dimensioni di componenti elettronici indicate in pollici.",
+      "featureList": [
+        "La conversione funziona in entrambe le direzioni: puoi convertire sia millimetri in pollici sia pollici in millimetri",
+        "Il risultato appare immediatamente mentre digiti, senza bisogno di cliccare alcun pulsante",
+        "Il risultato può essere copiato negli appunti con un solo clic",
+        "La tabella di conversione copre valori da 1 mm a 800 mm",
+        "Una tabella a parte mostra le frazioni di pollice più comuni (da 1/16 a 1 pollice) insieme al loro equivalente in millimetri",
+        "Tutti i calcoli vengono eseguiti localmente nel browser, nessun dato lascia il tuo dispositivo",
+        "La formula esatta è pollici = millimetri ÷ 25,4, basata sulla relazione fissa tra pollice e millimetro",
+        "Funziona su smartphone, tablet e computer senza installazione"
+      ]
+    },
+    "howTo": {
+      "name": "Come convertire millimetri in pollici?",
+      "description": "Guida rapida all'uso del convertitore mm in pollici.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserisci il valore in millimetri",
+          "text": "Nel campo a sinistra, inserisci il numero di millimetri che vuoi convertire in pollici."
+        },
+        {
+          "name": "Leggi il risultato in pollici",
+          "text": "Il risultato in pollici appare immediatamente nel campo accanto. Puoi copiarlo negli appunti con un solo clic."
+        },
+        {
+          "name": "Inverti la direzione se necessario",
+          "text": "Clicca su Cambia ordine per passare il convertitore alla modalità pollici in millimetri."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Perché convertire millimetri in pollici?",
+      "html": "<p class=\"text-mid mb-4\">Il millimetro è l'unità di base delle misurazioni di precisione in Italia e in tutta Europa. Il pollice domina invece nei paesi anglofoni, soprattutto negli Stati Uniti, dove punte da trapano, viti, chiavi a bussola e spessori dei materiali da costruzione sono specificati in pollici. Il problema nasce quando acquisti un utensile americano con specifiche in pollici o provi a scegliere una punta metrica per una misura indicata come frazione di pollice.</p><p class=\"text-mid mb-4\">Un pollice equivale esattamente a 25,4 mm. Questa relazione è costante e vale ovunque, quindi ogni conversione si riduce a una sola divisione. Il convertitore la fa per te non appena inserisci un valore.</p><p class=\"text-mid mb-4\">Più in basso in questa pagina troverai una tabella di conversione mm in pollici per valori da 1 a 800 mm e una tabella delle frazioni di pollice più comuni con il loro equivalente in millimetri.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore gratuito da millimetri a pollici – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione mm in pollici? Formula ed esempio",
+      "html": "<p class=\"text-mid mb-4\">La conversione dei millimetri in pollici si basa su una relazione fissa: un pollice equivale esattamente a 25,4 mm. Basta quindi dividere il numero di millimetri per 25,4 per ottenere il risultato in pollici.</p><p class=\"text-mid mb-4\">La formula completa: <strong>pollici = millimetri ÷ 25,4</strong>. Nell'altra direzione: <strong>millimetri = pollici × 25,4</strong>.</p><p class=\"text-mid mb-4\">Esempio: vuoi sapere quanti pollici sono 14 mm. Sostituisci: 14 ÷ 25,4 = 0,551 pollici. Non è esattamente 1/2 pollice (12,7 mm) né 3/4 di pollice (19,05 mm) – la frazione comune più vicina è 9/16 di pollice (14,29 mm), anche se la differenza è comunque di circa 0,29 mm.</p><p class=\"text-mid\">Un altro esempio: lo spessore standard del laminato di un circuito stampato (PCB) è di 1,6 mm, che convertito dà 1,6 ÷ 25,4 = 0,063 pollici – un valore vicino a 1/16 di pollice (0,0625 pollici). Il convertitore esegue entrambe le direzioni del calcolo non appena inserisci un valore.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabella di conversione mm in pollici",
+      "description": "La tabella seguente converte valori comuni in millimetri in pollici decimali. I valori sono arrotondati a tre cifre decimali. Per convertire un valore esatto o dimensioni meno frequenti, usa il convertitore qui sopra.",
+      "labelHeader": "Millimetri",
+      "cols": ["Pollici"],
+      "rows": [
+        { "label": "1 mm", "values": ["0,039 in"] },
+        { "label": "2 mm", "values": ["0,079 in"] },
+        { "label": "3 mm", "values": ["0,118 in"] },
+        { "label": "4 mm", "values": ["0,157 in"] },
+        { "label": "5 mm", "values": ["0,197 in"], "emphasis": true },
+        { "label": "6 mm", "values": ["0,236 in"] },
+        { "label": "7 mm", "values": ["0,276 in"] },
+        { "label": "8 mm", "values": ["0,315 in"] },
+        { "label": "9 mm", "values": ["0,354 in"] },
+        { "label": "10 mm", "values": ["0,394 in"], "emphasis": true },
+        { "label": "12 mm", "values": ["0,472 in"] },
+        { "label": "14 mm", "values": ["0,551 in"] },
+        { "label": "15 mm", "values": ["0,591 in"] },
+        { "label": "16 mm", "values": ["0,630 in"] },
+        { "label": "18 mm", "values": ["0,709 in"] },
+        { "label": "20 mm", "values": ["0,787 in"], "emphasis": true },
+        { "label": "25 mm", "values": ["0,984 in"], "emphasis": true },
+        { "label": "30 mm", "values": ["1,181 in"] },
+        { "label": "35 mm", "values": ["1,378 in"] },
+        { "label": "40 mm", "values": ["1,575 in"] },
+        { "label": "50 mm", "values": ["1,969 in"], "emphasis": true },
+        { "label": "60 mm", "values": ["2,362 in"] },
+        { "label": "70 mm", "values": ["2,756 in"] },
+        { "label": "80 mm", "values": ["3,150 in"] },
+        { "label": "90 mm", "values": ["3,543 in"] },
+        { "label": "100 mm", "values": ["3,937 in"], "emphasis": true },
+        { "label": "120 mm", "values": ["4,724 in"] },
+        { "label": "150 mm", "values": ["5,906 in"], "emphasis": true },
+        { "label": "180 mm", "values": ["7,087 in"] },
+        { "label": "200 mm", "values": ["7,874 in"], "emphasis": true },
+        { "label": "210 mm", "values": ["8,268 in"] },
+        { "label": "250 mm", "values": ["9,843 in"] },
+        { "label": "256 mm", "values": ["10,079 in"] },
+        { "label": "297 mm", "values": ["11,693 in"] },
+        { "label": "300 mm", "values": ["11,811 in"], "emphasis": true },
+        { "label": "500 mm", "values": ["19,685 in"] },
+        { "label": "800 mm", "values": ["31,496 in"], "emphasis": true }
+      ],
+      "caption": "Vuoi convertire nell'altra direzione? Usa il nostro convertitore <a href=\"/it/strumenti/convertitore-pollici-in-mm\">pollici in mm</a>, che include la tabella completa delle frazioni di pollice a passi di 1/32."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Le frazioni di pollice più comuni e il loro equivalente in millimetri",
+      "description": "Nei paesi anglofoni punte da trapano, viti, chiavi a bussola e profili da costruzione sono indicati con frazioni di pollice, non con valori decimali. La tabella seguente mostra le frazioni più usate insieme al valore decimale e a quello in millimetri. I valori in millimetri sono arrotondati a due cifre decimali.",
+      "labelHeader": "Pollice (frazione)",
+      "cols": ["Pollice (decimale)", "Millimetri"],
+      "rows": [
+        { "label": "1/16 in", "values": ["0,0625 in", "1,59 mm"] },
+        {
+          "label": "1/8 in",
+          "values": ["0,125 in", "3,18 mm"],
+          "emphasis": true
+        },
+        { "label": "5/32 in", "values": ["0,15625 in", "3,97 mm"] },
+        { "label": "3/16 in", "values": ["0,1875 in", "4,76 mm"] },
+        {
+          "label": "1/4 in",
+          "values": ["0,25 in", "6,35 mm"],
+          "emphasis": true
+        },
+        { "label": "5/16 in", "values": ["0,3125 in", "7,94 mm"] },
+        {
+          "label": "3/8 in",
+          "values": ["0,375 in", "9,53 mm"],
+          "emphasis": true
+        },
+        { "label": "7/16 in", "values": ["0,4375 in", "11,11 mm"] },
+        {
+          "label": "1/2 in",
+          "values": ["0,5 in", "12,70 mm"],
+          "emphasis": true
+        },
+        { "label": "9/16 in", "values": ["0,5625 in", "14,29 mm"] },
+        { "label": "5/8 in", "values": ["0,625 in", "15,88 mm"] },
+        { "label": "11/16 in", "values": ["0,6875 in", "17,46 mm"] },
+        {
+          "label": "3/4 in",
+          "values": ["0,75 in", "19,05 mm"],
+          "emphasis": true
+        },
+        { "label": "13/16 in", "values": ["0,8125 in", "20,64 mm"] },
+        { "label": "7/8 in", "values": ["0,875 in", "22,23 mm"] },
+        { "label": "1 in", "values": ["1 in", "25,40 mm"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando si convertono più spesso i millimetri in pollici?",
+      "description": "La conversione mm in pollici compare soprattutto dove conta la precisione della misura. Ognuna delle situazioni seguenti ha le sue particolarità.",
+      "items": [
+        {
+          "title": "Punte da trapano e utensili",
+          "description": "I set americani di punte da trapano e chiavi a bussola sono indicati con frazioni di pollice (ad esempio 1/8, 5/32, 1/4), non con millimetri. Se hai un set di punte metrico e trovi un manuale con misure in pollici, la conversione ti permette di scegliere l'equivalente più vicino. Una punta da 1/4 di pollice misura 6,35 mm e una da 3/8 di pollice, 9,53 mm."
+        },
+        {
+          "title": "Viti ed elementi di fissaggio",
+          "description": "Viti, bulloni e dadi del sistema in pollici (ad esempio UNC, UNF) hanno misure espresse in frazioni di pollice. Quando ripari attrezzature importate dagli USA o monti mobili con manuale in pollici, controlla l'equivalente esatto in millimetri per scegliere l'utensile giusto."
+        },
+        {
+          "title": "Elettronica e circuiti stampati",
+          "description": "Il passo standard dei pin in elettronica (passo delle breadboard e dei connettori a pin) è di 0,1 pollici, cioè 2,54 mm. Lo spessore tipico del laminato di una scheda PCB è di 1,6 mm, che corrisponde a circa 1/16 di pollice. Conoscere questi valori facilita la progettazione di contenitori e moduli elettronici."
+        },
+        {
+          "title": "Spessore di materiali e lamiere",
+          "description": "I cataloghi di materiali da costruzione, lamiere o plexiglass dei negozi americani indicano lo spessore in pollici o frazioni di pollice. Una lamiera da 1/8 di pollice misura 3,18 mm e una lastra da 1/4 di pollice, 6,35 mm – controllalo prima di ordinare, così il materiale si adatta al tuo progetto."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione mm in pollici",
+      "items": [
+        {
+          "question": "Quanti pollici sono 100 mm?",
+          "answer": "100 mm sono 3,937 pollici. Calcolo: 100 ÷ 25,4 = 3,937 in. Arrotondando, sono poco meno di 4 pollici."
+        },
+        {
+          "question": "Quanti pollici sono 25 mm?",
+          "answer": "25 mm sono 0,984 pollici. Calcolo: 25 ÷ 25,4 = 0,984 in. È un valore vicino a 1 pollice, ma non uguale – esattamente 1 pollice sono 25,4 mm, quindi la differenza è di 0,4 mm."
+        },
+        {
+          "question": "Quanti pollici sono 10 mm?",
+          "answer": "10 mm sono 0,394 pollici. Calcolo: 10 ÷ 25,4 = 0,394 in. Non è 1/4 di pollice (0,25 in = 6,35 mm) – 10 mm corrispondono a circa 25/64 di pollice."
+        },
+        {
+          "question": "Quanti pollici sono 1, 2, 3, 20 e 30 mm?",
+          "answer": "1 mm = 0,039 in, 2 mm = 0,079 in, 3 mm = 0,118 in, 20 mm = 0,787 in e 30 mm = 1,181 in. Ottieni ciascuno di questi valori dividendo il numero di millimetri per 25,4."
+        },
+        {
+          "question": "Quanti pollici sono 150 mm?",
+          "answer": "150 mm sono 5,906 pollici. Calcolo: 150 ÷ 25,4 = 5,906 in. È un valore vicino a 6 pollici, con una differenza di circa 2,4 mm."
+        },
+        {
+          "question": "Quanti pollici sono 6, 15, 40, 50 e 180 mm?",
+          "answer": "6 mm = 0,236 in, 15 mm = 0,591 in, 40 mm = 1,575 in, 50 mm = 1,969 in e 180 mm = 7,087 in. Tutti i valori si ottengono allo stesso modo: dividi i millimetri per 25,4."
+        },
+        {
+          "question": "Quanti pollici sono 5 mm?",
+          "answer": "5 mm sono 0,197 pollici. Calcolo: 5 ÷ 25,4 = 0,197 in. È un valore vicino a 3/16 di pollice (0,1875 in = 4,76 mm)."
+        },
+        {
+          "question": "Come convertire i mm in pollici in forma di frazione?",
+          "answer": "Prima converti i millimetri in pollici decimali (mm ÷ 25,4), poi cerca la frazione comune più vicina nella tabella qui sopra. Ad esempio, 9 mm = 0,354 in, che è vicino a 23/64 di pollice, anche se in pratica si arrotonda alla misura di punta o chiave disponibile più vicina, di solito a passi di 1/32 o 1/16 di pollice."
+        },
+        {
+          "question": "14 mm sono 1 pollice?",
+          "answer": "No. 14 mm sono 0,551 pollici, cioè più o meno mezzo pollice. Esattamente 1 pollice sono 25,4 mm – 14 mm è quasi la metà."
+        },
+        {
+          "question": "Quanti millimetri è esattamente 1 pollice?",
+          "answer": "1 pollice sono esattamente 25,4 mm. È un valore costante definito, in vigore dal 1959 come il cosiddetto pollice internazionale, adottato da USA, Regno Unito, Canada, Australia e altri paesi anglosassoni."
+        },
+        {
+          "question": "Qual è la formula per convertire i mm in pollici?",
+          "answer": "La formula è: pollici = millimetri ÷ 25,4. Ad esempio, 50 mm ÷ 25,4 = 1,969 pollici. Nell'altra direzione: millimetri = pollici × 25,4."
+        },
+        {
+          "question": "12 mm sono 1/2 pollice?",
+          "answer": "Non esattamente. 1/2 pollice sono 12,7 mm, mentre 12 mm sono 0,472 pollici. La differenza è di 0,7 mm, il che può contare nella scelta di una punta o di una vite."
+        },
+        {
+          "question": "2 mm sono la stessa cosa di 1/16 di pollice?",
+          "answer": "No. 1/16 di pollice sono 1,5875 mm, mentre 2 mm sono 0,079 pollici (quasi 5/64 di pollice). I valori sono simili, ma non identici – la differenza è di circa 0,41 mm."
+        },
+        {
+          "question": "32 mm sono 1 pollice?",
+          "answer": "No. 1 pollice sono esattamente 25,4 mm, mentre 32 mm sono 1,26 pollici. È oltre il 20% in più di 1 pollice."
+        },
+        {
+          "question": "Come convertire i mm in pollici senza calcolatrice?",
+          "answer": "Approssimazione rapida: dividi i millimetri per 25 invece che per 25,4. L'errore è minimo (circa 1,6%), sufficiente in pratica per un confronto orientativo. Ad esempio, 100 mm ÷ 25 = 4 pollici (il valore esatto è 3,937). Per conversioni precise usa sempre il convertitore."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Hai una domanda o un suggerimento?",
+      "description": "Se noti un errore nelle tabelle o hai un'idea per migliorare il convertitore, scrivici. Rispondiamo a ogni messaggio.",
+      "imageAlt": "Contatta Arteon Agency",
+      "subject": "Convertitore mm in pollici"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri convertitori di unità utili"
+    }
+  ]
+}

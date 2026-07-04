@@ -232,6 +232,30 @@ export const UNIT_CONVERSIONS: UnitConversionConfig[] = [
   },
 
   {
+    toolKey: 'mmToInches',
+    category: 'length',
+    sourceField: { labelKey: 'millimeters', suffix: 'mm' },
+    targetField: { labelKey: 'inches', suffix: 'in' },
+    convert: v => v / 25.4,
+    reverseConvert: v => v * 25.4,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'inchesToMm',
+  },
+
+  {
+    toolKey: 'inchesToMm',
+    category: 'length',
+    sourceField: { labelKey: 'inches', suffix: 'in' },
+    targetField: { labelKey: 'millimeters', suffix: 'mm' },
+    convert: v => v * 25.4,
+    reverseConvert: v => v / 25.4,
+    precision: 4,
+    swappable: true,
+    reverseToolKey: 'mmToInches',
+  },
+
+  {
     toolKey: 'kgToLb',
     category: 'weight',
     sourceField: { labelKey: 'kilograms', suffix: 'kg' },
