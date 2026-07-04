@@ -9,6 +9,11 @@ import {
   getAllArticlePreviews,
   getPrimaryCategorySlug,
 } from '@/lib/blogDataService';
+import {
+  TOOL_REGISTRY,
+  getToolHref,
+  getToolTitle,
+} from '@/lib/i18n/toolRegistry';
 import type { ArticlePreview } from '@/types/article';
 import { siteUrl } from '@/utils/absoluteUrl';
 import { slugify } from '@/utils/slugify';
@@ -85,7 +90,16 @@ const GRAPHIC_SERVICES: NavItem[] = GRAPHIC_SERVICES_SOURCE.map(s => ({
 }));
 
 const services: NavItem[] = [
-  { href: '/uslugi/tworzenie-stron-wordpress', title: 'Strony WordPress' },
+  {
+    href: '/uslugi/tworzenie-stron-wordpress',
+    title: 'Strony WordPress',
+    children: [
+      {
+        href: '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
+        title: 'Optymalizacja stron WordPress',
+      },
+    ],
+  },
   { href: '/uslugi/sklepy-internetowe', title: 'Sklepy internetowe' },
   { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe' },
   {
@@ -132,44 +146,15 @@ const blogArticleItems: NavItem[] = articlePreviews.map(a => ({
   href: `/edukacja/${getPrimaryCategorySlug(a)}/${a.slug}`,
 }));
 
-const tools: NavItem[] = [
-  {
-    title: 'Konwerter JPG/PNG na WebP',
-    href: '/narzedzia/konwerter-jpg-na-webp',
-  },
-  {
-    title: 'Zmiana rozmiaru i kadrowanie zdjęcia',
-    href: '/narzedzia/edytor-zdjec-online',
-  },
-  {
-    title: 'Generator favicon',
-    href: '/narzedzia/darmowy-generator-favicon-ico',
-  },
-  {
-    title: 'Licznik meta title i description',
-    href: '/narzedzia/licznik-dlugosci-meta-title-i-description',
-  },
-  {
-    title: 'Generator stopki mailowej HTML',
-    href: '/narzedzia/darmowy-generator-stopki-mailowej',
-  },
-  {
-    title: 'Kontrast i czytelność kolorów',
-    href: '/narzedzia/kontrast-i-czytelnosc-kolorow',
-  },
-  {
-    title: 'Generator palet kolorów',
-    href: '/narzedzia/generator-palet-kolorow',
-  },
-  {
-    title: 'Ekstraktor kolorów z obrazu',
-    href: '/narzedzia/ekstraktor-kolorow-z-obrazu',
-  },
-  {
-    title: 'Generator kodów QR',
-    href: '/narzedzia/darmowy-generator-kodow-qr',
-  },
-];
+// Every tool available in PL, derived from the registry so the sitemap can
+// never drift out of sync with what actually exists (the old hardcoded list
+// covered only 9 of ~95 tools).
+const tools: NavItem[] = TOOL_REGISTRY.filter(tool => tool.locales.pl)
+  .map(tool => ({
+    title: getToolTitle(tool.key, 'pl'),
+    href: getToolHref(tool.key, 'pl'),
+  }))
+  .sort((a, b) => a.title.localeCompare(b.title, 'pl'));
 
 const infoPages: NavItem[] = [
   { title: 'Strona główna', href: '/' },
@@ -255,7 +240,7 @@ export default function SitemapPage() {
                 Wszystkie narzędzia
               </InlineLink>
             </p>
-            <ul className='mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2'>
+            <ul className='mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-4'>
               {tools.map(tool => (
                 <li key={tool.href}>
                   <InlineLink href={tool.href}>{tool.title}</InlineLink>

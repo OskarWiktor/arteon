@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server';
+import { RETIRED_LOCALE_REDIRECTS } from '@/lib/retiredLocaleRedirects';
 
 // Canonical redirects (steps 2-4) only run in production (guarded below),
 // so this value is only ever used in prod context.
@@ -72,6 +73,20 @@ export function middleware(request: NextRequest) {
       status: 410,
       headers: { 'X-Robots-Tag': 'noindex' },
     });
+  }
+
+  // 1b. Retired locales (da/ro/hu/no/sv/nl/fi) → 301 to their /en/* equivalent.
+  //     These ~670 exact mappings used to live in next.config redirects(), but
+  //     that pushed the project past Next's 1000-custom-route warning. Serving
+  //     them from a single map lookup here is lighter. (Trailing slashes are
+  //     already normalised by Next before this runs, so a bare lookup suffices.)
+  const retiredDestination = RETIRED_LOCALE_REDIRECTS[url.pathname];
+  if (retiredDestination) {
+    const destination = new URL(
+      retiredDestination,
+      `https://${CANONICAL_HOST}`,
+    );
+    return NextResponse.redirect(destination, 301);
   }
 
   let needsRedirect = false;

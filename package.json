@@ -10,7 +10,6 @@
     "build": "next build",
     "postinstall": "node scripts/fix-bom.cjs && node scripts/sync-pdf-worker.cjs",
     "prepare": "husky",
-    "postbuild": "next-sitemap --config next-sitemap.config.cjs && node scripts/postbuild-sitemap-hreflang.cjs",
     "clear-cache": "node scripts/clear-vercel-cache.cjs",
     "start": "next start",
     "lint": "eslint .",
