@@ -52,7 +52,6 @@
         "Die Umrechnungstabelle umfasst Werte von 0,5 bis 90 Zoll",
         "Die Bildschirmdiagonalentabelle umfasst die beliebtesten TV- und Monitorgrößen von 24 bis 85 Zoll",
         "Die Körpergrößentabelle enthält die Umrechnung von Fuß-und-Zoll-Angaben in Zentimeter für Werte von 4 ft 11 in bis 6 ft 7 in",
-        "Die umgekehrte Tabelle zeigt, wie viele Zoll einem bestimmten Zentimeterwert entsprechen, für Werte von 0,5 cm bis 200 cm",
         "Alle Berechnungen erfolgen lokal im Browser, keine Daten verlassen Ihr Gerät",
         "Die genaue Umrechnungsformel lautet Zentimeter = Zoll × 2,54 und basiert auf der festen Beziehung zwischen Zoll und Zentimeter",
         "Funktioniert auf Smartphone, Tablet und Computer ohne Installation"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "Wann rechnet man Zoll in Zentimeter um?",
-      "html": "<p class=\"text-mid mb-4\">Der Zoll ist die Längeneinheit des imperialen Systems und wird hauptsächlich in den USA sowie noch in Großbritannien verwendet. In Deutschland, Österreich und der Schweiz gilt das metrische System, sodass Zoll vor allem dann auftauchen, wenn Produkte oder Informationen aus anglophonen Ländern stammen.</p><p class=\"text-mid mb-4\">Die häufigsten Situationen: Sie möchten wissen, wie groß ein 55-Zoll-Fernseher in Zentimetern ist, vergleichen Ihre Körpergröße mit einer amerikanischen Kleidergrößentabelle, kaufen Schuhe in einem britischen Onlineshop oder suchen nach Maßen von Möbeln in einem US-Katalog.</p><p class=\"text-mid mb-4\">Die Formel ist einfach: ein Zoll entspricht genau 2,54 cm. Um Zoll in Zentimeter umzurechnen, multipliziert man den Zollwert mit 2,54. Der Umrechner erledigt das sofort nach der Eingabe.</p><p class=\"text-mid\">Auf dieser Seite finden Sie eine Umrechnungstabelle für Zoll in cm, eine Tabelle mit gängigen Bildschirmdiagonalen, eine Körpergrößentabelle mit Umrechnung von Fuß und Zoll in Zentimeter sowie eine umgekehrte Tabelle für Zentimeter in Zoll.</p>",
+      "html": "<p class=\"text-mid mb-4\">Der Zoll ist die Längeneinheit des imperialen Systems und wird hauptsächlich in den USA sowie noch in Großbritannien verwendet. In Deutschland, Österreich und der Schweiz gilt das metrische System, sodass Zoll vor allem dann auftauchen, wenn Produkte oder Informationen aus anglophonen Ländern stammen.</p><p class=\"text-mid mb-4\">Die häufigsten Situationen: Sie möchten wissen, wie groß ein 55-Zoll-Fernseher in Zentimetern ist, vergleichen Ihre Körpergröße mit einer amerikanischen Kleidergrößentabelle, kaufen Schuhe in einem britischen Onlineshop oder suchen nach Maßen von Möbeln in einem US-Katalog.</p><p class=\"text-mid mb-4\">Die Formel ist einfach: ein Zoll entspricht genau 2,54 cm. Um Zoll in Zentimeter umzurechnen, multipliziert man den Zollwert mit 2,54. Der Umrechner erledigt das sofort nach der Eingabe.</p><p class=\"text-mid\">Auf dieser Seite finden Sie eine Umrechnungstabelle für Zoll in cm, eine Tabelle mit gängigen Bildschirmdiagonalen sowie eine Körpergrößentabelle mit Umrechnung von Fuß und Zoll in Zentimeter.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Kostenloser Zoll-in-Zentimeter-Umrechner – Arteon"
     },

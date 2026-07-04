@@ -1,0 +1,293 @@
+{
+  "toolKey": "mmToInches",
+  "locale": "pt",
+  "metadata": {
+    "title": "Calculadora mm para polegadas – converter milímetros em polegadas",
+    "description": "Converta milímetros em polegadas. As tabelas incluídas mostram também as frações de polegada (1/8, 1/4, 3/8) usadas em brocas, parafusos e espessuras de materiais. O conversor funciona nos dois sentidos e calcula instantaneamente.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/pt/ferramentas/conversor-mm-para-polegadas"
+  },
+  "hero": {
+    "title": "Converter milímetros em polegadas",
+    "description": "Introduza qualquer valor em milímetros e leia de imediato o resultado em polegadas decimais. A tabela de frações mais abaixo na página mostra também a fração de polegada mais próxima, usada em brocas ou parafusos. O conversor é útil em medições precisas: espessuras de materiais, dimensões de componentes eletrónicos ou escolha de ferramentas especificadas em polegadas.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-mm-para-polegadas",
+      "label": "mm para polegadas"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de milímetros para polegadas – calculadora mm para polegadas",
+      "alternateName": [
+        "Conversor mm para polegadas",
+        "Calculadora mm para polegadas",
+        "Conversor de milímetros para polegadas",
+        "Milímetros para polegadas",
+        "mm para polegadas",
+        "Converter mm em polegadas",
+        "Conversão mm para polegadas",
+        "mm para inch",
+        "Conversor de milímetro para polegada",
+        "Calculadora de milímetros para polegadas",
+        "mm para inches",
+        "mm para in",
+        "Tabela mm para polegadas",
+        "Frações de polegada em milímetros",
+        "Quantas polegadas tem um milímetro"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Conversor de milímetros para polegadas que funciona no browser sem registo. Introduza um valor em mm e obtenha instantaneamente o resultado em polegadas decimais. Útil para escolher brocas e parafusos, verificar espessuras de materiais ou ler dimensões de componentes eletrónicos indicadas em polegadas.",
+      "featureList": [
+        "A conversão funciona nos dois sentidos: pode converter tanto milímetros em polegadas como polegadas em milímetros",
+        "O resultado aparece instantaneamente enquanto escreve, sem necessidade de clicar em qualquer botão",
+        "O resultado pode ser copiado para a área de transferência com um único clique",
+        "A tabela de conversão abrange valores de 1 mm a 800 mm",
+        "Uma tabela à parte mostra as frações de polegada mais comuns (de 1/16 a 1 polegada) juntamente com o seu equivalente em milímetros",
+        "Todos os cálculos são efetuados localmente no browser, nenhum dado sai do seu dispositivo",
+        "A fórmula exata é polegadas = milímetros ÷ 25,4, baseada na relação fixa entre a polegada e o milímetro",
+        "Funciona em telemóvel, tablet e computador sem instalação"
+      ]
+    },
+    "howTo": {
+      "name": "Como converter milímetros em polegadas?",
+      "description": "Guia rápido de utilização do conversor mm para polegadas.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduza o valor em milímetros",
+          "text": "No campo da esquerda, introduza o número de milímetros que pretende converter em polegadas."
+        },
+        {
+          "name": "Leia o resultado em polegadas",
+          "text": "O resultado em polegadas aparece imediatamente no campo ao lado. Pode copiá-lo para a área de transferência com um único clique."
+        },
+        {
+          "name": "Inverta a direção se necessário",
+          "text": "Clique em Alterar ordem para mudar o conversor para o modo polegadas para milímetros."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Para quê converter milímetros em polegadas?",
+      "html": "<p class=\"text-mid mb-4\">O milímetro é a unidade básica das medições precisas em Portugal e em toda a Europa. A polegada domina, por sua vez, nos países anglófonos, sobretudo nos Estados Unidos, onde brocas, parafusos, chaves de caixa e espessuras de materiais de construção são especificados em polegadas. O problema surge quando compra uma ferramenta americana com especificações em polegadas ou tenta escolher uma broca métrica para uma medida indicada como fração de polegada.</p><p class=\"text-mid mb-4\">Uma polegada equivale exatamente a 25,4 mm. Esta relação é constante e aplica-se em todo o lado, pelo que cada conversão se resume a uma única divisão. O conversor faz isso por si assim que introduz um valor.</p><p class=\"text-mid mb-4\">Mais abaixo nesta página encontrará uma tabela de conversão mm para polegadas para valores de 1 a 800 mm e uma tabela das frações de polegada mais comuns com o seu equivalente em milímetros.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Conversor gratuito de milímetros para polegadas – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão de mm para polegadas? Fórmula e exemplo",
+      "html": "<p class=\"text-mid mb-4\">A conversão de milímetros para polegadas baseia-se numa relação fixa: uma polegada equivale exatamente a 25,4 mm. Basta dividir o número de milímetros por 25,4 para obter o resultado em polegadas.</p><p class=\"text-mid mb-4\">A fórmula completa: <strong>polegadas = milímetros ÷ 25,4</strong>. No sentido contrário: <strong>milímetros = polegadas × 25,4</strong>.</p><p class=\"text-mid mb-4\">Exemplo: quer saber quantas polegadas são 14 mm. Substitui: 14 ÷ 25,4 = 0,551 polegadas. Não é exatamente 1/2 polegada (12,7 mm) nem 3/4 de polegada (19,05 mm) – a fração comum mais próxima é 9/16 de polegada (14,29 mm), embora a diferença ainda seja de cerca de 0,29 mm.</p><p class=\"text-mid\">Outro exemplo: a espessura padrão do laminado de uma placa de circuito impresso (PCB) é de 1,6 mm, o que convertido dá 1,6 ÷ 25,4 = 0,063 polegadas – um valor próximo de 1/16 de polegada (0,0625 polegadas). O conversor efetua ambos os sentidos do cálculo assim que introduz um valor.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela de conversão mm para polegadas",
+      "description": "A tabela seguinte converte valores habituais em milímetros para polegadas decimais. Os valores estão arredondados a três casas decimais. Para converter um valor exato ou dimensões menos frequentes, use o conversor acima.",
+      "labelHeader": "Milímetros",
+      "cols": ["Polegadas"],
+      "rows": [
+        { "label": "1 mm", "values": ["0,039 in"] },
+        { "label": "2 mm", "values": ["0,079 in"] },
+        { "label": "3 mm", "values": ["0,118 in"] },
+        { "label": "4 mm", "values": ["0,157 in"] },
+        { "label": "5 mm", "values": ["0,197 in"], "emphasis": true },
+        { "label": "6 mm", "values": ["0,236 in"] },
+        { "label": "7 mm", "values": ["0,276 in"] },
+        { "label": "8 mm", "values": ["0,315 in"] },
+        { "label": "9 mm", "values": ["0,354 in"] },
+        { "label": "10 mm", "values": ["0,394 in"], "emphasis": true },
+        { "label": "12 mm", "values": ["0,472 in"] },
+        { "label": "14 mm", "values": ["0,551 in"] },
+        { "label": "15 mm", "values": ["0,591 in"] },
+        { "label": "16 mm", "values": ["0,630 in"] },
+        { "label": "18 mm", "values": ["0,709 in"] },
+        { "label": "20 mm", "values": ["0,787 in"], "emphasis": true },
+        { "label": "25 mm", "values": ["0,984 in"], "emphasis": true },
+        { "label": "30 mm", "values": ["1,181 in"] },
+        { "label": "35 mm", "values": ["1,378 in"] },
+        { "label": "40 mm", "values": ["1,575 in"] },
+        { "label": "50 mm", "values": ["1,969 in"], "emphasis": true },
+        { "label": "60 mm", "values": ["2,362 in"] },
+        { "label": "70 mm", "values": ["2,756 in"] },
+        { "label": "80 mm", "values": ["3,150 in"] },
+        { "label": "90 mm", "values": ["3,543 in"] },
+        { "label": "100 mm", "values": ["3,937 in"], "emphasis": true },
+        { "label": "120 mm", "values": ["4,724 in"] },
+        { "label": "150 mm", "values": ["5,906 in"], "emphasis": true },
+        { "label": "180 mm", "values": ["7,087 in"] },
+        { "label": "200 mm", "values": ["7,874 in"], "emphasis": true },
+        { "label": "210 mm", "values": ["8,268 in"] },
+        { "label": "250 mm", "values": ["9,843 in"] },
+        { "label": "256 mm", "values": ["10,079 in"] },
+        { "label": "297 mm", "values": ["11,693 in"] },
+        { "label": "300 mm", "values": ["11,811 in"], "emphasis": true },
+        { "label": "500 mm", "values": ["19,685 in"] },
+        { "label": "800 mm", "values": ["31,496 in"], "emphasis": true }
+      ],
+      "caption": "Quer converter no outro sentido? Use o nosso conversor <a href=\"/pt/ferramentas/conversor-polegadas-para-mm\">polegadas para mm</a>, que inclui a tabela completa de frações de polegada em passos de 1/32."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "As frações de polegada mais comuns e o seu equivalente em milímetros",
+      "description": "Nos países anglófonos, brocas, parafusos, chaves de caixa e perfis de construção são designados por frações de polegada, não por valores decimais. A tabela seguinte mostra as frações mais usadas juntamente com o valor decimal e o milimétrico. Os valores em milímetros estão arredondados a duas casas decimais.",
+      "labelHeader": "Polegada (fração)",
+      "cols": ["Polegada (decimal)", "Milímetros"],
+      "rows": [
+        { "label": "1/16 in", "values": ["0,0625 in", "1,59 mm"] },
+        {
+          "label": "1/8 in",
+          "values": ["0,125 in", "3,18 mm"],
+          "emphasis": true
+        },
+        { "label": "5/32 in", "values": ["0,15625 in", "3,97 mm"] },
+        { "label": "3/16 in", "values": ["0,1875 in", "4,76 mm"] },
+        {
+          "label": "1/4 in",
+          "values": ["0,25 in", "6,35 mm"],
+          "emphasis": true
+        },
+        { "label": "5/16 in", "values": ["0,3125 in", "7,94 mm"] },
+        {
+          "label": "3/8 in",
+          "values": ["0,375 in", "9,53 mm"],
+          "emphasis": true
+        },
+        { "label": "7/16 in", "values": ["0,4375 in", "11,11 mm"] },
+        {
+          "label": "1/2 in",
+          "values": ["0,5 in", "12,70 mm"],
+          "emphasis": true
+        },
+        { "label": "9/16 in", "values": ["0,5625 in", "14,29 mm"] },
+        { "label": "5/8 in", "values": ["0,625 in", "15,88 mm"] },
+        { "label": "11/16 in", "values": ["0,6875 in", "17,46 mm"] },
+        {
+          "label": "3/4 in",
+          "values": ["0,75 in", "19,05 mm"],
+          "emphasis": true
+        },
+        { "label": "13/16 in", "values": ["0,8125 in", "20,64 mm"] },
+        { "label": "7/8 in", "values": ["0,875 in", "22,23 mm"] },
+        { "label": "1 in", "values": ["1 in", "25,40 mm"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Quando se convertem com mais frequência milímetros em polegadas?",
+      "description": "A conversão de mm para polegadas surge sobretudo onde a precisão da medição é importante. Cada uma das situações seguintes tem as suas particularidades.",
+      "items": [
+        {
+          "title": "Brocas e ferramentas",
+          "description": "Os conjuntos americanos de brocas e chaves de caixa são designados por frações de polegada (por exemplo 1/8, 5/32, 1/4), não por milímetros. Se tem um conjunto de brocas métrico e encontra um manual com medidas em polegadas, a conversão permite escolher o equivalente mais próximo. Uma broca de 1/4 de polegada mede 6,35 mm e uma de 3/8 de polegada, 9,53 mm."
+        },
+        {
+          "title": "Parafusos e elementos de fixação",
+          "description": "Os parafusos e porcas do sistema de polegadas (por exemplo UNC, UNF) têm medidas expressas em frações de polegada. Ao reparar equipamento importado dos EUA ou montar mobiliário com manual em polegadas, verifique o equivalente exato em milímetros para escolher a ferramenta adequada."
+        },
+        {
+          "title": "Eletrónica e placas de circuito impresso",
+          "description": "O espaçamento padrão dos pinos em eletrónica (passo da breadboard e dos conectores de pinos) é de 0,1 polegadas, ou seja, 2,54 mm. A espessura típica do laminado de uma placa PCB é de 1,6 mm, o que corresponde aproximadamente a 1/16 de polegada. Conhecer estes valores facilita o desenho de caixas e módulos eletrónicos."
+        },
+        {
+          "title": "Espessura de materiais e chapas",
+          "description": "Os catálogos de materiais de construção, chapas ou acrílico de lojas americanas indicam a espessura em polegadas ou frações de polegada. Uma chapa de 1/8 de polegada mede 3,18 mm e uma placa de 1/4 de polegada, 6,35 mm – verifique antes de encomendar para que o material se ajuste ao seu projeto."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre a conversão de mm para polegadas",
+      "items": [
+        {
+          "question": "Quantas polegadas são 100 mm?",
+          "answer": "100 mm são 3,937 polegadas. Cálculo: 100 ÷ 25,4 = 3,937 in. Arredondando, são pouco menos de 4 polegadas."
+        },
+        {
+          "question": "Quantas polegadas são 25 mm?",
+          "answer": "25 mm são 0,984 polegadas. Cálculo: 25 ÷ 25,4 = 0,984 in. É um valor próximo de 1 polegada, mas não igual – exatamente 1 polegada são 25,4 mm, pelo que a diferença é de 0,4 mm."
+        },
+        {
+          "question": "Quantas polegadas são 10 mm?",
+          "answer": "10 mm são 0,394 polegadas. Cálculo: 10 ÷ 25,4 = 0,394 in. Não é 1/4 de polegada (0,25 in = 6,35 mm) – 10 mm correspondem aproximadamente a 25/64 de polegada."
+        },
+        {
+          "question": "Quantas polegadas são 1, 2, 3, 20 e 30 mm?",
+          "answer": "1 mm = 0,039 in, 2 mm = 0,079 in, 3 mm = 0,118 in, 20 mm = 0,787 in e 30 mm = 1,181 in. Cada um destes valores obtém-se dividindo o número de milímetros por 25,4."
+        },
+        {
+          "question": "Quantas polegadas são 150 mm?",
+          "answer": "150 mm são 5,906 polegadas. Cálculo: 150 ÷ 25,4 = 5,906 in. É um valor próximo de 6 polegadas, com uma diferença de cerca de 2,4 mm."
+        },
+        {
+          "question": "Quantas polegadas são 6, 15, 40, 50 e 180 mm?",
+          "answer": "6 mm = 0,236 in, 15 mm = 0,591 in, 40 mm = 1,575 in, 50 mm = 1,969 in e 180 mm = 7,087 in. Todos os valores se obtêm da mesma forma: divide os milímetros por 25,4."
+        },
+        {
+          "question": "Quantas polegadas são 5 mm?",
+          "answer": "5 mm são 0,197 polegadas. Cálculo: 5 ÷ 25,4 = 0,197 in. É um valor próximo de 3/16 de polegada (0,1875 in = 4,76 mm)."
+        },
+        {
+          "question": "Como converter mm em polegadas em forma de fração?",
+          "answer": "Primeiro converta os milímetros em polegadas decimais (mm ÷ 25,4) e depois procure a fração comum mais próxima na tabela acima. Por exemplo, 9 mm = 0,354 in, que está próximo de 23/64 de polegada, embora na prática se arredonde para o tamanho de broca ou chave disponível mais próximo, normalmente em passos de 1/32 ou 1/16 de polegada."
+        },
+        {
+          "question": "14 mm é 1 polegada?",
+          "answer": "Não. 14 mm são 0,551 polegadas, ou seja, mais ou menos meia polegada. Exatamente 1 polegada são 25,4 mm – 14 mm é quase metade."
+        },
+        {
+          "question": "Quantos milímetros tem exatamente 1 polegada?",
+          "answer": "1 polegada são exatamente 25,4 mm. É um valor constante definido, em vigor desde 1959 como a chamada polegada internacional, adotada pelos EUA, Reino Unido, Canadá, Austrália e outros países anglo-saxónicos."
+        },
+        {
+          "question": "Qual é a fórmula para converter mm em polegadas?",
+          "answer": "A fórmula é: polegadas = milímetros ÷ 25,4. Por exemplo, 50 mm ÷ 25,4 = 1,969 polegadas. No sentido contrário: milímetros = polegadas × 25,4."
+        },
+        {
+          "question": "12 mm é 1/2 polegada?",
+          "answer": "Não exatamente. 1/2 polegada são 12,7 mm, enquanto 12 mm são 0,472 polegadas. A diferença é de 0,7 mm, o que pode ser relevante ao escolher uma broca ou um parafuso."
+        },
+        {
+          "question": "2 mm é o mesmo que 1/16 de polegada?",
+          "answer": "Não. 1/16 de polegada são 1,5875 mm, enquanto 2 mm são 0,079 polegadas (quase 5/64 de polegada). Os valores são semelhantes, mas não idênticos – a diferença é de cerca de 0,41 mm."
+        },
+        {
+          "question": "32 mm é 1 polegada?",
+          "answer": "Não. 1 polegada são exatamente 25,4 mm, enquanto 32 mm são 1,26 polegadas. É mais de 20% acima de 1 polegada."
+        },
+        {
+          "question": "Como converter mm em polegadas sem calculadora?",
+          "answer": "Aproximação rápida: divida os milímetros por 25 em vez de 25,4. O erro é mínimo (cerca de 1,6%), o que na prática chega para uma comparação orientativa. Por exemplo, 100 mm ÷ 25 = 4 polegadas (o valor exato é 3,937). Para conversões precisas, use sempre o conversor."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Tem alguma pergunta ou sugestão?",
+      "description": "Se detetar um erro nas tabelas ou tiver uma ideia para melhorar o conversor, contacte-nos. Respondemos a todas as mensagens.",
+      "imageAlt": "Contacto com Arteon Agency",
+      "subject": "Conversor mm para polegadas"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Outros conversores de unidades úteis"
+    }
+  ]
+}

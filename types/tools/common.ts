@@ -93,6 +93,8 @@ export type ToolItemKey =
   | 'inchesToPxDpi'
   | 'cmToInches'
   | 'inchesToCm'
+  | 'mmToInches'
+  | 'inchesToMm'
   | 'kgToLb'
   | 'lbToKg'
   | 'hexToRgb'

@@ -52,7 +52,6 @@
         "Le tableau de conversion couvre des valeurs de 1 à 300 lb",
         "Le tableau de poids corporel convertit les plages courantes de 88 à 265 lb en kilogrammes",
         "Le tableau de poids de salle de sport convertit les charges courantes de 5 à 225 lb en kilogrammes",
-        "Le tableau inversé convertit les kilogrammes en livres pour des valeurs de 0,5 à 200 kg",
         "Tous les calculs s'effectuent localement dans le navigateur — aucune donnée ne quitte votre appareil",
         "La formule exacte est kilogrammes = livres × 0,45359237, basée sur la définition de la livre de 1959",
         "Fonctionne sur téléphone, tablette et ordinateur sans installation"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "Quand convertit-on des livres en kilogrammes ?",
-      "html": "<p class=\"text-mid mb-4\">La livre (lb) est l'unité de masse du système impérial, courante aux États-Unis et encore très utilisée au Royaume-Uni. En France et dans la majeure partie de l'Europe, on utilise le kilogramme au quotidien, donc les livres apparaissent principalement quand on utilise des produits, des applications ou des informations provenant de pays anglophones.</p><p class=\"text-mid mb-4\">Les situations les plus fréquentes : une application fitness américaine affiche l'objectif de poids en livres, la limite de bagage enregistré est de 50 lb, vous achetez des haltères sur Amazon US étiquetés en livres, ou un programme d'entraînement sur YouTube mentionne un développé couché à 135 lb.</p><p class=\"text-mid mb-4\">La formule est simple : une livre correspond exactement à 0,45359237 kg. Pour convertir des livres en kilogrammes, il suffit de multiplier par 0,4536. Le convertisseur effectue le calcul dès que vous saisissez une valeur.</p><p class=\"text-mid\">Sur cette page, vous trouverez un tableau lb en kg, un tableau de poids corporel avec des conversions de valeurs courantes, un tableau de poids de salle de sport et un tableau inversé kg en livres.</p>",
+      "html": "<p class=\"text-mid mb-4\">La livre (lb) est l'unité de masse du système impérial, courante aux États-Unis et encore très utilisée au Royaume-Uni. En France et dans la majeure partie de l'Europe, on utilise le kilogramme au quotidien, donc les livres apparaissent principalement quand on utilise des produits, des applications ou des informations provenant de pays anglophones.</p><p class=\"text-mid mb-4\">Les situations les plus fréquentes : une application fitness américaine affiche l'objectif de poids en livres, la limite de bagage enregistré est de 50 lb, vous achetez des haltères sur Amazon US étiquetés en livres, ou un programme d'entraînement sur YouTube mentionne un développé couché à 135 lb.</p><p class=\"text-mid mb-4\">La formule est simple : une livre correspond exactement à 0,45359237 kg. Pour convertir des livres en kilogrammes, il suffit de multiplier par 0,4536. Le convertisseur effectue le calcul dès que vous saisissez une valeur.</p><p class=\"text-mid\">Sur cette page, vous trouverez un tableau lb en kg, un tableau de poids corporel avec des conversions de valeurs courantes et un tableau de poids de salle de sport.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Convertisseur gratuit livres en kilogrammes – Arteon"
     },

@@ -52,7 +52,6 @@
         "Převodní tabulka zahrnuje hodnoty od 0,5 do 90 palců",
         "Tabulka úhlopříček obrazovek zahrnuje nejpopulárnější velikosti televizorů a monitorů od 24 do 85 palců",
         "Tabulka výšky zobrazuje převod stop a palců na centimetry pro hodnoty od 4 ft 11 in do 6 ft 7 in",
-        "Obrácená tabulka ukazuje, kolik palců odpovídá hodnotě v centimetrech, pro rozsah 0,5 cm až 200 cm",
         "Všechny výpočty probíhají lokálně v prohlížeči, žádná data neopouštějí tvoje zařízení",
         "Přesný vzorec převodu je centimetry = palce × 2,54 a vychází z pevného vztahu mezi palcem a centimetrem",
         "Funguje na telefonu, tabletu i počítači bez instalace"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "Kdy je potřeba převádět palce na centimetry?",
-      "html": "<p class=\"text-mid mb-4\">Palec je délková jednotka imperiálního systému, používaná hlavně v USA a stále rozšířená ve Velké Británii. V Česku a v celé Evropě používáme metrický systém, takže palce se objevují zejména při kontaktu s produkty nebo informacemi z anglosaských zemí.</p><p class=\"text-mid mb-4\">Nejčastější situace: chceš vědět, kolik centimetrů má televizor 55 palců, porovnáváš svou výšku s americkou tabulkou velikostí oblečení, kupuješ boty v britském obchodě, kde je číslo uvedeno v palcích, nebo zjišťuješ rozměry nábytku v americkém katalogu.</p><p class=\"text-mid mb-4\">Vzorec je jednoduchý: jeden palec je přesně 2,54 cm. Pro převod palců na centimetry stačí hodnotu vynásobit 2,54. Převodník to udělá ihned po zadání hodnoty.</p><p class=\"text-mid\">Na této stránce najdeš převodní tabulku palce na cm, tabulku populárních úhlopříček obrazovek, tabulku výšky s převodem stop a palců na centimetry a obrácenou tabulku centimetry na palce.</p>",
+      "html": "<p class=\"text-mid mb-4\">Palec je délková jednotka imperiálního systému, používaná hlavně v USA a stále rozšířená ve Velké Británii. V Česku a v celé Evropě používáme metrický systém, takže palce se objevují zejména při kontaktu s produkty nebo informacemi z anglosaských zemí.</p><p class=\"text-mid mb-4\">Nejčastější situace: chceš vědět, kolik centimetrů má televizor 55 palců, porovnáváš svou výšku s americkou tabulkou velikostí oblečení, kupuješ boty v britském obchodě, kde je číslo uvedeno v palcích, nebo zjišťuješ rozměry nábytku v americkém katalogu.</p><p class=\"text-mid mb-4\">Vzorec je jednoduchý: jeden palec je přesně 2,54 cm. Pro převod palců na centimetry stačí hodnotu vynásobit 2,54. Převodník to udělá ihned po zadání hodnoty.</p><p class=\"text-mid\">Na této stránce najdeš převodní tabulku palce na cm, tabulku populárních úhlopříček obrazovek a tabulku výšky s převodem stop a palců na centimetry.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Bezplatný převodník palců na centimetry – Arteon"
     },

@@ -1,0 +1,293 @@
+{
+  "toolKey": "mmToInches",
+  "locale": "pl",
+  "metadata": {
+    "title": "Kalkulator mm na cale – przelicz milimetry na cale",
+    "description": "Przelicz milimetry na cale. Gotowe tabele pokazują też ułamki cala (1/8, 1/4, 3/8) używane przy wiertłach, śrubach i grubościach materiałów. Konwerter działa w obu kierunkach i liczy natychmiast.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-mm-na-cale"
+  },
+  "hero": {
+    "title": "Przelicz milimetry na cale",
+    "description": "Wpisz dowolną wartość w milimetrach i od razu odczytaj wynik w calach dziesiętnych. Tabela ułamków w dalszej części strony pokazuje też najbliższy ułamek calowy używany przy wiertłach czy śrubach. Konwerter przydaje się przy precyzyjnych pomiarach: grubości materiałów, rozmiarach elementów elektronicznych czy doborze narzędzi opisanych w calach.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-mm-na-cale",
+      "label": "mm na cale"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Przelicznik milimetrów na cale – konwerter mm na cale",
+      "alternateName": [
+        "Konwerter mm na cale",
+        "Kalkulator mm na cale",
+        "Przelicznik milimetrów na cale",
+        "Milimetry na cale",
+        "mm na cale",
+        "Przelicz mm na cale",
+        "Zamiana mm na cale",
+        "Przelicznik mm na cal",
+        "Konwerter milimetrów na cale",
+        "Kalkulator milimetrów na cale",
+        "mm na inch",
+        "mm na inches",
+        "Tabela mm na cale",
+        "Cale w ułamkach a milimetry",
+        "Ile cali ma milimetr"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicznik milimetrów na cale działający w przeglądarce bez rejestracji. Wpisz wartość w mm i natychmiast otrzymaj wynik w calach dziesiętnych. Przydatny przy doborze wierteł i śrub, sprawdzaniu grubości materiałów czy wymiarów elementów elektronicznych opisanych w calach.",
+      "featureList": [
+        "Konwersja działa w obie strony, więc przeliczysz zarówno milimetry na cale, jak i cale na milimetry",
+        "Wynik pojawia się natychmiast podczas wpisywania, bez potrzeby klikania jakiegokolwiek przycisku",
+        "Gotowy wynik można skopiować do schowka jednym kliknięciem",
+        "Tabela przeliczeniowa obejmuje wartości od 1 mm do 800 mm",
+        "Osobna tabela pokazuje najpopularniejsze ułamki cala (od 1/16 do 1 cala) razem z ich odpowiednikiem w milimetrach",
+        "Wszystkie obliczenia odbywają się lokalnie w przeglądarce, dane nie opuszczają urządzenia",
+        "Dokładny wzór konwersji to cale = milimetry ÷ 25,4 i wykorzystuje stałą zależność między calem a milimetrem",
+        "Narzędzie działa na telefonie, tablecie i komputerze bez instalacji"
+      ]
+    },
+    "howTo": {
+      "name": "Jak przeliczyć milimetry na cale?",
+      "description": "Krótka instrukcja użycia konwertera mm na cale.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość w milimetrach",
+          "text": "W lewym polu wpisz liczbę milimetrów, którą chcesz przeliczyć na cale."
+        },
+        {
+          "name": "Odczytaj wynik w calach",
+          "text": "Wynik w calach pojawi się od razu w polu obok. Możesz go skopiować do schowka jednym kliknięciem."
+        },
+        {
+          "name": "Odwróć kierunek w razie potrzeby",
+          "text": "Kliknij Zmień kolejność, aby przełączyć konwerter na przeliczanie cali na milimetry."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Po co przeliczać milimetry na cale?",
+      "html": "<p class=\"text-mid mb-4\">Milimetr to podstawowa jednostka precyzyjnych pomiarów w Polsce i całej Europie. Cal rządzi natomiast w krajach anglojęzycznych, przede wszystkim w Stanach Zjednoczonych, gdzie w calach opisuje się wiertła, śruby, klucze nasadowe czy grubość materiałów budowlanych. Problem pojawia się, gdy kupujesz amerykańskie narzędzie ze specyfikacją w calach albo próbujesz dobrać metryczne wiertło do rozmiaru podanego ułamkiem cala.</p><p class=\"text-mid mb-4\">Jeden cal to dokładnie 25,4 mm. Ta zależność jest stała i obowiązuje wszędzie, więc każde przeliczenie sprowadza się do jednego dzielenia. Konwerter robi to za Ciebie natychmiast po wpisaniu wartości.</p><p class=\"text-mid mb-4\">W dalszej części strony znajdziesz tabelę przeliczeniową mm na cale dla wartości od 1 do 800 mm oraz tabelę najpopularniejszych ułamków cala z ich odpowiednikiem w milimetrach.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Darmowy konwerter milimetrów na cale – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja mm na cale? Wzór i przykład",
+      "html": "<p class=\"text-mid mb-4\">Przeliczenie milimetrów na cale opiera się na stałej zależności: jeden cal to dokładnie 25,4 mm. Wystarczy więc liczbę milimetrów podzielić przez 25,4, aby otrzymać wynik w calach.</p><p class=\"text-mid mb-4\">Pełny wzór: <strong>cale = milimetry ÷ 25,4</strong>. W drugą stronę: <strong>milimetry = cale × 25,4</strong>.</p><p class=\"text-mid mb-4\">Przykład: chcesz sprawdzić, ile cali ma 14 mm. Podstawiasz: 14 ÷ 25,4 = 0,551 cala. To nie jest dokładnie 1/2 cala (12,7 mm) ani 3/4 cala (19,05 mm) – najbliższy popularny ułamek to 9/16 cala (14,29 mm), choć różnica wciąż wynosi około 0,29 mm.</p><p class=\"text-mid\">Inny przykład: standardowa grubość laminatu płytki drukowanej (PCB) to 1,6 mm, co po przeliczeniu daje 1,6 ÷ 25,4 = 0,063 cala – wartość bliska 1/16 cala (0,0625 cala). Konwerter wykonuje oba kierunki obliczeń natychmiast po wpisaniu wartości.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabela przeliczeniowa mm na cale",
+      "description": "Poniższa tabela zawiera przeliczenie popularnych wartości w milimetrach na cale dziesiętne. Wartości zaokrąglono do trzech miejsc po przecinku. Aby przeliczyć dokładną wartość lub rzadziej spotykane wymiary, skorzystaj z konwertera powyżej.",
+      "labelHeader": "Milimetry",
+      "cols": ["Cale"],
+      "rows": [
+        { "label": "1 mm", "values": ["0,039 in"] },
+        { "label": "2 mm", "values": ["0,079 in"] },
+        { "label": "3 mm", "values": ["0,118 in"] },
+        { "label": "4 mm", "values": ["0,157 in"] },
+        { "label": "5 mm", "values": ["0,197 in"], "emphasis": true },
+        { "label": "6 mm", "values": ["0,236 in"] },
+        { "label": "7 mm", "values": ["0,276 in"] },
+        { "label": "8 mm", "values": ["0,315 in"] },
+        { "label": "9 mm", "values": ["0,354 in"] },
+        { "label": "10 mm", "values": ["0,394 in"], "emphasis": true },
+        { "label": "12 mm", "values": ["0,472 in"] },
+        { "label": "14 mm", "values": ["0,551 in"] },
+        { "label": "15 mm", "values": ["0,591 in"] },
+        { "label": "16 mm", "values": ["0,630 in"] },
+        { "label": "18 mm", "values": ["0,709 in"] },
+        { "label": "20 mm", "values": ["0,787 in"], "emphasis": true },
+        { "label": "25 mm", "values": ["0,984 in"], "emphasis": true },
+        { "label": "30 mm", "values": ["1,181 in"] },
+        { "label": "35 mm", "values": ["1,378 in"] },
+        { "label": "40 mm", "values": ["1,575 in"] },
+        { "label": "50 mm", "values": ["1,969 in"], "emphasis": true },
+        { "label": "60 mm", "values": ["2,362 in"] },
+        { "label": "70 mm", "values": ["2,756 in"] },
+        { "label": "80 mm", "values": ["3,150 in"] },
+        { "label": "90 mm", "values": ["3,543 in"] },
+        { "label": "100 mm", "values": ["3,937 in"], "emphasis": true },
+        { "label": "120 mm", "values": ["4,724 in"] },
+        { "label": "150 mm", "values": ["5,906 in"], "emphasis": true },
+        { "label": "180 mm", "values": ["7,087 in"] },
+        { "label": "200 mm", "values": ["7,874 in"], "emphasis": true },
+        { "label": "210 mm", "values": ["8,268 in"] },
+        { "label": "250 mm", "values": ["9,843 in"] },
+        { "label": "256 mm", "values": ["10,079 in"] },
+        { "label": "297 mm", "values": ["11,693 in"] },
+        { "label": "300 mm", "values": ["11,811 in"], "emphasis": true },
+        { "label": "500 mm", "values": ["19,685 in"] },
+        { "label": "800 mm", "values": ["31,496 in"], "emphasis": true }
+      ],
+      "caption": "Chcesz przeliczyć w drugą stronę? Skorzystaj z naszego konwertera <a href=\"/narzedzia/konwerter-cali-na-mm\">cale na mm</a>, który zawiera pełną tabelę ułamków cala co 1/32."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Najpopularniejsze ułamki cala i ich odpowiednik w milimetrach",
+      "description": "Wiertła, śruby, klucze nasadowe i profile budowlane w krajach anglojęzycznych opisuje się ułamkami cala, nie wartościami dziesiętnymi. Poniższa tabela pokazuje najczęściej używane ułamki razem z wartością dziesiętną i milimetrową. Wartości w milimetrach zaokrąglono do dwóch miejsc po przecinku.",
+      "labelHeader": "Cal (ułamek)",
+      "cols": ["Cal (dziesiętnie)", "Milimetry"],
+      "rows": [
+        { "label": "1/16 in", "values": ["0,0625 in", "1,59 mm"] },
+        {
+          "label": "1/8 in",
+          "values": ["0,125 in", "3,18 mm"],
+          "emphasis": true
+        },
+        { "label": "5/32 in", "values": ["0,15625 in", "3,97 mm"] },
+        { "label": "3/16 in", "values": ["0,1875 in", "4,76 mm"] },
+        {
+          "label": "1/4 in",
+          "values": ["0,25 in", "6,35 mm"],
+          "emphasis": true
+        },
+        { "label": "5/16 in", "values": ["0,3125 in", "7,94 mm"] },
+        {
+          "label": "3/8 in",
+          "values": ["0,375 in", "9,53 mm"],
+          "emphasis": true
+        },
+        { "label": "7/16 in", "values": ["0,4375 in", "11,11 mm"] },
+        {
+          "label": "1/2 in",
+          "values": ["0,5 in", "12,70 mm"],
+          "emphasis": true
+        },
+        { "label": "9/16 in", "values": ["0,5625 in", "14,29 mm"] },
+        { "label": "5/8 in", "values": ["0,625 in", "15,88 mm"] },
+        { "label": "11/16 in", "values": ["0,6875 in", "17,46 mm"] },
+        {
+          "label": "3/4 in",
+          "values": ["0,75 in", "19,05 mm"],
+          "emphasis": true
+        },
+        { "label": "13/16 in", "values": ["0,8125 in", "20,64 mm"] },
+        { "label": "7/8 in", "values": ["0,875 in", "22,23 mm"] },
+        { "label": "1 in", "values": ["1 in", "25,40 mm"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy najczęściej przelicza się milimetry na cale?",
+      "description": "Przeliczenie mm na cale pojawia się przede wszystkim tam, gdzie potrzebna jest duża precyzja pomiaru. Każda z poniższych sytuacji ma własną specyfikę.",
+      "items": [
+        {
+          "title": "Wiertła i narzędzia",
+          "description": "Amerykańskie zestawy wierteł i kluczy nasadowych opisane są ułamkami cala (np. 1/8, 5/32, 1/4), a nie milimetrami. Jeśli masz metryczny zestaw wierteł i trafiasz na instrukcję z rozmiarem calowym, przeliczenie pozwala dobrać najbliższy odpowiednik. Wiertło 1/4 cala to 6,35 mm, a 3/8 cala to 9,53 mm."
+        },
+        {
+          "title": "Śruby i elementy złączne",
+          "description": "Śruby, wkręty i nakrętki w systemie calowym (np. UNC, UNF) mają rozmiary opisane ułamkami cala. Podczas naprawy sprzętu importowanego z USA albo montażu mebli z instrukcją w calach sprawdź dokładny odpowiednik w milimetrach, żeby dobrać właściwe narzędzie."
+        },
+        {
+          "title": "Elektronika i płytki drukowane",
+          "description": "Standardowy rozstaw pinów w elektronice (raster płytki stykowej, złączy goldpin) wynosi 0,1 cala, czyli 2,54 mm. Typowa grubość laminatu płytki drukowanej (PCB) to 1,6 mm, co odpowiada w przybliżeniu 1/16 cala. Znajomość tych wartości ułatwia projektowanie obudów i modułów elektronicznych."
+        },
+        {
+          "title": "Grubość materiałów i blach",
+          "description": "Katalogi materiałów budowlanych, blach czy pleksi ze sklepów amerykańskich podają grubość w calach lub ułamkach cala. Blacha o grubości 1/8 cala to 3,18 mm, a płyta 1/4 cala to 6,35 mm – sprawdź to przed zamówieniem, żeby materiał pasował do projektu."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o przeliczanie mm na cale",
+      "items": [
+        {
+          "question": "Ile cali ma 100 mm?",
+          "answer": "100 mm to 3,937 cala. Obliczenie: 100 ÷ 25,4 = 3,937 in. Zaokrąglając, to niecałe 4 cale."
+        },
+        {
+          "question": "Ile cali ma 25 mm?",
+          "answer": "25 mm to 0,984 cala. Obliczenie: 25 ÷ 25,4 = 0,984 in. To wartość bliska, ale nie równa 1 calowi – dokładnie 1 cal to 25,4 mm, więc różnica wynosi 0,4 mm."
+        },
+        {
+          "question": "Ile cali ma 10 mm?",
+          "answer": "10 mm to 0,394 cala. Obliczenie: 10 ÷ 25,4 = 0,394 in. To nie jest 1/4 cala (0,25 in = 6,35 mm) – 10 mm odpowiada w przybliżeniu 25/64 cala."
+        },
+        {
+          "question": "Ile cali mają 1, 2, 3, 20 i 30 mm?",
+          "answer": "1 mm = 0,039 in, 2 mm = 0,079 in, 3 mm = 0,118 in, 20 mm = 0,787 in, a 30 mm = 1,181 in. Każdą z tych wartości otrzymujesz, dzieląc liczbę milimetrów przez 25,4."
+        },
+        {
+          "question": "Ile cali ma 150 mm?",
+          "answer": "150 mm to 5,906 cala. Obliczenie: 150 ÷ 25,4 = 5,906 in. To wartość bliska 6 calom, z różnicą około 2,4 mm."
+        },
+        {
+          "question": "Ile cali mają 6, 15, 40, 50 i 180 mm?",
+          "answer": "6 mm = 0,236 in, 15 mm = 0,591 in, 40 mm = 1,575 in, 50 mm = 1,969 in, a 180 mm = 7,087 in. Wszystkie wartości powstają w ten sam sposób: dzielisz milimetry przez 25,4."
+        },
+        {
+          "question": "Ile cali ma 5 mm?",
+          "answer": "5 mm to 0,197 cala. Obliczenie: 5 ÷ 25,4 = 0,197 in. To wartość bliska 3/16 cala (0,1875 in = 4,76 mm)."
+        },
+        {
+          "question": "Jak przeliczyć mm na cale w postaci ułamkowej?",
+          "answer": "Najpierw przelicz milimetry na cale dziesiętne (mm ÷ 25,4), a następnie znajdź najbliższy popularny ułamek w tabeli powyżej. Na przykład 9 mm = 0,354 in, co jest bliskie 23/64 cala, choć w praktyce zaokrągla się do najbliższego dostępnego rozmiaru wiertła lub klucza, najczęściej co 1/32 lub 1/16 cala."
+        },
+        {
+          "question": "Czy 14 mm to 1 cal?",
+          "answer": "Nie. 14 mm to 0,551 cala, czyli mniej więcej połowa cala. Dokładnie 1 cal to 25,4 mm – 14 mm jest niemal dwa razy mniejsze."
+        },
+        {
+          "question": "Ile milimetrów ma dokładnie 1 cal?",
+          "answer": "1 cal to dokładnie 25,4 mm. Jest to zdefiniowana wartość stała, obowiązująca od 1959 roku jako tzw. cal międzynarodowy, przyjęta przez USA, Wielką Brytanię, Kanadę, Australię i inne kraje anglosaskie."
+        },
+        {
+          "question": "Jaki jest wzór na przeliczenie mm na cale?",
+          "answer": "Wzór to: cale = milimetry ÷ 25,4. Na przykład 50 mm ÷ 25,4 = 1,969 cala. W drugą stronę: milimetry = cale × 25,4."
+        },
+        {
+          "question": "Czy 12 mm to 1/2 cala?",
+          "answer": "Nie dokładnie. 1/2 cala to 12,7 mm, a 12 mm to 0,472 cala. Różnica wynosi 0,7 mm, co przy doborze wiertła lub śruby może mieć znaczenie."
+        },
+        {
+          "question": "Czy 2 mm to to samo co 1/16 cala?",
+          "answer": "Nie. 1/16 cala to 1,5875 mm, a 2 mm to 0,079 cala (niemal 5/64 cala). Wartości są zbliżone, ale nie identyczne – różnica wynosi około 0,41 mm."
+        },
+        {
+          "question": "Czy 32 mm to 1 cal?",
+          "answer": "Nie. 1 cal to dokładnie 25,4 mm, a 32 mm to 1,26 cala. To o ponad 20% więcej niż 1 cal."
+        },
+        {
+          "question": "Jak przeliczyć mm na cale bez kalkulatora?",
+          "answer": "Szybkie przybliżenie: milimetry podziel przez 25 zamiast przez 25,4. Błąd jest minimalny (ok. 1,6%), co w praktyce wystarczy do orientacyjnego porównania. Na przykład 100 mm ÷ 25 = 4 cale (dokładna wartość to 3,937). Do precyzyjnych przeliczeń zawsze używaj konwertera."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Masz pytanie lub sugestię?",
+      "description": "Jeśli zauważyłeś błąd w tabelach lub masz pomysł na ulepszenie konwertera, napisz do nas. Odpowiadamy na każdą wiadomość.",
+      "imageAlt": "Kontakt z Arteon Agency",
+      "subject": "Konwerter mm na cale"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Inne przydatne konwertery jednostek"
+    }
+  ]
+}

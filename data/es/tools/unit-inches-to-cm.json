@@ -52,7 +52,6 @@
         "La tabla de conversión cubre valores de 0,5 a 90 pulgadas",
         "La tabla de diagonales de pantalla incluye los tamaños más populares de televisores y monitores de 24 a 85 pulgadas",
         "La tabla de estatura muestra la conversión de pies y pulgadas a centímetros para valores de 4 ft 11 in a 6 ft 7 in",
-        "La tabla inversa muestra cuántas pulgadas corresponden a un valor en centímetros, de 0,5 cm a 200 cm",
         "Todos los cálculos se realizan localmente en el navegador, ningún dato sale de tu dispositivo",
         "La fórmula exacta es centímetros = pulgadas × 2,54, basada en la relación fija entre la pulgada y el centímetro",
         "Funciona en móvil, tableta y ordenador sin instalación"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Cuándo se necesita convertir pulgadas a centímetros?",
-      "html": "<p class=\"text-mid mb-4\">La pulgada es la unidad de longitud del sistema imperial, utilizada principalmente en Estados Unidos y aún habitual en el Reino Unido. En España y en toda América Latina se usa el sistema métrico, por lo que las pulgadas aparecen sobre todo cuando se trata de productos o información provenientes de países anglófonos.</p><p class=\"text-mid mb-4\">Las situaciones más frecuentes: quieres saber cuántos centímetros tiene un televisor de 55 pulgadas, comparas tu estatura con una tabla de tallas estadounidense, compras zapatos en una tienda británica donde el número se expresa en pulgadas o consultas las medidas de un mueble en un catálogo americano.</p><p class=\"text-mid mb-4\">La fórmula es sencilla: una pulgada equivale exactamente a 2,54 cm. Para convertir pulgadas a centímetros, basta con multiplicar por 2,54. El convertidor lo hace en cuanto introduces un valor.</p><p class=\"text-mid\">En esta página encontrarás una tabla de conversión de pulgadas a cm, una tabla de diagonales de pantalla populares, una tabla de estatura con la conversión de pies y pulgadas a centímetros, y una tabla inversa de centímetros a pulgadas.</p>",
+      "html": "<p class=\"text-mid mb-4\">La pulgada es la unidad de longitud del sistema imperial, utilizada principalmente en Estados Unidos y aún habitual en el Reino Unido. En España y en toda América Latina se usa el sistema métrico, por lo que las pulgadas aparecen sobre todo cuando se trata de productos o información provenientes de países anglófonos.</p><p class=\"text-mid mb-4\">Las situaciones más frecuentes: quieres saber cuántos centímetros tiene un televisor de 55 pulgadas, comparas tu estatura con una tabla de tallas estadounidense, compras zapatos en una tienda británica donde el número se expresa en pulgadas o consultas las medidas de un mueble en un catálogo americano.</p><p class=\"text-mid mb-4\">La fórmula es sencilla: una pulgada equivale exactamente a 2,54 cm. Para convertir pulgadas a centímetros, basta con multiplicar por 2,54. El convertidor lo hace en cuanto introduces un valor.</p><p class=\"text-mid\">En esta página encontrarás una tabla de conversión de pulgadas a cm, una tabla de diagonales de pantalla populares y una tabla de estatura con la conversión de pies y pulgadas a centímetros.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Convertidor gratuito de pulgadas a centímetros – Arteon"
     },

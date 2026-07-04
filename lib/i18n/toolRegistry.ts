@@ -298,7 +298,7 @@ const NAV_IMAGE_CONVERTER_KEYS: ToolItemKey[] = [
   'base64ToImage',
 ];
 
-/** All 15 unit converters for desktop nav */
+/** All 17 unit converters for desktop nav */
 const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'ptToPx',
   'remToPx',
@@ -310,6 +310,8 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'inchesToPxDpi',
   'cmToInches',
   'inchesToCm',
+  'mmToInches',
+  'inchesToMm',
   'kgToLb',
   'lbToKg',
   'hexToRgb',
@@ -321,7 +323,7 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'mbpsToMBs',
 ];
 
-/** Desktop nav tool sections: limits konwertery to 48 and jednostki to 17 */
+/** Desktop nav tool sections: limits konwertery to 48 and jednostki to 21 */
 export function getDesktopToolsSections(locale: Locale): ToolsSection[] {
   return TOOL_SECTIONS.filter(section => section.locales[locale]).map(
     section => {

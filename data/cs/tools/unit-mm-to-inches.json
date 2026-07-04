@@ -1,0 +1,293 @@
+{
+  "toolKey": "mmToInches",
+  "locale": "cs",
+  "metadata": {
+    "title": "Kalkulačka mm na palce – převod milimetrů na palce",
+    "description": "Převeď milimetry na palce. Přiložené tabulky ukazují i palcové zlomky (1/8, 1/4, 3/8) používané u vrtáků, šroubů a tlouštěk materiálů. Převodník funguje oběma směry a počítá okamžitě.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-mm-na-palce"
+  },
+  "hero": {
+    "title": "Převeď milimetry na palce",
+    "description": "Zadej libovolnou hodnotu v milimetrech a hned si přečti výsledek v desetinných palcích. Tabulka zlomků níže na stránce ukazuje i nejbližší palcový zlomek, jaký se používá u vrtáků nebo šroubů. Převodník se hodí při přesných měřeních: tloušťky materiálů, rozměry elektronických součástek nebo výběr nářadí popsaného v palcích.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-mm-na-palce",
+      "label": "mm na palce"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník milimetrů na palce – kalkulačka mm na palce",
+      "alternateName": [
+        "Převodník mm na palce",
+        "Kalkulačka mm na palce",
+        "Převodník milimetrů na palce",
+        "Milimetry na palce",
+        "mm na palce",
+        "Převod mm na palce",
+        "Převeď mm na palce",
+        "mm na inch",
+        "Převodník milimetr na palec",
+        "Kalkulačka milimetrů na palce",
+        "mm na inches",
+        "mm na in",
+        "Tabulka mm na palce",
+        "Palcové zlomky v milimetrech",
+        "Kolik palců je milimetr"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převodník milimetrů na palce fungující v prohlížeči bez registrace. Zadej hodnotu v mm a okamžitě dostaneš výsledek v desetinných palcích. Hodí se při výběru vrtáků a šroubů, kontrole tlouštěk materiálů nebo čtení rozměrů elektronických součástek udávaných v palcích.",
+      "featureList": [
+        "Převod funguje oběma směry: lze převádět jak milimetry na palce, tak palce na milimetry",
+        "Výsledek se zobrazuje okamžitě při psaní bez nutnosti klikat na jakékoli tlačítko",
+        "Výsledek lze zkopírovat do schránky jedním kliknutím",
+        "Převodní tabulka zahrnuje hodnoty od 1 mm do 800 mm",
+        "Samostatná tabulka ukazuje nejběžnější palcové zlomky (od 1/16 do 1 palce) spolu s jejich ekvivalentem v milimetrech",
+        "Všechny výpočty probíhají lokálně v prohlížeči, žádná data neopouštějí tvoje zařízení",
+        "Přesný vzorec převodu je palce = milimetry ÷ 25,4 a vychází z pevného vztahu mezi palcem a milimetrem",
+        "Funguje na telefonu, tabletu i počítači bez instalace"
+      ]
+    },
+    "howTo": {
+      "name": "Jak převést milimetry na palce?",
+      "description": "Krátký návod k použití převodníku mm na palce.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadej hodnotu v milimetrech",
+          "text": "Do levého pole zadej počet milimetrů, které chceš převést na palce."
+        },
+        {
+          "name": "Přečti výsledek v palcích",
+          "text": "Výsledek v palcích se okamžitě zobrazí v sousedním poli. Jedním kliknutím ho zkopíruješ do schránky."
+        },
+        {
+          "name": "V případě potřeby obrať směr",
+          "text": "Klikni na Změnit pořadí a přepni převodník do režimu palce na milimetry."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "K čemu převádět milimetry na palce?",
+      "html": "<p class=\"text-mid mb-4\">Milimetr je základní jednotkou přesných měření v Česku a celé Evropě. Palec naopak vládne v anglosaských zemích, především v USA, kde se v palcích udávají vrtáky, šrouby, nástrčné klíče i tloušťky stavebních materiálů. Problém nastává, když si koupíš americké nářadí se specifikací v palcích nebo se snažíš vybrat metrický vrták pro rozměr udaný palcovým zlomkem.</p><p class=\"text-mid mb-4\">Jeden palec je přesně 25,4 mm. Tento vztah je konstantní a platí všude, takže každý převod se redukuje na jediné dělení. Převodník ho za tebe udělá hned po zadání hodnoty.</p><p class=\"text-mid mb-4\">Níže na stránce najdeš převodní tabulku mm na palce pro hodnoty od 1 do 800 mm a tabulku nejběžnějších palcových zlomků s jejich ekvivalentem v milimetrech.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Bezplatný převodník milimetrů na palce – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod mm na palce? Vzorec a příklad",
+      "html": "<p class=\"text-mid mb-4\">Převod milimetrů na palce vychází z pevného vztahu: jeden palec je přesně 25,4 mm. Stačí tedy počet milimetrů vydělit 25,4 a dostaneš výsledek v palcích.</p><p class=\"text-mid mb-4\">Úplný vzorec: <strong>palce = milimetry ÷ 25,4</strong>. Opačným směrem: <strong>milimetry = palce × 25,4</strong>.</p><p class=\"text-mid mb-4\">Příklad: chceš zjistit, kolik palců je 14 mm. Dosadíš: 14 ÷ 25,4 = 0,551 palce. Není to přesně 1/2 palce (12,7 mm) ani 3/4 palce (19,05 mm) – nejbližší běžný zlomek je 9/16 palce (14,29 mm), i když rozdíl stále činí asi 0,29 mm.</p><p class=\"text-mid\">Další příklad: standardní tloušťka laminátu desky plošných spojů (PCB) je 1,6 mm, což po převodu dává 1,6 ÷ 25,4 = 0,063 palce – hodnotu blízkou 1/16 palce (0,0625 palce). Převodník zvládá oba směry výpočtu hned po zadání hodnoty.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Převodní tabulka mm na palce",
+      "description": "Následující tabulka převádí běžné hodnoty v milimetrech na desetinné palce. Hodnoty jsou zaokrouhleny na tři desetinná místa. Pro převod přesné hodnoty nebo méně obvyklých rozměrů použij převodník výše.",
+      "labelHeader": "Milimetry",
+      "cols": ["Palce"],
+      "rows": [
+        { "label": "1 mm", "values": ["0,039 in"] },
+        { "label": "2 mm", "values": ["0,079 in"] },
+        { "label": "3 mm", "values": ["0,118 in"] },
+        { "label": "4 mm", "values": ["0,157 in"] },
+        { "label": "5 mm", "values": ["0,197 in"], "emphasis": true },
+        { "label": "6 mm", "values": ["0,236 in"] },
+        { "label": "7 mm", "values": ["0,276 in"] },
+        { "label": "8 mm", "values": ["0,315 in"] },
+        { "label": "9 mm", "values": ["0,354 in"] },
+        { "label": "10 mm", "values": ["0,394 in"], "emphasis": true },
+        { "label": "12 mm", "values": ["0,472 in"] },
+        { "label": "14 mm", "values": ["0,551 in"] },
+        { "label": "15 mm", "values": ["0,591 in"] },
+        { "label": "16 mm", "values": ["0,630 in"] },
+        { "label": "18 mm", "values": ["0,709 in"] },
+        { "label": "20 mm", "values": ["0,787 in"], "emphasis": true },
+        { "label": "25 mm", "values": ["0,984 in"], "emphasis": true },
+        { "label": "30 mm", "values": ["1,181 in"] },
+        { "label": "35 mm", "values": ["1,378 in"] },
+        { "label": "40 mm", "values": ["1,575 in"] },
+        { "label": "50 mm", "values": ["1,969 in"], "emphasis": true },
+        { "label": "60 mm", "values": ["2,362 in"] },
+        { "label": "70 mm", "values": ["2,756 in"] },
+        { "label": "80 mm", "values": ["3,150 in"] },
+        { "label": "90 mm", "values": ["3,543 in"] },
+        { "label": "100 mm", "values": ["3,937 in"], "emphasis": true },
+        { "label": "120 mm", "values": ["4,724 in"] },
+        { "label": "150 mm", "values": ["5,906 in"], "emphasis": true },
+        { "label": "180 mm", "values": ["7,087 in"] },
+        { "label": "200 mm", "values": ["7,874 in"], "emphasis": true },
+        { "label": "210 mm", "values": ["8,268 in"] },
+        { "label": "250 mm", "values": ["9,843 in"] },
+        { "label": "256 mm", "values": ["10,079 in"] },
+        { "label": "297 mm", "values": ["11,693 in"] },
+        { "label": "300 mm", "values": ["11,811 in"], "emphasis": true },
+        { "label": "500 mm", "values": ["19,685 in"] },
+        { "label": "800 mm", "values": ["31,496 in"], "emphasis": true }
+      ],
+      "caption": "Chceš převádět opačným směrem? Použij náš převodník <a href=\"/cs/nastroje/prevodnik-palcu-na-mm\">palce na mm</a>, který obsahuje úplnou tabulku palcových zlomků po krocích 1/32."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Nejběžnější palcové zlomky a jejich ekvivalent v milimetrech",
+      "description": "Vrtáky, šrouby, nástrčné klíče a stavební profily se v anglosaských zemích označují palcovými zlomky, ne desetinnými hodnotami. Následující tabulka ukazuje nejčastěji používané zlomky spolu s desetinnou a milimetrovou hodnotou. Hodnoty v milimetrech jsou zaokrouhleny na dvě desetinná místa.",
+      "labelHeader": "Palec (zlomek)",
+      "cols": ["Palec (desetinně)", "Milimetry"],
+      "rows": [
+        { "label": "1/16 in", "values": ["0,0625 in", "1,59 mm"] },
+        {
+          "label": "1/8 in",
+          "values": ["0,125 in", "3,18 mm"],
+          "emphasis": true
+        },
+        { "label": "5/32 in", "values": ["0,15625 in", "3,97 mm"] },
+        { "label": "3/16 in", "values": ["0,1875 in", "4,76 mm"] },
+        {
+          "label": "1/4 in",
+          "values": ["0,25 in", "6,35 mm"],
+          "emphasis": true
+        },
+        { "label": "5/16 in", "values": ["0,3125 in", "7,94 mm"] },
+        {
+          "label": "3/8 in",
+          "values": ["0,375 in", "9,53 mm"],
+          "emphasis": true
+        },
+        { "label": "7/16 in", "values": ["0,4375 in", "11,11 mm"] },
+        {
+          "label": "1/2 in",
+          "values": ["0,5 in", "12,70 mm"],
+          "emphasis": true
+        },
+        { "label": "9/16 in", "values": ["0,5625 in", "14,29 mm"] },
+        { "label": "5/8 in", "values": ["0,625 in", "15,88 mm"] },
+        { "label": "11/16 in", "values": ["0,6875 in", "17,46 mm"] },
+        {
+          "label": "3/4 in",
+          "values": ["0,75 in", "19,05 mm"],
+          "emphasis": true
+        },
+        { "label": "13/16 in", "values": ["0,8125 in", "20,64 mm"] },
+        { "label": "7/8 in", "values": ["0,875 in", "22,23 mm"] },
+        { "label": "1 in", "values": ["1 in", "25,40 mm"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy se milimetry na palce převádějí nejčastěji?",
+      "description": "Převod mm na palce se objevuje především tam, kde záleží na přesnosti měření. Každá z následujících situací má svá specifika.",
+      "items": [
+        {
+          "title": "Vrtáky a nářadí",
+          "description": "Americké sady vrtáků a nástrčných klíčů jsou označeny palcovými zlomky (např. 1/8, 5/32, 1/4), ne milimetry. Pokud máš metrickou sadu vrtáků a narazíš na návod s palcovými rozměry, převod ti umožní vybrat nejbližší ekvivalent. Vrták 1/4 palce měří 6,35 mm a vrták 3/8 palce 9,53 mm."
+        },
+        {
+          "title": "Šrouby a spojovací materiál",
+          "description": "Šrouby, vruty a matice v palcovém systému (např. UNC, UNF) mají rozměry udané palcovými zlomky. Při opravě zařízení dovezeného z USA nebo montáži nábytku s palcovým návodem si ověř přesný ekvivalent v milimetrech, abys vybral správné nářadí."
+        },
+        {
+          "title": "Elektronika a desky plošných spojů",
+          "description": "Standardní rozteč pinů v elektronice (rastr nepájivého pole a pinových lišt) je 0,1 palce, tedy 2,54 mm. Typická tloušťka laminátu desky plošných spojů (PCB) je 1,6 mm, což odpovídá přibližně 1/16 palce. Znalost těchto hodnot usnadňuje navrhování krabiček a elektronických modulů."
+        },
+        {
+          "title": "Tloušťky materiálů a plechů",
+          "description": "Katalogy stavebních materiálů, plechů nebo plexiskla z amerických obchodů udávají tloušťku v palcích nebo palcových zlomcích. Plech o tloušťce 1/8 palce měří 3,18 mm a deska 1/4 palce 6,35 mm – ověř si to před objednávkou, aby materiál seděl do tvého projektu."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Nejčastější otázky k převodu mm na palce",
+      "items": [
+        {
+          "question": "Kolik palců je 100 mm?",
+          "answer": "100 mm je 3,937 palce. Výpočet: 100 ÷ 25,4 = 3,937 in. Zaokrouhleně jsou to necelé 4 palce."
+        },
+        {
+          "question": "Kolik palců je 25 mm?",
+          "answer": "25 mm je 0,984 palce. Výpočet: 25 ÷ 25,4 = 0,984 in. Je to hodnota blízká 1 palci, ale ne stejná – přesně 1 palec je 25,4 mm, takže rozdíl činí 0,4 mm."
+        },
+        {
+          "question": "Kolik palců je 10 mm?",
+          "answer": "10 mm je 0,394 palce. Výpočet: 10 ÷ 25,4 = 0,394 in. Není to 1/4 palce (0,25 in = 6,35 mm) – 10 mm odpovídá přibližně 25/64 palce."
+        },
+        {
+          "question": "Kolik palců je 1, 2, 3, 20 a 30 mm?",
+          "answer": "1 mm = 0,039 in, 2 mm = 0,079 in, 3 mm = 0,118 in, 20 mm = 0,787 in a 30 mm = 1,181 in. Každou z těchto hodnot získáš vydělením počtu milimetrů číslem 25,4."
+        },
+        {
+          "question": "Kolik palců je 150 mm?",
+          "answer": "150 mm je 5,906 palce. Výpočet: 150 ÷ 25,4 = 5,906 in. Je to hodnota blízká 6 palcům, s rozdílem asi 2,4 mm."
+        },
+        {
+          "question": "Kolik palců je 6, 15, 40, 50 a 180 mm?",
+          "answer": "6 mm = 0,236 in, 15 mm = 0,591 in, 40 mm = 1,575 in, 50 mm = 1,969 in a 180 mm = 7,087 in. Všechny hodnoty vznikají stejně: vydělíš milimetry číslem 25,4."
+        },
+        {
+          "question": "Kolik palců je 5 mm?",
+          "answer": "5 mm je 0,197 palce. Výpočet: 5 ÷ 25,4 = 0,197 in. Je to hodnota blízká 3/16 palce (0,1875 in = 4,76 mm)."
+        },
+        {
+          "question": "Jak převést mm na palce ve formě zlomku?",
+          "answer": "Nejprve převeď milimetry na desetinné palce (mm ÷ 25,4) a pak najdi nejbližší běžný zlomek v tabulce výše. Například 9 mm = 0,354 in, což je blízko 23/64 palce, i když v praxi se zaokrouhluje na nejbližší dostupnou velikost vrtáku nebo klíče, nejčastěji po krocích 1/32 nebo 1/16 palce."
+        },
+        {
+          "question": "Je 14 mm 1 palec?",
+          "answer": "Ne. 14 mm je 0,551 palce, tedy zhruba půl palce. Přesně 1 palec je 25,4 mm – 14 mm je téměř polovina."
+        },
+        {
+          "question": "Kolik milimetrů má přesně 1 palec?",
+          "answer": "1 palec je přesně 25,4 mm. Je to definovaná konstantní hodnota, platná od roku 1959 jako tzv. mezinárodní palec, přijatá USA, Velkou Británií, Kanadou, Austrálií a dalšími anglosaskými zeměmi."
+        },
+        {
+          "question": "Jaký je vzorec pro převod mm na palce?",
+          "answer": "Vzorec zní: palce = milimetry ÷ 25,4. Například 50 mm ÷ 25,4 = 1,969 palce. Opačným směrem: milimetry = palce × 25,4."
+        },
+        {
+          "question": "Je 12 mm 1/2 palce?",
+          "answer": "Ne přesně. 1/2 palce je 12,7 mm, zatímco 12 mm je 0,472 palce. Rozdíl činí 0,7 mm, což může hrát roli při výběru vrtáku nebo šroubu."
+        },
+        {
+          "question": "Jsou 2 mm totéž co 1/16 palce?",
+          "answer": "Ne. 1/16 palce je 1,5875 mm, zatímco 2 mm jsou 0,079 palce (téměř 5/64 palce). Hodnoty jsou si podobné, ale nejsou totožné – rozdíl činí asi 0,41 mm."
+        },
+        {
+          "question": "Je 32 mm 1 palec?",
+          "answer": "Ne. 1 palec je přesně 25,4 mm, zatímco 32 mm je 1,26 palce. To je o více než 20 % víc než 1 palec."
+        },
+        {
+          "question": "Jak převést mm na palce bez kalkulačky?",
+          "answer": "Rychlé přiblížení: milimetry vyděl 25 místo 25,4. Chyba je minimální (asi 1,6 %), což v praxi stačí pro orientační srovnání. Například 100 mm ÷ 25 = 4 palce (přesná hodnota je 3,937). Pro přesné převody vždy používej převodník."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Máš otázku nebo návrh?",
+      "description": "Pokud najdeš chybu v tabulkách nebo máš nápad na vylepšení převodníku, napiš nám. Odpovídáme na každou zprávu.",
+      "imageAlt": "Kontakt s Arteon Agency",
+      "subject": "Převodník mm na palce"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Další užitečné převodníky jednotek"
+    }
+  ]
+}

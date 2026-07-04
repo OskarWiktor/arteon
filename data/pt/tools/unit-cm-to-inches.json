@@ -52,7 +52,6 @@
         "A tabela de conversão abrange valores de 0,5 cm a 200 cm",
         "A tabela de altura apresenta os valores mais comuns de 150 cm a 200 cm com conversão para pés e polegadas",
         "A tabela de diagonais de ecrã inclui os tamanhos mais populares de televisões e monitores, de 24 a 85 polegadas",
-        "A tabela inversa mostra quantos centímetros correspondem a um valor em polegadas, de 0,5 a 72 polegadas",
         "Todos os cálculos são efetuados localmente no browser, nenhum dado sai do seu dispositivo",
         "A fórmula exata é polegadas = centímetros ÷ 2,54, baseada na relação fixa entre a polegada e o centímetro",
         "Funciona em telemóvel, tablet e computador sem instalação"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "Porquê converter centímetros em polegadas?",
-      "html": "<p class=\"text-mid mb-4\">O centímetro é a unidade de comprimento do quotidiano em Portugal e em todo o mundo lusófono. A polegada, por sua vez, domina nos Estados Unidos e ainda é amplamente utilizada no Reino Unido. A necessidade de converter surge quando compra uma televisão cuja diagonal é expressa em polegadas, verifica as medidas permitidas da bagagem no sítio de uma companhia aérea americana ou compara a sua altura com uma tabela de tamanhos de uma loja britânica.</p><p class=\"text-mid mb-4\">Uma polegada equivale exatamente a 2,54 cm. Esta relação é fixa e universal, pelo que qualquer conversão se resume a uma única divisão. O conversor faz isso por si assim que introduz um valor.</p><p class=\"text-mid mb-4\">Mais abaixo encontrará uma tabela de conversão cm para polegadas para valores de 0,5 a 200 cm, uma tabela de altura com o equivalente em pés e polegadas, uma tabela de diagonais de ecrã populares e uma tabela inversa de polegadas para centímetros.</p>",
+      "html": "<p class=\"text-mid mb-4\">O centímetro é a unidade de comprimento do quotidiano em Portugal e em todo o mundo lusófono. A polegada, por sua vez, domina nos Estados Unidos e ainda é amplamente utilizada no Reino Unido. A necessidade de converter surge quando compra uma televisão cuja diagonal é expressa em polegadas, verifica as medidas permitidas da bagagem no sítio de uma companhia aérea americana ou compara a sua altura com uma tabela de tamanhos de uma loja britânica.</p><p class=\"text-mid mb-4\">Uma polegada equivale exatamente a 2,54 cm. Esta relação é fixa e universal, pelo que qualquer conversão se resume a uma única divisão. O conversor faz isso por si assim que introduz um valor.</p><p class=\"text-mid mb-4\">Mais abaixo encontrará uma tabela de conversão cm para polegadas para valores de 0,5 a 200 cm, uma tabela de altura com o equivalente em pés e polegadas e uma tabela de diagonais de ecrã populares.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversor gratuito de centímetros para polegadas – Arteon"
     },
@@ -110,49 +109,188 @@
       "labelHeader": "Centímetros",
       "cols": ["Polegadas"],
       "rows": [
-        { "label": "0,5 cm", "values": ["0,20 in"] },
-        { "label": "1 cm", "values": ["0,39 in"], "emphasis": true },
-        { "label": "1,5 cm", "values": ["0,59 in"] },
-        { "label": "2 cm", "values": ["0,79 in"] },
-        { "label": "2,5 cm", "values": ["0,98 in"] },
-        { "label": "3 cm", "values": ["1,18 in"] },
-        { "label": "4 cm", "values": ["1,57 in"] },
-        { "label": "5 cm", "values": ["1,97 in"], "emphasis": true },
-        { "label": "6 cm", "values": ["2,36 in"] },
-        { "label": "7 cm", "values": ["2,76 in"] },
-        { "label": "8 cm", "values": ["3,15 in"] },
-        { "label": "9 cm", "values": ["3,54 in"] },
-        { "label": "10 cm", "values": ["3,94 in"], "emphasis": true },
-        { "label": "12 cm", "values": ["4,72 in"] },
-        { "label": "13 cm", "values": ["5,12 in"] },
-        { "label": "14 cm", "values": ["5,51 in"] },
-        { "label": "15 cm", "values": ["5,91 in"], "emphasis": true },
-        { "label": "16 cm", "values": ["6,30 in"] },
-        { "label": "17 cm", "values": ["6,69 in"] },
-        { "label": "18 cm", "values": ["7,09 in"] },
-        { "label": "20 cm", "values": ["7,87 in"], "emphasis": true },
-        { "label": "21 cm", "values": ["8,27 in"] },
-        { "label": "22 cm", "values": ["8,66 in"] },
-        { "label": "23 cm", "values": ["9,06 in"] },
-        { "label": "24 cm", "values": ["9,45 in"] },
-        { "label": "25 cm", "values": ["9,84 in"] },
-        { "label": "30 cm", "values": ["11,81 in"] },
-        { "label": "35 cm", "values": ["13,78 in"] },
-        { "label": "40 cm", "values": ["15,75 in"] },
-        { "label": "45 cm", "values": ["17,72 in"] },
-        { "label": "50 cm", "values": ["19,69 in"], "emphasis": true },
-        { "label": "60 cm", "values": ["23,62 in"] },
-        { "label": "70 cm", "values": ["27,56 in"] },
-        { "label": "80 cm", "values": ["31,50 in"] },
-        { "label": "90 cm", "values": ["35,43 in"] },
-        { "label": "100 cm", "values": ["39,37 in"], "emphasis": true },
-        { "label": "120 cm", "values": ["47,24 in"] },
-        { "label": "150 cm", "values": ["59,06 in"], "emphasis": true },
-        { "label": "160 cm", "values": ["62,99 in"] },
-        { "label": "170 cm", "values": ["66,93 in"], "emphasis": true },
-        { "label": "180 cm", "values": ["70,87 in"] },
-        { "label": "190 cm", "values": ["74,80 in"] },
-        { "label": "200 cm", "values": ["78,74 in"], "emphasis": true }
+        {
+          "label": "0,5 cm",
+          "values": ["0,20 in"]
+        },
+        {
+          "label": "1 cm",
+          "values": ["0,39 in"],
+          "emphasis": true
+        },
+        {
+          "label": "1,5 cm",
+          "values": ["0,59 in"]
+        },
+        {
+          "label": "2 cm",
+          "values": ["0,79 in"]
+        },
+        {
+          "label": "2,5 cm",
+          "values": ["0,98 in"]
+        },
+        {
+          "label": "3 cm",
+          "values": ["1,18 in"]
+        },
+        {
+          "label": "4 cm",
+          "values": ["1,57 in"]
+        },
+        {
+          "label": "5 cm",
+          "values": ["1,97 in"],
+          "emphasis": true
+        },
+        {
+          "label": "6 cm",
+          "values": ["2,36 in"]
+        },
+        {
+          "label": "7 cm",
+          "values": ["2,76 in"]
+        },
+        {
+          "label": "8 cm",
+          "values": ["3,15 in"]
+        },
+        {
+          "label": "9 cm",
+          "values": ["3,54 in"]
+        },
+        {
+          "label": "10 cm",
+          "values": ["3,94 in"],
+          "emphasis": true
+        },
+        {
+          "label": "12 cm",
+          "values": ["4,72 in"]
+        },
+        {
+          "label": "13 cm",
+          "values": ["5,12 in"]
+        },
+        {
+          "label": "14 cm",
+          "values": ["5,51 in"]
+        },
+        {
+          "label": "15 cm",
+          "values": ["5,91 in"],
+          "emphasis": true
+        },
+        {
+          "label": "16 cm",
+          "values": ["6,30 in"]
+        },
+        {
+          "label": "17 cm",
+          "values": ["6,69 in"]
+        },
+        {
+          "label": "18 cm",
+          "values": ["7,09 in"]
+        },
+        {
+          "label": "20 cm",
+          "values": ["7,87 in"],
+          "emphasis": true
+        },
+        {
+          "label": "21 cm",
+          "values": ["8,27 in"]
+        },
+        {
+          "label": "22 cm",
+          "values": ["8,66 in"]
+        },
+        {
+          "label": "23 cm",
+          "values": ["9,06 in"]
+        },
+        {
+          "label": "24 cm",
+          "values": ["9,45 in"]
+        },
+        {
+          "label": "25 cm",
+          "values": ["9,84 in"]
+        },
+        {
+          "label": "30 cm",
+          "values": ["11,81 in"]
+        },
+        {
+          "label": "35 cm",
+          "values": ["13,78 in"]
+        },
+        {
+          "label": "40 cm",
+          "values": ["15,75 in"]
+        },
+        {
+          "label": "45 cm",
+          "values": ["17,72 in"]
+        },
+        {
+          "label": "50 cm",
+          "values": ["19,69 in"],
+          "emphasis": true
+        },
+        {
+          "label": "60 cm",
+          "values": ["23,62 in"]
+        },
+        {
+          "label": "70 cm",
+          "values": ["27,56 in"]
+        },
+        {
+          "label": "80 cm",
+          "values": ["31,50 in"]
+        },
+        {
+          "label": "90 cm",
+          "values": ["35,43 in"]
+        },
+        {
+          "label": "100 cm",
+          "values": ["39,37 in"],
+          "emphasis": true
+        },
+        {
+          "label": "120 cm",
+          "values": ["47,24 in"]
+        },
+        {
+          "label": "150 cm",
+          "values": ["59,06 in"],
+          "emphasis": true
+        },
+        {
+          "label": "160 cm",
+          "values": ["62,99 in"]
+        },
+        {
+          "label": "170 cm",
+          "values": ["66,93 in"],
+          "emphasis": true
+        },
+        {
+          "label": "180 cm",
+          "values": ["70,87 in"]
+        },
+        {
+          "label": "190 cm",
+          "values": ["74,80 in"]
+        },
+        {
+          "label": "200 cm",
+          "values": ["78,74 in"],
+          "emphasis": true
+        }
       ],
       "caption": "Pretende converter no sentido inverso? Utilize o nosso <a href=\"/pt/ferramentas/conversor-polegadas-para-cm\">conversor de polegadas para cm</a>, que tem a sua própria tabela e conteúdo dedicado a essa direção."
     },
@@ -167,98 +305,109 @@
       "labelHeader": "Altura",
       "cols": ["Polegadas (in)", "Pés e polegadas (ft in)"],
       "rows": [
-        { "label": "150 cm", "values": ["59,06 in", "4 ft 11 in"] },
-        { "label": "155 cm", "values": ["61,02 in", "5 ft 1 in"] },
-        { "label": "158 cm", "values": ["62,20 in", "5 ft 2 in"] },
+        {
+          "label": "150 cm",
+          "values": ["59,06 in", "4 ft 11 in"]
+        },
+        {
+          "label": "155 cm",
+          "values": ["61,02 in", "5 ft 1 in"]
+        },
+        {
+          "label": "158 cm",
+          "values": ["62,20 in", "5 ft 2 in"]
+        },
         {
           "label": "160 cm",
           "values": ["62,99 in", "5 ft 3 in"],
           "emphasis": true
         },
-        { "label": "162 cm", "values": ["63,78 in", "5 ft 4 in"] },
-        { "label": "163 cm", "values": ["64,17 in", "5 ft 4 in"] },
+        {
+          "label": "162 cm",
+          "values": ["63,78 in", "5 ft 4 in"]
+        },
+        {
+          "label": "163 cm",
+          "values": ["64,17 in", "5 ft 4 in"]
+        },
         {
           "label": "165 cm",
           "values": ["64,96 in", "5 ft 5 in"],
           "emphasis": true
         },
-        { "label": "167 cm", "values": ["65,75 in", "5 ft 6 in"] },
-        { "label": "168 cm", "values": ["66,14 in", "5 ft 6 in"] },
+        {
+          "label": "167 cm",
+          "values": ["65,75 in", "5 ft 6 in"]
+        },
+        {
+          "label": "168 cm",
+          "values": ["66,14 in", "5 ft 6 in"]
+        },
         {
           "label": "170 cm",
           "values": ["66,93 in", "5 ft 7 in"],
           "emphasis": true
         },
-        { "label": "172 cm", "values": ["67,72 in", "5 ft 8 in"] },
-        { "label": "173 cm", "values": ["68,11 in", "5 ft 8 in"] },
+        {
+          "label": "172 cm",
+          "values": ["67,72 in", "5 ft 8 in"]
+        },
+        {
+          "label": "173 cm",
+          "values": ["68,11 in", "5 ft 8 in"]
+        },
         {
           "label": "175 cm",
           "values": ["68,90 in", "5 ft 9 in"],
           "emphasis": true
         },
-        { "label": "177 cm", "values": ["69,69 in", "5 ft 10 in"] },
-        { "label": "178 cm", "values": ["70,08 in", "5 ft 10 in"] },
+        {
+          "label": "177 cm",
+          "values": ["69,69 in", "5 ft 10 in"]
+        },
+        {
+          "label": "178 cm",
+          "values": ["70,08 in", "5 ft 10 in"]
+        },
         {
           "label": "180 cm",
           "values": ["70,87 in", "5 ft 11 in"],
           "emphasis": true
         },
-        { "label": "182 cm", "values": ["71,65 in", "6 ft 0 in"] },
-        { "label": "183 cm", "values": ["72,05 in", "6 ft 0 in"] },
+        {
+          "label": "182 cm",
+          "values": ["71,65 in", "6 ft 0 in"]
+        },
+        {
+          "label": "183 cm",
+          "values": ["72,05 in", "6 ft 0 in"]
+        },
         {
           "label": "185 cm",
           "values": ["72,83 in", "6 ft 1 in"],
           "emphasis": true
         },
-        { "label": "188 cm", "values": ["74,02 in", "6 ft 2 in"] },
+        {
+          "label": "188 cm",
+          "values": ["74,02 in", "6 ft 2 in"]
+        },
         {
           "label": "190 cm",
           "values": ["74,80 in", "6 ft 3 in"],
           "emphasis": true
         },
-        { "label": "193 cm", "values": ["75,98 in", "6 ft 4 in"] },
-        { "label": "195 cm", "values": ["76,77 in", "6 ft 5 in"] },
-        { "label": "200 cm", "values": ["78,74 in", "6 ft 7 in"] }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionTable",
-      "title": "Tabela inversa – polegadas para centímetros",
-      "description": "A tabela abaixo apresenta a conversão dos valores mais comuns em polegadas para centímetros, arredondada a duas casas decimais.",
-      "labelHeader": "Polegadas",
-      "cols": ["Centímetros"],
-      "rows": [
-        { "label": "0,5 in", "values": ["1,27 cm"] },
-        { "label": "1 in", "values": ["2,54 cm"], "emphasis": true },
-        { "label": "2 in", "values": ["5,08 cm"] },
-        { "label": "3 in", "values": ["7,62 cm"] },
-        { "label": "4 in", "values": ["10,16 cm"] },
-        { "label": "5 in", "values": ["12,70 cm"] },
-        { "label": "6 in", "values": ["15,24 cm"], "emphasis": true },
-        { "label": "7 in", "values": ["17,78 cm"] },
-        { "label": "8 in", "values": ["20,32 cm"] },
-        { "label": "9 in", "values": ["22,86 cm"] },
-        { "label": "10 in", "values": ["25,40 cm"], "emphasis": true },
-        { "label": "11 in", "values": ["27,94 cm"] },
-        { "label": "12 in", "values": ["30,48 cm"], "emphasis": true },
-        { "label": "15 in", "values": ["38,10 cm"] },
-        { "label": "18 in", "values": ["45,72 cm"] },
-        { "label": "20 in", "values": ["50,80 cm"] },
-        { "label": "21 in", "values": ["53,34 cm"] },
-        { "label": "23 in", "values": ["58,42 cm"] },
-        { "label": "24 in", "values": ["60,96 cm"], "emphasis": true },
-        { "label": "30 in", "values": ["76,20 cm"] },
-        { "label": "36 in", "values": ["91,44 cm"], "emphasis": true },
-        { "label": "42 in", "values": ["106,68 cm"] },
-        { "label": "45 in", "values": ["114,30 cm"] },
-        { "label": "48 in", "values": ["121,92 cm"] },
-        { "label": "54 in", "values": ["137,16 cm"] },
-        { "label": "60 in", "values": ["152,40 cm"], "emphasis": true },
-        { "label": "72 in", "values": ["182,88 cm"], "emphasis": true }
+        {
+          "label": "193 cm",
+          "values": ["75,98 in", "6 ft 4 in"]
+        },
+        {
+          "label": "195 cm",
+          "values": ["76,77 in", "6 ft 5 in"]
+        },
+        {
+          "label": "200 cm",
+          "values": ["78,74 in", "6 ft 7 in"]
+        }
       ]
     },
     {
@@ -272,20 +421,49 @@
       "labelHeader": "Diagonal (polegadas)",
       "cols": ["Diagonal (cm)"],
       "rows": [
-        { "label": "24 in (monitor de secretária)", "values": ["60,96 cm"] },
-        { "label": "27 in (monitor de secretária)", "values": ["68,58 cm"] },
+        {
+          "label": "24 in (monitor de secretária)",
+          "values": ["60,96 cm"]
+        },
+        {
+          "label": "27 in (monitor de secretária)",
+          "values": ["68,58 cm"]
+        },
         {
           "label": "32 in (TV / monitor grande)",
           "values": ["81,28 cm"],
           "emphasis": true
         },
-        { "label": "40 in (TV)", "values": ["101,60 cm"] },
-        { "label": "43 in (TV)", "values": ["109,22 cm"] },
-        { "label": "50 in (TV)", "values": ["127,00 cm"] },
-        { "label": "55 in (TV)", "values": ["139,70 cm"], "emphasis": true },
-        { "label": "65 in (TV)", "values": ["165,10 cm"], "emphasis": true },
-        { "label": "75 in (TV)", "values": ["190,50 cm"] },
-        { "label": "85 in (TV)", "values": ["215,90 cm"] }
+        {
+          "label": "40 in (TV)",
+          "values": ["101,60 cm"]
+        },
+        {
+          "label": "43 in (TV)",
+          "values": ["109,22 cm"]
+        },
+        {
+          "label": "50 in (TV)",
+          "values": ["127,00 cm"]
+        },
+        {
+          "label": "55 in (TV)",
+          "values": ["139,70 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "65 in (TV)",
+          "values": ["165,10 cm"],
+          "emphasis": true
+        },
+        {
+          "label": "75 in (TV)",
+          "values": ["190,50 cm"]
+        },
+        {
+          "label": "85 in (TV)",
+          "values": ["215,90 cm"]
+        }
       ]
     },
     {

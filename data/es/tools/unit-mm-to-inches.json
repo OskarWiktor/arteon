@@ -1,0 +1,293 @@
+{
+  "toolKey": "mmToInches",
+  "locale": "es",
+  "metadata": {
+    "title": "Calculadora mm a pulgadas – convertir milímetros a pulgadas",
+    "description": "Convierte milímetros a pulgadas. Las tablas incluidas muestran también las fracciones de pulgada (1/8, 1/4, 3/8) usadas en brocas, tornillos y grosores de materiales. El convertidor funciona en ambos sentidos y calcula al instante.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/es/herramientas/convertidor-mm-a-pulgadas"
+  },
+  "hero": {
+    "title": "Convierte milímetros a pulgadas",
+    "description": "Introduce cualquier valor en milímetros y lee al instante el resultado en pulgadas decimales. La tabla de fracciones más abajo muestra además la fracción de pulgada más cercana, la que se usa en brocas o tornillos. El convertidor resulta útil en mediciones precisas: grosores de materiales, dimensiones de componentes electrónicos o elección de herramientas especificadas en pulgadas.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-mm-a-pulgadas",
+      "label": "mm a pulgadas"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de milímetros a pulgadas – calculadora mm a pulgadas",
+      "alternateName": [
+        "Convertidor mm a pulgadas",
+        "Calculadora mm a pulgadas",
+        "Convertidor de milímetros a pulgadas",
+        "Milímetros a pulgadas",
+        "mm a pulgadas",
+        "Convertir mm a pulgadas",
+        "Conversión mm a pulgadas",
+        "mm a inch",
+        "Convertidor de milímetro a pulgada",
+        "Calculadora de milímetros a pulgadas",
+        "mm a inches",
+        "mm a in",
+        "Tabla mm a pulgadas",
+        "Fracciones de pulgada en milímetros",
+        "Cuántas pulgadas tiene un milímetro"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertidor de milímetros a pulgadas que funciona en el navegador sin registro. Introduce un valor en mm y obtén al instante el resultado en pulgadas decimales. Útil para elegir brocas y tornillos, comprobar grosores de materiales o leer dimensiones de componentes electrónicos especificadas en pulgadas.",
+      "featureList": [
+        "La conversión funciona en ambos sentidos: puedes convertir tanto milímetros a pulgadas como pulgadas a milímetros",
+        "El resultado aparece al instante mientras escribes, sin necesidad de hacer clic en ningún botón",
+        "El resultado puede copiarse al portapapeles con un solo clic",
+        "La tabla de conversión cubre valores de 1 mm a 800 mm",
+        "Una tabla aparte muestra las fracciones de pulgada más comunes (de 1/16 a 1 pulgada) junto con su equivalente en milímetros",
+        "Todos los cálculos se realizan localmente en el navegador, ningún dato sale de tu dispositivo",
+        "La fórmula exacta es pulgadas = milímetros ÷ 25,4, basada en la relación fija entre la pulgada y el milímetro",
+        "Funciona en móvil, tableta y ordenador sin instalación"
+      ]
+    },
+    "howTo": {
+      "name": "¿Cómo convertir milímetros a pulgadas?",
+      "description": "Guía rápida de uso del convertidor mm a pulgadas.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduce el valor en milímetros",
+          "text": "En el campo de la izquierda, escribe el número de milímetros que quieres convertir a pulgadas."
+        },
+        {
+          "name": "Lee el resultado en pulgadas",
+          "text": "El resultado en pulgadas aparece al instante en el campo de al lado. Puedes copiarlo al portapapeles con un solo clic."
+        },
+        {
+          "name": "Invierte la dirección si es necesario",
+          "text": "Haz clic en Cambiar orden para cambiar el convertidor al modo pulgadas a milímetros."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "¿Para qué convertir milímetros a pulgadas?",
+      "html": "<p class=\"text-mid mb-4\">El milímetro es la unidad básica de las mediciones precisas en España, América Latina y la mayor parte del mundo. La pulgada, en cambio, domina en los países anglosajones, sobre todo en Estados Unidos, donde brocas, tornillos, llaves de vaso y grosores de materiales de construcción se especifican en pulgadas. El problema aparece cuando compras una herramienta americana con especificaciones en pulgadas o intentas elegir una broca métrica para una medida dada como fracción de pulgada.</p><p class=\"text-mid mb-4\">Una pulgada equivale exactamente a 25,4 mm. Esta relación es constante y se aplica en todas partes, así que cada conversión se reduce a una sola división. El convertidor la hace por ti en cuanto introduces un valor.</p><p class=\"text-mid mb-4\">Más abajo encontrarás una tabla de conversión mm a pulgadas para valores de 1 a 800 mm y una tabla de las fracciones de pulgada más comunes con su equivalente en milímetros.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor gratuito de milímetros a pulgadas – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión de mm a pulgadas? Fórmula y ejemplo",
+      "html": "<p class=\"text-mid mb-4\">La conversión de milímetros a pulgadas se basa en una relación fija: una pulgada equivale exactamente a 25,4 mm. Basta con dividir el número de milímetros entre 25,4 para obtener el resultado en pulgadas.</p><p class=\"text-mid mb-4\">La fórmula completa: <strong>pulgadas = milímetros ÷ 25,4</strong>. En sentido contrario: <strong>milímetros = pulgadas × 25,4</strong>.</p><p class=\"text-mid mb-4\">Ejemplo: quieres saber cuántas pulgadas son 14 mm. Sustituyes: 14 ÷ 25,4 = 0,551 pulgadas. No es exactamente 1/2 pulgada (12,7 mm) ni 3/4 de pulgada (19,05 mm); la fracción común más cercana es 9/16 de pulgada (14,29 mm), aunque la diferencia sigue siendo de unos 0,29 mm.</p><p class=\"text-mid\">Otro ejemplo: el grosor estándar del laminado de una placa de circuito impreso (PCB) es de 1,6 mm, que convertido da 1,6 ÷ 25,4 = 0,063 pulgadas, un valor cercano a 1/16 de pulgada (0,0625 pulgadas). El convertidor realiza ambos sentidos del cálculo en cuanto introduces un valor.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Tabla de conversión mm a pulgadas",
+      "description": "La siguiente tabla convierte valores habituales en milímetros a pulgadas decimales. Los valores están redondeados a tres decimales. Para convertir un valor exacto o dimensiones menos frecuentes, usa el convertidor de arriba.",
+      "labelHeader": "Milímetros",
+      "cols": ["Pulgadas"],
+      "rows": [
+        { "label": "1 mm", "values": ["0,039 in"] },
+        { "label": "2 mm", "values": ["0,079 in"] },
+        { "label": "3 mm", "values": ["0,118 in"] },
+        { "label": "4 mm", "values": ["0,157 in"] },
+        { "label": "5 mm", "values": ["0,197 in"], "emphasis": true },
+        { "label": "6 mm", "values": ["0,236 in"] },
+        { "label": "7 mm", "values": ["0,276 in"] },
+        { "label": "8 mm", "values": ["0,315 in"] },
+        { "label": "9 mm", "values": ["0,354 in"] },
+        { "label": "10 mm", "values": ["0,394 in"], "emphasis": true },
+        { "label": "12 mm", "values": ["0,472 in"] },
+        { "label": "14 mm", "values": ["0,551 in"] },
+        { "label": "15 mm", "values": ["0,591 in"] },
+        { "label": "16 mm", "values": ["0,630 in"] },
+        { "label": "18 mm", "values": ["0,709 in"] },
+        { "label": "20 mm", "values": ["0,787 in"], "emphasis": true },
+        { "label": "25 mm", "values": ["0,984 in"], "emphasis": true },
+        { "label": "30 mm", "values": ["1,181 in"] },
+        { "label": "35 mm", "values": ["1,378 in"] },
+        { "label": "40 mm", "values": ["1,575 in"] },
+        { "label": "50 mm", "values": ["1,969 in"], "emphasis": true },
+        { "label": "60 mm", "values": ["2,362 in"] },
+        { "label": "70 mm", "values": ["2,756 in"] },
+        { "label": "80 mm", "values": ["3,150 in"] },
+        { "label": "90 mm", "values": ["3,543 in"] },
+        { "label": "100 mm", "values": ["3,937 in"], "emphasis": true },
+        { "label": "120 mm", "values": ["4,724 in"] },
+        { "label": "150 mm", "values": ["5,906 in"], "emphasis": true },
+        { "label": "180 mm", "values": ["7,087 in"] },
+        { "label": "200 mm", "values": ["7,874 in"], "emphasis": true },
+        { "label": "210 mm", "values": ["8,268 in"] },
+        { "label": "250 mm", "values": ["9,843 in"] },
+        { "label": "256 mm", "values": ["10,079 in"] },
+        { "label": "297 mm", "values": ["11,693 in"] },
+        { "label": "300 mm", "values": ["11,811 in"], "emphasis": true },
+        { "label": "500 mm", "values": ["19,685 in"] },
+        { "label": "800 mm", "values": ["31,496 in"], "emphasis": true }
+      ],
+      "caption": "¿Quieres convertir en el otro sentido? Usa nuestro convertidor <a href=\"/es/herramientas/convertidor-pulgadas-a-mm\">pulgadas a mm</a>, que incluye la tabla completa de fracciones de pulgada en pasos de 1/32."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Las fracciones de pulgada más comunes y su equivalente en milímetros",
+      "description": "En los países anglosajones, brocas, tornillos, llaves de vaso y perfiles de construcción se especifican con fracciones de pulgada, no con valores decimales. La siguiente tabla muestra las fracciones más usadas junto con el valor decimal y el milimétrico. Los valores en milímetros están redondeados a dos decimales.",
+      "labelHeader": "Pulgada (fracción)",
+      "cols": ["Pulgada (decimal)", "Milímetros"],
+      "rows": [
+        { "label": "1/16 in", "values": ["0,0625 in", "1,59 mm"] },
+        {
+          "label": "1/8 in",
+          "values": ["0,125 in", "3,18 mm"],
+          "emphasis": true
+        },
+        { "label": "5/32 in", "values": ["0,15625 in", "3,97 mm"] },
+        { "label": "3/16 in", "values": ["0,1875 in", "4,76 mm"] },
+        {
+          "label": "1/4 in",
+          "values": ["0,25 in", "6,35 mm"],
+          "emphasis": true
+        },
+        { "label": "5/16 in", "values": ["0,3125 in", "7,94 mm"] },
+        {
+          "label": "3/8 in",
+          "values": ["0,375 in", "9,53 mm"],
+          "emphasis": true
+        },
+        { "label": "7/16 in", "values": ["0,4375 in", "11,11 mm"] },
+        {
+          "label": "1/2 in",
+          "values": ["0,5 in", "12,70 mm"],
+          "emphasis": true
+        },
+        { "label": "9/16 in", "values": ["0,5625 in", "14,29 mm"] },
+        { "label": "5/8 in", "values": ["0,625 in", "15,88 mm"] },
+        { "label": "11/16 in", "values": ["0,6875 in", "17,46 mm"] },
+        {
+          "label": "3/4 in",
+          "values": ["0,75 in", "19,05 mm"],
+          "emphasis": true
+        },
+        { "label": "13/16 in", "values": ["0,8125 in", "20,64 mm"] },
+        { "label": "7/8 in", "values": ["0,875 in", "22,23 mm"] },
+        { "label": "1 in", "values": ["1 in", "25,40 mm"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo se convierte con más frecuencia de milímetros a pulgadas?",
+      "description": "La conversión de mm a pulgadas aparece sobre todo donde se necesita precisión en la medida. Cada una de las siguientes situaciones tiene sus particularidades.",
+      "items": [
+        {
+          "title": "Brocas y herramientas",
+          "description": "Los juegos americanos de brocas y llaves de vaso se especifican con fracciones de pulgada (por ejemplo 1/8, 5/32, 1/4), no con milímetros. Si tienes un juego de brocas métrico y te encuentras con un manual con medidas en pulgadas, la conversión te permite elegir el equivalente más cercano. Una broca de 1/4 de pulgada mide 6,35 mm y una de 3/8 de pulgada, 9,53 mm."
+        },
+        {
+          "title": "Tornillos y elementos de fijación",
+          "description": "Los tornillos y tuercas del sistema de pulgadas (por ejemplo UNC, UNF) tienen medidas expresadas en fracciones de pulgada. Al reparar equipos importados de EE. UU. o montar muebles con manual en pulgadas, comprueba el equivalente exacto en milímetros para elegir la herramienta adecuada."
+        },
+        {
+          "title": "Electrónica y placas de circuito impreso",
+          "description": "La separación estándar de pines en electrónica (paso de protoboard y de conectores de pines) es de 0,1 pulgadas, es decir, 2,54 mm. El grosor típico del laminado de una placa PCB es de 1,6 mm, que corresponde aproximadamente a 1/16 de pulgada. Conocer estos valores facilita el diseño de carcasas y módulos electrónicos."
+        },
+        {
+          "title": "Grosor de materiales y chapas",
+          "description": "Los catálogos de materiales de construcción, chapas o metacrilato de tiendas americanas indican el grosor en pulgadas o fracciones de pulgada. Una chapa de 1/8 de pulgada mide 3,18 mm y una placa de 1/4 de pulgada, 6,35 mm; compruébalo antes de pedir para que el material encaje en tu proyecto."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre la conversión de mm a pulgadas",
+      "items": [
+        {
+          "question": "¿Cuántas pulgadas son 100 mm?",
+          "answer": "100 mm son 3,937 pulgadas. Cálculo: 100 ÷ 25,4 = 3,937 in. Redondeando, son poco menos de 4 pulgadas."
+        },
+        {
+          "question": "¿Cuántas pulgadas son 25 mm?",
+          "answer": "25 mm son 0,984 pulgadas. Cálculo: 25 ÷ 25,4 = 0,984 in. Es un valor cercano a 1 pulgada, pero no igual: exactamente 1 pulgada son 25,4 mm, así que la diferencia es de 0,4 mm."
+        },
+        {
+          "question": "¿Cuántas pulgadas son 10 mm?",
+          "answer": "10 mm son 0,394 pulgadas. Cálculo: 10 ÷ 25,4 = 0,394 in. No es 1/4 de pulgada (0,25 in = 6,35 mm); 10 mm corresponden aproximadamente a 25/64 de pulgada."
+        },
+        {
+          "question": "¿Cuántas pulgadas son 1, 2, 3, 20 y 30 mm?",
+          "answer": "1 mm = 0,039 in, 2 mm = 0,079 in, 3 mm = 0,118 in, 20 mm = 0,787 in y 30 mm = 1,181 in. Cada uno de estos valores se obtiene dividiendo el número de milímetros entre 25,4."
+        },
+        {
+          "question": "¿Cuántas pulgadas son 150 mm?",
+          "answer": "150 mm son 5,906 pulgadas. Cálculo: 150 ÷ 25,4 = 5,906 in. Es un valor cercano a 6 pulgadas, con una diferencia de unos 2,4 mm."
+        },
+        {
+          "question": "¿Cuántas pulgadas son 6, 15, 40, 50 y 180 mm?",
+          "answer": "6 mm = 0,236 in, 15 mm = 0,591 in, 40 mm = 1,575 in, 50 mm = 1,969 in y 180 mm = 7,087 in. Todos los valores se obtienen de la misma forma: divides los milímetros entre 25,4."
+        },
+        {
+          "question": "¿Cuántas pulgadas son 5 mm?",
+          "answer": "5 mm son 0,197 pulgadas. Cálculo: 5 ÷ 25,4 = 0,197 in. Es un valor cercano a 3/16 de pulgada (0,1875 in = 4,76 mm)."
+        },
+        {
+          "question": "¿Cómo convertir mm a pulgadas en forma de fracción?",
+          "answer": "Primero convierte los milímetros a pulgadas decimales (mm ÷ 25,4) y luego busca la fracción común más cercana en la tabla de arriba. Por ejemplo, 9 mm = 0,354 in, que está cerca de 23/64 de pulgada, aunque en la práctica se redondea al tamaño de broca o llave disponible más cercano, normalmente en pasos de 1/32 o 1/16 de pulgada."
+        },
+        {
+          "question": "¿14 mm es 1 pulgada?",
+          "answer": "No. 14 mm son 0,551 pulgadas, es decir, más o menos media pulgada. Exactamente 1 pulgada son 25,4 mm; 14 mm es casi la mitad."
+        },
+        {
+          "question": "¿Cuántos milímetros tiene exactamente 1 pulgada?",
+          "answer": "1 pulgada son exactamente 25,4 mm. Es un valor constante definido, vigente desde 1959 como la llamada pulgada internacional, adoptada por EE. UU., Reino Unido, Canadá, Australia y otros países anglosajones."
+        },
+        {
+          "question": "¿Cuál es la fórmula para convertir mm a pulgadas?",
+          "answer": "La fórmula es: pulgadas = milímetros ÷ 25,4. Por ejemplo, 50 mm ÷ 25,4 = 1,969 pulgadas. En sentido contrario: milímetros = pulgadas × 25,4."
+        },
+        {
+          "question": "¿12 mm es 1/2 pulgada?",
+          "answer": "No exactamente. 1/2 pulgada son 12,7 mm, mientras que 12 mm son 0,472 pulgadas. La diferencia es de 0,7 mm, lo que puede importar al elegir una broca o un tornillo."
+        },
+        {
+          "question": "¿2 mm es lo mismo que 1/16 de pulgada?",
+          "answer": "No. 1/16 de pulgada son 1,5875 mm, mientras que 2 mm son 0,079 pulgadas (casi 5/64 de pulgada). Los valores se parecen, pero no son idénticos: la diferencia es de unos 0,41 mm."
+        },
+        {
+          "question": "¿32 mm es 1 pulgada?",
+          "answer": "No. 1 pulgada son exactamente 25,4 mm, mientras que 32 mm son 1,26 pulgadas. Es más de un 20 % más que 1 pulgada."
+        },
+        {
+          "question": "¿Cómo convertir mm a pulgadas sin calculadora?",
+          "answer": "Aproximación rápida: divide los milímetros entre 25 en lugar de 25,4. El error es mínimo (aprox. 1,6 %), suficiente en la práctica para una comparación orientativa. Por ejemplo, 100 mm ÷ 25 = 4 pulgadas (el valor exacto es 3,937). Para conversiones precisas, usa siempre el convertidor."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "¿Tienes una pregunta o sugerencia?",
+      "description": "Si detectas un error en las tablas o tienes una idea para mejorar el convertidor, escríbenos. Respondemos a cada mensaje.",
+      "imageAlt": "Contacto con Arteon Agency",
+      "subject": "Convertidor mm a pulgadas"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Otros convertidores de unidades útiles"
+    }
+  ]
+}

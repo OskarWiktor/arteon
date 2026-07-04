@@ -5333,6 +5333,130 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
   },
   {
+    key: 'mmToInches',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-mm-na-cale',
+        title: 'mm na cale',
+        description:
+          'Przelicz milimetry na cale. Wiertła, śruby, grubość materiałów, tabela ułamków cala.',
+      },
+      en: {
+        slug: 'mm-to-inches-converter',
+        title: 'mm to inches',
+        description:
+          'Convert millimeters to inches. Drill bits, bolts, material thickness, inch fraction table.',
+      },
+      de: {
+        slug: 'mm-in-zoll-umrechner',
+        title: 'mm in Zoll',
+        description:
+          'Millimeter in Zoll umrechnen. Bohrer, Schrauben, Materialstärken, Zollbruchtabelle.',
+      },
+      es: {
+        slug: 'convertidor-mm-a-pulgadas',
+        title: 'mm a pulgadas',
+        description:
+          'Convierte milímetros a pulgadas. Brocas, tornillos, grosores, tabla de fracciones de pulgada.',
+      },
+      fr: {
+        slug: 'convertisseur-mm-en-pouces',
+        title: 'mm en pouces',
+        description:
+          'Convertissez les millimètres en pouces. Forets, vis, épaisseurs, tableau des fractions de pouce.',
+      },
+      pt: {
+        slug: 'conversor-mm-para-polegadas',
+        title: 'mm para polegadas',
+        description:
+          'Converta milímetros em polegadas. Brocas, parafusos, espessuras, tabela de frações de polegada.',
+      },
+      it: {
+        slug: 'convertitore-mm-in-pollici',
+        title: 'mm in pollici',
+        description:
+          'Converti millimetri in pollici. Punte da trapano, viti, spessori, tabella delle frazioni di pollice.',
+      },
+      cs: {
+        slug: 'prevodnik-mm-na-palce',
+        title: 'mm na palce',
+        description:
+          'Převeď milimetry na palce. Vrtáky, šrouby, tloušťky materiálů, tabulka palcových zlomků.',
+      },
+      el: {
+        slug: 'metatropeas-mm-se-intses',
+        title: 'mm σε ίντσες',
+        description:
+          'Μετατρέψτε χιλιοστά σε ίντσες. Τρυπάνια, βίδες, πάχη υλικών, πίνακας κλασμάτων ίντσας.',
+      },
+    },
+  },
+  {
+    key: 'inchesToMm',
+    section: 'jednostki',
+    icon: RiRulerLine,
+    desktopOnly: false,
+    locales: {
+      pl: {
+        slug: 'konwerter-cali-na-mm',
+        title: 'cale na mm',
+        description:
+          'Przelicz cale na milimetry. Wiertła, śruby, klucze nasadowe, pełna tabela ułamków cala.',
+      },
+      en: {
+        slug: 'inches-to-mm-converter',
+        title: 'inches to mm',
+        description:
+          'Convert inches to millimeters. Drill bits, bolts, socket wrenches, full inch fraction table.',
+      },
+      de: {
+        slug: 'zoll-in-mm-umrechner',
+        title: 'Zoll in mm',
+        description:
+          'Zoll in Millimeter umrechnen. Bohrer, Schrauben, Steckschlüssel, vollständige Zollbruchtabelle.',
+      },
+      es: {
+        slug: 'convertidor-pulgadas-a-mm',
+        title: 'pulgadas a mm',
+        description:
+          'Convierte pulgadas a milímetros. Brocas, tornillos, llaves de vaso, tabla completa de fracciones.',
+      },
+      fr: {
+        slug: 'convertisseur-pouces-en-mm',
+        title: 'pouces en mm',
+        description:
+          'Convertissez les pouces en millimètres. Forets, vis, douilles, tableau complet des fractions.',
+      },
+      pt: {
+        slug: 'conversor-polegadas-para-mm',
+        title: 'polegadas para mm',
+        description:
+          'Converta polegadas em milímetros. Brocas, parafusos, chaves de caixa, tabela completa de frações.',
+      },
+      it: {
+        slug: 'convertitore-pollici-in-mm',
+        title: 'pollici in mm',
+        description:
+          'Converti pollici in millimetri. Punte da trapano, viti, chiavi a bussola, tabella completa delle frazioni.',
+      },
+      cs: {
+        slug: 'prevodnik-palcu-na-mm',
+        title: 'palce na mm',
+        description:
+          'Převeď palce na milimetry. Vrtáky, šrouby, nástrčné klíče, úplná tabulka palcových zlomků.',
+      },
+      el: {
+        slug: 'metatropeas-intsOn-se-mm',
+        title: 'ίντσες σε mm',
+        description:
+          'Μετατρέψτε ίντσες σε χιλιοστά. Τρυπάνια, βίδες, καρυδάκια, πλήρης πίνακας κλασμάτων ίντσας.',
+      },
+    },
+  },
+  {
     key: 'kgToLb',
     section: 'jednostki',
     icon: RiRulerLine,

@@ -52,7 +52,6 @@
         "The conversion table covers values from 1 to 300 lb",
         "The body weight table converts common ranges from 88 to 265 lb to kilograms",
         "The gym weights table converts common loads from 5 to 225 lb to kilograms",
-        "The reverse table converts kilograms to pounds for values from 0.5 to 200 kg",
         "All calculations are performed locally in your browser — no data leaves your device",
         "The exact conversion formula is kilograms = pounds × 0.45359237, based on the pound definition from 1959",
         "Works on phone, tablet and desktop without installation"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "When do you need to convert pounds to kilograms?",
-      "html": "<p class=\"text-mid mb-4\">The pound (lb) is the unit of mass in the imperial system, common in the US and still widely used in the UK. In continental Europe and most of the world, the kilogram is the everyday unit, so pounds appear mainly when you use products, apps or information from English-speaking countries.</p><p class=\"text-mid mb-4\">The most common situations: a fitness app from the US shows your weight goal in pounds, the checked baggage limit is 50 lb, you are buying dumbbells on Amazon US labelled in pounds, or a YouTube training programme tells you to bench 135 lb.</p><p class=\"text-mid mb-4\">The formula is simple: one pound is exactly 0.45359237 kg. To convert pounds to kilograms, multiply by 0.4536. The converter does this the moment you type a value.</p><p class=\"text-mid\">On this page you will find a lb to kg table, a body weight table with conversions of common values, a gym weights table, and a reverse kg to pounds table.</p>",
+      "html": "<p class=\"text-mid mb-4\">The pound (lb) is the unit of mass in the imperial system, common in the US and still widely used in the UK. In continental Europe and most of the world, the kilogram is the everyday unit, so pounds appear mainly when you use products, apps or information from English-speaking countries.</p><p class=\"text-mid mb-4\">The most common situations: a fitness app from the US shows your weight goal in pounds, the checked baggage limit is 50 lb, you are buying dumbbells on Amazon US labelled in pounds, or a YouTube training programme tells you to bench 135 lb.</p><p class=\"text-mid mb-4\">The formula is simple: one pound is exactly 0.45359237 kg. To convert pounds to kilograms, multiply by 0.4536. The converter does this the moment you type a value.</p><p class=\"text-mid\">On this page you will find a lb to kg table, a body weight table with conversions of common values, and a gym weights table.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Free pounds to kilograms converter – Arteon"
     },

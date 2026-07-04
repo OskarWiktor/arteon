@@ -1,0 +1,315 @@
+{
+  "toolKey": "inchesToMm",
+  "locale": "en",
+  "metadata": {
+    "title": "Inches to MM Calculator – Convert Inches to Millimeters",
+    "description": "Convert inches to millimeters. The full inch fraction table in 1/32 steps shows mm equivalents for drill bits, bolts, and socket wrenches. The converter works both ways and calculates instantly.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/inches-to-mm-converter"
+  },
+  "hero": {
+    "title": "Convert inches to millimeters",
+    "description": "Enter a value in inches and instantly see the result in millimeters. The converter comes in handy wherever tools, bolts, or materials are sized in inches or inch fractions: picking a drill bit, a socket wrench, an inch-thread bolt, or checking the metric equivalent of a material thickness for a European supplier.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/inches-to-mm-converter",
+      "label": "inches to mm"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Inches to millimeters converter – inches to mm calculator",
+      "alternateName": [
+        "Inches to mm converter",
+        "Inches to mm calculator",
+        "Inches to millimeters converter",
+        "Inches to millimeters",
+        "inches to mm",
+        "Convert inches to mm",
+        "inch to mm conversion",
+        "in to mm converter",
+        "Inch to millimeter converter",
+        "Inch to millimeter calculator",
+        "inches to mm chart",
+        "inches to mm table",
+        "inch fractions to mm",
+        "How many mm is an inch",
+        "Fraction inches in millimeters"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Inches to millimeters converter that runs in your browser with no sign-up required. Enter a value in inches and instantly get the result in millimeters, and read inch fractions from the full table in 1/32 steps. Useful for picking drill bits, bolts, and socket wrenches in the inch system and for checking material thickness for metric suppliers.",
+      "featureList": [
+        "Conversion works both ways, so you can convert inches to millimeters and millimeters to inches",
+        "Result appears instantly as you type, no button click needed",
+        "Copy the result to clipboard with a single click",
+        "Conversion table covers values from 0.5 to 30 inches",
+        "The full inch fraction table in 1/32 steps shows the millimeter equivalent for typical drill bit, bolt, and wrench sizes",
+        "All calculations happen locally in your browser — no data leaves your device",
+        "The exact conversion formula is millimeters = inches × 25.4, based on the fixed relationship between the inch and the millimeter",
+        "Works on mobile, tablet, and desktop with no installation required"
+      ]
+    },
+    "howTo": {
+      "name": "How to convert inches to millimeters?",
+      "description": "Quick guide to using the inches to mm converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter the value in inches",
+          "text": "Type the number of inches you want to convert into millimeters in the left field. For fractional values (e.g. 3/8), first convert to decimal form (0.375) or use the fraction table below."
+        },
+        {
+          "name": "Read the result in millimeters",
+          "text": "The result in millimeters appears instantly in the field next to it. Click once to copy it to the clipboard."
+        },
+        {
+          "name": "Swap direction if needed",
+          "text": "Click Swap to switch the converter to millimeters-to-inches mode."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert inches to millimeters?",
+      "html": "<p class=\"text-mid mb-4\">The inch is the standard unit for tools, bolts, and building materials in the United States and is still common in the United Kingdom, Canada, and Australia. The rest of the world works in millimeters, so the conversion comes up whenever an inch dimension has to meet a metric one — often in fractional form like 3/8 or 9/16.</p><p class=\"text-mid mb-4\">The most common situations: you want to know how many millimeters a 3/8 inch drill bit is, you are matching a socket wrench to a metric bolt on a European car, or you are sending a 1/8 inch sheet thickness to a supplier who works in millimeters.</p><p class=\"text-mid mb-4\">The formula is simple: one inch is exactly 25.4 mm. To convert inches to millimeters, multiply the number of inches by 25.4. The converter does this the moment you type a value.</p><p class=\"text-mid\">On this page you will find an inches-to-mm conversion table and the full inch fraction table in 1/32 steps, covering every size from 1/32 to 1 inch.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Free inches to millimeters converter – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionInfo",
+      "title": "How does inches to mm conversion work? Formula and example",
+      "html": "<p class=\"text-mid mb-4\">Converting inches to millimeters relies on one constant: one inch is exactly 25.4 mm. Simply multiply the number of inches by 25.4 to get the result in millimeters.</p><p class=\"text-mid mb-4\">The full formula: <strong>millimeters = inches × 25.4</strong>. The other way around: <strong>inches = millimeters ÷ 25.4</strong>.</p><p class=\"text-mid mb-4\">Example: you have a drill bit marked 3/8 inch and want its metric equivalent. Plug it in: 0.375 × 25.4 = 9.53 mm. The closest metric drill bit is usually 9.5 mm.</p><p class=\"text-mid\">Another example: a bolt that is 3 3/8 inches long. Convert the fraction to decimal form (3 + 3/8 = 3.375), then multiply: 3.375 × 25.4 = 85.73 mm. The converter handles both directions the moment you type a value.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Inches to millimeters conversion table",
+      "description": "The table below converts common inch values to millimeters. Values are rounded to two decimal places. To convert an exact value, use the converter above.",
+      "labelHeader": "Inches",
+      "cols": ["Millimeters"],
+      "rows": [
+        { "label": "0.5 in", "values": ["12.70 mm"] },
+        { "label": "1 in", "values": ["25.40 mm"], "emphasis": true },
+        { "label": "1.5 in", "values": ["38.10 mm"] },
+        { "label": "2 in", "values": ["50.80 mm"] },
+        { "label": "3 in", "values": ["76.20 mm"], "emphasis": true },
+        { "label": "4 in", "values": ["101.60 mm"] },
+        { "label": "5 in", "values": ["127.00 mm"] },
+        { "label": "6 in", "values": ["152.40 mm"], "emphasis": true },
+        { "label": "7 in", "values": ["177.80 mm"] },
+        { "label": "8 in", "values": ["203.20 mm"] },
+        { "label": "9 in", "values": ["228.60 mm"] },
+        { "label": "10 in", "values": ["254.00 mm"], "emphasis": true },
+        { "label": "12 in", "values": ["304.80 mm"] },
+        { "label": "15 in", "values": ["381.00 mm"] },
+        { "label": "18 in", "values": ["457.20 mm"], "emphasis": true },
+        { "label": "20 in", "values": ["508.00 mm"] },
+        { "label": "24 in", "values": ["609.60 mm"] },
+        { "label": "25 in", "values": ["635.00 mm"], "emphasis": true },
+        { "label": "30 in", "values": ["762.00 mm"] }
+      ],
+      "caption": "Want to convert the other way? Use our <a href=\"/en/tools/mm-to-inches-converter\">mm to inches</a> converter, which has its own table and detailed content dedicated to that direction."
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionTable",
+      "title": "Full inch fraction to millimeters table (in 1/32 steps)",
+      "description": "Drill bits, bolts, socket wrenches, and profiles in the inch system are sized in fractions, most often in 1/32 or 1/16 inch steps. The table below covers every value from 1/32 to 1 inch together with the decimal and millimeter equivalents. Millimeter values are rounded to two decimal places.",
+      "labelHeader": "Inch (fraction)",
+      "cols": ["Inch (decimal)", "Millimeters"],
+      "rows": [
+        { "label": "1/32 in", "values": ["0.03125 in", "0.79 mm"] },
+        { "label": "1/16 in", "values": ["0.0625 in", "1.59 mm"] },
+        { "label": "3/32 in", "values": ["0.09375 in", "2.38 mm"] },
+        {
+          "label": "1/8 in",
+          "values": ["0.125 in", "3.18 mm"],
+          "emphasis": true
+        },
+        {
+          "label": "5/32 in",
+          "values": ["0.15625 in", "3.97 mm"],
+          "emphasis": true
+        },
+        { "label": "3/16 in", "values": ["0.1875 in", "4.76 mm"] },
+        { "label": "7/32 in", "values": ["0.21875 in", "5.56 mm"] },
+        {
+          "label": "1/4 in",
+          "values": ["0.25 in", "6.35 mm"],
+          "emphasis": true
+        },
+        { "label": "9/32 in", "values": ["0.28125 in", "7.14 mm"] },
+        { "label": "5/16 in", "values": ["0.3125 in", "7.94 mm"] },
+        { "label": "11/32 in", "values": ["0.34375 in", "8.73 mm"] },
+        {
+          "label": "3/8 in",
+          "values": ["0.375 in", "9.53 mm"],
+          "emphasis": true
+        },
+        { "label": "13/32 in", "values": ["0.40625 in", "10.32 mm"] },
+        { "label": "7/16 in", "values": ["0.4375 in", "11.11 mm"] },
+        { "label": "15/32 in", "values": ["0.46875 in", "11.91 mm"] },
+        {
+          "label": "1/2 in",
+          "values": ["0.5 in", "12.70 mm"],
+          "emphasis": true
+        },
+        { "label": "17/32 in", "values": ["0.53125 in", "13.49 mm"] },
+        {
+          "label": "9/16 in",
+          "values": ["0.5625 in", "14.29 mm"],
+          "emphasis": true
+        },
+        { "label": "19/32 in", "values": ["0.59375 in", "15.08 mm"] },
+        { "label": "5/8 in", "values": ["0.625 in", "15.88 mm"] },
+        { "label": "21/32 in", "values": ["0.65625 in", "16.67 mm"] },
+        {
+          "label": "11/16 in",
+          "values": ["0.6875 in", "17.46 mm"],
+          "emphasis": true
+        },
+        { "label": "23/32 in", "values": ["0.71875 in", "18.26 mm"] },
+        {
+          "label": "3/4 in",
+          "values": ["0.75 in", "19.05 mm"],
+          "emphasis": true
+        },
+        { "label": "25/32 in", "values": ["0.78125 in", "19.84 mm"] },
+        {
+          "label": "13/16 in",
+          "values": ["0.8125 in", "20.64 mm"],
+          "emphasis": true
+        },
+        { "label": "27/32 in", "values": ["0.84375 in", "21.43 mm"] },
+        { "label": "7/8 in", "values": ["0.875 in", "22.23 mm"] },
+        { "label": "29/32 in", "values": ["0.90625 in", "23.02 mm"] },
+        { "label": "15/16 in", "values": ["0.9375 in", "23.81 mm"] },
+        { "label": "31/32 in", "values": ["0.96875 in", "24.61 mm"] },
+        { "label": "1 in", "values": ["1 in", "25.40 mm"], "emphasis": true }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "When do you most often convert inches to millimeters?",
+      "description": "Converting inches to mm comes up in a few typical situations involving inch-based tools and materials.",
+      "items": [
+        {
+          "title": "Drill bits and inch wrenches",
+          "description": "Fractional-inch drill and socket sets are sized in inch fractions rather than millimeters. A 3/8 inch bit is 9.53 mm and a 1/2 inch wrench is 12.70 mm. Knowing the metric equivalent lets you pick the closest substitute from a metric set — or work on a European car with metric fasteners."
+        },
+        {
+          "title": "Inch bolts and nuts",
+          "description": "Bolts and nuts in the inch system (e.g. UNC, UNF) are sized in inch fractions. A 1/4 inch bolt has a 6.35 mm diameter and a 5/16 inch bolt is 7.94 mm. The conversion makes it easier to find a metric replacement or communicate sizes to a metric supplier."
+        },
+        {
+          "title": "Electronics and PCB pitch",
+          "description": "The standard breadboard and pin header pitch is 0.1 inches, which is 2.54 mm. PCB laminate thickness given as 1/16 inch corresponds to roughly 1.59 mm. These values matter when designing enclosures and electronic modules."
+        },
+        {
+          "title": "Building materials and lumber",
+          "description": "US lumber and building material catalogs list dimensions in inches. The popular 2×4 board (two by four inches) actually measures 1.5 × 3.5 inches, which is 38.1 × 88.9 mm after planing. The conversion helps you plan projects without dimensional mistakes."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about converting inches to millimeters",
+      "items": [
+        {
+          "question": "How many mm is one inch?",
+          "answer": "One inch is exactly 25.4 mm. This is a defined constant, in force since 1959 as the international inch."
+        },
+        {
+          "question": "What is the formula for converting inches to mm?",
+          "answer": "The formula is: millimeters = inches × 25.4. For example, 3 inches × 25.4 = 76.20 mm. The other way around: inches = millimeters ÷ 25.4."
+        },
+        {
+          "question": "How many mm is 3 inches?",
+          "answer": "3 inches is 3 × 25.4 = 76.20 mm."
+        },
+        {
+          "question": "How many mm is 18 inches?",
+          "answer": "18 inches is 18 × 25.4 = 457.20 mm. Among other things, that is a popular length for drawer slides sold in hardware stores."
+        },
+        {
+          "question": "How many mm is 3 3/8 inches?",
+          "answer": "3 3/8 inches first needs converting to decimal form: 3 + 3/8 = 3.375 inches. Then 3.375 × 25.4 = 85.73 mm."
+        },
+        {
+          "question": "How many mm is 3/8 inch?",
+          "answer": "3/8 inch is 0.375 × 25.4 = 9.53 mm. That is a popular drill bit and bolt size in the inch system."
+        },
+        {
+          "question": "How many mm is 1/8 inch?",
+          "answer": "1/8 inch is 0.125 × 25.4 = 3.18 mm. This value often corresponds to sheet metal or acrylic thickness given in inches."
+        },
+        {
+          "question": "How many mm are 2, 1.5, and 4 inches?",
+          "answer": "2 inches is 50.80 mm, 1.5 inches is 38.10 mm, and 4 inches is 101.60 mm. You get each value by multiplying the number of inches by 25.4."
+        },
+        {
+          "question": "How many mm is 9/16 inch?",
+          "answer": "9/16 inch is 0.5625 × 25.4 = 14.29 mm. That is a popular socket wrench size in inch tool sets."
+        },
+        {
+          "question": "How many mm is 5 inches?",
+          "answer": "5 inches is 5 × 25.4 = 127.00 mm."
+        },
+        {
+          "question": "How many mm is 3/4 inch?",
+          "answer": "3/4 inch is 0.75 × 25.4 = 19.05 mm. That is one of the most frequently used fractions for pipes, fittings, and inch bolts."
+        },
+        {
+          "question": "How many mm is 5/32 inch?",
+          "answer": "5/32 inch is 0.15625 × 25.4 = 3.97 mm. That is a typical size for a thinner drill bit or hex key in the inch system."
+        },
+        {
+          "question": "How many mm are 13/16 and 11/16 inch?",
+          "answer": "13/16 inch is 0.8125 × 25.4 = 20.64 mm, and 11/16 inch is 0.6875 × 25.4 = 17.46 mm. Both sizes are most often found in socket wrench sets."
+        },
+        {
+          "question": "How many mm are 6 and 25 inches?",
+          "answer": "6 inches is 6 × 25.4 = 152.40 mm, and 25 inches is 25 × 25.4 = 635.00 mm."
+        },
+        {
+          "question": "How many mm are 8 and 12 inches?",
+          "answer": "8 inches is 8 × 25.4 = 203.20 mm, and 12 inches is 12 × 25.4 = 304.80 mm."
+        },
+        {
+          "question": "Is 10 mm 1/4 inch, and is 2 mm 1/16 inch?",
+          "answer": "No, both values are close but not identical. 1/4 inch is exactly 6.35 mm, so 10 mm is closer to 25/64 inch. Meanwhile 1/16 inch is 1.5875 mm, and 2 mm is about 5/64 inch — the difference is 0.41 mm."
+        },
+        {
+          "question": "Where does the 25.4 mm constant in the inch definition come from?",
+          "answer": "The value of 25.4 mm per inch comes from historical standardization decisions. In 1930 the United Kingdom adopted 2.54 cm per inch, and in 1959 the US, Canada, Australia, and other English-speaking countries signed an agreement establishing the international inch: exactly 25.4 mm. Slightly different values applied before (e.g. the US survey inch, officially retired in 2023), but today only the 25.4 mm value is in common use."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Have a question or suggestion?",
+      "description": "If you spot an error in the tables or have an idea for improving the converter, get in touch. We reply to every message.",
+      "imageAlt": "Contact Arteon Agency",
+      "subject": "Inches to mm converter"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "toolsCarousel",
+      "title": "Other useful unit converters"
+    }
+  ]
+}

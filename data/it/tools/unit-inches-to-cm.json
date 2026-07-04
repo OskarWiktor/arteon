@@ -52,7 +52,6 @@
         "La tabella di conversione copre valori da 0,5 a 90 pollici",
         "La tabella delle diagonali degli schermi include le dimensioni più popolari di televisori e monitor da 24 a 85 pollici",
         "La tabella dell'altezza mostra la conversione di piedi e pollici in centimetri per valori da 4 ft 11 in a 6 ft 7 in",
-        "La tabella inversa mostra quanti pollici corrispondono a un valore in centimetri, da 0,5 cm a 200 cm",
         "Tutti i calcoli vengono eseguiti localmente nel browser, nessun dato lascia il tuo dispositivo",
         "La formula esatta è centimetri = pollici × 2,54, basata sulla relazione fissa tra pollice e centimetro",
         "Funziona su smartphone, tablet e computer senza installazione"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "Quando è necessario convertire pollici in centimetri?",
-      "html": "<p class=\"text-mid mb-4\">Il pollice è l'unità di misura della lunghezza del sistema imperiale, usato principalmente negli Stati Uniti e ancora comune nel Regno Unito. In Italia e in tutta Europa si usa il sistema metrico, quindi i pollici compaiono soprattutto quando si ha a che fare con prodotti o informazioni provenienti da paesi anglofoni.</p><p class=\"text-mid mb-4\">Le situazioni più comuni: vuoi sapere quanti centimetri ha un televisore da 55 pollici, confronti la tua altezza con una tabella taglie americana, acquisti scarpe in un negozio britannico dove la taglia è espressa in pollici oppure consulti le misure di un mobile in un catalogo americano.</p><p class=\"text-mid mb-4\">La formula è semplice: un pollice equivale esattamente a 2,54 cm. Per convertire pollici in centimetri, basta moltiplicare per 2,54. Il convertitore lo fa non appena inserisci un valore.</p><p class=\"text-mid\">In questa pagina troverai una tabella di conversione pollici in cm, una tabella delle diagonali degli schermi più diffuse, una tabella dell'altezza con la conversione di piedi e pollici in centimetri e una tabella inversa di centimetri in pollici.</p>",
+      "html": "<p class=\"text-mid mb-4\">Il pollice è l'unità di misura della lunghezza del sistema imperiale, usato principalmente negli Stati Uniti e ancora comune nel Regno Unito. In Italia e in tutta Europa si usa il sistema metrico, quindi i pollici compaiono soprattutto quando si ha a che fare con prodotti o informazioni provenienti da paesi anglofoni.</p><p class=\"text-mid mb-4\">Le situazioni più comuni: vuoi sapere quanti centimetri ha un televisore da 55 pollici, confronti la tua altezza con una tabella taglie americana, acquisti scarpe in un negozio britannico dove la taglia è espressa in pollici oppure consulti le misure di un mobile in un catalogo americano.</p><p class=\"text-mid mb-4\">La formula è semplice: un pollice equivale esattamente a 2,54 cm. Per convertire pollici in centimetri, basta moltiplicare per 2,54. Il convertitore lo fa non appena inserisci un valore.</p><p class=\"text-mid\">In questa pagina troverai una tabella di conversione pollici in cm, una tabella delle diagonali degli schermi più diffuse e una tabella dell'altezza con la conversione di piedi e pollici in centimetri.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Convertitore gratuito da pollici a centimetri – Arteon"
     },

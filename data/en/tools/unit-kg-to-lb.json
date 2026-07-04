@@ -52,7 +52,6 @@
         "The conversion table covers values from 0.5 kg to 200 kg",
         "The body weight table shows common values from 40 kg to 120 kg with conversion to pounds and stone (British system)",
         "The gym weights table converts common loads from 2.5 kg to 100 kg",
-        "The reverse table converts pounds to kilograms for values from 1 to 300 lb",
         "All calculations are performed locally in your browser — no data leaves your device",
         "The exact conversion formula is pounds = kilograms × 2.2046, based on the definition 1 pound = 0.45359237 kg",
         "Works on phone, tablet and desktop without installation"
@@ -86,7 +85,7 @@
     {
       "type": "sectionBasic",
       "title": "When do you need to convert kilograms to pounds?",
-      "html": "<p class=\"text-mid mb-4\">The kilogram is the standard unit of mass in Europe and most of the world. The pound (lb) dominates in the United States and remains widely used in the United Kingdom — particularly for body weight, where British people also use the stone (1 stone = 14 pounds = 6.35 kg).</p><p class=\"text-mid mb-4\">You need to convert kg to pounds when checking your weight on a US or UK medical website, buying sports equipment described in pounds, interpreting an airline baggage limit in lbs, or reading a baby's birth weight recorded in imperial units at a foreign hospital.</p><p class=\"text-mid mb-4\">One pound is exactly 0.45359237 kg — this value has been fixed as a constant since 1959. The other way round: 1 kg = 2.2046 lb. The converter does the calculation the moment you type a value.</p><p class=\"text-mid\">On this page you will find a kg to lb table for values from 0.5 to 200 kg, a body weight table with conversion to pounds and stone, a gym weights table, and a reverse table from pounds to kg.</p>",
+      "html": "<p class=\"text-mid mb-4\">The kilogram is the standard unit of mass in Europe and most of the world. The pound (lb) dominates in the United States and remains widely used in the United Kingdom — particularly for body weight, where British people also use the stone (1 stone = 14 pounds = 6.35 kg).</p><p class=\"text-mid mb-4\">You need to convert kg to pounds when checking your weight on a US or UK medical website, buying sports equipment described in pounds, interpreting an airline baggage limit in lbs, or reading a baby's birth weight recorded in imperial units at a foreign hospital.</p><p class=\"text-mid mb-4\">One pound is exactly 0.45359237 kg — this value has been fixed as a constant since 1959. The other way round: 1 kg = 2.2046 lb. The converter does the calculation the moment you type a value.</p><p class=\"text-mid\">On this page you will find a kg to lb table for values from 0.5 to 200 kg, a body weight table with conversion to pounds and stone, and a gym weights table.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Free kilograms to pounds converter – Arteon"
     },
@@ -110,45 +109,173 @@
       "labelHeader": "Kilograms",
       "cols": ["Pounds (lb)"],
       "rows": [
-        { "label": "0.5 kg", "values": ["1.10 lb"] },
-        { "label": "1 kg", "values": ["2.20 lb"], "emphasis": true },
-        { "label": "2 kg", "values": ["4.41 lb"] },
-        { "label": "3 kg", "values": ["6.61 lb"] },
-        { "label": "4 kg", "values": ["8.82 lb"] },
-        { "label": "5 kg", "values": ["11.02 lb"], "emphasis": true },
-        { "label": "6 kg", "values": ["13.23 lb"] },
-        { "label": "7 kg", "values": ["15.43 lb"] },
-        { "label": "8 kg", "values": ["17.64 lb"] },
-        { "label": "9 kg", "values": ["19.84 lb"] },
-        { "label": "10 kg", "values": ["22.05 lb"], "emphasis": true },
-        { "label": "12 kg", "values": ["26.46 lb"] },
-        { "label": "15 kg", "values": ["33.07 lb"] },
-        { "label": "20 kg", "values": ["44.09 lb"], "emphasis": true },
-        { "label": "23 kg", "values": ["50.71 lb"], "emphasis": true },
-        { "label": "25 kg", "values": ["55.12 lb"] },
-        { "label": "30 kg", "values": ["66.14 lb"] },
-        { "label": "32 kg", "values": ["70.55 lb"], "emphasis": true },
-        { "label": "35 kg", "values": ["77.16 lb"] },
-        { "label": "40 kg", "values": ["88.18 lb"] },
-        { "label": "45 kg", "values": ["99.21 lb"] },
-        { "label": "50 kg", "values": ["110.23 lb"], "emphasis": true },
-        { "label": "55 kg", "values": ["121.25 lb"] },
-        { "label": "60 kg", "values": ["132.28 lb"] },
-        { "label": "65 kg", "values": ["143.30 lb"] },
-        { "label": "70 kg", "values": ["154.32 lb"], "emphasis": true },
-        { "label": "75 kg", "values": ["165.35 lb"] },
-        { "label": "80 kg", "values": ["176.37 lb"], "emphasis": true },
-        { "label": "85 kg", "values": ["187.39 lb"] },
-        { "label": "90 kg", "values": ["198.42 lb"] },
-        { "label": "95 kg", "values": ["209.44 lb"] },
-        { "label": "100 kg", "values": ["220.46 lb"], "emphasis": true },
-        { "label": "110 kg", "values": ["242.51 lb"] },
-        { "label": "120 kg", "values": ["264.55 lb"] },
-        { "label": "130 kg", "values": ["286.60 lb"] },
-        { "label": "140 kg", "values": ["308.65 lb"] },
-        { "label": "150 kg", "values": ["330.69 lb"], "emphasis": true },
-        { "label": "175 kg", "values": ["385.81 lb"] },
-        { "label": "200 kg", "values": ["440.92 lb"] }
+        {
+          "label": "0.5 kg",
+          "values": ["1.10 lb"]
+        },
+        {
+          "label": "1 kg",
+          "values": ["2.20 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "2 kg",
+          "values": ["4.41 lb"]
+        },
+        {
+          "label": "3 kg",
+          "values": ["6.61 lb"]
+        },
+        {
+          "label": "4 kg",
+          "values": ["8.82 lb"]
+        },
+        {
+          "label": "5 kg",
+          "values": ["11.02 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "6 kg",
+          "values": ["13.23 lb"]
+        },
+        {
+          "label": "7 kg",
+          "values": ["15.43 lb"]
+        },
+        {
+          "label": "8 kg",
+          "values": ["17.64 lb"]
+        },
+        {
+          "label": "9 kg",
+          "values": ["19.84 lb"]
+        },
+        {
+          "label": "10 kg",
+          "values": ["22.05 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "12 kg",
+          "values": ["26.46 lb"]
+        },
+        {
+          "label": "15 kg",
+          "values": ["33.07 lb"]
+        },
+        {
+          "label": "20 kg",
+          "values": ["44.09 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "23 kg",
+          "values": ["50.71 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "25 kg",
+          "values": ["55.12 lb"]
+        },
+        {
+          "label": "30 kg",
+          "values": ["66.14 lb"]
+        },
+        {
+          "label": "32 kg",
+          "values": ["70.55 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "35 kg",
+          "values": ["77.16 lb"]
+        },
+        {
+          "label": "40 kg",
+          "values": ["88.18 lb"]
+        },
+        {
+          "label": "45 kg",
+          "values": ["99.21 lb"]
+        },
+        {
+          "label": "50 kg",
+          "values": ["110.23 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "55 kg",
+          "values": ["121.25 lb"]
+        },
+        {
+          "label": "60 kg",
+          "values": ["132.28 lb"]
+        },
+        {
+          "label": "65 kg",
+          "values": ["143.30 lb"]
+        },
+        {
+          "label": "70 kg",
+          "values": ["154.32 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "75 kg",
+          "values": ["165.35 lb"]
+        },
+        {
+          "label": "80 kg",
+          "values": ["176.37 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "85 kg",
+          "values": ["187.39 lb"]
+        },
+        {
+          "label": "90 kg",
+          "values": ["198.42 lb"]
+        },
+        {
+          "label": "95 kg",
+          "values": ["209.44 lb"]
+        },
+        {
+          "label": "100 kg",
+          "values": ["220.46 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "110 kg",
+          "values": ["242.51 lb"]
+        },
+        {
+          "label": "120 kg",
+          "values": ["264.55 lb"]
+        },
+        {
+          "label": "130 kg",
+          "values": ["286.60 lb"]
+        },
+        {
+          "label": "140 kg",
+          "values": ["308.65 lb"]
+        },
+        {
+          "label": "150 kg",
+          "values": ["330.69 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "175 kg",
+          "values": ["385.81 lb"]
+        },
+        {
+          "label": "200 kg",
+          "values": ["440.92 lb"]
+        }
       ],
       "caption": "Want to convert the other way? Use our <a href=\"/en/tools/lb-to-kg-converter\">lb to kg converter</a>, which has its own table and detailed content for that direction."
     },
@@ -163,117 +290,151 @@
       "labelHeader": "Body weight",
       "cols": ["Pounds (lb)", "Stone and pounds (st lb)"],
       "rows": [
-        { "label": "40 kg", "values": ["88.18 lb", "6 st 4.2 lb"] },
-        { "label": "42 kg", "values": ["92.59 lb", "6 st 8.6 lb"] },
-        { "label": "44 kg", "values": ["97.00 lb", "6 st 13.0 lb"] },
-        { "label": "46 kg", "values": ["101.41 lb", "7 st 3.4 lb"] },
-        { "label": "48 kg", "values": ["105.82 lb", "7 st 7.8 lb"] },
+        {
+          "label": "40 kg",
+          "values": ["88.18 lb", "6 st 4.2 lb"]
+        },
+        {
+          "label": "42 kg",
+          "values": ["92.59 lb", "6 st 8.6 lb"]
+        },
+        {
+          "label": "44 kg",
+          "values": ["97.00 lb", "6 st 13.0 lb"]
+        },
+        {
+          "label": "46 kg",
+          "values": ["101.41 lb", "7 st 3.4 lb"]
+        },
+        {
+          "label": "48 kg",
+          "values": ["105.82 lb", "7 st 7.8 lb"]
+        },
         {
           "label": "50 kg",
           "values": ["110.23 lb", "7 st 12.2 lb"],
           "emphasis": true
         },
-        { "label": "52 kg", "values": ["114.64 lb", "8 st 2.6 lb"] },
-        { "label": "54 kg", "values": ["119.05 lb", "8 st 7.0 lb"] },
-        { "label": "56 kg", "values": ["123.46 lb", "8 st 11.5 lb"] },
-        { "label": "58 kg", "values": ["127.87 lb", "9 st 1.9 lb"] },
+        {
+          "label": "52 kg",
+          "values": ["114.64 lb", "8 st 2.6 lb"]
+        },
+        {
+          "label": "54 kg",
+          "values": ["119.05 lb", "8 st 7.0 lb"]
+        },
+        {
+          "label": "56 kg",
+          "values": ["123.46 lb", "8 st 11.5 lb"]
+        },
+        {
+          "label": "58 kg",
+          "values": ["127.87 lb", "9 st 1.9 lb"]
+        },
         {
           "label": "60 kg",
           "values": ["132.28 lb", "9 st 6.3 lb"],
           "emphasis": true
         },
-        { "label": "62 kg", "values": ["136.69 lb", "9 st 10.7 lb"] },
-        { "label": "64 kg", "values": ["141.10 lb", "10 st 1.1 lb"] },
+        {
+          "label": "62 kg",
+          "values": ["136.69 lb", "9 st 10.7 lb"]
+        },
+        {
+          "label": "64 kg",
+          "values": ["141.10 lb", "10 st 1.1 lb"]
+        },
         {
           "label": "65 kg",
           "values": ["143.30 lb", "10 st 3.3 lb"],
           "emphasis": true
         },
-        { "label": "66 kg", "values": ["145.51 lb", "10 st 5.5 lb"] },
-        { "label": "68 kg", "values": ["149.91 lb", "10 st 9.9 lb"] },
+        {
+          "label": "66 kg",
+          "values": ["145.51 lb", "10 st 5.5 lb"]
+        },
+        {
+          "label": "68 kg",
+          "values": ["149.91 lb", "10 st 9.9 lb"]
+        },
         {
           "label": "70 kg",
           "values": ["154.32 lb", "11 st 0.3 lb"],
           "emphasis": true
         },
-        { "label": "72 kg", "values": ["158.73 lb", "11 st 4.7 lb"] },
-        { "label": "74 kg", "values": ["163.14 lb", "11 st 9.1 lb"] },
+        {
+          "label": "72 kg",
+          "values": ["158.73 lb", "11 st 4.7 lb"]
+        },
+        {
+          "label": "74 kg",
+          "values": ["163.14 lb", "11 st 9.1 lb"]
+        },
         {
           "label": "75 kg",
           "values": ["165.35 lb", "11 st 11.3 lb"],
           "emphasis": true
         },
-        { "label": "76 kg", "values": ["167.55 lb", "11 st 13.6 lb"] },
-        { "label": "78 kg", "values": ["171.96 lb", "12 st 4.0 lb"] },
+        {
+          "label": "76 kg",
+          "values": ["167.55 lb", "11 st 13.6 lb"]
+        },
+        {
+          "label": "78 kg",
+          "values": ["171.96 lb", "12 st 4.0 lb"]
+        },
         {
           "label": "80 kg",
           "values": ["176.37 lb", "12 st 8.4 lb"],
           "emphasis": true
         },
-        { "label": "82 kg", "values": ["180.78 lb", "12 st 12.8 lb"] },
-        { "label": "84 kg", "values": ["185.19 lb", "13 st 3.2 lb"] },
+        {
+          "label": "82 kg",
+          "values": ["180.78 lb", "12 st 12.8 lb"]
+        },
+        {
+          "label": "84 kg",
+          "values": ["185.19 lb", "13 st 3.2 lb"]
+        },
         {
           "label": "85 kg",
           "values": ["187.39 lb", "13 st 5.4 lb"],
           "emphasis": true
         },
-        { "label": "86 kg", "values": ["189.60 lb", "13 st 7.6 lb"] },
-        { "label": "88 kg", "values": ["194.01 lb", "13 st 12.0 lb"] },
+        {
+          "label": "86 kg",
+          "values": ["189.60 lb", "13 st 7.6 lb"]
+        },
+        {
+          "label": "88 kg",
+          "values": ["194.01 lb", "13 st 12.0 lb"]
+        },
         {
           "label": "90 kg",
           "values": ["198.42 lb", "14 st 2.4 lb"],
           "emphasis": true
         },
-        { "label": "95 kg", "values": ["209.44 lb", "14 st 13.4 lb"] },
+        {
+          "label": "95 kg",
+          "values": ["209.44 lb", "14 st 13.4 lb"]
+        },
         {
           "label": "100 kg",
           "values": ["220.46 lb", "15 st 10.5 lb"],
           "emphasis": true
         },
-        { "label": "105 kg", "values": ["231.49 lb", "16 st 7.5 lb"] },
-        { "label": "110 kg", "values": ["242.51 lb", "17 st 4.5 lb"] },
-        { "label": "120 kg", "values": ["264.55 lb", "18 st 12.6 lb"] }
-      ]
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
-      "type": "sectionTable",
-      "title": "Reverse table – pounds to kilograms",
-      "description": "The table below converts common pound values to kilograms, rounded to two decimal places.",
-      "labelHeader": "Pounds (lb)",
-      "cols": ["Kilograms"],
-      "rows": [
-        { "label": "1 lb", "values": ["0.45 kg"], "emphasis": true },
-        { "label": "2 lb", "values": ["0.91 kg"] },
-        { "label": "5 lb", "values": ["2.27 kg"] },
-        { "label": "10 lb", "values": ["4.54 kg"], "emphasis": true },
-        { "label": "15 lb", "values": ["6.80 kg"] },
-        { "label": "20 lb", "values": ["9.07 kg"] },
-        { "label": "25 lb", "values": ["11.34 kg"] },
-        { "label": "30 lb", "values": ["13.61 kg"] },
-        { "label": "40 lb", "values": ["18.14 kg"] },
-        { "label": "50 lb", "values": ["22.68 kg"], "emphasis": true },
-        { "label": "60 lb", "values": ["27.22 kg"] },
-        { "label": "70 lb", "values": ["31.75 kg"] },
-        { "label": "80 lb", "values": ["36.29 kg"] },
-        { "label": "90 lb", "values": ["40.82 kg"] },
-        { "label": "100 lb", "values": ["45.36 kg"], "emphasis": true },
-        { "label": "110 lb", "values": ["49.90 kg"] },
-        { "label": "120 lb", "values": ["54.43 kg"] },
-        { "label": "130 lb", "values": ["58.97 kg"] },
-        { "label": "140 lb", "values": ["63.50 kg"] },
-        { "label": "150 lb", "values": ["68.04 kg"], "emphasis": true },
-        { "label": "160 lb", "values": ["72.57 kg"] },
-        { "label": "170 lb", "values": ["77.11 kg"] },
-        { "label": "180 lb", "values": ["81.65 kg"] },
-        { "label": "190 lb", "values": ["86.18 kg"] },
-        { "label": "200 lb", "values": ["90.72 kg"], "emphasis": true },
-        { "label": "220 lb", "values": ["99.79 kg"] },
-        { "label": "250 lb", "values": ["113.40 kg"] },
-        { "label": "300 lb", "values": ["136.08 kg"] }
+        {
+          "label": "105 kg",
+          "values": ["231.49 lb", "16 st 7.5 lb"]
+        },
+        {
+          "label": "110 kg",
+          "values": ["242.51 lb", "17 st 4.5 lb"]
+        },
+        {
+          "label": "120 kg",
+          "values": ["264.55 lb", "18 st 12.6 lb"]
+        }
       ]
     },
     {
@@ -287,21 +448,71 @@
       "labelHeader": "Weight (kg)",
       "cols": ["Weight (lb)"],
       "rows": [
-        { "label": "2.5 kg", "values": ["5.51 lb"] },
-        { "label": "5 kg", "values": ["11.02 lb"], "emphasis": true },
-        { "label": "10 kg", "values": ["22.05 lb"], "emphasis": true },
-        { "label": "12.5 kg", "values": ["27.56 lb"] },
-        { "label": "15 kg", "values": ["33.07 lb"] },
-        { "label": "20 kg", "values": ["44.09 lb"], "emphasis": true },
-        { "label": "25 kg", "values": ["55.12 lb"] },
-        { "label": "30 kg", "values": ["66.14 lb"] },
-        { "label": "35 kg", "values": ["77.16 lb"] },
-        { "label": "40 kg", "values": ["88.18 lb"] },
-        { "label": "45 kg", "values": ["99.21 lb"] },
-        { "label": "50 kg", "values": ["110.23 lb"], "emphasis": true },
-        { "label": "60 kg", "values": ["132.28 lb"] },
-        { "label": "80 kg", "values": ["176.37 lb"] },
-        { "label": "100 kg", "values": ["220.46 lb"], "emphasis": true }
+        {
+          "label": "2.5 kg",
+          "values": ["5.51 lb"]
+        },
+        {
+          "label": "5 kg",
+          "values": ["11.02 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "10 kg",
+          "values": ["22.05 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "12.5 kg",
+          "values": ["27.56 lb"]
+        },
+        {
+          "label": "15 kg",
+          "values": ["33.07 lb"]
+        },
+        {
+          "label": "20 kg",
+          "values": ["44.09 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "25 kg",
+          "values": ["55.12 lb"]
+        },
+        {
+          "label": "30 kg",
+          "values": ["66.14 lb"]
+        },
+        {
+          "label": "35 kg",
+          "values": ["77.16 lb"]
+        },
+        {
+          "label": "40 kg",
+          "values": ["88.18 lb"]
+        },
+        {
+          "label": "45 kg",
+          "values": ["99.21 lb"]
+        },
+        {
+          "label": "50 kg",
+          "values": ["110.23 lb"],
+          "emphasis": true
+        },
+        {
+          "label": "60 kg",
+          "values": ["132.28 lb"]
+        },
+        {
+          "label": "80 kg",
+          "values": ["176.37 lb"]
+        },
+        {
+          "label": "100 kg",
+          "values": ["220.46 lb"],
+          "emphasis": true
+        }
       ]
     },
     {
