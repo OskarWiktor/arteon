@@ -13,6 +13,7 @@ import type {
   ToolsSectionKey,
   OfferSectionKey,
 } from '@/data/pl/navigation-data-pl';
+import { useAnimatedUnmount } from '@/hooks/useAnimatedUnmount';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
@@ -195,6 +196,14 @@ export default function DesktopNavigation() {
 
   const toggleOffer = () => startTransition(() => setIsOfferOpen(p => !p));
   const toggleTools = () => startTransition(() => setIsToolsOpen(p => !p));
+
+  // Keep each mega-menu mounted briefly after closing so it can animate out
+  // instead of vanishing. `*Rendered` gates the portal; `*Closing` swaps the
+  // entrance animation for the exit one.
+  const { shouldRender: offerRendered, isClosing: offerClosing } =
+    useAnimatedUnmount(isOfferOpen);
+  const { shouldRender: toolsRendered, isClosing: toolsClosing } =
+    useAnimatedUnmount(isToolsOpen);
 
   const offerLiRef = useRef<HTMLLIElement>(null);
   const offerBtnRef = useRef<HTMLButtonElement>(null);
@@ -440,7 +449,7 @@ export default function DesktopNavigation() {
 
       {isPl &&
         mounted &&
-        isOfferOpen &&
+        offerRendered &&
         activeSection &&
         createPortal(
           <div
@@ -450,7 +459,12 @@ export default function DesktopNavigation() {
             aria-labelledby={buttonId}
             tabIndex={-1}
             onKeyDown={handleMenuKeyDown}
-            className='animate-dropdown-in fixed left-0 z-50 w-full bg-white/95 py-6 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm'
+            className={cn(
+              'fixed left-0 z-50 w-full bg-white/95 py-6 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm',
+              offerClosing
+                ? 'animate-[dropdown-out_0.16s_ease-in_both]'
+                : 'animate-[dropdown-in_0.2s_ease-out_both]',
+            )}
             style={{ top: headerBottom }}
           >
             <Wrapper>
@@ -561,7 +575,7 @@ export default function DesktopNavigation() {
         )}
 
       {mounted &&
-        isToolsOpen &&
+        toolsRendered &&
         createPortal(
           <div
             ref={toolsPanelRef}
@@ -570,7 +584,12 @@ export default function DesktopNavigation() {
             aria-labelledby={toolsButtonId}
             tabIndex={-1}
             onKeyDown={handleToolsMenuKeyDown}
-            className='animate-dropdown-in fixed left-0 z-50 w-full bg-white/95 py-6 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm'
+            className={cn(
+              'fixed left-0 z-50 w-full bg-white/95 py-6 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm',
+              toolsClosing
+                ? 'animate-[dropdown-out_0.16s_ease-in_both]'
+                : 'animate-[dropdown-in_0.2s_ease-out_both]',
+            )}
             style={{ top: headerBottom }}
           >
             <Wrapper>

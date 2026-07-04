@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { useId } from 'react';
 import { JsonLd } from '@/components/atoms/JsonLd';
+import Reveal from '@/components/atoms/Reveal';
 import FaqPanel from '@/components/molecules/FaqPanel';
 import { cn } from '@/lib/clsx';
 import SectionHeader from '../../molecules/SectionHeader';
@@ -68,14 +69,15 @@ export default function SectionFaqPanels({
 
       <div className={cn(halfWidth && 'mx-auto max-w-2xl')}>
         {items.map((item, index) => (
-          <FaqPanel
-            key={item.question}
-            question={item.question}
-            answer={item.answer}
-            icon={showIcons ? item.icon : undefined}
-            name={groupName}
-            defaultOpen={index === defaultOpenIndex}
-          />
+          <Reveal key={item.question} delayMs={Math.min(index, 6) * 60}>
+            <FaqPanel
+              question={item.question}
+              answer={item.answer}
+              icon={showIcons ? item.icon : undefined}
+              name={groupName}
+              defaultOpen={index === defaultOpenIndex}
+            />
+          </Reveal>
         ))}
       </div>
 

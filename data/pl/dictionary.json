@@ -65,7 +65,7 @@
     "ariaLabel": "okruszki"
   },
   "contactForm": {
-    "nameLabel": "Imię i nazwisko",
+    "nameLabel": "Imię i nazwisko | Nazwa firmy",
     "namePlaceholder": "Jan Kowalski",
     "emailLabel": "Email",
     "emailPlaceholder": "jan.kowalski@gmail.com",

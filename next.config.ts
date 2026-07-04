@@ -174,11 +174,6 @@ const nextConfig: NextConfig = {
         statusCode: 301,
       },
     ];
-
-    // "da" (Danish) locale was retired (2026-06-30): no measurable traffic,
-    // not worth the crawl budget. Every /da/* page redirects to its exact
-    // /en/* equivalent (not a wildcard rewrite — Danish and English slugs
-    // are translated, so a 1:1 path mapping is required).
     const retiredLocaleRedirects: Redirect[] = [
       { source: '/da', destination: '/en/tools', statusCode: 301 },
       { source: '/da/vaerktojer', destination: '/en/tools', statusCode: 301 },

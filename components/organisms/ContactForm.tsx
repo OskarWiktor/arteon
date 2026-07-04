@@ -76,7 +76,7 @@ export default function ContactForm({
         <InputWithLabel
           id='name'
           label={t.nameLabel}
-          name='Imię i Nazwisko'
+          name='Imię i nazwisko | Nazwa firmy'
           placeholder={t.namePlaceholder}
           type='text'
           autoComplete='name'

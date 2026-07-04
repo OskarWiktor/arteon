@@ -226,7 +226,7 @@ export default function LanguageSwitcher({
               role='menu'
               tabIndex={-1}
               onKeyDown={langMenuKeyboard.onKeyDown}
-              className='animate-dropdown-in fixed left-0 z-50 w-full bg-white/95 py-6 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm'
+              className='fixed left-0 z-50 w-full animate-[dropdown-in_0.2s_ease-out_both] bg-white/95 py-6 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm'
               style={{ top: headerBottom }}
             >
               <Wrapper>
@@ -303,7 +303,7 @@ export default function LanguageSwitcher({
               aria-modal='true'
               aria-label={t.chooseLabel}
               tabIndex={-1}
-              className='animate-dropdown-in fixed inset-x-4 top-1/2 z-1101 max-h-[80dvh] -translate-y-1/2 overflow-y-auto rounded-lg bg-white p-5 shadow-2xl sm:inset-x-auto sm:left-1/2 sm:w-105 sm:-translate-x-1/2'
+              className='fixed inset-x-4 top-1/2 z-1101 max-h-[80dvh] -translate-y-1/2 animate-[dropdown-in_0.2s_ease-out_both] overflow-y-auto rounded-lg bg-white p-5 shadow-2xl sm:inset-x-auto sm:left-1/2 sm:w-105 sm:-translate-x-1/2'
             >
               <div className={cn('mb-4', flexCenterBetweenClasses)}>
                 <h2 className='text-base font-semibold text-dark'>

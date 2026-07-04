@@ -21,7 +21,7 @@ type SectionContactFormProps = {
 const benefits = [
   {
     icon: <RiMailSendLine className={cn('text-light', smallIconSizeClasses)} />,
-    label: 'Bezpłatna wycena bez zobowiązań',
+    label: 'Bezpłatna wycena',
   },
   {
     icon: <RiTimeLine className={cn('text-light', smallIconSizeClasses)} />,
@@ -31,7 +31,7 @@ const benefits = [
     icon: (
       <RiFileList2Line className={cn('text-light', smallIconSizeClasses)} />
     ),
-    label: 'Faktura dopiero po realizacji',
+    label: 'Faktura po realizacji',
   },
 ];
 

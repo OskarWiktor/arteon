@@ -15,14 +15,23 @@ export function useRestoreFocus(enabled: boolean) {
 
     if (wasEnabled.current) {
       wasEnabled.current = false;
-      setTimeout(() => previouslyFocused.current?.focus(), 0);
+      // preventScroll is essential: the trigger often lives in a sticky header,
+      // and focusing it without this scrolls the page to the header's in-flow
+      // position (a visible jump when closing the dialog).
+      setTimeout(
+        () => previouslyFocused.current?.focus({ preventScroll: true }),
+        0,
+      );
     }
   }, [enabled]);
 
   useEffect(() => {
     return () => {
       if (wasEnabled.current) {
-        setTimeout(() => previouslyFocused.current?.focus(), 0);
+        setTimeout(
+          () => previouslyFocused.current?.focus({ preventScroll: true }),
+          0,
+        );
       }
     };
   }, []);

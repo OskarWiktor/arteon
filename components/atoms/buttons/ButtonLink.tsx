@@ -22,7 +22,7 @@ interface ButtonLinkProps {
 }
 
 const buttonLinkClasses =
-  'inline-flex w-fit items-center px-3.25 py-1.75 md:px-5 md:py-2.5 rounded-sm text-sm font-medium md:text-base transition hover:-translate-y-0.5 text-dark border border-neutral-200 bg-white shadow-sm hover:shadow-md';
+  'group inline-flex w-fit items-center px-3.25 py-1.75 md:px-5 md:py-2.5 rounded-sm text-sm font-medium md:text-base transition hover:-translate-y-0.5 active:translate-y-0 text-dark border border-neutral-200 bg-white shadow-sm hover:shadow-md';
 
 const sizeClasses: Record<ButtonSize, string> = {
   small: 'px-2.5 py-1.5 md:px-3 md:py-1.5',

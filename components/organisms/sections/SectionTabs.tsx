@@ -71,11 +71,18 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
           aria-labelledby={`tab-${autoId}-${activeTab}`}
           className='rounded-lg border border-neutral-200 bg-white p-6'
         >
-          <h3 className='h5 mb-3 flex items-center gap-2'>
-            {tabs[activeTab].icon}
-            {tabs[activeTab].title}
-          </h3>
-          <div className='text-light'>{tabs[activeTab].content}</div>
+          {/* Keyed by activeTab so the entrance animation replays on each
+              switch, giving a soft cross-fade between tab contents. */}
+          <div
+            key={activeTab}
+            className='animate-[fade-in_0.25s_ease-out_both]'
+          >
+            <h3 className='h5 mb-3 flex items-center gap-2'>
+              {tabs[activeTab].icon}
+              {tabs[activeTab].title}
+            </h3>
+            <div className='text-light'>{tabs[activeTab].content}</div>
+          </div>
         </div>
       </div>
     </section>
