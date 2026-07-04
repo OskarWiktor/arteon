@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { LOCALE_SITEMAP_META } from '@/lib/i18n/pages/localeSitemapMeta';
 import { getFooterTools } from '@/lib/i18n/toolRegistry';
 import type { Locale, FooterUi, LegalLink } from '@/types/locale';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
@@ -194,7 +195,17 @@ export default function Footer({
         href: tool.href,
         label: tool.title,
       }));
-  const localeLegalLinks = legalLinks;
+  // Non-PL footers list only privacy + terms; append the locale's sitemap page
+  // so it is internally linked (not orphaned to the XML sitemap alone). PL keeps
+  // its own PL_LEGAL_LINKS, which already includes /mapa-strony.
+  const localeLegalLinks: LegalLink[] = [
+    ...legalLinks,
+    {
+      key: 'sitemap',
+      href: LOCALE_SITEMAP_META[locale].path,
+      label: LOCALE_SITEMAP_META[locale].title,
+    },
+  ];
 
   const midTools = Math.ceil(localeToolsLinks.length / 2);
   const toolsLeft = localeToolsLinks.slice(0, midTools);
@@ -225,6 +236,7 @@ export default function Footer({
                     width={140}
                     height={50}
                     alt='Arteon logo'
+                    className='dark:invert'
                   />
                 </InlineLink>
               </div>
@@ -299,7 +311,7 @@ export default function Footer({
           <div className='mt-8 border-t border-neutral-200 pt-4 text-light'>
             <div className='flex flex-col items-center justify-between gap-2 md:flex-row md:items-start'>
               <small className='text-center text-sm md:text-left'>
-                &copy; <time dateTime='2025'>2025</time> Arteon. {ft.copyright}
+                &copy; <time dateTime='2026'>2026</time> Arteon. {ft.copyright}
               </small>
               {localeLegalLinks.map(link => (
                 <p key={link.key}>
