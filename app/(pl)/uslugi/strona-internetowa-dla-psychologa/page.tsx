@@ -16,6 +16,7 @@ import {
   RiSecurePaymentLine,
   RiPriceTag3Line,
   RiKey2Line,
+  RiCustomerService2Line,
 } from 'react-icons/ri';
 import Divider from '@/components/atoms/Divider';
 import Wrapper from '@/components/atoms/Wrapper';
@@ -396,7 +397,9 @@ export default function StronaDlaPsychologaPage() {
                 'Po realizacji prezentujemy gotową witrynę, konfigurujemy narzędzia analityczne oraz zabezpieczenia i damy Ci pełen dostęp do wszystkiego. Po tym masz czas na wdrożenie wszelkich uwag. Fakturę wystawiamy po zakończeniu prac.',
             },
             {
-              icon: <RiMailSendLine className={normalIconSizeClasses} />,
+              icon: (
+                <RiCustomerService2Line className={normalIconSizeClasses} />
+              ),
               title: 'Dalsze wsparcie',
               description:
                 'Na koniec możesz zdecydować, czy chcesz samodzielnie prowadzić stronę, czy zlecić nam jej obsługę. Możemy zająć się jej pozycjonowaniem, wesprzeć w prowadzeniu bloga czy promocji w mediach społecznościowych.',
