@@ -44,7 +44,7 @@ export default function SectionBasic({
             'lg:order-2': variant === 'left',
           })}
         >
-          <div className='relative aspect-[4/3] w-full'>
+          <div className='relative aspect-4/3 w-full'>
             <Image
               src={imageSrc}
               alt={imageAlt}

@@ -169,10 +169,10 @@ export default function OfferDesignFlyerPage() {
             {
               title: 'Jasny przekaz i mocne wezwanie do działania',
               description: (
-                <>
+                <p>
                   Tworzymy układy, które przyciągają wzrok, wyjaśniają ofertę i
                   prowadzą prosto do kontaktu lub zakupu.
-                </>
+                </p>
               ),
               icon: (
                 <RiArticleLine
@@ -183,10 +183,10 @@ export default function OfferDesignFlyerPage() {
             {
               title: 'Format dopasowany do celu',
               description: (
-                <>
+                <p>
                   Dobieramy rozmiar i orientację ulotki tak, aby była poręczna,
                   czytelna i wygodna w dystrybucji.
-                </>
+                </p>
               ),
               icon: (
                 <RiLayoutLine
@@ -197,10 +197,10 @@ export default function OfferDesignFlyerPage() {
             {
               title: 'Pliki gotowe do druku i wersja cyfrowa',
               description: (
-                <>
+                <p>
                   Otrzymujesz pliki przygotowane pod drukarnię oraz wersję do
                   wykorzystania w internecie lub mailingu.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileTextLine
@@ -211,10 +211,10 @@ export default function OfferDesignFlyerPage() {
             {
               title: 'Dopracowanie detali',
               description: (
-                <>
+                <p>
                   W cenie przewidujemy poprawki. Wspólnie dopieszczamy treści,
                   układ i wyróżniki Twojej oferty.
-                </>
+                </p>
               ),
               icon: (
                 <RiPencilRuler2Line
@@ -225,10 +225,10 @@ export default function OfferDesignFlyerPage() {
             {
               title: 'Faktura po realizacji',
               description: (
-                <>
+                <p>
                   Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
                   formie.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine

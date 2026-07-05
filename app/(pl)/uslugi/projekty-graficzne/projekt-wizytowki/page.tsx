@@ -148,10 +148,10 @@ export default function OfferDesignBusinessCardPage() {
             {
               title: 'Czytelny układ i profesjonalny wygląd',
               description: (
-                <>
+                <p>
                   Projektujemy wizytówki, które w kilka sekund wyjaśniają, czym
                   się zajmujesz.
-                </>
+                </p>
               ),
               icon: (
                 <RiIdCardLine
@@ -162,10 +162,10 @@ export default function OfferDesignBusinessCardPage() {
             {
               title: 'Pliki gotowe do druku',
               description: (
-                <>
+                <p>
                   Otrzymujesz pliki przygotowane do druku w standardzie CMYK ze
                   spadami.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileTextLine
@@ -176,10 +176,10 @@ export default function OfferDesignBusinessCardPage() {
             {
               title: 'Spójność z identyfikacją marki',
               description: (
-                <>
+                <p>
                   Dopasowujemy kolory, typografię i styl do Twojej marki, aby
                   zachować spójność wizerunku.
-                </>
+                </p>
               ),
               icon: (
                 <IoColorPalette
@@ -190,10 +190,10 @@ export default function OfferDesignBusinessCardPage() {
             {
               title: 'Faktura po realizacji',
               description: (
-                <>
+                <p>
                   Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
                   formie.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine

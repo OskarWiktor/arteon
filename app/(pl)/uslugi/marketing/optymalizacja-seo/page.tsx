@@ -156,11 +156,11 @@ export default function OfferOptimizationSEO() {
             {
               title: 'Szybkość ładowania',
               description: (
-                <>
+                <p>
                   Skracamy czas wczytywania strony, optymalizujemy grafiki i kod
                   strony. Efekt: strona działa szybciej, a użytkownicy rzadziej
                   rezygnują z przeglądania.
-                </>
+                </p>
               ),
               icon: (
                 <RiSearchLine
@@ -171,11 +171,11 @@ export default function OfferOptimizationSEO() {
             {
               title: 'Tytuły i opisy widoczne w Google',
               description: (
-                <>
+                <p>
                   Poprawiamy tytuły i opisy, by lepiej pasowały do zapytań
                   użytkowników. Efekt: więcej trafnych zapytań i więcej wejść z
                   wyników wyszukiwania.
-                </>
+                </p>
               ),
               icon: (
                 <RiLightbulbFlashLine
@@ -186,11 +186,11 @@ export default function OfferOptimizationSEO() {
             {
               title: 'Struktura treści i nawigacja',
               description: (
-                <>
+                <p>
                   Porządkujemy nagłówki i menu, dodajemy logiczne połączenia
                   między podstronami. Efekt: łatwiejsza nawigacja i lepsze
                   rozumienie strony przez Google.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileList2Line
@@ -201,11 +201,11 @@ export default function OfferOptimizationSEO() {
             {
               title: 'Dodatkowe dane dla Google',
               description: (
-                <>
+                <p>
                   Wprowadzamy dodatkowe informacje (np. sekcje pytań i
                   odpowiedzi), które pomagają Google lepiej zrozumieć zawartość
                   i to co dokładnie oferujesz.
-                </>
+                </p>
               ),
               icon: (
                 <RiShieldCheckLine

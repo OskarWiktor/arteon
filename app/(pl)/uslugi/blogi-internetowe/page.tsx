@@ -200,10 +200,10 @@ export default function OfferBlogPage() {
             {
               title: 'Indywidualny projekt graficzny bloga ',
               description: (
-                <>
+                <p>
                   Wygląd, który od pierwszych sekund pokazuje profesjonalizm i
                   zachęca do czytania
-                </>
+                </p>
               ),
               icon: (
                 <RiPencilRuler2Line
@@ -214,10 +214,10 @@ export default function OfferBlogPage() {
             {
               title: 'Dobór i obróbka grafik do wpisów',
               description: (
-                <>
+                <p>
                   Pomagamy dobrać spójne grafiki i dopasowujemy je do bloga:
                   kadry, proporcje, waga
-                </>
+                </p>
               ),
               icon: (
                 <RiBrushLine
@@ -228,10 +228,10 @@ export default function OfferBlogPage() {
             {
               title: 'Wsparcie prawne przy politykach i zgodach',
               description: (
-                <>
+                <p>
                   Przeprowadzamy Cię przez wymagania (polityki, pliki cookie,
                   zgody)
-                </>
+                </p>
               ),
               icon: (
                 <GoLaw className={cn('text-primary', normalIconSizeClasses)} />
@@ -239,7 +239,7 @@ export default function OfferBlogPage() {
             },
             {
               title: 'Blog dostosowany do różnych urządzeń',
-              description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
+              description: <p>Czytelność oraz szybkość na każdym urządzeniu</p>,
               icon: (
                 <RiDeviceLine
                   className={cn('text-primary', normalIconSizeClasses)}
@@ -249,7 +249,7 @@ export default function OfferBlogPage() {
             {
               title: 'Dedykowane szkolenie PDF z obsługi bloga',
               description: (
-                <>Proste instrukcje: jak dodać wpis, zdjęcia i linki</>
+                <p>Proste instrukcje: jak dodać wpis, zdjęcia i linki</p>
               ),
               icon: (
                 <RiBookOpenLine
@@ -260,10 +260,10 @@ export default function OfferBlogPage() {
             {
               title: 'Zero ukrytych kosztów',
               description: (
-                <>
+                <p>
                   Dostajesz wycenę z jasnym zakresem, informujemy Cię na
                   bieżąco, ile coś kosztuje
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine
@@ -274,9 +274,9 @@ export default function OfferBlogPage() {
             {
               title: 'Transparentna współpraca na bieżąco',
               description: (
-                <>
+                <p>
                   Informujemy Cię regularnie o postępach prac nad Twoim blogiem
-                </>
+                </p>
               ),
               icon: (
                 <RiMessage2Line
@@ -287,10 +287,10 @@ export default function OfferBlogPage() {
             {
               title: 'Pełną własność i dostępy',
               description: (
-                <>
+                <p>
                   Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po
                   zakończeniu prac
-                </>
+                </p>
               ),
               icon: (
                 <RiKey2Line
@@ -301,10 +301,10 @@ export default function OfferBlogPage() {
             {
               title: 'Proste raporty wyników',
               description: (
-                <>
+                <p>
                   Wdrażamy narzędzia analityczne pokazujące skąd jest ruch i
                   które wpisy pracują najlepiej
-                </>
+                </p>
               ),
               icon: (
                 <RiBarChart2Line
@@ -315,10 +315,10 @@ export default function OfferBlogPage() {
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
               description: (
-                <>
+                <p>
                   Po publikacji pomagamy w dalszym rozwoju bloga. Ewentualne
                   błędy poprawiamy w ramach gwarancji
-                </>
+                </p>
               ),
               icon: (
                 <RiLifebuoyLine

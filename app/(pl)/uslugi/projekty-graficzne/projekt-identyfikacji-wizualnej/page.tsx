@@ -204,10 +204,10 @@ export default function OfferDesignBrandIdentityDesignPage() {
             {
               title: 'Spójny system marki',
               description: (
-                <>
+                <p>
                   Projektujemy logo, kolory i typografię tak, aby wszystkie
                   materiały - online i offline - działały razem.
-                </>
+                </p>
               ),
               icon: (
                 <RiPantoneLine
@@ -218,10 +218,10 @@ export default function OfferDesignBrandIdentityDesignPage() {
             {
               title: 'Materiały do codziennej komunikacji',
               description: (
-                <>
+                <p>
                   Przygotowujemy podstawowe wzory: wizytówki, papiery firmowe i
                   grafiki do prezentacji marki.
-                </>
+                </p>
               ),
               icon: (
                 <RiIdCardLine
@@ -232,10 +232,10 @@ export default function OfferDesignBrandIdentityDesignPage() {
             {
               title: 'Proste zasady stosowania',
               description: (
-                <>
+                <p>
                   Dostajesz krótkie wytyczne, które ułatwiają wdrożenie
                   identyfikacji w całej firmie - także osobom nietechnicznym.
-                </>
+                </p>
               ),
               icon: (
                 <RiBookOpenLine
@@ -246,10 +246,10 @@ export default function OfferDesignBrandIdentityDesignPage() {
             {
               title: 'Pełna gotowość do druku i online',
               description: (
-                <>
+                <p>
                   Otrzymujesz komplet plików do codziennej pracy: wersje do
                   druku, internetu i mediów społecznościowych.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileTextLine
@@ -260,10 +260,10 @@ export default function OfferDesignBrandIdentityDesignPage() {
             {
               title: 'Faktura po realizacji',
               description: (
-                <>
+                <p>
                   Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
                   formie.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine

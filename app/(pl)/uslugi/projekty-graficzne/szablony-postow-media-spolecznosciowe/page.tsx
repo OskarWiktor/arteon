@@ -160,11 +160,11 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             {
               title: 'Spójny system wizualny',
               description: (
-                <>
+                <p>
                   Dopasowujemy kolory, typografię i styl do Twojej marki lub
                   tworzymy nowy kierunek od zera - zgodnie z grupą odbiorców i
                   charakterem komunikacji.
-                </>
+                </p>
               ),
               icon: (
                 <IoColorPalette
@@ -175,11 +175,11 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             {
               title: 'Edytowalne pliki',
               description: (
-                <>
+                <p>
                   Otrzymujesz pliki, które z łatwością edytujesz (np. w Figmie
                   lub Canvie), wraz z krótką instrukcją. Tekst, zdjęcia czy
                   kolory zmienisz bez znajomości zaawansowanych programów.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileTextLine
@@ -190,11 +190,11 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             {
               title: 'System pod różne typy postów',
               description: (
-                <>
+                <p>
                   Projektujemy zestaw układów pod konkretne formaty: post
                   informacyjny, oferta, opinia, poradnik, cytat, karuzela,
                   okładka wideo czy zapowiedź wydarzenia.
-                </>
+                </p>
               ),
               icon: (
                 <RiLayoutLine
@@ -205,10 +205,10 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             {
               title: 'Faktura po realizacji',
               description: (
-                <>
+                <p>
                   Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
                   formie.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine

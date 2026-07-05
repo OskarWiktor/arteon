@@ -161,11 +161,11 @@ export default function OfferSeoSubscription() {
             {
               title: 'Strategia treści',
               description: (
-                <>
+                <p>
                   Wybieramy tematy, które odpowiadają na pytania klientów i
                   tworzymy odpowiednie treści, budując Twoją widoczność tam,
                   gdzie szukają Cię klienci.
-                </>
+                </p>
               ),
               icon: (
                 <RiLightbulbFlashLine
@@ -176,12 +176,12 @@ export default function OfferSeoSubscription() {
             {
               title: 'Poprawa kluczowych podstron (on-page)',
               description: (
-                <>
+                <p>
                   Analizujemy Twoją konkurencję i dopracowujemy istniejące
                   podstrony: nagłówki, tytuły, dodatkowe opisy oraz elementy -
                   tak, by strony były lepiej dopasowane do realnych zapytań
                   użytkowników.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileList2Line
@@ -192,11 +192,11 @@ export default function OfferSeoSubscription() {
             {
               title: 'Bezpieczne linki z wartościowych miejsc',
               description: (
-                <>
+                <p>
                   Pozyskujemy odnośniki z miejsc, które mają sens dla Twojej
                   branży (np. artykuły branżowe, katalogi) - to wzmacnia
                   autorytet Twojej witryny
-                </>
+                </p>
               ),
               icon: (
                 <RiLinksFill
@@ -207,10 +207,10 @@ export default function OfferSeoSubscription() {
             {
               title: 'Monitoring i raport co miesiąc',
               description: (
-                <>
+                <p>
                   Sprawdzamy widoczność, wejścia z Google i zapytania z WWW.
                   Dostajesz prosty raport i rekomendacje na kolejny miesiąc.
-                </>
+                </p>
               ),
               icon: (
                 <RiBarChart2Fill

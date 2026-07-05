@@ -170,11 +170,11 @@ export default function OfferDesignCatalogPage() {
             {
               title: 'Klarowna prezentacja oferty',
               description: (
-                <>
+                <p>
                   Układ, który ułatwia odbiorcy zrozumienie produktów, usług i
                   różnic między pakietami - bez zgadywania i szukania drobnego
                   druku.
-                </>
+                </p>
               ),
               icon: (
                 <RiBookletLine
@@ -185,11 +185,11 @@ export default function OfferDesignCatalogPage() {
             {
               title: 'Dopracowane zdjęcia i typografia',
               description: (
-                <>
+                <p>
                   Dbamy o spójność zdjęć, czytelne podpisy i hierarchię
                   nagłówków, aby katalog był lekki w odbiorze, nawet przy dużej
                   liczbie stron.
-                </>
+                </p>
               ),
               icon: (
                 <RiImageLine
@@ -200,10 +200,10 @@ export default function OfferDesignCatalogPage() {
             {
               title: 'Wersja drukowana i cyfrowa',
               description: (
-                <>
+                <p>
                   Dostarczamy katalog gotowy do druku oraz wygodną wersję do
                   udostępniania online - idealną do mailingu i oferty PDF.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileTextLine
@@ -214,10 +214,10 @@ export default function OfferDesignCatalogPage() {
             {
               title: 'Wspólne dopracowanie szczegółów',
               description: (
-                <>
+                <p>
                   W cenie przewidujemy poprawki. Razem ustalamy układ, kolejność
                   sekcji, wyróżniki ofertowe i sposób prezentacji cen.
-                </>
+                </p>
               ),
               icon: (
                 <RiPencilRuler2Line
@@ -228,10 +228,10 @@ export default function OfferDesignCatalogPage() {
             {
               title: 'Faktura po realizacji',
               description: (
-                <>
+                <p>
                   Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
                   formie.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine

@@ -166,11 +166,11 @@ export default function OfferDesignLoyaltyCardPage() {
             {
               title: 'Układ dopasowany do branży',
               description: (
-                <>
+                <p>
                   Tworzymy karty dopasowane do specyfiki działalności - salonów,
                   kawiarni, siłowni, butików i innych punktów usługowych. Zasady
                   programu są czytelne zarówno dla Ciebie, jak i klientów.
-                </>
+                </p>
               ),
               icon: (
                 <RiVipCrownLine
@@ -181,11 +181,11 @@ export default function OfferDesignLoyaltyCardPage() {
             {
               title: 'Spójność z identyfikacją marki',
               description: (
-                <>
+                <p>
                   Kolory, typografia i detale dopasowujemy do Twojej
                   identyfikacji wizualnej. Karta naturalnie uzupełnia pozostałe
                   materiały i wzmacnia profesjonalny wizerunek firmy.
-                </>
+                </p>
               ),
               icon: (
                 <IoColorPalette
@@ -196,11 +196,11 @@ export default function OfferDesignLoyaltyCardPage() {
             {
               title: 'Gotowość do druku',
               description: (
-                <>
+                <p>
                   Dostarczamy pliki w formacie gotowym do druku, z odpowiednimi
                   spadami i specyfikacją dla drukarni. Możesz od razu zamówić
                   nakład bez dodatkowych przeróbek technicznych.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileTextLine
@@ -211,11 +211,11 @@ export default function OfferDesignLoyaltyCardPage() {
             {
               title: 'Numeracje i pola pieczątek',
               description: (
-                <>
+                <p>
                   Projektujemy czytelne pola na pieczątki, podpisy i oznaczenia
                   nagród. Dzięki temu obsługa programu jest prosta dla zespołu i
                   zrozumiała dla klientów.
-                </>
+                </p>
               ),
               icon: (
                 <RiCoupon2Line
@@ -226,10 +226,10 @@ export default function OfferDesignLoyaltyCardPage() {
             {
               title: 'Faktura po realizacji',
               description: (
-                <>
+                <p>
                   Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
                   formie.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine

@@ -180,10 +180,10 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             {
               title: 'Przemyślany układ i estetyka',
               description: (
-                <>
+                <p>
                   Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie
                   decyzji na stronie - od nagłówka po stopkę.
-                </>
+                </p>
               ),
               icon: (
                 <RiLayoutLine
@@ -194,10 +194,10 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             {
               title: 'Responsywność i czytelność',
               description: (
-                <>
+                <p>
                   Projekt działa na komputerze, tablecie i telefonie, zachowując
                   spójny wygląd i wygodę użycia.
-                </>
+                </p>
               ),
               icon: (
                 <RiDeviceLine
@@ -208,10 +208,10 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             {
               title: 'Gotowość do wdrożenia',
               description: (
-                <>
+                <p>
                   Dostarczamy pliki i rekomendacje, które przyspieszają pracę
                   dewelopera i skracają czas publikacji.
-                </>
+                </p>
               ),
               icon: (
                 <RiCodeSSlashFill
@@ -222,10 +222,10 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             {
               title: 'Wspólne dopracowanie szczegółów',
               description: (
-                <>
+                <p>
                   Uwzględniamy poprawki i dopracowujemy kolory, typografię oraz
                   elementy nawigacji do pełnej akceptacji.
-                </>
+                </p>
               ),
               icon: (
                 <RiPencilRuler2Line
@@ -236,10 +236,10 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             {
               title: 'Faktura po realizacji',
               description: (
-                <>
+                <p>
                   Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
                   formie.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine

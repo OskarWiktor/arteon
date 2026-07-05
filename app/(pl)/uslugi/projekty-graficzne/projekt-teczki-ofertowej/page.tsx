@@ -175,10 +175,10 @@ export default function OfferDesignPresentationFolderPage() {
             {
               title: 'Prestiż na każdym spotkaniu',
               description: (
-                <>
+                <p>
                   Projekt teczki podkreśla profesjonalizm Twojej firmy - już
                   samo wręczenie materiałów robi dobre wrażenie.
-                </>
+                </p>
               ),
               icon: (
                 <RiFolderOpenLine
@@ -189,10 +189,10 @@ export default function OfferDesignPresentationFolderPage() {
             {
               title: 'Spójność z identyfikacją marki',
               description: (
-                <>
+                <p>
                   Kolory, typografia i detale nawiązują do Twojej identyfikacji
                   wizualnej, aby wszystkie materiały mówiły jednym językiem.
-                </>
+                </p>
               ),
               icon: (
                 <IoColorPalette
@@ -203,10 +203,10 @@ export default function OfferDesignPresentationFolderPage() {
             {
               title: 'Przemyślane rozwiązania konstrukcyjne',
               description: (
-                <>
+                <p>
                   Proponujemy układ kieszeni, bigów i skrzydełek tak, aby teczka
                   była trwała, wygodna i funkcjonalna w codziennym użyciu.
-                </>
+                </p>
               ),
               icon: (
                 <RiBrushLine
@@ -217,10 +217,10 @@ export default function OfferDesignPresentationFolderPage() {
             {
               title: 'Pliki gotowe do druku',
               description: (
-                <>
+                <p>
                   Dostarczamy finalne pliki z poprawnymi spadami i makietami pod
                   drukarnię - możesz od razu przekazać je do produkcji.
-                </>
+                </p>
               ),
               icon: (
                 <RiFileTextLine
@@ -231,10 +231,10 @@ export default function OfferDesignPresentationFolderPage() {
             {
               title: 'Faktura po realizacji',
               description: (
-                <>
+                <p>
                   Płacisz dopiero po otrzymaniu gotowego projektu w finalnej
                   formie.
-                </>
+                </p>
               ),
               icon: (
                 <RiMoneyDollarCircleLine
